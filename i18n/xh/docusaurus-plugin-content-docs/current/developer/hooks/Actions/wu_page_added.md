@@ -4,22 +4,22 @@ title: Isenzo - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Isenzo: wu_page_added
+# Isenzo: wu_page_added {#action-wupageadded}
 
 Vumela abaphuhlisi be-plugin ukuba baqhube izinto ezongezelelweyo xa amaphepha ebhaliswa.
 
 Ngokungafaniyo ne-wu_page_load, esebenza kuphela xa iphepha elithile libonwa, le hook isebenza ngexesha lobhaliso kulo naliphi na iphepha le-admin elongezwayo kusetyenziswa ikhowudi ye-Ultimate Multisite.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
 | $page_id | `string` | I-ID yeli phepha. |
 | $page_hook | `string` | Igama le-hook yeli phepha. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe ku-[`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L228) kumgca 228

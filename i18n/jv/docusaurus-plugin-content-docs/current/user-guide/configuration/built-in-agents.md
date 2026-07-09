@@ -3,11 +3,11 @@ title: Agen Bawaan
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Gawan
+# Agents Gawan {#built-in-agents}
 
 Gratis AI Agent v1.9.0 nggawa limang agents gawan, saben-saben wis dikonfigurasi nganggo sakumpulan tools sing fokus, system prompt sing dicocogake, lan saran wiwitan sing cocog karo tugas umum ing wilayah kuwi. Ngalih antarane agents bakal ngganti apa sing bisa ditindakake asisten lan carane asisten nanggapi — tanpa konfigurasi apa wae saka pihak sampeyan. Superdav AI Agent v1.18.0 bisa nambah tools sing ngerti jadwal, cathetan pangeling, gapura persetujuan, lan kabar SMS menyang workflow iki nalika integrasi sing gegandhengan wis dikonfigurasi.
 
-## Apa Kuwi Agent?
+## Apa Kuwi Agent? {#what-is-an-agent}
 
 Saben agent yaiku profil konfigurasi sing diwenehi jeneng lan nggabungake:
 
@@ -15,7 +15,7 @@ Saben agent yaiku profil konfigurasi sing diwenehi jeneng lan nggabungake:
 - **System prompt** — pandhuan sing netepake nada, prioritas, lan watesan agent
 - **Saran** — prompt sing wis ditulis sadurunge lan ditampilake ing antarmuka chat supaya sampeyan bisa miwiti kanthi cepet
 
-## Ngakses Agent Picker
+## Ngakses Agent Picker {#accessing-the-agent-picker}
 
 1. Bukak panel **Gratis AI Agent** ing sidebar admin WordPress.
 2. Klik **ikon agent** ing sisih kiwa ndhuwur header chat (ikon bakal owah kanggo nggambarake agent sing aktif).
@@ -24,9 +24,9 @@ Saben agent yaiku profil konfigurasi sing diwenehi jeneng lan nggabungake:
 
 Sampeyan uga bisa ngalih agents ing tengah pacelathon — system prompt agent anyar bakal ditrapake wiwit pesen sabanjure.
 
-## Limang Agents Gawan
+## Limang Agents Gawan {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fokus:** Nggawe lan nyunting kiriman, kaca, lan formulir kontak.
 
@@ -47,7 +47,7 @@ Sampeyan uga bisa ngalih agents ing tengah pacelathon — system prompt agent an
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fokus:** Nggawe situs web saka wiwitan nganti rampung saka siji prompt.
 
@@ -70,7 +70,7 @@ Sampeyan uga bisa ngalih agents ing tengah pacelathon — system prompt agent an
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fokus:** Kustomisasi visual — warna, tipografi, CSS, lan pola blok.
 
@@ -87,7 +87,7 @@ Sampeyan uga bisa ngalih agents ing tengah pacelathon — system prompt agent an
 - *Jupuk screenshot homepage lan kandhani apa sing bakal kokapiki.*
 - *Gawe pola blok hero sing bisa digunakake maneh nganggo gambar latar ambane penuh lan judhul ing tengah.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokus:** Nemokake, nginstal, lan ngatur plugin WordPress.
 
@@ -105,7 +105,7 @@ Sampeyan uga bisa ngalih agents ing tengah pacelathon — system prompt agent an
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fokus:** Njawab pitakon babagan konten situs, setelan, lan konfigurasi WordPress.
 
@@ -124,7 +124,7 @@ Sampeyan uga bisa ngalih agents ing tengah pacelathon — system prompt agent an
 
 ---
 
-## Integrasi Otomatisasi Superdav
+## Integrasi Otomatisasi Superdav {#superdav-automation-integrations}
 
 Nalika integrasi Superdav AI Agent v1.18.0 dikonfigurasi, agen bawaan bisa melu ing alur kerja otomatisasi sing luwih aman lan ngerti jadwal:
 
@@ -138,11 +138,11 @@ Alur kerja sing disaranaké: jaluk agen nyiapaké pesen utawa tumindak, priksa p
 
 ---
 
-## Ngatur Kustom Agen
+## Ngatur Kustom Agen {#customising-agents}
 
 Saben agen bawaan bisa ditambahi utawa diganti liwat filter `gratis_ai_agent_agents`.
 
-### Nambahaké pituduh sistem kustom menyang agen sing wis ana
+### Nambahaké pituduh sistem kustom menyang agen sing wis ana {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Ndaftaraké agen anyar
+### Ndaftaraké agen anyar {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Agen anyar katon ing Pamilih Agen sanalika sawisé filter mlaku.
 
-### Mbusak agen bawaan
+### Mbusak agen bawaan {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

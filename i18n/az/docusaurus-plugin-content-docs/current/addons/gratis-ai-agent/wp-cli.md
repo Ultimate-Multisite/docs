@@ -3,11 +3,11 @@ title: WP-CLI Referansı
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Referansı
+# WP-CLI Referansı {#wp-cli-reference}
 
 Gratis AI Agent, agent-i qiymətləndirmək, imkanları idarə etmək və agent statusunu komanda xəttindən sorğulamaq üçün `wp gratis-ai-agent` komanda ailəsini təqdim edir. Bütün komandalar WP-CLI 2.0 və ya yuxarı versiya tələb edir.
 
-## Qurulması
+## Qurulması {#installation}
 
 WP-CLI komandaları plugin aktiv olduqda avtomatik olaraq qeyd olunur. Aşağıdakı komanda ilə yoxlayın:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agent İmkanları qiymətləndirmə dəstini işə salır — bu, bütün imkanlar sahəsini yoxlayan mürəkkəb, çoxaddımlı sorğulardan ibarətdir. Bunu model performansını qiymətləndirmək, AI provayderlərini müqayisə etmək və ya istehsal mühitinə yerləşdirməzdən əvvəl imkan paketlərini yoxlamaq üçün istifadə edin.
 
-### Sinopsis
+### Sinopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Seçimlər
+### Seçimlər {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Çıxış formatı: `table` (default), `json`, `csv` |
 | `--save` | Tarixi müqayisə üçün qiymətləndirmə nəticələrini verilənlər bazasına yadda saxlayır |
 
-### Nümunələr
+### Nümunələr {#examples}
 
 Cari provayder və model ilə bütün qiymətləndirmə dəstini işə salın:
 
@@ -57,7 +57,7 @@ Müəyyən bir modelə qarşı işə salın və nəticələri yadda saxlayın:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Çıxış
+### Çıxış {#output}
 
 Qiymətləndirmə hər sual üçün bir sətir, aşağıdakı sütunlarla birlikdə çıxış verir:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Qiymətləndirmə Sualları
+### Qiymətləndirmə Sualları {#benchmark-questions}
 
 Default dəst aşağıdakıları əhatə edir:
 
@@ -95,11 +95,11 @@ Default dəst aşağıdakıları əhatə edir:
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Qurulmuş imkanları və imkan paketlərini idarə edir.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Qeyd edilmiş bütün imkanları, onların mənbəyini (core yoxsa pack) və cari statusunu siyahıya alır.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Bir imkan paketini kataloqdan yükləyir və aktivləşdirir.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Bir imkan paketini silmədən müəyyən bir imkanı deaktiv edir. Bu, agentin verilən saytdakı əhatəsini məhdudlaşdırmaq üçün faydalıdır.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Əvvəllər deaktiv edilmiş bir imkanı yenidən aktivləşdirir.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Cari agent konfiqurasiyasını və bağlantı statusunu göstərir.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Debug log-dan agentin son fəaliyyətini göstərir.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Agent vəziyyətini sıfırlayır: yerləşdirilmiş CSS-ni təmizləyir, agent tərəfindən qeyd edilmiş CPT və taksonomiyaları silir, global stilləri sıfırlayır və agentin options cache-ini boşaldır. Plugin və ya onun ayarlarını silmir.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Çıxış Kodları
+## Çıxış Kodları {#exit-codes}
 
 Bütün komandalar uğurlu olduqda `0` ilə çıxır. Sıfırdan fərqli çıxış kodları:
 

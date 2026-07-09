@@ -4,13 +4,13 @@ title: Hohenga - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Mahi: wp_ultimo_captcha_load
+# Mahi: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
 
 Ka whakaoho ina utaina katoatia ngā dependencies.
 
-### Mai i
+### Mai i {#since}
 
 - 1.0.0
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia i [`ultimate-multisite-captcha.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/ultimate-multisite-captcha.php#L240) i te rārangi 240

@@ -3,7 +3,7 @@ title: Mailchimp өөрчлөлтийн бүртгэл
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp өөрчлөлтийн бүртгэл
+# Mailchimp өөрчлөлтийн бүртгэл {#mailchimp-changelog}
 
 Хувилбар: 1.1.1 - 2025-09-28-нд гарсан
 

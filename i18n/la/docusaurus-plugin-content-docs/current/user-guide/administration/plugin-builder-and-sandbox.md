@@ -3,11 +3,11 @@ title: Construtor Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 introducit **Plugin Builder & Sandbox System**, quod permittit assistentem IA generare, activare et gestioni plugin WordPress in rete tua — omnia per unum safem, isolatum environment sandbox.
 
-## Visio
+## Visio {#overview}
 
 Plugin Builder permittit assistantem IA scribere plugin WordPress customes in respondendi petitionibus linguae naturalis. Plugin generati sunt validi, conservati et activati intra layer sandbox antequam affectant aliquam functionem siti vivo.
 
@@ -17,7 +17,7 @@ Casus utilizandi includunt:
 - Prototyping (prototipum) proprietatum quae hook WordPress vel custom post types requirunt.
 - Creare scripta automationis breves temporis ad operationes in serie.
 
-## Generatio Pluginis per IA
+## Generatio Pluginis per IA {#generating-a-plugin-via-ai}
 
 Ad generationem pluginis, aperi interface chat Gratis AI Agent et descris what necesse. Pro exemplum:
 
@@ -32,7 +32,7 @@ IA facsit:
 
 Resultatum potes refinari sequens in eadem thread conversationis antequam activare.
 
-## Activatio Sandbox
+## Activatio Sandbox {#sandbox-activation}
 
 Activatio pluginis generati in sandbox est distincta a activation in rete vivo. Sandbox:
 

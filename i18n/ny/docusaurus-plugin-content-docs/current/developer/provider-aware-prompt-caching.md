@@ -3,11 +3,11 @@ title: Kusunga ma Prompt mu Cache Kodziwa Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching
+# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 imayambitsa **provider-aware prompt caching**, yomwe imakonza bwino mtengo wa API ndi kuchedwa poyika prompts mu cache kudutsa ma provider osiyanasiyana a LLM. Provider aliyense ali ndi njira ndi makonzedwe osiyanasiyana a caching.
 
-## Chidule
+## Chidule {#overview}
 
 Prompt caching imakulolani kuti:
 
@@ -23,11 +23,11 @@ Ma provider osiyanasiyana amagwiritsa ntchito caching mosiyanasiyana:
 - **OpenRouter**: Caching yokhudzana ndi provider
 - **Vertex Anthropic**: Prompt caching yokhala ndi cache control
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini imapereka kasamalidwe ka cache komveka bwino kudzera pa `cachedContents` API.
 
-### Makonzedwe
+### Makonzedwe {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Kupanga Prompt Yoyikidwa mu Cache
+### Kupanga Prompt Yoyikidwa mu Cache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Kugwiritsa Ntchito Prompt Yoyikidwa mu Cache
+### Kugwiritsa Ntchito Prompt Yoyikidwa mu Cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Moyo wa Cache
+### Moyo wa Cache {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Njira Zabwino Kwambiri za Gemini
+### Njira Zabwino Kwambiri za Gemini {#best-practices-for-gemini}
 
 - **Ikani TTL yoyenera**: Yerekezerani kusunga mtengo motsutsana ndi kukalamba kwa cache
 - **Ikani system prompts mu cache**: Gwiritsaninso ntchito system prompt yomweyo pazopempha zosiyanasiyana
 - **Yang'anirani kugwiritsidwa ntchito kwa cache**: Tsatirani ma cache omwe amagwiritsidwa ntchito kwambiri
 - **Chotsani ma cache omwe atha nthawi**: Nthawi ndi nthawi chotsani ma cache osagwiritsidwa ntchito
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI imathandiza prompt caching yokhala ndi kasamalidwe ka TTL kodzichitira yokha.
 
-### Makonzedwe
+### Makonzedwe {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Kuyatsa Caching
+### Kuyatsa Caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Headers
+### Cache Headers {#cache-headers}
 
 Azure OpenAI imagwiritsa ntchito HTTP headers pa cache control:
 
@@ -152,7 +152,7 @@ Makhalidwe othandizidwa:
 - `no_cache`: Musayike pempho ili mu cache
 - `no_store`: Musayike mu cache ndipo musagwiritsenso ntchito
 
-### Kuyang'anira Kugwiritsidwa Ntchito kwa Cache
+### Kuyang'anira Kugwiritsidwa Ntchito kwa Cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Njira Zabwino Kwambiri za Azure OpenAI
+### Njira Zabwino Kwambiri za Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Gwiritsani ntchito prompts zosasintha**: Prompts zofanana zimapindula ndi caching
 - **Ikani TTL yanzeru**: Yerekezerani mtengo motsutsana ndi kutsitsimuka
 - **Yang'anirani cache metrics**: Tsatirani kupanga cache motsutsana ndi hits
 - **Sonkhanitsani zopempha zofanana**: Ikani zopempha m'magulu kuti muwonjezere cache hits
 
-## OpenRouter: Caching Yokhudzana ndi Provider
+## OpenRouter: Caching Yokhudzana ndi Provider {#openrouter-provider-specific-caching}
 
 OpenRouter imathandiza caching kudzera mwa ma provider omwe ali pansi pake (OpenAI, Anthropic, ndi zina).
 
-### Makonzedwe
+### Makonzedwe {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Kugwiritsa Ntchito OpenRouter Caching
+### Kugwiritsa Ntchito OpenRouter Caching {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Zosankha Zokhudzana ndi Provider
+### Zosankha Zokhudzana ndi Provider {#provider-specific-options}
 
 Ma provider osiyanasiyana ali ndi njira zosiyanasiyana za caching:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Njira Zabwino Kwambiri za OpenRouter
+### Njira Zabwino Kwambiri za OpenRouter {#best-practices-for-openrouter}
 
 - **Dziwani caching ya provider wanu**: Provider aliyense ali ndi njira zosiyanasiyana
 - **Yesani khalidwe la caching**: Tsimikizirani kuti caching ikugwira ntchito ndi provider amene mwasankha
 - **Yang'anirani mitengo**: Tsatirani ndalama zosungidwa kuchokera ku caching
 - **Gwiritsani ntchito models zosasintha**: Kusintha models kumasokoneza cache hits
 
-## Vertex Anthropic: Prompt Caching Yokhala ndi Cache Control
+## Vertex Anthropic: Prompt Caching Yokhala ndi Cache Control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) imathandiza prompt caching yokhala ndi cache control yomveka bwino.
 
-### Makonzedwe
+### Makonzedwe {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Kugwiritsa Ntchito Vertex Anthropic Caching
+### Kugwiritsa Ntchito Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Mitundu ya Kuwongolera Cache
+### Mitundu ya Kuwongolera Cache {#cache-control-types}
 
 - **ephemeral**: Cache kwa nthawi ya pempho (zokhazikika)
 - **persistent**: Cache kudutsa mapempho angapo (ngati ikuthandizidwa)
 
-### Kuwunika Kagwiritsidwe Ntchito ka Cache
+### Kuwunika Kagwiritsidwe Ntchito ka Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Njira Zabwino Kwambiri za Vertex Anthropic
+### Njira Zabwino Kwambiri za Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Gwiritsani ntchito ephemeral caching**: Ndi yabwino pa caching ya gawo limodzi
 - **Ikani max_tokens moyenera**: Gwirizanitsani kukula kwa cache ndi mtengo
 - **Yang'anirani ma metrics a cache**: Tsatirani mmene cache ikugwirira ntchito bwino
 - **Yesani ndi ntchito yanu**: Tsimikizirani kuti caching ikupindulitsa kagwiritsidwe kanu
 
-## Njira ya Caching Yodutsa Othandizira
+## Njira ya Caching Yodutsa Othandizira {#cross-provider-caching-strategy}
 
-### Kasinthidwe Kogwirizana
+### Kasinthidwe Kogwirizana {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Kuzindikira Wothandizira
+### Kuzindikira Wothandizira {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Njira Yobwerera M'mbuyo
+### Njira Yobwerera M'mbuyo {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kukonza Mtengo
+## Kukonza Mtengo {#cost-optimization}
 
-### Werengani Zosunga
+### Werengani Zosunga {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Malangizo Okonza
+### Malangizo Okonza {#optimization-tips}
 
 - **Cache ma system prompts akulu**: Kusunga mtengo kwakukulu kwambiri
 - **Gwiritsaninso ntchito context**: Cache zikalata za context zomwe zimagwiritsidwa ntchito kawirikawiri
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Yang'anirani kugwira ntchito kwa cache**: Tsatirani zosunga zenizeni
 - **Sinthani TTL**: Gwirizanitsani mtengo ndi kutsitsimuka
 
-## Kuthetsa Mavuto
+## Kuthetsa Mavuto {#troubleshooting}
 
-### Cache sikugwiritsidwa ntchito
+### Cache sikugwiritsidwa ntchito {#cache-not-being-used}
 
 - Tsimikizirani kuti caching yatsegulidwa mu configuration
 - Onani kuti prompts ndi zofanana (caching imafuna kufanana kwenikweni)
 - Tsimikizirani kuti cache sinathe nthawi
 - Onani malire a cache a wothandizira aliyense
 
-### Kupanga cache kukulephera
+### Kupanga cache kukulephera {#cache-creation-failing}
 
 - Tsimikizirani kuti kukula kwa cache kuli mkati mwa malire a wothandizira
 - Onani kuti syntax ya cache control ndi yolondola
 - Onetsetsani kuti wothandizira amathandiza caching pa model yanu
 - Unikaninso documentation ya wothandizira kuti muone malire
 
-### Mitengo yosayembekezereka
+### Mitengo yosayembekezereka {#unexpected-costs}
 
 - Yang'anirani kupanga cache poyerekeza ndi cache read tokens
 - Tsimikizirani kuti cache ikugwiritsidwa ntchito kwenikweni
 - Onani cache misses chifukwa cha kusiyanasiyana kwa prompt
 - Ganizirani kusintha TTL kapena njira ya cache
 
-## Kuyerekezera Othandizira
+## Kuyerekezera Othandizira {#provider-comparison}
 
 | Mbali | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Kuchepetsa mtengo | 90% | 90% | Kutengera wothandizira | 90% |
 | Kuwunika | Mwatsatanetsatane | Kudzera mu metrics | Kutengera wothandizira | Kudzera mu usage |
 
-## Masitepe Otsatira
+## Masitepe Otsatira {#next-steps}
 
 1. **Sankhani wothandizira wanu**: Sankhani kutengera zosowa zanu
 2. **Konzani caching**: Khazikitsani caching ya wothandizira aliyense

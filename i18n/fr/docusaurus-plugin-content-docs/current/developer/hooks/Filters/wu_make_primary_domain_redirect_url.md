@@ -4,13 +4,13 @@ title: Filtre - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Filtre l'URL de redirection après avoir défini un domaine comme principal.
 
 Permet aux développeurs de personnaliser l'endroit où les utilisateurs sont redirigés après avoir correctement défini un domaine comme principal. Par défaut, la redirection se fait vers l'URL actuelle du site principal, ou vers l'URL d'administration du site modifié.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Permet aux développeurs de personnaliser l'endroit où les utilisateurs sont re
 | $domain | `\Domain` | L'objet domaine qui a été rendu principal. |
 | $old_primary_domains | `array` | Tableau des ID des domaines qui étaient précédemment principaux. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 Defined in [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) at line 639
 
-## Returns
+## Returns {#returns}
 L'URL de redirection filtrée.

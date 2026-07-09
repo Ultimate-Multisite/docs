@@ -3,7 +3,7 @@ title: Iifomu zokuHlawula
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Iifomu zokugqibezela ukuthenga
+# Iifomu zokugqibezela ukuthenga {#checkout-forms}
 
 Iifomu zokugqibezela ukuthenga ziyindlela elula neguquguqukayo yokuzama iindlela ezahlukeneyo xa uzama ukuguqula abathengi abatsha.
 
@@ -36,13 +36,13 @@ Kungenjalo, ungahlela okanye uphindaphinde iifomu osele unazo ngokucofa kwiinket
 
 ![Izenzo ezibonakala xa uhambisa impuku phezu kwefomu yokugqibezela ukuthenga](/img/config/checkout-form-hover-actions.png)
 
-#### Isishwankathelo soMhleli weFomu yokugqibezela ukuthenga
+#### Isishwankathelo soMhleli weFomu yokugqibezela ukuthenga {#checkout-form-editor-overview}
 
 Umhleli wefomu yokugqibezela ukuthenga unikezela ngojongano olubanzi lokwakha iifomu zakho zobhaliso. Nasi isishwankathelo sobume bomhleli:
 
 ![Isishwankathelo somhleli weFomu yokugqibezela ukuthenga](/img/config/checkout-form-editor-overview.png)
 
-### Ukuhlela iFomu yokugqibezela ukuthenga
+### Ukuhlela iFomu yokugqibezela ukuthenga {#editing-a-checkout-form}
 
 Ungenza iifomu zokugqibezela ukuthenga ngeenjongo ezahlukeneyo. Kulo mzekelo siza kusebenza kwifomu yobhaliso.
 
@@ -112,7 +112,7 @@ Ukufumana i-shortcode yefomu yakho cofa ku-Generate Shortcode uze ukope isiphumo
 
 ![Iqhosha lokugcina eline-shortcode](/img/config/checkout-form-save.png)
 
-### Ifield yeTheyibhile yamaxabiso
+### Ifield yeTheyibhile yamaxabiso {#the-pricing-table-field}
 
 Ifield ye-**Theyibhile yamaxabiso** ibonisa iimveliso zakho kwifomu yokugqibezela ukuthenga ukuze abathengi bakhethe iplan. Xa uhlela le field, ungaqwalasela iinketho ezininzi:
 
@@ -130,17 +130,17 @@ Nantsi indlela itheyibhile yamaxabiso ebonakala ngayo kwifomu yobhaliso ye-front
 
 Ukuba wongeza imveliso kwiTheyibhile Yamaxabiso ngaphambi kokuba ifomu ibandakanye amasimi afunekayo ukugqibezela ukuhamba kokuhlawula kwaloo mveliso, umhleli ngoku ubonisa isilumkiso. Sebenzisa isilumkiso ukongeza intsimi efunekayo engekhoyo ngaphambi kokupapasha okanye ukugcina utshintsho kwifomu yobhaliso ephilayo.
 
-### Ukongeza Isitshintshi Sokukhetha Ixesha
+### Ukongeza Isitshintshi Sokukhetha Ixesha {#adding-a-period-selection-toggle}
 
 Ukuba uqwalasele [Iinguqulelo Zamaxabiso](creating-your-first-subscription-product#price-variations) kwiimveliso zakho (umz. amaxabiso enyanga nonyaka), ungongeza intsimi ye-**Ukukhetha Ixesha** kwifomu yakho yokuhlawula. Le ntsimi ibonisa isitshintshi esivumela abathengi ukuba batshintshe phakathi kwamaxesha okuhlawuliswa, kwaye itheyibhile yamaxabiso ihlaziyeka ngokuguquguqukayo ngexesha lokwenyani.
 
-#### Inyathelo 1: Seta Iinguqulelo Zamaxabiso kwiimveliso zakho
+#### Inyathelo 1: Seta Iinguqulelo Zamaxabiso kwiimveliso zakho {#step-1-set-up-price-variations-on-your-products}
 
 Ngaphambi kokongeza intsimi ye-Ukukhetha Ixesha, qinisekisa ukuba iimveliso zakho zineenguqulelo zamaxabiso eziqwalaselweyo. Yiya ku-**Ultimate Multisite > Iimveliso**, hlela imveliso, uze uye kwithebhu ye-**Iinguqulelo Zamaxabiso** ukongeza amaxesha okuhlawuliswa angamanye (umz. Yonyaka ngexabiso elithotyiweyo).
 
 ![Ithebhu yeeNguqulelo Zamaxabiso kwimveliso](/img/config/product-price-variations-tab.png)
 
-#### Inyathelo 2: Yongeza Intsimi ye-Ukukhetha Ixesha kwiFomu yakho yokuHlawula
+#### Inyathelo 2: Yongeza Intsimi ye-Ukukhetha Ixesha kwiFomu yakho yokuHlawula {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Yiya ku-**Ultimate Multisite > Iifomu zokuHlawula** uze uhlele ifomu yakho yokuhlawula.
 
@@ -163,13 +163,13 @@ Ngaphambi kokongeza intsimi ye-Ukukhetha Ixesha, qinisekisa ukuba iimveliso zakh
 
 7. Cofa **Gcina Intsimi**.
 
-#### Inyathelo 3: Beka Intsimi Ngaphezulu kweTheyibhile Yamaxabiso
+#### Inyathelo 3: Beka Intsimi Ngaphezulu kweTheyibhile Yamaxabiso {#step-3-position-the-field-above-the-pricing-table}
 
 Ukuze abasebenzisi bafumane amava angcono, qinisekisa ukuba intsimi ye-Ukukhetha Ixesha ivela **ngaphambi** kwentsimi yeTheyibhile Yamaxabiso kwinyathelo lakho lokuhlawula. Ungatsala amasimi ukuze uwacwangcise ngokutsha kumhleli wefomu yokuhlawula. Ngale ndlela, abathengi kuqala bakhetha ixesha lokuhlawuliswa baze emva koko babone amaxabiso elo xesha.
 
 ![Umhleli wefomu yokuhlawula obonisa ulandelelwano lwamasimi](/img/config/checkout-form-editor-with-fields.png)
 
-#### Indlela Esebenza Ngayo kwi-Frontend
+#### Indlela Esebenza Ngayo kwi-Frontend {#how-it-works-on-the-frontend}
 
 Nje ukuba kuqwalaselwe, abathengi abatyelela iphepha lakho lobhaliso baza kubona umkhethi wexesha ngaphezulu kwetheyibhile yamaxabiso. Xa becofa ixesha lokuhlawuliswa elahlukileyo:
 
@@ -177,7 +177,7 @@ Nje ukuba kuqwalaselwe, abathengi abatyelela iphepha lakho lobhaliso baza kubona
   * Ukuba **Nyanzelisa Amaxesha Ahlukeneyo** ingasebenzi kwintsimi yeTheyibhile Yamaxabiso, iimveliso ezingenayo inguqulelo yexabiso yexesha elikhethiweyo ziya kufihlwa.
   * Ukuba **Nyanzelisa Amaxesha Ahlukeneyo** yenziwe yasebenza, zonke iimveliso zihlala zibonakala nokuba azinanguqulelo yexesha elikhethiweyo (ziya kubonisa ixabiso lazo elingagqibekanga).
 
-#### Ukukhetha Kwangaphambili Ixesha lokuHlawuliswa nge-URL
+#### Ukukhetha Kwangaphambili Ixesha lokuHlawuliswa nge-URL {#pre-selecting-a-billing-period-via-url}
 
 Ungakwazi kwakhona ukukhetha kwangaphambili imveliso kunye nexesha lokuhlawuliswa nge-URL. Ultimate Multisite ixhasa ezi patheni ze-URL:
 
@@ -185,11 +185,11 @@ Ungakwazi kwakhona ukukhetha kwangaphambili imveliso kunye nexesha lokuhlawulisw
   * `/register/premium/12` — Ikhetha kwangaphambili imveliso kunye nobude beenyanga ezili-12
   * `/register/premium/1/year` — Ikhetha kwangaphambili imveliso enobude bonyaka om-1
 
-### Intsimi yoKhetho lweTemplate
+### Intsimi yoKhetho lweTemplate {#the-template-selection-field}
 
 Intsimi ye-**Ukukhetha iTemplate** ivumela abathengi ukuba bakhethe itemplate yesayithi ngexesha lokuhlawula. Ngoku ibandakanyiwe ngokungagqibekanga kwiitemplate zeefomu zokuhlawula ze-**nyathelo elinye** kunye **namanyathelo amaninzi** ezongezwe kwi-Ultimate Multisite v2.6.1.
 
-#### Ukongeza intsimi ngesandla
+#### Ukongeza intsimi ngesandla {#adding-the-field-manually}
 
 Ukuba usebenza ngefomu eyadalwa ngaphambi kwe-v2.6.1, okanye uqale kwitemplate engenanto:
 
@@ -200,11 +200,11 @@ Ukuba usebenza ngefomu eyadalwa ngaphambi kwe-v2.6.1, okanye uqale kwitemplate e
    - **Ileyibhile** — Isihloko abathengi abasibona ngaphezulu kwegridi yeetemplate (umz. "Khetha itemplate yesayithi").
    - **Iyafuneka** — Ukuba abathengi kufuneka bakhethe itemplate ngaphambi kokuqhubeka.
 
-#### Indlela esebenza ngayo
+#### Indlela esebenza ngayo {#how-it-works}
 
 Xa umthengi ekhetha itemplate ngexesha lokuhlawula, Ultimate Multisite iyayisebenzisa xa isenza isayithi yakhe entsha. Iitemplate eziboniswayo zivela kuluhlu lwakho lwe-**Site Templates** (**Ultimate Multisite > Site Templates**). Kuphela ziitemplate eziphawulwe njengezifumanekayo kubathengi ezivela apha.
 
-### Iidomeyini ezisisiseko zeefomu zokuhlawula
+### Iidomeyini ezisisiseko zeefomu zokuhlawula {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 iphatha iidomeyini eziqwalaselwe kwiintsimi ze-**URL yeSayithi** zefomu yokuhlawula njengeedomeyini ezisisiseko zenethiwekhi. Sebenzisa iisetingi zedomeyini ezifumanekayo zentsimi xa ufuna abathengi benze iisayithi phantsi kwedomeyini enye okanye ezingaphezulu zobhaliso ekwabelwana ngazo, ezifana no-`example.com` kunye no-`sites.example.com`.
 
@@ -212,6 +212,6 @@ Iidomeyini ezisisiseko ze-checkout-form ekwabelwana ngazo aziphathwa njengemephu
 
 Gcina iidomeyini zesiko zee-host ezimephiweyo zomthengi ngamnye, ezifana ne-`customer-example.com`. Gcina iidomeyini ezisisiseko ze-checkout-form zee-host zobhaliso ekwabelwana ngazo ezinokusetyenziswa ziisayithi ezininzi.
 
-#### Ukususa intsimi
+#### Ukususa intsimi {#removing-the-field}
 
 Ukuba awuboneleli ngeethempleyithi zesayithi, susa intsimi ye-Template Selection kwifom yakho. Abathengi baya kufumana nayiphi na ithempleyithi engagqibekanga eqwalaselwe phantsi kwe-**Ultimate Multisite > Settings > Site Templates**.

@@ -3,7 +3,7 @@ title: Àwọn Snippets GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Bí o ṣe lè lo àwọn snippet Ultimate Multisite lórí repository GitHub wa
+# Bí o ṣe lè lo àwọn snippet Ultimate Multisite lórí repository GitHub wa {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Àwọn snippet code wà nínú repository GitHub tí àwọn oníṣe Ultimate Multisite máa ń béèrè fún léraléra, tí wọ́n fẹ́ fi àwọn iṣẹ́ kéékèèké kún un bí fífi script Google Analytics sí àwọn ojúewé ìforúkọsílẹ̀ tàbí fífi meta box pamọ́ kúrò ní dashboard admin.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# Bí o ṣe lè fi snippet náà kún fáìlì functions.php ti theme rẹ.
+# Bí o ṣe lè fi snippet náà kún fáìlì functions.php ti theme rẹ. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Wọlé sí dashboard admin WordPress Network rẹ kí o sì lọ sí Themes >Theme Editor (Wo screenshot nísàlẹ̀).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: Theme Editor WordPress tó ń fi àtúnṣe fáìlì functions.php hàn -->
 
-# Bí o ṣe lè ṣẹ̀dá Must-Use Plugins (mu-plugins)
+# Bí o ṣe lè ṣẹ̀dá Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress ní ẹya kan tó jẹ́ kí o load iṣẹ́ àdáni tí a ń pè ní "Must-Use Plugins", tàbí "mu-plugins" ní kúkúrú.
 

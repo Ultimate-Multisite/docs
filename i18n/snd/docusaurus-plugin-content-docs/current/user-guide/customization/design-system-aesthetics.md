@@ -3,11 +3,11 @@ title: ڊيزائن سسٽم جمالياتي ڪلناڪ
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# ڈیزائن سسٹم کی خوبصورتی کا ہنر (Design System Aesthetics Skill)
+# ڈیزائن سسٹم کی خوبصورتی کا ہنر (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
 
 **ڈیزائن سسٹم کی خوبصورتی کا ہنر (Design System Aesthetics skill)** آپ کی سائٹ کی بصری شناخت کو بہتر بنانے کے لیے ایک رہنمائی کرنے والا طریقہ ہے۔ یہ آپ کو اپنی ڈیزائن سسٹم کو متعین کرنے والے ٹائپوگرافی، رنگ، جگہ اور حرکت کے ٹوکنز کے بارے میں مستقل فیصلے کرنے میں مدد کرتا ہے۔
 
-## ڈیزائن سسٹم کی خوبصورتی کیا ہے؟ (What is Design System Aesthetics?)
+## ڈیزائن سسٹم کی خوبصورتی کیا ہے؟ (What is Design System Aesthetics?) {#what-is-design-system-aesthetics}
 
 ڈیزائن سسٹم کی خوبصورتی ایک منظم ہنر ہے جس میں یہ چیزیں شامل ہیں:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 یہ فیصلے آپ کی تھیم کی `theme.json` فائل میں محفوظ کیے جاتے ہیں، جس سے ایک ہم آہنگ بصری نظام بنتا ہے۔
 
-## ڈیزائن سسٹم کی خوبصورتی کیوں استعمال کریں؟ (Why Use Design System Aesthetics?)
+## ڈیزائن سسٹم کی خوبصورتی کیوں استعمال کریں؟ (Why Use Design System Aesthetics?) {#why-use-design-system-aesthetics}
 
-### مستقل مزاجی (Consistency)
+### مستقل مزاجی (Consistency) {#consistency}
 
 ایک ڈیزائن سسٹم یہ یقینی بناتا ہے:
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - جگہ کا فاصلہ ایک قابل پیش گوئی نمونے پر عمل کرتا ہے
 - اینیمیشنز متحد محسوس ہوتی ہیں
 
-### کارکردگی (Efficiency)
+### کارکردگی (Efficiency) {#efficiency}
 
 ہر صفحے پر ڈیزائن کے فیصلے کرنے کے بجائے، آپ:
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - انہیں ہر جگہ لاگو کرتے ہیں
 - صرف ایک ویلیو بدل کر عالمی سطح پر اپ ڈیٹ کرتے ہیں
 
-### لچک (Flexibility)
+### لچک (Flexibility) {#flexibility}
 
 آپ یہ کر سکتے ہیں:
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - مختلف خوبصورتیوں کے ساتھ تجربہ کریں
 - ارتقاء کے دوران برانڈ کی مستقل مزاجی برقرار رکھیں
 
-## ڈیزائن سسٹم کی خوبصورتی کا ہنر کیسے شروع کریں؟ (Triggering the Design System Aesthetics Skill)
+## ڈیزائن سسٹم کی خوبصورتی کا ہنر کیسے شروع کریں؟ (Triggering the Design System Aesthetics Skill) {#triggering-the-design-system-aesthetics-skill}
 
-### دستی فعال کرنا (Manual Activation)
+### دستی فعال کرنا (Manual Activation) {#manual-activation}
 
 آپ کسی بھی وقت یہ ہنر شروع کر سکتے ہیں:
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Guide me through design system decisions"
 ```
 
-### خودکار تجاویز (Automatic Suggestions)
+### خودکار تجاویز (Automatic Suggestions) {#automatic-suggestions}
 
 ایجنٹ آپ کو یہ ہنر استعمال کرنے کا مشورہ دے سکتے ہیں جب آپ:
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - بصری مستقل مزاجی بہتر بنانا چاہیں
 - اپنی سائٹ لانچ کرنے کی تیاری کر رہے ہوں
 
-## ڈیزائن سسٹم کی خوبصورتی کا عمل (The Design System Aesthetics Process)
+## ڈیزائن سسٹم کی خوبصورتی کا عمل (The Design System Aesthetics Process) {#the-design-system-aesthetics-process}
 
-### قدم 1: ٹائپوگرافی (Typography)
+### قدم 1: ٹائپوگرافی (Typography) {#step-1-typography}
 
 ایجن آپ سے آپ کے فونٹ کے انتخاب کے بارے میں پوچھتا ہے:
 
@@ -110,7 +110,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - **وزن کا پیمانہ (Weight scale)**: فونٹ کی موٹائی (ریگولر، میڈیم، بولڈ وغیرہ)
 - **لائن ہائٹ (Line height)**: پڑھنے کے آسانی کے لیے لائنوں کے درمیان جگہ
 
-### قدم 2: رنگ کا پالتو (Color Palette)
+### قدم 2: رنگ کا پالتو (Color Palette) {#step-2-color-palette}
 
 ```
 آئیے اپنے رنگ کے پالتو کو ترتیب دیتے ہیں۔
@@ -140,7 +140,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - معنی والے کلرز (سکسیس، وارننگ، ایرر)
 - ہورور اور ایکٹو اسٹیٹس
 
-### قدم 3: اسپیسنگ (Spacing)
+### قدم 3: اسپیسنگ (Spacing) {#step-3-spacing}
 
 توهان کتنا چاہندے ہو؟
 
@@ -160,7 +160,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - پیمانہ: xs، sm، md، lg، xl، 2xl
 - پڈنگ، مارجن، گپ کے لیے مخصوص ویلیوز
 
-### قدم 4: بارڈر اور شیڈو
+### قدم 4: بارڈر اور شیڈو {#step-4-borders-and-shadows}
 
 ```
 دیکھنے میں گہرائی اور تعریف:
@@ -183,7 +183,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ایلیویشن لیولز کے لیے شیڈو ٹوکنز
 - بارڈر کیچ وڈٹ ٹوکنز
 
-### قدم 5: حرکت اور اینیمیشن
+### قدم 5: حرکت اور اینیمیشن {#step-5-motion-and-animation}
 
 ```
 جب آپ کی سائٹ انٹرایکٹو ہو تو اسے کیسا محسوس ہونا چاہیے؟
@@ -205,9 +205,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ایزینگ فنکشنز (ease-in، ease-out، ease-in-out)
 - عام انٹرایکشنز کے لیے اینیمیشن کی فریمز
 
-## ڈیزائن سسٹم کی خوبصورتی کا اطلاق کرنا
+## ڈیزائن سسٹم کی خوبصورتی کا اطلاق کرنا {#applying-design-system-aesthetics}
 
-### خودکار اطلاق
+### خودکار اطلاق {#automatic-application}
 
 جب آپ مہارت مکمل کر لیتے ہیں، تو ایجن:
 
@@ -216,7 +216,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 3. نئے سسٹم سے میل کھانے کے لیے بلاک اسٹائلز کو دوبارہ جنریٹ کرتا ہے
 4. اپ ڈیٹ شدہ تھیم کو فعال کرتا ہے
 
-### دستی اطلاق
+### دستی اطلاق {#manual-application}
 
 آپ براہ راست `theme.json` میں بھی ترمیم کر سکتے ہیں:
 
@@ -255,9 +255,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 }
 ```
 
-## توهان جي Design System ڏسڻ (Viewing Your Design System)
+## توهان جي Design System ڏسڻ (Viewing Your Design System) {#viewing-your-design-system}
 
-### ايجنت کان پوءِ پڇو (Ask the Agent)
+### ايجنت کان پوءِ پڇو (Ask the Agent) {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -271,13 +271,13 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 ايجنت توهان جي typography، colors، spacing ۽ ٻين tokens کي ڏيکاري ٿي.
 
-### theme.json ڏسو (View theme.json)
+### theme.json ڏسو (View theme.json) {#view-themejson}
 
 راو token definitions ڏسڻ لاءِ `/wp-content/themes/[theme-name]/theme.json` کي text editor ۾ खोलो.
 
-## توهان جي Design System جو اپڊيو ڪرڻ (Updating Your Design System)
+## توهان جي Design System جو اپڊيو ڪرڻ (Updating Your Design System) {#updating-your-design-system}
 
-### جلدي اپڊيو (Quick Updates)
+### جلدي اپڊيو (Quick Updates) {#quick-updates}
 
 خاص تبديلين لاءِ ايجنت کان پڇو:
 
@@ -297,7 +297,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Change the heading font to a serif"
 ```
 
-### پورو نئين تصميم (Full Redesign)
+### پورو نئين تصميم (Full Redesign) {#full-redesign}
 
 Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 
@@ -307,7 +307,7 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 
 هي توهان کي توهان جي موجوده قيمت کان شروع ڪندي، سڀني فيصلي مراحل تي رهاندي.
 
-### جزوي اپڊيو (Partial Updates)
+### جزوي اپڊيو (Partial Updates) {#partial-updates}
 
 خاص حصن کي اپڊيو ڪريو:
 
@@ -315,15 +315,15 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 "Just update the color palette, keep everything else"
 ```
 
-## Design System جا بهتر عمل (Design System Best Practices)
+## Design System جا بهتر عمل (Design System Best Practices) {#design-system-best-practices}
 
-### تسلسل (Consistency)
+### تسلسل (Consistency) {#consistency-1}
 
 - سڀني جتي به هڪ ئي tokens استعمال ڪريو.
 - ڪنهن خاص رنگ يا साइज کي نه banaيو.
 - قيمتن کي سخت کوڈ ڪرڻ بجاء tokens جو حوالہ ڏيو.
 
-### ناملائي (Naming)
+### ناملائي (Naming) {#naming}
 
 واضح ۽ معني نالا استعمال ڪريو:
 
@@ -333,7 +333,7 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalability (پائي ٿيڻ جو صلاحيت)
+### Scalability (پائي ٿيڻ جو صلاحيت) {#scalability}
 
 اپنا سسٹم کي وسيع ڪرڻ جو منصوبہ بنائ:
 
@@ -341,7 +341,7 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 - مجهول قيمت ناهن، سائز (xs, sm, md, lg, xl) banao
 - مستقبل ۾ اضافو لاءِ پلان بنايو
 
-### دستاویز
+### دستاویز {#documentation}
 
 پنهنجي design system کي بيان ڪريو:
 
@@ -349,9 +349,9 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 - هر token کي ڪهڙي وقت استعمال ڪرڻ آهي
 - استثnaio ۽ حڪمت عليين (edge cases)
 
-## عام design system پٽرن
+## عام design system پٽرن {#common-design-system-patterns}
 
-### ماڊرن مينيملزم (Modern Minimalist)
+### ماڊرن مينيملزم (Modern Minimalist) {#modern-minimalist}
 
 - سنس-سرف تيڪار (Inter, Helvetica)
 - محدود رنگ جو مجموعو (2-3 رنگ)
@@ -359,7 +359,7 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 - نرم سائيڊ سائيڊز (subtle shadows)
 - سلسلي ۾ ٿڌي، تيز انيمشنز
 
-### گرم ۽ دوستانه (Warm and Friendly)
+### گرم ۽ دوستانه (Warm and Friendly) {#warm-and-friendly}
 
 - سيرف ۽ سنس-سرف جو مڪمل مجموعو
 - گرم رنگ جو مجموعو (سنڌا، گرم گريئس)
@@ -367,7 +367,7 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 - نرم سائيڊ سائيڊز
 - کيڏي وڏيون انيمشنز
 
-### پروفیشنل ڪورپيٽ (Professional Corporate)
+### پروفیشنل ڪورپيٽ (Professional Corporate) {#professional-corporate}
 
 - صاف سنس-سرف (Roboto, Open Sans)
 - هڪ نيٽرل رنگ جو مجموعو ۽ هڪ accent رنگ
@@ -375,7 +375,7 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 - مينيمل سائيڊ سائيڊز
 - نرم ترينشنز (transitions)
 
-### تخليقي ۽ مضبوط (Creative and Bold)
+### تخليقي ۽ مضبوط (Creative and Bold) {#creative-and-bold}
 
 - خاص قسم جي تيڪار
 - گهڻي رنگ جو مجموعو
@@ -383,7 +383,7 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 - مضبوط سائيڊ سائيڊز
 - واضح انيمشنز
 
-## گلاهم ڪرڻ (Troubleshooting)
+## گلاهم ڪرڻ (Troubleshooting) {#troubleshooting}
 
 **منهنجي design system ۾ تبديلين ڏس نه رهيون ٿيون**
 - پنهنجي براؤزر کي cache صاف ڪريو
@@ -401,7 +401,7 @@ Design System Aesthetics skill کي ٻيهر چالو ڪريو:
 - theme.json کي مٿي واري قيمتن سان هوائي طور ۾ edit ڪريو
 - مختلف چونڊن سان skill کي ٻيهر رن ڪريو
 
-## هيٺيون قدم (Next Steps)
+## هيٺيون قدم (Next Steps) {#next-steps}
 
 پنهنجي design system کي بيان ڪرڻ کان پوءڪ:
 

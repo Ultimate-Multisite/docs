@@ -3,13 +3,13 @@ title: Diridda Iimayllada iyo Baahinta
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Dirista Emails iyo Broadcasts (v2)
+# Dirista Emails iyo Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**QORAAL MUHIIM AH: Maqaalkani wuxuu khuseeyaa Ultimate Multisite nooca 2.x.**_
 
 Ultimate Multisite wuxuu la yimaadaa sifo kuu oggolaanaysa inaad la xiriirto macaamiishaada adigoo email u diraya isticmaale la beegsaday ama koox isticmaaleyaal ah, sidoo kalena ogeysiisyo ugu diraya admin dashboard-kooda si loogu faafiyo ogeysiisyo
 
-## Ku dar ogeysiisyada admin dashboard-ka macaamiishaada adigoo adeegsanaya Broadcasts
+## Ku dar ogeysiisyada admin dashboard-ka macaamiishaada adigoo adeegsanaya Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Adigoo adeegsanaya sifooyinka broadcast ee Ultimate Multisite, waxaad ku dari kartaa **ogeysiisyada admin** subsite admin dashboard-ka isticmaalahaaga.
 
@@ -51,7 +51,7 @@ Kadib markaad abuurto farriintaada, waxaad markaas riixi kartaa badhanka **Send*
 
 Waana intaas. Ogeysiiska admin waa inuu isla markiiba ka muuqdaa dashboard-ka isticmaalahaaga.
 
-## U dir emails macaamiishaada
+## U dir emails macaamiishaada {#send-emails-to-your-customers}
 
 Adigoo adeegsanaya sifooyinka broadcast ee Ultimate Multisite, waxaad email u diri kartaa isticmaaleyaashaada. Waxaad leedahay ikhtiyaar aad email-ka ugu diri karto oo keliya isticmaaleyaal gaar ah ama aad ku beegsato koox isticmaaleyaal gaar ah iyadoo lagu saleynayo badeecada ama qorshaha ay ku subscribed yihiin.
 
@@ -81,11 +81,11 @@ Kadib markaad abuurto farriintaada, waxaad riixi kartaa badhanka **Send**.
 
 Waana sida ay u fududahay in email loo diro end-users-kaaga adigoo adeegsanaya sifooyinka broadcast.
 
-## Emails-ka nidaamka
+## Emails-ka nidaamka {#system-emails}
 
 Emails-ka nidaamka ee Ultimate Multisite waa **ogeysiisyada otomaatigga ah** ee uu nidaamku diro kadib ficillo gaar ah sida diiwaangelin, lacag-bixin, domain mapping, iwm. Emails-kan waxaa laga tafatiri karaa ama laga beddeli karaa settings-ka Ultimate Multisite. Waxa kale oo uu la yimaadaa sifo kuu oggolaanaysa inaad reset-gareyso oo aad ka soo dejiso settings jira rakibid kale oo Ultimate Multisite ah.
 
-### Reset-gareynta & Soo dejinta
+### Reset-gareynta & Soo dejinta {#resetting--importing}
 
 Noocyada cusub ee Ultimate Multisite, iyo sidoo kale add-ons, waxay diiwaangelin karaan oo diiwaangelin doonaan emails cusub mararka qaarkood.
 
@@ -93,7 +93,7 @@ Si looga hortago iskahorimaadyo iyo arrimo kale, **si otomaatig ah uguma dari do
 
 Si kastaba ha ahaatee, super admins iyo agents waxay soo dejin karaan emails-kan cusub ee la diiwaangeliyey iyagoo adeegsanaya qalabka importer-ka. Habkaas wuxuu abuuri doonaa email nidaam cusub oo leh nuxurka iyo qaabeynta template-ka email-ka cusub, taasoo u oggolaanaysa super admin inuu sameeyo wax ka beddel kasta oo uu rabo ama uu u daayo sida ay yihiin.
 
-#### Sida loo soo dejiyo emails-ka nidaamka
+#### Sida loo soo dejiyo emails-ka nidaamka {#how-to-import-system-emails}
 
 Tag bogga Settings ee Ultimate Multisite oo u gudub tab-ka **Emails**.
 
@@ -111,7 +111,7 @@ Kadib, waxaad rogi kartaa ikhtiyaarrada Import Emails si aad u aragto emails-ka 
 
 <!-- Sawir-qaadis lama heli karo: Modal-ka Reset and Import oo leh xulashooyinka Import Emails oo la ballaariyey -->
 
-#### Dib-u-dejinta Email-lada Nidaamka
+#### Dib-u-dejinta Email-lada Nidaamka {#reseting-system-emails}
 
 Mararka qaarkood, waxaad ogaan doontaa in isbeddelladii aad ku samaysay template email gaar ah aysan mar dambe kuu shaqaynayn, oo aad rabto inaad dib ugu dejiso **xaaladdiisa caadiga ah**.
 

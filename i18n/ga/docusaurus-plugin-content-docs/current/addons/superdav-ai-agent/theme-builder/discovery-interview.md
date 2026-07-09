@@ -3,35 +3,35 @@ title: Agallamh Fionnachtana
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Agallamh Fionnachtana
+# Agallamh Fionnachtana {#discovery-interview}
 
 Is é an **tAgallamh Fionnachtana** an chéad chéim i bpróiseas deartha Theme Builder. Bailíonn sé eolas faoi do shuíomh, do ghnó, agus do roghanna deartha chun téama pearsantaithe a chruthú.
 
-## Forbhreathnú
+## Forbhreathnú {#overview}
 
 Treoraíonn an tAgallamh Fionnachtana thú trí shraith ceisteanna chun do bhranda, do sprioc-lucht féachana, agus do spriocanna deartha a thuiscint. I leagan 1.16.0, tá **céim uaslódála grianghraf** san agallamh anois a ligeann duit inspioráid amhairc a sholáthar do do dhearadh.
 
-## Céimeanna an Agallaimh
+## Céimeanna an Agallaimh {#interview-steps}
 
-### 1. Eolas Gnó
+### 1. Eolas Gnó {#1-business-information}
 
 - Ainm an tsuímh agus mana
 - Cineál gnó nó tionscal
 - Príomhspriocanna gnó
 - Cur síos ar an sprioc-lucht féachana
 
-### 2. Roghanna Deartha
+### 2. Roghanna Deartha {#2-design-preferences}
 
 - Scéim dathanna is fearr leat
 - Stíl deartha (nua-aimseartha, clasaiceach, íostach, spraíúil, srl.)
 - Suíomhanna gréasáin nó brandaí inspioráide
 - Eilimintí deartha riachtanacha
 
-### 3. Uaslódáil Grianghraf (Nua in v1.16.0)
+### 3. Uaslódáil Grianghraf (Nua in v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Uaslódáil grianghraf amháin nó níos mó chun tionchar a imirt ar threo an deartha:
 
-#### Formáidí a nGlactar Leo
+#### Formáidí a nGlactar Leo {#accepted-formats}
 
 | Formáid | Síneadh | Sonraí |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Uaslódáil grianghraf amháin nó níos mó chun tionchar a imirt ar threo an d
 | **WebP** | `.webp` | Formáid nua-aimseartha, méid comhaid níos lú |
 | **GIF** | `.gif` | Íomhánna statacha amháin (gan beochan) |
 
-#### Riachtanais Chomhaid
+#### Riachtanais Chomhaid {#file-requirements}
 
 - **Uasmhéid comhaid:** 10 MB
 - **Íostoisí:** 400 × 300 picteilín
 - **Toisí molta:** 1200 × 800 picteilín nó níos mó
 - **Cóimheas treoíochta:** Glactar le haon chóimheas
 
-#### Conas a Imríonn Grianghraif Tionchar ar Threo an Deartha
+#### Conas a Imríonn Grianghraif Tionchar ar Threo an Deartha {#how-photos-influence-design-direction}
 
 Cabhraíonn na grianghraif a uaslódálann tú le Theme Builder a thuiscint:
 
@@ -57,21 +57,21 @@ Cabhraíonn na grianghraif a uaslódálann tú le Theme Builder a thuiscint:
 - **Eilimintí deartha** — patrúin, uigeachtaí, agus stíleanna cumadóireachta
 - **Inspioráid chlóghrafaíochta** — stíleanna cló a chomhlánaíonn an téama amhairc
 
-### 4. Struchtúr Ábhair
+### 4. Struchtúr Ábhair {#4-content-structure}
 
 - Príomhleathanaigh atá ag teastáil (Baile, Maidir Linn, Seirbhísí, Teagmháil, srl.)
 - Rannóg blag nó nuachta ag teastáil
 - Feidhmiúlacht ríomhthráchtála ag teastáil
 - Gnéithe speisialta nó comhtháthuithe
 
-### 5. Athbhreithniú agus Deimhniú
+### 5. Athbhreithniú agus Deimhniú {#5-review-and-confirmation}
 
 - Achoimre ar an eolas ar fad a soláthraíodh
 - Deimhniú sula dtosaíonn giniúint an deartha
 
-## Dea-Chleachtais d’Uaslódáil Grianghraf
+## Dea-Chleachtais d’Uaslódáil Grianghraf {#photo-upload-best-practices}
 
-### Cad ba Chóir a Uaslódáil
+### Cad ba Chóir a Uaslódáil {#what-to-upload}
 
 - **Inspioráid bhranda** — lógónna, samplaí dathanna, nó treoirlínte branda
 - **Suíomhanna iomaitheoirí** — seatanna scáileáin de shuíomhanna a bhfuil meas agat orthu
@@ -80,7 +80,7 @@ Cabhraíonn na grianghraif a uaslódálann tú le Theme Builder a thuiscint:
 - **Grianghraif foirne nó oifige** — do bhrandáil phearsanta nó ghairmiúil
 - **Íomhánna stíl mhaireachtála** — a léiríonn do sprioc-lucht féachana
 
-### Cad ba Chóir a Sheachaint
+### Cad ba Chóir a Sheachaint {#what-to-avoid}
 
 - **Íomhánna ar chaighdeán íseal** — grianghraif dhoiléire nó phicteilínithe
 - **Íomhánna neamhghaolmhara** — grianghraif nach léiríonn do bhranda
@@ -88,7 +88,7 @@ Cabhraíonn na grianghraif a uaslódálann tú le Theme Builder a thuiscint:
 - **Ábhar faoi chóipcheart** — cinntigh go bhfuil cearta agat na híomhánna a úsáid
 - **GIFanna beoite** — ní phróiseáiltear ach íomhánna statacha
 
-### Leideanna chun na Torthaí is Fearr a Fháil
+### Leideanna chun na Torthaí is Fearr a Fháil {#tips-for-best-results}
 
 1. **Uaslódáil 2-3 íomhá** — soláthraíonn íomhánna iolracha comhthéacs níos fearr
 2. **Úsáid grianghraif ar ardchaighdeán** — is fearr a oibríonn íomhánna soiléire, dea-shoilsithe
@@ -96,7 +96,7 @@ Cabhraíonn na grianghraif a uaslódálann tú le Theme Builder a thuiscint:
 4. **Soláthair comhthéacs** — déan cur síos gairid ar an bhfáth ar roghnaigh tú gach íomhá
 5. **Bí sonrach** — má thaitníonn eilimint ar leith leat, luaigh í
 
-## Aschur Threo an Deartha
+## Aschur Threo an Deartha {#design-direction-output}
 
 Tar éis an Agallaimh Fionnachtana, gineann Theme Builder:
 
@@ -106,7 +106,7 @@ Tar éis an Agallaimh Fionnachtana, gineann Theme Builder:
 - **Eilimintí amhairc** — deilbhíní, patrúin, agus eilimintí maisiúla
 - **Clár giúmair** — léiriú amhairc ar threo an deartha
 
-## Na Chéad Chéimeanna Eile
+## Na Chéad Chéimeanna Eile {#next-steps}
 
 Tar éis duit an tAgallamh Fionnachtana a chríochnú:
 
@@ -115,7 +115,7 @@ Tar éis duit an tAgallamh Fionnachtana a chríochnú:
 3. Lean ar aghaidh chuig céim [Treo an Deartha](./design-direction.md)
 4. Cruthaíonn Theme Builder do théama saincheaptha
 
-## Doiciméadacht Ghaolmhar
+## Doiciméadacht Ghaolmhar {#related-documentation}
 
 - [Treo an Deartha](./design-direction.md) — athbhreithnigh agus mínigh do dhearadh
 - [Biachláir Fháilteachais](./hospitality-menus.md) — cruthaigh leathanaigh bhiachláir struchtúrtha

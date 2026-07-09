@@ -5,9 +5,9 @@ title: >-
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Rexistro de cambios de Ultimate AI Connector for Compatible Endpoints
+# Rexistro de cambios de Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Versión 2.0.0 — Publicada o 2026-04-24
+## Versión 2.0.0 — Publicada o 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Novo: compatibilidade con múltiples provedores — configura múltiples endpoints de IA e encamiña as solicitudes con reserva automática entre provedores.
 * Corrección: integración do SDK multiprovedor con IDs de provedor correctos, URLs de rexistro e delimitación de filtros HTTP por provedor.
@@ -18,4 +18,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Corrección: eliminouse a solicitude HTTP bloqueante que se executaba en cada carga de páxina.
 * Mellorado: fluxos de traballo de GitHub Actions actualizados a Node.js 24.
 
-## Versión 1.0.0 — Lanzamento inicial
+## Versión 1.0.0 — Lanzamento inicial {#version-100--initial-release}

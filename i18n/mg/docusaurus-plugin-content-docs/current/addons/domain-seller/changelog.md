@@ -3,7 +3,7 @@ title: Lisitry ny fanovan'ny Mpivarotra Sehatra
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Tantaran'ny fiovan'ny Domain Seller
+# Tantaran'ny fiovan'ny Domain Seller {#domain-seller-changelog}
 
 Version 1.3.0 - Navoaka tamin'ny 2026-06-02
 - Vaovao: Nampiana fampitandremana ho an'ny network-admin rehefa ambany loatra ny sandan'ny mpivarotra indray HostAfrica
@@ -134,20 +134,20 @@ Version 1.0.0 - Navoaka tamin'ny 2025-09-28
 * **Voahitsy:** Code v1 deprecated rehetra nohavaozina ho fenitra v2
 * **Nesorina:** Fifanarahana amin'ny v1 taloha (fiovana manapaka)
 
-### Version teo aloha (v1 taloha)
+### Version teo aloha (v1 taloha) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Voahitsy: Tsy fifanarahana amin'ny Groundhogg CRM
 * Fanamarihana: Ity no famoahana farany nifanaraka amin'ny v1
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Voahitsy: Nesorina ny saha License Key
 * Voahitsy: Tsy hita ny tab plan rehefa mandeha ny plugin endri-javatra
 * Nohatsaraina: Nampiana bokotra skip tao amin'ny saha fisoratana anarana
 
-### Version 0.0.1 - Famoahana Voalohany
+### Version 0.0.1 - Famoahana Voalohany {#version-001---initial-release}
 
 * Fampidirana OpenSRS fototra ho an'ny WP Ultimo v1
 * Fikarohana sy fisoratana anarana domain tsotra

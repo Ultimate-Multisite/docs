@@ -3,11 +3,11 @@ title: Ukubonakala kwesakhono
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ukubonakala Kobuchule
+# Ukubonakala Kobuchule {#ability-visibility}
 
 Superdav AI Agent v1.12.0 izisa izilawuli ze-**Ukubonakala Kobuchule** ezilawula ukuba yeyiphi imiphezulu ebonisa ubuchule ngamnye. Oku kuvumela abalawuli ukuba balungise ngokuchanekileyo ukuba zeziphi izakhono ze-agent ezifumanekayo nge-REST APIs, iiseva ze-MCP, ukudityaniswa kwe-WooCommerce, kunye nezinye iindlela zokunxibelelana.
 
-## Yintoni Ukubonakala Kobuchule?
+## Yintoni Ukubonakala Kobuchule? {#what-is-ability-visibility}
 
 Ukubonakala Kobuchule yinkqubo yeemvume elawula:
 
@@ -18,9 +18,9 @@ Ukubonakala Kobuchule yinkqubo yeemvume elawula:
 
 Ubuchule ngabunye buphethe inqanaba lokubonakala elimisela ukufumaneka kwabo kwimiphezulu eyahlukeneyo.
 
-## Amanqanaba Okubonakala
+## Amanqanaba Okubonakala {#visibility-levels}
 
-### Esidlangalaleni
+### Esidlangalaleni {#public}
 
 **Ubuchule besidlangalaleni** bufumaneka kuyo yonke indawo:
 
@@ -32,7 +32,7 @@ Ubuchule ngabunye buphethe inqanaba lokubonakala elimisela ukufumaneka kwabo kwi
 
 Umzekelo: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Ngaphakathi
+### Ngaphakathi {#internal}
 
 **Ubuchule bangaphakathi** bufumaneka kuphela ngaphakathi kofakelo lwakho lwe-WordPress:
 
@@ -43,7 +43,7 @@ Umzekelo: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Umzekelo: `manage-settings`, `view-analytics`, `export-data`
 
-### Iqabane
+### Iqabane {#partner}
 
 **Ubuchule bamaqabane** bufumaneka kuphela kumaqabane akuluhlu oluvunyelweyo:
 
@@ -54,7 +54,7 @@ Umzekelo: `manage-settings`, `view-analytics`, `export-data`
 
 Umzekelo: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Ikhubazekile
+### Ikhubazekile {#disabled}
 
 **Ubuchule obukhubazekileyo** abufumaneki naphi na:
 
@@ -63,15 +63,15 @@ Umzekelo: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Abufumaneki kwiiphaneli zolawulo
 - Buluncedo kubuchule obuphelelwe lixesha okanye obusavavanywa
 
-## Ukulawula Ukubonakala Kobuchule
+## Ukulawula Ukubonakala Kobuchule {#managing-ability-visibility}
 
-### Ukufikelela Kuseto Lokubonakala Kobuchule
+### Ukufikelela Kuseto Lokubonakala Kobuchule {#accessing-ability-visibility-settings}
 
 1. Yiya ku-**Ulawulo lwe-WordPress** → **Superdav AI Agent** → **Iisetingi**
 2. Cofa ithebhu ethi **Ubuchule**
 3. Uza kubona uluhlu lwabo bonke ubuchule obufakiweyo kunye namanqanaba abo okubonakala
 
-### Ukujonga Iinkcukacha Zobuchule
+### Ukujonga Iinkcukacha Zobuchule {#viewing-ability-details}
 
 Cofa kubuchule nabuphi na ukuze ubone:
 
@@ -82,7 +82,7 @@ Cofa kubuchule nabuphi na ukuze ubone:
 - **Igqityelwe ukuhlaziywa**: Xa ukubonakala kwagqityelwa ukutshintshwa
 - **Isimo**: Buqatshelwe okanye Abuhlelwanga
 
-### Ukutshintsha Amanqanaba Okubonakala
+### Ukutshintsha Amanqanaba Okubonakala {#changing-visibility-levels}
 
 Ukutshintsha ukubonakala kobuchule:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Imisebenzi Yesininzi
+### Imisebenzi Yesininzi {#bulk-operations}
 
 Ukutshintsha ukubonakala kobuchule obuninzi:
 
@@ -108,11 +108,11 @@ Ukutshintsha ukubonakala kobuchule obuninzi:
 2. Khetha inqanaba elitsha lokubonakala kwi-dropdown yesenzo sesininzi
 3. Cofa **Sebenzisa**
 
-## Uluhlu Lokuvunyelwa Kweqabane
+## Uluhlu Lokuvunyelwa Kweqabane {#partner-allow-list}
 
 **Uluhlu lokuvunyelwa kweqabane** lulawula ukuba ngawaphi amaqabane angaphandle anokufikelela kubuchule benqanaba le-Iqabane.
 
-### Ukongeza Amaqabane
+### Ukongeza Amaqabane {#adding-partners}
 
 1. Yiya ku-**Superdav AI Agent** → **Iisetingi** → **Amaqabane**
 2. Cofa **Yongeza Iqabane**
@@ -120,7 +120,7 @@ Ukutshintsha ukubonakala kobuchule obuninzi:
 4. Ngokuzikhethela yongeza igama leqabane kunye nenkcazelo
 5. Cofa **Gcina**
 
-### Ukwabela Amaqabane Ubuchule
+### Ukwabela Amaqabane Ubuchule {#assigning-abilities-to-partners}
 
 Emva kokongeza iqabane:
 
@@ -130,7 +130,7 @@ Emva kokongeza iqabane:
 4. Kwicandelo elithi "Uluhlu lokuvunyelwa kweqabane", khangela iibhokisi zamaqabane ekufuneka abe nokufikelela
 5. Cofa **Gcina**
 
-### Ukurhoxisa Ukufikelela Kweqabane
+### Ukurhoxisa Ukufikelela Kweqabane {#revoking-partner-access}
 
 Ukususa ukufikelela kweqabane:
 
@@ -140,11 +140,11 @@ Ukususa ukufikelela kweqabane:
 
 Iqabane liya kuphulukana nokufikelela kobo buchule kwangoko.
 
-## Ubuchule Obungahlelwanga
+## Ubuchule Obungahlelwanga {#unclassified-abilities}
 
 Xa ufaka ubuchule bomntu wesithathu i-Superdav AI Agent engabuqapheliyo, buphawulwa njenge-**Abuhlelwanga**.
 
-### Isaziso Solawulo Sobuchule Obungahlelwanga
+### Isaziso Solawulo Sobuchule Obungahlelwanga {#admin-notice-for-unclassified-abilities}
 
 Uza kubona isaziso solawulo:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Ukuphonononga Ubuchule Obungahlelwanga
+### Ukuphonononga Ubuchule Obungahlelwanga {#reviewing-unclassified-abilities}
 
 1. Cofa **Phonononga Ubuchule** kwisaziso
 2. Kubuchule ngabunye obungahlelwanga, uza kubona:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Cofa **Hlela** ukuze ugcine isigqibo sakho
 
-### Kutheni Uhlele Ubuchule Obungahlelwanga?
+### Kutheni Uhlele Ubuchule Obungahlelwanga? {#why-classify-unclassified-abilities}
 
 Ukuhlela ubuchule:
 
@@ -187,9 +187,9 @@ Ukuhlela ubuchule:
 - **Kuvumela iimpawu**: Nje ukuba buhlelwe, ubuchule buyafumaneka
 - **Kubhala izigqibo**: Ukhetho lwakho lugcinwa kwiingxelo ngenjongo yophicotho
 
-## Ukubonakala Kwimiphezulu Eyahlukeneyo
+## Ukubonakala Kwimiphezulu Eyahlukeneyo {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Ubuchule besidlangalaleni** bufumaneka ngee-endpoint ze-REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Ubuchule bangaphakathi nobamaqabane** abufumaneki nge-REST API.
 
-### Iiseva ze-MCP
+### Iiseva ze-MCP {#mcp-servers}
 
 **Ubuchule besidlangalaleni** bufumaneka nge-MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Ubuchule bamaqabane** bufumaneka kuphela ngeziqinisekiso zeqabane.
 
-### Ukudityaniswa kwe-WooCommerce
+### Ukudityaniswa kwe-WooCommerce {#woocommerce-integration}
 
 **Ubuchule besidlangalaleni** obunxulumene ne-WooCommerce bufumaneka:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Ubuchule bangaphakathi** abuboniswa kwi-WooCommerce.
 
-### Indlela Yonxibelelwano Yengxoxo
+### Indlela Yonxibelelwano Yengxoxo {#chat-interface}
 
 **Bonke ubuchule** (Esidlangalaleni, Ngaphakathi, Iqabane) bufumaneka kwingxoxo, ngokuxhomekeke kwiimvume zomsebenzisi:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Abasebenzisi abaqhelekileyo babona kuphela ubuchule besidlangalaleni
 - Amaqabane abona ubuchule besidlangalaleni + ubuchule bamaqabane (ukuba akuluhlu oluvunyelweyo)
 
-## Iindlela Ezilungileyo Zokhuseleko
+## Iindlela Ezilungileyo Zokhuseleko {#security-best-practices}
 
-### Umgaqo Wamalungelo Amancinci
+### Umgaqo Wamalungelo Amancinci {#principle-of-least-privilege}
 
 - Seta ubuchule kwinqanaba lokubonakala elona lithintelayo kodwa lisavumela ukusetyenziswa kwabo
 - Sebenzisa ukubonakala kwe-Iqabane kwimisebenzi ebuthathaka
 - Khubaza ubuchule ongabusebenzisiyo
 
-### Uphicotho Rhoqo
+### Uphicotho Rhoqo {#regular-audits}
 
 - Phonononga ukubonakala kobuchule nyanga zonke
 - Khangela ubuchule obungahlelwanga
 - Susa ukufikelela kumaqabane angasasetyenziswayo
 
-### Ukugcinwa Kweengxelo Nokubeka Esweni
+### Ukugcinwa Kweengxelo Nokubeka Esweni {#logging-and-monitoring}
 
 - Beka esweni ukuba bubuphi ubuchule obusetyenziswa kakhulu
 - Landela iipatheni zokufikelela zamaqabane
 - Lumkisa xa kusetyenziswa ubuchule ngendlela engaqhelekanga
 
-### Ubuchule Bomntu Wesithathu
+### Ubuchule Bomntu Wesithathu {#third-party-abilities}
 
 - Phonononga ubuchule bomntu wesithathu phambi kokubuvumela
 - Buhlele ngokucacileyo
 - Qala ngokubonakala kwangaphakathi okanye kwe-Iqabane
 - Bunyusele esidlangalaleni kuphela emva kokubuvavanya
 
-## Ukusombulula Iingxaki
+## Ukusombulula Iingxaki {#troubleshooting}
 
 **Ubuchule abubonakali kuluhlu**
 - Qinisekisa ukuba ubuchule bufakiwe kwaye buyasebenza
@@ -285,7 +285,7 @@ Available abilities:
 - Khangela ukuba ukuhlelwa kwakho kugciniwe
 - Qinisekisa ukuba i-plugin ebonelela ngobuchule ihlaziyiwe
 
-## Ukufuduka Ukusuka Kwimo Yakudala
+## Ukufuduka Ukusuka Kwimo Yakudala {#migration-from-legacy-mode}
 
 Ukuba uphucula ukusuka kuguqulelo oludala lwe-Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Ukuba uphucula ukusuka kuguqulelo oludala lwe-Superdav AI Agent:
 
 Bona **Ukufuduka Kwimo Yomntu Wesithathu** ukuze ufumane iinkcukacha ezingakumbi ngotshintsho oluya kudityaniso lwemveli lwe-Abilities API.
 
-## Amanyathelo Alandelayo
+## Amanyathelo Alandelayo {#next-steps}
 
 Emva kokumisela ukubonakala kobuchule:
 

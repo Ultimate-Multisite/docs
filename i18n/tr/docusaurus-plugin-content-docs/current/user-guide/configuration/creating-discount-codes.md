@@ -3,13 +3,13 @@ title: İndirim Kodları Oluşturma
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# İndirim Kodları Oluşturma (v2)
+# İndirim Kodları Oluşturma (v2) {#creating-discount-codes-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne aittir.**_
 
 Ultimate Multisite ile müşterilerinize aboneliklerinde indirimler vermek için indirim kodları oluşturabilirsiniz. Üstelik bunları oluşturmak kolaydır!
 
-## İndirim Kodları Oluşturma ve Düzenleme
+## İndirim Kodları Oluşturma ve Düzenleme {#creating-and-editing-discount-codes}
 
 Bir indirim kodu oluşturmak veya düzenlemek için **Ultimate Multisite > İndirim Kodları** bölümüne gidin.
 
@@ -87,7 +87,7 @@ Kupon artık listenizdedir ve buradan onu **düzenlemek veya silmek** için tık
 
 ###
 
-### URL Parametrelerini Kullanma:
+### URL Parametrelerini Kullanma: {#using-url-parameters}
 
 Fiyatlandırma tablolarınızı özelleştirmek veya web siteniz için güzel bir kupon kodu sayfası oluşturmak ve ödeme formunuza otomatik olarak bir indirim kodu uygulamak istiyorsanız bunu URL parametreleri aracılığıyla yapabilirsiniz.
 

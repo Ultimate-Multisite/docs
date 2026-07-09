@@ -4,13 +4,13 @@ title: Filter - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url
+# Filter: wu_sso_url {#filter-wussourl}
 
 Filter gegenereerde SSO-URL's voordat hulle vir kruisdomein-kliëntaksies teruggestuur word.
 
 Gebruik hierdie filter wanneer ’n integrasie vertroude konteks by ’n soewereine-huurder-SSO-skakel moet voeg of die broker-URL moet vervang terwyl Ultimate Multisite se token-validering behou word.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Gebruik hierdie filter wanneer ’n integrasie vertroude konteks by ’n soewere
 | $site_id | `int` | Teiken-site-ID vir die besoek. |
 | $redirect_to | `string` | Bestemming-URL ná suksesvolle SSO-validering. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.13.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieer in `inc/sso/class-sso.php`.
 
 
-## Gee terug
+## Gee terug {#returns}
 
 Gefilterde SSO-URL.

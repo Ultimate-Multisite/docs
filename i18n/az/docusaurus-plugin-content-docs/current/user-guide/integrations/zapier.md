@@ -3,7 +3,7 @@ title: Zapier İnteqrasiyası
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite-in Zapier ilə inteqrasiyası
+# Ultimate Multisite-in Zapier ilə inteqrasiyası {#integrating-ultimate-multisite-with-zapier}
 
 Məqalələrdən birində [Webhooks](webhooks.md) haqqında və onların 3-cü tərəf tətbiqləri ilə inteqrasiya üçün necə istifadə oluna biləcəyini müzakirə etmişdik.
 
@@ -15,7 +15,7 @@ Zapier 5000+-dən çox tətbiqlə inteqrasiyaya malikdir və bu, müxtəlif tət
 
 Bu mümkündür, çünki **Ultimate Multisite Zapier-in tətikləyiciləri** və əməliyyatları [REST API](https://developer.ultimatemultisite.com/api/docs/) ilə işləyir.
 
-## Necə başlamaq olar
+## Necə başlamaq olar {#how-to-start}
 
 Əvvəlcə Zapier tətbiq siyahısında Ultimate Multisite axtarın. Alternativ olaraq, [bu linkə](https://zapier.com/apps/wp-ultimo/integrations) klikləyə bilərsiniz.
 
@@ -51,7 +51,7 @@ URL sahəsinə protokol (HTTP və ya HTTPS) daxil olmaqla şəbəkənizin tam UR
 
 Növbəti addıma keçmək üçün **Yes, Continue** düyməsinə klikləyin. Hər şey qaydasında olarsa, yeni qoşulmuş Account-unuzla qarşılanmalısınız! Yeni tətikləyici yaratmaq üçün **Continue** üzərinə klikləyin.
 
-## Yeni tətikləyici necə yaradılır
+## Yeni tətikləyici necə yaradılır {#how-to-create-a-new-trigger}
 
 Account-unuz qoşulduqdan sonra mövcud hadisələri görə bilərsiniz. Bu dərslik üçün **payment_received** hadisəsini seçək.
 
@@ -67,7 +67,7 @@ Bu mərhələdə Zapier, Zap-ınızın **həmin hadisəyə aid konkret payload-u
 
 Dərsliyimizdə test **uğurla tamamlandı** və payload nümunə məlumatını qaytardı. Bu nümunə məlumat əməliyyatlar yaradarkən bizə istiqamət vermək üçün faydalı olacaq. Tətikləyiciniz indi yaradılıb və digər tətbiqlərə qoşulmağa hazırdır.
 
-## Əməliyyatlar necə yaradılır
+## Əməliyyatlar necə yaradılır {#how-to-create-actions}
 
 Əməliyyatlar şəbəkənizdə yeni qeydlər yaratmaq üçün digər tətikləyicilərdən gələn məlumatlardan istifadə edir.
 
@@ -79,7 +79,7 @@ Növbəti addımda ya **Necə başlamaq olar** bölməsində etdiyimiz kimi aute
 
 ![Zapier əməliyyatı üçün autentifikasiyanın seçilməsi](/img/admin/webhooks-list.png)
 
-### Əməliyyatın qurulması
+### Əməliyyatın qurulması {#setting-up-the-action}
 
 Bu, **əməliyyatın əsas addımıdır** və burada işlər bir az fərqlidir. Seçəcəyiniz ilk məlumat **Element**-dir. Element şəbəkənizin **məlumat modelidir**, məsələn **Müştərilər, Ödənişlər, Saytlar, E-poçtlar** və digərləri.
 

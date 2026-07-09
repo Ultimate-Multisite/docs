@@ -3,13 +3,13 @@ title: Multi-tenancy Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje mogućnost multi-tenancy od Hostingera tako da ospitale domene mogu sudjelovati u proviziji suverenih najma (tenant) uz postojeću integraciju mapiranja domena Hostingera.
 
 Koristite ovu mogućnost kada se domeni najma i izolirana infrastruktura najma upravljaju putem Hostinger hPanel-a.
 
-## Napomene o postavljanju
+## Napomene o postavljanju {#setup-notes}
 
 1. Konfigurirajte osnovnu integraciju Hostingera pod **Ultimate Multisite > Settings > Host Integrations**.
 2. Potvrdite da API token Hostingera može upravljati ciljnim domenom ili poddomenom.
@@ -19,14 +19,14 @@ Koristite ovu mogućnost kada se domeni najma i izolirana infrastruktura najma u
 
 Mogućnost Hostingera koristi zajedničku vezu s Hostingerom za operacije na strani hosta (host-side operations). DNS se i dalje mora usmjeriti na ispravan račun Hostingera, a ograničenja računa hPanel-a i dalje važe.
 
-## Promjene specifične za mogućnost
+## Promjene specifične za mogućnost {#capability-specific-changes}
 
 - Suverene najme se mogu kreirati s operacijama domena koje su svjesne hosta (host-aware).
 - Stringovi hosta baze podataka na istoj mašini se normaliziraju prije provjere dodjele.
 - Najmi koji upravlja Hostingerom treba koristiti vrijednost hosta baze podataka prikazanu u hPanel-u, osim ako WordPress runtime ne zahtijeva lokalno prebacivanje (override).
 - Posjeti putem SSO zavise na tome da se domen najma resolve na Hostinger-hostan najma.
 
-## Rješavanje problema s najmima Hostingera
+## Rješavanje problema s najmima Hostingera {#troubleshooting-hostinger-tenants}
 
 - Ako instalacija najma ne uspije, provjerite je li domen već vezan za račun Hostingera.
 - Ako provjera baze podataka ne uspije, uporedite korisničko ime baze podataka najma, naziv baze podataka i host binding s hPanel-om.

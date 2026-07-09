@@ -3,9 +3,9 @@ title: Mengurus Pembayaran dan Invois
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Mengurus Pembayaran dan Invois
+# Mengurus Pembayaran dan Invois {#managing-payments-and-invoices}
 
-## Tetapan Pembayaran
+## Tetapan Pembayaran {#payment-settings}
 
 Sebelum anda mula menerima pembayaran, anda perlu mengkonfigurasi tetapan berkaitan pembayaran. Navigasi ke **Ultimate Multisite → Settings** dan klik pada tab **Payment**.
 
@@ -15,7 +15,7 @@ Berikut ialah paparan penuh halaman tetapan pembayaran:
 
 ![Halaman penuh tetapan pembayaran](/img/admin/settings-payments-full.png)
 
-### Pilihan Pembayaran Umum
+### Pilihan Pembayaran Umum {#general-payment-options}
 
 Dalam tetapan umum, anda boleh mengkonfigurasi:
 
@@ -24,7 +24,7 @@ Dalam tetapan umum, anda boleh mengkonfigurasi:
 
 ![Tetapan payment gateway](/img/admin/settings-payments-options.png)
 
-### Payment Gateways
+### Payment Gateways {#payment-gateways}
 
 Ultimate Multisite menyokong berbilang payment gateway. Anda boleh mendayakan dan mengkonfigurasi setiap satu daripada tab tetapan Payment.
 
@@ -40,11 +40,11 @@ Setiap gateway mempunyai bahagian konfigurasinya sendiri tempat anda memasukkan 
 
 ![Tetapan gateway tambahan](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Anda boleh mendayakan **Sandbox Mode** untuk menguji integrasi pembayaran anda sebelum dilancarkan secara langsung. Apabila sandbox mode aktif, tiada caj sebenar akan dibuat.
 
-## Melihat Pembayaran
+## Melihat Pembayaran {#viewing-payments}
 
 Navigasi ke halaman **Payments** di bawah Ultimate Multisite untuk melihat semua transaksi merentas rangkaian anda.
 
@@ -54,7 +54,7 @@ Anda boleh menapis pembayaran mengikut status (selesai, belum selesai, gagal, di
 
 Klik pada pembayaran untuk melihat butiran penuhnya termasuk item baris, membership yang berkaitan, maklumat pelanggan, dan data payment gateway.
 
-## Invois
+## Invois {#invoices}
 
 Ultimate Multisite boleh menjana invois secara automatik untuk pembayaran. Anda boleh menyesuaikan templat invois dan format penomboran daripada tetapan Payment.
 

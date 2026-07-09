@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 A Gratis AI Agent egy öngyönetülő WordPress AI asszisztens, amely természetes nyelvi utasítások alapján képes teljes WordPress oldalak tervezésére, építésére és kezelésére. Strukturált **képességeket** (abilities) biztosít, amelyek diskrét, tesztelhető műveleteket jelentenek, amelyeket az asszisztens hívhat létre. Ezek a képességek a tartalomkezeléstől a design rendszer személyre szabásáig takarítanak. Az 1.9.0 verzió hozzáad egy tartalomkészítő képességet, vizuális oldaláttekintést kliensoldali képernyőfotókkal, öt beépített asszisztens profilját, valamint funkciók kapcsolóválasztóit (feature flags) az hozzáférés- és márkaeléréshez.
 
-## Főbb funkciók
+## Főbb funkciók {#key-features}
 
 - **Abilities rendszer** — egy moduláris, bővíthető műveletkatalógus, amit az asszisztens hívhat létre az Ön WordPress telepítésén.
 - **Tartalomkezelés** — posztok és oldalak létrehozása (beleértve a lap sablonok hozzárendelését), több poszt tömör létrehozása egy hívásban, kiemelt kép beállítása és kapcsolatfelvételi űrlapok építése.
@@ -28,21 +28,21 @@ A Gratis AI Agent egy öngyönetülő WordPress AI asszisztens, amely természet
 - **Site Builder Orchestration v2** — több lépésből álló oldalépítési terveket, plugin felfedezéssel, haladás nyomon követésével és hiba-felügyelettel.
 - **WP-CLI benchmark parancs** — futtatja az asszisztens képesség benchmark csomagját a parancssorral, CI-hez és modellértékeléshez.
 
-## Feltételek
+## Feltételek {#requirements}
 
 - WordPress 6.0 vagy magasabb
 - PHP 8.1 vagy magasabb
 - WordPress Multisite (hálózat szinten aktivált) vagy single-site telepítés
 - Egy aktív AI szolgáltató csatlakoztató plugin (Anthropic, OpenAI vagy kompatibilis)
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltse fel a plugin fájljait a `/wp-content/plugins/gratis-ai-agent` útvonalba.
 2. Aktiválja a pluginet a WordPress **Plugins** képernyőjéről.
 3. Navigáljon a **Gratis AI Agent → Settings** menüpontra és csatlakoztassa AI szolgáltatóját.
 4. (Opcionális) Böngészzen az **Abilities Registry**-ben, hogy további képessék-csomagokat telepítson.
 
-## Gyors elindítás
+## Gyors elindítás {#quick-start}
 
 Aktiválás után és az AI szolgáltatóhoz csatlakozás után nyissa meg a **Gratis AI Agent** paneljét a WordPress admin oldali sávban. Írjon be egy természetes nyelvi utasítást, és az asszisztens tervezni és végrehajtani fogja a szükséges lépéseket a rendelkezésre álló képességeket felhasználva.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## Abilities áttekintése
+## Abilities áttekintése {#abilities-overview}
 
 Az Abilities az atomikus műveletek, amelyeket az asszisztens elvégezhet. Minden ability egy regisztrált PHP osztály, amely egy szémát (paramétereket és visszaadási típusokat) biztosít, amit az asszisztens futási időben olvas. Az abilities-eket funkcionális területekre csoportosították:
 
@@ -79,7 +79,7 @@ Az Abilities az atomikus műveletek, amelyeket az asszisztens elvégezhet. Minde
 
 Látogasson el az [Abilities Reference](./abilities) oldalra a teljes paraméterdokumentáció és használati példákért.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 A Gratis AI Agent egy `wp gratis-ai-agent` parancssorcsaládját biztosítja a benchmarkok futtatásához és a képességek kezeléséhez a parancssor felől. Látogasson el a [WP-CLI Reference](./wp-cli) oldalra a teljes parancslistához.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfiguráció
+## Konfiguráció {#configuration}
 
 Az összes beállítás a WordPress admin oldali **Gratis AI Agent → Settings** menüpont alatt található:
 
@@ -106,7 +106,7 @@ Az összes beállítás a WordPress admin oldali **Gratis AI Agent → Settings*
 | **Ability Timeout** | Maximális másodperce, amennyi ideig egy egyes ability futhat (alapértelmezett 30). |
 | **Debug Logging** | Naplózza az ability hívásait és az asszisztens élettelmenetét a WordPress debug naplóba. |
 
-## Opciók Kezelés Biztonsági Blokklistája
+## Opciók Kezelés Biztonsági Blokklistája {#options-management-safety-blocklist}
 
 Az Opciók Kezelés ability-je egy beépített blokklistát tartalmaz, amely megakadályozza az asszisztens számára, hogy olvaszon vagy írjon érzékeny WordPress opciókat. Az alapértelmezett blokklista a következőket foglalja magában:
 
@@ -118,26 +118,26 @@ Az Opciók Kezelés ability-je egy beépített blokklistát tartalmaz, amely meg
 
 További elemeket a `gratis_ai_agent_options_blocklist` szűrő segítségével lehet hozzáadni.
 
-## Hooks és Szűrők
+## Hooks és Szűrők {#hooks-and-filters}
 
-### Akciók (Actions)
+### Akciók (Actions) {#actions}
 
 - `gratis_ai_agent_ability_registered` — kiüti egy ability regisztrálása után, átadva az ability osztály nevét.
 - `gratis_ai_agent_plan_started` — kiüti, amikor egy oldalépítési terv elkezdi futtatását.
 - `gratis_ai_agent_plan_completed` — kiüti, amikor egy terv sikeresen fejeződik be.
 - `gratis_ai_agent_plan_failed` — kiüti, amikor egy terv visszafordíthatatlan hibával találkozik.
 
-### Szűrők (Filters)
+### Szűrők (Filters) {#filters}
 
 - `gratis_ai_agent_abilities` — módosítja a regisztrált ability listáját, mielőtt az asszisztens betölti.
 - `gratis_ai_agent_options_blocklist` — bővíti vagy csökkenti az opciók biztonsági blokklistáját.
 - `gratis_ai_agent_benchmark_questions` — hozzáad személyre szabott benchmark kérdéseket az értékelési csomaghoz.
 - `gratis_ai_agent_plan_plugins` — módosítja a plugin felfedezési listát az oldalterv generálás során.
 
-## Támogatás
+## Támogatás {#support}
 
 Támogatásért látogasson el a [ultimatemultisite.com](https://ultimatemultisite.com) oldalra, vagy nyitson egy hibajelentést a plugin repozitóriumban.
 
-## Changelog
+## Changelog {#changelog}
 
 Látogasson el a [Changelog](./changelog) oldalra a teljes verzió történetéhez.

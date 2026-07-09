@@ -3,11 +3,11 @@ title: Keeb kwm kev hloov
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Daim ntawv hloov tshiab
+# Daim ntawv hloov tshiab {#changelog}
 
-## 1.9.0 — Tso tawm thaum 2026-04-28
+## 1.9.0 — Tso tawm thaum 2026-04-28 {#190--released-on-2026-04-28}
 
-### Tshiab
+### Tshiab {#new}
 
 - **`create_contact_form` ability** — tsim ib daim foos tiv tauj siv form plugin uas tab tom qhib (Contact Form 7, WPForms, Fluent Forms, lossis Gravity Forms) thiab xa rov qab ib qho shortcode uas npaj txhij rau muab tso rau hauv ib qho post lossis page.
 - **`set_featured_image` ability** — muab ib daim featured image rau ib qho post lossis page los ntawm Media Library attachment ID uas twb muaj lawm lossis ib qho URL sab nraud; cia li import daim duab thaum muab URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Rov qab qhib session kawg** — tam sim no chat panel cia li thauj qhov kev sib tham tshiab tshaj plaws thaum page load thiab thaum qhib widget, yog li context yeej tsis ploj thaum hla ntawm cov page.
 - **Plugin action links** — quick links mus rau Settings thiab Abilities Registry tam sim no tshwm rau ntawm WordPress **Plugins → Installed Plugins** screen hauv qab plugin description.
 
-### Txhim kho
+### Txhim kho {#improved}
 
 - **Image source retry** — tam sim no agent rov sim tag nrho cov free image sources uas teeb tseg ua ntej poob rov qab mus rau ib daim duab uas AI tsim thaum download tsis tiav.
 - **Model info panel** — ib txwm pom hauv chat header; tsis zais tom qab thawj message lawm.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — unified AI icon hloov tus custom avatar qub; sib xws nrog built-in agent system.
 - **URL linkification** — cov URL uas tshwm hauv system messages thiab error message bubbles tam sim no render ua clickable links.
 
-### Kho lawm
+### Kho lawm {#fixed}
 
 - **Ability discoverability** — kho descriptions, system prompt references, thiab namespace alignment kom tag nrho abilities tshwm hauv agent daim tool list tau ruaj khov.
 - **Providers cache** — tam sim no providers raug cache thoob plaws site los ntawm version counter, pab tiv thaiv stale-provider teeb meem hauv multisite networks.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Tso tawm thaum 2026-04-09
+## 1.4.0 — Tso tawm thaum 2026-04-09 {#140--released-on-2026-04-09}
 
-### Tshiab
+### Tshiab {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — khiav Agent Capabilities v1 benchmark suite ntawm command line rau CI pipelines thiab cov txheej txheem ntsuam xyuas model. Txhawb kev khiav ib lo lus nug zuj zus, provider/model overrides, thiab JSON/CSV output.
 - **Agent Capabilities v1 benchmark suite** — ib pawg prompts uas muaj qauv, nyuaj, thiab muaj ntau kauj ruam uas sim tag nrho cheeb tsam peev xwm, nrog scoring thiab kev tshaj qhia token/duration.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — kev sim txij thaum pib txog kawg uas npog CPT registration, design system, navigation, thiab plugin discovery.
 - **AI provider connector plugins** ntxiv rau WordPress Playground blueprints kom teeb local development setup sai dua.
 
-### Txhim kho lawm
+### Txhim kho lawm {#improved-1}
 
 - README hloov tshiab nrog AI provider connector documentation thiab setup instructions.
 
-### Kho lawm
+### Kho lawm {#fixed-1}
 
 - 25 qhov PHPUnit test failures ntawm `main` branch raug daws lawm.
 - GitHub releases URL format hauv `blueprint.json` raug kho lawm.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Cov release notes yav dhau los khaws cia hauv plugin repository._

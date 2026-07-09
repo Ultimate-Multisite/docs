@@ -3,13 +3,13 @@ title: Посібник з інтеграції
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Посібник з інтеграції
+# Посібник з інтеграції {#integration-guide}
 
 Цей посібник охоплює поширені шаблони інтеграції з Ultimate Multisite, зокрема підключення до зовнішніх сервісів, створення власних платіжних шлюзів і обробку webhooks.
 
 Для ізольованої інфраструктури орендарів див. [Інтеграція Multi-Tenancy](./multi-tenancy) щодо bootstrap суверенного орендаря, перевірки міграції, SSO та рекомендацій із teardown.
 
-## Інтеграція CRM
+## Інтеграція CRM {#crm-integration}
 
 Синхронізуйте дані клієнтів із вашим CRM, коли реєструються нові клієнти:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Інтеграція Analytics
+## Інтеграція Analytics {#analytics-integration}
 
 Відстежуйте ключові бізнес-події протягом життєвого циклу клієнта:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Наступні кроки
+## Наступні кроки {#next-steps}
 
 - [Розробка власного шлюзу](./custom-gateway) — Створіть власний платіжний шлюз
 - [Обробка webhooks](./webhooks) — Створіть власні endpoints webhooks

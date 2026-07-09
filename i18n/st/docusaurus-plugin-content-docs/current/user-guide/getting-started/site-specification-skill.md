@@ -3,11 +3,11 @@ title: Tšepo ea tšepetso ea seboha
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Fikiso ea Tlhaloso ea Site (Site Specification Skill)
+# Fikiso ea Tlhaloso ea Site (Site Specification Skill) {#site-specification-skill}
 
 **Fikiso ea Tlhaloso ea Site (Site Specification skill)** ke setso se fetang se fanaang ho faka tsela e fetang ho faka tlhahlobo ea site ea hau, baetsoah, le lilikong la brand. Lefa la hau le tla fanaang ka **site_brief** memory ea hau, seo agents ba tlameha ho sebelisa ho fana ka thuso e fetang le ho tseba se se fetang sa tsela (context).
 
-## Ke eng ke Fikiso ea Tlhaloso ea Site?
+## Ke eng ke Fikiso ea Tlhaloso ea Site? {#what-is-site-specification}
 
 Fikiso ea Tlhaloso ea Site ke tsela e fetang ea ho dula:
 
@@ -19,9 +19,9 @@ Fikiso ea Tlhaloso ea Site ke tsela e fetang ea ho dula:
 
 Fikiso ena e tla ba **site_brief** ea hau, memory e fetang e agents ba sebelisa ho tseba se etsoeng sa site ea hau.
 
-## Ke eng ke Sebetsana le Fikiso ea Tlhaloso ea Site?
+## Ke eng ke Sebetsana le Fikiso ea Tlhaloso ea Site? {#why-use-site-specification}
 
-### Ho Ba le Bohlokoa ka Sesano Sa Fetang (Consistency Across Sessions)
+### Ho Ba le Bohlokoa ka Sesano Sa Fetang (Consistency Across Sessions) {#consistency-across-sessions}
 
 Ha u na le site_brief, o tla hloka ho reka molaetsa oa se etsoeng sa site ea hau ka nako hloekoe e fetang. Ha u na le seo, agents ba tla tseba kaofino ka tsela:
 
@@ -30,7 +30,7 @@ Ha u na le site_brief, o tla hloka ho reka molaetsa oa se etsoeng sa site ea hau
 - Mokhoa oa lilikong le mokhoa oa ho ba le bohlokoa
 - Mokhoa oa luso oa hau
 
-### Ho Ba le Litso e Tlhalang (Better Recommendations)
+### Ho Ba le Litso e Tlhalang (Better Recommendations) {#better-recommendations}
 
 Agents ba sebelisa site_brief ea hau ho:
 
@@ -39,17 +39,17 @@ Agents ba sebelisa site_brief ea hau ho:
 - Re kae litse tsa design tse di tsamaisang le brand ea hau
 - Ho hlalosa ho reka litse tse nngwe tse nngwe
 
-### Ho Ba le Boitshwaro e Tlhalang (Faster Onboarding)
+### Ho Ba le Boitshwaro e Tlhalang (Faster Onboarding) {#faster-onboarding}
 
 Agents ba tsoalo (or agents ba sesano sa fetang) ba ka ba le boikanyetso ka nako e fetang ka ho fonya site_brief ea hau haholo, hawalase ho hlalosa molaetsa o fapaneng.
 
-## Ho Qala Fikiso ea Tlhaloso ea Site (Initiating Site Specification)
+## Ho Qala Fikiso ea Tlhaloso ea Site (Initiating Site Specification) {#initiating-site-specification}
 
-### Ha U Ba le Onboarding ea Theme Builder
+### Ha U Ba le Onboarding ea Theme Builder {#during-theme-builder-onboarding}
 
 Fikiso ea Tlhaloso ea Site e tla qala ka tsela fetang ha u ba le **Theme Builder onboarding flow**. Agent ea Setup Assistant o tla hlalosa molaetsa o fapaneng le a dula site_brief ea hau.
 
-### Ho Qala Ka Mananya (Manual Initiation)
+### Ho Qala Ka Mananya (Manual Initiation) {#manual-initiation}
 
 O ka u ka seka le fa'aopoopo o le site:
 
@@ -63,9 +63,9 @@ pe a
 "Help me create a site brief"
 ```
 
-## Le Fa'aopoopo o le Site (The Site Specification Process)
+## Le Fa'aopoopo o le Site (The Site Specification Process) {#the-site-specification-process}
 
-### Step 1: Le Fa'aopoopo o le Site (Site Purpose)
+### Step 1: Le Fa'aopoopo o le Site (Site Purpose) {#step-1-site-purpose}
 
 O le agent e fa'aalia:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 O le a mafai ona fesoasoani i se kategori pe fa'aalia o se fa'aopoopo.
 
-### Step 2: Le Fa'aopoopo o le Ta'ita'i (Target Audience)
+### Step 2: Le Fa'aopoopo o le Ta'ita'i (Target Audience) {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -96,7 +96,7 @@ What are their main needs?
 
 O le a mafai ona fa'aalia o se mea e talaga ai i latou.
 
-### Step 3: Le Fa'aopoopo o le Fa'aalo (Brand Identity)
+### Step 3: Le Fa'aopoopo o le Fa'aalo (Brand Identity) {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -114,7 +114,7 @@ How would you describe your brand tone?
 
 O le a mafai ona fa'aalia o se fa'aalo.
 
-### Step 4: Le Fa'aopoopo o le Tasi (Business Goals)
+### Step 4: Le Fa'aopoopo o le Tasi (Business Goals) {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -135,7 +135,7 @@ What's your primary metric?
 
 O le a mafai ona fa'aalia o se mea e talaga ai i le fa'aopoopo.
 
-### Step 5: Le Fa'aopoopo o le Fa'aopoopo (Content Structure)
+### Step 5: Le Fa'aopoopo o le Fa'aopoopo (Content Structure) {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -156,13 +156,13 @@ What content types do you use?
 
 O le a mafai ona fa'aalia o se fa'aopoopo o le fa'aopoopo.
 
-## Le Memory o le site_brief (Your site_brief Memory)
+## Le Memory o le site_brief (Your site_brief Memory) {#your-sitebrief-memory}
 
 A fa'atatau i le Fa'aopoopo o le Site, o le fa'aalia o oe e fa'aopoopo ai o se **site_brief** i le memory o lo agent. O se fa'aalia fa'aopoopo e fesoasoani i:
 
-## Site-brief-a hoho (Site Brief) a tlhahlobo le go fetola
+## Site-brief-a hoho (Site Brief) a tlhahlobo le go fetola {#viewing-and-updating-your-sitebrief}
 
-### Leela le site-brief ya gago (View Your site_brief)
+### Leela le site-brief ya gago (View Your site_brief) {#view-your-sitebrief}
 
 Tšoa le agent:
 
@@ -178,7 +178,7 @@ pho ka
 
 Agent o tla ntlha tsela e ntshwago.
 
-### Fetola le site-brief ya gago (Update Your site_brief)
+### Fetola le site-brief ya gago (Update Your site_brief) {#update-your-sitebrief}
 
 Ha se a fetola, u ka fetola:
 
@@ -194,9 +194,9 @@ pho ka
 
 Tsela e tla fana ka tsela e ntshwago ya Site Specification le mofuta o o tsamaisang le mofuta o o tsamaisang joalo.
 
-## Ke eng Agents ba u sebelisa site_brief
+## Ke eng Agents ba u sebelisa site_brief {#how-agents-use-sitebrief}
 
-### Boitshwaro ba design (Design Recommendations)
+### Boitshwaro ba design (Design Recommendations) {#design-recommendations}
 
 Ha u hloka fetola tsa design, agents ba ntlha le site_brief ya gago:
 
@@ -207,7 +207,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Boitshwaro ba features (Feature Suggestions)
+### Boitshwaro ba features (Feature Suggestions) {#feature-suggestions}
 
 Agents ba ntlha le features tse di tsamaisang le mofuta o o tsamaisang:
 
@@ -218,23 +218,23 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Boitshwaro ba content (Content Structure)
+### Boitshwaro ba content (Content Structure) {#content-structure}
 
 Agents ba tšoa boikanyetso ba content ka go tsamaisa le mofuta o o tsamaisang:
 
 O: "Ke a re ka fana ka blog ea ka?"
 Agent: "Ka u sebelisa product catalog le blog, ke ke bolela hore u baqale posts ho baqale category ea produk le u seke 'styling guides' tse di bontšang products tse dintsi hobane."
 
-## Ho Baetsi Baetsi (Best Practices)
+## Ho Baetsi Baetsi (Best Practices) {#best-practices}
 
-### Le Letsope
+### Le Letsope {#be-specific}
 
 Ho feta "bahlopha ba tsohle," baithoa u baitholela baahlopha ba hau:
 
 - ✓ "Morali ba 25-45, ba tšepo ea fashle e tsamaea"
 - ✗ "Ba tsohle"
 
-### Ho Baetsi Ha Ho Hloboha
+### Ho Baetsi Ha Ho Hloboha {#update-regularly}
 
 Ha seka le site ea hau e fetoha, u hloboha site_brief ea hau:
 
@@ -243,14 +243,14 @@ Ha seka le site ea hau e fetoha, u hloboha site_brief ea hau:
 - Ha lefa le tšepo ea hau ea brand e fetoha
 - Ha tšepo ea hau ea kgosi e fetoha
 
-### Ho Baetsi Litsope Tse Tšoanang
+### Ho Baetsi Litsope Tse Tšoanang {#use-consistent-terminology}
 
 Sebetsa litsope tse tšoanang ka mofuta oona:
 
 - ✓ Hlahla hlahla "sustainable jewelry" (e ne e seke "eco-friendly jewelry" le "green products")
 - ✓ Seba ka mofuta oona baahlopha ba hau
 
-### Ho Baetsi Le Letsatsi
+### Ho Baetsi Le Letsatsi {#include-context}
 
 Hlahla le tšepo ea ho baithoa hore agents ba fihla diketso tsa hau:
 
@@ -258,7 +258,7 @@ Hlahla le tšepo ea ho baithoa hore agents ba fihla diketso tsa hau:
 - "Baahlopha ba rona ba ba tsamaea le design e modern"
 - "Re re startup e fetang, ka thusa ho ba le litšomo tse fanaeng"
 
-## Ho Baetsi Le Ho Baithoa Theme Builder
+## Ho Baetsi Le Ho Baithoa Theme Builder {#relationship-to-theme-builder-onboarding}
 
 Skill ea Site Specification e fetang ka **Theme Builder onboarding flow**. Ha ufeletse onboarding, site_brief ea hau e tla ba seke ka mofuta oona o re.
 
@@ -268,7 +268,7 @@ U ka ba le ho baithoa Site Specification ka tsela e fetang ha u batla:
 - Ho hloboha site brief ea hau ha u site e fetoha
 - Ho baqale specification e le fetang ha u qala Theme Builder
 
-## Ho Baetsi Le Ho Hloboha (Troubleshooting)
+## Ho Baetsi Le Ho Hloboha (Troubleshooting) {#troubleshooting}
 
 **Site_brief ea ka e seba ho sebelisoa**
 - Re ke re tseba hore agent e na le access ea memory?
@@ -284,7 +284,7 @@ U ka ba le ho baithoa Site Specification ka tsela e fetang ha u batla:
 - Ntshoa site\_brief ha e fetoga, ha e ntse le.
 - Ntshoa boithuti ba ntlha mo tseleng tsa o batlang (context) mo boithakeng jwa o buang.
 
-## Le fa go na le setshwantsho sa Site Specification:
+## Le fa go na le setshwantsho sa Site Specification: {#next-steps}
 
 1. **Ntshoa Theme Builder**: Fetola theme e ntsha e e fetoga le site\_brief ya gago
 2. **Ntshoa Design**: Ntshoa kakaretso ea Skill ea Design System Aesthetics ho le mongolo oa ho ba le litsela tse di fapaneng tsa design

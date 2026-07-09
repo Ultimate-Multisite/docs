@@ -3,7 +3,7 @@ title: Domande frequenti
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Domande frequenti
+# Domande frequenti {#frequently-asked-questions}
 
 Ecco alcune **Domande frequenti** che emergono spesso durante le richieste di supporto.
 

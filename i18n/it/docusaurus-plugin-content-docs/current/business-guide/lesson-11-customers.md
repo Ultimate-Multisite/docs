@@ -3,15 +3,15 @@ title: 'Lezione 11: Trovare Clienti'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lezione 11: Trovare Clienti
+# Lezione 11: Trovare Clienti {#lesson-11-finding-customers}
 
 Una piattaforma fantastica senza clienti è solo un hobby. Questa lezione copre come acquisire clienti in un settore di nicchia specifico: strategie che funzionano perché sei focalizzato su un unico ambito industriale.
 
-## Dove ci eravamo lasciati
+## Dove ci eravamo lasciati {#where-we-left-off}
 
 FitSite è online. Ora abbiamo bisogno che i proprietari di studi fitness lo trovino e si iscrivano.
 
-## Perché l'acquisizione di nicchia è diversa
+## Perché l'acquisizione di nicchia è diversa {#why-niche-acquisition-is-different}
 
 Quando vendi a tutti, ti fai competere per l'attenzione in un mercato rumoroso. Quando vendi a una nicchia, hai dei vantaggi:
 
@@ -19,17 +19,17 @@ Quando vendi a tutti, ti fai competere per l'attenzione in un mercato rumoroso. 
 - **Il tuo messaggio risuona immediatamente** -- "siti web per studi fitness" ferma l'attenzione di un proprietario di palestra mentre scorre
 - **Le referenze si moltiplicano** -- i proprietari di studi fitness conoscono altri proprietari di studi fitness
 
-## Canale 1: Contatto Diretto
+## Canale 1: Contatto Diretto {#channel-1-direct-outreach}
 
 Il percorso più veloce per i tuoi primi clienti è il contatto personale e diretto.
 
-### Trovare i potenziali clienti
+### Trovare i potenziali clienti {#find-prospects}
 
 - Cerca su Google Maps studi fitness, palestre e personal trainer della tua zona
 - Visita i loro siti web attuali (o nota che non ne hanno)
 - Raccogli informazioni di contatto dai loro profili Google Business o dai social media
 
-### Valutare la loro situazione attuale
+### Valutare la loro situazione attuale {#evaluate-their-current-situation}
 
 Per ogni potenziale cliente, annota:
 
@@ -37,7 +37,7 @@ Per ogni potenziale cliente, annota:
 - **Sito web scadente**: Potenziale cliente forte -- mostragli come può essere un'opzione migliore
 - **Sito web buono**: Potenziale cliente debole -- hanno già risolto questo problema
 
-### Stabilire il contatto
+### Stabilire il contatto {#make-contact}
 
 Invia un'email o un messaggio personalizzato:
 
@@ -48,7 +48,7 @@ Invia un'email o un messaggio personalizzato:
 
 Non inviare email di massa. Un contatto personalizzato con 20 potenziali clienti ben ricercati avrà prestazioni migliori di un messaggio generico inviato a 2.000 persone.
 
-## Canale 2: Comunità di Nicchia
+## Canale 2: Comunità di Nicchia {#channel-2-niche-communities}
 
 I proprietari di studi fitness si riuniscono in luoghi specifici online:
 
@@ -57,7 +57,7 @@ I proprietari di studi fitness si riuniscono in luoghi specifici online:
 - **Forum di settore** e bacheche di discussione
 - **Gruppi LinkedIn** per professionisti del fitness
 
-### Come partecipare
+### Come partecipare {#how-to-participate}
 
 Non unirti e subito dopo proporre il tuo prodotto. Invece:
 
@@ -66,7 +66,7 @@ Non unirti e subito dopo proporre il tuo prodotto. Invece:
 3. **Condividi quando è rilevante** -- quando qualcuno chiede dei siti web, condividi la tua piattaforma in modo naturale
 4. **Crea contenuti utili** -- scrivi post su "cosa rende un ottimo sito web per uno studio fitness" che portino naturalmente alla tua piattaforma
 
-## Canale 3: Content Marketing
+## Canale 3: Content Marketing {#channel-3-content-marketing}
 
 Crea contenuti che i proprietari di studi fitness cercano:
 
@@ -77,7 +77,7 @@ Crea contenuti che i proprietari di studi fitness cercano:
 
 Pubblica questo sul blog di marketing di FitSite. Col tempo, questo contenuto si posiziona nei motori di ricerca e porta traffico organico da persone che cercano attivamente ciò che offri.
 
-## Canale 4: Partnership
+## Canale 4: Partnership {#channel-4-partnerships}
 
 Collabora con aziende che servono già gli studi fitness:
 
@@ -88,7 +88,7 @@ Collabora con aziende che servono già gli studi fitness:
 
 Offri commissioni di referral o promozione reciproca. L'[AffiliateWP addon](/addons/affiliatewp) può aiutarti a impostare un programma di referral formale.
 
-## Canale 5: Eventi di Settore
+## Canale 5: Eventi di Settore {#channel-5-industry-events}
 
 Gli eventi del settore fitness ti mettono di fronte a centinaia di potenziali clienti:
 
@@ -99,7 +99,7 @@ Gli eventi del settore fitness ti mettono di fronte a centinaia di potenziali cl
 
 Non hai bisogno di un grande budget. Anche partecipare come partecipante e avere conversazioni su ciò che fai può generare potenziali clienti.
 
-## Canale 6: Siti di Esempio
+## Canale 6: Siti di Esempio {#channel-6-showcase-sites}
 
 Il tuo miglior marketing sono i siti dei tuoi clienti esistenti. Con il permesso:
 
@@ -108,7 +108,7 @@ Il tuo miglior marketing sono i siti dei tuoi clienti esistenti. Con il permesso
 - Chiedi ai clienti soddisfatti delle testimonianze
 - Incoraggia i clienti a menzionare FitSite quando gli viene chiesto del loro sito web
 
-## Impostare un Programma di Referral
+## Impostare un Programma di Referral {#setting-up-a-referral-program}
 
 Il passaparola è il tuo canale più potente in una nicchia. Formalizzalo:
 
@@ -116,7 +116,7 @@ Il passaparola è il tuo canale più potente in una nicchia. Formalizzalo:
 2. Offri ai clienti esistenti una ricompensa per i referral (un mese gratuito, credito sull'account, ecc.)
 3. Rendi facile -- dagli un link di referral e un messaggio semplice che possono inoltrare
 
-## Tracciare ciò che funziona
+## Tracciare ciò che funziona {#tracking-what-works}
 
 Per ogni canale, traccia:
 
@@ -126,7 +126,7 @@ Per ogni canale, traccia:
 
 Concentrati sui canali che funzionano. Elimina quelli che non funzionano.
 
-## Aspettative realistiche
+## Aspettative realistiche {#realistic-expectations}
 
 - **Mese 1-3**: 5-20 clienti, principalmente da contatto diretto e comunità
 - **Mese 4-6**: 20-50 clienti, il content marketing inizia a contribuire
@@ -134,7 +134,7 @@ Concentrati sui canali che funzionano. Elimina quelli che non funzionano.
 
 Questi numeri variano, ma lo schema è coerente: i primi clienti arrivano dallo sforzo diretto, i clienti successivi arrivano dagli effetti moltiplicatori di contenuti, referral e reputazione.
 
-## Cosa abbiamo costruito in questa lezione
+## Cosa abbiamo costruito in questa lezione {#what-we-built-this-lesson}
 
 - **Sei canali di acquisizione** adattati alla nicchia fitness
 - **Un processo di contatto diretto** per acquisire i primi clienti

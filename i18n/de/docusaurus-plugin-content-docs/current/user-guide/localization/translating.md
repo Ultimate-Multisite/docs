@@ -3,11 +3,11 @@ title: Übersetzen von Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Übersetzen von Ultimate Multisite
+# Übersetzen von Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite wird in Englisch entwickelt, aber das Plugin ist vollständig übersetzbar und wir begrüßen aktiv Übersetzungsbeiträge.
 
-## Kern-Plugin-Übersetzungen
+## Kern-Plugin-Übersetzungen {#core-plugin-translations}
 
 Das Kern-Plugin Ultimate Multisite wird über die offizielle **WordPress.org Übersetzungsplattform** übersetzt:
 
@@ -24,7 +24,7 @@ Dies ist das Standard-WordPress-Community-Übersetzungssystem. Sobald Übersetzu
 
 Wenn Sie ein Übersetzungseditor für Ihre Sprache werden möchten (in der Lage, Übersetzungen zu genehmigen), wenden Sie sich über [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) an uns.
 
-## Addon-Übersetzungen
+## Addon-Übersetzungen {#addon-translations}
 
 Addon-Plugins werden separat unter folgendem Link übersetzt:
 
@@ -32,11 +32,11 @@ Addon-Plugins werden separat unter folgendem Link übersetzt:
 
 Die Addon-Übersetzungen werden derzeit als Ausgangspunkt von KI generiert. Sie decken alle unterstützten Sprachen ab, können jedoch holprige Formulierungen oder Ungenauigkeiten enthalten. Wir laden menschliche Übersetzer ein, sie zu überprüfen und Verbesserungsvorschläge zu machen, um sie natürlicher und genauer zu gestalten.
 
-## Lokale Übersetzungen
+## Lokale Übersetzungen {#local-translations}
 
 Wenn Sie lieber lokal Übersetzungen für Ihr eigenes Projekt erstellen möchten, anstatt upstream beizutragen, gibt es zwei Optionen:
 
-### Mit Poedit
+### Mit Poedit {#using-poedit}
 
 Sie können die Desktop-Anwendung **[Poedit](https://poedit.net)** verwenden, um die `.pot`-Datei zu übersetzen:
 
@@ -46,6 +46,6 @@ Sie können die Desktop-Anwendung **[Poedit](https://poedit.net)** verwenden, um
 4. Speichern Sie -- Poedit erzeugt `.po` und `.mo`-Dateien
 5. Platzieren Sie die Ausgabedateien im Ordner `lang`
 
-### Mit Loco Translate
+### Mit Loco Translate {#using-loco-translate}
 
 Das **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress-Plugin ermöglicht es Ihnen, direkt aus dem Admin-Panel zu übersetzen, ohne Desktop-Tools zu verwenden. Es kümmert sich um das Erstellen und Kompilieren von Übersetzungsdateien für Sie.

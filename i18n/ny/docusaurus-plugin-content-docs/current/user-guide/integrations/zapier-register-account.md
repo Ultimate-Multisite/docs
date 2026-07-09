@@ -3,7 +3,7 @@ title: Reregistre akaunti mwa Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Register an account via Zapier
+# Event: Register an account via Zapier {#event-register-an-account-via-zapier}
 
 M'mulo m'mulo ku mpaka ku [Integrating Ultimate Multisite with Zapier](zapier.md), tsimbuka boso boso kuti muiteka nazo Zapier kuti mupereke zinthu zosonyeza m'Ultimate Multisite monga momwe mukuiteka ndi triggers ndi events. M'mulo, mudzindikire momwe mungakumbukire (integrate) applications za zina. Mudzindikire kuti mutanthauze Google Sheets monga chombo chokhala ndi data ndipo muperekeza ulendo wina kwa Ultimate Multisite kuti mupereke zinthu zomwe zimene.
 

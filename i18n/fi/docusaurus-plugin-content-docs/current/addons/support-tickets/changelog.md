@@ -3,13 +3,13 @@ title: Tukipyyntöjen muutosloki
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Tukipyyntöjen muutosloki
+# Tukipyyntöjen muutosloki {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Parannettu: Poistettu vendor/-hakemisto Git-seurannasta (jo katettu .gitignore-tiedostolla), mikä pienentää repositoryn kokoa
 * Parannettu: Testattu WordPress 7.0:aan asti
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Korjaus: Hyväksy null-arvot nullable-tukipyyntömallin settereissä
 * Korjaus: Tallenna kaikki tukipyynnöt globaaleihin verkonlaajuisiin tauluihin asianmukaista monisivustotukea varten
 * Korjaus: Piilota henkilöstökentät ja korjaa tyhjän sivun uudelleenohjaus asiakkaan uuden tukipyynnön lomakkeessa
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Parannettu: Lataa frontend-resurssit ehdollisesti vain tukipyyntösivuilla
 * Parannettu: Ohita pluginin autoloader, kun Bedrock-juuren autoloader on jo ladannut riippuvuudet
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Lisätty: Täysi tukipyyntöjen katselutoiminnallisuus ylläpidolle ja frontendille
 * Lisätty: AJAX-käsittelijä tukipyyntöjen vastausten lähettämiseen
 * Lisätty: Tuki tukipyyntöjen vastaustoiminnallisuudelle asianmukaisella lomakekäsittelyllä
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Parannettu: Tietokantarakenne asianmukaisilla kysely- ja skeemaluokilla vastauksille ja liitteille
 * Parannettu: Siirtyminen todellisiin ominaisuuksiin attribuuttien sijaan tukipyyntömalleissa
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Päivitetty: Prefix nimetty uudelleen muotoon ultimate-multisite yhdenmukaisuuden vuoksi
 * Päivitetty: Text domain -standardointi
 * Korjattu: Pieniä virhekorjauksia ja parannuksia
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Ensimmäinen julkaisu
 * Täydellinen tukipyyntöjen hallintajärjestelmä
 * Monitasoinen käyttöoikeuksien hallinta

@@ -3,17 +3,17 @@ title: Smjer dizajna
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Smjer Dizajna
+# Smjer Dizajna {#design-direction}
 
 Korak **Smjer dizajna** omogućava da pregledate, usavršite i finalizirate vizuelni dizajn vaše teme prije nego što Theme Builder generiše kompletnu temu.
 
-## Pregled
+## Pregled {#overview}
 
 Nakon što završite intervju o otkrićima (Discovery Interview), Theme Builder vam prikazuje smjer dizajna sa **prikazom predgleda za desktop i mobilne uređaje**. To vam omogućava da vidite tačno kako će vaš dizajn izgledati na različitim uređajima prije nego što se obavezate na temu.
 
-## Komponente Smjera Dizajna
+## Komponente Smjera Dizajna {#design-direction-components}
 
-### 1. Paleta boja
+### 1. Paleta boja {#1-color-palette}
 
 Šema boja vaše teme, uključujući:
 
@@ -23,7 +23,7 @@ Nakon što završite intervju o otkrićima (Discovery Interview), Theme Builder 
 - **Neutralne boje** — sivi i bijeli za pozadine i tekst
 - **Boja teksta** — primarna boja teksta za čitljivost
 
-### 2. Tipografija
+### 2. Tipografija {#2-typography}
 
 Izbor fontova za:
 
@@ -33,14 +33,14 @@ Izbor fontova za:
 - **Visina linije** — razmak između redova radi čitljivosti
 - **Težina fonta** — podešavanja *bold*, regular i *light* varijanti
 
-### 3. Raspored i razmak
+### 3. Raspored i razmak {#3-layout-and-spacing}
 
 - **Širina kontejnera** — maksimalna širina sadržaja
 - **Padding i margine** — razmak oko elemenata
 - **Grid sistem** — raspored u kolone za responsivni dizajn
 - **Razmak između komponenti** — udaljenost između UI elemenata
 
-### 4. Vizuelni elementi
+### 4. Vizuelni elementi {#4-visual-elements}
 
 - **Stil dugmadi** — dizajn primarnih, sekundarnih i tercijarnih dugmadi
 - **Dizajn kartica** — rasporedi za blokove sadržaja
@@ -48,9 +48,9 @@ Izbor fontova za:
 - **Granice i sjene** — suptilna vizuelna dubina
 - **Efekti prelaska mišem** — stilizovanje interaktivnih stanja
 
-## Prikaz predgleda
+## Prikaz predgleda {#preview-rendering}
 
-### Desktop predgled
+### Desktop predgled {#desktop-preview}
 
 Desktop predgled prikazuje vaš dizajn u punoj širini (obično 1200px ili više):
 
@@ -59,7 +59,7 @@ Desktop predgled prikazuje vaš dizajn u punoj širini (obično 1200px ili više
 - Velika tipografija i razmak
 - Svi vizuelni elementi u punoj veličini
 
-### Mobilni predgled
+### Mobilni predgled {#mobile-preview}
 
 Mobilni predgled prikazuje vaš dizajn u mobilnoj širini (obično 375px):
 
@@ -68,7 +68,7 @@ Mobilni predgled prikazuje vaš dizajn u mobilnoj širini (obično 375px):
 - Prilagođena tipografija i razmak
 - Veličina dugmadi prilagođena za dodir
 
-### Responsivni prekidači
+### Responsivni prekidači {#responsive-breakpoints}
 
 Theme Builder generiše predglede na ovim prekidačima:
 
@@ -79,9 +79,9 @@ Theme Builder generiše predglede na ovim prekidačima:
 | **Desktop** | 1200px | Desktop u punoj širini |
 | **Veliki Desktop** | 1920px | Ultra-široki ekran |
 
-## Usavršavanje Dizajna
+## Usavršavanje Dizajna {#refining-your-design}
 
-### Napravljanje prilagođavanja
+### Napravljanje prilagođavanja {#making-adjustments}
 
 Možete usavršiti smjer dizajna na sljedeće načine:
 
@@ -91,7 +91,7 @@ Možete usavršiti smjer dizajna na sljedeće načine:
 4. **Ažuriranje rasporeda** — promijenite širine kontejnera i kolone grida
 5. **Kustomizacija elemenata** — modifikujte stil dugmadi, dizajn kartica, itd.
 
-### Ažuriranje predgleda
+### Ažuriranje predgleda {#preview-updates}
 
 Promjene se odražavaju u realnom vremenu:
 
@@ -100,7 +100,7 @@ Promjene se odražavaju u realnom vremenu:
 - Svi responsivni prekidači se ažuriraju
 - Možete prebacivati između predgleda kako biste provjerili promjene
 
-### Usporedba prikaza
+### Usporedba prikaza {#comparison-view}
 
 Usporedite svoj smjer dizajna sa:
 
@@ -108,7 +108,7 @@ Usporedite svoj smjer dizajna sa:
 - **Dizajnom konkurenata** — uporedite sa inspirativnim sajtovima
 - **Prethodnim verzijama** — vratite se na ranije smjerove dizajna
 
-## Odobrenje Smjera Dizajna
+## Odobrenje Smjera Dizajna {#design-direction-approval}
 
 Kada ste zadovoljni svojim dizajnom:
 
@@ -118,7 +118,7 @@ Kada ste zadovoljni svojim dizajnom:
 4. **Potvrdite raspored** — provjerite razmak i poravnanje
 5. **Odobrite dizajn** — nastavite sa generisanjem teme
 
-## Sljedeći koraci
+## Sljedeći koraci {#next-steps}
 
 Nakon što odobrite smjer dizajna:
 
@@ -127,7 +127,7 @@ Nakon što odobrite smjer dizajna:
 3. Možete dalje kustomizovati koristeći WordPress customizer
 4. Nastavite sa [Hospitality Menus](./hospitality-menus.md) ili drugim funkcijama
 
-## Najbolje prakse
+## Najbolje prakse {#best-practices}
 
 - **Testirajte na stvarnim uređajima** — koristite stvarni telefoni i tablete ako je moguće
 - **Provjerite čitljivost** — osigurajte da je tekst čitljiv na svim veličinama
@@ -135,30 +135,30 @@ Nakon što odobrite smjer dizajna:
 - **Razmislite o performansama** — optimizujte slike i fontove za brzinu
 - **Planirajte sadržaj** — osigurajte da raspored radi sa vašim stvarnim sadržajem
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
-### Predgled se ne ažurira
+### Predgled se ne ažurira {#preview-not-updating}
 
 - Osvežite stranicu
 - Obrišite keš pregledača
 - Pokušajte sa drugim pregledačem
 - Provjerite internet konekciju
 
-### Boje izgledaju drugačije
+### Boje izgledaju drugačije {#colors-look-different}
 
 - Provjerite postavke boje monitora
 - Pokušajte na različitim uređajima
 - Potvrdite kontrast boja alatima za pristupačnost
 - Razmislite o simulatorima bočne slepiloće
 
-### Problemi sa tipografijom
+### Problemi sa tipografijom {#typography-issues}
 
 - Provjerite da li se font fajlovi učitavaju
 - Provjerite veličinu fonta na različitim prekidačima
 - Testirajte sa stvarnim sadržajem
 - Razmislite o dužini linije radi čitljivosti
 
-## Povezana dokumentacija
+## Povezana dokumentacija {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — prikupljanje informacija o dizajnu
 - [Hospitality Menus](./hospitality-menus.md) — kreiranje strukturiranih stranica menija

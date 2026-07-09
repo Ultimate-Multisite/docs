@@ -3,15 +3,15 @@ title: Mga Menu sa Pag-abiabi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Mga Menu sa Hospitality
+# Mga Menu sa Hospitality {#hospitality-menus}
 
 Ang feature nga **Mga Menu sa Hospitality** nagtugot sa Theme Builder sa paghimo ug pag-embed og istrukturadong mga panid sa menu sa pagkaon ug ilimnon direkta sa imong WordPress nga website.
 
-## Kinatibuk-ang Tan-aw
+## Kinatibuk-ang Tan-aw {#overview}
 
 Ang Theme Builder karon makahimo na og propesyonal, istrukturadong mga panid sa menu para sa mga negosyo sa hospitality lakip ang mga restawran, cafe, bar, ug mga serbisyo sa catering. Kini nga mga menu hingpit nga na-integrate sa disenyo sa imong website ug dali ra ma-update ug madumala.
 
-## Gisuportahang mga Uri sa Hospitality
+## Gisuportahang mga Uri sa Hospitality {#supported-hospitality-types}
 
 - **Mga Restawran** — mga menu sa full-service nga pagkaon
 - **Mga Cafe** — mga menu sa kape ug gaan nga pagkaon
@@ -21,9 +21,9 @@ Ang Theme Builder karon makahimo na og propesyonal, istrukturadong mga panid sa 
 - **Mga Food Truck** — mga menu sa mobile nga serbisyo sa pagkaon
 - **Mga Brewery ug Winery** — mga menu sa ilimnon nga adunay mga deskripsyon
 
-## Istruktura sa Menu
+## Istruktura sa Menu {#menu-structure}
 
-### Mga Kategoriya sa Menu
+### Mga Kategoriya sa Menu {#menu-categories}
 
 Ang mga menu gi-organisar ngadto sa mga kategoriya:
 
@@ -34,7 +34,7 @@ Ang mga menu gi-organisar ngadto sa mga kategoriya:
 - **Mga Ilimnon** — mga ilimnon (alkoholiko ug dili alkoholiko)
 - **Mga Espesyal** — adlaw-adlaw o panahonon nga mga espesyal
 
-### Pormat sa Item sa Menu
+### Pormat sa Item sa Menu {#menu-item-format}
 
 Ang matag item sa menu naglakip sa:
 
@@ -49,7 +49,7 @@ Ang matag item sa menu naglakip sa:
 }
 ```
 
-#### Mga Natad sa Item
+#### Mga Natad sa Item {#item-fields}
 
 | Natad | Uri | Deskripsyon |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Ang matag item sa menu naglakip sa:
 | `allergens` | array | Kasagarang mga allergen (mani, shellfish, ug uban pa) |
 | `availability` | string | Kanus-a magamit (Adlaw-adlaw, Panahonon, ug uban pa) |
 
-## Paghimo og mga Menu sa Hospitality
+## Paghimo og mga Menu sa Hospitality {#creating-hospitality-menus}
 
-### Lakang 1: Ihatag ang Impormasyon sa Menu
+### Lakang 1: Ihatag ang Impormasyon sa Menu {#step-1-provide-menu-information}
 
 Sultihi ang Theme Builder bahin sa imong menu:
 
@@ -71,7 +71,7 @@ Paghimo og menu sa restawran para sa akong Italyanong restawran nga adunay mga a
 mga putahe sa pasta, mga pangunang putahe, ug mga dessert. Ilakip ang mga presyo ug deskripsyon.
 ```
 
-### Lakang 2: Ang Theme Builder Maghimo og Menu
+### Lakang 2: Ang Theme Builder Maghimo og Menu {#step-2-theme-builder-generates-menu}
 
 Ang Theme Builder:
 
@@ -81,7 +81,7 @@ Ang Theme Builder:
 4. Mo-format sa mga presyo ug deskripsyon
 5. Modugang og impormasyon sa dietary ug allergen
 
-### Lakang 3: Ribyuha ug I-customize
+### Lakang 3: Ribyuha ug I-customize {#step-3-review-and-customize}
 
 Mahimo nimo:
 
@@ -91,9 +91,9 @@ Mahimo nimo:
 4. I-update ang mga deskripsyon ug dietary nga impormasyon
 5. I-adjust ang estilo ug layout
 
-## Mga Opsyon sa Pagpakita sa Menu
+## Mga Opsyon sa Pagpakita sa Menu {#menu-display-options}
 
-### Tibuok Panid sa Menu
+### Tibuok Panid sa Menu {#full-menu-page}
 
 Usa ka dedikadong panid nga nagpakita sa imong kompleto nga menu:
 
@@ -102,7 +102,7 @@ Usa ka dedikadong panid nga nagpakita sa imong kompleto nga menu:
 - Layout nga angay i-print
 - Disenyo nga responsive sa mobile
 
-### Widget sa Menu
+### Widget sa Menu {#menu-widget}
 
 I-embed ang mga seksyon sa menu sa ubang mga panid:
 
@@ -111,7 +111,7 @@ I-embed ang mga seksyon sa menu sa ubang mga panid:
 - Menu sa ilimnon sa panid sa bar
 - Pagpakita sa dessert sa footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Paghimo og ma-download nga PDF nga menu:
 
@@ -120,9 +120,9 @@ Paghimo og ma-download nga PDF nga menu:
 - Naglakip og mga hulagway ug deskripsyon
 - Sayon ipaambit ug i-email
 
-## Impormasyon sa Dietary ug Allergen
+## Impormasyon sa Dietary ug Allergen {#dietary-and-allergen-information}
 
-### Mga Hiyas sa Dietary
+### Mga Hiyas sa Dietary {#dietary-attributes}
 
 Markahi ang mga item gamit ang impormasyon sa dietary:
 
@@ -134,7 +134,7 @@ Markahi ang mga item gamit ang impormasyon sa dietary:
 - **Low-Carb** — gipakunhod nga carbohydrates
 - **High-Protein** — daghan og protina
 
-### Mga Pasidaan sa Allergen
+### Mga Pasidaan sa Allergen {#allergen-warnings}
 
 Ilakip ang kasagarang mga allergen:
 
@@ -147,9 +147,9 @@ Ilakip ang kasagarang mga allergen:
 - **Gluten** — trigo ug mga lugas nga adunay gluten
 - **Sesame** — mga liso ug lana sa sesame
 
-## Pagdumala sa Menu
+## Pagdumala sa Menu {#menu-management}
 
-### Pag-update sa mga Presyo
+### Pag-update sa mga Presyo {#updating-prices}
 
 Sayon nga i-update ang mga presyo sa menu:
 
@@ -159,7 +159,7 @@ Sayon nga i-update ang mga presyo sa menu:
 4. I-save ang mga kausaban
 5. Ang mga kausaban makita dayon sa imong website
 
-### Pagdugang og Panahonon nga mga Item
+### Pagdugang og Panahonon nga mga Item {#adding-seasonal-items}
 
 Paghimo og panahonon nga mga variation sa menu:
 
@@ -169,7 +169,7 @@ Paghimo og panahonon nga mga variation sa menu:
 4. I-iskedyul ang mga petsa sa availability
 5. Awtomatikong ipakita sulod sa panahon
 
-### Pagdumala sa mga Espesyal
+### Pagdumala sa mga Espesyal {#managing-specials}
 
 Ipakita ang adlaw-adlaw o sinemana nga mga espesyal:
 
@@ -179,7 +179,7 @@ Ipakita ang adlaw-adlaw o sinemana nga mga espesyal:
 4. I-update adlaw-adlaw o sinemana
 5. I-archive ang daang mga espesyal
 
-## Integrasyon sa Theme Builder
+## Integrasyon sa Theme Builder {#integration-with-theme-builder}
 
 Kung mogamit og Theme Builder para sa mga website sa hospitality:
 
@@ -189,9 +189,9 @@ Kung mogamit og Theme Builder para sa mga website sa hospitality:
 4. **Pag-optimize sa mobile** — ang mga menu nindot tan-awon sa mga telepono
 5. **Pag-optimize sa SEO** — ang mga menu friendly sa search engine
 
-## Pinakamaayong mga Pamaagi
+## Pinakamaayong mga Pamaagi {#best-practices}
 
-### Disenyo sa Menu
+### Disenyo sa Menu {#menu-design}
 
 - **Tin-aw nga organisasyon** — lohikal nga istruktura sa kategoriya
 - **Masabtan nga mga deskripsyon** — makapagana sa gana ug informativo
@@ -199,7 +199,7 @@ Kung mogamit og Theme Builder para sa mga website sa hospitality:
 - **Propesyonal nga mga litrato** — taas og kalidad nga mga hulagway sa pagkaon
 - **Whitespace** — ayaw paghuot sa panid
 
-### Sulod
+### Sulod {#content}
 
 - **Sakto nga mga deskripsyon** — ihulagway ang mga item sa sakto nga paagi
 - **I-highlight ang mga espesyal** — himoa nga molutaw ang mga espesyal
@@ -207,7 +207,7 @@ Kung mogamit og Theme Builder para sa mga website sa hospitality:
 - **Regular nga i-update** — panatilihing kasamtangan ang mga presyo ug item
 - **Gamita ang makapagana sa gana nga pinulongan** — himoa nga lamian paminawon ang mga item
 
-### Accessibility
+### Accessibility {#accessibility}
 
 - **Masabtan nga mga font** — gamita ang tin-aw ug dali basahon nga mga typeface
 - **Igong contrast** — siguroa nga mabasa ang teksto
@@ -215,9 +215,9 @@ Kung mogamit og Theme Builder para sa mga website sa hospitality:
 - **Mga pasidaan sa allergen** — ipakita sa klarong lugar ang mga allergen
 - **Mobile-friendly** — sulayi sa tanang device
 
-## Mga Pananglitan
+## Mga Pananglitan {#examples}
 
-### Istruktura sa Menu sa Restawran
+### Istruktura sa Menu sa Restawran {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Estruktura sa Menu sa Kapehan
+### Estruktura sa Menu sa Kapehan {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## May Kalabotang mga Bahin
+## May Kalabotang mga Bahin {#related-features}
 
 - [Paghimo og Menu](../abilities/create-menu.md) — paghimo og mga menu sa nabigasyon
 - [Direksyon sa Disenyo](./design-direction.md) — ipahiangay ang disenyo sa imong site

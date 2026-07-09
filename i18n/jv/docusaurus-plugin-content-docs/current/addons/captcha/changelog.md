@@ -3,7 +3,7 @@ title: Captcha Cathetan Owah-owahan
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Cathetan Owah-owahan Captcha
+# Cathetan Owah-owahan Captcha {#captcha-changelog}
 
 Versi: 1.5.0 - Diluncuraké ing 2026-05-22
 * Anyar: Pambates laju hard-stop — ngitung saben GET lan POST ing lumah sing dilindhungi captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) lan mbales nganggo HTTP 429, irah-irahan `Retry-After`, lan turu tarpit sing diacak (1–5s, diwatesi atos nganti 15s).

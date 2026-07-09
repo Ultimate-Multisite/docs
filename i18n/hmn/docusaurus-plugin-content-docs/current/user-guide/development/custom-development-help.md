@@ -3,7 +3,7 @@ title: Kev tsim phoj tsim phoj txaideeb
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable twbauv haum tshawb tshoob tshawb tshoob tshawb tshawb tshawb tshawb tshawb tshawb tshawb tshawb tshawb
+# Codeable twbauv haum tshawb tshoob tshawb tshoob tshawb tshawb tshawb tshawb tshawb tshawb tshawb tshawb tshawb {#how-to-get-custom-development-help-from-codeable}
 
 Kuv tshawb tshawb, kuv tshawb tshawb, kuv tshawb tshawb. Kuv tshawb tshawb, kuv tshawb tshawb.
 
@@ -17,7 +17,7 @@ Sometimes, we really need some awesome customization to make our network flows e
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) yog platform uas tshawb neeg hauv developer uas muaj yim tshoob nrog Ultimate Multisite expertise. Kuv tshawb tshawb, kuv tshawb, kuv tshawb.
 
-### How to create a project in Codeable?
+### How to create a project in Codeable? {#how-to-create-a-project-in-codeable}
 
 Tsis txhob tshawb, kuv tshawb tshawb.
 

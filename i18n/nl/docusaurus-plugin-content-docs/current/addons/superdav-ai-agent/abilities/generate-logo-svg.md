@@ -3,15 +3,15 @@ title: Genereer Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Genereren van Logo SVG
+# Genereren van Logo SVG {#generate-logo-svg}
 
 De **Genereren van Logo SVG**-mogelijkheid stelt Theme Builder in staat om aangepaste logo SVG's te creëren en direct in uw WordPress-site in te bedden, met automatische, namespace-veilige sanitatie.
 
-## Overzicht
+## Overzicht {#overview}
 
 Deze mogelijkheid genereert schaalbare vectorgrafieken (SVG) logo's op basis van de merkrichting en de ontwerpvoorkeuren van uw site. De gegenereerde SVG's worden automatisch gesaneerd om te garanderen dat ze veilig zijn voor gebruik in WordPress, terwijl de visuele integriteit behouden blijft.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Type | Vereist | Beschrijving |
 |-----------|------|---------|-------------|
@@ -22,7 +22,7 @@ Deze mogelijkheid genereert schaalbare vectorgrafieken (SVG) logo's op basis van
 | `height` | number | Nee | De SVG-hoogte in pixels (standaard: 200) |
 | `include_text` | boolean | Nee | Of de sitenaam als tekst in het logo moet worden opgenomen (standaard: true) |
 
-## Output Formaat
+## Output Formaat {#output-format}
 
 De mogelijkheid retourneert een SVG-string met de volgende structuur:
 
@@ -36,7 +36,7 @@ De mogelijkheid retourneert een SVG-string met de volgende structuur:
 }
 ```
 
-## SVG Sanitatie Gedrag
+## SVG Sanitatie Gedrag {#svg-sanitisation-behaviour}
 
 De gegenereerde SVG's ondergaan automatische, namespace-veilige sanitatie om:
 
@@ -48,7 +48,7 @@ De gegenereerde SVG's ondergaan automatische, namespace-veilige sanitatie om:
 
 Dit zorgt ervoor dat de SVG veilig is om direct in WordPress in te bedden zonder dat er aanvullende sanitatie nodig is.
 
-## Gebruiksvoorbeeld
+## Gebruiksvoorbeeld {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ De mogelijkheid creëert een SVG-logo dat:
 - Moderne ontwerpprincipes volgt
 - Automatisch gesaneerd en klaar voor gebruik is
 
-## Integratie met Theme Builder
+## Integratie met Theme Builder {#integration-with-theme-builder}
 
 Wanneer u de selectie van de ontwerprichting in Theme Builder gebruikt, dan:
 
@@ -71,21 +71,21 @@ Wanneer u de selectie van de ontwerprichting in Theme Builder gebruikt, dan:
 3. Plaatst het logo automatisch in de header/branding-sectie van uw site
 4. Slaat de SVG op als een aangepast logo in de WordPress media
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Geef duidelijke stijlvoorkeuren** — beschrijf de gewenste ontwerpstijl (modern, klassiek, speels, enz.)
 - **Specificeer kleuren** — voeg uw merk-kleuren toe voor consistentie
 - **Test de rendering** — controleer of het logo correct wordt weergegeven op verschillende schermgroottes
 - **Verder aanpassen** — gebruik de logo-aanpassingshulpmiddelen van WordPress om de grootte en plaatsing aan te passen
 
-## Beperkingen
+## Beperkingen {#limitations}
 
 - SVG-logo's worden gegenereerd als statische grafieken (niet geanimeerd)
 - Complexe logo's met veel elementen kunnen handmatige verfijning vereisen
 - Custom fonts worden niet ondersteund; tekst gebruikt systeemfonts
 - Zeer grote of zeer kleine afmetingen kunnen de kwaliteit beïnvloeden
 
-## Gerelateerde Mogelijkheden
+## Gerelateerde Mogelijkheden {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — controleer het kleurcontrast voor toegankelijkheid
 - [Create Menu](./create-menu.md) — creëer navigatiemenu's voor uw site

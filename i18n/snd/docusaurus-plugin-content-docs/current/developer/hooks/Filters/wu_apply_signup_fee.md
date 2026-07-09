@@ -4,11 +4,11 @@ title: فلٽر - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# فلٽر: wu_apply_signup_fee
+# فلٽر: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 فلٽر ڪري ٿو ته signup fee لاڳو ڪئي وڃي يا نه.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 | $product | `object` | رڪنيت جي سطح جو object. |
 | $this | `\WP_Ultimo\Checkout\Cart` | رجسٽريشن object. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 3.1
-### ذريعو
+### ذريعو {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) ۾ لائين 1769 تي بيان ڪيل.

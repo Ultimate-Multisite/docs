@@ -3,7 +3,7 @@ title: Witryny klientów
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Witryny Twojego klienta (v2)
+# Witryny Twojego klienta (v2) {#your-clients-websites-v2}
 
 Po zarejestrowaniu się w Twojej sieci Twoi klienci mogą uzyskać dostęp do swojego Dashboard.
 

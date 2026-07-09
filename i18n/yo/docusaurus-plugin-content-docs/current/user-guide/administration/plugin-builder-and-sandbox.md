@@ -3,11 +3,11 @@ title: Olùkọ́ Plugin & Àyíká Ìdánwò
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Olùkọ́ Àfikún & Ààyè Ìdánwò Ààbò
+# Olùkọ́ Àfikún & Ààyè Ìdánwò Ààbò {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 ṣàgbékalẹ̀ **Ètò Olùkọ́ Àfikún & Ààyè Ìdánwò Ààbò**, èyí tí ó jẹ́ kí olùrànlọ́wọ́ AI ṣẹ̀dá, muu ṣiṣẹ́, kí ó sì ṣàkóso àwọn àfikún WordPress lórí nẹ́tíwọ́ọ̀kì rẹ — gbogbo rẹ̀ nípasẹ̀ ààyè ìdánwò ààbò tí ó dá wà, tí ó sì ní ààbò.
 
-## Àkótán
+## Àkótán {#overview}
 
 Olùkọ́ Àfikún jẹ́ kí olùrànlọ́wọ́ AI kọ àwọn àfikún WordPress àdáni gẹ́gẹ́ bí ìbéèrè èdè adayeba. Àwọn àfikún tí a ṣẹ̀dá ni a máa ń fìdí wọn múlẹ̀, fi pamọ́, kí a sì muu wọn ṣiṣẹ́ nínú fẹlẹfẹlẹ̀ ààyè ìdánwò ààbò kí wọn tó ní ipa kankan lórí iṣẹ́ aaye wẹẹbu alààyè.
 
@@ -17,7 +17,7 @@ Olùkọ́ Àfikún jẹ́ kí olùrànlọ́wọ́ AI kọ àwọn àfikún Wor
 - Ṣíṣe àdánwò àkọ́kọ́ àwọn ànfààní tí ó nílò àwọn hook WordPress tàbí àwọn irú post àdáni.
 - Ṣíṣẹ̀dá àwọn script adaṣiṣẹ́ igba-kúkúrú fún àwọn iṣẹ́ batch.
 
-## Ṣíṣẹ̀dá Àfikún nípasẹ̀ AI
+## Ṣíṣẹ̀dá Àfikún nípasẹ̀ AI {#generating-a-plugin-via-ai}
 
 Láti ṣẹ̀dá àfikún, ṣí ojú-ìbánisọ̀rọ̀ Gratis AI Agent kí o sì ṣàlàyé ohun tí o nílò. Fún àpẹẹrẹ:
 
@@ -32,7 +32,7 @@ AI náà yóò:
 
 O lè tún àbájáde náà ṣe nípa títẹ̀síwájú nínú okun ìjíròrò kan náà kí o tó muu ṣiṣẹ́.
 
-## Mímuu ṣiṣẹ́ nínú Ààyè Ìdánwò Ààbò
+## Mímuu ṣiṣẹ́ nínú Ààyè Ìdánwò Ààbò {#sandbox-activation}
 
 Mímuu àfikún tí a ṣẹ̀dá ṣiṣẹ́ nínú ààyè ìdánwò ààbò yàtọ̀ sí mímuu ṣiṣẹ́ lórí nẹ́tíwọ́ọ̀kì alààyè. Ààyè ìdánwò ààbò náà:
 
@@ -48,7 +48,7 @@ Láti muu àfikún ṣiṣẹ́ nínú ààyè ìdánwò ààbò, tẹ bọ́tì
 
 Ìfiranṣẹ́ ipò yóò jẹ́rìí bóyá mímuu ṣiṣẹ́ ṣàṣeyọrí tàbí ó kùnà. Nígbà ìkùnà, àkọsílẹ̀ àṣìṣe ni a máa fi hàn nínú okun ìbánisọ̀rọ̀.
 
-## Ṣíṣàkóso Àwọn Àfikún Tí A Ṣẹ̀dá
+## Ṣíṣàkóso Àwọn Àfikún Tí A Ṣẹ̀dá {#managing-generated-plugins}
 
 Àwọn àfikún tí a ṣẹ̀dá ni a ṣe àtòkọ sínú **Gratis AI Agent → Olùkọ́ Àfikún → Ṣàkóso Àwọn Àfikún**. Láti ojú-ìbòjú yìí o lè:
 
@@ -64,7 +64,7 @@ Láti muu àfikún ṣiṣẹ́ nínú ààyè ìdánwò ààbò, tẹ bọ́tì
 **Fi sori nẹ́tíwọ́ọ̀kì** ń gbé àfikún tí a ṣẹ̀dá jáde sí WordPress multisite alààyè rẹ. Ṣàyẹ̀wò kóòdù àfikún náà kí o tó tẹ̀síwájú. Gratis AI Agent yóò béèrè ìmúdájú kí ó tó parí ìfifi sori alààyè kan.
 :::
 
-## Fífi Àfikún Tí A Ṣẹ̀dá sori Nẹ́tíwọ́ọ̀kì
+## Fífi Àfikún Tí A Ṣẹ̀dá sori Nẹ́tíwọ́ọ̀kì {#installing-a-generated-plugin-on-the-network}
 
 Nígbà tí o bá ní ìtẹ́lọ́rùn pẹ̀lú àfikún tí ó wà nínú ààyè ìdánwò ààbò, o lè fi í sori nẹ́tíwọ́ọ̀kì alààyè:
 
@@ -78,7 +78,7 @@ Ní ọ̀nà mìíràn, lo àṣẹ slash nínú ojú-ìbánisọ̀rọ̀:
 /install-plugin <plugin-slug>
 ```
 
-## Ìmúdójúìwọ̀n Àfikún
+## Ìmúdójúìwọ̀n Àfikún {#plugin-updates}
 
 Láti ṣe ìmúdójúìwọ̀n àfikún tí a ṣẹ̀dá, ṣàlàyé ìyípadà náà fún olùrànlọ́wọ́ AI nínú ìjíròrò tuntun:
 
@@ -86,7 +86,7 @@ Láti ṣe ìmúdójúìwọ̀n àfikún tí a ṣẹ̀dá, ṣàlàyé ìyípad
 
 AI yóò ṣẹ̀dá ẹ̀dà tuntun, èyí tí yóò hàn nínú ààyè ìdánwò ààbò lẹ́gbẹ̀ẹ́ ẹ̀dà tó wà lọ́wọ́lọ́wọ́. O máa ṣàyẹ̀wò diff náà kí o sì jẹ́rìí kí ìmúdójúìwọ̀n náà tó di fífi sílò.
 
-## Ìṣepọ̀ HookScanner
+## Ìṣepọ̀ HookScanner {#hookscanner-integration}
 
 Olùkọ́ Àfikún ń lo **HookScanner** tí a ṣepọ̀ láti ṣàlàyẹ̀wò àwọn hook àti filter tí àfikún tí a ṣẹ̀dá kọ̀ọ̀kan forúkọsílẹ̀. Àbájáde HookScanner ni a fi hàn nínú ìdáhùn ìbánisọ̀rọ̀, ó sì ní:
 
@@ -96,7 +96,7 @@ Olùkọ́ Àfikún ń lo **HookScanner** tí a ṣepọ̀ láti ṣàlàyẹ̀w
 
 Èyí ràn ọ́ lọ́wọ́ láti lóye ìhùwàsí àfikún kan kí o tó muu ṣiṣẹ́.
 
-## Àwọn Àkíyèsí Ààbò
+## Àwọn Àkíyèsí Ààbò {#security-considerations}
 
 - Àwọn àfikún tí a ṣẹ̀dá ni a fi pamọ́ lọ́tọ̀ sí àwọn àfikún tí a fi sori pẹ̀lú ọwọ́, wọn kò sì ṣeé wọlé sí nípasẹ̀ ojú-ìbòjú ìṣàkóso àfikún WordPress boṣewa títí digbà tí o bá fi wọn sori nẹ́tíwọ́ọ̀kì ní kedere.
 - Ààyè ìdánwò ààbò ń lo ìfìdímúlẹ̀ path láti dènà directory traversal nígbà kikọ àwọn fáìlì àfikún.

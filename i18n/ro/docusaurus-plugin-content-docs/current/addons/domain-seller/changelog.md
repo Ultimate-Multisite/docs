@@ -3,7 +3,7 @@ title: Jurnal de modificări Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Jurnal de modificări Domain Seller
+# Jurnal de modificări Domain Seller {#domain-seller-changelog}
 
 Versiunea 1.3.0 - Lansată pe 2026-06-02
 - Nou: A fost adăugat un avertisment în network-admin când soldul reseller HostAfrica devine prea scăzut
@@ -134,20 +134,20 @@ Versiunea 1.0.0 - Lansată pe 2025-09-28
 * **Remediat:** Tot codul v1 depreciat a fost actualizat la standardele v2
 * **Eliminat:** Compatibilitate veche v1 (schimbare incompatibilă)
 
-### Versiuni anterioare (v1 moștenit)
+### Versiuni anterioare (v1 moștenit) {#previous-versions-v1-legacy}
 
-### Versiunea 0.0.3 - 20/08/2019
+### Versiunea 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Remediat: Incompatibilitate cu Groundhogg CRM
 * Notă: Aceasta a fost ultima versiune compatibilă cu v1
 
-### Versiunea 0.0.2 - 07/12/2018
+### Versiunea 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Remediat: Câmpul License Key a fost eliminat
 * Remediat: Filele de plan lipseau când plugin-ul de funcționalitate este activ
 * Îmbunătățit: A fost adăugat un buton de omitere în câmpul de înregistrare
 
-### Versiunea 0.0.1 - Lansare inițială
+### Versiunea 0.0.1 - Lansare inițială {#version-001---initial-release}
 
 * Integrare OpenSRS de bază pentru WP Ultimo v1
 * Căutare și înregistrare simplă de domenii

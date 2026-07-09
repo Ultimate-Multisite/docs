@@ -4,11 +4,11 @@ title: Àlẹmọ - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Àlẹmọ: wu_apc_get_meta_content_default_content
+# Àlẹmọ: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Gba àwọn olupilẹ̀ṣẹ̀ láàyè láti ṣàlẹmọ àwọn iye aiyipada
 
-## Àwọn Paramita
+## Àwọn Paramita {#parameters}
 
 | Orúkọ | Iru | Àpèjúwe |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Gba àwọn olupilẹ̀ṣẹ̀ láàyè láti ṣàlẹmọ àwọn iye aiyipad
 | $meta_type | `string` | Iru meta data tí yóò gba padà. |
 | $meta_key | `string` | Orúkọ pápá meta náà. |
 
-### Láti
+### Láti {#since}
 
 - 1.4.0
-### Orísun
+### Orísun {#source}
 
 A ṣàlàyé rẹ̀ nínú [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) ní ìlà 68
 
 
-## Àwọn ohun tí ó dá padà
+## Àwọn ohun tí ó dá padà {#returns}
 Iye aiyipada tuntun.

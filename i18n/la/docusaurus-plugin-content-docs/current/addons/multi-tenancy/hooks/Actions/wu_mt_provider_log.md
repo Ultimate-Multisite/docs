@@ -4,11 +4,11 @@ title: Actio - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Actio: wu_mt_provider_log
+# Actio: wu_mt_provider_log {#action-wumtproviderlog}
 
 Excitatur cum provider nuntium in acta refert.
 
-## Parametra
+## Parametra {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Excitatur cum provider nuntium in acta refert.
 | $level | `string` | Gradus actorum. |
 | $context | `array` | Contextus additus. |
 
-### Ex
+### Ex {#since}
 
 - 1.0.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400) ad lineam 400

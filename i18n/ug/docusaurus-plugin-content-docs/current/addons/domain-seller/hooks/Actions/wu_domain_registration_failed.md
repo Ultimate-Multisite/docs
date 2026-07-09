@@ -4,11 +4,11 @@ title: مەشغۇلات - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 دائىرە تىزىملاش ئۇرۇنۇشى مەغلۇپ بولغاندىن كېيىن قوزغىلىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | نامى | تۈرى | چۈشەندۈرۈشى |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 | $registration_data | `array&lt;string,mixed&gt;` | status=failed ۋە error_message نى ئۆز ئىچىگە ئالغان تىزىملاش مېتا سانلىق مەلۇماتى. |
 | $error_message | `string` | تىزىملىغۇچىدىن كەلگەن ئىنسان ئوقۇيالايدىغان خاتالىق ئۇچۇرى. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 2.0.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) دا 1250-قۇردا بېكىتىلگەن.

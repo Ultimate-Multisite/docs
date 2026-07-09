@@ -4,11 +4,11 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_{$this->id}_load
+# Action: wu_page_{$this->id}_load {#action-wupagethis-idload}
 
 Omogućava developerima pluginova da dodaju dodatne hook-ove na naše stranice.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Omogućava developerima pluginova da dodaju dodatne hook-ove na naše stranice.
 | $page_hook | `string` | Page hook ove stranice. |
 | $admin_page | `self` | Instanca stranice. |
 
-### Od
+### Od {#since}
 
 - 1.8.2
 - 2.0.4: Dodan je treći parametar: instanca stranice.
-### Izvor
+### Izvor {#source}
 
 Definisano u [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) na liniji 332

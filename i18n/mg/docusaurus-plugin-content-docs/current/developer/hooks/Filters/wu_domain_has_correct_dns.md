@@ -4,11 +4,11 @@ title: Sivana - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Sivana: wu_domain_has_correct_dns
+# Sivana: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Avelao ny mpamorona plugin hanampy fanamarinana vaovao mba hamaritana ny vokatra.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Avelao ny mpamorona plugin hanampy fanamarinana vaovao mba hamaritana ny vokatra
 | $domain | `self` | Ny tranga domain ankehitriny. |
 | $domains_and_ips | `array` | Ny lisitry ny domain sy IP hita tamin’ny fikarohana DNS. |
 
-### Hatramin’ny
+### Hatramin’ny {#since}
 
 - 2.0.4
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin’ny [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) amin’ny andalana 455
 
 
-## Mamerina
+## Mamerina {#returns}
 Raha voalamina tsara ny DNS na tsia.

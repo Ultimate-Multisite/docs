@@ -3,9 +3,9 @@ title: Migration fra V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migration fra V1
+# Migration fra V1 {#migrating-from-v1}
 
-## Ultimate Multisite er skiftet fra sin oprindelige 1.x udgivelsesfamilie til 2.x udgivelsesfamilien.
+## Ultimate Multisite er skiftet fra sin oprindelige 1.x udgivelsesfamilie til 2.x udgivelsesfamilien. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite version 2.0 og opefter er en komplet omskrivning af koden, hvilket betyder, at der er meget lidt fælles grund mellem den gamle version og den nye. Derfor skal dine data migreres til et format, som de nye versioner kan forstå, når du opgraderer fra 1.x til 2.x.
 
@@ -15,7 +15,7 @@ Denne guide dækker, hvordan migratoren fungerer, hvad du skal gøre i tilfælde
 
 _**VIGTIGT: Før du starter opgraderingen fra version 1.x til version 2.0, sørg for at lave en backup af din sites database**_
 
-## Første skridt
+## Første skridt {#first-steps}
 
 Det første skridt er at downloade plugin .zip-filen og installere version 2.0 på dit netværksadministrator dashboard.
 
@@ -49,19 +49,19 @@ Når du har indtastet nøglen, klikker du på **Accepter & Aktiver**.
 
 Efter licensaktivering kan du begynde den faktiske installation ved at klikke på **Installer** på næste side. Dette vil automatisk oprette de nødvendige filer og databasen, der kræves for, at version 2.0 kan fungere.
 
-## Nu er det tid til migrationen
+## Nu er det tid til migrationen {#now-the-migration}
 
 Migratoren har en indbygget sikkerhedsfunktion, hvor den tjekker hele dit multisite for at sikre, at alle dine Ultimate Multisite data kan migreres uden problemer. Klik på knappen **Run Check** for at starte processen.
 
 Efter du har kørt tjekket, vil du have to to muligheder: resultatet kan enten være **med** en fejl eller **uden** en fejl.
 
-### Med Fejl
+### Med Fejl {#with-error}
 
 Hvis du får en fejlmeddelelse, skal du kontakte vores supportteam, så de kan hjælpe dig med at rette fejlen. Husk at **vedhæfte fejlloggen**, når du opretter et ticket. Du kan downloade loggen eller klikke på linket, hvor der står "contact our support team". Det vil åbne hjælpewidget'en til højre på din side med felter forudfyldt for dig, som inkluderer fejlloggene under beskrivelsen.
 
 _**Da systemet fandt en fejl, kan du ikke fortsætte med at migrere til version 2.0. Du kan i stedet rulle tilbage til version 1.x for at genoptage driften af dit netværk, indtil fejlen er rettet.**_
 
-### Uden Fejl
+### Uden Fejl {#without-error}
 
 Hvis systemet ikke finder nogen fejl, vil du se en succesmeddelelse og en **Migrate** knap nederst, som vil give dig mulighed for at fortsætte med migrationen. På denne side får du mindet om at lave en backup af din database, før du går videre – hvilket vi stærkt anbefaler. Tryk på **Migrate**, hvis du allerede har en backup.
 

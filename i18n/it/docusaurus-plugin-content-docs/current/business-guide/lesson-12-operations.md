@@ -3,17 +3,17 @@ title: 'Lezione 12: Gestire l''azienda'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lezione 12: Gestire l'attività
+# Lezione 12: Gestire l'attività {#lesson-12-running-the-business}
 
 Una piattaforma non è un progetto che si finisce, ma un'attività che si gestisce. Questa lezione copre le operazioni quotidiane per gestire FitSite: supporto, fatturazione, manutenzione e come mantenere felici i clienti.
 
-## Dove ci eravamo lasciati
+## Dove ci eravamo lasciati {#where-we-left-off}
 
 FitSite è attivo e i clienti si stanno iscrivendo. Ora devi gestire l'attività in modo sostenibile.
 
-## Operazioni Quotidiane
+## Operazioni Quotidiane {#daily-operations}
 
-### Monitoraggio
+### Monitoraggio {#monitoring}
 
 Controlla queste cose ogni giorno (o imposta degli alert):
 
@@ -22,7 +22,7 @@ Controlla queste cose ogni giorno (o imposta degli alert):
 - **Pagamenti falliti**: Ci sono pagamenti falliti che richiedono attenzione?
 - **Richieste di supporto**: Ci sono domande dei clienti senza risposta?
 
-### Supporto Clienti
+### Supporto Clienti {#customer-support}
 
 Il tuo focus di nicchia è un vantaggio qui. Poiché tutti i tuoi clienti sono studi fitness, vedrai le stesse domande ripetutamente:
 
@@ -36,7 +36,7 @@ Il tuo focus di nicchia è un vantaggio qui. Poiché tutti i tuoi clienti sono s
 
 Costruisci la tua knowledge base (iniziata nella Lezione 8) attorno a queste domande ricorrenti. Ogni ticket di supporto che potrebbe essere un articolo della knowledge base è un segnale per scrivere quell'articolo.
 
-### Livelli di Supporto
+### Livelli di Supporto {#support-tiers}
 
 Man mano che cresci, struttura il supporto in base al piano:
 
@@ -48,9 +48,9 @@ Man mano che cresci, struttura il supporto in base al piano:
 
 L'addon [Support Tickets](/addons/support-tickets) può aiutare a gestire le richieste di supporto all'interno della piattaforma.
 
-## Operazioni di Fatturazione
+## Operazioni di Fatturazione {#billing-operations}
 
-### Pagamenti Ricorrenti
+### Pagamenti Ricorrenti {#recurring-payments}
 
 Ultimate Multisite gestisce automaticamente la fatturazione ricorrente tramite il tuo payment gateway. Il tuo compito è monitorare:
 
@@ -58,7 +58,7 @@ Ultimate Multisite gestisce automaticamente la fatturazione ricorrente tramite i
 - **Dunning**: Imposta una logica di riprova automatica tramite il tuo payment gateway (Stripe gestisce bene questo aspetto)
 - **Richieste di cancellazione**: Capisci perché i clienti se ne vanno. Ogni cancellazione è un feedback.
 
-### Gestione Abbonamenti (Memberships)
+### Gestione Abbonamenti (Memberships) {#managing-memberships}
 
 Vai su **Ultimate Multisite > Memberships** per:
 
@@ -69,13 +69,13 @@ Vai su **Ultimate Multisite > Memberships** per:
 
 Consulta [Managing Memberships](/user-guide/administration/managing-memberships) per il riferimento completo.
 
-### Fatturazione (Invoicing)
+### Fatturazione (Invoicing) {#invoicing}
 
 Assicurati che le fatture vengano generate correttamente per ogni pagamento. I clienti potrebbero aver bisogno delle fatture per la rendicontazione delle spese aziendali. Consulta [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Manutenzione della Piattaforma
+## Manutenzione della Piattaforma {#platform-maintenance}
 
-### Aggiornamenti di WordPress e Plugin
+### Aggiornamenti di WordPress e Plugin {#wordpress-and-plugin-updates}
 
 In quanto amministratore di rete, sei responsabile di:
 
@@ -88,14 +88,14 @@ In quanto amministratore di rete, sei responsabile di:
 Un aggiornamento fallito influisce su ogni sito cliente della tua rete. Testa sempre gli aggiornamenti prima su una copia di staging della tua rete.
 :::
 
-### Sicurezza
+### Sicurezza {#security}
 
 - Mantenere tutti i software aggiornati
 - Usare password forti e l'autenticazione a due fattori per gli account admin
 - Monitorare attività sospette
 - Avere un piano per gli incidenti di sicurezza
 
-### Prestazioni
+### Prestazioni {#performance}
 
 Man mano che la tua rete cresce, monitora:
 
@@ -105,9 +105,9 @@ Man mano che la tua rete cresce, monitora:
 
 Considera di implementare la cache (page cache, object cache) e un CDN se non lo hai già fatto. L'[Cloudflare integration](/user-guide/host-integrations/cloudflare) gestisce gran parte di questo.
 
-## Gestione del Ciclo di Vita del Cliente
+## Gestione del Ciclo di Vita del Cliente {#customer-lifecycle-management}
 
-### Ridurre il Churn (Tasso di abbandono)
+### Ridurre il Churn (Tasso di abbandono) {#reducing-churn}
 
 Il churn è la percentuale di clienti che annullano ogni mese. Per un'attività basata su abbonamenti, ridurre il churn è importante quanto acquisire nuovi clienti.
 
@@ -119,7 +119,7 @@ Il churn è la percentuale di clienti che annullano ogni mese. Per un'attività 
 - Hanno trovato un'alternativa più economica → rafforzare il valore della tua nicchia
 - La loro attività è chiusa → inevitabile, ma tracciare questo separatamente
 
-### Incoraggiare gli Upgrade
+### Incoraggiare gli Upgrade {#encouraging-upgrades}
 
 I clienti su Starter che stanno avendo successo dovrebbero essere incoraggiati ad aggiornare:
 
@@ -127,7 +127,7 @@ I clienti su Starter che stanno avendo successo dovrebbero essere incoraggiati a
 - Inviare email mirate che evidenziano le funzionalità del piano Growth di cui trarrebbero beneficio
 - Mostrare ciò che i clienti Growth/Pro hanno costruito
 
-### Campagne di Win-Back (Re-acquisizione)
+### Campagne di Win-Back (Re-acquisizione) {#win-back-campaigns}
 
 Quando un cliente annulla:
 
@@ -135,30 +135,30 @@ Quando un cliente annulla:
 2. Risolvere la loro preoccupazione, se possibile
 3. Offrire uno sconto per il ritorno (30-60 giorni dopo la cancellazione)
 
-## Routine Settimanali e Mensili
+## Routine Settimanali e Mensili {#weekly-and-monthly-routines}
 
-### Settimanale
+### Settimanale {#weekly}
 
 - Rivedere nuove iscrizioni e cancellazioni
 - Rispondere a tutti i ticket di supporto aperti
 - Controllare le prestazioni e l'uptime della piattaforma
 - Rivedere eventuali pagamenti falliti
 
-### Mensile
+### Mensile {#monthly}
 
 - Analizzare le metriche chiave (MRR, churn, nuovi clienti, upgrade)
 - Applicare aggiornamenti di WordPress e plugin (dopo il test su staging)
 - Rivedere e aggiornare la knowledge base in base ai modelli di supporto
 - Inviare una newsletter o un aggiornamento ai clienti (nuove funzionalità, consigli, notizie del settore fitness)
 
-### Trimestrale
+### Trimestrale {#quarterly}
 
 - Rivedere i prezzi rispetto ai concorrenti e al feedback dei clienti
 - Valutare i design dei template: hanno bisogno di essere rinnovati?
 - Valutare la capacità di hosting: è necessario scalare?
 - Rivedere e migliorare l'onboarding basandosi sui dati di attivazione
 
-## Cosa abbiamo costruito in questa lezione
+## Cosa abbiamo costruito in questa lezione {#what-we-built-this-lesson}
 
 - **Routine di monitoraggio quotidiano** per uptime, iscrizioni, pagamenti e supporto
 - **Una struttura di supporto a livelli** abbinata ai piani

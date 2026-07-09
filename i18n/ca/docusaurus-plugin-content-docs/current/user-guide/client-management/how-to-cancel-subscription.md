@@ -3,7 +3,7 @@ title: Com anular una subscripció
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Com puc cancelar la meva subscripció?
+# Com puc cancelar la meva subscripció? {#how-can-i-cancel-my-subscription}
 
 Si teniu una llicència d'Ultimate Multisite, podeu cancelar la seva renovació quan us ho sigui convenient. Simplement seguiu els passos que s'indiquen a continuació:
 

@@ -4,11 +4,11 @@ title: Aksyon - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Aksyon: wu_handle_customer_meta_fields
+# Aksyon: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Pahintulutan ang mga developer ng pandagdag na mag-imbak ng metadata sa iba't ibang paraan kung kailangan nila.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Pahintulutan ang mga developer ng pandagdag na mag-imbak ng metadata sa iba't ib
 | $customer | `\Customer` | Ang object ng kostumer ng Ultimate Multisite. |
 | $checkout | `\Checkout` | Ang klase ng pag-checkout. |
 
-### Mula noong
+### Mula noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) sa linya 1211

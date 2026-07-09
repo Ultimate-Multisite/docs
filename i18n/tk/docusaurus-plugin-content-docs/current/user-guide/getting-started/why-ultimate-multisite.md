@@ -3,11 +3,11 @@ title: Neden Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Neden Ultimate Multisite
+# Neden Ultimate Multisite {#why-ultimate-multisite}
 
 Bu makalmaya gelseniz, pluginimiz biznes fikrinizi gerçeğe dönüştürmek için çözüm olabileceğini duymuş olarsınız. Bu yazının sonunda ihtiyacınız olan cevapları bulacağınızı umuyoruz.
 
-## Ultimate Multisite Nedir?
+## Ultimate Multisite Nedir? {#what-is-ultimate-multisite}
 
 Ultimate Multisite, size WaaS (Website as a Service) təklif etməyə imkan verən bir WordPress Multisite pluginidir. Pluginimiz ilə müxtəlif abunəlik səviyyələri yarada bilərsiniz və müştərilərdən sizin Multisite şəbəkənizdə sayt saxlamaq üçün mütəm-müddətli ödəniş etməklərini təmin edə bilərsiniz.
 
@@ -15,7 +15,7 @@ Ultimate Multisite sizə fərqli gateway (məsələn, WooCommerce və ya Stripe)
 
 Və bu sadəcə başlanğıcdır, çünki funksiyalarını add-onlar və webhooks ilə genişləndirə bilərsiniz.
 
-## Digər xüsusiyyətlər
+## Digər xüsusiyyətlər {#other-features}
 
 Ultimate Multisite həmçinin aşağıdakıları təklif edir:
 
@@ -33,11 +33,11 @@ We hasaplaýan has doly zatlar:
 
 * Search and Replace API (Gürretmek we Değiştirmek API): Şeýle hem, sayt şablonlaryna {{site_name}} ýaly ulanylyşly ýerlikler (placeholders) goşmaga bilersiňiz we sign-updan soň müşteri tarapyndan berlen maglumatlary awtomatiki we avtomatiki görkezmek üçin Search and Replace API-ni ulanyp bilersiňiz.
 
-## Ulanylyş usullary (Use cases)
+## Ulanylyş usullary (Use cases) {#use-cases}
 
 Indi Ultimate Multisite üçin mümkin bolan ulanylyş usullaryny görmegiň wagtydyr.
 
-### 1-nji Usul: Agentlik (An Agency)
+### 1-nji Usul: Agentlik (An Agency) {#case-1-an-agency}
 
 Adatça, bir agentligiň esasy hünerti olaryň hosting ýa-da marketingi başga hyzmatlar hökmünde sanamak arkaly sayt taslamalaryny döretmekdir.
 
@@ -47,7 +47,7 @@ Pluginler we temalar üstüni (per-product basisda) has gowy dolandyrmak üçin 
 
 Agency'ler Ultimate Multisite bilen huzur bularlar, bu onlara en iyi bildiklerini yapma imkanı verir - olağanüstü saytlar tasarlama.
 
-### 2-nji Durum: Niş Ulgama (Niche Provider)
+### 2-nji Durum: Niş Ulgama (Niche Provider) {#case-2-niche-provider}
 
 "Bir zady bir zatda we onu gowy etmek" diýen köne aýdym bar. Köp specialistler üçin bu, bir sanlylyk ýa-da hyzmat etmegiň esasy pikiriniň ətrafyndaky maglumatlary döretmekdir.
 
@@ -57,7 +57,7 @@ Ultimate Multisite-yň iň täsirli funksiýalaryndan biri, şablon site diýlip
 
 Niş site we hyzmatlaryny üpjün ediji bir ulgam üçin bu, özüni has gowy görkezmek üçin beňzeşliksiz üstünlikdir. Bu, size mysal pluginler we dizayn bilen taýyn bolan siteyi okam bolmak üçin minimal girizgi bermegi talap eder.
 
-### 3-nji Durum: WordPress Web Hostingi
+### 3-nji Durum: WordPress Web Hostingi {#case-3-wordpress-web-hosting}
 
 WordPress siteji hosting etmek üçin köp görnüşli usullar bar, ýöne bu, customera täze goýulmagan WordPress versiyasyny berip web ulanyşygy bermek kadar gysga we sagatlyk däl. Bu sebäpli, manymly hyzmat bermek üçin birnäçe kararlar we gözegçilikler birleşmelidir.
 

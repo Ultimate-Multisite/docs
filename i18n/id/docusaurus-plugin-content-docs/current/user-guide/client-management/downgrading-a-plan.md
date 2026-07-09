@@ -3,13 +3,13 @@ title: Menurunkan Paket
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Menurunkan paket (v2)
+# Menurunkan paket (v2) {#downgrading-a-plan-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
 Menurunkan paket atau langganan adalah tindakan umum yang mungkin dilakukan klien Anda jika mereka memiliki anggaran terbatas atau mereka memutuskan bahwa mereka tidak memerlukan banyak sumber daya untuk menjalankan subsite mereka.
 
-## Cara menurunkan paket
+## Cara menurunkan paket {#how-to-downgrade-a-plan}
 
 Klien Anda dapat menurunkan paket mereka kapan saja dengan masuk ke dashboard admin subsite mereka dan mengklik **Change** di bawah halaman Account mereka.
 
@@ -25,7 +25,7 @@ Untuk melanjutkan, pengguna hanya perlu mengklik tombol **Complete Checkout**. I
 
 ![Halaman Account yang menampilkan banner perubahan membership tertunda](/img/account-page/pending-change.png)
 
-### Apa yang terjadi ketika pengguna menurunkan paket mereka
+### Apa yang terjadi ketika pengguna menurunkan paket mereka {#what-happens-when-a-user-downgrades-their-plan}
 
 Penting untuk dicatat bahwa menurunkan paket tidak mengubah konfigurasi yang ada di subsite pengguna.
 
@@ -37,7 +37,7 @@ Untuk posts yang melebihi batas yang ditetapkan pada paket, Anda memiliki 3 opsi
 
 ![Halaman Network Admin Settings Sites yang menampilkan opsi perilaku post-limit-exceeded](/img/account-page/settings-sites-post-limit.png)
 
-### Apa yang terjadi pada pembayaran
+### Apa yang terjadi pada pembayaran {#what-happens-to-the-payment}
 
 Di versi 2.0, ini tidak lagi memerlukan penyesuaian apa pun pada pembayaran dalam hal prorata.
 

@@ -3,15 +3,15 @@ title: Kalozera wa Kagwiritsidwe Ntchito ka Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Chitsogozo cha Kugwiritsa Ntchito Hooks
+# Chitsogozo cha Kugwiritsa Ntchito Hooks {#hooks-usage-guide}
 
 Ultimate Multisite imapereka ma action hooks 200+ ndi ma filter hooks 280+. Tsambali likufotokoza ma hooks omwe amagwiritsidwa ntchito kwambiri ndi zitsanzo zothandiza. Kuti muwone buku lathunthu lopangidwa lokha, sakatulani masamba ena mu gawo ili.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Moyo wa Kasitomala
+### Moyo wa Kasitomala {#customer-lifecycle}
 
-#### Pambuyo Popanga Kasitomala
+#### Pambuyo Popanga Kasitomala {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Kusintha kwa Udindo wa Kasitomala
+#### Kusintha kwa Udindo wa Kasitomala {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks a Tsamba
+### Hooks a Tsamba {#site-hooks}
 
-#### Pambuyo Posindikiza Tsamba
+#### Pambuyo Posindikiza Tsamba {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Musanayambe Kugwiritsa Ntchito Template
+#### Musanayambe Kugwiritsa Ntchito Template {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooks a Membership
+### Hooks a Membership {#membership-hooks}
 
-#### Kusintha kwa Maudindo
+#### Kusintha kwa Maudindo {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooks a Payment
+### Hooks a Payment {#payment-hooks}
 
-#### Payment Yamalizidwa / Yalephera
+#### Payment Yamalizidwa / Yalephera {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooks a Checkout
+### Hooks a Checkout {#checkout-hooks}
 
-#### Musanayambe Kukonza / Pambuyo Pomaliza
+#### Musanayambe Kukonza / Pambuyo Pomaliza {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooks a Domain
+### Hooks a Domain {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Zosefera za Mitengo
+### Zosefera za Mitengo {#pricing-filters}
 
-#### Chiwerengero Chonse cha Cart
+#### Chiwerengero Chonse cha Cart {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Tax Rates
+#### Tax Rates {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Zosefera za Template
+### Zosefera za Template {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Zosefera za Malire
+### Zosefera za Malire {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Zosefera za Gateway
+### Zosefera za Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Ma Field a Fomu ya Checkout
+### Ma Field a Fomu ya Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Zomwe Zili mu Imelo
+### Zomwe Zili mu Imelo {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

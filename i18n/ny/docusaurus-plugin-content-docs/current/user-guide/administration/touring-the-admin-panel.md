@@ -3,11 +3,11 @@ title: Kuyenda ku Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Kufuna Panel ya Usimamizi (Admin Panel)
+# Kufuna Panel ya Usimamizi (Admin Panel) {#touring-the-admin-panel}
 
 Ultimate Multisite imelenga kuwepesa kuleli na kutofautana kwa njia rahisi, kompyuta inaleta chombo hiki chenye nguvu kidogo, chote kinaweza kukusaidia kupata safari iliyongozwa. Tusianze kwenye kuruka kwenye ukurasa wa usimamizi ili kukusaidia kujisikia nyumbani.
 
-## Dashboard (Mchanganuo Mkuu)
+## Dashboard (Mchanganuo Mkuu) {#dashboard}
 
 **Dashboard** ya Ultimate Multisite inaonyesha ripoti na takwimu za msingi, ikiwemo mapato, shughuli za tovuti, ukuaji wa wanachama, idadi ya wageni, na data ya kijiografia.
 
@@ -25,61 +25,61 @@ Hapa pia kuna mwonekano kamili wa dashboard ya mtandao (network):
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms (Fomu za Kulipia)
+## Checkout Forms (Fomu za Kulipia) {#checkout-forms}
 
 **Checkout Forms** zinakupa uwezo wa kuunda kurasa za usajili maalum. Unaweza kubadilisha sehemu, kuingiza classes na scripts zako mwenyewe, na kuzuia watu kuingia kulingana na nchi au eneo la wageni.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Products (Bidhaa)
+## Products (Bidhaa) {#products}
 
 Sehemu ya **Products** ndipo unapounda mipango tofauti, paketi, na huduma kwa mtandao wako. Unafafanua bei, mara za malipo, na mipaka/viwango kwenye kiwango cha bidhaa.
 
 ![Products list](/img/admin/products-list.png)
 
-## Memberships (Wanachama)
+## Memberships (Wanachama) {#memberships}
 
 Ukurasa wa **Memberships** unaonyesha usajili wote katika mtandao wako. Angalia na ubadilishe maelezo ya usajili ikiwemo mipango, bidhaa, kiasi cha malipo, na mara za malipo, historia ya malipo, na muda wa kutolewa (timestamps).
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Payments (Malipo)
+## Payments (Malipo) {#payments}
 
 Msonse ya **Payments** imelemaza chondelelo ya malipano pa msonkhoto wanu wote wa mtandawuni wanu, ndi mavuto omwe ali ndi maidiyo omwile kwa zochitika zomwe zili ndi zinthu zina ndi mphamvu.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Customers
+## Customers {#customers}
 
 Msonse ya **Customers** imalimbikitsa onse mwanzeru wosangalala wosangalala m'mtandawuni wanu ndi mawuyera omwe ali ndi mavuto omwile monga dzina la munthu, email, kusaukira kwa mwamba, ndipo muli ndi link yomwe mungayambe kuwoleka msonkhoto wanu.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Sites
+## Sites {#sites}
 
 Msonse ya **Sites** imalimbikitsa onse msonkhoto wosangalala m'mtandawuni wanu, kumwamba ndi zithunzi za msonkhoto ndi msonkhoto omwe wosangalala ali m'muli. Mungayendetsa bwino ma-domain omwe muli ndi mapulogalamu (mapped domains), mapulogalamu ndi quota, plugins ndi themes, ndipo zithunzi za msonkhoto.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domains
+## Domains {#domains}
 
 Msonse ya **Domains** imalimbikitsa ma-domain omwe muli ndi msonkhoto wosangalala. Mwachidule, monga super admin, mungayendetsa bwino ma-domain omwe muli ndi msonkhoto wosangalala ndipo mungawone DNS records ndi logs.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Discount Codes
+## Discount Codes {#discount-codes}
 
 **Discount Codes** imapangitsa kuti mupereke coupon codes kuti mupereke zochitika za kupereka mphamvu kwa onse wanu wosangalala. Mungowonetsa ndalama ya kuperekeza ndi onse wosangalala kapena m'muli omwe ali m'muli.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Broadcasts {#broadcasts}
 
 **Broadcasts** ndi chombo chomwe chimapangitsa kuti mupereke obwuludwe (announcements) kapena kupereke messages za kupangalala kwa onse wanu wosangalala. Mungowonetsa onse wosangalala omwe ali m'muli monga plan kapena product omwe ali m'muli.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Settings
+## Settings {#settings}
 
 Msonse ya **Settings** ndi yemwe mungayendetsa kuti Ultimate Multisite imene — settings za registration, malipano, API ndi webhooks, mapping ya domain, ndipo zinthu zina zomwe muli ndi zowonjezera.
 
@@ -109,13 +109,13 @@ Ndipo iliyani la sites:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Events
+## Events {#events}
 
 Iliyi Events page imapereka chitsogozo cha onse za events ndi logs m'moyo wanu. Imaperekera zinthu monga mapulogolo a plan, kupanga accounts, ndi zinthu zina zomwe zimaperekedwa — zimaperekera kuti mwayi wosangalatsa (monitoring) wanu woyenera multisite.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#webhooks}
 
 **Webhooks** zimapangitsa kuti mupereke data kwa application ine. Zili zofunika kuti mupereke data kuchokera pa Ultimate Multisite ku platforms monga Zapier.
 

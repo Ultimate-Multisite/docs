@@ -4,11 +4,11 @@ title: Филтр - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Номи зебои зербахшҳои маъмурии кишварро бармегардонад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | агар мо калимаҳоро бо ҳарфҳои калон нависем. |
 | $current_country | `\WP_Ultimo\Country\Country` | Намунаи синфи ҷорӣ. |
 
-### Аз
+### Аз {#since}
 
 - 2.0.11
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) дар сатри 250 муайян шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}
 Номи тағйирёфтаи бахш.

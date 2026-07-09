@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Iibiyaha Domain-ka
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Diiwaanka Isbeddellada
+# Domain Seller Diiwaanka Isbeddellada {#domain-seller-changelog}
 
 Nooca 1.3.0 - La sii daayay 2026-06-02
 - Cusub: Waxaa lagu daray digniin network-admin ah marka hadhaaga reseller-ka HostAfrica uu aad u hooseeyo
@@ -134,20 +134,20 @@ Version 1.0.0 - La sii daayay 2025-09-28
 * **La hagaajiyay:** Dhammaan code-kii v1 ee duugoobay waxaa loo cusboonaysiiyay heerarka v2
 * **La saaray:** Waafaqsanaanta legacy v1 (isbeddel jabinaya)
 
-### Versions Hore (v1 Legacy)
+### Versions Hore (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * La hagaajiyay: Is-waafaqid la'aanta Groundhogg CRM
 * Xusuusin: Kani wuxuu ahaa sii-dayntii ugu dambeysay ee v1-compatible
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * La hagaajiyay: Waxaa la saaray goobta License Key
 * La hagaajiyay: Tabs-ka plan oo maqan marka plugin-ka feature uu firfircoon yahay
 * La hagaajiyay: Waxaa lagu daray badhan skip ah goobta diiwaangelinta
 
-### Version 0.0.1 - Sii-dayntii Hore
+### Version 0.0.1 - Sii-dayntii Hore {#version-001---initial-release}
 
 * Isdhexgal OpenSRS aasaasi ah oo loogu talagalay WP Ultimo v1
 * Raadinta iyo diiwaangelinta domain fudud

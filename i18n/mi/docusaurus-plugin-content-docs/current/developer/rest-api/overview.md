@@ -3,28 +3,28 @@ title: Tirohanga Whānui ki te REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tohutoro REST API
+# Tohutoro REST API {#rest-api-reference}
 
-## Whirihoranga Taketake
+## Whirihoranga Taketake {#base-configuration}
 
 **URL Taketake:** `{site_url}/wp-json/wu/v2/`
 **Whakamotuhēhē:** Kī API me te Mea Huna (HTTP Basic Auth, Tawhā URL rānei)
 
-## Whakamotuhēhē
+## Whakamotuhēhē {#authentication}
 
-### Whakahohe API
+### Whakahohe API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Tiki Taipitopito Tuakiri API
+### Tiki Taipitopito Tuakiri API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Ngā Tikanga Whakamotuhēhē
+### Ngā Tikanga Whakamotuhēhē {#authentication-methods}
 
 **HTTP Basic Auth (E Tūtohutia Ana):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Ngā Wāhi Mutunga Matua
+## Ngā Wāhi Mutunga Matua {#core-endpoints}
 
-### 1. API Kiritaki
+### 1. API Kiritaki {#1-customers-api}
 
 **Ara Taketake:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Pae
+### 2. API Pae {#2-sites-api}
 
 **Ara Taketake:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Mema
+### 3. API Mema {#3-memberships-api}
 
 **Ara Taketake:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Hua
+### 4. API Hua {#4-products-api}
 
 **Ara Taketake:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Utu
+### 5. API Utu {#5-payments-api}
 
 **Ara Taketake:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Rohe**
+### 6. API Rohe** {#6-domains-api}
 
 **Ara Taketake:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Wāhi Mutunga Rēhitatanga
+## Wāhi Mutunga Rēhitatanga {#registration-endpoint}
 
 Ka whakarato te wāhi mutunga `/register` i tētahi rere checkout/rēhitatanga oti:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Ngā Wāhi Mutunga Kairīhi Motuhake
+## Ngā Wāhi Mutunga Kairīhi Motuhake {#sovereign-tenant-endpoints}
 
 Ka tāpiri a Ultimate Multisite: Noho-kairīhi Maha 1.2.0 i te kapinga REST mō ngā kairīhi motuhake mō ngā whakaurunga e whakarato ana, e tirotiro ana, e manatoko ana rānei i ngā kairīhi kua wehe.
 
@@ -242,7 +242,7 @@ Kei roto i ngā urupare tūnga hekenga angamaheni:
 
 Me whakaarohia `ready: false` hei aukati i mua i te whakarewatanga. Tirohia ngā taipitopito manatoko, whakatikahia te here kaihautū pātengi raraunga, te rārangi, te whakarato kaiwhakamahi, te take ararere rānei, kātahi ka whakamātau anō i te manatoko.
 
-## Ngā Urupare Hapa
+## Ngā Urupare Hapa {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Me whakaarohia `ready: false` hei aukati i mua i te whakarewatanga. Tirohia ngā
 }
 ```
 
-## Whakawārangi Whārangi me te Tātari
+## Whakawārangi Whārangi me te Tātari {#pagination-and-filtering}
 
 **Ngā Tawhā Uiui:**
 ```http

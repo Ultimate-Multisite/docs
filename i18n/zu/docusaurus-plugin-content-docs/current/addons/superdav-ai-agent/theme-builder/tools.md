@@ -3,17 +3,17 @@ title: Amathuluzi Nokucushwa
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Amathuluzi Nokulungiselela
+# Amathuluzi Nokulungiselela {#tools-and-configuration}
 
 Theme Builder isebenzisa isethi yamathuluzi ukuhlaziya, ukuklama, nokwakha isayithi lakho le-WordPress. Kunguqulo 1.16.0, **sd-ai-agent/site-scrape manje isiyithuluzi le-Tier 1**, okwenza litholakale ngokuzenzakalelayo ku-Theme Builder. Superdav AI Agent v1.18.0 iphinde yethule iphakheji elihambisana nayo le-Advanced elisatshalaliswa ngokwehlukana lezinhlelo zokusebenza zonjiniyela abethembekile; lawo mathuluzi aweyona ingxenye yephakheji eyinhloko ye-WordPress.org futhi kufanele afakwe futhi agunyazwe ngokwehlukana.
 
-## Amathuluzi Atholakalayo
+## Amathuluzi Atholakalayo {#available-tools}
 
-### Amathuluzi e-Tier 1 (Ahlala Etholakala)
+### Amathuluzi e-Tier 1 (Ahlala Etholakala) {#tier-1-tools-always-available}
 
 Amathuluzi e-Tier 1 atholakala ngokuzenzakalelayo ku-Theme Builder ngaphandle kokunye ukulungiselela okwengeziwe.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Injongo:** Hlaziya amawebhusayithi akhona ukuze kukhishwe ugqozi lokuklama, isakhiwo sokuqukethwe, nokusebenza.
 
@@ -51,11 +51,11 @@ Hlaziya umklamo we-example.com futhi uwusebenzise njengogqozi lwesayithi lami.
 - Amasayithi asindwe yi-JavaScript angase abe nokuhlaziywa okulinganiselwe
 - Amasayithi amakhulu angase athathe isikhathi eside ukuwahlaziya
 
-### Amathuluzi e-Tier 2 (Ongawakhetha)
+### Amathuluzi e-Tier 2 (Ongawakhetha) {#tier-2-tools-optional}
 
 Amathuluzi e-Tier 2 atholakala lapho enikwe amandla ngokucacile kuzilungiselelo ze-Theme Builder.
 
-#### Ukuhlaziya Okuthuthukile
+#### Ukuhlaziya Okuthuthukile {#advanced-analytics}
 
 Kuhlinzeka ngamamethrikhi anemininingwane okusebenza:
 
@@ -65,7 +65,7 @@ Kuhlinzeka ngamamethrikhi anemininingwane okusebenza:
 - Isikolo sokufinyeleleka
 - Isikolo semikhuba engcono kakhulu
 
-#### Isilungiseleli Sokuqukethwe
+#### Isilungiseleli Sokuqukethwe {#content-optimizer}
 
 Sihlaziya futhi siphakamise ukuthuthukiswa kwalokhu:
 
@@ -75,11 +75,11 @@ Sihlaziya futhi siphakamise ukuthuthukiswa kwalokhu:
 - Isakhiwo sokuqukethwe
 - Ukubekwa kwe-call-to-action
 
-### Amathuluzi e-Tier 3 (Premium)
+### Amathuluzi e-Tier 3 (Premium) {#tier-3-tools-premium}
 
 Amathuluzi e-Tier 3 adinga ukulungiselela okwengeziwe noma izici ze-premium.
 
-#### Isikhiqizi Sokuqukethwe se-AI
+#### Isikhiqizi Sokuqukethwe se-AI {#ai-content-generator}
 
 Sikhiqiza okuqukethwe kwalokhu:
 
@@ -89,7 +89,7 @@ Sikhiqiza okuqukethwe kwalokhu:
 - Izincazelo ze-meta
 - Ikhophi ye-call-to-action
 
-#### Amathuluzi Omklamo Athuthukile
+#### Amathuluzi Omklamo Athuthukile {#advanced-design-tools}
 
 Ahlinzeka ngamakhono omklamo athuthukile:
 
@@ -99,7 +99,7 @@ Ahlinzeka ngamakhono omklamo athuthukile:
 - Ithiyori yemibala ethuthukile
 - Ukulungiselelwa kwe-typography
 
-### Amathuluzi Ahambisana ne-Advanced (Iphakheji Ehlukile)
+### Amathuluzi Ahambisana ne-Advanced (Iphakheji Ehlukile) {#advanced-companion-tools-separate-package}
 
 Iphakheji elihambisana ne-Advanced lisatshalaliswa ngokwehlukana nokukhishwa okuyinhloko kwe-Superdav AI Agent. Lihloselwe izindawo zonjiniyela nabanikazi bamasayithi abethembekile lapho abaphathi bevumela ngokucacile i-agent ukuthi isebenzise amathuluzi anomthelela omkhulu.
 
@@ -116,9 +116,9 @@ Amakhono ahambisana ne-Advanced angafaka:
 
 Ungawabhali la mathuluzi njengamathuluzi e-Theme Builder atholakala ngokujwayelekile kukho konke ukufakwa. Atholakala kuphela lapho iphakheji elihambisana ne-Advanced lifakiwe, linikwe amandla, futhi livinjelwe kubaphathi abethembekile.
 
-## Ukulungiselela Amathuluzi
+## Ukulungiselela Amathuluzi {#tool-configuration}
 
-### Ukunika Amathuluzi Amandla
+### Ukunika Amathuluzi Amandla {#enabling-tools}
 
 Ukuze unike amandla amathuluzi engeziwe ku-Theme Builder:
 
@@ -127,7 +127,7 @@ Ukuze unike amandla amathuluzi engeziwe ku-Theme Builder:
 3. Vula noma uvale amathuluzi njengoba kudingeka
 4. Londoloza izilungiselelo
 
-### Izimvume Zamathuluzi
+### Izimvume Zamathuluzi {#tool-permissions}
 
 Amanye amathuluzi adinga izimvume:
 
@@ -137,7 +137,7 @@ Amanye amathuluzi adinga izimvume:
 - **Izici ezithuthukile** — zingase zidinge okubhaliselwe kwe-premium
 - **Amathuluzi ahambisana ne-Advanced** — adinga iphakheji ye-Advanced esatshalaliswa ngokwehlukana nokwethemba komphathi okucacile
 
-### API Keys Nemininingwane Yokungena
+### API Keys Nemininingwane Yokungena {#api-keys-and-credentials}
 
 Lungiselela API keys zamathuluzi azidingayo:
 
@@ -146,13 +146,13 @@ Lungiselela API keys zamathuluzi azidingayo:
 3. Hlola uxhumano
 4. Londoloza ngokuphephile
 
-### Ukufaka Iphakheji Elihambisana ne-Advanced
+### Ukufaka Iphakheji Elihambisana ne-Advanced {#installing-the-advanced-companion-package}
 
 Iphakheji elihambisana ne-Advanced likhishwa ngokwehlukana ne-ZIP eyinhloko ye-WordPress.org. Lifake kuphela esiteshini esisemthethweni sokusatshalaliswa kwephrojekthi salokho kukhishwa, bese uvimbela ukufinyelela kubaphathi abethembekile. Buyekeza amasango okuvuma kwabantu nokuziphatha kwe-git snapshot ngaphambi kokunika amandla amathuluzi esistimu yamafayela, isizindalwazi, WP-CLI, REST dispatcher, ukwakha ama-plugin, ukuphatha abasebenzisi, noma ama-benchmark kusayithi lokukhiqiza.
 
-## Ukusebenzisa i-sd-ai-agent/site-scrape
+## Ukusebenzisa i-sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Ukusetshenziswa Okuyisisekelo
+### Ukusetshenziswa Okuyisisekelo {#basic-usage}
 
 Cela i-Theme Builder ukuthi ihlaziye iwebhusayithi:
 
@@ -161,7 +161,7 @@ Hlaziya umklamo wesayithi lombangi wami ku-competitor.com
 futhi uphakamise ukuthuthukiswa komklamo kwesayithi lami.
 ```
 
-### Ukuhlaziya Okuqondile
+### Ukuhlaziya Okuqondile {#specific-analysis}
 
 Cela izinhlobo ezithile zokuhlaziya:
 
@@ -179,7 +179,7 @@ Hlola ukuphendula kumaselula kwe-example.com futhi uqinisekise ukuthi isayithi l
 liphendula ngendlela efanayo.
 ```
 
-### Ukuhlaziya Ngokuqhathanisa
+### Ukuhlaziya Ngokuqhathanisa {#comparison-analysis}
 
 Qhathanisa amasayithi amaningi:
 
@@ -188,22 +188,22 @@ Qhathanisa imiklamo ye-site1.com ne-site2.com bese udala umklamo
 ohlanganisa izinto ezinhle kakhulu zawo womabili.
 ```
 
-## Imikhawulo Yamathuluzi Nokucatshangelwa
+## Imikhawulo Yamathuluzi Nokucatshangelwa {#tool-limitations-and-considerations}
 
-### Ukukhawulelwa Kwezinga
+### Ukukhawulelwa Kwezinga {#rate-limiting}
 
 - Ukuklwebha kukhawulelwa ngesilinganiso ukuvimbela ukugcwala ngokweqile kweseva
 - Izicelo eziningi kusayithi elifanayo zingase zehliswe isivinini
 - Amasayithi amakhulu angase athathe isikhathi eside ukuwahlaziya
 
-### Ukunemba Kokuqukethwe
+### Ukunemba Kokuqukethwe {#content-accuracy}
 
 - Okuqukethwe okuguquguqukayo kungase kungabanjwa ngokuphelele
 - Okuqukethwe okwenziwe nge-JavaScript kungase kungapheleli
 - Idatha yesikhathi sangempela ingase ingabonakali
 - Okunye okuqukethwe kungase kube ngemuva kwezindonga zokukhokha
 
-### Izinto Ezisemthethweni Nezokuziphatha
+### Izinto Ezisemthethweni Nezokuziphatha {#legal-and-ethical-considerations}
 
 - Hlonipha i-robots.txt nezinqubomgomo zesayithi
 - Ungaklwebhi okuqukethwe okunelungelo lobunikazi ukuze kuphinde kukhiqizwe
@@ -211,16 +211,16 @@ ohlanganisa izinto ezinhle kakhulu zawo womabili.
 - Qinisekisa ukuthi unamalungelo okusebenzisa okuqukethwe okukhishiwe
 - Landela imigomo yesevisi yamasayithi ahlaziyiweyo
 
-### Umthelela Ekusebenzeni
+### Umthelela Ekusebenzeni {#performance-impact}
 
 - Ukuklwebha amasayithi amakhulu kungase kuthathe isikhathi
 - Ukuklwebha okuningi ngesikhathi esisodwa kungase kube kancane
 - Ukuxhumeka kwenethiwekhi kuthinta isivinini
 - Amasethi edatha amakhulu angase adinge ukucutshungulwa okwengeziwe
 
-## Imikhuba Engcono Kakhulu
+## Imikhuba Engcono Kakhulu {#best-practices}
 
-### Ukusebenzisa Ukuhlaziywa Kwesayithi
+### Ukusebenzisa Ukuhlaziywa Kwesayithi {#using-site-analysis}
 
 1. **Hlaziya amasayithi amaningi** — qoqa ugqozi emithonjeni eminingana
 2. **Gxila esakhiweni** — funda izindlela zokuhlelwa nokuhleleka
@@ -228,7 +228,7 @@ ohlanganisa izinto ezinhle kakhulu zawo womabili.
 4. **Funda i-typography** — thola izinhlanganisela zamafonti ozithandayo
 5. **Buyekeza ukuzulazula** — qonda ukuhleleka kwemenyu
 
-### Ukuklwebha Ngokuziphatha
+### Ukuklwebha Ngokuziphatha {#ethical-scraping}
 
 1. **Hlonipha i-robots.txt** — landela imihlahlandlela yesayithi
 2. **Ungakopishi okuqukethwe** — sebenzisa ukuhlaziya ukuze uthole ugqozi kuphela
@@ -236,7 +236,7 @@ ohlanganisa izinto ezinhle kakhulu zawo womabili.
 4. **Nikeza imithombo** — ncoma imithombo yogqozi
 5. **Landela imigomo** — hambisana nemigomo yesevisi yesayithi
 
-### Ukwandisa Ukusebenza Kwamathuluzi
+### Ukwandisa Ukusebenza Kwamathuluzi {#maximizing-tool-effectiveness}
 
 1. **Cacisa** — cela izinhlobo ezithile zokuhlaziya
 2. **Nikeza umongo** — chaza injongo yesayithi lakho
@@ -244,9 +244,9 @@ ohlanganisa izinto ezinhle kakhulu zawo womabili.
 4. **Phindaphinda** — cwengisisa ngokusekelwe emiphumeleni
 5. **Hlanganisa amathuluzi** — sebenzisa amathuluzi amaningi ukuze uthole ukuhlaziya okuphelele
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
-### Isayithi Aliklwebheki
+### Isayithi Aliklwebheki {#site-wont-scrape}
 
 - Hlola ukuthi isayithi liyatholakala yini emphakathini
 - Qinisekisa ukuthi i-robots.txt ivumela ukuklwebha
@@ -254,7 +254,7 @@ ohlanganisa izinto ezinhle kakhulu zawo womabili.
 - Hlola uxhumano lwe-inthanethi
 - Xhumana nokwesekwa uma inkinga iqhubeka
 
-### Ukuhlaziya Okungaphelele
+### Ukuhlaziya Okungaphelele {#incomplete-analysis}
 
 - Isayithi lingase libe nokuqukethwe okuguquguqukayo
 - I-JavaScript ingase inganikezwa ngokuphelele
@@ -262,7 +262,7 @@ ohlanganisa izinto ezinhle kakhulu zawo womabili.
 - Zama ukuhlaziya amakhasi athile esikhundleni salokho
 - Cela izinhlobo ezithile zokuhlaziya
 
-### Ukusebenza Kancane
+### Ukusebenza Kancane {#slow-performance}
 
 - Amasayithi amakhulu athatha isikhathi eside ukuwahlaziya
 - Ukuklwebha okuningi ngesikhathi esisodwa kuhamba kancane
@@ -270,7 +270,7 @@ ohlanganisa izinto ezinhle kakhulu zawo womabili.
 - Zama ngesikhathi esingesona esimatasa
 - Hlaziya izingxenye ezincane kuqala
 
-## Imibhalo Ehlobene
+## Imibhalo Ehlobene {#related-documentation}
 
 - [Ingxoxo Yokuthola Ulwazi](./discovery-interview.md) — qoqa ulwazi lokuklama
 - [Ukuqondiswa Kokuklama](./design-direction.md) — cwengisisa ukuklama kwakho

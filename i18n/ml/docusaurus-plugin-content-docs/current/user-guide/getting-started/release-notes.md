@@ -3,9 +3,9 @@ title: റിലീസ് കുറിപ്പുകൾ
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# റിലീസ് കുറിപ്പുകൾ
+# റിലീസ് കുറിപ്പുകൾ {#release-notes}
 
-## പതിപ്പ് 2.13.0 — 2026-06-05-ന് റിലീസ് ചെയ്തത്
+## പതിപ്പ് 2.13.0 — 2026-06-05-ന് റിലീസ് ചെയ്തത് {#version-2130--released-on-2026-06-05}
 
 - പുതിയത്: ഉപഭോക്തൃ Account, checkout, billing, സൈറ്റ്, invoice, template മാറ്റൽ, domain mapping പ്രവാഹങ്ങൾക്കായി sovereign-tenant പിന്തുണ ചേർത്തു. ഇതിലൂടെ tenant നെറ്റ്‌വർക്കുകൾക്ക് നിയന്ത്രിത പ്രവർത്തനങ്ങൾക്കായി ഉപഭോക്താക്കളെ പ്രധാന സൈറ്റിലേക്ക് തിരികെ നയിക്കാം.
 - പുതിയത്: recurring membership-കൾക്കായി renewal-credential പരിശോധനകൾ ചേർത്തു. സംരക്ഷിച്ച billing agreement, subscription, അല്ലെങ്കിൽ vault token ഇല്ലെങ്കിൽ gateway-കൾക്ക് auto-renewal പ്രവർത്തനരഹിതമാക്കാം.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - പരിഹാരം: Membership renewal-ുകൾ, expiration display, payment collection edge case-ുകൾ എന്നിവയിൽ ഉടൻ expiration, crash, അല്ലെങ്കിൽ ആവശ്യമായ payment നഷ്ടപ്പെടൽ എന്നിവ ഇനി ഒഴിവാക്കുന്നു.
 - മെച്ചപ്പെടുത്തി: WordPress compatibility 7.0 വരെ പരിശോധിച്ചു, production Vue asset-ുകൾ npm source-ുകളിൽ നിന്ന് വീണ്ടും build ചെയ്തു, Cypress end-to-end coverage ഇപ്പോൾ കൂടുതൽ checkout, setup, SSO, gateway പ്രവാഹങ്ങൾ പരീക്ഷിക്കുന്നു.
 
-## പതിപ്പ് 2.12.0 — 2026-05-15-ന് റിലീസ് ചെയ്തത്
+## പതിപ്പ് 2.12.0 — 2026-05-15-ന് റിലീസ് ചെയ്തത് {#version-2120--released-on-2026-05-15}
 
 - പുതിയത്: domain mapping integration ഉള്ള പിന്തുണയുള്ള host provider ആയി Hostinger (hPanel) ചേർത്തു
 - പുതിയത്: network മുഴുവൻ സൈറ്റ് പുനഃസ്ഥാപനം ലളിതമാക്കാൻ Site Exporter ഇപ്പോൾ network import bundle-ുകൾ കൈകാര്യം ചെയ്യുന്നു
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - പരിഹാരം: Site Exporter CLI ഇപ്പോൾ ശരിയായ default network site selection നിലനിർത്തുന്നു
 - മെച്ചപ്പെടുത്തി: plugin package-ിൽ നിന്ന് bundled wp-cli നീക്കി; plugin വലുപ്പം കുറഞ്ഞു
 
-## പതിപ്പ് 2.11.0 — 2026-05-11-ന് റിലീസ് ചെയ്തത്
+## പതിപ്പ് 2.11.0 — 2026-05-11-ന് റിലീസ് ചെയ്തത് {#version-2110--released-on-2026-05-11}
 
 - പുതിയത്: സൈറ്റ് export-ുകൾ ഇപ്പോൾ self-booting `index.php` bundle ചെയ്യുന്നു. അതിനാൽ വേറെ plugin install ഇല്ലാതെ പുതിയ host-ിൽ ZIP install ചെയ്യാം.
 - പുതിയത്: Site Export admin page-ിൽ നിന്ന് ഒറ്റ archive-ിൽ എല്ലാ subsite-ുകളും export ചെയ്യാൻ network export administrator-മാർക്ക് അനുവദിക്കുന്നു.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - പുതിയത്: ആവശ്യമായ field configure ചെയ്യാതെ product ചേർത്താൽ checkout form editor മുന്നറിയിപ്പ് നൽകുന്നു.
 - പുതിയത്: Import/Export settings tab ഇപ്പോൾ അതിന്റെ scope വ്യക്തമായി വിവരിക്കുകയും Site Export tool-ിലേക്ക് നേരിട്ട് link ചെയ്യുകയും ചെയ്യുന്നു.
 
-## പതിപ്പ് 2.10.0 — 2026-05-05-ന് റിലീസ് ചെയ്തത്
+## പതിപ്പ് 2.10.0 — 2026-05-05-ന് റിലീസ് ചെയ്തത് {#version-2100--released-on-2026-05-05}
 
 - പുതിയത്: manual credential entry-ക്കായി OAuth flag gate ഉള്ള PayPal guided setup wizard; seamless gateway configuration-ന്.
 - പുതിയത്: current-template card, persistent grid, **നിലവിലെ template reset ചെയ്യുക** button എന്നിവയോടെ template switch customer panel പുനർരൂപകൽപ്പന ചെയ്തു.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - പരിഹാരം: എല്ലാ login flow-കളിലും filtered SSO path മാനിക്കുന്നു.
 - പരിഹാരം: ശൂന്യമായ site identity option-ുകൾ save ചെയ്യുമ്പോൾ നിലനിർത്തുന്നു.
 
-## പതിപ്പ് 2.9.0 — 2026-04-30-ന് റിലീസ് ചെയ്തത്
+## പതിപ്പ് 2.9.0 — 2026-04-30-ന് റിലീസ് ചെയ്തത് {#version-290--released-on-2026-04-30}
 
 - പുതിയത്: single-site export, import എന്നിവ **Tools > Export & Import**-ന്റെ കീഴിൽ ചേർത്തു.
 - പരിഹാരം: Export ZIP file-ുകൾ ഇപ്പോൾ authenticated download endpoint വഴി നൽകുന്നു.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - പരിഹാരം: user settings key-കളിൽ Tour ID-കൾ underscore-ുകളാക്കി normalise ചെയ്തു.
 - മെച്ചപ്പെടുത്തി: കൂടുതൽ compatibility-ക്കായി Alchemy/Zippy-ന് പകരം ZipArchive ഇപ്പോൾ ഉപയോഗിക്കുന്നു.
 
-## പതിപ്പ് 2.8.0 — 2026-04-29
+## പതിപ്പ് 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - പുതിയത്: Other Options ക്രമീകരണ UI-ലേക്ക് Enable Jumper ടോഗിൾ ചേർത്തു.
 - പുതിയത്: checkout forms പട്ടികയിലേക്ക് Status കോളം ചേർത്തു.

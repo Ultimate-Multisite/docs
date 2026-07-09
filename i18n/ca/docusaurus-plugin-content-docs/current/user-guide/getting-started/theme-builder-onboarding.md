@@ -3,11 +3,11 @@ title: Flot de benvinguda del Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flux de Benvinguda del Constructor de Temes
+# Flux de Benvinguda del Constructor de Temes {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 presenta un **flux de benvinguda del Constructor de Temes** guiat que et ajuda a crear un tema de blocs personalitzat durant la teva configuració inicial. Això substitueix el mode Site Builder (Constructor de Lloc) anterior per un enfoque més flexible i assistit per agent.
 
-## Què és el Flux de Benvinguda del Constructor de Temes?
+## Què és el Flux de Benvinguda del Constructor de Temes? {#what-is-the-theme-builder-onboarding-flow}
 
 El flux de benvinguda del Constructor de Temes és un assistent de configuració interactiu que:
 
@@ -18,9 +18,9 @@ El flux de benvinguda del Constructor de Temes és un assistent de configuració
 
 El flux està alimentat per l'**agent Setup Assistant**, que fa preguntes aclaridoras i construeix el teu tema incrementalment.
 
-## Com començar el Constructor de Temes
+## Com començar el Constructor de Temes {#starting-the-theme-builder-onboarding}
 
-### Configuració inicial
+### Configuració inicial {#first-run-setup}
 
 Quan llances Superdav AI Agent per primera vegada en una nova instal·lació de WordPress, veuràs:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Selecciona **"Build a custom theme"** (Construir un tema personalitzat) per entrar al flux de benvinguda del Constructor de Temes.
 
-### Activació manual
+### Activació manual {#manual-activation}
 
 També pots començar el flux de benvinguda del Constructor de Temes en qualsevol moment demanant:
 
@@ -49,9 +49,9 @@ o
 "Help me create a custom theme"
 ```
 
-## Els Passos de Benvinguda
+## Els Passos de Benvinguda {#the-onboarding-steps}
 
-### Pas 1: Selecció de Mode
+### Pas 1: Selecció de Mode {#step-1-mode-selection}
 
 L'agent Setup Assistant et pregunta sobre la teva preferència:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 El **mode guiat** és recomanat per a la majoria dels usuaris; l'agent fa recomanacions de disseny basades en la teva indústria i els teus objectius.
 
-### Pas 2: Especificació del Lloc Web
+### Pas 2: Especificació del Lloc Web {#step-2-site-specification}
 
 Et preguntaran sobre el teu lloc web:
 
@@ -74,7 +74,7 @@ Et preguntaran sobre el teu lloc web:
 
 Aquesta informació es guarda a la teva memòria **site_brief**, que els agents consulten en sessions futures.
 
-### Pas 3: Decisions del Sistema de Disseny
+### Pas 3: Decisions del Sistema de Disseny {#step-3-design-system-decisions}
 
 L'agent et guia a través de la selecció de *tokens* de disseny:
 
@@ -83,7 +83,7 @@ L'agent et guia a través de la selecció de *tokens* de disseny:
 - **Espai**: Disposicions compactes, normals o amplses
 - **Moviment**: Animacions i transicions (si es desitja)
 
-### Pas 4: Generació del Tema
+### Pas 4: Generació del Tema {#step-4-theme-generation}
 
 L'agent Setup Assistant prepara el teu tema de blocs personalitzat amb:
 
@@ -92,7 +92,7 @@ L'agent Setup Assistant prepara el teu tema de blocs personalitzat amb:
 - Estils de blocs personalitzats que coincideixen amb el teu sistema de disseny
 - Metadades del tema i declaracions de suport de WordPress
 
-### Pas 5: Activació i Verificació
+### Pas 5: Activació i Verificació {#step-5-activation-and-verification}
 
 El tema s'activa automàticament i veuràs:
 
@@ -107,7 +107,7 @@ El tema s'activa automàticament i veuràs:
 
 Després pots visitar el teu lloc web per verificar que el tema s'està mostrant correctament.
 
-## Especificació del Lloc Web i Memòria site_brief
+## Especificació del Lloc Web i Memòria site_brief {#site-specification-and-sitebrief-memory}
 
 Durant el benvingut, l'agent captura la especificació del teu lloc web en una categoria de memòria **site_brief**. Això inclou:
 
@@ -117,7 +117,7 @@ Durant el benvingut, l'agent captura la especificació del teu lloc web en una c
 - Preferències de disseny
 - Estructura de contingut
 
-### Per què és important site_brief
+### Per què és important site_brief {#why-sitebrief-matters}
 
 En sessions futures, els agents consulten el teu site_brief per:
 
@@ -126,7 +126,7 @@ En sessions futures, els agents consulten el teu site_brief per:
 - Proporcionar recomanacions amb context
 - Evitar repetir preguntes de configuració
 
-### Veure el teu site_brief
+### Veure el teu site_brief {#viewing-your-sitebrief}
 
 Pots demanar a l'agent:
 
@@ -142,11 +142,11 @@ o
 
 L'agent mostrarà la especificació del teu lloc web emmagatzemada.
 
-## Personalització després del benvingut
+## Personalització després del benvingut {#customizing-after-onboarding}
 
 Després que el Constructor de Temes completi el benvingut, pots:
 
-### Utilitzar la Habilitat d'Estètica del Sistema de Disseny
+### Utilitzar la Habilitat d'Estètica del Sistema de Disseny {#use-the-design-system-aesthetics-skill}
 
 Demanar refinements de disseny:
 
@@ -162,7 +162,7 @@ o
 
 La **abilitat d'Estètica del Sistema de Disseny** et guia a través de petites actualitzacions de disseny.
 
-### Editar theme.json Directament
+### Editar theme.json Directament {#edit-themejson-directly}
 
 Per a usuaris avançats, edita `/wp-content/themes/[theme-name]/theme.json` per ajustar:
 
@@ -171,7 +171,7 @@ Per a usuaris avançats, edita `/wp-content/themes/[theme-name]/theme.json` per 
 - Valors d'espai
 - Definicions de bord i ombra
 
-### Crear Plantilles de Blocs Personalitzades
+### Crear Plantilles de Blocs Personalitzades {#create-custom-block-templates}
 
 Utilitza l'editor de blocs de WordPress per crear plantilles personalitzades per a:
 
@@ -180,7 +180,7 @@ Utilitza l'editor de blocs de WordPress per crear plantilles personalitzades per
 - Pàgines de producte
 - Formularis de contacte
 
-## Comparativa: Anterior vs. Nou Benvingut
+## Comparativa: Anterior vs. Nou Benvingut {#comparison-old-vs-new-onboarding}
 
 | Funcionalitat | Site Builder (Antic) | Theme Builder (Nou) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Utilitza l'editor de blocs de WordPress per crear plantilles personalitzades per
 | Flexibilitat | Opcions fixades | Personalitzable |
 | Actualitzacions futures | No es refereixen | Emmagatzemades en site_brief |
 
-## Solucionar Problemes
+## Solucionar Problemes {#troubleshooting}
 
 **El flux de benvinguda no es va completar**
 - Reinicia el flux: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Utilitza l'editor de blocs de WordPress per crear plantilles personalitzades per
 - Pedeu a l'agent que "regenerate the theme with [specific changes]" (regeneri el tema amb [canvis específics])
 - Edita theme.json directament per un control precís
 
-## Pròxims Passos
+## Pròxims Passos {#next-steps}
 
 Després de completar el benvingut del Constructor de Temes:
 

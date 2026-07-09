@@ -3,7 +3,7 @@ title: Webhookid
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooki es esilek (v2)
+# Webhooki es esilek (v2) {#a-first-look-on-webhooks-v2}
 
 _**TÄHELE: Pärast seda funktsiooni või artikli kasutamist on mõeldud edasivõtmiseks.**_
 
@@ -11,7 +11,7 @@ _**TÄHELE: Pärast seda funktsiooni või artikli kasutamist on mõeldud edasiv�
 
 See on kas kasulik, kui vajad integreerida või ületada teatud andmeid Ultimate Multisite'ist mõne CRM-i või süsteemile iga kord, kui sündmus käivitub. Näiteks pead saama kasutaja nime ja e-posti aadressi jagamiseks postitusjuhtiga iga kord, kui uus kasutaja konto luuakse.
 
-## Webhooki loomine
+## Webhooki loomine {#how-to-create-a-webhook}
 
 Webhooki loomiseks külasta oma võrerekande administraatori dashboardi. Klõpsake **Ultimate Multisite > Webhooks > Lisaindige uue webhooki.**
 

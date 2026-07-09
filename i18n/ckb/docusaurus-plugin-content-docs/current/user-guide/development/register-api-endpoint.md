@@ -3,7 +3,7 @@ title: Registers API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint-a API register-i nî Ultimate Multisite
+# Endpoint-a API register-i nî Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Li vê dersê, ji bo fیدی کارکردna endpoint-a API /register a Ultimate Multisite ji bo nirxandina pûr a pêvajoya başyandina mînalî ya nû ji bo mînalîyek nû di neteweyekê de û çawa ji Zapier bi wê dike.
 
@@ -29,11 +29,11 @@ Li vir nûçeyek bi naveda sekmesên API ye:
 
 Niha, li ser endpoint-a nûçeyek bibînin û paş wê ji bo nirxandina yekem di Zapier de çêbine.
 
-## Paramêtreyên cîhê (body parameters)
+## Paramêtreyên cîhê (body parameters) {#endpoint-body-parameters}
 
 Biar me bi pîvîna zêst a armanca ku em hewce dikin ji bo firdawestina maghsaleyek ji bo endpoint-a, li ser nûçeyeke dê bibînin.
 
-### Customer
+### Customer {#customer}
 
 Ev maghsaleyek e ku hewce ye ji bo pêvajoya çêkirina User û Mînalîyek Customer a Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Ev maghsaleyek e ku hewce ye ji bo pêvajoya çêkirina User û Mînalîyek Cust
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **تایبەتمەندی (Membership)**
+### **تایبەتمەندی (Membership)** {#membership}
 
 تەنها یەک زانیارییەکی پێویستە لەناو ئەم ئۆبجێکتدا، ئەوەیە ئەو دۆخی تایبەتمەندییە.
 
 "membership" { "status" : "string", // یەکێک لە "pending"، "active"، "trialing"، "expired"، "on-hold"، "canceled" }
 
-### **پێکهاتەکان (Products)**
+### **پێکهاتەکان (Products)** {#products}
 
 بۆ پێکهاتەکان، دەدەین ئاریەیەک کە یان زیاتر لە یەک IDی پێکهاتەی تۆڕەکەت دەگرێت. ئاگادارم بکە، ئەم endpointە پێکهاتە دروست ناکات. بۆ تێگەیشتنی باشتر لەسەر endpoint-ەکە بۆ دروستکردنی پێکهاتەکان، بەدوای dokumantasi Ultimate Multisite بگەڕێ.
 
 **"products" : [1,2],**
 
-### **پابوون (Payment)**
+### **پابوون (Payment)** {#payment}
 
 وەک تایبەتمەندییەکان، تەنها دۆخەکەمان پێویستە.
 
 **"payment" { "status" : "string", // یەکێک لە "pending"، "completed"، "refunded"، "partially-refunded"، "partially-paid"، "failed"، "canceled" }**
 
-### **سایتی (Site)**
+### **سایتی (Site)** {#site}
 
 و بۆ کۆتایی دابینکردنی، پێویستە URL و ناونیشانی سایتەکە لەناو ئۆبجێکت Siteیەکەدا هەبێت.
 
@@ -69,13 +69,13 @@ Ev maghsaleyek e ku hewce ye ji bo pêvajoya çêkirina User û Mînalîyek Cust
 
 پاسرج returnی endpoint-ی register، ئاریەیەک دەبێت کە زانیاری نوێکراوەکانی تایبەتمەندی دروستکراو لەخۆگرێت.
 
-## دروستکردنی اکشایەک لە Zapierدا (Creating an action in Zapier)
+## دروستکردنی اکشایەک لە Zapierدا (Creating an action in Zapier) {#creating-an-action-in-zapier}
 
 لەگەڵ پێشوازی ئەم endpoint-ی نوێ و بەهێزتر بۆ دروستکردنی خشتەی تایبەتمەندی، دەتوانیت اکشای نوێیەک لە Zapierدا بەکاربهێنیت.
 
 ئایا دەزانیت چۆن بەکاریان بهێنیت و هەموو ئەو شتانەی کە وەرگرتنی نسخه نوێی Zapier پێشکەش دەکات بەخێربیت؟ زیاتر بزانە لێرە. (لینک؟)
 
-### دروستکردنی اکشایەکە
+### دروستکردنی اکشایەکە {#creating-an-action}
 
 بۆ ئەوەی باشتر ڕوون بکەینەوە چۆنیەتی بەکارهێنانی registration endpoint لەگەڵ Zapier، بیابین یەکگرتوویی (integration)ێک لەگەڵ Google Forms دروست بکەین. هەمواری کاتێک ئەم فۆرمە پڕ دەبێت و زانیارییەکان لە لایەنی جوابەکانی فۆرمەکەدا هەڵدەستێنرێت، یەکەم ئەندازی نوێ بۆ ئەندازیی (membership) لە تۆڕی Ultimate Multisite دروست دەکرێت.
 
@@ -105,7 +105,7 @@ Ev maghsaleyek e ku hewce ye ji bo pêvajoya çêkirina User û Mînalîyek Cust
 
 تەستی Zap نوێی خۆت بکە و ئەوە بە سەرکەوتوویی تەواو دەبێت. ئەگەر هەڵەیەکی ڕوو بدات، هەموو فیلدەکانی چاک بکە و ببینە ئایا بە دروستی دەنێردرێنەوە. لەبەر ئەوەی زانیاری زۆر هەیە، هەندێک شت دەتوانیان لە نادیدی چیبین.
 
-### پارامێترە تەواوەکانی endpoint
+### پارامێترە تەواوەکانی endpoint {#complete-endpoint-parameters}
 
 لێرەدا کۆمەڵەی تەواوی داواکاری و هەموو کێشەکانی فیلدەکانی ناردن هەن:
 

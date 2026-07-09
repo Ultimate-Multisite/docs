@@ -3,7 +3,7 @@ title: Rangitaki Panonitanga Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Rangitaki Panoni Captcha
+# Rangitaki Panoni Captcha {#captcha-changelog}
 
 Putanga: 1.5.0 - I tukua i te 2026-05-22
 * Hou: Kaitāmi auau aukati-mārō — ka tatau i ia GET me POST katoa i runga i ngā mata kua tiakina e te captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login), ā, ka whakautu ki te HTTP 429, tētahi `Retry-After` header, me tētahi whakaroanga tarpit matapōkeretia (1–5 hēkona, kua herea mārō ki te 15 hēkona).

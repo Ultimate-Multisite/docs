@@ -3,15 +3,15 @@ title: Orkestrasyon ng Tagabuo ng Site v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Ang Site Builder Orchestration v2 (ipinakilala sa Gratis AI Agent v1.4.0) ay ang engine na nagpapagana sa paggawa ng website na maraming hakbang. Kapag hiniling mo sa agent na "bumuo ng website para sa restawran" o "gumawa ng portfolio na may blog", hinahati ng orchestrator ang mataas na antas na layuning iyon sa isang nakabalangkas na **plano**, tinutuklas ang mga plugin na kailangan upang maisakatuparan ito, isinasagawa ang bawat hakbang nang sunod-sunod, sinusubaybayan ang progreso, at awtonomong bumabawi mula sa mga error.
 
 ---
 
-## Paano Ito Gumagana
+## Paano Ito Gumagana {#how-it-works}
 
-### 1. Pagbuo ng Plano
+### 1. Pagbuo ng Plano {#1-plan-generation}
 
 Kapag nakatanggap ang agent ng tagubilin sa pagbuo ng site, tinatawag nito ang kakayahang `create_site_plan` upang gumawa ng JSON **plano ng site**. Inilalarawan ng plano ang:
 
@@ -61,7 +61,7 @@ Kapag nakatanggap ang agent ng tagubilin sa pagbuo ng site, tinatawag nito ang k
 }
 ```
 
-### 2. Pagtuklas ng Plugin
+### 2. Pagtuklas ng Plugin {#2-plugin-discovery}
 
 Bago magsimula ang pagpapatupad, ini-scan ng orchestrator ang `plugin_requirements` ng plano at sinusuri kung aling mga plugin ang aktibo na. Para sa mga nawawalang plugin, ito ay:
 
@@ -71,7 +71,7 @@ Bago magsimula ang pagpapatupad, ini-scan ng orchestrator ang `plugin_requiremen
 
 Hindi nakamamatay ang mga kabiguan sa pagtuklas ng plugin — minamarkahan ng orchestrator ang mga apektadong hakbang bilang `skipped` at nagpapatuloy sa natitirang bahagi ng plano.
 
-### 3. Pagpapatupad ng Plano
+### 3. Pagpapatupad ng Plano {#3-plan-execution}
 
 Tinatawag ng orchestrator ang `execute_site_plan` gamit ang ID ng plano. Nagpapatuloy ang pagpapatupad yugto-sa-yugto, hakbang-sa-hakbang:
 
@@ -79,7 +79,7 @@ Tinatawag ng orchestrator ang `execute_site_plan` gamit ang ID ng plano. Nagpapa
 - **Mga parallel na hakbang** — ang mga hakbang sa loob ng parehong yugto na walang magkakaugnay na dependency ay ipinapadala nang sabay-sabay kapag nakatakda ang flag na `parallel`.
 - **Timeout ng hakbang** — bawat hakbang ay may indibidwal na timeout (default: ang setting na `Ability Timeout`). Ang hakbang na nag-time out ay minamarkahan bilang `failed` at nagpapatuloy ang plano.
 
-### 4. Pagsubaybay sa Progreso
+### 4. Pagsubaybay sa Progreso {#4-progress-tracking}
 
 Tawagin ang `get_plan_progress` anumang oras upang suriin ang status ng pagpapatupad:
 
@@ -104,7 +104,7 @@ Maaaring subaybayan ng mga gumagamit ng WP-CLI ang progreso gamit ang:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Pagbawi mula sa Error
+### 5. Pagbawi mula sa Error {#5-error-recovery}
 
 Kapag nabigo ang isang hakbang, sinusuri ng orchestrator kung may **fallback** na hakbang na tinukoy sa plano:
 
@@ -115,9 +115,9 @@ Iniuulat ng agent ang lahat ng kabiguan sa huling buod ng plano at maaaring magm
 
 ---
 
-## Mga Kakayahan ng Plano ng Site
+## Mga Kakayahan ng Plano ng Site {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Bumubuo ng nakabalangkas na plano ng site mula sa paglalarawan ng layunin sa natural na wika.
 
@@ -134,7 +134,7 @@ Bumubuo ng nakabalangkas na plano ng site mula sa paglalarawan ng layunin sa nat
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Nagsisimulang magsagawa ng dati nang nabuong plano ng site.
 
@@ -150,7 +150,7 @@ Nagsisimulang magsagawa ng dati nang nabuong plano ng site.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Ibinabalik ang kasalukuyang status ng pagsasagawa ng isang site plan.
 
@@ -164,7 +164,7 @@ Ibinabalik ang kasalukuyang status ng pagsasagawa ng isang site plan.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Manu-manong nireresolba ang isang nabigong hakbang at ipinagpapatuloy ang pagsasagawa ng plan mula sa susunod na hakbang. Gamitin ito kapag hindi posible ang awtomatikong pagbawi at nais mong makialam.
 
@@ -180,7 +180,7 @@ Manu-manong nireresolba ang isang nabigong hakbang at ipinagpapatuloy ang pagsas
 
 ---
 
-## Paghahambing ng v1 at v2
+## Paghahambing ng v1 at v2 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Manu-manong nireresolba ang isang nabigong hakbang at ipinagpapatuloy ang pagsas
 
 ---
 
-## Mga Command ng WP-CLI Plan
+## Mga Command ng WP-CLI Plan {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Bumubuo ng site plan mula sa paglalarawan ng layunin.
 
@@ -205,7 +205,7 @@ Bumubuo ng site plan mula sa paglalarawan ng layunin.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Isinasagawa ang dating nabuong plan.
 
@@ -213,7 +213,7 @@ Isinasagawa ang dating nabuong plan.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Ipinapakita ang kasalukuyang progreso para sa isang isinasagawa o nakumpletong plan.
 
@@ -221,7 +221,7 @@ Ipinapakita ang kasalukuyang progreso para sa isang isinasagawa o nakumpletong p
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Inililista ang lahat ng site plan (nakabinbin, kasalukuyang isinasagawa, at nakumpleto).
 
@@ -229,7 +229,7 @@ Inililista ang lahat ng site plan (nakabinbin, kasalukuyang isinasagawa, at naku
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Nire-reset ang nabigong plan sa `pending` upang maaari itong muling isagawa mula sa simula.
 

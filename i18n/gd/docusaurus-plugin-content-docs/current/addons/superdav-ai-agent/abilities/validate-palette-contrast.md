@@ -3,15 +3,15 @@ title: Dearbhaich Iomsgaradh na Paileid
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Dearbhaich Iomsgaradh na Palette
+# Dearbhaich Iomsgaradh na Palette {#validate-palette-contrast}
 
 Bidh comas **Validate Palette Contrast** a’ sgrùdadh paidhrichean dhathan sa phalette dealbhaidh agad airson gèilleadh ri WCAG (Stiùiridhean Ruigsinneachd Susbaint Lìn) mus cuir thu an sàs iad san theme agad.
 
-## Sealladh Coitcheann
+## Sealladh Coitcheann {#overview}
 
 Nì an comas seo cinnteach gu bheil sgeama dhathan na làraich agad a’ coinneachadh ri inbhean ruigsinneachd le bhith a’ dearbhadh co-mheasan iomsgaraidh eadar teacsa agus dathan cùl-raoin. Cuidichidh e gus measgachaidhean dhathan a sheachnadh a dh’fhaodadh a bhith doirbh do luchd-cleachdaidh le duilgheadasan lèirsinn a leughadh.
 
-## Fòrmat Ion-chuir
+## Fòrmat Ion-chuir {#input-format}
 
 Gabhaidh an comas ri palette dhathan mar ion-chur:
 
@@ -35,7 +35,7 @@ Gabhaidh an comas ri palette dhathan mar ion-chur:
 }
 ```
 
-### Paramadairean
+### Paramadairean {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Gabhaidh an comas ri palette dhathan mar ion-chur:
 | `wcag_level` | string | Chan eil | Ìre gèillidh WCAG: "A", "AA" (bunaiteach), no "AAA" |
 | `pairs_to_check` | array | Chan eil | Paidhrichean dath sònraichte ri dhearbhadh (m.e., `["primary-text", "background-text"]`) |
 
-## Ìrean WCAG a Thèid a Sgrùdadh
+## Ìrean WCAG a Thèid a Sgrùdadh {#wcag-levels-checked}
 
 Dearbhaidh an comas co-mheasan iomsgaraidh a rèir inbhean WCAG:
 
@@ -56,7 +56,7 @@ Dearbhaidh an comas co-mheasan iomsgaraidh a rèir inbhean WCAG:
 - **Teacsa Àbhaisteach** — teacsa nas lugha na 18pt (no 14pt trom)
 - **Teacsa Mòr** — teacsa 18pt no nas motha (no 14pt trom no nas motha)
 
-## Sgeama Toraidh
+## Sgeama Toraidh {#output-schema}
 
 Tillidh an comas aithisg dearbhaidh mhionaideach:
 
@@ -95,7 +95,7 @@ Tillidh an comas aithisg dearbhaidh mhionaideach:
 }
 ```
 
-### Raointean Toraidh
+### Raointean Toraidh {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Tillidh an comas aithisg dearbhaidh mhionaideach:
 | `status` | string | "pass" no "fail" airson gach paidhir |
 | `recommendations` | array | Molaidhean airson paidhrichean a dh’fhàillig a leasachadh |
 
-## Eisimpleir Cleachdaidh
+## Eisimpleir Cleachdaidh {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Dearbhaidh an comas a h-uile measgachadh dath agus tillidh e:
 - ✅ Cùl-raon + Teacsa: co-mheas 12.1:1 (a’ dol seachad air WCAG AAA)
 - Uile gu lèir: A’ gèilleadh ri WCAG AA
 
-## Amalachadh le Theme Builder
+## Amalachadh le Theme Builder {#integration-with-theme-builder}
 
 Nuair a bhios tu a’ cleachdadh taghadh stiùireadh-dealbhaidh Theme Builder, nì comas Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Nuair a bhios tu a’ cleachdadh taghadh stiùireadh-dealbhaidh Theme Builder, n
 4. Molaidhean a thoirt seachad airson paidhrichean nach eil a’ gèilleadh
 5. Casg a chur air sgeamaichean dhathan neo-ruigsinneach a chur an sàs
 
-## Cleachdaidhean As Fheàrr
+## Cleachdaidhean As Fheàrr {#best-practices}
 
 - **Tòisich le ìre AA** — ’s e WCAG AA an inbhe airson a’ mhòr-chuid de làraichean-lìn
 - **Dèan deuchainn mus cuir thu an sàs** — dearbhaich am palette agad mus geall thu ri dealbhadh
@@ -137,7 +137,7 @@ Nuair a bhios tu a’ cleachdadh taghadh stiùireadh-dealbhaidh Theme Builder, n
 - **Beachdaich air roghainnean luchd-cleachdaidh** — faodaidh mothalachd dhathan a bharrachd a bhith aig cuid de luchd-cleachdaidh
 - **Cleachd sgrùdairean iomsgaraidh** — cuir an comas seo còmhla ri innealan brabhsair airson dearbhadh
 
-## Paidhrichean a Dh’fhàillig agus Molaidhean
+## Paidhrichean a Dh’fhàillig agus Molaidhean {#failing-pairs-and-recommendations}
 
 Ma dh’fhàilligeas paidhir dhathan air dearbhadh, bheir an comas molaidhean seachad:
 
@@ -155,7 +155,7 @@ Ma dh’fhàilligeas paidhir dhathan air dearbhadh, bheir an comas molaidhean se
 }
 ```
 
-## Comasan Co-cheangailte
+## Comasan Co-cheangailte {#related-abilities}
 
 - [Cruthaich Logo SVG](./generate-logo-svg.md) — cruthaich suaicheantasan leis a’ phalette dhathan dhearbhaichte agad
 - [Cruthaich Clàr-taice](./create-menu.md) — tog seòladh le dathan ruigsinneach

@@ -3,7 +3,7 @@ title: Busca y reemplaza automático en plantillas de sitio
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2)
+# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Hoc tutorial requirit WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Tu cliente podrá entonces rellenar ese campo durante el registro.
 
 Ultimate Multisite reemplazará luego los marcadores de posición con los datos proporcionados por el cliente automáticamente.
 
-## **Resolviendo el problema del "plantilla llena de marcadores de posición"**
+## **Resolviendo el problema del "plantilla llena de marcadores de posición"** {#solving-the-template-full-of-placeholders-problem}
 
 Todo eso es genial, pero nos encontramos con un problema feo: ahora nuestras plantillas de sitio - que pueden ser visitadas por nuestros clientes - están llenas de marcadores de posición feos que no dicen mucho.
 

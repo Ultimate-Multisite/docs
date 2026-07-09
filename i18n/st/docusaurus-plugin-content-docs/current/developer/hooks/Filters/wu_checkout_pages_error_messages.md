@@ -4,22 +4,22 @@ title: Sefe - wu_checkout_pages_error_messages
 sidebar_label: wu_checkout_pages_error_messages
 _i18n_hash: 513f1f012abbaedc950e0d12f4fc01f4
 ---
-# Filter: wu_checkout_pages_error_messages
+# Filter: wu_checkout_pages_error_messages {#filter-wucheckoutpageserrormessages}
 
 Sefa melaetsa ea liphoso.
 
-## Dipharamethara
+## Dipharamethara {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
 | $messages | `array` | Melaetsa ea liphoso. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.1.1
-### Mohloli
+### Mohloli {#source}
 
 E hlalositsoe ho [`inc/checkout/class-checkout-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout-pages.php#L218) moleng oa 218
 
 
-## E khutlisa
+## E khutlisa {#returns}

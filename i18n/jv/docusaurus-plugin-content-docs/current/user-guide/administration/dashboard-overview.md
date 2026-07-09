@@ -3,11 +3,11 @@ title: Pamoran Dasbor
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Tinjauan Dashboard
+# Tinjauan Dashboard {#dashboard-overview}
 
 Ultimate Multisite duwe **Dashboard** khusus di bawah menu Ultimate Multisite, sekaligus menambahkan widget ke Network Dashboard. Artikel iki bakal njelasake apa sing bakal sampeyan deleng ing kedua panggonan kuwi.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite ngetokake widget-widget sing migunake ing dashboard level jaringan sing ditemokake ing **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Iki isine saben widget:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Dashboard Ultimate Multisite
+## Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Sanajan network dashboard nuduh informasi utuh babagan jaringan, dashboard Ultimate Multisite (ing tingkat paling dhuwur menu Ultimate Multisite) nuduh informasi babagan layanan kasebut.
 

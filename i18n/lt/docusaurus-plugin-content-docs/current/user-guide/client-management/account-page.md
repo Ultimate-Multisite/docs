@@ -3,7 +3,7 @@ title: Klientų paskyros puslapis
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Jūsų Klientų Skaitmeninė Skelbimų Suna (v2)
+# Jūsų Klientų Skaitmeninė Skelbimų Suna (v2) {#your-clients-account-page-v2}
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 
@@ -11,7 +11,7 @@ Kai klientai užsiprenima planą jūsų tinklu, jie gauta prieiga svetainei ir j
 
 Šiame tutoriale mes jums pateiksimos klientų skaitmeninės skelbimų puslapio peržiūrą ir pamatysite, ką jūsų klientai gali matyti ir daryti visoje sistemoje.
 
-## Skaitmeninė Skelbimų Suna (Account Page)
+## Skaitmeninė Skelbimų Suna (Account Page) {#the-account-page}
 
 Skaitmeninė skelbimų suna pasiekiama, spustelėję **Account** (Suna) jūsų klientų dashboard'e.
 
@@ -27,7 +27,7 @@ Po to, kai klientas spustelės šį elementą, jis pamatys peržiūrą savo nusk
 
 Ji gali taip pat pakeisti nuskaitą į kitą planą arba pirkti kitą paketą ar paslaugą, kurią jūs siū predominai. Pateikime kiekvieną dalį atskirai.
 
-### Jūsų Abonentų Vaizdoapidbaida:
+### Jūsų Abonentų Vaizdoapidbaida: {#your-membership-overview}
 
 Jūsų klientų svetainės pavadinimo tik pojei matomas vaizdoapidbaida jų dabartinio planui ir pasiektos/pirto paketų. Ši blokas taip pat rodo abonentų numerį, pradines mokėtas sumą, kiek kainuoja planas ir bet kokis pasiektas/pirkta paketai, o kiek kartų buvo paskelbti už šį abonementą. Jūs galite pamatyti, ar abonementas yra **Aktyvus**, **Apsipirkęs** (Expired) ar **Atšalintas**.
 
@@ -43,7 +43,7 @@ Dabar, jei jūsų klientai pasirinksite pirkti paketus ar paslaugas šiam dabart
 
 Pagalba, kad įvestumą kodus negalite pridėti į šį abonemento pakeitimo puslapį. Jei klientas naudojo kupono kodą pirmo abonemento pirkimo metu, jis taip pat tinka šiam naujam abonementui.
 
-### Mokytojo adresų atnaujinimas:
+### Mokytojo adresų atnaujinimas: {#updating-the-billing-address}
 
 Na kontakte puslapyje jūsų klientai gali atnaujinti savo paskirties adresą. Jums viskas reikalinga – paspausti ant **Update** (Atnaujinti) šalia _Billing Address_ (Sąskaitos adresas).
 
@@ -53,7 +53,7 @@ Jūsų klientui atidaryms naujas langas. Visai, kas reikalinga – įrašyti nau
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Svetmėto modelio keitimas:
+### Svetmėto modelio keitimas: {#changing-the-site-template}
 
 Norint leisti jūsų klientams keisti svetimo modelius, turite eiti į **Ultimate Multisite > Settings (Nustatymai) > Sites** ir įjungti pasirinkimą **Allow Template Switching** (Leisti modelio keitimo).
 
@@ -81,7 +81,7 @@ Pas paleistavimą patvirtinimo ir paspaudimą **Process Switch**, naujas skirtas
 
 Klientai taip pat gali naudoti funkciją **Reset current template** iš šio panelio, jei turėtų atnaujinti svetainę į dabartinį nurodytą šabloną. Taip kaip ir paspaudimas kitto šablonas, atnaujinimas gali perrašyti svetainės turinį, todėl klientai turėtų patvirtinti tik tada, kai suprantys atnaujinimo veiksmus.
 
-### Personalizuojamų domenų pridėjimas:
+### Personalizuojamų domenų pridėjimas: {#adding-custom-domains}
 
 Jūsų klientams bus suteikta galimybė pridėti personalizuotą domeną šiam planui savo paskyrimo puslapyje. Kad jūsų klientai galėtų naudoti personalizuotus domenus, eikite į **Ultimate Multisite > Settings > Domain Mapping**.
 
@@ -115,7 +115,7 @@ Passpaudus **Kiti žingsnis** (Next Step), jūsų klientai galės pridėti savo 
 
 Passpaudus **Pridėti domeną** (Add Domain), domenas bus pridėtas jūsų klientų skelbimui. Visai, kas reikalinga daryti dabar, yra pakeisti šio pritaikyto domeno DNS įrašus savo domenų registratorioje (domain registrar).
 
-### Pavarodyti slaptažodį:
+### Pavarodyti slaptažodį: {#changing-password}
 
 Arštrymo paneliu jūsų klientai taip pat gali pakeisti savo slaptažodį paspaudus **Pakeisti slaptažodį** (Change Password).
 
@@ -125,7 +125,7 @@ Pokažys naują okenklinę, kurioje jūsų klientai turės įvesti savo dotą sl
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Pavojingas zona:
+### Pavojingas zona: {#danger-zone}
 
 Meistame dujį pasirinkimą, kuris yra pateiktas **Pavojingo josono** dalyje: **Ištrinti svetainę** ir **Ištrinti paskyrą**. Jame yra tiek šios dvi veiklos, nes jos yra pavojingos zona, o šie veiksmai negali būti atvirkščiai geri. Jei jūsų klientai ištrins savo svetainę arba paskyrą, jie nebus gali ją atgauti.
 

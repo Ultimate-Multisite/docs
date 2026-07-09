@@ -4,11 +4,11 @@ title: کردار - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# کردار: set_auth_cookie
+# کردار: set_auth_cookie {#action-setauthcookie}
 
 دەستپێدەکات یەکسەر پێش ئەوەی authentication cookie دابنرێت.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | شێوازی authentication. نرخەکان 'auth' یان 'secure_auth' لەخۆدەگرن. |
 | $token | `string` | session token ـی بەکارهێنەر بۆ بەکارهێنان بۆ ئەم cookie ـە. |
 
-### لەوەوە
+### لەوەوە {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) لە هێڵی 124

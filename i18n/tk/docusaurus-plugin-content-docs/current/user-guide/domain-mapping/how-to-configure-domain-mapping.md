@@ -3,17 +3,17 @@ title: Domain Mapping-i nädip sazlamaly
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domen kartalaşdyrmany nädip sazlamaly (v2)
+# Domen kartalaşdyrmany nädip sazlamaly (v2) {#how-to-configure-domain-mapping-v2}
 
 _**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 
 Premium toruň iň güýçli aýratynlyklarynyň biri müşderilerimize öz saýtlaryna ýokary derejeli domen birikdirmek mümkinçiligini hödürlemekdir. Ahyrsoňunda, haýsysy has professional görünýär: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ýa-da [_**joesbikeshop.com**_](http://joesbikeshop.com)? Şol sebäpli Ultimate Multisite bu aýratynlygy üçünji tarap plugin-leri ulanmagyň zerurlygy bolmazdan, öz içine goşulan görnüşde hödürleýär.
 
-## Domen kartalaşdyrma näme?
+## Domen kartalaşdyrma näme? {#whats-domain-mapping}
 
 Adyndan belli bolşy ýaly, domen kartalaşdyrma Ultimate Multisite tarapyndan hödürlenýän, ýörite domen üçin soragy kabul edip, şol soragy şol aýratyn domen birikdirilen tordaky degişli saýta kartalaşdyrmak mümkinçiligidir.
 
-### Ultimate Multisite toruňyzda domen kartalaşdyrmany nädip sazlamaly
+### Ultimate Multisite toruňyzda domen kartalaşdyrmany nädip sazlamaly {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domen kartalaşdyrmanyň işlemegi üçin siziň tarapyňyzdan käbir sazlamalar gerek. Bagtymyza, Ultimate Multisite agyr işi siziň üçin awtomatlaşdyrýar, şonuň üçin talaplary aňsatlyk bilen ýerine ýetirip bilersiňiz.
 
@@ -45,7 +45,7 @@ Emma ýörite domeni toruňyzdaky subsaitleriň birine kartalaşdyrmaga başlama
 
 ###
 
-### Domeniň DNS sazlamalarynyň dogry sazlanandygyna göz ýetirmek
+### Domeniň DNS sazlamalarynyň dogry sazlanandygyna göz ýetirmek {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Kartalaşdyrmanyň işlemegi üçin, kartalaşdyrmagy meýilleşdirýän domeniňiziň toruňyzyň IP salgysyna gönükdirilendigine göz ýetirmeli. Size tor IP salgysynyň gerekdigine üns beriň — Ultimate Multisite gurnalan domeniň IP salgysy — kartalaşdyrmak isleýän ýörite domeniňiziň IP salgysy däl. Belli bir domeniň IP salgysyny gözlemek üçin, mysal üçin, [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) sahypasyna geçmegi maslahat berýäris.
 
@@ -55,7 +55,7 @@ Muny işledip bilmeýän kynçylyk bilen ýüzbe-ýüz bolsaňyz, **domen regist
 
 Müşderileriňize öz domenlerini kartalaşdyrmaga rugsat bermegi meýilleşdirýän bolsaňyz, olar bu bölekdäki işi özleri etmeli bolarlar. A Record döredip bilmeýän ýagdaýlarynda olary registratorlarynyň goldaw ulgamyna ugrukdyryň.
 
-### Ýörite domen adyny Super Admin hökmünde kartalaşdyrmak
+### Ýörite domen adyny Super Admin hökmünde kartalaşdyrmak {#mapping-custom-domain-name-as-super-admin}
 
 Toruňyzda super admin hökmünde giren wagtyňyz, **Ultimate Multisite > Domenler** astyna geçip, ýörite domen atlaryny aňsatlyk bilen goşup we dolandyryp bilersiňiz.
 
@@ -93,7 +93,7 @@ Domen adyna bassaňyz, onuň içinde käbir opsiýalary görüp bilersiňiz. Ola
 
 **Is Secure?:** Ultimate Multisite domeni işjeňleşdirmezden öň onuň SSL şahadatnamasynyň bardygyny ýa-da ýokdugyny barlasa-da, domeni SSL şahadatnamasy bilen ýa-da onsuz ýüklemegi el bilen saýlap bilersiňiz. Üns beriň: eger websaýtda SSL şahadatnamasy ýok bolsa we ony SSL bilen mejbury ýüklemäge synanyşsaňyz, size ýalňyşlyklar berip biler.
 
-### Custom domen adyny Subsite ulanyjysy hökmünde map etmek
+### Custom domen adyny Subsite ulanyjysy hökmünde map etmek {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite administratorlary hem öz subsite admin dashboard-yndan custom domen atlaryny map edip bilerler.
 
@@ -121,7 +121,7 @@ Soňra ulanyjy **Next Step** düwmesine basyp, custom domen adyny goşmagy dowam
 
 **Add Domain** düwmesine basmak custom domeniň DNS maglumatlaryny barlamak we almak prosesini başlatar.
 
-### Domain Syncing hakynda
+### Domain Syncing hakynda {#about-domain-syncing}
 
 Domain Syncing — Ultimate Multisite-iň custom domen adyny hosting hasabyňyza add-on domen hökmünde goşýan prosesidir, **domen mapping işlemegi üçin**.
 

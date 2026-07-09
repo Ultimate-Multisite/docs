@@ -3,11 +3,11 @@ title: Rangitaki huringa
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Rangitaki Huringa
+# Rangitaki Huringa {#changelog}
 
-## 1.9.0 — I tukuna i te 2026-04-28
+## 1.9.0 — I tukuna i te 2026-04-28 {#190--released-on-2026-04-28}
 
-### Hou
+### Hou {#new}
 
 - **āheitanga `create_contact_form`** — ka waihanga i tētahi puka whakapā mā te plugin puka hohe (Contact Form 7, WPForms, Fluent Forms, Gravity Forms rānei), ā, ka whakahoki i tētahi shortcode kua rite mō te tāuru ki tētahi whakairinga, whārangi rānei.
 - **āheitanga `set_featured_image`** — ka tautapa i tētahi whakaahua matua ki tētahi whakairinga, whārangi rānei mai i tētahi ID āpitihanga Whare Pāpāho e tīariari ana, mai i tētahi URL mamao rānei; ka kawemai aunoa i te whakaahua ina tukuna mai he URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Whakaora i te wātū whakamutunga** — ka uta anō aunoa te paewhiri kōrerorero i te whakawhitinga kōrero o nā tata tonu nei i te utanga whārangi me te whakatuwheratanga o te widget, nō reira e kore rawa te horopaki e ngaro i ngā whakatere whārangi.
 - **Ngā hononga mahi plugin** — kua puta ināianei ngā hononga tere ki ngā Tautuhinga me te Rēhita Āheitanga ki te mata **Ngā Plugin → Ngā Plugin Kua Tāutahia** o WordPress i raro i te whakaahuatanga plugin.
 
-### Kua whakapai ake
+### Kua whakapai ake {#improved}
 
 - **Ngana anō ki te pūtake whakaahua** — ka ngana anō te āpiha ināianei ki ngā pūtake whakaahua koreutu katoa kua whirihorahia i mua i te hoki ki tētahi whakaahua i hangaia e te AI ina rahu te tikiake.
 - **Paewhiri mōhiohio tauira** — ka kitea tonutia i te pane kōrerorero; kāore e hunaia i muri i te karere tuatahi.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Hoahoa anō o te widget kōrerorero** — ka whakakapi te ata AI kotahi i te avatar ritenga o mua; he ōrite ki te pūnaha āpiha hanga-roto.
 - **Whakahononga URL** — ko ngā URL e puta ana i ngā karere pūnaha me ngā mirumiru karere hapa ka whakaaturia ināianei hei hononga pāwhiri.
 
-### Kua whakatika
+### Kua whakatika {#fixed}
 
 - **Kiteatanga āheitanga** — kua whakatikahia ngā whakaahuatanga, ngā tohutoro kupuaki pūnaha, me te whakahāngaitanga namespace kia puta pono ai ngā āheitanga katoa ki te rārangi taputapu a te āpiha.
 - **Keteroki kaiwhakarato** — kua keterokitia whānuitia ngā kaiwhakarato puta noa i te pae mā tētahi tatau putanga, e ārai ana i ngā raruraru kaiwhakarato-tawhito i ngā whatunga multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — I tukuna i te 2026-04-09
+## 1.4.0 — I tukuna i te 2026-04-09 {#140--released-on-2026-04-09}
 
-### Hou
+### Hou {#new-1}
 
 - **Tono paearu WP-CLI** (`wp gratis-ai-agent benchmark`) — ka whakahaere i te huinga paearu Agent Capabilities v1 mai i te rārangi tono mō ngā paipa CI me ngā rerenga mahi aromātai tauira. Ka tautoko i ngā whakahaere ā-pātai, ngā whakakapi kaiwhakarato/tauira, me te putanga JSON/CSV.
 - **Huinga paearu Agent Capabilities v1** — he huinga kua hanganga o ngā akiaki matatini, taahiraa-maha e whakamātautau ana i te mata āheinga katoa, me te pūrongo kaute, token me te roanga.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pātai paearu paetukutuku wharekai** (`q-restaurant-website`) — he whakamātautau pito-ki-te-pito e kapi ana i te rēhitatanga CPT, te pūnaha hoahoa, te whakatere, me te kimi monomai.
 - **Ngā monomai kaihono kaiwhakarato AI** kua tāpirihia ki ngā tauira WordPress Playground mō te tatū whanaketanga paetata tere ake.
 
-### Kua whakapai ake
+### Kua whakapai ake {#improved-1}
 
 - Kua whakahoutia te README me ngā tuhinga kaihono kaiwhakarato AI me ngā tohutohu tatūnga.
 
-### Kua whakatikaina
+### Kua whakatikaina {#fixed-1}
 
 - Kua whakatauria ngā rahunga whakamātautau PHPUnit 25 i te peka `main`.
 - Kua whakatikaina te hōputu URL tukunga GitHub i `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Kei te puritia ngā tuhipoka tukunga o mua ki te pūrepo monomai._

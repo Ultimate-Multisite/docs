@@ -4,11 +4,11 @@ title: 'Filter - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_{$type}_get_manage_url
+# Filter: wu_current_{$type}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 개발자가 관리 사이트 URL 매개변수를 수정할 수 있도록 허용합니다.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | 사이트 ID. |
 | $site_hash | `string` | 사이트 해시. |
 
-### Since
+### Since {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 `inc/class-current.php`의 214번째 줄에 정의됨
 
-## Returns
+## Returns {#returns}
 수정된 관리 URL.

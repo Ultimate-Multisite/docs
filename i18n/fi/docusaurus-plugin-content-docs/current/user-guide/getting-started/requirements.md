@@ -3,11 +3,11 @@ title: Vaatimukset
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite vaatimukset
+# Ultimate Multisite vaatimukset {#ultimate-multisite-requirements}
 
 Ensimmäinen asia, josta saatat miettiä ennen Ultimate Multisiten ostamista, on se, mitkä ovat vaatimukset meidän pluginimme ajamiseen. Onneksi, Ultimate Multisiten ajamiseen riittää vain muutamia perusvaatimuksia: **verkkotunnus**, hyvä **hostauspalveluntarjoaja** ja WordPressin **Multisite** -asennus. Näitä tarvitset!
 
-## Verkkotunnus
+## Verkkotunnus {#domain-name}
 
 Aloitetaan ensin verkkotunnuksesta.
 
@@ -17,7 +17,7 @@ Pluginimme tarjoaa tilauspalveluja, maksutietojen keräämisen, kassaprosessin l
 
 Minkä tahansa toimialan valinta voidaan hallita pluginimme avulla, kun myyt verkkosivuja palveluna! Varmista, että valitset verkkotunnuksen, joka sopii liiketoimintasuunnitelmaasi.
 
-## Hostauspalveluntarjoaja
+## Hostauspalveluntarjoaja {#hosting-provider}
 
 Kun sinulla on houkutteleva verkkotunnus, joka edustaa toimialaa ja yritystäsi, sinun täytyy valita hyvä verkkopalveluntarjoaja hostataksesi verkostosi Ultimate Multisiten avulla. Markkinoilla on jo muutamia hyviä vaihtoehtoja. Jotkut hostauspalveluntarjoajat integroituvat hyvin Ultimate Multisiten kanssa, mikä voi olla ratkaiseva tekijä riippuen siitä, mitä suunnittelet rakentamiasi.
 
@@ -25,7 +25,7 @@ Ultimate Multisite toimii millä tahansa isännöintipalvelun kanssa. Ainoa ero 
 
 Kun kyseessä on palvelimen tekniset tiedot (server specifications), ei ole yhtä tiettyä kaavaa, sillä se riippuu siitä, mitä ominaisuuksia ja toimintoja tarjoat sekä verkon koosta. Jaettu isännöinti voi olla hyvä alku, mutta kun verkko alkaa kasvaa, sinun on todennäköisesti tarjottava omistettu VPS (Virtual Private Server).
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nyt puhutaan hieman WordPress Multisite -asennuksesta.
 

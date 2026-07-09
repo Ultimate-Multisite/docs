@@ -3,11 +3,11 @@ title: WP-CLI Referentia
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Relatio
+# WP-CLI Relatio {#wp-cli-reference}
 
 Gratis AI Agent familiam mandatorum `wp gratis-ai-agent` praebet ad agentem aestimandum, facultates administrandas, et statum agentis ex linea mandatorum interrogandum. Omnia mandata WP-CLI 2.0 aut superiorem requirunt.
 
-## Installatio
+## Installatio {#installation}
 
 Mandata WP-CLI automatice registrantur cum plugin activum est. Comproba per:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Currit seriem probationum Facultatum Agentis — congeriem monitorum complexorum, plurium graduum, quae totam superficiem facultatum exercent. Hoc utere ad aestimandam efficaciam exemplaris, conferendos provisores AI, aut sarcinas facultatum comprobandas antequam in productionem explicentur.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Optiones
+### Optiones {#options}
 
 | Optio | Descriptio |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Forma output: `table` (praedefinita), `json`, `csv` |
 | `--save` | Serva eventus probationis in datorum basi ad comparationem historicam |
 
-### Exempla
+### Exempla {#examples}
 
 Curre plenam seriem probationum cum provisore et exemplari currentibus:
 
@@ -57,7 +57,7 @@ Curre contra certum exemplar et serva eventus:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 Probatio unam lineam pro unaquaque quaestione edit cum sequentibus columnis:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Quaestiones Probationis
+### Quaestiones Probationis {#benchmark-questions}
 
 Series praedefinita includit:
 
@@ -95,11 +95,11 @@ Quaestiones additae per filtrum `gratis_ai_agent_benchmark_questions` registrari
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Administrat facultates institutas et sarcinas facultatum.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Enumerat omnes facultates registratas, earum fontem (nucleum aut sarcinam), et statum currentem.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Deponit et activat sarcinam facultatum ex registro.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Inactivat certam facultatem sine sarcina removenda. Utile est ad ambitum agentis in dato situ restringendum.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Iterum activat facultatem antea inactivatam.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Ostendit configurationem agentis currentem et statum connexionis.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Ostendit recentem agentis actionem ex registro debug.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Statum agentis reponit: CSS insertum purgat, CPTs et taxonomias ab agente registratas removet, stilos globales reponit, et cache optionum agentis evacuat. Additamentum aut eius occasus non removet.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Codices Exitūs
+## Codices Exitūs {#exit-codes}
 
 Omnia mandata cum successu exeunt `0`. Codices exitūs non-nulli:
 

@@ -4,11 +4,11 @@ title: Süzgüç - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Süzgüç: wu_admin_notices
+# Süzgüç: wu_admin_notices {#filter-wuadminnotices}
 
 Döredijilere Ultimate Multisite tarapyndan goşulan dolandyryş habarnamalaryny süzgüçden geçirmäge rugsat berýär.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Ady | Görnüşi | Beýany |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Döredijilere Ultimate Multisite tarapyndan goşulan dolandyryş habarnamalaryny
 | $filter | `string` | Eger ýapyp bolýan habarnamalar süzgüçden geçirilen bolsa. |
 | $dismissed_messages | `array` | Ýapylan habarnama açarlarynyň sanawy. |
 
-### Wersiýadan bäri
+### Wersiýadan bäri {#since}
 
 - 2.0.0
-### Çeşme
+### Çeşme {#source}
 
 [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) içinde 121-nji setirde kesgitlenen
 
 
-## Gaýtarýar
+## Gaýtarýar {#returns}

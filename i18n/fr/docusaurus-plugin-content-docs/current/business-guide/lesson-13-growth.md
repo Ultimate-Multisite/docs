@@ -3,19 +3,19 @@ title: 'Leçon 13 : Mise à l''échelle'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Leçon 13 : Mise à l'échelle
+# Leçon 13 : Mise à l'échelle {#lesson-13-scaling-up}
 
 Vous disposez d'une plateforme fonctionnelle avec des clients payants. Cette leçon explique comment passer d'une petite opération à une entreprise pérenne : mise à l'échelle de l'infrastructure, automatisation des opérations et augmentation du revenu par client.
 
-## Où nous nous étions arrêtés
+## Où nous nous étions arrêtés {#where-we-left-off}
 
 FitSite est en ligne, les clients s'inscrivent et vous gérez les opérations quotidiennes. Maintenant, nous nous concentrons sur la croissance.
 
-## Connaître ses chiffres
+## Connaître ses chiffres {#know-your-numbers}
 
 Avant de passer à l'échelle supérieure, comprenez où vous en êtes :
 
-### Métriques clés
+### Métriques clés {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)** : Revenu mensuel récurrent total
 - **Nombre de clients** : Total des abonnés actifs
@@ -24,7 +24,7 @@ Avant de passer à l'échelle supérieure, comprenez où vous en êtes :
 - **LTV (Lifetime Value)** : Revenu moyen par client sur toute la durée de son abonnement
 - **CAC (Customer Acquisition Cost)** : Coût moyen pour acquérir un client
 
-### Exemple : FitSite avec 50 clients
+### Exemple : FitSite avec 50 clients {#example-fitsite-at-50-customers}
 
 | Métrique | Valeur |
 |--------|-------|
@@ -36,9 +36,9 @@ Avant de passer à l'échelle supérieure, comprenez où vous en êtes :
 
 Ces chiffres vous indiquent sur quoi vous devez vous concentrer. Un taux de désabonnement élevé ? Améliorez la rétention. Un faible ARPU ? Encouragez les mises à niveau. Un CAC élevé ? Optimisez les canaux d'acquisition.
 
-## Mise à l'échelle de l'infrastructure
+## Mise à l'échelle de l'infrastructure {#scaling-infrastructure}
 
-### Quand mettre à l'échelle
+### Quand mettre à l'échelle {#when-to-scale}
 
 Mettez à l'échelle votre hébergement lorsque :
 
@@ -47,7 +47,7 @@ Mettez à l'échelle votre hébergement lorsque :
 - Vous approchez de 100 sites actifs ou plus
 - Les plaintes des clients concernant la vitesse augmentent
 
-### Comment mettre à l'échelle
+### Comment mettre à l'échelle {#how-to-scale}
 
 - **Mise à l'échelle verticale (Vertical scaling)** : Passez à un serveur plus puissant (plus de CPU, de RAM)
 - **Couches de mise en cache (Caching layers)** : Ajoutez Redis/Memcached pour le cache d'objets, et le cache de pages pour le contenu statique
@@ -55,7 +55,7 @@ Mettez à l'échelle votre hébergement lorsque :
 - **Optimisation de la base de données** : À mesure que le réseau grandit, les requêtes de base de données ralentissent. Optimisez les tables, ajoutez des index, et envisagez un serveur de base de données dédié.
 - **Séparation des préoccupations (Separate concerns)** : Déplacez le stockage des médias vers un stockage d'objets (compatible S3), et déchargez les e-mails vers un service d'e-mail transactionnel.
 
-### Migration d'hébergement
+### Migration d'hébergement {#hosting-migration}
 
 Si votre hébergeur actuel ne peut plus évoluer, prévoyez une migration :
 
@@ -65,11 +65,11 @@ Si votre hébergeur actuel ne peut plus évoluer, prévoyez une migration :
 4. Mettez à jour le DNS avec un TTL minimal au préalable
 5. Vérifiez que tout fonctionne après la migration
 
-## Automatisation des opérations
+## Automatisation des opérations {#automating-operations}
 
 À mesure que vous grandissez, les processus manuels deviennent des goulots d'étranglement. Automatisez ce que vous pouvez :
 
-### Webhooks et Zapier
+### Webhooks et Zapier {#webhooks-and-zapier}
 
 Utilisez [Webhooks](/user-guide/integrations/webhooks) ou [Zapier](/user-guide/integrations/zapier) pour automatiser :
 
@@ -78,7 +78,7 @@ Utilisez [Webhooks](/user-guide/integrations/webhooks) ou [Zapier](/user-guide/i
 - **Échecs de paiement** → Alerte dans votre outil de surveillance
 - **Mises à niveau de plan** → E-mail de félicitations avec un guide des nouvelles fonctionnalités
 
-### Automatisation des e-mails
+### Automatisation des e-mails {#email-automation}
 
 Passez des e-mails manuels à des séquences automatisées :
 
@@ -87,30 +87,30 @@ Passez des e-mails manuels à des séquences automatisées :
 - Rappels de mise à niveau lorsque les clients approchent des limites de leur plan
 - Rappels de renouvellement pour les abonnés annuels
 
-### Automatisation du support
+### Automatisation du support {#support-automation}
 
 - **Réponses types (Canned responses)** pour les questions courantes
 - **Réponses automatiques** accusant réception des tickets de support
 - **Suggestions de base de connaissances** lorsque les clients soumettent des tickets correspondant à des articles existants
 
-## Augmenter les revenus
+## Augmenter les revenus {#increasing-revenue}
 
 La croissance ne concerne pas seulement l'acquisition de nouveaux clients. Il s'agit aussi d'augmenter le revenu par client.
 
-### Vente additionnelle aux clients existants (Upselling)
+### Vente additionnelle aux clients existants (Upselling) {#upselling-existing-customers}
 
 - **Mises à niveau de plan** : Campagnes ciblées montrant les fonctionnalités Growth/Pro aux clients Starter
 - **Suppléments de commande (Order bumps)** : Promouvoir des produits complémentaires auprès des clients existants par e-mail
 - **Conversion annuelle** : Offrir aux clients mensuels une réduction pour passer à une facturation annuelle
 
-### Nouveaux flux de revenus
+### Nouveaux flux de revenus {#new-revenue-streams}
 
 - **Mise en place clé en main (Done-for-you setup)** : Facturer une prime pour configurer et personnaliser le site d'un client
 - **Services de design personnalisés** : Offrir un travail de design sur mesure en complément du modèle
 - **Sessions de formation** : Ateliers payants en personne pour les clients qui souhaitent une aide pratique
 - **Plugins premium** : Proposer des plugins premium spécifiques à une niche en tant que modules payants (par exemple, un widget de réservation de cours de fitness)
 
-### Augmenter les prix
+### Augmenter les prix {#raising-prices}
 
 À mesure que votre plateforme mûrit et ajoute de la valeur :
 
@@ -118,7 +118,7 @@ La croissance ne concerne pas seulement l'acquisition de nouveaux clients. Il s'
 - Augmenter les prix pour les nouvelles inscriptions
 - Justifier les augmentations avec de nouvelles fonctionnalités et améliorations
 
-## Constitution d'une équipe
+## Constitution d'une équipe {#building-a-team}
 
 À un moment donné, vous ne pouvez pas tout faire seul. Les premiers recrutements courants :
 
@@ -128,7 +128,7 @@ La croissance ne concerne pas seulement l'acquisition de nouveaux clients. Il s'
 
 Vous n'avez pas besoin d'employés. Les contractuels et les freelances fonctionnent très bien pour une plateforme en ligne.
 
-## Jalons de croissance
+## Jalons de croissance {#growth-milestones}
 
 | Jalon | MRR approximatif | Focus |
 |-----------|--------------|-------|
@@ -138,7 +138,7 @@ Vous n'avez pas besoin d'employés. Les contractuels et les freelances fonctionn
 | 250-500 clients | 25 000 $ - 50 000 $ | Constitution d'équipe, nouveaux flux de revenus, fonctionnalités premium |
 | 500+ clients | 50 000 $+ | Maturité de la plateforme, niches adjacentes, potentiel de sortie |
 
-## Ce que nous avons construit dans cette leçon
+## Ce que nous avons construit dans cette leçon {#what-we-built-this-lesson}
 
 - **Un cadre de métriques** pour comprendre la santé de l'entreprise
 - **Un plan de mise à l'échelle de l'infrastructure** pour passer de quelques dizaines à des centaines de sites

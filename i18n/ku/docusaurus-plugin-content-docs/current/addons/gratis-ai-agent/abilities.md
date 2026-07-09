@@ -3,7 +3,7 @@ title: Referansa Şiyanan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referansa Şiyanan
+# Referansa Şiyanan {#abilities-reference}
 
 Şiyan çalakiyên atomîk in ku Gratis AI Agent dikare li ser sazkirina te ya WordPress bixebitîne. Her şiyan klaseke PHP ya qeydkirî ye ku şemayek JSON derdixe — ajant vê şemayê di dema xebitandinê de dixwîne da ku bizane kîjan parametre pêwîst in û şiyan çi vedigerîne.
 
@@ -11,11 +11,11 @@ Ev rûpel hemû şiyanên ku bi Gratis AI Agent v1.9.0 re tên şandin belge dik
 
 ---
 
-## Cureyên Nivîsên Taybet
+## Cureyên Nivîsên Taybet {#custom-post-types}
 
 Ev şiyan cureyên nivîsên taybet (CPT) yên bi rêya ajant hatine qeydkirin birêve dibin. Qeydkirin di tabloya vebijarkên WordPress de tên tomarkirin, ji ber vê yekê piştî neçalakirina plugin û çalakakirina wê jî dimînin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Cureyek nû ya nivîsa taybet qeyd dike.
 
@@ -50,7 +50,7 @@ Cureyek nû ya nivîsa taybet qeyd dike.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Hemû cureyên nivîsên taybet ên ku ji aliyê ajant ve hatine qeydkirin vedigerîne.
 
@@ -73,7 +73,7 @@ Hemû cureyên nivîsên taybet ên ku ji aliyê ajant ve hatine qeydkirin vedig
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Cureyek nivîsa taybet a berê ji aliyê ajant ve hatî qeydkirin ji qeydê derdixe. Nivîsên heyî yên wê cureyê di database de dimînin, lê êdî bi rêya cureya nivîsê nayên gihîştin.
 
@@ -87,11 +87,11 @@ Cureyek nivîsa taybet a berê ji aliyê ajant ve hatî qeydkirin ji qeydê derd
 
 ---
 
-## Taksonomiyên Taybet
+## Taksonomiyên Taybet {#custom-taxonomies}
 
 Ev şiyan taksonomiyên taybet birêve dibin. Wek CPT, qeydkirinên taksonomiyê jî tên tomarkirin.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Taksonomiyeke taybet a nû qeyd dike.
 
@@ -123,7 +123,7 @@ Taksonomiyeke taybet a nû qeyd dike.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Hemû taksonomiyên taybet ên ku ji aliyê ajant ve hatine qeydkirin vedigerîne.
 
@@ -146,7 +146,7 @@ Hemû taksonomiyên taybet ên ku ji aliyê ajant ve hatine qeydkirin vedigerîn
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Taksonomiyeke taybet a berê ji aliyê ajant ve hatî qeydkirin ji qeydê derdixe.
 
@@ -160,11 +160,11 @@ Taksonomiyeke taybet a berê ji aliyê ajant ve hatî qeydkirin ji qeydê derdix
 
 ---
 
-## Pergala Dîzaynê
+## Pergala Dîzaynê {#design-system}
 
 Şiyanên pergala dîzaynê pêşkêşiya dîtbarî ya malpera WordPress diguherînin — ji CSS ya taybet heta şêweyên blokan û logoya malperê.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 CSS bi rêya `wp_add_inline_style` li `<head>` ya malperê zêde dike. CSS di vebijarka `gratis_ai_agent_custom_css` de tê hilanîn û dema şiyan were resetkirin bi paqijî ji rêzê tê derxistin.
 
@@ -190,7 +190,7 @@ CSS bi rêya `wp_add_inline_style` li `<head>` ya malperê zêde dike. CSS di ve
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Şêweyek bloka dubare-bikaranînê di pirtûkxaneya şêweyên WordPress de qeyd dike.
 
@@ -209,7 +209,7 @@ CSS bi rêya `wp_add_inline_style` li `<head>` ya malperê zêde dike. CSS di ve
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Hemû şêweyên blokan ên ku ji aliyê ajant ve hatine qeydkirin navnîş dike.
 
@@ -231,7 +231,7 @@ Hemû şêweyên blokan ên ku ji aliyê ajant ve hatine qeydkirin navnîş dike
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Logoya malpera WordPress bi ID-ya pêveka heyî an URL-eke wêneyê dûr saz dike. Dema URL were dayîn, wêne tê daxistin û tê importkirin bo Media Library.
 
@@ -248,7 +248,7 @@ Divê yek ji `attachment_id` an `url` were dayîn.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Preseteke bi nav ji bo reng/tîpografî li `theme.json`-a theme-a çalak (an `global-styles`) bi kar tîne. Preset pakêtên amade ne ku ji hêla tîma Gratis AI Agent ve tên parastin.
 
@@ -273,11 +273,11 @@ Preseteke bi nav ji bo reng/tîpografî li `theme.json`-a theme-a çalak (an `gl
 
 ---
 
-## Şêwazên Giştî
+## Şêwazên Giştî {#global-styles}
 
 Şiyanên Şêwazên Giştî nirxên theme.json bi rêya WordPress Global Styles API dixwînin û dinivîsin, û li ser hemû block û şablonan li tevahiya malperê bandor dikin.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Veavakirina şêwazên giştî ya niha vedigerîne.
 
@@ -291,7 +291,7 @@ Veavakirina şêwazên giştî ya niha vedigerîne.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Yek an zêdetir nirx di veavakirina şêwazên giştî de nû dike.
 
@@ -318,7 +318,7 @@ Yek an zêdetir nirx di veavakirina şêwazên giştî de nû dike.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Hemû guherînên şêwazên giştî yên ji hêla agent ve hatine sepandin vedigerîne û berdestên theme vedigerîne.
 
@@ -328,11 +328,11 @@ Hemû guherînên şêwazên giştî yên ji hêla agent ve hatine sepandin vedi
 
 ---
 
-## Menûyên Navîgasyonê
+## Menûyên Navîgasyonê {#navigation-menus}
 
 Şiyanên Menûya Navîgasyonê menûyên navîgasyona WordPress û hêmanên wan çêdikin û rêve dibin.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Menûyeke nû ya navîgasyona WordPress çêdike.
 
@@ -347,7 +347,7 @@ Menûyeke nû ya navîgasyona WordPress çêdike.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Navê menûyekê diguherîne an wê ji nû ve li cihê theme pê ve digirêde.
 
@@ -363,7 +363,7 @@ Navê menûyekê diguherîne an wê ji nû ve li cihê theme pê ve digirêde.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Hêmanekê li menûyeke navîgasyonê ya heyî zêde dike.
 
@@ -383,7 +383,7 @@ Hêmanekê li menûyeke navîgasyonê ya heyî zêde dike.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Hêmanekê ji menûyeke navîgasyonê radike.
 
@@ -397,7 +397,7 @@ Hêmanekê ji menûyeke navîgasyonê radike.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Hemû menûyên navîgasyona WordPress, bi cihên theme yên wan ên pêvekirî re, rêz dike.
 
@@ -420,11 +420,11 @@ Hemû menûyên navîgasyona WordPress, bi cihên theme yên wan ên pêvekirî 
 
 ---
 
-## Rêvebirina Vebijarkan
+## Rêvebirina Vebijarkan {#options-management}
 
 Şiyanên vebijarkan vebijarkên WordPress bi rêya `get_option` / `update_option` dixwînin û dinivîsin. Lîsteya astengkirinê ya ewlehiyê ya hundirîn rê li ber guherandina bêmebest a mîhengên girîng digire.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Vebijarkeke WordPress dixwîne.
 
@@ -440,7 +440,7 @@ Vebijarkeke WordPress dixwîne.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Vebijarkeke WordPress dinivîse.
 
@@ -458,7 +458,7 @@ Ger `option_name` di lîsteya astengkirina ewlehiyê de be çewtiyek vedigerîne
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Vebijarkek WordPress jê dibe.
 
@@ -474,7 +474,7 @@ Ger `option_name` di lîsteya astengkirina ewlehiyê de be çewtiyek vedigerîne
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Vebijarkên WordPress ên ku li gorî şêweyekê tên digere rêz dike.
 
@@ -498,11 +498,11 @@ Vebijarkên WordPress ên ku li gorî şêweyekê tên digere rêz dike.
 
 ---
 
-## Rêvebirina Naverokê
+## Rêvebirina Naverokê {#content-management}
 
 Hêzên Rêvebirina Naverokê post û rûpelên WordPress çêdikin û sererast dikin. IDyên postan vedigerin da ku gavên paşîn di planên pir-hêz de bikarin naveroka çêkirî referans bikin.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Postek nû ya WordPress, rûpelek, an têketinek ji cureya post a xweser çêdike.
 
@@ -537,7 +537,7 @@ Postek nû ya WordPress, rûpelek, an têketinek ji cureya post a xweser çêdik
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Postek an rûpelek heyî ya WordPress nû dike.
 
@@ -567,7 +567,7 @@ Postek an rûpelek heyî ya WordPress nû dike.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Di yek bangkirina hêzê de gelek postan çêdike, di dema avakirina malperê an importkirina naveroka komî de çûnûhatinan kêm dike. Post bi rêzê tên çêkirin; ger yek bi ser nekeve yên din didomin û têkçûn di rêzeka encaman de tê ragihandin.
 
@@ -619,7 +619,7 @@ Di yek bangkirina hêzê de gelek postan çêdike, di dema avakirina malperê an
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Wêneyek taybet (thumbnail a postê) ji postek an rûpelek heyî re veqetîne. IDya attachmentek heyî ya Media Library an URLya wêneyek dûr qebûl dike; dema URL were dayîn, wêne bixweber tê daxistin û importkirin.
 
@@ -638,7 +638,7 @@ Divê yek ji `attachment_id` an `url` were peyda kirin.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Bi plugin a formê ya çalak formek têkilî çêdike (Contact Form 7, WPForms, Fluent Forms, an Gravity Forms, li gorî ya ku sazkirî ye). Shortcodeyek vedigerîne ku dikare di her post an rûpelekê de were bicihkirin.
 
@@ -691,11 +691,11 @@ Bi plugin a formê ya çalak formek têkilî çêdike (Contact Form 7, WPForms, 
 
 ---
 
-## Nirxandina Dîtbarî
+## Nirxandina Dîtbarî {#visual-review}
 
 Şiyanên Nirxandina Dîtbarî dihêlin agent wêneyên ekranê yên rûpelên zindî bigire û wan analîz bike; ev nirxandina sêwiranê ya xweser, berhevkirinên berî/piştî, û kontrolên vegera dîtbarî bêyî hewcedariya ti browser extensionê gengaz dike.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Wêneyekî ekranê ya rûpelek WordPress li URL-yekî diyar bi browser-ekî bê-ser ê aliyê serverê digire. Wêne di Media Library de tê tomarkirin û URL-yekî CDN tê vegerandin.
 
@@ -724,7 +724,7 @@ Wêneyekî ekranê ya rûpelek WordPress li URL-yekî diyar bi browser-ekî bê-
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Du wêneyên ekranê digire û pileya cudahiya dîtbarî bi wêneyekî diffê re vedigerîne ku deverên guhertî destnîşan dike. Ji bo piştrastkirina ku guhertineke sêwiranê encama tê hêvîkirin daye an ji bo dîtina vegerên nexwestî bi kêr tê.
 
@@ -754,7 +754,7 @@ Du wêneyên ekranê digire û pileya cudahiya dîtbarî bi wêneyekî diffê re
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Wêneyekî ekranê ya rûpelekê digire û ji bo analîza dîtbarî dişîne modela zimanî. Nirxandineke avakirî vedigerîne ku layout, typography, bikaranîna rengan û xemên accessibility digire nav xwe.
 
@@ -785,11 +785,11 @@ Wêneyekî ekranê ya rûpelekê digire û ji bo analîza dîtbarî dişîne mod
 
 ---
 
-## Şiyanên Dikarin Werin Sazkirin
+## Şiyanên Dikarin Werin Sazkirin {#installable-abilities}
 
 Registry-a Şiyanên Dikarin Werin Sazkirin dihêle tu agent bi pakêtên şiyanê yên din fireh bikî ku wekî pluginên WordPress tên belavkirin. Her pakêt bi karanîna ability API-ya standard yek an çend şiyan tomar dike.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Katalogê pakêtên şiyanê yên ji bo sazkirinê ji registry vedigerîne.
 
@@ -818,7 +818,7 @@ Katalogê pakêtên şiyanê yên ji bo sazkirinê ji registry vedigerîne.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Pakê qabiliyetê ji qeydgehê dadixe û çalak dike.
 
@@ -832,7 +832,7 @@ Pakê qabiliyetê ji qeydgehê dadixe û çalak dike.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Qeydgeha qabiliyetan dipirse da ku ji bo rewşeke bikaranînê ya şirovekirî pêveka herî baş bibîne û, bi daxwazê, wê saz bike.
 

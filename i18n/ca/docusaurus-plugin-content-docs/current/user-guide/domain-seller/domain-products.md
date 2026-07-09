@@ -3,11 +3,11 @@ title: Productes i preus de domini
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Productes de Domini i Preus
+# Productes de Domini i Preus {#domain-products-and-pricing}
 
 Els productes de domini són el mètode per controlar els preus, els TLDs, la privadesa WHOIS i la selecció de proveïdors. Cada producte de domini és un producte estàndard de Ultimate Multisite amb una pestanya addicional anomenada **Domain Settings**.
 
-## Creació d'un producte de domini
+## Creació d'un producte de domini {#creating-a-domain-product}
 
 1. Navegueu a **Network Admin › Ultimate Multisite › Products**
 2. Cliqueu a **Add New**
@@ -17,13 +17,13 @@ Els productes de domini són el mètode per controlar els preus, els TLDs, la pr
 
 Els productes de domini apareixen amb un distintiu **Domain** de color púrpura a la llista de productes i es poden filtrar utilitzant la pestanya **Domain Products**.
 
-## Pestanya de configuració de domini (Domain settings tab)
+## Pestanya de configuració de domini (Domain settings tab) {#domain-settings-tab}
 
-### Proveïdor (Provider)
+### Proveïdor (Provider) {#provider}
 
 Seleccioneu el registre que gestionarà la inscripció per a aquest producte. Per defecte, utilitza el **Default provider** global configurat a Domain Seller settings.
 
-### TLDs suportats (Supported TLDs)
+### TLDs suportats (Supported TLDs) {#supported-tlds}
 
 Deixeu el camp buit per crear un **producte de captura general (catch-all product)** que s'aplica a tots els TLDs que no són coincidència d'un altre product.
 
@@ -31,7 +31,7 @@ Introduïu una llista de TLDs separats per coma (per exemple, `.com, .net, .org`
 
 **Com funciona la coincidència de productes:** Quan un client busca un domini, l'addon tria el producte de coincidència més específic. Un producte amb `.com` a la seva llista de TLDs té prioritat sobre un producte de captura general. Si cap producte específic de TLD coincideix, es fa servir el de captura general. Si no hi ha productes, la cerca de domini no s'exhibeix.
 
-### Tipus de marg (Markup type)
+### Tipus de marg (Markup type) {#markup-type}
 
 Tres modes controlen com es calcula el vostre preu de venda a partir del cost major:
 
@@ -41,11 +41,11 @@ Tres modes controlen com es calcula el vostre preu de venda a partir del cost ma
 | **Fixed markup** | Afegeu una quantitat en dòlars fixa. Un marg de $5 sobre un domini de $10 dona $15. |
 | **Fixed price** | Ignora completament el cost major. Sempre cobra la quantitat que introdueu. |
 
-### Preu introductori (Introductory pricing)
+### Preu introductori (Introductory pricing) {#introductory-pricing}
 
 Habilitar per oferir un preu de l'any primer de descompte. Configureu un **Introductory price** separat (el preu de l'any -1) juntament amb el **Renewal price** regular (any 2+). El client veurà ambdós preus durant el pagament per saber què esperar al renovar.
 
-### Privadesa WHOIS (WHOIS privacy)
+### Privadesa WHOIS (WHOIS privacy) {#whois-privacy}
 
 Contròleu si es ofereix protecció de privadesa WHOIS per als domini registrats mitjançant aquest producte.
 
@@ -59,7 +59,7 @@ Per Namecheap, la privadesa WHOIS utilitza WhoisGuard (sempre gratis). Per OpenS
 
 ---
 
-## Importació i sincronització de TLDs
+## Importació i sincronització de TLDs {#tld-import-and-sync}
 
 Els productes de domini mostren preus major en temps real recuperats del proveïdor connectat. Per que això funcione, els TLDs han de ser importats.
 
@@ -70,7 +70,7 @@ Després d'una sincronització, aneu a la pestanya de configuració de domini de
 
 ---
 
-## Renovació automàtica (Auto-renewal)
+## Renovació automàtica (Auto-renewal) {#auto-renewal}
 
 Les renovacions de domini estan vinculades al estat de membresia del client:
 
@@ -90,7 +90,7 @@ ID de plantilles per esdeveniments del cicle de vida del domini:
 
 ---
 
-## Administració: Registració manual de domini
+## Administració: Registració manual de domini {#admin-manual-domain-registration}
 
 Per registrar un domini en nom d'un client sense que aquest passi per el pagament:
 

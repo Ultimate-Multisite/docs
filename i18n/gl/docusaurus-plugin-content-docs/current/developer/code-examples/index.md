@@ -3,11 +3,11 @@ title: Exemplos avanzados de código
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Exemplos de código avanzados
+# Exemplos de código avanzados {#advanced-code-examples}
 
 Estes exemplos demostran patróns de integración avanzados con Ultimate Multisite.
 
-## Motor de prezos dinámicos
+## Motor de prezos dinámicos {#dynamic-pricing-engine}
 
 Un motor de prezos baseado en regras que aplica descontos por volume, fidelidade e tempada:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Aprovisionamento avanzado de sitios
+## Aprovisionamento avanzado de sitios {#advanced-site-provisioning}
 
 Configura automaticamente novos sitios con complementos, SSL, CDN, copias de seguridade e monitorización en función das características do plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistema de limitacións personalizado
+## Sistema de limitacións personalizado {#custom-limitations-system}
 
 Rastrexa e aplica límites de recursos con avisos de uso:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Contador atómico BerlinDB con `increment_item()`
+## Contador atómico BerlinDB con `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 engadiu un método `increment_item()` á clase `Query` de BerlinDB. Úsao para realizar incrementos seguros e atómicos en columnas numéricas sen carreiras de lectura-modificación-escritura — útil para contadores, cotas de uso e comprobacións de limitación de taxa que se executan baixo solicitudes concorrentes.
 
-### Sinatura do método
+### Sinatura do método {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 engadiu un método `increment_item()` á clase `Query`
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Uso básico
+### Uso básico {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Seguimento do uso da API por pertenza
+### Seguimento do uso da API por pertenza {#tracking-api-usage-per-membership}
 
 Un patrón práctico para aplicar límites de taxa da API por pertenza:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Por que `increment_item()` en vez de `update_item()`
+### Por que `increment_item()` en vez de `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Un enfoque inxenuo de lectura-modificación-escritura non é seguro baixo solicitudes concorrentes:
 

@@ -3,17 +3,17 @@ title: یکپارچه‌سازی GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# یکپارچه‌سازی با GridPane
+# یکپارچه‌سازی با GridPane {#gridpane-integration}
 
-## معرفی کلی
+## معرفی کلی {#overview}
 GridPane یک کنترل پنل تخصصی میزبانی WordPress است که برای حرفه‌ای‌های جدی WordPress طراحی شده است. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL بین Ultimate Multisite و GridPane را فراهم می‌کند.
 
-## امکانات
+## امکانات {#features}
 - همگام‌سازی خودکار دامنه
 - مدیریت گواهی SSL
 - پیکربندی خودکار ثابت SUNRISE
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 ثابت‌های زیر باید در فایل `wp-config.php` شما تعریف شده باشند:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## راهنمای راه‌اندازی
+## راهنمای راه‌اندازی {#setup-instructions}
 
-### ۱. دریافت اطلاعات احراز هویت API از GridPane
+### ۱. دریافت اطلاعات احراز هویت API از GridPane {#1-get-your-gridpane-api-credentials}
 
 ۱. وارد داشبورد GridPane خود شوید
 ۲. به بخش "Settings" > "API" بروید
 ۳. اگر کلید API ندارید، یک کلید جدید بسازید
 ۴. کلید API خود را کپی کنید
 
-### ۲. دریافت شناسه سرور و سایت
+### ۲. دریافت شناسه سرور و سایت {#2-get-your-server-and-site-ids}
 
 ۱. در داشبورد GridPane خود، به بخش "Servers" بروید
 ۲. سروری که WordPress multisite شما روی آن میزبانی می‌شود را انتخاب کنید
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ۴. به بخش "Sites" بروید و سایت WordPress خود را انتخاب کنید
 ۵. شناسه سایت را یادداشت کنید (در URL یا در صفحه جزئیات سایت قابل مشاهده است)
 
-### ۳. افزودن ثابت‌ها به wp-config.php
+### ۳. افزودن ثابت‌ها به wp-config.php {#3-add-constants-to-wp-configphp}
 
 ثابت‌های زیر را به فایل `wp-config.php` خود اضافه کنید:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### ۴. فعال‌سازی یکپارچه‌سازی
+### ۴. فعال‌سازی یکپارچه‌سازی {#4-enable-the-integration}
 
 ۱. در پیشخوان مدیریت WordPress، به Ultimate Multisite > Settings بروید
 ۲. به تب "Domain Mapping" بروید
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ۴. یکپارچه‌سازی GridPane را فعال کنید
 ۵. روی "Save Changes" کلیک کنید
 
-## نحوه عملکرد
+## نحوه عملکرد {#how-it-works}
 
 وقتی یک دامنه در Ultimate Multisite نگاشت می‌شود:
 
@@ -69,23 +69,23 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 
 این یکپارچه‌سازی همچنین به صورت خودکار ثابت SUNRISE را در فایل wp-config.php مدیریت می‌کند، که برای عملکرد صحیح نگاشت دامنه ضروری است.
 
-## مدیریت ثابت SUNRISE
+## مدیریت ثابت SUNRISE {#sunrise-constant-management}
 
 یکی از ویژگی‌های منحصر به فرد یکپارچه‌سازی GridPane این است که به صورت خودکار ثابت SUNRISE را در wp-config.php بازگردانی می‌کند تا از تداخل با سیستم نگاشت دامنه خود GridPane جلوگیری شود. این کار تضمین می‌کند که هر دو سیستم بدون مشکل با هم کار کنند.
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
-### مشکلات اتصال API
+### مشکلات اتصال API {#api-connection-issues}
 - مطمئن شوید که کلید API شما صحیح است
 - بررسی کنید که شناسه سرور و سایت شما درست هستند
 - اطمینان حاصل کنید که حساب GridPane شما مجوزهای لازم را دارد
 
-### مشکلات گواهی SSL
+### مشکلات گواهی SSL {#ssl-certificate-issues}
 - ممکن است صدور گواهی SSL توسط GridPane کمی زمان ببرد
 - مطمئن شوید که دامنه‌های شما به درستی به آدرس IP سرور اشاره می‌کنند
 - تنظیمات SSL GridPane را برای سایت خود بررسی کنید
 
-### دامنه اضافه نشده است
+### دامنه اضافه نشده است {#domain-not-added}
 - لاگ‌های Ultimate Multisite را برای پیام‌های خطا بررسی کنید
 - مطمئن شوید که دامنه قبلاً به GridPane اضافه نشده است
 - اطمینان حاصل کنید که رکوردهای DNS دامنه شما به درستی پیکربندی شده‌اند

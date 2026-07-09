@@ -3,13 +3,13 @@ title: Ukwakha uDibaniso loMbhalisi olulungiselelweyo
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ukwakha Udibaniso lwe-Registrar Olulungiselelweyo
+# Ukwakha Udibaniso lwe-Registrar Olulungiselelweyo {#building-a-custom-registrar-integration}
 
 I-addon ye-Domain Seller isebenzisa ipateni ye-**Integration Registry**. I-registrar nganye yi-class ye-PHP ephumeza `Domain_Selling_Capability` kwaye izibhalisa nge-action hook ethi `wu_domain_seller_register_capabilities`.
 
 Esi sikhokelo sibonisa indlela yokudibanisa i-registrar elungiselelweyo.
 
-## I-interface
+## I-interface {#the-interface}
 
 I-class yakho kufuneka iphumeze `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` kwaye yandise `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Iindlela ozikhethelayo
+### Iindlela ozikhethelayo {#optional-methods}
 
 Ziphumeze ezi ukuze uvule iimpawu ezongezelelweyo. I-addon ibona inkxaso nge-`method_exists()`:
 
@@ -81,7 +81,7 @@ Ziphumeze ezi ukuze uvule iimpawu ezongezelelweyo. I-addon ibona inkxaso nge-`me
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### Isivumelwano sexabiso elibuyiswayo
+### Isivumelwano sexabiso elibuyiswayo {#return-value-convention}
 
 Zonke iindlela zibuyisa i-array enesitshixo se-`success` ubuncinane:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Ukubhalisa isakhono sakho
+## Ukubhalisa isakhono sakho {#registering-your-capability}
 
 Bhalisa i-class yakho usebenzisa i-action ethi `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ I-argument yokuqala ku-`add_capability()` yi-**provider ID** — i-slug yoonobum
 
 ---
 
-## Ukongeza iifildi zeziqinisekiso kwi-wizard
+## Ukongeza iifildi zeziqinisekiso kwi-wizard {#adding-credential-fields-to-the-wizard}
 
 Ukuvumela abalawuli bafake iziqinisekiso nge-setup wizard, bhalisa udibaniso lwakho:
 
@@ -137,7 +137,7 @@ Iziqinisekiso zigcinwa njenge-network options kusetyenziswa ii-ID zeefildi njeng
 
 ---
 
-## Ii-hook zezenzo zasemva kobhaliso
+## Ii-hook zezenzo zasemva kobhaliso {#hooks-for-post-registration-actions}
 
 Sebenzisa ezi zenzo ukuqalisa ii-webhook, provisioning, izaziso, okanye uhlaziyo lwe-CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Iilog
+## Iilog {#logging}
 
 Bhala kwitshaneli yelog ethile ye-provider yakho usebenzisa `wu_log_add()`:
 

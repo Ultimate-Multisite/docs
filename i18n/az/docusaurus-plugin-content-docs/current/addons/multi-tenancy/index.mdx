@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Çoxicarəçilik
+# Çoxicarəçilik {#multi-tenancy}
 
 Performans və təhlükəsizlik üçün alt saytları serverlər və verilənlər bazaları arasında paylayın
 
-## Versiya 1.2.0 buraxılışının əsas məqamları
+## Versiya 1.2.0 buraxılışının əsas məqamları {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 istehsal izolyasiyası iş axınları üçün suveren icarəçi əsasını əlavə edir:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 istehsal izolyasiyası iş axınları üçün suveren icarə
 
 İstifadəçi təlimatlarında [suveren miqrasiya iş axını](/user-guide/getting-started/sovereign-migration-workflow), [çoxicarəçilik izolyasiyası](/user-guide/configuration/multi-tenancy-isolation) və [suveren icarəçi əməliyyatları](/user-guide/administration/sovereign-tenant-operations) bölmələrinə baxın.
 
-## Tələblər
+## Tələblər {#requirements}
 
 - WordPress 5.3 və ya daha yuxarı
 - PHP 7.4 və ya daha yuxarı
 - Multisite Ultimate plugin-i (aktiv)
 
-## Quraşdırma
+## Quraşdırma {#installation}
 
 1. Əlavə fayllarını `/wp-content/plugins/` kataloqunuza yükləyin
 2. Plugin-i WordPress-də 'Plugins' menyusu vasitəsilə aktivləşdirin
 3. Əlavə parametrlərini şəbəkə adminində konfiqurasiya edin
 
-## Hazırlanma
+## Hazırlanma {#development}
 
-### Quraşdırma
+### Quraşdırma {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Layihə strukturu
+### Layihə strukturu {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kod modernləşdirmə qaydaları
 ```
 
-### Test
+### Test {#testing}
 
 Əlavəyə hərtərəfli test çərçivəsi daxildir:
 
@@ -93,54 +93,54 @@ ultimate-multisite-addon-template/
 - **Test əhatəsi**: Kod əhatəsini izləmək üçün konfiqurasiya edilib
 - **Multisite testi**: Testlər multisite mühitində işləyir
 
-### Kod standartları
+### Kod standartları {#code-standards}
 
 - **WordPress kodlaşdırma standartları**: PHPCS vasitəsilə tətbiq edilir
 - **PHP 7.4+ uyğunluğu**: Müasir PHP xüsusiyyətləri dəstəklənir
 - **Statik analiz**: Tip yoxlaması üçün PHPStan inteqrasiyası
 - **Kod modernləşdirilməsi**: PHP yüksəltmələri üçün Rector qaydaları
 
-### Yığım sistemi
+### Yığım sistemi {#build-system}
 
 - **Resurs emalı**: CSS/JS faylları üçün minimallaşdırma
 - **Tərcümə**: POT faylının yaradılması
 - **Paketləmə**: Paylama üçün arxiv yaradılması
 - **Hazırlanma rejimi**: Sazlama üçün minimallaşdırılmamış resurslar
 
-## Konfiqurasiya
+## Konfiqurasiya {#configuration}
 
 Əlavə şəbəkə admin interfeysi vasitəsilə əlçatan olan müxtəlif konfiqurasiya seçimlərini dəstəkləyir.
 
-### Suveren icarəçi konfiqurasiyası
+### Suveren icarəçi konfiqurasiyası {#sovereign-tenant-configuration}
 
 Suveren icarəçilər üçün trafiki icarəçiyə yönləndirməzdən əvvəl icarəçi verilənlər bazasını, fayl sistemi kökünü, verilənlər bazası host bağlanmasını və host imkanını konfiqurasiya edin. Verilənlər bazası etimadnamələrinə, host bağlanmasına, yönləndirməyə və ya istifadəçi təminatına təsir edən hər dəyişiklikdən sonra miqrasiya doğrulamasını işə salın.
 
 `localhost`-dan yalnız icarəçi runtime-ı və verilənlər bazası icazələri lokal soket və ya eyni maşın girişini gözlədikdə istifadə edin. Provayderiniz tərəfindən konfiqurasiya edilmiş icazə host-u bu olduqda `127.0.0.1` və ya servis host adından istifadə edin.
 
-### Hostinger imkanı
+### Hostinger imkanı {#hostinger-capability}
 
 Hostinger çoxicarəçilik imkanı paylaşılan Hostinger inteqrasiya token-i ilə işləyir. Doğrulamadan əvvəl domenin hPanel-də mövcud olduğunu, DNS-in Hostinger hesabına yönəldiyini və icarəçi verilənlər bazası parametrlərinin hPanel ilə uyğun olduğunu təsdiqləyin.
 
-## Hook-lar və filtrlər
+## Hook-lar və filtrlər {#hooks-and-filters}
 
-### Əməliyyatlar
+### Əməliyyatlar {#actions}
 
 - `ultimate-multisite-addon-template_init` - Əlavə başladıldıqdan sonra işə düşür
 - `ultimate-multisite-addon-template_loaded` - Bütün əlavə faylları yükləndikdən sonra işə düşür
 
-### Filtrlər
+### Filtrlər {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Əlavə parametrlərini dəyişdirin
 - `ultimate-multisite-addon-template_enabled` - Əlavənin aktiv/deaktiv statusunu üstələyin
 
-## Lisenziya
+## Lisenziya {#license}
 
 Bu əlavə GPL v3 və ya daha sonrakı versiya ilə lisenziyalaşdırılıb.
 
-## Dəstək
+## Dəstək {#support}
 
 Dəstək və sənədləşmə üçün [MultisiteUltimate.com](https://multisiteultimate.com) saytına daxil olun
-## Dəyişiklik jurnalı
+## Dəyişiklik jurnalı {#changelog}
 
 - Versiya 1.2.0 (2026-06-03): vəziyyətsiz icarəçi avtomatik girişini, Hostinger çoxicarəçilik imkanını, hər alt sayt üzrə verilənlər bazası və fayl sistemi izolyasiyasını, suveren miqrasiya doğrulama qapılarını, icarəçi bootstrap/verilənlər bazası yazıcısı təkmilləşdirmələrini, konfiqurasiya edilə bilən MySQL host bağlanmasını və daha təhlükəsiz suveren sökməni əlavə edir.
 

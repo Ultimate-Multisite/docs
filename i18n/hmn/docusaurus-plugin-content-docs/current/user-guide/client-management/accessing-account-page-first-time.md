@@ -3,7 +3,7 @@ title: Zug raws tshoob rau siv khoom
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Kuv txog kuv khoom (account) page pib ntxiv li cas?
+# Kuv txog kuv khoom (account) page pib ntxiv li cas? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Kuv yuav tso cai rau Ultimate Multisite!
 

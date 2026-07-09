@@ -3,13 +3,13 @@ title: Tau Txais Nyiaj
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Tau Txais Nyiaj (v2)
+# Tau Txais Nyiaj (v2) {#getting-paid-v2}
 
 _**CEEB TOOM TSEEM CEEB: Kab lus no hais txog Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite muaj ib lub kaw lus membership thiab billing uas twb tsim los nrog lawm. Kom peb lub kaw lus billing ua haujlwm tau, peb tau txuas nrog cov payment gateways uas siv ntau tshaj hauv e-commerce. Cov payment gateways default hauv Ultimate Multisite yog _Stripe_ , _PayPal_ , thiab Manual Payment. Koj kuj siv tau _WooCommerce_ , _GoCardless_ thiab _Payfast_ los txais nyiaj them los ntawm kev nruab lawv cov add-ons uas phim.
 
-## Kev Teeb Tsa Yooj Yim
+## Kev Teeb Tsa Yooj Yim {#basic-settings}
 
 Koj tuaj yeem teeb tsa ib qho ntawm cov payment gateways no hauv Ultimate Multisite cov payment settings. Koj nrhiav tau nws los ntawm kev mus rau **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Qhov no tiv thaiv kom membership tsis txhob zoo li yuav auto-renew thaum gateway
 
 <!-- Screenshot tsis muaj: Next invoice number thiab invoice number prefix fields uas pom thaum xaiv Sequential Number -->
 
-## Nrhiav cov gateways qhov twg:
+## Nrhiav cov gateways qhov twg: {#where-to-find-the-gateways}
 
 Koj tuaj yeem teeb tsa cov payment gateways ntawm tib nplooj ntawd ( **Ultimate Multisite > Settings > Payments**). Hauv qab kiag **active payment gateways** , koj yuav pom: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ thiab _Manual_.
 
@@ -67,7 +67,7 @@ Ntawm no kuj yog qhov pom tag nrho ntawm cov payment gateways settings:
 
 Tam sim no, yog koj xav siv _WooCommerce_ , _GoCardless_ lossis _Payfast_ ua koj lub payment gateway, koj yuav tsum **nruab thiab teeb tsa lawv cov add-ons**.
 
-### Yuav nruab WooCommerce add-on li cas:
+### Yuav nruab WooCommerce add-on li cas: {#how-to-install-the-woocommerce-add-on}
 
 Peb nkag siab tias _Stripe_ thiab _PayPal_ tsis muaj nyob hauv qee lub teb chaws, uas txwv lossis cuam tshuam cov neeg siv Ultimate Multisite kom siv tsis tau peb lub plugin zoo. Yog li peb thiaj tsim ib qho add-on los txuas nrog _WooCommerce,_ uas yog ib lub e-commerce plugin nrov heev. Developers thoob ntiaj teb tau tsim add-ons los txuas ntau hom payment gateways rau nws. Peb siv qhov no los nthuav cov payment gateways uas koj siv tau nrog Ultimate Multisite billing system.
 
@@ -95,7 +95,7 @@ Tom qab qhib nws lawm, yog tias koj tseem tsis tau nruab thiab qhib WooCommerce 
 
 Yog xav nyeem ntxiv txog WooCommerce Integration add-on, **nias ntawm no**.
 
-### Yuav ua li cas nruab GoCardless add-on:
+### Yuav ua li cas nruab GoCardless add-on: {#how-to-install-the-gocardless-add-on}
 
 Cov kauj ruam los nruab _GoCardless_ add-on yeej zoo ib yam li _WooCommerce_ add-on. Thov mus rau nplooj add-ons thiab xaiv **Ultimate Multisite: GoCardless Gateway** add-on.
 
@@ -111,7 +111,7 @@ Tom qab kev teeb tsa tiav lawm, koj yuav raug coj mus rau nplooj plugins. Ntawm 
 
 Yog xav kawm yuav pib siv _GoCardless_ gateway li cas, **nyeem tsab ntawv no**.
 
-### Yuav ua li cas nruab Payfast add-on:
+### Yuav ua li cas nruab Payfast add-on: {#how-to-install-the-payfast-add-on}
 
 Mus rau nplooj add-ons thiab xaiv **Ultimate Multisite: Payfast Gateway** add-on.
 

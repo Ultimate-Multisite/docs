@@ -3,18 +3,18 @@ title: Tema Qurucu Qabiliyyətləri
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: Block Temaları Qurmaq və Aktivləşdirmək
+# Theme Builder Abilities: Block Temaları Qurmaq və Aktivləşdirmək {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0, sizə chat interfeysindən birbaşa özad block temaları yaratmağa və yerləşdirməyə imkan verən iki güclü imkan təqdim edir.
 
-## Ümumi Baxış
+## Ümumi Baxış {#overview}
 
 **scaffold-block-theme** və **activate-theme** imkanları agentlərin aşağıdakıları etməsinə imkan verir:
 - Təsvirinizə əsaslanaraq tam, istehsalə hazır block temaları yaratmaq
 - Temaları əl ilə müdaxilə etmədən saytınızda avtomatik aktivləşdirmək
 - Təlimatlı dizayn qərarları vasitəsilə bir-biri ilə uyğun vizual identitetlər yaratmaq
 
-## Block Teması Qurmaq (Scaffold)
+## Block Teması Qurmaq (Scaffold) {#scaffold-block-theme}
 
 **scaffold-block-theme** imkanı tam bir tema strukturu ilə yeni bir WordPress block teması yaradır, o cümlədən:
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0, sizə chat interfeysindən birbaşa özad block temal
 - Xüsusi block stilləri və variantları
 - Tema meta məlumatları və dəstəklənmə bəyanatları
 
-### Necə Çağırılır
+### Necə Çağırılır {#how-to-invoke}
 
 Superdav AI Agent ilə söhbətinizdə tema yaratmağı istəyə bilərsiniz:
 
@@ -38,7 +38,7 @@ Agent aşağıdakıları edəcək:
 3. Bütün zəruri tema fayllarını hazırlayacaq
 4. Temanı aktivləşdirməyə hazır vəziyyətə gətirəcək
 
-### Gözlənilən Nəticə
+### Gözlənilən Nəticə {#expected-output}
 
 İmkan uğurla yerinə yetirildikdə, aşağıdakıları görəcəksiniz:
 
@@ -56,11 +56,11 @@ Nümunə çıxışı:
   Status: Ready to activate
 ```
 
-## Temanı Aktivləşdirmək (Activate)
+## Temanı Aktivləşdirmək (Activate) {#activate-theme}
 
 **activate-theme** imkanı saytınızı yeni qurulmuş və ya mövcud bir block temasına keçirir.
 
-### Necə Çağırılır
+### Necə Çağırılır {#how-to-invoke-1}
 
 Bir tema qurulduqdan sonra, onu dərhal aktivləşdirə bilərsiniz:
 
@@ -74,7 +74,7 @@ Və ya mövcud istənilən bir temanı aktivləşdirə bilərsiniz:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Gözlənilən Nəticə
+### Gözlənilən Nəticə {#expected-output-1}
 
 Aktivləşdirmə uğurlu olduqda:
 
@@ -92,7 +92,7 @@ Nümunə çıxışı:
   Note: Check your homepage to verify the layout
 ```
 
-## İş Axını: Qurmaq və Aktivləşdirmək
+## İş Axını: Qurmaq və Aktivləşdirmək {#workflow-scaffold-and-activate}
 
 Tipik bir iş axını hər iki imkanı birləşdirir:
 
@@ -102,7 +102,7 @@ Tipik bir iş axını hər iki imkanı birləşdirir:
 4. **Aktivləşdirmək**: "Temanı indi aktivləşdir"
 5. **Yoxlamaq**: Yeni dizaynın aktiv olub-olmadığını təsdiq etmək üçün saytınıza daxil olun
 
-## Dizayn Tokenləri və Fərdiləşdirmə
+## Dizayn Tokenləri və Fərdiləşdirmə {#design-tokens-and-customization}
 
 Qurulmuş temalar WordPress dizayn tokenlərindən ( `theme.json` vasitəsilə) aşağıdakılar üçün istifadə edir:
 
@@ -114,14 +114,14 @@ Qurulmuş temalar WordPress dizayn tokenlərindən ( `theme.json` vasitəsilə) 
 
 Bu tokenlər `theme.json` faylında mərkəzləşdirilmişdir, bu da bütün dizayn sisteminizi bir fayldan asan şəkildə tənzimləməyə imkan verir.
 
-## Məhdudiyyətlər və Qeydlər
+## Məhdudiyyətlər və Qeydlər {#limitations-and-notes}
 
 - Temalar `/wp-content/themes/` içində qurulur və WordPress adlandırma konvensiyalarına riayət etməlidir
 - Aktivləşdirmə üçün WordPress saytınızda müvafiq icazələr tələb olunur
 - Temalardakı xüsusi PHP kodu minimaldir; mürəkkəb funksionallıq üçün plugin-lardan istifadə edin
 - Block temaları WordPress 5.9 və sonrakıları ilə ən yaxşı işləyir
 
-## Problemlərin Həlli
+## Problemlərin Həlli {#troubleshooting}
 
 **Qurulmuşdan sonra tema görünmür**
 - Tema kataloqunun mövcud olduğundan və düzgün icazələrə malik olduğundan əmin olun
@@ -138,7 +138,7 @@ Bu tokenlər `theme.json` faylında mərkəzləşdirilmişdir, bu da bütün diz
 - Bütün caching plugin-larını təmizləyin
 - WordPress versiyanızın istifadə etdiyiniz tokenləri dəstəklədiyini yoxlayın
 
-## Növbəti Addımlar
+## Növbəti Addımlar {#next-steps}
 
 Temanızı aktivləşdirdiyinizdən sonra aşağıdakıları edə bilərsiniz:
 - Tipoqrafiyanı, rəngləri və boşluqları təkmilləşdirmək üçün **Design System Aesthetics skill**-dən istifadə edin

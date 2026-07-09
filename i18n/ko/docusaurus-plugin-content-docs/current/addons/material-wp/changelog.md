@@ -3,7 +3,7 @@ title: Material WP 변경 로그
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP 변경 로그
+# Material WP 변경 로그 {#material-wp-changelog}
 
 Version 1.1.15 - 01/26/2026
 * 개선: 코드 스타일 및 서식;

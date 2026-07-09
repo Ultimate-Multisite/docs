@@ -3,11 +3,11 @@ title: سيٽنگن جو حوالو
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# سيٽنگن جو حوالو
+# سيٽنگن جو حوالو {#settings-reference}
 
 هي صفحو انهن سيٽنگن کي ٽريڪ ڪري ٿو جيڪي روزاني انتظاميا ۽ Ultimate Multisite ۾ تازين روين جي تبديلين تي اثر وجهن ٿيون.
 
-## ٻيا آپشن
+## ٻيا آپشن {#other-options}
 
 **ٻيا آپشن** وارو علائقو **Ultimate Multisite > Settings > Login & Registration** هيٺ ظاهر ٿئي ٿو.
 
@@ -15,23 +15,23 @@ _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 |---|---|
 | **Enable Jumper** | ايڊمن علائقي ۾ Jumper تڪڙو نيويگيشن اوزار ڏيکاري ٿو. ان کي Ultimate Multisite اسڪرينن، نيٽ ورڪ آبجيڪٽن، ۽ حمايت ٿيل ايڊمن منزلن ڏانهن سڌو ٽپو ڏيڻ لاءِ استعمال ڪريو. جيڪڏهن توهان نٿا چاهيو ته هي شارٽ ڪٽ ظاهر ٿئي ته ان کي بند ڪريو. |
 
-## غلطي رپورٽنگ ۽ ٽيلي ميٽري
+## غلطي رپورٽنگ ۽ ٽيلي ميٽري {#error-reporting-and-telemetry}
 
 اڳوڻي غلطي رپورٽنگ opt-in سيٽنگ کي سيٽنگن واري صفحي مان هٽايو ويو آهي. گمنام ٽيلي ميٽري بند آهي ۽ ان کي فعال ڪرڻ لاءِ ڪو UI toggle موجود ناهي.
 
 جيڪڏهن توهان سيٽنگن واري صفحي لاءِ اندروني runbooks يا اسڪرين شاٽس سنڀاليندا آهيو، ته پراڻي غلطي رپورٽنگ opt-in فيلڊ جا حوالا هٽايو، ته جيئن منتظم اهڙي سيٽنگ نه ڳولين جيڪا هاڻي موجود ناهي.
 
-## درآمد/برآمد سيٽنگون
+## درآمد/برآمد سيٽنگون {#importexport-settings}
 
 **درآمد/برآمد** سيٽنگن وارو ٽيب بيان ڪري ٿو ته اهو ڪهڙين سيٽنگن کي ڪنٽرول ڪري ٿو ۽ site ۽ network archive لاءِ سڌو **Ultimate Multisite > Site Export** سان ڳنڍي ٿو. درآمد/برآمد ترتيب لاءِ سيٽنگن وارو ٽيب استعمال ڪريو، single-site برآمد/درآمد workflow لاءِ **Tools > Export & Import** استعمال ڪريو، ۽ جڏهن توهان کي مڪمل Network Export archive گهربل هجي ته Site Export اوزار استعمال ڪريو.
 
-## Domain Seller HostAfrica بيلنس خبرداري
+## Domain Seller HostAfrica بيلنس خبرداري {#domain-seller-hostafrica-balance-warning}
 
 جڏهن Domain Seller addon HostAfrica سان ڳنڍيل هجي، نيٽ ورڪ منتظم هاڻي هڪ dismissible balance-low خبرداري ڏسن ٿا جڏهن reseller account جو بيلنس ڀروسي جوڳي domain registration يا renewal processing لاءِ تمام گهٽ هجي.
 
 هن اطلاع کي عملي خبرداري طور وٺو: وڌيڪ paid domain registrations قبول ڪرڻ کان اڳ HostAfrica reseller بيلنس وڌايو، پوءِ Domain Seller سيٽنگن يا domain-monitoring اسڪرين ڏانهن واپس وڃو ته تصديق ڪريو registrations ۽ renewals عام طور جاري رهي سگهن ٿا.
 
-## AI provider connector سيٽنگون
+## AI provider connector سيٽنگون {#ai-provider-connector-settings}
 
 AI provider connector سيٽنگون هاڻي صرف حمايت ٿيل OAuth account pools ظاهر ڪن ٿيون:
 

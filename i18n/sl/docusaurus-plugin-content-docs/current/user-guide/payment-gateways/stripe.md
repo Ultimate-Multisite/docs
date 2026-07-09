@@ -3,19 +3,19 @@ title: Nastavitve Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Uporaba Stripe Gatewaya (v2)
+# Uporaba Stripe Gatewaya (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**POMEMBNO: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 
 Na strani nastavitev plačil na našem spletnem mestu lahko aktivirate do štirih metod plačanja: Stripe, Stripe Checkout, PayPal in Ručno (Manual). V tem članku bomo videli, kako se integrirati z **Stripe**.
 
-## Aktiviranje Stripe-a
+## Aktiviranje Stripe-a {#enabling-stripe}
 
 Da bi Stripe bil na voljo kot možnost plačilne bramke na vašeta omrežju, gre do strani **Ultimate Multisite > Settings > Payments** in označite preklic (toggle) ob strani **Stripe** ali **Stripe Checkout** v razdelku Aktive plačilne bramke.
 
 ![Aktiviranje Stripe-a v aktivnih plačilnih bramkah](/img/config/settings-payment-gateways.png)
 
-### Stripe nasprotje Stripe Checkout:
+### Stripe nasprotje Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Ta metoda bo prikazala prostor za vnos številke kreditne kartice med plačilom.
 
@@ -47,7 +47,7 @@ Kopirajte vrednost iz polja **Publishable key** in **Secret key**, iz kolonne **
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Uporaba Webhooka za Stripe
+## Uporaba Webhooka za Stripe {#setting-up-stripe-webhook}
 
 Stripe pošlje webhook naloge, ki obvestijo Ultimate Multisite vsakrat, ko se nekaj zgodi na **vašem stripe računu**.
 

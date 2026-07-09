@@ -3,11 +3,11 @@ title: Aabeschluss vo de Mitgliedschaft und Site-Blockierig
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Mitgliedschaftsablauf und Seitenblockierung
+# Mitgliedschaftsablauf und Seitenblockierung {#membership-expiration-and-site-blocking}
 
 Dëse Leitfaden erklärt, wéi Ultimate Multisite mit de Ablauf vo Mitgliedschaftsabläuf, Testabläufe (Trial Endings) und de Blockierig vun Frontend-Seiten umgaat. Mir erläutre de ganz Zyklus vun enere Mitgliedschaft vum aktiv bis zum abgelaufen, d'Istellige, déi bestëmmt, ob Seiten blockéiert sinn, a wat mir überprüefe sölle, wéi d'Seiten no zugänglich bléien, wéi d'Mitgliedschaft abgelaufen ass.
 
-## Mitgliedschaftsstatus-Zyklus
+## Mitgliedschaftsstatus-Zyklus {#membership-status-lifecycle}
 
 Jede Mitgliedschaft in Ultimate Multisite het e puer Status:
 
@@ -24,7 +24,7 @@ Gratis Mitgliedschafte verlopen nie automatisch ab. Ultimate Multisite behandelt
 | **Expired** | Verpasst d'Ablaufdatum a de Gnossperiode ohn Erneuerungsbestëmmung |
 | **Cancelled** | Explizit canceliert vun em Kunde oder Administrator |
 
-### Wéi Mitgliedschafte zu Expired wechselt
+### Wéi Mitgliedschafte zu Expired wechselt {#how-memberships-transition-to-expired}
 
 Ultimate Multisite macht **jede Stund** en Hintergrundsprüfung, déi nach Mitgliedschafte sucht, déi als abgelaufen markéiert ginn. Dëse Prüf benotzt [Action Scheduler](https://actionscheduler.org/) (net direkt WP-Cron) a lauft als d'geplanter Aktion `wu_membership_check`.
 
@@ -34,7 +34,7 @@ D'Ablaufsprüfung het standardmat de **Gnossperiode vun 3 Täg**. E Mitgliedscha
 D'3-Tägig Ablaufruheziit isch separat vo de Iistellig "Frontend Block Grace Period" beschriebe wia obe. D'Ablaufruheziit bestimmt, wann sich de **Status ändert** vo aktiv/on-hold zu abgelaufen. D'Grace Period vom Frontend Block kontrolliert, wann d'**Site blockiert wird**, nachdem de Status scho gänderet isch.
 :::
 
-#### Auto-Renewing vs. Non-Auto-Renewing Memberships
+#### Auto-Renewing vs. Non-Auto-Renewing Memberships {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Dä Unterscheid isch ganz wichtig, um z'verstah, wie d'Ablaufziit funktioniert:
 
@@ -42,7 +42,7 @@ Dä Unterscheid isch ganz wichtig, um z'verstah, wie d'Ablaufziit funktioniert:
 
 - **Auto-renewing memberships** (`auto_renew = true`): D'cron Ablaufprüefig **überspringt die ganz**. De Zahlungsportal (Stripe, PayPal usw.) wird erwartet, dass es Ultimate Multisite über webhooks benachrichtigt, wenn en Abonnement fehlschlaht oder abbestellt wird. Wenn de webhook nöd chunnt -- wäge eme falsch konfigurierten Endpoint, ere Portal-Ausfall oder eme Abos, wo usserhalb vom System abgstellt worde isch -- chan d'Mitgliedschaft au wiiterhin `active` blibe, au wenn s'Ablaufdatum verbi isch.
 
-### Wie Trials Enden
+### Wie Trials Enden {#how-trials-end}
 
 Wenn d'Probeziit vo ere trialing Mitgliedschaft abläuft, macht s'System folgendes:
 
@@ -52,11 +52,11 @@ Wenn d'Probeziit vo ere trialing Mitgliedschaft abläuft, macht s'System folgend
 
 Dä Prozess lauft im gliiche hourly Schedule wie d'reguläri Ablaufprüefig, aber **nur für non-auto-renewing memberships**. Für auto-renewing Trials übernimmt de Zahlungsportal de Übergang vo Trial zu bezahltem Abonnement.
 
-## Frontend Zuegang Blockiere
+## Frontend Zuegang Blockiere {#block-frontend-access}
 
 Standardwiis, wenn e Mitgliidschaft abläuft oder in Pause geht, wird **nur s'wp-admin Dashboard beschränkt**. D'öffentlech Site-Frontend blibt für Bsuecher zugänglich. Um au de öffentliche Zuegang z'blocke, müesse Sie d'Einstellung **Block Frontend Access** aktiviere.
 
-### D'Einstellung konfigurieren
+### D'Einstellung konfigurieren {#configuring-the-setting}
 
 Geh zu **Ultimate Multisite > Settings > Memberships** und aktiviere **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Drei verbundeni Einstellige steuern das Verhalte:
 | **Frontend Block Grace Period** | D'Anzahl Tag, wo mer warte sölle, nachdem d'Mitgliidschaft inaktiv worde isch, bevor mer blockiere. Setze uf `0`, um sofort z'blockiere. | 0 |
 | **Frontend Block Page** | E Seite uf de Hauptsite, wo Bsuecher redirigiert wärde, wenn e Site blockiert wird. Wenn nöd gsetzt, gseht d'Bsuecher en generische "Site is momentan nöd verfügbar"-Nachricht mit eme Link zur Admin-Login-Seite. | Keine |
 
-### Was Bsuecher gsehnd, wenn e Site blockiert isch
+### Was Bsuecher gsehnd, wenn e Site blockiert isch {#what-visitors-see-when-a-site-is-blocked}
 
 Wenn de Frontend-Zuegang blockiert isch, wärde Bsuecher uf d'Site entweder:
 
@@ -83,7 +83,7 @@ Wenn de Frontend-Zuegang blockiert isch, wärde Bsuecher uf d'Site entweder:
 
 Site-Admins chönne immer no iilogge -- d'Login-Seite wird nie blockiert.
 
-### Was wird blockiert und wann?
+### Was wird blockiert und wann? {#what-gets-blocked-and-when}
 
 S'Blockierverhalte hängt vom Mitgliidschaftsstatus ab:
 
@@ -104,21 +104,21 @@ Au wenn e Probemonat abgloffe isch, wird e Mitgliedschaft mit em Status `trialin
 Abgekündigte Mitgliedschafte sind immer blockiert, sobald s'Ablaufdatum verbi isch, egal öb Block Frontend Access aktiviert isch. D'Frontend-Block-Grace Period gilt **net** für abgekündigte Mitgliedschafte.
 :::
 
-## Fehlerbehebig: Sites bliebe nach Ablauf in de Zuegang
+## Fehlerbehebig: Sites bliebe nach Ablauf in de Zuegang {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Wenn Sites nach em Ablauf vo ere Mitgliedschaft öffentlich zuegänglich bliibe, lueged bitte folgendi Prüefige i dere Reihenfolg dure:
 
-### 1. Überprüfe, ob d'Block Frontend Access Iistellig aktiviert isch
+### 1. Überprüfe, ob d'Block Frontend Access Iistellig aktiviert isch {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Gang zu **Ultimate Multisite > Settings > Memberships** und bestätiged, dass de Schalter **Block Frontend Access** iischaltet isch. D'Iistellig isch **standardmässig usgschaltet**, was bedütet, dass nur wp-admin beschränkt isch, wenn e Mitgliedschaft inaktiv wird.
 
-### 2. Prüefe Sie d'Frontend Block Grace Period
+### 2. Prüefe Sie d'Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 U de gliiche Istellige überprüefet Sie de Wert **Frontend Block Grace Period**. Wenn dä uf 7 Täg gsetzt isch, zum Bischpil, wird s Frontend nöd blockiert, bis 7 Täg nach em Ablaufdatum vom Mitgliedschaftsstatus – au wenn de Status scho `expired` isch.
 
 Setzet Sie das uf `0`, wenn Sie sofort blockiere wend, sobald d Mitgliedschaft inaktiv wird.
 
-### 3. Bestätige, dass de Mitgliedschaftsstatus würkli gänderet het
+### 3. Bestätige, dass de Mitgliedschaftsstatus würkli gänderet het {#3-confirm-the-membership-status-has-actually-changed}
 
 Geh Sie zu **Ultimate Multisite > Memberships** und überprüefet Sie de Status vo de betroffene Mitgliedschaft. Wenn er immer no `active` zeigt, obwohl s Ablaufdatum scho verbi isch, isch de Statusübergang nöd passiert. Häufigi Ursache:
 
@@ -126,7 +126,7 @@ Geh Sie zu **Ultimate Multisite > Memberships** und überprüefet Sie de Status 
 
 - **De Cronjob isch nöd laufe**: Lueged Sie uf de nächste Schritt.
 
-### 4. Überprüefe, ob Action Scheduler lauft
+### 4. Überprüefe, ob Action Scheduler lauft {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite brucht Action Scheduler für sini Cronjobs. Gehe Sie zu **Tools > Scheduled Actions** im Netzwerk-Admin und sueched nach:
 
@@ -148,7 +148,7 @@ Um sicherzstelle, dass de cron zuverlässig lauft, setze en System cron Job uf:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Prüef uf Gateway Webhook Problem (Auto-Renewing Memberships)
+### 5. Prüef uf Gateway Webhook Problem (Auto-Renewing Memberships) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Wenn d'Mitgliedschaft automatisch verlängert wird und s'Gateway-Abo abgsetzt oder fehlgeschlage isch, aber Ultimate Multisite immer no als `active` zeigt:
 
@@ -157,7 +157,7 @@ Wenn d'Mitgliedschaft automatisch verlängert wird und s'Gateway-Abo abgsetzt od
 
 Wenn s'Gateway de Abo als abgsetzt zeigt, aber Ultimate Multisite das nöd, isch d'Webhook-Benachrichtigung wahrschinlich verlore gange. Du chasch de Mitgliedschaftsstatus manuell i **Ultimate Multisite > Memberships > [Edit Membership]** ändere.
 
-### 6. Prüef d'Ablaufphase (Cron Level)
+### 6. Prüef d'Ablaufphase (Cron Level) {#6-check-the-expiration-grace-period-cron-level}
 
 De cron-Check het sini eigeti Ablufphase (Standard: 3 Täg), bevor en Mitgliedschaft als abglofe markiert wird. Das isch separat vo de Ablufphase vom Frontend-Block. D'Gesamtziit, bis e Site blockiert wird, chan si sii:
 
@@ -165,7 +165,7 @@ De cron-Check het sini eigeti Ablufphase (Standard: 3 Täg), bevor en Mitgliedsc
 
 Zum Bischpil, mit de Standardeinstellungen und ere 7-Tägige Grace Period für de Frontend, chönnt's bis zu 10 Täg nach em `date_expiration` dure, bevor d'Site würkli blockiert wird.
 
-### 7. E Mit Membership manuell ablaufen lah
+### 7. E Mit Membership manuell ablaufen lah {#7-manually-expire-a-membership}
 
 Wenn Sie e Site sofort blockiere müesse, ohni uf de Cron-Zyklus z warte, chönnt Sie de Status vo de Membership manuell ändere:
 
@@ -176,7 +176,7 @@ Wenn Sie e Site sofort blockiere müesse, ohni uf de Cron-Zyklus z warte, chönn
 
 De Frontend-Block tritt bi em nächste Page-Lade in Kraft (abhängig vo de Frontend Block Grace Period für abgelaufeni Memberships, oder sofort für abgseiti Memberships).
 
-## Zämmefassig
+## Zämmefassig {#summary}
 
 D'ganzi Ziitlinie vo de Ablaufsdatum bis zur Site-Blockierig:
 
@@ -208,7 +208,7 @@ Für abgseiti Memberships isch de Wäg kürzer:
   Site frontend wird sofort blockiert
 ```
 
-## Entwickler-Referenz
+## Entwickler-Referenz {#developer-reference}
 
 D'folgende hooks und filters erlauben Ihne, s'Ablaufdatum und s'Blockierungsverhalte z'personalisiere:
 

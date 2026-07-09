@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Additamentum WordPress quod correctiones compatibilitatis pro Tutor LMS in ambitus multisite addit.
 
-## Descriptio
+## Descriptio {#description}
 
 Hoc additamentum correctiones compatibilitatis necessarias praebet ad Tutor LMS in retibus multisite WordPress currendum. Adscriptionem usorum, administrationem instructorum, limites cursuum, aliaque munera multisite-propria tractat.
 
-## Notae
+## Notae {#features}
 
 - **Administratio Tabularum Datorum**: Automate detegit et creat tabulas Tutor LMS deesse quae propter vincula clavium externarum multisite deficiunt
 - **Adscriptio Usorum Multisite**: Tractatores AJAX proprii ad adscriptionem usorum per situs retis administrandam
@@ -24,7 +24,7 @@ Hoc additamentum correctiones compatibilitatis necessarias praebet ad Tutor LMS 
 - **Conspectus Administratorii Proprii**: Index instructorum et interfacies administrationis multisite-conscii
 - **Instrumenta Administratoris**: Interfacies administrationis datorum pro administratoribus retis et situs
 
-## Requisita
+## Requisita {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Hoc additamentum correctiones compatibilitatis necessarias praebet ad Tutor LMS 
 - Installatio WordPress Multisite
 - Additamentum Ultimate Multisite (pro munere limitum cursuum)
 
-## Installatio
+## Installatio {#installation}
 
 1. Fasciculos additamenti in `/wp-content/plugins/tutor-multisite-compatibility/` onerare
 2. Cura ut Tutor LMS installatum et activatum sit
 3. Activa additamentum per tabulam 'Additamenta' in WordPress
 4. Additamentum cum Tutor LMS automate integrabitur
 
-## Structura Fasciculorum
+## Structura Fasciculorum {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Munera ex MU Plugin Translata
+## Munera ex MU Plugin Translata {#functionality-moved-from-mu-plugin}
 
 Hoc additamentum continet munera quae antea in `wp-content/mu-plugins/daves.php` erant:
 
@@ -71,9 +71,9 @@ Hoc additamentum continet munera quae antea in `wp-content/mu-plugins/daves.php`
 - Tractatio adscriptionis usorum multisite
 - Ostensio ID producti cursus
 
-## Administratio Datorum
+## Administratio Datorum {#database-management}
 
-### Problema
+### Problema {#the-problem}
 
 In ambitus multisite WordPress, creatio tabularum Tutor LMS deficit pro tabulis quae vincula clavium externarum ad tabulam usorum habent. Hoc accidit quia:
 
@@ -81,7 +81,7 @@ In ambitus multisite WordPress, creatio tabularum Tutor LMS deficit pro tabulis 
 - Claves externae `wp_2_users` referunt (quae non exstat)
 - Vera tabula usorum est `wp_users` (per rete communicata)
 
-### Solutio
+### Solutio {#the-solution}
 
 Hoc additamentum automate:
 
@@ -92,13 +92,13 @@ Hoc additamentum automate:
    - Creatio novi situs in rete
    - Inspectio manualis tabularum per interfaciem administratoriam
 
-### Tabulae Affectae
+### Tabulae Affectae {#affected-tables}
 
 - `tutor_coupon_usages` - Clavem externam ad tabulam usorum continet
 - `tutor_carts` - Clavem externam ad tabulam usorum continet
 - `tutor_notification_preferences` - Tabula TutorPro cum clave externa ad tabulam usorum
 
-### Interfacies Administratoris
+### Interfacies Administratoris {#admin-interface}
 
 Instrumenta administrationis datorum accede apud:
 
@@ -111,6 +111,6 @@ Interfacies tibi permittit:
 - Configurationem datorum inspicere
 - Informationem status accuratam videre
 
-## Auxilium
+## Auxilium {#support}
 
 Hoc additamentum specialiter pro suggestu KursoPro designatum est. Pro auxilio technico, turmam evolutionis contacta.

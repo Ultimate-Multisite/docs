@@ -3,7 +3,7 @@ title: Trin Trethi
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Trin Trethi
+# Trin Trethi {#tax-handling}
 
 Mae gan Ultimate Multisite fodiwl casglu trethi wedi’i gynnwys yn ein plugin craidd, felly os oes angen i chi gasglu trethi gwerthu ar eich cynlluniau, pecynnau a gwasanaethau, gallwch wneud hynny’n hawdd heb orfod gosod unrhyw ychwanegion.
 
@@ -11,7 +11,7 @@ I gwmnïau sydd wedi’u lleoli yn Ewrop, rydym yn cynnig **ychwanegyn** sy’n 
 
 Nid yw Ultimate Multisite yn ffeilio nac yn talu trethi ar eich rhan i’r llywodraeth; rydym yn syml yn eich helpu i gasglu’r trethi priodol ar adeg y trafodiad. **Bydd angen i chi dalu trethi eich hun o hyd.**
 
-## Galluogi Casglu Trethi
+## Galluogi Casglu Trethi {#enabling-tax-collection}
 
 Nid yw casglu trethi wedi’i alluogi yn ddiofyn. I’w alluogi, mae angen i chi fynd i **Ultimate Multisite > Gosodiadau > Trethi** a thoglo i alluogi’r gosodiad Galluogi Trethi.
 
@@ -25,7 +25,7 @@ Gallwch hefyd weld y gosodiadau trethi ar gyfer cynhyrchion unigol:
 
 ![Gosodiadau trethi ar gyfer cynhyrchion](/img/config/settings-taxes.png)
 
-### Heb gynnwys treth vs. yn cynnwys treth
+### Heb gynnwys treth vs. yn cynnwys treth {#tax-excluded-vs-tax-included}
 
 Yn ddiofyn, nid yw holl brisiau eich cynhyrchion yn cynnwys treth, sy’n golygu nad yw trethi **wedi’u cynnwys** ym mhris y cynnyrch. Os byddwn yn penderfynu y dylai cwsmer dalu trethi ar bryniant penodol, byddwn yn ychwanegu’r trethi **ar ben** yr is-gyfanswm.
 
@@ -37,7 +37,7 @@ Peidiwch ag anghofio **cadw** y newidiadau rydych wedi’u gwneud.
 
 ###
 
-## Creu Cyfraddau Treth
+## Creu Cyfraddau Treth {#creating-tax-rates}
 
 Ar ôl i chi alluogi Casglu Trethi, bydd angen i chi greu cyfraddau treth ar gyfer lleoliadau penodol gan ddefnyddio ein golygydd cyfraddau treth.
 
@@ -51,7 +51,7 @@ Ar dudalen y golygydd cyfraddau treth, gallwch ychwanegu Cyfraddau Treth newydd 
 
 Bydd angen i chi roi **teitl** i bob cyfradd treth (a ddefnyddir ar anfonebau). Yna gallwch ddewis y **wlad** (gofynnol), y **dalaith,** a’r **ddinas** (y ddau’n ddewisol) lle codir y dreth hon. Yn olaf, ychwanegwch y **gyfradd dreth mewn canrannau**.
 
-### Categorïau Treth
+### Categorïau Treth {#tax-categories}
 
 Gallwch hefyd greu sawl Categori Treth, i ychwanegu cyfraddau treth gwahanol ar gyfer gwahanol fathau o gynhyrchion.
 
@@ -73,7 +73,7 @@ Gallwch osod y categori treth ar gyfer cynnyrch penodol drwy fynd i’r **dudale
 
 Ar yr un sgrin honno, gallwch ddiffodd y togl **A yw’n Drethadwy?** i roi gwybod i Ultimate Multisite na ddylai gasglu trethi ar y cynnyrch penodol hwnnw.
 
-## Cefnogaeth VAT Ewropeaidd
+## Cefnogaeth VAT Ewropeaidd {#european-vat-support}
 
 Fel y soniwyd o’r blaen, mae gennym ychwanegyn ar gael i gwsmeriaid yn yr UE sydd â gofynion ychwanegol oherwydd rheoliadau VAT Ewropeaidd.
 
@@ -101,7 +101,7 @@ Os ewch yn ôl i’r **tab Gosodiadau Treth** , fe welwch opsiynau newydd ar gae
 
 <!-- Sgrinlun ddim ar gael: togl Galluogi Cefnogaeth VAT yn y gosodiadau Treth ar ôl actifadu’r ychwanegyn -->
 
-### Tynnu Cyfraddau Treth VAT i mewn
+### Tynnu Cyfraddau Treth VAT i mewn {#pulling-on-vat-tax-rates}
 
 Un o’r offer y mae ein hintegreiddiad yn ei ychwanegu yw’r gallu i lwytho’r cyfraddau treth ar gyfer aelod-wladwriaethau’r UE. Gellir gwneud hynny drwy ymweld â thudalen y golygydd cyfraddau treth ar ôl galluogi cefnogaeth VAT yr UE.
 
@@ -111,7 +111,7 @@ Ar waelod y dudalen, fe welwch yr opsiynau tynnu VAT i mewn. Bydd dewis math o g
 
 Gallwch hefyd olygu’r gwerthoedd ar ôl eu tynnu i mewn. I’w wneud, golygwch linell y tabl sydd ei hangen arnoch yn syml a chliciwch i gadw’r gwerthoedd newydd.
 
-### Dilysu VAT
+### Dilysu VAT {#vat-validation}
 
 Pan fydd cefnogaeth VAT wedi’i galluogi, bydd Ultimate Multisite yn ychwanegu maes ychwanegol at y ffurflen checkout, o dan y maes cyfeiriad bilio. Dim ond i gwsmeriaid sydd wedi’u lleoli yn yr UE y bydd y maes yn ymddangos.
 

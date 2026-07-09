@@ -3,13 +3,13 @@ title: Plantillas de sitio
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Plantillas de sitio (v2)
+# Plantillas de sitio (v2) {#site-templates-v2}
 
 _**NOTA: Este artículo se refiere a Ultimate Multisite versión 2.x. Si estás usando la versión 1.x,**_ **consulta este artículo** _**.**_
 
 Nuestro objetivo al crear una red premium con Ultimate Multisite es automatizar tantos procesos como sea posible, a la vez que damos a nuestros clientes flexibilidad y diferentes opciones para elegir al crear sus sitios web. Una forma sencilla de lograr este equilibrio es usar la función Plantillas de sitio de Ultimate Multisite.
 
-## ¿Qué es una plantilla de sitio?
+## ¿Qué es una plantilla de sitio? {#what-is-a-site-template}
 
 Como su nombre indica, una plantilla de sitio es un sitio base que se puede usar como punto de partida al crear nuevos sitios en tu red.
 
@@ -17,7 +17,7 @@ Esto significa que puedes crear un sitio base, activar diferentes plugins, estab
 
 Eso suena genial, pero ¿cómo creo una nueva plantilla de sitio? Es tan simple como puede ser.
 
-## Crear y editar una nueva plantilla de sitio
+## Crear y editar una nueva plantilla de sitio {#creating-and-editing-a-new-site-template}
 
 Las plantillas de sitio son simplemente sitios normales en tu red. Para crear una nueva plantilla, simplemente puedes ir a **Administrador de red > Ultimate Multisite > Sitios > Añadir sitio.**
 
@@ -35,7 +35,7 @@ En la parte inferior del formulario, verás un interruptor de alternancia **Copi
 
 ![Modal de añadir plantilla de sitio con interruptor de copiar sitio](/img/config/site-templates-list.png)
 
-### Personalizar el contenido de una plantilla de sitio
+### Personalizar el contenido de una plantilla de sitio {#customizing-the-contents-of-a-site-template}
 
 Para personalizar tu plantilla de sitio, simplemente navega a su panel de Dashboard y realiza los cambios que necesites. Puedes crear nuevas entradas, páginas, activar plugins y cambiar el theme activo. Incluso puedes ir al Personalizador y cambiar todo tipo de opciones de personalización.
 
@@ -43,11 +43,11 @@ Para personalizar tu plantilla de sitio, simplemente navega a su panel de Dashbo
 
 Todos esos datos se copiarán cuando un cliente cree un nuevo sitio basado en esa plantilla de sitio.
 
-### Opciones avanzadas
+### Opciones avanzadas {#advanced-options}
 
 Si sabes manejar algo de código personalizado, puedes usar nuestra API de búsqueda y reemplazo para sustituir automáticamente información en el nuevo sitio después de su creación. Esto es útil para cosas como reemplazar nombres de empresa en una página Acerca de, reemplazar el correo electrónico de contacto en la página de Contacto, etc.
 
-### Usar plantillas de sitio
+### Usar plantillas de sitio {#using-site-templates}
 
 Bien, entonces creaste un montón de plantillas de sitio diferentes con distintos diseños, themes y ajustes. ¿Cómo las haces útiles en tu red ahora?
 
@@ -59,7 +59,7 @@ Básicamente, hay dos enfoques que puedes usar ahora (no simultáneamente):
 
   * Permitir que tus clientes elijan las plantillas de sitio ellos mismos durante el registro.
 
-#### Modo 1: Asignar plantilla de sitio
+#### Modo 1: Asignar plantilla de sitio {#mode-1-assign-site-template}
 
 En este modo, tus clientes no podrán elegir una plantilla cuando creen una Account, sino que tú definirás qué plantilla debe usarse en cada uno de tus planes.
 
@@ -71,7 +71,7 @@ Esto te llevará a la página **Editar producto**. En la sección **Opciones del
 
 ![Pestaña de plantilla de sitio del producto con opción de asignar plantilla de sitio](/img/config/product-site-templates.png)
 
-#### Modo 2: Elegir plantilla de sitio disponible
+#### Modo 2: Elegir plantilla de sitio disponible {#mode-2-choose-available-site-template}
 
 En este modo, darás a tus clientes una opción durante el proceso de registro. Podrán seleccionar entre diferentes plantillas de sitio que definas en los ajustes del producto. Tienes una opción para limitar la plantilla de sitio entre las que pueden elegir dentro del producto seleccionado. Esto te permitirá tener diferentes conjuntos de plantillas de sitio en cada producto, lo cual es ideal para destacar diferentes funciones y características en un producto de precio más alto.
 
@@ -79,7 +79,7 @@ En la página **Editar producto**. En la sección **Opciones del producto**, bus
 
 ![Elegir plantillas de sitio disponibles con opciones de comportamiento](/img/config/product-site-templates.png)
 
-### Modo predeterminado: selección de plantilla de sitio en el formulario de pago
+### Modo predeterminado: selección de plantilla de sitio en el formulario de pago {#default-mode-site-template-selection-on-the-checkout-form}
 
 Si deseas que todas tus plantillas de sitio estén disponibles durante el registro, o quizá prefieres no hacer el trabajo adicional de asignar o especificar plantillas de sitio en cada producto que crees. Entonces simplemente puedes establecer la selección de plantilla de sitio en tu **formulario de pago**. Para hacer esto, ve a **Ultimate Multisite > Formularios de pago** y haz clic en **Editar** bajo el formulario que deseas configurar.
 
@@ -93,29 +93,29 @@ En la parte pública, los clientes ven el selector de plantillas durante el chec
 
 ![Selector de plantillas en la parte pública durante el registro](/img/config/frontend-template-chooser.png)
 
-### Opciones de plantillas de sitio
+### Opciones de plantillas de sitio {#site-template-options}
 
 Hay otras funciones de plantillas de sitio disponibles que puedes activar o desactivar en los ajustes de Ultimate Multisite.
 
 ![Opciones de plantillas de sitio en los ajustes de Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Permitir el cambio de plantilla
+#### Permitir el cambio de plantilla {#allow-template-switching}
 
 Activar esta opción permitirá a tus clientes cambiar la plantilla que eligen durante el proceso de registro después de que se hayan creado la cuenta y el sitio. Esto es útil desde el punto de vista del cliente, ya que les permite volver a seleccionar una plantilla si más adelante descubren que su elección original no era la mejor para sus necesidades particulares.
 
-#### Permitir que los usuarios usen su sitio como plantillas
+#### Permitir que los usuarios usen su sitio como plantillas {#allow-users-to-use-their-site-as-templates}
 
 Como los usuarios de subsitios dedicaron tiempo a construir y diseñar su propio sitio, quizá quieran clonarlo y usarlo como una de las plantillas de sitio disponibles al crear otro subsitio en tu red. Esta opción les permitirá lograrlo.
 
-#### Copiar medios al duplicar la plantilla
+#### Copiar medios al duplicar la plantilla {#copy-media-on-template-duplication}
 
 Marcar esta opción copiará los medios subidos en el sitio de plantilla al sitio recién creado. Esto se puede sobrescribir en cada uno de los planes.
 
-#### **Evitar que los motores de búsqueda indexen las plantillas de sitio**
+#### **Evitar que los motores de búsqueda indexen las plantillas de sitio** {#prevent-search-engines-from-indexing-site-templates}
 
 Las plantillas de sitio, como se comenta en este artículo, son una base inicial, pero siguen formando parte de tu red, lo que significa que aún están disponibles para que los motores de búsqueda las encuentren. Esta opción te permitirá ocultar las plantillas de sitio para que los motores de búsqueda puedan indexarlas.
 
-## Rellenar previamente plantillas de sitio con búsqueda y reemplazo automáticos
+## Rellenar previamente plantillas de sitio con búsqueda y reemplazo automáticos {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Una de las funciones más potentes de Ultimate Multisite es la capacidad de añadir texto arbitrario, color y campos de selección al formulario de registro. Una vez que hayamos capturado esos datos, podemos usarlos para rellenar previamente el contenido en ciertas partes de la plantilla de sitio seleccionada. Luego, cuando se publique el nuevo sitio, Ultimate Multisite reemplazará los marcadores de posición con la información real introducida durante el registro.
 
@@ -135,7 +135,7 @@ Ultimate Multisite reemplazará entonces automáticamente los marcadores de posi
 
 ![Marcadores de posición reemplazados con datos del cliente en el sitio](/img/config/site-templates-list.png)
 
-### Resolver el problema de la "plantilla llena de marcadores de posición"
+### Resolver el problema de la "plantilla llena de marcadores de posición" {#solving-the-template-full-of-placeholders-problem}
 
 Todo eso está muy bien, pero nos encontramos con un problema desagradable: ahora nuestras plantillas de sitio, que pueden ser visitadas por nuestros clientes, están llenas de marcadores de posición feos que no dicen mucho.
 

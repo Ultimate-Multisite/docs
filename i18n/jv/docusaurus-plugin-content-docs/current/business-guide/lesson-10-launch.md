@@ -3,19 +3,19 @@ title: 'Piwulang 10: Dina Peluncuran'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Piwulang 10: Dina Peluncuran
+# Piwulang 10: Dina Peluncuran {#lesson-10-launch-day}
 
 Kabeh wis dibangun. Sadurunge sampeyan mbukak lawang, piwulang iki nuntun dhaptar priksa sadurunge peluncuran kanggo mesthekake ora ana sing rusak, ilang, utawa nggawe isin.
 
-## Panggonan Pungkasan Kita
+## Panggonan Pungkasan Kita {#where-we-left-off}
 
 FitSite wis nduweni cithakan, paket, proses pambayaran, branding, onboarding, lan rega sing kabeh wis dikonfigurasi. Saiki kita verifikasi kabeh bisa digunakake lan diluncurake.
 
-## Dhaptar Priksa Sadurunge Peluncuran
+## Dhaptar Priksa Sadurunge Peluncuran {#pre-launch-checklist}
 
 Rampungna saben item. Aja ana sing dilewati.
 
-### Infrastruktur Platform
+### Infrastruktur Platform {#platform-infrastructure}
 
 - [ ] Hosting stabil lan kinerjane apik nalika ana beban
 - [ ] Wildcard SSL aktif lan kabeh subdomain dilayani liwat HTTPS
@@ -23,7 +23,7 @@ Rampungna saben item. Aja ana sing dilewati.
 - [ ] Cadangan wis dikonfigurasi lan dites (pulihake paling ora siji kanggo verifikasi)
 - [ ] Monitoring wis disiapake -- sampeyan bakal ngerti yen platform mati
 
-### Cithakan
+### Cithakan {#templates}
 
 - [ ] Kabeh telung cithakan mbukak kanthi bener ing situs anyar
 - [ ] Konten placeholder migunani lan bebas saka salah ketik
@@ -32,7 +32,7 @@ Rampungna saben item. Aja ana sing dilewati.
 - [ ] Kacepetan muat kaca bisa ditampa (tes nganggo piranti kaya GTmetrix utawa PageSpeed Insights)
 - [ ] Ora ana pranala rusak utawa aset ilang ing cithakan apa wae
 
-### Paket lan Produk
+### Paket lan Produk {#plans-and-products}
 
 - [ ] Kabeh telung paket aktif lan katon
 - [ ] Katrangan paket akurat lan khusus kanggo niche
@@ -42,7 +42,7 @@ Rampungna saben item. Aja ana sing dilewati.
 - [ ] Tawaran tambahan pesenan katon kanthi bener nalika proses pambayaran
 - [ ] Watesan piranti tambahan lan tema dileksanakake kanthi bener miturut saben paket
 
-### Alur Pambayaran
+### Alur Pambayaran {#checkout-flow}
 
 - [ ] Rampungake pendaftaran tes lengkap ing saben paket (gunakake mode pambayaran tes)
 - [ ] Pilihan cithakan nuduhake cithakan sing bener miturut saben paket
@@ -52,7 +52,7 @@ Rampungna saben item. Aja ana sing dilewati.
 - [ ] Pelanggan bisa langsung mlebu menyang situs anyar
 - [ ] Kode diskon bisa digunakake kanthi bener
 
-### Branding
+### Branding {#branding}
 
 - [ ] Kaca login nuduhake branding FitSite
 - [ ] Admin dashboard nuduhake branding FitSite
@@ -60,7 +60,7 @@ Rampungna saben item. Aja ana sing dilewati.
 - [ ] Faktur ditampilake kanthi bener nganggo rincian bisnis sampeyan
 - [ ] Situs pemasaran wis urip lan nyambung menyang formulir pambayaran
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Widget Quick Start katon ing dashboard pelanggan anyar
 - [ ] Kabeh pranala Quick Start nuju menyang kaca sing bener
@@ -68,7 +68,7 @@ Rampungna saben item. Aja ana sing dilewati.
 - [ ] Artikel basis kawruh wis diterbitake lan bisa diakses
 - [ ] Kaca Account nuduhake informasi paket lan pilihan upgrade sing bener
 
-### Hukum lan Bisnis
+### Hukum lan Bisnis {#legal-and-business}
 
 - [ ] Syarat layanan wis diterbitake lan disambungake saka proses pambayaran
 - [ ] Kabijakan privasi wis diterbitake lan bisa diakses
@@ -77,11 +77,11 @@ Rampungna saben item. Aja ana sing dilewati.
 - [ ] Gerbang pambayaran ana ing mode live (dudu mode tes)
 - [ ] Konfigurasi pajak bener kanggo yurisdiksi sampeyan
 
-## Peluncuran Alus vs. Peluncuran Keras
+## Peluncuran Alus vs. Peluncuran Keras {#soft-launch-vs-hard-launch}
 
 Pertimbangna peluncuran rong fase:
 
-### Fase 1: Peluncuran Alus
+### Fase 1: Peluncuran Alus {#phase-1-soft-launch}
 
 Undang 5-10 pemilik studio fitness kanggo ndhaptar sadurunge peluncuran umum. Iki pelanggan beta sampeyan. Wenehana diskon gedhe (50% diskon selawase, utawa gratis 3 wulan) minangka ijol-ijolan kanggo:
 
@@ -91,7 +91,7 @@ Undang 5-10 pemilik studio fitness kanggo ndhaptar sadurunge peluncuran umum. Ik
 
 Iki menehi sampeyan umpan balik pelanggan nyata lan situs live kanggo dituduhake sadurunge sampeyan mbukak kanggo umum.
 
-### Fase 2: Peluncuran Umum
+### Fase 2: Peluncuran Umum {#phase-2-public-launch}
 
 Sawise umpan balik peluncuran alus dilebokake:
 
@@ -100,7 +100,7 @@ Sawise umpan balik peluncuran alus dilebokake:
 - Miwiti akuisisi pelanggan (Piwulang 11)
 - Umumake ing saluran industri fitness sing relevan
 
-## Tindakan Dina Peluncuran
+## Tindakan Dina Peluncuran {#launch-day-actions}
 
 Ing dina sampeyan mbukak kanggo umum:
 
@@ -110,7 +110,7 @@ Ing dina sampeyan mbukak kanggo umum:
 4. **Siap kasedhiya** -- pelanggan nyata pisanan sampeyan bisa uga butuh pitulungan, lan tanggapan cepet mbangun kapercayan
 5. **Rayakna sedhela** -- banjur bali kerja
 
-## Apa Sing Bisa Salah
+## Apa Sing Bisa Salah {#what-can-go-wrong}
 
 Siapna kanggo:
 
@@ -120,7 +120,7 @@ Siapna kanggo:
 - **Kinerja nalika ana beban**: Yen sampeyan entuk lonjakan traffic, ngertia carane ngeskalasi hosting sampeyan
 - **Kebingungan pelanggan**: Siapna basis kawruh lan saluran dukungan sampeyan
 
-## Jaringan FitSite Nganti Saiki
+## Jaringan FitSite Nganti Saiki {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Sing Kita Bangun Ing Piwulang Iki
+## Sing Kita Bangun Ing Piwulang Iki {#what-we-built-this-lesson}
 
 - **Dhaptar priksa sadurunge peluncuran sing komprehensif** sing nyakup infrastruktur, konten, pambayaran, lan hukum
 - **Strategi peluncuran alus** kanggo entuk umpan balik nyata sadurunge mbukak kanggo umum

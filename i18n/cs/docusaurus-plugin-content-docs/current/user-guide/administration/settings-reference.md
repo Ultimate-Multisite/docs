@@ -3,11 +3,11 @@ title: Reference nastavení
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Přehled nastavení
+# Přehled nastavení {#settings-reference}
 
 Tato stránka sleduje nastavení, která ovlivňují každodenní správu a nedávné změny chování v Ultimate Multisite.
 
-## Další možnosti
+## Další možnosti {#other-options}
 
 Oblast **Další možnosti** se zobrazuje v části **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Oblast **Další možnosti** se zobrazuje v části **Ultimate Multisite > Setti
 |---|---|
 | **Enable Jumper** | Zobrazuje nástroj Jumper pro rychlou navigaci v administrační oblasti. Použijte ho k přechodu přímo na obrazovky Ultimate Multisite, síťové objekty a podporované administrační cíle. Vypněte ho, pokud nechcete, aby byla tato zkratka viditelná. |
 
-## Hlášení chyb a telemetrie
+## Hlášení chyb a telemetrie {#error-reporting-and-telemetry}
 
 Předchozí nastavení přihlášení k hlášení chyb bylo ze stránky nastavení odstraněno. Anonymní telemetrie je vypnutá a neexistuje žádný přepínač v UI, kterým by ji bylo možné povolit.
 
 Pokud udržujete interní runbooky nebo snímky obrazovky pro stránku nastavení, odstraňte odkazy na staré pole přihlášení k hlášení chyb, aby správci nehledali nastavení, které už není přítomné.
 
-## Nastavení importu/exportu
+## Nastavení importu/exportu {#importexport-settings}
 
 Karta nastavení **Import/Export** popisuje, která nastavení ovládá, a odkazuje přímo na **Ultimate Multisite > Site Export** pro archivy webu a sítě. Kartu nastavení použijte pro konfiguraci importu/exportu, **Tools > Export & Import** použijte pro workflow exportu/importu jednoho webu a nástroj Site Export použijte, když potřebujete úplný archiv Network Export.
 
-## Upozornění na zůstatek Domain Seller HostAfrica
+## Upozornění na zůstatek Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Když je addon Domain Seller připojen k HostAfrica, správci sítě nyní uvidí zavíratelné upozornění na nízký zůstatek, když je zůstatek účtu prodejce příliš nízký pro spolehlivé zpracování registrací nebo prodloužení domén.
 
 Berte toto oznámení jako provozní upozornění: doplňte zůstatek prodejce HostAfrica před přijímáním dalších placených registrací domén, poté se vraťte do nastavení Domain Seller nebo na obrazovku monitorování domén a potvrďte, že registrace a prodloužení mohou normálně pokračovat.
 
-## Nastavení konektorů poskytovatelů AI
+## Nastavení konektorů poskytovatelů AI {#ai-provider-connector-settings}
 
 Nastavení konektorů poskytovatelů AI nyní zpřístupňují pouze podporované fondy OAuth účtů:
 

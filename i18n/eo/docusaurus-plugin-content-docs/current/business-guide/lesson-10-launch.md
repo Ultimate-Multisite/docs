@@ -3,19 +3,19 @@ title: 'Leciono 10: Lanĉotago'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leciono 10: Lanĉotago
+# Leciono 10: Lanĉotago {#lesson-10-launch-day}
 
 Ĉio estas konstruita. Antaŭ ol vi malfermas la pordojn, ĉi tiu leciono trairas la antaŭlanĉan kontrolliston por certigi, ke nenio estas rompita, mankanta aŭ embarasa.
 
-## Kie Ni Ĉesis
+## Kie Ni Ĉesis {#where-we-left-off}
 
 FitSite havas ŝablonojn, planojn, pagprocezon, markadon, enkondukon, kaj prezadon ĉiuj agorditaj. Nun ni kontrolas, ke ĉio funkcias, kaj lanĉas publike.
 
-## Antaŭlanĉa Kontrollisto
+## Antaŭlanĉa Kontrollisto {#pre-launch-checklist}
 
 Tralaboru ĉiun eron. Ne preterlasu iun ajn.
 
-### Platforma Infrastrukturo
+### Platforma Infrastrukturo {#platform-infrastructure}
 
 - [ ] Gastigado estas stabila kaj funkcias bone sub ŝarĝo
 - [ ] Ĝenerala SSL estas aktiva kaj ĉiuj subdomajnoj serviĝas per HTTPS
@@ -23,7 +23,7 @@ Tralaboru ĉiun eron. Ne preterlasu iun ajn.
 - [ ] Sekurkopioj estas agorditaj kaj testitaj (restarigu almenaŭ unu por kontroli)
 - [ ] Monitorado estas starigita -- vi scios se la platformo paneas
 
-### Ŝablonoj
+### Ŝablonoj {#templates}
 
 - [ ] Ĉiuj tri ŝablonoj ŝargiĝas ĝuste ĉe novaj retejoj
 - [ ] Loktenila enhavo estas utila kaj sen tajperaroj
@@ -32,7 +32,7 @@ Tralaboru ĉiun eron. Ne preterlasu iun ajn.
 - [ ] Paĝa ŝargorapido estas akceptebla (testu per ilo kiel GTmetrix aŭ PageSpeed Insights)
 - [ ] Neniuj rompitaj ligiloj aŭ mankantaj rimedoj en iu ŝablono
 
-### Planoj kaj Produktoj
+### Planoj kaj Produktoj {#plans-and-products}
 
 - [ ] Ĉiuj tri planoj estas aktivaj kaj videblaj
 - [ ] Planaj priskriboj estas precizaj kaj niĉospecifaj
@@ -42,7 +42,7 @@ Tralaboru ĉiun eron. Ne preterlasu iun ajn.
 - [ ] Aldonproponoj aperas ĝuste dum la pagprocezo
 - [ ] Limigoj pri plugin kaj theme estas ĝuste devigitaj laŭ plano
 
-### Pagproceza Fluo
+### Pagproceza Fluo {#checkout-flow}
 
 - [ ] Plenumu kompletan testan aliĝon ĉe ĉiu plano (uzu testan pagreĝimon)
 - [ ] Ŝablona elekto montras la ĝustajn ŝablonojn laŭ plano
@@ -52,7 +52,7 @@ Tralaboru ĉiun eron. Ne preterlasu iun ajn.
 - [ ] Kliento povas tuj ensaluti al sia nova retejo
 - [ ] Rabatkodoj funkcias ĝuste
 
-### Markado
+### Markado {#branding}
 
 - [ ] Ensaluta paĝo montras la markadon de FitSite
 - [ ] Admin Dashboard montras la markadon de FitSite
@@ -60,7 +60,7 @@ Tralaboru ĉiun eron. Ne preterlasu iun ajn.
 - [ ] Fakturoj montriĝas ĝuste kun viaj komercaj detaloj
 - [ ] Merkatika retejo estas viva kaj ligas al la pagformularo
 
-### Enkonduko
+### Enkonduko {#onboarding}
 
 - [ ] Fenestraĵo Rapida Komenco aperas sur novaj klientaj Dashboard-oj
 - [ ] Ĉiuj ligiloj de Rapida Komenco direktas al la ĝustaj paĝoj
@@ -68,7 +68,7 @@ Tralaboru ĉiun eron. Ne preterlasu iun ajn.
 - [ ] Artikoloj de la sciobazo estas publikigitaj kaj alireblaj
 - [ ] Account-paĝo montras ĝustajn planajn informojn kaj ĝisdatigajn opciojn
 
-### Jura kaj Komerca
+### Jura kaj Komerca {#legal-and-business}
 
 - [ ] Servokondiĉoj estas publikigitaj kaj ligitaj de la pagprocezo
 - [ ] Privateca politiko estas publikigita kaj alirebla
@@ -77,11 +77,11 @@ Tralaboru ĉiun eron. Ne preterlasu iun ajn.
 - [ ] Pagopordego estas en viva reĝimo (ne testa reĝimo)
 - [ ] Imposta agordo estas ĝusta por via jurisdikcio
 
-## Mola Lanĉo kontraŭ Malmola Lanĉo
+## Mola Lanĉo kontraŭ Malmola Lanĉo {#soft-launch-vs-hard-launch}
 
 Konsideru dufazan lanĉon:
 
-### Fazo 1: Mola Lanĉo
+### Fazo 1: Mola Lanĉo {#phase-1-soft-launch}
 
 Invitu 5-10 posedantojn de taŭgecaj studioj aliĝi antaŭ la publika lanĉo. Ĉi tiuj estas viaj beta-klientoj. Proponu al ili signifan rabaton (50% rabate dumvive, aŭ 3 monatojn senpage) kontraŭ:
 
@@ -91,7 +91,7 @@ Invitu 5-10 posedantojn de taŭgecaj studioj aliĝi antaŭ la publika lanĉo. Ĉ
 
 Ĉi tio donas al vi realan klientan reagon kaj vivajn retejojn por montri antaŭ ol vi malfermas al la publiko.
 
-### Fazo 2: Publika Lanĉo
+### Fazo 2: Publika Lanĉo {#phase-2-public-launch}
 
 Post kiam reagoj de la mola lanĉo estas enkorpigitaj:
 
@@ -100,7 +100,7 @@ Post kiam reagoj de la mola lanĉo estas enkorpigitaj:
 - Komencu klientakiron (Leciono 11)
 - Anoncu en koncernaj kanaloj de la taŭgeca industrio
 
-## Lanĉotagaj Agoj
+## Lanĉotagaj Agoj {#launch-day-actions}
 
 En la tago kiam vi publikiĝas:
 
@@ -110,7 +110,7 @@ En la tago kiam vi publikiĝas:
 4. **Estu disponebla** -- viaj unuaj veraj klientoj eble bezonos helpon, kaj rapida respondo konstruas fidon
 5. **Mallonge festu** -- poste reiru al laboro
 
-## Kio Povas Fuŝiĝi
+## Kio Povas Fuŝiĝi {#what-can-go-wrong}
 
 Estu preta por:
 
@@ -120,7 +120,7 @@ Estu preta por:
 - **Rendimento sub ŝarĝo**: Se vi ricevas trafikpinton, sciu kiel skali vian gastigadon
 - **Klienta konfuzo**: Havu viajn sciobazon kaj subtenkanalojn pretaj
 
-## La FitSite Network Ĝis Nun
+## La FitSite Network Ĝis Nun {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Kion Ni Konstruis en Ĉi Tiu Leciono
+## Kion Ni Konstruis en Ĉi Tiu Leciono {#what-we-built-this-lesson}
 
 - **Ampleksa antaŭlanĉa kontrollisto** kovranta infrastrukturon, enhavon, pagojn, kaj jurajn aferojn
 - **Strategio por mola lanĉo** por ricevi realajn reagojn antaŭ publikiĝo

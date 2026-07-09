@@ -3,9 +3,9 @@ title: Mailster Changelog
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster Changelog
+# Mailster Changelog {#mailster-changelog}
 
-### ১.০.০
+### ১.০.০ {#100}
 * প্ৰথম মুকলি (Initial release)
 * নাম লেখোৱা বা ধন দি স্বয়ংক্রিয় সাবস্ক্রයිবাৰ Sync
 * সামগ্ৰী-বিশেষ তালিকা নিৰ্যাস (Product-specific list assignments)

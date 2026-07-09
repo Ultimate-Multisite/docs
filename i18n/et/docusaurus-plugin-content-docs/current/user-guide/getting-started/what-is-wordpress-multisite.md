@@ -3,7 +3,7 @@ title: Mis on WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Mis on WordPress Multisite?
+# Mis on WordPress Multisite? {#what-is-wordpress-multisite}
 
 WordPressi peal core'is funktsioon, mida nimetatakse 'Multisite'. See funktsioon algab oma juurest 2010. aasta WordPress 3.0 loomise ajast. Seal ​​nate on saanud mitmeid versioid, mille eesmärk on uute funktsioonide sissejuhatamine ja turvalisuse tugevdamine.
 
@@ -11,7 +11,7 @@ WordPressi peal core'is funktsioon, mida nimetatakse 'Multisite'. See funktsioon
 
 ##
 
-## Mis on loodud WordPress Multisite?
+## Mis on loodud WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite on WordPress funktsioon, mis võimaldab mitme saiti jagada ühtise WordPress-installaatsiooni abil. Kui multisite aktiveeritakse, muutub algne WordPress-sait selleks, et toetada seda, mida tavaliselt nimetatakse **saitse võrrakuks**.
 
@@ -23,7 +23,7 @@ See on üks multisite'i suurimaid eeliseid, kuna see võimaldab teil kasvada hal
 
 ##
 
-## Subdomaain või subdirektorium?
+## Subdomaain või subdirektorium? {#subdomain-or-subdirectory}
 
 WordPress Multisite'i käivitamiseks on kaks režiimi – ja peate valima üks, kui muutsite oma tavalise WordPress-installaatsiooni multisite'iks:
 
@@ -49,7 +49,7 @@ Samal ajal, URL-struktuurist tõttu arvestavad Google ja suurim osa teistest ots
 
 Subdirektoriumi režiimi vastupidi on alatesid subdomaini põhjal oleva võrku otsingumootorid näha eraldi veebilehti, mis tähendab, et ühe alatesil oleva sisu ei mõjuta üldse teiste alatesiteide SEO jõudluse pealt.
 
-## Superadmin
+## Superadmin {#the-super-admin}
 
 Üks-saiti WordPressi installatsiooniga saate lisada ilma piirata kasutajate arv ja annada neile erinevad kasutajarolid ja eri lubanded.
 
@@ -63,7 +63,7 @@ Pluginide ja teemade saab installida või eemaldada ainult network admin panelis
 
 _Noot: nagu näed, annuse mina oma võrku ja antud superadmini status annab sellele kasutajale täieliku kontrolli teie võrkule. Näiteks võivad teised superadministraanid isegi eemaldada teie superadmini statusi, mis lõpetab teil pääsu oma võrku administraatorpaneelile. Et võimaldada Ultimate Multisite klientide saada detailset kontrolli selle üle, mida lisasuperadministraanid saavad teha, meil on lisaks add-on nimega Support Agents. See add-on võimaldab teil luua veelgi uut kasutaja – agenti – ainult neile lubatud õigustega, mida nad võrku tehtud ülesannete täitmiseks vajavad._
 
-## Mis on jagatud subsitide vahel ja mis ei ole
+## Mis on jagatud subsitide vahel ja mis ei ole {#what-is-shared-among-subsites-and-what-is-not}
 
 Kides nagu juba mainisime, WordPress multisite olulise eelise kui kõik subsitid jagavad samad konfiguratsioonid, peamised failid, teemad, pluginid, WordPressi peamised failid jne.
 
@@ -73,7 +73,7 @@ Kuid on elemente, mida on hästi seotud iga subsiti põhjal.
 - Iga subsitil on oma eraldatud administraatorpaneel ja saab aktiveerida või deaktiveerida pluginid või teeme, välja arvatud kui need olid võrkul aktiivsed superadministraanilt poolt.
 - Üksikud database tabelid luuakse iga subsiti jaoks, mida tähendab, et sisu (posts), kommentaarid, lehed, seadistused ja veel palju on eraldatud iga subsiti jaoks.
 
-## Kasutaja haldamine WordPress Multisite'is
+## Kasutaja haldamine WordPress Multisite'is {#user-management-on-wordpress-multisite}
 
 WordPress multisite'is üks haiglaslikku küsimust on kasutaja haldamine. WordPressi kasutajate tabel on üks väheid, mis jagatakse kõigis subsitides.
 
@@ -97,7 +97,7 @@ _Märkus: Me teame, kui halva see võib olla teie kasutusjuhaga sõltuvalt, seeg
 
 Kuidub kasutajate tabel on jagatud, kuid subsite-administraatorid või superadministratorid võivad kasutajaid lisada ja eemaldada subsite'ilt, ning neil võib olla erinevad kasutajarolid erinevates subsite'ides.
 
-## Patutekuhulgu arvestused
+## Patutekuhulgu arvestused {#performance-considerations}
 
 WordPress multisite on väga võimas, kui puhutame selle võimalike platvormide arvuga. Seda saab testida selle abil, et [WordPress.com](https://WordPress.com), Edublogs ja Campuspress on kõik multisite-põhised teenused, ja iga hosti tuhandisi sisse.
 

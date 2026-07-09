@@ -4,11 +4,11 @@ title: Hidlydd - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Hidlydd: wu_post_default_status
+# Hidlydd: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Yn hidlo data’r gwrthrych cyn iddo gael ei storio yn y gronfa ddata.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yn hidlo data’r gwrthrych cyn iddo gael ei storio yn y gronfa ddata.
 | $post_type | `string` | Y math o bost. |
 | $this | `\Base_Model` | Enghraifft y gwrthrych. |
 
-### Ers
+### Ers {#since}
 
 - 2.0.0
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Diffinnir yn [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) ar linell 320

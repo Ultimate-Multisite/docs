@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Emails
+# Emails {#emails}
 
 Ultimate Multisite: Emails dodatak omogućuje vlasnicima mreže dodjelu i upravljanje korisničkim računima e-pošte uz web-mjesta i članstva. Verzija 1.1.0 dodaje upravljanje računima e-pošte za korisnike, webmail jedinstvenu prijavu, podršku za CyberPanel prosljeđivače i poboljšanja dodjele tijekom checkouta.
 
-## Ključne značajke
+## Ključne značajke {#key-features}
 
 * **Widget korisničkog računa e-pošte**: Korisnici mogu stvarati i upravljati poštanskim sandučićima sa svoje stranice računa nakon što imaju aktivno članstvo e-pošte.
 * **Webmail SSO i čarobne poveznice**: Korisnici mogu otvoriti webmail izravno sa stranice računa uz autentifikaciju jednim klikom kada to pružatelj podržava.
@@ -20,14 +20,14 @@ Ultimate Multisite: Emails dodatak omogućuje vlasnicima mreže dodjelu i upravl
 * **CyberPanel prosljeđivači**: Mreže temeljene na CyberPanelu mogu stvarati i upravljati prosljeđivačima e-pošte kao dio tijeka usluge e-pošte.
 * **Postavke svjesne pružatelja**: Stranica postavki filtrira pružatelje na aktivne, konfigurirane integracije kako bi administratori vidjeli samo upotrebljive opcije.
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 * Ultimate Multisite 2.0.0 ili noviji
 * WordPress Multisite instalacija
 * Barem jedna konfigurirana integracija pružatelja e-pošte
 * API vjerodajnice pružatelja s dopuštenjem za stvaranje poštanskih sandučića, promjenu lozinki i izdavanje poveznica za pristup webmailu gdje je podržano
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Prenesite datoteke plugina u `/wp-content/plugins/ultimate-multisite-emails`.
 2. Mrežno aktivirajte dodatak iz **Plugins** u WordPress mrežnoj administraciji.
@@ -35,7 +35,7 @@ Ultimate Multisite: Emails dodatak omogućuje vlasnicima mreže dodjelu i upravl
 4. Omogućite integracije pružatelja e-pošte koje želite da korisnici upotrebljavaju.
 5. Spremite postavke, zatim testirajte stvaranje računa s korisnikom koji nije produkcijski ili staging web-mjestom.
 
-## Kako funkcionira tijek prodaje e-pošte
+## Kako funkcionira tijek prodaje e-pošte {#how-the-email-seller-flow-works}
 
 Prodaja e-pošte ima dva odvojena sloja:
 
@@ -53,7 +53,7 @@ To znači da je uobičajen korisnički tijek:
 5. Ploča **Računi e-pošte** pojavljuje se za to aktivno članstvo e-pošte.
 6. Korisnik klikne **Stvori račun**, unosi lokalni dio kao što je `info`, postavlja lozinku, a dodatak stvara `info@their-domain.com` kod konfiguriranog pružatelja.
 
-## Konfiguriranje proizvoda e-pošte
+## Konfiguriranje proizvoda e-pošte {#configure-an-email-product}
 
 Stvorite jedan proizvod e-pošte za svaki paket e-pošte koji želite prodavati ili poklanjati. Ako ste novi u postavljanju proizvoda, počnite s [Stvaranje vašeg prvog pretplatničkog proizvoda](../../user-guide/configuration/creating-your-first-subscription-product), a zatim se vratite ovdje za postavke specifične za e-poštu.
 
@@ -67,7 +67,7 @@ Stvorite jedan proizvod e-pošte za svaki paket e-pošte koji želite prodavati 
 
 Samo pružatelji koji su omogućeni i potpuno konfigurirani na stranici **Integrations** pojavljuju se u biraču pružatelja. Ako je birač prazan, prvo konfigurirajte i testirajte pružatelja.
 
-## Dodavanje e-pošte u checkout
+## Dodavanje e-pošte u checkout {#add-email-to-checkout}
 
 Proizvodi e-pošte obično se nude kao dodaci planu web-mjesta. Pogledajte [Checkout obrasci](../../user-guide/configuration/checkout-forms) za opći tijek rada uređivača checkouta.
 
@@ -79,7 +79,7 @@ Proizvodi e-pošte obično se nude kao dodaci planu web-mjesta. Pogledajte [Chec
 
 Domena e-pošte preuzima se iz korisnikove domene web-mjesta. Korisnici ne unose domenu e-pošte u koraku proizvoda e-pošte.
 
-## Upravljanje e-poštom korisničkog računa
+## Upravljanje e-poštom korisničkog računa {#customer-account-email-management}
 
 Verzija 1.1.0 dodaje widget za upravljanje e-poštom na stranicu korisničkog računa. Upotrijebite ga kada korisnici trebaju samostalno stvarati i održavati poštanske sandučiće za vlastita web-mjesta.
 
@@ -94,7 +94,7 @@ Widget upotrebljava sustav trenutačnih stavki stranice računa Ultimate Multisi
 
 Ako korisnik ne vidi panel e-pošte, provjerite ima li **aktivno članstvo za proizvod e-pošte**, je li članstvo povezano s domenom web-mjesta i ima li proizvod konfiguriranog pružatelja usluge.
 
-## Davanje besplatnog plana e-pošte korisniku
+## Davanje besplatnog plana e-pošte korisniku {#giving-a-customer-a-free-email-plan}
 
 Da biste korisniku dali e-poštu bez naplate, prvo dodijelite **pravo na e-poštu**, zatim izradite poštanski sandučić ili dopustite korisniku da ga izradi.
 
@@ -106,7 +106,7 @@ Preporučene opcije:
 
 Ako želite da korisnik sam upravlja poštanskim sandučićem sa stranice Accounta, provjerite ima li aktivno članstvo za e-poštu za domenu. Ručno izrađen poštanski sandučić kod pružatelja usluge bez tog članstva može postojati, ali korisnik za njega možda neće vidjeti panel e-pošte za samoposluživanje.
 
-## Računi koje je izradio administrator i „nema broja narudžbe”
+## Računi koje je izradio administrator i „nema broja narudžbe” {#admin-created-accounts-and-no-order-number}
 
 Administratorska stranica **Računi e-pošte** izrađuje ili uređuje poštanski sandučić kod pružatelja usluge. To nije prvi korak za prodaju ili dodjelu plana e-pošte.
 
@@ -122,7 +122,7 @@ Umjesto toga upotrijebite ovaj redoslijed koraka:
 
 Ako trebate samo izraditi poštanski sandučić kod pružatelja usluge za korisnika i ne trebate upravljanje sa stranice Accounta za samoposluživanje, račun koji je izradio administrator može biti dovoljan. Ako želite da ga korisnik vidi i upravlja njime u Ultimate Multisite, izradite i članstvo za e-poštu.
 
-## Webmail SSO i prijava čarobnom poveznicom
+## Webmail SSO i prijava čarobnom poveznicom {#webmail-sso-and-magic-link-login}
 
 Webmail SSO daje korisnicima izravnu radnju **Otvori webmail** sa stranice Accounta. Kada to podržava aktivni pružatelj usluge, dodatak traži kratkotrajni pristupni URL i preusmjerava korisnika u webmail bez traženja da kopira vjerodajnice poštanskog sandučića.
 
@@ -134,7 +134,7 @@ Ponašanje pružatelja usluga može se razlikovati:
 
 Omogućite pristup webmailu samo za pružatelje usluga za koje ste konfigurirali potrebne API vjerodajnice. Ako radnja nedostaje za pružatelja usluge, najprije potvrdite da je pružatelj usluge aktivan, konfiguriran i da podržava poveznice za prijavu u webmail.
 
-## Omogućavanje tijekom naplate
+## Omogućavanje tijekom naplate {#checkout-provisioning}
 
 Dodatak tijekom naplate omogućuje **kontekst članstva** za e-poštu. Bilježi pružatelja usluge, ograničenje računa, kvotu i domenu web-mjesta kako bi korisnici nakon kupnje mogli izraditi vlastita imena poštanskih sandučića sa stranice Accounta.
 
@@ -148,15 +148,15 @@ Preporučeno uvođenje:
 
 Ako omogućavanje ne uspije, korisnički Account i članstvo i dalje mogu postojati, dok članstvo za e-poštu ili poštanski sandučić kod pružatelja usluge zahtijeva administratorsko praćenje. Provjerite zapise aktivnosti Ultimate Multisite i zapise pružatelja usluge prije ponovnog pokušaja.
 
-## CyberPanel prosljeđivači e-pošte
+## CyberPanel prosljeđivači e-pošte {#cyberpanel-email-forwarders}
 
 Za mreže koje podržava CyberPanel, verzija 1.1.0 dodaje podršku za prosljeđivače e-pošte. Upotrijebite prosljeđivače kada korisnicima trebaju adrese poput `info@customer-domain.test` za preusmjeravanje pošte u drugi pretinac bez izrade punog poštanskog sandučića.
 
 Prije ponude prosljeđivača potvrdite da je CyberPanel integracija konfigurirana i dostupna. Pogledajte vodič [CyberPanel integracija](../../user-guide/administration/cyberpanel-integration) za potrebne konstante hosta, korisničkog imena, lozinke i paketa.
 
-## Dnevnik promjena
+## Dnevnik promjena {#changelog}
 
-### Verzija 1.1.0 - Objavljeno 2026-05-05
+### Verzija 1.1.0 - Objavljeno 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Novo: Webmail SSO i prijava putem magic-linka — korisnici mogu pristupiti webmailu izravno iz svog accounta uz autentikaciju jednim klikom.
 * Novo: Funkcionalnost promjene lozinke dodana je u widget za upravljanje email računom.
@@ -170,28 +170,28 @@ Prije ponude prosljeđivača potvrdite da je CyberPanel integracija konfiguriran
 * Popravak: Per-request log spam uklonjen je iz inicijalizacije Email_Account_Manager.
 * Poboljšano: Stranica postavki sada filtrira prikaz samo na aktivne i konfigurirane pružatelje email usluga.
 
-## Često postavljana pitanja
+## Često postavljana pitanja {#frequently-asked-questions}
 
-### Mogu li korisnici stvarati vlastite email račune?
+### Mogu li korisnici stvarati vlastite email račune? {#can-customers-create-their-own-email-accounts}
 
 Da. Kada korisnik ima aktivno email članstvo za domenu i proizvod dopušta dodatne račune, korisnici mogu stvarati i upravljati vlastitim poštanskim sandučićima sa stranice accounta.
 
-### Podržava li svaki pružatelj Webmail SSO?
+### Podržava li svaki pružatelj Webmail SSO? {#does-every-provider-support-webmail-sso}
 
 Ne. Podrška za SSO i magic-link ovisi o aktivnom pružatelju email usluga. Pružatelji bez API-ja za pristupne poveznice i dalje mogu podržavati stvaranje poštanskih sandučića i promjene lozinki.
 
-### Mogu li administratori stvarati email račune za korisnike?
+### Mogu li administratori stvarati email račune za korisnike? {#can-administrators-create-email-accounts-for-customers}
 
 Da. Administratori mogu stvarati email račune iz administratorskog sučelja, uključujući postavljanje početne lozinke pri stvaranju accounta. Za korisničko samostalno upravljanje također provjerite ima li korisnik aktivno email članstvo za domenu.
 
-### Mogu li pokloniti email račun besplatno?
+### Mogu li pokloniti email račun besplatno? {#can-i-give-an-email-account-away-for-free}
 
 Da. Stvorite besplatan Email proizvod ili proizvod s nultom cijenom i dodajte ga kao aktivno članstvo korisniku, ili dopustite korisniku da dovrši checkout s popustom od 100%. Nakon što email članstvo postoji, korisnik ili administrator može stvoriti stvarni poštanski sandučić.
 
-### Zašto dodjela email računa traži broj narudžbe?
+### Zašto dodjela email računa traži broj narudžbe? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Polje Membership traži postojeće Ultimate Multisite članstvo prema njegovom referentnom/broju narudžbe. Ako korisnik nije kupio email proizvod i niste ručno stvorili email članstvo, nema email članstva/narudžbe za dodjelu. Najprije stvorite email članstvo, a zatim stvorite ili dodijelite poštanski sandučić.
 
-### Jesu li prosljeđivači isto što i poštanski sandučići?
+### Jesu li prosljeđivači isto što i poštanski sandučići? {#are-forwarders-the-same-as-mailboxes}
 
 Ne. Poštanski sandučić pohranjuje poštu i ima podatke za prijavu. Prosljeđivač preusmjerava poštu na drugu adresu i ne pruža zaseban pretinac.

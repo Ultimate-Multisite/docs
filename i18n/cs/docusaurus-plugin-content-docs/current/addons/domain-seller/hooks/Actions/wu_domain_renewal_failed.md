@@ -4,11 +4,11 @@ title: Akce - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed
+# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Spustí se, když selže pokus o obnovu domény.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Spustí se, když selže pokus o obnovu domény.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metainformace o obnově (jméno domény, roky atd.). |
 | $error_message | `string` | Čitelné chybové hlášení od registra. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) na řádku 630

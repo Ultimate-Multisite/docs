@@ -3,9 +3,9 @@ title: قوشۇمچە دېتال ئىجاد قىلىشنى باشلاش
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# قوشۇمچە ئىقتىدار ئىجاد قىلىش
+# قوشۇمچە ئىقتىدار ئىجاد قىلىش {#addon-development}
 
-## قوشۇمچە ئىقتىدار قۇرۇلمىسى
+## قوشۇمچە ئىقتىدار قۇرۇلمىسى {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## ئاساسىي قوشۇمچە ئىقتىدار ھۆججىتى قېلىپى
+## ئاساسىي قوشۇمچە ئىقتىدار ھۆججىتى قېلىپى {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## خاس مودېل مىسالى
+## خاس مودېل مىسالى {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## باشقۇرۇش بېتىنى بىرلەشتۈرۈش
+## باشقۇرۇش بېتىنى بىرلەشتۈرۈش {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addonىڭىزنى سىناش
+## Addonىڭىزنى سىناش {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 كېڭەيتىش نۇقتىلىرى
+## v2.13.0 كېڭەيتىش نۇقتىلىرى {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 مۇستەقىل ئىجارىدارلار، checkout تور ناملىرى ياكى host-provider DNS ئاپتوماتلاشتۇرۇشى بىلەن بىرلەشتۈرۈلىدىغان addonلار ئۈچۈن پايدىلىق بىرنەچچە كېڭەيتىش نۇقتىسىنى قوشىدۇ.
 
-### SSO ۋە ئاساسىي تور بېكەت باشقۇرۇش URLلىرى
+### SSO ۋە ئاساسىي تور بېكەت باشقۇرۇش URLلىرى {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout جەدۋىلى ئاساسىي تور ناملىرى
+### Checkout جەدۋىلى ئاساسىي تور ناملىرى {#checkout-form-base-domains}
 
 Addonىڭىز ھەر بىر تور بېكەتكە خاس خەرىتە قىلىشنىڭ ئورنىغا checkout جەدۋىلى **Site URL** تور ناملىرىدەك ھەرىكەت قىلىشى كېرەك بولغان قوشۇمچە ئورتاق ئاساسىي تور ناملىرىنى تەمىنلىگەندە `wu_checkout_form_base_domains` نى ئىشلىتىڭ:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite بۇ hostلارنى نورماللاشتۇرىدۇ ۋە ئۇلار ئۈچۈن ئاپتوماتىك ھەر بىر تور بېكەتكە خاس خەرىتىلەنگەن تور نامى خاتىرىلىرىنى ئاتلاپ ئۆتىدۇ.
 
-### ئاپتوماتىك تور نامى خاتىرىسى قۇرۇش
+### ئاپتوماتىك تور نامى خاتىرىسى قۇرۇش {#automatic-domain-record-creation}
 
 Addonىڭىز يېڭى قۇرۇلغان بىر تور بېكەت ئۈچۈن ئاپتوماتىك تور نامى خاتىرىسى قۇرۇشنى بېسىپ قويۇش ياكى كېچىكتۈرۈشكە ئېھتىياجلىق بولغاندا `wu_should_create_domain_record_for_site` نى ئىشلىتىڭ:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` نى تىڭشايدىغان host-provider بىرلەشتۈرۈشلەر تور بېكەتلەر قۇرۇلغاندا تەمىنلىگۈچى تەرەپتىكى DNS خاتىرىلىرىنى قۇرالايدۇ. ئەگەر ئۇ ھەرىكەت ئۈچۈن ھېچقانداق بىرلەشتۈرۈش تىزىملاتمىغان بولسا، Ultimate Multisite قۇرۇق ئارقا سۇپا خىزمىتىنى ئاتلاپ ئۆتىدۇ.
 
-## كېيىنكى قەدەملەر
+## كېيىنكى قەدەملەر {#next-steps}
 
 - ئىشلەتكىلى بولىدىغان ھەرىكەتلەر ۋە filters ئۈچۈن [Hooks قوللانمىسى](/developer/hooks) نى كۆرۈپ چىقىڭ
 - API بىرلەشتۈرۈشى ئۈچۈن [REST API ئومۇمىي چۈشەندۈرۈشى](/developer/rest-api/overview) نى تەكشۈرۈڭ

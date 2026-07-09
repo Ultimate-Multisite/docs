@@ -3,15 +3,15 @@ title: 'ਪਾਠ ੫: ਆਪਣੀਆਂ ਯੋਜਨਾਵਾਂ ਦਾ ਡਿ
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lesson 5: ਆਪਣੀਆਂ ਯੋਜਨਾਵਾਂ ਤਿਆਰ ਕਰਨਾ
+# Lesson 5: ਆਪਣੀਆਂ ਯੋਜਨਾਵਾਂ ਤਿਆਰ ਕਰਨਾ {#lesson-5-designing-your-plans}
 
 ਤੁਹਾਡੇ ਪਲਾਨ ਦੇ ਪੱਧਰ ਸਿਰਫ਼ ਕੀਮਤ ਦੇ ਲੈਵਲ ਨਹੀਂ ਹਨ—ਇਹ ਇਸ ਗੱਲ ਦਾ ਪ੍ਰਤੀਬਿੰਬ ਹਨ ਕਿ ਤੁਹਾਡੇ ਖਾਸ ਗਾਹਕ (niche customers) ਅਸਲ ਵਿੱਚ ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਨ। ਇਸ ਲੈਸਨ ਵਿੱਚ, ਤੁਸੀਂ ਅਜਿਹੇ ਪ੍ਰੋਡਕਟ ਪੱਧਰ ਤਿਆਰ ਕਰੋਗੇ ਜੋ ਵੱਖ-ਵੱਖ ਪੜਾਵਾਂ 'ਤੇ ਫਿਟਨੈਸ ਕਾਰੋਬਾਰਾਂ ਦੀ ਅਸਲ ਲੋੜਾਂ ਨਾਲ ਮੇਲ ਖਾਂਦੇ ਹੋਣ।
 
-## ਜਿੱਥੇ ਅਸੀਂ ਰੁਕੇ ਸੀ
+## ਜਿੱਥੇ ਅਸੀਂ ਰੁਕੇ ਸੀ {#where-we-left-off}
 
 FitSite ਕੋਲ ਤਿੰਨ ਤਿਆਰ ਟੈਂਪਲੇਟ ਹਨ (Studio Essential, Gym Pro, Fitness Chain)। ਹੁਣ ਅਸੀਂ ਉਹ ਪਲਾਨ ਬਣਾਵਾਂਗੇ ਜੋ ਇਹ ਨਿਰਧਾਰਤ ਕਰਦੇ ਹਨ ਕਿ ਗਾਹਕਾਂ ਨੂੰ ਕਿਹੜੀ ਚੀਜ਼ ਤੱਕ ਪਹੁੰਚ ਮਿਲੇਗੀ ਅਤੇ ਉਹ ਕਿੰਨਾ ਭਰੋਗੇ।
 
-## ਗਾਹਕ ਵਰਗਾਂ ਵਿੱਚ ਸੋਚਣਾ
+## ਗਾਹਕ ਵਰਗਾਂ ਵਿੱਚ ਸੋਚਣਾ {#thinking-in-customer-segments}
 
 ਜ਼ਿਆਦਾਤਰ ਲੋਕਾਂ ਦੀ ਗਲਤੀ ਇਹ ਹੁੰਦੀ ਹੈ ਕਿ ਉਹ ਤਕਨੀਕੀ ਖੇਤਰਾਂ (storage, bandwidth, pages ਦੀ ਗਿਣਤੀ) ਦੇ ਆਲੇ-ਦੁਆਲੇ ਪਲਾਨ ਬਣਾਉਂਦੇ ਹਨ। ਤੁਹਾਡੇ ਖਾਸ ਗਾਹਕ ਇਨ੍ਹਾਂ ਸ਼ਬਦਾਂ ਵਿੱਚ ਨਹੀਂ ਸੋਚਦੇ। ਇੱਕ ਜਿਮ ਮਾਲਕ ਇਸ ਬਾਰੇ ਸੋਚਦਾ ਹੈ ਕਿ ਉਸਨੂੰ ਆਪਣਾ ਕਾਰੋਬਾਰ ਚਲਾਉਣ ਲਈ ਕੀ ਚਾਹੀਦਾ ਹੈ।
 
@@ -25,11 +25,11 @@ FitSite ਕੋਲ ਤਿੰਨ ਤਿਆਰ ਟੈਂਪਲੇਟ ਹਨ (Studio
 
 ਤੁਹਾਡੇ ਪਲਾਨ ਇਨ੍ਹਾਂ ਵਰਗਾਂ ਨਾਲ ਜੁੜੇ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ, ਨਾ ਕਿ ਮਨਮantra ਖੇਤਰਾਂ ਦੇ ਗੁੱਛੇ (arbitrary feature bundles) ਨਾਲ।
 
-## FitSite ਪਲਾਨ ਬਣਾਉਣਾ
+## FitSite ਪਲਾਨ ਬਣਾਉਣਾ {#creating-the-fitsite-plans}
 
 ਹਰੇਕ ਪਲਾਨ ਲਈ **Ultimate Multisite > Products > Add Product** 'ਤੇ ਜਾਓ।
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Target**: ਸੋਲੋ ਟ੍ਰੇਨਰ ਅਤੇ ਸਟੂਡੀਓਜ਼
 
@@ -59,7 +59,7 @@ FitSite ਕੋਲ ਤਿੰਨ ਤਿਆਰ ਟੈਂਪਲੇਟ ਹਨ (Studio
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **Target**: ਸਥਾਪਿਤ ਇੱਕ-ਸਥਾਨ ਵਾਲੇ ਜਿਮ
 
@@ -85,7 +85,7 @@ FitSite ਕੋਲ ਤਿੰਨ ਤਿਆਰ ਟੈਂਪਲੇਟ ਹਨ (Studio
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **Target**: ਕਈ-ਸਥਾਨ ਵਾਲੀਆਂ ਫਿਟਨੈਸ 체ਨਾਂ
 
@@ -109,7 +109,7 @@ FitSite ਕੋਲ ਤਿੰਨ ਤਿਆਰ ਟੈਂਪਲੇਟ ਹਨ (Studio
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Plan Group ਸੈੱਟ ਕਰਨਾ
+## Plan Group ਸੈੱਟ ਕਰਨਾ {#setting-up-the-plan-group}
 
 ਪਲਾਨ ਗਰੁੱਪ ਇਹ ਯਕੀਨੀ ਬਣਾਉਂਦਾ ਹੈ ਕਿ ਗਾਹਕ ਸਿਰਫ਼ FitSite ਪਲਾਨ ਫੈਮਿਲੀ ਦੇ ਅੰਦਰ ਅਪਗ੍ਰੇਡ ਜਾਂ ਡਾਊਨਗ੍ਰੇਡ ਕਰ ਸਕਣ। ਹਰੇਕ ਪਲਾਨ ਦੇ **Up & Downgrades** ਟੈਬ 'ਤੇ:
 
@@ -118,7 +118,7 @@ FitSite ਕੋਲ ਤਿੰਨ ਤਿਆਰ ਟੈਂਪਲੇਟ ਹਨ (Studio
 
 ਇਹ ਇੱਕ ਸਪੱਸ਼ਟ ਅਪਗ੍ਰੇਡ ਰਸਤਾ ਬਣਾਉਂਦਾ ਹੈ: Starter → Growth → Pro।
 
-## Order Bumps ਜੋੜਨਾ
+## Order Bumps ਜੋੜਨਾ {#adding-order-bumps}
 
 ਆਰਡਰ ਬੰਪਸ (Order bumps) ਚੈੱਕਆਉਟ ਦੌਰਾਨ ਦਿੱਤੇ ਜਾਣ ਵਾਲੇ ਐਡ-ਆਨ ਪ੍ਰੋਡਕਟ ਹਨ। FitSite ਲਈ, ਇਹ ਵਿਚਾਰ ਕਰੋ:
 
@@ -128,7 +128,7 @@ FitSite ਕੋਲ ਤਿੰਨ ਤਿਆਰ ਟੈਂਪਲੇਟ ਹਨ (Studio
 
 ਇਹਨਾਂ ਨੂੰ Ultimate Multisite ਵਿੱਚ **Package** ਕਿਸਮ ਦੇ ਪ੍ਰੋਡਕਟ ਵਜੋਂ ਬਣਾਓ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਸਬੰਧਤ ਪਲਾਨਾਂ ਨਾਲ ਜੋੜੋ।
 
-## ਇਹ ਢਾਂਚਾ ਕਿਉਂ ਕੰਮ ਕਰਦਾ ਹੈ
+## ਇਹ ਢਾਂਚਾ ਕਿਉਂ ਕੰਮ ਕਰਦਾ ਹੈ {#why-this-structure-works}
 
 - **Starter** ਦਾ ਕੰਮ ਦਾਖਲੇ ਦੀਆਂ ਰੁਕਾਵਟਾਂ ਹਟਾਉਣਾ ਹੈ -- ਘੱਟ ਕੀਮਤ, ਸਧਾਰਨ ਆਫਰਿੰਗ, ਟ੍ਰੇਨਰਾਂ ਨੂੰ ਜਲਦੀ ਆਨਲਾਈਨ ਕਰਨਾ।
 - **Growth** ਉਹ ਖੇਤਰਾਂ ਜੋ ਜਿਮ ਅਸਲ ਵਿੱਚ ਮੰਗਦੇ ਹਨ, ਉਹ ਜੋੜਦਾ ਹੈ -- ਬੁਕਿੰਗ, ਗੈਲਰੀ, ਕਸਟਮ ਡੋਮੇਨ।
@@ -136,7 +136,7 @@ FitSite ਕੋਲ ਤਿੰਨ ਤਿਆਰ ਟੈਂਪਲੇਟ ਹਨ (Studio
 - **Order bumps** ਗਾਹਕਾਂ ਨੂੰ ਮੁੱਖ ਪਲਾਨਾਂ ਨੂੰ ਗੁੰਝਲਦਾਰ ਬਣਾਏ ਬਿਨਾਂ ਕਸਟਮਾਈਜ਼ ਕਰਨ ਦਿੰਦੇ ਹਨ।
 - **ਸਪੱਸ਼ਟ ਅਪਗ੍ਰੇਡ ਰਸਤਾ** ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਗਾਹਕ ਤੁਹਾਡੇ ਨਾਲ ਵਧਦੇ ਹਨ, ਨਾ ਕਿ ਕਿ ਉਹ ਚਲੇ ਜਾਂਦੇ ਹਨ।
 
-## FitSite Network ਹੁਣ ਤੱਕ
+## FitSite Network ਹੁਣ ਤੱਕ {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## ਇਸ ਲੈਸਨ ਵਿੱਚ ਅਸੀਂ ਕੀ ਬਣਾਇਆ
+## ਇਸ ਲੈਸਨ ਵਿੱਚ ਅਸੀਂ ਕੀ ਬਣਾਇਆ {#what-we-built-this-lesson}
 
 - **ਤਿੰਨ ਪਲਾਨ ਪੱਧਰ** ਜੋ ਅਸਲ ਫਿਟਨੈਸ ਕਾਰੋਬਾਰ ਵਰਗਾਂ ਨਾਲ ਜੁੜੇ ਹਨ
 - Ultimate Multisite ਦੇ ਪਲੱਗਇਨ ਅਤੇ ਟੈਂਪਲੇਟ ਕੰਟਰੋਲ ਦੀ ਵਰਤੋਂ ਕਰਕੇ **ਖੇਤਰਾਂ ਨੂੰ ਸੀਮਤ ਕਰਨਾ** (Feature gating)

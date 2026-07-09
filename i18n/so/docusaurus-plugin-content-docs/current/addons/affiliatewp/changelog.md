@@ -3,7 +3,7 @@ title: AffiliateWP Diiwaanka Isbeddellada
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP Diiwaanka Isbeddellada
+# AffiliateWP Diiwaanka Isbeddellada {#affiliatewp-changelog}
 
 Nooc: 2.0.1 - La sii daayay 2025-09-28
 

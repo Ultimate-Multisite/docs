@@ -3,13 +3,13 @@ title: Il-Bini ta’ Integrazzjoni ta’ Reġistratur Personalizzata
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Bini ta' Integrazzjoni Personalizzata ta' Reġistratur
+# Bini ta' Integrazzjoni Personalizzata ta' Reġistratur {#building-a-custom-registrar-integration}
 
 L-addon Domain Seller juża mudell ta' **Integration Registry**. Kull reġistratur huwa klassi PHP li timplimenta `Domain_Selling_Capability` u tirreġistra lilha nnifisha permezz tal-action hook `wu_domain_seller_register_capabilities`.
 
 Din il-gwida turi kif tqabbad reġistratur personalizzat.
 
-## L-interface
+## L-interface {#the-interface}
 
 Il-klassi tiegħek trid timplimenta `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` u testendi `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Metodi fakultattivi
+### Metodi fakultattivi {#optional-methods}
 
 Implimenta dawn biex tiftaħ karatteristiċi addizzjonali. L-addon jiskopri l-appoġġ permezz ta' `method_exists()`:
 
@@ -81,7 +81,7 @@ Implimenta dawn biex tiftaħ karatteristiċi addizzjonali. L-addon jiskopri l-ap
 | `get_epp_code(string $domain_name): array` | Trasferiment tad-domain (ħiereġ) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Trasferiment tad-domain (dieħel) |
 
-### Konvenzjoni tal-valur ritornat
+### Konvenzjoni tal-valur ritornat {#return-value-convention}
 
 Il-metodi kollha jirritornaw array b'mill-inqas key `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Reġistrazzjoni tal-capability tiegħek
+## Reġistrazzjoni tal-capability tiegħek {#registering-your-capability}
 
 Irreġistra l-klassi tiegħek billi tuża l-action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ L-ewwel argument għal `add_capability()` huwa l-**provider ID** — slug b'ittr
 
 ---
 
-## Żieda ta' fields tal-kredenzjali mal-wizard
+## Żieda ta' fields tal-kredenzjali mal-wizard {#adding-credential-fields-to-the-wizard}
 
 Biex tħalli lill-admins idaħħlu l-kredenzjali permezz tas-setup wizard, irreġistra l-integrazzjoni tiegħek:
 
@@ -137,7 +137,7 @@ Il-kredenzjali jinħażnu bħala network options billi jużaw il-field IDs bħal
 
 ---
 
-## Hooks għal azzjonijiet wara r-reġistrazzjoni
+## Hooks għal azzjonijiet wara r-reġistrazzjoni {#hooks-for-post-registration-actions}
 
 Uża dawn l-actions biex tiskatta webhooks, provisioning, notifiki, jew aġġornamenti tas-CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging
+## Logging {#logging}
 
 Ikteb fil-kanal tal-log speċifiku għall-fornitur tiegħek billi tuża `wu_log_add()`:
 

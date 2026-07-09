@@ -4,24 +4,24 @@ title: فلٽر - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# فلٽر: wu_checkout_field_templates
+# فلٽر: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
 
 اسان جون APIs نون فيلڊ ٽيمپليٽن شامل ڪرڻ لاءِ هتي hook ڪن ٿيون.
 
 هي فلٽر سڌو استعمال نه ڪريو. ان جي بدران wu_register_field_template() فنڪشن استعمال ڪريو.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
 | $field_templates | `array` |  |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.0.0
-### ذريعو
+### ذريعو {#source}
 
 [`inc/managers/class-field-templates-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-field-templates-manager.php#L162) ۾ لائن 162 تي بيان ٿيل
 
 
-## واپسي
+## واپسي {#returns}

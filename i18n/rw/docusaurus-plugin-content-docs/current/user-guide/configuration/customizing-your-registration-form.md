@@ -3,13 +3,13 @@ title: Gutunganya ifishi yawe yo kwiyandikisha
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Guhindura uko Ifishi yawe yo Kwiyandikisha imeze
+# Guhindura uko Ifishi yawe yo Kwiyandikisha imeze {#customizing-your-registration-form}
 
 Kugira ngo urubuga rwawe rugaragare rwihariye ugereranyije n’izindi SaaS zose zubatswe kuri platform ya WordPress, Ultimate Multisite igufasha guhindura impapuro zawe zo kwiyandikisha no kwinjira ukoresheje umwihariko wacu wa **Checkout Forms**.
 
 Nubwo ari uburyo bworoshye kandi bworohereza kugerageza inzira zitandukanye mu gihe ushaka guhindura abakiriya bashya, ahanini bukoreshwa mu gukora amafishi yo kwiyandikisha yihariye. Iyi ngingo igamije kukwereka uko wabikora.
 
-## Impapuro zo kwinjira no kwiyandikisha:
+## Impapuro zo kwinjira no kwiyandikisha: {#login-and-registration-pages}
 
 Iyo Ultimate Multisite imaze gushyirwamo, ihita ikora impapuro zihariye zo kwinjira no kwiyandikisha ku rubuga rwawe nyamukuru. Ushobora guhindura izi mpapuro zisanzwe igihe icyo ari cyo cyose ujya kuri paji yawe ya **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Noneho, reka turebe andi mahitamo agifitanye isano n’igikorwa cyo kwinjira no 
 
 Kandi ibyo ni byo byose bijyanye n’amahitamo yo kwinjira no kwiyandikisha ushobora guhindura! Ntuzibagirwe kubika igenamiterere ryawe nyuma yo kurangiza kurihindura.
 
-## Gukoresha amafishi menshi yo kwiyandikisha:
+## Gukoresha amafishi menshi yo kwiyandikisha: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 itanga editor ya checkout form igufasha gukora amafishi uko uyashaka kose, afite fields zitandukanye, ibicuruzwa bitangwa, n’ibindi.
 
@@ -69,7 +69,7 @@ Ubundi buryo, ushobora guhindura cyangwa gukoporora amafishi usanzwe ufite ukand
 
 Nuhitamo intambwe imwe cyangwa intambwe nyinshi, checkout form izaba yamaze kuzuzwa mbere intambwe z’ibanze ziyifasha gukora. Hanyuma, niba ubishaka, ushobora kuyongeraho izindi ntambwe.
 
-### Guhindura Checkout Form:
+### Guhindura Checkout Form: {#editing-a-checkout-form}
 
 Nk’uko twabivuze mbere, ushobora gukora checkout forms ku ntego zitandukanye. Muri uru rugero turakora ku ifishi yo kwiyandikisha.
 
@@ -131,11 +131,11 @@ Kugira ngo ubone shortcode y’ifishi yawe kanda kuri **Kora Shortcode** maze uk
 
 _**Icyitonderwa:** Uzakenera kongera iyi shortcode ku rupapuro rwawe rwo kwiyandikisha kugira ngo iyi fishi yo kwishyura yongerwemo._
 
-## Guhitamo mbere ibicuruzwa n’inyandikorugero ukoresheje ibipimo bya URL:
+## Guhitamo mbere ibicuruzwa n’inyandikorugero ukoresheje ibipimo bya URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Niba ushaka gukora imbonerahamwe z’ibiciro zihariye ku bicuruzwa byawe no guhitamo mbere ku ifishi yo kwishyura igicuruzwa cyangwa inyandikorugero umukiriya wawe ahitamo avuye ku mbonerahamwe y’ibiciro yawe cyangwa ku rupapuro rw’inyandikorugero, ushobora kubikoresha ukoresheje ibipimo bya URL.
 
-### **Kuri gahunda:**
+### **Kuri gahunda:** {#for-plans}
 
 Jya kuri **Ultimate Multisite > Ibicuruzwa > Hitamo gahunda**. Wagombye kubona buto ya **Kanda ukoporore Link Isangizwa** hejuru y’urupapuro. Iyi ni link ushobora gukoresha kugira ngo uhitemo mbere iyi gahunda yihariye ku ifishi yawe yo kwishyura.
 
@@ -143,7 +143,7 @@ Jya kuri **Ultimate Multisite > Ibicuruzwa > Hitamo gahunda**. Wagombye kubona b
 
 Menya ko iyi link isangizwa ikora gusa kuri **Gahunda**. Ntushobora gukoresha links zisangizwa ku mapaki cyangwa serivisi.
 
-### Ku nyandikorugero:
+### Ku nyandikorugero: {#for-templates}
 
 Niba ushaka guhitamo mbere inyandikorugero z’urubuga ku ifishi yawe yo kwishyura, ushobora gukoresha igipimo: **?template_id=X** kuri URL y’urupapuro rwawe rwo kwiyandikisha. "X" igomba gusimbuzwa **inomero ya ID y'inyandikorugero y'urubuga**. Kugira ngo ubone iyi nomero, jya kuri **Ultimate Multisite > Imbuga**.
 

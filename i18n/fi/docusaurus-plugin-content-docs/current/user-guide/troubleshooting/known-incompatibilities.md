@@ -3,7 +3,7 @@ title: Tuntemattomat yhteensopivuusongelmat
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Tunnetutkimuksia muista lisäosista
+# Tunnetutkimuksia muista lisäosista {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisiten asennuksen ja aktivoimisen jälkeen saatat kohdata ongelmia, jos olet jättänyt huomioimatta yhteensopivuusongelmia muiden pluginien kanssa.
 

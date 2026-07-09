@@ -3,9 +3,9 @@ title: Gestionarea plăților și a facturilor
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gestionarea plăților și facturilor
+# Gestionarea plăților și facturilor {#managing-payments-and-invoices}
 
-## Setări pentru plăți
+## Setări pentru plăți {#payment-settings}
 
 Înainte să începi să primești plăți, va trebui să configurezi setările legate de plăți. Navighează la **Ultimate Multisite → Settings** și fă clic pe fila **Payment**.
 
@@ -15,7 +15,7 @@ Iată o vedere completă a paginii de setări pentru plăți:
 
 ![Pagina completă de setări pentru plăți](/img/admin/settings-payments-full.png)
 
-### Opțiuni generale pentru plăți
+### Opțiuni generale pentru plăți {#general-payment-options}
 
 În setările generale poți configura:
 
@@ -24,7 +24,7 @@ Iată o vedere completă a paginii de setări pentru plăți:
 
 ![Setări pentru gateway-ul de plată](/img/admin/settings-payments-options.png)
 
-### Gateway-uri de plată
+### Gateway-uri de plată {#payment-gateways}
 
 Ultimate Multisite acceptă mai multe gateway-uri de plată. Îl poți activa și configura pe fiecare din fila de setări Payment.
 
@@ -40,11 +40,11 @@ Fiecare gateway are propria secțiune de configurare, unde introduci cheile API 
 
 ![Setări suplimentare pentru gateway](/img/admin/settings-payments-gateways-2.png)
 
-### Mod Sandbox
+### Mod Sandbox {#sandbox-mode}
 
 Poți activa **Mod Sandbox** pentru a testa integrarea plăților înainte de lansare. Când modul sandbox este activ, nu se vor efectua debitări reale.
 
-## Vizualizarea plăților
+## Vizualizarea plăților {#viewing-payments}
 
 Navighează la pagina **Payments** din Ultimate Multisite pentru a vedea toate tranzacțiile din întreaga ta rețea.
 
@@ -54,7 +54,7 @@ Poți filtra plățile după stare (finalizate, în așteptare, eșuate, ramburs
 
 Fă clic pe o plată pentru a vedea detaliile complete ale acesteia, inclusiv elementele rând, abonamentul asociat, informațiile despre client și datele gateway-ului de plată.
 
-## Facturi
+## Facturi {#invoices}
 
 Ultimate Multisite poate genera automat facturi pentru plăți. Poți personaliza șablonul facturii și formatul de numerotare din setările Payment.
 

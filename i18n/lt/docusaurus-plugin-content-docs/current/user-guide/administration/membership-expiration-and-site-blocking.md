@@ -3,11 +3,11 @@ title: Membriškumo Apsaukimo ir Sistemos Blokavimas
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Abėgimo laikas ir svetainės blokavimas
+# Abėgimo laikas ir svetainės blokavimas {#membership-expiration-and-site-blocking}
 
 Šis poradnik paaiškinas, kaip Ultimate Multisite tvarko prenumeratų pabaigos, mokymų pabaigos ir svetaini blokavimo. Jis apima prenumeratos gyvybę nuo aktyvios iki pabaigta, nustatymus, kurie kontrolia, ar svetainės bus užblokuotos, ir ką reikia patikrinti, jei svetainės vis dar yra prieiga po prenumeratos pabaigos.
 
-## Prenumeratos statusų gyvybos ciklas
+## Prenumeratos statusų gyvybos ciklas {#membership-status-lifecycle}
 
 Kiekvienai Ultimate Multisite prenumeratai turi vieną iš šių būstatus:
 
@@ -24,7 +24,7 @@ Nemokamos prenumeratos neibaigiasi automatiškai. Ultimate Multisite traktuoja j
 | **Expired** (Pabaigta) | Pasirinkęs pabaigos datą ir grane periodą be atnaujinimo |
 | **Cancelled** (Atšalintas) | Apie esmiai atšalintas klientu arba administratoriumi |
 
-### Kaip prenumeratos pereina į pabaigos būseną
+### Kaip prenumeratos pereina į pabaigos būseną {#how-memberships-transition-to-expired}
 
 Ultimate Multisite kas valandą atlieka bakalių patikrinimą, ieškant prenumeratas, kurios turėtų būti pažymtos kaip pabaigta. Šis patikrinimas naudoja [Action Scheduler](https://actionscheduler.org/) (ne tiesiog WP-Cron) ir vyksta kaip planuojama veiksmo akcija `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Pabaigos patikrinimui nurodytas **įtrauktas 3 dienos grane periodas** pagal num
 Trikščio laiko išteklis (3 dienos) yra atskiras nuo nustatymo „Frontend Block Grace Period“. Trikščio laiko išteklis nurodo, kada **status keičiasi** iš aktyvų/laikojimo į neaktyvus. Frontend bloku laikotarpis nurodo, kada **sutiklis bus užblokuotas**, po to kai status jau keičiasi.
 :::
 
-#### Automatiniai ir Neautomatiniai Abonentų Pasirinkimai
+#### Automatiniai ir Neautomatiniai Abonentų Pasirinkimai {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Ši skirtumas yra labai svarbus suprantui išteklio veikimo:
 
@@ -42,7 +42,7 @@ Trikščio laiko išteklis (3 dienos) yra atskiras nuo nustatymo „Frontend Blo
 
 - **Automatiniai abonentai** (`auto_renew = true`): Cron išteklio kontrolės **visai šiuos procesus praleidžia**. Mokėjimo portalas (Stripe, PayPal ir kt.) turi pranešti Ultimate Multisite per webhooks, jei abonementas nepasirenka arba atsisakytas. Jei webhookas neatsiryžiasi – dėl neteisingai nustatytos slaptoji punkto, portalų saugos problemų ar jei abonentas atsisakė už sistemą – abonentas gali likti `active` (aktyvus) nepaprastai ilgai, net po terminui išteklio.
 
-### Kaip baigiasi Bandymosi Periodai (Trials)
+### Kaip baigiasi Bandymosi Periodai (Trials) {#how-trials-end}
 
 Kai bandymo periodas abonentui pasibaiga, sistema:
 
@@ -52,11 +52,11 @@ Kai bandymo periodas abonentui pasibaiga, sistema:
 
 Šis procesas vyksta per tą pačia valandines (hourly) laiką kaip ir reguliariajios išteklio kontrolės, bet **tiksliai neautomatiniais abonentais**. Automatiniai bandymosi periodai mokėjimo portalas atsakingas už pereinamą nuo bandymo į mokamą abonementą.
 
-## Blokuoti Frontend Aksesą
+## Blokuoti Frontend Aksesą {#block-frontend-access}
 
 Paprastai, kai nurodoma, kai nustatyto, kadamas **tik wp-admin dashboardi bus yra restrigotas**, kai nuskaitas arba įjungtas laisvai. Svetas viešasis puslapis visada liksta prieinamas vizitatoriams. Jei norite blokuoti ir viešą prieigą, turite įjungti nustatymą **Block Frontend Access**.
 
-### Nustatymai
+### Nustatymai {#configuring-the-setting}
 
 Navedinkite į **Ultimate Multisite > Settings > Memberships** ir įjunkite **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Tris susiję nustatymai kontrolia šį veiksmą:
 | **Frontend Block Grace Period** | Dienų skaičius, kurio laukimo reikia po to, kai nuskaitimas bus neaktyvus, prieš blokavimą. Nustatykite į `0`, kad blokavimas būtų atliktas iš karto. | 0 |
 | **Frontend Block Page** | Puslapis pagrindiniame svetainėje, kurios per dirbtinius (redirekciją) vizitatorius, kai svetainė bus blokota. Jei tai nenumatytas, vizitatoriui pasirodys bendras pranešimas „Svetainė šiuo metu neprieinoma“ su nuorodą į adminų įtrybimo puslapį. | Nėra |
 
-### Kas atrodo vizitatoriui, kai svetainė blokuojama
+### Kas atrodo vizitatoriui, kai svetainė blokuojama {#what-visitors-see-when-a-site-is-blocked}
 
 Kai viešai prieiga bus blokota, vizitatoriui svetaine pasirodys:
 
@@ -97,21 +97,21 @@ Nawet jeśli okres próbny się zakończy, członkostwo o statusie `trialing` **
 Członkostwa anulowane są zawsze blokowane po upływie daty ważności, niezależnie od tego, czy Blokowanie Dostępu do Frontendu jest włączone. Okres Łagodzący Blokowania Dostępu do Frontendu **nie** dotyczy członkostw anulowanych.
 :::
 
-## Rozwiązywanie problemów: Strony pozostają dostępne po wygaśnięciu
+## Rozwiązywanie problemów: Strony pozostają dostępne po wygaśnięciu {#what-gets-blocked-and-when}
 
 Jeśli strony nadal są publicznie dostępne po wygaśnięciu członkostwa, wykonaj poniższe sprawdzenia w kolejności:
 
-### 1. Zweryfikuj, czy ustawienie Blokowanie Dostępu do Frontendu jest włączone
+### 1. Zweryfikuj, czy ustawienie Blokowanie Dostępu do Frontendu jest włączone {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Przejdź do **Ultimate Multisite > Settings > Memberships** i upewnij się, że przełącznik **Block Frontend Access** jest włączony. To ustawienie jest **wyłączone domyślnie**, co oznacza, że tylko wpis admin (`wp-admin`) jest ograniczany, gdy członkostwo staje się nieaktywne.
 
-### 2. Sprawdź Okres Łagodzący Blokowania Dostępu do Frontendu
+### 2. Sprawdź Okres Łagodzący Blokowania Dostępu do Frontendu {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Na tą samą stronie ustawień sprawdź wartość **Frontend Block Grace Period**. Jei ją ustawite į 7 dienas, pavyzdžiui, frontend bus blokotas ne iki 7 dienos po nuskaitimo termino – net jei status prenumeratos jau yra `expired`.
 
 Nustatykite ją į `0`, jei norite išankstinio blokavimo po to, kai prenumerata tampa neaktyvi.
 
-### 3. Patvirtinkite, kad Status Prenumeratos Tikrai Pakeistaus
+### 3. Patvirtinkite, kad Status Prenumeratos Tikrai Pakeistaus {#2-check-the-frontend-block-grace-period}
 
 Eikite į **Ultimate Multisite > Memberships** ir patikrinkite jūsų prenumeratos statusą. Jei jis vis dar rodo `active`, nors terminas nuskaitimo jau pasibaigęs, statusas neįvyko pakeisti. Dažnai sujungti priežastys:
 
@@ -119,7 +119,7 @@ Eikite į **Ultimate Multisite > Memberships** ir patikrinkite jūsų prenumerat
 
 - **Cronas nepatikslė**: Prieš to žinokite kitą žingsnį.
 
-### 4. Patikrinkite, ar Darbo Planavimo Skriptas (Action Scheduler) Veikia
+### 4. Patikrinkite, ar Darbo Planavimo Skriptas (Action Scheduler) Veikia {#3-confirm-the-membership-status-has-actually-changed}
 
 Ultimate Multisite naudo Action Scheduler cronų darbu. Eikite į **Tools > Scheduled Actions** tinklo administratoriumi ir ieškokite:
 
@@ -141,7 +141,7 @@ Kad užtikrintumėte patikimą cron veikimą, nustatykite sistemos laiko cron da
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Patikrinkite Gateway Webhook problemų (Automatiniai atnaujinami nuskaitos)
+### 5. Patikrinkite Gateway Webhook problemų (Automatiniai atnaujinami nuskaitos) {#4-verify-action-scheduler-is-running}
 
 Jei nuskaita automatiškai atnaujinasi, o gateway prenumerata yra atšalinta arba nesėkminga, bet Ultimate Multisite vis dar rodo ją kaip `active`:
 
@@ -150,7 +150,7 @@ Jei nuskaita automatiškai atnaujinasi, o gateway prenumerata yra atšalinta arb
 
 Jei gateway rodo, kad prenumerata yra atšalinta, o Ultimate Multisite tai nenaudoja, webhook pranešimas buvo tikėtai prarastas. Jūs galite rankiniu būdu pakeisti nuskaitos statusąje **Ultimate Multisite > Memberships > [Redaguoti nuskaitą]**.
 
-### 6. Patikrinkite Gedimo laikotarpį (Cron lygio)
+### 6. Patikrinkite Gedimo laikotarpį (Cron lygio) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Cron patikrinimui yra savo gedimo laikotarpis (pagal: 3 dienas), prieš pažymėjimą kaip pasibaigęs. Tai yra atskirtas nuo gedimo laikotarpio svetainės vidinio bloko. Totalinis laikas iki kai svetainė bus blokota gali būti:
 
@@ -158,7 +158,7 @@ Cron patikrinimui yra savo gedimo laikotarpis (pagal: 3 dienas), prieš pažymė
 
 Pavyzdžiui, su naudojant standartines nustatymų ir 7 dienos naujienos laikotarpį (grace period) prieš svetainė išvirtina, gali užtruti iki 10 dienų po `date_expiration`, kol svetainė iš tikrųjų bus blokuota.
 
-### 7. Manuliai išvirtinti nuskaitą (Membership)
+### 7. Manuliai išvirtinti nuskaitą (Membership) {#6-check-the-expiration-grace-period-cron-level}
 
 Jei jums reikia iš karto blokuoti svetainę be laukimo cron ciklą, galite manuliai pakeisti nuskaitos statusą:
 
@@ -169,7 +169,7 @@ Jei jums reikia iš karto blokuoti svetainę be laukimo cron ciklą, galite manu
 
 Frontend blokuotas efektyvus tik naujo puslapio atsisiuntimo metu (sujei pritaikoma Frontend Block Grace Period išvirtintams nuskaitoms, arba iš karto, jei nuskaita yra atšaukiama).
 
-## Apibendrinimas
+## Apibendrinimas {#7-manually-expire-a-membership}
 
 Visas laikas nuo išvirtinimo datamos iki svetainės blokuojimo:
 
@@ -201,7 +201,7 @@ Atšaukiamos nuskaitos pusė yra trumpesnė:
   Svetainės frontend blokuojama iš karto
 ```
 
-## Programstorių referavimas
+## Programstorių referavimas {#summary}
 
 Šie hooks ir filters leidžia jums pritaikyti išvirtimo ir blokuojimo veiksmus:
 

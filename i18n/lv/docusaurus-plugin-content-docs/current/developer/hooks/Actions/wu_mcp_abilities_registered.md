@@ -4,11 +4,11 @@ title: Darbība - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Darbība: wu_mcp_abilities_registered
+# Darbība: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Tiek izsaukts pēc tam, kad MCP spējas ir reģistrētas entītijai.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Tiek izsaukts pēc tam, kad MCP spējas ir reģistrētas entītijai.
 | $model_name | `string` | Modeļa nosaukums. |
 | $this | `object` | Pārvaldnieka instance. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.5.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) 171. rindā

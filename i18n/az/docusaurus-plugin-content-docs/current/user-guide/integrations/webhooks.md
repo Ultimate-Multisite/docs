@@ -3,7 +3,7 @@ title: Vebhuklar
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) haqqında ilk baxış
+# Webhooks (v2) haqqında ilk baxış {#a-first-look-on-webhooks-v2}
 
 _**DİQQƏT: Nəzərə alın ki, bu xüsusiyyət və ya məqalə qabaqcıl istifadəçilər üçündür.**_
 
@@ -11,7 +11,7 @@ _**DİQQƏT: Nəzərə alın ki, bu xüsusiyyət və ya məqalə qabaqcıl istif
 
 Bu, hər dəfə bir hadisə işə düşəndə Ultimate Multisite-dan başqa bir CRM-ə və ya sistemə müəyyən məlumatları inteqrasiya etmək və ya ötürmək lazım olduqda faydalıdır. Məsələn, hər dəfə yeni istifadəçi Account-u yaradıldıqda istifadəçinin adını və email ünvanını mailing list-ə göndərməlisiniz.
 
-## Webhook necə yaradılır
+## Webhook necə yaradılır {#how-to-create-a-webhook}
 
 Webhook yaratmaq üçün network admin dashboard-a keçin. **Ultimate Multisite > Webhooks > Add New Webhook** üzərinə klikləyin.
 

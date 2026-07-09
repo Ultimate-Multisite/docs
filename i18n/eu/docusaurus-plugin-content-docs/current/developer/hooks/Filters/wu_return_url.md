@@ -4,11 +4,11 @@ title: Iragazkia - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Iragazkia: wu_return_url
+# Iragazkia: wu_return_url {#filter-wureturnurl}
 
 Garatzaileei ordainketa-prozesuen ondoren erabiltzen den itzulera-URL-a aldatzeko aukera ematen die.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Garatzaileei ordainketa-prozesuen ondoren erabiltzen den itzulera-URL-a aldatzek
 | $payment | `\WP_Ultimo\Models\Payment` | Ultimate Multisite ordainketaren instantzia. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | uneko Ultimate Multisite saski-eskaera. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.0.20
-### Iturburua
+### Iturburua {#source}
 
 [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) fitxategian definitua, 683. lerroan
 
 
-## Itzultzen du
+## Itzultzen du {#returns}

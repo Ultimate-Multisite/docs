@@ -3,18 +3,18 @@ title: Fonctionnalités du Constructeur de Thème
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacités du Générateur de Thèmes : Scaffolder et Activer les Thèmes de Blocs
+# Capacités du Générateur de Thèmes : Scaffolder et Activer les Thèmes de Blocs {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introduit deux capacités puissantes qui vous permettent de générer et de déployer des thèmes de blocs personnalisés directement depuis l'interface de chat.
 
-## Aperçu
+## Aperçu {#overview}
 
 Les capacités **scaffold-block-theme** et **activate-theme** permettent aux agents de :
 - Générer des thèmes de blocs complets et prêts pour la production, basés sur vos spécifications
 - Activer automatiquement les thèmes sur votre site sans intervention manuelle
 - Créer des identités visuelles cohérentes grâce à des décisions de conception guidées
 
-## Scaffolder un Thème de Blocs
+## Scaffolder un Thème de Blocs {#scaffold-block-theme}
 
 La capacité **scaffold-block-theme** génère un nouveau thème de blocs WordPress avec une structure complète, incluant :
 
@@ -23,7 +23,7 @@ La capacité **scaffold-block-theme** génère un nouveau thème de blocs WordPr
 - Des styles et variations de blocs personnalisés
 - Les métadonnées et déclarations de support du thème
 
-### Comment l'utiliser
+### Comment l'utiliser {#how-to-invoke}
 
 Dans votre chat avec Superdav AI Agent, vous pouvez demander la génération d'un thème :
 
@@ -38,7 +38,7 @@ L'agent va :
 3. Créer tous les fichiers de thème nécessaires
 4. Préparer le thème pour l'activation
 
-### Résultat attendu
+### Résultat attendu {#expected-output}
 
 Lorsque la capacité s'exécute avec succès, vous verrez :
 
@@ -56,11 +56,11 @@ Exemple de résultat :
   Status: Ready to activate
 ```
 
-## Activer un Thème
+## Activer un Thème {#activate-theme}
 
 La capacité **activate-theme** bascule votre site vers un thème de blocs nouvellement scaffoldé ou existant.
 
-### Comment l'utiliser
+### Comment l'utiliser {#how-to-invoke-1}
 
 Après avoir scaffoldé un thème, vous pouvez l'activer immédiatement :
 
@@ -74,7 +74,7 @@ Ou activer n'importe quel thème existant :
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Résultat attendu
+### Résultat attendu {#expected-output-1}
 
 Lorsque l'activation réussit :
 
@@ -92,7 +92,7 @@ Exemple de résultat :
   Note: Check your homepage to verify the layout
 ```
 
-## Flux de travail : Scaffolder et Activer
+## Flux de travail : Scaffolder et Activer {#workflow-scaffold-and-activate}
 
 Un flux de travail typique combine les deux capacités :
 
@@ -102,7 +102,7 @@ Un flux de travail typique combine les deux capacités :
 4. **Activer** : "Activate the theme now"
 5. **Vérifier** : Visitez votre site pour confirmer que le nouveau design est en ligne
 
-## Jetons de Conception et Personnalisation
+## Jetons de Conception et Personnalisation {#design-tokens-and-customization}
 
 Les thèmes scaffoldés utilisent les jetons de conception (design tokens) de WordPress (via `theme.json`) pour :
 
@@ -114,14 +114,14 @@ Les thèmes scaffoldés utilisent les jetons de conception (design tokens) de Wo
 
 Ces jetons sont centralisés dans `theme.json`, ce qui facilite l'ajustement de l'ensemble de votre système de conception à partir d'un seul fichier.
 
-## Limitations et Notes
+## Limitations et Notes {#limitations-and-notes}
 
 - Les thèmes sont scaffoldés dans `/wp-content/themes/` et doivent suivre les conventions de nommage de WordPress
 - L'activation nécessite des autorisations appropriées sur votre site WordPress
 - Le code PHP personnalisé dans les thèmes est minimal ; utilisez des plugins pour les fonctionnalités complexes
 - Les thèmes de blocs fonctionnent mieux avec WordPress 5.9 et ultérieur
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
 **Le thème n'apparaît pas après le scaffolding**
 - Vérifiez que le répertoire du thème existe et dispose des permissions appropriées
@@ -138,7 +138,7 @@ Ces jetons sont centralisés dans `theme.json`, ce qui facilite l'ajustement de 
 - Videz tous les plugins de mise en cache
 - Vérifiez que votre version de WordPress prend en charge les jetons que vous utilisez
 
-## Prochaines étapes
+## Prochaines étapes {#next-steps}
 
 Après avoir activé votre thème, vous pouvez :
 - Utiliser la compétence **Design System Aesthetics** pour affiner la typographie, les couleurs et l'espacement

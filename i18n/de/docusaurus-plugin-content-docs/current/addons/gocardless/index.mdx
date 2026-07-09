@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless-Zahlung
 
 Ermöglichen Sie Ihren Kunden, Ultimate Multisite-Mitgliedschaften und Produkte per Lastschrift mit GoCardless zu bezahlen!
 
-## Installation
+## Installation {#installation}
 
 1. Laden Sie 'ultimate-multisite-gocardless' in das Verzeichnis '/wp-content/plugins/' hoch
 2. Aktivieren Sie das Plugin über das Menü 'Plugins' in WordPress
 3. Folgen Sie dem Schritt-für-Schritt-Assistenten, um das Plugin einzurichten
 
-## Nutzungsanleitung
+## Nutzungsanleitung {#usage-guide}
 
 _GoCardless_ ist ein Zahlungsgateway, das in **Europa und im Vereinigten Königreich** verfügbar ist und **Lastschrift**zahlungen ermöglicht.
 
@@ -29,7 +29,7 @@ Dieses Tutorial behandelt, wie Sie _GoCardless_ einrichten, um darüber Zahlunge
 
 _**Hinweis: GoCardless funktioniert nur mit den folgenden Währungen:**_ **EUR, GBP, AUD, SEK und DKK.**
 
-## Installieren der Erweiterung
+## Installieren der Erweiterung {#installing-the-add-on}
 
 Zunächst müssen Sie die GoCardless-Erweiterung für Ultimate Multisite installieren. Das können Sie tun, indem Sie zu **Ultimate Multisite > Einstellungen > Erweiterungen (in der Seitenleiste)** gehen. Und die GoCardless-Erweiterung in dieser Liste auswählen.
 
@@ -37,7 +37,7 @@ Nachdem die Erweiterung installiert und aktiviert wurde, gehen Sie zu **Ultimate
 
 ![Zahlungsgateway-Einstellungen](/img/config/settings-payment-gateways.png)
 
-## Einen Access Token erhalten
+## Einen Access Token erhalten {#getting-an-access-token}
 
 Erstellen Sie ein Konto bei _GoCardless_ (oder in der _GoCardless_-Sandbox, wenn Sie es **zuerst testen** möchten, was empfohlen wird). Navigieren Sie dann nach dem Einloggen zum Menüpunkt **Entwickler**.
 
@@ -61,7 +61,7 @@ Achten Sie darauf, ihn in das richtige Feld einzufügen. Wenn es ein **Live-Toke
 
 Das war’s für den ersten Schritt. Als Nächstes müssen Sie einen Webhook-Listener einrichten.
 
-## Einrichten des Webhook-Listeners
+## Einrichten des Webhook-Listeners {#setting-up-the-webhook-listener}
 
 Beim Umgang mit Abonnements muss Ultimate Multisite über Änderungen am Abonnementstatus, neue eingegangene Zahlungen und ähnliche Dinge informiert werden.
 

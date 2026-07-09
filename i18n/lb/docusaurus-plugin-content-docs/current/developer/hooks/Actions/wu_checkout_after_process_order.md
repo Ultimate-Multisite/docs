@@ -4,20 +4,20 @@ title: Aktioun - wu_checkout_after_process_order
 sidebar_label: wu_checkout_after_process_order
 _i18n_hash: 40a5c096f223c5f82a109163c29284d3
 ---
-# Action: wu_checkout_after_process_order
+# Action: wu_checkout_after_process_order {#action-wucheckoutafterprocessorder}
 
 Erlaabt Entwéckler, zousätzlech Hooks auszeléisen.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
 | $checkout | `\Checkout` | D'Checkout-Objet-Instanz. |
 | $cart | `\Cart` | D'Checkout-Wuerekuerf-Instanz. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0.9
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1013) op der Linn 1013

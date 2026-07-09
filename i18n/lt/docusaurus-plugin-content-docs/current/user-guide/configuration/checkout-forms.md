@@ -3,7 +3,7 @@ title: Valdybos formos
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formaijių formos
+# Formaijių formos {#checkout-forms}
 
 Formaijių formos yra lengvas ir įtraukliškas būdas eksperimentuoti su skirtingais paleidimu, kai bandomas pasiekti naujus klientus.
 
@@ -36,13 +36,13 @@ Alternatyviai, galite redaguoti arba duplikuoti jau turėtus formus, paspaudę a
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Checkout Form Editor peržiūra
+#### Checkout Form Editor peržiūra {#checkout-form-editor-overview}
 
 Checkout form editor suteikia visapriešingą interfeisą, kurį naudojate registracijos formų kūrimui. Štai peržiūra redaktoriaus schematui:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Checkout form redaguoti
+### Checkout form redaguoti {#editing-a-checkout-form}
 
 Galite sukurti checkout formas skirtingoms tikslams. Šiuose pavyzdžiu busime dirbti registracijos forma.
 
@@ -112,7 +112,7 @@ Jums reikia gauti jūsų formos shortcode, spustelėkite "Generate Shortcode" (S
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Kaina sąrašo laukas (The Pricing Table Field)
+### Kaina sąrašo laukas (The Pricing Table Field) {#the-pricing-table-field}
 
 Laukas **Pricing Table** (Kaina sąrašo) atrodys jūsų produktus checkout formoje, kad vartotojai galėtų pasirinkti planą. Redaguodami šį lauką, galite nustatyti kelis nariaus:
 
@@ -130,17 +130,17 @@ Laukas **Pricing Table** (Kaina sąrašo) atrodys jūsų produktus checkout form
 
 Jei pridėsite produktą į Kainos sąrašą prieš tai, kai formoje bus reikalinga laukelis, kad būtų galima užbaigti to produkto checkout procesą, redaktorius rodo perspėjimą. Naudokite šį perspėjimą, kad pridėtumėte trūkstantą reikiamą laukelį prieš publikuoti arba išsaugoti pakeitimus gyvos registracijos formos atvejais.
 
-### Įdiegimas laiko pasirinkimo mygtuko
+### Įdiegimas laiko pasirinkimo mygtuko {#adding-a-period-selection-toggle}
 
 Jei turite nustatytas [Kaina variantai](creating-your-first-subscription-product#price-variations) jūsų produktų (pvz., mėnesio ir kasmens kainos), galite pridėti **Laiko pasirinkimo** lauką prie savo užsakymo formos. Šis laukas rodo mygtuką, kuris leidžia klientams keisti tarp paskolos laikotarpų, o kainos lentelė atnaujinasi dinamiškai realiu laiku.
 
-#### Žingsnis 1: Nustatykite kainos variantus jūsų produktuose
+#### Žingsnis 1: Nustatykite kainos variantus jūsų produktuose {#step-1-set-up-price-variations-on-your-products}
 
 Prieš pridėdami Laiko pasirinkimo lauką, užtikrinkite, kad jūsų produktų nustatyti kainos variantai. Eikite į **Ultimate Multisite > Produktai**, redaguokite produktą ir nukreipkite į languotę **Price Variations** (Kainos variantai) vėtybą, kad pridėtumėte alternatyvius paskolos laikotarpius (pvz., Kasmens su nuolaida).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Žingsnis 2: Pridėkite Laiko pasirinkimo lauką prie savo užsakymo formos
+#### Žingsnis 2: Pridėkite Laiko pasirinkimo lauką prie savo užsakymo formos {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Eikite į **Ultimate Multisite > Užsakymo formos** ir redaguokite savo užsakymo formą.
 
@@ -163,13 +163,13 @@ Prieš pridėdami Laiko pasirinkimo lauką, užtikrinkite, kad jūsų produktų 
 
 7. Kliknij **Save Field**.
 
-#### Krok 3: Priešdėkite lauką virš priemonės kelionės (Pricing Table)
+#### Krok 3: Priešdėkite lauką virš priemonės kelionės (Pricing Table) {#step-3-position-the-field-above-the-pricing-table}
 
 Geriausios vartotojų patirtis užtikrina, kad laukas pasirinkimo laikotarpio (Period Selection) pasirodo **prieš** priemonės kelionės (Pricing Table) laukui jūsų kasos metu. Galite siūti laukus, kad pakeistumėte jų tvarką kasos formos redaktore. Prieš to vartotojai pirmiausia pasirinksite paskirties laikotarpį ir tada pamatys kainas tam laikotarpiui.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Kaip tai veikia ant frontendoje (Frontend)
+#### Kaip tai veikia ant frontendoje (Frontend) {#how-it-works-on-the-frontend}
 
 Kai laukas bus nustatytas, vartotojai, kurie atsivasynosi į jūsų registracijos puslapį, pamatys laikotarpio sekti virš priemonės kelionės. Kai jie paspaudos kitą paskirties laikotarpį:
 
@@ -177,7 +177,7 @@ Kai laukas bus nustatytas, vartotojai, kurie atsivasynosi į jūsų registracijo
   * Jei laukas **Force Different Durations** (Prisikirsti kitus laikotarpius) yra išjungtas Priemonės kelionės laukui, produktai be kainos variantų pasirinkto laikotarpio bus paslėpti.
   * Jei **Force Different Durations** yra įjungta, visi produktai bus matomi, net jei jie nėra variantai pasirinkto laikotarpio (prieš jų rodys savo pagrindinę kainą).
 
-#### Pasirinkimas paskirties laikotarpio per URL
+#### Pasirinkimas paskirties laikotarpio per URL {#pre-selecting-a-billing-period-via-url}
 
 Galite paspausti prekę ir paskirties laikotarpį per URL. Ultimate Multisite palaiko šiuos URL schemų:
 
@@ -185,11 +185,11 @@ Galite paspausti prekę ir paskirties laikotarpį per URL. Ultimate Multisite pa
   * `/register/premium/12` — Pasirinkti prekę ir 12 mėnesių laikotarpį
   * `/register/premium/1/year` — Pasirinkti prekę su 1 metų laikotarpiu
 
-### Šaltinio pasirinkimo laukas (The Template Selection Field)
+### Šaltinio pasirinkimo laukas (The Template Selection Field) {#the-template-selection-field}
 
 **Šaltinio pasirinkimo** laukas leidžia vartotojams pasirinkti svetainės šaltinį kasos metu. Jis dabar yra įtrauktas kaip pagrindinis laukas tiek viena, tiek daug etapų kasos formos šaltinių šablono (single step and multi-step checkout form templates) Ultimate Multisite v2.6.1 versijose.
 
-#### Lauko pridėjimas rankiniu būdu
+#### Lauko pridėjimas rankiniu būdu {#adding-the-field-manually}
 
 Jei dirbate darbe formulio, kuris buvo sukurtas prieš versiją v2.6.1 arba pradėtas iš naujo šabloono:
 
@@ -200,11 +200,11 @@ Jei dirbate darbe formulio, kuris buvo sukurtas prieš versiją v2.6.1 arba prad
    - **Label** – Pavadinimas, kurį vartotojai mato virš šabloono tinklo (pvz., „Pasirinkite svetainės šabloną“).
    - **Required** – Ar vartotojai turi pasirinkti šabloną prieš tęsdami.
 
-#### Kaip tai veikia
+#### Kaip tai veikia {#how-it-works}
 
 Kai vartotojas pasirašys šabloną during checkout, Ultimate Multisite jį naudoja naujo svetainės įdiegimo metu. Šie matomi šablonai yra iš jūsų **Svetainės šablonų** sąrašo (**Ultimate Multisite > Site Templates**). Apie šiuos yra tik ti šablonai, kuriems vartotojai yra pasirinkti.
 
-### Užsakymo formos bazinės domenai
+### Užsakymo formos bazinės domenai {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 traktuoja domenus, nustatytus užsakymo formos **Site URL** laukelu, kaip tinklo bazines domenus. Naudokite laukelio „available-domain“ nustatymus, jei norite, kad vartotojai kurtų svetainius naudojant vieną ar daugiau bendruomenės registracijos domenų, pavyzdžiui, `example.com` ir `sites.example.com`.
 
@@ -212,6 +212,6 @@ Bendri užsakymo formos bazinės domenai ne traktuojami kaip individualių sveta
 
 Laikykite kustomizuotus domenus individualių vartotojų netyvos, pavyzdžiui, `customer-example.com`. Laikykite užsakymo formos bazines domenus bendruomenės registracijos netyvams, kurias daug svetainių gali naudoti.
 
-#### Laukelio pašalinimas
+#### Laukelio pašalinimas {#removing-the-field}
 
 Jei jūs ne siūlots svetainės šablonų, atsirinkite „Template Selection“ laukelį iš savo formos. Tėvčiais taikys jūsų konfigūruotą pagrindinį šabloną, kuris bus nurodytas **Ultimate Multisite > Settings > Site Templates** puslapyje.

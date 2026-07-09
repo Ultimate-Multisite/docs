@@ -3,7 +3,7 @@ title: Күн чыгышы файлынын катасы
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise Файлын Орнотууданда Катаалган
+# Sunrise Файлын Орнотууданда Катаалган {#error-installing-the-sunrise-file}
 
 sunrise.php файлы — бул WordPress өзүн иштеп жатканда издөөчү атайын файл. WordPress `sunrise.php` файлын таануу үчүн ал **wp-content папкасынын** ичинде болушу керек.
 

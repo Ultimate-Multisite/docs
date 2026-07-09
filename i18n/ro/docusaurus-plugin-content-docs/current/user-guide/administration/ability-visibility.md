@@ -3,11 +3,11 @@ title: Vizibilitatea abilităților
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Vizibilitatea Abilităților
+# Vizibilitatea Abilităților {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introduce controale de **Vizibilitate a Abilităților** care determină pe ce interfețe va fi expusă fiecare abilitate. Acest lucru permite administratorilor să își ajusteze detaliile în ceea ce privește capacitățile agenților care sunt disponibile prin REST API-uri, servere MCP, integrari WooCommerce și alte interfețe.
 
-## Ce este Vizibilitatea Abilităților?
+## Ce este Vizibilitatea Abilităților? {#what-is-ability-visibility}
 
 Vizibilitatea Abilităților este un sistem de permisiuni care controlează:
 
@@ -18,9 +18,9 @@ Vizibilitatea Abilităților este un sistem de permisiuni care controlează:
 
 Fiecare abilitate are un nivel de vizibilitate care determină disponibilitatea acesteia pe diferite interfețe.
 
-## Niveluri de Vizibilitate
+## Niveluri de Vizibilitate {#visibility-levels}
 
-### Public
+### Public {#public}
 
 **Abilitățile publice** sunt disponibile oriunde:
 
@@ -32,7 +32,7 @@ Fiecare abilitate are un nivel de vizibilitate care determină disponibilitatea 
 
 Exemplu: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internă
+### Internă {#internal}
 
 **Abilitățile interne** sunt disponibile doar în cadrul instalării dvs. WordPress:
 
@@ -43,7 +43,7 @@ Exemplu: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Exemplu: `manage-settings`, `view-analytics`, `export-data`
 
-### Partener
+### Partener {#partner}
 
 **Abilitățile partener** sunt disponibile doar pentru partenerii în lista alb-neagră:
 
@@ -54,7 +54,7 @@ Exemplu: `manage-settings`, `view-analytics`, `export-data`
 
 Exemplu: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Dezactivată
+### Dezactivată {#disabled}
 
 **Abilitățile dezactivate** nu sunt disponibile nicăieri:
 
@@ -63,15 +63,15 @@ Exemplu: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Nu sunt disponibile în panourile de administrare
 - Utile pentru abilități învechite sau experimentale
 
-## Gestionarea Vizibilității Abilităților
+## Gestionarea Vizibilității Abilităților {#managing-ability-visibility}
 
-### Accesarea Setărilor Vizibilității Abilităților
+### Accesarea Setărilor Vizibilității Abilităților {#accessing-ability-visibility-settings}
 
 1. Mergeți la **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Faceți clic pe tab-ul **Abilities**
 3. Veți vedea o listă cu toate abilitățile instalate și nivelurile lor de vizibilitate
 
-### Vizualizarea Detaliilor Abilității
+### Vizualizarea Detaliilor Abilității {#viewing-ability-details}
 
 Faceți clic pe orice abilitate pentru a vedea:
 
@@ -82,7 +82,7 @@ Faceți clic pe orice abilitate pentru a vedea:
 - **Last updated**: Când a fost modificată ultima dată vizibilitatea
 - **Status**: Recognized sau Unclassified
 
-### Schimbarea Nivelurilor de Vizibilitate
+### Schimbarea Nivelurilor de Vizibilitate {#changing-visibility-levels}
 
 Pentru a schimba vizibilitatea unei abilități:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operațiuni în Masă
+### Operațiuni în Masă {#bulk-operations}
 
 Pentru a schimba vizibilitatea mai multor abilități:
 
@@ -108,11 +108,11 @@ Pentru a schimba vizibilitatea mai multor abilități:
 2. Selectați un nou nivel de vizibilitate din meniul derulant de acțiune în masă
 3. Faceți clic pe **Apply**
 
-## Lista de Permisiuni a Partenerilor
+## Lista de Permisiuni a Partenerilor {#partner-allow-list}
 
 **Lista de permisiuni a partenerilor** controlează ce parteneri externi pot accesa abilitățile de nivel Partner.
 
-### Adăugarea Partenerilor
+### Adăugarea Partenerilor {#adding-partners}
 
 1. Mergeți la **Superdav AI Agent** → **Settings** → **Partners**
 2. Faceți clic pe **Add Partner**
@@ -120,7 +120,7 @@ Pentru a schimba vizibilitatea mai multor abilități:
 4. Opțional, adăugați un nume și o descriere a partenerului
 5. Faceți clic pe **Save**
 
-### Asignarea Abilităților Partenerilor
+### Asignarea Abilităților Partenerilor {#assigning-abilities-to-partners}
 
 După ce ați adăugat un partener:
 
@@ -130,7 +130,7 @@ După ce ați adăugat un partener:
 4. În secțiunea "Partner allow-list", bifați căsuțele pentru partenerii care ar trebui să aibă acces
 5. Faceți clic pe **Save**
 
-### Revocarea Accesului Partenerului
+### Revocarea Accesului Partenerului {#revoking-partner-access}
 
 Pentru a elimina accesul unui partener:
 
@@ -140,11 +140,11 @@ Pentru a elimina accesul unui partener:
 
 Partenerul va pierde imediat accesul la acea abilitate.
 
-## Abilitățile Nerecunoscute
+## Abilitățile Nerecunoscute {#unclassified-abilities}
 
 Când instalați o abilitate de la un terț pe care Superdav AI Agent nu o recunoaște, aceasta este marcată ca **Unclassified** (Nerecunoscută).
 
-### Notificare de Administrare pentru Abilitățile Nerecunoscute
+### Notificare de Administrare pentru Abilitățile Nerecunoscute {#admin-notice-for-unclassified-abilities}
 
 Veți vedea o notificare de administrare:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Revizuirea Abilităților Nerecunoscute
+### Revizuirea Abilităților Nerecunoscute {#reviewing-unclassified-abilities}
 
 1. Faceți clic pe **Review Abilities** (Revizuirea Abilităților) din notificare
 2. Pentru fiecare abilitate nerecunoscută, veți vedea:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Faceți clic pe **Classify** (Clasifică) pentru a salva decizia dumneavoastră
 
-### De ce să Clasificați Abilitățile Nerecunoscute?
+### De ce să Clasificați Abilitățile Nerecunoscute? {#why-classify-unclassified-abilities}
 
 Clasificarea abilităților:
 
@@ -187,9 +187,9 @@ Clasificarea abilităților:
 - **Permite funcționalități**: Odată clasificate, abilitatea devine disponibilă
 - **Documentează deciziile**: Alegerile dumneavoastră sunt înregistrate pentru scopuri de audit
 
-## Vizibilitatea în Diferite Interfețe
+## Vizibilitatea în Diferite Interfețe {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Abilitățile publice** sunt disponibile prin endpoint-uri REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Abilitățile interne și partener** nu sunt disponibile prin REST API.
 
-### Serverele MCP
+### Serverele MCP {#mcp-servers}
 
 **Abilitățile publice** sunt disponibile prin MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Abilitățile partener** sunt disponibile doar cu credențialele partenerului.
 
-### Integrarea WooCommerce
+### Integrarea WooCommerce {#woocommerce-integration}
 
 **Abilitățile publice** legate de WooCommerce sunt disponibile:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Abilitățile interne** nu sunt expuse către WooCommerce.
 
-### Interfața de Chat
+### Interfața de Chat {#chat-interface}
 
 **Toate abilitățile** (Public, Internal, Partner) sunt disponibile în chat, în funcție de permisiunile utilizatorului:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Utilizatorii obișnuiți văd doar abilitățile Publice
 - Partenerii văd abilitățile Publice + Partener (dacă sunt în lista alb-neagră)
 
-## Cele Mai Bune Practici de Securitate
+## Cele Mai Bune Practici de Securitate {#security-best-practices}
 
-### Principiul Privilegiului Minim
+### Principiul Privilegiului Minim {#principle-of-least-privilege}
 
 - Setați abilitățile la cea mai restrictivă vizibilitate care permite totuși utilizarea lor
 - Folosiți vizibilitatea Partner pentru operațiunile sensibile
 - Dezactivați abilitățile pe care nu le folosiți
 
-### Audituri Periodice
+### Audituri Periodice {#regular-audits}
 
 - Revizuiți vizibilitatea abilităților lunar
 - Verificați dacă există abilități nerecunoscute
 - Eliminați accesul pentru partenerii nefolosiți
 
-### Înregistrarea și Monitorizarea
+### Înregistrarea și Monitorizarea {#logging-and-monitoring}
 
 - Monitorizați care abilități sunt folosite cel mai des
 - Urmăriți tiparele de acces ale partenerilor
 - Alertați în cazul unei utilizări neobișnuite a abilităților
 
-### Abilitățile de la Terți
+### Abilitățile de la Terți {#third-party-abilities}
 
 - Revizuiți abilitățile de la terți înainte de a le activa
 - Clasificați-le explicit
 - Începeți cu vizibilitate Internă sau Partner
 - Promovați la Public doar după verificări
 
-## Depanare
+## Depanare {#troubleshooting}
 
 **O abilitate nu apare în listă**
 - Verificați dacă abilitatea este instalată și activă
@@ -285,7 +285,7 @@ Available abilities:
 - Verificați că clasificarea dumneavoastră a fost salvată
 - Verificați dacă plugin-ul care oferă abilitatea este actualizat
 
-## Migrarea de la Modul Legacy
+## Migrarea de la Modul Legacy {#migration-from-legacy-mode}
 
 Dacă vă actualizați de la o versiune mai veche de Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Dacă vă actualizați de la o versiune mai veche de Superdav AI Agent:
 
 Vedeți **Third-Party Mode Migration** (Migrarea Modului de Terță Parte) pentru mai multe detalii despre tranziția către integrarea native Abilities API.
 
-## Pași Următori
+## Pași Următori {#next-steps}
 
 După configurarea vizibilității abilităților:
 

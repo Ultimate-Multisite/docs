@@ -3,11 +3,11 @@ title: Produk Domain sareng Harga
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produk Domain jeung Harga
+# Produk Domain jeung Harga {#domain-products-and-pricing}
 
 Produk domain téh cara anjeun ngontrol harga, TLD (Top-Level Domain), privasi WHOIS, jeung pilihan penyedia layanan. Saban produk domain téh mangrupa produk Ultimate Multisite standar anu aya tab **Domain Settings** tambahan.
 
-## Ngadamel produk domain
+## Ngadamel produk domain {#creating-a-domain-product}
 
 1. Pergi ka **Network Admin › Ultimate Multisite › Products**
 2. Klik **Add New** (Tambah Anyar)
@@ -17,13 +17,13 @@ Produk domain téh cara anjeun ngontrol harga, TLD (Top-Level Domain), privasi W
 
 Produk domain bakal muncul kalawan lencana **Domain** warna ungu dina daftar produk je bisa difilter ku tab **Domain Products**.
 
-## Tab pengaturan domain
+## Tab pengaturan domain {#domain-settings-tab}
 
-### Penyedia (Provider)
+### Penyedia (Provider) {#provider}
 
 Pilih penyedia mana anu ngurus registrasi pikeun produk ieu. Defaultna nyaéta **Default provider** global anu diatur dina pengaturan Domain Seller.
 
-### TLD anu didukung (Supported TLDs)
+### TLD anu didukung (Supported TLDs) {#supported-tlds}
 
 Tingali kosong pikeun ngadamel **catch-all product** anu berlaku pikeun sakabéh TLD nu teu cocog jeung produk séjén.
 
@@ -31,7 +31,7 @@ Asupkeun daftar TLD anu dipisah ku koma (misal: `.com, .net, .org`) pikeun ngada
 
 **Kumaha cara kerja pencocokan produk:** Nalika pelanggan nyari domain, addon bakal milih produk cocog anu paling spesifik. Produk anu aya `.com` dina daftar TLD-na leuwih diprioritaskeun tibatan produk *catch-all*. Upami teu aya produk spesifik TLD anu cocog, mah *catch-all* anu bakal dipaké. Upami teu aya produk, pencarian domain moal ditunjuke.
 
-### Jenis Markup (Markup type)
+### Jenis Markup (Markup type) {#markup-type}
 
 Tilul mode ngatur kumaha harga ritel anjeun dihitung tina biaya grosir:
 
@@ -41,11 +41,11 @@ Tilul mode ngatur kumaha harga ritel anjeun dihitung tina biaya grosir:
 | **Fixed markup** | Nambah jumlah dolar anu tetep (fixed). Markup $5 tina domain $10 bakal jadi $15. |
 | **Fixed price** | Teu ngaliwatan biaya grosir sacara total. Salawasna ngitung jumlah anu anjeun asupkeun. |
 
-### Harga pangawitan (Introductory pricing)
+### Harga pangawitan (Introductory pricing) {#introductory-pricing}
 
 Aktifkan penawaran harga diskon tahun pertama. Atur **Harga Perkenalan** (harga tahun 1) yang terpisah di samping **Harga Perpanjangan** reguler (tahun ke-2 dan seterusnya). Pelanggan akan melihat kedua harga ini ditampilkan saat checkout, jadi mereka tahu apa yang harus diharapkan saat perpanjangan.
 
-### Privasi WHOIS
+### Privasi WHOIS {#whois-privacy}
 
 Mengontrol apakah perlindungan privasi WHOIS ditawarkan untuk domain yang terdaftar melalui produk ini.
 
@@ -59,7 +59,7 @@ Untuk Namecheap, privasi WHOIS menggunakan WhoisGuard (selalu gratis). Untuk Ope
 
 ---
 
-## Impor dan sinkronisasi TLD
+## Impor dan sinkronisasi TLD {#tld-import-and-sync}
 
 Produk domain menampilkan harga grosir *real-time* yang diambil dari penyedia yang terhubung. Agar ini berfungsi, TLD harus diimpor.
 
@@ -70,7 +70,7 @@ Setelah sinkronisasi, buka tab Pengaturan Domain untuk produk domain mana pun da
 
 ---
 
-## Perpanjangan Otomatis (Auto-renewal)
+## Perpanjangan Otomatis (Auto-renewal) {#auto-renewal}
 
 Perpanjangan domain terikat pada status keanggotaan pelanggan:
 
@@ -90,7 +90,7 @@ ID template email untuk peristiwa siklus hidup domain:
 
 ---
 
-## Admin: Registrasi domain manual
+## Admin: Registrasi domain manual {#admin-manual-domain-registration}
 
 Kanggo mendaftar domain atas nama pelanggan tanpa mereka harus lewat proses checkout:
 

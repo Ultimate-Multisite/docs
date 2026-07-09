@@ -4,13 +4,13 @@ title: Kiryar - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Çalakî: wp_ultimo_support_agents_activation
+# Çalakî: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
 
 Bihêle beşên din ên pluginê rûtînên xwe yên çalakkirinê pê ve girêdin
 
-### Ji guhertoya
+### Ji guhertoya {#since}
 
 - 1.9.6
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-support-agents/blob/main/inc/class-hooks.php#L83) de, li rêza 83 hatîye pênasekirin

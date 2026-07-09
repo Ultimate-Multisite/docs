@@ -3,15 +3,15 @@ title: Generar SVG de logotipo
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generar SVG de Logo
+# Generar SVG de Logo {#generate-logo-svg}
 
 La funcionalidad **Generar SVG de Logo** permite a Theme Builder crear e incrustar SVGs de logo personalizados directamente en su sitio de WordPress con una sanitización automática segura de nombres de espacio.
 
-## Resumen
+## Resumen {#overview}
 
 Esta funcionalidad genera logos vectoriales escalables (SVG) basados en la dirección de marca y las preferencias de diseño de su sitio. Los SVGs generados se sanitizan automáticamente para garantizar que sean seguros de usar en WordPress, manteniendo al mismo tiempo la integridad visual.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Parámetro | Tipo | Requerido | Descripción |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Esta funcionalidad genera logos vectoriales escalables (SVG) basados en la direc
 | `height` | number | No | Alto del SVG en píxeles (por defecto: 200) |
 | `include_text` | boolean | No | Si se debe incluir el nombre del sitio como texto en el logo (por defecto: true) |
 
-## Formato de Salida
+## Formato de Salida {#output-format}
 
 La funcionalidad devuelve una cadena SVG con la siguiente estructura:
 
@@ -36,7 +36,7 @@ La funcionalidad devuelve una cadena SVG con la siguiente estructura:
 }
 ```
 
-## Comportamiento de Sanitización SVG
+## Comportamiento de Sanitización SVG {#svg-sanitisation-behaviour}
 
 Los SVGs generados se someten a una sanitización automática segura de nombres de espacio para:
 
@@ -48,7 +48,7 @@ Los SVGs generados se someten a una sanitización automática segura de nombres 
 
 Esto garantiza que el SVG sea seguro para incrustar directamente en WordPress sin requerir sanitización adicional.
 
-## Ejemplo de Uso
+## Ejemplo de Uso {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ La funcionalidad crea un logo SVG que:
 - Sigue principios de diseño modernos
 - Está automáticamente sanitizado y listo para usar
 
-## Integración con Theme Builder
+## Integración con Theme Builder {#integration-with-theme-builder}
 
 Al usar la selección de dirección de diseño de Theme Builder, la funcionalidad Generar SVG de Logo:
 
@@ -71,21 +71,21 @@ Al usar la selección de dirección de diseño de Theme Builder, la funcionalida
 3. Incrusta automáticamente el logo en el área de cabecera/marca de su sitio
 4. Almacena el SVG como un logo personalizado en la biblioteca de medios de WordPress
 
-## Mejores Prácticas
+## Mejores Prácticas {#best-practices}
 
 - **Proporcione preferencias de estilo claras** — describa el estilo de diseño que desea (moderno, clásico, juguetón, etc.)
 - **Especifique colores** — incluya los colores de su marca para mantener la coherencia
 - **Pruebe el renderizado** — verifique que el logo se muestre correctamente en diferentes tamaños de pantalla
 - **Personalice más** — use las herramientas de personalización de logos de WordPress para ajustar el tamaño y la ubicación
 
-## Limitaciones
+## Limitaciones {#limitations}
 
 - Los logos SVG se generan como gráficos estáticos (no animados)
 - Los logos complejos con muchos elementos pueden requerir un ajuste manual
 - No se admiten fuentes personalizadas; el texto utiliza fuentes del sistema
 - Dimensiones muy grandes o muy pequeñas pueden afectar la calidad
 
-## Funcionalidades Relacionadas
+## Funcionalidades Relacionadas {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — compruebe el contraste de color para la accesibilidad
 - [Create Menu](./create-menu.md) — cree menús de navegación para su sitio

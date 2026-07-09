@@ -3,11 +3,11 @@ title: Hooklar üzrə istinad
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks İstinadı
+# Hooks İstinadı {#hooks-reference}
 
 Ultimate Multisite-dəki bütün **59 əməliyyat** və **118 filtr** üçün avtomatik yaradılmış sənədləşdirmə.
 
-## Əməliyyatlar
+## Əməliyyatlar {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Autentifikasiya yönləndirməsindən əvvəl işə düşür.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Autentifikasiya cookie-si təyin edilməzdən dərhal əvvəl işə düşür.
@@ -70,7 +70,7 @@ Ultimate Multisite-dəki bütün **59 əməliyyat** və **118 filtr** üçün av
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Obyekt verilənlər bazasında saxlandıqdan sonra işə düşür.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Plugin tərtibatçılarına kilidin açılması prosesinə əməliyyatlar əlavə etməyə imkan verir.
 
-## Filtrlər
+## Filtrlər {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Autentifikasiya cookie-sinin bitmə müddətinin davamiyyətini filtrdən keçirir.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Autentifikasiya yönləndirmə sxemini filtrdən keçirir.

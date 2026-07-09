@@ -3,7 +3,7 @@ title: Aktualizácia plánu
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Upgrade plannu (v2)
+# Upgrade plannu (v2) {#upgrading-a-plan-v2}
 
 _**DÔLEŽITÉU POZNÁDANIE: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 
@@ -41,7 +41,7 @@ Po dokončení pokladne sa nové produkty prispôsobia účtu vašich zákazník
 
 ##
 
-## Cesty na upgrade a downgrade
+## Cesty na upgrade a downgrade {#upgrade-and-downgrade-paths}
 
 Na každom z vašich produktov budete mať záložku **Up & Downgrades**. Prvým možným položkou na tejto záložke je pole sa naznačujúce **Plan Group**.
 

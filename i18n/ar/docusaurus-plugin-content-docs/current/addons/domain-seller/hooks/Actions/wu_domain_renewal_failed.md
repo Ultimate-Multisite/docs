@@ -4,11 +4,11 @@ title: Action - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed
+# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 يتم تشغيل هذا الإجراء بعد فشل محاولة تجديد النطاق.
 
-## المعاملات
+## المعاملات {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bff3fd7903485780766e490300546070
 | $renewal_data | `array<string,mixed>` | بيانات وصف التجديد (مثل اسم النطاق، عدد السنوات، إلخ). |
 | $error_message | `string` | رسالة خطأ يسهل قراءتها من مسجل النطاقات (registrar). |
 
-### منذ
+### منذ {#since}
 
 - 2.0.0
-### المصدر
+### المصدر {#source}
 
 مُعرّف في [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) في السطر 630

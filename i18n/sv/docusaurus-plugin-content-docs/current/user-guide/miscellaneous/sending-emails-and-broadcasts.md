@@ -3,13 +3,13 @@ title: Skicka e-postmeddelanden och massutskick
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Skicka e-post och utskick (v2)
+# Skicka e-post och utskick (v2) {#sending-emails-and-broadcasts-v2}
 
 _**VIKTIGT: Den här artikeln avser Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite levereras med en funktion som gör att du kan kommunicera med dina kunder genom att skicka ett e-postmeddelande till en riktad användare eller en grupp användare samt skicka meddelanden på deras admin dashboard för att sända ut tillkännagivanden
 
-## Lägg till admin notices på dina kunders dashboard med utskick
+## Lägg till admin notices på dina kunders dashboard med utskick {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Med Ultimate Multisite broadcast-funktionen kan du lägga till **admin notices** på din användares subsite admin dashboard.
 
@@ -51,7 +51,7 @@ När du har skapat ditt meddelande kan du sedan trycka på knappen **Send**.
 
 Och det var allt. Admin-meddelandet bör omedelbart visas på din användares dashboard.
 
-## Skicka e-post till dina kunder
+## Skicka e-post till dina kunder {#send-emails-to-your-customers}
 
 Med Ultimate Multisite broadcast-funktionen kan du skicka ett e-postmeddelande till dina användare. Du har ett alternativ att skicka e-postmeddelandet endast till specifika användare eller rikta det till en specifik användargrupp baserat på produkten eller planen de prenumererar på.
 
@@ -81,11 +81,11 @@ När du har skapat ditt meddelande kan du trycka på knappen **Send**.
 
 Och så enkelt är det att skicka ett e-postmeddelande till dina slutanvändare med broadcast-funktionen.
 
-## System-e-post
+## System-e-post {#system-emails}
 
 System-e-post i Ultimate Multisite är de **automatiska aviseringar** som skickas av systemet efter vissa åtgärder som registrering, betalning, domänmappning osv. Dessa e-postmeddelanden kan redigeras eller ändras från Ultimate Multisite-inställningarna. Det levereras också med en funktion som gör att du kan återställa och importera befintliga inställningar från en annan Ultimate Multisite-installation.
 
-### Återställning och import
+### Återställning och import {#resetting--importing}
 
 Nya Ultimate Multisite-versioner, samt tillägg, kan och kommer att registrera nya e-postmeddelanden då och då.
 
@@ -93,7 +93,7 @@ För att förhindra konflikter och andra problem, **kommer vi inte att lägga ti
 
 Super admins och agenter kan dock importera dessa nyligen registrerade e-postmeddelanden via importverktyget. Den processen skapar ett nytt system-e-postmeddelande med innehållet och konfigurationen från den nya e-postmallen, vilket låter super admin göra vilka ändringar de vill eller behålla dem som de är.
 
-#### Så här importerar du system-e-post
+#### Så här importerar du system-e-post {#how-to-import-system-emails}
 
 Gå till din Ultimate Multisite Settings-sida och gå till fliken **Emails**.
 
@@ -111,7 +111,7 @@ Sedan kan du växla alternativen för Import Emails för att se vilka system-e-p
 
 <!-- Skärmbild ej tillgänglig: modalen Återställ och importera med alternativen för att importera mejl expanderade -->
 
-#### Återställa systemmejl
+#### Återställa systemmejl {#reseting-system-emails}
 
 Andra gånger kommer du att inse att ändringarna du gjorde i en viss mejlmall inte längre fungerar för dig och att du vill återställa den till sitt **standardtillstånd**.
 

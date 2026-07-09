@@ -3,25 +3,25 @@ title: Àdàkọ Àfikún
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Àdàkọ Àfikún
+# Àdàkọ Àfikún {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Àwọn ìbéèrè
+## Àwọn ìbéèrè {#requirements}
 
 - WordPress 5.3 tàbí tó ga ju bẹ́ẹ̀ lọ
 - PHP 7.4 tàbí tó ga ju bẹ́ẹ̀ lọ
 - plugin Multisite Ultimate (ń ṣiṣẹ́)
 
-## Fífìsórí
+## Fífìsórí {#installation}
 
 1. Gbé àwọn fáìlì àfikún sí àkójọ `/wp-content/plugins/` rẹ
 2. Mú plugin náà ṣiṣẹ́ nípasẹ̀ àkójọ 'Plugins' nínú WordPress
 3. Ṣètò àwọn ètò àfikún nínú alábòójútó nẹ́tíwọ́ọ̀kì
 
-## Ìdàgbàsókè
+## Ìdàgbàsókè {#development}
 
-### Ìṣètò
+### Ìṣètò {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Ìgbékalẹ̀ Iṣẹ́-ọnà
+### Ìgbékalẹ̀ Iṣẹ́-ọnà {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Àwọn òfin ìsọ̀dọ̀tun kóòdù
 ```
 
-### Ìdánwò
+### Ìdánwò {#testing}
 
 Àfikún náà ní fireemu iṣẹ́ ìdánwò tó péye:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **Ìbòrí Ìdánwò**: A ṣètò rẹ̀ láti tọpinpin ìbòrí kóòdù
 - **Ìdánwò Multisite**: Àwọn ìdánwò máa ń ṣiṣẹ́ nínú àyíká multisite
 
-### Àwọn Ìlànà Kóòdù
+### Àwọn Ìlànà Kóòdù {#code-standards}
 
 - **Àwọn Ìlànà Kíkọ Kóòdù WordPress**: A fi PHPCS mú wọn ṣẹ
 - **Ìbámu PHP 7.4+**: Àwọn àbùdá PHP ìgbàlódé ni a ṣe àtìlẹ́yìn fún
 - **Ìtúpalẹ̀ Aláìyípadà**: Ìṣopọ̀ PHPStan fún ṣíṣe àyẹ̀wò irú
 - **Ìsọ̀dọ̀tun Kóòdù**: Àwọn òfin Rector fún ìgbéga PHP
 
-### Eto Kíkọ
+### Eto Kíkọ {#build-system}
 
 - **Ṣíṣe Àwọn Ohun-ìní**: Dín fáìlì CSS/JS kù
 - **Ìtumọ̀**: Ṣíṣe fáìlì POT
 - **Ìṣàkóso Ìṣàkójọ**: Ṣíṣe àkójọ fún pípínkiri
 - **Ipò Ìdàgbàsókè**: Àwọn ohun-ìní tí a kò dín kù fún ṣíṣe àtúnṣe àṣìṣe
 
-## Ìṣètò
+## Ìṣètò {#configuration}
 
 Àfikún náà ṣe àtìlẹ́yìn fún oríṣiríṣi àwọn àṣàyàn ìṣètò tí a lè wọ̀lé sí nípasẹ̀ ojú-ìbánisọ̀rọ̀ alábòójútó nẹ́tíwọ́ọ̀kì.
 
-## Àwọn Hook àti Filter
+## Àwọn Hook àti Filter {#hooks-and-filters}
 
-### Àwọn Action
+### Àwọn Action {#actions}
 
 - `ultimate-multisite-addon-template_init` - A dá a ṣiṣẹ́ lẹ́yìn ìbẹ̀rẹ̀ àfikún
 - `ultimate-multisite-addon-template_loaded` - A dá a ṣiṣẹ́ lẹ́yìn tí gbogbo fáìlì àfikún bá ti kojọpọ̀
 
-### Àwọn Filter
+### Àwọn Filter {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ṣàtúnṣe àwọn ètò àfikún
 - `ultimate-multisite-addon-template_enabled` - Borí ipò mímú ṣiṣẹ́/ìmúṣiṣẹ́ àfikún kúrò
 
-## Ìwé-àṣẹ
+## Ìwé-àṣẹ {#license}
 
 Àfikún yìí ní ìwé-àṣẹ lábẹ́ GPL v3 tàbí èyí tó wá lẹ́yìn.
 
-## Àtìlẹ́yìn
+## Àtìlẹ́yìn {#support}
 
 Fún àtìlẹ́yìn àti ìwé ìtọ́nisọ́nà, ṣàbẹ̀wò sí [MultisiteUltimate.com](https://multisiteultimate.com)
-## Àkọsílẹ̀ Àyípadà
+## Àkọsílẹ̀ Àyípadà {#changelog}
 
 - Ẹ̀yà 1.0.1 (2025-09-28): tún prefix lorúkọ sí ultimate-multisite; mú text domain dójúìwọ̀n; ìgbéga ẹ̀yà.
 

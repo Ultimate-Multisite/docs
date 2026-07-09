@@ -3,9 +3,9 @@ title: บันทึกการเปลี่ยนแปลง Ultimate AI 
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# บันทึกการเปลี่ยนแปลง Ultimate AI Connector สำหรับ WebLLM
+# บันทึกการเปลี่ยนแปลง Ultimate AI Connector สำหรับ WebLLM {#ultimate-ai-connector-for-webllm-changelog}
 
-## เวอร์ชัน 1.1.0 — เผยแพร่เมื่อ 2026-04-09
+## เวอร์ชัน 1.1.0 — เผยแพร่เมื่อ 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * **ใหม่:** วิดเจ็ตแชทแบบลอย (Floating chat widget) พร้อมตัวบ่งชี้สถานะใน admin-bar — ผู้ใช้ที่เข้าสู่ระบบทุกคนสามารถสั่งงาน LLM ที่ทำงานบนเบราว์เซอร์ได้โดยตรงจากหน้าเว็บไซต์
 * **ใหม่:** SharedWorker runtime — ตอนนี้ MLC engine จะทำงานใน SharedWorker ทำให้หลายแท็บสามารถแชร์เซสชัน GPU เดียวกันได้ แทนที่จะแย่งกันใช้
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * **แก้ไข:** เชื่อมต่อ WebLLM เข้ากับ filter wpai_preferred_text_models เพื่อให้ฟีเจอร์ AI Experiments ส่งเส้นทางไปยังเอนจิ้นในเบราว์เซอร์เมื่อมีการกำหนดค่าโมเดล
 * **ปรับปรุง:** ปรับปรุงการแก้ไขปัญหาแคช (Cache-busting), การทำให้เนื้อหาเป็นมาตรฐาน (content normalisation), และการแก้ไขปัญหาที่เกี่ยวข้องกับฮาร์ดแวร์ ซึ่งพบระหว่างการทดสอบแบบ end-to-end
 
-## เวอร์ชัน 1.0.0 — การเปิดตัวครั้งแรก
+## เวอร์ชัน 1.0.0 — การเปิดตัวครั้งแรก {#version-100--initial-release}

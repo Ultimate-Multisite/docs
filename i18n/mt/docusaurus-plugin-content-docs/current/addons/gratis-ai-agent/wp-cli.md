@@ -3,11 +3,11 @@ title: Referenza WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Referenza WP-CLI
+# Referenza WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent jiġi b’familja ta’ commands `wp gratis-ai-agent` għall-benchmarking tal-agent, il-ġestjoni tal-abbiltajiet, u l-mistoqsija dwar l-istatus tal-agent mil-linja tal-command. Il-commands kollha jeħtieġu WP-CLI 2.0 jew ogħla.
 
-## Installazzjoni
+## Installazzjoni {#installation}
 
 Il-commands WP-CLI jiġu rreġistrati awtomatikament meta l-plugin ikun attiv. Ivverifika b’:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Iħaddem is-suite ta’ benchmark tal-Kapaċitajiet tal-Agent — sett ta’ prompts kumplessi u b’diversi passi li jeżerċitaw il-wiċċ sħiħ tal-abbiltajiet. Uża dan biex tevalwa l-prestazzjoni tal-mudell, tqabbel providers tal-AI, jew tivvalida packs ta’ abbiltajiet qabel ma tużahom fil-produzzjoni.
 
-### Sinossi
+### Sinossi {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Għażliet
+### Għażliet {#options}
 
 | Għażla | Deskrizzjoni |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Format tal-output: `table` (default), `json`, `csv` |
 | `--save` | Issejvja r-riżultati tal-benchmark fid-database għal tqabbil storiku |
 
-### Eżempji
+### Eżempji {#examples}
 
 Ħaddem is-suite sħiħa tal-benchmark bil-provider u l-mudell attwali:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 Il-benchmark joħroġ ringiela waħda għal kull mistoqsija bil-kolonni li ġejjin:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Mistoqsijiet tal-Benchmark
+### Mistoqsijiet tal-Benchmark {#benchmark-questions}
 
 Is-suite default tinkludi:
 
@@ -95,11 +95,11 @@ Mistoqsijiet addizzjonali jistgħu jiġu rreġistrati permezz tal-filter `gratis
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Jiġġestixxi abbiltajiet installati u packs ta’ abbiltajiet.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Jelenka l-abbiltajiet irreġistrati kollha, is-sors tagħhom (core jew pack), u l-istatus attwali tagħhom.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Iniżżel u jattiva pack ta’ abbiltajiet mir-registry.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Jiddiżattiva abbiltà speċifika mingħajr ma jneħħi l-pack. Utli biex tillimita l-ambitu tal-agent fuq sit partikolari.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Jerġa’ jattiva abbiltà li kienet ġiet diżattivata qabel.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Juri l-konfigurazzjoni attwali tal-agent u l-istatus tal-konnettività.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Juri attività reċenti tal-agent mid-debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Jerġa’ jistabbilixxi l-istat tal-agent: ineħħi s-CSS injettat, ineħħi s-CPTs u t-taxonomies irreġistrati mill-agent, jerġa’ jistabbilixxi l-istili globali, u jbattal il-cache tal-għażliet tal-agent. Ma jneħħix il-plugin jew is-settings tiegħu.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Kodiċijiet tal-Ħruġ
+## Kodiċijiet tal-Ħruġ {#exit-codes}
 
 Il-kmandi kollha joħorġu `0` meta jirnexxu. Kodiċijiet tal-ħruġ mhux żero:
 

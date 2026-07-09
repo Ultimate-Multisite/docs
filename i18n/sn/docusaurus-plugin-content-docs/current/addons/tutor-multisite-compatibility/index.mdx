@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Chokuwedzera cheWordPress chinowedzera kugadzirisa kuenderana kweTutor LMS munzvimbo dze multisite.
 
-## Tsananguro
+## Tsananguro {#description}
 
 Chokuwedzera ichi chinopa kugadzirisa kwakakosha kwekuenderana pakumhanyisa Tutor LMS pamanetiweki eWordPress multisite. Chinobata kunyoreswa kwevashandisi, manejimendi yevadzidzisi, miganhu yemakosi, uye mamwe mashandiro akanangana ne multisite.
 
-## Zvimiro
+## Zvimiro {#features}
 
 - **Manejimendi yeMatafura eDatabase**: Chinoona otomatiki uye chinogadzira matafura eTutor LMS asipo anokundikana nekuda kwezvirambidzo zveforeign key zve multisite
 - **Kunyoreswa kweVashandisi paMultisite**: Mabatiro eAJAX akagadziridzwa ekutungamirira kunyoreswa kwevashandisi pamasaiti enetiweki
@@ -24,7 +24,7 @@ Chokuwedzera ichi chinopa kugadzirisa kwakakosha kwekuenderana pakumhanyisa Tuto
 - **Maonero eAdmin Akagadziridzwa**: Rondedzero yevadzidzisi uye interface yemanejimendi inoziva multisite
 - **Zvishandiso zveAdmin**: Interface yemanejimendi yeDatabase yevatariri venetiweki nesaiti
 
-## Zvinodiwa
+## Zvinodiwa {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Chokuwedzera ichi chinopa kugadzirisa kwakakosha kwekuenderana pakumhanyisa Tuto
 - Kuiswa kweWordPress Multisite
 - Chokuwedzera cheUltimate Multisite (chekushanda kwemiganhu yemakosi)
 
-## Kuisa
+## Kuisa {#installation}
 
 1. Isa mafaira echokuwedzera ku`/wp-content/plugins/tutor-multisite-compatibility/`
 2. Ita shuwa kuti Tutor LMS yakaiswa uye yakavhurwa
 3. Vhura chokuwedzera kuburikidza nemenyu ye'Plugins' muWordPress
 4. Chokuwedzera chichazvibatanidza otomatiki neTutor LMS
 
-## Chimiro cheMafaira
+## Chimiro cheMafaira {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Mashandiro Akabviswa kubva kuMU Plugin
+## Mashandiro Akabviswa kubva kuMU Plugin {#functionality-moved-from-mu-plugin}
 
 Chokuwedzera ichi chine mashandiro aimbova mu`wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Chokuwedzera ichi chine mashandiro aimbova mu`wp-content/mu-plugins/daves.php`:
 - Kubata kunyoreswa kwevashandisi pa multisite
 - Kuratidzwa kweID yechigadzirwa chekosi
 
-## Manejimendi yeDatabase
+## Manejimendi yeDatabase {#database-management}
 
-### Dambudziko
+### Dambudziko {#the-problem}
 
 Munzvimbo dzeWordPress multisite, kugadzirwa kwematafura eTutor LMS kunokundikana pamatafura ane zvirambidzo zveforeign key kuenda kutafura yevashandisi. Izvi zvinoitika nokuti:
 
@@ -81,7 +81,7 @@ Munzvimbo dzeWordPress multisite, kugadzirwa kwematafura eTutor LMS kunokundikan
 - Foreign keys dzinoreva `wp_2_users` (isingavipo)
 - Tafura chaiyo yevashandisi ndeye`wp_users` (inogoverwa panetiweki yose)
 
-### Mhinduro
+### Mhinduro {#the-solution}
 
 Chokuwedzera ichi chinozviita otomatiki:
 
@@ -92,13 +92,13 @@ Chokuwedzera ichi chinozviita otomatiki:
    - Kugadzirwa kwesaiti itsva munetiweki
    - Kutarisa matafura nemaoko kuburikidza neinterface yeadmin
 
-### Matafura Anobatwa
+### Matafura Anobatwa {#affected-tables}
 
 - `tutor_coupon_usages` - Rine foreign key kuenda kutafura yevashandisi
 - `tutor_carts` - Rine foreign key kuenda kutafura yevashandisi
 - `tutor_notification_preferences` - Tafura yeTutorPro ine foreign key kuenda kutafura yevashandisi
 
-### Interface yeAdmin
+### Interface yeAdmin {#admin-interface}
 
 Svika kuzvishandiso zvemanejimendi yeDatabase pa:
 
@@ -111,6 +111,6 @@ Interface inokutendera kuti:
 - Uongorore gadziriro yeDatabase
 - Uone ruzivo rwakadzama rwemamiriro
 
-## Rutsigiro
+## Rutsigiro {#support}
 
 Chokuwedzera ichi chakagadzirirwa chaizvo chikuva cheKursoPro. Kuti uwane rutsigiro rwehunyanzvi, taura nechikwata chebudiriro.

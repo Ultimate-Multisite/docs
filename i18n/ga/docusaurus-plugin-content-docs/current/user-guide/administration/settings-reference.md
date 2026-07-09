@@ -3,11 +3,11 @@ title: Tagairt Socruithe
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Tagairt Socruithe
+# Tagairt Socruithe {#settings-reference}
 
 Rianaíonn an leathanach seo socruithe a théann i bhfeidhm ar riarachán laethúil agus ar athruithe iompair le déanaí in Ultimate Multisite.
 
-## Roghanna Eile
+## Roghanna Eile {#other-options}
 
 Tá an limistéar **Roghanna Eile** le feiceáil faoi **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Tá an limistéar **Roghanna Eile** le feiceáil faoi **Ultimate Multisite > Set
 |---|---|
 | **Enable Jumper** | Taispeánann sé uirlis loingseoireachta tapa Jumper sa limistéar riaracháin. Úsáid é chun léim go díreach chuig scáileáin Ultimate Multisite, oibiachtaí líonra, agus cinn scríbe riaracháin a dtacaítear leo. Díchumasaigh é mura dteastaíonn uait an t-aicearra seo a bheith infheicthe. |
 
-## Tuairisciú earráidí agus teiliméadracht
+## Tuairisciú earráidí agus teiliméadracht {#error-reporting-and-telemetry}
 
 Baineadh an socrú roghnach tuairiscithe earráidí roimhe seo den leathanach socruithe. Tá teiliméadracht anaithnid díchumasaithe agus níl aon lasc UI ann chun í a chumasú.
 
 Má choinníonn tú runbooks inmheánacha nó seatanna scáileáin don leathanach socruithe, bain tagairtí don seanréimse roghnach tuairiscithe earráidí ionas nach mbeidh riarthóirí ag lorg socrú nach bhfuil ann a thuilleadh.
 
-## Socruithe iompórtála/easpórtála
+## Socruithe iompórtála/easpórtála {#importexport-settings}
 
 Míníonn cluaisín socruithe **Import/Export** cé na socruithe a rialaíonn sé agus nascann sé go díreach le **Ultimate Multisite > Site Export** le haghaidh cartlann suímh agus líonra. Úsáid an cluaisín socruithe le haghaidh cumraíochta iompórtála/easpórtála, úsáid **Tools > Export & Import** don sreabhadh oibre easpórtála/iompórtála aon-suímh, agus úsáid an uirlis Site Export nuair a theastaíonn cartlann iomlán Network Export uait.
 
-## Rabhadh iarmhéid Domain Seller HostAfrica
+## Rabhadh iarmhéid Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Nuair atá an breiseán Domain Seller ceangailte le HostAfrica, feiceann riarthóirí líonra rabhadh iarmhéid íseal is féidir a dhíbhe anois nuair atá iarmhéid an chuntais athdhíoltóra ró-íseal le haghaidh próiseáil iontaofa cláraithe nó athnuachana fearann.
 
 Caith leis an bhfógra seo mar rabhadh oibríochtúil: breisigh iarmhéid athdhíoltóra HostAfrica sula nglacann tú le tuilleadh clárúchán fearann íoctha, ansin fill ar shocruithe Domain Seller nó ar an scáileán monatóireachta fearann chun a dheimhniú gur féidir le clárúcháin agus athnuachana leanúint ar aghaidh mar is gnách.
 
-## Socruithe nascóra soláthraí AI
+## Socruithe nascóra soláthraí AI {#ai-provider-connector-settings}
 
 Ní thaispeánann socruithe nascóra soláthraí AI anois ach na linnte cuntas OAuth a dtacaítear leo:
 

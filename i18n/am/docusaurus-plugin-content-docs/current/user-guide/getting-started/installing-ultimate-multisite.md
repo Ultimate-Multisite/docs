@@ -3,13 +3,13 @@ title: Ultimate Multisite መጫኛ
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# የመጨረሻው ማልቲሳይት መጫን
+# የመጨረሻው ማልቲሳይት መጫን {#installing-ultimate-multisite}
 
 :::note
 ይህ ትምህርት፣ የዎርድፕረስ ማልቲሳይት አስቀድሞ ተጭኖ እና ተዋቅሮ እንዲኖር ይጠብቃል፡፡ እንዴት እንደሚሰራ ለመማር፣ በ WP Beginner ላይ ያለውን [እዚህ ትምህርት](https://www.wpbeginner.com/glossary/multisite/) ይመለከቱ።
 :::
 
-## የመተግበሪያው መጫን
+## የመተግበሪያው መጫን {#installing-the-plugin}
 
 የመጨረሻው ማልቲሳይት በ[WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) ላይ ለነጻ ይገኛል።
 
@@ -29,17 +29,17 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 
 ![የተመሰረተ የመተግበሪያ እና ወደ wizard የተመለሰው ገጽ](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Setup Wizard {#setup-wizard}
 
 የSetup Wizard፣ የመጨረሻውን ማልቲሳይት ለመዋቅር በግምት 10 ደቂቃዎች ውስጥ ይመራዎታል።
 
-### እንኳን ደህና መጡ
+### እንኳን ደህና መጡ {#welcome}
 
 ለመጀመር **Get Started** ላይ ጠቅ ያድርጉ።
 
 ![የSetup Wizard እንኳን ደህና መጣ ገጽ](/img/installation/wizard-welcome.png)
 
-### ቅድመ-መጫኛ ፍተሻዎች
+### ቅድመ-መጫኛ ፍተሻዎች {#pre-install-checks}
 
 ይህ ደረጃ፣ የእርስዎ ስርዓት እና የዎርድፕረስ መጫኛ የመጨረሻውን ማልቲሳይት መስፈርቶች ያሟላሉ ለማረጋገጥ ይፈትሻል። ሁሉም ነገር ጥሩ ከታየ፣ **Go to the Next Step** ላይ ጠቅ ያድርጉ።
 
@@ -51,31 +51,31 @@ _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 **Network Activate** ላይ ጠቅ በማድረግ፣ የመተግበሪያውን በመላው የእርስዎ ማልቲሳይት መረብ ላይ በራስዎ ይተግባዋል። አንዴ ከተሰበረ በኋላ፣ wizard ወደ መጫኛ ደረጃ ይቀጥላል። ለመተግበሩ እንዲስተካከል ከwizard ውጪ መሄድ አያስፈልግም።
 :::
 
-### መጫኛ
+### መጫኛ {#installation}
 
 የመጫኛው፣ አስፈላጊዎቹን የዳታቤስ ጠረጴዛዎች ይፈጥራል እና የመጨረሻው ማልቲሳይት ለመሰራት የሚያስፈልገውን `sunrise.php` ፋይል ይጭናል። ለመቀጠል **Install** ላይ ጠቅ ያድርጉ።
 
 ![የዳታቤስ ጠረጴዛዎችን እና sunrise.php የሚያሳዩ መጫኛ ደረጃ](/img/installation/wizard-installation.png)
 
-### የእርስዎ ኩባንያ
+### የእርስዎ ኩባንያ {#your-company}
 
 የኩባንያዎን መረጃ ይሙሉ እና የነባር ምንዛሬዎን ያስቀምጡ። ይህ መረጃ በመላው WaaS መድረክዎ ውስጥ ጥቅም ላይ ይውላል። ከጨረሱ በኋላ **Continue** ላይ ጠቅ ያድርጉ።
 
 ![የ "እርስዎ ኩባንያ" ውቅር ደረጃ](/img/installation/wizard-your-company.png)
 
-### ነባር ይዘት
+### ነባር ይዘት {#default-content}
 
 ይህ ደረጃ፣ አስቀድሞ የተዘጋጁ አብነቶችን፣ ምርቶች እና ሌሎች መጀመሪያ ይዘቶችን እንዲጭኑ ያስችልዎታል። ይህ የመጨረሻውን ማልቲሳይት ባህሪያትን ለመረዳት ጥሩ መንገድ ነው። የነባሩን ይዘት ለማከል **Install** ላይ ጠቅ ያድርጉ ወይም ከፈለጉ ይህንን ደረጃ ይዝገቡ።
 
 ![የነባር ይዘት መጫኛ ደረጃ](/img/installation/wizard-default-content.png)
 
-### የሚመከሩ የመተግበሪያዎች
+### የሚመከሩ የመተግበሪያዎች {#recommended-plugins}
 
 አማራጭ፣ የሚመከሩ ተጨማሪ የመተግበሪያዎችን ይጭኑ። ለማከል **Install** ላይ ጠቅ ያድርጉ ወይም ለመቀጠል ይዝገቡ።
 
 ![የሚመከሩ የመተግበሪያዎች ደረጃ](/img/installation/wizard-recommended-plugins.png)
 
-### ዝግጁ!
+### ዝግጁ! {#ready}
 
 አሁን ጨርሷል። የመጨረሻው ማልቲሳይት መጫኛዎ ተጠናቋል። ከ **Network Admin Dashboard**፣ የእርስዎን Website as a Service መድረክ መገንባት ጀምረዋል።
 

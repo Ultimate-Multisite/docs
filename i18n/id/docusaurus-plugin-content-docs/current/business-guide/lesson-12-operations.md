@@ -3,17 +3,17 @@ title: 'Pelajaran 12: Mengelola Bisnis'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Pelajaran 12: Menjalankan Bisnis
+# Pelajaran 12: Menjalankan Bisnis {#lesson-12-running-the-business}
 
 Platform itu bukan proyek yang selesai, melainkan bisnis yang harus kamu kelola. Pelajaran ini membahas operasional sehari-hari dalam mengelola FitSite: mulai dari dukungan, penagihan, pemeliharaan, hingga menjaga pelanggan tetap senang.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah tayang dan pelanggan mulai mendaftar. Sekarang, kamu perlu menjalankan operasional ini secara berkelanjutan.
 
-## Operasi Harian
+## Operasi Harian {#daily-operations}
 
-### Pemantauan (Monitoring)
+### Pemantauan (Monitoring) {#monitoring}
 
 Periksa hal-hal ini setiap hari (atau atur peringatan/alert):
 
@@ -22,7 +22,7 @@ Periksa hal-hal ini setiap hari (atau atur peringatan/alert):
 - **Pembayaran Gagal**: Apakah ada kegagalan pembayaran yang perlu diperhatikan?
 - **Permintaan Dukungan**: Apakah ada pertanyaan pelanggan yang belum terjawab?
 
-### Dukungan Pelanggan (Customer Support)
+### Dukungan Pelanggan (Customer Support) {#customer-support}
 
 Fokus ceruk pasar (niche) kamu adalah keuntungan di sini. Karena semua pelanggan kamu adalah studio kebugaran, kamu akan melihat pertanyaan yang sama berulang kali:
 
@@ -36,7 +36,7 @@ Fokus ceruk pasar (niche) kamu adalah keuntungan di sini. Karena semua pelanggan
 
 Bangun basis pengetahuan (yang dimulai di Pelajaran 8) berdasarkan pertanyaan-pertanyaan yang berulang ini. Setiap tiket dukungan yang seharusnya bisa menjadi artikel basis pengetahuan adalah sinyal untuk menulis artikel tersebut.
 
-### Tingkat Dukungan (Support Tiers)
+### Tingkat Dukungan (Support Tiers) {#support-tiers}
 
 Seiring pertumbuhan, strukturkan dukungan berdasarkan paket:
 
@@ -48,9 +48,9 @@ Seiring pertumbuhan, strukturkan dukungan berdasarkan paket:
 
 Addon [Support Tickets](/addons/support-tickets) dapat membantu mengelola permintaan dukungan di dalam platform.
 
-## Operasi Penagihan (Billing Operations)
+## Operasi Penagihan (Billing Operations) {#billing-operations}
 
-### Pembayaran Berulang (Recurring Payments)
+### Pembayaran Berulang (Recurring Payments) {#recurring-payments}
 
 Ultimate Multisite menangani penagihan berulang secara otomatis melalui *payment gateway* kamu. Tugas kamu adalah memantau:
 
@@ -58,7 +58,7 @@ Ultimate Multisite menangani penagihan berulang secara otomatis melalui *payment
 - **Dunning**: Atur logika coba bayar otomatis melalui *payment gateway* kamu (Stripe sangat baik dalam hal ini).
 - **Permintaan Pembatalan**: Pahami mengapa pelanggan pergi. Setiap pembatalan adalah umpan balik.
 
-### Mengelola Keanggotaan (Managing Memberships)
+### Mengelola Keanggotaan (Managing Memberships) {#managing-memberships}
 
 Akses **Ultimate Multisite > Memberships** untuk:
 
@@ -69,13 +69,13 @@ Akses **Ultimate Multisite > Memberships** untuk:
 
 Lihat [Managing Memberships](/user-guide/administration/managing-memberships) untuk referensi lengkap.
 
-### Penagihan (Invoicing)
+### Penagihan (Invoicing) {#invoicing}
 
 Pastikan faktur (invoice) dibuat dengan benar untuk setiap pembayaran. Pelanggan mungkin memerlukan faktur untuk pelaporan biaya bisnis. Lihat [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Pemeliharaan Platform (Platform Maintenance)
+## Pemeliharaan Platform (Platform Maintenance) {#platform-maintenance}
 
-### Pembaruan WordPress dan Plugin
+### Pembaruan WordPress dan Plugin {#wordpress-and-plugin-updates}
 
 Sebagai administrator jaringan, kamu bertanggung jawab untuk:
 
@@ -88,14 +88,14 @@ Sebagai administrator jaringan, kamu bertanggung jawab untuk:
 Pembaruan yang rusak akan memengaruhi setiap situs pelanggan di jaringan kamu. Selalu uji pembaruan di salinan *staging* jaringan kamu terlebih dahulu.
 :::
 
-### Keamanan (Security)
+### Keamanan (Security) {#security}
 
 - Selalu perbarui semua perangkat lunak
 - Gunakan kata sandi yang kuat dan otentikasi dua faktor untuk akun admin
 - Pantau aktivitas mencurigakan
 - Siapkan rencana untuk insiden keamanan
 
-### Performa (Performance)
+### Performa (Performance) {#performance}
 
 Seiring pertumbuhan jaringan kamu, pantau:
 
@@ -105,9 +105,9 @@ Seiring pertumbuhan jaringan kamu, pantau:
 
 Pertimbangkan untuk menerapkan *caching* (page cache, object cache) dan CDN jika kamu belum melakukannya. [Cloudflare integration](/user-guide/host-integrations/cloudflare) menangani sebagian besar hal ini.
 
-## Manajemen Siklus Hidup Pelanggan (Customer Lifecycle Management)
+## Manajemen Siklus Hidup Pelanggan (Customer Lifecycle Management) {#customer-lifecycle-management}
 
-### Mengurangi Tingkat Pelanggan Berhenti (Reducing Churn)
+### Mengurangi Tingkat Pelanggan Berhenti (Reducing Churn) {#reducing-churn}
 
 *Churn* adalah persentase pelanggan yang membatalkan setiap bulan. Bagi bisnis langganan, mengurangi *churn* sama pentingnya dengan mendapatkan pelanggan baru.
 
@@ -119,7 +119,7 @@ Pertimbangkan untuk menerapkan *caching* (page cache, object cache) dan CDN jika
 - Mereka menemukan alternatif yang lebih murah → perkuat nilai ceruk pasar kamu
 - Bisnis mereka tutup → tidak terhindarkan, tetapi lacak ini secara terpisah
 
-### Mendorong Upgrade
+### Mendorong Upgrade {#encouraging-upgrades}
 
 Pelanggan di paket Starter yang berhasil harus didorong untuk *upgrade*:
 
@@ -127,7 +127,7 @@ Pelanggan di paket Starter yang berhasil harus didorong untuk *upgrade*:
 - Kirim email bertarget yang menyoroti fitur paket Growth yang akan mereka manfaatkan
 - Tunjukkan apa yang telah dibangun oleh pelanggan Growth/Pro
 
-### Kampanye Pemulihan (Win-Back Campaigns)
+### Kampanye Pemulihan (Win-Back Campaigns) {#win-back-campaigns}
 
 Ketika pelanggan membatalkan:
 
@@ -135,30 +135,30 @@ Ketika pelanggan membatalkan:
 2. Tangani kekhawatiran mereka jika memungkinkan
 3. Tawarkan diskon untuk kembali (30-60 hari setelah pembatalan)
 
-## Rutinitas Mingguan dan Bulanan
+## Rutinitas Mingguan dan Bulanan {#weekly-and-monthly-routines}
 
-### Mingguan
+### Mingguan {#weekly}
 
 - Tinjau pendaftaran baru dan pembatalan
 - Tanggapi semua tiket dukungan yang terbuka
 - Periksa performa platform dan *uptime*
 - Tinjau pembayaran yang gagal
 
-### Bulanan
+### Bulanan {#monthly}
 
 - Analisis metrik utama (MRR, *churn*, pelanggan baru, *upgrade*)
 - Terapkan pembaruan WordPress dan plugin (setelah uji coba *staging*)
 - Tinjau dan perbarui basis pengetahuan berdasarkan pola dukungan
 - Kirim buletin atau pembaruan kepada pelanggan (fitur baru, tips, berita industri kebugaran)
 
-### Triwulanan
+### Triwulanan {#quarterly}
 
 - Tinjau harga dibandingkan dengan pesaing dan umpan balik pelanggan
 - Evaluasi desain *template* -- apakah perlu penyegaran?
 - Nilai kapasitas *hosting* -- apakah perlu ditingkatkan skalanya?
 - Tinjau dan tingkatkan *onboarding* berdasarkan data aktivasi
 
-## Apa yang Kita Bangun di Pelajaran Ini
+## Apa yang Kita Bangun di Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Rutinitas pemantauan harian** untuk *uptime*, pendaftaran, pembayaran, dan dukungan
 - **Struktur dukungan bertingkat** yang disesuaikan dengan level paket

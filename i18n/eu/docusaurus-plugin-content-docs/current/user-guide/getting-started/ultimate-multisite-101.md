@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite da WordPress plugin bat da ematezu le WaaS edo Websites as a Service irten dituzten klientelari etorretik eta horiek gure negozioa eta klientelari buruzik onartzeko gabe, beharrezko jakinarazpena ezberdinetik egin behar dugu.
 
-## WordPress Multisite-ak
+## WordPress Multisite-ak {#the-wordpress-multisite}
 
 Gure guztia hasieraaren WordPress instalazio standard batzuk ezagutzen dituz. Ezinbestek, hori hosting provider-ren control panel-a bidez jartzen duzu edo, irakurri eta zoriondunak, web server eta database berri bat ematen ditu, core file-ak downloadatzen duzu eta instalazio prozesua hasten duzu.
 
@@ -19,13 +19,13 @@ Gure core-aren beldur, WordPress funtuna "Multisite" deitzen duen funtuna ematen
 
 Esencialan, WordPress multisite-a irudia hau da: Un universitate bat instalazio bat du WordPress-aren, baina jakariak baten sailak bere WordPress sail bat du.
 
-### A Zerbitzaleakua (The Network)
+### A Zerbitzaleakua (The Network) {#the-network}
 
 WordPress-en kontekstuan, multisite network berea hori da, nona taldeko subsite bat edo gehiak administrazio dezisten da bat dashboard batetik. Multisite network ez da hosting provider guztiari parean aukera gisa eratu behar baduzu, baina aurreikusi, WordPress-ek jakten nahi du hori modu berean erabiltzen ari den dituzenean wp-config.php file-ean gehiago direkta eta direktiba batzuk jartzeko.
 
 Multisite network eta stand-alone WordPress instalazioa arteko erlainpenak asko dira, baina gurekin laburki adierazituz.
 
-#### Subdomeni vs. Subdirektori (Subdomain vs. Subdirectory)
+#### Subdomeni vs. Subdirektori (Subdomain vs. Subdirectory) {#subdomain-vs-subdirectory}
 
 Gaur egun behar duzu erabaki bat da: multisite instalazioa subdirektori (*subdirectories*) edo subdomeni (*subdomains*) baten artean erabilikoilea? Ultimate Multisite-ak arte guztietan ondo egiten du, baina horiek artean arkitektura gisa erlainpenak dituzte.
 
@@ -41,7 +41,7 @@ En la configuración de `subdomain`, el uso de un certificado SSL comodín es un
 
 Aunque existen otras opciones, estas a menudo tienen un alcance y una aplicación limitados y requieren una configuración y consideración adicionales con respecto a la idoneidad.
 
-#### Plugins y Temas
+#### Plugins y Temas {#plugins-and-themes}
 
 WordPress también tiene sus aspectos negativos, al menos desde la perspectiva del cliente. En una instalación de WordPress independiente, si el administrador del sitio instala un plugin malo o no mantiene su instalación actualizada, la única víctima y perjuicio de este acto es él mismo. Sin embargo, un administrador del sitio que instala un plugin malo en una instalación multisite crea una víctima para cada sitio instalado en la red.
 
@@ -49,7 +49,7 @@ Horain da gain, horregatik WordPress multisite-an konfiguratuta jakin, administu
 
 Horren arabera, network administrator-ek network-an plugin eta tema instalatzeko espezialista dira eta horiek erabiltzeko aukerak network situen administurietara delegatzen dute. Site administrator-ek bere site-ekin ez dagoen plugin edo tema instalatzeko edo ikusko aukera ez da.
 
-#### Erabiltzaile eta Administurietarrak
+#### Erabiltzaile eta Administurietarrak {#users-and-administrators}
 
 WordPress Multisitean, network situak database berriari ematen dira eta horrek erabiltzaileak, irolak eta aukerak ere ematen dira. Horrek adierazten duen espezialistaa, erabiltzaile guztiek network-aren beldur dira eta ez benetako site-aren beldur.
 
@@ -61,13 +61,13 @@ Aiaren arabera, erabiltzaileak situa-ekin lotuta jakin badute ere, horiek networ
 
 Meskipun ez izan da sistema-ek industrialdeetan, erabiltzailearen emantulari eta autentikazioaren edozein batak (single source) adierazpenak oso dugu adibidean, hori aipatzen duen pertsonalari, jarduerarekin erakundutako WordPress instalazioei ezagutuz, erabiltzailearen administrazioa garrantzitsua da.
 
-#### Media
+#### Media {#media}
 
 WordPress Multisite-an, network site bat database bat badago, media file-ek artean filesystem-eko perruta (path) zehatzak duten.
 
 Standard WordPress lekuak (*wp-content/uploads*) jarraitzen du; baina hori perruta aldatzen da network site-aren bere identifikazioa erakusteko. Konsekuzioz, network site bat media file-ek *wp-contents/uploads/site/[id]* bezala erakusten dira.
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Ez hasi dugu aipatutakoa: _subdomain_ konfigueratzea _subdirectory_ konfigueratzea ondorioziko aukerak eta hori da: perretzak (paths).
 
@@ -81,7 +81,7 @@ _Subdomain_ konfiguerazioan, hori aksioa beharrezkoa ez da, karena network site 
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 _subdirectory_ konfiguratziaraan, erabilgarak (static pages) nazioa gisa potensialena irudi ezberdintasari da, beste batzuekin eta jaringan batek berri perua bere bidean hartzen du.
 
@@ -91,7 +91,7 @@ Horren aurretik, WordPress-ek jatorrizko testuak (site names) ezberdintasari eza
 
 _subdomain_ konfiguratziaraan, nazioa bere ona da eta main sitearekin ez dago korelazio bat ez duela, horrek nazioaren bere ona dela eta irudi ezberdintasari potensialitatea eragikizten.
 
-### Registrazioa (Registration)
+### Registrazioa (Registration) {#registration}
 
 WordPress Multisite-ren jaringan konfiguratziaraan, erabiltzaile jendia berri eta jakinut erabiltzaileek siteak sortzeko aukera batzuk daude.
 
@@ -109,7 +109,7 @@ Horren arabera, erabiltzaile bat login egiten duenean, network-an login egiten d
 
 Hala, baina, multisite-aren espezifiko natura eta testuinguruak bere network sites-ezko beste batzuk ematen nahi du eta horiek ez duten harreman edo lotura, erabiltzailearen role-ek manipulatzeko ekstergo edo bestelako plugin-ek beharrezkoa da.
 
-### Domain eta SSL
+### Domain eta SSL {#domain-and-ssl}
 
 WordPress Multisite instalazio bat gure atzera egiten dio - Wordpress.com. Hau da WordPress multisite-aren lehen testu den eta bere espezifiko bidez moldatzea eta objektua emateko potensialea erakusten du.
 
@@ -123,11 +123,11 @@ Network administratorerik, horrek domain name konfiguratzea eta SSL certificate-
 
 Horren arabera, WordPress Multisite-ek [www.anotherdomain.com](http://www.anotherdomain.com) funtazioa 'site1'rekin mapatzea posible egiten du, baina network administratorak DNS entries hauek ekstergo eskaintzea eta SSL certificate-ek implementatzeko ahalegin bat geratzen da.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 WordPress instalazio bat eta Multisite instalazio bat arteko erkeinpenak jabetzen duten bitartean, Ultimate Multisite-ek Website as a Service (WaaS) emateko espezialista arsenal batez zerbait ikusi dezagun.
 
-### Introduktua
+### Introduktua {#introduction}
 
 Ultimate Multisite-ek Wix.com, Squarespace, WordPress.com edo bere serbizioa proprieta egonbatzea bezala, Website as a Service (WaaS) sortzeko Swiss Army knife da.
 
@@ -135,9 +135,9 @@ Horren ardurazpenaren ondorekin Ultimate Multisite-ek WordPress Multisite-a erab
 
 Horren ondorioz, azken arloetan uso-kasak eta horiek suportatzeko beharrezko iradokizunak ikusi dugu.
 
-### Kasuak Erabilera
+### Kasuak Erabilera {#use-cases}
 
-#### Kasu 1: Agenzia bat
+#### Kasu 1: Agenzia bat {#case-1-an-agency}
 
 Geroan, agenziako jardueraren garrantzitsuak website-ek diseinatu eta horie hostea edo marketingak beste serbizioak gisa listatzen dituen erabilera dago.
 
@@ -163,7 +163,7 @@ Ekinak (Temak) hauek funtzioak onduki dira, zein espezialistikak tertentu temak 
 
 Agenciask Ultimate Multisitearekin zenbateko ez dugu, nahiz eta horrek horiek egin behar duen jarduera egiten duela - web-sailak oso garrantzitsuak diseinatzeko.
 
-#### Kasu 2: Provedor Niche (Especialista)
+#### Kasu 2: Provedor Niche (Especialista) {#case-2-niche-provider}
 
 Ez dago bat dauna irudi hau: "bat beste gauza bat egin eta hori ondo egin". Ezpezialistikari handiak, horrek espezialitate bat ideak edo serbisua bat maila-idea goiztiaringir autzainduera.
 
@@ -177,7 +177,7 @@ Niche web-sailak eta serbisuak emateko provider bat bilera, horrek oso handi bid
 
 Dependetako esuratenduak ondorioz, _subdirectory_ edo _subdomain_ konfiguratura hauek iruki dezake, horrek arteko arkitektura aukerak _subdirectories_ beste bat SSL baimen edo _subdomains_ beste bat wildcard SSL baimen izango dira.
 
-#### Kasu 3: WordPress Web Hosting
+#### Kasu 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 WordPress webgune ospatzea pertsona dauden artean pertsona ez bezala iruki dezake, baina WordPress-en preinstalatu bertsioa ere customer-ei web espazio emateak eragiten duen gertuzki. Hau da horrek, espezialbideak eta kontu hauek batzuk bat egiteko beharrezkoa da oso espezialbideak emateko.
 
@@ -189,11 +189,11 @@ Ultimate Multisite-arekin integratzea buskitzen dituzten developer-ek, soluzioa 
 
 Ez dago beste plugin edo lisentziak ez barriren dependenciaan, Ultimate Multisite-ak Wix, Squarespace, WordPress.com eta beste batzuk baten iruki dezake funtzioak adibideak eta pareko soluzioa emateak.
 
-### Arkitektura Kontuak
+### Arkitektura Kontuak {#architecture-considerations}
 
 Ez da modu nagusi gidaia, baina Ultimate Multisite instalazioa suportatzeko teknologia jendezketa onartzeko hauek gidaia izan behar dira.
 
-#### Shared vs. Dedicated Hosting
+#### Shared vs. Dedicated Hosting {#shared-vs-dedicated-hosting}
 
 Ez dago, ez dira guztiz urdian prestak hosting provider hauek aurki eta batzuk erabilpen osoa duen server-ek erabiltzen dute. Txindura kostaldeko provider-ek irudien maksimuma egitean merkatuen aurrekontu hartzen dituzte. Hau da, Ultimate Multisite instalazioa bat serverra dagoen hilerak bat izan daiteke.
 
@@ -207,7 +207,7 @@ Ultimate Multisite-ak ondo hosting provider batzukarekin lan egiten dien eta dom
 
 Beste provider batzukari lista eta guztiz konponbidea instalatzeko instruktuak, Compatible Providers dokumentazioan jartu behar duzu.
 
-#### Eragiketa Kontuaren Indarikak
+#### Eragiketa Kontuaren Indarikak {#performance-considerations}
 
 Ultimate Multisite-ak aplikazio lento ez da, baita oso azkar dago. Hau, horrek ondorioz dagoen aplikazio eta infrastrukturaren ondo dagoenez bere erabilera izango da eta bere erabilera jartzen dituenak ere erabiltzen du.
 
@@ -225,7 +225,7 @@ Horrez, network administurietako gehienduak statiko lapuruen eskakizak ematen di
 
 Ultimate Multisite-ek Cloudflare add-on bat eskaintzen du, zehandiz administurietan instalazioak Cloudflare-ren ardurailean jarri dezatilean eta horrek cachea, DNS hostea, SSL certificateak eta segurtasun mekanismoak ere erabil dezake.
 
-#### Backups (Eztabaidak)
+#### Backups (Eztabaidak) {#backups}
 
 Backups bidez aholku bat 50 pertsona eskatzen du eta backup estrategiak bidez 50 iradokizun ondina hartzen duzu. Abaldia da, hori dependentzia da.
 
@@ -235,7 +235,7 @@ Hauko arloaren bitartean, backup bat sistema eragilearen kopiaren (point-in-time
 
 Hauko begiratuarekin, backupak nola emateko eta zure eragilearen (environment) beste zerbait besteko dena, hori gure eskakizuek eta hostearen (hosting provider) horiek eskakizuek satisfazio egiteko potensialaari dependeratuko du. Hala ere, oso opinatuz da batzuk eta txikiagoa batzuk, aipatutako opsioak aukera bat emateko da.
 
-#### Snapshots (Kopiak/Snapshotak)
+#### Snapshots (Kopiak/Snapshotak) {#snapshots}
 
 Snapshotsak backupak eragileak dira, zehazki, iradokiztasunak ez du (itxarri nahi du beharko), eta "just work" (berria jakin daiteke). Hau, zure erregilearen laguntza behar du, baina gaur egun VPS (Virtual Private Server) edo beste bati dutenean garrantzitsuagoa da. Gure 'Compatible Providers' dokumentazian aipatutako provider batzuk network administratoraren gehiago inguruko ez du backupak emateko, eta ez dute hori ikus behar.
 
@@ -243,7 +243,7 @@ Gabeak traditional backup-ek handiara file-ek eta database-ek, snapshot-ek disk-
 
 Snapshot-ek hosting provider-aren parte bat kostu gehiago emateko bilatzen dira, baina horra eskaintza bat da ondorioz.
 
-#### External Scripts (Ezdatzak Scriptak)
+#### External Scripts (Ezdatzak Scriptak) {#external-scripts}
 
 WordPress eta MySQL resource-ek backupatzeko edo ezdatzeko external scripts eta soluzioak oso barne dago, eta Ultimate Multisite-eko arte, WordPress filesystem eta databasea erabilten plugin bat dela, horrek ondo lan egiten du. Orain, WordPress sitesbak backupatzeko soluzio bat Ultimate Multisite-ren beharrak konturatara egondu gabe ez da.
 
@@ -251,7 +251,7 @@ Beste script bat bestearen eskaintzen emateko hautatzea ez diremeiz, baina gipuz
 
 Garrantzitsu da adierazten, hauek scriptak erabiliz, sistema-aren carga handiagoa aukeratu behar da.
 
-#### Plugins (Pluginak)
+#### Plugins (Pluginak) {#plugins}
 
 WordPress-ek plugin bat ezarekin ez da solutzea eta external scripts administrazioa ez da zure eskatzen duen jarduera, gipuztuak plugin bat da beste espezialoa.
 
@@ -259,7 +259,7 @@ Pluginak ez dute opsio eta funtzioak ondo bat da, baina gure aurrera egiten duen
 
 Pluginak aukeratzen duenean, multisite-aware (multisite-eko) dela jakinarazten ezazu. Backup egin duen barkontzean serverra egoera temporale bat esperatu joateke haindu, prozesua amaitu ondoren.
 
-#### Domain eta SSL
+#### Domain eta SSL {#domain-and-ssl-1}
 
 Multisite _subdomain_ moduan domainak bidez gertatzen ari den artean asko eztabaidetu da. Ainetegiak (network administrators) beste batzuk erabiltzeko erantzuna ondo bat da wildcard DNS entries-ek.
 
@@ -283,7 +283,7 @@ Bizi, Cloudflare ergitzen dauden bat oso eragikizuna da. Kudeakariak beharko du 
 
 Hau guztiaren gainean, alternatibak bilatzen behar dira, zehazki horrek gero da, zehazki Ultimate Multisite-k Compatible Providers-aren lista bat ematen du. Hau da, DNS eta SSL-en konponbidea ez dago eragikizuna duen prozesua da. Hala ere, Ultimate Multisite-ren hauek provider-eekin integrazioa duenean, kompleksitatea handiagoa arautzean dago eta prozedura automatikatu dago.
 
-#### Plugins
+#### Plugins {#plugins-1}
 
 Kudeakariak edo network site-ek funtzioa emateko beste plugins behar dituzte gabe. Hau guztiz pluginak WordPress Multisite eta Ultimate Multisitearekin lan egiten du? Hau da, aukera da.
 

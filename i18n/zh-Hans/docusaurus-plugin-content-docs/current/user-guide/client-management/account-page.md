@@ -3,7 +3,7 @@ title: 客户 Account 页面
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# 您客户的 Account 页面 (v2)
+# 您客户的 Account 页面 (v2) {#your-clients-account-page-v2}
 
 _**重要提示：本文适用于 Ultimate Multisite 2.x 版本。**_
 
@@ -11,7 +11,7 @@ _**重要提示：本文适用于 Ultimate Multisite 2.x 版本。**_
 
 在本教程中，我们将带您了解客户的 Account 页面，您将看到客户可以在其中看到什么以及执行什么操作。
 
-## Account 页面
+## Account 页面 {#the-account-page}
 
 可以通过在客户的 Dashboard 中点击 **Account** 来访问 Account 页面。
 
@@ -27,7 +27,7 @@ _**重要提示：本文适用于 Ultimate Multisite 2.x 版本。**_
 
 他们还可以将会员资格更改为另一个套餐，或购买您提供的其他包或服务。让我们分别看看每个部分。
 
-### 您的会员资格概览：
+### 您的会员资格概览： {#your-membership-overview}
 
 客户网站名称正下方的第一个区块显示其当前套餐以及随套餐购买的服务/包的概览。该区块还显示会员编号、为其支付的初始金额、套餐以及任何服务/包的费用，以及该会员资格被计费的次数。他们还可以看到会员资格是 **有效**、**已过期** 还是 **已取消**。
 
@@ -43,7 +43,7 @@ _**重要提示：本文适用于 Ultimate Multisite 2.x 版本。**_
 
 请注意，优惠券代码不能添加到此会员资格更改页面。如果客户在首次购买会员资格时使用了优惠券代码，该代码也将应用于这个新的会员资格。
 
-### 更新账单地址：
+### 更新账单地址： {#updating-the-billing-address}
 
 在 Account 页面上，您的客户也可以更新其账单地址。他们只需点击 _账单地址_ 旁边的 **更新**。
 
@@ -53,7 +53,7 @@ _**重要提示：本文适用于 Ultimate Multisite 2.x 版本。**_
 
 ![更新账单地址表单](/img/account-page/billing-address-form.png)
 
-### 更改站点模板：
+### 更改站点模板： {#changing-the-site-template}
 
 要允许客户更改其站点模板，您需要前往 **Ultimate Multisite > 设置 > 站点**，并开启 **允许模板切换** 选项。
 
@@ -81,7 +81,7 @@ Ultimate Multisite 2.10.0 显示了重新设计的模板切换面板。该面板
 
 客户也可以在需要将站点重置回当前分配的模板时，从此面板使用 **Reset current template**。与切换到另一个模板一样，重置模板可能会覆盖站点内容，因此客户只有在理解重置操作后才应确认。
 
-### 添加自定义域名：
+### 添加自定义域名： {#adding-custom-domains}
 
 你的客户也可以在其账户页面为此计划添加自定义域名。要允许你的客户使用自定义域名，请前往 **Ultimate Multisite > Settings >** **Domain Mapping**。
 
@@ -115,7 +115,7 @@ Ultimate Multisite 2.10.0 显示了重新设计的模板切换面板。该面板
 
 点击 **Add Domain** 后，该域名将被添加到你客户的账户中。现在他们需要做的就是在其域名注册商处更改此自定义域名的 DNS 记录。
 
-### 更改密码：
+### 更改密码： {#changing-password}
 
 在账户 Dashboard 内，你的客户也可以通过点击 **Change Password** 来更改密码。
 
@@ -125,7 +125,7 @@ Ultimate Multisite 2.10.0 显示了重新设计的模板切换面板。该面板
 
 ![包含当前密码和新密码字段的更改密码表单](/img/account-page/change-password-form.png)
 
-### 危险区域：
+### 危险区域： {#danger-zone}
 
 我们还提供两个显示在 **Danger Zone** 部分的选项：**Delete Site** 和 **Delete Account**。它们都位于 Danger Zone 部分，因为这两个操作都是不可逆的。如果你的客户删除他们的网站或账户，就无法恢复。
 

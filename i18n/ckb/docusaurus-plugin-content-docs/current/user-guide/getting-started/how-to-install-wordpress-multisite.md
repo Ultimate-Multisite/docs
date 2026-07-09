@@ -3,7 +3,7 @@ title: چۆنی چۆنی WordPress Multisite دامەزرێنن؟
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# چۆن WordPress Multisite دامەسازم؟
+# چۆن WordPress Multisite دامەسازم؟ {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite دەبێت بگەیت بە تۆڕێکی سایت لەسەر جێبەجێکردنی تاکێک. ئەمە تایبەتمەندییەکی ناوخۆییە، بەڵام بە شێوەیەکی پیش‌تەوا، چالاک نییە.
 
@@ -59,7 +59,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# paşî slash-e (/) ji bo /wp-admin e
+# paşî slash-e (/) ji bo /wp-admin e {#add-a-trailing-slash-to-wp-admin}
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d RewriteRule ^ - [L] RewriteRule ^(wp-(content|admin|includes)._) $1 [L] RewriteRule ^(._.php)$ $1 [L] RewriteRule . index.php [L]
@@ -94,9 +94,9 @@ Për të krijuar një subsite:
 
 Pas plotësuar fushat, klikoni butonin "Add site". Pasi subsite-i i ri krijohet, shkoni dhe aksesojeni atë për të siguruar se subsite-i funksionon.
 
-## Problemet e Shpeshta:
+## Problemet e Shpeshta: {#common-problems}
 
-### 1. Unë mund të krijoj site të rinj por ato nuk janë të aksesueshme.
+### 1. Unë mund të krijoj site të rinj por ato nuk janë të aksesueshme. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Nëse keni zgjedhur subdomain, ju duhet gjithashtu të vendosni wildcard subdomains për rrjetin tuaj multisite.
 

@@ -4,11 +4,11 @@ title: Filtro - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filtro: wu_admin_notices
+# Filtro: wu_admin_notices {#filter-wuadminnotices}
 
 Permite que developers filtrem avisos de admin adicionados pelo Ultimate Multisite.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Permite que developers filtrem avisos de admin adicionados pelo Ultimate Multisi
 | $filter | `string` | Se os avisos dispensáveis foram filtrados. |
 | $dismissed_messages | `array` | Lista de chaves de avisos dispensados. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) na linha 121
 
 
-## Retorna
+## Retorna {#returns}

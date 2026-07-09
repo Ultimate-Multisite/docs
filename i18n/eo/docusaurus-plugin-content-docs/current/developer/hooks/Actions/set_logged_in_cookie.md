@@ -4,11 +4,11 @@ title: Ago - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Ago: set_logged_in_cookie
+# Ago: set_logged_in_cookie {#action-setloggedincookie}
 
 Ekfunkcias tuj antaŭ ol la ensalutinta aŭtentikiga kuketo estas agordita.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Ekfunkcias tuj antaŭ ol la ensalutinta aŭtentikiga kuketo estas agordita.
 | $scheme | `string` | Authentication scheme. Default 'logged_in'. |
 | $token | `string` | User's session token to use for this cookie. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) ĉe linio 141

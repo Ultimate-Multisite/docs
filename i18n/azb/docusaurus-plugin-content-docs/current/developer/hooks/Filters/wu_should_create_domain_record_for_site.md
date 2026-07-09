@@ -4,28 +4,28 @@ title: فیلتر - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# فیلتر: wu_should_create_domain_record_for_site
+# فیلتر: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
 
 فیلتر ائدیر کی Ultimate Multisite یئنی یارادیلان سایت اوچون دومین قئیدی یاراتمالیدیرمی.
 
 بو فیلتر، اورتاق checkout-form اصلی دومینی، داخلی میزبان، یا باشقا بیر انتقراسیانین آیریجا ایداره ائده‌جه‌ی دومینی ایشلدن سایت‌لار اوچون اوتوماتیک دومین-قئید یارادیلماسینی دایاندیرماق یا گئجیکدیرمک اوچون ایشلدیلیر.
 
-## پارامترلر
+## پارامترلر {#parameters}
 
 | آد | نوع | آچیقلاما |
 |------|------|-------------|
 | $create | `bool` | دومین قئیدی‌نین یارادیلیب-یارادیلماماسی. |
 | $site | `WP_Site` | یئنی یارادیلان سایت اوبژکتی. |
 
-### بو نسخه‌دن
+### بو نسخه‌دن {#since}
 
 - 2.13.0
 
-### قایناق
+### قایناق {#source}
 
 `inc/functions/domain.php` ایچینده تعریف اولونوب.
 
 
-## قایتاریر
+## قایتاریر {#returns}
 
 دومین قئیدی یاراتماق لازیم اولوب-اولماماسینی گوسترن Boolean.

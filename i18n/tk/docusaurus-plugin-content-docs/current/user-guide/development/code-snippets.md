@@ -3,7 +3,7 @@ title: Kod keselleri
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 üçin Kod Kesikleri
+# v2 üçin Kod Kesikleri {#code-snippets-for-v2}
 
 Esasa, **WordPress** üçin kod kesiklerinden, başga bir özel kiçik plugin gerekip biljek belli işleri yapmak üçin iseler. Bu tür kod kesikleri WordPress'in esas faylýnda ýa-da tema faylynyň (geneliki wepajynda functions.php) içinde ýerleşdirilipdir, ýa-da MU plugin hasaplanyp hem ulanylýar.
 
@@ -15,13 +15,13 @@ Bu makalpa size **Ultimate Multisite v2** bilen ulanyla biljek üç kod kesigini
 
   * [**Maplan edilen domynlarda Font-Icons bilen CORS meselelerini düzetmek**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Hasabat menýü müňümçesini üýtgetmek
+## Hasabat menýü müňümçesini üýtgetmek {#changing-the-position-of-the-account-menu-item}
 
 Müşderiniň Dashboardynda Hasabat menýü müňümçesini üýtgetmek üçin, size esasy siteňizdäki aktif tema faylynyň functions.php-siga aşakdaky kod kesigini goşdirip bilersiňiz. Şol kesiki sizden hasaplaýan ýerleşdirilmek üçin bu summany üýtgedip bilersiňiz.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Menýüni islenilen ýerleşdirmek üçin bu summany düzetip görüň.
 
-## User belli bir planda we/ýa-da işjeň subskripsiýasy barada barlamak üçin
+## User belli bir planda we/ýa-da işjeň subskripsiýasy barada barlamak üçin {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Awtomatlaşdyryjy (network) administrator hökmünde, siz hasaplaýan esasy işlemleri ýerine ýetirjek we subskribýanterleri ýa-da son durnýjylary belli bir guruhyň subskripsiýasy we ol subskribýatdan ýardam berýän plan bilen baglanyp hyzmat/funksionalligi bar etdirjek usulda özüňizden hasaplaýan funksiýalary döretmek gerek bilerisiz.
 
@@ -47,8 +47,8 @@ Ulanyjylar diňe **Plan** bilen, Paketden ýa-da Hyzmatdan däl, sebäbi olar di
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Map edilen domynlarda Font-Icons bilen baglanyşygy (CORS) soraglaryny galdyrmak
-## Map edilen domynlarda Font-Icons bilen baglanyşygy (CORS) soraglaryny galdyrmak
+## Map edilen domynlarda Font-Icons bilen baglanyşygy (CORS) soraglaryny galdyrmak {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Map edilen domynlarda Font-Icons bilen baglanyşygy (CORS) soraglaryny galdyrmak {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Domyny sub-site bilen maplapdan soň, sahypa özüniň üçin goşmaça fontlary ýüklemekde kynçylyk çekýändigini tapyp bilersiňiz. Bu server sozlamalarynda "cross-origin" bloklanmasundan sebäpdir.
 
@@ -60,7 +60,7 @@ Sizi .htaccess faylunda şularly goşturun:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Server konfigurasi faylınıza (bu yer serverden servere üýtgeýär) goşturun:
 

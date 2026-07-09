@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: platba GoCardless
 
 Umožnite svojim zákazníkom platiť za členstvá a produkty Multisite Ultimate cez inkaso pomocou GoCardless!
 
-## Inštalácia
+## Inštalácia {#installation}
 
 1. Nahrajte 'ultimate-multisite-gocardless' do adresára '/wp-content/plugins/'
 2. Aktivujte plugin cez menu 'Pluginy' vo WordPress
 3. Postupujte podľa sprievodcu krok za krokom a nastavte plugin
 
-## Sprievodca používaním
+## Sprievodca používaním {#usage-guide}
 
 _GoCardless_ je platobná brána dostupná v **Európe a v Spojenom kráľovstve**, ktorá umožňuje platby cez **inkaso**.
 
@@ -29,7 +29,7 @@ Tento návod ukáže, ako nastaviť _GoCardless_, aby ste cezň mohli začať pr
 
 _**Poznámka: GoCardless funguje iba s nasledujúcimi menami:**_ **EUR, GBP, AUD, SEK a DKK.**
 
-## Inštalácia doplnku
+## Inštalácia doplnku {#installing-the-add-on}
 
 Najprv budete musieť nainštalovať doplnok GoCardless pre Ultimate Multisite. Môžete to urobiť tak, že prejdete na **Ultimate Multisite > Nastavenia > Doplnky (na bočnom paneli)**. A v tomto zozname vyberiete doplnok GoCardless.
 
@@ -37,7 +37,7 @@ Po nainštalovaní a aktivovaní doplnku prejdite na **Ultimate Multisite > Nast
 
 ![Nastavenia platobnej brány](/img/config/settings-payment-gateways.png)
 
-## Získanie prístupového tokenu
+## Získanie prístupového tokenu {#getting-an-access-token}
 
 Vytvorte si účet na _GoCardless_ (alebo v sandboxe _GoCardless_, ak ho chcete **najprv otestovať**, čo odporúčame). Potom sa po prihlásení presuňte na položku menu **Vývojári**.
 
@@ -61,7 +61,7 @@ Uistite sa, že ho vložíte do správneho poľa. Ak ide o **produkčný token**
 
 To je všetko pre prvý krok. Ďalej musíte nastaviť webhook listener.
 
-## Nastavenie Webhook Listenera
+## Nastavenie Webhook Listenera {#setting-up-the-webhook-listener}
 
 Pri práci s predplatnými potrebuje Ultimate Multisite dostávať informácie o zmenách stavu predplatného, nových vykonaných platbách a ďalších podobných veciach.
 

@@ -3,7 +3,7 @@ title: An Athrú do Chanán
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# An Léimeacht Plana (v2)
+# An Léimeacht Plana (v2) {#upgrading-a-plan-v2}
 
 _**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
 
@@ -39,7 +39,7 @@ Tar éifeachtar an checkout a deireannach, gairmh new product(s) ag cur chuig i 
 
 ##
 
-## Caint a bheith ar an t-upgrade agus an t-downgrade
+## Caint a bheith ar an t-upgrade agus an t-downgrade {#upgrade-and-downgrade-paths}
 
 Ar chuid deánach chun an t-upgrade agus an t-downgrade ar chuid product(s) agat, beidh tú le tab **Up & Downgrades**. Is an cur chuig ar an tab sin ag cur isteach fáil ar cheann fáil a cheangail é: **Plan Group**.
 

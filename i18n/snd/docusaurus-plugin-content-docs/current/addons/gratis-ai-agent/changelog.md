@@ -3,11 +3,11 @@ title: تبديلين جو لاگ
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# تبديلي لاگ
+# تبديلي لاگ {#changelog}
 
-## 1.9.0 — 2026-04-28 تي جاري ڪيو ويو
+## 1.9.0 — 2026-04-28 تي جاري ڪيو ويو {#190--released-on-2026-04-28}
 
-### نئون
+### نئون {#new}
 
 - **`create_contact_form` صلاحيت** — فعال فارم plugin (Contact Form 7، WPForms، Fluent Forms، يا Gravity Forms) استعمال ڪندي رابطو فارم ٺاهي ٿي ۽ ڪنهن به پوسٽ يا صفحي ۾ شامل ڪرڻ لاءِ تيار shortcode واپس ڪري ٿي.
 - **`set_featured_image` صلاحيت** — موجود Media Library attachment ID يا پري واري URL مان ڪنهن پوسٽ يا صفحي لاءِ featured image مقرر ڪري ٿي؛ جڏهن URL ڏنو وڃي ته تصوير پاڻمرادو درآمد ڪري ٿي.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **آخري session بحال ڪريو** — chat panel هاڻي صفحو لوڊ ٿيڻ ۽ widget کولڻ تي سڀ کان تازو conversation پاڻمرادو ٻيهر لوڊ ڪري ٿو، تنهنڪري صفحن جي navigation دوران context ڪڏهن به نه وڃائجي.
 - **Plugin action links** — Settings ۽ Abilities Registry ڏانهن تڪڙا links هاڻي WordPress **Plugins → Installed Plugins** اسڪرين تي plugin description هيٺ ظاهر ٿين ٿا.
 
-### بهتر ڪيو ويو
+### بهتر ڪيو ويو {#improved}
 
 - **تصوير source retry** — agent هاڻي download failure تي AI-generated تصوير ڏانهن fallback ڪرڻ کان اڳ سڀ configured free image sources ٻيهر ڪوشش ڪري ٿو.
 - **Model info panel** — chat header ۾ هميشه نظر اچي ٿو؛ پهرئين message کان پوءِ هاڻي لڪل نٿو رهي.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — گڏيل AI icon اڳوڻي custom avatar کي بدلائي ٿو؛ built-in agent system سان هم آهنگ آهي.
 - **URL linkification** — system messages ۽ error message bubbles ۾ ظاهر ٿيندڙ URLs هاڻي clickable links طور render ٿين ٿا.
 
-### درست ڪيو ويو
+### درست ڪيو ويو {#fixed}
 
 - **صلاحيت جي discoverability** — descriptions، system prompt references، ۽ namespace alignment درست ڪيا ويا ته جيئن سڀ صلاحيتون agent جي tool list ۾ ڀروسي سان ظاهر ٿين.
 - **Providers cache** — providers هاڻي version counter ذريعي site-wide cache ٿين ٿا، جنهن سان multisite networks تي stale-provider مسئلا روڪجن ٿا.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — 2026-04-09 تي جاري ڪيو ويو
+## 1.4.0 — 2026-04-09 تي جاري ڪيو ويو {#140--released-on-2026-04-09}
 
-### نئون
+### نئون {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI pipelines ۽ model evaluation workflows لاءِ command line مان Agent Capabilities v1 benchmark suite هلائي ٿو. Per-question runs، provider/model overrides، ۽ JSON/CSV output کي سپورٽ ڪري ٿو.
 - **Agent Capabilities v1 benchmark suite** — پيچيده، ڪيترن مرحلن وارن prompts جو هڪ منظم سيٽ، جيڪو مڪمل قابليت واري مٿاڇري کي آزمائي ٿو، scoring ۽ token/duration reporting سان.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT registration، design system، navigation، ۽ plugin discovery کي ڍڪيندڙ end-to-end test.
 - **AI provider connector plugins** تيز مقامي development setup لاءِ WordPress Playground blueprints ۾ شامل ڪيا ويا.
 
-### بهتر ڪيو ويو
+### بهتر ڪيو ويو {#improved-1}
 
 - README کي AI provider connector documentation ۽ setup instructions سان update ڪيو ويو.
 
-### درست ڪيو ويو
+### درست ڪيو ويو {#fixed-1}
 
 - `main` branch تي 25 PHPUnit test failures حل ڪيا ويا.
 - `blueprint.json` ۾ GitHub releases URL format درست ڪيو ويو.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _اڳين release notes plugin repository ۾ برقرار رکيا ويا آهن._

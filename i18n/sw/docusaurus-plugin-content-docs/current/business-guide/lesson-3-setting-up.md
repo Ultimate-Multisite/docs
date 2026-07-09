@@ -3,32 +3,32 @@ title: 'Somo la 3: Kuandaa Mtandao Wako'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Somo la 3: Kuweka Mtandao Wako
+# Somo la 3: Kuweka Mtandao Wako {#lesson-3-setting-up-your-network}
 
 Ni wakati wa kujenga. Katika somo hili, utafunga Ultimate Multisite na kuweka msingi wa mtandao wa FitSite. Kila uamuzi hapa unafanywa akilini mwa sekta ya mazoezi (fitness).
 
-## Tulipoacha
+## Tulipoacha {#where-we-left-off}
 
 Tulichagua studio za mazoezi kama eneo letu la biashara (niche) na kuthibitisha fursa hiyo. Sasa tunabadilisha wazo hilo kuwa jukwaa linalofanya kazi.
 
-## Kuchagua Hosting Yako
+## Kuchagua Hosting Yako {#choosing-your-hosting}
 
 Uchaguo wako wa hosting unamaanisha zaidi kwa jukwaa la niche kuliko kwa tovuti moja tu. Hatufungi tovuti moja—tunafunga mtandao ambao utakua hadi tovuti kadhaa au mamia.
 
-### Nini cha Kutafuta
+### Nini cha Kutafuta {#what-to-look-for}
 
 - **Usaidizi wa WordPress Multisite**: Si kila host inashughulikia multisite vizuri
 - **Wildcard SSL**: Ni muhimu kwa mitandao inayotegemea subdomains
 - **Rasilimali Zinazoweza Kukua (Scalable resources)**: Unahitaji nafasi ya kukua bila kuhitaji kuhamisha (migrate)
 - **Uunganishaji wa Ultimate Multisite**: Kuweka jina la domain na SSL kiotomatiki kunahifadhi juhudi kubwa za uendeshaji
 
-### Mbinu Inayopendekezwa
+### Mbinu Inayopendekezwa {#recommended-approach}
 
 Chagua host kutoka orodha ya [Compatible Providers](/user-guide/host-integrations/closte). Hizi zimejaribiwa na Ultimate Multisite na zinatoa uunganishaji unauhitaji kwa ajili ya kuweka jina la domain na kiotomatiki cha SSL.
 
 Kwa FitSite, tutatumia muundo wa subdomain. Hii inamaanisha kwamba tovuti za wateja kwa awali zitajitokeza kama `studioname.fitsite.com` kabla ya kuwezeshwa kuunganisha jina lao la domain.
 
-## Kusakinisha WordPress Multisite
+## Kusakinisha WordPress Multisite {#installing-wordpress-multisite}
 
 Ikiwa bado huna usakinishaji wa WordPress Multisite:
 
@@ -40,7 +40,7 @@ Ikiwa bado huna usakinishaji wa WordPress Multisite:
 Subdomains huipa kila tovuti ya mteja anwani yake tofauti (`studio.fitsite.com`) badala ya njia (`fitsite.com/studio`). Hii ni ya kitaalamu zaidi kwa wateja wako na inazuia migogoro ya permalink. Tazama [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) kwa kulinganisha kwa kina.
 :::
 
-## Kusakinisha Ultimate Multisite
+## Kusakinisha Ultimate Multisite {#installing-ultimate-multisite}
 
 Fuata mwongozo wa [Installing Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) ili:
 
@@ -53,11 +53,11 @@ Wakati wa setup wizard, kumbuka niche ya FitSite:
 - **Company name**: "FitSite" (au jina lako la biashara linalochaguliwa)
 - **Company logo**: Pakia logo yako ya biashara -- hii inaonekana kwenye bili na barua pepe
 
-## Kuweka Imegeuzwa kwa Niche ya Mazoezi
+## Kuweka Imegeuzwa kwa Niche ya Mazoezi {#configuring-for-the-fitness-niche}
 
 Kwa Ultimate Multisite iliyosakinishwa, fanya chaguo hizi za usanidi zinazohusu niche:
 
-### Mipangilio Mikuu (General Settings)
+### Mipangilio Mikuu (General Settings) {#general-settings}
 
 Nenda kwenye **Ultimate Multisite > Settings** na weka usanidi wa:
 
@@ -65,7 +65,7 @@ Nenda kwenye **Ultimate Multisite > Settings** na weka usanidi wa:
 - **Default role**: Administrator -- wamiliki wa studio za mazoezi wanahitaji udhibiti kamili wa maudhui ya tovuti yao
 - **Registration**: Washa usajili wa watumiaji ili wamiliki wa studio waweze kujisajili wenyewe
 
-### Usanidi wa Barua Pepe (Email Configuration)
+### Usanidi wa Barua Pepe (Email Configuration) {#email-configuration}
 
 Barua pepe za mfumo wako zinapaswa kuongea lugha ya niche yako. Nenda kwenye **Ultimate Multisite > Settings > Emails** na kubadilisha:
 
@@ -75,7 +75,7 @@ Barua pepe za mfumo wako zinapaswa kuongea lugha ya niche yako. Nenda kwenye **U
 
 Tutaboresha haya zaidi katika Somo la 8 (Usajili wa Wateja), lakini kuweka sauti sasa kunahakikisha hata usajili wa majaribio mapema unahisi kuwa ni wa niche.
 
-### Usanidi wa Domain (Domain Configuration)
+### Usanidi wa Domain (Domain Configuration) {#domain-configuration}
 
 Ikiwa unatumia provider ya hosting inayolingana, weka usanidi wa domain mapping sasa:
 
@@ -85,7 +85,7 @@ Ikiwa unatumia provider ya hosting inayolingana, weka usanidi wa domain mapping 
 
 Hii inahakikisha kwamba tunapoanza kuunda templates na tovuti za majaribio katika somo linalofuata, kila kitu kinafanya kazi kutoka mwisho hadi mwanzoni.
 
-## Mtandao wa FitSite Hadi Sasa
+## Mtandao wa FitSite Hadi Sasa {#the-fitsite-network-so-far}
 
 Mwisho wa somo hili, hivi ndivyo unavyo nazo:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Tayari kwa templates za tovuti (somo linalofuata)
 ```
 
-## Tulichojenga Somo Hili
+## Tulichojenga Somo Hili {#what-we-built-this-lesson}
 
 - **Usakinishaji linalofanya kazi wa WordPress Multisite** katika hali ya subdomain
 - **Ultimate Multisite iliyosakinishwa** na kuwekwa usanidi na branding ya FitSite

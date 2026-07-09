@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Dhisaha Bogga AI
+# Dhisaha Bogga AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Shuruudaha
+## Shuruudaha {#requirements}
 
 - WordPress 5.3 ama ka sarreeya
 - PHP 7.4 ama ka sarreeya
 - plugin-ka Multisite Ultimate (firfircoon)
 
-## Rakibidda
+## Rakibidda {#installation}
 
 1. U rar faylasha addon-ka galkaaga `/wp-content/plugins/`
 2. Ka hawlgeli plugin-ka adigoo adeegsanaya menu-ga 'Plugins' ee WordPress
 3. Ku habeey dejinta addon-ka maamulka shabakadda
 
-## Horumarin
+## Horumarin {#development}
 
-### Dejinta
+### Dejinta {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Qaab-dhismeedka Mashruuca
+### Qaab-dhismeedka Mashruuca {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Xeerarka casriyeynta code-ka
 ```
 
-### Tijaabin
+### Tijaabin {#testing}
 
 Addon-kan waxa ku jira qaab-dhismeed tijaabo oo dhammaystiran:
 
@@ -79,44 +79,44 @@ Addon-kan waxa ku jira qaab-dhismeed tijaabo oo dhammaystiran:
 - **Daboolista Tijaabada**: Waxaa loo habeeyey in lagu raadraaco daboolista code-ka
 - **Tijaabinta Multisite**: Tijaabooyinku waxay ku socdaan deegaanka multisite
 
-### Heerarka Code-ka
+### Heerarka Code-ka {#code-standards}
 
 - **Heerarka Qorista Code-ka WordPress**: Waxaa lagu adkeeyaa iyada oo loo marayo PHPCS
 - **Waafaqsanaanta PHP 7.4+**: Astaamaha casriga ah ee PHP waa la taageeraa
 - **Falanqaynta Taagan**: Is-dhexgalka PHPStan ee hubinta noocyada
 - **Casriyeynta Code-ka**: Xeerarka Rector ee kor-u-qaadista PHP
 
-### Nidaamka Dhisidda
+### Nidaamka Dhisidda {#build-system}
 
 - **Habaynta Hantida**: Yaraynta faylasha CSS/JS
 - **Turjumaad**: Abuurista faylka POT
 - **Xirmayn**: Abuurista kayd loogu talagalay qaybinta
 - **Habka Horumarinta**: Hanti aan la yarayn oo loogu talagalay khalad-saaridda
 
-## Habayn
+## Habayn {#configuration}
 
 Addon-ku wuxuu taageeraa xulashooyin habayn oo kala duwan oo laga heli karo interface-ka maamulka shabakadda.
 
-## Hooks iyo Filters
+## Hooks iyo Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Waxaa la kiciyaa ka dib bilowga addon-ka
 - `ultimate-multisite-ai-site-builder_loaded` - Waxaa la kiciyaa ka dib marka dhammaan faylasha addon-ka la raro
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Wax ka beddel dejinta addon-ka
 - `ultimate-multisite-ai-site-builder_enabled` - Ka gudub xaaladda hawlgelinta/daminta addon-ka
 
-## Shatiga
+## Shatiga {#license}
 
 Addon-kan waxaa lagu shatiyeeyay GPL v3 ama ka dambeeya.
 
-## Taageero
+## Taageero {#support}
 
 Taageero iyo dukumentiyo, booqo [MultisiteUltimate.com](https://multisiteultimate.com)
-## Diiwaanka Isbeddellada
+## Diiwaanka Isbeddellada {#changelog}
 
 - Nooca 1.0.1 (2025-09-28): dib u magacow prefix-ka una beddel ultimate-multisite; cusboonaysii domain-ka qoraalka; kor u qaad nooca.
 

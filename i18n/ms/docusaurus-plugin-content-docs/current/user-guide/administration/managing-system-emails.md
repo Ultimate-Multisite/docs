@@ -3,11 +3,11 @@ title: Mengurus E-mel Sistem
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Mengurus E-mel Sistem
+# Mengurus E-mel Sistem {#managing-system-emails}
 
 Ultimate Multisite menghantar pelbagai e-mel sistem untuk acara seperti pengesahan pendaftaran, resit pembayaran, dan perubahan keahlian. Anda boleh menyesuaikan templat e-mel ini agar sepadan dengan jenama anda.
 
-## Melihat E-mel Sistem
+## Melihat E-mel Sistem {#viewing-system-emails}
 
 Navigasi ke **Ultimate Multisite → Settings** dan klik pada tab **Emails** untuk melihat tetapan berkaitan e-mel.
 
@@ -21,7 +21,7 @@ Anda juga boleh mengedit templat e-mel individu menggunakan editor e-mel sistem:
 
 ![Editor e-mel sistem](/img/admin/system-email-editor.png)
 
-## Mengimport Templat E-mel Baharu
+## Mengimport Templat E-mel Baharu {#importing-new-email-templates}
 
 Versi Ultimate Multisite baharu dan add-ons mungkin mendaftarkan templat e-mel baharu. Untuk mengelakkan konflik, templat baharu tidak ditambahkan secara automatik — anda perlu mengimportnya secara manual.
 
@@ -32,7 +32,7 @@ Untuk mengimport templat e-mel baharu:
 3. Togol pilihan **Import Emails** untuk melihat templat yang tersedia
 4. Pilih templat yang anda mahu import dan sahkan
 
-## Menetapkan Semula Templat E-mel
+## Menetapkan Semula Templat E-mel {#resetting-email-templates}
 
 Jika anda telah menyesuaikan templat e-mel dan mahu kembali kepada kandungan lalai, anda mempunyai dua pilihan:
 

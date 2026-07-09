@@ -4,11 +4,11 @@ title: Suodatin - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Suodatin: wu_admin_notices
+# Suodatin: wu_admin_notices {#filter-wuadminnotices}
 
 Salli kehittäjien suodattaa Ultimate Multisite:n lisäämiä hallintailmoituksia.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Salli kehittäjien suodattaa Ultimate Multisite:n lisäämiä hallintailmoituksi
 | $filter | `string` | Onko ohitettavat ilmoitukset suodatettu pois. |
 | $dismissed_messages | `array` | Luettelo ohitettujen ilmoitusten avaimista. |
 
-### Alkaen
+### Alkaen {#since}
 
 - 2.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) rivillä 121
 
 
-## Palauttaa
+## Palauttaa {#returns}

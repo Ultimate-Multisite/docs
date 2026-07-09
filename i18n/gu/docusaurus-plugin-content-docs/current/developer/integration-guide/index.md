@@ -3,13 +3,13 @@ title: એકીકરણ માર્ગદર્શિકા
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# એકીકરણ માર્ગદર્શિકા
+# એકીકરણ માર્ગદર્શિકા {#integration-guide}
 
 આ માર્ગદર્શિકા Ultimate Multisite સાથેના સામાન્ય એકીકરણ પેટર્ન આવરે છે, જેમાં બાહ્ય સેવાઓ સાથે જોડાવું, કસ્ટમ ચુકવણી gateway બનાવવું, અને webhooks સંભાળવા શામેલ છે.
 
 અલગ tenant માળખા માટે, sovereign tenant bootstrap, migration verification, SSO, અને teardown માર્ગદર્શન માટે [Multi-Tenancy એકીકરણ](./multi-tenancy) જુઓ.
 
-## CRM એકીકરણ
+## CRM એકીકરણ {#crm-integration}
 
 નવા ગ્રાહકો sign up કરે ત્યારે ગ્રાહક ડેટા તમારા CRM સાથે sync કરો:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics એકીકરણ
+## Analytics એકીકરણ {#analytics-integration}
 
 ગ્રાહક જીવનચક્ર દરમ્યાન મુખ્ય વ્યવસાયિક ઘટનાઓ track કરો:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## આગામી પગલાં
+## આગામી પગલાં {#next-steps}
 
 - [કસ્ટમ Gateway વિકાસ](./custom-gateway) — તમારું પોતાનું ચુકવણી gateway બનાવો
 - [Webhook સંભાળ](./webhooks) — કસ્ટમ webhook endpoints બનાવો

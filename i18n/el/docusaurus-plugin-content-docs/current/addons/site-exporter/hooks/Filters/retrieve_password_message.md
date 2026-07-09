@@ -4,11 +4,11 @@ title: Φίλτρο - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Φιλτράρει το σώμα του μηνύματος του email επαναφοράς κωδικού πρόσβασης.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Όνομα | Τύπος | Περιγραφή |
 |------|------|-------------|
@@ -17,14 +17,14 @@ _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 | $user_login | `string` | Το όνομα χρήστη του χρήστη. |
 | $user_data | `\WP_User` | Αντικείμενο WP_User. |
 
-### Από
+### Από {#since}
 
 - 2.8.0
 - 4.1.0: Προστέθηκαν οι παράμετροι <code>$user_login</code> και <code>$user_data</code>.
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) στην γραμμή 149.
 
 
-## Επιστρέφει
+## Επιστρέφει {#returns}
 Το προεπιλεγμένο μήνυμα email.

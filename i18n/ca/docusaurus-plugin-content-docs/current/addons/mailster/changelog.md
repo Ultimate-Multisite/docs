@@ -3,9 +3,9 @@ title: Mailster Diari de canvis
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Diari de canvis de Mailster
+# Diari de canvis de Mailster {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * Llançament inicial
 * Sincronització automàtica d'escriptors al registrar-se o al pagar
 * Assignacions de llistes específiques per producte

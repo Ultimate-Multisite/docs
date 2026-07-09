@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Breiseán WordPress a chuireann ceartúcháin chomhoiriúnachta le Tutor LMS i dtimpeallachtaí illáithreáin.
 
-## Cur síos
+## Cur síos {#description}
 
 Soláthraíonn an breiseán seo ceartúcháin chomhoiriúnachta riachtanacha chun Tutor LMS a rith ar líonraí illáithreáin WordPress. Láimhseálann sé clárú úsáideoirí, bainistíocht teagascóirí, teorainneacha cúrsaí, agus feidhmiúlacht eile atá sonrach d’illáithreáin.
 
-## Gnéithe
+## Gnéithe {#features}
 
 - **Bainistíocht Táblaí Bunachair Sonraí**: Braithíonn agus cruthaíonn sé go huathoibríoch táblaí Tutor LMS atá ar iarraidh agus a theipeann mar gheall ar shrianta eochrach coigríche illáithreáin
 - **Clárú Úsáideoirí Illáithreáin**: Láimhseálaithe AJAX saincheaptha chun clárú úsáideoirí a bhainistiú thar shuíomhanna líonra
@@ -24,7 +24,7 @@ Soláthraíonn an breiseán seo ceartúcháin chomhoiriúnachta riachtanacha chu
 - **Amhairc Riaracháin Shaincheaptha**: Liosta teagascóirí agus comhéadan bainistíochta atá feasach ar illáithreáin
 - **Uirlisí Riaracháin**: Comhéadan bainistíochta bunachair sonraí do riarthóirí líonra agus suímh
 
-## Riachtanais
+## Riachtanais {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Soláthraíonn an breiseán seo ceartúcháin chomhoiriúnachta riachtanacha chu
 - Suiteáil WordPress Multisite
 - Breiseán Ultimate Multisite (le haghaidh feidhmiúlacht teorainneacha cúrsaí)
 
-## Suiteáil
+## Suiteáil {#installation}
 
 1. Uaslódáil comhaid an bhreiseáin chuig `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Cinntigh go bhfuil Tutor LMS suiteáilte agus gníomhachtaithe
 3. Gníomhachtaigh an breiseán tríd an roghchlár 'Breiseáin' in WordPress
 4. Comhtháthóidh an breiseán go huathoibríoch le Tutor LMS
 
-## Struchtúr Comhad
+## Struchtúr Comhad {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Feidhmiúlacht a Bogadh ón MU plugin
+## Feidhmiúlacht a Bogadh ón MU plugin {#functionality-moved-from-mu-plugin}
 
 Tá feidhmiúlacht sa bhreiseán seo a bhí roimhe seo in `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Tá feidhmiúlacht sa bhreiseán seo a bhí roimhe seo in `wp-content/mu-plugins
 - Láimhseáil clárúcháin úsáideoirí illáithreáin
 - Taispeáint ID táirge cúrsa
 
-## Bainistíocht Bunachair Sonraí
+## Bainistíocht Bunachair Sonraí {#database-management}
 
-### An Fhadhb
+### An Fhadhb {#the-problem}
 
 I dtimpeallachtaí illáithreáin WordPress, teipeann ar chruthú táblaí Tutor LMS do tháblaí a bhfuil srianta eochrach coigríche acu chuig tábla na n-úsáideoirí. Tarlaíonn sé seo mar gheall ar:
 
@@ -81,7 +81,7 @@ I dtimpeallachtaí illáithreáin WordPress, teipeann ar chruthú táblaí Tutor
 - Tagraíonn eochracha coigríche do `wp_2_users` (nach bhfuil ann)
 - Is é `wp_users` an tábla úsáideoirí iarbhír (comhroinnte ar fud an líonra)
 
-### An Réiteach
+### An Réiteach {#the-solution}
 
 Déanann an breiseán seo go huathoibríoch:
 
@@ -92,13 +92,13 @@ Déanann an breiseán seo go huathoibríoch:
    - Cruthú suímh nua sa líonra
    - Seiceáil táblaí de láimh tríd an gcomhéadan riaracháin
 
-### Táblaí lena mBaineann sé
+### Táblaí lena mBaineann sé {#affected-tables}
 
 - `tutor_coupon_usages` - Tá eochair choigríche ann chuig tábla na n-úsáideoirí
 - `tutor_carts` - Tá eochair choigríche ann chuig tábla na n-úsáideoirí
 - `tutor_notification_preferences` - Tábla TutorPro le heochair choigríche chuig tábla na n-úsáideoirí
 
-### Comhéadan Riaracháin
+### Comhéadan Riaracháin {#admin-interface}
 
 Faigh rochtain ar na huirlisí bainistíochta bunachair sonraí ag:
 
@@ -111,6 +111,6 @@ Ligeann an comhéadan duit:
 - Cumraíocht an bhunachair sonraí a sheiceáil
 - Faisnéis mhionsonraithe stádais a fheiceáil
 
-## Tacaíocht
+## Tacaíocht {#support}
 
 Tá an breiseán seo deartha go sonrach don ardán KursoPro. Le haghaidh tacaíocht theicniúil, déan teagmháil leis an bhfoireann forbartha.

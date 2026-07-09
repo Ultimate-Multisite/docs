@@ -3,13 +3,13 @@ title: Gano Kodin Samun Daɗi
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ساخت کدهای تخفیف (نسخه ۲)
+# ساخت کدهای تخفیف (نسخه ۲) {#creating-discount-codes-v2}
 
 _**نکته مهم: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 
 با Ultimate Multisite شما می‌توانید کدهای تخفیف بسازید تا به مشتریان خود برای اشتراک‌هایشان تخفیف بدهید. و ساخت آن‌ها خیلی راحت است!
 
-## ساخت و ویرایش کدهای تخفیف
+## ساخت و ویرایش کدهای تخفیف {#creating-and-editing-discount-codes}
 
 برای ساخت یا ویرایش یک کد تخفیف، به **Ultimate Multisite > Discount Codes** بروید.
 
@@ -87,7 +87,7 @@ A ƙarƙashin **Advanced Options** (Zaɓuwar Girma), muna da waɗannan tsammanin
 
 ###
 
-### استفاده از پارامترهای URL:
+### استفاده از پارامترهای URL: {#using-url-parameters}
 
 اگر می‌خواهید جداول قیمت خود را سفارشی کنید یا یک صفحه کد تخفیف زیبا برای وب‌سایت خود بسازید و بخواهید به طور خودکار یک کد تخفیف را در فرم پرداخت خود اعمال کنید، می‌توانید این کار را از طریق پارامترهای URL انجام دهید.
 

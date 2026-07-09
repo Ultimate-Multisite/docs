@@ -3,7 +3,7 @@ title: Ṣíṣàkóso àwọn ọmọ ẹgbẹ́
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Ṣíṣàkóso Àwọn Ìjẹ́ Ọmọ Ẹgbẹ
+# Ṣíṣàkóso Àwọn Ìjẹ́ Ọmọ Ẹgbẹ {#managing-memberships}
 
 Nínú Ultimate Multisite o lè ṣàkóso àwọn ìjẹ́ ọmọ ẹgbẹ kí o sì ráyè wọlé sí gbogbo àwọn ìforúkọsílẹ̀ lórí nẹ́tíwọ́ọ̀kì rẹ. Ṣàyẹ̀wò kí o sì ṣàtúnṣe àwọn àlàyé ìforúkọsílẹ̀ bíi àwọn ètò àti àwọn ọjà, iye àwọn sáìtì, iye owó ìsanwó àti bí ó ṣe ń ṣẹlẹ̀ lọ́pọ̀ tó, ìtàn ìsanwó, àti àwọn àmì àsìkò.
 

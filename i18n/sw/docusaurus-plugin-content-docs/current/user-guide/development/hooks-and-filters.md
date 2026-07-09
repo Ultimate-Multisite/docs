@@ -3,7 +3,7 @@ title: Ndoano na Vichujio
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Huku na Vichungi vya Ultimate Multisite
+# Huku na Vichungi vya Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite imeundwa na kazi nyingi na hoja za hifadhidata. Ina huku na vichungi ambavyo vitakuruhusu kurekebisha au kuongeza msimbo mpya kwenye kazi zilizopo.
 

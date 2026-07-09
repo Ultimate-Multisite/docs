@@ -4,11 +4,11 @@ title: Actie - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Actie: set_logged_in_cookie
+# Actie: set_logged_in_cookie {#action-setloggedincookie}
 
 Zet onmiddellijk vóór het instellen van de inlog-authenticatiecookie.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -19,11 +19,11 @@ Zet onmiddellijk vóór het instellen van de inlog-authenticatiecookie.
 | $scheme | `string` | Authenticatieschema. Standaard 'logged_in'. |
 | $token | `string` | De sessietoken van de gebruiker om voor deze cookie te gebruiken. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.6.0
 - 4.9.0: De <code>$token</code> parameter is toegevoegd.
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) op regel 141

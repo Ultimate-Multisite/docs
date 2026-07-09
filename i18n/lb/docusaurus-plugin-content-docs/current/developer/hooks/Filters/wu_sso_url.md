@@ -4,13 +4,13 @@ title: Filter - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url
+# Filter: wu_sso_url {#filter-wussourl}
 
 Filtert generéiert SSO-URLen, éier se fir Cross-Domain-Clientaktiounen zeréckgi ginn.
 
 Benotzt dëse Filter, wann eng Integratioun vertrauenswürdege Kontext zu engem Sovereign-Tenant-SSO-Link bäifüge muss oder d'Broker-URL ersetze muss, wärend d'Token-Validéierung vun Ultimate Multisite erhale bleift.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Benotzt dëse Filter, wann eng Integratioun vertrauenswürdege Kontext zu engem 
 | $site_id | `int` | Zil-site-ID fir de Besuch. |
 | $redirect_to | `string` | Destinatiouns-URL no erfollegräicher SSO-Validéierung. |
 
-### Zanter
+### Zanter {#since}
 
 - 2.13.0
 
-### Quell
+### Quell {#source}
 
 Definéiert an `inc/sso/class-sso.php`.
 
 
-## Retouren
+## Retouren {#returns}
 
 Gefiltert SSO-URL.

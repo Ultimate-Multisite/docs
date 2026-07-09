@@ -3,7 +3,7 @@ title: Whakaritenga Te Reo
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Whānui Tohu Te Reo
+# Whānui Tohu Te Reo {#language-selector}
 
 Ko te tino whakamahi o tēnei taitohu he fae **Language Selector**.
 

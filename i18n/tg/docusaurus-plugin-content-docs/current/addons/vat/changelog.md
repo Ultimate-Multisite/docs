@@ -3,7 +3,7 @@ title: Рӯйхати тағйироти VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Таърихи тағйироти VAT
+# Таърихи тағйироти VAT {#vat-changelog}
 
 Версия 1.0.7 - Нашр шуд дар 2026-02-03
 

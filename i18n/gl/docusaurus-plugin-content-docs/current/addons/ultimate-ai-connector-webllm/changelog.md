@@ -3,9 +3,9 @@ title: Rexistro de cambios de Ultimate AI Connector para WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Changelog
+# Ultimate AI Connector for WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versión 1.1.0 — Publicada o 2026-04-09
+## Versión 1.1.0 — Publicada o 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Novo: Widget de chat flotante con indicador de estado na barra de administración — calquera usuario con sesión iniciada pode enviar prompts ao LLM do lado do navegador directamente desde o front end.
 * Novo: Runtime SharedWorker — o motor MLC agora execútase nun SharedWorker para que varias lapelas compartan unha sesión de GPU en vez de loitar por ela.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Corrección: Enganchar WebLLM ao filtro wpai_preferred_text_models para que a funcionalidade AI Experiments encamiñe ao motor do navegador cando hai un modelo configurado.
 * Mellorado: Invalidación da caché, normalización de contido e correccións de referencia de hardware aparecidas durante as probas de extremo a extremo.
 
-## Versión 1.0.0 — Lanzamento inicial
+## Versión 1.0.0 — Lanzamento inicial {#version-100--initial-release}

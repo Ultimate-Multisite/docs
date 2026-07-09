@@ -4,11 +4,11 @@ title: Radnja - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Pokreće se neposredno prije postavljanja autentifikacijskog kolačića.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Pokreće se neposredno prije postavljanja autentifikacijskog kolačića.
 | $scheme | `string` | Autentifikacijska shema. Vrijednosti uključuju 'auth' ili 'secure_auth'. |
 | $token | `string` | Korisnikov session token koji se koristi za ovaj kolačić. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) u retku 124

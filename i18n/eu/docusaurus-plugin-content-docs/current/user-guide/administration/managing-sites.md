@@ -3,7 +3,7 @@ title: Site-ak jartzea
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Site-akordeak
+# Site-akordeak {#managing-sites}
 
 Siteak (aldeak) da irudiari (subsites) da WaaS negihariaren garrantziarri parte. Ultimate Multisite-ek siteak 3 dainioa ditu:
 
@@ -11,13 +11,13 @@ Siteak (aldeak) da irudiari (subsites) da WaaS negihariaren garrantziarri parte.
 - **Site Templateak** — Kundeak lehen puntua gisa elezailari daitezkeen siteak
 - **Site Nagusia (Main Site)** — Itzultzairearen nagusi nettore
 
-## Siteak ikustea
+## Siteak ikustea {#viewing-sites}
 
 Itzultzairearen network-eko site guztiet ikusteko, **Ultimate Multisite → Sites** funtziara jarraitu. Site lehen erabilera daitezkeen dainioa eta All Sites (Guztian Siteak), Customer-Owned (Kunde-proprietatuko), Templates (Templateak) edo Pending (Ireki dagoen) diren arabera filtrazio egin dezakezu.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Site berria hobetzea
+## Site berria hobetzea {#adding-a-new-site}
 
 Site berria sortzeko, **Add Site** botoia klikatu. Mendiet hauek emate behar duzu:
 
@@ -27,15 +27,15 @@ Site berria sortzeko, **Add Site** botoia klikatu. Mendiet hauek emate behar duz
 
 **Copy Site** opsioak aukera duzu beste site template bat erabiliz berria site sortzeko. Horren bitartean, zein templatea lehen puntua gisa erabil ezin duzu. Media fileak barne sartzeko **Copy Media on Duplication** funtziari aktiboa egitea ziurtatu.
 
-## Site dagoen bat hobetzea
+## Site dagoen bat hobetzea {#managing-an-existing-site}
 
 Site batean kliku **Manage** (Hobetzea) botoia ezarri, **Edit Site** (Site Hobetzea) lapuriko irudiak irekitu. Aiaure daude:
 
-### Informazio esazierazkoak (Basic Information)
+### Informazio esazierazkoak (Basic Information) {#basic-information}
 
 Sitearen irudia, dainioa, site ID-ak eta deskribapena. Horrek barne ezagutuko duzu domain-ak, erabilera (membership)-k joan aurkezpenak eta sitea proprietatutako kunden kontua.
 
-### Site Opzioak (Site Options)
+### Site Opzioak (Site Options) {#site-options}
 
 Sitearen kapabilidadeak eta limitazioak konfiguraatu:
 
@@ -47,7 +47,7 @@ Sitearen kapabilidadeak eta limitazioak konfiguraatu:
 
 Defaultan, bizitzak membership lehen edo maila dauden limitazioak jarraitzen dute. Site maila nivelan limitazioak emateko, membership heniaren eskaintzak ez duendu (override) egiten dira.
 
-### Asosiatzenak (Associations)
+### Asosiatzenak (Associations) {#associations}
 
 Site opsioetan, hemen informazioa aurkitu:
 
@@ -55,7 +55,7 @@ Site opsioetan, hemen informazioa aurkitu:
 - Sitearen arduratutako **Membership**
 - Sitearekin lotutako **Customer account**
 
-### Direitoa Iraultza (Right Sidebar)
+### Direitoa Iraultza (Right Sidebar) {#right-sidebar}
 
 Adiak handiari anizlan da:
 

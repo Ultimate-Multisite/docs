@@ -3,15 +3,15 @@ title: 'Lekcia 6: Skúsenosť s registráciou'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekcia 6: Skúsenosť s registráciou
+# Lekcia 6: Skúsenosť s registráciou {#lesson-6-the-signup-experience}
 
 Proces checkoutu je miesto, kde sa záujem mení na príjem. Mätúci alebo všeobecný proces registrácie stráca zákazníkov. Špecifický proces pre danú niku, ktorý hovorí ich jazykom a pôsobí jednoducho, ich konvertuje.
 
-## Kde sme skončili
+## Kde sme skončili {#where-we-left-off}
 
 FitSite má nakonfigurované šablóny a plány. Teraz vytvoríme registračný a checkout zážitok, ktorý z majiteľov fitness štúdií spraví platiacich zákazníkov.
 
-## Pochopenie registračného toku
+## Pochopenie registračného toku {#understanding-the-registration-flow}
 
 Checkout formuláre Ultimate Multisite sú plne prispôsobiteľné viac-krokové formuláre. Pre FitSite chceme tok, ktorý:
 
@@ -21,11 +21,11 @@ Checkout formuláre Ultimate Multisite sú plne prispôsobiteľné viac-krokové
 
 Úplnú technickú referenciu nájdete v časti [Registračný tok](/user-guide/configuration/the-registration-flow).
 
-## Navrhovanie FitSite checkoutu
+## Navrhovanie FitSite checkoutu {#designing-the-fitsite-checkout}
 
 Prejdite na **Ultimate Multisite > Checkout Forms** a vytvorte nový formulár.
 
-### Krok 1: Výber plánu
+### Krok 1: Výber plánu {#step-1-plan-selection}
 
 Prvá vec, ktorú majiteľ fitness štúdia uvidí, by mali byť plány prezentované pojmami, ktorým rozumie.
 
@@ -37,7 +37,7 @@ Prvá vec, ktorú majiteľ fitness štúdia uvidí, by mali byť plány prezento
 „1 GB úložiska“ pre majiteľa posilňovne nič neznamená. „Všetko, čo potrebujete pre profesionálny web štúdia“ znamená všetko. Píšte popisy plánov jazykom svojho zákazníka.
 :::
 
-### Krok 2: Výber šablóny
+### Krok 2: Výber šablóny {#step-2-template-selection}
 
 Po výbere plánu si zákazník vyberie svoju počiatočnú šablónu.
 
@@ -45,7 +45,7 @@ Po výbere plánu si zákazník vyberie svoju počiatočnú šablónu.
 - Dostupné šablóny sú filtrované podľa plánu, ktorý si vybral (nakonfigurované v lekcii 5)
 - Každá šablóna by mala mať náhľadový obrázok zobrazujúci dizajn špecifický pre fitness
 
-### Krok 3: Vytvorenie Account
+### Krok 3: Vytvorenie Account {#step-3-account-creation}
 
 Nechajte to minimálne. Zbierajte iba:
 
@@ -55,27 +55,27 @@ Nechajte to minimálne. Zbierajte iba:
 
 Pri registrácii sa nepýtajte na informácie, ktoré nepotrebujete. Každé ďalšie pole znižuje konverzie.
 
-### Krok 4: Nastavenie webu
+### Krok 4: Nastavenie webu {#step-4-site-setup}
 
 - **Názov webu**: Predvyplňte z názvu štúdia zadaného v kroku 3
 - **URL webu**: Automaticky vygenerujte z názvu štúdia (napr. `ironworks.fitsite.com`)
 
-### Krok 5: Platba
+### Krok 5: Platba {#step-5-payment}
 
 - Pridajte pole **Payment**
 - Nakonfigurujte svoju platobnú bránu ([Stripe](/user-guide/payment-gateways/stripe) sa odporúča pre fakturáciu predplatného)
 - Ak ste v lekcii 5 vytvorili order bumps, pridajte pole **Order Bump** pred krok platby
 
-### Krok 6: Potvrdenie
+### Krok 6: Potvrdenie {#step-6-confirmation}
 
 - Prispôsobte potvrdzovaciu správu jazykom špecifickým pre fitness
 - Príklad: „Web vašho fitness štúdia sa vytvára. O niekoľko sekúnd budete presmerovaní na svoj nový web.“
 
-## Pridanie prepínača výberu obdobia
+## Pridanie prepínača výberu obdobia {#adding-a-period-selection-toggle}
 
 Ak ste vo svojich plánoch nastavili cenové varianty (mesačné vs. ročné), pridajte do checkout formulára pole **Period Selection**, aby zákazníci mohli prepínať medzi fakturačnými obdobiami. Pokyny nájdete v časti [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-## Konfigurácia platby
+## Konfigurácia platby {#configuring-payment}
 
 Ak ste ešte nenastavili platobnú bránu:
 
@@ -85,7 +85,7 @@ Ak ste ešte nenastavili platobnú bránu:
 
 Podrobnosti o tom, ako platby prúdia na váš účet, nájdete v časti [Prijímanie platieb](/user-guide/payment-gateways/getting-paid).
 
-## Testovanie toku
+## Testovanie toku {#testing-the-flow}
 
 Pred pokračovaním dokončite úplnú testovaciu registráciu:
 
@@ -105,7 +105,7 @@ Skontrolujte, že:
 - [ ] Zákazník sa dostane na funkčný web s vybranou šablónou
 - [ ] Potvrdzovacie e-maily používajú jazyk špecifický pre fitness
 
-## Sieť FitSite doteraz
+## Sieť FitSite doteraz {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Čo sme vytvorili v tejto lekcii
+## Čo sme vytvorili v tejto lekcii {#what-we-built-this-lesson}
 
 - **Viac-krokový checkout formulár** prispôsobený majiteľom fitness štúdií
 - **Jazyk špecifický pre niku** v celom registračnom toku

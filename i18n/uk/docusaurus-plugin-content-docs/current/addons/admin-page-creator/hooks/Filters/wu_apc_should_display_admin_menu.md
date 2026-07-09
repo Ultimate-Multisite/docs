@@ -4,20 +4,20 @@ title: Фільтр - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Фільтр: wu_apc_should_display_admin_menu
+# Фільтр: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
 
 Дозволяє адміністраторам приховувати сторінки адмін-меню, якщо вони завершили процес налаштування.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $should_display_admin_menu | `bool` | Чи потрібно нам відображати ці сторінки. |
 | $network_active | `bool` | Перевіряє, чи активний плагін для мережевого адміністратора. |
 
-### Since
+### Since {#since}
 
 - 1.4.0
-### Source
+### Source {#source}
 
 Визначено в [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L645) на рядку 645

@@ -3,15 +3,15 @@ title: Gastamaj Menuoj
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastigadaj Menuoj
+# Gastigadaj Menuoj {#hospitality-menus}
 
 La trajto **Gastigadaj Menuoj** permesas al Theme Builder generi kaj enmeti strukturitajn manĝaĵajn kaj trinkaĵajn menuopaĝojn rekte en vian WordPress retejon.
 
-## Superrigardo
+## Superrigardo {#overview}
 
 Theme Builder nun povas krei profesiajn, strukturitajn menuopaĝojn por gastigadaj entreprenoj inkluzive de restoracioj, kafejoj, trinkejoj kaj manĝoprovizaj servoj. Ĉi tiuj menuoj estas plene integritaj en la dezajnon de via retejo kaj povas esti facile ĝisdatigitaj kaj administrataj.
 
-## Subtenataj Gastigadaj Tipoj
+## Subtenataj Gastigadaj Tipoj {#supported-hospitality-types}
 
 - **Restoracioj** — plenservaj manĝmenuoj
 - **Kafejoj** — kafaj kaj malpezmanĝaj menuoj
@@ -21,9 +21,9 @@ Theme Builder nun povas krei profesiajn, strukturitajn menuopaĝojn por gastigad
 - **Manĝokamionoj** — moveblaj manĝservaj menuoj
 - **Bierfarejoj kaj Vinfarejoj** — trinkaĵaj menuoj kun priskriboj
 
-## Menua Strukturo
+## Menua Strukturo {#menu-structure}
 
-### Menuaj Kategorioj
+### Menuaj Kategorioj {#menu-categories}
 
 Menuoj estas organizitaj en kategoriojn:
 
@@ -34,7 +34,7 @@ Menuoj estas organizitaj en kategoriojn:
 - **Trinkaĵoj** — trinkaĵoj (alkoholaj kaj senalkoholaj)
 - **Specialaĵoj** — ĉiutagaj aŭ sezonaj specialaĵoj
 
-### Menuero-Formato
+### Menuero-Formato {#menu-item-format}
 
 Ĉiu menuero inkluzivas:
 
@@ -49,7 +49,7 @@ Menuoj estas organizitaj en kategoriojn:
 }
 ```
 
-#### Eroj-Kampoj
+#### Eroj-Kampoj {#item-fields}
 
 | Kampo | Tipo | Priskribo |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Menuoj estas organizitaj en kategoriojn:
 | `allergens` | array | Oftaj alergenoj (Nuksoj, Mariskoj, ktp.) |
 | `availability` | string | Kiam disponebla (Ĉiutage, Sezona, ktp.) |
 
-## Krei Gastigadajn Menuojn
+## Krei Gastigadajn Menuojn {#creating-hospitality-menus}
 
-### Paŝo 1: Provizu Menuajn Informojn
+### Paŝo 1: Provizu Menuajn Informojn {#step-1-provide-menu-information}
 
 Diru al Theme Builder pri via menuo:
 
@@ -71,7 +71,7 @@ Kreu restoracian menuon por mia itala restoracio kun antaŭmanĝoj,
 pastaj pladoj, ĉefpladoj kaj desertoj. Inkluzivu prezojn kaj priskribojn.
 ```
 
-### Paŝo 2: Theme Builder Generas Menuon
+### Paŝo 2: Theme Builder Generas Menuon {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formatas prezojn kaj priskribojn
 5. Aldonas dietajn kaj alergenajn informojn
 
-### Paŝo 3: Reviziu kaj Agordu
+### Paŝo 3: Reviziu kaj Agordu {#step-3-review-and-customize}
 
 Vi povas:
 
@@ -91,9 +91,9 @@ Vi povas:
 4. Ĝisdatigi priskribojn kaj dietajn informojn
 5. Alĝustigi stiladon kaj aranĝon
 
-## Menuaj Montraj Opcioj
+## Menuaj Montraj Opcioj {#menu-display-options}
 
-### Plena Menuopaĝo
+### Plena Menuopaĝo {#full-menu-page}
 
 Dediĉita paĝo montranta vian kompletan menuon:
 
@@ -102,7 +102,7 @@ Dediĉita paĝo montranta vian kompletan menuon:
 - Pres-taŭga aranĝo
 - Poŝtelefon-adapta dezajno
 
-### Menua Kromprogrameto
+### Menua Kromprogrameto {#menu-widget}
 
 Enmetu menuajn sekciojn en aliajn paĝojn:
 
@@ -111,7 +111,7 @@ Enmetu menuajn sekciojn en aliajn paĝojn:
 - Trinkaĵa menuo sur trinkeja paĝo
 - Deserta montrofenestro en piedlinio
 
-### Menua PDF
+### Menua PDF {#menu-pdf}
 
 Generu elŝuteblan PDF-menuon:
 
@@ -120,9 +120,9 @@ Generu elŝuteblan PDF-menuon:
 - Inkluzivas bildojn kaj priskribojn
 - Facila por kunhavigi kaj retpoŝti
 
-## Dietaj kaj Alergenaj Informoj
+## Dietaj kaj Alergenaj Informoj {#dietary-and-allergen-information}
 
-### Dietaj Atributoj
+### Dietaj Atributoj {#dietary-attributes}
 
 Marku erojn per dietaj informoj:
 
@@ -134,7 +134,7 @@ Marku erojn per dietaj informoj:
 - **Malalt-Karbonhidrata** — reduktitaj karbonhidratoj
 - **Alt-Proteina** — proteinriĉa
 
-### Alergenaj Avertoj
+### Alergenaj Avertoj {#allergen-warnings}
 
 Inkluzivu oftajn alergenojn:
 
@@ -147,9 +147,9 @@ Inkluzivu oftajn alergenojn:
 - **Gluteno** — tritiko kaj gluten-enhavantaj grenoj
 - **Sezamo** — sezamaj semoj kaj oleo
 
-## Menua Administrado
+## Menua Administrado {#menu-management}
 
-### Ĝisdatigado de Prezoj
+### Ĝisdatigado de Prezoj {#updating-prices}
 
 Facile ĝisdatigu menuajn prezojn:
 
@@ -159,7 +159,7 @@ Facile ĝisdatigu menuajn prezojn:
 4. Konservu ŝanĝojn
 5. Ŝanĝoj aperas tuj sur via retejo
 
-### Aldoni Sezonajn Erojn
+### Aldoni Sezonajn Erojn {#adding-seasonal-items}
 
 Kreu sezonajn menuovariaĵojn:
 
@@ -169,7 +169,7 @@ Kreu sezonajn menuovariaĵojn:
 4. Planu disponeblajn datojn
 5. Aŭtomate montru dum sezono
 
-### Administri Specialaĵojn
+### Administri Specialaĵojn {#managing-specials}
 
 Montru ĉiutagajn aŭ semajnajn specialaĵojn:
 
@@ -179,7 +179,7 @@ Montru ĉiutagajn aŭ semajnajn specialaĵojn:
 4. Ĝisdatigu ĉiutage aŭ ĉiusemajne
 5. Arkivu malnovajn specialaĵojn
 
-## Integriĝo kun Theme Builder
+## Integriĝo kun Theme Builder {#integration-with-theme-builder}
 
 Kiam vi uzas Theme Builder por gastigadaj retejoj:
 
@@ -189,9 +189,9 @@ Kiam vi uzas Theme Builder por gastigadaj retejoj:
 4. **Poŝtelefona optimumigo** — menuoj montriĝas bele sur telefonoj
 5. **SEO-optimumigo** — menuoj estas serĉil-amika
 
-## Plej Bonaj Praktikoj
+## Plej Bonaj Praktikoj {#best-practices}
 
-### Menua Dezajno
+### Menua Dezajno {#menu-design}
 
 - **Klara organizado** — logika kategoristrukturo
 - **Legeblaj priskriboj** — apetitvekaj kaj informaj
@@ -199,7 +199,7 @@ Kiam vi uzas Theme Builder por gastigadaj retejoj:
 - **Profesiaj fotoj** — altkvalitaj manĝobildoj
 - **Blanka spaco** — ne troŝarĝu la paĝon
 
-### Enhavo
+### Enhavo {#content}
 
 - **Precizaj priskriboj** — priskribu erojn precize
 - **Elstarigu specialaĵojn** — igu specialaĵojn rimarkeblaj
@@ -207,7 +207,7 @@ Kiam vi uzas Theme Builder por gastigadaj retejoj:
 - **Ĝisdatigu regule** — tenu prezojn kaj erojn aktualaj
 - **Uzu apetitvekan lingvaĵon** — igu erojn soni bongustaj
 
-### Alirebleco
+### Alirebleco {#accessibility}
 
 - **Legeblaj tiparoj** — uzu klarajn, legeblajn tiparojn
 - **Sufiĉa kontrasto** — certigu, ke teksto estas legebla
@@ -215,9 +215,9 @@ Kiam vi uzas Theme Builder por gastigadaj retejoj:
 - **Alergenaj avertoj** — elstare montru alergenojn
 - **Poŝtelefon-amika** — testu sur ĉiuj aparatoj
 
-## Ekzemploj
+## Ekzemploj {#examples}
 
-### Restoracia Menua Strukturo
+### Restoracia Menua Strukturo {#restaurant-menu-structure}
 
 ```
 Antaŭmanĝaĵoj
@@ -241,7 +241,7 @@ Desertoj
 └── Elekto de Gelato
 ```
 
-### Strukturo de Kafeja Menuo
+### Strukturo de Kafeja Menuo {#cafe-menu-structure}
 
 ```
 Kafo
@@ -260,7 +260,7 @@ Sandviĉoj
 └── Vegetara Wrap
 ```
 
-## Rilataj Funkcioj
+## Rilataj Funkcioj {#related-features}
 
 - [Krei Menuon](../abilities/create-menu.md) — krei navigajn menuojn
 - [Dezajna Direkto](./design-direction.md) — personecigi la dezajnon de via retejo

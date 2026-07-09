@@ -4,11 +4,11 @@ title: Ketso - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Ketso: set_logged_in_cookie
+# Ketso: set_logged_in_cookie {#action-setloggedincookie}
 
 E sebetsa hang-hang pele cookie ea netefatso ea motho ea kene e behoa.
 
-## Paramethara
+## Paramethara {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
@@ -19,10 +19,10 @@ E sebetsa hang-hang pele cookie ea netefatso ea motho ea kene e behoa.
 | $scheme | `string` | Moralo oa netefatso. Tloaelo ke 'logged_in'. |
 | $token | `string` | Token ea session ea mosebelisi e tla sebelisoa bakeng sa cookie ena. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Mohloli
+### Mohloli {#source}
 
 E hlalositsoe ho [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) moleng oa 141

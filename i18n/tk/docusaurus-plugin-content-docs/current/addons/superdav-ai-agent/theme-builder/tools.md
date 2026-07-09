@@ -3,17 +3,17 @@ title: Gurallar we konfigurasiýa
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Gurallar we konfigurasiýa
+# Gurallar we konfigurasiýa {#tools-and-configuration}
 
 Theme Builder WordPress saýtňyzy seljermek, dizaýn etmek we gurmak üçin gurallar toplumyny ulanýar. 1.16.0 wersiýasynda **sd-ai-agent/site-scrape indi Tier 1 guraldyr**, şonuň üçin ol Theme Builder-de deslapdan elýeterlidir. Superdav AI Agent v1.18.0 ynamdar işläp düzüji iş akymlary üçin aýratyn paýlanylýan Advanced ýoldaş paketini hem hödürleýär; bu gurallar WordPress.org esasy paketiniň bölegi däldir we aýratyn gurnalmaly hem-de ygtyýarlandyrylmaly.
 
-## Elýeterli gurallar
+## Elýeterli gurallar {#available-tools}
 
-### Tier 1 gurallary (elmydama elýeterli)
+### Tier 1 gurallary (elmydama elýeterli) {#tier-1-tools-always-available}
 
 Tier 1 gurallary goşmaça konfigurasiýa bolmazdan Theme Builder-de deslapdan elýeterlidir.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Maksat:** Dizaýn ylhamyny, mazmun gurluşyny we funksiýany almak üçin bar bolan websaýtlary seljermek.
 
@@ -51,11 +51,11 @@ example.com saýtynyň dizaýnyny seljer we ony meniň saýtym üçin ylham hök
 - JavaScript köp ulanylýan saýtlarda seljerme çäkli bolup biler
 - Uly saýtlary seljermek has köp wagt alyp biler
 
-### Tier 2 gurallary (islege görä)
+### Tier 2 gurallary (islege görä) {#tier-2-tools-optional}
 
 Tier 2 gurallary Theme Builder sazlamalarynda aç-açan işledilende elýeterli bolýar.
 
-#### Giňişleýin analitika
+#### Giňişleýin analitika {#advanced-analytics}
 
 Jikme-jik öndürijilik ölçeglerini berýär:
 
@@ -65,7 +65,7 @@ Jikme-jik öndürijilik ölçeglerini berýär:
 - Elýeterlilik bahasy
 - Iň gowy tejribeler bahasy
 
-#### Mazmun optimizatory
+#### Mazmun optimizatory {#content-optimizer}
 
 Şular üçin seljerýär we gowulandyrmalary teklip edýär:
 
@@ -75,11 +75,11 @@ Jikme-jik öndürijilik ölçeglerini berýär:
 - Mazmun gurluşy
 - Çagyryş-çäre ýerleşişi
 
-### Tier 3 gurallary (Premium)
+### Tier 3 gurallary (Premium) {#tier-3-tools-premium}
 
 Tier 3 gurallary goşmaça konfigurasiýa ýa-da premium aýratynlyklary talap edýär.
 
-#### AI mazmun generatory
+#### AI mazmun generatory {#ai-content-generator}
 
 Şular üçin mazmun döredýär:
 
@@ -89,7 +89,7 @@ Tier 3 gurallary goşmaça konfigurasiýa ýa-da premium aýratynlyklary talap e
 - Meta düşündirişler
 - Çagyryş-çäre nusgasy
 
-#### Giňişleýin dizaýn gurallary
+#### Giňişleýin dizaýn gurallary {#advanced-design-tools}
 
 Giňişleýin dizaýn mümkinçiliklerini berýär:
 
@@ -99,7 +99,7 @@ Giňişleýin dizaýn mümkinçiliklerini berýär:
 - Giňişleýin reňk teoriýasy
 - Tipografiýa optimizasiýasy
 
-### Advanced ýoldaş gurallary (aýratyn paket)
+### Advanced ýoldaş gurallary (aýratyn paket) {#advanced-companion-tools-separate-package}
 
 Advanced ýoldaş paketi esasy Superdav AI Agent çykarylyşyndan aýratyn paýlanylýar. Ol administratorlaryň agente ýokary täsirli gurallary ulanmaga aç-açan rugsat berýän ynamdar işläp düzüji we saýt eýesi gurşawlary üçin niýetlenendir.
 
@@ -116,9 +116,9 @@ Advanced ýoldaş mümkinçilikleri şulary öz içine alyp biler:
 
 Bulary her gurnama üçin umumy elýeterli Theme Builder gurallary hökmünde resminamalaşdyrmaň. Olar diňe Advanced ýoldaş paketi gurlanda, işledilende we ynamdar administratorlar bilen çäklendirilende elýeterlidir.
 
-## Gural konfigurasiýasy
+## Gural konfigurasiýasy {#tool-configuration}
 
-### Gurallary işletmek
+### Gurallary işletmek {#enabling-tools}
 
 Theme Builder-de goşmaça gurallary işletmek üçin:
 
@@ -127,7 +127,7 @@ Theme Builder-de goşmaça gurallary işletmek üçin:
 3. Zerur bolşy ýaly gurallary açyň/ýapyň
 4. Sazlamalary saklaň
 
-### Gural rugsatlary
+### Gural rugsatlary {#tool-permissions}
 
 Käbir gurallar rugsatlary talap edýär:
 
@@ -137,7 +137,7 @@ Käbir gurallar rugsatlary talap edýär:
 - **Giňişleýin aýratynlyklar** — premium abunaçylygy talap edip biler
 - **Advanced ýoldaş gurallary** — aýratyn paýlanylýan Advanced paketini we administratoryň aç-açan ynamyny talap edýär
 
-### API açarlary we giriş maglumatlary
+### API açarlary we giriş maglumatlary {#api-keys-and-credentials}
 
 Olary talap edýän gurallar üçin API açarlaryny sazlaň:
 
@@ -146,13 +146,13 @@ Olary talap edýän gurallar üçin API açarlaryny sazlaň:
 3. Baglanyşygy synap görüň
 4. Howpsuz ýagdaýda saklaň
 
-### Advanced ýoldaş paketini gurnamak
+### Advanced ýoldaş paketini gurnamak {#installing-the-advanced-companion-package}
 
 Advanced ýoldaş paketi WordPress.org esasy ZIP-den aýratyn çykarylýar. Ony diňe çykarylyş üçin resmi taslama paýlaýyş kanalyndan gurnaň, soňra elýeterliligi ynamdar administratorlar bilen çäklendiriň. Önümçilik saýtynda faýl ulgamy, maglumat bazasy, WP-CLI, REST dispatcher, plugin builder, ulanyjy dolandyryş ýa-da benchmark gurallaryny işletmezden öň adam tassyklama derwezelerini we git snapshot hereketini gözden geçiriň.
 
-## sd-ai-agent/site-scrape ulanmak
+## sd-ai-agent/site-scrape ulanmak {#using-sd-ai-agentsite-scrape}
 
-### Esasy ulanylyş
+### Esasy ulanylyş {#basic-usage}
 
 Theme Builder-den websaýty seljermegi soraň:
 
@@ -161,7 +161,7 @@ competitor.com salgysyndaky bäsdeşimiň saýtynyň dizaýnyny seljer
 we meniň saýtym üçin dizaýn gowulandyrmalaryny teklip et.
 ```
 
-### Anyk seljerme
+### Anyk seljerme {#specific-analysis}
 
 Anyk seljerme görnüşlerini soraň:
 
@@ -179,7 +179,7 @@ example.com saýtynyň mobil duýgurlygyny barla we meniň saýtymyň
 şonça duýgur bolmagyny üpjün et.
 ```
 
-### Deňeşdirme seljermesi
+### Deňeşdirme seljermesi {#comparison-analysis}
 
 Birnäçe saýty deňeşdiriň:
 
@@ -188,22 +188,22 @@ site1.com we site2.com dizaýnlaryny deňeşdir we ikisiniň hem iň gowy
 elementlerini birleşdirýän dizaýn döret.
 ```
 
-## Gural çäklendirmeleri we göz öňünde tutulmaly zatlar
+## Gural çäklendirmeleri we göz öňünde tutulmaly zatlar {#tool-limitations-and-considerations}
 
-### Tizlik çäklendirmesi
+### Tizlik çäklendirmesi {#rate-limiting}
 
 - Scraping serweriň aşa ýüklenmeginiň öňüni almak üçin tizlik boýunça çäklendirilýär
 - Şol bir site-a birnäçe haýyş çäklendirilip bilner
 - Uly site-lary seljermek has köp wagt alyp biler
 
-### Mazmunyň takyklygy
+### Mazmunyň takyklygy {#content-accuracy}
 
 - Dinamiki mazmun doly ele alynman biler
 - JavaScript arkaly görkezilýän mazmun doly bolman biler
 - Hakyky wagt maglumatlary görkezilmän biler
 - Käbir mazmun tölegli diwaryň aňyrsynda bolup biler
 
-### Hukuk we etiki garalmaly zatlar
+### Hukuk we etiki garalmaly zatlar {#legal-and-ethical-considerations}
 
 - robots.txt we site syýasatlaryna hormat goýuň
 - Awtorlyk hukugy bilen goralan mazmuny gaýtadan neşir etmek üçin scrape etmäň
@@ -211,16 +211,16 @@ elementlerini birleşdirýän dizaýn döret.
 - Çykarylan mazmuny ulanmaga hukugyňyzyň bardygyny tassyklaň
 - Seljerilen site-laryň hyzmat şertlerine eýeriň
 
-### Öndürijilige täsiri
+### Öndürijilige täsiri {#performance-impact}
 
 - Uly site-lary scraping etmek wagt alyp biler
 - Bir wagtda birnäçe scrape etmek has haýal bolup biler
 - Tor birikmesi tizlige täsir edýär
 - Uly maglumat toplumlary has köp işläp taýýarlamagy talap edip biler
 
-## Iň gowy tejribeler
+## Iň gowy tejribeler {#best-practices}
 
-### Site seljermesini ulanmak
+### Site seljermesini ulanmak {#using-site-analysis}
 
 1. **Birnäçe site-y seljeriň** — birnäçe çeşmeden ylham ýygnaň
 2. **Gurluşa üns beriň** — ýerleşiş we guramaçylyk nusgalaryny öwreniň
@@ -228,7 +228,7 @@ elementlerini birleşdirýän dizaýn döret.
 4. **Tipografiýany öwreniň** — halanýan şrift utgaşmalaryňyzy kesgitläň
 5. **Navigasiýany gözden geçiriň** — menýu guramaçylygyna düşüniň
 
-### Etiki Scraping
+### Etiki Scraping {#ethical-scraping}
 
 1. **robots.txt-e hormat goýuň** — site görkezmelerine eýeriň
 2. **Mazmuny göçürmäň** — seljermäni diňe ylham üçin ulanyň
@@ -236,7 +236,7 @@ elementlerini birleşdirýän dizaýn döret.
 4. **Çeşmeleri görkeziň** — ylham çeşmelerine salgylanyň
 5. **Şertlere eýeriň** — site hyzmat şertlerini berjaý ediň
 
-### Guralyň netijeliligini ýokarlandyrmak
+### Guralyň netijeliligini ýokarlandyrmak {#maximizing-tool-effectiveness}
 
 1. **Anygy boluň** — belli seljerme görnüşlerini soraň
 2. **Kontekst beriň** — site-yňyzyň maksadyny düşündiriň
@@ -244,9 +244,9 @@ elementlerini birleşdirýän dizaýn döret.
 4. **Gaýtalaň** — netijelere esaslanyp kämilleşdiriň
 5. **Gurallary birleşdiriň** — giňişleýin seljerme üçin birnäçe gural ulanyň
 
-## Näsazlyklary düzetmek
+## Näsazlyklary düzetmek {#troubleshooting}
 
-### Site Scrape bolmaýar
+### Site Scrape bolmaýar {#site-wont-scrape}
 
 - Site-yň köpçülige elýeterlidigini barlaň
 - robots.txt-iň scraping-e rugsat berýändigini tassyklaň
@@ -254,7 +254,7 @@ elementlerini birleşdirýän dizaýn döret.
 - Internet birikmesini barlaň
 - Mesele dowam etse, goldaw bilen habarlaşyň
 
-### Doly däl seljerme
+### Doly däl seljerme {#incomplete-analysis}
 
 - Site-da dinamiki mazmun bolup biler
 - JavaScript doly görkezilmedik bolup biler
@@ -262,7 +262,7 @@ elementlerini birleşdirýän dizaýn döret.
 - Munuň ýerine belli sahypalary seljerip görüň
 - Belli seljerme görnüşlerini soraň
 
-### Haýal öndürijilik
+### Haýal öndürijilik {#slow-performance}
 
 - Uly site-lary seljermek has köp wagt alýar
 - Bir wagtda birnäçe scrape etmek has haýaldyr
@@ -270,7 +270,7 @@ elementlerini birleşdirýän dizaýn döret.
 - Ýük az wagty synap görüň
 - Ilki kiçiräk bölümleri seljeriň
 
-## Baglanyşykly resminamalar
+## Baglanyşykly resminamalar {#related-documentation}
 
 - [Açyş söhbetdeşligi](./discovery-interview.md) — dizaýn maglumatlaryny ýygnaň
 - [Dizaýn ugry](./design-direction.md) — dizaýnyňyzy kämilleşdiriň

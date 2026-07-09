@@ -3,7 +3,7 @@ title: Raddade ƙaramin API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# کۆتایلی API endpoint ی تۆڕی گشتی (Multisite)
+# کۆتایلی API endpoint ی تۆڕی گشتی (Multisite) {#the-ultimate-multisite-register-api-endpoint}
 
 دواندن این آموزش یاد می‌گیری که چطور از Ultimate Multisite /register API endpoint برای ساخت کل فرآیند پذیرش یک مشتری جدید در شبکه خود استفاده کنید و چطور این کار را با Zapier انجام دهید.
 
@@ -29,11 +29,11 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 حالا، بیایید به endpoint نگاه کنیم و سپس یک اقدام ثبت‌نام در Zapier ایجاد کنیم.
 
-## پارامترهای بدنه endpoint
+## پارامترهای بدنه endpoint {#endpoint-body-parameters}
 
 بیایید مروری بر حداقل اطلاعاتی که باید برای ارسال به endpoint داشته باشیم داشته باشیم. در پایان این مقاله، فراخوانی کامل را خواهید یافت.
 
-### مشتری (Customer)
+### مشتری (Customer) {#customer}
 
 این اطلاعات لازم است تا فرآیند ساخت کاربر و مشتری Ultimate Multisite انجام شود:
 
@@ -43,25 +43,25 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **عضویت**
+### **عضویت** {#membership}
 
 تنها اطلاعاتی که ما در این شیء نیاز داریم، وضعیت عضویت است.
 
 "membership" { "status" : "string", // یکی از "pending"، "active"، "trialing"، "expired"، "on-hold"، "canceled" }
 
-### **محصولات**
+### **محصولات** {#products}
 
 برای محصولات یک آرایه با ۱ یا بیشتر شناسه محصول از شبکه شما داده می‌شود. مراقب باشید، این نقطه پایانی (endpoint) محصولات را ایجاد نمی‌کند. برای درک بهتر نقطه پایانی ایجاد محصول، مستندات Ultimate Multisite را بررسی کنید.
 
 **"products" : [1,2],**
 
-### **پرداخت**
+### **پرداخت** {#payment}
 
 همانطور که با عضویت هست، ما فقط به وضعیت نیاز داریم.
 
 **"payment" { "status" : "string", // یکی از "pending"، "completed"، "refunded"، "partially-refunded"، "partially-paid"، "failed"، "canceled" }**
 
-### **سایت**
+### **سایت** {#site}
 
 و برای بستن بدنه، ما به آدرس سایت و عنوان آن نیاز داریم که هر دو در شیء Site قرار دارند.
 
@@ -69,13 +69,13 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 بازگشت نقطه پایانی ثبت‌نام یک آرایه با اطلاعات عضویت جدید ایجاد شده خواهد بود.
 
-## ایجاد یک اکشن در Zapier
+## ایجاد یک اکشن در Zapier {#creating-an-action-in-zapier}
 
 با معرفی این نقطه پایانی جدید و قوی‌تر برای ایجاد حساب، شما به یک اکشن جدید در Zapier نیز دسترسی خواهید داشت.
 
 آیا می‌دانید چگونه از همه چیزهایی که نسخه جدید Zapier ارائه می‌دهد استفاده کرده و لذت ببرید؟ اینجا بیشتر بیاموزید. (لینک؟)
 
-### ایجاد یک اکشن
+### ایجاد یک اکشن {#creating-an-action}
 
 Donawa don taimaka yadda za a yi amfani da registration endpoint tare da Zapier, muna ƙirƙirar wata haɗi tare da Google Forms. Duk lokacin da wannan form ɗin aka cika kuma bayanai an ajiye a cikin sassa da aka tsara ga amsa, wani sabon shawarwa zai ƙunshi duk cikin yanayin Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Idan kun ku shirya, idan ka yi wannan bayanan da aka tsara, tabbas ka shiga gwaj
 
 Gwada sabon ƙirjin ka (Zap) kuma ya kamata ya kammala cikin nasara. Idan akwai wata matsala, gwada duk wajen da aka aiko su kuma tabbatar cewa an aiko su daidai. Dominan bayanan da yawa ne, wasu abubuwa za su iya tsayawa ba tare da a gani ba.
 
-### Duk ƙarin siffofin endpoint (Complete endpoint parameters)
+### Duk ƙarin siffofin endpoint (Complete endpoint parameters) {#complete-endpoint-parameters}
 
 Ga dukkan kira da duk yadda za a iya aiko wa wajen.
 

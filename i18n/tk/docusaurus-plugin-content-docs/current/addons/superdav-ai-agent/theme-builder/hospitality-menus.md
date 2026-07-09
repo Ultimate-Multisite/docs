@@ -3,15 +3,15 @@ title: Myhmansöýerlik menýulary
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Myhmanhanaçylyk menýulary
+# Myhmanhanaçylyk menýulary {#hospitality-menus}
 
 **Myhmanhanaçylyk menýulary** aýratynlygy Theme Builder-e gurluşly iýmit we içgi menýu sahypalaryny göni WordPress saýtyňyza döretmäge we ýerleşdirmäge mümkinçilik berýär.
 
-## Gysgaça syn
+## Gysgaça syn {#overview}
 
 Theme Builder indi restoranlar, kafeler, barlar we keýtering hyzmatlary ýaly myhmanhanaçylyk kärhanalary üçin professional, gurluşly menýu sahypalaryny döredip bilýär. Bu menýular saýtyňyzyň dizaýnyna doly birleşdirilýär we aňsatlyk bilen täzelenip hem dolandyrylyp bilner.
 
-## Goldanýan myhmanhanaçylyk görnüşleri
+## Goldanýan myhmanhanaçylyk görnüşleri {#supported-hospitality-types}
 
 - **Restoranlar** — doly hyzmatly nahar menýulary
 - **Kafeler** — kofe we ýeňil nahar menýulary
@@ -21,9 +21,9 @@ Theme Builder indi restoranlar, kafeler, barlar we keýtering hyzmatlary ýaly m
 - **Food Truck-lar** — göçme iýmit hyzmaty menýulary
 - **Piwo we çakyr öndürijiler** — düşündirişli içgi menýulary
 
-## Menýu gurluşy
+## Menýu gurluşy {#menu-structure}
 
-### Menýu kategoriýalary
+### Menýu kategoriýalary {#menu-categories}
 
 Menýular kategoriýalara bölünýär:
 
@@ -34,7 +34,7 @@ Menýular kategoriýalara bölünýär:
 - **Içgiler** — içgiler (alkogolly we alkogolsyz)
 - **Ýörite teklipler** — gündelik ýa-da möwsümleýin ýörite teklipler
 
-### Menýu elementiniň formaty
+### Menýu elementiniň formaty {#menu-item-format}
 
 Her menýu elementi şulary öz içine alýar:
 
@@ -49,7 +49,7 @@ Her menýu elementi şulary öz içine alýar:
 }
 ```
 
-#### Element meýdanlary
+#### Element meýdanlary {#item-fields}
 
 | Meýdan | Görnüş | Düşündiriş |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Her menýu elementi şulary öz içine alýar:
 | `allergens` | array | Umumy allergenler (Nuts, Shellfish we ş.m.) |
 | `availability` | string | Haçan elýeterli (Daily, Seasonal we ş.m.) |
 
-## Myhmanhanaçylyk menýularyny döretmek
+## Myhmanhanaçylyk menýularyny döretmek {#creating-hospitality-menus}
 
-### 1-nji ädim: Menýu maglumatlaryny beriň
+### 1-nji ädim: Menýu maglumatlaryny beriň {#step-1-provide-menu-information}
 
 Theme Builder-e menýuňyz barada aýdyň:
 
@@ -71,7 +71,7 @@ Italýan restoranym üçin işdäaçarlar,
 pasta tagamlary, esasy naharlar we desertler bilen restoran menýusyny döret. Bahalary we düşündirişleri goş.
 ```
 
-### 2-nji ädim: Theme Builder menýuny döredýär
+### 2-nji ädim: Theme Builder menýuny döredýär {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Bahalary we düşündirişleri formatlaýar
 5. Iýmitleniş we allergen maglumatlaryny goşýar
 
-### 3-nji ädim: Gözden geçiriň we sazlaň
+### 3-nji ädim: Gözden geçiriň we sazlaň {#step-3-review-and-customize}
 
 Siz şulary edip bilersiňiz:
 
@@ -91,9 +91,9 @@ Siz şulary edip bilersiňiz:
 4. Düşündirişleri we iýmitleniş maglumatlaryny täzeläp durmak
 5. Stil we ýerleşişi sazlamak
 
-## Menýuny görkezmek saýlawlary
+## Menýuny görkezmek saýlawlary {#menu-display-options}
 
-### Doly menýu sahypasy
+### Doly menýu sahypasy {#full-menu-page}
 
 Doly menýuňyzy görkezýän aýratyn sahypa:
 
@@ -102,7 +102,7 @@ Doly menýuňyzy görkezýän aýratyn sahypa:
 - Çap etmäge amatly ýerleşiş
 - Mobil enjamlara uýgun dizaýn
 
-### Menýu widjeti
+### Menýu widjeti {#menu-widget}
 
 Menýu bölümlerini beýleki sahypalara ýerleşdiriň:
 
@@ -111,7 +111,7 @@ Menýu bölümlerini beýleki sahypalara ýerleşdiriň:
 - Bar sahypasynda içgi menýusy
 - Footer-de desert görkezilişi
 
-### Menýu PDF
+### Menýu PDF {#menu-pdf}
 
 Ýükläp alyp bolýan PDF menýu dörediň:
 
@@ -120,9 +120,9 @@ Menýu bölümlerini beýleki sahypalara ýerleşdiriň:
 - Suratlary we düşündirişleri öz içine alýar
 - Paýlaşmak we email bilen ibermek aňsat
 
-## Iýmitleniş we allergen maglumatlary
+## Iýmitleniş we allergen maglumatlary {#dietary-and-allergen-information}
 
-### Iýmitleniş aýratynlyklary
+### Iýmitleniş aýratynlyklary {#dietary-attributes}
 
 Elementleri iýmitleniş maglumatlary bilen belläň:
 
@@ -134,7 +134,7 @@ Elementleri iýmitleniş maglumatlary bilen belläň:
 - **Low-Carb** — azaldylan uglewodlar
 - **High-Protein** — proteine baý
 
-### Allergen duýduryşlary
+### Allergen duýduryşlary {#allergen-warnings}
 
 Umumy allergenleri goşuň:
 
@@ -147,9 +147,9 @@ Umumy allergenleri goşuň:
 - **Gluten** — bugdaý we gluten saklaýan däneler
 - **Sesame** — künji tohumlary we ýagy
 
-## Menýu dolandyryşy
+## Menýu dolandyryşy {#menu-management}
 
-### Bahalary täzeläp durmak
+### Bahalary täzeläp durmak {#updating-prices}
 
 Menýu bahalaryny aňsatlyk bilen täzeläň:
 
@@ -159,7 +159,7 @@ Menýu bahalaryny aňsatlyk bilen täzeläň:
 4. Üýtgetmeleri saklaň
 5. Üýtgetmeler saýtyňyzda dessine görünýär
 
-### Möwsümleýin elementleri goşmak
+### Möwsümleýin elementleri goşmak {#adding-seasonal-items}
 
 Möwsümleýin menýu görnüşlerini dörediň:
 
@@ -169,7 +169,7 @@ Möwsümleýin menýu görnüşlerini dörediň:
 4. Elýeterlilik senelerini meýilleşdiriň
 5. Möwsüm wagty awtomatik görkeziň
 
-### Ýörite teklipleri dolandyrmak
+### Ýörite teklipleri dolandyrmak {#managing-specials}
 
 Gündelik ýa-da hepdelik ýörite teklipleri görkeziň:
 
@@ -179,7 +179,7 @@ Gündelik ýa-da hepdelik ýörite teklipleri görkeziň:
 4. Gündelik ýa-da hepdelik täzeläň
 5. Köne ýörite teklipleri arhiwläň
 
-## Theme Builder bilen integrasiýa
+## Theme Builder bilen integrasiýa {#integration-with-theme-builder}
 
 Myhmanhanaçylyk saýtlary üçin Theme Builder ulanylanda:
 
@@ -189,9 +189,9 @@ Myhmanhanaçylyk saýtlary üçin Theme Builder ulanylanda:
 4. **Mobil optimizasiýa** — menýular telefonlarda owadan görkezilýär
 5. **SEO optimizasiýa** — menýular gözleg ulgamlaryna amatly bolýar
 
-## Iň gowy tejribeler
+## Iň gowy tejribeler {#best-practices}
 
-### Menýu dizaýny
+### Menýu dizaýny {#menu-design}
 
 - **Aýdyň tertipleme** — logiki kategoriýa gurluşy
 - **Okamaga amatly düşündirişler** — işdä açýan we maglumat berýän
@@ -199,7 +199,7 @@ Myhmanhanaçylyk saýtlary üçin Theme Builder ulanylanda:
 - **Professional suratlar** — ýokary hilli iýmit suratlary
 - **Boş giňişlik** — sahypany aşa dykyz etmäň
 
-### Mazmun
+### Mazmun {#content}
 
 - **Takyk düşündirişler** — elementleri takyk beýan ediň
 - **Ýörite teklipleri tapawutlandyryň** — ýörite teklipleri göze ilýän ediň
@@ -207,7 +207,7 @@ Myhmanhanaçylyk saýtlary üçin Theme Builder ulanylanda:
 - **Yzygiderli täzeläň** — bahalary we elementleri häzirki ýagdaýda saklaň
 - **Işdä açýan dil ulanyň** — elementleriň tagamly eşidilmegini gazanyň
 
-### Elýeterlilik
+### Elýeterlilik {#accessibility}
 
 - **Okamaga amatly şriftler** — aýdyň, okalýan şrift görnüşlerini ulanyň
 - **Ýeterlik kontrast** — tekstiň okalýandygyna göz ýetiriň
@@ -215,9 +215,9 @@ Myhmanhanaçylyk saýtlary üçin Theme Builder ulanylanda:
 - **Allergen duýduryşlary** — allergenleri göze ilýän ýerde görkeziň
 - **Mobil üçin amatly** — ähli enjamlarda synap görüň
 
-## Mysallar
+## Mysallar {#examples}
 
-### Restoran menýusynyň gurluşy
+### Restoran menýusynyň gurluşy {#restaurant-menu-structure}
 
 ```
 Işdäaçarlar
@@ -241,7 +241,7 @@ Süýjüler
 └── Gelato Selection
 ```
 
-### Kafe menýusynyň gurluşy
+### Kafe menýusynyň gurluşy {#cafe-menu-structure}
 
 ```
 Kofe
@@ -260,7 +260,7 @@ Sandwiçler
 └── Vegetarian Wrap
 ```
 
-## Baglanyşykly aýratynlyklar
+## Baglanyşykly aýratynlyklar {#related-features}
 
 - [Menýu döret](../abilities/create-menu.md) — nawigasiýa menýularyny dörediň
 - [Dizaýn ugry](./design-direction.md) — saýtyňyzyň dizaýnyny sazlaň

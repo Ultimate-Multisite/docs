@@ -4,22 +4,22 @@ title: សកម្មភាព - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# សកម្មភាព: wu_site_created
+# សកម្មភាព: wu_site_created {#action-wusitecreated}
 
 ដំណើរការបន្ទាប់ពីគេហទំព័រមួយត្រូវបានបង្កើតជាលើកដំបូង។
 
 មិនដំណើរការទេ ប្រសិនបើបានចម្លងពីគំរូ។
 
-## ប៉ារ៉ាម៉ែត្រ
+## ប៉ារ៉ាម៉ែត្រ {#parameters}
 
 | ឈ្មោះ | ប្រភេទ | ការពិពណ៌នា |
 |------|------|-------------|
 | $data | `array` | ទិន្នន័យវត្ថុដែលនឹងត្រូវបានរក្សាទុក។ |
 | $site | `\Site` | អ៊ីនស្តង់វត្ថុ។ |
 
-### ចាប់ពី
+### ចាប់ពី {#since}
 
 - 2.0.0
-### ប្រភព
+### ប្រភព {#source}
 
 បានកំណត់នៅក្នុង [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1652) នៅបន្ទាត់ 1652

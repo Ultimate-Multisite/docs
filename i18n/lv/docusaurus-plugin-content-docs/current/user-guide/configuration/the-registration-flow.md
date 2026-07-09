@@ -3,13 +3,13 @@ title: Reģistrācijas plūsma
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Reģistrācijas plūsma (v2)
+# Reģistrācijas plūsma (v2) {#the-registration-flow-v2}
 
 _**SVIRTAS PIEZIŅAS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
 Klienti var reģistrēties ar dažādiem veidiem savā tīklā. Viņi var izmantot jūsu reģistrācijas formu vai dalīgo saiti preeslēgties iepriekš izvēlētā plānā. Šeit redzam, kā jūsu klientiem ir iespējams reģistrēties savā tīklā izmantojot pieejamus ceļus un kas notiek pēc viņu reģistrācijas.
 
-## Reģistrācijas formās lietošana:
+## Reģistrācijas formās lietošana: {#using-the-registration-form}
 
 Šis ir standarta reģistrācijas processa. Jūs izveidzat reģistrācijas lapu ar **checkout formu**, un tas ir vieta, kurā jūsu klientiem būs iespējams reģistrēties savā tīklā un preeslēgties plānā. Jūs varat turēt vairādas reģistrācijas lapas, katra ar dažādu reģistrācijas formu, ja vēlaties.
 
@@ -35,13 +35,13 @@ Ja tie ir reģistrējušies maksājamos plānus vai e-pasta apstiprināšana jū
 
 ![Vieta aktivizēta ar saiti iekļūt savā dashboard](/img/frontend/site-activated.png)
 
-## Izmantojot dalīšamu saiti:
+## Izmantojot dalīšamu saiti: {#using-a-shareable-link}
 
 Reģistrācijas process, izmantojot dalīšamu saiti, ir būtiskas līdzīga reģistrācijas formai, vienīgais atšķirība ir tā, ka izmantojot dalīšamu saiti jūsu klientiem var preces vai vietnes šablons iepriekš izvēlēts maksājuma formā (skatīt sadaļu Pre-selecting products and templates via URL parameters) vai var pievienots kupona kodu (skatīt sadaļu Using URL Parameters).
 
 Reģistrācijas process būs tas pats: viņiem jāievada vārds, lietotājvārds, e-pasta adrese, vietnes nosaukums un tituls, etc... bet plāns vai vietnes šablons jau būs iepriekš izvēlēts.
 
-### Reģistrācija ar manuāliem maksājumiem:
+### Reģistrācija ar manuāliem maksājumiem: {#registering-using-manual-payments}
 
 Ja jūs neuzmanieties izmantot PayPal, Stripe vai jebkuru citu maksājuma portalu, kas piedāvā Ultimate Multisite vai tās papildu integrācijas, varat izmantot manuālus maksājumus saviem klientiem. Šāda veids ļauj jums nodrošināt faktūru viņiem, lai tos atmaksātu jūsu iepriekš izvēlētajam maksājuma procesatorim pēc tam, kad viņi reģistrējas jūsu tīklā.
 

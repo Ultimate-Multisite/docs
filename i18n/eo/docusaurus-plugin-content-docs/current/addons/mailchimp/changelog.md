@@ -3,7 +3,7 @@ title: Mailchimp Ŝanĝoprotokolo
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp Ŝanĝoprotokolo
+# Mailchimp Ŝanĝoprotokolo {#mailchimp-changelog}
 
 Versio: 1.1.1 - Eldonita je 2025-09-28
 

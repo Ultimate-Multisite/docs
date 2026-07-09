@@ -3,11 +3,11 @@ title: Imikhiqizo Yezizinda kanye Namanani
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Imikhiqizo Yama-domain Namanani
+# Imikhiqizo Yama-domain Namanani {#domain-products-and-pricing}
 
 Imikhiqizo yama-domain iyindlela olawula ngayo amanani, ama-TLD, ubumfihlo be-WHOIS, nokukhethwa komhlinzeki. Umkhiqizo ngamunye we-domain ungumkhiqizo ojwayelekile we-Multisite Ultimate onethebhu eyengeziwe ethi **Izilungiselelo Ze-domain**.
 
-## Ukudala umkhiqizo we-domain
+## Ukudala umkhiqizo we-domain {#creating-a-domain-product}
 
 1. Iya ku-**Network Admin › Ultimate Multisite › Products**
 2. Chofoza **Add New**
@@ -17,13 +17,13 @@ Imikhiqizo yama-domain iyindlela olawula ngayo amanani, ama-TLD, ubumfihlo be-WH
 
 Imikhiqizo yama-domain ivela nebheji elinsomi elithi **Domain** ohlwini lwemikhiqizo futhi ingahlungwa kusetshenziswa ithebhu ethi **Imikhiqizo Yama-domain**.
 
-## Ithebhu yezilungiselelo ze-domain
+## Ithebhu yezilungiselelo ze-domain {#domain-settings-tab}
 
-### Umhlinzeki
+### Umhlinzeki {#provider}
 
 Khetha ukuthi yimuphi umbhalisi ophethe ukubhaliswa kwalo mkhiqizo. Okuzenzakalelayo kuba **Default provider** yomhlaba wonke esethwe kuzilungiselelo ze-Domain Seller.
 
-### Ama-TLD asekelwayo
+### Ama-TLD asekelwayo {#supported-tlds}
 
 Kushiye kungenalutho ukuze udale **umkhiqizo obamba konke** osebenza kuwo wonke ama-TLD angahambisani nomunye umkhiqizo.
 
@@ -31,7 +31,7 @@ Faka uhlu lwama-TLD oluhlukaniswe ngamakhoma (isb., `.com, .net, .org`) ukuze ud
 
 **Ukuthi ukufanisa imikhiqizo kusebenza kanjani:** Lapho ikhasimende lisesha i-domain, i-addon ikhetha umkhiqizo ofana ngokucacile kakhulu. Umkhiqizo one-`.com` ohlwini lwawo lwama-TLD uthola kuqala kunomkhiqizo obamba konke. Uma kungekho mkhiqizo oqondene ne-TLD ethile ofanayo, kusetshenziswa obamba konke. Uma kungekho mikhiqizo ekhona, ukusesha i-domain akuboniswa.
 
-### Uhlobo lwe-markup
+### Uhlobo lwe-markup {#markup-type}
 
 Izindlela ezintathu zilawula ukuthi intengo yakho yokudayisa ibalwa kanjani kusukela ezindlekweni ze-wholesale:
 
@@ -41,11 +41,11 @@ Izindlela ezintathu zilawula ukuthi intengo yakho yokudayisa ibalwa kanjani kusu
 | **I-markup engaguquki** | Yengeza inani ledola elingaguquki. I-markup engu-$5 ku-domain engu-$10 inikeza u-$15. |
 | **Intengo engaguquki** | Ayinaki nhlobo izindleko ze-wholesale. Ihlala ikhokhisa inani olifakayo. |
 
-### Amanani esingeniso
+### Amanani esingeniso {#introductory-pricing}
 
 Kuvumele ukuze unikeze intengo yonyaka wokuqala eyehlisiwe. Setha **Intengo yesingeniso** ehlukile (intengo yonyaka woku-1) kanye **Nentengo yokuvuselela** evamile (unyaka wesi-2 nangaphezulu). Ikhasimende libona womabili amanani eboniswa ngesikhathi se-checkout ukuze lazi ukuthi lilindeleni lapho kuvuselelwa.
 
-### Ubumfihlo be-WHOIS
+### Ubumfihlo be-WHOIS {#whois-privacy}
 
 Kulawula ukuthi ukuvikelwa kobumfihlo be-WHOIS kunikezwa yini kuma-domain abhaliswe ngalo mkhiqizo.
 
@@ -59,7 +59,7 @@ Ku-Namecheap, ubumfihlo be-WHOIS busebenzisa i-WhoisGuard (ihlala imahhala). Ku-
 
 ---
 
-## Ukungenisa nokuvumelanisa ama-TLD
+## Ukungenisa nokuvumelanisa ama-TLD {#tld-import-and-sync}
 
 Imikhiqizo yama-domain ibonisa amanani e-wholesale esikhathi sangempela atholwe kumhlinzeki oxhunyiwe. Ukuze lokhu kusebenze, ama-TLD kufanele angeniswe.
 
@@ -70,7 +70,7 @@ Ngemva kokuvumelanisa, iya kunoma iyiphi ithebhu ethi Domain Settings yomkhiqizo
 
 ---
 
-## Ukuvuselela okuzenzakalelayo
+## Ukuvuselela okuzenzakalelayo {#auto-renewal}
 
 Ukuvuselelwa kwama-domain kuxhunywe esimweni sobulungu sekhasimende:
 
@@ -90,7 +90,7 @@ Ama-ID ezifanekiso ze-imeyili ezehlakalo zomjikelezo wokuphila kwe-domain:
 
 ---
 
-## Admin: Ukubhaliswa kwe-domain ngesandla
+## Admin: Ukubhaliswa kwe-domain ngesandla {#admin-manual-domain-registration}
 
 Ukuze ubhalise i-domain egameni lekhasimende ngaphandle kokuthi lidlule ku-checkout:
 

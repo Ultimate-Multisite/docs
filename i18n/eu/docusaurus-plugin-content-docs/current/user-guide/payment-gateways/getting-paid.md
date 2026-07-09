@@ -3,13 +3,13 @@ title: Ordainketak jasotzea
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ordaintzea (v2)
+# Ordaintzea (v2) {#getting-paid-v2}
 
 _**OHAR GARRANTZITSUA: artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 
 Ultimate Multisite-k kidego- eta fakturazio-sistema integratua du. Gure fakturazio-sistemak funtziona dezan, e-commerce-n erabiltzen diren ordainketa-pasabide ohikoenak integratu ditugu. Ultimate Multisite-ren ordainketa-pasabide lehenetsiak _Stripe_ , _PayPal_ , eta Eskuzko ordainketa dira. _WooCommerce_ , _GoCardless_ eta _Payfast_ ere erabil ditzakezu ordainketak jasotzeko, dagozkien add-onak instalatuta.
 
-## Oinarrizko ezarpenak
+## Oinarrizko ezarpenak {#basic-settings}
 
 Ordainketa-pasabide horietako edozein konfigura dezakezu Ultimate Multisite-ren ordainketa-ezarpenetan. Hemen aurki dezakezu: **Ultimate Multisite menua > Ezarpenak > Ordainketak.**
 
@@ -39,7 +39,7 @@ Honek saihesten du kidego bat automatikoki berrituko dela ematea, pasabideak ord
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Non aurkitu pasabideak:
+## Non aurkitu pasabideak: {#where-to-find-the-gateways}
 
 Ordainketa-pasabideak orri berean konfigura ditzakezu ( **Ultimate Multisite > Ezarpenak > Ordainketak**). **ordainketa-pasabide aktiboak** atalaren azpian, hauek ikusiko dituzu: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ eta _Eskuzkoa_.
 
@@ -67,7 +67,7 @@ Hona hemen ordainketa-pasabideen ezarpenen ikuspegi osoa ere:
 
 Orain, _WooCommerce_ , _GoCardless_ edo _Payfast_ zure ordainketa-pasabide gisa erabili nahi badituzu, **haien add-onak instalatu eta konfiguratu** beharko dituzu.
 
-### Nola instalatu WooCommerce add-ona:
+### Nola instalatu WooCommerce add-ona: {#how-to-install-the-woocommerce-add-on}
 
 Ulertzen dugu _Stripe_ eta _PayPal_ ez daudela eskuragarri herrialde batzuetan, eta horrek Ultimate Multisite-ren erabiltzaileek gure plugina modu eraginkorrean erabiltzea mugatzen edo oztopatzen du. Horregatik, _WooCommerce_ integratzeko add-on bat sortu genuen, e-commerce plugin oso ezaguna baita. Mundu osoko garatzaileek add-onak sortu dituzte ordainketa-pasabide desberdinak harekin integratzeko. Horri etekina atera genion Ultimate Multisite-ren fakturazio-sistemarekin erabil ditzakezun ordainketa-pasabideak zabaltzeko.
 
@@ -95,7 +95,7 @@ Aktibatu ondoren, oraindik WooCommerce plugina zure webgunean instalatuta eta ak
 
 WooCommerce Integration gehigarriari buruz gehiago irakurtzeko, **egin klik hemen**.
 
-### Nola instalatu GoCardless gehigarria:
+### Nola instalatu GoCardless gehigarria: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ gehigarria instalatzeko urratsak _WooCommerce_ gehigarriaren ia berdinak dira. Joan gehigarrien orrira eta hautatu **Ultimate Multisite: GoCardless Gateway** gehigarria.
 
@@ -111,7 +111,7 @@ Instalazioa amaitu ondoren, pluginen orrira birbideratuko zaituzte. Hemen, egin 
 
 _GoCardless_ gateway-arekin nola hasi ikasteko, **irakurri artikulu hau**.
 
-### Nola instalatu Payfast gehigarria:
+### Nola instalatu Payfast gehigarria: {#how-to-install-the-payfast-add-on}
 
 Joan gehigarrien orrira eta hautatu **Ultimate Multisite: Payfast Gateway** gehigarria.
 

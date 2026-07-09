@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog
+# GoCardless Changelog {#gocardless-changelog}
 
 Bersyon: 1.0.3 - Inilabas noong 2026-05-05
 * Ayos: Ang mga naulilang nakabinbing site ay nililinis na ngayon kapag ang GoCardless membership ay kinansela habang nasa nakabinbi o on-hold na estado

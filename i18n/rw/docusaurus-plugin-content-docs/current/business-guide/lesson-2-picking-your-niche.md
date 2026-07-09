@@ -3,19 +3,19 @@ title: 'Isomo rya 2: Guhitamo isoko ryawe ryihariye'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Isomo rya 2: Guhitamo Isoko Wihariye
+# Isomo rya 2: Guhitamo Isoko Wihariye {#lesson-2-picking-your-niche}
 
 Mu Isomo rya 1 twasobanuye impamvu isoko wihariye riruta kuba rusange. Ubu ukeneye guhitamo iryawe. Iri somo riguha uburyo bwo kubona no kugenzura isoko wihariye mbere yo gushora igihe mu kuryubakiraho.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 Twasobanuye igitekerezo cya FitSite: urubuga rw’imbuga za internet rugenewe studio za fitness. Ariko twageze dute ku guhitamo studio za fitness by’umwihariko? Iri somo rinyura muri iyo nzira kugira ngo nawe ubashe kuyikoresha mu kubona isoko wihariye ryawe.
 
-## Ibipimo Bitatu
+## Ibipimo Bitatu {#the-three-criteria}
 
 Isoko wihariye ryiza ku rubuga rw’imbuga za internet ryuzuza ibintu bitatu:
 
-### 1. Bakeneye Imbuga za Internet ariko Kugira Nziza Birabagora
+### 1. Bakeneye Imbuga za Internet ariko Kugira Nziza Birabagora {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Shaka inganda aho:
 
@@ -26,7 +26,7 @@ Shaka inganda aho:
 
 **Studio za fitness zirabikwiriye**: abanyamuryango baba biteze kubona ingengabihe z’amasomo, ibiciro, no kubika umwanya kuri internet. Imbuga nyinshi za studio zarashaje cyangwa zubatswe ku nyandikorugero rusange zidahuye n’intego.
 
-### 2. Ibyo Bigo Bishobora Kwishyura Subscription ya Buri Kwezi
+### 2. Ibyo Bigo Bishobora Kwishyura Subscription ya Buri Kwezi {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Abakiriya ugamije bakeneye kuba:
 
@@ -36,7 +36,7 @@ Abakiriya ugamije bakeneye kuba:
 
 **Studio za fitness zirabikwiriye**: zisanzwe zishyura software yo kubika umwanya, gutunganya ubwishyu, n’ibikoresho byo kwamamaza. Subscription y’urubuga rwa internet ni inyongera isanzwe.
 
-### 3. Baraganira Hagati Yabo
+### 3. Baraganira Hagati Yabo {#3-they-talk-to-each-other}
 
 Amasoko wihariye meza agira:
 
@@ -46,9 +46,9 @@ Amasoko wihariye meza agira:
 
 **Studio za fitness zirabikwiriye**: ba nyiri studio bitabira ibikorwa by’urwego rwa fitness, bifatanya mu miryango yo kuri internet, kandi bakunze gusangira ibikoresho na serivisi na bagenzi babo.
 
-## Uko Wabona Amasoko Wihariye Ashoboka
+## Uko Wabona Amasoko Wihariye Ashoboka {#how-to-find-niche-candidates}
 
-### Hera ku Byo Uzi
+### Hera ku Byo Uzi {#start-with-what-you-know}
 
 Uburambe usanzwe ufite ni akarusho. Tekereza kuri:
 
@@ -56,7 +56,7 @@ Uburambe usanzwe ufite ni akarusho. Tekereza kuri:
 - Ibyo ukunda cyangwa ibyo witaho aho usobanukiwe umuryango wabyo
 - Imiyoboro y’abanyamwuga usanzwe ubarizwamo
 
-### Shaka Ibimenyetso by’Ububabare
+### Shaka Ibimenyetso by’Ububabare {#look-for-pain-signals}
 
 Shaka ibimenyetso byerekana ko ibigo byo mu isoko wihariye bigorwa n’imbuga za internet:
 
@@ -65,7 +65,7 @@ Shaka ibimenyetso byerekana ko ibigo byo mu isoko wihariye bigorwa n’imbuga za
 - Reba imbuga za internet nyazo muri iryo soko wihariye -- ese nyinshi ni mbi?
 - Reba niba hari abahanganye bahari n’uko bakorera neza iryo soko
 
-### Suzuma Ubukungu
+### Suzuma Ubukungu {#evaluate-the-economics}
 
 Kuri buri soko wihariye rishoboka, gereranya:
 
@@ -73,11 +73,11 @@ Kuri buri soko wihariye rishoboka, gereranya:
 - **Ubushake bwo kwishyura**: Ubu batanga angahe ku bikoresho bisa n’ibyo?
 - **Ubushobozi bw’agaciro k’igihe kirekire**: Ese ibi bigo birahamye, cyangwa bihinduka vuba?
 
-## Kugenzura Isoko Wihariye Ryawe
+## Kugenzura Isoko Wihariye Ryawe {#validating-your-niche}
 
 Mbere yo kubaka ikintu icyo ari cyo cyose, genzura ko hari icyifuzo:
 
-### Ganira n’Abakiriya Bashoboka
+### Ganira n’Abakiriya Bashoboka {#talk-to-potential-customers}
 
 Vugana na ba nyir’ibigo 10-15 bo mu isoko wihariye ugamije. Baza:
 
@@ -88,17 +88,17 @@ Vugana na ba nyir’ibigo 10-15 bo mu isoko wihariye ugamije. Baza:
 
 Ntabwo urimo kugurisha kugeza ubu. Urimo kumva.
 
-### Reba Imiterere y’Abahanganye
+### Reba Imiterere y’Abahanganye {#check-competitor-landscape}
 
 - **Nta bahanganye**: Bishobora gusobanura ko nta cyifuzo gihari, cyangwa ko ari amahirwe ataravumburwa. Ibiganiro n’abakiriya bizakubwira icy’ukuri.
 - **Abahanganye bake**: Ni ikimenyetso cyiza. Byemeza ko hari icyifuzo. Iga ibyo bakora neza n’aho bagira intege nke.
 - **Abahanganye benshi**: Kwinjira biragorana kurushaho, ariko biracyashoboka niba ushobora kwitandukanya neza.
 
-### Kubaka Landing Page
+### Kubaka Landing Page {#build-a-landing-page}
 
 Mbere yo kubaka urubuga nyamukuru, kora landing page yoroshye isobanura igisubizo cyawe cy’isoko wihariye, maze ukusanye email signups. Koresha amafaranga make mu kwamamaza kugamije abantu runaka kugira ngo ugerageze inyungu bafite. Niba abantu biyandikishije, uba ufite icyemezo.
 
-## Kubishyira kuri FitSite
+## Kubishyira kuri FitSite {#applying-this-to-fitsite}
 
 Dore uko FitSite yatsinze ugereranyije n’ibipimo:
 
@@ -112,7 +112,7 @@ Dore uko FitSite yatsinze ugereranyije n’ibipimo:
 
 Kugenzura byemeje ayo mahirwe. Ubu twubake.
 
-## Ibitekerezo by’Amasoko Wihariye Wakuzirikana
+## Ibitekerezo by’Amasoko Wihariye Wakuzirikana {#niche-ideas-to-consider}
 
 Niba fitness atari isoko ryawe, dore andi masoko wihariye yujuje ibipimo:
 
@@ -127,7 +127,7 @@ Niba fitness atari isoko ryawe, dore andi masoko wihariye yujuje ibipimo:
 
 Buri rimwe muri aya rifite ibiranga bimwe: ibyo imbuga za internet zikeneye bisobanutse, ubushobozi bwo kwishyura, n’umuryango uhererekanya amakuru ku munwa.
 
-## Ibyo Twubatse Muri Iri Somo
+## Ibyo Twubatse Muri Iri Somo {#what-we-built-this-lesson}
 
 - **Uburyo bwo guhitamo isoko wihariye**: ibipimo bitatu byo gusuzuma isoko wihariye iryo ari ryo ryose
 - **Uburyo bwo kugenzura**: ibiganiro n’abakiriya, isesengura ry’abahanganye, kugerageza landing page

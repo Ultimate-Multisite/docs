@@ -3,11 +3,11 @@ title: Sichtbarkeit der Fähigkeit
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Sichtbarkeit von Fähigkeiten (Ability Visibility)
+# Sichtbarkeit von Fähigkeiten (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 führt die Steuerung **Sichtbarkeit von Fähigkeiten** ein, die festlegt, welche Oberflächen jede Fähigkeit (Ability) ausstellen. Dies ermöglicht Administratoren, präzise festzulegen, welche Agenten-Funktionen über REST APIs, MCP-Server, WooCommerce-Integrationen und andere Schnittstellen verfügbar sind.
 
-## Was ist Sichtbarkeit von Fähigkeiten?
+## Was ist Sichtbarkeit von Fähigkeiten? {#what-is-ability-visibility}
 
 Sichtbarkeit von Fähigkeiten ist ein Berechtigungssystem, das steuert:
 
@@ -18,9 +18,9 @@ Sichtbarkeit von Fähigkeiten ist ein Berechtigungssystem, das steuert:
 
 Jede Fähigkeit trägt ein Sichtbarkeitslevel, das ihre Verfügbarkeit über verschiedene Oberflächen hinweg bestimmt.
 
-## Sichtbarkeitslevel
+## Sichtbarkeitslevel {#visibility-levels}
 
-### Öffentlich (Public)
+### Öffentlich (Public) {#public}
 
 **Öffentliche Fähigkeiten** sind überall verfügbar:
 
@@ -32,7 +32,7 @@ Jede Fähigkeit trägt ein Sichtbarkeitslevel, das ihre Verfügbarkeit über ver
 
 Beispiel: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Intern (Internal)
+### Intern (Internal) {#internal}
 
 **Interne Fähigkeiten** sind nur innerhalb Ihrer WordPress-Installation verfügbar:
 
@@ -43,7 +43,7 @@ Beispiel: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Beispiel: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Partner-Fähigkeiten** sind nur für freigegebene Partner verfügbar:
 
@@ -54,7 +54,7 @@ Beispiel: `manage-settings`, `view-analytics`, `export-data`
 
 Beispiel: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Deaktiviert (Disabled)
+### Deaktiviert (Disabled) {#disabled}
 
 **Deaktivierte Fähigkeiten** sind nirgends verfügbar:
 
@@ -63,15 +63,15 @@ Beispiel: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Nicht in Admin-Panels verfügbar
 - Nützlich für veraltete oder experimentelle Fähigkeiten
 
-## Verwaltung der Sichtbarkeit von Fähigkeiten
+## Verwaltung der Sichtbarkeit von Fähigkeiten {#managing-ability-visibility}
 
-### Zugriff auf die Einstellungen für die Sichtbarkeit von Fähigkeiten
+### Zugriff auf die Einstellungen für die Sichtbarkeit von Fähigkeiten {#accessing-ability-visibility-settings}
 
 1. Gehen Sie zu **WordPress Admin** → **Superdav AI Agent** → **Einstellungen**
 2. Klicken Sie auf den Tab **Abilities**
 3. Sie sehen eine Liste aller installierten Fähigkeiten mit ihren Sichtbarkeitsleveln
 
-### Anzeigen der Fähigkeitsdetails
+### Anzeigen der Fähigkeitsdetails {#viewing-ability-details}
 
 Klicken Sie auf eine beliebige Fähigkeit, um zu sehen:
 
@@ -82,7 +82,7 @@ Klicken Sie auf eine beliebige Fähigkeit, um zu sehen:
 - **Zuletzt aktualisiert**: Wann die Sichtbarkeit zuletzt geändert wurde
 - **Status**: Anerkannt oder Nicht klassifiziert
 
-### Ändern der Sichtbarkeitslevel
+### Ändern der Sichtbarkeitslevel {#changing-visibility-levels}
 
 Um die Sichtbarkeit einer Fähigkeit zu ändern:
 
@@ -100,7 +100,7 @@ Aktuelle Sichtbarkeit: Öffentlich
 Partner-Freigängigkeitsliste: partner-123, partner-456
 ```
 
-### Massenoperationen
+### Massenoperationen {#bulk-operations}
 
 Um die Sichtbarkeit mehrerer Fähigkeiten zu ändern:
 
@@ -108,11 +108,11 @@ Um die Sichtbarkeit mehrerer Fähigkeiten zu ändern:
 2. Wählen Sie ein neues Sichtbarkeitslevel aus dem Dropdown-Menü für Massenaktionen
 3. Klicken Sie auf **Anwenden**
 
-## Partner-Freigängigkeitsliste
+## Partner-Freigängigkeitsliste {#partner-allow-list}
 
 Die **Partner-Freigängigkeitsliste** steuert, welche externen Partner auf Partner-Level-Fähigkeiten zugreifen können.
 
-### Partner hinzufügen
+### Partner hinzufügen {#adding-partners}
 
 1. Gehen Sie zu **Superdav AI Agent** → **Einstellungen** → **Partner**
 2. Klicken Sie auf **Partner hinzufügen**
@@ -120,7 +120,7 @@ Die **Partner-Freigängigkeitsliste** steuert, welche externen Partner auf Partn
 4. Optional einen Partnernamen und eine Beschreibung hinzufügen
 5. Klicken Sie auf **Speichern**
 
-### Fähigkeiten Partner zuweisen
+### Fähigkeiten Partner zuweisen {#assigning-abilities-to-partners}
 
 Nachdem Sie einen Partner hinzugefügt haben:
 
@@ -130,7 +130,7 @@ Nachdem Sie einen Partner hinzugefügt haben:
 4. Im Abschnitt „Partner-Freigängigkeitsliste“ setzen Sie Haken bei den Partnern, die Zugriff haben sollen
 5. Klicken Sie auf **Speichern**
 
-### Partner-Zugriff entziehen
+### Partner-Zugriff entziehen {#revoking-partner-access}
 
 Um den Zugriff eines Partners zu entfernen:
 
@@ -140,11 +140,11 @@ Um den Zugriff eines Partners zu entfernen:
 
 Der Partner verliert sofort den Zugriff auf diese Fähigkeit.
 
-## Nicht klassifizierte Fähigkeiten
+## Nicht klassifizierte Fähigkeiten {#unclassified-abilities}
 
 Wenn Sie eine Drittanbieter-Fähigkeit installieren, die Superdav AI Agent nicht erkennt, wird sie als **Nicht klassifiziert** markiert.
 
-### Admin-Benachrichtigung für nicht klassifizierte Fähigkeiten
+### Admin-Benachrichtigung für nicht klassifizierte Fähigkeiten {#admin-notice-for-unclassified-abilities}
 
 Sie sehen eine Admin-Benachrichtigung:
 
@@ -161,7 +161,7 @@ Bitte überprüfen und klassifizieren Sie sie.
 [Fähigkeiten überprüfen] [Ignorieren]
 ```
 
-### Nicht klassifizierte Fähigkeiten überprüfen
+### Nicht klassifizierte Fähigkeiten überprüfen {#reviewing-unclassified-abilities}
 
 1. Klicken Sie in der Benachrichtigung auf **Fähigkeiten überprüfen**
 2. Für jede nicht klassifizierte Fähigkeit sehen Sie:
@@ -178,7 +178,7 @@ Bitte überprüfen und klassifizieren Sie sie.
 
 4. Klicken Sie auf **Klassifizieren**, um Ihre Entscheidung zu speichern
 
-### Warum nicht klassifizierte Fähigkeiten klassifizieren?
+### Warum nicht klassifizierte Fähigkeiten klassifizieren? {#why-classify-unclassified-abilities}
 
 Die Klassifizierung von Fähigkeiten:
 
@@ -187,9 +187,9 @@ Die Klassifizierung von Fähigkeiten:
 - **Ermöglicht Funktionen**: Sobald sie klassifiziert sind, wird die Fähigkeit verfügbar
 - **Dokumentiert Entscheidungen**: Ihre Entscheidungen werden zu Prüfzwecken protokolliert
 
-## Sichtbarkeit in verschiedenen Oberflächen
+## Sichtbarkeit in verschiedenen Oberflächen {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Öffentliche Fähigkeiten** sind über REST-Endpunkte verfügbar:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Interne und Partner-Fähigkeiten** sind über REST API nicht verfügbar.
 
-### MCP Server
+### MCP Server {#mcp-servers}
 
 **Öffentliche Fähigkeiten** sind über MCP verfügbar:
 
@@ -217,7 +217,7 @@ Verfügbare Fähigkeiten:
 
 **Partner-Fähigkeiten** sind nur mit Partner-Anmeldeinformationen verfügbar.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Öffentliche Fähigkeiten**, die mit WooCommerce zusammenhängen, sind verfügbar:
 
@@ -227,7 +227,7 @@ Verfügbare Fähigkeiten:
 
 **Interne Fähigkeiten** werden nicht an WooCommerce ausgestellt.
 
-### Chat-Schnittstelle
+### Chat-Schnittstelle {#chat-interface}
 
 **Alle Fähigkeiten** (Öffentlich, Intern, Partner) sind im Chat verfügbar, abhängig von den Benutzerberechtigungen:
 
@@ -235,34 +235,34 @@ Verfügbare Fähigkeiten:
 - Normale Benutzer sehen nur öffentliche Fähigkeiten
 - Partner sehen öffentliche + Partner-Fähigkeiten (wenn freigegeben)
 
-## Sicherheit Best Practices
+## Sicherheit Best Practices {#security-best-practices}
 
-### Prinzip der geringsten Rechte (Principle of Least Privilege)
+### Prinzip der geringsten Rechte (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Setzen Sie Fähigkeiten auf das restriktivste Sichtbarkeitslevel, das ihre Nutzung dennoch erlaubt
 - Verwenden Sie Partner-Sichtbarkeit für sensible Vorgänge
 - Deaktivieren Sie Fähigkeiten, die Sie nicht nutzen
 
-### Regelmäßige Audits
+### Regelmäßige Audits {#regular-audits}
 
 - Überprüfen Sie die Sichtbarkeit der Fähigkeiten monatlich
 - Achten Sie auf nicht klassifizierte Fähigkeiten
 - Entfernen Sie den Zugriff für nicht genutzte Partner
 
-### Protokollierung und Überwachung
+### Protokollierung und Überwachung {#logging-and-monitoring}
 
 - Überwachen Sie, welche Fähigkeiten am häufigsten verwendet werden
 - Verfolgen Sie die Zugriffsmuster der Partner
 - Warnen Sie bei ungewöhnlicher Nutzung von Fähigkeiten
 
-### Drittanbieter-Fähigkeiten
+### Drittanbieter-Fähigkeiten {#third-party-abilities}
 
 - Überprüfen Sie Drittanbieter-Fähigkeiten, bevor Sie sie aktivieren
 - Klassifizieren Sie sie explizit
 - Beginnen Sie mit interner oder Partner-Sichtbarkeit
 - Beantragen Sie die öffentliche Sichtbarkeit erst nach gründlicher Prüfung
 
-## Fehlerbehebung (Troubleshooting)
+## Fehlerbehebung (Troubleshooting) {#troubleshooting}
 
 **Eine Fähigkeit wird in der Liste nicht angezeigt**
 - Überprüfen Sie, ob die Fähigkeit installiert und aktiv ist
@@ -285,7 +285,7 @@ Verfügbare Fähigkeiten:
 - Stellen Sie sicher, dass Ihre Klassifizierung gespeichert wurde
 - Überprüfen Sie, ob das Plugin, das die Fähigkeit bereitstellt, aktuell ist
 
-## Migration vom Legacy-Modus
+## Migration vom Legacy-Modus {#migration-from-legacy-mode}
 
 Wenn Sie von einer älteren Version von Superdav AI Agent aktualisieren:
 
@@ -295,7 +295,7 @@ Wenn Sie von einer älteren Version von Superdav AI Agent aktualisieren:
 
 Siehe **Migration des Drittanbieter-Modus** für weitere Details zur Umstellung auf die native Abilities API Integration.
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
 Nach der Konfiguration der Sichtbarkeit von Fähigkeiten:
 

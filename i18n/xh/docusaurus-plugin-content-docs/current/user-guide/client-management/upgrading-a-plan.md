@@ -3,7 +3,7 @@ title: Ukunyusela isicwangciso
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ukunyusa Isicwangciso (v2)
+# Ukunyusa Isicwangciso (v2) {#upgrading-a-plan-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite version 2.x.**_
 
@@ -41,7 +41,7 @@ Emva kokuba ukugqibezela intlawulo kugqityiwe, imveliso/imveliso ezintsha ziya k
 
 ##
 
-## Iindlela Zokunyusa Nokuthoba
+## Iindlela Zokunyusa Nokuthoba {#upgrade-and-downgrade-paths}
 
 Kwimveliso nganye yakho, uya kuba nethebhu ethi **Ukunyusa Nokuthoba**. Ukhetho lokuqala kuloo thebhu yintsimi ebizwa **Iqela Lesicwangciso**.
 

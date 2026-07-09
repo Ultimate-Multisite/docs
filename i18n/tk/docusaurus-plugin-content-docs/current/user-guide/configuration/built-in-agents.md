@@ -3,11 +3,11 @@ title: Içindäki agentler
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Içinde bar bolan agentler
+# Içinde bar bolan agentler {#built-in-agents}
 
 Gratis AI Agent v1.9.0 bäş sany içinde bar bolan agent bilen gelýär; olaryň hersi belli bir gurallar toplumy, ýöriteleşdirilen system prompt we şol ugurdaky umumy wezipelere laýyk başlangyç teklipler bilen öňünden sazlanan. Agentleriň arasynda geçmek kömekçiniň näme edip bilýändigini we nähili jogap berýändigini üýtgedýär — siziň tarapyňyzdan hiç hili sazlama gerek bolmazdan. Superdav AI Agent v1.18.0 degişli integrasiýalar sazlananda bu iş akymlaryna meýilnama bilen baglanyşykly gurallary, ýatlatma ýazgylaryny, tassyklama derwezelerini we SMS habarnamalaryny goşup biler.
 
-## Agent näme?
+## Agent näme? {#what-is-an-agent}
 
 Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 
@@ -15,7 +15,7 @@ Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 - **System prompt** — agentiň äheňini, ileri tutulýanlaryny we çäklendirmelerini kesgitleýän görkezmeler
 - **Teklipler** — çalt başlamaga kömek etmek üçin söhbet interfeýsinde görkezilýän öňünden ýazylan promptlar
 
-## Agent saýlaýja girmek
+## Agent saýlaýja girmek {#accessing-the-agent-picker}
 
 1. WordPress admin gapdal panelinde **Gratis AI Agent** panelini açyň.
 2. Söhbet sözbaşysynyň ýokarky çepindäki **agent nyşanyna** basyň (nyşan işjeň agente görä üýtgeýär).
@@ -24,9 +24,9 @@ Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 
 Şeýle hem gepleşigiň ortasynda agentleri çalşyp bilersiňiz — täze agentiň system prompt-y indiki habardan başlap güýje girýär.
 
-## Bäş sany içinde bar bolan agent
+## Bäş sany içinde bar bolan agent {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Üns merkezi:** Ýazgylary, sahypalary we aragatnaşyk formalaryny döretmek we redaktirlemek.
 
@@ -47,7 +47,7 @@ Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Üns merkezi:** Bir prompt-dan başlap doly websaýt döretmek.
 
@@ -70,7 +70,7 @@ Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Üns merkezi:** Wizual şahsylaşdyrma — reňkler, tipografiýa, CSS we blok nagyşlary.
 
@@ -87,7 +87,7 @@ Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 - *Baş sahypanyň skrinşotyny al we nämeleri gowulandyrjakdygyňy aýt.*
 - *Doly giňlikdäki fon suraty we merkezleşdirilen sözbaşy bilen gaýtadan ulanyp bolýan hero blok nagyşyny döret.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Üns merkezi:** WordPress pluginlerini tapmak, gurnamak we dolandyrmak.
 
@@ -105,7 +105,7 @@ Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Üns merkezi:** Saýt mazmuny, sazlamalar we WordPress konfigurasiýasy baradaky soraglara jogap bermek.
 
@@ -124,7 +124,7 @@ Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 
 ---
 
-## Superdav awtomatlaşdyryş integrasiýalary
+## Superdav awtomatlaşdyryş integrasiýalary {#superdav-automation-integrations}
 
 Superdav AI Agent v1.18.0 integrasiýalary sazlananda, içindäki agentler has howpsuz, tertipnama habarly awtomatlaşdyryş iş akymlaryna gatnaşyp biler:
 
@@ -138,11 +138,11 @@ Maslahat berilýän iş akymy: agentden habary ýa-da hereketi taýýarlamagy so
 
 ---
 
-## Agentleri özleşdirmek
+## Agentleri özleşdirmek {#customising-agents}
 
 Her bir içindäki agent `gratis_ai_agent_agents` filter arkaly giňeldilip ýa-da çalşyrylyp bilner.
 
-### Bar bolan agente ýörite ulgam görkezmesini goşmak
+### Bar bolan agente ýörite ulgam görkezmesini goşmak {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Täze agenti hasaba almak
+### Täze agenti hasaba almak {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Täze agent filter işledilenden soň derrew Agent saýlaýjyda peýda bolýar.
 
-### Içindäki agenti aýyrmak
+### Içindäki agenti aýyrmak {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

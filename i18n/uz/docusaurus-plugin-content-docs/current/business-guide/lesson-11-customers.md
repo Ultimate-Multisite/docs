@@ -3,15 +3,15 @@ title: '11-dars: Mijozlarni topish'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# 11-dars: Mijozlarni topish
+# 11-dars: Mijozlarni topish {#lesson-11-finding-customers}
 
 Mijozlarsiz ajoyib platforma shunchaki sevimli mashg‘ulotdir. Bu dars niche vertikalda mijozlarni qanday jalb qilishni qamrab oladi -- aynan bitta sohaga e’tibor qaratganingiz uchun ishlaydigan strategiyalar.
 
-## Qayerda to‘xtagan edik
+## Qayerda to‘xtagan edik {#where-we-left-off}
 
 FitSite ishga tushdi. Endi fitness studiya egalariga uni topish va ro‘yxatdan o‘tish kerak.
 
-## Niche jalb qilish nega boshqacha
+## Niche jalb qilish nega boshqacha {#why-niche-acquisition-is-different}
 
 Hammaga sotganingizda, shovqinli bozorda e’tibor uchun raqobatlashasiz. Nichega sotganingizda esa afzalliklarga ega bo‘lasiz:
 
@@ -19,17 +19,17 @@ Hammaga sotganingizda, shovqinli bozorda e’tibor uchun raqobatlashasiz. Nicheg
 - **Xabaringiz darhol mos tushadi** -- "fitness studiyalar uchun veb-saytlar" gym egasini skroll qilishdan to‘xtatadi
 - **Tavsiyalar kuchayib boradi** -- fitness studiya egalari boshqa fitness studiya egalarini bilishadi
 
-## 1-kanal: Bevosita murojaat
+## 1-kanal: Bevosita murojaat {#channel-1-direct-outreach}
 
 Birinchi mijozlaringizga eng tez yo‘l — bevosita, shaxsiy murojaatdir.
 
-### Potensial mijozlarni toping
+### Potensial mijozlarni toping {#find-prospects}
 
 - Hududingizdagi fitness studiyalar, gym zallari va shaxsiy trenerlarni Google Maps orqali qidiring
 - Ularning joriy veb-saytlariga kiring (yoki ularda veb-sayt yo‘qligini qayd eting)
 - Ularning Google Business profillari yoki ijtimoiy tarmoqlaridan aloqa ma’lumotlarini to‘plang
 
-### Ularning hozirgi holatini baholang
+### Ularning hozirgi holatini baholang {#evaluate-their-current-situation}
 
 Har bir potensial mijoz uchun quyidagilarni qayd eting:
 
@@ -37,7 +37,7 @@ Har bir potensial mijoz uchun quyidagilarni qayd eting:
 - **Yomon veb-sayt**: Kuchli potensial mijoz -- ularga yaxshiroq variant qanday ko‘rinishini ko‘rsating
 - **Yaxshi veb-sayt**: Zaif potensial mijoz -- ular bu muammoni allaqachon hal qilgan
 
-### Aloqaga chiqing
+### Aloqaga chiqing {#make-contact}
 
 Shaxsiylashtirilgan email yoki xabar yuboring:
 
@@ -48,7 +48,7 @@ Shaxsiylashtirilgan email yoki xabar yuboring:
 
 Ommaviy emaillar yubormang. Yaxshi o‘rganilgan 20 ta potensial mijozga shaxsiylashtirilgan murojaat 2 000 kishiga yuborilgan umumiy xabardan yaxshiroq natija beradi.
 
-## 2-kanal: Niche hamjamiyatlar
+## 2-kanal: Niche hamjamiyatlar {#channel-2-niche-communities}
 
 Fitness studiya egalari internetda muayyan joylarda to‘planishadi:
 
@@ -57,7 +57,7 @@ Fitness studiya egalari internetda muayyan joylarda to‘planishadi:
 - **Soha forumlari** va muhokama doskalari
 - Fitness mutaxassislari uchun **LinkedIn guruhlari**
 
-### Qanday ishtirok etish kerak
+### Qanday ishtirok etish kerak {#how-to-participate}
 
 Guruhga qo‘shiliboq darhol mahsulotingizni taklif qilmang. Buning o‘rniga:
 
@@ -66,7 +66,7 @@ Guruhga qo‘shiliboq darhol mahsulotingizni taklif qilmang. Buning o‘rniga:
 3. **Mos kelganda ulashing** -- kimdir veb-saytlar haqida so‘raganda, platformangizni tabiiy tarzda ulashing
 4. **Foydali kontent yarating** -- "ajoyib fitness studiya veb-saytini nima yaratadi" haqida postlar yozing, ular tabiiy ravishda platformangizga olib borsin
 
-## 3-kanal: Kontent marketing
+## 3-kanal: Kontent marketing {#channel-3-content-marketing}
 
 Fitness studiya egalari qidiradigan kontent yarating:
 
@@ -77,7 +77,7 @@ Fitness studiya egalari qidiradigan kontent yarating:
 
 Buni FitSite marketing blogingizda e’lon qiling. Vaqt o‘tishi bilan bu kontent qidiruv tizimlarida yuqori o‘rin oladi va siz taklif qilayotgan narsani faol izlayotgan odamlardan organik trafik olib keladi.
 
-## 4-kanal: Hamkorliklar
+## 4-kanal: Hamkorliklar {#channel-4-partnerships}
 
 Fitness studiyalarga allaqachon xizmat ko‘rsatayotgan bizneslar bilan hamkorlik qiling:
 
@@ -88,7 +88,7 @@ Fitness studiyalarga allaqachon xizmat ko‘rsatayotgan bizneslar bilan hamkorli
 
 Tavsiya komissiyalari yoki o‘zaro reklama taklif qiling. [AffiliateWP addon](/addons/affiliatewp) rasmiy tavsiya dasturini yo‘lga qo‘yishingizga yordam berishi mumkin.
 
-## 5-kanal: Soha tadbirlari
+## 5-kanal: Soha tadbirlari {#channel-5-industry-events}
 
 Fitness sohasi tadbirlari sizni yuzlab potensial mijozlar oldiga olib chiqadi:
 
@@ -99,7 +99,7 @@ Fitness sohasi tadbirlari sizni yuzlab potensial mijozlar oldiga olib chiqadi:
 
 Katta byudjet kerak emas. Hatto ishtirokchi sifatida qatnashib, nima qilishingiz haqida suhbatlar o‘tkazish ham leadlar yaratishi mumkin.
 
-## 6-kanal: Showcase saytlar
+## 6-kanal: Showcase saytlar {#channel-6-showcase-sites}
 
 Eng yaxshi marketingingiz — mavjud mijozlaringizning saytlari. Ruxsat bilan:
 
@@ -108,7 +108,7 @@ Eng yaxshi marketingingiz — mavjud mijozlaringizning saytlari. Ruxsat bilan:
 - Mamnun mijozlardan fikr-mulohazalar so‘rang
 - Mijozlarni ularning veb-sayti haqida so‘ralganda FitSite ni tilga olishga undang
 
-## Tavsiya dasturini sozlash
+## Tavsiya dasturini sozlash {#setting-up-a-referral-program}
 
 Nicheda og‘zaki tavsiya eng kuchli kanalingizdir. Uni rasmiylashtiring:
 
@@ -116,7 +116,7 @@ Nicheda og‘zaki tavsiya eng kuchli kanalingizdir. Uni rasmiylashtiring:
 2. Mavjud mijozlarga tavsiyalar uchun mukofot taklif qiling (bir oy bepul, account krediti va hokazo)
 3. Buni oson qiling -- ularga tavsiya havolasi va yuborishlari mumkin bo‘lgan oddiy xabar bering
 
-## Nima ishlashini kuzatish
+## Nima ishlashini kuzatish {#tracking-what-works}
 
 Har bir kanal uchun quyidagilarni kuzating:
 
@@ -126,7 +126,7 @@ Har bir kanal uchun quyidagilarni kuzating:
 
 Ishlayotgan kanallarga ko‘proq e’tibor qarating. Ishlamaydigan kanallarni to‘xtating.
 
-## Realistik kutilmalar
+## Realistik kutilmalar {#realistic-expectations}
 
 - **1-3-oylar**: 5-20 mijoz, asosan bevosita murojaat va hamjamiyatlardan
 - **4-6-oylar**: 20-50 mijoz, kontent marketing hissa qo‘sha boshlaydi
@@ -134,7 +134,7 @@ Ishlayotgan kanallarga ko‘proq e’tibor qarating. Ishlamaydigan kanallarni to
 
 Bu raqamlar farq qilishi mumkin, ammo andoza izchil: dastlabki mijozlar bevosita harakatdan keladi, keyingi mijozlar esa kontent, tavsiyalar va obro‘ning jamlanma ta’siridan keladi.
 
-## Bu darsda nimalar qurdik
+## Bu darsda nimalar qurdik {#what-we-built-this-lesson}
 
 - **Oltita mijoz jalb qilish kanali** fitnes nishasiga moslashtirilgan
 - **To‘g‘ridan-to‘g‘ri murojaat qilish jarayoni** ilk mijozlarni qo‘lga kiritish uchun

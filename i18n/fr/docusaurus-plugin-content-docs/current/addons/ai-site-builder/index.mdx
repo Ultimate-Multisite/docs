@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Constructeur de site IA
+# Constructeur de site IA {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Exigences
+## Exigences {#requirements}
 
 - WordPress 5.3 or higher
 - PHP 7.4 or higher
 - Multisite Ultimate plugin (active)
 
-## Installation
+## Installation {#installation}
 
 1. Téléchargez les fichiers de l'addon dans votre répertoire `/wp-content/plugins/`
 2. Activez l'addon via le menu 'Plugins' dans WordPress
 3. Configurez les paramètres de l'addon dans l'administration réseau
 
-## Développement
+## Développement {#development}
 
-### Mise en place
+### Mise en place {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structure du projet
+### Structure du projet {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### Tests
+### Tests {#testing}
 
 L'addon inclut un cadre de test complet :
 
@@ -79,45 +79,45 @@ L'addon inclut un cadre de test complet :
 - **Couverture de test** : configuré pour suivre la couverture du code
 - **Tests multisite** : tests exécutés dans un environnement multisite
 
-## Normes de code
+## Normes de code {#code-standards}
 
 - Normes de codage WordPress : appliquées via PHPCS
 - Compatibilité PHP 7.4+ : fonctionnalités PHP modernes prises en charge
 - Analyse statique : intégration PHPStan pour la vérification de type
 - Modernisation du code : règles Rector pour les mises à jour PHP
 
-## Système de construction
+## Système de construction {#build-system}
 
 - Traitement des ressources : minification des fichiers CSS/JS
 - Traduction : génération de fichiers POT
 - Emballage : création d'archives pour la distribution
 - Mode développement : ressources non minifiées pour le débogage
 
-## Configuration
+## Configuration {#configuration}
 
 L'addon prend en charge diverses options de configuration accessibles via l'interface d'administration réseau.
 
-## Hooks et filtres
+## Hooks et filtres {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Déclenché après l'initialisation de l'addon
 - `ultimate-multisite-ai-site-builder_loaded` - Déclenché après le chargement de tous les fichiers de l'addon
 
-### Filtres
+### Filtres {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modifier les paramètres de l'addon
 - `ultimate-multisite-ai-site-builder_enabled` - Remplacer l'état d'activation/désactivation de l'addon
 
-## Licence
+## Licence {#license}
 
 Cet addon est sous licence GPL v3 ou ultérieure.
 
-## Support
+## Support {#support}
 
 Pour le support et la documentation, visitez [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## Historique des versions
+## Historique des versions {#changelog}
 
 - Version 1.0.1 (2025-09-28) : renommage du préfixe en ultimate-multisite ; mise à jour du domaine de texte ; augmentation de la version.
 - Version (2025-09-28) : renommage du préfixe en ultimate-multisite ; mise à jour du domaine de texte ; augmentation de la version.

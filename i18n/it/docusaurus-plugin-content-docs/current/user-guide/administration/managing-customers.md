@@ -3,7 +3,7 @@ title: Gestione dei clienti
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Gestione dei clienti
+# Gestione dei clienti {#managing-customers}
 
 La pagina **Customers** mostra l'elenco dei membri registrati nella tua rete. Questa pagina visualizza le informazioni di base dell'utente, tra cui nome, indirizzo email, ultimo accesso e un link **switch to** che ti consente di accedere al sottosito dell'utente come amministratore del sito.
 

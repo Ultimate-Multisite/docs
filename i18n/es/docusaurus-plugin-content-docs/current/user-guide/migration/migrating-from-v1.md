@@ -3,9 +3,9 @@ title: Migración desde V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migración desde V1
+# Migración desde V1 {#migrating-from-v1}
 
-## Ultimate Multisite ha cambiado de su familia original de versiones 1.x a la familia de versiones 2.x.
+## Ultimate Multisite ha cambiado de su familia original de versiones 1.x a la familia de versiones 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versión 2.0 y superiores es una reescritura completa del codebase, lo que significa que hay muy poco compartido entre la versión antigua y la nueva. Por ese motivo, al actualizar de 1.x a 2.x, tus datos deberán migrarse a un formato que las nuevas versiones puedan entender.
 
@@ -15,7 +15,7 @@ Esta lección cubre cómo funciona el migrador, qué hacer en casos de fallo y c
 
 _**IMPORTANTE: Antes de comenzar a actualizar de la versión 1.x a la versión 2.0, asegúrate de crear una copia de seguridad de la base de datos de tu sitio**_
 
-## Primeros pasos
+## Primeros pasos {#first-steps}
 
 El primer paso es descargar el archivo .zip del plugin e instalar la versión 2.0 en el Dashboard de administración de tu red.
 
@@ -51,7 +51,7 @@ Tras la activación de la licencia, puedes comenzar la instalación real haciend
 
 <!-- Captura de pantalla no disponible: Página de instalación que muestra lo que se actualizará con botón Install -->
 
-## Ahora, la migración
+## Ahora, la migración {#now-the-migration}
 
 El migrador tiene una función de seguridad integrada en la que comprobará todo tu multisite para asegurarse de que todos tus datos de Ultimate Multisite puedan migrarse sin problemas. Haz clic en el botón **Run Check** para iniciar el proceso.
 
@@ -59,13 +59,13 @@ El migrador tiene una función de seguridad integrada en la que comprobará todo
 
 Después de ejecutar la comprobación, tienes dos posibilidades: el resultado puede ser **con** un error o **sin un error**.
 
-### Con error
+### Con error {#with-error}
 
 Si recibes un mensaje de error, tendrás que ponerte en contacto con nuestro equipo de soporte para que puedan ayudarte a corregir el error. Asegúrate de **proporcionar el registro de errores** cuando crees un ticket. Puedes descargar el registro o hacer clic en el enlace que dice contactar con nuestro equipo de soporte. Abrirá el widget de ayuda en el lado derecho de tu página con los campos precompletados para ti, que incluyen los registros de error en la descripción.
 
 _**Dado que el sistema encontró un error, no podrás continuar con la migración a la versión 2.0. Luego puedes volver a la versión 1.x para reanudar la ejecución de tu red hasta que se corrija el error.**_
 
-### Sin error
+### Sin error {#without-error}
 
 Si el sistema no encuentra ningún error, verás un mensaje de éxito y un botón **Migrate** en la parte inferior que te permitirá continuar con la migración. En esta página, se te recordará crear una copia de seguridad de tu base de datos antes de continuar, lo cual recomendamos encarecidamente. Pulsa **Migrate** si ya tienes una copia de seguridad.
 

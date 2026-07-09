@@ -3,19 +3,19 @@ title: Fanomanana ny Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Fanamboana ny Gateway Stripe (v2)
+# Fanamboana ny Gateway Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**FANAMARI-MANA: Ity lahatsoratra ity dia manondro ny Ultimate Multisite version 2.x.**_
 
 Afaka mampandeha fomba fandoavam-bola hatramin'ny efatra amin'ireo fomba fandoavam-bola azo atao ao amin'ny pejy fandrindrana fandoavam-bola (payment settings) dia Stripe, Stripe Checkout, PayPal ary Manokana. Amin'ity lahatsoratra ity, ho jerena ny fomba hampifandraisana amin'ny **Stripe**.
 
-## Famahana ny Stripe
+## Famahana ny Stripe {#enabling-stripe}
 
 Mba hanombohana ny Stripe ho fitaovana fandoavam-bola azo ampiasaina eo amin'ny tambajotranareo, dia mandehin'ny **Ultimate Multisite > Settings > Payments** ary tsindrio ilay toggle eo anilany hoe **Stripe** na **Stripe Checkout** ao amin'ny faritra Active Payment Gateways.
 
 ![Famahana ny Stripe ao amin'ny fitaovana fandoavam-bola mavitrika](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Ity fomba ity dia haneho toerana ahafahanao manampy ny laharan-tarika (credit card number) mandritra ny famakiana (checkout).
 
@@ -47,7 +47,7 @@ Ataovy ao amin'ny **Publishable key** sy **Secret key**, avy ao amin'ilay lafiny
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Fametrahana Webhook an'ny Stripe
+## Fametrahana Webhook an'ny Stripe {#setting-up-stripe-webhook}
 
 Ny webhook dia alefa avy amin'ny Stripe izay manambara ny Ultimate Multisite rehefa misy zava-nitranga eo amin'ny **kaontinao ao amin'ny stripe**.
 

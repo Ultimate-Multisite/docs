@@ -3,11 +3,11 @@ title: WP-CLI-reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI-reference
+# WP-CLI-reference {#wp-cli-reference}
 
 Gratis AI Agent leveres med en `wp gratis-ai-agent`-kommandofamilie til benchmarking af agenten, håndtering af evner og forespørgsel på agentstatus fra kommandolinjen. Alle kommandoer kræver WP-CLI 2.0 eller nyere.
 
-## Installation
+## Installation {#installation}
 
 WP-CLI-kommandoerne registreres automatisk, når pluginet er aktivt. Bekræft med:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Kører Agent Capabilities benchmark-suiten — et sæt komplekse prompts i flere trin, der afprøver hele evnefladen. Brug dette til at evaluere modelydelse, sammenligne AI-udbydere eller validere evnepakker, før de udrulles til produktion.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Valgmuligheder
+### Valgmuligheder {#options}
 
 | Valgmulighed | Beskrivelse |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Outputformat: `table` (standard), `json`, `csv` |
 | `--save` | Gem benchmark-resultaterne i databasen til historisk sammenligning |
 
-### Eksempler
+### Eksempler {#examples}
 
 Kør den fulde benchmark-suite med den aktuelle udbyder og model:
 
@@ -57,7 +57,7 @@ Kør mod en bestemt model, og gem resultater:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 Benchmarken outputter én række pr. spørgsmål med følgende kolonner:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark-spørgsmål
+### Benchmark-spørgsmål {#benchmark-questions}
 
 Standardsuiten inkluderer:
 
@@ -95,11 +95,11 @@ Yderligere spørgsmål kan registreres via filteret `gratis_ai_agent_benchmark_q
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Håndterer installerede evner og evnepakker.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Viser alle registrerede evner, deres kilde (kerne eller pakke) og deres aktuelle status.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Downloader og aktiverer en evnepakke fra registreringsdatabasen.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Deaktiverer en bestemt evne uden at fjerne pakken. Nyttigt til at begrænse agentens omfang på et givet site.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Genaktiverer en tidligere deaktiveret evne.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Viser den aktuelle agentkonfiguration og forbindelsesstatus.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Viser seneste agentaktivitet fra debug-loggen.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Nulstiller agenttilstand: rydder injiceret CSS, fjerner agent-registrerede CPT'er og taksonomier, nulstiller globale styles og tømmer agentens options-cache. Fjerner ikke plugin eller dets indstillinger.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 Alle kommandoer afsluttes med `0` ved succes. Ikke-nul exit codes:
 

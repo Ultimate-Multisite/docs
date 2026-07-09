@@ -3,11 +3,11 @@ title: Multitenantui izoliacija
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolavimas tarpukų (Multi-Tenancy Isolation)
+# Izolavimas tarpukų (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 palaiko bazos duomenų ir sistemos failų izolinavimą po subsite'ui, suteikiant suverbiai klientams. Tai užtikrina, kad klientų duomenys būtų atskirti, priedendo同时 tinklo lygio paslaugų, paskirstymo ir administravimo.
 
-## Izolinavimo strategija
+## Izolinavimo strategija {#isolation-strategy}
 
 Naudokite suverbiają izolinavimą klientams, kuriems reikalinga stipresnė duomenų atskirstymas, skirtas sistemos failų saugumas ar atskiltas hosto granija.
 
@@ -18,7 +18,7 @@ Kiekiam suverbiai klientui turėtų būti:
 - Subsite'o registras įrašas, kuris nurodo subsite'ą su jo bazės duomenimis, šakų pakuotės (root path), hostname ir izolinavimo modeliu.
 - Migracijos patvirtinimo rezultatas prieš tai, kol subsite'as bus veikti.
 
-## Bazos hosto ryšymas (Database host binding)
+## Bazos hosto ryšymas (Database host binding) {#database-host-binding}
 
 Versija 1.2.0 keičia pagrindinį „tinkamas į vieną mašiną“ hosto ryšymo elgesį suverbiai instalacijoms. Viename mašinoje reikšmiai, pabaigiamai `localhost`, yra normalizuojami taip, kad Bedrock, FrankenPHP ir kontainerizuoti WordPress instalacijos galėtų suteikti ir patvirtinti įgaliojimus prieš hosto stringą MySQL iš tikrai matomą.
 
@@ -31,11 +31,11 @@ Kai konfigūruojate suverbiają klientą:
 
 Jei patvirtinimas rodo teisingumo klaidas (grant failures), padykite subsite'o DB vartotojų įgaliojimus su konfigūruotu hosto ryšimu. Vartotojas, kuriam suteikiama įgaliojimas `user@localhost`, yra skirtas `user@127.0.0.1` arba `user@%`.
 
-## Sistemos failų šaka (Filesystem root)
+## Sistemos failų šaka (Filesystem root) {#filesystem-root}
 
 Taikantė rootis turi būti stabilus per restartą ir deploy'as. Jei galite, vengite naudojami temporinius mount paths. Bedrock stiliai instalacijose patikrinkite, kad tenant rootis nurodytų į WordPress web root, kurį tikisi tenant bootstrapui, o ne tik į projektų rootį.
 
-## Įrengimo tvarkos kampaņa (Provisioning order)
+## Įrengimo tvarkos kampaņa (Provisioning order) {#provisioning-order}
 
 Nauji suvereniniai klientai naudojant šią tvarką:
 
@@ -49,7 +49,7 @@ Nauji suvereniniai klientai naudojant šią tvarką:
 
 Ši tvarka užtikrina, kad neįtraukties tenantai negaudėtų trafiko, kol duomenų bazės rašytojas, vartotojai ir fizinė sistema bus pasirengę.
 
-## Suvereniniai klientų valdymas (Sovereign customer management flows)
+## Suvereniniai klientų valdymas (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0, kai įjungtas suvereninis režimas, laiko klientų valdymą vykdo ant pagrindinio svetainės. Tenantas vis tiek gali veikti kaip izoliuotas WordPress instalacija, bet klientams skirtos veiksmos, kurios priklauso nuo tinklo paskirstymo (billing), nuskaitų ar bendro skaitmenų duomenų, turėtų atsiliekti į pagrindinę svetainę, o ne binti veiksmą tiesiogiai mobinimo laiku.
 

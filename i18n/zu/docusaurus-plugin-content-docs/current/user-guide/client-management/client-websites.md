@@ -3,7 +3,7 @@ title: Amawebhusayithi Amaklayenti
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Amawebhusayithi Ekhasimende Lakho (v2)
+# Amawebhusayithi Ekhasimende Lakho (v2) {#your-clients-websites-v2}
 
 Ngemva kokubhalisa kunethiwekhi yakho, amakhasimende akho angakwazi ukufinyelela ku-Dashboard yawo.
 

@@ -3,13 +3,13 @@ title: Aika Imel da Watsa Saƙonni
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Aika Emails da Broadcasts (v2)
+# Aika Emails da Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**MUHIMMIN BAYANI: Wannan labarin yana nufin Ultimate Multisite sigar 2.x.**_
 
 Ultimate Multisite yana zuwa da fasali da zai ba ka damar sadarwa da abokan cinikinka ta hanyar aika email zuwa mai amfani da aka nufa ko rukunin masu amfani, haka kuma aika sanarwa a admin dashboard dinsu don watsa sanarwa
 
-## Ƙara admin notices zuwa dashboard na abokan cinikinka da Broadcasts
+## Ƙara admin notices zuwa dashboard na abokan cinikinka da Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ta amfani da fasalin broadcast na Ultimate Multisite, za ka iya ƙara **admin notices** zuwa subsite admin dashboard na mai amfani.
 
@@ -51,7 +51,7 @@ Bayan ƙirƙirar saƙonka, za ka iya danna maɓallin **Send**.
 
 Kuma shi ke nan. Ya kamata admin notice ya bayyana nan take a dashboard na mai amfani.
 
-## Aika emails zuwa abokan cinikinka
+## Aika emails zuwa abokan cinikinka {#send-emails-to-your-customers}
 
 Ta amfani da fasalin broadcast na Ultimate Multisite, za ka iya aika email zuwa masu amfani. Kana da zaɓi na aika email ɗin kawai zuwa takamaiman masu amfani ko nufar takamaiman rukunin masu amfani bisa samfur ko plan da suka yi rajista a ƙarƙashinsa.
 
@@ -81,11 +81,11 @@ Bayan ƙirƙirar saƙonka, za ka iya danna maɓallin **Send**.
 
 Kuma haka sauƙi yake wajen aika email zuwa end-users ɗinka ta amfani da fasalin broadcast.
 
-## Emails na tsarin
+## Emails na tsarin {#system-emails}
 
 Emails na tsarin a cikin Ultimate Multisite su ne **sanarwar atomatik** da tsarin yake aikawa bayan wasu ayyuka kamar rajista, biyan kuɗi, domain mapping, da sauransu. Ana iya gyara ko sauya waɗannan emails daga settings na Ultimate Multisite. Hakanan yana zuwa da fasali da zai ba ka damar reset da import settings da suke akwai daga wani shigarwar Ultimate Multisite.
 
-### Resetting & Importing
+### Resetting & Importing {#resetting--importing}
 
 Sabbin sigogin Ultimate Multisite, da kuma add-ons, za su iya kuma za su yi rajistar sabbin emails lokaci zuwa lokaci.
 
@@ -93,7 +93,7 @@ Don hana rikice-rikice da sauran matsaloli, **ba za mu ƙara sabbin email templa
 
 Duk da haka, super admins da agents za su iya import waɗannan emails da aka yi rajista kwanan nan ta hanyar kayan aikin importer. Wannan tsarin zai ƙirƙiri sabon system email tare da abun ciki da configuration na sabon email template, yana ba super admin damar yin duk wani gyare-gyaren da yake so ko barinsu kamar yadda suke.
 
-#### Yadda ake import system emails
+#### Yadda ake import system emails {#how-to-import-system-emails}
 
 Je zuwa shafin Settings na Ultimate Multisite ɗinka kuma ka tafi zuwa tab na **Emails**.
 
@@ -111,7 +111,7 @@ Sannan, za ka iya kunna zaɓuɓɓukan Import Emails don ganin waɗanne system em
 
 <!-- Ba a samu hoton allo ba: modal na Reset and Import tare da zaɓuɓɓukan Import Emails a buɗe -->
 
-#### Sake saita saƙonnin imel na tsarin
+#### Sake saita saƙonnin imel na tsarin {#reseting-system-emails}
 
 Wasu lokuta, za ka lura cewa canje-canjen da ka yi wa wani samfurin imel ba sa ƙara yi maka aiki, kuma kana son sake saita shi zuwa **yanayin tsoho**.
 

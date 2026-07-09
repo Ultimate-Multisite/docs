@@ -3,7 +3,7 @@ title: Dziennik zmian AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Dziennik zmian AffiliateWP
+# Dziennik zmian AffiliateWP {#affiliatewp-changelog}
 
 Wersja: 2.0.1 - Wydano 2025-09-28
 

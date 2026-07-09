@@ -3,11 +3,11 @@ title: Utengaji wa Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Kutengan kwa Wateja Wengi (Multi-Tenancy Isolation)
+# Kutengan kwa Wateja Wengi (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inasaidia kutenga database na mfumo wa faili kwa kila subsiti ili wateja wakowe huru kabisa. Hii inahakikisha data ya mteja yamehifadhiwa tofauti huku ikihifadhi uwezo wa kuandaa mtandao, malipo, na usimamizi.
 
-## Mkakati wa Kutenganisha (Isolation strategy)
+## Mkakati wa Kutenganisha (Isolation strategy) {#isolation-strategy}
 
 Tumia kutenganisha kwa wateja wanaohitaji utenganishaji mkubwa zaidi wa data, kuhifadhi la mfumo tofauti wa faili, au mipaka ya seva tofauti.
 
@@ -18,7 +18,7 @@ Kila mteja huru (sovereign tenant) inapaswa kuwa na:
 - Rekodi ya kumbukumbu ya mteja inayohusisha tovuti hiyo na database yake, njia kuu (root path), jina la seva (hostname), na mfumo wa kutenganisha.
 - Matokeo ya uthibitishaji wa uhamisho (migration verification result) kabla ya mteja kuhesabiwa kuwa hai.
 
-## Kuunganisha Mwenendo wa Database Host (Database host binding)
+## Kuunganisha Mwenendo wa Database Host (Database host binding) {#database-host-binding}
 
 Toleo la 1.2.0 limebadilisha tabia ya awali ya kuunganisha kwenye seva moja kwa seva (same-machine host binding) kwa usakinishaji wa sovereign. Thamani kama `localhost` inafanywa sawa ili Bedrock, FrankenPHP, na usakinishaji wa WordPress unaotumia containeri wa PHP waweze kutoa na kuthibitisha ruhusa dhidi ya string ya host ambayo MySQL inayoona kweli.
 
@@ -31,11 +31,11 @@ Unapoweka mipangilio kwa mteja huru:
 
 Ikiwa ripoti za uthibitishaji zinaonyesha kushindwa la kutoa ruhusa, soma upya ruhusa za mtumiaji kwenye database ya mteja na uunganisho uliowekwa wa host. Mtumiaji aliyepokea ruhusa kwa `user@localhost` ni tofauti na `user@127.0.0.1` au `user@%`.
 
-## Mfumo wa Faili Mzizi (Filesystem root)
+## Mfumo wa Faili Mzizi (Filesystem root) {#filesystem-root}
 
 Mroot ya mteja inapaswa kuwa imara baada ya kuwasha na kuweka upya (restarts) na kuweka (deployments). Epuka kutumia njia za kuweka muda mfupi (temporary mount paths). Kwa maelezo kama ya Bedrock, hakikisha mroot wa mteja unashikilia kwenye web root ya WordPress inayotarajiwa na tenant bootstrap, si tu mroot wa mradi.
 
-## Mpangilio wa kuweka (Provisioning order)
+## Mpangilio wa kuweka (Provisioning order) {#provisioning-order}
 
 Kwa wateja wapya wa kipaumbele (sovereign tenants), tumia mpangilio huu:
 
@@ -49,7 +49,7 @@ Kwa wateja wapya wa kipaumbele (sovereign tenants), tumia mpangilio huu:
 
 Mpangilio huu unazuia wateja ambao bado hawajatenganishwa kikamilifu kupokea trafiki kabla ya mwandishi wa database, watumiaji, na mfumo wa faili kuwa tayari.
 
-## Milango ya usimamizi wa wateja wa kipaumbele (Sovereign customer management flows)
+## Milango ya usimamizi wa wateja wa kipaumbele (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 inahifadhi vitendo vya usimamizi wa mteja kwenye tovuti kuu wakati hali ya sovereign mode imewashwa. Mteja bado anaweza kufanya kama install ya WordPress iliyotenganishwa, lakini vitendo vinavyohusu wateja vinavyotegemea malipo ya mtandao (network billing), uanachama (membership), au data ya akaunti ya pamoja yanapaswa kupeleka mteja kwenye tovuti kuu badala ya kujaribu kukamilisha kitendo hicho ndani ya wakati wa utendaji (runtime) wa mteja.
 

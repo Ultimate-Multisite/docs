@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Gemete Planne
+# Gemete Planne {#metered-plans}
 
 Die Ultimate Multisite: Gemete Planne-byvoeging verander hoe jy jou kliënte faktureer deur buigsame gemete fakturering-vermoëns bekend te stel. In plaas van rigiede harde limiete wat gebruikers blokkeer wanneer dit oorskry word, aktiveer oorskrydingskoste wat kliënte outomaties vir bykomende gebruik faktureer.
 
-## Sleutelkenmerke
+## Sleutelkenmerke {#key-features}
 
 * **Gemete Fakturering**: Hef kliënte op grond van werklike gebruik eerder as vaste vlakke
 * **Oorskrydingsbestuur**: Faktureer outomaties vir gebruik wat planlimiete oorskry
@@ -21,14 +21,14 @@ Die Ultimate Multisite: Gemete Planne-byvoeging verander hoe jy jou kliënte fak
 * **Outomatiese Fakturering**: Genereer fakture outomaties wanneer gebruiksdrempels oorskry word
 * **Gebruiksverslae**: Gedetailleerde gebruiksanalitika en verslagdoening vir kliënte en administrateurs
 
-## Perfek Vir
+## Perfek Vir {#perfect-for}
 
 * **Gasheerverskaffers**: Bied skaleerbare planne wat saam met kliënte se behoeftes groei
 * **SaaS-platforms**: Faktureer op grond van werklike hulpbronverbruik
 * **Agentskapnetwerke**: Buigsame prysmodelle vir kliëntprojekte
 * **Herverkoper-gasheerdiens**: Stel vennote in staat om gebruiksgebaseerde pryse aan te bied
 
-## Hoe Dit Werk
+## Hoe Dit Werk {#how-it-works}
 
 1. Konfigureer gemete hulpbronne (skyfspasie, bandwydte, aantal werwe, ens.)
 2. Stel basisplanlimiete en oorskrydingstariewe
@@ -37,13 +37,13 @@ Die Ultimate Multisite: Gemete Planne-byvoeging verander hoe jy jou kliënte fak
 5. Fakture word outomaties gegenereer op grond van die faktureringsiklus
 6. Kliënte kan hul gebruik en komende koste intyds sien
 
-## AI-tokenfakturering
+## AI-tokenfakturering {#ai-token-billing}
 
 Weergawe 1.1.0 voeg AI-tokenfakturering by vir netwerke wat AI-kenmerke deur die WordPress AI Client SDK aanbied. Gemete Planne luister vir voltooide AI-genereringsversoeke, teken invoer- en uitvoertokengetalle vir die huidige subwerf aan, en skakel daardie tokens om in faktureerbare AI-besteding vir die kliënt se huidige faktureringstydperk.
 
 Gebruik AI-tokenfakturering wanneer jy AI-gereedskap op kliënte se werwe wil aanbied sonder om onvoorspelbare modelkoste te absorbeer. Elke versoek word aan die subwerf, kliënt, lidmaatskap, verskaffer en model toegeskryf sodat administrateurs gebruik kan oudit terwyl kliënte kan sien hoe hul AI-verbruik hul Account beïnvloed.
 
-### Konfigureer Tariewe Per Token
+### Konfigureer Tariewe Per Token {#configure-per-token-rates}
 
 AI-tariewe word per model as afsonderlike invoer- en uitvoertariewe gekonfigureer. Tariewe word per 1 miljoen tokens bereken, wat ooreenstem met algemene AI-verskaffers se prysbladsye.
 
@@ -55,7 +55,7 @@ AI-tariewe word per model as afsonderlike invoer- en uitvoertariewe gekonfiguree
 
 Wanneer ’n presiese model-ID nie gekonfigureer is nie, kan Gemete Planne volgens modelvoorvoegsel pas. Byvoorbeeld, ’n tarief wat vir `claude-sonnet-4` gekonfigureer is, kan van toepassing wees op model-ID's met tydstempels wat met daardie voorvoegsel begin. Ontwikkelaars kan ook die finale tarieftabel met die [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates)-filter aanpas.
 
-### Ondersteunde AI-koppelaars
+### Ondersteunde AI-koppelaars {#supported-ai-connectors}
 
 AI-tokenfakturering werk met koppelaars wat WordPress AI Client SDK-genereringsgebeurtenisse uitstuur en tokengebruik in die reaksie-metadata insluit. Dit sluit die Ultimate Multisite AI-koppelaarfamilie in wat hier gedokumenteer word:
 
@@ -65,13 +65,13 @@ AI-tokenfakturering werk met koppelaars wat WordPress AI Client SDK-genereringsg
 
 Pasgemaakte koppelaars kan deelneem deur die standaard `wp_ai_client_before_generate_result`- en `wp_ai_client_after_generate_result`-gebeurtenisse met model-, verskaffer- en tokengebruik-metadata te aktiveer. Koppelaarinstellings word vanaf die hoofwerf na subwerwe afgedwing sodat kliënte se werwe die netwerkgoedgekeurde verskaffers en limiete gebruik.
 
-### Kliënt se Account-gebruik
+### Kliënt se Account-gebruik {#customer-account-usage}
 
 Kliënte sien AI-gebruik saam met hul ander gemete hulpbronne in hul Account-area. Die AI-bestedingry wys die huidige totaal vir die faktureringstydperk, afgelei van aangetekende prompt- en voltooiingstokens, die gekonfigureerde modeltariewe en enige ingeslote toelaag op die plan.
 
 As ’n kliënt ’n betaalmetode op lêer het, word gebruik bo die ingeslote toelaag as faktureerbare oorskryding hanteer. As die plan vir ’n harde afsnypunt gekonfigureer is en die kliënt geen betaalmetode beskikbaar het nie, kan AI-versoeke geblokkeer word sodra die toelaag bereik is, en die kliënt word gevra om betalingsbesonderhede by te voeg voordat hulle voortgaan.
 
-## Ondersteunde Hulpbronne
+## Ondersteunde Hulpbronne {#supported-resources}
 
 * Skyfberging
 * Bandwydte/Data-oordrag
@@ -80,13 +80,13 @@ As ’n kliënt ’n betaalmetode op lêer het, word gebruik bo die ingeslote to
 * AI-tokengebruik en AI-besteding
 * Pasgemaakte hulpbrontipes
 
-## Vereistes
+## Vereistes {#requirements}
 
 * Multisite Ultimate 2.0.0 of hoër
 * WordPress Multisite-installasie
 * PHP 7.4 of hoër
 
-## Installasie
+## Installasie {#installation}
 
 1. Laai die pluginlêers op na `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Aktiveer die plugin deur die 'Plugins'-skerm in WordPress
@@ -94,24 +94,24 @@ As ’n kliënt ’n betaalmetode op lêer het, word gebruik bo die ingeslote to
 4. Konfigureer jou gemete hulpbronne en pryse
 5. Aktiveer gemete fakturering vir produkte in die produkredigeerder
 
-## Gereelde Vrae
+## Gereelde Vrae {#frequently-asked-questions}
 
-## Wat gebeur wanneer ’n kliënt hul limiet oorskry?
+## Wat gebeur wanneer ’n kliënt hul limiet oorskry? {#what-happens-when-a-customer-exceeds-their-limit}
 
 In plaas daarvan om toegang te blokkeer, volg die stelsel die oorskryding en voeg dit by hul volgende faktuur op grond van die tariewe wat jy gekonfigureer het.
 
-## Kan ek verskillende oorskrydingstariewe vir verskillende produkte stel?
+## Kan ek verskillende oorskrydingstariewe vir verskillende produkte stel? {#can-i-set-different-overage-rates-for-different-products}
 
 Ja, elke produk kan unieke gemete hulpbronne en oorskrydingspryse hê.
 
-## Hoe word kliënte oor gebruik in kennis gestel?
+## Hoe word kliënte oor gebruik in kennis gestel? {#how-are-customers-notified-about-usage}
 
 Kliënte kan hul huidige gebruik in hul Dashboard sien en opsionele kennisgewings ontvang wanneer hulle limiete nader of oorskry.
 
-## Hoe word AI-tokengebruik geprys?
+## Hoe word AI-tokengebruik geprys? {#how-is-ai-token-usage-priced}
 
 AI-tokengebruik word geprys uit die model se gekonfigureerde invoer- en uitvoertariewe per 1 miljoen tokens. Gemete Planne vermenigvuldig elke versoek se prompt- en voltooiingstokengetalle met daardie tariewe, voeg die resultaat by die kliënt se huidige AI-besteding vir die faktureringstydperk, en pas die plan se toelaag- of oorskrydingsreëls toe.
 
-## Kan ek steeds harde limiete gebruik?
+## Kan ek steeds harde limiete gebruik? {#can-i-still-use-hard-limits}
 
 Ja, gemete fakturering is opsioneel per produk. Jy kan tradisionele produkte met harde limiete met gemete produkte meng.

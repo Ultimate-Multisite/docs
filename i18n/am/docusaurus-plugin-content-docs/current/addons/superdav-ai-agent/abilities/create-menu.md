@@ -3,15 +3,15 @@ title: ምናሌ ፍጠር
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# ምናሌ ይፍጠሩ (Create Menu)
+# ምናሌ ይፍጠሩ (Create Menu) {#create-menu}
 
 የ**ምናሌ መፍጠር** ችሎታ የWordPress የ navigation ምናሌዎችን የመፍጠር አቅም ሲሆን፣ ከየገጽ ርዕሶች የተለየ የ navigation መለያዎችን (navigation labels) ድጋፍ ይሰጣል።
 
-## አጠቃላይ እይታ (Overview)
+## አጠቃላይ እይታ (Overview) {#overview}
 
 ይህ ችሎታ መደበኛውን የምናሌ መፍጠር ተግባር በማስፋት፣ `navigation_label` የሚባል መለኪያ (parameter) የመስጠት አቅም ይጨምራል። ይህ ደግሞ በምናሌው ውስጥ የሚታየው መለያ ከገጹ ርዕስ የተለየ እንዲሆን ያስችላል። ይህም በየድረ-ገጹ አወቃቀር እና በተጠቃሚ ተሞክሮ (user experience) የበለጠ ተጣጣፊነትን ይሰጣል።
 
-## መለኪያዎች (Parameters)
+## መለኪያዎች (Parameters) {#parameters}
 
 | መለኪያ (Parameter) | ዓይነት (Type) | አስፈላጊ ነው? (Required) | መግለጫ (Description) |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 | `location` | string | አይ (No) | ምናሌውን ለማስመደብ የሚፈለገው የTheme location፣ ለምሳሌ፡ `primary` |
 | `navigation_label` | string | አይ (No) | በ navigation ውስጥ የሚታየው መለያ (ከየገጽ ርዕስ የተለየ) |
 
-## የመመለስ እሴት (Return Value)
+## የመመለስ እሴት (Return Value) {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 }
 ```
 
-## የ navigation መለያ ከየገጽ ርዕስ ጋር ያለው ልዩነት (Navigation Label vs Page Title)
+## የ navigation መለያ ከየገጽ ርዕስ ጋር ያለው ልዩነት (Navigation Label vs Page Title) {#navigation-label-vs-page-title}
 
 የ`navigation_label` መለኪያ የውስጥ የምናሌ ስም (internal menu name) ከተጠቃሚዎች የሚያዩት መለያ (label) መለያየትን ያስችላል።
 
@@ -43,9 +43,9 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 - በተለያዩ የቋንቋ ስሪቶች በተለያየ የቅጥያ ርዝመት መደገፍ ካለብዎ
 - ለተወሰኑ ክልሎች ወይም ለተጠቃሚ ቡድኖች ምናሌዎችን እየገነቡ ከሆነ
 
-## የአጠቃቀም ምሳሌዎች (Usage Examples)
+## የአጠቃቀም ምሳሌዎች (Usage Examples) {#usage-examples}
 
-### ምሳሌ 1፡ በ navigation መለያ ያለው ቀላል ምናሌ (Simple Menu with Navigation Label)
+### ምሳሌ 1፡ በ navigation መለያ ያለው ቀላል ምናሌ (Simple Menu with Navigation Label) {#example-1-simple-menu-with-navigation-label}
 
 **ጥያቄ (Prompt):**
 ```
@@ -62,7 +62,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 }
 ```
 
-### ምሳሌ 2፡ ለተወሰነ Theme Location ምናሌ (Menu for Specific Theme Location)
+### ምሳሌ 2፡ ለተወሰነ Theme Location ምናሌ (Menu for Specific Theme Location) {#example-2-menu-for-specific-theme-location}
 
 **ጥያቄ (Prompt):**
 ```
@@ -80,7 +80,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 }
 ```
 
-## ከTheme Builder ጋር ውህደት (Integration with Theme Builder)
+## ከTheme Builder ጋር ውህደት (Integration with Theme Builder) {#integration-with-theme-builder}
 
 Theme Builder ሲጠቀሙ፣ የCreate Menu ችሎታው የሚከተሉትን ያደርጋል፦
 
@@ -89,13 +89,13 @@ Theme Builder ሲጠቀሙ፣ የCreate Menu ችሎታው የሚከተሉትን 
 3. ምናሌዎችን ወደ ትክክለኛ የtheme ቦታዎች ያስቀምጣል
 4. ምናሌዎችን ከፈጠሩ በኋላ የምናሌ አባላትን (menu items) መጨመርን ይደግፋል
 
-## ተዛማጅ ችሎታዎች (Related Abilities)
+## ተዛማጅ ችሎታዎች (Related Abilities) {#related-abilities}
 
 - **`add_menu_item`** — በአንድ existing menu ውስጥ አባላትን ይጨምራል
 - **`update_menu`** — ምናሌን ስም መቀየር ወይም ወደ ሌላ የtheme location ማስቀመጥ
 - **`delete_menu`** — ምናሌን ከsiteዎ ማስወገድ
 
-## ምርጥ ልምዶች (Best Practices)
+## ምርጥ ልምዶች (Best Practices) {#best-practices}
 
 - **ግልጽ የnavigation መለያዎችን ይጠቀሙ** — መለያዎቹ ለአጠቃቀም ቀላል እና መግለጫ ሰጪ እንዲሆኑ ያድርጉ።
 - **የtheme ቦታዎችን ያጣጥሙ** — ትክክለኛ አሳልፎ ለማሳየት ምናሌዎችን ወደ ትክክለኛው የtheme location ያስቀምጡ።
@@ -103,14 +103,14 @@ Theme Builder ሲጠቀሙ፣ የCreate Menu ችሎታው የሚከተሉትን 
 - **ተجاበራትን ይፈትሹ (Test responsiveness)** — ምናሌዎቹ በሞባይል ስልኮች ላይ በትክክል መታየታቸውን ያረጋግጡ።
 - **መለያዎችን በአካባቢው ያቅዱ (Localize labels)** — ለተለያዩ የቋንቋ ስሪቶች የተለያዩ የnavigation መለያዎችን ይጠቀሙ።
 
-## ገደቦች (Limitations)
+## ገደቦች (Limitations) {#limitations}
 
 - የnavigation መለያዎች ለaffichage ብቻ ናቸው፤ የውስጥ `name` ለWordPress መለያ አሁንም ጥቅም ላይ ይውላል።
 - የTheme ድጋፍ ይለያያል፤ ሁሉም themes ሁሉንም የምናሌ ቦታዎች አይደግፉም።
 - የምናሌ አባላትን ከምናሌው መፍጠር በኋላ በየራሳቸው መጨመር አለባቸው።
 - የnavigation መለያን መቀየር ምናሌውን መዘመን ይጠይቃል።
 
-## ተዛማጅ ችሎታዎች (Related Abilities)
+## ተዛማጅ ችሎታዎች (Related Abilities) {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — ለየsite headerዎ አርማዎችን ይፍጠሩ
 - [Validate Palette Contrast](./validate-palette-contrast.md) — ተደራሽ የሆኑ የቀለም ስብስቦችን ያረጋግጡ

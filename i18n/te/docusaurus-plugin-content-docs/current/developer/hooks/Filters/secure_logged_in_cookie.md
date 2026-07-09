@@ -4,11 +4,11 @@ title: Filter - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie
+# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 లాగిన్ అయిన కుకీని (cookie) HTTPS ద్వారా మాత్రమే పంపాలా వద్దా అని ఇది నిర్ణయిస్తుంది.
 
-## పారామీటర్లు (Parameters)
+## పారామీటర్లు (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 | $user_id | `int` | యూజర్ ID. |
 | $secure | `bool` | ఆథెంటికేషన్ కుకీని (auth cookie) HTTPS ద్వారా మాత్రమే పంపాలా వద్దా. |
 
-### ఎప్పటి నుండి (Since)
+### ఎప్పటి నుండి (Since) {#since}
 
 - 3.1.0
-### మూలం (Source)
+### మూలం (Source) {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) లోని 91వ లైన్‌లో నిర్వచించబడింది.

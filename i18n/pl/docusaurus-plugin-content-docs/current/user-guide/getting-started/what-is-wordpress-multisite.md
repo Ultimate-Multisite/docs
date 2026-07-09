@@ -3,7 +3,7 @@ title: Czym jest WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Czym jest WordPress Multisite?
+# Czym jest WordPress Multisite? {#what-is-wordpress-multisite}
 
 WordPress posiada wbudowaną funkcję o nazwie „Multisite", która sięga swoimi korzeniami 2010 roku, kiedy ukazał się WordPress 3.0. Od tego czasu przeszła wiele zmian – dodawano nowe funkcje i wzmacniano bezpieczeństwo.
 
@@ -11,7 +11,7 @@ Najprościej rzecz ujmując, WordPress Multisite można przedstawić tak: Uniwer
 
 ## 
 
-## Czym dokładnie jest WordPress Multisite?
+## Czym dokładnie jest WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite to funkcja WordPressa, która pozwala wielu stronom korzystać z jednej instalacji WordPressa. Po aktywacji multisite oryginalna strona WordPress zostaje przekształcona tak, by obsługiwać to, co zazwyczaj nazywamy **siecią stron**.
 
@@ -23,7 +23,7 @@ To jedna z głównych zalet multisite – możesz zwiększać liczbę zarządzan
 
 ## 
 
-## Subdomena czy podkatalog?
+## Subdomena czy podkatalog? {#subdomain-or-subdirectory}
 
 WordPress Multisite może działać w dwóch trybach – musisz wybrać jeden z nich podczas przekształcania zwykłej instalacji WordPressa w multisite:
 
@@ -49,7 +49,7 @@ Jednym z głównych wyzwań przy konfiguracji trybu subdomen jest pokrycie SSL (
 
 W przeciwieństwie do trybu podkatalogów, podstrony w sieci opartej na subdomenach są traktowane przez wyszukiwarki jako osobne witryny. Oznacza to, że treści obecne na jednej podstronie w ogóle nie wpływają na pozycjonowanie SEO innych podstron.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Standardowe instalacje WordPressa pozwalają dodawać nieograniczoną liczbę użytkowników i przypisywać im różne role z różnymi uprawnieniami.
 
@@ -63,7 +63,7 @@ Pluginy i motywy mogą być instalowane lub usuwane wyłącznie z panelu adminis
 
 _Uwaga: jak widzisz, zaproszenie kogoś do sieci i nadanie mu statusu super admina daje temu użytkownikowi pełną kontrolę nad siecią. Inni super adminowie mogą nawet odebrać Ci status super admina, skutecznie blokując dostęp do Twojego własnego panelu administracyjnego sieci. Aby klienci Ultimate Multisite mogli szczegółowo kontrolować, co mogą robić dodatkowi super adminowie, oferujemy dodatek o nazwie Support Agents. Ten dodatek pozwala utworzyć jeszcze inny typ użytkownika – agenta – z tylko takimi uprawnieniami, jakie są mu potrzebne do wykonywania zadań w sieci._
 
-## Co jest współdzielone między podstronami, a co nie
+## Co jest współdzielone między podstronami, a co nie {#what-is-shared-among-subsites-and-what-is-not}
 
 Jak wspomnieliśmy wcześniej, jedną z głównych zalet WordPress Multisite jest to, że wszystkie podstrony współdzielą te same konfiguracje, pliki rdzenia, motywy, pluginy, pliki WordPressa itd.
 
@@ -75,7 +75,7 @@ Są jednak elementy, które są ładnie rozdzielone dla każdej podstrony.
 
 \- Większość tabel bazy danych jest tworzona dla każdej podstrony, co oznacza, że wpisy, komentarze, strony, ustawienia i inne elementy są przypisane do konkretnej podstrony.
 
-## Zarządzanie użytkownikami w WordPress Multisite
+## Zarządzanie użytkownikami w WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Delikatnym tematem w WordPress Multisite jest zarządzanie użytkownikami. Tabela użytkowników WordPress jest jedną z nielicznych współdzielonych między wszystkimi podstronami.
 
@@ -99,7 +99,7 @@ _Uwaga: zdajemy sobie sprawę, jak problematyczne to może być w zależności o
 
 Mimo że tabela użytkowników jest współdzielona, użytkownicy mogą być dodawani i usuwani z podstron przez administratorów podstron lub super admina, a nawet mogą mieć różne role na różnych podstronach.
 
-## Kwestie wydajności
+## Kwestie wydajności {#performance-considerations}
 
 WordPress Multisite jest naprawdę potężny pod względem liczby stron, które może obsługiwać. Świadczy o tym fakt, że [WordPress.com](https://WordPress.com), Edublogs i Campuspress to usługi oparte na multisite, z których każda hostuje tysiące stron.
 

@@ -4,11 +4,11 @@ title: Әрекет - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Әрекет: wu_domain_registration_failed
+# Әрекет: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Доменді тіркеу әрекеті сәтсіз аяқталғаннан кейін іске қосылады.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 | $registration_data | `array&lt;string,mixed&gt;` | status=failed және error_message қамтитын тіркеу метадеректері. |
 | $error_message | `string` | Тіркеушіден келген адамға түсінікті қате хабары. |
 
-### Бастап
+### Бастап {#since}
 
 - 2.0.0
-### Дереккөз
+### Дереккөз {#source}
 
 [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) ішінде 1250-жолда анықталған.

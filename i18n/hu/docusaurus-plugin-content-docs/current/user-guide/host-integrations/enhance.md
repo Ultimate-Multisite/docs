@@ -3,33 +3,33 @@ title: Vezérlőpult integráció fejlesztése
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Control Panel integráció
+# Enhance Control Panel integráció {#enhance-control-panel-integration}
 
-## Áttekintés
+## Áttekintés {#overview}
 Az Enhance egy modern vezérlőpult, amely hatékony tárhelyautomatizálási és -kezelési funkciókat kínál. Ez az integráció lehetővé teszi a domain-ok automatikus szinkronizálását és az SSL-tanúsítványok kezelését az Ultimate Multisite és az Enhance Control Panel között.
 
 **Kapcsolódó beszélgetés:** A közösségi tippekért és további információkért lásd a [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) oldalt.
 
-## Funkciók
+## Funkciók {#features}
 - Automatikus domain-szinkronizálás, amikor domain-okat társítasz az Ultimate Multisite-ban
 - Automatikus SSL-tanúsítvány kiállítás LetsEncrypt-en keresztül, amint a DNS feloldódik
 - Aldomain támogatás aldomain módban futó hálózatokhoz
 - Domain eltávolítás a társítások törlésekor
 - Kapcsolat tesztelése az API hitelesítő adatok ellenőrzéséhez
 
-## Követelmények
+## Követelmények {#requirements}
 
-### Rendszerkövetelmények
+### Rendszerkövetelmények {#system-requirements}
 - Telepített és elérhető Enhance Control Panel
 - WordPress Multisite telepítés, amely egy Enhance szerveren fut vagy ahhoz kapcsolódik
 - Apache webszerver (az Enhance jelenleg az Apache konfigurációkat támogatja; a LiteSpeed Enterprise kedvezményes áron érhető el)
 
-### API hozzáférés
+### API hozzáférés {#api-access}
 Az API tokenek létrehozásához rendszergazdai hozzáférésre van szükséged az Enhance Control Panelhez.
 
-## Az API hitelesítő adatok beszerzése
+## Az API hitelesítő adatok beszerzése {#getting-your-api-credentials}
 
-### 1. API token létrehozása
+### 1. API token létrehozása {#1-create-an-api-token}
 
 1. Jelentkezz be az Enhance Control Panelbe rendszergazdaként
 2. Kattints a **Settings** menüpontra a navigációs menüben
@@ -44,7 +44,7 @@ Az API tokenek létrehozásához rendszergazdai hozzáférésre van szükséged 
 
 A létrehozás után megjelenik az **Access Token** és az **Organization ID**. **Mentsd el ezeket azonnal**, mert a token csak egyszer jelenik meg.
 
-### 2. Az Organization ID beszerzése
+### 2. Az Organization ID beszerzése {#2-get-your-organization-id}
 
 Az Organization ID az Access Tokens oldalon, egy kék információs dobozban jelenik meg "Org ID: {your_id}" címkével.
 
@@ -55,7 +55,7 @@ Egy ügyfél Organization ID-ját a következő módon is megtalálhatod:
 2. Kattints a **Manage customer** gombra a megfelelő ügyfélnél
 3. Nézd meg az URL-t – az Organization ID a `/customers/` utáni alfanumerikus karakterek
 
-### 3. A Server ID beszerzése
+### 3. A Server ID beszerzése {#3-get-your-server-id}
 
 A Server ID megtalálásához (domain műveleteknél szükséges):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 A Server ID UUID formátumú: `00000000-0000-0000-0000-000000000000`
 
-### 4. Az API URL beszerzése
+### 4. Az API URL beszerzése {#4-get-your-api-url}
 
 Az API URL az Enhance Control Panel URL-ed, amelyhez hozzáfűzöd az `/api/` részt:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Csak a domain használata `/api/` nélkül
 - HTTP használata HTTPS helyett (a HTTPS kötelező biztonsági okokból)
 
-## Konfiguráció
+## Konfiguráció {#configuration}
 
-### Szükséges konstansok
+### Szükséges konstansok {#required-constants}
 
 Add hozzá a következő konstansokat a `wp-config.php` fájlodhoz:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Beállítás az integrációs varázslóval
+### Beállítás az integrációs varázslóval {#setup-via-integration-wizard}
 
 1. A WordPress admin felületen menj az **Ultimate Multisite** > **Settings** menüpontra
 2. Navigálj az **Integrations** fülre
@@ -112,17 +112,17 @@ Választhatsz:
 - A varázsló automatikusan beszúrja a konstansokat a `wp-config.php` fájlba
 - Másold ki a konstans-definíciókat és add hozzá őket manuálisan
 
-## További WordPress konfiguráció
+## További WordPress konfiguráció {#additional-wordpress-configuration}
 
 A közösségi visszajelzések alapján ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)) szükség lehet ezeknek a további beállításoknak a konfigurálására:
 
-### .htaccess konfiguráció
+### .htaccess konfiguráció {#htaccess-configuration}
 
 Ha problémákat tapasztalsz a domain mapping-gel:
 1. Töröld az eredeti Enhance `.htaccess` fájlt
 2. Cseréld le a szabványos WordPress Multisite `.htaccess` fájlra
 
-### Cookie konstansok
+### Cookie konstansok {#cookie-constants}
 
 Add hozzá ezeket a konstansokat a `wp-config.php` fájlhoz a megfelelő cookie-kezelés biztosítására a társított domain-ok között:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Hogyan működik
+## Hogyan működik {#how-it-works}
 
-### Amikor egy domain-t társítasz
+### Amikor egy domain-t társítasz {#when-a-domain-is-mapped}
 
 1. A felhasználó egyéni domain-t társít az Ultimate Multisite-ban (vagy új webhely jön létre aldomain módban)
 2. Az integráció POST kérést küld az Enhance API-nak: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Amikor a DNS feloldódik a szerveredre, az Enhance automatikusan kiállít egy SSL-tanúsítványt a LetsEncrypt-en keresztül
 5. A domain HTTPS-sel aktívvá válik
 
-### Amikor egy domain-t eltávolítasz
+### Amikor egy domain-t eltávolítasz {#when-a-domain-is-removed}
 
 1. Egy domain-társítás törlődik az Ultimate Multisite-ban
 2. Az integráció lekérdezi az Enhance-t, hogy megtalálja a domain ID-ját
 3. DELETE kérés kerül elküldésre: `/servers/{server_id}/domains/{domain_id}`
 4. Az Enhance eltávolítja a domain-t a szerver konfigurációjából
 
-### DNS és SSL ellenőrzés
+### DNS és SSL ellenőrzés {#dns-and-ssl-checking}
 
 Az Ultimate Multisite beépített DNS és SSL ellenőrzést tartalmaz:
 - Az ellenőrzési intervallumot a **Domain Mapping Settings** alatt konfigurálhatod (alapértelmezés: 300 másodperc/5 perc)
@@ -157,9 +157,9 @@ Az Ultimate Multisite beépített DNS és SSL ellenőrzést tartalmaz:
 - Az SSL-tanúsítvány érvényessége automatikusan ellenőrzésre kerül
 - Az Enhance automatikusan kezeli az SSL kiállítását, így manuális SSL konfigurációra nincs szükség
 
-## A beállítás ellenőrzése
+## A beállítás ellenőrzése {#verifying-setup}
 
-### Kapcsolat tesztelése
+### Kapcsolat tesztelése {#test-the-connection}
 
 1. Az integrációs varázslóban használd a **Test Connection** lépést
 2. A plugin megpróbálja listázni a domain-okat a szervereden
@@ -169,7 +169,7 @@ Az Ultimate Multisite beépített DNS és SSL ellenőrzést tartalmaz:
    - A Server ID érvényes
    - A jogosultságok megfelelően vannak beállítva
 
-### Domain társítása után
+### Domain társítása után {#after-mapping-a-domain}
 
 1. Társíts egy teszt domain-t az Ultimate Multisite-ban
 2. Ellenőrizd az Ultimate Multisite naplókat (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Az Ultimate Multisite beépített DNS és SSL ellenőrzést tartalmaz:
    - Az új domain-nak meg kell jelennie a listában
 4. Miután a DNS propagálódik, ellenőrizd, hogy az SSL automatikusan kiállításra került-e
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
-### API kapcsolati problémák
+### API kapcsolati problémák {#api-connection-issues}
 
 **Hiba: "Failed to connect to Enhance API"**
 - Ellenőrizd, hogy a `WU_ENHANCE_API_URL` végén szerepel-e az `/api/`
@@ -198,7 +198,7 @@ Az Ultimate Multisite beépített DNS és SSL ellenőrzést tartalmaz:
 - Győződj meg róla, hogy a Server ID érvényes UUID formátumú
 - Erősítsd meg, hogy a szerver létezik az Enhance panelben
 
-### A domain nem került hozzáadásra
+### A domain nem került hozzáadásra {#domain-not-added}
 
 **Ellenőrizd a naplókat:**
 1. Menj az **Ultimate Multisite** > **Logs** menüpontba
@@ -211,7 +211,7 @@ Az Ultimate Multisite beépített DNS és SSL ellenőrzést tartalmaz:
 - Elégtelen API jogosultságok (győződj meg róla, hogy a token System Administrator szerepkörrel rendelkezik)
 - A Server ID nem egyezik a tényleges szerverrel az Enhance-ben
 
-### SSL-tanúsítvány problémák
+### SSL-tanúsítvány problémák {#ssl-certificate-issues}
 
 **Az SSL nem kerül kiállításra:**
 - Ellenőrizd, hogy a DNS a szervered IP-címére mutat-e
@@ -225,7 +225,7 @@ Az Ultimate Multisite beépített DNS és SSL ellenőrzést tartalmaz:
 2. Keresd meg a domain-odat és ellenőrizd az SSL állapotát
 3. Szükség esetén manuálisan is elindíthatod az SSL kiállítását
 
-### DNS ellenőrzési intervallum
+### DNS ellenőrzési intervallum {#dns-check-interval}
 
 Ha a domain-ok vagy SSL-tanúsítványok túl sokáig tartanak az aktiválódásig:
 1. Menj az **Ultimate Multisite** > **Settings** > **Domain Mapping** menüpontra
@@ -233,7 +233,7 @@ Ha a domain-ok vagy SSL-tanúsítványok túl sokáig tartanak az aktiválódás
 3. Állítsd át az alapértelmezett 300 másodpercről alacsonyabb értékre (minimum: 10 másodperc)
 4. **Megjegyzés:** Az alacsonyabb intervallum gyakoribb ellenőrzést jelent, de nagyobb szerverterhelést is
 
-### Hitelesítési hibák
+### Hitelesítési hibák {#authentication-errors}
 
 **HTTP 401/403 hibák:**
 - Generálj új API tokent az Enhance-ben
@@ -241,7 +241,7 @@ Ha a domain-ok vagy SSL-tanúsítványok túl sokáig tartanak az aktiválódás
 - Ellenőrizd, hogy a token nem járt-e le
 - Győződj meg róla, hogy a megfelelő Organization ID-t használod (bár ez általában nem szükséges az URL-ben)
 
-### Naplóelemzés
+### Naplóelemzés {#log-analysis}
 
 Részletes naplózás engedélyezése:
 ```php
@@ -255,15 +255,15 @@ Ezután ellenőrizd a naplókat itt:
 - WordPress debug napló: `wp-content/debug.log`
 - Enhance panel naplók: Elérhetők az Enhance admin felületén
 
-## API referencia
+## API referencia {#api-reference}
 
-### Hitelesítés
+### Hitelesítés {#authentication}
 Minden API kérés Bearer token hitelesítést használ:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Gyakran használt végpontok
+### Gyakran használt végpontok {#common-endpoints-used}
 
 **Szerverek listázása:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Teljes API dokumentáció
+### Teljes API dokumentáció {#full-api-documentation}
 Teljes API dokumentáció: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Legjobb gyakorlatok
+## Legjobb gyakorlatok {#best-practices}
 
-### Biztonság
+### Biztonság {#security}
 - **Soha ne commitolj API tokeneket verziókezelőbe**
 - Tárold a tokeneket a `wp-config.php` fájlban, amelyet ki kell zárni a Git-ből
 - Használj megfelelő jogosultságokkal rendelkező tokeneket (System Administrator a teljes integrációhoz)
 - Állíts be token lejárati dátumokat éles környezetekben
 - Rendszeresen cseréld a tokeneket
 
-### Teljesítmény
+### Teljesítmény {#performance}
 - Használd az alapértelmezett DNS ellenőrzési intervallumot (300 másodperc) a túlzott API hívások elkerülésére
 - Figyelj az Enhance szerver erőforrásaira nagyméretű domain műveletek futtatásakor
 - Fontold meg a domain hozzáadások ütemezését, ha egyszerre sok domain-t társítasz
 
-### Monitorozás
+### Monitorozás {#monitoring}
 - Rendszeresen ellenőrizd az Ultimate Multisite naplókat integrációs hibák után kutatva
 - Állíts be monitorozást a sikertelen domain hozzáadásokhoz
 - Ellenőrizd, hogy az SSL-tanúsítványok megfelelően kerülnek-e kiállításra
 - Figyelj az Enhance szerver kapacitására és a domain limitekre
 
-## További források
+## További források {#additional-resources}
 
 - **Enhance hivatalos dokumentáció:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API dokumentáció:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ Teljes API dokumentáció: [https://apidocs.enhance.com](https://apidocs.enhance
 - **GitHub Discussion:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Domain Mapping útmutató:** Lásd a wiki oldalt "How to Configure Domain Mapping v2"
 
-## Támogatás
+## Támogatás {#support}
 
 Ha problémákba ütközöl:
 1. Nézd át a fenti Hibaelhárítás részt
@@ -326,7 +326,7 @@ Ha problémákba ütközöl:
 4. Lépj kapcsolatba az Enhance támogatással panel-specifikus problémák esetén
 5. Hozz létre egy új discussion-t részletes hibanaplókkal közösségi segítségért
 
-## Megjegyzések
+## Megjegyzések {#notes}
 
 - Ez az integráció csak a domain aliasokat kezeli; az Enhance automatikusan kezeli az SSL-t
 - Az integráció támogatja mind az egyéni domain társításokat, mind az aldomain-alapú webhelyeket

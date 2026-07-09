@@ -3,11 +3,11 @@ title: Teema ehitamise juhend
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 lisaboodi juhendatud **Theme Builder onboarding flow**, mis aitab teil luua oma eriti theme'i alguses seadistamise ajal. See asendab vanema Site Builder režiimi rohkem joustavaks, agentiga abitud lähenemiseks.
 
-## Mis on Theme Builder Onboarding Flow?
+## Mis on Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow on interaktiivne seadistusjuhend, mis:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow on interaktiivne seadistusjuhend, mis:
 
 Flow on jõudutatud **Setup Assistant agentiga**, mis esitab selget küsimusi ja lahendab teie theme'i ühtlustult.
 
-## Theme Builder Onboarding Alguse
+## Theme Builder Onboarding Alguse {#starting-the-theme-builder-onboarding}
 
-### Esimese kasutuse seadistamine
+### Esimese kasutuse seadistamine {#first-run-setup}
 
 Kui käivitab Superdav AI Agentit esimest korda uues WordPress installatsioonil, näete:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Valige **"Build a custom theme"**, et sisestuda Theme Builder onboarding flow.
 
-### Manuaalne aktiveerimine
+### Manuaalne aktiveerimine {#manual-activation}
 
 Võite ka alustada Theme Builder onboarding'i igal ajal, paludes:
 
@@ -49,9 +49,9 @@ või
 "Help me create a custom theme"
 ```
 
-## Onboarding Sammud
+## Onboarding Sammud {#the-onboarding-steps}
 
-### Samm 1: Režiimi valik
+### Samm 1: Režiimi valik {#step-1-mode-selection}
 
 Setup Assistant agent küsib teie eelistust:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** on soovitatav suurimalt kasutajatele; agent teeb disainide soovitusid teie industrias ja eesmärkide põhjal.
 
-### Samm 2: Veebilehe spetsifikatsioon
+### Samm 2: Veebilehe spetsifikatsioon {#step-2-site-specification}
 
 Teilt küsimatakse veebilehe kohta:
 
@@ -74,7 +74,7 @@ Teilt küsimatakse veebilehe kohta:
 
 See teave on salvestatud teie **site_brief** memori kaudu, mida agentid viitavad tulevad sessioonides.
 
-### Samuti 3: Disaini süsteemi otsustused
+### Samuti 3: Disaini süsteemi otsustused {#step-3-design-system-decisions}
 
 Agent juhendab teid disainitoonide valikute läbi:
 
@@ -83,7 +83,7 @@ Agent juhendab teid disainitoonide valikute läbi:
 - **Vahetusvääliline ruum:** Kompaktsed, normaalsed või laialdused plaadid
 - **Liikumine:** Animatsioonid ja ülemine (kui soovite)
 
-### Samuti 4: Teema genereerimine
+### Samuti 4: Teema genereerimine {#step-4-theme-generation}
 
 Setup Assistant agent rakendab teie suurte teema oma kaitsmehega:
 
@@ -92,7 +92,7 @@ Setup Assistant agent rakendab teie suurte teema oma kaitsmehega:
 - Kasutamisliikuse stiilid, mis vastavad teie disainisüsteemile
 - Teema metadane ja WordPressi toetuse deklaratsioonid
 
-### Samuti 5: Aktiveerimine ja kontroll
+### Samuti 5: Aktiveerimine ja kontroll {#step-5-activation-and-verification}
 
 Teema aktiveeritakse automaatselt, ja näete järgmine:
 
@@ -107,7 +107,7 @@ Teema aktiveeritakse automaatselt, ja näete järgmine:
 
 Seejärel saate oma siti külastada ja kontrollida, kas teema näitab õigesti.
 
-## Siti spetsifikatsioon ja site_brief memori
+## Siti spetsifikatsioon ja site_brief memori {#site-specification-and-sitebrief-memory}
 
 Onboardingi ajal agent hõlvaneb teie siti spetsifikatsiooni **site_brief** memori kategoori. See hõlmab:
 
@@ -117,18 +117,18 @@ Onboardingi ajal agent hõlvaneb teie siti spetsifikatsiooni **site_brief** memo
 - Disaini lehtme
 - Siseltuleva struktuuri
 
-### Miks site_brief on oluline
+### Miks site_brief on oluline {#why-sitebrief-matters}
 
 Tulevad sessioonides agentid viitavad teie site_briefile:
 
-### Disaini säilitamine muudatuste ajal
+### Disaini säilitamine muudatuste ajal {#viewing-your-sitebrief}
 
 *   Hoida disaini ühtlustatud muutuste all.
 *   Soovita funktsioone, mis on teie veebilehve eesmärkega seotud.
 *   Anna kontekstipõhise soovitatavusi.
 *   Vältida seadistamise küsimuste kordamist.
 
-### Veendige oma site_briefi
+### Veendige oma site_briefi {#customizing-after-onboarding}
 
 Saate küsida agentilt:
 
@@ -144,11 +144,11 @@ või
 
 Agenti näitab teie salvestatud veebilehve spetsifikatsiooni.
 
-## Muutmine pärast onboarding-i lõpetamist
+## Muutmine pärast onboarding-i lõpetamist {#use-the-design-system-aesthetics-skill}
 
 Theme Builder onboarding lõpetamise pärast saate:
 
-### Kasutada Design System Aesthetics skillit
+### Kasutada Design System Aesthetics skillit {#edit-themejson-directly}
 
 Soovita disaini hoidlust:
 
@@ -164,7 +164,7 @@ või
 
 **Design System Aesthetics skill** juhendab teid eesmärgiga kohdistatud disainimuutuste läbiviimise.
 
-### Redige theme.jsoni otse
+### Redige theme.jsoni otse {#create-custom-block-templates}
 
 Andmete edaspool kasutajatele saate muuta `/wp-content/themes/[theme-name]/theme.json` faili, et reguleerida:
 
@@ -173,7 +173,7 @@ Andmete edaspool kasutajatele saate muuta `/wp-content/themes/[theme-name]/theme
 *   Vahetuste väärtused (spacing values)
 *   Rande ja varjude definitsioonid
 
-### Luua oma blokke tegemistesse mallid
+### Luua oma blokke tegemistesse mallid {#comparison-old-vs-new-onboarding}
 
 Kasutage WordPressi blokke redigeerijat luua isiklikke malle:
 
@@ -182,7 +182,7 @@ Kasutage WordPressi blokke redigeerijat luua isiklikke malle:
 *   Tootja lehed
 *   Kontaktformid
 
-## Võrkamine: Vana vs. Uus onboarding
+## Võrkamine: Vana vs. Uus onboarding {#troubleshooting}
 
 | Funktsioon | Site Builder (Vana) | Theme Builder (Uus) |
 | :--- | :--- | :--- |
@@ -192,7 +192,7 @@ Kasutage WordPressi blokke redigeerijat luua isiklikke malle:
 | Joustavus | Fiksaatud valikud | Kohandatav |
 | Eelujundised uuendused | Viitamata | Salvestatud site_briefis |
 
-## Ongud lahendamine
+## Ongud lahendamine {#next-steps}
 
 **Onboarding-viis ei lõpetanud**
 *   Taasta viis: "Start the Theme Builder onboarding" (Alusta Theme Builder onboarding)

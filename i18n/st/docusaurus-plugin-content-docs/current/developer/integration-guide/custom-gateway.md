@@ -3,11 +3,11 @@ title: Nts'etsopele ea Khoro e Ikhethileng
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Ntshetsopele ya Custom Gateway
+# Ntshetsopele ya Custom Gateway {#custom-gateway-development}
 
 O ka bopa dikgoro tsa tefo tse ikgethileng ka ho atolosa sehlopha sa `Base_Gateway`.
 
-## Sehlopha sa Gateway
+## Sehlopha sa Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Ngodisa Gateway
+## Ngodisa Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Mekgwa ya Bohlokwa
+## Mekgwa ya Bohlokwa {#key-methods}
 
 | Method | Sepheo |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Tshwara dikopo tsa pusetso ya tjhelete |
 | `get_payment_methods()` | Kgutlisa mekgwa ya tefo e bolokilweng bakeng sa moreki |
 
-## Dintlha tsa boitsebiso tsa nchafatso bakeng sa boingodiso bo iphetang
+## Dintlha tsa boitsebiso tsa nchafatso bakeng sa boingodiso bo iphetang {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 e dumella dikopanyo tsa gateway ho tlaleha hore na boingodiso bo iphetang bo na le dintlha tsa boitsebiso tsa nchafatso tse ka sebediswang hape pele `auto_renew` e bolokwa. Sebedisa hook `wu_membership_has_renewal_credential` mme o kgutlise:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Tlosa letshwao la dintlha tsa boitsebiso tse siyo e le karolo ya phallo ya gateway ya hao ya tumello hape e atlehileng kamora hore dintlha tse ntjha tsa boitsebiso tse ka sebediswang hape di bolokwe.
 
-## Malebela
+## Malebela {#tips}
 
 - Kamehla kgutlisa `WP_Error` ha ho hloleha hore Ultimate Multisite e kgone ho sebetsana le pontsho ya phoso
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Sebedisa `wu_log_add()` bakeng sa ho ngola diketsahalo tse kgethehileng tsa gateway
 
-## Bokgoni ba bafani ba sehokedi sa AI
+## Bokgoni ba bafani ba sehokedi sa AI {#ai-connector-provider-capabilities}
 
 Dikopanyo tse ikgethileng tse bitsang ditshebetso tse tshehetswang ke sehokedi sa AI di lokela ho tsamaisana le sehlopha sa bafani ba OAuth se tshehetswang se hlahisitsweng ka AI Provider for Anthropic Max v1.3.0:
 

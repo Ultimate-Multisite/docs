@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) 첫 살펴보기
+# Webhooks (v2) 첫 살펴보기 {#a-first-look-on-webhooks-v2}
 
 _**주의: 이 기능 또는 문서는 고급 사용자를 위한 것입니다.**_
 
@@ -11,7 +11,7 @@ _**주의: 이 기능 또는 문서는 고급 사용자를 위한 것입니다.*
 
 이는 이벤트가 트리거될 때마다 Ultimate Multisite에서 다른 CRM이나 시스템으로 특정 데이터를 통합하거나 전달해야 할 때 유용합니다. 예를 들어, 새 사용자 Account가 생성될 때마다 사용자의 이름과 이메일 주소를 메일링 리스트로 보내야 할 수 있습니다.
 
-## webhook을 만드는 방법
+## webhook을 만드는 방법 {#how-to-create-a-webhook}
 
 webhook을 만들려면 네트워크 관리자 Dashboard로 이동하세요. **Ultimate Multisite > Webhooks > Add New Webhook**을 클릭하세요.
 

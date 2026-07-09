@@ -3,11 +3,11 @@ title: Ukwahlukaniswa kwabaqeshi abaninzi
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ukwahlulwa kwe-Multi-Tenancy
+# Ukwahlulwa kwe-Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ixhasa ukwahlulwa kwedatabase kunye nefayile-system ngokwe-subsite nganye kubahlali abazimeleyo. Oku kugcina idatha yomhlali yahlukene ngelixa kugcinwa ulungiselelo, intlawulo, nolawulo kwinqanaba lenethiwekhi.
 
-## Isicwangciso sokwahlula
+## Isicwangciso sokwahlula {#isolation-strategy}
 
 Sebenzisa ukwahlulwa okuzimeleyo kubathengi abafuna ukwahlulwa kwedatha okunamandla ngakumbi, ugcino lwefayile-system olunikezelweyo, okanye umda owahlukileyo we-host.
 
@@ -18,7 +18,7 @@ Umhlali ngamnye ozimeleyo kufuneka abe:
 - Nengeniso kwirejista yomhlali edibanisa isayithi nedatabase yayo, indlela yengcambu, igama le-host, kunye nemodeli yokwahlulwa.
 - Nesiphumo sokuqinisekisa ukufuduswa phambi kokuba umhlali athathwe njengosebenzayo.
 
-## Ukubophelela kwe-host yedatabase
+## Ukubophelela kwe-host yedatabase {#database-host-binding}
 
 Inguqulelo 1.2.0 itshintsha indlela yokuziphatha emiselweyo yokubophelela i-host kumatshini omnye kufakelo oluzimeleyo. Amaxabiso omatshini omnye afana no-`localhost` alungelelaniswa ukuze i-Bedrock, FrankenPHP, kunye nofakelo lwe-WordPress olusezikhonteyina lukwazi ukunika nokungqina iimvume ngokuchasene nomtya we-host obonwa ngokwenene yi-MySQL.
 
@@ -31,11 +31,11 @@ Xa uqwalasela umhlali ozimeleyo:
 
 Ukuba ukuqinisekiswa kuchaza ukusilela kwamalungelo, thelekisa amalungelo omsebenzisi we-DB womhlali nokubophelela kwe-host okuqwalaselweyo. Umsebenzisi onikwe amalungelo ku-`user@localhost` wahlukile ku-`user@127.0.0.1` okanye `user@%`.
 
-## Ingcambu yefayile-system
+## Ingcambu yefayile-system {#filesystem-root}
 
 Ingcambu yomhlali kufuneka izinze kuzo zonke ii-restart kunye nokuthunyelwa. Kuphephe iindlela ze-mount zethutyana. Kufakelo olufana ne-Bedrock, qinisekisa ukuba ingcambu yomhlali yalatha kwingcambu yewebhu ye-WordPress elindelwe yi-bootstrap yomhlali, hayi kuphela kwingcambu yeprojekthi.
 
-## Ulandelelwano lokulungiselela
+## Ulandelelwano lokulungiselela {#provisioning-order}
 
 Kubahlali abatsha abazimeleyo, sebenzisa olu landelelwano:
 
@@ -49,7 +49,7 @@ Kubahlali abatsha abazimeleyo, sebenzisa olu landelelwano:
 
 Olu landelelwano luthintela abahlali abahlulwe ngokuyinxenye ekufumaneni itrafikhi ngaphambi kokuba umbhali wedatabase, abasebenzisi, kunye nefayile-system zilunge.
 
-## Iinkqubo zolawulo lomthengi ozimeleyo
+## Iinkqubo zolawulo lomthengi ozimeleyo {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 igcina izenzo zolawulo lomthengi kwisayithi ephambili xa imowudi ezimeleyo ivuliwe. Umhlali usenokusebenza njengofakelo lwe-WordPress olwahluliweyo, kodwa izenzo ezijoliswe kumthengi ezixhomekeke kwintlawulo yenethiwekhi, ubulungu, okanye idatha ye-account ekwabelwana ngayo kufuneka zibuyisele umthengi kwisayithi ephambili endaweni yokuzama ukugqiba isenzo ngaphakathi kwe-runtime yomhlali.
 

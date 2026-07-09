@@ -3,16 +3,16 @@ title: Gratis AI Agent-inställningar
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent-inställningar
+# Gratis AI Agent-inställningar {#gratis-ai-agent-settings}
 
 Skärmen **Settings → Advanced** i Gratis AI Agent tillhandahåller konfiguration på administratörsnivå för backend-integrationer. Den här sidan dokumenterar vidarebefordran av feedback, nycklar för sökleverantörer, konfiguration av hanterad Superdav-tjänst, Google Calendar-kontroller, TextBee SMS-inställningar och nätverksomfattande funktionsflaggor.
 
-## Åtkomst till inställningar
+## Åtkomst till inställningar {#accessing-settings}
 
 1. I WordPress-admin, gå till **Gratis AI Agent → Settings**.
 2. Klicka på fliken **Advanced**.
 
-## Konfiguration av feedback-endpoint
+## Konfiguration av feedback-endpoint {#feedback-endpoint-configuration}
 
 Feedback-endpointen tar emot POST-förfrågningar från AI-agenten när en användare skickar feedback via tummen-ned-knappen, auto-prompt-bannern eller kommandot `/report-issue`.
 
@@ -21,7 +21,7 @@ Feedback-endpointen tar emot POST-förfrågningar från AI-agenten när en anvä
 | **Feedback Endpoint URL** | URL:en som tar emot feedbackinlämningar som HTTP POST-förfrågningar med en JSON-body. |
 | **Feedback API Key** | En bearer token som skickas i `Authorization` header för varje feedbackförfrågan. Lämna tomt om din endpoint inte kräver autentisering. |
 
-### Förväntad JSON-payload
+### Förväntad JSON-payload {#expected-json-payload}
 
 Din feedback-endpoint måste acceptera en JSON-body med minst följande fält:
 
@@ -36,7 +36,7 @@ Din feedback-endpoint måste acceptera en JSON-body med minst följande fält:
 
 Ytterligare fält kan finnas i payloaden beroende på konversationskontexten.
 
-### `triage_category`-värden
+### `triage_category`-värden {#triagecategory-values}
 
 AI-triage-lagret tilldelar ett av följande värden till `triage_category` innan payloaden vidarebefordras:
 
@@ -47,7 +47,7 @@ AI-triage-lagret tilldelar ett av följande värden till `triage_category` innan
 | `inappropriate_content` | Svaret innehöll innehåll som inte bör visas för användare. |
 | `other` | Feedbacken matchade inte en känd kategori. |
 
-### Autentisering
+### Autentisering {#authentication}
 
 Om din endpoint kräver autentisering, ställ in fältet **Feedback API Key** till din bearer token. Agenten skickar:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Om fältet **Feedback API Key** är tomt skickas ingen `Authorization` header.
 
-### Inaktivera insamling av feedback
+### Inaktivera insamling av feedback {#disabling-feedback-collection}
 
 Lämna både fälten **Feedback Endpoint URL** och **Feedback API Key** tomma. Tummen-ned-knappen och feedback-UI förblir synliga för användare, men inlämningar vidarebefordras inte till någon extern tjänst.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Även på fliken **Advanced** aktiverar fältet **Brave Search API Key** funktionen [Internetsökning](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ Fältetiketten innehåller en klickbar länk till registreringssidan för Brave 
 
 Se [Internetsökning](../configuration/internet-search) för dokumentation för slutanvändare om den här funktionen.
 
-## Hanterad Superdav-tjänst
+## Hanterad Superdav-tjänst {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 lägger till hanterade Superdav-tjänsteendpoints och automatisk anslutningsprovisionering för stödda webbplatser. Använd dessa kontroller när din webbplats ska ansluta till den hostade leverantören i stället för en manuellt konfigurerad tjänsteendpoint.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 lägger till hanterade Superdav-tjänsteendpoints och 
 
 Efter provisionering, spara inställningarna och verifiera anslutningsstatusen innan du förlitar dig på arbetsflöden för hanterade tjänster. Om provisioneringen misslyckas, granska den visade vägledningen för att försöka igen och bekräfta att webbplatsen har behörighet att använda den hostade leverantören.
 
-## Google Calendar-konfiguration
+## Google Calendar-konfiguration {#google-calendar-configuration}
 
 När kalenderfunktioner i Superdav AI Agent v1.18.0 är aktiverade kan agenten läsa konfigurerade kalendrar och händelsedetaljer. Kalenderverktyg är läsorienterade och är användbara för schemamedvetna påminnelser, uppföljning av deltagare och kontaktmatchning.
 
@@ -97,7 +97,7 @@ När kalenderfunktioner i Superdav AI Agent v1.18.0 är aktiverade kan agenten l
 
 Begränsa kalenderautentiseringsuppgifterna till de kalendrar agenten behöver. Anslut på nytt eller rotera autentiseringsuppgifter om statusen indikerar en utgången token.
 
-## TextBee SMS-aviseringar
+## TextBee SMS-aviseringar {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 lägger till TextBee som SMS-leverantör för konfigurerade aviseringsarbetsflöden. SMS-aviseringar bör kombineras med grindar för mänskligt godkännande för känsliga eller användarriktade meddelanden.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 lägger till TextBee som SMS-leverantör för konfigur
 
 Skicka ett testmeddelande endast till ett nummer som ägs av en administratör, och bekräfta sedan beteendet för godkännandegrindar innan du aktiverar schemalagda eller deltagarriktade påminnelser.
 
-## Funktionsflaggor
+## Funktionsflaggor {#feature-flags}
 
 Fliken **Settings → Feature Flags**, som också introducerades i v1.9.0, tillhandahåller växlingsknappar för valfri funktionalitet. Varje flagga är antingen aktiverad eller inaktiverad nätverksomfattande; det finns för närvarande ingen åsidosättning per webbplats.
 
-### Åtkomst till funktionsflaggor
+### Åtkomst till funktionsflaggor {#accessing-feature-flags}
 
 1. I WordPress-admin, gå till **Gratis AI Agent → Settings**.
 2. Klicka på fliken **Feature Flags**.
 
-### Flaggor för åtkomstkontroll
+### Flaggor för åtkomstkontroll {#access-control-flags}
 
 | Flagga | Standard | Beskrivning |
 |---|---|---|
@@ -127,7 +127,7 @@ Fliken **Settings → Feature Flags**, som också introducerades i v1.9.0, tillh
 | **Tillåt Subscriber-åtkomst** | Av | När detta är aktiverat kan användare med rollen `subscriber` använda chattgränssnittet men är begränsade till skrivskyddade möjligheter (ingen skapande av inlägg eller ändringar av inställningar). |
 | **Inaktivera för icke-medlemmar** | Av | Integreras med Ultimate Multisite-medlemskapsstatus. När detta är aktiverat döljs chatten för sajter som inte har ett aktivt medlemskap. |
 
-### Varumärkesflaggor
+### Varumärkesflaggor {#branding-flags}
 
 | Flagga | Standard | Beskrivning |
 |---|---|---|
@@ -136,7 +136,7 @@ Fliken **Settings → Feature Flags**, som också introducerades i v1.9.0, tillh
 | **Dölj agentväljaren** | Av | När detta är aktiverat kan användare inte växla mellan de fem inbyggda agenterna. Den aktuella agenten är låst till det som är konfigurerat som standard i Inställningar → Allmänt. |
 | **Använd sajtikon som chattavatar** | Av | Ersätter standard-AI-ikonen i chattwidgetens huvud med WordPress-sajtikonen (inställd under Utseende → Anpassa → Sajtidentitet). |
 
-### Säkerhetsflaggor för automatisering
+### Säkerhetsflaggor för automatisering {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 introducerar godkännandesteg från människor och påminnelseposter för säkrare automatiseringskörningar. Dessa kontroller kan visas i funktionsflaggorna eller avancerade automatiseringsinställningar, beroende på det installerade paketet.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 introducerar godkännandesteg från människor och på
 | **Aktivera kalenderverktyg** | Av tills konfigurerat | Gör att agenten kan läsa konfigurerade Google-kalendrar och händelser. |
 | **Aktivera SMS-aviseringar** | Av tills konfigurerat | Gör att godkända arbetsflöden kan skicka TextBee SMS-aviseringar efter att autentiseringsuppgifter har sparats. |
 
-### Tillämpa ändringar
+### Tillämpa ändringar {#applying-changes}
 
 Klicka på **Spara inställningar** efter att du växlat någon flagga. Ändringar träder i kraft omedelbart — ingen cachetömning eller återaktivering av plugin krävs.

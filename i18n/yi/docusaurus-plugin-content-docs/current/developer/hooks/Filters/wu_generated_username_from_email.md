@@ -4,11 +4,11 @@ title: פֿילטער - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# פֿילטער: wu_generated_username_from_email
+# פֿילטער: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 פֿילטערט דעם געשאַפֿענעם קונה־באַניצערנאָמען.
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 | $new_user_args | `array` | Array פֿון אַרגומענטן פֿאַר אַ נײַעם באַניצער, אפֿשר אַרײַנגערעכנט ערשטע און לעצטע נעמען. |
 | $suffix | `string` | צוהענגען אַ שטריקל צום באַניצערנאָמען כּדי אים צו מאַכן איינציקאַרטיק. |
 
-### זינט
+### זינט {#since}
 
 - 3.7.0
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) אויף שורה 488

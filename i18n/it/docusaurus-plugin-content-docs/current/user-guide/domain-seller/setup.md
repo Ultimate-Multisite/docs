@@ -3,21 +3,21 @@ title: Configurazione iniziale e configurazione del provider
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: configurazione iniziale e configurazione dei provider
+# Domain Seller: configurazione iniziale e configurazione dei provider {#domain-seller-setup-and-provider-configuration}
 
 L'addon Domain Seller include una procedura guidata di configurazione che ti accompagna in ogni passaggio richiesto. Questa pagina copre il flusso della procedura guidata e come configurare o riconfigurare i provider in seguito.
 
-## Requisiti
+## Requisiti {#requirements}
 
 - **Multisite Ultimate** v2.4.12 o superiore, attivato a livello di network
 - **PHP** 7.4+
 - Credenziali API per almeno un registrar supportato
 
-## Procedura guidata di configurazione al primo avvio
+## Procedura guidata di configurazione al primo avvio {#first-run-setup-wizard}
 
 La procedura guidata di configurazione si avvia automaticamente la prima volta che attivi il plugin a livello di network. È anche disponibile in qualsiasi momento da **Network Admin › Ultimate Multisite › Configurazione Domain Seller**.
 
-### Passaggio 1 — Scegli un provider
+### Passaggio 1 — Scegli un provider {#step-1--choose-a-provider}
 
 Seleziona il registrar che desideri connettere. Opzioni supportate:
 
@@ -33,7 +33,7 @@ Seleziona il registrar che desideri connettere. Opzioni supportate:
 | NameSilo | No | No |
 | Enom | Sì | No |
 
-### Passaggio 2 — Inserisci le credenziali
+### Passaggio 2 — Inserisci le credenziali {#step-2--enter-credentials}
 
 Ogni provider ha campi credenziali diversi:
 
@@ -57,17 +57,17 @@ Ogni provider ha campi credenziali diversi:
 
 Seleziona **Modalità sandbox** dove disponibile per testare con l'ambiente di prova del provider prima di andare live.
 
-### Passaggio 3 — Testa la connessione
+### Passaggio 3 — Testa la connessione {#step-3--test-the-connection}
 
 Fai clic su **Test Connection**. La procedura guidata invia una chiamata API leggera per verificare credenziali e connettività. Risolvi eventuali problemi con le credenziali prima di continuare.
 
-### Passaggio 4 — Importa i TLD
+### Passaggio 4 — Importa i TLD {#step-4--import-tlds}
 
 Fai clic su **Import TLDs** per recuperare tutti i TLD disponibili e i prezzi wholesale dal provider connesso. Questo popola l'elenco dei TLD usato dai prodotti dominio. L'importazione può richiedere 30–60 secondi per i provider con cataloghi TLD di grandi dimensioni.
 
 I TLD vengono inoltre risincronizzati automaticamente una volta al giorno tramite un cron job pianificato.
 
-### Passaggio 5 — Crea un prodotto dominio
+### Passaggio 5 — Crea un prodotto dominio {#step-5--create-a-domain-product}
 
 La procedura guidata crea un prodotto dominio predefinito catch-all con un markup del 10%. Puoi modificare questo prodotto immediatamente oppure saltare il passaggio e creare prodotti manualmente in **Ultimate Multisite › Prodotti**.
 
@@ -75,7 +75,7 @@ Consulta [Prodotti dominio e prezzi](./domain-products) per la guida completa al
 
 ---
 
-## Riconfigurazione di un provider
+## Riconfigurazione di un provider {#reconfiguring-a-provider}
 
 Vai a **Network Admin › Ultimate Multisite › Impostazioni › Domain Seller** (oppure fai clic su **Impostazioni** nell'elenco dei plugin).
 
@@ -88,17 +88,17 @@ La pagina delle impostazioni contiene:
 - **Gestisci prodotti dominio** — link rapido all'elenco Prodotti
 - **Configura provider** — apre l'Integration Wizard per aggiungere o riconfigurare i provider
 
-### Aggiungere un secondo provider
+### Aggiungere un secondo provider {#adding-a-second-provider}
 
 Fai clic su **Configura provider** ed esegui nuovamente la procedura guidata per il nuovo registrar. Puoi avere più provider configurati contemporaneamente. Assegna ogni prodotto dominio a un provider specifico, oppure lascialo su quello predefinito.
 
-### Sincronizzazione manuale dei TLD
+### Sincronizzazione manuale dei TLD {#syncing-tlds-manually}
 
 Nella pagina delle impostazioni, fai clic su **Sync TLDs** accanto a qualsiasi provider configurato per recuperare i prezzi più recenti. Questo è utile dopo che un provider aggiorna i prezzi wholesale o aggiunge nuovi TLD.
 
 ---
 
-## Log
+## Log {#logs}
 
 Ogni provider scrive nel proprio canale di log. I log sono visualizzabili in **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Ogni provider scrive nel proprio canale di log. I log sono visualizzabili in **N
 
 ---
 
-## Note sulle funzionalità dei provider
+## Note sulle funzionalità dei provider {#provider-capability-notes}
 
 Non tutte le API dei registrar espongono le stesse operazioni. L'addon mostra le operazioni non supportate con errori chiari rivolti agli amministratori, invece di fallire silenziosamente.
 

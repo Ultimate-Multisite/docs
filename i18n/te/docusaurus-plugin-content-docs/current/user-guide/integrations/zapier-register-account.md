@@ -3,7 +3,7 @@ title: Zapier ద్వారా Account నమోదు చేయండి
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# ఈవెంట్: Zapier ద్వారా Account నమోదు చేయడం
+# ఈవెంట్: Zapier ద్వారా Account నమోదు చేయడం {#event-register-an-account-via-zapier}
 
 [Ultimate Multisiteని Zapierతో సమగ్రపరచడం](zapier.md) అనే వ్యాసంలో, ట్రిగర్లు మరియు ఈవెంట్ల ఆధారంగా Ultimate Multisiteలో వేర్వేరు చర్యలు చేయడానికి Zapierను ఎలా ఉపయోగించాలో చర్చించాం. ఈ వ్యాసంలో, 3rd party అప్లికేషన్లను మీరు ఎలా సమగ్రపరచవచ్చో చూపిస్తాము. డేటా మూలంగా Google Sheetsను ఉపయోగించి, Account నమోదు చేయడానికి సమాచారాన్ని Ultimate Multisiteకు పంపుతాము.
 

@@ -3,35 +3,35 @@ title: Wawancara Penemuan
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Wawancara Penemuan
+# Wawancara Penemuan {#discovery-interview}
 
 **Wawancara Penemuan** adalah langkah pertama dalam proses desain Theme Builder. Ini mengumpulkan informasi tentang situs web, bisnis, dan preferensi desain Anda untuk membuat tema yang dipersonalisasi.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Wawancara Penemuan akan memandu Anda melalui serangkaian pertanyaan untuk memahami merek, target audiens, dan tujuan desain Anda. Pada versi 1.16.0, wawancara ini kini menyertakan **langkah unggah foto** yang memungkinkan Anda memberikan inspirasi visual untuk desain Anda.
 
-## Langkah-Langkah Wawancara
+## Langkah-Langkah Wawancara {#interview-steps}
 
-### 1. Informasi Bisnis
+### 1. Informasi Bisnis {#1-business-information}
 
 - Nama situs dan *tagline*
 - Jenis atau industri bisnis
 - Tujuan bisnis utama
 - Deskripsi target audiens
 
-### 2. Preferensi Desain
+### 2. Preferensi Desain {#2-design-preferences}
 
 - Skema warna yang disukai
 - Gaya desain (modern, klasik, minimalis, ceria, dll.)
 - Situs web atau merek inspirasi
 - Elemen desain wajib
 
-### 3. Unggah Foto (Baru di v1.16.0)
+### 3. Unggah Foto (Baru di v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Unggah satu atau lebih foto untuk memengaruhi arah desain:
 
-#### Format yang Diterima
+#### Format yang Diterima {#accepted-formats}
 
 | Format | Ekstensi | Detail |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Unggah satu atau lebih foto untuk memengaruhi arah desain:
 | **WebP** | `.webp` | Format modern, ukuran file lebih kecil |
 | **GIF** | `.gif` | Hanya gambar statis (tidak ada animasi) |
 
-#### Persyaratan File
+#### Persyaratan File {#file-requirements}
 
 - **Ukuran file maksimum:** 10 MB
 - **Dimensi minimum:** 400 × 300 piksel
 - **Dimensi yang direkomendasikan:** 1200 × 800 piksel atau lebih besar
 - **Rasio aspek:** Semua rasio dapat diterima
 
-#### Bagaimana Foto Memengaruhi Arah Desain
+#### Bagaimana Foto Memengaruhi Arah Desain {#how-photos-influence-design-direction}
 
 Foto yang Anda unggah membantu Theme Builder memahami:
 
@@ -57,21 +57,21 @@ Foto yang Anda unggah membantu Theme Builder memahami:
 - **Elemen desain** — pola, tekstur, dan gaya komposisi
 - **Inspirasi tipografi** — gaya font yang melengkapi tema visual
 
-### 4. Struktur Konten
+### 4. Struktur Konten {#4-content-structure}
 
 - Halaman utama yang dibutuhkan (Beranda, Tentang Kami, Layanan, Kontak, dll.)
 - Apakah diperlukan bagian blog atau berita
 - Apakah diperlukan fungsionalitas *e-commerce*
 - Fitur atau integrasi khusus
 
-### 5. Tinjauan dan Konfirmasi
+### 5. Tinjauan dan Konfirmasi {#5-review-and-confirmation}
 
 - Ringkasan semua informasi yang diberikan
 - Konfirmasi sebelum proses pembuatan desain dimulai
 
-## Praktik Terbaik Unggah Foto
+## Praktik Terbaik Unggah Foto {#photo-upload-best-practices}
 
-### Apa yang Harus Diunggah
+### Apa yang Harus Diunggah {#what-to-upload}
 
 - **Inspirasi merek** — logo, *color swatch*, atau panduan merek
 - **Situs pesaing** — tangkapan layar situs yang Anda kagumi
@@ -80,7 +80,7 @@ Foto yang Anda unggah membantu Theme Builder memahami:
 - **Foto tim atau kantor** — untuk *branding* pribadi atau profesional
 - **Gambar gaya hidup** — yang mewakili target audiens Anda
 
-### Apa yang Harus Dihindari
+### Apa yang Harus Dihindari {#what-to-avoid}
 
 - **Gambar berkualitas rendah** — foto yang buram atau berpiksel
 - **Gambar yang tidak relevan** — foto yang tidak mewakili merek Anda
@@ -88,7 +88,7 @@ Foto yang Anda unggah membantu Theme Builder memahami:
 - **Materi berhak cipta** — pastikan Anda memiliki hak untuk menggunakan gambar tersebut
 - **GIF animasi** — hanya gambar statis yang diproses
 
-### Tips untuk Hasil Terbaik
+### Tips untuk Hasil Terbaik {#tips-for-best-results}
 
 1. **Unggah 2-3 gambar** — beberapa gambar memberikan konteks yang lebih baik
 2. **Gunakan foto berkualitas tinggi** — gambar yang jelas dan pencahayaan yang baik bekerja paling baik
@@ -96,7 +96,7 @@ Foto yang Anda unggah membantu Theme Builder memahami:
 4. **Berikan konteks** — jelaskan secara singkat mengapa Anda memilih setiap gambar
 5. **Bersikap spesifik** — jika Anda menyukai elemen tertentu, tunjukkan elemen tersebut
 
-## Hasil Arah Desain
+## Hasil Arah Desain {#design-direction-output}
 
 Setelah Wawancara Penemuan, Theme Builder akan menghasilkan:
 
@@ -106,7 +106,7 @@ Setelah Wawancara Penemuan, Theme Builder akan menghasilkan:
 - **Elemen visual** — ikon, pola, dan elemen dekoratif
 - **Mood board** — representasi visual dari arah desain
 
-## Langkah Selanjutnya
+## Langkah Selanjutnya {#next-steps}
 
 Setelah menyelesaikan Wawancara Penemuan:
 
@@ -115,7 +115,7 @@ Setelah menyelesaikan Wawancara Penemuan:
 3. Lanjutkan ke langkah [Design Direction](./design-direction.md)
 4. Theme Builder akan membuat tema kustom Anda
 
-## Dokumentasi Terkait
+## Dokumentasi Terkait {#related-documentation}
 
 - [Design Direction](./design-direction.md) — tinjau dan sempurnakan desain Anda
 - [Hospitality Menus](./hospitality-menus.md) — buat halaman menu terstruktur

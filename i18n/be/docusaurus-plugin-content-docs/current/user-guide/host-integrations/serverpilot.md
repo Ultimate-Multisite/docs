@@ -3,17 +3,17 @@ title: Інтыграцыя ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Інтеграцыя з ServerPilot
+# Інтеграцыя з ServerPilot {#serverpilot-integration}
 
-## Агляд
+## Агляд {#overview}
 ServerPilot — гэта хмарвая паслуга для хасцінгу сайтаў WordPress і іншых PHP-сайтаў на серверах DigitalOcean, Amazon, Google або любым іншым пастаўшчыку сервера. Гэтая интеграцыя дазваляе аўтаматычна выпраўляць домены і кіраваць сертыфікатам SSL паміж Ultimate Multisite і ServerPilot.
 
-## Функцыі
+## Функцыі {#features}
 - Аўтаматычнае выпраўленне доменаў
 - Кіраванне сертыфікатам SSL з Let's Encrypt
 - Аўтаматычнае пановленне SSL
 
-## Патрабаванні
+## Патрабаванні {#requirements}
 У наступных канстантах павінны быць вызначаны ў файле `wp-config.php`:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## Інструкцыі па наладзе
+## Інструкцыі па наладзе {#setup-instructions}
 
-### 1. Апісаць увайды ServerPilot API
+### 1. Апісаць увайды ServerPilot API {#1-get-your-serverpilot-api-credentials}
 
 1. Увайдзіце ў ваш дашборд ServerPilot
 2. Праййдзіце ў "Account" > "API"
 3. Стварыце новы API key, калі яго яшчэ няма
 4. Скопіруйце свой Client ID і API Key
 
-### 2. Апісаць App ID
+### 2. Апісаць App ID {#2-get-your-app-id}
 
 1. У дашбордзе ServerPilot праййдзіце ў "Apps"
 2. Выберыце апп, дзе хасціцца ваш WordPress multisite
 3. App ID бачны ў URL: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Дадаць канстанты ў wp-config.php
+### 3. Дадаць канстанты ў wp-config.php {#3-add-constants-to-wp-configphp}
 
 Дадайце наступныя канстанты ў ваш файл `wp-config.php`:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. Актываваць интеграцыю
+### 4. Актываваць интеграцыю {#4-enable-the-integration}
 
 1. У адмініструванні WordPress праййдзіце ў Ultimate Multisite > Settings
 2. Знайдзіце тэчку "Domain Mapping"
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. Актывуйце интеграцыю ServerPilot
 5. Націсніце "Save Changes"
 
-## Як гэта працуе
+## Як гэта працуе {#how-it-works}
 
-### Выпраўленне доменаў
+### Выпраўленне доменаў {#domain-syncing}
 
 Калі домен выпраўлены ў Ultimate Multisite:
 
@@ -66,7 +66,7 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 3. Яна адпраўляе абноўлены спіс у ServerPilot праз API
 4. ServerPilot абнаўляе спіс доменаў для вашага апп
 
-### Кіраванне сертыфікатам SSL
+### Кіраванне сертыфікатам SSL {#ssl-certificate-management}
 
 Пасля выпраўлення доменаў:
 
@@ -74,27 +74,27 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 2. ServerPilot займаецца выдачай і ўстаноўкай сертыфіката SSL выкарыстоўваючы Let's Encrypt
 3. ServerPilot таксама займаецца аўтаматычным пановленнем сертыфікатаў SSL
 
-## Пэрагмаванне сертыфіката SSL
+## Пэрагмаванне сертыфіката SSL {#ssl-certificate-verification}
 
 Інтеграцыя настроена на павышэнне колькасці спробаў пэрагмавання сертыфіката SSL для ServerPilot, бо ServerPilot можа патрабаваць трохі часу для выдачы і ўстаноўкі сертыфікатаў SSL. Па ўстаноўцы яна спрабуе да 5 разаў, але гэта можна адрэгуляваць выкарыстоўваючы фільтры.
 
-## Выяўленне праблем
+## Выяўленне праблем {#troubleshooting}
 
-### Праблемы з падключэннем API
+### Праблемы з падключэннем API {#api-connection-issues}
 - Праверце, што ваш Client ID і API Key правільныя
 - Праверце, што ваш App ID правільны
 - Убедзіцеся, што ваш акаўнт ServerPilot мае неабходныя права
 
-### Праблемы з сертыфікатам SSL
+### Праблемы з сертыфікатам SSL {#ssl-certificate-issues}
 - ServerPilot патрабуе, каб домены мелі правільныя DNS-запісы, якія ўказваюць на ваш сервер, перш чым выдаць сертыфікаты SSL
 - Калі сертыфікаты SSL не выдаляюцца, праверце, што вашы домены правільна ўказваюць на IP-адрэс вашага сервера
 - ServerPilot можа патрабаваць трохі часу для выдачы і ўстаноўкі сертыфікатаў SSL (завычайна 5-15 хвілін)
 
-### Домен не дададзены
+### Домен не дададзены {#domain-not-added}
 - Праверце журналы Ultimate Multisite на наяўнасць памылак
 - Убедзіцеся, што домен яшчэ не дададзены ў ServerPilot
 - Убедзіцеся, што ваш план ServerPilot падтрымлівае колькасць доменаў, якія вы дадаеце
 
-### Выбыленне домена
+### Выбыленне домена {#domain-removal}
 - На дазі знайшоны API ServerPilot не прадугледжвае спосаба выбылення адзіночных доменаў
 - Калі ў Ultimate Multisite выбываецца выпраўленне домена, интеграцыя абнавіць спіс доменаў у ServerPilot, каб выключыць выбыўшы домен

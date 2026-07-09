@@ -4,11 +4,11 @@ title: Filter - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 এটি স্ল্যাগ করা নেটওয়ার্ক অপশন ভ্যালুটি রিটার্ন করে।
 
-## প্যারামিটারসমূহ
+## প্যারামিটারসমূহ {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 | $option_name | `string` | অপশনটির নাম। |
 | $default | `mixed` | ডিফল্ট মান। |
 
-### Since
+### Since {#since}
 
 - 1.0.0
-### Source
+### Source {#source}
 
 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) ফাইলটির লাইন ১২৬-এ সংজ্ঞায়িত।
 
-## Returns
+## Returns {#returns}
 স্ল্যাগ করা নেটওয়ার্ক অপশন ভ্যালুটি।

@@ -3,11 +3,11 @@ title: Klientų atsiliepimai ir problemų pranešimas
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Klientų atsiliepimai ir problemų pranešimas
+# Klientų atsiliepimai ir problemų pranešimas {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 įdalo įdaila įtrauktą sistemą, kuri leidžia vartotojams pateikti atsiliepimus ir pranešti apie problemas tiesiogiai iš čatis antraukimo svetainės. Ši sistema apima sutikimų valdymą, automatinį pranešimo komandą ir AI pagalba su triagavimu backend'e.
 
-## 👍 Apsaukia (Thumbs-Down) mygtukas
+## 👍 Apsaukia (Thumbs-Down) mygtukas {#thumbs-down-button}
 
 Kiekvienas pateiktas AI asistento žinutė rodo **apsaucia (thumbs-down)** mygtuką (👎). Kai vartotojas jis spausčia, jis gali pažymėti atsakymą kaip nepagalvusingą arba neteisingą.
 
@@ -15,7 +15,7 @@ Kiekvienas pateiktas AI asistento žinutė rodo **apsaucia (thumbs-down)** mygtu
 - Spausčiant jis atidaro **Sutikimų valdymų modalu (Feedback Consent Modal)**.
 - Apsiliepimas susijęs su pokalbio srautu ir konkrečia žinute.
 
-## Sutikimų valdymų modalas (Feedback Consent Modal)
+## Sutikimų valdymų modalas (Feedback Consent Modal) {#feedback-consent-modal}
 
 Kai vartotojas spausčia apsaucia mygtuką, prieš bet kokios duomenys nebus išsiųsti sutikimų valdymas modalas. Modalas:
 
@@ -26,13 +26,13 @@ Kai vartotojas spausčia apsaucia mygtuką, prieš bet kokios duomenys nebus iš
 
 Apsiliepimas ne registruojamas, kol vartotojas juos nurodytai patvirtina.
 
-## Automatinis pranešimo žinutės banneris (Auto-Prompt Feedback Banner)
+## Automatinis pranešimo žinutės banneris (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 Pokalbio pabaigoje asistentas gali atsidaryti **automatinį pranešimo žinutės bannerį** – neįsivaidinę pranešimą, klausimą, ar sesija buvo naudinga.
 
 Šis banner pasirodo automatiškai pagal pokalbio ilgesnį ir rezultato kriterijus. Jis susijęs su tą pačia atsiliepimų dalinimo procesą kaip apsaucia mygtukas. Vartotojai gali atsirasti be pateikimo, jei nenaudojasi pranešimu.
 
-## /report-issue skaitmeninė komanda (Slash Command)
+## /report-issue skaitmeninė komanda (Slash Command) {#report-issue-slash-command}
 
 Vartotojai gali tiesiogiai įveikti atsiliepimų dalinimo procesą, įvykdant `/report-issue` komandą čatis antraukimo svetainės įvestyje. Ši komanda:
 
@@ -42,7 +42,7 @@ Tai leidžia vartotojams pridėti papildomą detales prieš siuntant.
 
 `/report-issue` komanda yra gyvena visuose pokalbo režimuose (inline, plaukštinė widgetis, visi ekrano).
 
-## AI-priešyra
+## AI-priešyra {#ai-assisted-triage}
 
 Pateiktas atsiliepimas yra siunamas į AI triažo laisą, kuris:
 

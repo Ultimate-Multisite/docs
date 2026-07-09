@@ -3,13 +3,13 @@ title: Ukwehlisela Uhlelo Ezingeni Eliphansi
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Ukwehlisela phansi uhlelo (v2)
+# Ukwehlisela phansi uhlelo (v2) {#downgrading-a-plan-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite version 2.x.**_
 
 Ukwehlisela phansi uhlelo noma okubhaliselwe kuyisenzo esivamile amakhasimende akho angasenza uma enesabelomali esilinganiselwe noma enqume ukuthi ngeke adinge izinsiza eziningi ukuze asebenzise isayithi lawo elingaphansi.
 
-## Indlela yokwehlisela phansi uhlelo
+## Indlela yokwehlisela phansi uhlelo {#how-to-downgrade-a-plan}
 
 Amakhasimende akho angakwazi ukwehlisela phansi uhlelo lwawo nganoma yisiphi isikhathi ngokungena ku-Dashboard yokuphatha yesayithi lawo elingaphansi bese achofoza **Shintsha** ngaphansi kwekhasi lawo le-Account.
 
@@ -25,7 +25,7 @@ Ukuze aqhubeke, umsebenzisi udinga nje ukuchofoza inkinobho ethi **Qedela Ukukho
 
 ![Ikhasi le-Account elibonisa ibhena yoshintsho lobulungu olulindile](/img/account-page/pending-change.png)
 
-### Kwenzekani lapho umsebenzisi ehlisela phansi uhlelo lwakhe
+### Kwenzekani lapho umsebenzisi ehlisela phansi uhlelo lwakhe {#what-happens-when-a-user-downgrades-their-plan}
 
 Kubalulekile ukuqaphela ukuthi ukwehlisela phansi uhlelo akuguquli ukulungiselelwa okukhona kusayithi elingaphansi lomsebenzisi.
 
@@ -37,7 +37,7 @@ Mayelana nokuthunyelwe okweqa umkhawulo obekwe ohlelweni, unezinketho ezi-3 ezah
 
 ![Ikhasi le-Network Admin Settings Sites elibonisa izinketho zokuziphatha lapho umkhawulo wokuthunyelwe weqiwe](/img/account-page/settings-sites-post-limit.png)
 
-### Kwenzekani enkokhelweni
+### Kwenzekani enkokhelweni {#what-happens-to-the-payment}
 
 Ku-version 2.0, akusadingi noma yiziphi izilungiso enkokhelweni mayelana nokubalwa ngokwengxenye yesikhathi.
 

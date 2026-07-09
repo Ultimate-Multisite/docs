@@ -3,7 +3,7 @@ title: PRO テーマ
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme で Admin Panel をカスタマイズする
+# PRO Theme で Admin Panel をカスタマイズする {#customizing-your-admin-panel-with-pro-theme}
 
 クライアント案件では、WordPress の管理 Dashboard でクライアント向けに独自の体験を提供する必要がよくあります。よりプロフェッショナルな外観と使い心地を探しているなら、PRO Theme が役立つかもしれません。
 

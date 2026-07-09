@@ -3,15 +3,15 @@ title: Hotelli- ja ravintola-alan ruokalistat
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality-ruokalistat
+# Hospitality-ruokalistat {#hospitality-menus}
 
 **Hospitality Menus** -ominaisuuden avulla Theme Builder voi luoda ja upottaa jäsenneltyjä ruoka- ja juomalistasivuja suoraan WordPress-sivustollesi.
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 Theme Builder voi nyt luoda ammattimaisia, jäsenneltyjä ruokalistasivuja hospitality-yrityksille, kuten ravintoloille, kahviloille, baareille ja catering-palveluille. Nämä ruokalistat integroituvat täysin sivustosi ulkoasuun, ja niitä voi päivittää ja hallita helposti.
 
-## Tuetut hospitality-tyypit
+## Tuetut hospitality-tyypit {#supported-hospitality-types}
 
 - **Ravintolat** — täyden palvelun ruokailuruokalistat
 - **Kahvilat** — kahvi- ja kevyiden annosten ruokalistat
@@ -21,9 +21,9 @@ Theme Builder voi nyt luoda ammattimaisia, jäsenneltyjä ruokalistasivuja hospi
 - **Ruokarekat** — liikkuvan ruokapalvelun ruokalistat
 - **Panimot ja viinitilat** — juomalistat kuvauksilla
 
-## Ruokalistan rakenne
+## Ruokalistan rakenne {#menu-structure}
 
-### Ruokalistakategoriat
+### Ruokalistakategoriat {#menu-categories}
 
 Ruokalistat järjestetään kategorioihin:
 
@@ -34,7 +34,7 @@ Ruokalistat järjestetään kategorioihin:
 - **Juomat** — juomat (alkoholilliset ja alkoholittomat)
 - **Erikoisuudet** — päivittäiset tai kausittaiset erikoisuudet
 
-### Ruokalistakohteen muoto
+### Ruokalistakohteen muoto {#menu-item-format}
 
 Jokainen ruokalistakohde sisältää:
 
@@ -49,7 +49,7 @@ Jokainen ruokalistakohde sisältää:
 }
 ```
 
-#### Kohteen kentät
+#### Kohteen kentät {#item-fields}
 
 | Kenttä | Tyyppi | Kuvaus |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Jokainen ruokalistakohde sisältää:
 | `allergens` | array | Yleiset allergeenit (pähkinät, äyriäiset jne.) |
 | `availability` | string | Milloin saatavilla (päivittäin, kausittain jne.) |
 
-## Hospitality-ruokalistojen luominen
+## Hospitality-ruokalistojen luominen {#creating-hospitality-menus}
 
-### Vaihe 1: Anna ruokalistatiedot
+### Vaihe 1: Anna ruokalistatiedot {#step-1-provide-menu-information}
 
 Kerro Theme Builderille ruokalistastasi:
 
@@ -71,7 +71,7 @@ Luo ravintolamenu italialaiselle ravintolalleni, jossa on alkupaloja,
 pasta-annoksia, pääruokia ja jälkiruokia. Sisällytä hinnat ja kuvaukset.
 ```
 
-### Vaihe 2: Theme Builder luo ruokalistan
+### Vaihe 2: Theme Builder luo ruokalistan {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Muotoilee hinnat ja kuvaukset
 5. Lisää ruokavalio- ja allergeenitiedot
 
-### Vaihe 3: Tarkista ja mukauta
+### Vaihe 3: Tarkista ja mukauta {#step-3-review-and-customize}
 
 Voit:
 
@@ -91,9 +91,9 @@ Voit:
 4. Päivittää kuvauksia ja ruokavaliotietoja
 5. Säätää tyylejä ja asettelua
 
-## Ruokalistan näyttövaihtoehdot
+## Ruokalistan näyttövaihtoehdot {#menu-display-options}
 
-### Koko ruokalistasivu
+### Koko ruokalistasivu {#full-menu-page}
 
 Oma sivu, joka näyttää koko ruokalistasi:
 
@@ -102,7 +102,7 @@ Oma sivu, joka näyttää koko ruokalistasi:
 - Tulostusystävällinen asettelu
 - Mobiiliresponsiivinen design
 
-### Ruokalistawidget
+### Ruokalistawidget {#menu-widget}
 
 Upota ruokalistaosioita muille sivuille:
 
@@ -111,7 +111,7 @@ Upota ruokalistaosioita muille sivuille:
 - Juomalista baarisivulla
 - Jälkiruokaesittely alatunnisteessa
 
-### Ruokalista-PDF
+### Ruokalista-PDF {#menu-pdf}
 
 Luo ladattava PDF-ruokalista:
 
@@ -120,9 +120,9 @@ Luo ladattava PDF-ruokalista:
 - Sisältää kuvat ja kuvaukset
 - Helppo jakaa ja lähettää sähköpostitse
 
-## Ruokavalio- ja allergeenitiedot
+## Ruokavalio- ja allergeenitiedot {#dietary-and-allergen-information}
 
-### Ruokavalio-ominaisuudet
+### Ruokavalio-ominaisuudet {#dietary-attributes}
 
 Merkitse kohteet ruokavaliotiedoilla:
 
@@ -134,7 +134,7 @@ Merkitse kohteet ruokavaliotiedoilla:
 - **Vähähiilihydraattinen** — vähemmän hiilihydraatteja
 - **Runsasproteiininen** — proteiinipitoinen
 
-### Allergeenivaroitukset
+### Allergeenivaroitukset {#allergen-warnings}
 
 Sisällytä yleiset allergeenit:
 
@@ -147,9 +147,9 @@ Sisällytä yleiset allergeenit:
 - **Gluteeni** — vehnä ja gluteenia sisältävät viljat
 - **Seesami** — seesaminsiemenet ja -öljy
 
-## Ruokalistan hallinta
+## Ruokalistan hallinta {#menu-management}
 
-### Hintojen päivittäminen
+### Hintojen päivittäminen {#updating-prices}
 
 Päivitä ruokalistan hinnat helposti:
 
@@ -159,7 +159,7 @@ Päivitä ruokalistan hinnat helposti:
 4. Tallenna muutokset
 5. Muutokset näkyvät heti sivustollasi
 
-### Kausikohteiden lisääminen
+### Kausikohteiden lisääminen {#adding-seasonal-items}
 
 Luo kausittaisia ruokalistavariaatioita:
 
@@ -169,7 +169,7 @@ Luo kausittaisia ruokalistavariaatioita:
 4. Ajasta saatavuuspäivämäärät
 5. Näytä automaattisesti kauden aikana
 
-### Erikoisuuksien hallinta
+### Erikoisuuksien hallinta {#managing-specials}
 
 Näytä päivittäisiä tai viikoittaisia erikoisuuksia:
 
@@ -179,7 +179,7 @@ Näytä päivittäisiä tai viikoittaisia erikoisuuksia:
 4. Päivitä päivittäin tai viikoittain
 5. Arkistoi vanhat erikoisuudet
 
-## Integraatio Theme Builderin kanssa
+## Integraatio Theme Builderin kanssa {#integration-with-theme-builder}
 
 Kun käytät Theme Builderia hospitality-sivustoille:
 
@@ -189,9 +189,9 @@ Kun käytät Theme Builderia hospitality-sivustoille:
 4. **Mobiilioptimointi** — ruokalistat näkyvät kauniisti puhelimissa
 5. **SEO-optimointi** — ruokalistat ovat hakukoneystävällisiä
 
-## Parhaat käytännöt
+## Parhaat käytännöt {#best-practices}
 
-### Ruokalistan design
+### Ruokalistan design {#menu-design}
 
 - **Selkeä järjestys** — looginen kategoriorakenne
 - **Luettavat kuvaukset** — houkuttelevat ja informatiiviset
@@ -199,7 +199,7 @@ Kun käytät Theme Builderia hospitality-sivustoille:
 - **Ammattimaiset kuvat** — korkealaatuiset ruokakuvat
 - **Tyhjä tila** — älä ahtaa sivua liian täyteen
 
-### Sisältö
+### Sisältö {#content}
 
 - **Tarkat kuvaukset** — kuvaile kohteet täsmällisesti
 - **Korosta erikoisuuksia** — tee erikoisuuksista erottuvia
@@ -207,7 +207,7 @@ Kun käytät Theme Builderia hospitality-sivustoille:
 - **Päivitä säännöllisesti** — pidä hinnat ja kohteet ajan tasalla
 - **Käytä houkuttelevaa kieltä** — saa kohteet kuulostamaan herkullisilta
 
-### Saavutettavuus
+### Saavutettavuus {#accessibility}
 
 - **Luettavat fontit** — käytä selkeitä, helposti luettavia kirjasintyyppejä
 - **Riittävä kontrasti** — varmista, että teksti on luettavaa
@@ -215,9 +215,9 @@ Kun käytät Theme Builderia hospitality-sivustoille:
 - **Allergeenivaroitukset** — näytä allergeenit näkyvästi
 - **Mobiiliystävällinen** — testaa kaikilla laitteilla
 
-## Esimerkit
+## Esimerkit {#examples}
 
-### Ravintolan ruokalistan rakenne
+### Ravintolan ruokalistan rakenne {#restaurant-menu-structure}
 
 ```
 Alkupalat
@@ -241,7 +241,7 @@ Jälkiruoat
 └── Gelato-valikoima
 ```
 
-### Kahvilan valikkorakenne
+### Kahvilan valikkorakenne {#cafe-menu-structure}
 
 ```
 Kahvi
@@ -260,7 +260,7 @@ Voileivät
 └── Kasviswrap
 ```
 
-## Aiheeseen liittyvät ominaisuudet
+## Aiheeseen liittyvät ominaisuudet {#related-features}
 
 - [Luo valikko](../abilities/create-menu.md) — luo navigointivalikoita
 - [Suunnittelusuunta](./design-direction.md) — mukauta sivustosi suunnittelua

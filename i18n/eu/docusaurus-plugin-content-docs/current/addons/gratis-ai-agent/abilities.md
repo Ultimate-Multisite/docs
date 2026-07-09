@@ -3,7 +3,7 @@ title: Gaitasunen erreferentzia
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Gaitasunen erreferentzia
+# Gaitasunen erreferentzia {#abilities-reference}
 
 Gaitasunak Gratis AI Agent-ek zure WordPress instalazioan deitu ditzakeen ekintza atomikoak dira. Gaitasun bakoitza erregistratutako PHP klase bat da, JSON eskema bat azaltzen duena — agent-ek eskema hori exekuzioan irakurtzen du, zer parametro behar diren eta gaitasunak zer itzultzen duen ulertzeko.
 
@@ -11,11 +11,11 @@ Orrialde honek Gratis AI Agent v1.9.0-rekin datozen gaitasun guztiak dokumentatz
 
 ---
 
-## Mezu mota pertsonalizatuak
+## Mezu mota pertsonalizatuak {#custom-post-types}
 
 Gaitasun hauek agent-en bidez erregistratutako mezu mota pertsonalizatuak (CPTak) kudeatzen dituzte. Erregistroak WordPress aukeren taulan gordetzen dira, plugin desaktibatu eta berraktibatu ondoren ere iraun dezaten.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Mezu mota pertsonalizatu berri bat erregistratzen du.
 
@@ -50,7 +50,7 @@ Mezu mota pertsonalizatu berri bat erregistratzen du.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Agent-ek erregistratutako mezu mota pertsonalizatu guztiak itzultzen ditu.
 
@@ -73,7 +73,7 @@ Agent-ek erregistratutako mezu mota pertsonalizatu guztiak itzultzen ditu.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Agent-ek aurrez erregistratutako mezu mota pertsonalizatu bat deserrregistratzen du. Mota horretako lehendik dauden mezuak datu-basean geratzen dira, baina ez dira gehiago eskuragarri egongo mezu motaren bidez.
 
@@ -87,11 +87,11 @@ Agent-ek aurrez erregistratutako mezu mota pertsonalizatu bat deserrregistratzen
 
 ---
 
-## Taxonomia pertsonalizatuak
+## Taxonomia pertsonalizatuak {#custom-taxonomies}
 
 Gaitasun hauek taxonomia pertsonalizatuak kudeatzen dituzte. CPTekin bezala, taxonomia-erregistroak gordeta mantentzen dira.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Taxonomia pertsonalizatu berri bat erregistratzen du.
 
@@ -123,7 +123,7 @@ Taxonomia pertsonalizatu berri bat erregistratzen du.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Agent-ek erregistratutako taxonomia pertsonalizatu guztiak itzultzen ditu.
 
@@ -146,7 +146,7 @@ Agent-ek erregistratutako taxonomia pertsonalizatu guztiak itzultzen ditu.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Agent-ek aurrez erregistratutako taxonomia pertsonalizatu bat deserrregistratzen du.
 
@@ -160,11 +160,11 @@ Agent-ek aurrez erregistratutako taxonomia pertsonalizatu bat deserrregistratzen
 
 ---
 
-## Diseinu-sistema
+## Diseinu-sistema {#design-system}
 
 Diseinu-sistemaren gaitasunek WordPress gunearen aurkezpen bisuala aldatzen dute — CSS pertsonalizatutik bloke-ereduetara eta gunearen logotipora.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 CSS eransten dio gunearen `<head>` atalari `wp_add_inline_style` bidez. CSS `gratis_ai_agent_custom_css` aukeran gordetzen da, eta gaitasuna berrezartzen denean garbi kentzen da ilaratik.
 
@@ -190,7 +190,7 @@ CSS eransten dio gunearen `<head>` atalari `wp_add_inline_style` bidez. CSS `gra
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 WordPress ereduen liburutegian berrerabil daitekeen bloke-eredu bat erregistratzen du.
 
@@ -209,7 +209,7 @@ WordPress ereduen liburutegian berrerabil daitekeen bloke-eredu bat erregistratz
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Agent-ek erregistratutako bloke-eredu guztiak zerrendatzen ditu.
 
@@ -231,7 +231,7 @@ Agent-ek erregistratutako bloke-eredu guztiak zerrendatzen ditu.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 WordPress gunearen logotipoa emandako eranskin-ID batera edo urruneko irudi-URL batera ezartzen du. URL bat ematen denean, irudia deskargatu eta Media Library-ra inportatzen da.
 
@@ -248,7 +248,7 @@ WordPress gunearen logotipoa emandako eranskin-ID batera edo urruneko irudi-URL 
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Izendatutako kolore/tipografia aurrezarpen bat aplikatzen dio aktibo dagoen themearen `theme.json`-i (edo `global-styles`-i). Aurrezarpenak Gratis AI Agent taldeak mantentzen dituen multzo zainduak dira.
 
@@ -273,11 +273,11 @@ Izendatutako kolore/tipografia aurrezarpen bat aplikatzen dio aktibo dagoen them
 
 ---
 
-## Estilo globalak
+## Estilo globalak {#global-styles}
 
 Estilo globalen gaitasunek theme.json balioak irakurri eta idazten dituzte WordPress Global Styles API-ren bidez, gune osoko bloke eta txantiloi guztiei eraginez.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Uneko estilo globalen konfigurazioa itzultzen du.
 
@@ -291,7 +291,7 @@ Uneko estilo globalen konfigurazioa itzultzen du.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Estilo globalen konfigurazioko balio bat edo gehiago eguneratzen ditu.
 
@@ -318,7 +318,7 @@ Estilo globalen konfigurazioko balio bat edo gehiago eguneratzen ditu.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Agenteak aplikatutako estilo globalen aldaketa guztiak berrezartzen ditu, themearen balio lehenetsiak leheneratuz.
 
@@ -328,11 +328,11 @@ Agenteak aplikatutako estilo globalen aldaketa guztiak berrezartzen ditu, themea
 
 ---
 
-## Nabigazio-menuak
+## Nabigazio-menuak {#navigation-menus}
 
 Nabigazio-menuen gaitasunek WordPress nabigazio-menuak eta haien elementuak sortu eta kudeatzen dituzte.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 WordPress nabigazio-menu berri bat sortzen du.
 
@@ -347,7 +347,7 @@ WordPress nabigazio-menu berri bat sortzen du.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Menu bati izena aldatzen dio edo theme kokaleku batera berriro esleitzen du.
 
@@ -363,7 +363,7 @@ Menu bati izena aldatzen dio edo theme kokaleku batera berriro esleitzen du.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Elementu bat gehitzen dio lehendik dagoen nabigazio-menu bati.
 
@@ -383,7 +383,7 @@ Elementu bat gehitzen dio lehendik dagoen nabigazio-menu bati.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Elementu bat kentzen du nabigazio-menu batetik.
 
@@ -397,7 +397,7 @@ Elementu bat kentzen du nabigazio-menu batetik.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 WordPress nabigazio-menu guztiak zerrendatzen ditu, esleituta dituzten theme kokalekuak barne.
 
@@ -420,11 +420,11 @@ WordPress nabigazio-menu guztiak zerrendatzen ditu, esleituta dituzten theme kok
 
 ---
 
-## Aukeren kudeaketa
+## Aukeren kudeaketa {#options-management}
 
 Aukeren gaitasunek WordPress aukerak irakurri eta idazten dituzte `get_option` / `update_option` bidez. Segurtasunerako blokeatze-zerrenda integratu batek ezarpen kritikoak ustekabean aldatzea eragozten du.
 
-### `get_option`
+### `get_option` {#getoption}
 
 WordPress aukera bat irakurtzen du.
 
@@ -440,7 +440,7 @@ Errore bat itzultzen du `option_name` segurtasuneko blokeatze-zerrendan badago.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 WordPress aukera bat idazten du.
 
@@ -458,7 +458,7 @@ Errore bat itzultzen du `option_name` segurtasun-blokeo zerrendan badago.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 WordPress aukera bat ezabatzen du.
 
@@ -474,7 +474,7 @@ Errore bat itzultzen du `option_name` segurtasun-blokeo zerrendan badago.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Eredu batekin bat datozen WordPress aukerak zerrendatzen ditu.
 
@@ -498,11 +498,11 @@ Eredu batekin bat datozen WordPress aukerak zerrendatzen ditu.
 
 ---
 
-## Edukiaren kudeaketa
+## Edukiaren kudeaketa {#content-management}
 
 Edukiaren kudeaketa gaitasunek WordPress sarrerak eta orriak sortu eta editatzen dituzte. Sarreren IDak itzultzen dira, gaitasun anitzeko planen hurrengo urratsek sortutako edukia erreferentzia dezaten.
 
-### `create_post`
+### `create_post` {#createpost}
 
 WordPress sarrera, orri edo pertsonalizatutako sarrera mota berri bat sortzen du.
 
@@ -537,7 +537,7 @@ WordPress sarrera, orri edo pertsonalizatutako sarrera mota berri bat sortzen du
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Lehendik dagoen WordPress sarrera edo orri bat eguneratzen du.
 
@@ -567,7 +567,7 @@ Lehendik dagoen WordPress sarrera edo orri bat eguneratzen du.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Sarrera anitz sortzen ditu gaitasun-dei bakar batean, joan-etorriak murriztuz guneen eraikuntzetan edo eduki-inportazio masiboan. Sarrerak sekuentzian sortzen dira; batek huts egiten badu, besteek jarraitzen dute eta hutsegitea emaitzen array-an jakinarazten da.
 
@@ -619,7 +619,7 @@ Sarrera anitz sortzen ditu gaitasun-dei bakar batean, joan-etorriak murriztuz gu
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Nabarmendutako irudi bat (sarreraren miniatura) esleitzen dio lehendik dagoen sarrera edo orri bati. Lehendik dagoen Media Library eranskin-ID bat edo urruneko irudi-URL bat onartzen du; URL bat ematen denean, irudia automatikoki deskargatu eta inportatzen da.
 
@@ -638,7 +638,7 @@ Nabarmendutako irudi bat (sarreraren miniatura) esleitzen dio lehendik dagoen sa
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Kontaktu-inprimaki bat sortzen du aktibo dagoen inprimaki-plugin-a erabiliz (Contact Form 7, WPForms, Fluent Forms edo Gravity Forms, instalatuta dagoenaren arabera). Edozein sarreratan edo orritan txerta daitekeen shortcode bat itzultzen du.
 
@@ -691,11 +691,11 @@ Kontaktu-inprimaki bat sortzen du aktibo dagoen inprimaki-plugin-a erabiliz (Con
 
 ---
 
-## Ikusizko berrikuspena
+## Ikusizko berrikuspena {#visual-review}
 
 Ikusizko berrikuspenaren gaitasunek agenteari zuzeneko orrien pantaila-argazkiak ateratzeko eta aztertzeko aukera ematen diote; horri esker, diseinuaren berrikuspen autonomoa, aurretik/ondoren konparazioak eta ikusizko erregresio-egiaztapenak egin daitezke, nabigatzaile-luzapenik behar izan gabe.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 WordPress orri baten pantaila-argazkia ateratzen du emandako URL batean zerbitzari aldeko headless nabigatzaile bat erabiliz. Irudia Media Library-n gordetzen da eta CDN URL bat itzultzen da.
 
@@ -724,7 +724,7 @@ WordPress orri baten pantaila-argazkia ateratzen du emandako URL batean zerbitza
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Bi pantaila-argazki hartzen ditu eta ikusizko diferentzia-puntuazioa gehi aldatutako eskualdeak nabarmentzen dituen diferentzia-irudi bat itzultzen ditu. Erabilgarria da diseinu-aldaketa batek espero zen emaitza sortu duela baieztatzeko edo nahi gabeko erregresioak detektatzeko.
 
@@ -754,7 +754,7 @@ Bi pantaila-argazki hartzen ditu eta ikusizko diferentzia-puntuazioa gehi aldatu
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Orri baten pantaila-argazkia ateratzen du eta hizkuntza-eredura bidaltzen du ikusizko analisirako. Ebaluazio egituratu bat itzultzen du, diseinua, tipografia, koloreen erabilera eta irisgarritasun-kezkak barne hartuta.
 
@@ -785,11 +785,11 @@ Orri baten pantaila-argazkia ateratzen du eta hizkuntza-eredura bidaltzen du iku
 
 ---
 
-## Instalatzeko gaitasunak
+## Instalatzeko gaitasunak {#installable-abilities}
 
 Instalatzeko gaitasunen erregistroak agenteari WordPress plugin gisa banatutako gaitasun-pakete gehigarriekin hedatzeko aukera ematen dio. Pakete bakoitzak gaitasun bat edo gehiago erregistratzen ditu gaitasunen API estandarra erabiliz.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Erregistrotik instalatzeko eskuragarri dauden gaitasun-paketeen katalogoa itzultzen du.
 
@@ -818,7 +818,7 @@ Erregistrotik instalatzeko eskuragarri dauden gaitasun-paketeen katalogoa itzult
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Gaitasun-pakete bat erregistrotik deskargatu eta aktibatzen du.
 
@@ -832,7 +832,7 @@ Gaitasun-pakete bat erregistrotik deskargatu eta aktibatzen du.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Gaitasunen erregistroa kontsultatzen du deskribatutako erabilera-kasu baterako plugin onena aurkitzeko eta, aukeran, instalatzeko.
 

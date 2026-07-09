@@ -3,28 +3,28 @@ title: Forbhreathnú ar REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tagairt REST API
+# Tagairt REST API {#rest-api-reference}
 
-## Bunchumraíocht
+## Bunchumraíocht {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Fíordheimhniú:** API Key & Secret (HTTP Basic Auth nó Paraiméadair URL)
 
-## Fíordheimhniú
+## Fíordheimhniú {#authentication}
 
-### Cumasaigh API
+### Cumasaigh API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Faigh Dintiúir API
+### Faigh Dintiúir API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Modhanna Fíordheimhnithe
+### Modhanna Fíordheimhnithe {#authentication-methods}
 
 **HTTP Basic Auth (Molta):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Príomhchríochphointí
+## Príomhchríochphointí {#core-endpoints}
 
-### 1. API Custaiméirí
+### 1. API Custaiméirí {#1-customers-api}
 
 **Bunbhealach:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Suíomhanna
+### 2. API Suíomhanna {#2-sites-api}
 
 **Bunbhealach:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Ballraíochtaí
+### 3. API Ballraíochtaí {#3-memberships-api}
 
 **Bunbhealach:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Táirgí
+### 4. API Táirgí {#4-products-api}
 
 **Bunbhealach:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Íocaíochtaí
+### 5. API Íocaíochtaí {#5-payments-api}
 
 **Bunbhealach:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Fearann
+### 6. API Fearann {#6-domains-api}
 
 **Bunbhealach:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Críochphointe Clárúcháin
+## Críochphointe Clárúcháin {#registration-endpoint}
 
 Soláthraíonn an críochphointe `/register` sreabhadh iomlán seiceála amach/clárúcháin:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Críochphointí Tionóntaí Ceannasacha
+## Críochphointí Tionóntaí Ceannasacha {#sovereign-tenant-endpoints}
 
 Cuireann Ultimate Multisite: Multi-Tenancy 1.2.0 clúdach REST do thionóntaí ceannasacha leis le haghaidh comhtháthuithe a dhéanann soláthar, iniúchadh, nó fíorú ar thionóntaí leithlisithe.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 Caith le `ready: false` mar bhacóir réamh-sheolta. Seiceáil sonraí an fhíoraithe, ceartaigh ceangal óstaigh an bhunachair sonraí, an ciú, soláthar úsáideora, nó fadhb ródaithe, ansin déan an fíorú arís.
 
-## Freagairtí Earráide
+## Freagairtí Earráide {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Caith le `ready: false` mar bhacóir réamh-sheolta. Seiceáil sonraí an fhíor
 }
 ```
 
-## Leathanachú agus Scagadh
+## Leathanachú agus Scagadh {#pagination-and-filtering}
 
 **Paraiméadair Iarratais:**
 ```http

@@ -4,22 +4,22 @@ title: Hereket - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Hereket: wu_membership_post_cancel
+# Hereket: wu_membership_post_cancel {#action-wumembershippostcancel}
 
 Agzalyk ýatyrylandan soň işledilýär.
 
 Bu ýatyrma emailini işledýär.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Ady | Görnüşi | Düşündiriş |
 |------|------|-------------|
 | $membership_id | `int` | Agzalygyň ID-si. |
 | $membership | `\WP_Ultimo\Models\Membership` | Agzalyk obýekti. |
 
-### Şondan bäri
+### Şondan bäri {#since}
 
 - 2.0
-### Çeşme
+### Çeşme {#source}
 
 [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2290) içinde, 2290-njy setirde kesgitlenen

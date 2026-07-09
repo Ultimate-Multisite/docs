@@ -4,11 +4,11 @@ title: Lim - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Lim seb puas yuav siv tus nqi signup fee los tsis siv.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Lim seb puas yuav siv tus nqi signup fee los tsis siv.
 | $product | `object` | Membership level object. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Registration object. |
 
-### Txij li
+### Txij li {#since}
 
 - 3.1
-### Source
+### Source {#source}
 
 Teev tseg hauv [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) ntawm kab 1769

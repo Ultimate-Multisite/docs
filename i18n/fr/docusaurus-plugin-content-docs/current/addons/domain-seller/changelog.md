@@ -3,7 +3,7 @@ title: Journal des modifications de Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Journal des modifications de Domain Seller
+# Journal des modifications de Domain Seller {#domain-seller-changelog}
 
 Version 1.3.0 - Publiée le 2026-06-02
 - Nouveau : ajout d’un avertissement network-admin lorsque le solde revendeur HostAfrica devient trop faible
@@ -136,20 +136,20 @@ Version 1.0.0 - Publiée le 2025-09-28
 * **Corrigé :** Tout le code v1 obsolète mis à jour aux standards v2
 * **Supprimé :** Compatibilité héritée v1 (changement cassant)
 
-### Versions précédentes (v1 héritée)
+### Versions précédentes (v1 héritée) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Corrigé : Incompatibilité avec Groundhogg CRM
 * Note : Il s’agissait de la dernière version compatible v1
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Corrigé : Suppression du champ License Key
 * Corrigé : Onglets de plan manquants lorsque le plugin de fonctionnalité est actif
 * Amélioré : Ajout d’un bouton ignorer sur le champ d’inscription
 
-### Version 0.0.1 - Version initiale
+### Version 0.0.1 - Version initiale {#version-001---initial-release}
 
 * Intégration OpenSRS de base pour WP Ultimo v1
 * Recherche et enregistrement de domaine simples

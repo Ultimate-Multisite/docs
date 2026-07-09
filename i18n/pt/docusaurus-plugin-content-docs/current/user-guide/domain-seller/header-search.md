@@ -3,11 +3,11 @@ title: Pesquisa de domínio no cabeçalho
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Pesquisa de domínio no cabeçalho
+# Pesquisa de domínio no cabeçalho {#header-domain-search}
 
 Use esta configuração quando quiser um pequeno formulário no cabeçalho que inicia uma pesquisa de domínio e depois permite que o cliente escolha entre os domínios disponíveis dentro do checkout do Ultimate Multisite.
 
-## Requisitos
+## Requisitos {#requirements}
 
 - Ultimate Multisite ativo na rede.
 - Multisite Ultimate Domain Seller ativo na rede.
@@ -16,7 +16,7 @@ Use esta configuração quando quiser um pequeno formulário no cabeçalho que i
   - TLDs suportados configurados, por exemplo `com`, `net` e `org`.
 - Um formulário de checkout válido contendo o campo **Seleção de domínio**.
 
-## Formulário de checkout
+## Formulário de checkout {#checkout-form}
 
 1. Crie ou edite o formulário de checkout usado pela página de registo.
 2. Adicione os campos normais obrigatórios de checkout/Account, incluindo **Nome de utilizador**. Um formulário de checkout contendo apenas o campo de domínio é rejeitado pela validação do Ultimate Multisite.
@@ -30,7 +30,7 @@ A página de registo deve apresentar o formulário de checkout, por exemplo:
 [wu_checkout slug="domain-form"]
 ```
 
-## Formulário do cabeçalho
+## Formulário do cabeçalho {#header-form}
 
 Adicione um pequeno formulário `GET` no cabeçalho do site que envia o termo de pesquisa introduzido para a página de checkout como `domain_name`:
 
@@ -44,7 +44,7 @@ Adicione um pequeno formulário `GET` no cabeçalho do site que envia o termo de
 
 Não pré-selecione um domínio em JavaScript personalizado do cabeçalho. O cabeçalho deve apenas passar o termo de pesquisa. O script de checkout do Domain Seller lê `?domain_name=example`, preenche a caixa de pesquisa do checkout e executa a pesquisa de disponibilidade para que o cliente possa escolher entre os domínios devolvidos.
 
-## Comportamento esperado
+## Comportamento esperado {#expected-behaviour}
 
 Pesquisar `example` no cabeçalho deve abrir:
 
@@ -61,7 +61,7 @@ O checkout deve então apresentar resultados selecionáveis como:
 
 Depois de selecionar um resultado disponível, o resumo da encomenda deve incluir o produto de registo de domínio e o nome de domínio selecionado.
 
-## Verificação
+## Verificação {#verification}
 
 1. Abra a página inicial.
 2. Pesquise um nome simples, por exemplo `example`.
@@ -71,7 +71,7 @@ Depois de selecionar um resultado disponível, o resumo da encomenda deve inclui
 6. Clique em **Selecionar** para um domínio disponível.
 7. Confirme que o resumo da encomenda contém `Domain Registration - example.com` ou o domínio selecionado.
 
-## Resolução de problemas
+## Resolução de problemas {#troubleshooting}
 
 - Se não aparecer nenhuma lista, verifique o separador de rede do navegador para `admin-ajax.php?action=wu_domain_search` e confirme que devolve `domains` ou `results` não vazios.
 - Se a validação do formulário de checkout falhar ao guardar, adicione os campos de Account obrigatórios, como **Nome de utilizador**.

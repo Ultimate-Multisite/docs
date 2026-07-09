@@ -3,7 +3,7 @@ title: Mailchimpi muudatuste logi
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimpi muudatuste logi
+# Mailchimpi muudatuste logi {#mailchimp-changelog}
 
 Versioon: 1.1.1 - Välja antud 2025-09-28
 

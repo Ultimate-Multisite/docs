@@ -3,9 +3,9 @@ title: Migreerimine V1-ist
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migratsioon V1-istestest
+# Migratsioon V1-istestest {#migrating-from-v1}
 
-## Ultimate Multisite on siinist V1.x versioon 2.x versioon.
+## Ultimate Multisite on siinist V1.x versioon 2.x versioon. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versioon 2.0 ja hilisem on täielik uudisversioon (rewrite) kogu koodisaadme, mida meil on väga vähe ühtsamust vanu ja uue versiooni vahel. Selle tõttu tuleb, kui uuendate V1.x-ist V2.x-ile, teie andmeid migreerida formaatti, mida uued versioonid mõistavad.
 
@@ -15,7 +15,7 @@ See õppetunn on ülevaate sellest, kuidas migratsor töötab, mida teha vika ko
 
 _**TÄHTIS: Enne alustamist uuendamiseks versioonist 1.x versioonist versioonile 2.0 veidi veenduge, et te saate oma sainiandmebaasi (database) koopia.*_
 
-## Esimlikud sammud
+## Esimlikud sammud {#first-steps}
 
 Esimlikku sammu on allalaadida plugin .zip-fail ja installida versioon 2.0 oma võrku administraatoripaneelile.
 
@@ -47,19 +47,19 @@ Koodi pärast sisestamist klõpsake **Arvesta ja aktiveeri**.
 
 Lisentsaktivateerimise pärast saate algata tõelise installimise klõpsama järgmise lehekülil **Install**. See luuab automaatselt vajalikud failid ja database, mis on v2.0 versiooni toimimiseks vajalikud.
 
-## Nüüd migratsioon
+## Nüüd migratsioon {#now-the-migration}
 
 Migratsoril on sisse sisse sisse sisse sisemine turvalisus, mis kontrollib teie kogu multisite'i, et kõik Ultimate Multisite andmed saab migreerida ilma probleemide ilma. Alustage protsess **Run Check** (Kontrolli käivitamine) nupuga.
 
 Järgmiselt kontrolli käivitamise pärast on kaks võimalust: tulemus võib olla kas **või** viga või **välja**.
 
-### Viga korral
+### Viga korral {#with-error}
 
 Kui sa saavad viga sõnumit, pead meeldiva meie toetusemeeskonale kontaktide ja nad võivad sind aidata viga lahendamas. Pärast tikuga (ticket) luomist on kindlustatud, et **annete logi** annate. Saate logi allalaadida või klikata linki, mis ütleb "vaata meie toetusemeeskonale". See avab abikasti-widgeti teie lehe paremal pool, kus sul on ette pandud väljad, millel viga logid on kirjutatud kirjelduses.
 
 _**Selle, et süsteem leidis viga, ei saa te jätkata migratsiooni versioon 2.0'sle. Siis saate tagasi versioon 1.x'le, et jätkata võrku käitamist kuni viga lahendamise.**_
 
-### Viga ilma korral
+### Viga ilma korral {#without-error}
 
 Kui süsteem viga ei leida, näete õnnestumise sõnumi ja allpool **Migrate** (Migreeri) nupuga, mis võimaldab teil migratsiooni jätkata. Sellele lehel teile on meeldiva tagada oma database-kohandiku enne edasi liikumist, mida me väga soovitamme. Klõpsake **Migrate**, kui teil juba kohandik on.
 

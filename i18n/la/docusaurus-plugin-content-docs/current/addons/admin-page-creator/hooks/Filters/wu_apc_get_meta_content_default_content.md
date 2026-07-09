@@ -4,11 +4,11 @@ title: Filtrum - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Filtrum: wu_apc_get_meta_content_default_content
+# Filtrum: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Permitte elaboratoribus valores praedefinitos filtrare
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Permitte elaboratoribus valores praedefinitos filtrare
 | $meta_type | `string` | Typus datorum meta recuperandorum. |
 | $meta_key | `string` | Nomen campi meta. |
 
-### Ab
+### Ab {#since}
 
 - 1.4.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) ad lineam 68
 
 
-## Reddit
+## Reddit {#returns}
 Novus valor praedefinitus.

@@ -3,11 +3,11 @@ title: مرجع WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# مرجع WP-CLI
+# مرجع WP-CLI {#wp-cli-reference}
 
 تطلق إضافة Gratis AI Agent مجموعة أوامر `wp gratis-ai-agent` لغرض قياس أداء الوكيل (agent)، وإدارة القدرات (abilities)، والاستعلام عن حالة الوكيل من سطر الأوامر. تتطلب جميع الأوامر استخدام WP-CLI إصدار 2.0 أو أعلى.
 
-## التثبيت (Installation)
+## التثبيت (Installation) {#installation}
 
 يتم تسجيل أوامر WP-CLI تلقائيًا بمجرد تفعيل الإضافة. للتحقق، استخدم الأمر التالي:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 يشغّل هذا الأمر مجموعة اختبارات قياس أداء قدرات الوكيل (Agent Capabilities benchmark suite) — وهي مجموعة من المطالبات المعقدة ومتعددة الخطوات التي تختبر كامل نطاق القدرات. استخدم هذا الأمر لتقييم أداء النموذج، أو مقارنة مزودي الذكاء الاصطناعي، أو التحقق من حزم القدرات قبل نشرها في بيئة الإنتاج.
 
-### الملخص (Synopsis)
+### الملخص (Synopsis) {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### الخيارات (Options)
+### الخيارات (Options) {#options}
 
 | الخيار | الوصف |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | تنسيق الإخراج: `table` (افتراضي)، `json`، `csv` |
 | `--save` | حفظ نتائج الاختبار في قاعدة البيانات للمقارنة التاريخية |
 
-### الأمثلة (Examples)
+### الأمثلة (Examples) {#examples}
 
 تشغيل مجموعة الاختبارات الكاملة باستخدام المزود والنموذج الحاليين:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### المخرجات (Output)
+### المخرجات (Output) {#output}
 
 يُخرج الاختبار صفًا واحدًا لكل سؤال ويحتوي على الأعمدة التالية:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### أسئلة الاختبار (Benchmark Questions)
+### أسئلة الاختبار (Benchmark Questions) {#benchmark-questions}
 
 تتضمن المجموعة الافتراضية ما يلي:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 يدير القدرات وحزم القدرات المثبتة.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 يسرد جميع القدرات المسجلة، ومصدرها (أساسي أو حزمة)، وحالتها الحالية.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 يقوم بتنزيل وتفعيل حزمة قدرات من السجل.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 يعطّل قدرة معينة دون إزالة الحزمة. مفيد لتقييد نطاق عمل الوكيل في موقع معين.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 يعيد تفعيل قدرة كانت معطلة سابقًا.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 يعرض التكوين الحالي للوكيل وحالة الاتصال.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 يعرض نشاط الوكيل الأخير من سجل التصحيح (debug log).
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 يعيد تعيين حالة الوكيل: يمسح CSS المُحقن، ويزيل أنواع المحتوى والتصنيفات المسجلة بواسطة الوكيل، ويعيد تعيين الأنماط العامة، ويفرغ ذاكرة التخزين المؤقت لخيارات الوكيل. لا يزيل الإضافة أو إعداداتها.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## رموز الخروج (Exit Codes)
+## رموز الخروج (Exit Codes) {#exit-codes}
 
 تخرج جميع الأوامر بالرمز `0` عند النجاح. رموز الخروج غير الصفرية:
 

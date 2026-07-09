@@ -3,11 +3,11 @@ title: Exemples de codi avançats
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Exemples de Codi Avançat
+# Exemples de Codi Avançat {#advanced-code-examples}
 
 Aquests exemples demostren patrons d'integració avançats amb Ultimate Multisite.
 
-## Motor de Preus Dinàmic
+## Motor de Preus Dinàmic {#dynamic-pricing-engine}
 
 Un motor de preus basat en regles que aplica descomtes per volum, fidelitat i temporada:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Provisió Avançada de Sites
+## Provisió Avançada de Sites {#advanced-site-provisioning}
 
 Configura automàticament nous sites amb plugins, SSL, CDN, còpies de seguretat i monitorització basant-se en les funcionalitats del pla:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistema de Limitacions Personalitzades
+## Sistema de Limitacions Personalitzades {#custom-limitations-system}
 
 Estau i aplicau límits de recursos amb advertències d'ús:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Contador Atòmic de BerlinDB amb `increment_item()`
+## Contador Atòmic de BerlinDB amb `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 ha afegit un mètode `increment_item()` a la classe `Query` de BerlinDB. Utilitzeu-ho per realitzar increments segurs i atòmics en columnes numèriques sense corres de lectura-modificació-escritura (read-modify-write races), útil per contadors, quotas d'ús i verificacions de limitació de taxa que es realitzen amb sol·licituds concurrents.
 
-### Signatura del mètode
+### Signatura del mètode {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 ha afegit un mètode `increment_item()` a la classe `Q
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Ús bàsic
+### Ús bàsic {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Seguiment de l'ús de API per membresia
+### Seguiment de l'ús de API per membresia {#tracking-api-usage-per-membership}
 
 Un patró pràctic per aplicar límits de taxa de l'API per membresia:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Per què `increment_item()` en lloc de `update_item()`
+### Per què `increment_item()` en lloc de `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Un aproximació ingenuïe de lectura-modificació-escritura (read-modify-write) no és segura amb sol·licituds concurrents:
 

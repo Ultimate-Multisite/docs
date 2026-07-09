@@ -3,7 +3,7 @@ title: Captchaৰ পৰিৱৰ্তনৰ তালিকা
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog
+# Captcha Changelog {#captcha-changelog}
 
 Version: 1.5.0 - Released on 2026-05-22
 * New: Hard-stop rate limiter — captcha-protected surfaces (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ত GET আৰু POST দুয়োটা গণনা কৰে আৰু HTTP 429, এটা `Retry-After` header, আৰু এটা random tarpit sleep (১–৫s, যাৰ সর্বোচ্চ সীমা ১৫s) লৈ উত্তৰ দিয়ে।

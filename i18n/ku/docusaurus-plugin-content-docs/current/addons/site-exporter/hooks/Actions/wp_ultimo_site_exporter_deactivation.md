@@ -4,13 +4,13 @@ title: Çalakî - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Çalakî: wp_ultimo_site_exporter_deactivation
+# Çalakî: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
 
 Bihêle beşên din ên plugin rêbazên xwe ji bo neçalakirinê pê ve bikin.
 
-### Ji guhertoya
+### Ji guhertoya {#since}
 
 - 1.9.6
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-hooks.php#L99) de li rêza 99 hatiye danasîn

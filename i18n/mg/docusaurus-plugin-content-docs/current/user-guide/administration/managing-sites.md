@@ -3,7 +3,7 @@ title: Fitairana ireo toerana
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Fitantanana ny Tranonkala
+# Fitantanana ny Tranonkala {#managing-sites}
 
 Ny Sites (na subsites) no fototry ny fandraharahanareo WaaS. Ny Ultimate Multisite dia manana karazana tranonkala 3:
 
@@ -11,13 +11,13 @@ Ny Sites (na subsites) no fototry ny fandraharahanareo WaaS. Ny Ultimate Multisi
 - **Site Templates** — Tranonkala efa vita izay azona atao safidy ho fanombohana avy amin'ny mpanjifa
 - **Main Site** — Ny tranonkala lehibe ao amin'ny tambajotra ankapobeny (network)
 
-## Fijerena ny Sites
+## Fijerena ny Sites {#viewing-sites}
 
 Mandehana any amin'ny **Ultimate Multisite → Sites** mba hijerena ireo subsites rehetra ao amin'ny tambajotranareo. Isan-tranonkala dia misy famantarana (label) mifanaraka amin'ny karazany ary afaka manao fitafiana (filter) amin'ny All Sites, Customer-Owned, Templates, na Pending ianao.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Fanampiana Site Vaovao
+## Fanampiana Site Vaovao {#adding-a-new-site}
 
 Tsindrio ny bokotra **Add Site** mba hamoronana site vaovao. Mila manome ireo zavatra ireto ianao:
 
@@ -27,15 +27,15 @@ Tsindrio ny bokotra **Add Site** mba hamoronana site vaovao. Mila manome ireo za
 
 Ny safidy **Copy Site** dia ahafahanao mamorona site vaovao mifototra amin'ny site template efa misy. Rehefa voafaka izany, afaka misafidy ny template tianao ho fanombohana ianao. Aza adino ny manao **Copy Media on Duplication** mba hampidirana ireo rakitra media.
 
-## Fitantanana Site Efa Misy
+## Fitantanana Site Efa Misy {#managing-an-existing-site}
 
 Tsindrio **Manage** eo amin'ny site rehetra mba hanokafana ny pejy **Edit Site**. Ity no toerana ahitanao:
 
-### Fampahalalana Fototra (Basic Information)
+### Fampahalalana Fototra (Basic Information) {#basic-information}
 
 Ny anaran'ny site, karazany, ID an'ilay site ary famaritana azy. Ho hitanao koa ny domain mifandray, ny fandraisana anjara (membership) mifandray ary ny kaontry mpanjifa manana ny site.
 
-### Safidy Site (Site Options)
+### Safidy Site (Site Options) {#site-options}
 
 Ataovy amin'ny fomba tsara ireo fahaizana sy fetran'ilay site:
 
@@ -49,7 +49,7 @@ Ataovy amin'ny fomba tsara ireo fahaizana sy fetran'ilay site:
 
 Amin'ny ankapobeny, ny tranonkala dia manaraka ny fetra voatete ao amin'ny haavo fandraisana (membership level). Ny fametrahana fetra eo amin'ny haavon'ny tranonkala dia hanova ireo fepetra niforonana tamin'ny haavo fandraisana.
 
-### Fandefazana (Associations)
+### Fandefazana (Associations) {#associations}
 
 Eo ambanin'ny safidy momba ny tranonkala dia hahita fampahalalana momba:
 
@@ -57,7 +57,7 @@ Eo ambanin'ny safidy momba ny tranonkala dia hahita fampahalalana momba:
 - **Membership** izay ananan'ilay tranonkala
 - **Customer account** mifandray amin'ilay tranonkala
 
-### Ilay lafiny avy havia (Right Sidebar)
+### Ilay lafiny avy havia (Right Sidebar) {#right-sidebar}
 
 Eo anilan'ny lafiny havia dia afaka:
 

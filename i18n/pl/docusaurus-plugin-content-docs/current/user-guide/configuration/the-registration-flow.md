@@ -3,13 +3,13 @@ title: Przebieg rejestracji
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Przebieg rejestracji (v2)
+# Przebieg rejestracji (v2) {#the-registration-flow-v2}
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
 Użytkownicy mogą rejestrować się w Twojej sieci na różne sposoby. Mogą użyć Twojego formularza rejestracji lub linku do udostępnienia prowadzącego do wstępnie wybranego planu. Tutaj pokażemy, jak Twoi klienci mogą rejestrować się w Twojej sieci za pomocą dostępnych ścieżek oraz co dzieje się po rejestracji w Twojej sieci.
 
-## Korzystanie z formularza rejestracji:
+## Korzystanie z formularza rejestracji: {#using-the-registration-form}
 
 To standardowy proces rejestracji. Tworzysz stronę rejestracji z **formularzem checkout** i będzie to miejsce, do którego Twoi klienci przejdą, aby zarejestrować się w Twojej sieci i subskrybować plan. Możesz mieć wiele stron rejestracji, każdą z innym formularzem rejestracji, jeśli chcesz.
 
@@ -35,13 +35,13 @@ Jeśli zarejestrowali się w płatnym planie lub weryfikacja email nie jest obow
 
 ![Witryna aktywowana z linkiem do zalogowania się do dashboardu](/img/frontend/site-activated.png)
 
-## Korzystanie z linku do udostępnienia:
+## Korzystanie z linku do udostępnienia: {#using-a-shareable-link}
 
 Proces rejestracji za pomocą linku do udostępnienia jest zasadniczo taki sam jak w przypadku formularza rejestracji; jedyna różnica polega na tym, że używając linku do udostępnienia, Twoi klienci mogą mieć wstępnie wybrany produkt lub szablon witryny w formularzu checkout (patrz sekcja Wstępne wybieranie produktów i szablonów za pomocą parametrów URL) albo dodany kod kuponu (patrz sekcja Korzystanie z parametrów URL).
 
 Proces rejestracji będzie taki sam: będą musieli podać imię i nazwisko, nazwę użytkownika, adres email, nazwę i tytuł witryny itd., ale plan lub szablon witryny będzie już dla nich wstępnie wybrany.
 
-### Rejestracja za pomocą płatności ręcznych:
+### Rejestracja za pomocą płatności ręcznych: {#registering-using-manual-payments}
 
 Jeśli nie chcesz używać PayPal, Stripe ani żadnej innej bramki płatności oferowanej przez Ultimate Multisite lub integracje jego dodatków, możesz użyć płatności ręcznych dla swoich klientów. W ten sposób możesz wygenerować dla nich fakturę do opłacenia w preferowanym przez Ciebie procesorze płatności po tym, jak zarejestrują się w Twojej sieci.
 

@@ -3,11 +3,11 @@ title: Vývoj vlastní platební brány
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Vývoj vlastní platební brány
+# Vývoj vlastní platební brány {#custom-gateway-development}
 
 Vlastní platební brány můžete vytvářet rozšířením třídy `Base_Gateway`.
 
-## Třída brány
+## Třída brány {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrace brány
+## Registrace brány {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Klíčové metody
+## Klíčové metody {#key-methods}
 
 | Metoda | Účel |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Zpracovat žádosti o vrácení peněz |
 | `get_payment_methods()` | Vrátit uložené platební metody pro zákazníka |
 
-## Přihlašovací údaje pro obnovení u opakovaných členství
+## Přihlašovací údaje pro obnovení u opakovaných členství {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 umožňuje integracím platebních bran nahlásit, zda má opakované členství znovupoužitelný přihlašovací údaj pro obnovení, ještě před uložením `auto_renew`. Použijte hook `wu_membership_has_renewal_credential` a vraťte:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Po uložení nového znovupoužitelného přihlašovacího údaje vymažte značku chybějícího přihlašovacího údaje jako součást úspěšného toku opětovné autorizace vaší platební brány.
 
-## Tipy
+## Tipy {#tips}
 
 - Při selhání vždy vraťte `WP_Error`, aby Ultimate Multisite mohl zpracovat zobrazení chyby
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Používejte `wu_log_add()` pro logování specifické pro platební bránu
 
-## Schopnosti poskytovatelů AI connectoru
+## Schopnosti poskytovatelů AI connectoru {#ai-connector-provider-capabilities}
 
 Vlastní integrace, které volají operace založené na AI connectoru, by měly být v souladu s podporovanou sadou poskytovatelů OAuth zavedenou s AI Provider for Anthropic Max v1.3.0:
 

@@ -3,7 +3,7 @@ title: සූර්යයා නැගෙනුම් ගොනු දෝෂය
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise ගොනුව ස්ථාපනය කිරීමේදී ඇතිවන දෝෂය
+# Sunrise ගොනුව ස්ථාපනය කිරීමේදී ඇතිවන දෝෂය {#error-installing-the-sunrise-file}
 
 sunrise.php කියන්නේ WordPress තමන්ව ආරම්භ කරන (bootstraps) විට සොයා ගන්නා විශේෂ ගොනුවක්. WordPress එකට sunrise.php ගොනුව හඳුනා ගැනීමට හැකි වෙන්න නම්, ඒක **wp-content ෆෝල්ඩරය** ඇතුළේ තිබිය යුතුයි.
 

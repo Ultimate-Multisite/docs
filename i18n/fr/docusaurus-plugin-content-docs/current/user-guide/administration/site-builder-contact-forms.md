@@ -3,11 +3,11 @@ title: Formulaires de contact du constructeur de sites
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formulaires de contact du Site Builder
+# Formulaires de contact du Site Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 ajoute la possibilité de créer des formulaires de contact directement depuis l'interface de chat en utilisant l'agent Site Builder. Cela vous permet d'ajouter des formulaires de contact entièrement fonctionnels à n'importe quelle page sans quitter le chat.
 
-## Aperçu
+## Aperçu {#overview}
 
 La fonctionnalité de formulaire de contact du Site Builder (`create_contact_form`) détecte automatiquement le plugin de formulaire que vous avez installé et crée un formulaire de contact en utilisant les capacités natives de ce plugin. Les plugins de formulaire pris en charge comprennent :
 
@@ -18,7 +18,7 @@ La fonctionnalité de formulaire de contact du Site Builder (`create_contact_for
 
 L'assistant sélectionne automatiquement le meilleur plugin de formulaire disponible sur votre site et génère un formulaire de contact adapté à ce plugin.
 
-## Créer un formulaire de contact
+## Créer un formulaire de contact {#creating-a-contact-form}
 
 Pour créer un formulaire de contact à l'aide du Site Builder :
 
@@ -34,7 +34,7 @@ Pour créer un formulaire de contact à l'aide du Site Builder :
 
 4. Le Site Builder générera le formulaire de contact et vous retournera un shortcode prêt à être intégré.
 
-## Utiliser le shortcode généré
+## Utiliser le shortcode généré {#using-the-generated-shortcode}
 
 Une fois que le Site Builder a créé le formulaire de contact, il vous retourne un shortcode (par exemple, `[contact-form-7 id="123"]`). Vous pouvez :
 
@@ -45,11 +45,11 @@ Une fois que le Site Builder a créé le formulaire de contact, il vous retourne
 
 3. **L'utiliser dans un modèle** — Si vous êtes à l'aise avec PHP, vous pouvez ajouter le shortcode à un fichier de modèle de thème.
 
-## Personnaliser le formulaire de contact
+## Personnaliser le formulaire de contact {#customizing-the-contact-form}
 
 Après que le Site Builder ait créé le formulaire de contact, vous pouvez le personnaliser davantage :
 
-### Via l'interface de chat
+### Via l'interface de chat {#via-the-chat-interface}
 
 Demandez au Site Builder de modifier le formulaire :
 
@@ -57,7 +57,7 @@ Demandez au Site Builder de modifier le formulaire :
 
 Le Site Builder mettra à jour le formulaire et vous retournera le shortcode mis à jour.
 
-### Via l'interface d'administration du plugin de formulaire
+### Via l'interface d'administration du plugin de formulaire {#via-the-form-plugins-admin-interface}
 
 Vous pouvez également personnaliser le formulaire directement dans les paramètres de votre plugin de formulaire :
 
@@ -65,7 +65,7 @@ Vous pouvez également personnaliser le formulaire directement dans les paramèt
 2. Trouvez le formulaire créé par le Site Builder.
 3. Modifiez les champs du formulaire, les règles de validation et les notifications par email selon vos besoins.
 
-## Plugins de formulaire et compatibilité
+## Plugins de formulaire et compatibilité {#form-plugins-and-compatibility}
 
 Le Site Builder détecte automatiquement quel plugin de formulaire est installé sur votre site et l'utilise pour créer le formulaire de contact. Si plusieurs plugins de formulaire sont installés, le Site Builder les priorise dans cet ordre :
 
@@ -76,7 +76,7 @@ Le Site Builder détecte automatiquement quel plugin de formulaire est installé
 
 Si aucun de ces plugins n'est installé, le Site Builder recommandera d'en installer un avant de créer le formulaire de contact.
 
-## Notifications par email
+## Notifications par email {#email-notifications}
 
 Les formulaires de contact créés par le Site Builder sont configurés par défaut pour envoyer des notifications par email à l'administrateur du site. Vous pouvez personnaliser l'adresse email du destinataire et le message de notification :
 
@@ -91,21 +91,21 @@ Pour des instructions détaillées, veuillez consulter la documentation de votre
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Cas d'utilisation exemples
+## Cas d'utilisation exemples {#example-use-cases}
 
-### Formulaire de contact simple
+### Formulaire de contact simple {#simple-contact-form}
 
 > "Créer un formulaire de contact simple avec des champs nom, email et message."
 
-### Formulaire multi-étapes
+### Formulaire multi-étapes {#multi-step-form}
 
 > "Créer un formulaire de contact avec une première étape pour les informations de contact et une deuxième étape pour le message et la méthode de contact préférée."
 
-### Formulaire avec logique conditionnelle
+### Formulaire avec logique conditionnelle {#form-with-conditional-logic}
 
 > "Créer un formulaire de contact qui affiche différents champs en fonction de la sélection de l'utilisateur dans un menu déroulant."
 
-### Formulaire avec téléversement de fichiers
+### Formulaire avec téléversement de fichiers {#form-with-file-upload}
 
 > "Créer un formulaire de contact qui permet aux utilisateurs de téléverser un fichier ou une pièce jointe."
 

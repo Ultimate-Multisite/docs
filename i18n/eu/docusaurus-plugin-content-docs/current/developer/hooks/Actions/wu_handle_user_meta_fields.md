@@ -4,11 +4,11 @@ title: Ekintza - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Ekintza: wu_handle_user_meta_fields
+# Ekintza: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Plugin garatzaileei erabiltzailearen meta datuak behar izanez gero modu desberdinetan gordetzeko aukera ematen die.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Plugin garatzaileei erabiltzailearen meta datuak behar izanez gero modu desberdi
 | $customer | `\Customer` | Ultimate Multisite bezero objektua. |
 | $checkout | `\Checkout` | Ordainketa-prozesuaren klasea. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.0.4
-### Iturburua
+### Iturburua {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) fitxategian definitua, 1244. lerroan.

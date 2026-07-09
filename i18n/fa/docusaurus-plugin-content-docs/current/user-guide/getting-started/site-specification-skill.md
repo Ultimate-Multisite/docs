@@ -3,11 +3,11 @@ title: مهارت تعیین مشخصات سایت
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# مهارت مشخصات سایت
+# مهارت مشخصات سایت {#site-specification-skill}
 
 **مهارت مشخصات سایت** یک رویکرد ساختاریافته برای ثبت اهداف، مخاطبان و هویت برند سایت شما است. این اطلاعات در حافظه **site_brief** شما ذخیره می‌شود، که عامل‌ها (agents) در طول جلسات مختلف به آن ارجاع می‌دهند تا کمک‌های منسجم و آگاه به بافت ارائه دهند.
 
-## مشخصات سایت چیست؟
+## مشخصات سایت چیست؟ {#what-is-site-specification}
 
 مشخصات سایت، فرآیند مستندسازی موارد زیر است:
 
@@ -19,9 +19,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 این مشخصات، **site_brief** شما می‌شود؛ یک حافظه دائمی که عامل‌ها از آن برای درک بافت سایت شما استفاده می‌کنند.
 
-## چرا از مشخصات سایت استفاده کنیم؟
+## چرا از مشخصات سایت استفاده کنیم؟ {#why-use-site-specification}
 
-### ثبات در طول جلسات مختلف
+### ثبات در طول جلسات مختلف {#consistency-across-sessions}
 
 بدون site_brief، شما مجبور خواهید بود هر بار که جلسه جدیدی شروع می‌کنید، هدف سایت خود را دوباره توضیح دهید. با داشتن آن، عامل‌ها بلافاصله متوجه می‌شوند:
 
@@ -30,7 +30,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - ساختار محتوای شما
 - اهداف تجاری شما
 
-### توصیه‌های بهتر
+### توصیه‌های بهتر {#better-recommendations}
 
 عامل‌ها از site_brief شما برای:
 
@@ -39,17 +39,17 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - پیشنهاد طرح‌هایی که با برند شما سازگار هستند
 - جلوگیری از پیشنهاد ویژگی‌های ناسازگار
 
-### شروع کار سریع‌تر
+### شروع کار سریع‌تر {#faster-onboarding}
 
 عامل‌های جدید (یا عامل‌ها در جلسات جدید) می‌توانند با خواندن site_brief شما به سرعت مسلط شوند، به جای اینکه سؤالات توضیحی بپرسند.
 
-## شروع مشخصات سایت
+## شروع مشخصات سایت {#initiating-site-specification}
 
-### در طول Onboarding Theme Builder
+### در طول Onboarding Theme Builder {#during-theme-builder-onboarding}
 
 مهارت مشخصات سایت به طور خودکار در طول جریان **Onboarding Theme Builder** آغاز می‌شود. عامل Setup Assistant سؤالاتی می‌پرسد و site_brief شما را می‌سازد.
 
-### شروع دستی
+### شروع دستی {#manual-initiation}
 
 شما می‌توانید در هر زمانی مشخصات سایت را شروع کنید:
 
@@ -63,9 +63,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 "Help me create a site brief"
 ```
 
-## فرآیند مشخصات سایت
+## فرآیند مشخصات سایت {#the-site-specification-process}
 
-### گام ۱: هدف سایت
+### گام ۱: هدف سایت {#step-1-site-purpose}
 
 عامل سؤال می‌کند:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 شما می‌توانید یک دسته را انتخاب کنید یا هدف خود را توصیف نمایید.
 
-### گام ۲: مخاطب هدف
+### گام ۲: مخاطب هدف {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### گام ۳: هویت برند
+### گام ۳: هویت برند {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### گام ۴: اهداف کسب‌وکار
+### گام ۴: اهداف کسب‌وکار {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### گام ۵: ساختار محتوا
+### گام ۵: ساختار محتوا {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## حافظه site_brief شما
+## حافظه site_brief شما {#your-sitebrief-memory}
 
 پس از تکمیل مشخصات سایت، اطلاعات شما به صورت **site_brief** در حافظه عامل شما ذخیره می‌شود. این یک رکورد ساختاریافته است که شامل موارد زیر است:
 
@@ -169,9 +169,9 @@ What content types do you use?
 }
 ```
 
-## مشاهده و به‌روزرسانی site_brief شما
+## مشاهده و به‌روزرسانی site_brief شما {#viewing-and-updating-your-sitebrief}
 
-### مشاهده site_brief شما
+### مشاهده site_brief شما {#view-your-sitebrief}
 
 از عامل بپرسید:
 
@@ -187,7 +187,7 @@ What content types do you use?
 
 عامل مشخصات ذخیره‌شده شما را نمایش می‌دهد.
 
-### به‌روزرسانی site_brief شما
+### به‌روزرسانی site_brief شما {#update-your-sitebrief}
 
 اگر سایت شما تکامل یافت، می‌توانید آن را به‌روز کنید:
 
@@ -203,9 +203,9 @@ What content types do you use?
 
 این کار مهارت مشخصات سایت را با اطلاعات موجود شما به عنوان نقطه شروع، دوباره اجرا می‌کند.
 
-## عامل‌ها چگونه از site_brief استفاده می‌کنند؟
+## عامل‌ها چگونه از site_brief استفاده می‌کنند؟ {#how-agents-use-sitebrief}
 
-### توصیه‌های طراحی
+### توصیه‌های طراحی {#design-recommendations}
 
 هنگامی که درخواست تغییرات طراحی می‌کنید، عامل‌ها به site_brief شما ارجاع می‌دهند:
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### پیشنهاد ویژگی‌ها
+### پیشنهاد ویژگی‌ها {#feature-suggestions}
 
 عامل‌ها ویژگی‌هایی را پیشنهاد می‌کنند که با اهداف شما همخوانی دارند:
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### ساختار محتوا
+### ساختار محتوا {#content-structure}
 
 عامل‌ها سازماندهی محتوا را بر اساس ساختار شما پیشنهاد می‌دهند:
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## بهترین شیوه‌ها
+## بهترین شیوه‌ها {#best-practices}
 
-### مشخص باشید
+### مشخص باشید {#be-specific}
 
 به جای "مخاطب عمومی"، مخاطب واقعی خود را توصیف کنید:
 
 - ✓ "Women aged 25-45, interested in sustainable fashion"
 - ✗ "Everyone"
 
-### به طور منظم به‌روز کنید
+### به طور منظم به‌روز کنید {#update-regularly}
 
 همانطور که سایت شما تکامل می‌یابد، site_brief خود را به‌روز کنید:
 
@@ -256,14 +256,14 @@ that showcase multiple products together."
 - وقتی هویت برند شما تغییر می‌کند
 - وقتی اهداف کسب‌وکار شما تغییر می‌کند
 
-### از اصطلاحات ثابت استفاده کنید
+### از اصطلاحات ثابت استفاده کنید {#use-consistent-terminology}
 
 در طول جلسات، از همان اصطلاحات استفاده کنید:
 
 - ✓ همیشه بگویید "sustainable jewelry" (نه "eco-friendly jewelry" و "green products")
 - ✓ همیشه به مخاطبان خود به یک شکل اشاره کنید
 
-### بافت را در نظر بگیرید
+### بافت را در نظر بگیرید {#include-context}
 
 اطلاعات پیش‌زمینه‌ای ارائه دهید که به عامل‌ها کمک کند تصمیمات شما را درک کنند:
 
@@ -271,7 +271,7 @@ that showcase multiple products together."
 - "مخاطبان ما از فناوری آگاه هستند و انتظار طراحی مدرن دارند"
 - "ما یک استارتاپ با منابع محدود هستیم، بنابراین به راه‌حل‌های مقرون‌به‌صرفه نیاز داریم"
 
-## ارتباط با Onboarding Theme Builder
+## ارتباط با Onboarding Theme Builder {#relationship-to-theme-builder-onboarding}
 
 مهارت مشخصات سایت در **Onboarding Theme Builder** ادغام شده است. وقتی Onboarding را کامل می‌کنید، site_brief شما به طور خودکار با اطلاعاتی که ارائه داده‌اید، ایجاد می‌شود.
 
@@ -281,7 +281,7 @@ that showcase multiple products together."
 - برای به‌روزرسانی site_brief با تکامل یافتن سایت شما
 - برای ایجاد یک مشخصات دقیق قبل از شروع Theme Builder
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
 **site_brief من استفاده نمی‌شود**
 - تأیید کنید که عامل به حافظه دسترسی دارد
@@ -297,7 +297,7 @@ that showcase multiple products together."
 - اگر site_brief شما قدیمی است، آن را به‌روز کنید
 - اطلاعات بیشتری در درخواست‌های خود ارائه دهید
 
-## گام‌های بعدی
+## گام‌های بعدی {#next-steps}
 
 پس از تعریف مشخصات سایت:
 

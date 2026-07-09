@@ -4,11 +4,11 @@ title: Filter - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Võimaldab plugin’i arendajatel lisada uusi kontrolle tulemuste määratlemiseks.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Võimaldab plugin’i arendajatel lisada uusi kontrolle tulemuste määratlemise
 | $domain | `self` | Praegune domeeni instants. |
 | $domains_and_ips | `array` | DNS-päringust leitud domeenide ja IP-de loend. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.4
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) real 455
 
 
-## Tagastab
+## Tagastab {#returns}
 Kas DNS on õigesti seadistatud või mitte.

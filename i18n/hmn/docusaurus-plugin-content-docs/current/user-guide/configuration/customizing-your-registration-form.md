@@ -3,13 +3,13 @@ title: Kho Koj Daim Foos Sau Npe
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kho koj daim Registration Form kom haum koj
+# Kho koj daim Registration Form kom haum koj {#customizing-your-registration-form}
 
 Kom ua rau koj lub network zoo txawv ntawm txhua yam SaaS uas tsim rau saum WordPress platform, Ultimate Multisite tso cai rau koj kho koj cov nplooj ntawv sau npe thiab nkag mus nrog peb lub **Checkout Forms** feature.
 
 Txawm hais tias lawv yog ib txoj kev yooj yim thiab yoog tau rau kev sim ntau hom kev thaum koj xav hloov cov neeg siv tshiab los ua customers, feem ntau lawv siv los tsim cov registration forms uas kho raws tus kheej. Kab lus no yuav qhia koj tias koj yuav ua tau li cas.
 
-## Cov nplooj ntawv nkag mus thiab sau npe:
+## Cov nplooj ntawv nkag mus thiab sau npe: {#login-and-registration-pages}
 
 Thaum nruab Ultimate Multisite, nws yuav cia li tsim cov nplooj ntawv nkag mus thiab sau npe uas kho tau rau ntawm koj lub site tseem ceeb. Koj hloov tau cov nplooj ntawv pib no txhua lub sijhawm los ntawm mus rau koj nplooj ntawv **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Tam sim no, cia saib lwm cov kev xaiv uas tseem cuam tshuam rau txheej txheem nk
 
 Thiab ntawd yog tag nrho cov kev xaiv cuam tshuam rau nkag mus thiab sau npe uas koj kho tau! Tsis txhob hnov qab khaws koj cov settings tom qab koj kho lawv tas.
 
-## Siv ntau daim registration forms:
+## Siv ntau daim registration forms: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 muab checkout form editor uas tso cai rau koj tsim pes tsawg forms los tau raws li koj xav, nrog fields sib txawv, products uas muab rau, thiab lwm yam.
 
@@ -69,7 +69,7 @@ Los yog, koj kho lossis duplicate tau cov forms uas koj twb muaj lawm los ntawm 
 
 Yog koj xaiv single step lossis multi-step, daim checkout form yuav twb raug pre-populated nrog cov kauj ruam yooj yim kom nws ua haujlwm tau. Tom qab ntawd, yog koj xav, koj ntxiv tau kauj ruam ntxiv rau nws.
 
-### Kho ib daim Checkout Form:
+### Kho ib daim Checkout Form: {#editing-a-checkout-form}
 
 Raws li peb tau hais ua ntej, koj tsim tau checkout forms rau ntau lub hom phiaj. Hauv qhov piv txwv no peb yuav ua haujlwm rau ib daim registration form.
 
@@ -131,11 +131,11 @@ Txhawm rau tau koj daim foos shortcode nias **Tsim Shortcode** thiab luam qhov t
 
 _**Nco tseg:** Koj yuav tsum ntxiv shortcode no rau koj nplooj ntawv sau npe kom daim foos them nyiaj no thiaj raug ntxiv rau hauv nws._
 
-## Xaiv cov khoom thiab cov qauv ua ntej los ntawm URL parameters:
+## Xaiv cov khoom thiab cov qauv ua ntej los ntawm URL parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Yog koj xav tsim cov daim rooj teev nqi uas kho tshwj xeeb rau koj cov khoom thiab xaiv ua ntej hauv daim foos them nyiaj yam khoom lossis qauv uas koj tus neeg yuav khoom xaiv ntawm koj daim rooj teev nqi lossis nplooj ntawv cov qauv, koj tuaj yeem siv URL parameters rau qhov no.
 
-### **Rau cov pob npaj:**
+### **Rau cov pob npaj:** {#for-plans}
 
 Mus rau **Ultimate Multisite > Cov Khoom > Xaiv ib pob npaj**. Koj yuav tsum pom khawm **Nias los luam Shareable Link** nyob rau saum nplooj ntawv. Qhov no yog qhov link uas koj siv tau los xaiv ua ntej pob npaj tshwj xeeb no hauv koj daim foos them nyiaj.
 
@@ -143,7 +143,7 @@ Mus rau **Ultimate Multisite > Cov Khoom > Xaiv ib pob npaj**. Koj yuav tsum pom
 
 Nco ntsoov tias shareable link no tsuas siv tau rau **Cov Pob Npaj** xwb. Koj siv tsis tau shareable links rau cov packages lossis services.
 
-### Rau cov qauv:
+### Rau cov qauv: {#for-templates}
 
 Yog koj xav xaiv cov qauv vev xaib ua ntej hauv koj daim foos them nyiaj, koj tuaj yeem siv parameter: **?template_id=X** ntawm koj nplooj ntawv sau npe URL. Tus "X" yuav tsum hloov nrog **tus lej ID ntawm qauv vev xaib**. Txhawm rau tau tus lej no, mus rau **Ultimate Multisite > Cov Vev Xaib**.
 

@@ -3,7 +3,7 @@ title: Kumbukumbu ya Mabadiliko ya Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Kumbukumbu ya Mabadiliko ya Domain Seller
+# Kumbukumbu ya Mabadiliko ya Domain Seller {#domain-seller-changelog}
 
 Toleo 1.3.0 - Limetolewa tarehe 2026-06-02
 - Mpya: Imeongeza onyo la network-admin wakati salio la muuzaji wa HostAfrica linapokuwa chini sana
@@ -134,20 +134,20 @@ Toleo 1.0.0 - Lililotolewa tarehe 2025-09-28
 * **Imerekebishwa:** Code yote ya v1 iliyopitwa na wakati imesasishwa kufuata viwango vya v2
 * **Imeondolewa:** Utangamano wa zamani wa v1 (badiliko linalovunja utangamano)
 
-### Matoleo ya Awali (v1 Legacy)
+### Matoleo ya Awali (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Toleo 0.0.3 - 20/08/2019
+### Toleo 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Imerekebishwa: Kutopatana na Groundhogg CRM
 * Kumbuka: Hili lilikuwa toleo la mwisho linaloendana na v1
 
-### Toleo 0.0.2 - 07/12/2018
+### Toleo 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Imerekebishwa: Sehemu ya License Key imeondolewa
 * Imerekebishwa: Vichupo vya mpango kukosekana wakati plugin ya kipengele ikiwa amilifu
 * Imeboreshwa: Kitufe cha kuruka kimeongezwa kwenye sehemu ya usajili
 
-### Toleo 0.0.1 - Toleo la Kwanza
+### Toleo 0.0.1 - Toleo la Kwanza {#version-001---initial-release}
 
 * Uunganishaji wa msingi wa OpenSRS kwa WP Ultimo v1
 * Utafutaji na usajili rahisi wa domain

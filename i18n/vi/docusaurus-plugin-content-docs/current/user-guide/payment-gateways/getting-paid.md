@@ -3,13 +3,13 @@ title: Nhận thanh toán
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Nhận thanh toán (v2)
+# Nhận thanh toán (v2) {#getting-paid-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
 Ultimate Multisite có hệ thống thành viên và thanh toán tích hợp sẵn. Để hệ thống thanh toán của chúng tôi hoạt động, chúng tôi đã tích hợp các cổng thanh toán phổ biến nhất được dùng trong thương mại điện tử. Các cổng thanh toán mặc định trong Ultimate Multisite là _Stripe_ , _PayPal_ , và Thanh toán thủ công. Bạn cũng có thể dùng _WooCommerce_ , _GoCardless_ và _Payfast_ để nhận thanh toán bằng cách cài đặt các add-on tương ứng của chúng.
 
-## Cài đặt cơ bản
+## Cài đặt cơ bản {#basic-settings}
 
 Bạn có thể cấu hình bất kỳ cổng thanh toán nào trong số này trong cài đặt thanh toán của Ultimate Multisite. Bạn có thể tìm thấy bằng cách vào **menu Ultimate Multisite > Cài đặt > Thanh toán.**
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0 kiểm tra xem cổng đang hoạt động có thông
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Nơi tìm các cổng:
+## Nơi tìm các cổng: {#where-to-find-the-gateways}
 
 Bạn có thể thiết lập các cổng thanh toán trên cùng một trang ( **Ultimate Multisite > Cài đặt > Thanh toán**). Ngay bên dưới **cổng thanh toán đang hoạt động** , bạn sẽ có thể thấy: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ và _Manual_.
 
@@ -67,7 +67,7 @@ Bạn có thể xem và chỉnh sửa chi tiết thanh toán:
 
 Bây giờ, nếu bạn muốn dùng _WooCommerce_ , _GoCardless_ hoặc _Payfast_ làm cổng thanh toán, bạn sẽ cần **cài đặt và cấu hình các add-on của chúng**.
 
-### Cách cài đặt add-on WooCommerce:
+### Cách cài đặt add-on WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Chúng tôi hiểu rằng _Stripe_ và _PayPal_ không khả dụng ở một số quốc gia, điều này giới hạn hoặc cản trở người dùng Ultimate Multisite sử dụng plugin của chúng tôi một cách hiệu quả. Vì vậy, chúng tôi đã tạo một add-on để tích hợp _WooCommerce,_ vốn là một plugin thương mại điện tử rất phổ biến. Các nhà phát triển trên khắp thế giới đã tạo add-on để tích hợp các cổng thanh toán khác nhau vào nó. Chúng tôi đã tận dụng điều này để mở rộng các cổng thanh toán bạn có thể dùng với hệ thống thanh toán của Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Sau khi kích hoạt, nếu bạn vẫn chưa cài đặt và kích hoạt plugi
 
 Để đọc thêm về tiện ích bổ sung WooCommerce Integration, **nhấp vào đây**.
 
-### Cách cài đặt tiện ích bổ sung GoCardless:
+### Cách cài đặt tiện ích bổ sung GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Các bước để cài đặt tiện ích bổ sung _GoCardless_ gần như giống với tiện ích bổ sung _WooCommerce_. Vui lòng đi đến trang tiện ích bổ sung và chọn tiện ích bổ sung **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Sau khi cài đặt xong, bạn sẽ được chuyển hướng đến trang plu
 
 Để tìm hiểu cách bắt đầu với gateway _GoCardless_, **đọc bài viết này**.
 
-### Cách cài đặt tiện ích bổ sung Payfast:
+### Cách cài đặt tiện ích bổ sung Payfast: {#how-to-install-the-payfast-add-on}
 
 Đi đến trang tiện ích bổ sung và chọn tiện ích bổ sung **Ultimate Multisite: Payfast Gateway**.
 

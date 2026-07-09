@@ -3,7 +3,7 @@ title: Automatsko pretraživanje i zamena u šablonima sajtova
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatsko pretraživanje i zamena u šablonima sajtova (v2)
+# Automatsko pretraživanje i zamena u šablonima sajtova (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ovaj tutorial zahteva WP Uitimo verziju 2.x.**_
 
@@ -17,7 +17,7 @@ Vaš kupac će tada moći da popuni to polje tokom registracije.
 
 Ultimate Multisite će zatim automatski zamijeniti placeholder-e podacima koje je kupac unio.
 
-## **Rešavanje problema "šablon pun placeholder-a"**
+## **Rešavanje problema "šablon pun placeholder-a"** {#solving-the-template-full-of-placeholders-problem}
 
 Sve to je super, ali naiđemo na neugodan problem: sada su na našim šablonima sajtova - koje mogu posetiti naši kupci - puna jezivi placeholder-i koji ne daju mnogo informacija.
 

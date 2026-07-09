@@ -3,7 +3,7 @@ title: Formularis de finalització de compra
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formularis de pagament
+# Formularis de pagament {#checkout-forms}
 
 Els formularis de pagament són una manera fàcil i flexible d’experimentar amb diferents enfocaments quan intentes convertir clients nous.
 
@@ -36,13 +36,13 @@ Alternativament, pots editar o duplicar els formularis que ja tens fent clic a l
 
 ![Accions en passar el cursor sobre el formulari de pagament](/img/config/checkout-form-hover-actions.png)
 
-#### Visió general de l’editor de formularis de pagament
+#### Visió general de l’editor de formularis de pagament {#checkout-form-editor-overview}
 
 L’editor de formularis de pagament proporciona una interfície completa per crear els teus formularis de registre. Aquí tens una visió general de la disposició de l’editor:
 
 ![Visió general de l’editor de formularis de pagament](/img/config/checkout-form-editor-overview.png)
 
-### Edició d’un formulari de pagament
+### Edició d’un formulari de pagament {#editing-a-checkout-form}
 
 Pots crear formularis de pagament per a diferents finalitats. En aquest exemple treballarem en un formulari de registre.
 
@@ -112,7 +112,7 @@ Per obtenir el shortcode del teu formulari, fes clic a Genera shortcode i copia 
 
 ![Botó Desa amb shortcode](/img/config/checkout-form-save.png)
 
-### El camp Taula de preus
+### El camp Taula de preus {#the-pricing-table-field}
 
 El camp **Taula de preus** mostra els teus productes al formulari de pagament perquè els clients puguin triar un pla. Quan edites aquest camp, pots configurar diverses opcions:
 
@@ -130,17 +130,17 @@ Així és com apareix la taula de preus al formulari de registre del frontend:
 
 Si afegiu un producte a la taula de preus abans que el formulari inclogui els camps necessaris per completar el flux de checkout d’aquest producte, l’editor ara mostra un avís. Feu servir l’avís per afegir el camp obligatori que falta abans de publicar o desar canvis per a un formulari de registre actiu.
 
-### Afegir un commutador de selecció de període
+### Afegir un commutador de selecció de període {#adding-a-period-selection-toggle}
 
 Si heu configurat [Variacions de preu](creating-your-first-subscription-product#price-variations) als vostres productes (p. ex. preus mensuals i anuals), podeu afegir un camp de **Selecció de període** al vostre formulari de checkout. Aquest camp mostra un commutador que permet als clients canviar entre períodes de facturació, i la taula de preus s’actualitza dinàmicament en temps real.
 
-#### Pas 1: Configureu les variacions de preu als vostres productes
+#### Pas 1: Configureu les variacions de preu als vostres productes {#step-1-set-up-price-variations-on-your-products}
 
 Abans d’afegir el camp de selecció de període, assegureu-vos que els vostres productes tinguin variacions de preu configurades. Aneu a **Ultimate Multisite > Products**, editeu un producte i navegueu a la pestanya **Variacions de preu** per afegir períodes de facturació alternatius (p. ex. Anual amb un preu amb descompte).
 
 ![Pestanya de variacions de preu en un producte](/img/config/product-price-variations-tab.png)
 
-#### Pas 2: Afegiu el camp de selecció de període al vostre formulari de checkout
+#### Pas 2: Afegiu el camp de selecció de període al vostre formulari de checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Aneu a **Ultimate Multisite > Checkout Forms** i editeu el vostre formulari de checkout.
 
@@ -163,13 +163,13 @@ Abans d’afegir el camp de selecció de període, assegureu-vos que els vostres
 
 7. Feu clic a **Desa el camp**.
 
-#### Pas 3: Col·loqueu el camp damunt de la taula de preus
+#### Pas 3: Col·loqueu el camp damunt de la taula de preus {#step-3-position-the-field-above-the-pricing-table}
 
 Per a la millor experiència d’usuari, assegureu-vos que el camp de selecció de període aparegui **abans** del camp de taula de preus al vostre pas de checkout. Podeu arrossegar els camps per reordenar-los a l’editor del formulari de checkout. D’aquesta manera, els clients primer trien un període de facturació i després veuen els preus per a aquell període.
 
 ![Editor del formulari de checkout que mostra l’ordre dels camps](/img/config/checkout-form-editor-with-fields.png)
 
-#### Com funciona al frontend
+#### Com funciona al frontend {#how-it-works-on-the-frontend}
 
 Un cop configurat, els clients que visitin la vostra pàgina de registre veuran el selector de període damunt de la taula de preus. Quan facin clic en un període de facturació diferent:
 
@@ -177,7 +177,7 @@ Un cop configurat, els clients que visitin la vostra pàgina de registre veuran 
   * Si **Força durades diferents** està desactivat al camp de taula de preus, els productes sense una variació de preu per al període seleccionat s’ocultaran.
   * Si **Força durades diferents** està activat, tots els productes romanen visibles encara que no tinguin cap variació per al període seleccionat (mostraran el seu preu predeterminat).
 
-#### Preseleccionar un període de facturació mitjançant l’URL
+#### Preseleccionar un període de facturació mitjançant l’URL {#pre-selecting-a-billing-period-via-url}
 
 També podeu preseleccionar un producte i un període de facturació a través de l’URL. Ultimate Multisite admet aquests patrons d’URL:
 
@@ -185,11 +185,11 @@ També podeu preseleccionar un producte i un període de facturació a través d
   * `/register/premium/12` — Preselecciona el producte i una durada de 12 mesos
   * `/register/premium/1/year` — Preselecciona el producte amb una durada d’1 any
 
-### El camp de selecció de plantilla
+### El camp de selecció de plantilla {#the-template-selection-field}
 
 El camp de **Selecció de plantilla** permet als clients triar una plantilla de lloc durant el checkout. Ara s’inclou per defecte a les plantilles de formulari de checkout **d’un sol pas** i **de diversos passos** afegides a Ultimate Multisite v2.6.1.
 
-#### Afegir el camp manualment
+#### Afegir el camp manualment {#adding-the-field-manually}
 
 Si treballeu amb un formulari que es va crear abans de la v2.6.1, o que es va iniciar des d’una plantilla en blanc:
 
@@ -200,11 +200,11 @@ Si treballeu amb un formulari que es va crear abans de la v2.6.1, o que es va in
    - **Etiqueta** — L’encapçalament que els clients veuen damunt de la quadrícula de plantilles (p. ex. "Trieu una plantilla de lloc").
    - **Obligatori** — Si els clients han de seleccionar una plantilla abans de continuar.
 
-#### Com funciona
+#### Com funciona {#how-it-works}
 
 Quan un client tria una plantilla durant el checkout, Ultimate Multisite la fa servir en aprovisionar el seu lloc nou. Les plantilles mostrades provenen de la vostra llista de **Plantilles de lloc** (**Ultimate Multisite > Site Templates**). Aquí només apareixen les plantilles marcades com a disponibles per als clients.
 
-### Dominis base del formulari de checkout
+### Dominis base del formulari de checkout {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 tracta els dominis configurats als camps **Site URL** del formulari de checkout com a dominis base de la xarxa. Feu servir la configuració de dominis disponibles del camp quan vulgueu que els clients creïn llocs sota un o més dominis de registre compartits, com ara `example.com` i `sites.example.com`.
 
@@ -212,6 +212,6 @@ Els dominis base de formulari de checkout compartits no es tracten com a assigna
 
 Mantén els dominis personalitzats per a amfitrions assignats per client, com ara `customer-example.com`. Mantén els dominis base de formulari de checkout per a amfitrions de registre compartits que molts llocs poden utilitzar.
 
-#### Eliminació del camp
+#### Eliminació del camp {#removing-the-field}
 
 Si no ofereixes plantilles de lloc, elimina el camp Selecció de plantilla del teu formulari. Aleshores els clients rebran la plantilla per defecte que estigui configurada a **Ultimate Multisite > Settings > Site Templates**.

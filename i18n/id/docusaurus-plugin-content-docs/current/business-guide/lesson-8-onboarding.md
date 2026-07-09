@@ -3,15 +3,15 @@ title: 'Pelajaran 8: Orientasi Pelanggan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Pelajaran 8: Onboarding Pelanggan
+# Pelajaran 8: Onboarding Pelanggan {#lesson-8-customer-onboarding}
 
 Membuat pelanggan mendaftar hanyalah setengah dari pekerjaan. Jika mereka berhasil login, merasa kewalahan, dan akhirnya tidak kembali lagi, berarti Anda telah kehilangan mereka. Pelajaran ini merancang pengalaman yang mengubah pendaftaran baru menjadi pelanggan yang aktif dan terlibat.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah sepenuhnya diberi *branding* dengan alur *checkout* yang berfungsi. Sekarang kita fokus pada apa yang terjadi setelah pemilik studio kebugaran menyelesaikan pendaftaran dan pertama kali mendarat di situs baru mereka.
 
-## Mengapa Onboarding Itu Penting
+## Mengapa Onboarding Itu Penting {#why-onboarding-matters}
 
 30 menit pertama setelah pendaftaran menentukan apakah pelanggan akan bertahan atau berhenti menggunakan layanan Anda. Pemilik studio kebugaran yang:
 
@@ -21,9 +21,9 @@ FitSite sudah sepenuhnya diberi *branding* dengan alur *checkout* yang berfungsi
 
 Template niche Anda (Pelajaran 4) menangani poin pertama. Pelajaran ini menangani poin kedua.
 
-## Pengalaman Login Pertama
+## Pengalaman Login Pertama {#the-first-login-experience}
 
-### Widget Dashboard Selamat Datang
+### Widget Dashboard Selamat Datang {#welcome-dashboard-widget}
 
 Buat *widget dashboard* kustom yang menyambut pelanggan baru dan memandu mereka melalui proses penyiapan. Ini harus muncul secara menonjol saat mereka pertama kali login.
 
@@ -37,7 +37,7 @@ Buat *widget dashboard* kustom yang menyambut pelanggan baru dan memandu mereka 
 
 Setiap langkah menautkan langsung ke halaman atau pengaturan yang relevan. Tidak perlu mencari-cari di menu.
 
-### Menyederhanakan Dashboard
+### Menyederhanakan Dashboard {#simplify-the-dashboard}
 
 Pelanggan baru tidak perlu melihat setiap item menu WordPress. Pertimbangkan:
 
@@ -47,29 +47,29 @@ Pelanggan baru tidak perlu melihat setiap item menu WordPress. Pertimbangkan:
 
 Addon [Plugin & Theme Manager](/addons/plugin-and-theme-manager) dapat membantu mengontrol apa yang dilihat pelanggan.
 
-## Urutan Email Selamat Datang
+## Urutan Email Selamat Datang {#welcome-email-sequence}
 
 Satu email selamat datang saja tidak cukup. Atur urutan yang memandu pelanggan selama minggu pertama mereka:
 
-### Email 1: Selamat Datang (Segera setelah mendaftar)
+### Email 1: Selamat Datang (Segera setelah mendaftar) {#email-1-welcome-immediately-after-signup}
 
 - Subjek: "Selamat datang di FitSite -- situs web studio Anda sudah aktif"
 - Konten: Tautan login, langkah awal cepat, tautan ke sumber daya bantuan
 - Nada: Antusias, mendorong, spesifik ke kebugaran
 
-### Email 2: Kemenangan Cepat (Hari 1)
+### Email 2: Kemenangan Cepat (Hari 1) {#email-2-quick-wins-day-1}
 
 - Subjek: "3 hal yang harus dilakukan pertama kali di FitSite Anda"
 - Konten: Tambahkan logo Anda, perbarui gambar hero beranda, tambahkan jadwal kelas
 - Sertakan tangkapan layar yang menunjukkan dengan tepat tempat untuk mengklik
 
-### Email 3: Jadikan Milik Anda (Hari 3)
+### Email 3: Jadikan Milik Anda (Hari 3) {#email-3-make-it-yours-day-3}
 
 - Subjek: "Buat situs kebugaran Anda menonjol"
 - Konten: Kustomisasi warna, tambahkan foto pelatih, tulis kisah studio Anda
 - Tautkan ke contoh situs kebugaran hebat di platform
 
-### Email 4: Siap Tayang (Hari 7)
+### Email 4: Siap Tayang (Hari 7) {#email-4-go-live-day-7}
 
 - Subjek: "Siap membagikan FitSite Anda ke dunia?"
 - Konten: Daftar periksa hal yang perlu diverifikasi sebelum dibagikan, cara menghubungkan domain kustom (jika menggunakan Growth/Pro), tips berbagi media sosial
@@ -78,11 +78,11 @@ Satu email selamat datang saja tidak cukup. Atur urutan yang memandu pelanggan s
 Gunakan [Webhooks](/user-guide/integrations/webhooks) atau [Zapier](/user-guide/integrations/zapier) untuk memicu email ini melalui platform pemasaran email Anda. Ini memberi Anda lebih banyak kontrol atas waktu dan memungkinkan Anda melacak keterlibatan.
 :::
 
-## Sumber Daya Bantuan
+## Sumber Daya Bantuan {#help-resources}
 
 Buat konten bantuan spesifik niche yang menjawab pertanyaan yang sebenarnya diajukan oleh pemilik studio kebugaran:
 
-### Artikel Knowledge Base
+### Artikel Knowledge Base {#knowledge-base-articles}
 
 - "Cara memperbarui jadwal kelas Anda"
 - "Menambah dan mengedit profil pelatih"
@@ -92,7 +92,7 @@ Buat konten bantuan spesifik niche yang menjawab pertanyaan yang sebenarnya diaj
 
 Tulis ini untuk pengguna non-teknis. Gunakan tangkapan layar. Hindari jargon WordPress.
 
-### Video Panduan
+### Video Panduan {#video-walkthroughs}
 
 Rekaman layar singkat (2-3 menit) yang menunjukkan:
 
@@ -103,7 +103,7 @@ Rekaman layar singkat (2-3 menit) yang menunjukkan:
 
 Ini tidak perlu menjadi produksi yang sempurna. Yang penting adalah jelas, membantu, dan spesifik niche.
 
-## Halaman Akun
+## Halaman Akun {#the-account-page}
 
 Ultimate Multisite menyertakan [Halaman Akun](/user-guide/client-management/account-page) yang dilihat pelanggan di mana pelanggan mengelola langganan mereka. Kustomisasi ini untuk:
 
@@ -112,7 +112,7 @@ Ultimate Multisite menyertakan [Halaman Akun](/user-guide/client-management/acco
 - Menyediakan riwayat penagihan dan unduhan faktur
 - Menautkan ke sumber daya bantuan
 
-## Mengukur Keberhasilan Onboarding
+## Mengukur Keberhasilan Onboarding {#measuring-onboarding-success}
 
 Lacak indikator-indikator ini untuk mengetahui apakah onboarding Anda berhasil:
 
@@ -121,7 +121,7 @@ Lacak indikator-indikator ini untuk mengetahui apakah onboarding Anda berhasil:
 - **Tiket dukungan dari pelanggan baru**: Volume yang tinggi berarti onboarding Anda memiliki celah
 - **Konversi dari uji coba ke berbayar**: Jika Anda menawarkan uji coba, berapa persentase yang konversi?
 
-## FitSite Network Sejauh Ini
+## FitSite Network Sejauh Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Apa yang Kita Bangun di Pelajaran Ini
+## Apa yang Kita Bangun di Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Pengalaman login pertama yang terpandu** dengan widget Quick Start
 - **Dashboard yang disederhanakan** berfokus pada tugas manajemen situs kebugaran

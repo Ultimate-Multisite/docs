@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# An Fáil Ar Webhooks (v2)
+# An Fáil Ar Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**ATTENTION: Nóta go bhfuil an feidhm seo nó an curte seo ar fáil do chuid úsáidheoirí ardchialla.**_
 
@@ -11,7 +11,7 @@ Is **webhook** cara a chur in áit app nó software mar Ultimate Multisite a bhe
 
 Is é seo ag teacht ar chuid is féidir linn a bheith ag cur isteach nó a chur i bhfeicriúraitheada sonraí ó Ultimate Multisite go dtí CRM nó system eile mar a thabhairt sé ag cur isteach an t-amach. Mar shampla, rud é sin ag teacht ar chuid is féidir leat a bheith ag cur isteach na leimeanna agus an email de chuid úsáidheor do liosta mailte mar a thabhairt sé ag cur isteach acount nua.
 
-## Conas a chur in áit webhook
+## Conas a chur in áit webhook {#how-to-create-a-webhook}
 
 Leat a chur in áit webhook, rud é sin, go dtí do dashboard admin neteardóir. Cliom ar **Ultimate Multisite > Webhooks > Add New Webhook.**
 

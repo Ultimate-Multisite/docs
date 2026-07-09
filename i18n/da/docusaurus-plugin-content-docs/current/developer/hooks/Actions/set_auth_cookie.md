@@ -4,11 +4,11 @@ title: Handling - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Udløses umiddelbart før godkendelses-cookien sættes.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Udløses umiddelbart før godkendelses-cookien sættes.
 | $scheme | `string` | Godkendelsesskema. Værdier omfatter 'auth' eller 'secure_auth'. |
 | $token | `string` | Brugerens sessionstoken, der skal bruges til denne cookie. |
 
-### Siden
+### Siden {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) på linje 124

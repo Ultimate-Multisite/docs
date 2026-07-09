@@ -3,7 +3,7 @@ title: 域名销售者更新日志
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller 更新日志
+# Domain Seller 更新日志 {#domain-seller-changelog}
 
 版本 1.3.0 - 发布于 2026-06-02
 - 新增：当 HostAfrica reseller 余额过低时，添加了 network-admin 警告
@@ -136,20 +136,20 @@ Version 1.0.0 - 发布于 2025-09-28
 * **修复：** 所有已弃用的 v1 代码已更新至 v2 标准
 * **移除：** 旧版 v1 兼容性（破坏性变更）
 
-### 以前的版本（v1 旧版）
+### 以前的版本（v1 旧版） {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * 修复：与 Groundhogg CRM 不兼容的问题
 * 注意：这是最后一个兼容 v1 的版本
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * 修复：移除了 License Key 字段
 * 修复：功能 plugin 启用时缺少套餐选项卡
 * 改进：在注册字段上添加了跳过按钮
 
-### Version 0.0.1 - 初始发布
+### Version 0.0.1 - 初始发布 {#version-001---initial-release}
 
 * 面向 WP Ultimo v1 的基础 OpenSRS 集成
 * 简单的域名搜索和注册

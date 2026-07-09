@@ -4,11 +4,11 @@ title: Filter - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Omogoča razvijalcem, da filtrirajo končne vrednosti in dodajo nove primere obdelave.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Omogoča razvijalcem, da filtrirajo končne vrednosti in dodajo nove primere obd
 | $meta_type | `string` | Vrsta meta podatkov, ki jih je treba pridobiti. |
 | $meta_key | `string` | Ime meta polja. |
 
-### Od različice
+### Od različice {#since}
 
 - 1.4.0
-### Vir
+### Vir {#source}
 
 Definirano v [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) v vrstici 93
 
 
-## Vrne
+## Vrne {#returns}
 Nova privzeta vrednost.

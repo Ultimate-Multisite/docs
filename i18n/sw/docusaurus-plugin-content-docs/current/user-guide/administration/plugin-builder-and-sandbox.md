@@ -3,11 +3,11 @@ title: Jengo la Plugins na Sanduku la Jaribio
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 inatambulisha **Plugin Builder & Sandbox System**, ambayo inaruhusu msaidizi wa AI kutengeneza, kuwezesha, na kusimamia plugins za WordPress kwenye mtandao wako—yote kupitia mazingira salama, yaliyotengwa (sandbox).
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Plugin Builder inamwezesha msaidizi wa AI kuandika plugins za WordPress maalum kwa kujibu maelezo kwa lugha ya kawaida. Plugins zilizotengenezwa hupitiwa (validated), kuhifadhiwa, na kuwezeshwa ndani ya tabaka la sandbox kabla hata za kuathiri utendaji wa tovuti halisi.
 
@@ -17,7 +17,7 @@ Matumizi yanajumuisha:
 - Kuunda mifumo (prototypes) inayohitaji WordPress hooks au custom post types.
 - Kuunda scripts za kiotomatiki zenye muda mfupi kwa ajili ya operesheni za kundi (batch operations).
 
-## Kutengeneza Plugin kupitia AI
+## Kutengeneza Plugin kupitia AI {#generating-a-plugin-via-ai}
 
 Ili kutengeneza plugin, fungua kiolesura cha mazungumzo (chat interface) cha Gratis AI Agent na kuelezea unachohitaji. Kwa mfano:
 
@@ -32,7 +32,7 @@ AI itafanya yafuatayo:
 
 Unaweza kuboresha matokeo kwa kuendelea na mazungumzo hayo kabla ya kuwezesha.
 
-## Kuwezesha Sandbox
+## Kuwezesha Sandbox {#sandbox-activation}
 
 Kuwezesha plugin iliyotengenezwa kwenye sandbox ni tofauti na kuwezesha kwenye mtandao halisi (live network). Sandbox:
 
@@ -48,7 +48,7 @@ Ili kuwezesha plugin kwenye sandbox, bonyeza kitufe cha **Activate in Sandbox** 
 
 Ujumbe wa hali unathibitisha kama uwezeshaji umefanikiwa au umeshindikana. Ikiwa kuna kushindika, rekodi ya makosa itaonyeshwa kwenye mazungumzo.
 
-## Kusimamia Plugins Zilizotengenezwa
+## Kusimamia Plugins Zilizotengenezwa {#managing-generated-plugins}
 
 Plugins zilizotengenezwa zimeorodheshwa kwenye **Gratis AI Agent → Plugin Builder → Manage Plugins**. Kutoka skrini hii unaweza:
 
@@ -64,7 +64,7 @@ Plugins zilizotengenezwa zimeorodheshwa kwenye **Gratis AI Agent → Plugin Buil
 **Install on network** inatoa plugin iliyotengenezwa kwenye WordPress multisite yako halisi. Pitia msimbo wa plugin kabla ya kuendelea. Gratis AI Agent itakuomba uthibitisho kabla ya kukamilisha usakinishaji halisi.
 :::
 
-## Kusakinisha Plugin Iliyotengenezwa kwenye Mtandao
+## Kusakinisha Plugin Iliyotengenezwa kwenye Mtandao {#installing-a-generated-plugin-on-the-network}
 
 Unapokidhiwa na plugin iliyo kwenye sandbox, unaweza kuisakinisha kwenye mtandao halisi:
 
@@ -78,7 +78,7 @@ Njia mbadala, tumia amri ya slash kwenye kiolesura cha mazungumzo:
 /install-plugin <plugin-slug>
 ```
 
-## Sasisho la Plugin
+## Sasisho la Plugin {#plugin-updates}
 
 Ili kusasisha plugin iliyotengenezwa, elezea mabadiliko kwa msaidizi wa AI katika mazungumzo mapya:
 
@@ -86,7 +86,7 @@ Ili kusasisha plugin iliyotengenezwa, elezea mabadiliko kwa msaidizi wa AI katik
 
 AI inatengeneza toleo jipya, ambalo linaonekana kwenye sandbox pamoja na toleo la sasa. Unapitia tofauti (diff) na kuthibitisha kabla ya sasisho kuwekwa.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Plugin Builder inatumia **HookScanner** iliyojumuishwa kuchanganua hooks na filters zilizosajiliwa na kila plugin iliyotengenezwa. Matokeo ya HookScanner yanaonyeshwa kwenye jibu la chat na yanajumuisha:
 
@@ -96,7 +96,7 @@ Plugin Builder inatumia **HookScanner** iliyojumuishwa kuchanganua hooks na filt
 
 Hii inakusaidia kuelewa tabia ya plugin kabla ya kuwezeshwa.
 
-## Kuzingatia Usalama
+## Kuzingatia Usalama {#security-considerations}
 
 - Plugins zilizotengenezwa huhifadhiwa kando na plugins zilizosakinishwa kwa mikono na hazina ufikiaji kupitia skrini ya kawaida ya usimamizi wa plugins ya WordPress mpaka unazoisakinisha wazi kwenye mtandao.
 - Sandbox inatumia path validation kuzuia kupita kwenye directories wakati wa kuandika faili za plugin.

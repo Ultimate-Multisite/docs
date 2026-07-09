@@ -4,11 +4,11 @@ title: Ֆիլտր - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Թույլ է տալիս փլագինների մշակողներին ավելացնել նոր ստուգումներ՝ արդյունքները սահմանելու համար։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 | $domain | `self` | Տիրույթի ընթացիկ օրինակը։ |
 | $domains_and_ips | `array` | DNS որոնման ժամանակ գտնված տիրույթների և IP-ների ցանկը։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.0.4
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) ֆայլում՝ 455-րդ տողում
 
 
-## Վերադարձնում է
+## Վերադարձնում է {#returns}
 Արդյոք DNS-ը ճիշտ է կարգավորված, թե ոչ։

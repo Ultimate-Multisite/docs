@@ -3,11 +3,11 @@ title: Ukuguqulela i-Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ukuguqulela i-Ultimate Multisite
+# Ukuguqulela i-Ultimate Multisite {#translating-ultimate-multisite}
 
 I-Ultimate Multisite iphuhliswa ngesiNgesi, kodwa i-plugin iyaguquleleka ngokupheleleyo kwaye siyazamkela ngenkuthalo igalelo kuguqulelo.
 
-## Iinguqulelo ze-Core Plugin
+## Iinguqulelo ze-Core Plugin {#core-plugin-translations}
 
 I-core Ultimate Multisite plugin iguqulelwa ngeqonga elisemthethweni leenguqulelo le-**WordPress.org**:
 
@@ -24,7 +24,7 @@ Le yinkqubo esemgangathweni yoluntu lwe-WordPress yokuguqulela. Xa iinguqulelo z
 
 Ukuba ungathanda ukuba ngumhleli woguqulelo wolwimi lwakho (okwaziyo ukuvuma iinguqulelo), qhagamshelana nathi nge-[GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Iinguqulelo ze-Addon
+## Iinguqulelo ze-Addon {#addon-translations}
 
 Ii-plugin ze-addon ziguqulelwa ngokwahlukeneyo apha:
 
@@ -32,11 +32,11 @@ Ii-plugin ze-addon ziguqulelwa ngokwahlukeneyo apha:
 
 Iinguqulelo ze-addon okwangoku zenziwe yi-AI njengesiqalo. Ziquka zonke iilwimi ezixhaswayo kodwa zinokuqulatha amabinzana angahambi kakuhle okanye ukungachaneki. Siyabamkela abaguquleli abangabantu ukuba baphonononge baze bacebise uphuculo ukuze zibe zendalo ngakumbi kwaye zichaneke.
 
-## Iinguqulelo zasekuhlaleni
+## Iinguqulelo zasekuhlaleni {#local-translations}
 
 Ukuba ukhetha ukwenza iinguqulelo zasekuhlaleni zeprojekthi yakho endaweni yokunikela phezulu, kukho iindlela ezimbini:
 
-### Ukusebenzisa i-Poedit
+### Ukusebenzisa i-Poedit {#using-poedit}
 
 Ungasebenzisa usetyenziso lwe-desktop **[Poedit](https://poedit.net)** ukuguqulela ifayile ye-`.pot`:
 
@@ -46,6 +46,6 @@ Ungasebenzisa usetyenziso lwe-desktop **[Poedit](https://poedit.net)** ukuguqule
 4. Gcina -- i-Poedit ivelisa iifayile ze-`.po` kunye ne-`.mo`
 5. Beka iifayile eziphumayo kwifolda ye-`lang`
 
-### Ukusebenzisa i-Loco Translate
+### Ukusebenzisa i-Loco Translate {#using-loco-translate}
 
 I-**[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin ikuvumela ukuba uguqulele ngqo kwiphaneli yolawulo ngaphandle kwezixhobo ze-desktop. Iphatha ukudalwa nokudityaniswa kweefayile zoguqulelo kuwe.

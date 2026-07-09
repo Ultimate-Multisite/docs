@@ -3,9 +3,9 @@ title: Ultimate AI Connector for Compatible Endpoints 변경 로그
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints 변경 로그
+# Ultimate AI Connector for Compatible Endpoints 변경 로그 {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — 2026-04-24 출시
+## Version 2.0.0 — 2026-04-24 출시 {#version-200--released-on-2026-04-24}
 
 * 신규: 다중 공급자 지원 — 여러 AI 엔드포인트를 설정하고 공급자 간 자동 폴백(fallback) 기능을 통해 요청을 라우팅할 수 있습니다.
 * 수정: 공급자별로 정확한 공급자 ID, 등록 URL, HTTP 필터 범위 설정을 포함한 다중 공급자 SDK 통합 기능을 개선했습니다.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * 수정: 모든 페이지 로드 시 실행되던 차단(blocking) HTTP 요청을 제거했습니다.
 * 개선: GitHub Actions 워크플로우가 Node.js 24로 업그레이드되었습니다.
 
-## Version 1.0.0 — 초기 출시
+## Version 1.0.0 — 초기 출시 {#version-100--initial-release}

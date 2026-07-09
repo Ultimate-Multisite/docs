@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce Integration {#woocommerce-integration}
 
 WooCommerce Integration virkar á mjög svipaðan hátt og Manual Gateway okkar. Hún býður notendum þínum mikinn sveigjanleika og gerir þeim kleift að velja hvaða greiðslueyðublað sem er tiltækt í WooCommerce-uppsetningunni þinni. Og þetta er einfalt: þegar reikningstímabili notandans lýkur er áskrift notandans sett í bið. Á sama tíma verður pöntun búin til í WooCommerce-uppsetningu aðalsíðu netsins. Notandinn fær síðan reikning í tölvupósti, með tengli til að framkvæma greiðsluna. Þegar greiðslan hefur borist er áskriftin endurnýjuð.
 
-## Eiginleikar
+## Eiginleikar {#features}
 
 - Auðveld samþætting milli Ultimate Multisite og WooCommerce
 - Nokkrar greiðsluaðferðir tiltækar
 - Sjálfvirk endurtekin innheimta með innbyggða áskriftarkjarnanum, með valfrjálsum endurbótum frá WooCommerce Subscriptions plugin
 - Samtölur í greiðsluferli innihalda skatta Ultimate Multisite sem aðskildar, óskattskyldar WooCommerce gjaldalínur svo viðskiptavinir geti yfirfarið skattupphæðir fyrir greiðslu
 
-## Skjölun
+## Skjölun {#documentation}
 
 **Uppsetning WooCommerce Integration**
 
 **Að útvíkka greiðslumöguleika þína með Ultimate Multisite: WooCommerce Integration**
 
-## Uppsetning
+## Uppsetning {#installation}
 
 1. Hladdu 'ultimate-multisite-woocommerce' upp í '/wp-content/plugins/' möppuna
 2. Virkjaðu plugin í gegnum 'Plugins' valmyndina í WordPress
 3. Fylgdu skref-fyrir-skref leiðarvísinum til að setja plugin upp
 
-## Notkunarleiðbeiningar
+## Notkunarleiðbeiningar {#usage-guide}
 
 _**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 
@@ -40,7 +40,7 @@ Við skiljum að _Stripe_ og _PayPal_ eru ekki tiltæk í sumum löndum, sem tak
 
 _WooCommerce_ er mjög vinsælt eCommerce plugin. Forritarar um allan heim hafa búið til viðbætur til að samþætta mismunandi greiðslugáttir við það. Við nýttum okkur þetta til að útvíkka greiðslugáttirnar sem þú getur notað í innheimtukerfi Ultimate Multisite.
 
-## Að setja það upp
+## Að setja það upp {#setting-it-up}
 
 Fyrst þarftu að setja upp WooCommerce Integration-viðbótina, sem er **ókeypis fyrir notendur með leyfi**. Til að setja hana upp skaltu smella á Ultimate Multisite á super admin stjórnborðinu þínu og velja **Add-ons**.
 
@@ -68,11 +68,11 @@ Eftir að hún hefur verið virkjuð, ef þú ert enn ekki með WooCommerce plug
 
 Þú getur stillt nokkrar grunnstillingar, eins og birtingarnafnið sem birtist í framendanum og leiðbeiningar til að leiða notendur þína í gegnum greiðsluferlið. Síðan geturðu farið í **_WooCommerce_ stillingar aðalsíðunnar þinnar** til að virkja og stilla greiðslugáttina sem þú kýst að nota.
 
-### Skattagjaldalínur í greiðsluferli
+### Skattagjaldalínur í greiðsluferli {#checkout-tax-fee-lines}
 
 Þegar greiðsluferli Ultimate Multisite inniheldur skatta bætir samþættingin hverri skattupphæð Ultimate Multisite við WooCommerce greiðsluferlið sem aðskildri, óskattskyldri gjaldalínu. Þetta heldur heildarskattinum sýnilegum fyrir greiðslu, á sama tíma og það kemur í veg fyrir að WooCommerce leggi skatt aftur á skattagjaldið.
 
-## Hvernig á að stjórna greiðslunni
+## Hvernig á að stjórna greiðslunni {#how-to-manage-the-payment}
 
 WooCommerce Integration virkar á mjög svipaðan hátt og **Manual Gateway** okkar. Ókosturinn er að hver greiðsla þarf að vera greidd handvirkt í lok reikningstímabilsins. Svona virkar ferlið:
 
@@ -82,13 +82,13 @@ WooCommerce Integration virkar á mjög svipaðan hátt og **Manual Gateway** ok
 
   * Þegar greiðslan hefur borist er aðildin **endurnýjuð** , greiðslan er skráð í Ultimate Multisite og pöntunin er stillt sem lokið.
 
-### Nokkrar mikilvægar athugasemdir:
+### Nokkrar mikilvægar athugasemdir: {#some-important-notes}
 
   * Sjálfgefin virkni Ultimate Multisite virkar enn með þessari samþættingarleið. Til dæmis mun **útgáfa endurgreiðslna** úr **Subscription Management** skjánum eiga samskipti við WooCommerce til að gefa út endurgreiðsluna með valda greiðslueyðublaðinu.
 
   * Ultimate Multisite: WooCommerce Integration treystir á WP-Cron til að virka. Þetta virkar mjög vel oftast, en ef síðan er með litla umferð er cron ekki kallað til að athuga áætlaða viðburði og viðburðurinn missist af, sem getur valdið töfum á keyrslu.
 
-## WooCommerce Subscriptions Plugin
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
 Að hefja greiðslu handvirkt í hverjum mánuði er ekki tilvalið fyrir endanotendur, því gert er ráð fyrir að áskriftir endurtaki sig sjálfkrafa á hverju innheimtutímabili. WooCommerce Integration add-on inniheldur nú kjarnaáskriftarkóðann, þannig að endurteknar vörur nota alltaf áskriftir fyrir endurtekna innheimtu.
 
@@ -100,7 +100,7 @@ Og þar með er það komið. Endanotendur þínir þurfa ekki lengur að framkv
 
 Auk þess að pöntun er búin til á aðalvefsvæðinu þínu undir _WooCommerce_, mun einnig verða búin til áskrift fyrir hvern Account.
 
-### Hegðun við stöðvun vegna misheppnaðrar endurnýjunar
+### Hegðun við stöðvun vegna misheppnaðrar endurnýjunar {#failed-renewal-suspension-behavior}
 
 Sjálfgefið halda memberships áfram að vera virk á meðan WooCommerce Subscriptions vinnur úr endurtilraunaáætlun sinni vegna misheppnaðrar greiðslu. Þetta varðveitir venjulega frestglugga WooCommerce Subscriptions þannig að endurheimt endurnýjun geti samstillt áskriftina og membership aftur án þess að trufla aðgang of snemma.
 

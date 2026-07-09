@@ -4,11 +4,11 @@ title: Действие - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Action: wu_membership_pre_renew
+# Action: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Изпълнява се преди преновяването на членството.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Описание |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 | $membership_id | `int` | ID на членството. |
 | $membership | `\Membership` | Обект на членството. |
 
-### От версия
+### От версия {#since}
 
 - 2.0
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) на линия 2204

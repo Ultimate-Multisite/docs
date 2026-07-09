@@ -3,13 +3,13 @@ title: Panduan Integrasi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Panduan Integrasi
+# Panduan Integrasi {#integration-guide}
 
 Panduan ini mencakup pola integrasi umum dengan Ultimate Multisite, termasuk menghubungkan ke layanan eksternal, membangun gateway pembayaran kustom, dan menangani webhook.
 
 Untuk infrastruktur tenant terisolasi, lihat [Integrasi Multi-Tenancy](./multi-tenancy) untuk panduan bootstrap tenant berdaulat, verifikasi migrasi, SSO, dan teardown.
 
-## Integrasi CRM
+## Integrasi CRM {#crm-integration}
 
 Sinkronkan data pelanggan ke CRM Anda saat pelanggan baru mendaftar:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrasi Analytics
+## Integrasi Analytics {#analytics-integration}
 
 Lacak peristiwa bisnis utama di sepanjang siklus hidup pelanggan:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Langkah Berikutnya
+## Langkah Berikutnya {#next-steps}
 
 - [Pengembangan Gateway Kustom](./custom-gateway) — Bangun gateway pembayaran Anda sendiri
 - [Penanganan Webhook](./webhooks) — Buat endpoint webhook kustom

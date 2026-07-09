@@ -3,17 +3,17 @@ title: Kaip sukonfigūruoti domenų susiejimą
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kaip konfigūruoti domenų susiejimą (v2)
+# Kaip konfigūruoti domenų susiejimą (v2) {#how-to-configure-domain-mapping-v2}
 
 _**SVARBI PASTABA: šiame straipsnyje kalbama apie Ultimate Multisite 2.x versiją.**_
 
 Viena galingiausių premium tinklo funkcijų yra galimybė pasiūlyti mūsų klientams prie savo svetainių prijungti aukščiausio lygio domeną. Galų gale, kas atrodo profesionaliau: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ar [_**joesbikeshop.com**_](http://joesbikeshop.com)? Būtent todėl Ultimate Multisite siūlo šią funkciją integruotą, be poreikio naudoti trečiųjų šalių įskiepius.
 
-## Kas yra domenų susiejimas?
+## Kas yra domenų susiejimas? {#whats-domain-mapping}
 
 Kaip rodo pavadinimas, domenų susiejimas yra Ultimate Multisite suteikiama galimybė priimti užklausą dėl pasirinktinio domeno ir susieti tą užklausą su atitinkama tinklo svetaine, prie kurios tas konkretus domenas yra prijungtas.
 
-### Kaip nustatyti domenų susiejimą jūsų Ultimate Multisite tinkle
+### Kaip nustatyti domenų susiejimą jūsų Ultimate Multisite tinkle {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Kad domenų susiejimas veiktų, iš jūsų pusės reikia atlikti tam tikrą nustatymą. Laimei, Ultimate Multisite automatizuoja sunkų darbą už jus, todėl reikalavimus galite įvykdyti lengvai.
 
@@ -45,7 +45,7 @@ Tačiau prieš pradėdami susieti pasirinktinį domeną su viena iš antrinių s
 
 ###
 
-### Įsitikinkite, kad domeno DNS nustatymai yra tinkamai sukonfigūruoti
+### Įsitikinkite, kad domeno DNS nustatymai yra tinkamai sukonfigūruoti {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Kad susiejimas veiktų, turite įsitikinti, jog domenas, kurį planuojate susieti, nukreiptas į jūsų tinklo IP adresą. Atkreipkite dėmesį, kad jums reikia tinklo IP adreso - domeno, kuriame įdiegtas Ultimate Multisite, IP adreso - o ne pasirinktinio domeno, kurį norite susieti, IP adreso. Norint rasti konkretaus domeno IP adresą, siūlome, pavyzdžiui, apsilankyti [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Jei kyla sunkumų tai padaryti, **susisiekite su savo domeno registratoriaus pal
 
 Jei planuojate leisti savo klientams susieti savo pačių domenus, šią dalį jie turės atlikti patys. Nukreipkite juos į jų registratoriaus palaikymo sistemą, jei jie negali sukurti A Record.
 
-### Pasirinktinio domeno pavadinimo susiejimas kaip Super Admin
+### Pasirinktinio domeno pavadinimo susiejimas kaip Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Kai esate prisijungę kaip super administratorius savo tinkle, galite lengvai pridėti ir valdyti pasirinktinius domenų pavadinimus eidami į **Ultimate Multisite > Domenai**.
 
@@ -93,7 +93,7 @@ Jei spustelėsite domeno pavadinimą, galėsite pamatyti kai kurias jo parinktis
 
 **Is Secure?:** Nors Ultimate Multisite prieš įjungdamas patikrina, ar domenas turi SSL sertifikatą, galite rankiniu būdu pasirinkti įkelti domeną su SSL sertifikatu arba be jo. Atkreipkite dėmesį, kad jei svetainė neturi SSL sertifikato ir bandysite priverstinai ją įkelti su SSL, gali atsirasti klaidų.
 
-### Pasirinktinio domeno pavadinimo susiejimas kaip subsvetainės naudotojui
+### Pasirinktinio domeno pavadinimo susiejimas kaip subsvetainės naudotojui {#mapping-custom-domain-name-as-subsite-user}
 
 Subsvetainių administratoriai taip pat gali susieti pasirinktinius domenų pavadinimus iš savo subsvetainės administratoriaus valdymo skydelio.
 
@@ -121,7 +121,7 @@ Tada naudotojas gali spustelėti **Next Step** ir tęsti pasirinktinio domeno pa
 
 Spustelėjus **Add Domain**, prasidės pasirinktinio domeno DNS informacijos tikrinimo ir gavimo procesas.
 
-### Apie domenų sinchronizavimą
+### Apie domenų sinchronizavimą {#about-domain-syncing}
 
 Domenų sinchronizavimas yra procesas, kurio metu Ultimate Multisite prideda pasirinktinį domeno pavadinimą prie jūsų prieglobos paskyros kaip papildomą domeną **kad veiktų domenų susiejimas**.
 

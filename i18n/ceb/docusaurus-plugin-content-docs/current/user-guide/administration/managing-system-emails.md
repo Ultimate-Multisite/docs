@@ -3,11 +3,11 @@ title: Pagdumala sa mga Email sa Sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Pagdumala sa System Emails
+# Pagdumala sa System Emails {#managing-system-emails}
 
 Ang Ultimate Multisite nagpadala og lain-laing system emails para sa mga panghitabo sama sa signup confirmations, payment receipts, ug membership changes. Mahimo nimo i-customize kining email templates aron magmatch sa imong brand.
 
-## Pagsusi sa System Emails
+## Pagsusi sa System Emails {#viewing-system-emails}
 
 Moadto sa **Ultimate Multisite → Settings** ug i-click ang tab nga **Emails** para makita ang mga setting nga may kalabotan sa email.
 
@@ -21,7 +21,7 @@ Mahimo usab nimo i-edit ang mga indibidwal nga email templates gamit ang system 
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Pag-import sa Bag-ong Email Templates
+## Pag-import sa Bag-ong Email Templates {#importing-new-email-templates}
 
 Ang bag-ong bersyon ug add-ons sa Ultimate Multisite mahimong magparehistro og mga bag-ong email templates. Aron malikayan ang mga away (conflicts), dili awtomatikong madugang ang mga bag-ong templates — kinahanglan nimo kining i-import manual.
 
@@ -32,7 +32,7 @@ Para mag-import og bag-ong email templates:
 3. I-toggle ang option nga **Import Emails** aron makita ang mga available nga templates
 4. Pilia ang mga templates nga gusto nimong i-import ug kumpirmaha
 
-## Pag-reset sa Email Templates
+## Pag-reset sa Email Templates {#resetting-email-templates}
 
 Kung na-customize nimo ang usa ka email template ug gusto nimo ibalik kini sa default nga content, naa kay duha ka pamaagi:
 

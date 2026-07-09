@@ -3,17 +3,17 @@ title: Cum să configurați maparea domeniilor
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Cum să configurezi maparea domeniilor (v2)
+# Cum să configurezi maparea domeniilor (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
 Una dintre cele mai puternice funcționalități ale unei rețele premium este capacitatea de a le oferi clienților noștri șansa de a atașa un domeniu de nivel superior la site-urile lor. La urma urmei, ce arată mai profesionist: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) sau [_**joesbikeshop.com**_](http://joesbikeshop.com)? De aceea Ultimate Multisite oferă această funcționalitate integrată, fără a fi nevoie să folosești pluginuri terțe.
 
-## Ce este maparea domeniilor?
+## Ce este maparea domeniilor? {#whats-domain-mapping}
 
 Așa cum sugerează numele, maparea domeniilor este capacitatea oferită de Ultimate Multisite de a primi o solicitare pentru un domeniu personalizat și de a mapa acea solicitare către site-ul corespunzător din rețea care are atașat acel domeniu specific.
 
-### Cum să configurezi maparea domeniilor în rețeaua ta Ultimate Multisite
+### Cum să configurezi maparea domeniilor în rețeaua ta Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Maparea domeniilor necesită câteva configurări din partea ta pentru a funcționa. Din fericire, Ultimate Multisite automatizează munca dificilă pentru tine, astfel încât să poți îndeplini cu ușurință cerințele.
 
@@ -45,7 +45,7 @@ Dar înainte să începi să mapezi domeniul personalizat la unul dintre subsite
 
 ###
 
-### Asigură-te că setările DNS ale domeniului sunt configurate corect
+### Asigură-te că setările DNS ale domeniului sunt configurate corect {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Pentru ca o mapare să funcționeze, trebuie să te asiguri că domeniul pe care plănuiești să îl mapezi indică spre adresa IP a rețelei tale. Reține că ai nevoie de adresa IP a rețelei - adresa IP a domeniului unde este instalat Ultimate Multisite - nu de adresa IP a domeniului personalizat pe care vrei să îl mapezi. Pentru a căuta adresa IP a unui anumit domeniu, sugerăm să mergi la [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), de exemplu.
 
@@ -55,7 +55,7 @@ Dacă întâmpini dificultăți în a face acest lucru să funcționeze, **conta
 
 Dacă plănuiești să le permiți clienților tăi să își mapeze propriile domenii, ei vor trebui să facă singuri această parte. Îndrumă-i către sistemul de suport al registratorului lor dacă nu reușesc să creeze înregistrarea A.
 
-### Maparea numelui de domeniu personalizat ca Super Administrator
+### Maparea numelui de domeniu personalizat ca Super Administrator {#mapping-custom-domain-name-as-super-admin}
 
 Când ești autentificat ca super administrator în rețeaua ta, poți adăuga și gestiona cu ușurință nume de domenii personalizate mergând la **Ultimate Multisite > Domenii**.
 
@@ -93,7 +93,7 @@ Dacă dai clic pe numele domeniului, vei putea vedea câteva opțiuni în interi
 
 **Is Secure?:** Chiar dacă Ultimate Multisite verifică dacă domeniul are un certificat SSL sau nu înainte de a-l activa, poți selecta manual să încarci domeniul cu sau fără un certificat SSL. Reține că, dacă website-ul nu are un certificat SSL și încerci să forțezi încărcarea lui cu SSL, este posibil să îți dea erori.
 
-### Maparea numelui de domeniu personalizat ca utilizator de Subsite
+### Maparea numelui de domeniu personalizat ca utilizator de Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Administratorii de Subsite pot, de asemenea, să mapeze nume de domenii personalizate din panoul de administrare al subsite-ului lor.
 
@@ -121,7 +121,7 @@ Utilizatorul poate apoi să dea clic pe **Next Step** și să continue cu adăug
 
 Clic pe **Add Domain** va porni procesul de verificare și preluare a informațiilor DNS ale domeniului personalizat.
 
-### Despre sincronizarea domeniilor
+### Despre sincronizarea domeniilor {#about-domain-syncing}
 
 Sincronizarea domeniilor este un proces prin care Ultimate Multisite adaugă numele de domeniu personalizat în contul tău de găzduire ca domeniu add-on **pentru ca maparea domeniului să funcționeze**.
 

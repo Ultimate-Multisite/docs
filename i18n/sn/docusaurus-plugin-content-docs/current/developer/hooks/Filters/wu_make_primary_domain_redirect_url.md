@@ -4,13 +4,13 @@ title: Sefa - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Sefa: wu_make_primary_domain_redirect_url
+# Sefa: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Inosefa redirect URL mushure mekuita domain primary.
 
 Inobvumira vagadziri kugadzirisa uko vashandisi vanoendeswa mushure mekubudirira kuseta domain se primary. Nekusarudzika, inoendesa kuURL yazvino pa site huru, kana ku admin URL ye site iri kugadziridzwa.
 
-## Maparameter
+## Maparameter {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Inobvumira vagadziri kugadzirisa uko vashandisi vanoendeswa mushure mekubudirira
 | $domain | `\Domain` | Chinhu che domain chakaitwa primary. |
 | $old_primary_domains | `array` | Array yemaID ema domain aimbova primary. |
 
-### Kubva
+### Kubva {#since}
 
 - 2.0.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) pamutsara 639
 
 
-## Zvinodzoka
+## Zvinodzoka {#returns}
 Redirect URL yakasefwa.

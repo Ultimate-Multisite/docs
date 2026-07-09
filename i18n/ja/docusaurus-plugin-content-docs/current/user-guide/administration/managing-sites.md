@@ -3,7 +3,7 @@ title: サイトの管理
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Managing Sites
+# Managing Sites {#managing-sites}
 
 Sites (or subsites) are the core of your WaaS business. Ultimate Multisite has 3 types of sites:
 
@@ -11,13 +11,13 @@ Sites (or subsites) are the core of your WaaS business. Ultimate Multisite has 3
 - **Site Templates** — Pre-defined sites that customers can select as a starting point
 - **Main Site** — Your primary network site
 
-## Viewing Sites
+## Viewing Sites {#viewing-sites}
 
 Navigate to **Ultimate Multisite → Sites** to see all subsites in your network. Each site is labeled by type and you can filter by All Sites, Customer-Owned, Templates, or Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Adding a New Site
+## Adding a New Site {#adding-a-new-site}
 
 Click the **Add Site** button to create a new site. You'll need to provide:
 
@@ -27,15 +27,15 @@ Click the **Add Site** button to create a new site. You'll need to provide:
 
 The **Copy Site** option lets you create a new site based on an existing site template. When enabled, you can select which template to use as a starting point. Make sure **Copy Media on Duplication** is enabled to include media files.
 
-## Managing an Existing Site
+## Managing an Existing Site {#managing-an-existing-site}
 
 Click **Manage** on any site to open the **Edit Site** page. Here you'll find:
 
-### Basic Information
+### Basic Information {#basic-information}
 
 The site name, type, site ID, and description. You’ll also see the mapped domain, associated membership, and the customer account that owns the site.
 
-### Site Options
+### Site Options {#site-options}
 
 Configure the site's capabilities and limits:
 
@@ -47,7 +47,7 @@ Configure the site's capabilities and limits:
 
 By default, sites follow the limits set at the membership level. Setting limits on the site level will override the membership settings.
 
-### Associations
+### Associations {#associations}
 
 Below the site options you'll find information about:
 
@@ -55,7 +55,7 @@ Below the site options you'll find information about:
 - **Membership** the site is under
 - **Customer account** linked to the site
 
-### Right Sidebar
+### Right Sidebar {#right-sidebar}
 
 On the right side you can:
 

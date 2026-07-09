@@ -3,7 +3,7 @@ title: PRO थीम
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme से अपने Admin Panel को कस्टमाइज़ करना
+# PRO Theme से अपने Admin Panel को कस्टमाइज़ करना {#customizing-your-admin-panel-with-pro-theme}
 
 अक्सर जब हम क्लाइंट्स के लिए काम करते हैं, तो हमें WordPress के admin dashboard में उन्हें एक कस्टम अनुभव देने की ज़रूरत होती है। अगर आप एक ज़्यादा प्रोफेशनल लुक और फील की तलाश में हैं, तो PRO Theme आपकी मदद कर सकता है।
 

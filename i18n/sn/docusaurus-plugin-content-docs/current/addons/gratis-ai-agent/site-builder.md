@@ -3,15 +3,15 @@ title: Kurongeka kweMuvaki weSaiti v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Kuronga kweSite Builder v2
+# Kuronga kweSite Builder v2 {#site-builder-orchestration-v2}
 
 Kuronga kweSite Builder v2 (kwakaunzwa muGratis AI Agent v1.4.0) ndiyo injini inopa simba kugadzirwa kwewebsite kwematanho mazhinji. Paunokumbira agent kuti "ivake website yeresitorendi" kana "igadzire portfolio ine blog", orchestrator inopatsanura chinangwa icho chepamusoro kuita **plan** yakarongwa, inoona plugins dzinodiwa kuti ichizadzise, inoita nhanho imwe neimwe zvichitevedzana, inotevera kufambira mberi, uye inopora kubva kuzvikanganiso yakazvimirira.
 
 ---
 
-## Mashandiro Azvinoita
+## Mashandiro Azvinoita {#how-it-works}
 
-### 1. Kugadzirwa kwePlan
+### 1. Kugadzirwa kwePlan {#1-plan-generation}
 
 Kana agent yagamuchira rairo yekuvaka site, inodana kugona kwe`create_site_plan` kuti ibudise JSON **site plan**. Plan inotsanangura:
 
@@ -61,7 +61,7 @@ Kana agent yagamuchira rairo yekuvaka site, inodana kugona kwe`create_site_plan`
 }
 ```
 
-### 2. Kuwanikwa kwePlugin
+### 2. Kuwanikwa kwePlugin {#2-plugin-discovery}
 
 Kuitwa kusati kwatanga, orchestrator inoongorora `plugin_requirements` dzeplan uye inotarisa kuti ndeapi plugins atova kushanda. Kune plugins dzisipo, ino:
 
@@ -71,7 +71,7 @@ Kuitwa kusati kwatanga, orchestrator inoongorora `plugin_requirements` dzeplan u
 
 Kukundikana kwekuwanikwa kwePlugin hakupedzi basa — orchestrator inotara nhanho dzakanganiswa se`skipped` uye inoenderera mberi nechimwe chikamu cheplan.
 
-### 3. Kuitwa kwePlan
+### 3. Kuitwa kwePlan {#3-plan-execution}
 
 Orchestrator inodana `execute_site_plan` neID yeplan. Kuitwa kunoenderera chikamu-ne-chikamu, nhanho-ne-nhanho:
 
@@ -79,7 +79,7 @@ Orchestrator inodana `execute_site_plan` neID yeplan. Kuitwa kunoenderera chikam
 - **Nhanho dzepamwe chete** — nhanho dziri muchikamu chimwe chete dzisina kudyidzana pakati padzo dzinotumirwa panguva imwe kana flag ye`parallel` yaiswa.
 - **Nguva yekupera kwenhanho** — nhanho imwe neimwe ine nguva yayo yekupera (default: chigadziriso che`Ability Timeout`). Nhanho yapera nguva inotarwa se`failed` uye plan inoenderera.
 
-### 4. Kutevera Kufambira Mberi
+### 4. Kutevera Kufambira Mberi {#4-progress-tracking}
 
 Dana `get_plan_progress` chero nguva kuti utarise mamiriro ekuitwa:
 
@@ -104,7 +104,7 @@ Vashandisi veWP-CLI vanogona kutevera kufambira mberi ne:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Kupora kubva Kuzvikanganiso
+### 5. Kupora kubva Kuzvikanganiso {#5-error-recovery}
 
 Kana nhanho ikakundikana, orchestrator inotarisa **fallback** nhanho yakatsanangurwa muplan:
 
@@ -115,9 +115,9 @@ Agent inoshuma kukundikana kwese mupfupiso yekupedzisira yeplan uye inogona kuku
 
 ---
 
-## Kugona kweSite Plan
+## Kugona kweSite Plan {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Inogadzira site plan yakarongwa kubva kutsananguro yechinangwa yemutauro wechisikigo.
 
@@ -134,7 +134,7 @@ Inogadzira site plan yakarongwa kubva kutsananguro yechinangwa yemutauro wechisi
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Inotanga kuita site plan yakambogadzirwa kare.
 
@@ -150,7 +150,7 @@ Inotanga kuita site plan yakambogadzirwa kare.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Inodzosa mamiriro azvino ekuitwa kwehurongwa hwesaiti.
 
@@ -164,7 +164,7 @@ Inodzosa mamiriro azvino ekuitwa kwehurongwa hwesaiti.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Inogadzirisa nemaoko danho rakundikana uye inotangazve kuitwa kwehurongwa kubva padanho rinotevera. Shandisa izvi kana kugadzirisa otomatiki kwanga kusingaiti uye uchida kupindira.
 
@@ -180,7 +180,7 @@ Inogadzirisa nemaoko danho rakundikana uye inotangazve kuitwa kwehurongwa kubva 
 
 ---
 
-## Kuenzanisa v1 ne v2
+## Kuenzanisa v1 ne v2 {#comparing-v1-and-v2}
 
 | Chimiro | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Inogadzirisa nemaoko danho rakundikana uye inotangazve kuitwa kwehurongwa kubva 
 
 ---
 
-## Mirairo yehurongwa yeWP-CLI
+## Mirairo yehurongwa yeWP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Inogadzira hurongwa hwesaiti kubva mutsananguro yechinangwa.
 
@@ -205,7 +205,7 @@ Inogadzira hurongwa hwesaiti kubva mutsananguro yechinangwa.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Inoita hurongwa hwakambogadzirwa kare.
 
@@ -213,7 +213,7 @@ Inoita hurongwa hwakambogadzirwa kare.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Inoratidza kufambira mberi kwazvino kwehurongwa huri kuitwa kana hwapedzwa.
 
@@ -221,7 +221,7 @@ Inoratidza kufambira mberi kwazvino kwehurongwa huri kuitwa kana hwapedzwa.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Inonyora hurongwa hwese hwemasaiti (hwakamirira, huri kuitwa, uye hwapedzwa).
 
@@ -229,7 +229,7 @@ Inonyora hurongwa hwese hwemasaiti (hwakamirira, huri kuitwa, uye hwapedzwa).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Inodzoreredza hurongwa hwakundikana ku `pending` kuitira kuti hugone kuitwazve kubva pakutanga.
 

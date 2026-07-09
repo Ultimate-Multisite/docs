@@ -3,11 +3,11 @@ title: Sisseehitatud agendid
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Sisseehitatud agendid
+# Sisseehitatud agendid {#built-in-agents}
 
 Gratis AI Agent v1.9.0 sisaldab viit sisseehitatud agenti, millest igaüks on eelkonfigureeritud keskendunud tööriistakomplekti, kohandatud süsteemiviiba ja alustamissoovitustega, mis sobivad selle valdkonna levinud ülesannetega. Agentide vahel vahetamine muudab seda, mida assistent teha saab ja kuidas ta vastab — ilma et peaksid midagi seadistama. Superdav AI Agent v1.18.0 saab neile töövoogudele lisada ajakavaga arvestavaid tööriistu, meeldetuletuste kirjeid, kinnituse väravaid ja SMS-teavitusi, kui seotud integratsioonid on seadistatud.
 
-## Mis on agent?
+## Mis on agent? {#what-is-an-agent}
 
 Iga agent on nimega konfiguratsiooniprofiil, mis ühendab:
 
@@ -15,7 +15,7 @@ Iga agent on nimega konfiguratsiooniprofiil, mis ühendab:
 - **Süsteemiviip** — juhised, mis määravad agendi tooni, prioriteedid ja piirangud
 - **Soovitused** — eelkirjutatud viibad, mida näidatakse vestlusliideses, et aidata sul kiiresti alustada
 
-## Agendi valija avamine
+## Agendi valija avamine {#accessing-the-agent-picker}
 
 1. Ava **Gratis AI Agent** paneel WordPressi halduse külgribal.
 2. Klõpsa vestluse päise vasakus ülanurgas **agendi ikoonil** (ikoon muutub vastavalt aktiivsele agendile).
@@ -24,9 +24,9 @@ Iga agent on nimega konfiguratsiooniprofiil, mis ühendab:
 
 Võid agente vahetada ka vestluse keskel — uue agendi süsteemiviip hakkab kehtima alates järgmisest sõnumist.
 
-## Viis sisseehitatud agenti
+## Viis sisseehitatud agenti {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fookus:** Postituste, lehtede ja kontaktvormide loomine ning redigeerimine.
 
@@ -47,7 +47,7 @@ Võid agente vahetada ka vestluse keskel — uue agendi süsteemiviip hakkab keh
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fookus:** Veebisaidi otsast lõpuni loomine ühe viiba põhjal.
 
@@ -70,7 +70,7 @@ Võid agente vahetada ka vestluse keskel — uue agendi süsteemiviip hakkab keh
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fookus:** Visuaalne kohandamine — värvid, tüpograafia, CSS ja plokimustrid.
 
@@ -87,7 +87,7 @@ Võid agente vahetada ka vestluse keskel — uue agendi süsteemiviip hakkab keh
 - *Tee avalehest ekraanipilt ja ütle, mida sa parandaksid.*
 - *Loo korduskasutatav hero-plokimuster täislaiuses taustapildi ja keskele joondatud pealkirjaga.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fookus:** WordPressi pluginate avastamine, installimine ja haldamine.
 
@@ -105,7 +105,7 @@ Võid agente vahetada ka vestluse keskel — uue agendi süsteemiviip hakkab keh
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fookus:** Küsimustele vastamine saidi sisu, seadete ja WordPressi konfiguratsiooni kohta.
 
@@ -124,7 +124,7 @@ Võid agente vahetada ka vestluse keskel — uue agendi süsteemiviip hakkab keh
 
 ---
 
-## Superdav automatiseerimise integratsioonid
+## Superdav automatiseerimise integratsioonid {#superdav-automation-integrations}
 
 Kui Superdav AI Agent v1.18.0 integratsioonid on konfigureeritud, saavad sisseehitatud agendid osaleda turvalisemates ajakavaga arvestavates automatiseerimise töövoogudes:
 
@@ -138,11 +138,11 @@ Soovitatav töövoog: palu agendil sõnum või toiming ette valmistada, vaata ki
 
 ---
 
-## Agentide kohandamine
+## Agentide kohandamine {#customising-agents}
 
 Iga sisseehitatud agenti saab laiendada või asendada `gratis_ai_agent_agents` filtri kaudu.
 
-### Kohandatud süsteemiviiba lisamine olemasolevale agendile
+### Kohandatud süsteemiviiba lisamine olemasolevale agendile {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Uue agendi registreerimine
+### Uue agendi registreerimine {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Uus agent ilmub agendi valijasse kohe pärast filtri käivitumist.
 
-### Sisseehitatud agendi eemaldamine
+### Sisseehitatud agendi eemaldamine {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

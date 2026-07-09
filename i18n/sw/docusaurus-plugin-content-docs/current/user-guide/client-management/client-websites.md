@@ -3,7 +3,7 @@ title: Tovuti za Wateja
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Tovuti za Mteja Wako (v2)
+# Tovuti za Mteja Wako (v2) {#your-clients-websites-v2}
 
 Baada ya kujisajili kwenye mtandao wako, wateja wako wanaweza kufikia Dashboard yao.
 

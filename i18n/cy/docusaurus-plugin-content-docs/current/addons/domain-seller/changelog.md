@@ -3,7 +3,7 @@ title: Cofnod Newidiadau Gwerthwr Parthau
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Cofnod Newidiadau Domain Seller
+# Cofnod Newidiadau Domain Seller {#domain-seller-changelog}
 
 Fersiwn 1.3.0 - Rhyddhawyd ar 2026-06-02
 - Newydd: Ychwanegwyd rhybudd network-admin pan fydd balans ailwerthwr HostAfrica yn mynd yn rhy isel
@@ -134,20 +134,20 @@ Fersiwn 1.0.0 - Rhyddhawyd ar 2025-09-28
 * **Wedi’i drwsio:** Pob cod v1 anghymeradwy wedi’i ddiweddaru i safonau v2
 * **Wedi’i dynnu:** Cydnawsedd v1 etifeddol (newid sy’n torri cydnawsedd)
 
-### Fersiynau Blaenorol (v1 Etifeddol)
+### Fersiynau Blaenorol (v1 Etifeddol) {#previous-versions-v1-legacy}
 
-### Fersiwn 0.0.3 - 20/08/2019
+### Fersiwn 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Wedi’i drwsio: Anghydnawsedd â Groundhogg CRM
 * Nodyn: Hwn oedd y datganiad olaf a oedd yn gydnaws â v1
 
-### Fersiwn 0.0.2 - 07/12/2018
+### Fersiwn 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Wedi’i drwsio: Tynnwyd y maes License Key
 * Wedi’i drwsio: Tabiau cynllun ar goll pan fo’r plugin nodwedd yn weithredol
 * Gwell: Ychwanegwyd botwm hepgor ar y maes cofrestru
 
-### Fersiwn 0.0.1 - Datganiad Cychwynnol
+### Fersiwn 0.0.1 - Datganiad Cychwynnol {#version-001---initial-release}
 
 * Integreiddio OpenSRS sylfaenol ar gyfer WP Ultimo v1
 * Chwilio a chofrestru parth syml

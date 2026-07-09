@@ -3,7 +3,7 @@ title: Správa členstiev
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Správa členstiev
+# Správa členstiev {#managing-memberships}
 
 V Ultimate Multisite môžete spravovať členstvá a prístup k všetkým predplatným v siame sieti. Prejdite po podrobnosti o predplatnom, ako sú plány a produkty, počet sítí, faktura a frekvencia, históriu platieb a časové značky.
 

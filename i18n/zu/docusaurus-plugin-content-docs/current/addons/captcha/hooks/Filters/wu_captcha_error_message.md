@@ -4,19 +4,19 @@ title: Isihlungi - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# Isihlungi: wu_captcha_error_message
+# Isihlungi: wu_captcha_error_message {#filter-wucaptchaerrormessage}
 
 Hlunga umlayezo wephutha le-captcha.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
 | $message | `string` | Umlayezo wephutha. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 1.2.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L244) emugqeni 244

@@ -3,7 +3,7 @@ title: Página de Account del cliente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# La página Account de tu cliente (v2)
+# La página Account de tu cliente (v2) {#your-clients-account-page-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
@@ -11,7 +11,7 @@ Cuando los clientes se suscriben a un plan en tu red, obtienen acceso a un sitio
 
 En este tutorial, te guiaremos por la página Account del cliente y verás qué pueden ver y hacer tus clientes dentro de ella.
 
-## La página Account
+## La página Account {#the-account-page}
 
 Se puede acceder a la página Account haciendo clic en **Account** dentro del Dashboard de tu cliente.
 
@@ -27,7 +27,7 @@ Después de que un cliente haga clic en él, verá una vista general de su membr
 
 También puede cambiar la membresía a otro plan, o comprar otro paquete o servicio que ofrezcas. Veamos cada sección por separado.
 
-### Vista general de tu membresía:
+### Vista general de tu membresía: {#your-membership-overview}
 
 El primer bloque justo debajo del nombre del sitio web de tus clientes muestra una vista general de su plan actual y de los servicios/paquetes que se compraron con él. El bloque también muestra el número de membresía, el importe inicial pagado por ella, cuánto cuesta el plan y cualquier servicio/paquete, y cuántas veces se les facturó esta membresía. También pueden ver si la membresía está **Activa** , **Expirada** o **Cancelada**.
 
@@ -43,7 +43,7 @@ Ahora bien, si tus clientes eligen comprar paquetes o servicios para esta membre
 
 Ten en cuenta que no se pueden añadir códigos de cupón en esta página de cambio de membresía. Si el cliente usó un código de cupón en la primera compra de membresía, el código también se aplicará a esta nueva membresía.
 
-### Actualizar la dirección de facturación:
+### Actualizar la dirección de facturación: {#updating-the-billing-address}
 
 En la página Account, tus clientes también pueden actualizar su dirección de facturación. Solo tienen que hacer clic en **Actualizar** junto a _Dirección de facturación_.
 
@@ -53,7 +53,7 @@ A tu cliente le aparecerá una nueva ventana. Todo lo que debe hacer es rellenar
 
 ![Formulario para actualizar la dirección de facturación](/img/account-page/billing-address-form.png)
 
-### Cambiar la plantilla del sitio:
+### Cambiar la plantilla del sitio: {#changing-the-site-template}
 
 Para permitir que tus clientes cambien las plantillas de sus sitios, debes ir a **Ultimate Multisite > Ajustes > Sitios** y activar la opción **Permitir cambio de plantilla**.
 
@@ -81,7 +81,7 @@ Después de activar la confirmación y hacer clic en **Procesar cambio** , la nu
 
 Los clientes también pueden usar **Reset current template** desde este panel cuando necesiten restablecer el sitio a la plantilla asignada actualmente. Al igual que cambiar a otra plantilla, restablecer una plantilla puede sobrescribir el contenido del sitio, por lo que los clientes solo deben confirmarlo cuando entiendan la acción de restablecimiento.
 
-### Añadir dominios personalizados:
+### Añadir dominios personalizados: {#adding-custom-domains}
 
 Tus clientes también tendrán la opción de añadir un dominio personalizado para este plan en la página de su Account. Para permitir que tus clientes usen dominios personalizados, ve a **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Después de hacer clic en **Next Step** , tus clientes pueden añadir el nombre 
 
 Después de hacer clic en **Add Domain** , el dominio se añadirá a la Account de tu cliente. Todo lo que necesita hacer ahora es cambiar los registros DNS de este dominio personalizado en su registrador de dominios.
 
-### Cambiar contraseña:
+### Cambiar contraseña: {#changing-password}
 
 Dentro del Account dashboard, tus clientes también pueden cambiar su contraseña haciendo clic en **Change Password**.
 
@@ -125,7 +125,7 @@ Esto mostrará una nueva ventana donde tus clientes tendrán que introducir su c
 
 ![Formulario para cambiar contraseña con campos de contraseña actual y nueva](/img/account-page/change-password-form.png)
 
-### Zona de peligro:
+### Zona de peligro: {#danger-zone}
 
 También tenemos dos opciones que se muestran en la parte **Danger Zone**: **Delete Site** y **Delete Account**. Ambas están en la parte Danger Zone porque estas dos acciones son irreversibles. Si tus clientes eliminan su sitio web o su cuenta, no podrán recuperarlos.
 

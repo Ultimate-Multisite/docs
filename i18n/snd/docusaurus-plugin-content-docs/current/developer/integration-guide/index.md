@@ -3,13 +3,13 @@ title: انضمام جي رهنمائي
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# انٽيگريشن گائيڊ
+# انٽيگريشن گائيڊ {#integration-guide}
 
 هي گائيڊ Ultimate Multisite سان عام انٽيگريشن نمونن کي ڍڪي ٿو، جنهن ۾ ٻاهرين خدمتن سان ڳنڍڻ، ڪسٽم ادائگي گيٽ ويز ٺاهڻ، ۽ webhooks سنڀالڻ شامل آهن.
 
 الڳ ٿيل ٽيننٽ انفراسٽرڪچر لاءِ، خودمختيار ٽيننٽ bootstrap، مائيگريشن جي تصديق، SSO، ۽ teardown رهنمائي لاءِ [Multi-Tenancy Integration](./multi-tenancy) ڏسو.
 
-## CRM انٽيگريشن
+## CRM انٽيگريشن {#crm-integration}
 
 جڏهن نوان گراهڪ سائن اپ ڪن ته گراهڪن جو ڊيٽا پنهنجي CRM سان هم وقت ڪريو:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## اينالٽڪس انٽيگريشن
+## اينالٽڪس انٽيگريشن {#analytics-integration}
 
 گراهڪ جي لائف سائيڪل دوران اهم ڪاروباري واقعن کي ٽريڪ ڪريو:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## ايندڙ قدم
+## ايندڙ قدم {#next-steps}
 
 - [ڪسٽم گيٽ وي ڊولپمينٽ](./custom-gateway) — پنهنجو ادائگي گيٽ وي ٺاهيو
 - [Webhook سنڀالڻ](./webhooks) — ڪسٽم webhook endpoints ٺاهيو

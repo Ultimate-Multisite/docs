@@ -4,11 +4,11 @@ title: Suodatin - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Suodatin: wu_apc_process_page_content
+# Suodatin: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Salli kehittäjien muokata lopullista sisältöä
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Salli kehittäjien muokata lopullista sisältöä
 | $to_replace | `array` | Taulukko, joka sisältää placeholderit. |
 | $placeholder_count | `int` | Löydettyjen placeholderien määrä. |
 
-### Alkaen
+### Alkaen {#since}
 
 - 1.4.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) rivillä 46
 
 
-## Palauttaa
+## Palauttaa {#returns}
 Sisältö muokkauksen jälkeen.

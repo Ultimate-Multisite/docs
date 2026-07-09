@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Aksiyon: set_auth_cookie
+# Aksiyon: set_auth_cookie {#action-setauthcookie}
 
 Kimlik doğrulama çerezi ayarlanmadan hemen önce tetiklenir.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Açıklama |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Kimlik doğrulama çerezi ayarlanmadan hemen önce tetiklenir.
 | $scheme | `string` | Kimlik doğrulama şeması. Değerler arasında 'auth' veya 'secure_auth' bulunur. |
 | $token | `string` | Bu çerez için kullanılacak kullanıcının oturum belirteci. |
 
-### Ne zaman
+### Ne zaman {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> parametresi eklendi.
-### Kaynak
+### Kaynak {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) dosyasının 124. satırında tanımlanmıştır.

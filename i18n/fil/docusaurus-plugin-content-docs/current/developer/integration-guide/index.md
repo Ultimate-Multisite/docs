@@ -3,13 +3,13 @@ title: Gabay sa Integrasyon
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gabay sa Integrasyon
+# Gabay sa Integrasyon {#integration-guide}
 
 Saklaw ng gabay na ito ang karaniwang mga pattern ng integrasyon sa Ultimate Multisite, kabilang ang pagkonekta sa mga panlabas na serbisyo, pagbuo ng mga custom na payment gateway, at paghawak ng mga webhook.
 
 Para sa hiwalay na imprastraktura ng tenant, tingnan ang [Integrasyon ng Multi-Tenancy](./multi-tenancy) para sa gabay sa sovereign tenant bootstrap, pag-verify ng migration, SSO, at teardown.
 
-## Integrasyon ng CRM
+## Integrasyon ng CRM {#crm-integration}
 
 I-sync ang datos ng customer sa iyong CRM kapag nag-sign up ang mga bagong customer:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrasyon ng Analytics
+## Integrasyon ng Analytics {#analytics-integration}
 
 Subaybayan ang mahahalagang event ng negosyo sa buong customer lifecycle:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
 - [Pag-develop ng Custom Gateway](./custom-gateway) — Buuin ang sarili mong payment gateway
 - [Paghawak ng Webhook](./webhooks) — Gumawa ng mga custom na webhook endpoint

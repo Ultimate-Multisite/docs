@@ -3,7 +3,7 @@ title: Sivujen hallinta
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Sivustojen hallinta
+# Sivustojen hallinta {#managing-sites}
 
 Sivut (tai alalohkot) ovat ydinliiketoimintasi WaaS-yrityksessä. Ultimate Multisiteessa on kolme sivun tyyppiä:
 
@@ -11,13 +11,13 @@ Sivut (tai alalohkot) ovat ydinliiketoimintasi WaaS-yrityksessä. Ultimate Multi
 - **Sivustotemplaatit** — Esivalmiita sivustoja, joita asiakkaat voivat valita lähtökohtana
 - **Pääsivu** — Sinun ensisijainen verkko-sivusto
 
-## Sivujen katselu
+## Sivujen katselu {#viewing-sites}
 
 Siirry kohtaan **Ultimate Multisite → Sites** nähdäksesi kaikki alalohkot verkossasi. Jokaisella sivulla on tyyppi merkintä ja voit suodattaa näkymää kaikista sivuista, asiakkaan omistamat, templatit tai odotettavat.
 
 ![Sivujen luettelon sivu](/img/admin/sites-list.png)
 
-## Uuden sivun lisääminen
+## Uuden sivun lisääminen {#adding-a-new-site}
 
 Napsauta **Add Site** -painiketta uuden sivuston luomiseksi. Sinun on annettava:
 
@@ -27,15 +27,15 @@ Napsauta **Add Site** -painiketta uuden sivuston luomiseksi. Sinun on annettava:
 
 **Copy Site** -vaihtoehto antaa sinun luoda uuden sivuston olemassa olevan sivustotemplanin perusteella. Kun tätä on käytetty, voit valita, mitä templaattia käytetään lähtökohtana. Varmista, että **Copy Media on Duplication** on aktivoitu sisällön (media) mukaan.
 
-## Olemassa olevan sivun hallinta
+## Olemassa olevan sivun hallinta {#managing-an-existing-site}
 
 Napsauta minkä tahansa sivun kohdalla **Manage** avataksesi **Edit Site** -sivun. Täällä löydät:
 
-### Perustiedot
+### Perustiedot {#basic-information}
 
 Sivun nimi, tyyppi, site ID ja kuvaus. Näet myös kartoituneen domeenin, siihen liittyvän jäsenyyden sekä asiakkaan tilin, joka omistaa sivuston.
 
-### Sivustoiminnallisuudet
+### Sivustoiminnallisuudet {#site-options}
 
 Määrittele sivuston ominaisuudet ja rajoitukset:
 
@@ -47,7 +47,7 @@ Määrittele sivuston ominaisuudet ja rajoitukset:
 
 Oletuksena sivustot noudattavat jäsenyysasetuksia, jotka on määritetty jäsenyystasolla. Sivuston tason rajoitusten asettaminen ylittää nämä jäsenyysasetukset.
 
-### Yhteydet (Associations)
+### Yhteydet (Associations) {#associations}
 
 Sivuston asetusten alla löydät tiedot seuraavista:
 
@@ -55,7 +55,7 @@ Sivuston asetusten alla löydät tiedot seuraavista:
 - **Jäsenyys**, jolle sivu kuuluu
 - **Asiakkauskonto**, joka on liitetty sivustoon
 
-### Oikeanpuoleinen valikko (Right Sidebar)
+### Oikeanpuoleinen valikko (Right Sidebar) {#right-sidebar}
 
 Oikealla voit:
 

@@ -4,11 +4,11 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਆਖਰੀ ਕੰਟੈਂਟ ਨਾਲ ਖੇਡਣ (ਬਦਲਣ) ਦਾ ਮੌਕਾ ਦੇਣਾ
 
-## ਪੈਰਾਮੀਟਰਾਂ (Parameters)
+## ਪੈਰਾਮੀਟਰਾਂ (Parameters) {#parameters}
 
 | Name | Type | ਵਰਣਨ (Description) |
 |------|------|-------------|
@@ -17,12 +17,12 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | ਪਲੇਸਹੋਲਡਰਾਂ ਵਾਲਾ ਐਰੇ (Array)। |
 | $placeholder_count | `int` | ਮਿਲੇ ਪਲੇਸਹੋਲਡਰਾਂ ਦੀ ਗਿਣਤੀ। |
 
-### ਕਿੰਨੇ ਤੋਂ (Since)
+### ਕਿੰਨੇ ਤੋਂ (Since) {#since}
 
 - 1.4.0
-### ਸਰੋਤ (Source)
+### ਸਰੋਤ (Source) {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) ਵਿੱਚ ਲਾਈਨ 46 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ।
 
-## ਵਾਪਸ ਕੀ ਕਰਦਾ ਹੈ (Returns)
+## ਵਾਪਸ ਕੀ ਕਰਦਾ ਹੈ (Returns) {#returns}
 ਸੋਧ ਕਰਨ ਤੋਂ ਬਾਅਦ ਦਾ ਕੰਟੈਂਟ।

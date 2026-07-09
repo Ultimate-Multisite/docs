@@ -3,11 +3,11 @@ title: Ricerca dominio intestazione
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Ricerca dominio nell'header
+# Ricerca dominio nell'header {#header-domain-search}
 
 Usa questa configurazione quando vuoi un piccolo modulo nell'header che avvii una ricerca di dominio, poi consenta al cliente di scegliere tra i domini disponibili all'interno del checkout di Ultimate Multisite.
 
-## Requisiti
+## Requisiti {#requirements}
 
 - Ultimate Multisite attivo a livello di network.
 - Multisite Ultimate Domain Seller attivo a livello di network.
@@ -16,7 +16,7 @@ Usa questa configurazione quando vuoi un piccolo modulo nell'header che avvii un
   - TLD supportati configurati, ad esempio `com`, `net` e `org`.
 - Un modulo di checkout valido contenente il campo **Selezione dominio**.
 
-## Modulo di checkout
+## Modulo di checkout {#checkout-form}
 
 1. Crea o modifica il modulo di checkout utilizzato dalla pagina di registrazione.
 2. Aggiungi i normali campi obbligatori di checkout/account, incluso **Nome utente**. Un modulo di checkout contenente solo il campo dominio viene rifiutato dalla validazione di Ultimate Multisite.
@@ -30,7 +30,7 @@ La pagina di registrazione dovrebbe renderizzare il modulo di checkout, ad esemp
 [wu_checkout slug="domain-form"]
 ```
 
-## Modulo nell'header
+## Modulo nell'header {#header-form}
 
 Aggiungi un piccolo modulo `GET` nell'header del sito che invii il termine di ricerca inserito alla pagina di checkout come `domain_name`:
 
@@ -44,7 +44,7 @@ Aggiungi un piccolo modulo `GET` nell'header del sito che invii il termine di ri
 
 Non preselezionare un dominio in JavaScript personalizzato dell'header. L'header dovrebbe solo passare il termine di ricerca. Lo script di checkout di Domain Seller legge `?domain_name=example`, compila la casella di ricerca del checkout ed esegue la ricerca di disponibilità così che il cliente possa scegliere tra i domini restituiti.
 
-## Comportamento previsto
+## Comportamento previsto {#expected-behaviour}
 
 Cercare `example` nell'header dovrebbe aprire:
 
@@ -61,7 +61,7 @@ Il checkout dovrebbe quindi mostrare risultati selezionabili come:
 
 Dopo aver selezionato un risultato disponibile, il riepilogo dell'ordine dovrebbe includere il prodotto di registrazione dominio e il nome di dominio selezionato.
 
-## Verifica
+## Verifica {#verification}
 
 1. Apri la home page.
 2. Cerca un nome semplice, ad esempio `example`.
@@ -71,7 +71,7 @@ Dopo aver selezionato un risultato disponibile, il riepilogo dell'ordine dovrebb
 6. Fai clic su **Seleziona** per un dominio disponibile.
 7. Conferma che il riepilogo dell'ordine contenga `Domain Registration - example.com` o il dominio selezionato.
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
 - Se non compare alcun elenco, controlla la scheda network del browser per `admin-ajax.php?action=wu_domain_search` e conferma che restituisca `domains` o `results` non vuoti.
 - Se il modulo di checkout non supera la validazione durante il salvataggio, aggiungi i campi account obbligatori come **Nome utente**.

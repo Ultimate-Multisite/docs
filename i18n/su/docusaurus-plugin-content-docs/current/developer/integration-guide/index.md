@@ -3,13 +3,13 @@ title: Pituduh Integrasi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Pituduh Integration
+# Pituduh Integration {#integration-guide}
 
 Pituduh ieu ngawengku pola integration umum jeung Ultimate Multisite, kaasup nyambungkeun ka ladenan éksternal, ngawangun gateway pamayaran kustom, jeung nanganan webhooks.
 
 Pikeun infrastruktur tenant anu kapisah, tingali [Integration Multi-Tenancy](./multi-tenancy) pikeun pituduh bootstrap tenant daulat, vérifikasi migrasi, SSO, jeung teardown.
 
-## Integration CRM
+## Integration CRM {#crm-integration}
 
 Sync data palanggan ka CRM anjeun nalika palanggan anyar daptar:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integration Analytics
+## Integration Analytics {#analytics-integration}
 
 Lacak kajadian bisnis konci sapanjang lifecycle palanggan:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Léngkah Salajengna
+## Léngkah Salajengna {#next-steps}
 
 - [Pangwangunan Gateway Kustom](./custom-gateway) — Wangun gateway pamayaran anjeun sorangan
 - [Nanganan Webhook](./webhooks) — Jieun endpoint webhook kustom

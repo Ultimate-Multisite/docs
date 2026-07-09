@@ -3,11 +3,11 @@ title: Tantaran'ny fanovana
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Tantaran'ny fanovana
+# Tantaran'ny fanovana {#changelog}
 
-## 1.9.0 — Navoaka tamin'ny 2026-04-28
+## 1.9.0 — Navoaka tamin'ny 2026-04-28 {#190--released-on-2026-04-28}
 
-### Vaovao
+### Vaovao {#new}
 
 - **`create_contact_form` ability** — mamorona endrika fifandraisana amin'ny fampiasana ny plugin endrika mavitrika (Contact Form 7, WPForms, Fluent Forms, na Gravity Forms) ary mamerina shortcode vonona hampidirina amin'izay lahatsoratra na pejy rehetra.
 - **`set_featured_image` ability** — manendry sary nasongadina ho an'ny lahatsoratra na pejy avy amin'ny ID fametahana Media Library efa misy na URL lavitra; manafatra ho azy ny sary rehefa omena URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Avereno ny session farany** — ny tontonana chat izao dia mamerina ho azy ny resaka vao haingana indrindra rehefa misokatra ny pejy sy rehefa sokafana ny widget, ka tsy very mihitsy ny context mandritra ny fitetezana pejy.
 - **Rohy hetsika plugin** — rohy haingana mankany amin'ny Settings sy ny Abilities Registry izao dia miseho ao amin'ny efijery WordPress **Plugins → Installed Plugins** eo ambanin'ny famaritana plugin.
 
-### Nohatsaraina
+### Nohatsaraina {#improved}
 
 - **Fanandramana indray loharano sary** — ny agent izao dia manandrana indray ireo loharano sary maimaim-poana rehetra voarindra alohan'ny hiverenana amin'ny sary novokarin'ny AI rehefa tsy mahomby ny fisintomana.
 - **Tontonana mombamomba ny modely** — hita foana ao amin'ny lohatenin'ny chat; tsy afenina intsony aorian'ny hafatra voalohany.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Fanavaozana endrika chat widget** — kisary AI mitambatra no manolo ny avatar namboarina manokana teo aloha; mifanaraka amin'ny rafitra agent efa ao anatiny.
 - **Fanovana URL ho rohy** — ireo URL miseho amin'ny hafatra rafitra sy bubble hafatra hadisoana izao dia aseho ho rohy azo kitihina.
 
-### Namboarina
+### Namboarina {#fixed}
 
 - **Fahitana ability** — nahitsy ny famaritana, ny fanondroana system prompt, ary ny fampifanarahana namespace mba hisehoan'ny ability rehetra ao amin'ny lisitry ny fitaovan'ny agent amin'ny fomba azo antoka.
 - **Cache providers** — ny providers izao dia tehirizina cache manerana ny site amin'ny alalan'ny version counter, misoroka olana stale-provider amin'ny tambajotra multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Navoaka tamin'ny 2026-04-09
+## 1.4.0 — Navoaka tamin'ny 2026-04-09 {#140--released-on-2026-04-09}
 
-### Vaovao
+### Vaovao {#new-1}
 
 - **Baikon'ny benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — mampandeha ny andiana benchmark Agent Capabilities v1 avy amin'ny tsipika baiko ho an'ny fantsona CI sy ny fizotran'asa fanombanana maodely. Manohana fampandehanana isaky ny fanontaniana, fanoloana provider/model, ary vokatra JSON/CSV.
 - **Andiana benchmark Agent Capabilities v1** — andiana prompt sarotra sy misy dingana maro voarafitra izay mitsapa ny velaran'ny fahaiza-manao manontolo, miaraka amin'ny fanomezana isa sy tatitra token/faharetana.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Fanontaniana benchmark tranonkala restaurant** (`q-restaurant-website`) — fitsapana manomboka hatramin'ny farany mandrakotra fisoratana anarana CPT, design system, navigation, ary fikarohana plugin.
 - **Plugins mpampifandray AI provider** nampiana amin'ny blueprints WordPress Playground ho an'ny fanamboarana fampandrosoana eo an-toerana haingana kokoa.
 
-### Nohatsaraina
+### Nohatsaraina {#improved-1}
 
 - README nohavaozina miaraka amin'ny antontan-taratasy sy torolalana fanamboarana AI provider connector.
 
-### Namboarina
+### Namboarina {#fixed-1}
 
 - Tsy fahombiazana fitsapana PHPUnit 25 tao amin'ny sampana `main` voavaha.
 - Endrika URL famoahana GitHub ao amin'ny `blueprint.json` nahitsy.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Ny naoty famoahana teo aloha dia tazonina ao amin'ny repository an'ny plugin._

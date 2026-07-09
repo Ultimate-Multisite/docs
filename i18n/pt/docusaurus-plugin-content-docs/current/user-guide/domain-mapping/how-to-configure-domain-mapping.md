@@ -3,17 +3,17 @@ title: Como Configurar o Mapeamento de Domínios
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Como Configurar o Mapeamento de Domínios (v2)
+# Como Configurar o Mapeamento de Domínios (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 
 Uma das funcionalidades mais poderosas de uma rede premium é a capacidade de oferecer aos nossos clientes a possibilidade de associar um domínio de topo aos seus sites. Afinal, o que parece mais profissional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ou [_**joesbikeshop.com**_](http://joesbikeshop.com)? É por isso que o Ultimate Multisite oferece essa funcionalidade integrada, sem necessidade de usar extensões de terceiros.
 
-## O que é mapeamento de domínios?
+## O que é mapeamento de domínios? {#whats-domain-mapping}
 
 Como o nome sugere, o mapeamento de domínios é a capacidade oferecida pelo Ultimate Multisite de receber um pedido para um domínio personalizado e mapear esse pedido para o site correspondente na rede com esse domínio específico associado.
 
-### Como configurar o mapeamento de domínios na sua rede Ultimate Multisite
+### Como configurar o mapeamento de domínios na sua rede Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 O mapeamento de domínios requer alguma configuração da sua parte para funcionar. Felizmente, o Ultimate Multisite automatiza o trabalho difícil por si, para que possa cumprir facilmente os requisitos.
 
@@ -45,7 +45,7 @@ Mas antes de começar a mapear o domínio personalizado para um dos subsites na 
 
 ###
 
-### Certificar-se de que as definições de DNS do domínio estão corretamente configuradas
+### Certificar-se de que as definições de DNS do domínio estão corretamente configuradas {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Para um mapeamento funcionar, precisa de se certificar de que o domínio que está a planear mapear está a apontar para o endereço IP da sua rede. Tenha em atenção que precisa do endereço IP da rede — o endereço IP do domínio onde o Ultimate Multisite está instalado — e não o endereço IP do domínio personalizado que pretende mapear. Para procurar o endereço IP de um domínio específico, sugerimos ir a [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), por exemplo.
 
@@ -55,7 +55,7 @@ Se tiver dificuldades em pôr isto a funcionar, **contacte o suporte do seu regi
 
 Se planeia permitir que os seus clientes mapeiem os seus próprios domínios, eles terão de fazer o trabalho desta parte por conta própria. Encaminhe-os para o sistema de suporte do respetivo registador caso não consigam criar o Registo A.
 
-### Mapear um nome de domínio personalizado como Super Admin
+### Mapear um nome de domínio personalizado como Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Quando tem sessão iniciada como super admin na sua rede, pode adicionar e gerir facilmente nomes de domínio personalizados acedendo a **Ultimate Multisite > Domínios**.
 
@@ -93,7 +93,7 @@ Se clicar no nome do domínio, poderá ver algumas opções dentro dele. Vamos d
 
 **É seguro?:** Embora Ultimate Multisite verifique se o domínio tem um certificado SSL ou não antes de o ativar, pode selecionar manualmente se pretende carregar o domínio com ou sem um certificado SSL. Tenha em atenção que, se o website não tiver um certificado SSL e tentar forçar o carregamento com SSL, poderá gerar erros.
 
-### Mapear nome de domínio personalizado como utilizador de subsite
+### Mapear nome de domínio personalizado como utilizador de subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Os administradores de subsite também podem mapear nomes de domínio personalizados a partir do painel de administração do seu subsite.
 
@@ -121,7 +121,7 @@ O utilizador pode então clicar em **Próximo passo** e prosseguir para adiciona
 
 Clicar em **Adicionar Domínio** iniciará o processo de verificação e obtenção das informações de DNS do domínio personalizado.
 
-### Sobre a sincronização de domínios
+### Sobre a sincronização de domínios {#about-domain-syncing}
 
 A sincronização de domínios é um processo no qual Ultimate Multisite adiciona o nome de domínio personalizado à sua conta de alojamento como um domínio adicional **para que o mapeamento de domínios funcione**.
 

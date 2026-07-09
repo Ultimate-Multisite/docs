@@ -3,28 +3,28 @@ title: Přehled REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referenční příručka REST API
+# Referenční příručka REST API {#rest-api-reference}
 
-## Základní konfigurace
+## Základní konfigurace {#base-configuration}
 
 **Základní URL:** `{site_url}/wp-json/wu/v2/`
 **Ověření:** API Key a Secret (HTTP Basic Auth nebo parametry URL)
 
-## Ověření
+## Ověření {#authentication}
 
-### Povolit API
+### Povolit API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Získat přihlašovací údaje API
+### Získat přihlašovací údaje API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metody ověření
+### Metody ověření {#authentication-methods}
 
 **HTTP Basic Auth (doporučeno):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Základní endpointy
+## Základní endpointy {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **Základní trasa:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Základní trasa:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Základní trasa:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Základní trasa:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Základní trasa:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Základní trasa:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registrační endpoint
+## Registrační endpoint {#registration-endpoint}
 
 Endpoint `/register` poskytuje kompletní tok checkout/registrace:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpointy suverénních tenantů
+## Endpointy suverénních tenantů {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 přidává REST pokrytí suverénních tenantů pro integrace, které zřizují, kontrolují nebo ověřují izolované tenanty.
 
@@ -242,7 +242,7 @@ Typické odpovědi stavu migrace zahrnují:
 
 Považujte `ready: false` za blokátor před spuštěním. Zkontrolujte podrobnosti ověření, opravte navázání hostitele databáze, frontu, zřizování uživatelů nebo problém se směrováním a poté ověření zopakujte.
 
-## Chybové odpovědi
+## Chybové odpovědi {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Považujte `ready: false` za blokátor před spuštěním. Zkontrolujte podrobno
 }
 ```
 
-## Stránkování a filtrování
+## Stránkování a filtrování {#pagination-and-filtering}
 
 **Parametry dotazu:**
 ```http

@@ -3,7 +3,7 @@ title: Seznam změn integrace WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Seznam změn integrace WooCommerce
+# Seznam změn integrace WooCommerce {#woocommerce-integration-changelog}
 
 Verze 2.2.0 - Vydáno 2026-07-01
 * Nové: Částky daní Ultimate Multisite se nyní při pokladně zobrazují jako samostatné řádky poplatků WooCommerce, takže součty daní jsou před platbou přehlednější.

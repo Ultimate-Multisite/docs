@@ -4,11 +4,11 @@ title: Әрекет - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Әрекет: wu_domain_renewal_completed
+# Әрекет: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Домен сәтті ұзартылғаннан кейін іске қосылады.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 | $renewal_data | `array&lt;string,mixed&gt;` | Ұзарту метадеректері (domain_name, years, customer_id, т.б.). |
 | $result | `array&lt;string,mixed&gt;` | Тіркеуші қайтарған, жаңа expiry_date мәнін қамтитын өңделмеген нәтиже массиві. |
 
-### Бастап
+### Бастап {#since}
 
 - 2.0.0
-### Дереккөз
+### Дереккөз {#source}
 
 [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) файлында 594-жолда анықталған.

@@ -3,7 +3,7 @@ title: GitHub-kodsnuttar
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Hur du använder Ultimate Multisite-kodsnuttar från vårt GitHub-repository
+# Hur du använder Ultimate Multisite-kodsnuttar från vårt GitHub-repository {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Det finns kodsnuttar tillgängliga i GitHub-repositoryt som ofta efterfrågas av Ultimate Multisite-användare som vill lägga till små funktioner, som att inkludera ett Google Analytics-skript på registreringssidor eller dölja en metaruta från adminpanelen.
 
@@ -19,7 +19,7 @@ Det finns två sätt att lägga till koden:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Så lägger du till kodsnutten i ditt temas functions.php-fil
+# Så lägger du till kodsnutten i ditt temas functions.php-fil {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Logga in på din WordPress nätverksadmin-panel och gå till Utseende > Temaredigeraren (se skärmdump nedan).
 
@@ -29,7 +29,7 @@ Det finns två sätt att lägga till koden:
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Så skapar du Must-Use Plugins (mu-plugins)
+# Så skapar du Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress har en funktion som låter dig ladda anpassad funktionalitet kallad "Must-Use Plugins", eller "mu-plugins" i kortform.
 

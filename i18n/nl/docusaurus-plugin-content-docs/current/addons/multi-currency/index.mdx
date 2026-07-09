@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency stelt uw netwerk in staat om betalingen te accepteren in meerdere valuta's. Het converteert automatisch prijzen met behulp van live of handmatige wisselkoersen, stelt u in staat om exacte prijzen per product in elke valuta in te stellen en detecteert de voorkeursvaluta van elke bezoeker via geolocatie — alles beheerd vanuit één admin dashboard.
 
-## Belangrijkste functies
+## Belangrijkste functies {#key-features}
 
 - **Automatische wisselkoersconversie** — prijzen worden geconverteerd van uw basisvaluta met behulp van koersen die worden opgehaald bij uw gekozen aanbieder.
 - **Prijsbepaling per product overschrijven** — stel exacte valuta-specifieke prijzen in op elk product om automatische conversie te omzeilen.
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency stelt uw netwerk in staat om betalingen te ac
 - **Valutadetectie op basis van geolocatie** — selecteert automatisch de valuta die overeenkomt met het land van de bezoeker.
 - **Admin dashboard** — beheert actieve valuta's, wisselkoersen en aanbiedersinstellingen vanaf één plek.
 
-## Vereisten
+## Vereisten {#requirements}
 
 - Ultimate Multisite 2.0.0 of hoger
 - WordPress Multisite installatie
 - PHP 7.4 of hoger
 
-## Installatie
+## Installatie {#installation}
 
 1. Upload de pluginbestanden naar `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Activeer de plugin via het scherm **Plugins** in WordPress (Netwerk activeren)
 3. Navigeer naar **Ultimate Multisite → Multi-Currency** om het admin dashboard te openen.
 4. Voeg de valuta's toe die u wilt accepteren en configureer uw wisselkoersaanbieder.
 
-## Configuratie
+## Configuratie {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Het Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) is de centrale plek om:
 
@@ -44,7 +44,7 @@ Het Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) i
 - De huidige koersen voor alle actieve valuta's te bekijken.
 - Handmatige koersen in te stellen wanneer automatische aanbieders niet geschikt zijn.
 
-### Wisselkoersaanbieders
+### Wisselkoersaanbieders {#exchange-rate-providers}
 
 | Aanbieder | Beschrijving |
 |---|---|
@@ -55,7 +55,7 @@ Het Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) i
 
 Kies uw aanbieder onder **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Koersen kunnen op elk moment handmatig worden vernieuwd of worden ingepland om automatisch bijgewerkt te worden.
 
-### Prijsbepaling per product overschrijven
+### Prijsbepaling per product overschrijven {#per-product-pricing-overrides}
 
 Wanneer automatische conversie niet nauwkeurig genoeg is, kunt u een exacte prijs voor een specifieke valuta instellen op elk product:
 
@@ -66,7 +66,7 @@ Wanneer automatische conversie niet nauwkeurig genoeg is, kunt u een exacte prij
 
 Producten zonder overschrijving gebruiken de geconverteerde prijs van uw basisvaluta.
 
-### Valutaselector-aanmeldveld
+### Valutaselector-aanmeldveld {#currency-selector-signup-field}
 
 Het valutaselectorveld kan aan uw aanmeld-/checkout-proces worden toegevoegd, zodat klanten hun voorkeursvaluta kiezen bij registratie:
 
@@ -76,7 +76,7 @@ Het valutaselectorveld kan aan uw aanmeld-/checkout-proces worden toegevoegd, zo
 
 De geselecteerde valuta wordt opgeslagen bij het abonnement en gebruikt voor alle volgende factureringen.
 
-### Valutadetectie op basis van geolocatie
+### Valutadetectie op basis van geolocatie {#geolocation-based-currency-detection}
 
 Wanneer detectie op basis van geolocatie is ingeschakeld, koppelt de addon het land van de bezoeker aan een valuta en selecteert deze vooraf in het valutaselectorveld. Om dit in te schakelen:
 
@@ -86,27 +86,27 @@ Wanneer detectie op basis van geolocatie is ingeschakeld, koppelt de addon het l
 
 Als er geen koppeling bestaat voor het land van de bezoeker, wordt de basisvaluta van het netwerk gebruikt als fallback.
 
-## Veelgestelde vragen
+## Veelgestelde vragen {#frequently-asked-questions}
 
-### Wat gebeurt er als een wisselkoersaanbieder niet beschikbaar is?
+### Wat gebeurt er als een wisselkoersaanbieder niet beschikbaar is? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 De addon valt terug op de laatst succesvol opgehaalde koersen. Als er nog nooit koersen zijn opgehaald, valt het terug op de handmatige koersen die u heeft geconfigureerd. Het wordt aanbevolen om handmatige koersen in te stellen als een vangnet.
 
-### Kan ik verschillende aanbieders gebruiken voor verschillende valuta's?
+### Kan ik verschillende aanbieders gebruiken voor verschillende valuta's? {#can-i-use-different-providers-for-different-currencies}
 
 Nee — er is op elk moment één aanbieder actief voor alle valuta's. Gebruik **Handmatig** als u volledige controle over individuele koersen nodig heeft.
 
-### Vereist geolocatie een aparte plugin?
+### Vereist geolocatie een aparte plugin? {#does-geolocation-require-a-separate-plugin}
 
 Er is geen externe geolocatie plugin nodig. De addon gebruikt de ingebouwde IP-naar-land detectie van WordPress. Voor een hogere nauwkeurigheid kan een specifieke geolocatieservice worden geïntegreerd via de verstrekte filter hooks.
 
-### Worden de prijsbepalingen per product toegepast vóór of ná belastingen?
+### Worden de prijsbepalingen per product toegepast vóór of ná belastingen? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Prijsbepalingen per product stellen de prijs vóór belastingen in de doelvaluta in. Belastingen worden bovenop de overschrijvingsprijs berekend met behulp van uw bestaande belastingconfiguratie.
 
-## Changelog
+## Changelog {#changelog}
 
-### Versie 1.0.0 — Uitgebracht op 2026-04-02
+### Versie 1.0.0 — Uitgebracht op 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nieuw: Multi-valuta ondersteuning met automatische wisselkoersconversie.
 - Nieuw: Prijsbepaling per product overschrijving voor exacte valuta-specifieke prijzen.

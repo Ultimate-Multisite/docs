@@ -3,11 +3,11 @@ title: Izolacija za več najemnikov
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolacija za več različic (Multi-Tenancy Isolation)
+# Izolacija za več različic (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 podpira izolacijo baze podatkov in datoteke na podpodpoddelih (subsite) za suverene najemnike. To ohranja podatke najemnika ločeno, hkrati pa ohranja konfiguracijo omrežja, računovodstvo in administracijo.
 
-## Strategija izolacije
+## Strategija izolacije {#isolation-strategy}
 
 Uporabite suverenost izolacije za stranke, ki zahtevajo močnejše ločitev podatkov, posredno skladišče datoteka ali oddirovni okvir (host boundary).
 
@@ -18,7 +18,7 @@ Vsak suveren najemnik mora imeti:
 - Vnos v registar najemnikov, ki povezuje podpoddel za njegovo bazo podatkov, osnovno poti, ime hosta in model izolacije.
 - Rezultat verifikacije migracije pred tem, ko se najemnik ustopi v delovanje (live).
 
-## Povezava z bazo podatkovnega hosta (Database host binding)
+## Povezava z bazo podatkovnega hosta (Database host binding) {#database-host-binding}
 
 Verzija 1.2.0 spremeni podrazlično vedenje povezave na isti računalniški sistem za suverene instalacije. Vrednosti kot so `localhost` normalizirane tako, da lahko Bedrock, FrankenPHP in WordPress instalacije v kontejnerjih omogočajo dodeljevanje dovoljenj in preverjanje dostopa glede na string hosta, ki ga MySQL dejansko vidi.
 
@@ -31,11 +31,11 @@ Ob konfiguriranju suverenega najemnika:
 
 Če poročila o verifikaciji kažejo neuspešne dodeljevanje dovoljenj, primerjte dodeljevanje uporabnika v bazi podatkov najemnika z konfiguriirano povezavo z hostom. Uporabnik, ki mu je dodeljeno za `user@localhost`, je drugačen od `user@127.0.0.1` ali `user@%`.
 
-## Osnovno podpoddelno sistem datoteka (Filesystem root)
+## Osnovno podpoddelno sistem datoteka (Filesystem root) {#filesystem-root}
 
 Korenni root (tenant root) mora biti stabil med ponovnimi vkljuci in spreminjanjem. Izogibajte se časovnim lokacijam za montažo (temporary mount paths). Pri instalah na podlagi Bedrock, potrdite, da se tenant root nanaša na WordPress web root, ki ga pričakuje bootstrap sistema najema, ne le na projektni root.
 
-## Redosled postavitve (Provisioning order)
+## Redosled postavitve (Provisioning order) {#provisioning-order}
 
 Za nove suverenske najemnike uporabljajte ta redosled:
 
@@ -49,7 +49,7 @@ Za nove suverenske najemnike uporabljajte ta redosled:
 
 Ta redosled zagotavlja, da se najemniki, ki so še neprekriti, ne prejmejo promet pred temeljitvijo baze podatkov, uporabnikov in sistemske datoteke.
 
-## Potoki upravljanja suverenih strank (Sovereign customer management flows)
+## Potoki upravljanja suverenih strank (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 ohranja dejanja upravljanja strank na glavnem spletni strani, ko je suveren režim (sovereign mode) vklopljen. Najemnik lahko še vedno deluje kot izolirana WordPress instalacija, vendar dejanja, ki so usmerjena na stranke in se nanašajo na mrežne računovodske podatke, članstvo ali deljene račune, morajo stranko vrniti na glavno stran namesto da poskušajo dokončati dejanje v trenutnem runtime najemnika.
 

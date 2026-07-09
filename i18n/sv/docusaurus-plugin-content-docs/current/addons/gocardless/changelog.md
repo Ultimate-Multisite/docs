@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Ändringslogg
+# GoCardless Ändringslogg {#gocardless-changelog}
 
 Version: 1.0.3 - Släppt den 2026-05-05
 * Fix: Överhängande sidor som saknar förälder rensas nu när ett GoCardless-medlemskap avbryts i ett överhängande eller pausat tillstånd

@@ -3,11 +3,11 @@ title: Webhook Handling
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ਨੂੰ ਸੰਭਾਲਣਾ (Webhook Handling)
+# Webhook ਨੂੰ ਸੰਭਾਲਣਾ (Webhook Handling) {#webhook-handling}
 
 ਬਾਹਰੀ ਸਰਵਿਸਾਂ (external services) ਤੋਂ ਘਟਨਾਵਾਂ (events) ਪ੍ਰਾਪਤ ਕਰਨ ਅਤੇ Ultimate Multisite ਨਾਲ ਡਾਟਾ ਸਿੰਕ (sync) ਕਰਨ ਲਈ ਕਸਟਮ Webhook endpoints ਬਣਾਓ।
 
-## ਕਸਟਮ Webhook Endpoint (Custom Webhook Endpoint)
+## ਕਸਟਮ Webhook Endpoint (Custom Webhook Endpoint) {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## ਸੁਰੱਖਿਆ ਵਿਚਾਰ (Security Considerations)
+## ਸੁਰੱਖਿਆ ਵਿਚਾਰ (Security Considerations) {#security-considerations}
 
 *   ਹਮੇਸ਼ਾ HMAC ਜਾਂ ਕਿਸੇ ਸਾਂਝੇ Secret ਦੀ ਵਰਤੋਂ ਕਰਕੇ Webhook signatures ਦੀ ਜਾਂਚ ਕਰੋ।
 *   ਆਪਣੇ REST route 'ਤੇ `permission_callback` ਦੀ ਵਰਤੋਂ ਕਰੋ — ਕਦੇ ਵੀ ਇਸਨੂੰ production ਵਿੱਚ `__return_true` ਨਾ ਰੱਖੋ।

@@ -4,11 +4,11 @@ title: Akcja - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Akcja: set_auth_cookie
+# Akcja: set_auth_cookie {#action-setauthcookie}
 
 Wywoływana jest tuż przed ustawieniem ciasteczka uwierzytelniającego.
 
-## Parametry
+## Parametry {#parameters}
 
 | Nazwa | Typ | Opis |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Wywoływana jest tuż przed ustawieniem ciasteczka uwierzytelniającego.
 | $scheme | `string` | Schemat uwierzytelniania. Wartości obejmują 'auth' lub 'secure_auth'. |
 | $token | `string` | Token sesji użytkownika, który ma być użyty dla tego ciasteczka. |
 
-### Od
+### Od {#since}
 
 - 2.5.0
 - 4.9.0: Dodano parametr <code>$token</code>.
-### Źródło
+### Źródło {#source}
 
 Zdefiniowane w [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) w linii 124

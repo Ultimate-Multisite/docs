@@ -3,13 +3,13 @@ title: Izgradite poslovanje s nišnim web-stranicama
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Izgradite poslovanje s nišnim web-stranicama uz Ultimate Multisite
+# Izgradite poslovanje s nišnim web-stranicama uz Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Većina ljudi koji pokušavaju prodavati web-stranice natječe se cijenom protiv Wix, Squarespace i tisuća freelancera. Gube. Oni koji pobjeđuju odabiru specifičnu publiku, grade rješenje prilagođeno toj publici i naplaćuju vrijednost koju isporučuju.
 
 Ovaj tečaj uči vas kako učiniti upravo to koristeći Ultimate Multisite.
 
-## Što ćete izgraditi
+## Što ćete izgraditi {#what-you-will-build}
 
 Tijekom ovog tečaja izgradit ćete stvarnu, funkcionalnu mrežu nazvanu **FitSite** -- platformu za web-stranice izrađenu posebno za fitness studije, osobne trenere i vlasnike teretana.
 
@@ -23,7 +23,7 @@ Do završne lekcije FitSite će biti potpuna nišna platforma s:
 
 Pratit ćete korak po korak, a na kraju ćete imati i funkcionalnu platformu i znanje potrebno da ponovite proces za bilo koju nišu koju odaberete.
 
-## Zašto fitness studiji?
+## Zašto fitness studiji? {#why-fitness-studios}
 
 Trebali smo konkretan primjer koji svatko može pratiti. Fitness studiji su dobar izbor jer:
 
@@ -34,7 +34,7 @@ Trebali smo konkretan primjer koji svatko može pratiti. Fitness studiji su doba
 
 Sve što naučite gradeći FitSite izravno se primjenjuje na bilo koju nišu koju odaberete: restorane, agente za nekretnine, odvjetničke urede, crkve, obrtničke izvođače ili bilo koju drugu vertikalu.
 
-## Struktura tečaja
+## Struktura tečaja {#course-structure}
 
 Svaka lekcija uvodi jedan koncept, objašnjava zašto je važan i vodi vas kroz njegovu implementaciju u FitSite mreži. Svaka se lekcija nadovezuje na prethodnu.
 
@@ -55,7 +55,7 @@ Svaka lekcija uvodi jedan koncept, objašnjava zašto je važan i vodi vas kroz 
 | [13. Skaliranje](lesson-13-growth) | Rast od prvih kupaca do stvarnog poslovanja | FitSite strategija rasta i automatizacije |
 | [14. Što slijedi](lesson-14-whats-next) | Širenje na srodne niše i nove prilike | Vaš plan puta izvan FitSite |
 
-## Preduvjeti
+## Preduvjeti {#prerequisites}
 
 - WordPress Multisite instalacija (ili spremnost da je postavite)
 - Aktivna Ultimate Multisite licenca
@@ -63,6 +63,6 @@ Svaka lekcija uvodi jedan koncept, objašnjava zašto je važan i vodi vas kroz 
 
 Kodiranje nije potrebno. Ako nikada prije niste koristili Ultimate Multisite, to je u redu -- Lekcija 3 počinje od svježe instalacije.
 
-## Spremni?
+## Spremni? {#ready}
 
 Počnite s [Lekcija 1: Zašto niša pobjeđuje](lesson-1-why-niche).

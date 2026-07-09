@@ -4,16 +4,16 @@ title: Filter - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Filter: wu_users_membership_limit_message
+# Filter: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
 
 Laat ontwikkelaars het bericht over de limiet voor membership-gebruikers wijzigen
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $message | `string` | The message to print in screen. |
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72) op regel 72

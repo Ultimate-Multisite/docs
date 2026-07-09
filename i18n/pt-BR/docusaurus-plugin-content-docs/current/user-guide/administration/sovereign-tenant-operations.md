@@ -3,20 +3,20 @@ title: Operações de Inquilino Soberano
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operações de Tenant Soberano
+# Operações de Tenant Soberano {#sovereign-tenant-operations}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 adiciona ferramentas operacionais para tenants soberanos: subsites que rodam com seu próprio banco de dados, raiz do sistema de arquivos e contexto de roteamento, mantendo-se visíveis para o administrador da rede.
 
 Use esta página ao gerenciar sites de clientes isolados, transferências de sites remotos ou migrações que movem um subsite padrão para infraestrutura soberana.
 
-## O que muda para os administradores
+## O que muda para os administradores {#what-changes-for-administrators}
 
 - **Autologin de tenant sem estado (Stateless)** — Os administradores da rede podem visitar um tenant soberano sem depender de estado de sessão compartilhado de longa duração. O token SSO é com escopo definido, fixado à origem, protegido contra repetição e limitado a uma janela de expiração curta.
 - **Roteamento consciente do ambiente soberano (Sovereign-aware routing)** — Redes isoladas legadas e tenants soberanos resolvem através do mesmo caminho de roteador do site, reduzindo diferenças de inicialização entre instalações antigas e novas isoladas.
 - **Estado de migração verificado** — Verificações de migração checam o provisionamento do usuário, permissões de escritor do banco de dados, status de esvaziamento da fila (queue drain) e ausência de tabelas legadas antes que um tenant seja considerado completo.
 - **Desativação mais segura (Safer teardown)** — A desativação soberana agora remove as credenciais do tenant de forma limpa para que tenants excluídos não deixem acesso obsoleto ao banco de dados.
 
-## Visitando um tenant soberano
+## Visitando um tenant soberano {#visiting-a-sovereign-tenant}
 
 1. Abra **Network Admin > Ultimate Multisite > Sites**.
 2. Selecione o tenant soberano.
@@ -24,7 +24,7 @@ Use esta página ao gerenciar sites de clientes isolados, transferências de sit
 
 O fluxo de visita cria um token de login de curta duração para aquele tenant e registra o evento SSO no rastro de auditoria do tenant. Se o botão falhar, verifique se o domínio do tenant resolve para a instalação esperada e se o tenant consegue acessar o endpoint SSO do lado da rede.
 
-## Checklist de operações de site remoto
+## Checklist de operações de site remoto {#remote-site-operations-checklist}
 
 Antes de alterar um tenant soberano ou remoto, confirme:
 
@@ -34,7 +34,7 @@ Antes de alterar um tenant soberano ou remoto, confirme:
 - As filas de migração assíncrona são esvaziadas antes de fazer alterações de DNS ou propriedade.
 - O usuário administrador do inquilino foi provisionado durante a migração e pode fazer login através do SSO.
 
-## Excluindo inquilinos soberanos
+## Excluindo inquilinos soberanos {#deleting-sovereign-tenants}
 
 Excluir um inquilino soberano é destrutivo. Confirme o status de backup e exportação primeiro, depois exclua na tela de gerenciamento do site. O fluxo de desinstalação 1.2.0 remove as credenciais do banco de dados do inquilino como parte da limpeza, mas os administradores ainda devem verificar se os usuários e pastas do banco de dados no nível do host desapareceram ao usar painéis de hospedagem externos.
 

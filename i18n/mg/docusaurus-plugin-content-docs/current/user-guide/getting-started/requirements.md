@@ -3,11 +3,11 @@ title: Fepetra
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Fepetra an'ny Fandrian'ny Ultimate Multisite
+# Fepetra an'ny Fandrian'ny Ultimate Multisite {#ultimate-multisite-requirements}
 
 Ny zavatra voalohany azonao manontany alohan'ny handefasana ny Ultimate Multisite dia inona no fepetra ilaina mba hampandehanana ny plugin-nao. Tsara kokoa, misy fepetra fototra vitsivitsy ho an'ny fandehanana ny Ultimate Multisite: **anaran-baovao (domain name)**, **mpamatsy hosting** tsara ary **fampiasana WordPress Multisite**. Izany no ilainao!
 
-## Anaran-baovao (Domain Name)
+## Anaran-baovao (Domain Name) {#domain-name}
 
 Indray, dia miresaka momba ny anaran-baovao isika.
 
@@ -17,7 +17,7 @@ Ny plugin-nao manome tolotra fandraisana (subscription services), fanangonana vo
 
 Ny toerana (niche) izay safidinao dia azo idinahitra amin'ny alalan'ity plugin-nao ity raha mitazona tranonkala ianao toy ny serivisy! Ataovy antoka fa misafidy anaran-baovao mifanaraka amin'ny drafitry ny fandraharahanao.
 
-## Mpamatsy Hosting (Hosting Provider)
+## Mpamatsy Hosting (Hosting Provider) {#hosting-provider}
 
 Rehefa manana anaran-baovao mahasarika izay maneho ny toerana sy ny fandraharahana, dia mila misafidy orinasa hosting tsara ianao mba hanome toerana ho an'ny tambajotrao miaraka amin'ny Ultimate Multisite. Misy safidy tsara eo amin'ny tsena. Ny mpamatsy hosting sasany dia mifanaraka tsara amin'ny Ultimate Multisite, izay mety ho antony lehibe arakaraka ny zavatra tianao hatao.
 
@@ -25,7 +25,7 @@ Ny Ultimate Multisite dia azo atao amin'ny hosting provider rehetra. Ny fahasami
 
 Raha ny momba ny famaritana ny server (server specifications), tsy misy fomba iray manokana satria miankina amin'ny fahaiza-manao sy ny asa ataonao ary ny haben'ny tambajotra anao izany. Mety ho tsara ny shared hosting ho fanombohana, fa rehefa mihetsika ny tambajotranareo dia mety mila VPS (Virtual Private Server) manokana ianao.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Andeha hiresaka kely momba ny fametrahana WordPress Multisite isika.
 

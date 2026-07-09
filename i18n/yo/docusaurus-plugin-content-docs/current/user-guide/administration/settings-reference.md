@@ -3,11 +3,11 @@ title: Ìtọ́kasí Àwọn Ètò
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Itọkasi Settings
+# Itọkasi Settings {#settings-reference}
 
 Oju-iwe yii n tọpinpin settings ti o kan iṣakoso ojoojumọ ati awọn ayipada ihuwasi aipẹ ninu Ultimate Multisite.
 
-## Awọn Aṣayan Miiran
+## Awọn Aṣayan Miiran {#other-options}
 
 Agbegbe **Other Options** han labẹ **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Agbegbe **Other Options** han labẹ **Ultimate Multisite > Settings > Login & R
 |---|---|
 | **Enable Jumper** | Ṣe afihan irinṣẹ lilọ kiri iyara Jumper ni agbegbe admin. Lo o lati fo taara si awọn iboju Ultimate Multisite, awọn ohun nẹtiwọọki, ati awọn ibi admin ti a ṣe atilẹyin. Pa a ti o ko ba fẹ ki ọna abuja yii han. |
 
-## Ijabọ aṣiṣe ati telemetry
+## Ijabọ aṣiṣe ati telemetry {#error-reporting-and-telemetry}
 
 A ti yọ setting opt-in ijabọ aṣiṣe iṣaaju kuro lati oju-iwe settings. Telemetry aláìlórúkọ ti wa ni pipa ati ko si toggle UI lati muu ṣiṣẹ.
 
 Ti o ba n ṣetọju awọn runbook inu tabi awọn sikirinisoti fun oju-iwe settings, yọ awọn itọkasi si field opt-in ijabọ aṣiṣe atijọ kuro ki awọn olùdarí má ṣe wa setting kan ti ko si mọ.
 
-## Settings Import/Export
+## Settings Import/Export {#importexport-settings}
 
 Taabu settings **Import/Export** ṣalaye iru settings ti o n ṣakoso ati pe o sopọ taara si **Ultimate Multisite > Site Export** fun awọn archive site ati nẹtiwọọki. Lo taabu settings fun iṣeto import/export, lo **Tools > Export & Import** fun ilana iṣẹ export/import site kan ṣoṣo, ki o si lo irinṣẹ Site Export nigbati o nilo archive Network Export kikun.
 
-## Ikilọ balance Domain Seller HostAfrica
+## Ikilọ balance Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Nigbati addon Domain Seller ba sopọ mọ HostAfrica, awọn olùdarí nẹtiwọọki yoo rii ikilọ balance kekere ti a le pa nigbati balance account reseller ba kere ju fun registration tabi processing isọdọtun domain ti o gbẹkẹle.
 
 Ka akiyesi yii si ikilọ iṣẹ: fi kun balance reseller HostAfrica ṣaaju gbigba awọn registration domain ti a sanwo diẹ sii, lẹhinna pada si settings Domain Seller tabi iboju domain-monitoring lati jẹrisi pe awọn registration ati awọn isọdọtun le tẹsiwaju deede.
 
-## Settings asopọ AI provider
+## Settings asopọ AI provider {#ai-provider-connector-settings}
 
 Settings asopọ AI provider bayi n ṣafihan awọn adagun account OAuth ti a ṣe atilẹyin nikan:
 

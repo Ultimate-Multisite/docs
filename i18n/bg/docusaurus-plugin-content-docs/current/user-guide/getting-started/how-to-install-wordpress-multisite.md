@@ -3,7 +3,7 @@ title: Как да инсталирате WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Как да инсталирам WordPress Multisite?
+# Как да инсталирам WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ви позволява да имате мрежа от сайтове в една инсталация. Това е вградена функция, но не е активна по подразбиране.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 След попълване на полетата, натиснете бутона "Add site". След като новият подсайт бъде създаден, продължете и го посетете, за да се уверите, че подсайтът работи коректно.
 
-## Чести проблеми:
+## Чести проблеми: {#common-problems}
 
-### 1. Мога да създавам нови сайтове, но те не са достъпни.
+### 1. Мога да създавам нови сайтове, но те не са достъпни. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ако сте избрали поддомейни, трябва също така да настроите wildcard поддомейни за вашата мрежа Multisite.
 

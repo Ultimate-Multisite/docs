@@ -3,15 +3,15 @@ title: 'Ders 14: Piştre çi tê?'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Ders 14: Piştî Vê Çi Tê
+# Ders 14: Piştî Vê Çi Tê {#lesson-14-what-comes-next}
 
 Te ji sifirê platformeke malperên nişeyî ava kir. FitSite zindî ye, xizmetê ji studyoyên fitness re dike, û dahata dubare çêdike. Ev dersa dawî li vê dinêre ku ji vir ve bi ku derê ve biçî.
 
-## Li Ku Derê Ma Bûn
+## Li Ku Derê Ma Bûn {#where-we-left-off}
 
 FitSite karsaziyeke dixebite ye bi xerîdar, operasyon û rêgeheke mezinbûnê. Niha em li tiştê din ê bê difikirin.
 
-## Tora Temam a FitSite
+## Tora Temam a FitSite {#the-complete-fitsite-network}
 
 Ev hemû tiştên ku me di 14 dersan de ava kirin ev in:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Vebijêrk 1: Di Nişeya Xwe De Kûrtir Biçe
+## Vebijêrk 1: Di Nişeya Xwe De Kûrtir Biçe {#option-1-go-deeper-in-your-niche}
 
 Berî ku tu ber bi nişeyên nû ve fireh bibî, bifikire ku di fitness de kûrtir biçî:
 
-### Bin-Nîşe
+### Bin-Nîşe {#sub-niches}
 
 - **Studyoyên yoga** -- şablonên taybet bi taybetmendiyên meditation, retreat û workshop
 - **Qutiyên CrossFit** -- şopandina WOD, encamên pêşbirkê, taybetmendiyên civakê
@@ -59,7 +59,7 @@ Berî ku tu ber bi nişeyên nû ve fireh bibî, bifikire ku di fitness de kûrt
 
 Her bin-nişe dikare şablonên xwe û dibe ku brand-a xwe hebe, hemû jî li ser heman tora Ultimate Multisite dixebitin.
 
-### Taybetmendiyên Premium
+### Taybetmendiyên Premium {#premium-features}
 
 Taybetmendiyên ava bike ku studyoyên fitness dê ji bo wan zêdetir bidin:
 
@@ -68,14 +68,14 @@ Taybetmendiyên ava bike ku studyoyên fitness dê ji bo wan zêdetir bidin:
 - **Şablonên bloga fitness** -- avahiyên naverokê yên pêş-ava kirî ji bo marketinga naveroka fitness
 - **Yekbûna social media** -- weşandina xweber a bernameyên dersan û nûvekirinan
 
-### Firehbûna Erdnîgarî
+### Firehbûna Erdnîgarî {#geographic-expansion}
 
 Ger te bi herêmî dest pê kir, fireh bike bo:
 
 - Bajarên din ên welatê xwe
 - Welatên din (taybetmendiyên [herêmîkirinê](/user-guide/localization/translating) yên Ultimate Multisite bi kar bîne da ku piştgirî ji çend zimanan re bidî)
 
-## Vebijêrk 2: Ber Bi Nişeyên Nêzîk Ve Fireh Bibe
+## Vebijêrk 2: Ber Bi Nişeyên Nêzîk Ve Fireh Bibe {#option-2-expand-to-adjacent-niches}
 
 Pêvajoya ku te ji bo studyoyên fitness şopand, ji bo her nişeyê dixebite. Nişeya te ya duyem hêsantir e, ji ber ku jixwe van hene:
 
@@ -83,7 +83,7 @@ Pêvajoya ku te ji bo studyoyên fitness şopand, ji bo her nişeyê dixebite. N
 - Ezmûna operasyonê
 - Lîstiknameyeke îsbatkirî
 
-### Nişeyên Nêzîk Bi Fitness Re
+### Nişeyên Nêzîk Bi Fitness Re {#adjacent-niches-to-fitness}
 
 - **Wellness û spa** -- terapîstên masajê, spa-yên rojane, navendên wellness
 - **Klûbên werzîşê** -- tîmên werzîşê yên amatôr, lîg, klûbên şahiyê
@@ -91,7 +91,7 @@ Pêvajoya ku te ji bo studyoyên fitness şopand, ji bo her nişeyê dixebite. N
 
 Ev bi fitness re heman temaşevanan hinekî parve dikin, ji ber vê marketing û hevkariyên te dikarin derbas bibin.
 
-### Nişeyên Bi Temamî Nû
+### Nişeyên Bi Temamî Nû {#completely-new-niches}
 
 Çarçoveya Ders 2 bi kar bîne da ku her nişeyê binirxînî:
 
@@ -108,7 +108,7 @@ Her nişeyeke nû van dixwaze:
 
 Binyata platformê, billing û pêvajoyên operasyonê wek xwe dimînin.
 
-## Vebijêrk 3: Platformeke Platforman Ava Bike
+## Vebijêrk 3: Platformeke Platforman Ava Bike {#option-3-build-a-platform-of-platforms}
 
 Di asta mezin de, tu dikarî çend brand-ên nişeyî li ser yek tora Ultimate Multisite bixebitînî:
 
@@ -118,11 +118,11 @@ Di asta mezin de, tu dikarî çend brand-ên nişeyî li ser yek tora Ultimate M
 
 Her brand şablon, plan û marketinga xwe heye, lê ew binyat, billing û pêvajoyên operasyonê parve dikin. Li vir aboriya Ultimate Multisite hêzdar dibe -- yek platform, gelek vertical.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Ji bo veqetandina temam a di navbera nişeyan de, [Multi-Network addon](/addons/multinetwork) bifikire ku destûrê dide te çend torên WordPress ji yek sazkirinê bixebitînî.
 
-## Vebijêrk 4: Karsaziyê Bifroşe
+## Vebijêrk 4: Karsaziyê Bifroşe {#option-4-sell-the-business}
 
 Platformeke malperên nişeyî bi dahata dubare, churn-a kêm û cîgeheke bazarê ya zelal sermayeyeke bi nirx e. Karsaziyên SaaS bi gelemperî bi 3-5 qatê dahata salane tên firotin.
 
@@ -134,7 +134,7 @@ FitSite bi 200 xerîdar li $89 ARPU:
 
 Ev encamek garanti kirî nîne, lê ji bo platformeke nişeyî ya baş-meşandî encamek rastîn e.
 
-## Te Çi Hîn Bû
+## Te Çi Hîn Bû {#what-you-have-learned}
 
 Ev kurs pêvajoyeke dubarebar fêrî te kir:
 
@@ -150,7 +150,7 @@ Ev kurs pêvajoyeke dubarebar fêrî te kir:
 
 Nişe stratejî ye. Platform amûr e. Ultimate Multisite amûrê gengaz dike. Têgihîştina te ya li ser nişeyê wê bi nirx dike.
 
-## Dest Bi Avakirinê Bike
+## Dest Bi Avakirinê Bike {#start-building}
 
 Heke tu bi FitSite re şopandibe, platformeke te ya dixebite heye. Heke tu xwendibe da ku niche-a xwe bibînî, vegere [Ders 2: Hilbijartina Niche-a Xwe](lesson-2-picking-your-niche) û pêvajoyê ji bo vertical-a ku te hilbijartiye dest pê bike.
 

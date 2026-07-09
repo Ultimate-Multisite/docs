@@ -3,11 +3,11 @@ title: Захиалгат Gateway хөгжүүлэлт
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway хөгжүүлэлт
+# Custom Gateway хөгжүүлэлт {#custom-gateway-development}
 
 Та `Base_Gateway` классыг өргөтгөн custom төлбөрийн gateway үүсгэж болно.
 
-## Gateway класс
+## Gateway класс {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway-г бүртгэх
+## Gateway-г бүртгэх {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Гол аргууд
+## Гол аргууд {#key-methods}
 
 | Арга | Зорилго |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Буцаан олголтын хүсэлтүүдийг боловсруулах |
 | `get_payment_methods()` | Үйлчлүүлэгчийн хадгалсан төлбөрийн аргуудыг буцаах |
 
-## Давтагдах membership-үүдийн сунгалтын credential-ууд
+## Давтагдах membership-үүдийн сунгалтын credential-ууд {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 нь gateway интеграциудад `auto_renew` хадгалагдахаас өмнө давтагдах membership дахин ашиглах боломжтой сунгалтын credential-той эсэхийг мэдээлэх боломж олгодог. `wu_membership_has_renewal_credential`-г hook хийгээд дараахыг буцаана уу:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Шинэ дахин ашиглах боломжтой credential хадгалагдсаны дараа gateway-ийнхаа амжилттай дахин authorization урсгалын нэг хэсэг болгон credential байхгүй гэсэн тэмдэглэгээг арилгана уу.
 
-## Зөвлөмжүүд
+## Зөвлөмжүүд {#tips}
 
 - Алдаа гарсан үед үргэлж `WP_Error` буцаана уу, ингэснээр Ultimate Multisite алдааны харагдацыг боловсруулах боломжтой
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gateway-д тусгайлсан бүртгэлд `wu_log_add()` ашиглана уу
 
-## AI connector provider-ийн боломжууд
+## AI connector provider-ийн боломжууд {#ai-connector-provider-capabilities}
 
 AI connector-д тулгуурласан үйлдлүүдийг дууддаг custom интеграциуд нь AI Provider for Anthropic Max v1.3.0-той нэвтрүүлсэн дэмжигдсэн OAuth provider багцтай нийцэх ёстой:
 

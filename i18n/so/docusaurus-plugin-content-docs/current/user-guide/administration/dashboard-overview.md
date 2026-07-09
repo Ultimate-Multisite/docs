@@ -3,11 +3,11 @@ title: Aragtida Dashboard-ka
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Aragtida ee Dashboard-ka
+# Aragtida ee Dashboard-ka {#dashboard-overview}
 
 Ultimate Multisite wuxuu leeyahay **Dashboard** gaar ah oo ku jira menu-ga Ultimate Multisite, sidoo kale wuxuu ku darayaa widgets (abuurinro) Network Dashboard-ka. Maqaalkan wuxuu ka hadlayaa waxa aad arki doontid labada meelbaas.
 
-## Network Dashboard-ka
+## Network Dashboard-ka {#the-network-dashboard}
 
 Ultimate Multisite wuxuu ku darsadaa widgets muhiim ah ee dashboard-ka heerka shirkadda (network-level) oo laga helayo **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Waa kan waxa widget kasta uu bixiyo:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Dashboard-ka Ultimate Multisite
+## Dashboard-ka Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 In kasta oo dashboard-ka network-ka uu soo bandhigayo macluumaad guud oo ku saabsan network-ka, dashboard-ka Ultimate Multisite (oo ku yaalla heerka ugu sarreeya ee menu-ga Ultimate Multisite) wuxuu soo bandhigayaa macluumaadka ku saabsan adeegga.
 

@@ -3,7 +3,7 @@ title: GitHub Snippetid
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Kuidas Ultimate Multisite snippet'e kasutamine meie GitHubi repositoriumis
+# Kuidas Ultimate Multisite snippet'e kasutamine meie GitHubi repositoriumis {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 GitHubi repositoriumis on saadaval koodide snippetid, mida Ultimate Multisite kasutajad sageli küsivad väikeste funktsioonide lisamiseks, nagu Google Analytics skripti lisamine registreerimise lehtele või meta boxi hoidmine administraatori dashboardist.
 
@@ -19,7 +19,7 @@ Koodi lisamiseks on teil kaks viiva:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Kuidas snippet paigutada tema `functions.php` failile.
+# Kuidas snippet paigutada tema `functions.php` failile. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Logige sisse oma WordPress Network admin dashboardi ja minuga Themes > Theme Editori (vaadake allpool oleva skraanšootrit).
 
@@ -29,7 +29,7 @@ Koodi lisamiseks on teil kaks viiva:
 
 <!-- Skraanšootrit ei ole saadaval: WordPress Theme Editor, mis näitab functions.php faili editas -->
 
-# Kuidas Must-Use Plugins (mu-plugins) luua
+# Kuidas Must-Use Plugins (mu-plugins) luua {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPressil on funktsioon, mis võimaldab laadida kustom funktsionaalsust nimega "Must-Use Plugins" või lühendina "mu-plugins".
 

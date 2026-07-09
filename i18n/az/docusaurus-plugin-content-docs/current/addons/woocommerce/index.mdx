@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce İnteqrasiyası
+# WooCommerce İnteqrasiyası {#woocommerce-integration}
 
 WooCommerce İnteqrasiyası bizim Manual Gateway işləmə üsuluna çox bənzər şəkildə işləyir. O, istifadəçilərinizə böyük çeviklik təqdim edir və onlara WooCommerce quraşdırmanızda mövcud olan istənilən ödəniş formasını seçməyə imkan verir. Və bu sadədir: istifadəçinin hesablaşma dövrü bitdikdən sonra istifadəçi abunəliyi gözləməyə alınır. Eyni zamanda, şəbəkənin əsas saytının WooCommerce quraşdırmasında bir sifariş yaradılacaq. Sonra istifadəçi e-poçtunda ödənişi həyata keçirmək üçün link olan bir faktura alır. Ödəniş qəbul edildikdən sonra abunəlik yenilənir.
 
-## Xüsusiyyətlər
+## Xüsusiyyətlər {#features}
 
 - Ultimate Multisite və WooCommerce arasında asan inteqrasiya
 - Bir neçə ödəniş üsulu mövcuddur
 - Daxil edilmiş abunəliklər nüvəsindən istifadə edərək avtomatlaşdırılmış təkrarlanan hesablaşma, istəyə bağlı WooCommerce Subscriptions plugin təkmilləşdirmələri ilə
 - Checkout cəmləri Ultimate Multisite vergilərini ayrıca, vergiyə cəlb olunmayan WooCommerce rüsum sətirləri kimi daxil edir ki, müştərilər ödənişdən əvvəl vergi məbləğlərini nəzərdən keçirə bilsinlər
 
-## Sənədləşdirmə
+## Sənədləşdirmə {#documentation}
 
 **WooCommerce İnteqrasiyasının Qurulması**
 
 **Ultimate Multisite ilə Ödəniş Seçimlərinizi Genişləndirmək: WooCommerce İnteqrasiyası**
 
-## Quraşdırma
+## Quraşdırma {#installation}
 
 1. 'ultimate-multisite-woocommerce' faylını '/wp-content/plugins/' qovluğuna yükləyin
 2. Plugin-i WordPress-də 'Plugins' menyusu vasitəsilə aktivləşdirin
 3. Plugin-i qurmaq üçün addım-addım Wizard-ı izləyin
 
-## İstifadə Bələdçisi
+## İstifadə Bələdçisi {#usage-guide}
 
 _**VACİB QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
@@ -40,7 +40,7 @@ Biz anlayırıq ki, _Stripe_ və _PayPal_ bəzi ölkələrdə mövcud deyil və 
 
 _WooCommerce_ çox populyar eCommerce plugin-dir. Dünyanın müxtəlif yerlərindəki tərtibatçılar müxtəlif ödəniş gateway-lərini ona inteqrasiya etmək üçün add-on-lar yaratdılar. Biz Ultimate Multisite hesablaşma sistemində istifadə edə biləcəyiniz ödəniş gateway-lərini genişləndirmək üçün bundan yararlandıq.
 
-## Onun Qurulması
+## Onun Qurulması {#setting-it-up}
 
 Əvvəlcə **lisenziyalı istifadəçilər üçün pulsuz** olan WooCommerce Integration add-on-unu quraşdırmalısınız. Onu quraşdırmaq üçün super admin dashboard-unuzda Ultimate Multisite üzərinə klikləyin və **Add-ons** seçin.
 
@@ -68,11 +68,11 @@ Quraşdırıldıqdan sonra Ultimate Multisite ödəniş ayarları altında əlav
 
 Front end-də görünəcək ekran adını və istifadəçilərinizi checkout axınında istiqamətləndirmək üçün təlimatları kimi bəzi əsas ayarları konfiqurasiya edə bilərsiniz. Sonra istifadə etməyi üstün tutduğunuz ödəniş gateway-ini aktivləşdirmək və konfiqurasiya etmək üçün **Əsas saytınızın _WooCommerce_ ayarlarına** keçə bilərsiniz.
 
-### Checkout vergi rüsumu sətirləri
+### Checkout vergi rüsumu sətirləri {#checkout-tax-fee-lines}
 
 Ultimate Multisite checkout-a vergilər daxil olduqda, inteqrasiya hər Ultimate Multisite vergi məbləğini WooCommerce checkout-a ayrıca, vergiyə cəlb olunmayan rüsum sətri kimi əlavə edir. Bu, WooCommerce-in vergi rüsumunu yenidən vergiyə cəlb etməsinin qarşısını alarkən, vergi cəminin ödənişdən əvvəl görünən qalmasını təmin edir.
 
-## Ödənişi necə idarə etmək olar
+## Ödənişi necə idarə etmək olar {#how-to-manage-the-payment}
 
 WooCommerce İnteqrasiyası bizim **Manual Gateway** işləmə üsuluna çox bənzər şəkildə işləyir. Mənfi tərəfi odur ki, hər ödəniş hesablaşma dövrünün sonunda əl ilə ödənilməlidir. Axın belə işləyir:
 
@@ -82,13 +82,13 @@ WooCommerce İnteqrasiyası bizim **Manual Gateway** işləmə üsuluna çox bə
 
   * Ödəniş qəbul edildikdən sonra membership **yenilənir** , ödəniş Ultimate Multisite-da qeydə alınır və sifariş tamamlanmış kimi təyin edilir.
 
-### Bəzi Vacib Qeydlər:
+### Bəzi Vacib Qeydlər: {#some-important-notes}
 
   * Ultimate Multisite-ın standart funksionallığı bu inteqrasiya forması ilə hələ də işləyir. Məsələn, **Subscription Management** ekranından **geri ödənişlərin verilməsi** seçilmiş ödəniş formasından istifadə edərək geri ödənişi vermək üçün WooCommerce ilə əlaqə yaradacaq.
 
   * Ultimate Multisite: WooCommerce İnteqrasiyası işləmək üçün WP-Cron-a əsaslanır. Bu, çox vaxt çox yaxşı işləyir, lakin saytın trafiki azdırsa, cron planlaşdırılmış tədbirləri yoxlamaq üçün işə salınmır və tədbir qaçırılır; bu da icra gecikmələrinə səbəb ola bilər.
 
-## WooCommerce Subscriptions Plugin
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
 Hər ay ödənişi əl ilə başlatmaq son istifadəçilər üçün ideal deyil, çünki subscription-ların hər billing dövründə avtomatik təkrarlanması gözlənilir. WooCommerce Integration add-on-u indi əsas subscriptions kodunu özündə birləşdirir, buna görə recurring məhsullar recurring billing üçün həmişə subscriptions-dan istifadə edir.
 
@@ -100,7 +100,7 @@ Və bu qədər. Son istifadəçiləriniz artıq recurring məhsullar üçün bil
 
 Əsas saytınızda _WooCommerce_ altında sifariş yaradılmaqla yanaşı, hər Account üçün də subscription yaradılacaq.
 
-### Uğursuz yeniləmə dayandırma davranışı
+### Uğursuz yeniləmə dayandırma davranışı {#failed-renewal-suspension-behavior}
 
 Varsayılan olaraq, WooCommerce Subscriptions uğursuz ödəniş təkrar cəhd cədvəlini emal edərkən membership-lər aktiv qalır. Bu, normal WooCommerce Subscriptions güzəşt pəncərəsini qoruyur ki, bərpa edilmiş yeniləmə subscription və membership-i girişə vaxtından əvvəl müdaxilə etmədən yenidən sinxronlaşdıra bilsin.
 

@@ -3,17 +3,17 @@ title: Disainisuund
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Disainisuund
+# Disainisuund {#design-direction}
 
 Samm **Disainisuund** võimaldab sul enne seda, kui Theme Builder loob täieliku teema, oma teema visuaalse kujunduse üle vaadata, seda viimistleda ja lõplikult kinnitada.
 
-## Ülevaade
+## Ülevaade {#overview}
 
 Pärast Discovery Interview lõpetamist esitab Theme Builder sinu disainisuuna koos **desktop- ja mobiilieelvaate renderdusega**. See võimaldab sul enne teemale pühendumist täpselt näha, kuidas sinu kujundus eri seadmetes välja näeb.
 
-## Disainisuuna komponendid
+## Disainisuuna komponendid {#design-direction-components}
 
-### 1. Värvipalett
+### 1. Värvipalett {#1-color-palette}
 
 Sinu teema värviskeem, sealhulgas:
 
@@ -23,7 +23,7 @@ Sinu teema värviskeem, sealhulgas:
 - **Neutraalsed värvid** — hallid ja valged taustade ning teksti jaoks
 - **Tekstivärv** — peamine tekstivärv loetavuse tagamiseks
 
-### 2. Tüpograafia
+### 2. Tüpograafia {#2-typography}
 
 Fondid järgmisteks otstarveteks:
 
@@ -33,14 +33,14 @@ Fondid järgmisteks otstarveteks:
 - **Reavahe** — ridadevaheline vahe loetavuse tagamiseks
 - **Fondikaalud** — paksud, tavalised ja kerged variatsioonid
 
-### 3. Paigutus ja vahed
+### 3. Paigutus ja vahed {#3-layout-and-spacing}
 
 - **Konteineri laius** — sisu maksimaalne laius
 - **Sisemised ja välised veerised** — elementide ümber olevad vahed
 - **Ruudustikusüsteem** — veerupõhine paigutus responsiivse disaini jaoks
 - **Komponentide vahed** — kaugus UI-elementide vahel
 
-### 4. Visuaalsed elemendid
+### 4. Visuaalsed elemendid {#4-visual-elements}
 
 - **Nupustiilid** — esmased, teisesed ja kolmandased nupukujundused
 - **Kaardikujundused** — sisublokkide paigutused
@@ -48,9 +48,9 @@ Fondid järgmisteks otstarveteks:
 - **Äärised ja varjud** — peen visuaalne sügavus
 - **Hõljutusefektid** — interaktiivse oleku stiilimine
 
-## Eelvaate renderdus
+## Eelvaate renderdus {#preview-rendering}
 
-### Desktop-eelvaade
+### Desktop-eelvaade {#desktop-preview}
 
 Desktop-eelvaade näitab sinu kujundust täislaiuses (tavaliselt 1200px või laiem):
 
@@ -59,7 +59,7 @@ Desktop-eelvaade näitab sinu kujundust täislaiuses (tavaliselt 1200px või lai
 - Suur tüpograafia ja vahed
 - Kõik visuaalsed elemendid täissuuruses
 
-### Mobiilieelvaade
+### Mobiilieelvaade {#mobile-preview}
 
 Mobiilieelvaade näitab sinu kujundust mobiililaiuses (tavaliselt 375px):
 
@@ -68,7 +68,7 @@ Mobiilieelvaade näitab sinu kujundust mobiililaiuses (tavaliselt 375px):
 - Kohandatud tüpograafia ja vahed
 - Puutesõbralikud nupusuurused
 
-### Responsiivsed murdepunktid
+### Responsiivsed murdepunktid {#responsive-breakpoints}
 
 Theme Builder renderdab eelvaated nendel murdepunktidel:
 
@@ -79,9 +79,9 @@ Theme Builder renderdab eelvaated nendel murdepunktidel:
 | **Desktop** | 1200px | Täislaiuses desktop |
 | **Suur desktop** | 1920px | Ülilai ekraan |
 
-## Disaini viimistlemine
+## Disaini viimistlemine {#refining-your-design}
 
-### Muudatuste tegemine
+### Muudatuste tegemine {#making-adjustments}
 
 Saad oma disainisuunda viimistleda järgmiselt:
 
@@ -91,7 +91,7 @@ Saad oma disainisuunda viimistleda järgmiselt:
 4. **Paigutuse uuendamine** — muuda konteinerite laiusi ja ruudustiku veerge
 5. **Elementide kohandamine** — muuda nupustiile, kaardikujundusi jne.
 
-### Eelvaate uuendused
+### Eelvaate uuendused {#preview-updates}
 
 Muudatused kajastuvad reaalajas:
 
@@ -100,7 +100,7 @@ Muudatused kajastuvad reaalajas:
 - Kõik responsiivsed murdepunktid uuendatakse
 - Saad eelvaadete vahel vahetada, et muudatusi kontrollida
 
-### Võrdlusvaade
+### Võrdlusvaade {#comparison-view}
 
 Võrdle oma disainisuunda järgmistega:
 
@@ -108,7 +108,7 @@ Võrdle oma disainisuunda järgmistega:
 - **Konkurentide kujundused** — võrdle inspiratsioonisaitidega
 - **Eelmised versioonid** — naase varasemate disainisuundade juurde
 
-## Disainisuuna kinnitamine
+## Disainisuuna kinnitamine {#design-direction-approval}
 
 Kui oled oma kujundusega rahul:
 
@@ -118,7 +118,7 @@ Kui oled oma kujundusega rahul:
 4. **Kinnita paigutus** — kontrolli vahesid ja joondust
 5. **Kinnita disain** — liigu edasi teema genereerimise juurde
 
-## Järgmised sammud
+## Järgmised sammud {#next-steps}
 
 Pärast disainisuuna kinnitamist:
 
@@ -127,7 +127,7 @@ Pärast disainisuuna kinnitamist:
 3. Saad seda WordPressi kohandaja abil edasi kohandada
 4. Liigu edasi jaotisse [Hospitality Menus](./hospitality-menus.md) või muude funktsioonide juurde
 
-## Parimad tavad
+## Parimad tavad {#best-practices}
 
 - **Testi pärisseadmetes** — kasuta võimaluse korral päris telefone ja tahvelarvuteid
 - **Kontrolli loetavust** — veendu, et tekst oleks loetav kõigis suurustes
@@ -135,30 +135,30 @@ Pärast disainisuuna kinnitamist:
 - **Arvesta jõudlusega** — optimeeri pildid ja fondid kiiruse jaoks
 - **Planeeri sisu jaoks** — veendu, et paigutus töötaks sinu tegeliku sisuga
 
-## Tõrkeotsing
+## Tõrkeotsing {#troubleshooting}
 
-### Eelvaade ei uuene
+### Eelvaade ei uuene {#preview-not-updating}
 
 - Värskenda lehte
 - Tühjenda brauseri vahemälu
 - Proovi teist brauserit
 - Kontrolli internetiühendust
 
-### Värvid näevad erinevad välja
+### Värvid näevad erinevad välja {#colors-look-different}
 
 - Kontrolli monitori värviseadeid
 - Proovi eri seadmetes
 - Kontrolli värvikontrasti ligipääsetavuse tööriistadega
 - Kaalu värvipimeduse simulaatorite kasutamist
 
-### Tüpograafiaprobleemid
+### Tüpograafiaprobleemid {#typography-issues}
 
 - Kontrolli, et fondifailid laaditakse
 - Kontrolli fondisuurust eri murdepunktides
 - Testi tegeliku sisuga
 - Arvesta loetavuse jaoks rea pikkusega
 
-## Seotud dokumentatsioon
+## Seotud dokumentatsioon {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — kogu disainiinfot
 - [Hospitality Menus](./hospitality-menus.md) — loo struktureeritud menüülehti

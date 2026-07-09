@@ -3,11 +3,11 @@ title: 自定义网关开发
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# 自定义网关开发
+# 自定义网关开发 {#custom-gateway-development}
 
 你可以通过扩展 `Base_Gateway` 类来创建自定义支付网关。
 
-## 网关类
+## 网关类 {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## 注册网关
+## 注册网关 {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## 关键方法
+## 关键方法 {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | 处理退款请求 |
 | `get_payment_methods()` | 返回客户已保存的付款方式 |
 
-## 周期性会员资格的续订凭据
+## 周期性会员资格的续订凭据 {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 允许网关集成在 `auto_renew` 被持久化之前报告周期性会员资格是否具有可重复使用的续订凭据。Hook `wu_membership_has_renewal_credential` 并返回：
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 在存储新的可重复使用凭据后，作为网关成功重新授权流程的一部分，清除缺失凭据标记。
 
-## 提示
+## 提示 {#tips}
 
 - 失败时始终返回 `WP_Error`，以便 Ultimate Multisite 可以处理错误显示
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - 使用 `wu_log_add()` 进行网关专用日志记录
 
-## AI 连接器提供方能力
+## AI 连接器提供方能力 {#ai-connector-provider-capabilities}
 
 调用由 AI 连接器支持的操作的自定义集成，应与 AI Provider for Anthropic Max v1.3.0 引入的受支持 OAuth 提供方集合保持一致：
 

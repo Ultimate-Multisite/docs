@@ -3,7 +3,7 @@ title: Mabatiro eMitero
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Kubata Mitero
+# Kubata Mitero {#tax-handling}
 
 Ultimate Multisite ine module yekuunganidza mutero yakavakirwa muplugin yedu yepakati, saka kana uchida kuunganidza mitero yekutengesa pazvirongwa zvako, mapakeji nemasevhisi, unogona kuzviita zviri nyore pasina kuisa chero maadd-on.
 
@@ -11,7 +11,7 @@ Kumakambani ari muEurope, tinopa **add-on** rinowedzera maturusi nezvimiro kuti 
 
 Ultimate Multisite haifayeri kana kutumira mitero kuhurumende pachinzvimbo chako; isu tinongokubatsira kuunganidza mitero yakakodzera panguva yekutengeserana. **Ucharamba uchifanira kutumira mitero wega.**
 
-## Kugonesa Kuunganidzwa kweMitero
+## Kugonesa Kuunganidzwa kweMitero {#enabling-tax-collection}
 
 Kuunganidzwa kwemitero hakugoneswi nekusarudzika. Kuti uku ugonese, unofanira kuenda ku **Ultimate Multisite > Settings > Taxes** wobva wachinja kuti ugonese marongero eEnable Taxes.
 
@@ -25,7 +25,7 @@ Unogonawo kuona marongero emitero ezvigadzirwa zvakasiyana:
 
 ![Marongero emitero ezvigadzirwa](/img/config/settings-taxes.png)
 
-### Mutero usina kubatanidzwa vs. Mutero wakabatanidzwa
+### Mutero usina kubatanidzwa vs. Mutero wakabatanidzwa {#tax-excluded-vs-tax-included}
 
 Nekusarudzika, mitengo yose yezvigadzirwa zvako haina mutero wakabatanidzwa, zvichireva kuti mitero **haina kubatanidzwa** mumutengo wechigadzirwa. Kana tikaona kuti mutengi anofanira kubhadhara mitero pakutenga kwakapiwa, tichawedzera mitero **pamusoro** pehuwandu hwepasi.
 
@@ -37,7 +37,7 @@ Usakanganwa **kuchengetedza** shanduko dzawaita.
 
 ###
 
-## Kugadzira Mareti eMitero
+## Kugadzira Mareti eMitero {#creating-tax-rates}
 
 Mushure mekugonesa Kuunganidzwa kweMitero, uchafanira kugadzira mareti emitero enzvimbo dzakananga uchishandisa mupepeti wedu wemareti emitero.
 
@@ -51,7 +51,7 @@ Papeji remupepeti wemareti emitero, unogona kuwedzera Tax Rates matsva nekudzvan
 
 Uchafanira kupa reti yemutero imwe neimwe **zita** (rinoshandiswa pama invoice). Wobva wasarudza **nyika** (inodiwa), **dunhu,** uye **guta** (zvose zviviri hazvisungirwi) uko mutero uyu uchachajwa. Pakupedzisira, wedzera **reti yemutero muzvikamu kubva muzana**.
 
-### Mapoka eMitero
+### Mapoka eMitero {#tax-categories}
 
 Unogonawo kugadzira Mapoka eMitero akawanda, kuti uwedzere mareti emitero akasiyana kumhando dzakasiyana dzezvigadzirwa.
 
@@ -73,7 +73,7 @@ Unogona kuseta boka remutero rechigadzirwa chakati nekuenda ku **Product edit pa
 
 Pachiratidziro chimwe chete ichocho, unogona kudzima chinja che **Is Taxable?** kuti uzivise Ultimate Multisite kuti haifaniri kuunganidza mitero pachigadzirwa icho chakapiwa.
 
-## Rutsigiro rweEuropean VAT
+## Rutsigiro rweEuropean VAT {#european-vat-support}
 
 Sezvambotaurwa, tine add-on riripo revatengi vari muEU vane zvinodiwa zvakawedzerwa nekuda kwemitemo yeEuropean VAT.
 
@@ -101,7 +101,7 @@ Kana ukadzokera ku **Tax Settings tab** , uchaona sarudzo itsva dziripo. Chinja 
 
 <!-- Mufananidzo hausipo: chinja cheEnable VAT Support mumarongero eMitero mushure mekugonesa add-on -->
 
-### Kudhonza Mareti eVAT Tax
+### Kudhonza Mareti eVAT Tax {#pulling-on-vat-tax-rates}
 
 Rimwe rematurusi anowedzerwa neintegration yedu kugona kurodha mareti emitero enyika dziri nhengo dzeEU. Izvi zvinogona kuitwa nekushanyira peji remupepeti wemareti emitero mushure mekugonesa rutsigiro rweEU VAT.
 
@@ -111,7 +111,7 @@ Pazasi peji, uchaona sarudzo dzekudhonza VAT. Kusarudza mhando yereti uye kudzva
 
 Unogonawo kugadzirisa mavalue mushure mekuadhonza. Kuti uzviite, ingogadzirisa mutsara wetafura waunoda wodzvanya kuti uchengetedze mavalue matsva.
 
-### Kusimbiswa kweVAT
+### Kusimbiswa kweVAT {#vat-validation}
 
 Kana rutsigiro rweVAT rwagoneswa, Ultimate Multisite ichawedzera munda wekuwedzera kufomu rechekauti, pazasi pemunda wekero yekubhadharisa. Munda wacho ucharatidzwa chete kuvatengi vari muEU.
 

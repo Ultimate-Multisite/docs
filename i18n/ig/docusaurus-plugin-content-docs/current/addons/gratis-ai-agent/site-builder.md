@@ -3,15 +3,15 @@ title: Nhazi ọrụ Onye nrụpụta Saịtị v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Nhazi Site Builder v2
+# Nhazi Site Builder v2 {#site-builder-orchestration-v2}
 
 Nhazi Site Builder v2 (e webatara na Gratis AI Agent v1.4.0) bụ injin na-enye ike n'ịmepụta webụsaịtị nwere ọtụtụ nzọụkwụ. Mgbe ị jụrụ onye nnọchiọrụ ahụ ka ọ "rụọ webụsaịtị ụlọ nri" ma ọ bụ "mepụta pọtụfoliyo nwere blọgụ", onye nhazi ahụ na-ekewa ebumnuche dị elu ahụ ka ọ bụrụ **atụmatụ** ahaziri ahazi, chọpụta mgbakwunye ndị achọrọ iji mezuo ya, mee nzọụkwụ ọ bụla n'usoro, soro ọganihu, ma gbakee site na njehie n'onwe ya.
 
 ---
 
-## Otu O Si Arụ Ọrụ
+## Otu O Si Arụ Ọrụ {#how-it-works}
 
-### 1. Ịmepụta Atụmatụ
+### 1. Ịmepụta Atụmatụ {#1-plan-generation}
 
 Mgbe onye nnọchiọrụ ahụ natara ntuziaka iwulite saịtị, ọ na-akpọ ikike `create_site_plan` iji mepụta JSON **atụmatụ saịtị**. Atụmatụ ahụ na-akọwa:
 
@@ -61,7 +61,7 @@ Mgbe onye nnọchiọrụ ahụ natara ntuziaka iwulite saịtị, ọ na-akpọ
 }
 ```
 
-### 2. Nchọpụta Mgbakwunye
+### 2. Nchọpụta Mgbakwunye {#2-plugin-discovery}
 
 Tupu mmezu amalite, onye nhazi ahụ na-enyocha `plugin_requirements` nke atụmatụ ahụ ma lelee mgbakwunye ndị arụlarị ọrụ. Maka mgbakwunye ndị na-efu, ọ na:
 
@@ -71,7 +71,7 @@ Tupu mmezu amalite, onye nhazi ahụ na-enyocha `plugin_requirements` nke atụm
 
 Ọdịda nchọpụta mgbakwunye anaghị egbu usoro — onye nhazi ahụ na-akara nzọụkwụ ndị metụtara ya dịka `skipped` ma gaa n'ihu na akụkụ fọdụrụ nke atụmatụ ahụ.
 
-### 3. Mmezu Atụmatụ
+### 3. Mmezu Atụmatụ {#3-plan-execution}
 
 Onye nhazi ahụ na-akpọ `execute_site_plan` na ID atụmatụ ahụ. Mmezu na-aga site n'usoro ruo n'usoro, nzọụkwụ ruo nzọụkwụ:
 
@@ -79,7 +79,7 @@ Onye nhazi ahụ na-akpọ `execute_site_plan` na ID atụmatụ ahụ. Mmezu na
 - **Nzọụkwụ na-aga n'otu oge** — a na-eziga nzọụkwụ dị n'ime otu usoro nke enweghị njikọ ndabere n'etiti ha n'otu oge mgbe etinyere ọkọlọtọ `parallel`.
 - **Oge njedebe nzọụkwụ** — nzọụkwụ ọ bụla nwere oge njedebe nke ya (ndabara: ntọala `Ability Timeout`). A na-akara nzọụkwụ gafere oge dịka `failed` ma atụmatụ ahụ na-aga n'ihu.
 
-### 4. Iso Ọganihu
+### 4. Iso Ọganihu {#4-progress-tracking}
 
 Kpọọ `get_plan_progress` n'oge ọ bụla iji lelee ọnọdụ mmezu:
 
@@ -104,7 +104,7 @@ Ndị ọrụ WP-CLI nwere ike ileba ọganihu anya site na:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Mgbake Njehie
+### 5. Mgbake Njehie {#5-error-recovery}
 
 Mgbe nzọụkwụ dara, onye nhazi ahụ na-elele ma enwere nzọụkwụ **ndabere** akọwapụtara na atụmatụ ahụ:
 
@@ -115,9 +115,9 @@ Onye nnọchiọrụ ahụ na-akọ ọdịda niile na nchịkọta atụmatụ 
 
 ---
 
-## Ikike Atụmatụ Saịtị
+## Ikike Atụmatụ Saịtị {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Na-emepụta atụmatụ saịtị ahaziri ahazi site na nkọwa ebumnuche n'asụsụ nkịtị.
 
@@ -134,7 +134,7 @@ Na-emepụta atụmatụ saịtị ahaziri ahazi site na nkọwa ebumnuche n'as�
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Na-amalite ime atụmatụ saịtị e mepụtara na mbụ.
 
@@ -150,7 +150,7 @@ Na-amalite ime atụmatụ saịtị e mepụtara na mbụ.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Na-eweghachi ọnọdụ mmezu dị ugbu a nke atụmatụ saịtị.
 
@@ -164,7 +164,7 @@ Na-eweghachi ọnọdụ mmezu dị ugbu a nke atụmatụ saịtị.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Na-edozi nzọụkwụ dara ada n’aka ma na-amaliteghachi mmezu atụmatụ site na nzọụkwụ na-esote. Jiri nke a mgbe mgbake akpaghị aka agaghị ekwe omume ma ịchọrọ itinye aka.
 
@@ -180,7 +180,7 @@ Na-edozi nzọụkwụ dara ada n’aka ma na-amaliteghachi mmezu atụmatụ si
 
 ---
 
-## Ịtụnyere v1 na v2
+## Ịtụnyere v1 na v2 {#comparing-v1-and-v2}
 
 | Njirimara | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Na-edozi nzọụkwụ dara ada n’aka ma na-amaliteghachi mmezu atụmatụ si
 
 ---
 
-## Iwu Atụmatụ WP-CLI
+## Iwu Atụmatụ WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Na-emepụta atụmatụ saịtị site na nkọwa ebumnuche.
 
@@ -205,7 +205,7 @@ Na-emepụta atụmatụ saịtị site na nkọwa ebumnuche.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Na-emezu atụmatụ e mepụtara na mbụ.
 
@@ -213,7 +213,7 @@ Na-emezu atụmatụ e mepụtara na mbụ.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Na-egosi ọganihu dị ugbu a maka atụmatụ a na-emezu ma ọ bụ nke emechara.
 
@@ -221,7 +221,7 @@ Na-egosi ọganihu dị ugbu a maka atụmatụ a na-emezu ma ọ bụ nke emech
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Na-edepụta atụmatụ saịtị niile (na-echere, na-aga n’ihu, na nke emechara).
 
@@ -229,7 +229,7 @@ Na-edepụta atụmatụ saịtị niile (na-echere, na-aga n’ihu, na nke emec
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Na-emegharị atụmatụ dara ada ka ọ bụrụ `pending` ka e wee nwee ike imezu ya ọzọ site na mmalite.
 

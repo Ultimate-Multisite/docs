@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent คือผู้ช่วย AI อัตโนมัติสำหรับ WordPress ที่สามารถวางแผน สร้าง และจัดการเว็บไซต์ WordPress ทั้งหมดได้ เพียงแค่ใช้คำสั่งที่เป็นภาษาธรรมชาติ มันเปิดเผยชุด **ความสามารถ (abilities)** ที่มีโครงสร้าง ซึ่งเป็นชุดการกระทำที่แยกส่วนและสามารถทดสอบได้ที่เอเจนต์สามารถเรียกใช้ได้ ครอบคลุมทุกอย่างตั้งแต่การจัดการเนื้อหาไปจนถึงการปรับแต่งระบบดีไซน์ (design system) เวอร์ชัน 1.9.0 ได้เพิ่มความสามารถในการสร้างเนื้อหา การรีวิวหน้าเว็บด้วยภาพหน้าจอจากฝั่งไคลเอนต์ (client-side screenshots) โปรไฟล์เอเจนต์ในตัว 5 โปรไฟล์ และ feature flags สำหรับการควบคุมการเข้าถึงและการสร้างแบรนด์
 
-## คุณสมบัติหลัก (Key Features)
+## คุณสมบัติหลัก (Key Features) {#key-features}
 
 - **ระบบความสามารถ (Abilities system)** — แคตตาล็อกการกระทำที่ปรับเปลี่ยนได้และขยายได้ ซึ่งเอเจนต์สามารถเรียกใช้กับ WordPress ของคุณ
 - **การจัดการเนื้อหา (Content Management)** — สร้างโพสต์และหน้า (รวมถึงการกำหนดเทมเพลตหน้า), สร้างโพสต์จำนวนมากพร้อมกันในการเรียกใช้ครั้งเดียว, กำหนดรูปภาพเด่น (featured images), และสร้างแบบฟอร์มติดต่อ
@@ -28,21 +28,21 @@ Gratis AI Agent คือผู้ช่วย AI อัตโนมัติส
 - **Site Builder Orchestration v2** — แผนการสร้างเว็บไซต์หลายขั้นตอน พร้อมการค้นหาปลั๊กอิน, การติดตามความคืบหน้า, และการกู้คืนข้อผิดพลาด
 - **WP-CLI benchmark command** — รันชุดทดสอบความสามารถของเอเจนต์จาก command line สำหรับ CI และการประเมินโมเดล
 
-## ข้อกำหนด (Requirements)
+## ข้อกำหนด (Requirements) {#requirements}
 
 - WordPress 6.0 หรือสูงกว่า
 - PHP 8.1 หรือสูงกว่า
 - WordPress Multisite (เปิดใช้งานระดับเครือข่าย) หรือการติดตั้งแบบ single-site
 - ปลั๊กอินตัวเชื่อมต่อ AI ที่ใช้งานได้ (Anthropic, OpenAI, หรือที่เข้ากันได้)
 
-## การติดตั้ง (Installation)
+## การติดตั้ง (Installation) {#installation}
 
 1. อัปโหลดไฟล์ปลั๊กอินไปยัง `/wp-content/plugins/gratis-ai-agent`
 2. เปิดใช้งานปลั๊กอินผ่านหน้า **Plugins** ใน WordPress
 3. ไปที่ **Gratis AI Agent → Settings** และเชื่อมต่อ AI provider ของคุณ
 4. (ทางเลือก) เรียกดู **Abilities Registry** เพื่อติดตั้งชุดความสามารถเพิ่มเติม
 
-## เริ่มต้นใช้งานอย่างรวดเร็ว (Quick Start)
+## เริ่มต้นใช้งานอย่างรวดเร็ว (Quick Start) {#quick-start}
 
 เมื่อเปิดใช้งานและเชื่อมต่อกับ AI provider แล้ว ให้เปิดแผง **Gratis AI Agent** ในแถบด้านข้างของ WordPress admin พิมพ์คำสั่งที่เป็นภาษาธรรมชาติ แล้วเอเจนต์จะวางแผนและดำเนินการตามขั้นตอนที่จำเป็นโดยใช้ความสามารถที่มีอยู่
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## ภาพรวมความสามารถ (Abilities Overview)
+## ภาพรวมความสามารถ (Abilities Overview) {#abilities-overview}
 
 ความสามารถคือการกระทำระดับอะตอมที่เอเจนต์สามารถทำได้ แต่ละความสามารถคือ PHP class ที่ลงทะเบียน ซึ่งเปิดเผย schema (พารามิเตอร์และประเภทค่าที่ส่งคืน) ที่เอเจนต์อ่านในขณะรันไทม์ ความสามารถเหล่านี้ถูกจัดกลุ่มตามฟังก์ชันการทำงาน:
 
@@ -79,7 +79,7 @@ Build a restaurant website with an online menu, booking form, and contact page.
 
 ดู [Abilities Reference](./abilities) สำหรับเอกสารพารามิเตอร์ฉบับเต็มและตัวอย่างการใช้งาน
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent มาพร้อมกับชุดคำสั่ง `wp gratis-ai-agent` สำหรับการรัน benchmark และการจัดการความสามารถจาก command line ดู [WP-CLI Reference](./wp-cli) สำหรับรายการคำสั่งทั้งหมด
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## การตั้งค่า (Configuration)
+## การตั้งค่า (Configuration) {#configuration}
 
 การตั้งค่าทั้งหมดอยู่ใน **Gratis AI Agent → Settings** ใน WordPress admin:
 
@@ -106,7 +106,7 @@ wp gratis-ai-agent abilities install <slug>
 | **Ability Timeout** | ระยะเวลาสูงสุดที่ความสามารถแต่ละตัวสามารถทำงานได้ (ค่าเริ่มต้น 30) |
 | **Debug Logging** | บันทึกการเรียกใช้ความสามารถและการให้เหตุผลของเอเจนต์ลงใน WordPress debug log |
 
-## Options Management Safety Blocklist
+## Options Management Safety Blocklist {#options-management-safety-blocklist}
 
 ความสามารถ Options Management มี blocklist ในตัวที่ป้องกันไม่ให้เอเจนต์อ่านหรือเขียน WordPress options ที่มีความอ่อนไหว blocklist เริ่มต้นครอบคลุม:
 
@@ -118,26 +118,26 @@ wp gratis-ai-agent abilities install <slug>
 
 สามารถเพิ่มรายการเพิ่มเติมได้ผ่าน filter `gratis_ai_agent_options_blocklist`
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — ถูกเรียกใช้หลังจากที่ความสามารถถูกลงทะเบียน โดยจะรับชื่อ class ของความสามารถ
 - `gratis_ai_agent_plan_started` — ถูกเรียกใช้เมื่อแผนการสร้างเว็บไซต์เริ่มดำเนินการ
 - `gratis_ai_agent_plan_completed` — ถูกเรียกใช้เมื่อแผนเสร็จสมบูรณ์
 - `gratis_ai_agent_plan_failed` — ถูกเรียกใช้เมื่อแผนพบข้อผิดพลาดที่ไม่สามารถกู้คืนได้
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — แก้ไขรายการความสามารถที่ลงทะเบียนก่อนที่เอเจนต์จะโหลด
 - `gratis_ai_agent_options_blocklist` — ขยายหรือลด blocklist ความปลอดภัยของ options
 - `gratis_ai_agent_benchmark_questions` — เพิ่มคำถาม benchmark แบบกำหนดเองให้กับชุดการประเมิน
 - `gratis_ai_agent_plan_plugins` — แก้ไขรายการการค้นหาปลั๊กอินระหว่างการสร้างแผนเว็บไซต์
 
-## การสนับสนุน (Support)
+## การสนับสนุน (Support) {#support}
 
 หากต้องการการสนับสนุน โปรดเยี่ยมชม [ultimatemultisite.com](https://ultimatemultisite.com) หรือเปิด issue ในที่เก็บปลั๊กอิน
 
-## บันทึกการเปลี่ยนแปลง (Changelog)
+## บันทึกการเปลี่ยนแปลง (Changelog) {#changelog}
 
 ดู [Changelog](./changelog) สำหรับประวัติเวอร์ชันฉบับเต็ม

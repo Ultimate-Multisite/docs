@@ -4,11 +4,11 @@ title: فلټر - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# فلټر: wu_pre_save_settings
+# فلټر: wu_pre_save_settings {#filter-wupresavesettings}
 
 پرمختیاکوونکو ته اجازه ورکړئ چې د Ultimate Multisite له خوا له خوندي کولو مخکې امستنې فلټر کړي.
 
-## پاراميټرونه
+## پاراميټرونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 | $settings_to_save | `array` | هغه نوې امستنې چې باید زیاتې شي. |
 | $saved_settings | `array` | اوسنۍ خوندي شوې امستنې. |
 
-### له نسخې راهیسې
+### له نسخې راهیسې {#since}
 
 - 2.0.18
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) کې په ۲۹۶ کرښه تعریف شوی.

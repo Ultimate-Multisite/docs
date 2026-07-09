@@ -3,9 +3,9 @@ title: Quản lý thanh toán và hóa đơn
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Quản lý Thanh toán và Hóa đơn
+# Quản lý Thanh toán và Hóa đơn {#managing-payments-and-invoices}
 
-## Cài đặt Thanh toán
+## Cài đặt Thanh toán {#payment-settings}
 
 Trước khi bắt đầu nhận thanh toán, bạn cần cấu hình các cài đặt liên quan đến thanh toán. Điều hướng đến **Ultimate Multisite → Settings** và nhấp vào tab **Payment**.
 
@@ -15,7 +15,7 @@ Trước khi bắt đầu nhận thanh toán, bạn cần cấu hình các cài 
 
 ![Toàn bộ trang cài đặt thanh toán](/img/admin/settings-payments-full.png)
 
-### Tùy chọn Thanh toán Chung
+### Tùy chọn Thanh toán Chung {#general-payment-options}
 
 Trong phần cài đặt chung, bạn có thể cấu hình:
 
@@ -24,7 +24,7 @@ Trong phần cài đặt chung, bạn có thể cấu hình:
 
 ![Cài đặt cổng thanh toán](/img/admin/settings-payments-options.png)
 
-### Cổng Thanh toán
+### Cổng Thanh toán {#payment-gateways}
 
 Ultimate Multisite hỗ trợ nhiều cổng thanh toán. Bạn có thể bật và cấu hình từng cổng từ tab cài đặt Payment.
 
@@ -40,11 +40,11 @@ Mỗi cổng có phần cấu hình riêng, nơi bạn nhập API keys và các 
 
 ![Cài đặt cổng bổ sung](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Bạn có thể bật **Sandbox Mode** để kiểm thử tích hợp thanh toán trước khi đưa vào hoạt động chính thức. Khi chế độ sandbox đang hoạt động, sẽ không có khoản phí thực nào được thực hiện.
 
-## Xem Thanh toán
+## Xem Thanh toán {#viewing-payments}
 
 Điều hướng đến trang **Payments** trong Ultimate Multisite để xem tất cả giao dịch trên toàn mạng của bạn.
 
@@ -54,7 +54,7 @@ Bạn có thể lọc thanh toán theo trạng thái (đã hoàn tất, đang ch
 
 Nhấp vào một khoản thanh toán để xem đầy đủ chi tiết, bao gồm các mục dòng, gói thành viên liên kết, thông tin khách hàng và dữ liệu cổng thanh toán.
 
-## Hóa đơn
+## Hóa đơn {#invoices}
 
 Ultimate Multisite có thể tự động tạo hóa đơn cho các khoản thanh toán. Bạn có thể tùy chỉnh mẫu hóa đơn và định dạng đánh số từ cài đặt Payment.
 

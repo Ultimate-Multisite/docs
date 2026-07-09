@@ -4,13 +4,13 @@ title: Filter - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Memfilter apakah aturan kata sandi tambahan harus diterapkan.
 
 Jika diatur ke `true`, filter ini akan menerapkan persyaratan panjang minimum dan karakter. Fitur ini akan aktif secara otomatis jika pengaturan "Super Strong" digunakan atau jika fitur Kata Sandi Kuat dari Defender Pro aktif.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Jika diatur ke `true`, filter ini akan menerapkan persyaratan panjang minimum da
 | $strength_setting | `string` | Nilai pengaturan admin. |
 | $defender_active | `bool` | Apakah Kata Sandi Kuat Defender Pro aktif. |
 
-### Since
+### Since {#since}
 
 - 2.4.0
-### Source
+### Source {#source}
 
 Didefinisikan di [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) pada baris 531

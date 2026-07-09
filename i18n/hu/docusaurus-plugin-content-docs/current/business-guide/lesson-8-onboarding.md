@@ -3,15 +3,15 @@ title: 'Örnélkezés 8: Ügyfél bevezetése'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# 8. Lesson: A vásárló bevezetése (Onboarding)
+# 8. Lesson: A vásárló bevezetése (Onboarding) {#lesson-8-customer-onboarding}
 
 Egy vásárló regisztrációja csak az első fél. Ha belép, elüteli magát, és soha nem tér vissza, akkor elvesztetted. Ez a lecke azt a felhasználói élményt tervezi, amely egy új regisztrációt aktív, elkötelezett vásárlóvá alakít.
 
-## Hol voltam?
+## Hol voltam? {#where-we-left-off}
 
 A FitSite teljesen saját márkájú, működő checkout folyamatú. Most azt fogjuk elemezni, mi történik azután, hogy egy fitness stúdió tulajdonosa sikeresen regisztrál, és először látja az új oldalát.
 
-## Miért fontos az onboarding?
+## Miért fontos az onboarding? {#why-onboarding-matters}
 
 Az első 30 perc a regisztráció után meghatározza, hogy a vásárló marad-e, vagy elhagyja a szolgáltatást. Egy fitness stúdió tulajdonosa, aki:
 
@@ -21,9 +21,9 @@ Az első 30 perc a regisztráció után meghatározza, hogy a vásárló marad-e
 
 A niche alapú sablonjai (4. Lesson) kezelik az első pontot. Ez a lecke a második pontot.
 
-## Az első belépés élménye
+## Az első belépés élménye {#the-first-login-experience}
 
-### Welcome Dashboard Widget (Üdvözlő dashboard widget)
+### Welcome Dashboard Widget (Üdvözlő dashboard widget) {#welcome-dashboard-widget}
 
 Létrehoz egy festőleges dashboard widget-ot, amely üdvözi az új vásárlókat, és útmutatja őket az elállítási folyamaton. Ez kiemelkedően kell látszaniuk, amikor először lépnek be.
 
@@ -37,7 +37,7 @@ Létrehoz egy festőleges dashboard widget-ot, amely üdvözi az új vásárlók
 
 Minden lépés közvetlenül a releváns oldalra vagy beállításra mutat. Nem kell menüek között keresni.
 
-### Egyszerűsítse a dashboard-ot
+### Egyszerűsítse a dashboard-ot {#simplify-the-dashboard}
 
 Az új vásárlóknak nem kell minden WordPress menüpontot látniuk. Fontos megfontolni:
 
@@ -47,29 +47,29 @@ Az új vásárlóknak nem kell minden WordPress menüpontot látniuk. Fontos meg
 
 Az [Plugin & Theme Manager](/addons/plugin-and-theme-manager) addon segíthet szabályozni, mit látnak a vásárlók.
 
-## Üdvözlő e-mail sorozat
+## Üdvözlő e-mail sorozat {#welcome-email-sequence}
 
 Egyetlen üdvözlő e-mail nem elég. Állíts fel egy sorozatot, amely útmutatja a vásárlókat az első hétük során:
 
-### E-mail 1: Üdvözlés (Regisztráció után azonnal)
+### E-mail 1: Üdvözlés (Regisztráció után azonnal) {#email-1-welcome-immediately-after-signup}
 
 - Tárgy: "Üdvözlünk a FitSite-on – a stúdió oldalad online!"
 - Tartalom: Belépési link, gyors indítási lépések, link a segítségnyújtási forrásokhoz
 - Hangnem: Izgalmas, ösztönző, fitness-specifikus
 
-### E-mail 2: Gyors sikerek (1. nap)
+### E-mail 2: Gyors sikerek (1. nap) {#email-2-quick-wins-day-1}
 
 - Tárgy: "3 dolog, amit először kell csinálni a FitSite-on"
 - Tartalom: Adja hozzá a logóját, frissítse az oldalonki hős képet, adja hozzá az órák menetrendjét
 - Tartalmazzon képernyőképeket, amelyek pontosan mutatják, hol kell kattintani
 
-### E-mail 3: Önnek alakítsa (3. nap)
+### E-mail 3: Önnek alakítsa (3. nap) {#email-3-make-it-yours-day-3}
 
 - Tárgy: "Látszólag kiemelt fitness oldal"
 - Tartalom: Színek testreszabása, edzők képei hozzáadása, a stúdió történetének írása
 - Link egy példákhoz a platformon található kiváló fitness oldalakról
 
-### E-mail 4: Online (7. nap)
+### E-mail 4: Online (7. nap) {#email-4-go-live-day-7}
 
 - Tárgy: "Készen van a FitSite-ot a világ számára?"
 - Tartalom: Ellenőrzőlista arról, amit ellenőrizni kell a megosztás előtt, hogyan csatlakoztasson hozzá egy saját domain-t (ha Growth/Pro-on van), social sharing tippek
@@ -78,11 +78,11 @@ Egyetlen üdvözlő e-mail nem elég. Állíts fel egy sorozatot, amely útmutat
 Használja a [Webhooks](/user-guide/integrations/webhooks) vagy a [Zapier](/user-guide/integrations/zapier) szolgáltatást ezek az e-mailek elindításához az e-mail marketing platformján. Ez több kontrollt ad az időzítés felett, és lehetővé teszi az elkötelezettség nyomon követését.
 :::
 
-## Tudásforrások
+## Tudásforrások {#help-resources}
 
 Létrehozjon niche-specifikus segítségnyújtási tartalmat, amely válaszolja azokat a kérdéseket, amelyeket a fitness stúdió tulajdonosok tényleg felvetnek:
 
-### Knowledge Base (Tudásbázis cikkek)
+### Knowledge Base (Tudásbázis cikkek) {#knowledge-base-articles}
 
 - "Hogyan frissítem az órák menetrendjét"
 - "Edző profilok hozzáadása és szerkesztése"
@@ -92,7 +92,7 @@ Létrehozjon niche-specifikus segítségnyújtási tartalmat, amely válaszolja 
 
 Írja ezeket a tartalmakat nem-szakértői felhasználók számára. Használjon képernyőképeket. Kerülje a WordPress szakkifejezéseket.
 
-### Video Walkthroughs (Videó áttekintélyek)
+### Video Walkthroughs (Videó áttekintélyek) {#video-walkthroughs}
 
 Rövid (2-3 perces) képernyőfelvételek, amelyek mutatják:
 
@@ -103,7 +103,7 @@ Rövid (2-3 perces) képernyőfelvételek, amelyek mutatják:
 
 Ezek nem kell, hogy tökéletes, professzionális produkciók legyenek. A világos, hasznos és niche-specifikus tartalom a lényeg.
 
-## Az Ügyféloldal (Account Page)
+## Az Ügyféloldal (Account Page) {#the-account-page}
 
 Az Ultimate Multisite tartalmaz egy vásárlóknak szánt [Account Page](/user-guide/client-management/account-page)-t, ahol a vásárlók kezelik előfizetésüket. Testreszabítsa ezt a következőképpen:
 
@@ -112,7 +112,7 @@ Az Ultimate Multisite tartalmaz egy vásárlóknak szánt [Account Page](/user-g
 - Megjeleníti a számlázási tájakat és az invoice letöltéseit
 - Linket a segítségnyújtási forrásokhoz
 
-## Az onboarding sikerének mérése
+## Az onboarding sikerének mérése {#measuring-onboarding-success}
 
 Követje ezeket az indikátorokat, hogy tudja, működik-e az onboarding folyamata:
 
@@ -121,7 +121,7 @@ Követje ezeket az indikátorokat, hogy tudja, működik-e az onboarding folyama
 - **Támogatási jegyek új vásárlóktól**: Magas mennyiség azt jelenti, hogy az onboarding folyamatában hiányosságok vannak
 - **Próba-fizetős átalakulás**: Ha próbaverziókat kínál, mennyi százalék alakul át fizetővé?
 
-## A FitSite Hálózatának Állapotát
+## A FitSite Hálózatának Állapotát {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Amit építettünk ebben a leckében
+## Amit építettünk ebben a leckében {#what-we-built-this-lesson}
 
 - **Egy vezetett első belépési élmény** egy Quick Start widget-tal
 - **Egy egyszerűsített dashboard**, amely a fitness oldal kezelési feladatokra összpontosít

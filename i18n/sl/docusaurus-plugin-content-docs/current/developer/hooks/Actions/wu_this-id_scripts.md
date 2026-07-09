@@ -4,15 +4,15 @@ title: 'Dejanje - wu_{$this->id}_scripts'
 sidebar_label: 'wu_{$this->id}_scripts'
 _i18n_hash: 5769fc5cafbbb4448aedaa68fa084a3c
 ---
-# Action: wu_\{$this->id\}_scripts
+# Action: wu_\{$this->id\}_scripts {#action-wuthis-idscripts}
 
 Sproži hook za uvrstitev skriptov v čakalno vrsto.
 
 To element uporablja, da priklopi svojo metodo register_scripts.
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.0
-### Vir
+### Vir {#source}
 
 Definirano v [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L613) v vrstici 613

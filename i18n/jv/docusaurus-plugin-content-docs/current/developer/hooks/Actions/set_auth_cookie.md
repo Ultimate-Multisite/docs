@@ -4,11 +4,11 @@ title: Aksi - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Murub sanalika sadurunge cookie autentikasi disetel.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Murub sanalika sadurunge cookie autentikasi disetel.
 | $scheme | `string` | Skema autentikasi. Nilainé kalebu 'auth' utawa 'secure_auth'. |
 | $token | `string` | Token sesi pangguna sing digunakaké kanggo cookie iki. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ing baris 124

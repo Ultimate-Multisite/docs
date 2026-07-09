@@ -3,13 +3,13 @@ title: خاس تىزىملىغۇچى بىرلەشتۈرۈشى قۇرۇش
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# خاس تىزىملىغۇچى بىرلەشتۈرۈشى قۇرۇش
+# خاس تىزىملىغۇچى بىرلەشتۈرۈشى قۇرۇش {#building-a-custom-registrar-integration}
 
 Domain Seller addon **بىرلەشتۈرۈش تىزىملىكى** ئەندىزىسىنى ئىشلىتىدۇ. ھەر بىر تىزىملىغۇچى `Domain_Selling_Capability` نى ئەمەلگە ئاشۇرىدىغان ۋە `wu_domain_seller_register_capabilities` action hook ئارقىلىق ئۆزىنى تىزىملىتىدىغان PHP class تۇر.
 
 بۇ قوللانما خاس تىزىملىغۇچىنى قانداق ئۇلاشنى كۆرسىتىدۇ.
 
-## Interface
+## Interface {#the-interface}
 
 سىزنىڭ classىڭىز `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` نى ئەمەلگە ئاشۇرۇشى ۋە `WP_Ultimo\Integrations\Base_Capability_Module` دىن كېڭەيتىلىشى كېرەك.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### ئىختىيارىي methods
+### ئىختىيارىي methods {#optional-methods}
 
 قوشۇمچە ئىقتىدارلارنى ئېچىش ئۈچۈن بۇلارنى ئەمەلگە ئاشۇرۇڭ. addon قوللاشنى `method_exists()` ئارقىلىق بايقايدۇ:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | دومېن يۆتكەش (چىقىش) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | دومېن يۆتكەش (كىرىش) |
 
-### قايتۇرۇش قىممىتى قائىدىسى
+### قايتۇرۇش قىممىتى قائىدىسى {#return-value-convention}
 
 بارلىق methods ئەڭ ئاز دېگەندە `success` ئاچقۇچى بار array قايتۇرىدۇ:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## قابىلىيىتىڭىزنى تىزىملاش
+## قابىلىيىتىڭىزنى تىزىملاش {#registering-your-capability}
 
 classىڭىزنى `wu_domain_seller_register_capabilities` action ئارقىلىق تىزىملاڭ:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## يېتەكچىگە كىرىش ئۇچۇرلىرى fields نى قوشۇش
+## يېتەكچىگە كىرىش ئۇچۇرلىرى fields نى قوشۇش {#adding-credential-fields-to-the-wizard}
 
 باشقۇرغۇچىلارنىڭ سەپلەش يېتەكچىسى ئارقىلىق كىرىش ئۇچۇرلىرىنى كىرگۈزۈشىگە يول قويۇش ئۈچۈن، بىرلەشتۈرۈشىڭىزنى تىزىملاڭ:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## تىزىملاشتىن كېيىنكى ھەرىكەتلەر ئۈچۈن hooks
+## تىزىملاشتىن كېيىنكى ھەرىكەتلەر ئۈچۈن hooks {#hooks-for-post-registration-actions}
 
 بۇ actions نى webhooks، تەمىنلەش، ئۇقتۇرۇشلار ياكى CRM يېڭىلانمىلىرىنى قوزغىتىش ئۈچۈن ئىشلىتىڭ:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## خاتىرە
+## خاتىرە {#logging}
 
 `wu_log_add()` ئارقىلىق تەمىنلىگۈچىڭىزگە خاس خاتىرە قانىلىغا يېزىڭ:
 

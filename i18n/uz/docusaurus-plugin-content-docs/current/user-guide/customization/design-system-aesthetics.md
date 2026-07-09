@@ -3,11 +3,11 @@ title: Dizayn tizimi estetikasi ko'nikmasi
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Dizayn Tizimi Estetika Ko'nikmasi
+# Dizayn Tizimi Estetika Ko'nikmasi {#design-system-aesthetics-skill}
 
 **Dizayn Tizimi Estetika ko'nikmasi** — bu saytingiz vizual identifikatorini takomillashtirish uchun yo'naltirilgan yondashuvdir. U sizga dizayn tizimingizni belgilaydigan tipografiya, ranglar, bo'shliq va harakat (motion) tokenlari haqida bir xil qaror qabul qilishda yordam beradi.
 
-## Dizayn Tizimi Estetika nima?
+## Dizayn Tizimi Estetika nima? {#what-is-design-system-aesthetics}
 
 Dizayn Tizimi Estetika — bu quyidagilarni o'z ichiga olgan tuzilgan ko'nikmadir:
 
@@ -20,9 +20,9 @@ Dizayn Tizimi Estetika — bu quyidagilarni o'z ichiga olgan tuzilgan ko'nikmadi
 
 Bu qarorlar sizning tema faylingizdagi `theme.json` faylida qayd etiladi va uyg'un vizual tizimni yaratadi.
 
-## Nega Dizayn Tizimi Estetikasidan Foydalanish Kerak?
+## Nega Dizayn Tizimi Estetikasidan Foydalanish Kerak? {#why-use-design-system-aesthetics}
 
-### Bir xillik (Consistency)
+### Bir xillik (Consistency) {#consistency}
 
 Dizayn tizimi quyidagilarni ta'minlaydi:
 
@@ -31,7 +31,7 @@ Dizayn tizimi quyidagilarni ta'minlaydi:
 - Bo'shliq bashorat qilinadigan tartibga amal qiladi
 - Harakatlar birlashtirilgan hisoblanadi
 
-### Samaradorlik (Efficiency)
+### Samaradorlik (Efficiency) {#efficiency}
 
 Sahifa sahifa dizayn qarorlari qilish o'rniga, siz:
 
@@ -39,7 +39,7 @@ Sahifa sahifa dizayn qarorlari qilish o'rniga, siz:
 - Ularni hamma joyda qo'llaysiz
 - Bitta qiymatni o'zgartirish orqali global darajada yangilaysiz
 
-### Moslashuvchanlik (Flexibility)
+### Moslashuvchanlik (Flexibility) {#flexibility}
 
 Siz quyidagilarni qila olasiz:
 
@@ -47,9 +47,9 @@ Siz quyidagilarni qila olasiz:
 - Turli estetikalar bilan tajriba qilish
 - O'zgarishlar bilan brendning bir xilligini saqlab qolish
 
-## Dizayn Tizimi Estetika Ko'nikmasini Faollashtirish
+## Dizayn Tizimi Estetika Ko'nikmasini Faollashtirish {#triggering-the-design-system-aesthetics-skill}
 
-### Qo'lda Faollashtirish (Manual Activation)
+### Qo'lda Faollashtirish (Manual Activation) {#manual-activation}
 
 Siz ko'rsatgan vaqtda ko'nikmani boshlashingiz mumkin:
 
@@ -69,7 +69,7 @@ yoki
 "Dizayn tizimi qarorlari bo'yicha menga yo'l ko'rsating"
 ```
 
-### Avtomatik Takliflar (Automatic Suggestions)
+### Avtomatik Takliflar (Automatic Suggestions) {#automatic-suggestions}
 
 Agent siz quyidagi holatlarda ko'nikmadan foydalanishni taklif qilishi mumkin:
 
@@ -78,9 +78,9 @@ Agent siz quyidagi holatlarda ko'nikmadan foydalanishni taklif qilishi mumkin:
 - Vizual bir xillikni yaxshilashni istasangiz
 - Saytingizni yakunlashga tayyor bo'lganingizda
 
-## Dizayn Tizimi Estetika Jarayoni
+## Dizayn Tizimi Estetika Jarayoni {#the-design-system-aesthetics-process}
 
-### 1-Qadam: Tipografiya
+### 1-Qadam: Tipografiya {#step-1-typography}
 
 Agent sizdan shrift tanlovingiz haqida so'raydi:
 
@@ -110,7 +110,7 @@ Keyin agent quyidagilarni belgilaydi:
 - **Og'irlik skalasi (Weight scale)**: Shrift og'irligi (oddiy, o'rta, qalin va h.k.)
 - **Qator balandligi (Line height)**: O'qilishi uchun qatorlar orasidagi masofa
 
-### 2-Qadam: Rang Palitrasi
+### 2-Qadam: Rang Palitrasi {#step-2-color-palette}
 
 ```
 Rang palitrasini belgilaylik.
@@ -140,7 +140,7 @@ Agent quyidagilarni o'z ichiga olgan to'liq palitrani yaratadi:
 - Semantik ranglar (muvaffaqiyatli, ogohlantirish, xato)
 - Hover va faol holatlar
 
-### 3-Qadam: Bo'shliqlar (Spacing)
+### 3-Qadam: Bo'shliqlar (Spacing) {#step-3-spacing}
 
 Qancha bo'shliq (breathing room) xohlasangiz?
 
@@ -160,7 +160,7 @@ Agent bu tokenlarni belgilaydi:
 - Miqyos: xs, sm, md, lg, xl, 2xl
 - Padding, margin va gap uchun aniq qiymatlar
 
-### 4-Qadam: Chegaralar va Soyalar (Borders and Shadows)
+### 4-Qadam: Chegaralar va Soyalar (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Vizual chuqurlik va belgilanish:
@@ -183,7 +183,7 @@ Agent quyidagilarni yaratadi:
 - Yuqori darajadagi ko'tarilishlar (elevation levels) uchun soya tokenlari
 - Border kengligi tokenlari
 
-### 5-Qadam: Harakat va Animatsiya (Motion and Animation)
+### 5-Qadam: Harakat va Animatsiya (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 Saytingiz interaktiv bo'lganda qanday his qilishi kerak?
@@ -205,9 +205,9 @@ Agent quyidagilarni belgilaydi:
 - Easing funksiyalari (ease-in, ease-out, ease-in-out)
 - Umumiy interaktivliklar uchun animatsiya keyframe'lari
 
-## Dizayn tizim estetikalarini qo'llash
+## Dizayn tizim estetikalarini qo'llash {#applying-design-system-aesthetics}
 
-### Avtomatik Qo'llash
+### Avtomatik Qo'llash {#automatic-application}
 
 Ko'nikmangizni yakunlaganingizdan so'ng, agent:
 
@@ -216,13 +216,13 @@ Ko'nikmangizni yakunlaganingizdan so'ng, agent:
 3. Yangi tizimga mos keladigan blok uslublarini qayta yaratadi
 4. Yangilangan temani faollashtiradi
 
-### Qo'lda Qo'llash
+### Qo'lda Qo'llash {#manual-application}
 
 Siz shuningdek, `theme.json` faylini bevosita tahrirlashingiz mumkin:
 
-## Dizayn Tizimni Ko'rish
+## Dizayn Tizimni Ko'rish {#viewing-your-design-system}
 
-### Agentga So'rashingiz mumkin
+### Agentga So'rashingiz mumkin {#ask-the-agent}
 
 ```
 "Menga dizayn tizimimni ko'rsating"
@@ -236,13 +236,13 @@ yoki
 
 Agent sizning tipografiyangiz, ranglaringiz, bo'shliq (spacing) va boshqa tokenlarni ko'rsatadi.
 
-### theme.jsonni Ko'rish
+### theme.jsonni Ko'rish {#view-themejson}
 
 Tokenlarni to'g'ridan-to'g'ri ko'rish uchun `/wp-content/themes/[theme-name]/theme.json` faylini matn muharririda oching.
 
-## Dizayn Tizimini Yangilash
+## Dizayn Tizimini Yangilash {#updating-your-design-system}
 
-### Tezkor Yangilanishlar
+### Tezkor Yangilanishlar {#quick-updates}
 
 Agentdan aniq o'zgarishlar so'rashingiz mumkin:
 
@@ -262,7 +262,7 @@ yoki
 "Sarlavha shriftini serifga o'zgartiring"
 ```
 
-### To'liq Qayta Dizayn
+### To'liq Qayta Dizayn {#full-redesign}
 
 Dizayn Tizimi Estetikas (Design System Aesthetics) ko'nikmasini qayta ishga tushiring:
 
@@ -272,7 +272,7 @@ Dizayn Tizimi Estetikas (Design System Aesthetics) ko'nikmasini qayta ishga tush
 
 Bu sizga hozirgi qiymatlaringizdan boshlab barcha qarorlar bo'yicha yo'l ko'rsatadi.
 
-### Qisman Yangilanishlar
+### Qisman Yangilanishlar {#partial-updates}
 
 Aniqlik jihatlarini yangilang:
 
@@ -280,15 +280,15 @@ Aniqlik jihatlarini yangilang:
 "Faqat rang palitkasini yangilang, qolgan barchasini o'zgarmaslikka qo'ying"
 ```
 
-## Dizayn Tizimi Eng Yaxshi Amaliyotlari (Best Practices)
+## Dizayn Tizimi Eng Yaxshi Amaliyotlari (Best Practices) {#design-system-best-practices}
 
-### Birjiy Ishlatish (Consistency)
+### Birjiy Ishlatish (Consistency) {#consistency-1}
 
 - Barcha joylarda bir xil tokenlardan foydalaning.
 - Bir martalik ranglar yoki o'lchamlar yaratmang.
 - Qiymatlarni qattiq kodlash o'rniga tokenlarni ishlating.
 
-### Nomlash
+### Nomlash {#naming}
 
 Aniqlik va ma'noli nomlardan foydalaning:
 
@@ -298,9 +298,9 @@ Aniqlik va ma'noli nomlardan foydalaning:
 - ✓ `heading-lg`, `body-sm` (sarlavha-katta, tananing kichik)
 - ✗ `font-size-24`, `text-large` (shrift o'lchami-24, katta matn)
 
-### Kengaytirish Imkoniyati (Scalability)
+### Kengaytirish Imkoniyati (Scalability) {#scalability}
 
-### Dokumentatsiya
+### Dokumentatsiya {#documentation}
 
 O'zingizning dizayn tizimingizni hujjatlashtiring:
 
@@ -308,9 +308,9 @@ O'zingizning dizayn tizimingizni hujjatlashtiring:
 - Har bir tokenni qachon ishlatish kerak?
 - Istisnoliliklar va cheklovli holatlar.
 
-## Umumiy Dizayn Tizimining Naqshlari (Common Design System Patterns)
+## Umumiy Dizayn Tizimining Naqshlari (Common Design System Patterns) {#common-design-system-patterns}
 
-### Zamonaviy Minimalist
+### Zamonaviy Minimalist {#modern-minimalist}
 
 - Sans-serif tipografiya (Inter, Helvetica).
 - Cheklangan rang palitrasi (2-3 ta rang).
@@ -318,7 +318,7 @@ O'zingizning dizayn tizimingizni hujjatlashtiring:
 - Nozik soya (shadows).
 - Silliq, tez animatsiyalar.
 
-### Issiq va Do'stona
+### Issiq va Do'stona {#warm-and-friendly}
 
 - Serif va sans-serif tipografiyasining aralashmasi.
 - Issiq ranglar palitrasi (oltalar, issiq kulranglar).
@@ -326,7 +326,7 @@ O'zingizning dizayn tizimingizni hujjatlashtiring:
 - Yumshoq soya.
 - O'yin-damli animatsiyalar.
 
-### Professional Korporativ
+### Professional Korporativ {#professional-corporate}
 
 - Toza sans-serif (Roboto, Open Sans).
 - Aksent rangi bilan neytral palitra.
@@ -334,7 +334,7 @@ O'zingizning dizayn tizimingizni hujjatlashtiring:
 - Minimal soya.
 - Nozik o'tishlar (transitions).
 
-### Ijodkor va Kuchli
+### Ijodkor va Kuchli {#creative-and-bold}
 
 - O'ziga xos tipografiya.
 - Kuchli ranglar palitrasi.
@@ -342,7 +342,7 @@ O'zingizning dizayn tizimingizni hujjatlashtiring:
 - Kuchli soya.
 - E'tibor tortadigan animatsiyalar.
 
-## Muammolarni Hal Qilish (Troubleshooting)
+## Muammolarni Hal Qilish (Troubleshooting) {#troubleshooting}
 
 **Mening dizayn tizimimning o'zgarishlari ko'rinmayapti**
 - Brauzer keshini tozalang.
@@ -360,7 +360,7 @@ O'zingizning dizayn tizimingizni hujjatlashtiring:
 - `theme.json` ni avvalgi qiymatlarga qo'lda tahrirlang.
 - Turli tanlovlar bilan skilli qayta ishga tushiring.
 
-## Keyingi Qadamlar (Next Steps)
+## Keyingi Qadamlar (Next Steps) {#next-steps}
 
 Dizayn tizimingizni belgilagandan so'ng:
 

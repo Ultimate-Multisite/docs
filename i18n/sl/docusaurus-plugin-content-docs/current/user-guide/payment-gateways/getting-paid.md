@@ -3,13 +3,13 @@ title: Prejemanje plačil
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Prejemanje plačil (v2)
+# Prejemanje plačil (v2) {#getting-paid-v2}
 
 _**POMEMBNO OBVESTILO: Ta članek se nanaša na Ultimate Multisite različico 2.x.**_
 
 Ultimate Multisite ima vgrajen sistem članstva in obračunavanja. Da bi naš sistem obračunavanja deloval, smo integrirali najpogostejše plačilne prehode, ki se uporabljajo v e-trgovini. Privzeti plačilni prehodi v Ultimate Multisite so _Stripe_ , _PayPal_ in ročno plačilo. Uporabite lahko tudi _WooCommerce_ , _GoCardless_ in _Payfast_ za prejemanje plačil z namestitvijo njihovih ustreznih dodatkov.
 
-## Osnovne nastavitve
+## Osnovne nastavitve {#basic-settings}
 
 Kateri koli od teh plačilnih prehodov lahko konfigurirate v nastavitvah plačil Ultimate Multisite. Najdete jih tako, da odprete **meni Ultimate Multisite > Nastavitve > Plačila.**
 
@@ -39,7 +39,7 @@ To prepreči, da bi članstvo delovalo, kot da se samodejno podaljšuje, kadar l
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kje najti prehode:
+## Kje najti prehode: {#where-to-find-the-gateways}
 
 Plačilne prehode lahko nastavite na isti strani ( **Ultimate Multisite > Nastavitve > Plačila**). Tik pod **aktivnimi plačilnimi prehodi** boste lahko videli: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ in _Manual_.
 
@@ -67,7 +67,7 @@ Tukaj je tudi celoten pogled nastavitev plačilnih prehodov:
 
 Če želite zdaj kot svoj plačilni prehod uporabiti _WooCommerce_ , _GoCardless_ ali _Payfast_ , boste morali **namestiti in konfigurirati njihove dodatke**.
 
-### Kako namestiti dodatek WooCommerce:
+### Kako namestiti dodatek WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Razumemo, da _Stripe_ in _PayPal_ nista na voljo v nekaterih državah, kar omejuje ali ovira uporabnike Ultimate Multisite pri učinkoviti uporabi našega vtičnika. Zato smo ustvarili dodatek za integracijo _WooCommerce,_ ki je zelo priljubljen vtičnik za e-trgovino. Razvijalci po vsem svetu so ustvarili dodatke za integracijo različnih plačilnih prehodov z njim. To smo izkoristili za razširitev plačilnih prehodov, ki jih lahko uporabljate z obračunskim sistemom Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Po aktivaciji boste prejeli opomnik, če na svojem spletnem mestu še vedno nima
 
 Če želite prebrati več o dodatku WooCommerce Integration, **kliknite tukaj**.
 
-### Kako namestiti dodatek GoCardless:
+### Kako namestiti dodatek GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Koraki za namestitev dodatka _GoCardless_ so skoraj enaki kot pri dodatku _WooCommerce_. Pojdite na stran z dodatki in izberite dodatek **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Ko je namestitev končana, boste preusmerjeni na stran z vtičniki. Tukaj samo k
 
 Če želite izvedeti, kako začeti z vmesnikom _GoCardless_, **preberite ta članek**.
 
-### Kako namestiti dodatek Payfast:
+### Kako namestiti dodatek Payfast: {#how-to-install-the-payfast-add-on}
 
 Pojdite na stran z dodatki in izberite dodatek **Ultimate Multisite: Payfast Gateway**.
 

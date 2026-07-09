@@ -4,20 +4,20 @@ title: Acción - wp_ultimo_ptm_page_list_footer
 sidebar_label: wp_ultimo_ptm_page_list_footer
 _i18n_hash: c8edc4bfa483f65f5e01a3f06b735f5d
 ---
-# Acción: wp_ultimo_ptm_page_list_footer
+# Acción: wp_ultimo_ptm_page_list_footer {#action-wpultimoptmpagelistfooter}
 
 Permitir a los desarrolladores de plugins agregar scripts al fondo de la página
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
 | $ | `\WU_Page` | Instancia de página Multisite Ultimate |
 
-### Desde
+### Desde {#since}
 
 - 1.8.2
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`views/base/list.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/list.php#L101) en la línea 101

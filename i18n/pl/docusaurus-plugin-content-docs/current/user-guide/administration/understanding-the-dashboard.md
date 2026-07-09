@@ -3,31 +3,31 @@ title: Zrozumienie Panelu głównego
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Poznaj panel Ultimate Multisite
+# Poznaj panel Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
 
 Zanim przejdziemy do bardziej zaawansowanych opcji konfiguracji i aspektów operacyjnych Ultimate Multisite, przyjrzyjmy się panelowi.
 
 Podobnie jak wiele wtyczek WordPress, Ultimate Multisite tworzy wpis w menu na poziomie sieci zatytułowany **Ultimate Multisite** z szeregiem podmenu.
 
-## Widżety panelu sieci
+## Widżety panelu sieci {#network-dashboard-widgets}
 
 Ultimate Multisite dodaje kilka przydatnych widżetów do panelu na poziomie sieci. Panel ten znajdziesz, przechodząc do **Moje witryny → Administrator sieci → Kokpit**. Widżety zostały zaprojektowane tak, aby administrator sieci miał łatwy dostęp do informacji i często wykonywanych operacji.
 
 ![Panel sieci z widżetami Ultimate Multisite](/img/admin/network-dashboard-full.png)
 
-### Pierwsze kroki
+### Pierwsze kroki {#first-steps}
 
 ![Widżet Pierwsze kroki](/img/admin/network-dashboard-first-steps.png)
 
 Ten widżet pojawia się w świeżej instalacji Ultimate Multisite i przypomina administratorowi sieci o dodatkowych zadaniach do wykonania, takich jak skonfigurowanie metody płatności czy utworzenie konta testowego.
 
-### Podsumowanie
+### Podsumowanie {#summary}
 
 ![Widżet Podsumowanie](/img/admin/network-dashboard-summary.png)
 
 Widżet Podsumowanie pokazuje liczbę rejestracji i przychody z danego dnia. MRR (miesięczny przychód cykliczny) wskazuje prognozowaną sumę od klientów z płatnymi członkostwami.
 
-### Strumień aktywności
+### Strumień aktywności {#activity-stream}
 
 ![Widżet Strumień aktywności](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Ten widżet raportuje zdarzenia w Ultimate Multisite. Do zdarzeń należą rejes
 
 Więcej szczegółów znajdziesz w sekcji Zdarzenia w dokumentacji.
 
-### Teraz
+### Teraz {#right-now}
 
 ![Widżet Teraz](/img/admin/network-dashboard-right-now.png)
 
 Ten praktyczny widżet wyświetla krótkie podsumowanie użytkowników i witryn w sieci. Przydatne skróty na górze umożliwiają szybkie tworzenie nowych witryn lub użytkowników jednym kliknięciem.
 
-### Wiadomości i dyskusje
+### Wiadomości i dyskusje {#news-and-discussions}
 
 ![Widżet Wiadomości i dyskusje](/img/admin/network-dashboard-news.png)
 
 Ten widżet pobiera i wyświetla najnowsze wiadomości Ultimate Multisite. Śledź go, aby być na bieżąco z aktualizacjami, krytycznymi błędami i poprawkami bezpieczeństwa.
 
-## Panel Ultimate Multisite
+## Panel Ultimate Multisite {#ultimate-multisite-dashboard}
 
 O ile panel na poziomie sieci prezentuje ogólne informacje o sieci, panel Ultimate Multisite (znajdujący się na najwyższym poziomie menu Ultimate Multisite) przedstawia informacje o usłudze.
 
 ![Panel Ultimate Multisite](/img/admin/um-dashboard-top.png)
 
-### Wzrost miesięcznego przychodu cyklicznego
+### Wzrost miesięcznego przychodu cyklicznego {#monthly-recurring-revenue-growth}
 
 Wykres MRR (miesięczny przychód cykliczny) pokazuje miesięczny rozkład przychodów w okresie 12 miesięcy kalendarzowych.
 
@@ -61,7 +61,7 @@ Wykres MRR (miesięczny przychód cykliczny) pokazuje miesięczny rozkład przyc
 
 Nowe przychody są oznaczone kolorem niebieskim, a anulowania — czerwonym.
 
-### Obsługa zakresu dat
+### Obsługa zakresu dat {#date-range-support}
 
 W zależności od liczby klientów i aktywności, statystyki mogą być przytłaczające. Wbudowana w panel obsługa zakresu dat pozwala administratorowi sieci skupić się tylko na potrzebnych informacjach i wybranym okresie.
 

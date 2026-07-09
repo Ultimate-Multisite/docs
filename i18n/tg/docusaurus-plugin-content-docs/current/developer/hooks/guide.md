@@ -3,15 +3,15 @@ title: Дастури истифодаи hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Дастури истифодаи Hooks
+# Дастури истифодаи Hooks {#hooks-usage-guide}
 
 Ultimate Multisite зиёда аз 200 action hooks ва зиёда аз 280 filter hooks фароҳам меорад. Ин саҳифа hook-ҳои бештар истифодашавандаро бо мисолҳои амалӣ фаро мегирад. Барои истиноди пурраи ба таври худкор тавлидшуда, саҳифаҳои дигари ин бахшро аз назар гузаронед.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Давраи ҳаёти муштарӣ
+### Давраи ҳаёти муштарӣ {#customer-lifecycle}
 
-#### Пас аз эҷоди муштарӣ
+#### Пас аз эҷоди муштарӣ {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Тағйири ҳолати муштарӣ
+#### Тағйири ҳолати муштарӣ {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hook-ҳои сомона
+### Hook-ҳои сомона {#site-hooks}
 
-#### Пас аз нашр шудани сомона
+#### Пас аз нашр шудани сомона {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Пеш аз татбиқи қолаб
+#### Пеш аз татбиқи қолаб {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hook-ҳои узвият
+### Hook-ҳои узвият {#membership-hooks}
 
-#### Гузаришҳои ҳолат
+#### Гузаришҳои ҳолат {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hook-ҳои пардохт
+### Hook-ҳои пардохт {#payment-hooks}
 
-#### Пардохт анҷом ёфт / ноком шуд
+#### Пардохт анҷом ёфт / ноком шуд {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hook-ҳои Checkout
+### Hook-ҳои Checkout {#checkout-hooks}
 
-#### Пеш аз коркард / Пас аз анҷом
+#### Пеш аз коркард / Пас аз анҷом {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hook-ҳои домен
+### Hook-ҳои домен {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Филтрҳои нархгузорӣ
+### Филтрҳои нархгузорӣ {#pricing-filters}
 
-#### Ҷамъи ароба
+#### Ҷамъи ароба {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Меъёрҳои андоз
+#### Меъёрҳои андоз {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Филтрҳои қолаб
+### Филтрҳои қолаб {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Филтрҳои маҳдудият
+### Филтрҳои маҳдудият {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Филтрҳои Gateway
+### Филтрҳои Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Майдонҳои формаи Checkout
+### Майдонҳои формаи Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Муҳтавои почтаи электронӣ
+### Муҳтавои почтаи электронӣ {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

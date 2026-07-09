@@ -3,17 +3,17 @@ title: Nhungamiro yeDhizaini
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Gwaro reDhizaini
+# Gwaro reDhizaini {#design-direction}
 
 Danho re**Gwaro reDhizaini** rinokubvumira kuongorora, kunatsa, uye kupedzisa dhizaini inoonekwa yetheme yako Theme Builder isati yagadzira theme yakazara.
 
-## Pfupiso
+## Pfupiso {#overview}
 
 Mushure mekupedza Discovery Interview, Theme Builder inoratidza gwaro rako reDhizaini ne**kuratidzwa kwepreview yedesktop neyekunhare**. Izvi zvinokubvumira kuona chaizvo kuti dhizaini yako icharatidzika sei pamidziyo yakasiyana usati wazvipira kutheme.
 
-## Zvikamu zveGwaro reDhizaini
+## Zvikamu zveGwaro reDhizaini {#design-direction-components}
 
-### 1. Palette yeMavara
+### 1. Palette yeMavara {#1-color-palette}
 
 Chirongwa chemavara chetheme yako, chinosanganisira:
 
@@ -23,7 +23,7 @@ Chirongwa chemavara chetheme yako, chinosanganisira:
 - **Mavara asina kusimba** — magrey nechena zveshure uye mavara ezvinyorwa
 - **Ruvara rwechinyorwa** — ruvara rukuru rwechinyorwa kuti zviverengeke zviri nyore
 
-### 2. Mataipogirafi
+### 2. Mataipogirafi {#2-typography}
 
 Sarudzo dzemafonti e:
 
@@ -33,14 +33,14 @@ Sarudzo dzemafonti e:
 - **Kureba kwemutsetse** — nzvimbo pakati pemitsara kuti zviverengeke zviri nyore
 - **Huremu hwemafonti** — misiyano yakakora, yakajairika, uye yakareruka
 
-### 3. Marongerwo neNzvimbo
+### 3. Marongerwo neNzvimbo {#3-layout-and-spacing}
 
 - **Upamhi hwecontainer** — upamhi hukuru hunobvumirwa hwezviri mukati
 - **Padding nemamargins** — nzvimbo yakapoteredza zvinhu
 - **Sisitimu yegrid** — marongerwo emakoramu edhizaini inopindura
 - **Nzvimbo pakati pezvikamu** — chinhambwe pakati pezvinhu zveUI
 
-### 4. Zvinhu Zvinoonekwa
+### 4. Zvinhu Zvinoonekwa {#4-visual-elements}
 
 - **Masitayera emabhatani** — madhizaini emabhatani makuru, echipiri, neechitatu
 - **Madhizaini emakadhi** — marongerwo emablock ezviri mukati
@@ -48,9 +48,9 @@ Sarudzo dzemafonti e:
 - **Mabhodha nemimvuri** — kudzika kunooneka zvinyoro
 - **Mhedzisiro yehover** — sitayera yemamiriro ekudyidzana
 
-## Kuratidzwa kwePreview
+## Kuratidzwa kwePreview {#preview-rendering}
 
-### Preview yeDesktop
+### Preview yeDesktop {#desktop-preview}
 
 Preview ye desktop inoratidza dhizaini yako paupamhi hwakazara (kazhinji 1200px kana kupfuura):
 
@@ -59,7 +59,7 @@ Preview ye desktop inoratidza dhizaini yako paupamhi hwakazara (kazhinji 1200px 
 - Typography yakakura nenzvimbo
 - Zvinhu zvese zvinoonekwa pahukuru hwakazara
 
-### Preview yeMobile
+### Preview yeMobile {#mobile-preview}
 
 Preview ye mobile inoratidza dhizaini yako paupamhi hwenhare (kazhinji 375px):
 
@@ -68,7 +68,7 @@ Preview ye mobile inoratidza dhizaini yako paupamhi hwenhare (kazhinji 375px):
 - Typography nenzvimbo zvakagadziridzwa
 - Saizi dzemabhatani dziri nyore kubata
 
-### Responsive Breakpoints
+### Responsive Breakpoints {#responsive-breakpoints}
 
 Theme Builder inoratidza mapreview pama breakpoints aya:
 
@@ -79,9 +79,9 @@ Theme Builder inoratidza mapreview pama breakpoints aya:
 | **Desktop** | 1200px | Desktop ine upamhi hwakazara |
 | **Large Desktop** | 1920px | Chiratidziro chakafara zvikuru |
 
-## Kunatsa Dhizaini Yako
+## Kunatsa Dhizaini Yako {#refining-your-design}
 
-### Kuita Kugadziridza
+### Kuita Kugadziridza {#making-adjustments}
 
 Unogona kunatsa gwaro rako reDhizaini ne:
 
@@ -91,7 +91,7 @@ Unogona kunatsa gwaro rako reDhizaini ne:
 4. **Kuvandudza marongerwo** — chinja upamhi hwema container nemakoramu egrid
 5. **Kugadzirisa zvinhu** — shandura masitayera emabhatani, madhizaini emakadhi, nezvimwe.
 
-### Kugadziridzwa kwePreview
+### Kugadziridzwa kwePreview {#preview-updates}
 
 Shanduko dzinoonekwa panguva chaiyo:
 
@@ -100,7 +100,7 @@ Shanduko dzinoonekwa panguva chaiyo:
 - Ma breakpoints ese anopindura anogadziridzwa
 - Unogona kuchinja pakati pemapreview kuti usimbise shanduko
 
-### Maonero eKuenzanisa
+### Maonero eKuenzanisa {#comparison-view}
 
 Enzanisa gwaro rako reDhizaini ne:
 
@@ -108,7 +108,7 @@ Enzanisa gwaro rako reDhizaini ne:
 - **Madhizaini evakwikwidzi** — enzanisa nemasaiti ekufemerwa nawo
 - **Shanduro dzakapfuura** — dzokera kumagwaro edhizaini ekare
 
-## Kubvumidza Gwaro reDhizaini
+## Kubvumidza Gwaro reDhizaini {#design-direction-approval}
 
 Kana wagutsikana nedhizaini yako:
 
@@ -118,7 +118,7 @@ Kana wagutsikana nedhizaini yako:
 4. **Simbisa marongerwo** — tarisa nzvimbo nekutarisana
 5. **Bvumidza dhizaini** — enda kugadzirwa kwetheme
 
-## Matanho Anotevera
+## Matanho Anotevera {#next-steps}
 
 Mushure mekubvumidza gwaro rako reDhizaini:
 
@@ -127,7 +127,7 @@ Mushure mekubvumidza gwaro rako reDhizaini:
 3. Unogona kuenderera mberi nekugadzirisa uchishandisa WordPress customizer
 4. Enda ku[Hospitality Menus](./hospitality-menus.md) kana zvimwe zvinhu
 
-## Maitiro Akanakisa
+## Maitiro Akanakisa {#best-practices}
 
 - **Edza pamidziyo chaiyo** — shandisa mafoni nema tablet chaiwo kana zvichiita
 - **Tarisa kuverengeka** — iva nechokwadi chekuti chinyorwa chinoverengeka pamasizi ese
@@ -135,30 +135,30 @@ Mushure mekubvumidza gwaro rako reDhizaini:
 - **Funga nezvekushanda nekukurumidza** — gadzirisa mifananidzo nemafonti kuti zvimhanye
 - **Rongera zviri mukati** — iva nechokwadi chekuti marongerwo anoshanda nezviri mukati zvako chaizvo
 
-## Kugadzirisa Matambudziko
+## Kugadzirisa Matambudziko {#troubleshooting}
 
-### Preview Isiri Kugadziridzwa
+### Preview Isiri Kugadziridzwa {#preview-not-updating}
 
 - Refresh peji
 - Bvisa cache yebrowser
 - Edza browser yakasiyana
 - Tarisa kubatana kweinternet
 
-### Mavara Anoratidzika Akasiyana
+### Mavara Anoratidzika Akasiyana {#colors-look-different}
 
 - Tarisa marongero emavara emonitor
 - Edza pamidziyo yakasiyana
 - Simbisa kusiyana kwemavara nematurusi ekusvikika
 - Funga nezvemasimulator ecolor blindness
 
-### Matambudziko eTypography
+### Matambudziko eTypography {#typography-issues}
 
 - Simbisa kuti mafonti files ari kurodha
 - Tarisa saizi yefonti pama breakpoints akasiyana
 - Edza nezviri mukati chaizvo
 - Funga nezvekureba kwemutsetse kuti zviverengeke zviri nyore
 
-## Zvinyorwa Zvine Chekuita
+## Zvinyorwa Zvine Chekuita {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — unganidza ruzivo rweDhizaini
 - [Hospitality Menus](./hospitality-menus.md) — gadzira mapeji emenyu akarongwa

@@ -4,13 +4,13 @@ title: Զտիչ - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Զտիչ: wu_contains_element
+# Զտիչ: wu_contains_element {#filter-wucontainselement}
 
 Թույլ է տալիս մշակողներին փոխել սկզբնական որոնման արդյունքները։
 
 Սա օգտակար է երրորդ կողմի կառուցիչների և նման գործիքների համար։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -19,9 +19,9 @@ _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 | $element | `self` | Ընթացիկ տարրը։ |
 | $post | `null\|\WP_Post` | ստուգվող գրառումը։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.0.0
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534)-ում՝ 534-րդ տողում։

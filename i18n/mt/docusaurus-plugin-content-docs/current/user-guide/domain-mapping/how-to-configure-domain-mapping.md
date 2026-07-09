@@ -3,17 +3,17 @@ title: Kif Tikkonfigura l-Immappjar tad-Dominji
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kif Tikkonfigura l-Immappjar tad-Domain (v2)
+# Kif Tikkonfigura l-Immappjar tad-Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTA IMPORTANTI: Dan l-artiklu jirreferi għall-verżjoni 2.x ta' Ultimate Multisite.**_
 
 Waħda mill-aktar karatteristiċi b'saħħithom ta' network premium hija l-abbiltà li noffru lill-klijenti tagħna ċ-ċans li jwaħħlu domain ta' livell għoli mas-siti tagħhom. Wara kollox, liema jidher aktar professjonali: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) jew [_**joesbikeshop.com**_](http://joesbikeshop.com)? Għalhekk Ultimate Multisite joffri din il-karatteristika integrata, mingħajr il-ħtieġa li tuża plugins ta' terzi.
 
-## X'inhu l-immappjar tad-domain?
+## X'inhu l-immappjar tad-domain? {#whats-domain-mapping}
 
 Kif jissuġġerixxi l-isem, l-immappjar tad-domain huwa l-abbiltà offruta minn Ultimate Multisite li jaċċetta talba għal domain personalizzat u jimmappja dik it-talba mas-sit korrispondenti fin-network li għandu dak id-domain partikolari mwaħħal miegħu.
 
-### Kif tissettja l-immappjar tad-domain fuq in-Network Ultimate Multisite tiegħek
+### Kif tissettja l-immappjar tad-domain fuq in-Network Ultimate Multisite tiegħek {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 L-immappjar tad-domain jeħtieġ xi setup min-naħa tiegħek biex jaħdem. B'xorti tajba, Ultimate Multisite jawtomatizza x-xogħol iebes għalik sabiex tkun tista' tissodisfa r-rekwiżiti faċilment.
 
@@ -45,7 +45,7 @@ Iżda qabel tibda timmappja d-domain personalizzat ma' wieħed mis-sottositi fin
 
 ###
 
-### Tiżgura li s-settings DNS tad-domain huma kkonfigurati sew
+### Tiżgura li s-settings DNS tad-domain huma kkonfigurati sew {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Biex immappjar jaħdem, trid tiżgura li d-domain li qed tippjana li timmappja qed jipponta lejn l-indirizz IP tan-Network tiegħek. Innota li għandek bżonn l-indirizz IP tan-Network - l-indirizz IP tad-domain fejn Ultimate Multisite huwa installat - mhux l-indirizz IP tad-domain personalizzat li trid timmappja. Biex tfittex l-indirizz IP ta' domain speċifiku, nissuġġerixxu li tmur fuq [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), pereżempju.
 
@@ -55,7 +55,7 @@ Jekk issib ruħek qed ikollok problemi biex dan jaħdem, **ikkuntattja l-appoġ�
 
 Jekk qed tippjana li tippermetti lill-klijenti tiegħek jimmappjaw id-domains tagħhom stess, huma jkollhom jagħmlu x-xogħol fuq din il-parti huma stess. Iddirezzjonahom lejn is-sistema ta' appoġġ tar-reġistratur tagħhom jekk isibu ruħhom ma jistgħux joħolqu l-A Record.
 
-### Immappjar ta' isem ta' domain personalizzat bħala Super Admin
+### Immappjar ta' isem ta' domain personalizzat bħala Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Meta tkun illoggjat bħala super admin fuq in-network tiegħek, tista' faċilment iżżid u timmaniġġja ismijiet ta' domains personalizzati billi tmur taħt **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Jekk tikklikkja fuq l-isem tad-dominju, tkun tista' tara xi għażliet ġewwa fi
 
 **Huwa Sigur?:** Għalkemm Ultimate Multisite jiċċekkja jekk id-dominju għandux ċertifikat SSL jew le qabel ma jattivah, tista' tagħżel manwalment li ttella' d-dominju bi jew mingħajr ċertifikat SSL. Innota li jekk il-websajt m'għandhiex ċertifikat SSL u tipprova ġġiegħelha titla' b'SSL, tista' tagħtik żbalji.
 
-### Immappjar ta' isem ta' dominju personalizzat bħala utent ta' sottosit
+### Immappjar ta' isem ta' dominju personalizzat bħala utent ta' sottosit {#mapping-custom-domain-name-as-subsite-user}
 
 L-amministraturi tas-sottositi jistgħu wkoll jimmappjaw ismijiet ta' dominji personalizzati mid-dashboard tal-amministrazzjoni tas-sottosit tagħhom.
 
@@ -121,7 +121,7 @@ Imbagħad l-utent jista' jikklikkja **Pass Li Jmiss** u jipproċedi biex iżid l
 
 Ikklikkja **Żid Dominju** biex jibda l-proċess ta' verifika u ġbir tal-informazzjoni tad-DNS tad-dominju personalizzat.
 
-### Dwar is-Sinkronizzazzjoni tad-Dominji
+### Dwar is-Sinkronizzazzjoni tad-Dominji {#about-domain-syncing}
 
 Is-Sinkronizzazzjoni tad-Dominji hija proċess fejn Ultimate Multisite iżid l-isem tad-dominju personalizzat mal-kont tal-hosting tiegħek bħala dominju add-on **biex l-immappjar tad-dominju jaħdem**.
 

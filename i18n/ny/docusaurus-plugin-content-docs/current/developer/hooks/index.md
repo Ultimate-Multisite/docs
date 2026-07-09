@@ -3,11 +3,11 @@ title: Kalozera wa Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Cholozera cha Hooks
+# Cholozera cha Hooks {#hooks-reference}
 
 Zolemba zopangidwa zokha za **59 zochita** ndi **118 zosefera** mu Ultimate Multisite.
 
-## Zochita
+## Zochita {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Imayaka moto musanatumize ku redirect yotsimikizira.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Imayaka moto nthawi yomweyo cookie yotsimikizira isanakhazikitsidwe.
@@ -70,7 +70,7 @@ Zolemba zopangidwa zokha za **59 zochita** ndi **118 zosefera** mu Ultimate Mult
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Imayambitsidwa pambuyo poti chinthu chasungidwa mu database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Lolani opanga plugin kuwonjezera zochita ku ndondomeko yotsegula.
 
-## Zosefera
+## Zosefera {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Imasefa nthawi ya kutha kwa cookie yotsimikizira.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Imasefa ndondomeko ya redirect yotsimikizira.

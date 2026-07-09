@@ -3,11 +3,11 @@ title: Қобилиятҳои идоракунии плагинҳо
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Қобилиятҳои идоракунии plugin
+# Қобилиятҳои идоракунии plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 бо **7 қобилияти идоракунии plugin** меояд, ки AI assistant метавонад онҳоро ҳангоми суҳбат фаро хонад. Ин қобилиятҳо назорати барномавиро бар WordPress plugin-ҳое, ки тавассути [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) насб шудаанд, таъмин мекунанд.
 
-## Шарҳи қобилиятҳо
+## Шарҳи қобилиятҳо {#abilities-overview}
 
 | Қобилият | Slug | Тавсиф |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 бо **7 қобилияти идоракунии plugin**
 | Насби plugin | `install_plugin` | Plugin-и sandbox-шударо ба директорияи зиндаи WordPress plugin ҷойгир мекунад. |
 | Фаъолсозии plugin | `activate_plugin` | Plugin-и sandbox-шударо дар муҳити wp-env sandbox фаъол мекунад. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Насбкунандаи plugin ҳангоми ҷойгиркунӣ ё хориҷ кардани plugin-ҳо амалиёти низоми файлҳоро иҷро мекунад. Рафторҳои калидӣ:
 
@@ -28,7 +28,7 @@ Gratis AI Agent v1.5.0 бо **7 қобилияти идоракунии plugin**
 - **Навсозӣ**: Файлҳои мавҷудаи plugin-ро иваз мекунад. Пеш аз навиштан plugin-ро ғайрифаъол мекунад, то аз хатогиҳои ҳолати нопурра пешгирӣ шавад.
 - **Ҳазф аз рӯйи slug**: Директорияи plugin-ро аз рӯйи slug пайдо мекунад, дар ҳамаи сайтҳо ғайрифаъол мекунад, сипас директорияро хориҷ мекунад.
 
-### Сабти коркарди фармоишии насб
+### Сабти коркарди фармоишии насб {#registering-a-custom-install-handler}
 
 Шумо метавонед бо истифода аз амалҳои `gratis_ai_plugin_installer_before_install` ва `gratis_ai_plugin_installer_after_install` ба давраи ҳаётии насб пайваст шавед:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Феҳристи экосистема
+## Феҳристи экосистема {#ecosystem-registry}
 
 Қобилиятҳо тавассути **феҳристи экосистемаи plugin** сабт мешаванд. Феҳрист slug-ҳои қобилиятро ба class-ҳои коркарди онҳо харита мекунад ва онҳоро ба dispatcher-и абзорҳои AI agent пешниҳод менамояд.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Ҳамгироии HookScanner
+## Ҳамгироии HookScanner {#hookscanner-integration}
 
 Қобилиятҳои `create_plugin` ва `update_plugin` ба таври худкор **HookScanner**-ро нисбат ба коди нав тавлидшуда иҷро мекунанд. HookScanner рӯйхати hook-ҳои action ва filter-и WordPress-ро, ки аз ҷониби plugin сабт шудаанд, бармегардонад.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner директорияҳои `vendor/` ва `node_modules/`-ро ба таври худкор нодида мегирад.
 
-## Меъмории job-ҳои async
+## Меъмории job-ҳои async {#async-job-architecture}
 
 Амалиёти дарозмуддати plugin (тавлид, насб) ҳамчун **job-ҳои async** бо пайгирии зиндаи пешрафт фиристода мешаванд. Интерфейси чати AI барои пешрафт polling мекунад ва навсозиҳои ҳолатро ба корбар ҷараён медиҳад:
 

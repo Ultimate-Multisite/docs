@@ -3,7 +3,7 @@ title: Krijues i faqes administrator
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Kreator Faqes Administrues
+# Kreator Faqes Administrues {#admin-page-creator}
 
 Kjo veçori i ofrohet nga addon-i **Admin Page Creator**.
 

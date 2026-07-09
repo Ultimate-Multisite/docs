@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Addons Ultimate Multisite
+# Addons Ultimate Multisite {#ultimate-multisite-addons}
 
 Les addons étendent Ultimate Multisite avec des fonctionnalités et des intégrations supplémentaires. La plupart des addons sont payants et peuvent être achetés sur [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Installation
+## Installation {#installation}
 
 Les addons peuvent être installés de deux façons :
 
 1. **Via la page Addon** -- Accédez à la page de gestion des addons de votre site dans l’administration WordPress
 2. **Téléchargement manuel** -- Téléchargez depuis [votre Account](https://ultimatemultisite.com/my-account/downloads/) et téléversez via Plugins > Ajouter
 
-## Addons disponibles
+## Addons disponibles {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

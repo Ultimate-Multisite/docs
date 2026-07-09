@@ -6,11 +6,11 @@ title: >-
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Action: wu_dashboard_widgets
+# Action: wu_dashboard_widgets {#action-wudashboardwidgets}
 
 Ermöglicht Plugin-Entwicklern, Widgets zum Network Dashboard Panel hinzuzufügen.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,10 +18,10 @@ Ermöglicht Plugin-Entwicklern, Widgets zum Network Dashboard Panel hinzuzufüge
 | $screen | `\WP_Screen` | Das Screen-Objekt. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ultimate Multisite Admin-Seiteninstanz. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 Definiert in [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L225) bei Zeile 225

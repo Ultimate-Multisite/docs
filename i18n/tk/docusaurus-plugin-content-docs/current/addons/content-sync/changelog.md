@@ -3,9 +3,9 @@ title: Mazmun sinhronlaşdyrmasynyň üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Mazmun Sync üýtgeşmeler ýazgysy
+# Mazmun Sync üýtgeşmeler ýazgysy {#content-sync-changelog}
 
-### Wersiýa 1.1.0 - 2025-12-31 senesinde çykaryldy
+### Wersiýa 1.1.0 - 2025-12-31 senesinde çykaryldy {#version-110---released-on-2025-12-31}
 * Täze: Ähli ýazgy görnüşlerini sinhronlamak üçin goldaw (ýazgylar, sahypalar, ýörite ýazgy görnüşleri)
 * Täze: Mazmun saýlama ädiminde ýazgy görnüşi boýunça süzgüç
 * Täze: Çeşme sahypany saýlama ädimi - diňe esasy sahypadan däl, islendik sahypadan sinhronlaň
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Üýtgedildi: "Select Templates" ädiminiň ady "Select Data" diýlip üýtgedildi
 * Gowulandyryldy: Elementor-a mahsus kod indi diňe elementor_library ýazgy görnüşi üçin işleýär
 
-### Wersiýa 1.0.0 - 2025-12-19 senesinde çykaryldy
+### Wersiýa 1.0.0 - 2025-12-19 senesinde çykaryldy {#version-100---released-on-2025-12-19}
 * Ilkinji çykarylyş
 * Şablon we sahypa saýlamak üçin köp ädimli jadygöý
 * Hakyky wagt ösüş jogaby bilen paketleýin işlemek

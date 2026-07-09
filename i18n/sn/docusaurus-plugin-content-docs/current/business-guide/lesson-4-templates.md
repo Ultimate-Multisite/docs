@@ -3,15 +3,15 @@ title: 'Chidzidzo 4: Kuvaka Matemplate eNiche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Chidzidzo 4: Kuvaka Matemplate eNiche
+# Chidzidzo 4: Kuvaka Matemplate eNiche {#lesson-4-building-niche-templates}
 
 Matemplate ndiwo musimboti wechivimbiso chekukosha kwe niche yako. Muridzi wefitness studio anosaina obva aona saiti yatotarisika sewebsite yefitness -- ine mashejuro emakirasi, maprofile evadzidzisi, nemifananidzo yakakodzera -- ane mukana mukuru wekugara kupfuura anoona peji risina chinhu.
 
-## Patakapedzisira
+## Patakapedzisira {#where-we-left-off}
 
 Tine network yeFitSite iri kushanda ine Ultimate Multisite yakaiswa uye yakagadziriswa. Zvino tinovaka matemplate anoita kuti FitSite inzweke seyakagadzirirwa mabhizinesi efinessi.
 
-## Nei Matemplate eNiche Achikosha
+## Nei Matemplate eNiche Achikosha {#why-niche-templates-matter}
 
 Matemplate akajairika anomanikidza vatengi vako kuita basa rakaoma: kutsvaga kuti mapeji api avanoda, chimiro chemukati chinoshanda sei, uye kuti vangaita sei kuti zvitaridzike zvakanaka kuindasitiri yavo. Matemplate eNiche anobvisa kukakavadzana ikoko.
 
@@ -24,11 +24,11 @@ Muridzi wefitness studio anosaina kuFitSite anofanira kuona:
 
 Vanozadza ruzivo rwavo. Havatangi kubva pakutanga.
 
-## Kuronga Matemplate Ako
+## Kuronga Matemplate Ako {#planning-your-templates}
 
 Usati wavaka, sarudza matemplate aunoda kupa. KuFitSite, tichagadzira matatu:
 
-### Template 1: Studio Essential
+### Template 1: Studio Essential {#template-1-studio-essential}
 
 Yemastudio madiki nevarairidzi vega.
 
@@ -39,7 +39,7 @@ Yemastudio madiki nevarairidzi vega.
 - Peji re**Contact** rine mepu yenzvimbo nefomu
 - **Dhizaini yakachena, yemazuva ano** ine hurongwa hwemavara akakodzera fitness
 
-### Template 2: Gym Pro
+### Template 2: Gym Pro {#template-2-gym-pro}
 
 Yemagym akasimbiswa ane masevhisi mazhinji.
 
@@ -50,7 +50,7 @@ Yemagym akasimbiswa ane masevhisi mazhinji.
 - Chikamu che**Testimonials** papeji rekutanga
 - Sarudzo dze**branding dzinonyanya kuoneka**
 
-### Template 3: Fitness Chain
+### Template 3: Fitness Chain {#template-3-fitness-chain}
 
 Yemabasa ane nzvimbo dzakawanda.
 
@@ -60,17 +60,17 @@ Yemabasa ane nzvimbo dzakawanda.
 - **Branding yepakati** ine ruzivo rwakasiyana rwenzvimbo
 - **Dhairekitori revashandi** munzvimbo dzese
 
-## Kuvaka Saiti yeTemplate
+## Kuvaka Saiti yeTemplate {#building-a-template-site}
 
 MuUltimate Multisite, template ingori WordPress site yakagadziriswa nenzira yaunoda kuti masaiti matsva evatengi ataridzike. Heino nzira yekugadzira imwe:
 
-### Danho 1: Gadzira Saiti yeTemplate
+### Danho 1: Gadzira Saiti yeTemplate {#step-1-create-the-template-site}
 
 1. Enda ku **Sites > Add New** muadmin wenetwork yako
 2. Gadzira saiti inonzi `template-studio-essential`
 3. Saiti iyi inova canvas yako yekushandira
 
-### Danho 2: Isa uye Gadzirisa Theme
+### Danho 2: Isa uye Gadzirisa Theme {#step-2-install-and-configure-the-theme}
 
 Chinjira kudashboard yesaiti ye template uye:
 
@@ -82,7 +82,7 @@ Chinjira kudashboard yesaiti ye template uye:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Danho 3: Gadzira Mapeji
+### Danho 3: Gadzira Mapeji {#step-3-create-the-pages}
 
 Vaka peji rimwe nerimwe ne:
 
@@ -92,7 +92,7 @@ Vaka peji rimwe nerimwe ne:
 
 Ita kuti zvemukati zvekutsiva zvive zvinodzidzisa pazvinobvira. Panzvimbo pemashoko ekuzadza akajairika, nyora zvemukati zvakadai se: "Tsiva izvi netsananguro pfupi yestudio yako uye chinoita kuti ive yakasiyana. Taura filosofi yako yekudzidzisa, makore eruzivo, kana zvinotarisirwa nevatengi."
 
-### Danho 4: Gadzirisa Plugins
+### Danho 4: Gadzirisa Plugins {#step-4-configure-plugins}
 
 Isa uye activate plugins dzinodiwa nefitness studios:
 
@@ -100,7 +100,7 @@ Isa uye activate plugins dzinodiwa nefitness studios:
 - Plugin yefomu rekubata
 - Plugin yeSEO (yakafanogadziriswa nemadefault anoenderana nefinessi)
 
-### Danho 5: Maka seTemplate
+### Danho 5: Maka seTemplate {#step-5-mark-as-template}
 
 1. Enda ku **Ultimate Multisite > Sites**
 2. Rongedza saiti ye template
@@ -108,7 +108,7 @@ Isa uye activate plugins dzinodiwa nefitness studios:
 
 Dzokorora maitiro aya patemplate imwe neimwe yaunoda kupa.
 
-## Checklist yeHunhu hweTemplate
+## Checklist yeHunhu hweTemplate {#template-quality-checklist}
 
 Usati waita kuti template iwanikwe, simbisa kuti:
 
@@ -121,7 +121,7 @@ Usati waita kuti template iwanikwe, simbisa kuti:
 - [ ] Hapana malink akatyoka kana zvinhu zvisipo
 - [ ] Kumhanya kwekurodha peji kunogamuchirika
 
-## Network yeFitSite Kusvika Parizvino
+## Network yeFitSite Kusvika Parizvino {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Zvatakavaka Muchidzidzo Ichi
+## Zvatakavaka Muchidzidzo Ichi {#what-we-built-this-lesson}
 
 - **Matemplate matatu akanangana ne niche** akagadzirirwa saizi dzakasiyana dzemabhizinesi efinessi
 - **Zvemukati nemifananidzo yakakodzera fitness** zvinoita kuti platform inzweke seyakagadzirirwa chinangwa

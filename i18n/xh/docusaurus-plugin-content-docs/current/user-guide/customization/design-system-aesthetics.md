@@ -3,11 +3,11 @@ title: Isakhono Sobuhle Benkqubo Yoyilo
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Ubuchule beNkangeleko yeNkqubo yoYilo
+# Ubuchule beNkangeleko yeNkqubo yoYilo {#design-system-aesthetics-skill}
 
 **Ubuchule beNkangeleko yeNkqubo yoYilo** yindlela ekhokelwayo yokucokisa isazisi esibonakalayo sesayithi yakho. Ikunceda wenze izigqibo ezingaguquguqukiyo malunga ne-typography, umbala, izithuba, kunye nee-token zentshukumo ezichaza inkqubo yakho yoyilo.
 
-## Yintoni iNkangeleko yeNkqubo yoYilo?
+## Yintoni iNkangeleko yeNkqubo yoYilo? {#what-is-design-system-aesthetics}
 
 INkangeleko yeNkqubo yoYilo bubuchule obucwangcisiweyo obugubungela:
 
@@ -20,9 +20,9 @@ INkangeleko yeNkqubo yoYilo bubuchule obucwangcisiweyo obugubungela:
 
 Ezi zigqibo zigcinwa kwifayile ye-`theme.json` yethim yakho, zidala inkqubo ebonakalayo edibeneyo.
 
-## Kutheni Usebenzisa iNkangeleko yeNkqubo yoYilo?
+## Kutheni Usebenzisa iNkangeleko yeNkqubo yoYilo? {#why-use-design-system-aesthetics}
 
-### Ukungaguquguquki
+### Ukungaguquguquki {#consistency}
 
 Inkqubo yoyilo iqinisekisa ukuba:
 
@@ -31,7 +31,7 @@ Inkqubo yoyilo iqinisekisa ukuba:
 - Izithuba zilandelela ipatheni eqikelelwayo
 - Ii-animation zivakala zimanyene
 
-### Ukusebenza kakuhle
+### Ukusebenza kakuhle {#efficiency}
 
 Endaweni yokwenza izigqibo zoyilo iphepha nephepha, wena:
 
@@ -39,7 +39,7 @@ Endaweni yokwenza izigqibo zoyilo iphepha nephepha, wena:
 - Uzisebenzise kuyo yonke indawo
 - Uhlaziya jikelele ngokutshintsha ixabiso elinye
 
-### Ukuguquguquka
+### Ukuguquguquka {#flexibility}
 
 Unako:
 
@@ -47,9 +47,9 @@ Unako:
 - Ukuzama iinkangeleko ezahlukeneyo
 - Ukugcina ukungaguquguquki kophawu ngelixa uqhubeka uphuhlisa
 
-## Ukuqalisa Ubuchule beNkangeleko yeNkqubo yoYilo
+## Ukuqalisa Ubuchule beNkangeleko yeNkqubo yoYilo {#triggering-the-design-system-aesthetics-skill}
 
-### Ukuqalisa ngesandla
+### Ukuqalisa ngesandla {#manual-activation}
 
 Ungaqalisa ubuchule nangaliphi na ixesha:
 
@@ -69,7 +69,7 @@ okanye
 "Ndikhokele kwizigqibo zenkqubo yoyilo"
 ```
 
-### Iingcebiso ezizenzekelayo
+### Iingcebiso ezizenzekelayo {#automatic-suggestions}
 
 Ii-arhente zinokucebisa ukusebenzisa ubuchule xa:
 
@@ -78,9 +78,9 @@ Ii-arhente zinokucebisa ukusebenzisa ubuchule xa:
 - Ufuna ukuphucula ukungaguquguquki okubonakalayo
 - Ulungiselela ukuphehlelela isayithi yakho
 
-## Inkqubo yeNkangeleko yeNkqubo yoYilo
+## Inkqubo yeNkangeleko yeNkqubo yoYilo {#the-design-system-aesthetics-process}
 
-### Inyathelo 1: Typography
+### Inyathelo 1: Typography {#step-1-typography}
 
 Iarhente ibuza malunga nokhetho lwakho lweefonti:
 
@@ -110,7 +110,7 @@ Emva koko iarhente ichaza:
 - **Isikali sobunzima**: Ubunzima beefonti (regular, medium, bold, njl.)
 - **Ubude bomgca**: Isithuba phakathi kwemigca ukuze kufundeke kakuhle
 
-### Inyathelo 2: Ipalethi Yemibala
+### Inyathelo 2: Ipalethi Yemibala {#step-2-color-palette}
 
 ```
 Masichaze ipalethi yakho yemibala.
@@ -140,7 +140,7 @@ Iarhente idala ipalethi epheleleyo equka:
 - Imibala enentsingiselo (impumelelo, isilumkiso, impazamo)
 - Iimeko ze-hover kunye ne-active
 
-### Inyathelo 3: Izithuba
+### Inyathelo 3: Izithuba {#step-3-spacing}
 
 ```
 Ufuna indawo yokuphefumla engakanani?
@@ -162,7 +162,7 @@ Iarhente ichaza ii-token zezithuba:
 - Isikali: xs, sm, md, lg, xl, 2xl
 - Amaxabiso athile e-padding, margin, gap
 
-### Inyathelo 4: Imida Nezithunzi
+### Inyathelo 4: Imida Nezithunzi {#step-4-borders-and-shadows}
 
 ```
 Ubunzulu obubonakalayo nenkcazo:
@@ -185,7 +185,7 @@ Iarhente idala:
 - Ii-token zezithunzi zamanqanaba okuphakama
 - Ii-token zobubanzi bomda
 
-### Inyathelo 5: Intshukumo ne-Animation
+### Inyathelo 5: Intshukumo ne-Animation {#step-5-motion-and-animation}
 
 ```
 Isayithi yakho kufuneka ivakale njani xa isebenzisana?
@@ -207,9 +207,9 @@ Iarhente ichaza:
 - Imisebenzi ye-easing (ease-in, ease-out, ease-in-out)
 - Ii-keyframe ze-animation zonxibelelwano oluqhelekileyo
 
-## Ukusebenzisa iNkangeleko yeNkqubo yoYilo
+## Ukusebenzisa iNkangeleko yeNkqubo yoYilo {#applying-design-system-aesthetics}
 
-### Ukusetyenziswa Okuzenzekelayo
+### Ukusetyenziswa Okuzenzekelayo {#automatic-application}
 
 Emva kokuba ugqibe ubuchule, iarhente:
 
@@ -218,7 +218,7 @@ Emva kokuba ugqibe ubuchule, iarhente:
 3. Iphinda ivelise izitayile zeebhloko ukuze zihambelane nenkqubo entsha
 4. Iqalisa ithim ehlaziyiweyo
 
-### Ukusetyenziswa Ngesandla
+### Ukusetyenziswa Ngesandla {#manual-application}
 
 Unokuhlela i-`theme.json` ngqo:
 
@@ -257,9 +257,9 @@ Unokuhlela i-`theme.json` ngqo:
 }
 ```
 
-## Ukujonga iNkqubo Yakho yoYilo
+## Ukujonga iNkqubo Yakho yoYilo {#viewing-your-design-system}
 
-### Buza Iarhente
+### Buza Iarhente {#ask-the-agent}
 
 ```
 "Ndibonise inkqubo yam yoyilo"
@@ -273,13 +273,13 @@ okanye
 
 Iarhente iya kubonisa i-typography, imibala, izithuba, kunye nezinye ii-token zakho.
 
-### Jonga theme.json
+### Jonga theme.json {#view-themejson}
 
 Vula `/wp-content/themes/[theme-name]/theme.json` kumhleli wombhalo ukuze ubone iinkcazelo ze-token ezingahluziweyo.
 
-## Ukuhlaziya Inkqubo Yakho Yoyilo
+## Ukuhlaziya Inkqubo Yakho Yoyilo {#updating-your-design-system}
 
-### Uhlaziyo Olukhawulezayo
+### Uhlaziyo Olukhawulezayo {#quick-updates}
 
 Cela i-agent utshintsho oluthile:
 
@@ -299,7 +299,7 @@ okanye
 "Tshintsha ifonti yesihloko ibe yi-serif"
 ```
 
-### Uyilo Ngokutsha Olupheleleyo
+### Uyilo Ngokutsha Olupheleleyo {#full-redesign}
 
 Phinda usebenzise isakhono seNkqubo Yoyilo Aesthetics:
 
@@ -309,7 +309,7 @@ Phinda usebenzise isakhono seNkqubo Yoyilo Aesthetics:
 
 Oku kuya kukukhokela kuzo zonke izigqibo kwakhona, kuqala ngamaxabiso akho akhoyo ngoku.
 
-### Uhlaziyo Oluyinxalenye
+### Uhlaziyo Oluyinxalenye {#partial-updates}
 
 Hlaziya imiba ethile:
 
@@ -317,15 +317,15 @@ Hlaziya imiba ethile:
 "Hlaziya kuphela iphalethi yemibala, ugcine yonke enye into"
 ```
 
-## Ezona Ndlela Zilungileyo Zenkqubo Yoyilo
+## Ezona Ndlela Zilungileyo Zenkqubo Yoyilo {#design-system-best-practices}
 
-### Ukungaguquguquki
+### Ukungaguquguquki {#consistency-1}
 
 - Sebenzisa ii-token ezifanayo kuyo yonke indawo
 - Musa ukudala imibala okanye ubungakanani obusetyenziswa kube kanye kuphela
 - Bhekisa kwii-token endaweni yokufaka amaxabiso ngqo
 
-### Ukuthiya Amagama
+### Ukuthiya Amagama {#naming}
 
 Sebenzisa amagama acacileyo, anentsingiselo:
 
@@ -335,7 +335,7 @@ Sebenzisa amagama acacileyo, anentsingiselo:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Ukukhula
+### Ukukhula {#scalability}
 
 Yila inkqubo yakho ukuze ikwazi ukukhula:
 
@@ -343,7 +343,7 @@ Yila inkqubo yakho ukuze ikwazi ukukhula:
 - Dala izikali (xs, sm, md, lg, xl) endaweni yamaxabiso angaqhelekanga
 - Cwangcisela izongezo zexesha elizayo
 
-### Amaxwebhu
+### Amaxwebhu {#documentation}
 
 Bhala amaxwebhu enkqubo yakho yoyilo:
 
@@ -351,9 +351,9 @@ Bhala amaxwebhu enkqubo yakho yoyilo:
 - Nini kusetyenziswa i-token nganye
 - Iimeko ezingaphandle kunye neemeko ezisecaleni
 
-## Iipateni Eziqhelekileyo Zenkqubo Yoyilo
+## Iipateni Eziqhelekileyo Zenkqubo Yoyilo {#common-design-system-patterns}
 
-### Eyale Mihla neNciphileyo
+### Eyale Mihla neNciphileyo {#modern-minimalist}
 
 - Uhlobo lwamagama lwe-sans-serif (Inter, Helvetica)
 - Iphalethi yemibala elinganiselweyo (imibala emi-2-3)
@@ -361,7 +361,7 @@ Bhala amaxwebhu enkqubo yakho yoyilo:
 - Izithunzi ezithambileyo
 - Ii-animation ezishelelayo nezikhawulezayo
 
-### Efudumeleyo Nenobuhlobo
+### Efudumeleyo Nenobuhlobo {#warm-and-friendly}
 
 - Umxube we-serif ne-sans-serif
 - Iphalethi yemibala efudumeleyo (oorenji, iingwevu ezifudumeleyo)
@@ -369,7 +369,7 @@ Bhala amaxwebhu enkqubo yakho yoyilo:
 - Izithunzi ezithambileyo
 - Ii-animation ezidlalayo
 
-### EyoShishino Lobungcali
+### EyoShishino Lobungcali {#professional-corporate}
 
 - I-sans-serif ecocekileyo (Roboto, Open Sans)
 - Iphalethi engathathi cala enombala we-accent
@@ -377,7 +377,7 @@ Bhala amaxwebhu enkqubo yakho yoyilo:
 - Izithunzi ezincinci
 - Utshintsho oluthambileyo
 
-### Eyobuchule Kwaye Inesibindi
+### Eyobuchule Kwaye Inesibindi {#creative-and-bold}
 
 - Uhlobo lwamagama olwahlukileyo
 - Iphalethi yemibala enesibindi
@@ -385,7 +385,7 @@ Bhala amaxwebhu enkqubo yakho yoyilo:
 - Izithunzi ezinamandla
 - Ii-animation ezibonakalayo
 
-## Ukulungisa Iingxaki
+## Ukulungisa Iingxaki {#troubleshooting}
 
 **Utshintsho kwinkqubo yam yoyilo alubonakali**
 - Coca i-cache yesikhangeli sakho
@@ -403,7 +403,7 @@ Bhala amaxwebhu enkqubo yakho yoyilo:
 - Hlela ngesandla theme.json ubuyele kumaxabiso angaphambili
 - Phinda usebenzise isakhono ngokhetho olwahlukileyo
 
-## Amanyathelo Alandelayo
+## Amanyathelo Alandelayo {#next-steps}
 
 Emva kokuchaza inkqubo yakho yoyilo:
 

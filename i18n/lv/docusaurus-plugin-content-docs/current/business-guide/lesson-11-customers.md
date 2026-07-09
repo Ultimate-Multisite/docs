@@ -3,15 +3,15 @@ title: 'Nodarbība 11: Klientu atrašana'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# 11. nodarbība: Klientu atrašana
+# 11. nodarbība: Klientu atrašana {#lesson-11-finding-customers}
 
 Lieliska platforma bez klientiem ir tikai hobijs. Šī nodarbība apskata, kā piesaistīt klientus nišas vertikālē — stratēģijas, kas darbojas tieši tāpēc, ka koncentrējaties uz vienu nozari.
 
-## Kur mēs palikām
+## Kur mēs palikām {#where-we-left-off}
 
 FitSite ir palaists. Tagad mums vajag, lai fitnesa studiju īpašnieki to atrod un reģistrējas.
 
-## Kāpēc nišas piesaiste ir atšķirīga
+## Kāpēc nišas piesaiste ir atšķirīga {#why-niche-acquisition-is-different}
 
 Kad pārdodat visiem, jūs konkurējat par uzmanību trokšņainā tirgū. Kad pārdodat nišai, jums ir priekšrocības:
 
@@ -19,17 +19,17 @@ Kad pārdodat visiem, jūs konkurējat par uzmanību trokšņainā tirgū. Kad p
 - **Jūsu vēstījums uzreiz rezonē** -- “tīmekļa vietnes fitnesa studijām” aptur sporta zāles īpašnieku ritināšanas vidū
 - **Ieteikumi uzkrājas** -- fitnesa studiju īpašnieki pazīst citus fitnesa studiju īpašniekus
 
-## 1. kanāls: Tieša uzrunāšana
+## 1. kanāls: Tieša uzrunāšana {#channel-1-direct-outreach}
 
 Ātrākais ceļš līdz pirmajiem klientiem ir tieša, personiska uzrunāšana.
 
-### Atrodiet potenciālos klientus
+### Atrodiet potenciālos klientus {#find-prospects}
 
 - Meklējiet Google Maps fitnesa studijas, sporta zāles un personīgos trenerus savā apkaimē
 - Apmeklējiet viņu pašreizējās tīmekļa vietnes (vai atzīmējiet, ka viņiem tādas nav)
 - Apkopojiet kontaktinformāciju no viņu Google Business profiliem vai sociālajiem tīkliem
 
-### Novērtējiet viņu pašreizējo situāciju
+### Novērtējiet viņu pašreizējo situāciju {#evaluate-their-current-situation}
 
 Katram potenciālajam klientam atzīmējiet:
 
@@ -37,7 +37,7 @@ Katram potenciālajam klientam atzīmējiet:
 - **Slikta tīmekļa vietne**: Spēcīgs potenciālais klients -- parādiet viņiem, kā izskatās labāka iespēja
 - **Laba tīmekļa vietne**: Vājš potenciālais klients -- viņi jau ir atrisinājuši šo problēmu
 
-### Sazinieties
+### Sazinieties {#make-contact}
 
 Nosūtiet personalizētu e-pastu vai ziņu:
 
@@ -48,7 +48,7 @@ Nosūtiet personalizētu e-pastu vai ziņu:
 
 Nesūtiet masveida e-pastus. Personalizēta uzrunāšana 20 labi izpētītiem potenciālajiem klientiem pārspēs vispārīgu izsūtni 2 000 adresātiem.
 
-## 2. kanāls: Nišas kopienas
+## 2. kanāls: Nišas kopienas {#channel-2-niche-communities}
 
 Fitnesa studiju īpašnieki pulcējas konkrētās vietās tiešsaistē:
 
@@ -57,7 +57,7 @@ Fitnesa studiju īpašnieki pulcējas konkrētās vietās tiešsaistē:
 - **Nozares forumi** un diskusiju platformas
 - **LinkedIn grupas** fitnesa profesionāļiem
 
-### Kā piedalīties
+### Kā piedalīties {#how-to-participate}
 
 Nepievienojieties un uzreiz nereklamējiet savu produktu. Tā vietā:
 
@@ -66,7 +66,7 @@ Nepievienojieties un uzreiz nereklamējiet savu produktu. Tā vietā:
 3. **Dalieties, kad tas ir atbilstoši** -- kad kāds jautā par tīmekļa vietnēm, dabiski pastāstiet par savu platformu
 4. **Radiet noderīgu saturu** -- rakstiet ierakstus par to, “kas veido lielisku fitnesa studijas tīmekļa vietni”, kas dabiski ved uz jūsu platformu
 
-## 3. kanāls: Satura mārketings
+## 3. kanāls: Satura mārketings {#channel-3-content-marketing}
 
 Radiet saturu, ko meklē fitnesa studiju īpašnieki:
 
@@ -77,7 +77,7 @@ Radiet saturu, ko meklē fitnesa studiju īpašnieki:
 
 Publicējiet to savā FitSite mārketinga blogā. Laika gaitā šis saturs ierindojas meklētājprogrammās un piesaista organisko datplūsmu no cilvēkiem, kuri aktīvi meklē to, ko piedāvājat.
 
-## 4. kanāls: Partnerības
+## 4. kanāls: Partnerības {#channel-4-partnerships}
 
 Sadarbojieties ar uzņēmumiem, kas jau apkalpo fitnesa studijas:
 
@@ -88,7 +88,7 @@ Sadarbojieties ar uzņēmumiem, kas jau apkalpo fitnesa studijas:
 
 Piedāvājiet ieteikumu komisijas vai savstarpēju popularizēšanu. [AffiliateWP addon](/addons/affiliatewp) var palīdzēt izveidot formālu ieteikumu programmu.
 
-## 5. kanāls: Nozares pasākumi
+## 5. kanāls: Nozares pasākumi {#channel-5-industry-events}
 
 Fitnesa nozares pasākumi nostāda jūs simtiem potenciālo klientu priekšā:
 
@@ -99,7 +99,7 @@ Fitnesa nozares pasākumi nostāda jūs simtiem potenciālo klientu priekšā:
 
 Jums nav vajadzīgs liels budžets. Pat piedalīšanās kā dalībniekam un sarunas par to, ko darāt, var radīt potenciālos klientus.
 
-## 6. kanāls: Parauga vietnes
+## 6. kanāls: Parauga vietnes {#channel-6-showcase-sites}
 
 Jūsu labākais mārketings ir jūsu esošo klientu vietnes. Ar atļauju:
 
@@ -108,7 +108,7 @@ Jūsu labākais mārketings ir jūsu esošo klientu vietnes. Ar atļauju:
 - Lūdziet apmierinātiem klientiem atsauksmes
 - Mudiniet klientus pieminēt FitSite, kad viņiem jautā par viņu tīmekļa vietni
 
-## Ieteikumu programmas izveide
+## Ieteikumu programmas izveide {#setting-up-a-referral-program}
 
 Mutvārdu ieteikumi ir jūsu spēcīgākais kanāls nišā. Formalizējiet to:
 
@@ -116,7 +116,7 @@ Mutvārdu ieteikumi ir jūsu spēcīgākais kanāls nišā. Formalizējiet to:
 2. Piedāvājiet esošajiem klientiem atlīdzību par ieteikumiem (viens mēnesis bez maksas, Account kredīts utt.)
 3. Padariet to vienkāršu -- dodiet viņiem ieteikuma saiti un vienkāršu ziņu, ko viņi var pārsūtīt
 
-## Kas darbojas — izsekošana
+## Kas darbojas — izsekošana {#tracking-what-works}
 
 Katram kanālam izsekojiet:
 
@@ -126,7 +126,7 @@ Katram kanālam izsekojiet:
 
 Pastipriniet kanālus, kas darbojas. Pārtrauciet kanālus, kas nedarbojas.
 
-## Reālistiskas gaidas
+## Reālistiskas gaidas {#realistic-expectations}
 
 - **1.–3. mēnesis**: 5–20 klienti, galvenokārt no tiešas uzrunāšanas un kopienām
 - **4.–6. mēnesis**: 20–50 klienti, satura mārketings sāk dot ieguldījumu
@@ -134,7 +134,7 @@ Pastipriniet kanālus, kas darbojas. Pārtrauciet kanālus, kas nedarbojas.
 
 Šie skaitļi atšķiras, bet modelis ir konsekvents: agrīnie klienti nāk no tiešas piepūles, vēlākie klienti nāk no satura, ieteikumu un reputācijas kumulatīvās ietekmes.
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Seši klientu piesaistes kanāli**, kas pielāgoti fitnesa nišai
 - **Tiešās uzrunāšanas process** pirmo klientu iegūšanai

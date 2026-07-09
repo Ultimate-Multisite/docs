@@ -3,19 +3,19 @@ title: '2-nji sapak: Öz ugruňy saýlamak'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Sapak 2: Öz nişaňy saýlamak
+# Sapak 2: Öz nişaňy saýlamak {#lesson-2-picking-your-niche}
 
 1-nji sapakda nişaň umumy çözgütden näme üçin üstün gelýändigini kesgitledik. Indi özüňkini saýlamaly. Bu sapak, onuň üçin gurmaga wagt sarp etmezden öň nişany tapmak we tassyklamak üçin size çarçuwa berýär.
 
-## Nirä gelipdik
+## Nirä gelipdik {#where-we-left-off}
 
 Biz FitSite düşünjesini kesgitledik: fitnes studiýalary üçin web-saýt platformasy. Ýöne nädip hut fitnes studiýalaryna geldik? Bu sapak şol prosesi düşündirýär, şonuň üçin ony öz nişaňyzy tapmakda ulanyp bilersiňiz.
 
-## Üç kriteriýa
+## Üç kriteriýa {#the-three-criteria}
 
 Web-saýt platformasy üçin gowy nişa üç şerti ýerine ýetirýär:
 
-### 1. Olara web-saýt gerek, ýöne gowusyny almakda kynçylyk çekýärler
+### 1. Olara web-saýt gerek, ýöne gowusyny almakda kynçylyk çekýärler {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Şu pudaklary gözläň:
 
@@ -26,7 +26,7 @@ Web-saýt platformasy üçin gowy nişa üç şerti ýerine ýetirýär:
 
 **Fitnes studiýalary laýyk gelýär**: agzalar sapak tertibini, bahalary we onlaýn bronlamagy tapmaga garaşýarlar. Studiýa web-saýtlarynyň köpüsi könelen ýa-da maksada hyzmat etmeýän umumy şablonlarda gurlan.
 
-### 2. Kärhanalar aýlyk abuna töläp bilýär
+### 2. Kärhanalar aýlyk abuna töläp bilýär {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Siziň maksatlaýyn müşderileriňiz şeýle bolmaly:
 
@@ -36,7 +36,7 @@ Siziň maksatlaýyn müşderileriňiz şeýle bolmaly:
 
 **Fitnes studiýalary laýyk gelýär**: olar eýýäm bronlama programma üpjünçiligi, töleg işlemek we marketing gurallary üçin töleýärler. Web-saýt abunasy tebigy goşundy bolýar.
 
-### 3. Olar biri-biri bilen gürleşýärler
+### 3. Olar biri-biri bilen gürleşýärler {#3-they-talk-to-each-other}
 
 Iň gowy nişalarda şular bolýar:
 
@@ -46,9 +46,9 @@ Iň gowy nişalarda şular bolýar:
 
 **Fitnes studiýalary laýyk gelýär**: studiýa eýeleri fitnes pudagy çärelerine gatnaşýarlar, onlaýn jemgyýetlere goşulýarlar we gurallary hem hyzmatlary kärdeşleri bilen ýygy-ýygydan paýlaşýarlar.
 
-## Nişa kandidatlaryny nädip tapmaly
+## Nişa kandidatlaryny nädip tapmaly {#how-to-find-niche-candidates}
 
-### Bilýän zatlaryňyzdan başlaň
+### Bilýän zatlaryňyzdan başlaň {#start-with-what-you-know}
 
 Bar bolan tejribäňiz artykmaçlykdyr. Şulary göz öňünde tutuň:
 
@@ -56,7 +56,7 @@ Bar bolan tejribäňiz artykmaçlykdyr. Şulary göz öňünde tutuň:
 - Jemgyýetiňi düşünýän hobbi ýa-da gyzyklanmalaryňyz
 - Eýýäm degişli bolan hünär torlaryňyz
 
-### Agyry alamatlaryny gözläň
+### Agyry alamatlaryny gözläň {#look-for-pain-signals}
 
 Bir nişadaky kärhanalaryň web-saýtlar bilen kynçylyk çekýändigine delil gözläň:
 
@@ -65,7 +65,7 @@ Bir nişadaky kärhanalaryň web-saýtlar bilen kynçylyk çekýändigine delil 
 - Nişadaky hakyky web-saýtlara serediň -- olaryň köpüsi pesmi?
 - Bäsdeşleriň bardygyny we bazara nähili gowy hyzmat edýändigini barlaň
 
-### Ykdysadyýeti bahalandyryň
+### Ykdysadyýeti bahalandyryň {#evaluate-the-economics}
 
 Her kandidat nişa üçin şulary çaklaň:
 
@@ -73,11 +73,11 @@ Her kandidat nişa üçin şulary çaklaň:
 - **Tölemäge taýýarlyk**: Olar häzirki wagtda meňzeş gurallar üçin näçe sarp edýärler?
 - **Ömürlik gymmat potensialy**: Bu kärhanalar durnuklymy ýa-da tiz gidýärlermi?
 
-## Nişaňyzy tassyklamak
+## Nişaňyzy tassyklamak {#validating-your-niche}
 
 Hiç zat gurmazdan öň, islegi tassyklaň:
 
-### Potensial müşderiler bilen gürleşiň
+### Potensial müşderiler bilen gürleşiň {#talk-to-potential-customers}
 
 Maksatlaýyn nişaňyzdaky 10-15 kärhana eýesine ýüz tutuň. Soraň:
 
@@ -88,17 +88,17 @@ Maksatlaýyn nişaňyzdaky 10-15 kärhana eýesine ýüz tutuň. Soraň:
 
 Siz entek satmaýarsyňyz. Siz diňleýärsiňiz.
 
-### Bäsdeşlik ýagdaýyny barlaň
+### Bäsdeşlik ýagdaýyny barlaň {#check-competitor-landscape}
 
 - **Bäsdeş ýok**: Islegiň ýokdugyny aňladyp biler ýa-da açylmadyk mümkinçilik bolup biler. Haýsydygyny müşderi bilen gürrüňdeşlikler aýdyp berer.
 - **Az sanly bäsdeş**: Gowy alamat. Islegi tassyklaýar. Olaryň nämäni gowy edýändigini we nirede ýetmezçilik edýändigini öwreniň.
 - **Köp bäsdeş**: Girmek kynrak, ýöne aýdyň tapawutlanyp bilseňiz, henizem mümkin.
 
-### Landing Page guruň
+### Landing Page guruň {#build-a-landing-page}
 
 Platformany gurmazdan öň, nişa çözgüdiňizi beýan edýän ýönekeý landing page dörediň we e-poçta ýazylmalaryny ýygnaň. Gyzyklanmany barlamak üçin az mukdarda nyşanlanan mahabat işlediň. Adamlar ýazylsa, sizde tassyklama bar.
 
-## Muny FitSite-a ulanmak
+## Muny FitSite-a ulanmak {#applying-this-to-fitsite}
 
 FitSite kriteriýalara görä şeýle baha aldy:
 
@@ -112,7 +112,7 @@ FitSite kriteriýalara görä şeýle baha aldy:
 
 Tassyklama mümkinçiligi tassyk etdi. Indi gurýarys.
 
-## Göz öňünde tutmaly nişa pikirleri
+## Göz öňünde tutmaly nişa pikirleri {#niche-ideas-to-consider}
 
 Eger fitnes siziň bazaryňyz däl bolsa, kriteriýalara laýyk gelýän başga nişalar:
 
@@ -127,7 +127,7 @@ Eger fitnes siziň bazaryňyz däl bolsa, kriteriýalara laýyk gelýän başga 
 
 Bularyň her birinde şol bir häsiýetler bar: aýdyň web-saýt zerurlyklary, tölemäge ukyp we jemgyýet içindäki sözli maslahat.
 
-## Bu sapakda näme gurduk
+## Bu sapakda näme gurduk {#what-we-built-this-lesson}
 
 - **Nişa saýlamak çarçuwasy**: islendik nişany bahalandyrmak üçin üç kriteriýa
 - **Tassyklama usullary**: müşderi gürrüňdeşlikleri, bäsdeş seljermesi, landing page synagy

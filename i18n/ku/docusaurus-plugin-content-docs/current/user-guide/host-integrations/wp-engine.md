@@ -3,17 +3,17 @@ title: Integrasiی WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integration with WP Engine
+# Integration with WP Engine {#wp-engine-integration}
 
-## گشتی (Overview)
+## گشتی (Overview) {#overview}
 WP Engine یەک پلاتفۆرمێکی هاستکردنی پرمیوم و بەڕێوەدەدرێت بۆ WordPress کە کارایی، ئاسایشی و گەشەپێدانی باشتر دەدات بۆ ئەو سایتانەی WordPress لەسەرن. ئەم یەکگرتووکارییە ڕێنوێنیی دۆمێین (domain syncing) بە شێوەیەکی خۆکار لە نێوان Ultimate Multisite و WP Engine دەدات.
 
-## تایبەتمەندییەکان (Features)
+## تایبەتمەندییەکان (Features) {#features}
 - دۆمێین سینککردنی خۆکار (Automatic domain syncing)
 - پشتگیریکردنی subdomain بۆ دامەزراوەی چەند سایتان (multisite installations)
 - یەکگرتووکاری بە شێوەیەکی ئاسایی لەگەڵ سیستەمەکانی WP Engine
 
-## پێداوی석ەکان (Requirements)
+## پێداوی석ەکان (Requirements) {#requirements}
 ئەم یەکگرتووکارییە خۆی دەدۆزێتەوە ئەگەر لەسەر WP Engine هاوکردن، و APIی ناوخۆیی WP Engine بەکاردەهێنێت. ئەگەر پلاتینی WP Engine چالاک بێت و بە شێوەیەکی دروست ڕێکخراوە، پێویستی بە هەر ڕێکخستنی زیاتری نییە.
 
 بەڵام، ئەگەر دەتەوێت خۆت بە شێوەیەکی دەستکرد ڕێکبخەیت، دەتوانیت یەکێک لەم کۆنستانتان لە فایل `wp-config.php` دا دیاری بکەیت:
@@ -24,16 +24,16 @@ define('WPE_APIKEY', 'your_api_key'); // ڕێگەی باشترە
 define('WPE_API', 'your_api_key'); // ڕێگەی جیاوازە
 ```
 
-## ڕێنماییەکانی دامەزراندن (Setup Instructions)
+## ڕێنماییەکانی دامەزراندن (Setup Instructions) {#setup-instructions}
 
-### ١. پشکنینی پلاتینی WP Engine
+### ١. پشکنینی پلاتینی WP Engine {#1-verify-wp-engine-plugin}
 
 ئەگەر لەسەر WP Engine هاوکردویت، پلاتینی WP Engine دەبێت پێشتر دامەزراوە و چالاک بێت. چۆنیەتی ئەم خوارەوەی پشکنین بکە:
 
 1. پشکنە کە پلاتینی WP Engine چالاک بێت
 2. پشکنە کە فایل `wp-content/mu-plugins/wpengine-common/class-wpeapi.php` هەیە
 
-### ٢. چالاککردنەوەی یەکگرتووکارییەکە
+### ٢. چالاککردنەوەی یەکگرتووکارییەکە {#2-enable-the-integration}
 
 1. لە ئادمن پۆستەکانی WordPress، بگە بە Ultimate Multisite > Settings
 2. بۆ تابلۆی "Domain Mapping" (پێناساندنی دۆمێین) دەربکەویت
@@ -41,9 +41,9 @@ define('WPE_API', 'your_api_key'); // ڕێگەی جیاوازە
 4. یەکگرتووکاری WP Engine چالاک بکە
 5. لەسەر دڵنیایی کردنی گۆڕانکارییەکان، بگەڕێ بۆ "Save Changes"
 
-## چۆن کار دەکات (How It Works)
+## چۆن کار دەکات (How It Works) {#how-it-works}
 
-### سینککردنی دۆمێین (Domain Syncing)
+### سینککردنی دۆمێین (Domain Syncing) {#domain-syncing}
 
 کاتێک یەک دۆمێین لە Ultimate Multisite دا پێناسراوە:
 
@@ -51,7 +51,7 @@ define('WPE_API', 'your_api_key'); // ڕێگەی جیاوازە
 2. WP Engine کارەکانی ڕێکخستنی دۆمێین و دروستکردنی گوازارەی SSL (SSL certificate issuance) ئەنجام دەدات
 3. کاتێک پێناساندنی دۆمێینەکە لە Ultimate Multisite دەدرێتەوە، یەکگرتووکارییەکە ئەو دۆمێینە لە WP Engine دەردەچێت
 
-### پشتگیریکردنی subdomain (Subdomain Support)
+### پشتگیریکردنی subdomain (Subdomain Support) {#subdomain-support}
 
 برای نصب سایت‌های چند زیردامنه (subdomain multisite):
 
@@ -59,28 +59,28 @@ define('WPE_API', 'your_api_key'); // ڕێگەی جیاوازە
 ۲. WP Engine تنظیمات زیردامنه را مدیریت می‌کند.
 ۳. وقتی یک سایت حذف می‌شود، این ادغام آن زیردامنه را از WP Engine حذف خواهد کرد.
 
-## نکات مهم
+## نکات مهم {#important-notes}
 
-### دامنه‌های وایلد (Wildcard Domains)
+### دامنه‌های وایلد (Wildcard Domains) {#wildcard-domains}
 
 برای نصب چند سایت با زیردامنه‌ها، توصیه می‌شود با پشتیبانی WP Engine تماس بگیرید تا درخواست تنظیمات دامنه وایلد بدهید. این کار باعث می‌شود همه زیردامنه‌ها به صورت خودکار کار کنند و نیازی نباشد هر کدام را به صورت جداگانه اضافه کنید.
 
-### گواهی‌های SSL (SSL Certificates)
+### گواهی‌های SSL (SSL Certificates) {#ssl-certificates}
 
 WP Engine به طور خودکار صدور و تمدید گواهی SSL را برای همه دامنه‌هایی که از طریق این ادغام اضافه می‌شوند، مدیریت می‌کند. هیچ تنظیمات اضافی نیاز نیست.
 
-## عیب‌یابی (Troubleshooting)
+## عیب‌یابی (Troubleshooting) {#troubleshooting}
 
-### مشکلات اتصال API
+### مشکلات اتصال API {#api-connection-issues}
 - مطمئن شوید که پلاگین WP Engine فعال و به درستی پیکربندی شده است.
 - اگر کلید API را دستی تعریف کرده‌اید، بررسی کنید که درست باشد.
 - اگر با مشکل در مورد API مواجه هستید، با پشتیبانی WP Engine تماس بگیرید.
 
-### دامنه اضافه نشده است
+### دامنه اضافه نشده است {#domain-not-added}
 - لاگ‌های Ultimate Multisite را برای هرگونه پیام خطا بررسی کنید.
 - تأیید کنید که دامنه قبلاً به WP Engine اضافه نشده باشد.
 - مطمئن شوید که طرح (plan) WP Engine شما از تعداد دامنه‌هایی که اضافه می‌کنید پشتیبانی می‌کند.
 
-### مشکلات زیردامنه
+### مشکلات زیردامنه {#subdomain-issues}
 - اگر زیردامنه‌ها کار نمی‌کنند، برای درخواست تنظیمات دامنه وایلد با پشتیبانی WP Engine تماس بگیرید.
 - بررسی کنید که تنظیمات DNS شما برای دامنه اصلی و زیردامنه‌ها به درستی پیکربندی شده باشند.

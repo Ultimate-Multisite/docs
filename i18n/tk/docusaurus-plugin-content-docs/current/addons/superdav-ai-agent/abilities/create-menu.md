@@ -3,15 +3,15 @@ title: Menýu döret
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menýu döretmek
+# Menýu döretmek {#create-menu}
 
 **Menýu döretmek** ukyby, sahypa atlaryndan aýry aýratyn nawigasiýa belliklerini goldamak bilen WordPress nawigasiýa menýularyny döredýär.
 
-## Umumy syn
+## Umumy syn {#overview}
 
 Bu ukyp adaty menýu döretmek funksiýasyny `navigation_label` parametrini görkezmek mümkinçiligi bilen giňeldýär. Bu, nawigasiýada görkezilýän bellik sahypa adyndan tapawutlanýan menýulary döretmäge mümkinçilik berýär we sahypa gurluşynda hem-de ulanyjy tejribesinde has köp çeýelik berýär.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Bu ukyp adaty menýu döretmek funksiýasyny `navigation_label` parametrini gör
 | `location` | string | No | Bu menýuny bellemek üçin tema ýerleşişi, mysal üçin `primary` |
 | `navigation_label` | string | No | Nawigasiýada görkeziljek bellik (sahypa adyndan tapawutly) |
 
-## Gaýtarylýan baha
+## Gaýtarylýan baha {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Bu ukyp adaty menýu döretmek funksiýasyny `navigation_label` parametrini gör
 }
 ```
 
-## Nawigasiýa belligi bilen sahypa adynyň tapawudy
+## Nawigasiýa belligi bilen sahypa adynyň tapawudy {#navigation-label-vs-page-title}
 
 `navigation_label` parametri içerki menýu adyny ulanyjylara görkezilýän bellikden aýyrmaga mümkinçilik berýär:
 
@@ -43,9 +43,9 @@ Bu aşakdaky ýagdaýlarda peýdalydyr:
 - Dürli bellik uzynlyklary bolan birnäçe dili goldamaly bolsaňyz
 - Belli sebitler ýa-da ulanyjy toparlary üçin menýular gurýan bolsaňyz
 
-## Ulanyş mysallary
+## Ulanyş mysallary {#usage-examples}
 
-### Mysal 1: Nawigasiýa belligi bolan ýönekeý menýu
+### Mysal 1: Nawigasiýa belligi bolan ýönekeý menýu {#example-1-simple-menu-with-navigation-label}
 
 **Sorag:**
 ```
@@ -62,7 +62,7 @@ Bu aşakdaky ýagdaýlarda peýdalydyr:
 }
 ```
 
-### Mysal 2: Belli tema ýerleşişi üçin menýu
+### Mysal 2: Belli tema ýerleşişi üçin menýu {#example-2-menu-for-specific-theme-location}
 
 **Sorag:**
 ```
@@ -80,7 +80,7 @@ Bu aşakdaky ýagdaýlarda peýdalydyr:
 }
 ```
 
-## Theme Builder bilen integrasiýa
+## Theme Builder bilen integrasiýa {#integration-with-theme-builder}
 
 Theme Builder ulanylanda, Menýu döretmek ukyby:
 
@@ -89,13 +89,13 @@ Theme Builder ulanylanda, Menýu döretmek ukyby:
 3. Menýulary dogry tema ýerleşişlerine belleýär
 4. Döredilenden soň menýu elementlerini goşmagy goldaýar
 
-## Baglanyşykly ukyplar
+## Baglanyşykly ukyplar {#related-abilities}
 
 - **`add_menu_item`** — Bar bolan menýua elementler goşuň
 - **`update_menu`** — Menýunyň adyny üýtgediň ýa-da ony tema ýerleşişine täzeden belläň
 - **`delete_menu`** — Sahypaňyzdan menýuny aýyryň
 
-## Iň gowy tejribeler
+## Iň gowy tejribeler {#best-practices}
 
 - **Düşnükli nawigasiýa belliklerini ulanyň** — bellikleri ulanyjylar üçin gysga we düşündiriji saklaň
 - **Tema ýerleşişlerine laýyk getiriň** — dogry görkezilmegi üçin menýulary degişli tema ýerleşişine belläň
@@ -103,14 +103,14 @@ Theme Builder ulanylanda, Menýu döretmek ukyby:
 - **Uýgunlaşyjylygy synagdan geçiriň** — menýularyň mobil enjamlarda dogry görkezilýändigini barlaň
 - **Bellikleri lokallaşdyryň** — dürli dil wersiýalary üçin dürli nawigasiýa belliklerini ulanyň
 
-## Çäklendirmeler
+## Çäklendirmeler {#limitations}
 
 - Nawigasiýa bellikleri diňe görkezmek üçindir; içerki `name` henizem WordPress kesgitlemesi üçin ulanylýar
 - Tema goldawy üýtgäp biler; ähli temalar ähli menýu ýerleşişlerini goldamaýar
 - Menýu elementleri menýu döredilenden soň aýratyn goşulmalydyr
 - Nawigasiýa belligini üýtgetmek menýuny täzelemegi talap edýär
 
-## Baglanyşykly ukyplar
+## Baglanyşykly ukyplar {#related-abilities-1}
 
 - [Logo SVG döretmek](./generate-logo-svg.md) — sahypaňyzyň header-i üçin logotipler dörediň
 - [Palitra kontrastyny barlamak](./validate-palette-contrast.md) — elýeterli reňk shemalaryny üpjün ediň

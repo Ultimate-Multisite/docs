@@ -4,11 +4,11 @@ title: Filtro - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtro: secure_logged_in_cookie
+# Filtro: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtra se o cookie de utilizador com sessão iniciada deve ser enviado apenas por HTTPS.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtra se o cookie de utilizador com sessão iniciada deve ser enviado apenas po
 | $user_id | `int` | ID do utilizador. |
 | $secure | `bool` | Se o cookie de autenticação deve ser enviado apenas por HTTPS. |
 
-### Desde
+### Desde {#since}
 
 - 3.1.0
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) na linha 91

@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI تور بېكەت قۇرغۇچىسى
+# AI تور بېكەت قۇرغۇچىسى {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## تەلەپلەر
+## تەلەپلەر {#requirements}
 
 - WordPress 5.3 ياكى ئۇنىڭدىن يۇقىرى
 - PHP 7.4 ياكى ئۇنىڭدىن يۇقىرى
 - Multisite Ultimate قىستۇرمىسى (ئاكتىپ)
 
-## ئورنىتىش
+## ئورنىتىش {#installation}
 
 1. قوشۇمچە ھۆججەتلەرنى `/wp-content/plugins/` مۇندەرىجىڭىزگە يۈكلەڭ
 2. WordPress ئىچىدىكى 'Plugins' تىزىملىكى ئارقىلىق قىستۇرمىنى ئاكتىپلاڭ
 3. تور باشقۇرغۇچتا قوشۇمچە تەڭشەكلىرىنى سەپلەڭ
 
-## تەرەققىيات
+## تەرەققىيات {#development}
 
-### تەڭشەش
+### تەڭشەش {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### تۈر قۇرۇلمىسى
+### تۈر قۇرۇلمىسى {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # كودنى زامانىۋىلاشتۇرۇش قائىدىلىرى
 ```
 
-### سىناق قىلىش
+### سىناق قىلىش {#testing}
 
 بۇ قوشۇمچە مۇكەممەل سىناق رامكىسىنى ئۆز ئىچىگە ئالىدۇ:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **سىناق قاپلىنىشى**: كود قاپلىنىشىنى ئىز قوغلاشقا سەپلەنگەن
 - **Multisite سىناق قىلىش**: سىناقلار multisite مۇھىتىدا ئىجرا قىلىنىدۇ
 
-### كود ئۆلچەملىرى
+### كود ئۆلچەملىرى {#code-standards}
 
 - **WordPress كود ئۆلچەملىرى**: PHPCS ئارقىلىق ئىجرا قىلىنىدۇ
 - **PHP 7.4+ ماسلىشىشچانلىقى**: زامانىۋى PHP ئىقتىدارلىرى قوللىنىدۇ
 - **تۇراقلىق تەھلىل**: تىپ تەكشۈرۈش ئۈچۈن PHPStan بىرلەشتۈرۈلۈشى
 - **كودنى زامانىۋىلاشتۇرۇش**: PHP يېڭىلاشلىرى ئۈچۈن Rector قائىدىلىرى
 
-### قۇرۇش سىستېمىسى
+### قۇرۇش سىستېمىسى {#build-system}
 
 - **مەنبە بىر تەرەپ قىلىش**: CSS/JS ھۆججەتلىرى ئۈچۈن كىچىكلىتىش
 - **تەرجىمە**: POT ھۆججىتى ھاسىل قىلىش
 - **بوغچىلىش**: تارقىتىش ئۈچۈن ئارخىپ يارىتىش
 - **تەرەققىيات ھالىتى**: سازلاش ئۈچۈن كىچىكلىتىلمىگەن مەنبەلەر
 
-## سەپلىمە
+## سەپلىمە {#configuration}
 
 بۇ قوشۇمچە تور باشقۇرغۇچ ئارايۈزى ئارقىلىق زىيارەت قىلغىلى بولىدىغان ھەر خىل سەپلىمە تاللانمىلىرىنى قوللايدۇ.
 
-## Hookلار ۋە Filterلار
+## Hookلار ۋە Filterلار {#hooks-and-filters}
 
-### مەشغۇلاتلار
+### مەشغۇلاتلار {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - قوشۇمچە دەسلەپلەشتۈرۈلگەندىن كېيىن قوزغىتىلىدۇ
 - `ultimate-multisite-ai-site-builder_loaded` - بارلىق قوشۇمچە ھۆججەتلەر يۈكلەنگەندىن كېيىن قوزغىتىلىدۇ
 
-### Filterلار
+### Filterلار {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - قوشۇمچە تەڭشەكلىرىنى ئۆزگەرتىدۇ
 - `ultimate-multisite-ai-site-builder_enabled` - قوشۇمچىنىڭ قوزغىتىش/چەكلەش ھالىتىنى بېسىپ ئۆتىدۇ
 
-## ئىجازەتنامە
+## ئىجازەتنامە {#license}
 
 بۇ قوشۇمچە GPL v3 ياكى ئۇنىڭدىن كېيىنكى نەشرى بويىچە ئىجازەتلەنگەن.
 
-## قوللاش
+## قوللاش {#support}
 
 قوللاش ۋە ھۆججەتلەر ئۈچۈن [MultisiteUltimate.com](https://multisiteultimate.com) نى زىيارەت قىلىڭ
-## ئۆزگىرىش خاتىرىسى
+## ئۆزگىرىش خاتىرىسى {#changelog}
 
 - نەشرى 1.0.1 (2025-09-28): ئالدى قوشۇلغۇچىنى ultimate-multisite غا قايتا ئاتاش؛ تېكىست دائىرىسىنى يېڭىلاش؛ نەشرىنى ئۆستۈرۈش.
 

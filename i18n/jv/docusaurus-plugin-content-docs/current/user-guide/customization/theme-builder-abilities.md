@@ -3,18 +3,18 @@ title: Kemampuan Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Kemampuan Theme Builder: Membuat Kerangka dan Mengaktifkan Block Themes
+# Kemampuan Theme Builder: Membuat Kerangka dan Mengaktifkan Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 ngeniake rong kemampuan gedhe sing bisa mbok gawe lan pasang custom block themes langsung saka antarmuka obrolan.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Kemampuan **scaffold-block-theme** lan **activate-theme** ngidini agent kanggo:
 - Gawe theme block lengkap sing siap produksi adhedhasar panemu sampeyan
 - Otomatis ngaktifake theme ing situsmu tanpa perlu intervensi manual
 - Nggawe identitas visual sing nyambung liwat keputusan desain sing dipandu
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Kemampuan **scaffold-block-theme** nggawé tema block WordPress anyar kanthi struktur tema lengkap, kalebu:
 
@@ -23,7 +23,7 @@ Kemampuan **scaffold-block-theme** nggawé tema block WordPress anyar kanthi str
 - gaya lan variasi block kustom
 - metadata tema lan deklarasi dukungan
 
-### Cara Ngajak (Invoke)
+### Cara Ngajak (Invoke) {#how-to-invoke}
 
 Ing obrolanmu karo Superdav AI Agent, sampeyan bisa njaluk pembuatan tema:
 
@@ -38,7 +38,7 @@ Agent bakal:
 3. Gawe kabeh file tema sing dibutuhake
 4. Nyiapake tema kanggo diaktifake
 
-### Hasil Sing Diprediksi (Expected Output)
+### Hasil Sing Diprediksi (Expected Output) {#expected-output}
 
 Nalika kemampuan iki eksekusi kanthi sukses, sampeyan bakal weruh:
 
@@ -56,11 +56,11 @@ Conto hasil:
   Status: Siap diaktifake
 ```
 
-## Aktifkan Theme
+## Aktifkan Theme {#activate-theme}
 
 Kemampuan **activate-theme** iku kanggo ganti situsmu menyang tema block sing wis digawe ulang utawa sing wis ana.
 
-### Cara Ngajak (Invoke)
+### Cara Ngajak (Invoke) {#how-to-invoke-1}
 
 Sawise nggawe scaffold tema, sampeyan bisa langsung ngaktifake:
 
@@ -74,7 +74,7 @@ Utawa aktifake tema sing wis ana:
 "Ganti menyang tema Twentytwentyfour"
 ```
 
-### Hasil Sing Diwatesi (Expected Output)
+### Hasil Sing Diwatesi (Expected Output) {#expected-output-1}
 
 Nalika aktivasi sukses:
 
@@ -92,7 +92,7 @@ Conto hasil:
   Catatan: Cek homepage sampeyan kanggo verifikasi tata letak
 ```
 
-## Alur Kerja: Scaffold lan Aktifke (Workflow: Scaffold and Activate)
+## Alur Kerja: Scaffold lan Aktifke (Workflow: Scaffold and Activate) {#workflow-scaffold-and-activate}
 
 Alur kerja lumrah gabungake kemampuan loro iki:
 
@@ -102,7 +102,7 @@ Alur kerja lumrah gabungake kemampuan loro iki:
 4. **Aktifke**: "Aktifke temane saiki"
 5. **Verifikasi**: Kunjungi situsmu kanggo mastiake desain anyar wis aktif
 
-## Design Tokens lan Personalisasi (Design Tokens and Customization)
+## Design Tokens lan Personalisasi (Design Tokens and Customization) {#design-tokens-and-customization}
 
 Tema sing digawe ulang nggunakake WordPress design tokens (lewat `theme.json`) kanggo:
 
@@ -114,13 +114,13 @@ Tema sing digawe ulang nggunakake WordPress design tokens (lewat `theme.json`) k
 
 Token-token iki dikumpulake ing `theme.json`, dadi gampang kanggo ngatur sistem desain kabeh saka siji file.
 
-## Batasan lan Cathet (Limitations and Notes)
+## Batasan lan Cathet (Limitations and Notes) {#limitations-and-notes}
 
 - Tema diatur (scaffolded) di `/wp-content/themes/` lan kudu manut aturan penamaan WordPress
 - Aktivasi butuh izin sing pas kanggo situs WordPressmu
 - Kode PHP kustom ing tema minimal; gunakna plugin kanggo fungsi sing rumit
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Tema ora muncul saatos diatur (scaffolding)**
 - Cek yen direktori tema wis ana lan duwe izin sing bener
@@ -137,7 +137,7 @@ Token-token iki dikumpulake ing `theme.json`, dadi gampang kanggo ngatur sistem 
 - Bersihkan plugin caching apa wae sing ana
 - Cek yen versi WordPressmu ndukung token sing sampeyan gunakake
 
-## Langkah Salajengipun
+## Langkah Salajengipun {#next-steps}
 
 Sawise mengaktifkan tema, sampeyan bisa:
 - Gunakake **Design System Aesthetics skill** kanggo ngresiki tipografi, warna, lan jarak antar elemen (spacing)

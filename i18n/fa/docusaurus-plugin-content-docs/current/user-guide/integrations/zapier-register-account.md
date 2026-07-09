@@ -3,7 +3,7 @@ title: ثبت Account از طریق Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# رویداد: ثبت یک Account از طریق Zapier
+# رویداد: ثبت یک Account از طریق Zapier {#event-register-an-account-via-zapier}
 
 در مقاله [ادغام Ultimate Multisite با Zapier](zapier.md)، دربارهٔ نحوهٔ استفاده از Zapier برای انجام اقدام‌های مختلف در Ultimate Multisite بر اساس محرک‌ها و رویدادها صحبت کردیم. در این مقاله، نشان می‌دهیم چگونه می‌توانید برنامه‌های شخص ثالث را ادغام کنید. از Google Sheets به‌عنوان منبع داده استفاده می‌کنیم و اطلاعات را به Ultimate Multisite ارسال می‌کنیم تا یک Account ثبت شود.
 

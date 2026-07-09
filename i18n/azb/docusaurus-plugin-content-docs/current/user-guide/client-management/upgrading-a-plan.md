@@ -3,7 +3,7 @@ title: Plan-i-yara
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan Yükseltme (v2)
+# Plan Yükseltme (v2) {#upgrading-a-plan-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i kapsamaktadır.**_
 
@@ -41,7 +41,7 @@ Eğer mevcut abonelikten hiçbir şeyi değiştirmeyecek bir plan veya paket se�
 
 ##
 
-## Yükseltme ve Düşürme Yolları
+## Yükseltme ve Düşürme Yolları {#upgrade-and-downgrade-paths}
 
 Ürünlerinizin her birinde bir **Yükseltme ve Düşürme** sekmesi bulacaksınız. Bu sekmedeki ilk seçenek **Plan Grubu** adında bir alandır.
 

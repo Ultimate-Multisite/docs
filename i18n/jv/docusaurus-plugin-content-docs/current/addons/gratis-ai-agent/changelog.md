@@ -3,11 +3,11 @@ title: Cathetan owah-owahan
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Cathetan Owah-owahan
+# Cathetan Owah-owahan {#changelog}
 
-## 1.9.0 — Dirilis ing 2026-04-28
+## 1.9.0 — Dirilis ing 2026-04-28 {#190--released-on-2026-04-28}
 
-### Anyar
+### Anyar {#new}
 
 - **kabisan `create_contact_form`** — nggawe formulir kontak nganggo plugin formulir sing aktif (Contact Form 7, WPForms, Fluent Forms, utawa Gravity Forms) lan mbalekake shortcode sing siap ditempelake ing tulisan utawa kaca apa wae.
 - **kabisan `set_featured_image`** — netepake gambar unggulan kanggo tulisan utawa kaca saka ID lampiran Media Library sing wis ana utawa URL remot; kanthi otomatis ngimpor gambar nalika URL diwenehake.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Mulihake sesi pungkasan** — panel obrolan saiki kanthi otomatis ngemot maneh pacelathon paling anyar nalika kaca dimuat lan nalika widget dibukak, mula konteks ora bakal ilang ing navigasi antar kaca.
 - **Tautan tumindak plugin** — tautan cepet menyang Settings lan Registri Kabisan saiki katon ing layar WordPress **Plugins → Installed Plugins** ing ngisor katrangan plugin.
 
-### Ditambah Apik
+### Ditambah Apik {#improved}
 
 - **Coba maneh sumber gambar** — agen saiki nyoba maneh kabeh sumber gambar gratis sing dikonfigurasi sadurunge bali menyang gambar sing digawe AI nalika undhuhan gagal.
 - **Panel info model** — tansah katon ing header obrolan; ora didhelikake maneh sawise pesen pisanan.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Desain ulang widget obrolan** — ikon AI seragam ngganti avatar khusus sadurunge; konsisten karo sistem agen bawaan.
 - **Linkifikasi URL** — URL sing katon ing pesen sistem lan gelembung pesen kasalahan saiki dirender dadi tautan sing bisa diklik.
 
-### Didandani
+### Didandani {#fixed}
 
 - **Katoné kabisan** — mbenerake katrangan, rujukan system prompt, lan panyelarasan namespace supaya kabeh kabisan katon ing dhaptar piranti agen kanthi andal.
 - **Cache panyedhiya** — panyedhiya saiki dicache sak situs liwat penghitung versi, nyegah masalah panyedhiya lawas ing jaringan multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Dirilis ing 2026-04-09
+## 1.4.0 — Dirilis ing 2026-04-09 {#140--released-on-2026-04-09}
 
-### Anyar
+### Anyar {#new-1}
 
 - **Prentah benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — nglakokake suite benchmark Agent Capabilities v1 saka command line kanggo pipeline CI lan alur kerja evaluasi model. Ndhukung lakon saben pitakon, override provider/model, lan output JSON/CSV.
 - **Suite benchmark Agent Capabilities v1** — kumpulan terstruktur saka prompt rumit multi-langkah sing nguji sakabehe permukaan kemampuan, nganggo scoring lan laporan token/durasi.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pitakon benchmark situs web restoran** (`q-restaurant-website`) — tes end-to-end sing nyakup registrasi CPT, design system, navigasi, lan penemuan plugin.
 - **Plugin konektor provider AI** ditambahake menyang blueprint WordPress Playground kanggo setup pangembangan lokal sing luwih cepet.
 
-### Ditingkatake
+### Ditingkatake {#improved-1}
 
 - README dianyari nganggo dokumentasi konektor provider AI lan instruksi setup.
 
-### Didandani
+### Didandani {#fixed-1}
 
 - 25 kegagalan test PHPUnit ing branch `main` dirampungake.
 - Format URL rilis GitHub ing `blueprint.json` didandani.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Cathetan rilis sadurungé dijaga ing repositori plugin._

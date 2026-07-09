@@ -3,7 +3,7 @@ title: Kliantları Yönetmek
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Customers'ı Yönetmek
+# Customers'ı Yönetmek {#managing-customers}
 
 **Customers** sayfası, ağınızda kayıtlı tüm üyelerin listesini gösterir. Bu sayfa, isim, e-posta adresi, son giriş tarihi ve kullanıcıyı bir site yöneticisi olarak üyesinin alt sitesine giriş yapmanızı sağlayan bir **switch to** bağlantısı gibi temel kullanıcı bilgilerini gösterir.
 

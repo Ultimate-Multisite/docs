@@ -3,7 +3,7 @@ title: Mga Madalas Itanong
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Madalas Itanong na mga Tanong (Frequently Asked Questions)
+# Madalas Itanong na mga Tanong (Frequently Asked Questions) {#frequently-asked-questions}
 
 Narito ang ilang mga **Madalas Itanong na Tanong** na madalas lumalabas sa mga request para sa suporta.
 

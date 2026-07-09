@@ -3,15 +3,15 @@ title: Orkestrasyona Avakera Malperê v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Rêvebirina Site Builder v2
+# Rêvebirina Site Builder v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (di Gratis AI Agent v1.4.0 de hate nasandin) motora afirandina malperên pir-qonaxî ye. Dema tu ji agent bipirsî ku "malperek xwaringehê ava bike" an "portfolioyek bi blogekê biafirîne", orchestrator wê armanca bilind dike **plan**ek rêxistî, pluginên pêwîst ji bo pêkanîna wê dibîne, her qonaxê li pey hev dimeşîne, pêşveçûnê dişopîne, û bi xweser ji çewtiyan vedigere.
 
 ---
 
-## Çawa dixebite
+## Çawa dixebite {#how-it-works}
 
-### 1. Çêkirina planê
+### 1. Çêkirina planê {#1-plan-generation}
 
 Dema agent fermanek avakirina malperê distîne, ew şiyana `create_site_plan` bang dike da ku **plana malperê** ya JSON çêbike. Plan van tiştan diyar dike:
 
@@ -61,7 +61,7 @@ Dema agent fermanek avakirina malperê distîne, ew şiyana `create_site_plan` b
 }
 ```
 
-### 2. Dîtina pluginan
+### 2. Dîtina pluginan {#2-plugin-discovery}
 
 Berî ku meşandin dest pê bike, orchestrator `plugin_requirements` yên planê dinêre û kontrol dike ka kîjan plugin jixwe çalak in. Ji bo pluginên kêm, ew:
 
@@ -71,7 +71,7 @@ Berî ku meşandin dest pê bike, orchestrator `plugin_requirements` yên planê
 
 Têkçûnên dîtina pluginan mirinbar nînin — orchestrator gavên bandor lê bûyî wek `skipped` nîşan dike û bi mayîna planê didomîne.
 
-### 3. Meşandina planê
+### 3. Meşandina planê {#3-plan-execution}
 
 Orchestrator bi nasnameya planê `execute_site_plan` bang dike. Meşandin qonax-bi-qonax, gav-bi-gav pêş dikeve:
 
@@ -79,7 +79,7 @@ Orchestrator bi nasnameya planê `execute_site_plan` bang dike. Meşandin qonax-
 - **Gavên hevdem** — gavên di heman qonaxê de ku pêwendiyên navxweyî nînin, dema ala `parallel` danîn be, bi hevdem têne şandin.
 - **Demjimêra gavê** — her gav xwedî demjimêreke taybet e (standard: mîhenga `Ability Timeout`). Gavek ku demjimêra wê derbas bibe wek `failed` tê nîşankirin û plan didomîne.
 
-### 4. Şopandina pêşveçûnê
+### 4. Şopandina pêşveçûnê {#4-progress-tracking}
 
 Di her demê de `get_plan_progress` bang bike da ku rewşa meşandinê kontrol bikî:
 
@@ -104,7 +104,7 @@ Bikarhênerên WP-CLI dikarin pêşveçûnê bi vê bişopînin:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Vegerandina çewtiyan
+### 5. Vegerandina çewtiyan {#5-error-recovery}
 
 Dema gavek têk diçe, orchestrator li **fallback**ek ku di planê de hatibe diyarkirin digere:
 
@@ -115,9 +115,9 @@ Agent hemû têkçûnan di kurteya dawî ya planê de radigihîne û dikare ji b
 
 ---
 
-## Şiyanên plana malperê
+## Şiyanên plana malperê {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Ji ravekirina armancekê bi zimanê xwezayî planek malperê ya rêxistî diafirîne.
 
@@ -134,7 +134,7 @@ Ji ravekirina armancekê bi zimanê xwezayî planek malperê ya rêxistî diafir
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Dest bi meşandina planek malperê ya berê hatî çêkirin dike.
 
@@ -150,7 +150,7 @@ Dest bi meşandina planek malperê ya berê hatî çêkirin dike.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Rewşa meşandina niha ya plana malperê vedigerîne.
 
@@ -164,7 +164,7 @@ Rewşa meşandina niha ya plana malperê vedigerîne.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Gaveke têkçûyî bi destan çareser dike û meşandina planê ji gava din ve didomîne. Dema vegerandina bixweber ne gengaz bû û hûn dixwazin destwerdanê bikin vê bikar bînin.
 
@@ -180,7 +180,7 @@ Gaveke têkçûyî bi destan çareser dike û meşandina planê ji gava din ve d
 
 ---
 
-## Berhevkirina v1 û v2
+## Berhevkirina v1 û v2 {#comparing-v1-and-v2}
 
 | Taybetmendî | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Gaveke têkçûyî bi destan çareser dike û meşandina planê ji gava din ve d
 
 ---
 
-## Fermanên Plana WP-CLI
+## Fermanên Plana WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Ji danasîna armancê planek malperê çêdike.
 
@@ -205,7 +205,7 @@ Ji danasîna armancê planek malperê çêdike.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Planek berê hatî çêkirin dimeşîne.
 
@@ -213,7 +213,7 @@ Planek berê hatî çêkirin dimeşîne.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Pêşveçûna niha ji bo planek ku tê meşandin an temam bûye nîşan dide.
 
@@ -221,7 +221,7 @@ Pêşveçûna niha ji bo planek ku tê meşandin an temam bûye nîşan dide.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Hemû planên malperê (li bendê, di pêvajoyê de, û temam bûyî) rêz dike.
 
@@ -229,7 +229,7 @@ Hemû planên malperê (li bendê, di pêvajoyê de, û temam bûyî) rêz dike.
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Planek têkçûyî vedigerîne `pending` da ku ji destpêkê ve dîsa were meşandin.
 

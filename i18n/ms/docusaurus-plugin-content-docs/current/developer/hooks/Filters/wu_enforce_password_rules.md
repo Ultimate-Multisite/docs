@@ -4,13 +4,13 @@ title: Filter - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Menapis sama ada untuk menguatkuasakan peraturan kata laluan tambahan.
 
 Apabila ditetapkan kepada `true`, ia akan menguatkuasakan keperluan panjang minimum dan karakter. Ini diaktifkan secara automatik untuk tetapan "Super Strong" atau apabila ciri Strong Password Defender Pro aktif.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Apabila ditetapkan kepada `true`, ia akan menguatkuasakan keperluan panjang mini
 | $strength_setting | `string` | Nilai tetapan pentadbir. |
 | $defender_active | `bool` | Sama ada Strong Password Defender Pro aktif. |
 
-### Since
+### Since {#since}
 
 - 2.4.0
-### Source
+### Source {#source}
 
 Defined in [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) at line 531

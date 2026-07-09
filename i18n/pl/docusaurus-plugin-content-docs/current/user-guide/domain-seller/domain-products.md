@@ -3,11 +3,11 @@ title: Produkty domenowe i ceny
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produkty domenowe i ceny
+# Produkty domenowe i ceny {#domain-products-and-pricing}
 
 Produkty domenowe pozwalają kontrolować ceny, TLD-e, prywatność WHOIS oraz wybór dostawcy. Każdy produkt domenowy to standardowy produkt Multisite Ultimate z dodatkową zakładką **Domain Settings**.
 
-## Tworzenie produktu domenowego
+## Tworzenie produktu domenowego {#creating-a-domain-product}
 
 1. Przejdź do **Network Admin › Ultimate Multisite › Products**
 2. Kliknij **Add New**
@@ -17,13 +17,13 @@ Produkty domenowe pozwalają kontrolować ceny, TLD-e, prywatność WHOIS oraz w
 
 Produkty domenowe pojawiają się z fioletową odznaką **Domain** w liście produktów i można je filtrować za pomocą zakładki **Domain Products**.
 
-## Zakładka ustawień domenowych
+## Zakładka ustawień domenowych {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Wybierz rejestratora, który zajmie się rejestracją dla tego produktu. Domyślnie ustawiony jest globalny **Default provider** w ustawieniach Domain Seller.
 
-### Supported TLDs
+### Supported TLDs {#supported-tlds}
 
 Pozostaw puste, aby utworzyć **produkt ogólny (catch-all product)**, który będzie obowiązywał dla wszystkich TLD-ów, które nie pasują do innego produktu.
 
@@ -31,7 +31,7 @@ Wprowadź listę TLD-ów oddzieloną przecinkami (np. `.com, .net, .org`), aby u
 
 **Jak działa dopasowywanie produktów:** Gdy klient wyszukuje domenę, wtyczka wybiera najbardziej pasujący i specyficzny produkt. Produkt z `.com` w liście TLD ma pierwszeństwo przed produktem ogólnym. Jeśli żaden produkt specyficzny dla TLD nie pasuje, używany jest produkt ogólny. Jeśli nie ma żadnych produktów, wyszukiwanie domeny nie zostanie wyświetlone.
 
-### Markup type
+### Markup type {#markup-type}
 
 Trzy tryby kontrolują, jak obliczana jest cena detaliczna na podstawie kosztu hurtowego:
 
@@ -41,11 +41,11 @@ Trzy tryby kontrolują, jak obliczana jest cena detaliczna na podstawie kosztu h
 | **Fixed markup** | Dodaje stałą kwotę w dolarach. 5 $ narzutu na domenę o koszcie hurtowym 10 $ daje 15 $. |
 | **Fixed price** | Całkowicie ignoruje koszt hurtowy. Zawsze pobiera kwotę, którą wpiszesz. |
 
-### Introductory pricing
+### Introductory pricing {#introductory-pricing}
 
 Włącz, aby oferować zniżoną cenę za pierwszy rok. Ustaw oddzielną **Introductory price** (cenę za pierwszy rok) obok regularnej **Renewal price** (cena za rok 2 i kolejne). Klient widzi obie ceny podczas finalizacji zakupu, więc wie, czego się spodziewać przy odnowieniu.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 Kontroluje, czy ochrona prywatności WHOIS jest oferowana dla domen rejestrowanych za pomocą tego produktu.
 
@@ -59,7 +59,7 @@ Dla Namecheap prywatność WHOIS wykorzystuje WhoisGuard (zawsze bezpłatne). Dl
 
 ---
 
-## Import i synchronizacja TLD
+## Import i synchronizacja TLD {#tld-import-and-sync}
 
 Produkty domenowe wyświetlają ceny hurtowe w czasie rzeczywistym pobrane od podłączonego dostawcy. Aby to działało, TLD-e muszą zostać zaimportowane.
 
@@ -70,7 +70,7 @@ Po synchronizacji przejdź do zakładki Ustawienia domenowe dowolnego produktu d
 
 ---
 
-## Automatyczne odnawianie
+## Automatyczne odnawianie {#auto-renewal}
 
 Odnawianie domen jest powiązane ze statusem członkostwa klienta:
 
@@ -90,7 +90,7 @@ Identyfikatory szablonów e-mail dla zdarzeń cyklu życia domeny:
 
 ---
 
-## Administrator: Ręczna rejestracja domeny
+## Administrator: Ręczna rejestracja domeny {#admin-manual-domain-registration}
 
 Aby zarejestrować domenę w imieniu klienta, bez konieczności przechodzenia przez proces finalizacji zakupu:
 

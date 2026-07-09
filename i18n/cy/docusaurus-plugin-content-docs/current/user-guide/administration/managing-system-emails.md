@@ -3,11 +3,11 @@ title: Cyfathrebu E-bostrefau System
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Cyfalu'r E-melynu Systemau
+# Cyfalu'r E-melynu Systemau {#managing-system-emails}
 
 Mae Ultimate Multisite yn anfon e-melynu systemau am brofi fel cyfathodau cyflwyniad, gairiadau peob, a newidiadau o chwaraeon. Gallwch gwneud ymddangos ymlaen i'r modelau e-melynu hyn i gyd-fynd â'ch brand.
 
-## Gwylio E-melynu Systemau
+## Gwylio E-melynu Systemau {#viewing-system-emails}
 
 Mynychi at **Ultimate Multisite → Settings** a chwilio ar y tab **Emails** i weld y setegau sy'n gysylltiedig â'r e-melynu.
 
@@ -21,7 +21,7 @@ Gallwch hefyd redig modelau e-melynu unigol gan ddefnyddio'r editor e-melynu sys
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Cyflwyno Modelau E-melynu Newydd
+## Cyflwyno Modelau E-melynu Newydd {#importing-new-email-templates}
 
 Gall y chyfnewidiadau a chwaraeon newydd o Ultimate Multisite cyflwyno modelau e-melynu newydd. I chafoddio'r ddefnyddio'r modelau hyn yn awyr, nid oes angen i'u ychwanegu'n awyr — rhaid i chi ei chynllunio'n manwl.
 
@@ -32,7 +32,7 @@ I cyflwyno modelau e-melynu newydd:
 3. Gwylio ar y opsiwn **Import Emails** i weld y modelau sy'n ar gael
 4. Dechrau'r modelau sydd eich bod eisiau cyflwyno a chyfathogh
 
-## Cyfathogi Modelau E-melynu
+## Cyfathogi Modelau E-melynu {#resetting-email-templates}
 
 Os ydych chi wedi chynllunio model e-melynu ac os ydych chi eisiau dod yn ôl i'r cynnwys ddefnyddiol, mae gennych ddau opsiyn:
 

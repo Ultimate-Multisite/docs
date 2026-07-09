@@ -4,11 +4,11 @@ title: Чыпка - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Фильтр: wu_domain_has_correct_dns
+# Фильтр: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Плагин иштеп чыгуучуларына жыйынтыктарды аныктоо үчүн жаңы текшерүүлөрдү кошууга уруксат берет.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 | $domain | `self` | Учурдагы домен нускасы. |
 | $domains_and_ips | `array` | DNS издөөсүндө табылган домендердин жана IP даректеринин тизмеси. |
 
-### Баштап
+### Баштап {#since}
 
 - 2.0.4
-### Булак
+### Булак {#source}
 
 [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) файлында, 455-сапта аныкталган
 
 
-## Кайтарат
+## Кайтарат {#returns}
 DNS туура жөндөлгөнбү же жокпу.

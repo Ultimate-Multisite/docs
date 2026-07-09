@@ -3,11 +3,11 @@ title: Tala ng Pagbabago
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Talaan ng Pagbabago
+# Talaan ng Pagbabago {#changelog}
 
-## 1.9.0 — Inilabas noong 2026-04-28
+## 1.9.0 — Inilabas noong 2026-04-28 {#190--released-on-2026-04-28}
 
-### Bago
+### Bago {#new}
 
 - **`create_contact_form` ability** — lumilikha ng contact form gamit ang aktibong form plugin (Contact Form 7, WPForms, Fluent Forms, o Gravity Forms) at nagbabalik ng shortcode na handa nang i-embed sa anumang post o pahina.
 - **`set_featured_image` ability** — nagtatalaga ng tampok na larawan sa isang post o pahina mula sa umiiral na Media Library attachment ID o remote URL; awtomatikong ini-import ang larawan kapag may ibinigay na URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ibalik ang huling session** — awtomatiko na ngayong nire-reload ng chat panel ang pinakabagong pag-uusap sa page load at sa pagbubukas ng widget, kaya hindi kailanman nawawala ang konteksto sa paglipat-lipat ng pahina.
 - **Mga link ng aksyon ng plugin** — lumalabas na ngayon ang mga mabilisang link patungo sa Settings at Abilities Registry sa screen ng WordPress **Plugins → Installed Plugins** sa ibaba ng paglalarawan ng plugin.
 
-### Pinahusay
+### Pinahusay {#improved}
 
 - **Retry ng pinagmulan ng larawan** — sinusubukan na ngayon muli ng agent ang lahat ng naka-configure na libreng pinagmulan ng larawan bago bumalik sa AI-generated na larawan kapag nabigo ang download.
 - **Panel ng impormasyon ng modelo** — palaging nakikita sa chat header; hindi na itinatago pagkatapos ng unang mensahe.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Muling disenyo ng chat widget** — pinapalitan ng pinag-isang AI icon ang dating custom avatar; tugma sa built-in agent system.
 - **URL linkification** — ang mga URL na lumalabas sa mga system message at error message bubble ay nire-render na ngayon bilang mga naki-click na link.
 
-### Naayos
+### Naayos {#fixed}
 
 - **Pagkatuklas ng ability** — itinama ang mga paglalarawan, mga sanggunian sa system prompt, at pagkakatugma ng namespace upang mapagkakatiwalaang lumabas ang lahat ng ability sa listahan ng tool ng agent.
 - **Cache ng mga provider** — naka-cache na ngayon ang mga provider sa buong site sa pamamagitan ng version counter, na pumipigil sa mga isyu sa stale-provider sa mga multisite network.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Inilabas noong 2026-04-09
+## 1.4.0 — Inilabas noong 2026-04-09 {#140--released-on-2026-04-09}
 
-### Bago
+### Bago {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — pinapatakbo ang Agent Capabilities v1 benchmark suite mula sa command line para sa mga CI pipeline at workflow ng pagsusuri ng modelo. Sinusuportahan ang mga takbo kada tanong, pag-override ng provider/model, at JSON/CSV na output.
 - **Agent Capabilities v1 benchmark suite** — isang nakaayos na hanay ng mga kumplikado at maraming-hakbang na prompt na sumusubok sa buong saklaw ng kakayahan, may pagmamarka at pag-uulat ng token/tagal.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Tanong sa benchmark ng website ng restaurant** (`q-restaurant-website`) — end-to-end na test na sumasaklaw sa rehistrasyon ng CPT, design system, navigation, at pagtuklas ng plugin.
 - **Mga AI provider connector plugin** na idinagdag sa WordPress Playground blueprints para sa mas mabilis na setup ng lokal na development.
 
-### Pinahusay
+### Pinahusay {#improved-1}
 
 - Na-update ang README na may dokumentasyon ng AI provider connector at mga tagubilin sa setup.
 
-### Naayos
+### Naayos {#fixed-1}
 
 - Nalutas ang 25 pagkabigo sa PHPUnit test sa `main` branch.
 - Naitama ang format ng GitHub releases URL sa `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Ang mga naunang release note ay pinananatili sa plugin repository._

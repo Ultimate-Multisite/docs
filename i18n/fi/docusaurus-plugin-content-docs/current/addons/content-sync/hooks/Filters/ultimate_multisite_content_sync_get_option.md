@@ -4,11 +4,11 @@ title: Suodatin - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Suodatin: ultimate_multisite_content_sync_get_option
+# Suodatin: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Palauttaa slugifioidun verkkoasetuksen arvon.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Palauttaa slugifioidun verkkoasetuksen arvon.
 | $option_name | `string` | Asetuksen nimi. |
 | $default | `mixed` | Oletusarvo. |
 
-### Alkaen versiosta
+### Alkaen versiosta {#since}
 
 - 1.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) rivillä 126
 
 
-## Palauttaa
+## Palauttaa {#returns}
 Slugifioidun verkkoasetuksen arvon.

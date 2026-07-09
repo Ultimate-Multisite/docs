@@ -3,7 +3,7 @@ title: Utafutaji na Ubadilishaji Kiotomatiki katika Violezo vya Tovuti
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Utafutaji na Ubadilishaji Kiotomatiki katika Templeti za Tovuti (v2)
+# Utafutaji na Ubadilishaji Kiotomatiki katika Templeti za Tovuti (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Mafunzo haya yanahitaji WP UItimo toleo la 2.x.**_
 
@@ -17,7 +17,7 @@ Mteja wako ataweza kujaza sehemu hiyo wakati wa usajili.
 
 Ultimate Multisite kisha itabadilisha vishikilia nafasi kwa data iliyotolewa na mteja kiotomatiki.
 
-## **Kutatua tatizo la "templeti iliyojaa vishikilia nafasi"**
+## **Kutatua tatizo la "templeti iliyojaa vishikilia nafasi"** {#solving-the-template-full-of-placeholders-problem}
 
 Yote hayo ni mazuri, lakini tunakutana na tatizo lisilopendeza: sasa templeti zetu za tovuti - ambazo zinaweza kutembelewa na wateja wetu - zimejaa vishikilia nafasi visivyopendeza ambavyo havisemi mengi.
 

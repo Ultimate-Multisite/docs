@@ -3,13 +3,13 @@ title: Field tal-checkout u DNS tal-klijenti
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field u Gestjoni DNS tal il Klijenti
+# Checkout Field u Gestjoni DNS tal il Klijenti {#checkout-field-and-customer-dns-management}
 
-## Il campo di Selezione Domini checkout
+## Il campo di Selezione Domini checkout {#the-domain-selection-checkout-field}
 
 Il campo **Domain Selection** huwa element checkout li jgħid il-klijenti għal opzjoni kif jgħandu dominu tal-site tagħhom. Aggiethu flim form checkout b'mod li tivveghaw l-vendita tal-domini.
 
-### Aggiunga il campo flim form checkout
+### Aggiunga il campo flim form checkout {#adding-the-field-to-a-checkout-form}
 
 1. Irridi għal **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Iftah o għinniex form checkout
@@ -18,7 +18,7 @@ Il campo **Domain Selection** huwa element checkout li jgħid il-klijenti għal 
 5. Configura l-opzjonijiet tal-campo (ara ondfo)
 6. Save il-form
 
-### Opzjonijiet tal-campo
+### Opzjonijiet tal-campo {#field-options}
 
 **Domain modes** — Iżżel li quali tabs jara il-klijenti. Kulle mod jista' jkun attivat jew inattivat b'mod indipendenti:
 
@@ -32,7 +32,7 @@ Il campo **Domain Selection** huwa element checkout li jgħid il-klijenti għal 
 
 **Domain product** — Possibilment, pinja dan il-campo għal product ta dominu speċifiku. Jekk ma jkun sett, l-addon jixgħel awtomatik il-product li jgħatiha b'basa fuq il-TLD li jfitta il-klijent.
 
-### Campi tal-kontatt tal-registrant
+### Campi tal-kontatt tal-registrant {#registrant-contact-fields}
 
 Meta il-klijent jżżel il tab **Register New Domain**, il-form checkout jiddejna campi ta kontatt tal-registrant inline:
 
@@ -43,11 +43,11 @@ Meta il-klijent jżżel il tab **Register New Domain**, il-form checkout jiddejn
 
 אלו נדרשים על ידי כל הרשמים ומוסמכים לפני ביצוע קריאת ה-API של ההרשמה. מספרי טלפון מתעצבים אוטומטית לפורמט הבינלאומי `+CC.NNN` שההרשמים מצפים לו.
 
-### כתובת אתר שנוצרה אוטומטית
+### כתובת אתר שנוצרה אוטומטית {#auto-generated-site-url}
 
 כאשר לקוח מתורגם או ממפה דומיין, השדה כתובת האתר (site URL) מתמלא אוטומטית מהדומיין שנבחר. ללקוחות אין צורך למלא שדה URL נפרד.
 
-### התנהגות חיפוש
+### התנהגות חיפוש {#search-behaviour}
 
 - זמינות הדומיין נבדקת בזמן אמת באמצעות AJAX כשהמשתמש מקליד
 - מוצגים הצעות TLD חלופיות כאשר הדומיין המועדף אינו זמין
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## ניהול DNS של לקוחות
+## ניהול DNS של לקוחות {#customer-dns-management}
 
 לקוחות יכולים לנהל רשומות DNS עבור הדומיינים הרשומים שלהם מהדף **My Account**, תחת הכניסה של הדומיין.
 
-### סוגי רשומות נתמכים
+### סוגי רשומות נתמכים {#supported-record-types}
 
 | סוג | שימוש |
 |---|---|
@@ -91,11 +91,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 | **MX** | מגדיר שרת חילופי דואר |
 | **TXT** | מוסיף רשומות טקסט כמו SPF, DMARC, אימות או רשומות טקסט אחרות |
 
-### אילו ספקים תומכים בניהול DNS?
+### אילו ספקים תומכים בניהול DNS? {#which-providers-support-dns-management}
 
 Id-DNS management (aggiungere, modifichi, elimini record) huwa disponibile con **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** e **Openprovider**. I domini di **Hostinger** possono aggiornare i nameserver tramite il Domain Seller; i record DNS per i domini ospitati vengono gestiti dalla core Hostinger domain-mapping integration. I domini Namecheap, GoDaddy e NameSilo mostrano lo stato e le informazioni sulla scadenza, ma il DNS deve essere gestito direttamente nel pannello di controllo del registrar.
 
-### Record DNS predefiniti
+### Record DNS predefiniti {#default-dns-records}
 
 Puoi configurare record DNS predefiniti che vengono applicati automaticamente quando un dominio viene registrato. Vai a **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: visualizzare e modificare il DNS
+### Admin: visualizzare e modificare il DNS {#admin-viewing-and-editing-dns}
 
 Gli amministratori di rete possono visualizzare e modificare i record DNS per qualsiasi dominio cliente dalla pagina di modifica del dominio in **Network Admin › Ultimate Multisite › Domains**.

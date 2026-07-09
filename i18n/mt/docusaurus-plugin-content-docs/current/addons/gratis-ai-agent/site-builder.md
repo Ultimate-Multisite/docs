@@ -3,15 +3,15 @@ title: Orkestrazzjoni tal-Bennej tas-Sit v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrazzjoni tal-Bennej tas-Sit v2
+# Orkestrazzjoni tal-Bennej tas-Sit v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (introdotta f'Gratis AI Agent v1.4.0) hija l-magna li tħaddem il-ħolqien ta' websajts f'diversi passi. Meta titlob lill-agent biex "jibni websajt ta' restorant" jew "joħloq portfolio b'blog", l-orkestratur jaqsam dak l-għan ta' livell għoli fi **pjan** strutturat, jiskopri l-plugins meħtieġa biex iwettqu, jeżegwixxi kull pass f'sekwenza, isegwi l-progress, u jirkupra minn żbalji b'mod awtonomu.
 
 ---
 
-## Kif Jaħdem
+## Kif Jaħdem {#how-it-works}
 
-### 1. Ġenerazzjoni tal-Pjan
+### 1. Ġenerazzjoni tal-Pjan {#1-plan-generation}
 
 Meta l-agent jirċievi istruzzjoni għall-bini ta' sit, isejjaħ il-kapaċità `create_site_plan` biex jipproduċi **pjan tas-sit** JSON. Il-pjan jiddeskrivi:
 
@@ -61,7 +61,7 @@ Meta l-agent jirċievi istruzzjoni għall-bini ta' sit, isejjaħ il-kapaċità `
 }
 ```
 
-### 2. Skoperta tal-Plugin
+### 2. Skoperta tal-Plugin {#2-plugin-discovery}
 
 Qabel ma tibda l-eżekuzzjoni, l-orkestratur jiskennja l-`plugin_requirements` tal-pjan u jiċċekkja liema plugins huma diġà attivi. Għal plugins nieqsa, huwa:
 
@@ -71,7 +71,7 @@ Qabel ma tibda l-eżekuzzjoni, l-orkestratur jiskennja l-`plugin_requirements` t
 
 Fallimenti fl-iskoperta tal-plugin mhumiex fatali — l-orkestratur jimmarka l-passi affettwati bħala `skipped` u jkompli bil-bqija tal-pjan.
 
-### 3. Eżekuzzjoni tal-Pjan
+### 3. Eżekuzzjoni tal-Pjan {#3-plan-execution}
 
 L-orkestratur isejjaħ `execute_site_plan` bl-ID tal-pjan. L-eżekuzzjoni timxi fażi b'fażi, pass pass:
 
@@ -79,7 +79,7 @@ L-orkestratur isejjaħ `execute_site_plan` bl-ID tal-pjan. L-eżekuzzjoni timxi 
 - **Passi paralleli** — passi fi ħdan l-istess fażi li m'għandhomx interdipendenzi jintbagħtu fl-istess ħin meta l-bandiera `parallel` tkun issettjata.
 - **Timeout tal-pass** — kull pass għandu timeout individwali (default: is-setting `Ability Timeout`). Pass li jaqbeż il-ħin jiġi mmarkat bħala `failed` u l-pjan ikompli.
 
-### 4. Segwitu tal-Progress
+### 4. Segwitu tal-Progress {#4-progress-tracking}
 
 Sejjaħ `get_plan_progress` fi kwalunkwe ħin biex tiċċekkja l-istatus tal-eżekuzzjoni:
 
@@ -104,7 +104,7 @@ L-utenti ta' WP-CLI jistgħu jimmonitorjaw il-progress b':
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Irkupru minn Żbalji
+### 5. Irkupru minn Żbalji {#5-error-recovery}
 
 Meta pass ifalli, l-orkestratur jiċċekkja għal pass **fallback** definit fil-pjan:
 
@@ -115,9 +115,9 @@ L-agent jirrapporta l-fallimenti kollha fis-sommarju finali tal-pjan u jista' ji
 
 ---
 
-## Kapaċitajiet tal-Pjan tas-Sit
+## Kapaċitajiet tal-Pjan tas-Sit {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Jiġġenera pjan tas-sit strutturat minn deskrizzjoni ta' għan b'lingwa naturali.
 
@@ -134,7 +134,7 @@ Jiġġenera pjan tas-sit strutturat minn deskrizzjoni ta' għan b'lingwa natural
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Jibda jeżegwixxi pjan tas-sit iġġenerat qabel.
 
@@ -150,7 +150,7 @@ Jibda jeżegwixxi pjan tas-sit iġġenerat qabel.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Jirritorna l-istatus attwali tal-eżekuzzjoni ta' pjan ta' sit.
 
@@ -164,7 +164,7 @@ Jirritorna l-istatus attwali tal-eżekuzzjoni ta' pjan ta' sit.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Isolvi manwalment pass li falla u jerġa' jibda l-eżekuzzjoni tal-pjan mill-pass li jmiss. Uża dan meta l-irkupru awtomatiku ma kienx possibbli u trid tintervjeni.
 
@@ -180,7 +180,7 @@ Isolvi manwalment pass li falla u jerġa' jibda l-eżekuzzjoni tal-pjan mill-pas
 
 ---
 
-## Tqabbil bejn v1 u v2
+## Tqabbil bejn v1 u v2 {#comparing-v1-and-v2}
 
 | Karatteristika | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Isolvi manwalment pass li falla u jerġa' jibda l-eżekuzzjoni tal-pjan mill-pas
 
 ---
 
-## Kmandi tal-Pjan WP-CLI
+## Kmandi tal-Pjan WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Jiġġenera pjan ta' sit minn deskrizzjoni ta' għan.
 
@@ -205,7 +205,7 @@ Jiġġenera pjan ta' sit minn deskrizzjoni ta' għan.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Jeżegwixxi pjan iġġenerat qabel.
 
@@ -213,7 +213,7 @@ Jeżegwixxi pjan iġġenerat qabel.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Juri l-progress attwali għal pjan li qed jiġi eżegwit jew li tlesta.
 
@@ -221,7 +221,7 @@ Juri l-progress attwali għal pjan li qed jiġi eżegwit jew li tlesta.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Jelenka l-pjanijiet kollha tas-siti (pendenti, għaddejjin, u lesti).
 
@@ -229,7 +229,7 @@ Jelenka l-pjanijiet kollha tas-siti (pendenti, għaddejjin, u lesti).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Jerġa' jistabbilixxi pjan li falla għal `pending` sabiex ikun jista' jerġa' jiġi eżegwit mill-bidu.
 

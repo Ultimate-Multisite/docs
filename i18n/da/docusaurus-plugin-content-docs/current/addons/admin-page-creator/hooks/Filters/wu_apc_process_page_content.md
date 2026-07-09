@@ -4,11 +4,11 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Tillad udviklere at ændre det endelige indhold
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Tillad udviklere at ændre det endelige indhold
 | $to_replace | `array` | Array, der indeholder pladsholderne. |
 | $placeholder_count | `int` | Antal fundne pladsholdere. |
 
-### Siden
+### Siden {#since}
 
 - 1.4.0
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) på linje 46
 
 
-## Returnerer
+## Returnerer {#returns}
 Indhold efter ændring.

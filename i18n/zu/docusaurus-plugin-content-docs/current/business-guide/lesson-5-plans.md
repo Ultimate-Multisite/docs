@@ -3,15 +3,15 @@ title: 'Isifundo 5: Ukuklama Izinhlelo Zakho'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Isifundo 5: Ukuklama Izinhlelo Zakho
+# Isifundo 5: Ukuklama Izinhlelo Zakho {#lesson-5-designing-your-plans}
 
 Amazinga ezinhlelo zakho awawona nje amazinga entengo -- abonisa indlela amakhasimende akho akhethekile asebenza ngayo ngempela. Kulesi sifundo uzoklama amazinga omkhiqizo ahambisana nezidingo zangempela zamabhizinisi e-fitness asezigabeni ezahlukene.
 
-## Lapho Esigcine Khona
+## Lapho Esigcine Khona {#where-we-left-off}
 
 I-FitSite inamathempulethi amathathu alungile (Studio Essential, Gym Pro, Fitness Chain). Manje sakha izinhlelo ezinquma ukuthi amakhasimende athola ukufinyelela kuphi nokuthi akhokha malini.
 
-## Ukucabanga Ngezigaba Zamakhasimende
+## Ukucabanga Ngezigaba Zamakhasimende {#thinking-in-customer-segments}
 
 Iphutha elenziwa abantu abaningi ukuklama izinhlelo bezungeza izici zobuchwepheshe (isitoreji, umkhawulokudonsa, inani lamakhasi). Amakhasimende akho akhethekile awacabangi ngaleyo ndlela. Umnikazi we-gym ucabanga ngalokho akudingayo ukuze aqhube ibhizinisi lakhe.
 
@@ -25,11 +25,11 @@ Kuma-studio e-fitness, kunezigaba ezintathu zemvelo:
 
 Izinhlelo zakho kufanele zihambisane nalezi zigaba, hhayi namaphakheji ezici ezingahleliwe.
 
-## Ukwakha Izinhlelo ze-FitSite
+## Ukwakha Izinhlelo ze-FitSite {#creating-the-fitsite-plans}
 
 Yiya ku-**Ultimate Multisite > Products > Add Product** kuhlelo ngalunye.
 
-### Uhlelo 1: FitSite Starter -- $49/ngenyanga
+### Uhlelo 1: FitSite Starter -- $49/ngenyanga {#plan-1-fitsite-starter----49month}
 
 **Okuhlosiwe**: Abaqeqeshi abazimele nama-studio amancane
 
@@ -59,7 +59,7 @@ Yiya ku-**Ultimate Multisite > Products > Add Product** kuhlelo ngalunye.
 - Itimu yakho ekhethiwe: Yenza Kusebenze Ngempoqo
 - Wonke amanye amatimu: Afihliwe
 
-### Uhlelo 2: FitSite Growth -- $99/ngenyanga
+### Uhlelo 2: FitSite Growth -- $99/ngenyanga {#plan-2-fitsite-growth----99month}
 
 **Okuhlosiwe**: Ama-gym asezinzile anendawo eyodwa
 
@@ -85,7 +85,7 @@ Yiya ku-**Ultimate Multisite > Products > Add Product** kuhlelo ngalunye.
 - Iqembu lezinhlelo: FitSite Plans
 - Ukuhleleka komkhiqizo: 2
 
-### Uhlelo 3: FitSite Pro -- $199/ngenyanga
+### Uhlelo 3: FitSite Pro -- $199/ngenyanga {#plan-3-fitsite-pro----199month}
 
 **Okuhlosiwe**: Amaketanga e-fitness anezindawo eziningi
 
@@ -109,7 +109,7 @@ Yiya ku-**Ultimate Multisite > Products > Add Product** kuhlelo ngalunye.
 - Iqembu lezinhlelo: FitSite Plans
 - Ukuhleleka komkhiqizo: 3
 
-## Ukusetha Iqembu Lezinhlelo
+## Ukusetha Iqembu Lezinhlelo {#setting-up-the-plan-group}
 
 Iqembu lezinhlelo liqinisekisa ukuthi amakhasimende angathuthukisa noma ehlise kuphela ngaphakathi komndeni wezinhlelo ze-FitSite. Kuthebhu ethi **Ukuthuthukisa nokwehlisa** yohlelo ngalunye:
 
@@ -118,7 +118,7 @@ Iqembu lezinhlelo liqinisekisa ukuthi amakhasimende angathuthukisa noma ehlise k
 
 Lokhu kwakha indlela ecacile yokuthuthukisa: Starter → Growth → Pro.
 
-## Ukwengeza Okunyuswayo Kwe-oda
+## Ukwengeza Okunyuswayo Kwe-oda {#adding-order-bumps}
 
 Okunyuswayo kwe-oda kuyimikhiqizo eyengeziwe enikezwa ngesikhathi senqubo yokukhokha. Ku-FitSite, cabanga ngalokhu:
 
@@ -128,7 +128,7 @@ Okunyuswayo kwe-oda kuyimikhiqizo eyengeziwe enikezwa ngesikhathi senqubo yokukh
 
 Dala lokhu njengemikhiqizo yohlobo lwe-**Package** ku-Ultimate Multisite futhi uyixhumanise nezinhlelo ezifanele.
 
-## Kungani Lesi Sakhiwo Sisebenza
+## Kungani Lesi Sakhiwo Sisebenza {#why-this-structure-works}
 
 - **Starter** isusa izithiyo zokungena -- intengo ephansi, okunikezwayo okulula, yenza abaqeqeshi babe ku-inthanethi ngokushesha
 - **Growth** yengeza izici ama-gym azicelayo ngempela -- ukubhuka, amagalari, amadomeyini angokwezifiso
@@ -136,7 +136,7 @@ Dala lokhu njengemikhiqizo yohlobo lwe-**Package** ku-Ultimate Multisite futhi u
 - **Okunyuswayo kwe-oda** kuvumela amakhasimende enze ngendlela yawo ngaphandle kokwenza izinhlelo eziyinhloko zibe nzima
 - **Indlela ecacile yokuthuthukisa** isho ukuthi amakhasimende akhula nawe esikhundleni sokuhamba
 
-## Inethiwekhi ye-FitSite Kuze Kube Manje
+## Inethiwekhi ye-FitSite Kuze Kube Manje {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Amazinga amathathu ezinhlelo** ahambisana nezigaba zangempela zamabhizinisi e-fitness
 - **Ukuvinjelwa kwezici** kusetshenziswa izilawuli zama-plugin namathempulethi ze-Ultimate Multisite

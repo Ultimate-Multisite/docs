@@ -3,19 +3,19 @@ title: 'Aralin 10: Araw ng Paglulunsad'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Aralin 10: Araw ng Paglulunsad
+# Aralin 10: Araw ng Paglulunsad {#lesson-10-launch-day}
 
 Nabuo na ang lahat. Bago mo buksan ang mga pinto, gagabayan ka ng araling ito sa checklist bago ang paglulunsad upang matiyak na walang sira, kulang, o nakakahiya.
 
-## Saan Tayo Huminto
+## Saan Tayo Huminto {#where-we-left-off}
 
 Mayroon nang mga hulmahan, plano, pagbabayad, branding, onboarding, at pagpepresyo ang FitSite na lahat ay na-configure. Ngayon, titiyakin natin na gumagana ang lahat at ilulunsad na.
 
-## Checklist Bago ang Paglulunsad
+## Checklist Bago ang Paglulunsad {#pre-launch-checklist}
 
 Gawin ang bawat item. Huwag laktawan ang anuman.
 
-### Imprastraktura ng Platform
+### Imprastraktura ng Platform {#platform-infrastructure}
 
 - [ ] Matatag ang hosting at mahusay ang performance sa ilalim ng load
 - [ ] Aktibo ang wildcard SSL at lahat ng subdomain ay naihahatid sa HTTPS
@@ -23,7 +23,7 @@ Gawin ang bawat item. Huwag laktawan ang anuman.
 - [ ] Naka-configure at nasubukan ang mga backup (mag-restore ng kahit isa para matiyak)
 - [ ] May monitoring na nakahanda -- malalaman mo kung bumagsak ang platform
 
-### Mga Hulmahan
+### Mga Hulmahan {#templates}
 
 - [ ] Tama ang pag-load ng lahat ng tatlong hulmahan sa mga bagong sityo
 - [ ] Kapaki-pakinabang ang placeholder content at walang typo
@@ -32,7 +32,7 @@ Gawin ang bawat item. Huwag laktawan ang anuman.
 - [ ] Katanggap-tanggap ang bilis ng pag-load ng pahina (subukan gamit ang tool tulad ng GTmetrix o PageSpeed Insights)
 - [ ] Walang sirang link o nawawalang asset sa anumang hulmahan
 
-### Mga Plano at Produkto
+### Mga Plano at Produkto {#plans-and-products}
 
 - [ ] Aktibo at nakikita ang lahat ng tatlong plano
 - [ ] Tumpak at partikular sa niche ang mga paglalarawan ng plano
@@ -42,7 +42,7 @@ Gawin ang bawat item. Huwag laktawan ang anuman.
 - [ ] Tama ang paglitaw ng mga karagdagang alok sa order habang nagbabayad
 - [ ] Tama ang pagpapatupad ng mga limitasyon sa pandagdag at tema ayon sa plano
 
-### Daloy ng Pagbabayad
+### Daloy ng Pagbabayad {#checkout-flow}
 
 - [ ] Kumpletuhin ang buong test signup sa bawat plano (gamitin ang test payment mode)
 - [ ] Ipinapakita ng pagpili ng hulmahan ang tamang mga hulmahan ayon sa plano
@@ -52,7 +52,7 @@ Gawin ang bawat item. Huwag laktawan ang anuman.
 - [ ] Makakapag-log in agad ang customer sa kanilang bagong sityo
 - [ ] Gumagana nang tama ang mga discount code
 
-### Branding
+### Branding {#branding}
 
 - [ ] Ipinapakita ng login page ang FitSite branding
 - [ ] Ipinapakita ng admin dashboard ang FitSite branding
@@ -60,7 +60,7 @@ Gawin ang bawat item. Huwag laktawan ang anuman.
 - [ ] Tama ang pagpapakita ng mga invoice kasama ang mga detalye ng iyong negosyo
 - [ ] Live na ang sityong pang-marketing at naka-link sa form ng pagbabayad
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Lumilitaw ang Quick Start widget sa mga dashboard ng bagong customer
 - [ ] Nakaturo ang lahat ng Quick Start link sa tamang mga pahina
@@ -68,7 +68,7 @@ Gawin ang bawat item. Huwag laktawan ang anuman.
 - [ ] Na-publish at naa-access ang mga artikulo sa knowledge base
 - [ ] Ipinapakita ng Account page ang tamang impormasyon ng plano at mga opsyon sa upgrade
 
-### Legal at Negosyo
+### Legal at Negosyo {#legal-and-business}
 
 - [ ] Na-publish at naka-link mula sa pagbabayad ang terms of service
 - [ ] Na-publish at naa-access ang privacy policy
@@ -77,11 +77,11 @@ Gawin ang bawat item. Huwag laktawan ang anuman.
 - [ ] Nasa live mode ang payment gateway (hindi test mode)
 - [ ] Tama ang tax configuration para sa iyong hurisdiksyon
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Isaalang-alang ang dalawang-yugtong paglulunsad:
 
-### Yugto 1: Soft Launch
+### Yugto 1: Soft Launch {#phase-1-soft-launch}
 
 Mag-imbita ng 5-10 may-ari ng fitness studio na mag-sign up bago ang pampublikong paglulunsad. Sila ang iyong beta customers. Mag-alok sa kanila ng malaking diskwento (50% off habambuhay, o 3 buwang libre) kapalit ng:
 
@@ -91,7 +91,7 @@ Mag-imbita ng 5-10 may-ari ng fitness studio na mag-sign up bago ang pampublikon
 
 Nagbibigay ito sa iyo ng totoong feedback mula sa customer at mga live na sityong maipapakita bago ka magbukas sa publiko.
 
-### Yugto 2: Pampublikong Paglulunsad
+### Yugto 2: Pampublikong Paglulunsad {#phase-2-public-launch}
 
 Kapag naisama na ang feedback mula sa soft launch:
 
@@ -100,7 +100,7 @@ Kapag naisama na ang feedback mula sa soft launch:
 - Simulan ang pagkuha ng customer (Aralin 11)
 - Mag-anunsyo sa mga kaugnay na channel sa industriya ng fitness
 
-## Mga Gagawin sa Araw ng Paglulunsad
+## Mga Gagawin sa Araw ng Paglulunsad {#launch-day-actions}
 
 Sa araw ng iyong pampublikong paglulunsad:
 
@@ -110,7 +110,7 @@ Sa araw ng iyong pampublikong paglulunsad:
 4. **Maging available** -- maaaring mangailangan ng tulong ang una mong totoong mga customer, at ang mabilis na tugon ay nagtatayo ng tiwala
 5. **Magdiwang sandali** -- pagkatapos ay bumalik sa trabaho
 
-## Ano ang Maaaring Magkamali
+## Ano ang Maaaring Magkamali {#what-can-go-wrong}
 
 Maging handa para sa:
 
@@ -120,7 +120,7 @@ Maging handa para sa:
 - **Performance sa ilalim ng load**: Kung magkaroon ka ng biglang pagtaas ng traffic, alamin kung paano i-scale ang iyong hosting
 - **Pagkalito ng customer**: Ihanda ang iyong knowledge base at support channels
 
-## Ang FitSite Network Sa Ngayon
+## Ang FitSite Network Sa Ngayon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Ang Nabuo Natin sa Araling Ito
+## Ang Nabuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Isang komprehensibong checklist bago ang paglulunsad** na sumasaklaw sa imprastraktura, nilalaman, mga bayad, at legal
 - **Isang estratehiya sa soft launch** upang makakuha ng totoong feedback bago maging pampubliko

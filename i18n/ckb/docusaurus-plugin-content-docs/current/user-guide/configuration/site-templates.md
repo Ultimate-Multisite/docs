@@ -3,13 +3,13 @@ title: پۆلێوەکانی سایتەکان
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# قالب‌های سایت (نسخه ۲)
+# قالب‌های سایت (نسخه ۲) {#site-templates-v2}
 
 _**توجه: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد. اگر از نسخه ۱.x استفاده می‌کنید،**_ **به این مقاله مراجعه کنید.**_
 
 هدف ما هنگام ساخت یک شبکه حرفه‌ای با Ultimate Multisite، خودکار کردن تا حد امکان فرآیندها است در حالی که انعطاف‌پذیری و گزینه‌های مختلفی به مشتریانمان می‌دهیم تا هنگام ساخت وب‌سایت‌هایشان بتوانند انتخاب کنند. یکی از راه‌های آسان برای دستیابی به این تعادل استفاده از قابلیت Site Templates در Ultimate Multisite است.
 
-## قالب سایت چیست؟
+## قالب سایت چیست؟ {#what-is-a-site-template}
 
 همانطور که از نامش پیداست، یک Site Template یک سایت پایه (boilerplate) است که می‌توان از آن هنگام ساخت سایت‌های جدید در شبکه خود استفاده کرد.
 
@@ -17,7 +17,7 @@ _**توجه: این مقاله به Ultimate Multisite نسخه ۲.x اشاره 
 
 این عالی به نظر می‌رسد، اما چگونه یک قالب سایت جدید ایجاد کنم؟ این کار به سادگی ممکن است انجام شود.
 
-## ایجاد و ویرایش یک Site Template جدید
+## ایجاد و ویرایش یک Site Template جدید {#creating-and-editing-a-new-site-template}
 
 Site Templates فقط سایت‌های معمولی در شبکه شما هستند. برای ایجاد یک قالب جدید، می‌توانید به سادگی به **Network Admin > Ultimate Multisite > Sites > Add Site** بروید.
 
@@ -35,7 +35,7 @@ _![پنجره مودال افزودن قالب سایت با منوی کشویی
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### گۆڕینی ناوەڕۆکی یەک قالب سایت (Site Template)
+### گۆڕینی ناوەڕۆکی یەک قالب سایت (Site Template) {#customizing-the-contents-of-a-site-template}
 
 بۆ گۆڕینی قالب سایتت، تەنها دەتوانیت بگاتە پۆستێلەکانی داشبۆردی (dashboard panel) و ئەو گۆڕانکارییان بکە کە پێویستیت. دەتوانیت نووسینەکان، صفحاتەکان دروست بکەیت، پلگینەکان چالاک بکەیت و تیۆمە سەرەکییەکە بگۆڕیت. دەتوانیت تەنانەت بگاتە Customizer و هەموو جۆرە ڕێوشوێنی گۆڕینی تایبەتی (customization options) بگۆڕیت.
 
@@ -43,11 +43,11 @@ _![پنجره مودال افزودن قالب سایت با منوی کشویی
 
 هەر ئەو داتایانە دەگۆڕێنەوە کاتێک کڕیارێک یەک سایت نوێ لەسەر بنەمای ئەو Site Templateە دروست دەکات.
 
-### ڕێوشوێنی پێشکەوتوو (Advanced Options)
+### ڕێوشوێنی پێشکەوتوو (Advanced Options) {#advanced-options}
 
 ئەگەر بە هەندێک کۆدنووسینی تایبەت دەزانیت، دەتوانیت لە APIی Search and Replace ی ئێمە بەکاربهێنیت بۆ گۆڕینی ئۆتۆماتیکی زانیارییەکان لەسەر سایت نوێ دوای دروستکردنی. ئەمە کارگێرییە بۆ شت وەک گۆڕینی ناوی کۆمپانیا لە ماڵپەڕی About، گۆڕینی ئیمەی پەیوەندیکردن لە ماڵپەڕی Contact، و هتد.
 
-### بەکارهێنانی Site Templates (قالبەکانی سایت)
+### بەکارهێنانی Site Templates (قالبەکانی سایت) {#using-site-templates}
 
 باشە، تۆ چەندین قالب سایت جیاواز دروست کردووە کە دیزاین، تیۆم و ڕێکخستنە جیاوازیان هەیە. ئێستا چۆن دەتوانیت ئەوان لە تۆڕەکەت بەکاربهێنیت؟
 
@@ -58,7 +58,7 @@ _![پنجره مودال افزودن قالب سایت با منوی کشویی
 
   * ڕێگەدان بە کڕیارەکان کە خۆیان قالب سایتەکان هەڵبژێرن لە کاتی تۆمارکردندا.
 
-#### ڕێگای ١: دانانی Site Template (Assign Site Template)
+#### ڕێگای ١: دانانی Site Template (Assign Site Template) {#mode-1-assign-site-template}
 
 لە ئەم ڕێگەتانە، کڕیارەکان ناهێنیت دەتوانن قالبێک هەڵبژێرن کاتێک یەکەم جار حساب دروست دەکەن، بەڵکو ئێوە دیاری دەکەیت کە چ القابێک لەسەر هەر پلانی خۆتان بەکاربهێنرێت.
 
@@ -70,7 +70,7 @@ _![پنجره مودال افزودن قالب سایت با منوی کشویی
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: هەڵبژاردنی قالبەکانی سایت کە بەکارخستراون دەکرێت
+#### Mode 2: هەڵبژاردنی قالبەکانی سایت کە بەکارخستراون دەکرێت {#mode-2-choose-available-site-template}
 
 لە ئەم ڕێگەتانە، ئێوە کڕیارەکان لە کاتی تۆمارکردنەوە هەڵبژاردنێک دەدەن. ئەوان دەتوانن لە نێوان قالبە سایتە جیاوازەکانی ئەو پلەیان هەڵبژێرن کە لە تنظیمات بەرهەمەکەدا دیاری کردووە. ئێوە دەرفەت دەدەن کە ڕێگە بدەن یەکamberی قالبە سایتەکان بۆ ئەوەی هەڵبژێرن، لە خوارەوە لە بەرهەمە هەڵبژاردنی پلەیان دەکرێت. ئەمە دەتوانێت بێت وەک ئەوەی چەند کۆمەڵێک قالبەکانی سایت لە ژێر هەر بەرهەمێکدا هەبێت، کە بۆ بەرهەمێکی گرانتر باشە بۆ دیاریکردنی تایبەتمەندی و کارامەی جیاواز.
 
@@ -78,7 +78,7 @@ _![پنجره مودال افزودن قالب سایت با منوی کشویی
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Modeی سەرەکی: هەڵبژاردنی Site template لە فۆرمەکەدا بۆ Checkout
+### Modeی سەرەکی: هەڵبژاردنی Site template لە فۆرمەکەدا بۆ Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 ئەگەر دەتەوێت هەموو تابلۆکانی سایتەکەت لە کاتی تۆمارکردن بە ئاسان بێت، یان دەتەوێت زیاتر کار نەکات بۆ دانان یان دیاریکردنی تابلۆکانی سایت لە ژێر هەر بەرهەمێک کە دروست دەکەیت. ئەوا دەتوانیت هەڵبژاردنی Site template لە ژێر **Checkout Form**ی خۆت بکە. بۆ ئەم مەبەست، بگە بهێڵ **Ultimate Multisite > Checkout Forms** و لە خوارەوەی فۆرمەکەی کە دەتەوێت ڕێکبخەریش بکە، **Edit** بگرە.
 
@@ -92,29 +92,29 @@ _![پنجره مودال افزودن قالب سایت با منوی کشویی
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Paramètrèyên Templateyê Website
+### Paramètrèyên Templateyê Website {#site-template-options}
 
 Heqetîtiya din a funksiyona templateyê web site hene ku tu dikarin aktivaş bikin an jî neaktivaş bikin li bajarirên Ultimate Multisite.
 
 ![Paramètrâyên templateyê web site di bajarirên Ultimate Multisite de](/img/config/settings-sites-templates-section.png)
 
-#### Îzin a Guherîna Template
+#### Îzin a Guherîna Template {#allow-template-switching}
 
 Aktivaşkirina vê opsiyonê bi dikare izin bidawîan ji bo guhertina template'i wan biken ji ber çêtirê nûkirinê de piştî ku hesab û web site hatine çêkir. Ev ji siyaka manderê ji van aya re gelek faydanî ye, chunke ew dikarin templateyek din bi gihîştina xwe yê ne bestkirin a wan ji bo hewcedariyên taybetxweş de biken.
 
-#### Îzin a Karên ji Templateyên wan wekî Web Siteeyan bikar anîn
+#### Îzin a Karên ji Templateyên wan wekî Web Siteeyan bikar anîn {#allow-users-to-use-their-site-as-templates}
 
 Ji ber ku karên subsite ji van derê wekî wekî web siteyek xwe li din xwediyê wekî çêtir û rêzîna wan diyar kirine, ew dikarin wê klon bikin û wekî yek ji templateyên web siteeyan ku li ser şێوەزê nû subsiteyek din li bajarira we hene, bikar biken. Ev opsiyonê ji wan bi karê xwe re bi taybetxweşiyê izin bidawî.
 
-#### Kopkirina Media li Demokrîzîna Templateyê
+#### Kopkirina Media li Demokrîzîna Templateyê {#copy-media-on-template-duplication}
 
 Aktivaşkirina vê opsiyonê kopirine media yên li ser web siteyek template hatibe li web siteyek nû deriyan. Ev dikare ji aliyê planên cihê ve hatine guhertin.
 
-#### **Pazikan ji bo Kurdên Navînî (Search Engines) ji Templateyên Web Siteeyan**
+#### **Pazikan ji bo Kurdên Navînî (Search Engines) ji Templateyên Web Siteeyan** {#prevent-search-engines-from-indexing-site-templates}
 
 Templateyên web siteeyan wekî ku di vê maddede de bi wan şerê kirine, boilerplate in lê hîn jî ji gelem ji bajarira we ne, ku wê ji aliyê kurdên navînî ve hatibe dikarin dîtin. Ev opsiyonê bi dikare izin bidawî ku templateyên web siteeyan piştine ku kurdên navînî dikarin wan derbêjin (index bikin).
 
-## Pêkirina Templateyên Web Siteeyan bi kurdina avtomatî a çêkirin û gihîştinê (auto search-and-replace)
+## Pêkirina Templateyên Web Siteeyan bi kurdina avtomatî a çêkirin û gihîştinê (auto search-and-replace) {#pre-populating-site-templates-with-auto-search-and-replace}
 
 یکی از قدرتمندترین ویژگی‌های Ultimate Multisite این است که شما می‌توانید متن، رنگ و فیلدهای دلخواه را روی فرم ثبت‌نام اضافه کنید. وقتی آن داده‌ها را دریافت کردیم، می‌توانیم از آن‌ها برای پر کردن پیش‌فرض محتوا در بخش‌های خاص قالب انتخاب شده استفاده کنیم. سپس، وقتی سایت جدید منتشر می‌شود، Ultimate Multisite جایگزین این مکان‌هایی که با نگهدارنده (placeholder) مشخص شده‌اند، با اطلاعات واقعی ثبت‌شده هنگام ثبت‌نام می‌کند.
 
@@ -134,7 +134,7 @@ Ultimate Multisite سپس مکان‌های نگهدارنده را به طور 
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### حل مشکل "قالب پر از مکان‌های نگهدارنده"
+### حل مشکل "قالب پر از مکان‌های نگهدارنده" {#solving-the-template-full-of-placeholders-problem}
 
 همه این‌ها عالی است، اما ما با یک مشکل آزاردهنده روبرو می‌شویم: حالا قالب‌های سایت ما - که مشتریان می‌توانند به آن‌ها مراجعه کنند - پر از مکان‌های نگهدارنده نامرتبی هستند که اطلاعات زیادی ندارند.
 

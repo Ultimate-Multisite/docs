@@ -3,17 +3,17 @@ title: 'Piwulang 12: Nglakokake Bisnis'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Wulangan 12: Nglakokake Bisnis
+# Wulangan 12: Nglakokake Bisnis {#lesson-12-running-the-business}
 
 Platform dudu proyek sing rampung -- platform iku bisnis sing kudu sampeyan lakokake. Wulangan iki nyakup operasi saben dina kanggo ngatur FitSite: dhukungan, tagihan, pangopènan, lan njaga pelanggan tetep wareg.
 
-## Panggonan Pungkasan Kita
+## Panggonan Pungkasan Kita {#where-we-left-off}
 
 FitSite wis aktif lan pelanggan wiwit ndhaptar. Saiki sampeyan kudu nglakokake operasi kanthi lestari.
 
-## Operasi Saben Dina
+## Operasi Saben Dina {#daily-operations}
 
-### Monitoring
+### Monitoring {#monitoring}
 
 Priksa iki saben dina (utawa pasang tandha):
 
@@ -22,7 +22,7 @@ Priksa iki saben dina (utawa pasang tandha):
 - **Pembayaran gagal**: Apa ana kegagalan pembayaran sing perlu digatekake?
 - **Panjalukan dhukungan**: Apa ana pitakon pelanggan sing durung dijawab?
 
-### Dhukungan Pelanggan
+### Dhukungan Pelanggan {#customer-support}
 
 Fokus niche sampeyan dadi kauntungan ing kene. Amarga kabeh pelanggan sampeyan studio fitness, sampeyan bakal kerep ndeleng pitakon sing padha:
 
@@ -36,7 +36,7 @@ Fokus niche sampeyan dadi kauntungan ing kene. Amarga kabeh pelanggan sampeyan s
 
 Bangun basis kawruh sampeyan (diwiwiti ing Wulangan 8) adhedhasar pitakon sing bola-bali iki. Saben tiket dhukungan sing sakjane bisa dadi artikel basis kawruh iku sinyal kanggo nulis artikel kasebut.
 
-### Tingkat Dhukungan
+### Tingkat Dhukungan {#support-tiers}
 
 Nalika sampeyan saya gedhe, atur dhukungan miturut paket:
 
@@ -48,9 +48,9 @@ Nalika sampeyan saya gedhe, atur dhukungan miturut paket:
 
 [Tambahan Tiket Dhukungan](/addons/support-tickets) bisa mbantu ngatur panjalukan dhukungan ing njero platform.
 
-## Operasi Tagihan
+## Operasi Tagihan {#billing-operations}
 
-### Pembayaran Ambalan
+### Pembayaran Ambalan {#recurring-payments}
 
 Ultimate Multisite nangani tagihan ambalan kanthi otomatis liwat payment gateway sampeyan. Tugas sampeyan yaiku ngawasi:
 
@@ -58,7 +58,7 @@ Ultimate Multisite nangani tagihan ambalan kanthi otomatis liwat payment gateway
 - **Dunning**: Pasang logika nyoba maneh otomatis liwat payment gateway sampeyan (Stripe nangani iki kanthi apik)
 - **Panjalukan pembatalan**: Mangerteni kenapa pelanggan lunga. Saben pembatalan iku umpan balik.
 
-### Ngatur Keanggotaan
+### Ngatur Keanggotaan {#managing-memberships}
 
 Navigasi menyang **Ultimate Multisite > Keanggotaan** kanggo:
 
@@ -69,13 +69,13 @@ Navigasi menyang **Ultimate Multisite > Keanggotaan** kanggo:
 
 Deleng [Ngatur Keanggotaan](/user-guide/administration/managing-memberships) kanggo referensi lengkap.
 
-### Invoice
+### Invoice {#invoicing}
 
 Priksa manawa invoice digawe kanthi bener kanggo saben pembayaran. Pelanggan bisa mbutuhake invoice kanggo laporan biaya bisnis. Deleng [Ngatur Pembayaran lan Invoice](/user-guide/administration/managing-payments-and-invoices).
 
-## Pangopènan Platform
+## Pangopènan Platform {#platform-maintenance}
 
-### Nganyari WordPress lan Tambahan
+### Nganyari WordPress lan Tambahan {#wordpress-and-plugin-updates}
 
 Minangka administrator jaringan, sampeyan tanggung jawab kanggo:
 
@@ -88,14 +88,14 @@ Minangka administrator jaringan, sampeyan tanggung jawab kanggo:
 Nganyari sing rusak mengaruhi saben situs pelanggan ing jaringan sampeyan. Tansah tes nganyari ing salinan staging jaringan sampeyan dhisik.
 :::
 
-### Keamanan
+### Keamanan {#security}
 
 - Jaga kabeh software tetep paling anyar
 - Gunakake tembung sandhi sing kuwat lan autentikasi loro faktor kanggo akun admin
 - Monitor aktivitas sing mencurigakan
 - Duwe rencana kanggo insiden keamanan
 
-### Kinerja
+### Kinerja {#performance}
 
 Nalika jaringan sampeyan saya gedhe, monitor:
 
@@ -105,9 +105,9 @@ Nalika jaringan sampeyan saya gedhe, monitor:
 
 Coba nerapake caching (page cache, object cache) lan CDN yen durung. [Integrasi Cloudflare](/user-guide/host-integrations/cloudflare) nangani akeh bagean iki.
 
-## Manajemen Siklus Urip Pelanggan
+## Manajemen Siklus Urip Pelanggan {#customer-lifecycle-management}
 
-### Nyuda Churn
+### Nyuda Churn {#reducing-churn}
 
 Churn yaiku persentase pelanggan sing mbatalake saben sasi. Kanggo bisnis langganan, nyuda churn padha pentinge karo entuk pelanggan anyar.
 
@@ -119,7 +119,7 @@ Churn yaiku persentase pelanggan sing mbatalake saben sasi. Kanggo bisnis langga
 - Dheweke nemokake alternatif sing luwih murah → kuwatake nilai niche sampeyan
 - Bisnise tutup → ora bisa diendhani, nanging lacak iki kanthi kapisah
 
-### Nyengkuyung Upgrade
+### Nyengkuyung Upgrade {#encouraging-upgrades}
 
 Pelanggan ing Starter sing wis sukses kudu disengkuyung kanggo upgrade:
 
@@ -127,7 +127,7 @@ Pelanggan ing Starter sing wis sukses kudu disengkuyung kanggo upgrade:
 - Kirim email terarah sing nyorot fitur paket Growth sing bakal migunani kanggo dheweke
 - Tampilake apa sing wis dibangun pelanggan Growth/Pro
 
-### Kampanye Win-Back
+### Kampanye Win-Back {#win-back-campaigns}
 
 Nalika pelanggan mbatalake:
 
@@ -135,30 +135,30 @@ Nalika pelanggan mbatalake:
 2. Tangani keprihatinane yen bisa
 3. Wenehi diskon supaya bali (30-60 dina sawise pembatalan)
 
-## Rutinitas Mingguan lan Saben Sasi
+## Rutinitas Mingguan lan Saben Sasi {#weekly-and-monthly-routines}
 
-### Mingguan
+### Mingguan {#weekly}
 
 - Tinjau pendaftaran anyar lan pembatalan
 - Wangsuli kabeh tiket dhukungan sing isih mbukak
 - Priksa kinerja platform lan uptime
 - Tinjau pembayaran sing gagal
 
-### Saben Sasi
+### Saben Sasi {#monthly}
 
 - Analisis metrik kunci (MRR, churn, pelanggan anyar, upgrade)
 - Terapake nganyari WordPress lan tambahan (sawise tes staging)
 - Tinjau lan nganyari basis kawruh adhedhasar pola dhukungan
 - Kirim newsletter utawa kabar nganyari marang pelanggan (fitur anyar, tips, kabar industri fitness)
 
-### Saben Kuartal
+### Saben Kuartal {#quarterly}
 
 - Tinjau rega dibandhingake pesaing lan umpan balik pelanggan
 - Evaluasi desain template -- apa perlu disegarkan?
 - Nilai kapasitas hosting -- apa sampeyan perlu scale?
 - Tinjau lan apikake onboarding adhedhasar data aktivasi
 
-## Sing Kita Bangun ing Wulangan Iki
+## Sing Kita Bangun ing Wulangan Iki {#what-we-built-this-lesson}
 
 - **Rutinitas ngawasi saben dina** kanggo wektu aktif, pandhaftaran, pambayaran, lan dhukungan
 - **Struktur dhukungan bertingkat** sing dicocogake karo tataran paket

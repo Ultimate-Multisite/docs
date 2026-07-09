@@ -3,7 +3,7 @@ title: Referanse for ferdigheter
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referanse for evner
+# Referanse for evner {#abilities-reference}
 
 Evner er de atomiske handlingene som Gratis AI Agent kan påkalle i WordPress-installasjonen din. Hver evne er en registrert PHP-klasse som eksponerer et JSON-skjema — agenten leser dette skjemaet ved kjøring for å forstå hvilke parametere som kreves og hva evnen returnerer.
 
@@ -11,11 +11,11 @@ Denne siden dokumenterer alle evner som leveres med Gratis AI Agent v1.9.0.
 
 ---
 
-## Egendefinerte innleggstyper
+## Egendefinerte innleggstyper {#custom-post-types}
 
 Disse evnene administrerer egendefinerte innleggstyper (CPT-er) registrert gjennom agenten. Registreringer lagres i WordPress-alternativtabellen slik at de overlever deaktivering og reaktivering av pluginen.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registrerer en ny egendefinert innleggstype.
 
@@ -50,7 +50,7 @@ Registrerer en ny egendefinert innleggstype.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Returnerer alle egendefinerte innleggstyper registrert av agenten.
 
@@ -73,7 +73,7 @@ Returnerer alle egendefinerte innleggstyper registrert av agenten.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Avregistrerer en egendefinert innleggstype som tidligere er registrert av agenten. Eksisterende innlegg av den typen blir liggende i databasen, men er ikke lenger tilgjengelige via innleggstypen.
 
@@ -87,11 +87,11 @@ Avregistrerer en egendefinert innleggstype som tidligere er registrert av agente
 
 ---
 
-## Egendefinerte taksonomier
+## Egendefinerte taksonomier {#custom-taxonomies}
 
 Disse evnene administrerer egendefinerte taksonomier. I likhet med CPT-er lagres taksonomiregistreringer.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registrerer en ny egendefinert taksonomi.
 
@@ -123,7 +123,7 @@ Registrerer en ny egendefinert taksonomi.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Returnerer alle egendefinerte taksonomier registrert av agenten.
 
@@ -146,7 +146,7 @@ Returnerer alle egendefinerte taksonomier registrert av agenten.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Avregistrerer en egendefinert taksonomi som tidligere er registrert av agenten.
 
@@ -160,11 +160,11 @@ Avregistrerer en egendefinert taksonomi som tidligere er registrert av agenten.
 
 ---
 
-## Designsystem
+## Designsystem {#design-system}
 
 Designsystem-evner endrer den visuelle presentasjonen av WordPress-nettstedet — fra egendefinert CSS til blokkmønstre og nettstedets logo.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Legger til CSS i nettstedets `<head>` via `wp_add_inline_style`. CSS lagres i alternativet `gratis_ai_agent_custom_css` og fjernes fra køen på en ryddig måte når evnen tilbakestilles.
 
@@ -190,7 +190,7 @@ Legger til CSS i nettstedets `<head>` via `wp_add_inline_style`. CSS lagres i al
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registrerer et gjenbrukbart blokkmønster i WordPress-mønsterbiblioteket.
 
@@ -209,7 +209,7 @@ Registrerer et gjenbrukbart blokkmønster i WordPress-mønsterbiblioteket.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Lister alle blokkmønstre registrert av agenten.
 
@@ -231,7 +231,7 @@ Lister alle blokkmønstre registrert av agenten.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Setter WordPress nettstedlogo til en gitt vedleggs-ID eller en ekstern bilde-URL. Når en URL oppgis, lastes bildet ned og importeres til mediebiblioteket.
 
@@ -248,7 +248,7 @@ Setter WordPress nettstedlogo til en gitt vedleggs-ID eller en ekstern bilde-URL
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Bruker en navngitt farge-/typografiforhåndsinnstilling på det aktive temaets `theme.json` (eller `global-styles`). Forhåndsinnstillinger er kuraterte pakker vedlikeholdt av Gratis AI Agent-teamet.
 
@@ -273,11 +273,11 @@ Bruker en navngitt farge-/typografiforhåndsinnstilling på det aktive temaets `
 
 ---
 
-## Globale stiler
+## Globale stiler {#global-styles}
 
 Global Styles-funksjoner leser og skriver theme.json-verdier gjennom WordPress Global Styles API, og påvirker alle blokker og maler på hele nettstedet.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Returnerer den gjeldende konfigurasjonen for globale stiler.
 
@@ -291,7 +291,7 @@ Returnerer den gjeldende konfigurasjonen for globale stiler.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Oppdaterer én eller flere verdier i konfigurasjonen for globale stiler.
 
@@ -318,7 +318,7 @@ Oppdaterer én eller flere verdier i konfigurasjonen for globale stiler.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Tilbakestiller alle agentanvendte endringer i globale stiler og gjenoppretter temaets standardverdier.
 
@@ -328,11 +328,11 @@ Tilbakestiller alle agentanvendte endringer i globale stiler og gjenoppretter te
 
 ---
 
-## Navigasjonsmenyer
+## Navigasjonsmenyer {#navigation-menus}
 
 Navigasjonsmeny-funksjoner oppretter og administrerer WordPress navigasjonsmenyer og elementene deres.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Oppretter en ny WordPress navigasjonsmeny.
 
@@ -347,7 +347,7 @@ Oppretter en ny WordPress navigasjonsmeny.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Endrer navn på en meny eller tilordner den på nytt til en temaplassering.
 
@@ -363,7 +363,7 @@ Endrer navn på en meny eller tilordner den på nytt til en temaplassering.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Legger til et element i en eksisterende navigasjonsmeny.
 
@@ -383,7 +383,7 @@ Legger til et element i en eksisterende navigasjonsmeny.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Fjerner et element fra en navigasjonsmeny.
 
@@ -397,7 +397,7 @@ Fjerner et element fra en navigasjonsmeny.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Lister opp alle WordPress navigasjonsmenyer, inkludert deres tilordnede temaplasseringer.
 
@@ -420,11 +420,11 @@ Lister opp alle WordPress navigasjonsmenyer, inkludert deres tilordnede temaplas
 
 ---
 
-## Alternativadministrasjon
+## Alternativadministrasjon {#options-management}
 
 Alternativ-funksjoner leser og skriver WordPress alternativer via `get_option` / `update_option`. En innebygd sikkerhetssperreliste forhindrer utilsiktet endring av kritiske innstillinger.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Leser et WordPress alternativ.
 
@@ -440,7 +440,7 @@ Returnerer en feil hvis `option_name` er på sikkerhetssperrelisten.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Skriver et WordPress alternativ.
 
@@ -458,7 +458,7 @@ Returnerer en feil hvis `option_name` er på sikkerhetsblokkeringslisten.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Sletter et WordPress-valg.
 
@@ -474,7 +474,7 @@ Returnerer en feil hvis `option_name` er på sikkerhetsblokkeringslisten.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Lister WordPress-valg som samsvarer med et mønster.
 
@@ -498,11 +498,11 @@ Lister WordPress-valg som samsvarer med et mønster.
 
 ---
 
-## Innholdsadministrasjon
+## Innholdsadministrasjon {#content-management}
 
 Innholdsadministrasjonsfunksjoner oppretter og redigerer WordPress-innlegg og -sider. Innleggs-ID-er returneres slik at påfølgende steg i planer med flere funksjoner kan referere til det opprettede innholdet.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Oppretter et nytt WordPress-innlegg, en side eller en oppføring for egendefinert innleggstype.
 
@@ -537,7 +537,7 @@ Oppretter et nytt WordPress-innlegg, en side eller en oppføring for egendefiner
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Oppdaterer et eksisterende WordPress-innlegg eller en side.
 
@@ -567,7 +567,7 @@ Oppdaterer et eksisterende WordPress-innlegg eller en side.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Oppretter flere innlegg i ett enkelt funksjonskall, noe som reduserer rundreiser under bygging av nettsteder eller import av innhold i bulk. Innlegg opprettes i rekkefølge; hvis ett mislykkes, fortsetter de andre, og feilen rapporteres i resultatmatrisen.
 
@@ -619,7 +619,7 @@ Oppretter flere innlegg i ett enkelt funksjonskall, noe som reduserer rundreiser
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Tilordner et fremhevet bilde (innleggsminiatyrbilde) til et eksisterende innlegg eller en side. Godtar en eksisterende vedleggs-ID fra mediebiblioteket eller en ekstern bilde-URL; når en URL oppgis, lastes bildet ned og importeres automatisk.
 
@@ -638,7 +638,7 @@ Tilordner et fremhevet bilde (innleggsminiatyrbilde) til et eksisterende innlegg
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Oppretter et kontaktskjema ved hjelp av den aktive skjemapluginen (Contact Form 7, WPForms, Fluent Forms eller Gravity Forms, avhengig av hva som er installert). Returnerer en shortcode som kan bygges inn i ethvert innlegg eller på enhver side.
 
@@ -691,11 +691,11 @@ Oppretter et kontaktskjema ved hjelp av den aktive skjemapluginen (Contact Form 
 
 ---
 
-## Visuell gjennomgang
+## Visuell gjennomgang {#visual-review}
 
 Visuell gjennomgang-funksjoner lar agenten ta skjermbilder av live-sider og analysere dem, noe som muliggjør autonom designgjennomgang, før/etter-sammenligninger og visuelle regresjonskontroller uten å kreve noen nettleserutvidelse.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Tar et skjermbilde av en WordPress-side på en angitt URL ved hjelp av en serverbasert headless-nettleser. Bildet lagres i mediebiblioteket, og en CDN-URL returneres.
 
@@ -724,7 +724,7 @@ Tar et skjermbilde av en WordPress-side på en angitt URL ved hjelp av en server
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Tar to skjermbilder og returnerer en visuell diff-score pluss et diff-bilde som fremhever endrede områder. Nyttig for å bekrefte at en designendring ga det forventede resultatet, eller for å oppdage utilsiktede regresjoner.
 
@@ -754,7 +754,7 @@ En `diff_score` på `0.0` betyr ingen synlig endring; `1.0` betyr at hver piksel
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Tar et skjermbilde av en side og sender det til språkmodellen for visuell analyse. Returnerer en strukturert vurdering som dekker layout, typografi, fargebruk og tilgjengelighetshensyn.
 
@@ -785,11 +785,11 @@ Tar et skjermbilde av en side og sender det til språkmodellen for visuell analy
 
 ---
 
-## Installerbare funksjoner
+## Installerbare funksjoner {#installable-abilities}
 
 Registeret for installerbare funksjoner lar deg utvide agenten med flere funksjonspakker distribuert som WordPress-plugins. Hver pakke registrerer én eller flere funksjoner ved hjelp av standard funksjons-API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Returnerer katalogen over funksjonspakker som er tilgjengelige for installasjon fra registeret.
 
@@ -818,7 +818,7 @@ Returnerer katalogen over funksjonspakker som er tilgjengelige for installasjon 
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Laster ned og aktiverer en ability-pakke fra registeret.
 
@@ -832,7 +832,7 @@ Laster ned og aktiverer en ability-pakke fra registeret.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Spør ability-registeret for å finne den beste pluginen for et beskrevet bruksområde og installerer den eventuelt.
 

@@ -3,11 +3,11 @@ title: Shuruudaha
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Shuruudda Ultimate Multisite
+# Shuruudda Ultimate Multisite {#ultimate-multisite-requirements}
 
 Marka hore oo aad is weydiin karto ka hor intaadan iibsato Ultimate Multisite waa maxay shuruudaha loo baahan yahay inaan plugin-kaas u fuliyo. Waa hagaag, la'aanta, waxaa jira shuruudo aasaasi ah oo kaliya oo loogu talagalay inaan fulino Ultimate Multisite: **magaca domain-ka** (domain name), **bixiyaha hosting-ka** wanaagsan, iyo **warbixinta WordPress Multisite**. Waa intaas oo dhan aad u baahan tahay!
 
-## Magaca Domain-ka
+## Magaca Domain-ka {#domain-name}
 
 Marka hore, aan ka hadalno magaca domain-ka.
 
@@ -17,7 +17,7 @@ Plugin-keena wuxuu bixiyaa adeegyo guud (subscription services), ururinta lacagt
 
 Niche kasta oo aad doorato waxaa la maamuli karaa iyadoo la isticmaalayo plugin-keena haddii aad iibiso websites sida adeeg! Hubi inaad doorato magaca domain-ka oo la jaanqaadaya qorshaha ganacsigaaga.
 
-## Bixiyaha Hosting-ka (Hosting Provider)
+## Bixiyaha Hosting-ka (Hosting Provider) {#hosting-provider}
 
 Hadda oo aad heshay magaca domain-ka soo jiidashada ah ee muujinaya niche-kaaga iyo ganacsigaaga, waxaad u baahan doontaa inaad doorato shirkad hosting wanaagsan si aad u kaydsato shabakadahaaga (network) Ultimate Multisite-ka. Waxaa jira fursado wanaagsan oo suuqa ka ah. Qaar ka mid ah bixiyaha hosting-ka waxay si fiican ugu habaysadaan Ultimate Multisite, taasoo noqon karto arrin muhiim ah iyadoo ku xiran waxa aad qorshaynayso inaad dhisato.
 
@@ -25,7 +25,7 @@ Ultimate Multisite-ku dhammaan hosting providers ku shaqeyn doonaa. Waxa kaliya 
 
 Marka la eego qorshaha server-ka, ma jirto qaab gaar ah oo ku xiran sababta, sababtoo ah wuxuu ku xiran yahay astaamaha iyo shaqooyinka aad bixisay iyo cabbirka shabakadahaaga. Shared hosting (hosting la wadaag) waxay noqon kartaa bilaawga wanaagsan, laakiin marka shabakadahaagu bilaaba inay koroddoonaadaan, waxaa laga yaabaa inaad u baahan doonto VPS gaar ah.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Hadda, aan ka hadalno wax yar oo ku saabsan installation-ka WordPress Multisite.
 

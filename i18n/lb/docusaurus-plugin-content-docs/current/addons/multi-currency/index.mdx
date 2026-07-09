@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency erméiglecht Ärem Netzwierk Bezuelungen a méi Währungen unzehuelen. Et konvertéiert Präisser automatesch mat Live- oder manuelle Wiesselcoursen, léisst Iech exakt Präisser pro Produkt fir all Währung festleeën, an erkennt déi bevorzugt Währung vun all Visiteur iwwer Geolokalisatioun — alles vun engem eenzegen Admin-Dashboard aus geréiert.
 
-## Haaptfunktiounen
+## Haaptfunktiounen {#key-features}
 
 - **Automatesch Wiesselcours-Konversioun** — Präisser ginn aus Ärer Basiswärung mat Coursen ëmgewandelt, déi vun Ärem gewielten Ubidder ofgeruff ginn
 - **Iwwerschreiwunge fir Präisser pro Produkt** — setzt exakt währungsspezifesch Präisser op all Produkt, fir déi automatesch Konversioun z’ëmgoen
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency erméiglecht Ärem Netzwierk Bezuelungen a m�
 - **Währungserkennung op Basis vu Geolokalisatioun** — wielt automatesch d’Währung vir, déi dem Land vum Visiteur entsprécht
 - **Admin-Dashboard** — geréiert aktiv Währungen, Wiesselcoursen an Ubidder-Astellunge vun enger Plaz aus
 
-## Ufuerderungen
+## Ufuerderungen {#requirements}
 
 - Ultimate Multisite 2.0.0 oder méi héich
 - WordPress Multisite-Installatioun
 - PHP 7.4 oder méi héich
 
-## Installatioun
+## Installatioun {#installation}
 
 1. Luet d’Plugin-Dateien op `/wp-content/plugins/ultimate-multisite-multi-currency` erop
 2. Aktivéiert de Plugin iwwer den **Plugins**-Écran a WordPress (Netzwierk-aktivéieren)
 3. Navigéiert op **Ultimate Multisite → Multi-Currency**, fir den Admin-Dashboard opzemaachen
 4. Füügt d’Währungen derbäi, déi Dir akzeptéiere wëllt, a konfiguréiert Äre Wiesselcours-Ubidder
 
-## Konfiguratioun
+## Konfiguratioun {#configuration}
 
-### Admin-Dashboard
+### Admin-Dashboard {#admin-dashboard}
 
 De Multi-Currency Admin-Dashboard (**Ultimate Multisite → Multi-Currency**) ass déi zentral Plaz fir:
 
@@ -44,7 +44,7 @@ De Multi-Currency Admin-Dashboard (**Ultimate Multisite → Multi-Currency**) as
 - Aktuell Coursen fir all aktiv Währungen ze iwwerpréiwen
 - Manuell Coursen ze setzen, wann automatesch Ubidder net gëeegent sinn
 
-### Wiesselcours-Ubidder
+### Wiesselcours-Ubidder {#exchange-rate-providers}
 
 | Ubidder | Beschreiwung |
 |---|---|
@@ -55,7 +55,7 @@ De Multi-Currency Admin-Dashboard (**Ultimate Multisite → Multi-Currency**) as
 
 Wielt Ären Ubidder ënner **Ultimate Multisite → Multi-Currency → Astellungen → Wiesselcours-Ubidder**. Coursen kënnen zu all Moment manuell aktualiséiert oder fir automatesch Aktualiséierungen geplangt ginn.
 
-### Iwwerschreiwunge fir Präisser pro Produkt
+### Iwwerschreiwunge fir Präisser pro Produkt {#per-product-pricing-overrides}
 
 Wann déi automatesch Konversioun net präzis genuch ass, kënnt Dir en exakte Präis fir eng bestëmmte Währung op all Produkt festleeën:
 
@@ -66,7 +66,7 @@ Wann déi automatesch Konversioun net präzis genuch ass, kënnt Dir en exakte P
 
 Produkter ouni Iwwerschreiwung benotzen de konvertéierte Präis aus Ärer Basiswärung.
 
-### Währungsauswiel-Feld bei der Umeldung
+### Währungsauswiel-Feld bei der Umeldung {#currency-selector-signup-field}
 
 D’Währungsauswiel-Feld kann an Äre Umeldungs-/Bezueloflaf derbäigesat ginn, sou datt Clienten hir bevorzugt Währung bei der Registréierung auswielen:
 
@@ -76,7 +76,7 @@ D’Währungsauswiel-Feld kann an Äre Umeldungs-/Bezueloflaf derbäigesat ginn,
 
 Déi gewielte Währung gëtt mam Abonnement gespäichert a fir all weider Ofrechnunge benotzt.
 
-### Währungserkennung op Basis vu Geolokalisatioun
+### Währungserkennung op Basis vu Geolokalisatioun {#geolocation-based-currency-detection}
 
 Wann d’Geolokalisatiounserkennung aktivéiert ass, mécht den Add-on eng Zouuerdnung vum Land vum Visiteur zu enger Währung a wielt se am Währungsauswiel-Feld vir. Fir z’aktivéieren:
 
@@ -86,27 +86,27 @@ Wann d’Geolokalisatiounserkennung aktivéiert ass, mécht den Add-on eng Zouue
 
 Wann et keng Zouuerdnung fir d’Land vun engem Visiteur gëtt, gëtt d’Basiswärung vum Netzwierk als Fallback benotzt.
 
-## Heefeg gestallte Froen
+## Heefeg gestallte Froen {#frequently-asked-questions}
 
-### Wat geschitt, wann e Wiesselcours-Ubidder net verfügbar ass?
+### Wat geschitt, wann e Wiesselcours-Ubidder net verfügbar ass? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Den Add-on fält op déi lescht erfollegräich ofgeruff Coursen zeréck. Wann nach ni Coursen ofgeruff goufen, fält en op déi manuell Coursen zeréck, déi Dir konfiguréiert hutt. Et gëtt recommandéiert, manuell Coursen als Sécherheetsnetz ze konfiguréieren.
 
-### Kann ech verschidden Ubidder fir verschidde Währungen benotzen?
+### Kann ech verschidden Ubidder fir verschidde Währungen benotzen? {#can-i-use-different-providers-for-different-currencies}
 
 Nee — een Ubidder ass gläichzäiteg fir all Währungen aktiv. Benotzt **Manual**, wann Dir voll Kontroll iwwer eenzel Coursen braucht.
 
-### Erfuerdert Geolokalisatioun e separate Plugin?
+### Erfuerdert Geolokalisatioun e separate Plugin? {#does-geolocation-require-a-separate-plugin}
 
 Keen externen Geolokalisatiouns-Plugin ass erfuerderlech. Den Add-on benotzt WordPress seng agebaute IP-zu-Land-Erkennung. Fir méi héich Genauegkeet kann en dedizéierte Geolokalisatiounsdéngscht iwwer déi bereetgestallte Filter-Hooks integréiert ginn.
 
-### Ginn Iwwerschreiwunge pro Produkt virun oder no der Steier ugewannt?
+### Ginn Iwwerschreiwunge pro Produkt virun oder no der Steier ugewannt? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Iwwerschreiwunge pro Produkt setzen de Präis viru Steier an der Zilwährung. D’Steier gëtt op Basis vum Iwwerschreiwungspräis mat Ärer existéierender Steierkonfiguratioun berechent.
 
-## Changelog
+## Changelog {#changelog}
 
-### Versioun 1.0.0 — Verëffentlecht den 2026-04-02
+### Versioun 1.0.0 — Verëffentlecht den 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nei: Ënnerstëtzung fir méi Währungen mat automatescher Wiesselcours-Konversioun
 - Nei: Iwwerschreiwunge fir Präisser pro Produkt fir exakt währungsspezifesch Präisser

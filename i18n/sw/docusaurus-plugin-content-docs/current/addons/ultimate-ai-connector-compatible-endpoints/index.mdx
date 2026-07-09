@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints huunganisha API za viwanda vya AI vinavyolingana na OpenAI na mtandao wako wa WordPress multisite. Weka mipangilio ya viwanda vingi vya AI — kila mmoja na URL yake ya endpoint, API key, na mfumo wa msingi (default model) — na uelekeze maombi kwa kurudi nyuma kiotomatiki (automatic fallback) ikiwa mtoa huduma yeyote atashindwa kufanya kazi.
 
-## Vipengele Muhimu
+## Vipengele Muhimu {#key-features}
 
 - **Usaidizi wa viwanda vingi (Multi-provider support)**: Ongeza kadi za viwanda vingi vya AI, kila kadi ikiwa na URL yake ya endpoint, API key, na mfumo wa msingi.
 - **Kubadilisha mpangilio kwa kuvuta (Drag-to-reorder)**: Panga viwanda kwa kipaumbele kwa kutumia kifungo cha kushika (grip handle) kwenye kila kadi; maombi hutumia viwanda kwa mpangilio.
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints huunganisha API za viwanda vya AI
 - **Kukua kiotomatiki wakati wa kuongeza (Auto-expand on add)**: Kadi mpya za viwanda huenea kiotomatiki ili uweze kujaza maelezo mara moja.
 - **Kuzuia cache ya script (Script cache busting)**: Script za viwanda huzuiliwa cache wakati wa kusasisha plugin ili kuhakikisha kwamba toleo la hivi karibuni linapakuliwa.
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 - WordPress 5.3 au zaidi
 - PHP 7.4 au zaidi
 - Plugin ya Ultimate Multisite (inapaswa iwe hai)
 - Endpoint ya API inayolingana na OpenAI (inayohifadhiwa mwenyewe au ya upande wa tatu)
 
-## Usakinishaji
+## Usakinishaji {#installation}
 
 1. Pakia faili za addon kwenye saraka yako ya `/wp-content/plugins/`
 2. Washa plugin kupitia menyu ya 'Plugins' ndani ya WordPress
 3. Nenda kwenye **Ultimate Multisite → AI Connector** ili kuweka mipangilio ya addon
 
-## Mipangilio
+## Mipangilio {#configuration}
 
-### Kuweka Mpangilio wa Viwanda Vingi
+### Kuweka Mpangilio wa Viwanda Vingi {#multi-provider-setup}
 
 Skrini ya mipangilio inatumia muundo wa kadi ambapo kila kadi inawakilisha mtoa huduma mmoja wa AI. Unaweza kuongeza viwanda vingi kadri unavyohitaji.
 
-#### Kuongeza Mtoa Huduma
+#### Kuongeza Mtoa Huduma {#adding-a-provider}
 
 1. Nenda kwenye **Ultimate Multisite → AI Connector** katika kiadmin cha mtandao (network admin)
 2. Bonyeza **Add Provider**
@@ -52,15 +52,15 @@ Skrini ya mipangilio inatumia muundo wa kadi ambapo kila kadi inawakilisha mtoa 
    - **Default Model** — kitambulisho cha mfumo cha kutumika kwa msingi kwa mtoa huduma huyu (mfano: `gpt-4o`, `mistral-small`)
 5. Bonyeza **Save Settings**
 
-#### Kuondoa Mtoa Huduma
+#### Kuondoa Mtoa Huduma {#removing-a-provider}
 
 Bonyeza kitufe cha **Remove** kwenye kadi yoyote ya mtoa huduma ili kuifuta. Weka mipangilio ili kutumia mabadiliko.
 
-#### Kupanga Upya Viwanda
+#### Kupanga Upya Viwanda {#reordering-providers}
 
 Vuta ikoni ya kushika (⣿) upande wa kushoto wa kadi yoyote ya mtoa huduma ili kupanga upya. Mpangilio unadhibiti kipaumbele cha kurudi nyuma: maombi hutumwa kwa mtoa huduma wa kwanza na kurudi nyuma kwa viwanda vinavyofuata ikiwa maombi yanafeli.
 
-### Uelekezaji wa Kurudi Nyuma (Fallback Routing)
+### Uelekezaji wa Kurudi Nyuma (Fallback Routing) {#fallback-routing}
 
 Wakati maombi kwa mtoa huduma mkuu yanashindikana — kwa sababu ya muda uliopita (timeout), kiwango cha maombi (rate limit), au kukatika kwa huduma — connector hujaribu kiotomatiki na mtoa huduma anayefuatayo or kwenye orodha. Hii inaendelea chini ya orodha hadi mtoa huduma atafanikiwa au viwanda vyote vimejaribiwa.
 
@@ -72,7 +72,7 @@ Wakati maombi kwa mtoa huduma mkuu yanashindikana — kwa sababu ya muda uliopit
 
 Kurudi nyuma ni wazi kwa plugin au theme inayoomba — wanapokea au jibu la mafanikio au hitilafu ya mwisho, bila kujali ni viwanda vingapi vilijaribiwa.
 
-### Rejeleo la Mipangilio ya Mtoa Huduma
+### Rejeleo la Mipangilio ya Mtoa Huduma {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Kurudi nyuma ni wazi kwa plugin au theme inayoomba — wanapokea au jibu la mafa
 | API Key | Yes | Key ya uthibitisho kwa mtoa huduma huyu |
 | Default Model | Yes | Kitambulisho cha mfumo kinachotumika wakati hakuna mfumo uliowekwa katika maombi |
 
-## Kutatua Matatizo
+## Kutatua Matatizo {#troubleshooting}
 
-### Hakuna viwanda vilivyorodheshwa
+### Hakuna viwanda vilivyorodheshwa {#no-providers-are-listed}
 
 Ikiwa orodha ya viwanda ni tupu baada ya kuweka mipangilio, thibitisha kwamba:
 
@@ -91,21 +91,21 @@ Ikiwa orodha ya viwanda ni tupu baada ya kuweka mipangilio, thibitisha kwamba:
 - Kivinjari chako hakikuzuizi kurahisisha ukurasa wa mipangilio (angalia console ya kivinjari kwa makosa ya JavaScript)
 - Plugin imewashwa na uko kwenye skrini ya kiadmin cha mtandao
 
-### Maombi yanashindikana kwa viwanda vyote
+### Maombi yanashindikana kwa viwanda vyote {#requests-are-failing-for-all-providers}
 
 - Thibitisha kwamba URL ya endpoint ya kila mtoa huduma inapatikana kutoka kwenye seva yako (sio tu kutoka kwenye kivinjari chako)
 - Angalia kwamba kila API key ni halali na haijapita muda wake
 - Pitia hali ya kiwango cha maombi (rate-limit) na quota ya mtoa huduma katika dashboard yao
 - Washa utoaji wa logi ya debug ya WordPress (`WP_DEBUG_LOG`) ili kukamata ujumbe wa makosa wa kina kutoka kwa connector
 
-### Mtoa huduma hatatumika kwa kurudi nyuma
+### Mtoa huduma hatatumika kwa kurudi nyuma {#a-provider-is-not-being-used-for-fallback}
 
 Kupanga upya kwa kuvuta (Drag-to-reorder) hubadilisha mpangilio wa kurudi nyuma. Thibitisha kwamba mtoa huduma unayotarajia kupokea maombi ya kurudi nyuma amepangwa vizuri katika orodha na kwamba URL ya endpoint na API key yake ni sahihi.
 
-### Kadi mpya ya mtoa huduma haikuenea kiotomatiki
+### Kadi mpya ya mtoa huduma haikuenea kiotomatiki {#new-provider-card-does-not-expand-automatically}
 
 Auto-expand inahitaji JavaScript iwe imewashwa kwenye kivinjari chako. Ikiwa kadi haikuenea kwa kubonyeza, angalia console ya kivinjari kwa makosa. Maudhui ya kadi huwa yanapatikana kwa kubonyeza kichwa cha kadi hata kama auto-expand haitafanya kazi.
 
-## Changelog
+## Changelog {#changelog}
 
 Tazama [Changelog](./changelog) kwa historia kamili ya toleo.

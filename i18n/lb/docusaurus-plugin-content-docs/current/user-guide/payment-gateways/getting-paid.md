@@ -3,13 +3,13 @@ title: Bezuelt ginn
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Bezuelt ginn (v2)
+# Bezuelt ginn (v2) {#getting-paid-v2}
 
 _**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 
 Ultimate Multisite huet en agebaute Memberschafts- a Rechnungssystem. Fir datt eise Rechnungssystem funktionéiert, hu mir déi heefegst Bezuel-Gateways integréiert, déi am E-Commerce benotzt ginn. Déi standardméisseg Bezuel-Gateways an Ultimate Multisite sinn _Stripe_ , _PayPal_ , a manuell Bezuelung. Dir kënnt och _WooCommerce_ , _GoCardless_ an _Payfast_ benotzen, fir Bezuelungen ze kréien, andeems Dir hir jeeweileg Add-ons installéiert.
 
-## Basis-Astellungen
+## Basis-Astellungen {#basic-settings}
 
 Dir kënnt all dës Bezuel-Gateways ënner de Bezuel-Astellunge vun Ultimate Multisite konfiguréieren. Dir fannt se iwwer **Ultimate Multisite Menü > Astellungen > Bezuelungen.**
 
@@ -39,7 +39,7 @@ Dëst verhënnert, datt eng Memberschaft esou ausgesäit, wéi wann se sech auto
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Wou d'Gateways ze fannen sinn:
+## Wou d'Gateways ze fannen sinn: {#where-to-find-the-gateways}
 
 Dir kënnt d'Bezuel-Gateways op där selwechter Säit ariichten ( **Ultimate Multisite > Settings > Payments**). Direkt ënner **aktive Bezuel-Gateways** , kënnt Dir gesinn: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ an _Manuell_.
 
@@ -67,7 +67,7 @@ Hei ass och eng voll Vue vun de Bezuel-Gateway-Astellungen:
 
 Elo, wann Dir _WooCommerce_ , _GoCardless_ oder _Payfast_ als Äre Bezuel-Gateway benotze wëllt, musst Dir **hir Add-ons installéieren a konfiguréieren**.
 
-### Wéi een de WooCommerce-Add-on installéiert:
+### Wéi een de WooCommerce-Add-on installéiert: {#how-to-install-the-woocommerce-add-on}
 
 Mir verstinn, datt _Stripe_ an _PayPal_ a verschiddene Länner net verfügbar sinn, wat Ultimate Multisite-Benotzer limitéiert oder drun hënnert, eise Plugin effektiv ze benotzen. Dofir hu mir en Add-on erstallt, fir _WooCommerce,_ z'integréieren, wat e ganz populäre E-Commerce-Plugin ass. Entwéckler ronderëm d'Welt hunn Add-ons erstallt, fir verschidde Bezuel-Gateways domat z'integréieren. Mir hunn dëst genotzt, fir d'Bezuel-Gateways ze erweideren, déi Dir mam Rechnungssystem vun Ultimate Multisite benotze kënnt.
 
@@ -95,7 +95,7 @@ Nodeems se aktivéiert ass, wann Dir d’WooCommerce-Erweiderung nach ëmmer net
 
 Fir méi iwwer d’WooCommerce Integration-Erweiderung ze liesen, **klickt hei**.
 
-### Wéi installéiert een d’GoCardless-Erweiderung:
+### Wéi installéiert een d’GoCardless-Erweiderung: {#how-to-install-the-gocardless-add-on}
 
 D’Schrëtt fir d’_GoCardless_-Erweiderung z’installéieren, si bal déiselwecht wéi bei der _WooCommerce_-Erweiderung. Gitt wgl. op d’Erweiderungs-Säit a wielt d’**Ultimate Multisite: GoCardless Gateway**-Erweiderung aus.
 
@@ -111,7 +111,7 @@ Nodeems d’Installatioun fäerdeg ass, gitt Dir op d’Erweiderungs-Säit weide
 
 Fir ze léieren, wéi Dir mam _GoCardless_-Gateway ufänkt, **liest dësen Artikel**.
 
-### Wéi installéiert een d’Payfast-Erweiderung:
+### Wéi installéiert een d’Payfast-Erweiderung: {#how-to-install-the-payfast-add-on}
 
 Gitt op d’Erweiderungs-Säit a wielt d’**Ultimate Multisite: Payfast Gateway**-Erweiderung aus.
 

@@ -3,7 +3,7 @@ title: Iphepha le-Account loMxhasi
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Iphepha le-Account loMthengi Wakho (v2)
+# Iphepha le-Account loMthengi Wakho (v2) {#your-clients-account-page-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite inguqulelo 2.x.**_
 
@@ -11,7 +11,7 @@ Xa abathengi bebhalisela isicwangciso kwinethiwekhi yakho, bafumana ukufikelela 
 
 Kule tutorial, siza kukukhokela kwiphepha le-account lomthengi kwaye uza kubona oko abathengi bakho banokukubona nokukwenza ngaphakathi kulo.
 
-## Iphepha le-Account
+## Iphepha le-Account {#the-account-page}
 
 Iphepha le-account liyafikeleleka ngokucofa ku-**Account** ngaphakathi kwi-Dashboard yomthengi wakho.
 
@@ -27,7 +27,7 @@ Emva kokuba umthengi ecofe kuyo, uza kubona isishwankathelo sobulungu bakhe, idi
 
 Banokutshintsha nobulungu baye kwesinye isicwangciso, okanye bathenge enye iphakheji okanye inkonzo oyinikezelayo. Makhe sijonge icandelo ngalinye ngokwahlukeneyo.
 
-### Isishwankathelo Sobulungu Bakho:
+### Isishwankathelo Sobulungu Bakho: {#your-membership-overview}
 
 Ibhloko yokuqala ngqo phantsi kwegama lewebhusayithi yabathengi bakho ibonisa isishwankathelo sesicwangciso sabo sangoku kunye neenkonzo/iipakheji ezathengwa kunye naso. Le bhloko ikwabonisa inombolo yobulungu, isixa sokuqala esahlawulwa ngaso, ixabiso lesicwangciso kunye nayo nayiphi na inkonzo/ipakheji, kwanokuba bahlawuliswa kangaphi kobu bulungu. Banokubona nokuba ubulungu bu-**Active** , **Expired** okanye **Canceled**.
 
@@ -43,7 +43,7 @@ Ngoku, ukuba abathengi bakho bakhetha ukuthenga iipakheji okanye iinkonzo zobu b
 
 Qaphela ukuba iikhowudi ze-coupon azinakongezwa kweli phepha lokutshintsha ubulungu. Ukuba umthengi usebenzise ikhowudi ye-coupon ekuthengweni kobulungu bokuqala, ikhowudi iya kusebenza nakobu bulungu butsha.
 
-### Ukuhlaziya Idilesi ye-Billing:
+### Ukuhlaziya Idilesi ye-Billing: {#updating-the-billing-address}
 
 Kwiphepha le-account, abathengi bakho banokuhlaziya idilesi yabo ye-billing. Kufuneka nje bacofe ku-**Hlaziya** ecaleni kwe-_Dilesi ye-Billing_.
 
@@ -53,7 +53,7 @@ Ifestile entsha iza kuvela kumthengi wakho. Konke ekufuneka ekwenzile kukugcwali
 
 ![Ifomu yokuhlaziya idilesi ye-billing](/img/account-page/billing-address-form.png)
 
-### Ukutshintsha i-Template yeSayithi:
+### Ukutshintsha i-Template yeSayithi: {#changing-the-site-template}
 
 Ukuvumela abathengi bakho ukuba batshintshe ii-template zeziza zabo, kufuneka uye ku-**Ultimate Multisite > Izicwangciso > Iziza** uze uvule ukhetho **Vumela Ukutshintsha i-Template**.
 
@@ -81,7 +81,7 @@ Emva kokuvula uqinisekiso nokucofa ku-**Qhuba Utshintsho** , i-template yesiza e
 
 Abathengi banokusebenzisa kwakhona **Reset current template** kule panel xa kufuneka babuyisele isayithi kwi-template eyabelwe ngoku. Njengokutshintshela kwenye i-template, ukubuyisela i-template kunokubhala ngaphezulu umxholo wesayithi, ngoko abathengi kufuneka bakuqinisekise kuphela xa besiqonda isenzo sokubuyisela.
 
-### Ukongeza ii-Domain zesiko:
+### Ukongeza ii-Domain zesiko: {#adding-custom-domains}
 
 Abathengi bakho baya kuba nenketho yokongeza i-domain yesiko yale plan kwiphepha labo le-account. Ukuvumela abathengi bakho basebenzise ii-domain zesiko, yiya ku-**Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Emva kokucofa **Next Step** , abathengi bakho banokongeza igama le-domain yabo y
 
 Emva kokucofa ku-**Add Domain** , i-domain iya kongezwa kwi-account yomthengi wakho. Into ekufuneka bayenze ngoku kukutshintsha iirekhodi ze-DNS zale domain yesiko kumregistrar we-domain wabo.
 
-### Ukutshintsha iPassword:
+### Ukutshintsha iPassword: {#changing-password}
 
 Ngaphakathi kwi-account dashboard, abathengi bakho banokutshintsha kwakhona i-password yabo ngokucofa ku-**Change Password**.
 
@@ -125,7 +125,7 @@ Oku kuya kubonisa ifestile entsha apho abathengi bakho kuya kufuneka bagcwalise 
 
 ![Ifomu yokutshintsha i-password enamasimi e-password yangoku kunye nentsha](/img/account-page/change-password-form.png)
 
-### Indawo Yengozi:
+### Indawo Yengozi: {#danger-zone}
 
 Sineenketho ezimbini eziboniswa kwicandelo le-**Danger Zone**: **Delete Site** kunye ne-**Delete Account**. Zombini zikwicandelo le-Danger Zone kuba ezi zenzo zimbini azinakubuyiselwa umva. Ukuba abathengi bakho bayayicima iwebhusayithi yabo okanye i-account yabo, abanakuzibuyisela.
 

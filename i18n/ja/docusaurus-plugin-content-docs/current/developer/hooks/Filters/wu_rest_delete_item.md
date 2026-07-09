@@ -4,11 +4,11 @@ title: フィルタ - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# フィルタ: wu_rest_delete_item
+# フィルタ: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 リクエストを進めることが許可されているかどうかをフィルタします。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 | $rest_base | `array` | エンティティスラッグ。 |
 | $this | `\Base_Manager` | オブジェクトインスタンス。 |
 
-### バージョン
+### バージョン {#since}
 
 - 2.0.0
 
-### ソース
+### ソース {#source}
 
 定義されている [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) 行 440

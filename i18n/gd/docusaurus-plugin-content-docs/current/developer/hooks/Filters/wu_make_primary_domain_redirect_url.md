@@ -4,13 +4,13 @@ title: Criathrag - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Criathrag: wu_make_primary_domain_redirect_url
+# Criathrag: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Criathraich an redirect URL às dèidh àrainn a dhèanamh prìomhach.
 
 Leigidh seo le luchd-leasachaidh gnàthachadh far an tèid luchd-cleachdaidh ath-stiùireadh às dèidh dhaibh àrainn a shuidheachadh gu soirbheachail mar phrìomh àrainn. Gu bunaiteach, nì e ath-stiùireadh chun an URL làithrich air a’ phrìomh làrach, no gu URL rianachd na làraich a thathar ag atharrachadh.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Leigidh seo le luchd-leasachaidh gnàthachadh far an tèid luchd-cleachdaidh ath
 | $domain | `\Domain` | Nì na h-àrainn a chaidh a dhèanamh prìomhach. |
 | $old_primary_domains | `array` | Array de IDan nan àrainnean a bha roimhe prìomhach. |
 
-### Bho
+### Bho {#since}
 
 - 2.0.0
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) aig loidhne 639
 
 
-## Tilleadh
+## Tilleadh {#returns}
 An redirect URL criathraichte.

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM nodrošina pārlūkā natīvu AI inferenci jūsu WordPress multisite tīklā. Tas palaiž lielos valodas modeļus pilnībā pārlūkā, izmantojot WebLLM un MLC dzini — bez API atslēgām, bez ārējiem izsaukumiem, bez datu atstāšanas no lietotāja ierīces.
 
-## Galvenās funkcijas
+## Galvenās funkcijas {#key-features}
 
 - **Inference pārlūka pusē**: LLM darbojas lokāli apmeklētāja pārlūkā, izmantojot WebLLM/MLC — servera GPU nav nepieciešams
 - **Peldošs tērzēšanas logrīks**: Pieteikušies lietotāji var dot uzvednes pārlūka puses LLM tieši no priekšgala
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM nodrošina pārlūkā natīvu AI inferenci jūs
 - **IndexedDB kešatmiņa**: Modeļa svaru lejupielādes saglabājas arī pēc CDN pāradresācijām, kas sabojā noklusējuma Cache API ceļu
 - **wpai filtra integrācija**: Pieslēdzas `wpai_preferred_text_models` filtram, lai AI Experiments funkcija maršrutētu uz pārlūka dzini, kad tas ir konfigurēts
 
-## Prasības
+## Prasības {#requirements}
 
 - WordPress 5.3 vai jaunāka versija
 - PHP 7.4 vai jaunāka versija
 - Ultimate Multisite plugin (aktīvs)
 - Pārlūks ar WebGPU atbalstu (Chrome 113+, Edge 113+ vai Firefox Nightly ar iespējotu WebGPU)
 
-## Instalēšana
+## Instalēšana {#installation}
 
 1. Augšupielādējiet papildinājuma failus savā `/wp-content/plugins/` direktorijā
 2. Aktivizējiet plugin, izmantojot WordPress izvēlni “Plugins”
 3. Dodieties uz **Ultimate Multisite → AI Connector**, lai konfigurētu papildinājumu
 
-## Peldošs tērzēšanas logrīks
+## Peldošs tērzēšanas logrīks {#floating-chat-widget}
 
 Peldošais tērzēšanas logrīks ļauj jebkuram pieteikušamies lietotājam mijiedarboties ar pārlūka puses LLM tieši no jūsu priekšgala, neatstājot lapu, kurā viņš atrodas.
 
-### Ko tas dara
+### Ko tas dara {#what-it-does}
 
 Kad tas ir iespējots, katras priekšgala lapas stūrī pieteikušiem lietotājiem parādās tērzēšanas ikona. Noklikšķinot uz ikonas, tiek atvērts tērzēšanas panelis, kur lietotājs var ierakstīt uzvednes un saņemt atbildes no lokāli darbojošā WebLLM modeļa. Tā kā modelis darbojas pilnībā pārlūkā, atbildes ir privātas un neietver nekādu servera puses apstrādi.
 
-### Admin joslas statusa indikators
+### Admin joslas statusa indikators {#admin-bar-status-indicator}
 
 WordPress admin joslā ir statusa indikators, kas rāda pašreizējo WebLLM dzinēja stāvokli:
 
@@ -56,7 +56,7 @@ WordPress admin joslā ir statusa indikators, kas rāda pašreizējo WebLLM dzin
 
 Indikators tiek atjaunināts reāllaikā, neprasot lapas pārlādēšanu.
 
-### Kā iespējot vai atspējot logrīku
+### Kā iespējot vai atspējot logrīku {#how-to-enable-or-disable-the-widget}
 
 1. Tīkla administrācijā dodieties uz **Ultimate Multisite → AI Connector**
 2. Atrodiet **Connector** paneli
@@ -65,17 +65,17 @@ Indikators tiek atjaunināts reāllaikā, neprasot lapas pārlādēšanu.
 
 Logrīku var iespējot vai atspējot arī katrai vietnei atsevišķi no pašas vietnes administrācijas, ja tīkla administrators ir piešķīris šo iespēju.
 
-## Logrīka iestatījumi
+## Logrīka iestatījumi {#widget-settings}
 
 **Ultimate Multisite → AI Connector** sadaļas Connector panelī ir šādi peldošā tērzēšanas logrīka iestatījumi:
 
-### Iespējot peldošo tērzēšanas logrīku
+### Iespējot peldošo tērzēšanas logrīku {#enable-floating-chat-widget}
 
 Ieslēdz vai izslēdz tērzēšanas logrīku visam tīklam. Kad tas ir atspējots, logrīks neparādās nevienā priekšgala lapā neatkarīgi no lietotāja lomas.
 
 **Noklusējums:** Izslēgts
 
-### Automātiskās uzvednes darbība
+### Automātiskās uzvednes darbība {#auto-prompt-behaviour}
 
 Nosaka, vai tērzēšanas logrīks automātiski nosūta uzvedni, kad lietotājs to atver.
 
@@ -93,7 +93,7 @@ Kad ir iestatīts **Pielāgota uzvedne**, parādās papildu teksta lauks, kurā 
 
 **Noklusējums:** Atspējots
 
-## SharedWorker izpildlaiks
+## SharedWorker izpildlaiks {#sharedworker-runtime}
 
 Versija 1.1.0 ievieš SharedWorker izpildlaiku MLC dzinim. Iepriekš katra pārlūka cilne, kas izmantoja WebLLM, ielādēja savu modeļa instanci, sacenšoties par GPU atmiņu un radot veiktspējas problēmas ierīcēs ar ierobežotu VRAM.
 
@@ -105,29 +105,29 @@ Ar SharedWorker izpildlaiku viena cilne darbojas kā dzinēja resursdators. Visa
 
 SharedWorker lietotājiem ir caurspīdīgs. Admin joslas statusa indikators vienmēr atspoguļo koplietotā dzinēja stāvokli, nevis atsevišķas cilnes stāvokli.
 
-## apiFetch starpprogrammatūra
+## apiFetch starpprogrammatūra {#apifetch-middleware}
 
 Papildinājums instalē `apiFetch` starpprogrammatūru, kas pārtver WordPress REST API pieprasījumus, kuri atbilst AI Client SDK modelim. Tā vietā, lai veiktu atgriezenisku HTTP pieprasījumu uz serveri, šie pieprasījumi tiek maršrutēti tieši uz lokālo WebLLM brokeri, kas darbojas SharedWorker.
 
 Tas nozīmē, ka plugin un tēmas, kas izmanto standarta WordPress `apiFetch` API, lai izsauktu AI endpointus, automātiski gūs labumu no pārlūka puses modeļa, kad tas būs pieejams, bez nepieciešamām koda izmaiņām.
 
-## Āķi un filtri
+## Āķi un filtri {#hooks-and-filters}
 
-### Filtri
+### Filtri {#filters}
 
 - `wpai_preferred_text_models` — Reģistrē WebLLM pārlūka dzini kā vēlamo teksta modeli. Papildinājums automātiski pieslēdzas šim filtram, kad dzinis ir konfigurēts un pieejams.
 - `ultimate_webllm_widget_enabled` — Pārraksta logrīka iespējoto stāvokli konkrētam lietotājam vai kontekstam. Atgriež `true` vai `false`.
 - `ultimate_webllm_auto_prompt` — Maina automātiskās uzvednes tekstu, pirms tas tiek nosūtīts uz logrīku. Saņem uzvednes virkni un pašreizējo `WP_Post` objektu.
 
-## Problēmu novēršana
+## Problēmu novēršana {#troubleshooting}
 
-### Tērzēšanas logrīks neparādās
+### Tērzēšanas logrīks neparādās {#the-chat-widget-does-not-appear}
 
 - Pārliecinieties, ka lietotājs ir pieteicies — logrīks tiek rādīts tikai autentificētiem lietotājiem
 - Pārbaudiet, vai Connector panelī ir ieslēgta opcija **Iespējot peldošo tērzēšanas logrīku**
 - Pārbaudiet, vai lietotāja pārlūks atbalsta WebGPU (skatiet prasības iepriekš)
 
-### Admin joslas indikators rāda "Kļūda"
+### Admin joslas indikators rāda "Kļūda" {#the-admin-bar-indicator-shows-error}
 
 Atveriet pārlūka izstrādātāja konsoli (F12) un meklējiet ar WebLLM saistītas kļūdas. Biežākie iemesli:
 
@@ -135,10 +135,10 @@ Atveriet pārlūka izstrādātāja konsoli (F12) un meklējiet ar WebLLM saistī
 - Modeļa svaru lejupielāde neizdevās — pārbaudiet tīkla savienojumu un mēģiniet notīrīt IndexedDB kešatmiņu pārlūka izstrādātāja rīkos (Application → IndexedDB)
 - Pārlūka paplašinājums bloķē SharedWorker
 
-### Modeļa svari tiek lejupielādēti katru reizi
+### Modeļa svari tiek lejupielādēti katru reizi {#model-weights-download-every-time}
 
 Papildinājums izmanto IndexedDB kā kešatmiņas aizmugursistēmu, lai nodrošinātu, ka modeļa svari saglabājas pēc CDN pāradresācijām. Ja svari tiek atkārtoti lejupielādēti katrā apmeklējumā, pārbaudiet, vai IndexedDB netiek notīrīts pārlūka privātuma iestatījuma vai paplašinājuma dēļ.
 
-## Izmaiņu žurnāls
+## Izmaiņu žurnāls {#changelog}
 
 Pilnu versiju vēsturi skatiet [Izmaiņu žurnālā](./changelog).

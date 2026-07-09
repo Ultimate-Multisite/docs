@@ -3,13 +3,13 @@ title: E-kirjade ja teadete saatmine
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-kirjade ja teadaannete saatmine (v2)
+# E-kirjade ja teadaannete saatmine (v2) {#sending-emails-and-broadcasts-v2}
 
 _**OLULINE MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
 
 Ultimate Multisite sisaldab funktsiooni, mis võimaldab sul klientidega suhelda, saates e-kirja sihitud kasutajale või kasutajate rühmale, samuti saata teateid nende admini dashboardile teadaannete edastamiseks
 
-## Lisa admini teated oma klientide dashboardile Broadcasts abil
+## Lisa admini teated oma klientide dashboardile Broadcasts abil {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Kasutades Ultimate Multisite teadaannete funktsiooni, saad lisada **admini teateid** oma kasutaja alamlehe admini dashboardile.
 
@@ -51,7 +51,7 @@ Pärast sõnumi loomist saad vajutada nuppu **Send**.
 
 Ja see ongi kõik. Admini teade peaks kohe ilmuma sinu kasutaja dashboardile.
 
-## Saada e-kirju oma klientidele
+## Saada e-kirju oma klientidele {#send-emails-to-your-customers}
 
 Kasutades Ultimate Multisite teadaannete funktsiooni, saad saata kasutajatele e-kirja. Sul on võimalus saata e-kiri ainult konkreetsetele kasutajatele või sihtida kindlat kasutajarühma toote või plaani alusel, mille all nad on tellinud.
 
@@ -81,11 +81,11 @@ Pärast sõnumi loomist saad vajutada nuppu **Send**.
 
 Ja nii lihtne ongi saata e-kiri oma lõppkasutajatele, kasutades teadaannete funktsiooni.
 
-## Süsteemi e-kirjad
+## Süsteemi e-kirjad {#system-emails}
 
 Ultimate Multisite süsteemi e-kirjad on need **automaatsed teavitused**, mille süsteem saadab pärast teatud toiminguid, nagu registreerimine, makse, domeeni sidumine jne. Neid e-kirju saab Ultimate Multisite seadetes muuta või kohandada. Sellega kaasneb ka funktsioon, mis võimaldab lähtestada ja importida olemasolevaid seadeid teisest Ultimate Multisite installatsioonist.
 
-### Lähtestamine ja importimine
+### Lähtestamine ja importimine {#resetting--importing}
 
 Uued Ultimate Multisite versioonid, samuti lisad, võivad ja hakkavad aeg-ajalt uusi e-kirju registreerima.
 
@@ -93,7 +93,7 @@ Konfliktide ja muude probleemide vältimiseks **me ei lisa uusi e-kirja malle si
 
 Siiski saavad superadminid ja agendid neid äsja registreeritud e-kirju importija tööriista kaudu importida. See protsess loob uue süsteemi e-kirja uue e-kirja malli sisu ja konfiguratsiooniga, võimaldades superadminil teha soovitud muudatusi või jätta need nii, nagu need on.
 
-#### Kuidas importida süsteemi e-kirju
+#### Kuidas importida süsteemi e-kirju {#how-to-import-system-emails}
 
 Mine oma Ultimate Multisite seadete lehele ja ava vahekaart **Emails**.
 
@@ -111,7 +111,7 @@ Seejärel saad lülitada Import Emails valikuid, et näha, milliseid süsteemi e
 
 <!-- Kuvatõmmis pole saadaval: lähtestamise ja importimise modaalaken, kus e-kirjade importimise valikud on laiendatud -->
 
-#### Süsteemi e-kirjade lähtestamine
+#### Süsteemi e-kirjade lähtestamine {#reseting-system-emails}
 
 Mõnikord märkad, et konkreetse e-kirja malli muudatused ei sobi sulle enam ja soovid selle lähtestada **vaikeolekusse**.
 

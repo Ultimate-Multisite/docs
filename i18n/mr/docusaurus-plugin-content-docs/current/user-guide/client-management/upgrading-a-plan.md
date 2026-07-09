@@ -3,7 +3,7 @@ title: Plan अपग्रेड करणे
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan अपग्रेड करणे (v2)
+# Plan अपग्रेड करणे (v2) {#upgrading-a-plan-v2}
 
 _**महत्त्वाची टीप: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 
@@ -41,7 +41,7 @@ checkout पूर्ण झाल्यानंतर, नवीन product(s)
 
 ##
 
-## Upgrade आणि Downgrade मार्ग
+## Upgrade आणि Downgrade मार्ग {#upgrade-and-downgrade-paths}
 
 तुमच्या प्रत्येक product वर, तुमच्याकडे **Up & Downgrades** tab असेल. त्या tab वरील पहिला option **Plan Group** नावाचे field आहे.
 

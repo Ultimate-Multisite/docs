@@ -3,7 +3,7 @@ title: Csomag frissítése
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Csomag frissítése (v2)
+# Csomag frissítése (v2) {#upgrading-a-plan-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
@@ -41,7 +41,7 @@ Miután a pénztárfolyamat befejeződött, az új termék(ek) hozzáadódnak az
 
 ##
 
-## Frissítési és visszaváltási útvonalak
+## Frissítési és visszaváltási útvonalak {#upgrade-and-downgrade-paths}
 
 Minden termékeden lesz egy **Up & Downgrades** lap. Ezen a lapon az első opció egy **Plan Group** nevű mező.
 

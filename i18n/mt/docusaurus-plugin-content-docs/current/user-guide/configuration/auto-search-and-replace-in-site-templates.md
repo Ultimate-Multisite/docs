@@ -3,7 +3,7 @@ title: Auto Search and Replace f'Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace f'i Template Sites (v2)
+# Auto Search and Replace f'i Template Sites (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Il tutorial ma jirxi WP UItimo borsa 2.x.**_
 
@@ -15,7 +15,7 @@ Imbagħad, tista' is-sogħtu aġġixxi field ta registrazzjoni li jittlaq il-dat
 
 Il-Ultimate Multisite sistaġġi l-placeholder b'dati li qed jkun għandhom l-klijenti awtomatikament.
 
-## **Soluzzjoni tal-problema "template full ta placeholder"**
+## **Soluzzjoni tal-problema "template full ta placeholder"** {#solving-the-template-full-of-placeholders-problem}
 
 Koll dan huwa grazi, iżda nistgħu nqaslu b'problema xogħol: il-template siti tagħna - li l-klijenti jistgħu jvisittawhom - huma kollha mfulaħa b placeholder squall li ma jgħidu ħafna.
 

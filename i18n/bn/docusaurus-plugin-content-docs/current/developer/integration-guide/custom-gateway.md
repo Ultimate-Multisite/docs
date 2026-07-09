@@ -3,11 +3,11 @@ title: কাস্টম গেটওয়ে উন্নয়ন
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# কাস্টম Gateway ডেভেলপমেন্ট
+# কাস্টম Gateway ডেভেলপমেন্ট {#custom-gateway-development}
 
 `Base_Gateway` ক্লাস প্রসারিত করে আপনি কাস্টম পেমেন্ট gateway তৈরি করতে পারেন।
 
-## Gateway ক্লাস
+## Gateway ক্লাস {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway নিবন্ধন করুন
+## Gateway নিবন্ধন করুন {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## প্রধান মেথড
+## প্রধান মেথড {#key-methods}
 
 | Method | উদ্দেশ্য |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | refund অনুরোধ পরিচালনা করা |
 | `get_payment_methods()` | কোনো গ্রাহকের জন্য সংরক্ষিত পেমেন্ট মেথড ফেরত দেওয়া |
 
-## পুনরাবৃত্ত membership-এর জন্য নবায়ন credentials
+## পুনরাবৃত্ত membership-এর জন্য নবায়ন credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway integration-গুলোকে `auto_renew` সংরক্ষিত হওয়ার আগে কোনো পুনরাবৃত্ত membership-এর পুনর্ব্যবহারযোগ্য নবায়ন credential আছে কি না জানাতে দেয়। `wu_membership_has_renewal_credential` hook করুন এবং ফেরত দিন:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 নতুন পুনর্ব্যবহারযোগ্য credential সংরক্ষিত হওয়ার পর আপনার gateway-এর সফল re-authorization flow-এর অংশ হিসেবে missing-credential marker মুছে দিন।
 
-## টিপস
+## টিপস {#tips}
 
 - ব্যর্থ হলে সবসময় `WP_Error` ফেরত দিন, যাতে Ultimate Multisite error প্রদর্শন পরিচালনা করতে পারে
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway-নির্দিষ্ট logging-এর জন্য `wu_log_add()` ব্যবহার করুন
 
-## AI connector provider সক্ষমতা
+## AI connector provider সক্ষমতা {#ai-connector-provider-capabilities}
 
 AI connector-সমর্থিত operation কল করে এমন কাস্টম integration-গুলোকে AI Provider for Anthropic Max v1.3.0-এর সঙ্গে চালু হওয়া সমর্থিত OAuth provider সেটের সঙ্গে সামঞ্জস্য রাখতে হবে:
 

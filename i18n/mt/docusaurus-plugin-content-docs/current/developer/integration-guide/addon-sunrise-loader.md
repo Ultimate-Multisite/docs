@@ -3,17 +3,17 @@ title: Għodda għat-Tagħbija tal-Fajl Sunrise tal-Estensjoni
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 iżid loader ta' estensjonijiet sunrise għal add-ons u integrazzjonijiet custom ta' MU-plugin li jeħtieġu jaħdmu waqt il-bootstrapping ta' WordPress sunrise mingħajr ma jiġi editjat il-fajl iġġenerat `wp-content/sunrise.php`.
 
-## Meta tużah
+## Meta tużah {#when-to-use-it}
 
 Uża estensjoni sunrise meta l-integrazzjoni tiegħek trid taħdem qabel ma jitgħabbew plugins regolari, bħal routing ta' domain custom, immaniġġjar ta' talbiet speċifiċi għall-host, jew aġġustamenti bikrija tal-bootstrap tan-network.
 
 Għal integrazzjonijiet normali, ippreferi plugins regolari ta' WordPress, MU-plugins, u l-hooks dokumentati ta' Ultimate Multisite. Il-kodiċi sunrise jaħdem kmieni ħafna u għandu jibqa' żgħir, difensiv, u mingħajr dipendenzi.
 
-## Konvenzjoni tal-ismijiet tal-fajls
+## Konvenzjoni tal-ismijiet tal-fajls {#file-naming-convention}
 
 Oħloq fajl PHP bl-isem `sunrise.php` f'direttorju ta' addon li ismu jibda b'`ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Fajls li jaqblu jitgħabbew f'ordni alfabetika skont il-path tal-addon.
 
-## Fejn tqiegħed il-fajl
+## Fejn tqiegħed il-fajl {#where-to-place-the-file}
 
 Qiegħed il-fajl fid-direttorju root tal-addon li għandu l-imġiba sunrise:
 
@@ -45,7 +45,7 @@ L-iskan jiġi riżolt relattivament għal `WP_CONTENT_DIR`, mhux għall-valur at
 
 Teditjax il-fajl iġġenerat `wp-content/sunrise.php` direttament. Il-loader iħalli kodiċi custom jestendi l-imġiba sunrise mingħajr ma joħloq fork tal-fajl sunrise ewlieni li Ultimate Multisite jinstalla u jaġġorna.
 
-## Hooks u filters disponibbli
+## Hooks u filters disponibbli {#hooks-and-filters-available}
 
 Il-fajls sunrise tal-addon jaħdmu wara li d-domain mapping ta' Ultimate Multisite jkun tgħabba u qabel ma WordPress jixgħel `ms_loaded`. F'dan il-punt fajl sunrise jista':
 
@@ -58,7 +58,7 @@ Ultimate Multisite jixgħel `wu_sunrise_loaded` wara li l-loader sunrise tiegħu
 
 Sejjaħ biss funzjonijiet li diġà huma mgħobbija fil-fażi sunrise. Evita xogħol tqil fuq id-database, rendering ta' templates, talbiet HTTP, u kodiċi li jassumi li l-ordni normali tat-tagħbija tal-plugin tkun tlestiet.
 
-## Eżempju minimu
+## Eżempju minimu {#minimal-example}
 
 ```php
 <?php

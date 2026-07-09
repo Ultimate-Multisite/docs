@@ -3,7 +3,7 @@ title: GoCardless Registo de alterações
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Registo de alterações do GoCardless
+# Registo de alterações do GoCardless {#gocardless-changelog}
 
 Versão: 1.0.3 - Lançada em 2026-05-05
 * Correção: Sites pendentes órfãos agora são limpos quando uma adesão GoCardless é cancelada enquanto está em estado pendente ou em espera

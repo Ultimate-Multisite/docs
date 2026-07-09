@@ -4,20 +4,20 @@ title: Isenzo - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# Isenzo: wu_captcha_after_validation
+# Isenzo: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
 
 Sisebenza ngemva kokuqinisekiswa kwe-captcha.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
 | $result | `array` | Umphumela wokuqinisekisa. |
 | $token | `string` | I-token eqinisekisiwe. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 1.2.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L224) kulayini 224

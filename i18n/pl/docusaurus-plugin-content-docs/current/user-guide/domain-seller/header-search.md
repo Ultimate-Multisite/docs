@@ -3,11 +3,11 @@ title: Wyszukiwanie domen w nagłówku
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Wyszukiwanie domeny w nagłówku
+# Wyszukiwanie domeny w nagłówku {#header-domain-search}
 
 Użyj tej konfiguracji, gdy chcesz mieć mały formularz w nagłówku, który rozpoczyna wyszukiwanie domeny, a następnie pozwala klientowi wybrać spośród dostępnych domen w checkout Ultimate Multisite.
 
-## Wymagania
+## Wymagania {#requirements}
 
 - Ultimate Multisite aktywny w sieci.
 - Multisite Ultimate Domain Seller aktywny w sieci.
@@ -16,7 +16,7 @@ Użyj tej konfiguracji, gdy chcesz mieć mały formularz w nagłówku, który ro
   - Skonfigurowanymi obsługiwanymi TLD, na przykład `com`, `net` i `org`.
 - Prawidłowy formularz checkout zawierający pole **Wybór domeny**.
 
-## Formularz checkout
+## Formularz checkout {#checkout-form}
 
 1. Utwórz lub edytuj formularz checkout używany przez stronę rejestracji.
 2. Dodaj normalne wymagane pola checkout/Account, w tym **Nazwa użytkownika**. Formularz checkout zawierający tylko pole domeny jest odrzucany przez walidację Ultimate Multisite.
@@ -30,7 +30,7 @@ Strona rejestracji powinna renderować formularz checkout, na przykład:
 [wu_checkout slug="domain-form"]
 ```
 
-## Formularz w nagłówku
+## Formularz w nagłówku {#header-form}
 
 Dodaj mały formularz `GET` w nagłówku witryny, który wysyła wprowadzony termin wyszukiwania na stronę checkout jako `domain_name`:
 
@@ -44,7 +44,7 @@ Dodaj mały formularz `GET` w nagłówku witryny, który wysyła wprowadzony ter
 
 Nie wybieraj wstępnie domeny w niestandardowym JavaScript nagłówka. Nagłówek powinien tylko przekazać termin wyszukiwania. Skrypt checkout Domain Seller odczytuje `?domain_name=example`, wypełnia pole wyszukiwania checkout i uruchamia wyszukiwanie dostępności, aby klient mógł wybrać spośród zwróconych domen.
 
-## Oczekiwane zachowanie
+## Oczekiwane zachowanie {#expected-behaviour}
 
 Wyszukanie `example` w nagłówku powinno otworzyć:
 
@@ -61,7 +61,7 @@ Checkout powinien następnie wyświetlić wyniki możliwe do wyboru, takie jak:
 
 Po wybraniu dostępnego wyniku podsumowanie zamówienia powinno zawierać produkt rejestracji domeny oraz wybraną nazwę domeny.
 
-## Weryfikacja
+## Weryfikacja {#verification}
 
 1. Otwórz stronę główną.
 2. Wyszukaj samą nazwę, na przykład `example`.
@@ -71,7 +71,7 @@ Po wybraniu dostępnego wyniku podsumowanie zamówienia powinno zawierać produk
 6. Kliknij **Wybierz** dla dostępnej domeny.
 7. Potwierdź, że podsumowanie zamówienia zawiera `Domain Registration - example.com` lub wybraną domenę.
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
 - Jeśli lista się nie pojawia, sprawdź kartę sieci w przeglądarce pod kątem `admin-ajax.php?action=wu_domain_search` i potwierdź, że zwraca niepuste `domains` lub `results`.
 - Jeśli formularz checkout nie przechodzi walidacji podczas zapisywania, dodaj wymagane pola Account, takie jak **Nazwa użytkownika**.

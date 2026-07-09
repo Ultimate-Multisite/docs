@@ -3,11 +3,11 @@ title: Referència de configuració
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referència de configuració
+# Referència de configuració {#settings-reference}
 
 Aquesta pàgina fa el seguiment de la configuració que afecta l’administració del dia a dia i els canvis recents de comportament a Ultimate Multisite.
 
-## Altres opcions
+## Altres opcions {#other-options}
 
 L’àrea **Altres opcions** apareix a **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ L’àrea **Altres opcions** apareix a **Ultimate Multisite > Settings > Login &
 |---|---|
 | **Activa Jumper** | Mostra l’eina de navegació ràpida Jumper a l’àrea d’administració. Utilitzeu-la per anar directament a les pantalles d’Ultimate Multisite, als objectes de xarxa i a les destinacions d’administració compatibles. Desactiveu-la si no voleu que aquesta drecera sigui visible. |
 
-## Informes d’errors i telemetria
+## Informes d’errors i telemetria {#error-reporting-and-telemetry}
 
 La configuració anterior d’acceptació d’informes d’errors s’ha eliminat de la pàgina de configuració. La telemetria anònima està desactivada i no hi ha cap commutador d’UI per activar-la.
 
 Si manteniu guies internes o captures de pantalla per a la pàgina de configuració, elimineu les referències a l’antic camp d’acceptació d’informes d’errors perquè els administradors no busquin una configuració que ja no hi és.
 
-## Configuració d’importació/exportació
+## Configuració d’importació/exportació {#importexport-settings}
 
 La pestanya de configuració **Import/Export** descriu quines configuracions controla i enllaça directament amb **Ultimate Multisite > Site Export** per als arxius de lloc i de xarxa. Utilitzeu la pestanya de configuració per a la configuració d’importació/exportació, utilitzeu **Tools > Export & Import** per al flux de treball d’exportació/importació d’un sol lloc, i utilitzeu l’eina Site Export quan necessiteu un arxiu complet de Network Export.
 
-## Avís de saldo de Domain Seller HostAfrica
+## Avís de saldo de Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Quan l’addon Domain Seller està connectat a HostAfrica, els administradors de xarxa ara veuen un avís descartable de saldo baix quan el saldo del compte de revenedor és massa baix per a un processament fiable del registre o la renovació de dominis.
 
 Tracteu aquest avís com un avís operatiu: recarregueu el saldo de revenedor de HostAfrica abans d’acceptar més registres de domini de pagament i, després, torneu a la configuració de Domain Seller o a la pantalla de monitoratge de dominis per confirmar que els registres i les renovacions poden continuar amb normalitat.
 
-## Configuració dels connectors de proveïdors d’AI
+## Configuració dels connectors de proveïdors d’AI {#ai-provider-connector-settings}
 
 La configuració dels connectors de proveïdors d’AI ara només exposa els pools de comptes OAuth compatibles:
 

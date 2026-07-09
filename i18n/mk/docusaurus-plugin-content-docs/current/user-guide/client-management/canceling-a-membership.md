@@ -3,7 +3,7 @@ title: Откачување на членство
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Отказ од членство (v2)
+# Отказ од членство (v2) {#canceling-a-membership-v2}
 
 _**ВАЖНА ЗАБЕЛЕЖКА: Ова приложување се однесува на Ultimate Multisite верзија 2.x.**_
 

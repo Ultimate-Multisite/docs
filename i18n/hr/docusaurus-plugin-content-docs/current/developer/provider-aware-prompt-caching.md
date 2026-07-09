@@ -3,11 +3,11 @@ title: Predmemoriranje promptova s obzirom na pružatelja
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Predmemoriranje promptova svjesno pružatelja
+# Predmemoriranje promptova svjesno pružatelja {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 uvodi **predmemoriranje promptova svjesno pružatelja**, koje optimizira troškove API-ja i latenciju predmemoriranjem promptova kod različitih LLM pružatelja. Svaki pružatelj ima različite mehanizme i konfiguracije predmemoriranja.
 
-## Pregled
+## Pregled {#overview}
 
 Predmemoriranje promptova omogućuje vam da:
 
@@ -23,11 +23,11 @@ Različiti pružatelji različito implementiraju predmemoriranje:
 - **OpenRouter**: Predmemoriranje specifično za pružatelja
 - **Vertex Anthropic**: Predmemoriranje promptova s kontrolom predmemorije
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini pruža eksplicitno upravljanje predmemorijom putem `cachedContents` API-ja.
 
-### Konfiguracija
+### Konfiguracija {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Stvaranje predmemoriranog prompta
+### Stvaranje predmemoriranog prompta {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Upotreba predmemoriranog prompta
+### Upotreba predmemoriranog prompta {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Životni ciklus predmemorije
+### Životni ciklus predmemorije {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Najbolje prakse za Gemini
+### Najbolje prakse za Gemini {#best-practices-for-gemini}
 
 - **Postavite odgovarajući TTL**: Uravnotežite uštede troškova i zastarjelost predmemorije
 - **Predmemorirajte sistemske promptove**: Ponovno upotrijebite isti sistemski prompt kroz više zahtjeva
 - **Pratite upotrebu predmemorije**: Pratite koje se predmemorije najviše koriste
 - **Očistite istekle predmemorije**: Povremeno izbrišite neiskorištene predmemorije
 
-## Azure OpenAI: predmemoriranje promptova
+## Azure OpenAI: predmemoriranje promptova {#azure-openai-prompt-caching}
 
 Azure OpenAI podržava predmemoriranje promptova s automatskim upravljanjem TTL-om.
 
-### Konfiguracija
+### Konfiguracija {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Omogućavanje predmemoriranja
+### Omogućavanje predmemoriranja {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Zaglavlja predmemorije
+### Zaglavlja predmemorije {#cache-headers}
 
 Azure OpenAI koristi HTTP zaglavlja za kontrolu predmemorije:
 
@@ -152,7 +152,7 @@ Podržane vrijednosti:
 - `no_cache`: Nemoj predmemorirati ovaj zahtjev
 - `no_store`: Nemoj predmemorirati i nemoj ponovno upotrebljavati
 
-### Praćenje upotrebe predmemorije
+### Praćenje upotrebe predmemorije {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Najbolje prakse za Azure OpenAI
+### Najbolje prakse za Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Koristite dosljedne promptove**: Identični promptovi imaju koristi od predmemoriranja
 - **Postavite razuman TTL**: Uravnotežite trošak i svježinu
 - **Pratite metrike predmemorije**: Pratite stvaranje predmemorije u odnosu na pogotke
 - **Grupirajte slične zahtjeve**: Grupirajte zahtjeve kako biste maksimalno povećali pogotke predmemorije
 
-## OpenRouter: predmemoriranje specifično za pružatelja
+## OpenRouter: predmemoriranje specifično za pružatelja {#openrouter-provider-specific-caching}
 
 OpenRouter podržava predmemoriranje putem temeljnih pružatelja (OpenAI, Anthropic itd.).
 
-### Konfiguracija
+### Konfiguracija {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Upotreba OpenRouter predmemoriranja
+### Upotreba OpenRouter predmemoriranja {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Opcije specifične za pružatelja
+### Opcije specifične za pružatelja {#provider-specific-options}
 
 Različiti pružatelji imaju različite mehanizme predmemoriranja:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Najbolje prakse za OpenRouter
+### Najbolje prakse za OpenRouter {#best-practices-for-openrouter}
 
 - **Upoznajte predmemoriranje svog pružatelja**: Svaki pružatelj ima različite mehanizme
 - **Testirajte ponašanje predmemoriranja**: Provjerite radi li predmemoriranje s odabranim pružateljem
 - **Pratite troškove**: Pratite uštede od predmemoriranja
 - **Koristite dosljedne modele**: Promjena modela prekida pogotke predmemorije
 
-## Vertex Anthropic: predmemoriranje promptova s kontrolom predmemorije
+## Vertex Anthropic: predmemoriranje promptova s kontrolom predmemorije {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) podržava predmemoriranje promptova s eksplicitnom kontrolom predmemorije.
 
-### Konfiguracija
+### Konfiguracija {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Korištenje Vertex Anthropic predmemoriranja
+### Korištenje Vertex Anthropic predmemoriranja {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Vrste kontrole predmemorije
+### Vrste kontrole predmemorije {#cache-control-types}
 
 - **ephemeral**: Predmemorija tijekom trajanja zahtjeva (zadano)
 - **persistent**: Predmemorija kroz više zahtjeva (ako je podržano)
 
-### Praćenje korištenja predmemorije
+### Praćenje korištenja predmemorije {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Najbolje prakse za Vertex Anthropic
+### Najbolje prakse za Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Koristite ephemeral predmemoriranje**: Dobro za predmemoriranje u jednoj sesiji
 - **Postavite max_tokens na odgovarajući način**: Uravnotežite veličinu predmemorije i trošak
 - **Pratite metrike predmemorije**: Pratite učinkovitost predmemorije
 - **Testirajte sa svojim radnim opterećenjem**: Provjerite koristi li predmemoriranje vašem slučaju upotrebe
 
-## Strategija predmemoriranja među pružateljima
+## Strategija predmemoriranja među pružateljima {#cross-provider-caching-strategy}
 
-### Ujedinjena konfiguracija
+### Ujedinjena konfiguracija {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Otkrivanje pružatelja
+### Otkrivanje pružatelja {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Rezervna strategija
+### Rezervna strategija {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Optimizacija troškova
+## Optimizacija troškova {#cost-optimization}
 
-### Izračun ušteda
+### Izračun ušteda {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Savjeti za optimizaciju
+### Savjeti za optimizaciju {#optimization-tips}
 
 - **Predmemorirajte velike sistemske promptove**: Najveće uštede troškova
 - **Ponovno upotrijebite kontekst**: Predmemorirajte često korištene kontekstne dokumente
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Pratite učinkovitost predmemorije**: Pratite stvarne uštede
 - **Prilagodite TTL**: Uravnotežite trošak i svježinu
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
-### Predmemorija se ne koristi
+### Predmemorija se ne koristi {#cache-not-being-used}
 
 - Provjerite je li predmemoriranje omogućeno u konfiguraciji
 - Provjerite jesu li promptovi identični (predmemoriranje zahtijeva točno podudaranje)
 - Provjerite nije li predmemorija istekla
 - Provjerite ograničenja predmemorije specifična za pružatelja
 
-### Izrada predmemorije ne uspijeva
+### Izrada predmemorije ne uspijeva {#cache-creation-failing}
 
 - Provjerite je li veličina predmemorije unutar ograničenja pružatelja
 - Provjerite je li sintaksa kontrole predmemorije ispravna
 - Provjerite podržava li pružatelj predmemoriranje za vaš model
 - Pregledajte dokumentaciju pružatelja radi ograničenja
 
-### Neočekivani troškovi
+### Neočekivani troškovi {#unexpected-costs}
 
 - Pratite izradu predmemorije u odnosu na tokene čitanja iz predmemorije
 - Provjerite koristi li se predmemorija zaista
 - Provjerite promašaje predmemorije zbog varijacija promptova
 - Razmislite o prilagodbi TTL-a ili strategije predmemorije
 
-## Usporedba pružatelja
+## Usporedba pružatelja {#provider-comparison}
 
 | Značajka | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Smanjenje troškova | 90% | 90% | Ovisno o pružatelju | 90% |
 | Praćenje | Detaljno | Putem metrika | Ovisno o pružatelju | Putem usage |
 
-## Sljedeći koraci
+## Sljedeći koraci {#next-steps}
 
 1. **Odaberite svog pružatelja**: Odaberite na temelju svojih potreba
 2. **Konfigurirajte predmemoriranje**: Postavite predmemoriranje specifično za pružatelja

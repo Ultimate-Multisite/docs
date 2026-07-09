@@ -3,7 +3,7 @@ title: Formijiet tal-checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formuli Checkout
+# Formuli Checkout {#checkout-forms}
 
 Formuli Checkout hu mod kifli u flessibbli biex tixegħu dwar approċċi differenti meta tgħrossa klienti ewlenin.
 
@@ -26,13 +26,13 @@ Possibbiltà li tista' edita jew duplika il formi li già tieni, cliccando sulle
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Panoramica dell'Editor tal-Forma di Checkout
+#### Panoramica dell'Editor tal-Forma di Checkout {#checkout-form-editor-overview}
 
 L'editor tal-Forma di checkout fornisce una interfaccia completa per costruire i tuoi formi di registrazione. Hawn l-panoramica tal-layout tal-editor:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Edita tal-Forma di Checkout
+### Edita tal-Forma di Checkout {#editing-a-checkout-form}
 
 Tista' formi di checkout għal diversi fini. F'dan l-eżempju, nista' nfermu fuq form ta registrazzjoni.
 
@@ -90,7 +90,7 @@ Biex tiġi l-shortcode tal-form tiegħek, għippien fuq "Generate Shortcode" u k
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Il Field ta Pricing Table (Tawla tal-Prezzi)
+### Il Field ta Pricing Table (Tawla tal-Prezzi) {#the-pricing-table-field}
 
 Il field **Pricing Table** jipparix il-prodotti tiegħek fuq il-checkout form biex l-klijenti jistgħu jgħażlu plan. Meta tikkondena dan il field, puoi tsetConfiga diversi opzioni:
 
@@ -108,17 +108,17 @@ Hawn kif tispari d-dettail ta pricing table fuq il-frontend registration form:
 
 Meta tiddar il-prodotto f'Pricing Table qabel ma jinkludi l-form il-field li jagħmlu kompletament il-checkout flow tal-prodotto, l-editor juri awżar. Uża l-awżar biex taddix il-field essenzjali muesse qabel ma tgħmli pubblikazzjoni jew tagħmel cambiamenti għall-form ta registration attif.
 
-### Aggiungere un Interruttore di Selezione Periodu
+### Aggiungere un Interruttore di Selezione Periodu {#adding-a-period-selection-toggle}
 
 Se hai configurato le [Price Variations](creating-your-first-subscription-product#price-variations) sui tuoi prodotti (ad esempio, prezzi mensili e annuali), puoi aggiungere un campo **Period Selection** al tuo modulo di checkout. Questo campo mostra un interruttore che permette ai clienti di passare tra i periodi di fatturazione, e la tabella dei prezzi si aggiorna dinamicamente in tempo reale.
 
-#### Fase 1: Configurare le Price Variations sui Tuoi Prodotti
+#### Fase 1: Configurare le Price Variations sui Tuoi Prodotti {#step-1-set-up-price-variations-on-your-products}
 
 Prima di aggiungere il campo Period Selection, assicurati che i tuoi prodotti abbiano configurate le price variations. Vai su **Ultimate Multisite > Products**, modifica un prodotto e naviga alla scheda **Price Variations** per aggiungere periodi di fatturazione alternativi (ad esempio, Annuale a un prezzo scontato).
 
 ![Tab Price Variations su un prodotto](/img/config/product-price-variations-tab.png)
 
-#### Fase 2: Aggiungere il Campo Period Selection al Tuo Modulo di Checkout
+#### Fase 2: Aggiungere il Campo Period Selection al Tuo Modulo di Checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Vai su **Ultimate Multisite > Checkout Forms** e modifica il tuo modulo di checkout.
 
@@ -141,13 +141,13 @@ Prima di aggiungere il campo Period Selection, assicurati che i tuoi prodotti ab
 
 7. Klikkja fuq **Save Field**.
 
-#### Idrasss 3: Posizjoni tal-Field Sopra tal-Tavola tal-Prezzi
+#### Idrasss 3: Posizjoni tal-Field Sopra tal-Tavola tal-Prezzi {#step-3-position-the-field-above-the-pricing-table}
 
 Għal l-esperjenza tiegħu li hija l-migħla, assorda li il-field Period Selection juri **qabel** tal-Pricing Table fil-checkout step tiegħek. Tista' t-draġġja fields biex tuża l-order tiegħhom fid-frontend editor tal-checkout form. B'hekk, il-klijenti ewdo jippilgħu period tal-fatturament u poi jorru l-prezzi għal dawk il-period.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Come Jinqasse Frontend
+#### Come Jinqasse Frontend {#how-it-works-on-the-frontend}
 
 Molt configurat, il-klijenti li jżurru l-pagina ta registrazzjoni tiegħek jorru selettur tal-period sopar tal-pricing table. Meta jaċċassu period tal-fatturament differenti:
 
@@ -155,7 +155,7 @@ Molt configurat, il-klijenti li jżurru l-pagina ta registrazzjoni tiegħek jorr
   * Jekk **Force Different Durations** ma hija attivat fuq il-Pricing Table field, il-prodotti li ma għandhom variabbli fl-prezz għall-period selett huma magħrufin.
   * Jekk **Force Different Durations** attivat, kull prodotto jifforma visibbli kapa jkun ma għandu variabbli għall-period selett (juri l-prezz default tiegħu).
 
-#### Pre-selezzjoni tal-Period tal-Fatturament b'Attravers URL
+#### Pre-selezzjoni tal-Period tal-Fatturament b'Attravers URL {#pre-selecting-a-billing-period-via-url}
 
 Tista' pre-selezżjoni prodot u period tal-fatturament b'attravers URL. Ultimate Multisite jippoġġa dan il-pattern ta URL:
 
@@ -163,11 +163,11 @@ Tista' pre-selezżjoni prodot u period tal-fatturament b'attravers URL. Ultimate
   * `/register/premium/12` — Pre-selezzjoni tal-prodot u durazzjoni ta 12 msemmi
   * `/register/premium/1/year` — Pre-selezzjoni tal-prodot b'durazzjoni ta 1-anno
 
-### Il Field tal-Selezzjoni tal-Template
+### Il Field tal-Selezzjoni tal-Template {#the-template-selection-field}
 
 Il-field **Template Selection** jista' l-klijenti jgħażlu template tal-site klentar durante checkout. Il-field huwa inklużi default fil-template checkout single step u multi-step li tiddarru biex t-addizzaw f Ultimate Multisite v2.6.1.
 
-#### Aggiunta manuali tal-field
+#### Aggiunta manuali tal-field {#adding-the-field-manually}
 
 אם אתה עובד עם טופס שנוצר לפני גרסה v2.6.1, או שהתחל משблон ריק:
 
@@ -178,11 +178,11 @@ Il-field **Template Selection** jista' l-klijenti jgħażlu template tal-site kl
    - **Label** (תגית) — הכותרת שהלקוחות רואים מעל רשת התבניות (לדוגמה: "בחר תבנית אתר").
    - **Required** (חובה) — האם הלקוחות חייבים לבחור תבנית לפני ההמשך.
 
-#### איך זה עובד
+#### איך זה עובד {#how-it-works}
 
 כאשר לקוח בוחר תבנית במהלך התשלום, Ultimate Multisite משתמש בה כשמכינים את האתר החדש שלהם. התבניות המוצגות מגיעות מרשימת **Site Templates** (תבניות אתר) שלך (**Ultimate Multisite > Site Templates**). רק תבניות המסומנות כזמינות ללקוחות יופיעו כאן.
 
-### דומיינים בסיס לטופס התשלום (Checkout-form base domains)
+### דומיינים בסיס לטופס התשלום (Checkout-form base domains) {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 מתייחס לדומיינים שהוגדרו בשדות **Site URL** של טופס התשלום כדומייני בסיס לרשת (network base domains). השתמש בהגדרות ה-available-domain של השדה כשאתה רוצה שהלקוחות יצרו אתרים תחת דומייני רישום משותפים אחד או יותר, כמו `example.com` ו-`sites.example.com`.
 
@@ -190,6 +190,6 @@ Ultimate Multisite v2.13.0 מתייחס לדומיינים שהוגדרו בשד
 
 שמור את הדומיינים המותאמים אישית עבור מארחים ממופים ללקוח ספציפי, כמו `customer-example.com`. שמור את דומייני הבסי של טופס התשלום למארחים משותפים שניתן להשתמש בהם על ידי הרבה אתרים.
 
-#### הסרת השדה
+#### הסרת השדה {#removing-the-field}
 
 Jekk ma toffri template għall-sitji tagħkom, eliminali il-field ta Selezzjoni tal-Template mill-form tatk. Il-klijenti jidironqaw l-template difine default li huwa konfigurat taħt **Ultimate Multisite > Settings > Site Templates**.

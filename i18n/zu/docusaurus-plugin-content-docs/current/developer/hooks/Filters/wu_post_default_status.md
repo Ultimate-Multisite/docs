@@ -4,11 +4,11 @@ title: Isihlungi - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Isihlungi: wu_post_default_status
+# Isihlungi: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Sihlungwa idatha yento ngaphambi kokuba igcinwe ku-database.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sihlungwa idatha yento ngaphambi kokuba igcinwe ku-database.
 | $post_type | `string` | Uhlobo lwe-post. |
 | $this | `\Base_Model` | I-instance yento. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) kulayini 320

@@ -3,7 +3,7 @@ title: Tema PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Tweak il-Dashboard Admin Panel tiegħek ma PRO Theme
+# Tweak il-Dashboard Admin Panel tiegħek ma PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Sogħti l-aħna, meta nferma fejn nistawli ma għandna biex nipprovdu l-kliemti tagħna esperjenza kustomizzata f'dashboard ta WordPress. Jekk qed tixegħu għal aspetto aktar professionali u ħsieb, il-PRO Theme tista' tgħinek.
 

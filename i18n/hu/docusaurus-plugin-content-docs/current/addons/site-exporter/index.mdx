@@ -7,13 +7,13 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
 
-# Oldal Exportálása
+# Oldal Exportálása {#site-exporter}
 
-## Tartalom
+## Tartalom {#content}
 
 Megértjük, hogy szükség van a weboldalok (subsite-ok) átvitelére a hálózatukban egyetlen oldalra, és fordítva is, ha az ügyfelejük úgy dönt, hogy áttelepíti az oldalát. Az Site Exporter és Importer add-on ezt a feladatot egyszerűvé teszi. Ez az eszköz zip fájlok segítségével exportálja és importálja az oldalakat, amelyek biztonsági mentésként is szolgálhatnak.
 
-## Funkciók
+## Funkciók {#features}
 
 * Oldalak Exportálása és Importálása
 
@@ -21,16 +21,16 @@ Megértjük, hogy szükség van a weboldalok (subsite-ok) átvitelére a hálóz
 
 * Oldal biztonsági mentése létrehozása
 
-## Dokumentáció
+## Dokumentáció {#documentation}
 **Hogyan exportáljak és importáljak egy oldalt**
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltse fel az **ultimate-multisite-site-exporter** fájlt a **/wp-content/plugins/** könyvtárba
 2. Aktiválja a plugin-ot a WordPress **Plugins** menüpontján keresztül
 3. Kövesse a lépésről lépésre haladó Wizard-t a plugin beállításához
 
-## Használat Útmutató
+## Használat Útmutató {#usage-guide}
 
 Az Ultimate Multisite segítségével exportálhat egy oldalt a hálózatából, vagy importálhat egy oldalt a multisite vagy single-site telepítésére.
 
@@ -44,7 +44,7 @@ Az **Export & Import** opciót az Ultimate Multisite menüjén, bal oldalon tal�
 
 <!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
 
-## Hogyan exportáljak egy oldalt
+## Hogyan exportáljak egy oldalt {#how-to-export-a-site}
 
 Ha egy oldalt exportálni szeretne a hálózatából, navigáljon az Ultimate Multisite menüjében az **Export & Import** opcióra, és az **Export Sites** fülön kattintson a **Generate new Site Export** gombra.
 
@@ -54,13 +54,13 @@ Keresse meg az oldalt, amelyet exportálni szeretne, és válassza ki azokat az 
 
 Kattintson az **Export Site** gombra. A kiexportált oldala az **Existing Exports** listában lesz elérhető. Kattintson a **Download ZIP** gombra a fájl letöltéséhez. Az export ZIP-ek tartalmaznak egy önindító `index.php`-t és `readme.txt`-et, így őket friss hostra telepíthetik anélkül, hogy előtte külön importer plugin-ot kellene telepíteni.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
 
-## Hogyan exportáljak az egész hálózatot
+## Hogyan exportáljak az egész hálózatot {#how-to-export-the-whole-network}
 
 Ahhoz, hogy az összes subsite-ot együtt exportálja, navigáljon az Ultimate Multisite menüjében az **Export & Import** opcióra, és az export képernyőn használja az **Network Export** opciót. A generált archivum tartalmazza az összes subsite-ot egyetlen ZIP fájlban, ami a host átvitelhez, staging újraépítéshez vagy hálózat szintű biztonsági mentéshez használható.
 
 A hálózat exportálása nagy lehet. Ha ezt a folyamatot alacsony forgalmú időszakban végezzi el, és megerősíti, hogy a szerver elegendő tárhelyet biztosít az archivum és az összes beágyazott feltöltéshez, plugin-hoz és témához.
 
-## Hogyan importáljak egy oldalt
+## Hogyan importáljak egy oldalt {#how-to-import-a-site}
 
 Egy oldalt importálni ahhoz, hogy a **Import a Site** fülre navigáljon, és feltöltse az importálni kívánt oldal .zip fájlát. Az URL-t újra állíthatja, vagy az oldalt tartani a régi URL-l, ha üresen hagyja a mezőt. Ezenkően, jelölheti ki a négyzetet, hogy az importálás után törölje a .zip fájlt a telepítéséből. Ezután kattintson a **Begin Import** gombra.
 
@@ -76,7 +76,7 @@ A folyamatot az **Cancel Import** gombra kattintva állíthatja le.
 
 Miután a folyamat befejeződött, az oldala már elérhető a hálózatán.
 
-## Hogyan importáljak egy oldalt single-site telepítésre
+## Hogyan importáljak egy oldalt single-site telepítésre {#how-to-import-a-site-on-a-single-install}
 
 Egy oldalt single-site telepítésére importálni ahhoz, először telepítse és aktiválja az importer-t az oldalán. A letöltéshez szükséges linket az exporter fülön találja.
 

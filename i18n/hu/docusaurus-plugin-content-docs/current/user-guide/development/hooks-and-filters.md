@@ -3,7 +3,7 @@ title: Hookek és Filterek
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite horgok és szűrők
+# Ultimate Multisite horgok és szűrők {#ultimate-multisite-hooks-and-filters}
 
 Az Ultimate Multisite rengeteg funkcióból és adatbázis-lekérdezésből áll. Horgokat (hook) és szűrőket (filter) biztosít, amelyekkel módosíthatod a meglévő funkciókat, vagy új kódot adhatsz hozzájuk.
 

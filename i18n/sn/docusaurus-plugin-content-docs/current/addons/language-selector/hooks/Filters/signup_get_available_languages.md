@@ -4,21 +4,21 @@ title: Sefa - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Sefa: signup_get_available_languages
+# Sefa: signup_get_available_languages {#filter-signupgetavailablelanguages}
 
 Inosefa rondedzero yemitauro iripo yekunyoresa kwemasaiti kumberi.
 
 Kupfuudza array isina chinhu kuhook iyi kuchadzima kuburitswa kwesetting pafomu rekunyoresa, uye mutauro wekutanga uchashandiswa pakugadzira saiti. Mitauro isati yaiswa ichabviswa.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
 | $available_languages | `array` | Mitauro iripo. |
 
-### Kubva
+### Kubva {#since}
 
 - 4.4.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu[`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L117) pamutsara 117

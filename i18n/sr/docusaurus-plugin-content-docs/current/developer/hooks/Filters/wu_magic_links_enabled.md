@@ -4,19 +4,19 @@ title: Филтер - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filter: wu_magic_links_enabled
+# Filter: wu_magic_links_enabled {#filter-wumagiclinksenabled}
 
 Филтрира да ли су магичне везе омогућене.
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
 | $enabled | `bool` | Да ли су магичне везе омогућене. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.0.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L377) у реду 377

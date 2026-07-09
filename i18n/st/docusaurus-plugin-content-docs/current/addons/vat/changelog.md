@@ -3,7 +3,7 @@ title: Lenane la diphetoho la VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Lenane la liphetoho la VAT
+# Lenane la liphetoho la VAT {#vat-changelog}
 
 Phetolelo 1.0.7 - E lokollotsoe ka 2026-02-03
 

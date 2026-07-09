@@ -3,13 +3,13 @@ title: Support Tickets ændringslog
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Ændringslog for support tickets
+# Ændringslog for support tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Forbedret: Fjernede vendor/-mappen fra Git-sporing (allerede dækket af .gitignore), hvilket reducerer repository-størrelsen
 * Forbedret: Testet op til WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Rettelse: Acceptér null-værdier i nullable ticket model setters
 * Rettelse: Gem alle tickets i globale netværksdækkende tabeller for korrekt multisite-understøttelse
 * Rettelse: Skjul medarbejderfelter, og ret omdirigering til tom side på kundens formular til ny ticket
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Forbedret: Indlæs kun frontend-assets betinget på support ticket-sider
 * Forbedret: Spring plugin-autoloader over, når Bedrock-root-autoloader allerede har indlæst afhængigheder
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Tilføjet: Fuld funktionalitet til visning af tickets for admin og frontend
 * Tilføjet: AJAX-handler til indsendelser af ticket-svar
 * Tilføjet: Understøttelse af ticket-svarfunktionalitet med korrekt formularhåndtering
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Forbedret: Databasestruktur med korrekte forespørgsels- og skemaklasser til svar og vedhæftninger
 * Forbedret: Migrering til rigtige egenskaber i stedet for attributter for ticket-modeller
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Opdateret: Omdøbte præfiks til ultimate-multisite for konsistens
 * Opdateret: Standardisering af tekstdomæne
 * Rettet: Mindre fejlrettelser og forbedringer
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Første udgivelse
 * Komplet ticket-håndteringssystem
 * Adgangskontrol på flere niveauer

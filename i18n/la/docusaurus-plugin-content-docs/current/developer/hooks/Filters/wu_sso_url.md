@@ -4,13 +4,13 @@ title: Filtrum - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filtrum: wu_sso_url
+# Filtrum: wu_sso_url {#filter-wussourl}
 
 Filtrat SSO URLs generatas antequam redduntur pro actionibus emptoris inter dominia.
 
 Hoc filtrum utere cum integratio debet contextum fidum addere vinculo SSO tenentis-sui-iuris aut broker URL substituere, servata validatione token Ultimate Multisite.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Hoc filtrum utere cum integratio debet contextum fidum addere vinculo SSO tenent
 | $site_id | `int` | ID situs destinati pro visitatione. |
 | $redirect_to | `string` | URL destinationis post prosperam validationem SSO. |
 
-### Ex versione
+### Ex versione {#since}
 
 - 2.13.0
 
-### Fons
+### Fons {#source}
 
 Definitum in `inc/sso/class-sso.php`.
 
 
-## Reddit
+## Reddit {#returns}
 
 SSO URL filtrata.

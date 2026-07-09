@@ -3,11 +3,11 @@ title: Agen Bawaan
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Bawaan
+# Agents Bawaan {#built-in-agents}
 
 Gratis AI Agent v1.9.0 nyayagikeun lima agents bawaan, unggal-unggalna geus dikonfigurasi heula ku sakumpulan tools anu museur, system prompt anu disaluyukeun, jeung saran pamuka anu cocog jeung tugas umum dina widang éta. Ngalih antara agents ngarobah naon anu bisa dilakukeun ku assistant jeung kumaha résponna — tanpa konfigurasi naon waé ti pihak anjeun. Superdav AI Agent v1.18.0 bisa nambahkeun tools anu sadar jadwal, rékaman pangéling, approval gates, jeung béwara SMS kana workflows ieu lamun integrasi anu patali geus dikonfigurasi.
 
-## Naon Ari Agent?
+## Naon Ari Agent? {#what-is-an-agent}
 
 Unggal agent nyaéta profil konfigurasi anu dingaranan anu ngahijikeun:
 
@@ -15,7 +15,7 @@ Unggal agent nyaéta profil konfigurasi anu dingaranan anu ngahijikeun:
 - **System prompt** — parentah anu netepkeun nada, prioritas, jeung watesan agent
 - **Saran** — prompts anu geus ditulis saméméhna anu dipintonkeun dina antarbeungeut chat pikeun mantuan anjeun ngamimitian gancang
 
-## Ngaksés Agent Picker
+## Ngaksés Agent Picker {#accessing-the-agent-picker}
 
 1. Buka panel **Gratis AI Agent** dina sidebar admin WordPress.
 2. Klik **ikon agent** di kénca luhur header chat (ikonna robah pikeun ngagambarkeun agent anu keur aktip).
@@ -24,9 +24,9 @@ Unggal agent nyaéta profil konfigurasi anu dingaranan anu ngahijikeun:
 
 Anjeun ogé bisa ngalih agents di tengah paguneman — system prompt agent anyar mimiti jalan ti pesen salajengna.
 
-## Lima Agents Bawaan
+## Lima Agents Bawaan {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fokus:** Nyieun jeung ngédit tulisan, kaca, jeung formulir kontak.
 
@@ -47,7 +47,7 @@ Anjeun ogé bisa ngalih agents di tengah paguneman — system prompt agent anyar
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fokus:** Nyieun situs wéb ti tungtung ka tungtung tina hiji prompt.
 
@@ -70,7 +70,7 @@ Anjeun ogé bisa ngalih agents di tengah paguneman — system prompt agent anyar
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fokus:** Kustomisasi visual — warna, tipografi, CSS, jeung pola blok.
 
@@ -87,7 +87,7 @@ Anjeun ogé bisa ngalih agents di tengah paguneman — system prompt agent anyar
 - *Candak screenshot homepage sarta béjakeun naon anu bakal anjeun ningkatkeun.*
 - *Jieun pola blok hero anu bisa dipaké deui kalayan gambar latar full-width jeung judul di tengah.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokus:** Manggihan, masang, jeung ngatur plugins WordPress.
 
@@ -105,7 +105,7 @@ Anjeun ogé bisa ngalih agents di tengah paguneman — system prompt agent anyar
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fokus:** Ngajawab patalékan ngeunaan eusi situs, setélan, jeung konfigurasi WordPress.
 
@@ -124,7 +124,7 @@ Anjeun ogé bisa ngalih agents di tengah paguneman — system prompt agent anyar
 
 ---
 
-## Integrasi Otomatisasi Superdav
+## Integrasi Otomatisasi Superdav {#superdav-automation-integrations}
 
 Nalika integrasi Superdav AI Agent v1.18.0 dikonpigurasikeun, agén bawaan bisa ilubiung dina alur gawé otomatisasi nu leuwih aman jeung sadar jadwal:
 
@@ -138,11 +138,11 @@ Alur gawé nu disarankeun: ménta agén nyiapkeun pesen atawa tindakan, marios a
 
 ---
 
-## Ngaropéa Agén
+## Ngaropéa Agén {#customising-agents}
 
 Unggal agén bawaan bisa dilegaan atawa diganti ngaliwatan filter `gratis_ai_agent_agents`.
 
-### Nambahkeun prompt sistem kustom kana agén nu geus aya
+### Nambahkeun prompt sistem kustom kana agén nu geus aya {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Ngadaptarkeun agén anyar
+### Ngadaptarkeun agén anyar {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Agén anyar mucunghul dina Agent Picker langsung sanggeus filter dijalankeun.
 
-### Ngaleungitkeun agén bawaan
+### Ngaleungitkeun agén bawaan {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

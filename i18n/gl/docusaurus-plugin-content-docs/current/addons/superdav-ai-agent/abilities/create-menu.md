@@ -3,15 +3,15 @@ title: Crear menú
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Crear menú
+# Crear menú {#create-menu}
 
 A capacidade **Crear menú** crea menús de navegación de WordPress con compatibilidade para etiquetas de navegación distintas, separadas dos títulos das páxinas.
 
-## Visión xeral
+## Visión xeral {#overview}
 
 Esta capacidade amplía a funcionalidade estándar de creación de menús coa posibilidade de especificar un parámetro `navigation_label`. Isto permíteche crear menús nos que a etiqueta mostrada na navegación difire do título da páxina, proporcionando máis flexibilidade na estrutura do sitio e na experiencia de usuario.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Parámetro | Tipo | Obrigatorio | Descrición |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Esta capacidade amplía a funcionalidade estándar de creación de menús coa po
 | `location` | string | Non | Localización do tema á que asignar este menú, por exemplo `primary` |
 | `navigation_label` | string | Non | Etiqueta para mostrar na navegación (distinta do título da páxina) |
 
-## Valor de retorno
+## Valor de retorno {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Esta capacidade amplía a funcionalidade estándar de creación de menús coa po
 }
 ```
 
-## Etiqueta de navegación fronte a título da páxina
+## Etiqueta de navegación fronte a título da páxina {#navigation-label-vs-page-title}
 
 O parámetro `navigation_label` permíteche separar o nome interno do menú da etiqueta mostrada aos usuarios:
 
@@ -43,9 +43,9 @@ Isto é útil cando:
 - Necesitas dar soporte a varios idiomas con diferentes lonxitudes de etiqueta
 - Estás a crear menús para rexións ou grupos de usuarios específicos
 
-## Exemplos de uso
+## Exemplos de uso {#usage-examples}
 
-### Exemplo 1: Menú sinxelo con etiqueta de navegación
+### Exemplo 1: Menú sinxelo con etiqueta de navegación {#example-1-simple-menu-with-navigation-label}
 
 **Solicitude:**
 ```
@@ -62,7 +62,7 @@ Crea un menú de navegación principal chamado "Main Navigation" coa etiqueta de
 }
 ```
 
-### Exemplo 2: Menú para unha localización específica do tema
+### Exemplo 2: Menú para unha localización específica do tema {#example-2-menu-for-specific-theme-location}
 
 **Solicitude:**
 ```
@@ -80,7 +80,7 @@ Crea un menú de pé de páxina chamado "Footer Links" coa etiqueta de navegaci�
 }
 ```
 
-## Integración con Theme Builder
+## Integración con Theme Builder {#integration-with-theme-builder}
 
 Ao usar Theme Builder, a capacidade Crear menú:
 
@@ -89,13 +89,13 @@ Ao usar Theme Builder, a capacidade Crear menú:
 3. Asigna menús ás localizacións correctas do tema
 4. Permite engadir elementos de menú despois da creación
 
-## Capacidades relacionadas
+## Capacidades relacionadas {#related-abilities}
 
 - **`add_menu_item`** — Engadir elementos a un menú existente
 - **`update_menu`** — Renomear un menú ou reasignalo a unha localización do tema
 - **`delete_menu`** — Eliminar un menú do teu sitio
 
-## Mellores prácticas
+## Mellores prácticas {#best-practices}
 
 - **Usa etiquetas de navegación claras** — mantén as etiquetas concisas e descritivas para os usuarios
 - **Fai coincidir as localizacións do tema** — asigna os menús á localización correcta do tema para unha visualización axeitada
@@ -103,14 +103,14 @@ Ao usar Theme Builder, a capacidade Crear menú:
 - **Proba a adaptabilidade** — verifica que os menús se mostren correctamente en dispositivos móbiles
 - **Localiza as etiquetas** — usa diferentes etiquetas de navegación para distintas versións idiomáticas
 
-## Limitacións
+## Limitacións {#limitations}
 
 - As etiquetas de navegación só son para visualización; o `name` interno segue a usarse para a identificación en WordPress
 - A compatibilidade do tema varía; non todos os temas admiten todas as localizacións de menú
 - Os elementos de menú deben engadirse por separado despois da creación do menú
 - Cambiar unha etiqueta de navegación require actualizar o menú
 
-## Capacidades relacionadas
+## Capacidades relacionadas {#related-abilities-1}
 
 - [Xerar Logo SVG](./generate-logo-svg.md) — crear logotipos para a cabeceira do teu sitio
 - [Validar contraste da paleta](./validate-palette-contrast.md) — garantir esquemas de cores accesibles

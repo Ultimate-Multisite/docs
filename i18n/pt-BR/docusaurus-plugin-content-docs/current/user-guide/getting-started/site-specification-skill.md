@@ -3,11 +3,11 @@ title: Habilidade de Especificação de Site
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Habilidade de Especificação do Site
+# Habilidade de Especificação do Site {#site-specification-skill}
 
 A **habilidade de Especificação do Site** é uma abordagem estruturada para capturar os objetivos, o público e a identidade da marca do seu site. Essas informações são armazenadas na sua memória **site_brief**, que os agents consultam em diferentes sessões para fornecer assistência consistente e que entende o contexto.
 
-## O que é Especificação do Site?
+## O que é Especificação do Site? {#what-is-site-specification}
 
 Especificação do Site é o processo de documentar:
 
@@ -19,9 +19,9 @@ Especificação do Site é o processo de documentar:
 
 Essa especificação se torna o seu **site_brief**, uma memória persistente que os agents usam para entender o contexto do seu site.
 
-## Por que usar Especificação do Site?
+## Por que usar Especificação do Site? {#why-use-site-specification}
 
-### Consistência entre Sessões
+### Consistência entre Sessões {#consistency-across-sessions}
 
 Sem o site_brief, você teria que explicar o propósito do seu site toda vez que iniciasse uma nova sessão. Com ele, os agents entendem imediatamente:
 
@@ -30,7 +30,7 @@ Sem o site_brief, você teria que explicar o propósito do seu site toda vez que
 - A estrutura do seu conteúdo
 - Os objetivos de negócio
 
-### Melhores Recomendações
+### Melhores Recomendações {#better-recommendations}
 
 Os agents usam o seu site_brief para:
 
@@ -39,17 +39,17 @@ Os agents usam o seu site_brief para:
 - Propor designs consistentes com sua marca
 - Evitar sugerir funcionalidades que não combinam
 
-### Onboarding Mais Rápido
+### Onboarding Mais Rápido {#faster-onboarding}
 
 Novos agents (ou agents em novas sessões) podem se atualizar rapidamente lendo o seu site_brief, em vez de fazer perguntas de esclarecimento.
 
-## Iniciando a Especificação do Site
+## Iniciando a Especificação do Site {#initiating-site-specification}
 
-### Durante o Onboarding do Theme Builder
+### Durante o Onboarding do Theme Builder {#during-theme-builder-onboarding}
 
 A habilidade de Especificação do Site é iniciada automaticamente durante o **fluxo de onboarding do Theme Builder**. O agent Setup Assistant faz perguntas e constrói o seu site_brief.
 
-### Iniciação Manual
+### Iniciação Manual {#manual-initiation}
 
 Você pode iniciar a Especificação do Site a qualquer momento:
 
@@ -63,9 +63,9 @@ ou
 "Ajude-me a criar um site brief"
 ```
 
-## O Processo de Especificação do Site
+## O Processo de Especificação do Site {#the-site-specification-process}
 
-### Passo 1: Propósito do Site
+### Passo 1: Propósito do Site {#step-1-site-purpose}
 
 O agent pergunta:
 
@@ -81,7 +81,7 @@ Qual é o propósito principal do seu site?
 
 Você pode selecionar uma categoria ou descrever seu próprio propósito.
 
-### Passo 2: Público-Alvo
+### Passo 2: Público-Alvo {#step-2-target-audience}
 
 ```
 Quem é seu público principal?
@@ -94,7 +94,7 @@ Quem é seu público principal?
 Quais são as principais necessidades deles?
 ```
 
-### Passo 3: Identidade da Marca
+### Passo 3: Identidade da Marca {#step-3-brand-identity}
 
 ```
 Quais são as cores da sua marca?
@@ -110,7 +110,7 @@ Como você descreveria o tom da sua marca?
 - Acolhedor / amigável
 ```
 
-### Passo 4: Objetivos de Negócio
+### Passo 4: Objetivos de Negócio {#step-4-business-goals}
 
 ```
 Como é o sucesso para o seu site?
@@ -129,7 +129,7 @@ Qual é sua métrica principal?
 - Outro
 ```
 
-### Passo 5: Estrutura de Conteúdo
+### Passo 5: Estrutura de Conteúdo {#step-5-content-structure}
 
 ```
 Como seu conteúdo é organizado?
@@ -148,7 +148,7 @@ Quais tipos de conteúdo você usa?
 - Outro
 ```
 
-## Sua Memória site_brief
+## Sua Memória site_brief {#your-sitebrief-memory}
 
 Após completar a Especificação do Site, suas informações são armazenadas como **site_brief** na memória do seu agent. Este é um registro estruturado contendo:
 
@@ -169,9 +169,9 @@ Após completar a Especificação do Site, suas informações são armazenadas c
 }
 ```
 
-## Visualizando e Atualizando seu site_brief
+## Visualizando e Atualizando seu site_brief {#viewing-and-updating-your-sitebrief}
 
-### Visualizar seu site_brief
+### Visualizar seu site_brief {#view-your-sitebrief}
 
 Pergunte ao agent:
 
@@ -187,7 +187,7 @@ ou
 
 O agent exibirá sua especificação armazenada.
 
-### Atualizar seu site_brief
+### Atualizar seu site_brief {#update-your-sitebrief}
 
 Se o seu site evoluir, você pode atualizá-lo:
 
@@ -203,9 +203,9 @@ ou
 
 Isso irá reexecutar a habilidade de Especificação do Site com suas informações existentes como ponto de partida.
 
-## Como os Agents Usam o site_brief
+## Como os Agents Usam o site_brief {#how-agents-use-sitebrief}
 
-### Recomendações de Design
+### Recomendações de Design {#design-recommendations}
 
 Quando você pede mudanças de design, os agents consultam seu site_brief:
 
@@ -216,7 +216,7 @@ com um tom acolhedor e artesanal. Vou criar um design que enfatiza
 suas joias artesanais e valores sustentáveis."
 ```
 
-### Sugestões de Funcionalidades
+### Sugestões de Funcionalidades {#feature-suggestions}
 
 Os agents sugerem funcionalidades alinhadas aos seus objetivos:
 
@@ -227,7 +227,7 @@ eu recomendaria: programa de fidelidade, avaliações de clientes, newsletter po
 e recomendações de produtos."
 ```
 
-### Estrutura de Conteúdo
+### Estrutura de Conteúdo {#content-structure}
 
 Os agents propõem organização de conteúdo baseada na sua estrutura:
 
@@ -238,16 +238,16 @@ organizar os posts por categoria de produto e criar 'guias de estilo'
 que mostrem vários produtos juntos."
 ```
 
-## Melhores Práticas
+## Melhores Práticas {#best-practices}
 
-### Seja Específico
+### Seja Específico {#be-specific}
 
 Em vez de "público geral", descreva seu público real:
 
 - ✓ "Mulheres de 25-45 anos, interessadas em moda sustentável"
 - ✗ "Todo mundo"
 
-### Atualize Regularmente
+### Atualize Regularmente {#update-regularly}
 
 À medida que seu site evolui, atualize seu site_brief:
 
@@ -256,14 +256,14 @@ Em vez de "público geral", descreva seu público real:
 - Quando sua identidade de marca mudar
 - Quando seus objetivos de negócio mudarem
 
-### Use Terminologia Consistente
+### Use Terminologia Consistente {#use-consistent-terminology}
 
 Use os mesmos termos em diferentes sessões:
 
 - ✓ Diga sempre "joias sustentáveis" (e não "joias ecológicas" e "produtos verdes")
 - ✓ Refira-se consistentemente ao seu público da mesma maneira
 
-### Inclua Contexto
+### Inclua Contexto {#include-context}
 
 Forneça informações de fundo que ajudem os agents a entender suas decisões:
 
@@ -271,7 +271,7 @@ Forneça informações de fundo que ajudem os agents a entender suas decisões:
 - "Nosso público é antenado em tecnologia e espera um design moderno"
 - "Somos uma startup sem investimento, então precisamos de soluções econômicas"
 
-## Relação com o Onboarding do Theme Builder
+## Relação com o Onboarding do Theme Builder {#relationship-to-theme-builder-onboarding}
 
 A habilidade de Especificação do Site é integrada ao **fluxo de onboarding do Theme Builder**. Quando você completa o onboarding, seu site_brief é criado automaticamente com as informações que você forneceu.
 
@@ -281,7 +281,7 @@ Você também pode executar a Especificação do Site de forma independente se q
 - Atualizar seu site brief à medida que seu site evolui
 - Criar uma especificação detalhada antes de começar o Theme Builder
 
-## Solução de Problemas
+## Solução de Problemas {#troubleshooting}
 
 **Meu site_brief não está sendo usado**
 - Confirme se o agent tem acesso à memória
@@ -297,7 +297,7 @@ Você também pode executar a Especificação do Site de forma independente se q
 - Atualize seu site_brief se ele estiver desatualizado
 - Forneça contexto adicional em seus pedidos
 
-## Próximos Passos
+## Próximos Passos {#next-steps}
 
 Após definir a especificação do seu site:
 

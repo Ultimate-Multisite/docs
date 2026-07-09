@@ -3,11 +3,11 @@ title: Webhook व्यवस्थापन
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook व्यवस्थापन
+# Webhook व्यवस्थापन {#webhook-handling}
 
 बाह्य सेवाहरूबाट घटनाहरू प्राप्त गर्न र Ultimate Multisite सँग डेटा समक्रमण गर्न अनुकूल Webhook अन्त्यबिन्दुहरू सिर्जना गर्नुहोस्।
 
-## अनुकूल Webhook अन्त्यबिन्दु
+## अनुकूल Webhook अन्त्यबिन्दु {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## सुरक्षा विचारहरू
+## सुरक्षा विचारहरू {#security-considerations}
 
 - HMAC वा साझा गोप्य प्रयोग गरेर Webhook हस्ताक्षरहरू सधैं प्रमाणित गर्नुहोस्
 - आफ्नो REST मार्गमा `permission_callback` प्रयोग गर्नुहोस् — उत्पादनमा यसलाई कहिल्यै `__return_true` मा सेट नगर्नुहोस्

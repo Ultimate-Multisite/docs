@@ -4,16 +4,16 @@ title: Filter - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Filtre: network_options_to_copy
+# Filtre: network_options_to_copy {#filter-networkoptionstocopy}
 
 Kopyalanacak varsayılan ağ seçeneklerini filtreler.
 
-### Since
+### Since {#since}
 
 - 1.3.0
-### Source
+### Source {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1649) dosyasındaki 1649. satırda tanımlanmıştır.
 
-## Dönüş Değeri
+## Dönüş Değeri {#returns}
 Ağ $option_name => $option_label çiftlerinden oluşan bir liste.

@@ -3,7 +3,7 @@ title: Irekhodi Lezinguquko Lokuhlanganiswa kwe-WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Irekhodi Lezinguquko le-WooCommerce Integration
+# Irekhodi Lezinguquko le-WooCommerce Integration {#woocommerce-integration-changelog}
 
 Inguqulo 2.2.0 - Ikhishwe ngo-2026-07-01
 * Okusha: Amanani entela e-Ultimate Multisite manje avela njengemigqa yezimali ehlukene ye-WooCommerce ngesikhathi sokukhokha, okwenza izamba zentela zicace kakhudlwana ngaphambi kokukhokha.

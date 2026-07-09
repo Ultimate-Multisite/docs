@@ -3,7 +3,7 @@ title: Reklamos įdėjimas
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Reklamos jūsų tinkluje su Ultimate Multisite: Ad Injector
+# Reklamos jūsų tinkluje su Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector yra **laikines funkciją (free add-on)**, która daje Wam narzędzia do umieszczania reklam na swoich planach bezpośrednio z ich strony edycji.
 
@@ -35,7 +35,7 @@ Możesz również umieścić reklamy w nagłówku Stron Administracyjnych dla u�
 
 _Przejdź do opcji Kodu Reklamy w Panelu Administracyjnym, jeśli chcesz wyświetlać reklamy w back-endzie swojego użytkownika._
 
-### Poza reklamą
+### Poza reklamą {#beyond-advertising}
 
 Możesz również używać Ultimate Multisite: Ad Injector do oferowania wsparcia dla planów premium.
 

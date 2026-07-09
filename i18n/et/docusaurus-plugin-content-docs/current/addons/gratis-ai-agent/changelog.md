@@ -3,11 +3,11 @@ title: Muudatuste logi
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Muudatuste logi
+# Muudatuste logi {#changelog}
 
-## 1.9.0 — Välja antud 2026-04-28
+## 1.9.0 — Välja antud 2026-04-28 {#190--released-on-2026-04-28}
 
-### Uus
+### Uus {#new}
 
 - **`create_contact_form` võimekus** — loob kontaktivormi, kasutades aktiivset vormi pluginat (Contact Form 7, WPForms, Fluent Forms või Gravity Forms), ja tagastab shortcode’i, mis on valmis lisamiseks mis tahes postitusse või lehele.
 - **`set_featured_image` võimekus** — määrab postitusele või lehele esiletõstetud pildi olemasoleva Media Library manuse ID või kaug-URL-i põhjal; impordib pildi automaatselt, kui esitatakse URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Viimase seansi taastamine** — vestluspaneel laadib nüüd lehe laadimisel ja vidina avamisel automaatselt uuesti kõige värskema vestluse, nii et kontekst ei kao lehtede vahel liikudes kunagi.
 - **Plugina tegevuslingid** — kiirlingid Settings ja Abilities Registry juurde ilmuvad nüüd WordPressi **Plugins → Installed Plugins** kuval plugina kirjelduse all.
 
-### Täiustatud
+### Täiustatud {#improved}
 
 - **Pildiallika uuestiproovimine** — agent proovib nüüd enne AI loodud pildile tagasilangemist allalaadimise ebaõnnestumisel uuesti kõiki seadistatud tasuta pildiallikaid.
 - **Mudeli infopaneel** — alati nähtav vestluse päises; ei peideta enam pärast esimest sõnumit.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Vestlusvidina ümberkujundus** — ühtne AI ikoon asendab varasema kohandatud avatari; kooskõlas sisseehitatud agentide süsteemiga.
 - **URL-ide linkideks muutmine** — süsteemisõnumites ja veateate mullides ilmuvad URL-id renderdatakse nüüd klõpsatavate linkidena.
 
-### Parandatud
+### Parandatud {#fixed}
 
 - **Võimekuste leitavus** — parandatud kirjeldused, süsteemiviiba viited ja nimeruumi joondus, et kõik võimekused ilmuksid usaldusväärselt agendi tööriistade loendis.
 - **Pakkujate vahemälu** — pakkujad salvestatakse nüüd saidiüleselt vahemällu versiooniloenduri kaudu, vältides aegunud pakkujate probleeme multisite-võrkudes.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Välja antud 2026-04-09
+## 1.4.0 — Välja antud 2026-04-09 {#140--released-on-2026-04-09}
 
-### Uus
+### Uus {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — käivitab käsurealt Agent Capabilities v1 benchmark suite’i CI torujuhtmete ja mudeli hindamise töövoogude jaoks. Toetab üksikküsimuse käivitusi, pakkuja/mudeli ülekirjutusi ning JSON/CSV väljundit.
 - **Agent Capabilities v1 benchmark suite** — struktureeritud komplekt keerukaid, mitmesammulisi viipasid, mis testivad kogu võimekuste ulatust, koos skoorimise ning tokenite/kestuse aruandlusega.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restorani veebisaidi benchmark-küsimus** (`q-restaurant-website`) — läbiv test, mis katab CPT registreerimise, disainisüsteemi, navigatsiooni ja plugina avastamise.
 - **AI provider connector pluginad** lisatud WordPress Playground blueprint’idele kiiremaks lokaalse arenduskeskkonna seadistamiseks.
 
-### Täiustatud
+### Täiustatud {#improved-1}
 
 - README uuendatud AI provider connector dokumentatsiooni ja seadistusjuhistega.
 
-### Parandatud
+### Parandatud {#fixed-1}
 
 - 25 PHPUnit testi tõrget `main` harus lahendatud.
 - GitHub releases URL-i vorming failis `blueprint.json` parandatud.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Varasema versiooni märkmeid hoitakse plugina repositooriumis._

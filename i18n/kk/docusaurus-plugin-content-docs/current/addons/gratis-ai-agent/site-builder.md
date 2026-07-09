@@ -3,15 +3,15 @@ title: Сайт құрастырушы оркестрациясы v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Сайт құрастыруды үйлестіру v2
+# Сайт құрастыруды үйлестіру v2 {#site-builder-orchestration-v2}
 
 Сайт құрастыруды үйлестіру v2 (Gratis AI Agent v1.4.0 нұсқасында енгізілген) — көп қадамды веб-сайт жасауды іске қосатын қозғалтқыш. Агенттен "мейрамхана веб-сайтын құруды" немесе "блогы бар портфолио жасауды" сұрағанда, оркестратор бұл жоғары деңгейлі мақсатты құрылымдалған **жоспарға** бөледі, оны орындау үшін қажет плагиндерді анықтайды, әр қадамды ретімен орындайды, ілгерілеуді бақылайды және қателерден дербес қалпына келеді.
 
 ---
 
-## Бұл қалай жұмыс істейді
+## Бұл қалай жұмыс істейді {#how-it-works}
 
-### 1. Жоспар жасау
+### 1. Жоспар жасау {#1-plan-generation}
 
 Агент сайт құру нұсқауын алған кезде, JSON **сайт жоспарын** жасау үшін `create_site_plan` мүмкіндігін шақырады. Жоспар мыналарды сипаттайды:
 
@@ -61,7 +61,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 }
 ```
 
-### 2. Плагиндерді анықтау
+### 2. Плагиндерді анықтау {#2-plugin-discovery}
 
 Орындау басталмас бұрын, оркестратор жоспардың `plugin_requirements` өрісін қарап шығып, қай плагиндердің әлдеқашан белсенді екенін тексереді. Жетіспейтін плагиндер үшін ол:
 
@@ -71,7 +71,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 
 Плагиндерді анықтау сәтсіздіктері жұмысқа қатерлі емес — оркестратор әсер еткен қадамдарды `skipped` деп белгілеп, жоспардың қалған бөлігімен жалғастырады.
 
-### 3. Жоспарды орындау
+### 3. Жоспарды орындау {#3-plan-execution}
 
 Оркестратор жоспар ID арқылы `execute_site_plan` шақырады. Орындау кезең-кезеңімен, қадам-қадамымен жүреді:
 
@@ -79,7 +79,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 - **Параллель қадамдар** — бір кезең ішіндегі өзара тәуелділігі жоқ қадамдар `parallel` жалаушасы қойылғанда қатар жіберіледі.
 - **Қадам тайм-ауты** — әр қадамның жеке тайм-ауты бар (әдепкі: `Ability Timeout` баптауы). Тайм-аутқа ұшыраған қадам `failed` деп белгіленеді де, жоспар жалғасады.
 
-### 4. Ілгерілеуді бақылау
+### 4. Ілгерілеуді бақылау {#4-progress-tracking}
 
 Орындау күйін тексеру үшін кез келген уақытта `get_plan_progress` шақырыңыз:
 
@@ -104,7 +104,7 @@ WP-CLI пайдаланушылары ілгерілеуді былай бақы
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Қатеден қалпына келу
+### 5. Қатеден қалпына келу {#5-error-recovery}
 
 Қадам сәтсіз болғанда, оркестратор жоспарда анықталған **fallback** қадамын тексереді:
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## Сайт жоспары мүмкіндіктері
+## Сайт жоспары мүмкіндіктері {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Табиғи тілдегі мақсат сипаттамасынан құрылымдалған сайт жоспарын жасайды.
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Бұрын жасалған сайт жоспарын орындауды бастайды.
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Сайт жоспарының ағымдағы орындалу күйін қайтарады.
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Сәтсіз қадамды қолмен шешеді және жоспардың орындалуын келесі қадамнан жалғастырады. Автоматты қалпына келтіру мүмкін болмағанда және өзіңіз араласқыңыз келгенде осыны пайдаланыңыз.
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## v1 және v2 салыстыру
+## v1 және v2 салыстыру {#comparing-v1-and-v2}
 
 | Мүмкіндік | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## WP-CLI жоспар командалары
+## WP-CLI жоспар командалары {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Мақсат сипаттамасынан сайт жоспарын жасайды.
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Бұрын жасалған жоспарды орындайды.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Орындалып жатқан немесе аяқталған жоспардың ағымдағы прогресін көрсетеді.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Барлық сайт жоспарларын тізімдейді (күтуде, орындалуда және аяқталған).
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Сәтсіз жоспарды басынан қайта орындауға болатындай етіп `pending` күйіне қайтарады.
 

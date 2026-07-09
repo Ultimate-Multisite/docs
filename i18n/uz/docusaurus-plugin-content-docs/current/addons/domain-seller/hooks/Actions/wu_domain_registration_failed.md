@@ -4,11 +4,11 @@ title: Amal - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Amal: wu_domain_registration_failed
+# Amal: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Domenni ro‘yxatdan o‘tkazish urinishi muvaffaqiyatsiz tugaganidan keyin ishga tushadi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Domenni ro‘yxatdan o‘tkazish urinishi muvaffaqiyatsiz tugaganidan keyin ishg
 | $registration_data | `array&lt;string,mixed&gt;` | status=failed va error_message ni o‘z ichiga olgan ro‘yxatdan o‘tkazish metama’lumotlari. |
 | $error_message | `string` | Registratordan kelgan inson o‘qiy oladigan xato xabari. |
 
-### Beri
+### Beri {#since}
 
 - 2.0.0
-### Manba
+### Manba {#source}
 
 [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) faylida 1250-qatorda aniqlangan

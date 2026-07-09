@@ -3,25 +3,25 @@ title: CyberPanel integration
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration
+# CyberPanel Integration {#cyberpanel-integration}
 
 Denne guide forklarer, hvordan du opsætter Ultimate Multisite CyberPanel integrationen, så de kortede domæner i dit netværk automatisk tilføjes (og fjernes) som virtuelle hostingsservere i CyberPanel, med valgfri automatisk SSL-provisionering via Let's Encrypt.
 
-## Hvad det gør
+## Hvad det gør {#what-it-does}
 
 - Når et domæne kortes i Ultimate Multisite, kalder integrationen CyberPanel API'en for at oprette en virtuel host for det pågældende domæne.
 - Når en domænebinding fjernes, kalder integrationen API'en for at slette den tilsvarende virtuelle host.
 - Når automatisk SSL er aktiveret, udløser integrationen øjeblikkeligt udstedelsen af Let's Encrypt certifikatet efter, at den virtuelle host er oprettet.
 - Valgfrit tilføjer/fjerner `www.` alias i forhold til dine indstillinger for "Auto-create www subdomain" i Domain Mapping settings.
 
-## Forudsætninger
+## Forudsætninger {#prerequisites}
 
 - En kørende CyberPanel-instans (v2.3 eller nyere anbefales), der er tilgængelig fra din WordPress-server.
 - En eksisterende hjemmeside i CyberPanel, der allerede fungerer som rod for dit WordPress netværk. Integrationen tilføjer nye virtuelle hostingsservere til denne server.
 - CyberPanel API adgang skal være aktiveret. Autentifikation bruger dit CyberPanel administratorbrugernavn og adgangskode.
 - Dine DNS-opslag for de kortede domæner skal allerede pege på din servers IP-adresse, før automatisk SSL kan udstede et gyldigt certifikat.
 
-## Krav
+## Krav {#requirements}
 
 Følgende konstanter skal defineres i din `wp-config.php` fil:
 

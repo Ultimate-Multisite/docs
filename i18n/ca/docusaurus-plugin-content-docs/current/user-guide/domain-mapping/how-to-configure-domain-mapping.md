@@ -3,17 +3,17 @@ title: Com configurar el mapatge de dominis
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Com configurar l’assignació de dominis (v2)
+# Com configurar l’assignació de dominis (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 
 Una de les funcions més potents d’una xarxa premium és la capacitat d’oferir als nostres clients la possibilitat d’adjuntar un domini de primer nivell als seus llocs. Al capdavall, què sembla més professional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) o [_**joesbikeshop.com**_](http://joesbikeshop.com)? Per això Ultimate Multisite ofereix aquesta funció integrada, sense necessitat d’utilitzar plugins de tercers.
 
-## Què és l’assignació de dominis?
+## Què és l’assignació de dominis? {#whats-domain-mapping}
 
 Com el seu nom indica, l’assignació de dominis és la capacitat que ofereix Ultimate Multisite de rebre una sol·licitud per a un domini personalitzat i assignar aquesta sol·licitud al lloc corresponent de la xarxa que té adjunt aquest domini concret.
 
-### Com configurar l’assignació de dominis a la teva xarxa Ultimate Multisite
+### Com configurar l’assignació de dominis a la teva xarxa Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 L’assignació de dominis requereix una mica de configuració per part teva perquè funcioni. Afortunadament, Ultimate Multisite automatitza la feina difícil per tu perquè puguis complir fàcilment els requisits.
 
@@ -45,7 +45,7 @@ Però abans de començar a assignar el domini personalitzat a un dels subllocs d
 
 ###
 
-### Assegurar-se que la configuració DNS del domini estigui configurada correctament
+### Assegurar-se que la configuració DNS del domini estigui configurada correctament {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Perquè una assignació funcioni, has d’assegurar-te que el domini que vols assignar apunti a l’adreça IP de la teva xarxa. Tingues en compte que necessites l’adreça IP de la xarxa —l’adreça IP del domini on està instal·lat Ultimate Multisite—, no l’adreça IP del domini personalitzat que vols assignar. Per cercar l’adreça IP d’un domini concret, suggerim anar a [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), per exemple.
 
@@ -55,7 +55,7 @@ Si tens problemes per fer que això funcioni, **contacta amb el suport del teu r
 
 Si tens previst permetre que els teus clients assignin els seus propis dominis, hauran de fer ells mateixos la feina d’aquesta part. Adreça’ls al sistema de suport del seu registrador si no poden crear el registre A.
 
-### Assignar un nom de domini personalitzat com a Super Admin
+### Assignar un nom de domini personalitzat com a Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Quan has iniciat sessió com a super admin a la teva xarxa, pots afegir i gestionar fàcilment noms de domini personalitzats anant a **Ultimate Multisite > Dominis**.
 
@@ -93,7 +93,7 @@ Si feu clic al nom del domini, podreu veure-hi algunes opcions. Fem-hi una ullad
 
 **És segur?:** Tot i que Ultimate Multisite comprova si el domini té un certificat SSL o no abans d’habilitar-lo, podeu seleccionar manualment carregar el domini amb o sense un certificat SSL. Tingueu en compte que, si el lloc web no té un certificat SSL i intenteu forçar-ne la càrrega amb SSL, pot generar errors.
 
-### Assignar un nom de domini personalitzat com a usuari de sublloc
+### Assignar un nom de domini personalitzat com a usuari de sublloc {#mapping-custom-domain-name-as-subsite-user}
 
 Els administradors de subllocs també poden assignar noms de domini personalitzats des del Dashboard d’administració del seu sublloc.
 
@@ -121,7 +121,7 @@ L’usuari pot fer clic a **Pas següent** i continuar per afegir el nom de domi
 
 Fer clic a **Afegeix domini** iniciarà el procés de verificació i obtenció de la informació DNS del domini personalitzat.
 
-### Sobre la sincronització de dominis
+### Sobre la sincronització de dominis {#about-domain-syncing}
 
 La sincronització de dominis és un procés en què Ultimate Multisite afegeix el nom de domini personalitzat al vostre compte d’allotjament com a domini addicional **perquè el mapatge de dominis funcioni**.
 

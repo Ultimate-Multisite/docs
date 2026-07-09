@@ -4,20 +4,20 @@ title: Darbība - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Darbība: wu_magic_link_login
+# Darbība: wu_magic_link_login {#action-wumagiclinklogin}
 
 Tiek izsaukta pēc tam, kad lietotājs ir pieteicies, izmantojot maģisko saiti.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $user_id | `int` | Lietotāja ID. |
 | $site_id | `int` | Vietnes ID. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L240) 240. rindā

@@ -3,11 +3,11 @@ title: Produk Domain dan Harga
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produk Domain dan Harga
+# Produk Domain dan Harga {#domain-products-and-pricing}
 
 Produk domain adalah cara anda mengawal penetapan harga, TLD, privasi WHOIS, dan pemilihan penyedia. Setiap produk domain adalah produk standar Ultimate Multisite dengan tab tambahan **Domain Settings**.
 
-## Mencipta produk domain
+## Mencipta produk domain {#creating-a-domain-product}
 
 1. Pergi ke **Network Admin › Ultimate Multisite › Products**
 2. Klik **Add New**
@@ -17,13 +17,13 @@ Produk domain adalah cara anda mengawal penetapan harga, TLD, privasi WHOIS, dan
 
 Produk domain akan muncul dengan lencana **Domain** berwarna ungu dalam senarai produk dan boleh ditapis menggunakan tab **Domain Products**.
 
-## Tab tetapan domain
+## Tab tetapan domain {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Pilih pendaftar (registrar) mana yang menguruskan pendaftaran untuk produk ini. Secara lalai, ia akan menggunakan **Default provider** global yang ditetapkan dalam tetapan Domain Seller.
 
-### TLD yang disokong
+### TLD yang disokong {#supported-tlds}
 
 Biarkan kosong untuk mencipta **produk tangkapan umum** yang terpakai kepada semua TLD yang tidak dipadankan oleh produk lain.
 
@@ -31,7 +31,7 @@ Masukkan senarai TLD yang dipisahkan koma (cth., `.com, .net, .org`) untuk menci
 
 **Cara padanan produk berfungsi:** Apabila pelanggan mencari domain, addon akan memilih produk padanan yang paling spesifik. Produk dengan `.com` dalam senarai TLDnya akan diutamakan berbanding produk tangkapan umum. Jika tiada produk khusus TLD yang padan, produk tangkapan umum akan digunakan. Jika tiada produk wujud, carian domain tidak akan dipaparkan.
 
-### Jenis markup
+### Jenis markup {#markup-type}
 
 Tiga mod mengawal cara harga runcit anda dikira daripada kos borong:
 
@@ -41,11 +41,11 @@ Tiga mod mengawal cara harga runcit anda dikira daripada kos borong:
 | **Fixed markup** | Menambah jumlah dolar tetap. Markup $5 ke atas domain $10 memberikan $15. |
 | **Fixed price** | Mengabaikan kos borong sepenuhnya. Sentiasa mengenakan jumlah yang anda masukkan. |
 
-### Harga pengenalan
+### Harga pengenalan {#introductory-pricing}
 
 Aktifkan untuk menawarkan harga tahun pertama yang diskaun. Tetapkan **Introductory price** yang berasingan (harga tahun -1) bersama dengan **Renewal price** biasa (tahun 2+). Pelanggan akan melihat kedua-dua harga dipaparkan semasa pembayaran supaya mereka tahu apa yang perlu dijangkakan semasa pembaharuan.
 
-### Privasi WHOIS
+### Privasi WHOIS {#whois-privacy}
 
 Mengawal sama ada perlindungan privasi WHOIS ditawarkan untuk domain yang didaftarkan melalui produk ini.
 
@@ -59,7 +59,7 @@ Untuk Namecheap, privasi WHOIS menggunakan WhoisGuard (sentiasa percuma). Untuk 
 
 ---
 
-## Import dan sinkronisasi TLD
+## Import dan sinkronisasi TLD {#tld-import-and-sync}
 
 Produk domain memaparkan harga borong masa nyata yang diambil daripada penyedia yang disambungkan. Untuk ini berfungsi, TLD mesti diimport.
 
@@ -70,7 +70,7 @@ Selepas sinkronisasi, pergi ke tab Domain Settings mana-mana produk domain dan g
 
 ---
 
-## Pembaharuan automatik
+## Pembaharuan automatik {#auto-renewal}
 
 Pembaharuan domain dikaitkan dengan status keahlian pelanggan:
 
@@ -90,7 +90,7 @@ ID templat e-mel untuk acara kitaran hayat domain:
 
 ---
 
-## Admin: Pendaftaran domain manual
+## Admin: Pendaftaran domain manual {#admin-manual-domain-registration}
 
 Untuk mendaftarkan domain bagi pihak pelanggan tanpa mereka melalui proses pembayaran:
 

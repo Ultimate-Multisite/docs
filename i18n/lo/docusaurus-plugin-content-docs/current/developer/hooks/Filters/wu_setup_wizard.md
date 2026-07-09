@@ -4,11 +4,11 @@ title: ຕົວກັ່ນຕອງ - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# ຕົວກັ່ນຕອງ: wu_setup_wizard
+# ຕົວກັ່ນຕອງ: wu_setup_wizard {#filter-wusetupwizard}
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາເພີ່ມຂັ້ນຕອນຕົວຊ່ວຍຕັ້ງຄ່າເພີ່ມເຕີມ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 | $is_migration | `bool` | ວ່ານີ້ເປັນການຍ້າຍຫຼືບໍ່. |
 | $wizard | `object` | ອິນສະແຕນຊ໌ປັດຈຸບັນ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) ທີ່ແຖວ 525
 
 
-## ຄ່າທີ່ສົ່ງກັບ
+## ຄ່າທີ່ສົ່ງກັບ {#returns}

@@ -3,17 +3,17 @@ title: 'Oppitunti 12: Yrityksen pyörittäminen'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Oppitunti 12: Liiketoiminnan pyörittäminen
+# Oppitunti 12: Liiketoiminnan pyörittäminen {#lesson-12-running-the-business}
 
 Alusta ei ole projekti, jonka saat valmiiksi -- se on liiketoiminta, jota pyörität. Tämä oppitunti käsittelee FitSiten hallinnan päivittäisiä toimintoja: tukea, laskutusta, ylläpitoa ja asiakkaiden tyytyväisenä pitämistä.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSite on julkaistu ja asiakkaat rekisteröityvät. Nyt sinun täytyy pyörittää toimintaa kestävästi.
 
-## Päivittäiset toiminnot
+## Päivittäiset toiminnot {#daily-operations}
 
-### Seuranta
+### Seuranta {#monitoring}
 
 Tarkista nämä päivittäin (tai määritä hälytykset):
 
@@ -22,7 +22,7 @@ Tarkista nämä päivittäin (tai määritä hälytykset):
 - **Epäonnistuneet maksut**: Onko maksuhäiriöitä, jotka vaativat huomiota?
 - **Tukipyynnöt**: Onko vastaamattomia asiakaskysymyksiä?
 
-### Asiakastuki
+### Asiakastuki {#customer-support}
 
 Niche-kohdennuksesi on tässä etu. Koska kaikki asiakkaasi ovat fitness-studioita, näet samoja kysymyksiä toistuvasti:
 
@@ -36,7 +36,7 @@ Niche-kohdennuksesi on tässä etu. Koska kaikki asiakkaasi ovat fitness-studioi
 
 Rakenna tietopohjasi (aloitettu oppitunnilla 8) näiden toistuvien kysymysten ympärille. Jokainen tukipyyntö, josta olisi voinut tehdä tietopohja-artikkelin, on merkki kirjoittaa kyseinen artikkeli.
 
-### Tukitasot
+### Tukitasot {#support-tiers}
 
 Kun kasvat, jäsennä tuki planin mukaan:
 
@@ -48,9 +48,9 @@ Kun kasvat, jäsennä tuki planin mukaan:
 
 [Support Tickets addon](/addons/support-tickets) voi auttaa hallitsemaan tukipyyntöjä alustalla.
 
-## Laskutustoiminnot
+## Laskutustoiminnot {#billing-operations}
 
-### Toistuvat maksut
+### Toistuvat maksut {#recurring-payments}
 
 Ultimate Multisite hoitaa toistuvan laskutuksen automaattisesti maksuyhdyskäytäväsi kautta. Sinun tehtäväsi on seurata:
 
@@ -58,7 +58,7 @@ Ultimate Multisite hoitaa toistuvan laskutuksen automaattisesti maksuyhdyskäyt�
 - **Maksujen perintä**: Määritä automaattinen uudelleenyrityslogiikka maksuyhdyskäytäväsi kautta (Stripe hoitaa tämän hyvin)
 - **Peruutuspyynnöt**: Ymmärrä, miksi asiakkaat lähtevät. Jokainen peruutus on palautetta.
 
-### Jäsenyyksien hallinta
+### Jäsenyyksien hallinta {#managing-memberships}
 
 Siirry kohtaan **Ultimate Multisite > Memberships** tehdäksesi seuraavaa:
 
@@ -69,13 +69,13 @@ Siirry kohtaan **Ultimate Multisite > Memberships** tehdäksesi seuraavaa:
 
 Katso täydellinen viite kohdasta [Jäsenyyksien hallinta](/user-guide/administration/managing-memberships).
 
-### Laskutus
+### Laskutus {#invoicing}
 
 Varmista, että laskut luodaan oikein jokaisesta maksusta. Asiakkaat voivat tarvita laskuja liiketoiminnan kuluraportointiin. Katso [Maksujen ja laskujen hallinta](/user-guide/administration/managing-payments-and-invoices).
 
-## Alustan ylläpito
+## Alustan ylläpito {#platform-maintenance}
 
-### WordPress- ja plugin-päivitykset
+### WordPress- ja plugin-päivitykset {#wordpress-and-plugin-updates}
 
 Verkoston ylläpitäjänä olet vastuussa seuraavista:
 
@@ -88,14 +88,14 @@ Verkoston ylläpitäjänä olet vastuussa seuraavista:
 Rikkinäinen päivitys vaikuttaa jokaiseen asiakassivustoon verkostossasi. Testaa päivitykset aina ensin verkostosi staging-kopiolla.
 :::
 
-### Tietoturva
+### Tietoturva {#security}
 
 - Pidä kaikki ohjelmistot ajan tasalla
 - Käytä vahvoja salasanoja ja kaksivaiheista tunnistautumista admin-tileillä
 - Seuraa epäilyttävää toimintaa
 - Laadi suunnitelma tietoturvapoikkeamia varten
 
-### Suorituskyky
+### Suorituskyky {#performance}
 
 Kun verkostosi kasvaa, seuraa:
 
@@ -105,9 +105,9 @@ Kun verkostosi kasvaa, seuraa:
 
 Harkitse välimuistin käyttöönottoa (sivuvälimuisti, objektivälimuisti) ja CDN:ää, jos et ole vielä tehnyt niin. [Cloudflare-integraatio](/user-guide/host-integrations/cloudflare) hoitaa suuren osan tästä.
 
-## Asiakkaan elinkaaren hallinta
+## Asiakkaan elinkaaren hallinta {#customer-lifecycle-management}
 
-### Poistuman vähentäminen
+### Poistuman vähentäminen {#reducing-churn}
 
 Poistuma on niiden asiakkaiden prosenttiosuus, jotka peruuttavat joka kuukausi. Tilausliiketoiminnassa poistuman vähentäminen on yhtä tärkeää kuin uusien asiakkaiden hankkiminen.
 
@@ -119,7 +119,7 @@ Poistuma on niiden asiakkaiden prosenttiosuus, jotka peruuttavat joka kuukausi. 
 - He löysivät halvemman vaihtoehdon → vahvista niche-arvoasi
 - Heidän liiketoimintansa päättyi → väistämätöntä, mutta seuraa tätä erikseen
 
-### Päivityksiin kannustaminen
+### Päivityksiin kannustaminen {#encouraging-upgrades}
 
 Starter-planilla olevia asiakkaita, jotka menestyvät, tulisi kannustaa päivittämään:
 
@@ -127,7 +127,7 @@ Starter-planilla olevia asiakkaita, jotka menestyvät, tulisi kannustaa päivitt
 - Lähetä kohdennettuja sähköposteja, joissa korostat Growth-planin ominaisuuksia, joista he hyötyisivät
 - Esittele, mitä Growth/Pro-asiakkaat ovat rakentaneet
 
-### Takaisinvoittokampanjat
+### Takaisinvoittokampanjat {#win-back-campaigns}
 
 Kun asiakas peruuttaa:
 
@@ -135,30 +135,30 @@ Kun asiakas peruuttaa:
 2. Käsittele hänen huolenaiheensa, jos mahdollista
 3. Tarjoa alennusta paluuta varten (30–60 päivää peruutuksen jälkeen)
 
-## Viikoittaiset ja kuukausittaiset rutiinit
+## Viikoittaiset ja kuukausittaiset rutiinit {#weekly-and-monthly-routines}
 
-### Viikoittain
+### Viikoittain {#weekly}
 
 - Tarkista uudet rekisteröitymiset ja peruutukset
 - Vastaa kaikkiin avoimiin tukipyyntöihin
 - Tarkista alustan suorituskyky ja käytettävyys
 - Tarkista mahdolliset epäonnistuneet maksut
 
-### Kuukausittain
+### Kuukausittain {#monthly}
 
 - Analysoi keskeiset mittarit (MRR, poistuma, uudet asiakkaat, päivitykset)
 - Ota käyttöön WordPress- ja plugin-päivitykset (staging-testin jälkeen)
 - Tarkista ja päivitä tietopohjaa tukipyyntöjen mallien perusteella
 - Lähetä uutiskirje tai päivitys asiakkaille (uudet ominaisuudet, vinkit, fitness-alan uutiset)
 
-### Neljännesvuosittain
+### Neljännesvuosittain {#quarterly}
 
 - Tarkista hinnoittelu suhteessa kilpailijoihin ja asiakaspalautteeseen
 - Arvioi mallipohjien suunnittelu -- tarvitsevatko ne päivittämistä?
 - Arvioi hosting-kapasiteetti -- pitääkö sinun skaalata?
 - Tarkista ja paranna perehdytystä aktivointidatan perusteella
 
-## Mitä rakensimme tällä oppitunnilla
+## Mitä rakensimme tällä oppitunnilla {#what-we-built-this-lesson}
 
 - **Päivittäiset seurantakäytännöt** käytettävyydelle, rekisteröitymisille, maksuille ja tuelle
 - **Porrastettu tukirakenne**, joka vastaa plan-tasoja

@@ -3,15 +3,15 @@ title: 'Lezzjoni 5: Iddisinja l-Pjanijiet Tiegħek'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lezzjoni 5: Tfassal il-Pjanijiet Tiegħek
+# Lezzjoni 5: Tfassal il-Pjanijiet Tiegħek {#lesson-5-designing-your-plans}
 
 Il-livelli tal-pjanijiet tiegħek mhumiex biss livelli ta' prezzijiet -- huma riflessjoni ta' kif il-klijenti fin-niċċa tiegħek fil-fatt joperaw. F'din il-lezzjoni se tfassal livelli ta' prodott li jaqblu mal-bżonnijiet reali ta' negozji tal-fitness fi stadji differenti.
 
-## Fejn Ħallejna
+## Fejn Ħallejna {#where-we-left-off}
 
 FitSite għandu tliet templates lesti (Studio Essential, Gym Pro, Fitness Chain). Issa noħolqu l-pjanijiet li jiddeterminaw għal xiex il-klijenti jkollhom aċċess u kemm iħallsu.
 
-## Taħseb f'Segmenti ta' Klijenti
+## Taħseb f'Segmenti ta' Klijenti {#thinking-in-customer-segments}
 
 L-iżball li jagħmlu ħafna nies huwa li jfasslu pjanijiet madwar karatteristiċi tekniċi (ħażna, bandwidth, numru ta' paġni). Il-klijenti fin-niċċa tiegħek ma jaħsbux b'dawk it-termini. Sid ta' gym jaħseb dwar dak li għandu bżonn biex imexxi n-negozju tiegħu.
 
@@ -25,11 +25,11 @@ Għal studios tal-fitness, jeżistu tliet segmenti naturali:
 
 Il-pjanijiet tiegħek għandhom jikkorrispondu għal dawn is-segmenti, mhux għal pakketti arbitrarji ta' karatteristiċi.
 
-## Toħloq il-Pjanijiet ta' FitSite
+## Toħloq il-Pjanijiet ta' FitSite {#creating-the-fitsite-plans}
 
 Mur għal **Ultimate Multisite > Products > Add Product** għal kull pjan.
 
-### Pjan 1: FitSite Starter -- $49/xahar
+### Pjan 1: FitSite Starter -- $49/xahar {#plan-1-fitsite-starter----49month}
 
 **Mira**: Trainers waħedhom u studios żgħar
 
@@ -59,7 +59,7 @@ Mur għal **Ultimate Multisite > Products > Add Product** għal kull pjan.
 - It-theme magħżul tiegħek: Force Activate
 - It-themes l-oħra kollha: Hidden
 
-### Pjan 2: FitSite Growth -- $99/xahar
+### Pjan 2: FitSite Growth -- $99/xahar {#plan-2-fitsite-growth----99month}
 
 **Mira**: Gyms stabbiliti b'post wieħed
 
@@ -85,7 +85,7 @@ Mur għal **Ultimate Multisite > Products > Add Product** għal kull pjan.
 - Grupp tal-pjan: FitSite Plans
 - Ordni tal-prodott: 2
 
-### Pjan 3: FitSite Pro -- $199/xahar
+### Pjan 3: FitSite Pro -- $199/xahar {#plan-3-fitsite-pro----199month}
 
 **Mira**: Ktajjen tal-fitness b'postijiet multipli
 
@@ -109,7 +109,7 @@ Mur għal **Ultimate Multisite > Products > Add Product** għal kull pjan.
 - Grupp tal-pjan: FitSite Plans
 - Ordni tal-prodott: 3
 
-## Twaqqaf il-Grupp tal-Pjanijiet
+## Twaqqaf il-Grupp tal-Pjanijiet {#setting-up-the-plan-group}
 
 Il-grupp tal-pjanijiet jiżgura li l-klijenti jistgħu jagħmlu upgrade jew downgrade biss fi ħdan il-familja tal-pjanijiet FitSite. Fuq it-tab **Up & Downgrades** ta' kull pjan:
 
@@ -118,7 +118,7 @@ Il-grupp tal-pjanijiet jiżgura li l-klijenti jistgħu jagħmlu upgrade jew down
 
 Dan joħloq triq ċara ta' upgrade: Starter → Growth → Pro.
 
-## Żieda ta' Order Bumps
+## Żieda ta' Order Bumps {#adding-order-bumps}
 
 Order bumps huma prodotti add-on offruti waqt checkout. Għal FitSite, ikkunsidra:
 
@@ -128,7 +128,7 @@ Order bumps huma prodotti add-on offruti waqt checkout. Għal FitSite, ikkunsidr
 
 Oħloq dawn bħala prodotti tat-tip **Pakkett** f'Ultimate Multisite u assoċjahom mal-pjanijiet rilevanti.
 
-## Għaliex Din l-Istruttura Taħdem
+## Għaliex Din l-Istruttura Taħdem {#why-this-structure-works}
 
 - **Starter** ineħħi l-ostakli għad-dħul -- prezz baxx, offerta sempliċi, iġib trainers online malajr
 - **Growth** iżid il-karatteristiċi li gyms fil-fatt jitolbu -- booking, galleriji, domains personalizzati
@@ -136,7 +136,7 @@ Oħloq dawn bħala prodotti tat-tip **Pakkett** f'Ultimate Multisite u assoċjah
 - **Order bumps** iħallu lill-klijenti jippersonalizzaw mingħajr ma jikkomplikaw il-pjanijiet ewlenin
 - **Triq ċara ta' upgrade** tfisser li l-klijenti jikbru miegħek minflok jitilqu
 
-## In-Network ta' FitSite Sa Issa
+## In-Network ta' FitSite Sa Issa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## X'Bnejna f'Din il-Lezzjoni
+## X'Bnejna f'Din il-Lezzjoni {#what-we-built-this-lesson}
 
 - **Tliet livelli ta' pjanijiet** immappjati għal segmenti reali tan-negozji tal-fitness
 - **Kontroll tal-aċċess għall-karatteristiċi** bl-użu tal-kontrolli tal-plugins u templates ta' Ultimate Multisite

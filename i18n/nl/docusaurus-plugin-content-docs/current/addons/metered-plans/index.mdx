@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Verbruiksabonnementen
+# Verbruiksabonnementen {#metered-plans}
 
 De Ultimate Multisite: Verbruiksabonnementen add-on verandert hoe je je klanten factureert door flexibele mogelijkheden voor verbruiksafhankelijke facturering te introduceren. In plaats van starre harde limieten die gebruikers blokkeren wanneer ze worden overschreden, schakel je overschrijdingskosten in die klanten automatisch factureren voor aanvullend gebruik.
 
-## Belangrijkste functies
+## Belangrijkste functies {#key-features}
 
 * **Verbruiksafhankelijke facturering**: Breng klanten kosten in rekening op basis van werkelijk gebruik in plaats van vaste niveaus
 * **Overschrijdingsbeheer**: Factureer automatisch voor gebruik dat de abonnementslimieten overschrijdt
@@ -21,14 +21,14 @@ De Ultimate Multisite: Verbruiksabonnementen add-on verandert hoe je je klanten 
 * **Automatische facturering**: Genereer automatisch facturen wanneer gebruiksdrempels worden overschreden
 * **Gebruiksrapporten**: Gedetailleerde gebruiksanalyses en rapportage voor klanten en beheerders
 
-## Perfect voor
+## Perfect voor {#perfect-for}
 
 * **Hostingproviders**: Bied schaalbare abonnementen aan die meegroeien met de behoeften van klanten
 * **SaaS-platforms**: Factureer op basis van werkelijk resourceverbruik
 * **Bureaunetwerken**: Flexibele prijsmodellen voor klantprojecten
 * **Resellerhosting**: Stel partners in staat om prijzen op basis van gebruik aan te bieden
 
-## Hoe het werkt
+## Hoe het werkt {#how-it-works}
 
 1. Configureer verbruiksresources (schijfruimte, bandbreedte, aantal sites, enz.)
 2. Stel basislimieten voor abonnementen en overschrijdingstarieven in
@@ -37,13 +37,13 @@ De Ultimate Multisite: Verbruiksabonnementen add-on verandert hoe je je klanten 
 5. Facturen worden automatisch gegenereerd op basis van de factureringscyclus
 6. Klanten kunnen hun gebruik en aankomende kosten in real-time bekijken
 
-## AI-tokenfacturering
+## AI-tokenfacturering {#ai-token-billing}
 
 Versie 1.1.0 voegt AI-tokenfacturering toe voor netwerken die AI-functies aanbieden via de WordPress AI Client SDK. Verbruiksabonnementen luisteren naar voltooide AI-generatieverzoeken, registreren aantallen input- en outputtokens voor de huidige subsite en zetten die tokens om in factureerbare AI-uitgaven voor de huidige factureringsperiode van de klant.
 
 Gebruik AI-tokenfacturering wanneer je AI-tools op klantsites wilt aanbieden zonder onvoorspelbare modelkosten zelf te absorberen. Elk verzoek wordt toegewezen aan de subsite, klant, lidmaatschap, provider en model, zodat beheerders het gebruik kunnen controleren terwijl klanten kunnen zien hoe hun AI-verbruik hun account beïnvloedt.
 
-### Tarieven per token configureren
+### Tarieven per token configureren {#configure-per-token-rates}
 
 AI-tarieven worden per model geconfigureerd als afzonderlijke input- en outputtarieven. Tarieven worden berekend per 1 miljoen tokens, wat overeenkomt met gangbare prijspagina's van AI-providers.
 
@@ -55,7 +55,7 @@ AI-tarieven worden per model geconfigureerd als afzonderlijke input- en outputta
 
 Wanneer er geen exacte model-ID is geconfigureerd, kunnen Verbruiksabonnementen matchen op modelprefix. Een tarief dat bijvoorbeeld is geconfigureerd voor `claude-sonnet-4` kan worden toegepast op model-ID's met tijdstempel die met die prefix beginnen. Ontwikkelaars kunnen de uiteindelijke tarieventabel ook aanpassen met het filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Ondersteunde AI-connectors
+### Ondersteunde AI-connectors {#supported-ai-connectors}
 
 AI-tokenfacturering werkt met connectors die generatiegebeurtenissen van de WordPress AI Client SDK uitsturen en tokengebruik opnemen in de responsmetadata. Dit omvat de Ultimate Multisite AI-connectorfamilie die hier is gedocumenteerd:
 
@@ -65,13 +65,13 @@ AI-tokenfacturering werkt met connectors die generatiegebeurtenissen van de Word
 
 Aangepaste connectors kunnen deelnemen door de standaardgebeurtenissen `wp_ai_client_before_generate_result` en `wp_ai_client_after_generate_result` te activeren met metadata voor model, provider en tokengebruik. Connectorinstellingen worden afgedwongen van de hoofdsite naar subsites, zodat klantsites de door het netwerk goedgekeurde providers en limieten gebruiken.
 
-### Gebruik in klantaccount
+### Gebruik in klantaccount {#customer-account-usage}
 
 Klanten zien AI-gebruik naast hun andere gemeten resources in hun accountgedeelte. De rij voor AI-uitgaven toont het totaal van de huidige factureringsperiode, afgeleid van geregistreerde prompt- en voltooiingstokens, de geconfigureerde modeltarieven en eventuele inbegrepen limiet in het abonnement.
 
 Als een klant een betaalmethode in het bestand heeft, wordt gebruik boven de inbegrepen limiet behandeld als factureerbare overschrijding. Als het abonnement is geconfigureerd voor een harde stop en de klant geen beschikbare betaalmethode heeft, kunnen AI-verzoeken worden geblokkeerd zodra de limiet is bereikt en wordt de klant gevraagd betalingsgegevens toe te voegen voordat hij doorgaat.
 
-## Ondersteunde resources
+## Ondersteunde resources {#supported-resources}
 
 * Schijfopslag
 * Bandbreedte/gegevensoverdracht
@@ -80,13 +80,13 @@ Als een klant een betaalmethode in het bestand heeft, wordt gebruik boven de inb
 * AI-tokengebruik en AI-uitgaven
 * Aangepaste resourcetypen
 
-## Vereisten
+## Vereisten {#requirements}
 
 * Multisite Ultimate 2.0.0 of hoger
 * WordPress Multisite-installatie
 * PHP 7.4 of hoger
 
-## Installatie
+## Installatie {#installation}
 
 1. Upload de pluginbestanden naar `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Activeer de plugin via het scherm 'Plugins' in WordPress
@@ -94,24 +94,24 @@ Als een klant een betaalmethode in het bestand heeft, wordt gebruik boven de inb
 4. Configureer je gemeten resources en prijzen
 5. Schakel verbruiksafhankelijke facturering in voor producten in de producteditor
 
-## Veelgestelde vragen
+## Veelgestelde vragen {#frequently-asked-questions}
 
-## Wat gebeurt er wanneer een klant zijn limiet overschrijdt?
+## Wat gebeurt er wanneer een klant zijn limiet overschrijdt? {#what-happens-when-a-customer-exceeds-their-limit}
 
 In plaats van toegang te blokkeren, houdt het systeem het overschot bij en voegt dit toe aan hun volgende factuur op basis van de tarieven die je hebt geconfigureerd.
 
-## Kan ik verschillende overschrijdingstarieven instellen voor verschillende producten?
+## Kan ik verschillende overschrijdingstarieven instellen voor verschillende producten? {#can-i-set-different-overage-rates-for-different-products}
 
 Ja, elk product kan unieke gemeten resources en overschrijdingsprijzen hebben.
 
-## Hoe worden klanten op de hoogte gebracht van gebruik?
+## Hoe worden klanten op de hoogte gebracht van gebruik? {#how-are-customers-notified-about-usage}
 
 Klanten kunnen hun huidige gebruik bekijken in hun dashboard en optionele meldingen ontvangen wanneer ze limieten naderen of overschrijden.
 
-## Hoe wordt AI-tokengebruik geprijsd?
+## Hoe wordt AI-tokengebruik geprijsd? {#how-is-ai-token-usage-priced}
 
 AI-tokengebruik wordt geprijsd op basis van de geconfigureerde invoer- en uitvoertarieven van het model per 1 miljoen tokens. Metered Plans vermenigvuldigt de prompt- en completion-tokenaantallen van elke aanvraag met die tarieven, telt het resultaat op bij de huidige AI-uitgaven van de klant voor de factureringsperiode en past de inbegrepen hoeveelheid of overschrijdingsregels van het plan toe.
 
-## Kan ik nog steeds harde limieten gebruiken?
+## Kan ik nog steeds harde limieten gebruiken? {#can-i-still-use-hard-limits}
 
 Ja, gemeten facturering is optioneel per product. Je kunt traditionele producten met harde limieten combineren met gemeten producten.

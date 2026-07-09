@@ -3,7 +3,7 @@ title: PayPal instellen
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# De PayPal Gateway instellen (v2)
+# De PayPal Gateway instellen (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
@@ -13,13 +13,13 @@ Net als Stripe wordt PayPal veel gebruikt voor online betalingen, vooral op Word
 
 Let op dat je een **PayPal Business account** nodig hebt om de API-inloggegevens te verkrijgen die nodig zijn voor deze integratie.
 
-## PayPal inschakelen op je netwerk
+## PayPal inschakelen op je netwerk {#enabling-paypal-on-your-network}
 
 Om PayPal in te schakelen als beschikbare betaalmethode op je netwerk, ga je naar het tabblad **Ultimate Multisite > Settings > Payments** en vink je het vakje naast PayPal aan.
 
 ![PayPal inschakelen in actieve payment gateways](/img/config/settings-payment-gateways.png)
 
-## De begeleide installatiewizard gebruiken
+## De begeleide installatiewizard gebruiken {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 voegt een begeleide PayPal-installatiewizard toe aan de instellingen van de payment gateway. Nadat je PayPal hebt ingeschakeld, gebruik je de wizard op **Ultimate Multisite > Settings > Payments** om te kiezen hoe je de gateway wilt verbinden en te bevestigen welke inloggegevens nog nodig zijn voordat je opslaat.
 
@@ -30,7 +30,7 @@ De wizard ondersteunt twee installatiepaden:
 
 Als je de OAuth-optie niet in de wizard ziet, voltooi dan de onderstaande flow voor handmatige invoer van inloggegevens. De gateway werkt met dezelfde PayPal Business API-inloggegevens als eerdere Ultimate Multisite 2.x-releases.
 
-## De PayPal API-inloggegevens verkrijgen
+## De PayPal API-inloggegevens verkrijgen {#getting-the-paypal-api-credentials}
 
 Zodra PayPal is ingeschakeld als payment gateway, moet je de velden voor PayPal API **Username**, PayPal API **Password** en PayPal API **Signature** invullen.
 

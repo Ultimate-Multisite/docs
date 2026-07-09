@@ -4,11 +4,11 @@ title: Dejanje - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Action: wu_dashboard_widgets
+# Action: wu_dashboard_widgets {#action-wudashboardwidgets}
 
 Omogoča razvijalcem pluginov dodajanje gradnikov na ploščo Network Dashboard.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Omogoča razvijalcem pluginov dodajanje gradnikov na ploščo Network Dashboard.
 | $screen | `\WP_Screen` | Objekt zaslona. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Instanca skrbniške strani Ultimate Multisite. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.0
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L225) v vrstici 225

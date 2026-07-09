@@ -3,7 +3,7 @@ title: PayFast дневник измена
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast дневник измена
+# PayFast дневник измена {#payfast-changelog}
 
 Верзија: 1.0.2 - Објављено 2025-09-28
 

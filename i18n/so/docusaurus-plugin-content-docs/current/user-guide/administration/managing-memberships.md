@@ -3,7 +3,7 @@ title: Maareynta Xubnaha
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Maareyntaanka Xubnaha (Managing Memberships)
+# Maareyntaanka Xubnaha (Managing Memberships) {#managing-memberships}
 
 Ultimate Multisite-ka, waxaad maareyn kartaa xubnaha iyo helitaanka dhammaan ciyaartoyinkaaga ee shabakadahaaga. Waxaad dib u eegtaa oo waxaad hagaajin kartaa faahfaahinta ciyaarta sida qorshayaasha (plans) iyo badeecadaha, tirada meelaha (sites), lacagta la bixiyo iyo mar walba la bixiya, taariikhda lacagta la bixiyay, iyo wakhtarrada.
 

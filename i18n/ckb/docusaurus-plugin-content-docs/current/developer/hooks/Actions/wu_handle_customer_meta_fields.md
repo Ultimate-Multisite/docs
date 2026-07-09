@@ -4,11 +4,11 @@ title: کردار - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# کردار: wu_handle_customer_meta_fields
+# کردار: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 ڕێگە بدە بە پەرەپێدەرانی plugin کە زانیاریی meta بە شێوازە جیاوازەکان پاشەکەوت بکەن ئەگەر پێویستیان پێی هەبوو.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: a93030d6a7965ebed83579b198381fa8
 | $customer | `\Customer` | ئامانجی کڕیاری Ultimate Multisite. |
 | $checkout | `\Checkout` | پۆلی checkout. |
 
-### لەوەوبەر
+### لەوەوبەر {#since}
 
 - 2.0.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) لە هێڵی 1211

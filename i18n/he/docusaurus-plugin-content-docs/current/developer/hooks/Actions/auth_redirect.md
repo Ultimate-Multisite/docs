@@ -4,19 +4,19 @@ title: פעולה - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# פעולה: auth_redirect
+# פעולה: auth_redirect {#action-authredirect}
 
 מופעל לפני ההפניה לאימות.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Name | Type | תיאור |
 |------|------|-------------|
 | $user_id | `int` | מזהה המשתמש. |
 
-### מאז
+### מאז {#since}
 
 - 2.8.0
-### מקור
+### מקור {#source}
 
 מוגדר ב-[inc/sso/auth-functions.php](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L223) בשורה 223

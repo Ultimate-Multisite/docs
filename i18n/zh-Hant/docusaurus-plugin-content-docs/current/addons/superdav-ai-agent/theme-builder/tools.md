@@ -3,17 +3,17 @@ title: 工具與設定
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# 工具與設定
+# 工具與設定 {#tools-and-configuration}
 
 Theme Builder 使用一組工具來分析、設計並建置你的 WordPress 站點。在 1.16.0 版中，**sd-ai-agent/site-scrape 現已是 Tier 1 工具**，因此在 Theme Builder 中預設可用。Superdav AI Agent v1.18.0 也推出了另行散發的 Advanced companion package，供受信任的開發者工作流程使用；這些工具並非 WordPress.org 核心套件的一部分，必須另行安裝並授權。
 
-## 可用工具
+## 可用工具 {#available-tools}
 
-### Tier 1 工具（永遠可用）
+### Tier 1 工具（永遠可用） {#tier-1-tools-always-available}
 
 Tier 1 工具在 Theme Builder 中預設可用，不需要任何額外設定。
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **用途：** 分析現有網站，以擷取設計靈感、內容結構與功能。
 
@@ -51,11 +51,11 @@ Tier 1 工具在 Theme Builder 中預設可用，不需要任何額外設定。
 - 大量使用 JavaScript 的站點可能分析有限
 - 大型站點可能需要較長時間分析
 
-### Tier 2 工具（選用）
+### Tier 2 工具（選用） {#tier-2-tools-optional}
 
 Tier 2 工具在 Theme Builder 設定中明確啟用時可用。
 
-#### 進階分析
+#### 進階分析 {#advanced-analytics}
 
 提供詳細的效能指標：
 
@@ -65,7 +65,7 @@ Tier 2 工具在 Theme Builder 設定中明確啟用時可用。
 - 無障礙分數
 - 最佳實務分數
 
-#### 內容最佳化工具
+#### 內容最佳化工具 {#content-optimizer}
 
 分析並建議改進：
 
@@ -75,11 +75,11 @@ Tier 2 工具在 Theme Builder 設定中明確啟用時可用。
 - 內容結構
 - 行動呼籲放置位置
 
-### Tier 3 工具（Premium）
+### Tier 3 工具（Premium） {#tier-3-tools-premium}
 
 Tier 3 工具需要額外設定或 premium 功能。
 
-#### AI 內容產生器
+#### AI 內容產生器 {#ai-content-generator}
 
 產生以下內容：
 
@@ -89,7 +89,7 @@ Tier 3 工具需要額外設定或 premium 功能。
 - Meta 描述
 - 行動呼籲文案
 
-#### 進階設計工具
+#### 進階設計工具 {#advanced-design-tools}
 
 提供進階設計能力：
 
@@ -99,7 +99,7 @@ Tier 3 工具需要額外設定或 premium 功能。
 - 進階色彩理論
 - 字體排印最佳化
 
-### Advanced Companion 工具（獨立套件）
+### Advanced Companion 工具（獨立套件） {#advanced-companion-tools-separate-package}
 
 Advanced companion package 與核心 Superdav AI Agent 發行版本分開散發。它適用於受信任的開發者與站點擁有者環境，在這些環境中，管理員明確允許 agent 使用高影響力工具。
 
@@ -116,9 +116,9 @@ Advanced companion 功能可包含：
 
 不要將這些記錄為每個安裝都普遍可用的 Theme Builder 工具。只有在 Advanced companion package 已安裝、啟用，並限制給受信任的管理員使用時，這些工具才可用。
 
-## 工具設定
+## 工具設定 {#tool-configuration}
 
-### 啟用工具
+### 啟用工具 {#enabling-tools}
 
 若要在 Theme Builder 中啟用其他工具：
 
@@ -127,7 +127,7 @@ Advanced companion 功能可包含：
 3. 視需要切換工具開/關
 4. 儲存設定
 
-### 工具權限
+### 工具權限 {#tool-permissions}
 
 有些工具需要權限：
 
@@ -137,7 +137,7 @@ Advanced companion 功能可包含：
 - **進階功能** — 可能需要 premium subscription
 - **Advanced companion 工具** — 需要另行散發的 Advanced package 與明確的管理員信任
 
-### API Key 與憑證
+### API Key 與憑證 {#api-keys-and-credentials}
 
 為需要 API key 的工具設定 API key：
 
@@ -146,13 +146,13 @@ Advanced companion 功能可包含：
 3. 測試連線
 4. 安全地儲存
 
-### 安裝 Advanced Companion Package
+### 安裝 Advanced Companion Package {#installing-the-advanced-companion-package}
 
 Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從該發行版本的官方專案散發管道安裝，然後將存取權限制給受信任的管理員。在正式站點上啟用檔案系統、資料庫、WP-CLI、REST dispatcher、plugin builder、使用者管理或基準測試工具之前，請檢閱人工核准關卡與 git 快照行為。
 
-## 使用 sd-ai-agent/site-scrape
+## 使用 sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### 基本用法
+### 基本用法 {#basic-usage}
 
 請 Theme Builder 分析網站：
 
@@ -161,7 +161,7 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 並為我的站點建議設計改進。
 ```
 
-### 特定分析
+### 特定分析 {#specific-analysis}
 
 請求特定類型的分析：
 
@@ -179,7 +179,7 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 同樣具備響應能力。
 ```
 
-### 比較分析
+### 比較分析 {#comparison-analysis}
 
 比較多個站點：
 
@@ -188,22 +188,22 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 結合兩者最佳元素的設計。
 ```
 
-## 工具限制與考量
+## 工具限制與考量 {#tool-limitations-and-considerations}
 
-### 速率限制
+### 速率限制 {#rate-limiting}
 
 - Scraping 會受到速率限制，以防止伺服器過載
 - 對同一個網站的多次請求可能會被節流
 - 大型網站可能需要更長時間分析
 
-### 內容準確性
+### 內容準確性 {#content-accuracy}
 
 - 動態內容可能無法完整擷取
 - JavaScript 轉譯的內容可能不完整
 - 即時資料可能不會反映出來
 - 某些內容可能位於付費牆後方
 
-### 法律與倫理考量
+### 法律與倫理考量 {#legal-and-ethical-considerations}
 
 - 尊重 robots.txt 和網站政策
 - 不要為了重製而抓取受著作權保護的內容
@@ -211,16 +211,16 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 - 確認你有權使用擷取的內容
 - 遵循被分析網站的服務條款
 
-### 效能影響
+### 效能影響 {#performance-impact}
 
 - 抓取大型網站可能需要時間
 - 多個同時進行的抓取可能會較慢
 - 網路連線會影響速度
 - 大型資料集可能需要更多處理
 
-## 最佳做法
+## 最佳做法 {#best-practices}
 
-### 使用網站分析
+### 使用網站分析 {#using-site-analysis}
 
 1. **分析多個網站** — 從多個來源收集靈感
 2. **專注於結構** — 學習版面配置與組織模式
@@ -228,7 +228,7 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 4. **研究排版** — 找出你喜歡的字型組合
 5. **檢視導覽** — 了解選單組織方式
 
-### 倫理抓取
+### 倫理抓取 {#ethical-scraping}
 
 1. **尊重 robots.txt** — 遵循網站準則
 2. **不要複製內容** — 僅將分析用於啟發
@@ -236,7 +236,7 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 4. **標示來源** — 註明靈感來源
 5. **遵循條款** — 遵守網站服務條款
 
-### 最大化工具效益
+### 最大化工具效益 {#maximizing-tool-effectiveness}
 
 1. **具體明確** — 請求特定類型的分析
 2. **提供背景** — 說明你網站的目的
@@ -244,9 +244,9 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 4. **反覆調整** — 根據結果 refinement
 5. **結合工具** — 使用多個工具進行全面分析
 
-## 疑難排解
+## 疑難排解 {#troubleshooting}
 
-### 網站無法抓取
+### 網站無法抓取 {#site-wont-scrape}
 
 - 檢查網站是否可公開存取
 - 確認 robots.txt 允許抓取
@@ -254,7 +254,7 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 - 檢查網際網路連線
 - 如果問題持續，請聯絡支援
 
-### 分析不完整
+### 分析不完整 {#incomplete-analysis}
 
 - 網站可能有動態內容
 - JavaScript 可能未完整轉譯
@@ -262,7 +262,7 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 - 改為嘗試分析特定頁面
 - 請求特定分析類型
 
-### 效能緩慢
+### 效能緩慢 {#slow-performance}
 
 - 大型網站需要更長時間分析
 - 多個同時進行的抓取會較慢
@@ -270,7 +270,7 @@ Advanced companion package 與 WordPress.org 核心 ZIP 分開發布。請只從
 - 嘗試在離峰時段進行
 - 先分析較小區段
 
-## 相關文件
+## 相關文件 {#related-documentation}
 
 - [探索訪談](./discovery-interview.md) — 收集設計資訊
 - [設計方向](./design-direction.md) — 改善你的設計

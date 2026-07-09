@@ -3,13 +3,13 @@ title: Closte'de Sunrise Sabitini Ayarlama
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte'ta Sunrise Sabitini True Olarak Ayarlama
+# Closte'ta Sunrise Sabitini True Olarak Ayarlama {#setting-the-sunrise-constant-to-true-on-closte}
 
 Bazı hosting sağlayıcıları güvenlik nedeniyle wp-config.php dosyasını kilitli tutar. Bu durum, Ultimate Multisite'ın alan adı eşleme ve diğer özelliklerin çalışması için gerekli sabitleri otomatik olarak dosyaya ekleyememesi anlamına gelir. Closte de bu tür sağlayıcılardan biridir.
 
 Ancak Closte, wp-config.php dosyasına güvenli bir şekilde sabit eklemenize olanak tanır. Tek yapmanız gereken aşağıdaki adımları izlemek:
 
-## Closte kontrol panelinde
+## Closte kontrol panelinde {#on-the-closte-dashboard}
 
 Öncelikle [Closte hesabınıza giriş yapın](https://app.closte.com/), Sites menü öğesine tıklayın, ardından üzerinde çalıştığınız sitenin Dashboard bağlantısına tıklayın:
 

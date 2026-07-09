@@ -3,15 +3,15 @@ title: Cruthaich SVG suaicheantais
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Cruthaich Suaicheantas SVG
+# Cruthaich Suaicheantas SVG {#generate-logo-svg}
 
 Leigidh comas **Cruthaich Suaicheantas SVG** le Theme Builder suaicheantasan SVG gnàthaichte a chruthachadh agus a neadachadh gu dìreach san làrach WordPress agad le glanadh fèin-obrachail a tha sàbhailte a thaobh namespace.
 
-## Sealladh farsaing
+## Sealladh farsaing {#overview}
 
 Cruthaichidh an comas seo suaicheantasan grafaigean veactair so-sgèilichte (SVG) stèidhichte air stiùireadh branndaidh na làraich agad agus na roghainnean dealbhaidh agad. Thèid na SVGs a thèid a chruthachadh a ghlanadh gu fèin-obrachail gus dèanamh cinnteach gu bheil iad sàbhailte airson an cleachdadh ann an WordPress agus iomlanachd lèirsinneach air a cumail suas.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Paramadair | Seòrsa | Riatanach | Tuairisgeul |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Cruthaichidh an comas seo suaicheantasan grafaigean veactair so-sgèilichte (SVG
 | `height` | number | Chan eil | Àirde SVG ann am piogsail (bunaiteach: 200) |
 | `include_text` | boolean | Chan eil | Am bu chòir ainm na làraich a ghabhail a-steach mar theacsa san t-suaicheantas (bunaiteach: true) |
 
-## Fòrmat an toraidh
+## Fòrmat an toraidh {#output-format}
 
 Tillidh an comas sreang SVG leis an structar a leanas:
 
@@ -36,7 +36,7 @@ Tillidh an comas sreang SVG leis an structar a leanas:
 }
 ```
 
-## Giùlan glanaidh SVG
+## Giùlan glanaidh SVG {#svg-sanitisation-behaviour}
 
 Thèid na SVGs a thèid a chruthachadh tro ghlanadh fèin-obrachail a tha sàbhailte a thaobh namespace gus:
 
@@ -48,7 +48,7 @@ Thèid na SVGs a thèid a chruthachadh tro ghlanadh fèin-obrachail a tha sàbha
 
 Nì seo cinnteach gu bheil an SVG sàbhailte ri neadachadh gu dìreach ann an WordPress gun ghlanadh a bharrachd a bhith a dhìth.
 
-## Eisimpleir cleachdaidh
+## Eisimpleir cleachdaidh {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Cruthaichidh an comas suaicheantas SVG a tha:
 - A’ leantainn phrionnsapalan dealbhaidh ùr-nòsaich
 - Air a ghlanadh gu fèin-obrachail agus deiseil ri chleachdadh
 
-## Amalachadh le Theme Builder
+## Amalachadh le Theme Builder {#integration-with-theme-builder}
 
 Nuair a thathar a’ cleachdadh taghadh stiùireadh-dealbhaidh Theme Builder, nì comas Cruthaich Suaicheantas SVG:
 
@@ -71,21 +71,21 @@ Nuair a thathar a’ cleachdadh taghadh stiùireadh-dealbhaidh Theme Builder, n�
 3. Neadachadh an t-suaicheantais gu fèin-obrachail ann an raon bann-cinn/branndaidh na làraich agad
 4. Stòradh an SVG mar shuaicheantas gnàthaichte ann am meadhanan WordPress
 
-## Cleachdaidhean as fheàrr
+## Cleachdaidhean as fheàrr {#best-practices}
 
 - **Thoir seachad roghainnean stoidhle soilleir** — thoir cunntas air an stoidhle dealbhaidh a tha thu ag iarraidh (ùr-nòsach, clasaigeach, spòrsail, msaa.)
 - **Sònraich dathan** — gabh a-steach dathan do bhrand airson cunbhalachd
 - **Dèan deuchainn air renderadh** — dearbhaich gu bheil an suaicheantas a’ nochdadh gu ceart thar diofar mheudan sgrìn
 - **Gnàthaich nas fhaide** — cleachd innealan gnàthachaidh suaicheantais WordPress gus meud agus suidheachadh atharrachadh
 
-## Cuingeachaidhean
+## Cuingeachaidhean {#limitations}
 
 - Thèid suaicheantasan SVG a chruthachadh mar ghrafaigean statach (chan eil iad beòthaichte)
 - Dh’fhaodadh suaicheantasan iom-fhillte le mòran eileamaidean leasachadh làimhe iarraidh
 - Chan eil cruthan-clò gnàthaichte taiceil; cleachdaidh teacsa cruthan-clò an t-siostaim
 - Dh’fhaodadh tomhasan glè mhòra no glè bheaga buaidh a thoirt air càileachd
 
-## Comasan co-cheangailte
+## Comasan co-cheangailte {#related-abilities}
 
 - [Dearbhaich iomsgaradh paileid](./validate-palette-contrast.md) — thoir sùil air iomsgaradh dhathan airson ruigsinneachd
 - [Cruthaich clàr-taice](./create-menu.md) — cruthaich clàran-seòlaidh airson na làraich agad

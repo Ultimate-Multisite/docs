@@ -3,11 +3,11 @@ title: Kugona Kutarisira maPlugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Zvikwanisiro zveKutarisira Mawedzero
+# Zvikwanisiro zveKutarisira Mawedzero {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 inouya ne **zvikwanisiro 7 zvekutarisira mawedzero** izvo mubatsiri weAI anogona kushandisa panguva yehurukuro. Zvikwanisiro izvi zvinopa kudzora kwechirongwa pamusoro pemaWordPress wedzero akaiswa kuburikidza ne [Sisitimu yeKuvaka Mawedzero neSandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Pfupiso yeZvikwanisiro
+## Pfupiso yeZvikwanisiro {#abilities-overview}
 
 | Chikwanisiro | Slug | Tsananguro |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 inouya ne **zvikwanisiro 7 zvekutarisira mawedzero** izvo
 | Isa Wedzero | `install_plugin` | Inotumira wedzero iri mu sandbox kudhairekitori remawedzero eWordPress ari kushanda. |
 | Shandisa Wedzero | `activate_plugin` | Inoshandisa wedzero iri mu sandbox munharaunda ye wp-env sandbox. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Muisi wema wedzero unobata mabasa efaira system paunenge uchitumira kana kubvisa mawedzero. Maitiro akakosha:
 
@@ -28,7 +28,7 @@ Muisi wema wedzero unobata mabasa efaira system paunenge uchitumira kana kubvisa
 - **Kugadzirisa**: Inotsiva mafaera aripo ewedzero. Inomisa wedzero kushanda isati yanyora kuti idzivise zvikanganiso zvechimiro chisina kukwana.
 - **Kudzima ne slug**: Inotsvaga dhairekitori rewedzero ne slug, inomisa kushanda pamasaiti ese, yobva yabvisa dhairekitori.
 
-### Kunyoresa Mubati Wekuisa Wakagadziridzwa
+### Kunyoresa Mubati Wekuisa Wakagadziridzwa {#registering-a-custom-install-handler}
 
 Unogona kubatanidza muhupenyu hwekuisa uchishandisa zviito zve `gratis_ai_plugin_installer_before_install` ne `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Rejista yeEcosystem
+## Rejista yeEcosystem {#ecosystem-registry}
 
 Zvikwanisiro zvinonyoreswa kuburikidza ne **rejista yeecosystem yemawedzero**. Rejista inobatanidza ma slug ezvikwanisiro nemakirasi awo evabati uye inozviratidza kune mutumi wezvishandiso wemumiriri weAI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Kubatanidzwa kweHookScanner
+## Kubatanidzwa kweHookScanner {#hookscanner-integration}
 
 Zvikwanisiro zve `create_plugin` ne `update_plugin` zvinomhanyisa otomatiki **HookScanner** pakodhi ichangobva kugadzirwa. HookScanner inodzosa rondedzero yema hook eWordPress action nefilter akanyoreswa newedzero.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner inodarika madhairekitori e `vendor/` ne `node_modules/` otomatiki.
 
-## Chimiro cheAsync Job
+## Chimiro cheAsync Job {#async-job-architecture}
 
 Mabasa emawedzero anotora nguva refu (kugadzira, kuisa) anotumirwa se **async jobs** ane kutevera kufambira mberi kuri kurarama. Chiso chehurukuro yeAI chinobvunza kufambira mberi uye chinoyerera zvigadziriso zvechimiro kumushandisi:
 

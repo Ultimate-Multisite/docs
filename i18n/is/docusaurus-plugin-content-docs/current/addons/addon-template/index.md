@@ -3,25 +3,25 @@ title: Viðbótarsniðmát
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Viðbótarsniðmát
+# Viðbótarsniðmát {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Kröfur
+## Kröfur {#requirements}
 
 - WordPress 5.3 eða nýrra
 - PHP 7.4 eða nýrra
 - Multisite Ultimate viðbót (virk)
 
-## Uppsetning
+## Uppsetning {#installation}
 
 1. Hladdu viðbótarskránum upp í `/wp-content/plugins/` möppuna þína
 2. Virkjaðu viðbótina í gegnum valmyndina 'Plugins' í WordPress
 3. Stilltu viðbótarstillingarnar í netkerfisstjórninni
 
-## Þróun
+## Þróun {#development}
 
-### Uppsetning
+### Uppsetning {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Verkefnisskipulag
+### Verkefnisskipulag {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Reglur fyrir nútímavæðingu kóða
 ```
 
-### Prófanir
+### Prófanir {#testing}
 
 Viðbótin inniheldur yfirgripsmikið prófunarumhverfi:
 
@@ -75,44 +75,44 @@ Viðbótin inniheldur yfirgripsmikið prófunarumhverfi:
 - **Prófaþekja**: Stillt til að rekja kóðaþekju
 - **Multisite-prófanir**: Prófanir keyra í multisite-umhverfi
 
-### Kóðastaðlar
+### Kóðastaðlar {#code-standards}
 
 - **WordPress kóðastaðlar**: Framfylgt með PHPCS
 - **PHP 7.4+ samhæfni**: Nútímalegir PHP eiginleikar studdir
 - **Stöðugreining**: PHPStan samþætting fyrir tegundaprófun
 - **Nútímavæðing kóða**: Rector-reglur fyrir PHP uppfærslur
 
-### Byggingarkerfi
+### Byggingarkerfi {#build-system}
 
 - **Vinnsla eigna**: Smækkun fyrir CSS/JS skrár
 - **Þýðing**: Myndun POT-skrár
 - **Pökkun**: Gerð safnskrár fyrir dreifingu
 - **Þróunarhamur**: Ósmækkaðar eignir fyrir villuleit
 
-## Stillingar
+## Stillingar {#configuration}
 
 Viðbótin styður ýmsa stillingarmöguleika sem eru aðgengilegir í gegnum netkerfisstjórnarviðmótið.
 
-## Hooks og Filters
+## Hooks og Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Keyrt eftir frumstillingu viðbótar
 - `ultimate-multisite-addon-template_loaded` - Keyrt eftir að allar viðbótarskrár hafa verið hlaðnar
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Breyta viðbótarstillingum
 - `ultimate-multisite-addon-template_enabled` - Hnekkja virkjaðri/óvirkjaðri stöðu viðbótar
 
-## Leyfi
+## Leyfi {#license}
 
 Þessi viðbót er gefin út undir GPL v3 eða nýrra leyfi.
 
-## Aðstoð
+## Aðstoð {#support}
 
 Fyrir aðstoð og skjölun, heimsæktu [MultisiteUltimate.com](https://multisiteultimate.com)
-## Breytingaskrá
+## Breytingaskrá {#changelog}
 
 - Útgáfa 1.0.1 (2025-09-28): endurnefna forskeyti í ultimate-multisite; uppfæra text domain; hækkun útgáfunúmers.
 

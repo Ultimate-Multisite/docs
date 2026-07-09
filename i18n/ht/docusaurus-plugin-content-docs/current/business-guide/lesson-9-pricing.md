@@ -3,17 +3,17 @@ title: 'Leson 9: Fikse Pri pou Pwofi'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Leson 9: Pri pou Pwofi
+# Leson 9: Pri pou Pwofi {#lesson-9-pricing-for-profit}
 
 Nan Leson 5 nou te mete pri inisyal pou plan FitSite yo. Kounye a nou rafine estrateji pri a ak teknik ki ogmante revni, ankouraje amelyorasyon, epi diminye churn.
 
-## Kote Nou Te Rete
+## Kote Nou Te Rete {#where-we-left-off}
 
 FitSite gen plan, modèl, checkout, branding, ak onboarding an plas. Pri inisyal la te $49/$99/$199 pa mwa. Kounye a nou fè pri sa a travay pi di.
 
-## Prensip Pri pou Platfòm Nich
+## Prensip Pri pou Platfòm Nich {#pricing-principles-for-niche-platforms}
 
-### Mete Pri sou Valè, Pa sou Pri Kout
+### Mete Pri sou Valè, Pa sou Pri Kout {#price-on-value-not-cost}
 
 Depans hosting ou yo ka $5-$15 pou chak sit kliyan. Sa pa vle di pri ou ta dwe $20. Ou pa ap vann hosting. Ou ap vann:
 
@@ -24,7 +24,7 @@ Depans hosting ou yo ka $5-$15 pou chak sit kliyan. Sa pa vle di pri ou ta dwe $
 
 Mete pri a selon valè ou bay la, pa selon depans pou bay li.
 
-### Mare ak Altènativ yo
+### Mare ak Altènativ yo {#anchor-to-alternatives}
 
 Lè yon pwopriyetè estidyo fitness ap evalye FitSite, yo konpare li ak:
 
@@ -34,7 +34,7 @@ Lè yon pwopriyetè estidyo fitness ap evalye FitSite, yo konpare li ak:
 
 A $49-$199/mwa, FitSite pi bon mache pase yon devlopè, pi kapab pase builder jeneral yo, epi enfini pi bon pase pa gen sit entènèt.
 
-## Mete Varyasyon Pri an Aplikasyon
+## Mete Varyasyon Pri an Aplikasyon {#implementing-price-variations}
 
 Pri anyèl ankouraje angajman epi diminye churn. Ale nan onglet **Price Variations** chak plan epi ajoute opsyon anyèl:
 
@@ -46,12 +46,12 @@ Pri anyèl ankouraje angajman epi diminye churn. Ale nan onglet **Price Variatio
 
 Ajoute yon chan **Period Selection** nan fòm checkout ou a pou kliyan yo ka chanje ant fakti chak mwa ak fakti anyèl. Gade [Fòm Checkout](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Poukisa Pri Anyèl Mache
+### Poukisa Pri Anyèl Mache {#why-annual-pricing-works}
 
 - **Pou ou**: Lajan alavans, churn pi ba (kliyan ki peye anyèlman gen mwens chans pou anile nan mitan peryòd la)
 - **Pou yo**: Ekonomi reyèl, previzibilite bidjè
 
-## Frè Konfigirasyon
+## Frè Konfigirasyon {#setup-fees}
 
 Konsidere yon frè konfigirasyon yon sèl fwa pou plan ki enkli konfigirasyon ak asistans dirèk:
 
@@ -61,7 +61,7 @@ Konsidere yon frè konfigirasyon yon sèl fwa pou plan ki enkli konfigirasyon ak
 
 Konfigure frè konfigirasyon yo nan seksyon pri chak plan. Gade [Kreye Premye Pwodwi Abònman Ou](/user-guide/configuration/creating-your-first-subscription-product) pou detay.
 
-## Peryòd Esè
+## Peryòd Esè {#trial-periods}
 
 Ofri yon esè diminye friksyon enskripsyon men li pote risk pou moun pa konvèti. Pou FitSite:
 
@@ -70,11 +70,11 @@ Ofri yon esè diminye friksyon enskripsyon men li pote risk pou moun pa konvèti
 
 Konfigure esè a nan seksyon pri plan Starter a lè ou aktive bouton **Offer Trial** la epi mete dire a 7 jou.
 
-### Fè Esè yo Konvèti
+### Fè Esè yo Konvèti {#making-trials-convert}
 
 Yon esè mache sèlman si kliyan an fè eksperyans valè pandan peryòd esè a. Sekans onboarding ou a (Leson 8) enpòtan anpil isit la -- imel akèy yo ta dwe pwograme pou pouse angajman nan fenèt 7 jou a.
 
-## Kòd Rabè
+## Kòd Rabè {#discount-codes}
 
 Kreye kòd rabè estratejik pou objektif espesifik:
 
@@ -88,7 +88,7 @@ Ale nan **Ultimate Multisite > Discount Codes** pou kreye yo. Gade [Kreye Kòd R
 Rabè yo ta dwe zouti estratejik, pa eleman pèmanan. Si tout moun jwenn yon rabè, se pa yon rabè -- se vrè pri ou. Itilize yo pou kanpay espesifik, referans, ak pwomosyon ki limite nan tan.
 :::
 
-## Jesyon Taks
+## Jesyon Taks {#tax-handling}
 
 Si ou opere nan yon jiridiksyon ki mande koleksyon taks:
 
@@ -98,7 +98,7 @@ Si ou opere nan yon jiridiksyon ki mande koleksyon taks:
 
 Gade [Jesyon Taks](/user-guide/payment-gateways/tax-handling) pou konfigirasyon detaye. Si ou sèvi kliyan entènasyonalman, konsidere [VAT addon](/addons/vat) pou konfòmite Inyon Ewopeyen.
 
-## Revize Pri Ou yo
+## Revize Pri Ou yo {#reviewing-your-pricing}
 
 Apre lansman, revize pri chak trimès. Gade:
 
@@ -107,7 +107,7 @@ Apre lansman, revize pri chak trimès. Gade:
 - **Churn pa plan**: Si kliyan anyèl yo churn mwens, pouse pri anyèl pi fò
 - **Pri konkiran yo**: Kisa altènativ yo ap chaje? Èske ou pozisyone kòrèkteman?
 
-## Rezo FitSite la Jiskaprezan
+## Rezo FitSite la Jiskaprezan {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Sa Nou Te Konstwi nan Leson Sa a
+## Sa Nou Te Konstwi nan Leson Sa a {#what-we-built-this-lesson}
 
 - **Pri anyèl** ak 20% rabè pou ankouraje angajman
 - **Frè konfigirasyon** sou nivo ki pi wo yo pou kouvri efò onboarding

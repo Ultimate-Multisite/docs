@@ -3,11 +3,11 @@ title: Ohatra kaody avo lenta
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ohatra Kaody Mandroso
+# Ohatra Kaody Mandroso {#advanced-code-examples}
 
 Ireo ohatra ireo dia mampiseho lamina fampifandraisana mandroso miaraka amin'ny Ultimate Multisite.
 
-## Motera Fametrahana Vidiny Dinamika
+## Motera Fametrahana Vidiny Dinamika {#dynamic-pricing-engine}
 
 Motera fametrahana vidiny mifototra amin'ny fitsipika izay mampihatra fihenam-bidy araka ny habetsahana, fahatokiana, ary vanim-potoana:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Famatsiana Tranonkala Mandroso
+## Famatsiana Tranonkala Mandroso {#advanced-site-provisioning}
 
 Amboary ho azy ireo tranonkala vaovao miaraka amin'ny fanampim-panitarana, SSL, CDN, tahiry fiarovana, ary fanaraha-maso mifototra amin'ny endri-javatra ao amin'ny drafitra:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Rafitra Famerana Namboarina Manokana
+## Rafitra Famerana Namboarina Manokana {#custom-limitations-system}
 
 Araho sy ampiharo ny fetran'ny loharanon-karena miaraka amin'ny fampitandremana momba ny fampiasana:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Counter atomika BerlinDB miaraka amin'ny `increment_item()`
+## Counter atomika BerlinDB miaraka amin'ny `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 dia nanampy method `increment_item()` ao amin'ny class `Query` an'ny BerlinDB. Ampiasao izy io hanaovana fampitomboana azo antoka sy atomika amin'ny tsanganana isa, tsy misy fifaninanana read-modify-write — ilaina amin'ny counters, quotas fampiasana, ary fanamarinana rate-limiting mandeha eo ambanin'ny requests mifanesy.
 
-### Sonian'ny method
+### Sonian'ny method {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 dia nanampy method `increment_item()` ao amin'ny class
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Fampiasana fototra
+### Fampiasana fototra {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Fanarahana ny fampiasana API isaky ny membership
+### Fanarahana ny fampiasana API isaky ny membership {#tracking-api-usage-per-membership}
 
 Lamina azo ampiharina amin'ny fampiharana fetran'ny tahan'ny API isaky ny membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Nahoana no `increment_item()` fa tsy `update_item()`
+### Nahoana no `increment_item()` fa tsy `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Ny fomba read-modify-write tsotra loatra dia tsy azo antoka eo ambanin'ny requests mifanesy:
 

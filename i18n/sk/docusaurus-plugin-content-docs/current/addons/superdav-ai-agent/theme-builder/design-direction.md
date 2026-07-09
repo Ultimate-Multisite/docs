@@ -3,17 +3,17 @@ title: Dizajnové smerovanie
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Smer dizajnu
+# Smer dizajnu {#design-direction}
 
 Krok **Smer dizajnu** vám umožňuje skontrolovať, doladiť a finalizovať vizuálny dizajn vašej témy predtým, ako Theme Builder vygeneruje kompletnú tému.
 
-## Prehľad
+## Prehľad {#overview}
 
 Po dokončení Discovery Interview vám Theme Builder zobrazí smer dizajnu s **vykreslením náhľadu pre desktop a mobil**. To vám umožní presne vidieť, ako bude váš dizajn vyzerať na rôznych zariadeniach ešte predtým, než sa zaviažete k téme.
 
-## Komponenty smeru dizajnu
+## Komponenty smeru dizajnu {#design-direction-components}
 
-### 1. Farebná paleta
+### 1. Farebná paleta {#1-color-palette}
 
 Farebná schéma vašej témy vrátane:
 
@@ -23,7 +23,7 @@ Farebná schéma vašej témy vrátane:
 - **Neutrálne farby** — sivé a biele farby pre pozadia a text
 - **Farba textu** — primárna farba textu pre čitateľnosť
 
-### 2. Typografia
+### 2. Typografia {#2-typography}
 
 Výbery písiem pre:
 
@@ -33,14 +33,14 @@ Výbery písiem pre:
 - **Výška riadku** — rozostup medzi riadkami pre čitateľnosť
 - **Hrúbky písma** — tučné, bežné a ľahké varianty
 
-### 3. Rozloženie a rozostupy
+### 3. Rozloženie a rozostupy {#3-layout-and-spacing}
 
 - **Šírka kontajnera** — maximálna šírka pre obsah
 - **Vnútorné odsadenie a okraje** — rozostupy okolo prvkov
 - **Mriežkový systém** — stĺpcové rozloženie pre responzívny dizajn
 - **Rozostupy komponentov** — vzdialenosť medzi prvkami UI
 
-### 4. Vizuálne prvky
+### 4. Vizuálne prvky {#4-visual-elements}
 
 - **Štýly tlačidiel** — primárne, sekundárne a terciárne návrhy tlačidiel
 - **Dizajny kariet** — rozloženia pre bloky obsahu
@@ -48,9 +48,9 @@ Výbery písiem pre:
 - **Orámovania a tiene** — jemná vizuálna hĺbka
 - **Efekty pri prejdení myšou** — štýlovanie interaktívneho stavu
 
-## Vykreslenie náhľadu
+## Vykreslenie náhľadu {#preview-rendering}
 
-### Náhľad pre desktop
+### Náhľad pre desktop {#desktop-preview}
 
 Náhľad pre desktop zobrazuje váš dizajn v plnej šírke (zvyčajne 1200px alebo viac):
 
@@ -59,7 +59,7 @@ Náhľad pre desktop zobrazuje váš dizajn v plnej šírke (zvyčajne 1200px al
 - Veľká typografia a rozostupy
 - Všetky vizuálne prvky v plnej veľkosti
 
-### Náhľad pre mobil
+### Náhľad pre mobil {#mobile-preview}
 
 Náhľad pre mobil zobrazuje váš dizajn v mobilnej šírke (zvyčajne 375px):
 
@@ -68,7 +68,7 @@ Náhľad pre mobil zobrazuje váš dizajn v mobilnej šírke (zvyčajne 375px):
 - Upravená typografia a rozostupy
 - Veľkosti tlačidiel vhodné pre dotyk
 
-### Responzívne body zlomu
+### Responzívne body zlomu {#responsive-breakpoints}
 
 Theme Builder vykresľuje náhľady pri týchto bodoch zlomu:
 
@@ -79,9 +79,9 @@ Theme Builder vykresľuje náhľady pri týchto bodoch zlomu:
 | **Desktop** | 1200px | Desktop v plnej šírke |
 | **Veľký desktop** | 1920px | Ultraširoký displej |
 
-## Dolaďovanie dizajnu
+## Dolaďovanie dizajnu {#refining-your-design}
 
-### Vykonávanie úprav
+### Vykonávanie úprav {#making-adjustments}
 
 Svoj smer dizajnu môžete doladiť takto:
 
@@ -91,7 +91,7 @@ Svoj smer dizajnu môžete doladiť takto:
 4. **Aktualizáciou rozloženia** — zmeňte šírky kontajnerov a stĺpce mriežky
 5. **Prispôsobením prvkov** — upravte štýly tlačidiel, dizajny kariet atď.
 
-### Aktualizácie náhľadu
+### Aktualizácie náhľadu {#preview-updates}
 
 Zmeny sa prejavia v reálnom čase:
 
@@ -100,7 +100,7 @@ Zmeny sa prejavia v reálnom čase:
 - Aktualizujú sa všetky responzívne body zlomu
 - Môžete prepínať medzi náhľadmi a overiť zmeny
 
-### Zobrazenie porovnania
+### Zobrazenie porovnania {#comparison-view}
 
 Porovnajte svoj smer dizajnu s:
 
@@ -108,7 +108,7 @@ Porovnajte svoj smer dizajnu s:
 - **Dizajny konkurencie** — porovnajte s inšpiračnými webmi
 - **Predchádzajúce verzie** — vráťte sa k skorším smerom dizajnu
 
-## Schválenie smeru dizajnu
+## Schválenie smeru dizajnu {#design-direction-approval}
 
 Keď ste so svojím dizajnom spokojní:
 
@@ -118,7 +118,7 @@ Keď ste so svojím dizajnom spokojní:
 4. **Potvrďte rozloženie** — skontrolujte rozostupy a zarovnanie
 5. **Schváľte dizajn** — pokračujte ku generovaniu témy
 
-## Ďalšie kroky
+## Ďalšie kroky {#next-steps}
 
 Po schválení smeru dizajnu:
 
@@ -127,7 +127,7 @@ Po schválení smeru dizajnu:
 3. Môžete ju ďalej prispôsobiť pomocou WordPress customizer
 4. Pokračujte na [Hospitality Menus](./hospitality-menus.md) alebo iné funkcie
 
-## Osvedčené postupy
+## Osvedčené postupy {#best-practices}
 
 - **Testujte na skutočných zariadeniach** — ak je to možné, použite skutočné telefóny a tablety
 - **Skontrolujte čitateľnosť** — zabezpečte, aby bol text čitateľný vo všetkých veľkostiach
@@ -135,30 +135,30 @@ Po schválení smeru dizajnu:
 - **Zvážte výkon** — optimalizujte obrázky a písma pre rýchlosť
 - **Plánujte podľa obsahu** — zabezpečte, aby rozloženie fungovalo s vaším skutočným obsahom
 
-## Riešenie problémov
+## Riešenie problémov {#troubleshooting}
 
-### Náhľad sa neaktualizuje
+### Náhľad sa neaktualizuje {#preview-not-updating}
 
 - Obnovte stránku
 - Vymažte vyrovnávaciu pamäť prehliadača
 - Skúste iný prehliadač
 - Skontrolujte internetové pripojenie
 
-### Farby vyzerajú inak
+### Farby vyzerajú inak {#colors-look-different}
 
 - Skontrolujte nastavenia farieb monitora
 - Vyskúšajte na rôznych zariadeniach
 - Overte kontrast farieb pomocou nástrojov prístupnosti
 - Zvážte simulátory farbosleposti
 
-### Problémy s typografiou
+### Problémy s typografiou {#typography-issues}
 
 - Overte, či sa načítavajú súbory písiem
 - Skontrolujte veľkosť písma pri rôznych bodoch zlomu
 - Testujte so skutočným obsahom
 - Zvážte dĺžku riadka pre čitateľnosť
 
-## Súvisiaca dokumentácia
+## Súvisiaca dokumentácia {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — zhromaždite informácie o dizajne
 - [Hospitality Menus](./hospitality-menus.md) — vytvorte štruktúrované stránky menu

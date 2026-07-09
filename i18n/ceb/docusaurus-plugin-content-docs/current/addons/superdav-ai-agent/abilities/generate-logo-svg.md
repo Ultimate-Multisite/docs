@@ -3,15 +3,15 @@ title: Paghimo og Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Paghimo og Logo SVG
+# Paghimo og Logo SVG {#generate-logo-svg}
 
 Ang **Paghimo og Logo SVG** nga abilidad nagtugot sa Theme Builder sa paghimo ug pag-embed og custom nga logo SVGs direkta sa imong WordPress site nga adunay awtomatikong namespace-safe nga sanitisation.
 
-## Kinatibuk-ang Tan-aw
+## Kinatibuk-ang Tan-aw {#overview}
 
 Kini nga abilidad naghimo og scalable vector graphics (SVG) nga mga logo base sa branding direction ug mga gusto sa disenyo sa imong site. Ang nahimong mga SVG awtomatikong gi-sanitise aron masiguro nga luwas kini gamiton sa WordPress samtang gipadayon ang visual integrity.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Kini nga abilidad naghimo og scalable vector graphics (SVG) nga mga logo base sa
 | `height` | number | No | Taas sa SVG sa pixels (default: 200) |
 | `include_text` | boolean | No | Kung iapil ba ang ngalan sa site isip teksto sa logo (default: true) |
 
-## Format sa Output
+## Format sa Output {#output-format}
 
 Ang abilidad mobalik og SVG string nga adunay mosunod nga estruktura:
 
@@ -36,7 +36,7 @@ Ang abilidad mobalik og SVG string nga adunay mosunod nga estruktura:
 }
 ```
 
-## Kinaiya sa SVG Sanitisation
+## Kinaiya sa SVG Sanitisation {#svg-sanitisation-behaviour}
 
 Ang nahimong mga SVG moagi og awtomatikong namespace-safe nga sanitisation aron:
 
@@ -48,7 +48,7 @@ Ang nahimong mga SVG moagi og awtomatikong namespace-safe nga sanitisation aron:
 
 Kini nagsiguro nga ang SVG luwas i-embed direkta sa WordPress nga walay panginahanglan og dugang nga sanitisation.
 
-## Pananglitan sa Paggamit
+## Pananglitan sa Paggamit {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Ang abilidad mohimo og SVG logo nga:
 - Mosunod sa modern nga mga prinsipyo sa disenyo
 - Awtomatikong gi-sanitise ug andam nang gamiton
 
-## Integrasyon sa Theme Builder
+## Integrasyon sa Theme Builder {#integration-with-theme-builder}
 
 Kung gamiton ang pagpili sa design-direction sa Theme Builder, ang abilidad nga Paghimo og Logo SVG:
 
@@ -71,21 +71,21 @@ Kung gamiton ang pagpili sa design-direction sa Theme Builder, ang abilidad nga 
 3. Awtomatikong i-embed ang logo sa header/branding area sa imong site
 4. Itipig ang SVG isip custom nga logo sa WordPress media
 
-## Labing Maayong mga Praktis
+## Labing Maayong mga Praktis {#best-practices}
 
 - **Paghatag og klarong mga gusto sa estilo** — ihulagway ang estilo sa disenyo nga imong gusto (modern, classic, playful, ug uban pa)
 - **Itakda ang mga kolor** — iapil ang imong brand colors para sa consistency
 - **Sulayi ang rendering** — siguroha nga husto ang pagpakita sa logo sa lain-laing gidak-on sa screen
 - **I-customize pa dugang** — gamita ang mga himan sa logo customization sa WordPress aron i-adjust ang gidak-on ug placement
 
-## Mga Limitasyon
+## Mga Limitasyon {#limitations}
 
 - Ang mga SVG logo gihimo isip static graphics (dili animated)
 - Ang komplikadong mga logo nga adunay daghang elemento mahimong manginahanglan og manual refinement
 - Dili supported ang custom fonts; ang teksto mogamit og system fonts
 - Ang sobra kadako o sobra kagamay nga dimensions mahimong makaapekto sa quality
 
-## May Kalabotang mga Abilidad
+## May Kalabotang mga Abilidad {#related-abilities}
 
 - [I-validate ang Palette Contrast](./validate-palette-contrast.md) — susiha ang color contrast para sa accessibility
 - [Paghimo og Menu](./create-menu.md) — paghimo og navigation menus para sa imong site

@@ -3,28 +3,28 @@ title: Översikt över REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API-referens
+# REST API-referens {#rest-api-reference}
 
-## Baskonfiguration
+## Baskonfiguration {#base-configuration}
 
 **Bas-URL:** `{site_url}/wp-json/wu/v2/`
 **Autentisering:** API-nyckel och hemlighet (HTTP Basic Auth eller URL-parametrar)
 
-## Autentisering
+## Autentisering {#authentication}
 
-### Aktivera API
+### Aktivera API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Hämta API-autentiseringsuppgifter
+### Hämta API-autentiseringsuppgifter {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentiseringsmetoder
+### Autentiseringsmetoder {#authentication-methods}
 
 **HTTP Basic Auth (rekommenderas):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kärnslutpunkter
+## Kärnslutpunkter {#core-endpoints}
 
-### 1. Kund-API
+### 1. Kund-API {#1-customers-api}
 
 **Basrutt:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Webbplats-API
+### 2. Webbplats-API {#2-sites-api}
 
 **Basrutt:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Medlemskaps-API
+### 3. Medlemskaps-API {#3-memberships-api}
 
 **Basrutt:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produkt-API
+### 4. Produkt-API {#4-products-api}
 
 **Basrutt:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Betalnings-API
+### 5. Betalnings-API {#5-payments-api}
 
 **Basrutt:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domän-API
+### 6. Domän-API {#6-domains-api}
 
 **Basrutt:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registreringsslutpunkt
+## Registreringsslutpunkt {#registration-endpoint}
 
 Slutpunkten `/register` tillhandahåller ett komplett kassa-/registreringsflöde:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Slutpunkter för suveräna klientmiljöer
+## Slutpunkter för suveräna klientmiljöer {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 lägger till REST-täckning för suveräna klientmiljöer för integrationer som tillhandahåller, inspekterar eller verifierar isolerade klientmiljöer.
 
@@ -242,7 +242,7 @@ Typiska svar för migreringsstatus inkluderar:
 
 Behandla `ready: false` som en blockerare före lansering. Kontrollera verifieringsdetaljerna, åtgärda problemet med databasens värdbindning, kön, användartillhandahållandet eller routingen och försök sedan verifiera igen.
 
-## Felsvar
+## Felsvar {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Behandla `ready: false` som en blockerare före lansering. Kontrollera verifieri
 }
 ```
 
-## Paginering och filtrering
+## Paginering och filtrering {#pagination-and-filtering}
 
 **Frågeparametrar:**
 ```http

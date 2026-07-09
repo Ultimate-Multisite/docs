@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Plizyè Lajan
+# Plizyè Lajan {#multi-currency}
 
 Ultimate Multisite: Plizyè Lajan pèmèt rezo ou aksepte peman nan plizyè lajan. Li konvèti pri yo otomatikman lè l sèvi ak to echanj an dirèk oswa manyèl, li pèmèt ou fikse pri egzak pou chak pwodwi pou nenpòt lajan, epi li detekte lajan chak vizitè prefere atravè jeolokalizasyon — tout sa jere soti nan yon sèl dashboard administratè.
 
-## Karakteristik Kle
+## Karakteristik Kle {#key-features}
 
 - **Konvèsyon otomatik to echanj** — pri yo konvèti soti nan lajan baz ou a lè l sèvi ak to yo pran nan founisè ou chwazi a
 - **Ranplasman pri pou chak pwodwi** — fikse pri egzak espesifik pou chak lajan sou nenpòt pwodwi pou kontoune konvèsyon otomatik
@@ -20,22 +20,22 @@ Ultimate Multisite: Plizyè Lajan pèmèt rezo ou aksepte peman nan plizyè laja
 - **Deteksyon lajan ki baze sou jeolokalizasyon** — preseleksyone otomatikman lajan ki matche ak peyi vizitè a
 - **Dashboard administratè** — jere lajan aktif, to echanj, ak paramèt founisè yo soti nan yon sèl kote
 
-## Kondisyon
+## Kondisyon {#requirements}
 
 - Ultimate Multisite 2.0.0 oswa pi wo
 - Enstalasyon WordPress Multisite
 - PHP 7.4 oswa pi wo
 
-## Enstalasyon
+## Enstalasyon {#installation}
 
 1. Telechaje fichye ekstansyon yo nan `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktive ekstansyon an atravè ekran **Ekstansyon** nan WordPress (Aktive sou Rezo a)
 3. Ale nan **Ultimate Multisite → Plizyè Lajan** pou ouvri dashboard administratè a
 4. Ajoute lajan ou vle aksepte yo epi konfigire founisè to echanj ou a
 
-## Konfigirasyon
+## Konfigirasyon {#configuration}
 
-### Dashboard Administratè
+### Dashboard Administratè {#admin-dashboard}
 
 Dashboard administratè Plizyè Lajan an (**Ultimate Multisite → Plizyè Lajan**) se kote santral la pou:
 
@@ -44,7 +44,7 @@ Dashboard administratè Plizyè Lajan an (**Ultimate Multisite → Plizyè Lajan
 - Revize to aktyèl pou tout lajan aktif yo
 - Fikse to manyèl lè founisè otomatik yo pa apwopriye
 
-### Founisè To Echanj
+### Founisè To Echanj {#exchange-rate-providers}
 
 | Founisè | Deskripsyon |
 |---|---|
@@ -55,7 +55,7 @@ Dashboard administratè Plizyè Lajan an (**Ultimate Multisite → Plizyè Lajan
 
 Chwazi founisè ou anba **Ultimate Multisite → Plizyè Lajan → Paramèt → Founisè To Echanj**. To yo ka rafrechi manyèlman nenpòt ki lè oswa pwograme pou mete ajou otomatikman.
 
-### Ranplasman Pri Pou Chak Pwodwi
+### Ranplasman Pri Pou Chak Pwodwi {#per-product-pricing-overrides}
 
 Lè konvèsyon otomatik pa ase presi, ou ka fikse yon pri egzak pou yon lajan espesifik sou nenpòt pwodwi:
 
@@ -66,7 +66,7 @@ Lè konvèsyon otomatik pa ase presi, ou ka fikse yon pri egzak pou yon lajan es
 
 Pwodwi ki pa gen ranplasman itilize pri ki konvèti a soti nan lajan baz ou a.
 
-### Chan Selektè Lajan Pou Enskripsyon
+### Chan Selektè Lajan Pou Enskripsyon {#currency-selector-signup-field}
 
 Yo ka ajoute chan selektè lajan an nan koule enskripsyon/checkout ou a pou kliyan yo chwazi lajan yo prefere lè y ap enskri:
 
@@ -76,7 +76,7 @@ Yo ka ajoute chan selektè lajan an nan koule enskripsyon/checkout ou a pou kliy
 
 Lajan ki chwazi a estoke ak abònman an epi yo itilize li pou tout faktirasyon ki vin apre yo.
 
-### Deteksyon Lajan Ki Baze Sou Jeolokalizasyon
+### Deteksyon Lajan Ki Baze Sou Jeolokalizasyon {#geolocation-based-currency-detection}
 
 Lè deteksyon jeolokalizasyon aktive, addon nan asosye peyi vizitè a ak yon lajan epi preseleksyone li nan chan selektè lajan an. Pou aktive:
 
@@ -86,27 +86,27 @@ Lè deteksyon jeolokalizasyon aktive, addon nan asosye peyi vizitè a ak yon laj
 
 Si pa gen okenn katografi pou peyi yon vizitè, yo itilize lajan baz rezo a kòm solisyon rezèv.
 
-## Kesyon Yo Poze Souvan
+## Kesyon Yo Poze Souvan {#frequently-asked-questions}
 
-### Kisa k ap pase si yon founisè to echanj pa disponib?
+### Kisa k ap pase si yon founisè to echanj pa disponib? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon nan retounen sou dènye to yo ki te rekipere avèk siksè. Si okenn to pa janm te rekipere, li retounen sou to manyèl ou te konfigire yo. Li rekòmande pou konfigire to manyèl kòm yon rezo sekirite.
 
-### Èske mwen ka itilize diferan founisè pou diferan lajan?
+### Èske mwen ka itilize diferan founisè pou diferan lajan? {#can-i-use-different-providers-for-different-currencies}
 
 Non — yon sèl founisè aktif alafwa pou tout lajan. Itilize **Manyèl** si ou bezwen kontwòl konplè sou to endividyèl yo.
 
-### Èske jeolokalizasyon mande yon ekstansyon apa?
+### Èske jeolokalizasyon mande yon ekstansyon apa? {#does-geolocation-require-a-separate-plugin}
 
 Pa gen okenn ekstansyon jeolokalizasyon ekstèn ki nesesè. Addon nan itilize deteksyon IP-a-peyi ki entegre nan WordPress. Pou plis presizyon, yon sèvis jeolokalizasyon dedye ka entegre atravè hook filtè yo bay yo.
 
-### Èske ranplasman pou chak pwodwi yo aplike anvan oswa apre taks?
+### Èske ranplasman pou chak pwodwi yo aplike anvan oswa apre taks? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Ranplasman pou chak pwodwi yo fikse pri anvan taks la nan lajan sib la. Taks kalkile sou pri ranplasman an lè l sèvi ak konfigirasyon taks ki egziste deja ou a.
 
-## Jounal Chanjman
+## Jounal Chanjman {#changelog}
 
-### Vèsyon 1.0.0 — Pibliye 2026-04-02
+### Vèsyon 1.0.0 — Pibliye 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nouvo: Sipò pou plizyè lajan ak konvèsyon otomatik to echanj
 - Nouvo: Ranplasman pri pou chak pwodwi pou pri egzak espesifik pou chak lajan

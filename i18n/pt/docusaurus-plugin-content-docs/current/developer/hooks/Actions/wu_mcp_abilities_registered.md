@@ -4,11 +4,11 @@ title: Ação - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Ação: wu_mcp_abilities_registered
+# Ação: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Dispara depois de as capacidades MCP serem registadas para uma entidade.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Dispara depois de as capacidades MCP serem registadas para uma entidade.
 | $model_name | `string` | O nome do modelo. |
 | $this | `object` | A instância do gestor. |
 
-### Desde
+### Desde {#since}
 
 - 2.5.0
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) na linha 171

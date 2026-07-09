@@ -4,11 +4,11 @@ title: Filtras - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filtras: wu_apc_process_page_content
+# Filtras: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Leidžia kūrėjams keisti galutinį turinį
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Leidžia kūrėjams keisti galutinį turinį
 | $to_replace | `array` | Masyvas, kuriame yra turimi vietaženkliai. |
 | $placeholder_count | `int` | Rastų vietaženklių skaičius. |
 
-### Nuo
+### Nuo {#since}
 
 - 1.4.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46), 46 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}
 Turinį po pakeitimo.

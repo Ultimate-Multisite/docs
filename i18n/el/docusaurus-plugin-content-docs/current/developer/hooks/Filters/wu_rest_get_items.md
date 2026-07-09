@@ -4,11 +4,11 @@ title: Φίλτρο - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Φίλτρο: wu_rest_get_items
+# Φίλτρο: wu_rest_get_items {#filter-wurestgetitems}
 
 Ελέγχει αν επιτρέπεται η συνέχιση του αιτήματος ή όχι.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Όνομα | Τύπος | Περιγραφή |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 | $rest_base | `array` | Το slug της οντότητας. |
 | $this | `\Base_Manager` | Η οντότητα του αντικειμένου. |
 
-### Από
+### Από {#since}
 
 - 2.0.0
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) στην γραμμή 336

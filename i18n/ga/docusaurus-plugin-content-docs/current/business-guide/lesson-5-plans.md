@@ -3,15 +3,15 @@ title: 'Ceacht 5: Do Phleananna a Dhearadh'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ceacht 5: Do Phleananna a Dhearadh
+# Ceacht 5: Do Phleananna a Dhearadh {#lesson-5-designing-your-plans}
 
 Ní leibhéil phraghsála amháin iad sraitheanna do phleananna -- is léiriú iad ar an gcaoi a n-oibríonn do chustaiméirí nideoige i ndáiríre. Sa cheacht seo dearfaidh tú sraitheanna táirgí a oireann do fhíor-riachtanais ghnólachtaí aclaíochta ag céimeanna éagsúla.
 
-## An Áit ar Fágadh Sinn
+## An Áit ar Fágadh Sinn {#where-we-left-off}
 
 Tá trí theimpléad réidh ag FitSite (Studio Essential, Gym Pro, Fitness Chain). Anois cruthaímid na pleananna a shocraíonn céard a fhaigheann custaiméirí rochtain air agus céard a íocann siad.
 
-## Ag Smaoineamh i Míreanna Custaiméirí
+## Ag Smaoineamh i Míreanna Custaiméirí {#thinking-in-customer-segments}
 
 Is é an botún a dhéanann formhór daoine ná pleananna a dhearadh timpeall ar ghnéithe teicniúla (stóráil, bandaleithead, líon leathanach). Ní smaoiníonn do chustaiméirí nideoige sna téarmaí sin. Smaoiníonn úinéir giomnáisiam ar a bhfuil de dhíth orthu chun a ngnó a rith.
 
@@ -25,11 +25,11 @@ Do stiúideonna aclaíochta, tá trí mhír nádúrtha ann:
 
 Ba cheart do do phleananna freagairt do na míreanna seo, ní do bheartáin ghnéithe threallacha.
 
-## Pleananna FitSite a Chruthú
+## Pleananna FitSite a Chruthú {#creating-the-fitsite-plans}
 
 Téigh chuig **Ultimate Multisite > Táirgí > Cuir Táirge Leis** do gach plean.
 
-### Plean 1: FitSite Starter -- $49/month
+### Plean 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Sprioc**: Traenálaithe aonair agus stiúideonna beaga
 
@@ -59,7 +59,7 @@ Téigh chuig **Ultimate Multisite > Táirgí > Cuir Táirge Leis** do gach plean
 - Do théama roghnaithe: Gníomhachtaigh go hÉigeantach
 - Gach téama eile: I bhFolach
 
-### Plean 2: FitSite Growth -- $99/month
+### Plean 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **Sprioc**: Giomnáisium seanbhunaithe le suíomh amháin
 
@@ -85,7 +85,7 @@ Téigh chuig **Ultimate Multisite > Táirgí > Cuir Táirge Leis** do gach plean
 - Grúpa pleananna: Pleananna FitSite
 - Ord táirge: 2
 
-### Plean 3: FitSite Pro -- $199/month
+### Plean 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **Sprioc**: Slabhraí aclaíochta ilshuímh
 
@@ -109,7 +109,7 @@ Téigh chuig **Ultimate Multisite > Táirgí > Cuir Táirge Leis** do gach plean
 - Grúpa pleananna: Pleananna FitSite
 - Ord táirge: 3
 
-## An Grúpa Pleananna a Shocrú
+## An Grúpa Pleananna a Shocrú {#setting-up-the-plan-group}
 
 Cinntíonn an grúpa pleananna nach féidir le custaiméirí uasghrádú nó íosghrádú a dhéanamh ach laistigh de theaghlach pleananna FitSite. Ar chluaisín **Uasghráduithe & Íosghráduithe** gach plean:
 
@@ -118,7 +118,7 @@ Cinntíonn an grúpa pleananna nach féidir le custaiméirí uasghrádú nó ío
 
 Cruthaíonn sé seo cosán soiléir uasghrádaithe: Starter → Growth → Pro.
 
-## Borrthaí Ordaithe a Chur Leis
+## Borrthaí Ordaithe a Chur Leis {#adding-order-bumps}
 
 Is táirgí breiseáin iad borrthaí ordaithe a thairgtear le linn checkout. Do FitSite, smaoinigh ar:
 
@@ -128,7 +128,7 @@ Is táirgí breiseáin iad borrthaí ordaithe a thairgtear le linn checkout. Do 
 
 Cruthaigh iad seo mar tháirgí de chineál **Pacáiste** in Ultimate Multisite agus ceangail iad leis na pleananna ábhartha.
 
-## Cén Fáth a n-Oibríonn an Struchtúr Seo
+## Cén Fáth a n-Oibríonn an Struchtúr Seo {#why-this-structure-works}
 
 - **Starter** baineann sé bacainní iontrála -- praghas íseal, tairiscint shimplí, cuireann sé traenálaithe ar líne go tapa
 - **Growth** cuireann sé na gnéithe a iarrann giomnáisium i ndáiríre leis -- áirithint, gailearaithe, fearainn shaincheaptha
@@ -136,7 +136,7 @@ Cruthaigh iad seo mar tháirgí de chineál **Pacáiste** in Ultimate Multisite 
 - **Borrthaí ordaithe** ligeann siad do chustaiméirí saincheapadh gan na croíphleananna a dhéanamh casta
 - **Cosán soiléir uasghrádaithe** ciallaíonn sé go bhfásann custaiméirí leat seachas imeacht
 
-## Líonra FitSite Go dtí Seo
+## Líonra FitSite Go dtí Seo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## An Rud a Thógamar sa Cheacht Seo
+## An Rud a Thógamar sa Cheacht Seo {#what-we-built-this-lesson}
 
 - **Trí shraith pleananna** mapáilte do fhíormhíreanna gnó aclaíochta
 - **Geatáil gnéithe** ag úsáid rialuithe breiseán agus teimpléad Ultimate Multisite

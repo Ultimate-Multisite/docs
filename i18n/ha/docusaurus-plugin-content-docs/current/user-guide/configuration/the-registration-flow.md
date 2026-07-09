@@ -3,13 +3,13 @@ title: Wurin shigarwa
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# شێوازی تۆمارکردن (v2)
+# شێوازی تۆمارکردن (v2) {#the-registration-flow-v2}
 
 _**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Multisite وەرگرتنی 2.x.**_
 
 کۆمەڵێک ڕێگەیان هەیە کە بەکارییاندا دەتوانن لە تۆڕەکەتدا تۆمار بکەن. دەتوانن فۆرم تۆمارکردنی ئێوە یان لینکێکی بەشداریکار بۆ پلانی پێشەدیار هەڵبژێردراو بکاربهێنن. لێرەدا دەبینین چۆن کڕیارەکانتان دەتوانن لەسەر تۆڕەکەت تۆمار بکەن بە بەکارهێنانی ڕێگاکانی موجود و چی دوای تۆمارکردنیان لەسەر تۆڕەکەت ڕوودەدات.
 
-## بەکارهێنانی فۆرم تۆمارکردن:
+## بەکارهێنانی فۆرم تۆمارکردن: {#using-the-registration-form}
 
 ئەمە کارکردنی ئاسایی تۆمارکردنە. دەتوانیت یەک پەیجی تۆمارکردن دروست بکەیت کە پێداویستی بە **checkout form** (فۆرمی پاراستن) هەیە و ئەمە ئەو شوێنە دەبێت کە کڕیارەکانتان بگەن بۆ تۆمارکردن لەسەر تۆڕەکەت و اشتراک لە یەکێک لە پلاناوە بکەن. ئەگەر دەتەوێت، دەتوانیت چەندین پەیجی تۆمارکردن هەبێت، هەر یەکێکیان فۆرمی جیاواز بۆ تۆمارکردن بێت.
 
@@ -35,13 +35,13 @@ Idan suka yi rijista a tsarin wani tsari mai kuɗi (paid plan) ko tabbatar da em
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Amfani da Link Mai Aiki (Shareable Link):
+## Amfani da Link Mai Aiki (Shareable Link): {#using-a-shareable-link}
 
 Yadda ake rijista ta amfani da link mai aiki yana da nauyi kamar wajen rubuta shigarwa (registration form), amma bambancin shi ne idan ana amfani da link mai aiki, abokan hulɗarka za su iya zaɓar wani kayan aiki ko template na website a cikin shigarwar biyan kuɗi (checkout form) (ka'idojin saite Pre-selecting products and templates via URL parameters a kansa ka duba). Ko kuma yana iya ƙara wani lambar kupon (coupon code) (ka'idojin saite Using URL Parameters a kansa ka duba).
 
 Wannan tsarin rijista zai zama gaba ɗaya: dole su shigar da sunan, sunan amfani (username), email ɗin, sunan website da kuma labarin shi, da sauransu... amma wani tsari ko template na website za a sa shi a nan kafin su shiga.
 
-### Rijista Ta Amfani Da Biya Na Gaba (Manual Payments):
+### Rijista Ta Amfani Da Biya Na Gaba (Manual Payments): {#registering-using-manual-payments}
 
 Idan ba ka son amfani da PayPal, Stripe ko wata hanya ta biyan kuɗi da Ultimate Multisite ko ƙarin ayyukansa suka bayar, za ka iya amfani da biyan na gaba ga abokan hulɗarka. Wannan yana ba ka damar samar da kwestion (invoice) don su biya a kan hanyar biyan kuɗi da kake so bayan sun rijista a shaqwarka.
 

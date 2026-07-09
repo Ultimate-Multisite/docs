@@ -4,11 +4,11 @@ title: Filtr - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtr: wu_woocommerce_line_item_params
+# Filtr: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Mijozni WooCommerce checkout sahifasiga yo‘naltirishdan oldin, WooCommerce savatida qator elementlarini yaratish uchun ishlatiladigan parametrlarni filtrlaydi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Mijozni WooCommerce checkout sahifasiga yo‘naltirishdan oldin, WooCommerce sav
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Ultimate Multisite qator elementi instansi. |
 | $wc_product | `\WC_Product` | WooCommerce mahsuloti. |
 
-### Beri
+### Beri {#since}
 
 - 2.0.0
-### Manba
+### Manba {#source}
 
 [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) faylida 662-qatorda aniqlangan
 
 
-## Qaytaradi
+## Qaytaradi {#returns}
 O‘zgartirilgan qator elementi parametrlari.

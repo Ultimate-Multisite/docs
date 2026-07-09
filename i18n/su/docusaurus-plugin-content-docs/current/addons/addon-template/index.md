@@ -3,25 +3,25 @@ title: Citakan Tambihan
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Citakan Addon
+# Citakan Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Sarat
+## Sarat {#requirements}
 
 - WordPress 5.3 atawa leuwih luhur
 - PHP 7.4 atawa leuwih luhur
 - plugin Multisite Ultimate (aktip)
 
-## Pamasangan
+## Pamasangan {#installation}
 
 1. Unggah berkas addon ka diréktori `/wp-content/plugins/` anjeun
 2. Aktipkeun plugin ngaliwatan menu 'Plugins' dina WordPress
 3. Konpigurasikeun setélan addon dina admin jaringan
 
-## Pamekaran
+## Pamekaran {#development}
 
-### Pangaturan
+### Pangaturan {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktur Proyék
+### Struktur Proyék {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Aturan modérnisasi kode
 ```
 
-### Nguji
+### Nguji {#testing}
 
 Addon ieu ngawengku rangka nguji anu komprehensif:
 
@@ -75,44 +75,44 @@ Addon ieu ngawengku rangka nguji anu komprehensif:
 - **Jangkauan Tés**: Dikonpigurasikeun pikeun ngalacak jangkauan kode
 - **Nguji Multisite**: Tés dijalankeun dina lingkungan multisite
 
-### Standar Kode
+### Standar Kode {#code-standards}
 
 - **Standar Coding WordPress**: Dipaksakeun ngaliwatan PHPCS
 - **Kasaluyuan PHP 7.4+**: Fitur PHP modéren dirojong
 - **Analisis Statis**: Integrasi PHPStan pikeun mariksa tipe
 - **Modérnisasi Kode**: Aturan Rector pikeun pamutahiran PHP
 
-### Sistem Build
+### Sistem Build {#build-system}
 
 - **Ngolah Aset**: Minifikasi pikeun berkas CSS/JS
 - **Tarjamahan**: Nyieun berkas POT
 - **Paketisasi**: Nyieun arsip pikeun distribusi
 - **Modeu Pamekaran**: Aset anu henteu diminifikasi pikeun debugging
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Addon ieu ngadukung rupa-rupa pilihan konfigurasi anu bisa diaksés ngaliwatan antarbeungeut admin jaringan.
 
-## Hooks jeung Filters
+## Hooks jeung Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Dipicu sanggeus inisialisasi addon
 - `ultimate-multisite-addon-template_loaded` - Dipicu sanggeus sakabéh berkas addon dimuat
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Robah setélan addon
 - `ultimate-multisite-addon-template_enabled` - Timpa status aktip/nonaktip addon
 
-## Lisénsi
+## Lisénsi {#license}
 
 Addon ieu dilisénsikeun dina GPL v3 atawa engké.
 
-## Pangrojong
+## Pangrojong {#support}
 
 Pikeun pangrojong jeung dokuméntasi, buka [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Vérsi 1.0.1 (2025-09-28): ganti ngaran prefix jadi ultimate-multisite; apdet text domain; naékkeun vérsi.
 

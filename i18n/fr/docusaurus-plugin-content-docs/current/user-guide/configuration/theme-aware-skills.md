@@ -3,11 +3,11 @@ title: Compétences adaptées au thème
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Fonctionnalités adaptées au thème
+# Fonctionnalités adaptées au thème {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 inclut quatre nouvelles fonctionnalités intégrées adaptées au thème, qui s'ajustent automatiquement à votre thème WordPress actif. Ces fonctionnalités fournissent des conseils et des capacités spécialisés, adaptés à l'architecture et aux fonctionnalités de votre thème.
 
-## Qu'est-ce que les fonctionnalités adaptées au thème ?
+## Qu'est-ce que les fonctionnalités adaptées au thème ? {#what-are-theme-aware-skills}
 
 Les fonctionnalités adaptées au thème sont des bases de connaissances et des ensembles d'outils préconfigurés que l'assistant IA sélectionne automatiquement en fonction du thème WordPress actuellement actif sur votre site. Lorsque vous changez de thème, les fonctionnalités disponibles de l'assistant se mettent à jour automatiquement — aucune configuration manuelle n'est nécessaire.
 
@@ -18,9 +18,9 @@ Chaque fonctionnalité comprend :
 - **Exemples de personnalisation** — des extraits de code et des modèles de configuration pour les tâches courantes
 - **Meilleures pratiques** — des recommandations pour l'architecture et le flux de travail du thème
 
-## Fonctionnalités adaptées au thème disponibles
+## Fonctionnalités adaptées au thème disponibles {#available-theme-aware-skills}
 
-### Thèmes basés sur les blocs (Block Themes)
+### Thèmes basés sur les blocs (Block Themes) {#block-themes}
 
 **S'applique à :** Les thèmes utilisant l'architecture basée sur les blocs de WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ La fonctionnalité Thèmes basés sur les blocs fournit des conseils sur :
 
 **Activée automatiquement lorsque :** Votre thème actif est un thème basé sur les blocs (supporte la fonctionnalité `block-templates`).
 
-### Thèmes classiques (Classic Themes)
+### Thèmes classiques (Classic Themes) {#classic-themes}
 
 **S'applique à :** Les thèmes WordPress traditionnels qui utilisent des fichiers de modèles PHP et l'éditeur classique.
 
@@ -48,7 +48,7 @@ La fonctionnalité Thèmes classiques fournit des conseils sur :
 
 **Activée automatiquement lorsque :** Votre thème actif est un thème classique (non basé sur les blocs).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **S'applique à :** Les sites utilisant le plugin Kadence Blocks pour une conception avancée basée sur les blocs.
 
@@ -62,7 +62,7 @@ La fonctionnalité Kadence Blocks fournit des conseils sur :
 
 **Activée automatiquement lorsque :** Le plugin Kadence Blocks est actif sur votre site.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **S'applique à :** Les sites utilisant le thème Kadence pour la conception et la personnalisation basées sur les blocs.
 
@@ -76,15 +76,15 @@ La fonctionnalité Kadence Theme fournit des conseils sur :
 
 **Activée automatiquement lorsque :** Le thème Kadence est votre thème actif.
 
-## Comment les fonctionnalités sont sélectionnées
+## Comment les fonctionnalités sont sélectionnées {#how-skills-are-selected}
 
 L'assistant détecte automatiquement votre thème actif et les plugins installés à chaque message. Si une fonctionnalité adaptée au thème correspondante est disponible, elle est chargée automatiquement dans le contexte de l'assistant. Vous n'avez pas besoin d'activer ou de basculer manuellement les fonctionnalités.
 
-### Fonctionnalités multiples
+### Fonctionnalités multiples {#multiple-skills}
 
 Si plusieurs fonctionnalités s'appliquent à votre site (par exemple, si vous avez à la fois Kadence Blocks et Kadence Theme actifs), l'assistant a accès à toutes les fonctionnalités applicables et peut faire référence aux conseils de chacune.
 
-### Changement de thème
+### Changement de thème {#switching-themes}
 
 Lorsque vous changez votre thème actif, les fonctionnalités disponibles de l'assistant se mettent à jour automatiquement lors du message suivant. Par exemple :
 
@@ -92,11 +92,11 @@ Lorsque vous changez votre thème actif, les fonctionnalités disponibles de l'a
 2. Vous passez à un thème classique.
 3. Lors de votre prochain message, la fonctionnalité **Thèmes classiques** est automatiquement chargée, et la fonctionnalité **Thèmes basés sur les blocs** n'est plus disponible.
 
-## Utilisation des fonctionnalités adaptées au thème
+## Utilisation des fonctionnalités adaptées au thème {#using-theme-aware-skills}
 
 Pour tirer parti d'une fonctionnalité adaptée au thème, il suffit de décrire ce que vous souhaitez faire dans l'interface de chat. L'assistant fera automatiquement référence aux conseils de la fonctionnalité appropriée.
 
-### Exemples de requêtes
+### Exemples de requêtes {#example-prompts}
 
 **Pour Thèmes basés sur les blocs :**
 > "Créer une section héros avec une image de fond et un texte centré à l'aide de modèles de blocs."

@@ -4,11 +4,11 @@ title: Akcija - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Akcija: set_logged_in_cookie
+# Akcija: set_logged_in_cookie {#action-setloggedincookie}
 
 Pokreće se odmah prije nego što se postavi kolačić za autentifikaciju za prijavljenog korisnika.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Tip | Opis |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Pokreće se odmah prije nego što se postavi kolačić za autentifikaciju za pri
 | $scheme | `string` | Shema autentifikacije. Podrazumevano je 'logged_in'. |
 | $token | `string` | Token sesije korisnika koji se koristi za ovaj kolačić. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.6.0
 - 4.9.0: Dodan je parametar `<code>$token</code>`.
-### Izvor
+### Izvor {#source}
 
 Definisano u [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) na liniji 141

@@ -3,11 +3,11 @@ title: Aksessibiliteti i shfaqjes
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Vërtetësia e Aftësisë (Ability Visibility)
+# Vërtetësia e Aftësisë (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 prezanton kontrollin **Vërtetësie të Aftësisë** që rregullon cilat sipërfaqe (surfaces) expozojnë çdo aftësi. Kjo lejon administratorët të përshtatësin se cilat kapacitete e agentit janë të disponueshme përmes REST API, serverëve MCP, integrimeve WooCommerce dhe ndërfaqeve të tjera.
 
-## Çfarë është Vërtetësia e Aftësisë?
+## Çfarë është Vërtetësia e Aftësisë? {#what-is-ability-visibility}
 
 Vërtetësia e Aftësisë është një sistem leje që kontrollon:
 
@@ -18,9 +18,9 @@ Vërtetësia e Aftësisë është një sistem leje që kontrollon:
 
 Çdo aftësi ka një nivel vërtetësie që përcakton disponueshmërinë e saj në sipërfaqet e ndryshme.
 
-## Nivelet e Vërtetësisë
+## Nivelet e Vërtetësisë {#visibility-levels}
 
-### Publike (Public)
+### Publike (Public) {#public}
 
 **Aftësitë publike** janë të disponueshme kudo:
 
@@ -32,7 +32,7 @@ Vërtetësia e Aftësisë është një sistem leje që kontrollon:
 
 Shembull: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interne (Internal)
+### Interne (Internal) {#internal}
 
 **Aftësitë interne** janë të disponueshme vetëm brenda instalimit tuaj WordPress:
 
@@ -43,7 +43,7 @@ Shembull: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Shembull: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Aftësitë partneri** janë të disponueshme vetëm për partnerët e listuar në listën lejeve:
 
@@ -54,7 +54,7 @@ Shembull: `manage-settings`, `view-analytics`, `export-data`
 
 Shembull: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Idisabilituara (Disabled)
+### Idisabilituara (Disabled) {#disabled}
 
 **Aftësitë i ndalur** nuk janë të disponueshme në asnjë vend:
 
@@ -63,15 +63,15 @@ Shembull: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Nuk janë të disponueshme në paneli i administratorëve
 - Përdurues për aftësitë e vjetruara ose eksperimentale
 
-## Menaxhimi i Vëzhgimit të Aftësive
+## Menaxhimi i Vëzhgimit të Aftësive {#managing-ability-visibility}
 
-### Aksesi në Cilësimet e Vëzhgimit të Aftësive
+### Aksesi në Cilësimet e Vëzhgimit të Aftësive {#accessing-ability-visibility-settings}
 
 1. Shkoni te **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klikoni te tab-i **Abilities** (Aftësi)
 3. Do të shihni një listë me të gjitha aftësit e instaluara dhe nivelet e tyre të vëzhgimit
 
-### Shikimi i Detajeve të Aftësive
+### Shikimi i Detajeve të Aftësive {#viewing-ability-details}
 
 Klikoni në çdo aftësi për të parë:
 
@@ -82,7 +82,7 @@ Klikoni në çdo aftësi për të parë:
 - **Last updated** (Përditësuar më së fundmi): Kur ndryshua vëzhgimi
 - **Status**: I njohur ose I Klasifikuar
 
-### Ndryshimi i Niveleve të Vëzhgimit
+### Ndryshimi i Niveleve të Vëzhgimit {#changing-visibility-levels}
 
 Për të ndryshuar vëzhgimin e një aftësie:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operacione në Masë
+### Operacione në Masë {#bulk-operations}
 
 Për të ndryshuar vëzhgimin për disa aftësit:
 
@@ -108,11 +108,11 @@ Për të ndryshuar vëzhgimin për disa aftësit:
 2. Zgjidhni një nivel të ri të vëzhgimit nga menutë drop-down e veprimeve në masë
 3. Klikoni te **Apply** (Aplikoj)
 
-## Listë e Lejuar për Partnerët (Partner Allow-List)
+## Listë e Lejuar për Partnerët (Partner Allow-List) {#partner-allow-list}
 
 **Partner allow-list** kontrollon cilët partnerë të jashtëm mund të aksesojnë aftësit me nivel partneri.
 
-### Shtimi i Partnerëve
+### Shtimi i Partnerëve {#adding-partners}
 
 1. Shkoni te **Superdav AI Agent** → **Settings** → **Partners**
 2. Klikoni te **Add Partner** (Shtoni Partner)
@@ -120,7 +120,7 @@ Për të ndryshuar vëzhgimin për disa aftësit:
 4. Opsionalisht shtoni emrin dhe përshkrimin e partnerit
 5. Klikoni te **Save** (Ruaj)
 
-### Bashkimi i Aftësive me Partnerët
+### Bashkimi i Aftësive me Partnerët {#assigning-abilities-to-partners}
 
 Pas shtimit të një partneri:
 
@@ -130,7 +130,7 @@ Pas shtimit të një partneri:
 4. Në seksionin "Partner allow-list" (Listë e lejuar partnerë), zgjidh kuti për partnerët që duhet të kenë akses.
 5. Kliko **Save** (Ruaj).
 
-### Heqja e Aksesit Partner
+### Heqja e Aksesit Partner {#revoking-partner-access}
 
 Për të hequr aksesin e një partneri:
 
@@ -140,11 +140,11 @@ Për të hequr aksesin e një partneri:
 
 Partneri do humb menjëherë aksesin në atë aftësi.
 
-## Abilities i Paklasifikuara (Unclassified Abilities)
+## Abilities i Paklasifikuara (Unclassified Abilities) {#unclassified-abilities}
 
 Kur instaloni një aftësi të palënduar (third-party ability) që Superdav AI Agent nuk e njeh, ajo markohet si **Unclassified** (i paklasifikuara).
 
-### Njoftim për Administratorët për Abilities i Paklasifikuara
+### Njoftim për Administratorët për Abilities i Paklasifikuara {#admin-notice-for-unclassified-abilities}
 
 Do të shihni një njoftim administrator:
 
@@ -161,7 +161,7 @@ Ju lutem i vlerësoni dhe klasifikoni ato.
 [Review Abilities] [Dismiss]
 ```
 
-### Vlerësimi i Abilities i Paklasifikuara
+### Vlerësimi i Abilities i Paklasifikuara {#reviewing-unclassified-abilities}
 
 1. Kliko **Review Abilities** (Vlerëso Aftësinë) në njoftim.
 2. Për çdo aftësi të paklasifikuara, do të shihni:
@@ -178,7 +178,7 @@ Ju lutem i vlerësoni dhe klasifikoni ato.
 
 4. Kliko **Classify** (Klasifiko) për të ruajtur vendimin tuaj.
 
-### Pse Klasifikoni Abilities i Paklasifikuara?
+### Pse Klasifikoni Abilities i Paklasifikuara? {#why-classify-unclassified-abilities}
 
 Klasifikimi i aftësive:
 
@@ -187,9 +187,9 @@ Klasifikimi i aftësive:
 - **Lejon funksionalitetet**: Pasi klasifikohet, aftësia bëhet e disponueshme
 - **Dokumento vendimet**: Zgjedhjet tuaja ruhen për audita
 
-## Përsjellshmëria në Sipërfaqe të Ndryshme
+## Përsjellshmëria në Sipërfaqe të Ndryshme {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Aftësitë publike** janë të disponueshme përmes endpoint-eve REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Aftësitë të brendshme dhe partnerëve** nuk janë të disponueshme përmes REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Aftësitë publike** janë të disponueshme përmes MCP:
 
@@ -217,7 +217,7 @@ Aftësitë e disponueshme:
 
 **Aftësitë partnerëve** janë të disponueshme vetëm me kredencialet e partnerëve.
 
-### Integrimi me WooCommerce
+### Integrimi me WooCommerce {#woocommerce-integration}
 
 **Aftësitë publike** që lidhen me WooCommerce janë të disponueshme:
 
@@ -227,7 +227,7 @@ Aftësitë e disponueshme:
 
 **Aftësitë e brendshme** nuk ekspozon në WooCommerce.
 
-### Interfesa e Chatit
+### Interfesa e Chatit {#chat-interface}
 
 **Të gjitha aftësitë** (Publike, të brendshme, partnerëve) janë të disponueshme në chat, në varësi të lejeve të përdoruesit:
 
@@ -235,34 +235,34 @@ Aftësitë e disponueshme:
 - Përdoruesit të zakonshëm e shohin vetëm aftësitë publike
 - Partnerët e shohin aftësitë Publike + partnerëve (nëse janë listuar si lejuar)
 
-## Praktikat më të Mira për Sigurinë
+## Praktikat më të Mira për Sigurinë {#security-best-practices}
 
-### Principi i Përparimit të Menjënat (Principle of Least Privilege)
+### Principi i Përparimit të Menjënat (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Vendos aftësitë në nivelin më restriktiv që ende lejon përdorimin e tyre
 - Përdor aftësitë partnerëve për operacionet sensitive
 - Kthej pakë aftësitë që nuk i përdorni
 
-### Auditet Rregullore
+### Auditet Rregullore {#regular-audits}
 
 - Kontrollo vizibilitetin e aftësive mujore
 - Kontrollo aftësitë e klasifikuara në mënyrë të pa klasifikuar (unclassified abilities)
 - Fikoj aksesin për partnerët që nuk i përdoren
 
-### Regjistrimi dhe Monitorimi
+### Regjistrimi dhe Monitorimi {#logging-and-monitoring}
 
 - Monitoro cilat aftësi përdoren më shumë
 - Trackoni modelet e aksesit të partnerëve
 - Alertoni për përdorimin anomal të aftësive
 
-### Aftësitë e Palës së Tretë (Third-Party Abilities)
+### Aftësitë e Palës së Tretë (Third-Party Abilities) {#third-party-abilities}
 
 - Kontrollo aftësitë e palës së tretë para se t'i aktivizoni
 - Klasifikojini ato qartësisht
 - Filloni me vizibilitet të brendshme ose partnerë
 - Promovoni në publike vetëm pasi i keni vlerësuar (vetërfytyruar)
 
-## Zgjidhja Problema
+## Zgjidhja Problema {#troubleshooting}
 
 **Një aftësi nuk po shfaqet në listë**
 - Kontrolloni që aftësia është instaluar dhe aktive
@@ -285,7 +285,7 @@ Aftësitë e disponueshme:
 - Kontrolloni që klasifikimi juaj është ruajtur
 - Verifikoni se plugin-u që ofron aftësinë është i përditësuar
 
-## Migrimi nga Modi i Vjetër (Legacy Mode)
+## Migrimi nga Modi i Vjetër (Legacy Mode) {#migration-from-legacy-mode}
 
 Nëse po përditësoheni nga një version më i vjetër i Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Nëse po përditësoheni nga një version më i vjetër i Superdav AI Agent:
 
 Shikoni **Migrimi i Modit Tretë-Pihallë (Third-Party Mode Migration)** për më shumë detaje mbi kalimin drejt integrimit me API-n e Aftësive natyrale.
 
-## Hapat Të Ardhshëm
+## Hapat Të Ardhshëm {#next-steps}
 
 Pas konfigurimit të dukshmërisë së aftësive:
 

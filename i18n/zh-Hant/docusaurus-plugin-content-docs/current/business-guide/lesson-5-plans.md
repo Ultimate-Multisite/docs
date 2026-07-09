@@ -3,15 +3,15 @@ title: 第五課：設計您的計畫
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 第五課：設計您的方案
+# 第五課：設計您的方案 {#lesson-5-designing-your-plans}
 
 您的方案層級不只是定價水平，它們更是反映了您的利基市場客戶實際運營方式的體現。在本課中，您將設計出符合不同階段健身企業真實需求的產品層級。
 
-## 我們上次停在哪裡
+## 我們上次停在哪裡 {#where-we-left-off}
 
 FitSite 已經準備了三個範本（Studio Essential、Gym Pro、Fitness Chain）。現在，我們來建立決定客戶可存取內容和支付金額的方案。
 
-## 從客戶群體角度思考
+## 從客戶群體角度思考 {#thinking-in-customer-segments}
 
 大多數人犯的錯誤是圍繞技術功能（儲存空間、頻寬、頁面數量）來設計方案。您的利基市場客戶不會用這些術語思考。一位健身房老闆思考的是他們經營業務所需的東西。
 
@@ -25,11 +25,11 @@ FitSite 已經準備了三個範本（Studio Essential、Gym Pro、Fitness Chain
 
 您的方案應該對應這些群體，而不是任意的功能組合。
 
-## 建立 FitSite 方案
+## 建立 FitSite 方案 {#creating-the-fitsite-plans}
 
 請為每個方案導航至 **Ultimate Multisite > Products > Add Product**。
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **目標客群**: 個人教練和小型工作室
 
@@ -59,7 +59,7 @@ FitSite 已經準備了三個範本（Studio Essential、Gym Pro、Fitness Chain
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **目標客群**: 規模穩定的單地點健身房
 
@@ -85,7 +85,7 @@ FitSite 已經準備了三個範本（Studio Essential、Gym Pro、Fitness Chain
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **目標客群**: 多地點健身連鎖品牌
 
@@ -109,7 +109,7 @@ FitSite 已經準備了三個範本（Studio Essential、Gym Pro、Fitness Chain
 - Plan group: FitSite Plans
 - Product order: 3
 
-## 設定方案群組
+## 設定方案群組 {#setting-up-the-plan-group}
 
 方案群組確保客戶只能在 FitSite 方案家族內進行升級或降級。在每個方案的 **Up & Downgrades** tab：
 
@@ -118,7 +118,7 @@ FitSite 已經準備了三個範本（Studio Essential、Gym Pro、Fitness Chain
 
 這創造了一個清晰的升級路徑：Starter → Growth → Pro。
 
-## 添加訂單加購品（Order Bumps）
+## 添加訂單加購品（Order Bumps） {#adding-order-bumps}
 
 訂單加購品（Order bumps）是在結帳時提供的附加產品。對於 FitSite，可以考慮：
 
@@ -128,7 +128,7 @@ FitSite 已經準備了三個範本（Studio Essential、Gym Pro、Fitness Chain
 
 請在 Ultimate Multisite 中將這些產品作為 **Package** 類型產品創建，並將它們與相關方案關聯起來。
 
-## 為什麼這個結構有效
+## 為什麼這個結構有效 {#why-this-structure-works}
 
 - **Starter** 降低了入門門檻——低價格、簡單的產品，能讓教練快速上線。
 - **Growth** 增加了健身房真正需要的功能——預約、相簿、自訂網域。
@@ -136,7 +136,7 @@ FitSite 已經準備了三個範本（Studio Essential、Gym Pro、Fitness Chain
 - **Order bumps** 讓客戶可以在不複雜化核心方案的情況下進行客製化。
 - **清晰的升級路徑** 意味著客戶會隨著您的成長而成長，而不是離開。
 
-## FitSite 網路目前架構
+## FitSite 網路目前架構 {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## 本課所建構的內容
+## 本課所建構的內容 {#what-we-built-this-lesson}
 
 - **三個方案層級**，對應真實的健身業務群體。
 - 使用 Ultimate Multisite 的插件和範本控制進行**功能門控**。

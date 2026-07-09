@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Hirdetések elhelyezése a hálózatodon az Ultimate Multisite: Ad Injector segítségével
+# Hirdetések elhelyezése a hálózatodon az Ultimate Multisite: Ad Injector segítségével {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Az Ultimate Multisite: Ad Injector egy **ingyenes bővítmény**, amellyel közvetlenül a csomagok szerkesztési oldaláról helyezhetsz el hirdetéseket.
 
@@ -35,7 +35,7 @@ Hirdetéseket jeleníthetsz meg az adott csomagot használók Admin oldalainak f
 
 _Az Admin panel hirdetési kód opcióval hirdetéseket jeleníthetsz meg a felhasználók admin felületén_
 
-### Nem csak hirdetésekre jó
+### Nem csak hirdetésekre jó {#beyond-advertising}
 
 Az Ultimate Multisite: Ad Injector segítségével támogatást is nyújthatsz a magasabb szintű csomagok felhasználóinak.
 

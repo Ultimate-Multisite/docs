@@ -3,7 +3,7 @@ title: Gyakran Ismételt Kérdések
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Gyakran Ismételt Kérdések
+# Gyakran Ismételt Kérdések {#frequently-asked-questions}
 
 Íme néhány **Gyakran Ismételt Kérdés**, amelyek rendszeresen felmerülnek a támogatási megkeresések során.
 

@@ -3,15 +3,15 @@ title: 'Akoranga 11: Te kimi kiritaki'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Akoranga 11: Te Kimi Kiritaki
+# Akoranga 11: Te Kimi Kiritaki {#lesson-11-finding-customers}
 
 He papa rawe kāore ōna kiritaki, he mahi ngahau noa iho. Ka kapi i tēnei akoranga me pēhea te tiki kiritaki i tētahi rāngai motuhake -- ngā rautaki e whai hua ana nā te mea e arotahi ana koe ki tētahi ahumahi kotahi.
 
-## Te Wāhi i Mutu Ai Tātou
+## Te Wāhi i Mutu Ai Tātou {#where-we-left-off}
 
 Kua ora a FitSite. Inaianei me kite ngā rangatira whare whakapakari tinana i a ia, ā, me rēhita mai.
 
-## He Aha i Rerekē ai te Tiki Kiritaki Motuhake
+## He Aha i Rerekē ai te Tiki Kiritaki Motuhake {#why-niche-acquisition-is-different}
 
 Ina hoko atu koe ki te katoa, ka whakataetae koe mō te aro i tētahi mākete ngangau. Ina hoko atu koe ki tētahi rāngai motuhake, he painga ōu:
 
@@ -19,17 +19,17 @@ Ina hoko atu koe ki te katoa, ka whakataetae koe mō te aro i tētahi mākete ng
 - **Ka pā tonu tō karere** -- ka whakamutu te "paetukutuku mō ngā whare whakapakari tinana" i tētahi rangatira whare whakapakari i waenga i tana panuku
 - **Ka whakapūmau ngā tūtohunga** -- e mōhio ana ngā rangatira whare whakapakari tinana ki ētahi atu rangatira whare whakapakari tinana
 
-## Hongere 1: Te Toro Tika Atu
+## Hongere 1: Te Toro Tika Atu {#channel-1-direct-outreach}
 
 Ko te ara tere rawa ki ō kiritaki tuatahi ko te toro tika, whaiaro atu.
 
-### Kimihia ngā Kiritaki Tūpono
+### Kimihia ngā Kiritaki Tūpono {#find-prospects}
 
 - Rapua i Google Maps ngā whare whakapakari tinana, ngā gym, me ngā kaiwhakangungu whaiaro i tō rohe
 - Tirohia ā rātou paetukutuku o nāianei (tuhia rānei kāore ā rātou paetukutuku)
 - Kohia ngā mōhiohio whakapā mai i ā rātou kōtaha Google Business, pāpāho pāpori rānei
 
-### Aromātaitia Tō Rātou Āhuatanga o Nāianei
+### Aromātaitia Tō Rātou Āhuatanga o Nāianei {#evaluate-their-current-situation}
 
 Mō ia kiritaki tūpono, tuhia:
 
@@ -37,7 +37,7 @@ Mō ia kiritaki tūpono, tuhia:
 - **He paetukutuku kino**: He kiritaki tūpono kaha -- whakaaturia ki a rātou te āhua o tētahi kōwhiringa pai ake
 - **He paetukutuku pai**: He kiritaki tūpono ngoikore -- kua oti kē i a rātou tēnei raru te whakaoti
 
-### Whakapā Atu
+### Whakapā Atu {#make-contact}
 
 Tukuna he īmēra, he karere whaiaro rānei:
 
@@ -48,7 +48,7 @@ Tukuna he īmēra, he karere whaiaro rānei:
 
 Kaua e tuku īmēra papatipu. Ka kaha ake te whai hua o te toro whaiaro ki ngā kiritaki tūpono 20 kua rangahaua pai i tētahi tuku whānui ki te 2,000.
 
-## Hongere 2: Ngā Hapori Motuhake
+## Hongere 2: Ngā Hapori Motuhake {#channel-2-niche-communities}
 
 Ka hui ngā rangatira whare whakapakari tinana ki ngā wāhi motuhake i te ipurangi:
 
@@ -57,7 +57,7 @@ Ka hui ngā rangatira whare whakapakari tinana ki ngā wāhi motuhake i te ipura
 - **Ngā huinga ahumahi** me ngā papa matapaki
 - **Ngā rōpū LinkedIn** mō ngā ngaio whakapakari tinana
 
-### Me Pēhea te Whai Wāhi
+### Me Pēhea te Whai Wāhi {#how-to-participate}
 
 Kaua e uru atu, ā, ka tīmata tonu ki te hoko i tō hua. Engari:
 
@@ -66,7 +66,7 @@ Kaua e uru atu, ā, ka tīmata tonu ki te hoko i tō hua. Engari:
 3. **Tohaina ina hāngai** -- ina pātai tētahi mō ngā paetukutuku, tohaina māori tō papa
 4. **Waihangatia he ihirangi whaihua** -- tuhia ngā pou mō "ngā mea e pai ai tētahi paetukutuku whare whakapakari tinana" e ārahi māori ana ki tō papa
 
-## Hongere 3: Te Hokohoko Ihirangi
+## Hongere 3: Te Hokohoko Ihirangi {#channel-3-content-marketing}
 
 Waihangatia he ihirangi e rapua ana e ngā rangatira whare whakapakari tinana:
 
@@ -77,7 +77,7 @@ Waihangatia he ihirangi e rapua ana e ngā rangatira whare whakapakari tinana:
 
 Whakaputaina tēnei ki tō rangitaki hokohoko FitSite. Ka haere te wā, ka piki tēnei ihirangi ki ngā pūkaha rapu, ā, ka kawe mai i te hokohoko māori mai i ngā tāngata e tino rapu ana i tāu e tuku ana.
 
-## Hongere 4: Ngā Whakahoatanga
+## Hongere 4: Ngā Whakahoatanga {#channel-4-partnerships}
 
 Whakahoatia ki ngā pakihi e mahi kē ana mō ngā whare whakapakari tinana:
 
@@ -88,7 +88,7 @@ Whakahoatia ki ngā pakihi e mahi kē ana mō ngā whare whakapakari tinana:
 
 Tukuna he kōmihana tūtohu, he whakatairanga tauutuutu rānei. Ka taea e te [AffiliateWP addon](/addons/affiliatewp) te āwhina i a koe ki te whakarite i tētahi hōtaka tūtohu ōkawa.
 
-## Hongere 5: Ngā Kaupapa Ahumahi
+## Hongere 5: Ngā Kaupapa Ahumahi {#channel-5-industry-events}
 
 Ka whakatū ngā kaupapa ahumahi whakapakari tinana i a koe ki mua i ngā rau kiritaki tūpono:
 
@@ -99,7 +99,7 @@ Ka whakatū ngā kaupapa ahumahi whakapakari tinana i a koe ki mua i ngā rau ki
 
 Kāore koe e hiahia ki tētahi pūtea nui. Ahakoa ko te tae atu hei kaiuru me te kōrero ki ētahi mō āu mahi, ka taea te whakaputa aronga kiritaki.
 
-## Hongere 6: Ngā Paetukutuku Whakaatu
+## Hongere 6: Ngā Paetukutuku Whakaatu {#channel-6-showcase-sites}
 
 Ko tō hokohoko pai rawa ko ngā paetukutuku a ō kiritaki o nāianei. Mā te whakaaetanga:
 
@@ -108,7 +108,7 @@ Ko tō hokohoko pai rawa ko ngā paetukutuku a ō kiritaki o nāianei. Mā te wh
 - Tonoa ngā kiritaki makona mō ngā taunakitanga
 - Whakatenatenahia ngā kiritaki kia whakahua i a FitSite ina pātaihia rātou mō tō rātou paetukutuku
 
-## Te Whakarite i tētahi Hōtaka Tūtohu
+## Te Whakarite i tētahi Hōtaka Tūtohu {#setting-up-a-referral-program}
 
 Ko te kōrero ā-waha tō hongere kaha rawa i tētahi rāngai motuhake. Whakaritea kia ōkawa:
 
@@ -116,7 +116,7 @@ Ko te kōrero ā-waha tō hongere kaha rawa i tētahi rāngai motuhake. Whakarit
 2. Tukuna ki ngā kiritaki o nāianei he utu mō ngā tūtohunga (kotahi marama koreutu, nama Account, aha atu)
 3. Whakamāmātia -- hoatu ki a rātou he hononga tūtohu me tētahi karere māmā ka taea e rātou te tuku whakamua
 
-## Te Aroturuki i Ngā Mea e Whai Hua Ana
+## Te Aroturuki i Ngā Mea e Whai Hua Ana {#tracking-what-works}
 
 Mō ia hongere, aroturukitia:
 
@@ -126,7 +126,7 @@ Mō ia hongere, aroturukitia:
 
 Whakapau kaha ake ki ngā hongere e whai hua ana. Tapahia ngā hongere kāore e whai hua.
 
-## Ngā Tūmanako Tūturu
+## Ngā Tūmanako Tūturu {#realistic-expectations}
 
 - **Marama 1-3**: 5-20 kiritaki, ko te nuinga mai i te toro tika atu me ngā hapori
 - **Marama 4-6**: 20-50 kiritaki, ka tīmata te hokohoko ihirangi ki te whai wāhi
@@ -134,7 +134,7 @@ Whakapau kaha ake ki ngā hongere e whai hua ana. Tapahia ngā hongere kāore e 
 
 Ka rerekē ēnei tau, engari he pūmau te tauira: ka puta ngā kiritaki tōmua i te whakapau kaha tika, ā, ka puta ngā kiritaki ā muri ake i ngā pānga whakatipu o te ihirangi, ngā tūtohunga, me te ingoa pai.
 
-## Tā Tātou i Hanga ai i Tēnei Akoranga
+## Tā Tātou i Hanga ai i Tēnei Akoranga {#what-we-built-this-lesson}
 
 - **E ono ngā ara whiwhi kiritaki** kua whakaritea mō te rāngai whakapakari tinana
 - **He tukanga whakapā tika** hei kukume i ngā kiritaki tuatahi

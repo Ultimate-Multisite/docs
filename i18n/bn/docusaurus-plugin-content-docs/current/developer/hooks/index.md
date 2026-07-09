@@ -3,11 +3,11 @@ title: হুকসমূহের রেফারেন্স
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks রেফারেন্স
+# Hooks রেফারেন্স {#hooks-reference}
 
 Ultimate Multisite-এর সব **59টি action** এবং **118টি filter**-এর জন্য স্বয়ংক্রিয়ভাবে তৈরি ডকুমেন্টেশন।
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — authentication redirect-এর আগে চালু হয়।
 - [set_auth_cookie](./Actions/set_auth_cookie) — authentication cookie সেট করার ঠিক আগে চালু হয়।
@@ -70,7 +70,7 @@ Ultimate Multisite-এর সব **59টি action** এবং **118টি filte
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — কোনো object database-এ সংরক্ষিত হওয়ার পরে চালু হয়।
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin developers-কে unlocking process-এ actions যোগ করার অনুমতি দেয়।
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — প্রমাণীকরণ কুকির মেয়াদ শেষ হওয়ার সময়সীমার দৈর্ঘ্য ফিল্টার করে।
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — প্রমাণীকরণ রিডাইরেক্ট স্কিম ফিল্টার করে।

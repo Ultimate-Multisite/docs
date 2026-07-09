@@ -3,17 +3,17 @@ title: 工具和配置
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# 工具和配置
+# 工具和配置 {#tools-and-configuration}
 
 Theme Builder 使用一组工具来分析、设计并构建你的 WordPress 站点。在 1.16.0 版本中，**sd-ai-agent/site-scrape 现在是 Tier 1 工具**，因此默认可在 Theme Builder 中使用。Superdav AI Agent v1.18.0 还引入了一个单独分发的 Advanced 配套包，用于受信任的开发者工作流；这些工具不属于 WordPress.org 核心包，必须单独安装并授权。
 
-## 可用工具
+## 可用工具 {#available-tools}
 
-### Tier 1 工具（始终可用）
+### Tier 1 工具（始终可用） {#tier-1-tools-always-available}
 
 Tier 1 工具默认可在 Theme Builder 中使用，无需任何额外配置。
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **用途：** 分析现有网站，以提取设计灵感、内容结构和功能。
 
@@ -51,11 +51,11 @@ Tier 1 工具默认可在 Theme Builder 中使用，无需任何额外配置。
 - 大量依赖 JavaScript 的站点可能只能进行有限分析
 - 大型站点可能需要更长时间分析
 
-### Tier 2 工具（可选）
+### Tier 2 工具（可选） {#tier-2-tools-optional}
 
 Tier 2 工具在 Theme Builder 设置中显式启用后可用。
 
-#### 高级分析
+#### 高级分析 {#advanced-analytics}
 
 提供详细的性能指标：
 
@@ -65,7 +65,7 @@ Tier 2 工具在 Theme Builder 设置中显式启用后可用。
 - 可访问性分数
 - 最佳实践分数
 
-#### 内容优化器
+#### 内容优化器 {#content-optimizer}
 
 分析并建议以下方面的改进：
 
@@ -75,11 +75,11 @@ Tier 2 工具在 Theme Builder 设置中显式启用后可用。
 - 内容结构
 - 行动号召位置
 
-### Tier 3 工具（高级）
+### Tier 3 工具（高级） {#tier-3-tools-premium}
 
 Tier 3 工具需要额外配置或高级功能。
 
-#### AI 内容生成器
+#### AI 内容生成器 {#ai-content-generator}
 
 为以下内容生成文案：
 
@@ -89,7 +89,7 @@ Tier 3 工具需要额外配置或高级功能。
 - 元描述
 - 行动号召文案
 
-#### 高级设计工具
+#### 高级设计工具 {#advanced-design-tools}
 
 提供高级设计能力：
 
@@ -99,7 +99,7 @@ Tier 3 工具需要额外配置或高级功能。
 - 高级色彩理论
 - 排版优化
 
-### Advanced 配套工具（单独包）
+### Advanced 配套工具（单独包） {#advanced-companion-tools-separate-package}
 
 Advanced 配套包与核心 Superdav AI Agent 版本分开分发。它适用于受信任的开发者和站点所有者环境，在这些环境中，管理员明确允许 agent 使用高影响力工具。
 
@@ -116,9 +116,9 @@ Advanced 配套能力可包括：
 
 不要将这些记录为每次安装都普遍可用的 Theme Builder 工具。它们仅在 Advanced 配套包已安装、已启用并限制给受信任管理员时可用。
 
-## 工具配置
+## 工具配置 {#tool-configuration}
 
-### 启用工具
+### 启用工具 {#enabling-tools}
 
 要在 Theme Builder 中启用额外工具：
 
@@ -127,7 +127,7 @@ Advanced 配套能力可包括：
 3. 按需开启/关闭工具
 4. 保存设置
 
-### 工具权限
+### 工具权限 {#tool-permissions}
 
 某些工具需要权限：
 
@@ -137,7 +137,7 @@ Advanced 配套能力可包括：
 - **高级功能** — 可能需要高级订阅
 - **Advanced 配套工具** — 需要单独分发的 Advanced 包以及明确的管理员信任
 
-### API 密钥和凭据
+### API 密钥和凭据 {#api-keys-and-credentials}
 
 为需要它们的工具配置 API 密钥：
 
@@ -146,13 +146,13 @@ Advanced 配套能力可包括：
 3. 测试连接
 4. 安全保存
 
-### 安装 Advanced 配套包
+### 安装 Advanced 配套包 {#installing-the-advanced-companion-package}
 
 Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的官方项目分发渠道安装它，然后将访问权限限制给受信任的管理员。在生产站点上启用文件系统、数据库、WP-CLI、REST 调度器、plugin 构建器、用户管理或基准测试工具之前，请审查人工批准关卡和 git 快照行为。
 
-## 使用 sd-ai-agent/site-scrape
+## 使用 sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### 基本用法
+### 基本用法 {#basic-usage}
 
 请求 Theme Builder 分析一个网站：
 
@@ -161,7 +161,7 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 并为我的站点建议设计改进。
 ```
 
-### 特定分析
+### 特定分析 {#specific-analysis}
 
 请求特定类型的分析：
 
@@ -179,7 +179,7 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 同样具备响应能力。
 ```
 
-### 对比分析
+### 对比分析 {#comparison-analysis}
 
 比较多个站点：
 
@@ -188,22 +188,22 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 结合两者最佳元素的设计。
 ```
 
-## 工具限制和注意事项
+## 工具限制和注意事项 {#tool-limitations-and-considerations}
 
-### 速率限制
+### 速率限制 {#rate-limiting}
 
 - 抓取会受到速率限制，以防止服务器过载
 - 对同一站点的多次请求可能会被限流
 - 大型站点可能需要更长时间来分析
 
-### 内容准确性
+### 内容准确性 {#content-accuracy}
 
 - 动态内容可能无法被完整捕获
 - JavaScript 渲染的内容可能不完整
 - 实时数据可能无法反映
 - 某些内容可能位于付费墙之后
 
-### 法律和伦理考虑
+### 法律和伦理考虑 {#legal-and-ethical-considerations}
 
 - 尊重 robots.txt 和站点政策
 - 不要抓取受版权保护的内容用于复制
@@ -211,16 +211,16 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 - 确认你有权使用提取的内容
 - 遵循被分析站点的服务条款
 
-### 性能影响
+### 性能影响 {#performance-impact}
 
 - 抓取大型站点可能需要时间
 - 多个同时进行的抓取可能更慢
 - 网络连接会影响速度
 - 大型数据集可能需要更多处理
 
-## 最佳实践
+## 最佳实践 {#best-practices}
 
-### 使用站点分析
+### 使用站点分析 {#using-site-analysis}
 
 1. **分析多个站点** — 从多个来源收集灵感
 2. **关注结构** — 学习布局和组织模式
@@ -228,7 +228,7 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 4. **研究排版** — 找出你喜欢的字体组合
 5. **查看导航** — 理解菜单组织方式
 
-### 伦理抓取
+### 伦理抓取 {#ethical-scraping}
 
 1. **尊重 robots.txt** — 遵循站点指南
 2. **不要复制内容** — 仅将分析用于获取灵感
@@ -236,7 +236,7 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 4. **注明来源** — 为灵感来源署名
 5. **遵循条款** — 遵守站点服务条款
 
-### 最大化工具效果
+### 最大化工具效果 {#maximizing-tool-effectiveness}
 
 1. **具体明确** — 请求特定类型的分析
 2. **提供背景** — 说明你的站点用途
@@ -244,9 +244,9 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 4. **迭代** — 根据结果进行优化
 5. **组合工具** — 使用多个工具进行全面分析
 
-## 故障排除
+## 故障排除 {#troubleshooting}
 
-### 站点无法抓取
+### 站点无法抓取 {#site-wont-scrape}
 
 - 检查站点是否可公开访问
 - 确认 robots.txt 允许抓取
@@ -254,7 +254,7 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 - 检查互联网连接
 - 如果问题仍然存在，请联系支持
 
-### 分析不完整
+### 分析不完整 {#incomplete-analysis}
 
 - 站点可能包含动态内容
 - JavaScript 可能未完全渲染
@@ -262,7 +262,7 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 - 尝试改为分析特定页面
 - 请求特定分析类型
 
-### 性能缓慢
+### 性能缓慢 {#slow-performance}
 
 - 大型站点需要更长时间分析
 - 多个同时进行的抓取会更慢
@@ -270,7 +270,7 @@ Advanced 配套包与 WordPress.org 核心 ZIP 分开发布。仅从该版本的
 - 尝试在非高峰时段进行
 - 先分析较小的部分
 
-## 相关文档
+## 相关文档 {#related-documentation}
 
 - [发现访谈](./discovery-interview.md) — 收集设计信息
 - [设计方向](./design-direction.md) — 优化你的设计

@@ -4,11 +4,11 @@ title: Sivana - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Sivana: wu_post_count
+# Sivana: wu_post_count {#filter-wupostcount}
 
 Mamela ny mpamorona plugin hanova ny totalin'ny isa
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Anarana | Karazana | Famaritana |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Mamela ny mpamorona plugin hanova ny totalin'ny isa
 | $post_counts | `object` | Zavatra WordPress averin'ny wp_count_posts fn |
 | $post_type | `string` | Ny slug an'ny karazana lahatsoratra |
 
-### Hatramin'ny
+### Hatramin'ny {#since}
 
 - 1.9.1
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) amin'ny andalana 136
 
 
-## Mamerina
+## Mamerina {#returns}
 Totaly vaovao

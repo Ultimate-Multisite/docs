@@ -3,11 +3,11 @@ title: Ọgbọn Ẹwa Ètò Apẹrẹ
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Ọgbọn Ẹwa Eto Apẹrẹ
+# Ọgbọn Ẹwa Eto Apẹrẹ {#design-system-aesthetics-skill}
 
 **Ọgbọn Ẹwa Eto Apẹrẹ** jẹ ọna itọsọna fun fífi ìdánimọ̀ ojú-wíwo ojúlé rẹ ṣe dáadáa. Ó ràn ọ́ lọ́wọ́ láti ṣe àwọn ìpinnu tó bá ara wọn mu nípa typography, àwọ̀, ààyè, àti àwọn àmi ìṣipopada tó ń ṣàlàyé eto apẹrẹ rẹ.
 
-## Kí ni Ẹwa Eto Apẹrẹ?
+## Kí ni Ẹwa Eto Apẹrẹ? {#what-is-design-system-aesthetics}
 
 Ẹwa Eto Apẹrẹ jẹ́ ọgbọn tí a ṣètò tó bo:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 Àwọn ìpinnu wọ̀nyí ni a gba sínú fáìlì `theme.json` theme rẹ, tí ó ń dá eto ojú-wíwo tó wà ní ìṣọ̀kan sílẹ̀.
 
-## Kí ló dé tí a fi ń Lo Ẹwa Eto Apẹrẹ?
+## Kí ló dé tí a fi ń Lo Ẹwa Eto Apẹrẹ? {#why-use-design-system-aesthetics}
 
-### Ìṣọ̀kan
+### Ìṣọ̀kan {#consistency}
 
 Eto apẹrẹ ń rí dájú pé:
 
@@ -31,7 +31,7 @@ Eto apẹrẹ ń rí dájú pé:
 - Ààyè ń tẹ̀lé àpẹẹrẹ tí a lè fọkàn tán
 - Àwọn animation ní ìmọ̀lára ìṣọ̀kan
 
-### Ìmúlò Rọrùn
+### Ìmúlò Rọrùn {#efficiency}
 
 Dípò kí o máa ṣe ìpinnu apẹrẹ lójú-ewé-kọọkan, o:
 
@@ -39,7 +39,7 @@ Dípò kí o máa ṣe ìpinnu apẹrẹ lójú-ewé-kọọkan, o:
 - Lo wọn níbi gbogbo
 - Ṣe imudojuiwọn káàkiri nípa yíyí iye kan ṣoṣo padà
 
-### Ìrọ̀rùn ìyípadà
+### Ìrọ̀rùn ìyípadà {#flexibility}
 
 O lè:
 
@@ -47,9 +47,9 @@ O lè:
 - Dán onírúurú ẹwa wò
 - Pa ìṣọ̀kan brand mọ́ nígbà tí ó ń dàgbà
 
-## Bí a ṣe ń Mú Ọgbọn Ẹwa Eto Apẹrẹ Ṣiṣẹ́
+## Bí a ṣe ń Mú Ọgbọn Ẹwa Eto Apẹrẹ Ṣiṣẹ́ {#triggering-the-design-system-aesthetics-skill}
 
-### Ìmúṣiṣẹ́ Pẹ̀lú Ọwọ́
+### Ìmúṣiṣẹ́ Pẹ̀lú Ọwọ́ {#manual-activation}
 
 O lè bẹ̀rẹ̀ ọgbọn náà nígbàkigbà:
 
@@ -69,7 +69,7 @@ tàbí
 "Ṣe ìtọ́sọ́nà fún mi nípa àwọn ìpinnu eto apẹrẹ"
 ```
 
-### Àwọn Ìmọ̀ràn Aládàáṣiṣẹ́
+### Àwọn Ìmọ̀ràn Aládàáṣiṣẹ́ {#automatic-suggestions}
 
 Àwọn agent lè dábàá lílo ọgbọn náà nígbà tí o:
 
@@ -78,9 +78,9 @@ tàbí
 - Fẹ́ mú ìṣọ̀kan ojú-wíwo sunwọ̀n sí i
 - Ń múra láti ṣe ifilọlẹ ojúlé rẹ
 
-## Ìlànà Ẹwa Eto Apẹrẹ
+## Ìlànà Ẹwa Eto Apẹrẹ {#the-design-system-aesthetics-process}
 
-### Ìgbésẹ̀ 1: Typography
+### Ìgbésẹ̀ 1: Typography {#step-1-typography}
 
 Agent náà béèrè nípa àwọn yíyàn font rẹ:
 
@@ -110,7 +110,7 @@ Lẹ́yìn náà agent náà ṣàlàyé:
 - **Ìpele ìwúwo**: Àwọn ìwúwo font (déédéé, àárín, bold, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ)
 - **Gíga ìlà**: Ààyè láàárín àwọn ìlà fún rírọrùn láti kà
 
-### Ìgbésẹ̀ 2: Palẹti Àwọ̀
+### Ìgbésẹ̀ 2: Palẹti Àwọ̀ {#step-2-color-palette}
 
 ```
 Ẹ jẹ́ ká ṣàlàyé palẹti àwọ̀ rẹ.
@@ -140,7 +140,7 @@ Agent náà dá palẹti pípé sílẹ̀ tó ní:
 - Àwọn àwọ̀ itumọ̀ (àṣeyọrí, ìkìlọ̀, aṣìṣe)
 - Àwọn ipo hover àti active
 
-### Ìgbésẹ̀ 3: Ààyè
+### Ìgbésẹ̀ 3: Ààyè {#step-3-spacing}
 
 ```
 Ààyè ìmí mélòó ni o fẹ́?
@@ -162,7 +162,7 @@ Agent náà ṣàlàyé àwọn àmi ààyè:
 - Ìpele: xs, sm, md, lg, xl, 2xl
 - Àwọn iye pàtó fún padding, margin, gap
 
-### Ìgbésẹ̀ 4: Ààlà àti Òjìji
+### Ìgbésẹ̀ 4: Ààlà àti Òjìji {#step-4-borders-and-shadows}
 
 ```
 Ìjìnlẹ̀ ojú-wíwo àti ìtumọ̀:
@@ -185,7 +185,7 @@ Agent náà dáwọ̀n sílẹ̀:
 - Àwọn àmi òjìji fún àwọn ìpele ìgbéga
 - Àwọn àmi ìbú ààlà
 
-### Ìgbésẹ̀ 5: Ìṣipopada àti Animation
+### Ìgbésẹ̀ 5: Ìṣipopada àti Animation {#step-5-motion-and-animation}
 
 ```
 Báwo ni ojúlé rẹ ṣe yẹ kí ó ní ìmọ̀lára nígbà tí a bá ń bá a ṣepọ̀?
@@ -207,9 +207,9 @@ Agent náà ṣàlàyé:
 - Àwọn iṣẹ́ easing (ease-in, ease-out, ease-in-out)
 - Àwọn keyframe animation fún àwọn ìbáṣepọ̀ tí ó wọ́pọ̀
 
-## Fífi Ẹwa Eto Apẹrẹ Sí Lílò
+## Fífi Ẹwa Eto Apẹrẹ Sí Lílò {#applying-design-system-aesthetics}
 
-### Ìmúlò Aládàáṣiṣẹ́
+### Ìmúlò Aládàáṣiṣẹ́ {#automatic-application}
 
 Lẹ́yìn tí o bá parí ọgbọn náà, agent náà:
 
@@ -218,7 +218,7 @@ Lẹ́yìn tí o bá parí ọgbọn náà, agent náà:
 3. Tún àwọn ara block ṣe kí wọ́n bá eto tuntun mu
 4. Mú theme tí a ṣe imudojuiwọn ṣiṣẹ́
 
-### Ìmúlò Pẹ̀lú Ọwọ́
+### Ìmúlò Pẹ̀lú Ọwọ́ {#manual-application}
 
 O tún lè ṣàtúnṣe `theme.json` tààrà:
 
@@ -257,9 +257,9 @@ O tún lè ṣàtúnṣe `theme.json` tààrà:
 }
 ```
 
-## Wíwo Eto Apẹrẹ Rẹ
+## Wíwo Eto Apẹrẹ Rẹ {#viewing-your-design-system}
 
-### Béèrè lọ́wọ́ Agent Náà
+### Béèrè lọ́wọ́ Agent Náà {#ask-the-agent}
 
 ```
 "Fi eto apẹrẹ mi hàn mí"
@@ -273,13 +273,13 @@ tàbí
 
 Agent náà yóò ṣàfihàn typography, àwọn àwọ̀, ààyè, àti àwọn àmi míì rẹ.
 
-### Wo theme.json
+### Wo theme.json {#view-themejson}
 
 Ṣí `/wp-content/themes/[theme-name]/theme.json` nínú olootu ọrọ láti wo àwọn ìtumọ̀ token àìṣeéṣe.
 
-## Mímúdójúìwọ̀n Eto Onírú Rẹ
+## Mímúdójúìwọ̀n Eto Onírú Rẹ {#updating-your-design-system}
 
-### Àwọn Ìmúdójúìwọ̀n Kíákíá
+### Àwọn Ìmúdójúìwọ̀n Kíákíá {#quick-updates}
 
 Béèrè lọ́wọ́ aṣojú fún àwọn ìyípadà pàtó:
 
@@ -299,7 +299,7 @@ tàbí
 "Yí font àkọlé padà sí serif"
 ```
 
-### Àtúnṣe Onírú Kíkún
+### Àtúnṣe Onírú Kíkún {#full-redesign}
 
 Ṣiṣe ọgbọn Ẹwa Eto Onírú náà lẹ́ẹ̀kansi:
 
@@ -309,7 +309,7 @@ tàbí
 
 Èyí yóò tọ́ ọ sọ́nà nípasẹ̀ gbogbo ìpinnu lẹ́ẹ̀kansi, bẹ̀rẹ̀ pẹ̀lú àwọn iye rẹ lọwọlọwọ.
 
-### Àwọn Ìmúdójúìwọ̀n Apá Kan
+### Àwọn Ìmúdójúìwọ̀n Apá Kan {#partial-updates}
 
 Mú àwọn abala pàtó dójúìwọ̀n:
 
@@ -317,15 +317,15 @@ Mú àwọn abala pàtó dójúìwọ̀n:
 "Kàn mú palẹti àwọ̀ dójúìwọ̀n, pa gbogbo ohun mìíràn mọ́"
 ```
 
-## Àwọn Ìlànà Dídára Jùlọ fún Eto Onírú
+## Àwọn Ìlànà Dídára Jùlọ fún Eto Onírú {#design-system-best-practices}
 
-### Ìbámu
+### Ìbámu {#consistency-1}
 
 - Lo àwọn token kan náà níbi gbogbo
 - Má ṣe dá àwọn àwọ̀ tàbí ìwọn ẹlẹ́ẹ̀kan-ṣoṣo
 - Tọ́ka sí àwọn token dípò fífi iye sínú koodu taara
 
-### Fífún ní Orúkọ
+### Fífún ní Orúkọ {#naming}
 
 Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 
@@ -335,7 +335,7 @@ Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Ìfaradà sí Ìdàgbàsókè
+### Ìfaradà sí Ìdàgbàsókè {#scalability}
 
 Ṣe eto rẹ kí ó lè gbooro:
 
@@ -343,7 +343,7 @@ Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 - Dá àwọn ìwọn àtòjọ (xs, sm, md, lg, xl) dípò àwọn iye aláìlànà
 - Gbero fún àwọn àfikún ọjọ́ iwájú
 
-### Ìkọsílẹ̀
+### Ìkọsílẹ̀ {#documentation}
 
 Ṣe ìkọsílẹ̀ eto onírú rẹ:
 
@@ -351,9 +351,9 @@ Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 - Ìgbà tí a gbọdọ̀ lo token kọ̀ọ̀kan
 - Àwọn àyọkúrò àti àwọn ọ̀rọ̀ pàtàkì
 
-## Àwọn Àpẹẹrẹ Eto Onírú Tí Ó Wọ́pọ̀
+## Àwọn Àpẹẹrẹ Eto Onírú Tí Ó Wọ́pọ̀ {#common-design-system-patterns}
 
-### Ìrísí Tuntun Tí Ó Rọrùn
+### Ìrísí Tuntun Tí Ó Rọrùn {#modern-minimalist}
 
 - Typography sans-serif (Inter, Helvetica)
 - Palẹti àwọ̀ tó lopin (àwọ̀ 2-3)
@@ -361,7 +361,7 @@ Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 - Àwọn ojiji fífẹ́
 - Àwọn animation tó dan, tó yára
 
-### Gbígbóná àti Ọ̀rẹ́
+### Gbígbóná àti Ọ̀rẹ́ {#warm-and-friendly}
 
 - Àdàpọ̀ serif àti sans-serif
 - Palẹti àwọ̀ gbígbóná (ọsan, grẹ́ẹ̀yì gbígbóná)
@@ -369,7 +369,7 @@ Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 - Àwọn ojiji rírọ̀
 - Àwọn animation alárinrin
 
-### Ilé-iṣẹ́ Amọ̀ṣẹ́dunjú
+### Ilé-iṣẹ́ Amọ̀ṣẹ́dunjú {#professional-corporate}
 
 - Sans-serif mímọ́ (Roboto, Open Sans)
 - Palẹti àìmọ̀kan pẹ̀lú àwọ̀ ìtẹnumọ́
@@ -377,7 +377,7 @@ Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 - Àwọn ojiji díẹ̀
 - Àwọn ìyípadà fífẹ́
 
-### Ṣíṣẹ̀dá àti Líle
+### Ṣíṣẹ̀dá àti Líle {#creative-and-bold}
 
 - Typography tó yàtọ̀
 - Palẹti àwọ̀ tó lágbára
@@ -385,7 +385,7 @@ Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 - Àwọn ojiji tó lágbára
 - Àwọn animation tó hàn gbangba
 
-## Ìṣàtúnṣe Ìṣòro
+## Ìṣàtúnṣe Ìṣòro {#troubleshooting}
 
 **Àwọn ìyípadà eto onírú mi kò hàn**
 - Pa cache aṣàwákiri rẹ rẹ́
@@ -403,7 +403,7 @@ Lo àwọn orúkọ tó ṣe kedere, tó ní ìtumọ̀:
 - Ṣàtúnṣe theme.json pẹ̀lú ọwọ́ sí àwọn iye ṣáájú
 - Ṣiṣe ọgbọn náà lẹ́ẹ̀kansi pẹ̀lú àwọn yíyàn yàtọ̀
 
-## Àwọn Ìgbésẹ̀ Tó Kàn
+## Àwọn Ìgbésẹ̀ Tó Kàn {#next-steps}
 
 Lẹ́yìn tí o bá ti ṣàlàyé eto onírú rẹ:
 

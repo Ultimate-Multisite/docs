@@ -3,9 +3,9 @@ title: Að hefjast handa við þróun viðbóta
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Þróun viðbótar
+# Þróun viðbótar {#addon-development}
 
-## Uppbygging viðbótar
+## Uppbygging viðbótar {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Sniðmát fyrir aðalskrá viðbótar
+## Sniðmát fyrir aðalskrá viðbótar {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Dæmi um sérsniðið líkan
+## Dæmi um sérsniðið líkan {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Samþætting admin-síðu
+## Samþætting admin-síðu {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Að prófa viðbótina þína
+## Að prófa viðbótina þína {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 viðbótarpunktar
+## v2.13.0 viðbótarpunktar {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 bætir við nokkrum viðbótarpunktum sem nýtast fyrir viðbætur sem samþættast fullvalda leigjendum, checkout-lénum eða sjálfvirkni fyrir DNS hjá hýsingaraðilum.
 
-### SSO og stjórnunar-URL fyrir aðalvef
+### SSO og stjórnunar-URL fyrir aðalvef {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Grunnlén checkout-eyðublaðs
+### Grunnlén checkout-eyðublaðs {#checkout-form-base-domains}
 
 Notaðu `wu_checkout_form_base_domains` þegar viðbótin þín býður upp á viðbótar sameiginleg grunnlén sem eiga að haga sér eins og checkout-eyðublaðs **Site URL**-lén í stað sérsniðinna varpana fyrir hvern vef:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite staðlar þessi hýsingarnöfn og sleppir sjálfvirkum færslum fyrir vörpuð lén á hverjum vef fyrir þau.
 
-### Sjálfvirk stofnun lénsfærslna
+### Sjálfvirk stofnun lénsfærslna {#automatic-domain-record-creation}
 
 Notaðu `wu_should_create_domain_record_for_site` þegar viðbótin þín þarf að koma í veg fyrir eða fresta sjálfvirkri stofnun lénsfærslu fyrir nýstofnaðan vef:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Samþættingar hýsingaraðila sem hlusta á `wu_add_subdomain` geta stofnað DNS-færslur hjá veitanda þegar vefir eru stofnaðir. Ef engin samþætting er skráð fyrir þá aðgerð sleppir Ultimate Multisite tóma bakgrunnsverkinu.
 
-## Næstu skref
+## Næstu skref {#next-steps}
 
 - Farðu yfir [Hooks-tilvísunina](/developer/hooks) fyrir tiltækar aðgerðir og síur
 - Skoðaðu [REST API yfirlitið](/developer/rest-api/overview) fyrir API-samþættingu

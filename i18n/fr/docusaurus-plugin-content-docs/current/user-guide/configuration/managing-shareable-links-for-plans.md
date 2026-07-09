@@ -3,7 +3,7 @@ title: Gestion des liens partageables pour les forfaits
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Gérer les liens partageables pour les plans
+# Gérer les liens partageables pour les plans {#managing-shareable-links-for-plans}
 
 Ultimate Multisite vous offre la possibilité de partager des liens de plan directement avec vos clients. Pour ce faire, accédez à l’une des pages de modification de vos plans et cliquez sur le bouton _Cliquer pour copier le lien partageable_.
 

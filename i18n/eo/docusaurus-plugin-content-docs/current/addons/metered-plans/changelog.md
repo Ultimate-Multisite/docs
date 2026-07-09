@@ -3,7 +3,7 @@ title: Ŝanĝprotokolo de laŭmezuraj planoj
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ŝanĝprotokolo de Mezuritaj Planoj
+# Ŝanĝprotokolo de Mezuritaj Planoj {#metered-plans-changelog}
 
 Versio 1.1.0 - Eldonita je 2026-05-05
 - Nova: AI token-fakturigo por multretejaj subretejoj — spuru kaj fakturu AI token-uzadon tra klientaj retejoj kun agordeblaj po-tokenaj tarifoj
@@ -14,17 +14,17 @@ Versio 1.1.0 - Eldonita je 2026-05-05
 - Korekto: Solvitaj fatalaj eraroj kaj duoblaj-pravalorizaj problemoj dum plugin-ŝargo
 - Plibonigita: Aldonita check-env npm-skripto por ke programistaj medioj memagordu sin ĉe unua rulo
 
-### 1.0.3
+### 1.0.3 {#103}
 * Ĝisdatigita al Plugin Update Checker v5
 * Aldonitaj modernaj WordPress plugin-kapoj
 * Plibonigita kongruo kun la plej novaj WordPress-versioj
 * Plibonigita agado de uzospurado
 
-### 1.0.2
+### 1.0.2 {#102}
 * Cimo-korektoj kaj agadaj plibonigoj
 * Plibonigita uzoraportado
 
-### 1.0.0
+### 1.0.0 {#100}
 * Komenca eldono
 * Kerna mezurita fakturiga funkcieco
 * Uzospurado kaj kalkulo de superuzo

@@ -3,13 +3,13 @@ title: Aistriú un Plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Décurraíocht plan (v2)
+# Décurraíocht plan (v2) {#downgrading-a-plan-v2}
 
 _**NOTE CRUCIAL: An tairiscint seo ag curteáil ar Ultimate Multisite version 2.x.**_
 
 Is é curteáil an plan nó curteáil an subscription iontaigh a dhéanamh ar chuid oifigí a bheith acu mar atá siad le breagta bhunaithe ar bhfíor, nó mar a bhfáthadh go níl siad ag iarraidh go mbeidh siad go leatain de ardán réimseartha chun an subsite a dhéanamh.
 
-## Conas a curteáil plan
+## Conas a curteáil plan {#how-to-downgrade-a-plan}
 
 Is féidir leis na chuid oifigí a curteáil an plan féin ag aon am chun an admin dashboard de subsite a bheith acu a chluainteadh agus cliceáil ar **Change** (Chang) ar an curteáil ar an curte áite.
 
@@ -25,7 +25,7 @@ Ar aghaidh a bheith an nútinn ag cliceáil ar an curte áite **Complete Checkou
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Cad a thaisceann sé nuair a curteann an nútinn plan
+### Cad a thaisceann sé nuair a curteann an nútinn plan {#what-happens-when-a-user-downgrades-their-plan}
 
 Is é an t-aonacht ag curteáil an plan ag curte áite an curteanna a bheith agat i subsite.
 
@@ -37,7 +37,7 @@ Para postanna a bhíonn ó na leimcheana a chur ar fáil ar an plan, tá tú ag 
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Cad a dhéanann leis an t-amhasctha (payment)
+### Cad a dhéanann leis an t-amhasctha (payment) {#what-happens-to-the-payment}
 
 Ag cur iad ar fáil ag curteacha 2.0, níl aon athrú ag cur isteach ar chuid deacadaí ar an t-amhasctha (proration).
 

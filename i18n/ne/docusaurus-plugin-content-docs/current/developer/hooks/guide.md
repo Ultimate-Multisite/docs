@@ -3,15 +3,15 @@ title: Hooks प्रयोग मार्गदर्शिका
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks प्रयोग मार्गदर्शिका
+# Hooks प्रयोग मार्गदर्शिका {#hooks-usage-guide}
 
 Ultimate Multisite ले २००+ action hooks र २८०+ filter hooks उपलब्ध गराउँछ। यो पृष्ठले व्यवहारिक उदाहरणहरूसहित सबैभन्दा धेरै प्रयोग हुने hooks समेट्छ। पूर्ण रूपमा स्वतः उत्पन्न सन्दर्भका लागि, यस खण्डका अन्य पृष्ठहरू हेर्नुहोस्।
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### ग्राहक जीवनचक्र
+### ग्राहक जीवनचक्र {#customer-lifecycle}
 
-#### ग्राहक सिर्जनापछि
+#### ग्राहक सिर्जनापछि {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### ग्राहक स्थिति परिवर्तन
+#### ग्राहक स्थिति परिवर्तन {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### साइट Hooks
+### साइट Hooks {#site-hooks}
 
-#### साइट प्रकाशित भएपछि
+#### साइट प्रकाशित भएपछि {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### टेम्प्लेट लागू गर्नुअघि
+#### टेम्प्लेट लागू गर्नुअघि {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### सदस्यता Hooks
+### सदस्यता Hooks {#membership-hooks}
 
-#### स्थिति रूपान्तरणहरू
+#### स्थिति रूपान्तरणहरू {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### भुक्तानी Hooks
+### भुक्तानी Hooks {#payment-hooks}
 
-#### भुक्तानी सम्पन्न / असफल
+#### भुक्तानी सम्पन्न / असफल {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### प्रशोधनअघि / सम्पन्न भएपछि
+#### प्रशोधनअघि / सम्पन्न भएपछि {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### डोमेन Hooks
+### डोमेन Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### मूल्य निर्धारण Filters
+### मूल्य निर्धारण Filters {#pricing-filters}
 
-#### Cart कुल
+#### Cart कुल {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### कर दरहरू
+#### कर दरहरू {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### टेम्प्लेट Filters
+### टेम्प्लेट Filters {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### सीमा Filters
+### सीमा Filters {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway Filters
+### Gateway Filters {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout फारम क्षेत्रहरू
+### Checkout फारम क्षेत्रहरू {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### इमेल सामग्री
+### इमेल सामग्री {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

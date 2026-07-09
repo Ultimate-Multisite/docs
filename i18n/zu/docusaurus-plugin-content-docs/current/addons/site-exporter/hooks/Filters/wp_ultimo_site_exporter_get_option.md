@@ -4,11 +4,11 @@ title: Isihlungi - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Isihlungi: wp_ultimo_site_exporter_get_option
+# Isihlungi: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Ibuyisela inani lenketho yenethiwekhi elenziwe i-slug.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Ibuyisela inani lenketho yenethiwekhi elenziwe i-slug.
 | $option_name | `string` | Igama lenketho. |
 | $default | `mixed` | Inani elizenzakalelayo. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 1.9.6
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe ku-[`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) emgqeni 126
 
 
-## Ibuyisela
+## Ibuyisela {#returns}
 Inani lenketho yenethiwekhi elenziwe i-slug.

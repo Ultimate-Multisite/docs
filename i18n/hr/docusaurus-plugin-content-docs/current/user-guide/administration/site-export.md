@@ -3,27 +3,27 @@ title: Izvoz stranice
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Izvoz sajta
+# Izvoz sajta {#site-export}
 
 Admin stranica **Izvoz sajta (Site Export)** omogućuje administracijama mreže da paketiraju jedan sajt, ili cijelu mrežu, u preuzimljivi arhivski fajl za migraciju, backup ili rad na prenosu.
 
-## Izvoz jednog sajta
+## Izvoz jednog sajta {#exporting-one-site}
 
 Idite na **Ultimate Multisite > Site Export** i odaberite **Generate new Site Export (Generiraj novi izvoz sajta)**. Odaberite pod-sajt koji želite izvesti, a zatim odlučite da li će arhivski fajl uključivati uploadove, pluginove i teme.
 
 Kada se izvoz završi, preuzmite ZIP fajl iz liste **Existing Exports (Postojeći izvozi)**. Izvozni ZIP fajlovi sada uključuju samostalno pokrećeni `index.php` i `readme.txt`, tako da arhivski fajl može biti otpušten na novog hosta i pokrenut bez prethodne instalacije zasebnog plugin-a za uvoz.
 
-## Izvoz cijele mreže
+## Izvoz cijele mreže {#exporting-the-whole-network}
 
 Koristite **Network Export (Izvoz mreže)** na stranici Site Export kada vam je potreban jedan arhivski fajl koji sadrži sve pod-sajtove u mreži. Ovo je korisno prije migracija hostova, vježbi za oporavak od katastrofe ili ponovnog izgradnje staging okruženja gdje svaki pod-sajt treba putovati zajedno.
 
 Budući da izvoz mreže može biti mnogo veći od izvoza jednog sajta, pokrenite ga tijekom razdoblja s niskim prometom i potvrdite da je ciljno skladište dovoljno slobodnog prostora za uploadove, pluginove, teme i generirane ZIP fajlove.
 
-### Network Import Bundles (Paketi za uvoz mreže)
+### Network Import Bundles (Paketi za uvoz mreže) {#network-import-bundles}
 
 Po početku Ultimate Multisite 2.12.0, Site Exporter može generirati **network import bundles (pakete za uvoz mreže)** — specijalizirane arhive dizajnirane za pojednostavljeni oporavak sajta cijele mreže. Network import bundle sadrži sve potrebne fajlove i metadata za ponovno vraćanje više sajtova na novu instalaciju mreže.
 
-#### Generiranje paketa za uvoz mreže
+#### Generiranje paketa za uvoz mreže {#generating-a-network-import-bundle}
 
 1. Idite **Ultimate Multisite > Site Export**
 2. Kliknite na **Generate new Network Export** (Generiraj novi mrežni izvoz)
@@ -32,7 +32,7 @@ Po početku Ultimate Multisite 2.12.0, Site Exporter može generirati **network 
 5. Kliknite na **Generate** (Generiraj)
 6. Preuzmite ZIP paket bundle sa liste **Existing Exports** (Postojeći izvozi)
 
-#### Vraćanje pomoću Network Import Bundle-a
+#### Vraćanje pomoću Network Import Bundle-a {#restoring-from-a-network-import-bundle}
 
 Da biste vratili siteove iz mrežnog paketa za uvoz:
 
@@ -52,7 +52,7 @@ Mrežni paketi za uvoz zadržavaju:
 - Uploadove medija (ako su uključeni u paket)
 - Prilagođene baze podataka i podatke
 
-## Instaliranje ZIP izvoza koji se sam pokreće (self-booting export ZIP)
+## Instaliranje ZIP izvoza koji se sam pokreće (self-booting export ZIP) {#installing-a-self-booting-export-zip}
 
 Da biste vratili self-booting ZIP na novom hostu:
 

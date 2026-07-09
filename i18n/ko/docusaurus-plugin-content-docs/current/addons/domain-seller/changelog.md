@@ -3,7 +3,7 @@ title: 도메인 판매자 변경 내역
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller 변경 로그
+# Domain Seller 변경 로그 {#domain-seller-changelog}
 
 버전 1.3.0 - 2026-06-02에 릴리스됨
 - 신규: HostAfrica 리셀러 잔액이 너무 낮아질 때 network-admin 경고 추가
@@ -136,20 +136,20 @@ Version 1.0.0 - 2025-09-28에 릴리스됨
 * **수정:** 모든 deprecated v1 코드가 v2 표준으로 업데이트됨
 * **제거:** 레거시 v1 호환성(호환성 깨짐 변경)
 
-### 이전 버전(v1 레거시)
+### 이전 버전(v1 레거시) {#previous-versions-v1-legacy}
 
-### 버전 0.0.3 - 20/08/2019
+### 버전 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * 수정: Groundhogg CRM과의 비호환성
 * 참고: 이는 마지막 v1 호환 릴리스였습니다
 
-### 버전 0.0.2 - 07/12/2018
+### 버전 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * 수정: License Key field 제거
 * 수정: 기능 plugin이 활성화되었을 때 plan 탭 누락
 * 개선: 등록 field에 건너뛰기 버튼 추가
 
-### 버전 0.0.1 - 최초 릴리스
+### 버전 0.0.1 - 최초 릴리스 {#version-001---initial-release}
 
 * WP Ultimo v1용 기본 OpenSRS 통합
 * 간단한 도메인 검색 및 등록

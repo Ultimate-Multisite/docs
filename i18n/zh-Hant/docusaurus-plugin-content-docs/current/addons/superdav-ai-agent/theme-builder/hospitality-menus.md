@@ -3,15 +3,15 @@ title: 餐飲菜單
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# 餐飲菜單
+# 餐飲菜單 {#hospitality-menus}
 
 **餐飲菜單**功能讓 Theme Builder 能夠直接在您的 WordPress 網站中生成並嵌入結構化的餐飲菜單頁面。
 
-## 概覽
+## 概覽 {#overview}
 
 Theme Builder 現在可以為餐飲業（包括餐廳、咖啡館、酒吧和餐飲服務）創建專業、結構化的菜單頁面。這些菜單與您的網站設計完全整合，並且可以輕鬆地更新和管理。
 
-## 支援的餐飲類型
+## 支援的餐飲類型 {#supported-hospitality-types}
 
 - **餐廳** — 全方位服務的餐飲菜單
 - **咖啡館** — 咖啡和輕食菜單
@@ -21,9 +21,9 @@ Theme Builder 現在可以為餐飲業（包括餐廳、咖啡館、酒吧和餐
 - **餐車** — 移動餐飲服務菜單
 - **酒莊和釀酒廠** — 帶有描述的飲品菜單
 
-## 菜單結構
+## 菜單結構 {#menu-structure}
 
-### 菜單類別
+### 菜單類別 {#menu-categories}
 
 菜單會根據類別進行組織：
 
@@ -34,7 +34,7 @@ Theme Builder 現在可以為餐飲業（包括餐廳、咖啡館、酒吧和餐
 - **飲品** — 飲料（酒精和非酒精）
 - **特色菜** — 當日或季節限定特色菜
 
-### 菜單項目格式
+### 菜單項目格式 {#menu-item-format}
 
 每個菜單項目都包含：
 
@@ -49,7 +49,7 @@ Theme Builder 現在可以為餐飲業（包括餐廳、咖啡館、酒吧和餐
 }
 ```
 
-#### 項目欄位
+#### 項目欄位 {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Theme Builder 現在可以為餐飲業（包括餐廳、咖啡館、酒吧和餐
 | `allergens` | array | 常見過敏原（堅果、貝類等） |
 | `availability` | string | 可用時間（每日、季節性等） |
 
-## 創建餐飲菜單
+## 創建餐飲菜單 {#creating-hospitality-menus}
 
-### 步驟 1：提供菜單資訊
+### 步驟 1：提供菜單資訊 {#step-1-provide-menu-information}
 
 告訴 Theme Builder 您的菜單內容：
 
@@ -70,7 +70,7 @@ Theme Builder 現在可以為餐飲業（包括餐廳、咖啡館、酒吧和餐
 為我的義式餐廳創建一份菜單：包含開胃菜、義大利麵主食、主菜和甜點。請包含價格和描述。
 ```
 
-### 步驟 2：Theme Builder 生成菜單
+### 步驟 2：Theme Builder 生成菜單 {#step-2-theme-builder-generates-menu}
 
 Theme Builder 會：
 
@@ -80,7 +80,7 @@ Theme Builder 會：
 4. 格式化價格和描述
 5. 添加飲食和過敏原資訊
 
-### 步驟 3：審閱和自訂
+### 步驟 3：審閱和自訂 {#step-3-review-and-customize}
 
 您可以：
 
@@ -90,9 +90,9 @@ Theme Builder 會：
 4. 更新描述和飲食資訊
 5. 調整樣式和佈局
 
-## 菜單顯示選項
+## 菜單顯示選項 {#menu-display-options}
 
-### 完整菜單頁面
+### 完整菜單頁面 {#full-menu-page}
 
 一個專門展示您完整菜單的頁面：
 
@@ -101,7 +101,7 @@ Theme Builder 會：
 - 適合列印的佈局
 - 響應手機設計
 
-### 菜單小工具 (Menu Widget)
+### 菜單小工具 (Menu Widget) {#menu-widget}
 
 將菜單部分嵌入到其他頁面：
 
@@ -110,7 +110,7 @@ Theme Builder 會：
 - 酒吧頁面的飲品菜單
 - 頁腳的甜點展示區
 
-### 菜單 PDF
+### 菜單 PDF {#menu-pdf}
 
 生成可下載的 PDF 菜單：
 
@@ -119,9 +119,9 @@ Theme Builder 會：
 - 包含圖片和描述
 - 易於分享和電子郵件傳送
 
-## 飲食和過敏原資訊
+## 飲食和過敏原資訊 {#dietary-and-allergen-information}
 
-### 飲食屬性
+### 飲食屬性 {#dietary-attributes}
 
 標記帶有飲食資訊的項目：
 
@@ -133,7 +133,7 @@ Theme Builder 會：
 - **低碳水 (Low-Carb)** — 碳水化合物含量較低
 - **高蛋白 (High-Protein)** — 富含蛋白質
 
-### 過敏原警告
+### 過敏原警告 {#allergen-warnings}
 
 包含常見過敏原：
 
@@ -146,9 +146,9 @@ Theme Builder 會：
 - **麩質 (Gluten)** — 小麥和含麩質穀物
 - **芝麻 (Sesame)** — 芝麻籽和油
 
-## 菜單管理
+## 菜單管理 {#menu-management}
 
-### 更新價格
+### 更新價格 {#updating-prices}
 
 輕鬆更新菜單價格：
 
@@ -158,7 +158,7 @@ Theme Builder 會：
 4. 儲存變更
 5. 變更會立即顯示在您的網站上
 
-### 添加季節性項目
+### 添加季節性項目 {#adding-seasonal-items}
 
 創建季節性菜單變體：
 
@@ -168,7 +168,7 @@ Theme Builder 會：
 4. 設定供應日期
 5. 在季節期間自動顯示
 
-### 管理特色菜
+### 管理特色菜 {#managing-specials}
 
 展示每日或每週的特色菜：
 
@@ -178,7 +178,7 @@ Theme Builder 會：
 4. 每日或每週更新
 5. 歸檔舊的特色菜
 
-## 與 Theme Builder 的整合
+## 與 Theme Builder 的整合 {#integration-with-theme-builder}
 
 當您使用 Theme Builder 為餐飲網站時：
 
@@ -188,9 +188,9 @@ Theme Builder 會：
 4. **行動裝置優化** — 菜單在手機上顯示美觀
 5. **SEO 優化** — 菜單對搜尋引擎友好
 
-## 最佳實踐
+## 最佳實踐 {#best-practices}
 
-### 菜單設計
+### 菜單設計 {#menu-design}
 
 - **清晰的組織** — 邏輯清晰的類別結構
 - **易讀的描述** — 誘人且資訊豐富
@@ -198,7 +198,7 @@ Theme Builder 會：
 - **專業的照片** — 高品質的食物圖片
 - **留白** — 不要讓頁面過於擁擠
 
-### 內容
+### 內容 {#content}
 
 - **準確的描述** — 準確描述項目內容
 - **突出特色菜** — 使特色菜更引人注目
@@ -206,7 +206,7 @@ Theme Builder 會：
 - **定期更新** — 保持價格和項目內容的最新
 - **使用誘人的語言** — 讓項目聽起來美味可口
 
-### 無障礙性
+### 無障礙性 {#accessibility}
 
 - **易讀的字體** — 使用清晰、易讀的字體
 - **足夠的對比度** — 確保文字易於閱讀
@@ -214,9 +214,9 @@ Theme Builder 會：
 - **過敏原警告** — 醒目地顯示過敏原資訊
 - **行動裝置友善** — 在所有設備上進行測試
 
-## 範例
+## 範例 {#examples}
 
-### 餐廳菜單結構
+### 餐廳菜單結構 {#restaurant-menu-structure}
 
 ```
 開胃菜
@@ -240,7 +240,7 @@ Theme Builder 會：
 └── 冰淇淋精選
 ```
 
-### 咖啡館菜單結構
+### 咖啡館菜單結構 {#cafe-menu-structure}
 
 ```
 咖啡
@@ -259,7 +259,7 @@ Theme Builder 會：
 └── 素食捲餅
 ```
 
-## 相關功能
+## 相關功能 {#related-features}
 
 - [創建菜單](../abilities/create-menu.md) — 創建導航菜單
 - [設計方向](./design-direction.md) — 自訂網站設計

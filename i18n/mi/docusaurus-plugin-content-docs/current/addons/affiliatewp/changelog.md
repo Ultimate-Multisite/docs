@@ -3,7 +3,7 @@ title: AffiliateWP Rangitaki Panonitanga
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Rangitaki panoni AffiliateWP
+# Rangitaki panoni AffiliateWP {#affiliatewp-changelog}
 
 Putanga: 2.0.1 - I tukuna i te 2025-09-28
 

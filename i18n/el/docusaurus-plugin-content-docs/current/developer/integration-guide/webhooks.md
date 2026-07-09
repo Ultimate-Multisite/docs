@@ -3,11 +3,11 @@ title: Χειρισμός Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Διαχείριση Webhook
+# Διαχείριση Webhook {#webhook-handling}
 
 Δημιουργήστε προσαρμοσμένα endpoints webhook για να λαμβάνετε γεγονότα (events) από εξωτερικές υπηρεσίες και να συγχρονίζετε δεδομένα με το Ultimate Multisite.
 
-## Προσαρμοσμένο Endpoint Webhook
+## Προσαρμοσμένο Endpoint Webhook {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Σκέψεις Ασφαλείας
+## Σκέψεις Ασφαλείας {#security-considerations}
 
 - Ελέγξτε πάντα τις υπογραφές των webhook χρησιμοποιώντας HMAC ή ένα κοινό μυστικό (shared secret).
 - Χρησιμοποιήστε ένα `permission_callback` στο REST route σας — μην το ρυθμίζετε ποτέ σε `__return_true` σε περιβάλλον παραγωγής (production).

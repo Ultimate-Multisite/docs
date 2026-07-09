@@ -3,7 +3,7 @@ title: Ndiri kuenda sei WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Ndiri kuimba WordPress Multisite sei sei?
+# Ndiri kuimba WordPress Multisite sei sei? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite inakuweipa uwezera kuva ne network ye sites dzakawanda dzinogara munyaya imwe. Iyi feature inotanga neWordPress, asi haisi inoratidwa nekuti inenge inotanga.
 
@@ -102,9 +102,9 @@ Kuti utore subsite:
 
 Panguva unotsvaga zvinhu, chibvumira "Add site". Panguva subsite yakagadzirwa, enda uye one kuti uone kuti subsite inenge inogona kushanda.
 
-## Matambudziko Anogona Kuonekwa:
+## Matambudziko Anogona Kuonekwa: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Ndinogona kuita sites dzine chinhu chinobva asi haziingone kuone.
+### 1. Ndinogona kuita sites dzine chinhu chinobva asi haziingone kuone. {#common-problems}
 
 Kana uri kuita subdomains, unofanira kutaura subdomains dzakawanda (wildcard) panguva inenge iwe munzira yako ya multisite.
 

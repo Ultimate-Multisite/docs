@@ -3,18 +3,18 @@ title: Znalosti Theme Buildera
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Znalosti Téma Builderu: Štruktúrovanie a Aktivácia Blokových Tém
+# Znalosti Téma Builderu: Štruktúrovanie a Aktivácia Blokových Tém {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 predstavuje dve silné schopnosti, ktoré vám umožňujú generovať a nasadť prispôsobené blokové témy priamo z chatu.
 
-## Prehľad
+## Prehľad {#overview}
 
 Schopnosti **scaffold-block-theme** (štruktúrovanie blokovej temy) a **activate-theme** (aktivácia témy) umožňujú agentom:
 - Generovať kompletné, produktorovo pripravené blokové témy na základe vašich špecifikácií
 - Automaticky aktivovať témy na vašom svete bez manuálnej intervencie
 - Vytvára konzistentnú vizuálnu identitu pomocou vedeného návrhu
 
-## Štruktúrovanie Blokovej Témy (Scaffold Block Theme)
+## Štruktúrovanie Blokovej Témy (Scaffold Block Theme) {#scaffold-block-theme}
 
 Schopnosť **scaffold-block-theme** generuje novú WordPress blokovú tému s kompletnou štruktúrou, vrátane:
 
@@ -23,7 +23,7 @@ Schopnosť **scaffold-block-theme** generuje novú WordPress blokovú tému s ko
 - Prispôsobených štýlov a variant blokov
 - Metadat a deklarácií podporu témy
 
-### Ako vyvolať (How to Invoke)
+### Ako vyvolať (How to Invoke) {#how-to-invoke}
 
 V chate s Superdav AI Agent môžete požiadať o generovanie témy:
 
@@ -38,7 +38,7 @@ Agent urobí nasledovné kroky:
 3. Vytvára všetky potrebné súbory témy
 4. Pričomu tému na aktiváciu
 
-### Očakávaný výstup (Expected Output)
+### Očakávaný výstup (Expected Output) {#expected-output}
 
 Keď sa schopnosť úspešne vykoná, uvidíte:
 
@@ -56,11 +56,11 @@ Príklad výstupu:
   Stav: Pripravená na aktiváciu
 ```
 
-## Aktivácia Témy (Activate Theme)
+## Aktivácia Témy (Activate Theme) {#activate-theme}
 
 Možnosť **activate-theme** vám umožňuje prejsť na nová vytvorenú alebo existujúcu blokovú tému.
 
-### Ako ju vyvolať
+### Ako ju vyvolať {#how-to-invoke-1}
 
 Po vytvorení témy môžete okamžite aktivovať:
 
@@ -74,7 +74,7 @@ Alebo aktivovať akékoľvek existujúcu tému:
 "Prejsť na tému Twentytwentyfour"
 ```
 
-### Očakávaný výstup
+### Očakávaný výstup {#expected-output-1}
 
 Keď úspešne aktivujete tému:
 
@@ -92,7 +92,7 @@ Príklad výstupu:
   Poznámka: Preverte vašu hlavnú stránku, aby ste potvrdili, že nový dizajn je aktívny
 ```
 
-## Príkon: Vytvoriť a aktivovať (Scaffold and Activate)
+## Príkon: Vytvoriť a aktivovať (Scaffold and Activate) {#workflow-scaffold-and-activate}
 
 Typový pracovný postup kombinuje obe schopnosti:
 
@@ -102,7 +102,7 @@ Typový pracovný postup kombinuje obe schopnosti:
 4. **Aktivácia**: "Aktivovať tému teraz"
 5. **Kontrola**: Navštívte si svoj web, aby ste potvrdili, že nový dizajn je aktívny
 
-## Designové tokeny a personalizácia (Design Tokens and Customization)
+## Designové tokeny a personalizácia (Design Tokens and Customization) {#design-tokens-and-customization}
 
 Vytvorené témy používajú designové tokeny WordPress (przez `theme.json`) na:
 
@@ -114,16 +114,16 @@ Vytvorené témy používajú designové tokeny WordPress (przez `theme.json`) n
 
 Tieto tokeny sú v zcentrovanom `theme.json`, čo uľahčuje prispôsobenie celého vášho dizajnového systému z jedného súboru.
 
-## Omeňovanie a poznámky
+## Omeňovanie a poznámky {#limitations-and-notes}
 
-## Úprava
+## Úprava {#troubleshooting}
 
 *   Témy sa vytvárajú v adresácii `/wp-content/themes/` a musia spĺňať názvoné konvencie WordPressu.
 *   Aktivácia vyžaduje vhodné prístupné práva na vašom WordPress site.
 *   Prípadové PHP kódy v témach sú minimálne; pre komplexnú funkčnosť použite pluginy.
 *   Blokové témy fungujú najlepšie s WordPressom verziou 5.9 a novšou.
 
-## Úprava problémov (Troubleshooting)
+## Úprava problémov (Troubleshooting) {#next-steps}
 
 **Téma sa neobjaví po vytvorení (scaffolding)**
 *   Preverte, či existuje adresár témy a má správne povolenia.

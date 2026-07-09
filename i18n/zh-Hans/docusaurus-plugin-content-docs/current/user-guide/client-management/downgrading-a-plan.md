@@ -3,13 +3,13 @@ title: 降级套餐
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# 降级套餐（v2）
+# 降级套餐（v2） {#downgrading-a-plan-v2}
 
 _**重要说明：本文适用于 Ultimate Multisite 2.x 版本。**_
 
 降级套餐或订阅是你的客户可能会执行的常见操作，例如他们预算有限，或者他们认为运行其子站点不需要太多资源。
 
-## 如何降级套餐
+## 如何降级套餐 {#how-to-downgrade-a-plan}
 
 你的客户可以随时登录其子站点管理员 Dashboard，并在其 Account 页面下点击 **更改** 来降级套餐。
 
@@ -25,7 +25,7 @@ _**重要说明：本文适用于 Ultimate Multisite 2.x 版本。**_
 
 ![显示待处理会员资格更改横幅的 Account 页面](/img/account-page/pending-change.png)
 
-### 用户降级套餐时会发生什么
+### 用户降级套餐时会发生什么 {#what-happens-when-a-user-downgrades-their-plan}
 
 需要注意的是，降级套餐不会更改用户子站点中的现有配置。
 
@@ -37,7 +37,7 @@ _**重要说明：本文适用于 Ultimate Multisite 2.x 版本。**_
 
 ![Network Admin 设置的站点页面，显示超出文章限制时的行为选项](/img/account-page/settings-sites-post-limit.png)
 
-### 付款会发生什么
+### 付款会发生什么 {#what-happens-to-the-payment}
 
 在 2.0 版本中，不再需要对付款进行任何按比例分摊方面的调整。
 

@@ -3,7 +3,7 @@ title: ڊومين وڪرو ڪندڙ تبديلي لاگ
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# ڊومين وڪرو ڪندڙ تبديلي نامو
+# ڊومين وڪرو ڪندڙ تبديلي نامو {#domain-seller-changelog}
 
 نسخو 1.3.0 - 2026-06-02 تي جاري ٿيو
 - نئون: جڏهن HostAfrica reseller balance تمام گهٽ ٿئي ته network-admin وارننگ شامل ڪئي وئي
@@ -134,20 +134,20 @@ Version 1.0.0 - 2025-09-28 تي جاري ڪيو ويو
 * **درست:** سڀ deprecated v1 code v2 standards تي update ڪيو ويو
 * **هٽايو ويو:** Legacy v1 compatibility (breaking change)
 
-### اڳوڻا نسخا (v1 Legacy)
+### اڳوڻا نسخا (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * درست: Groundhogg CRM سان عدم مطابقت
 * نوٽ: هي آخري v1-compatible release هئي
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * درست: License Key field هٽايو ويو
 * درست: feature plugin فعال هئڻ وقت Plan tabs غائب هئا
 * بهتر: registration field تي skip button شامل ڪيو ويو
 
-### Version 0.0.1 - شروعاتي رليز
+### Version 0.0.1 - شروعاتي رليز {#version-001---initial-release}
 
 * WP Ultimo v1 لاءِ بنيادي OpenSRS integration
 * سادي ڊومين search ۽ registration

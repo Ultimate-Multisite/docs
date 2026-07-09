@@ -3,11 +3,11 @@ title: ক্ষমতা দৃশ্যমানতা
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility (ক্ষমতাৰ দৃশ্যমানতা)
+# Ability Visibility (ক্ষমতাৰ দৃশ্যমানতা) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 ত **Ability Visibility** নিয়ন্ত্ৰণ যোগ কৰা হৈছে, যিয়ে নিৰ্ধাৰণ কৰে যে কোন কোন 'Ability' (ক্ষমতা) ক কোন কোন স্থানত প্ৰকাশ কৰা হ'ব। ই প্রশাসকসকলক নিখুঁতভাৱে সামঞ্জস্য কৰাত সহায় কৰে যে কোন এজেণ্ট ক্ষমতা REST APIs, MCP সার্ভাৰ, WooCommerce ইন্টিগ্ৰেচন, আৰু অন্যান্য আন্তঃপৃষ্ঠত উপলব্ধ হ'ব।
 
-## Ability Visibility কি?
+## Ability Visibility কি? {#what-is-ability-visibility}
 
 Ability Visibility এটা অনুমতি প্ৰণালী (permission system) যিয়ে তলত দিয়া বিষয়সমূহ নিয়ন্ত্ৰণ কৰে:
 
@@ -18,9 +18,9 @@ Ability Visibility এটা অনুমতি প্ৰণালী (permissio
 
 প্ৰত্যেক ক্ষমতাৰ এটা দৃশ্যমানতা স্তৰ (visibility level) থাকে, যিয়ে বিভিন্ন স্থানত ইয়াৰ উপলব্ধতা নিৰ্ধাৰণ কৰে।
 
-## Visibility Levels (দৃশ্যমানতা স্তৰ)
+## Visibility Levels (দৃশ্যমানতা স্তৰ) {#visibility-levels}
 
-### Public (পাবলিক)
+### Public (পাবলিক) {#public}
 
 **Public abilities** সকলো ঠাইতে উপলব্ধ:
 
@@ -32,7 +32,7 @@ Ability Visibility এটা অনুমতি প্ৰণালী (permissio
 
 উদাহৰণ: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (অভ্যন্তরীণ)
+### Internal (অভ্যন্তরীণ) {#internal}
 
 **Internal abilities** কেৱল আপোনাৰ WordPress ইন্টিলেচনৰ ভিতৰতহে উপলব্ধ:
 
@@ -43,7 +43,7 @@ Ability Visibility এটা অনুমতি প্ৰণালী (permissio
 
 উদাহৰণ: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (পাৰ্টনাৰ)
+### Partner (পাৰ্টনাৰ) {#partner}
 
 **Partner abilities** কেৱল Whitelisted অংশীদাৰসকলৰ বাবে উপলব্ধ:
 
@@ -54,7 +54,7 @@ Ability Visibility এটা অনুমতি প্ৰণালী (permissio
 
 উদাহৰণ: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (নিষ্ক্ৰিয়)
+### Disabled (নিষ্ক্ৰিয়) {#disabled}
 
 **Disabled abilities** কোনো স্থানতে উপলব্ধ নহয়:
 
@@ -63,15 +63,15 @@ Ability Visibility এটা অনুমতি প্ৰণালী (permissio
 - Admin panels ত উপলব্ধ নহয়
 - বাতিল কৰা বা পৰীক্ষামূলক ক্ষমতাৰ বাবে ব্যৱহাৰিক
 
-## Managing Ability Visibility (ক্ষমতাৰ দৃশ্যমানতা ব্যৱস্থাপনা)
+## Managing Ability Visibility (ক্ষমতাৰ দৃশ্যমানতা ব্যৱস্থাপনা) {#managing-ability-visibility}
 
-### Accessing Ability Visibility Settings (Ability Visibility Settings লৈ যোৱা)
+### Accessing Ability Visibility Settings (Ability Visibility Settings লৈ যোৱা) {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** লৈ যাওক
 2. **Abilities** ট্ৰিখন ক্লিক কৰক
 3. আপুনি সকলো স্থাপন কৰা ক্ষমতাৰ তালিকা আৰু তেওঁলোকৰ দৃশ্যমানতা স্তৰ দেখিব।
 
-### Viewing Ability Details (Abilityৰ বিৱৰণ দেখা)
+### Viewing Ability Details (Abilityৰ বিৱৰণ দেখা) {#viewing-ability-details}
 
 কোনো ক্ষমতাৰ ওপৰত ক্লিক কৰি আপুনি তলত দিয়া তথ্যসমূহ দেখিব:
 
@@ -82,7 +82,7 @@ Ability Visibility এটা অনুমতি প্ৰণালী (permissio
 - **Last updated**: দৃশ্যমানতা শেষবাৰৰ পৰিৱৰ্তন কৰা সময়
 - **Status**: Recognized বা Unclassified
 
-### Changing Visibility Levels (দৃশ্যমানতা স্তৰ সলনি কৰা)
+### Changing Visibility Levels (দৃশ্যমানতা স্তৰ সলনি কৰা) {#changing-visibility-levels}
 
 এটা ক্ষমতাৰ দৃশ্যমানতা সলনি কৰিবলৈ:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Bulk Operations (বৃহৎ কাৰ্য্যকলাপ)
+### Bulk Operations (বৃহৎ কাৰ্য্যকলাপ) {#bulk-operations}
 
 বহু ক্ষমতাৰ বাবে দৃশ্যমানতা সলনি কৰিবলৈ:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. বৃহৎ কাৰ্য্যকলাপ ড্রপডাউনৰ পৰা এটা নতুন দৃশ্যমানতা স্তৰ বাছি লওক
 3. **Apply** ক্লিক কৰক
 
-## Partner Allow-List (অংশীদাৰ Allow-List)
+## Partner Allow-List (অংশীদাৰ Allow-List) {#partner-allow-list}
 
 **partner allow-list** নিৰ্ধাৰণ কৰে যে কোন বাহ্যিক অংশীদাৰসকলে Partner-level abilities ব্যৱহাৰ কৰিব পাৰিব।
 
-### Adding Partners (অংশীদাৰ যোগ কৰা)
+### Adding Partners (অংশীদাৰ যোগ কৰা) {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** → **Partners** লৈ যাওক
 2. **Add Partner** ক্লিক কৰক
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. ঐচ্ছিকভাৱে এটা অংশীদাৰৰ নাম আৰু বৰ্ণনা যোগ কৰক
 5. **Save** ক্লিক কৰক
 
-### Assigning Abilities to Partners (অংশীদাৰসকলক ক্ষমতা নিৰ্যাস কৰা)
+### Assigning Abilities to Partners (অংশীদাৰসকলক ক্ষমতা নিৰ্যাস কৰা) {#assigning-abilities-to-partners}
 
 এটা অংশীদাৰ যোগ কৰাৰ পিছত:
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 4. "Partner allow-list" অংশত, যি অংশীদাৰসকলে প্ৰৱেশ কৰিব লাগে, তাৰ বাবে বক্সবোৰ টিক কৰক
 5. **Save** ক্লিক কৰক
 
-### Revoking Partner Access (অংশীদাৰৰ প্ৰৱেশ বাতিল কৰা)
+### Revoking Partner Access (অংশীদাৰৰ প্ৰৱেশ বাতিল কৰা) {#revoking-partner-access}
 
 এটা অংশীদাৰৰ প্ৰৱেশ বাতিল কৰিবলৈ:
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 অংশীদাৰে তৎক্ষণাত সেই ক্ষমতাটোৰ প্ৰৱেশ হেৰুৱাই পেলাব।
 
-## Unclassified Abilities (অসংৰক্ষিত ক্ষমতা)
+## Unclassified Abilities (অসংৰক্ষিত ক্ষমতা) {#unclassified-abilities}
 
 যেতিয়া আপুনি এটা তৃতীয় পক্ষৰ ক্ষমতা স্থাপন কৰে যাক Superdav AI Agent চিনাক্ত কৰিব নোৱारे, তেতিয়া ইয়াক **Unclassified** বুলি চিহ্নিত কৰা হয়।
 
-### Admin Notice for Unclassified Abilities (Unclassified Abilitiesৰ বাবে Admin Notice)
+### Admin Notice for Unclassified Abilities (Unclassified Abilitiesৰ বাবে Admin Notice) {#admin-notice-for-unclassified-abilities}
 
 আপুনি এটা Admin notice দেখিব:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Reviewing Unclassified Abilities (Unclassified Abilities পৰীক্ষা কৰা)
+### Reviewing Unclassified Abilities (Unclassified Abilities পৰীক্ষা কৰা) {#reviewing-unclassified-abilities}
 
 1. Notice ত **Review Abilities** ক্লিক কৰক
 2. প্ৰতিটো Unclassified abilityৰ বাবে, আপুনি দেখিব:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. আপোনাৰ সিদ্ধান্ত সেভ কৰিবলৈ **Classify** ক্লিক কৰক
 
-### Why Classify Unclassified Abilities? (Unclassified Abilities কিয় সংৰক্ষিত কৰিব লাগে?)
+### Why Classify Unclassified Abilities? (Unclassified Abilities কিয় সংৰক্ষিত কৰিব লাগে?) {#why-classify-unclassified-abilities}
 
 ক্ষমতা সংৰক্ষিত কৰাৰ সুবিধা:
 
@@ -187,9 +187,9 @@ Please review and classify them.
 - **সুবিধাসমূহ সক্ষম কৰে**: সংৰক্ষিত হোৱাৰ পিছত, ক্ষমতাটো উপলব্ধ হয়
 - **সিদ্ধান্তসমূহ নথিভুক্ত কৰে**: আপোনাৰ পছন্দসমূহ অডিটৰ বাবে লগ কৰা হয়
 
-## Visibility in Different Surfaces (বিভিন্ন স্থানত দৃশ্যমানতা)
+## Visibility in Different Surfaces (বিভিন্ন স্থানত দৃশ্যমানতা) {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Public abilities** REST endpointsৰ দ্বাৰা উপলব্ধ:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Internal and Partner abilities** REST APIৰ দ্বাৰা উপলব্ধ নহয়।
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Public abilities** MCPৰ দ্বাৰা উপলব্ধ:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partner abilities** কেৱল অংশীদাৰ শ্ৰেষ্ঠনৰ সৈতে উপলব্ধ।
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 WooCommerce লগত জড়িত **Public abilities** উপলব্ধ:
 
@@ -227,7 +227,7 @@ WooCommerce লগত জড়িত **Public abilities** উপলব্ধ:
 
 **Internal abilities** WooCommerce লৈ প্ৰকাশ নহয়।
 
-### Chat Interface (চ্যাট আন্তঃপৃষ্ঠ)
+### Chat Interface (চ্যাট আন্তঃপৃষ্ঠ) {#chat-interface}
 
 **সকলো ক্ষমতা** (Public, Internal, Partner) ব্যৱহাৰকাৰীৰ অনুমতিৰ ওপৰত নিৰ্ভৰ কৰি চ্যাটত উপলব্ধ:
 
@@ -235,34 +235,34 @@ WooCommerce লগত জড়িত **Public abilities** উপলব্ধ:
 - সাধাৰণ ব্যৱহাৰকাৰীসকলে কেৱল Public abilities দেখিব
 - অংশীদাৰসকলে Public + Partner abilities দেখিব (যদি whitelisted হয়)
 
-## Security Best Practices (নিৰাপত্তাৰ উত্তম অভ্যাস)
+## Security Best Practices (নিৰাপত্তাৰ উত্তম অভ্যাস) {#security-best-practices}
 
-### Principle of Least Privilege (কমতম প্ৰয়োজনীয়তাৰ নীতি)
+### Principle of Least Privilege (কমতম প্ৰয়োজনীয়তাৰ নীতি) {#principle-of-least-privilege}
 
 - ক্ষমতাটোক আটাইতকৈ সীমাবদ্ধ দৃশ্যমানতা স্তৰত সেট কৰক যিয়েও ইয়াৰ ব্যৱহাৰ কৰাত বাধা নিদিয়ে
 - সংবেদনশীল কাৰ্য্যকলাপৰ বাবে Partner visibility ব্যৱহাৰ কৰক
 - যি ক্ষমতা ব্যৱহাৰ নকৰিব, সেয়া নিষ্ক্ৰিয় কৰক
 
-### Regular Audits (নিয়মিত অডিট)
+### Regular Audits (নিয়মিত অডিট) {#regular-audits}
 
 - মাহেকীয়া ক্ষমতাৰ দৃশ্যমানতা পৰীক্ষা কৰক
 - Unclassified abilities বিচাৰক
 - ব্যৱহাৰ নকৰা অংশীদাৰসকলৰ প্ৰৱেশ বাতিল কৰক
 
-### Logging and Monitoring (লগিং আৰু নিৰীক্ষণ)
+### Logging and Monitoring (লগিং আৰু নিৰীক্ষণ) {#logging-and-monitoring}
 
 - কোন ক্ষমতাৰ সৰ্বাধিক ব্যৱহাৰ হয় তাৰ নিৰীক্ষণ কৰক
 - অংশীদাৰৰ প্ৰৱেশৰ ধৰণসমূহ অনুসৰণ কৰক
 - অস্বাভাবিক ক্ষমতা ব্যৱহাৰৰ বাবে সতর্ক কৰক
 
-### Third-Party Abilities (তৃতীয় পক্ষৰ ক্ষমতা)
+### Third-Party Abilities (তৃতীয় পক্ষৰ ক্ষমতা) {#third-party-abilities}
 
 - সক্ষম কৰাৰ আগতে তৃতীয় পক্ষৰ ক্ষমতা পৰীক্ষা কৰক
 - ইয়াক স্পষ্টকৈ সংৰক্ষিত কৰক
 - Internal বা Partner visibilityৰে আৰম্ভ কৰক
 - কেৱল পৰীক্ষা কৰাৰ পিছত Public লৈ উন্নীত কৰক
 
-## Troubleshooting (সমস্যা সমাধান)
+## Troubleshooting (সমস্যা সমাধান) {#troubleshooting}
 
 **Ability টো তালিকাখনত দেখা নাই**
 - পৰীক্ষা কৰক যে ক্ষমতাটো স্থাপন কৰা আৰু সক্ৰিয় হৈ আছে নেকি
@@ -285,7 +285,7 @@ WooCommerce লগত জড়িত **Public abilities** উপলব্ধ:
 - পৰীক্ষা কৰক যে আপোনাৰ সংৰক্ষণটো সেভ হৈছে নেকি
 - পৰীক্ষা কৰক যে ক্ষমতাটো প্ৰদান কৰা plugin টো আপডেট হৈ আছে নেকি
 
-## Migration from Legacy Mode (Legacy Modeৰ পৰা স্থানান্তৰ)
+## Migration from Legacy Mode (Legacy Modeৰ পৰা স্থানান্তৰ) {#migration-from-legacy-mode}
 
 যদি আপুনি Superdav AI Agent ৰ পুৰণি সংস্কৰণৰ পৰা উন্নীত হৈছে:
 
@@ -295,7 +295,7 @@ WooCommerce লগত জড়িত **Public abilities** উপলব্ধ:
 
 Native Abilities API ইন্টিগ্ৰেচনলৈ স্থানান্তৰৰ বিষয়ে অধিক বিৱৰণৰ বাবে **Third-Party Mode Migration** চাওক।
 
-## Next Steps (পৰৱৰ্তী পদক্ষেপ)
+## Next Steps (পৰৱৰ্তী পদক্ষেপ) {#next-steps}
 
 Ability visibility কনফিগাৰ কৰাৰ পিছত:
 

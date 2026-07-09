@@ -4,11 +4,11 @@ title: فلٽر - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# فلٽر: wu_country_get_administrative_division_name
+# فلٽر: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 ملڪ جي انتظامي ذيلي ورهاستن جو سٺو نالو موٽائي ٿو.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | جيڪڏهن اسين لفظن کي وڏن اکرن ۾ ڪريون. |
 | $current_country | `\WP_Ultimo\Country\Country` | موجوده ڪلاس جو نمونو. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.0.11
-### ذريعو
+### ذريعو {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ۾ لائن 250 تي بيان ٿيل
 
 
-## واپسي
+## واپسي {#returns}
 تبديل ڪيل ورهاست جو نالو.

@@ -3,18 +3,18 @@ title: Iyakoki na Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Khayyalwarin Kayayyakin: Scaffold da Amsa Block Themes
+# Khayyalwarin Kayayyakin: Scaffold da Amsa Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 yana baƙin gwiwar biyu na musamman wa ku wajaba su don samar da block themes na musamman da kuma ajiye su kai tsaye daga interface na tattaunawa (chat).
 
-## Bayani
+## Bayani {#overview}
 
 Kayayyakin **scaffold-block-theme** da **activate-theme** suna ba masu aikatawa (agents) damar:
 - Samar da block themes masu laushi, da suka shirya don aiki, bisa ga bayanan ku
 - Amsa themes kai tsaye a wurin ku ba tare da shiga kai ko wajaba ba
 - Samar da girmamawa na haske ta hanyar yanke shawara kan zane
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Kayyakin **scaffold-block-theme** yana samar da sabon WordPress block theme tare da tsarin theme mai cikakken bayani, wanda ya haɗa da:
 
@@ -23,7 +23,7 @@ Kayyakin **scaffold-block-theme** yana samar da sabon WordPress block theme tare
 - Styles da bambancin block na musamman da suka shafi yanayin zane
 - Metadata na theme da bayanan tallafi
 
-### Yadda Ake Gudanarwa
+### Yadda Ake Gudanarwa {#how-to-invoke}
 
 A tattaunawar ku da Superdav AI Agent, za ku iya buƙatar samar da theme:
 
@@ -38,7 +38,7 @@ Agent zai yi wa ku:
 3. Samar da duk fayilolin theme da ake bukata
 4. Shara theme don ajiya (activation)
 
-### Bayan Ayyuka Da Za a Samu
+### Bayan Ayyuka Da Za a Samu {#expected-output}
 
 Idan kayayyakin ya yi nasara, za ku gani:
 
@@ -56,11 +56,11 @@ Misali na bayani:
   Jigo: Ready to activate
 ```
 
-## Amsa Theme
+## Amsa Theme {#activate-theme}
 
 توان **activate-theme** توانايک شما را به یک قالب بلوکی جدید یا موجود که قبلاً ساختید، تغییر می‌دهد.
 
-### چگونگی فراخوانی آن
+### چگونگی فراخوانی آن {#how-to-invoke-1}
 
 بعد از اینکه یک قالب ساخته‌اید، می‌توانید بلافاصله آن را فعال کنید:
 
@@ -74,7 +74,7 @@ Misali na bayani:
 "تغییر به قالب Twentytwentyfour"
 ```
 
-### خروجی مورد انتظار
+### خروجی مورد انتظار {#expected-output-1}
 
 وقتی فعال‌سازی با موفقیت انجام شد:
 
@@ -92,7 +92,7 @@ Misali na bayani:
   نکته: برای تأیید طرح جدید، صفحه اصلی خود را بررسی کنید
 ```
 
-## گردش کار: ساخت و فعال‌سازی (Scaffold and Activate)
+## گردش کار: ساخت و فعال‌سازی (Scaffold and Activate) {#workflow-scaffold-and-activate}
 
 یک گردش کار معمول شامل هر دو قابلیت است:
 
@@ -102,7 +102,7 @@ Misali na bayani:
 ۴. **فعال‌سازی**: "قالب را اکنون فعال کن"
 ۵. **تأیید**: برای اطمینان از اینکه طرح جدید زنده است، به سایت خود مراجعه کنید
 
-## توکن‌های طراحی و سفارشی‌سازی (Design Tokens and Customization)
+## توکن‌های طراحی و سفارشی‌سازی (Design Tokens and Customization) {#design-tokens-and-customization}
 
 قالب‌های ساخته شده از توکن‌های طراحی وردپرس (از طریق `theme.json`) برای موارد زیر استفاده می‌کنند:
 
@@ -114,14 +114,14 @@ Misali na bayani:
 
 این توکن‌ها در `theme.json` متمرکز هستند، به طوری که تنظیم کل سیستم طراحی خود را از یک فایل راحت تغییر دهید.
 
-## محدودیت‌ها و نکات
+## محدودیت‌ها و نکات {#limitations-and-notes}
 
 - Themes a cikin `/wp-content/themes/` suna fara da tsari kuma dole su bi ƙa'idodin WordPress na sunan.
 - Gyara (Activation) yana buƙatar amince na wajen shafin WordPress ɗinka.
 - Kodin PHP na musamman a cikin themes yana da ƙarami; yi amfani da plugins don ayyukan rikitarwa.
 - Block themes suna aiki mafi kyau tare da WordPress 5.9 kuma fiya.
 
-## Magance Matala (Troubleshooting)
+## Magance Matala (Troubleshooting) {#troubleshooting}
 
 **Ba wata theme ta bayyana bayan an fara tsarin (scaffolding)**
 - Bincika cewa direktori na theme yana wajaba kuma yana da amince mai kyau.
@@ -138,7 +138,7 @@ Misali na bayani:
 - Ka tsaftace duk wajen caching plugins.
 - Ka bincika cewa farkon WordPress ɗinka yana tattaunawa da waɗanda kake amfani da su (tokens).
 
-## Matakan Na Gaba
+## Matakan Na Gaba {#next-steps}
 
 Bayan an gyara theme, za ka iya:
 - Amfani da **Design System Aesthetics skill** don inganta rubutu (typography), launi, da tsakanin abubuwa.

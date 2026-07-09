@@ -4,19 +4,19 @@ title: Darbība - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Darbība: wu_domain_ses_verified
+# Darbība: wu_domain_ses_verified {#action-wudomainsesverified}
 
 Tiek izsaukta, kad SES apstiprina, ka domēns ir DKIM-verificēts.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
 | $domain | `\WP_Ultimo\Models\Domain` | Domēna objekts. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.2.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L480) 480. rindā

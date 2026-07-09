@@ -3,7 +3,7 @@ title: Fazendo upgrade de um plano
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Fazendo upgrade de um plano (v2)
+# Fazendo upgrade de um plano (v2) {#upgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 
@@ -41,7 +41,7 @@ Após a finalização da compra ser concluída, o(s) novo(s) produto(s) serão a
 
 ##
 
-## Caminhos de upgrade e downgrade
+## Caminhos de upgrade e downgrade {#upgrade-and-downgrade-paths}
 
 Em cada um dos seus produtos, você terá uma aba **Upgrades e Downgrades**. A primeira opção nessa aba é um campo chamado **Grupo de planos**.
 

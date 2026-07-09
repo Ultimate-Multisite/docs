@@ -4,11 +4,11 @@ title: Aksyon - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed
+# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Gumagana pagkatapos mabigo ang pagtatangkang pag-renew ng domain.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gumagana pagkatapos mabigo ang pagtatangkang pag-renew ng domain.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadata ng renewal (domain_name, mga taon, atbp.). |
 | $error_message | `string` | Nababasa-ng-taong mensahe ng error mula sa registrar. |
 
-### Mula Noong
+### Mula Noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) sa linya 630

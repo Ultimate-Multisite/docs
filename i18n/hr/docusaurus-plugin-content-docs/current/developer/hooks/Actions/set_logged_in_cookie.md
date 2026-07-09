@@ -4,11 +4,11 @@ title: Radnja - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 Pokreće se neposredno prije postavljanja autentifikacijskog cookieja za prijavljenog korisnika.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Pokreće se neposredno prije postavljanja autentifikacijskog cookieja za prijavl
 | $scheme | `string` | Autentifikacijska shema. Zadano 'logged_in'. |
 | $token | `string` | Korisnikov token sesije koji se koristi za ovaj cookie. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) u retku 141

@@ -3,15 +3,15 @@ title: Uratibu wa Mjenzi wa Tovuti v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (iliyotolewa katika Gratis AI Agent v1.4.0) ni injini inayoweka nguvu katika uundaji wa tovuti wenye hatua nyingi. Unapomwomba agent "kuunda tovuti ya mgahawa" au "kuunda portfolio na blogu," mfumo wa kuendesha (orchestrator) hufanya kazi ya kuvunja lengo hilo kubwa kuwa **mpango** wenye muundo, unagundua plugins zinazohitajika kutimiza lengo hilo, hutekeleza kila hatua kwa mpangilio, anafuatilia maendeleo, na anajiponya kiotomatiki kutoka kwa makosa.
 
 ---
 
-## Inafanya Kazi Vipi
+## Inafanya Kazi Vipi {#how-it-works}
 
-### 1. Kuunda Mpango (Plan Generation)
+### 1. Kuunda Mpango (Plan Generation) {#1-plan-generation}
 
 Wakati agent anapopokea maelekezo ya ujenzi wa tovuti, anaitisha uwezo wa `create_site_plan` ili kutoa **mpango wa tovuti** wenye muundo wa JSON. Mpango huu unaelezea:
 
@@ -61,7 +61,7 @@ Wakati agent anapopokea maelekezo ya ujenzi wa tovuti, anaitisha uwezo wa `creat
 }
 ```
 
-### 2. Kugundua Plugins (Plugin Discovery)
+### 2. Kugundua Plugins (Plugin Discovery) {#2-plugin-discovery}
 
 Kabla ya kuanza kutekeleza, mfumo wa kuendesha unachanganua `plugin_requirements` ya mpango na kuangalia ni plugins zipi zimefunguliwa tayari. Kwa plugins ambazo hazipo, hufanya yafuatayo:
 
@@ -71,7 +71,7 @@ Kabla ya kuanza kutekeleza, mfumo wa kuendesha unachanganua `plugin_requirements
 
 Kushindikana kwa kugundua plugins si jambo la kumwacha mpango uisimame — mfumo wa kuendesha huweka hatua zilizoathirika kama `skipped` na kuendelea na sehemu zingine za mpango.
 
-### 3. Kutekeleza Mpango (Plan Execution)
+### 3. Kutekeleza Mpango (Plan Execution) {#3-plan-execution}
 
 Mfumo wa kuendesha unaitisha `execute_site_plan` kwa kutumia plan ID. Utekelezaji unaendelea awamu kwa awamu, hatua kwa hatua:
 
@@ -79,7 +79,7 @@ Mfumo wa kuendesha unaitisha `execute_site_plan` kwa kutumia plan ID. Utekelezaj
 - **Hatua za Kufanyika kwa Wakati Mmoja (Parallel steps)** — hatua ndani ya awamu moja ambazo hazina uhusiano wa kutegemeana hupelekwa kwa wakati mmoja wakati bendera ya `parallel` inapowashwa.
 - **Muda wa Hatua (Step timeout)** — kila hatua ina muda wake binafsi (kawaida: mipangilio ya `Ability Timeout`). Hatua iliyopita muda huwekwa kama `failed` na mpango unaendelea.
 
-### 4. Ufuatiliaji wa Maendeleo (Progress Tracking)
+### 4. Ufuatiliaji wa Maendeleo (Progress Tracking) {#4-progress-tracking}
 
 Itisha `get_plan_progress` wakati wowote ili kuangalia hali ya utekelezaji:
 
@@ -104,7 +104,7 @@ Watumiaji wa WP-CLI wanaweza kufuatilia maendeleo kwa kutumia:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Kujiponya Kutokana na Makosa (Error Recovery)
+### 5. Kujiponya Kutokana na Makosa (Error Recovery) {#5-error-recovery}
 
 Wakati hatua inashindikana, mfumo wa kuendesha unachanganya kwa kutafuta **hatua ya mbadala (fallback)** iliyoainishwa katika mpango:
 
@@ -115,9 +115,9 @@ Agent anaripoti kushindikana kwa makosa yote katika muhtasari wa mwisho wa mpang
 
 ---
 
-## Uwezo wa Mpango wa Tovuti (Site Plan Abilities)
+## Uwezo wa Mpango wa Tovuti (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Hutengeneza mpango wa tovuti wenye muundo kutoka kwa maelezo ya lengo kwa lugha ya kawaida.
 
@@ -134,7 +134,7 @@ Hutengeneza mpango wa tovuti wenye muundo kutoka kwa maelezo ya lengo kwa lugha 
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Inaanza kutekeleza mpango wa tovuti uliotengenezwa hapo awali.
 
@@ -150,7 +150,7 @@ Inaanza kutekeleza mpango wa tovuti uliotengenezwa hapo awali.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Inarudisha hali ya utekelezaji ya sasa ya mpango wa tovuti.
 
@@ -164,7 +164,7 @@ Inarudisha hali ya utekelezaji ya sasa ya mpango wa tovuti.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Inarekebisha kwa mikono hatua iliyoshindikana na kuendeleza utekelezaji wa mpango kutoka hatua inayofuata. Tumia hii wakati urejesho wa kiotomatiki haukuwazekana na unataka kuingilia.
 
@@ -180,7 +180,7 @@ Inarekebisha kwa mikono hatua iliyoshindikana na kuendeleza utekelezaji wa mpang
 
 ---
 
-## Kulinganisha v1 na v2
+## Kulinganisha v1 na v2 {#comparing-v1-and-v2}
 
 | Kipengele | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Inarekebisha kwa mikono hatua iliyoshindikana na kuendeleza utekelezaji wa mpang
 
 ---
 
-## Amri za WP-CLI za Mpango
+## Amri za WP-CLI za Mpango {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Inatengeneza mpango wa tovuti kutoka kwa maelezo ya lengo.
 
@@ -205,7 +205,7 @@ Inatengeneza mpango wa tovuti kutoka kwa maelezo ya lengo.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Inatekeleza mpango uliotengenezwa hapo awali.
 
@@ -213,7 +213,7 @@ Inatekeleza mpango uliotengenezwa hapo awali.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Inaonyesha maendeleo ya sasa kwa mpango unaotekelezwa au uliokamilika.
 
@@ -221,7 +221,7 @@ Inaonyesha maendeleo ya sasa kwa mpango unaotekelezwa au uliokamilika.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Inaorodhesha mifumo yote ya mipango ya tovuti (inangojea, inafanywa, na iliyokamilika).
 
@@ -229,7 +229,7 @@ Inaorodhesha mifumo yote ya mipango ya tovuti (inangojea, inafanywa, na iliyokam
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Inarejesha mpango ulioshindikana kuwa `pending` ili uweze kutekelezwa upya tangu mwanzo.
 

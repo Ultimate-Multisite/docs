@@ -3,9 +3,9 @@ title: Bibẹrẹ pẹlu Ìdàgbàsókè Àfikún
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Ìdàgbàsókè Àfikún
+# Ìdàgbàsókè Àfikún {#addon-development}
 
-## Ìtòlẹ́sẹẹsẹ Àfikún
+## Ìtòlẹ́sẹẹsẹ Àfikún {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Tẹ́ńpílẹ́ẹ̀tì Fáìlì Àfikún Àkọ́kọ́
+## Tẹ́ńpílẹ́ẹ̀tì Fáìlì Àfikún Àkọ́kọ́ {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Àpẹẹrẹ Model Àdáṣe
+## Àpẹẹrẹ Model Àdáṣe {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Ìṣepọ̀ Ojúewé Admin
+## Ìṣepọ̀ Ojúewé Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Dídán Àfikún Rẹ Wò
+## Dídán Àfikún Rẹ Wò {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## àwọn aaye ìmúgbòòrò v2.13.0
+## àwọn aaye ìmúgbòòrò v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 ṣàfikún ọ̀pọ̀ àwọn aaye ìmúgbòòrò tí ó wúlò fún àwọn àfikún tí ń ṣepọ̀ pẹ̀lú àwọn ayálégbé aláṣẹ-ara, àwọn domain ìparí rírà, tàbí ìṣe-àdáṣe DNS olùpèsè-host.
 
-### SSO àti àwọn URL ìṣàkóso site àkọ́kọ́
+### SSO àti àwọn URL ìṣàkóso site àkọ́kọ́ {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Àwọn domain ìpìlẹ̀ fọ́ọ̀mù ìparí rírà
+### Àwọn domain ìpìlẹ̀ fọ́ọ̀mù ìparí rírà {#checkout-form-base-domains}
 
 Lo `wu_checkout_form_base_domains` nígbà tí àfikún rẹ bá ń pèsè àwọn domain ìpìlẹ̀ pínpín míràn tí ó yẹ kí wọ́n hùwà bí àwọn domain **URL Site** fọ́ọ̀mù ìparí rírà dípò àwọn mappings àdáṣe fún site kọ̀ọ̀kan:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite máa ń ṣe ìṣètò deede àwọn host wọ̀nyí, ó sì máa ń fo àwọn àkọsílẹ̀ domain tí a mapped fún site kọ̀ọ̀kan ní àdáṣe fún wọn.
 
-### Ṣíṣe àkọsílẹ̀ domain ní àdáṣe
+### Ṣíṣe àkọsílẹ̀ domain ní àdáṣe {#automatic-domain-record-creation}
 
 Lo `wu_should_create_domain_record_for_site` nígbà tí àfikún rẹ bá nílò láti dènà tàbí sún ṣíṣe àkọsílẹ̀ domain ní àdáṣe síwájú fún site tuntun tí a ṣẹ̀ṣẹ̀ dá:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Àwọn ìṣepọ̀ olùpèsè-host tí ń tẹ́tí sí `wu_add_subdomain` lè dá àwọn àkọsílẹ̀ DNS ní ẹgbẹ́ olùpèsè nígbà tí a bá dá àwọn site. Bí kò bá sí ìṣepọ̀ tí a forúkọsílẹ̀ fún action yẹn, Ultimate Multisite máa fo iṣẹ́ abẹ́lẹ̀ òfo náà.
 
-## Àwọn Ìgbésẹ̀ Tó Kàn
+## Àwọn Ìgbésẹ̀ Tó Kàn {#next-steps}
 
 - Ṣàyẹ̀wò [Ìtọ́kasí Hooks](/developer/hooks) fún àwọn action àti filters tó wà
 - Ṣàyẹ̀wò [Àkótán REST API](/developer/rest-api/overview) fún ìṣepọ̀ API

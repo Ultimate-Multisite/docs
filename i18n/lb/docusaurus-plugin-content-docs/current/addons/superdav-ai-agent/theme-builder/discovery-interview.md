@@ -3,35 +3,35 @@ title: Entdeckungsinterview
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery-Interview
+# Discovery-Interview {#discovery-interview}
 
 Den **Discovery-Interview** ass den éischte Schrëtt am Designprozess vum Theme Builder. En sammelt Informatiounen iwwer Är Site, Äert Geschäft an Är Designvirléiften, fir en personaliséierten Theme ze erstellen.
 
-## Iwwersiicht
+## Iwwersiicht {#overview}
 
 Den Discovery-Interview féiert Iech duerch eng Rei vu Froen, fir Är Mark, Är Zilgrupp an Är Designziler ze verstoen. An der Versioun 1.16.0 enthält den Interview elo e **Foto-Upload-Schrëtt**, mat deem Dir visuell Inspiratioun fir Ären Design liwwere kënnt.
 
-## Interview-Schrëtt
+## Interview-Schrëtt {#interview-steps}
 
-### 1. Geschäftsinformatiounen
+### 1. Geschäftsinformatiounen {#1-business-information}
 
 - Site-Numm an Tagline
 - Geschäftstyp oder Branche
 - Haaptgeschäftsziler
 - Beschreiwung vun der Zilgrupp
 
-### 2. Designvirléiften
+### 2. Designvirléiften {#2-design-preferences}
 
 - Bevirzugt Faarfschema
 - Designstil (modern, klassesch, minimalistesch, spilleresch, asw.)
 - Inspiratiounswebsäiten oder Marken
 - Onbedéngt néideg Designelementer
 
-### 3. Foto-Upload (Nei an v1.16.0)
+### 3. Foto-Upload (Nei an v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Luet eng oder méi Fotoen erop, fir d'Designrichtung ze beaflossen:
 
-#### Akzeptéiert Formater
+#### Akzeptéiert Formater {#accepted-formats}
 
 | Format | Erweiderung | Detailer |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Luet eng oder méi Fotoen erop, fir d'Designrichtung ze beaflossen:
 | **WebP** | `.webp` | Modernt Format, méi kleng Dateigréisst |
 | **GIF** | `.gif` | Nëmme statesch Biller (keng Animatioun) |
 
-#### Dateifuerderungen
+#### Dateifuerderungen {#file-requirements}
 
 - **Maximal Dateigréisst:** 10 MB
 - **Minimal Dimensiounen:** 400 × 300 Pixel
 - **Recommandéiert Dimensiounen:** 1200 × 800 Pixel oder méi grouss
 - **Säiteverhältnis:** All Verhältnis ass akzeptabel
 
-#### Wéi Fotoen d'Designrichtung beaflossen
+#### Wéi Fotoen d'Designrichtung beaflossen {#how-photos-influence-design-direction}
 
 D'Fotoen, déi Dir eropluet, hëllefen dem Theme Builder ze verstoen:
 
@@ -57,21 +57,21 @@ D'Fotoen, déi Dir eropluet, hëllefen dem Theme Builder ze verstoen:
 - **Designelementer** — Musteren, Texturen a kompositiounell Stiler
 - **Typografie-Inspiratioun** — Schrëftstiler, déi dat visuellt Theme ergänzen
 
-### 4. Inhaltsstruktur
+### 4. Inhaltsstruktur {#4-content-structure}
 
 - Néideg Haaptsäiten (Home, Iwwer eis, Servicer, Kontakt, asw.)
 - Blog- oder Noriichtensektioun erfuerderlech
 - E-Commerce-Funktionalitéit erfuerderlech
 - Speziell Funktiounen oder Integratiounen
 
-### 5. Iwwerpréiwung a Bestätegung
+### 5. Iwwerpréiwung a Bestätegung {#5-review-and-confirmation}
 
 - Zesummefaassung vun allen uginnene Informatiounen
 - Bestätegung, ier d'Designgeneréierung ufänkt
 
-## Bescht Praktike fir Foto-Upload
+## Bescht Praktike fir Foto-Upload {#photo-upload-best-practices}
 
-### Wat eropzelueden ass
+### Wat eropzelueden ass {#what-to-upload}
 
 - **Marken-Inspiratioun** — Logoen, Faarfmusteren oder Mark-Richtlinnen
 - **Konkurrenz-Sites** — Screenshots vu Sites, déi Dir bewonnert
@@ -80,7 +80,7 @@ D'Fotoen, déi Dir eropluet, hëllefen dem Theme Builder ze verstoen:
 - **Team- oder Bürosfotoen** — fir perséinlechen oder professionelle Branding
 - **Lifestyle-Biller** — déi Är Zilgrupp representéieren
 
-### Wat ze vermeiden ass
+### Wat ze vermeiden ass {#what-to-avoid}
 
 - **Biller mat niddreger Qualitéit** — onscharf oder verpixelt Fotoen
 - **Onzougänglech Biller** — Fotoen, déi Är Mark net representéieren
@@ -88,7 +88,7 @@ D'Fotoen, déi Dir eropluet, hëllefen dem Theme Builder ze verstoen:
 - **Urheberrechtlech geschützte Materialien** — stellt sécher, datt Dir d'Rechter hutt, d'Biller ze benotzen
 - **Animéiert GIFen** — nëmme statesch Biller ginn veraarbecht
 
-### Tipps fir déi bescht Resultater
+### Tipps fir déi bescht Resultater {#tips-for-best-results}
 
 1. **Luet 2-3 Biller erop** — méi Biller bidden e bessere Kontext
 2. **Benotzt héichwäerteg Fotoen** — kloer, gutt beliichte Biller funktionéieren am beschten
@@ -96,7 +96,7 @@ D'Fotoen, déi Dir eropluet, hëllefen dem Theme Builder ze verstoen:
 4. **Gitt Kontext un** — beschreift kuerz, firwat Dir all Bild gewielt hutt
 5. **Sidd spezifesch** — wann Iech e bestëmmt Element gefält, weist drop hin
 
-## Output vun der Designrichtung
+## Output vun der Designrichtung {#design-direction-output}
 
 Nom Discovery-Interview generéiert Theme Builder:
 
@@ -106,7 +106,7 @@ Nom Discovery-Interview generéiert Theme Builder:
 - **Visuell Elementer** — Ikonen, Musteren an dekorativ Elementer
 - **Moodboard** — visuell Duerstellung vun der Designrichtung
 
-## Nächst Schrëtt
+## Nächst Schrëtt {#next-steps}
 
 Nodeems Dir den Discovery-Interview ofgeschloss hutt:
 
@@ -115,7 +115,7 @@ Nodeems Dir den Discovery-Interview ofgeschloss hutt:
 3. Fuert mam Schrëtt [Designrichtung](./design-direction.md) weider
 4. Theme Builder erstellt Äre personaliséierten Theme
 
-## Zesummenhängend Dokumentatioun
+## Zesummenhängend Dokumentatioun {#related-documentation}
 
 - [Designrichtung](./design-direction.md) — iwwerpréift a verfeinert Ären Design
 - [Hospitality-Menüen](./hospitality-menus.md) — erstellt strukturéiert Menü-Säiten

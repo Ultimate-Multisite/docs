@@ -3,15 +3,15 @@ title: 'Lesona 5: Famolavolana ny Drafitrao'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lesona 5: Famolavolana ny Drafitrao
+# Lesona 5: Famolavolana ny Drafitrao {#lesson-5-designing-your-plans}
 
 Ny ambaratongan-drafitrao dia tsy haavon’ny vidiny fotsiny -- fa taratry ny fomba fiasan’ny mpanjifa ao amin’ny sehatra kendrenao tokoa. Amin’ity lesona ity dia hamolavola ambaratongam-vokatra mifanaraka amin’ny tena ilain’ny orinasa fitness amin’ny dingana samihafa ianao.
 
-## Izay Nijanontsika
+## Izay Nijanontsika {#where-we-left-off}
 
 Efa manana môdely telo vonona ny FitSite (Studio Essential, Gym Pro, Fitness Chain). Ankehitriny dia mamorona ireo drafitra izay mamaritra izay azon’ny mpanjifa idirana sy izay aloany isika.
 
-## Fisainana araka ny Sokajin’ny Mpanjifa
+## Fisainana araka ny Sokajin’ny Mpanjifa {#thinking-in-customer-segments}
 
 Ny fahadisoana ataon’ny ankamaroan’ny olona dia ny famolavolana drafitra manodidina ny endri-javatra teknika (fitahirizana, bandwidth, isan’ny pejy). Tsy mieritreritra amin’izany fomba izany ny mpanjifa ao amin’ny sehatra kendrenao. Ny tompon’ny gym dia mieritreritra izay ilainy hampandehanana ny orinasany.
 
@@ -25,11 +25,11 @@ Ho an’ny studio fitness, misy sokajy voajanahary telo:
 
 Tokony hifanaraka amin’ireo sokajy ireo ny drafitrao, fa tsy amin’ny fonosana endri-javatra tsy misy fototra.
 
-## Famoronana ny Drafitra FitSite
+## Famoronana ny Drafitra FitSite {#creating-the-fitsite-plans}
 
 Mandehana any amin’ny **Ultimate Multisite > Vokatra > Ampio Vokatra** ho an’ny drafitra tsirairay.
 
-### Drafitra 1: FitSite Starter -- $49/volana
+### Drafitra 1: FitSite Starter -- $49/volana {#plan-1-fitsite-starter----49month}
 
 **Kendrena**: Mpanazatra irery sy studio kely
 
@@ -59,7 +59,7 @@ Mandehana any amin’ny **Ultimate Multisite > Vokatra > Ampio Vokatra** ho an�
 - Lohahevitra nofidinao: Ampandehano an-tery
 - Lohahevitra hafa rehetra: Afenina
 
-### Drafitra 2: FitSite Growth -- $99/volana
+### Drafitra 2: FitSite Growth -- $99/volana {#plan-2-fitsite-growth----99month}
 
 **Kendrena**: Gym efa miorina amin’ny toerana iray
 
@@ -85,7 +85,7 @@ Mandehana any amin’ny **Ultimate Multisite > Vokatra > Ampio Vokatra** ho an�
 - Vondron-drafitra: FitSite Plans
 - Filaharan’ny vokatra: 2
 
-### Drafitra 3: FitSite Pro -- $199/volana
+### Drafitra 3: FitSite Pro -- $199/volana {#plan-3-fitsite-pro----199month}
 
 **Kendrena**: Tambajotra fitness manana toerana maro
 
@@ -109,7 +109,7 @@ Mandehana any amin’ny **Ultimate Multisite > Vokatra > Ampio Vokatra** ho an�
 - Vondron-drafitra: FitSite Plans
 - Filaharan’ny vokatra: 3
 
-## Fametrahana ny Vondron-drafitra
+## Fametrahana ny Vondron-drafitra {#setting-up-the-plan-group}
 
 Ny vondron-drafitra dia miantoka fa afaka manavao na mampidina ao anatin’ny fianakavian-drafitra FitSite ihany ny mpanjifa. Ao amin’ny kiheba **Fanavaozana sy fampidinana** an’ny drafitra tsirairay:
 
@@ -118,7 +118,7 @@ Ny vondron-drafitra dia miantoka fa afaka manavao na mampidina ao anatin’ny fi
 
 Izany dia mamorona lalana fanavaozana mazava: Starter → Growth → Pro.
 
-## Fanampiana Order Bumps
+## Fanampiana Order Bumps {#adding-order-bumps}
 
 Ny order bumps dia vokatra fanampiny atolotra mandritra ny fandoavana. Ho an’ny FitSite, diniho ireto:
 
@@ -128,7 +128,7 @@ Ny order bumps dia vokatra fanampiny atolotra mandritra ny fandoavana. Ho an’n
 
 Amorony ho vokatra karazana **Fonosana** ao amin’ny Ultimate Multisite ireo ary ampifandraiso amin’ireo drafitra mifandraika.
 
-## Nahoana no Mety Ity Rafitra Ity
+## Nahoana no Mety Ity Rafitra Ity {#why-this-structure-works}
 
 - **Starter** manala sakana amin’ny fidirana -- vidiny ambany, tolotra tsotra, mampiditra haingana ny mpanazatra an-tserasera
 - **Growth** manampy ireo endri-javatra tena angatahin’ny gym -- famandrihana, galeria, domain manokana
@@ -136,7 +136,7 @@ Amorony ho vokatra karazana **Fonosana** ao amin’ny Ultimate Multisite ireo ar
 - **Order bumps** mamela ny mpanjifa hanamboatra araka izay ilainy nefa tsy manasarotra ny drafitra fototra
 - **Lalana fanavaozana mazava** midika fa mitombo miaraka aminao ny mpanjifa fa tsy miala
 
-## Ny Tambajotra FitSite Hatramin’izao
+## Ny Tambajotra FitSite Hatramin’izao {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Izay Namboarintsika Tamin’ity Lesona Ity
+## Izay Namboarintsika Tamin’ity Lesona Ity {#what-we-built-this-lesson}
 
 - **Ambaratongam-drafitra telo** mifanaraka amin’ny tena sokajin’ny orinasa fitness
 - **Fanidiana endri-javatra** amin’ny alalan’ny fanaraha-maso fanitarana sy môdely an’ny Ultimate Multisite

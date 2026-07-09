@@ -3,13 +3,13 @@ title: Karɓar Kuɗi
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Karɓar Kuɗi (v2)
+# Karɓar Kuɗi (v2) {#getting-paid-v2}
 
 _**MUHIMMIYAR SANARWA: Wannan maƙala tana nufin Ultimate Multisite sigar 2.x.**_
 
 Ultimate Multisite yana da ginannen tsarin membership da lissafin kuɗi. Don tsarin lissafin kuɗinmu ya yi aiki, mun haɗa mafi yawan payment gateways da ake amfani da su a e-commerce. Tsoffin payment gateways a Ultimate Multisite su ne _Stripe_ , _PayPal_ , da Biyan Kuɗi na Hannu. Haka kuma za ka iya amfani da _WooCommerce_ , _GoCardless_ da _Payfast_ don karɓar kuɗi ta hanyar shigar da add-ons ɗinsu.
 
-## Saitunan Asali
+## Saitunan Asali {#basic-settings}
 
 Za ka iya saita kowane ɗayan waɗannan payment gateways a ƙarƙashin saitunan biyan kuɗi na Ultimate Multisite. Za ka iya samun shi ta zuwa **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Wannan yana hana membership bayyana kamar yana auto-renew alhali gateway na iya 
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Inda za a sami gateways:
+## Inda za a sami gateways: {#where-to-find-the-gateways}
 
 Za ka iya saita payment gateways a shafi guda ( **Ultimate Multisite > Settings > Payments**). Kai tsaye a ƙasa da **payment gateways masu aiki** , za ka iya ganin: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ da _Manual_.
 
@@ -67,7 +67,7 @@ Ga kuma cikakken gani na saitunan payment gateways:
 
 Yanzu, idan kana son amfani da _WooCommerce_ , _GoCardless_ ko _Payfast_ a matsayin payment gateway ɗinka, za ka buƙaci **shigar da saita add-ons ɗinsu**.
 
-### Yadda ake shigar da WooCommerce add-on:
+### Yadda ake shigar da WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Mun fahimci cewa _Stripe_ da _PayPal_ ba sa samuwa a wasu ƙasashe, wanda ke iyakance ko hana masu amfani da Ultimate Multisite yin amfani da plugin ɗinmu yadda ya kamata. Don haka muka ƙirƙiri add-on don haɗa _WooCommerce,_ wanda shahararren plugin ne na e-commerce sosai. Masu haɓakawa a duniya sun ƙirƙiri add-ons don haɗa payment gateways daban-daban da shi. Mun yi amfani da wannan damar don faɗaɗa payment gateways da za ka iya amfani da su tare da tsarin lissafin kuɗi na Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Bayan kunna shi, idan har yanzu ba ka shigar kuma ka kunna plugin na WooCommerce
 
 Don karanta ƙarin bayani game da karin WooCommerce Integration, **danna nan**.
 
-### Yadda ake shigar da karin GoCardless:
+### Yadda ake shigar da karin GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Matakan shigar da karin _GoCardless_ kusan iri ɗaya ne da na karin _WooCommerce_. Da fatan ka je shafin kari kuma zaɓi karin **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Bayan an gama shigarwa, za a tura ka zuwa shafin plugins. A nan, kawai danna **K
 
 Don koyon yadda za ka fara amfani da gateway na _GoCardless_, **karanta wannan labarin**.
 
-### Yadda ake shigar da karin Payfast:
+### Yadda ake shigar da karin Payfast: {#how-to-install-the-payfast-add-on}
 
 Je zuwa shafin kari kuma zaɓi karin **Ultimate Multisite: Payfast Gateway**.
 

@@ -3,11 +3,11 @@ title: Ma agent omangidwiramo
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Omangidwira Mkati
+# Agents Omangidwira Mkati {#built-in-agents}
 
 Gratis AI Agent v1.9.0 imabwera ndi agents asanu omangidwira mkati, aliyense wokonzedweratu ndi gulu la zida lolunjika pa ntchito inayake, system prompt yosinthidwa, ndi malingaliro oyambira ogwirizana ndi ntchito zofala m’gawolo. Kusintha pakati pa agents kumasintha zomwe assistant angachite ndi mmene amayankhira — popanda kasinthidwe kalikonse kuchokera kwa inu. Superdav AI Agent v1.18.0 ikhoza kuwonjezera zida zoganizira ndandanda, zolemba za zikumbutso, zipata zovomereza, ndi zidziwitso za SMS ku mayendedwe a ntchito awa pamene ma integrations okhudzana nawo akonzedwa.
 
-## Agent Ndi Chiyani?
+## Agent Ndi Chiyani? {#what-is-an-agent}
 
 Agent aliyense ndi mbiri ya kasinthidwe yokhala ndi dzina yomwe imaphatikiza:
 
@@ -15,7 +15,7 @@ Agent aliyense ndi mbiri ya kasinthidwe yokhala ndi dzina yomwe imaphatikiza:
 - **System prompt** — malangizo omwe amakhazikitsa kalankhulidwe ka agent, zofunika kwambiri, ndi malire
 - **Malingaliro** — ma prompts olembedwa kale omwe amawonetsedwa mu chat interface kuti akuthandizeni kuyamba mwachangu
 
-## Kupeza Agent Picker
+## Kupeza Agent Picker {#accessing-the-agent-picker}
 
 1. Tsegulani panel ya **Gratis AI Agent** mu sidebar ya admin wa WordPress.
 2. Dinani **chizindikiro cha agent** pamwamba kumanzere kwa header ya chat (chizindikirocho chimasintha kuti chiwonetse agent wogwira ntchito).
@@ -24,9 +24,9 @@ Agent aliyense ndi mbiri ya kasinthidwe yokhala ndi dzina yomwe imaphatikiza:
 
 Mungathenso kusintha agents pakati pa zokambirana — system prompt ya agent watsopano imayamba kugwira ntchito kuchokera pa uthenga wotsatira.
 
-## Agents Asanu Omangidwira Mkati
+## Agents Asanu Omangidwira Mkati {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Cholinga:** Kupanga ndi kusintha zolemba, masamba, ndi mafomu olumikizirana.
 
@@ -47,7 +47,7 @@ Mungathenso kusintha agents pakati pa zokambirana — system prompt ya agent wat
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Cholinga:** Kupanga website yonse kuyambira pachilimbikitso chimodzi.
 
@@ -70,7 +70,7 @@ Mungathenso kusintha agents pakati pa zokambirana — system prompt ya agent wat
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Cholinga:** Kusintha maonekedwe — mitundu, typography, CSS, ndi block patterns.
 
@@ -87,7 +87,7 @@ Mungathenso kusintha agents pakati pa zokambirana — system prompt ya agent wat
 - *Tengani screenshot ya homepage ndipo mundiuze zomwe mungasinthe.*
 - *Pangani reusable hero block pattern yokhala ndi chithunzi cha background chodzaza m’lifupi lonse ndi heading yapakati.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Cholinga:** Kupeza, kuyika, ndi kuyang’anira ma plugins a WordPress.
 
@@ -105,7 +105,7 @@ Mungathenso kusintha agents pakati pa zokambirana — system prompt ya agent wat
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Cholinga:** Kuyankha mafunso okhudza zomwe zili pa site, makonda, ndi kasinthidwe ka WordPress.
 
@@ -124,7 +124,7 @@ Mungathenso kusintha agents pakati pa zokambirana — system prompt ya agent wat
 
 ---
 
-## Kuphatikiza kwa Superdav Automation
+## Kuphatikiza kwa Superdav Automation {#superdav-automation-integrations}
 
 Pamene kuphatikiza kwa Superdav AI Agent v1.18.0 kwakonzedwa, othandizira omangidwamo angathe kutenga nawo mbali mu njira za automation zotetezeka kwambiri zomwe zimadziwa ndandanda:
 
@@ -138,11 +138,11 @@ Njira yolimbikitsidwa: pemphani wothandizira kukonzekera uthenga kapena chochita
 
 ---
 
-## Kusintha Othandizira
+## Kusintha Othandizira {#customising-agents}
 
 Wothandizira aliyense womangidwamo angakulitsidwe kapena kusinthidwa kudzera mu filter ya `gratis_ai_agent_agents`.
 
-### Kuwonjezera system prompt yapadera kwa wothandizira amene alipo
+### Kuwonjezera system prompt yapadera kwa wothandizira amene alipo {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Kulembetsa wothandizira watsopano
+### Kulembetsa wothandizira watsopano {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Wothandizira watsopanoyo amawoneka mu Agent Picker nthawi yomweyo filter ikangoyenda.
 
-### Kuchotsa wothandizira womangidwamo
+### Kuchotsa wothandizira womangidwamo {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

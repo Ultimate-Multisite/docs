@@ -3,15 +3,15 @@ title: Creu Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Cynhyrchu Logo SVG
+# Cynhyrchu Logo SVG {#generate-logo-svg}
 
 Mae gallu **Generate Logo SVG** yn caniatáu i Theme Builder greu ac ymgorffori SVGau logo personol yn uniongyrchol yn eich safle WordPress gyda glanweithdra awtomatig sy’n ddiogel o ran namespace.
 
-## Trosolwg
+## Trosolwg {#overview}
 
 Mae’r gallu hwn yn cynhyrchu logos graffeg fector graddadwy (SVG) yn seiliedig ar gyfeiriad brandio a dewisiadau dylunio eich safle. Mae’r SVGau a gynhyrchir yn cael eu glanweithio’n awtomatig i sicrhau eu bod yn ddiogel i’w defnyddio yn WordPress gan gynnal cyfanrwydd gweledol.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Paramedr | Math | Gofynnol | Disgrifiad |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Mae’r gallu hwn yn cynhyrchu logos graffeg fector graddadwy (SVG) yn seiliedig
 | `height` | number | Na | Uchder SVG mewn picseli (diofyn: 200) |
 | `include_text` | boolean | Na | A ddylid cynnwys enw’r safle fel testun yn y logo (diofyn: true) |
 
-## Fformat Allbwn
+## Fformat Allbwn {#output-format}
 
 Mae’r gallu yn dychwelyd llinyn SVG gyda’r strwythur canlynol:
 
@@ -36,7 +36,7 @@ Mae’r gallu yn dychwelyd llinyn SVG gyda’r strwythur canlynol:
 }
 ```
 
-## Ymddygiad Glanweithdra SVG
+## Ymddygiad Glanweithdra SVG {#svg-sanitisation-behaviour}
 
 Mae’r SVGau a gynhyrchir yn mynd trwy lanweithdra awtomatig sy’n ddiogel o ran namespace er mwyn:
 
@@ -48,7 +48,7 @@ Mae’r SVGau a gynhyrchir yn mynd trwy lanweithdra awtomatig sy’n ddiogel o r
 
 Mae hyn yn sicrhau bod yr SVG yn ddiogel i’w ymgorffori’n uniongyrchol yn WordPress heb fod angen glanweithdra ychwanegol.
 
-## Enghraifft Defnydd
+## Enghraifft Defnydd {#usage-example}
 
 **Anogiad:**
 ```
@@ -62,7 +62,7 @@ Mae’r gallu yn creu logo SVG sy’n:
 - Dilyn egwyddorion dylunio modern
 - Wedi’i lanweithio’n awtomatig ac yn barod i’w ddefnyddio
 
-## Integreiddio â Theme Builder
+## Integreiddio â Theme Builder {#integration-with-theme-builder}
 
 Wrth ddefnyddio dewis cyfeiriad dylunio Theme Builder, mae gallu Generate Logo SVG yn:
 
@@ -71,21 +71,21 @@ Wrth ddefnyddio dewis cyfeiriad dylunio Theme Builder, mae gallu Generate Logo S
 3. Ymgorffori’r logo yn awtomatig yn ardal pennyn/brandio eich safle
 4. Storio’r SVG fel logo personol yng nghyfryngau WordPress
 
-## Arferion Gorau
+## Arferion Gorau {#best-practices}
 
 - **Darparu dewisiadau arddull clir** — disgrifiwch yr arddull dylunio rydych ei heisiau (modern, classic, playful, ac ati)
 - **Pennu lliwiau** — cynnwys lliwiau eich brand er mwyn cysondeb
 - **Profi rendro** — gwirio bod y logo yn ymddangos yn gywir ar draws gwahanol feintiau sgrin
 - **Addasu ymhellach** — defnyddio offer addasu logo WordPress i addasu maint a lleoliad
 
-## Cyfyngiadau
+## Cyfyngiadau {#limitations}
 
 - Cynhyrchir logos SVG fel graffeg statig (nid animeiddiedig)
 - Gall logos cymhleth â llawer o elfennau fod angen mireinio â llaw
 - Nid yw ffontiau personol yn cael eu cefnogi; mae testun yn defnyddio ffontiau system
 - Gall dimensiynau mawr iawn neu fach iawn effeithio ar ansawdd
 
-## Galluoedd Cysylltiedig
+## Galluoedd Cysylltiedig {#related-abilities}
 
 - [Dilysu Cyferbyniad Palet](./validate-palette-contrast.md) — gwirio cyferbyniad lliw ar gyfer hygyrchedd
 - [Creu Dewislen](./create-menu.md) — creu dewislenni llywio ar gyfer eich safle

@@ -3,28 +3,28 @@ title: REST API અવલોકન
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API સંદર્ભ
+# REST API સંદર્ભ {#rest-api-reference}
 
-## આધારભૂત રૂપરેખાંકન
+## આધારભૂત રૂપરેખાંકન {#base-configuration}
 
 **આધાર URL:** `{site_url}/wp-json/wu/v2/`
 **પ્રમાણીકરણ:** API Key અને Secret (HTTP Basic Auth અથવા URL પરિમાણો)
 
-## પ્રમાણીકરણ
+## પ્રમાણીકરણ {#authentication}
 
-### API સક્ષમ કરો
+### API સક્ષમ કરો {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ઓળખપત્રો મેળવો
+### API ઓળખપત્રો મેળવો {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### પ્રમાણીકરણ પદ્ધતિઓ
+### પ્રમાણીકરણ પદ્ધતિઓ {#authentication-methods}
 
 **HTTP Basic Auth (ભલામણ કરેલ):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## મુખ્ય અંતબિંદુઓ
+## મુખ્ય અંતબિંદુઓ {#core-endpoints}
 
-### 1. ગ્રાહકો API
+### 1. ગ્રાહકો API {#1-customers-api}
 
 **આધાર રૂટ:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. સાઇટ્સ API
+### 2. સાઇટ્સ API {#2-sites-api}
 
 **આધાર રૂટ:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. સભ્યપદો API
+### 3. સભ્યપદો API {#3-memberships-api}
 
 **આધાર રૂટ:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. ઉત્પાદનો API
+### 4. ઉત્પાદનો API {#4-products-api}
 
 **આધાર રૂટ:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. ચુકવણીઓ API
+### 5. ચુકવણીઓ API {#5-payments-api}
 
 **આધાર રૂટ:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ડોમેન્સ API
+### 6. ડોમેન્સ API {#6-domains-api}
 
 **આધાર રૂટ:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## નોંધણી અંતબિંદુ
+## નોંધણી અંતબિંદુ {#registration-endpoint}
 
 `/register` અંતબિંદુ સંપૂર્ણ checkout/નોંધણી પ્રવાહ પ્રદાન કરે છે:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## સ્વતંત્ર ટેનન્ટ અંતબિંદુઓ
+## સ્વતંત્ર ટેનન્ટ અંતબિંદુઓ {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 એવા એકીકરણો માટે સ્વતંત્ર ટેનન્ટ REST આવરણ ઉમેરે છે જે અલગ કરાયેલા ટેનન્ટ્સની જોગવાઈ, તપાસ અથવા ચકાસણી કરે છે.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` ને પ્રી-લૉન્ચ અવરોધક તરીકે ગણો. ચકાસણી વિગતો તપાસો, ડેટાબેઝ હોસ્ટ બાઇન્ડિંગ, કતાર, વપરાશકર્તા જોગવાઈ અથવા રૂટિંગ સમસ્યા ઠીક કરો, પછી ફરીથી ચકાસણીનો પ્રયાસ કરો.
 
-## ભૂલ પ્રતિસાદો
+## ભૂલ પ્રતિસાદો {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## પેજિનેશન અને ફિલ્ટરિંગ
+## પેજિનેશન અને ફિલ્ટરિંગ {#pagination-and-filtering}
 
 **ક્વેરી પરિમાણો:**
 ```http

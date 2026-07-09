@@ -4,11 +4,11 @@ title: 필터 - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# 필터: wu_country_get_cities
+# 필터: wu_country_get_cities {#filter-wucountrygetcities}
 
 상태의 도시 목록을 반환합니다.
 
-## 매개변수
+## 매개변수 {#parameters}
 
 | 이름 | 유형 | 설명 |
 |------|------|------|
@@ -17,14 +17,14 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | 주의 두 글자 ISO 코드. |
 | $current_country | `\WP_Ultimo\Country\Country` | 현재 클래스 인스턴스. |
 
-### 버전
+### 버전 {#since}
 
 - 2.0.11
 
-### 소스
+### 소스 {#source}
 
 다음에서 정의됨: [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) 146번째 줄
 
-## 반환값
+## 반환값 {#returns}
 
 필터링된 주 목록.

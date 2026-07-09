@@ -3,17 +3,17 @@ title: 'Lekcija 12: Vođenje poslovanja'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lekcija 12: Vođenje poslovanja
+# Lekcija 12: Vođenje poslovanja {#lesson-12-running-the-business}
 
 Platforma nije projekt koji završite -- to je poslovanje koje vodite. Ova lekcija pokriva svakodnevne operacije upravljanja FitSiteom: podršku, naplatu, održavanje i održavanje zadovoljstva korisnika.
 
-## Gdje smo stali
+## Gdje smo stali {#where-we-left-off}
 
 FitSite je aktivan i korisnici se prijavljuju. Sada trebate održivo voditi operaciju.
 
-## Svakodnevne operacije
+## Svakodnevne operacije {#daily-operations}
 
-### Praćenje
+### Praćenje {#monitoring}
 
 Provjeravajte ovo svakodnevno (ili postavite upozorenja):
 
@@ -22,7 +22,7 @@ Provjeravajte ovo svakodnevno (ili postavite upozorenja):
 - **Neuspjele uplate**: Postoje li neuspjele uplate koje zahtijevaju pozornost?
 - **Zahtjevi za podršku**: Ima li neodgovorenih pitanja korisnika?
 
-### Korisnička podrška
+### Korisnička podrška {#customer-support}
 
 Vaš fokus na nišu ovdje je prednost. Budući da su svi vaši korisnici fitness studiji, ista ćete pitanja viđati iznova:
 
@@ -36,7 +36,7 @@ Vaš fokus na nišu ovdje je prednost. Budući da su svi vaši korisnici fitness
 
 Izgradite svoju bazu znanja (započetu u Lekciji 8) oko ovih ponavljajućih pitanja. Svaki tiket podrške koji je mogao biti članak u bazi znanja signal je da napišete taj članak.
 
-### Razine podrške
+### Razine podrške {#support-tiers}
 
 Kako rastete, strukturirajte podršku prema planu:
 
@@ -48,9 +48,9 @@ Kako rastete, strukturirajte podršku prema planu:
 
 [Support Tickets addon](/addons/support-tickets) može pomoći u upravljanju zahtjevima za podršku unutar platforme.
 
-## Operacije naplate
+## Operacije naplate {#billing-operations}
 
-### Ponavljajuće uplate
+### Ponavljajuće uplate {#recurring-payments}
 
 Ultimate Multisite automatski obrađuje ponavljajuću naplatu putem vašeg payment gatewaya. Vaš je posao pratiti:
 
@@ -58,7 +58,7 @@ Ultimate Multisite automatski obrađuje ponavljajuću naplatu putem vašeg payme
 - **Dunning**: Postavite automatiziranu logiku ponovnih pokušaja putem svog payment gatewaya (Stripe to dobro obrađuje)
 - **Zahtjevi za otkazivanje**: Razumite zašto korisnici odlaze. Svako otkazivanje je povratna informacija.
 
-### Upravljanje članstvima
+### Upravljanje članstvima {#managing-memberships}
 
 Idite na **Ultimate Multisite > Memberships** kako biste:
 
@@ -69,13 +69,13 @@ Idite na **Ultimate Multisite > Memberships** kako biste:
 
 Pogledajte [Upravljanje članstvima](/user-guide/administration/managing-memberships) za potpunu referencu.
 
-### Fakturiranje
+### Fakturiranje {#invoicing}
 
 Osigurajte da se računi ispravno generiraju za svaku uplatu. Korisnicima će možda trebati računi za prijavu poslovnih troškova. Pogledajte [Upravljanje uplatama i računima](/user-guide/administration/managing-payments-and-invoices).
 
-## Održavanje platforme
+## Održavanje platforme {#platform-maintenance}
 
-### WordPress i ažuriranja plugina
+### WordPress i ažuriranja plugina {#wordpress-and-plugin-updates}
 
 Kao mrežni administrator odgovorni ste za:
 
@@ -88,14 +88,14 @@ Kao mrežni administrator odgovorni ste za:
 Pokvareno ažuriranje utječe na svaku korisničku stranicu na vašoj mreži. Uvijek prvo testirajte ažuriranja na staging kopiji svoje mreže.
 :::
 
-### Sigurnost
+### Sigurnost {#security}
 
 - Održavajte sav softver ažurnim
 - Koristite snažne lozinke i dvofaktorsku autentifikaciju za administratorske račune
 - Pratite sumnjive aktivnosti
 - Imajte plan za sigurnosne incidente
 
-### Performanse
+### Performanse {#performance}
 
 Kako vaša mreža raste, pratite:
 
@@ -105,9 +105,9 @@ Kako vaša mreža raste, pratite:
 
 Razmotrite implementaciju cacheiranja (page cache, object cache) i CDN-a ako to već niste učinili. [Cloudflare integracija](/user-guide/host-integrations/cloudflare) obrađuje velik dio toga.
 
-## Upravljanje životnim ciklusom korisnika
+## Upravljanje životnim ciklusom korisnika {#customer-lifecycle-management}
 
-### Smanjenje odljeva
+### Smanjenje odljeva {#reducing-churn}
 
 Odljev je postotak korisnika koji otkažu svaki mjesec. Za pretplatničko poslovanje smanjenje odljeva jednako je važno kao i stjecanje novih korisnika.
 
@@ -119,7 +119,7 @@ Odljev je postotak korisnika koji otkažu svaki mjesec. Za pretplatničko poslov
 - Pronašli su jeftiniju alternativu → osnažite svoju nišnu vrijednost
 - Njihovo se poslovanje zatvorilo → neizbježno, ali pratite to zasebno
 
-### Poticanje nadogradnji
+### Poticanje nadogradnji {#encouraging-upgrades}
 
 Korisnike na Starteru koji uspijevaju treba potaknuti na nadogradnju:
 
@@ -127,7 +127,7 @@ Korisnike na Starteru koji uspijevaju treba potaknuti na nadogradnju:
 - Pošaljite ciljane emailove koji ističu značajke Growth plana od kojih bi imali koristi
 - Prikažite što su Growth/Pro korisnici izgradili
 
-### Kampanje za povratak korisnika
+### Kampanje za povratak korisnika {#win-back-campaigns}
 
 Kada korisnik otkaže:
 
@@ -135,30 +135,30 @@ Kada korisnik otkaže:
 2. Ako je moguće, riješite njihovu zabrinutost
 3. Ponudite popust za povratak (30-60 dana nakon otkazivanja)
 
-## Tjedne i mjesečne rutine
+## Tjedne i mjesečne rutine {#weekly-and-monthly-routines}
 
-### Tjedno
+### Tjedno {#weekly}
 
 - Pregledajte nove prijave i otkazivanja
 - Odgovorite na sve otvorene tikete podrške
 - Provjerite performanse platforme i uptime
 - Pregledajte sve neuspjele uplate
 
-### Mjesečno
+### Mjesečno {#monthly}
 
 - Analizirajte ključne metrike (MRR, odljev, novi korisnici, nadogradnje)
 - Primijenite WordPress i ažuriranja plugina (nakon staging testa)
 - Pregledajte i ažurirajte bazu znanja na temelju obrazaca podrške
 - Pošaljite newsletter ili ažuriranje korisnicima (nove značajke, savjeti, vijesti iz fitness industrije)
 
-### Kvartalno
+### Kvartalno {#quarterly}
 
 - Pregledajte cijene u odnosu na konkurente i povratne informacije korisnika
 - Procijenite dizajn predložaka -- treba li ih osvježiti?
 - Procijenite kapacitet hostinga -- trebate li skalirati?
 - Pregledajte i poboljšajte onboarding na temelju podataka o aktivaciji
 
-## Što smo izgradili u ovoj lekciji
+## Što smo izgradili u ovoj lekciji {#what-we-built-this-lesson}
 
 - **Dnevne rutine praćenja** za dostupnost, registracije, plaćanja i podršku
 - **Slojevita struktura podrške** usklađena s razinama plana

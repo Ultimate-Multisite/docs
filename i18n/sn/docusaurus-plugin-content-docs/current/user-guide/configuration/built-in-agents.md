@@ -3,11 +3,11 @@ title: MaAgent akavakirwa-mukati
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Akavakirwa-mukati
+# Agents Akavakirwa-mukati {#built-in-agents}
 
 Gratis AI Agent v1.9.0 inouya neagents vashanu vakavakirwa-mukati, mumwe nemumwe akagadzirirwa kare neseti yakatariswa yezvishandiso, system prompt yakagadziridzwa, uye mazano ekutanga anoenderana nemabasa akajairika munzvimbo iyoyo. Kuchinja pakati peagents kunochinja zvinogona kuitwa nemubatsiri uye mapinduriro ainoita — pasina chero kugadzirisa kwaunofanira kuita. Superdav AI Agent v1.18.0 inogona kuwedzera zvishandiso zvinoziva schedule, marekodhi ezviyeuchidzo, magedhi emvumo, uye zviziviso zveSMS kuma workflows aya kana ma integrations ane chekuita nazvo agadziriswa.
 
-## Agent Chii?
+## Agent Chii? {#what-is-an-agent}
 
 Agent yega yega iprofile yekugadzirisa ine zita inosanganisa:
 
@@ -15,7 +15,7 @@ Agent yega yega iprofile yekugadzirisa ine zita inosanganisa:
 - **System prompt** — mirayiridzo inoisa matauriro eagent, zvinokosheswa, uye miganhu
 - **Mazano** — maprompt akanyorwa kare anoratidzwa muinterface yekutaura kuti akubatsire kutanga nekukurumidza
 
-## Kuwana Agent Picker
+## Kuwana Agent Picker {#accessing-the-agent-picker}
 
 1. Vhura pani ye **Gratis AI Agent** muWordPress admin sidebar.
 2. Dzvanya **icon yeagent** kumusoro-kuruboshwe kwechat header (icon inochinja kuratidza agent iri kushanda).
@@ -24,9 +24,9 @@ Agent yega yega iprofile yekugadzirisa ine zita inosanganisa:
 
 Unogonawo kuchinja agents uri pakati pehurukuro — system prompt yeagent itsva inotanga kushanda kubva pameseji inotevera.
 
-## Agents Vashanu Vakavakirwa-mukati
+## Agents Vashanu Vakavakirwa-mukati {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Chinotariswa:** Kugadzira nekugadzirisa zvinyorwa, mapeji, uye mafomu ekutaurirana.
 
@@ -47,7 +47,7 @@ Unogonawo kuchinja agents uri pakati pehurukuro — system prompt yeagent itsva 
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Chinotariswa:** Kugadzira webhusaiti kubva pakutanga kusvika pakupedzisira uchishandisa prompt imwe chete.
 
@@ -70,7 +70,7 @@ Unogonawo kuchinja agents uri pakati pehurukuro — system prompt yeagent itsva 
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Chinotariswa:** Kugadzirisa zvinoonekwa — mavara, typography, CSS, uye mapatani emablock.
 
@@ -87,7 +87,7 @@ Unogonawo kuchinja agents uri pakati pehurukuro — system prompt yeagent itsva 
 - *Tora screenshot yepeji rekutanga uye undiudze zvaungavandudza.*
 - *Gadzira reusable hero block pattern ine mufananidzo webackground une full-width uye heading iri pakati.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Chinotariswa:** Kutsvaga, kuisa, uye kutarisira WordPress plugins.
 
@@ -105,7 +105,7 @@ Unogonawo kuchinja agents uri pakati pehurukuro — system prompt yeagent itsva 
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Chinotariswa:** Kupindura mibvunzo pamusoro pezvirimo zvesite, marongero, uye kugadziriswa kweWordPress.
 
@@ -124,7 +124,7 @@ Unogonawo kuchinja agents uri pakati pehurukuro — system prompt yeagent itsva 
 
 ---
 
-## Superdav Automation Integrations
+## Superdav Automation Integrations {#superdav-automation-integrations}
 
 Kana Superdav AI Agent v1.18.0 integrations dzagadziriswa, built-in agents anogona kutora chikamu mumaautomation workflows akachengeteka uye anotevera zvirongwa:
 
@@ -138,11 +138,11 @@ Workflow inokurudzirwa: kumbira agent kugadzirira meseji kana chiito, ongorora c
 
 ---
 
-## Kugadzirisa Agents
+## Kugadzirisa Agents {#customising-agents}
 
 Built-in agent yega yega inogona kuwedzerwa kana kutsiviwa kuburikidza ne `gratis_ai_agent_agents` filter.
 
-### Kuwedzera custom system prompt kune agent iripo
+### Kuwedzera custom system prompt kune agent iripo {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Kunyoresa agent itsva
+### Kunyoresa agent itsva {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Agent itsva inoonekwa muAgent Picker pakarepo mushure mekunge filter yamhanya.
 
-### Kubvisa built-in agent
+### Kubvisa built-in agent {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

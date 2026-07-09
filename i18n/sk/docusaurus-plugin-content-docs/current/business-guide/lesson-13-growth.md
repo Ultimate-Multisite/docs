@@ -3,19 +3,19 @@ title: 'Lekcia 13: Škálovanie'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lekcia 13: Škálovanie
+# Lekcia 13: Škálovanie {#lesson-13-scaling-up}
 
 Máte funkčnú platformu s platiacimi zákazníkmi. Táto lekcia sa venuje tomu, ako vyrásť z malej prevádzky na udržateľný biznis -- škálovanie infraštruktúry, automatizácia prevádzky a zvyšovanie príjmu na zákazníka.
 
-## Kde sme skončili
+## Kde sme skončili {#where-we-left-off}
 
 FitSite je spustený, zákazníci sa registrujú a vy zabezpečujete každodennú prevádzku. Teraz sa zameriame na rast.
 
-## Poznajte svoje čísla
+## Poznajte svoje čísla {#know-your-numbers}
 
 Pred škálovaním pochopte, kde sa nachádzate:
 
-### Kľúčové metriky
+### Kľúčové metriky {#key-metrics}
 
 - **MRR (mesačný opakovaný príjem)**: Celkový mesačný príjem z predplatného
 - **Počet zákazníkov**: Celkový počet aktívnych predplatiteľov
@@ -24,7 +24,7 @@ Pred škálovaním pochopte, kde sa nachádzate:
 - **LTV (celoživotná hodnota)**: Priemerný príjem na zákazníka počas celého jeho predplatného
 - **CAC (náklady na získanie zákazníka)**: Priemerné náklady na získanie jedného zákazníka
 
-### Príklad: FitSite pri 50 zákazníkoch
+### Príklad: FitSite pri 50 zákazníkoch {#example-fitsite-at-50-customers}
 
 | Metrika | Hodnota |
 |--------|-------|
@@ -36,9 +36,9 @@ Pred škálovaním pochopte, kde sa nachádzate:
 
 Tieto čísla vám povedia, na čo sa zamerať. Vysoký odchod? Zlepšite udržanie zákazníkov. Nízke ARPU? Podporujte upgrady. Vysoké CAC? Optimalizujte akvizičné kanály.
 
-## Škálovanie infraštruktúry
+## Škálovanie infraštruktúry {#scaling-infrastructure}
 
-### Kedy škálovať
+### Kedy škálovať {#when-to-scale}
 
 Škálujte hosting, keď:
 
@@ -47,7 +47,7 @@ Tieto čísla vám povedia, na čo sa zamerať. Vysoký odchod? Zlepšite udrža
 - Blížite sa k 100+ aktívnym webom
 - Pribúdajú sťažnosti zákazníkov na rýchlosť
 
-### Ako škálovať
+### Ako škálovať {#how-to-scale}
 
 - **Vertikálne škálovanie**: Upgrade na väčší server (viac CPU, RAM)
 - **Vrstvy cache**: Pridajte Redis/Memcached pre cache objektov, cache stránok pre statický obsah
@@ -55,7 +55,7 @@ Tieto čísla vám povedia, na čo sa zamerať. Vysoký odchod? Zlepšite udrža
 - **Optimalizácia databázy**: Ako sieť rastie, databázové dotazy sa spomaľujú. Optimalizujte tabuľky, pridajte indexy, zvážte dedikovaný databázový server.
 - **Oddelenie oblastí**: Presuňte ukladanie médií do objektového úložiska (kompatibilného so S3), presuňte e-maily na službu transakčných e-mailov
 
-### Migrácia hostingu
+### Migrácia hostingu {#hosting-migration}
 
 Ak váš aktuálny hostiteľ už nedokáže ďalej škálovať, naplánujte migráciu:
 
@@ -65,11 +65,11 @@ Ak váš aktuálny hostiteľ už nedokáže ďalej škálovať, naplánujte migr
 4. Vopred aktualizujte DNS s minimálnym TTL
 5. Overte, že po migrácii všetko funguje
 
-## Automatizácia prevádzky
+## Automatizácia prevádzky {#automating-operations}
 
 Ako rastiete, manuálne procesy sa stávajú úzkymi hrdlami. Automatizujte, čo sa dá:
 
-### Webhooky a Zapier
+### Webhooky a Zapier {#webhooks-and-zapier}
 
 Použite [Webhooky](/user-guide/integrations/webhooks) alebo [Zapier](/user-guide/integrations/zapier) na automatizáciu:
 
@@ -78,7 +78,7 @@ Použite [Webhooky](/user-guide/integrations/webhooks) alebo [Zapier](/user-guid
 - **Zlyhania platieb** → upozornenie vo vašom monitorovacom nástroji
 - **Upgrady plánov** → gratulačný e-mail so sprievodcom novými funkciami
 
-### Automatizácia e-mailov
+### Automatizácia e-mailov {#email-automation}
 
 Prejdite z manuálnych e-mailov na automatizované sekvencie:
 
@@ -87,30 +87,30 @@ Prejdite z manuálnych e-mailov na automatizované sekvencie:
 - Výzvy na upgrade, keď sa zákazníci blížia k limitom plánu
 - Pripomienky obnovy pre ročných predplatiteľov
 
-### Automatizácia podpory
+### Automatizácia podpory {#support-automation}
 
 - **Pripravené odpovede** na bežné otázky
 - **Automatické odpovede** potvrdzujúce prijatie ticketov podpory
 - **Návrhy z databázy znalostí**, keď zákazníci odosielajú tickety zodpovedajúce existujúcim článkom
 
-## Zvyšovanie príjmov
+## Zvyšovanie príjmov {#increasing-revenue}
 
 Rast nie je len o väčšom počte zákazníkov. Je aj o vyššom príjme na zákazníka.
 
-### Upselling existujúcim zákazníkom
+### Upselling existujúcim zákazníkom {#upselling-existing-customers}
 
 - **Upgrady plánov**: Cielené kampane ukazujúce funkcie Growth/Pro zákazníkom Starter
 - **Doplnkové ponuky k objednávke**: Propagujte doplnkové produkty existujúcim zákazníkom cez e-mail
 - **Prechod na ročné predplatné**: Ponúknite mesačným zákazníkom zľavu za prechod na ročné účtovanie
 
-### Nové zdroje príjmov
+### Nové zdroje príjmov {#new-revenue-streams}
 
 - **Nastavenie za zákazníka**: Účtujte prémiovú cenu za nastavenie a prispôsobenie webu zákazníka zaňho
 - **Služby vlastného dizajnu**: Ponúknite dizajn na mieru nad rámec šablóny
 - **Školiace relácie**: Platené individuálne sprievody pre zákazníkov, ktorí chcú praktickú pomoc
 - **Prémiové pluginy**: Ponúknite prémiové pluginy špecifické pre konkrétnu niku ako platené doplnky (napr. widget na rezerváciu fitness hodín)
 
-### Zvyšovanie cien
+### Zvyšovanie cien {#raising-prices}
 
 Ako vaša platforma dozrieva a pridáva hodnotu:
 
@@ -118,7 +118,7 @@ Ako vaša platforma dozrieva a pridáva hodnotu:
 - Zvýšte ceny pre nové registrácie
 - Odôvodnite zvýšenie novými funkciami a zlepšeniami
 
-## Budovanie tímu
+## Budovanie tímu {#building-a-team}
 
 V určitom momente už nemôžete robiť všetko sami. Bežné prvé pozície:
 
@@ -128,7 +128,7 @@ V určitom momente už nemôžete robiť všetko sami. Bežné prvé pozície:
 
 Nepotrebujete zamestnancov. Kontraktori a freelanceri fungujú pre platformový biznis dobre.
 
-## Míľniky rastu
+## Míľniky rastu {#growth-milestones}
 
 | Míľnik | Približné MRR | Zameranie |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Nepotrebujete zamestnancov. Kontraktori a freelanceri fungujú pre platformový 
 | 250-500 zákazníkov | $25,000-$50,000 | Budovanie tímu, nové zdroje príjmov, prémiové funkcie |
 | 500+ zákazníkov | $50,000+ | Zrelosť platformy, príbuzné niky, potenciálny exit |
 
-## Čo sme v tejto lekcii vybudovali
+## Čo sme v tejto lekcii vybudovali {#what-we-built-this-lesson}
 
 - **Rámec metrík** na pochopenie zdravia biznisu
 - **Plán škálovania infraštruktúry** pre rast z desiatok na stovky webov

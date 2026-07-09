@@ -4,19 +4,19 @@ title: Handling - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer
+# Action: wu_template_previewer {#action-wutemplatepreviewer}
 
 Kjøres når man er inne i maloppfører-konteksten.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
 | $template_previewer | `self` | Instansen av den nåværende klassen. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.4
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) på linje 86

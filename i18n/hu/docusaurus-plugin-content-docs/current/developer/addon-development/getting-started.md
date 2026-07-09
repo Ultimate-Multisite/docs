@@ -3,9 +3,9 @@ title: Első lépések a bővítményfejlesztésben
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Kiegészítő fejlesztés
+# Kiegészítő fejlesztés {#addon-development}
 
-## Kiegészítő szerkezet
+## Kiegészítő szerkezet {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Sablonfájlok
 ```
 
-## Fő kiegészítőfájl sablonja
+## Fő kiegészítőfájl sablonja {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Egyéni modell példa
+## Egyéni modell példa {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin oldal integráció
+## Admin oldal integráció {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Az addon tesztelése
+## Az addon tesztelése {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 bővítési pontok
+## v2.13.0 bővítési pontok {#v2130-extension-points}
 
 Az Ultimate Multisite v2.13.0 több bővítési pontot ad hozzá, amelyek hasznosak olyan addonokhoz, amelyek szuverén bérlőkkel, checkout domainekkel vagy tárhelyszolgáltatói DNS-automatizálással integrálódnak.
 
-### SSO és fő webhely kezelési URL-jei
+### SSO és fő webhely kezelési URL-jei {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-űrlap alapdomainek
+### Checkout-űrlap alapdomainek {#checkout-form-base-domains}
 
 Használd a `wu_checkout_form_base_domains` elemet, amikor az addonod további megosztott alapdomaineket biztosít, amelyeknek checkout-űrlap **Webhely URL** domainekként kell működniük webhelyenkénti egyedi leképezések helyett:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Az Ultimate Multisite normalizálja ezeket a hostokat, és kihagyja náluk az automatikus, webhelyenkénti leképezett domainrekordokat.
 
-### Automatikus domainrekord-létrehozás
+### Automatikus domainrekord-létrehozás {#automatic-domain-record-creation}
 
 Használd a `wu_should_create_domain_record_for_site` elemet, amikor az addonodnak el kell nyomnia vagy késleltetnie kell az automatikus domainrekord-létrehozást egy újonnan létrehozott webhely esetén:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Azok a tárhelyszolgáltatói integrációk, amelyek figyelik a `wu_add_subdomain` elemet, szolgáltatói oldali DNS-rekordokat hozhatnak létre a webhelyek létrehozásakor. Ha nincs integráció regisztrálva ehhez a művelethez, az Ultimate Multisite kihagyja az üres háttérfeladatot.
 
-## Következő lépések
+## Következő lépések {#next-steps}
 
 - Tekintsd át a [Hooks Reference](/developer/hooks) oldalt az elérhető műveletekhez és szűrőkhöz
 - Nézd meg a [REST API Overview](/developer/rest-api/overview) oldalt az API-integrációhoz

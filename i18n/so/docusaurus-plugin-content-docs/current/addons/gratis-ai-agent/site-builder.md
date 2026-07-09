@@ -3,15 +3,15 @@ title: Isku-duwidda Dhisaha Goobta v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Isku-dubaridka Site Builder v2
+# Isku-dubaridka Site Builder v2 {#site-builder-orchestration-v2}
 
 Isku-dubaridka Site Builder v2 (lagu soo bandhigay Gratis AI Agent v1.4.0) waa matoorka awood siiya abuurista website-ka ee tallaabooyin badan. Marka aad agent-ka ka codsato inuu "dhiso website makhaayad" ama "abuuro portfolio leh blog", orchestrator-ku wuxuu yoolkaas heerka sare ah u kala jebinayaa **qorshe** habaysan, wuxuu ogaadaa plugins-ka loo baahan yahay si loo fuliyo, tallaabo kasta ayuu si taxane ah u fuliyaa, horumarka ayuu la socdaa, khaladaadkana si iskiis ah ayuu uga soo kabtaa.
 
 ---
 
-## Sida Ay U Shaqeyso
+## Sida Ay U Shaqeyso {#how-it-works}
 
-### 1. Abuurista Qorshaha
+### 1. Abuurista Qorshaha {#1-plan-generation}
 
 Marka agent-ku helo tilmaam dhisidda site-ka ah, wuxuu wacaa awoodda `create_site_plan` si uu u soo saaro JSON **qorshe site**. Qorshuhu wuxuu qeexayaa:
 
@@ -61,7 +61,7 @@ Marka agent-ku helo tilmaam dhisidda site-ka ah, wuxuu wacaa awoodda `create_sit
 }
 ```
 
-### 2. Ogaanshaha Plugin-ka
+### 2. Ogaanshaha Plugin-ka {#2-plugin-discovery}
 
 Ka hor inta fulintu bilaaban, orchestrator-ku wuxuu baarayaa `plugin_requirements`-ka qorshaha wuxuuna hubinayaa plugins-ka hore u firfircoon. Plugins-ka maqan, wuxuu:
 
@@ -71,7 +71,7 @@ Ka hor inta fulintu bilaaban, orchestrator-ku wuxuu baarayaa `plugin_requirement
 
 Fashilka ogaanshaha plugin-ku ma aha mid dilaa ah — orchestrator-ku tallaabooyinka ay saameeyeen wuxuu u calaamadeeyaa `skipped` wuxuuna sii wadaa inta kale ee qorshaha.
 
-### 3. Fulinta Qorshaha
+### 3. Fulinta Qorshaha {#3-plan-execution}
 
 Orchestrator-ku wuxuu wacaa `execute_site_plan` isagoo adeegsanaya aqoonsiga qorshaha. Fulintu waxay u socotaa marxalad-marxalad, tallaabo-tallaabo:
 
@@ -79,7 +79,7 @@ Orchestrator-ku wuxuu wacaa `execute_site_plan` isagoo adeegsanaya aqoonsiga qor
 - **Tallaabooyin is-barbar socda** — tallaabooyinka isla marxaladda ku jira ee aan lahayn isku-tiirsanaan waxaa si isku mar ah loo diraa marka calanka `parallel` la dejiyo.
 - **Waqtiga-dhaafka tallaabada** — tallaabo kasta waxay leedahay waqti-dhaaf gaar ah (asal: settings-ka `Ability Timeout`). Tallaabo waqtigeedu dhammaado waxaa loo calaamadeeyaa `failed`, qorshuhuna wuu sii socdaa.
 
-### 4. La-socodka Horumarka
+### 4. La-socodka Horumarka {#4-progress-tracking}
 
 Wac `get_plan_progress` waqti kasta si aad u hubiso xaaladda fulinta:
 
@@ -104,7 +104,7 @@ Isticmaalayaasha WP-CLI waxay horumarka kula socon karaan:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Ka-soo-kabashada Khaladka
+### 5. Ka-soo-kabashada Khaladka {#5-error-recovery}
 
 Marka tallaabo fashilanto, orchestrator-ku wuxuu hubiyaa tallaabo **fallback** ah oo lagu qeexay qorshaha:
 
@@ -115,9 +115,9 @@ Agent-ku wuxuu dhammaan fashillada ku soo sheegaa soo-koobidda ugu dambaysa ee q
 
 ---
 
-## Awoodaha Qorshaha Site-ka
+## Awoodaha Qorshaha Site-ka {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Waxay ka abuurtaa qorshe site oo habaysan sharaxaad yool oo luqad dabiici ah ku qoran.
 
@@ -134,7 +134,7 @@ Waxay ka abuurtaa qorshe site oo habaysan sharaxaad yool oo luqad dabiici ah ku 
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Waxay bilaabaysaa fulinta qorshe site oo hore loo soo saaray.
 
@@ -150,7 +150,7 @@ Waxay bilaabaysaa fulinta qorshe site oo hore loo soo saaray.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Soo celiyaa xaaladda fulinta hadda ee qorshaha site.
 
@@ -164,7 +164,7 @@ Soo celiyaa xaaladda fulinta hadda ee qorshaha site.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Gacanta ayuu u xalliyaa tallaabo fashilantay wuxuuna dib uga bilaabaa fulinta qorshaha tallaabada xigta. Isticmaal tan marka soo-kabashada otomaatiga ahi aysan suurtagal ahayn oo aad rabto inaad farageliso.
 
@@ -180,7 +180,7 @@ Gacanta ayuu u xalliyaa tallaabo fashilantay wuxuuna dib uga bilaabaa fulinta qo
 
 ---
 
-## Isbarbardhigga v1 iyo v2
+## Isbarbardhigga v1 iyo v2 {#comparing-v1-and-v2}
 
 | Astaanta | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Gacanta ayuu u xalliyaa tallaabo fashilantay wuxuuna dib uga bilaabaa fulinta qo
 
 ---
 
-## Amarada Qorshaha WP-CLI
+## Amarada Qorshaha WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Waxay ka dhalisaa qorshe site sharraxaad yool.
 
@@ -205,7 +205,7 @@ Waxay ka dhalisaa qorshe site sharraxaad yool.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Waxay fulisaa qorshe hore loo sameeyay.
 
@@ -213,7 +213,7 @@ Waxay fulisaa qorshe hore loo sameeyay.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Waxay muujisaa horumarka hadda ee qorshe socda ama dhammaaday.
 
@@ -221,7 +221,7 @@ Waxay muujisaa horumarka hadda ee qorshe socda ama dhammaaday.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Waxay taxdaa dhammaan qorshayaasha site (sugaya, socda, iyo dhammaaday).
 
@@ -229,7 +229,7 @@ Waxay taxdaa dhammaan qorshayaasha site (sugaya, socda, iyo dhammaaday).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Waxay dib ugu celisaa qorshe fashilmay `pending` si dib looga fulin karo bilowga.
 

@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Whakarite i Ultimate Multisite me Zapier
+# Whakarite i Ultimate Multisite me Zapier {#integrating-ultimate-multisite-with-zapier}
 
 I roto i taroa, te whakataki, i korero mātou mō [Webhooks](webhooks.md) ā, ka taea te whakamahi i ahau ki te whai wāhi me ngā mea e hoki mai ana (3rd party applications).
 
@@ -15,7 +15,7 @@ Mā te whakamahi i **Triggers** (whakamahi) he taea ai ki te whakakihikitia i ng
 
 He tino tika ko te taea te whakamaoritia pēnei i te **Ultimate Multisite Zapier's triggers** me actions, i roto i te mea āwhina ai ngā [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## He aha te whakatō? (How to start)
+## He aha te whakatō? (How to start) {#how-to-start}
 
 I muri, whakatika i Ultimate Multisite i te list o apps o Zapier. Kei te pēke, whai i te **+** button **Create Zap** i te sidebar pō.
 
@@ -49,7 +49,7 @@ I te field URL, whakatira i te URL māori o koe, kia whai i te protocol (HTTP he
 
 Whakatira i te button **Yes, Continue** mo te whakawhanake ki te wā atu. Ko te mea katoa e pēnei ana, ka e hoki ai koe ki te account hou kua whai akorua! Whakatira i **Continue** kia whakatō i trigger hou.
 
-## He aha te whakamahi mō te whakatō Trigger hou
+## He aha te whakamahi mō te whakatō Trigger hou {#how-to-create-a-new-trigger}
 
 I te wā kua whai akorua koe, ka taea e koe te kite ngā events (au ngā mahi) e kaha ana. Kia tino pēnei te whiri i te event **payment_received** mo tēnei tutorial.
 
@@ -65,7 +65,7 @@ I tēnei wā, ka e whakamārama ai te Zap kia kaha ki te **fetch i te payload ti
 
 I whakataki i te whakamārama: I te tutorial mātou, ka **whakamārama akorua** (completed successfully) ko te whakamātautanga, ā, i whai i te whakamahi i te whakamārama o te payload example information. Ko te whakamārama oinei e hiahia ana ki te tūmanako mātou i roto i te whakawhitenga ngā mahi. He tino pai ai tēnei mō tātou i roto i te whakamaoritanga o ngā mahi. Ko te trigger (whakamārama) ko tino whakatika koe i ā te ora, ā, he hono ana ki ngā mea hou.
 
-## I te whakamahi: Ka whakawhana hou Actions
+## I te whakamahi: Ka whakawhana hou Actions {#how-to-create-actions}
 
 Ko ngā Actions (ngā mahi) e whai ana i te mōhio o ngā trigger hou kia whakatō i ngā entry hou i tō wāhi.
 
@@ -77,7 +77,7 @@ I te whakamārama hou, ka whakawhana koe i tō authentication (whakamārama), ah
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Whakawhana te Action (Setting up the Action)
+### Whakawhana te Action (Setting up the Action) {#setting-up-the-action}
 
 Ko tēnei te **whakamārama nui o te action**, ā, he tino whakaaro hou i roto i te mea. Ko te mōhio hou i whakaputa koe ko te **Item**. Ko te Item he **model o mōhio** o tō wāhi, ahakoaho ana ki **Customers (Ngā mea whai whakataki), Payments (Ngā whakamahi), Sites (Ngā wāhi), Emails**, me ngā mea hou.
 

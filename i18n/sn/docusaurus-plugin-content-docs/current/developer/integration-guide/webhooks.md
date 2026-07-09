@@ -3,11 +3,11 @@ title: Kubata Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Kugadzirisa Webhook
+# Kugadzirisa Webhook {#webhook-handling}
 
 Gadzira nzvimbo dzekugumira dzewebhook dzetsika kuti ugamuchire zviitiko kubva kumasevhisi ekunze uye uwiriranise ruzivo neUltimate Multisite.
 
-## Nzvimbo Yekugumira yeWebhook Yetsika
+## Nzvimbo Yekugumira yeWebhook Yetsika {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Zvinhu Zvekufunga nezveChengetedzo
+## Zvinhu Zvekufunga nezveChengetedzo {#security-considerations}
 
 - Gara uchisimbisa masiginecha ewebhook uchishandisa HMAC kana chakavanzika chakagovaniswa
 - Shandisa `permission_callback` panzira yako yeREST — usamboiisa ku `__return_true` mukugadzirwa

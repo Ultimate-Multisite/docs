@@ -3,13 +3,13 @@ title: Catetan Parobahan Tikét Pangrojong
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Changelog Tikét Rojongan
+# Changelog Tikét Rojongan {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Dironjatkeun: Ngahapus diréktori vendor/ tina pelacakan Git (geus kacangking ku .gitignore), ngurangan ukuran repository
 * Dironjatkeun: Diuji nepi ka WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Dilereskeun: Narima nilai null dina setter modél tikét nullable
 * Dilereskeun: Nyimpen sakabéh tikét dina tabel global sa-jaringan pikeun rojongan multisite anu bener
 * Dilereskeun: Nyumputkeun field staf jeung ngalereskeun redirect kaca kosong dina formulir tikét anyar palanggan
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Dironjatkeun: Ngamuat aset frontend sacara kondisional ngan dina kaca tikét rojongan
 * Dironjatkeun: Ngaliwatan autoloader plugin nalika autoloader root Bedrock geus ngamuat dependencies
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Ditambahkeun: Fungsionalitas ningali tikét lengkep pikeun admin jeung frontend
 * Ditambahkeun: Handler AJAX pikeun kiriman balesan tikét
 * Ditambahkeun: Rojongan pikeun fungsionalitas balesan tikét kalayan penanganan formulir anu bener
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Dironjatkeun: Struktur database kalayan query jeung kelas schema anu bener pikeun réspon jeung lampiran
 * Dironjatkeun: Migrasi ka sipat nyata tibatan atribut pikeun modél tikét
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Diropéa: Ngaganti ngaran prefix jadi ultimate-multisite pikeun konsistensi
 * Diropéa: Standarisasi domain téks
 * Dilereskeun: Perbaikan bug leutik jeung paningkatan
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Rilis awal
 * Sistem manajemén tikét lengkep
 * Kontrol aksés multi-tingkat

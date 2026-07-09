@@ -3,28 +3,28 @@ title: REST API आढावा
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API संदर्भ
+# REST API संदर्भ {#rest-api-reference}
 
-## मूलभूत कॉन्फिगरेशन
+## मूलभूत कॉन्फिगरेशन {#base-configuration}
 
 **मूलभूत URL:** `{site_url}/wp-json/wu/v2/`
 **प्रमाणीकरण:** API Key आणि Secret (HTTP Basic Auth किंवा URL पॅरामीटर्स)
 
-## प्रमाणीकरण
+## प्रमाणीकरण {#authentication}
 
-### API सक्षम करा
+### API सक्षम करा {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API क्रेडेन्शियल्स मिळवा
+### API क्रेडेन्शियल्स मिळवा {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### प्रमाणीकरण पद्धती
+### प्रमाणीकरण पद्धती {#authentication-methods}
 
 **HTTP Basic Auth (शिफारस केलेले):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## मुख्य एंडपॉइंट्स
+## मुख्य एंडपॉइंट्स {#core-endpoints}
 
-### 1. ग्राहक API
+### 1. ग्राहक API {#1-customers-api}
 
 **मूलभूत मार्ग:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. साइट्स API
+### 2. साइट्स API {#2-sites-api}
 
 **मूलभूत मार्ग:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. सदस्यत्वे API
+### 3. सदस्यत्वे API {#3-memberships-api}
 
 **मूलभूत मार्ग:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. उत्पादने API
+### 4. उत्पादने API {#4-products-api}
 
 **मूलभूत मार्ग:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. देयके API
+### 5. देयके API {#5-payments-api}
 
 **मूलभूत मार्ग:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. डोमेन्स API
+### 6. डोमेन्स API {#6-domains-api}
 
 **मूलभूत मार्ग:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## नोंदणी एंडपॉइंट
+## नोंदणी एंडपॉइंट {#registration-endpoint}
 
 `/register` एंडपॉइंट संपूर्ण checkout/नोंदणी प्रवाह पुरवतो:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## सार्वभौम भाडेकरू एंडपॉइंट्स
+## सार्वभौम भाडेकरू एंडपॉइंट्स {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 अशा इंटिग्रेशन्ससाठी सार्वभौम भाडेकरू REST कव्हरेज जोडते, जे विलग भाडेकरू प्रोव्हिजन, तपासणी किंवा पडताळणी करतात.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` ला प्री-लाँच ब्लॉकर म्हणून माना. पडताळणी तपशील तपासा, डेटाबेस होस्ट बाइंडिंग, रांग, वापरकर्ता प्रोव्हिजनिंग किंवा रूटिंग समस्या दुरुस्त करा, नंतर पुन्हा पडताळणी करा.
 
-## त्रुटी प्रतिसाद
+## त्रुटी प्रतिसाद {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## पृष्ठांकन आणि फिल्टरिंग
+## पृष्ठांकन आणि फिल्टरिंग {#pagination-and-filtering}
 
 **क्वेरी पॅरामीटर्स:**
 ```http

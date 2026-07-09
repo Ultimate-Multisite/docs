@@ -4,11 +4,11 @@ title: Ìgbésẹ̀ - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Ìṣe: wu_handle_customer_meta_fields
+# Ìṣe: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Gba àwọn olùdàgbàsókè àfikún láàyè láti fi data meta pamọ́ ní àwọn ọ̀nà míì tí wọ́n bá nílò rẹ̀.
 
-## Àwọn paramita
+## Àwọn paramita {#parameters}
 
 | Orúkọ | Iru | Àpèjúwe |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gba àwọn olùdàgbàsókè àfikún láàyè láti fi data meta pamọ́ ní 
 | $customer | `\Customer` | Ohun customer Ultimate Multisite. |
 | $checkout | `\Checkout` | Kilasi checkout. |
 
-### Láti ìgbà
+### Láti ìgbà {#since}
 
 - 2.0.0
-### Orísun
+### Orísun {#source}
 
 A ṣàlàyé rẹ̀ nínú [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) ní ìlà 1211

@@ -3,16 +3,16 @@ title: Ntọala Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Nhazi Gratis AI Agent
+# Nhazi Gratis AI Agent {#gratis-ai-agent-settings}
 
 Ihuenyo **Settings → Advanced** na Gratis AI Agent na-enye nhazi ọkwa onye nchịkwa maka njikọta backend. Peeji a na-akọwa iziga feedback n’ihu, igodo ndị na-enye ọchụchọ, nhazi ọrụ Superdav a na-elekọta, njikwa Google Calendar, nhazi TextBee SMS, na ọkọlọtọ njirimara gbasara netwọkụ niile.
 
-## Ịnweta Settings
+## Ịnweta Settings {#accessing-settings}
 
 1. Na WordPress admin, gaa na **Gratis AI Agent → Settings**.
 2. Pịa taabụ **Advanced**.
 
-## Nhazi Endpoint Feedback
+## Nhazi Endpoint Feedback {#feedback-endpoint-configuration}
 
 Endpoint feedback na-anata arịrịọ POST sitere n’aka AI agent mgbe ọ bụla onye ọrụ nyefere feedback site na bọtịnụ thumbs-down, banner auto-prompt, ma ọ bụ iwu `/report-issue`.
 
@@ -21,7 +21,7 @@ Endpoint feedback na-anata arịrịọ POST sitere n’aka AI agent mgbe ọ b�
 | **Feedback Endpoint URL** | URL nke na-anata nnyefe feedback dị ka arịrịọ HTTP POST nwere ahụ JSON. |
 | **Feedback API Key** | bearer token a na-eziga na `Authorization` header nke arịrịọ feedback ọ bụla. Hapụ ya oghere ma ọ bụrụ na endpoint gị achọghị authentication. |
 
-### Payload JSON A Na-atụ Anya
+### Payload JSON A Na-atụ Anya {#expected-json-payload}
 
 Endpoint feedback gị ga-anabata ahụ JSON nwere opekata mpe fields ndị a:
 
@@ -36,7 +36,7 @@ Endpoint feedback gị ga-anabata ahụ JSON nwere opekata mpe fields ndị a:
 
 Fields ndị ọzọ nwere ike ịdị na payload dabere na ọnọdụ mkparịta ụka.
 
-### Uru `triage_category`
+### Uru `triage_category` {#triagecategory-values}
 
 Akụkụ triage AI na-etinye otu n’ime uru ndị a na `triage_category` tupu iziga payload n’ihu:
 
@@ -47,7 +47,7 @@ Akụkụ triage AI na-etinye otu n’ime uru ndị a na `triage_category` tupu 
 | `inappropriate_content` | Nzaghachi ahụ nwere ọdịnaya ekwesịghị igosi ndị ọrụ. |
 | `other` | Feedback ahụ adabaghị na category a maara. |
 
-### Authentication
+### Authentication {#authentication}
 
 Ọ bụrụ na endpoint gị chọrọ authentication, tinye field **Feedback API Key** ka ọ bụrụ bearer token gị. Agent na-eziga:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Ọ bụrụ na field **Feedback API Key** tọgbọ chakoo, a gaghị eziga `Authorization` header.
 
-### Igbanyụọ Nchịkọta Feedback
+### Igbanyụọ Nchịkọta Feedback {#disabling-feedback-collection}
 
 Hapụ fields **Feedback Endpoint URL** na **Feedback API Key** abụọ ahụ oghere. Bọtịnụ thumbs-down na UI feedback ka na-apụta n’ihu ndị ọrụ, mana a naghị eziga nnyefe ọ bụla n’ọrụ mpụga.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Ọzọkwa na taabụ **Advanced**, field **Brave Search API Key** na-eme ka ikike [Ọchụchọ Ịntanetị](../configuration/internet-search) rụọ ọrụ.
 
@@ -73,7 +73,7 @@ Akara field ahụ gụnyere njikọ a pụrụ ịpị gaa na peeji ndebanye aha
 
 Lee [Ọchụchọ Ịntanetị](../configuration/internet-search) maka akwụkwọ nkọwa onye ọrụ ikpeazụ gbasara njirimara a.
 
-## Ọrụ Superdav A Na-elekọta
+## Ọrụ Superdav A Na-elekọta {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 na-agbakwunye endpoints ọrụ Superdav a na-elekọta na provisioning njikọ akpaaka maka saịtị ndị akwadoro. Jiri njikwa ndị a mgbe saịtị gị kwesịrị ijikọ na provider a na-host kama endpoint ọrụ e haziri aka.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 na-agbakwunye endpoints ọrụ Superdav a na-elekọt
 
 Mgbe provisioning gachara, chekwaa settings ma nyochaa ọnọdụ njikọ tupu ịdabere na usoro ọrụ managed-service. Ọ bụrụ na provisioning dara, nyochaa nduzi retry egosiri ma kwado na saịtị ahụ nwere ikike iji provider a na-host.
 
-## Nhazi Google Calendar
+## Nhazi Google Calendar {#google-calendar-configuration}
 
 Mgbe agbanyere njirimara kalenda Superdav AI Agent v1.18.0, agent nwere ike ịgụ kalenda ahaziri na nkọwa event. Ngwaọrụ kalenda bụ nke na-elekwasị anya n’ịgụ ma baa uru maka ncheta maara usoro oge, iso ndị bịara emume soro, na imekọrịta kọntaktị.
 
@@ -97,7 +97,7 @@ Mgbe agbanyere njirimara kalenda Superdav AI Agent v1.18.0, agent nwere ike ịg
 
 Debe credentials kalenda ka ha bụrụ naanị kalenda agent chọrọ. Jikọọ ọzọ ma ọ bụ gbanwee credentials ma ọ bụrụ na status na-egosi token gwụrụla.
 
-## Ịma Ọkwa TextBee SMS
+## Ịma Ọkwa TextBee SMS {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 na-agbakwunye TextBee dị ka provider SMS maka usoro ọrụ ịma ọkwa ahaziri. Ekwesịrị ijikọ ịma ọkwa SMS na ọnụ ụzọ nkwado mmadụ maka ozi ndị dị nro ma ọ bụ ndị na-eche ndị ọrụ ihu.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 na-agbakwunye TextBee dị ka provider SMS maka usoro 
 
 Ziga ozi nnwale naanị na nọmba onye nchịkwa nwe ya, mgbe ahụ kwado omume approval-gate tupu ịgbanye ncheta e zubere n’oge ma ọ bụ nke na-eche ndị bịara emume ihu.
 
-## Ọkọlọtọ Njirimara
+## Ọkọlọtọ Njirimara {#feature-flags}
 
 E webatakwara ya na v1.9.0, taabụ **Settings → Feature Flags** na-enye toggle switches maka ọrụ nhọrọ. Flag ọ bụla ma ọ bụ agbanyere ya ma ọ bụ agbanyụrụ ya n’ogo netwọkụ niile; enweghị override kwa saịtị n’oge a.
 
-### Ịnweta Feature Flags
+### Ịnweta Feature Flags {#accessing-feature-flags}
 
 1. Na WordPress admin, gaa na **Gratis AI Agent → Settings**.
 2. Pịa taabụ **Feature Flags**.
 
-### Ọkọlọtọ Njikwa Nweta
+### Ọkọlọtọ Njikwa Nweta {#access-control-flags}
 
 | Flag | Ndabere | Nkọwa |
 |---|---|---|
@@ -127,7 +127,7 @@ E webatakwara ya na v1.9.0, taabụ **Settings → Feature Flags** na-enye toggl
 | **Kwe ka Subscriber Nweta Ya** | Off | Mgbe agbanyere ya, ndị ọrụ nwere ọrụ `subscriber` nwere ike iji ihu nkata mana a na-amachi ha n'ikike ịgụ naanị (enweghị imepụta post ma ọ bụ mgbanwe ntọala). |
 | **Gbanyụọ maka Ndị Na-abụghị Members** | Off | Na-ejikọta na ọnọdụ membership Ultimate Multisite. Mgbe agbanyere ya, a na-ezo nkata maka saịtị ndị na-enweghị membership dị ire. |
 
-### Flag Akara Njirimara
+### Flag Akara Njirimara {#branding-flags}
 
 | Flag | Ndabere | Nkọwa |
 |---|---|---|
@@ -136,7 +136,7 @@ E webatakwara ya na v1.9.0, taabụ **Settings → Feature Flags** na-enye toggl
 | **Zoo Agent Picker** | Off | Mgbe agbanyere ya, ndị ọrụ enweghị ike ịgbanwe n'etiti agents ise e wuru n'ime ya. Agent dị ugbu a na-anọgide na nke a haziri dị ka ndabere na Settings → General. |
 | **Jiri Akara Saịtị dị ka Avatar Nkata** | Off | Na-eji akara saịtị WordPress (edobere n'okpuru Appearance → Customize → Site Identity) dochie akara AI ndabere na header chat widget. |
 
-### Flag Nchekwa Automation
+### Flag Nchekwa Automation {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 na-ewebata ọnụ ụzọ nkwado mmadụ na ndekọ ncheta maka ịrụ automation n'enweghị ihe egwu. Njikwa ndị a nwere ike ịpụta na feature flags ma ọ bụ ntọala automation dị elu, dabere na ngwugwu etinyere.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 na-ewebata ọnụ ụzọ nkwado mmadụ na ndekọ n
 | **Kwado Ngwaọrụ Kalenda** | Off ruo mgbe ahaziri ya | Na-ekwe ka agent gụọ kalenda Google na ihe omume ahaziri. |
 | **Kwado Ọkwa SMS** | Off ruo mgbe ahaziri ya | Na-ekwe ka workflows akwadoro zipu ọkwa TextBee SMS mgbe echekwara credentials. |
 
-### Itinye Mgbanwe
+### Itinye Mgbanwe {#applying-changes}
 
 Pịa **Chekwaa Ntọala** mgbe ịgbanwechara flag ọ bụla. Mgbanwe na-amalite ozugbo — achọghị cache flush ma ọ bụ imegharịa plugin.

@@ -3,13 +3,13 @@ title: Betaal word
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Word Betaal (v2)
+# Word Betaal (v2) {#getting-paid-v2}
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
 Ultimate Multisite het ’n ingeboude lidmaatskap- en faktureringstelsel. Vir ons faktureringstelsel om te funksioneer, het ons die mees algemene betalingspoortjies geïntegreer wat in e-handel gebruik word. Die verstek-betalingspoortjies in Ultimate Multisite is _Stripe_ , _PayPal_ , en Handmatige Betaling. Jy kan ook _WooCommerce_ , _GoCardless_ en _Payfast_ gebruik om betalings te ontvang deur hul onderskeie add-ons te installeer.
 
-## Basiese Instellings
+## Basiese Instellings {#basic-settings}
 
 Jy kan enige van hierdie betalingspoortjies onder Ultimate Multisite betalingsinstellings konfigureer. Jy kan dit vind deur na **Ultimate Multisite menu > Settings > Payments.** te gaan
 
@@ -39,7 +39,7 @@ Dit verhoed dat ’n lidmaatskap lyk asof dit outomaties hernu wanneer die poort
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Waar om die poortjies te vind:
+## Waar om die poortjies te vind: {#where-to-find-the-gateways}
 
 Jy kan die betalingspoortjies op dieselfde bladsy opstel ( **Ultimate Multisite > Settings > Payments**). Reg onder **aktiewe betalingspoortjies** , sal jy kan sien: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ en _Manual_.
 
@@ -67,7 +67,7 @@ Hier is ook ’n volledige aansig van die betalingspoortjie-instellings:
 
 Nou, as jy _WooCommerce_ , _GoCardless_ of _Payfast_ as jou betalingspoortjie wil gebruik, sal jy hul add-ons moet **installeer en konfigureer**.
 
-### Hoe om die WooCommerce add-on te installeer:
+### Hoe om die WooCommerce add-on te installeer: {#how-to-install-the-woocommerce-add-on}
 
 Ons verstaan dat _Stripe_ en _PayPal_ nie in sommige lande beskikbaar is nie, wat Ultimate Multisite-gebruikers beperk of verhinder om ons plugin doeltreffend te gebruik. Daarom het ons ’n add-on geskep om _WooCommerce,_ te integreer, wat ’n baie gewilde e-handel-plugin is. Ontwikkelaars regoor die wêreld het add-ons geskep om verskillende betalingspoortjies daarmee te integreer. Ons het hiervan gebruik gemaak om die betalingspoortjies uit te brei wat jy met die Ultimate Multisite-faktureringstelsel kan gebruik.
 
@@ -95,7 +95,7 @@ Nadat jy dit geaktiveer het, as jy steeds nie die WooCommerce-inprop op jou webw
 
 Om meer oor die WooCommerce Integration-byvoeging te lees, **klik hier**.
 
-### Hoe om die GoCardless-byvoeging te installeer:
+### Hoe om die GoCardless-byvoeging te installeer: {#how-to-install-the-gocardless-add-on}
 
 Die stappe om die _GoCardless_-byvoeging te installeer, is amper dieselfde as vir die _WooCommerce_-byvoeging. Gaan asseblief na die byvoegingsbladsy en kies die **Ultimate Multisite: GoCardless Gateway**-byvoeging.
 
@@ -111,7 +111,7 @@ Nadat die installasie klaar is, sal jy na die inproppe-bladsy herlei word. Klik 
 
 Om te leer hoe om met die _GoCardless_-poort te begin, **lees hierdie artikel**.
 
-### Hoe om die Payfast-byvoeging te installeer:
+### Hoe om die Payfast-byvoeging te installeer: {#how-to-install-the-payfast-add-on}
 
 Gaan na die byvoegingsbladsy en kies die **Ultimate Multisite: Payfast Gateway**-byvoeging.
 

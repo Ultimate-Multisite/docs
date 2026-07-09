@@ -3,7 +3,7 @@ title: Whakamārama pakihi o te file i te rā
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Pākehā Erori i te Whakaritenga o te File Sunrise
+# Pākehā Erori i te Whakaritenga o te File Sunrise {#error-installing-the-sunrise-file}
 
 He file sunrise.php he file ā-āhi ahau e whakaaroa ai WordPress i roto i te wā ia pōutu (bootstraps). Mo ka taea ai i WordPress te mōhaka i te file sunrise.php, ia mea me te hoako i te **folder wp-content**.
 

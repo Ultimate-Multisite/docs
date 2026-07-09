@@ -3,9 +3,9 @@ title: 開始進行附加元件開發
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# 附加元件開發
+# 附加元件開發 {#addon-development}
 
-## 附加元件結構
+## 附加元件結構 {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## 主要附加元件檔案範本
+## 主要附加元件檔案範本 {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## 自訂模型範例
+## 自訂模型範例 {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## 管理頁面整合
+## 管理頁面整合 {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## 測試你的 Addon
+## 測試你的 Addon {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 擴充點
+## v2.13.0 擴充點 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 新增了數個擴充點，對於整合主權租戶、結帳網域或主機供應商 DNS 自動化的 addons 很有用。
 
-### SSO 與主網站管理 URL
+### SSO 與主網站管理 URL {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### 結帳表單基礎網域
+### 結帳表單基礎網域 {#checkout-form-base-domains}
 
 當你的 addon 提供額外的共享基礎網域，且這些網域應該像結帳表單的 **Site URL** 網域一樣運作，而不是作為每個網站各自的自訂對應時，請使用 `wu_checkout_form_base_domains`：
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite 會正規化這些主機，並略過為它們自動建立每個網站的對應網域記錄。
 
-### 自動建立網域記錄
+### 自動建立網域記錄 {#automatic-domain-record-creation}
 
 當你的 addon 需要抑制或延後為新建立的網站自動建立網域記錄時，請使用 `wu_should_create_domain_record_for_site`：
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 監聽 `wu_add_subdomain` 的主機供應商整合，可在網站建立時建立供應商端的 DNS 記錄。若沒有為該動作註冊任何整合，Ultimate Multisite 會略過空的背景作業。
 
-## 後續步驟
+## 後續步驟 {#next-steps}
 
 - 查看 [Hooks 參考](/developer/hooks)，了解可用的動作與篩選器
 - 查看 [REST API 概覽](/developer/rest-api/overview)，了解 API 整合

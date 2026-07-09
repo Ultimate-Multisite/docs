@@ -4,13 +4,13 @@ title: Ficil - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Ficil: wu_checkout_order_created
+# Ficil: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 Waxay dhacdaa ka dib marka dalabka checkout si buuxda loo isku diyaariyo.
 
 Kordhisyadu tan waxay u adeegsan karaan inay abuuraan memberships labaad oo loogu talagalay alaabo leh wareegyo biil-bixin oo madax-bannaan.
 
-## Halbeegyada
+## Halbeegyada {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Kordhisyadu tan waxay u adeegsan karaan inay abuuraan memberships labaad oo loog
 | $membership | `\WP_Ultimo\Models\Membership` | Membership-ka aasaasiga ah. |
 | $payment | `\WP_Ultimo\Models\Payment` | Lacag-bixinta. |
 
-### Laga bilaabo
+### Laga bilaabo {#since}
 
 - 2.5.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) xariiqda 891

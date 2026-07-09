@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite قوشۇمچىلىرى
+# Ultimate Multisite قوشۇمچىلىرى {#ultimate-multisite-addons}
 
 قوشۇمچىلار Ultimate Multisite نى قوشۇمچە ئىقتىدارلار ۋە بىرىكتۈرۈشلەر بىلەن كېڭەيتىدۇ. كۆپىنچە قوشۇمچىلار ھەقلىق بولۇپ، [ultimatemultisite.com](https://ultimatemultisite.com) دىن سېتىۋالغىلى بولىدۇ.
 
-## ئورنىتىش
+## ئورنىتىش {#installation}
 
 قوشۇمچىلارنى ئىككى خىل ئۇسۇلدا ئورنىتىشقا بولىدۇ:
 
 1. **قوشۇمچە بېتى ئارقىلىق** -- WordPress باشقۇرۇش بېتىدە تور بېكىتىڭىزنىڭ قوشۇمچە باشقۇرۇش بېتىگە يۆتكىلىڭ
 2. **قولدا چۈشۈرۈش** -- [Accountىڭىز](https://ultimatemultisite.com/my-account/downloads/) دىن چۈشۈرۈپ، Plugins > Add New ئارقىلىق يۈكلەڭ
 
-## بار قوشۇمچىلار
+## بار قوشۇمچىلار {#available-addons}
 
 | قوشۇمچە | چۈشەندۈرۈش |
 |-------|-------------|

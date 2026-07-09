@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Breiseáin Ultimate Multisite
+# Breiseáin Ultimate Multisite {#ultimate-multisite-addons}
 
 Leathnaíonn breiseáin Ultimate Multisite le gnéithe agus comhtháthuithe breise. Tá formhór na mbreiseán íoctha agus is féidir iad a cheannach ó [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Suiteáil
+## Suiteáil {#installation}
 
 Is féidir breiseáin a shuiteáil ar dhá bhealach:
 
 1. **Trí Leathanach na mBreiseán** -- Téigh chuig leathanach bainistíochta breiseán do shuímh i riarachán WordPress
 2. **Íoslódáil Láimhe** -- Íoslódáil ó [do chuntas](https://ultimatemultisite.com/my-account/downloads/) agus uaslódáil trí Breiseáin > Cuir Nua Leis
 
-## Breiseáin atá ar Fáil
+## Breiseáin atá ar Fáil {#available-addons}
 
 | Breiseán | Cur síos |
 |-------|-------------|

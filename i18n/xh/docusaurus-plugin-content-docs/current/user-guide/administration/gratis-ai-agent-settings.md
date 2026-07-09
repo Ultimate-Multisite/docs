@@ -3,16 +3,16 @@ title: Izicwangciso ze-Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Iisetingi ze-Gratis AI Agent
+# Iisetingi ze-Gratis AI Agent {#gratis-ai-agent-settings}
 
 Isikrini se-**Iisetingi → Ezihambele phambili** kwi-Gratis AI Agent sinika ulungiselelo lwenqanaba lomlawuli kudibaniso lwangasemva. Eli phepha lichaza ukuthunyelwa kwengxelo, izitshixo zababoneleli bokukhangela, useto lwenkonzo ye-Superdav elawulwayo, ulawulo lwe-Google Calendar, iisetingi ze-TextBee SMS, kunye neeflegi zeempawu kwinethiwekhi yonke.
 
-## Ukufikelela kwiiSetingi
+## Ukufikelela kwiiSetingi {#accessing-settings}
 
 1. Kulawulo lwe-WordPress, yiya ku-**Gratis AI Agent → Iisetingi**.
 2. Cofa ithebhu ethi **Ezihambele phambili**.
 
-## Ulungiselelo lwe-Endpoint yeNgxelo
+## Ulungiselelo lwe-Endpoint yeNgxelo {#feedback-endpoint-configuration}
 
 I-endpoint yengxelo ifumana izicelo ze-POST ezivela kwi-AI agent nanini na xa umsebenzisi engenisa ingxelo ngeqhosha le-thumbs-down, ibhena ye-auto-prompt, okanye umyalelo othi `/report-issue`.
 
@@ -21,7 +21,7 @@ I-endpoint yengxelo ifumana izicelo ze-POST ezivela kwi-AI agent nanini na xa um
 | **I-URL ye-Endpoint yeNgxelo** | I-URL efumana ungeniso lwengxelo njengezicelo ze-HTTP POST ezinomzimba we-JSON. |
 | **Feedback API Key** | I-bearer token ethunyelwa kwi-`Authorization` header yesicelo ngasinye sengxelo. Yishiye ingenanto ukuba i-endpoint yakho ayifuni ukuqinisekiswa. |
 
-### Umthwalo we-JSON olindelekileyo
+### Umthwalo we-JSON olindelekileyo {#expected-json-payload}
 
 I-endpoint yakho yengxelo kufuneka yamkele umzimba we-JSON onobuncinane bezi ndawo zilandelayo:
 
@@ -36,7 +36,7 @@ I-endpoint yakho yengxelo kufuneka yamkele umzimba we-JSON onobuncinane bezi nda
 
 Iindawo ezongezelelweyo zinokubakho kumthwalo ngokuxhomekeke kumxholo wencoko.
 
-### Amaxabiso e-`triage_category`
+### Amaxabiso e-`triage_category` {#triagecategory-values}
 
 Umaleko we-AI triage wabela elinye lamaxabiso alandelayo ku-`triage_category` phambi kokuthumela umthwalo:
 
@@ -47,7 +47,7 @@ Umaleko we-AI triage wabela elinye lamaxabiso alandelayo ku-`triage_category` ph
 | `inappropriate_content` | Impendulo ibiqulethe umxholo ongafanele ukuboniswa kubasebenzisi. |
 | `other` | Ingxelo ayihambelananga nodidi olwaziwayo. |
 
-### Ukuqinisekiswa
+### Ukuqinisekiswa {#authentication}
 
 Ukuba i-endpoint yakho ifuna ukuqinisekiswa, seta indawo ye-**Feedback API Key** ibe yi-bearer token yakho. I-agent ithumela:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Ukuba indawo ye-**Feedback API Key** ayinanto, akukho `Authorization` header ithunyelwayo.
 
-### Ukukhubaza Ukuqokelelwa kweNgxelo
+### Ukukhubaza Ukuqokelelwa kweNgxelo {#disabling-feedback-collection}
 
 Shiya zombini iindawo ze-**I-URL ye-Endpoint yeNgxelo** kunye ne-**Feedback API Key** zingenanto. Iqhosha le-thumbs-down kunye ne-UI yengxelo zihlala zibonakala kubasebenzisi, kodwa ungeniso aluthunyelwa kuyo nayiphi na inkonzo yangaphandle.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Kwakhona kwithebhu ethi **Ezihambele phambili**, indawo ye-**Brave Search API Key** yenza isakhono se-[Ukukhangela kwi-Intanethi](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ Ilebhile yendawo iquka ikhonkco elicofekayo kwiphepha lokubhalisela i-Brave Sear
 
 Bona [Ukukhangela kwi-Intanethi](../configuration/internet-search) ukuze ufumane uxwebhu lwabasebenzisi bokugqibela ngale mpawu.
 
-## Inkonzo ye-Superdav Elawulwayo
+## Inkonzo ye-Superdav Elawulwayo {#managed-superdav-service}
 
 I-Superdav AI Agent v1.18.0 yongeza ii-endpoint zenkonzo ye-Superdav elawulwayo kunye nolungiselelo oluzenzekelayo lonxibelelwano kwiisayithi ezixhaswayo. Sebenzisa olu lawulo xa isayithi yakho kufuneka iqhagamshele kumboneleli osingathiweyo endaweni ye-endpoint yenkonzo elungiselelwe ngesandla.
 
@@ -85,7 +85,7 @@ I-Superdav AI Agent v1.18.0 yongeza ii-endpoint zenkonzo ye-Superdav elawulwayo 
 
 Emva kolungiselelo, gcina iisetingi uze uqinisekise isimo soqhagamshelwano phambi kokuxhomekeka kwiinkqubo zomsebenzi zenkonzo elawulwayo. Ukuba ulungiselelo luyasilela, jonga isikhokelo sokuzama kwakhona esibonisiweyo uze uqinisekise ukuba isayithi inemvume yokusebenzisa umboneleli osingathiweyo.
 
-## Ulungiselelo lwe-Google Calendar
+## Ulungiselelo lwe-Google Calendar {#google-calendar-configuration}
 
 Xa iimpawu zekhalenda ze-Superdav AI Agent v1.18.0 zivuliwe, i-agent inokufunda iikhalenda ezilungiselelweyo kunye neenkcukacha zeziganeko. Izixhobo zekhalenda zijolise ekufundeni kwaye ziluncedo kwizikhumbuzo eziqwalasela ishedyuli, ukulandela abazimasi, kunye nokutshatisa abafowunelwa.
 
@@ -97,7 +97,7 @@ Xa iimpawu zekhalenda ze-Superdav AI Agent v1.18.0 zivuliwe, i-agent inokufunda 
 
 Gcina iinkcukacha zokuqinisekisa zekhalenda zilinganiselwe kwiikhalenda ezifunwa yi-agent. Qhagamshela kwakhona okanye ujikelezise iinkcukacha zokuqinisekisa ukuba isimo sibonisa i-token ephelelweyo.
 
-## Izaziso ze-TextBee SMS
+## Izaziso ze-TextBee SMS {#textbee-sms-notifications}
 
 I-Superdav AI Agent v1.18.0 yongeza i-TextBee njengomboneleli we-SMS kwiinkqubo zomsebenzi zezaziso ezilungiselelweyo. Izaziso ze-SMS kufuneka zidibaniswe namasango okuvunywa ngumntu kwimiyalezo ebuthathaka okanye ejolise kubasebenzisi.
 
@@ -109,16 +109,16 @@ I-Superdav AI Agent v1.18.0 yongeza i-TextBee njengomboneleli we-SMS kwiinkqubo 
 
 Thumela umyalezo wovavanyo kuphela kwinombolo ephethwe ngumlawuli, emva koko uqinisekise ukuziphatha kwesango lokuvunywa phambi kokuvula izikhumbuzo ezicwangcisiweyo okanye ezijolise kubazimasi.
 
-## Iiflegi zeMpawu
+## Iiflegi zeMpawu {#feature-flags}
 
 Kwakhona zaziswa kwi-v1.9.0, ithebhu ethi **Iisetingi → Iiflegi zeMpawu** inika amaqhosha okuvula/ukuvala ukusebenza okukhethwayo. Iflegi nganye ivuliwe okanye ikhubaziwe kwinethiwekhi yonke; akukho kugqitha ngokwesayithi ngeli xesha.
 
-### Ukufikelela kwiiFlegi zeMpawu
+### Ukufikelela kwiiFlegi zeMpawu {#accessing-feature-flags}
 
 1. Kulawulo lwe-WordPress, yiya ku-**Gratis AI Agent → Iisetingi**.
 2. Cofa ithebhu ethi **Iiflegi zeMpawu**.
 
-### Iiflegi zoLawulo lokuFikelela
+### Iiflegi zoLawulo lokuFikelela {#access-control-flags}
 
 | Iflegi | Ehlala ikho | Inkcazelo |
 |---|---|---|
@@ -127,7 +127,7 @@ Kwakhona zaziswa kwi-v1.9.0, ithebhu ethi **Iisetingi → Iiflegi zeMpawu** inik
 | **Vumela Ufikelelo lwababhalisi** | Icimile | Xa ivuliwe, abasebenzisi abanendima ye-`subscriber` banokusebenzisa ujongano lwencoko kodwa bancitshiselwe kwizakhono zokufunda kuphela (akukho kudalwa kweposi okanye utshintsho lweesetingi). |
 | **Khubaza kwabangengoMalungu** | Icimile | Idibanisa nesimo sobulungu se-Ultimate Multisite. Xa ivuliwe, incoko iyafihlwa kwiisayithi ezingenabumelungu obusebenzayo. |
 
-### Iiflegi zeBranding
+### Iiflegi zeBranding {#branding-flags}
 
 | Iflegi | Ehlala ikho | Inkcazelo |
 |---|---|---|
@@ -136,7 +136,7 @@ Kwakhona zaziswa kwi-v1.9.0, ithebhu ethi **Iisetingi → Iiflegi zeMpawu** inik
 | **Fihla uMkhethi we-Agent** | Icimile | Xa ivuliwe, abasebenzisi abanakutshintsha phakathi kwee-agent ezintlanu ezakhelwe ngaphakathi. I-agent yangoku imiselwe koko kulungiselelwe njengokungagqibekanga ku-Iisetingi → Ngokubanzi. |
 | **Sebenzisa i-Icon yeSayithi njenge-Avatar yeNcoko** | Icimile | Itshintsha i-icon ye-AI engagqibekanga kwintloko yewijethi yencoko nge-icon yesayithi ye-WordPress (esetwe phantsi koBonakalo → Yenza Ngokwezifiso → Isazisi seSayithi). |
 
-### Iiflegi zoKhuseleko lwe-Automation
+### Iiflegi zoKhuseleko lwe-Automation {#automation-safety-flags}
 
 I-Superdav AI Agent v1.18.0 yazisa amasango okuvunywa ngumntu kunye neerekhodi zezikhumbuzo ukuze iinkqubo ze-automation zikhuseleke ngakumbi. Olu lawulo lunokuvela kwiiflegi zeempawu okanye kwiisetingi ezihambele phambili ze-automation, kuxhomekeke kwiphakheji efakiweyo.
 
@@ -147,6 +147,6 @@ I-Superdav AI Agent v1.18.0 yazisa amasango okuvunywa ngumntu kunye neerekhodi z
 | **Vula Izixhobo zeKhalenda** | Icimile de ilungiselelwe | Ivumela i-agent ukuba ifunde iikhalenda neziganeko ze-Google ezilungiselelweyo. |
 | **Vula Izaziso ze-SMS** | Icimile de ilungiselelwe | Ivumela iinkqubo zomsebenzi ezivunyiweyo ukuba zithumele izaziso ze-TextBee SMS emva kokuba iinkcukacha zokuqinisekisa zigciniwe. |
 
-### Ukusebenzisa Utshintsho
+### Ukusebenzisa Utshintsho {#applying-changes}
 
 Cofa **Gcina Iisetingi** emva kokutshintsha nayiphi na iflegi. Utshintsho luqala ukusebenza kwangoko — akukho kucoca i-cache okanye ukuvuselelwa kwakhona kwe-plugin okufunekayo.

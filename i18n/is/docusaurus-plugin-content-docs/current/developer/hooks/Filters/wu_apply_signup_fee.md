@@ -4,11 +4,11 @@ title: Sía - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Sía: wu_apply_signup_fee
+# Sía: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Síar hvort skráningargjaldið eigi að vera lagt á eða ekki.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Síar hvort skráningargjaldið eigi að vera lagt á eða ekki.
 | $product | `object` | Aðildarstigshlutur. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Skráningarhlutur. |
 
-### Síðan
+### Síðan {#since}
 
 - 3.1
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) í línu 1769

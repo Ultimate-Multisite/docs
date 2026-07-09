@@ -4,11 +4,11 @@ title: Sivana - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filter: wu_username_from_email
+# Filter: wu_username_from_email {#filter-wuusernamefromemail}
 
 Sivano solonanarana mpanjifa vaovao.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Sivano solonanarana mpanjifa vaovao.
 | $new_user_args | `array` | Array an'ny args mpampiasa vaovao, mety ahitana anarana voalohany sy anarana farany. |
 | $suffix | `string` | Ampio string amin'ny solonanarana mba hahatonga azy ho tokana. |
 
-### Hatramin'ny
+### Hatramin'ny {#since}
 
 - 2.0.0
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) amin'ny andalana 516

@@ -3,13 +3,13 @@ title: Accommodatio formularii tui adnotationis
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Formam adnotationis tuam aptare
+# Formam adnotationis tuam aptare {#customizing-your-registration-form}
 
 Ut rete tuum singulare appareat inter omnia alia SaaS in suggestu WordPress aedificata, Ultimate Multisite tibi permittit paginas adnotationis et ingressus aptare per proprietatem nostram **Checkout Forms**.
 
 Quamquam facilis et flexibilis via sunt ad diversas rationes experiendas cum novos emptores convertere conaris, plerumque ad formas adnotationis personales creandas adhibentur. Hic articulus intendit ostendere quomodo id facere possis.
 
-## Paginae ingressus et adnotationis:
+## Paginae ingressus et adnotationis: {#login-and-registration-pages}
 
 Post institutionem Ultimate Multisite, automatice paginas ingressus et adnotationis proprias in situ principali tuo creat. Has paginas praedefinitas quovis tempore mutare potes eundo ad paginam tuam **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Nunc videamus alias optiones quae adhuc ad processum ingressus et adnotationis p
 
 Atque hae sunt omnes optiones ad ingressum et adnotationem pertinentes quas aptare potes! Noli oblivisci optiones tuas servare postquam eas recensere perfeceris.
 
-## Pluribus formis adnotationis uti:
+## Pluribus formis adnotationis uti: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 editorem checkout form praebet qui tibi permittit tot formas creare quot vis, cum diversis campis, productis oblatis, etc.
 
@@ -69,7 +69,7 @@ Vel, formas quas iam habes recensere aut duplicare potes premendo optiones infra
 
 Si gradum singularem aut multi-gradus eligis, checkout form iam praeimpleta erit gradibus fundamentalibus ut operetur. Deinde, si vis, gradus additos ei addere potes.
 
-### Checkout Form recensere:
+### Checkout Form recensere: {#editing-a-checkout-form}
 
 Ut antea memoravimus, potes checkout forms ad diversos fines creare. In hoc exemplo in forma adnotationis laborabimus.
 
@@ -131,11 +131,11 @@ Ut shortcode formae tuae accipias, preme **Genera Shortcode** et effigiem in fen
 
 _**Nota:** Necesse erit hunc shortcode paginae tuae registrationis addere ut haec forma solutionis ei addatur._
 
-## Producta et exemplaria per parametros URL praeligere:
+## Producta et exemplaria per parametros URL praeligere: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Si tabulas pretiorum ad producta tua accommodatas creare vis et in forma solutionis productum aut exemplar praeligere quod cliens tuus ex tabula pretiorum tua aut pagina exemplarium eligit, parametros URL ad hoc uti potes.
 
-### **Pro consiliis:**
+### **Pro consiliis:** {#for-plans}
 
 Vade ad **Ultimate Multisite > Producta > Elige consilium**. Bullam **Preme ut Vinculum Communicabile copies** in summo paginae videre debes. Hoc est vinculum quo uti potes ut hoc consilium specificum in forma solutionis tua praeligas.
 
@@ -143,7 +143,7 @@ Vade ad **Ultimate Multisite > Producta > Elige consilium**. Bullam **Preme ut V
 
 Nota hoc vinculum communicabile tantum validum esse pro **Consiliis**. Vinculis communicabilibus pro fasciculis aut servitiis uti non potes.
 
-### Pro exemplaribus:
+### Pro exemplaribus: {#for-templates}
 
 Si vis exemplaria situs in forma solutionis tua praeligere, parametro uti potes: **?template_id=X** in URL paginae registrationis tuae. "X" substitui debet **numero ID exemplaris situs**. Ut hunc numerum accipias, vade ad **Ultimate Multisite > Sites**.
 

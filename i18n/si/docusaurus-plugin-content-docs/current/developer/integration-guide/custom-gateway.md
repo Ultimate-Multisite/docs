@@ -3,11 +3,11 @@ title: අභිරුචි ගේට්වේ සංවර්ධනය
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# අභිරුචි Gateway සංවර්ධනය
+# අභිරුචි Gateway සංවර්ධනය {#custom-gateway-development}
 
 `Base_Gateway` class එක දීර්ඝ කිරීමෙන් ඔබට අභිරුචි ගෙවීම් gateways නිර්මාණය කළ හැක.
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway එක ලියාපදිංචි කරන්න
+## Gateway එක ලියාපදිංචි කරන්න {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## ප්‍රධාන Methods
+## ප්‍රධාන Methods {#key-methods}
 
 | Method | අරමුණ |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | මුදල් ආපසු ගෙවීමේ ඉල්ලීම් හසුරුවන්න |
 | `get_payment_methods()` | පාරිභෝගිකයෙකු සඳහා සුරැකි ගෙවීම් methods ආපසු ලබා දෙන්න |
 
-## නැවත නැවත සිදුවන memberships සඳහා renewal credentials
+## නැවත නැවත සිදුවන memberships සඳහා renewal credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 මගින් gateway integrations වලට, `auto_renew` ස්ථිරව සුරැකීමට පෙර නැවත නැවත සිදුවන membership එකකට නැවත භාවිත කළ හැකි renewal credential එකක් තිබේදැයි වාර්තා කිරීමට ඉඩ දෙයි. `wu_membership_has_renewal_credential` hook කර මෙසේ ආපසු ලබා දෙන්න:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 නව නැවත භාවිත කළ හැකි credential එකක් ගබඩා කළ පසු, ඔබේ gateway එකේ සාර්ථක නැවත අවසර ලබා ගැනීමේ flow එකේ කොටසක් ලෙස missing-credential marker එක ඉවත් කරන්න.
 
-## උපදෙස්
+## උපදෙස් {#tips}
 
 - අසාර්ථක වූ විට හැමවිටම `WP_Error` ආපසු ලබා දෙන්න, එවිට Ultimate Multisite ට දෝෂ පෙන්වීම හසුරුවන්න හැකි වේ
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway-විශේෂිත logging සඳහා `wu_log_add()` භාවිත කරන්න
 
-## AI connector provider හැකියාවන්
+## AI connector provider හැකියාවන් {#ai-connector-provider-capabilities}
 
 AI connector මත පදනම් වූ මෙහෙයුම් කැඳවන අභිරුචි integrations, AI Provider for Anthropic Max v1.3.0 සමඟ හඳුන්වා දුන් සහය දක්වන OAuth provider කට්ටලයට ගැළපිය යුතුය:
 

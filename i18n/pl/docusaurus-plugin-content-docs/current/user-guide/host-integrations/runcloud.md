@@ -3,17 +3,17 @@ title: Integracja z RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integracja z RunCloud
+# Integracja z RunCloud {#runcloud-integration}
 
-## Wstęp
+## Wstęp {#overview}
 RunCloud to platforma do zarządzania serwerami w chmurze, która umożliwia łatwe wdrażanie i zarządzanie aplikacjami webowymi na własnych serwerach. Ta integracja pozwala na automatyczną synchronizację domen i zarządzanie certyfikatami SSL między Ultimate Multisite a RunCloud.
 
-## Funkcje
+## Funkcje {#features}
 - Automatyczna synchronizacja domen
 - Zarządzanie certyfikatami SSL
 - Usuwanie domen po usunięciu mapowań
 
-## Wymagania
+## Wymagania {#requirements}
 Poniższe stałe muszą być zdefiniowane w pliku `wp-config.php`:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Instrukcja konfiguracji
+## Instrukcja konfiguracji {#setup-instructions}
 
-### 1. Pobierz dane dostępowe do API RunCloud
+### 1. Pobierz dane dostępowe do API RunCloud {#1-get-your-runcloud-api-credentials}
 
 1. Zaloguj się do panelu RunCloud
 2. Przejdź do „User Profile" (kliknij zdjęcie profilowe w prawym górnym rogu)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Kliknij „Generate API Key", jeśli jeszcze go nie masz
 5. Skopiuj swój API Key i API Secret
 
-### 2. Pobierz ID serwera i aplikacji
+### 2. Pobierz ID serwera i aplikacji {#2-get-your-server-and-app-ids}
 
 1. W panelu RunCloud przejdź do „Servers"
 2. Wybierz serwer, na którym jest zainstalowany WordPress Multisite
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Przejdź do „Web Applications" i wybierz swoją aplikację WordPress
 5. ID aplikacji jest widoczne w adresie URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Dodaj stałe do wp-config.php
+### 3. Dodaj stałe do wp-config.php {#3-add-constants-to-wp-configphp}
 
 Dodaj poniższe stałe do pliku `wp-config.php`:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Włącz integrację
+### 4. Włącz integrację {#4-enable-the-integration}
 
 1. W panelu administracyjnym WordPress przejdź do Ultimate Multisite > Settings
 2. Przejdź do zakładki „Domain Mapping"
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Włącz integrację z RunCloud
 5. Kliknij „Save Changes"
 
-## Jak to działa
+## Jak to działa {#how-it-works}
 
 Gdy domena jest mapowana w Ultimate Multisite:
 
@@ -70,19 +70,19 @@ Gdy domena jest mapowana w Ultimate Multisite:
 
 W przypadku instalacji subdomenowych integracja automatycznie obsłuży tworzenie subdomen w RunCloud, gdy nowe strony zostaną dodane do sieci.
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
-### Problemy z połączeniem API
+### Problemy z połączeniem API {#api-connection-issues}
 - Sprawdź, czy dane dostępowe do API są poprawne
 - Upewnij się, że ID serwera i aplikacji są prawidłowe
 - Sprawdź, czy Twoje konto RunCloud ma odpowiednie uprawnienia
 
-### Problemy z certyfikatami SSL
+### Problemy z certyfikatami SSL {#ssl-certificate-issues}
 - RunCloud może potrzebować trochę czasu na wydanie certyfikatów SSL
 - Upewnij się, że Twoje domeny prawidłowo wskazują na adres IP serwera
 - Sprawdź ustawienia SSL w RunCloud dla swojej aplikacji
 
-### Domena nie została dodana
+### Domena nie została dodana {#domain-not-added}
 - Sprawdź logi Ultimate Multisite pod kątem komunikatów o błędach
 - Upewnij się, że domena nie jest już dodana w RunCloud
 - Sprawdź, czy Twój plan RunCloud obsługuje wiele domen

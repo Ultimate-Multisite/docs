@@ -3,19 +3,19 @@ title: 'Leksyon 2: Pagpili sa Imong Niche'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lesson 2: Pagpili sa Imong Niche
+# Lesson 2: Pagpili sa Imong Niche {#lesson-2-picking-your-niche}
 
 Sa Lesson 1, gipaklaro nato nganong mas maayo ang niche kaysa sa general. Karon, kinahanglan na nimo nga pilion ang imo. Kini nga lesson mohatag kanimo og balangkas (framework) aron makakaplag ug makakompirma sa usa ka niche sa dili pa ka mogasto og oras pagtukod niini.
 
-## Asa Kita Nagpahunong
+## Asa Kita Nagpahunong {#where-we-left-off}
 
 Gihubit nato ang konsepto sa FitSite: usa ka website platform para sa mga fitness studio. Apan giunsa man nato pag-abot sa fitness studios nga espesipiko? Kini nga lesson moagi sa proseso aron makatabang kanimo sa pagpangita sa imong kaugalingong niche.
 
-## Ang Tulo ka Kriteriya
+## Ang Tulo ka Kriteriya {#the-three-criteria}
 
 Ang maayo nga niche para sa usa ka website platform kinahanglan motubag sa tulo ka kondisyon:
 
-### 1. Nagkinahanglan og Website apan Naglisud Makakuha og Maayo
+### 1. Nagkinahanglan og Website apan Naglisud Makakuha og Maayo {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Mangita og mga industriya diin:
 
@@ -26,7 +26,7 @@ Mangita og mga industriya diin:
 
 **Ang fitness studios mo-fit**: Nagpaabot ang mga miyembro nga makakita og class schedules, presyo, ug pag-book online. Kadaghanan sa website sa studio daan na o gibuhat gamit ang general templates nga dili makatabang sa ilang tumong.
 
-### 2. Makabayad ang Negosyo og Monthly Subscription
+### 2. Makabayad ang Negosyo og Monthly Subscription {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Ang imong target customers kinahanglan:
 
@@ -36,7 +36,7 @@ Ang imong target customers kinahanglan:
 
 **Ang fitness studios mo-fit**: nagabayad na sila para sa booking software, payment processing, ug marketing tools. Ang website subscription natural lang nga dugang.
 
-### 3. Nagkonektado Sila Usag-usa (Talk to Each Other)
+### 3. Nagkonektado Sila Usag-usa (Talk to Each Other) {#3-they-talk-to-each-other}
 
 Ang pinakamaayo nga mga niche adunay:
 
@@ -46,9 +46,9 @@ Ang pinakamaayo nga mga niche adunay:
 
 **Ang fitness studios mo-fit**: Moatend ang mga tag-iya sa studio sa mga kalihokan sa industriya sa fitness, moapil sa online communities, ug kanunay nga magpaambit og tools ug serbisyo sa ilang kauban.
 
-## Giunsa Pagpangita og Niche Candidates
+## Giunsa Pagpangita og Niche Candidates {#how-to-find-niche-candidates}
 
-### Sugdi sa Imong Nahibal-an
+### Sugdi sa Imong Nahibal-an {#start-with-what-you-know}
 
 Ang imong kasamtangang kasinatian usa ka bentaha. Hunahunaa:
 
@@ -56,7 +56,7 @@ Ang imong kasamtangang kasinatian usa ka bentaha. Hunahunaa:
 - Mga hobby o interes nga nasayod ka sa community
 - Mga professional networks nga miyembro ka na
 
-### Pangitaa ang mga Senyales sa Problema (Pain Signals)
+### Pangitaa ang mga Senyales sa Problema (Pain Signals) {#look-for-pain-signals}
 
 Mangita og ebidensya nga ang mga negosyo sa usa ka niche naglisud sa ilang website:
 
@@ -65,7 +65,7 @@ Mangita og ebidensya nga ang mga negosyo sa usa ka niche naglisud sa ilang websi
 - Tan-awa ang aktuwal nga website sa niche -- kadaghanan ba niini daan na?
 - Susihon kung adunay mga kompetisyon ug unsa ka maayo sila pagserbisyo sa market
 
-### I-evaluate ang Ekonomiya (Economics)
+### I-evaluate ang Ekonomiya (Economics) {#evaluate-the-economics}
 
 Para sa matag candidate niche, estimate:
 
@@ -73,11 +73,11 @@ Para sa matag candidate niche, estimate:
 - **Willingness to pay**: Unsa ilang gasto karon sa susama nga tools?
 - **Lifetime value potential**: Stable ba kining mga negosyo, o dali ra silang mo-churn?
 
-## Pagkompirma sa Imong Niche (Validating Your Niche)
+## Pagkompirma sa Imong Niche (Validating Your Niche) {#validating-your-niche}
 
 Sa dili pa magtukod og bisan unsa, i-validate ang panginahanglan:
 
-### Makig-istorya sa Potensyal nga Customers
+### Makig-istorya sa Potensyal nga Customers {#talk-to-potential-customers}
 
 Kontaka ang 10-15 ka tag-iya sa negosyo sa imong target niche. Pangutana sila:
 
@@ -88,17 +88,17 @@ Kontaka ang 10-15 ka tag-iya sa negosyo sa imong target niche. Pangutana sila:
 
 Wala ka pa magbaligya. Nagpaminaw lang ka.
 
-### Susihon ang Competitor Landscape
+### Susihon ang Competitor Landscape {#check-competitor-landscape}
 
 - **Walay kompetisyon**: Mahimulanon ni nga walay panginahanglan, o mahimulanon nga usa ka wala pa maabot nga oportunidad. Ang estorya sa customer makasulti kanimo kung unsa.
 - **Pipila ka kompetisyon**: Maayo nga senyales. Nagkumpirma kini og panginahanglan. Pagtuon kung unsay ilang gibuhat pag-ayo ug asa sila nagkulang.
 - **Daghang kompetisyon**: Mas lisud makasulod, apan posible gihapon kon malikayan nimo ang kalainan (differentiate) nga klaro.
 
-### Magtukod og Landing Page
+### Magtukod og Landing Page {#build-a-landing-page}
 
 Sa dili pa magtukod sa platform, paghimo og simple nga landing page nga naghulagway sa solusyon sa imong niche ug kolektahon ang email signups. Pagpadagan og gamay nga targeted advertising aron masulayan ang interes. Kon mo-sign up ang mga tawo, naa kay validation.
 
-## Pag-apply Niini sa FitSite
+## Pag-apply Niini sa FitSite {#applying-this-to-fitsite}
 
 Kining paagi ni pagkuha sa score sa FitSite batok sa criteria:
 
@@ -112,7 +112,7 @@ Kining paagi ni pagkuha sa score sa FitSite batok sa criteria:
 
 Ang validation nagkumpirma sa oportunidad. Karon, magtukod na ta.
 
-## Mga Ideya nga Niche Aron Konsiderar
+## Mga Ideya nga Niche Aron Konsiderar {#niche-ideas-to-consider}
 
 Kon dili ang fitness ang imong market, ania ang ubang niches nga nakatubag sa criteria:
 
@@ -127,7 +127,7 @@ Kon dili ang fitness ang imong market, ania ang ubang niches nga nakatubag sa cr
 
 Ang matag usa niini adunay parehas nga kinaiya: klaro nga panginahanglan sa website, abilidad pagbayad, ug community word-of-mouth.
 
-## Unsa ang Gitukod Nato Niining Lesson
+## Unsa ang Gitukod Nato Niining Lesson {#what-we-built-this-lesson}
 
 - **Usa ka niche selection framework**: tulo ka criteria aron i-evaluate ang bisan unsang niche
 - **Validation methods**: customer conversations, competitor analysis, landing page testing

@@ -4,13 +4,13 @@ title: Kichujio - wu_use_domain_mapping
 sidebar_label: wu_use_domain_mapping
 _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 ---
-# Filter: wu_use_domain_mapping
+# Filter: wu_use_domain_mapping {#filter-wuusedomainmapping}
 
 Kuamua kama *mapping* inapaswa kutumika
 
 Kwa kawaida, utataka kuruhusu tu *mappings* zilizofanya kazi kutumika. Hata hivyo, ikiwa unataka kutumia mantiki (logic) ya hali ya juu zaidi, au kuruhusu *domains* zisizofanya kazi kufanyiwa *mapping* pia, unaweza kufiltera hapa.
 
-## Vigezo (Parameters)
+## Vigezo (Parameters) {#parameters}
 
 | Jina (Name) | Aina (Type) | Maelezo (Description) |
 |------|------|-------------|
@@ -18,6 +18,6 @@ Kwa kawaida, utataka kuruhusu tu *mappings* zilizofanya kazi kutumika. Hata hivy
 | $mapping | `\Domain` | *Mapping* tunayochunguza |
 | $domain | `string` | |
 
-### Chanzo (Source)
+### Chanzo (Source) {#source}
 
 Imefafanuliwa katika [`inc/class-domain-mapping.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-domain-mapping.php#L391) kwenye mstari wa 391

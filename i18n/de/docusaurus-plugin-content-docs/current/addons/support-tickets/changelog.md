@@ -3,13 +3,13 @@ title: Support-Tickets-Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support-Tickets-Änderungsprotokoll
+# Support-Tickets-Änderungsprotokoll {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Verbessert: vendor/-Verzeichnis aus der Git-Nachverfolgung entfernt (bereits durch .gitignore abgedeckt), wodurch die Repository-Größe reduziert wird
 * Verbessert: Getestet bis WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Korrektur: Nullwerte in nullbaren Ticket-Modell-Settern akzeptieren
 * Korrektur: Alle Tickets in globalen netzwerkweiten Tabellen speichern, für korrekte Multisite-Unterstützung
 * Korrektur: Mitarbeiterfelder ausblenden und Weiterleitung auf leere Seite im Kundenformular für neue Tickets beheben
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Verbessert: Frontend-Assets nur auf Support-Ticket-Seiten bedingt laden
 * Verbessert: Plugin-Autoloader überspringen, wenn der Bedrock-Root-Autoloader Abhängigkeiten bereits geladen hat
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Hinzugefügt: Vollständige Ticket-Anzeigefunktionalität für Admin und Frontend
 * Hinzugefügt: AJAX-Handler für das Einreichen von Ticket-Antworten
 * Hinzugefügt: Unterstützung für Ticket-Antwortfunktionalität mit korrekter Formularverarbeitung
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Verbessert: Datenbankstruktur mit korrekten Abfrage- und Schema-Klassen für Antworten und Anhänge
 * Verbessert: Migration zu echten Eigenschaften anstelle von Attributen für Ticket-Modelle
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Aktualisiert: Präfix aus Konsistenzgründen in ultimate-multisite umbenannt
 * Aktualisiert: Standardisierung der Textdomain
 * Behoben: Kleinere Fehlerkorrekturen und Verbesserungen
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Erstveröffentlichung
 * Vollständiges Ticket-Verwaltungssystem
 * Mehrstufige Zugriffskontrolle

@@ -3,11 +3,11 @@ title: Fejlesztői Dokumentáció
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Fejlesztői Dokumentáció
+# Fejlesztői Dokumentáció {#developer-documentation}
 
 Ez az útmutató minden szükséges információt nyújt a fejlesztőknek, akik integrálni, bővíteni vagy addonokat fejleszteni kívánnak az Ultimate Multisite rendszeréhez. Az Ultimate Multisite egy WordPress Multisite hálózatát Weboldal-mint-szolgáltatás (WaaS) platformra alakítja.
 
-## Mit érhetünk el
+## Mit érhetünk el {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Teljes CRUD (Create, Read, Update, Delete) műveletek minden entitás számára (ügyfélek, oldalak, tagságok, fizetések, termékek, domainek) API kulcsos hitelesítéssel
 - **[Hooks Reference](./hooks/guide)** — 200+ action hook és 280+ filter hook az életciklus események és a testreszabás számára
@@ -15,13 +15,13 @@ Ez az útmutató minden szükséges információt nyújt a fejlesztőknek, akik 
 - **[Code Examples](./code-examples/)** — Haladó minták a dinamikus árazáshoz, oldalprovízióhoz, egyedi korlátozásokhoz és több fizetési kapu feldolgozásához
 - **[Addon Development](./addon-development/getting-started)** — Strukturált keretrendszer az addon pluginoképítéséhez
 
-## Feltételek
+## Feltételek {#requirements}
 
 - WordPress Multisite telepítés
 - PHP 7.4 vagy magasabb
 - Aktivált Ultimate Multisite plugin
 
-## Composer / Bedrock telepítés
+## Composer / Bedrock telepítés {#composer--bedrock-installation}
 
 Az Ultimate Multisite elérhető a [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) címen a `ultimate-multisite/ultimate-multisite` név alatt. Ez az ajánlott telepítési módszer a [Bedrock](https://roots.io/bedrock/)-alapú WordPress környezetekhez és más Composer-kezelésű környezetekhez.
 
@@ -45,15 +45,15 @@ Vagy ha a pluginet Bedrock autoloader-en keresztül must-use pluginként tölti 
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Gyors kezdés
+## Gyors kezdés {#quick-start}
 
-### Használja a REST API-t
+### Használja a REST API-t {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Csatolja be az eseményekhez (Hook)
+### Csatolja be az eseményekhez (Hook) {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Építsen egy Addon-t
+### Építsen egy Addon-t {#build-an-addon}
 
 ```bash
 # Generálja az addon alapstruktúráját a sablonból

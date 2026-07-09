@@ -4,11 +4,11 @@ title: Shaandhee - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Waxay soo celisaa magac quruxsan oo loogu talagalay qaybaha maamulka ee waddanka.
 
-## Xuduudaha
+## Xuduudaha {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Waxay soo celisaa magac quruxsan oo loogu talagalay qaybaha maamulka ee waddanka
 | $ucwords | `bool` | haddii aan ereyada ka dhigno xarfo waaweyn. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance-ka class-ka hadda jira. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 2.0.11
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) khadka 250
 
 
-## Waxay soo celisaa
+## Waxay soo celisaa {#returns}
 Magaca qaybta ee la beddelay.

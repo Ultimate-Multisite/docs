@@ -3,11 +3,11 @@ title: Хуклар белешмәсе
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks белешмәсе
+# Hooks белешмәсе {#hooks-reference}
 
 Ultimate Multisite эчендәге барлык **59 гамәл** һәм **118 фильтр** өчен автоматик рәвештә ясалган документация.
 
-## Гамәлләр
+## Гамәлләр {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Аутентификация юнәлтүе алдыннан эшли.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Аутентификация cookie урнаштырылыр алдыннан ук эшли.
@@ -70,7 +70,7 @@ Ultimate Multisite эчендәге барлык **59 гамәл** һәм **118 
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — объект мәгълүмат базасына сакланганнан соң эшли.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin эшләүчеләренә ачу процессына гамәлләр өстәргә рөхсәт итә.
 
-## Фильтрлар
+## Фильтрлар {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Аутентификация cookie-сының гамәлдән чыгу вакыты озынлыгын фильтрлый.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Аутентификация юнәлтү схемасын фильтрлый.

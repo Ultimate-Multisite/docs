@@ -3,15 +3,15 @@ title: Menus na Masaukin Baƙi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu na Masauki da Abinci
+# Menu na Masauki da Abinci {#hospitality-menus}
 
 Siffar **Hospitality Menus** tana ba Theme Builder damar ƙirƙira da saka shafukan menu na abinci da abin sha masu tsari kai tsaye cikin shafin WordPress ɗinka.
 
-## Taƙaitaccen Bayani
+## Taƙaitaccen Bayani {#overview}
 
 Theme Builder yanzu zai iya ƙirƙirar ƙwararrun shafukan menu masu tsari ga kasuwancin masauki da abinci ciki har da gidajen abinci, cafes, bars, da sabis na catering. Waɗannan menu suna haɗe gaba ɗaya cikin ƙirar shafinka kuma ana iya sabunta su da sarrafa su cikin sauƙi.
 
-## Nau'ikan Masauki da Abinci da ake Goyon Bayan su
+## Nau'ikan Masauki da Abinci da ake Goyon Bayan su {#supported-hospitality-types}
 
 - **Gidajen abinci** — menu na cikakken sabis na cin abinci
 - **Cafes** — menu na kofi da abinci mai sauƙi
@@ -21,9 +21,9 @@ Theme Builder yanzu zai iya ƙirƙirar ƙwararrun shafukan menu masu tsari ga ka
 - **Food Trucks** — menu na sabis na abinci mai motsi
 - **Breweries da Wineries** — menu na abin sha tare da bayanai
 
-## Tsarin Menu
+## Tsarin Menu {#menu-structure}
 
-### Rukunonin Menu
+### Rukunonin Menu {#menu-categories}
 
 Ana tsara menu cikin rukunoni:
 
@@ -34,7 +34,7 @@ Ana tsara menu cikin rukunoni:
 - **Beverages** — abubuwan sha (masu barasa da marasa barasa)
 - **Specials** — na musamman na yau da kullum ko na kakar lokaci
 
-### Tsarin Abun Menu
+### Tsarin Abun Menu {#menu-item-format}
 
 Kowane abun menu ya ƙunshi:
 
@@ -49,7 +49,7 @@ Kowane abun menu ya ƙunshi:
 }
 ```
 
-#### Filayen Abu
+#### Filayen Abu {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Kowane abun menu ya ƙunshi:
 | `allergens` | array | Abubuwan da ke yawan jawo rashin lafiyar abinci (Nuts, Shellfish, da sauransu) |
 | `availability` | string | Lokacin da ake samu (Daily, Seasonal, da sauransu) |
 
-## Ƙirƙirar Menu na Masauki da Abinci
+## Ƙirƙirar Menu na Masauki da Abinci {#creating-hospitality-menus}
 
-### Mataki na 1: Bayar da Bayanin Menu
+### Mataki na 1: Bayar da Bayanin Menu {#step-1-provide-menu-information}
 
 Faɗa wa Theme Builder game da menu ɗinka:
 
@@ -71,7 +71,7 @@ Faɗa wa Theme Builder game da menu ɗinka:
 abincin pasta, manyan abinci, da desserts. Haɗa farashi da bayanai.
 ```
 
-### Mataki na 2: Theme Builder Yana Samar da Menu
+### Mataki na 2: Theme Builder Yana Samar da Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Yana tsara farashi da bayanai
 5. Yana ƙara bayanin abinci da na abubuwan da ke jawo rashin lafiya
 
-### Mataki na 3: Bita da Keɓancewa
+### Mataki na 3: Bita da Keɓancewa {#step-3-review-and-customize}
 
 Za ka iya:
 
@@ -91,9 +91,9 @@ Za ka iya:
 4. Sabunta bayanai da bayanin abinci
 5. Daidaita salo da shimfiɗa
 
-## Zaɓuɓɓukan Nuna Menu
+## Zaɓuɓɓukan Nuna Menu {#menu-display-options}
 
-### Cikakken Shafin Menu
+### Cikakken Shafin Menu {#full-menu-page}
 
 Shafi na musamman da ke nuna cikakken menu ɗinka:
 
@@ -102,7 +102,7 @@ Shafi na musamman da ke nuna cikakken menu ɗinka:
 - Shimfiɗa mai dacewa da bugawa
 - Ƙira mai amsawa ga wayar hannu
 
-### Widget na Menu
+### Widget na Menu {#menu-widget}
 
 Saka sassan menu a wasu shafuka:
 
@@ -111,7 +111,7 @@ Saka sassan menu a wasu shafuka:
 - Menu na abin sha a shafin bar
 - Nunin kayan zaƙi a footer
 
-### PDF na Menu
+### PDF na Menu {#menu-pdf}
 
 Samar da menu na PDF da za a iya saukewa:
 
@@ -120,9 +120,9 @@ Samar da menu na PDF da za a iya saukewa:
 - Ya haɗa da hotuna da bayanai
 - Mai sauƙin rabawa da aika ta email
 
-## Bayanin Abinci da Abubuwan da ke Jawo Rashin Lafiya
+## Bayanin Abinci da Abubuwan da ke Jawo Rashin Lafiya {#dietary-and-allergen-information}
 
-### Halayen Abinci
+### Halayen Abinci {#dietary-attributes}
 
 Yi alama ga abubuwa da bayanin abinci:
 
@@ -134,7 +134,7 @@ Yi alama ga abubuwa da bayanin abinci:
 - **Low-Carb** — rage carbohydrates
 - **High-Protein** — mai wadatar protein
 
-### Gargaɗin Abubuwan da ke Jawo Rashin Lafiya
+### Gargaɗin Abubuwan da ke Jawo Rashin Lafiya {#allergen-warnings}
 
 Haɗa abubuwan da ke yawan jawo rashin lafiyar abinci:
 
@@ -147,9 +147,9 @@ Haɗa abubuwan da ke yawan jawo rashin lafiyar abinci:
 - **Gluten** — alkama da hatsi masu ɗauke da gluten
 - **Sesame** — ƙwayoyin sesame da mai
 
-## Sarrafa Menu
+## Sarrafa Menu {#menu-management}
 
-### Sabunta Farashi
+### Sabunta Farashi {#updating-prices}
 
 Sabunta farashin menu cikin sauƙi:
 
@@ -159,7 +159,7 @@ Sabunta farashin menu cikin sauƙi:
 4. Ajiye canje-canje
 5. Canje-canje suna bayyana nan take a shafinka
 
-### Ƙara Abubuwan Kakar Lokaci
+### Ƙara Abubuwan Kakar Lokaci {#adding-seasonal-items}
 
 Ƙirƙiri bambance-bambancen menu na kakar lokaci:
 
@@ -169,7 +169,7 @@ Sabunta farashin menu cikin sauƙi:
 4. Tsara ranakun samuwa
 5. Nuna su ta atomatik yayin kakar lokaci
 
-### Sarrafa Na Musamman
+### Sarrafa Na Musamman {#managing-specials}
 
 Nuna na musamman na yau da kullum ko na mako-mako:
 
@@ -179,7 +179,7 @@ Nuna na musamman na yau da kullum ko na mako-mako:
 4. Sabunta yau da kullum ko mako-mako
 5. Ajiye tsoffin na musamman a archive
 
-## Haɗawa da Theme Builder
+## Haɗawa da Theme Builder {#integration-with-theme-builder}
 
 Lokacin amfani da Theme Builder don shafukan masauki da abinci:
 
@@ -189,9 +189,9 @@ Lokacin amfani da Theme Builder don shafukan masauki da abinci:
 4. **Ingantawa ga wayar hannu** — menu suna bayyana da kyau a kan wayoyi
 5. **Ingantawar SEO** — menu suna dacewa da injinan bincike
 
-## Mafi Kyawun Ayyuka
+## Mafi Kyawun Ayyuka {#best-practices}
 
-### Ƙirar Menu
+### Ƙirar Menu {#menu-design}
 
 - **Tsari bayyananne** — tsarin rukuni mai ma'ana
 - **Bayanai masu sauƙin karantawa** — masu sa sha'awa da ba da bayani
@@ -199,7 +199,7 @@ Lokacin amfani da Theme Builder don shafukan masauki da abinci:
 - **Hotuna na ƙwararru** — hotunan abinci masu inganci
 - **Farin sarari** — kada a cunkushe shafin
 
-### Abun Ciki
+### Abun Ciki {#content}
 
 - **Bayanai daidai** — bayyana abubuwa daidai
 - **Fito da na musamman** — sa na musamman su yi fice
@@ -207,7 +207,7 @@ Lokacin amfani da Theme Builder don shafukan masauki da abinci:
 - **Sabunta akai-akai** — kiyaye farashi da abubuwa na yanzu
 - **Yi amfani da harshe mai sa sha'awa** — sa abubuwa su ji kamar masu daɗi
 
-### Samun Dama
+### Samun Dama {#accessibility}
 
 - **Fonts masu sauƙin karantawa** — yi amfani da nau'ikan rubutu masu bayyani da sauƙin karantawa
 - **Bambancin launi isasshe** — tabbatar rubutu yana da sauƙin karantawa
@@ -215,9 +215,9 @@ Lokacin amfani da Theme Builder don shafukan masauki da abinci:
 - **Gargaɗin abubuwan da ke jawo rashin lafiya** — nuna abubuwan da ke jawo rashin lafiya a fili
 - **Mai dacewa da wayar hannu** — gwada a kan dukkan na'urori
 
-## Misalai
+## Misalai {#examples}
 
-### Tsarin Menu na Gidan Abinci
+### Tsarin Menu na Gidan Abinci {#restaurant-menu-structure}
 
 ```
 Abubuwan buɗe ci
@@ -241,7 +241,7 @@ Kayan Zaki
 └── Zaɓin Gelato
 ```
 
-### Tsarin Jerin Abincin Cafe
+### Tsarin Jerin Abincin Cafe {#cafe-menu-structure}
 
 ```
 Kofi
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Fasali Masu Alaƙa
+## Fasali Masu Alaƙa {#related-features}
 
 - [Ƙirƙiri Jerin Zaɓuɓɓuka](../abilities/create-menu.md) — ƙirƙiri jerin zaɓuɓɓukan kewayawa
 - [Jagorancin Zane](./design-direction.md) — keɓance zanen shafinka

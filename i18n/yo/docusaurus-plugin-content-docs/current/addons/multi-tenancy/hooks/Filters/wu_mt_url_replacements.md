@@ -4,11 +4,11 @@ title: Àlẹmọ - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Àlẹmọ: wu_mt_url_replacements
+# Àlẹmọ: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 Àlẹmọ àwọn tọkọtaya ìrọ́pò URL.
 
-## Àwọn paramita
+## Àwọn paramita {#parameters}
 
 | Orúkọ | Iru | Àpèjúwe |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 | $new_url | `string` | URL tuntun. |
 | $blog_id | `int` | ID bulọọgi. |
 
-### Láti
+### Láti {#since}
 
 - 1.0.0
-### Orísun
+### Orísun {#source}
 
 A ṣàlàyé rẹ̀ nínú [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) ní ìlà 151

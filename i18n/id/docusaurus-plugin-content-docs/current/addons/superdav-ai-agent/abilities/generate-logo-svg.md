@@ -3,15 +3,15 @@ title: Hasilkan Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Membuat Logo SVG
+# Membuat Logo SVG {#generate-logo-svg}
 
 Kemampuan **Membuat Logo SVG** memungkinkan Theme Builder untuk membuat dan menyematkan logo SVG kustom langsung ke situs WordPress Anda dengan sanitasi otomatis yang aman dari *namespace*.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Kemampuan ini menghasilkan logo *vector graphics* (SVG) yang dapat diskalakan berdasarkan arah *branding* dan preferensi desain situs Anda. SVG yang dihasilkan akan disanitasi secara otomatis untuk memastikan keamanannya saat digunakan di WordPress, sambil tetap mempertahankan integritas visualnya.
 
-## Parameter
+## Parameter {#parameters}
 
 | Parameter | Tipe | Wajib | Deskripsi |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Kemampuan ini menghasilkan logo *vector graphics* (SVG) yang dapat diskalakan be
 | `height` | number | Tidak | Tinggi SVG dalam piksel (default: 200) |
 | `include_text` | boolean | Tidak | Apakah akan menyertakan nama situs sebagai teks dalam logo (default: true) |
 
-## Format Output
+## Format Output {#output-format}
 
 Kemampuan ini mengembalikan *string* SVG dengan struktur berikut:
 
@@ -36,7 +36,7 @@ Kemampuan ini mengembalikan *string* SVG dengan struktur berikut:
 }
 ```
 
-## Perilaku Sanitasi SVG
+## Perilaku Sanitasi SVG {#svg-sanitisation-behaviour}
 
 SVG yang dihasilkan akan menjalani sanitasi otomatis yang aman dari *namespace* untuk:
 
@@ -48,7 +48,7 @@ SVG yang dihasilkan akan menjalani sanitasi otomatis yang aman dari *namespace* 
 
 Ini memastikan SVG aman disematkan langsung di WordPress tanpa memerlukan sanitasi tambahan.
 
-## Contoh Penggunaan
+## Contoh Penggunaan {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Kemampuan ini membuat logo SVG yang:
 - Mengikuti prinsip desain modern
 - Disanitasi secara otomatis dan siap digunakan
 
-## Integrasi dengan Theme Builder
+## Integrasi dengan Theme Builder {#integration-with-theme-builder}
 
 Ketika menggunakan pemilihan arah desain dari Theme Builder, kemampuan Generate Logo SVG:
 
@@ -71,21 +71,21 @@ Ketika menggunakan pemilihan arah desain dari Theme Builder, kemampuan Generate 
 3. Secara otomatis menyematkan logo ke area *header*/branding situs Anda
 4. Menyimpan SVG sebagai logo kustom di media WordPress
 
-## Praktik Terbaik
+## Praktik Terbaik {#best-practices}
 
 - **Berikan preferensi gaya yang jelas** — jelaskan gaya desain yang Anda inginkan (modern, klasik, ceria, dll.).
 - **Tentukan warna** — sertakan warna merek Anda untuk konsistensi.
 - **Uji tampilan** — verifikasi logo ditampilkan dengan benar di berbagai ukuran layar.
 - **Kustomisasi lebih lanjut** — gunakan alat kustomisasi logo WordPress untuk menyesuaikan ukuran dan penempatan.
 
-## Keterbatasan
+## Keterbatasan {#limitations}
 
 - Logo SVG dihasilkan sebagai grafis statis (tidak animasi).
 - Logo kompleks dengan banyak elemen mungkin memerlukan penyempurnaan manual.
 - Font kustom tidak didukung; teks menggunakan *system fonts*.
 - Dimensi yang sangat besar atau sangat kecil dapat memengaruhi kualitas.
 
-## Kemampuan Terkait
+## Kemampuan Terkait {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — periksa kontras warna untuk aksesibilitas
 - [Create Menu](./create-menu.md) — buat menu navigasi untuk situs Anda

@@ -4,11 +4,11 @@ title: Iragazkia - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Iragazkia: wu_admin_notices
+# Iragazkia: wu_admin_notices {#filter-wuadminnotices}
 
 Garatzaileei Ultimate Multisite-k gehitutako admin jakinarazpenak iragazteko aukera ematen die.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Garatzaileei Ultimate Multisite-k gehitutako admin jakinarazpenak iragazteko auk
 | $filter | `string` | Bazter daitezkeen jakinarazpenak iragazi diren ala ez. |
 | $dismissed_messages | `array` | Baztertutako jakinarazpen-gakoen zerrenda. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.0.0
-### Iturburua
+### Iturburua {#source}
 
 [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) fitxategian definitua, 121. lerroan
 
 
-## Itzultzen du
+## Itzultzen du {#returns}

@@ -3,11 +3,11 @@ title: Admin panelni ko'rib chiqish
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panelni Ko Aylanib Bo'lish
+# Admin Panelni Ko Aylanib Bo'lish {#touring-the-admin-panel}
 
 Ultimate Multisite eng oddiy va o'zini tushuntiradigan bo'lishni maqsad qilgan, lekin bunday kuchli vosita bilan yo'l ko'rsatish (guided tour) qilish mumkin. Sizga joylashishingiz uchun admin sahifalaridan o'tamiz.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 Ultimate Multisite **Dashboard** daromadlar, sayt faoliyati, aʼzo bo'lish o'sishi, tashrif buyruqchilari soni va geografik ma'lumotlar kabi asosiy hisobotlar va tahlillarni ko'rsatadi.
 
@@ -25,61 +25,61 @@ Shuningdek, tarmoq (network) dashboardning to'liq ko'rinishi:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Checkout Forms {#checkout-forms}
 
 **Checkout Forms** sizga o'zingiz uchun maxsus ro'yxatdan o'tish sahifalari yaratishdagi moslashuvchanlikni beradi. Siz maydonlarni sozlash, maxsus klasslar va skriptlarni kiritish, shuningdek, tashrif buyruqchining mamlakati yoki joylashuvi asosida kirishga cheklov qo'yishingiz mumkin.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Products
+## Products {#products}
 
 **Products** bo'limi tarmoqingiz uchun turli rejalarni, paketlarni va xizmatlarni yaratadigan joydir. Narxlarni, hisoboti tezligini (billing frequencies) va har bir mahsulot darajasidagi cheklovlar va quota'larni belgilashingiz mumkin.
 
 ![Products list](/img/admin/products-list.png)
 
-## Memberships
+## Memberships {#memberships}
 
 **Memberships** sahifasi tarmoqingizdagi barcha obunalar (subscriptions) ro'yxatini ko'rsatadi. Rejalarni, mahsulotlarni, hisoboti miqdorini va tezligini, to'lov tarixi va vaqt belgilarini o'z ichiga olgan obuna tafsilotlarini tekshirib tahrirlashingiz mumkin.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Payments
+## Payments {#payments}
 
 **To'lovlar** sahifasi butun tarmog‘ingiz bo‘yicha to‘lovlar tarixining tezkor ko‘rinishini beradi va aniq mahsulotlar hamda miqdorlar kabi batafsil transaksiyya ma’lumotlarini o‘z ichiga oladi.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Mijozlar
+## Mijozlar {#customers}
 
 **Mijozlar** sahifasi tarmog‘ingizdagi ro‘yxatdan o‘tgan barcha aʼzolarni, jumladan ism, elektron pochta manzili, oxirgi kirish va ularning subsite’iga kirish uchun "o‘tish" (switch to) linki kabi asosiy foydalanuvchi ma’lumotlari bilan ko‘rsatadi.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Saytlar
+## Saytlar {#sites}
 
 **Saytlar** sahifasi tarmog‘ingizdagi barcha subsite’larni, jumladan sayt shablonlarini va mijozlarga tegishli saytlarni ro‘yxatdan ko‘rsatadi. Xaritalangan domenlarni, cheklovlarni va quota (cheklanish)larni, pluginlar va temalarni hamda sayt miniatyuralarini oson boshqarishingiz mumkin.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domenlar
+## Domenlar {#domains}
 
 **Domenlar** sahifasi subsite’larga bog‘langan maxsus domen nomlari uchun mo‘ljallangan. Super admin sifatida siz maxsus domen nomlarini qo‘lda qo‘shishingiz yoki ularni xarita qilishingiz mumkin, shuningdek DNS yozuvlarini va loglarni ko‘rishingiz mumkin.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Chegirma kodlari (Discount Codes)
+## Chegirma kodlari (Discount Codes) {#discount-codes}
 
 **Chegirma kodlari** siz end-userlarga chegirmalar taklif qilish uchun kupon kodlari yaratishingizga imkon beradi. Chegirma qiymatini belgilashingiz va ma’lum foydalanuvchilarni yoki guruhlarni maqsad qilishingiz mumkin.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Tarqatishlar (Broadcasts)
+## Tarqatishlar (Broadcasts) {#broadcasts}
 
 **Tarqatishlar** — subsite foydalanuvchilari uchun e'lonlar yuborish yoki maxfiy xabarlar yuborish uchun vositadir. Ular obuna bo‘lgan reja yoki mahsulot asosida aniq foydalanuvchi guruhlarini maqsad qilib belgilash imkonini beradi.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Sozlamalar (Settings)
+## Sozlamalar (Settings) {#settings}
 
 **Sozlamalar** sahifasi Ultimate Multisite — ro‘yxatdan o‘tish sozlamalari, to‘lovlar, API va webhooks, domen xaritasi va boshqa integratsiyalar kabi narsalarni konfiguratsiya qilish uchun joy.
 
@@ -109,13 +109,13 @@ Va saytlar sozlamalari sahifasi:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Hodisalari (Events)
+## Hodisalari (Events) {#events}
 
 **Hodisalari (Events)** sahifasi tarmog'ingizdagi barcha hodisalar va yozuvlarni qayd etadi. U reja o'zgarishlari, ro'yxatdan olinishlar va boshqa harakatlar kabi faoliyatni kuzatib boradi — bu sizning multisite'ingizni nazorat qilish uchun foydalidir.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooklar
+## Webhooklar {#webhooks}
 
 **Webhooklar (Webhooks)** ma'lumotlarni boshqa ilovaga yuborishga imkon beradi. Ultimate Multisite dan Zapier kabi platformalarga ma'lumotlarni yuborish uchun foydalidir.
 

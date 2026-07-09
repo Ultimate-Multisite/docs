@@ -3,11 +3,11 @@ title: Ingxelo yotshintsho
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Ingxelo yotshintsho
+# Ingxelo yotshintsho {#changelog}
 
-## 1.18.0 — Ikhutshwe nge-2026-06-29
+## 1.18.0 — Ikhutshwe nge-2026-06-29 {#1180--released-on-2026-06-29}
 
-### Entsha
+### Entsha {#new}
 
 - **Izixhobo zeGoogle Calendar** — funda iikhalenda eziqwalaselweyo neziganeko ukwenzela ii-automation eziqonda ishedyuli
 - **Ukwenza imephu yabafowunelwa nabancedisi babazimasi** — fanisa abathathi-nxaxheba bekhalenda nabasebenzisi besayithi nabafowunelwa
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Umboneleli weTextBee SMS** — thumela izaziso zemiyalezo ebhaliweyo eziqwalaselweyo ngeTextBee
 - **Iphakheji yeqabane eliphambili** — yongeza izixhobo zomphuhlisi othenjiweyo zenkqubo yeefayile, idathabheyisi, WP-CLI, REST dispatcher, umakhi we-plugin, git snapshot, ulawulo lwabasebenzisi, kunye ne-benchmark ezisasazwa ngokwahlukileyo kulwakhiwo lweWordPress.org
 
-### Kuphuculwe
+### Kuphuculwe {#improved}
 
 - **Ukumiselwa kwenkonzo elawulwayo yeSuperdav** — yongeza ii-endpoint zenkonzo ebibanjwe kunye nokubonelelwa koqhagamshelo oluzenzekelayo kwiisayithi ezixhaswayo
 - **Ukupakishwa kokukhutshwa** — yakha i-ZIP ezahlukileyo ze-core ne-Advanced, zipapashe zombini kwiGitHub, kwaye uthumele kuphela iphakheji ye-core kwiWordPress.org
 
-### Kulungisiwe
+### Kulungisiwe {#fixed}
 
 - **Ukuthembeka kwezicelo ze-AI** — phucula ukhetho lwemodeli, ukuphelelwa lixesha kwezicelo, imodeli yokumisela engagqibekanga, ukuphathwa kombhalo wokuqiqa, kunye nesikhokelo sokuzama kwakhona kwiifowuni zezixhobo ezingasebenziyo
 - **Ukuqiniswa kwekhalenda nezikhumbuzo** — qinisa ii-token zeGoogle Calendar kunye nokususa ukuphindaphindwa kwezikhumbuzo
 - **Ukuqalisa abasebenzisi abatsha nokuqhubeka emva kokuvunywa** — lungisa ukuqaliswa kokwamkelwa kwicala langaphambili kunye nokuqhubeka kwezakhono eziqinisekisiweyo
 - **Imiba yophononongo lokupakishwa kweWordPress.org** — lungisa ingxelo yophononongo lokupakishwa yokukhutshwa kwe-core
 
-## 1.16.0 — Ikhutshwe nge-2026-05-20
+## 1.16.0 — Ikhutshwe nge-2026-05-20 {#1160--released-on-2026-05-20}
 
-### Entsha
+### Entsha {#new-1}
 
 - **Isakhono seGenerate Logo SVG** — Theme Builder ngoku inokwenza kwaye ifake ii-SVG zelogo ezenziwe ngokwezifiso ezinokucocwa okukhuselekileyo kwe-namespace
 - **Ukulayishwa kwefoto kudliwanondlebe lokufumanisa** — udliwanondlebe lokufumanisa lweTheme Builder ngoku lubandakanya inyathelo lokulayisha ifoto ukwenzela umxholo woyilo otyebileyo
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Iparamitha yelebhile yokuhamba** — isakhono seCreate Menu ngoku sixhasa `navigation_label` eyahlukileyo kwisihloko sephepha
 - **Ukufumaneka kwesixhobo seTier 1** — sd-ai-agent/site-scrape ngoku sisixhobo seTier 1 esifumaneka ngokungagqibekanga kwiTheme Builder
 
-### Kulungisiwe
+### Kulungisiwe {#fixed-1}
 
 - **I-cache ye-AI Client** — ngoku ixhaswa zii-transient ukwenzela ukuqhubeka phakathi kwezicelo, kuthintela ukulahleka kwedatha kwimisebenzi yearhente ethatha ixesha elide
 - **Amakhonkco ezenzo zomqolo we-plugin** — alungisiwe kwaye athiywa ngokutsha ukuze acace
 
-## 1.10.0 — Ikhutshwe nge-2026-05-05
+## 1.10.0 — Ikhutshwe nge-2026-05-05 {#1100--released-on-2026-05-05}
 
-### Entsha
+### Entsha {#new-2}
 
 - **Uphendlo lwe-intanethi lweTavily** — yongeza iTavily njengomboneleli wophendlo ukwenzela iziphumo zophendlo lwe-intanethi ezityebileyo ecaleni kweBrave Search
 - **Izakhono ezakhelwe ngaphakathi eziqonda i-theme** — izikhokelo zezakhono zeBlock Themes, Classic Themes, Kadence Blocks, kunye neKadence Theme ngoku zihanjiswa kunye ne-plugin
 - **Isakhono sefom yoqhagamshelwano somakhi wesayithi** — yongeza ifom yoqhagamshelwano kulo naliphi na iphepha ngqo kwi-interface yencoko
 
-### Kuphuculwe
+### Kuphuculwe {#improved-1}
 
 - **Udibaniso lweWooCommerce luhlengahlengisiwe** — ngoku lusebenzisa ii-API zendalo zeWooCommerce ukwenzela ukuthembeka nokuhambelana okungcono
 - **Uluhlu lwababoneleli luzihlaziya ngokuzenzekelayo** — xa nayiphi na i-plugin ivuliwe okanye ivaliwe
 
-### Kulungisiwe
+### Kulungisiwe {#fixed-2}
 
 - **isakhono se-navigate-to** — kulungiswe umjikelo wokulayisha kwakhona ongapheliyo kwamanye amaphepha olawulo
 - **isakhono se-list-posts** — ngoku sisombulula ngokuchanekileyo amagama eendidi neethegi abe zii-slug

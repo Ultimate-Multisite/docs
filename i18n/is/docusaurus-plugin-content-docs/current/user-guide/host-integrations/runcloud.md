@@ -3,17 +3,17 @@ title: RunCloud samstarf
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Samningur
+# RunCloud Samningur {#runcloud-integration}
 
-## Översikt
+## Översikt {#overview}
 RunCloud er ský-basert staflinnar fyrir serverstjórnun sem leysir þér á einfaldan hátt að dekompila og stjórna webapplikasjonum þínum á eigin ský-serverum. Þessi samning fer með sjálfsviðandi domænsmyndun og stjórnun SSL-sertifika milli Ultimate Multisite og RunCloud.
 
-## Stöðvar
+## Stöðvar {#features}
 - Sjálfsviðandi domænsmyndun
 - Stjórnun SSL-sertifika
 - Fjármagnarið þegar mappingar eru fjarlægðar
 
-## Kreftingar
+## Kreftingar {#requirements}
 Fylgja eftir að þessum konstantum verða í `wp-config.php` skrifstafinn:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Stöðvarferli
+## Stöðvarferli {#setup-instructions}
 
-### 1. Fá RunCloud API-skilmarkökum þínum
+### 1. Fá RunCloud API-skilmarkökum þínum {#1-get-your-runcloud-api-credentials}
 
 1. Logga inn í RunCloud dashboard þinn
 2. Gangi yfir til "User Profile" (klikka á myndina þinni uppstafnari í hópinn upphaflega)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Klikka á "Generate API Key" ef þú hefur ekki enn eitthvað
 5. Kopla API-skilmarkök og API-heimild
 
-### 2. Fá Server- og App-íðir þínar
+### 2. Fá Server- og App-íðir þínar {#2-get-your-server-and-app-ids}
 
 1. Í RunCloud dashboard þínum, gangi yfir til "Servers"
 2. Veldu server sem heldur WordPress multisite þitt
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Gangi yfir til "Web Applications" og veldu WordPress applikationina þína
 5. App ID er sýnt í URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Búa að konstantum í wp-config.php
+### 3. Búa að konstantum í wp-config.php {#3-add-constants-to-wp-configphp}
 
 Búa að eftirfarandi konstanter í skrifstafinn `wp-config.php` þínum:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Skynja samninginn
+### 4. Skynja samninginn {#4-enable-the-integration}
 
 (Þessi hluti er ekki fullkomlega skrifað í upprunalefni, en þetta er staðsetning fyrir að útbúa innferðina.)
 
@@ -62,7 +62,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Ákveða að aktíva RunCloud integrationn
 5. Klikka á "Save Changes"
 
-## Hvernig þetta virkar
+## Hvernig þetta virkar {#how-it-works}
 
 Þegar domén er mappa í Ultimate Multisite:
 
@@ -72,19 +72,19 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 
 Vinnandi fyrir subdomain installationir, mun integrationin sjálf halda áfram með sköpunum subdomainna í RunCloud þegar nýr staðar eru að bæta við netið þitt.
 
-## Feilfellingar
+## Feilfellingar {#troubleshooting}
 
-### Vætlendur við API tengingu
+### Vætlendur við API tengingu {#api-connection-issues}
 - Staða að þínum API kerfi er rétt
 - Skenni að þín server og app ID's eru rétt
 - Tryggðu þér að RunCloud reikningurinn þinn hafi nauðsynlegum réttunum
 
-### Vætlendur við SSL sertifíki
+### Vætlendur við SSL sertifíki {#ssl-certificate-issues}
 - RunCloud getur þurfa nokkinn tíma til að útbreyta SSL sertifíkum
 - Staða að þínum doménum eru rétt leiðandi til IP-adresse serverar þín
 - Skenni RunCloud SSL settin fyrir appilinn þinn
 
-### Domén ekki bætt við
+### Domén ekki bætt við {#domain-not-added}
 - Skenni Ultimate Multisite logs fyrir nánastilka villum
 - Tryggðu þér að doménn sé ekki eingildum bætt við RunCloud
 - Staða að RunCloud planinn þinn stuðlar til fleiri domena

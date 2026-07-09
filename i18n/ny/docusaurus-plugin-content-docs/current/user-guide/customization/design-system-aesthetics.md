@@ -3,11 +3,11 @@ title: Kufunsa Kufuna Design System Aesthetics Skills
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kufunso Kufunso kwa Design System Aesthetics Skill
+# Kufunso Kufunso kwa Design System Aesthetics Skill {#design-system-aesthetics-skill}
 
 **Design System Aesthetics skill** ndi njira yomwe imaperekera kuti mupereke chithunzi cha sitini chanu. Imapandukira kuti mupeza zolembedwa za mpira wopanga (typography), miyambo ya chinthu (color), kusunga m'malo (spacing), ndi zolemba za kutayira (motion tokens) zomwe zimapanga design system yanu.
 
-## Kufunso kwa Design System Aesthetics ndi chiyani?
+## Kufunso kwa Design System Aesthetics ndi chiyani? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics ndi njira yomwe imaperekera kuti:
 
@@ -20,9 +20,9 @@ Design System Aesthetics ndi njira yomwe imaperekera kuti:
 
 Zolembedwa zina zimaperekedwa m'file yanu `theme.json` la theme, zomwe zimapanga design system yomwe imakhala yosoncho.
 
-## Kodi Mutha Kuthandiza kwa Design System Aesthetics?
+## Kodi Mutha Kuthandiza kwa Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Kukhala Yosoncho (Consistency)
+### Kukhala Yosoncho (Consistency) {#consistency}
 
 Design system imapangira kuti:
 
@@ -31,7 +31,7 @@ Design system imapangira kuti:
 - Kusunga m'malo kumapereka njira yomwe imakubwera.
 - Zowonjezera za kutayira zimapereka kukhala monga m'ono wosoncho.
 
-### Kukhala Mwachidule (Efficiency)
+### Kukhala Mwachidule (Efficiency) {#efficiency}
 
 M'mologo woperekera zolembedwa za design m'malo m'malo, muli:
 
@@ -39,7 +39,7 @@ M'mologo woperekera zolembedwa za design m'malo m'malo, muli:
 - Mupereke zonse pamene.
 - Mupereke m'malo omwe imachitika m'malo monga kuphatikiza chifukwa cha kukhala wosoncho (changing one value).
 
-### Kukhala Lomwe Imaperekera (Flexibility)
+### Kukhala Lomwe Imaperekera (Flexibility) {#flexibility}
 
 Muli ndi ulemu:
 
@@ -47,9 +47,9 @@ Muli ndi ulemu:
 - Mupereke m'malo omwe imakhala wosoncho monga kupeza zolemba zina za chithunzi.
 - Muperekera kuyamba kukhala wosoncho pamene sitini lalikulu.
 
-## Kufuna Kufuna Design System Aesthetics Skill
+## Kufuna Kufuna Design System Aesthetics Skill {#triggering-the-design-system-aesthetics-skill}
 
-### Kukhazikitsa kwa M'malo (Manual Activation)
+### Kukhazikitsa kwa M'malo (Manual Activation) {#manual-activation}
 
 Muli mwayi wopereka njira ya kukambitira skill:
 
@@ -69,7 +69,7 @@ kapena
 "Guide me through design system decisions"
 ```
 
-### Zowonjezera Zomwe Zimapereka (Automatic Suggestions)
+### Zowonjezera Zomwe Zimapereka (Automatic Suggestions) {#automatic-suggestions}
 
 Agents mung yenera kuti mupereke kuthandiza kwa skill pamene:
 
@@ -78,9 +78,9 @@ Agents mung yenera kuti mupereke kuthandiza kwa skill pamene:
 - Mupereke kuti muperekere kuyamba kukhala wosoncho.
 - Muli mwayi woperekera kukambitira sitini wanzeru.
 
-## Kufunso ya Mfundo wa Zina (Design System Aesthetics Process)
+## Kufunso ya Mfundo wa Zina (Design System Aesthetics Process) {#the-design-system-aesthetics-process}
 
-### Chombo cha Kufunga (Step 1: Typography)
+### Chombo cha Kufunga (Step 1: Typography) {#step-1-typography}
 
 Chombo chake chimaliza mambo mapema kwa kukuuliza kuhusu fonts zako:
 
@@ -110,7 +110,7 @@ Kisha chombo chake kinabainisha mambo haya:
 - **Mchanganuo wa uzito (Weight scale)**: Uzito wa font (regular, medium, bold, n.k.).
 - **Urefu wa mstari (Line height)**: Nafasi kati ya mistari ili iwe rahisi kusoma.
 
-### Chombo cha Rangi (Step 2: Color Palette)
+### Chombo cha Rangi (Step 2: Color Palette) {#step-2-color-palette}
 
 ```
 Tupange rangi zako.
@@ -140,7 +140,7 @@ Chombo chake kinatengeneza mchanganuo kamili unaojumuisha:
 - Rangi za maana (success, warning, error).
 - Hali za kuingia (Hover) na kufanya kitendo (active states).
 
-### Chombo cha Nafasi (Step 3: Spacing)
+### Chombo cha Nafasi (Step 3: Spacing) {#step-3-spacing}
 
 Ndanja lina mpaka lina mpaka lina mpaka?
 
@@ -160,7 +160,7 @@ Mwayi wopambana ulipereka tokens za spacing:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Zinthu zina zomwe zikufufuza padding, margin, gap
 
-### Step 4: Borders ndi Shadows
+### Step 4: Borders ndi Shadows {#step-4-borders-and-shadows}
 
 ```
 Kukwanira kukhala ndi mpaka ndi shadows:
@@ -183,7 +183,7 @@ Mwayi wopambana ulipereka:
 - Shadow tokens kuti m'maka omwe omwe
 - Border width tokens
 
-### Step 5: Motion ndi Animation
+### Step 5: Motion ndi Animation {#step-5-motion-and-animation}
 
 ```
 Kuti site yanu ite bwanji pamene imapambana?
@@ -205,9 +205,9 @@ Mwayi wopambana ulipereka:
 - Easing functions (ease-in, ease-out, ease-in-out)
 - Animation keyframes kuti zinthu zina zomwe zimapambana kwambiri
 
-## Kukhazikitsa Aesthetics za Design System
+## Kukhazikitsa Aesthetics za Design System {#applying-design-system-aesthetics}
 
-### Automatic Application
+### Automatic Application {#automatic-application}
 
 Poyamba m'maka wanu, mwayi wopambana:
 
@@ -216,13 +216,13 @@ Poyamba m'maka wanu, mwayi wopambana:
 3. Imaperekera styles za block kuti zikuyenera ndi system lili lili lili
 4. Imapambana theme yomwe imaperekera
 
-### Manual Application
+### Manual Application {#manual-application}
 
 Muli kuyesa `theme.json` m'maka:
 
-## Kuti Yense Design System Yanu
+## Kuti Yense Design System Yanu {#viewing-your-design-system}
 
-### Malingi Agent (Ask the Agent)
+### Malingi Agent (Ask the Agent) {#ask-the-agent}
 
 ```
 "Ongele my design system"
@@ -236,13 +236,13 @@ or
 
 Agent iye idzindikiza typography, colors, spacing, ndi zinthu zina za tokens.
 
-### Kuti Malingi theme.json (View theme.json)
+### Kuti Malingi theme.json (View theme.json) {#view-themejson}
 
 Open `/wp-content/themes/[theme-name]/theme.json` mu text editor kuti muli ndi maonero a raw tokens.
 
-## Kuti Malingi Design System (Updating Your Design System)
+## Kuti Malingi Design System (Updating Your Design System) {#updating-your-design-system}
 
-### Kusintha kwa Mapulogolo (Quick Updates)
+### Kusintha kwa Mapulogolo (Quick Updates) {#quick-updates}
 
 Malingi agent iye kulipeza kusintha kuchokera:
 
@@ -262,7 +262,7 @@ or
 "Sinthani font ya heading kuti ikhale serif"
 ```
 
-### Kusintha Koma Kote (Full Redesign)
+### Kusintha Koma Kote (Full Redesign) {#full-redesign}
 
 Redzindikira skill ya Design System Aesthetics:
 
@@ -272,7 +272,7 @@ Redzindikira skill ya Design System Aesthetics:
 
 Iyi idzindikira m'malo onse, ikuyamba ndi zinthu zomwe muli poyamba.
 
-### Kusintha kwa Malingali (Partial Updates)
+### Kusintha kwa Malingali (Partial Updates) {#partial-updates}
 
 Sinthani maiteka m'malo omwe muli nawo:
 
@@ -280,15 +280,15 @@ Sinthani maiteka m'malo omwe muli nawo:
 "Sinthani palette ya colors, simukonze zinthu zina"
 ```
 
-## Zomwe Zikuyenera Kuti Malingi Design System Iye (Design System Best Practices)
+## Zomwe Zikuyenera Kuti Malingi Design System Iye (Design System Best Practices) {#design-system-best-practices}
 
-### Kukhala Woperekera (Consistency)
+### Kukhala Woperekera (Consistency) {#consistency-1}
 
 - Gumule tokens onse m'malo.
 - Musintha colors kapena sizes zomwe zimene zikuyenera.
 - Gumule tokens m'malo omwe muli poyamba, osati kumphatikiza values m'malo.
 
-### Kukhala Woperekera (Naming)
+### Kukhala Woperekera (Naming) {#naming}
 
 Gumule maiteka omwe ndi woyenera:
 
@@ -298,7 +298,7 @@ Gumule maiteka omwe ndi woyenera:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Kukhala Woperekera (Scalability)
+### Kukhala Woperekera (Scalability) {#scalability}
 
 Mupanga wosayesimwa m'moyo wanu (Design your system to scale):
 
@@ -306,16 +306,16 @@ Mupanga wosayesimwa m'moyo wanu (Design your system to scale):
 - Kufuna m'moyo wopereka (Create scales like xs, sm, md, lg, xl) pa kukhala m'vuto wosamukulu.
 - Kufuna m'moyo wopereka (Plan for future additions).
 
-### Dokumenta m'moyo wanu (Document your design system):
+### Dokumenta m'moyo wanu (Document your design system): {#documentation}
 
 - Ndanje njiye m'moyo wanu:
     - Ndanje njiye m'moyo wanu (Why you chose specific colors) - Ndanje njiye m'moyo wanu (Ndanje njiye m'moyo wanu).
     - Kuti muli m'moyo wanu (When to use each token) - Kuti muli m'moyo wanu.
     - Mfundo ndi zoterezo ndi zotsamukulu (Exceptions and edge cases) - Mfundo ndi zoterezo ndi zotsamukulu.
 
-## Mfundo ya M'moyo Wopereka (Common Design System Patterns)
+## Mfundo ya M'moyo Wopereka (Common Design System Patterns) {#common-design-system-patterns}
 
-### M'moyo Wopereka Wopereka (Modern Minimalist)
+### M'moyo Wopereka Wopereka (Modern Minimalist) {#modern-minimalist}
 
 - Typography yosamukulu (Sans-serif typography) (Inter, Helvetica).
 - Palette ya m'moyo wopereka (Limited color palette) (2-3 colors).
@@ -323,7 +323,7 @@ Mupanga wosayesimwa m'moyo wanu (Design your system to scale):
 - Shadows zosamukulu (Subtle shadows).
 - Animations zosamukulu, zosamukulu (Smooth, fast animations).
 
-### M'moyo Wopereka Wopereka (Warm and Friendly)
+### M'moyo Wopereka Wopereka (Warm and Friendly) {#warm-and-friendly}
 
 - Kukhala ndi m'moyo wosamukulu ndi wosamukulu (Mix of serif and sans-serif).
 - Palette ya m'moyo wosamukulu (Warm color palette) (oranges, warm grays).
@@ -331,7 +331,7 @@ Mupanga wosayesimwa m'moyo wanu (Design your system to scale):
 - Shadows zosamukulu (Soft shadows).
 - Animations zosamukulu, zosamukulu (Playful animations).
 
-### M'moyo Wopereka Wopereka (Professional Corporate)
+### M'moyo Wopereka Wopereka (Professional Corporate) {#professional-corporate}
 
 - Sans-serif yosamukulu (Clean sans-serif) (Roboto, Open Sans).
 - Palette ya m'moyo wosamukulu ndi m'moyo wopereka (Neutral palette with accent color).
@@ -339,7 +339,7 @@ Mupanga wosayesimwa m'moyo wanu (Design your system to scale):
 - Shadows zosamukulu (Minimal shadows).
 - Transitions zosamukulu, zosamukulu (Subtle transitions).
 
-### M'moyo Wopereka Wopereka (Creative and Bold)
+### M'moyo Wopereka Wopereka (Creative and Bold) {#creative-and-bold}
 
 - Typography yosamukulu ndi wosamukulu (Distinctive typography).
 - Palette ya m'moyo wosamukulu (Bold color palette).
@@ -347,7 +347,7 @@ Mupanga wosayesimwa m'moyo wanu (Design your system to scale):
 - Shadows zosamukulu, zosamukulu (Strong shadows).
 - Animations zosamukulu, zosamukulu (Noticeable animations).
 
-## Kukhala ndi Zotsamukulu (Troubleshooting)
+## Kukhala ndi Zotsamukulu (Troubleshooting) {#troubleshooting}
 
 **M'moyo wanu wopereka womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu womwe wosamukulu wom
 

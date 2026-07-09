@@ -3,13 +3,13 @@ title: ინტეგრაციის სახელმძღვანელ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ინტეგრაციის სახელმძღვანელო
+# ინტეგრაციის სახელმძღვანელო {#integration-guide}
 
 ეს სახელმძღვანელო მოიცავს Ultimate Multisite-თან ინტეგრაციის გავრცელებულ ნიმუშებს, მათ შორის გარე სერვისებთან დაკავშირებას, მორგებული გადახდის gateway-ების შექმნას და webhook-ების დამუშავებას.
 
 იზოლირებული tenant ინფრასტრუქტურისთვის იხილეთ [Multi-Tenancy ინტეგრაცია](./multi-tenancy) სუვერენული tenant-ის bootstrap-ის, მიგრაციის ვერიფიკაციის, SSO-ისა და teardown-ის სახელმძღვანელოდ.
 
-## CRM ინტეგრაცია
+## CRM ინტეგრაცია {#crm-integration}
 
 დაასინქრონეთ customer-ის მონაცემები თქვენს CRM-თან, როდესაც ახალი customer-ები დარეგისტრირდებიან:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## ანალიტიკის ინტეგრაცია
+## ანალიტიკის ინტეგრაცია {#analytics-integration}
 
 თვალყური ადევნეთ მთავარ ბიზნეს მოვლენებს customer-ის სასიცოცხლო ციკლის განმავლობაში:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## შემდეგი ნაბიჯები
+## შემდეგი ნაბიჯები {#next-steps}
 
 - [მორგებული gateway-ის შემუშავება](./custom-gateway) — შექმენით თქვენი საკუთარი გადახდის gateway
 - [Webhook-ების დამუშავება](./webhooks) — შექმენით მორგებული webhook endpoint-ები

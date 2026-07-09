@@ -3,15 +3,15 @@ title: 'Nkuzi 14: Ihe Na-abịa Ọzọ'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Nkuzi 14: Ihe Na-abịa Ọzọ
+# Nkuzi 14: Ihe Na-abịa Ọzọ {#lesson-14-what-comes-next}
 
 Ị wulitela ikpo okwu webụsaịtị maka ngalaba ahịa pụrụ iche site na mbido. FitSite dị ndụ, na-ejere ụlọ ọmụmụ ahụike ozi, ma na-emepụta ego na-abata ugboro ugboro. Nkuzi ikpeazụ a na-ele ebe ị ga-esi ebe a gaa n’ihu.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 FitSite bụ azụmahịa na-arụ ọrụ nwere ndị ahịa, ọrụ, na ụzọ uto. Ugbu a anyị na-eche maka ihe na-esote.
 
-## Netwọkụ FitSite Zuru Ezu
+## Netwọkụ FitSite Zuru Ezu {#the-complete-fitsite-network}
 
 Nke a bụ ihe niile anyị wuru n’ime nkuzi 14:
 
@@ -46,11 +46,11 @@ Netwọkụ FitSite (Zuru Ezu)
     └── Maapụ ụzọ iwulite otu
 ```
 
-## Nhọrọ 1: Banye Omimi n’ime Ngalaba Ahịa Gị
+## Nhọrọ 1: Banye Omimi n’ime Ngalaba Ahịa Gị {#option-1-go-deeper-in-your-niche}
 
 Tupu ịgbasa gaa na ngalaba ahịa ọhụrụ, tụlee ịbanye omimi na ahụike:
 
-### Ngalaba Ndị Dị N’ime Ya
+### Ngalaba Ndị Dị N’ime Ya {#sub-niches}
 
 - **Ụlọ ọmụmụ yoga** -- ụkpụrụ pụrụ iche nwere atụmatụ ntụgharị uche, ezumike, na workshop
 - **CrossFit boxes** -- nsochi WOD, nsonaazụ asọmpi, atụmatụ obodo
@@ -59,7 +59,7 @@ Tupu ịgbasa gaa na ngalaba ahịa ọhụrụ, tụlee ịbanye omimi na ahụ
 
 Ngalaba ọ bụla dị n’ime ya nwere ike inwe ụkpụrụ nke ya na ikekwe akara nke ya, ha niile na-arụ n’otu netwọkụ Ultimate Multisite ahụ.
 
-### Atụmatụ Premium
+### Atụmatụ Premium {#premium-features}
 
 Wuo atụmatụ ndị ụlọ ọmụmụ ahụike ga-akwụ ego mgbakwunye maka ha:
 
@@ -68,14 +68,14 @@ Wuo atụmatụ ndị ụlọ ọmụmụ ahụike ga-akwụ ego mgbakwunye maka
 - **Ụkpụrụ blọgụ ahụike** -- usoro ọdịnaya e wuru tupu oge maka ahịa ọdịnaya ahụike
 - **Njikọ social media** -- izipu usoro klaasị na mmelite na-akpaghị aka
 
-### Mgbasa Mpaghara
+### Mgbasa Mpaghara {#geographic-expansion}
 
 Ọ bụrụ na ị malitere n’obodo gị, gbasaa gaa na:
 
 - Obodo ndị ọzọ n’ime obodo gị
 - Mba ndị ọzọ (jiri Ultimate Multisite's [atụmatụ ime ka ọ dabara mpaghara](/user-guide/localization/translating) kwado asụsụ ọtụtụ)
 
-## Nhọrọ 2: Gbasaa gaa na Ngalaba Ahịa Ndị Dị Ya Nso
+## Nhọrọ 2: Gbasaa gaa na Ngalaba Ahịa Ndị Dị Ya Nso {#option-2-expand-to-adjacent-niches}
 
 Usoro ị soro maka ụlọ ọmụmụ ahụike na-arụ ọrụ maka ngalaba ahịa ọ bụla. Ngalaba ahịa nke abụọ gị dị mfe karị n’ihi na ị nwerela:
 
@@ -83,7 +83,7 @@ Usoro ị soro maka ụlọ ọmụmụ ahụike na-arụ ọrụ maka ngalaba a
 - Ahụmịhe ọrụ
 - Playbook a nwalere ma gosipụta
 
-### Ngalaba Ahịa Ndị Dị Ahụike Nso
+### Ngalaba Ahịa Ndị Dị Ahụike Nso {#adjacent-niches-to-fitness}
 
 - **Wellness na spa** -- ndị na-eme massage, day spas, ebe wellness
 - **Klọb egwuregwu** -- otu egwuregwu amateur, leagues, klọb ntụrụndụ
@@ -91,7 +91,7 @@ Usoro ị soro maka ụlọ ọmụmụ ahụike na-arụ ọrụ maka ngalaba a
 
 Ndị a na-ekerịta ndị na-ege ntị na ahụike, ya mere ahịa na mmekọrịta gị nwere ike ịgafe.
 
-### Ngalaba Ahịa Ọhụrụ Kpamkpam
+### Ngalaba Ahịa Ọhụrụ Kpamkpam {#completely-new-niches}
 
 Tinye usoro sitere na Nkuzi 2 iji nyochaa ngalaba ahịa ọ bụla:
 
@@ -108,7 +108,7 @@ Ngalaba ahịa ọhụrụ ọ bụla chọrọ:
 
 Akụrụngwa ikpo okwu, ịgba ụgwọ, na usoro ọrụ na-anọ otu.
 
-## Nhọrọ 3: Wuo Ikpo Okwu nke Ikpo Okwu
+## Nhọrọ 3: Wuo Ikpo Okwu nke Ikpo Okwu {#option-3-build-a-platform-of-platforms}
 
 Mgbe ọ ruru nnukwu ogo, ị nwere ike ịgba ọtụtụ akara ngalaba ahịa pụrụ iche n’otu netwọkụ Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Mgbe ọ ruru nnukwu ogo, ị nwere ike ịgba ọtụtụ akara ngalaba ahịa 
 
 Akara ọ bụla nwere ụkpụrụ, atụmatụ, na ahịa nke ya, mana ha na-ekerịta akụrụngwa, ịgba ụgwọ, na usoro ọrụ. Nke a bụ ebe akụnụba Ultimate Multisite na-aghọ ike -- otu ikpo okwu, ọtụtụ verticals.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Maka ikewapụ ngalaba ahịa kpamkpam, tụlee [addon Multi-Network](/addons/multinetwork) nke na-enye gị ohere ịgba ọtụtụ netwọkụ WordPress site n’otu nrụnye.
 
-## Nhọrọ 4: Ree Azụmahịa Ahụ
+## Nhọrọ 4: Ree Azụmahịa Ahụ {#option-4-sell-the-business}
 
 Ikpo okwu webụsaịtị ngalaba ahịa nwere ego na-abata ugboro ugboro, churn dị ala, na ọnọdụ ahịa doro anya bụ akụ bara uru. Azụmahịa SaaS na-erekarị maka ugboro 3-5 nke ego kwa afọ.
 
@@ -134,7 +134,7 @@ FitSite nwere ndị ahịa 200 na $89 ARPU:
 
 Nke a abụghị nsonaazụ e kwere nkwa, mana ọ bụ nke ezi uche dị na ya maka ikpo okwu ngalaba ahịa a na-agba nke ọma.
 
-## Ihe Ị Mụtara
+## Ihe Ị Mụtara {#what-you-have-learned}
 
 Kọrs a kụziiri gị usoro a pụrụ imegharị:
 
@@ -150,7 +150,7 @@ Kọrs a kụziiri gị usoro a pụrụ imegharị:
 
 Ngalaba ahịa ahụ bụ atụmatụ. Ikpo okwu ahụ bụ ngwá ọrụ. Ultimate Multisite na-eme ka ngwá ọrụ ahụ kwe omume. Nghọta gị banyere ngalaba ahịa ahụ na-eme ka ọ baa uru.
 
-## Malite Iwulite
+## Malite Iwulite {#start-building}
 
 Ọ bụrụ na ị soro FitSite, ị nwere platform na-arụ ọrụ. Ọ bụrụ na ị gụrụ ya iji chọta niche nke gị, laghachi na [Nkuzi 2: Ịhọrọ Niche Gị](lesson-2-picking-your-niche) ma malite usoro maka vertical ị họọrọ.
 

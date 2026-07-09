@@ -3,13 +3,13 @@ title: Erstellung einer benutzerdefinierten Registrar-Integration
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ein benutzerdefiniertes Registrar-Integration erstellen
+# Ein benutzerdefiniertes Registrar-Integration erstellen {#building-a-custom-registrar-integration}
 
 Das Domain Seller Addon verwendet ein Muster namens **Integration Registry**. Jeder Registrar ist eine PHP-Klasse, die `Domain_Selling_Capability` implementiert und sich über den Action Hook `wu_domain_seller_register_capabilities` registriert.
 
 In diesem Leitfaden erfahren Sie, wie Sie einen benutzerdefinierten Registrar einbinden.
 
-## Die Schnittstelle
+## Die Schnittstelle {#the-interface}
 
 Ihre Klasse muss `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` implementieren und `WP_Ultimo\Integrations\Base_Capability_Module` erweitern.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Optionale Methoden
+### Optionale Methoden {#optional-methods}
 
 Implementieren Sie diese, um zusätzliche Funktionen freizuschalten. Das Addon erkennt die Unterstützung über `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementieren Sie diese, um zusätzliche Funktionen freizuschalten. Das Addon e
 | `get_epp_code(string $domain_name): array` | Domain-Übertragung (ausgehend) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain-Übertragung (eingehend) |
 
-### Konvention für den Rückgabewert
+### Konvention für den Rückgabewert {#return-value-convention}
 
 Alle Methoden geben ein Array zurück, das mindestens einen Schlüssel namens `success` enthält:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Lesbarer Fehlertext'];
 
 ---
 
-## Registrierung Ihrer Funktionalität
+## Registrierung Ihrer Funktionalität {#registering-your-capability}
 
 Registrieren Sie Ihre Klasse mit dem Action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Das erste Argument von `add_capability()` ist die **Provider ID** – ein Kleinb
 
 ---
 
-## Hinzufügen von Anmeldeinformationen zum Wizard
+## Hinzufügen von Anmeldeinformationen zum Wizard {#adding-credential-fields-to-the-wizard}
 
 Um Administratoren zu ermöglichen, Anmeldeinformationen über den Setup-Assistenten einzugeben, registrieren Sie Ihre Integration:
 
@@ -137,7 +137,7 @@ Anmeldeinformationen werden als Netzwerkoptionen unter Verwendung der Feld-IDs a
 
 ---
 
-## Hooks für Post-Registrierungsaktionen
+## Hooks für Post-Registrierungsaktionen {#hooks-for-post-registration-actions}
 
 Verwenden Sie diese Actions, um Webhooks, Bereitstellungen, Benachrichtigungen oder CRM-Updates auszulösen:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Protokollierung (Logging)
+## Protokollierung (Logging) {#logging}
 
 Schreiben Sie in Ihren provider-spezifischen Protokollkanal mit `wu_log_add()`:
 

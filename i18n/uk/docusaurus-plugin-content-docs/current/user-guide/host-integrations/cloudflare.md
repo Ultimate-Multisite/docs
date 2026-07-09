@@ -3,18 +3,18 @@ title: Інтеграція Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Інтеграція Cloudflare
+# Інтеграція Cloudflare {#cloudflare-integration}
 
-## Огляд
+## Огляд {#overview}
 Cloudflare — провідна мережа доставки контенту (CDN) і постачальник засобів безпеки, що допомагає захищати та прискорювати вебсайти. Ця інтеграція забезпечує автоматичне керування доменами між Ultimate Multisite і Cloudflare, зокрема для multisite-встановлень із піддоменами.
 
-## Можливості
+## Можливості {#features}
 - Автоматичне створення піддоменів у Cloudflare
 - Підтримка проксійованих піддоменів
 - Керування DNS-записами
 - Покращене відображення DNS-записів в адмін-панелі Ultimate Multisite
 
-## Вимоги
+## Вимоги {#requirements}
 У вашому файлі `wp-config.php` мають бути визначені такі константи:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Інструкції з налаштування
+## Інструкції з налаштування {#setup-instructions}
 
-### 1. Отримайте свій API-ключ Cloudflare
+### 1. Отримайте свій API-ключ Cloudflare {#1-get-your-cloudflare-api-key}
 
 1. Увійдіть до панелі керування Cloudflare
 2. Перейдіть до "Мій профіль" (натисніть на свою електронну адресу у верхньому правому куті)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: редагування
 5. Скопіюйте свій API-токен
 
-### 2. Отримайте свій Zone ID
+### 2. Отримайте свій Zone ID {#2-get-your-zone-id}
 
 1. У панелі керування Cloudflare виберіть домен, який хочете використовувати
 2. Zone ID видно на вкладці "Огляд" у правій бічній панелі в розділі "API"
 3. Скопіюйте Zone ID
 
-### 3. Додайте константи до wp-config.php
+### 3. Додайте константи до wp-config.php {#3-add-constants-to-wp-configphp}
 
 Додайте такі константи до вашого файлу `wp-config.php`:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Увімкніть інтеграцію
+### 4. Увімкніть інтеграцію {#4-enable-the-integration}
 
 1. У вашій адмін-панелі WordPress перейдіть до Ultimate Multisite > Налаштування
 2. Перейдіть на вкладку "Зіставлення доменів"
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Увімкніть інтеграцію Cloudflare
 5. Натисніть "Зберегти зміни"
 
-## Як це працює
+## Як це працює {#how-it-works}
 
-### Керування піддоменами
+### Керування піддоменами {#subdomain-management}
 
 Коли створюється новий сайт у multisite-встановленні з піддоменами:
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. Піддомен за замовчуванням налаштовується на проксійовану роботу через Cloudflare (це можна змінити за допомогою фільтрів)
 3. Коли сайт видаляється, інтеграція видалить піддомен із Cloudflare
 
-### Відображення DNS-записів
+### Відображення DNS-записів {#dns-record-display}
 
 Інтеграція покращує відображення DNS-записів в адмін-панелі Ultimate Multisite шляхом:
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. Відображення того, чи проксійовані записи
 3. Показу додаткової інформації про DNS-записи
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (раніше називалося "Cloudflare for SaaS") — це функція Cloudflare, яка дозволяє вашим клієнтам використовувати власні домени з SSL у вашій multisite-мережі. Це рекомендований підхід для multisite-встановлень зі зіставленими доменами, які використовують Cloudflare, оскільки Cloudflare автоматично керує випуском і поновленням SSL-сертифікатів для кожного користувацького домену.
 
-### Чим це відрізняється від стандартної інтеграції Cloudflare
+### Чим це відрізняється від стандартної інтеграції Cloudflare {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Стандартна інтеграція | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **Найкраще для** | Multisite із піддоменами | Multisite зі зіставленими доменами |
 | **SSL** | Обробляється окремо | Автоматично керується Cloudflare |
 
-### Налаштування Cloudflare Custom Hostnames
+### Налаштування Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. У панелі керування Cloudflare відкрийте зону для вашого основного домену.
 2. Перейдіть до **SSL/TLS > Користувацькі імена хостів**.
@@ -101,23 +101,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 Починаючи з Ultimate Multisite v2.6.1, ця функція згадується як **Cloudflare Custom Hostnames** в усіх налаштуваннях і мітках плагіна. У попередніх версіях використовувалася назва "Cloudflare for SaaS", яка є назвою базового продукту Cloudflare.
 :::
 
-## Важливі примітки
+## Важливі примітки {#important-notes}
 
 Після нещодавніх оновлень Cloudflare проксіювання за wildcard тепер доступне для всіх клієнтів. Це означає, що стандартна інтеграція Cloudflare DNS стала менш критичною для multisite-встановлень із піддоменами, ніж раніше, оскільки ви можете просто налаштувати wildcard DNS-запис у Cloudflare.
 
-## Усунення несправностей
+## Усунення несправностей {#troubleshooting}
 
-### Проблеми з підключенням API
+### Проблеми з підключенням API {#api-connection-issues}
 - Переконайтеся, що ваш API-токен правильний і має необхідні дозволи
 - Перевірте, що ваш Zone ID правильний
 - Переконайтеся, що ваш Cloudflare account має необхідні дозволи
 
-### Піддомен не додано
+### Піддомен не додано {#subdomain-not-added}
 - Перевірте журнали Ultimate Multisite на наявність повідомлень про помилки
 - Переконайтеся, що піддомен ще не додано до Cloudflare
 - Переконайтеся, що ваш план Cloudflare підтримує кількість DNS-записів, які ви створюєте
 
-### Проблеми з проксіюванням
+### Проблеми з проксіюванням {#proxying-issues}
 - Якщо ви не хочете, щоб піддомени проксійувалися, можете використати фільтр `wu_cloudflare_should_proxy`
 - Деякі функції можуть працювати некоректно під час проксіювання (наприклад, певні функції адмін-панелі WordPress)
 - Розгляньте використання Page Rules Cloudflare, щоб обходити кеш для сторінок адмін-панелі

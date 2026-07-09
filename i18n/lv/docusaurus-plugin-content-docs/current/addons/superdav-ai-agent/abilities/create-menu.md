@@ -3,15 +3,15 @@ title: Izveidot izvēlni
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Izveidot izvēlni
+# Izveidot izvēlni {#create-menu}
 
 Funkcija **Izveidot izvēlni** izveido WordPress navigācijas izvēlnes ar atbalstu atšķirīgām navigācijas etiķetēm, kas ir nodalītas no lapu virsrakstiem.
 
-## Pārskats
+## Pārskats {#overview}
 
 Šī funkcija paplašina standarta izvēlnes izveides funkcionalitāti ar iespēju norādīt `navigation_label` parametru. Tas ļauj izveidot izvēlnes, kurās navigācijā rādītā etiķete atšķiras no lapas virsraksta, nodrošinot lielāku elastību site struktūrā un lietotāja pieredzē.
 
-## Parametri
+## Parametri {#parameters}
 
 | Parametrs | Tips | Obligāts | Apraksts |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Funkcija **Izveidot izvēlni** izveido WordPress navigācijas izvēlnes ar atbal
 | `location` | string | Nē | Theme atrašanās vieta, kurai piešķirt šo izvēlni, piem., `primary` |
 | `navigation_label` | string | Nē | Etiķete, ko rādīt navigācijā (atšķirīga no lapas virsraksta) |
 
-## Atgrieztā vērtība
+## Atgrieztā vērtība {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Funkcija **Izveidot izvēlni** izveido WordPress navigācijas izvēlnes ar atbal
 }
 ```
 
-## Navigācijas etiķete salīdzinājumā ar lapas virsrakstu
+## Navigācijas etiķete salīdzinājumā ar lapas virsrakstu {#navigation-label-vs-page-title}
 
 `navigation_label` parametrs ļauj nodalīt iekšējo izvēlnes nosaukumu no etiķetes, kas tiek rādīta lietotājiem:
 
@@ -43,9 +43,9 @@ Tas ir noderīgi, ja:
 - Jums jāatbalsta vairākas valodas ar atšķirīgiem etiķešu garumiem
 - Veidojat izvēlnes konkrētiem reģioniem vai lietotāju grupām
 
-## Lietošanas piemēri
+## Lietošanas piemēri {#usage-examples}
 
-### 1. piemērs: Vienkārša izvēlne ar navigācijas etiķeti
+### 1. piemērs: Vienkārša izvēlne ar navigācijas etiķeti {#example-1-simple-menu-with-navigation-label}
 
 **Uzvedne:**
 ```
@@ -62,7 +62,7 @@ Izveido primārās navigācijas izvēlni ar nosaukumu "Galvenā navigācija" un 
 }
 ```
 
-### 2. piemērs: Izvēlne konkrētai Theme atrašanās vietai
+### 2. piemērs: Izvēlne konkrētai Theme atrašanās vietai {#example-2-menu-for-specific-theme-location}
 
 **Uzvedne:**
 ```
@@ -80,7 +80,7 @@ Izveido kājenes izvēlni ar nosaukumu "Kājenes saites", navigācijas etiķeti 
 }
 ```
 
-## Integrācija ar Theme Builder
+## Integrācija ar Theme Builder {#integration-with-theme-builder}
 
 Izmantojot Theme Builder, funkcija Izveidot izvēlni:
 
@@ -89,13 +89,13 @@ Izmantojot Theme Builder, funkcija Izveidot izvēlni:
 3. Piešķir izvēlnes pareizajām theme atrašanās vietām
 4. Atbalsta izvēlnes vienumu pievienošanu pēc izveides
 
-## Saistītās funkcijas
+## Saistītās funkcijas {#related-abilities}
 
 - **`add_menu_item`** — Pievienot vienumus esošai izvēlnei
 - **`update_menu`** — Pārdēvēt izvēlni vai atkārtoti piešķirt to theme atrašanās vietai
 - **`delete_menu`** — Noņemt izvēlni no jūsu site
 
-## Labākā prakse
+## Labākā prakse {#best-practices}
 
 - **Izmantojiet skaidras navigācijas etiķetes** — uzturiet etiķetes īsas un lietotājiem aprakstošas
 - **Saskaņojiet theme atrašanās vietas** — piešķiriet izvēlnes pareizajai theme atrašanās vietai, lai nodrošinātu korektu attēlošanu
@@ -103,14 +103,14 @@ Izmantojot Theme Builder, funkcija Izveidot izvēlni:
 - **Pārbaudiet pielāgošanos ekrāna izmēriem** — pārliecinieties, ka izvēlnes mobilajās ierīcēs tiek attēlotas pareizi
 - **Lokalizējiet etiķetes** — izmantojiet atšķirīgas navigācijas etiķetes dažādām valodu versijām
 
-## Ierobežojumi
+## Ierobežojumi {#limitations}
 
 - Navigācijas etiķetes ir paredzētas tikai attēlošanai; iekšējais `name` joprojām tiek izmantots WordPress identificēšanai
 - Theme atbalsts atšķiras; ne visas themes atbalsta visas izvēlņu atrašanās vietas
 - Izvēlnes vienumi pēc izvēlnes izveides jāpievieno atsevišķi
 - Navigācijas etiķetes maiņai nepieciešams atjaunināt izvēlni
 
-## Saistītās funkcijas
+## Saistītās funkcijas {#related-abilities-1}
 
 - [Ģenerēt logotipa SVG](./generate-logo-svg.md) — izveidot logotipus jūsu site galvenei
 - [Validēt paletes kontrastu](./validate-palette-contrast.md) — nodrošināt pieejamas krāsu shēmas

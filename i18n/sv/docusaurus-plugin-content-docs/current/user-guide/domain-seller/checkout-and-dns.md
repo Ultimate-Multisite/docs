@@ -3,13 +3,13 @@ title: Kassafält och kund-DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout-fält och kundens DNS-hantering
+# Checkout-fält och kundens DNS-hantering {#checkout-field-and-customer-dns-management}
 
-## Checkout-fältet Domain Selection
+## Checkout-fältet Domain Selection {#the-domain-selection-checkout-field}
 
 Fältet **Domain Selection** är ett checkout-element som ger kunder ett val för hur de får sin webbplats domän. Lägg till det i valfritt checkout-formulär för att aktivera domänförsäljning.
 
-### Lägga till fältet i ett checkout-formulär
+### Lägga till fältet i ett checkout-formulär {#adding-the-field-to-a-checkout-form}
 
 1. Gå till **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Öppna eller skapa ett checkout-formulär
@@ -18,7 +18,7 @@ Fältet **Domain Selection** är ett checkout-element som ger kunder ett val fö
 5. Konfigurera fältalternativen (se nedan)
 6. Spara formuläret
 
-### Fältalternativ
+### Fältalternativ {#field-options}
 
 **Domänlägen** — Välj vilka flikar kunden ser. Varje läge kan aktiveras eller inaktiveras oberoende:
 
@@ -32,7 +32,7 @@ Fältet **Domain Selection** är ett checkout-element som ger kunder ett val fö
 
 **Domänprodukt** — Fäst eventuellt detta fält vid en specifik domänprodukt. Om det inte är inställt väljer addon automatiskt den matchande produkten baserat på den TLD kunden söker efter.
 
-### Kontaktfält för registrant
+### Kontaktfält för registrant {#registrant-contact-fields}
 
 När en kund väljer fliken **Registrera ny domän** lägger checkout-formuläret till kontaktfält för registrant direkt i formuläret:
 
@@ -43,11 +43,11 @@ När en kund väljer fliken **Registrera ny domän** lägger checkout-formuläre
 
 Dessa krävs av alla registrarer och valideras innan API-anropet för registrering görs. Telefonnummer formateras automatiskt till det internationella formatet `+CC.NNN` som registrarer förväntar sig.
 
-### Automatiskt genererad webbplats-URL
+### Automatiskt genererad webbplats-URL {#auto-generated-site-url}
 
 När en kund registrerar eller mappar en domän fylls fältet för webbplats-URL automatiskt i från den valda domänen. Kunder behöver inte fylla i ett separat URL-fält.
 
-### Sökbeteende
+### Sökbeteende {#search-behaviour}
 
 - Domäntillgänglighet kontrolleras i realtid med AJAX medan kunden skriver
 - Alternativa TLD-förslag visas när den önskade domänen inte är tillgänglig
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Kundens DNS-hantering
+## Kundens DNS-hantering {#customer-dns-management}
 
 Kunder kan hantera DNS-poster för sina registrerade domäner från sidan **My Account**, under posten för deras domän.
 
-### Record-typer som stöds
+### Record-typer som stöds {#supported-record-types}
 
 | Typ | Användning |
 |---|---|
@@ -91,11 +91,11 @@ Kunder kan hantera DNS-poster för sina registrerade domäner från sidan **My A
 | **MX** | Ange e-postväxlingsserver |
 | **TXT** | Lägg till SPF, DMARC, verifiering eller andra textposter |
 
-### Vilka leverantörer stöder DNS-hantering?
+### Vilka leverantörer stöder DNS-hantering? {#which-providers-support-dns-management}
 
 DNS-hantering (lägga till, redigera, ta bort poster) är tillgänglig med **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** och **Openprovider**. **Hostinger**-domäner kan uppdatera namnservrar via Domain Seller; DNS-poster för hostade domäner hanteras av den centrala Hostinger-integrationen för domänmappning. Namecheap-, GoDaddy- och NameSilo-domäner visar status- och utgångsinformation men DNS måste hanteras direkt i registrarens kontrollpanel.
 
-### Standard-DNS-poster
+### Standard-DNS-poster {#default-dns-records}
 
 Du kan konfigurera standard-DNS-poster som tillämpas automatiskt när en domän registreras. Gå till **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: visa och redigera DNS
+### Admin: visa och redigera DNS {#admin-viewing-and-editing-dns}
 
 Nätverksadministratörer kan visa och redigera DNS-poster för valfri kunddomän från domänens redigeringssida i **Network Admin › Ultimate Multisite › Domains**.

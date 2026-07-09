@@ -3,7 +3,7 @@ title: Captcha Cov kev hloov tshiab
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Daim ntawv hloov tshiab Captcha
+# Daim ntawv hloov tshiab Captcha {#captcha-changelog}
 
 Version: 1.5.0 - Tso tawm rau 2026-05-22
 * Tshiab: Hard-stop rate limiter — suav txhua GET thiab POST ntawm cov thaj chaw uas tiv thaiv nrog captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) thiab teb nrog HTTP 429, ib lub `Retry-After` header, thiab ib qho tarpit sleep uas randomised (1–5s, hard-capped rau 15s).

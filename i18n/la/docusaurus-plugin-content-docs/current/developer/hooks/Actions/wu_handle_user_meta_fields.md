@@ -4,11 +4,11 @@ title: Actio - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Actio: wu_handle_user_meta_fields
+# Actio: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Sine elaboratoribus plugin ut data meta usoris variis modis servent, si opus habeant.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Sine elaboratoribus plugin ut data meta usoris variis modis servent, si opus hab
 | $customer | `\Customer` | Obiectum emptoris Ultimate Multisite. |
 | $checkout | `\Checkout` | Classis checkout. |
 
-### Ex
+### Ex {#since}
 
 - 2.0.4
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) ad lineam 1244

@@ -3,7 +3,7 @@ title: Dostęp do strony konta
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Jak uzyskać dostęp do strony konta po raz pierwszy?
+# Jak uzyskać dostęp do strony konta po raz pierwszy? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Witaj w Ultimate Multisite!
 

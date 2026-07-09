@@ -3,7 +3,7 @@ title: Klientens Account-side
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Din kundes Account-side (v2)
+# Din kundes Account-side (v2) {#your-clients-account-page-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
@@ -11,7 +11,7 @@ Når kunder abonnerer på en plan i nettverket ditt, får de tilgang til et nett
 
 I denne veiledningen guider vi deg gjennom kundens Account-side, og du vil se hva kundene dine kan se og gjøre der inne.
 
-## Account-siden
+## Account-siden {#the-account-page}
 
 Account-siden er tilgjengelig ved å klikke på **Account** inne i kundens Dashboard.
 
@@ -27,7 +27,7 @@ Etter at en kunde klikker på den, vil de se en oversikt over medlemskapet sitt,
 
 De kan også endre medlemskapet til en annen plan, eller kjøpe en annen pakke eller tjeneste som du tilbyr. La oss se på hver seksjon separat.
 
-### Oversikt over medlemskapet ditt:
+### Oversikt over medlemskapet ditt: {#your-membership-overview}
 
 Den første blokken rett under kundenes nettstedsnavn viser en oversikt over deres nåværende plan og tjenester/pakker som ble kjøpt sammen med den. Blokken viser også medlemskapsnummeret, det opprinnelige beløpet som ble betalt for det, hvor mye planen og eventuelle tjenester/pakker koster, og hvor mange ganger de ble fakturert for dette medlemskapet. De kan også se om medlemskapet er **Aktivt** , **Utløpt** eller **Kansellert**.
 
@@ -43,7 +43,7 @@ Hvis kundene dine nå velger å kjøpe pakker eller tjenester for dette nåvære
 
 Merk at kupongkoder ikke kan legges til på denne siden for medlemskapsendring. Hvis kunden brukte en kupongkode ved det første medlemskapskjøpet, vil koden også gjelde for dette nye medlemskapet.
 
-### Oppdatere faktureringsadressen:
+### Oppdatere faktureringsadressen: {#updating-the-billing-address}
 
 På Account-siden kan kundene dine også oppdatere faktureringsadressen sin. De trenger bare å klikke på **Oppdater** ved siden av _Faktureringsadresse_.
 
@@ -53,7 +53,7 @@ Et nytt vindu vil vises for kunden din. Alt vedkommende trenger å gjøre er å 
 
 ![Skjema for oppdatering av faktureringsadresse](/img/account-page/billing-address-form.png)
 
-### Endre nettstedsmalen:
+### Endre nettstedsmalen: {#changing-the-site-template}
 
 For å la kundene dine endre nettstedsmalene sine, må du gå til **Ultimate Multisite > Innstillinger > Nettsteder** og slå på alternativet **Tillat malbytte**.
 
@@ -81,7 +81,7 @@ Etter å ha slått på bekreftelsen og klikket på **Utfør bytte** , vil den ny
 
 Kunder kan også bruke **Tilbakestill gjeldende mal** fra dette panelet når de trenger å tilbakestille nettstedet tilbake til den nåværende tildelte malen. Som ved å bytte til en annen mal kan tilbakestilling av en mal overskrive nettstedsinnhold, så kunder bør bare bekrefte det når de forstår tilbakestillingshandlingen.
 
-### Legge til egendefinerte domener:
+### Legge til egendefinerte domener: {#adding-custom-domains}
 
 Kundene dine vil også ha muligheten til å legge til et egendefinert domene for denne planen på Account-siden sin. For å la kundene dine bruke egendefinerte domener, gå til **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Etter å ha klikket på **Next Step** , kan kundene dine legge til navnet på de
 
 Etter å ha klikket på **Add Domain** , blir domenet lagt til i kundens konto. Alt de trenger å gjøre nå, er å endre DNS-oppføringene for dette egendefinerte domenet hos domeneregistratoren sin.
 
-### Endre passord:
+### Endre passord: {#changing-password}
 
 Inne i konto-Dashboard kan kundene dine også endre passordet sitt ved å klikke på **Change Password**.
 
@@ -125,7 +125,7 @@ Dette vil vise et nytt vindu der kundene dine må fylle inn sitt nåværende pas
 
 ![Skjema for endring av passord med felt for nåværende og nytt passord](/img/account-page/change-password-form.png)
 
-### Faresone:
+### Faresone: {#danger-zone}
 
 Vi har også to alternativer som vises i delen **Danger Zone**: **Delete Site** og **Delete Account**. De er begge i Danger Zone-delen fordi disse to handlingene er irreversible. Hvis kundene dine sletter nettstedet sitt eller kontoen sin, kan de ikke gjenopprette dem.
 

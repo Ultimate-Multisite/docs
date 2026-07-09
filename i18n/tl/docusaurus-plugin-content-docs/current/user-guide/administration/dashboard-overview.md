@@ -3,11 +3,11 @@ title: Pangkalahatang-ideya ng Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Pangkalahatang-tingin sa Dashboard
+# Pangkalahatang-tingin sa Dashboard {#dashboard-overview}
 
 Ang Ultimate Multisite ay may nakalaang **Dashboard** sa ilalim ng Ultimate Multisite menu, at nagdaragdag din ito ng mga widget sa Network Dashboard. Tatalakayin sa artikulong ito kung ano ang makikita mo sa parehong lugar.
 
-## Ang Network Dashboard
+## Ang Network Dashboard {#the-network-dashboard}
 
 Inilalagay ng Ultimate Multisite ang mga kapaki-pakinabang na widget sa network-level dashboard na matatagpuan sa **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Narito kung ano ang ibinibigay ng bawat widget:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ang Ultimate Multisite Dashboard
+## Ang Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Habang ang network dashboard ay nagpapakita ng pangkalahatang impormasyon tungkol sa network, ang ultimate multisite dashboard (sa pinaka-taas na antas ng Ultimate Multisite menu) naman ay nagpapakita ng impormasyon tungkol sa serbisyo.
 

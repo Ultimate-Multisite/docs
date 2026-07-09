@@ -3,7 +3,7 @@ title: PayPal کي ترتیب ڏيڻ
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# پے پال گیٹ وے سیٹ اپ کرنا (v2)
+# پے پال گیٹ وے سیٹ اپ کرنا (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**اہم نوٹ: اس مضمون میں Ultimate Multisite ورژن 2.x کا ذکر کیا گیا ہے۔**_
 
@@ -13,13 +13,13 @@ _**اہم نوٹ: اس مضمون میں Ultimate Multisite ورژن 2.x کا ذ
 
 نوٹ کریں کہ اس انٹیگریشن کے لیے درکار API کریڈینشلز حاصل کرنے کے لیے آپ کے پاس ایک **PayPal Business account** ہونا ضروری ہے۔
 
-## اپنے نیٹ ورک پر پے پال کو فعال کرنا
+## اپنے نیٹ ورک پر پے پال کو فعال کرنا {#enabling-paypal-on-your-network}
 
 اپنے نیٹ ورک پر PayPal کو دستیاب ادائیگی کا طریقہ بنانے کے لیے، **Ultimate Multisite > Settings > Payments** ٹیب پر جائیں اور PayPal کے آگے والے باکس پر ٹک کریں۔
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## گائیڈڈ سیٹ اپ وِزارڈ کا استعمال کرنا
+## گائیڈڈ سیٹ اپ وِزارڈ کا استعمال کرنا {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 نے ادائیگی کے گیٹ وے کی سیٹنگز میں ایک گائیڈڈ PayPal سیٹ اپ وِزارڈ شامل کیا ہے۔ جب آپ PayPal فعال کر لیں، تو **Ultimate Multisite > Settings > Payments** پر وِزارڈ کا استعمال کریں تاکہ یہ منتخب کریں کہ آپ گیٹ وے کو کیسے جوڑنا چاہتے ہیں اور محفوظ کرنے سے پہلے کون سی معلومات اب بھی درکار ہیں۔
 
@@ -30,7 +30,7 @@ Ultimate Multisite 2.10.0 نے ادائیگی کے گیٹ وے کی سیٹنگز
 
 اگر آپ کو وِزارڈ میں OAuth کا آپشن نظر نہیں آتا تو نیچے دی گئی دستی کریڈینشلز درج کرنے کی کارروائی مکمل کریں۔ گیٹ وے پچھلے Ultimate Multisite 2.x ریلیز کے بالکل جیسے PayPal Business API کریڈینشلز کے ساتھ کام کرتا ہے۔
 
-## PayPal API کریڈینشلز حاصل کرنا (Getting the PayPal API credentials)
+## PayPal API کریڈینشلز حاصل کرنا (Getting the PayPal API credentials) {#getting-the-paypal-api-credentials}
 
 ایک بار جب آپ PayPal کو ادائیگی کا گیٹ وے کے طور پر فعال کر دیں، تو آپ کو PayPal API **Username**، PayPal API **Password** اور PayPal API **Signature** کے لیے فیلڈز بھرنے ہوں گے۔
 

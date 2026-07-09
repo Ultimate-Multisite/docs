@@ -3,7 +3,7 @@ title: 社群
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# 如何加入 Ultimate Multisite 社群
+# 如何加入 Ultimate Multisite 社群 {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite 社群是一個讓你與其他 Ultimate Multisite 使用者交流、分享技巧和經驗的空間。要進入 Ultimate Multisite 社群，請前往 https://community.ultimatemultisite.com/home。
 

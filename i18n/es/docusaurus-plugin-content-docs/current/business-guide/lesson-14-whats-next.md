@@ -3,15 +3,15 @@ title: 'Lección 14: Qué sigue'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lección 14: ¿Qué sigue?
+# Lección 14: ¿Qué sigue? {#lesson-14-what-comes-next}
 
 Has construido una plataforma de sitios web de nicho desde cero. FitSite está activo, dando servicio a estudios de fitness y generando ingresos recurrentes. Esta última lección aborda los siguientes pasos.
 
-## Donde nos quedamos
+## Donde nos quedamos {#where-we-left-off}
 
 FitSite es un negocio en funcionamiento con clientes, operaciones y una trayectoria de crecimiento. Ahora pensamos en lo que sigue.
 
-## La red completa de FitSite
+## La red completa de FitSite {#the-complete-fitsite-network}
 
 Aquí está todo lo que construimos a lo largo de 14 lecciones:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Opción 1: Profundizar en tu nicho
+## Opción 1: Profundizar en tu nicho {#option-1-go-deeper-in-your-niche}
 
 Antes de expandirte a nuevos nichos, considera profundizar en el sector del fitness:
 
-### Sub-nichos
+### Sub-nichos {#sub-niches}
 
 - **Estudios de yoga** -- plantillas especializadas con funciones de meditación, retiros y talleres
 - **Gimnasios CrossFit** -- seguimiento de WOD, resultados de competiciones, funciones comunitarias
@@ -59,7 +59,7 @@ Antes de expandirte a nuevos nichos, considera profundizar en el sector del fitn
 
 Cada sub-nicho puede tener sus propias plantillas y potencialmente su propia marca, todo funcionando en la misma red Ultimate Multisite.
 
-### Funcionalidades Premium
+### Funcionalidades Premium {#premium-features}
 
 Crea funcionalidades por las que los estudios de fitness pagarán extra:
 
@@ -68,14 +68,14 @@ Crea funcionalidades por las que los estudios de fitness pagarán extra:
 - **Plantillas de blog de fitness** -- estructuras de contenido preconstruidas para marketing de contenidos de fitness
 - **Integración con redes sociales** -- publicación automática de horarios de clases y actualizaciones
 
-### Expansión geográfica
+### Expansión geográfica {#geographic-expansion}
 
 Si comenzaste a nivel local, expande a:
 
 - Otras ciudades de tu país
 - Otros países (usa las [funcionalidades de localización](/user-guide/localization/translating) de Ultimate Multisite para admitir múltiples idiomas)
 
-## Opción 2: Expandirse a nichos adyacentes
+## Opción 2: Expandirse a nichos adyacentes {#option-2-expand-to-adjacent-niches}
 
 El proceso que seguiste para los estudios de fitness funciona para cualquier nicho. Tu segundo nicho es más fácil porque ya tienes:
 
@@ -83,7 +83,7 @@ El proceso que seguiste para los estudios de fitness funciona para cualquier nic
 - Experiencia operativa
 - Un manual de procedimientos comprobado
 
-### Nichos adyacentes al fitness
+### Nichos adyacentes al fitness {#adjacent-niches-to-fitness}
 
 - **Spa y bienestar** -- terapeutas de masaje, spas de día, centros de bienestar
 - **Clubes deportivos** -- equipos deportivos amateur, ligas, clubes recreativos
@@ -91,7 +91,7 @@ El proceso que seguiste para los estudios de fitness funciona para cualquier nic
 
 Estos comparten superposición de audiencia con el fitness, por lo que tu marketing y asociaciones pueden trasladarse fácilmente.
 
-### Nichos completamente nuevos
+### Nichos completamente nuevos {#completely-new-niches}
 
 Aplica el marco de la Lección 2 para evaluar cualquier nicho:
 
@@ -108,7 +108,7 @@ Cada nuevo nicho necesita:
 
 La infraestructura de la plataforma, la facturación y los procesos operativos se mantienen iguales.
 
-## Opción 3: Crear una plataforma de plataformas
+## Opción 3: Crear una plataforma de plataformas {#option-3-build-a-platform-of-platforms}
 
 A escala, puedes ejecutar múltiples marcas de nicho en una única red Ultimate Multisite:
 
@@ -118,11 +118,11 @@ A escala, puedes ejecutar múltiples marcas de nicho en una única red Ultimate 
 
 Cada marca tiene sus propias plantillas, planes y marketing, pero comparten infraestructura, facturación y procesos operativos. Aquí es donde la economía de Ultimate Multisite se vuelve poderosa: una plataforma, muchos verticales.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Para una separación completa entre nichos, considera el [addon Multi-Network](/addons/multinetwork), que te permite ejecutar múltiples redes de WordPress desde una sola instalación.
 
-## Opción 4: Vender el negocio
+## Opción 4: Vender el negocio {#option-4-sell-the-business}
 
 Una plataforma de sitios web de nicho con ingresos recurrentes, baja tasa de abandono (churn) y una posición de mercado clara es un activo valioso. Los negocios SaaS suelen venderse entre 3 y 5 veces los ingresos anuales.
 
@@ -134,7 +134,7 @@ Un FitSite con 200 clientes con un ARPU de $89:
 
 Este no es un resultado garantizado, pero es uno realista para una plataforma de nicho bien gestionada.
 
-## Lo que has aprendido
+## Lo que has aprendido {#what-you-have-learned}
 
 Este curso te enseñó un proceso repetible:
 
@@ -150,7 +150,7 @@ Este curso te enseñó un proceso repetible:
 
 El nicho es la estrategia. La plataforma es la herramienta. Ultimate Multisite hace posible la herramienta. Tu comprensión del nicho la hace valiosa.
 
-## Empieza a construir
+## Empieza a construir {#start-building}
 
 Si seguiste el proceso con FitSite, tienes una plataforma funcional. Si leíste hasta aquí para encontrar tu propio nicho, vuelve a [Lección 2: Elegir tu nicho](lesson-2-picking-your-niche) y comienza el proceso para tu vertical elegida.
 

@@ -3,7 +3,7 @@ title: PayPal beállítása
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# A PayPal Gateway beállítása (v2)
+# A PayPal Gateway beállítása (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
@@ -13,13 +13,13 @@ A Stripe-hoz hasonlóan a PayPal is széles körben használt online fizetésekh
 
 Vedd figyelembe, hogy az integrációhoz szükséges API-hitelesítő adatok megszerzéséhez **PayPal Business account** szükséges.
 
-## A PayPal engedélyezése a hálózatodon
+## A PayPal engedélyezése a hálózatodon {#enabling-paypal-on-your-network}
 
 Ahhoz, hogy a PayPal elérhető fizetési módként engedélyezve legyen a hálózatodon, menj az **Ultimate Multisite > Settings > Payments** fülre, és jelöld be a PayPal melletti négyzetet.
 
 ![A PayPal engedélyezése az aktív fizetési gatewayek között](/img/config/settings-payment-gateways.png)
 
-## Az irányított beállítási varázsló használata
+## Az irányított beállítási varázsló használata {#using-the-guided-setup-wizard}
 
 Az Ultimate Multisite 2.10.0 irányított PayPal-beállítási varázslót ad a fizetési gateway beállításaihoz. Miután engedélyezted a PayPalt, használd a varázslót az **Ultimate Multisite > Settings > Payments** alatt annak kiválasztásához, hogyan szeretnéd csatlakoztatni a gatewayt, és annak megerősítéséhez, hogy mely hitelesítő adatok szükségesek még a mentés előtt.
 
@@ -30,7 +30,7 @@ A varázsló két beállítási útvonalat támogat:
 
 Ha nem látod az OAuth opciót a varázslóban, végezd el az alábbi kézi hitelesítőadat-megadási folyamatot. A gateway ugyanazokkal a PayPal Business API-hitelesítő adatokkal működik, mint a korábbi Ultimate Multisite 2.x kiadások.
 
-## A PayPal API-hitelesítő adatok beszerzése
+## A PayPal API-hitelesítő adatok beszerzése {#getting-the-paypal-api-credentials}
 
 Miután a PayPal engedélyezve lett fizetési gatewayként, ki kell töltened a PayPal API **Username**, PayPal API **Password** és PayPal API **Signature** mezőket.
 

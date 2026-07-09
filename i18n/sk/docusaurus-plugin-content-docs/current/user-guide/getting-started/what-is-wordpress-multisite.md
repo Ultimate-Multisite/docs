@@ -3,7 +3,7 @@ title: Čo je WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Čo je WordPress Multisite?
+# Čo je WordPress Multisite? {#what-is-wordpress-multisite}
 
 V svojom jádre poskytuje WordPress funkciu sa naznačujúcou ako „Multisite“, ktorá sa vracá do pôvodu z 2010 roku s lanskou WordPressu 3.0. Od toho isté má niekoľko revízií, ktoré sú určené na prinesenie nových funkcií a posilnenie bezpečnosti.
 
@@ -11,7 +11,7 @@ V podstate sa WordPress Multisite dá predstaviť takto: Univerzita udržiava je
 
 ##
 
-## Čo je presne WordPress Multisite?
+## Čo je presne WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite je funkciou WordPressu, ktorá umožňuje viacero webových stránok využívať jednu instaláciu WordPressu. Keď sa multisite aktivuje, pôvodná webová stránka WordPressu sa premení na podporu toho, čo sa zvyčajne nazýva **sieť webových stránok**.
 
@@ -23,7 +23,7 @@ Táto fakto je jednou z hlavných výhod multisite, pretože umožňuje rozvíja
 
 ##
 
-## Subdoména alebo podkatalóg?
+## Subdoména alebo podkatalóg? {#subdomain-or-subdirectory}
 
 Existujú dve režimy pre skriatie WordPress Multisite – a musíte si vybrať jeden pri premenovaní vášho štandardného instalovaného WordPressu na multisite instaláciu:
 
@@ -49,7 +49,7 @@ Jedným z hlavným výzvou pri nastavení režimu poddomén (subdomain mode) je 
 
 Na rozdiel od režimu podkatalógov (subdirectory mode) sú subportály v sieti založenom na poddoménach považované vyhľadávačmi za samostatné webové stránky, čo znamená, že obsah prítomný na jednej podstránke sa nekomolenie nepôsobia na SEO výkon iných podstránok vôbec.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Jednotkové instalácie WordPress umožňujú pridávať neobmedzený počet používateľov a dať týmto používateľom rôzne role s rôznymi prístupnosťami.
 
@@ -63,7 +63,7 @@ Plugin a témy môžu byť nainštalované alebo odinstalované len z network ad
 
 _Poznámka: ako vidíte, invitovanie k vašej sieti a poskytnutie jej statusu superadmin dá používateľovi plnú kontrolu nad vašou sieťou. Napríklad iní superadmini môžu odstrániť váš status superadmina, čo efektívne blokuje váš prístup k admin panelu vašej vlastnej siete. Aby sme umožnili zákazníkom Ultimate Multisite mať špecifickú kontrolu nad tým, čo môžu robiť ďalší superadmini, máme doplnok nazvaný Support Agents. Tento doplnok vám umožňuje vytvoriť druh používateľa – agenta – s len tiemi právami, ktoré potrebuje na vykonávanie svojich úloh v sieti._
 
-## Čo je zdieľané medzi subsitami a čo nie
+## Čo je zdieľané medzi subsitami a čo nie {#what-is-shared-among-subsites-and-what-is-not}
 
 Ako sme už pominali, jednou z kľúčových výhod WordPress multisite je to, že všetky subsity majú prístup k rovnakým konfiguráciám, základným súborom, témam, pluginom, základným súborom WordPress atď.
 
@@ -73,7 +73,7 @@ Avšak existujú prvky, ktoré sú dobre obmedzené na základe jednotlivých su
 - Každá subita má vlastný príspevkový panel a môže aktivovať alebo deaktivovať pluginy alebo témy, ak ich superadmin nie aktivoval v sieti.
 - Najväčšiu väčšinu tabuliek databázy je vytvorených pre každú subitu, čo znamená, že príspevky, komentáre, stránky, nastavenia a ďalšie sú obmedzené na každú subitu.
 
-## Správa používateľov v WordPress Multisite
+## Správa používateľov v WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Jednou citlivou témou v WordPress multisite je správa používateľov. Tabuľa používateľov WordPress je jedna z niečiatych tabuliek, ktoré sa zdieľajú medzi všetkými subsitami.
 
@@ -97,7 +97,7 @@ _Poznámka: Rozumíme, ako to môže byť zlé v závislosti od vášho použiti
 
 Hociak je tab s používateľmi zdieľaný, používateľov môžu admini podsitoviek alebo superadmin pridávať a odstraňovať z podsitoviek, a môžu mať na rôznych podsitoviek rôzne role používateľov.
 
-## Predpoklady pre výkon
+## Predpoklady pre výkon {#performance-considerations}
 
 WordPress multisite je skutočne silný, čo sa týka počtu sítí, ktoré môže podporovať. Toto sa dá overiť tým, že [WordPress.com](https://WordPress.com), Edublogs a Campuspress sú všetky služby založené na multisite a každý hostuje tisíce sítí.
 

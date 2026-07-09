@@ -4,23 +4,23 @@ title: Pansala - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Filter: wp_ultimo_site_exporter_url
+# Filter: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
 
 Pinapayagan ang mga developer na pamahalaan ang relatibong path sa root ng plugin.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
 | $dir | `string` | Path na relatibo sa root ng plugin na gusto mong i-access. |
 
-### Mula Noong
+### Mula Noong {#since}
 
 - 0.0.1
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L52) sa linya 52
 
 
-## Mga Ibinabalik
+## Mga Ibinabalik {#returns}
 Path na relatibo sa root ng plugin.

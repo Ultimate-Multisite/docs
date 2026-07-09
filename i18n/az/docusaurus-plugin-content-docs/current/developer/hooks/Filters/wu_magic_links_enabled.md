@@ -4,19 +4,19 @@ title: Filter - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filter: wu_magic_links_enabled
+# Filter: wu_magic_links_enabled {#filter-wumagiclinksenabled}
 
 Magic linklərin aktiv olub-olmadığını filtrləyir.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $enabled | `bool` | Magic linklərin aktiv olub-olmadığı. |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 2.0.0
-### Mənbə
+### Mənbə {#source}
 
 Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L377) at line 377

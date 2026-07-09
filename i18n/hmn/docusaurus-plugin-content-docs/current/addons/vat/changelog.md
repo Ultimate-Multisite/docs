@@ -3,7 +3,7 @@ title: Daim ntawv teev kev hloov pauv VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT Keeb kwm hloov tshiab
+# VAT Keeb kwm hloov tshiab {#vat-changelog}
 
 Version 1.0.7 - Tso tawm thaum 2026-02-03
 

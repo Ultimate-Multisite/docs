@@ -3,7 +3,7 @@ title: Daim ntawv teev kev hloov tshiab ntawm Tus Muag Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Keeb kwm hloov tshiab rau Domain Seller
+# Keeb kwm hloov tshiab rau Domain Seller {#domain-seller-changelog}
 
 Version 1.3.0 - Tso tawm rau 2026-06-02
 - Tshiab: Ntxiv lus ceeb toom hauv network-admin thaum HostAfrica reseller cov nyiaj tshuav qis dhau lawm
@@ -134,20 +134,20 @@ Version 1.0.0 - Tso tawm rau 2025-09-28
 * **Kho lawm:** Txhua deprecated v1 code hloov tshiab rau v2 standards
 * **Tshem tawm:** Legacy v1 compatibility (kev hloov uas rhuav compatibility)
 
-### Cov Version Dhau Los (v1 Legacy)
+### Cov Version Dhau Los (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Kho lawm: Tsis sib xws nrog Groundhogg CRM
 * Lus ceeb toom: Qhov no yog release kawg uas sib xws nrog v1
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Kho lawm: Tshem tawm License Key field
 * Kho lawm: Plan tabs ploj thaum feature plugin qhib
 * Txhim kho: Ntxiv skip button ntawm registration field
 
-### Version 0.0.1 - Initial Release
+### Version 0.0.1 - Initial Release {#version-001---initial-release}
 
 * Basic OpenSRS integration rau WP Ultimo v1
 * Domain search thiab registration yooj yim

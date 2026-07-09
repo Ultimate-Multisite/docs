@@ -3,9 +3,9 @@ title: Endpoint bateragarrientzako Ultimate AI Connector aldaketen erregistroa
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector-en Compatible Endpoints aldaketa-erregistroa
+# Ultimate AI Connector-en Compatible Endpoints aldaketa-erregistroa {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## 2.0.0 bertsioa — 2026-04-24an argitaratua
+## 2.0.0 bertsioa — 2026-04-24an argitaratua {#version-200--released-on-2026-04-24}
 
 * Berria: Hornitzaile anitzeko euskarria — konfiguratu AI endpoint anitz eta bideratu eskaerak hornitzaileen artean fallback automatikoarekin.
 * Konponketa: Hornitzaile anitzeko SDK integrazioa, hornitzaile-ID, erregistro-URL eta HTTP iragazkiaren esparru zuzenekin hornitzaile bakoitzeko.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Konponketa: Orrialde bakoitza kargatzean abiarazten zen HTTP eskaera blokeatzailea ezabatu da.
 * Hobetua: GitHub Actions lan-fluxuak Node.js 24ra eguneratu dira.
 
-## 1.0.0 bertsioa — Hasierako argitalpena
+## 1.0.0 bertsioa — Hasierako argitalpena {#version-100--initial-release}

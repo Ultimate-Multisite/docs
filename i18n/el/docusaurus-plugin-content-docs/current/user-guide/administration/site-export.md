@@ -3,27 +3,27 @@ title: Εξαγωγή Συστήματος
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Εξαγωγή Συστήματος
+# Εξαγωγή Συστήματος {#site-export}
 
 Η σελίδα διαχείρισης **Site Export** επιτρέπει στους διαχειριστές του network να συσκευάζουν ένα site, ή ολόκληρο το network, σε ένα αποвантажуακό archive για μετακίνηση, backup ή παράδοση.
 
-## Εξαγωγή ενός sites
+## Εξαγωγή ενός sites {#exporting-one-site}
 
 Μεταβείτε στο **Ultimate Multisite > Site Export** και επιλέξτε **Generate new Site Export**. Επιλέξτε το υπο-site που θέλετε να εξάγετε, και στη συνέχεια επιλέξτε αν το archive πρέπει να περιλαμβάνει τα uploads, τα plugins και τα themes.
 
 Όταν ολοκληρωθεί η εξαγωγή, κατεβάστε το ZIP από τη λίστα **Existing Exports**. Τα ZIPs εξαγωγής περιλαμβάνουν πλέον ένα `index.php` που εκκινεί αυτόνομα (self-booting) και ένα `readme.txt`, ώστε το archive να μπορεί να ανέβει σε έναν νέο host και να ξεκινήσει χωρίς να χρειαστεί πρώτα να εγκατασταθεί ένα ξεχωριστό plugin για εισαγωγή.
 
-## Εξαγωγή ολόκληρου του network
+## Εξαγωγή ολόκληρου του network {#exporting-the-whole-network}
 
 Χρησιμοποιήστε το **Network Export** στη σελίδα Site Export όταν χρειάζεστε ένα μόνο archive που περιέχει όλα τα υπο-sites του network. Αυτό είναι χρήσιμο πριν από μετακινήσεις host, ασκήσεις ανάκαμψης από καταστροφή ή αναδόμηση staging, όπου κάθε υπο-site πρέπει να μετακινηθεί μαζί.
 
 Επειδή μια εξαγωγή network μπορεί να είναι πολύ μεγαλύτερη από μια εξαγωγή ενός μόνο sites, εκτελέστε την σε περίοδο χαμηλής κίνησης και επιβεβαιώστε ότι ο προοριστικός χώρος αποθήκευσης έχει αρκετό ελεύθερο χώρο για τα uploads, τα plugins, τα themes και τα δημιουργημένα ZIP αρχεία.
 
-### Bundles Εισαγωγής Network
+### Bundles Εισαγωγής Network {#network-import-bundles}
 
 Από το Ultimate Multisite 2.12.0, το Site Exporter μπορεί να δημιουργεί **network import bundles** — εξειδικευμένα archives σχεδιασμένα για απλοποιημένη αποκατάσταση sites σε όλο το network. Ένα network import bundle περιέχει όλα τα απαραίτητα αρχεία και τα metadata για την αποκατάσταση πολλαπλών sites σε μια νέα εγκατάσταση network.
 
-#### Δημιουργία Network Import Bundle
+#### Δημιουργία Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Μεταβείτε στο **Ultimate Multisite > Site Export**
 2. Κάντε κλικ στο **Generate new Network Export**
@@ -32,7 +32,7 @@ _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 5. Κάντε κλικ στο **Generate**
 6. Κατεβάστε το bundle ZIP από τη λίστα **Existing Exports**
 
-#### Ανάκαμψη από Network Import Bundle
+#### Ανάκαμψη από Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Για να αποκαταστήσετε sites από ένα network import bundle:
 
@@ -52,7 +52,7 @@ _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 - Τα media uploads (εάν περιλαμβάνονται στο bundle)
 - Τα προσαρμοσμένα جداول και τα δεδομένα της βάσης δεδομένων
 
-## Εγκατάσταση ενός self-booting export ZIP
+## Εγκατάσταση ενός self-booting export ZIP {#installing-a-self-booting-export-zip}
 
 Για να αποκαταστήσετε ένα self-booting ZIP σε έναν νέο host:
 

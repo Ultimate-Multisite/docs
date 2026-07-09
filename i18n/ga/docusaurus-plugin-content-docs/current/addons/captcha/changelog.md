@@ -3,7 +3,7 @@ title: Loga Athruithe Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Loga Athruithe Captcha
+# Loga Athruithe Captcha {#captcha-changelog}
 
 Leagan: 1.5.0 - Eisithe ar 2026-05-22
 * Nua: Teorannóir ráta le stop crua — comhaireann sé gach GET agus POST ar dhromchlaí atá cosanta le captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) agus freagraíonn sé le HTTP 429, ceanntásc `Retry-After`, agus codladh tarpit randamaithe (1–5s, le huasteorainn chrua 15s).

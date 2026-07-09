@@ -3,57 +3,57 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Kea lehlelo la Ultimate Multisite. Ke tla u fana ka tsela efe ea ho sebelisa lehlelo liti la WordPress le ho ba le lehlelo le fapaneng.
 
-## Kea kee? (What is it?)
+## Kea kee? (What is it?) {#the-wordpress-multisite}
 
 Ultimate Multisite ke lehlelo le fetang le WordPress. Ho na lehlopolo le lehlopolo le fapaneng le lehlopolo le lehlelo le fapaneng, leholo le ho ba le lehlelo le fapaneng. Kea u sa tsoalo ka ho ba le lehlelo la liti le lehlelo le fapaneng ka nako eona.
 
-## Ho sebelisa Ultimate Multisite (How to use Ultimate Multisite)
+## Ho sebelisa Ultimate Multisite (How to use Ultimate Multisite) {#the-network}
 
 Ho sebelisa Ultimate Multisite haholo ho hloka ho tseba ka setso sehlopolo sa WordPress. Ke tla u fana ka tsela efe ea ho bua le ho ba le lehlelo la liti le lehlelo le fapaneng:
 
 1. **Ho laola (Installation):** Ho laola Ultimate Multisite haholo ho hloka ho ba le lehlopolo la WordPress le lehlopolo la MySQL.
 2. **Ho setsoe (Configuration):** Ha o laola, o tla ba le lehlelo le fapaneng le lehlopolo la liti le lehlopolo la lehlelo le fapaneng. O tla u hlalosa ka ho sebelisa dashboard ya Multisite.
 
-## Ho Ba Le Lehlelo le Fapaneng (Having Multiple Sites)
+## Ho Ba Le Lehlelo le Fapaneng (Having Multiple Sites) {#subdomain-vs-subdirectory}
 
 Lehlelo la multisite le bolela hore o ka ba le lehlelo le fapaneng, joalo ka:
 
 * **Lehlelo la liti:** O ka ba le lehlelo le fapaneng le lehlopolo la liti.
 * **Lehlelo la lehlopolo le fapaneng:** O ka ba le lehlopolo le fapaneng le lehlopolo la lehlelo le fapaneng (lehlelo la site le lehlopolo le fapaneng).
 
-## Ho Ba Le Fapaneng (Being Different)
+## Ho Ba Le Fapaneng (Being Different) {#plugins-and-themes}
 
 Ho ba le lehlelo le fapaneng haholo ho hloka ho tseba ka tsela efe ea ho sebelisa features e fapaneng ea Ultimate Multisite. Ke tla u fana ka tsela efe ea ho hlalosa:
 
 * **Ho ba le site le lehlopolo la liti:** Ho ba le lehlelo la site le lehlopolo la liti.
 * **Ho ba le site le lehlopolo le fapaneng:** Ho ba le lehlopolo la site le lehlopolo la lehlopolo le fapaneng (lehlopolo la site le lehlopolo la lehlopolo le fapaneng).
 
-## Ho Ba Le Fapaneng (Being Different) - Ho Hlalosa Features
+## Ho Ba Le Fapaneng (Being Different) - Ho Hlalosa Features {#users-and-administrators}
 
 Ho hlalosa features e fapaneng ea Ultimate Multisite haholo ho hloka ho tseba ka tsela efe ea ho sebelisa:
 
 * **Hooks:** Hooks, joalo ka `do_action` le `remove_action`, ke tsela efe ea ho ba le lehlopolo la site le lehlopolo la lehlopolo le fapaneng.
 * **Custom Logic:** Custom logic when checkout completes (Ho hlalosa logic e fetang nako eona ea checkout).
 
-## Ho Ba Le Fapaneng (Being Different) - Ho Hlalosa Features
+## Ho Ba Le Fapaneng (Being Different) - Ho Hlalosa Features {#media}
 
 Ho ba le lehlelo le fapaneng haholo ho hloka ho tseba ka tsela efe ea ho sebelisa features e fapaneng ea Ultimate Multisite. Ke tla u fana ka tsela efe ea ho hlalosa:
 
 * **Dashboard:** Dashboard, ke maemo a hau a lehlelo la multisite.
 * **AddonBanner:** AddonBanner, sehlopolo se fetang sehlopolo sa site.
 
-## Ho Ba Le Fapaneng (Being Different) - Ho Hlalosa Features
+## Ho Ba Le Fapaneng (Being Different) - Ho Hlalosa Features {#permalinks}
 
 Ho ba le lehlelo le fapaneng haholo ho hloka ho tseba ka tsela efe ea ho sebelisa features e fapaneng ea Ultimate Multisite. Ke tla u fana ka tsela efe ea ho hlalosa:
 
 * **Stripe:** Stripe, sehlopolo sa liti la payment.
 * **WooCommerce:** WooCommerce, lehlelo la site le lehlopolo la lehlopolo la payment.
 
-## Ho Ba Le Fapaneng (Being Different) - Ho Hlalosa Features
+## Ho Ba Le Fapaneng (Being Different) - Ho Hlalosa Features {#static-pages}
 
 Ho ba le lehlelo le fapaneng haholo ho hloka ho tseba ka tsela efe ea ho sebelisa features e fapaneng ea Ultimate Multisite. Ke tla u fana ka tsela efe ea ho hlalosa:
 
@@ -62,7 +62,7 @@ Ho ba le lehlelo le fapaneng haholo ho hloka ho tseba ka tsela efe ea ho sebelis
 
 Ultimate Multisite ke plugin ea WordPress ehlopha ehlopha ehlopha e hlompha e ka u ba le ho fana ka WaaS kapa Websites as a Service sa batho ba hau. Ho seng ka ho fana le ho tseba hore na le ho hlalosa hore na Ultimate Multisite e ka thusa lona le batho ba lona, re hloka ho ba le lehle le lehlopha lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle le
 
-## WordPress Multisite
+## WordPress Multisite {#registration}
 
 Kea le WordPress Multisite. Ke tla u re ka nthela ka sebopego sa ho ba le le WordPress Multisite.
 
@@ -80,13 +80,13 @@ Ka tsela e fetang, ka bone WordPress multisite le se se se: Leho la Sekoleng le 
 
 Ho fana ka ho lula le tsela e leng nako o buang ka litlhahlo tse dihle tsa bohlokoa, li tla ba le mo dokumente ea Ultimate Multisite le mo mahlakeng a WordPress.
 
-### Leano (The Network)
+### Leano (The Network) {#domain-and-ssl}
 
 Ka WordPress, sehlopse sehlopse (multisite network) ke leka sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehlopse sehl
 
 Ho fana'a fa ho na le dikwete tse dintsi tse fapaneng ha le motse o o na le multisite network le le motse o o na le WordPress, re tla li bua ka tsela e le ntlha.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#ultimate-multisite}
 
 Ho e kholo ya litšomo tse o tla hloka go dira ke ho utloa kae le ho ba le *subdirectories* (dits'etso tsa sub-directory) kapa *subdomains* (dits'etso tsa subdomain). Ultimate Multisite e ba le seka se seba ka both, mme go na le dikgwetlho tse di fetang ho tloha ho litšomo tse di fetang.
 
@@ -104,7 +104,7 @@ Sertifika sa SSL se le wildcard o dira encryption (go fana ka tsela ya go tsamay
 
 Le fa ho na litlhoko tse ling, goanyane ha li le fetoga le ho sebelisoa, le ho nang le boikanyetso le ho fana ka boikanyetso le ho batla ho bona hore li le etsa kae.
 
-#### Plugins le Themes
+#### Plugins le Themes {#introduction}
 
 Ho lapa le WordPress li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka eng li fana ka
 
@@ -112,7 +112,7 @@ Re ka ntlha, e leng ha le fetogolo ha WordPress ho ba multisite, bo ba site admi
 
 Ho ntlha, bo ntse ba le bone ba tlwaelo ea ho faka plugin le theme ka moetso o tla (network administrator). Ba fana ka tsela eona ea ho fana ka litšomo (permissions) ho sebelisa tse dintsi tsa plugins le themes ho site tsa network. Bo site administrators (site administrators) ba ka fana ka ho fana ka plugin le theme kapa ho fihla (access) tse a ntse di fana ka site ea bona.
 
-#### Baalisi le Boalagi
+#### Baalisi le Boalagi {#use-cases}
 
 Kea fana ka tsela e fetang baalisi (users) le boalagi (administrators).
 
@@ -130,13 +130,13 @@ Ho re, ke re bona se se seboha ka ho tsamaea. Le fa go ba le boneletse ho ba le 
 
 Le fa se se le lona ho ba le tsela e kholo ho fihla, le fa se se le mofuta o oona boitshwaro ba ntshwaro haholo ba batho ba tseba ka WordPress e le le moithuti o o tsamaeng, joalo ka ho ba le maemo a ba le thaba ho ba le maemo a ba le thaba.
 
-#### Media
+#### Media {#case-1-an-agency}
 
 Ha nako le fa site tsa netwotong li share database e le e le le sengwe ka WordPress Multisite, ba tlhaga dikotla tse fapaneng tsa filesystem ho litlhaloso tsa media.
 
 Le tsoalo ea WordPress (wp-content/uploads) ho tsamaea ka ho fana ka id e le ea site ea network; mme se se fetoa ho fana ka id e le ea site ea network. Ka thuso, litaba tsa media tsa site ea network li bonahala ka wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#case-2-niche-provider}
 
 Re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re re, re
 
@@ -150,7 +150,7 @@ Ha o ka fana'a le hore ha re hloka le ho etsa tsela ena moo u batlang configurat
 
 <!-- Screenshot e ne ho fetang: SEO settings ea permalink ho tsoalo ea subdomain -->
 
-#### Static Pages (Pages e Ho Ba)
+#### Static Pages (Pages e Ho Ba) {#case-3-wordpress-web-hosting}
 
 Morero ea setso sa _subdirectory_ ho nna le boikanyetso ba tsheho ea leela, jo bolela hore sehlopha sehlopha sehlopha (static pages) sehlopha sehlopha sehlopha (main site) le sehlopha sehlopha sehlopha (network sites) sehlopha sehlopha sehlopha (share the same path).
 
@@ -176,7 +176,7 @@ Ha o kae, ha le fa morao a fana'a (log in), ba fana'a ho nts'a lafatshe (network
 
 Ha ho fana ka se se se le se se se se se se se se se se se se se se se se se se se se se se se se se se se se se se se
 
-### Domain le SSL
+### Domain le SSL {#architecture-considerations}
 
 Kea re bua ka domain le SSL. Kea re bona hore na domain ya hau e ntse e teng, e ntse e fana ka ts'oano (SSL) ea ho hlahloba.
 
@@ -200,11 +200,11 @@ Ho ba leba la mofuta o fana ka tlhaho ea bohlokoa ho ba leboho le lona le thuto 
 
 Ho nako o fapaneng, le haholo ho fana ka tsela ea hore [www.anotherdomain.com](http://www.anotherdomain.com) e fane ka 'site1', baetso ba network (network administrator) ba tla leli le bohloko ba ho dula (manage) entries ea DNS ho matla le ho setso (implement) SSL certificates.
 
-## Ultimate Multisite
+## Ultimate Multisite {#shared-vs-dedicated-hosting}
 
 Ha o ka utloa hore o ka tseba fa ho fetoga joalo ka tšepo ya WordPress e le mo installation e e dirang (stand-alone) le mo installation e e dirang ka bophelo bohle (Multisite), re tla bona hore na Ultimate Multisite ke se se se se se se se se se se se se se se se se se se se se se se se se se se se se se se se
 
-### Le Motšoao
+### Le Motšoao {#performance-considerations}
 
 Ultimate Multisite ke le tšhobo ea hau e ntle ho fetola Web Site a sebopehang (WaaS). Re batla ka Wix.com, Squarespace, WordPress.com le seng fa uqale uena ho nka kholo.
 
@@ -212,9 +212,9 @@ Ho lapa le lapa, Ultimate Multisite le fetola ka go sebelisa WordPress Multisite
 
 Re ka leba fa tsela e leng fela ea lits'a tse ba nang le boitshwaro ba ho sebelisa WordPress.
 
-### Use Cases
+### Use Cases {#backups}
 
-#### Tsela 1: Leano (An Agency)
+#### Tsela 1: Leano (An Agency) {#snapshots}
 
 ...
 
@@ -242,7 +242,7 @@ Mofuta (Themes) o na le boikotso jo bo fetileng, ho ntsa hore mofuta se se fetil
 
 Agensi (agencies) ho ba le bohloko le bohlepa le Ultimate Multisite, e ba ba nts'oang ho etsa se se se etsa meglio - ho rata ho fana ka web sites tse ntle.
 
-#### Case 2: Moetso o ne a tsela
+#### Case 2: Moetso o ne a tsela {#external-scripts}
 
 
 
@@ -258,7 +258,7 @@ Ho ntho e fanaang le seo, ho ba le fa sefapang sa ho fetola sefapang ka tsela e 
 
 Ka fetoga lehetseng la tsela e hloka, ho ka ba le fihloho tse fapaneng tsa _subdirectory_ kapa _subdomain_, le feta moo bohloko ba tšepo ho ba le ho ba le ho ba le. Ka mofuta oona, bohloko ba tsela ha bo le sertifiketi sa SSL sefane (SSL certificate) sefane sa _subdirectory_, kapa sertifiketi sa wildcard sefane sa _subdomain_.
 
-#### Sebelo 3: Ho Hōlōlo la WordPress
+#### Sebelo 3: Ho Hōlōlo la WordPress {#plugins}
 
 Ho hōlōlo la WordPress (WordPress Web Hosting) ke eng sebope se ka fana ka ho ba leka le ho tsamaea. Ke re ka re bolela ka sebope se sebope se ka fana ka ho ba leka le ho tsamaea.
 
@@ -272,11 +272,11 @@ Ho ba leba ba batlang ho fana ka sehlopha le Ultimate Multisite, ho na le sehlop
 
 Ho lona le ho fana ka tsela e ntle le litaba tse fana ka bohlokoa joalo ka ho ba le ho fana ka tsela e ntle le se se fetang sa Wix, Squarespace, WordPress.com le ba bang.
 
-### Litaba tsa Boemo (Architecture Considerations)
+### Litaba tsa Boemo (Architecture Considerations) {#domain-and-ssl-1}
 
 Ho lona le ho fana ka tsela e ntle ea hore u se a le mofuta o hlokang ho ba le lehlelo le fetang la tekinoloji ho ba le lehlelo le lehlelo le Ultimate Multisite installation.
 
-#### Hosting le Ho Ba Le Lehlelo (Shared vs. Dedicated Hosting)
+#### Hosting le Ho Ba Le Lehlelo (Shared vs. Dedicated Hosting) {#plugins-1}
 Ho fana ka tsela e ntle ea hore u se a le mofuta o hlokang ho ba le lehlelo le fetang la tekinoloji ho ba le lehlelo le lehlelo le Ultimate Multisite installation.
 
 Ho nna lethatang, go na lethatang bohlelo bohleli ba hosting, mme batho ba tlameha ho ba le tšepo e le ho fana ka sebope se sebotse. Ba ba leba-leba ba rala ho fana ka tšepo e le ho fana ka sebope se botse. Ka nako le thata, tšepo ea liti tsa Ultimate Multisite haholo a leho sebope se botsa se sebotse.

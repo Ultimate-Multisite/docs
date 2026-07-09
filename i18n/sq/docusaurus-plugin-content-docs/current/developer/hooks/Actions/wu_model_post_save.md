@@ -4,11 +4,11 @@ title: Veprim - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Action: wu_model_post_save
+# Action: wu_model_post_save {#action-wumodelpostsave}
 
 Aktivizohet pasi një objekt ruhet në bazën e të dhënave.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Tipi | Përshkrimi |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Aktivizohet pasi një objekt ruhet në bazën e të dhënave.
 | $data_unserialized | `array` | Të dhënat e objektit që do të ruhen. |
 | $this | `\Base_Model` | Instanca e objektit. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.0.0
-### Burimi
+### Burimi {#source}
 
 - Përcaktuar në [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L613) në rreshtin 613
 - Përcaktuar në [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1743) në rreshtin 1743

@@ -3,13 +3,13 @@ title: Kusakinisha Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Kusakinisha Ultimate Multisite
+# Kusakinisha Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Mwongozo huu unadhani tayari umesakinisha na kusanidi WordPress Multisite. Ili kujifunza jinsi ya kufanya hivyo, angalia [mwongozo huu](https://www.wpbeginner.com/glossary/multisite/) kutoka WP Beginner.
 :::
 
-## Kusakinisha Plugin
+## Kusakinisha Plugin {#installing-the-plugin}
 
 Ultimate Multisite inapatikana kwa bure kwenye [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Baada ya uanzishaji, utaelekezwa moja kwa moja kwenye Mchawi wa Usanidi.
 
 ![Plugin imeanzishwa na umeelekezwa kwenye mchawi](/img/installation/plugin-activated.png)
 
-## Mchawi wa Usanidi
+## Mchawi wa Usanidi {#setup-wizard}
 
 Mchawi wa Usanidi utakuelekeza katika kusanisha Ultimate Multisite kwa takribani dakika 10.
 
-### Karibu
+### Karibu {#welcome}
 
 Bofya **Anza** ili uanze.
 
 ![Skrini ya karibu ya Mchawi wa Usanidi](/img/installation/wizard-welcome.png)
 
-### Ukaguzi Kabla ya Ufungaji
+### Ukaguzi Kabla ya Ufungaji {#pre-install-checks}
 
 Hatua hii inakagua taarifa ya mfumo wako na usakinishaji wa WordPress ili kuhakikisha kuwa inakidhi mahitaji ya Ultimate Multisite. Ikiwa kila kitu kinaonekana vizuri, bofya **Nenda kwenye Hatua Inayofuata**.
 
@@ -51,31 +51,31 @@ Ikiwa Ultimate Multisite imesakinishwa lakini **bado haijaanzishwa katika mtanda
 Kubofya **Washa kwa Mtandao** huwezesha plugin katika mtandao wako mzima moja kwa moja. Baada ya kuwashwa, mchawi unaendelea kawaida hadi hatua ya usakinishaji. Huna haja ya kuondoka kwenye mchawi ili kurekebisha hali ya uanzishaji.
 :::
 
-### Ufungaji
+### Ufungaji {#installation}
 
 Msanikishaji ataunda meza muhimu za hifadhidata na kusakinisha faili ya `sunrise.php` ambayo Ultimate Multisite inahitaji kufanya kazi. Bofya **Sakinisha** ili uendelee.
 
 ![Hatua ya usakinishaji inaonyesha meza za hifadhidata na sunrise.php](/img/installation/wizard-installation.png)
 
-### Kampuni Yako
+### Kampuni Yako {#your-company}
 
 Jaza taarifa ya kampuni yako na uweke sarafu chaguomsingi. Taarifa hii itatumika katika jukwaa lako la WaaS. Bofya **Endelea** baada ya kumaliza.
 
 ![Hatua ya usanidi wa "Kampuni Yako"](/img/installation/wizard-your-company.png)
 
-### Maudhui Chaguomsingi
+### Maudhui Chaguomsingi {#default-content}
 
 Hatua hii inakuwezesha kusakinisha violezo vilivyotanguliwa, bidhaa na maudhui mengine ya kuanzia. Hii ni njia nzuri ya kujifahamisha na vipengele vya Ultimate Multisite. Bofya **Sakinisha** ili kuongeza maudhui chaguomsingi, au ruka hatua hii ikiwa unapendelea kuanza kutoka mwanzo.
 
 ![Hatua ya usakinishaji wa maudhui chaguomsingi](/img/installation/wizard-default-content.png)
 
-### Plugins Inayopendekezwa
+### Plugins Inayopendekezwa {#recommended-plugins}
 
 Sakinishe hiari plugins zinazopendekezwa. Bofya **Sakinisha** ili kuongeza au uendelee bila kusakinisha.
 
 ![Hatua ya plugins inayopendekezwa](/img/installation/wizard-recommended-plugins.png)
 
-### Tayari!
+### Tayari! {#ready}
 
 Hiyo ndiyo! Usakinishaji wako wa Ultimate Multisite umekamilika. Sasa unaweza kuanza kujenga jukwaa lako la Tovuti kama Huduma kutoka kwa **Dashboard ya Msimamizi wa Mtandao**.
 

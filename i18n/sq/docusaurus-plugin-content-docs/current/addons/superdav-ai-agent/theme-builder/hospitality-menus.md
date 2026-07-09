@@ -3,15 +3,15 @@ title: Menu të mikpritjes
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menutë e Hospitality
+# Menutë e Hospitality {#hospitality-menus}
 
 Veçoria **Hospitality Menus** i lejon Theme Builder të gjenerojë dhe të integrojë faqe të strukturuara menush ushqimi dhe pijesh drejtpërdrejt në faqen tuaj WordPress.
 
-## Përmbledhje
+## Përmbledhje {#overview}
 
 Theme Builder tani mund të krijojë faqe menush profesionale dhe të strukturuara për biznese hospitality, duke përfshirë restorante, kafene, bare dhe shërbime kateringu. Këto menu janë plotësisht të integruara në dizajnin e faqes suaj dhe mund të përditësohen e menaxhohen lehtësisht.
 
-## Llojet e mbështetura të Hospitality
+## Llojet e mbështetura të Hospitality {#supported-hospitality-types}
 
 - **Restorante** — menu ngrënieje me shërbim të plotë
 - **Kafene** — menu kafeje dhe ushqimesh të lehta
@@ -21,9 +21,9 @@ Theme Builder tani mund të krijojë faqe menush profesionale dhe të strukturua
 - **Food Trucks** — menu shërbimi ushqimor mobil
 - **Birrari dhe kantina vere** — menu pijesh me përshkrime
 
-## Struktura e menusë
+## Struktura e menusë {#menu-structure}
 
-### Kategoritë e menusë
+### Kategoritë e menusë {#menu-categories}
 
 Menutë organizohen në kategori:
 
@@ -34,7 +34,7 @@ Menutë organizohen në kategori:
 - **Pije** — pije (alkoolike dhe joalkoolike)
 - **Speciale** — oferta ditore ose sezonale
 
-### Formati i artikullit të menusë
+### Formati i artikullit të menusë {#menu-item-format}
 
 Çdo artikull menuje përfshin:
 
@@ -49,7 +49,7 @@ Menutë organizohen në kategori:
 }
 ```
 
-#### Fushat e artikullit
+#### Fushat e artikullit {#item-fields}
 
 | Fusha | Lloji | Përshkrimi |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Menutë organizohen në kategori:
 | `allergens` | array | Alergjenë të zakonshëm (arra, fruta deti me guaskë, etj.) |
 | `availability` | string | Kur është i disponueshëm (çdo ditë, sezonal, etj.) |
 
-## Krijimi i Hospitality Menus
+## Krijimi i Hospitality Menus {#creating-hospitality-menus}
 
-### Hapi 1: Jepni informacionin e menusë
+### Hapi 1: Jepni informacionin e menusë {#step-1-provide-menu-information}
 
 Tregojini Theme Builder për menunë tuaj:
 
@@ -71,7 +71,7 @@ Krijo një menu restoranti për restorantin tim italian me meze,
 pjata me pasta, pjata kryesore dhe ëmbëlsira. Përfshi çmime dhe përshkrime.
 ```
 
-### Hapi 2: Theme Builder gjeneron menunë
+### Hapi 2: Theme Builder gjeneron menunë {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formaton çmimet dhe përshkrimet
 5. Shton informacion dietik dhe për alergjenët
 
-### Hapi 3: Rishikoni dhe personalizoni
+### Hapi 3: Rishikoni dhe personalizoni {#step-3-review-and-customize}
 
 Mund të:
 
@@ -91,9 +91,9 @@ Mund të:
 4. Përditësoni përshkrimet dhe informacionin dietik
 5. Rregulloni stilimin dhe paraqitjen
 
-## Opsionet e shfaqjes së menusë
+## Opsionet e shfaqjes së menusë {#menu-display-options}
 
-### Faqe e plotë menuje
+### Faqe e plotë menuje {#full-menu-page}
 
 Një faqe e dedikuar që shfaq menunë tuaj të plotë:
 
@@ -102,7 +102,7 @@ Një faqe e dedikuar që shfaq menunë tuaj të plotë:
 - Paraqitje e përshtatshme për printim
 - Dizajn i përshtatshëm për pajisje mobile
 
-### Widget menuje
+### Widget menuje {#menu-widget}
 
 Integroni seksione menuje në faqe të tjera:
 
@@ -111,7 +111,7 @@ Integroni seksione menuje në faqe të tjera:
 - Menu pijesh në faqen e barit
 - Prezantim ëmbëlsirash në footer
 
-### PDF menuje
+### PDF menuje {#menu-pdf}
 
 Gjeneroni një menu PDF të shkarkueshme:
 
@@ -120,9 +120,9 @@ Gjeneroni një menu PDF të shkarkueshme:
 - Përfshin imazhe dhe përshkrime
 - E lehtë për t’u ndarë dhe dërguar me email
 
-## Informacion dietik dhe për alergjenët
+## Informacion dietik dhe për alergjenët {#dietary-and-allergen-information}
 
-### Atributet dietike
+### Atributet dietike {#dietary-attributes}
 
 Shënoni artikujt me informacion dietik:
 
@@ -134,7 +134,7 @@ Shënoni artikujt me informacion dietik:
 - **Me pak karbohidrate** — karbohidrate të reduktuara
 - **Me shumë proteina** — i pasur me proteina
 
-### Paralajmërimet për alergjenët
+### Paralajmërimet për alergjenët {#allergen-warnings}
 
 Përfshini alergjenë të zakonshëm:
 
@@ -147,9 +147,9 @@ Përfshini alergjenë të zakonshëm:
 - **Gluten** — grurë dhe drithëra që përmbajnë gluten
 - **Susam** — fara dhe vaj susami
 
-## Menaxhimi i menusë
+## Menaxhimi i menusë {#menu-management}
 
-### Përditësimi i çmimeve
+### Përditësimi i çmimeve {#updating-prices}
 
 Përditësoni lehtësisht çmimet e menusë:
 
@@ -159,7 +159,7 @@ Përditësoni lehtësisht çmimet e menusë:
 4. Ruani ndryshimet
 5. Ndryshimet shfaqen menjëherë në faqen tuaj
 
-### Shtimi i artikujve sezonalë
+### Shtimi i artikujve sezonalë {#adding-seasonal-items}
 
 Krijoni variante sezonale të menusë:
 
@@ -169,7 +169,7 @@ Krijoni variante sezonale të menusë:
 4. Planifikoni datat e disponueshmërisë
 5. Shfaqini automatikisht gjatë sezonit
 
-### Menaxhimi i specialeve
+### Menaxhimi i specialeve {#managing-specials}
 
 Shfaqni speciale ditore ose javore:
 
@@ -179,7 +179,7 @@ Shfaqni speciale ditore ose javore:
 4. Përditësoni çdo ditë ose çdo javë
 5. Arkivoni specialet e vjetra
 
-## Integrimi me Theme Builder
+## Integrimi me Theme Builder {#integration-with-theme-builder}
 
 Kur përdorni Theme Builder për faqe hospitality:
 
@@ -189,9 +189,9 @@ Kur përdorni Theme Builder për faqe hospitality:
 4. **Optimizim për pajisje mobile** — menutë shfaqen bukur në telefona
 5. **Optimizim SEO** — menutë janë miqësore për motorët e kërkimit
 
-## Praktikat më të mira
+## Praktikat më të mira {#best-practices}
 
-### Dizajni i menusë
+### Dizajni i menusë {#menu-design}
 
 - **Organizim i qartë** — strukturë logjike kategorish
 - **Përshkrime të lexueshme** — të shijshme dhe informuese
@@ -199,7 +199,7 @@ Kur përdorni Theme Builder për faqe hospitality:
 - **Foto profesionale** — imazhe ushqimi me cilësi të lartë
 - **Hapësirë e bardhë** — mos e mbingarkoni faqen
 
-### Përmbajtja
+### Përmbajtja {#content}
 
 - **Përshkrime të sakta** — përshkruani artikujt saktë
 - **Theksoni specialet** — bëjini specialet të bien në sy
@@ -207,7 +207,7 @@ Kur përdorni Theme Builder për faqe hospitality:
 - **Përditësoni rregullisht** — mbani çmimet dhe artikujt aktualë
 - **Përdorni gjuhë të shijshme** — bëjini artikujt të tingëllojnë të shijshëm
 
-### Aksesueshmëria
+### Aksesueshmëria {#accessibility}
 
 - **Fonte të lexueshme** — përdorni shkronja të qarta dhe të lexueshme
 - **Kontrast i mjaftueshëm** — sigurohuni që teksti të jetë i lexueshëm
@@ -215,9 +215,9 @@ Kur përdorni Theme Builder për faqe hospitality:
 - **Paralajmërime për alergjenët** — shfaqni dukshëm alergjenët
 - **Miqësore për pajisje mobile** — testoni në të gjitha pajisjet
 
-## Shembuj
+## Shembuj {#examples}
 
-### Struktura e menusë së restorantit
+### Struktura e menusë së restorantit {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Struktura e menusë së kafenesë
+### Struktura e menusë së kafenesë {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Veçori të lidhura
+## Veçori të lidhura {#related-features}
 
 - [Krijo menu](../abilities/create-menu.md) — krijoni menu navigimi
 - [Drejtimi i dizajnit](./design-direction.md) — personalizoni dizajnin e faqes suaj

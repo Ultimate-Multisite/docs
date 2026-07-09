@@ -4,11 +4,11 @@ title: Filtrs - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filtrs: wp_ultimo_render_vars
+# Filtrs: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Ļauj plugin izstrādātājiem globāli pievienot papildu mainīgo renderēšanas kontekstam.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | Renderējamā skata nosaukums. |
 | $default_view | `string` | fallback_view nosaukums |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) 31. rindā
 
 
-## Atgriež
+## Atgriež {#returns}

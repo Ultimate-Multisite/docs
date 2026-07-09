@@ -3,28 +3,28 @@ title: Ushwankathelo lwe-REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Isalathiso se-REST API
+# Isalathiso se-REST API {#rest-api-reference}
 
-## Uqwalaselo olusisiseko
+## Uqwalaselo olusisiseko {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Uqinisekiso:** API Key & Secret (HTTP Basic Auth okanye URL Parameters)
 
-## Uqinisekiso
+## Uqinisekiso {#authentication}
 
-### Vula i-API
+### Vula i-API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Fumana iinkcukacha ze-API
+### Fumana iinkcukacha ze-API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Iindlela zoqinisekiso
+### Iindlela zoqinisekiso {#authentication-methods}
 
 **HTTP Basic Auth (Kuyacetyiswa):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoints eziphambili
+## Endpoints eziphambili {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **Base Route:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Base Route:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Base Route:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Base Route:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Base Route:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Base Route:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint
+## Registration Endpoint {#registration-endpoint}
 
 I-`/register` endpoint ibonelela ngenkqubo epheleleyo ye-checkout/registration:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Sovereign Tenant Endpoints
+## Sovereign Tenant Endpoints {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yongeza ukhuseleko lwe-REST lwe-sovereign tenant kwiindibaniselwano ezibonelela, ezihlola, okanye eziqinisekisa ii-tenant ezizimeleyo.
 
@@ -242,7 +242,7 @@ Iimpendulo eziqhelekileyo zesimo sokufuduswa zibandakanya:
 
 Phatha `ready: false` njengomqobo wangaphambi kokuphehlelelwa. Jonga iinkcukacha zokuqinisekisa, lungisa i-database host binding, queue, user provisioning, okanye ingxaki ye-routing, uze uzame kwakhona ukuqinisekisa.
 
-## Iimpendulo zeempazamo
+## Iimpendulo zeempazamo {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Phatha `ready: false` njengomqobo wangaphambi kokuphehlelelwa. Jonga iinkcukacha
 }
 ```
 
-## Pagination kunye nokuhluza
+## Pagination kunye nokuhluza {#pagination-and-filtering}
 
 **Query Parameters:**
 ```http

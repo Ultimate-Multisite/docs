@@ -3,11 +3,11 @@ title: Estètica de Sistemes de Disseny
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Habilitat d'Estètica del Sistema de Disseny
+# Habilitat d'Estètica del Sistema de Disseny {#design-system-aesthetics-skill}
 
 L'**habilitat d'Estètica del Sistema de Disseny** és un enfoque guiat per refinar l'identitat visual del teu lloc web. T'ajuda a prendre decisions consistents sobre tipografia, color, espai i *tokens* de moviment que definen el teu sistema de disseny.
 
-## Què és l'Estètica del Sistema de Disseny?
+## Què és l'Estètica del Sistema de Disseny? {#what-is-design-system-aesthetics}
 
 L'Estètica del Sistema de Disseny és una habilitat estructurada que cobreix:
 
@@ -20,9 +20,9 @@ L'Estètica del Sistema de Disseny és una habilitat estructurada que cobreix:
 
 Aquestes decisions es capturen al fitxer `theme.json` del teu tema, creant un sistema visual cohesionat.
 
-## Per què utilitzar l'Estètica del Sistema de Disseny?
+## Per què utilitzar l'Estètica del Sistema de Disseny? {#why-use-design-system-aesthetics}
 
-### Consistència
+### Consistència {#consistency}
 
 Un sistema de disseny garanteix:
 
@@ -31,7 +31,7 @@ Un sistema de disseny garanteix:
 - Que l'espai seguiu un patró previsible
 - Que les animacions es sentin unitàries
 
-### Eficiència
+### Eficiència {#efficiency}
 
 En lloc de prendre decisions de disseny pàgina per pàgina, tu:
 
@@ -39,7 +39,7 @@ En lloc de prendre decisions de disseny pàgina per pàgina, tu:
 - Els apliques a tota la pàgina
 - Els actualitzes globalment canviant un valor
 
-### Flexibilitat
+### Flexibilitat {#flexibility}
 
 Puets:
 
@@ -47,9 +47,9 @@ Puets:
 - Experimentar amb estètiques diferents
 - Mantenre la consistència de la marca mentre et desenvolupes
 
-## Activació de l'Habilitat d'Estètica del Sistema de Disseny
+## Activació de l'Habilitat d'Estètica del Sistema de Disseny {#triggering-the-design-system-aesthetics-skill}
 
-### Activació Manual
+### Activació Manual {#manual-activation}
 
 Pots iniciar l'habilitat en qualsevol moment:
 
@@ -69,7 +69,7 @@ o
 "Guia-me a través de les decisions del sistema de disseny"
 ```
 
-### Suggeriments Automàtics
+### Suggeriments Automàtics {#automatic-suggestions}
 
 Els agents poden suggerir utilitzar l'habilitat quan:
 
@@ -78,9 +78,9 @@ Els agents poden suggerir utilitzar l'habilitat quan:
 - Desitges millorar la consistència visual
 - Estàs preparant el llançament del teu lloc web
 
-## El Procés d'Estètica del Sistema de Disseny
+## El Procés d'Estètica del Sistema de Disseny {#the-design-system-aesthetics-process}
 
-### Pas 1: Tipografia
+### Pas 1: Tipografia {#step-1-typography}
 
 L'agent pregunta sobre les teves eleccions de fonts:
 
@@ -110,7 +110,7 @@ L'agent després defineix:
 - **Escala de pesos**: Pesos de font (regular, metà, negreta, etc.)
 - **Interlineal**: Espai entre línies per a la llegibilitat
 
-### Pas 2: Paleta de Colors
+### Pas 2: Paleta de Colors {#step-2-color-palette}
 
 ```
 Definim la teva paleta de colors.
@@ -140,7 +140,7 @@ L'agent crea una paleta completa incloent:
 - Colors semàntics (èxit, advertència, error)
 - Estats de *hover* i actius
 
-### Pas 3: Espaçament
+### Pas 3: Espaçament {#step-3-spacing}
 
 ```
 Quanta respiració vols?
@@ -162,7 +162,7 @@ L'agent defineix *tokens* d'espaiament:
 - Escala: xs, sm, md, lg, xl, 2xl
 - Valors específics per a *padding*, marge, *gap*
 
-### Pas 4: Bordes i Ombres
+### Pas 4: Bordes i Ombres {#step-4-borders-and-shadows}
 
 ```
 Profunditat i definició visual:
@@ -185,7 +185,7 @@ L'agent crea:
 - *Tokens* d'ombra per nivells d'elevació
 - *Tokens* d'amplitud de bord
 
-### Pas 5: Moviment i Animació
+### Pas 5: Moviment i Animació {#step-5-motion-and-animation}
 
 ```
 Com hauria de sentir-se el teu lloc web quan és interactiu?
@@ -207,9 +207,9 @@ L'agent defineix:
 - Funcions d'ajustament (*easing functions*) (ease-in, ease-out, ease-in-out)
 - *Keyframes* d'animació per a interaccions comunes
 
-## Aplicació de l'Estètica del Sistema de Disseny
+## Aplicació de l'Estètica del Sistema de Disseny {#applying-design-system-aesthetics}
 
-### Aplicació Automàtica
+### Aplicació Automàtica {#automatic-application}
 
 Després de completar l'habilitat, l'agent:
 
@@ -218,7 +218,7 @@ Després de completar l'habilitat, l'agent:
 3. Regenera els estils dels blocs per fer-los coincidir amb el nou sistema
 4. Activa el tema actualitzat
 
-### Aplicació Manual
+### Aplicació Manual {#manual-application}
 
 També pots editar `theme.json` directament:
 
@@ -257,9 +257,9 @@ També pots editar `theme.json` directament:
 }
 ```
 
-## Veure el teu Sistema de Disseny
+## Veure el teu Sistema de Disseny {#viewing-your-design-system}
 
-### Preguntar a l'Agent
+### Preguntar a l'Agent {#ask-the-agent}
 
 ```
 "Mostra'm el meu sistema de disseny"
@@ -273,13 +273,13 @@ o
 
 L'agent mostrarà la teva tipografia, colors, espaiament i altres *tokens*.
 
-### Veure theme.json
+### Veure theme.json {#view-themejson}
 
 Obre `/wp-content/themes/[theme-name]/theme.json` en un editor de text per veure les definicions *raw* dels *tokens*.
 
-## Actualització del teu Sistema de Disseny
+## Actualització del teu Sistema de Disseny {#updating-your-design-system}
 
-### Actualitzacions Ràpides
+### Actualitzacions Ràpides {#quick-updates}
 
 Pega'r a l'agent canvis específics:
 
@@ -299,7 +299,7 @@ o
 "Canvia la font de titulars a una serif"
 ```
 
-### Rediseño Complet
+### Rediseño Complet {#full-redesign}
 
 Re-executa l'habilitat d'Estètica del Sistema de Disseny:
 
@@ -309,7 +309,7 @@ Re-executa l'habilitat d'Estètica del Sistema de Disseny:
 
 Aquest et guiarà a través de totes les decisions de nou, començant pels teus valors actuals.
 
-### Actualitzacions Parcials
+### Actualitzacions Parcials {#partial-updates}
 
 Actualitza aspectes específics:
 
@@ -317,15 +317,15 @@ Actualitza aspectes específics:
 "Només actualitza la paleta de colors, mantén el reste"
 ```
 
-## Les Millors Pràctiques del Sistema de Disseny
+## Les Millors Pràctiques del Sistema de Disseny {#design-system-best-practices}
 
-### Consistència
+### Consistència {#consistency-1}
 
 - Utitzar els mateixos *tokens* en tota la pàgina
 - No crear colors o tamanys de forma puntual
 - Referenciar *tokens* en lloc de codificar valors rígidament
 
-### Nomenclatura
+### Nomenclatura {#naming}
 
 Utitzar noms clars i semàntics:
 
@@ -335,7 +335,7 @@ Utitzar noms clars i semàntics:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Escalabilitat
+### Escalabilitat {#scalability}
 
 Disseny el teu sistema per escalar:
 
@@ -343,7 +343,7 @@ Disseny el teu sistema per escalar:
 - Crear *scales* (xs, sm, md, lg, xl) en lloc de valors arbitraris
 - Planificar addicions futures
 
-### Documentació
+### Documentació {#documentation}
 
 Documentar el teu sistema de disseny:
 
@@ -351,9 +351,9 @@ Documentar el teu sistema de disseny:
 - Quan utilitzar cada *token*
 - Excepcions i casos bord
 
-## Patrons Comuns del Sistema de Disseny
+## Patrons Comuns del Sistema de Disseny {#common-design-system-patterns}
 
-### Minimalista Modern
+### Minimalista Modern {#modern-minimalist}
 
 - Tipografia sans-serif (Inter, Helvetica)
 - Paleta de colors limitada (2-3 colors)
@@ -361,7 +361,7 @@ Documentar el teu sistema de disseny:
 - Ombres subtils
 - Animacions suaus i ràpides
 
-### Càlid i Amigable
+### Càlid i Amigable {#warm-and-friendly}
 
 - Combinació de serif i sans-serif
 - Paleta de colors càlida (naranja, gris càlid)
@@ -369,7 +369,7 @@ Documentar el teu sistema de disseny:
 - Ombres suaus
 - Animacions jocudes
 
-### Corporatiu Professional
+### Corporatiu Professional {#professional-corporate}
 
 - Sans-serif net (Roboto, Open Sans)
 - Paleta neutra amb color d'accent
@@ -377,7 +377,7 @@ Documentar el teu sistema de disseny:
 - Ombres mínimes
 - Transicions subtils
 
-### Creatiu i Atrevit
+### Creatiu i Atrevit {#creative-and-bold}
 
 - Tipografia distintiva
 - Paleta de colors atrevida
@@ -385,7 +385,7 @@ Documentar el teu sistema de disseny:
 - Ombres fortes
 - Animacions notables
 
-## Solucionar Problemes
+## Solucionar Problemes {#troubleshooting}
 
 **Els canvis del meu sistema de disseny no es veuen**
 - Barreja la *cache* del navegador
@@ -403,7 +403,7 @@ Documentar el teu sistema de disseny:
 - Edita manualment `theme.json` per retornar als valors anteriors
 - Re-executa l'habilitat amb decisions diferents
 
-## Pròxims Passos
+## Pròxims Passos {#next-steps}
 
 Després de definir el teu sistema de disseny:
 

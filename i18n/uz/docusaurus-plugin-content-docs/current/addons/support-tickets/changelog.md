@@ -3,13 +3,13 @@ title: Qo‘llab-quvvatlash chiptalari o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Qo‘llab-quvvatlash tiketlari o‘zgarishlar jurnali
+# Qo‘llab-quvvatlash tiketlari o‘zgarishlar jurnali {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Yaxshilandi: vendor/ katalogi Git kuzatuvidan olib tashlandi (.gitignore tomonidan allaqachon qamrab olingan), repository hajmi kamaytirildi
 * Yaxshilandi: WordPress 7.0 gacha sinovdan o‘tkazildi
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Tuzatish: Nullable ticket model setterlarida null qiymatlarni qabul qilish
 * Tuzatish: To‘g‘ri multisite qo‘llab-quvvatlashi uchun barcha ticketlar global tarmoq bo‘ylab jadvallarda saqlanadi
 * Tuzatish: Customer new-ticket formasida staff maydonlarini yashirish va blank-page redirectni tuzatish
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Yaxshilandi: Frontend assetlari faqat support ticket sahifalarida shartli yuklanadi
 * Yaxshilandi: Bedrock root autoloader dependencylarni allaqachon yuklaganida plugin autoloaderni o‘tkazib yuborish
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Qo‘shildi: Admin va frontend uchun to‘liq ticket ko‘rish funksionalligi
 * Qo‘shildi: Ticket javoblarini yuborish uchun AJAX handler
 * Qo‘shildi: To‘g‘ri forma ishlovi bilan ticket javob funksionalligini qo‘llab-quvvatlash
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Yaxshilandi: Javoblar va biriktirmalar uchun to‘g‘ri query va schema classlari bilan ma’lumotlar bazasi tuzilmasi
 * Yaxshilandi: Ticket modellari uchun attributes o‘rniga haqiqiy propertylarga migratsiya
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Yangilandi: Izchillik uchun prefix ultimate-multisite deb qayta nomlandi
 * Yangilandi: Text domain standartlashtirildi
 * Tuzatildi: Kichik bug tuzatishlari va yaxshilanishlar
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Dastlabki reliz
 * To‘liq ticket boshqaruv tizimi
 * Ko‘p darajali kirish nazorati

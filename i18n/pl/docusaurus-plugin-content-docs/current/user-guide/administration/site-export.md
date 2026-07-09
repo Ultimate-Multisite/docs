@@ -3,27 +3,27 @@ title: Eksport strony
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Eksport witryny
+# Eksport witryny {#site-export}
 
 Strona administracyjna **Eksport witryny** (Site Export) pozwala administratorom sieci pakować jedną witrynę lub całą sieć w plik ZIP do pobrania, co jest przydatne do migracji, tworzenia kopii zapasowych lub przekazywania projektu.
 
-## Eksportowanie jednej witryny
+## Eksportowanie jednej witryny {#exporting-one-site}
 
 Przejdź do **Ultimate Multisite > Site Export** i wybierz **Generate new Site Export** (Wygeneruj nowy eksport witryny). Wybierz podwitrynę, którą chcesz wyeksportować, a następnie zdecyduj, czy archiwum ma zawierać pliki z sekcji „Media” (uploads), plugins i themes.
 
 Po zakończeniu eksportu pobierz plik ZIP z listy **Existing Exports** (Istniejące eksporty). Pliki ZIP eksportu zawierają teraz samoobsługowy plik `index.php` oraz `readme.txt`, dzięki czemu archiwum można przesłać na świeżo zainstalowany host i uruchomić bez wcześniejszej instalacji oddzielnego pluginu do importu.
 
-## Eksportowanie całej sieci
+## Eksportowanie całej sieci {#exporting-the-whole-network}
 
 Użyj opcji **Network Export** (Eksport sieci) na stronie Site Export, gdy potrzebujesz jednego archiwum zawierającego wszystkie podwitryny w sieci. Jest to przydatne przed migracjami hostingu, ćwiczeniami z odzyskiwania po awarii lub odbudową środowiska staging, gdzie każda podstrona musi być przeniesiona razem.
 
 Ponieważ eksport sieci może być znacznie większy niż eksport pojedynczej witryny, wykonaj go w okresie niskiego ruchu i upewnij się, że docelowe miejsce przechowywania ma wystarczająco miejsca wolnego na pliki z sekcji „Media”, plugins, themes i generowane pliki ZIP.
 
-### Pakiety importu sieci (Network Import Bundles)
+### Pakiety importu sieci (Network Import Bundles) {#network-import-bundles}
 
 Od wersji Ultimate Multisite 2.12.0, Site Exporter może generować **pakiety importu sieci** (network import bundles) — specjalistyczne archiwa zaprojektowane do płynnego przywracania wielu witryn w ramach sieci. Pakiet importu sieci zawiera wszystkie niezbędne pliki i metadane do przywrócenia wielu witryn na nowo zainstalowanej sieci.
 
-#### Generowanie pakietu importu sieci
+#### Generowanie pakietu importu sieci {#generating-a-network-import-bundle}
 
 1. Przejdź do **Ultimate Multisite > Site Export**
 2. Kliknij **Generate new Network Export** (Wygeneruj nowy eksport sieci)
@@ -32,7 +32,7 @@ Od wersji Ultimate Multisite 2.12.0, Site Exporter może generować **pakiety im
 5. Kliknij **Generate** (Wygeneruj)
 6. Pobierz pakiet ZIP z listy **Existing Exports** (Istniejące eksporty)
 
-#### Przywracanie z pakietu importu sieci
+#### Przywracanie z pakietu importu sieci {#restoring-from-a-network-import-bundle}
 
 Aby przywrócić witryny z pakietu importu sieci:
 
@@ -52,7 +52,7 @@ Pakiety importu sieci zachowują:
 - Pliki z sekcji „Media” (jeśli są zawarte w pakiecie)
 - Niestandardowe tabele i dane w bazie danych
 
-## Instalowanie samoobsługowego pliku ZIP eksportu
+## Instalowanie samoobsługowego pliku ZIP eksportu {#installing-a-self-booting-export-zip}
 
 Aby przywrócić samoobsługowy plik ZIP na świeżo zainstalowanym hoście:
 

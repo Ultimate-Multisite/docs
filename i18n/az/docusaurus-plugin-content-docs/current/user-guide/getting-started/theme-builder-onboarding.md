@@ -3,11 +3,11 @@ title: Tema Qurucu Onboarding Axını
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Tema Qurucu Onboarding Prosesi
+# Tema Qurucu Onboarding Prosesi {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0, ilk qurulum zamanı sizə özəl bir blok teması yaratmağa kömək edən təlimatlı bir **Tema Qurucu onboarding prosesi** təqdim edir. Bu, köhnə Site Builder rejiminin yerinə daha çevik, agent dəstəkli bir yanaşmadır.
 
-## Tema Qurucu Onboarding Prosesi Nədir?
+## Tema Qurucu Onboarding Prosesi Nədir? {#what-is-the-theme-builder-onboarding-flow}
 
 Tema Qurucu onboarding prosesi, aşağıdakıları edən interaktiv bir qurulum siuardıdır:
 
@@ -18,9 +18,9 @@ Tema Qurucu onboarding prosesi, aşağıdakıları edən interaktiv bir qurulum 
 
 Bu proses **Setup Assistant agenti** tərəfindən idarə olunur; bu agent aydınlaşdırıcı suallar soruşur və temanızı addım-addım qurur.
 
-## Tema Qurucu Onboarding Prosesinə Başlamaq
+## Tema Qurucu Onboarding Prosesinə Başlamaq {#starting-the-theme-builder-onboarding}
 
-### İlk Qurulum
+### İlk Qurulum {#first-run-setup}
 
 Superdav AI Agent-i yeni bir WordPress quraşdırmasında ilk dəfə işə salanda, aşağıdakıları görəcəksiniz:
 
@@ -35,7 +35,7 @@ Nə etmək istərdiniz?
 
 Tema Qurucu onboarding prosesinə daxil olmaq üçün **"Build a custom theme"** (Özəl bir tema qurmaq) seçin.
 
-### Əl ilə Aktivasiya
+### Əl ilə Aktivasiya {#manual-activation}
 
 Həmçinin, istənilən vaxt aşağıdakıları soruşaraq Tema Qurucu onboarding prosesinə başlaya bilərsiniz:
 
@@ -49,9 +49,9 @@ və ya
 "Help me create a custom theme"
 ```
 
-## Onboarding Addımları
+## Onboarding Addımları {#the-onboarding-steps}
 
-### Addım 1: Rejim Seçimi
+### Addım 1: Rejim Seçimi {#step-1-mode-selection}
 
 Setup Assistant agenti üstünlüyünüz haqqında soruşur:
 
@@ -63,7 +63,7 @@ Temanızı necə qurmaq istərdiniz?
 
 **Guided mode** (Yönləndirilmiş rejim) əksər istifadəçilər üçün tövsiyə olunur; agent sizin sənayənizə və məqsədlərinizə əsaslanaraq dizayn tövsiyələri verir.
 
-### Addım 2: Sayt Spesifikasiyası
+### Addım 2: Sayt Spesifikasiyası {#step-2-site-specification}
 
 Sizdən saytınız haqqında soruşulacaq:
 
@@ -74,7 +74,7 @@ Sizdən saytınız haqqında soruşulacaq:
 
 Bu məlumat **site_brief** yaddaşınızda saxlanılır və agentlər gələcək sessiyalarda buna istinad edir.
 
-### Addım 3: Dizayn Sistemi Qərarları
+### Addım 3: Dizayn Sistemi Qərarları {#step-3-design-system-decisions}
 
 Agent sizə dizayn tokenlərini seçmək üçün yönləndirir:
 
@@ -83,7 +83,7 @@ Agent sizə dizayn tokenlərini seçmək üçün yönləndirir:
 - **Boşluq (Spacing)**: Yığcam, normal və ya geniş yerləşdirmələr
 - **Hərəkət (Motion)**: Animasiyalar və keçidlər (istənilərsə)
 
-### Addım 4: Tema Generasiyası
+### Addım 4: Tema Generasiyası {#step-4-theme-generation}
 
 Setup Assistant agenti özəl blok temanızı aşağıdakılarla qurur:
 
@@ -92,7 +92,7 @@ Setup Assistant agenti özəl blok temanızı aşağıdakılarla qurur:
 - Dizayn sisteminizə uyğun özəl blok stilləri
 - Tema meta məlumatları və WordPress dəstəklənməsi bəyan etmələri
 
-### Addım 5: Aktivasiya və Yoxlama
+### Addım 5: Aktivasiya və Yoxlama {#step-5-activation-and-verification}
 
 Tema avtomatik aktivləşdirilir və aşağıdakıları görəcəksiniz:
 
@@ -107,7 +107,7 @@ Tema avtomatik aktivləşdirilir və aşağıdakıları görəcəksiniz:
 
 Daha sonra temanın düzgün göstərilməsini yoxlamaq üçün saytınıza daxil ola bilərsiniz.
 
-## Sayt Spesifikasiyası və site_brief Yaddaşı
+## Sayt Spesifikasiyası və site_brief Yaddaşı {#site-specification-and-sitebrief-memory}
 
 Onboarding prosesi zamanı agent saytınızın spesifikasiyasını **site_brief** yaddaş kateqoriyasında yığır. Buna aşağıdakılar daxildir:
 
@@ -117,7 +117,7 @@ Onboarding prosesi zamanı agent saytınızın spesifikasiyasını **site_brief*
 - Dizayn üstünlükləri
 - Məzmun strukturu
 
-### site_brief Niyə Vacibdir
+### site_brief Niyə Vacibdir {#why-sitebrief-matters}
 
 Gələcək sessiyalarda agentlər site_brief-inizə aşağıdakılar üçün istinad edir:
 
@@ -126,7 +126,7 @@ Gələcək sessiyalarda agentlər site_brief-inizə aşağıdakılar üçün ist
 - Kontekstə uyğun tövsiyələr vermək
 - Qurulum suallarını təkrarlamaqdan çəkinmək
 
-### site_brief-inizi Görmək
+### site_brief-inizi Görmək {#viewing-your-sitebrief}
 
 Agentdən aşağıdakıları soruşa bilərsiniz:
 
@@ -142,11 +142,11 @@ və ya
 
 Agent yadda saxladığı sayt spesifikasiyasını göstərəcək.
 
-## Onboardingdən Sonra Təkmilləşdirmə
+## Onboardingdən Sonra Təkmilləşdirmə {#customizing-after-onboarding}
 
 Tema Qurucu onboarding prosesi tamamlandıqdan sonra, aşağıdakıları edə bilərsiniz:
 
-### Design System Aesthetics Skill-dən İstifadə Etmək
+### Design System Aesthetics Skill-dən İstifadə Etmək {#use-the-design-system-aesthetics-skill}
 
 Dizayn təkmilləşdirmələri soruşun:
 
@@ -162,7 +162,7 @@ və ya
 
 **Design System Aesthetics skill** (Dizayn Sistemi Estetika bacarığı) hədəflənmiş dizayn yeniləmələri boyunca sizə kömək edir.
 
-### theme.json-u Birbaşa Redaktə Etmək
+### theme.json-u Birbaşa Redaktə Etmək {#edit-themejson-directly}
 
 Təkmil istifadəçilər üçün, aşağıdakıları tənzimləmək üçün `/wp-content/themes/[theme-name]/theme.json` faylını redaktə edin:
 
@@ -171,7 +171,7 @@ Təkmil istifadəçilər üçün, aşağıdakıları tənzimləmək üçün `/wp
 - Boşluq dəyərləri
 - Sərhəd və kölgə tərifləri
 
-### Özəl Blok Şablonları Yaratmaq
+### Özəl Blok Şablonları Yaratmaq {#create-custom-block-templates}
 
 Aşağıdakılar üçün özəl şablonlar yaratmaq üçün WordPress blok redaktorundan istifadə edin:
 
@@ -180,7 +180,7 @@ Aşağıdakılar üçün özəl şablonlar yaratmaq üçün WordPress blok redak
 - Məhsul səhifələri
 - Əlaqə formaları
 
-## Müqayisə: Köhnə vs. Yeni Onboarding
+## Müqayisə: Köhnə vs. Yeni Onboarding {#comparison-old-vs-new-onboarding}
 
 | Xüsusiyyət | Site Builder (Köhnə) | Theme Builder (Yeni) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Aşağıdakılar üçün özəl şablonlar yaratmaq üçün WordPress blok redak
 | Çevikliyi | Sabit seçimlər | Təkmilləşdirilə bilən |
 | Gələcək yeniləmələr | İstinad edilmir | site_brief-də saxlanılır |
 
-## Problemlərin Həlli
+## Problemlərin Həlli {#troubleshooting}
 
 **Onboarding prosesi tamamlanmadı**
 - Prosesi yenidən başlatmaq: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Aşağıdakılar üçün özəl şablonlar yaratmaq üçün WordPress blok redak
 - Agentdən "regenerate the theme with [specific changes]" (temanı [müəyyən dəyişikliklərlə] yenilə) deməsini xahiş edin
 - Dəqiq nəzarət üçün theme.json-u birbaşa redaktə edin
 
-## Növbəti Addımlar
+## Növbəti Addımlar {#next-steps}
 
 Tema Qurucu onboarding prosesi tamamlandıqdan sonra:
 

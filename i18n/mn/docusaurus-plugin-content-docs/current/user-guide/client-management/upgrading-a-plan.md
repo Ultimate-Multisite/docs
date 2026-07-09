@@ -3,7 +3,7 @@ title: Планыг шинэчлэх
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Планыг шинэчлэх (v2)
+# Планыг шинэчлэх (v2) {#upgrading-a-plan-v2}
 
 _**МЭЦЭЛТ: Энэ нийтлэл Ultimate Multisite-ийн 2.x хувилбарыг хэрэглэдэг.**_
 
@@ -41,7 +41,7 @@ Account хуудсан дээр тэдний одоогийн гишүүнчлэ
 
 ##
 
-## Шинэчлэх ба Бууруулах Зам (Upgrade and Downgrade Paths)
+## Шинэчлэх ба Бууруулах Зам (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Таны бүтээгдэхүүн бүрт **Up & Downgrades** таб байдаг. Тэр таб дээрх анхны сонголт бол **Plan Group** гэсэн талбар юм.
 

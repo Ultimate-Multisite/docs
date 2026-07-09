@@ -4,13 +4,13 @@ title: Гамәл - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Гамәл: wp_ultimo_support_agents_activation
+# Гамәл: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
 
 Плагинның башка өлешләренә активлаштыру өчен үз процедураларын беркетергә мөмкинлек бирә
 
-### Кайчаннан бирле
+### Кайчаннан бирле {#since}
 
 - 1.9.6
-### Чыганак
+### Чыганак {#source}
 
 [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-support-agents/blob/main/inc/class-hooks.php#L83) эчендә, 83 нче юлда билгеләнгән

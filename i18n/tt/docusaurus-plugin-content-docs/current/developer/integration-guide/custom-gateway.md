@@ -3,11 +3,11 @@ title: Махсус шлюз эшләү
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Махсус түләү шлюзын эшләү
+# Махсус түләү шлюзын эшләү {#custom-gateway-development}
 
 Сез `Base_Gateway` классын киңәйтеп, махсус түләү шлюзлары булдыра аласыз.
 
-## Шлюз классы
+## Шлюз классы {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Шлюзны теркәү
+## Шлюзны теркәү {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Төп методлар
+## Төп методлар {#key-methods}
 
 | Метод | Максат |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Акчаны кире кайтару сорауларын эшкәртү |
 | `get_payment_methods()` | Клиент өчен сакланган түләү ысулларын кайтару |
 
-## Кабатлана торган әгъзалыклар өчен яңарту реквизитлары
+## Кабатлана торган әгъзалыклар өчен яңарту реквизитлары {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 шлюз интеграцияләренә `auto_renew` сакланганчы, кабатлана торган әгъзалыкның кабат кулланыла торган яңарту реквизиты бармы икәнен хәбәр итәргә мөмкинлек бирә. `wu_membership_has_renewal_credential` hookын кулланыгыз һәм түбәндәгене кайтарыгыз:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Яңа кабат кулланыла торган реквизит сакланганнан соң, шлюзыгызның уңышлы кабат авторизация агымы кысаларында югалган реквизит маркерын чистартыгыз.
 
-## Киңәшләр
+## Киңәшләр {#tips}
 
 - Уңышсызлык очрагында һәрвакыт `WP_Error` кайтарыгыз, шулай итеп Ultimate Multisite хата күрсәтүне эшкәртә ала
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Шлюзга хас журналлау өчен `wu_log_add()` кулланыгыз
 
-## AI тоташтыргыч провайдер мөмкинлекләре
+## AI тоташтыргыч провайдер мөмкинлекләре {#ai-connector-provider-capabilities}
 
 AI тоташтыргычка таянган операцияләрне чакыра торган махсус интеграцияләр AI Provider for Anthropic Max v1.3.0 белән кертелгән ярдәм ителә торган OAuth провайдерлар җыелмасы белән яраклашырга тиеш:
 

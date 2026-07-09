@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 A Site Builder Orchestration v2 (belevezetése a Gratis AI Agent v1.4.0-ban) az üzemmotor, amely a több lépéses weboldal létrehozását biztosítja. Amikor az agentet arra kéri, hogy „építsen egy éttermi weboldalt” vagy „alkalmazzon egy bloggal rendelkező portfóliót”, az orchestrator (koordinátor) szétválasztja ezt a magas szintű célt egy strukturált **tervbe**, felfedezi az ahhoz szükséges plugin-okat, sorrendben végrehajtja minden lépést, nyomon követi a haladást, és autonómusan helyreállítja az hibákból.
 
 ---
 
-## Hogyan működik
+## Hogyan működik {#how-it-works}
 
-### 1. Tervgenerálás
+### 1. Tervgenerálás {#1-plan-generation}
 
 Amikor az agent egy weboldal építésének utasítását kap, az `create_site_plan` ability-t hívja meg, hogy egy JSON **weboldaltervet** hozzon létre. A terv a következőket írja le:
 
@@ -61,7 +61,7 @@ Amikor az agent egy weboldal építésének utasítását kap, az `create_site_p
 }
 ```
 
-### 2. Plugin felfedezés
+### 2. Plugin felfedezés {#2-plugin-discovery}
 
 Mielőtt a végrehajtás elkezdődne, az orchestrator áttekinti a terv `plugin_requirements` részét, és ellenőrzi, hogy mely plugin-ok aktívak. Az hiányzó plugin-ok esetén:
 
@@ -71,7 +71,7 @@ Mielőtt a végrehajtás elkezdődne, az orchestrator áttekinti a terv `plugin_
 
 A plugin felfedezési sikertelenítése nem kritikus — az orchestrator jelöli meg az érintett lépéseket `skipped` (eltörölt) státuszban, és folytatja a terv többi részével.
 
-### 3. Terv végrehajtása
+### 3. Terv végrehajtása {#3-plan-execution}
 
 Az orchestrator a `execute_site_plan` ability-t hívja meg a terv ID-jával. A végrehajtás fázisok szerint, lépésről lépésre halad.
 
@@ -79,7 +79,7 @@ Az orchestrator a `execute_site_plan` ability-t hívja meg a terv ID-jával. A v
 - **Parallel lépések**: A ugyanazon fázisban lévő, egymástól független lépések egyszerre kerülnek végrehajtásra, ha a `parallel` flag-et beállítják.
 - **Lépés időkorlátozása**: Minden lépésnek saját időkorlátozója van (alapértelmezett: az `Ability Timeout` beállítás). Egy időkorlátozással sikertelen lépést `failed` (sikertelen) státuszban jelöl, és a terv tovább halad.
 
-### 4. Haladás nyomon követése
+### 4. Haladás nyomon követése {#4-progress-tracking}
 
 A `get_plan_progress` hívása bármikor ellenőrizhető a végrehajtási státuszt:
 
@@ -104,7 +104,7 @@ A WP-CLI felhasználók a következővel követhetik nyomon a haladást:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Hiba helyreállítása
+### 5. Hiba helyreállítása {#5-error-recovery}
 
 Ha egy lépés sikertelenül végrehajtódik, az orchestrator ellenőrzi, hogy van-e a tervben egy **visszártérítő** lépés:
 
@@ -115,9 +115,9 @@ Az agent a végleges terv összefoglalójában összes hibát jelent, és manuá
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Generál egy strukturált weboldaltervet egy természetes nyelvi célleírás alapján.
 
@@ -134,7 +134,7 @@ Generál egy strukturált weboldaltervet egy természetes nyelvi célleírás al
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Elindítja egy korábban generált weboldalterv végrehajtását.
 
@@ -150,7 +150,7 @@ Elindítja egy korábban generált weboldalterv végrehajtását.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Visszaadja egy weboldalterv aktuális végrehajtási státuszát.
 
@@ -164,7 +164,7 @@ Visszaadja egy weboldalterv aktuális végrehajtási státuszát.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Manuálisan oldja meg egy sikertelen lépést, és folytatja a terv végrehajtását a következő lépéstől. Használja ezt, ha az automatikus helyreállítás nem volt lehetséges, és beavatkozni akar.
 
@@ -180,7 +180,7 @@ Manuálisan oldja meg egy sikertelen lépést, és folytatja a terv végrehajtá
 
 ---
 
-## v1 és v2 összehasonlítása
+## v1 és v2 összehasonlítása {#comparing-v1-and-v2}
 
 | Funkció | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Manuálisan oldja meg egy sikertelen lépést, és folytatja a terv végrehajtá
 
 ---
 
-## WP-CLI Terv Parancsok
+## WP-CLI Terv Parancsok {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Generál egy weboldaltervet egy célleírás alapján.
 
@@ -205,7 +205,7 @@ Generál egy weboldaltervet egy célleírás alapján.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Végrehajt egy korábban generált tervet.
 
@@ -213,7 +213,7 @@ Végrehajt egy korábban generált tervet.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Megjeleníti a végrehajtás aktuális haladását egy futó vagy befejezett terv esetén.
 
@@ -221,7 +221,7 @@ Megjeleníti a végrehajtás aktuális haladását egy futó vagy befejezett ter
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Listáz minden weboldaltervet (várható, haladás alatt, és befejezett).
 
@@ -229,7 +229,7 @@ Listáz minden weboldaltervet (várható, haladás alatt, és befejezett).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Állíthatja vissza egy sikertelen tervet `pending` (várható) állapotba, így újra elindítható a kezdetektől.
 

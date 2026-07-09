@@ -3,7 +3,7 @@ title: Fluent Forms Ilogi yezinguquko
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Irekhodi lezinguquko le-Fluent Forms
+# Irekhodi lezinguquko le-Fluent Forms {#fluent-forms-changelog}
 
 Inguqulo: 2.0.1 - Ikhishwe ngo-2025-09-28
 

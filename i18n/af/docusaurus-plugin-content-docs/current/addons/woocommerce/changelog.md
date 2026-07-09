@@ -3,7 +3,7 @@ title: WooCommerce-integrasie Veranderingslogboek
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce-integrasie-veranderingslog
+# WooCommerce-integrasie-veranderingslog {#woocommerce-integration-changelog}
 
 Weergawe 2.2.0 - Vrygestel op 2026-07-01
 * Nuut: Ultimate Multisite-belastingbedrae verskyn nou as aparte WooCommerce-fooireëls by betaalpunt, wat belastingtotale duideliker maak voor betaling.

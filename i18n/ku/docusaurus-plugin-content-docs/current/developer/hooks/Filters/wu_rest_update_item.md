@@ -4,11 +4,11 @@ title: Parzûn - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Parzûn: wu_rest_update_item
+# Parzûn: wu_rest_update_item {#filter-wurestupdateitem}
 
 Parzûn dike ka destûr heye ku bi daxwazê re berdewam bike an na.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Parzûn dike ka destûr heye ku bi daxwazê re berdewam bike an na.
 | $rest_base | `array` | Slug-a hebûnê. |
 | $this | `\Base_Manager` | Nimûneya objektê. |
 
-### Ji guhertoyê
+### Ji guhertoyê {#since}
 
 - 2.0.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) de li rêza 414 hatîye diyarkirin.

@@ -3,11 +3,11 @@ title: Webhook-ты өңдеу
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook өңдеу
+# Webhook өңдеу {#webhook-handling}
 
 Сыртқы қызметтерден оқиғаларды қабылдау және деректерді Ultimate Multisite-пен синхрондау үшін пайдаланушы webhook соңғы нүктелерін жасаңыз.
 
-## Пайдаланушы webhook соңғы нүктесі
+## Пайдаланушы webhook соңғы нүктесі {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Қауіпсіздік considerations
+## Қауіпсіздік considerations {#security-considerations}
 
 - Webhook қолтаңбаларын HMAC немесе ортақ құпия арқылы әрқашан тексеріңіз
 - REST бағдарыңызда `permission_callback` пайдаланыңыз — өндірістік ортада оны ешқашан `__return_true` етіп орнатпаңыз

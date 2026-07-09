@@ -3,7 +3,7 @@ title: Bhalisa i-API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Isiphelo se-API se-Register se-Ultimate Multisite
+# Isiphelo se-API se-Register se-Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Kule tutorial, uza kufunda indlela yokusebenzisa isiphelo se-API se-Ultimate Multisite /register ukuze udale yonke inkqubo yokungenisa umthengi omtsha kwinethiwekhi yakho, kunye nendlela yokwenza oko nge-Zapier.
 
@@ -29,11 +29,11 @@ Khetha **Vula i-API** uze ufumane iziqinisekiso zakho ze-API.
 
 Ngoku, masiphonononge isiphelo size emva koko sidale isenzo sobhaliso kwi-Zapier.
 
-## Iiparamitha zomzimba wesiphelo
+## Iiparamitha zomzimba wesiphelo {#endpoint-body-parameters}
 
 Masibe nesishwankathelo solwazi oluncinane ekufuneka siluthumele kwisiphelo. Ekupheleni kweli nqaku, uya kufumana ubizo olupheleleyo.
 
-### Umthengi
+### Umthengi {#customer}
 
 Olu lulwazi oluyimfuneko kwinkqubo yokudala uMsebenzisi kunye noMthengi we-Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Kuyenzeka ukuthumela i-ID yomthengi edalwe kwinethiwekhi yakho. Ukuba ayingenisw
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **UbuLungu**
+### **UbuLungu** {#membership}
 
 Ulwazi kuphela esiludingayo ngaphakathi kwale object yiSimo soBuLungu.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Iimveliso**
+### **Iimveliso** {#products}
 
 Iimveliso zinikwa njenge-array ene-ID yemveliso enye okanye ezingaphezulu ezivela kwinethiwekhi yakho. Qaphela, esi siphelo asidali iimveliso. Jonga amaxwebhu e-Ultimate Multisite ukuze uqonde ngcono isiphelo sokudala imveliso.
 
 **"products" : [1,2],**
 
-### Intlawulo
+### Intlawulo {#payment}
 
 NjengoBuLungu, sifuna kuphela isimo.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Isiza
+### Isiza {#site}
 
 Kwaye ukuvala umzimba sifuna i-URL kunye neSihloko sesiza, zombini ngaphakathi kwe-object yeSiza.
 
@@ -69,13 +69,13 @@ Kwaye ukuvala umzimba sifuna i-URL kunye neSihloko sesiza, zombini ngaphakathi k
 
 Impendulo yesiphelo se-register iya kuba yi-array enolwazi lobulungu olusandula ukudalwa.
 
-## Ukudala isenzo kwi-Zapier
+## Ukudala isenzo kwi-Zapier {#creating-an-action-in-zapier}
 
 Ngokwaziswa kwesi siphelo sitsha nesomeleleyo ngakumbi sokudala account, uya kufumana nesenzo esitsha kwi-Zapier.
 
 Ngaba uyayazi indlela yokusebenzisa nokonwabela yonke into enikwa yinguqulelo entsha ye-Zapier? Funda ngakumbi apha. (link?)
 
-### Ukudala isenzo
+### Ukudala isenzo {#creating-an-action}
 
 Ukuze sibonise ngcono indlela yokusebenzisa isiphelo sobhaliso nge-Zapier, masidale udibaniso ne-Google Forms. Ngalo lonke ixesha le fomu igcwaliswa kwaye ulwazi lugcinwa kwiphepha leempendulo lefomu, ubuLungu obutsha buya kudalwa kwinethiwekhi ye-Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Xa ulwazi seluqwalaselwe, qhubela kuvavanyo lokugqibela. Kwisikrini sokugqibela 
 
 Vavanya i-Zap yakho entsha kwaye kufuneka igqitywe ngempumelelo. Ukuba kukho nayiphi na impazamo, jonga zonke iimimandla nokuba zithunyelwa ngokuchanekileyo na. Njengoko kukho ulwazi oluninzi, ezinye izinto zinokungaphawulwa.
 
-### Iiparamitha ezipheleleyo zesiphelo
+### Iiparamitha ezipheleleyo zesiphelo {#complete-endpoint-parameters}
 
 Nalu ubizo olupheleleyo kunye nawo onke amathuba eemimandla ezinokuthunyelwa.
 

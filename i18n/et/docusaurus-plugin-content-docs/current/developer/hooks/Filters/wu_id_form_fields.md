@@ -4,19 +4,19 @@ title: 'Filter - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields
+# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
 
 Filtreerib vormi välju. Vorm tuvastatakse filtri nimes oleva ID järgi.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
 | $fields | `array` | Vormi väljade loend. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) real 148

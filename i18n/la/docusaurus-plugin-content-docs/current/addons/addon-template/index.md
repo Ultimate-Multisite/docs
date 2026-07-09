@@ -3,25 +3,25 @@ title: Exemplar Additamenti
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Additamenti Formula
+# Additamenti Formula {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Requisita
+## Requisita {#requirements}
 
 - WordPress 5.3 aut superior
 - PHP 7.4 aut superior
 - Multisite Ultimate pluginum (activum)
 
-## Installatio
+## Installatio {#installation}
 
 1. Fasciculos additamenti in directorium tuum `/wp-content/plugins/` imposi
 2. Pluginum per indicem 'Plugins' in WordPress activa
 3. Optiones additamenti in administratione retis configura
 
-## Progressio
+## Progressio {#development}
 
-### Institutio
+### Institutio {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structura Proiecti
+### Structura Proiecti {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regulae modernizationis codicis
 ```
 
-### Probatio
+### Probatio {#testing}
 
 Additamentum structuram probationum comprehensivam includit:
 
@@ -75,44 +75,44 @@ Additamentum structuram probationum comprehensivam includit:
 - **Ambitus Probationum**: Configuratus ad ambitum codicis investigandum
 - **Probatio Multisite**: Probationes in ambitu multisite currunt
 
-### Normae Codicis
+### Normae Codicis {#code-standards}
 
 - **Normae Codificandi WordPress**: Per PHPCS exiguntur
 - **Compatibilitas PHP 7.4+**: Proprietates modernae PHP sustinentur
 - **Analysis Statica**: Integratio PHPStan ad typorum inspectionem
 - **Modernizatio Codicis**: Regulae Rector ad emendationes PHP
 
-### Systema Aedificationis
+### Systema Aedificationis {#build-system}
 
 - **Processus Rerum**: Minificatio fasciculorum CSS/JS
 - **Translatio**: Generatio fasciculi POT
 - **Involucratio**: Creatio archivi ad distributionem
 - **Modus Progressionis**: Res non minificatae ad depurationem
 
-## Configuratio
+## Configuratio {#configuration}
 
 Additamentum varias optiones configurationis sustinet, per interfaciem administrationis retis accessibiles.
 
-## Hooks et Filtra
+## Hooks et Filtra {#hooks-and-filters}
 
-### Actiones
+### Actiones {#actions}
 
 - `ultimate-multisite-addon-template_init` - Post initializationem additamenti excitatur
 - `ultimate-multisite-addon-template_loaded` - Postquam omnes fasciculi additamenti onerati sunt excitatur
 
-### Filtra
+### Filtra {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Optiones additamenti modifica
 - `ultimate-multisite-addon-template_enabled` - Statum activandi/deactivandi additamenti supera
 
-## Licentia
+## Licentia {#license}
 
 Hoc additamentum sub GPL v3 aut posteriore licentiatum est.
 
-## Auxilium
+## Auxilium {#support}
 
 Ad auxilium et documentationem, visita [MultisiteUltimate.com](https://multisiteultimate.com)
-## Index Mutationum
+## Index Mutationum {#changelog}
 
 - Versio 1.0.1 (2025-09-28): prefixum ad ultimate-multisite renominare; dominium textus renovare; incrementum versionis.
 

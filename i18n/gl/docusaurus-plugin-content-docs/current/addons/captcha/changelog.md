@@ -3,7 +3,7 @@ title: Rexistro de cambios de Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Rexistro de cambios de Captcha
+# Rexistro de cambios de Captcha {#captcha-changelog}
 
 Versión: 1.5.0 - Publicada o 2026-05-22
 * Novo: Limitador de taxa con parada dura — conta cada GET e POST nas superficies protexidas por captcha (wp-login / rexistro / contrasinal perdido / comentarios, WooCommerce my-account / checkout / pay-for-order, checkout / inline-login de Ultimate Multisite) e responde con HTTP 429, un `Retry-After` header e unha pausa tarpit aleatorizada (1–5 s, cun límite duro de 15 s).

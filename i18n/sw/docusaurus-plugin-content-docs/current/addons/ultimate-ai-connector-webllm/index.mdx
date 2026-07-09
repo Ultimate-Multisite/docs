@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM huleta uwezo wa kufanya uchanganuzi wa AI moja kwa moja kwenye kivinjari (browser-native AI inference) kwenye mtandao wako wa WordPress multisite. Huendesha mifumo mikubwa ya lugha (LLMs) kabisa ndani ya kivinjari kwa kutumia WebLLM na injini ya MLC — hakuna funguo za API, hakuna wito wa nje, na hakuna data inayotoka kwenye kifaa cha mtumiaji.
 
-## Vipengele Muhimu
+## Vipengele Muhimu {#key-features}
 
 - **Uchanganuzi kwenye kivinjari (Browser-side inference)**: LLM inatembea ndani ya kivinjari cha mtumiaji kupitia WebLLM/MLC — haihitaji GPU ya seva
 - **Kidoko cha mazungumzo kinachotoka (Floating chat widget)**: Watumiaji walio kuingia wanaweza kuomba (prompt) LLM ya kivinjari moja kwa moja kutoka kwenye ukurasa mkuu (front end)
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM huleta uwezo wa kufanya uchanganuzi wa AI moja 
 - **IndexedDB cache**: Upakuaji wa uzito wa mfumo (model weight downloads) unabaki hata kama kuna upinduzi wa CDN ambao unavunja njia ya kawaida ya Cache API
 - **wpai filter integration**: Huunganisha kwenye filter ya `wpai_preferred_text_models` ili kipengele cha AI Experiments kielekeze kwenye injini ya kivinjari inapopangwa
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 - WordPress 5.3 au zaidi
 - PHP 7.4 au zaidi
 - Plugin ya Ultimate Multisite (imefunguliwa)
 - Kivinjari chenye uwezo wa WebGPU (Chrome 113+, Edge 113+, au Firefox Nightly yenye WebGPU imewashwa)
 
-## Usakinishaji
+## Usakinishaji {#installation}
 
 1. Pakia faili za addon kwenye saraka yako ya `/wp-content/plugins/`
 2. Fungulia plugin kupitia menyu ya 'Plugins' ndani ya WordPress
 3. Nenda kwenye **Ultimate Multisite → AI Connector** kupanga addon
 
-## Kidoko cha Mazungumzo Kinachotoka (Floating Chat Widget)
+## Kidoko cha Mazungumzo Kinachotoka (Floating Chat Widget) {#floating-chat-widget}
 
 Kidoko cha mazungumzo kinachotoka kinawezesha mtumiaji yeyote aliye kuingia kuingiliana na LLM ya kivinjari moja kwa moja kutoka kwenye ukurasa wako mkuu, bila kuondoka kwenye ukurasa walipo.
 
-### Inafanya Nini
+### Inafanya Nini {#what-it-does}
 
 Inapowashwa, ikoni ya mazungumzo inaonekana kwenye kona ya kila ukurasa wa mbele kwa watumiaji walio kuingia. Kubonyeza ikoni hiyo huifungua sehemu ya mazungumzo ambapo mtumiaji anaweza kuandika maombi (prompts) na kupokea majibu kutoka kwa mfumo wa WebLLM unaoendesha ndani ya kifurushi. Kwa kuwa mfumo unatembea kabisa ndani ya kivinjari, majibu ni binafsi na hayohusishi usindikaji wowote wa upande wa seva.
 
-### Kiashiria cha Hali kwenye Admin-Bar
+### Kiashiria cha Hali kwenye Admin-Bar {#admin-bar-status-indicator}
 
 Admin bar ya WordPress ina kiashiria cha hali kinachoonyesha hali ya sasa ya injini ya WebLLM:
 
@@ -56,7 +56,7 @@ Admin bar ya WordPress ina kiashiria cha hali kinachoonyesha hali ya sasa ya inj
 
 Kiashiria hiki kinaonyesha hali halisi bila kuhitaji kupakia upya ukurasa.
 
-### Jinsi ya Kuwasha au Kuzima Widget
+### Jinsi ya Kuwasha au Kuzima Widget {#how-to-enable-or-disable-the-widget}
 
 1. Nenda kwenye **Ultimate Multisite → AI Connector** kwenye admin ya mtandao
 2. Tafuta sehemu ya **Connector**
@@ -65,17 +65,17 @@ Kiashiria hiki kinaonyesha hali halisi bila kuhitaji kupakia upya ukurasa.
 
 Widget pia inaweza kuwashwa au kuzimwa kwa kila tovuti kutoka kwa admin ya tovuti yenyewe ikiwa msimamizi wa mtandao amempa uwezo huo.
 
-## Mipangilio ya Widget
+## Mipangilio ya Widget {#widget-settings}
 
 Sehemu ya Connector katika **Ultimate Multisite → AI Connector** ina mipangilio ifuatayo kwa widget ya mazungumzo kinachotoka:
 
-### Washa Widget ya Mazungumzo Kinachotoka
+### Washa Widget ya Mazungumzo Kinachotoka {#enable-floating-chat-widget}
 
 Inawezesha widget ya mazungumzo kuwaka au kuzima kwa mtandao mzima. Ikiwa imezimwa, widget haionekani kwenye ukurasa wowote wa mbele, bila kujali jukumu la mtumiaji.
 
 **Kiima:** Zimezimwa
 
-### Tabia ya Auto-Prompt
+### Tabia ya Auto-Prompt {#auto-prompt-behaviour}
 
 Inadhibiti kama widget ya mazungumzo inatuma moja kwa moja ombi (prompt) wakati mtumiaji anapoifungua.
 
@@ -93,7 +93,7 @@ Wakati imewekwa kwenye **Custom prompt**, sehemu nyingine ya maandishi inaonekan
 
 **Kiima:** Zimezimwa
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 Toleo 1.1.0 linatangulia SharedWorker runtime kwa ajili ya injini ya MLC. Hapo awali, kila tab ya kivinjari iliyotumia WebLLM ilipakua toleo lake la mfumo, ikipigana kwa kumbukumbu ya GPU na kusababisha matatizo ya utendaji kwenye vifaa vyenye kumbukumbu ndogo ya VRAM.
 
@@ -105,29 +105,29 @@ Kwa SharedWorker runtime, tab moja inatumika kama mwenyeji wa injini. Tab zote z
 
 SharedWorker ni ya uwazi kwa watumiaji. Kiashiria cha hali kwenye admin-bar daima kinaonyesha hali ya injini iliyoshirikiwa, sio tab binafsi.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Addon inasakinisha `apiFetch` middleware ambayo inazuia maombi ya WordPress REST API yanayolingana na mfumo wa AI Client SDK. Badala ya kufanya ombi la HTTP la kurudi kwenye seva, maombi haya yanapumbelewa moja kwa moja kwenda kwenye broker wa WebLLM wa ndani unaoendesha kwenye SharedWorker.
 
 Hii inamaanisha kuwa plugins na themes zinazotumia API ya kawaida ya WordPress `apiFetch` kuita endpoints za AI zitapata faida kiotomatiki kutoka kwa mfumo wa kivinjari wakati uko tayari, bila kuhitaji mabadiliko yoyote ya msimbo.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — Sajili injini ya kivinjari ya WebLLM kama mfumo wa maandishi unaopendekezwa. Addon inahusishwa na filter hii kiotomatiki wakati injini inapopangwa na kuwa tayari.
 - `ultimate_webllm_widget_enabled` — Badilisha hali ya widget iliyowashwa kwa mtumiaji au muktadha maalum. Rudisha `true` au `false`.
 - `ultimate_webllm_auto_prompt` — Badilisha maandishi ya auto-prompt kabla ya kutumwa kwenye widget. Inapokea mchanganyiko wa maandishi ya ombi na kitu cha `WP_Post` cha sasa.
 
-## Kutatua Matatizo
+## Kutatua Matatizo {#troubleshooting}
 
-### Widget ya mazungumzo haionekani
+### Widget ya mazungumzo haionekani {#the-chat-widget-does-not-appear}
 
 - Thibitisha kuwa mtumiaji ameingia — widget inaonyeshwa kwa watumiaji walio thibitishwa tu
 - Angalia kuwa **Enable floating chat widget** imewashwa kwenye sehemu ya Connector
 - Thibitisha kuwa kivinjari cha mtumiaji kinasaidia WebGPU (angalia Mahitaji hapo juu)
 
-### Kiashiria cha admin-bar kinaonyesha "Error"
+### Kiashiria cha admin-bar kinaonyesha "Error" {#the-admin-bar-indicator-shows-error}
 
 Fungua konsoli ya developer ya kivinjari (F12) na kutafuta makosa yanayohusiana na WebLLM. Sababu za kawaida:
 
@@ -135,10 +135,10 @@ Fungua konsoli ya developer ya kivinjari (F12) na kutafuta makosa yanayohusiana 
 - Upakuaji wa uzito wa mfumo umeshindwa — angalia muunganisho wa mtandao na jaribu kufuta cache ya IndexedDB kwenye zana za developer za kivinjari (Application → IndexedDB)
 - Plugin ya kivinjari inazuia SharedWorker
 
-### Uzito wa mfumo unapakuliwa kila wakati
+### Uzito wa mfumo unapakuliwa kila wakati {#model-weights-download-every-time}
 
 Addon inatumia IndexedDB kama backend ya cache ili kuhakikisha uzito wa mfumo unabaki hata kama kuna upinduzi wa CDN. Ikiwa uzito unapakuliwa upya kila wakati wa kutembelea, angalia kuwa IndexedDB haifutwi na mipangilio ya faragha ya kivinjari au plugin.
 
-## Changelog
+## Changelog {#changelog}
 
 Tazama [Changelog](./changelog) kwa historia kamili ya toleo.

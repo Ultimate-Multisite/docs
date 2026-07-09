@@ -3,15 +3,15 @@ title: Elenchi hospitalitatis
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menus Hospitalitatis
+# Menus Hospitalitatis {#hospitality-menus}
 
 Proprietas **Menus Hospitalitatis** sinit Theme Builder paginas menús ciborum et potionum structas directe in tuo situ WordPress generare et inserere.
 
-## Conspectus
+## Conspectus {#overview}
 
 Theme Builder nunc creare potest paginas menús professionales et structas pro negotiis hospitalitatis, inter cauponas, tabernas coffeae, thermopolia, et officia epularum. Haec menús plene in consilium situs tui integrantur atque facile renovari et administrari possunt.
 
-## Genera Hospitalitatis Suffulta
+## Genera Hospitalitatis Suffulta {#supported-hospitality-types}
 
 - **Cauponae** — menús cenarum pleno servitio
 - **Tabernae coffeae** — menús coffeae et ciborum levium
@@ -21,9 +21,9 @@ Theme Builder nunc creare potest paginas menús professionales et structas pro n
 - **Plaustra cibaria** — menús servitii cibarii mobilis
 - **Cervesariae et Vinariae** — menús potionum cum descriptionibus
 
-## Structura Menús
+## Structura Menús {#menu-structure}
 
-### Categoriae Menús
+### Categoriae Menús {#menu-categories}
 
 Menús in categorias ordinantur:
 
@@ -34,7 +34,7 @@ Menús in categorias ordinantur:
 - **Potiones** — potiones (alcoholicae et non-alcoholicae)
 - **Specialia** — specialia diurna vel temporaria
 
-### Forma Rei Menús
+### Forma Rei Menús {#menu-item-format}
 
 Quaelibet res menús includit:
 
@@ -49,7 +49,7 @@ Quaelibet res menús includit:
 }
 ```
 
-#### Campi Rei
+#### Campi Rei {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Quaelibet res menús includit:
 | `allergens` | array | Allergena communia (Nuts, Shellfish, etc.) |
 | `availability` | string | Quando praesto sit (Daily, Seasonal, etc.) |
 
-## Creando Menús Hospitalitatis
+## Creando Menús Hospitalitatis {#creating-hospitality-menus}
 
-### Gradus 1: Praebe Informationem Menús
+### Gradus 1: Praebe Informationem Menús {#step-1-provide-menu-information}
 
 Dic Theme Builder de tuo menú:
 
@@ -71,7 +71,7 @@ Crea menú cauponae pro mea caupona Italica cum gustationibus,
 ferculis pastae, cursibus principalibus, et secundis mensis. Include pretia et descriptiones.
 ```
 
-### Gradus 2: Theme Builder Generat Menú
+### Gradus 2: Theme Builder Generat Menú {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Pretia et descriptiones format
 5. Addit informationem alimentariam et de allergenis
 
-### Gradus 3: Recense et Aptare
+### Gradus 3: Recense et Aptare {#step-3-review-and-customize}
 
 Potes:
 
@@ -91,9 +91,9 @@ Potes:
 4. Descriptiones et informationem alimentariam renovare
 5. Stilum et dispositionem aptare
 
-## Optiones Exhibitionis Menús
+## Optiones Exhibitionis Menús {#menu-display-options}
 
-### Pagina Menús Plena
+### Pagina Menús Plena {#full-menu-page}
 
 Pagina dedicata quae menú tuum completum ostendit:
 
@@ -102,7 +102,7 @@ Pagina dedicata quae menú tuum completum ostendit:
 - Dispositio typographiae amica
 - Consilium mobilibus respondens
 
-### Widget Menús
+### Widget Menús {#menu-widget}
 
 Inserere sectiones menús in aliis paginis:
 
@@ -111,7 +111,7 @@ Inserere sectiones menús in aliis paginis:
 - Menú potionum in pagina thermopolii
 - Ostensio secundarum mensarum in pede paginae
 
-### PDF Menús
+### PDF Menús {#menu-pdf}
 
 Generare menú PDF deponibile:
 
@@ -120,9 +120,9 @@ Generare menú PDF deponibile:
 - Imagines et descriptiones includit
 - Facile communicandum et per email mittendum
 
-## Informatio Alimentaria et de Allergenis
+## Informatio Alimentaria et de Allergenis {#dietary-and-allergen-information}
 
-### Attributa Alimentaria
+### Attributa Alimentaria {#dietary-attributes}
 
 Nota res informatione alimentaria:
 
@@ -134,7 +134,7 @@ Nota res informatione alimentaria:
 - **Low-Carb** — carbohydrata reducta
 - **High-Protein** — proteino dives
 
-### Monita de Allergenis
+### Monita de Allergenis {#allergen-warnings}
 
 Include allergena communia:
 
@@ -147,9 +147,9 @@ Include allergena communia:
 - **Gluten** — triticum et grana gluten continentia
 - **Sesame** — semina et oleum sesami
 
-## Administratio Menús
+## Administratio Menús {#menu-management}
 
-### Pretia Renovare
+### Pretia Renovare {#updating-prices}
 
 Facile renova pretia menús:
 
@@ -159,7 +159,7 @@ Facile renova pretia menús:
 4. Serva mutationes
 5. Mutationes statim apparent in situ tuo
 
-### Res Temporarias Addere
+### Res Temporarias Addere {#adding-seasonal-items}
 
 Crea variationes menús temporarias:
 
@@ -169,7 +169,7 @@ Crea variationes menús temporarias:
 4. Disponere dies disponibilitatis
 5. Automatice ostendere tempore suo
 
-### Specialia Administrare
+### Specialia Administrare {#managing-specials}
 
 Ostende specialia diurna vel hebdomadalia:
 
@@ -179,7 +179,7 @@ Ostende specialia diurna vel hebdomadalia:
 4. Renova cotidie vel singulis hebdomadibus
 5. Archiva specialia vetera
 
-## Integratio cum Theme Builder
+## Integratio cum Theme Builder {#integration-with-theme-builder}
 
 Cum Theme Builder pro sitibus hospitalitatis uteris:
 
@@ -189,9 +189,9 @@ Cum Theme Builder pro sitibus hospitalitatis uteris:
 4. **Optimizatio mobilis** — menús pulchre in telephonis ostenduntur
 5. **Optimizatio SEO** — menús machinis quaerendi amica sunt
 
-## Optimae Rationes
+## Optimae Rationes {#best-practices}
 
-### Consilium Menús
+### Consilium Menús {#menu-design}
 
 - **Ordinatio clara** — structura categorica logica
 - **Descriptiones legibiles** — appetibiles et informativae
@@ -199,7 +199,7 @@ Cum Theme Builder pro sitibus hospitalitatis uteris:
 - **Photographiae professionales** — imagines ciborum altae qualitatis
 - **Spatium vacuum** — noli paginam nimis comprimere
 
-### Contentum
+### Contentum {#content}
 
 - **Descriptiones accuratae** — res accurate describe
 - **Specialia illustrare** — fac specialia eminere
@@ -207,7 +207,7 @@ Cum Theme Builder pro sitibus hospitalitatis uteris:
 - **Regulariter renovare** — pretia et res recentes serva
 - **Lingua appetibilis uti** — fac res delectabiles sonare
 
-### Accessibilitas
+### Accessibilitas {#accessibility}
 
 - **Fontes legibiles** — utere typis claris et legibilibus
 - **Contrarium sufficiens** — cura ut textus legibilis sit
@@ -215,9 +215,9 @@ Cum Theme Builder pro sitibus hospitalitatis uteris:
 - **Monita de allergenis** — allergena conspicue ostende
 - **Mobilibus amicum** — proba in omnibus machinis
 
-## Exempla
+## Exempla {#examples}
 
-### Structura Menús Cauponae
+### Structura Menús Cauponae {#restaurant-menu-structure}
 
 ```
 Gustationes
@@ -241,7 +241,7 @@ Secundae mensae
 └── Delectus Gelati
 ```
 
-### Structura tabulae cibariae cafei
+### Structura tabulae cibariae cafei {#cafe-menu-structure}
 
 ```
 Coffea
@@ -260,7 +260,7 @@ Panificia fartilia
 └── Involucrum vegetabile
 ```
 
-## Proprietates cognatae
+## Proprietates cognatae {#related-features}
 
 - [Crea tabulam](../abilities/create-menu.md) — crea tabulas navigationis
 - [Directio designationis](./design-direction.md) — consilium situs tui apta

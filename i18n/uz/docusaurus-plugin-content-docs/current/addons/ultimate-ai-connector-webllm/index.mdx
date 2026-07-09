@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM brauzerga xos AI inferensiyasini WordPress multisite tarmog‘ingizga olib keladi. U WebLLM va MLC engine yordamida katta til modellarini to‘liq brauzerda ishga tushiradi — API kalitlari yo‘q, tashqi chaqiruvlar yo‘q, ma’lumotlar foydalanuvchi qurilmasidan tashqariga chiqmaydi.
 
-## Asosiy imkoniyatlar
+## Asosiy imkoniyatlar {#key-features}
 
 - **Brauzer tomonidagi inferensiya**: LLM WebLLM/MLC orqali tashrif buyuruvchining brauzerida lokal ishlaydi — server GPU talab qilinmaydi
 - **Suzuvchi chat vidjeti**: Tizimga kirgan foydalanuvchilar brauzer tomonidagi LLM’ga bevosita old tomondan prompt yuborishi mumkin
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM brauzerga xos AI inferensiyasini WordPress mult
 - **IndexedDB kesh**: Model weight yuklab olishlari standart Cache API yo‘lini buzadigan CDN qayta yo‘naltirishlaridan keyin ham saqlanadi
 - **wpai filter integratsiyasi**: `wpai_preferred_text_models` filtriga ulanadi, shunda AI Experiments funksiyasi sozlanganda brauzer engine’ga yo‘naltiriladi
 
-## Talablar
+## Talablar {#requirements}
 
 - WordPress 5.3 yoki undan yuqori
 - PHP 7.4 yoki undan yuqori
 - Ultimate Multisite plugin (faol)
 - WebGPU qo‘llab-quvvatlanadigan brauzer (Chrome 113+, Edge 113+ yoki WebGPU yoqilgan Firefox Nightly)
 
-## O‘rnatish
+## O‘rnatish {#installation}
 
 1. Addon fayllarini `/wp-content/plugins/` direktoriyangizga yuklang
 2. WordPress’dagi 'Plugins' menyusi orqali plugin’ni faollashtiring
 3. Addon’ni sozlash uchun **Ultimate Multisite → AI Connector** bo‘limiga o‘ting
 
-## Suzuvchi chat vidjeti
+## Suzuvchi chat vidjeti {#floating-chat-widget}
 
 Suzuvchi chat vidjeti tizimga kirgan har qanday foydalanuvchiga o‘zi turgan sahifani tark etmasdan, old tomondan brauzer tomonidagi LLM bilan bevosita muloqot qilish imkonini beradi.
 
-### U nima qiladi
+### U nima qiladi {#what-it-does}
 
 Yoqilganda, tizimga kirgan foydalanuvchilar uchun har bir old tomon sahifasining burchagida chat belgisi paydo bo‘ladi. Belgini bosish chat panelini ochadi, u yerda foydalanuvchi promptlar yozishi va lokal ishlayotgan WebLLM modelidan javoblar olishi mumkin. Model to‘liq brauzerda ishlagani uchun javoblar maxfiy bo‘ladi va hech qanday server tomonidagi qayta ishlashni o‘z ichiga olmaydi.
 
-### Admin-panel holat indikatori
+### Admin-panel holat indikatori {#admin-bar-status-indicator}
 
 WordPress admin paneli WebLLM engine’ning joriy holatini ko‘rsatadigan holat indikatorini o‘z ichiga oladi:
 
@@ -56,7 +56,7 @@ WordPress admin paneli WebLLM engine’ning joriy holatini ko‘rsatadigan holat
 
 Indikator sahifani qayta yuklashni talab qilmasdan real vaqtda yangilanadi.
 
-### Vidjetni qanday yoqish yoki o‘chirish
+### Vidjetni qanday yoqish yoki o‘chirish {#how-to-enable-or-disable-the-widget}
 
 1. Tarmoq adminida **Ultimate Multisite → AI Connector** bo‘limiga o‘ting
 2. **Connector** panelini toping
@@ -65,17 +65,17 @@ Indikator sahifani qayta yuklashni talab qilmasdan real vaqtda yangilanadi.
 
 Agar tarmoq administratori bu imkoniyatni bergan bo‘lsa, vidjet saytning o‘z adminidan ham har bir sayt bo‘yicha yoqilishi yoki o‘chirilishi mumkin.
 
-## Vidjet sozlamalari
+## Vidjet sozlamalari {#widget-settings}
 
 **Ultimate Multisite → AI Connector** ichidagi Connector paneli suzuvchi chat vidjeti uchun quyidagi sozlamalarni o‘z ichiga oladi:
 
-### Suzuvchi chat vidjetini yoqish
+### Suzuvchi chat vidjetini yoqish {#enable-floating-chat-widget}
 
 Butun tarmoq uchun chat vidjetini yoqadi yoki o‘chiradi. O‘chirilganda, foydalanuvchi rolidan qat’i nazar, vidjet hech qanday old tomon sahifasida ko‘rinmaydi.
 
 **Standart:** O‘chiq
 
-### Auto-Prompt xatti-harakati
+### Auto-Prompt xatti-harakati {#auto-prompt-behaviour}
 
 Foydalanuvchi chat vidjetini ochganda, u avtomatik ravishda prompt yuborish-yubormasligini boshqaradi.
 
@@ -93,7 +93,7 @@ Foydalanuvchi chat vidjetini ochganda, u avtomatik ravishda prompt yuborish-yubo
 
 **Standart:** O‘chirilgan
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 1.1.0 versiyasi MLC engine uchun SharedWorker runtime’ni taqdim etadi. Avval WebLLM’dan foydalangan har bir brauzer tabi modelning o‘z nusxasini yuklar, GPU xotirasi uchun raqobatlashar va VRAM cheklangan qurilmalarda unumdorlik muammolariga sabab bo‘lardi.
 
@@ -105,29 +105,29 @@ SharedWorker runtime bilan bitta tab engine host sifatida ishlaydi. Boshqa barch
 
 SharedWorker foydalanuvchilar uchun shaffofdir. Admin-panel holat indikatori alohida tab holatini emas, doimo umumiy engine holatini aks ettiradi.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Addon AI Client SDK andozasiga mos WordPress REST API so‘rovlarini ushlab qoladigan `apiFetch` middleware’ni o‘rnatadi. Serverga loopback HTTP so‘rovi yuborish o‘rniga, bu so‘rovlar bevosita SharedWorker’da ishlayotgan lokal WebLLM broker’ga yo‘naltiriladi.
 
 Bu shuni anglatadiki, AI endpoint’larni chaqirish uchun standart WordPress `apiFetch` API’dan foydalanadigan pluginlar va temalar brauzer tomonidagi model mavjud bo‘lganda, hech qanday kod o‘zgarishlarisiz avtomatik ravishda undan foyda oladi.
 
-## Hooklar va filtrlar
+## Hooklar va filtrlar {#hooks-and-filters}
 
-### Filtrlar
+### Filtrlar {#filters}
 
 - `wpai_preferred_text_models` — WebLLM brauzer dvigatelini afzal matn modeli sifatida ro‘yxatdan o‘tkazing. Addon dvigatel sozlangan va mavjud bo‘lganda avtomatik ravishda ushbu filterga ulanadi.
 - `ultimate_webllm_widget_enabled` — Muayyan foydalanuvchi yoki kontekst uchun widget yoqilgan holatini bekor qilib belgilang. `true` yoki `false` qaytaring.
 - `ultimate_webllm_auto_prompt` — Auto-prompt matnini widgetga yuborilishidan oldin o‘zgartiring. Prompt satrini va joriy `WP_Post` obyektini qabul qiladi.
 
-## Nosozliklarni bartaraf etish
+## Nosozliklarni bartaraf etish {#troubleshooting}
 
-### Chat widget ko‘rinmayapti
+### Chat widget ko‘rinmayapti {#the-chat-widget-does-not-appear}
 
 - Foydalanuvchi tizimga kirganini tasdiqlang — widget faqat autentifikatsiyadan o‘tgan foydalanuvchilarga ko‘rsatiladi
 - Connector panelida **Enable floating chat widget** yoqilganini tekshiring
 - Foydalanuvchining brauzeri WebGPU ni qo‘llab-quvvatlashini tekshiring (yuqoridagi Talablar bo‘limiga qarang)
 
-### Admin-bar indikatori "Error" ko‘rsatmoqda
+### Admin-bar indikatori "Error" ko‘rsatmoqda {#the-admin-bar-indicator-shows-error}
 
 Brauzer developer console (F12) ni oching va WebLLM bilan bog‘liq xatolarni qidiring. Keng tarqalgan sabablar:
 
@@ -135,10 +135,10 @@ Brauzer developer console (F12) ni oching va WebLLM bilan bog‘liq xatolarni qi
 - Model vaznlari yuklab olinmadi — tarmoq ulanishini tekshiring va brauzer developer tools ichida IndexedDB keshini tozalab ko‘ring (Application → IndexedDB)
 - Brauzer extension SharedWorker ni bloklamoqda
 
-### Model vaznlari har safar yuklab olinadi
+### Model vaznlari har safar yuklab olinadi {#model-weights-download-every-time}
 
 Addon model vaznlari CDN yo‘naltirishlaridan keyin ham saqlanib qolishini ta’minlash uchun IndexedDB ni cache backend sifatida ishlatadi. Agar vaznlar har tashrifda qayta yuklab olinayotgan bo‘lsa, IndexedDB brauzer maxfiylik sozlamasi yoki extension tomonidan tozalanmayotganini tekshiring.
 
-## O‘zgarishlar jurnali
+## O‘zgarishlar jurnali {#changelog}
 
 To‘liq versiya tarixi uchun [O‘zgarishlar jurnali](./changelog) ga qarang.

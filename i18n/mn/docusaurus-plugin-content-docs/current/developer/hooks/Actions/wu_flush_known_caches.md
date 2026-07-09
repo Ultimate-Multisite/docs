@@ -4,10 +4,10 @@ title: Үйлдэл - wu_flush_known_caches
 sidebar_label: wu_flush_known_caches
 _i18n_hash: bfe84286e3bd8d31846f6800c0954148
 ---
-# Үйлдэл: wu_flush_known_caches
+# Үйлдэл: wu_flush_known_caches {#action-wuflushknowncaches}
 
 Нэмэлт цэвэрлэгээнд холбох
 
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/managers/class-cache-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-cache-manager.php#L49)-д 49-р мөрөнд тодорхойлсон

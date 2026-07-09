@@ -4,11 +4,11 @@ title: Aiki - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Aiki: wu_mt_provider_log
+# Aiki: wu_mt_provider_log {#action-wumtproviderlog}
 
 Yana faruwa lokacin da provider ya rubuta saƙo a log.
 
-## Parameters
+## Parameters {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yana faruwa lokacin da provider ya rubuta saƙo a log.
 | $level | `string` | Matakin log. |
 | $context | `array` | Ƙarin mahalli. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 1.0.0
-### Tushe
+### Tushe {#source}
 
 An ayyana shi a cikin [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400) a layi 400

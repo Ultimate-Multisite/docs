@@ -4,11 +4,11 @@ title: Azzjoni - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Azzjoni: wu_handle_user_meta_fields
+# Azzjoni: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Ippermetti lill-iżviluppaturi tal-plugin isalvaw id-dejta meta tal-utent b’modi differenti jekk ikollhom bżonn.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Ippermetti lill-iżviluppaturi tal-plugin isalvaw id-dejta meta tal-utent b’mo
 | $customer | `\Customer` | L-oġġett tal-klijent Ultimate Multisite. |
 | $checkout | `\Checkout` | Il-klassi tal-checkout. |
 
-### Minn
+### Minn {#since}
 
 - 2.0.4
-### Sors
+### Sors {#source}
 
 Iddefinit f’[`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) fil-linja 1244

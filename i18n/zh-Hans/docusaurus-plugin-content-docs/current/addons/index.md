@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons 通过额外功能和集成来扩展 Ultimate Multisite。大多数 Addons 为付费项目，可从 [ultimatemultisite.com](https://ultimatemultisite.com) 购买。
 
-## 安装
+## 安装 {#installation}
 
 Addons 可通过两种方式安装：
 
 1. **通过 Addon 页面** -- 导航到 WordPress 管理后台中你的站点的 Addon 管理页面
 2. **手动下载** -- 从[你的 Account](https://ultimatemultisite.com/my-account/downloads/) 下载，并通过 Plugins > Add New 上传
 
-## 可用 Addons
+## 可用 Addons {#available-addons}
 
 | Addon | 描述 |
 |-------|-------------|

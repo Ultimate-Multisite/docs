@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent bụ onye enyemaka WordPress AI na-arụ ọrụ onwe ya nke nwere ike ịhazi, wuo, ma jikwaa saịtị WordPress zuru ezu site na ntuziaka asụsụ nkịtị. Ọ na-egosi nchịkọta **ikike** a haziri ahazi — omume dị iche iche, a pụrụ ịnwale nke agent nwere ike ịkpọ — na-ekpuchi ihe niile site na njikwa ọdịnaya ruo nhazi usoro imewe. Ụdị 1.9.0 na-agbakwunye ikike imepụta ọdịnaya, nyocha peeji anya site na screenshots nke akụkụ client, profaịlụ agent ise arụnyere n'ime ya, na akara njirimara maka njikwa ohere na branding.
 
-## Njirimara Ndị Dị Mkpa
+## Njirimara Ndị Dị Mkpa {#key-features}
 
 - **Usoro ikike** — katalọgụ omume modular, a pụrụ ịgbatị, nke agent nwere ike ịkpọ na nrụnye WordPress gị
 - **Njikwa Ọdịnaya** — mepụta posts na peeji (gụnyere ikenye page templates), mepụta ọtụtụ posts n'otu oku, debe onyonyo pụtara ìhè, ma wuo fọm kọntaktị
@@ -28,21 +28,21 @@ Gratis AI Agent bụ onye enyemaka WordPress AI na-arụ ọrụ onwe ya nke nwe
 - **Nhazi Site Builder v2** — atụmatụ iwu saịtị nwere ọtụtụ nzọụkwụ, yana nchọpụta plugin, nsuso ọganihu, na mgbake njehie
 - **Iwu benchmark WP-CLI** — gbaa suite benchmark ikike agent site na command line maka CI na nyocha model
 
-## Ihe Achọrọ
+## Ihe Achọrọ {#requirements}
 
 - WordPress 6.0 ma ọ bụ nke ka elu
 - PHP 8.1 ma ọ bụ nke ka elu
 - WordPress Multisite (network-activated) ma ọ bụ nrụnye otu saịtị
 - Plugin njikọ AI provider na-arụ ọrụ (Anthropic, OpenAI, ma ọ bụ nke kwekọrọ)
 
-## Nwụnye
+## Nwụnye {#installation}
 
 1. Bulite faịlụ plugin na `/wp-content/plugins/gratis-ai-agent`
 2. Mee ka plugin rụọ ọrụ site na ihuenyo **Plugins** na WordPress
 3. Gaa na **Gratis AI Agent → Ntọala** ma jikọọ AI provider gị
 4. (Nhọrọ) Lelee **Ndekọ Ikike** iji wụnye ngwugwu ikike ndị ọzọ
 
-## Mmalite Ngwa Ngwa
+## Mmalite Ngwa Ngwa {#quick-start}
 
 Ozugbo emere ka ọ rụọ ọrụ ma jikọọ ya na AI provider, mepee panel **Gratis AI Agent** na sidebar nchịkwa WordPress. Pịnye ntuziaka asụsụ nkịtị, agent ahụ ga-ahazi ma mee nzọụkwụ achọrọ site n'iji ikike dị ya.
 
@@ -60,7 +60,7 @@ Tinye palette agba dark-mode n'ime theme ma debe agba primary ka ọ bụrụ #1
 Wuo weebụsaịtị ụlọ oriri nwere menu online, fọm ntinye akwụkwọ, na peeji kọntaktị.
 ```
 
-## Nchịkọta Ikike
+## Nchịkọta Ikike {#abilities-overview}
 
 Ikike bụ omume kacha nta agent nwere ike ime. Ikike ọ bụla bụ klas PHP e debanyere aha nke na-egosi schema (parameters na ụdị nloghachi) nke agent na-agụ n'oge ọ na-arụ ọrụ. A na-achịkọta ikike n'ime mpaghara ọrụ:
 
@@ -79,7 +79,7 @@ Ikike bụ omume kacha nta agent nwere ike ime. Ikike ọ bụla bụ klas PHP e
 
 Hụ [Ntụaka Ikike](./abilities) maka akwụkwọ parameter zuru ezu na ihe atụ ojiji.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent na-ebute ezinụlọ iwu `wp gratis-ai-agent` maka ịgba benchmarks na ijikwa ikike site na command line. Hụ [Ntụaka WP-CLI](./wp-cli) maka ndepụta iwu zuru ezu.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Nhazi
+## Nhazi {#configuration}
 
 Ntọala niile dị n'okpuru **Gratis AI Agent → Ntọala** na nchịkwa WordPress:
 
@@ -106,7 +106,7 @@ Ntọala niile dị n'okpuru **Gratis AI Agent → Ntọala** na nchịkwa WordP
 | **Ability Timeout** | Sekọnd kachasị elu ikike otu onye nwere ike ịgba (ndabara 30) |
 | **Debug Logging** | Debanye oku ikike na echiche agent na WordPress debug log |
 
-## Blocklist Nchekwa Njikwa Nhọrọ
+## Blocklist Nchekwa Njikwa Nhọrọ {#options-management-safety-blocklist}
 
 Ikike Njikwa Options gụnyere blocklist e wuru n’ime ya nke na-egbochi agent ịgụ ma ọ bụ ide options WordPress dị nro. Blocklist ndabara na-ekpuchi:
 
@@ -118,26 +118,26 @@ Ikike Njikwa Options gụnyere blocklist e wuru n’ime ya nke na-egbochi agent 
 
 A pụrụ itinye ntinye ndị ọzọ site na filter `gratis_ai_agent_options_blocklist`.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — a na-akpalite ya mgbe e debanyere ikike aha, na-anata aha klas ikike
 - `gratis_ai_agent_plan_started` — a na-akpalite ya mgbe atụmatụ onye na-ewu saịtị malitere mmezu
 - `gratis_ai_agent_plan_completed` — a na-akpalite ya mgbe atụmatụ mechara nke ọma
 - `gratis_ai_agent_plan_failed` — a na-akpalite ya mgbe atụmatụ zutere mmejọ a na-apụghị idozi
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — gbanwee ndepụta ikike e debanyere aha tupu agent ebunye ya
 - `gratis_ai_agent_options_blocklist` — gbasaa ma ọ bụ belata blocklist nchekwa options
 - `gratis_ai_agent_benchmark_questions` — tinye ajụjụ benchmark omenala na ngwugwu nyocha
 - `gratis_ai_agent_plan_plugins` — gbanwee ndepụta nchọpụta plugin n’oge mmepụta atụmatụ saịtị
 
-## Nkwado
+## Nkwado {#support}
 
 Maka nkwado, gaa na [ultimatemultisite.com](https://ultimatemultisite.com) ma ọ bụ mepee issue n’ụlọ nchekwa plugin.
 
-## Changelog
+## Changelog {#changelog}
 
 Lee [Changelog](./changelog) maka akụkọ ụdị zuru ezu.

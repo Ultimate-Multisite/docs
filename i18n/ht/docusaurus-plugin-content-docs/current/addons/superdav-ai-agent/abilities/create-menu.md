@@ -3,15 +3,15 @@ title: Kreye meni
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Kreye meni
+# Kreye meni {#create-menu}
 
 Kapasite **Kreye meni** a kreye meni navigasyon WordPress ak sipò pou etikèt navigasyon diferan ki separe ak tit paj yo.
 
-## Apèsi
+## Apèsi {#overview}
 
 Kapasite sa a elaji fonksyonalite estanda pou kreye meni a avèk kapasite pou presize yon paramèt `navigation_label`. Sa pèmèt ou kreye meni kote etikèt ki parèt nan navigasyon an diferan ak tit paj la, sa ki bay plis fleksibilite nan estrikti sit la ak eksperyans itilizatè a.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Paramèt | Tip | Obligatwa | Deskripsyon |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Kapasite sa a elaji fonksyonalite estanda pou kreye meni a avèk kapasite pou pr
 | `location` | string | Non | Anplasman tèm pou bay meni sa a, pa egzanp `primary` |
 | `navigation_label` | string | Non | Etikèt pou montre nan navigasyon an (diferan ak tit paj la) |
 
-## Valè retounen
+## Valè retounen {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Kapasite sa a elaji fonksyonalite estanda pou kreye meni a avèk kapasite pou pr
 }
 ```
 
-## Etikèt navigasyon kont tit paj
+## Etikèt navigasyon kont tit paj {#navigation-label-vs-page-title}
 
 Paramèt `navigation_label` la pèmèt ou separe non meni entèn nan ak etikèt ki parèt pou itilizatè yo:
 
@@ -43,9 +43,9 @@ Sa itil lè:
 - Ou bezwen sipòte plizyè lang ak longè etikèt diferan
 - W ap konstwi meni pou rejyon oswa gwoup itilizatè espesifik
 
-## Egzanp itilizasyon
+## Egzanp itilizasyon {#usage-examples}
 
-### Egzanp 1: Meni senp ak etikèt navigasyon
+### Egzanp 1: Meni senp ak etikèt navigasyon {#example-1-simple-menu-with-navigation-label}
 
 **Enstriksyon:**
 ```
@@ -62,7 +62,7 @@ Kreye yon meni navigasyon prensipal ki rele "Main Navigation" ak etikèt navigas
 }
 ```
 
-### Egzanp 2: Meni pou anplasman tèm espesifik
+### Egzanp 2: Meni pou anplasman tèm espesifik {#example-2-menu-for-specific-theme-location}
 
 **Enstriksyon:**
 ```
@@ -80,7 +80,7 @@ Kreye yon meni pye paj ki rele "Footer Links" ak etikèt navigasyon "Quick Links
 }
 ```
 
-## Entegrasyon ak Theme Builder
+## Entegrasyon ak Theme Builder {#integration-with-theme-builder}
 
 Lè w ap itilize Theme Builder, kapasite Kreye meni a:
 
@@ -89,13 +89,13 @@ Lè w ap itilize Theme Builder, kapasite Kreye meni a:
 3. Bay meni yo anplasman tèm ki kòrèk yo
 4. Sipòte ajoute eleman meni apre kreyasyon
 
-## Kapasite ki gen rapò
+## Kapasite ki gen rapò {#related-abilities}
 
 - **`add_menu_item`** — Ajoute eleman nan yon meni ki deja egziste
 - **`update_menu`** — Chanje non yon meni oswa rebay li yon anplasman tèm
 - **`delete_menu`** — Retire yon meni nan sit ou
 
-## Pi bon pratik
+## Pi bon pratik {#best-practices}
 
 - **Sèvi ak etikèt navigasyon ki klè** — kenbe etikèt yo kout epi deskriptif pou itilizatè yo
 - **Matche anplasman tèm yo** — bay meni yo anplasman tèm ki kòrèk la pou afichaj apwopriye
@@ -103,14 +103,14 @@ Lè w ap itilize Theme Builder, kapasite Kreye meni a:
 - **Teste reponsivite** — verifye meni yo parèt kòrèkteman sou aparèy mobil
 - **Lokalize etikèt yo** — sèvi ak etikèt navigasyon diferan pou diferan vèsyon lang
 
-## Limitasyon
+## Limitasyon {#limitations}
 
 - Etikèt navigasyon yo sèlman pou afichaj; `name` entèn nan toujou itilize pou idantifikasyon WordPress
 - Sipò tèm varye; se pa tout tèm ki sipòte tout anplasman meni yo
 - Eleman meni yo dwe ajoute apa apre kreyasyon meni an
 - Chanje yon etikèt navigasyon mande pou mete meni an ajou
 
-## Kapasite ki gen rapò
+## Kapasite ki gen rapò {#related-abilities-1}
 
 - [Jenere Logo SVG](./generate-logo-svg.md) — kreye logo pou antèt sit ou
 - [Valide kontras palèt](./validate-palette-contrast.md) — asire konbinezon koulè ki aksesib

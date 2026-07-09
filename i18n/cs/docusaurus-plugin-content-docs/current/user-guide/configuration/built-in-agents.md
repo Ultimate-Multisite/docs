@@ -3,11 +3,11 @@ title: Vestavění agenti
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Vestavění agenti
+# Vestavění agenti {#built-in-agents}
 
 Gratis AI Agent v1.9.0 přináší pět vestavěných agentů, z nichž každý je předkonfigurovaný se zaměřenou sadou nástrojů, přizpůsobeným systémovým promptem a úvodními návrhy odpovídajícími běžným úkolům v dané oblasti. Přepínání mezi agenty mění, co asistent dokáže dělat a jak odpovídá — bez jakékoli konfigurace z vaší strany. Superdav AI Agent v1.18.0 může do těchto pracovních postupů přidat nástroje zohledňující harmonogram, záznamy připomínek, schvalovací brány a SMS upozornění, když jsou související integrace nakonfigurovány.
 
-## Co je agent?
+## Co je agent? {#what-is-an-agent}
 
 Každý agent je pojmenovaný konfigurační profil, který kombinuje:
 
@@ -15,7 +15,7 @@ Každý agent je pojmenovaný konfigurační profil, který kombinuje:
 - **Systémový prompt** — instrukce, které nastavují tón, priority a omezení agenta
 - **Návrhy** — předem napsané prompty zobrazené v chatovacím rozhraní, které vám pomohou rychle začít
 
-## Přístup k výběru agenta
+## Přístup k výběru agenta {#accessing-the-agent-picker}
 
 1. Otevřete panel **Gratis AI Agent** v administrátorském postranním panelu WordPress.
 2. Klikněte na **ikonu agenta** vlevo nahoře v záhlaví chatu (ikona se mění podle aktivního agenta).
@@ -24,9 +24,9 @@ Každý agent je pojmenovaný konfigurační profil, který kombinuje:
 
 Agenty můžete přepínat také uprostřed konverzace — systémový prompt nového agenta se uplatní od další zprávy.
 
-## Pět vestavěných agentů
+## Pět vestavěných agentů {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Zaměření:** Tvorba a úpravy příspěvků, stránek a kontaktních formulářů.
 
@@ -47,7 +47,7 @@ Agenty můžete přepínat také uprostřed konverzace — systémový prompt no
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Zaměření:** Kompletní tvorba webu z jediného promptu.
 
@@ -70,7 +70,7 @@ Agenty můžete přepínat také uprostřed konverzace — systémový prompt no
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Zaměření:** Vizuální přizpůsobení — barvy, typografie, CSS a vzory bloků.
 
@@ -87,7 +87,7 @@ Agenty můžete přepínat také uprostřed konverzace — systémový prompt no
 - *Pořiď snímek obrazovky domovské stránky a řekni mi, co bys zlepšil.*
 - *Vytvoř znovupoužitelný hero vzor bloku s obrázkem na pozadí přes celou šířku a zarovnaným nadpisem na střed.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Zaměření:** Objevování, instalace a správa WordPress pluginů.
 
@@ -105,7 +105,7 @@ Agenty můžete přepínat také uprostřed konverzace — systémový prompt no
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Zaměření:** Odpovídání na otázky o obsahu webu, nastavení a konfiguraci WordPress.
 
@@ -124,7 +124,7 @@ Agenty můžete přepínat také uprostřed konverzace — systémový prompt no
 
 ---
 
-## Integrace automatizace Superdav
+## Integrace automatizace Superdav {#superdav-automation-integrations}
 
 Když jsou nakonfigurovány integrace Superdav AI Agent v1.18.0, vestavění agenti se mohou podílet na bezpečnějších automatizačních pracovních postupech s ohledem na plánování:
 
@@ -138,11 +138,11 @@ Doporučený pracovní postup: požádejte agenta, aby připravil zprávu nebo a
 
 ---
 
-## Přizpůsobení agentů
+## Přizpůsobení agentů {#customising-agents}
 
 Každého vestavěného agenta lze rozšířit nebo nahradit prostřednictvím filtru `gratis_ai_agent_agents`.
 
-### Přidání vlastního systémového promptu k existujícímu agentovi
+### Přidání vlastního systémového promptu k existujícímu agentovi {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Registrace nového agenta
+### Registrace nového agenta {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Nový agent se zobrazí ve výběru agentů okamžitě po spuštění filtru.
 
-### Odebrání vestavěného agenta
+### Odebrání vestavěného agenta {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

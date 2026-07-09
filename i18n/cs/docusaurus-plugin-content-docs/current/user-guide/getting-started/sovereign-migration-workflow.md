@@ -3,11 +3,11 @@ title: Workflow migrace suverénní
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow migrace do suverénního prostředí
+# Workflow migrace do suverénního prostředí {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 přidává brány pro ověření migrace při přesunu standardního subsite do infrastruktury suverénního nájemce (tenant).
 
-## Před zahájením
+## Před zahájením {#before-you-start}
 
 Potvrďte, že máte připraveno:
 
@@ -17,7 +17,7 @@ Potvrďte, že máte připraveno:
 - Převedení databáze (database host binding), které odpovídá cílovému prostředí.
 - Přístup k spouštění příkazů WP-CLI pro síť.
 
-## Doporučený postup
+## Doporučený postup {#recommended-workflow}
 
 1. Přípravte cílovou databázi nájemce a souborový systém.
 2. Registrujte nebo aktualizujte nastavení izolace nájemců (tenant isolation settings).
@@ -28,7 +28,7 @@ Potvrďte, že máte připraveno:
 7. Navštivte nájemce pomocí SSO.
 8. Přepněte DNS nebo směrování pouze po úspěšném dokončení ověření.
 
-## Brány pro ověření (Verification gates)
+## Brány pro ověření (Verification gates) {#verification-gates}
 
 Postup ověření kontroluje migaci z několika úhlopérstých stran:
 
@@ -40,6 +40,6 @@ Postup ověření kontroluje migaci z několika úhlopérstých stran:
 
 V případě selhání ověření považujte to za blokující překážku před nasazením. Opravte zjištěnou chybu v databázi, uživateli, frontě nebo směrování a poté znovu spusťte ověření, než nájemce vystavíte zákazníkům.
 
-## První návštěva v produkčním prostředí
+## První návštěva v produkčním prostředí {#first-production-visit}
 
 Po úspěšném dokončení ověření použijte funkci **Visit (SSO)** z obrazovky správy webu pro první administraci. To potvrzuje směrování nájemce, zpracování tokenů SSO, origin pinning a přidělování uživatelů na straně nájemce v jednom kontrolovaném kroku.

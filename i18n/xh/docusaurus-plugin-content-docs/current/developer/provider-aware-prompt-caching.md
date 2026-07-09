@@ -3,11 +3,11 @@ title: Ukugcinwa kweePrompt kwikheshi okuQondayo uMboneleli
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Ukugcinwa kwee-Prompt kwi-Cache okuQaphela uMboneleli
+# Ukugcinwa kwee-Prompt kwi-Cache okuQaphela uMboneleli {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 yazisa **ukugcinwa kwee-prompt kwi-cache okuqaphela umboneleli**, okulungiselela iindleko ze-API kunye nokulibaziseka ngokugcina ii-prompt kwi-cache kubaboneleli be-LLM abohlukeneyo. Umboneleli ngamnye uneendlela kunye noqwalaselo lokugcina kwi-cache olwahlukileyo.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Ukugcinwa kwee-prompt kwi-cache kukuvumela ukuba:
 
@@ -23,11 +23,11 @@ Ababoneleli abohlukeneyo baphumeza ukugcinwa kwi-cache ngeendlela ezohlukeneyo:
 - **OpenRouter**: Ukugcinwa kwi-cache okukhethekileyo kumboneleli
 - **Vertex Anthropic**: Ukugcinwa kwee-prompt kwi-cache ngolawulo lwe-cache
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini ibonelela ngolawulo lwe-cache olucacileyo nge-`cachedContents` API.
 
-### Uqwalaselo
+### Uqwalaselo {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Ukwenza i-Prompt eGcinwe kwi-Cache
+### Ukwenza i-Prompt eGcinwe kwi-Cache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Ukusebenzisa i-Prompt eGcinwe kwi-Cache
+### Ukusebenzisa i-Prompt eGcinwe kwi-Cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Umjikelo woBomi be-Cache
+### Umjikelo woBomi be-Cache {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Iindlela eziNgcono ze-Gemini
+### Iindlela eziNgcono ze-Gemini {#best-practices-for-gemini}
 
 - **Seta i-TTL efanelekileyo**: Linganisa ukonga iindleko xa kuthelekiswa nokuphelelwa lixesha kwe-cache
 - **Gcina ii-prompt zesistim kwi-cache**: Phinda usebenzise i-prompt yesistim efanayo kuzo zonke izicelo
 - **Beka esweni ukusetyenziswa kwe-cache**: Landela ukuba zeziphi ii-cache ezisetyenziswa kakhulu
 - **Coca ii-cache eziphelelwe lixesha**: Cima ngamaxesha athile ii-cache ezingasetyenziswanga
 
-## Azure OpenAI: Ukugcinwa kwee-Prompt kwi-Cache
+## Azure OpenAI: Ukugcinwa kwee-Prompt kwi-Cache {#azure-openai-prompt-caching}
 
 Azure OpenAI ixhasa ukugcinwa kwee-prompt kwi-cache ngolawulo lwe-TTL oluzenzekelayo.
 
-### Uqwalaselo
+### Uqwalaselo {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Ukuvula Ukugcinwa kwi-Cache
+### Ukuvula Ukugcinwa kwi-Cache {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Izihloko ze-Cache
+### Izihloko ze-Cache {#cache-headers}
 
 Azure OpenAI isebenzisa izihloko ze-HTTP kulawulo lwe-cache:
 
@@ -152,7 +152,7 @@ Amaxabiso axhaswayo:
 - `no_cache`: Ungasigcini esi sicelo kwi-cache
 - `no_store`: Ungasigcini kwi-cache kwaye ungaphindi usisebenzise
 
-### Ukubeka esweni Ukusetyenziswa kwe-Cache
+### Ukubeka esweni Ukusetyenziswa kwe-Cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Iindlela eziNgcono ze-Azure OpenAI
+### Iindlela eziNgcono ze-Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Sebenzisa ii-prompt ezingaguquguqukiyo**: Ii-prompt ezifanayo ziyazuza ekugcinweni kwi-cache
 - **Seta i-TTL esengqiqweni**: Linganisa iindleko xa zithelekiswa nokutsha
 - **Beka esweni iimetriki ze-cache**: Landela ukwenziwa kwe-cache xa kuthelekiswa nokufunyanwa kwi-cache
 - **Qokelela izicelo ezifanayo**: Dibanisa izicelo ukwandisa ukufunyanwa kwi-cache
 
-## OpenRouter: Ukugcinwa kwi-Cache okuKhethekileyo kuMboneleli
+## OpenRouter: Ukugcinwa kwi-Cache okuKhethekileyo kuMboneleli {#openrouter-provider-specific-caching}
 
 OpenRouter ixhasa ukugcinwa kwi-cache ngababoneleli abangaphantsi (OpenAI, Anthropic, njalo njalo).
 
-### Uqwalaselo
+### Uqwalaselo {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Ukusebenzisa Ukugcinwa kwi-Cache kwe-OpenRouter
+### Ukusebenzisa Ukugcinwa kwi-Cache kwe-OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Iinketho eziKhethekileyo kuMboneleli
+### Iinketho eziKhethekileyo kuMboneleli {#provider-specific-options}
 
 Ababoneleli abohlukeneyo baneendlela ezohlukeneyo zokugcina kwi-cache:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Iindlela eziNgcono ze-OpenRouter
+### Iindlela eziNgcono ze-OpenRouter {#best-practices-for-openrouter}
 
 - **Yazi ukugcinwa kwi-cache komboneleli wakho**: Umboneleli ngamnye uneendlela ezohlukeneyo
 - **Vavanya ukuziphatha kokugcinwa kwi-cache**: Qinisekisa ukuba ukugcinwa kwi-cache kusebenza nomboneleli omkhethileyo
 - **Beka esweni iindleko**: Landela ukonga okuvela ekugcinweni kwi-cache
 - **Sebenzisa iimodeli ezingaguquguqukiyo**: Ukutshintsha iimodeli kuqhawula ukufunyanwa kwi-cache
 
-## Vertex Anthropic: Ukugcinwa kwee-Prompt kwi-Cache ngoLawulo lwe-Cache
+## Vertex Anthropic: Ukugcinwa kwee-Prompt kwi-Cache ngoLawulo lwe-Cache {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) ixhasa ukugcinwa kwee-prompt kwi-cache ngolawulo lwe-cache olucacileyo.
 
-### Uqwalaselo
+### Uqwalaselo {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Ukusebenzisa Ukugcinwa kwi-Cache kwe-Vertex Anthropic
+### Ukusebenzisa Ukugcinwa kwi-Cache kwe-Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Iintlobo zoLawulo lwe-Cache
+### Iintlobo zoLawulo lwe-Cache {#cache-control-types}
 
 - **ephemeral**: Gcina kwi-cache ngexesha lesicelo (okungagqibekanga)
 - **persistent**: Gcina kwi-cache kuzo zonke izicelo ezininzi (ukuba kuyaxhaswa)
 
-### Ukubeka esweni Ukusetyenziswa kwe-Cache
+### Ukubeka esweni Ukusetyenziswa kwe-Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Iindlela eziNgcono ze-Vertex Anthropic
+### Iindlela eziNgcono ze-Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Sebenzisa ukugcinwa kwi-cache okwethutyana**: Kulungile ukugcinwa kwi-cache kweseshoni enye
 - **Seta i-max_tokens ngokufanelekileyo**: Linganisa ubungakanani be-cache xa kuthelekiswa neendleko
 - **Beka esweni iimetriki ze-cache**: Landela ukusebenza kwe-cache
 - **Vavanya ngomthwalo wakho womsebenzi**: Qinisekisa ukuba ukugcinwa kwi-cache kuyanceda imeko yakho yokusetyenziswa
 
-## Icebo lokuGcina kwi-Cache eliNqumla Ababoneleli
+## Icebo lokuGcina kwi-Cache eliNqumla Ababoneleli {#cross-provider-caching-strategy}
 
-### Uqwalaselo oluManyeneyo
+### Uqwalaselo oluManyeneyo {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Ukuchongwa koMboneleli
+### Ukuchongwa koMboneleli {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Icebo lokuBuyela Umva
+### Icebo lokuBuyela Umva {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Ukulungiselela Iindleko
+## Ukulungiselela Iindleko {#cost-optimization}
 
-### Bala uKonga
+### Bala uKonga {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Iingcebiso zokuLungiselela
+### Iingcebiso zokuLungiselela {#optimization-tips}
 
 - **Gcina ii-prompt zesistim ezinkulu kwi-cache**: Olona konga lweendleko lukhulu
 - **Phinda usebenzise umxholo**: Gcina kwi-cache amaxwebhu omxholo asetyenziswa rhoqo
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Beka esweni ukusebenza kwe-cache**: Landela ukonga kwangempela
 - **Lungisa i-TTL**: Linganisa iindleko xa zithelekiswa nokutsha
 
-## Ukusombulula Iingxaki
+## Ukusombulula Iingxaki {#troubleshooting}
 
-### I-cache ayisetyenziswa
+### I-cache ayisetyenziswa {#cache-not-being-used}
 
 - Qinisekisa ukuba ukugcinwa kwi-cache kuvuliwe kuqwalaselo
 - Jonga ukuba ii-prompt ziyafana (ukugcinwa kwi-cache kufuna ukuhambelana okuchanekileyo)
 - Qinisekisa ukuba i-cache ayikaphelelwa lixesha
 - Jonga imida ye-cache ekhethekileyo kumboneleli
 
-### Ukwenziwa kwe-cache kuyasilela
+### Ukwenziwa kwe-cache kuyasilela {#cache-creation-failing}
 
 - Qinisekisa ukuba ubungakanani be-cache bungaphakathi kwemida yomboneleli
 - Jonga ukuba isintaksi solawulo lwe-cache sichanekile
 - Qinisekisa ukuba umboneleli uxhasa ukugcinwa kwi-cache kwimodeli yakho
 - Phonononga uxwebhu lomboneleli malunga nemida
 
-### Iindleko ezingalindelekanga
+### Iindleko ezingalindelekanga {#unexpected-costs}
 
 - Beka esweni ukwenziwa kwe-cache xa kuthelekiswa neetokeni zokufunda kwi-cache
 - Qinisekisa ukuba i-cache iyasetyenziswa ngokwenene
 - Jonga ukuphoswa kwe-cache ngenxa yokwahluka kwee-prompt
 - Cinga ngokulungisa i-TTL okanye icebo le-cache
 
-## Uthelekiso lwaBaboneleli
+## Uthelekiso lwaBaboneleli {#provider-comparison}
 
 | Uphawu | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Ukuncitshiswa kweendleko | 90% | 90% | Kuxhomekeke kumboneleli | 90% |
 | Ukubeka esweni | Okuneenkcukacha | Ngeemetriki | Kuxhomekeke kumboneleli | Ngokusetyenziswa |
 
-## Amanyathelo aLandelayo
+## Amanyathelo aLandelayo {#next-steps}
 
 1. **Khetha umboneleli wakho**: Khetha ngokusekelwe kwiimfuno zakho
 2. **Qwalasela ukugcinwa kwi-cache**: Misela ukugcinwa kwi-cache okukhethekileyo kumboneleli

@@ -5,11 +5,11 @@ title: >-
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow ya Mofuta oa Sovereign
+# Workflow ya Mofuta oa Sovereign {#sovereign-migration-workflow}
 
 Ultimate Multisite 1.2.0 e ntse le gate tsa ho tsamaisa migration ho fana ka ho fana ka infrastructure ea mofuta o hlakileng (sovereign tenant).
 
-## Ho sa kopa ha u qala
+## Ho sa kopa ha u qala {#before-you-start}
 
 A re ke lehle hore u re:
 
@@ -19,7 +19,7 @@ A re ke lehle hore u re:
 - Binding ea database host seo se fana ka sehlopha sa mofuta o hlakileng.
 - U na le access ho rona WP-CLI commands ea network.
 
-## Workflow ea ho baetsoisetso (Recommended workflow)
+## Workflow ea ho baetsoisetso (Recommended workflow) {#recommended-workflow}
 
 1. Baetsoa database le filesystem ea mofuta oa tsoalo.
 2. Baetsoa kapa u reka settings ea isolation ea mofuta.
@@ -30,7 +30,7 @@ A re ke lehle hore u re:
 7. Leha ho ba lele le tenant ka SSO.
 8. Baetsoa DNS kapa routing haholo-holo ha ho fana ka ho tsamaisa (verification) e fetang.
 
-## Gates ea ho tsamaisa (Verification gates)
+## Gates ea ho tsamaisa (Verification gates) {#verification-gates}
 
 Workflow ea ho tsamaisa e tsoela ho tsamaisa migration ka dits'a tse fapaneng:
 
@@ -42,6 +42,6 @@ Workflow ea ho tsamaisa e tsoela ho tsamaisa migration ka dits'a tse fapaneng:
 
 Ba tsamaisa ho lehle ho tsamaisa (verification failures) ka ho fana ka ho sa u qala. Baetsoa mas'a a tsoiloa ea database, user, queue, kapa routing, ba re rona verification ka nako e fetang ha u lele tenant ka customers.
 
-## Ho ba lehle la ho tsamaisa (First production visit)
+## Ho ba lehle la ho tsamaisa (First production visit) {#first-production-visit}
 
 Ha ho fana ka ho tsamaisa (verification) e fetang, u sebelise **Visit (SSO)** ho tloha sehlopha sa management ea site ho ba lehle la ho tsamaisa (admin visit) haholo-holo. Sena se re kelele routing ea mofuta, ho fana ka token ea SSO, ho pin origin, le ho baetsoa users ea mofuta ka nako e le e lehliso sa ho tsamaisa.

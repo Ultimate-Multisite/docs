@@ -3,9 +3,9 @@ title: Gudanar da Biya da Kwathara
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Idanin Kuɗi da Kwathara
+# Idanin Kuɗi da Kwathara {#managing-payments-and-invoices}
 
-## Bayanai na Kuɗi
+## Bayanai na Kuɗi {#payment-settings}
 
 Kafin ka fara karɓar kuɗi, dole ne ka yi tsarin bayanan da suka shafi kuɗi. Ka tura kanka zuwa **Ultimate Multisite → Settings** sannan ka danna tab ɗin **Payment**.
 
@@ -15,7 +15,7 @@ Ga bayani na cikakken shafin bayanan kuɗi:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Zaɓuwar Kuɗin Na Umum
+### Zaɓuwar Kuɗin Na Umum {#general-payment-options}
 
 A bayanan na gaba, za ka iya tsara abubuwa kamar haka:
 
@@ -24,7 +24,7 @@ A bayanan na gaba, za ka iya tsara abubuwa kamar haka:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Gidan Kuɗi (Payment Gateways)
+### Gidan Kuɗi (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite yana samun dama ga gidan kuɗi da yawa. Za ka iya samar da kowane ɗayansa da kuma tsara shi daga tab na Bayanai na Kuɗi.
 
@@ -40,11 +40,11 @@ Kowane gidan kuɗi yana da sashi na tsara shi dace inda ka shigar API keys da wa
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Yanayin Sandbox (Sandbox Mode)
+### Yanayin Sandbox (Sandbox Mode) {#sandbox-mode}
 
 Za ka iya samar da **Sandbox Mode** don gwada haɗin kuɗin ka kafin fara aiki na gaske. Lokacin da Sandbox mode ya kasance aiki, ba za a yi wani kuɗi a gaske ba.
 
-## Gani Kuɗin
+## Gani Kuɗin {#viewing-payments}
 
 Ka tura kanka zuwa shafin **Payments** a ƙarƙashin Ultimate Multisite don ganin duk ayyukan kuɗi a dukkan shafukan ka.
 
@@ -54,7 +54,7 @@ Za ka iya fassara ayyukan kuɗi bisa yanayin su (completed, pending, failed, ref
 
 Danna kan wani biyanara don ganin cikakken bayanan shi, wanda ya haɗa da sashi daban-daban (line items), shawarwar da aka samu, bayanai na abokan ciniki, da kuma bayanan gwamnatin biyanara.
 
-## Invoices (Biya-biya)
+## Invoices (Biya-biya) {#invoices}
 
 Ultimate Multisite zai iya samar da in invoice (biya-biya) ne ba tare da ku yi wani abu ba don biyanar ku. Kuna iya gyara formatin template na invoice da kuma yadda ake rubuta lambar daga sassan Payment settings.
 

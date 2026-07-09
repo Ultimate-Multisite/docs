@@ -3,9 +3,9 @@ title: Төлқинлар ва ҳисоб-китобларни бошқариш
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödeme ve Fatura Yönetimi
+# Ödeme ve Fatura Yönetimi {#managing-payments-and-invoices}
 
-## Ödeme Ayarları
+## Ödeme Ayarları {#payment-settings}
 
 Ödeme almaya başlamadan önce, ödeme ile ilgili ayarları yapılandırmanız gerekecek. **Ultimate Multisite → Settings** kısmına gidin ve **Payment** sekmesine tıklayın.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Genel Ödeme Seçenekleri
+### Genel Ödeme Seçenekleri {#general-payment-options}
 
 Genel ayarlarda şunları yapılandırabilirsiniz:
 
@@ -24,7 +24,7 @@ Genel ayarlarda şunları yapılandırabilirsiniz:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Ödeme Ağ Geçitleri
+### Ödeme Ağ Geçitleri {#payment-gateways}
 
 Ultimate Multisite birdençe ödeme ağ geçitlerini (payment gateways) destekler. Her birini Ödeme ayarları sekmesinden açabilir ve yapılandırabilirsiniz.
 
@@ -40,11 +40,11 @@ Her ağ geçidinin kendi yapılandırma bölümü vardır; buraya API anahtarlar
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Modu (Sandbox Mode)
+### Sandbox Modu (Sandbox Mode) {#sandbox-mode}
 
 Canlıya geçmeden önce ödeme entegrasyonunuzu test etmek için **Sandbox Modunu** etkinleştirebilirsiniz. Sandbox modu aktifken gerçek ücret alınmaz.
 
-## Ödemeleri Görüntüleme
+## Ödemeleri Görüntüleme {#viewing-payments}
 
 Ultimate Multisite-ta networkdagi barcha operatsiyalar haqida ko'rish uchun **Payments** sahifasiga o'ting.
 
@@ -54,7 +54,7 @@ Siz to'lovlarni holat bo'yicha (tugallangan, kutishda, muvaffaqiyatsiz, qaytaril
 
 To'lov ustiga bosib, uning barcha tafsilotlarini ko'rishingiz mumkin, shu jumladan mahsulotlar ro'yxati (line items), bog'liq a'zolik, mijoz ma'lumotlari va to'lov eshigining (payment gateway) ma'lumotlari.
 
-## Fakturalar (Invoices)
+## Fakturalar (Invoices) {#invoices}
 
 Ultimate Multisite-da operatsiyalar uchun fakturalarni avtomatik yaratish mumkin. Siz faktura shablonini va raqam berish formatini To'lov sozlamalaridan o'zgartirishingiz mumkin.
 

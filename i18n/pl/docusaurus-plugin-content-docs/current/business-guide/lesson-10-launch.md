@@ -3,19 +3,19 @@ title: 'Lekcja 10: Dzień startu'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lekcja 10: Dzień Startu
+# Lekcja 10: Dzień Startu {#lesson-10-launch-day}
 
 Wszystko zostało zbudowane. Zanim otworzysz drzwi, ta lekcja przeprowadzi Cię przez listę kontrolną przed startem, aby upewnić się, że nic nie jest zepsute, brakujące ani żenujące.
 
-## Skąd byliśmy
+## Skąd byliśmy {#where-we-left-off}
 
 FitSite ma skonfigurowane szablony, plany, proces płatności (checkout), branding, onboarding i ceny. Teraz sprawdzamy, czy wszystko działa, i uruchamiamy platformę.
 
-## Lista kontrolna przed startem
+## Lista kontrolna przed startem {#pre-launch-checklist}
 
 Przejrzyj każdy punkt. Nie pomijaj żadnego.
 
-### Infrastruktura platformy
+### Infrastruktura platformy {#platform-infrastructure}
 
 - [ ] Hosting jest stabilny i dobrze działa pod obciążeniem
 - [ ] Wildcard SSL jest aktywny i wszystkie poddomeny działają przez HTTPS
@@ -23,7 +23,7 @@ Przejrzyj każdy punkt. Nie pomijaj żadnego.
 - [ ] Kopie zapasowe są skonfigurowane i przetestowane (przywróć przynajmniej jedną, aby zweryfikować)
 - [ ] Monitorowanie jest wdrożone – będziesz wiedział, jeśli platforma ulegnie awarii
 
-### Szablony
+### Szablony {#templates}
 
 - [ ] Wszystkie trzy szablony ładują się poprawnie na nowych stronach
 - [ ] Treść zastępcza jest pomocna i wolna od literówek
@@ -32,7 +32,7 @@ Przejrzyj każdy punkt. Nie pomijaj żadnego.
 - [ ] Prędkość ładowania strony jest akceptowalna (przetestuj za pomocą narzędzia takiego jak GTmetrix lub PageSpeed Insights)
 - [ ] Brak uszkodzonych linków ani brakujących zasobów na żadnym szablonie
 
-### Plany i produkty
+### Plany i produkty {#plans-and-products}
 
 - [ ] Wszystkie trzy plany są aktywne i widoczne
 - [ ] Opisy planów są dokładne i specyficzne dla niszy
@@ -42,7 +42,7 @@ Przejrzyj każdy punkt. Nie pomijaj żadnego.
 - [ ] Dodatkowe opcje (order bumps) pojawiają się poprawnie podczas checkoutu
 - [ ] Ograniczenia dotyczące pluginów i motywów są poprawnie egzekwowane dla każdego planu
 
-### Proces płatności (Checkout Flow)
+### Proces płatności (Checkout Flow) {#checkout-flow}
 
 - [ ] Wykonaj pełny test rejestracji dla każdego planu (użyj trybu testowej płatności)
 - [ ] Wybór szablonu pokazuje poprawne szablony dla każdego planu
@@ -52,7 +52,7 @@ Przejrzyj każdy punkt. Nie pomijaj żadnego.
 - [ ] Klient może natychmiast zalogować się na swoją nową stronę
 - [ ] Kody rabatowe działają poprawnie
 
-### Branding
+### Branding {#branding}
 
 - [ ] Strona logowania wyświetla branding FitSite
 - [ ] Panel administracyjny wyświetla branding FitSite
@@ -60,7 +60,7 @@ Przejrzyj każdy punkt. Nie pomijaj żadnego.
 - [ ] Faktury wyświetlają się poprawnie z Twoimi danymi firmowymi
 - [ ] Strona marketingowa jest aktywna i linkuje do formularza checkout
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Widget Quick Start pojawia się na panelach nowych klientów
 - [ ] Wszystkie linki Quick Start prowadzą do właściwych stron
@@ -68,7 +68,7 @@ Przejrzyj każdy punkt. Nie pomijaj żadnego.
 - [ ] Artykuły bazy wiedzy są opublikowane i dostępne
 - [ ] Strona konta wyświetla poprawne informacje o planie i opcje ulepszenia
 
-### Aspekty prawne i biznesowe
+### Aspekty prawne i biznesowe {#legal-and-business}
 
 - [ ] Warunki usług są opublikowane i linkowane ze strony checkout
 - [ ] Polityka prywatności jest opublikowana i dostępna
@@ -77,11 +77,11 @@ Przejrzyj każdy punkt. Nie pomijaj żadnego.
 - [ ] Bramka płatnicza jest w trybie produkcyjnym (nie testowym)
 - [ ] Konfiguracja podatkowa jest poprawna dla Twojej jurysdykcji
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Rozważ dwufazowy start:
 
-### Faza 1: Soft Launch
+### Faza 1: Soft Launch {#phase-1-soft-launch}
 
 Zaproszenie 5-10 właścicieli studiów fitness do rejestracji przed publicznym startem. To są Twoi klienci beta. Zaproponuj im znaczną zniżkę (50% dożywotnio lub 3 miesiące gratis) w zamian za:
 
@@ -91,7 +91,7 @@ Zaproszenie 5-10 właścicieli studiów fitness do rejestracji przed publicznym 
 
 Daje Ci to realny feedback od klientów i żywe strony do pokazania, zanim otworzysz się publicznie.
 
-### Faza 2: Public Launch
+### Faza 2: Public Launch {#phase-2-public-launch}
 
 Po włączeniu feedbacku z soft launch:
 
@@ -100,7 +100,7 @@ Po włączeniu feedbacku z soft launch:
 - Rozpocznij pozyskiwanie klientów (Lekcja 11)
 - Ogłoś to na odpowiednich kanałach branży fitness
 
-## Działania w dniu startu
+## Działania w dniu startu {#launch-day-actions}
 
 W dniu, w którym stajesz się publiczny:
 
@@ -110,7 +110,7 @@ W dniu, w którym stajesz się publiczny:
 4. **Bądź dostępny** – Twoi pierwsi prawdziwi klienci mogą potrzebować pomocy, a szybka reakcja buduje zaufanie
 5. **Uczcij krótko** – a potem wróć do pracy
 
-## Co może pójść nie tak
+## Co może pójść nie tak {#what-can-go-wrong}
 
 Bądź przygotowany na:
 
@@ -120,7 +120,7 @@ Bądź przygotowany na:
 - **Wydajność pod obciążeniem**: Jeśli otrzymasz skok ruchu, wiedz, jak skalować hosting
 - **Dezorientacja klienta**: Miej gotową bazę wiedzy i kanały wsparcia
 
-## Sieć FitSite do tej pory
+## Sieć FitSite do tej pory {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Co zbudowaliśmy w tej lekcji
+## Co zbudowaliśmy w tej lekcji {#what-we-built-this-lesson}
 
 - **Kompleksowa lista kontrolna przed startem**, obejmująca infrastrukturę, treści, płatności i aspekty prawne
 - **Strategia soft launch**, aby zebrać realny feedback przed publicznym startem

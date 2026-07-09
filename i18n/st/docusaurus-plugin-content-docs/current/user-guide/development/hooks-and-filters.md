@@ -3,7 +3,7 @@ title: Hook le Filters
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Hooks le Filters ea Ultimate Multisite
+# Hooks le Filters ea Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite e ntse le fona e mangata ea functions (funtšho) le database queries. E na le hooks le filters tse ka u tloha kapa ho nika code e ntlha le functions e fapaneng.
 

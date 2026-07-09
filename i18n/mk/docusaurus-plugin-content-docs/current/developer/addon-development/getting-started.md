@@ -3,9 +3,9 @@ title: Започнување со развој на додатоци
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Развој на додаток
+# Развој на додаток {#addon-development}
 
-## Структура на додаток
+## Структура на додаток {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Шаблон за главна датотека на додаток
+## Шаблон за главна датотека на додаток {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Пример за приспособен модел
+## Пример за приспособен модел {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Интеграција на администраторска страница
+## Интеграција на администраторска страница {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Тестирање на вашиот addon
+## Тестирање на вашиот addon {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Точки за проширување во v2.13.0
+## Точки за проширување во v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 додава неколку точки за проширување што се корисни за addon-и кои се интегрираат со суверени закупци, домени за checkout или DNS автоматизација кај хост-провајдер.
 
-### SSO и URL-адреси за управување со главната страница
+### SSO и URL-адреси за управување со главната страница {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Основни домени за checkout-формулар
+### Основни домени за checkout-формулар {#checkout-form-base-domains}
 
 Користете `wu_checkout_form_base_domains` кога вашиот addon обезбедува дополнителни споделени основни домени што треба да се однесуваат како домени за **Site URL** во checkout-формулар, наместо како приспособени мапирања по страница:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite ги нормализира овие хостови и ги прескокнува автоматските записи за мапиран домен по страница за нив.
 
-### Автоматско создавање записи за домен
+### Автоматско создавање записи за домен {#automatic-domain-record-creation}
 
 Користете `wu_should_create_domain_record_for_site` кога вашиот addon треба да го спречи или одложи автоматското создавање запис за домен за новосоздадена страница:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Интеграциите со хост-провајдер што слушаат на `wu_add_subdomain` можат да создаваат DNS записи на страната на провајдерот кога се создаваат страници. Ако не е регистрирана интеграција за таа акција, Ultimate Multisite ја прескокнува празната задача во заднина.
 
-## Следни чекори
+## Следни чекори {#next-steps}
 
 - Прегледајте ја [референцата за hooks](/developer/hooks) за достапни дејства и филтри
 - Проверете го [прегледот на REST API](/developer/rest-api/overview) за API интеграција

@@ -3,11 +3,11 @@ title: Gestión de correos electrónicos del sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestionar correos electrónicos del sistema
+# Gestionar correos electrónicos del sistema {#managing-system-emails}
 
 Ultimate Multisite envía varios correos electrónicos del sistema para eventos como confirmaciones de registro, recibos de pago y cambios de membresía. Puedes personalizar estas plantillas de correo electrónico para que coincidan con tu marca.
 
-## Ver correos electrónicos del sistema
+## Ver correos electrónicos del sistema {#viewing-system-emails}
 
 Navega a **Ultimate Multisite → Settings** y haz clic en la pestaña **Emails** para ver los ajustes relacionados con el correo electrónico.
 
@@ -21,7 +21,7 @@ También puedes editar plantillas de correo electrónico individuales usando el 
 
 ![Editor de correos electrónicos del sistema](/img/admin/system-email-editor.png)
 
-## Importar nuevas plantillas de correo electrónico
+## Importar nuevas plantillas de correo electrónico {#importing-new-email-templates}
 
 Las nuevas versiones y add-ons de Ultimate Multisite pueden registrar nuevas plantillas de correo electrónico. Para evitar conflictos, las nuevas plantillas no se agregan automáticamente; debes importarlas manualmente.
 
@@ -32,7 +32,7 @@ Para importar nuevas plantillas de correo electrónico:
 3. Activa la opción **Import Emails** para ver las plantillas disponibles
 4. Selecciona las plantillas que quieres importar y confirma
 
-## Restablecer plantillas de correo electrónico
+## Restablecer plantillas de correo electrónico {#resetting-email-templates}
 
 Si has personalizado una plantilla de correo electrónico y quieres volver al contenido predeterminado, tienes dos opciones:
 

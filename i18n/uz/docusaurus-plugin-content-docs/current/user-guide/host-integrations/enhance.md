@@ -3,33 +3,33 @@ title: Boshqaruv paneli integratsiyasini yaxshilash
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Control Panel Integratsiyasini Kuchaytirish
+# Control Panel Integratsiyasini Kuchaytirish {#enhance-control-panel-integration}
 
-## Umumiy Ko'rinish
+## Umumiy Ko'rinish {#overview}
 Enhance — bu kuchli hosting avtomatlashtirish va boshqaruv imkoniyatlarini taqdim etadigan zamonaviy kontrol paneldir. Bu integratsiya Ultimate Multisite va Enhance Kontrol Paneli o'rtasida domenlarni avtomatik sinxronlash va SSL sertifikatlarini boshqarishni imkon beradi.
 
 **Bog'liq Muzokara:** jamoatchilik maslahatlari va qo'shimcha ma'lumotlar uchun [GitHub Muzokarasi #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) ni ko'ring.
 
-## Xususiyatlar
+## Xususiyatlar {#features}
 - Ultimate Multisite da domenlar xarita qilinganida avtomatik domen sinxronlash
 - DNS aniqlanganda LetsEncrypt orqali avtomatik SSL sertifikatini taqdim etish
 - Subdomain rejimida ishlaydigan tarmoqlar uchun subdomain qo'llab-quvvatlash
 - Xarita o'chirilganda domenlarni olib tashlash
 - API ma'lumotlarini tekshirish uchun ulanishni sinovdan o'tkazish
 
-## Talablar
+## Talablar {#requirements}
 
-### Tizim Talablari
+### Tizim Talablari {#system-requirements}
 - Enhance Kontrol Paneli o'rnatilgan va kirish mumkin bo'lishi kerak
 - WordPress Multisite o'rnatilishi Enhance serverida joylashgan yoki unga ulanishda bo'lishi kerak
 - Apache veb-server (Enhance hozirgi vaqtda Apache konfiguratsiyalarini qo'llab-quvvatlaydi; LiteSpeed Enterprise kamroq narxda mavjud)
 
-### API Kirishiga
+### API Kirishiga {#api-access}
 API tokenlarini yaratish uchun Enhance Kontrol Paneli administratoriga kirish huquqiga ega bo'lishingiz kerak.
 
-## API Ma'lumotlaringizni Olish
+## API Ma'lumotlaringizni Olish {#getting-your-api-credentials}
 
-### 1. API Tokenini Yaratish
+### 1. API Tokenini Yaratish {#1-create-an-api-token}
 
 1. Administrator sifatida Enhance Kontrol Paneline tizimga kiring
 2. navigatsiya menyusidagi **Settings** (Sozlamalar) tugmasiga bosing
@@ -44,7 +44,7 @@ API tokenlarini yaratish uchun Enhance Kontrol Paneli administratoriga kirish hu
 
 Yaratishdan so'ngin, sizning **Access Token** va **Organization ID** ko'rsatiladi. Buni darhol saqlab qo'ying, chunki token faqat bir marta ko'rsatiladi.
 
-### 2. Organization ID-ni olish
+### 2. Organization ID-ni olish {#2-get-your-organization-id}
 
 Organization ID Access Tokenlar sahifasida "Org ID: {your_id}" deb belgilangan ko'k ma'lumot qutisi ichida ko'rsatiladi.
 
@@ -55,7 +55,7 @@ Mijozning Organization ID-sini quyidagicha ham topishingiz mumkin:
 2. tegishli mijoz uchun **Manage customer** (mijozni boshqarish) tugmasini bosing
 3. URL ko'rinishiga qarang - Organization ID `/customers/` dan keyingi alfanumerik belgilar hisoblanadi.
 
-### 3. Server ID-ni olish
+### 3. Server ID-ni olish {#3-get-your-server-id}
 
 Server ID-ni topish uchun (domen operatsiyalari uchun kerak):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID UUID formatida quyidagicha bo'ladi: `00000000-0000-0000-0000-000000000000`
 
-### 4. API URL-ni olish
+### 4. API URL-ni olish {#4-get-your-api-url}
 
 Sizning API URL-ingiz Enhance Control Panel URL'ingizga `/api/` qo'shilgan shakli bo'ladi:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Faqat domainni va `/api/` ni ishlatmaslik
 - Xavfsizlik uchun HTTP o'rniga HTTPS dan foydalanmaslik (xavfsizlik uchun HTTPS talab qilinadi)
 
-## Konfiguratsiya
+## Konfiguratsiya {#configuration}
 
-### Talab qilinadigan konstantalar
+### Talab qilinadigan konstantalar {#required-constants}
 
 Quyidagi konstantalarni `wp-config.php` faylingizga qo'shing:
 
@@ -95,7 +95,7 @@ define('WU_ENHANCE_API_TOKEN', 'sizning-bearer-token-ingizda');
 define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'sizning-server-uuid-ingizda');
 
-### Integratsiya Viloyatida Sozlash (Setup via Integration Wizard)
+### Integratsiya Viloyatida Sozlash (Setup via Integration Wizard) {#setup-via-integration-wizard}
 
 1. WordPress admin panelida **Ultimate Multisite** > **Settings** ga kiring
 2. **Integrations** yorlig'iga o'ting
@@ -110,17 +110,17 @@ Siz quyidagilardan birini tanlashingiz mumkin:
 - Wizardning sizning `wp-config.php` faylingizga konstantlarni avtomatik kiritishiga ruxsat berish
 - Konstanta ta'riflarini nusxalab, ularni qo'lda qo'shish
 
-## Qo'shimcha WordPress Sozlamalari (Additional WordPress Configuration)
+## Qo'shimcha WordPress Sozlamalari (Additional WordPress Configuration) {#additional-wordpress-configuration}
 
 Jamoatchilik fikrlariga asoslanib ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), siz quyidagi qo'shimcha sozlamalarni konfiguratsiya qilishingiz kerak bo'lishi mumkin:
 
-### .htaccess Konfiguratsiyasi
+### .htaccess Konfiguratsiyasi {#htaccess-configuration}
 
 Agar domen xaritalashida muammolar yuz bersa:
 1. Asl Enhance `.htaccess` faylini o'chiring
 2. Uni standart WordPress Multisite `.htaccess` fayli bilan almashtiring
 
-### Cookie Konstanta (Cookie Constants)
+### Cookie Konstanta (Cookie Constants) {#cookie-constants}
 
 Xarita qilingan domenlar bo'ylab to'g'ri cookie boshqarilishini ta'minlash uchun bu konstantlarni `wp-config.php` ga qo'shing:
 
@@ -130,9 +130,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Qanday Ishlaydi (How It Works)
+## Qanday Ishlaydi (How It Works) {#how-it-works}
 
-### Domen Xaritasi Qilinganda (When a Domain is Mapped)
+### Domen Xaritasi Qilinganda (When a Domain is Mapped) {#when-a-domain-is-mapped}
 
 1. Foydalanuvchi Ultimate Multisite'da o'ziga xos domen (yoki subdomain rejimida yangi sayt yaratilsa) moslashuvni amalga oshiradi.
 2. Integratsiya Enhance API-ga POST so'rovi yuboradi: `/servers/{server_id}/domains`
@@ -140,14 +140,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. DNS sizning serveringizga aniqlanganida, Enhance avtomatik ravishda LetsEncrypt orqali SSL sertifikatini taqdim etadi.
 5. Domen HTTPS bilan faollashadi.
 
-### Domen Olib Tashlab Ketilganda
+### Domen Olib Tashlab Ketilganda {#when-a-domain-is-removed}
 
 1. Ultimate Multisite'da domen moslashuvini o'chirasiz.
 2. Integratsiya domen ID'sini topish uchun Enhance-ga so'rov yuboradi.
 3. `/servers/{server_id}/domains/{domain_id}` manziliga DELETE so'rovi yuboriladi.
 4. Enhance domenini sizning server konfiguratsiyangizdan olib tashlaydi.
 
-### DNS va SSL Tekshiruvi
+### DNS va SSL Tekshiruvi {#dns-and-ssl-checking}
 
 Ultimate Multisite ichida o'zida DNS va SSL tekshiruvlari mavjud:
 - Siz **Domain Mapping Settings** (standart: 300 soniya/5 daqiqa)da tekshiruv oralig'ini sozlashim mumkin.
@@ -155,9 +155,9 @@ Ultimate Multisite ichida o'zida DNS va SSL tekshiruvlari mavjud:
 - SSL sertifikatining amal qilish muddati avtomatik tekshiriladi.
 - Enhance SSL taqdimotini avtomatik boshqaradi, shuning uchun qo'lda SSL konfiguratsiyasi talab qilinmaydi.
 
-## Sozlamani Tasdiqlash
+## Sozlamani Tasdiqlash {#verifying-setup}
 
-### Ulanishni Sinovdan O'tkazish
+### Ulanishni Sinovdan O'tkazish {#test-the-connection}
 
 1. Integratsiya Wizardida **Test Connection** (Ulanishni sinovdan o'tkazish) bosqichidan foydalaning.
 2. Plugin sizning serveringizdagi domenlarni ro'yxatlashga harakat qiladi.
@@ -167,7 +167,7 @@ Ultimate Multisite ichida o'zida DNS va SSL tekshiruvlari mavjud:
    - Server ID haqiqiy
    - Ruxsatnomalar to'g'ri sozlangandi
 
-### Domen Moslashganidan So'ng
+### Domen Moslashganidan So'ng {#after-mapping-a-domain}
 
 1. Ultimate Multisite'da sinov domenini moslang.
 2. Ultimate Multisite loglarini tekshiring (**Ultimate Multisite** > **Logs** > **integration-enhance**).
@@ -176,9 +176,9 @@ Ultimate Multisite ichida o'zida DNS va SSL tekshiruvlari mavjud:
    - Yangi domen ro'yxatda paydo bo'lishi kerak.
 4. DNS tarqalib ketgandan so'ng, SSL avtomatik taqdim etilganligini tekshiring.
 
-## Muammolarni Qayta Ko'rish (Troubleshooting)
+## Muammolarni Qayta Ko'rish (Troubleshooting) {#troubleshooting}
 
-### API Bog'liqliklari
+### API Bog'liqliklari {#api-connection-issues}
 
 **Xato: "Enhance APIga ulanishda muvaffaqiyatsiz bo'ldi"**
 - `WU_ENHANCE_API_URL` oxirida `/api/` mavjudligini tekshiring.
@@ -196,7 +196,7 @@ Ultimate Multisite ichida o'zida DNS va SSL tekshiruvlari mavjud:
 - Server ID ning UUID formatiga mos kelishini ta'minlang.
 - Serverning Enhance panelingizda mavjudligini tasdiqlang.
 
-### Domen Qo'shilmagan
+### Domen Qo'shilmagan {#domain-not-added}
 
 **Loglarni tekshirish:**
 1. **Ultimate Multisite** > **Logs** ga kiring.
@@ -209,7 +209,7 @@ Ultimate Multisite ichida o'zida DNS va SSL tekshiruvlari mavjud:
 - API imkoniyatlari yetarli emasligi (tokenning System Administrator roli borligiga ishonch hosil qiling)
 - Server ID ning Enhance dagi haqiqiy server bilan mos kelmasligi
 
-### SSL Sertifikati Muammolari
+### SSL Sertifikati Muammolari {#ssl-certificate-issues}
 
 **SSL taqdim etilmayapti:**
 - DNS serveringiz IP manziliga yo'naltirilganini tekshiring.
@@ -223,7 +223,7 @@ Ultimate Multisite ichida o'zida DNS va SSL tekshiruvlari mavjud:
 2. Domeningizni toping va uning SSL holatini tekshiring.
 3. Kerak bo'lsa, SSL taqdim etishni qo'lda boshlashingiz mumkin.
 
-### DNS Tekshiruv Oralig'i
+### DNS Tekshiruv Oralig'i {#dns-check-interval}
 
 Agar domenlar yoki SSL sertifikatlari faollashishda juda uzoq vaqt olsayotgan bo'lsa:
 1. **Ultimate Multisite** > **Settings** > **Domain Mapping** ga o'ting.
@@ -231,7 +231,7 @@ Agar domenlar yoki SSL sertifikatlari faollashishda juda uzoq vaqt olsayotgan bo
 3. Uni standart 300 soniyadan (sekunddan) pastroq qiymatga (minimal: 10 soniya) sozlang.
 4. **Eslatma:** Pastroq interval bu ko'proq tekshiruvlar degani, lekin server yuklamasi yuqori bo'lishi mumkin.
 
-### Autentifikatsiya Xatoliklari
+### Autentifikatsiya Xatoliklari {#authentication-errors}
 
 **HTTP 401/403 xatolar:**
 - Enhance ichida API tokeningizni qayta yaratib chiqing (Regenerate).
@@ -239,7 +239,7 @@ Agar domenlar yoki SSL sertifikatlari faollashishda juda uzoq vaqt olsayotgan bo
 - Token muddati tugamaganligini tekshiring.
 - To'g'ri Tashkilot ID dan foydalanayotganingizga ishonch hosil qiling (garchi bu odatda URL da talab qilinmasa ham).
 
-### Loglarni Tahlil Qilish
+### Loglarni Tahlil Qilish {#log-analysis}
 
 Tafsilotli loggingni yoqing:
 ```php
@@ -253,15 +253,15 @@ Keyin loglarni quyidagi joylardan tekshiring:
 - WordPress debug logi: `wp-content/debug.log`
 - Enhance paneli loglari: Enhance'ning admin interfeysida mavjud
 
-## API Ma'lumotnomasi
+## API Ma'lumotnomasi {#api-reference}
 
-### Autentifikatsiya
+### Autentifikatsiya {#authentication}
 Barcha API so'rovlari Bearer token autentifikatsiyasidan foydalanadi:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Foydalaniladigan Umumiy Endpointlar
+### Foydalaniladigan Umumiy Endpointlar {#common-endpoints-used}
 
 **Serverlarni ro'yxatlash:**
 ```
@@ -284,30 +284,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### To'liq API Dokumentatsiyasi
+### To'liq API Dokumentatsiyasi {#full-api-documentation}
 To'liq API dokumentatsiyasi: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Eng Yaxshi Amaliyotlar
+## Eng Yaxshi Amaliyotlar {#best-practices}
 
-### Xavfsizlik (Security)
+### Xavfsizlik (Security) {#security}
 - **API tokenlarini hech qachon versiya boshqaruv tizimiga (version control) qo'ymang**
 - Tokenlarni `wp-config.php` faylida saqlang, bu fayl Git dan tashqiri bo'lishi kerak
 - Tegishli ruxsatnomalarga ega tokenlardan foydalaning (to'liq integratsiya uchun System Administrator)
 - Prod muhitlari uchun token muddati tugash sanalarini belgilang
 - Tokenlarni muntazam ravishda yangilang
 
-### Ishlash samaradorligi (Performance)
+### Ishlash samaradorligi (Performance) {#performance}
 - Haddan tashqari ko'p API chaqiruvlardan saqlanish uchun standart DNS tekshiruvi oralig'ini (300 soniya) ishlating
 - Katta miqdordagi domen operatsiyalarini amalga oshirishda Enhance server resurslarini kuzatib boring
 - Bir vaqtning o'zida ko'p domenlarni xarita qilishni hisobga olgan holda domen qo'shishni ketma-ketlashtirishni ko'rib chiqing
 
-### Monitoring (Nizolantirish)
+### Monitoring (Nizolantirish) {#monitoring}
 - Integratsiya xatolarini tekshirish uchun Ultimate Multisite loglarini muntazam tekshiring
 - Domenlarni qo'shishdagi muvaffaqiyatsizliklar uchun monitoring tizimini sozlang
 - SSL sertifikatlarining to'g'ri taqdim etilayotganligini tasdiqlang
 - Enhance server quvvatini va domen cheklovlarini kuzatib boring
 
-## Qo'shimcha resurslar (Additional Resources)
+## Qo'shimcha resurslar (Additional Resources) {#additional-resources}
 
 - **Enhance Rasmiy hujjatlari:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Hujjatlari:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -315,7 +315,7 @@ To'liq API dokumentatsiyasi: [https://apidocs.enhance.com](https://apidocs.enhan
 - **GitHub Diskussiyasi:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Domen Xaritasi Qo'llanmasi:** "How to Configure Domain Mapping v2" wiki sahifasiga qarang
 
-## Qo'llab-quvvatlash (Support)
+## Qo'llab-quvvatlash (Support) {#support}
 
 Agar muammolarga duch kelsangiz:
 1. Yuqoridagi Troubleshooting (Muammolarni hal qilish) bo'limini tekshiring
@@ -324,7 +324,7 @@ Agar muammolarga duch kelsangiz:
 4. panelga xos muammolar uchun Enhance yordamiga murojaat qiling
 5. jamoatchilik yordami olish uchun batafsil xato loglari bilan yangi diskussiya oching
 
-## Eslatmalar (Notes)
+## Eslatmalar (Notes) {#notes}
 
 Bu integratsiya faqat domen aliaslarini boshqaradi; SSLni Enhance avtomatik boshqaradi.
 Integratsiya hem xususiy domen moslamalarini ham, subdomenli saytlarni ham qo'llab-quvvatlaydi.

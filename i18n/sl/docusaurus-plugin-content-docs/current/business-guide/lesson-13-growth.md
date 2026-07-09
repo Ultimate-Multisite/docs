@@ -3,19 +3,19 @@ title: 'Lekcija 13: Povečevanje obsega'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lekcija 13: Širitev
+# Lekcija 13: Širitev {#lesson-13-scaling-up}
 
 Imate delujočo platformo s plačljivimi strankami. Ta lekcija obravnava, kako zrasti iz majhne dejavnosti v trajnostno podjetje -- s skaliranjem infrastrukture, avtomatizacijo operacij in povečanjem prihodka na stranko.
 
-## Kje smo končali
+## Kje smo končali {#where-we-left-off}
 
 FitSite je v živo, stranke se prijavljajo in izvajate vsakodnevne operacije. Zdaj se osredotočamo na rast.
 
-## Poznajte svoje številke
+## Poznajte svoje številke {#know-your-numbers}
 
 Pred skaliranjem razumite, kje ste:
 
-### Ključne metrike
+### Ključne metrike {#key-metrics}
 
 - **MRR (mesečni ponavljajoči se prihodek)**: Skupni mesečni prihodek od naročnin
 - **Število strank**: Skupno število aktivnih naročnikov
@@ -24,7 +24,7 @@ Pred skaliranjem razumite, kje ste:
 - **LTV (življenjska vrednost)**: Povprečni prihodek na stranko skozi celotno naročnino
 - **CAC (strošek pridobitve stranke)**: Povprečni strošek za pridobitev ene stranke
 
-### Primer: FitSite pri 50 strankah
+### Primer: FitSite pri 50 strankah {#example-fitsite-at-50-customers}
 
 | Metrika | Vrednost |
 |--------|-------|
@@ -36,9 +36,9 @@ Pred skaliranjem razumite, kje ste:
 
 Te številke vam povedo, na kaj se osredotočiti. Visok odliv? Izboljšajte zadržanje. Nizek ARPU? Spodbujajte nadgradnje. Visok CAC? Optimizirajte kanale pridobivanja.
 
-## Skaliranje infrastrukture
+## Skaliranje infrastrukture {#scaling-infrastructure}
 
-### Kdaj skalirati
+### Kdaj skalirati {#when-to-scale}
 
 Skalirajte gostovanje, ko:
 
@@ -47,7 +47,7 @@ Skalirajte gostovanje, ko:
 - Se približujete 100+ aktivnim spletnim mestom
 - Se povečajo pritožbe strank glede hitrosti
 
-### Kako skalirati
+### Kako skalirati {#how-to-scale}
 
 - **Vertikalno skaliranje**: Nadgradite na večji strežnik (več CPU, RAM)
 - **Plasti predpomnjenja**: Dodajte Redis/Memcached za predpomnjenje objektov, predpomnjenje strani za statično vsebino
@@ -55,7 +55,7 @@ Skalirajte gostovanje, ko:
 - **Optimizacija podatkovne baze**: Ko omrežje raste, se poizvedbe v podatkovni bazi upočasnijo. Optimizirajte tabele, dodajte indekse, razmislite o namenskem strežniku podatkovne baze.
 - **Ločevanje odgovornosti**: Premaknite shranjevanje medijev v objektno shrambo (združljivo s S3), e-pošto prenesite na transakcijsko e-poštno storitev
 
-### Migracija gostovanja
+### Migracija gostovanja {#hosting-migration}
 
 Če vaš trenutni ponudnik gostovanja ne more več skalirati, načrtujte migracijo:
 
@@ -65,11 +65,11 @@ Skalirajte gostovanje, ko:
 4. Predhodno posodobite DNS z minimalnim TTL
 5. Po migraciji preverite, da vse deluje
 
-## Avtomatizacija operacij
+## Avtomatizacija operacij {#automating-operations}
 
 Ko rastete, ročni procesi postanejo ozka grla. Avtomatizirajte, kar lahko:
 
-### Webhooks in Zapier
+### Webhooks in Zapier {#webhooks-and-zapier}
 
 Uporabite [Webhooks](/user-guide/integrations/webhooks) ali [Zapier](/user-guide/integrations/zapier) za avtomatizacijo:
 
@@ -78,7 +78,7 @@ Uporabite [Webhooks](/user-guide/integrations/webhooks) ali [Zapier](/user-guide
 - **Neuspešna plačila** → opozorilo v vašem orodju za nadzor
 - **Nadgradnje paketa** → čestitka po e-pošti z vodnikom po novih funkcijah
 
-### Avtomatizacija e-pošte
+### Avtomatizacija e-pošte {#email-automation}
 
 Preidite z ročnih e-poštnih sporočil na avtomatizirana zaporedja:
 
@@ -87,30 +87,30 @@ Preidite z ročnih e-poštnih sporočil na avtomatizirana zaporedja:
 - Pozivi k nadgradnji, ko se stranke približajo omejitvam paketa
 - Opomniki za podaljšanje za letne naročnike
 
-### Avtomatizacija podpore
+### Avtomatizacija podpore {#support-automation}
 
 - **Pripravljeni odgovori** za pogosta vprašanja
 - **Samodejni odgovori**, ki potrdijo prejem zahtevkov za podporo
 - **Predlogi iz baze znanja**, ko stranke oddajo zahtevke, ki se ujemajo z obstoječimi članki
 
-## Povečanje prihodka
+## Povečanje prihodka {#increasing-revenue}
 
 Rast ni samo več strank. Gre tudi za več prihodka na stranko.
 
-### Nadgradnje obstoječih strank
+### Nadgradnje obstoječih strank {#upselling-existing-customers}
 
 - **Nadgradnje paketa**: Ciljane kampanje, ki strankam Starter prikazujejo funkcije Growth/Pro
 - **Dodatki k naročilu**: Promovirajte dodatne izdelke obstoječim strankam po e-pošti
 - **Prehod na letno naročnino**: Mesečnim strankam ponudite popust za prehod na letno obračunavanje
 
-### Novi tokovi prihodka
+### Novi tokovi prihodka {#new-revenue-streams}
 
 - **Nastavitev za vas**: Zaračunajte premijo za nastavitev in prilagoditev strankinega spletnega mesta namesto njih
 - **Storitve oblikovanja po meri**: Ponudite oblikovalsko delo po meri poleg predloge
 - **Usposabljanja**: Plačani individualni pregledi za stranke, ki želijo praktično pomoč
 - **Premium plugins**: Ponudite nišno specifične premium plugins kot plačljive dodatke (npr. gradnik za rezervacije fitnes vadb)
 
-### Zvišanje cen
+### Zvišanje cen {#raising-prices}
 
 Ko vaša platforma dozoreva in dodaja vrednost:
 
@@ -118,7 +118,7 @@ Ko vaša platforma dozoreva in dodaja vrednost:
 - Zvišajte cene za nove prijave
 - Utemeljite zvišanja z novimi funkcijami in izboljšavami
 
-## Gradnja ekipe
+## Gradnja ekipe {#building-a-team}
 
 Na neki točki ne morete vsega delati sami. Pogoste prve zaposlitve:
 
@@ -128,7 +128,7 @@ Na neki točki ne morete vsega delati sami. Pogoste prve zaposlitve:
 
 Ne potrebujete zaposlenih. Zunanji izvajalci in freelancerji dobro delujejo za platformno podjetje.
 
-## Mejniki rasti
+## Mejniki rasti {#growth-milestones}
 
 | Mejnik | Približni MRR | Osredotočenost |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Ne potrebujete zaposlenih. Zunanji izvajalci in freelancerji dobro delujejo za p
 | 250-500 strank | $25,000-$50,000 | Gradnja ekipe, novi tokovi prihodka, premium funkcije |
 | 500+ strank | $50,000+ | Zrelost platforme, sosednje niše, potencialni izhod |
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Okvir metrik** za razumevanje zdravja podjetja
 - **Načrt skaliranja infrastrukture** za rast od desetin do stotin spletnih mest

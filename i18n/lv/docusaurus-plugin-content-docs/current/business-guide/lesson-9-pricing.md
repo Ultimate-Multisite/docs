@@ -3,17 +3,17 @@ title: '9. nodarbība: Cenu noteikšana peļņas gūšanai'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 9. nodarbība: cenu noteikšana peļņai
+# 9. nodarbība: cenu noteikšana peļņai {#lesson-9-pricing-for-profit}
 
 5. nodarbībā mēs noteicām sākotnējās cenas FitSite plāniem. Tagad pilnveidojam cenu stratēģiju ar paņēmieniem, kas palielina ieņēmumus, veicina pāreju uz augstākiem plāniem un samazina klientu aizplūšanu.
 
-## Kur mēs apstājāmies
+## Kur mēs apstājāmies {#where-we-left-off}
 
 FitSite jau ir ieviesti plāni, veidnes, checkout, zīmolvedība un onboarding. Sākotnējās cenas bija $49/$99/$199 mēnesī. Tagad panāksim, lai šīs cenas strādā efektīvāk.
 
-## Cenu noteikšanas principi nišas platformām
+## Cenu noteikšanas principi nišas platformām {#pricing-principles-for-niche-platforms}
 
-### Nosakiet cenu pēc vērtības, nevis izmaksām
+### Nosakiet cenu pēc vērtības, nevis izmaksām {#price-on-value-not-cost}
 
 Jūsu hostinga izmaksas varētu būt $5-$15 par klienta vietni. Tas nenozīmē, ka cenai jābūt $20. Jūs nepārdodat hostingu. Jūs pārdodat:
 
@@ -24,7 +24,7 @@ Jūsu hostinga izmaksas varētu būt $5-$15 par klienta vietni. Tas nenozīmē, 
 
 Nosakiet cenu, balstoties uz vērtību, ko sniedzat, nevis uz tās nodrošināšanas izmaksām.
 
-### Piesaistiet cenu alternatīvām
+### Piesaistiet cenu alternatīvām {#anchor-to-alternatives}
 
 Kad fitnesa studijas īpašnieks izvērtē FitSite, viņš to salīdzina ar:
 
@@ -34,7 +34,7 @@ Kad fitnesa studijas īpašnieks izvērtē FitSite, viņš to salīdzina ar:
 
 Pie $49-$199/mēnesī FitSite ir lētāks nekā izstrādātājs, spējīgāks nekā vispārīgi konstruktori un neizmērojami labāks nekā nekādas tīmekļa vietnes neesamība.
 
-## Cenu variāciju ieviešana
+## Cenu variāciju ieviešana {#implementing-price-variations}
 
 Gada cenas veicina apņemšanos un samazina klientu aizplūšanu. Dodieties uz katra plāna cilni **Price Variations** un pievienojiet gada opcijas:
 
@@ -46,12 +46,12 @@ Gada cenas veicina apņemšanos un samazina klientu aizplūšanu. Dodieties uz k
 
 Pievienojiet checkout formai lauku **Period Selection**, lai klienti varētu pārslēgties starp mēneša un gada norēķiniem. Skatiet [Checkout formas](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Kāpēc gada cenas darbojas
+### Kāpēc gada cenas darbojas {#why-annual-pricing-works}
 
 - **Jums**: Nauda avansā, zemāka klientu aizplūšana (klienti, kuri maksā par gadu, retāk atceļ abonementu perioda vidū)
 - **Viņiem**: Reāli ietaupījumi, budžeta paredzamība
 
-## Iestatīšanas maksas
+## Iestatīšanas maksas {#setup-fees}
 
 Apsveriet vienreizēju iestatīšanas maksu plāniem, kuros iekļauta praktiska konfigurēšana:
 
@@ -61,7 +61,7 @@ Apsveriet vienreizēju iestatīšanas maksu plāniem, kuros iekļauta praktiska 
 
 Konfigurējiet iestatīšanas maksas katra plāna cenu sadaļā. Sīkāku informāciju skatiet [Pirmā abonementa produkta izveide](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Izmēģinājuma periodi
+## Izmēģinājuma periodi {#trial-periods}
 
 Izmēģinājuma piedāvāšana samazina reģistrēšanās berzi, bet ievieš risku, ka lietotāji nekļūs par maksājošiem klientiem. FitSite gadījumā:
 
@@ -70,11 +70,11 @@ Izmēģinājuma piedāvāšana samazina reģistrēšanās berzi, bet ievieš ris
 
 Konfigurējiet izmēģinājumu Starter plāna cenu sadaļā, ieslēdzot slēdzi **Offer Trial** un iestatot ilgumu uz 7 dienām.
 
-### Kā panākt izmēģinājumu konversiju
+### Kā panākt izmēģinājumu konversiju {#making-trials-convert}
 
 Izmēģinājums darbojas tikai tad, ja klients izmēģinājuma periodā piedzīvo vērtību. Jūsu onboarding secība (8. nodarbība) šeit ir kritiski svarīga -- sveiciena e-pastiem jābūt ieplānotiem tā, lai 7 dienu logā veicinātu iesaisti.
 
-## Atlaižu kodi
+## Atlaižu kodi {#discount-codes}
 
 Izveidojiet stratēģiskus atlaižu kodus konkrētiem mērķiem:
 
@@ -88,7 +88,7 @@ Dodieties uz **Ultimate Multisite > Discount Codes**, lai tos izveidotu. Pilnu c
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Nodokļu apstrāde
+## Nodokļu apstrāde {#tax-handling}
 
 Ja darbojaties jurisdikcijā, kurā nepieciešama nodokļu iekasēšana:
 
@@ -98,7 +98,7 @@ Ja darbojaties jurisdikcijā, kurā nepieciešama nodokļu iekasēšana:
 
 Detalizētu konfigurāciju skatiet [Nodokļu apstrāde](/user-guide/payment-gateways/tax-handling). Ja apkalpojat klientus starptautiski, apsveriet [VAT papildinājumu](/addons/vat) atbilstībai ES prasībām.
 
-## Cenu pārskatīšana
+## Cenu pārskatīšana {#reviewing-your-pricing}
 
 Pēc palaišanas pārskatiet cenas reizi ceturksnī. Apskatiet:
 
@@ -107,7 +107,7 @@ Pēc palaišanas pārskatiet cenas reizi ceturksnī. Apskatiet:
 - **Klientu aizplūšana pēc plāna**: Ja gada klientu aizplūšana ir mazāka, aktīvāk virziet gada cenas
 - **Konkurentu cenas**: Cik prasa alternatīvas? Vai esat pozicionēti pareizi?
 
-## FitSite tīkls līdz šim
+## FitSite tīkls līdz šim {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Gada cenas** ar 20% atlaidi, lai veicinātu apņemšanos
 - **Iestatīšanas maksas** augstākos līmeņos, lai segtu ieviešanas darbu

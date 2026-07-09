@@ -3,7 +3,7 @@ title: Ukuhlanganiswa ne-Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ukuhlanganisa Ultimate Multisite ne-Zapier
+# Ukuhlanganisa Ultimate Multisite ne-Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Kwesinye sezindatshana, sixoxe nge-[Webhooks](webhooks.md) nokuthi zingasetshenziswa kanjani ukuhlanganisa nezinhlelo zokusebenza zezinkampani zangaphandle.
 
@@ -15,7 +15,7 @@ Ungakha **Triggers** ezizoqalwa lapho izehlakalo zenzeka kunethiwekhi yakho (isi
 
 Lokhu kungenzeka ngoba **ama-triggers e-Ultimate Multisite Zapier** nama-actions asekelwa yi-[REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Ungaqala kanjani
+## Ungaqala kanjani {#how-to-start}
 
 Okokuqala, sesha i-Ultimate Multisite ohlwini lwezinhlelo zokusebenza ze-Zapier. Kungenjalo, ungachofoza [lesi sixhumanisi](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Enkundleni ye-URL, faka i-URL ephelele yenethiwekhi yakho, kufaka phakathi iphro
 
 Chofoza inkinobho ethi **Yes, Continue** ukuze uqhubekele esinyathelweni esilandelayo. Uma konke kuhamba kahle, kufanele wamukelwe yi-account yakho entsha exhunyiwe! Chofoza u-**Continue** ukuze udale i-trigger entsha.
 
-## Ungayakha kanjani i-Trigger entsha
+## Ungayakha kanjani i-Trigger entsha {#how-to-create-a-new-trigger}
 
 Manje njengoba i-account yakho ixhunyiwe ungabona izehlakalo ezitholakalayo. Masikhethe umcimbi we-**payment_received** kulesi sifundo.
 
@@ -67,7 +67,7 @@ Kulesi sigaba, i-Zapier izohlola ukuthi i-Zap yakho ingakwazi yini **ukulanda i-
 
 Esifundweni sethu ukuhlolwa **kuqedwe ngempumelelo** futhi kwabuyisa imininingwane yesibonelo se-payload. Le mininingwane yesibonelo izoba usizo ekusiqondiseni ngesikhathi sakha ama-actions. I-trigger yakho manje isidaliwe futhi isilungele ukuxhunywa kwezinye izinhlelo zokusebenza.
 
-## Ungawakha kanjani ama-Actions
+## Ungawakha kanjani ama-Actions {#how-to-create-actions}
 
 Ama-actions asebenzisa imininingwane evela kwamanye ama-triggers ukuze adale okufakiwe okusha kunethiwekhi yakho.
 
@@ -79,7 +79,7 @@ Esinyathelweni esilandelayo uzodala ukuqinisekiswa kwakho, njengoba senzile ku-*
 
 ![Ukukhetha ukuqinisekiswa kwe-action ye-Zapier](/img/admin/webhooks-list.png)
 
-### Ukusetha i-Action
+### Ukusetha i-Action {#setting-up-the-action}
 
 Lesi **yisinyathelo esiyinhloko se-action** futhi lapha izinto zihlukile kancane. Imininingwane yokuqala ozoyikhetha yi-**Item**. I-Item **iyimodeli yolwazi** yenethiwekhi yakho njengokuthi **Customers, Payments, Sites, Emails** nokunye.
 

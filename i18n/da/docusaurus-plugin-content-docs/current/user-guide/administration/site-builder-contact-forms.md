@@ -3,11 +3,11 @@ title: Kontaktformularer til sidebygger
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformularer i Site Builder
+# Kontaktformularer i Site Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 tilføjer muligheden for at oprette kontaktformularer direkte fra chatgrænsefladen ved hjælp af Site Builder agenten. Dette giver dig mulighed for at tilføje fuldt funktionelle kontaktformularer til enhver side uden at skulle forlade chatten.
 
-## Oversigt
+## Oversigt {#overview}
 
 Site Builders evne til at oprette kontaktformularer (`create_contact_form`) genkender automatisk dit installerede formularplugin og opretter en kontaktformular ved hjælp af dette plugins indbyggede funktioner. Understøttede formularplugins inkluderer:
 
@@ -18,7 +18,7 @@ Site Builders evne til at oprette kontaktformularer (`create_contact_form`) genk
 
 Assistenten vælger automatisk det bedste tilgængelige formularplugin på din side og genererer en kontaktformular, der er skræddersyet til dette plugin.
 
-## Oprettelse af en Kontaktformular
+## Oprettelse af en Kontaktformular {#creating-a-contact-form}
 
 For at oprette en kontaktformular ved hjælp af Site Builder:
 
@@ -34,7 +34,7 @@ For at oprette en kontaktformular ved hjælp af Site Builder:
 
 4. Site Builder vil generere kontaktformulareren og returnere et shortcode klar til indlejring.
 
-## Brug af den Genererede Shortcode
+## Brug af den Genererede Shortcode {#using-the-generated-shortcode}
 
 Når Site Builder har oprettet kontaktformulareren, returnerer den et shortcode (f.eks. `[contact-form-7 id="123"]`). Du kan:
 
@@ -45,11 +45,11 @@ Når Site Builder har oprettet kontaktformulareren, returnerer den et shortcode 
 
 3. **Brug den i en template** — Hvis du er komfortabel med PHP, kan du tilføje shortcode-et til en tema-templatefil.
 
-## Tilpasning af kontaktseddelen
+## Tilpasning af kontaktseddelen {#customizing-the-contact-form}
 
 Når Site Builder har oprettet kontaktseddelen, kan du tilpasse den yderligere:
 
-### Via Chat-grænsefladen
+### Via Chat-grænsefladen {#via-the-chat-interface}
 
 Bed Site Builder om at ændre formularen:
 
@@ -57,7 +57,7 @@ Bed Site Builder om at ændre formularen:
 
 Site Builder vil opdatere formularen og returnere den opdaterede shortcode.
 
-### Via din form plugins admin-grænseflade
+### Via din form plugins admin-grænseflade {#via-the-form-plugins-admin-interface}
 
 Du kan også tilpasse formularen direkte i indstillingerne for din form plugin:
 
@@ -65,7 +65,7 @@ Du kan også tilpasse formularen direkte i indstillingerne for din form plugin:
 2. Find den formular, som Site Builder har oprettet.
 3. Rediger felterne i formularen, valideringsreglerne og e-mail-notifikationerne efter behov.
 
-## Form plugins og kompatibilitet
+## Form plugins og kompatibilitet {#form-plugins-and-compatibility}
 
 Site Builder genkender automatisk, hvilken form plugin der er installeret på din side, og bruger den til at oprette kontaktseddelen. Hvis der er flere form plugins installeret, prioriterer Site Builder dem i denne rækkefølge:
 
@@ -76,7 +76,7 @@ Site Builder genkender automatisk, hvilken form plugin der er installeret på di
 
 Hvis ingen af disse plugins er installeret, vil Site Builder anbefale at installere en før oprettelsen af kontaktseddelen.
 
-## E-mail notifikationer
+## E-mail notifikationer {#email-notifications}
 
 Kontaktsedler skabt af Site Builder er som standard konfigureret til at sende e-mail-notifikationer til sidens administrator. Du kan tilpasse modtagerens e-mailadresse og notifikationsbeskeden:
 
@@ -91,21 +91,21 @@ For detaljerede instruktioner henviser du til din form plugins dokumentation:
 - [Fluent Forms E-mail notifikationer](https://fluentforms.com/docs/)
 - [Gravity Forms E-mail notifikationer](https://docs.gravityforms.com/)
 
-## Eksempler på brug
+## Eksempler på brug {#example-use-cases}
 
-### Simpelt kontaktformular
+### Simpelt kontaktformular {#simple-contact-form}
 
 > "Opret en simpel kontaktformular med felter til navn, e-mail og besked."
 
-### Flertrinsformular
+### Flertrinsformular {#multi-step-form}
 
 > "Opret en kontaktformular med et første trin til kontaktoplysninger og et andet trin til besked og foretrukken kontaktmetode."
 
-### Form med betinget logik
+### Form med betinget logik {#form-with-conditional-logic}
 
 > "Opret en kontaktformular, der viser forskellige felter baseret på brugerens valg i en dropdown-menu."
 
-### Form med filupload
+### Form med filupload {#form-with-file-upload}
 
 > "Opret en kontaktformular, hvor brugere kan uploade en fil eller et vedhæftet dokument."
 

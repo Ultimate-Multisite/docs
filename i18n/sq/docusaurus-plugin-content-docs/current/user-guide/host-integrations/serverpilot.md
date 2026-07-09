@@ -3,17 +3,17 @@ title: Integrimi ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integrimi me ServerPilot
+# Integrimi me ServerPilot {#serverpilot-integration}
 
-## Përmbledhje
+## Përmbledhje {#overview}
 ServerPilot është një shërbim në cloud për hostimin e faqeve WordPress dhe të tjerë që përdorin PHP në servere nga DigitalOcean, Amazon, Google ose çdo ofrues serveri tjetër. Kjo integrim lejon sinkronizimin automatik të domenit dhe menaxhimin e sertifikatës SSL midis Ultimate Multisite dhe ServerPilot.
 
-## Karakteristikat
+## Karakteristikat {#features}
 - Sinkronizim automatik i domenit
 - Menaxhimi i sertifikatës SSL me Let's Encrypt
 - Rritje automatike e sertifikatës SSL
 
-## Kërkesat
+## Kërkesat {#requirements}
 Këto konstanta duhet të përcaktohen në skedarin tuaj `wp-config.php`:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## Instruktime për Konfigurim
+## Instruktime për Konfigurim {#setup-instructions}
 
-### 1. Merrni Kredencat e API të ServerPilot-it tuaj
+### 1. Merrni Kredencat e API të ServerPilot-it tuaj {#1-get-your-serverpilot-api-credentials}
 
 1. Sjelleni në dashboard-in tuaj ServerPilot
 2. Shkoni te "Account" > "API" (Llogaria > API)
 3. Krijoni një çelës API të ri nëse nuk keni një tashmë
 4. Kopjoni Client ID dhe API Key tuaj
 
-### 2. Merrni App ID-n tuaj
+### 2. Merrni App ID-n tuaj {#2-get-your-app-id}
 
 1. Në dashboard-in tuaj ServerPilot, shkoni te "Apps" (Aplikimet)
 2. Zgjidhni aplikacionin ku është hostuar multisite WordPress juaj
 3. App ID-ja duket në URL: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Shtoni Konstanta në wp-config.php
+### 3. Shtoni Konstanta në wp-config.php {#3-add-constants-to-wp-configphp}
 
 Shtoni konstantit e mëposhtëm në skedarin tuaj `wp-config.php`:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. Aktivizoni Integrimin
+### 4. Aktivizoni Integrimin {#4-enable-the-integration}
 
 1. Në adminin tuaj WordPress, shkoni te Ultimate Multisite > Settings (Cilësimet)
 2. Navigjoni te tab-i "Domain Mapping" (Mapele Domenit)
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. Aktivizoni integrimin ServerPilot
 5. Klikoni "Save Changes" (Ruaj Ndryshimet)
 
-## Si Funksionon
+## Si Funksionon {#how-it-works}
 
-### Sinkronizimi i Domenit
+### Sinkronizimi i Domenit {#domain-syncing}
 
 Kur një domen mapehet në Ultimate Multisite:
 
@@ -67,7 +67,7 @@ Kur një domen mapehet në Ultimate Multisite:
 
 ServerPilot përditëson listën e domenëve për aplikacionin tuaj
 
-### Menaxhimi i Sertifikatës SSL
+### Menaxhimi i Sertifikatës SSL {#ssl-certificate-management}
 
 Pas sinkronizimit të domenëve:
 
@@ -75,31 +75,31 @@ Pas sinkronizimit të domenëve:
 2. ServerPilot menaxhon dhënien dhe instalimin e sertifikatës SSL duke përdorur Let's Encrypt
 3. ServerPilot gjithashtu menaxhon rinovimin automatik të sertifikave SSL
 
-## Verifikimi i Sertifikatës SSL
+## Verifikimi i Sertifikatës SSL {#ssl-certificate-verification}
 
 Integracioni është konfiguruar për të rritur numrin e provave të verifikimit të sertifikatës SSL për ServerPilot, pasi mund të marrë pak kohë që ServerPilot të dhënojë dhe instalojë sertifikatën SSL. Në def default, ai do të provojë deri në 5 herë, por kjo mund të rregullohet duke përdorur filters.
 
-## Zgjidhja e Problemeve (Troubleshooting)
+## Zgjidhja e Problemeve (Troubleshooting) {#troubleshooting}
 
-### Probleme me Lidhurin me API-n
+### Probleme me Lidhurin me API-n {#api-connection-issues}
 
 - Verifikoni që Client ID dhe API Key ju janë korrekte
 - Kontrolloni që App ID ju është i saktë
 - Sigurohuni që llogaria juaj në ServerPilot të ketë të gjitha lejet e nevojshme
 
-### Probleme me Sertifikatën SSL
+### Probleme me Sertifikatën SSL {#ssl-certificate-issues}
 
 - ServerPilot kërkon që domenët të kenë regjistrime DNS valide që tregojnë drejt serverit tuaj para se të dhënojë sertifikatën SSL
 - Nëse sertifikatët SSL nuk po dhërohen, kontrolloni nëse domenët tuaj tregojnë si duhet drejt adresës IP të serverit tuaj
 - Mund të marrë pak kohë që ServerPilot të dhënojë dhe instalojë sertifikatën SSL (zakonisht 5-15 minuta)
 
-### Domeni Nuk Shtohet
+### Domeni Nuk Shtohet {#domain-not-added}
 
 - Kontrolloni logjet e Ultimate Multisite për çdo mesazh gabimi
 - Verifikoni që domeni nuk është shtuar tashmë në ServerPilot
 - Sigurohuni që plani juaj në ServerPilot të mbështet numrin e domenëve që po shtoni
 
-### Fshirja e Domenit
+### Fshirja e Domenit {#domain-removal}
 
 - Aktualisht, API-ja ServerPilot nuk ofron mënyrën për të fshirë domene individuale.
 - Kur një mappendje e domenit hiqet në Ultimate Multisite, integrimi do të përditësojë listën e domenve në ServerPilot duke ekskluduar domenit që është hequr.

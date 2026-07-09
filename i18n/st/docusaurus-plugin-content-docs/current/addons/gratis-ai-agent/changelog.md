@@ -3,11 +3,11 @@ title: Lenane la liphetoho
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Lenane la diphetoho
+# Lenane la diphetoho {#changelog}
 
-## 1.9.0 — E lokollotswe ka 2026-04-28
+## 1.9.0 — E lokollotswe ka 2026-04-28 {#190--released-on-2026-04-28}
 
-### Tse ntjha
+### Tse ntjha {#new}
 
 - **bokgoni ba `create_contact_form`** — bo theha foromo ya kgokahano ka ho sebedisa plugin ya foromo e sebetsang (Contact Form 7, WPForms, Fluent Forms, kapa Gravity Forms) mme bo kgutlisa shortcode e loketseng ho kenngwa posong kapa leqepheng lefe kapa lefe.
 - **bokgoni ba `set_featured_image`** — bo abela poso kapa leqephe setshwantsho se hlahelletseng ho tswa ho ID ya sehokelo se seng se le teng sa Media Library kapa URL e hole; bo kenya setshwantsho ka bo bona ha URL e fanwe.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Kgutlisa session ya ho qetela** — panel ya chat jwale e jarolla puisano ya moraorao ka bo yona ha leqephe le jarwa le ha widget e bulwa, kahoo moelelo ha o lahlehe ha ho tsamauwa pakeng tsa maqephe.
 - **Dihokelo tsa diketso tsa plugin** — dihokelo tse potlakileng ho Settings le Abilities Registry jwale di hlaha skrineng sa WordPress **Plugins → Installed Plugins** ka tlase ho tlhaloso ya plugin.
 
-### E ntlafaditswe
+### E ntlafaditswe {#improved}
 
 - **Ho leka hape mohlodi wa setshwantsho** — agent jwale e leka hape mehlodi yohle ya mahala ya ditshwantsho e hlophisitsweng pele e kgutlela setshwantshong se hlahisitsweng ke AI ha ho jarolla ho hloleha.
 - **Panel ya tlhahisoleseding ya model** — e dula e bonahala hloohong ya chat; ha e sa patwa kamora molaetsa wa pele.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Moralo o motjha wa chat widget** — aekhone e kopaneng ya AI e nkela avatar ya pele e ikgethileng sebaka; e dumellana le tsamaiso ya agent e hahelletsweng ka hare.
 - **Ho etsa URL sehokelo** — di-URL tse hlahang melaetseng ya system le dibubble tsa melaetsa ya phoso jwale di hlahiswa e le dihokelo tse tobetsehang.
 
-### E lokisitswe
+### E lokisitswe {#fixed}
 
 - **Ho fumaneha ha bokgoni** — ho lokisitswe ditlhaloso, ditshupiso tsa system prompt, le ho dumellana ha namespace e le hore bokgoni bohle bo hlahe lenaneng la disebediswa tsa agent ka botshepehi.
 - **Cache ya providers** — providers jwale di bolokwa cache ho pholletsa le site ka counter ya version, ho thibela mathata a stale-provider marangrang a multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — E lokollotswe ka 2026-04-09
+## 1.4.0 — E lokollotswe ka 2026-04-09 {#140--released-on-2026-04-09}
 
-### Tse ntjha
+### Tse ntjha {#new-1}
 
 - **Taelo ea benchmark ea WP-CLI** (`wp gratis-ai-agent benchmark`) — e tsamaisa pokello ea benchmark ea Agent Capabilities v1 ho tloha moleng oa taelo bakeng sa CI pipelines le mekhoa ea mosebetsi ea tlhahlobo ea model. E tšehetsa litsamaiso tsa potso ka ’ngoe, liphetoho tsa provider/model, le tlhahiso ea JSON/CSV.
 - **Pokello ea benchmark ea Agent Capabilities v1** — sete e hlophisitsoeng ea li-prompt tse rarahaneng, tsa mehato e mengata tse lekang bokhoni bohle, ka ho fana ka lintlha le tlaleho ea token/nako.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Potso ea benchmark ea website ea resturante** (`q-restaurant-website`) — teko ea ho tloha qalong ho isa qetellong e akaretsang ngoliso ea CPT, design system, navigation, le phumano ea plugin.
 - **AI provider connector plugins** li kentsoe ho WordPress Playground blueprints bakeng sa tlhophiso e potlakileng ea nts’etsopele ea lehae.
 
-### E ntlafalitsoe
+### E ntlafalitsoe {#improved-1}
 
 - README e ntlafalitsoe ka litokomane tsa AI provider connector le litaelo tsa setup.
 
-### E lokisitsoe
+### E lokisitsoe {#fixed-1}
 
 - Ho hloleha ha liteko tse 25 tsa PHPUnit lekaleng la `main` ho rarollotsoe.
 - Sebopeho sa URL ea GitHub releases ho `blueprint.json` se lokisitsoe.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Dintlha tsa ditokollo tsa pele di bolokilwe polokelong ya plugin._

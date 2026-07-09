@@ -3,15 +3,15 @@ title: 'Dysgu 8: Cynllunio Cysgodau Client'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lesiwn 8: Ymddianu Clientau
+# Lesiwn 8: Ymddianu Clientau {#lesson-8-customer-onboarding}
 
 Mae gael ei chwarae'r clientau i ddefnyddio'r syfu yw peth yn llawn. Os oes gan nhw cyflwyno, teimlo'n rhy dda, ac nid fyddant yn dod eto eto, mae eich bod wedi colli nhw. Mae’r lesiwn hwn yn ddefnyddio'r gyfarwyddyd sy'n gwneud y cyflym newydd i clientau yn gweithredol a chynllunol.
 
-## Oes ymlaen yma
+## Oes ymlaen yma {#where-we-left-off}
 
 Mae FitSite wedi'i gysylltu'n llawn gyda chyflwyniad chefnog. Mae'r fawni ar gyfer yr hyn sydd wedi digwydd ar ôl y cyflwyniad o ddefnyddwyr a fyddont yn dod i'r safle eu newydd am y tro cyntaf.
 
-## Pam mae ymddianu clientau yn bwysig
+## Pam mae ymddianu clientau yn bwysig {#why-onboarding-matters}
 
 Mae'r 30 min gyntaf ar ôl y cyflwyniad yn pwybo beth byddai'n parhau neu ddefnyddio. Mae gan weinydd studio sy:
 
@@ -21,9 +21,9 @@ Mae'r 30 min gyntaf ar ôl y cyflwyniad yn pwybo beth byddai'n parhau neu ddefny
 
 Mae eich template niche (Lesiwn 4) yn gwarchod y cyflwyniad cyntaf. Mae'r lesiwn hwn yn gwarchod y cynllun nesaf.
 
-## Ymddianu Cyflwyniad Cyntaf
+## Ymddianu Cyflwyniad Cyntaf {#the-first-login-experience}
 
-### Widget Dashboard Cynhelu
+### Widget Dashboard Cynhelu {#welcome-dashboard-widget}
 
 Creu widget dashboard a chyfathriad newyddion ac yn rhoi eu cyfarwyddyd trwy'r set-up. Rhaid iddo ddod yn ddefnyddiol pan fyddant yn cyflwyno am y tro cyntaf.
 
@@ -37,7 +37,7 @@ Creu widget dashboard a chyfathriad newyddion ac yn rhoi eu cyfarwyddyd trwy'r s
 
 Mae pob cyflwyniad yn cysylltu'n dirffennol â'r peidiad neu setiad sydd amserol. Peidiwch â chwilio drwy menuau.
 
-### Simplfywch y Dashboard
+### Simplfywch y Dashboard {#simplify-the-dashboard}
 
 Dydyn ei angen i newyddion gwylio pob item menu WordPress. Meddylwch am:
 
@@ -47,29 +47,29 @@ Dydyn ei angen i newyddion gwylio pob item menu WordPress. Meddylwch am:
 
 Gall y addon [Plugin & Theme Manager](/addons/plugin-and-theme-manager) helpu i gwparu beth mae cydweithwyr yn gweld.
 
-## Cyfresau E-bostyngiad Cynheltu (Welcome Email Sequence)
+## Cyfresau E-bostyngiad Cynheltu (Welcome Email Sequence) {#welcome-email-sequence}
 
 Mae un e-bostyn cychweiriad yn ddigonol. Rheoli cyfres sydd yn gwneud y cydweithwyr i'r cyntaf hysnes eu cyfrif:
 
-### E-bostyn 1: Cyfeiriad (Yn ddiweddar ar ôl y cyfrif)
+### E-bostyn 1: Cyfeiriad (Yn ddiweddar ar ôl y cyfrif) {#email-1-welcome-immediately-after-signup}
 
 - Cyflwyniad: "Welsh i FitSite -- eich gwefan studio mae'n gweithredol"
 - Cynnwys: Cysylltiad i logio, cynllunau dechrau cyflym, cysylltiad i resurau helpu
 - Tonn: Cyffredinol, gofynol, yn benodol i ffitnes
 
-### E-bostyn 2: Cynnyrchiau Cyflym (Dydd 1)
+### E-bostyn 2: Cynnyrchiau Cyflym (Dydd 1) {#email-2-quick-wins-day-1}
 
 - Cyflwyniad: "3 o ddethau i wneud ar gyntaf ar eich FitSite"
 - Cynnwys: Ychwanegu eich logo, cyfnewid y llun hero y gwefan, ychwanegu eich cynllun clasa
 - Cadw amgylchion (screenshots) sydd yn dangos yn unig lle i chwarae
 
-### E-bostyn 3: Wneui'n Eich (Dydd 3)
+### E-bostyn 3: Wneui'n Eich (Dydd 3) {#email-3-make-it-yours-day-3}
 
 - Cyflwyniad: "Wneuwch eich gwefan ffitnes yn ddisgwyl"
 - Cynnwys: Gyfnewidiwch y lliwiau, ychwanegu ffotos cynraddorion, ysgrifwch eich story studio
 - Cysylltiad i enwylau o wefanau ffitnes dda ar y platform
 
-### E-bostyn 4: Gweithredol (Dydd 7)
+### E-bostyn 4: Gweithredol (Dydd 7) {#email-4-go-live-day-7}
 
 - Cyflwr: "Yn ddefnyddio'ch FitSite gyda'r byd?"
 - Cynnwys: Llyfr cyflwyniad o beth i gwirio cyn dangos, sut i cysylltu domain custom (os ydych chi ar Growth/Pro), cyfathigion rhannu social
@@ -78,11 +78,11 @@ Mae un e-bostyn cychweiriad yn ddigonol. Rheoli cyfres sydd yn gwneud y cydweith
 Defnyddiwch [Webhooks](/user-guide/integrations/webhooks) neu [Zapier](/user-guide/integrations/zapier) i gweithredu'r emailau hyn drwy ffurf eich platforma cynhyrchu email. Mae hyn yn rhoi ddefnyddio mwy o chryfiad ar gyfer amser a sylw ar y cydweithio.
 :::
 
-## Rhyddau Help
+## Rhyddau Help {#help-resources}
 
 Creu cynnwys help yn benodol i'r ffurf sy'n cael ei gweithredu gan weithwyr studio sy'n gofyn y rhai:
 
-### Artifau Cyflwyniad Gwybodaeth (Knowledge Base Articles)
+### Artifau Cyflwyniad Gwybodaeth (Knowledge Base Articles) {#knowledge-base-articles}
 
 - "Sut i newid eich cynllun cynghrair"
 - "Cynllunio a redig profifion trainwyr"
@@ -92,7 +92,7 @@ Creu cynnwys help yn benodol i'r ffurf sy'n cael ei gweithredu gan weithwyr stud
 
 Gweithio hyn i benodol i ddefnyddwyr sydd nid yn ddefnyddwyr technolegol. Defnyddiwch llwybrau sefyllta (screenshots). Aiwyd y jargon WordPress.
 
-### Cyflwyniadion Vidio (Video Walkthroughs)
+### Cyflwyniadion Vidio (Video Walkthroughs) {#video-walkthroughs}
 
 Cyflwyniadau cyffredinol (2-3 minuty) sy'n dangos:
 
@@ -103,7 +103,7 @@ Cyflwyniadau cyffredinol (2-3 minuty) sy'n dangos:
 
 Mae hyn nid yn angen i fod yn gweithredol. Mae llwybr, helpus, ac benodol i'r ffurf sy'n cael ei gweithredu yw beth sydd yn hanfodol.
 
-## Y Peidiyn Account (The Account Page)
+## Y Peidiyn Account (The Account Page) {#the-account-page}
 
 Mae Ultimate Multisite yn cynnwys [Peidiyn Account](/user-guide/client-management/account-page) sy'n cael ei ddefnyddio gan y cyddeeion i gael eu cyfathogh, lle mae'r cyddeeion yn rheoli eu cyflwyniad. Newidi hyn i:
 
@@ -112,7 +112,7 @@ Mae Ultimate Multisite yn cynnwys [Peidiyn Account](/user-guide/client-managemen
 - Cyflwyno hanes cyfathrebu a ddefnyddio ffurfiad invoiceau
 - Cyhoeddi link i resurcio help
 
-## Cynodiad y Cynllunio Onboarding
+## Cynodiad y Cynllunio Onboarding {#measuring-onboarding-success}
 
 Drwy'r amrywiadau hyn i gwybod os oes eich cynllunio onboarding yn weithredu:
 
@@ -121,7 +121,7 @@ Drwy'r amrywiadau hyn i gwybod os oes eich cynllunio onboarding yn weithredu:
 - **Bustau cefnogaeth o ddeunydd newydd**: Mae amlwch yn deimlo bod eich onboarding wedi'i gael.
 - **Cyfathrebu o trial i paid**: Os ydych chi'n cynnig trialiau, paenyg ychwanegau yr unig?
 
-## Y FitSite Network Erioedd
+## Y FitSite Network Erioedd {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Beth Rydyn Ni wedi'i Cynllunio Mae'r Ddysg Hwnnw
+## Beth Rydyn Ni wedi'i Cynllunio Mae'r Ddysg Hwnnw {#what-we-built-this-lesson}
 
 - **Rhan gysylltiedig i y cyflwyniad cyntaf** gyda widget Quick Start
 - **Dashboard sydd yn einfail** wedi'i gyfeiriad ar adaelau rheoli safle fithrin

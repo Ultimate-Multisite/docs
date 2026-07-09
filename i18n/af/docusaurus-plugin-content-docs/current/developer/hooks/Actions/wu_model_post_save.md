@@ -4,11 +4,11 @@ title: Action - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Action: wu_model_post_save
+# Action: wu_model_post_save {#action-wumodelpostsave}
 
 Word geaktiveer nadat 'n objek in die database gestoor word.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Word geaktiveer nadat 'n objek in die database gestoor word.
 | $data_unserialized | `array` | Die objekdata wat gestoor sal word. |
 | $this | `\Base_Model` | Die objek-instansie. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 - Gedefinieer in [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L613) op lyn 613
 - Gedefinieer in [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1743) op lyn 1743

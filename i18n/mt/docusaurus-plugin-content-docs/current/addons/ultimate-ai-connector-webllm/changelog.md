@@ -3,9 +3,9 @@ title: Ultimate AI Connector għal WebLLM Reġistru tal-Bidliet
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Reġistru tal-bidliet
+# Ultimate AI Connector for WebLLM Reġistru tal-bidliet {#ultimate-ai-connector-for-webllm-changelog}
 
-## Verżjoni 1.1.0 — Maħruġa fid-2026-04-09
+## Verżjoni 1.1.0 — Maħruġa fid-2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Ġdid: Widget taċ-chat li jżomm f'wiċċ l-ilma b'indikatur tal-istatus tal-bar tal-amministratur — kwalunkwe utent illoggjat jista' jagħti prompt lill-LLM fuq in-naħa tal-browser direttament mill-front end.
 * Ġdid: Runtime SharedWorker — il-magna MLC issa taħdem f'SharedWorker sabiex tabs multipli jaqsmu sessjoni GPU waħda minflok jiġġieldu fuqha.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Tiswija: Qabbad WebLLM mal-filter wpai_preferred_text_models sabiex il-karatteristika AI Experiments tirrotta lejn il-magna tal-browser meta mudell ikun ikkonfigurat.
 * Imtejjeb: Tiswijiet tal-cache-busting, normalizzazzjoni tal-kontenut, u referenzi tal-ħardwer li ħarġu waqt it-testjar minn tarf sa tarf.
 
-## Verżjoni 1.0.0 — Ħarġa Inizjali
+## Verżjoni 1.0.0 — Ħarġa Inizjali {#version-100--initial-release}

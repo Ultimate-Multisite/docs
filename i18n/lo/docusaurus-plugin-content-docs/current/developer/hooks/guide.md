@@ -3,15 +3,15 @@ title: ຄູ່ມືການໃຊ້ Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# ຄູ່ມືການໃຊ້ Hooks
+# ຄູ່ມືການໃຊ້ Hooks {#hooks-usage-guide}
 
 Ultimate Multisite ມີ action hooks 200+ ແລະ filter hooks 280+. ໜ້ານີ້ຄອບຄຸມ hooks ທີ່ໃຊ້ບໍ່ເລື້ອຍທີ່ສຸດພ້ອມຕົວຢ່າງທີ່ນຳໃຊ້ໄດ້ຈິງ. ສຳລັບອ້າງອີງສົມບູນທີ່ສ້າງອັດຕະໂນມັດ, ໃຫ້ເບິ່ງໜ້າອື່ນໆໃນພາກສ່ວນນີ້.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### ວົງຈອນຊີວິດລູກຄ້າ
+### ວົງຈອນຊີວິດລູກຄ້າ {#customer-lifecycle}
 
-#### ຫຼັງຈາກສ້າງລູກຄ້າ
+#### ຫຼັງຈາກສ້າງລູກຄ້າ {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### ການປ່ຽນແປງສະຖານະລູກຄ້າ
+#### ການປ່ຽນແປງສະຖານະລູກຄ້າ {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks ຂອງເວັບໄຊ
+### Hooks ຂອງເວັບໄຊ {#site-hooks}
 
-#### ຫຼັງຈາກເວັບໄຊຖືກເຜີຍແຜ່
+#### ຫຼັງຈາກເວັບໄຊຖືກເຜີຍແຜ່ {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### ກ່ອນການນຳໃຊ້ແມ່ແບບ
+#### ກ່ອນການນຳໃຊ້ແມ່ແບບ {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooks ສະມາຊິກ
+### Hooks ສະມາຊິກ {#membership-hooks}
 
-#### ການປ່ຽນສະຖານະ
+#### ການປ່ຽນສະຖານະ {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooks ການຊຳລະເງິນ
+### Hooks ການຊຳລະເງິນ {#payment-hooks}
 
-#### ການຊຳລະເງິນສຳເລັດ / ລົ້ມເຫຼວ
+#### ການຊຳລະເງິນສຳເລັດ / ລົ້ມເຫຼວ {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### ກ່ອນການປະມວນຜົນ / ຫຼັງຈາກສຳເລັດ
+#### ກ່ອນການປະມວນຜົນ / ຫຼັງຈາກສຳເລັດ {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain Hooks
+### Domain Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### ຕົວກອງລາຄາ
+### ຕົວກອງລາຄາ {#pricing-filters}
 
-#### ຍອດລວມກະຕ່າ
+#### ຍອດລວມກະຕ່າ {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### ອັດຕາພາສີ
+#### ອັດຕາພາສີ {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### ຕົວກອງແມ່ແບບ
+### ຕົວກອງແມ່ແບບ {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### ຕົວກອງຂໍ້ຈຳກັດ
+### ຕົວກອງຂໍ້ຈຳກັດ {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### ຕົວກອງ Gateway
+### ຕົວກອງ Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### ຊ່ອງຂໍ້ມູນແບບຟອມ Checkout
+### ຊ່ອງຂໍ້ມູນແບບຟອມ Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### ເນື້ອຫາອີເມວ
+### ເນື້ອຫາອີເມວ {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

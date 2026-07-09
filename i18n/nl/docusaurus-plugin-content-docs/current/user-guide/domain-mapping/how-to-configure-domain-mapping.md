@@ -3,17 +3,17 @@ title: Domeintoewijzing configureren
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domeinmapping configureren (v2)
+# Domeinmapping configureren (v2) {#how-to-configure-domain-mapping-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
 Een van de krachtigste functies van een premium netwerk is de mogelijkheid om onze klanten de kans te bieden een topleveldomein aan hun sites te koppelen. Wat ziet er tenslotte professioneler uit: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) of [_**joesbikeshop.com**_](http://joesbikeshop.com)? Daarom biedt Ultimate Multisite die functie standaard ingebouwd, zonder dat je plugins van derden hoeft te gebruiken.
 
-## Wat is domeinmapping?
+## Wat is domeinmapping? {#whats-domain-mapping}
 
 Zoals de naam al aangeeft, is domeinmapping de mogelijkheid die Ultimate Multisite biedt om een aanvraag voor een aangepast domein te ontvangen en die aanvraag te koppelen aan de bijbehorende site in het netwerk waaraan dat specifieke domein is gekoppeld.
 
-### Domeinmapping instellen op je Ultimate Multisite-netwerk
+### Domeinmapping instellen op je Ultimate Multisite-netwerk {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domeinmapping vereist wat instellingen van jouw kant om te werken. Gelukkig automatiseert Ultimate Multisite het zware werk voor je, zodat je eenvoudig aan de vereisten kunt voldoen.
 
@@ -45,7 +45,7 @@ Maar voordat je begint met het mappen van het aangepaste domein naar een van de 
 
 ###
 
-### Controleren of de DNS-instellingen van het domein correct zijn geconfigureerd
+### Controleren of de DNS-instellingen van het domein correct zijn geconfigureerd {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Om een mapping te laten werken, moet je ervoor zorgen dat het domein dat je wilt mappen naar het IP-adres van je netwerk wijst. Let erop dat je het IP-adres van het netwerk nodig hebt — het IP-adres van het domein waarop Ultimate Multisite is geïnstalleerd — niet het IP-adres van het aangepaste domein dat je wilt mappen. Om het IP-adres van een specifiek domein op te zoeken, raden we bijvoorbeeld aan naar [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) te gaan.
 
@@ -55,7 +55,7 @@ Als je problemen ondervindt om dit werkend te krijgen, **neem dan contact op met
 
 Als je van plan bent je klanten toe te staan hun eigen domeinen te mappen, moeten zij dit onderdeel zelf uitvoeren. Verwijs hen naar het supportsysteem van hun registrar als het hen niet lukt om het A-record aan te maken.
 
-### Aangepaste domeinnaam mappen als superbeheerder
+### Aangepaste domeinnaam mappen als superbeheerder {#mapping-custom-domain-name-as-super-admin}
 
 Wanneer je bent ingelogd als superbeheerder op je netwerk, kun je eenvoudig aangepaste domeinnamen toevoegen en beheren door naar **Ultimate Multisite > Domeinen** te gaan.
 
@@ -93,7 +93,7 @@ Als je op de domeinnaam klikt, kun je enkele opties erin zien. Laten we er snel 
 
 **Is Secure?:** Hoewel Ultimate Multisite controleert of het domein een SSL-certificaat heeft voordat het wordt ingeschakeld, kun je handmatig selecteren of het domein met of zonder SSL-certificaat wordt geladen. Let op: als de website geen SSL-certificaat heeft en je probeert deze geforceerd met SSL te laden, kan dit fouten opleveren.
 
-### Aangepaste domeinnaam koppelen als Subsite-gebruiker
+### Aangepaste domeinnaam koppelen als Subsite-gebruiker {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite-beheerders kunnen ook aangepaste domeinnamen koppelen vanuit hun subsite-beheerdersdashboard.
 
@@ -121,7 +121,7 @@ De gebruiker kan vervolgens op **Next Step** klikken en doorgaan met het toevoeg
 
 Klikken op **Add Domain** start het proces voor het verifiëren en ophalen van de DNS-informatie van het aangepaste domein.
 
-### Over domeinsynchronisatie
+### Over domeinsynchronisatie {#about-domain-syncing}
 
 Domeinsynchronisatie is een proces waarbij Ultimate Multisite de aangepaste domeinnaam aan je hostingaccount toevoegt als een add-on-domein **zodat de domain mapping werkt**.
 

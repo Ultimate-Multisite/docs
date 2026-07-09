@@ -3,72 +3,72 @@ title: WPMU DEV تكامل
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV Integration
+# WPMU DEV Integration {#wpmu-dev-integration}
 
-## گشتی (Overview)
+## گشتی (Overview) {#overview}
 WPMU DEV ووردپرس سایت‌ها برای میزبانی، پلاگین‌ها و خدمات ارائه می‌دهند یک پلتفرم جامع است. این ادغام امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL را بین Ultimate Multisite و میزبانی WPMU DEV فراهم می‌کند.
 
-## ویژگی‌ها (Features)
+## ویژگی‌ها (Features) {#features}
 - همگام‌سازی خودکار دامنه
 - مدیریت گواهی SSL
 - تلاش‌های تأیید گواهی SSL گسترش یافته
 
-## پیش‌نیازها (Requirements)
+## پیش‌نیازها (Requirements) {#requirements}
 این ادغام به طور خودکار تشخیص می‌دهد که آیا شما روی WPMU DEV میزبانی می‌کنید و از API داخلی استفاده می‌کند. اگر روی WPMU DEV میزبانی می‌کنید، هیچ تنظیمات اضافی لازم نیست.
 
 ادغام بررسی می‌کند که آیا ثابت `WPMUDEV_HOSTING_SITE_ID` وجود دارد یا خیر؛ این ثابت زمانی تعریف می‌شود که شما روی WPMU DEV میزبانی می‌کنید.
 
-## دستورالعمل‌های راه‌اندازی (Setup Instructions)
+## دستورالعمل‌های راه‌اندازی (Setup Instructions) {#setup-instructions}
 
-### ۱. تأیید میزبانی WPMU DEV (Verify WPMU DEV Hosting)
+### ۱. تأیید میزبانی WPMU DEV (Verify WPMU DEV Hosting) {#1-verify-wpmu-dev-hosting}
 اگر روی WPMU DEV میزبانی می‌کنید، ثابت‌های لازم باید از قبل تعریف شده باشند. لطفاً موارد زیر را بررسی کنید:
 
 ۱. ثابت `WPMUDEV_HOSTING_SITE_ID` در محیط شما تعریف شده باشد.
 ۲. شما عضویت فعال WPMU DEV با دسترسی API داشته باشید.
 
-### ۲. فعال کردن ادغام (Enable the Integration)
+### ۲. فعال کردن ادغام (Enable the Integration) {#2-enable-the-integration}
 ۱. در پنل مدیریت ووردپرس خود، به Ultimate Multisite > Settings بروید.
 ۲. به تب "Domain Mapping" (نقشه‌برداری دامنه) بروید.
 ۳. به پایین اسکرول کرده و به بخش "Host Integrations" (ادغام‌های میزبان) بروید.
 ۴. ادغام WPMU DEV را فعال کنید.
 ۵. روی "Save Changes" (ذخیره تغییرات) کلیک کنید.
 
-## نحوه کارکرد (How It Works)
+## نحوه کارکرد (How It Works) {#how-it-works}
 
-### همگام‌سازی دامنه (Domain Syncing)
+### همگام‌سازی دامنه (Domain Syncing) {#domain-syncing}
 وقتی یک دامنه در Ultimate Multisite نگاشت می‌شود:
 
 ۱. این ادغام از API WPMU DEV استفاده می‌کند تا دامنه را به حساب میزبانی شما اضافه کند.
 ۲. همچنین نسخه www دامنه را به صورت خودکار اضافه می‌کند.
 ۳. WPMU DEV تنظیمات دامنه و صدور گواهی SSL را مدیریت می‌کند.
 
-### مدیریت گواهی SSL (SSL Certificate Management)
+### مدیریت گواهی SSL (SSL Certificate Management) {#ssl-certificate-management}
 
 این اتصال طوری تنظیم شده که تعداد تلاش‌های تأیید گواهی SSL برای میزبانی WPMU DEV بیشتر شود، چون ممکن است صدور و نصب گواهی‌های SSL کمی طول بکشد. به طور پیش‌فرض، این سیستم تا ۱۰ بار برای تأیید گواهی SSL تلاش می‌کند، در مقایسه با ۵ بار استاندارد.
 
-## نکات مهم
+## نکات مهم {#important-notes}
 
-### حذف دامنه (Domain Removal)
+### حذف دامنه (Domain Removal) {#domain-removal}
 
 در حال حاضر، APIِ WPMU DEV راهی برای حذف دامنه‌ها ارائه نمی‌دهد. وقتی یک نگاشت دامنه (domain mapping) در Ultimate Multisite حذف می‌شود، آن دامنه همچنان در حساب میزبانی WPMU DEV شما باقی می‌ماند. اگر لازم باشد، باید آن را از داشبورد میزبانی WPMU DEV به صورت دستی حذف کنید.
 
-### احراز هویت API (API Authentication)
+### احراز هویت API (API Authentication) {#api-authentication}
 
 این اتصال از کلید APIِ WPMU DEV استفاده می‌کند که در پایگاه داده وردپرس به عنوان گزینه `wpmudev_apikey` ذخیره شده است. این تنظیم به طور خودکار زمانی انجام می‌شود که سایت خود را به WPMU DEV متصل می‌کنید.
 
-## عیب‌یابی (Troubleshooting)
+## عیب‌یابی (Troubleshooting) {#troubleshooting}
 
-### مشکلات اتصال API
+### مشکلات اتصال API {#api-connection-issues}
 - بررسی کنید که سایت شما به درستی به WPMU DEV متصل شده باشد.
 - مطمئن شوید که گزینه `wpmudev_apikey` در پایگاه داده وردپرس تنظیم شده است.
 - اطمینان حاصل کنید که عضویت WPMU DEV شما فعال است.
 
-### مشکلات گواهی SSL
+### مشکلات گواهی SSL {#ssl-certificate-issues}
 - ممکن است WPMU DEV برای صدور گواهی‌های SSL کمی طول بکشد (معمولاً ۵ تا ۱۵ دقیقه).
 - این اتصال طوری تنظیم شده که تا ۱۰ بار برای بررسی گواهی‌های SSL تلاش می‌کند.
 - اگر پس از چندین تلاش همچنان گواهی‌های SSL صادر نمی‌شوند، با پشتیبانی WPMU DEV تماس بگیرید.
 
-### اضافه نشدن دامنه
+### اضافه نشدن دامنه {#domain-not-added}
 - لاگ‌های Ultimate Multisite را برای هرگونه پیام خطا چک کنید.
 - تأیید کنید که دامنه قبلاً در WPMU DEV اضافه نشده باشد.
 - مطمئن شوید که طرح میزبانی WPMU DEV شما از تعداد دامنه‌هایی که اضافه می‌کنید پشتیبانی می‌کند.

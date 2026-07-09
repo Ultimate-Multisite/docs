@@ -3,7 +3,7 @@ title: Zpracování daní
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Práce s daněmi
+# Práce s daněmi {#tax-handling}
 
 Ultimate Multisite má modul pro výběr daní zabudovaný v našem hlavním pluginu, takže pokud potřebujete vybírat prodejní daně u svých plánů, balíčků a služeb, můžete to snadno udělat bez nutnosti instalovat jakékoli doplňky.
 
@@ -11,7 +11,7 @@ Pro společnosti sídlící v Evropě nabízíme **doplněk**, který přidává
 
 Ultimate Multisite za vás nepodává ani neodvádí daně vládním úřadům; jednoduše vám pomáháme vybrat příslušné daně v okamžiku transakce. **Daně budete stále muset odvést sami.**
 
-## Povolení výběru daní
+## Povolení výběru daní {#enabling-tax-collection}
 
 Výběr daní není ve výchozím nastavení povolen. Chcete-li jej povolit, musíte přejít na **Ultimate Multisite > Nastavení > Daně** a přepínačem povolit nastavení Povolit daně.
 
@@ -25,7 +25,7 @@ Můžete také zobrazit nastavení daní pro jednotlivé produkty:
 
 ![Nastavení daní pro produkty](/img/config/settings-taxes.png)
 
-### Bez daně vs. včetně daně
+### Bez daně vs. včetně daně {#tax-excluded-vs-tax-included}
 
 Ve výchozím nastavení jsou všechny ceny vašich produktů bez daně, což znamená, že daně **nejsou zahrnuty** v ceně produktu. Pokud určíme, že zákazník má z daného nákupu zaplatit daně, přidáme daně **navíc** k mezisoučtu.
 
@@ -37,7 +37,7 @@ Nezapomeňte změny, které jste provedli, **uložit**.
 
 ###
 
-## Vytváření daňových sazeb
+## Vytváření daňových sazeb {#creating-tax-rates}
 
 Po povolení výběru daní budete muset vytvořit daňové sazby pro konkrétní lokality pomocí našeho editoru daňových sazeb.
 
@@ -51,7 +51,7 @@ Na stránce editoru daňových sazeb můžete přidávat nové daňové sazby kl
 
 Každé daňové sazbě budete muset dát **název** (používá se na fakturách). Poté můžete zvolit **zemi** (povinné), **stát/region,** a **město** (obojí volitelné), kde bude tato daň účtována. Nakonec přidejte **daňovou sazbu v procentech**.
 
-### Daňové kategorie
+### Daňové kategorie {#tax-categories}
 
 Můžete také vytvořit více daňových kategorií a přidat různé daňové sazby pro různé druhy produktů.
 
@@ -73,7 +73,7 @@ Daňovou kategorii pro konkrétní produkt můžete nastavit tak, že přejdete 
 
 Na stejné obrazovce můžete vypnout přepínač **Je zdanitelný?**, abyste Ultimate Multisite dali vědět, že u daného produktu nemá vybírat daně.
 
-## Podpora evropského VAT
+## Podpora evropského VAT {#european-vat-support}
 
 Jak bylo zmíněno dříve, máme k dispozici doplněk pro zákazníky v EU, kteří mají další požadavky kvůli evropským předpisům o VAT.
 
@@ -101,7 +101,7 @@ Pokud se vrátíte na **kartu Nastavení daní** , uvidíte nové dostupné mož
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Načítání daňových sazeb VAT
+### Načítání daňových sazeb VAT {#pulling-on-vat-tax-rates}
 
 Jedním z nástrojů, které naše integrace přidává, je možnost načíst daňové sazby pro členské státy EU. To lze provést návštěvou stránky editoru daňových sazeb po povolení podpory EU VAT.
 
@@ -111,7 +111,7 @@ Ve spodní části stránky uvidíte možnosti načítání VAT. Výběr typu sa
 
 Hodnoty můžete po jejich načtení také upravit. Stačí upravit řádek tabulky, který potřebujete, a kliknutím uložit nové hodnoty.
 
-### Ověření VAT
+### Ověření VAT {#vat-validation}
 
 Když je podpora VAT povolena, Ultimate Multisite přidá do formuláře pokladny další pole, pod pole fakturační adresy. Pole se zobrazí pouze zákazníkům nacházejícím se v EU.
 

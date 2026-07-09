@@ -3,11 +3,11 @@ title: Regjistri i ndryshimeve
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Ditari i ndryshimeve
+# Ditari i ndryshimeve {#changelog}
 
-## 1.9.0 — Publikuar më 2026-04-28
+## 1.9.0 — Publikuar më 2026-04-28 {#190--released-on-2026-04-28}
 
-### E re
+### E re {#new}
 
 - **Aftësia `create_contact_form`** — krijon një formular kontakti duke përdorur plugin-in aktiv të formularëve (Contact Form 7, WPForms, Fluent Forms, ose Gravity Forms) dhe kthen një shortcode gati për t’u përfshirë në çdo postim ose faqe.
 - **Aftësia `set_featured_image`** — cakton një imazh të veçuar për një postim ose faqe nga një ID ekzistuese bashkëngjitjeje në Media Library ose nga një URL e largët; e importon automatikisht imazhin kur jepet një URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Rikthe sesionin e fundit** — paneli i chat-it tani ringarkon automatikisht bisedën më të fundit gjatë ngarkimit të faqes dhe kur hapet widget-i, kështu që konteksti nuk humbet kurrë gjatë navigimit mes faqeve.
 - **Lidhje veprimesh të plugin-it** — lidhje të shpejta për Settings dhe Regjistrin e Aftësive tani shfaqen në ekranin WordPress **Plugins → Installed Plugins** poshtë përshkrimit të plugin-it.
 
-### Përmirësuar
+### Përmirësuar {#improved}
 
 - **Riprovim i burimit të imazhit** — agjenti tani riprovon të gjitha burimet falas të konfiguruara të imazheve përpara se të kalojë te një imazh i gjeneruar nga AI në rast dështimi shkarkimi.
 - **Paneli i informacionit të modelit** — gjithmonë i dukshëm në krye të chat-it; nuk fshihet më pas mesazhit të parë.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ridizajn i widget-it të chat-it** — ikona e unifikuar AI zëvendëson avatarin e mëparshëm të personalizuar; në përputhje me sistemin e agjentëve të integruar.
 - **Kthimi i URL-ve në lidhje** — URL-të që shfaqen në mesazhe sistemi dhe flluska mesazhesh gabimi tani paraqiten si lidhje të klikueshme.
 
-### Rregulluar
+### Rregulluar {#fixed}
 
 - **Zbulueshmëria e aftësive** — u korrigjuan përshkrimet, referencat e system prompt dhe përputhja e namespace-ve në mënyrë që të gjitha aftësitë të shfaqen në mënyrë të besueshme në listën e mjeteve të agjentit.
 - **Cache i ofruesve** — ofruesit tani ruhen në cache në nivel site-i përmes një numëruesi versioni, duke parandaluar probleme me ofrues të vjetruar në rrjete multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Publikuar më 2026-04-09
+## 1.4.0 — Publikuar më 2026-04-09 {#140--released-on-2026-04-09}
 
-### E re
+### E re {#new-1}
 
 - **Komandë benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — ekzekuton paketën benchmark Agent Capabilities v1 nga command line për CI pipelines dhe rrjedhat e punës së vlerësimit të modeleve. Mbështet ekzekutime për pyetje, mbishkrime provider/model dhe dalje JSON/CSV.
 - **Paketë benchmark Agent Capabilities v1** — një grup i strukturuar prompts kompleksë, me shumë hapa, që ushtrojnë të gjithë sipërfaqen e aftësive, me vlerësim dhe raportim token/kohëzgjatje.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pyetje benchmark për faqe interneti restoranti** (`q-restaurant-website`) — test nga fillimi në fund që mbulon regjistrimin CPT, design system, navigimin dhe zbulimin plugin.
 - **Plugins lidhës për AI provider** të shtuar në WordPress Playground blueprints për konfigurim më të shpejtë të zhvillimit lokal.
 
-### Përmirësuar
+### Përmirësuar {#improved-1}
 
 - README u përditësua me dokumentacionin për lidhësin AI provider dhe udhëzimet e konfigurimit.
 
-### Rregulluar
+### Rregulluar {#fixed-1}
 
 - 25 dështime testesh PHPUnit në degën `main` u zgjidhën.
 - Formati i URL-së së GitHub releases në `blueprint.json` u korrigjua.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Shënimet e mëparshme të publikimit mirëmbahen në repository-n e plugin._

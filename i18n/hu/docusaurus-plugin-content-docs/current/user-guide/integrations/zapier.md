@@ -3,7 +3,7 @@ title: Zapier integráció
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Az Ultimate Multisite integrálása Zapierrel
+# Az Ultimate Multisite integrálása Zapierrel {#integrating-ultimate-multisite-with-zapier}
 
 Az egyik cikkben a [Webhooks](webhooks.md) témáját tárgyaltuk, és azt, hogyan használhatók 3rd party alkalmazásokkal való integrációra.
 
@@ -15,7 +15,7 @@ Létrehozhatsz **triggereket**, amelyek akkor indulnak el, amikor események tö
 
 Ez azért lehetséges, mert az **Ultimate Multisite Zapier triggerek** és műveletek a [REST API](https://developer.ultimatemultisite.com/api/docs/) segítségével működnek.
 
-## Hogyan kezdd el
+## Hogyan kezdd el {#how-to-start}
 
 Először keresd meg az Ultimate Multisite-ot a Zapier alkalmazáslistájában. Alternatívaként kattinthatsz [erre a linkre](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Az URL mezőbe írd be a hálózatod teljes URL-jét, beleértve a protokollt is
 
 Kattints az **Igen, folytatás** gombra a következő lépéshez. Ha minden rendben működik, az újonnan csatlakoztatott accountod fogad majd! Kattints a **Folytatás** gombra egy új trigger létrehozásához.
 
-## Hogyan hozz létre új triggert
+## Hogyan hozz létre új triggert {#how-to-create-a-new-trigger}
 
 Most, hogy az accountod csatlakoztatva van, láthatod az elérhető eseményeket. Ehhez az oktatóanyaghoz válasszuk a **payment_received** eseményt.
 
@@ -67,7 +67,7 @@ Ebben a szakaszban a Zapier teszteli, hogy a Zapod képes-e **lekérni az adott 
 
 Az oktatóanyagunkban a teszt **sikeresen befejeződött**, és visszaadta a payload példaadatait. Ezek a példaadatok hasznosak lesznek, amikor műveleteket hozunk létre. A triggered most már létrejött, és készen áll arra, hogy más alkalmazásokhoz kapcsolódjon.
 
-## Hogyan hozz létre műveleteket
+## Hogyan hozz létre műveleteket {#how-to-create-actions}
 
 A műveletek más triggerekből származó információkat használnak fel új bejegyzések létrehozásához a hálózatodban.
 
@@ -79,7 +79,7 @@ A következő lépésben vagy létrehozod a hitelesítésedet, ahogy a **Hogyan 
 
 ![Hitelesítés kiválasztása a Zapier művelethez](/img/admin/webhooks-list.png)
 
-### A művelet beállítása
+### A művelet beállítása {#setting-up-the-action}
 
 Ez a **művelet fő lépése**, és itt a dolgok egy kicsit eltérnek. Az első információ, amelyet kiválasztasz, az **Elem**. Az elem a hálózatod **információs modellje**, például **Ügyfelek, Fizetések, Oldalak, E-mailek** és mások.
 

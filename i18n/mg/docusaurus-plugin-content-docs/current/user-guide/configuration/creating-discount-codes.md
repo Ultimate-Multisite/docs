@@ -3,13 +3,13 @@ title: Fanaovana Code Fandaharam-bola
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Famoronana Kodina (v2)
+# Famoronana Kodina (v2) {#creating-discount-codes-v2}
 
 _**FANAM-BAHANA MANAN-TENA: Io lahatsoratra ity dia manondro ny Ultimate Multisite version 2.x.**_
 
 Amin'ny alalan'ny Ultimate Multisite, afaka mamorona code fanaovana resaka (discount codes) ianao mba hanomezana tombontsoa ho an'ny mpanjifa amin'ny fandraisana (subscriptions). Ary ny famoronana azy dia mora!
 
-## Famoronana sy Fanovana Code Fanaovana Resaka
+## Famoronana sy Fanovana Code Fanaovana Resaka {#creating-and-editing-discount-codes}
 
 Mba hamoronana na hanova code fanaovana resaka, mandehana any **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Ny coupon dia eo amin'ny lisitra anao ary avy eo, afaka tsindrio ianao mba **han
 
 ###
 
-### Fampiasana URL Parameters:
+### Fampiasana URL Parameters: {#using-url-parameters}
 
 Raha tianao ny manova ny tabilao vidiny na manangana pejy coupon code tsara ho an'ny tranonkalanao ary te hampiasa coupon code amin'ny checkout form anao aho, dia afaka manao izany amin'ny alalan'ny URL parameters ianao.
 

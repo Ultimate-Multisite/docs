@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent é um assistente de IA autônomo para WordPress que pode planejar, construir e gerenciar sites WordPress completos usando instruções em linguagem natural. Ele expõe um conjunto estruturado de **habilidades** — ações discretas e testáveis que o agente pode invocar — cobrindo desde gerenciamento de conteúdo até customização do sistema de design. A Versão 1.9.0 adiciona habilidades de criação de conteúdo, revisão visual de páginas via capturas de tela do lado do cliente, cinco perfis de agente embutidos e flags de recurso para controle de acesso e branding.
 
-## Principais Recursos
+## Principais Recursos {#key-features}
 
 - **Sistema de Habilidades** — um catálogo modular e extensível de ações que o agente pode invocar na sua instalação WordPress
 - **Gerenciamento de Conteúdo** — criar posts e páginas (incluindo atribuição de templates de página), criar vários posts em lote em uma única chamada, definir imagens em destaque e construir formulários de contato
@@ -28,21 +28,21 @@ Gratis AI Agent é um assistente de IA autônomo para WordPress que pode planeja
 - **Orquestração do Site Builder v2** — planos de construção de site em múltiplas etapas com descoberta de plugins, rastreamento de progresso e recuperação de erros
 - **Comando de Benchmark WP-CLI** — executar o conjunto de testes de benchmark da capacidade do agente a partir da linha de comando para CI e avaliação de modelos
 
-## Requisitos
+## Requisitos {#requirements}
 
 - WordPress 6.0 ou superior
 - PHP 8.1 ou superior
 - WordPress Multisite (ativado na rede) ou instalação de site único
 - Um plugin conector de IA ativo (Anthropic, OpenAI ou compatível)
 
-## Instalação
+## Instalação {#installation}
 
 1. Faça o upload dos arquivos do plugin para `/wp-content/plugins/gratis-ai-agent`
 2. Ative o plugin na tela **Plugins** do WordPress
 3. Navegue até **Gratis AI Agent → Configurações** e conecte seu provedor de IA
 4. (Opcional) Navegue pelo **Registro de Habilidades** para instalar pacotes de habilidades adicionais
 
-## Início Rápido
+## Início Rápido {#quick-start}
 
 Após a ativação e conexão com um provedor de IA, abra o painel **Gratis AI Agent** na barra lateral do administrador do WordPress. Digite uma instrução em linguagem natural e o agente planejará e executará as etapas necessárias usando suas habilidades disponíveis.
 
@@ -60,7 +60,7 @@ Injete uma paleta de cores de modo escuro no tema e defina a cor primária como 
 Construa um site de restaurante com um menu online, formulário de reserva e página de contato.
 ```
 
-## Visão Geral das Habilidades
+## Visão Geral das Habilidades {#abilities-overview}
 
 Habilidades são as ações atômicas que o agente pode executar. Cada habilidade é uma classe PHP registrada que expõe um esquema (parâmetros e tipos de retorno) que o agente lê em tempo de execução. As habilidades são agrupadas em áreas funcionais:
 
@@ -79,7 +79,7 @@ Habilidades são as ações atômicas que o agente pode executar. Cada habilidad
 
 Consulte a [Referência de Habilidades](./abilities) para documentação completa de parâmetros e exemplos de uso.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent inclui uma família de comandos `wp gratis-ai-agent` para executar benchmarks e gerenciar habilidades a partir da linha de comando. Consulte a [Referência WP-CLI](./wp-cli) para a lista completa de comandos.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Configuração
+## Configuração {#configuration}
 
 Todas as configurações estão em **Gratis AI Agent → Configurações** no painel do WordPress:
 
@@ -106,7 +106,7 @@ Todas as configurações estão em **Gratis AI Agent → Configurações** no pa
 | **Timeout da Habilidade** | Tempo máximo em segundos que uma habilidade individual pode rodar (padrão 30) |
 | **Log de Debug** | Registra chamadas de habilidades e raciocínio do agente no log de debug do WordPress |
 
-## Lista de Bloqueio de Segurança de Gerenciamento de Opções
+## Lista de Bloqueio de Segurança de Gerenciamento de Opções {#options-management-safety-blocklist}
 
 A habilidade de Gerenciamento de Opções inclui uma lista de bloqueio embutida que impede o agente de ler ou escrever opções sensíveis do WordPress. A lista de bloqueio padrão cobre:
 
@@ -118,26 +118,26 @@ A habilidade de Gerenciamento de Opções inclui uma lista de bloqueio embutida 
 
 Entradas adicionais podem ser adicionadas via filtro `gratis_ai_agent_options_blocklist`.
 
-## Hooks e Filtros
+## Hooks e Filtros {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — disparado após o registro de uma habilidade, recebe o nome da classe da habilidade
 - `gratis_ai_agent_plan_started` — disparado quando um plano de site builder começa a execução
 - `gratis_ai_agent_plan_completed` — disparado quando um plano é concluído com sucesso
 - `gratis_ai_agent_plan_failed` — disparado quando um plano encontra um erro irrecuperável
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — modifica a lista de habilidades registradas antes que o agente a carregue
 - `gratis_ai_agent_options_blocklist` — estende ou reduz a lista de bloqueio de segurança de opções
 - `gratis_ai_agent_benchmark_questions` — adiciona perguntas de benchmark personalizadas ao conjunto de avaliação
 - `gratis_ai_agent_plan_plugins` — modifica a lista de descoberta de plugins durante a geração do plano do site
 
-## Suporte
+## Suporte {#support}
 
 Para suporte, visite [ultimatemultisite.com](https://ultimatemultisite.com) ou abra um problema no repositório do plugin.
 
-## Changelog
+## Changelog {#changelog}
 
 Consulte o [Changelog](./changelog) para o histórico completo de versões.

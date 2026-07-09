@@ -3,7 +3,7 @@ title: Dil Seçici Changelog
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Dil Seçici Yeniləmə Qeydi
+# Dil Seçici Yeniləmə Qeydi {#language-selector-changelog}
 
 Versiya: 1.1.3 - 2026-05-05 tarixində yayınlandı
 * Düzəliş: Giriş dəyişənləri indi sanitləşdirilir və üçüncü tərəf pluginləri ilə toqquşmaları əngəlləmək üçün xüsusi hook adlarına prefiks əlavə edildi.

@@ -3,7 +3,7 @@ title: '# Hooks и Фильтры'
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Горки и фильтры
+# Ultimate Multisite Горки и фильтры {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite состоит из множества функций и запросов к базе данных. У него есть горки и фильтры, которые позволяют вам изменять или добавлять новый код к существующим функциям.
 

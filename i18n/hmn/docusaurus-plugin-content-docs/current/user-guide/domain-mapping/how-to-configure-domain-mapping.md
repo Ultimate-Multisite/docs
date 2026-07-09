@@ -3,17 +3,17 @@ title: Yuav teeb tsa kev map domain li cas
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Yuav Teeb Domain Mapping Li Cas (v2)
+# Yuav Teeb Domain Mapping Li Cas (v2) {#how-to-configure-domain-mapping-v2}
 
 _**LUS CEEB TOOM TSEEM CEEB: Tsab ntawv no hais txog Ultimate Multisite version 2.x.**_
 
 Ib qho ntawm cov feature muaj zog tshaj plaws ntawm ib lub network premium yog qhov peev xwm muab sijhawm rau peb cov client txuas ib lub domain theem-siab rau lawv cov site. Thaum kawg, qhov twg zoo li professional dua: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) los yog [_**joesbikeshop.com**_](http://joesbikeshop.com)? Yog li ntawd Ultimate Multisite thiaj muab feature ntawd tso nrog lawm, tsis tas yuav siv third-party plugins.
 
-## Domain mapping yog dab tsi?
+## Domain mapping yog dab tsi? {#whats-domain-mapping}
 
 Raws li lub npe qhia, domain mapping yog qhov peev xwm uas Ultimate Multisite muab los txais ib qho kev thov rau custom domain thiab map qhov kev thov ntawd mus rau site uas phim hauv network uas tau txuas nrog domain ntawd.
 
-### Yuav teeb domain mapping rau koj Ultimate Multisite Network li cas
+### Yuav teeb domain mapping rau koj Ultimate Multisite Network li cas {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domain mapping yuav tsum muaj qee qhov kev teeb tsa ntawm koj sab kom nws ua haujlwm. Hmoov zoo, Ultimate Multisite automate cov haujlwm nyuaj rau koj kom koj thiaj ua tau raws li cov kev xav tau yooj yim.
 
@@ -45,7 +45,7 @@ Tab sis ua ntej koj pib map custom domain rau ib qho subsite hauv koj lub networ
 
 ###
 
-### Xyuas kom meej tias domain DNS settings raug configure kom raug
+### Xyuas kom meej tias domain DNS settings raug configure kom raug {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Kom ib qho mapping ua haujlwm, koj yuav tsum xyuas kom meej tias domain uas koj npaj yuav map yog pointing mus rau koj Network tus IP address. Nco ntsoov tias koj xav tau Network IP address - IP address ntawm domain uas Ultimate Multisite raug install - tsis yog IP address ntawm custom domain uas koj xav map. Piv txwv, kom nrhiav IP address ntawm ib lub domain tshwj xeeb, peb pom zoo kom mus rau [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Yog koj muaj teeb meem ua kom qhov no ua haujlwm, **hu rau koj tus domain regist
 
 Yog koj npaj cia koj cov client map lawv tus kheej cov domain, lawv yuav tsum ua haujlwm ntawm feem no lawv tus kheej. Qhia lawv mus rau lawv tus registrar support system yog lawv tsis muaj peev xwm tsim A Record.
 
-### Map custom domain name raws li Super Admin
+### Map custom domain name raws li Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Thaum koj logged in ua super admin hauv koj lub network, koj tuaj yeem ntxiv thiab tswj custom domain names yooj yim los ntawm kev mus rau **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Yog koj nyem rau ntawm lub npe domain, koj yuav pom qee qhov kev xaiv nyob hauv 
 
 **Is Secure?:** Txawm tias Ultimate Multisite kuaj seb lub domain puas muaj SSL certificate lossis tsis muaj ua ntej qhib nws, koj tseem manually xaiv tau kom load lub domain nrog lossis tsis nrog SSL certificate. Nco ntsoov tias yog lub website tsis muaj SSL certificate thiab koj sim yuam kom load nws nrog SSL, tej zaum nws yuav qhia error rau koj.
 
-### Mapping lub npe custom domain ua Subsite user
+### Mapping lub npe custom domain ua Subsite user {#mapping-custom-domain-name-as-subsite-user}
 
 Cov thawj tswj subsite kuj map tau cov npe custom domain ntawm lawv lub subsite admin dashboard thiab.
 
@@ -121,7 +121,7 @@ Tom qab ntawd tus user nyem tau **Next Step** thiab txuas ntxiv mus ntxiv lub np
 
 Nyem **Add Domain** yuav pib tus txheej txheem los verify thiab fetch cov ntaub ntawv DNS ntawm lub custom domain.
 
-### Hais txog Domain Syncing
+### Hais txog Domain Syncing {#about-domain-syncing}
 
 Domain Syncing yog ib tug txheej txheem uas Ultimate Multisite ntxiv lub npe custom domain rau koj tus hosting account ua add-on domain **kom domain mapping ua haujlwm tau**.
 

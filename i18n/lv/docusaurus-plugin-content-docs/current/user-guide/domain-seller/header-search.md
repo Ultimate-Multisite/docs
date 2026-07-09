@@ -3,11 +3,11 @@ title: Galvenes domēna meklēšana
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header domēna meklēšana
+# Header domēna meklēšana {#header-domain-search}
 
 Izmantojiet šo iestatījumu, ja vēlaties nelielu header formu, kas sāk domēna meklēšanu un pēc tam ļauj klientam izvēlēties no pieejamajiem domēniem Ultimate Multisite checkout ietvaros.
 
-## Prasības
+## Prasības {#requirements}
 
 - Ultimate Multisite tīklā aktīvs.
 - Multisite Ultimate Domain Seller tīklā aktīvs.
@@ -16,7 +16,7 @@ Izmantojiet šo iestatījumu, ja vēlaties nelielu header formu, kas sāk domēn
   - Konfigurētiem atbalstītiem TLD, piemēram, `com`, `net` un `org`.
 - Derīga checkout forma ar **Domēna atlase** lauku.
 
-## Checkout forma
+## Checkout forma {#checkout-form}
 
 1. Izveidojiet vai rediģējiet checkout formu, ko izmanto reģistrācijas lapa.
 2. Pievienojiet parastos obligātos checkout/account laukus, tostarp **Lietotājvārds**. Checkout forma, kurā ir tikai domēna lauks, tiek noraidīta Ultimate Multisite validācijā.
@@ -30,7 +30,7 @@ Reģistrācijas lapai jāatveido checkout forma, piemēram:
 [wu_checkout slug="domain-form"]
 ```
 
-## Header forma
+## Header forma {#header-form}
 
 Pievienojiet nelielu `GET` formu vietnes header, kas nosūta ievadīto meklēšanas terminu uz checkout lapu kā `domain_name`:
 
@@ -44,7 +44,7 @@ Pievienojiet nelielu `GET` formu vietnes header, kas nosūta ievadīto meklēša
 
 Neizvēlieties domēnu iepriekš pielāgotā header JavaScript. Header drīkst tikai nodot meklēšanas terminu. Domain Seller checkout skripts nolasa `?domain_name=example`, aizpilda checkout meklēšanas lodziņu un palaiž pieejamības meklēšanu, lai klients varētu izvēlēties no atgrieztajiem domēniem.
 
-## Sagaidāmā darbība
+## Sagaidāmā darbība {#expected-behaviour}
 
 Meklējot `example` header, jāatver:
 
@@ -61,7 +61,7 @@ Pēc tam checkout jāparāda atlasāmi rezultāti, piemēram:
 
 Pēc pieejama rezultāta izvēles pasūtījuma kopsavilkumā jābūt iekļautam domēna reģistrācijas produktam un izvēlētajam domēna vārdam.
 
-## Pārbaude
+## Pārbaude {#verification}
 
 1. Atveriet sākumlapu.
 2. Meklējiet vienkāršu vārdu, piemēram, `example`.
@@ -71,7 +71,7 @@ Pēc pieejama rezultāta izvēles pasūtījuma kopsavilkumā jābūt iekļautam 
 6. Noklikšķiniet uz **Atlasīt** pieejamam domēnam.
 7. Apstipriniet, ka pasūtījuma kopsavilkumā ir `Domain Registration - example.com` vai izvēlētais domēns.
 
-## Problēmu novēršana
+## Problēmu novēršana {#troubleshooting}
 
 - Ja saraksts neparādās, pārbaudiet pārlūka tīkla cilni attiecībā uz `admin-ajax.php?action=wu_domain_search` un apstipriniet, ka tā atgriež netukšus `domains` vai `results`.
 - Ja checkout formas validācija neizdodas saglabāšanas laikā, pievienojiet obligātos account laukus, piemēram, **Lietotājvārds**.

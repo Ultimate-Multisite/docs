@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# افزونه‌های Ultimate Multisite
+# افزونه‌های Ultimate Multisite {#ultimate-multisite-addons}
 
 افزونه‌ها قابلیت‌ها و یکپارچه‌سازی‌های اضافی را به Ultimate Multisite اضافه می‌کنند. اکثر افزونه‌ها پولی هستند و می‌توانید آن‌ها را از [ultimatemultisite.com](https://ultimatemultisite.com) خریداری کنید.
 
-## نصب
+## نصب {#installation}
 
 افزونه‌ها را می‌توان به دو روش نصب کرد:
 
 1. **از طریق صفحه افزونه (Addon Page)** -- به صفحه مدیریت افزونه سایت خود در بخش مدیریت وردپرس بروید.
 2. **دانلود دستی (Manual Download)** -- از [حساب کاربری شما](https://ultimatemultisite.com/my-account/downloads/) دانلود کرده و از طریق Plugins > Add New آپلود کنید.
 
-## افزونه‌های موجود
+## افزونه‌های موجود {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

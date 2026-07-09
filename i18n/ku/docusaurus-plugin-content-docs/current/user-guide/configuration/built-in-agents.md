@@ -3,11 +3,11 @@ title: Agentên Hundirîn
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agentên Navxweyî
+# Agentên Navxweyî {#built-in-agents}
 
 Gratis AI Agent v1.9.0 bi pênc agentên navxweyî tê, her yek ji wan bi komeke amûrên berê ve hatine amadekirin, system promptek taybet, û pêşniyarên destpêkê yên li gorî karên hevpar ên wê qadê hatine saz kirin. Guhertina di navbera agentan de tiştên ku arîkar dikare bike û awayê bersiva wî diguherîne — bêyî tu veavakirinek ji aliyê we ve. Superdav AI Agent v1.18.0 dikare dema entegrasyonên têkildar hatine veavakirin, amûrên haydar ji bernameyê, tomarên bîranînê, dergehên erêkirinê, û agahdariyên SMSê li van herikên karê zêde bike.
 
-## Agent Çi Ye?
+## Agent Çi Ye? {#what-is-an-agent}
 
 Her agent profîleke veavakirinê ya bi nav e ku van tiştan li hev tîne:
 
@@ -15,7 +15,7 @@ Her agent profîleke veavakirinê ya bi nav e ku van tiştan li hev tîne:
 - **System prompt** — rêwerzên ku awaz, pêşîtiyên, û sînorên agent diyar dikin
 - **Pêşniyar** — promptên berê nivîsandî ku di navrûya sohbetê de tên nîşandan da ku hûn zû dest pê bikin
 
-## Gihîştina Hilbijêrê Agentan
+## Gihîştina Hilbijêrê Agentan {#accessing-the-agent-picker}
 
 1. Panela **Gratis AI Agent** di sidebar a rêveberiya WordPress de vekin.
 2. Li **îkona agent** ya li jora-çepê ya sernavê sohbetê bikirtînin (îkon li gorî agentê çalak diguhere).
@@ -24,9 +24,9 @@ Her agent profîleke veavakirinê ya bi nav e ku van tiştan li hev tîne:
 
 Hûn dikarin di nîvê axaftinê de jî agentan biguherînin — system prompt a agentê nû ji peyama din ve bandor dike.
 
-## Pênc Agentên Navxweyî
+## Pênc Agentên Navxweyî {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Baldarî:** Afirandin û sererastkirina nivîs, rûpel, û formên têkiliyê.
 
@@ -47,7 +47,7 @@ Hûn dikarin di nîvê axaftinê de jî agentan biguherînin — system prompt a
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Baldarî:** Afirandina malperê ji serî heta dawî ji yek promptê.
 
@@ -70,7 +70,7 @@ Hûn dikarin di nîvê axaftinê de jî agentan biguherînin — system prompt a
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Baldarî:** Taybetkirina dîtbarî — reng, tîpografî, CSS, û qalibên blokan.
 
@@ -87,7 +87,7 @@ Hûn dikarin di nîvê axaftinê de jî agentan biguherînin — system prompt a
 - *Screenshot a homepageê bigire û ji min re bêje tu çi baştir dikî.*
 - *Qalibeke bloka hero ya ji nû ve bikaranînê biafirîne bi wêneyê paşxaneyê ya firehiya tevahî û sernavê navendî.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Baldarî:** Dîtin, sazkirin, û rêvebirina pluginên WordPress.
 
@@ -105,7 +105,7 @@ Hûn dikarin di nîvê axaftinê de jî agentan biguherînin — system prompt a
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Baldarî:** Bersivdana pirsan li ser naveroka malperê, mîheng, û veavakirina WordPress.
 
@@ -124,7 +124,7 @@ Hûn dikarin di nîvê axaftinê de jî agentan biguherînin — system prompt a
 
 ---
 
-## Yekbûnên Otomasyonê yên Superdav
+## Yekbûnên Otomasyonê yên Superdav {#superdav-automation-integrations}
 
 Dema yekbûnên Superdav AI Agent v1.18.0 hatibin mîhengkirin, ajanên navxweyî dikarin beşdarî herikînên xebatê yên otomasyonê yên ewletir û bi bernameyê re agahdar bibin:
 
@@ -138,11 +138,11 @@ Herikîna xebatê ya pêşniyarkirî: ji ajanê bipirse ku peyam an çalakiyê a
 
 ---
 
-## Taybetkirina Ajanan
+## Taybetkirina Ajanan {#customising-agents}
 
 Her ajanê navxweyî dikare bi rêya filter a `gratis_ai_agent_agents` were berfirehkirin an were guhertin.
 
-### Zêdekirina daxwaznameya pergalê ya taybet li ajanekî heyî
+### Zêdekirina daxwaznameya pergalê ya taybet li ajanekî heyî {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Tomarkirina ajanekî nû
+### Tomarkirina ajanekî nû {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Ajanê nû tavilê piştî ku filter bixebite di Hilbijêrê Ajanê de xuya dibe.
 
-### Rakirina ajanekî navxweyî
+### Rakirina ajanekî navxweyî {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

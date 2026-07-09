@@ -3,11 +3,11 @@ title: Sposobnosti upravljanja pluginovima
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Funkcionalnosti Upravljanja Pluginima
+# Funkcionalnosti Upravljanja Pluginima {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 dolazi sa **7 funkcionalnosti upravljanja pluginima** koje AI asistent može aktivirati tokom razgovora. Ove funkcionalnosti pružaju programski kontrolu nad WordPress pluginovima instaliranim putem [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Pregled Funkcionalnosti
+## Pregled Funkcionalnosti {#abilities-overview}
 
 | Funkcionalnost | Slug | Opis |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 dolazi sa **7 funkcionalnosti upravljanja pluginima** koj
 | Install Plugin | `install_plugin` | Implementira (deployuje) sandboks plugin u živo WordPress direktorijum pluginova. |
 | Activate Plugin | `activate_plugin` | Aktivira sandboks plugin u wp-env sandbox okruženju. |
 
-## API za Instalaciju Pluginova
+## API za Instalaciju Pluginova {#plugin-installer-api}
 
 Instalator pluginova obrađuje operacije na sistemu datoteka prilikom implementacije ili uklanjanja pluginova. Ključne karakteristike su:
 
@@ -28,7 +28,7 @@ Instalator pluginova obrađuje operacije na sistemu datoteka prilikom implementa
 - **Ažuriranje**: Zamjenjuje postojeće plugin datoteke. Deaktivira plugin prije pisanja kako bi se izbjegle greške djelimičnog stanja.
 - **Brisanje po slug-u**: Pronalazi direktorijum plugin-a po slug-u, deaktivira ga na svim sajtovima, a zatim uklanja direktorijum.
 
-### Registracija Prilagođenog Handler-a za Instalaciju
+### Registracija Prilagođenog Handler-a za Instalaciju {#registering-a-custom-install-handler}
 
 Možete se hook-ovati u životni ciklus instalacije koristeći akcije `gratis_ai_plugin_installer_before_install` i `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registry Ekosistema
+## Registry Ekosistema {#ecosystem-registry}
 
 Funkcionalnosti se registruju putem **registryja ekosistema pluginova**. Registry mapira slug-ove funkcionalnosti na njihove handler klase i izlaže ih dispečeru alata AI agenta.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integracija HookScanner-a
+## Integracija HookScanner-a {#hookscanner-integration}
 
 Funkcionalnosti `create_plugin` i `update_plugin` automatski pokreću **HookScanner** na novogeneriranom kodu. HookScanner vraća listu WordPress akcionih i filter hook-ova koje je plugin registrirao.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner automatski preskače direktorijume `vendor/` i `node_modules/`.
 
-## Arhitektura Asinhronih Zadataka
+## Arhitektura Asinhronih Zadataka {#async-job-architecture}
 
 Dugotrajne operacije pluginova (generisanje, instalacija) dispatchuju se kao **asinhroni zadaci** sa praćenjem napretka u realnom vremenu. AI chat interfejs proverava napredak i streamuje statusne ažuriranja korisniku:
 

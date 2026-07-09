@@ -4,20 +4,20 @@ title: Фільтр - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Фільтр: secure_auth_cookie
+# Фільтр: secure_auth_cookie {#filter-secureauthcookie}
 
 Визначає, чи має кукі автентифікації передаватися лише через HTTPS.
 
-## Параметри
+## Параметри {#parameters}
 
 | Ім'я | Тип | Опис |
 |------|------|-------------|
 | $secure | `bool` | Чи має кукі передаватися лише через HTTPS. |
 | $user_id | `int` | Ідентифікатор користувача. |
 
-### З версії
+### З версії {#since}
 
 - 3.1.0
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) на рядку 80

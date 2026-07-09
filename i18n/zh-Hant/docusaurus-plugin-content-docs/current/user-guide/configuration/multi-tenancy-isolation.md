@@ -3,11 +3,11 @@ title: 多租戶隔離
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# 多租戶隔離
+# 多租戶隔離 {#multi-tenancy-isolation}
 
 在多租戶架構中，確保不同客戶（租戶）之間的数据和資源是完全隔離的非常重要。這意味著一個租戶的操作或數據不會影響到另一個租戶的運行或資料安全。WordPress 本身在設計上提供了基礎的多租戶能力，但要實現真正的、強大的隔離，我們需要依賴特定的插件或架構來處理用戶權限、數據分離和環境配置。
 
-## 核心概念：什麼是多租戶隔離？
+## 核心概念：什麼是多租戶隔離？ {#isolation-strategy}
 
 簡單來說，多租戶隔離就是「沙盒化」。每個租戶就像在一個獨立的房間裡運行，他們可以自由地使用自己的資源（如特定的設定、內容或功能），但不會看到或干擾到其他房間裡的內容。
 
@@ -17,11 +17,11 @@ _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 2.  **環境隔離 (Environment Isolation)**：如果可能，為每個租戶提供獨立的設定、主題和外掛環境。
 3.  **權限隔離 (Permission Isolation)**：嚴格控制用戶只能存取其自己租戶的資源。
 
-## 如何實現多租戶隔離？
+## 如何實現多租戶隔離？ {#database-host-binding}
 
 在 WordPress 生態系統中，實現多租戶隔離通常有幾種主要方法：
 
-### 1. 使用專門的多租戶插件 (Recommended Approach)
+### 1. 使用專門的多租戶插件 (Recommended Approach) {#filesystem-root}
 
 這是最常見且最推薦的方法。許多知名的 WooCommerce 或 WordPress 多租戶插件（例如 Ultimate Multisite 的某些進階功能或專門的 SaaS 解決方案）會處理大部分複雜的隔離邏輯，包括：
 
@@ -29,14 +29,14 @@ _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 *   **數據庫分離 (Database Separation)**：在某些高級設定中，插件可以配置不同的資料庫或前綴來物理上分隔數據。
 *   **URL 結構隔離**：確保所有連結都正確地指向各自的租戶目錄。
 
-### 2. 使用子目錄/子網域架構 (Subdirectory/Subdomain Structure)
+### 2. 使用子目錄/子網域架構 (Subdirectory/Subdomain Structure) {#provisioning-order}
 
 對於較輕量的需求，可以利用 WordPress 的標準功能來實現邏輯上的隔離：
 
 *   **子目錄 (Subdirectories)**：例如 `example.com/tenant1` 和 `example.com/tenant2`。這允許您使用不同的設定檔或主題來區分它們，但數據仍然共享同一個主資料庫（需要嚴格的權限控制）。
 *   **子網域 (Subdomains)**：例如 `tenant1.example.com` 和 `tenant2.example.com`。這提供了更強的環境隔離，因為每個租戶可以擁有自己的獨立安裝或設定檔。
 
-### 3. 使用 Hooks 或 Custom Logic 進行細粒度控制
+### 3. 使用 Hooks 或 Custom Logic 進行細粒度控制 {#sovereign-customer-management-flows}
 
 當您需要非常精確地在特定事件（例如用戶登入、內容保存）時執行隔離邏輯，可以使用 WordPress 的 **Hooks** 來編寫自定義程式碼。
 

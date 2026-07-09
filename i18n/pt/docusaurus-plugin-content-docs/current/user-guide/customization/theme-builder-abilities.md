@@ -3,18 +3,18 @@ title: Habilidades do Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Habilidades do Theme Builder: Scaffold e Ativar Temas de Bloco
+# Habilidades do Theme Builder: Scaffold e Ativar Temas de Bloco {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 O Superdav AI Agent v1.12.0 introduz duas habilidades poderosas que permitem gerar e implantar temas de bloco personalizados diretamente na interface de chat.
 
-## Visão Geral
+## Visão Geral {#overview}
 
 As habilidades **scaffold-block-theme** (esboçar tema de bloco) e **activate-theme** (ativar tema) permitem que os agentes:
 - Gerem temas de bloco completos e prontos para produção com base nas suas especificações
 - Ativem temas no seu site automaticamente, sem intervenção manual
 - Criem identidades visuais coesas através de decisões de design guiadas
 
-## Scaffold Block Theme (Esboçar Tema de Bloco)
+## Scaffold Block Theme (Esboçar Tema de Bloco) {#scaffold-block-theme}
 
 A habilidade **scaffold-block-theme** gera um novo tema de bloco do WordPress com uma estrutura completa, incluindo:
 
@@ -23,7 +23,7 @@ A habilidade **scaffold-block-theme** gera um novo tema de bloco do WordPress co
 - Estilos e variações de blocos personalizados
 - Metadados do tema e declarações de suporte
 
-### Como Invocar
+### Como Invocar {#how-to-invoke}
 
 Na sua conversa com o Superdav AI Agent, você pode solicitar a geração de um tema:
 
@@ -38,7 +38,7 @@ O agente fará o seguinte:
 3. Criar todos os arquivos necessários do tema
 4. Preparar o tema para ativação
 
-### Saída Esperada
+### Saída Esperada {#expected-output}
 
 Quando a habilidade é executada com sucesso, você verá:
 
@@ -56,11 +56,11 @@ Exemplo de saída:
   Status: Pronto para ativar
 ```
 
-## Activate Theme (Ativar Tema)
+## Activate Theme (Ativar Tema) {#activate-theme}
 
 A habilidade **activate-theme** muda seu site para um tema recém-estruturado ou existente.
 
-### Como Invocar
+### Como Invocar {#how-to-invoke-1}
 
 Depois de estruturar um tema, você pode ativá-lo imediatamente:
 
@@ -74,7 +74,7 @@ Ou ativar qualquer tema existente:
 "Mudar para o Twentytwentyfour theme"
 ```
 
-### Saída Esperada
+### Saída Esperada {#expected-output-1}
 
 Quando a ativação for bem-sucedida:
 
@@ -92,7 +92,7 @@ Exemplo de saída:
   Nota: Verifique sua página inicial para confirmar o layout
 ```
 
-## Fluxo de Trabalho: Estruturar e Ativar
+## Fluxo de Trabalho: Estruturar e Ativar {#workflow-scaffold-and-activate}
 
 Um fluxo de trabalho típico combina ambas as habilidades:
 
@@ -102,7 +102,7 @@ Um fluxo de trabalho típico combina ambas as habilidades:
 4. **Ativar**: "Ativar o tema agora"
 5. **Verificar**: Visite seu site para confirmar que o novo design está ativo
 
-## Tokens de Design e Personalização
+## Tokens de Design e Personalização {#design-tokens-and-customization}
 
 Temas estruturados usam tokens de design do WordPress (via `theme.json`) para:
 
@@ -114,9 +114,9 @@ Temas estruturados usam tokens de design do WordPress (via `theme.json`) para:
 
 Estes tokens ficam centralizados no `theme.json`, facilitando o ajuste de todo o seu sistema de design a partir de um único arquivo.
 
-## Limitações e Observações
+## Limitações e Observações {#limitations-and-notes}
 
-## Solução de Problemas
+## Solução de Problemas {#troubleshooting}
 
 **O tema não aparece após o scaffolding (estrutura inicial)**
 - Verifique se o diretório do tema existe e tem as permissões corretas
@@ -133,7 +133,7 @@ Estes tokens ficam centralizados no `theme.json`, facilitando o ajuste de todo o
 - Limpe quaisquer plugins de cache
 - Verifique se a sua versão do WordPress suporta os tokens que você está usando
 
-## Próximos Passos
+## Próximos Passos {#next-steps}
 
 Após ativar o seu tema, você pode:
 - Usar a habilidade **Design System Aesthetics** para refinar tipografia, cores e espaçamento

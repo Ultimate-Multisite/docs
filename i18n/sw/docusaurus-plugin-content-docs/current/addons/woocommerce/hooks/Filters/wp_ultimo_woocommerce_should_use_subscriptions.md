@@ -4,22 +4,22 @@ title: Filter - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# Filter: wp_ultimo_woocommerce_should_use_subscriptions
+# Filter: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
 
 Inaruhusu developers kulazimisha matumizi ya WooCommerce Subscriptions.
 
 Kwa msingi (by default), add-on hii inakagua kama (1) WooCommerce Subscriptions ipo (iwe ni plugin kamili au sehemu ya core), kisha (2) inakagua mipangilio inayowezesha matumizi ya WooCommerce Subscriptions.
 
-## Vigezo (Parameters)
+## Vigezo (Parameters) {#parameters}
 
 | Name | Type | Maelezo |
 |------|------|-------------|
 | $enable_woocommerce_subscription_integration | `bool` | Ikiwa kwa sasa tunahitaji kutumia Woo Subs. |
 | $woo_gateway | `\WP_Ultimo_WooCommerce\Gateways\WooCommerce_Gateway` | Kifaa (object) kilicho sasa. |
 
-### Chanzo (Source)
+### Chanzo (Source) {#source}
 
 Imefafanuliwa katika [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L361) kwenye mstari wa 361.
 
-## Inarejesha (Returns)
+## Inarejesha (Returns) {#returns}
 `true` kutumia WooCommerce Subs, na `false` kutotumia.

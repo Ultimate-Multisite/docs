@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Addon Ultimate Multisite
+# Addon Ultimate Multisite {#ultimate-multisite-addons}
 
 Addon ngembangaké Ultimate Multisite nganggo fitur lan integrasi tambahan. Umume addon iku mbayar lan bisa dituku saka [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Instalasi
+## Instalasi {#installation}
 
 Addon bisa diinstal nganggo rong cara:
 
 1. **Liwat Kaca Addon** -- Bukak kaca pangelolaan addon situs sampeyan ing admin WordPress
 2. **Undhuhan Manual** -- Undhuh saka [Account sampeyan](https://ultimatemultisite.com/my-account/downloads/) lan unggah liwat Plugin > Tambah Anyar
 
-## Addon sing Kasedhiya
+## Addon sing Kasedhiya {#available-addons}
 
 | Addon | Katrangan |
 |-------|-------------|

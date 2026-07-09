@@ -3,11 +3,11 @@ title: Registre de canvis
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Registre de canvis
+# Registre de canvis {#changelog}
 
-## 1.18.0 — Publicat el 2026-06-29
+## 1.18.0 — Publicat el 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Nou
+### Nou {#new}
 
 - **Eines de Google Calendar** — llegeixen calendaris i esdeveniments configurats per a automatitzacions conscients de l'horari
 - **Assignació de contactes i ajudants d'assistents** — relacionen els participants del calendari amb usuaris i contactes del lloc
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Proveïdor d'SMS TextBee** — envia notificacions de missatges de text configurades mitjançant TextBee
 - **Paquet complementari avançat** — afegeix eines de sistema de fitxers per a desenvolupadors de confiança, base de dades, WP-CLI, despatxador REST, creador de plugins, instantània git, gestió d'usuaris i benchmark distribuïdes per separat de la compilació de WordPress.org
 
-### Millorat
+### Millorat {#improved}
 
 - **Configuració del servei Superdav gestionat** — afegeix endpoints de servei allotjats i aprovisionament automàtic de connexions per als llocs compatibles
 - **Empaquetament de la versió** — crea ZIPs separats del nucli i avançats, publica tots dos a GitHub i envia només el paquet del nucli a WordPress.org
 
-### Corregit
+### Corregit {#fixed}
 
 - **Fiabilitat de les sol·licituds d'IA** — millora la selecció del model, els temps d'espera de les sol·licituds, el model de configuració predeterminat, el tractament del text de raonament i l'orientació de reintent per a crides d'eines no vàlides
 - **Reforç de calendaris i recordatoris** — reforça els tokens de Google Calendar i la deduplicació de recordatoris
 - **Incorporació i represes d'aprovació** — corregeix els llançaments d'incorporació al frontend i les represes d'habilitats confirmades
 - **Problemes de revisió de l'empaquetament de WordPress.org** — aborda els comentaris de revisió de l'empaquetament per a la versió del nucli
 
-## 1.16.0 — Publicat el 2026-05-20
+## 1.16.0 — Publicat el 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Nou
+### Nou {#new-1}
 
 - **Habilitat Generate Logo SVG** — Theme Builder ara pot generar i incrustar SVGs de logotip personalitzats amb sanejament segur per a espais de noms
 - **Pujada de fotos a l'entrevista de descobriment** — l'entrevista de descobriment de Theme Builder ara inclou un pas de pujada de fotos per a un context de disseny més ric
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Paràmetre d'etiqueta de navegació** — l'habilitat Create Menu ara admet un `navigation_label` diferent, separat del títol de la pàgina
 - **Disponibilitat d'eina de nivell 1** — sd-ai-agent/site-scrape ara és una eina de nivell 1 disponible per defecte a Theme Builder
 
-### Corregit
+### Corregit {#fixed-1}
 
 - **Caché d'AI Client** — ara està respaldada per transients per a persistència entre sol·licituds, evitant la pèrdua de dades en tasques d'agent de llarga durada
 - **Enllaços d'accions de fila del plugin** — corregits i reanomenats per a més claredat
 
-## 1.10.0 — Publicat el 2026-05-05
+## 1.10.0 — Publicat el 2026-05-05 {#1100--released-on-2026-05-05}
 
-### Nou
+### Nou {#new-2}
 
 - **Cerca a internet Tavily** — afegeix Tavily com a proveïdor de cerca per a resultats de cerca a internet més rics juntament amb Brave Search
 - **Habilitats integrades conscients del theme** — les guies d'habilitats de Block Themes, Classic Themes, Kadence Blocks i Kadence Theme ara s'inclouen amb el plugin
 - **Habilitat de formulari de contacte del creador de llocs** — afegeix un formulari de contacte a qualsevol pàgina directament des de la interfície de xat
 
-### Millorat
+### Millorat {#improved-1}
 
 - **Integració de WooCommerce refactoritzada** — ara utilitza les APIs natives de WooCommerce per a una millor fiabilitat i compatibilitat
 - **La llista de proveïdors s'actualitza automàticament** — quan s'activa o es desactiva qualsevol plugin
 
-### Corregit
+### Corregit {#fixed-2}
 
 - **Habilitat navigate-to** — corregit un bucle de recàrrega infinit en algunes pàgines d'administració
 - **Habilitat list-posts** — ara resol correctament els noms de categories i etiquetes a slugs

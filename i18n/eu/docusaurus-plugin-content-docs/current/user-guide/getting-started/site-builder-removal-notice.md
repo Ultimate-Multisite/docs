@@ -3,13 +3,13 @@ title: Site Builder Moduaren Eraboligunea Iraitzia
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Moduaren Ezabatzea Batzagarria
+# Site Builder Moduaren Ezabatzea Batzagarria {#site-builder-mode-removal-notice}
 
 **Site Builder modua daude Superdav AI Agent v1.12.0-an arautzen.** Site Builder modua erabiltzen duten dela, tema dezazteko eta site bat argiatzeko **Setup Assistant agent**-era migraatu behar duzu.
 
-## Zer Ekin Arriskatzen?
+## Zer Ekin Arriskatzen? {#what-happened}
 
-### Site Builder Modua (Legacy)
+### Site Builder Modua (Legacy) {#site-builder-mode-legacy}
 
 Site Builder modua daue:
 
@@ -18,7 +18,7 @@ Site Builder modua daue:
 - Tema bat aukeratzeko
 - Lehen kontuentu bat argiatzeko
 
-### Zer Aurre egin?
+### Zer Aurre egin? {#what-replaced-it}
 
 **Setup Assistant agent**-ek arau guztia Site Builder funtzioak eskaintzen du:
 
@@ -27,15 +27,15 @@ Site Builder modua daue:
 - Theme Builder-rekin integrazioa
 - Irrendeko sesioetara ireki sitie $site_brief memory
 
-## Site Builder Modua Erbigoan Zuzenean
+## Site Builder Modua Erbigoan Zuzenean {#if-you-were-using-site-builder-mode}
 
-### Siteak Segura dira
+### Siteak Segura dira {#your-sites-are-safe}
 
 - Siteak Site Builder modua erabiliz ezarritak jarraitzen du
 - Data dezazte edo sitea disturbitzeko problema ez daude
 - Siteak normalmentu jartzen jarraitu dezake
 
-### Setup Assistant Agent-era Migraatu
+### Setup Assistant Agent-era Migraatu {#migrate-to-setup-assistant-agent}
 
 Sitea berria argiatzeko edo tema aldatzeko, Setup Assistant agenta erabiliz:
 
@@ -51,7 +51,7 @@ nondra
 
 Setup Assistant agentak irrendeko funtzioak eskaintzen du, baina moduan handiagoa.
 
-## Ezkutzea: Site Builder vs. Setup Assistant
+## Ezkutzea: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Karakteristika | Site Builder (Erbigoan) | Setup Assistant (Beria) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agentak irrendeko funtzioak eskaintzen du, baina moduan handiago
 | Sesioetara irrendeko | Argipena berria | Stored site_brief erabiliz |
 | Moduan handiagoa | Workflow ezarrituta | Batzagarri adaptoa conversation |
 
-## Setup Assistant Agent-era Migraatu
+## Setup Assistant Agent-era Migraatu {#migrating-to-setup-assistant-agent}
 
-### Siteak Berriak
+### Siteak Berriak {#for-new-sites}
 
 (Eskerrik asko, aipatzen da)
 
@@ -78,7 +78,7 @@ Site Builder modua erin:
    - Theme generazioa
    - Aurrerako konfiguratzea
 
-### Iragatik Siteak (For Existing Sites)
+### Iragatik Siteak (For Existing Sites) {#for-existing-sites}
 
 Iragatik Site Builder modua eratu du:
 
@@ -87,7 +87,7 @@ Iragatik Site Builder modua eratu du:
 3. Le Setup Assistant agent-ek theme berria emandareko lagundu.
 4. Webgaitaren datuak ez aldatzen da.
 
-### Theme Aldaketa (For Theme Changes)
+### Theme Aldaketa (For Theme Changes) {#for-theme-changes}
 
 Site Builder moduan themea iragatik:
 
@@ -97,9 +97,9 @@ Site Builder moduan themea iragatik:
    - Custom theme bat emandareko
    - Webgaitaren itxarretan aktibatu
 
-## Gaurren Aurreko Errakundeak (Key Differences)
+## Gaurren Aurreko Errakundeak (Key Differences) {#key-differences}
 
-### Site Builder Modua
+### Site Builder Modua {#site-builder-mode}
 
 ```
 1. Templatea aukeratu du
@@ -108,7 +108,7 @@ Site Builder moduan themea iragatik:
 4. Lan gertu du
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Webgaitaren aurrera eta objetivoak hitzlaraz endikatu du
@@ -119,42 +119,42 @@ Site Builder moduan themea iragatik:
 6. Iragatik datua iragatik ezarritako sesioetan bitarteko ematuta dago
 ```
 
-## Setup Assistant Agentaren Errakundeak (Benefits of Setup Assistant Agent)
+## Setup Assistant Agentaren Errakundeak (Benefits of Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Gehiago Flexibilia (More Flexible)
+### Gehiago Flexibilia (More Flexible) {#more-flexible}
 
 - Webgaitaren hitzlaraz endikatu du
 - Custom rekomendazioak hartu du
 - Itxarretako beharrezko espezifikazioetara adapto da
 
-### Hobitzak Eragiten (Better Customization)
+### Hobitzak Eragiten (Better Customization) {#better-customization}
 
 - Custom theme generazioa
 - Design system erabakiak
 - Persistente design tokens
 
-### Memoria Persistente (Persistent Memory)
+### Memoria Persistente (Persistent Memory) {#persistent-memory}
 
 - Webgaitaren `site_brief` iragatik ezarritako da
 - Iragatik agent-ek webgaitaren erantzunak jartzen du
 - Aurrerako konfiguratzeko informazioa iragatik ez du beharrezkoa
 
-### Fluxu Integratua (Integrated Workflow)
+### Fluxu Integratua (Integrated Workflow) {#integrated-workflow}
 
 - Theme Builder onboarding
 - Design System Aesthetics skill
 - Visibility controls erabilera
 - Hau guztiek ezberdinetan bat egiten dute
 
-## Iragatik Errakundeak (Troubleshooting)
+## Iragatik Errakundeak (Troubleshooting) {#troubleshooting}
 
-### Site Builder Modua ez aurkitzen dutena
+### Site Builder Modua ez aurkitzen dutena {#i-cant-find-site-builder-mode}
 
 Site Builder modua arau daiteke. Le Setup Assistant agenta erabili:
 
 "Ekin dut leku daitea leku webgune berri"
 
-### Site Builder-tik situa bat lortu nahi du
+### Site Builder-tik situa bat lortu nahi du {#i-want-to-recreate-a-site-from-site-builder}
 
 Site Builder-tik situa berri ere erabiliziek:
 
@@ -163,7 +163,7 @@ Site Builder-tik situa berri ere erabiliziek:
 3. Agenteak tema bat jartuzten du
 4. Aapena `site_brief` daitea zukua eginduz
 
-### Situa dagoen Site Builder-tik ez dut
+### Situa dagoen Site Builder-tik ez dut {#my-existing-site-builder-site-isnt-working}
 
 Site Builder moduarekin ezarritutako sitiat ez dute jarraitzen jakin. Problema bat erabiliziek:
 
@@ -172,7 +172,7 @@ Site Builder moduarekin ezarritutako sitiat ez dute jarraitzen jakin. Problema b
 3. WordPress error logs-ek ikustu
 4. Problema bat jarraituz dutenean suporta berriko
 
-### Zure Site Builder-tik joanariak erabiltzen dezake?
+### Zure Site Builder-tik joanariak erabiltzen dezake? {#can-i-still-use-my-old-site-builder-templates}
 
 Site Builder-tik joanariak ez daiteke erabiliziek. Hau beti dagoen:
 
@@ -180,14 +180,14 @@ Site Builder-tik joanariak ez daiteke erabiliziek. Hau beti dagoen:
 - Setup Assistant agentearekin jartuzten sitiat jartuzten du
 - Setup Assistant agenteak gehiago aukerak ematen du
 
-## Irudiak (Next Steps)
+## Irudiak (Next Steps) {#next-steps}
 
 1. **Situa berriak**: Setup Assistant agenta erabiliz
 2. **Situa dagoen jakin**: Hau beti dagoen bezala erabiltu
 3. **Tema aldatzeko**: Setup Assistant agenteari laguntza eskatzen du
 4. **Diseinu hobetzeko**: Design System Aesthetics skill-a erabiliz
 
-## Errelakoki Errelakoki (Related Topics)
+## Errelakoki Errelakoki (Related Topics) {#related-topics}
 
 - **Theme Builder Onboarding**: Tema zuzen bat jartuzten leku bat
 - **Setup Assistant Agent**: Agentearekin jartuzten sitiat jartuzten leku bat

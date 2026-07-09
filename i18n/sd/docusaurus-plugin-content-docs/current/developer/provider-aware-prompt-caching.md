@@ -3,11 +3,11 @@ title: فراهم ڪندڙ کان باخبر پرامپٽ ڪيشنگ
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# مهيا ڪندڙ-آگاهه Prompt Caching
+# مهيا ڪندڙ-آگاهه Prompt Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 **مهيا ڪندڙ-آگاهه prompt caching** متعارف ڪرائي ٿو، جيڪو مختلف LLM مهيا ڪندڙن ۾ prompts کي cache ڪري API خرچن ۽ latency کي بهتر بڻائي ٿو. هر مهيا ڪندڙ وٽ مختلف caching طريقا ۽ ترتيبون آهن.
 
-## جائزو
+## جائزو {#overview}
 
 Prompt caching توهان کي اجازت ڏئي ٿي ته:
 
@@ -23,11 +23,11 @@ Prompt caching توهان کي اجازت ڏئي ٿي ته:
 - **OpenRouter**: مهيا ڪندڙ-مخصوص caching
 - **Vertex Anthropic**: cache control سان Prompt caching
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini `cachedContents` API ذريعي واضح cache management فراهم ڪري ٿو.
 
-### ترتيب
+### ترتيب {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Cached Prompt ٺاهڻ
+### Cached Prompt ٺاهڻ {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Cached Prompt استعمال ڪرڻ
+### Cached Prompt استعمال ڪرڻ {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache Lifecycle
+### Cache Lifecycle {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini لاءِ بهترين عمل
+### Gemini لاءِ بهترين عمل {#best-practices-for-gemini}
 
 - **مناسب TTL مقرر ڪريو**: خرچ جي بچت ۽ cache جي پراڻپ ۾ توازن رکو
 - **system prompts cache ڪريو**: requests ۾ ساڳيو system prompt ٻيهر استعمال ڪريو
 - **cache جي استعمال جي نگراني ڪريو**: ڏسو ڪهڙا caches سڀ کان وڌيڪ استعمال ٿين ٿا
 - **مدو پورو ٿيل caches صاف ڪريو**: غير استعمال ٿيل caches وقت بوقت حذف ڪريو
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI خودڪار TTL management سان prompt caching جي حمايت ڪري ٿو.
 
-### ترتيب
+### ترتيب {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Caching فعال ڪرڻ
+### Caching فعال ڪرڻ {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Headers
+### Cache Headers {#cache-headers}
 
 Azure OpenAI cache control لاءِ HTTP headers استعمال ڪري ٿو:
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: هن request کي cache نه ڪريو
 - `no_store`: cache نه ڪريو ۽ ٻيهر استعمال نه ڪريو
 
-### Cache Usage جي نگراني
+### Cache Usage جي نگراني {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Azure OpenAI لاءِ بهترين عمل
+### Azure OpenAI لاءِ بهترين عمل {#best-practices-for-azure-openai}
 
 - **هڪجهڙا prompts استعمال ڪريو**: ساڳيا prompts caching مان فائدو وٺن ٿا
 - **مناسب TTL مقرر ڪريو**: خرچ ۽ تازگي ۾ توازن رکو
 - **cache metrics جي نگراني ڪريو**: cache ٺهڻ ۽ hits کي track ڪريو
 - **ساڳيا requests batch ڪريو**: cache hits وڌائڻ لاءِ requests کي گروهه بڻايو
 
-## OpenRouter: مهيا ڪندڙ-مخصوص Caching
+## OpenRouter: مهيا ڪندڙ-مخصوص Caching {#openrouter-provider-specific-caching}
 
 OpenRouter هيٺين مهيا ڪندڙن (OpenAI، Anthropic، وغيره) ذريعي caching جي حمايت ڪري ٿو.
 
-### ترتيب
+### ترتيب {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Caching استعمال ڪرڻ
+### OpenRouter Caching استعمال ڪرڻ {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### مهيا ڪندڙ-مخصوص Options
+### مهيا ڪندڙ-مخصوص Options {#provider-specific-options}
 
 مختلف مهيا ڪندڙن وٽ مختلف caching طريقا آهن:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter لاءِ بهترين عمل
+### OpenRouter لاءِ بهترين عمل {#best-practices-for-openrouter}
 
 - **پنهنجي مهيا ڪندڙ جي caching ڄاڻو**: هر مهيا ڪندڙ وٽ مختلف طريقا آهن
 - **caching behavior آزمائيو**: پنهنجي چونڊيل مهيا ڪندڙ سان caching ڪم ڪري ٿي يا نه، تصديق ڪريو
 - **خرچن جي نگراني ڪريو**: caching مان ٿيندڙ بچت کي track ڪريو
 - **هڪجهڙا models استعمال ڪريو**: models تبديل ڪرڻ cache hits کي ٽوڙي ڇڏي ٿو
 
-## Vertex Anthropic: Cache Control سان Prompt Caching
+## Vertex Anthropic: Cache Control سان Prompt Caching {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) واضح cache control سان prompt caching جي حمايت ڪري ٿو.
 
-### ترتيب
+### ترتيب {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic ڪيشنگ استعمال ڪرڻ
+### Vertex Anthropic ڪيشنگ استعمال ڪرڻ {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### ڪيش ڪنٽرول جا قسم
+### ڪيش ڪنٽرول جا قسم {#cache-control-types}
 
 - **ephemeral**: درخواست جي مدت لاءِ ڪيش (ڊفالٽ)
 - **persistent**: ڪيترين ئي درخواستن ۾ ڪيش (جيڪڏهن سهائتا ٿيل هجي)
 
-### ڪيش جي استعمال جي نگراني
+### ڪيش جي استعمال جي نگراني {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic لاءِ بهترين طريقا
+### Vertex Anthropic لاءِ بهترين طريقا {#best-practices-for-vertex-anthropic}
 
 - **ephemeral caching استعمال ڪريو**: هڪڙي سيشن جي ڪيشنگ لاءِ سٺو
 - **max_tokens مناسب طور سيٽ ڪريو**: ڪيش سائيز ۽ لاڳت ۾ توازن رکو
 - **ڪيش ميٽرڪس جي نگراني ڪريو**: ڪيش جي اثرائتيت ٽريڪ ڪريو
 - **پنهنجي workload سان ٽيسٽ ڪريو**: تصديق ڪريو ته ڪيشنگ توهان جي استعمال واري حالت کي فائدو ڏئي ٿي
 
-## فراهم ڪندڙن جي وچ ۾ ڪيشنگ حڪمت عملي
+## فراهم ڪندڙن جي وچ ۾ ڪيشنگ حڪمت عملي {#cross-provider-caching-strategy}
 
-### متحد Configuration
+### متحد Configuration {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### فراهم ڪندڙ جي سڃاڻپ
+### فراهم ڪندڙ جي سڃاڻپ {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### متبادل حڪمت عملي
+### متبادل حڪمت عملي {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## لاڳت جي بهتري
+## لاڳت جي بهتري {#cost-optimization}
 
-### بچت جو حساب ڪريو
+### بچت جو حساب ڪريو {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### بهتري جون صلاحون
+### بهتري جون صلاحون {#optimization-tips}
 
 - **وڏا system prompts ڪيش ڪريو**: سڀ کان وڏي لاڳت بچت
 - **context ٻيهر استعمال ڪريو**: اڪثر استعمال ٿيندڙ context دستاويز ڪيش ڪريو
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **ڪيش جي اثرائتيت جي نگراني ڪريو**: حقيقي بچت ٽريڪ ڪريو
 - **TTL ترتيب ڏيو**: لاڳت ۽ تازگي ۾ توازن رکو
 
-## مسئلا حل ڪرڻ
+## مسئلا حل ڪرڻ {#troubleshooting}
 
-### ڪيش استعمال نه ٿي رهي آهي
+### ڪيش استعمال نه ٿي رهي آهي {#cache-not-being-used}
 
 - تصديق ڪريو ته configuration ۾ ڪيشنگ فعال آهي
 - چيڪ ڪريو ته prompts هڪجهڙا آهن (ڪيشنگ لاءِ بلڪل ساڳيو match گهربل آهي)
 - تصديق ڪريو ته ڪيش expire نه ٿي آهي
 - فراهم ڪندڙ-مخصوص ڪيش حدون چيڪ ڪريو
 
-### ڪيش ٺاهڻ ناڪام ٿي رهيو آهي
+### ڪيش ٺاهڻ ناڪام ٿي رهيو آهي {#cache-creation-failing}
 
 - تصديق ڪريو ته ڪيش سائيز فراهم ڪندڙ جي حدن اندر آهي
 - چيڪ ڪريو ته ڪيش ڪنٽرول syntax صحيح آهي
 - پڪ ڪريو ته فراهم ڪندڙ توهان جي model لاءِ ڪيشنگ کي support ڪري ٿو
 - حدن لاءِ فراهم ڪندڙ جي documentation جو جائزو وٺو
 
-### اڻڄاتل لاڳتون
+### اڻڄاتل لاڳتون {#unexpected-costs}
 
 - ڪيش ٺاهڻ ۽ ڪيش پڙهڻ وارن tokens جي نگراني ڪريو
 - تصديق ڪريو ته ڪيش واقعي استعمال ٿي رهي آهي
 - prompt variations سبب ڪيش misses لاءِ چيڪ ڪريو
 - TTL يا ڪيش حڪمت عملي ترتيب ڏيڻ تي غور ڪريو
 
-## فراهم ڪندڙن جو مقابلو
+## فراهم ڪندڙن جو مقابلو {#provider-comparison}
 
 | خاصيت | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | لاڳت ۾ گهٽتائي | 90% | 90% | فراهم ڪندڙ تي دارومدار | 90% |
 | نگراني | تفصيلي | metrics ذريعي | فراهم ڪندڙ تي دارومدار | usage ذريعي |
 
-## ايندڙ قدم
+## ايندڙ قدم {#next-steps}
 
 1. **پنهنجو فراهم ڪندڙ چونڊيو**: پنهنجي ضرورتن جي بنياد تي چونڊيو
 2. **ڪيشنگ configure ڪريو**: فراهم ڪندڙ-مخصوص ڪيشنگ سيٽ اپ ڪريو

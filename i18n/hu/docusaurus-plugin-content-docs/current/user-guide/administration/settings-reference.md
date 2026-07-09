@@ -3,11 +3,11 @@ title: Beállítási referencia
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Beállítások referenciája
+# Beállítások referenciája {#settings-reference}
 
 Ez az oldal azokat a beállításokat követi, amelyek befolyásolják a napi adminisztrációt és az Ultimate Multisite legutóbbi viselkedésbeli változásait.
 
-## Egyéb beállítások
+## Egyéb beállítások {#other-options}
 
 Az **Egyéb beállítások** terület az **Ultimate Multisite > Settings > Login & Registration** alatt jelenik meg.
 
@@ -15,23 +15,23 @@ Az **Egyéb beállítások** terület az **Ultimate Multisite > Settings > Login
 |---|---|
 | **Enable Jumper** | Megjeleníti a Jumper gyors navigációs eszközt az admin területen. Használd arra, hogy közvetlenül az Ultimate Multisite képernyőire, hálózati objektumokra és támogatott admin célokra ugorj. Tiltsd le, ha nem szeretnéd, hogy ez a parancsikon látható legyen. |
 
-## Hibajelentés és telemetria
+## Hibajelentés és telemetria {#error-reporting-and-telemetry}
 
 A korábbi hibajelentési feliratkozási beállítás el lett távolítva a beállítások oldaláról. Az anonim telemetria le van tiltva, és nincs UI kapcsoló az engedélyezéséhez.
 
 Ha belső runbookokat vagy képernyőképeket tartasz karban a beállítások oldalához, távolítsd el a régi hibajelentési feliratkozási mezőre való hivatkozásokat, hogy az adminisztrátorok ne keressenek egy már nem létező beállítást.
 
-## Import/Export beállítások
+## Import/Export beállítások {#importexport-settings}
 
 Az **Import/Export** beállítási fül leírja, mely beállításokat vezérli, és közvetlenül az **Ultimate Multisite > Site Export** oldalra hivatkozik a site- és hálózati archívumokhoz. Használd a beállítási fület az import/export konfigurációhoz, használd a **Tools > Export & Import** részt az egyetlen site-os export/import munkafolyamathoz, és használd a Site Export eszközt, ha teljes Network Export archívumra van szükséged.
 
-## Domain Seller HostAfrica egyenlegfigyelmeztetés
+## Domain Seller HostAfrica egyenlegfigyelmeztetés {#domain-seller-hostafrica-balance-warning}
 
 Amikor a Domain Seller addon csatlakozik a HostAfrica szolgáltatáshoz, a hálózati adminisztrátorok most elvethető alacsony egyenlegre figyelmeztető üzenetet látnak, ha a viszonteladói Account egyenlege túl alacsony a megbízható domainregisztrációs vagy megújítási feldolgozáshoz.
 
 Kezeld ezt az értesítést működési figyelmeztetésként: töltsd fel a HostAfrica viszonteladói egyenleget, mielőtt további fizetős domainregisztrációkat fogadnál el, majd térj vissza a Domain Seller beállításaihoz vagy a domainfigyelő képernyőre annak megerősítéséhez, hogy a regisztrációk és megújítások normálisan folytatódhatnak.
 
-## AI-szolgáltatói csatlakozó beállításai
+## AI-szolgáltatói csatlakozó beállításai {#ai-provider-connector-settings}
 
 Az AI-szolgáltatói csatlakozó beállításai mostantól csak a támogatott OAuth Account poolokat jelenítik meg:
 

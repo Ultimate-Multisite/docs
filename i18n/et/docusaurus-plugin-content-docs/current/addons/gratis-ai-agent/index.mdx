@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent on autonoomne WordPressi AI-assistent, mis suudab loomulikus keeles antud juhiste põhjal planeerida, ehitada ja hallata terviklikke WordPressi saite. See pakub struktureeritud kogumit **võimekusi** — eraldiseisvaid, testitavaid tegevusi, mida agent saab käivitada — hõlmates kõike alates sisuhaldusest kuni disainisüsteemi kohandamiseni. Versioon 1.9.0 lisab sisu loomise võimekused, lehtede visuaalse ülevaatuse kliendipoolsete ekraanitõmmiste kaudu, viis sisseehitatud agendiprofiili ning funktsioonilipud juurdepääsu juhtimiseks ja brändimiseks.
 
-## Põhifunktsioonid
+## Põhifunktsioonid {#key-features}
 
 - **Võimekuste süsteem** — modulaarne ja laiendatav tegevuste kataloog, mida agent saab sinu WordPressi paigalduses käivitada
 - **Sisuhaldus** — loo postitusi ja lehti (sh määra lehemalle), loo ühe kutsega mitu postitust korraga, määra esiletõstetud pilte ja ehita kontaktivorme
@@ -28,21 +28,21 @@ Gratis AI Agent on autonoomne WordPressi AI-assistent, mis suudab loomulikus kee
 - **Site Builder Orchestration v2** — mitmeetapilised saidi ehitamise plaanid koos plugin-otsingu, edenemise jälgimise ja vigadest taastumisega
 - **WP-CLI jõudlustesti käsk** — käivita käsurealt agendi võimekuste jõudlustestide komplekt CI ja mudeli hindamise jaoks
 
-## Nõuded
+## Nõuded {#requirements}
 
 - WordPress 6.0 või uuem
 - PHP 8.1 või uuem
 - WordPress Multisite (võrgus aktiveeritud) või ühe saidi paigaldus
 - Aktiivne AI-teenusepakkuja ühendusplugin (Anthropic, OpenAI või ühilduv)
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 1. Laadi plugin-failid üles asukohta `/wp-content/plugins/gratis-ai-agent`
 2. Aktiveeri plugin WordPressis ekraanil **Pluginad**
 3. Liigu jaotisse **Gratis AI Agent → Seaded** ja ühenda oma AI-teenusepakkuja
 4. (Valikuline) Sirvi **Võimekuste registrit**, et paigaldada täiendavaid võimekuste pakette
 
-## Kiirstart
+## Kiirstart {#quick-start}
 
 Kui plugin on aktiveeritud ja AI-teenusepakkujaga ühendatud, ava WordPressi halduse külgribal paneel **Gratis AI Agent**. Sisesta loomulikus keeles juhis ning agent planeerib ja täidab vajalikud sammud, kasutades oma saadaolevaid võimekusi.
 
@@ -60,7 +60,7 @@ Lisa teemasse tumeda režiimi värvipalett ja määra põhivärviks #1a1a2e.
 Ehita restorani veebisait veebimenüü, broneerimisvormi ja kontaktilehega.
 ```
 
-## Võimekuste ülevaade
+## Võimekuste ülevaade {#abilities-overview}
 
 Võimekused on aatomilised tegevused, mida agent saab teha. Iga võimekus on registreeritud PHP-klass, mis pakub skeemi (parameetrid ja tagastustüübid), mida agent käitusajal loeb. Võimekused on rühmitatud funktsionaalseteks valdkondadeks:
 
@@ -79,7 +79,7 @@ Võimekused on aatomilised tegevused, mida agent saab teha. Iga võimekus on reg
 
 Täieliku parameetrite dokumentatsiooni ja kasutusnäidete jaoks vaata [Võimekuste viidet](./abilities).
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent sisaldab käsuperekonda `wp gratis-ai-agent` jõudlustestide käivitamiseks ja võimekuste haldamiseks käsurealt. Täieliku käsuloendi jaoks vaata [WP-CLI viidet](./wp-cli).
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfiguratsioon
+## Konfiguratsioon {#configuration}
 
 Kõik seaded asuvad WordPressi halduses jaotises **Gratis AI Agent → Seaded**:
 
@@ -106,7 +106,7 @@ Kõik seaded asuvad WordPressi halduses jaotises **Gratis AI Agent → Seaded**:
 | **Võimekuse ajalõpp** | Maksimaalne sekundite arv, mille jooksul üksik võimekus võib töötada (vaikimisi 30) |
 | **Silumislogimine** | Logi võimekuste kutsed ja agendi arutluskäik WordPressi silumislogisse |
 
-## Valikute halduse turvablokeerimisloend
+## Valikute halduse turvablokeerimisloend {#options-management-safety-blocklist}
 
 Options Management võimekus sisaldab sisseehitatud blokeerimisloendit, mis takistab agendil lugeda või kirjutada tundlikke WordPressi valikuid. Vaikimisi blokeerimisloend hõlmab:
 
@@ -118,26 +118,26 @@ Options Management võimekus sisaldab sisseehitatud blokeerimisloendit, mis taki
 
 Täiendavaid kirjeid saab lisada filtri `gratis_ai_agent_options_blocklist` kaudu.
 
-## Haakpunktid ja filtrid
+## Haakpunktid ja filtrid {#hooks-and-filters}
 
-### Toimingud
+### Toimingud {#actions}
 
 - `gratis_ai_agent_ability_registered` — käivitatakse pärast võimekuse registreerimist, saab võimekuse klassi nime
 - `gratis_ai_agent_plan_started` — käivitatakse siis, kui saidiehitaja plaani täitmine algab
 - `gratis_ai_agent_plan_completed` — käivitatakse siis, kui plaan lõpeb edukalt
 - `gratis_ai_agent_plan_failed` — käivitatakse siis, kui plaanis tekib taastamatu viga
 
-### Filtrid
+### Filtrid {#filters}
 
 - `gratis_ai_agent_abilities` — muuda registreeritud võimekuste loendit enne, kui agent selle laadib
 - `gratis_ai_agent_options_blocklist` — laienda või vähenda valikute turvalisuse blokeerimisloendit
 - `gratis_ai_agent_benchmark_questions` — lisa hindamiskomplekti kohandatud võrdlustesti küsimusi
 - `gratis_ai_agent_plan_plugins` — muuda pluginate avastamise loendit saidiplaani genereerimise ajal
 
-## Tugi
+## Tugi {#support}
 
 Toe saamiseks külasta [ultimatemultisite.com](https://ultimatemultisite.com) või ava probleem plugina repositooriumis.
 
-## Muudatuste logi
+## Muudatuste logi {#changelog}
 
 Täieliku versiooniajaloo jaoks vaata [muudatuste logi](./changelog).

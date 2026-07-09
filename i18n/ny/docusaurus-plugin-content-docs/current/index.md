@@ -4,25 +4,25 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Zolemba za Ultimate Multisite
+# Zolemba za Ultimate Multisite {#ultimate-multisite-documentation}
 
 Takulandirani ku zolemba za Ultimate Multisite. Ultimate Multisite imasintha WordPress Multisite kukhala nsanja yathunthu ya Website as a Service (WaaS).
 
-## Magawo a Zolemba
+## Magawo a Zolemba {#documentation-sections}
 
-### [Buku la Wogwiritsa Ntchito](/user-guide/getting-started/ultimate-multisite-101)
+### [Buku la Wogwiritsa Ntchito](/user-guide/getting-started/ultimate-multisite-101) {#user-guide}
 
 Chilichonse chimene mukufunikira kuti mukhazikitse, mukonze, ndi kuyang'anira nsanja yanu ya WaaS. Zimaphatikizapo kukhazikitsa, ma gateway olipirira, kulumikiza ma domain, kasamalidwe ka makasitomala, ndi zina zambiri.
 
-### [Zolemba za Opanga](/developer/hooks)
+### [Zolemba za Opanga](/developer/hooks) {#developer-documentation}
 
 Buku laukadaulo la opanga omwe akumanga pa Ultimate Multisite. Zimaphatikizapo cholozera cha hooks, zolemba za REST API, ndi malangizo opangira addon.
 
-### [Addons](/addons)
+### [Addons](/addons) {#addons}
 
 Zolemba za addon plugins zolipidwa zomwe zimakulitsa Ultimate Multisite ndi zinthu zina monga kuphatikizana kwa WooCommerce, analytics, kugulitsa ma domain, ndi zina zambiri.
 
-## Kupeza Thandizo
+## Kupeza Thandizo {#getting-help}
 
 - [Zokambirana za GitHub](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) -- Funsani mafunso ndi kugawana malingaliro
 - [GitHub Issues](https://github.com/Ultimate-Multisite/ultimate-multisite/issues) -- Nenani zolakwika

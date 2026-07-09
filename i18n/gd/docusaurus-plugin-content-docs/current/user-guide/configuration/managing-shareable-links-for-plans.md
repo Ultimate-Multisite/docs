@@ -3,7 +3,7 @@ title: A' chùlnaidhean lìnne a' chlàradh airson planan
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# A' chlàradhchail liathairte (Shareable Links) airson Planaidhean
+# A' chlàradhchail liathairte (Shareable Links) airson Planaidhean {#managing-shareable-links-for-plans}
 
 Creidich Ultimate Multisite a tha e option airson a' chlàradhchail liathairte (shareable links) gu sònraich agad agad air daoine. Gu h-a bhith a' cheannach, rinn gu pàirt a' chlàradhchail agad air daoine agus cluich air an t-aithris: _Click to copy the Shareable Link_.
 

@@ -3,13 +3,13 @@ title: Ödeme Alanı ve Müşteri DNS'i
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Alanı ve Müşteri DNS Yönetimi
+# Checkout Alanı ve Müşteri DNS Yönetimi {#checkout-field-and-customer-dns-management}
 
-## Alan Adı Seçimi checkout alanı
+## Alan Adı Seçimi checkout alanı {#the-domain-selection-checkout-field}
 
 **Alan Adı Seçimi** alanı, müşterilere sitelerinin alan adını nasıl alacaklarına dair bir seçenek sunan bir checkout öğesidir. Alan adı satışını etkinleştirmek için herhangi bir checkout formuna ekleyin.
 
-### Alanı bir checkout formuna ekleme
+### Alanı bir checkout formuna ekleme {#adding-the-field-to-a-checkout-form}
 
 1. **Network Admin › Ultimate Multisite › Checkout Forms** bölümüne gidin
 2. Bir checkout formu açın veya oluşturun
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Alan seçeneklerini yapılandırın (aşağıya bakın)
 6. Formu kaydedin
 
-### Alan seçenekleri
+### Alan seçenekleri {#field-options}
 
 **Alan adı modları** — Müşterinin hangi sekmeleri göreceğini seçin. Her mod bağımsız olarak etkinleştirilebilir veya devre dışı bırakılabilir:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Alan adı ürünü** — İsteğe bağlı olarak bu alanı belirli bir alan adı ürününe sabitleyin. Ayarlanmazsa addon, müşterinin aradığı TLD’ye göre eşleşen ürünü otomatik olarak seçer.
 
-### Alan adı sahibi iletişim alanları
+### Alan adı sahibi iletişim alanları {#registrant-contact-fields}
 
 Bir müşteri **Yeni Alan Adı Kaydet** sekmesini seçtiğinde, checkout formu alan adı sahibi iletişim alanlarını satır içinde ekler:
 
@@ -43,11 +43,11 @@ Bir müşteri **Yeni Alan Adı Kaydet** sekmesini seçtiğinde, checkout formu a
 
 Bunlar tüm registrar’lar tarafından zorunlu tutulur ve kayıt API çağrısı yapılmadan önce doğrulanır. Telefon numaraları, registrar’ların beklediği `+CC.NNN` uluslararası biçimine otomatik olarak formatlanır.
 
-### Otomatik oluşturulan site URL’si
+### Otomatik oluşturulan site URL’si {#auto-generated-site-url}
 
 Bir müşteri bir alan adı kaydettiğinde veya eşlediğinde, site URL alanı seçilen alan adından otomatik olarak doldurulur. Müşterilerin ayrı bir URL alanı doldurması gerekmez.
 
-### Arama davranışı
+### Arama davranışı {#search-behaviour}
 
 - Alan adı uygunluğu, müşteri yazarken AJAX ile gerçek zamanlı olarak kontrol edilir
 - Tercih edilen alan adı uygun olmadığında alternatif TLD önerileri gösterilir
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Müşteri DNS yönetimi
+## Müşteri DNS yönetimi {#customer-dns-management}
 
 Müşteriler, kayıtlı alan adları için DNS kayıtlarını **My Account** sayfasından, alan adlarının girişi altında yönetebilir.
 
-### Desteklenen kayıt türleri
+### Desteklenen kayıt türleri {#supported-record-types}
 
 | Tür | Kullanım |
 |---|---|
@@ -91,11 +91,11 @@ Müşteriler, kayıtlı alan adları için DNS kayıtlarını **My Account** say
 | **MX** | Mail exchange sunucusunu ayarlayın |
 | **TXT** | SPF, DMARC, doğrulama veya diğer metin kayıtları ekleyin |
 
-### Hangi sağlayıcılar DNS yönetimini destekler?
+### Hangi sağlayıcılar DNS yönetimini destekler? {#which-providers-support-dns-management}
 
 DNS yönetimi (kayıt ekleme, düzenleme, silme) **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** ve **Openprovider** ile kullanılabilir. **Hostinger** alan adları, Domain Seller üzerinden nameserver’ları güncelleyebilir; barındırılan alan adları için DNS kayıtları, çekirdek Hostinger alan adı eşleme entegrasyonu tarafından yönetilir. Namecheap, GoDaddy ve NameSilo alan adları durum ve sona erme bilgilerini gösterir, ancak DNS doğrudan registrar’ın kontrol panelinden yönetilmelidir.
 
-### Varsayılan DNS kayıtları
+### Varsayılan DNS kayıtları {#default-dns-records}
 
 Bir alan adı kaydedildiğinde otomatik olarak uygulanan varsayılan DNS kayıtlarını yapılandırabilirsiniz. **Settings › Domain Seller › Default DNS Records** bölümüne gidin.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS görüntüleme ve düzenleme
+### Admin: DNS görüntüleme ve düzenleme {#admin-viewing-and-editing-dns}
 
 Network admin’ler, **Network Admin › Ultimate Multisite › Domains** içindeki alan adı düzenleme sayfasından herhangi bir müşteri alan adı için DNS kayıtlarını görüntüleyebilir ve düzenleyebilir.

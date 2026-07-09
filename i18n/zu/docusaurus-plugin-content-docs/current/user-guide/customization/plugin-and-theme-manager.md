@@ -3,7 +3,7 @@ title: Umphathi wama-Plugin nama-Theme
 sidebar_position: 11
 _i18n_hash: 12308e3f7d1aa025d7dc4088496e3ad8
 ---
-# Umphathi Wezandiso Nezingqikithi
+# Umphathi Wezandiso Nezingqikithi {#plugin-and-theme-manager}
 
 Lesi sici sihlinzekwa isengezo se-**Umphathi Wezandiso Nezingqikithi**.
 

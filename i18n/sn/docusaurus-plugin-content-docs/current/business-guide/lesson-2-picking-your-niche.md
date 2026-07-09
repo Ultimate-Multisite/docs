@@ -3,19 +3,19 @@ title: 'Chidzidzo 2: Kusarudza musika wako wakasarudzika'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Chidzidzo 2: Kusarudza Musika Wako Wakatarwa
+# Chidzidzo 2: Kusarudza Musika Wako Wakatarwa {#lesson-2-picking-your-niche}
 
 MuChidzidzo 1 takasimbisa kuti nei musika wakatarwa uchikunda zvakajairika. Iye zvino unofanira kusarudza wako. Chidzidzo ichi chinokupa hwaro hwekutsvaga nekuongorora musika wakatarwa usati waisa nguva pakuvakira iwoyo.
 
-## Patakapedzisira
+## Patakapedzisira {#where-we-left-off}
 
 Takatsanangura pfungwa yeFitSite: chikuva chemawebsite chemastudio efitenesi. Asi takasvika sei pamastudio efitenesi chaizvo? Chidzidzo ichi chinokufambisa nemaitiro acho kuitira kuti ugone kuashandisa kutsvaga musika wako wakatarwa.
 
-## Zvinhu Zvitatu Zvinodiwa
+## Zvinhu Zvitatu Zvinodiwa {#the-three-criteria}
 
 Musika wakatarwa wakanaka wechikuva chemawebsite unosangana nemamiriro matatu:
 
-### 1. Vanoda Mawebsite asi Vanonetsekana Kuwana Akanaka
+### 1. Vanoda Mawebsite asi Vanonetsekana Kuwana Akanaka {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Tsvaga maindasitiri apo:
 
@@ -26,7 +26,7 @@ Tsvaga maindasitiri apo:
 
 **Mastudio efitenesi anokodzera**: nhengo dzinotarisira kuwana mashejuru emakirasi, mitengo, uye booking online. Mawebsite mazhinji emastudio akasakara kana akavakwa pamatemplate akajairika asingashandiri chinangwa.
 
-### 2. Mabhizinesi Anokwanisa Kubhadhara Subscription Yepamwedzi
+### 2. Mabhizinesi Anokwanisa Kubhadhara Subscription Yepamwedzi {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Vatengi vako vaunonanga vanofanira kuva:
 
@@ -36,7 +36,7 @@ Vatengi vako vaunonanga vanofanira kuva:
 
 **Mastudio efitenesi anokodzera**: vanotobhadhara software yebooking, kugadzirisa mubhadharo, uye maturusi ekushambadzira. Website subscription kuwedzera kwechisikigo.
 
-### 3. Vanotaurirana
+### 3. Vanotaurirana {#3-they-talk-to-each-other}
 
 Misika yakatarwa yakanakisisa ine:
 
@@ -46,9 +46,9 @@ Misika yakatarwa yakanakisisa ine:
 
 **Mastudio efitenesi anokodzera**: varidzi vemastudio vanopinda zviitiko zveindasitiri yefitenesi, vanotora chikamu munharaunda dzepaonline, uye vanowanzogovana maturusi nemasevhisi nevamwe vavo.
 
-## Maitiro Ekutsvaga Vangave Misika Yakatarwa
+## Maitiro Ekutsvaga Vangave Misika Yakatarwa {#how-to-find-niche-candidates}
 
-### Tanga Nezvaunoziva
+### Tanga Nezvaunoziva {#start-with-what-you-know}
 
 Ruzivo rwauinarwo kare ibhenefiti. Funga nezve:
 
@@ -56,7 +56,7 @@ Ruzivo rwauinarwo kare ibhenefiti. Funga nezve:
 - Zvinokuvaraidza kana zvaunofarira apo unonzwisisa nharaunda yacho
 - Manetwork ehunyanzvi aunotova nhengo yawo
 
-### Tsvaga Zviratidzo Zvemarwadzo
+### Tsvaga Zviratidzo Zvemarwadzo {#look-for-pain-signals}
 
 Tsvaga humbowo hwekuti mabhizinesi mumusika wakatarwa anonetseka nemawebsite:
 
@@ -65,7 +65,7 @@ Tsvaga humbowo hwekuti mabhizinesi mumusika wakatarwa anonetseka nemawebsite:
 - Tarisa mawebsite chaiwo mumusika wakatarwa -- mazhinji awo akaipa here?
 - Tarisa kana vakwikwidzi varipo uye kuti vanoshandira musika zvakanaka zvakadii
 
-### Ongorora Economics
+### Ongorora Economics {#evaluate-the-economics}
 
 Pamumwe nemumwe angave musika wakatarwa, fungidzira:
 
@@ -73,11 +73,11 @@ Pamumwe nemumwe angave musika wakatarwa, fungidzira:
 - **Kuda kubhadhara**: Parizvino vanoshandisa marii pamaturusi akafanana?
 - **Mikana yeukoshi hwehupenyu hwese**: Mabhizinesi aya akadzikama here, kana kuti anobuda nekukurumidza?
 
-## Kusimbisa Musika Wako Wakatarwa
+## Kusimbisa Musika Wako Wakatarwa {#validating-your-niche}
 
 Usati wavaka chero chinhu, simbisa kudiwa:
 
-### Taura Nevangangove Vatengi
+### Taura Nevangangove Vatengi {#talk-to-potential-customers}
 
 Svika kuvaridzi vemabhizinesi 10-15 mumusika wako waunonanga. Bvunza:
 
@@ -88,17 +88,17 @@ Svika kuvaridzi vemabhizinesi 10-15 mumusika wako waunonanga. Bvunza:
 
 Hausati wave kutengesa. Uri kuteerera.
 
-### Tarisa Mamiriro Evakwikwidzi
+### Tarisa Mamiriro Evakwikwidzi {#check-competitor-landscape}
 
 - **Hapana vakwikwidzi**: Zvinogona kureva kuti hapana kudiwa, kana kuti zvinogona kureva mukana usati wabatwa. Hurukuro nevatengi dzichakuudza kuti ndechipi.
 - **Vakwikwidzi vashoma**: Chiratidzo chakanaka. Chinosimbisa kudiwa. Dzidza zvavanoita zvakanaka uye pavanokundikana.
 - **Vakwikwidzi vakawanda**: Zvakaoma kupinda, asi zvichiri kugoneka kana uchikwanisa kuzvisiyanisa zvakajeka.
 
-### Vaka Landing Page
+### Vaka Landing Page {#build-a-landing-page}
 
 Usati wavaka chikuva, gadzira landing page iri nyore inotsanangura mhinduro yako yemusika wakatarwa uye unganidza kunyoresa kweemail. Mhanyisa kushambadza kushoma kwakanangwa kuti uedze kufarira. Kana vanhu vakanyoresa, une kusimbiswa.
 
-## Kushandisa Izvi kuFitSite
+## Kushandisa Izvi kuFitSite {#applying-this-to-fitsite}
 
 Hezvino kuti FitSite yakawana sei pamaitiro acho:
 
@@ -112,7 +112,7 @@ Hezvino kuti FitSite yakawana sei pamaitiro acho:
 
 Kusimbisa kwakaratidza mukana wacho. Iye zvino tinovaka.
 
-## Pfungwa dzeMisika Yakatarwa Dzekufunga Nezvadzo
+## Pfungwa dzeMisika Yakatarwa Dzekufunga Nezvadzo {#niche-ideas-to-consider}
 
 Kana fitenesi isiri musika wako, heano mamwe misika yakatarwa inosangana nemaitiro acho:
 
@@ -127,7 +127,7 @@ Kana fitenesi isiri musika wako, heano mamwe misika yakatarwa inosangana nemaiti
 
 Chimwe nechimwe chezvi izvi chine maitiro akafanana: zvinodiwa zvewebsite zvakajeka, kugona kubhadhara, uye kutaurirana kwenharaunda nemuromo.
 
-## Zvatakavaka Muchidzidzo Ichi
+## Zvatakavaka Muchidzidzo Ichi {#what-we-built-this-lesson}
 
 - **Hwaro hwekusarudza musika wakatarwa**: zvinhu zvitatu zvekuyera chero musika wakatarwa
 - **Nzira dzekusimbisa**: hurukuro nevatengi, kuongorora vakwikwidzi, kuyedza landing page

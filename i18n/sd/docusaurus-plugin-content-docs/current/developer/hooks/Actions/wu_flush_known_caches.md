@@ -4,10 +4,10 @@ title: عمل - wu_flush_known_caches
 sidebar_label: wu_flush_known_caches
 _i18n_hash: bfe84286e3bd8d31846f6800c0954148
 ---
-# عمل: wu_flush_known_caches
+# عمل: wu_flush_known_caches {#action-wuflushknowncaches}
 
 اضافي صفائي سان ڳنڍيو
 
-### ذريعو
+### ذريعو {#source}
 
 [`inc/managers/class-cache-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-cache-manager.php#L49) ۾ قطار 49 تي بيان ٿيل آهي

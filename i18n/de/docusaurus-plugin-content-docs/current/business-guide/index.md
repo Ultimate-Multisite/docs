@@ -3,13 +3,13 @@ title: Ein Nischen-Website-Geschäft aufbauen
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ein Nischen-Website-Geschäft mit Ultimate Multisite aufbauen
+# Ein Nischen-Website-Geschäft mit Ultimate Multisite aufbauen {#build-a-niche-website-business-with-ultimate-multisite}
 
 Die meisten Leute, die versuchen, Websites zu verkaufen, konkurrieren beim Preis mit Wix, Squarespace und Tausenden von Freelancern. Und sie verlieren. Diejenigen, die gewinnen, wählen ein spezifisches Publikum, bauen eine Lösung, die auf dieses Publikum zugeschnitten ist, und verlangen dafür einen Preis, der dem Wert entspricht, den sie liefern.
 
 Dieser Kurs zeigt Ihnen, wie Sie genau das mit Ultimate Multisite tun können.
 
-## Was Sie aufbauen werden
+## Was Sie aufbauen werden {#what-you-will-build}
 
 Im Laufe dieses Kurses bauen Sie ein echtes, funktionierendes Netzwerk namens **FitSite** – eine Website-Plattform, die speziell für Fitnessstudios, Personal Trainer und Fitnessstudio-Betreiber entwickelt wurde.
 
@@ -23,7 +23,7 @@ Bis zur letzten Lektion wird FitSite eine komplette Nischenplattform sein mit:
 
 Sie folgen Schritt für Schritt, und am Ende haben Sie nicht nur eine funktionierende Plattform, sondern auch das Wissen, um diesen Prozess für jede Nische zu replizieren, die Sie wählen.
 
-## Warum Fitnessstudios?
+## Warum Fitnessstudios? {#why-fitness-studios}
 
 Wir brauchten ein konkretes Beispiel, das jeder nachvollziehen kann. Fitnessstudios funktionieren, weil:
 
@@ -34,7 +34,7 @@ Wir brauchten ein konkretes Beispiel, das jeder nachvollziehen kann. Fitnessstud
 
 Alles, was Sie beim Aufbau von FitSite lernen, lässt sich direkt auf jede Nische übertragen, die Sie wählen: Restaurants, Immobilienmakler, Anwaltskanzleien, Kirchen, Handwerksbetriebe oder jede andere Branche.
 
-## Kursstruktur
+## Kursstruktur {#course-structure}
 
 Jede Lektion stellt ein Konzept vor, erklärt, warum es wichtig ist, und führt Sie durch die Implementierung in das FitSite-Netzwerk. Jede Lektion baut auf der vorherigen auf.
 
@@ -55,7 +55,7 @@ Jede Lektion stellt ein Konzept vor, erklärt, warum es wichtig ist, und führt 
 | [13. Scaling Up](lesson-13-growth) | Vom ersten Kunden zu einem echten Geschäft wachsen | FitSite-Wachstums- und Automatisierungsstrategie |
 | [14. What Comes Next](lesson-14-whats-next) | Expansion auf angrenzende Nischen und neue Möglichkeiten | Ihre Roadmap über FitSite hinaus |
 
-## Voraussetzungen
+## Voraussetzungen {#prerequisites}
 
 - Eine WordPress Multisite-Installation (oder die Bereitschaft, eine einzurichten)
 - Eine aktive Ultimate Multisite Lizenz
@@ -63,6 +63,6 @@ Jede Lektion stellt ein Konzept vor, erklärt, warum es wichtig ist, und führt 
 
 Programmieren ist nicht erforderlich. Wenn Sie Ultimate Multisite noch nie verwendet haben, ist das in Ordnung – Lektion 3 beginnt mit einer frischen Installation.
 
-## Bereit?
+## Bereit? {#ready}
 
 Beginnen Sie mit [Lektion 1: Warum die Zielgruppenansprache besser ist als der Verkauf generischer Websites](lesson-1-why-niche).

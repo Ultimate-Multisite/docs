@@ -3,11 +3,11 @@ title: Integracja wielodzierżawowości
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integracja wielodzierżawności
+# Integracja wielodzierżawności {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 zmienia kilka punktów styku integracji dla suwerennych dzierżawców, weryfikacji migracji i automatyzacji cyklu życia dzierżawcy.
 
-## Przepływ inicjalizacji dzierżawcy
+## Przepływ inicjalizacji dzierżawcy {#tenant-bootstrap-flow}
 
 Integracje, które tworzą lub modyfikują dzierżawców, powinny przestrzegać tej kolejności:
 
@@ -20,13 +20,13 @@ Integracje, które tworzą lub modyfikują dzierżawców, powinny przestrzegać 
 
 Nie zakładaj, że suwerenny dzierżawca może ponownie użyć połączenia z bazą danych sieci. Używaj rejestru dzierżawców i abstrakcji mechanizmu zapisu dostarczanych przez dodatek.
 
-## Hooki SSO i REST
+## Hooki SSO i REST {#sso-and-rest-hooks}
 
 Bezstanowe automatyczne logowanie dzierżawcy używa krótkotrwałych tokenów z deklaracją celu, ochroną przed ponownym użyciem JTI, limitem wygaśnięcia i przypięciem pochodzenia. Integracje, które dodają przyciski logowania lub linki zdalnego zarządzania, powinny generować wizyty dzierżawcy przez obsługiwany przepływ SSO zamiast bezpośrednio konstruować adresy URL logowania dzierżawcy.
 
 Zdarzenia audytu API po stronie sieci i codzienne podsumowania są dostępne dla bram suwerennych dzierżawców. Używaj tych logów podczas debugowania systemów zewnętrznych, które wywołują endpointy cyklu życia dzierżawcy.
 
-## Adresy URL działań klienta suwerennego
+## Adresy URL działań klienta suwerennego {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 kieruje działania klientów suwerennych dzierżawców z powrotem do głównej witryny dla przepływów Account, checkout, rozliczeń, faktur, witryny, przełączania szablonów i mapowania domen. Integracje, które renderują linki zarządzania po stronie dzierżawcy, powinny kierować te działania do panelu klienta głównej witryny i uwzględniać zweryfikowany cel powrotu, gdy użytkownik powinien mieć możliwość powrotu do dzierżawcy po ukończeniu działania.
 
@@ -40,7 +40,7 @@ Wygenerowany adres URL pozostaje filtrowalny przez `wu_sso_url`, który otrzymuj
 
 Nie duplikuj stanu członkostwa, faktur, adresu rozliczeniowego, szablonu ani zarządzania domeną wewnątrz suwerennego dzierżawcy. Traktuj dashboard dzierżawcy jako program uruchamiający, a panel klienta głównej witryny jako system referencyjny dla zarządzanych działań.
 
-## Weryfikacja migracji
+## Weryfikacja migracji {#migration-verification}
 
 Po tym, jak migracja lub integracja cyklu życia zmieni dane dzierżawcy, uruchom bramki weryfikacyjne:
 
@@ -49,10 +49,10 @@ Po tym, jak migracja lub integracja cyklu życia zmieni dane dzierżawcy, urucho
 
 Integracje powinny traktować nieudaną weryfikację jako blokadę wdrożenia i unikać oznaczania dzierżawcy jako aktywnego, dopóki błąd nie zostanie rozwiązany.
 
-## Usuwanie dzierżawcy
+## Usuwanie dzierżawcy {#tenant-deletion}
 
 Przepływy usuwania powinny wywoływać ścieżkę demontażu dodatku, aby poświadczenia bazy danych dzierżawcy zostały wyczyszczone. Integracje zewnętrzne mogą usuwać zasoby dostawcy po pomyślnym zakończeniu demontażu, ale nie powinny usuwać baz danych ani folderów hosta, gdy weryfikacja lub asynchroniczne zadania push nadal działają.
 
-## Przestarzały router bazy danych
+## Przestarzały router bazy danych {#deprecated-database-router}
 
 Starszy `Database_Router` został zastąpiony atrapą wycofania. Nowe integracje powinny ustalać dzierżawców przez aktualne API routera witryny i rejestru dzierżawców, zamiast polegać na starej klasie routera.

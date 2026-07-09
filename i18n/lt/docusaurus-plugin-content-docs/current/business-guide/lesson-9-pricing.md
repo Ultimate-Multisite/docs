@@ -3,17 +3,17 @@ title: '9 pamoka: Kainodara siekiant pelno'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 9 pamoka: kainodara pelnui
+# 9 pamoka: kainodara pelnui {#lesson-9-pricing-for-profit}
 
 5 pamokoje nustatėme pradines FitSite planų kainas. Dabar patobulinsime kainodaros strategiją metodais, kurie didina pajamas, skatina planų atnaujinimus ir mažina klientų pasitraukimą.
 
-## Kur baigėme
+## Kur baigėme {#where-we-left-off}
 
 FitSite jau turi planus, šablonus, atsiskaitymą, prekių ženklo pritaikymą ir įvedimą. Pradinė kainodara buvo $49/$99/$199 per mėnesį. Dabar priversime šią kainodarą veikti efektyviau.
 
-## Kainodaros principai nišinėms platformoms
+## Kainodaros principai nišinėms platformoms {#pricing-principles-for-niche-platforms}
 
-### Kainą nustatykite pagal vertę, o ne sąnaudas
+### Kainą nustatykite pagal vertę, o ne sąnaudas {#price-on-value-not-cost}
 
 Jūsų prieglobos sąnaudos gali būti $5-$15 už kliento svetainę. Tai nereiškia, kad jūsų kaina turėtų būti $20. Jūs neparduodate prieglobos. Jūs parduodate:
 
@@ -24,7 +24,7 @@ Jūsų prieglobos sąnaudos gali būti $5-$15 už kliento svetainę. Tai nereiš
 
 Kainą nustatykite pagal vertę, kurią suteikiate, o ne pagal jos suteikimo sąnaudas.
 
-### Lyginkite su alternatyvomis
+### Lyginkite su alternatyvomis {#anchor-to-alternatives}
 
 Kai fitneso studijos savininkas vertina FitSite, jis lygina ją su:
 
@@ -34,7 +34,7 @@ Kai fitneso studijos savininkas vertina FitSite, jis lygina ją su:
 
 Už $49-$199/mėn. FitSite yra pigesnė nei kūrėjas, pajėgesnė nei bendros paskirties kūrimo įrankiai ir nepalyginamai geresnė nei jokios svetainės neturėjimas.
 
-## Kainų variantų įgyvendinimas
+## Kainų variantų įgyvendinimas {#implementing-price-variations}
 
 Metinė kainodara skatina įsipareigojimą ir mažina klientų pasitraukimą. Eikite į kiekvieno plano skirtuką **Kainos variantai** ir pridėkite metines parinktis:
 
@@ -46,12 +46,12 @@ Metinė kainodara skatina įsipareigojimą ir mažina klientų pasitraukimą. Ei
 
 Pridėkite **Laikotarpio pasirinkimo** lauką į savo atsiskaitymo formą, kad klientai galėtų perjungti mėnesinį ir metinį apmokestinimą. Žr. [Atsiskaitymo formos](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Kodėl metinė kainodara veikia
+### Kodėl metinė kainodara veikia {#why-annual-pricing-works}
 
 - **Jums**: Išankstiniai pinigai, mažesnis klientų pasitraukimas (klientai, kurie moka kasmet, rečiau nutraukia prenumeratą laikotarpio viduryje)
 - **Jiems**: Tikras sutaupymas, biudžeto prognozuojamumas
 
-## Nustatymo mokesčiai
+## Nustatymo mokesčiai {#setup-fees}
 
 Apsvarstykite vienkartinį nustatymo mokestį planams, kuriuose įtraukta praktinė konfigūracija:
 
@@ -61,7 +61,7 @@ Apsvarstykite vienkartinį nustatymo mokestį planams, kuriuose įtraukta prakti
 
 Sukonfigūruokite nustatymo mokesčius kiekvieno plano kainodaros skiltyje. Daugiau informacijos žr. [Pirmojo prenumeratos produkto kūrimas](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Bandomieji laikotarpiai
+## Bandomieji laikotarpiai {#trial-periods}
 
 Bandomojo laikotarpio siūlymas sumažina registracijos trintį, bet sukuria riziką, kad klientas nekonvertuos. FitSite atveju:
 
@@ -70,11 +70,11 @@ Bandomojo laikotarpio siūlymas sumažina registracijos trintį, bet sukuria riz
 
 Sukonfigūruokite bandomąjį laikotarpį Starter plano kainodaros skiltyje, įjungdami **Siūlyti bandomąjį laikotarpį** jungiklį ir nustatydami 7 dienų trukmę.
 
-### Kaip paversti bandomuosius laikotarpius konversijomis
+### Kaip paversti bandomuosius laikotarpius konversijomis {#making-trials-convert}
 
 Bandomasis laikotarpis veikia tik tada, kai klientas per jį patiria vertę. Jūsų įvedimo seka (8 pamoka) čia yra kritiškai svarbi -- pasveikinimo el. laiškai turėtų būti suplanuoti taip, kad skatintų įsitraukimą per 7 dienų langą.
 
-## Nuolaidų kodai
+## Nuolaidų kodai {#discount-codes}
 
 Sukurkite strateginius nuolaidų kodus konkretiems tikslams:
 
@@ -88,7 +88,7 @@ Eikite į **Ultimate Multisite > Discount Codes**, kad juos sukurtumėte. Išsam
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Mokesčių tvarkymas
+## Mokesčių tvarkymas {#tax-handling}
 
 Jei veikiate jurisdikcijoje, kurioje reikalaujama rinkti mokesčius:
 
@@ -98,7 +98,7 @@ Jei veikiate jurisdikcijoje, kurioje reikalaujama rinkti mokesčius:
 
 Išsamią konfigūraciją žr. [Mokesčių tvarkymas](/user-guide/payment-gateways/tax-handling). Jei aptarnaujate klientus tarptautiniu mastu, apsvarstykite [VAT addon](/addons/vat), skirtą ES atitikčiai.
 
-## Kainodaros peržiūra
+## Kainodaros peržiūra {#reviewing-your-pricing}
 
 Po paleidimo peržiūrėkite kainodarą kas ketvirtį. Atkreipkite dėmesį į:
 
@@ -107,7 +107,7 @@ Po paleidimo peržiūrėkite kainodarą kas ketvirtį. Atkreipkite dėmesį į:
 - **Klientų pasitraukimą pagal planą**: Jei metiniai klientai pasitraukia rečiau, aktyviau skatinkite metinę kainodarą
 - **Konkurentų kainodarą**: Kiek ima alternatyvos? Ar esate pozicionuoti teisingai?
 
-## FitSite tinklas iki šiol
+## FitSite tinklas iki šiol {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Metinė kainodara** su 20 % nuolaida, skatinanti įsipareigoti
 - **Setup mokesčiai** aukštesniuose pakopose, kad būtų padengtos onboarding pastangos

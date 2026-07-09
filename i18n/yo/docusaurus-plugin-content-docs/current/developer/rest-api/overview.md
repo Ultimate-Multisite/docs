@@ -3,28 +3,28 @@ title: Akopọ REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Ìtọ́kasí REST API
+# Ìtọ́kasí REST API {#rest-api-reference}
 
-## Ìṣètò Ìpìlẹ̀
+## Ìṣètò Ìpìlẹ̀ {#base-configuration}
 
 **URL Ìpìlẹ̀:** `{site_url}/wp-json/wu/v2/`
 **Ìjẹ́rìísí:** Bọtini API & Aṣírí (HTTP Basic Auth tàbí Parameters URL)
 
-## Ìjẹ́rìísí
+## Ìjẹ́rìísí {#authentication}
 
-### Mú API ṣiṣẹ́
+### Mú API ṣiṣẹ́ {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Gba Àwọn Ẹ̀rí API
+### Gba Àwọn Ẹ̀rí API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Àwọn Ọ̀nà Ìjẹ́rìísí
+### Àwọn Ọ̀nà Ìjẹ́rìísí {#authentication-methods}
 
 **HTTP Basic Auth (A ṣe àbá):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Àwọn Ojuami Ìparí Pàtàkì
+## Àwọn Ojuami Ìparí Pàtàkì {#core-endpoints}
 
-### 1. API Àwọn Oníbàárà
+### 1. API Àwọn Oníbàárà {#1-customers-api}
 
 **Ọ̀nà Ìpìlẹ̀:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Àwọn Ojúlé
+### 2. API Àwọn Ojúlé {#2-sites-api}
 
 **Ọ̀nà Ìpìlẹ̀:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Àwọn Ọmọ ẹgbẹ́
+### 3. API Àwọn Ọmọ ẹgbẹ́ {#3-memberships-api}
 
 **Ọ̀nà Ìpìlẹ̀:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Àwọn Ọjà
+### 4. API Àwọn Ọjà {#4-products-api}
 
 **Ọ̀nà Ìpìlẹ̀:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Àwọn Ìsanwó
+### 5. API Àwọn Ìsanwó {#5-payments-api}
 
 **Ọ̀nà Ìpìlẹ̀:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Àwọn Domain
+### 6. API Àwọn Domain {#6-domains-api}
 
 **Ọ̀nà Ìpìlẹ̀:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Ojuami Ìparí Ìforúkọsílẹ̀
+## Ojuami Ìparí Ìforúkọsílẹ̀ {#registration-endpoint}
 
 Ojuami ìparí `/register` ń pèsè checkout/ìforúkọsílẹ̀ tó pé:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Àwọn Ojuami Ìparí Ayálégbé Aláṣẹ-ara
+## Àwọn Ojuami Ìparí Ayálégbé Aláṣẹ-ara {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Ọ̀pọ̀-Ayálégbé 1.2.0 ṣàfikún ìbòjúmu REST fún ayálégbé aláṣẹ-ara fún àwọn ìṣepọ̀ tó ń pèsè, ṣàyẹ̀wò, tàbí jẹ́rìí sí àwọn ayálégbé tí a yà sọ́tọ̀.
 
@@ -242,7 +242,7 @@ Lo ojuami ìparí bootstrap láti pèsè ìforúkọsílẹ̀ ayálégbé, datab
 
 Ka `ready: false` sí ohun ìdènà ṣáájú ìfilọlẹ̀. Ṣàyẹ̀wò àwọn àlàyé ìjẹ́rìísí, tún ìsopọ̀ host database, queue, ìpèsè oníṣe, tàbí ìṣòro routing ṣe, lẹ́yìn náà tún ìjẹ́rìísí gbìyànjú.
 
-## Àwọn Ìdáhùn Àṣìṣe
+## Àwọn Ìdáhùn Àṣìṣe {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Ka `ready: false` sí ohun ìdènà ṣáájú ìfilọlẹ̀. Ṣàyẹ̀wò à
 }
 ```
 
-## Ìpín sí Ojú-ìwé àti Ìyàn
+## Ìpín sí Ojú-ìwé àti Ìyàn {#pagination-and-filtering}
 
 **Parameters Ìbéèrè:**
 ```http

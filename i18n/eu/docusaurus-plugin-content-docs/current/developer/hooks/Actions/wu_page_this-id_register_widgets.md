@@ -4,13 +4,13 @@ title: 'Ekintza - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Action: wu_page_\{$this->id\}_register_widgets
+# Action: wu_page_\{$this->id\}_register_widgets {#action-wupagethis-idregisterwidgets}
 
 Orri honetarako widgetak erregistratu ondoren abiarazten da.
 
 The dynamic portion of the hook name, `$this-&gt;id`, refers to the page id.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -18,9 +18,9 @@ The dynamic portion of the hook name, `$this-&gt;id`, refers to the page id.
 | $page_hook | `string` | Orriaren hook-a. |
 | $page | `object` | Orriaren objektua. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.4.10
-### Iturburua
+### Iturburua {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L755) fitxategian definitua, 755. lerroan.

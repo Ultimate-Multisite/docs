@@ -4,11 +4,11 @@ title: Toiminto - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Toiminto: set_logged_in_cookie
+# Toiminto: set_logged_in_cookie {#action-setloggedincookie}
 
 Käynnistyy välittömästi ennen kuin sisäänkirjautuneen todennuseväste asetetaan.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Käynnistyy välittömästi ennen kuin sisäänkirjautuneen todennuseväste aset
 | $scheme | `string` | Authentication scheme. Default 'logged_in'. |
 | $token | `string` | User's session token to use for this cookie. |
 
-### Versiosta alkaen
+### Versiosta alkaen {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) rivillä 141

@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Mtazamo wa Kwanza kuhusu Webhooks (v2)
+# Mtazamo wa Kwanza kuhusu Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**TAHADHARI: Kumbuka kwamba kipengele au makala hii ni kwa watumiaji wa kiwango cha juu.**_
 
@@ -11,7 +11,7 @@ _**TAHADHARI: Kumbuka kwamba kipengele au makala hii ni kwa watumiaji wa kiwango
 
 Hii ni muhimu ikiwa unahitaji kuunganisha au kupitisha data fulani kutoka Ultimate Multisite kwenda kwenye CRM nyingine au mfumo kila wakati tukio linapoanzishwa. Kwa mfano, unahitaji kutuma jina na anwani ya barua pepe ya mtumiaji kwenye orodha ya barua kila wakati akaunti mpya ya mtumiaji inapoundwa.
 
-## Jinsi ya kuunda webhook
+## Jinsi ya kuunda webhook {#how-to-create-a-webhook}
 
 Ili kuunda webhook, nenda kwenye dashboard ya msimamizi wa mtandao wako. Bofya **Ultimate Multisite > Webhooks > Add New Webhook.**
 

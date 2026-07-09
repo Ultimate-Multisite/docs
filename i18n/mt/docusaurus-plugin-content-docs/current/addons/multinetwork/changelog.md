@@ -3,9 +3,9 @@ title: Reġistru tal-bidliet ta’ Multi-Netwerk
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Reġistru tal-Bidliet Multi-Network
+# Reġistru tal-Bidliet Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Ġdid: Previewer tal-mudelli tan-netwerk — ibbrawżja u ara preview tal-mudelli tan-netwerk b'panel dirett qabel tixtri.
 * Ġdid: Għażla tal-mudell tan-netwerk waqt checkout — il-klijenti jistgħu jagħżlu mudell tan-netwerk waqt il-fluss ta' signup checkout.
 * Ġdid: SSO b'magic link bejn netwerks — il-klijenti jistgħu jaċċessaw sub-netwerks bla xkiel permezz ta' awtentikazzjoni b'magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Tiswija: Protezzjoni kontra ċavetta `network_id` mhux definita fl-ambitu tal-query tas-sit.
 * Tiswija: Verifika tal-permessi tan-netwerk qabel il-bidla tal-kuntest tipprevjeni żbalji fil-proprjetà tat-tabella `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Tiswija: Ħolqien ta' netwerk Ġdid.
 * Tiswija: Rendering tal-Menus.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Aġġornat għal Plugin Update Checker v5
 * Miżjuda headers moderni tal-plugin WordPress
 * Kompatibbiltà mtejba mal-aħħar verżjonijiet ta' WordPress
 
-### 1.0.2
+### 1.0.2 {#102}
 * Tiswijiet ta' bugs u titjib fil-prestazzjoni
 * Iżolament imtejjeb tan-netwerk
 
-### 1.0.0
+### 1.0.0 {#100}
 * Rilaxx inizjali
 * Funzjonalità ewlenija multinetwork
 * Integrazzjoni ma' Multisite Ultimate

@@ -3,7 +3,7 @@ title: De Account-pagina openen
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Hoe krijg ik voor het eerst toegang tot mijn accountpagina?
+# Hoe krijg ik voor het eerst toegang tot mijn accountpagina? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Welkom bij Ultimate Multisite!
 

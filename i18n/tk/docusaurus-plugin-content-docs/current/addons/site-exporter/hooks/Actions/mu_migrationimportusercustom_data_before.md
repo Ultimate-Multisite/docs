@@ -4,20 +4,20 @@ title: Hereket - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Action: mu_migration/import/user/custom_data_before
+# Action: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
 
 Ulanyjynyň ýörite maglumatlaryny eksport etmezden öň işledilýär.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Ady | Görnüşi | Düşündiriş |
 |------|------|-------------|
 | $user_data | `array` | Ulanyjy maglumatlarynyň massiwi. |
 | $user | `\WP_User` | Ulanyjy obýekti. |
 
-### Şondan bäri
+### Şondan bäri {#since}
 
 - 0.1.0
-### Çeşme
+### Çeşme {#source}
 
 [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L139) faýlynda, 139-njy setirde kesgitlenen.

@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Addons Ultimate Multisite
+# Addons Ultimate Multisite {#ultimate-multisite-addons}
 
 Addons yo elaji Ultimate Multisite ak fonksyonalite ak entegrasyon anplis. Pifò addons yo peye epi yo ka achte yo sou [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Enstalasyon
+## Enstalasyon {#installation}
 
 Yo ka enstale addons yo de fason:
 
 1. **Atravè Paj Addon an** -- Ale nan paj jesyon addon sit ou a nan admin WordPress la
 2. **Telechajman Manyèl** -- Telechaje nan [kont ou](https://ultimatemultisite.com/my-account/downloads/) epi televerse atravè Plugins > Add New
 
-## Addons ki Disponib
+## Addons ki Disponib {#available-addons}
 
 | Addon | Deskripsyon |
 |-------|-------------|

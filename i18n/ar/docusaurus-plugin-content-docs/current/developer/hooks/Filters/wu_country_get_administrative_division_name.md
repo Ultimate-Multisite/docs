@@ -4,11 +4,11 @@ title: فلتر - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# مرشح: wu_country_get_administrative_division_name
+# مرشح: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 يعيد اسمًا جميلًا للفرع الإداري للبلد.
 
-## Parameters
+## Parameters {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -18,14 +18,14 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | إذا كنا نكتب الكلمات بأحرف كبيرة. |
 | $current_country | `\WP_Ultimo\Country\Country` | مثيل للفئة الحالية. |
 
-### منذ
+### منذ {#since}
 
 - 2.0.11
 
-### المصدر
+### المصدر {#source}
 
 مُعرّف في [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) في السطر 250
 
-## الإرجاع
+## الإرجاع {#returns}
 
 اسم التقسيم المعدل.

@@ -4,11 +4,11 @@ title: Filter - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Određuje da li treba primijeniti naknadu za registraciju.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Određuje da li treba primijeniti naknadu za registraciju.
 | $product | `object` | Objekt nivoa članstva. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Objekt registracije. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 3.1
-### Izvor
+### Izvor {#source}
 
 Definisano u [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) na liniji 1769

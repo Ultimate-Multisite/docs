@@ -3,11 +3,11 @@ title: Feedback ng Customer at Pag-uulat ng Isyu
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback at Customer & Isyu Reporting
+# Feedback at Customer & Isyu Reporting {#customer-feedback--issue-reporting}
 
 Ang Gratis AI Agent v1.5.0 ay may kasamang sistema para sa pag-report ng feedback at isyu na pinapayagan ang mga end user na mag-flag ng hindi nakakatulong na sagot at mag-report ng problema nang direkta mula sa chat interface. Kasama sa sistemang ito ang consent management, isang automated reporting command, at AI-assisted triage sa backend.
 
-## Thumbs-Down Button
+## Thumbs-Down Button {#thumbs-down-button}
 
 Bawat mensaheng ipinapadala ng AI assistant ay may **thumbs-down** (👎) button na ipinapakita. Kapag pinindot ito ng user, maaari nilang markahan ang isang sagot bilang hindi nakakatulong o mali.
 
@@ -15,7 +15,7 @@ Bawat mensaheng ipinapadala ng AI assistant ay may **thumbs-down** (👎) button
 - Ang pagpindot dito ay magbubukas ng **Feedback Consent Modal**.
 - Ang feedback na ito ay iniuugnay sa thread ng usapan at sa partikular na mensahe.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Kapag pinindot ng user ang thumbs-down button, may lalabas na consent modal bago ipadala ang anumang data. Ang modal na ito ay:
 
@@ -26,13 +26,13 @@ Kapag pinindot ng user ang thumbs-down button, may lalabas na consent modal bago
 
 Walang feedback ang itatala hangga't tahasang kinukumpirma ito ng user.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Sa dulo ng isang usapan, maaaring magpakita ang assistant ng isang **auto-prompt feedback banner** — isang mensaheng hindi nakakaabala na nagtatanong kung nakatulong ba ang sesyon.
 
 Lumilitaw ang banner na ito nang awtomatiko batay sa haba at resulta (heuristics) ng usapan. Ito ay naka-link sa parehong daloy ng feedback gaya ng thumbs-down button. Maaaring itapon ng mga user ang banner nang hindi nagbibigay ng feedback.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Maaari ring magsimula ng feedback flow ang mga user sa pamamagitan ng pag-type ng `/report-issue` sa chat input. Ang command na ito:
 
@@ -42,7 +42,7 @@ Pinapayagan nito ang mga user na magdagdag ng karagdagang detalye bago mag-submi
 
 Ang command na `/report-issue` ay available sa lahat ng chat mode (inline, floating widget, full-screen).
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 Ang feedback na isinumite ay ipapasa muna sa isang AI triage layer na:
 

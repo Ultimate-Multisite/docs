@@ -3,18 +3,18 @@ title: Closte Integration
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte ઇન્ટીગ્રેશન
+# Closte ઇન્ટીગ્રેશન {#closte-integration}
 
-## ઝાંખી
+## ઝાંખી {#overview}
 Closte એ Google Cloud ઇન્ફ્રાસ્ટ્રક્ચર પર બનેલું managed WordPress hosting platform છે. આ ઇન્ટીગ્રેશન Ultimate Multisite અને Closte વચ્ચે ઓટોમેટિક ડોમેઇન સિંકિંગ અને SSL સર્ટિફિકેટ મેનેજમેન્ટ સક્ષમ કરે છે.
 
-## ફીચર્સ
+## ફીચર્સ {#features}
 - ઓટોમેટિક ડોમેઇન સિંકિંગ
 - SSL સર્ટિફિકેટ મેનેજમેન્ટ
 - Wildcard ડોમેઇન સપોર્ટ
 - જો Closte પર ચાલી રહ્યું હોય તો કોઈ કૉન્ફિગરેશનની જરૂર નથી
 
-## આવશ્યકતાઓ
+## આવશ્યકતાઓ {#requirements}
 જો તમે Closte વાપરી રહ્યા છો તો તમારી `wp-config.php` ફાઇલમાં નીચેનો constant define કરવો જરૂરી છે:
 
 ```php
@@ -23,13 +23,13 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 જો તમે Closte પર hosting કરી રહ્યા છો તો આ constant સામાન્ય રીતે પહેલેથી જ define કરેલો હોય છે.
 
-## સેટઅપ સૂચનાઓ
+## સેટઅપ સૂચનાઓ {#setup-instructions}
 
-### 1. તમારી Closte API Key ચકાસો
+### 1. તમારી Closte API Key ચકાસો {#1-verify-your-closte-api-key}
 
 જો તમે Closte પર hosting કરી રહ્યા છો, તો `CLOSTE_CLIENT_API_KEY` constant તમારી `wp-config.php` ફાઇલમાં પહેલેથી જ define કરેલો હોવો જોઈએ. તમે તમારી `wp-config.php` ફાઇલ તપાસીને આ ચકાસી શકો છો.
 
-### 2. ઇન્ટીગ્રેશન સક્ષમ કરો
+### 2. ઇન્ટીગ્રેશન સક્ષમ કરો {#2-enable-the-integration}
 
 1. તમારા WordPress admin માં, Ultimate Multisite > Settings પર જાઓ
 2. "Domain Mapping" ટેબ પર નેવિગેટ કરો
@@ -37,7 +37,7 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 4. Closte ઇન્ટીગ્રેશન સક્ષમ કરો
 5. "Save Changes" પર ક્લિક કરો
 
-## આ કેવી રીતે કામ કરે છે
+## આ કેવી રીતે કામ કરે છે {#how-it-works}
 
 જ્યારે Ultimate Multisite માં ડોમેઇન map થાય છે:
 
@@ -47,26 +47,26 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 ઇન્ટીગ્રેશન Ultimate Multisite માં DNS check interval સેટિંગ સાથે પણ કામ કરે છે, જે તમને DNS propagation અને SSL સર્ટિફિકેટ issuance માટે સિસ્ટમ કેટલી વાર ચકાસે છે તે configure કરવાની મંજૂરી આપે છે.
 
-## ડોમેઇન રેકોર્ડ બનાવવું
+## ડોમેઇન રેકોર્ડ બનાવવું {#domain-record-creation}
 
 આ ઇન્ટીગ્રેશન સુનિશ્ચિત કરે છે કે જ્યારે સાઇટ બનાવવામાં આવે અથવા duplicate કરવામાં આવે ત્યારે ડોમેઇન રેકોર્ડ ઓટોમેટિક બને. Closte ઇન્ટીગ્રેશન માટે આ ખાસ કરીને મહત્વપૂર્ણ છે, કારણ કે ડોમેઇન રેકોર્ડ બનાવવાથી Closte API ને ડોમેઇન અને SSL સર્ટિફિકેટ બનાવવા માટે trigger થાય છે.
 
-## સમસ્યાનિવારણ
+## સમસ્યાનિવારણ {#troubleshooting}
 
-### API કનેક્શન સમસ્યાઓ
+### API કનેક્શન સમસ્યાઓ {#api-connection-issues}
 - ચકાસો કે તમારી Closte API key સાચી છે
 - ખાતરી કરો કે તમારા Closte એકાઉન્ટ પાસે જરૂરી permissions છે
 
-### SSL સર્ટિફિકેટ સમસ્યાઓ
+### SSL સર્ટિફિકેટ સમસ્યાઓ {#ssl-certificate-issues}
 - Closte ને SSL સર્ટિફિકેટ issue કરવામાં થોડો સમય લાગી શકે છે (સામાન્ય રીતે 5-10 મિનિટ)
 - ચકાસો કે તમારા ડોમેઇન્સ તમારા Closte સર્વરના IP address તરફ યોગ્ય રીતે point કરી રહ્યા છે
 - ખાતરી કરો કે તમારા ડોમેઇન માટે DNS records યોગ્ય રીતે configure થયેલા છે
 
-### ડોમેઇન ઉમેરાયું નથી
+### ડોમેઇન ઉમેરાયું નથી {#domain-not-added}
 - કોઈપણ error messages માટે Ultimate Multisite logs તપાસો
 - ચકાસો કે ડોમેઇન Closte માં પહેલેથી ઉમેરાયેલું નથી
 - ખાતરી કરો કે તમારા ડોમેઇનના DNS records યોગ્ય રીતે configure થયેલા છે
 
-### DNS Check Interval
+### DNS Check Interval {#dns-check-interval}
 - જો SSL સર્ટિફિકેટ issue થવામાં ઘણો સમય લાગી રહ્યો હોય, તો તમે Domain Mapping settings માં DNS check interval adjust કરી શકો છો
 - Default interval 300 સેકન્ડ (5 મિનિટ) છે, પરંતુ testing દરમિયાન ઝડપી checking માટે તમે તેને 10 સેકન્ડ જેટલું ઓછું સેટ કરી શકો છો

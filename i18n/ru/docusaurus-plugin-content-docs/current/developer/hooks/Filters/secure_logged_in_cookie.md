@@ -4,11 +4,11 @@ title: Фильтр - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Фильтр: secure_logged_in_cookie
+# Фильтр: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Определяет, должен ли cookie входа отправляться только по HTTPS.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 | $user_id | `int` | Идентификатор пользователя. |
 | $secure | `bool` | Должен ли auth cookie отправляться только по HTTPS. |
 
-### С версии
+### С версии {#since}
 
 - 3.1.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) на строке 91

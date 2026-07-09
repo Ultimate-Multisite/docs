@@ -3,9 +3,9 @@ title: Kusimamia Malipo na Ankara
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Kusimamia Malipo na Ankara
+# Kusimamia Malipo na Ankara {#managing-payments-and-invoices}
 
-## Mipangilio ya Malipo
+## Mipangilio ya Malipo {#payment-settings}
 
 Kabla hujaanza kupokea malipo, utahitaji kusanidi mipangilio inayohusiana na malipo. Nenda kwenye **Ultimate Multisite → Settings** na ubofye kichupo cha **Payment**.
 
@@ -15,7 +15,7 @@ Huu hapa mwonekano kamili wa ukurasa wa mipangilio ya malipo:
 
 ![Ukurasa kamili wa mipangilio ya malipo](/img/admin/settings-payments-full.png)
 
-### Chaguo za Jumla za Malipo
+### Chaguo za Jumla za Malipo {#general-payment-options}
 
 Katika mipangilio ya jumla unaweza kusanidi:
 
@@ -24,7 +24,7 @@ Katika mipangilio ya jumla unaweza kusanidi:
 
 ![Mipangilio ya lango la malipo](/img/admin/settings-payments-options.png)
 
-### Malango ya Malipo
+### Malango ya Malipo {#payment-gateways}
 
 Ultimate Multisite inasaidia malango mengi ya malipo. Unaweza kuwezesha na kusanidi kila moja kutoka kwenye kichupo cha mipangilio ya Payment.
 
@@ -40,11 +40,11 @@ Kila lango lina sehemu yake ya usanidi ambapo unaingiza API keys na mipangilio m
 
 ![Mipangilio ya ziada ya lango](/img/admin/settings-payments-gateways-2.png)
 
-### Hali ya Sandbox
+### Hali ya Sandbox {#sandbox-mode}
 
 Unaweza kuwezesha **Hali ya Sandbox** ili kujaribu muunganisho wako wa malipo kabla ya kuanza rasmi. Hali ya sandbox inapokuwa hai, hakuna malipo halisi yatakayofanywa.
 
-## Kuangalia Malipo
+## Kuangalia Malipo {#viewing-payments}
 
 Nenda kwenye ukurasa wa **Payments** chini ya Ultimate Multisite ili kuona miamala yote katika mtandao wako.
 
@@ -54,7 +54,7 @@ Unaweza kuchuja malipo kwa hali (yaliyokamilika, yanayosubiri, yaliyoshindwa, ya
 
 Bofya malipo ili kuona maelezo yake kamili, ikijumuisha vipengee vya mstari, membership husika, taarifa za mteja, na data ya lango la malipo.
 
-## Ankara
+## Ankara {#invoices}
 
 Ultimate Multisite inaweza kuzalisha ankara za malipo kiotomatiki. Unaweza kubinafsisha kiolezo cha ankara na muundo wa nambari kutoka kwenye mipangilio ya Payment.
 

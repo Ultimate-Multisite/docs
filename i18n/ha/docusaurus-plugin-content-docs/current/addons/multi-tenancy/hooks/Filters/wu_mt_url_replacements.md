@@ -4,11 +4,11 @@ title: Tace - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Tacewa: wu_mt_url_replacements
+# Tacewa: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 Tace ma’auratan maye gurbin URL.
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau’i | Bayani |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Tace ma’auratan maye gurbin URL.
 | $new_url | `string` | Sabon URL. |
 | $blog_id | `int` | ID na blog. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 1.0.0
-### Tushe
+### Tushe {#source}
 
 An ayyana a cikin [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) a layi na 151

@@ -3,17 +3,17 @@ title: Sut i Ffurfweddu Mapio Parthau
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Sut i Ffurfweddu Mapio Parthau (v2)
+# Sut i Ffurfweddu Mapio Parthau (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NODYN PWYSIG: Mae’r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 
 Un o nodweddion mwyaf pwerus rhwydwaith premiwm yw’r gallu i gynnig cyfle i’n cleientiaid atodi parth lefel uchaf i’w gwefannau. Wedi’r cyfan, pa un sy’n edrych yn fwy proffesiynol: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) neu [_**joesbikeshop.com**_](http://joesbikeshop.com)? Dyna pam mae Ultimate Multisite yn cynnig y nodwedd honno wedi’i chynnwys, heb yr angen i ddefnyddio ategion trydydd parti.
 
-## Beth yw mapio parthau?
+## Beth yw mapio parthau? {#whats-domain-mapping}
 
 Fel y mae’r enw’n awgrymu, mapio parthau yw’r gallu a gynigir gan Ultimate Multisite i dderbyn cais am barth personol a mapio’r cais hwnnw i’r wefan gyfatebol yn y rhwydwaith gyda’r parth penodol hwnnw wedi’i atodi.
 
-### Sut i sefydlu mapio parthau ar eich Rhwydwaith Ultimate Multisite
+### Sut i sefydlu mapio parthau ar eich Rhwydwaith Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Mae mapio parthau yn gofyn am rywfaint o sefydlu ar eich rhan er mwyn gweithio. Yn ffodus, mae Ultimate Multisite yn awtomeiddio’r gwaith caled i chi fel y gallwch fodloni’r gofynion yn hawdd.
 
@@ -45,7 +45,7 @@ Ond cyn i chi ddechrau mapio’r parth personol i un o’r is-wefannau yn eich r
 
 ###
 
-### Sicrhau bod gosodiadau DNS y parth wedi’u ffurfweddu’n gywir
+### Sicrhau bod gosodiadau DNS y parth wedi’u ffurfweddu’n gywir {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Er mwyn i fapio weithio, mae angen i chi sicrhau bod y parth rydych yn bwriadu ei fapio yn pwyntio at gyfeiriad IP eich Rhwydwaith. Sylwch fod angen cyfeiriad IP y Rhwydwaith arnoch - cyfeiriad IP y parth lle mae Ultimate Multisite wedi’i osod - nid cyfeiriad IP y parth personol rydych am ei fapio. I chwilio am gyfeiriad IP parth penodol, rydym yn awgrymu mynd i [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), er enghraifft.
 
@@ -55,7 +55,7 @@ Os ydych yn cael trafferth gwneud i hyn weithio, **cysylltwch â chymorth eich c
 
 Os ydych yn bwriadu caniatáu i’ch cleientiaid fapio eu parthau eu hunain, bydd yn rhaid iddynt wneud y gwaith ar y rhan hon eu hunain. Cyfeiriwch nhw at system gymorth eu cofrestrydd os na allant greu’r A Record.
 
-### Mapio enw parth personol fel Super Admin
+### Mapio enw parth personol fel Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Pan fyddwch wedi mewngofnodi fel uwch-weinyddwr ar eich rhwydwaith, gallwch ychwanegu a rheoli enwau parthau personol yn hawdd drwy fynd o dan **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Os cliciwch ar enw'r parth, byddwch yn gallu gweld rhai opsiynau ynddo. Gadewch 
 
 **A yw'n Ddiogel?:** Er bod Ultimate Multisite yn gwirio a oes gan y parth dystysgrif SSL ai peidio cyn ei alluogi, gallwch ddewis â llaw i lwytho'r parth gyda thystysgrif SSL neu hebddi. Sylwch os nad oes gan y wefan dystysgrif SSL ac rydych yn ceisio ei gorfodi i lwytho gyda SSL, gall roi gwallau i chi.
 
-### Mapio enw parth personol fel defnyddiwr Is-safle
+### Mapio enw parth personol fel defnyddiwr Is-safle {#mapping-custom-domain-name-as-subsite-user}
 
 Gall gweinyddwyr is-safle hefyd fapio enwau parth personol o ddangosfwrdd gweinyddu eu his-safle.
 
@@ -121,7 +121,7 @@ Yna gall y defnyddiwr glicio **Cam Nesaf** a bwrw ymlaen i ychwanegu'r enw parth
 
 Bydd clicio i **Ychwanegu Parth** yn dechrau'r broses o wirio a nôl gwybodaeth DNS y parth personol.
 
-### Ynghylch Cydamseru Parthau
+### Ynghylch Cydamseru Parthau {#about-domain-syncing}
 
 Mae Cydamseru Parthau yn broses lle mae Ultimate Multisite yn ychwanegu'r enw parth personol at eich cyfrif cynnal fel parth ychwanegol **er mwyn i'r mapio parth weithio**.
 

@@ -3,19 +3,19 @@ title: 'Leson 2: Chwazi nich ou'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leson 2: Chwazi Nich Ou
+# Leson 2: Chwazi Nich Ou {#lesson-2-picking-your-niche}
 
 Nan Leson 1 nou te etabli poukisa nich pi bon pase jeneral. Kounye a ou bezwen chwazi pa w la. Leson sa a ba ou yon kad pou jwenn epi valide yon nich anvan ou envesti tan pou konstwi pou li.
 
-## Kote Nou Te Rete
+## Kote Nou Te Rete {#where-we-left-off}
 
 Nou te defini konsèp FitSite la: yon platfòm sit entènèt pou estidyo fitness. Men kijan nou te rive sou estidyo fitness espesyalman? Leson sa a pase sou pwosesis la pou ou ka aplike li pou jwenn pwòp nich ou.
 
-## Twa Kritè Yo
+## Twa Kritè Yo {#the-three-criteria}
 
 Yon bon nich pou yon platfòm sit entènèt satisfè twa kondisyon:
 
-### 1. Yo Bezwen Sit Entènèt Men Yo Gen Difikilte pou Jwenn Bon Sit
+### 1. Yo Bezwen Sit Entènèt Men Yo Gen Difikilte pou Jwenn Bon Sit {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Chèche endistri kote:
 
@@ -26,7 +26,7 @@ Chèche endistri kote:
 
 **Estidyo fitness yo anfòm**: manm yo atann pou jwenn orè klas, pri, ak rezèvasyon sou entènèt. Pifò sit entènèt estidyo yo demode oswa yo bati sou modèl jeneral ki pa sèvi objektif la.
 
-### 2. Biznis Yo Ka Peye yon Abònman Chak Mwa
+### 2. Biznis Yo Ka Peye yon Abònman Chak Mwa {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Kliyan sib ou yo bezwen:
 
@@ -36,7 +36,7 @@ Kliyan sib ou yo bezwen:
 
 **Estidyo fitness yo anfòm**: yo deja peye pou lojisyèl rezèvasyon, tretman peman, ak zouti maketing. Yon abònman sit entènèt se yon adisyon natirèl.
 
-### 3. Yo Pale Youn ak Lòt
+### 3. Yo Pale Youn ak Lòt {#3-they-talk-to-each-other}
 
 Pi bon nich yo gen:
 
@@ -46,9 +46,9 @@ Pi bon nich yo gen:
 
 **Estidyo fitness yo anfòm**: pwopriyetè estidyo yo ale nan evènman endistri fitness, patisipe nan kominote sou entènèt, epi souvan pataje zouti ak sèvis ak kanmarad yo.
 
-## Kijan pou Jwenn Kandida Nich
+## Kijan pou Jwenn Kandida Nich {#how-to-find-niche-candidates}
 
-### Kòmanse ak Sa Ou Konnen
+### Kòmanse ak Sa Ou Konnen {#start-with-what-you-know}
 
 Eksperyans ou deja genyen se yon avantaj. Konsidere:
 
@@ -56,7 +56,7 @@ Eksperyans ou deja genyen se yon avantaj. Konsidere:
 - Pastan oswa enterè kote ou konprann kominote a
 - Rezo pwofesyonèl ou deja fè pati yo
 
-### Chèche Siy Doulè
+### Chèche Siy Doulè {#look-for-pain-signals}
 
 Chèche prèv ke biznis nan yon nich gen difikilte ak sit entènèt:
 
@@ -65,7 +65,7 @@ Chèche prèv ke biznis nan yon nich gen difikilte ak sit entènèt:
 - Gade sit entènèt reyèl nan nich la -- èske pifò ladan yo pa bon?
 - Tcheke si gen konpetitè epi kijan yo byen sèvi mache a
 
-### Evalye Ekonomi an
+### Evalye Ekonomi an {#evaluate-the-economics}
 
 Pou chak nich kandida, estime:
 
@@ -73,11 +73,11 @@ Pou chak nich kandida, estime:
 - **Volonte pou peye**: Kisa yo depanse kounye a sou zouti menm jan?
 - **Potansyèl valè sou dire lavi**: Èske biznis sa yo estab, oswa èske yo kite sèvis yo vit?
 
-## Valide Nich Ou
+## Valide Nich Ou {#validating-your-niche}
 
 Anvan ou konstwi anyen, valide demann lan:
 
-### Pale ak Kliyan Potansyèl
+### Pale ak Kliyan Potansyèl {#talk-to-potential-customers}
 
 Kontakte 10-15 pwopriyetè biznis nan nich sib ou a. Mande:
 
@@ -88,17 +88,17 @@ Kontakte 10-15 pwopriyetè biznis nan nich sib ou a. Mande:
 
 Ou poko ap vann. W ap koute.
 
-### Tcheke Peyizaj Konpetitè yo
+### Tcheke Peyizaj Konpetitè yo {#check-competitor-landscape}
 
 - **Pa gen konpetitè**: Sa ka vle di pa gen demann, oswa sa ka vle di se yon opòtinite ki poko eksplwate. Konvèsasyon ak kliyan yo ap di ou kiyès.
 - **Kèk konpetitè**: Bon siy. Sa valide demann lan. Etidye sa yo fè byen ak kote yo pa rive ase lwen.
 - **Anpil konpetitè**: Pi difisil pou antre, men li toujou posib si ou ka fè diferans ou klèman.
 
-### Konstwi yon Paj Aterisaj
+### Konstwi yon Paj Aterisaj {#build-a-landing-page}
 
 Anvan ou konstwi platfòm nan, kreye yon paj aterisaj senp ki dekri solisyon nich ou a epi kolekte enskripsyon imèl. Lanse yon ti kantite piblisite sible pou teste enterè. Si moun enskri, ou gen validasyon.
 
-## Aplike Sa a sou FitSite
+## Aplike Sa a sou FitSite {#applying-this-to-fitsite}
 
 Men kijan FitSite te klase selon kritè yo:
 
@@ -112,7 +112,7 @@ Men kijan FitSite te klase selon kritè yo:
 
 Validasyon te konfime opòtinite a. Kounye a nou konstwi.
 
-## Ide Nich pou Konsidere
+## Ide Nich pou Konsidere {#niche-ideas-to-consider}
 
 Si fitness pa mache ou, men lòt nich ki satisfè kritè yo:
 
@@ -127,7 +127,7 @@ Si fitness pa mache ou, men lòt nich ki satisfè kritè yo:
 
 Chak nan sa yo gen menm karakteristik yo: bezwen sit entènèt ki klè, kapasite pou peye, ak rekòmandasyon kominotè pa pawòl.
 
-## Sa Nou Te Konstwi nan Leson Sa a
+## Sa Nou Te Konstwi nan Leson Sa a {#what-we-built-this-lesson}
 
 - **Yon kad pou seleksyon nich**: twa kritè pou evalye nenpòt nich
 - **Metòd validasyon**: konvèsasyon ak kliyan, analiz konpetitè, tès paj aterisaj

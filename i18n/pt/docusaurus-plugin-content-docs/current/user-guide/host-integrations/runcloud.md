@@ -3,17 +3,17 @@ title: Integração RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integração com RunCloud
+# Integração com RunCloud {#runcloud-integration}
 
-## Visão Geral
+## Visão Geral {#overview}
 O RunCloud é uma plataforma de gerenciamento de servidor baseada na nuvem que permite implantar e gerenciar facilmente aplicações web nos seus próprios servidores em nuvem. Esta integração habilita a sincronização automática de domínios e o gerenciamento de certificados SSL entre Ultimate Multisite e RunCloud.
 
-## Recursos
+## Recursos {#features}
 - Sincronização automática de domínio
 - Gerenciamento de certificado SSL
 - Remoção do domínio quando os mapeamentos são excluídos
 
-## Requisitos
+## Requisitos {#requirements}
 As seguintes constantes devem ser definidas no seu arquivo `wp-config.php`:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'seu_server_id');
 define('WU_RUNCLOUD_APP_ID', 'seu_app_id');
 ```
 
-## Instruções de Configuração
+## Instruções de Configuração {#setup-instructions}
 
-### 1. Obtenha suas Credenciais da API do RunCloud
+### 1. Obtenha suas Credenciais da API do RunCloud {#1-get-your-runcloud-api-credentials}
 
 1. Faça login no seu painel (dashboard) do RunCloud
 2. Vá para "User Profile" (clique na sua foto de perfil no canto superior direito)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'seu_app_id');
 4. Clique em "Generate API Key" se você ainda não tiver uma
 5. Copie sua Chave de API (API Key) e Segredo da API (API Secret)
 
-### 2. Obtenha seus IDs do Servidor e Aplicativo
+### 2. Obtenha seus IDs do Servidor e Aplicativo {#2-get-your-server-and-app-ids}
 
 1. No seu painel do RunCloud, vá para "Servers" (Servidores)
 2. Selecione o servidor onde seu multisite WordPress está hospedado
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'seu_app_id');
 4. Vá para "Web Applications" e selecione sua aplicação WordPress
 5. O ID da Aplicação (App ID) é visível na URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Adicione as Constantes ao wp-config.php
+### 3. Adicione as Constantes ao wp-config.php {#3-add-constants-to-wp-configphp}
 
 Adicione as seguintes constantes ao seu arquivo `wp-config.php`:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'seu_server_id');
 define('WU_RUNCLOUD_APP_ID', 'seu_app_id');
 ```
 
-### 4. Habilite a Integração
+### 4. Habilite a Integração {#4-enable-the-integration}
 
 1. No seu painel de administração do WordPress, vá para Ultimate Multisite > Settings (Configurações)
 2. Navegue até a aba "Domain Mapping" (Mapeamento de Domínio)
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'seu_app_id');
 4. Ative a integração RunCloud
 5. Clique em "Save Changes" (Salvar Alterações)
 
-## Como Funciona
+## Como Funciona {#how-it-works}
 
 Quando um domínio é mapeado no Ultimate Multisite:
 
@@ -70,19 +70,19 @@ Quando um domínio é mapeado no Ultimate Multisite:
 
 Para instalações de subdomínios, a integração cuidará automaticamente da criação dos subdomínios na RunCloud quando novos sites forem adicionados à sua rede.
 
-## Solução de Problemas
+## Solução de Problemas {#troubleshooting}
 
-### Problemas de Conexão da API
+### Problemas de Conexão da API {#api-connection-issues}
 - Verifique se suas credenciais da API estão corretas
 - Confirme se seus IDs do servidor e da aplicação estão corretos
 - Certifique-se de que sua conta RunCloud tenha as permissões necessárias
 
-### Problemas com o Certificado SSL
+### Problemas com o Certificado SSL {#ssl-certificate-issues}
 - A RunCloud pode levar algum tempo para emitir os certificados SSL
 - Verifique se seus domínios estão apontando corretamente para o endereço IP do seu servidor
 - Verifique as configurações de SSL da RunCloud para a sua aplicação
 
-### Domínio Não Adicionado
+### Domínio Não Adicionado {#domain-not-added}
 - Verifique os logs do Ultimate Multisite em busca de quaisquer mensagens de erro
 - Confirme se o domínio ainda não foi adicionado à RunCloud
 - Certifique-se de que seu plano RunCloud suporta múltiplos domínios

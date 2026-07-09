@@ -3,11 +3,11 @@ title: डॅशबोर्ड विहंगावलोकन
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard चा आढावा
+# Dashboard चा आढावा {#dashboard-overview}
 
 Ultimate Multisite चे एक समर्पित **Dashboard** Ultimate Multisite मेनूमध्ये आहे, आणि ते Network Dashboard मध्ये widgets देखील जोडते. या लेखात तुम्हाला दोन्ही ठिकाणी काय दिसेल ते समाविष्ट आहे.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite नेटवर्क-स्तरीय dashboard मध्ये उपयुक्त widgets जोडते जे **My Sites → Network Admin → Dashboard** येथे आढळते.
 
@@ -35,7 +35,7 @@ Ultimate Multisite नेटवर्क-स्तरीय dashboard मध्�
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Network dashboard नेटवर्कबद्दल सर्वसमावेशक माहिती सादर करत असताना, Ultimate Multisite dashboard (Ultimate Multisite मेनूच्या सर्वात वरच्या स्तरावर) सेवेबद्दल माहिती सादर करते.
 

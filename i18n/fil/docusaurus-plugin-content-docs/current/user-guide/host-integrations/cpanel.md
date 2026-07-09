@@ -3,17 +3,17 @@ title: Integrasyon ng cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrasyon sa cPanel
+# Integrasyon sa cPanel {#cpanel-integration}
 
-## Pangkalahatang-ideya
+## Pangkalahatang-ideya {#overview}
 Ang cPanel ay isa sa mga pinakapopular na control panel para sa web hosting na ginagamit ng maraming shared at dedicated hosting provider. Ang integrasyon na ito ay nagbibigay-daan sa awtomatikong pag-sync ng domain sa pagitan ng Ultimate Multisite at cPanel, para makapagdagdag ka ng mga domain alias at subdomain sa iyong cPanel account nang awtomatiko.
 
-## Mga Feature
+## Mga Feature {#features}
 - Awtomatikong paggawa ng addon domain sa cPanel
 - Awtomatikong paggawa ng subdomain sa cPanel (para sa subdomain multisite installation)
 - Pag-alis ng domain kapag tinanggal ang mga mapping
 
-## Mga Kinakailangan
+## Mga Kinakailangan {#requirements}
 Ang mga sumusunod na constant ay kailangang ideklara sa iyong `wp-config.php` file:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Default is 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Default is /public_html
 ```
 
-## Mga Hakbang sa Pag-setup
+## Mga Hakbang sa Pag-setup {#setup-instructions}
 
-### 1. Kunin ang Iyong cPanel Credentials
+### 1. Kunin ang Iyong cPanel Credentials {#1-get-your-cpanel-credentials}
 
 1. Kunin ang iyong cPanel username at password mula sa iyong hosting provider
 2. Alamin ang iyong cPanel host (karaniwan ay `cpanel.yourdomain.com` o `yourdomain.com:2083`)
 
-### 2. Idagdag ang mga Constant sa wp-config.php
+### 2. Idagdag ang mga Constant sa wp-config.php {#2-add-constants-to-wp-configphp}
 
 Idagdag ang mga sumusunod na constant sa iyong `wp-config.php` file:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Change if your cPanel uses a different port
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is different
 ```
 
-### 3. I-enable ang Integrasyon
+### 3. I-enable ang Integrasyon {#3-enable-the-integration}
 
 1. Sa iyong WordPress admin, pumunta sa Ultimate Multisite > Settings
 2. Pumunta sa "Domain Mapping" tab
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 4. I-enable ang cPanel integration
 5. I-click ang "Save Changes"
 
-## Paano Ito Gumagana
+## Paano Ito Gumagana {#how-it-works}
 
-### Mga Addon Domain
+### Mga Addon Domain {#addon-domains}
 
 Kapag may domain na na-map sa Ultimate Multisite:
 
@@ -71,7 +71,7 @@ Kapag may domain na na-map sa Ultimate Multisite:
 2. Ang domain ay iko-configure para tumuro sa iyong root directory
 3. Kapag tinanggal ang isang domain mapping, aalisin ng integrasyon ang addon domain mula sa cPanel
 
-### Mga Subdomain
+### Mga Subdomain {#subdomains}
 
 Para sa subdomain multisite installation, kapag may bagong site na nagawa:
 
@@ -79,27 +79,27 @@ Para sa subdomain multisite installation, kapag may bagong site na nagawa:
 2. Magpapadala ito ng request sa API ng cPanel para idagdag ang subdomain
 3. Ang subdomain ay iko-configure para tumuro sa iyong root directory
 
-## Mahahalagang Paalala
+## Mahahalagang Paalala {#important-notes}
 
 - Ang integrasyon ay gumagamit ng API2 ng cPanel para makipag-ugnayan sa iyong cPanel account
 - Kailangan ng iyong cPanel account ng mga permission para makapagdagdag ng addon domain at subdomain
 - Maaaring may limitasyon ang ilang hosting provider sa bilang ng addon domain o subdomain na maaari mong gawin
 - Hindi hinahawakan ng integrasyon ang DNS configuration; kailangan mo pa ring ituro ang iyong mga domain sa IP address ng iyong server
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
-### Mga Problema sa API Connection
+### Mga Problema sa API Connection {#api-connection-issues}
 - I-verify na tama ang iyong cPanel username at password
 - Suriin na tama at accessible ang iyong cPanel host
 - Tiyakin na may kinakailangang permission ang iyong cPanel account
 - Subukang gamitin ang buong URL para sa host (hal., `https://cpanel.yourdomain.com`)
 
-### Hindi Naidagdag ang Domain
+### Hindi Naidagdag ang Domain {#domain-not-added}
 - Tingnan ang Ultimate Multisite logs para sa anumang error message
 - I-verify na hindi pa naidagdag ang domain sa cPanel
 - Tiyakin na hindi pa naabot ng iyong cPanel account ang limitasyon nito para sa addon domain o subdomain
 
-### Mga Problema sa SSL Certificate
+### Mga Problema sa SSL Certificate {#ssl-certificate-issues}
 - Hindi hinahawakan ng integrasyon ang pag-issue ng SSL certificate
 - Kailangan mong gamitin ang SSL/TLS tools ng cPanel o ang AutoSSL feature para mag-issue ng SSL certificate para sa iyong mga domain
 - Bilang alternatibo, maaari kang gumamit ng serbisyo tulad ng Let's Encrypt kasama ang AutoSSL ng cPanel

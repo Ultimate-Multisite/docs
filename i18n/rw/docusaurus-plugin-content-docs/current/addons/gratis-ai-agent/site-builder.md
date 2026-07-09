@@ -3,15 +3,15 @@ title: Ihuriro ry'ibikorwa bya Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (yatangijwe muri Gratis AI Agent v1.4.0) ni moteri iha imbaraga irema ry’urubuga rw’intambwe nyinshi. Iyo usabye agent "kubaka urubuga rwa restaurant" cyangwa "gukora portfolio ifite blog", orchestrator igabanya iyo ntego rusange mo **gahunda** itunganijwe, ikavumbura plugins zikenewe kugira ngo iyuzuze, igakora buri ntambwe ku murongo, igakurikirana aho bigeze, kandi ikisubiza mu buryo bwikora iyo habaye amakosa.
 
 ---
 
-## Uko Bikora
+## Uko Bikora {#how-it-works}
 
-### 1. Gukora Gahunda
+### 1. Gukora Gahunda {#1-plan-generation}
 
 Iyo agent yakiriye amabwiriza yo kubaka urubuga, ihamagara ubushobozi bwa `create_site_plan` kugira ngo ikore **gahunda y’urubuga** ya JSON. Gahunda isobanura:
 
@@ -61,7 +61,7 @@ Iyo agent yakiriye amabwiriza yo kubaka urubuga, ihamagara ubushobozi bwa `creat
 }
 ```
 
-### 2. Kuvumbura Plugin
+### 2. Kuvumbura Plugin {#2-plugin-discovery}
 
 Mbere y’uko gukora bitangira, orchestrator isikana `plugin_requirements` za gahunda ikagenzura plugins zisanzwe zikora. Ku plugins zibura, ikora ibi:
 
@@ -71,7 +71,7 @@ Mbere y’uko gukora bitangira, orchestrator isikana `plugin_requirements` za ga
 
 Kunanirwa kuvumbura plugin si ikosa rihagarika byose — orchestrator ishyira intambwe zagizweho ingaruka nka `skipped` maze igakomeza indi gahunda isigaye.
 
-### 3. Gukora Gahunda
+### 3. Gukora Gahunda {#3-plan-execution}
 
 Orchestrator ihamagara `execute_site_plan` ikoresheje ID ya gahunda. Gukora bikomeza icyiciro ku kindi, intambwe ku yindi:
 
@@ -79,7 +79,7 @@ Orchestrator ihamagara `execute_site_plan` ikoresheje ID ya gahunda. Gukora biko
 - **Intambwe zibangikanye** — intambwe ziri mu cyiciro kimwe zidafite aho zishingiranye zoherezwa icyarimwe iyo akamenyetso ka `parallel` kashyizweho.
 - **Igihe ntarengwa cy’intambwe** — buri ntambwe igira igihe ntarengwa cyayo (mburabuzi: setting ya `Ability Timeout`). Intambwe irengeje igihe ishyirwa nka `failed` kandi gahunda igakomeza.
 
-### 4. Gukurikirana Aho Bigeze
+### 4. Gukurikirana Aho Bigeze {#4-progress-tracking}
 
 Hamagara `get_plan_progress` igihe icyo ari cyo cyose kugira ngo ugenzure uko gukora bihagaze:
 
@@ -104,7 +104,7 @@ Abakoresha WP-CLI bashobora gukurikirana aho bigeze bakoresheje:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Kwisubiza mu Makosa
+### 5. Kwisubiza mu Makosa {#5-error-recovery}
 
 Iyo intambwe inaniwe, orchestrator igenzura niba hari intambwe **isimbura** yasobanuwe muri gahunda:
 
@@ -115,9 +115,9 @@ Agent itanga raporo y’ukunánirwa kose mu ncamake ya nyuma ya gahunda kandi is
 
 ---
 
-## Ubushobozi bwa Gahunda y’Urubuga
+## Ubushobozi bwa Gahunda y’Urubuga {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Ikora gahunda y’urubuga itunganijwe ivuye ku nsobanuro y’intego mu rurimi rusanzwe.
 
@@ -134,7 +134,7 @@ Ikora gahunda y’urubuga itunganijwe ivuye ku nsobanuro y’intego mu rurimi ru
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Itangira gukora gahunda y’urubuga yari yarakozwe mbere.
 
@@ -150,7 +150,7 @@ Itangira gukora gahunda y’urubuga yari yarakozwe mbere.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Bisubiza imiterere igezweho y'ishyirwa mu bikorwa rya gahunda y'urubuga.
 
@@ -164,7 +164,7 @@ Bisubiza imiterere igezweho y'ishyirwa mu bikorwa rya gahunda y'urubuga.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Gikemura n'intoki intambwe yanze maze kigakomeza gushyira mu bikorwa gahunda guhera ku ntambwe ikurikira. Koresha ibi igihe gusubirana byikora bitashobotse kandi ushaka kugira icyo ukora.
 
@@ -180,7 +180,7 @@ Gikemura n'intoki intambwe yanze maze kigakomeza gushyira mu bikorwa gahunda guh
 
 ---
 
-## Kugereranya v1 na v2
+## Kugereranya v1 na v2 {#comparing-v1-and-v2}
 
 | Ikiranga | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Gikemura n'intoki intambwe yanze maze kigakomeza gushyira mu bikorwa gahunda guh
 
 ---
 
-## Amabwiriza ya Gahunda ya WP-CLI
+## Amabwiriza ya Gahunda ya WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Bikora gahunda y'urubuga bivuye ku bisobanuro by'intego.
 
@@ -205,7 +205,7 @@ Bikora gahunda y'urubuga bivuye ku bisobanuro by'intego.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Bishyira mu bikorwa gahunda yari yarakozwe mbere.
 
@@ -213,7 +213,7 @@ Bishyira mu bikorwa gahunda yari yarakozwe mbere.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Byerekana iterambere rigezweho rya gahunda iri gushyirwa mu bikorwa cyangwa yarangiye.
 
@@ -221,7 +221,7 @@ Byerekana iterambere rigezweho rya gahunda iri gushyirwa mu bikorwa cyangwa yara
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Bitondeka gahunda zose z'urubuga (izitegereje, iziri gukorwa, n'izarangiye).
 
@@ -229,7 +229,7 @@ Bitondeka gahunda zose z'urubuga (izitegereje, iziri gukorwa, n'izarangiye).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Bisubiza gahunda yanze kuri `pending` kugira ngo ishobore kongera gushyirwa mu bikorwa guhera mu ntangiriro.
 

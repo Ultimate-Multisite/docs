@@ -3,11 +3,11 @@ title: మార్పుల జాబితా
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Released on 2026-04-28
+## 1.9.0 — Released on 2026-04-28 {#190--released-on-2026-04-28}
 
-### New
+### New {#new}
 
 - **`create_contact_form` ability** — ఇది యాక్టివ్ ఫారమ్ plugin (Contact Form 7, WPForms, Fluent Forms, లేదా Gravity Forms) ఉపయోగించి ఒక contact form ని సృష్టిస్తుంది మరియు ఏ పోస్ట్ లేదా పేజీలోనైనా ఎంబెడ్ చేయడానికి సిద్ధంగా ఉండే shortcode ని అందిస్తుంది.
 - **`set_featured_image` ability** — ఇది ఇప్పటికే ఉన్న Media Library attachment ID నుండి లేదా రిమోట్ URL నుండి ఒక పోస్ట్ లేదా పేజీకి ఫీచర్డ్ ఇమేజ్‌ని కేటాయిస్తుంది; URL ఇవ్వబడితే, ఆ ఇమేజ్‌ని ఆటోమేటిక్‌గా ఇంపోర్ట్ చేస్తుంది.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restore last session** — పేజీ లోడ్ అయినప్పుడు మరియు విడ్జెట్ తెరిచినప్పుడు చాట్ ప్యానెల్ ఇప్పుడు అత్యంత ఇటీవలి సంభాషణను ఆటోమేటిక్‌గా రీలోడ్ చేస్తుంది, కాబట్టి పేజీ నావిగేషన్ల మధ్య సందర్భం (context) ఎప్పటికీ కోల్పోదు.
 - **Plugin action links** — WordPress **Plugins → Installed Plugins** స్క్రీన్‌పై, plugin వివరణ కింద, Settings మరియు Abilities Registry కు త్వరిత లింక్‌లు ఇప్పుడు కనిపిస్తాయి.
 
-### Improved
+### Improved {#improved}
 
 - **Image source retry** — డౌన్‌లోడ్ విఫలమైనప్పుడు, ఏజెంట్ ఇప్పుడు కాన్ఫిగర్ చేయబడిన అన్ని ఉచిత ఇమేజ్ సోర్స్‌లను మళ్లీ ప్రయత్నించి, ఆ తర్వాత AI-generated ఇమేజ్‌ని ఉపయోగిస్తుంది.
 - **Model info panel** — ఇది చాట్ హెడర్‌లో ఎల్లప్పుడూ కనిపిస్తుంది; మొదటి సందేశం తర్వాత దాచబడదు.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — యూనిఫైడ్ AI ఐకాన్ అనేది మునుపటి కస్టమ్ అవతార్ స్థానంలో వచ్చింది; ఇది built-in agent system తో స్థిరంగా ఉంటుంది.
 - **URL linkification** — సిస్టమ్ సందేశాలు మరియు ఎర్రర్ సందేశ బుడగలలో కనిపించే URL లు ఇప్పుడు క్లిక్ చేయదగిన లింక్‌లుగా రెండర్ చేయబడతాయి.
 
-### Fixed
+### Fixed {#fixed}
 
 - **Ability discoverability** — అన్ని abilities విశ్వసనీయంగా ఏజెంట్ యొక్క టూల్ లిస్ట్‌లో కనిపించేలా వివరణలు, సిస్టమ్ ప్రాంప్ట్ రిఫరెన్స్‌లు మరియు నేమ్‌స్పేస్ అలైన్‌మెంట్‌ను సరిదిద్దబడింది.
 - **Providers cache** — multisite నెట్‌వర్క్‌లలో పాత-provider సమస్యలను నివారించడానికి, ప్రొవైడర్‌లను ఇప్పుడు వెర్షన్ కౌంటర్‌ ద్వారా సైట్-వైడ్‌గా కాష్ చేస్తారు.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Released on 2026-04-09
+## 1.4.0 — Released on 2026-04-09 {#140--released-on-2026-04-09}
 
-### New
+### New {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI పైప్‌లైన్‌లు మరియు మోడల్ ఎవాల్యుయేషన్ వర్క్‌ఫ్లోల కోసం కమాండ్ లైన్ నుండి Agent Capabilities v1 benchmark suite ను రన్ చేస్తుంది. ప్రతి ప్రశ్నాపత్రం రన్, ప్రొవైడర్/మోడల్ ఓవర్‌రైడ్‌లు మరియు JSON/CSV అవుట్‌పుట్‌ను సపోర్ట్ చేస్తుంది.
 - **Agent Capabilities v1 benchmark suite** — ఇది పూర్తి ability surface ను పరీక్షించే సంక్లిష్టమైన, బహుళ-దశల ప్రాంప్ట్‌ల నిర్మాణాత్మక సెట్, ఇందులో స్కోరింగ్ మరియు టోకెన్/వ్యవధి రిపోర్టింగ్ ఉంటాయి.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT రిజిస్ట్రేషన్, డిజైన్ సిస్టమ్, నావిగేషన్ మరియు ప్లగిన్ డిస్కవరీని కవర్ చేసే ఎండ్-టు-ఎండ్ టెస్ట్.
 - **AI provider connector plugins** స్థానిక అభివృద్ధి సెటప్‌ను వేగవంతం చేయడానికి WordPress Playground blueprints లో జోడించబడ్డాయి.
 
-### Improved
+### Improved {#improved-1}
 
 - README లో AI provider connector డాక్యుమెంటేషన్ మరియు సెటప్ సూచనలతో అప్‌డేట్ చేయబడింది.
 
-### Fixed
+### Fixed {#fixed-1}
 
 - `main` బ్రాంచ్‌లో 25 PHPUnit టెస్ట్ ఫెయిల్యూర్స్ పరిష్కరించబడ్డాయి.
 - `blueprint.json` లో GitHub releases URL ఫార్మాట్ సరిదిద్దబడింది.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _మునుపటి release notes ప్లగిన్ రిపోజిటరీలో నిర్వహించబడ్డాయి._

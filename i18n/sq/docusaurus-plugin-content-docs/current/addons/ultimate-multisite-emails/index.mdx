@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Emails
+# Emails {#emails}
 
 Shtesa Ultimate Multisite: Emails u lejon pronarëve të rrjetit të krijojnë dhe menaxhojnë llogaritë e email-it të klientëve krahas sajteve dhe anëtarësimeve. Versioni 1.1.0 shton menaxhim të llogarive të email-it nga klienti, hyrje të vetme në webmail, mbështetje për përcjellësit CyberPanel dhe përmirësime në krijimin gjatë checkout.
 
-## Veçoritë Kryesore
+## Veçoritë Kryesore {#key-features}
 
 * **Widget i llogarisë së email-it të klientit**: Klientët mund të krijojnë dhe menaxhojnë kuti postare nga faqja e Account të tyre pasi të kenë një anëtarësim aktiv për email.
 * **Webmail SSO dhe magic links**: Klientët mund të hapin webmail drejtpërdrejt nga faqja e Account me autentikim me një klikim kur ofruesi e mbështet.
@@ -20,14 +20,14 @@ Shtesa Ultimate Multisite: Emails u lejon pronarëve të rrjetit të krijojnë d
 * **Përcjellësit CyberPanel**: Rrjetet e mbështetura nga CyberPanel mund të krijojnë dhe menaxhojnë përcjellës email-i si pjesë e rrjedhës së shërbimit të email-it.
 * **Cilësime të ndërgjegjshme për ofruesin**: Faqja e cilësimeve filtron ofruesit në integrime aktive dhe të konfiguruara, që administratorët të shohin vetëm opsione të përdorshme.
 
-## Kërkesat
+## Kërkesat {#requirements}
 
 * Ultimate Multisite 2.0.0 ose më i lartë
 * Instalimi WordPress Multisite
 * Të paktën një integrim i konfiguruar i ofruesit të email-it
 * Kredenciale API të ofruesit me leje për të krijuar kuti postare, për të ndryshuar fjalëkalime dhe për të lëshuar lidhje aksesi në webmail aty ku mbështetet
 
-## Instalimi
+## Instalimi {#installation}
 
 1. Ngarkoni skedarët e plugin-it te `/wp-content/plugins/ultimate-multisite-emails`.
 2. Aktivizoni shtesën në rrjet nga **Plugins** në administrimin e rrjetit WordPress.
@@ -35,7 +35,7 @@ Shtesa Ultimate Multisite: Emails u lejon pronarëve të rrjetit të krijojnë d
 4. Aktivizoni integrimet e ofruesve të email-it që dëshironi të përdorin klientët.
 5. Ruani cilësimet, pastaj testoni krijimin e llogarisë me një klient jo-produksioni ose sajt staging.
 
-## Si Funksionon Rrjedha e Shitjes së Email-it
+## Si Funksionon Rrjedha e Shitjes së Email-it {#how-the-email-seller-flow-works}
 
 Shitja e email-it ka dy shtresa të veçanta:
 
@@ -53,7 +53,7 @@ Kjo do të thotë se një rrjedhë normale klienti është:
 5. Paneli **Llogaritë e Email-it** shfaqet për atë anëtarësim aktiv të email-it.
 6. Klienti klikon **Create Account**, fut pjesën lokale si `info`, vendos një fjalëkalim dhe shtesa krijon `info@their-domain.com` te ofruesi i konfiguruar.
 
-## Konfiguroni një Produkt Email-i
+## Konfiguroni një Produkt Email-i {#configure-an-email-product}
 
 Krijoni një produkt email-i për çdo paketë email-i që dëshironi të shisni ose të jepni falas. Nëse jeni i ri në konfigurimin e produkteve, filloni me [Krijimi i Produktit Tuaj të Parë të Abonimit](../../user-guide/configuration/creating-your-first-subscription-product) dhe pastaj kthehuni këtu për cilësimet specifike të email-it.
 
@@ -67,7 +67,7 @@ Krijoni një produkt email-i për çdo paketë email-i që dëshironi të shisni
 
 Vetëm ofruesit që janë të aktivizuar dhe plotësisht të konfiguruar në faqen **Integrations** shfaqen në përzgjedhësin e ofruesit. Nëse përzgjedhësi është bosh, konfiguroni dhe testoni fillimisht ofruesin.
 
-## Shtoni Email në Checkout
+## Shtoni Email në Checkout {#add-email-to-checkout}
 
 Produktet e email-it zakonisht ofrohen si shtesa për një plan sajti. Shihni [Formularët e Checkout](../../user-guide/configuration/checkout-forms) për rrjedhën e përgjithshme të editorit të checkout.
 
@@ -79,7 +79,7 @@ Produktet e email-it zakonisht ofrohen si shtesa për një plan sajti. Shihni [F
 
 Domeni i email-it merret nga domeni i sajtit të klientit. Klientët nuk e futin domenin e email-it në hapin e produktit të email-it.
 
-## Menaxhimi i Email-it në Account të Klientit
+## Menaxhimi i Email-it në Account të Klientit {#customer-account-email-management}
 
 Versioni 1.1.0 shton një widget menaxhimi email-i në faqen e Account të klientit. Përdoreni kur klientët duhet të vetëshërbejnë krijimin dhe mirëmbajtjen e kutive postare për sajtet e tyre.
 
@@ -94,7 +94,7 @@ Widget-i përdor sistemin e konteksteve aktuale të faqes Account të Ultimate M
 
 Nëse klienti nuk e sheh panelin e emailit, kontrolloni që të ketë një **anëtarësim aktiv për produkt Email**, që anëtarësimi të jetë lidhur me një domen sajti dhe që produkti të ketë një ofrues të konfiguruar.
 
-## Dhënia e një plani email falas për një klient
+## Dhënia e një plani email falas për një klient {#giving-a-customer-a-free-email-plan}
 
 Për t’i dhënë një klienti email pa e tarifuar, jepni më parë **të drejtën e emailit**, pastaj krijoni ose lejojeni klientin të krijojë kutinë postare.
 
@@ -106,7 +106,7 @@ Opsionet e rekomanduara:
 
 Nëse dëshironi që klienti ta menaxhojë vetë kutinë postare nga faqja e llogarisë, sigurohuni që të ketë një anëtarësim aktiv email për domenin. Një kuti postare ofruesi e krijuar manualisht pa atë anëtarësim mund të ekzistojë, por klienti mund të mos e shohë panelin vetëshërbyes të emailit për të.
 
-## Llogari të krijuara nga administratori dhe "Pa numër porosie"
+## Llogari të krijuara nga administratori dhe "Pa numër porosie" {#admin-created-accounts-and-no-order-number}
 
 Faqja e administrimit **Email Accounts** krijon ose redakton një kuti postare te ofruesi. Nuk është hapi i parë për shitjen ose dhënien e një plani email.
 
@@ -122,7 +122,7 @@ Përdorni këtë rend veprimesh në vend të kësaj:
 
 Nëse ju duhet vetëm të krijoni një kuti postare te ofruesi për klientin dhe nuk keni nevojë për menaxhim vetëshërbyes nga faqja e llogarisë, llogaria e krijuar nga administratori mund të mjaftojë. Nëse dëshironi që klienti ta shohë dhe ta menaxhojë në Ultimate Multisite, krijoni edhe anëtarësimin e emailit.
 
-## Webmail SSO dhe hyrja me Magic-Link
+## Webmail SSO dhe hyrja me Magic-Link {#webmail-sso-and-magic-link-login}
 
 Webmail SSO u jep klientëve një veprim të drejtpërdrejtë **Open webmail** nga faqja e llogarisë. Kur mbështetet nga ofruesi aktiv, shtesa kërkon një URL aksesi jetëshkurtër dhe e ridrejton klientin në webmail pa i kërkuar të kopjojë kredencialet e kutisë postare.
 
@@ -134,7 +134,7 @@ Sjellja e ofruesit mund të ndryshojë:
 
 Aktivizoni aksesin në webmail vetëm për ofruesit ku keni konfiguruar kredencialet e kërkuara të API-së. Nëse veprimi mungon për një ofrues, së pari konfirmoni që ofruesi është aktiv, i konfiguruar dhe mbështet lidhje hyrjeje në webmail.
 
-## Provisioning gjatë Checkout
+## Provisioning gjatë Checkout {#checkout-provisioning}
 
 Shtesa provisionon **kontekstin e anëtarësimit** të emailit gjatë checkout. Ajo regjistron ofruesin, kufirin e llogarive, kuotën dhe domenin e sajtit në mënyrë që klientët të mund të krijojnë emrat e tyre të kutive postare nga faqja e llogarisë pas blerjes.
 
@@ -148,15 +148,15 @@ Zbatimi i rekomanduar:
 
 Nëse provisioning dështon, llogaria dhe anëtarësimi i klientit mund të ekzistojnë ende, ndërsa anëtarësimi i emailit ose kutia postare te ofruesi kërkon ndjekje nga administratori. Kontrolloni regjistrat e aktivitetit të Ultimate Multisite dhe regjistrat e ofruesit përpara se të riprovoni.
 
-## Përcjellësit e emailit CyberPanel
+## Përcjellësit e emailit CyberPanel {#cyberpanel-email-forwarders}
 
 Për rrjetet e mbështetura nga CyberPanel, versioni 1.1.0 shton mbështetje për përcjellës emaili. Përdorni përcjellës kur klientëve u duhen adresa si `info@customer-domain.test` për të ridrejtuar postën te një inbox tjetër pa krijuar një kuti postare të plotë.
 
 Përpara se të ofroni përcjellës, konfirmoni që integrimi CyberPanel është i konfiguruar dhe i arritshëm. Shihni udhëzuesin [Integrimi CyberPanel](../../user-guide/administration/cyberpanel-integration) për host-in, emrin e përdoruesit, fjalëkalimin dhe konstantet e paketës të kërkuara.
 
-## Regjistri i ndryshimeve
+## Regjistri i ndryshimeve {#changelog}
 
-### Versioni 1.1.0 - Publikuar më 2026-05-05
+### Versioni 1.1.0 - Publikuar më 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * E re: SSO për webmail dhe hyrje me magic-link — klientët mund të aksesojnë webmail drejtpërdrejt nga llogaria e tyre me autentikim me një klikim.
 * E re: Funksionaliteti i ndryshimit të fjalëkalimit u shtua te widget-i i menaxhimit të llogarisë së emailit.
@@ -170,28 +170,28 @@ Përpara se të ofroni përcjellës, konfirmoni që integrimi CyberPanel është
 * Rregullim: Spam-i i regjistrit për çdo kërkesë u hoq nga inicializimi i Email_Account_Manager.
 * Përmirësuar: Faqja e cilësimeve tani filtrohet për të shfaqur vetëm ofruesit e emailit aktivë dhe të konfiguruar.
 
-## Pyetje të shpeshta
+## Pyetje të shpeshta {#frequently-asked-questions}
 
-### A mund të krijojnë klientët llogaritë e tyre të emailit?
+### A mund të krijojnë klientët llogaritë e tyre të emailit? {#can-customers-create-their-own-email-accounts}
 
 Po. Kur klienti ka një membership emaili aktive për një domen dhe produkti lejon llogari shtesë, klientët mund të krijojnë dhe menaxhojnë kutitë e tyre postare nga faqja e Account.
 
-### A e mbështet çdo ofrues SSO për webmail?
+### A e mbështet çdo ofrues SSO për webmail? {#does-every-provider-support-webmail-sso}
 
 Jo. Mbështetja për SSO dhe magic-link varet nga ofruesi aktiv i emailit. Ofruesit pa një API për access-link mund të mbështesin ende krijimin e kutive postare dhe ndryshimet e fjalëkalimit.
 
-### A mund të krijojnë administratorët llogari emaili për klientët?
+### A mund të krijojnë administratorët llogari emaili për klientët? {#can-administrators-create-email-accounts-for-customers}
 
 Po. Administratorët mund të krijojnë llogari emaili nga ndërfaqja admin, përfshirë vendosjen e fjalëkalimit fillestar gjatë krijimit të llogarisë. Për menaxhimin me vetëshërbim nga klienti, sigurohuni gjithashtu që klienti të ketë një membership emaili aktive për domenin.
 
-### A mund ta jap falas një llogari emaili?
+### A mund ta jap falas një llogari emaili? {#can-i-give-an-email-account-away-for-free}
 
 Po. Krijoni një produkt Email falas/me çmim zero dhe shtojeni si membership aktive për klientin, ose lejoni klientin të përfundojë checkout me zbritje 100%. Pasi të ekzistojë membership-i i emailit, klienti ose një administrator mund të krijojë kutinë postare reale.
 
-### Pse caktimi i një llogarie emaili kërkon një numër porosie?
+### Pse caktimi i një llogarie emaili kërkon një numër porosie? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Fusha Membership kërkon një membership ekzistuese Ultimate Multisite sipas numrit të saj të referencës/porosisë. Nëse klienti nuk ka blerë një produkt emaili dhe ju nuk keni krijuar manualisht një membership emaili, nuk ka membership/porosi emaili për t’u caktuar. Krijoni fillimisht membership-in e emailit, pastaj krijoni ose caktoni kutinë postare.
 
-### A janë përcjellësit të njëjtë me kutitë postare?
+### A janë përcjellësit të njëjtë me kutitë postare? {#are-forwarders-the-same-as-mailboxes}
 
 Jo. Një kuti postare ruan postën dhe ka kredenciale hyrjeje. Një përcjellës ridrejton postën në një adresë tjetër dhe nuk ofron një inbox të veçantë.

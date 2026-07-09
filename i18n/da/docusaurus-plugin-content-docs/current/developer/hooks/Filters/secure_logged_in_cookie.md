@@ -4,11 +4,11 @@ title: Filter - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie
+# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtrerer, om login-cookien kun skal sendes over HTTPS.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrerer, om login-cookien kun skal sendes over HTTPS.
 | $user_id | `int` | Bruger-ID. |
 | $secure | `bool` | Om auth-cookien kun skal sendes over HTTPS. |
 
-### Siden
+### Siden {#since}
 
 - 3.1.0
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) på linje 91

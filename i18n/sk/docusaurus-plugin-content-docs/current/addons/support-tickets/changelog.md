@@ -3,13 +3,13 @@ title: Zoznam zmien tiketov podpory
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Zoznam zmien Support Tickets
+# Zoznam zmien Support Tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Vylepšené: Odstránený adresár vendor/ zo sledovania v Git (už pokrytý .gitignore), čím sa zmenšila veľkosť repozitára
 * Vylepšené: Testované až po WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Oprava: Prijímanie hodnôt null v setteroch nullable modelu tiketu
 * Oprava: Ukladanie všetkých tiketov do globálnych tabuliek v rámci celej siete pre správnu podporu multisite
 * Oprava: Skrytie polí personálu a oprava presmerovania na prázdnu stránku vo formulári nového tiketu zákazníka
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Vylepšené: Podmienené načítanie frontendových assetov iba na stránkach podpory tiketov
 * Vylepšené: Preskočenie autoloadera pluginu, keď koreňový autoloader Bedrock už načítal závislosti
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Pridané: Plná funkčnosť zobrazovania tiketov pre admin a frontend
 * Pridané: AJAX handler pre odosielanie odpovedí na tikety
 * Pridané: Podpora funkčnosti odpovedí na tikety so správnym spracovaním formulára
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Vylepšené: Štruktúra databázy so správnymi triedami dopytov a schém pre odpovede a prílohy
 * Vylepšené: Migrácia na skutočné vlastnosti namiesto atribútov pre modely tiketov
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Aktualizované: Premenovaný prefix na ultimate-multisite pre konzistentnosť
 * Aktualizované: Štandardizácia text domain
 * Opravené: Menšie opravy chýb a vylepšenia
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Úvodné vydanie
 * Kompletný systém správy tiketov
 * Viacúrovňové riadenie prístupu

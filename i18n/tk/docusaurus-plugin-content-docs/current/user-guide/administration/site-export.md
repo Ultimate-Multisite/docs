@@ -3,27 +3,27 @@ title: Sayt satyn etme
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sayt Çykarmak (Site Export)
+# Sayt Çykarmak (Site Export) {#site-export}
 
 **Sayt Çykarmak** admin sahəsi sizi bir saytı, ýa-da bütün ulgamy bir dowamly arkivi hökmünde indirip almagyňyz üçin paketlemek üçäm. Bu, migratsiya, buýruklama (backup) ýa-da başga birine bertarap etmek işleri üçin amatlydyr.
 
-## Bir sayty çykarmak
+## Bir sayty çykarmak {#exporting-one-site}
 
 **Ultimate Multisite > Site Export** bilen girip **Generate new Site Export** seçimiň. Çykarmak isleýän subsiteyi saýlaň, soňra arkivde ýüklemeler (uploads), pluginler we tema (themes) barada gürrüň berjekdigi üçin birini saýlaň.
 
 Çykarmak tamamlandygyndan soň, **Existing Exports** listinden ZIP faylyny indirip aluň. Şu wagt çykarylan ZIP-ler özüni başlatyp biljek `index.php` we `readme.txt` barada hem içerir, bu bolsa arkivi başga bir hosta ýüklemek we ayrı import pluginini öňden kurmagyşymyz sebäpli, onu serişdäki kurulumdan has bilen başlatmaga mümkinçilik berýär.
 
-## Bütün ulgamy çykarmak
+## Bütün ulgamy çykarmak {#exporting-the-whole-network}
 
 Ulgamdaki ähli subsiteyi öz içine alýan bir ZIP arkivi gerek bolsa, Site Export sahasynda **Network Export**-i ulanuň. Bu, host migratsiyalarından, fedi geler (disaster-recovery) ýigmälerdan ýa-da her bir subsite birleşip gitmeli bolan aşgabat döwrüni täzelenmek üçin amatlydyr.
 
 Ulgam çykarmagy bir sayt çykarmagyndan has uly bolup biler, şonuň üçin ony işlän adamlar az bolan wagtda ýerine ýetiriň we maksatlandyrylýan depolama ýerinde ZIP fayllaryny, pluginleri, temalary we özüni başlatyp biljek arkivleri saklamak üçin yetýärlik boýuklygy barada barlap görüň.
 
-### Network Import Bundles (Ulgam Çykarmak Paketleri)
+### Network Import Bundles (Ulgam Çykarmak Paketleri) {#network-import-bundles}
 
 Ultimate Multisite 2.12.0 bilen başlap, Site Exporter **network import bundles** — ulgam-da ähli saytlary täzelenmek üçin özel taýynlandyrylmagan arkivleri döredip bilýär. Network import bundle birden artykma saytlary täzelenmek üçin zerur bolan ähli fayllary we metadata (maglumatlary) öz içine alýar.
 
-#### Network Import Bundle Dörmek (Generating a Network Import Bundle)
+#### Network Import Bundle Dörmek (Generating a Network Import Bundle) {#generating-a-network-import-bundle}
 
 1. **Ultimate Multisite > Site Export** bilen geçiň
 2. **Generate new Network Export** düwümesini basyň
@@ -32,7 +32,7 @@ Ultimate Multisite 2.12.0 bilen başlap, Site Exporter **network import bundles*
 5. **Generate** düwümesini basyň
 6. ZIP paketini **Existing Exports** (Mevcut Exportlar) listinden indirip aluň
 
-#### Network Import Bundle bilen Geri Dörmek
+#### Network Import Bundle bilen Geri Dörmek {#restoring-from-a-network-import-bundle}
 
 Şebekäsi içeport paketindän site-leri geri dörmek üçin:
 
@@ -52,7 +52,7 @@ Network import bundle şu zatlary saklaýar:
 - Media uploadlar (bundle-de goşulsa)
 - Custom database tablisa we maglumatlar
 
-## Özüni başlatýan export ZIP-ini kurmak
+## Özüni başlatýan export ZIP-ini kurmak {#installing-a-self-booting-export-zip}
 
 Täze hosta üçin özüni başlatýan ZIP-i geri döretmek üçin:
 

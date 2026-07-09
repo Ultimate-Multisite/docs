@@ -3,11 +3,11 @@ title: Serĉo de domajno en kaplinio
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Serĉo de domajno en kaplinio
+# Serĉo de domajno en kaplinio {#header-domain-search}
 
 Uzu ĉi tiun agordon kiam vi volas malgrandan formularon en la kaplinio, kiu komencas domajnan serĉon, poste lasas la klienton elekti el disponeblaj domajnoj ene de la Ultimate Multisite checkout.
 
-## Postuloj
+## Postuloj {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Uzu ĉi tiun agordon kiam vi volas malgrandan formularon en la kaplinio, kiu kom
   - Subtenataj TLDs agorditaj, ekzemple `com`, `net`, kaj `org`.
 - Valida checkout formularo enhavanta la kampon **Elekto de domajno**.
 
-## Checkout formularo
+## Checkout formularo {#checkout-form}
 
 1. Kreu aŭ redaktu la checkout formularon uzatan de la registra paĝo.
 2. Aldonu la normalajn postulatajn checkout/account kampojn, inkluzive de **Username**. Checkout formularo enhavanta nur la domajnan kampon estas rifuzata de Ultimate Multisite validigo.
@@ -30,7 +30,7 @@ La registra paĝo devus bildigi la checkout formularon, ekzemple:
 [wu_checkout slug="domain-form"]
 ```
 
-## Kaplinia formularo
+## Kaplinia formularo {#header-form}
 
 Aldonu malgrandan `GET` formularon en la site kaplinio, kiu sendas la enigitan serĉterminon al la checkout paĝo kiel `domain_name`:
 
@@ -44,7 +44,7 @@ Aldonu malgrandan `GET` formularon en la site kaplinio, kiu sendas la enigitan s
 
 Ne antaŭelektu domajnon en propra kaplinia JavaScript. La kaplinio devus nur transdoni la serĉterminon. La Domain Seller checkout skripto legas `?domain_name=example`, plenigas la checkout serĉkeston, kaj rulas la disponeblecan serĉon por ke la kliento povu elekti el la revenigitaj domajnoj.
 
-## Atendata konduto
+## Atendata konduto {#expected-behaviour}
 
 Serĉi `example` en la kaplinio devus malfermi:
 
@@ -61,7 +61,7 @@ La checkout devus tiam montri elekteblajn rezultojn kiel:
 
 Post elekto de disponebla rezulto, la menda resumo devus inkluzivi la domajnan registran produkton kaj la elektitan domajnan nomon.
 
-## Kontrolo
+## Kontrolo {#verification}
 
 1. Malfermu la hejmpaĝon.
 2. Serĉu nudan nomon, ekzemple `example`.
@@ -71,7 +71,7 @@ Post elekto de disponebla rezulto, la menda resumo devus inkluzivi la domajnan r
 6. Alklaku **Elekti** por disponebla domajno.
 7. Konfirmu ke la menda resumo enhavas `Domain Registration - example.com` aŭ la elektitan domajnon.
 
-## Problemosolvado
+## Problemosolvado {#troubleshooting}
 
 - Se neniu listo aperas, kontrolu la retan langeton de la retumilo por `admin-ajax.php?action=wu_domain_search` kaj konfirmu ke ĝi revenigas ne-malplenajn `domains` aŭ `results`.
 - Se la checkout formularo malsukcesas validigon dum konservado, aldonu la postulatajn account kampojn kiel **Username**.

@@ -3,13 +3,13 @@ title: Inkambu Yokukhokha kanye ne-DNS Yekhasimende
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Inkambu Yokukhokha Nokuphathwa kwe-DNS Yamakhasimende
+# Inkambu Yokukhokha Nokuphathwa kwe-DNS Yamakhasimende {#checkout-field-and-customer-dns-management}
 
-## Inkambu yokukhokha ethi Ukukhetha i-Domain
+## Inkambu yokukhokha ethi Ukukhetha i-Domain {#the-domain-selection-checkout-field}
 
 Inkambu ethi **Ukukhetha i-Domain** iyisici sokukhokha esinika amakhasimende ukukhetha ukuthi ayithola kanjani i-domain yesayithi lawo. Yengeze kunoma yiliphi ifomu lokukhokha ukuze unike amandla ukuthengiswa kwama-domain.
 
-### Ukwengeza inkambu efomini lokukhokha
+### Ukwengeza inkambu efomini lokukhokha {#adding-the-field-to-a-checkout-form}
 
 1. Yiya ku-**Network Admin › Ultimate Multisite › Amafomu Okukhokha**
 2. Vula noma dala ifomu lokukhokha
@@ -18,7 +18,7 @@ Inkambu ethi **Ukukhetha i-Domain** iyisici sokukhokha esinika amakhasimende uku
 5. Lungiselela izinketho zenkambu (bheka ngezansi)
 6. Londoloza ifomu
 
-### Izinketho zenkambu
+### Izinketho zenkambu {#field-options}
 
 **Izindlela ze-domain** — Khetha ukuthi yimaphi amathebhu abonwa yikhasimende. Indlela ngayinye inganikwa amandla noma ikhutshazwe ngokuzimela:
 
@@ -32,7 +32,7 @@ Inkambu ethi **Ukukhetha i-Domain** iyisici sokukhokha esinika amakhasimende uku
 
 **Umkhiqizo we-domain** — Ngokuzikhethela, namathisela le nkambu kumkhiqizo othile we-domain. Uma ingasethwanga, i-addon ikhetha ngokuzenzakalelayo umkhiqizo ohambisanayo ngokusekelwe ku-TLD ikhasimende eliyiseshayo.
 
-### Izinkambu zokuxhumana zomubhalisi
+### Izinkambu zokuxhumana zomubhalisi {#registrant-contact-fields}
 
 Uma ikhasimende likhetha ithebhu ethi **Bhalisa i-Domain Entsha**, ifomu lokukhokha lengeza izinkambu zokuxhumana zomubhalisi ngaphakathi:
 
@@ -43,11 +43,11 @@ Uma ikhasimende likhetha ithebhu ethi **Bhalisa i-Domain Entsha**, ifomu lokukho
 
 Lokhu kudingwa yibo bonke ababhalisi futhi kuqinisekiswa ngaphambi kokuthi kwenziwe ucingo lwe-API lokubhalisa. Izinombolo zocingo zifomethwa ngokuzenzakalelayo zibe ifomethi yamazwe omhlaba ethi `+CC.NNN` elindelwe ababhalisi.
 
-### I-URL yesayithi ekhiqizwa ngokuzenzakalelayo
+### I-URL yesayithi ekhiqizwa ngokuzenzakalelayo {#auto-generated-site-url}
 
 Uma ikhasimende libhalisa noma lixhumanisa i-domain, inkambu ye-URL yesayithi igcwaliswa ngokuzenzakalelayo isuselwa ku-domain ekhethiwe. Amakhasimende awadingi ukugcwalisa inkambu ye-URL ehlukile.
 
-### Ukuziphatha kosesho
+### Ukuziphatha kosesho {#search-behaviour}
 
 - Ukutholakala kwe-domain kuhlolwa ngesikhathi sangempela nge-AJAX njengoba ikhasimende lithayipha
 - Iziphakamiso zamanye ama-TLD ziboniswa lapho i-domain ekhethwayo ingatholakali
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Ukuphathwa kwe-DNS kwamakhasimende
+## Ukuphathwa kwe-DNS kwamakhasimende {#customer-dns-management}
 
 Amakhasimende angaphatha amarekhodi e-DNS ama-domain awo abhalisiwe ekhasini elithi **My Account**, ngaphansi kokufakwa kwe-domain yawo.
 
-### Izinhlobo zamarekhodi ezisekelwayo
+### Izinhlobo zamarekhodi ezisekelwayo {#supported-record-types}
 
 | Uhlobo | Ukusetshenziswa |
 |---|---|
@@ -91,11 +91,11 @@ Amakhasimende angaphatha amarekhodi e-DNS ama-domain awo abhalisiwe ekhasini eli
 | **MX** | Setha iseva yokushintshisana ngemeyili |
 | **TXT** | Engeza amarekhodi e-SPF, DMARC, okuqinisekisa, noma amanye amarekhodi ombhalo |
 
-### Yibaphi abahlinzeki abasekela ukuphathwa kwe-DNS?
+### Yibaphi abahlinzeki abasekela ukuphathwa kwe-DNS? {#which-providers-support-dns-management}
 
 Ukuphathwa kwe-DNS (ukwengeza, ukuhlela, ukususa amarekhodi) kuyatholakala nge-**OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, kanye ne-**Openprovider**. Ama-domain e-**Hostinger** angabuyekeza ama-nameserver nge-Domain Seller; amarekhodi e-DNS ama-domain asingathiwe aphathwa ukuhlanganiswa okuyisisekelo kwe-Hostinger kokuxhumanisa ama-domain. Ama-domain e-Namecheap, GoDaddy, kanye ne-NameSilo abonisa isimo nolwazi lokuphelelwa yisikhathi kodwa i-DNS kufanele iphathwe ngqo kuphaneli yokulawula yomubhalisi.
 
-### Amarekhodi e-DNS azenzakalelayo
+### Amarekhodi e-DNS azenzakalelayo {#default-dns-records}
 
 Ungalungiselela amarekhodi e-DNS azenzakalelayo asetshenziswa ngokuzenzakalelayo lapho i-domain ibhaliswa. Yiya ku-**Settings › Domain Seller › Amarekhodi e-DNS Azenzakalelayo**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: ukubuka nokuhlela i-DNS
+### Admin: ukubuka nokuhlela i-DNS {#admin-viewing-and-editing-dns}
 
 Ama-admin enethiwekhi angabuka futhi ahlele amarekhodi e-DNS anoma iyiphi i-domain yekhasimende ekhasini lokuhlela le-domain ku-**Network Admin › Ultimate Multisite › Ama-Domain**.

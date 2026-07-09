@@ -4,21 +4,21 @@ title: Azzjoni - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Azzjoni: wu_register_integrations
+# Azzjoni: wu_register_integrations {#action-wuregisterintegrations}
 
 Tiskatta biex tippermetti lill-integrazzjonijiet jirreġistraw lilhom infushom.
 
 Core jirreġistra l-integrazzjonijiet tiegħu hawn.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | L-istanza tar-reġistru. |
 
-### Minn
+### Minn {#since}
 
 - 2.5.0
-### Sors
+### Sors {#source}
 
 Iddefinit f’[`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L113) fil-linja 113

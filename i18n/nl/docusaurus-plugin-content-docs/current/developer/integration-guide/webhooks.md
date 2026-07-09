@@ -3,11 +3,11 @@ title: Webhookverwerking
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Afhandeling
+# Webhook Afhandeling {#webhook-handling}
 
 Maak aangepaste webhook-eindpunten om gebeurtenissen van externe services te ontvangen en gegevens te synchroniseren met Ultimate Multisite.
 
-## Aangepast Webhook-eindpunt
+## Aangepast Webhook-eindpunt {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Beveiligingsoverwegingen
+## Beveiligingsoverwegingen {#security-considerations}
 
 - Verifieer altijd webhookhandtekeningen met HMAC of een gedeeld geheim
 - Gebruik een `permission_callback` op je REST-route — stel het nooit in op `__return_true` in productie

@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# Intégration WooCommerce
+# Intégration WooCommerce {#woocommerce-integration}
 
 L’intégration WooCommerce fonctionne de manière très similaire à notre Manual Gateway. Elle offre une grande flexibilité à vos utilisateurs, en leur permettant de choisir n’importe lequel des formulaires de paiement disponibles sur votre installation WooCommerce. Et c’est simple : une fois la période de facturation de l’utilisateur terminée, l’abonnement de l’utilisateur est mis en attente. En même temps, une commande sera créée sur l’installation WooCommerce du site principal du réseau. L’utilisateur reçoit ensuite une facture dans son e-mail, avec un lien pour effectuer le paiement. Une fois le paiement reçu, l’abonnement est renouvelé.
 
-## Fonctionnalités
+## Fonctionnalités {#features}
 
 - Intégration facile entre Ultimate Multisite et WooCommerce
 - Plusieurs méthodes de paiement disponibles
 - Facturation récurrente automatisée à l’aide du cœur d’abonnements inclus, avec des améliorations facultatives du plugin WooCommerce Subscriptions
 - Les totaux du checkout incluent les taxes Ultimate Multisite sous forme de lignes de frais WooCommerce séparées et non taxables, afin que les clients puissent vérifier les montants des taxes avant le paiement
 
-## Documentation
+## Documentation {#documentation}
 
 **Configurer l’intégration WooCommerce**
 
 **Étendre vos options de paiement avec Ultimate Multisite : intégration WooCommerce**
 
-## Installation
+## Installation {#installation}
 
 1. Téléversez 'ultimate-multisite-woocommerce' dans le répertoire '/wp-content/plugins/'
 2. Activez le plugin via le menu 'Plugins' dans WordPress
 3. Suivez l’assistant étape par étape pour configurer le plugin
 
-## Guide d’utilisation
+## Guide d’utilisation {#usage-guide}
 
 _**NOTE IMPORTANTE : cet article fait référence à Ultimate Multisite version 2.x.**_
 
@@ -40,7 +40,7 @@ Nous comprenons que _Stripe_ et _PayPal_ ne sont pas disponibles dans certains p
 
 _WooCommerce_ est un plugin eCommerce très populaire. Des développeurs du monde entier ont créé des modules complémentaires pour y intégrer différentes passerelles de paiement. Nous en avons tiré parti pour étendre les passerelles de paiement que vous pouvez utiliser dans le système de facturation d’Ultimate Multisite.
 
-## Configuration
+## Configuration {#setting-it-up}
 
 Tout d’abord, vous devez installer le module complémentaire WooCommerce Integration, qui est **gratuit pour les utilisateurs licenciés**. Pour l’installer, cliquez sur Ultimate Multisite dans votre Dashboard super administrateur et sélectionnez **Modules complémentaires**.
 
@@ -68,11 +68,11 @@ Une fois installé, vous verrez une option supplémentaire dans les réglages de
 
 Vous pouvez configurer certains réglages de base, comme le nom d’affichage qui apparaîtra dans le front-end et les instructions pour guider vos utilisateurs dans leur flux de checkout. Vous pouvez ensuite accéder aux réglages _WooCommerce_ de votre **site principal** pour activer et configurer la passerelle de paiement que vous préférez utiliser.
 
-### Lignes de frais de taxe du checkout
+### Lignes de frais de taxe du checkout {#checkout-tax-fee-lines}
 
 Lorsqu’un checkout Ultimate Multisite inclut des taxes, l’intégration ajoute chaque montant de taxe Ultimate Multisite au checkout WooCommerce sous forme de ligne de frais séparée et non taxable. Cela permet de garder le total des taxes visible avant le paiement tout en empêchant WooCommerce de taxer à nouveau les frais de taxe.
 
-## Comment gérer le paiement
+## Comment gérer le paiement {#how-to-manage-the-payment}
 
 L’intégration WooCommerce fonctionne de manière très similaire à notre **Manual Gateway**. L’inconvénient est que chaque paiement doit être réglé manuellement à la fin de la période de facturation. Voici comment fonctionne le flux :
 
@@ -82,13 +82,13 @@ L’intégration WooCommerce fonctionne de manière très similaire à notre **M
 
   * Une fois le paiement reçu, l’adhésion est **renouvelée** , le paiement est enregistré dans Ultimate Multisite et la commande est définie comme terminée.
 
-### Quelques notes importantes :
+### Quelques notes importantes : {#some-important-notes}
 
   * La fonctionnalité par défaut d’Ultimate Multisite fonctionne toujours avec cette forme d’intégration. Par exemple, **émettre des remboursements** depuis l’écran **Gestion de l’abonnement** communiquera avec WooCommerce pour émettre le remboursement en utilisant le formulaire de paiement sélectionné.
 
   * Ultimate Multisite : l’intégration WooCommerce s’appuie sur WP-Cron pour fonctionner. Cela fonctionne très bien la plupart du temps, mais si le site a peu de trafic, alors le cron n’est pas déclenché pour vérifier les événements planifiés et l’événement est manqué, ce qui peut provoquer des retards d’exécution.
 
-## Plugin WooCommerce Subscriptions
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
 
 Initier manuellement un paiement chaque mois n’est pas idéal pour les utilisateurs finaux, car les abonnements sont censés se renouveler automatiquement à chaque cycle de facturation. L’add-on WooCommerce Integration inclut désormais le code principal des abonnements, de sorte que les produits récurrents utilisent toujours les abonnements pour la facturation récurrente.
 
@@ -100,7 +100,7 @@ Et c’est tout. Vos utilisateurs finaux n’auront plus besoin d’effectuer ma
 
 En plus d’une commande créée sur votre site principal sous _WooCommerce_, un abonnement sera également créé pour chaque Account.
 
-### Comportement de suspension en cas d’échec du renouvellement
+### Comportement de suspension en cas d’échec du renouvellement {#failed-renewal-suspension-behavior}
 
 Par défaut, les adhésions restent actives pendant que WooCommerce Subscriptions traite son calendrier de nouvelles tentatives après échec de paiement. Cela préserve la fenêtre de grâce normale de WooCommerce Subscriptions, de sorte qu’un renouvellement récupéré puisse resynchroniser l’abonnement et l’adhésion sans interrompre prématurément l’accès.
 

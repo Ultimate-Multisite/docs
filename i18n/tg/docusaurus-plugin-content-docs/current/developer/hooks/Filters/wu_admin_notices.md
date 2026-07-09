@@ -4,11 +4,11 @@ title: Филтр - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Филтр: wu_admin_notices
+# Филтр: wu_admin_notices {#filter-wuadminnotices}
 
 Ба таҳиягарон иҷозат медиҳад, ки огоҳиҳои админро, ки аз ҷониби Ultimate Multisite илова шудаанд, филтр кунанд.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | Агар огоҳиҳои пӯшидашаванда филтр шуда бошанд. |
 | $dismissed_messages | `array` | Рӯйхати калидҳои огоҳии пӯшидашуда. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 2.0.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) дар сатри 121 муайян шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}

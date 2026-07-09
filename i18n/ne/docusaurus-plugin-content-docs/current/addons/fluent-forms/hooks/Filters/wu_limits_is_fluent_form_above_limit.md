@@ -4,11 +4,11 @@ title: फिल्टर - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# फिल्टर: wu_limits_is_fluent_form_above_limit
+# फिल्टर: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
 
 दिइएको फारम प्रकार यो plan मा अनुमति छ कि छैन जाँच गर्छ। plugin developers लाई फर्काइने मान फिल्टर गर्न अनुमति दिन्छ
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,10 +17,10 @@ _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 | $form_count | `int` | हालको फारम सङ्ख्या |
 | $quota | `int` | अनुमति दिइएको quota |
 
-### Since
+### Since {#since}
 
 - 1.0.0
-### Source
+### Source {#source}
 
 - [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L56) मा line 56 मा परिभाषित
 - [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L89) मा line 89 मा परिभाषित

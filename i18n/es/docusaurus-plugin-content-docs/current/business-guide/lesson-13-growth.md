@@ -3,19 +3,19 @@ title: 'Lección 13: Escalando'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lección 13: Escalando
+# Lección 13: Escalando {#lesson-13-scaling-up}
 
 Tienes una plataforma funcional con clientes que pagan. Esta lección cubre cómo pasar de una operación pequeña a un negocio sostenible: escalando la infraestructura, automatizando las operaciones y aumentando los ingresos por cliente.
 
-## Dónde nos quedamos
+## Dónde nos quedamos {#where-we-left-off}
 
 FitSite está activo, los clientes se están registrando y tú estás gestionando las operaciones diarias. Ahora nos centraremos en el crecimiento.
 
-## Conoce tus números
+## Conoce tus números {#know-your-numbers}
 
 Antes de escalar, entiende en qué punto te encuentras:
 
-### Métricas clave
+### Métricas clave {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Ingreso total mensual recurrente por suscripción.
 - **Número de clientes**: Total de suscriptores activos.
@@ -24,7 +24,7 @@ Antes de escalar, entiende en qué punto te encuentras:
 - **LTV (Lifetime Value)**: Ingreso promedio por cliente durante toda su suscripción.
 - **CAC (Customer Acquisition Cost)**: Costo promedio para adquirir un cliente.
 
-### Ejemplo: FitSite con 50 clientes
+### Ejemplo: FitSite con 50 clientes {#example-fitsite-at-50-customers}
 
 | Métrica | Valor |
 |--------|-------|
@@ -36,9 +36,9 @@ Antes de escalar, entiende en qué punto te encuentras:
 
 Estos números te dicen en qué debes concentrarte. ¿Alta tasa de abandono? Arregla la retención. ¿Bajo ARPU? Promueve mejoras. ¿Alto CAC? Optimiza los canales de adquisición.
 
-## Escalando la infraestructura
+## Escalando la infraestructura {#scaling-infrastructure}
 
-### Cuándo escalar
+### Cuándo escalar {#when-to-scale}
 
 Escala el hosting cuando:
 
@@ -47,7 +47,7 @@ Escala el hosting cuando:
 - Te estás acercando a 100+ sitios activos.
 - Aumentan las quejas de los clientes sobre la velocidad.
 
-### Cómo escalar
+### Cómo escalar {#how-to-scale}
 
 - **Escalado vertical**: Actualiza a un servidor más grande (más CPU, RAM).
 - **Capas de caché**: Añade Redis/Memcached para el almacenamiento en caché de objetos y caché de páginas para contenido estático.
@@ -55,7 +55,7 @@ Escala el hosting cuando:
 - **Optimización de la base de datos**: A medida que crece la red, las consultas a la base de datos se ralentizan. Optimiza las tablas, añade índices y considera un servidor de base de datos dedicado.
 - **Separación de preocupaciones**: Mueve el almacenamiento de medios a almacenamiento de objetos (compatible con S3) y descarga el correo electrónico a un servicio de correo transaccional.
 
-### Migración de hosting
+### Migración de hosting {#hosting-migration}
 
 Si tu host actual no puede escalar más, planifica una migración:
 
@@ -65,11 +65,11 @@ Si tu host actual no puede escalar más, planifica una migración:
 4. Actualiza el DNS con un TTL mínimo de antemano.
 5. Verifica que todo funcione después de la migración.
 
-## Automatizando operaciones
+## Automatizando operaciones {#automating-operations}
 
 A medida que creces, los procesos manuales se convierten en cuellos de botella. Automatiza lo que puedas:
 
-### Webhooks y Zapier
+### Webhooks y Zapier {#webhooks-and-zapier}
 
 Usa [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/integrations/zapier) para automatizar:
 
@@ -78,7 +78,7 @@ Usa [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/integra
 - **Fallos de pago** → Alerta en tu herramienta de monitoreo.
 - **Mejoras de plan** → Correo electrónico de felicitación con guía de nuevas funciones.
 
-### Automatización de correo electrónico
+### Automatización de correo electrónico {#email-automation}
 
 Pasa de correos electrónicos manuales a secuencias automatizadas:
 
@@ -87,30 +87,30 @@ Pasa de correos electrónicos manuales a secuencias automatizadas:
 - Recordatorios de mejora cuando los clientes se acercan a los límites del plan.
 - Recordatorios de renovación para suscriptores anuales.
 
-### Automatización de soporte
+### Automatización de soporte {#support-automation}
 
 - **Respuestas predefinidas** para preguntas comunes.
 - **Respuestas automáticas** que confirman la recepción de tickets de soporte.
 - **Sugerencias de base de conocimientos** cuando los clientes envían tickets que coinciden con artículos existentes.
 
-## Aumentando los ingresos
+## Aumentando los ingresos {#increasing-revenue}
 
 El crecimiento no se trata solo de más clientes. También se trata de más ingresos por cliente.
 
-### Venta adicional a clientes existentes (Upselling)
+### Venta adicional a clientes existentes (Upselling) {#upselling-existing-customers}
 
 - **Mejoras de plan**: Campañas dirigidas que muestran funciones Growth/Pro a clientes Starter.
 - **Mejoras de pedido**: Promociona productos complementarios a clientes existentes por correo electrónico.
 - **Conversión anual**: Ofrece un descuento a los clientes mensuales para que cambien a facturación anual.
 
-### Nuevas fuentes de ingresos
+### Nuevas fuentes de ingresos {#new-revenue-streams}
 
 - **Configuración lista para usar**: Cobra una tarifa premium por configurar y personalizar el sitio de un cliente.
 - **Servicios de diseño personalizados**: Ofrece trabajo de diseño a medida además de la plantilla.
 - **Sesiones de capacitación**: Talleres pagados uno a uno para clientes que desean ayuda práctica.
 - **Plugins premium**: Ofrece plugins premium específicos de nicho como complementos de pago (ej. un widget de reserva de clases de fitness).
 
-### Aumentar precios
+### Aumentar precios {#raising-prices}
 
 A medida que tu plataforma madura y añade valor:
 
@@ -118,7 +118,7 @@ A medida que tu plataforma madura y añade valor:
 - Aumenta los precios para los nuevos registros.
 - Justifica los aumentos con nuevas funciones y mejoras.
 
-## Creando un equipo
+## Creando un equipo {#building-a-team}
 
 En algún momento, no puedes hacerlo todo tú solo. Contrataciones iniciales comunes:
 
@@ -128,7 +128,7 @@ En algún momento, no puedes hacerlo todo tú solo. Contrataciones iniciales com
 
 No necesitas empleados. Los contratistas y freelancers funcionan bien para un negocio de plataforma.
 
-## Hitos de crecimiento
+## Hitos de crecimiento {#growth-milestones}
 
 | Hito | MRR aproximado | Enfoque |
 |-----------|--------------|-------|
@@ -138,7 +138,7 @@ No necesitas empleados. Los contratistas y freelancers funcionan bien para un ne
 | 250-500 clientes | $25,000-$50,000 | Creación de equipo, nuevas fuentes de ingresos, funciones premium |
 | 500+ clientes | $50,000+ | Madurez de la plataforma, nichos adyacentes, posible salida (exit) |
 
-## Lo que construimos en esta lección
+## Lo que construimos en esta lección {#what-we-built-this-lesson}
 
 - **Un marco de métricas** para entender la salud del negocio.
 - **Plan de escalado de infraestructura** para crecer de docenas a cientos de sitios.

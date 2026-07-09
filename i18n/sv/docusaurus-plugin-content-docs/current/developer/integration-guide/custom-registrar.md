@@ -3,13 +3,13 @@ title: Bygga en anpassad registrar-integration
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Bygga en anpassad registrar-integration
+# Bygga en anpassad registrar-integration {#building-a-custom-registrar-integration}
 
 Domain Seller-addonet använder ett mönster som kallas **Integration Registry**. Varje registrar är en PHP-klass som implementerar `Domain_Selling_Capability` och registrerar sig via action-hooken `wu_domain_seller_register_capabilities`.
 
 Den här guiden visar hur du kopplar in en anpassad registrar.
 
-## Gränssnittet
+## Gränssnittet {#the-interface}
 
 Din klass måste implementera `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` och ärva från `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Valfria metoder
+### Valfria metoder {#optional-methods}
 
 Implementera dessa för att låsa upp ytterligare funktioner. Addonet känner av stödet via `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementera dessa för att låsa upp ytterligare funktioner. Addonet känner av
 | `get_epp_code(string $domain_name): array` | Domänöverföring (utgående) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domänöverföring (inkommande) |
 
-### Konvention för returvärde
+### Konvention för returvärde {#return-value-convention}
 
 Alla metoder returnerar en array som åtminstone innehåller en `success`-nyckel:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Lättläst felmeddelande'];
 
 ---
 
-## Registrera din kapacitet
+## Registrera din kapacitet {#registering-your-capability}
 
 Registrera din klass med action-hooken `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Det första argumentet till `add_capability()` är **provider ID** — en liten 
 
 ---
 
-## Lägga till fält för uppgifter i wizarden
+## Lägga till fält för uppgifter i wizarden {#adding-credential-fields-to-the-wizard}
 
 För att låta administratörer ange uppgifter via setup-wizarden, registrera din integration:
 
@@ -137,7 +137,7 @@ Uppgifter lagras som network options med fält-ID:n som nycklar. Hämta dem i di
 
 ---
 
-## Hooks för åtgärder efter registrering
+## Hooks för åtgärder efter registrering {#hooks-for-post-registration-actions}
 
 Använd dessa actions för att utlösa webhooks, provisionering, aviseringar eller CRM-uppdateringar:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Loggning
+## Loggning {#logging}
 
 Skriv till din provider-specifika loggkanal med `wu_log_add()`:
 

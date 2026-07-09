@@ -3,11 +3,11 @@ title: Àwọn Àpẹẹrẹ Kóòdù To ti Ni Ilọsiwaju
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Àwọn Àpẹẹrẹ Code Tí Ó Gá Jù
+# Àwọn Àpẹẹrẹ Code Tí Ó Gá Jù {#advanced-code-examples}
 
 Àwọn àpẹẹrẹ wọ̀nyí fi àwọn àpẹẹrẹ ìṣepọ̀ tí ó gá jù hàn pẹ̀lú Ultimate Multisite.
 
-## Ẹ̀rọ Ìdíyelé Alágbára
+## Ẹ̀rọ Ìdíyelé Alágbára {#dynamic-pricing-engine}
 
 Ẹ̀rọ ìdíyelé tó dá lórí àwọn òfin tí ń lo ẹdinwo fún ìwọ̀n púpọ̀, ìdúróṣinṣin, àti àsìkò:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Ìpèsè Site Tí Ó Gá Jù
+## Ìpèsè Site Tí Ó Gá Jù {#advanced-site-provisioning}
 
 Ṣàtúnṣe àwọn site tuntun laifọwọyi pẹ̀lú àwọn plugin, SSL, CDN, àwọn àfihànṣe, àti ìbójútó ní ìbámu pẹ̀lú àwọn ànímọ́ plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Eto Àwọn Ìdíwọ̀n Àdáni
+## Eto Àwọn Ìdíwọ̀n Àdáni {#custom-limitations-system}
 
 Tọ́pa kí o sì fi agbára mú àwọn ìdíwọ̀n ohun èlò pẹ̀lú àwọn ìkìlọ̀ lílò:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter pẹ̀lú `increment_item()`
+## BerlinDB Atomic Counter pẹ̀lú `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 ṣàfikún method `increment_item()` sí class BerlinDB `Query`. Lò ó láti ṣe àwọn ìfikún tó ní ààbò, atomic lórí àwọn column nọ́ńbà láìsí ìjà read-modify-write — ó wúlò fún àwọn counter, àwọn ipin lílò, àti àwọn àyẹ̀wò rate-limiting tí ń ṣiṣẹ́ lábẹ́ àwọn request tó ń ṣẹlẹ̀ pọ̀.
 
-### Ìbuwọ́lu method
+### Ìbuwọ́lu method {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 ṣàfikún method `increment_item()` sí class Berlin
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Lílò ìpìlẹ̀
+### Lílò ìpìlẹ̀ {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Títọ́pa lílò API fún membership kọ̀ọ̀kan
+### Títọ́pa lílò API fún membership kọ̀ọ̀kan {#tracking-api-usage-per-membership}
 
 Àpẹẹrẹ tó wúlò fún fífi agbára mú àwọn ìdíwọ̀n API rate fún membership kọ̀ọ̀kan:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Ìdí tí `increment_item()` fi dára ju `update_item()`
+### Ìdí tí `increment_item()` fi dára ju `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Ọ̀nà read-modify-write aláìlórúkọ kò ní ààbò lábẹ́ àwọn request tó ń ṣẹlẹ̀ pọ̀:
 

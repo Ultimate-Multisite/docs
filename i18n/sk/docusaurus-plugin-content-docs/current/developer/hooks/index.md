@@ -3,11 +3,11 @@ title: Referenčná príručka hookov
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referencia hookov
+# Referencia hookov {#hooks-reference}
 
 Automaticky generovaná dokumentácia pre všetkých **59 actions** a **118 filters** v Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Spustí sa pred presmerovaním autentifikácie.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Spustí sa bezprostredne pred nastavením autentifikačného cookie.
@@ -70,7 +70,7 @@ Automaticky generovaná dokumentácia pre všetkých **59 actions** a **118 filt
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Spustí sa po uložení objektu do databázy.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Umožní vývojárom pluginov pridať akcie do procesu odomknutia.
 
-## Filtre
+## Filtre {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtruje trvanie obdobia expirácie autentifikačného cookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtruje schému presmerovania autentifikácie.

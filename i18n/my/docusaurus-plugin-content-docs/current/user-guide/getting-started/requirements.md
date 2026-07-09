@@ -3,11 +3,11 @@ title: လိုအပ်ချက်များ
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite လိုအပ်ချက်များ
+# Ultimate Multisite လိုအပ်ချက်များ {#ultimate-multisite-requirements}
 
 Ultimate Multisite ကို မဝယ်ခင် ပထမဆုံး မေးလောက်တဲ့ မေးခွန်းက ကျွန်တော်တို့ plugin ကို အသုံးပြုဖို့ ဘာတွေ လိုအပ်လဲဆိုတာပါ။ ကံကောင်းတာက Ultimate Multisite ကို အသုံးပြုဖို့ အခြေခံ လိုအပ်ချက် အနည်းငယ်ပဲ ရှိပါတယ်: **domain name** တစ်ခု၊ ကောင်းမွန်တဲ့ **hosting provider** တစ်ခုနဲ့ WordPress **Multisite** installation တစ်ခုပါ။ ဒါပဲ လိုပါတယ်!
 
-## Domain Name
+## Domain Name {#domain-name}
 
 ပထမဆုံး domain name အကြောင်း ပြောကြရအောင်။
 
@@ -17,7 +17,7 @@ Domain name ရွေးတဲ့အခါ သင့်ရဲ့ အထူးပ
 
 ဝဘ်ဆိုက်တွေကို ဝန်ဆောင်မှုအဖြစ် ရောင်းချရင် မည်သည့် niche ကိုမဆို ကျွန်တော်တို့ plugin နဲ့ စီမံခန့်ခွဲနိုင်ပါတယ်! သင့် လုပ်ငန်းအစီအစဉ်နဲ့ ကိုက်ညီတဲ့ domain name ကို ရွေးချယ်ပါ။
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 သင့် niche နဲ့ လုပ်ငန်းကို ကိုယ်စားပြုတဲ့ ဆွဲဆောင်မှုရှိတဲ့ domain name ရပြီဆိုရင်၊ Ultimate Multisite နဲ့ သင့် network ကို host လုပ်ဖို့ ကောင်းမွန်တဲ့ web hosting ကုမ္ပဏီတစ်ခု ရွေးချယ်ရပါမယ်။ စျေးကွက်ထဲမှာ ကောင်းမွန်တဲ့ ရွေးချယ်စရာတွေ ရှိပါတယ်။ အချို့ hosting providers တွေက Ultimate Multisite နဲ့ ကောင်းကောင်း ပေါင်းစပ်အလုပ်လုပ်တာကြောင့် သင် ဘာတည်ဆောက်မလဲပေါ် မူတည်ပြီး အဆုံးအဖြတ်ပေး အချက်တစ်ခု ဖြစ်နိုင်ပါတယ်။
 
@@ -25,7 +25,7 @@ Ultimate Multisite က မည်သည့် hosting provider မှာမဆိ
 
 Server specifications အတွက် တိကျတဲ့ ဖော်မြူလာ မရှိပါဘူး၊ သင် ပေးမယ့် features နဲ့ functions တွေ၊ သင့် network ရဲ့ အရွယ်အစားပေါ် မူတည်ပါလိမ့်မယ်။ Shared hosting က စကောင်းသော အစ ဖြစ်နိုင်ပေမယ့်၊ သင့် network ကြီးထွားလာတာနဲ့အမျှ dedicated VPS တစ်ခု လိုလာနိုင်ပါတယ်။
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 အခု WordPress Multisite installation အကြောင်း နည်းနည်း ပြောကြရအောင်။
 

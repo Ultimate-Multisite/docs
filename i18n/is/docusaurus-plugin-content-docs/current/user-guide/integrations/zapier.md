@@ -3,7 +3,7 @@ title: Zapier samþætting
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Samning Ultima Multisite við Zapier
+# Samning Ultima Multisite við Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Í einum af greininum ræfum við [Webhooks](webhooks.md) og hvernig þeir geta verið notað til að tengja þessar við þriðja þjónustur.
 
@@ -15,7 +15,7 @@ Zapier hefur tengingar við meira en 5000 app, sem gerir samskipt milli ólíkra
 
 Þetta er mögulegt því að **Ultimate Multisite Zapier's triggers** og actions eru hannað með [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Hvernig byrja
+## Hvernig byrja {#how-to-start}
 
 Fyrst, leita eftir Ultimate Multisite í lista app-a Zapier. Eða þú getur klikkað á [þennan link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Notu **Copy to Clipboard** (Kopya í klíppborði) í hluta sem heitið er API K
 
 Klikka á knappa **Yes, Continue** (Já, fortsetja) til að fara í næsta skref. Ef allt virkar, þurfaðu að vera velkominnur af nýjum tengdum reikningnum þínum! Klikka á **Continue** (Fortsetja) til að skapa nýtt trigger.
 
-## Hvernig skapa nýja Trigger
+## Hvernig skapa nýja Trigger {#how-to-create-a-new-trigger}
 
 En þegar reikningurinn þinn er tengd geturðu sjá tilfelli sem eru til viðbót. Látum okkur velja **payment_received** (skiptingur færð) tilfelli fyrir þennan menntu.
 
@@ -67,7 +67,7 @@ Eftir að tilfellið hefur verið valdið og klikkt á **continue** (fortsetja),
 
 Í áhrifum okkar tónlistunnar var testurinn **gerðist vel** og sýndi vönduðan vöndun á dæmi upplýsinganna. Þessi dæmi upplýsingna mun verið mjög hvarðandi í leiðbeiningum þess til að skapa áhrif (actions). Þinn trigger er nú sett upp og bustið til að tengja við övrantar tækni.
 
-## Hvernig skapa áhrif (Actions)
+## Hvernig skapa áhrif (Actions) {#how-to-create-actions}
 
 Áhrif nota upplýsingar frá övrum triggers til að skapa nýja innsköppun í netinu þínu.
 
@@ -79,7 +79,7 @@ Eftir að tilfellið hefur verið valdið og klikkt á **continue** (fortsetja),
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Sett upp áhrifinn (Setting up the Action)
+### Sett upp áhrifinn (Setting up the Action) {#setting-up-the-action}
 
 Þetta er **hovedskrefið í áhrifinu** og hér eru dýrðar sem eru littli annar. Fyrir allt annað upplýsingu sem þú velur er **Item**. Item er **upplýsingamodellinn** netinu þíns eins og **Customers, Payments, Sites, Emails** og övrantar.
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency yana ba cibiyar sadarwarka damar karɓar kuɗi a kuɗaɗe daban-daban. Yana sauya farashi ta atomatik ta amfani da farashin musayar kuɗi na kai tsaye ko na hannu, yana ba ka damar saita takamaiman farashi na kowane samfuri ga kowanne kuɗi, kuma yana gano kuɗin da kowane baƙo ya fi so ta hanyar geolocation — duk ana sarrafa su daga Dashboard na gudanarwa guda ɗaya.
 
-## Muhimman Fasali
+## Muhimman Fasali {#key-features}
 
 - **Sauya farashin musayar kuɗi ta atomatik** — ana sauya farashi daga kuɗin tushe naka ta amfani da farashin da aka samo daga mai bayarwa da ka zaɓa
 - **Sauya farashin kowane samfuri** — saita takamaiman farashi na kuɗi na musamman a kan kowanne samfuri don kauce wa sauyawa ta atomatik
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency yana ba cibiyar sadarwarka damar karɓar kuɗ
 - **Gano kuɗi bisa geolocation** — ta atomatik yana zaɓar kuɗin da ya dace da ƙasar baƙo tun da farko
 - **Dashboard na gudanarwa** — sarrafa kuɗaɗe masu aiki, farashin musayar kuɗi, da saitunan mai bayarwa daga wuri guda
 
-## Bukatu
+## Bukatu {#requirements}
 
 - Ultimate Multisite 2.0.0 ko sama da haka
 - Shigarwar WordPress Multisite
 - PHP 7.4 ko sama da haka
 
-## Shigarwa
+## Shigarwa {#installation}
 
 1. Loda fayilolin plugin zuwa `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Kunna plugin ta allon **Plugins** a cikin WordPress (Network Activate)
 3. Je zuwa **Ultimate Multisite → Multi-Currency** don buɗe Dashboard na gudanarwa
 4. Ƙara kuɗaɗen da kake son karɓa kuma saita mai bayar da farashin musayar kuɗinka
 
-## Saiti
+## Saiti {#configuration}
 
-### Dashboard na Gudanarwa
+### Dashboard na Gudanarwa {#admin-dashboard}
 
 Dashboard na gudanarwa na Multi-Currency (**Ultimate Multisite → Multi-Currency**) shi ne babban wuri don:
 
@@ -44,7 +44,7 @@ Dashboard na gudanarwa na Multi-Currency (**Ultimate Multisite → Multi-Currenc
 - Duba farashin yanzu na duk kuɗaɗe masu aiki
 - Saita farashin hannu lokacin da masu bayarwa na atomatik ba su dace ba
 
-### Masu Bayar da Farashin Musayar Kuɗi
+### Masu Bayar da Farashin Musayar Kuɗi {#exchange-rate-providers}
 
 | Mai bayarwa | Bayani |
 |---|---|
@@ -55,7 +55,7 @@ Dashboard na gudanarwa na Multi-Currency (**Ultimate Multisite → Multi-Currenc
 
 Zaɓi mai bayarwarka a ƙarƙashin **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Ana iya sabunta farashi da hannu a kowane lokaci ko a tsara su su sabunta ta atomatik.
 
-### Sauya Farashin Kowane Samfuri
+### Sauya Farashin Kowane Samfuri {#per-product-pricing-overrides}
 
 Lokacin da sauyawa ta atomatik ba ta isa daidai ba, za ka iya saita takamaiman farashi ga wani kuɗi na musamman a kan kowanne samfuri:
 
@@ -66,7 +66,7 @@ Lokacin da sauyawa ta atomatik ba ta isa daidai ba, za ka iya saita takamaiman f
 
 Samfuran da ba su da sauyawa suna amfani da farashin da aka sauya daga kuɗin tushe naka.
 
-### Filin Zaɓin Kuɗi na Rajista
+### Filin Zaɓin Kuɗi na Rajista {#currency-selector-signup-field}
 
 Ana iya ƙara filin zaɓin kuɗi zuwa tsarin rajista/checkout naka domin abokan ciniki su zaɓi kuɗin da suka fi so a lokacin rajista:
 
@@ -76,7 +76,7 @@ Ana iya ƙara filin zaɓin kuɗi zuwa tsarin rajista/checkout naka domin abokan 
 
 Ana adana kuɗin da aka zaɓa tare da subscription kuma ana amfani da shi ga duk cajin gaba.
 
-### Gano Kuɗi Bisa Geolocation
+### Gano Kuɗi Bisa Geolocation {#geolocation-based-currency-detection}
 
 Lokacin da aka kunna gano geolocation, kari yana haɗa ƙasar baƙo da kuɗi kuma yana zaɓar shi tun da farko a cikin filin zaɓin kuɗi. Don kunnawa:
 
@@ -86,27 +86,27 @@ Lokacin da aka kunna gano geolocation, kari yana haɗa ƙasar baƙo da kuɗi kum
 
 Idan babu haɗi ga ƙasar baƙo, ana amfani da kuɗin tushe na cibiyar sadarwa a matsayin madadin.
 
-## Tambayoyin da Ake Yawan Yi
+## Tambayoyin da Ake Yawan Yi {#frequently-asked-questions}
 
-### Me zai faru idan mai bayar da farashin musayar kuɗi bai samu ba?
+### Me zai faru idan mai bayar da farashin musayar kuɗi bai samu ba? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Karin yana komawa ga farashin da aka samo cikin nasara na ƙarshe. Idan ba a taɓa samo wani farashi ba, yana komawa ga farashin hannu da ka saita. Ana ba da shawarar a saita farashin hannu a matsayin kariya.
 
-### Zan iya amfani da masu bayarwa daban-daban ga kuɗaɗe daban-daban?
+### Zan iya amfani da masu bayarwa daban-daban ga kuɗaɗe daban-daban? {#can-i-use-different-providers-for-different-currencies}
 
 A'a — mai bayarwa ɗaya ne ke aiki a lokaci guda ga duk kuɗaɗe. Yi amfani da **Manual** idan kana buƙatar cikakken iko kan farashi ɗai-ɗai.
 
-### Shin geolocation yana buƙatar wani plugin dabam?
+### Shin geolocation yana buƙatar wani plugin dabam? {#does-geolocation-require-a-separate-plugin}
 
 Ba a buƙatar plugin na geolocation na waje. Karin yana amfani da gano IP-zuwa-ƙasa da ke cikin WordPress. Don ƙarin daidaito, ana iya haɗa sabis na geolocation na musamman ta hanyar filter hooks da aka bayar.
 
-### Ana amfani da sauyawar farashin kowane samfuri kafin haraji ko bayan haraji?
+### Ana amfani da sauyawar farashin kowane samfuri kafin haraji ko bayan haraji? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Sauyawar farashin kowane samfuri tana saita farashin kafin haraji a cikin kuɗin da aka nufa. Ana lissafa haraji a kan farashin sauyawar ta amfani da saitin harajin da kake da shi yanzu.
 
-## Tarihin Canje-canje
+## Tarihin Canje-canje {#changelog}
 
-### Sigogi 1.0.0 — An saki a 2026-04-02
+### Sigogi 1.0.0 — An saki a 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Sabo: Tallafin kuɗaɗe da yawa tare da sauya farashin musayar kuɗi ta atomatik
 - Sabo: Sauya farashin kowane samfuri don takamaiman farashi na kuɗi na musamman

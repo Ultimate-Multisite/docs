@@ -3,15 +3,15 @@ title: 'Lektion 4: Erstellen von Nischen-Vorlagen'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lesson 4: Building Niche Templates
+# Lesson 4: Building Niche Templates {#lesson-4-building-niche-templates}
 
 Vorlagen sind das Kernstück Ihres Nischen-Alleinstellungsmerkmals. Ein Besitzer eines Fitnessstudios, der sich anmeldet und eine Website sieht, die bereits wie eine Fitness-Website aussieht – mit Kursplänen, Trainerprofilen und den passenden Bildern – bleibt viel eher Kunde als jemand, der vor einer leeren Leinwand steht.
 
-## Where We Left Off
+## Where We Left Off {#where-we-left-off}
 
 Wir haben ein funktionierendes FitSite-Netzwerk mit Ultimate Multisite installiert und konfiguriert. Nun bauen wir die Vorlagen, die FitSite für Fitnessunternehmen zu einem maßgeschneiderten Produkt machen.
 
-## Why Niche Templates Matter
+## Why Niche Templates Matter {#why-niche-templates-matter}
 
 Allgemeine Vorlagen zwingen Ihre Kunden, die schwere Arbeit zu leisten: herauszufinden, welche Seiten sie benötigen, welche Inhaltsstruktur funktioniert und wie sie es für ihre Branche aussehen lassen. Nischen-Vorlagen eliminieren diese Reibung.
 
@@ -24,11 +24,11 @@ Ein Besitzer eines Fitnessstudios, der sich für FitSite anmeldet, sollte sehen:
 
 Sie füllen nur noch ihre Details ein. Sie starten nicht bei Null.
 
-## Planning Your Templates
+## Planning Your Templates {#planning-your-templates}
 
 Bevor Sie mit dem Bau beginnen, entscheiden Sie, welche Vorlagen Sie anbieten möchten. Für FitSite erstellen wir drei:
 
-### Template 1: Studio Essential
+### Template 1: Studio Essential {#template-1-studio-essential}
 
 Für kleine Studios und Personal Trainer.
 
@@ -39,7 +39,7 @@ Für kleine Studios und Personal Trainer.
 - **Kontakt** Seite mit Standortkarte und Formular
 - **Klares, modernes Design** mit einer für Fitness passenden Farbgebung
 
-### Template 2: Gym Pro
+### Template 2: Gym Pro {#template-2-gym-pro}
 
 Für etablierte Fitnessstudios mit mehr Dienstleistungen.
 
@@ -50,7 +50,7 @@ Für etablierte Fitnessstudios mit mehr Dienstleistungen.
 - **Testimonials** Sektion auf der Startseite
 - **Prominente Branding** Optionen
 
-### Template 3: Fitness Chain
+### Template 3: Fitness Chain {#template-3-fitness-chain}
 
 Für Standorte mit mehreren Filialen.
 
@@ -60,17 +60,17 @@ Für Standorte mit mehreren Filialen.
 - **Zentrales Branding** mit standortspezifischen Details
 - **Mitarbeiterverzeichnis** über alle Standorte hinweg
 
-## Building a Template Site
+## Building a Template Site {#building-a-template-site}
 
 In Ultimate Multisite ist eine Vorlage einfach eine WordPress-Website, die so konfiguriert ist, dass neue Kundenseiten so aussehen. So erstellen Sie eine:
 
-### Step 1: Create the Template Site
+### Step 1: Create the Template Site {#step-1-create-the-template-site}
 
 1. Navigieren Sie zu **Sites > Add New** in Ihrem Netzwerk-Admin
 2. Erstellen Sie eine Seite mit dem Namen `template-studio-essential`
 3. Diese Seite wird zu Ihrer Arbeits-Leinwand
 
-### Step 2: Install and Configure the Theme
+### Step 2: Install and Configure the Theme {#step-2-install-and-configure-the-theme}
 
 Wechseln Sie zum Dashboard der Vorlagen-Seite und:
 
@@ -82,7 +82,7 @@ Wechseln Sie zum Dashboard der Vorlagen-Seite und:
 Wählen Sie ein Theme, das flexibel genug ist, um für Fitness gut auszusehen, aber nicht so komplex, dass Ihre Kunden es nicht verwalten können. Themes wie Astra, GeneratePress oder Kadence eignen sich gut, da sie leichtgewichtig, anpassbar und gut unterstützt sind.
 :::
 
-### Step 3: Create the Pages
+### Step 3: Create the Pages {#step-3-create-the-pages}
 
 Erstellen Sie jede Seite mit:
 
@@ -92,7 +92,7 @@ Erstellen Sie jede Seite mit:
 
 Machen Sie die Platzhalter-Inhalte, wo immer möglich, anleitend. Anstatt generischem Fülltext schreiben Sie Inhalte wie: "Ersetzen Sie dies durch eine kurze Beschreibung Ihres Studios und was es besonders macht. Erwähnen Sie Ihre Trainingsphilosophie, Jahre der Erfahrung oder was die Kunden erwarten können."
 
-### Step 4: Configure Plugins
+### Step 4: Configure Plugins {#step-4-configure-plugins}
 
 Installieren und aktivieren Sie Plugins, die Fitnessstudios benötigen:
 
@@ -100,7 +100,7 @@ Installieren und aktivieren Sie Plugins, die Fitnessstudios benötigen:
 - Ein Kontaktformular-Plugin
 - Ein SEO-Plugin (vorauskonfiguriert mit fitnessrelevanten Standardeinstellungen)
 
-### Step 5: Mark as Template
+### Step 5: Mark as Template {#step-5-mark-as-template}
 
 1. Navigieren Sie zu **Ultimate Multisite > Sites**
 2. Bearbeiten Sie die Vorlagen-Seite
@@ -108,7 +108,7 @@ Installieren und aktivieren Sie Plugins, die Fitnessstudios benötigen:
 
 Wiederholen Sie diesen Prozess für jede Vorlage, die Sie anbieten möchten.
 
-## Template Quality Checklist
+## Template Quality Checklist {#template-quality-checklist}
 
 Bevor Sie eine Vorlage verfügbar machen, überprüfen Sie:
 
@@ -121,7 +121,7 @@ Bevor Sie eine Vorlage verfügbar machen, überprüfen Sie:
 - [ ] Keine fehlerhaften Links oder fehlende Assets
 - [ ] Die Seitenladezeit ist akzeptabel
 
-## The FitSite Network So Far
+## The FitSite Network So Far {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## What We Built This Lesson
+## What We Built This Lesson {#what-we-built-this-lesson}
 
 - **Drei nischenspezifische Vorlagen** für verschiedene Größen von Fitnessunternehmen
 - **Fitness-passende Inhalte und Bilder**, die die Plattform zu einem maßgeschneiderten Produkt machen

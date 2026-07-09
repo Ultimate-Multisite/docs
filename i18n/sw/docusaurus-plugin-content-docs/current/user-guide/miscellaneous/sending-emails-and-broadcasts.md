@@ -3,13 +3,13 @@ title: Kutuma Barua Pepe na Matangazo
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Kutuma Barua Pepe na Matangazo (v2)
+# Kutuma Barua Pepe na Matangazo (v2) {#sending-emails-and-broadcasts-v2}
 
 _**KUMBUKA MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
 
 Ultimate Multisite huja na kipengele kitakachokuwezesha kuwasiliana na wateja wako kwa kutuma barua pepe kwa mtumiaji lengwa au kundi la watumiaji pamoja na kutuma arifa kwenye Dashboard yao ya msimamizi ili kutangaza taarifa
 
-## Ongeza arifa za msimamizi kwenye Dashboard ya wateja wako kwa kutumia Matangazo
+## Ongeza arifa za msimamizi kwenye Dashboard ya wateja wako kwa kutumia Matangazo {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Kwa kutumia kipengele cha matangazo cha Ultimate Multisite, unaweza kuongeza **arifa za msimamizi** kwenye Dashboard ya msimamizi ya subsite ya mtumiaji wako.
 
@@ -51,7 +51,7 @@ Baada ya kuunda ujumbe wako, unaweza kisha kubofya kitufe cha **Tuma**.
 
 Na hivyo ndivyo ilivyo. Arifa ya msimamizi inapaswa kuonekana mara moja kwenye Dashboard ya mtumiaji wako.
 
-## Tuma barua pepe kwa wateja wako
+## Tuma barua pepe kwa wateja wako {#send-emails-to-your-customers}
 
 Kwa kutumia kipengele cha matangazo cha Ultimate Multisite, unaweza kutuma barua pepe kwa watumiaji wako. Una chaguo la kutuma barua pepe kwa watumiaji maalum pekee au kulenga kundi maalum la watumiaji kulingana na bidhaa au mpango waliojisajili chini yake.
 
@@ -81,11 +81,11 @@ Baada ya kuunda ujumbe wako, unaweza kubofya kitufe cha **Tuma**.
 
 Na hivyo ndivyo ilivyo rahisi kutuma barua pepe kwa watumiaji wako wa mwisho kwa kutumia kipengele cha matangazo.
 
-## Barua pepe za mfumo
+## Barua pepe za mfumo {#system-emails}
 
 Barua pepe za mfumo katika Ultimate Multisite ni zile **arifa za kiotomatiki** zinazotumwa na mfumo baada ya vitendo fulani kama usajili, malipo, uunganishaji wa domain, n.k. Barua pepe hizi zinaweza kuhaririwa au kurekebishwa kutoka kwenye mipangilio ya Ultimate Multisite. Pia huja na kipengele kitakachokuwezesha kuweka upya na kuleta mipangilio iliyopo kutoka usakinishaji mwingine wa Ultimate Multisite.
 
-### Kuweka Upya na Kuleta
+### Kuweka Upya na Kuleta {#resetting--importing}
 
 Matoleo mapya ya Ultimate Multisite, pamoja na nyongeza, yanaweza na yatasajili barua pepe mpya mara kwa mara.
 
@@ -93,7 +93,7 @@ Ili kuzuia migongano na matatizo mengine, **hatutaongeza violezo vipya vya barua
 
 Hata hivyo, wasimamizi wakuu na mawakala wanaweza kuleta barua pepe hizi zilizosajiliwa upya kupitia zana ya kuleta. Mchakato huo utaunda barua pepe mpya ya mfumo yenye maudhui na usanidi wa kiolezo kipya cha barua pepe, ukimruhusu msimamizi mkuu kufanya marekebisho yoyote anayotaka au kuziacha kama zilivyo.
 
-#### Jinsi ya kuleta barua pepe za mfumo
+#### Jinsi ya kuleta barua pepe za mfumo {#how-to-import-system-emails}
 
 Nenda kwenye ukurasa wako wa Mipangilio ya Ultimate Multisite na uende kwenye kichupo cha **Barua pepe**.
 
@@ -111,7 +111,7 @@ Kisha, unaweza kubadili chaguo za Leta Barua Pepe ili kuona ni barua pepe zipi z
 
 <!-- Picha ya skrini haipatikani: modal ya Weka upya na Leta ikiwa na chaguo za Leta Barua pepe zilizopanuliwa -->
 
-#### Kuweka Upya Barua pepe za Mfumo
+#### Kuweka Upya Barua pepe za Mfumo {#reseting-system-emails}
 
 Wakati mwingine, utagundua kwamba mabadiliko uliyofanya kwenye kiolezo fulani cha barua pepe hayakufai tena na ungependa kukirejesha katika **hali yake chaguomsingi**.
 

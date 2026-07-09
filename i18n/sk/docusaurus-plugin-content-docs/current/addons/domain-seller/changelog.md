@@ -3,7 +3,7 @@ title: Záznam zmien Predajcu domén
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Záznam zmien Domain Seller
+# Záznam zmien Domain Seller {#domain-seller-changelog}
 
 Verzia 1.3.0 - Vydané 2026-06-02
 - Nové: Pridané upozornenie pre network-admin, keď je zostatok predajcu HostAfrica príliš nízky
@@ -134,20 +134,20 @@ Verzia 1.0.0 - Vydaná 2025-09-28
 * **Opravené:** Všetok zastaraný kód v1 aktualizovaný na štandardy v2
 * **Odstránené:** Kompatibilita so zastaranou v1 (zásadná zmena)
 
-### Predchádzajúce verzie (zastaraná v1)
+### Predchádzajúce verzie (zastaraná v1) {#previous-versions-v1-legacy}
 
-### Verzia 0.0.3 - 20/08/2019
+### Verzia 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Opravené: Nekompatibilita s Groundhogg CRM
 * Poznámka: Toto bolo posledné vydanie kompatibilné s v1
 
-### Verzia 0.0.2 - 07/12/2018
+### Verzia 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Opravené: Odstránené pole License Key
 * Opravené: Chýbajúce karty plánov, keď je aktívny plugin funkcie
 * Vylepšené: Pridané tlačidlo preskočenia v registračnom poli
 
-### Verzia 0.0.1 - Úvodné vydanie
+### Verzia 0.0.1 - Úvodné vydanie {#version-001---initial-release}
 
 * Základná integrácia OpenSRS pre WP Ultimo v1
 * Jednoduché vyhľadávanie a registrácia domény

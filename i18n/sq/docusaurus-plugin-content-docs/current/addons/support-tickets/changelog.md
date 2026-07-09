@@ -3,13 +3,13 @@ title: Regjistri i ndryshimeve të biletave të mbështetjes
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Changelog i biletave të mbështetjes
+# Changelog i biletave të mbështetjes {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Përmirësuar: U hoq drejtoria vendor/ nga gjurmimi i Git (tashmë e mbuluar nga .gitignore), duke zvogëluar madhësinë e repos
 * Përmirësuar: Testuar deri në WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Rregullim: Prano vlera null në setter-at nullable të modelit të biletës
 * Rregullim: Ruaj të gjitha biletat në tabela globale në të gjithë rrjetin për mbështetje të duhur multisite
 * Rregullim: Fshih fushat e stafit dhe rregullo ridrejtimin në faqe bosh në formularin e ri të biletës për klientin
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Përmirësuar: Ngarko asetet frontend me kusht vetëm në faqet e biletave të mbështetjes
 * Përmirësuar: Anashkalo autoloader-in e plugin-it kur autoloader-i rrënjë i Bedrock ka ngarkuar tashmë varësitë
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Shtuar: Funksionalitet i plotë i shikimit të biletave për administrimin dhe frontend-in
 * Shtuar: Handler AJAX për dorëzimet e përgjigjeve të biletave
 * Shtuar: Mbështetje për funksionalitetin e përgjigjeve të biletave me trajtim të duhur të formularit
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Përmirësuar: Strukturë baze të dhënash me klasa të duhura query dhe skeme për përgjigjet dhe bashkëngjitjet
 * Përmirësuar: Migrim te pronat reale në vend të atributeve për modelet e biletave
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Përditësuar: Prefiksi u riemërtua në ultimate-multisite për konsistencë
 * Përditësuar: Standardizim i domenit të tekstit
 * Rregulluar: Rregullime të vogla defektesh dhe përmirësime
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Publikimi fillestar
 * Sistem i plotë i menaxhimit të biletave
 * Kontroll aksesi me shumë nivele

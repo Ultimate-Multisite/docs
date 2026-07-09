@@ -3,15 +3,15 @@ title: Vygenerovať logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generovanie Logo SVG
+# Generovanie Logo SVG {#generate-logo-svg}
 
 Funkcia **Generovanie Logo SVG** umožňuje Theme Builderu vytvárať a vkladať vlastné logo SVG priamo do vašej WordPress stránky s automatickou sanitizáciou bezpečnou pre namespace.
 
-## Prehľad
+## Prehľad {#overview}
 
 Táto funkcia generuje škálovateľnú vektorovú grafiku (SVG) loga na základe smerovania brandingu vašej stránky a dizajnových preferencií. Vygenerované SVG sú automaticky sanitizované, aby boli bezpečné na použitie vo WordPress, pričom si zachovávajú vizuálnu integritu.
 
-## Parametre
+## Parametre {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Táto funkcia generuje škálovateľnú vektorovú grafiku (SVG) loga na základ
 | `height` | number | No | Výška SVG v pixeloch (predvolené: 200) |
 | `include_text` | boolean | No | Či zahrnúť názov stránky ako text v logu (predvolené: true) |
 
-## Formát výstupu
+## Formát výstupu {#output-format}
 
 Funkcia vracia reťazec SVG s nasledujúcou štruktúrou:
 
@@ -36,7 +36,7 @@ Funkcia vracia reťazec SVG s nasledujúcou štruktúrou:
 }
 ```
 
-## Správanie sanitizácie SVG
+## Správanie sanitizácie SVG {#svg-sanitisation-behaviour}
 
 Vygenerované SVG prechádzajú automatickou sanitizáciou bezpečnou pre namespace, aby:
 
@@ -48,7 +48,7 @@ Vygenerované SVG prechádzajú automatickou sanitizáciou bezpečnou pre namesp
 
 Tým sa zabezpečí, že SVG je bezpečné na priame vloženie do WordPress bez potreby dodatočnej sanitizácie.
 
-## Príklad použitia
+## Príklad použitia {#usage-example}
 
 **Výzva:**
 ```
@@ -62,7 +62,7 @@ Funkcia vytvorí SVG logo, ktoré:
 - Dodržiava moderné princípy dizajnu
 - Je automaticky sanitizované a pripravené na použitie
 
-## Integrácia s Theme Builder
+## Integrácia s Theme Builder {#integration-with-theme-builder}
 
 Pri používaní výberu dizajnového smerovania v Theme Builderi funkcia Generovanie Logo SVG:
 
@@ -71,21 +71,21 @@ Pri používaní výberu dizajnového smerovania v Theme Builderi funkcia Genero
 3. Automaticky vloží logo do oblasti hlavičky/brandingu vašej stránky
 4. Uloží SVG ako vlastné logo v médiách WordPress
 
-## Osvedčené postupy
+## Osvedčené postupy {#best-practices}
 
 - **Poskytnite jasné preferencie štýlu** — opíšte dizajnový štýl, ktorý chcete (moderný, klasický, hravý atď.)
 - **Zadajte farby** — zahrňte farby svojej značky pre konzistentnosť
 - **Otestujte vykresľovanie** — overte, že sa logo správne zobrazuje na rôznych veľkostiach obrazovky
 - **Ďalej prispôsobte** — použite nástroje WordPress na prispôsobenie loga na úpravu veľkosti a umiestnenia
 
-## Obmedzenia
+## Obmedzenia {#limitations}
 
 - SVG logá sa generujú ako statická grafika (nie animované)
 - Zložité logá s mnohými prvkami môžu vyžadovať manuálne doladenie
 - Vlastné fonty nie sú podporované; text používa systémové fonty
 - Veľmi veľké alebo veľmi malé rozmery môžu ovplyvniť kvalitu
 
-## Súvisiace funkcie
+## Súvisiace funkcie {#related-abilities}
 
 - [Overiť kontrast palety](./validate-palette-contrast.md) — skontrolujte farebný kontrast z hľadiska prístupnosti
 - [Vytvoriť menu](./create-menu.md) — vytvorte navigačné menu pre svoju stránku

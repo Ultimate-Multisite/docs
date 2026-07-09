@@ -3,11 +3,11 @@ title: Ireferensi ye-WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Ireferensi ye-WP-CLI
+# Ireferensi ye-WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent iza nomndeni wemiyalo ethi `wp gratis-ai-agent` wokulinganisa ukusebenza kwe-agent, ukuphatha amakhono, nokubuza isimo se-agent kusuka kulayini wemiyalo. Yonke imiyalo idinga i-WP-CLI 2.0 noma ephakeme.
 
-## Ukufakwa
+## Ukufakwa {#installation}
 
 Imiyalo ye-WP-CLI ibhaliswa ngokuzenzakalelayo lapho i-plugin isebenza. Qinisekisa ngalokhu:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Isebenzisa iqoqo lezivivinyo zesilinganiso se-Agent Capabilities — isethi yama-prompts ayinkimbinkimbi, anezinyathelo eziningi ahlola yonke indawo yamakhono. Sebenzisa lokhu ukuhlola ukusebenza kwemodeli, ukuqhathanisa abahlinzeki be-AI, noma ukuqinisekisa amaphakethe amakhono ngaphambi kokuwathumela ekukhiqizeni.
 
-### Isifinyezo
+### Isifinyezo {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Izinketho
+### Izinketho {#options}
 
 | Inketho | Incazelo |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Ifomethi yokukhiphayo: `table` (okuzenzakalelayo), `json`, `csv` |
 | `--save` | Londoloza imiphumela yesilinganiso ku-database ukuze iqhathaniswe ngokomlando |
 
-### Izibonelo
+### Izibonelo {#examples}
 
 Sebenzisa iqoqo lonke lesilinganiso nomhlinzeki nemodeli yamanje:
 
@@ -57,7 +57,7 @@ Sebenzisa ngokumelene nemodeli ethile bese ulondoloza imiphumela:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Okuphumayo
+### Okuphumayo {#output}
 
 Isilinganiso sikhipha umugqa owodwa ngombuzo ngamunye onamakholomu alandelayo:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Imibuzo Yesilinganiso
+### Imibuzo Yesilinganiso {#benchmark-questions}
 
 Iqoqo elizenzakalelayo lifaka:
 
@@ -95,11 +95,11 @@ Imibuzo eyengeziwe ingabhaliswa nge-filter ethi `gratis_ai_agent_benchmark_quest
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Iphatha amakhono afakiwe namaphakethe amakhono.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Ibala wonke amakhono abhalisiwe, umthombo wawo (core noma iphakethe), nesimo sawo samanje.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Ilanda futhi isebenze iphakethe lamakhono kusuka ku-registry.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Ikhubaza ikhono elithile ngaphandle kokususa iphakethe. Kuwusizo ekukhawuleleni ububanzi be-agent kusayithi elithile.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Iphinde isebenze ikhono elalikade likhutshaziwe.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Ibonisa ukulungiselelwa kwamanje kwe-agent nesimo sokuxhumeka.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Ibonisa umsebenzi wakamuva we-agent kusuka ku-debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Isetha kabusha isimo se-agent: isula i-CSS efakiwe, isusa ama-CPT nama-taxonomy abhaliswe yi-agent, isetha kabusha izitayela zomhlaba wonke, futhi ithulule i-cache yezinketho ze-agent. Ayisusi i-plugin noma izilungiselelo zayo.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## AmaKhodi Okuphuma
+## AmaKhodi Okuphuma {#exit-codes}
 
 Yonke imiyalo iphuma ngo-`0` uma iphumelele. Ama-exit codes angewona u-zero:
 

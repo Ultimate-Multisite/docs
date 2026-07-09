@@ -4,11 +4,11 @@ title: Scagaire - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Scagaire: wu_rest_get_items
+# Scagaire: wu_rest_get_items {#filter-wurestgetitems}
 
 Scagann sé an bhfuil cead dul ar aghaidh leis an iarratas nó nach bhfuil.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Scagann sé an bhfuil cead dul ar aghaidh leis an iarratas nó nach bhfuil.
 | $rest_base | `array` | Sluga eintitis. |
 | $this | `\Base_Manager` | Ásc an oibiachta. |
 
-### Ó
+### Ó {#since}
 
 - 2.0.0
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) ag líne 336

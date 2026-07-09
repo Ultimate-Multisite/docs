@@ -4,13 +4,13 @@ title: Filter - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site
+# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Gëtt ausgeléist, ier eng verwaist ausstoend Site fir eng annuléiert GoCardless Memberschaft geläscht gëtt.
 
 Gëff false vun dësem Filter zréck, fir d'Läsche ze verhënneren.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Gëff false vun dësem Filter zréck, fir d'Läsche ze verhënneren.
 | $membership | `\WP_Ultimo\Models\Membership` | Déi annuléiert Memberschaft. |
 | $old_status | `string` | De Status virun der Annulatioun. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) bei Zeil 1086

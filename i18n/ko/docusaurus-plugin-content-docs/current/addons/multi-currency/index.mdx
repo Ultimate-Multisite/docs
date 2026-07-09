@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# 다중 통화 (Multi-Currency)
+# 다중 통화 (Multi-Currency) {#multi-currency}
 
 Ultimate Multisite: Multi-Currency는 네트워크에서 여러 통화로 결제를 받을 수 있도록 지원합니다. 이 플러그인은 실시간 또는 수동 환율을 사용하여 가격을 자동으로 변환하고, 모든 통화에 대해 상품별 정확한 가격을 설정할 수 있게 하며, 지리적 위치(geolocation)를 통해 방문자가 선호하는 통화를 감지합니다. 이 모든 기능은 단일 관리자 대시보드에서 관리할 수 있습니다.
 
-## 주요 기능
+## 주요 기능 {#key-features}
 
 - **자동 환율 변환** — 선택한 제공업체에서 가져온 환율을 사용하여 기본 통화의 가격을 변환합니다.
 - **상품별 가격 재정의** — 자동 변환을 우회하여 모든 상품에 대해 통화별로 정확한 가격을 설정할 수 있습니다.
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency는 네트워크에서 여러 통화로 결제
 - **지리적 위치 기반 통화 감지** — 방문자의 국가에 맞춰 통화를 자동으로 미리 선택합니다.
 - **관리자 대시보드** — 활성화된 통화, 환율, 제공업체 설정을 한 곳에서 관리합니다.
 
-## 요구 사항
+## 요구 사항 {#requirements}
 
 - Ultimate Multisite 2.0.0 이상
 - WordPress Multisite 설치
 - PHP 7.4 이상
 
-## 설치
+## 설치 {#installation}
 
 1. 플러그인 파일을 `/wp-content/plugins/ultimate-multisite-multi-currency`에 업로드합니다.
 2. WordPress의 **플러그인** 화면에서 플러그인을 활성화합니다 (네트워크 활성화).
 3. **Ultimate Multisite → Multi-Currency**로 이동하여 관리자 대시보드를 엽니다.
 4. 받고 싶은 통화를 추가하고 환율 제공업체를 구성합니다.
 
-## 설정
+## 설정 {#configuration}
 
-### 관리자 대시보드
+### 관리자 대시보드 {#admin-dashboard}
 
 Multi-Currency 관리자 대시보드 (**Ultimate Multisite → Multi-Currency**)는 다음 작업을 수행하는 중앙 허브입니다.
 
@@ -44,7 +44,7 @@ Multi-Currency 관리자 대시보드 (**Ultimate Multisite → Multi-Currency**
 - 모든 활성 통화의 현재 환율 검토
 - 자동 제공업체가 적합하지 않을 때 수동 환율 설정
 
-### 환율 제공업체
+### 환율 제공업체 {#exchange-rate-providers}
 
 | 제공업체 | 설명 |
 |---|---|
@@ -55,7 +55,7 @@ Multi-Currency 관리자 대시보드 (**Ultimate Multisite → Multi-Currency**
 
 **Ultimate Multisite → Multi-Currency → 설정 → 환율 제공업체**에서 제공업체를 선택합니다. 환율은 언제든지 수동으로 새로고침하거나 자동으로 업데이트되도록 예약할 수 있습니다.
 
-### 상품별 가격 재정의
+### 상품별 가격 재정의 {#per-product-pricing-overrides}
 
 자동 변환이 충분히 정확하지 않은 경우, 모든 상품에 대해 특정 통화의 정확한 가격을 설정할 수 있습니다.
 
@@ -66,7 +66,7 @@ Multi-Currency 관리자 대시보드 (**Ultimate Multisite → Multi-Currency**
 
 재정의가 없는 상품은 기본 통화에서 변환된 가격을 사용합니다.
 
-### 통화 선택기 가입 필드
+### 통화 선택기 가입 필드 {#currency-selector-signup-field}
 
 통화 선택기 필드를 가입/결제 흐름에 추가하여 고객이 등록 시 선호하는 통화를 선택하도록 할 수 있습니다.
 
@@ -76,7 +76,7 @@ Multi-Currency 관리자 대시보드 (**Ultimate Multisite → Multi-Currency**
 
 선택된 통화는 구독 정보와 함께 저장되며 이후 모든 청구에 사용됩니다.
 
-### 지리적 위치 기반 통화 감지
+### 지리적 위치 기반 통화 감지 {#geolocation-based-currency-detection}
 
 지리적 위치 감지가 활성화되면, 애드온은 방문자의 국가를 통화에 매핑하고 통화 선택기 필드에서 이를 미리 선택합니다. 활성화하려면:
 
@@ -86,27 +86,27 @@ Multi-Currency 관리자 대시보드 (**Ultimate Multisite → Multi-Currency**
 
 방문자의 국가에 대한 매핑이 없는 경우, 네트워크의 기본 통화가 대체(fallback)로 사용됩니다.
 
-## 자주 묻는 질문
+## 자주 묻는 질문 {#frequently-asked-questions}
 
-### 환율 제공업체가 사용할 수 없게 되면 어떻게 되나요?
+### 환율 제공업체가 사용할 수 없게 되면 어떻게 되나요? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 애드온은 마지막으로 성공적으로 가져온 환율로 대체됩니다. 환율을 가져온 적이 없다면, 설정한 수동 환율로 대체됩니다. 안전장치로 수동 환율을 구성하는 것이 좋습니다.
 
-### 통화별로 다른 제공업체를 사용할 수 있나요?
+### 통화별로 다른 제공업체를 사용할 수 있나요? {#can-i-use-different-providers-for-different-currencies}
 
 아니요. 모든 통화에 대해 한 번에 하나의 제공업체만 활성화됩니다. 개별 환율에 대한 완전한 제어가 필요하면 **수동(Manual)**을 사용하세요.
 
-### 지리적 위치 감지에 별도의 플러그인이 필요한가요?
+### 지리적 위치 감지에 별도의 플러그인이 필요한가요? {#does-geolocation-require-a-separate-plugin}
 
 외부 지리적 위치 플러그인은 필요하지 않습니다. 애드온은 WordPress의 내장 IP-to-country 감지 기능을 사용합니다. 더 높은 정확도를 위해서는 제공된 필터 훅을 통해 전용 지리적 위치 서비스를 통합할 수 있습니다.
 
-### 상품별 재정의는 세금 부과 전인가요, 후인가요?
+### 상품별 재정의는 세금 부과 전인가요, 후인가요? {#are-per-product-overrides-applied-before-or-after-tax}
 
 상품별 재정의는 대상 통화의 세금 제외 가격을 설정합니다. 세금은 기존 세금 설정을 사용하여 재정의 가격 위에 계산됩니다.
 
-## 변경 로그
+## 변경 로그 {#changelog}
 
-### 버전 1.0.0 — 2026-04-02 출시
+### 버전 1.0.0 — 2026-04-02 출시 {#version-100--released-on-2026-04-02}
 
 - 새로 추가: 자동 환율 변환을 지원하는 다중 통화 기능
 - 새로 추가: 정확한 통화별 가격을 위한 상품별 가격 재정의

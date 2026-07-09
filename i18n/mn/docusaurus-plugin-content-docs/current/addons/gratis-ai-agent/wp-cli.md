@@ -3,11 +3,11 @@ title: WP-CLI лавлагаа
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI лавлагаа
+# WP-CLI лавлагаа {#wp-cli-reference}
 
 Gratis AI Agent нь агентийг жишиг сорилтоор шалгах, чадваруудыг удирдах, мөн тушаалын мөрөөс агентын төлөвийг асуухад зориулсан `wp gratis-ai-agent` тушаалын бүлэгтэй ирдэг. Бүх тушаалд WP-CLI 2.0 эсвэл түүнээс дээш хувилбар шаардлагатай.
 
-## Суулгалт
+## Суулгалт {#installation}
 
 Plugin идэвхтэй үед WP-CLI тушаалууд автоматаар бүртгэгдэнэ. Дараахаар шалгана уу:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agent Capabilities жишиг сорилтын багцыг ажиллуулна — энэ нь чадварын бүх хүрээг ажиллуулж шалгах цогц, олон алхамт prompt-уудын багц юм. Үүнийг загварын гүйцэтгэлийг үнэлэх, AI provider-уудыг харьцуулах, эсвэл production-д байрлуулахаас өмнө чадварын багцуудыг баталгаажуулахад ашиглана.
 
-### Товч бүтэц
+### Товч бүтэц {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Сонголтууд
+### Сонголтууд {#options}
 
 | Сонголт | Тайлбар |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Гаралтын формат: `table` (анхдагч), `json`, `csv` |
 | `--save` | Түүхэн харьцуулалтад зориулж жишиг сорилтын үр дүнг өгөгдлийн санд хадгална |
 
-### Жишээнүүд
+### Жишээнүүд {#examples}
 
 Одоогийн provider болон загвараар бүрэн жишиг сорилтын багцыг ажиллуулах:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Гаралт
+### Гаралт {#output}
 
 Жишиг сорилт нь асуулт бүрт дараах багануудтай нэг мөр гаргана:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Жишиг сорилтын асуултууд
+### Жишиг сорилтын асуултууд {#benchmark-questions}
 
 Анхдагч багцад дараах зүйлс багтана:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Суулгасан чадварууд болон чадварын багцуудыг удирдана.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Бүртгэгдсэн бүх чадвар, тэдгээрийн эх сурвалж (үндсэн эсвэл багц), мөн одоогийн төлөвийг жагсаана.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Registry-ээс чадварын багцыг татаж авч идэвхжүүлнэ.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Багцыг устгахгүйгээр тодорхой чадварыг идэвхгүй болгоно. Тухайн site дээр агентын хамрах хүрээг хязгаарлахад хэрэгтэй.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Өмнө нь идэвхгүй болгосон чадварыг дахин идэвхжүүлнэ.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Одоогийн агентын тохиргоо болон холболтын төлөвийг харуулна.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Debug log-оос сүүлийн үеийн агентын үйл ажиллагааг харуулна.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Агентын төлөвийг дахин тохируулна: оруулсан CSS-ийг цэвэрлэж, агентаар бүртгэгдсэн CPT болон таксономиудыг устгаж, глобал хэв маягуудыг дахин тохируулж, агентын сонголтуудын кэшийг хоосолно. Өргөтгөл эсвэл түүний тохиргоог устгахгүй.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Гаралтын кодууд
+## Гаралтын кодууд {#exit-codes}
 
 Бүх команд амжилттай үед `0` кодоор гарна. Тэгээс ялгаатай гаралтын кодууд:
 

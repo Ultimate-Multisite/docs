@@ -4,11 +4,11 @@ title: Aksi - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Aksi: wu_mt_provider_log
+# Aksi: wu_mt_provider_log {#action-wumtproviderlog}
 
 Dijalankeun nalika panyadia nyatet hiji talatah log.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Dijalankeun nalika panyadia nyatet hiji talatah log.
 | $level | `string` | Tingkat log. |
 | $context | `array` | Kontéks tambahan. |
 
-### Ti saprak
+### Ti saprak {#since}
 
 - 1.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepkeun dina [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400) dina garis 400

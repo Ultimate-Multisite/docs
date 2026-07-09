@@ -4,11 +4,11 @@ title: Чыпка - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Чыпка: wu_country_get_administrative_division_name
+# Чыпка: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Өлкөнүн административдик бөлүктөрүнүн окууга ыңгайлуу аталышын кайтарат.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аталышы | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | эгер сөздөрдү баш тамга менен жазсак. |
 | $current_country | `\WP_Ultimo\Country\Country` | Учурдагы класстын нускасы. |
 
-### Качантан бери
+### Качантан бери {#since}
 
 - 2.0.11
-### Булак
+### Булак {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ичинде 250-сапта аныкталган
 
 
-## Кайтарат
+## Кайтарат {#returns}
 Өзгөртүлгөн бөлүк аталышын.

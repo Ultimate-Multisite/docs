@@ -3,7 +3,7 @@ title: Mért alapú Terv(ek) Változatok Naplója
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Mért alapú csomagok Módosítási naplója
+# Mért alapú csomagok Módosítási naplója {#metered-plans-changelog}
 
 Verzió 1.1.0 - Kiadása: 2026-05-05
 - Új: AI token alapú számlázás multisite alpontokhoz – nyomon követi és számlázza az AI token használatot a vásárlói oldalakon, konfigurálható token alapú díjakkal
@@ -14,17 +14,17 @@ Verzió 1.1.0 - Kiadása: 2026-05-05
 - Javítás: Megoldva a végzetes hibaüzeneteket és a kettős inicializációs problémákat a plugin betöltése során
 - Javított: Hozzáadva a check-env npm script-et, így a fejlesztői környezetek automatikusan konfigurálódnak az első futtatáskor
 
-### 1.0.3
+### 1.0.3 {#103}
 * Frissítve a Plugin Update Checker v5-re
 * Hozzáadva modern WordPress plugin fejléceket
 * Javított a kompatibilitást a legújabb WordPress verziókkal
 * Javított a használat nyomon követésének teljesítményét
 
-### 1.0.2
+### 1.0.2 {#102}
 * Hibajavítások és teljesítményjavítások
 * Javított a használat jelentéskészítést
 
-### 1.0.0
+### 1.0.0 {#100}
 * Első kiadás
 * Alap mért számlázási funkciók
 * Használat nyomon követése és túllépési számítás

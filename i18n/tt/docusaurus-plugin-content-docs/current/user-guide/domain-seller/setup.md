@@ -3,21 +3,21 @@ title: Настройка и конфигурация поставщика
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Домен Продавец: Настройка и Конфигурация Провайдера
+# Домен Продавец: Настройка и Конфигурация Провайдера {#domain-seller-setup-and-provider-configuration}
 
 Дополнение Domain Seller поставляется с управляющим мастером настройки, который проведет вас через каждый необходимый шаг. Эта страница описывает процесс работы мастера и то, как настраивать или перенастраивать провайдеров после этого.
 
-## Требования
+## Требования {#requirements}
 
 - **Multisite Ultimate** v2.4.12 или выше, активированный по сети
 - **PHP** 7.4+
 - API учетные данные для хотя бы одного поддерживаемого регистратора
 
-## Мастер настройки при первом запуске
+## Мастер настройки при первом запуске {#first-run-setup-wizard}
 
 Мастер настройки запускается автоматически в первый раз, когда вы активируете плагин по сети. Он также доступен в любое время через **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Шаг 1 — Выберите провайдера
+### Шаг 1 — Выберите провайдера {#step-1--choose-a-provider}
 
 Выберите регистратора, с которым вы хотите подключиться. Поддерживаемые варианты:
 
@@ -33,7 +33,7 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 | NameSilo | Нет | Нет |
 | Enom | Да | Нет |
 
-### Шаг 2 — Введите учетные данные
+### Шаг 2 — Введите учетные данные {#step-2--enter-credentials}
 
 У каждого провайдера разные поля для ввода данных:
 
@@ -57,17 +57,17 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 
 Canlıya geçmeden önce sağlayıcının test ortamına karşı test yapmak için mevcutsa **Sandbox modunu** kontrol edin.
 
-### Adım 3 — Bağlantıyı test etme
+### Adım 3 — Bağlantıyı test etme {#step-3--test-the-connection}
 
 **Test Connection**'a tıklayın. Sihirbaz, kimlik bilgilerini ve bağlantıyı doğrulamak için hafif bir API çağrısı gönderir. Devam etmeden önce herhangi bir kimlik bilgisi sorununu düzeltin.
 
-### Adım 4 — TLD'leri içe aktarma
+### Adım 4 — TLD'leri içe aktarma {#step-4--import-tlds}
 
 Bağlı sağlayıcıdan tüm mevcut TLD'leri ve toptan fiyatlandırmayı çekmek için **Import TLDs**'e tıklayın. Bu, alan adı ürünlerinde kullanılan TLD listesini doldurur. Büyük TLD kataloglarına sahip sağlayıcılar için içe aktarma 30–60 saniye sürebilir.
 
 TLD'ler ayrıca günlük bir zamanlanmış cron işi aracılığıyla otomatik olarak bir kez senkronize edilir.
 
-### Adım 5 — Bir alan adı ürünü oluşturma
+### Adım 5 — Bir alan adı ürünü oluşturma {#step-5--create-a-domain-product}
 
 Sihirbaz, %10 kar marjıyla varsayılan bir genel (catch-all) alan adı ürünü oluşturur. Bu ürünü hemen düzenleyebilir veya **Ultimate Multisite › Products** altında manuel olarak atlayıp ürünler oluşturabilirsiniz.
 
@@ -75,7 +75,7 @@ Tam ürün yapılandırma kılavuzu için [Domain Products and Pricing](./domain
 
 ---
 
-## Bir sağlayıcıyı yeniden yapılandırma
+## Bir sağlayıcıyı yeniden yapılandırma {#reconfiguring-a-provider}
 
 **Network Admin › Ultimate Multisite › Settings › Domain Seller**'a gidin (veya eklenti listesindeki **Settings**'e tıklayın).
 
@@ -88,17 +88,17 @@ Ayarlar sayfası şunları içerir:
 - **Управление доменными продуктами** — быстрая ссылка на список продуктов.
 - **Настройка провайдеров** — открывает Мастер интеграции для добавления или изменения настроек провайдеров.
 
-### Добавление второго провайдера
+### Добавление второго провайдера {#adding-a-second-provider}
 
 Нажмите **Настроить провайдеров** и запустите мастер снова для нового регистратора. Вы можете настроить несколько провайдеров одновременно. Назначьте каждый доменный продукт конкретному провайдеру или оставьте его по умолчанию.
 
-### Ручная синхронизация TLD
+### Ручная синхронизация TLD {#syncing-tlds-manually}
 
 На странице настроек нажмите **Синхронизировать TLD** рядом с любым настроенным провайдером, чтобы получить самые свежие цены. Это полезно после того, как провайдер обновит оптовые цены или добавит новые доменные расширения (TLD).
 
 ---
 
-## Логи
+## Логи {#logs}
 
 Каждый провайдер пишет в свой собственный канал логов. Логи можно просмотреть в разделе **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Ayarlar sayfası şunları içerir:
 
 ---
 
-## Примечания о возможностях провайдеров
+## Примечания о возможностях провайдеров {#provider-capability-notes}
 
 Не все API регистраторов предоставляют одни и те же операции. Дополнение показывает неподдерживаемые операции с понятными ошибками для администратора, вместо того чтобы молча завершаться неудачей.
 

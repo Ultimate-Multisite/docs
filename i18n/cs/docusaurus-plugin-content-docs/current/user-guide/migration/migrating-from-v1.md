@@ -3,9 +3,9 @@ title: Migrace z V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrace z verze V1
+# Migrace z verze V1 {#migrating-from-v1}
 
-## Ultimate Multisite přešel z původní řady verzí 1.x na řadu verzí 2.x.
+## Ultimate Multisite přešel z původní řady verzí 1.x na řadu verzí 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite verze 2.0 a novější je kompletně přepsaný kód, což znamená, že stará a nová verze mají jen velmi málo společného. Proto je při upgradu z verze 1.x na 2.x potřeba převést vaše data do formátu, kterému nové verze rozumí.
 
@@ -15,7 +15,7 @@ Tato lekce popisuje, jak nástroj pro migraci funguje, co dělat v případě se
 
 _**DŮLEŽITÉ: Než začnete s upgradem z verze 1.x na verzi 2.0, nezapomeňte si vytvořit zálohu databáze vašeho webu**_
 
-## První kroky
+## První kroky {#first-steps}
 
 Prvním krokem je stáhnout .zip soubor pluginu a nainstalovat verzi 2.0 v administraci vaší multisite sítě.
 
@@ -51,7 +51,7 @@ Po aktivaci licence můžete zahájit samotnou instalaci kliknutím na **Install
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## A teď samotná migrace
+## A teď samotná migrace {#now-the-migration}
 
 Nástroj pro migraci má zabudovanou bezpečnostní funkci, která zkontroluje celou vaši multisite síť a ujistí se, že všechna data Ultimate Multisite lze bez problémů migrovat. Kliknutím na tlačítko **Run Check** spustíte kontrolu.
 
@@ -59,13 +59,13 @@ Nástroj pro migraci má zabudovanou bezpečnostní funkci, která zkontroluje c
 
 Po provedení kontroly mohou nastat dvě situace: výsledek může být buď **s chybou**, nebo **bez chyby**.
 
-### S chybou
+### S chybou {#with-error}
 
 Pokud se zobrazí chybová zpráva, budete muset kontaktovat náš tým podpory, který vám pomůže chybu opravit. Při vytváření tiketu nezapomeňte **přiložit protokol chyb**. Protokol si můžete stáhnout, nebo můžete kliknout na odkaz pro kontaktování našeho týmu podpory. Na pravé straně stránky se otevře widget nápovědy s předvyplněnými poli, včetně protokolů chyb v popisu.
 
 _**Protože systém nalezl chybu, nebudete moci pokračovat v migraci na verzi 2.0. Můžete se vrátit k verzi 1.x a pokračovat v provozu vaší sítě, dokud nebude chyba opravena.**_
 
-### Bez chyby
+### Bez chyby {#without-error}
 
 Pokud systém nenajde žádnou chybu, zobrazí se zpráva o úspěchu a tlačítko **Migrate** ve spodní části stránky, které vám umožní pokračovat v migraci. Na této stránce vám bude připomenuto, abyste si před pokračováním vytvořili zálohu databáze, což důrazně doporučujeme. Pokud už zálohu máte, klikněte na **Migrate**.
 

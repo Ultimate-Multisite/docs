@@ -4,11 +4,11 @@ title: Toiminto - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Toiminto: wu_model_post_save
+# Toiminto: wu_model_post_save {#action-wumodelpostsave}
 
 Käynnistyy sen jälkeen, kun objekti on tallennettu tietokantaan.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Käynnistyy sen jälkeen, kun objekti on tallennettu tietokantaan.
 | $data_unserialized | `array` | Tallennettavat objektin tiedot. |
 | $this | `\Base_Model` | Objektin instanssi. |
 
-### Alkaen
+### Alkaen {#since}
 
 - 2.0.0
-### Lähde
+### Lähde {#source}
 
 - Määritelty tiedostossa [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L613) rivillä 613
 - Määritelty tiedostossa [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1743) rivillä 1743

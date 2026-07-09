@@ -4,11 +4,11 @@ title: Akce - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Action: move_site
+# Action: move_site {#action-movesite}
 
 Spustí se, když je místo přesunuto do nové sítě.
 
-## Parametry
+## Parametry {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Spustí se, když je místo přesunuto do nové sítě.
 | $old_network_id | `int` | ID původní sítě pro toto místo. |
 | $new_network_id | `int` | ID sítě, do které bylo místo přesunuto. |
 
-### Od
+### Od {#since}
 
 - 1.3.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) na řádku 1587

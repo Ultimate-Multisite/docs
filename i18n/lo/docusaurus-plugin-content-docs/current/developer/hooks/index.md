@@ -3,11 +3,11 @@ title: ການອ້າງອີງ Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# ອ້າງອີງ Hooks
+# ອ້າງອີງ Hooks {#hooks-reference}
 
 ເອກະສານທີ່ສ້າງອັດຕະໂນມັດສຳລັບ **59 ການດຳເນີນການ** ແລະ **118 ຕົວກອງ** ທັງໝົດໃນ Ultimate Multisite.
 
-## ການດຳເນີນການ
+## ການດຳເນີນການ {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — ເຮັດວຽກກ່ອນການປ່ຽນທິດທາງການຢືນຢັນຕົວຕົນ.
 - [set_auth_cookie](./Actions/set_auth_cookie) — ເຮັດວຽກທັນທີກ່ອນທີ່ cookie ການຢືນຢັນຕົວຕົນຈະຖືກຕັ້ງຄ່າ.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ເຮັດວຽກຫຼັງຈາກວັດຖຸຖືກຈັດເກັບເຂົ້າໃນຖານຂໍ້ມູນ.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມການດຳເນີນການເຂົ້າໃນຂະບວນການປົດລັອກ.
 
-## ຕົວກອງ
+## ຕົວກອງ {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ກັ່ນຕອງໄລຍະເວລາການໝົດອາຍຸຂອງ cookie ການຢືນຢັນຕົວຕົນ.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ກັ່ນຕອງ scheme ການ redirect ການຢືນຢັນຕົວຕົນ.

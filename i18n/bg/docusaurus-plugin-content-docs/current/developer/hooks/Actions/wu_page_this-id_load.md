@@ -4,11 +4,11 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_{$this->id}_load
+# Action: wu_page_{$this->id}_load {#action-wupagethis-idload}
 
 Позволява на разработчиците на плагини да добавят допълнителни хукове към нашите страници.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 | $page_hook | `string` | Хук на страницата на тази страница. |
 | $admin_page | `self` | Инстанцията на страницата. |
 
-### От
+### От {#since}
 
 - 1.8.2
 - 2.0.4: Добавен трети параметър: инстанцията на страницата.
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) на ред 332

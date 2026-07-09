@@ -3,13 +3,13 @@ title: Íocaíocht a Fháil
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ag Fáil Íocaíochta (v2)
+# Ag Fáil Íocaíochta (v2) {#getting-paid-v2}
 
 _**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do Ultimate Multisite leagan 2.x.**_
 
 Tá córas ballraíochta agus billeála ionsuite ag Ultimate Multisite. Chun go bhfeidhmeoidh ár gcóras billeála, tá na geataí íocaíochta is coitianta a úsáidtear i ríomhthráchtáil comhtháite againn. Is iad na geataí íocaíochta réamhshocraithe in Ultimate Multisite ná _Stripe_ , _PayPal_ , agus Íocaíocht Láimhe. Is féidir leat _WooCommerce_ , _GoCardless_ agus _Payfast_ a úsáid freisin chun íocaíochtaí a fháil trína mbreiseáin faoi seach a shuiteáil.
 
-## Socruithe Bunúsacha
+## Socruithe Bunúsacha {#basic-settings}
 
 Is féidir leat aon cheann de na geataí íocaíochta seo a chumrú faoi shocruithe íocaíochta Ultimate Multisite. Is féidir leat é a aimsiú trí dhul chuig **roghchlár Ultimate Multisite > Socruithe > Íocaíochtaí.**
 
@@ -39,7 +39,7 @@ Cuireann sé seo cosc ar bhallraíocht a bheith le feiceáil amhail is go n-athn
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Cá háit a bhfaighidh tú na geataí:
+## Cá háit a bhfaighidh tú na geataí: {#where-to-find-the-gateways}
 
 Is féidir leat na geataí íocaíochta a shocrú ar an leathanach céanna ( **Ultimate Multisite > Socruithe > Íocaíochtaí**). Díreach faoi **gheataí íocaíochta gníomhacha** , beidh tú in ann a fheiceáil: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ agus _Láimhe_.
 
@@ -67,7 +67,7 @@ Seo freisin amharc iomlán ar shocruithe na ngeataí íocaíochta:
 
 Anois, más mian leat _WooCommerce_ , _GoCardless_ nó _Payfast_ a úsáid mar do gheata íocaíochta, beidh ort **a mbreiseáin a shuiteáil agus a chumrú**.
 
-### Conas an breiseán WooCommerce a shuiteáil:
+### Conas an breiseán WooCommerce a shuiteáil: {#how-to-install-the-woocommerce-add-on}
 
 Tuigimid nach bhfuil _Stripe_ agus _PayPal_ ar fáil i roinnt tíortha, rud a chuireann teorainn le húsáideoirí Ultimate Multisite nó a chuireann bac orthu ár bplugin a úsáid go héifeachtach. Mar sin chruthaíomar breiseán chun _WooCommerce,_ a chomhtháthú, ar plugin ríomhthráchtála an-choitianta é. Chruthaigh forbróirí ar fud an domhain breiseáin chun geataí íocaíochta éagsúla a chomhtháthú leis. Bhain muid leas as seo chun na geataí íocaíochta is féidir leat a úsáid le córas billeála Ultimate Multisite a leathnú.
 
@@ -95,7 +95,7 @@ Tar éis é a ghníomhachtú, mura bhfuil an breiseán WooCommerce suiteáilte a
 
 Chun tuilleadh a léamh faoin mbreiseán WooCommerce Integration, **cliceáil anseo**.
 
-### Conas an breiseán GoCardless a shuiteáil:
+### Conas an breiseán GoCardless a shuiteáil: {#how-to-install-the-gocardless-add-on}
 
 Tá na céimeanna chun an breiseán _GoCardless_ a shuiteáil beagnach mar an gcéanna leis an mbreiseán _WooCommerce_. Téigh chuig leathanach na mbreiseán agus roghnaigh an breiseán **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Tar éis don tsuiteáil a bheith críochnaithe, atreorófar thú chuig leathanac
 
 Chun foghlaim conas tosú leis an ngeata _GoCardless_, **léigh an t-alt seo**.
 
-### Conas an breiseán Payfast a shuiteáil:
+### Conas an breiseán Payfast a shuiteáil: {#how-to-install-the-payfast-add-on}
 
 Téigh chuig leathanach na mbreiseán agus roghnaigh an breiseán **Ultimate Multisite: Payfast Gateway**.
 

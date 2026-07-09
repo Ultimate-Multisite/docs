@@ -3,11 +3,11 @@ title: ساروقي مائگريشن ورک فلو
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow
+# Sovereign Migration Workflow {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ اسڪيورين ميجريشن (migration) جي تصديقي دروازا (verification gates) شامل ڪيو آهي، جيڪو هڪ اسٽيٽار سابسايت کي سوورين تنينٽ انفراسٽرڪچر ۾ منتقل ڪرڻ لاءِ استعمال ٿئي ٿو.
 
-## شروع ڪرڻ کان اڳ
+## شروع ڪرڻ کان اڳ {#before-you-start}
 
 تصديق ڪريو ته توهان جي پاسي آهن:
 
@@ -17,7 +17,7 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ اسڪيورين ميجريشن (migr
 - هڪ ڊيٽابيس هاستجي جي بندڻ (binding) جيڪا منزل واري ماحول سان مطابقت رکي ٿي.
 - نڪر (network) لاءِ WP-CLI ڪمان چلائڻ جو رسائي.
 
-## سفارش ڪيل عملدرزي (Recommended workflow)
+## سفارش ڪيل عملدرزي (Recommended workflow) {#recommended-workflow}
 
 1. منزل وارو تنينٽ ڊيٽابيس ۽ فزڪل سيستم کي تيار ڪريو.
 2. تنينٽ جي الگ ڪرڻ جي ترتي بيان (isolation settings) کي رجيستري يا اپڊيٽ ڪريو.
@@ -28,7 +28,7 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ اسڪيورين ميجريشن (migr
 7. تنينٽ کي SSO سان پهچائڻ لاءِ وڃو.
 8. صرف تصديق پاس ٿيڻ کان پوءِ DNS يا ريؤٽنگ بدلائڻ جو سوچيو.
 
-## تصديقي دروازا (Verification gates)
+## تصديقي دروازا (Verification gates) {#verification-gates}
 
 تصديقي عملدرزي ميجريشن کي ڪيترن ئي زاويان کان جانچي ٿي:
 
@@ -40,6 +40,6 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ اسڪيورين ميجريشن (migr
 
 تصديقي غلطين کي لانچ کان اڳ رکڻ واري رکاوٽ سمجھو. رپورٽ ڪيل ڊيٽابيس، صارف، ڪم يا ريؤٽنگ جو مسئلو حل ڪريو، پنهنجي تنينٽ کي گهرو ڪرڻ کان اڳ تصديق ٻيهر چلائيڪو.
 
-## پهرين پروڊڪشن پهچڻ (First production visit)
+## پهرين پروڊڪشن پهچڻ (First production visit) {#first-production-visit}
 
 تصديقي عملدرزي پاس ٿيڻ کان پوءِ، پهرين اڊمن وڃڻ لاءِ سائٽ مينيجمنت اسڪرين کان **Visit (SSO)** استعمال ڪريو. هي هڪ ئي ڪنٽرولڊ قدم ۾ تنينٽ ريؤٽنگ، SSO ٽوڪن جو انتظام، اورجين پيننگ، ۽ تنينٽ طرفان صارف جي ترتيب کي تصديق ڪري ٿو.

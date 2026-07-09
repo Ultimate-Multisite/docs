@@ -4,11 +4,11 @@ title: Filtër - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filtër: retrieve_password_message
+# Filtër: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Filtron trupin e mesazhit të emailit për rivendosjen e fjalëkalimit.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Lloji | Përshkrimi |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Filtron trupin e mesazhit të emailit për rivendosjen e fjalëkalimit.
 | $user_login | `string` | Emri i përdoruesit për përdoruesin. |
 | $user_data | `\WP_User` | Objekti WP_User. |
 
-### Që prej
+### Që prej {#since}
 
 - 2.8.0
 - 4.1.0: Added <code>$user_login</code> and <code>$user_data</code> parameters.
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) në rreshtin 149
 
 
-## Kthen
+## Kthen {#returns}
 Mesazhin e parazgjedhur të emailit.

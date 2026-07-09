@@ -3,11 +3,11 @@ title: Domeinproducten en Prijzen
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeinproducten en Prijzen
+# Domeinproducten en Prijzen {#domain-products-and-pricing}
 
 Domeinproducten waarmee u de prijzen, TLD's, WHOIS-privacy en de providerselectie beheert. Elk domeinproduct is een standaard Ultimate Multisite product met een extra tabblad **Domeineinstellungen**.
 
-## Een domeinproduct aanmaken
+## Een domeinproduct aanmaken {#creating-a-domain-product}
 
 1. Ga naar **Network Admin › Ultimate Multisite › Products**
 2. Klik op **Add New**
@@ -17,13 +17,13 @@ Domeinproducten waarmee u de prijzen, TLD's, WHOIS-privacy en de providerselecti
 
 Domeinproducten verschijnen met een paars **Domain** badge in de productlijst en kunnen worden gefilterd met behulp van het tabblad **Domain Products**.
 
-## Domeineinstellungen tabblad
+## Domeineinstellungen tabblad {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Selecteer welke registrar de registratie voor dit product afhandelt. Standaard staat de globale **Default provider** in de Domain Seller instellingen.
 
-### Ondersteunde TLD's
+### Ondersteunde TLD's {#supported-tlds}
 
 Laat dit veld leeg om een **catch-all product** te creëren dat van toepassing is op alle TLD's die niet worden gematcht door een ander product.
 
@@ -31,7 +31,7 @@ Voer een komma-gescheiden lijst met TLD's in (bijv. `.com, .net, .org`) om een *
 
 **Hoe productmatching werkt:** Wanneer een klant naar een domein zoekt, kiest de addon het meest specifieke overeenkomende product. Een product met `.com` in zijn TLD-lijst heeft voorrang op een catch-all product. Als er geen TLD-specifiek product overeenkomt, wordt de catch-all gebruikt. Als er geen producten zijn, wordt de domeinzoekfunctie niet getoond.
 
-### Type marge
+### Type marge {#markup-type}
 
 Drie modi bepalen hoe uw verkoopprijs wordt berekend op basis van de inkoopprijs:
 
@@ -41,11 +41,11 @@ Drie modi bepalen hoe uw verkoopprijs wordt berekend op basis van de inkoopprijs
 | **Vaste marge** | Voegt een vast bedrag toe. Een marge van $5 op een domein van $10 geeft $15. |
 | **Vaste prijs** | Negeert de inkoopprijs volledig. Vraagt altijd het bedrag dat u invoert. |
 
-### Introductieprijs
+### Introductieprijs {#introductory-pricing}
 
 Schakel dit in om een gereduceerde prijs voor het eerste jaar aan te bieden. Stel een aparte **Introductory price** (de prijs voor jaar 1) naast de reguliere **Renewal price** (jaar 2 en verder). De klant ziet beide prijzen tijdens het afrekenproces, zodat hij weet wat hij kan verwachten bij verlenging.
 
-### WHOIS-privacy
+### WHOIS-privacy {#whois-privacy}
 
 Bepaalt of WHOIS-privacybescherming wordt aangeboden voor domeinen die via dit product worden geregistreerd.
 
@@ -59,7 +59,7 @@ Voor Namecheap gebruikt WHOIS-privacy WhoisGuard (altijd gratis). Voor OpenSRS g
 
 ---
 
-## TLD-import en synchronisatie
+## TLD-import en synchronisatie {#tld-import-and-sync}
 
 Domeinproducten tonen realtime inkoopprijzen die van de aangesloten provider worden opgehaald. Om dit te laten werken, moeten TLD's worden geïmporteerd.
 
@@ -70,7 +70,7 @@ Na een synchronisatie ga je naar het tabblad Domeineinstellungen van een willeke
 
 ---
 
-## Automatische verlenging
+## Automatische verlenging {#auto-renewal}
 
 Domeinverlengingen zijn gekoppeld aan de lidmaatschapsstatus van de klant:
 
@@ -90,7 +90,7 @@ E-mail template ID's voor domeinlevenscyclusgebeurtenissen:
 
 ---
 
-## Admin: Handmatige domeinregistratie
+## Admin: Handmatige domeinregistratie {#admin-manual-domain-registration}
 
 Om een domein namens een klant te registreren zonder dat deze via het afrekenproces hoeft:
 

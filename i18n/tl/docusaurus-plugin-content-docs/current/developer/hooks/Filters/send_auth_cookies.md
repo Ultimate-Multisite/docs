@@ -4,19 +4,19 @@ title: Pansala - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies
+# Filter: send_auth_cookies {#filter-sendauthcookies}
 
 Nagbibigay-daan sa pagpigil na aktuwal na maipadala ang auth cookies sa client.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
 | $send | `bool` | Kung ipapadala ang auth cookies sa client. |
 
-### Mula Noong
+### Mula Noong {#since}
 
 - 4.7.4
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L150) sa linya 150

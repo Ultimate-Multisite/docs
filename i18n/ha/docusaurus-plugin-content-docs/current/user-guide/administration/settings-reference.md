@@ -3,11 +3,11 @@ title: Manazartar Saituna
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Bayanin Saituna
+# Bayanin Saituna {#settings-reference}
 
 Wannan shafi yana bin diddigin saitunan da ke shafar gudanarwa ta yau da kullum da sauye-sauyen halayya na baya-bayan nan a cikin Ultimate Multisite.
 
-## Wasu Zaɓuɓɓuka
+## Wasu Zaɓuɓɓuka {#other-options}
 
 Yankin **Wasu Zaɓuɓɓuka** yana bayyana ƙarƙashin **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Yankin **Wasu Zaɓuɓɓuka** yana bayyana ƙarƙashin **Ultimate Multisite > Set
 |---|---|
 | **Enable Jumper** | Yana nuna kayan aikin kewayawa cikin sauri na Jumper a yankin admin. Yi amfani da shi don tsallaka kai tsaye zuwa allunan Ultimate Multisite, abubuwan network, da wuraren admin da ake tallafawa. Kashe shi idan ba ka son wannan gajeriyar hanya ta bayyana. |
 
-## Rahoton kuskure da telemetry
+## Rahoton kuskure da telemetry {#error-reporting-and-telemetry}
 
 An cire tsohon saitin zaɓin shiga rahoton kuskure daga shafin saituna. An kashe telemetry na ba-suna kuma babu maɓallin UI don kunna shi.
 
 Idan kana kula da runbooks na cikin gida ko hotunan allo don shafin saituna, cire nassoshi zuwa tsohon filin zaɓin shiga rahoton kuskure domin masu gudanarwa kada su nemi saitin da ba ya nan kuma.
 
-## Saitunan Import/Export
+## Saitunan Import/Export {#importexport-settings}
 
 Tab ɗin saitunan **Import/Export** yana bayyana waɗanne saituna yake sarrafawa kuma yana haɗa kai tsaye zuwa **Ultimate Multisite > Site Export** don rumbunan adana site da network. Yi amfani da tab ɗin saituna don daidaitawar import/export, yi amfani da **Tools > Export & Import** don tsarin aikin export/import na site guda ɗaya, kuma yi amfani da kayan aikin Site Export lokacin da kake buƙatar cikakken rumbun adana Network Export.
 
-## Gargadin raguwar ma'aunin Domain Seller HostAfrica
+## Gargadin raguwar ma'aunin Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Lokacin da addon na Domain Seller ya haɗu da HostAfrica, masu gudanar da network yanzu suna ganin gargadin raguwar ma'auni da za a iya watsarwa lokacin da ma'aunin reseller account ya yi ƙasa ƙwarai don amintaccen rajistar domain ko sarrafa sabuntawa.
 
 Ɗauki wannan sanarwa a matsayin gargadin aiki: ƙara kuɗi a ma'aunin HostAfrica reseller kafin karɓar ƙarin rajistar domain da aka biya, sannan ka koma saitunan Domain Seller ko allon sa ido na domain don tabbatar da cewa rajista da sabuntawa za su iya ci gaba yadda ya kamata.
 
-## Saitunan mai haɗa AI provider
+## Saitunan mai haɗa AI provider {#ai-provider-connector-settings}
 
 Saitunan mai haɗa AI provider yanzu suna nuna kawai tarin OAuth account da ake tallafawa:
 

@@ -3,7 +3,7 @@ title: Kundens Account-sida
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Din klients Account-sida (v2)
+# Din klients Account-sida (v2) {#your-clients-account-page-v2}
 
 _**VIKTIGT MEDDELANDE: Den här artikeln avser Ultimate Multisite version 2.x.**_
 
@@ -11,7 +11,7 @@ När kunder prenumererar på en plan i ditt nätverk får de åtkomst till en we
 
 I den här handledningen guidar vi dig genom kundens Account-sida, och du får se vad dina kunder kan se och göra där.
 
-## Account-sidan
+## Account-sidan {#the-account-page}
 
 Account-sidan är tillgänglig genom att klicka på **Account** i din kunds Dashboard.
 
@@ -27,7 +27,7 @@ Efter att en kund klickar på den ser de en översikt över sitt medlemskap, fak
 
 De kan också byta medlemskapet till en annan plan, eller köpa ett annat paket eller en annan tjänst som du erbjuder. Låt oss titta på varje avsnitt separat.
 
-### Översikt över ditt medlemskap:
+### Översikt över ditt medlemskap: {#your-membership-overview}
 
 Det första blocket direkt under dina kunders webbplatsnamn visar en översikt över deras aktuella plan och de tjänster/paket som köptes med den. Blocket visar också medlemskapsnumret, det ursprungliga beloppet som betalades för det, hur mycket planen och eventuella tjänster/paket kostar samt hur många gånger de har fakturerats för detta medlemskap. De kan också se om medlemskapet är **Aktivt** , **Utgånget** eller **Avbrutet**.
 
@@ -43,7 +43,7 @@ Om dina kunder nu väljer att köpa paket eller tjänster för detta aktuella me
 
 Observera att kupongkoder inte kan läggas till på denna sida för medlemskapsändring. Om kunden använde en kupongkod vid det första medlemskapsköpet kommer koden också att tillämpas på detta nya medlemskap.
 
-### Uppdatera faktureringsadressen:
+### Uppdatera faktureringsadressen: {#updating-the-billing-address}
 
 På Account-sidan kan dina kunder också uppdatera sin faktureringsadress. De behöver bara klicka på **Uppdatera** bredvid _Faktureringsadress_.
 
@@ -53,7 +53,7 @@ Ett nytt fönster visas för din kund. Allt kunden behöver göra är att fylla 
 
 ![Formulär för att uppdatera faktureringsadress](/img/account-page/billing-address-form.png)
 
-### Ändra webbplatsmallen:
+### Ändra webbplatsmallen: {#changing-the-site-template}
 
 För att låta dina kunder ändra sina webbplatsmallar behöver du gå till **Ultimate Multisite > Inställningar > Webbplatser** och aktivera alternativet **Tillåt mallbyte**.
 
@@ -81,7 +81,7 @@ Efter att ha aktiverat bekräftelsen och klickat på **Bearbeta byte** kommer de
 
 Kunder kan också använda **Återställ aktuell mall** från den här panelen när de behöver återställa webbplatsen tillbaka till den för närvarande tilldelade mallen. Precis som när man byter till en annan mall kan återställning av en mall skriva över webbplatsinnehåll, så kunder bör bara bekräfta det när de förstår återställningsåtgärden.
 
-### Lägga till anpassade domäner:
+### Lägga till anpassade domäner: {#adding-custom-domains}
 
 Dina kunder kommer också att ha möjlighet att lägga till en anpassad domän för den här planen på sin Account-sida. För att låta dina kunder använda anpassade domäner går du till **Ultimate Multisite > Inställningar >** **Domänmappning**.
 
@@ -115,7 +115,7 @@ Efter att ha klickat på **Nästa steg** kan dina kunder lägga till sitt anpass
 
 Efter att ha klickat på **Lägg till domän** läggs domänen till på din kunds Account. Allt de behöver göra nu är att ändra DNS-posterna för den här anpassade domänen hos sin domänregistrator.
 
-### Ändra lösenord:
+### Ändra lösenord: {#changing-password}
 
 Inne i Account Dashboard kan dina kunder också ändra sitt lösenord genom att klicka på **Ändra lösenord**.
 
@@ -125,7 +125,7 @@ Detta visar ett nytt fönster där dina kunder behöver fylla i sitt nuvarande l
 
 ![Formulär för att ändra lösenord med fält för nuvarande och nytt lösenord](/img/account-page/change-password-form.png)
 
-### Farozon:
+### Farozon: {#danger-zone}
 
 Vi har också två alternativ som visas i delen **Farozon**: **Ta bort webbplats** och **Ta bort Account**. De finns båda i delen Farozon eftersom dessa två åtgärder är oåterkalleliga. Om dina kunder tar bort sin webbplats eller sitt Account kan de inte återställa dem.
 

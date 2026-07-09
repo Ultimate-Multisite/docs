@@ -3,7 +3,7 @@ title: Ìṣàkóso Owó-orí
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ìṣàkóso Owo-orí
+# Ìṣàkóso Owo-orí {#tax-handling}
 
 Ultimate Multisite ní module gbigba owo-orí tí a kọ sínú plugin pàtàkì wa, nítorí náà bí o bá nílò láti gba àwọn owo-orí títà lórí àwọn plan, package àti iṣẹ́ rẹ, o lè ṣe bẹ́ẹ̀ rọrùn láì fi dandan sí fifi àfikún kankan síi.
 
@@ -11,7 +11,7 @@ Fún àwọn ilé-iṣẹ́ tó wà ní Europe, a ń pèsè **àfikún** kan tó
 
 Ultimate Multisite kì í faìlì tàbí san owo-orí sí ìjọba ní ipò rẹ; a kàn ń ràn ọ́ lọ́wọ́ láti gba àwọn owo-orí tó yẹ ní àkókò transaction. **Ìwọ fúnra rẹ ṣì ní láti san owo-orí náà.**
 
-## Mímú Gbigba Owo-orí ṣiṣẹ́
+## Mímú Gbigba Owo-orí ṣiṣẹ́ {#enabling-tax-collection}
 
 Gbigba owo-orí kò ṣiṣẹ́ ní àiyipada. Láti mú un ṣiṣẹ́, o ní láti lọ sí **Ultimate Multisite > Settings > Taxes** kí o sì toggle láti mú setting Enable Taxes ṣiṣẹ́.
 
@@ -25,7 +25,7 @@ O tún lè wo settings owo-orí fún àwọn ọja kọ̀ọ̀kan:
 
 ![Settings owo-orí fún àwọn ọja](/img/config/settings-taxes.png)
 
-### Owo-orí tí a yọ kúrò vs. Owo-orí tí a fi kún un
+### Owo-orí tí a yọ kúrò vs. Owo-orí tí a fi kún un {#tax-excluded-vs-tax-included}
 
 Ní àiyipada, gbogbo iye owó ọja rẹ jẹ́ tax excluded, èyí túmọ̀ sí pé àwọn owo-orí **kò sí nínú** iye owó ọja náà. Bí a bá pinnu pé customer yẹ kí ó san owo-orí lórí rírà kan pàtó, a ó fi àwọn owo-orí náà **sí orí** subtotal.
 
@@ -37,7 +37,7 @@ Má ṣe gbàgbé láti **save** àwọn ìyípadà tí o ti ṣe.
 
 ###
 
-## Ṣíṣe Àwọn Oṣuwọn Owo-orí
+## Ṣíṣe Àwọn Oṣuwọn Owo-orí {#creating-tax-rates}
 
 Lẹ́yìn tí o bá mú Gbigba Owo-orí ṣiṣẹ́, ìwọ yóò nílò láti ṣẹ̀dá àwọn oṣuwọn owo-orí fún àwọn ibi pàtó nípa lílo editor oṣuwọn owo-orí wa.
 
@@ -51,7 +51,7 @@ Lórí ojúewé editor oṣuwọn owo-orí, o lè ṣàfikún àwọn Tax Rates 
 
 Ìwọ yóò nílò láti fún oṣuwọn owo-orí kọ̀ọ̀kan ní **title** kan (tí a máa lò lórí invoices). Lẹ́yìn náà o lè yan **country** (dandan), **state,** àti **city** (méjèèjì jẹ́ àṣàyàn) níbi tí a ó ti gba owo-orí yìí. Ní ìparí, ṣàfikún **oṣuwọn owo-orí ní ìdá ogorun**.
 
-### Àwọn Ẹ̀ka Owo-orí
+### Àwọn Ẹ̀ka Owo-orí {#tax-categories}
 
 O tún lè ṣẹ̀dá ọ̀pọ̀ Tax Categories, láti ṣàfikún àwọn oṣuwọn owo-orí tó yàtọ̀ fún oríṣìíríṣìí ọja.
 
@@ -73,7 +73,7 @@ O lè ṣètò ẹ̀ka owo-orí fún ọja kan pàtó nípa lílọ sí **ojúew
 
 Lórí screen kan náà, o lè pa toggle **Is Taxable?** láti jẹ́ kí Ultimate Multisite mọ̀ pé kò yẹ kí ó gba owo-orí lórí ọja pàtó yẹn.
 
-## Àtìlẹ́yìn VAT Europe
+## Àtìlẹ́yìn VAT Europe {#european-vat-support}
 
 Gẹ́gẹ́ bí a ti mẹ́nuba tẹ́lẹ̀, a ní àfikún kan tó wà fún customer ní EU tí wọ́n ní àwọn àìní àfikún nítorí àwọn òfin European VAT.
 
@@ -101,7 +101,7 @@ Bí o bá padà sí **tab Tax Settings** , ìwọ yóò rí àwọn option tuntu
 
 <!-- Screenshot unavailable: toggle Enable VAT Support nínú settings Owo-orí lẹ́yìn activation add-on -->
 
-### Fífà Àwọn Oṣuwọn Owo-orí VAT
+### Fífà Àwọn Oṣuwọn Owo-orí VAT {#pulling-on-vat-tax-rates}
 
 Ọ̀kan lára àwọn irinṣẹ́ tí integration wa ṣàfikún ni agbára láti fi àwọn oṣuwọn owo-orí fún àwọn state ọmọ ẹgbẹ́ EU rù sínú rẹ. A lè ṣe èyí nípa ṣíṣàbẹ̀wò sí ojúewé editor oṣuwọn owo-orí lẹ́yìn mímú àtìlẹ́yìn EU VAT ṣiṣẹ́.
 
@@ -111,7 +111,7 @@ Ní ìsàlẹ̀ ojúewé náà, ìwọ yóò rí àwọn option fífà VAT. Yíy
 
 O tún lè ṣàtúnṣe àwọn iye lẹ́yìn fífà wọ́n. Láti ṣe é, kàn ṣàtúnṣe ìlà table tí o nílò kí o sì tẹ láti save àwọn iye tuntun náà.
 
-### Ìfìdímúlẹ̀ VAT
+### Ìfìdímúlẹ̀ VAT {#vat-validation}
 
 Nígbà tí àtìlẹ́yìn VAT bá ṣiṣẹ́, Ultimate Multisite yóò ṣàfikún pápá àfikún sí form checkout, ní ìsàlẹ̀ pápá billing address. Pápá náà yóò hàn fún àwọn customer tó wà ní EU nìkan.
 

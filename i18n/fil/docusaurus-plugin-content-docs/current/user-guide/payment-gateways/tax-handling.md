@@ -3,7 +3,7 @@ title: Pangangasiwa ng Buwis
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Pamamahala ng Buwis
+# Pamamahala ng Buwis {#tax-handling}
 
 Ang Ultimate Multisite ay may module para sa pagkolekta ng buwis na built-in sa aming core plugin, kaya kung kailangan mong mangolekta ng sales tax sa iyong mga plan, package, at serbisyo, madali mo itong magagawa nang hindi kinakailangang mag-install ng anumang add-on.
 
@@ -11,7 +11,7 @@ Para sa mga kumpanyang matatagpuan sa Europa, nag-aalok kami ng **add-on** na na
 
 Hindi naghahain o nagbabayad ang Ultimate Multisite ng mga buwis sa pamahalaan sa ngalan mo; tinutulungan ka lang naming mangolekta ng naaangkop na mga buwis sa oras ng transaksyon. **Kakailanganin mo pa ring magbayad ng mga buwis nang mag-isa.**
 
-## Pag-enable ng Pagkolekta ng Buwis
+## Pag-enable ng Pagkolekta ng Buwis {#enabling-tax-collection}
 
 Hindi naka-enable ang pagkolekta ng buwis bilang default. Para i-enable ito, kailangan mong pumunta sa **Ultimate Multisite > Mga Setting > Mga Buwis** at i-toggle para i-enable ang setting na I-enable ang Mga Buwis.
 
@@ -25,7 +25,7 @@ Maaari mo ring tingnan ang mga setting ng buwis para sa mga indibidwal na produk
 
 ![Mga setting ng buwis para sa mga produkto](/img/config/settings-taxes.png)
 
-### Hindi kasama ang buwis vs. kasama ang buwis
+### Hindi kasama ang buwis vs. kasama ang buwis {#tax-excluded-vs-tax-included}
 
 Bilang default, lahat ng presyo ng iyong produkto ay hindi kasama ang buwis, ibig sabihin, ang mga buwis ay **hindi kasama** sa presyo ng produkto. Kung matutukoy namin na dapat magbayad ng buwis ang isang customer sa isang partikular na pagbili, idaragdag namin ang mga buwis **sa ibabaw** ng subtotal.
 
@@ -37,7 +37,7 @@ Huwag kalimutang **i-save** ang mga pagbabagong ginawa mo.
 
 ###
 
-## Paglikha ng Mga Rate ng Buwis
+## Paglikha ng Mga Rate ng Buwis {#creating-tax-rates}
 
 Pagkatapos mong i-enable ang Pagkolekta ng Buwis, kakailanganin mong gumawa ng mga rate ng buwis para sa mga partikular na lokasyon gamit ang aming editor ng mga rate ng buwis.
 
@@ -51,7 +51,7 @@ Sa pahina ng editor ng mga rate ng buwis, maaari kang magdagdag ng bagong Mga Ra
 
 Kakailanganin mong bigyan ang bawat rate ng buwis ng **pamagat** (ginagamit sa mga invoice). Pagkatapos ay maaari mong piliin ang **bansa** (kinakailangan), ang **estado,** at ang **lungsod** (parehong opsyonal) kung saan sisingilin ang buwis na ito. Panghuli, idagdag ang **rate ng buwis sa porsyento**.
 
-### Mga Kategorya ng Buwis
+### Mga Kategorya ng Buwis {#tax-categories}
 
 Maaari ka ring gumawa ng maraming Kategorya ng Buwis, para magdagdag ng iba't ibang rate ng buwis para sa iba't ibang uri ng produkto.
 
@@ -73,7 +73,7 @@ Maaari mong itakda ang kategorya ng buwis para sa isang partikular na produkto s
 
 Sa parehong screen na iyon, maaari mong i-toggle off ang toggle na **Taxable ba?** para ipaalam sa Ultimate Multisite na hindi ito dapat mangolekta ng mga buwis sa partikular na produktong iyon.
 
-## Suporta sa European VAT
+## Suporta sa European VAT {#european-vat-support}
 
 Gaya ng nabanggit kanina, mayroon kaming add-on na available para sa customer sa EU na may karagdagang mga kinakailangan dahil sa mga regulasyon ng European VAT.
 
@@ -101,7 +101,7 @@ Kung babalik ka sa **tab ng Mga Setting ng Buwis** , makakakita ka ng mga bagong
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Pagkuha ng Mga Rate ng Buwis sa VAT
+### Pagkuha ng Mga Rate ng Buwis sa VAT {#pulling-on-vat-tax-rates}
 
 Isa sa mga tool na idinaragdag ng aming integration ay ang kakayahang i-load ang mga rate ng buwis para sa mga estado na kasapi ng EU. Magagawa iyon sa pamamagitan ng pagbisita sa pahina ng editor ng mga rate ng buwis pagkatapos i-enable ang suporta sa EU VAT.
 
@@ -111,7 +111,7 @@ Sa ibaba ng pahina, makikita mo ang mga opsyon sa pagkuha ng VAT. Ang pagpili ng
 
 Maaari mo ring i-edit ang mga halaga pagkatapos kunin ang mga ito. Para gawin ito, i-edit lang ang linya ng talahanayan na kailangan mo at i-click para i-save ang mga bagong halaga.
 
-### Validation ng VAT
+### Validation ng VAT {#vat-validation}
 
 Kapag naka-enable ang suporta sa VAT, magdaragdag ang Ultimate Multisite ng karagdagang field sa form ng pag-checkout, sa ibaba ng field ng billing address. Lalabas lang ang field para sa mga customer na matatagpuan sa EU.
 

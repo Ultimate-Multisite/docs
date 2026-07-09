@@ -3,11 +3,11 @@ title: Muutosloki
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Muutosloki
+# Muutosloki {#changelog}
 
-## 1.18.0 — Julkaistu 2026-06-29
+## 1.18.0 — Julkaistu 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Uutta
+### Uutta {#new}
 
 - **Google Calendar -työkalut** — lue määritettyjä kalentereita ja tapahtumia aikataulut huomioivia automaatioita varten
 - **Yhteystietojen yhdistäminen ja osallistuja-apurit** — yhdistä kalenterin osallistujat sivuston käyttäjiin ja yhteystietoihin
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **TextBee SMS -palveluntarjoaja** — lähetä määritettyjä tekstiviesti-ilmoituksia TextBeen kautta
 - **Edistynyt kumppanipaketti** — lisää luotetun kehittäjän tiedostojärjestelmä-, tietokanta-, WP-CLI-, REST-välittäjä-, pluginin rakennus-, git snapshot-, käyttäjähallinta- ja suorituskykytestityökalut, jotka jaetaan erillään WordPress.org-koontiversiosta
 
-### Parannettu
+### Parannettu {#improved}
 
 - **Hallinnoidun Superdav-palvelun määritys** — lisää isännöidyn palvelun endpointit ja automaattinen yhteyden käyttöönotto tuetuille sivustoille
 - **Julkaisupaketointi** — koosta erilliset ydin- ja Advanced-ZIPit, julkaise molemmat GitHubissa ja lähetä vain ydinpaketti WordPress.orgiin
 
-### Korjattu
+### Korjattu {#fixed}
 
 - **AI-pyyntöjen luotettavuus** — paranna mallin valintaa, pyyntöjen aikakatkaisuja, oletusmääritysmallia, päättelytekstin käsittelyä ja uudelleenyritysohjeistusta virheellisiä työkalukutsuja varten
 - **Kalenterin ja muistutusten vahvistaminen** — vahvista Google Calendar -tokeneita ja muistutusten päällekkäisyyksien poistoa
 - **Käyttöönoton ja hyväksyntöjen jatkaminen** — korjaa frontend-käyttöönoton käynnistykset ja vahvistettujen toimintojen jatkaminen
 - **WordPress.org-paketoinnin tarkistusongelmat** — käsittele ydinjulkaisun paketointitarkistuksen palaute
 
-## 1.16.0 — Julkaistu 2026-05-20
+## 1.16.0 — Julkaistu 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Uutta
+### Uutta {#new-1}
 
 - **Luo logo-SVG -toiminto** — Theme Builder voi nyt luoda ja upottaa mukautettuja logo-SVG:itä nimiavaruusturvallisella puhdistuksella
 - **Kuvan lataus kartoitushaastattelussa** — Theme Builderin kartoitushaastattelu sisältää nyt kuvan latausvaiheen rikkaampaa suunnittelukontekstia varten
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Navigaation otsikkoparametri** — Luo valikko -toiminto tukee nyt erillistä `navigation_label`-arvoa, joka on erillään sivun otsikosta
 - **Tason 1 työkalujen saatavuus** — sd-ai-agent/site-scrape on nyt tason 1 työkalu, joka on oletuksena käytettävissä Theme Builderissa
 
-### Korjattu
+### Korjattu {#fixed-1}
 
 - **AI Client -välimuisti** — käyttää nyt transienteja pyyntöjen väliseen pysyvyyteen, mikä estää tietojen häviämisen pitkään kestävissä agenttitehtävissä
 - **Plugin-rivin toimintolinkit** — korjattu ja nimetty uudelleen selkeyden vuoksi
 
-## 1.10.0 — Julkaistu 2026-05-05
+## 1.10.0 — Julkaistu 2026-05-05 {#1100--released-on-2026-05-05}
 
-### Uutta
+### Uutta {#new-2}
 
 - **Tavily-internethaku** — lisää Tavily hakupalveluntarjoajaksi tuottamaan rikkaampia internethakutuloksia Brave Searchin rinnalle
 - **Teematietoiset sisäänrakennetut taidot** — Block Themes-, Classic Themes-, Kadence Blocks- ja Kadence Theme -taito-oppaat toimitetaan nyt pluginin mukana
 - **Sivustonrakentajan yhteydenottolomaketoiminto** — lisää yhteydenottolomake mille tahansa sivulle suoraan chat-käyttöliittymästä
 
-### Parannettu
+### Parannettu {#improved-1}
 
 - **WooCommerce-integraatio uudistettu** — käyttää nyt natiiveja WooCommerce API -rajapintoja paremman luotettavuuden ja yhteensopivuuden saavuttamiseksi
 - **Palveluntarjoajaluettelo päivittyy automaattisesti** — kun mikä tahansa plugin aktivoidaan tai poistetaan käytöstä
 
-### Korjattu
+### Korjattu {#fixed-2}
 
 - **navigate-to-toiminto** — korjattu loputon uudelleenlataussilmukka joillakin ylläpitosivuilla
 - **list-posts-toiminto** — ratkaisee nyt kategoria- ja taginimet oikein slugeiksi

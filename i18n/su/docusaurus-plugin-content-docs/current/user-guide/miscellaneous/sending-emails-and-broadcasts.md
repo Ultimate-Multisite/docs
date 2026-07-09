@@ -3,13 +3,13 @@ title: Ngirim Surélék jeung Siaran
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ngirim Email jeung Siaran (v2)
+# Ngirim Email jeung Siaran (v2) {#sending-emails-and-broadcasts-v2}
 
 _**CATETAN PENTING: Artikel ieu ngarujuk kana Ultimate Multisite vérsi 2.x.**_
 
 Ultimate Multisite hadir jeung fitur anu ngamungkinkeun anjeun komunikasi jeung palanggan anjeun ku ngirim email ka pamaké anu dituju atawa ka sakelompok pamaké, ogé ngirim béwara dina dashboard admin maranéhna pikeun nyiarkeun pangumuman
 
-## Tambahkeun béwara admin kana dashboard palanggan anjeun ku Siaran
+## Tambahkeun béwara admin kana dashboard palanggan anjeun ku Siaran {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ngagunakeun fitur siaran Ultimate Multisite, anjeun bisa nambahkeun **béwara admin** kana dashboard admin subsite pamaké anjeun.
 
@@ -51,7 +51,7 @@ Sanggeus nyieun pesen anjeun, anjeun tuluy bisa mencét tombol **Kirim**.
 
 Sareng éta wungkul. Béwara admin kuduna langsung némbongan dina dashboard pamaké anjeun.
 
-## Kirim email ka palanggan anjeun
+## Kirim email ka palanggan anjeun {#send-emails-to-your-customers}
 
 Ngagunakeun fitur siaran Ultimate Multisite, anjeun bisa ngirim email ka pamaké anjeun. Anjeun boga pilihan pikeun ngirim email ngan ka pamaké husus atawa nargétkeun grup pamaké husus dumasar kana produk atawa rencana anu maranéhna langganan.
 
@@ -81,11 +81,11 @@ Sanggeus nyieun pesen anjeun, anjeun bisa mencét tombol **Kirim**.
 
 Sareng kitu gampangna ngirim email ka pamaké ahir anjeun ngagunakeun fitur siaran.
 
-## Email sistem
+## Email sistem {#system-emails}
 
 Email sistem dina Ultimate Multisite nyaéta **béwara otomatis** anu dikirim ku sistem sanggeus tindakan tangtu saperti pendaptaran, pamayaran, pemetaan domain, jst. Email ieu bisa diédit atawa dirobah tina setélan Ultimate Multisite. Ieu ogé hadir jeung fitur anu ngamungkinkeun anjeun ngareset jeung ngimpor setélan anu geus aya tina instalasi Ultimate Multisite séjén.
 
-### Ngareset & Ngimpor
+### Ngareset & Ngimpor {#resetting--importing}
 
 Vérsi Ultimate Multisite anyar, ogé add-on, bisa jeung bakal ngadaptarkeun email anyar ti mangsa ka mangsa.
 
@@ -93,7 +93,7 @@ Pikeun nyegah konflik jeung masalah séjénna, **kami moal nambahkeun témplat e
 
 Sanajan kitu, super admin jeung agén bisa ngimpor email anu anyar didaptarkeun ieu ngaliwatan pakakas importer. Prosés éta bakal nyieun email sistem anyar jeung eusi jeung konfigurasi tina témplat email anyar, ngamungkinkeun super admin pikeun nyieun sagala parobahan anu dipikahoyong atawa ngajaga sakumaha ayana.
 
-#### Kumaha cara ngimpor email sistem
+#### Kumaha cara ngimpor email sistem {#how-to-import-system-emails}
 
 Buka kaca Setélan Ultimate Multisite anjeun jeung angkat ka tab **Email**.
 
@@ -111,7 +111,7 @@ Teras, anjeun bisa ngaganti pilihan Import Emails pikeun ningali email sistem ma
 
 <!-- Screenshot unavailable: Modal Reset jeung Import kalayan pilihan Import Emails dimekarkeun -->
 
-#### Ngareset Email Sistem
+#### Ngareset Email Sistem {#reseting-system-emails}
 
 Dina waktos séjén, anjeun bakal sadar yén parobahan anu anjeun jieun kana hiji témplat email tangtu geus teu cocog deui pikeun anjeun sarta anjeun hoyong ngareset éta kana **kaayaan standar**.
 

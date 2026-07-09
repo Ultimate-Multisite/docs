@@ -4,11 +4,11 @@ title: Hidlydd - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Hidlydd: ultimate_multisite_content_sync_get_option
+# Hidlydd: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Yn dychwelyd gwerth opsiwn rhwydwaith wedi'i slugio.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Yn dychwelyd gwerth opsiwn rhwydwaith wedi'i slugio.
 | $option_name | `string` | Enw'r opsiwn. |
 | $default | `mixed` | Y gwerth diofyn. |
 
-### Ers
+### Ers {#since}
 
 - 1.0.0
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Wedi'i ddiffinio yn [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) ar linell 126
 
 
-## Yn dychwelyd
+## Yn dychwelyd {#returns}
 Gwerth opsiwn rhwydwaith wedi'i slugio.

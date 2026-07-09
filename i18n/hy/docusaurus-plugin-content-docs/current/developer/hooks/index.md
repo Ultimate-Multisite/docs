@@ -3,11 +3,11 @@ title: Hooks-ի տեղեկատու
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Հուկերի տեղեկագիրք
+# Հուկերի տեղեկագիրք {#hooks-reference}
 
 Ավտոմատ ստեղծված փաստաթղթավորում Ultimate Multisite-ի բոլոր **59 գործողությունների** և **118 զտիչների** համար։
 
-## Գործողություններ
+## Գործողություններ {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Գործարկվում է նույնականացման վերահղումից առաջ։
 - [set_auth_cookie](./Actions/set_auth_cookie) — Գործարկվում է անմիջապես նախքան նույնականացման cookie-ի սահմանումը։
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Գործարկվում է այն բանից հետո, երբ օբյեկտը պահվում է տվյալների բազայում։
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Թույլ է տալիս plugin մշակողներին ապակողպման գործընթացին գործողություններ ավելացնել։
 
-## Զտիչներ
+## Զտիչներ {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Զտում է նույնականացման cookie-ի ժամկետի ավարտի ժամանակահատվածի տևողությունը։
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Զտում է նույնականացման վերահղման սխեման։

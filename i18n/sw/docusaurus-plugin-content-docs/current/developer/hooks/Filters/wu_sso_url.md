@@ -4,13 +4,13 @@ title: Kichujio - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Kichujio: wu_sso_url
+# Kichujio: wu_sso_url {#filter-wussourl}
 
 Huchuja URL za SSO zilizozalishwa kabla ya kurejeshwa kwa vitendo vya wateja kati ya vikoa.
 
 Tumia kichujio hiki wakati muunganisho unahitaji kuongeza muktadha unaoaminika kwenye kiungo cha SSO cha mpangaji huru au kubadilisha URL ya broker huku ukihifadhi uthibitishaji wa token wa Ultimate Multisite.
 
-## Vigezo
+## Vigezo {#parameters}
 
 | Jina | Aina | Maelezo |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Tumia kichujio hiki wakati muunganisho unahitaji kuongeza muktadha unaoaminika k
 | $site_id | `int` | ID ya tovuti lengwa kwa ziara hiyo. |
 | $redirect_to | `string` | URL ya marudio baada ya uthibitishaji wa SSO kufanikiwa. |
 
-### Tangu
+### Tangu {#since}
 
 - 2.13.0
 
-### Chanzo
+### Chanzo {#source}
 
 Imefafanuliwa katika `inc/sso/class-sso.php`.
 
 
-## Hurejesha
+## Hurejesha {#returns}
 
 URL ya SSO iliyochujwa.

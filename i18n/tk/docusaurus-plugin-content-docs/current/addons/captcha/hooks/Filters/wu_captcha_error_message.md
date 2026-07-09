@@ -4,19 +4,19 @@ title: Süzgüç - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# Süzgüç: wu_captcha_error_message
+# Süzgüç: wu_captcha_error_message {#filter-wucaptchaerrormessage}
 
 Captcha säwlik habaryny süzüň.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Ady | Görnüşi | Düşündiriş |
 |------|------|-------------|
 | $message | `string` | Säwlik habary. |
 
-### Şondan bäri
+### Şondan bäri {#since}
 
 - 1.2.0
-### Çeşme
+### Çeşme {#source}
 
 [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L244) içinde 244-nji setirde kesgitlenen.

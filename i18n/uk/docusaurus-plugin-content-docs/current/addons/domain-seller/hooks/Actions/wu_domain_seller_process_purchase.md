@@ -4,20 +4,20 @@ title: Action - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Дія: wu_domain_seller_process_purchase
+# Дія: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
 
 Виконується, коли обробляється купівля домену після завершення оформлення замовлення.
 
-## Параметри
+## Параметри {#parameters}
 
 | Ім'я | Тип | Опис |
 |------|------|-------------|
 | $payment | `\WP_Ultimo\Models\Payment` | Об'єкт платежу. |
 | $checkout_data | `array<string,mixed>` | Повні дані оформлення замовлення з форми реєстрації. |
 
-### З версії
+### З версії {#since}
 
 - 2.0.0
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L246) на рядку 246

@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog
+# GoCardless Changelog {#gocardless-changelog}
 
 Versi: 1.0.3 - Dirilis ing 2026-05-05
 * Didandani: situs pending sing yatim saiki diresiki nalika membership GoCardless dibatalake nalika isih ing kahanan pending utawa on-hold

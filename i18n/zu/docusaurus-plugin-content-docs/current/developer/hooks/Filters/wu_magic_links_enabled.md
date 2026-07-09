@@ -4,19 +4,19 @@ title: Isihlungi - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Isihlungi: wu_magic_links_enabled
+# Isihlungi: wu_magic_links_enabled {#filter-wumagiclinksenabled}
 
 Hlunga ukuthi izixhumanisi zomlingo zivunyelwe yini.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
 | $enabled | `bool` | Ukuthi izixhumanisi zomlingo zivunyelwe yini. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L377) emugqeni 377

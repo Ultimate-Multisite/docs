@@ -3,9 +3,9 @@ title: Amanothi Okukhishwa
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Amanothi Okukhishwa
+# Amanothi Okukhishwa {#release-notes}
 
-## Inguqulo 2.13.0 — Ikhishwe ngo-2026-06-05
+## Inguqulo 2.13.0 — Ikhishwe ngo-2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Okusha: Kwengezwe ukusekelwa kwe-sovereign-tenant kwekhasimende Account, checkout, billing, isayithi, invoice, ukushintsha template, nokugeleza kwe-domain mapping ukuze amanethiwekhi ama-tenant akwazi ukuqondisa amakhasimende abuyele kusayithi eliyinhloko ngezenzo eziphethwe.
 - Okusha: Kwengezwe ukuhlolwa kwe-renewal-credential kwama-membership aphindaphindayo ukuze ama-gateway akwazi ukukhubaza i-auto-renewal lapho i-billing agreement egciniwe, subscription, noma vault token ingekho.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ukulungisa: Ukuvuselelwa kwama-membership, ukuboniswa kokuphelelwa yisikhathi, nezimo ezisemaphethelweni zokuqoqwa kwezinkokhelo manje kugwema ukuphelelwa yisikhathi ngokushesha, ukuphahlazeka, noma izinkokhelo ezidingekayo eziphuthelwe.
 - Kuthuthukisiwe: Ukuhambisana kwe-WordPress kuhlolwe kuze kufike ku-7.0, ama-production Vue assets akhiwa kabusha kusuka emithonjeni ye-npm, futhi ukuhlanganisa kwe-Cypress end-to-end manje kuhlola ukugeleza okuningi kwe-checkout, setup, SSO, ne-gateway.
 
-## Inguqulo 2.12.0 — Ikhishwe ngo-2026-05-15
+## Inguqulo 2.12.0 — Ikhishwe ngo-2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Okusha: Kwengezwe i-Hostinger (hPanel) njengomhlinzeki we-host osekelwayo one-domain mapping integration
 - Okusha: I-Site Exporter manje iphatha ama-network import bundles ukuze kubuyiselwe amasayithi kalula kunethiwekhi yonke
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ukulungisa: I-Site Exporter CLI manje igcina ukukhethwa kwesayithi lenethiwekhi elizenzakalelayo elifanele
 - Kuthuthukisiwe: Kususiwe i-wp-cli ebihlanganisiwe ephaketheni le-plugin, kunciphisa usayizi we-plugin
 
-## Inguqulo 2.11.0 — Ikhishwe ngo-2026-05-11
+## Inguqulo 2.11.0 — Ikhishwe ngo-2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Okusha: Ama-export esayithi manje afaka i-`index.php` ezivulelayo ukuze i-ZIP ifakwe ku-host entsha ngaphandle kokufaka i-plugin ehlukile.
 - Okusha: I-network export ivumela abaphathi ukuthi bakhiphe wonke ama-subsites ku-archive eyodwa kusuka ekhasini lokuphatha le-Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Okusha: I-checkout form editor ixwayisa lapho umkhiqizo wengezwa ngaphandle kwe-field edingekayo emisiwe.
 - Okusha: I-tab yezilungiselelo ze-Import/Export manje ichaza ngokucacile ububanzi bayo futhi ixhuma ngqo ethuluzini le-Site Export.
 
-## Inguqulo 2.10.0 — Ikhishwe ngo-2026-05-05
+## Inguqulo 2.10.0 — Ikhishwe ngo-2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Okusha: I-PayPal guided setup wizard yokufaka credential ngesandla nge-OAuth flag gate ukuze kube nokumiswa kwe-gateway okungenazihibe.
 - Okusha: I-template switch customer panel iklanywe kabusha ngekhadi le-current-template, igridi engaguquki, nenkinobho ethi **Setha kabusha i-template yamanje**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ukulungisa: Indlela ye-SSO ehlungiwe ihlonishwa kukho konke ukugeleza kokungena.
 - Ukulungisa: Izinketho zobunikazi besayithi ezingenalutho zigcinwa lapho kulondolozwa.
 
-## Inguqulo 2.9.0 — Ikhishwe ngo-2026-04-30
+## Inguqulo 2.9.0 — Ikhishwe ngo-2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Okusha: I-single-site export ne-import kwengezwe ngaphansi kokuthi **Amathuluzi > Export & Import**.
 - Ukulungisa: Amafayela e-Export ZIP manje ahanjiswa nge-endpoint yokulanda eqinisekisiwe.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ukulungisa: Ama-Tour IDs enziwe ajwayelekile abe ama-underscore kuma-user settings keys.
 - Kuthuthukisiwe: I-ZipArchive manje isetshenziswa esikhundleni se-Alchemy/Zippy ukuze kube nokuhambisana okungcono.
 
-## Inguqulo 2.8.0 — Ikhishwe ngo-2026-04-29
+## Inguqulo 2.8.0 — Ikhishwe ngo-2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Okusha: I-toggle ye-Enable Jumper yengezwe ku-UI yezilungiselelo ze-Other Options.
 - Okusha: Ikholomu ye-Status yengezwe kuthebula lohlu lwamafomu e-checkout.

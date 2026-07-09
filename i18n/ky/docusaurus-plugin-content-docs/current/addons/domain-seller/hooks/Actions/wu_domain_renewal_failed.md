@@ -4,11 +4,11 @@ title: Аракет - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Аракет: wu_domain_renewal_failed
+# Аракет: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Доменди узартуу аракети ийгиликсиз болгондон кийин иштейт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bff3fd7903485780766e490300546070
 | $renewal_data | `array&lt;string,mixed&gt;` | Узартуу метадеректери (domain_name, years ж.б.). |
 | $error_message | `string` | Каттоочудан келген адам окуй ала турган ката билдирүүсү. |
 
-### Бери
+### Бери {#since}
 
 - 2.0.0
-### Булак
+### Булак {#source}
 
 [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) ичинде 630-сапта аныкталган

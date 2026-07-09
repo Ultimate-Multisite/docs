@@ -3,7 +3,7 @@ title: GitHub 스니펫
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# GitHub repository에서 Ultimate Multisite snippet을 사용하는 방법
+# GitHub repository에서 Ultimate Multisite snippet을 사용하는 방법 {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 가입 페이지에 Google Analytics 스크립트를 추가하거나 관리자 Dashboard에서 메타 박스를 숨기는 것처럼 작은 기능을 추가하려는 Ultimate Multisite 사용자가 자주 요청하는 코드 snippet이 GitHub repository에 있습니다.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# theme의 functions.php 파일에 snippet을 추가하는 방법.
+# theme의 functions.php 파일에 snippet을 추가하는 방법. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. WordPress 네트워크 관리자 Dashboard에 로그인하고 Themes >Theme Editor로 이동합니다(아래 스크린샷 참조).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Must-Use Plugins (mu-plugins)을 만드는 방법
+# Must-Use Plugins (mu-plugins)을 만드는 방법 {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress에는 "Must-Use Plugins", 줄여서 "mu-plugins"라고 하는 사용자 지정 기능을 불러올 수 있는 기능이 있습니다.
 

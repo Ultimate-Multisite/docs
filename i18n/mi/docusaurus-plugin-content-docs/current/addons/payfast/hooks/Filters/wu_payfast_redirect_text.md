@@ -4,10 +4,10 @@ title: Tātari - wu_payfast_redirect_text
 sidebar_label: wu_payfast_redirect_text
 _i18n_hash: 44232b346c9cc90f2438a7bd3b54b9d5
 ---
-# Tātari: wu_payfast_redirect_text
+# Tātari: wu_payfast_redirect_text {#filter-wupayfastredirecttext}
 
 Kuputuhi aronga anō
 
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia i [`inc/gateways/class-payfast-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/gateways/class-payfast-gateway.php#L743) i te rārangi 743

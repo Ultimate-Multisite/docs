@@ -4,11 +4,11 @@ title: Szűrő - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Filter: wu_password_require_lowercase
+# Filter: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
 
 Meghatározza, hogy kötelező-e a jelszavakban kisbetű használata.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -18,6 +18,6 @@ Meghatározza, hogy kötelező-e a jelszavakban kisbetű használata.
 ###óta
 
 - 2.4.0
-### Forrás
+### Forrás {#since}
 
 Meghatározva a [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L563) fájlban a 563-edik soron.

@@ -3,7 +3,7 @@ title: ওয়েবহুকস
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) সম্পর্কে প্রথম ধারণা
+# Webhooks (v2) সম্পর্কে প্রথম ধারণা {#a-first-look-on-webhooks-v2}
 
 _**মনোযোগ দিন: এই feature বা নিবন্ধটি advanced ব্যবহারকারীদের জন্য।**_
 
@@ -11,7 +11,7 @@ _**মনোযোগ দিন: এই feature বা নিবন্ধটি 
 
 প্রতিবার কোনো event trigger হলে Ultimate Multisite থেকে অন্য কোনো CRM বা system-এ নির্দিষ্ট data integrate বা পাঠাতে হলে এটি সহায়ক। উদাহরণস্বরূপ, নতুন user account তৈরি হলেই আপনাকে ব্যবহারকারীর নাম ও email address একটি mailing list-এ পাঠাতে হবে।
 
-## webhook কীভাবে তৈরি করবেন
+## webhook কীভাবে তৈরি করবেন {#how-to-create-a-webhook}
 
 webhook তৈরি করতে আপনার network admin dashboard-এ যান। **Ultimate Multisite > Webhooks > Add New Webhook**-এ ক্লিক করুন।
 

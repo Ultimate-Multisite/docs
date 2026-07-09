@@ -3,15 +3,15 @@ title: 'Leciono 14: Kio sekvas poste'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Leciono 14: Kio Venas Poste
+# Leciono 14: Kio Venas Poste {#lesson-14-what-comes-next}
 
 Vi konstruis niĉan retejan platformon de nulo. FitSite estas publika, servas taŭgecajn studiojn, kaj generas ripetiĝantan enspezon. Ĉi tiu fina leciono rigardas kien iri de ĉi tie.
 
-## Kie Ni Ĉesis
+## Kie Ni Ĉesis {#where-we-left-off}
 
 FitSite estas funkcianta entrepreno kun klientoj, operacioj, kaj kreska trajektorio. Nun ni pensas pri kio sekvas.
 
-## La Kompleta FitSite-Reto
+## La Kompleta FitSite-Reto {#the-complete-fitsite-network}
 
 Jen ĉio, kion ni konstruis tra 14 lecionoj:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Opcio 1: Iru Pli Profunden en Via Niĉo
+## Opcio 1: Iru Pli Profunden en Via Niĉo {#option-1-go-deeper-in-your-niche}
 
 Antaŭ ol etendiĝi al novaj niĉoj, konsideru iri pli profunden en taŭgeco:
 
-### Subniĉoj
+### Subniĉoj {#sub-niches}
 
 - **Jogaj studioj** -- specialigitaj ŝablonoj kun meditado, retiriĝo, kaj laborrenkontiĝaj funkcioj
 - **CrossFit-sporthaloj** -- WOD-spurado, konkursaj rezultoj, komunumaj funkcioj
@@ -59,7 +59,7 @@ Antaŭ ol etendiĝi al novaj niĉoj, konsideru iri pli profunden en taŭgeco:
 
 Ĉiu subniĉo povas havi siajn proprajn ŝablonojn kaj eble sian propran markon, ĉiuj funkciantaj sur la sama Ultimate Multisite-reto.
 
-### Superpagaj Funkcioj
+### Superpagaj Funkcioj {#premium-features}
 
 Konstruu funkciojn, por kiuj taŭgecaj studioj pagos krome:
 
@@ -68,14 +68,14 @@ Konstruu funkciojn, por kiuj taŭgecaj studioj pagos krome:
 - **Ŝablonoj por taŭgeca blogo** -- antaŭkonstruitaj enhavaj strukturoj por merkatado de taŭgeca enhavo
 - **Integrado de sociaj retoj** -- aŭtomata afiŝado de klasaj horaroj kaj ĝisdatigoj
 
-### Geografia Etendiĝo
+### Geografia Etendiĝo {#geographic-expansion}
 
 Se vi komencis loke, etendiĝu al:
 
 - Aliaj urboj en via lando
 - Aliaj landoj (uzu la [lokalizajn funkciojn](/user-guide/localization/translating) de Ultimate Multisite por subteni plurajn lingvojn)
 
-## Opcio 2: Etendiĝu al Najbaraj Niĉoj
+## Opcio 2: Etendiĝu al Najbaraj Niĉoj {#option-2-expand-to-adjacent-niches}
 
 La procezo, kiun vi sekvis por taŭgecaj studioj, funkcias por ajna niĉo. Via dua niĉo estas pli facila ĉar vi jam havas:
 
@@ -83,7 +83,7 @@ La procezo, kiun vi sekvis por taŭgecaj studioj, funkcias por ajna niĉo. Via d
 - Operacian sperton
 - Pruvitan procedaron
 
-### Najbaraj Niĉoj al Taŭgeco
+### Najbaraj Niĉoj al Taŭgeco {#adjacent-niches-to-fitness}
 
 - **Bonfarto kaj spa** -- masaĝterapiistoj, tagaj spa-centroj, bonfartaj centroj
 - **Sportaj kluboj** -- amatoraj sportteamoj, ligoj, distraj kluboj
@@ -91,7 +91,7 @@ La procezo, kiun vi sekvis por taŭgecaj studioj, funkcias por ajna niĉo. Via d
 
 Ĉi tiuj havas interkovron de publiko kun taŭgeco, do via merkatado kaj partnerecoj povas transiri.
 
-### Tute Novaj Niĉoj
+### Tute Novaj Niĉoj {#completely-new-niches}
 
 Apliku la kadron el Leciono 2 por taksi ajnan niĉon:
 
@@ -108,7 +108,7 @@ Apliku la kadron el Leciono 2 por taksi ajnan niĉon:
 
 La platforma infrastrukturo, fakturado, kaj operaciaj procezoj restas samaj.
 
-## Opcio 3: Konstruu Platformon de Platformoj
+## Opcio 3: Konstruu Platformon de Platformoj {#option-3-build-a-platform-of-platforms}
 
 Je skalo, vi povas funkciigi plurajn niĉajn markojn sur unu sola Ultimate Multisite-reto:
 
@@ -118,11 +118,11 @@ Je skalo, vi povas funkciigi plurajn niĉajn markojn sur unu sola Ultimate Multi
 
 Ĉiu marko havas siajn proprajn ŝablonojn, planojn, kaj merkatadon, sed ili kunhavas infrastrukturon, fakturadon, kaj operaciajn procezojn. Jen kie la ekonomiko de Ultimate Multisite fariĝas potenca -- unu platformo, multaj vertikaloj.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Por kompleta apartigo inter niĉoj, konsideru la [Multi-Network aldonaĵon](/addons/multinetwork), kiu permesas al vi funkciigi plurajn WordPress-retojn el unu sola instalo.
 
-## Opcio 4: Vendu la Entreprenon
+## Opcio 4: Vendu la Entreprenon {#option-4-sell-the-business}
 
 Niĉa reteja platformo kun ripetiĝanta enspezo, malalta forfluo, kaj klara merkata pozicio estas valora aktivaĵo. SaaS-entreprenoj tipe vendiĝas por 3-5x jara enspezo.
 
@@ -134,7 +134,7 @@ FitSite kun 200 klientoj je $89 ARPU:
 
 Ĉi tio ne estas garantiita rezulto, sed ĝi estas realisma por bone administrata niĉa platformo.
 
-## Kion Vi Lernis
+## Kion Vi Lernis {#what-you-have-learned}
 
 Ĉi tiu kurso instruis al vi ripeteblan procezon:
 
@@ -150,7 +150,7 @@ FitSite kun 200 klientoj je $89 ARPU:
 
 La niĉo estas la strategio. La platformo estas la ilo. Ultimate Multisite ebligas la ilon. Via kompreno de la niĉo igas ĝin valora.
 
-## Komencu Konstrui
+## Komencu Konstrui {#start-building}
 
 Se vi sekvis kune kun FitSite, vi havas funkciantan platformon. Se vi tralegis por trovi vian propran niĉon, reiru al [Leciono 2: Elekti Vian Niĉon](lesson-2-picking-your-niche) kaj komencu la procezon por via elektita sektoro.
 

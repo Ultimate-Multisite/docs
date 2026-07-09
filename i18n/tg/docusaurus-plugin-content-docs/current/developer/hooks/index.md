@@ -3,11 +3,11 @@ title: Маълумотномаи ҳукҳо
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Маълумотномаи hooks
+# Маълумотномаи hooks {#hooks-reference}
 
 Ҳуҷҷатҳои ба таври худкор тавлидшуда барои ҳамаи **59 амал** ва **118 филтр** дар Ultimate Multisite.
 
-## Амалҳо
+## Амалҳо {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Пеш аз равонасозии аутентификатсия фаъол мешавад.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Бевосита пеш аз гузоштани кукии аутентификатсия фаъол мешавад.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Пас аз он ки объект дар пойгоҳи додаҳо нигоҳ дошта мешавад, иҷро мешавад.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Ба таҳиягарони plugin иҷозат медиҳад амалҳоро ба раванди кушодан илова кунанд.
 
-## Филтрҳо
+## Филтрҳо {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Давомнокии давраи анҷоми муҳлати cookie-и тасдиқи ҳувиятро филтр мекунад.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Схемаи масирдиҳии тасдиқи ҳувиятро филтр мекунад.

@@ -4,13 +4,13 @@ title: Ação - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# Ação: wu_domain_became_primary
+# Ação: wu_domain_became_primary {#action-wudomainbecameprimary}
 
 Disparada quando um domínio se torna o domínio principal de um site.
 
 Esta ação é acionada quando o sinalizador primary_domain de um domínio é definido como true, seja ao criar um novo domínio principal ou ao atualizar um domínio existente para se tornar principal.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Esta ação é acionada quando o sinalizador primary_domain de um domínio é de
 | $blog_id | `int` | O ID do blog do site afetado. |
 | $was_new | `bool` | Se este é um domínio recém-criado. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L560) na linha 560

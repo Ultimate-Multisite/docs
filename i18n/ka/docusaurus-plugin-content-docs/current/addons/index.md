@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons აფართოებს Ultimate Multisite-ს დამატებითი ფუნქციებითა და ინტეგრაციებით. Addons-ის უმეტესობა ფასიანია და მათი შეძენა შესაძლებელია [ultimatemultisite.com](https://ultimatemultisite.com)-ზე.
 
-## ინსტალაცია
+## ინსტალაცია {#installation}
 
 Addons შეიძლება დაინსტალირდეს ორი გზით:
 
 1. **Addon-ის გვერდის მეშვეობით** -- გადადით თქვენი საიტის addons-ის მართვის გვერდზე WordPress-ის ადმინისტრირებაში
 2. **ხელით ჩამოტვირთვა** -- ჩამოტვირთეთ [თქვენი ანგარიშიდან](https://ultimatemultisite.com/my-account/downloads/) და ატვირთეთ Plugins > Add New-ის მეშვეობით
 
-## ხელმისაწვდომი Addons
+## ხელმისაწვდომი Addons {#available-addons}
 
 | Addon | აღწერა |
 |-------|-------------|

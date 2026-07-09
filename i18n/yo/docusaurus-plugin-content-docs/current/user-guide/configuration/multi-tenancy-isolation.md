@@ -3,11 +3,11 @@ title: Ìyàsọ́tọ̀ Ọ̀pọ̀-Ayálégbé
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ìyàsọ́tọ̀ Multi-Tenancy
+# Ìyàsọ́tọ̀ Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ń ṣètìlẹ́yìn fún ìyàsọ́tọ̀ database àti filesystem fún subsite kọ̀ọ̀kan fún àwọn tenant aládàáṣẹ. Èyí ń jẹ́ kí data tenant wà lọ́tọ̀, nígbà tí ó ń pa provisioning, billing, àti ìṣàkóso ipele network mọ́.
 
-## Ọgbọ́n ìyàsọ́tọ̀
+## Ọgbọ́n ìyàsọ́tọ̀ {#isolation-strategy}
 
 Lo ìyàsọ́tọ̀ aládàáṣẹ fún àwọn oníbàárà tí wọ́n nílò ìpínya data tó lágbára jù, ìpamọ́ filesystem tí a yà sọ́tọ̀, tàbí ààlà host tó yàtọ̀.
 
@@ -18,7 +18,7 @@ Tenant aládàáṣẹ kọ̀ọ̀kan yẹ kí ó ní:
 - Àkọsílẹ̀ tenant registry tó máa so site pọ̀ mọ́ database rẹ̀, root path, hostname, àti model ìyàsọ́tọ̀ rẹ̀.
 - Àbájáde migration verification kí a tó ka tenant náà sí live.
 
-## Ìdè host database
+## Ìdè host database {#database-host-binding}
 
 Ẹ̀dà 1.2.0 yí ìwà aiyipada ìdè host ẹrọ-kan-náà padà fún àwọn ìfìdí-múlẹ̀ aládàáṣẹ. Àwọn iye ẹrọ-kan-náà bíi `localhost` ni a máa ń ṣe normalize kí Bedrock, FrankenPHP, àti àwọn ìfìdí-múlẹ̀ WordPress tí a fi sínú container lè fúnni àti ṣàyẹ̀wò àwọn ìyọ̀nda lòdì sí okun host tí MySQL rí gan-an.
 
@@ -31,11 +31,11 @@ Nígbà tí o bá ń ṣètò tenant aládàáṣẹ:
 
 Tí verification bá jabo àwọn ìkùnà grant, fi àwọn grant user DB tenant wé ìdè host tí a ṣètò. User tí a fún ní grant fún `user@localhost` yàtọ̀ sí `user@127.0.0.1` tàbí `user@%`.
 
-## Root filesystem
+## Root filesystem {#filesystem-root}
 
 Root tenant yẹ kí ó dúró ṣinṣin kọjá àwọn restart àti deployment. Yẹra fún àwọn mount path igba-díẹ̀. Fún àwọn ìfìdí-múlẹ̀ ara Bedrock, jẹ́rìí pé root tenant tọ́ka sí web root WordPress tí tenant bootstrap ń retí, kì í ṣe project root nìkan.
 
-## Ètò provisioning
+## Ètò provisioning {#provisioning-order}
 
 Fún àwọn tenant aládàáṣẹ tuntun, lo ètò yìí:
 
@@ -49,7 +49,7 @@ Fún àwọn tenant aládàáṣẹ tuntun, lo ètò yìí:
 
 Ètò yìí dènà kí àwọn tenant tí ìyàsọ́tọ̀ wọn kò pé má gba traffic kí database writer, àwọn user, àti filesystem tó ṣetán.
 
-## Àwọn flow ìṣàkóso oníbàárà aládàáṣẹ
+## Àwọn flow ìṣàkóso oníbàárà aládàáṣẹ {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 pa àwọn ìṣe ìṣàkóso oníbàárà mọ́ lórí site àkọ́kọ́ nígbà tí sovereign mode bá ṣiṣẹ́. Tenant kan ṣì lè ṣiṣẹ́ gẹ́gẹ́ bí ìfìdí-múlẹ̀ WordPress tí a yà sọ́tọ̀, ṣùgbọ́n àwọn ìṣe tí oníbàárà ń rí tí ó gbẹ́kẹ̀lé billing network, membership, tàbí data account pínpín yẹ kí ó rán oníbàárà padà sí site àkọ́kọ́ dípò kí ó gbìyànjú láti parí ìṣe náà nínú runtime tenant.
 

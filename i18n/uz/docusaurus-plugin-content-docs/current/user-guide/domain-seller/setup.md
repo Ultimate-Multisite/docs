@@ -3,21 +3,21 @@ title: Sozlash va Provayder Konfiguratsiyasi
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Sozlash va Providendorni Konfiguratsiya Qilish
+# Domain Seller: Sozlash va Providendorni Konfiguratsiya Qilish {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller qo'shimchasi barcha kerakli bosqichlarni o'tish uchun sizga yo'l ko'rsatadigan yo'naltirilgan sozlash wizard (o'rnatish dasturi) bilan yetkaziladi. Bu sahifa wizardning oqimini va keyinchalik provayderlarni qanday sozlash yoki qayta sozlash haqida ma'lumot beradi.
 
-## Talablar
+## Talablar {#requirements}
 
 - **Multisite Ultimate** v2.4.12 yoki undan yuqori versiyasi, tarmoq orqali faollashtirilgan
 - **PHP** 7.4+
 - kamida bitta qo'llab-quvvatlanadigan registrar uchun API ma'lumotlari
 
-## Birinchi ishga tushirish sozlash wizardi
+## Birinchi ishga tushirish sozlash wizardi {#first-run-setup-wizard}
 
 Sozlash wizard birinchi marta pluginni tarmoq orqali faollashtirganda avtomatik ishga tushadi. U shuningdek, har qanday vaqt **Network Admin › Ultimate Multisite › Domain Seller Setup** orqali ham mavjud bo'ladi.
 
-### 1-qadam — Provayderni tanlang
+### 1-qadam — Provayderni tanlang {#step-1--choose-a-provider}
 
 Bog'lanmoqchi bo'lgan registrar (ro'yxat beruvchi) ni tanlang. Qo'llab-quvvatlanadigan variantlar:
 
@@ -33,7 +33,7 @@ Bog'lanmoqchi bo'lgan registrar (ro'yxat beruvchi) ni tanlang. Qo'llab-quvvatlan
 | NameSilo | Yo'q | Yo'q |
 | Enom | Ha | Yo'q |
 
-### 2-qadam — Ma'lumotlarni kiritish
+### 2-qadam — Ma'lumotlarni kiritish {#step-2--enter-credentials}
 
 Har bir provayderning ma'lumotlar maydonlari farqli:
 
@@ -57,17 +57,17 @@ Har bir provayderning ma'lumotlar maydonlari farqli:
 
 Qo'llab-quvvatlash uchun, mavjud bo'lsa **Sandbox mode**ni tekshiring va operatsiyani haqiqiy muhitga o'tishdan oldin provayderning test muhitida sinab ko'ring.
 
-### 3-qadam — Bog'lanishni tekshirish
+### 3-qadam — Bog'lanishni tekshirish {#step-3--test-the-connection}
 
 **Test Connection** tugmasini bosing. Bu wizard ma'lumotlarni va ulanish holatini tasdiqlash uchun yengil API chaqiruvini yuboradi. Davom etishdan oldin har qanday ma'lumot muammolarini tuzating.
 
-### 4-qadam — TLDlarni import qilish
+### 4-qadam — TLDlarni import qilish {#step-4--import-tlds}
 
 Ulanilgan provayderdan barcha mavjud TLDlar va toppaqa narxlarni olish uchun **Import TLDs** tugmasini bosing. Bu domen mahsulotlari uchun ishlatiladigan TLD ro'yxatini to'ldiradi. Katta TLD katalogiga ega provayderlar uchun import 30–60 soniya davom etishi mumkin.
 
 TLDlar har kuni bir marta jadvalga asoslangan cron job orqali avtomatik qayta sinxronizatsiya qilinadi.
 
-### 5-qadam — Domen mahsulotini yaratish
+### 5-qadam — Domen mahsulotini yaratish {#step-5--create-a-domain-product}
 
 Wizard 10% narx oshirilgan standart umumiy domen mahsulotini yaratadi. Siz buni darhol tahrirlashingiz yoki **Ultimate Multisite › Products** ostida qo'lda mahsulotlar yaratmasdan o'tkazishingiz mumkin.
 
@@ -75,7 +75,7 @@ To'liq mahsulot konfiguratsiyasi uchun [Domain Products and Pricing](./domain-pr
 
 ---
 
-## Provayderni qayta sozlash
+## Provayderni qayta sozlash {#reconfiguring-a-provider}
 
 **Network Admin › Ultimate Multisite › Settings › Domain Seller** (yoki pluginlar ro'yxatida **Settings** tugmasini bosing).
 
@@ -87,17 +87,17 @@ Sozlamalar sahifasida quyidagilar mavjud:
 - **Ma'lumotlarning mavjudligi (Availability cache) muddati** — mavjudlik va narx natijalarini qancha vaqt saqlash kerak; past qiymatlar aniqroq bo'ladi, ammo API chaqiruvlari ko'payadi
 - **Domen mahsulotlarini boshqarish** — Mahsulotlar ro'yxatiga tezkor link
 
-### Ikkinchi provayderni qo'shish
+### Ikkinchi provayderni qo'shish {#adding-a-second-provider}
 
 **Configure providers** tugmasini bosing va yangi registrar uchun wizardni yana ishga tushiring. Siz bir vaqtning o'zida ko'p provayderlarni sozlashim mumkin. Har bir domen mahsulotini aniq provayderga yuklang yoki defaultda qoldiring.
 
-### TLDlarni qo'lda sinxron qilish
+### TLDlarni qo'lda sinxron qilish {#syncing-tlds-manually}
 
 Sozlamalar sahifasida, mavjud bo'lgan har qanday provayder yonidagi **Sync TLDs** tugmasini bosing va eng yangi narxlarni olish uchun qayta ishga tushiring. Bu provayder ko'chirilgan yoki yangi TLDlar qo'shilganidan so'ng juda foydali bo'ladi.
 
 ---
 
-## Loglar
+## Loglar {#logs}
 
 Har bir provayder o'zining log kanaliiga yozadi. Loglarni **Network Admin › Ultimate Multisite › Logs** orqali ko'rish mumkin:
 
@@ -117,7 +117,7 @@ Har bir provayder o'zining log kanaliiga yozadi. Loglarni **Network Admin › Ul
 
 ---
 
-## Provayder imkoniyatlari haqida eslatmalar
+## Provayder imkoniyatlari haqida eslatmalar {#provider-capability-notes}
 
 Har bir registrar API barcha operatsiyalarni ko'rsatmaydi. Addon bu qo'llab-quvvatlanmagan operatsiyalarni jim qolmasdan, aniq adminga ko'rsatadigan xatoliklar bilan ko'rsatadi.
 

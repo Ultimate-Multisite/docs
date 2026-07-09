@@ -4,13 +4,13 @@ title: فلټر - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 د redirect URL فلټر کوي وروسته له دې چې یو domain لومړنی شي.
 
 پرمختیاکوونکو ته اجازه ورکوي چې دا دودیز کړي چې کاروونکي د یو domain په بریالیتوب سره د لومړني په توګه له ټاکلو وروسته چېرته ولېږدول شي. په تلواله، په اصلي site کې اوسني URL ته، یا د بدلېدونکي site admin URL ته redirect کوي.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,13 +19,13 @@ _i18n_hash: bda96824db400b25e97802e5567df22d
 | $domain | `\Domain` | هغه domain object چې لومړنی شوی و. |
 | $old_primary_domains | `array` | د هغو domains د IDs array چې مخکې لومړني وو. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 په [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) کې په 639 کرښه تعریف شوی
 
 
-## Returns
+## Returns {#returns}
 فلټر شوی redirect URL.

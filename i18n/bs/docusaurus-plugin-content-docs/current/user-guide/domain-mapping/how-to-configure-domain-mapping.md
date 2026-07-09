@@ -3,17 +3,17 @@ title: Kako konfigurirati mapiranje domena
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kako konfigurirati mapiranje domena (v2)
+# Kako konfigurirati mapiranje domena (v2) {#how-to-configure-domain-mapping-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
 Jedna od najmoćnijih funkcija premium mreže je mogućnost da našim klijentima ponudimo priliku da povežu domen najvišeg nivoa sa svojim stranicama. Na kraju krajeva, šta izgleda profesionalnije: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ili [_**joesbikeshop.com**_](http://joesbikeshop.com)? Zato Ultimate Multisite nudi ovu funkciju ugrađenu, bez potrebe za korištenjem dodataka trećih strana.
 
-## Šta je mapiranje domena?
+## Šta je mapiranje domena? {#whats-domain-mapping}
 
 Kao što ime sugerira, mapiranje domena je mogućnost koju nudi Ultimate Multisite da primi zahtjev za prilagođeni domen i mapira taj zahtjev na odgovarajuću stranicu u mreži s tim konkretnim povezanim domenom.
 
-### Kako postaviti mapiranje domena na vašoj Ultimate Multisite mreži
+### Kako postaviti mapiranje domena na vašoj Ultimate Multisite mreži {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Mapiranje domena zahtijeva određeno podešavanje s vaše strane da bi radilo. Srećom, Ultimate Multisite automatizira težak posao za vas, tako da lako možete ispuniti zahtjeve.
 
@@ -45,7 +45,7 @@ Ali prije nego što počnete mapirati prilagođeni domen na jednu od podstranica
 
 ###
 
-### Provjera da li su DNS postavke domena pravilno konfigurirane
+### Provjera da li su DNS postavke domena pravilno konfigurirane {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Da bi mapiranje radilo, morate se pobrinuti da domen koji planirate mapirati pokazuje na IP adresu vaše mreže. Imajte na umu da vam je potrebna IP adresa mreže - IP adresa domena na kojem je instaliran Ultimate Multisite - a ne IP adresa prilagođenog domena koji želite mapirati. Za pretragu IP adrese određenog domena predlažemo da, na primjer, posjetite [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Ako imate problema da ovo proradi, **kontaktirajte podršku svog registratora do
 
 Ako planirate dozvoliti svojim klijentima da mapiraju vlastite domene, oni će morati sami obaviti posao u ovom dijelu. Uputite ih na sistem podrške njihovog registratora ako ne mogu kreirati A Record.
 
-### Mapiranje prilagođenog naziva domena kao Super Admin
+### Mapiranje prilagođenog naziva domena kao Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Kada ste prijavljeni kao super admin na svojoj mreži, možete lako dodavati i upravljati prilagođenim nazivima domena odlaskom na **Ultimate Multisite > Domeni**.
 
@@ -93,7 +93,7 @@ Ako kliknete na naziv domene, moći ćete vidjeti neke opcije unutar nje. Pogled
 
 **Is Secure?:** Iako Ultimate Multisite provjerava da li domena ima SSL certifikat ili ne prije nego što je omogući, možete ručno odabrati da se domena učitava sa ili bez SSL certifikata. Imajte na umu da ako web stranica nema SSL certifikat, a pokušate je prisilno učitati sa SSL-om, može vam prikazati greške.
 
-### Mapiranje prilagođenog naziva domene kao korisnik podstranice
+### Mapiranje prilagođenog naziva domene kao korisnik podstranice {#mapping-custom-domain-name-as-subsite-user}
 
 Administratori podstranica također mogu mapirati prilagođene nazive domena iz administratorskog dashboarda svoje podstranice.
 
@@ -121,7 +121,7 @@ Korisnik zatim može kliknuti **Next Step** i nastaviti s dodavanjem prilagođen
 
 Klik na **Add Domain** će pokrenuti proces provjere i dohvaćanja DNS informacija prilagođene domene.
 
-### O sinhronizaciji domena
+### O sinhronizaciji domena {#about-domain-syncing}
 
 Sinhronizacija domena je proces u kojem Ultimate Multisite dodaje prilagođeni naziv domene na vaš hosting Account kao dodatnu domenu **da bi mapiranje domene radilo**.
 

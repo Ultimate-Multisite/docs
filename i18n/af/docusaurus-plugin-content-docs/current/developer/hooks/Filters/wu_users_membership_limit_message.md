@@ -4,16 +4,16 @@ title: Filter - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Filter: wu_users_membership_limit_message
+# Filter: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
 
 Maak dit moontlik vir ontwikkelaars om die boodskap oor die limiet vir lidmaatsgebruikers te verander.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
 | $message | `string` | Die boodskap wat op skerm gedruk word. |
 
-### Bron
+### Bron {#source}
 
 Benoem in [`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72) op lyn 72

@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filter: wp_ultimo_render_vars
+# Filter: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Lar plugin-utviklere legge til ekstra variabler i render-konteksten globalt.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Lar plugin-utviklere legge til ekstra variabler i render-konteksten globalt.
 | $view | `string` | Navnet på visningen som skal renderes. |
 | $default_view | `string` | Navnet på standardvisningen (fallback_view). |
 
-### Siden
+### Siden {#since}
 
 - 2.0.0
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) på linje 31
 
 
-## Returnerer
+## Returnerer {#returns}

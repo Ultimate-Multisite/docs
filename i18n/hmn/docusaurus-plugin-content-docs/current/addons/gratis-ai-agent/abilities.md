@@ -3,7 +3,7 @@ title: Daim Ntawv Qhia Txog Cov Peev Xwm
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Daim Ntawv Siv Abilities
+# Daim Ntawv Siv Abilities {#abilities-reference}
 
 Abilities yog cov kev ua me me uas Gratis AI Agent hu tau rau hauv koj lub WordPress installation. Txhua ability yog ib PHP class uas tau sau npe thiab tso tawm ib JSON schema — tus agent nyeem schema no thaum khiav haujlwm kom nkag siab tias yuav tsum muaj parameter twg thiab ability ntawd xa rov qab dab tsi.
 
@@ -11,11 +11,11 @@ Nplooj ntawv no teev tag nrho cov abilities uas los nrog Gratis AI Agent v1.9.0.
 
 ---
 
-## Hom Post Tshwj Xeeb
+## Hom Post Tshwj Xeeb {#custom-post-types}
 
 Cov abilities no tswj cov hom post tshwj xeeb (CPTs) uas sau npe dhau ntawm tus agent. Cov kev sau npe raug khaws cia rau hauv WordPress options table kom lawv tseem nyob txawm plugin raug tua thiab qhib dua.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Sau npe ib hom post tshwj xeeb tshiab.
 
@@ -50,7 +50,7 @@ Sau npe ib hom post tshwj xeeb tshiab.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Xa rov qab tag nrho cov hom post tshwj xeeb uas tus agent tau sau npe.
 
@@ -73,7 +73,7 @@ Xa rov qab tag nrho cov hom post tshwj xeeb uas tus agent tau sau npe.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Tshem kev sau npe ntawm ib hom post tshwj xeeb uas tus agent tau sau npe ua ntej. Cov post uas twb muaj ntawm hom ntawd tseem nyob hauv database tab sis yuav nkag tsis tau ntxiv lawm ntawm hom post ntawd.
 
@@ -87,11 +87,11 @@ Tshem kev sau npe ntawm ib hom post tshwj xeeb uas tus agent tau sau npe ua ntej
 
 ---
 
-## Taxonomies Tshwj Xeeb
+## Taxonomies Tshwj Xeeb {#custom-taxonomies}
 
 Cov abilities no tswj cov taxonomies tshwj xeeb. Zoo ib yam li CPTs, cov kev sau npe taxonomy raug khaws cia mus tas li.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Sau npe ib taxonomy tshwj xeeb tshiab.
 
@@ -123,7 +123,7 @@ Sau npe ib taxonomy tshwj xeeb tshiab.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Xa rov qab tag nrho cov taxonomies tshwj xeeb uas tus agent tau sau npe.
 
@@ -146,7 +146,7 @@ Xa rov qab tag nrho cov taxonomies tshwj xeeb uas tus agent tau sau npe.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Tshem kev sau npe ntawm ib taxonomy tshwj xeeb uas tus agent tau sau npe ua ntej.
 
@@ -160,11 +160,11 @@ Tshem kev sau npe ntawm ib taxonomy tshwj xeeb uas tus agent tau sau npe ua ntej
 
 ---
 
-## Design System
+## Design System {#design-system}
 
 Design system abilities hloov kho qhov kev nthuav qhia pom ntawm WordPress site — txij custom CSS mus rau block patterns thiab site logo.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Ntxiv CSS rau hauv site lub `<head>` dhau ntawm `wp_add_inline_style`. CSS raug khaws cia hauv option `gratis_ai_agent_custom_css` thiab raug dequeue kom huv si thaum ability raug reset.
 
@@ -190,7 +190,7 @@ Ntxiv CSS rau hauv site lub `<head>` dhau ntawm `wp_add_inline_style`. CSS raug 
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Sau npe ib block pattern uas rov siv tau hauv WordPress pattern library.
 
@@ -209,7 +209,7 @@ Sau npe ib block pattern uas rov siv tau hauv WordPress pattern library.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Teev tag nrho cov block patterns uas tus agent tau sau npe.
 
@@ -231,7 +231,7 @@ Teev tag nrho cov block patterns uas tus agent tau sau npe.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Teem lub logo ntawm WordPress site rau ib qho attachment ID uas muab los, lossis ib qho duab URL nyob deb. Thaum muab URL, daim duab yuav raug rub los thiab muab import rau hauv Media Library.
 
@@ -248,7 +248,7 @@ Yuav tsum muab ib qho ntawm `attachment_id` lossis `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Siv ib qho preset xim/typography uas muaj npe rau active theme lub `theme.json` (lossis `global-styles`). Presets yog cov pob uas pab pawg Gratis AI Agent tau xaiv thiab saib xyuas.
 
@@ -273,11 +273,11 @@ Siv ib qho preset xim/typography uas muaj npe rau active theme lub `theme.json` 
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Global Styles peev xwm nyeem thiab sau cov nqi theme.json los ntawm WordPress Global Styles API, cuam tshuam rau txhua blocks thiab templates thoob plaws site.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Xa rov qab qhov configuration global styles tam sim no.
 
@@ -291,7 +291,7 @@ Xa rov qab qhov configuration global styles tam sim no.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Hloov tshiab ib qho lossis ntau qho nqi hauv qhov configuration global styles.
 
@@ -318,7 +318,7 @@ Hloov tshiab ib qho lossis ntau qho nqi hauv qhov configuration global styles.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Reset tag nrho cov kev hloov global styles uas agent tau siv, rov qab mus rau theme defaults.
 
@@ -328,11 +328,11 @@ Reset tag nrho cov kev hloov global styles uas agent tau siv, rov qab mus rau th
 
 ---
 
-## Navigation Menus
+## Navigation Menus {#navigation-menus}
 
 Navigation Menu peev xwm tsim thiab tswj WordPress nav menus thiab lawv cov items.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Tsim ib qho WordPress navigation menu tshiab.
 
@@ -347,7 +347,7 @@ Tsim ib qho WordPress navigation menu tshiab.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Hloov npe menu lossis reassign nws rau ib qho theme location.
 
@@ -363,7 +363,7 @@ Hloov npe menu lossis reassign nws rau ib qho theme location.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Ntxiv ib qho item rau ib qho navigation menu uas twb muaj lawm.
 
@@ -383,7 +383,7 @@ Ntxiv ib qho item rau ib qho navigation menu uas twb muaj lawm.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Tshem ib qho item tawm ntawm navigation menu.
 
@@ -397,7 +397,7 @@ Tshem ib qho item tawm ntawm navigation menu.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Teev tag nrho WordPress navigation menus, suav nrog lawv cov theme locations uas raug assign.
 
@@ -420,11 +420,11 @@ Teev tag nrho WordPress navigation menus, suav nrog lawv cov theme locations uas
 
 ---
 
-## Kev Tswj Options
+## Kev Tswj Options {#options-management}
 
 Options peev xwm nyeem thiab sau WordPress options los ntawm `get_option` / `update_option`. Ib daim safety blocklist uas muaj hauv system pab tiv thaiv kom tsis txhob yuam kev hloov cov settings tseem ceeb.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Nyeem ib qho WordPress option.
 
@@ -440,7 +440,7 @@ Xa rov qab ib qho yuam kev yog tias `option_name` nyob hauv safety blocklist.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Sau ib qho WordPress option.
 
@@ -458,7 +458,7 @@ Xa rov qab ib qho yuam kev yog tias `option_name` nyob hauv safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Rho tawm ib qho WordPress option.
 
@@ -474,7 +474,7 @@ Xa rov qab ib qho yuam kev yog tias `option_name` nyob hauv safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Teev cov WordPress options uas phim ib qho pattern.
 
@@ -498,11 +498,11 @@ Teev cov WordPress options uas phim ib qho pattern.
 
 ---
 
-## Kev Tswj Cov Ntsiab Lus
+## Kev Tswj Cov Ntsiab Lus {#content-management}
 
 Cov peev xwm Kev Tswj Cov Ntsiab Lus tsim thiab kho WordPress posts thiab pages. Cov Post IDs raug xa rov qab kom cov kauj ruam tom ntej hauv cov plan muaj ntau peev xwm thiaj siv tau cov ntsiab lus uas tau tsim.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Tsim ib qho WordPress post tshiab, page, lossis custom post type entry.
 
@@ -537,7 +537,7 @@ Tsim ib qho WordPress post tshiab, page, lossis custom post type entry.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Hloov kho ib qho WordPress post lossis page uas twb muaj lawm.
 
@@ -567,7 +567,7 @@ Hloov kho ib qho WordPress post lossis page uas twb muaj lawm.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Tsim ntau posts hauv ib zaug hu peev xwm xwb, txo kev mus-los thaum tsim site lossis import ntsiab lus ntau. Posts raug tsim raws kab ke; yog ib qho poob, lwm cov tseem txuas ntxiv thiab qhov poob raug qhia hauv results array.
 
@@ -619,7 +619,7 @@ Tsim ntau posts hauv ib zaug hu peev xwm xwb, txo kev mus-los thaum tsim site lo
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Muab ib daim featured image (post thumbnail) rau ib qho post lossis page uas twb muaj lawm. Txais ib qho Media Library attachment ID uas twb muaj lawm lossis ib qho remote image URL; thaum muab URL, daim duab yuav raug download thiab import cia li.
 
@@ -638,7 +638,7 @@ Yuav tsum muab ib qho ntawm `attachment_id` lossis `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Tsim ib daim contact form siv form plugin uas active (Contact Form 7, WPForms, Fluent Forms, lossis Gravity Forms, nyob ntawm qhov twg raug nruab). Xa rov qab ib qho shortcode uas muab embed tau rau hauv txhua post lossis page.
 
@@ -691,11 +691,11 @@ Tsim ib daim contact form siv form plugin uas active (Contact Form 7, WPForms, F
 
 ---
 
-## Kev tshuaj xyuas pom tau
+## Kev tshuaj xyuas pom tau {#visual-review}
 
 Cov peev xwm Kev tshuaj xyuas pom tau cia tus agent thaij screenshots ntawm cov nplooj ntawv live thiab txheeb xyuas lawv, pab tau kev tshuaj xyuas tsim qauv ywj pheej, kev piv ua ntej/tom qab, thiab kev kuaj visual regression yam tsis tas yuav muaj browser extension.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Thaij ib screenshot ntawm ib nplooj ntawv WordPress ntawm URL uas muab los siv server-side headless browser. Daim duab raug khaws rau hauv Media Library thiab xa rov qab CDN URL.
 
@@ -724,7 +724,7 @@ Thaij ib screenshot ntawm ib nplooj ntawv WordPress ntawm URL uas muab los siv s
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Siv ob daim screenshots thiab xa rov qab visual diff score nrog rau daim diff image uas qhia cov cheeb tsam hloov. Siv tau los lees paub tias kev hloov tsim qauv tau tsim qhov txiaj ntsig raws li xav tau, lossis los nrhiav cov regressions uas tsis tau npaj.
 
@@ -754,7 +754,7 @@ Siv ob daim screenshots thiab xa rov qab visual diff score nrog rau daim diff im
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Thaij screenshot ntawm ib nplooj ntawv thiab xa mus rau language model rau kev txheeb xyuas pom tau. Xa rov qab kev ntsuas muaj qauv uas npog layout, typography, kev siv xim, thiab accessibility concerns.
 
@@ -785,11 +785,11 @@ Thaij screenshot ntawm ib nplooj ntawv thiab xa mus rau language model rau kev t
 
 ---
 
-## Cov peev xwm uas nruab tau
+## Cov peev xwm uas nruab tau {#installable-abilities}
 
 Installable Abilities Registry cia koj txuas ntxiv tus agent nrog cov ability packs ntxiv uas faib ua WordPress plugins. Txhua pack sau npe ib lossis ntau peev xwm siv standard ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Xa rov qab catalogue ntawm ability packs uas muaj rau kev install los ntawm registry.
 
@@ -818,7 +818,7 @@ Xa rov qab catalogue ntawm ability packs uas muaj rau kev install los ntawm regi
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Rub tawm thiab qhib ib pob peev xwm los ntawm chaw teev npe.
 
@@ -832,7 +832,7 @@ Rub tawm thiab qhib ib pob peev xwm los ntawm chaw teev npe.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Nug chaw teev npe peev xwm kom nrhiav qhov txuas ntxiv zoo tshaj rau ib qho kev siv uas piav qhia lawm thiab, yog xav tau, nruab nws.
 

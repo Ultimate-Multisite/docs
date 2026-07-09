@@ -3,9 +3,9 @@ title: Kuanza na Uundaji wa Viongezi
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Utengenezaji wa Kiendelezi
+# Utengenezaji wa Kiendelezi {#addon-development}
 
-## Muundo wa Kiendelezi
+## Muundo wa Kiendelezi {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Kiolezo cha Faili Kuu ya Kiendelezi
+## Kiolezo cha Faili Kuu ya Kiendelezi {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Mfano wa Model Maalum
+## Mfano wa Model Maalum {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Ujumuishaji wa Ukurasa wa Admin
+## Ujumuishaji wa Ukurasa wa Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Kujaribu Addon Yako
+## Kujaribu Addon Yako {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## sehemu za upanuzi za v2.13.0
+## sehemu za upanuzi za v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 inaongeza sehemu kadhaa za upanuzi ambazo ni muhimu kwa addons zinazounganishwa na wapangaji huru, domains za checkout, au otomatiki ya DNS ya watoa huduma wa host.
 
-### SSO na URLs za usimamizi wa tovuti kuu
+### SSO na URLs za usimamizi wa tovuti kuu {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Domains za msingi za fomu ya checkout
+### Domains za msingi za fomu ya checkout {#checkout-form-base-domains}
 
 Tumia `wu_checkout_form_base_domains` wakati addon yako inatoa domains za msingi za pamoja za ziada ambazo zinapaswa kufanya kazi kama domains za **Site URL** za fomu ya checkout badala ya mipangilio maalum ya kila tovuti:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite husawazisha hosts hizi na huruka rekodi za kiotomatiki za domain zilizopangwa kwa kila tovuti kwa ajili yake.
 
-### Uundaji wa kiotomatiki wa rekodi za domain
+### Uundaji wa kiotomatiki wa rekodi za domain {#automatic-domain-record-creation}
 
 Tumia `wu_should_create_domain_record_for_site` wakati addon yako inahitaji kuzuia au kuahirisha uundaji wa kiotomatiki wa rekodi ya domain kwa tovuti iliyoundwa hivi karibuni:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Miunganisho ya watoa huduma wa host inayosikiliza `wu_add_subdomain` inaweza kuunda rekodi za DNS upande wa mtoa huduma wakati tovuti zinaundwa. Ikiwa hakuna muunganisho uliosajiliwa kwa hatua hiyo, Ultimate Multisite huruka kazi tupu ya chinichini.
 
-## Hatua Zinazofuata
+## Hatua Zinazofuata {#next-steps}
 
 - Kagua [Rejeleo la Hooks](/developer/hooks) kwa actions na filters zinazopatikana
 - Angalia [Muhtasari wa REST API](/developer/rest-api/overview) kwa muunganisho wa API

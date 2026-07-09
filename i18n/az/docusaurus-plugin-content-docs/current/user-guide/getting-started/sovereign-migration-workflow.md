@@ -3,11 +3,11 @@ title: Müstəqil Miqrasiya İş Axını
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow
+# Sovereign Migration Workflow {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 standart bir alt sitenin souveren müştəri infrastrukturuna köçürülməsi üçün migrasiya yoxlaması qapılarını əlavə edir.
 
-## Başlamazdan əvvəl
+## Başlamazdan əvvəl {#before-you-start}
 
 Aşağıdakıları təsdiqlədiyinizdən əmin olun:
 
@@ -17,7 +17,7 @@ Aşağıdakıları təsdiqlədiyinizdən əmin olun:
 - Hədəf mühitləri ilə uyğun olan bir bazası host binding (bazası host bağlama).
 - Şəbəkə üçün WP-CLI əmrlərini işlətmək imkanına sahibsiniz.
 
-## Tövsiyə olunan iş axını
+## Tövsiyə olunan iş axını {#recommended-workflow}
 
 1. Hədəf müştəri bazasını və fayl sistemini hazırlayın.
 2. Müştəri izolyasiya ayarlarını qeyd edin və ya yeniləyin.
@@ -28,7 +28,7 @@ Aşağıdakıları təsdiqlədiyinizdən əmin olun:
 7. SSO ilə müştəriyə daxil olun.
 8. Yalnız yoxlama keçdikdən sonra DNS və ya yönləndirməni dəyişin.
 
-## Yoxlama qapıları (Verification gates)
+## Yoxlama qapıları (Verification gates) {#verification-gates}
 
 Yoxlama iş axını migrasiyanı bir neçə bucaqdan yoxlayır:
 
@@ -40,6 +40,6 @@ Yoxlama iş axını migrasiyanı bir neçə bucaqdan yoxlayır:
 
 Yoxlama uğursuzluqlarını işə salmadan əvvəl maneə kimi qəbul edin. Bildirildiyi bazası, istifadəçini, kuyunu və ya yönləndirməni düzəldin, sonra müştəri ilə üzləşdirməzdən əvvəl yoxlamanı yenidən işlədin.
 
-## İlk istehsal ziyarət (First production visit)
+## İlk istehsal ziyarət (First production visit) {#first-production-visit}
 
 Yoxlama keçdikdən sonra ilk administrator ziyarəti üçün sayt idarəetmə ekranından **Ziyarət (SSO)** funksiyasını istifadə edin. Bu, müştəri yönləndirməsini, SSO tokeninin idarə edilməsini, mənbəni sabitlənməsini və müştəri tərəfindən istifadəçi təminatını bir nəzarət olunan addımda təsdiqləyir.

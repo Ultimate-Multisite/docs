@@ -3,7 +3,7 @@ title: Fandaharan'ny Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite sy Zapier mifandray
+# Ultimate Multisite sy Zapier mifandray {#integrating-ultimate-multisite-with-zapier}
 
 Ao an'ny lahatsoratra iray, nolazainay ny momba ireo [Webhooks](webhooks.md) ary ny fomba azo ampiasaina amin'ny fampifandraisana amin'ny rindrambaiko hafa.
 
@@ -15,7 +15,7 @@ Afaka mamorona **Triggers** ianao izay ho mihetsika rehefa misy zava-nitranga eo
 
 Mety atao izany satria ny **triggers** sy ny *actions* an'ny [Ultimate Multisite Zapier](https://developer.ultimatemultisite.com/api/docs/) dia miasa mampiasa ny [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Ahoana no fanombohana
+## Ahoana no fanombohana {#how-to-start}
 
 Voalohany, mitadiava Ultimate Multisite ao amin'ny lisitry ny fampiharana Zapier. Na dia afaka tsindrio ity [link ity](https://zapier.com/apps/wp-ultimo/integrations) aza ianao.
 
@@ -51,7 +51,7 @@ Eo amin'ny faritra URL, apetaho ny URL manontolo anareo ho an'ny tambajotra anar
 
 Tsindrio ny bokotra **Yes, Continue** mba handefasana amin'ny dingana manaraka. Raha mandeha tsara izany rehetra izany, dia ho voalaza anareo ny kaonty vaovao mifandray! Tsindrio ny **Continue** mba hamoronana trigger vaovao.
 
-## Ahoana no famoronana Trigger vaovao
+## Ahoana no famoronana Trigger vaovao {#how-to-create-a-new-trigger}
 
 Rehefa mifandray ny kaontinao dia afaka mahita ireo zava-nitranga (events) azo atao ianao. Andeha safidio ny zava-nitranga **payment_received** ho an'ity tutorial ity.
 
@@ -67,7 +67,7 @@ Amin'ity dingana ity, hanandrana ataon'i Zapier raha afaka **mitady ilay payload
 
 Ao anatinay amin'ny tutorial dia **nahavita tsara ny fanandramana** ary namerina ny ohatra fampahalalana (payload example information). Ireo fampahalalana ohatra ireo dia ho manampy antsika rehefa mamorona asa. Eto anefa, efa voaray ny trigger ary vonona hampifandraisana amin'ny rindrambaiko hafa izy.
 
-## Ahoana no famoronana Actions (Asa)
+## Ahoana no famoronana Actions (Asa) {#how-to-create-actions}
 
 Ny Actions dia mampiasa fampahalalana avy amin'ny triggers hafa mba hamoronana sokajy vaovao ao anatin'ny tambajotra (network) anareo.
 
@@ -79,7 +79,7 @@ Amin'ilay dingana manaraka, na mamorona ny authentication (fanamarinana) ianao t
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Fametrahana ny Action (Action Setup)
+### Fametrahana ny Action (Action Setup) {#setting-up-the-action}
 
 Ity no **dingana lehibe amin'ny action** ary misy zavatra hafa kely eo. Ny fampahalalana voalohany izay safidinao dia ny **Item**. Ny Item dia ny **modely fampahalalana** anareo ao anatin'ny tambajotra, toy ny **Customers (Mpanjifa), Payments (Fandoavam-bola), Sites (Tranonkala), Emails**, ary hafa.
 

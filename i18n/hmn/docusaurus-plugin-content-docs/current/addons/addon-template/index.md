@@ -3,25 +3,25 @@ title: Qauv khoom ntxiv
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Tus Qauv Addon
+# Tus Qauv Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Yam Yuav Tsum Muaj
+## Yam Yuav Tsum Muaj {#requirements}
 
 - WordPress 5.3 lossis siab dua
 - PHP 7.4 lossis siab dua
 - Multisite Ultimate plugin (qhib siv)
 
-## Kev Nruab
+## Kev Nruab {#installation}
 
 1. Upload cov ntaub ntawv addon mus rau koj phau ntawv `/wp-content/plugins/`
 2. Qhib siv plugin ntawm 'Plugins' menu hauv WordPress
 3. Teeb cov kev xaiv addon hauv network admin
 
-## Kev Tsim Kho
+## Kev Tsim Kho {#development}
 
-### Kev Teeb
+### Kev Teeb {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Cov Qauv Txheej Txheem Project
+### Cov Qauv Txheej Txheem Project {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Cov cai rau code modernization
 ```
 
-### Kev Kuaj
+### Kev Kuaj {#testing}
 
 Addon no muaj ib lub framework kuaj uas dav heev:
 
@@ -75,44 +75,44 @@ Addon no muaj ib lub framework kuaj uas dav heev:
 - **Test Coverage**: Teeb kom taug qab code coverage
 - **Multisite Testing**: Cov kev kuaj khiav hauv multisite environment
 
-### Cov Qauv Code
+### Cov Qauv Code {#code-standards}
 
 - **WordPress Coding Standards**: Yuam siv los ntawm PHPCS
 - **PHP 7.4+ Compatibility**: Txhawb cov yam ntxwv PHP tshiab
 - **Static Analysis**: PHPStan integration rau kev kuaj hom
 - **Code Modernization**: Rector rules rau kev hloov tshiab PHP
 
-### Build System
+### Build System {#build-system}
 
 - **Asset Processing**: Minification rau cov ntaub ntawv CSS/JS
 - **Translation**: Tsim POT file
 - **Packaging**: Tsim archive rau kev faib tawm
 - **Development Mode**: Cov assets uas tsis tau minified rau debugging
 
-## Configuration
+## Configuration {#configuration}
 
 Addon no txhawb ntau yam kev xaiv configuration uas nkag tau los ntawm network admin interface.
 
-## Hooks thiab Filters
+## Hooks thiab Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Raug hu tom qab addon initialization
 - `ultimate-multisite-addon-template_loaded` - Raug hu tom qab tag nrho cov ntaub ntawv addon raug loaded
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Hloov cov kev teeb addon
 - `ultimate-multisite-addon-template_enabled` - Override addon enable/disable status
 
-## Daim Ntawv Tso Cai
+## Daim Ntawv Tso Cai {#license}
 
 Addon no tau tso cai raws li GPL v3 lossis tom qab ntawd.
 
-## Kev Txhawb Nqa
+## Kev Txhawb Nqa {#support}
 
 Rau kev txhawb nqa thiab ntaub ntawv qhia, mus saib [MultisiteUltimate.com](https://multisiteultimate.com)
-## Keeb Kwm Hloov
+## Keeb Kwm Hloov {#changelog}
 
 - Version 1.0.1 (2025-09-28): hloov npe prefix mus rau ultimate-multisite; hloov tshiab text domain; nce version.
 

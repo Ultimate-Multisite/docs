@@ -3,15 +3,15 @@ title: Ductorium Usus Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Dux Usus Hooks
+# Dux Usus Hooks {#hooks-usage-guide}
 
 Ultimate Multisite praebet plus quam 200 action hooks et plus quam 280 filter hooks. Haec pagina tractat hooks frequentissime adhibitos cum exemplis practicis. Ad completam relationem automatice generatam, alias paginas in hac sectione perlege.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Cyclus Vitae Emptoris
+### Cyclus Vitae Emptoris {#customer-lifecycle}
 
-#### Post Creationem Emptoris
+#### Post Creationem Emptoris {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Mutatio Status Emptoris
+#### Mutatio Status Emptoris {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks Siti
+### Hooks Siti {#site-hooks}
 
-#### Post Situm Publicatum
+#### Post Situm Publicatum {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Ante Applicationem Exemplaris
+#### Ante Applicationem Exemplaris {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooks Sodalitatis
+### Hooks Sodalitatis {#membership-hooks}
 
-#### Transitiones Status
+#### Transitiones Status {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooks Solutionis
+### Hooks Solutionis {#payment-hooks}
 
-#### Solutio Perfecta / Defecta
+#### Solutio Perfecta / Defecta {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooks Checkout
+### Hooks Checkout {#checkout-hooks}
 
-#### Ante Tractationem / Post Completionem
+#### Ante Tractationem / Post Completionem {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooks Dominii
+### Hooks Dominii {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Filtra Pretii
+### Filtra Pretii {#pricing-filters}
 
-#### Summa Cart
+#### Summa Cart {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Rationes Tributorum
+#### Rationes Tributorum {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Filtra Exemplarium
+### Filtra Exemplarium {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Filtra Limitationum
+### Filtra Limitationum {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Filtra Gateway
+### Filtra Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Campi Formae Checkout
+### Campi Formae Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Contentum Email
+### Contentum Email {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

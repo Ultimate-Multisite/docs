@@ -3,13 +3,13 @@ title: Ýörite Registrar integrasiýasyny gurmak
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Custom Registrar integrasiýasyny gurmak
+# Custom Registrar integrasiýasyny gurmak {#building-a-custom-registrar-integration}
 
 Domain Seller addon **Integration Registry** nusgasyny ulanýar. Her registrar `Domain_Selling_Capability` amala aşyrýan we `wu_domain_seller_register_capabilities` action hook arkaly özüni hasaba alýan PHP klassydyr.
 
 Bu gollanma custom registrar-y nädip birikdirmelidigini görkezýär.
 
-## Interfeýs
+## Interfeýs {#the-interface}
 
 Siziň klassyňyz `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` amala aşyrmaly we `WP_Ultimo\Integrations\Base_Capability_Module` giňeltmeli.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Meýletin usullar
+### Meýletin usullar {#optional-methods}
 
 Goşmaça aýratynlyklary açmak üçin bulary amala aşyryň. Addon goldawy `method_exists()` arkaly anyklaýar:
 
@@ -81,7 +81,7 @@ Goşmaça aýratynlyklary açmak üçin bulary amala aşyryň. Addon goldawy `me
 | `get_epp_code(string $domain_name): array` | Domen transferi (çykýan) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domen transferi (girýän) |
 
-### Gaýtaryş bahasy düzgünleşmesi
+### Gaýtaryş bahasy düzgünleşmesi {#return-value-convention}
 
 Ähli usullar azyndan `success` açary bolan array gaýtarýar:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Capability-y hasaba almak
+## Capability-y hasaba almak {#registering-your-capability}
 
 Klassyňyzy `wu_domain_seller_register_capabilities` action arkaly hasaba alyň:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Wizard-a credential meýdanlaryny goşmak
+## Wizard-a credential meýdanlaryny goşmak {#adding-credential-fields-to-the-wizard}
 
 Adminlere setup wizard arkaly credential girizmäge mümkinçilik bermek üçin integrasiýaňyzy hasaba alyň:
 
@@ -137,7 +137,7 @@ Credential-ler field ID-lerini açar hökmünde ulanyp network option görnüşi
 
 ---
 
-## Hasaba alyşdan soňky hereketler üçin hook-lar
+## Hasaba alyşdan soňky hereketler üçin hook-lar {#hooks-for-post-registration-actions}
 
 Webhook-lary, üpjünçiligi, habarnamalary ýa-da CRM täzelenmelerini işletmek üçin şu action-lary ulanyň:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Žurnallaşdyrma
+## Žurnallaşdyrma {#logging}
 
 Provideriňize mahsus žurnal kanalyna `wu_log_add()` ulanyp ýazyň:
 

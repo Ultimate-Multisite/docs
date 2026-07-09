@@ -3,7 +3,7 @@ title: Àwùjọ
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Bii a ṣe le darapọ mọ Ultimate Multisite Community
+# Bii a ṣe le darapọ mọ Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community jẹ aaye kan nibiti o ti le kan si awọn olumulo Ultimate Multisite miiran ki o pin awọn imọran, iriri ati diẹ sii. Lati wọle si Ultimate Multisite Community lọ si https://community.ultimatemultisite.com/home.
 

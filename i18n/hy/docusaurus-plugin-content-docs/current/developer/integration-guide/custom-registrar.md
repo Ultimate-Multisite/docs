@@ -3,13 +3,13 @@ title: Պատվերով ռեգիստրատորի ինտեգրացիայի ստե
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Հատուկ գրանցողի ինտեգրումի կառուցում
+# Հատուկ գրանցողի ինտեգրումի կառուցում {#building-a-custom-registrar-integration}
 
 Domain Seller addon-ը օգտագործում է **Integration Registry** ձևանմուշ։ Յուրաքանչյուր գրանցող PHP class է, որը իրականացնում է `Domain_Selling_Capability` և ինքն իրեն գրանցում է `wu_domain_seller_register_capabilities` action hook-ի միջոցով։
 
 Այս ուղեցույցը ցույց է տալիս՝ ինչպես միացնել հատուկ գրանցող։
 
-## Ինտերֆեյսը
+## Ինտերֆեյսը {#the-interface}
 
 Ձեր class-ը պետք է իրականացնի `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` և ընդլայնի `WP_Ultimo\Integrations\Base_Capability_Module`։
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Ընտրովի մեթոդներ
+### Ընտրովի մեթոդներ {#optional-methods}
 
 Իրականացրեք սրանք՝ լրացուցիչ հնարավորություններ բացելու համար։ addon-ը աջակցությունը հայտնաբերում է `method_exists()`-ի միջոցով՝
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Դոմեյնի փոխանցում (ելքային) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Դոմեյնի փոխանցում (մուտքային) |
 
-### Վերադարձվող արժեքի պայմանականություն
+### Վերադարձվող արժեքի պայմանականություն {#return-value-convention}
 
 Բոլոր մեթոդները վերադարձնում են array, որը նվազագույնը պարունակում է `success` key՝
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Ձեր capability-ի գրանցում
+## Ձեր capability-ի գրանցում {#registering-your-capability}
 
 Գրանցեք ձեր class-ը՝ օգտագործելով `wu_domain_seller_register_capabilities` action-ը՝
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Հավատարմագրային դաշտերի ավելացում wizard-ին
+## Հավատարմագրային դաշտերի ավելացում wizard-ին {#adding-credential-fields-to-the-wizard}
 
 Որպեսզի ադմինները կարողանան մուտքագրել հավատարմագրերը setup wizard-ի միջոցով, գրանցեք ձեր ինտեգրումը՝
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## Հետգրանցման գործողությունների hook-եր
+## Հետգրանցման գործողությունների hook-եր {#hooks-for-post-registration-actions}
 
 Օգտագործեք այս action-ները՝ webhooks, provisioning, ծանուցումներ կամ CRM թարմացումներ գործարկելու համար՝
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Մատյանագրում
+## Մատյանագրում {#logging}
 
 Գրեք ձեր մատակարարին հատուկ մատյանագրման ալիքում՝ օգտագործելով `wu_log_add()`՝
 

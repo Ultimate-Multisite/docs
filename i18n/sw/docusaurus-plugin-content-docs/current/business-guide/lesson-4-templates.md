@@ -3,15 +3,15 @@ title: 'Somo la 4: Kuunda Muundo Maalum'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Somo la 4: Kuunda Muundo wa Niche (Niche Templates)
+# Somo la 4: Kuunda Muundo wa Niche (Niche Templates) {#lesson-4-building-niche-templates}
 
 Muundo (Templates) ndio kiini cha thamani yako ya niche. Mmiliki wa studio ya mazoezi anayejiandikisha na kuona tovuti ambayo tayari inaonekana kama tovuti ya studio la mazoezi — ikiwa na ratiba za masaa, wasifu wa walimu, na picha sahihi — ana uwezekano mkubwa zaidi wa kubaki kuliko yule anayeona kurasa tupu.
 
-## Tulipoacha
+## Tulipoacha {#where-we-left-off}
 
 Tuna mtandao wa FitSite unaofanya kazi na Ultimate Multisite imewekwa na kuwekwa mipangilio. Sasa tunajenga muundo (templates) ambazo zifanye FitSite kuhisi kama imejengwa kwa ajili ya biashara za mazoezi.
 
-## Kwa Nini Muundo wa Niche ni Muhimu
+## Kwa Nini Muundo wa Niche ni Muhimu {#why-niche-templates-matter}
 
 Muundo wa jumla (Generic templates) unamlazimisha mteja wako kufanya kazi ngumu: kujua ni kurasa gani wanahitaji, muundo gani wa maudhui unafaa, na jinsi ya kufanya ionekane sawa kwa sekta yao. Muundo wa niche unatoa kizuizi hicho.
 
@@ -24,11 +24,11 @@ Mmiliki wa studio ya mazoezi anayejiandikisha kwa FitSite anapaswa kuona:
 
 Wao wanajaza maelezo yao. Hawaanzi kutoka mwanzo.
 
-## Kupanga Muundo Wako
+## Kupanga Muundo Wako {#planning-your-templates}
 
 Kabla ya kujenga, amua ni muundo gani utatoa. Kwa FitSite, tutaunda muundo mitatu:
 
-### Muundo 1: Studio Essential
+### Muundo 1: Studio Essential {#template-1-studio-essential}
 
 Kwa studio ndogo na walimu binafsi.
 
@@ -39,7 +39,7 @@ Kwa studio ndogo na walimu binafsi.
 - **Ukurasa wa Mawasiliano** wenye ramani ya eneo na fomu
 - **Muundo safi, wa kisasa** wenye rangi zinazofaa kwa mazoezi
 
-### Muundo 2: Gym Pro
+### Muundo 2: Gym Pro {#template-2-gym-pro}
 
 Kwa madarasa ya mazoezi yaliyojengwa na yenye huduma zaidi.
 
@@ -50,7 +50,7 @@ Kwa madarasa ya mazoezi yaliyojengwa na yenye huduma zaidi.
 - **Sehemu ya Ushuhuda** kwenye ukurasa wa nyumbani
 - **Chaguo zaidi za brand**
 
-### Muundo 3: Fitness Chain
+### Muundo 3: Fitness Chain {#template-3-fitness-chain}
 
 Kwa shughuli zenye maeneo mengi.
 
@@ -60,17 +60,17 @@ Kwa shughuli zenye maeneo mengi.
 - **Branding iliyojumuishwa** na maelezo yanayohusiana na eneo
 - **Saraka ya wafanyakazi** katika maeneo mengi
 
-## Kuunda Tovuti ya Muundo
+## Kuunda Tovuti ya Muundo {#building-a-template-site}
 
 Katika Ultimate Multisite, muundo (template) ni tovuti ya WordPress ambayo imewekwa mipangilio jinsi unavyotaka tovuti mpya za wateja kuonekana. Hivi ndivyo unavyounda moja:
 
-### Hatua ya 1: Unda Tovuti ya Muundo
+### Hatua ya 1: Unda Tovuti ya Muundo {#step-1-create-the-template-site}
 
 1. Nenda kwa **Sites > Add New** kwenye admin yako ya mtandao
 2. Unda tovuti yenye jina `template-studio-essential`
 3. Tovuti hii inakuwa canvas yako ya kazi
 
-### Hatua ya 2: Sakinisha na Weka Mipangilio ya Theme
+### Hatua ya 2: Sakinisha na Weka Mipangilio ya Theme {#step-2-install-and-configure-the-theme}
 
 Badilisha kwenda dashboard ya tovuti ya muundo na:
 
@@ -82,7 +82,7 @@ Badilisha kwenda dashboard ya tovuti ya muundo na:
 Chagua theme ambayo ni rahisi kurekebisha kiasi kwamba inaonekana vizuri kwa mazoezi lakini si ngumu sana kiasi kwamba wateja wako hawawezi kuizisimamia. Themes kama Astra, GeneratePress, au Kadence zinafanya kazi vizuri kwa sababu ni nyepesi, zinaweza kubadilishwa, na zina msaada mzuri.
 :::
 
-### Hatua ya 3: Unda Kurasa
+### Hatua ya 3: Unda Kurasa {#step-3-create-the-pages}
 
 Jenga kila ukurasa kwa:
 
@@ -92,7 +92,7 @@ Jenga kila ukurasa kwa:
 
 Fanya maelezo ya mfano kuwa ya kuelimisha inapowezekana. Badala ya maandishi ya kujaza ya jumla, andika maudhui kama: "Badilisha hili na maelezo mafupi ya studio lako na kile kinachokifanya kiwe maalum. Taja falsafa yako ya mafunzo, miaka ya uzoefu, au kile ambacho wateja wanaweza kutarajia."
 
-### Hatua ya 4: Weka Mipangilio ya Plugins
+### Hatua ya 4: Weka Mipangilio ya Plugins {#step-4-configure-plugins}
 
 Sakinisha na washa plugins ambazo studio za mazoezi zinazohitaji:
 
@@ -100,7 +100,7 @@ Sakinisha na washa plugins ambazo studio za mazoezi zinazohitaji:
 - Plugin ya fomu ya mawasiliano
 - Plugin ya SEO (imepangishwa awali na chaguo za msingi zinazohusiana na mazoezi)
 
-### Hatua ya 5: Weka Alama kama Muundo
+### Hatua ya 5: Weka Alama kama Muundo {#step-5-mark-as-template}
 
 1. Nenda kwa **Ultimate Multisite > Sites**
 2. Hariri tovuti ya muundo
@@ -108,7 +108,7 @@ Sakinisha na washa plugins ambazo studio za mazoezi zinazohitaji:
 
 Rudia mchakato huu kwa kila muundo ambao unataka kutoa.
 
-## Orodha ya Ukaguzi wa Ubora wa Muundo
+## Orodha ya Ukaguzi wa Ubora wa Muundo {#template-quality-checklist}
 
 Kabla ya kuifanya muundo kuwa wa matumizi, thibitisha:
 
@@ -121,7 +121,7 @@ Kabla ya kuifanya muundo kuwa wa matumizi, thibitisha:
 - [ ] Hakuna viungo vilivyovunjika au mali iliyopotea
 - [ ] Kasi ya kupakia kurasa ni inayokubalika
 
-## Mtandao wa FitSite Hadi Sasa
+## Mtandao wa FitSite Hadi Sasa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Tayari kwa mipangilio ya mpango (somo lijalo)
 ```
 
-## Niliyojenga Somo Hili
+## Niliyojenga Somo Hili {#what-we-built-this-lesson}
 
 - **Muundo mitatu wa niche** ulioundwa kwa ukubwa tofauti wa biashara za mazoezi
 - **Maudhui na picha zinazofaa kwa mazoezi** zinazofanya jukwaa kuhisi kama limejengwa kwa ajili ya madhumuni

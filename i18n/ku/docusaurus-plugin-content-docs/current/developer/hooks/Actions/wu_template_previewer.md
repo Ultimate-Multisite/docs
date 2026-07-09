@@ -4,19 +4,19 @@ title: Çalakî - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Çalakî: wu_template_previewer
+# Çalakî: wu_template_previewer {#action-wutemplatepreviewer}
 
 Dema di nav çarçoveya pêşdîtina şablonê de be, dimeşe.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Şirove |
 |------|------|-------------|
 | $template_previewer | `self` | Nimûneya pola niha. |
 
-### Ji dema
+### Ji dema {#since}
 
 - 2.0.4
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) de, li rêza 86 hatîye diyarkirin

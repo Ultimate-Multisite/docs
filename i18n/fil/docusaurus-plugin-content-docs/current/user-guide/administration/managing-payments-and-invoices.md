@@ -3,9 +3,9 @@ title: Pamamahala ng mga Pagbabayad at Invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pamamahala ng mga Pagbabayad at Invoice
+# Pamamahala ng mga Pagbabayad at Invoice {#managing-payments-and-invoices}
 
-## Mga Setting ng Pagbabayad
+## Mga Setting ng Pagbabayad {#payment-settings}
 
 Bago ka magsimulang tumanggap ng mga pagbabayad, kailangan mong i-configure ang mga setting na may kaugnayan sa pagbabayad. Pumunta sa **Ultimate Multisite → Mga Setting** at i-click ang tab na **Payment**.
 
@@ -15,7 +15,7 @@ Narito ang buong view ng pahina ng mga setting ng pagbabayad:
 
 ![Buong pahina ng mga setting ng pagbabayad](/img/admin/settings-payments-full.png)
 
-### Mga Pangkalahatang Opsyon sa Pagbabayad
+### Mga Pangkalahatang Opsyon sa Pagbabayad {#general-payment-options}
 
 Sa mga pangkalahatang setting maaari mong i-configure ang:
 
@@ -24,7 +24,7 @@ Sa mga pangkalahatang setting maaari mong i-configure ang:
 
 ![Mga setting ng gateway ng pagbabayad](/img/admin/settings-payments-options.png)
 
-### Mga Gateway ng Pagbabayad
+### Mga Gateway ng Pagbabayad {#payment-gateways}
 
 Sinusuportahan ng Ultimate Multisite ang maraming gateway ng pagbabayad. Maaari mong paganahin at i-configure ang bawat isa mula sa tab ng mga setting ng Payment.
 
@@ -40,11 +40,11 @@ Bawat gateway ay may sarili nitong seksyon ng configuration kung saan mo inilala
 
 ![Karagdagang mga setting ng gateway](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Maaari mong paganahin ang **Sandbox Mode** upang subukan ang iyong integration ng pagbabayad bago ito gawing live. Kapag aktibo ang sandbox mode, walang tunay na singil na gagawin.
 
-## Pagtingin sa mga Pagbabayad
+## Pagtingin sa mga Pagbabayad {#viewing-payments}
 
 Pumunta sa pahinang **Payments** sa ilalim ng Ultimate Multisite upang makita ang lahat ng transaksyon sa iyong network.
 
@@ -54,7 +54,7 @@ Maaari mong i-filter ang mga pagbabayad ayon sa status (nakumpleto, nakabinbin, 
 
 I-click ang isang pagbabayad upang makita ang buong detalye nito kabilang ang mga line item, kaugnay na membership, impormasyon ng customer, at data ng gateway ng pagbabayad.
 
-## Mga Invoice
+## Mga Invoice {#invoices}
 
 Maaaring awtomatikong gumawa ang Ultimate Multisite ng mga invoice para sa mga pagbabayad. Maaari mong i-customize ang template ng invoice at format ng pagnunumero mula sa mga setting ng Payment.
 

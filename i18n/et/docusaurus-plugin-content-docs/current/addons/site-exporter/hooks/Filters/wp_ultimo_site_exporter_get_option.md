@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Tagastab slugifitseeritud võrguvaliku väärtuse.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Tagastab slugifitseeritud võrguvaliku väärtuse.
 | $option_name | `string` | Valiku nimi. |
 | $default | `mixed` | Vaikeväärtus. |
 
-### Alates
+### Alates {#since}
 
 - 1.9.6
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) real 126
 
 
-## Tagastab
+## Tagastab {#returns}
 Slugifitseeritud võrguvaliku väärtuse.

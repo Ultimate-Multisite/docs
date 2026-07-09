@@ -3,13 +3,13 @@ title: Rekisteröitymislomakkeen mukauttaminen
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Rekisteröintilomakkeen mukauttaminen
+# Rekisteröintilomakkeen mukauttaminen {#customizing-your-registration-form}
 
 Jotta verkostosi näyttäisi ainutlaatuiselta verrattuna kaikkiin muihin WordPress-alustalle rakennettuihin SaaS-palveluihin, Ultimate Multisite antaa sinun mukauttaa rekisteröinti- ja kirjautumissivujasi **Checkout Forms** -ominaisuudellamme.
 
 Vaikka ne ovat helppo ja joustava tapa kokeilla erilaisia lähestymistapoja uusien asiakkaiden konvertoimiseksi, niitä käytetään enimmäkseen personoitujen rekisteröintilomakkeiden luomiseen. Tämän artikkelin tarkoituksena on näyttää, miten voit tehdä sen.
 
-## Kirjautumis- ja rekisteröintisivut:
+## Kirjautumis- ja rekisteröintisivut: {#login-and-registration-pages}
 
 Ultimate Multisite luo asennuksen yhteydessä automaattisesti mukautetut kirjautumis- ja rekisteröintisivut pääsivustollesi. Voit vaihtaa näitä oletussivuja milloin tahansa siirtymällä sivulle **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Katsotaan nyt muita vaihtoehtoja, jotka liittyvät edelleen kirjautumis- ja reki
 
 Ja siinä ovat kaikki kirjautumiseen ja rekisteröintiin liittyvät vaihtoehdot, joita voit mukauttaa! Älä unohda tallentaa asetuksiasi, kun olet lopettanut niiden muokkaamisen.
 
-## Useiden rekisteröintilomakkeiden käyttäminen:
+## Useiden rekisteröintilomakkeiden käyttäminen: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 tarjoaa checkout-lomake-editorin, jonka avulla voit luoda niin monta lomaketta kuin haluat, eri kentillä, tarjolla olevilla tuotteilla jne.
 
@@ -69,7 +69,7 @@ Vaihtoehtoisesti voit muokata tai monistaa jo olemassa olevia lomakkeita napsaut
 
 Jos valitset yhden vaiheen tai monivaiheisen, checkout-lomake on jo valmiiksi täytetty sen toimimiseen tarvittavilla perusvaiheilla. Sen jälkeen voit halutessasi lisätä siihen ylimääräisiä vaiheita.
 
-### Checkout-lomakkeen muokkaaminen:
+### Checkout-lomakkeen muokkaaminen: {#editing-a-checkout-form}
 
 Kuten aiemmin mainitsimme, voit luoda checkout-lomakkeita eri tarkoituksiin. Tässä esimerkissä työskentelemme rekisteröintilomakkeen parissa.
 
@@ -131,11 +131,11 @@ Saat lomakkeesi lyhytkoodin napsauttamalla **Luo lyhytkoodi** ja kopioimalla mod
 
 _**Huomautus:** Sinun täytyy lisätä tämä lyhytkoodi rekisteröitymissivullesi, jotta tämä kassalomake lisätään siihen._
 
-## Tuotteiden ja mallipohjien esivalinta URL-parametrien avulla:
+## Tuotteiden ja mallipohjien esivalinta URL-parametrien avulla: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Jos haluat luoda mukautettuja hinnoittelutaulukoita tuotteillesi ja esivalita kassalomakkeessa tuotteen tai mallipohjan, jonka asiakkaasi valitsee hinnoittelutaulukostasi tai mallipohjasivultasi, voit käyttää tähän URL-parametreja.
 
-### **Paketeille:**
+### **Paketeille:** {#for-plans}
 
 Siirry kohtaan **Ultimate Multisite > Tuotteet > Valitse paketti**. Sinun pitäisi nähdä **Napsauta kopioidaksesi jaettava linkki** -painike sivun yläosassa. Tämä on linkki, jota voit käyttää tämän tietyn paketin esivalintaan kassalomakkeessasi.
 
@@ -143,7 +143,7 @@ Siirry kohtaan **Ultimate Multisite > Tuotteet > Valitse paketti**. Sinun pitäi
 
 Huomaa, että tämä jaettava linkki on voimassa vain **Paketeille**. Et voi käyttää jaettavia linkkejä pakettikokonaisuuksille tai palveluille.
 
-### Mallipohjille:
+### Mallipohjille: {#for-templates}
 
 Jos haluat esivalita sivustomallipohjia kassalomakkeessasi, voit käyttää parametria: **?template_id=X** rekisteröitymissivusi URL-osoitteessa. "X" täytyy korvata **sivustomallipohjan ID-numerolla**. Saat tämän numeron siirtymällä kohtaan **Ultimate Multisite > Sivustot**.
 

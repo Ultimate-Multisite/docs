@@ -3,28 +3,28 @@ title: Nchịkọta REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Ntụaka REST API
+# Ntụaka REST API {#rest-api-reference}
 
-## Nhazi Ntọala
+## Nhazi Ntọala {#base-configuration}
 
 **URL Ntọala:** `{site_url}/wp-json/wu/v2/`
 **Nyocha njirimara:** Igodo API & Nzuzo (HTTP Basic Auth ma ọ bụ Paramita URL)
 
-## Nyocha njirimara
+## Nyocha njirimara {#authentication}
 
-### Kwado API
+### Kwado API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Nweta Nkọwa Njirimara API
+### Nweta Nkọwa Njirimara API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Ụzọ Nyocha Njirimara
+### Ụzọ Nyocha Njirimara {#authentication-methods}
 
 **HTTP Basic Auth (Akwadoro):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoint Ndị Isi
+## Endpoint Ndị Isi {#core-endpoints}
 
-### 1. API Ndị Ahịa
+### 1. API Ndị Ahịa {#1-customers-api}
 
 **Ụzọ Ntọala:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Saịtị
+### 2. API Saịtị {#2-sites-api}
 
 **Ụzọ Ntọala:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Ndị Otu**
+### 3. API Ndị Otu** {#3-memberships-api}
 
 **Ụzọ Ntọala:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Ngwaahịa
+### 4. API Ngwaahịa {#4-products-api}
 
 **Ụzọ Ntọala:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Ịkwụ Ụgwọ
+### 5. API Ịkwụ Ụgwọ {#5-payments-api}
 
 **Ụzọ Ntọala:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Domen
+### 6. API Domen {#6-domains-api}
 
 **Ụzọ Ntọala:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint Ndebanye Aha
+## Endpoint Ndebanye Aha {#registration-endpoint}
 
 Endpoint `/register` na-enye usoro checkout/ndebanye aha zuru ezu:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint Ndị Tenant Nwere Ọchịchị Onwe Ha
+## Endpoint Ndị Tenant Nwere Ọchịchị Onwe Ha {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 na-agbakwunye mkpuchi REST maka tenant nwere ọchịchị onwe ha maka njikọ ndị na-enye, na-enyocha, ma ọ bụ na-akwado tenant ndị e kewapụrụ iche.
 
@@ -242,7 +242,7 @@ Nzaghachi ọnọdụ mbufe a na-ahụkarị gụnyere:
 
 Were `ready: false` dị ka ihe mgbochi tupu mmalite. Lelee nkọwa nkwenye, dozie njikọ host database, queue, inye onye ọrụ, ma ọ bụ nsogbu ntụgharị ụzọ, mgbe ahụ nwaa nkwenye ọzọ.
 
-## Nzaghachi Mperi
+## Nzaghachi Mperi {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Were `ready: false` dị ka ihe mgbochi tupu mmalite. Lelee nkọwa nkwenye, doz
 }
 ```
 
-## Nkewa Peeji na Nzacha
+## Nkewa Peeji na Nzacha {#pagination-and-filtering}
 
 **Paramita Ajụjụ:**
 ```http

@@ -3,15 +3,15 @@ title: 'Nkuzi 7: Ime ka ọ bụrụ nke gị'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Nkuzi 7: Ime ka Ọ Bụrụ Nke Gị
+# Nkuzi 7: Ime ka Ọ Bụrụ Nke Gị {#lesson-7-making-it-yours}
 
 Ndị ahịa gị ekwesịghị ịna-eche na ha na-eji "otu WordPress plọgịn." Ha kwesịrị ịna-eche na ha na-eji FitSite -- ikpo okwu e wuru maka ụlọ ọrụ ha. Nkuzi a na-ekpuchi ịmepụta ika, ime ka ọ bụrụ white-label, na ime ka ikpo okwu ahụ dị ka ngwaahịa.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 FitSite nwere usoro ịkwụ ụgwọ na-arụ ọrụ nke na-ebuga ndị nwe studio mgbatị ahụ site na nhọrọ atụmatụ ruo na saịtị dị ndụ. Ugbu a, anyị na-eme ka ahụmịhe niile dị ka ngwaahịa jikọrọ ọnụ, nke nwere ika.
 
-## Domain Ikpo Okwu Gị
+## Domain Ikpo Okwu Gị {#your-platform-domain}
 
 Ntọala ika gị bụ domain gị. Maka FitSite:
 
@@ -19,7 +19,7 @@ Ntọala ika gị bụ domain gị. Maka FitSite:
 - **Saịtị ndị ahịa**: `studioname.fitsite.com` (subdomains)
 - **Domain omenala**: Ndị ahịa nọ na atụmatụ Growth na Pro nwere ike ijikọ domain nke ha
 
-### Ịtọlite Domain Gị
+### Ịtọlite Domain Gị {#setting-up-your-domain}
 
 1. Debanye aha domain ikpo okwu gị
 2. Tụọ ya aka na onye na-enye hosting gị
@@ -28,11 +28,11 @@ Ntọala ika gị bụ domain gị. Maka FitSite:
 
 Lee [Otu esi Ahazi Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) maka ntuziaka zuru ezu.
 
-## Ime ka Ahụmịhe Admin Bụrụ White-Label
+## Ime ka Ahụmịhe Admin Bụrụ White-Label {#white-labeling-the-admin-experience}
 
 Mgbe onye nwe studio mgbatị ahụ banyere na dashboard saịtị ha, ha kwesịrị ịhụ ika gị, ọ bụghị akara WordPress ma ọ bụ Ultimate Multisite.
 
-### Peeji Mbanye Omenala
+### Peeji Mbanye Omenala {#custom-login-page}
 
 Hazie peeji mbanye WordPress ka o gosi:
 
@@ -40,7 +40,7 @@ Hazie peeji mbanye WordPress ka o gosi:
 - Onyonyo ndabere dabara na mgbatị ahụ
 - Agba ika gị
 
-### Ịmepụta Ika na Dashboard
+### Ịmepụta Ika na Dashboard {#dashboard-branding}
 
 Jiri mgbakwunye [Admin Page Creator](/addons/admin-page-creator) ma ọ bụ CSS omenala iji:
 
@@ -48,7 +48,7 @@ Jiri mgbakwunye [Admin Page Creator](/addons/admin-page-creator) ma ọ bụ CSS
 - Hazie atụmatụ agba admin ka ọ dakọtara na ika gị
 - Tinye widget dashboard omenala nwere njikọ ngwa ngwa na akụ enyemaka metụtara mgbatị ahụ
 
-### Peeji Admin Omenala
+### Peeji Admin Omenala {#custom-admin-pages}
 
 Tụlee ịmepụta peeji admin omenala nke na-eme ka omume kacha dị mkpa nye ndị nwe studio mgbatị ahụ pụta ìhè:
 
@@ -58,11 +58,11 @@ Tụlee ịmepụta peeji admin omenala nke na-eme ka omume kacha dị mkpa nye 
 
 Nke a na-ebelata mgbagwoju anya nke mmụta site n’itinye omume metụtara niche n’ihu na etiti kama izobe ha n’ime menu WordPress ọkọlọtọ.
 
-## Ịmepụta Ika na Nkwukọrịta Gị
+## Ịmepụta Ika na Nkwukọrịta Gị {#branding-your-communications}
 
 Email ọ bụla, invoice ọ bụla, na ọkwa ọ bụla kwesịrị iwusi ika gị ike.
 
-### Email Sistemụ
+### Email Sistemụ {#system-emails}
 
 Gaa na **Ultimate Multisite > Settings > Emails** ma hazie email sistemụ niile:
 
@@ -79,7 +79,7 @@ Email ndị bụ isi ị ga-ahazi:
 | Nnata ịkwụ ụgwọ | "A natala ịkwụ ụgwọ" | "Ekwenyela ịkwụ ụgwọ subscription FitSite" |
 | Trial na-agwụ | "Trial gị ga-agwụ n’oge na-adịghị anya" | "Trial FitSite gị ga-agwụ n’ime ụbọchị 3 -- debe webụsaịtị studio gị ka ọ dị ndụ" |
 
-### Invoice
+### Invoice {#invoices}
 
 Hazie template invoice site na:
 
@@ -87,7 +87,7 @@ Hazie template invoice site na:
 - Nkọwa azụmahịa gị
 - Aha ngwaahịa metụtara mgbatị ahụ (ọ bụghị ID atụmatụ izugbe)
 
-## Saịtị Ndị Ahịa Na-ahụ
+## Saịtị Ndị Ahịa Na-ahụ {#the-customer-facing-site}
 
 Isi domain gị (`fitsite.com`) chọrọ saịtị ahịa nke na-ere ikpo okwu ahụ. Nke a dị iche na network admin Ultimate Multisite -- ọ bụ ihu azụmahịa gị nke ọha na-ahụ.
 
@@ -103,7 +103,7 @@ Peeji ndị bụ isi:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Domain Omenala maka Ndị Ahịa
+## Domain Omenala maka Ndị Ahịa {#custom-domain-for-customers}
 
 Maka ndị ahịa nọ na atụmatụ gụnyere domain omenala, dee usoro ahụ n’ụzọ doro anya:
 
@@ -113,7 +113,7 @@ Maka ndị ahịa nọ na atụmatụ gụnyere domain omenala, dee usoro ahụ 
 
 Mepụta edemede enyemaka ma ọ bụ ntinye knowledge base kpọmkwem maka usoro a, edere ya maka ndị nwe studio mgbatị ahụ na-abụghị ndị teknụzụ.
 
-## Network FitSite Ruo Ugbu A
+## Network FitSite Ruo Ugbu A {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Ihe Anyị Wuru na Nkuzi A
+## Ihe Anyị Wuru na Nkuzi A {#what-we-built-this-lesson}
 
 - **Domain ikpo okwu na DNS** ahaziela maka ahụmịhe nwere ika
 - **Admin white-labeled** nwere akara FitSite n’ebe niile

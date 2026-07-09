@@ -3,7 +3,7 @@ title: Zapier-Integration
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integration von Ultimate Multisite mit Zapier
+# Integration von Ultimate Multisite mit Zapier {#integrating-ultimate-multisite-with-zapier}
 
 In einem der Artikel haben wir [Webhooks](webhooks.md) besprochen und wie sie zur Integration mit Anwendungen von Drittanbietern verwendet werden können.
 
@@ -15,7 +15,7 @@ Du kannst **Trigger** erstellen, die ausgelöst werden, wenn Ereignisse in deine
 
 Dies ist möglich, weil **Ultimate Multisite Zapier's triggers** und Actions von der [REST API](https://developer.ultimatemultisite.com/api/docs/) unterstützt werden.
 
-## So beginnst du
+## So beginnst du {#how-to-start}
 
 Suche zuerst in der Zapier-App-Liste nach Ultimate Multisite. Alternativ kannst du auf [diesen Link](https://zapier.com/apps/wp-ultimo/integrations) klicken.
 
@@ -51,7 +51,7 @@ Gib im URL-Feld die vollständige URL deines Netzwerks ein, einschließlich des 
 
 Klicke auf die Schaltfläche **Yes, Continue**, um mit dem nächsten Schritt fortzufahren. Wenn alles funktioniert, solltest du von deinem neu verbundenen Account begrüßt werden! Klicke auf **Continue**, um einen neuen Trigger zu erstellen.
 
-## So erstellst du einen neuen Trigger
+## So erstellst du einen neuen Trigger {#how-to-create-a-new-trigger}
 
 Jetzt, da dein Account verbunden ist, kannst du verfügbare Ereignisse sehen. Wählen wir für dieses Tutorial das Ereignis **payment_received**.
 
@@ -67,7 +67,7 @@ In dieser Phase testet Zapier, ob dein Zap **den spezifischen Payload für diese
 
 In unserem Tutorial wurde der Test **erfolgreich abgeschlossen** und gab Beispielinformationen zum Payload zurück. Diese Beispielinformationen sind hilfreich, um uns beim Erstellen von Actions zu leiten. Dein Trigger ist nun erstellt und bereit, mit anderen Anwendungen verbunden zu werden.
 
-## So erstellst du Actions
+## So erstellst du Actions {#how-to-create-actions}
 
 Actions verwenden Informationen aus anderen Triggern, um neue Einträge in deinem Netzwerk zu erstellen.
 
@@ -79,7 +79,7 @@ Im nächsten Schritt erstellst du entweder deine Authentifizierung, genau wie wi
 
 ![Auswahl der Authentifizierung für die Zapier-Action](/img/admin/webhooks-list.png)
 
-### Einrichten der Action
+### Einrichten der Action {#setting-up-the-action}
 
 Dies ist der **Hauptschritt der Action** und hier sind die Dinge etwas anders. Die erste Information, die du auswählst, ist das **Item**. Item ist das **Informationsmodell** deines Netzwerks, wie **Customers, Payments, Sites, Emails** und andere.
 

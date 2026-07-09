@@ -3,11 +3,11 @@ title: Kemahiran Estetika Sistem Reka Bentuk
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Estetika Sistem Reka Bentuk
+# Estetika Sistem Reka Bentuk {#design-system-aesthetics-skill}
 
 **Kemahiran Estetika Sistem Reka Bentuk** adalah pendekatan berpandu untuk memperhalusi identiti visual laman web anda. Ia membantu anda membuat keputusan yang konsisten mengenai tipografi, warna, jarak, dan token pergerakan yang mendefinisikan sistem reka bentuk anda.
 
-## Apakah Estetika Sistem Reka Bentuk?
+## Apakah Estetika Sistem Reka Bentuk? {#what-is-design-system-aesthetics}
 
 Estetika Sistem Reka Bentuk adalah kemahiran berstruktur yang merangkumi:
 
@@ -20,9 +20,9 @@ Estetika Sistem Reka Bentuk adalah kemahiran berstruktur yang merangkumi:
 
 Keputusan-keputusan ini direkodkan dalam fail `theme.json` tema anda, mewujudkan sistem visual yang padu.
 
-## Mengapa Menggunakan Estetika Sistem Reka Bentuk?
+## Mengapa Menggunakan Estetika Sistem Reka Bentuk? {#why-use-design-system-aesthetics}
 
-### Konsistensi
+### Konsistensi {#consistency}
 
 Sistem reka bentuk memastikan:
 
@@ -31,7 +31,7 @@ Sistem reka bentuk memastikan:
 - Jarak mengikut corak yang boleh diramal
 - Animasi terasa seragam
 
-### Kecekapan
+### Kecekapan {#efficiency}
 
 Daripada membuat keputusan reka bentuk satu halaman demi satu halaman, anda:
 
@@ -39,7 +39,7 @@ Daripada membuat keputusan reka bentuk satu halaman demi satu halaman, anda:
 - Mengaplikasikannya di mana-mana sahaja
 - Mengemas kini secara global dengan menukar satu nilai
 
-### Fleksibiliti
+### Fleksibiliti {#flexibility}
 
 Anda boleh:
 
@@ -47,9 +47,9 @@ Anda boleh:
 - Bereksperimen dengan estetika yang berbeza
 - Mengekalkan konsistensi jenama sambil berkembang
 
-## Memicu Kemahiran Estetika Sistem Reka Bentuk
+## Memicu Kemahiran Estetika Sistem Reka Bentuk {#triggering-the-design-system-aesthetics-skill}
 
-### Pengaktifan Manual
+### Pengaktifan Manual {#manual-activation}
 
 Anda boleh memulakan kemahiran ini pada bila-bila masa:
 
@@ -69,7 +69,7 @@ atau
 "Pandu saya melalui keputusan sistem reka bentuk"
 ```
 
-### Cadangan Automatik
+### Cadangan Automatik {#automatic-suggestions}
 
 Agen mungkin mencadangkan penggunaan kemahiran ini apabila anda:
 
@@ -78,9 +78,9 @@ Agen mungkin mencadangkan penggunaan kemahiran ini apabila anda:
 - Ingin meningkatkan konsistensi visual
 - Bersedia untuk melancarkan laman web anda
 
-## Proses Estetika Sistem Reka Bentuk
+## Proses Estetika Sistem Reka Bentuk {#the-design-system-aesthetics-process}
 
-### Langkah 1: Tipografi
+### Langkah 1: Tipografi {#step-1-typography}
 
 Agen akan bertanya tentang pilihan fon anda:
 
@@ -110,7 +110,7 @@ Agen kemudian akan menentukan:
 - **Skala berat**: Berat fon (regular, medium, bold, dsb.)
 - **Ketinggian baris**: Jarak antara baris untuk kebolehbacaan
 
-### Langkah 2: Palet Warna
+### Langkah 2: Palet Warna {#step-2-color-palette}
 
 ```
 Mari kita tentukan palet warna anda.
@@ -140,7 +140,7 @@ Agen akan mencipta palet lengkap termasuk:
 - Warna semantik (kejayaan, amaran, ralat)
 - Keadaan hover dan aktif
 
-### Langkah 3: Jarak
+### Langkah 3: Jarak {#step-3-spacing}
 
 ```
 Berapa banyak ruang bernafas yang anda mahukan?
@@ -162,7 +162,7 @@ Agen akan menentukan token jarak:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Nilai spesifik untuk padding, margin, gap
 
-### Langkah 4: Sempadan dan Bayangan
+### Langkah 4: Sempadan dan Bayangan {#step-4-borders-and-shadows}
 
 ```
 Kedalaman dan definisi visual:
@@ -185,7 +185,7 @@ Agen akan mencipta:
 - Token bayangan untuk tahap elevasi
 - Token lebar sempadan
 
-### Langkah 5: Pergerakan dan Animasi
+### Langkah 5: Pergerakan dan Animasi {#step-5-motion-and-animation}
 
 ```
 Bagaimana laman web anda patut terasa apabila interaktif?
@@ -207,9 +207,9 @@ Agen akan menentukan:
 - Fungsi easing (ease-in, ease-out, ease-in-out)
 - Keyframe animasi untuk interaksi biasa
 
-## Mengaplikasikan Estetika Sistem Reka Bentuk
+## Mengaplikasikan Estetika Sistem Reka Bentuk {#applying-design-system-aesthetics}
 
-### Aplikasi Automatik
+### Aplikasi Automatik {#automatic-application}
 
 Selepas anda melengkapkan kemahiran ini, agen:
 
@@ -218,7 +218,7 @@ Selepas anda melengkapkan kemahiran ini, agen:
 3. Menjana semula gaya blok agar sepadan dengan sistem baharu
 4. Mengaktifkan tema yang dikemas kini
 
-### Aplikasi Manual
+### Aplikasi Manual {#manual-application}
 
 Anda juga boleh menyunting `theme.json` secara langsung:
 
@@ -257,9 +257,9 @@ Anda juga boleh menyunting `theme.json` secara langsung:
 }
 ```
 
-## Melihat Sistem Reka Bentuk Anda
+## Melihat Sistem Reka Bentuk Anda {#viewing-your-design-system}
 
-### Tanya Agen
+### Tanya Agen {#ask-the-agent}
 
 ```
 "Tunjukkan sistem reka bentuk saya"
@@ -273,13 +273,13 @@ atau
 
 Agen akan memaparkan tipografi, warna, jarak, dan token lain anda.
 
-### Lihat theme.json
+### Lihat theme.json {#view-themejson}
 
 Buka `/wp-content/themes/[theme-name]/theme.json` dalam editor teks untuk melihat definisi token mentah.
 
-## Mengemas Kini Sistem Reka Bentuk Anda
+## Mengemas Kini Sistem Reka Bentuk Anda {#updating-your-design-system}
 
-### Kemas Kini Pantas
+### Kemas Kini Pantas {#quick-updates}
 
 Minta agen untuk perubahan tertentu:
 
@@ -299,7 +299,7 @@ atau
 "Tukar fon tajuk kepada serif"
 ```
 
-### Reka Bentuk Semula Penuh
+### Reka Bentuk Semula Penuh {#full-redesign}
 
 Jalankan semula kemahiran Estetika Sistem Reka Bentuk:
 
@@ -309,7 +309,7 @@ Jalankan semula kemahiran Estetika Sistem Reka Bentuk:
 
 Ini akan memandu anda melalui semua keputusan sekali lagi, bermula dengan nilai semasa anda.
 
-### Kemas Kini Separuh
+### Kemas Kini Separuh {#partial-updates}
 
 Kemas kini aspek tertentu:
 
@@ -317,15 +317,15 @@ Kemas kini aspek tertentu:
 "Hanya kemas kini palet warna, kekalkan yang lain"
 ```
 
-## Amalan Terbaik Sistem Reka Bentuk
+## Amalan Terbaik Sistem Reka Bentuk {#design-system-best-practices}
 
-### Konsistensi
+### Konsistensi {#consistency-1}
 
 - Gunakan token yang sama di mana-mana sahaja
 - Jangan cipta warna atau saiz sekali sahaja
 - Rujuk token berbanding kod nilai keras (hardcoding)
 
-### Penamaan
+### Penamaan {#naming}
 
 Gunakan nama yang jelas dan semantik:
 
@@ -335,7 +335,7 @@ Gunakan nama yang jelas dan semantik:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Kebolehskalaan
+### Kebolehskalaan {#scalability}
 
 Reka sistem anda agar boleh berkembang:
 
@@ -343,7 +343,7 @@ Reka sistem anda agar boleh berkembang:
 - Cipta skala (xs, sm, md, lg, xl) berbanding nilai sewenang-wenang
 - Rancang untuk penambahan masa hadapan
 
-### Dokumentasi
+### Dokumentasi {#documentation}
 
 Dokumentasikan sistem reka bentuk anda:
 
@@ -351,9 +351,9 @@ Dokumentasikan sistem reka bentuk anda:
 - Bila untuk menggunakan setiap token
 - Pengecualian dan kes tepi
 
-## Corak Sistem Reka Bentuk Biasa
+## Corak Sistem Reka Bentuk Biasa {#common-design-system-patterns}
 
-### Minimalis Moden
+### Minimalis Moden {#modern-minimalist}
 
 - Tipografi sans-serif (Inter, Helvetica)
 - Palet warna terhad (2-3 warna)
@@ -361,7 +361,7 @@ Dokumentasikan sistem reka bentuk anda:
 - Bayangan halus
 - Animasi yang lancar dan pantas
 
-### Hangat dan Mesra
+### Hangat dan Mesra {#warm-and-friendly}
 
 - Campuran serif dan sans-serif
 - Palet warna hangat (jingga, kelabu hangat)
@@ -369,7 +369,7 @@ Dokumentasikan sistem reka bentuk anda:
 - Bayangan lembut
 - Animasi yang ceria
 
-### Korporat Profesional
+### Korporat Profesional {#professional-corporate}
 
 - Sans-serif yang bersih (Roboto, Open Sans)
 - Palet neutral dengan warna aksen
@@ -377,7 +377,7 @@ Dokumentasikan sistem reka bentuk anda:
 - Bayangan minimal
 - Transisi halus
 
-### Kreatif dan Berani
+### Kreatif dan Berani {#creative-and-bold}
 
 - Tipografi yang tersendiri
 - Palet warna yang berani
@@ -385,7 +385,7 @@ Dokumentasikan sistem reka bentuk anda:
 - Bayangan yang kuat
 - Animasi yang ketara
 
-## Penyelesaian Masalah
+## Penyelesaian Masalah {#troubleshooting}
 
 **Perubahan sistem reka bentuk saya tidak dipaparkan**
 - Kosongkan cache pelayar anda
@@ -403,7 +403,7 @@ Dokumentasikan sistem reka bentuk anda:
 - Sunting secara manual `theme.json` kepada nilai sebelumnya
 - Jalankan semula kemahiran dengan pilihan yang berbeza
 
-## Langkah Seterusnya
+## Langkah Seterusnya {#next-steps}
 
 Selepas menentukan sistem reka bentuk anda:
 

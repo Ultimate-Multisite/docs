@@ -3,11 +3,11 @@ title: Seadete viide
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Seadete viide
+# Seadete viide {#settings-reference}
 
 See leht jälgib seadeid, mis mõjutavad igapäevast haldust ja hiljutisi käitumismuudatusi Ultimate Multisite’is.
 
-## Muud valikud
+## Muud valikud {#other-options}
 
 Ala **Muud valikud** kuvatakse jaotises **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Ala **Muud valikud** kuvatakse jaotises **Ultimate Multisite > Settings > Login 
 |---|---|
 | **Luba Jumper** | Kuvab haldusalas Jumperi kiirnavigeerimise tööriista. Kasuta seda, et liikuda otse Ultimate Multisite’i vaadetele, võrgustiku objektidele ja toetatud haldussihtkohtadesse. Keela see, kui sa ei soovi seda otseteed nähtavana hoida. |
 
-## Vigadest teatamine ja telemeetria
+## Vigadest teatamine ja telemeetria {#error-reporting-and-telemetry}
 
 Varasem vigadest teatamise nõusoleku seade on seadete lehelt eemaldatud. Anonüümne telemeetria on keelatud ja selle lubamiseks puudub UI lüliti.
 
 Kui haldad seadete lehe jaoks sisemisi juhendeid või ekraanipilte, eemalda viited vanale vigadest teatamise nõusoleku väljale, et administraatorid ei otsiks seadet, mida enam ei ole.
 
-## Impordi/ekspordi seaded
+## Impordi/ekspordi seaded {#importexport-settings}
 
 Seadete vahekaart **Import/Export** kirjeldab, milliseid seadeid see juhib, ja lingib otse jaotisesse **Ultimate Multisite > Site Export** saidi- ja võrgustikuarhiivide jaoks. Kasuta seadete vahekaarti impordi/ekspordi konfiguratsiooni jaoks, kasuta **Tools > Export & Import** ühe saidi ekspordi/impordi töövoo jaoks ning kasuta Site Export tööriista, kui vajad täielikku Network Export arhiivi.
 
-## Domain Seller HostAfrica saldo hoiatus
+## Domain Seller HostAfrica saldo hoiatus {#domain-seller-hostafrica-balance-warning}
 
 Kui Domain Seller addon on ühendatud HostAfricaga, näevad võrgustiku administraatorid nüüd suletavat madala saldo hoiatust, kui edasimüüja konto saldo on usaldusväärseks domeenide registreerimise või uuendamise töötlemiseks liiga madal.
 
 Käsitle seda teadet operatiivhoiatusena: täienda HostAfrica edasimüüja saldot enne uute tasuliste domeeniregistreeringute vastuvõtmist, seejärel naase Domain Selleri seadete või domeenide jälgimise vaatele, et kinnitada, et registreerimised ja uuendamised saavad tavapäraselt jätkuda.
 
-## AI teenusepakkuja ühendaja seaded
+## AI teenusepakkuja ühendaja seaded {#ai-provider-connector-settings}
 
 AI teenusepakkuja ühendaja seaded kuvavad nüüd ainult toetatud OAuthi kontokogumeid:
 

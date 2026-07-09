@@ -3,11 +3,11 @@ title: Pembangun Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 ngeniake **Plugin Builder & Sandbox System**, sing ngidini asisten AI kanggo nggawe, ngaktifake, lan ngelola plugin WordPress ing jaringanmu — kabeh liwat lingkungan sandbox sing aman lan terisolasi.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Plugin Builder ngidini asisten AI nulis plugin WordPress khusus miturut permintaan basa alami (natural language). Plugin sing digawe bakal ditimbang, disimpan, lan diaktifake ing lapisan sandbox sadurunge duwe pengaruh apa wae marang fungsi situs langsung.
 
@@ -17,7 +17,7 @@ Conto panggunaane yaiku:
 - Prototyping fitur sing mbutuh WordPress hooks utawa custom post types.
 - Nggawe skrip otomatisasi sing durasi cendhek kanggo operasi massal (batch operations).
 
-## Nggawe Plugin liwat AI
+## Nggawe Plugin liwat AI {#generating-a-plugin-via-ai}
 
 Kanggo nggawe plugin, buka antarmuka obrolan Gratis AI Agent lan jelasna apa sing kok butuh. Contone:
 
@@ -32,7 +32,7 @@ AI bakal:
 
 Sampeyan bisa ngresiki hasil kasebut kanthi tindak lanjut ing utas obrolan sing padha sadurunge diaktifake.
 
-## Aktivasi Sandbox
+## Aktivasi Sandbox {#sandbox-activation}
 
 Ngaktifake plugin sing digawe ing sandbox iku beda karo ngaktifake ing jaringan langsung (live network). Sandbox kuwi:
 
@@ -48,7 +48,7 @@ Kanggo ngaktifake plugin ing sandbox, klik tombol **Activate in Sandbox** ing ba
 
 Pesan status bakal ngasih tau apakah aktivasi berhasil utawa gagal. Yen gagal, log kesalahane bakal ditampilake nang thread obrolan.
 
-## Ngelola Plugin sing Dibuat Otomatis (Generated Plugins)
+## Ngelola Plugin sing Dibuat Otomatis (Generated Plugins) {#managing-generated-plugins}
 
 Plugin sing wis digawe otomatis bakal ana nang **Gratis AI Agent → Plugin Builder → Manage Plugins**. Saka layar iki sampeyan bisa:
 
@@ -64,7 +64,7 @@ Plugin sing wis digawe otomatis bakal ana nang **Gratis AI Agent → Plugin Buil
 **Install on network** bakal nggolekake plugin sing digawe otomatis menyang WordPress multisite aktifmu. Cek dhisik kode plugin sadurunge lanjut. Gratis AI Agent bakal njaluk konfirmasi sadurunge instalasi langsung.
 :::
 
-## Nggolekake Plugin Sing Dibuat Otomatis Nang Jaringan (Network)
+## Nggolekake Plugin Sing Dibuat Otomatis Nang Jaringan (Network) {#installing-a-generated-plugin-on-the-network}
 
 Yen sampeyan wis marem karo plugin sing ana nang sandbox, sampeyan bisa nggolekake menyang jaringan aktif:
 
@@ -78,7 +78,7 @@ Alternatifé, sampeyan bisa nggunakake slash command nang antarmuka obrolan:
 /install-plugin <plugin-slug>
 ```
 
-## Panyegaran Plugin (Plugin Updates)
+## Panyegaran Plugin (Plugin Updates) {#plugin-updates}
 
 Kanggo ngupdate plugin sing digawe otomatis, deskripsikake owahanane marang asisten AI ing obrolan anyar:
 
@@ -86,7 +86,7 @@ Kanggo ngupdate plugin sing digawe otomatis, deskripsikake owahanane marang asis
 
 AI bakal nggawe versi anyar, sing bakal muncul nang sandbox bareng karo versi sing wis ana. Sampeyan bisa delok diff-e lan konfirmasi sadurunge update diterapkan.
 
-## Integrasi HookScanner
+## Integrasi HookScanner {#hookscanner-integration}
 
 Plugin Builder nggunakake **HookScanner** sing wis terintegrasi kanggo nganalisis hook lan filter sing diregistrasi dening saben plugin sing digawe. Hasil saka HookScanner bakal ditunjuka ing balesan obrolan lan kalebu:
 
@@ -96,7 +96,7 @@ Plugin Builder nggunakake **HookScanner** sing wis terintegrasi kanggo nganalisi
 
 Iki mbantu sampeyan mangerteni tumindak utawa perilaku plugin sadurunge diaktifake.
 
-## Pertimbangan Keamanan
+## Pertimbangan Keamanan {#security-considerations}
 
 - Plugin sing digawe disimpan terpisah saka plugin sing dipasang manual lan ora bisa diakses liwat layar manajemen plugin WordPress standar nganti sampeyan eksplisit nggawe instalasi ing jaringan.
 - Sandbox nggunakake validasi jalur kanggo mencegah *directory traversal* nalika nulis file plugin.

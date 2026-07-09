@@ -3,7 +3,7 @@ title: ဘာသာစကား ရွေးချယ်မှု
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# ဘာသာစကား ရွေးချယ်ရေး
+# ဘာသာစကား ရွေးချယ်ရေး {#language-selector}
 
 ဤအင်္ဂါရပ်ကို **Language Selector** addon မှ ပံ့ပိုးပေးပါသည်။
 

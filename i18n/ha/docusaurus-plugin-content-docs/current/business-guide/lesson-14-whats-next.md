@@ -3,15 +3,15 @@ title: 'Darasi na 14: Me ke zuwa gaba'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Darasi na 14: Me Zai Biyo Baya
+# Darasi na 14: Me Zai Biyo Baya {#lesson-14-what-comes-next}
 
 Kun gina wani dandalin gidan yanar gizo na niche daga tushe. FitSite yana aiki, yana hidimtawa dakunan motsa jiki, kuma yana samar da kudaden shiga masu maimaituwa. Wannan darasi na ƙarshe yana duba inda za a dosa daga nan.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 FitSite kasuwanci ne mai gudana tare da abokan ciniki, ayyuka, da hanyar girma. Yanzu muna tunani game da abin da zai biyo baya.
 
-## Cikakken FitSite Network
+## Cikakken FitSite Network {#the-complete-fitsite-network}
 
 Ga duk abin da muka gina a cikin darussa 14:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Zabi na 1: Shiga Zurfi a Cikin Niche Dinku
+## Zabi na 1: Shiga Zurfi a Cikin Niche Dinku {#option-1-go-deeper-in-your-niche}
 
 Kafin faɗaɗawa zuwa sabbin niche, yi la’akari da zurfafa a fannin motsa jiki:
 
-### Ƙananan Niche
+### Ƙananan Niche {#sub-niches}
 
 - **Dakunan yoga** -- templates na musamman tare da fasalolin tunani, hutu, da bita
 - **Gidajen CrossFit** -- bin diddigin WOD, sakamakon gasa, fasalolin al’umma
@@ -59,7 +59,7 @@ Kafin faɗaɗawa zuwa sabbin niche, yi la’akari da zurfafa a fannin motsa jiki
 
 Kowane ƙaramin niche na iya samun templates nasa kuma mai yiwuwa brand nasa, duk suna gudana a kan Ultimate Multisite network guda ɗaya.
 
-### Fasalolin Premium
+### Fasalolin Premium {#premium-features}
 
 Gina fasaloli da dakunan motsa jiki za su biya ƙarin kuɗi a kansu:
 
@@ -68,14 +68,14 @@ Gina fasaloli da dakunan motsa jiki za su biya ƙarin kuɗi a kansu:
 - **Templates na blog na fitness** -- tsarukan abun ciki da aka riga aka gina don tallan abun ciki na fitness
 - **Haɗin social media** -- aika jadawalin azuzuwa da sabuntawa kai tsaye
 
-### Faɗaɗawar Yanki
+### Faɗaɗawar Yanki {#geographic-expansion}
 
 Idan kun fara a cikin gida, faɗaɗa zuwa:
 
 - Wasu birane a ƙasarku
 - Wasu ƙasashe (yi amfani da Ultimate Multisite's [fasalolin fassara](/user-guide/localization/translating) don tallafa wa harsuna da yawa)
 
-## Zabi na 2: Faɗaɗa zuwa Niche Masu Kusa
+## Zabi na 2: Faɗaɗa zuwa Niche Masu Kusa {#option-2-expand-to-adjacent-niches}
 
 Tsarin da kuka bi don dakunan motsa jiki yana aiki ga kowane niche. Niche na biyu ya fi sauƙi saboda kun riga kuna da:
 
@@ -83,7 +83,7 @@ Tsarin da kuka bi don dakunan motsa jiki yana aiki ga kowane niche. Niche na biy
 - Ƙwarewar aiki
 - Tsarin aiki da aka tabbatar
 
-### Niche Masu Kusa da Fitness
+### Niche Masu Kusa da Fitness {#adjacent-niches-to-fitness}
 
 - **Lafiya da spa** -- masu tausa, day spas, cibiyoyin lafiya
 - **Kungiyoyin wasanni** -- ƙungiyoyin wasanni na masu sha’awa, lig-lig, kungiyoyin nishaɗi
@@ -91,7 +91,7 @@ Tsarin da kuka bi don dakunan motsa jiki yana aiki ga kowane niche. Niche na biy
 
 Waɗannan suna da haɗin masu sauraro da fitness, don haka tallace-tallacenku da haɗin gwiwarku na iya ci gaba aiki.
 
-### Sabbin Niche Gaba Ɗaya
+### Sabbin Niche Gaba Ɗaya {#completely-new-niches}
 
 Yi amfani da tsarin daga Darasi na 2 don tantance kowane niche:
 
@@ -108,7 +108,7 @@ Kowane sabon niche yana buƙatar:
 
 Infrastructure na dandalin, billing, da hanyoyin aiki suna kasancewa iri ɗaya.
 
-## Zabi na 3: Gina Dandalin Dandamali
+## Zabi na 3: Gina Dandalin Dandamali {#option-3-build-a-platform-of-platforms}
 
 A matakin girma, za ku iya gudanar da brands na niche da yawa a kan Ultimate Multisite network guda ɗaya:
 
@@ -118,11 +118,11 @@ A matakin girma, za ku iya gudanar da brands na niche da yawa a kan Ultimate Mul
 
 Kowane brand yana da templates, plans, da tallace-tallacensa, amma suna raba infrastructure, billing, da hanyoyin aiki. A nan ne tattalin arzikin Ultimate Multisite yake zama mai ƙarfi -- dandali ɗaya, fannoni da yawa.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Don cikakkiyar rabuwa tsakanin niche, yi la’akari da [Multi-Network addon](/addons/multinetwork) wanda ke ba ku damar gudanar da WordPress networks da yawa daga installation guda ɗaya.
 
-## Zabi na 4: Sayar da Kasuwancin
+## Zabi na 4: Sayar da Kasuwancin {#option-4-sell-the-business}
 
 Dandalin gidan yanar gizo na niche da ke da kudaden shiga masu maimaituwa, ƙarancin churn, da matsayi bayyananne a kasuwa kadara ce mai daraja. Kasuwancin SaaS yawanci suna sayarwa a kan 3-5x kudaden shiga na shekara.
 
@@ -134,7 +134,7 @@ FitSite mai abokan ciniki 200 a $89 ARPU:
 
 Wannan ba sakamako ne da aka tabbatar ba, amma yana da yiwuwa ga dandalin niche da ake gudanarwa da kyau.
 
-## Abin da Kuka Koya
+## Abin da Kuka Koya {#what-you-have-learned}
 
 Wannan kwas ya koya muku tsari da za a iya maimaitawa:
 
@@ -150,7 +150,7 @@ Wannan kwas ya koya muku tsari da za a iya maimaitawa:
 
 Niche shi ne dabarar. Dandalin shi ne kayan aiki. Ultimate Multisite yana sa kayan aikin ya yiwu. Fahimtarku game da niche tana sa shi ya zama mai daraja.
 
-## Fara Gini
+## Fara Gini {#start-building}
 
 Idan ka bi tare da FitSite, kana da dandali mai aiki. Idan ka karanta don nemo naka fanni na musamman, koma zuwa [Darasi na 2: Zaɓar Fanninka na Musamman](lesson-2-picking-your-niche) sannan ka fara tsarin don fannin da ka zaɓa.
 

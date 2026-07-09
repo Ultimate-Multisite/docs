@@ -3,15 +3,15 @@ title: 'Aralin 11: Paghahanap ng mga Kustomer'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Aralin 11: Paghahanap ng mga Customer
+# Aralin 11: Paghahanap ng mga Customer {#lesson-11-finding-customers}
 
 Ang mahusay na platform na walang mga customer ay libangan lamang. Tinutalakay ng araling ito kung paano makakuha ng mga customer sa isang niche vertical -- mga estratehiyang gumagana partikular dahil nakatuon ka sa isang industriya.
 
-## Kung Saan Tayo Huminto
+## Kung Saan Tayo Huminto {#where-we-left-off}
 
 Live na ang FitSite. Ngayon kailangan nating mahanap ito ng mga may-ari ng fitness studio at mag-sign up sila.
 
-## Bakit Iba ang Pagkuha ng Customer sa Niche
+## Bakit Iba ang Pagkuha ng Customer sa Niche {#why-niche-acquisition-is-different}
 
 Kapag nagbebenta ka sa lahat, nakikipagkompetensya ka para sa atensyon sa isang maingay na merkado. Kapag nagbebenta ka sa isang niche, mayroon kang mga bentahe:
 
@@ -19,17 +19,17 @@ Kapag nagbebenta ka sa lahat, nakikipagkompetensya ka para sa atensyon sa isang 
 - **Agad tumatagos ang iyong mensahe** -- pinapahinto ng "mga website para sa mga fitness studio" ang isang may-ari ng gym habang nag-i-scroll
 - **Nagpapatong-patong ang mga referral** -- kilala ng mga may-ari ng fitness studio ang iba pang mga may-ari ng fitness studio
 
-## Channel 1: Direktang Outreach
+## Channel 1: Direktang Outreach {#channel-1-direct-outreach}
 
 Ang pinakamabilis na daan sa iyong mga unang customer ay direkta at personal na outreach.
 
-### Maghanap ng mga Prospect
+### Maghanap ng mga Prospect {#find-prospects}
 
 - Maghanap sa Google Maps ng mga fitness studio, gym, at personal trainer sa iyong lugar
 - Bisitahin ang kanilang kasalukuyang mga website (o itala na wala silang ganito)
 - Kolektahin ang contact information mula sa kanilang mga profile sa Google Business o social media
 
-### Suriin ang Kanilang Kasalukuyang Sitwasyon
+### Suriin ang Kanilang Kasalukuyang Sitwasyon {#evaluate-their-current-situation}
 
 Para sa bawat prospect, itala:
 
@@ -37,7 +37,7 @@ Para sa bawat prospect, itala:
 - **Hindi magandang website**: Malakas na prospect -- ipakita sa kanila kung ano ang hitsura ng mas magandang opsyon
 - **Magandang website**: Mahinang prospect -- nalutas na nila ang problemang ito
 
-### Makipag-ugnayan
+### Makipag-ugnayan {#make-contact}
 
 Magpadala ng personalized na email o mensahe:
 
@@ -48,7 +48,7 @@ Magpadala ng personalized na email o mensahe:
 
 Huwag magpadala ng mass emails. Ang personalized na outreach sa 20 prospect na mahusay ang pagkaka-research ay mas mahusay ang magiging resulta kaysa sa isang generic blast sa 2,000.
 
-## Channel 2: Mga Niche Community
+## Channel 2: Mga Niche Community {#channel-2-niche-communities}
 
 Nagtitipon ang mga may-ari ng fitness studio sa mga partikular na lugar online:
 
@@ -57,7 +57,7 @@ Nagtitipon ang mga may-ari ng fitness studio sa mga partikular na lugar online:
 - **Mga industry forum** at discussion board
 - **Mga LinkedIn group** para sa mga fitness professional
 
-### Paano Makilahok
+### Paano Makilahok {#how-to-participate}
 
 Huwag sumali at agad na i-pitch ang iyong produkto. Sa halip:
 
@@ -66,7 +66,7 @@ Huwag sumali at agad na i-pitch ang iyong produkto. Sa halip:
 3. **Magbahagi kapag may kaugnayan** -- kapag may nagtanong tungkol sa mga website, ibahagi ang iyong platform nang natural
 4. **Gumawa ng kapaki-pakinabang na content** -- magsulat ng mga post tungkol sa "ano ang bumubuo sa isang mahusay na website ng fitness studio" na natural na humahantong sa iyong platform
 
-## Channel 3: Content Marketing
+## Channel 3: Content Marketing {#channel-3-content-marketing}
 
 Gumawa ng content na hinahanap ng mga may-ari ng fitness studio:
 
@@ -77,7 +77,7 @@ Gumawa ng content na hinahanap ng mga may-ari ng fitness studio:
 
 I-publish ito sa iyong FitSite marketing blog. Sa paglipas ng panahon, nagra-rank ang content na ito sa mga search engine at nagdadala ng organic traffic mula sa mga taong aktibong naghahanap ng iniaalok mo.
 
-## Channel 4: Mga Partnership
+## Channel 4: Mga Partnership {#channel-4-partnerships}
 
 Makipag-partner sa mga negosyong nagsisilbi na sa mga fitness studio:
 
@@ -88,7 +88,7 @@ Makipag-partner sa mga negosyong nagsisilbi na sa mga fitness studio:
 
 Mag-alok ng referral commissions o reciprocal promotion. Makakatulong sa iyo ang [AffiliateWP addon](/addons/affiliatewp) na mag-set up ng formal referral program.
 
-## Channel 5: Mga Industry Event
+## Channel 5: Mga Industry Event {#channel-5-industry-events}
 
 Inilalagay ka ng mga event sa fitness industry sa harap ng daan-daang potensyal na customer:
 
@@ -99,7 +99,7 @@ Inilalagay ka ng mga event sa fitness industry sa harap ng daan-daang potensyal 
 
 Hindi mo kailangan ng malaking budget. Kahit ang pagdalo bilang participant at pakikipag-usap tungkol sa ginagawa mo ay maaaring makalikha ng mga lead.
 
-## Channel 6: Mga Showcase Site
+## Channel 6: Mga Showcase Site {#channel-6-showcase-sites}
 
 Ang iyong pinakamahusay na marketing ay ang mga site ng kasalukuyan mong mga customer. Sa pahintulot:
 
@@ -108,7 +108,7 @@ Ang iyong pinakamahusay na marketing ay ang mga site ng kasalukuyan mong mga cus
 - Humingi ng mga testimonial sa nasisiyahang mga customer
 - Hikayatin ang mga customer na banggitin ang FitSite kapag tinanong tungkol sa kanilang website
 
-## Pag-set Up ng Referral Program
+## Pag-set Up ng Referral Program {#setting-up-a-referral-program}
 
 Ang word of mouth ang iyong pinakamakapangyarihang channel sa isang niche. Gawin itong pormal:
 
@@ -116,7 +116,7 @@ Ang word of mouth ang iyong pinakamakapangyarihang channel sa isang niche. Gawin
 2. Mag-alok sa kasalukuyang mga customer ng reward para sa mga referral (isang buwang libre, account credit, atbp.)
 3. Gawing madali -- bigyan sila ng referral link at simpleng mensahe na maaari nilang i-forward
 
-## Pagsubaybay sa Kung Ano ang Gumagana
+## Pagsubaybay sa Kung Ano ang Gumagana {#tracking-what-works}
 
 Para sa bawat channel, subaybayan:
 
@@ -126,7 +126,7 @@ Para sa bawat channel, subaybayan:
 
 Mag-focus pa sa mga channel na gumagana. Ihinto ang mga channel na hindi.
 
-## Realistikong Inaasahan
+## Realistikong Inaasahan {#realistic-expectations}
 
 - **Buwan 1-3**: 5-20 customer, karamihan mula sa direktang outreach at mga community
 - **Buwan 4-6**: 20-50 customer, nagsisimulang makatulong ang content marketing
@@ -134,7 +134,7 @@ Mag-focus pa sa mga channel na gumagana. Ihinto ang mga channel na hindi.
 
 Nag-iiba ang mga numerong ito, ngunit pare-pareho ang pattern: ang mga unang customer ay nagmumula sa direktang pagsisikap, ang mga susunod na customer ay nagmumula sa nagpapatong-patong na epekto ng content, mga referral, at reputasyon.
 
-## Ang Binuo Natin sa Araling Ito
+## Ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Anim na channel sa acquisition** na iniangkop sa fitness niche
 - **Isang direktang proseso ng outreach** para makakuha ng mga unang customer

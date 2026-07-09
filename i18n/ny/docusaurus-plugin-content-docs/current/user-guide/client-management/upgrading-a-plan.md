@@ -3,7 +3,7 @@ title: Kupanga Mpemba
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Kufunga Plan (v2)
+# Kufunga Plan (v2) {#upgrading-a-plan-v2}
 
 _**KUFUNDA MUWENYE UMA: Iyi article iyi ifi Ultimate Multisite version 2.x.**_
 
@@ -39,7 +39,7 @@ Pambuyo pa kulimbikitsa (checkout) kukhala kukhala, zinthu zatsopano (new produc
 
 ##
 
-## Mwayi ndi Kukhala kwa Upgrades ndi Downgrades
+## Mwayi ndi Kukhala kwa Upgrades ndi Downgrades {#upgrade-and-downgrade-paths}
 
 Pa chinthu chomwe muli ndi, muli ndi tabu ya **Up & Downgrades**. Chinthu choyamba pa tabu imeneyi ndi chinthu chomwe chimakhala m'moyo wanu muli ndi chiyembekezo cha **Plan Group**.
 

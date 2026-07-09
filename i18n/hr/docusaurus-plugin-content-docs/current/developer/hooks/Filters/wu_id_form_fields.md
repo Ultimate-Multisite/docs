@@ -4,19 +4,19 @@ title: 'Filtar - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields
+# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
 
 Filtrira polja na obrascu. Obrazac je identificiran ID-jem u nazivu filtra.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Tip | Opis |
 |------|------|-------------|
 | $fields | `array` | Popis polja obrasca. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) u retku 148

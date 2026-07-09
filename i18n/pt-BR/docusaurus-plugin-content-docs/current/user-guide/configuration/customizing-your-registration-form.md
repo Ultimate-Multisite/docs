@@ -3,13 +3,13 @@ title: Personalizando seu formulário de cadastro
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizando seu formulário de cadastro
+# Personalizando seu formulário de cadastro {#customizing-your-registration-form}
 
 Para fazer sua rede parecer única em comparação com todos os outros SaaS criados na plataforma WordPress, Ultimate Multisite permite que você personalize suas páginas de cadastro e login com nosso recurso **Checkout Forms**.
 
 Embora sejam uma forma fácil e flexível de experimentar diferentes abordagens ao tentar converter novos clientes, eles são usados principalmente para criar formulários de cadastro personalizados. Este artigo tem como objetivo mostrar como você pode fazer isso.
 
-## Páginas de login e cadastro:
+## Páginas de login e cadastro: {#login-and-registration-pages}
 
 Após a instalação do Ultimate Multisite, ele cria automaticamente páginas personalizadas de login e cadastro no seu site principal. Você pode alterar essas páginas padrão a qualquer momento acessando sua página **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Agora, vamos ver outras opções que ainda são relevantes para o processo de lo
 
 E essas são todas as opções relacionadas a login e cadastro que você pode personalizar! Não se esqueça de salvar suas configurações depois de terminar de editá-las.
 
-## Usando vários formulários de cadastro:
+## Usando vários formulários de cadastro: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 oferece um editor de checkout form que permite criar quantos formulários você quiser, com diferentes campos, produtos em oferta etc.
 
@@ -69,7 +69,7 @@ Como alternativa, você pode editar ou duplicar os formulários que já possui c
 
 Se você selecionar etapa única ou múltiplas etapas, o checkout form já será pré-preenchido com as etapas básicas para que ele funcione. Então, se quiser, você pode adicionar etapas extras a ele.
 
-### Editando um Checkout Form:
+### Editando um Checkout Form: {#editing-a-checkout-form}
 
 Como mencionamos antes, você pode criar checkout forms para diferentes finalidades. Neste exemplo, trabalharemos em um formulário de cadastro.
 
@@ -131,11 +131,11 @@ Para obter o shortcode do seu formulário, clique em **Generate Shortcode** e co
 
 _**Observação:** Você precisará adicionar este shortcode à sua página de registro para que este formulário de checkout seja adicionado a ela._
 
-## Pré-selecionando produtos e modelos via parâmetros de URL:
+## Pré-selecionando produtos e modelos via parâmetros de URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Se você quiser criar tabelas de preços personalizadas para seus produtos e pré-selecionar no formulário de checkout o produto ou modelo que seu cliente escolhe na sua tabela de preços ou página de modelos, você pode usar parâmetros de URL para isso.
 
-### **Para planos:**
+### **Para planos:** {#for-plans}
 
 Vá para **Ultimate Multisite > Products > Select a plan**. Você deve ver o botão **Click to copy Shareable Link** no topo da página. Este é o link que você pode usar para pré-selecionar este plano específico no seu formulário de checkout.
 
@@ -143,7 +143,7 @@ Vá para **Ultimate Multisite > Products > Select a plan**. Você deve ver o bot
 
 Observe que este link compartilhável é válido apenas para **Planos**. Você não pode usar links compartilháveis para pacotes ou serviços.
 
-### Para modelos:
+### Para modelos: {#for-templates}
 
 Se você quiser pré-selecionar modelos de site no seu formulário de checkout, você pode usar o parâmetro: **?template_id=X** na URL da sua página de registro. O "X" precisa ser substituído pelo **número de ID do modelo de site**. Para obter esse número, vá para **Ultimate Multisite > Sites**.
 

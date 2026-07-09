@@ -3,11 +3,11 @@ title: ഡാഷ്ബോർഡ് അവലോകനം
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ഡാഷ്ബോർഡ് അവലോകനം
+# ഡാഷ്ബോർഡ് അവലോകനം {#dashboard-overview}
 
 Ultimate Multisite മെനുവിൽ ഒരു പ്രത്യേക **Dashboard** ഉണ്ട്, കൂടാതെ Network Dashboard-ലേക്ക് വിജറ്റുകളും ചേർക്കുന്നു. രണ്ട് സ്ഥലങ്ങളിലും നിങ്ങൾ കാണുന്നവ എന്തൊക്കെയെന്ന് ഈ ലേഖനം വിശദീകരിക്കുന്നു.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 **My Sites → Network Admin → Dashboard**-ൽ കാണുന്ന network-level dashboard-ലേക്ക് Ultimate Multisite ഉപയോഗപ്രദമായ വിജറ്റുകൾ ചേർക്കുന്നു.
 
@@ -35,7 +35,7 @@ Ultimate Multisite മെനുവിൽ ഒരു പ്രത്യേക **Da
 
 ![News വിജറ്റ്](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Network dashboard നെറ്റ്‌വർക്കിനെക്കുറിച്ചുള്ള സമഗ്രമായ വിവരങ്ങൾ അവതരിപ്പിക്കുമ്പോൾ, Ultimate Multisite dashboard (Ultimate Multisite മെനുവിന്റെ ഏറ്റവും മുകളിൽ) സേവനത്തെക്കുറിച്ചുള്ള വിവരങ്ങൾ അവതരിപ്പിക്കുന്നു.
 

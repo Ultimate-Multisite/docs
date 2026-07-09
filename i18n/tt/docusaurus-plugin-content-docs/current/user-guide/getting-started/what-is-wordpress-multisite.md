@@ -3,7 +3,7 @@ title: WordPress Multisite nədir?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite Nedir?
+# WordPress Multisite Nedir? {#what-is-wordpress-multisite}
 
 WordPress'in əsasında "Multisite" adlı bir funksiya var ki, bu funksiyanın kökleri 2010-cu ildə WordPress 3.0 başladığı zaman başlanıb. Ondan sonra yeni funksiyalar əlavə etmək və təhlükəsizliyi artırmaq məqsədi daşıyan bir neçə dəfə yenilənmişdir.
 
@@ -11,7 +11,7 @@ WordPress'in əsasında "Multisite" adlı bir funksiya var ki, bu funksiyanın k
 
 ##
 
-## WordPress Multisite Əslində Nədir?
+## WordPress Multisite Əslində Nədir? {#what-exactly-is-wordpress-multisite}
 
 Multisite, birdən çox saytın tək bir WordPress quraşdırılmasını paylaşmasına imkan verən WordPress funksiyasıdır. Multisite aktiv olduqda, orijinal WordPress saytı adətən **sayt şəbəkəsi** (network of sites) kimi tanınan şeyə dəstək vermək üçün dəyişdirilir.
 
@@ -23,7 +23,7 @@ Multisite-ın əsas üstünlüklərindən biri budur ki, müştəri saytlarını
 
 ##
 
-## Subdomain Yoxsa Subdirectory?
+## Subdomain Yoxsa Subdirectory? {#subdomain-or-subdirectory}
 
 WordPress multisite-ı işlətməyin iki rejimi var – və adi WordPress quraşdırmasını multisite-a çevirərkən birini seçməlisiniz:
 
@@ -49,7 +49,7 @@ Aynı zamanda, URL yapısı nedeniyle Google ve çoğu diğer arama motoru alt d
 
 На відміну від режиму піддиректорій (subdirectory mode), пошукові системи вважають сайти на піддоменах окремими вебсайтами, що означає, що контент, присутній на одному підсайті, абсолютно не впливає на SEO-продуктивність інших підсайтів.
 
-## Суперадміністратор (The Super Admin)
+## Суперадміністратор (The Super Admin) {#the-super-admin}
 
 У встановлення WordPress з одним сайтом ви можете додавати необмежену кількість користувачів і надавати цим користувачам різні ролі та права доступу.
 
@@ -63,7 +63,7 @@ Aynı zamanda, URL yapısı nedeniyle Google ve çoğu diğer arama motoru alt d
 
 _Примечание: как вы видите, приглашение кого-то в вашу сеть и предоставление ему статуса суперадминистратора дает этому пользователю полный контроль над вашей сетью. Например, другие суперадминистраторы могут даже убрать ваш статус суперадминистратора, фактически заблокировав вас от панели администратора вашей собственной сети. Чтобы позволить клиентам Ultimate Multisite иметь детальный контроль над тем, что могут делать дополнительные суперадминистраторы, у нас есть дополнение под названием Support Agents (Агенты поддержки). Это дополнение позволяет создать еще один тип пользователя – агента – с только теми разрешениями, которые ему могут понадобиться для выполнения задач в сети._
 
-## Что общее между сайтами и чем нет
+## Что общее между сайтами и чем нет {#what-is-shared-among-subsites-and-what-is-not}
 
 Как мы уже говорили, одно из ключевых преимуществ WordPress multisite заключается в том, что все подсайты делят одни и те же настройки, основные файлы, темы, плагины, файлы ядра WordPress и т.д.
 
@@ -75,7 +75,7 @@ _Примечание: как вы видите, приглашение кого
 
 - Большинство таблиц базы данных создаются для каждого подсайта, что означает, что записи (posts), комментарии, страницы, настройки и многое другое ограничены конкретным подсайтом.
 
-## Управление пользователями в WordPress Multisite
+## Управление пользователями в WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Одной деликатной темой в WordPress multisite является управление пользователями. Таблица пользователей WordPress — одна из немногих, которая делится между всеми подсайтами.
 
@@ -99,7 +99,7 @@ _Примечание: Мы понимаем, насколько это може
 
 Hatta foydalanıcılar jadvalı paylaşılsalar da, subsite administratorları və ya super admin tərəfindən bu foydalanıcılar subsite-lara əlavə edilə və çıxarılə bilər, həmçinin onlar fərqli subsite-larda fərqli istifadəçi rollarına malik ola bilərlər.
 
-## Performans nəzərdən keçirmələr
+## Performans nəzərdən keçirmələr {#performance-considerations}
 
 WordPress multisite, dəstəkləyə biləcəyi saytların miqdarı baxımından həqiqətən güclüdür. Bunu [WordPress.com](https://WordPress.com), Edublogs və Campuspress kimi platformaların hamısının multisite əsaslı olduğunu və hər birinin minlərlə saytı dəstəklədiyini bilmək olar.
 

@@ -4,20 +4,20 @@ title: 'Action - wu_{$this->model}_pre_delete'
 sidebar_label: 'wu_{$this->model}_pre_delete'
 _i18n_hash: 12d965c5aed740f08dba9a3d9cbfb2b5
 ---
-# Action: wu_\{$this->model\}_pre_delete
+# Action: wu_\{$this->model\}_pre_delete {#action-wuthis-modelpredelete}
 
 જ્યારે કોઈ ઓબ્જેક્ટ ડેટાબેઝમાં સ્ટોર (save) થઈ જાય, ત્યાર પછી આ એક્શન ચાલે છે.
 
-## પેરામીટર્સ
+## પેરામીટર્સ {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $this | `\Base_Model` | ઓબ્જેક્ટની ઇન્સ્ટન્સ. |
 
-### ક્યારથી ઉપલબ્ધ
+### ક્યારથી ઉપલબ્ધ {#since}
 
 - 2.0.0
-### સ્ત્રોત
+### સ્ત્રોત {#source}
 
 - Defined in [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L649) at line 649
 - Defined in [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1485) at line 1485

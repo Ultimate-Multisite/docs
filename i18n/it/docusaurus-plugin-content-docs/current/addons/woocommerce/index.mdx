@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce Integration {#woocommerce-integration}
 
 WooCommerce Integration funziona in modo molto simile al nostro Gateway manuale. Offre moltissima flessibilità ai tuoi utenti, consentendo loro di scegliere uno qualsiasi dei moduli di pagamento disponibili sulla tua installazione WooCommerce. Ed è semplice: una volta terminato il periodo di fatturazione dell’utente, la sottoscrizione dell’utente viene messa in sospeso. Allo stesso tempo, verrà creato un ordine sull’installazione WooCommerce del sito principale della rete. L’utente riceve quindi una fattura nella propria email, con un link per effettuare il pagamento. Una volta ricevuto il pagamento, la sottoscrizione viene rinnovata.
 
-## Funzionalità
+## Funzionalità {#features}
 
 - Integrazione semplice tra Ultimate Multisite e WooCommerce
 - Diversi metodi di pagamento disponibili
 - Fatturazione ricorrente automatizzata usando il core delle sottoscrizioni incluso, con miglioramenti opzionali del plugin WooCommerce Subscriptions
 - I totali del checkout includono le imposte di Ultimate Multisite come righe di commissione WooCommerce separate e non imponibili, così i clienti possono verificare gli importi delle imposte prima del pagamento
 
-## Documentazione
+## Documentazione {#documentation}
 
 **Configurazione di WooCommerce Integration**
 
 **Estendere le tue opzioni di pagamento con Ultimate Multisite: WooCommerce Integration**
 
-## Installazione
+## Installazione {#installation}
 
 1. Carica 'ultimate-multisite-woocommerce' nella directory '/wp-content/plugins/'
 2. Attiva il plugin tramite il menu 'Plugin' in WordPress
 3. Segui la procedura guidata passo dopo passo per configurare il plugin
 
-## Guida all’uso
+## Guida all’uso {#usage-guide}
 
 _**NOTA IMPORTANTE: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite.**_
 
@@ -40,7 +40,7 @@ Sappiamo che _Stripe_ e _PayPal_ non sono disponibili in alcuni paesi, cosa che 
 
 _WooCommerce_ è un plugin eCommerce molto popolare. Sviluppatori in tutto il mondo hanno creato add-on per integrare diversi gateway di pagamento. Abbiamo sfruttato questo per ampliare i gateway di pagamento che puoi usare nel sistema di fatturazione di Ultimate Multisite.
 
-## Configurazione
+## Configurazione {#setting-it-up}
 
 Per prima cosa, devi installare l’add-on WooCommerce Integration, che è **gratuito per gli utenti con licenza**. Per installarlo, fai clic su Ultimate Multisite nella tua dashboard da super admin e seleziona **Add-on**.
 
@@ -68,11 +68,11 @@ Una volta installato, vedrai un’opzione aggiuntiva nelle impostazioni dei paga
 
 Puoi configurare alcune impostazioni di base, come il nome visualizzato che apparirà nel front end e le istruzioni per guidare i tuoi utenti nel loro flusso di checkout. Poi puoi andare alle impostazioni _WooCommerce_ del tuo **sito principale** per abilitare e configurare il gateway di pagamento che preferisci usare.
 
-### Righe di commissione delle imposte nel checkout
+### Righe di commissione delle imposte nel checkout {#checkout-tax-fee-lines}
 
 Quando un checkout di Ultimate Multisite include imposte, l’integrazione aggiunge ogni importo di imposta di Ultimate Multisite al checkout WooCommerce come riga di commissione separata e non imponibile. Questo mantiene il totale delle imposte visibile prima del pagamento, evitando al tempo stesso che WooCommerce applichi di nuovo imposte sulla commissione dell’imposta.
 
-## Come gestire il pagamento
+## Come gestire il pagamento {#how-to-manage-the-payment}
 
 WooCommerce Integration funziona in modo molto simile al nostro **Gateway manuale**. Lo svantaggio è che ogni pagamento deve essere effettuato manualmente alla fine del periodo di fatturazione. Ecco come funziona il flusso:
 
@@ -82,13 +82,13 @@ WooCommerce Integration funziona in modo molto simile al nostro **Gateway manual
 
   * Una volta ricevuto il pagamento, l’abbonamento viene **rinnovato** , il pagamento viene registrato su Ultimate Multisite e l’ordine viene impostato come completato.
 
-### Alcune note importanti:
+### Alcune note importanti: {#some-important-notes}
 
   * La funzionalità predefinita di Ultimate Multisite funziona ancora con questa forma di integrazione. Ad esempio, **emettere rimborsi** dalla schermata **Gestione sottoscrizione** comunicherà con WooCommerce per emettere il rimborso usando il modulo di pagamento selezionato.
 
   * Ultimate Multisite: WooCommerce Integration si basa su WP-Cron per funzionare. Questo funziona molto bene nella maggior parte dei casi, ma se il sito ha poco traffico, il cron non viene sollecitato a controllare gli eventi pianificati e l’evento viene perso, il che può causare ritardi nell’esecuzione.
 
-## Plugin WooCommerce Subscriptions
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
 
 Avviare manualmente un pagamento ogni mese non è ideale per gli utenti finali, perché ci si aspetta che gli abbonamenti si rinnovino automaticamente a ogni ciclo di fatturazione. L’add-on WooCommerce Integration ora include il codice core degli abbonamenti, quindi i prodotti ricorrenti usano sempre gli abbonamenti per la fatturazione ricorrente.
 
@@ -100,7 +100,7 @@ E questo è tutto. I tuoi utenti finali non dovranno più effettuare manualmente
 
 Oltre alla creazione di un ordine sul tuo sito principale sotto _WooCommerce_, verrà creata anche una sottoscrizione per ciascun Account.
 
-### Comportamento di sospensione per rinnovo non riuscito
+### Comportamento di sospensione per rinnovo non riuscito {#failed-renewal-suspension-behavior}
 
 Per impostazione predefinita, le membership rimangono attive mentre WooCommerce Subscriptions elabora la sua pianificazione di nuovi tentativi per pagamenti non riusciti. Questo preserva la normale finestra di tolleranza di WooCommerce Subscriptions, in modo che un rinnovo recuperato possa riportare in sincronia la sottoscrizione e la membership senza interrompere prematuramente l’accesso.
 

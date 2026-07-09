@@ -3,13 +3,13 @@ title: Tulong sa Custom na Development
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Paano Kumuha ng Custom Development Help mula sa Codeable?
+# Paano Kumuha ng Custom Development Help mula sa Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Minsan, talagang kailangan natin ng magagandang customization para magawa natin ang ating network flows nang eksakto sa gusto natin. Kung ito ang hinahanap mo, inirerekomenda namin ang [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), isang lugar kung saan makakahanap ka ng mga bihasang developer na may kaalaman sa Ultimate Multisite.
 
 Ang [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ay isang platform na nagkokonekta sa mga customer sa mga kwalipikadong WordPress freelance developer, na kayang magtrabaho sa mga proyekto ng anumang laki. May masusing application process sila para matiyak na maka-match ka sa mga eksperto na partikular na kwalipikado para sa task na nasa isip mo.
 
-### Paano gumawa ng proyekto sa Codeable?
+### Paano gumawa ng proyekto sa Codeable? {#how-to-create-a-project-in-codeable}
 
 Una, pumunta sa [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) at i-click ang **Start a Project** button.
 

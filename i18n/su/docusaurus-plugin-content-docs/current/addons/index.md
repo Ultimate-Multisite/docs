@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Tambihan Ultimate Multisite
+# Tambihan Ultimate Multisite {#ultimate-multisite-addons}
 
 Tambihan ngalegaan Ultimate Multisite ku fitur jeung integrasi tambahan. Kalolobaan tambihan téh mayar sarta bisa dibeuli ti [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Pamasangan
+## Pamasangan {#installation}
 
 Tambihan bisa dipasang ku dua cara:
 
 1. **Ngaliwatan Kaca Tambihan** -- Buka kaca pangaturan tambihan situs anjeun dina admin WordPress
 2. **Undeuran Manual** -- Undeur ti [akun anjeun](https://ultimatemultisite.com/my-account/downloads/) jeung unggah ngaliwatan Plugins > Add New
 
-## Tambihan anu Sadia
+## Tambihan anu Sadia {#available-addons}
 
 | Tambihan | Pedaran |
 |-------|-------------|

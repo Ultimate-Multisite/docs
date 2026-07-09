@@ -3,13 +3,13 @@ title: Dhis Ganacsi Mareeg Gaar ah
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ku Dhis Ganacsi Website Suuq Gaar ah leh Ultimate Multisite
+# Ku Dhis Ganacsi Website Suuq Gaar ah leh Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Dadka badankood ee isku daya inay iibiyaan websites waxay qiime ahaan ula tartamaan Wix, Squarespace, iyo kumannaan freelancers ah. Way guuldarraystaan. Kuwa guuleysta waxay doortaan dhagaystayaal gaar ah, waxay dhisaan xal loogu talagalay dhagaystayaashaas, waxayna lacag ku qaataan qiimaha ay bixiyaan.
 
 Koorsadani waxay ku baraysaa sida saxda ah ee taas loo sameeyo adigoo adeegsanaya Ultimate Multisite.
 
-## Waxa Aad Dhisi Doonto
+## Waxa Aad Dhisi Doonto {#what-you-will-build}
 
 Inta lagu jiro koorsadan waxaad dhisi doontaa shabakad dhab ah oo shaqaynaysa oo la yiraahdo **FitSite** -- platform website ah oo si gaar ah loogu dhisay studios jimicsi, tababarayaal shakhsi ah, iyo milkiilayaasha gym-yada.
 
@@ -23,7 +23,7 @@ Casharka ugu dambeeya marka la gaaro, FitSite waxay noqon doontaa platform suuq 
 
 Waxaad raaci doontaa tallaabo tallaabo, dhammaadkana waxaad heli doontaa platform shaqaynaya iyo aqoonta aad ku celin karto habka niche kasta oo aad doorato.
 
-## Maxaa Loo Doortay Studios Jimicsi?
+## Maxaa Loo Doortay Studios Jimicsi? {#why-fitness-studios}
 
 Waxaan u baahnayn tusaale la taaban karo oo qof walba raaci karo. Studios jimicsi way shaqeeyaan sababtoo ah:
 
@@ -34,7 +34,7 @@ Waxaan u baahnayn tusaale la taaban karo oo qof walba raaci karo. Studios jimics
 
 Wax kasta oo aad barato markaad dhisayso FitSite waxay si toos ah ugu dabaqmayaan niche kasta oo aad doorato: maqaayado, wakiillo guryo, shirkado sharci, kaniisado, qandaraaslayaal xirfadeed, ama qayb kale oo kasta.
 
-## Qaab-dhismeedka Koorsada
+## Qaab-dhismeedka Koorsada {#course-structure}
 
 Cashar kasta wuxuu soo bandhigaa hal fikrad, wuxuu sharxayaa sababta ay muhiim u tahay, wuxuuna kugu hagayaa hirgelinteeda gudaha shabakadda FitSite. Cashar kasta wuxuu ku dhismaa kii ka horreeyay.
 
@@ -55,7 +55,7 @@ Cashar kasta wuxuu soo bandhigaa hal fikrad, wuxuu sharxayaa sababta ay muhiim u
 | [13. Kordhinta](lesson-13-growth) | Ka koritaanka macaamiisha ugu horreeya ilaa ganacsi dhab ah | Istaraatiijiyadda koritaanka iyo otomaatiga FitSite |
 | [14. Waxa Xiga](lesson-14-whats-next) | Ku fididda niches u dhow iyo fursado cusub | Khariidaddaada waddo ee ka dambaysa FitSite |
 
-## Shuruudaha Hore
+## Shuruudaha Hore {#prerequisites}
 
 - Rakibid WordPress Multisite ah (ama diyaar u ahaansho inaad mid dejiso)
 - Shati Ultimate Multisite oo firfircoon
@@ -63,6 +63,6 @@ Cashar kasta wuxuu soo bandhigaa hal fikrad, wuxuu sharxayaa sababta ay muhiim u
 
 Coding looma baahna. Haddii aadan hore u isticmaalin Ultimate Multisite, taasi dhib ma leh -- Casharka 3 wuxuu ka bilaabmaa rakibid cusub.
 
-## Diyaar Ma Tahay?
+## Diyaar Ma Tahay? {#ready}
 
 Ku bilow [Casharka 1: Sababta Niche u Guuleysto](lesson-1-why-niche).

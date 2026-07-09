@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Emails
+# Emails {#emails}
 
 Ultimate Multisite: Emails addon inobvumira varidzi venetwork kugadzira nekutarisira maakaundi eemail evatengi pamwe chete nemasaiti nema membership. Version 1.1.0 inowedzera kutarisira maakaundi eemail kunoonekwa nevatengi, webmail single sign-on, rutsigiro rweCyberPanel forwarder, uye kuvandudzwa kwekugadzira panguva yecheckout.
 
-## Zvinhu Zvikuru
+## Zvinhu Zvikuru {#key-features}
 
 * **Customer email account widget**: Vatengi vanogona kugadzira nekutarisira mailbox kubva papeji yavo yeaccount mushure mekunge vava neemail membership inoshanda.
 * **Webmail SSO uye magic links**: Vatengi vanogona kuvhura webmail zvakananga kubva papeji yeaccount nekusimbiswa kwekamwe-kudzvanya kana provider achitsigira izvi.
@@ -20,14 +20,14 @@ Ultimate Multisite: Emails addon inobvumira varidzi venetwork kugadzira nekutari
 * **CyberPanel forwarders**: Manetwork anotsigirwa neCyberPanel anogona kugadzira nekutarisira email forwarders sechikamu chekufamba kwebasa reemail.
 * **Provider-aware settings**: Peji yezvirongwa inosefa providers kuita integrations dzinoshanda uye dzakagadzirirwa kuitira kuti vatungamiri vaone chete sarudzo dzinoshandisika.
 
-## Zvinodiwa
+## Zvinodiwa {#requirements}
 
 * Ultimate Multisite 2.0.0 kana yepamusoro
 * Kuiswa kweWordPress Multisite
 * Kanenge imwe email provider integration yakagadzirirwa
 * Provider API credentials dzine mvumo yekugadzira mailbox, kuchinja mapassword, uye kuburitsa webmail access links pazvinotsigirwa
 
-## Kuiswa
+## Kuiswa {#installation}
 
 1. Isa mafaera eplugin ku `/wp-content/plugins/ultimate-multisite-emails`.
 2. Network activate addon kubva ku **Plugins** muWordPress network admin.
@@ -35,7 +35,7 @@ Ultimate Multisite: Emails addon inobvumira varidzi venetwork kugadzira nekutari
 4. Gonesa email provider integrations dzaunoda kuti vatengi vashandise.
 5. Sevha settings, wobva waedza kugadzira account nemutengi asiri weproduction kana staging site.
 
-## Mafambiro Anoita Kutengesa Email
+## Mafambiro Anoita Kutengesa Email {#how-the-email-seller-flow-works}
 
 Kutengesa email kune zvikamu zviviri zvakasiyana:
 
@@ -53,7 +53,7 @@ Izvi zvinoreva kuti kufamba kwakajairika kwemutengi ndeuku:
 5. Panel ye **Email Accounts** inooneka yeemail membership iyoyo inoshanda.
 6. Mutengi anodzvanya **Create Account**, anoisa chikamu chelocal chakadai se `info`, anogadzira password, uye addon inogadzira `info@their-domain.com` ku provider yakagadzirirwa.
 
-## Gadzira Email Product
+## Gadzira Email Product {#configure-an-email-product}
 
 Gadzira email product imwe chete yepakeji imwe neimwe yeemail yaunoda kutengesa kana kupa mahara. Kana uri mutsva pakugadzira product, tanga ne [Kugadzira Subscription Product Yako Yekutanga](../../user-guide/configuration/creating-your-first-subscription-product) wobva wadzoka pano kuzvirongwa zvakanangana neemail.
 
@@ -67,7 +67,7 @@ Gadzira email product imwe chete yepakeji imwe neimwe yeemail yaunoda kutengesa 
 
 Providers chete dzakagoneswa uye dzakagadzirirwa zvizere papeji ye **Integrations** ndidzo dzinooneka mu provider selector. Kana selector isina chinhu, gadzira uye uedze provider kutanga.
 
-## Wedzera Email kuCheckout
+## Wedzera Email kuCheckout {#add-email-to-checkout}
 
 Email products dzinowanzo kupihwa seadd-ons ku site plan. Ona [Checkout Forms](../../user-guide/configuration/checkout-forms) kuti uwane mafambiro akajairika echeckout editor.
 
@@ -79,7 +79,7 @@ Email products dzinowanzo kupihwa seadd-ons ku site plan. Ona [Checkout Forms](.
 
 Domain yeemail inotorwa kubva kudomain yesaiti yemutengi. Vatengi havapindi domain yeemail padanho reemail product.
 
-## Kutarisira Email muCustomer Account
+## Kutarisira Email muCustomer Account {#customer-account-email-management}
 
 Version 1.1.0 inowedzera email management widget kupeji yeaccount yemutengi. Ishandise kana vatengi vachifanira kuzvishandira voga kugadzira nekuchengetedza mailbox emasaiti avo.
 
@@ -94,7 +94,7 @@ Widget inoshandisa Ultimate Multisite account-page currents system, saka zviito 
 
 Kana mutengi asingawoni panel yeemail, tarisa kuti ane **active Email product membership**, kuti membership yacho yakabatanidzwa ku domain yesaiti, uye kuti product yacho ine provider akagadziriswa.
 
-## Kupa Mutengi Plan yeEmail Yemahara
+## Kupa Mutengi Plan yeEmail Yemahara {#giving-a-customer-a-free-email-plan}
 
 Kuti upe mutengi email usingamubhadharisi, tanga wapa **email entitlement**, wobva wagadzira kana kurega mutengi agadzire mailbox.
 
@@ -106,7 +106,7 @@ Sarudzo dzinokurudzirwa:
 
 Kana uchida kuti mutengi atungamirire mailbox ega kubva kuaccount page, iva nechokwadi chekuti ane active email membership ye domain. Provider mailbox yakagadzirwa nemaoko isina membership iyoyo inogona kuvapo, asi mutengi angasawona self-service email panel yayo.
 
-## Maakaundi Akagadzirwa neAdmin uye "Hapana Order Number"
+## Maakaundi Akagadzirwa neAdmin uye "Hapana Order Number" {#admin-created-accounts-and-no-order-number}
 
 Peji yeadmin ye **Email Accounts** inogadzira kana kugadzirisa provider mailbox. Haisi nhanho yekutanga pakutengesa kana kupa email plan.
 
@@ -122,7 +122,7 @@ Shandisa hurongwa hwematanho uhu pachinzvimbo:
 
 Kana uchingoda kugadzira provider mailbox yemutengi uye usingadi self-service account-page management, account yakagadzirwa neadmin inogona kukwana. Kana uchida kuti mutengi aione uye aitungamirire muUltimate Multisite, gadzirawo email membership.
 
-## Webmail SSO uye Magic-Link Login
+## Webmail SSO uye Magic-Link Login {#webmail-sso-and-magic-link-login}
 
 Webmail SSO inopa vatengi chiito chakananga che **Open webmail** kubva kuaccount page. Kana ichitsigirwa neprovider ari active, addon inokumbira access URL inorarama kwenguva pfupi uye inotungamirira mutengi muwebmail pasina kuvakumbira kukopa mailbox credentials.
 
@@ -134,7 +134,7 @@ Maitiro eprovider anogona kusiyana:
 
 Gonesa webmail access chete ku providers kwawakagadzirisira API credentials dzinodiwa. Kana chiito chisipo kune provider, tanga wasimbisa kuti provider ari active, akagadziriswa, uye anotsigira webmail login links.
 
-## Checkout Provisioning
+## Checkout Provisioning {#checkout-provisioning}
 
 Addon ino provision email **membership context** panguva ye checkout. Inorekodha provider, account limit, quota, uye site domain kuitira kuti vatengi vagadzire mazita e mailbox avo kubva kuaccount page mushure mekutenga.
 
@@ -148,15 +148,15 @@ Maitiro ekuburitsa anokurudzirwa:
 
 Kana provisioning ikakundikana, customer account ne membership zvinogona kuramba zviripo apo email membership kana provider mailbox ichida kuteverwa neadministrator. Tarisa Ultimate Multisite activity logs ne provider logs usati waedza zvakare.
 
-## CyberPanel Email Forwarders
+## CyberPanel Email Forwarders {#cyberpanel-email-forwarders}
 
 Kune ma network anotsigirwa neCyberPanel, version 1.1.0 inowedzera rutsigiro rweemail forwarder. Shandisa forwarders kana vatengi vachida addresses dzakadai se `info@customer-domain.test` kuti dzitumire mail kune imwe inbox pasina kugadzira mailbox yakazara.
 
 Usati wapa forwarders, simbisa kuti CyberPanel integration yakagadziriswa uye inosvikika. Ona gwaro re [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) kune host, username, password, uye package constants zvinodiwa.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.1.0 - Yakaburitswa musi wa 2026-05-05
+### Version 1.1.0 - Yakaburitswa musi wa 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Chitsva: Webmail SSO uye magic-link login — vatengi vanogona kuwana webmail zvakananga kubva muAccount yavo nekusimbisa kamwe chete.
 * Chitsva: Kushanda kwekuchinja password kwawedzerwa kuwidget yekutarisira email account.
@@ -170,28 +170,28 @@ Usati wapa forwarders, simbisa kuti CyberPanel integration yakagadziriswa uye in
 * Gadziriso: Spam yemalogi epa-request yabviswa pakutanga kweEmail_Account_Manager.
 * Yakavandudzwa: Peji reSettings ikozvino rinosefa kuratidza chete email providers vanoshanda uye vakagadziriswa.
 
-## Mibvunzo Inowanzo Bvunzwa
+## Mibvunzo Inowanzo Bvunzwa {#frequently-asked-questions}
 
-### Vatengi vanogona kugadzira email accounts dzavo pachavo here?
+### Vatengi vanogona kugadzira email accounts dzavo pachavo here? {#can-customers-create-their-own-email-accounts}
 
 Hongu. Kana mutengi aine email membership inoshanda yedomain uye product ichibvumira mamwe maaccount, vatengi vanogona kugadzira nekutarisira mailboxes avo kubva papeji yeAccount.
 
-### Provider wese anotsigira webmail SSO here?
+### Provider wese anotsigira webmail SSO here? {#does-every-provider-support-webmail-sso}
 
 Kwete. Rutsigiro rweSSO uye magic-link runoenderana neemail provider inoshanda. Providers vasina access-link API vachiri kukwanisa kutsigira kugadzirwa kwemailbox uye kuchinja mapassword.
 
-### Administrators vanogona kugadzira email accounts dzevatengi here?
+### Administrators vanogona kugadzira email accounts dzevatengi here? {#can-administrators-create-email-accounts-for-customers}
 
 Hongu. Administrators vanogona kugadzira email accounts kubva muadmin interface, kusanganisira kuseta password yekutanga pakugadzira account. Pakutarisira kwekuzvishandira kwemutengi, itaiwo shuwa kuti mutengi ane email membership inoshanda yedomain.
 
-### Ndingapa email account mahara here?
+### Ndingapa email account mahara here? {#can-i-give-an-email-account-away-for-free}
 
 Hongu. Gadzira Email product yemahara/ine mutengo zero uye uiwedzere seactive membership yemutengi, kana kuti rega mutengi apedze checkout ne100% discount. Mushure mekunge email membership yavapo, mutengi kana administrator anogona kugadzira mailbox chaiyo.
 
-### Sei kupa email account kuchikumbira order number?
+### Sei kupa email account kuchikumbira order number? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Membership field inotsvaga Ultimate Multisite membership iripo nereference/order number yayo. Kana mutengi asina kutenga Email product uye usina kugadzira email membership nemaoko, hapana email membership/order yekupa. Gadzira email membership kutanga, wozogadzira kana kupa mailbox.
 
-### Forwarders zvakafanana nemamailbox here?
+### Forwarders zvakafanana nemamailbox here? {#are-forwarders-the-same-as-mailboxes}
 
 Kwete. Mailbox inochengeta tsamba uye ine login credentials. Forwarder inotumira tsamba kune imwe address uye haipe inbox yakaparadzana.

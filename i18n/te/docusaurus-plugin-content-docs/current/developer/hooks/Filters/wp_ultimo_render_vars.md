@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filter: wp_ultimo_render_vars
+# Filter: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 ప్లగిన్ డెవలపర్‌లు రెండర్ కాంటెక్స్ట్‌కు అదనపు వేరియబుల్‌లను గ్లోబల్‌గా జోడించడానికి ఇది అనుమతిస్తుంది.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,11 +16,11 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | రెండర్ చేయవలసిన వ్యూ (view) పేరు. |
 | $default_view | `string` | ఫాల్‌బ్యాక్ వ్యూ (fallback_view) పేరు. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) లోని 31వ లైన్‌లో నిర్వచించబడింది.
 
-## Returns
+## Returns {#returns}

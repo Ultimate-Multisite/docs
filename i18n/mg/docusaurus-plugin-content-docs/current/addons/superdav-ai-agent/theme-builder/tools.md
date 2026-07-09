@@ -3,17 +3,17 @@ title: Fitaovana sy Fikirakirana
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Fitaovana sy Fanamboarana
+# Fitaovana sy Fanamboarana {#tools-and-configuration}
 
 Theme Builder dia mampiasa andiana fitaovana handinihana, hamolavolana, ary hananganana ny WordPress site-nao. Ao amin'ny version 1.16.0, **sd-ai-agent/site-scrape dia fitaovana Tier 1 ankehitriny**, ka azo ampiasaina amin'ny alàlan'ny default ao amin'ny Theme Builder. Superdav AI Agent v1.18.0 koa dia mampiditra fonosana Advanced mpiara-miasa zaraina misaraka ho an'ny workflow an'ny mpamorona itokisana; ireo fitaovana ireo dia tsy anisan'ny fonosana fototra WordPress.org ary tsy maintsy apetraka sy omena alalana misaraka.
 
-## Fitaovana Azo Ampiasaina
+## Fitaovana Azo Ampiasaina {#available-tools}
 
-### Fitaovana Tier 1 (Azo Ampiasaina Foana)
+### Fitaovana Tier 1 (Azo Ampiasaina Foana) {#tier-1-tools-always-available}
 
 Ny fitaovana Tier 1 dia azo ampiasaina amin'ny alàlan'ny default ao amin'ny Theme Builder tsy mila fanamboarana fanampiny.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Tanjona:** Mandinika tranonkala efa misy mba hakana aingam-panahy amin'ny famolavolana, firafitry ny votoaty, ary fiasana.
 
@@ -51,11 +51,11 @@ Diniho ny famolavolana an'ny example.com ary ampiasao ho aingam-panahy ho an'ny 
 - Sites be JavaScript dia mety ho voafetra ny famakafakana
 - Sites lehibe dia mety haharitra kokoa ny famakafakana
 
-### Fitaovana Tier 2 (Tsy voatery)
+### Fitaovana Tier 2 (Tsy voatery) {#tier-2-tools-optional}
 
 Ny fitaovana Tier 2 dia azo ampiasaina rehefa alefa mazava ao amin'ny settings an'ny Theme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
 Manome refy antsipiriany momba ny fahombiazan'ny asa:
 
@@ -65,7 +65,7 @@ Manome refy antsipiriany momba ny fahombiazan'ny asa:
 - Naoty accessibility
 - Naoty best practices
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
 Mamakafaka sy manolotra fanatsarana ho an'ny:
 
@@ -75,11 +75,11 @@ Mamakafaka sy manolotra fanatsarana ho an'ny:
 - Firafitry ny votoaty
 - Fametrahana call-to-action
 
-### Fitaovana Tier 3 (Premium)
+### Fitaovana Tier 3 (Premium) {#tier-3-tools-premium}
 
 Ny fitaovana Tier 3 dia mitaky fanamboarana fanampiny na endri-javatra premium.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Mamorona votoaty ho an'ny:
 
@@ -89,7 +89,7 @@ Mamorona votoaty ho an'ny:
 - Meta descriptions
 - Soratra call-to-action
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
 Manome fahaiza-manao famolavolana mandroso:
 
@@ -99,7 +99,7 @@ Manome fahaiza-manao famolavolana mandroso:
 - Teorian'ny loko mandroso
 - Fanatsarana typography
 
-### Fitaovana Advanced Mpiara-miasa (Fonosana Misaraka)
+### Fitaovana Advanced Mpiara-miasa (Fonosana Misaraka) {#advanced-companion-tools-separate-package}
 
 Ny fonosana Advanced mpiara-miasa dia zaraina misaraka amin'ny famoahana fototra Superdav AI Agent. Natao ho an'ny tontolon'ny mpamorona sy tompon'ny site itokisana izy io, izay anomezan'ny mpitantana alalana mazava ny agent hampiasa fitaovana misy fiantraikany lehibe.
 
@@ -116,9 +116,9 @@ Ny fahaiza-manaon'ny Advanced mpiara-miasa dia mety ahitana:
 
 Aza soratana ho toy ny fitaovana Theme Builder azon'ny fametrahana rehetra ampiasaina amin'ny ankapobeny ireo. Azo ampiasaina ihany izy ireo rehefa napetraka, nalefa, ary noferana ho an'ny mpitantana itokisana ny fonosana Advanced mpiara-miasa.
 
-## Fanamboarana Fitaovana
+## Fanamboarana Fitaovana {#tool-configuration}
 
-### Fampandehanana Fitaovana
+### Fampandehanana Fitaovana {#enabling-tools}
 
 Mba hampandehanana fitaovana fanampiny ao amin'ny Theme Builder:
 
@@ -127,7 +127,7 @@ Mba hampandehanana fitaovana fanampiny ao amin'ny Theme Builder:
 3. Ampandehano/vonoina ny fitaovana araka izay ilaina
 4. Tehirizo ny settings
 
-### Fahazoan-dàlan'ny Fitaovana
+### Fahazoan-dàlan'ny Fitaovana {#tool-permissions}
 
 Misy fitaovana sasany mitaky fahazoan-dàlana:
 
@@ -137,7 +137,7 @@ Misy fitaovana sasany mitaky fahazoan-dàlana:
 - **Endri-javatra mandroso** — mety mitaky fisoratana anarana premium
 - **Fitaovana Advanced mpiara-miasa** — mitaky ny fonosana Advanced zaraina misaraka sy fitokisana mazava avy amin'ny mpitantana
 
-### API Keys sy Fanamarinana
+### API Keys sy Fanamarinana {#api-keys-and-credentials}
 
 Amboary ny API keys ho an'ireo fitaovana mitaky izany:
 
@@ -146,13 +146,13 @@ Amboary ny API keys ho an'ireo fitaovana mitaky izany:
 3. Andramo ny fifandraisana
 4. Tehirizo am-pilaminana
 
-### Fametrahana ny Fonosana Advanced Mpiara-miasa
+### Fametrahana ny Fonosana Advanced Mpiara-miasa {#installing-the-advanced-companion-package}
 
 Ny fonosana Advanced mpiara-miasa dia avoaka misaraka amin'ny WordPress.org core ZIP. Apetraho avy amin'ny fantsona fizarana ofisialin'ny tetikasa ho an'ilay famoahana ihany izy io, avy eo ferana ho an'ny mpitantana itokisana ny fidirana. Avereno jerena ny vavahadin'ny fankatoavan'olombelona sy ny fitondran-tenan'ny git snapshot alohan'ny hampandehanana fitaovana rafitra rakitra, database, WP-CLI, REST dispatcher, mpanamboatra plugin, fitantanana mpampiasa, na benchmark amin'ny site production.
 
-## Fampiasana sd-ai-agent/site-scrape
+## Fampiasana sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Fampiasana Fototra
+### Fampiasana Fototra {#basic-usage}
 
 Angataho ny Theme Builder hamakafaka tranonkala iray:
 
@@ -161,7 +161,7 @@ Diniho ny famolavolana ny site an'ny mpifaninana amiko ao amin'ny competitor.com
 ary soso-kevitrao ny fanatsarana famolavolana ho an'ny site-ko.
 ```
 
-### Famakafakana Manokana
+### Famakafakana Manokana {#specific-analysis}
 
 Mangataha karazana famakafakana manokana:
 
@@ -179,7 +179,7 @@ Hamarino ny fahavononan'ny finday an'ny example.com ary ataovy azo antoka fa
 mitovy fahavononana amin'izany ny site-ko.
 ```
 
-### Famakafakana Fampitahana
+### Famakafakana Fampitahana {#comparison-analysis}
 
 Ampitahao sites maromaro:
 
@@ -188,22 +188,22 @@ Ampitahao ny famolavolan'ny site1.com sy site2.com ary mamoròna famolavolana
 manambatra ny singa tsara indrindra amin'izy roa.
 ```
 
-## Fetran'ny Fitaovana sy Hevitra Hodinihina
+## Fetran'ny Fitaovana sy Hevitra Hodinihina {#tool-limitations-and-considerations}
 
-### Fametrahan-taha
+### Fametrahan-taha {#rate-limiting}
 
 - Voafetra ny tahan'ny scraping mba hisorohana ny fahabetsahan'ny enta-mavesatra amin'ny server
 - Mety ho ferana ny fangatahana maro amin'ny site iray ihany
 - Mety haharitra kokoa ny famakafakana site lehibe
 
-### Fahamarinan'ny Votoaty
+### Fahamarinan'ny Votoaty {#content-accuracy}
 
 - Mety tsy ho voaray tanteraka ny votoaty miovaova
 - Mety tsy ho feno ny votoaty asehon'ny JavaScript
 - Mety tsy ho hita taratra ny angona amin'ny fotoana tena izy
 - Mety misy votoaty ao ambadiky ny paywalls
 
-### Hevitra Ara-dalàna sy Ara-etika
+### Hevitra Ara-dalàna sy Ara-etika {#legal-and-ethical-considerations}
 
 - Hajao ny robots.txt sy ny politikan'ny site
 - Aza manao scraping votoaty voaaro zon'ny mpamorona mba haverina avoaka
@@ -211,16 +211,16 @@ manambatra ny singa tsara indrindra amin'izy roa.
 - Hamarino fa manana zo hampiasa ny votoaty nalaina ianao
 - Araho ny terms of service an'ireo site nofakafakaina
 
-### Fiantraikany amin'ny Fahombiazan'ny Fandeha
+### Fiantraikany amin'ny Fahombiazan'ny Fandeha {#performance-impact}
 
 - Mety haharitra ny scraping site lehibe
 - Mety ho miadana kokoa ny scraping maro atao miaraka
 - Misy fiantraikany amin'ny hafainganam-pandeha ny fifandraisana amin'ny tambajotra
 - Mety hitaky fanodinana bebe kokoa ny angona lehibe
 
-## Fomba Fanao Tsara Indrindra
+## Fomba Fanao Tsara Indrindra {#best-practices}
 
-### Fampiasana Famakafakana Site
+### Fampiasana Famakafakana Site {#using-site-analysis}
 
 1. **Fakafakao site maro** — angony ny aingam-panahy avy amin'ny loharano maromaro
 2. **Mifantoha amin'ny rafitra** — ianaro ny lamina fandaharana sy fandaminana
@@ -228,7 +228,7 @@ manambatra ny singa tsara indrindra amin'izy roa.
 4. **Halalino ny typography** — fantaro ireo fitambaran'endritsoratra tianao
 5. **Avereno jerena ny fitetezana** — fantaro ny fandaminana menu
 
-### Scraping Ara-etika
+### Scraping Ara-etika {#ethical-scraping}
 
 1. **Hajao ny robots.txt** — araho ny torolalan'ny site
 2. **Aza mandika votoaty** — ampiasao ho aingam-panahy ihany ny famakafakana
@@ -236,7 +236,7 @@ manambatra ny singa tsara indrindra amin'izy roa.
 4. **Lazao ny loharano** — omeo fankasitrahana ireo loharanon'aingam-panahy
 5. **Araho ny fepetra** — ankatoavy ny terms of service an'ny site
 
-### Fanamafisana ny Fahombiazan'ny Fitaovana
+### Fanamafisana ny Fahombiazan'ny Fitaovana {#maximizing-tool-effectiveness}
 
 1. **Aoka ho voafaritra tsara** — mangataha karazana famakafakana manokana
 2. **Omeo tontolo manodidina** — hazavao ny tanjon'ny site-nao
@@ -244,9 +244,9 @@ manambatra ny singa tsara indrindra amin'izy roa.
 4. **Averimbereno** — hatsarao araka ny vokatra
 5. **Atambaro ny fitaovana** — ampiasao fitaovana maro ho an'ny famakafakana feno
 
-## Famahana Olana
+## Famahana Olana {#troubleshooting}
 
-### Tsy Azo Atao Scrape ny Site
+### Tsy Azo Atao Scrape ny Site {#site-wont-scrape}
 
 - Hamarino raha azon'ny rehetra idirana ny site
 - Hamarino fa mamela scraping ny robots.txt
@@ -254,7 +254,7 @@ manambatra ny singa tsara indrindra amin'izy roa.
 - Hamarino ny fifandraisana amin'ny internet
 - Mifandraisa amin'ny support raha mitohy ny olana
 
-### Famakafakana Tsy Feno
+### Famakafakana Tsy Feno {#incomplete-analysis}
 
 - Mety manana votoaty miovaova ny site
 - Mety tsy ho voaseho tanteraka ny JavaScript
@@ -262,7 +262,7 @@ manambatra ny singa tsara indrindra amin'izy roa.
 - Andramo kosa ny mamakafaka pejy manokana
 - Mangataha karazana famakafakana manokana
 
-### Fandeha Miadana
+### Fandeha Miadana {#slow-performance}
 
 - Maharitra kokoa ny famakafakana site lehibe
 - Miadana kokoa ny scraping maro atao miaraka
@@ -270,7 +270,7 @@ manambatra ny singa tsara indrindra amin'izy roa.
 - Andramo mandritra ny ora tsy be mpampiasa
 - Fakafakao aloha ireo fizarana kely kokoa
 
-## Antontan-taratasy Mifandraika
+## Antontan-taratasy Mifandraika {#related-documentation}
 
 - [Resadresaka Fikarohana](./discovery-interview.md) — angony ny fampahalalana momba ny famolavolana
 - [Lalana Famolavolana](./design-direction.md) — hatsarao ny famolavolanao

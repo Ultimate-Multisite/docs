@@ -3,15 +3,15 @@ title: '8-dars: Mijozlarni ishga tushirish'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# 8-dars: Mijozni ishga moslashtirish
+# 8-dars: Mijozni ishga moslashtirish {#lesson-8-customer-onboarding}
 
 Mijozni ro‘yxatdan o‘tkazish ishning faqat yarmi. Agar ular tizimga kirib, o‘zini boshi qotgandek his qilsa va qaytib kelmasa, siz ularni yo‘qotgansiz. Bu dars yangi ro‘yxatdan o‘tgan foydalanuvchini faol va jalb qilingan mijozga aylantiradigan tajribani loyihalaydi.
 
-## Qayerda to‘xtagan edik
+## Qayerda to‘xtagan edik {#where-we-left-off}
 
 FitSite ishlaydigan checkout oqimi bilan to‘liq brendlangan. Endi fitness studiyasi egasi ro‘yxatdan o‘tishni yakunlab, yangi saytiga birinchi marta kirganidan keyin nima bo‘lishiga e’tibor qaratamiz.
 
-## Nega onboarding muhim
+## Nega onboarding muhim {#why-onboarding-matters}
 
 Ro‘yxatdan o‘tgandan keyingi dastlabki 30 daqiqa mijoz qoladimi yoki ketadimi, shuni belgilaydi. Fitness studiyasi egasi:
 
@@ -21,9 +21,9 @@ Ro‘yxatdan o‘tgandan keyingi dastlabki 30 daqiqa mijoz qoladimi yoki ketadim
 
 Sizning nish shablonlaringiz (4-dars) birinchi nuqtani hal qiladi. Bu dars ikkinchisini hal qiladi.
 
-## Birinchi kirish tajribasi
+## Birinchi kirish tajribasi {#the-first-login-experience}
 
-### Xush kelibsiz Dashboard vidjeti
+### Xush kelibsiz Dashboard vidjeti {#welcome-dashboard-widget}
 
 Yangi mijozlarni kutib oladigan va ularni sozlash bo‘yicha yo‘naltiradigan maxsus Dashboard vidjetini yarating. Bu ular birinchi marta tizimga kirganda ko‘zga tashlanadigan joyda ko‘rinishi kerak.
 
@@ -37,7 +37,7 @@ Yangi mijozlarni kutib oladigan va ularni sozlash bo‘yicha yo‘naltiradigan m
 
 Har bir qadam bevosita tegishli sahifa yoki sozlamaga havola qiladi. Menyular bo‘ylab qidirish shart emas.
 
-### Dashboardni soddalashtirish
+### Dashboardni soddalashtirish {#simplify-the-dashboard}
 
 Yangi mijozlar har bir WordPress menyu bandini ko‘rishi shart emas. Quyidagilarni ko‘rib chiqing:
 
@@ -47,29 +47,29 @@ Yangi mijozlar har bir WordPress menyu bandini ko‘rishi shart emas. Quyidagila
 
 [Plugin & Theme Manager](/addons/plugin-and-theme-manager) addoni mijozlar nimani ko‘rishini nazorat qilishga yordam beradi.
 
-## Xush kelibsiz email ketma-ketligi
+## Xush kelibsiz email ketma-ketligi {#welcome-email-sequence}
 
 Bitta xush kelibsiz email yetarli emas. Mijozlarni birinchi haftasi davomida yo‘naltiradigan ketma-ketlikni sozlang:
 
-### Email 1: Xush kelibsiz (Ro‘yxatdan o‘tgandan darhol keyin)
+### Email 1: Xush kelibsiz (Ro‘yxatdan o‘tgandan darhol keyin) {#email-1-welcome-immediately-after-signup}
 
 - Mavzu: "FitSite ga xush kelibsiz -- studiyangiz veb-sayti ishga tushdi"
 - Kontent: Kirish havolasi, tez boshlash qadamlari, yordam resurslariga havola
 - Ohang: Qiziqarli, rag‘batlantiruvchi, fitnessga xos
 
-### Email 2: Tez yutuqlar (1-kun)
+### Email 2: Tez yutuqlar (1-kun) {#email-2-quick-wins-day-1}
 
 - Mavzu: "FitSite’da avval bajariladigan 3 ta narsa"
 - Kontent: Logotipingizni qo‘shing, bosh sahifa hero rasmini yangilang, darslar jadvalingizni qo‘shing
 - Qayerni bosish kerakligini aniq ko‘rsatadigan skrinshotlarni kiriting
 
-### Email 3: Uni o‘zingizniki qiling (3-kun)
+### Email 3: Uni o‘zingizniki qiling (3-kun) {#email-3-make-it-yours-day-3}
 
 - Mavzu: "Fitness saytingizni ajralib turadigan qiling"
 - Kontent: Ranglarni moslang, trener rasmlarini qo‘shing, studiyangiz hikoyasini yozing
 - Platformadagi ajoyib fitness saytlari namunalari havolasi
 
-### Email 4: Jonli ishga tushiring (7-kun)
+### Email 4: Jonli ishga tushiring (7-kun) {#email-4-go-live-day-7}
 
 - Mavzu: "FitSite’ingizni dunyo bilan ulashishga tayyormisiz?"
 - Kontent: Ulashishdan oldin tekshiriladigan narsalar ro‘yxati, maxsus domenni qanday ulash (Growth/Pro’da bo‘lsa), ijtimoiy tarmoqlarda ulashish maslahatlari
@@ -78,11 +78,11 @@ Bitta xush kelibsiz email yetarli emas. Mijozlarni birinchi haftasi davomida yo�
 Bu emaillarni email marketing platformangiz orqali ishga tushirish uchun [Webhooks](/user-guide/integrations/webhooks) yoki [Zapier](/user-guide/integrations/zapier) dan foydalaning. Bu sizga vaqtni ko‘proq nazorat qilish imkonini beradi va jalb qilinishni kuzatishga yordam beradi.
 :::
 
-## Yordam resurslari
+## Yordam resurslari {#help-resources}
 
 Fitness studiyasi egalari haqiqatda so‘raydigan savollarga javob beradigan nishga xos yordam kontentini yarating:
 
-### Bilimlar bazasi maqolalari
+### Bilimlar bazasi maqolalari {#knowledge-base-articles}
 
 - "Darslar jadvalingizni qanday yangilash"
 - "Trener profillarini qo‘shish va tahrirlash"
@@ -92,7 +92,7 @@ Fitness studiyasi egalari haqiqatda so‘raydigan savollarga javob beradigan nis
 
 Bularni texnik bo‘lmagan foydalanuvchilar uchun yozing. Skrinshotlardan foydalaning. WordPress jargonidan saqlaning.
 
-### Video ko‘rsatmalar
+### Video ko‘rsatmalar {#video-walkthroughs}
 
 Quyidagilarni ko‘rsatadigan qisqa (2-3 daqiqalik) ekran yozuvlari:
 
@@ -103,7 +103,7 @@ Quyidagilarni ko‘rsatadigan qisqa (2-3 daqiqalik) ekran yozuvlari:
 
 Bular mukammal ishlab chiqilgan prodakshen bo‘lishi shart emas. Muhimi — aniq, foydali va nishga xos bo‘lishi.
 
-## Account sahifasi
+## Account sahifasi {#the-account-page}
 
 Ultimate Multisite mijozlarga mo‘ljallangan [Account sahifasi](/user-guide/client-management/account-page)ni o‘z ichiga oladi, u yerda mijozlar o‘z obunasini boshqaradi. Buni quyidagilar uchun moslang:
 
@@ -112,7 +112,7 @@ Ultimate Multisite mijozlarga mo‘ljallangan [Account sahifasi](/user-guide/cli
 - To‘lov tarixi va invoice yuklab olishlarni taqdim etish
 - Yordam resurslariga havola qilish
 
-## Onboarding muvaffaqiyatini o‘lchash
+## Onboarding muvaffaqiyatini o‘lchash {#measuring-onboarding-success}
 
 Onboarding ishlayotganini bilish uchun quyidagi ko‘rsatkichlarni kuzating:
 
@@ -121,7 +121,7 @@ Onboarding ishlayotganini bilish uchun quyidagi ko‘rsatkichlarni kuzating:
 - **Yangi mijozlardan kelgan support ticketlar**: Yuqori hajm onboardingda bo‘shliqlar borligini anglatadi
 - **Trialdan pullik rejaga o‘tish**: Agar trial taklif qilsangiz, necha foiz konvertatsiya qiladi?
 
-## Hozirgacha FitSite tarmog‘i
+## Hozirgacha FitSite tarmog‘i {#the-fitsite-network-so-far}
 
 ```
 FitSite tarmog‘i
@@ -142,7 +142,7 @@ FitSite tarmog‘i
 └── Narxlash strategiyasi uchun tayyor (keyingi dars)
 ```
 
-## Bu darsda nimalar qurdik
+## Bu darsda nimalar qurdik {#what-we-built-this-lesson}
 
 - Quick Start vidjeti bilan **yo‘naltirilgan birinchi kirish tajribasi**
 - Fitness sayti boshqaruvi vazifalariga qaratilgan **soddalashtirilgan Dashboard**

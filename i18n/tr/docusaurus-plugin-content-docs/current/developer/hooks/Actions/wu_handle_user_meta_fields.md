@@ -4,11 +4,11 @@ title: Eylem - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Aksiyon: wu_handle_user_meta_fields
+# Aksiyon: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 İhtiyaç duyarlarsa, eklenti geliştiricilerinin kullanıcı meta verilerini farklı şekillerde kaydetmesine olanak tanır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 | $customer | `\Customer` | Ultimate Multisite müşteri nesnesi. |
 | $checkout | `\Checkout` | Ödeme (checkout) sınıfı. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.0.4
-### Kaynak
+### Kaynak {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) dosyasının 1244. satırında tanımlanmıştır.

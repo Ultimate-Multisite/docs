@@ -4,13 +4,13 @@ title: Acción - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Acción: wp_ultimo_captcha_load
+# Acción: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
 
 Actívase cando se cargaron todas as dependencias.
 
-### Desde
+### Desde {#since}
 
 - 1.0.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`ultimate-multisite-captcha.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/ultimate-multisite-captcha.php#L240) na liña 240

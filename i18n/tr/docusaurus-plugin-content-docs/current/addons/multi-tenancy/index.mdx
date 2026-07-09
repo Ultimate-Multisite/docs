@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Çok Kiracılık
+# Çok Kiracılık {#multi-tenancy}
 
 Performans ve güvenlik için alt siteleri sunucular ve veritabanları arasında dağıtın
 
-## Sürüm 1.2.0 yayın öne çıkanları
+## Sürüm 1.2.0 yayın öne çıkanları {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0, üretim izolasyonu iş akışları için egemen kiracı temelini ekler:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0, üretim izolasyonu iş akışları için egemen kiracı tem
 
 [Egemen migration iş akışı](/user-guide/getting-started/sovereign-migration-workflow), [çok kiracılık izolasyonu](/user-guide/configuration/multi-tenancy-isolation) ve [egemen kiracı işlemleri](/user-guide/administration/sovereign-tenant-operations) için kullanıcı kılavuzlarına bakın.
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 - WordPress 5.3 veya üzeri
 - PHP 7.4 veya üzeri
 - Multisite Ultimate eklentisi (etkin)
 
-## Kurulum
+## Kurulum {#installation}
 
 1. Ek eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin
 2. WordPress içindeki 'Eklentiler' menüsünden eklentiyi etkinleştirin
 3. Ek eklenti ayarlarını ağ yöneticisinde yapılandırın
 
-## Geliştirme
+## Geliştirme {#development}
 
-### Kurulum
+### Kurulum {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Proje Yapısı
+### Proje Yapısı {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kod modernleştirme kuralları
 ```
 
-### Test Etme
+### Test Etme {#testing}
 
 Ek eklenti kapsamlı bir test framework'ü içerir:
 
@@ -93,54 +93,54 @@ Ek eklenti kapsamlı bir test framework'ü içerir:
 - **Test Kapsamı**: Kod kapsamını izlemek üzere yapılandırılmıştır
 - **Multisite Testi**: Testler multisite ortamında çalışır
 
-### Kod Standartları
+### Kod Standartları {#code-standards}
 
 - **WordPress Kodlama Standartları**: PHPCS aracılığıyla uygulanır
 - **PHP 7.4+ Uyumluluğu**: Modern PHP özellikleri desteklenir
 - **Statik Analiz**: Tür denetimi için PHPStan entegrasyonu
 - **Kod Modernleştirme**: PHP yükseltmeleri için Rector kuralları
 
-### Derleme Sistemi
+### Derleme Sistemi {#build-system}
 
 - **Varlık İşleme**: CSS/JS dosyaları için küçültme
 - **Çeviri**: POT dosyası oluşturma
 - **Paketleme**: Dağıtım için arşiv oluşturma
 - **Geliştirme Modu**: Hata ayıklama için küçültülmemiş varlıklar
 
-## Yapılandırma
+## Yapılandırma {#configuration}
 
 Ek eklenti, ağ yöneticisi arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
 
-### Egemen kiracı yapılandırması
+### Egemen kiracı yapılandırması {#sovereign-tenant-configuration}
 
 Egemen kiracılar için, trafiği kiracıya yönlendirmeden önce kiracı veritabanını, dosya sistemi kökünü, veritabanı ana makine bağlamasını ve ana makine yeteneğini yapılandırın. Veritabanı kimlik bilgilerini, ana makine bağlamasını, yönlendirmeyi veya kullanıcı sağlamayı etkileyen her değişiklikten sonra migration doğrulamasını çalıştırın.
 
 `localhost` yalnızca kiracı çalışma zamanı ve veritabanı izinleri yerel soket veya aynı makine erişimi beklediğinde kullanın. Sağlayıcınız tarafından yapılandırılan izin ana makinesi bu olduğunda `127.0.0.1` veya bir hizmet ana makine adı kullanın.
 
-### Hostinger yeteneği
+### Hostinger yeteneği {#hostinger-capability}
 
 Hostinger çok kiracılık yeteneği, paylaşılan Hostinger entegrasyon token'ı ile çalışır. Doğrulamadan önce domain'in hPanel'de mevcut olduğunu, DNS'in Hostinger hesabına işaret ettiğini ve kiracı veritabanı ayarlarının hPanel ile eşleştiğini doğrulayın.
 
-## Hook'lar ve Filter'lar
+## Hook'lar ve Filter'lar {#hooks-and-filters}
 
-### Action'lar
+### Action'lar {#actions}
 
 - `ultimate-multisite-addon-template_init` - Ek eklenti başlatıldıktan sonra tetiklenir
 - `ultimate-multisite-addon-template_loaded` - Tüm ek eklenti dosyaları yüklendikten sonra tetiklenir
 
-### Filter'lar
+### Filter'lar {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ek eklenti ayarlarını değiştirin
 - `ultimate-multisite-addon-template_enabled` - Ek eklenti etkin/devre dışı durumunu geçersiz kılın
 
-## Lisans
+## Lisans {#license}
 
 Bu ek eklenti GPL v3 veya sonrası altında lisanslanmıştır.
 
-## Destek
+## Destek {#support}
 
 Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com) adresini ziyaret edin
-## Değişiklik Günlüğü
+## Değişiklik Günlüğü {#changelog}
 
 - Sürüm 1.2.0 (2026-06-03): durumsuz kiracı otomatik girişi, Hostinger çok kiracılık yeteneği, alt site başına veritabanı ve dosya sistemi izolasyonu, egemen migration doğrulama kapıları, kiracı bootstrap/veritabanı yazıcısı iyileştirmeleri, yapılandırılabilir MySQL ana makine bağlaması ve daha güvenli egemen sökme ekler.
 

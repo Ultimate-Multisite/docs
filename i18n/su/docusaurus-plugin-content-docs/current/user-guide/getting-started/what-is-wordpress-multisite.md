@@ -3,7 +3,7 @@ title: Naon éta WordPress Multisite téh?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Naon Ari WordPress Multisite?
+# Naon Ari WordPress Multisite? {#what-is-wordpress-multisite}
 
 Di dalam inti WordPress, aya fitur disebut ‘Multisite’ anu asalna ti tahun 2010 nalika ngalancarkeun WordPress 3.0. Ti waktu éta nepi ayeuna geus loba revisi anu tujuanna nambahan fitur anyar jeung nguatkeun keamanan.
 
@@ -11,7 +11,7 @@ Intina mah, WordPress multisite bisa dipikir saperti kieu: Sakola (Universitas) 
 
 ##
 
-## Naon Sih WordPress Multisite téh?
+## Naon Sih WordPress Multisite téh? {#what-exactly-is-wordpress-multisite}
 
 Multisite téh fitur di WordPress anu ngidinan sababaraha situs pikeun ngagunake hiji instalasi WordPress tunggal. Nalika multisite diaktifkeun, situs WordPress aslina bakal diubah supados bisa ngadukung naon biasana disebut **jaringan situs (network of sites)**.
 
@@ -31,7 +31,7 @@ Salah sahiji salah sahiji dina ngatur mode subdomain téh nyaéta pangawalan SSL
 
 Kontras jeung mode subdirectory, subsite dina jaringan berbasis subdomain dianggap ku mesin pencari salaku situs web anu pisah, hartina konten anu aya di hiji subsite teu bakal ganggu kinerja SEO subsite séjén pisan.
 
-## Super Admin
+## Super Admin {#subdomain-or-subdirectory}
 
 Instalasi WordPress tunggal (single-site) ngajak anjeun nambahan jumlah pengguna tanpa wates jeung méré peran pengguna nu béda jeung izin nu béda ka unggal pengguna éta.
 
@@ -45,7 +45,7 @@ Plugin jeung tema ngan bisa dipasang atawa dilepas tina network admin panel ku s
 
 _Catatan: seperti yang bisa Anda lihat, mengundang seseorang ke jaringan Anda dan memberikan status super admin memberi pengguna tersebut kendali penuh atas seluruh jaringan Anda. Sebagai contoh, super admin lain bahkan bisa menghapus status super admin Anda, yang secara efektif akan mengunci Anda dari panel admin jaringan Anda sendiri. Untuk memungkinkan pelanggan Ultimate Multisite memiliki kontrol yang lebih rinci tentang apa saja yang dapat dilakukan oleh super admin tambahan, kami punya add-on bernama Support Agents. Add-on ini memungkinkan Anda membuat jenis pengguna lain – agen – dengan hanya izin yang mereka butuhkan untuk melakukan tugas mereka di jaringan._
 
-## Apa yang dibagi antar subsites dan apa yang tidak
+## Apa yang dibagi antar subsites dan apa yang tidak {#the-super-admin}
 
 Seperti yang sudah kita sebutkan sebelumnya, salah satu keuntungan utama dari WordPress multisite adalah semua subsites berbagi konfigurasi, file inti (core files), tema, plugin, file inti WordPress, dan sebagainya.
 
@@ -55,7 +55,7 @@ Namun, ada beberapa elemen yang dikelompokkan dengan rapi berdasarkan setiap sub
 - Setiap subsite memiliki panel admin khusus dan dapat mengaktifkan atau menonaktifkan plugin atau tema kecuali jika itu aktif di jaringan oleh super admin.
 - Sebagian besar tabel database dibuat untuk setiap subsite, artinya postingan (posts), komentar (comments), halaman (pages), pengaturan (settings), dan lainnya dikelompokkan untuk setiap subsite.
 
-## Manajemen pengguna di WordPress Multisite
+## Manajemen pengguna di WordPress Multisite {#what-is-shared-among-subsites-and-what-is-not}
 
 Salah satu hal yang cukup sensitif di WordPress multisite adalah manajemen pengguna. Tabel pengguna WordPress adalah salah satu dari sedikit tabel yang dibagikan di antara semua subsites.
 
@@ -79,7 +79,7 @@ _Catatan: Urang sadar kumaha parah éta bisa lamun dipaké pikeun kasus pergunaa
 
 Sanajan tabel user téh dibagi, admin subsite atawa super admin masih bisa nambahan jeupah sareng ngabersihkeun user ka subsite, sarta maranéhna ogé bisa boga peran user anu béda dina subsite anu béda.
 
-## Pertimbangan kinerja (Performance considerations)
+## Pertimbangan kinerja (Performance considerations) {#user-management-on-wordpress-multisite}
 
 WordPress multisite téh pancén pisan lamun urusan jumlah situs anu bisa ditopangna. Ieu bisa diuji ku fakta yén [WordPress.com](https://WordPress.com), Edublogs, jeung Campuspress téh sadayana layanan berbasis multisite sarta unggal host ngahandapkeun rébu-rébu situs.
 

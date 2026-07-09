@@ -3,9 +3,9 @@ title: સામગ્રી સિંક ફેરફારની નોંધ
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# કન્ટેન્ટ Sync ફેરફારની નોંધ
+# કન્ટેન્ટ Sync ફેરફારની નોંધ {#content-sync-changelog}
 
-### Version 1.1.0 - Released on 2025-12-31
+### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * નવું: બધા પોસ્ટ પ્રકારો (posts, pages, custom post types) sync કરવા માટે સપોર્ટ.
 * નવું: કન્ટેન્ટ પસંદ કરવાના સ્ટેપમાં પોસ્ટ પ્રકાર ફિલ્ટરિંગ.
 * નવું: સ્ત્રોત સાઇટ (Source site) પસંદ કરવાના સ્ટેપમાં - હવે માત્ર મુખ્ય સાઇટમાંથી નહીં, પણ કોઈપણ સાઇટમાંથી sync કરી શકાય છે.
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * બદલાયું: "Select Templates" સ્ટેપનું નામ બદલીને "Select Data" કરવામાં આવ્યું.
 * સુધારેલ: Elementor-વિશિષ્ટ કોડ હવે ફક્ત elementor_library પોસ્ટ પ્રકાર માટે જ ચાલશે.
 
-### Version 1.0.0 - Released on 2025-12-19
+### Version 1.0.0 - Released on 2025-12-19 {#version-100---released-on-2025-12-19}
 * પ્રારંભિકリリース
 * ટેમ્પલેટ અને સાઇટ પસંદ કરવા માટે બહુ-પગલાંવાળો વિઝાર્ડ (Multi-step wizard).
 * રીઅલ-ટાઇમ પ્રગતિ પ્રતિસાદ સાથે બેચ પ્રોસેસિંગ (Batch processing).

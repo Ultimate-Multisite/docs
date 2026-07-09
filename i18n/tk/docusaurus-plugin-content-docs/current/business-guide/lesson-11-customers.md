@@ -3,15 +3,15 @@ title: 'Sapak 11: Müşderileri tapmak'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Sapak 11: Müşderileri tapmak
+# Sapak 11: Müşderileri tapmak {#lesson-11-finding-customers}
 
 Müşderisiz ajaýyp platforma diňe bir güýmenjedir. Bu sapakda niche vertical içinde müşderileri nädip gazanmalydygy -- bir pudaga ünsüňizi jemläniňiz üçin aýratyn gowy işleýän strategiýalar barada gürrüň berilýär.
 
-## Nirede galypdyk
+## Nirede galypdyk {#where-we-left-off}
 
 FitSite işläp dur. Indi fitness studiýalarynyň eýeleriniň ony tapyp, hasaba ýazylmagy gerek.
 
-## Näme üçin niche gazanmak başgaça
+## Näme üçin niche gazanmak başgaça {#why-niche-acquisition-is-different}
 
 Hemme kişä satanyňyzda, sesli bazarda üns üçin bäsleşýärsiňiz. Niche-a satanyňyzda, artykmaçlyklaryňyz bolýar:
 
@@ -19,17 +19,17 @@ Hemme kişä satanyňyzda, sesli bazarda üns üçin bäsleşýärsiňiz. Niche-
 - **Habaryňyz derrew täsir edýär** -- "fitness studiýalary üçin websaýtlar" sport zalynyň eýesini aýlap geçip barýarka saklaýar
 - **Salgy bermeler köpelýär** -- fitness studiýalarynyň eýeleri beýleki fitness studiýalarynyň eýelerini tanaýarlar
 
-## Kanal 1: Göni ýüzlenme
+## Kanal 1: Göni ýüzlenme {#channel-1-direct-outreach}
 
 Ilkinji müşderileriňize iň çalt ýol göni, şahsy ýüzlenmedir.
 
-### Mümkin müşderileri tapyň
+### Mümkin müşderileri tapyň {#find-prospects}
 
 - Sebitiňizdäki fitness studiýalaryny, sport zallaryny we şahsy tälimçileri Google Maps-den gözläň
 - Olaryň häzirki websaýtlaryna giriň (ýa-da olaryň ýokdugyny belläň)
 - Habarlaşmak maglumatlaryny olaryň Google Business profillerinden ýa-da sosial mediadan ýygnaň
 
-### Olaryň häzirki ýagdaýyna baha beriň
+### Olaryň häzirki ýagdaýyna baha beriň {#evaluate-their-current-situation}
 
 Her bir mümkin müşderi üçin bellik ediň:
 
@@ -37,7 +37,7 @@ Her bir mümkin müşderi üçin bellik ediň:
 - **Ýaramaz websaýt**: Güýçli mümkin müşderi -- has gowy görnüşiň nähili bolýandygyny görkeziň
 - **Gowy websaýt**: Gowşak mümkin müşderi -- olar bu meseläni eýýäm çözüpdirler
 
-### Habarlaşyň
+### Habarlaşyň {#make-contact}
 
 Şahsylaşdyrylan e-poçta ýa-da habar iberiň:
 
@@ -48,7 +48,7 @@ Her bir mümkin müşderi üçin bellik ediň:
 
 Köpçülikleýin e-poçta ibermäň. Gowy öwrenilen 20 mümkin müşderä şahsylaşdyrylan ýüzlenme, 2 000 adama iberilen umumy kampaniýadan has netijeli bolar.
 
-## Kanal 2: Niche jemgyýetleri
+## Kanal 2: Niche jemgyýetleri {#channel-2-niche-communities}
 
 Fitness studiýalarynyň eýeleri internetde belli ýerlerde ýygnanýarlar:
 
@@ -57,7 +57,7 @@ Fitness studiýalarynyň eýeleri internetde belli ýerlerde ýygnanýarlar:
 - **Pudak forumlary** we çekişme tagtalary
 - **LinkedIn toparlary** fitness hünärmenleri üçin
 
-### Nädip gatnaşmaly
+### Nädip gatnaşmaly {#how-to-participate}
 
 Goşulyp, derrew önümiňizi mahabatlandyrmaň. Munuň ýerine:
 
@@ -66,7 +66,7 @@ Goşulyp, derrew önümiňizi mahabatlandyrmaň. Munuň ýerine:
 3. **Degişli bolanda paýlaşyň** -- kimdir biri websaýtlar barada soranda, platformaňyzy tebigy ýagdaýda paýlaşyň
 4. **Peýdaly mazmun dörediň** -- platformaňyza tebigy alyp barýan "ajaýyp fitness studiýasy websaýtyny näme döredýär" ýaly ýazgylar ýazyň
 
-## Kanal 3: Mazmun marketingi
+## Kanal 3: Mazmun marketingi {#channel-3-content-marketing}
 
 Fitness studiýalarynyň eýeleriniň gözleýän mazmunyny dörediň:
 
@@ -77,7 +77,7 @@ Fitness studiýalarynyň eýeleriniň gözleýän mazmunyny dörediň:
 
 Muny FitSite marketing bloguňyzda çap ediň. Wagtyň geçmegi bilen bu mazmun gözleg ulgamlarynda ýokary çykýar we siziň hödürleýän zadyňyzy işjeň gözleýän adamlardan organiki trafik getirýär.
 
-## Kanal 4: Hyzmatdaşlyklar
+## Kanal 4: Hyzmatdaşlyklar {#channel-4-partnerships}
 
 Fitness studiýalaryna eýýäm hyzmat edýän biznesler bilen hyzmatdaşlyk ediň:
 
@@ -88,7 +88,7 @@ Fitness studiýalaryna eýýäm hyzmat edýän biznesler bilen hyzmatdaşlyk edi
 
 Salgy komissiýalaryny ýa-da özara mahabaty hödürläň. [AffiliateWP addon](/addons/affiliatewp) size resmi salgy programmasyny gurmaga kömek edip biler.
 
-## Kanal 5: Pudak çäreleri
+## Kanal 5: Pudak çäreleri {#channel-5-industry-events}
 
 Fitness pudagynyň çäreleri sizi ýüzlerçe mümkin müşderiniň öňüne çykarýar:
 
@@ -99,7 +99,7 @@ Fitness pudagynyň çäreleri sizi ýüzlerçe mümkin müşderiniň öňüne ç
 
 Uly býujet gerek däl. Hatda gatnaşyjy hökmünde gatnaşyp, edýän işiňiz barada gürrüňdeşlik etmek hem lead döredip biler.
 
-## Kanal 6: Görkezme saýtlary
+## Kanal 6: Görkezme saýtlary {#channel-6-showcase-sites}
 
 Iň gowy marketingiňiz bar bolan müşderileriňiziň saýtlarydyr. Rugsat bilen:
 
@@ -108,7 +108,7 @@ Iň gowy marketingiňiz bar bolan müşderileriňiziň saýtlarydyr. Rugsat bile
 - Kanagatlanan müşderilerden synlar soraň
 - Müşderileri websaýty barada soralanda FitSite-i agzamaga höweslendiriň
 
-## Salgy programmasyny gurmak
+## Salgy programmasyny gurmak {#setting-up-a-referral-program}
 
 Agzadan agza geçýän habar niche-da iň güýçli kanalyňyzdyr. Ony resmileşdiriň:
 
@@ -116,7 +116,7 @@ Agzadan agza geçýän habar niche-da iň güýçli kanalyňyzdyr. Ony resmileş
 2. Bar bolan müşderilere salgy bermeler üçin sylag hödürläň (bir aý mugt, account krediti we ş.m.)
 3. Ony aňsat ediň -- olara salgy linkini we öňe ugradyp biljek ýönekeý habaryny beriň
 
-## Näme işleýändigini yzarlamak
+## Näme işleýändigini yzarlamak {#tracking-what-works}
 
 Her kanal üçin yzarlamaly zatlar:
 
@@ -126,7 +126,7 @@ Her kanal üçin yzarlamaly zatlar:
 
 Işleýän kanallara has köp üns beriň. Işlemeýän kanallary kesiň.
 
-## Hakyky garaşmalar
+## Hakyky garaşmalar {#realistic-expectations}
 
 - **1-3-nji aý**: 5-20 müşderi, esasan göni ýüzlenme we jemgyýetlerden
 - **4-6-njy aý**: 20-50 müşderi, mazmun marketingi goşant goşup başlaýar
@@ -134,7 +134,7 @@ Işleýän kanallara has köp üns beriň. Işlemeýän kanallary kesiň.
 
 Bu sanlar üýtgäp biler, ýöne nagyş durnukly: ilkinji müşderiler göni tagalladan gelýär, soňky müşderiler bolsa mazmunyň, salgy bermeleriň we abraýyň köpeliş täsirlerinden gelýär.
 
-## Bu sapakda näme gurduk
+## Bu sapakda näme gurduk {#what-we-built-this-lesson}
 
 - **Alty sany müşderi gazanmak kanaly** fitnes ugruna laýyklaşdyrylan
 - **Göni aragatnaşyk prosesi** ilkinji müşderileri gazanmak üçin

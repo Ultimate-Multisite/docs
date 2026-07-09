@@ -3,7 +3,7 @@ title: Rujukan Kabisan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Rujukan Abilities
+# Rujukan Abilities {#abilities-reference}
 
 Abilities yaiku tumindak atomik sing bisa diundang dening Gratis AI Agent ing instalasi WordPress sampeyan. Saben ability iku kelas PHP sing kadhaftar lan mbabarake skema JSON — agent maca skema iki nalika runtime kanggo mangerteni parameter apa sing dibutuhake lan apa sing dibalekake dening ability kasebut.
 
@@ -11,11 +11,11 @@ Kaca iki ndokumentasikake kabeh abilities sing dikirim bareng Gratis AI Agent v1
 
 ---
 
-## Jinis Post Kustom
+## Jinis Post Kustom {#custom-post-types}
 
 Abilities iki ngatur jinis post kustom (CPT) sing didaftar liwat agent. Registrasi disimpen ing tabel opsi WordPress supaya tetep ana sanajan plugin dinonaktifake lan diaktifake maneh.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Ndaftar jinis post kustom anyar.
 
@@ -50,7 +50,7 @@ Ndaftar jinis post kustom anyar.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Mbalekake kabeh jinis post kustom sing didaftar dening agent.
 
@@ -73,7 +73,7 @@ Mbalekake kabeh jinis post kustom sing didaftar dening agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Mbusak registrasi jinis post kustom sing sadurunge didaftar dening agent. Post sing wis ana saka jinis kasebut tetep ana ing database nanging ora bisa diakses maneh liwat jinis post kasebut.
 
@@ -87,11 +87,11 @@ Mbusak registrasi jinis post kustom sing sadurunge didaftar dening agent. Post s
 
 ---
 
-## Taksonomi Kustom
+## Taksonomi Kustom {#custom-taxonomies}
 
 Abilities iki ngatur taksonomi kustom. Kaya CPT, registrasi taksonomi disimpen kanthi tetep.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Ndaftar taksonomi kustom anyar.
 
@@ -123,7 +123,7 @@ Ndaftar taksonomi kustom anyar.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Mbalekake kabeh taksonomi kustom sing didaftar dening agent.
 
@@ -146,7 +146,7 @@ Mbalekake kabeh taksonomi kustom sing didaftar dening agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Mbusak registrasi taksonomi kustom sing sadurunge didaftar dening agent.
 
@@ -160,11 +160,11 @@ Mbusak registrasi taksonomi kustom sing sadurunge didaftar dening agent.
 
 ---
 
-## Sistem Desain
+## Sistem Desain {#design-system}
 
 Abilities sistem desain ngowahi tampilan visual situs WordPress — saka CSS kustom nganti pola blok lan logo situs.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Nambahake CSS menyang `<head>` situs liwat `wp_add_inline_style`. CSS disimpen ing opsi `gratis_ai_agent_custom_css` lan dibuwang saka antrian kanthi resik nalika ability direset.
 
@@ -190,7 +190,7 @@ Nambahake CSS menyang `<head>` situs liwat `wp_add_inline_style`. CSS disimpen i
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Ndaftar pola blok sing bisa digunakake maneh ing pustaka pola WordPress.
 
@@ -209,7 +209,7 @@ Ndaftar pola blok sing bisa digunakake maneh ing pustaka pola WordPress.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Nampilake dhaptar kabeh pola blok sing didaftar dening agent.
 
@@ -231,7 +231,7 @@ Nampilake dhaptar kabeh pola blok sing didaftar dening agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Nyetel logo situs WordPress dadi ID lampiran tartamtu utawa URL gambar remot. Nalika URL diwènèhaké, gambar bakal diundhuh lan diimpor menyang Media Library.
 
@@ -248,7 +248,7 @@ Salah siji saka `attachment_id` utawa `url` kudu diwènèhaké.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Ngetrapaké preset warna/tipografi sing dijenengi menyang `theme.json` (utawa `global-styles`) saka theme sing aktif. Preset iku bundel sing dikurasi lan dirumat déning tim Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Ngetrapaké preset warna/tipografi sing dijenengi menyang `theme.json` (utawa `g
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Kapabilitas Global Styles maca lan nulis nilai theme.json liwat WordPress Global Styles API, mengaruhi kabèh blok lan cithakan ing sakabehing situs.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Mbalèkaké konfigurasi gaya global saiki.
 
@@ -291,7 +291,7 @@ Mbalèkaké konfigurasi gaya global saiki.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Nganyari siji utawa luwih nilai ing konfigurasi gaya global.
 
@@ -318,7 +318,7 @@ Nganyari siji utawa luwih nilai ing konfigurasi gaya global.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Ngreset kabèh owah-owahan gaya global sing ditrapaké agen, mulihaké gawané theme.
 
@@ -328,11 +328,11 @@ Ngreset kabèh owah-owahan gaya global sing ditrapaké agen, mulihaké gawané t
 
 ---
 
-## Menu Navigasi
+## Menu Navigasi {#navigation-menus}
 
 Kapabilitas Menu Navigasi nggawe lan ngatur menu nav WordPress lan item-itemé.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Nggawe menu navigasi WordPress anyar.
 
@@ -347,7 +347,7 @@ Nggawe menu navigasi WordPress anyar.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Ngganti jeneng menu utawa masrahaké maneh menyang lokasi theme.
 
@@ -363,7 +363,7 @@ Ngganti jeneng menu utawa masrahaké maneh menyang lokasi theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Nambahaké item menyang menu navigasi sing wis ana.
 
@@ -383,7 +383,7 @@ Nambahaké item menyang menu navigasi sing wis ana.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Mbusak item saka menu navigasi.
 
@@ -397,7 +397,7 @@ Mbusak item saka menu navigasi.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Ndhaptar kabèh menu navigasi WordPress, kalebu lokasi theme sing wis dipasrahaké.
 
@@ -420,11 +420,11 @@ Ndhaptar kabèh menu navigasi WordPress, kalebu lokasi theme sing wis dipasrahak
 
 ---
 
-## Pangaturan Opsi
+## Pangaturan Opsi {#options-management}
 
 Kapabilitas opsi maca lan nulis opsi WordPress liwat `get_option` / `update_option`. Blocklist keamanan bawaan nyegah owah-owahan ora disengaja marang setelan kritis.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Maca opsi WordPress.
 
@@ -440,7 +440,7 @@ Mbalèkaké kasalahan yen `option_name` ana ing blocklist keamanan.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Nulis opsi WordPress.
 
@@ -458,7 +458,7 @@ Ngasilake kasalahan yen `option_name` ana ing safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Mbusak opsi WordPress.
 
@@ -474,7 +474,7 @@ Ngasilake kasalahan yen `option_name` ana ing safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Nampilake dhaptar opsi WordPress sing cocog karo pola.
 
@@ -498,11 +498,11 @@ Nampilake dhaptar opsi WordPress sing cocog karo pola.
 
 ---
 
-## Pangaturan Kontèn
+## Pangaturan Kontèn {#content-management}
 
 Kemampuan Pangaturan Kontèn nggawe lan nyunting kiriman lan kaca WordPress. ID kiriman dibalèkaké supaya langkah sabanjuré ing rencana multi-kemampuan bisa ngrujuk kontèn sing wis digawe.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Nggawe kiriman WordPress anyar, kaca, utawa entri jinis kiriman kustom.
 
@@ -537,7 +537,7 @@ Nggawe kiriman WordPress anyar, kaca, utawa entri jinis kiriman kustom.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Nganyari kiriman utawa kaca WordPress sing wis ana.
 
@@ -567,7 +567,7 @@ Nganyari kiriman utawa kaca WordPress sing wis ana.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Nggawe pirang-pirang kiriman ing siji panggilan kemampuan, nyuda bolak-balik nalika pambangunan situs utawa impor kontèn massal. Kiriman digawe kanthi urutan; yen siji gagal, liyane tetep diterusaké lan kegagalané dilaporaké ing larik asil.
 
@@ -619,7 +619,7 @@ Nggawe pirang-pirang kiriman ing siji panggilan kemampuan, nyuda bolak-balik nal
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Netepaké gambar unggulan (thumbnail kiriman) marang kiriman utawa kaca sing wis ana. Nampa ID lampiran Media Library sing wis ana utawa URL gambar adoh; nalika URL diwènèhaké, gambar diundhuh lan diimpor kanthi otomatis.
 
@@ -638,7 +638,7 @@ Salah siji saka `attachment_id` utawa `url` kudu diwènèhaké.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Nggawe formulir kontak nganggo plugin formulir aktif (Contact Form 7, WPForms, Fluent Forms, utawa Gravity Forms, gumantung sing wis dipasang). Ngasilake shortcode sing bisa ditempelaké ing kiriman utawa kaca apa wae.
 
@@ -691,11 +691,11 @@ Nggawe formulir kontak nganggo plugin formulir aktif (Contact Form 7, WPForms, F
 
 ---
 
-## Tinjauan Visual
+## Tinjauan Visual {#visual-review}
 
 Kabisan Tinjauan Visual ngidini agen njupuk screenshot saka kaca langsung lan nganalisis, supaya bisa nindakake tinjauan desain otonom, pambandhingan sadurungé/sawisé, lan pamriksa regresi visual tanpa mbutuhaké ekstensi browser apa wae.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Njupuk screenshot saka kaca WordPress ing URL tartamtu nganggo browser headless sisih server. Gambar disimpen menyang Media Library lan URL CDN dibalèkaké.
 
@@ -724,7 +724,7 @@ Njupuk screenshot saka kaca WordPress ing URL tartamtu nganggo browser headless 
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Njupuk loro screenshot lan ngasilaké skor béda visual plus gambar béda sing nyorot wilayah sing owah. Migunani kanggo mesthèkaké yèn owah-owahan desain ngasilaké asil sing diarepaké utawa kanggo ndeteksi regresi sing ora disengaja.
 
@@ -754,7 +754,7 @@ Njupuk loro screenshot lan ngasilaké skor béda visual plus gambar béda sing n
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Njupuk screenshot saka kaca lan ngirimaké menyang model basa kanggo analisis visual. Ngasilaké pambiji terstruktur sing nyakup tata letak, tipografi, panggunaan werna, lan prakara aksesibilitas.
 
@@ -785,11 +785,11 @@ Njupuk screenshot saka kaca lan ngirimaké menyang model basa kanggo analisis vi
 
 ---
 
-## Kabisan Sing Bisa Diinstal
+## Kabisan Sing Bisa Diinstal {#installable-abilities}
 
 Registry Kabisan Sing Bisa Diinstal ngidini sampeyan ngembangaké agen nganggo paket kabisan tambahan sing disebaraké minangka plugin WordPress. Saben paket ndhaptaraké siji utawa luwih kabisan nganggo API kabisan standar.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Ngasilaké katalog paket kabisan sing kasedhiya kanggo diinstal saka registry.
 
@@ -818,7 +818,7 @@ Ngasilaké katalog paket kabisan sing kasedhiya kanggo diinstal saka registry.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Ngundhuh lan ngaktifake paket kemampuan saka registri.
 
@@ -832,7 +832,7 @@ Ngundhuh lan ngaktifake paket kemampuan saka registri.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Nakokake registri kemampuan kanggo nemokake pangimbuh paling apik kanggo kasus panggunaan sing dijlentrehake lan, menawa dipilih, masang iku.
 

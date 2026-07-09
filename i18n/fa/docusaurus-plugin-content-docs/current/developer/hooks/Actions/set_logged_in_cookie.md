@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# اکشن: set_logged_in_cookie
+# اکشن: set_logged_in_cookie {#action-setloggedincookie}
 
 بلافاصله قبل از اینکه کوکی احراز هویت ورود (logged-in authentication cookie) تنظیم شود، اجرا می‌شود.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | طرح احراز هویت. به طور پیش‌فرض 'logged_in' است. |
 | $token | `string` | توکن نشست (session token) کاربر برای استفاده در این کوکی. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.6.0
 - 4.9.0: پارامتر <code>$token</code> اضافه شد.
-### منبع
+### منبع {#source}
 
 در [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) در خط ۱۴۱ تعریف شده است.

@@ -3,13 +3,13 @@ title: Ŝanĝoprotokolo de Subtenaj Biletoj
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Ŝanĝprotokolo de Subtenaj Biletoj
+# Ŝanĝprotokolo de Subtenaj Biletoj {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Plibonigita: Forigis la dosierujon vendor/ el Git-spurado (jam kovrita de .gitignore), reduktante la deponejan grandecon
 * Plibonigita: Testita ĝis WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Korekto: Akcepti nulajn valorojn en nuligeblaj agordiloj de la bileta modelo
 * Korekto: Konservi ĉiujn biletojn en tutretaj globalaj tabeloj por ĝusta multreteja subteno
 * Korekto: Kaŝi personarajn kampojn kaj korekti blankpaĝan redirekton en la nova-bileta formularo de kliento
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Plibonigita: Kondiĉe ŝargi fasadajn havaĵojn nur sur subten-biletaj paĝoj
 * Plibonigita: Preterlasi plugin-aŭtoŝargilon kiam la radika aŭtoŝargilo de Bedrock jam ŝargis dependecojn
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Aldonita: Plena funkcieco por vidi biletojn por administranto kaj fasado
 * Aldonita: AJAX-traktilo por sendado de biletaj respondoj
 * Aldonita: Subteno por bileta respondfunkcieco kun ĝusta formulara traktado
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Plibonigita: Datumbaza strukturo kun ĝustaj demandaj kaj skemaj klasoj por respondoj kaj aldonaĵoj
 * Plibonigita: Migrado al realaj ecoj anstataŭ atributoj por biletaj modeloj
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Ĝisdatigita: Alinomis prefikson al ultimate-multisite por konsekvenco
 * Ĝisdatigita: Normigado de teksta domajno
 * Korektita: Malgrandaj cimo-korektoj kaj plibonigoj
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Komenca eldono
 * Kompleta bilet-administra sistemo
 * Plurnivela alirkontrolado

@@ -4,13 +4,13 @@ title: Шүүлтүүр - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Шүүлтүүр: wu_enforce_password_rules
+# Шүүлтүүр: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Нэмэлт нууц үгийн дүрмүүдийг хэрэгжүүлэх эсэхийг шүүнэ.
 
 Үнэн үед хамгийн бага урт болон тэмдэгтийн шаардлагуудыг хэрэгжүүлнэ. "Super Strong" тохиргоонд эсвэл Defender Pro-ийн Strong Password боломж идэвхтэй үед автоматаар идэвхждэг.
 
-## Параметрүүд
+## Параметрүүд {#parameters}
 
 | Нэр | Төрөл | Тайлбар |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 | $strength_setting | `string` | Админы тохиргооны утга. |
 | $defender_active | `bool` | Defender Pro Strong Password идэвхтэй эсэх. |
 
-### Хувилбараас
+### Хувилбараас {#since}
 
 - 2.4.0
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531)-д 531-р мөрөнд тодорхойлсон

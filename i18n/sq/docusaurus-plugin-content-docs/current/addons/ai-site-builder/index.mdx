@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Ndërtuesi i faqeve me AI
+# Ndërtuesi i faqeve me AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Kërkesat
+## Kërkesat {#requirements}
 
 - WordPress 5.3 ose më i lartë
 - PHP 7.4 ose më i lartë
 - plugin-i Multisite Ultimate (aktiv)
 
-## Instalimi
+## Instalimi {#installation}
 
 1. Ngarkoni skedarët e addon-it në direktoriumin tuaj `/wp-content/plugins/`
 2. Aktivizoni plugin-in përmes menusë 'Plugins' në WordPress
 3. Konfiguroni cilësimet e addon-it në administrimin e rrjetit
 
-## Zhvillimi
+## Zhvillimi {#development}
 
-### Konfigurimi
+### Konfigurimi {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura e projektit
+### Struktura e projektit {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Rregullat e modernizimit të kodit
 ```
 
-### Testimi
+### Testimi {#testing}
 
 Addon-i përfshin një kornizë gjithëpërfshirëse testimi:
 
@@ -79,44 +79,44 @@ Addon-i përfshin një kornizë gjithëpërfshirëse testimi:
 - **Mbulimi i testeve**: Konfiguruar për të gjurmuar mbulimin e kodit
 - **Testimi multisite**: Testet ekzekutohen në mjedis multisite
 
-### Standardet e kodit
+### Standardet e kodit {#code-standards}
 
 - **Standardet e kodimit të WordPress**: Zbatohen përmes PHPCS
 - **Përputhshmëria me PHP 7.4+**: Mbështeten veçoritë moderne të PHP
 - **Analiza statike**: Integrim me PHPStan për kontrollin e tipeve
 - **Modernizimi i kodit**: Rregulla Rector për përditësime të PHP
 
-### Sistemi i ndërtimit
+### Sistemi i ndërtimit {#build-system}
 
 - **Përpunimi i aseteve**: Minifikim për skedarët CSS/JS
 - **Përkthimi**: Gjenerimi i skedarit POT
 - **Paketimi**: Krijimi i arkivit për shpërndarje
 - **Modaliteti i zhvillimit**: Asete të paminifikuara për diagnostikim
 
-## Konfigurimi
+## Konfigurimi {#configuration}
 
 Addon-i mbështet opsione të ndryshme konfigurimi të aksesueshme përmes ndërfaqes së administrimit të rrjetit.
 
-## Hooks dhe filtrat
+## Hooks dhe filtrat {#hooks-and-filters}
 
-### Veprimet
+### Veprimet {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Aktivizohet pas inicializimit të addon-it
 - `ultimate-multisite-ai-site-builder_loaded` - Aktivizohet pasi të jenë ngarkuar të gjithë skedarët e addon-it
 
-### Filtrat
+### Filtrat {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modifikoni cilësimet e addon-it
 - `ultimate-multisite-ai-site-builder_enabled` - Anashkaloni statusin e aktivizimit/çaktivizimit të addon-it
 
-## Licenca
+## Licenca {#license}
 
 Ky addon licencohet sipas GPL v3 ose më të vonshme.
 
-## Mbështetja
+## Mbështetja {#support}
 
 Për mbështetje dhe dokumentacion, vizitoni [MultisiteUltimate.com](https://multisiteultimate.com)
-## Regjistri i ndryshimeve
+## Regjistri i ndryshimeve {#changelog}
 
 - Versioni 1.0.1 (2025-09-28): riemërtoni prefiksin në ultimate-multisite; përditësoni domenin e tekstit; rritje versioni.
 

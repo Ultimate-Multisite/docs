@@ -3,19 +3,19 @@ title: 'Leciono 13: Skalado'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Leciono 13: Pligrandiĝo
+# Leciono 13: Pligrandiĝo {#lesson-13-scaling-up}
 
 Vi havas funkciantan platformon kun pagantaj klientoj. Ĉi tiu leciono traktas kiel kreski de malgranda operacio al daŭripova komerco -- skalante infrastrukturon, aŭtomatigante operaciojn, kaj pliigante enspezon por ĉiu kliento.
 
-## Kie Ni Ĉesis
+## Kie Ni Ĉesis {#where-we-left-off}
 
 FitSite estas publika, klientoj registriĝas, kaj vi administras ĉiutagajn operaciojn. Nun ni fokusiĝas al kresko.
 
-## Konu Viajn Nombrojn
+## Konu Viajn Nombrojn {#know-your-numbers}
 
 Antaŭ skalado, komprenu kie vi staras:
 
-### Ĉefaj Metrikoj
+### Ĉefaj Metrikoj {#key-metrics}
 
 - **MRR (Monata Ripetiĝanta Enspezo)**: Totala monata abona enspezo
 - **Klientonombro**: Totalo de aktivaj abonantoj
@@ -24,7 +24,7 @@ Antaŭ skalado, komprenu kie vi staras:
 - **LTV (Dumviva Valoro)**: Meza enspezo por kliento dum ilia tuta abono
 - **CAC (Kosto de Klientakiro)**: Meza kosto por akiri unu klienton
 
-### Ekzemplo: FitSite ĉe 50 Klientoj
+### Ekzemplo: FitSite ĉe 50 Klientoj {#example-fitsite-at-50-customers}
 
 | Metriko | Valoro |
 |--------|-------|
@@ -36,9 +36,9 @@ Antaŭ skalado, komprenu kie vi staras:
 
 Ĉi tiuj nombroj diras al vi pri kio fokusiĝi. Alta nuligo? Riparu retenadon. Malalta ARPU? Antaŭenigu ĝisdatigojn. Alta CAC? Optimumigu akirkanalojn.
 
-## Skalado de Infrastrukturo
+## Skalado de Infrastrukturo {#scaling-infrastructure}
 
-### Kiam Skali
+### Kiam Skali {#when-to-scale}
 
 Skalu gastigadon kiam:
 
@@ -47,7 +47,7 @@ Skalu gastigadon kiam:
 - Vi alproksimiĝas al 100+ aktivaj retejoj
 - Klientaj plendoj pri rapideco pliiĝas
 
-### Kiel Skali
+### Kiel Skali {#how-to-scale}
 
 - **Vertikala skalado**: Ĝisdatigu al pli granda servilo (pli da CPU, RAM)
 - **Kaŝmemoraj tavoloj**: Aldonu Redis/Memcached por objekta kaŝmemorado, paĝa kaŝmemorado por statika enhavo
@@ -55,7 +55,7 @@ Skalu gastigadon kiam:
 - **Datumbaza optimumigo**: Dum la reto kreskas, datumbazaj demandoj malrapidiĝas. Optimumigu tabelojn, aldonu indeksojn, konsideru dediĉitan datumbazan servilon.
 - **Apartigu respondecojn**: Movu amaskomunikilan stokadon al objekta stokado (S3-kongrua), transŝarĝu retpoŝton al transakcia retpoŝta servo
 
-### Gastigada Migrado
+### Gastigada Migrado {#hosting-migration}
 
 Se via nuna gastiganto ne povas skali plu, planu migradon:
 
@@ -65,11 +65,11 @@ Se via nuna gastiganto ne povas skali plu, planu migradon:
 4. Ĝisdatigu DNS kun minimuma TTL antaŭe
 5. Kontrolu ke ĉio funkcias post migrado
 
-## Aŭtomatigado de Operacioj
+## Aŭtomatigado de Operacioj {#automating-operations}
 
 Dum vi kreskas, manaj procezoj fariĝas botelkoloj. Aŭtomatigu tion, kion vi povas:
 
-### Webhooks kaj Zapier
+### Webhooks kaj Zapier {#webhooks-and-zapier}
 
 Uzu [Webhooks](/user-guide/integrations/webhooks) aŭ [Zapier](/user-guide/integrations/zapier) por aŭtomatigi:
 
@@ -78,7 +78,7 @@ Uzu [Webhooks](/user-guide/integrations/webhooks) aŭ [Zapier](/user-guide/integ
 - **Pagaj malsukcesoj** → alarmu en via monitora ilo
 - **Planaj ĝisdatigoj** → gratula retpoŝto kun gvidilo pri novaj funkcioj
 
-### Retpoŝta Aŭtomatigo
+### Retpoŝta Aŭtomatigo {#email-automation}
 
 Transiru de manaj retpoŝtoj al aŭtomatigitaj sinsekvoj:
 
@@ -87,30 +87,30 @@ Transiru de manaj retpoŝtoj al aŭtomatigitaj sinsekvoj:
 - Ĝisdatigaj instigoj kiam klientoj alproksimiĝas al planaj limoj
 - Renovigaj memorigiloj por jaraj abonantoj
 
-### Subtena Aŭtomatigo
+### Subtena Aŭtomatigo {#support-automation}
 
 - **Pretaj respondoj** por oftaj demandoj
 - **Aŭtomataj respondoj** kiuj konfirmas ricevon de subtenaj petoj
 - **Scibazaj sugestoj** kiam klientoj sendas petojn kiuj kongruas kun ekzistantaj artikoloj
 
-## Pliigo de Enspezo
+## Pliigo de Enspezo {#increasing-revenue}
 
 Kresko ne temas nur pri pli da klientoj. Ĝi temas ankaŭ pri pli da enspezo por ĉiu kliento.
 
-### Suprenvendado al Ekzistantaj Klientoj
+### Suprenvendado al Ekzistantaj Klientoj {#upselling-existing-customers}
 
 - **Planaj ĝisdatigoj**: Celitaj kampanjoj montrantaj funkciojn de Kreska/Profesia al Komencaj klientoj
 - **Mendaj aldonofertoj**: Reklamu aldonajn produktojn al ekzistantaj klientoj per retpoŝto
 - **Jara konvertiĝo**: Proponu al monataj klientoj rabaton por transiri al jara fakturado
 
-### Novaj Enspezfluoj
+### Novaj Enspezfluoj {#new-revenue-streams}
 
 - **Farita-por-vi agordo**: Postulu superpagon por agordi kaj personecigi retejon de kliento por ili
 - **Propraj dezajnaj servoj**: Proponu laŭmendan dezajnlaboron aldone al la ŝablono
 - **Trejnaj sesioj**: Pagataj unu-kontraŭ-unu promenigoj por klientoj kiuj volas praktikan helpon
 - **Superaj kromprogramoj**: Proponu niĉ-specifajn superajn kromprogramojn kiel pagatajn aldonaĵojn (ekz., fenestraĵo por rezervi taŭgecklasojn)
 
-### Altigo de Prezoj
+### Altigo de Prezoj {#raising-prices}
 
 Dum via platformo maturiĝas kaj aldonas valoron:
 
@@ -118,7 +118,7 @@ Dum via platformo maturiĝas kaj aldonas valoron:
 - Altigu prezojn por novaj registriĝoj
 - Pravigu altigojn per novaj funkcioj kaj plibonigoj
 
-## Konstruado de Teamo
+## Konstruado de Teamo {#building-a-team}
 
 Iam, vi ne povas fari ĉion sola. Oftaj unuaj dungoj:
 
@@ -128,7 +128,7 @@ Iam, vi ne povas fari ĉion sola. Oftaj unuaj dungoj:
 
 Vi ne bezonas dungitojn. Kontraktistoj kaj sendependaj laboristoj bone funkcias por platforma komerco.
 
-## Kreskaj Mejloŝtonoj
+## Kreskaj Mejloŝtonoj {#growth-milestones}
 
 | Mejloŝtono | Proksimuma MRR | Fokuso |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Vi ne bezonas dungitojn. Kontraktistoj kaj sendependaj laboristoj bone funkcias 
 | 250-500 klientoj | $25,000-$50,000 | Teamkonstruado, novaj enspezfluoj, superaj funkcioj |
 | 500+ klientoj | $50,000+ | Platforma matureco, apudaj niĉoj, ebla eliro |
 
-## Kion Ni Konstruis Ĉi-lecione
+## Kion Ni Konstruis Ĉi-lecione {#what-we-built-this-lesson}
 
 - **Metrika kadro** por kompreni komercan sanon
 - **Plano por skalado de infrastrukturo** por kreski de dekoj al centoj da retejoj

@@ -3,11 +3,11 @@ title: Pangembangan Gerbang Kustom
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pangembangan Gateway Kustom
+# Pangembangan Gateway Kustom {#custom-gateway-development}
 
 Sampeyan bisa nggawe gateway pembayaran kustom kanthi ngembangake kelas `Base_Gateway`.
 
-## Kelas Gateway
+## Kelas Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Ndhaptar Gateway
+## Ndhaptar Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Metode Kunci
+## Metode Kunci {#key-methods}
 
 | Metode | Tujuan |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Nangani panjalukan refund |
 | `get_payment_methods()` | Mbalekake metode pambayaran sing disimpen kanggo customer |
 
-## Kredensial nganyari kanggo membership bola-bali
+## Kredensial nganyari kanggo membership bola-bali {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ngidini integrasi gateway nglaporake apa membership bola-bali nduweni kredensial nganyari sing bisa digunakake maneh sadurunge `auto_renew` disimpen. Hook `wu_membership_has_renewal_credential` lan balekake:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Resiki tandha kredensial-ilang minangka bagean saka alur re-authorization gateway sampeyan sing sukses sawise kredensial anyar sing bisa digunakake maneh disimpen.
 
-## Tips
+## Tips {#tips}
 
 - Tansah balekake `WP_Error` nalika gagal supaya Ultimate Multisite bisa nangani tampilan kasalahan
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gunakake `wu_log_add()` kanggo logging khusus gateway
 
-## Kapabilitas panyedhiya panyambung AI
+## Kapabilitas panyedhiya panyambung AI {#ai-connector-provider-capabilities}
 
 Integrasi kustom sing nelpon operasi sing didhukung panyambung AI kudu selaras karo set panyedhiya OAuth sing didhukung sing dikenalake karo AI Provider for Anthropic Max v1.3.0:
 

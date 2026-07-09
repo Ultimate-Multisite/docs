@@ -3,11 +3,11 @@ title: Ítarleg kóðadæmi
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ítarleg kóðadæmi
+# Ítarleg kóðadæmi {#advanced-code-examples}
 
 Þessi dæmi sýna ítarleg samþættingarmynstur með Ultimate Multisite.
 
-## Kvikt verðkerfi
+## Kvikt verðkerfi {#dynamic-pricing-engine}
 
 Reglubundið verðkerfi sem beitir afslætti fyrir magn, tryggð og árstíðir:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Ítarleg úthlutun vefsvæða
+## Ítarleg úthlutun vefsvæða {#advanced-site-provisioning}
 
 Stilltu ný vefsvæði sjálfkrafa með viðbótum, SSL, CDN, afritum og vöktun út frá eiginleikum áætlunar:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sérsniðið takmörkunarkerfi
+## Sérsniðið takmörkunarkerfi {#custom-limitations-system}
 
 Fylgstu með og framfylgdu auðlindatakmörkum með notkunarviðvörunum:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB óskiptur teljari með `increment_item()`
+## BerlinDB óskiptur teljari með `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 bætti `increment_item()` aðferð við BerlinDB `Query` class. Notaðu hana til að framkvæma öruggar, óskiptar hækkanir á tölulegum dálkum án read-modify-write kapphlaupa — gagnlegt fyrir teljara, notkunarkvóta og rate-limiting athuganir sem keyra undir samhliða beiðnum.
 
-### Aðferðarundirskrift
+### Aðferðarundirskrift {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 bætti `increment_item()` aðferð við BerlinDB `Quer
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Grunnnotkun
+### Grunnnotkun {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Rakning API-notkunar fyrir hverja membership
+### Rakning API-notkunar fyrir hverja membership {#tracking-api-usage-per-membership}
 
 Hagnýtt mynstur til að framfylgja API rate limits fyrir hverja membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Af hverju `increment_item()` í stað `update_item()`
+### Af hverju `increment_item()` í stað `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Einföld read-modify-write nálgun er óörugg undir samhliða beiðnum:
 

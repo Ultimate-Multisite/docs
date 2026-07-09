@@ -3,11 +3,11 @@ title: Chwilio Parthau yn y Pennyn
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Chwilio Parth o’r Pennyn
+# Chwilio Parth o’r Pennyn {#header-domain-search}
 
 Defnyddiwch y gosodiad hwn pan fyddwch eisiau ffurflen bennyn fach sy’n dechrau chwiliad parth, ac yna’n gadael i’r cwsmer ddewis o barthau sydd ar gael y tu mewn i daliad Ultimate Multisite.
 
-## Gofynion
+## Gofynion {#requirements}
 
 - Ultimate Multisite yn weithredol ar y rhwydwaith.
 - Multisite Ultimate Domain Seller yn weithredol ar y rhwydwaith.
@@ -16,7 +16,7 @@ Defnyddiwch y gosodiad hwn pan fyddwch eisiau ffurflen bennyn fach sy’n dechra
   - TLDs a gefnogir wedi’u ffurfweddu, er enghraifft `com`, `net`, a `org`.
 - Ffurflen dalu ddilys sy’n cynnwys y maes **Dewis Parth**.
 
-## Ffurflen dalu
+## Ffurflen dalu {#checkout-form}
 
 1. Crëwch neu golygwch y ffurflen dalu a ddefnyddir gan y dudalen gofrestru.
 2. Ychwanegwch y meysydd talu/cyfrif gofynnol arferol, gan gynnwys **Enw defnyddiwr**. Caiff ffurflen dalu sy’n cynnwys y maes parth yn unig ei gwrthod gan ddilysiad Ultimate Multisite.
@@ -30,7 +30,7 @@ Dylai’r dudalen gofrestru rendro’r ffurflen dalu, er enghraifft:
 [wu_checkout slug="domain-form"]
 ```
 
-## Ffurflen bennyn
+## Ffurflen bennyn {#header-form}
 
 Ychwanegwch ffurflen `GET` fach ym mhennyn y safle sy’n anfon y term chwilio a gofnodwyd i’r dudalen dalu fel `domain_name`:
 
@@ -44,7 +44,7 @@ Ychwanegwch ffurflen `GET` fach ym mhennyn y safle sy’n anfon y term chwilio a
 
 Peidiwch â rhag-ddewis parth mewn JavaScript pennyn wedi’i addasu. Dylai’r pennyn basio’r term chwilio yn unig. Mae sgript dalu Domain Seller yn darllen `?domain_name=example`, yn llenwi blwch chwilio’r taliad, ac yn rhedeg y chwiliad argaeledd fel y gall y cwsmer ddewis o’r parthau a ddychwelwyd.
 
-## Ymddygiad disgwyliedig
+## Ymddygiad disgwyliedig {#expected-behaviour}
 
 Dylai chwilio am `example` yn y pennyn agor:
 
@@ -61,7 +61,7 @@ Yna dylai’r taliad ddangos canlyniadau y gellir eu dewis megis:
 
 Ar ôl dewis canlyniad sydd ar gael, dylai crynodeb yr archeb gynnwys y cynnyrch cofrestru parth a’r enw parth a ddewiswyd.
 
-## Gwirio
+## Gwirio {#verification}
 
 1. Agorwch y dudalen gartref.
 2. Chwiliwch am enw moel, er enghraifft `example`.
@@ -71,7 +71,7 @@ Ar ôl dewis canlyniad sydd ar gael, dylai crynodeb yr archeb gynnwys y cynnyrch
 6. Cliciwch **Dewis** ar gyfer parth sydd ar gael.
 7. Cadarnhewch fod crynodeb yr archeb yn cynnwys `Domain Registration - example.com` neu’r parth a ddewiswyd.
 
-## Datrys problemau
+## Datrys problemau {#troubleshooting}
 
 - Os nad oes rhestr yn ymddangos, gwiriwch dab rhwydwaith y porwr am `admin-ajax.php?action=wu_domain_search` a chadarnhewch ei fod yn dychwelyd `domains` neu `results` nad ydynt yn wag.
 - Os yw’r ffurflen dalu yn methu dilysiad wrth gadw, ychwanegwch y meysydd cyfrif gofynnol megis **Enw defnyddiwr**.

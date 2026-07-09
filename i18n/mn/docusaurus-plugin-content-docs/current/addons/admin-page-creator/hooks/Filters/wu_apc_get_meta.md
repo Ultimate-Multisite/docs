@@ -4,11 +4,11 @@ title: Шүүлтүүр - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Шүүлтүүр: wu_apc_get_meta
+# Шүүлтүүр: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Хөгжүүлэгчдэд эцсийн утгуудыг шүүх, мөн шинэ боловсруулалтын тохиолдлууд нэмэх боломж олгоно.
 
-## Параметрүүд
+## Параметрүүд {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 | $meta_type | `string` | Татаж авах мета өгөгдлийн төрөл. |
 | $meta_key | `string` | Мета талбарын нэр. |
 
-### Хойш
+### Хойш {#since}
 
 - 1.4.0
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) дотор 93-р мөрөнд тодорхойлогдсон
 
 
-## Буцаана
+## Буцаана {#returns}
 Шинэ үндсэн утга.

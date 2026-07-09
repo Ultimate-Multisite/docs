@@ -3,15 +3,15 @@ title: Ivvalida l-Kuntrast tal-Paletta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Ivvalida l-Kuntrast tal-Palette
+# Ivvalida l-Kuntrast tal-Palette {#validate-palette-contrast}
 
 Il-kapaċità **Validate Palette Contrast** tiċċekkja pari ta' kuluri fil-palette tad-disinn tiegħek għall-konformità ma' WCAG (Web Content Accessibility Guidelines) qabel ma tapplikahom mat-theme tiegħek.
 
-## Ħarsa Ġenerali
+## Ħarsa Ġenerali {#overview}
 
 Din il-kapaċità tiżgura li l-iskema tal-kuluri tas-sit tiegħek tissodisfa standards ta' aċċessibbiltà billi tivvalida l-proporzjonijiet tal-kuntrast bejn it-test u l-kuluri tal-isfond. Tgħin biex jiġu evitati kombinazzjonijiet ta' kuluri li jistgħu jkunu diffiċli biex jinqraw minn utenti b'indebolimenti viżivi.
 
-## Format tal-Input
+## Format tal-Input {#input-format}
 
 Il-kapaċità taċċetta palette ta' kuluri bħala input:
 
@@ -35,7 +35,7 @@ Il-kapaċità taċċetta palette ta' kuluri bħala input:
 }
 ```
 
-### Parametri
+### Parametri {#parameters}
 
 | Parametru | Tip | Meħtieġ | Deskrizzjoni |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Il-kapaċità taċċetta palette ta' kuluri bħala input:
 | `wcag_level` | string | Le | Livell ta' konformità WCAG: "A", "AA" (default), jew "AAA" |
 | `pairs_to_check` | array | Le | Pari speċifiċi ta' kuluri li għandhom jiġu vvalidati (eż., `["primary-text", "background-text"]`) |
 
-## Livelli WCAG Iċċekkjati
+## Livelli WCAG Iċċekkjati {#wcag-levels-checked}
 
 Il-kapaċità tivvalida l-proporzjonijiet tal-kuntrast skont l-istandards WCAG:
 
@@ -56,7 +56,7 @@ Il-kapaċità tivvalida l-proporzjonijiet tal-kuntrast skont l-istandards WCAG:
 - **Test Normali** — test iżgħar minn 18pt (jew 14pt bold)
 - **Test Kbir** — test 18pt jew akbar (jew 14pt bold jew akbar)
 
-## Skema tal-Output
+## Skema tal-Output {#output-schema}
 
 Il-kapaċità tirritorna rapport dettaljat ta' validazzjoni:
 
@@ -95,7 +95,7 @@ Il-kapaċità tirritorna rapport dettaljat ta' validazzjoni:
 }
 ```
 
-### Oqsma tal-Output
+### Oqsma tal-Output {#output-fields}
 
 | Qasam | Tip | Deskrizzjoni |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Il-kapaċità tirritorna rapport dettaljat ta' validazzjoni:
 | `status` | string | "pass" jew "fail" għal kull par |
 | `recommendations` | array | Suġġerimenti biex jitjiebu pari li jfallu |
 
-## Eżempju ta' Użu
+## Eżempju ta' Użu {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Il-kapaċità tivvalida l-kombinazzjonijiet kollha tal-kuluri u tirritorna:
 - ✅ Sfond + Test: proporzjon 12.1:1 (jgħaddi WCAG AAA)
 - Ġenerali: Konformi ma' WCAG AA
 
-## Integrazzjoni ma' Theme Builder
+## Integrazzjoni ma' Theme Builder {#integration-with-theme-builder}
 
 Meta tuża l-għażla tad-direzzjoni tad-disinn ta' Theme Builder, il-kapaċità Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Meta tuża l-għażla tad-direzzjoni tad-disinn ta' Theme Builder, il-kapaċità
 4. Tipprovdi rakkomandazzjonijiet għal pari mhux konformi
 5. Tipprevjeni l-applikazzjoni ta' skemi ta' kuluri mhux aċċessibbli
 
-## L-Aħjar Prattiki
+## L-Aħjar Prattiki {#best-practices}
 
 - **Ibda bil-livell AA** — WCAG AA huwa l-istandard għal ħafna mill-websajts
 - **Ittestja qabel tapplika** — ivvalida l-palette tiegħek qabel ma timpenja ruħek għal disinn
@@ -137,7 +137,7 @@ Meta tuża l-għażla tad-direzzjoni tad-disinn ta' Theme Builder, il-kapaċità
 - **Ikkunsidra l-preferenzi tal-utenti** — xi utenti jista' jkollhom sensittività addizzjonali għall-kuluri
 - **Uża kontrolluri tal-kuntrast** — għaqqad din il-kapaċità ma' għodod tal-browser għall-verifika
 
-## Pari li Jfallu u Rakkomandazzjonijiet
+## Pari li Jfallu u Rakkomandazzjonijiet {#failing-pairs-and-recommendations}
 
 Jekk par ta' kuluri jfalli fil-validazzjoni, il-kapaċità tipprovdi rakkomandazzjonijiet:
 
@@ -155,7 +155,7 @@ Jekk par ta' kuluri jfalli fil-validazzjoni, il-kapaċità tipprovdi rakkomandaz
 }
 ```
 
-## Kapaċitajiet Relatati
+## Kapaċitajiet Relatati {#related-abilities}
 
 - [Iġġenera Logo SVG](./generate-logo-svg.md) — oħloq logos bil-palette tal-kuluri vvalidata tiegħek
 - [Oħloq Menu](./create-menu.md) — ibni navigazzjoni b'kuluri aċċessibbli

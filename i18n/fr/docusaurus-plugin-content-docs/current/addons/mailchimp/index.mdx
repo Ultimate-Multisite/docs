@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate : intégration Mailchimp
 
 Intégrez votre réseau Multisite Ultimate à votre Mailchimp. Vous pouvez lier certains plans à des listes Mailchimp et ajouter automatiquement des abonnés à ces listes lors de l’inscription.
 
-## Installation
+## Installation {#installation}
 
 1. Téléversez 'ultimate-multisite-mailchimp' dans le répertoire '/wp-content/plugins/'
 2. Activez le plugin via le menu 'Plugins' dans votre WordPress Network Admin
 
-## Guide d’utilisation
+## Guide d’utilisation {#usage-guide}
 
 Synchroniser les adresses e-mail des abonnés avec vos listes MailChimp est vraiment facile avec notre Add-on Ultimate Multisite : intégration MailChimp. Ce tutoriel vise à vous aider à tout configurer !
 
-## Obtenir une clé API
+## Obtenir une clé API {#getting-an-api-key}
 
 Avant de commencer à examiner les différents réglages disponibles, nous avons besoin d’une clé API MailChimp. Cela permettra à Ultimate Multisite de communiquer avec l’API MailChimp afin de récupérer des listes, des groupes et d’ajouter des adresses e-mail à ces listes et groupes lorsque les utilisateurs s’inscrivent.
 
@@ -32,7 +32,7 @@ Suivez ce tutoriel pour obtenir votre propre clé API MailChimp : [À propos des
 
 _Ajoutez votre clé API MailChimp dans_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
 
-## Mode d’intégration
+## Mode d’intégration {#integration-mode}
 
 L’add-on d’intégration MailChimp propose deux « modes d’intégration », ce qui signifie qu’il existe deux façons différentes d’utiliser l’add-on pour synchroniser les adresses e-mail.
 
@@ -40,7 +40,7 @@ L’add-on d’intégration MailChimp propose deux « modes d’intégration »,
 
 _Deux modes d’intégration pour plus de flexibilité !_
 
-### Mode 1 : listes multiples
+### Mode 1 : listes multiples {#mode-1-multiple-lists}
 
 Le mode par défaut utilise **plusieurs listes**. Ce mode vous permettra de sélectionner plusieurs listes MailChimp pour chacun des plans. C’est la meilleure option si vous segmentez vos utilisateurs dans différentes listes.
 
@@ -52,7 +52,7 @@ Pour y parvenir, vous pouvez utiliser le mode listes multiples pour ajouter les 
 
 _Sélectionnez les listes par défaut pour les nouveaux comptes et pour les comptes annulés_
 
-### Mode 2 : liste unique + groupes multiples
+### Mode 2 : liste unique + groupes multiples {#mode-2-single-list--multiple-groups}
 
 MailChimp vous permet de segmenter votre liste en groupes d’utilisateurs plus petits appelés **groupes**. Cela vous permet d’avoir plus de contrôle, car vous pouvez envoyer une campagne à un sous-ensemble spécifique de vos abonnés sans avoir à créer plusieurs copies de la même campagne sur MailChimp (ce qui rend difficile l’analyse des métriques de cette campagne par la suite).
 
@@ -62,13 +62,13 @@ Par exemple, vous pouvez avoir une liste unique appelée **My Network Subscriber
 
 _Sélectionnez les listes et groupes par défaut, si vous utilisez le mode d’intégration « liste unique + groupes multiples »_
 
-## Listes et groupes par défaut
+## Listes et groupes par défaut {#default-lists-and-groups}
 
 Après avoir sélectionné le mode d’intégration le plus pertinent pour votre cas d’utilisation particulier, il est temps de sélectionner les listes par défaut (et les groupes, selon le mode). La liste par défaut sera utilisée lorsqu’un plan donné n’a pas de liste spécifique sélectionnée.
 
 Vous pouvez également sélectionner la liste par défaut pour les comptes annulés. Chaque fois qu’un utilisateur met fin à son abonnement et supprime son compte de votre réseau, son adresse e-mail sera déplacée vers la liste définie pour les comptes annulés.
 
-## Activer le double abonnement
+## Activer le double abonnement {#enabling-double-subscription}
 
 Sur la même page de réglages, vous pourrez activer le **double abonnement**. Cette option ajoutera l’utilisateur à la fois à la liste par défaut sélectionnée ET à la liste sélectionnée pour le plan de cet utilisateur. Si cette option n’est pas activée, l’utilisateur ne sera ajouté qu’à la liste sélectionnée pour le plan de l’utilisateur. Si aucune liste n’est définie pour ce plan particulier, l’utilisateur sera alors ajouté à la liste par défaut sélectionnée.
 
@@ -76,7 +76,7 @@ Sur la même page de réglages, vous pourrez activer le **double abonnement**. C
 
 _Vous pouvez abonner vos utilisateurs à la fois à la liste par défaut et à la liste du plan lors de l’inscription_
 
-## Sélectionner des listes et des groupes pour chacun des plans
+## Sélectionner des listes et des groupes pour chacun des plans {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Accédez à vos **plans** et sélectionnez le plan que vous voulez modifier. Notez que dans la méta-boîte **Options avancées**, un nouvel onglet appelé MailChimp sera disponible.
 

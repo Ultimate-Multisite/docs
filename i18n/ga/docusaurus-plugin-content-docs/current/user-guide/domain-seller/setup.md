@@ -3,21 +3,21 @@ title: An t-aonráin agus an chuidí oibríochta
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Seller Domáin: Set-up agus Coinníollacha Anailís
+# Seller Domáin: Set-up agus Coinníollacha Anailís {#domain-seller-setup-and-provider-configuration}
 
 Tá an Addon Domain Seller ag cur le chéile ar fáil le seomra set-up a bhfaidh tú tréimhse ar chuid deatach a thaispeánann go léir gach áit ag cur le chéile. Cuireann an cur chuimne seo an t-amach agus conas a chur in áit nó a athchruinneáil na cungaitheoirí (providers) tar éis.
 
-## Cinnteanna
+## Cinnteanna {#requirements}
 
 - **Multisite Ultimate** v2.4.12 nó níos fearr, le fáil ar na ngrúpa (network-activated)
 - **PHP** 7.4+
 - Cuidiúin API do chuid registrar a bhíonn ag cur le chéile
 
-## Seomra set-up ar an áit ar an chéad uair
+## Seomra set-up ar an áit ar an chéad uair {#first-run-setup-wizard}
 
 Lánann an seomra set-up go mbeidh tú an t-amach ar an chéad uair atá tú ag fáil ar na ngrúpa (network-activate) an plugin. Tá sé cur faisnéis ag aon am chun **Network Admin › Ultimate Multisite › Domain Seller Setup** a bheith agat.
 
-### Step 1 — Déan chun cungaitheoir a chur in áit
+### Step 1 — Déan chun cungaitheoir a chur in áit {#step-1--choose-a-provider}
 
 Déan chun an registrar atá tú ag cur le chéile a chur in áit. Opciones a bhíonn ar fáil:
 
@@ -33,7 +33,7 @@ Déan chun an registrar atá tú ag cur le chéile a chur in áit. Opciones a bh
 | NameSilo | Níl | Níl |
 | Enom | Is | Níl |
 
-### Step 2 — Déan chun faisnéis a chur in áit
+### Step 2 — Déan chun faisnéis a chur in áit {#step-2--enter-credentials}
 
 Tá feidhm cheangailte ag cungaitheoirí éasca ag cur le chéile:
 
@@ -57,7 +57,7 @@ Tá feidhm cheangailte ag cungaitheoirí éasca ag cur le chéile:
 
 Chonrócht **Sandbox mode** a bhfuil sé ar fáil chun teastáil ar an chuid test de bhfostála leat ar an chuid ardán ar an chuid test de bhfostála primaill ar bhealach a bhí.
 
-### Step 3 — Teastaigh an cur chuimneamh
+### Step 3 — Teastaigh an cur chuimneamh {#step-3--test-the-connection}
 
 Cliceáil ar **Test Connection**. Bíonn an fáil ag an mór a chur ar API call leat chun cur chuimhneamh agus cur chuimhneamh ar chuid féin a sholáir. Féach an aon cheisteanna cur chuimhneamh primaill go léir primaill a bheith agat primaill go léir a bhí agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a bheith agat primaill a fháil go léir a bheith agat primaill a
 
@@ -68,11 +68,11 @@ Cliceáil ar **Test Connection**. Bíonn an fáil ag an mór a chur ar API call 
 - **Tráchnaigh píbiseanna domáin** — línteán leatúil chun an liosta píbiseanna a chuiditeáil.
 - **Curaíocht chuidítheisí** — léiríonn sé an fáil ar an gcurraíocht (Integration Wizard) chun cuidítheisí nua a chur i bhfeidm mar gheall ar chuidítheisí nó a athchruinneáil.
 
-### Áirítear cuidítheis eile
+### Áirítear cuidítheis eile {#step-4--import-tlds}
 
 Cliceáil ar **Curaíocht chuidítheisí** agus déan an fáil ar an gcurraíocht (wizard) ar an registrar nua. Is féidir leat cuidítheisí go léir a chur i bhfeidm go díreach, nó a bheith ag cur mionglúcháin leatúil. Déan an cuidítheas domáin chúirt chun cuidítheis a sholáthach a chur ar chuidítheas, nó léim go léir ar an cuidítheas leatúil.
 
-### Synchreinradh TLDs go díreach
+### Synchreinradh TLDs go díreach {#step-5--create-a-domain-product}
 
 Agair mór ar an curraíocht (settings page), cliceáil ar **Synchreinradh TLDs** a chur i bhfeidm ag cuidítheis nó a chuiditeáil chun an gníomhacha nua a laighinn. Is é seo go maith tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach tar
 
@@ -92,7 +92,7 @@ Agair mór ar an curraíocht (settings page), cliceáil ar **Synchreinradh TLDs*
 
 ---
 
-## Nótaí ar chuid cúaitheoirí (Provider capability notes)
+## Nótaí ar chuid cúaitheoirí (Provider capability notes) {#reconfiguring-a-provider}
 
 Ndiú mar n-éosta API de chuid registrar a chur i ardán na haghaidh gach oiriúnach. Tá an addon a chur in i ardán na oiriúnacha an-aontaithe (unsupported operations) le éiríneadh admin ar fáil go bhfuil siad ag déanamh éiríneadh ar fáil ach níl siad ag déanamh éiríneadh ar fáil.
 

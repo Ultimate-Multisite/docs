@@ -3,13 +3,13 @@ title: Custom Registrar интеграц бүтээх
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Захиалгат registrar интеграци бүтээх
+# Захиалгат registrar интеграци бүтээх {#building-a-custom-registrar-integration}
 
 Domain Seller addon нь **Integration Registry** загварыг ашигладаг. Registrar бүр нь `Domain_Selling_Capability`-г хэрэгжүүлдэг PHP class бөгөөд `wu_domain_seller_register_capabilities` action hook-оор дамжуулан өөрийгөө бүртгэдэг.
 
 Энэ гарын авлага нь захиалгат registrar-г хэрхэн холбохыг харуулна.
 
-## Интерфейс
+## Интерфейс {#the-interface}
 
 Таны class `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability`-г хэрэгжүүлж, `WP_Ultimo\Integrations\Base_Capability_Module`-г өргөтгөх ёстой.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Сонголттой аргууд
+### Сонголттой аргууд {#optional-methods}
 
 Нэмэлт боломжуудыг нээхийн тулд эдгээрийг хэрэгжүүлнэ үү. Addon нь дэмжлэгийг `method_exists()`-оор илрүүлдэг:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Домэйн шилжүүлэг (гарах) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Домэйн шилжүүлэг (орох) |
 
-### Буцаах утгын зарчим
+### Буцаах утгын зарчим {#return-value-convention}
 
 Бүх аргууд хамгийн багадаа `success` key агуулсан array буцаана:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Capability-гаа бүртгэх
+## Capability-гаа бүртгэх {#registering-your-capability}
 
 `wu_domain_seller_register_capabilities` action ашиглан class-аа бүртгэнэ үү:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Wizard-д credential талбарууд нэмэх
+## Wizard-д credential талбарууд нэмэх {#adding-credential-fields-to-the-wizard}
 
 Админууд setup wizard-оор дамжуулан credentials оруулах боломжтой болгохын тулд интеграциа бүртгэнэ үү:
 
@@ -137,7 +137,7 @@ Credentials нь талбарын ID-г key болгон ашиглаж network 
 
 ---
 
-## Бүртгэлийн дараах үйлдлүүдэд зориулсан hook-ууд
+## Бүртгэлийн дараах үйлдлүүдэд зориулсан hook-ууд {#hooks-for-post-registration-actions}
 
 Webhook, provisioning, мэдэгдэл, эсвэл CRM шинэчлэлтүүдийг өдөөхийн тулд эдгээр action-уудыг ашиглана уу:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Лог бүртгэл
+## Лог бүртгэл {#logging}
 
 `wu_log_add()` ашиглан өөрийн үйлчилгээ үзүүлэгчид хамаарах лог суваг руу бичнэ үү:
 

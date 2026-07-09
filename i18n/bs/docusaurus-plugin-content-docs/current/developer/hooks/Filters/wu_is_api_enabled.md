@@ -4,16 +4,16 @@ title: Filter - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Filter: wu_is_api_enabled
+# Filter: wu_is_api_enabled {#filter-wuisapienabled}
 
 Omogućava programerima pluginova da prisile određeno stanje za API.
 
-### Od
+### Od {#since}
 
 - 1.7.4
-### Izvor
+### Izvor {#source}
 
 Definisano je u [`inc/class-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-api.php#L435) na liniji 435
 
 
-## Vraća
+## Vraća {#returns}

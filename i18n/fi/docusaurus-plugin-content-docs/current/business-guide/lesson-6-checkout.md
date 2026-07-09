@@ -3,15 +3,15 @@ title: 'Oppitunti 6: Rekisteröitymiskokemus'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Oppitunti 6: Rekisteröitymiskokemus
+# Oppitunti 6: Rekisteröitymiskokemus {#lesson-6-the-signup-experience}
 
 Kassaprosessi on kohta, jossa kiinnostus muuttuu tuotoksi. Sekava tai geneerinen rekisteröitymisprosessi menettää asiakkaita. Niche-kohtainen prosessi, joka puhuu heidän kieltään ja tuntuu vaivattomalta, konvertoi heidät.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSitelle on määritetty mallipohjat ja paketit. Nyt rakennamme rekisteröitymis- ja kassakokemuksen, joka muuttaa fitness-studioiden omistajat maksaviksi asiakkaiksi.
 
-## Rekisteröitymisprosessin ymmärtäminen
+## Rekisteröitymisprosessin ymmärtäminen {#understanding-the-registration-flow}
 
 Ultimate Multisite:n kassalomakkeet ovat täysin mukautettavia monivaiheisia lomakkeita. FitSitelle haluamme prosessin, joka:
 
@@ -21,11 +21,11 @@ Ultimate Multisite:n kassalomakkeet ovat täysin mukautettavia monivaiheisia lom
 
 Katso täydellinen tekninen viite kohdasta [Rekisteröitymisprosessi](/user-guide/configuration/the-registration-flow).
 
-## FitSite-kassan suunnittelu
+## FitSite-kassan suunnittelu {#designing-the-fitsite-checkout}
 
 Siirry kohtaan **Ultimate Multisite > Kassalomakkeet** ja luo uusi lomake.
 
-### Vaihe 1: Paketin valinta
+### Vaihe 1: Paketin valinta {#step-1-plan-selection}
 
 Ensimmäisen asian, jonka fitness-studion omistaja näkee, tulisi olla paketit esitettyinä termeillä, jotka hän ymmärtää.
 
@@ -37,7 +37,7 @@ Ensimmäisen asian, jonka fitness-studion omistaja näkee, tulisi olla paketit e
 "1 GB storage" means nothing to a gym owner. "Everything you need for a professional studio website" means everything. Write plan descriptions in your customer's language.
 :::
 
-### Vaihe 2: Mallipohjan valinta
+### Vaihe 2: Mallipohjan valinta {#step-2-template-selection}
 
 Paketin valinnan jälkeen asiakas valitsee aloitusmallipohjansa.
 
@@ -45,7 +45,7 @@ Paketin valinnan jälkeen asiakas valitsee aloitusmallipohjansa.
 - Saatavilla olevat mallipohjat suodatetaan asiakkaan valitseman paketin perusteella (määritetty oppitunnilla 5)
 - Jokaisella mallipohjalla tulisi olla esikatselukuva, joka näyttää fitness-kohtaisen designin
 
-### Vaihe 3: Accountin luonti
+### Vaihe 3: Accountin luonti {#step-3-account-creation}
 
 Pidä tämä mahdollisimman yksinkertaisena. Kerää vain:
 
@@ -55,27 +55,27 @@ Pidä tämä mahdollisimman yksinkertaisena. Kerää vain:
 
 Älä kysy tietoja, joita et tarvitse rekisteröitymisessä. Jokainen ylimääräinen kenttä vähentää konversioita.
 
-### Vaihe 4: Sivuston määritys
+### Vaihe 4: Sivuston määritys {#step-4-site-setup}
 
 - **Sivuston otsikko**: Esitäytä vaiheessa 3 annetulla studion nimellä
 - **Sivuston URL**: Luo automaattisesti studion nimestä (esim. `ironworks.fitsite.com`)
 
-### Vaihe 5: Maksu
+### Vaihe 5: Maksu {#step-5-payment}
 
 - Lisää **Maksu**-kenttä
 - Määritä maksuvälittäjäsi ([Stripe](/user-guide/payment-gateways/stripe) on suositeltava tilauslaskutukseen)
 - Jos loit tilauslisäyksiä oppitunnilla 5, lisää **Tilauslisäys**-kenttä ennen maksuvaihetta
 
-### Vaihe 6: Vahvistus
+### Vaihe 6: Vahvistus {#step-6-confirmation}
 
 - Mukauta vahvistusviesti fitness-kohtaisella kielellä
 - Esimerkki: "Fitness-studiosi verkkosivustoa luodaan. Sinut ohjataan uudelle sivustollesi muutaman sekunnin kuluttua."
 
-## Laskutuskauden valintakytkimen lisääminen
+## Laskutuskauden valintakytkimen lisääminen {#adding-a-period-selection-toggle}
 
 Jos määritit paketteihisi hintavaihteluita (kuukausittainen vs. vuosittainen), lisää kassalomakkeeseen **Laskutuskauden valinta**-kenttä, jotta asiakkaat voivat vaihtaa laskutuskausien välillä. Katso ohjeet kohdasta [Kassalomakkeet](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-## Maksun määrittäminen
+## Maksun määrittäminen {#configuring-payment}
 
 Jos et ole vielä määrittänyt maksuvälittäjää:
 
@@ -85,7 +85,7 @@ Jos et ole vielä määrittänyt maksuvälittäjää:
 
 Katso lisätietoja siitä, miten maksut kulkevat tilillesi, kohdasta [Maksujen vastaanottaminen](/user-guide/payment-gateways/getting-paid).
 
-## Prosessin testaaminen
+## Prosessin testaaminen {#testing-the-flow}
 
 Ennen kuin jatkat, suorita täydellinen testirekisteröityminen:
 
@@ -105,7 +105,7 @@ Tarkista, että:
 - [ ] Asiakas päätyy toimivalle sivustolle, jossa on valittu mallipohja
 - [ ] Vahvistussähköpostit käyttävät fitness-kohtaista kieltä
 
-## FitSite-verkosto tähän mennessä
+## FitSite-verkosto tähän mennessä {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Mitä rakensimme tällä oppitunnilla
+## Mitä rakensimme tällä oppitunnilla {#what-we-built-this-lesson}
 
 - **Monivaiheinen kassalomake**, joka on räätälöity fitness-studioiden omistajille
 - **Niche-kohtainen kieli** koko rekisteröitymisprosessissa

@@ -3,9 +3,9 @@ title: Kaitiakitanga o ngā raupare me ngā invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Whakawhanaungatanga me Pākehā (Managing Payments and Invoices)
+# Whakawhanaungatanga me Pākehā (Managing Payments and Invoices) {#managing-payments-and-invoices}
 
-## Whakawhanaunga o Ngā Rautaki Rautaki (Payment Settings)
+## Whakawhanaunga o Ngā Rautaki Rautaki (Payment Settings) {#payment-settings}
 
 Iha reira i te whaiārahi i pēke, ka tino kitea ana i roto i te whakarite ngā rautaki pai. Pāinga ki **Ultimate Multisite → Settings** ā, he rā i te **Payment** (Pākehā).
 
@@ -15,7 +15,7 @@ He whakaahua mō te whānui o te puta mai o ngā rautaki pai:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Rautaki Pēke Whānui (General Payment Options)
+### Rautaki Pēke Whānui (General Payment Options) {#general-payment-options}
 
 I ngā rautaki pai, ka taea e koe te whakarite i:
 
@@ -24,7 +24,7 @@ I ngā rautaki pai, ka taea e koe te whakarite i:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Ngā Pākehā Pēke (Payment Gateways)
+### Ngā Pākehā Pēke (Payment Gateways) {#payment-gateways}
 
 He tino whaiaro ana ko Ultimate Multisite e whakamohoho ngā pēke pai mō te pēke. Ka taea e koe te whakahou me te whakarite i kāore he mea i tēnei rā i te rautaki pai.
 
@@ -40,11 +40,11 @@ Kaori i roto i ngā pākehā pai ko he wāhi whakarite tino whakamahi ana ko he 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Mode Sandbox (Sandbox Mode)
+### Mode Sandbox (Sandbox Mode) {#sandbox-mode}
 
 Ka taea e koe te whakahou i **Sandbox Mode** mō te whakamārama i tō pēke pai mō te whakamātautanga i roto i te wā o te whakatika. I roto i te wā o te sandbox mode, kāore he pēke tino i te whakamahinga.
 
-## Whakawātea Ngā Pēke (Viewing Payments)
+## Whakawātea Ngā Pēke (Viewing Payments) {#viewing-payments}
 
 Pāinga ki te puta mai o ngā pēke i runga i Ultimate Multisite mō te kite i ngā pēke katoa i roto i tō whānau.
 
@@ -54,7 +54,7 @@ Ka taea e koe te whakahoki i ngā pēke i runga i te status (whakawhanaungatanga
 
 Whakatipu i te whakaaheke (payment) ki te whakaahua katoa o ia, ahakoaho ana i ngā whakamahi (line items), te mihi (membership) e whai ana, te mōhaka (customer information), me ngā whakaaturanga o te gateway o te paitanga (payment gateway data).
 
-## Invoices (Mōhaka/Whakaaheke)
+## Invoices (Mōhaka/Whakaaheke) {#invoices}
 
 He taea ai i Ultimate Multisite te whakaratake invoice automatically mo ngā whakamahi. He taea ai koe te whakatika te template o te invoice me te format o te numbering (whakawāhi) anō ana i ngā settings o te Payment.
 

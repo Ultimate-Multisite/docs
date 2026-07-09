@@ -3,11 +3,11 @@ title: WP-CLI सन्दर्भ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI सन्दर्भ
+# WP-CLI सन्दर्भ {#wp-cli-reference}
 
 Gratis AI Agent ले एजेन्टको बेन्चमार्क गर्न, क्षमताहरू व्यवस्थापन गर्न, र कमाण्ड लाइनबाट एजेन्टको स्थिति सोध्न `wp gratis-ai-agent` कमाण्ड परिवार उपलब्ध गराउँछ। सबै कमाण्डहरूलाई WP-CLI 2.0 वा उच्च आवश्यक पर्छ।
 
-## स्थापना
+## स्थापना {#installation}
 
 plugin सक्रिय हुँदा WP-CLI कमाण्डहरू स्वचालित रूपमा दर्ता हुन्छन्। यसबाट पुष्टि गर्नुहोस्:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agent Capabilities बेन्चमार्क सुइट चलाउँछ — जटिल, बहु-चरण प्रम्प्टहरूको एउटा सेट जसले पूर्ण क्षमता सतह प्रयोग गर्छ। मोडेल प्रदर्शन मूल्याङ्कन गर्न, AI प्रदायकहरू तुलना गर्न, वा उत्पादनमा तैनाथ गर्नुअघि क्षमता प्याकहरू प्रमाणीकरण गर्न यसको प्रयोग गर्नुहोस्।
 
-### सारांश
+### सारांश {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### विकल्पहरू
+### विकल्पहरू {#options}
 
 | विकल्प | वर्णन |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | आउटपुट ढाँचा: `table` (पूर्वनिर्धारित), `json`, `csv` |
 | `--save` | ऐतिहासिक तुलनाका लागि बेन्चमार्क परिणामहरू डेटाबेसमा बचत गर्नुहोस् |
 
-### उदाहरणहरू
+### उदाहरणहरू {#examples}
 
 हालको प्रदायक र मोडेलसँग पूर्ण बेन्चमार्क सुइट चलाउनुहोस्:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### आउटपुट
+### आउटपुट {#output}
 
 बेन्चमार्कले निम्न स्तम्भहरूसहित प्रति प्रश्न एक पङ्क्ति आउटपुट गर्छ:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### बेन्चमार्क प्रश्नहरू
+### बेन्चमार्क प्रश्नहरू {#benchmark-questions}
 
 पूर्वनिर्धारित सुइटमा समावेश छन्:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 स्थापित क्षमताहरू र क्षमता प्याकहरू व्यवस्थापन गर्छ।
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 सबै दर्ता गरिएका क्षमताहरू, तिनको स्रोत (core वा pack), र तिनको हालको स्थिति सूचीबद्ध गर्छ।
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 registry बाट क्षमता प्याक डाउनलोड गरी सक्रिय गर्छ।
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 प्याक नहटाई विशिष्ट क्षमता निष्क्रिय गर्छ। दिइएको साइटमा एजेन्टको दायरा सीमित गर्न उपयोगी हुन्छ।
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 पहिले निष्क्रिय गरिएको क्षमतालाई पुनः सक्रिय गर्छ।
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 हालको एजेन्ट कन्फिगरेसन र कनेक्टिभिटी स्थिति देखाउँछ।
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 debug log बाट हालको एजेन्ट गतिविधि देखाउँछ।
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 एजेन्टको अवस्था रिसेट गर्छ: इन्जेक्ट गरिएको CSS खाली गर्छ, एजेन्ट-दर्ता गरिएका CPTs र taxonomies हटाउँछ, ग्लोबल शैलीहरू रिसेट गर्छ, र एजेन्टको विकल्प क्यास खाली गर्छ। plugin वा यसको सेटिङहरू हटाउँदैन।
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## निर्गमन कोडहरू
+## निर्गमन कोडहरू {#exit-codes}
 
 सबै command सफल हुँदा `0` मा निर्गमन गर्छन्। शून्य नभएका निर्गमन कोडहरू:
 

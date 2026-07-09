@@ -4,11 +4,11 @@ title: Tace - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Tacewa: wu_admin_notices
+# Tacewa: wu_admin_notices {#filter-wuadminnotices}
 
 Ba masu haɓakawa damar tace sanarwar admin da Ultimate Multisite ya ƙara.
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Ba masu haɓakawa damar tace sanarwar admin da Ultimate Multisite ya ƙara.
 | $filter | `string` | Idan an tace sanarwar da za a iya watsarwa. |
 | $dismissed_messages | `array` | Jerin maɓallan sanarwar da aka watsar. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 2.0.0
-### Tushe
+### Tushe {#source}
 
 An ayyana shi a cikin [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) a layi na 121
 
 
-## Abin da ake mayarwa
+## Abin da ake mayarwa {#returns}

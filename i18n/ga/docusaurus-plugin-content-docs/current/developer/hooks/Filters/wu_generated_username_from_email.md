@@ -4,11 +4,11 @@ title: Scagaire - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Scagaire: wu_generated_username_from_email
+# Scagaire: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Scag ainm úsáideora custaiméara ginte.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Scag ainm úsáideora custaiméara ginte.
 | $new_user_args | `array` | Eagar d’argóintí úsáideora nua, b’fhéidir lena n-áirítear céadainmneacha agus sloinnte. |
 | $suffix | `string` | Cuir teaghrán le hainm úsáideora chun é a dhéanamh uathúil. |
 
-### Ó
+### Ó {#since}
 
 - 3.7.0
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) ag líne 488

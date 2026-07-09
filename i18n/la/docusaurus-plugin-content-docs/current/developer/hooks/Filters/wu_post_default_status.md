@@ -4,11 +4,11 @@ title: Filtrum - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status
+# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Data obiecti filtrat antequam in basim datorum reponuntur.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Data obiecti filtrat antequam in basim datorum reponuntur.
 | $post_type | `string` | Typus postis. |
 | $this | `\Base_Model` | Instantia obiecti. |
 
-### Ex quo
+### Ex quo {#since}
 
 - 2.0.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) ad lineam 320

@@ -3,7 +3,7 @@ title: Webhooki
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Uzraksts par Webhookiem (v2)
+# Uzraksts par Webhookiem (v2) {#a-first-look-on-webhooks-v2}
 
 _**PIEŠANJAS: Atzīmē, ka šī funkcija vai raksts ir paredzēts ieviešniekiem lietotājiem.**_
 
@@ -11,7 +11,7 @@ _**PIEŠANJAS: Atzīmē, ka šī funkcija vai raksts ir paredzēts ieviešniekie
 
 Tas ir noderīgs, ja jums ir nepieciešams integrēt vai pārsūtīt noteiktus datus no Ultimate Multisite citai CRM vai sistēmā katru reizi, kad notiek kāds notikums. Piemēram, jums ir jānosūtīs lietotāja vārds un e-pasta adrese sarakstam, katru reizi, kad tiek izveidots jauns lietotāja konts.
 
-## Kā izveidot webhooku
+## Kā izveidot webhooku {#how-to-create-a-webhook}
 
 Lai izveidotu webhooku, pārvietojies uz savas tīkla administrācijas dashboardu. Nospressiet **Ultimate Multisite > Webhooks > Pievienot jaunu webhooku.**
 

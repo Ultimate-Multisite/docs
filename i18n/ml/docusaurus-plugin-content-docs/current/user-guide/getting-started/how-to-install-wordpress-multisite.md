@@ -3,7 +3,7 @@ title: WordPress Multisite എങ്ങനെ ഇൻസ്റ്റാൾ ചെ
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite എങ്ങനെ ഇൻസ്റ്റാൾ ചെയ്യാം?
+# WordPress Multisite എങ്ങനെ ഇൻസ്റ്റാൾ ചെയ്യാം? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ഉപയോഗിച്ച് നിങ്ങൾക്ക് ഒരൊറ്റ ഇൻസ്റ്റാളേഷനിൽ സൈറ്റുകളുടെ ഒരു നെറ്റ്‌വർക്ക് ഉണ്ടാക്കാം. ഇത് WordPress-ൽ built-in ആയി ഉള്ള ഒരു ഫീച്ചറാണ്, പക്ഷേ സ്വതവേ ഇത് active ആയിരിക്കില്ല.
 
@@ -61,7 +61,7 @@ WordPress നൽകുന്ന ഈ code നിങ്ങളുടെ _**.htacces
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# /wp-admin-ന് trailing slash ചേർക്കുക
+# /wp-admin-ന് trailing slash ചേർക്കുക {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 fields പൂരിപ്പിച്ചതിന് ശേഷം, "Add site" ബട്ടൺ ക്ലിക്ക് ചെയ്യുക. പുതിയ subsite ഉണ്ടായിക്കഴിഞ്ഞാൽ, subsite ശരിയായി പ്രവർത്തിക്കുന്നുണ്ടെന്ന് ഉറപ്പാക്കാൻ അത് access ചെയ്ത് നോക്കുക.
 
-## സാധാരണ പ്രശ്നങ്ങൾ:
+## സാധാരണ പ്രശ്നങ്ങൾ: {#common-problems}
 
-### 1\. എനിക്ക് പുതിയ sites ഉണ്ടാക്കാൻ കഴിയുന്നു, പക്ഷേ അവ access ചെയ്യാൻ കഴിയുന്നില്ല.
+### 1\. എനിക്ക് പുതിയ sites ഉണ്ടാക്കാൻ കഴിയുന്നു, പക്ഷേ അവ access ചെയ്യാൻ കഴിയുന്നില്ല. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 നിങ്ങൾ subdomains തിരഞ്ഞെടുത്തതാണെങ്കിൽ, നിങ്ങളുടെ multisite network-നായി wildcard subdomains സെറ്റപ്പ് ചെയ്യേണ്ടതുണ്ട്.
 

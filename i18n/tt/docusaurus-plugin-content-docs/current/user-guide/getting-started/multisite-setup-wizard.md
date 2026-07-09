@@ -3,7 +3,7 @@ title: Мәгълүмат җирле системаны куллану wizardsы
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Мультисайт Нарды (Multisite Setup Wizard)
+# Мультисайт Нарды (Multisite Setup Wizard) {#multisite-setup-wizard}
 
 Бу документте WordPress-те мультисайтны настройка процессче турында сөйләшәбез. Бу wizards (нардылар) булыргач, сапсы ачыклачак һәм сиздергә тулы ярдәм итәчәк.
 
@@ -13,13 +13,13 @@ Ultimate Multisite standart WordPress quraşmalyny avtomatik kazan (wizard) bile
 Если у вас уже настроена сеть Multisite в WordPress, вы можете пропустить этот шаг полностью. Мастер появляется только тогда, когда Multisite еще не включен.
 :::
 
-## Когда появляется мастер?
+## Когда появляется мастер? {#when-does-the-wizard-appear}
 
 Ultimate Multisite-ı standart (Multisite olmayan) WordPress quraşımına aktivasiya edildikdə, plugin Multisite-ın aktif olmadığını görür və sizi adi quraşdırma wizardı əvəzinə Multisite qurma wizardına avtomatik olaraq yönləndirir.
 
 Сыртәге да барырга да **WP Admin > Ultimate Multisite > Multisite Setup** аркылуу китере аласыз.
 
-## Шартлар (Prerequisites)
+## Шартлар (Prerequisites) {#prerequisites}
 
 Мастерни іске қоралардан өндөннөңүз, төмнөләрне текшерегез:
 
@@ -31,7 +31,7 @@ Ultimate Multisite-ı standart (Multisite olmayan) WordPress quraşımına aktiv
 Буруан (wizard) сизнең `wp-config.php` файлыгызны өзгөртә һәм янәчә базалык теракүбләр яса. Әйдә анда берничә резервлә (backup) ясагыз!
 :::
 
-## 1-нче кадам: Саламу
+## 1-нче кадам: Саламу {#step-1-welcome}
 
 Бирнәчә экран WordPress Multisite нинди булалыгы турында һәм бу буруан нинди эшләргә тиеш дип аңлата.
 
@@ -43,11 +43,11 @@ WordPress конфигурациясында Мультисайт (Multisite) ф
 ![Мултисайт Сәләштерү Визард - Саламу сәгезе]
 **Продоллау**-ны сыйныч باش.
 
-## 2-нче кадам: Сеть конфигурациясе
+## 2-нче кадам: Сеть конфигурациясе {#step-2-network-configuration}
 
 Бу кадам сизгә сеть настройкаларын даргалыйчак.
 
-### Сайт структурасы
+### Сайт структурасы {#site-structure}
 
 Сайтларыңызды ничек тартипләштермелекче сайлагыз:
 
@@ -57,11 +57,11 @@ WordPress конфигурациясында Мультисайт (Multisite) ф
 :::note
 Если вы поддомены (sub-domains) seçсеңиз, дименцияләр өчен **wildcard DNS** һәм дименциядәге **wildcard SSL сертификаты** нигезләп теркәүе кирәк. Көп гачи турылган WordPress хостлар буны автомат түгел. Аңартау өчен [Ultimate Multisite 101](./ultimate-multisite-101) документын карагыз.
 
-### Сеть Название (Network Title)
+### Сеть Название (Network Title) {#network-title}
 
 Сетіңиз өчен сетәгегез өчен яки аты өчен кулланылачак. Бу дефолт якын сайтыгызның атыга "Сеть" (Network) сурәлеше белән китерә. Буны позже сетәгеләрнең настройкаларынан өзгере аласыз.
 
-### Сеть Администратор Эмейлы (Network Admin Email)
+### Сеть Администратор Эмейлы (Network Admin Email) {#network-admin-email}
 
 Сете администрациясы хабарламалар өчен кулланылачак электрон почта адресе. Бу яңадан иседелнең электрон почтасы белән бәйлеге кабул итә.
 
@@ -69,7 +69,7 @@ WordPress конфигурациясында Мультисайт (Multisite) ф
 
 Биллерни doldurmadan sonra ilerlemek için **Devam et** butonuna tıklayın.
 
-## 3-нче шаг: Устаnement
+## 3-нче шаг: Устаnement {#step-3-installation}
 
 Башкарма (wizard) işə başlamaq üçün **Установить** düyməsinə basın. O, beş avtomatlaşdırılmış addımı ardınca yerin göstərən bir prosesdə hər birini real vaxtda göstərəcək:
 
@@ -98,7 +98,7 @@ WordPress конфигурациясында Мультисайт (Multisite) ф
 
 Сыртма (wizard) да автоматски да перейдет на екрана за заврѣшение.
 
-## Шаг 4: Завършване
+## Шаг 4: Завършване {#step-4-complete}
 
 Когато инсталацията свърши, ще видите съобщение за успех, което потвърждава, че WordPress Multisite е активиран.
 
@@ -110,7 +110,7 @@ WordPress конфигурациясында Мультисайт (Multisite) ф
 Мултисайт тасвирламасы диптергә соң, браузердә янәчәлек администратор аркында йортланачак. Мултисайт чегенге карата идентификация кукиләре күрүчеләр өчен гамәлгә ашырылгандыктан, инде кайгыру кирәк بولغانча кайгыруны яиндырып китәргә мөмкин.
 :::
 
-## Ручной настройка как запасной вариант
+## Ручной настройка как запасной вариант {#manual-setup-fallback}
 
 Если мастер не сможет записать данные в ваш файл `wp-config.php` (из-за проблем с правами доступа к файлу или ограничений сервера), он покажет вам точный код, который нужно добавить вручную:
 
@@ -119,9 +119,9 @@ WordPress конфигурациясында Мультисайт (Multisite) ф
 
 Ручную изменения yaptıktan sonra sayfayı yenileyin ve sihirbaz artık çoklu sitenin aktif olduğunu algılayacaktır.
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### Sihirbaz `wp-config.php` dosyasının yazılabilir olmadığını söylüyor
+### Sihirbaz `wp-config.php` dosyasının yazılabilir olmadığını söylüyor {#the-wizard-says-wp-configphp-is-not-writable}
 
 
 
@@ -143,7 +143,7 @@ Value: [ваш IP-адрес сервера]
 
 Уточните у своего хостинг-провайдера, если вы не уверены, как это настроить.
 
-### Настройка после входа в систему
+### Настройка после входа в систему {#sites-are-not-accessible-after-setup-subdomains}
 
 Если вы вышли из системы или сталкиваетесь с ошибками куки после настройки мультисайта:
 
@@ -151,7 +151,7 @@ Value: [ваш IP-адрес сервера]
 2. Янағын `yourdomain.com/wp-login.php` даログイン жасаңыз
 3. Мәселе уажайды сакласа, `wp-config.php` файлында `COOKIE_DOMAIN` параметрлере `false` емес екеніне көріңіз — бұл поддомендегі мультисайт орнатылуында белгілі мәселе.
 
-### Установка sırasında bir adım başarısız oldu
+### Установка sırasında bir adım başarısız oldu {#authentication-issues-after-setup}
 
 Eğer kurulum adımlarından biri hata veriyorsa:
 

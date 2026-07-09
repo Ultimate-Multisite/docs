@@ -3,9 +3,9 @@ title: Dnevnik promjena sinkronizacije sadržaja
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Dnevnik promjena za Content Sync
+# Dnevnik promjena za Content Sync {#content-sync-changelog}
 
-### Verzija 1.1.0 - Objavljeno 2025-12-31
+### Verzija 1.1.0 - Objavljeno 2025-12-31 {#version-110---released-on-2025-12-31}
 * Novo: Podrška za sinkronizaciju svih vrsta objava (objave, stranice, prilagođene vrste objava)
 * Novo: Filtriranje vrste objava u koraku odabira sadržaja
 * Novo: Korak odabira izvorišne web-lokacije - sinkronizirajte s bilo koje web-lokacije, ne samo s glavne web-lokacije
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Promijenjeno: Korak "Select Templates" preimenovan je u "Select Data"
 * Poboljšano: Kod specifičan za Elementor sada se pokreće samo za vrstu objave elementor_library
 
-### Verzija 1.0.0 - Objavljeno 2025-12-19
+### Verzija 1.0.0 - Objavljeno 2025-12-19 {#version-100---released-on-2025-12-19}
 * Početno izdanje
 * Čarobnjak s više koraka za odabir predložaka i web-lokacije
 * Skupna obrada s povratnim informacijama o napretku u stvarnom vremenu

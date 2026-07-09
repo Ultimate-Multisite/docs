@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-Mailen
+# E-Mailen {#emails}
 
 Den Ultimate Multisite: Emails addon erlaabt Netzwierkbesëtzer, Client-E-Mail-Konten nieft Websäiten a Memberschaften ze bereetstellen an ze verwalten. Versioun 1.1.0 füügt E-Mail-Kontemanagement fir Clienten, Webmail-Single-Sign-On, CyberPanel-Forwarder-Ënnerstëtzung a Verbesserunge bei der Bereetstellung am Bezuelprozess derbäi.
 
-## Haaptfunktiounen
+## Haaptfunktiounen {#key-features}
 
 * **Client-E-Mail-Konto-Widget**: Clientë kënnen Mailboxe vun hirer Account-Säit erstellen a verwalten, nodeems si eng aktiv E-Mail-Memberschaft hunn.
 * **Webmail-SSO a Magic Links**: Clientë kënnen Webmail direkt vun der Account-Säit mat One-Click-Authentifikatioun opmaachen, wann den Ubidder dat ënnerstëtzt.
@@ -20,14 +20,14 @@ Den Ultimate Multisite: Emails addon erlaabt Netzwierkbesëtzer, Client-E-Mail-K
 * **CyberPanel-Forwarder**: Netzwierker mat CyberPanel kënnen E-Mail-Forwarder als Deel vum E-Mail-Service-Oflaf erstellen a verwalten.
 * **Ubidderbewosst Astellungen**: D'Astellungssäit filtert Ubidder op aktiv, konfiguréiert Integratiounen, sou datt Administrateuren nëmme benotzbar Optioune gesinn.
 
-## Ufuerderungen
+## Ufuerderungen {#requirements}
 
 * Ultimate Multisite 2.0.0 oder méi héich
 * WordPress Multisite-Installatioun
 * Op d'mannst eng konfiguréiert E-Mail-Ubidder-Integratioun
 * Ubidder-API-Umeldungsinformatioune mat Erlaabnis, Mailboxen ze erstellen, Passwierder z'änneren a Webmail-Zougangslinken auszestellen, wou ënnerstëtzt
 
-## Installatioun
+## Installatioun {#installation}
 
 1. Luet d'Plugin-Fichieren op `/wp-content/plugins/ultimate-multisite-emails` erop.
 2. Aktivéiert den addon am Netzwierk iwwer **Plugins** am WordPress-Netzwierk-Admin.
@@ -35,7 +35,7 @@ Den Ultimate Multisite: Emails addon erlaabt Netzwierkbesëtzer, Client-E-Mail-K
 4. Aktivéiert d'E-Mail-Ubidder-Integratiounen, déi Dir wëllt datt Clientë benotzen.
 5. Späichert d'Astellungen, a test duerno d'Kontoerstellung mat engem Net-Produktiounsclient oder enger Staging-Websäit.
 
-## Wéi den E-Mail-Verkafsfloss funktionéiert
+## Wéi den E-Mail-Verkafsfloss funktionéiert {#how-the-email-seller-flow-works}
 
 E-Mail-Verkaf huet zwou separat Schichten:
 
@@ -53,7 +53,7 @@ Dat bedeit, datt en normale Client-Oflaf esou ass:
 5. De Panel **E-Mail-Konten** erschéngt fir déi aktiv E-Mail-Memberschaft.
 6. De Client klickt op **Account erstellen**, gëtt de lokalen Deel wéi `info` an, setzt e Passwuert, an den addon erstellt `info@their-domain.com` beim konfiguréierten Ubidder.
 
-## En E-Mail-Produkt konfiguréieren
+## En E-Mail-Produkt konfiguréieren {#configure-an-email-product}
 
 Erstellt een E-Mail-Produkt fir all E-Mail-Pak, deen Dir verkafe oder verschenke wëllt. Wann Dir nei bei der Produktariichtung sidd, fänkt mat [Äert éischt Abonnementsprodukt erstellen](../../user-guide/configuration/creating-your-first-subscription-product) un a kommt duerno hei zréck fir d'E-Mail-spezifesch Astellungen.
 
@@ -67,7 +67,7 @@ Erstellt een E-Mail-Produkt fir all E-Mail-Pak, deen Dir verkafe oder verschenke
 
 Nëmmen Ubidder, déi aktivéiert a vollstänneg op der Säit **Integratiounen** konfiguréiert sinn, erschéngen am Ubidder-Auswieler. Wann den Auswieler eidel ass, konfiguréiert a test fir d'éischt den Ubidder.
 
-## E-Mail an de Bezuelprozess derbäisetzen
+## E-Mail an de Bezuelprozess derbäisetzen {#add-email-to-checkout}
 
 E-Mail-Produkter ginn normalerweis als Zousätz zu engem Websäit-Plang ugebueden. Kuckt [Bezuelprozess-Formulairen](../../user-guide/configuration/checkout-forms) fir den allgemenge Workflow vum Bezuelprozess-Editor.
 
@@ -79,7 +79,7 @@ E-Mail-Produkter ginn normalerweis als Zousätz zu engem Websäit-Plang ugebuede
 
 D'E-Mail-Domain gëtt vun der Websäit-Domain vum Client geholl. Clientë ginn d'E-Mail-Domain net am E-Mail-Produkt-Schrëtt an.
 
-## Client-Account-E-Mail-Verwaltung
+## Client-Account-E-Mail-Verwaltung {#customer-account-email-management}
 
 Versioun 1.1.0 füügt en E-Mail-Verwaltungswidget op der Client-Account-Säit derbäi. Benotzt en, wann Clientë Mailbox-Erstellung an Ënnerhalt fir hir eege Websäite selwer bedénge sollen.
 
@@ -94,7 +94,7 @@ De Widget benotzt den Ultimate Multisite Account-Säit-Currents-System, sou datt
 
 Wann de Client den E-Mail-Panel net gesäit, kontrolléiert, datt hien eng **aktiv Email-Produktmemberschaft** huet, datt d'Memberschaft mat enger Site-Domain verlinkt gouf, an datt de Produit e konfiguréierte Provider huet.
 
-## Engem Client e gratisen E-Mail-Plang ginn
+## Engem Client e gratisen E-Mail-Plang ginn {#giving-a-customer-a-free-email-plan}
 
 Fir engem Client E-Mail ze ginn, ouni him eppes ze verrechnen, vergëff als éischt d'**E-Mail-Berechtegung**, da leg d'Mailbox un oder looss de Client se uleeën.
 
@@ -106,7 +106,7 @@ Recommandéiert Optiounen:
 
 Wann s du wëlls, datt de Client d'Mailbox selwer vun der Kontsäit aus verwalt, stell sécher, datt hien eng aktiv E-Mail-Memberschaft fir d'Domain huet. Eng manuell erstallte Provider-Mailbox ouni dës Memberschaft kann existéieren, mee de Client gesäit eventuell net de Selbstbedienungs-E-Mail-Panel dofir.
 
-## Vum Admin erstallte Konten an "Keng Bestellnummer"
+## Vum Admin erstallte Konten an "Keng Bestellnummer" {#admin-created-accounts-and-no-order-number}
 
 D'Admin-Säit **E-Mail-Konten** erstellt oder ännert eng Provider-Mailbox. Si ass net den éischte Schrëtt, fir en E-Mail-Plang ze verkafen oder ze verginn.
 
@@ -122,7 +122,7 @@ Benotz amplaz dës Reiefolleg:
 
 Wann s du nëmmen eng Provider-Mailbox fir de Client uleeë muss an keng Selbstbedienungsverwaltung iwwer d'Kontsäit brauchs, kann de vum Admin erstallte Kont duergoen. Wann s du wëlls, datt de Client en an Ultimate Multisite gesäit a verwalt, leet och d'E-Mail-Memberschaft un.
 
-## Webmail SSO a Magic-Link-Login
+## Webmail SSO a Magic-Link-Login {#webmail-sso-and-magic-link-login}
 
 Webmail SSO gëtt Clienten eng direkt Aktioun **Webmail opmaachen** vun der Kontsäit aus. Wann de aktive Provider et ënnerstëtzt, freet d'Erweiderung eng kuerzlieweg Zougrëffs-URL un a leet de Client an de Webmail weider, ouni hien ze froen, Mailbox-Zougangsdaten ze kopéieren.
 
@@ -134,7 +134,7 @@ D'Verhale vum Provider ka variéieren:
 
 Aktivéier Webmail-Zougang nëmme fir Provideren, bei deenen s du déi néideg API-Zougangsdaten konfiguréiert hues. Wann d'Aktioun bei engem Provider feelt, bestäteg als éischt, datt de Provider aktiv a konfiguréiert ass an Webmail-Login-Linken ënnerstëtzt.
 
-## Bereetstellung beim Ofschloss
+## Bereetstellung beim Ofschloss {#checkout-provisioning}
 
 D'Erweiderung stellt de **Memberschaftskontext** fir E-Mail beim Ofschloss bereet. Si späichert de Provider, d'Kontlimitt, d'Quota an d'Site-Domain, sou datt Clienten no dem Kaf hir eege Mailbox-Nimm vun der Kontsäit aus uleeë kënnen.
 
@@ -148,15 +148,15 @@ Recommandéierte Rollout:
 
 Wann d'Bereetstellung feelt, kënnen de Clientskont an d'Memberschaft nach ëmmer existéieren, wärend d'E-Mail-Memberschaft oder d'Provider-Mailbox eng Nosuerg vum Administrateur verlaangt. Kuck an d'Aktivitéitsprotokoller vun Ultimate Multisite an an d'Provider-Protokoller, ier s du nach eng Kéier probéiers.
 
-## CyberPanel-E-Mail-Forwarderen
+## CyberPanel-E-Mail-Forwarderen {#cyberpanel-email-forwarders}
 
 Fir CyberPanel-gestëtzt Netzwierker füügt Versioun 1.1.0 Ënnerstëtzung fir E-Mail-Forwarderen derbäi. Benotz Forwarderen, wann Clienten Adresse wéi `info@customer-domain.test` brauchen, fir Mailen op eng aner Inbox weiderzeleeden, ouni eng voll Mailbox unzeleeën.
 
 Ier s du Forwarderen ubitts, bestäteg, datt d'CyberPanel-Integratioun konfiguréiert an erreechbar ass. Kuck de Guide [CyberPanel-Integratioun](../../user-guide/administration/cyberpanel-integration) fir déi néideg Host-, Benotzernumm-, Passwuert- a Package-Konstanten.
 
-## Ännerungsprotokoll
+## Ännerungsprotokoll {#changelog}
 
-### Versioun 1.1.0 - Verëffentlecht den 2026-05-05
+### Versioun 1.1.0 - Verëffentlecht den 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Nei: Webmail SSO a Magic-Link-Login — Clientë kënnen direkt vun hirem Account aus mat One-Click-Authentifikatioun op Webmail zougräifen.
 * Nei: Funktioun fir d'Passwuert z'änneren ass dem Widget fir d'Gestioun vum E-Mail-Account bäigefüügt ginn.
@@ -170,28 +170,28 @@ Ier s du Forwarderen ubitts, bestäteg, datt d'CyberPanel-Integratioun konfigur�
 * Fix: Per-Request-Log-Spam aus der Email_Account_Manager-Initialiséierung geläscht.
 * Verbessert: Astellungssäit filtert elo, fir nëmmen aktiv a konfiguréiert E-Mail-Provideren ze weisen.
 
-## Heefeg gestallte Froen
+## Heefeg gestallte Froen {#frequently-asked-questions}
 
-### Kënne Clienten hir eege E-Mail-Accounten erstellen?
+### Kënne Clienten hir eege E-Mail-Accounten erstellen? {#can-customers-create-their-own-email-accounts}
 
 Jo. Wann de Client eng aktiv E-Mail-Memberschaft fir eng Domain huet an de Produit zousätzlech Accounten erlaabt, kënnen d'Clienten hir eege Mailboxen vun der Account-Säit aus erstellen a verwalten.
 
-### Ënnerstëtzt all Provider Webmail SSO?
+### Ënnerstëtzt all Provider Webmail SSO? {#does-every-provider-support-webmail-sso}
 
 Nee. SSO- a Magic-Link-Ënnerstëtzung hänkt vum aktive E-Mail-Provider of. Provideren ouni Access-Link-API kënnen trotzdeem d'Erstellung vu Mailboxen a Passwuertännerunge ënnerstëtzen.
 
-### Kënnen Administrateuren E-Mail-Accounte fir Clienten erstellen?
+### Kënnen Administrateuren E-Mail-Accounte fir Clienten erstellen? {#can-administrators-create-email-accounts-for-customers}
 
 Jo. Administrateuren kënnen E-Mail-Accounten aus der Admin-Interface erstellen, inklusiv dem Setze vum initiale Passwuert beim Erstelle vum Account. Fir Self-Service-Gestioun duerch de Client, gitt och sécher, datt de Client eng aktiv E-Mail-Memberschaft fir d'Domain huet.
 
-### Kann ech en E-Mail-Account gratis ofginn?
+### Kann ech en E-Mail-Account gratis ofginn? {#can-i-give-an-email-account-away-for-free}
 
 Jo. Erstellt e gratis/Nullpräis-E-Mail-Produkt a füügt et als aktiv Memberschaft fir de Client dobäi, oder loosst de Client de Checkout mat enger 100%-Remise ofschléissen. Nodeems d'E-Mail-Memberschaft existéiert, kann de Client oder en Administrateur déi tatsächlech Mailbox erstellen.
 
-### Firwat freet d'Zouweise vun engem E-Mail-Account no enger Bestellnummer?
+### Firwat freet d'Zouweise vun engem E-Mail-Account no enger Bestellnummer? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 D'Memberschafts-Feld sicht eng bestoend Ultimate Multisite-Memberschaft iwwer hir Referenz-/Bestellnummer. Wann de Client keen E-Mail-Produkt kaaft huet an Dir keng E-Mail-Memberschaft manuell erstallt hutt, gëtt et keng E-Mail-Memberschaft/Bestellung fir zouzeweisen. Erstellt als éischt d'E-Mail-Memberschaft, da erstellt oder weist d'Mailbox zou.
 
-### Sinn Forwarder datselwecht wéi Mailboxen?
+### Sinn Forwarder datselwecht wéi Mailboxen? {#are-forwarders-the-same-as-mailboxes}
 
 Nee. Eng Mailbox späichert E-Mailen an huet Login-Umeldungsdaten. E Forwarder leet E-Mailen op eng aner Adress weider a bitt keng separat Inbox.

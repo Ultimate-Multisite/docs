@@ -3,28 +3,28 @@ title: REST API icmalı
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API İstinadı
+# REST API İstinadı {#rest-api-reference}
 
-## Əsas Konfiqurasiya
+## Əsas Konfiqurasiya {#base-configuration}
 
 **Əsas URL:** `{site_url}/wp-json/wu/v2/`
 **Autentifikasiya:** API Açarı və Secret (HTTP Basic Auth və ya URL Parametrləri)
 
-## Autentifikasiya
+## Autentifikasiya {#authentication}
 
-### API-ni Aktivləşdir
+### API-ni Aktivləşdir {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Məlumatlarını Əldə Et
+### API Məlumatlarını Əldə Et {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentifikasiya Üsulları
+### Autentifikasiya Üsulları {#authentication-methods}
 
 **HTTP Basic Auth (Tövsiyə olunur):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Əsas Son Nöqtələr
+## Əsas Son Nöqtələr {#core-endpoints}
 
-### 1. Müştərilər API-si
+### 1. Müştərilər API-si {#1-customers-api}
 
 **Əsas Marşrut:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Saytlar API-si
+### 2. Saytlar API-si {#2-sites-api}
 
 **Əsas Marşrut:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Üzvlüklər API-si
+### 3. Üzvlüklər API-si {#3-memberships-api}
 
 **Əsas Marşrut:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Məhsullar API-si
+### 4. Məhsullar API-si {#4-products-api}
 
 **Əsas Marşrut:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Ödənişlər API-si
+### 5. Ödənişlər API-si {#5-payments-api}
 
 **Əsas Marşrut:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domenlər API-si
+### 6. Domenlər API-si {#6-domains-api}
 
 **Əsas Marşrut:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Qeydiyyat Son Nöqtəsi
+## Qeydiyyat Son Nöqtəsi {#registration-endpoint}
 
 `/register` son nöqtəsi tam checkout/qeydiyyat axını təmin edir:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Suveren Tenant Son Nöqtələri
+## Suveren Tenant Son Nöqtələri {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 təcrid olunmuş tenant-ları təmin edən, yoxlayan və ya doğrulayan inteqrasiyalar üçün suveren tenant REST əhatəsini əlavə edir.
 
@@ -242,7 +242,7 @@ Tipik miqrasiya statusu cavablarına daxildir:
 
 `ready: false` dəyərini işə salınmadan əvvəl bloklayıcı kimi qəbul edin. Doğrulama təfərrüatlarını yoxlayın, verilənlər bazası host bağlanmasını, növbəni, istifadəçi təminatını və ya marşrutlaşdırma problemini düzəldin, sonra doğrulamanı yenidən sınayın.
 
-## Xəta Cavabları
+## Xəta Cavabları {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tipik miqrasiya statusu cavablarına daxildir:
 }
 ```
 
-## Səhifələmə və Filtrləmə
+## Səhifələmə və Filtrləmə {#pagination-and-filtering}
 
 **Sorğu Parametrləri:**
 ```http

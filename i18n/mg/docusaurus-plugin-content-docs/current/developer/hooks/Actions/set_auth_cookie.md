@@ -4,11 +4,11 @@ title: Hetsika - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Miasa avy hatrany alohan'ny hametrahana ny cookie fanamarinana.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Miasa avy hatrany alohan'ny hametrahana ny cookie fanamarinana.
 | $scheme | `string` | Skema fanamarinana. Ahitana 'auth' na 'secure_auth' ny sanda. |
 | $token | `string` | Token fivorian'ny mpampiasa ampiasaina amin'ity cookie ity. |
 
-### Hatramin'ny
+### Hatramin'ny {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) amin'ny andalana 124

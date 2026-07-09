@@ -3,9 +3,9 @@ title: Kiadási megjegyzések
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Kiadási megjegyzések
+# Kiadási megjegyzések {#release-notes}
 
-## 2.13.0 verzió — Kiadva: 2026-06-05
+## 2.13.0 verzió — Kiadva: 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Új: Szuverén bérlői támogatás hozzáadva az ügyfélfiók-, checkout-, számlázási, webhely-, számla-, sablonváltási és domaintérképezési folyamatokhoz, hogy a bérlői hálózatok az ügyfeleket a fő webhelyre irányíthassák vissza a kezelt műveletekhez.
 - Új: Megújítási hitelesítőadat-ellenőrzések hozzáadva az ismétlődő tagságokhoz, hogy az átjárók letilthassák az automatikus megújítást, ha hiányzik egy mentett számlázási megállapodás, subscription vagy vault token.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Javítás: A tagsági megújítások, a lejárati megjelenítés és a fizetésbeszedési szélső esetek most elkerülik az azonnali lejáratokat, összeomlásokat vagy a kötelező fizetések elmulasztását.
 - Fejlesztés: A WordPress-kompatibilitás 7.0-ig tesztelve van, a production Vue assetek újraépültek npm-forrásokból, és a Cypress end-to-end lefedettség most több checkout-, beállítási, SSO- és átjárófolyamatot gyakorol.
 
-## 2.12.0 verzió — Kiadva: 2026-05-15
+## 2.12.0 verzió — Kiadva: 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Új: A Hostinger (hPanel) támogatott tárhelyszolgáltatóként hozzáadva domaintérképezési integrációval
 - Új: A Site Exporter most kezeli a hálózati importcsomagokat az egyszerűsített, hálózatszintű webhely-helyreállításhoz
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Javítás: A Site Exporter CLI most megőrzi a helyes alapértelmezett hálózati webhelyválasztást
 - Fejlesztés: Az összecsomagolt wp-cli eltávolítva a plugin csomagból, csökkentve a plugin méretét
 
-## 2.11.0 verzió — Kiadva: 2026-05-11
+## 2.11.0 verzió — Kiadva: 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Új: A webhelyexportok most egy önindító `index.php` fájlt csomagolnak be, így a ZIP külön plugin telepítése nélkül telepíthető egy friss tárhelyre.
 - Új: A hálózati export lehetővé teszi az adminisztrátoroknak, hogy az összes alwebhelyet egyetlen archívumba exportálják a Site Export admin oldaláról.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Új: A checkout-űrlapszerkesztő figyelmeztet, ha egy termék hozzáadása kötelező mező konfigurálása nélkül történik.
 - Új: Az Import/Export beállítási fül most egyértelműen leírja a hatókörét, és közvetlenül a Site Export eszközre hivatkozik.
 
-## 2.10.0 verzió — Kiadva: 2026-05-05
+## 2.10.0 verzió — Kiadva: 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Új: PayPal vezetett beállítási varázsló kézi hitelesítőadat-megadáshoz OAuth jelzőkapuval a zökkenőmentes átjárókonfigurációhoz.
 - Új: A sablonváltási ügyfélpanel újratervezve aktuális sablon kártyával, tartós ráccsal és **Aktuális sablon visszaállítása** gombbal.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Javítás: A szűrt SSO útvonal minden bejelentkezési folyamatban tiszteletben van tartva.
 - Javítás: Az üres webhelyazonossági beállítások mentéskor megőrződnek.
 
-## 2.9.0 verzió — Kiadva: 2026-04-30
+## 2.9.0 verzió — Kiadva: 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Új: Egywebhelyes export és import hozzáadva az **Eszközök > Export és import** alatt.
 - Javítás: Az export ZIP-fájlok most hitelesített letöltési endpointon keresztül kerülnek kiszolgálásra.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Javítás: A bemutatóazonosítók aláhúzásjelekké normalizálva a felhasználói beállításkulcsokban.
 - Fejlesztés: A jobb kompatibilitás érdekében most ZipArchive használatos az Alchemy/Zippy helyett.
 
-## 2.8.0 verzió — Kiadva: 2026-04-29
+## 2.8.0 verzió — Kiadva: 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Új: Enable Jumper kapcsoló hozzáadva az Other Options beállítási UI-hoz.
 - Új: Status oszlop hozzáadva a checkout űrlapok listatáblájához.

@@ -3,7 +3,7 @@ title: ჰუკები და ფილტრები
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite ჰუკები და ფილტრები
+# Ultimate Multisite ჰუკები და ფილტრები {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite შედგება უამრავი ფუნქციისა და მონაცემთა ბაზის შეკითხვებისგან. მას აქვს ჰუკები და ფილტრები, რომლებიც საშუალებას გაძლევთ შეცვალოთ ან დაამატოთ ახალი კოდი არსებულ ფუნქციებს.
 

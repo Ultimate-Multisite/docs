@@ -3,7 +3,7 @@ title: Κατάλογος Αλλαγών Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Αλλαγές Καταγραφής Captcha
+# Αλλαγές Καταγραφής Captcha {#captcha-changelog}
 
 Έκδοση: 1.5.0 - Έκδοση στις 2026-05-22
 * Νέο: Περιοριστής ρυθμού με σταματημότητα (Hard-stop rate limiter) — μετρά κάθε GET και POST σε επιφάνειες προστατευμένες από το captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) και απαντά με HTTP 429, ένα header `Retry-After`, και μια τυχαία παύση (tarpit sleep) (1–5 δευτερόλεπτα, με μέγιστο όριο 15 δευτερόλεπτα).

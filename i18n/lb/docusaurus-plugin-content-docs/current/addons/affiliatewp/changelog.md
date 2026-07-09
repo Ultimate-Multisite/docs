@@ -3,7 +3,7 @@ title: AffiliateWP Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP Ännerungsprotokoll
+# AffiliateWP Ännerungsprotokoll {#affiliatewp-changelog}
 
 Versioun: 2.0.1 - Verëffentlecht den 2025-09-28
 

@@ -3,15 +3,15 @@ title: Gwaro Rekushandisa Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Gwaro reKushandisa Hooks
+# Gwaro reKushandisa Hooks {#hooks-usage-guide}
 
 Ultimate Multisite inopa 200+ action hooks uye 280+ filter hooks. Peji rino rinofukidza hooks dzinonyanya kushandiswa nemienzaniso inoshanda. Kuti uwane referensi yakazara inogadzirwa otomatiki, tarisa mamwe mapeji muchikamu chino.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Kutenderera kweHupenyu hweMutengi
+### Kutenderera kweHupenyu hweMutengi {#customer-lifecycle}
 
-#### Mushure meKugadzirwa kweMutengi
+#### Mushure meKugadzirwa kweMutengi {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Kuchinja kweChimiro cheMutengi
+#### Kuchinja kweChimiro cheMutengi {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks dzeSaiti
+### Hooks dzeSaiti {#site-hooks}
 
-#### Mushure mekunge Saiti Yaburitswa
+#### Mushure mekunge Saiti Yaburitswa {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Pamberi peKushandiswa kweTemplate
+#### Pamberi peKushandiswa kweTemplate {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooks dzeMembership
+### Hooks dzeMembership {#membership-hooks}
 
-#### Shanduko dzeChimiro
+#### Shanduko dzeChimiro {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooks dzeKubhadhara
+### Hooks dzeKubhadhara {#payment-hooks}
 
-#### Kubhadhara Kwapedzwa / Kwakundikana
+#### Kubhadhara Kwapedzwa / Kwakundikana {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooks dzeCheckout
+### Hooks dzeCheckout {#checkout-hooks}
 
-#### Pamberi peKugadzirisa / Mushure meKupedza
+#### Pamberi peKugadzirisa / Mushure meKupedza {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooks dzeDomain
+### Hooks dzeDomain {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Mafirita eMitengo
+### Mafirita eMitengo {#pricing-filters}
 
-#### Huwandu hweCart
+#### Huwandu hweCart {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Mitero
+#### Mitero {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Mafirita eTemplate
+### Mafirita eTemplate {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Mafirita eMiganhu
+### Mafirita eMiganhu {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Mafirita eGateway
+### Mafirita eGateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Minda yeFomu reCheckout
+### Minda yeFomu reCheckout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Zviri muEmail
+### Zviri muEmail {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

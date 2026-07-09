@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# ኢሜይሎች
+# ኢሜይሎች {#emails}
 
 የ Ultimate Multisite: Emails addon የኔትወርክ ባለቤቶች ከድረ ገጾች እና አባልነቶች ጋር የደንበኛ ኢሜይል መለያዎችን እንዲያቀርቡ እና እንዲያስተዳድሩ ያስችላቸዋል። ስሪት 1.1.0 ለደንበኞች የሚታይ የኢሜይል መለያ አስተዳደር፣ የዌብሜይል አንድ-ጊዜ መግቢያ፣ የCyberPanel አስተላላፊ ድጋፍ፣ እና በcheckout ጊዜ የማቅረብ ማሻሻያዎችን ያክላል።
 
-## ዋና ባህሪዎች
+## ዋና ባህሪዎች {#key-features}
 
 * **የደንበኛ ኢሜይል መለያ ዊጄት**: ደንበኞች ንቁ የኢሜይል አባልነት ካላቸው በኋላ ከመለያቸው ገጽ ላይ የመልእክት ሳጥኖችን መፍጠር እና ማስተዳደር ይችላሉ።
 * **የዌብሜይል SSO እና የማጂክ ሊንኮች**: አቅራቢው ሲደግፈው፣ ደንበኞች በአንድ ጠቅታ ማረጋገጫ ዌብሜይልን በቀጥታ ከመለያ ገጻቸው መክፈት ይችላሉ።
@@ -20,14 +20,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 * **የCyberPanel አስተላላፊዎች**: በCyberPanel የተደገፉ ኔትወርኮች የኢሜይል አገልግሎት ፍሰት አካል ሆነው የኢሜይል አስተላላፊዎችን መፍጠር እና ማስተዳደር ይችላሉ።
 * **አቅራቢን የሚያውቁ ቅንብሮች**: የቅንብሮች ገጹ አቅራቢዎችን ወደ ንቁ እና የተዋቀሩ ውህደቶች ያጣራል፣ ስለዚህ አስተዳዳሪዎች መጠቀም የሚችሉ አማራጮችን ብቻ ያያሉ።
 
-## መስፈርቶች
+## መስፈርቶች {#requirements}
 
 * Ultimate Multisite 2.0.0 ወይም ከዚያ በላይ
 * WordPress Multisite መጫኛ
 * ቢያንስ አንድ የተዋቀረ የኢሜይል አቅራቢ ውህደት
 * የመልእክት ሳጥኖችን ለመፍጠር፣ ይለፍ ቃሎችን ለመቀየር፣ እና በሚደገፍበት ቦታ የዌብሜይል መዳረሻ ሊንኮችን ለማውጣት ፈቃድ ያላቸው የአቅራቢ API ማረጋገጫ መረጃዎች
 
-## መጫን
+## መጫን {#installation}
 
 1. የplugin ፋይሎቹን ወደ `/wp-content/plugins/ultimate-multisite-emails` ይስቀሉ።
 2. ከWordPress ኔትወርክ አስተዳዳሪ ውስጥ ካለው **Plugins** ላይ addonን በኔትወርክ ያንቁ።
@@ -35,7 +35,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 4. ደንበኞች እንዲጠቀሙባቸው የሚፈልጉትን የኢሜይል አቅራቢ ውህደቶች ያንቁ።
 5. ቅንብሮችን ያስቀምጡ፣ ከዚያ በምርት ያልሆነ ደንበኛ ወይም በstaging ድረ ገጽ የመለያ መፍጠርን ይፈትኑ።
 
-## የኢሜይል ሻጭ ፍሰት እንዴት እንደሚሰራ
+## የኢሜይል ሻጭ ፍሰት እንዴት እንደሚሰራ {#how-the-email-seller-flow-works}
 
 የኢሜይል ሽያጭ ሁለት የተለዩ ንብርብሮች አሉት፦
 
@@ -53,7 +53,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 5. የ**ኢሜይል መለያዎች** ፓነል ለዚያ ንቁ የኢሜይል አባልነት ይታያል።
 6. ደንበኛው **መለያ ፍጠር**ን ጠቅ ያደርጋል፣ እንደ `info` ያለ የአካባቢ ክፍል ያስገባል፣ ይለፍ ቃል ያዘጋጃል፣ እና addon በተዋቀረው አቅራቢ ላይ `info@their-domain.com` ይፈጥራል።
 
-## የኢሜይል ምርት ያዋቅሩ
+## የኢሜይል ምርት ያዋቅሩ {#configure-an-email-product}
 
 ለመሸጥ ወይም በነፃ ለመስጠት ለሚፈልጉት እያንዳንዱ የኢሜይል ጥቅል አንድ የኢሜይል ምርት ይፍጠሩ። ለምርት ማዋቀር አዲስ ከሆኑ፣ በ[የመጀመሪያ የSubscription ምርትዎን መፍጠር](../../user-guide/configuration/creating-your-first-subscription-product) ይጀምሩ እና ከዚያ ለኢሜይል-ተኮር ቅንብሮች ወደዚህ ይመለሱ።
 
@@ -67,7 +67,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 በ**Integrations** ገጽ ላይ የነቁ እና ሙሉ በሙሉ የተዋቀሩ አቅራቢዎች ብቻ በአቅራቢ መራጭ ውስጥ ይታያሉ። መራጩ ባዶ ከሆነ፣ መጀመሪያ አቅራቢውን ያዋቅሩ እና ይፈትኑ።
 
-## ኢሜይልን ወደ Checkout ያክሉ
+## ኢሜይልን ወደ Checkout ያክሉ {#add-email-to-checkout}
 
 የኢሜይል ምርቶች ብዙውን ጊዜ ለድረ ገጽ ፕላን እንደ ተጨማሪዎች ይቀርባሉ። ለአጠቃላይ የcheckout አርታዒ የሥራ ፍሰት [Checkout Forms](../../user-guide/configuration/checkout-forms)ን ይመልከቱ።
 
@@ -79,7 +79,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 የኢሜይል ዶሜይን ከደንበኛው የድረ ገጽ ዶሜይን ይወሰዳል። ደንበኞች በኢሜይል ምርት ደረጃ የኢሜይል ዶሜይንን አያስገቡም።
 
-## የደንበኛ Account ኢሜይል አስተዳደር
+## የደንበኛ Account ኢሜይል አስተዳደር {#customer-account-email-management}
 
 ስሪት 1.1.0 ወደ ደንበኛ መለያ ገጽ የኢሜይል አስተዳደር ዊጄት ያክላል። ደንበኞች ለራሳቸው ድረ ገጾች የመልእክት ሳጥን መፍጠርን እና ጥገናን በራስ-አገልግሎት ማከናወን ሲገባቸው ይጠቀሙበት።
 
@@ -94,7 +94,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 ደንበኛው የኢሜይል ፓነልን ካላየ፣ **ንቁ የኢሜይል ምርት አባልነት** እንዳለው፣ አባልነቱ ከጣቢያ ዶሜይን ጋር እንደተገናኘ፣ እና ምርቱ የተዋቀረ አቅራቢ እንዳለው ያረጋግጡ።
 
-## ለደንበኛ ነፃ የኢሜይል እቅድ መስጠት
+## ለደንበኛ ነፃ የኢሜይል እቅድ መስጠት {#giving-a-customer-a-free-email-plan}
 
 ለደንበኛ ክፍያ ሳያስከፍሉ ኢሜይል ለመስጠት፣ መጀመሪያ **የኢሜይል መብት** ይስጡ፣ ከዚያ የመልዕክት ሳጥኑን ይፍጠሩ ወይም ደንበኛው እንዲፈጥር ይፍቀዱ።
 
@@ -106,7 +106,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 ደንበኛው የመልዕክት ሳጥኑን ከAccount ገጽ ራሱ እንዲያስተዳድር ከፈለጉ፣ ለዶሜይኑ ንቁ የኢሜይል አባልነት እንዳለው ያረጋግጡ። ያ አባልነት የሌለው በእጅ የተፈጠረ የአቅራቢ መልዕክት ሳጥን ሊኖር ይችላል፣ ግን ደንበኛው ለእሱ የራስ-አገልግሎት ኢሜይል ፓነልን ላያይ ይችላል።
 
-## በአስተዳዳሪ የተፈጠሩ Accountዎች እና "የትዕዛዝ ቁጥር የለም"
+## በአስተዳዳሪ የተፈጠሩ Accountዎች እና "የትዕዛዝ ቁጥር የለም" {#admin-created-accounts-and-no-order-number}
 
 የ**ኢሜይል Accountዎች** የአስተዳዳሪ ገጽ የአቅራቢ መልዕክት ሳጥን ይፈጥራል ወይም ያርታዋል። የኢሜይል እቅድ ለመሸጥ ወይም ለመስጠት የመጀመሪያው እርምጃ አይደለም።
 
@@ -122,7 +122,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 ለደንበኛው የአቅራቢ መልዕክት ሳጥን መፍጠር ብቻ ከፈለጉ እና የራስ-አገልግሎት Account-ገጽ አስተዳደር ካላስፈለገዎት፣ በአስተዳዳሪ የተፈጠረው Account በቂ ሊሆን ይችላል። ደንበኛው በUltimate Multisite ውስጥ እንዲያየው እና እንዲያስተዳድረው ከፈለጉ፣ የኢሜይል አባልነቱንም ይፍጠሩ።
 
-## የዌብሜይል SSO እና የMagic-Link መግቢያ
+## የዌብሜይል SSO እና የMagic-Link መግቢያ {#webmail-sso-and-magic-link-login}
 
 የዌብሜይል SSO ለደንበኞች ከAccount ገጽ ቀጥተኛ **ዌብሜይል ክፈት** እርምጃ ይሰጣል። በንቁ አቅራቢው ሲደገፍ፣ addon ለአጭር ጊዜ የሚቆይ የመዳረሻ URL ይጠይቃል እና ደንበኛው የመልዕክት ሳጥን ማረጋገጫዎችን እንዲገለብጥ ሳይጠይቀው ወደ ዌብሜይል ያዞረዋል።
 
@@ -134,7 +134,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 የሚፈለጉትን API ማረጋገጫዎች ላዋቀሩባቸው አቅራቢዎች ብቻ የዌብሜይል መዳረሻን ያንቁ። እርምጃው ለአንድ አቅራቢ ከጎደለ፣ መጀመሪያ አቅራቢው ንቁ፣ የተዋቀረ እና የዌብሜይል መግቢያ አገናኞችን የሚደግፍ መሆኑን ያረጋግጡ።
 
-## የCheckout አቅርቦት
+## የCheckout አቅርቦት {#checkout-provisioning}
 
 addon በcheckout ወቅት የኢሜይል **አባልነት አውድ** ያቀርባል። ከግዢ በኋላ ደንበኞች ከAccount ገጽ የራሳቸውን የመልዕክት ሳጥን ስሞች መፍጠር እንዲችሉ አቅራቢውን፣ የAccount ገደቡን፣ ኮታውን እና የጣቢያ ዶሜይኑን ይመዘግባል።
 
@@ -148,15 +148,15 @@ addon በcheckout ወቅት የኢሜይል **አባልነት አውድ** ያቀ
 
 አቅርቦቱ ካልተሳካ፣ የኢሜይል አባልነቱ ወይም የአቅራቢ መልዕክት ሳጥኑ የአስተዳዳሪ ክትትል ሲፈልግ የደንበኛው Account እና አባልነት አሁንም ሊኖሩ ይችላሉ። እንደገና ከመሞከርዎ በፊት የUltimate Multisite እንቅስቃሴ ሎጎችን እና የአቅራቢውን ሎጎች ይፈትሹ።
 
-## የCyberPanel ኢሜይል አስተላላፊዎች
+## የCyberPanel ኢሜይል አስተላላፊዎች {#cyberpanel-email-forwarders}
 
 በCyberPanel ለሚደገፉ ኔትወርኮች፣ ስሪት 1.1.0 የኢሜይል አስተላላፊ ድጋፍ ያክላል። ደንበኞች `info@customer-domain.test` ያሉ አድራሻዎች ሙሉ የመልዕክት ሳጥን ሳይፈጥሩ መልዕክትን ወደ ሌላ የገቢ መልዕክት ሳጥን እንዲያዘዋውሩ ሲፈልጉ አስተላላፊዎችን ይጠቀሙ።
 
 አስተላላፊዎችን ከማቅረብዎ በፊት፣ የCyberPanel ውህደት የተዋቀረ እና ሊደረስበት የሚችል መሆኑን ያረጋግጡ። ለሚፈለጉት አስተናጋጅ፣ የተጠቃሚ ስም፣ የይለፍ ቃል እና የጥቅል constants የ[CyberPanel ውህደት](../../user-guide/administration/cyberpanel-integration) መመሪያን ይመልከቱ።
 
-## የለውጦች መዝገብ
+## የለውጦች መዝገብ {#changelog}
 
-### ስሪት 1.1.0 - በ2026-05-05 ተለቋል
+### ስሪት 1.1.0 - በ2026-05-05 ተለቋል {#version-110---released-on-2026-05-05}
 
 * አዲስ፦ Webmail SSO እና magic-link መግቢያ — ደንበኞች ከAccount በአንድ-ጠቅታ ማረጋገጫ webmail በቀጥታ መድረስ ይችላሉ።
 * አዲስ፦ የይለፍ ቃል መቀየር ተግባር ወደ የኢሜይል Account አስተዳደር መግብር ታክሏል።
@@ -170,28 +170,28 @@ addon በcheckout ወቅት የኢሜይል **አባልነት አውድ** ያቀ
 * ማስተካከያ፦ በእያንዳንዱ ጥያቄ የነበረው የlog ጫጫታ ከEmail_Account_Manager ማስጀመሪያ ተወግዷል።
 * ተሻሽሏል፦ የቅንብሮች ገጽ አሁን ንቁ እና የተዋቀሩ የኢሜይል አቅራቢዎችን ብቻ እንዲያሳይ ያጣራል።
 
-## በተደጋጋሚ የሚጠየቁ ጥያቄዎች
+## በተደጋጋሚ የሚጠየቁ ጥያቄዎች {#frequently-asked-questions}
 
-### ደንበኞች የራሳቸውን ኢሜይል Account መፍጠር ይችላሉ?
+### ደንበኞች የራሳቸውን ኢሜይል Account መፍጠር ይችላሉ? {#can-customers-create-their-own-email-accounts}
 
 አዎ። ደንበኛው ለአንድ ጎራ ንቁ የኢሜይል አባልነት ሲኖረው እና ምርቱ ተጨማሪ Account እንዲፈጠሩ ሲፈቅድ፣ ደንበኞች ከAccount ገጽ የራሳቸውን የመልዕክት ሳጥኖች መፍጠር እና ማስተዳደር ይችላሉ።
 
-### ሁሉም አቅራቢ webmail SSO ይደግፋል?
+### ሁሉም አቅራቢ webmail SSO ይደግፋል? {#does-every-provider-support-webmail-sso}
 
 አይ። የSSO እና magic-link ድጋፍ በንቁው የኢሜይል አቅራቢ ላይ ይመሰረታል። የመዳረሻ-አገናኝ API የሌላቸው አቅራቢዎች አሁንም የመልዕክት ሳጥን መፍጠርን እና የይለፍ ቃል ለውጦችን መደገፍ ይችላሉ።
 
-### አስተዳዳሪዎች ለደንበኞች የኢሜይል Account መፍጠር ይችላሉ?
+### አስተዳዳሪዎች ለደንበኞች የኢሜይል Account መፍጠር ይችላሉ? {#can-administrators-create-email-accounts-for-customers}
 
 አዎ። አስተዳዳሪዎች ከadmin interface የኢሜይል Account መፍጠር ይችላሉ፣ Account ሲፈጥሩ የመጀመሪያ ይለፍ ቃል ማቀናበርን ጨምሮ። ለደንበኛ ራስ-አገልግሎት አስተዳደር፣ ደንበኛው ለጎራው ንቁ የኢሜይል አባልነት እንዳለውም ያረጋግጡ።
 
-### የኢሜይል Account በነፃ መስጠት እችላለሁ?
+### የኢሜይል Account በነፃ መስጠት እችላለሁ? {#can-i-give-an-email-account-away-for-free}
 
 አዎ። ነፃ/ዜሮ-ዋጋ ያለው የኢሜይል ምርት ይፍጠሩ እና ለደንበኛው እንደ ንቁ አባልነት ያክሉት፣ ወይም ደንበኛው በ100% ቅናሽ checkout እንዲያጠናቅቅ ይፍቀዱ። የኢሜይል አባልነቱ ከተፈጠረ በኋላ፣ ደንበኛው ወይም አስተዳዳሪ ትክክለኛውን የመልዕክት ሳጥን መፍጠር ይችላል።
 
-### የኢሜይል Account መመደብ ለምን የትዕዛዝ ቁጥር ይጠይቃል?
+### የኢሜይል Account መመደብ ለምን የትዕዛዝ ቁጥር ይጠይቃል? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 የMembership መስክ ነባር የUltimate Multisite አባልነትን በማጣቀሻ/ትዕዛዝ ቁጥሩ ይፈልጋል። ደንበኛው የኢሜይል ምርት ካልገዛ እና የኢሜይል አባልነት በእጅ ካልፈጠሩ፣ ለመመደብ የኢሜይል አባልነት/ትዕዛዝ የለም። መጀመሪያ የኢሜይል አባልነቱን ይፍጠሩ፣ ከዚያ የመልዕክት ሳጥኑን ይፍጠሩ ወይም ይመድቡ።
 
-### አስተላላፊዎች ከመልዕክት ሳጥኖች ጋር ተመሳሳይ ናቸው?
+### አስተላላፊዎች ከመልዕክት ሳጥኖች ጋር ተመሳሳይ ናቸው? {#are-forwarders-the-same-as-mailboxes}
 
 አይ። የመልዕክት ሳጥን መልዕክትን ያከማቻል እና የመግቢያ ማስረጃዎች አሉት። አስተላላፊ መልዕክትን ወደ ሌላ አድራሻ ያዞራል እና የተለየ የገቢ መልዕክት ሳጥን አያቀርብም።

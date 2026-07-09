@@ -3,15 +3,15 @@ title: 'Isifundo 5: Ukuyila izicwangciso zakho'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Isifundo 5: Ukuyila Izicwangciso Zakho
+# Isifundo 5: Ukuyila Izicwangciso Zakho {#lesson-5-designing-your-plans}
 
 Amanqanaba ezicwangciso zakho ayizizo nje amanqanaba amaxabiso -- abonisa indlela abathengi bakho abakwi-niche abasebenza ngayo ngokwenene. Kwesi sifundo uza kuyila amanqanaba eemveliso ahambelana neemfuno zokwenene zamashishini okuzilolonga kumanqanaba ahlukeneyo.
 
-## Apho Besiyeke Khona
+## Apho Besiyeke Khona {#where-we-left-off}
 
 I-FitSite inee-template ezintathu ezilungile (Studio Essential, Gym Pro, Fitness Chain). Ngoku senza izicwangciso ezichaza ukuba abathengi bafikelela entwenini nokuba bahlawula ntoni.
 
-## Ukucinga Ngamacandelo Abathengi
+## Ukucinga Ngamacandelo Abathengi {#thinking-in-customer-segments}
 
 Impazamo eyenziwa ngabantu abaninzi kukuyila izicwangciso ezijikeleze iimpawu zobugcisa (indawo yokugcina, bandwidth, inani lamaphepha). Abathengi bakho abakwi-niche abacingi ngaloo ndlela. Umnini we-gym ucinga ngezinto azidingayo ukuze aqhube ishishini lakhe.
 
@@ -25,11 +25,11 @@ Kwiistudio zokuzilolonga, kukho amacandelo amathathu endalo:
 
 Izicwangciso zakho kufuneka zihambelane nala macandelo, hayi neengqokelela zeempawu ezingacwangciswanga.
 
-## Ukwenza Izicwangciso ze-FitSite
+## Ukwenza Izicwangciso ze-FitSite {#creating-the-fitsite-plans}
 
 Yiya ku-**Ultimate Multisite > Iimveliso > Yongeza Imveliso** kwisicwangciso ngasinye.
 
-### Isicwangciso 1: FitSite Starter -- $49/ngenyanga
+### Isicwangciso 1: FitSite Starter -- $49/ngenyanga {#plan-1-fitsite-starter----49month}
 
 **Ekujoliswe kubo**: Abaqeqeshi abazimeleyo kunye neestudio ezincinci
 
@@ -59,7 +59,7 @@ Yiya ku-**Ultimate Multisite > Iimveliso > Yongeza Imveliso** kwisicwangciso nga
 - Umxholo wakho owukhethileyo: Yenza isebenze ngenkani
 - Yonke eminye imixholo: Ifihliwe
 
-### Isicwangciso 2: FitSite Growth -- $99/ngenyanga
+### Isicwangciso 2: FitSite Growth -- $99/ngenyanga {#plan-2-fitsite-growth----99month}
 
 **Ekujoliswe kubo**: Ii-gym ezizinzileyo ezinendawo enye
 
@@ -85,7 +85,7 @@ Yiya ku-**Ultimate Multisite > Iimveliso > Yongeza Imveliso** kwisicwangciso nga
 - Iqela lesicwangciso: FitSite Plans
 - Ulandelelwano lwemveliso: 2
 
-### Isicwangciso 3: FitSite Pro -- $199/ngenyanga
+### Isicwangciso 3: FitSite Pro -- $199/ngenyanga {#plan-3-fitsite-pro----199month}
 
 **Ekujoliswe kubo**: Amakhonkco okuzilolonga aneendawo ezininzi
 
@@ -109,7 +109,7 @@ Yiya ku-**Ultimate Multisite > Iimveliso > Yongeza Imveliso** kwisicwangciso nga
 - Iqela lesicwangciso: FitSite Plans
 - Ulandelelwano lwemveliso: 3
 
-## Ukuseta Iqela Lesicwangciso
+## Ukuseta Iqela Lesicwangciso {#setting-up-the-plan-group}
 
 Iqela lesicwangciso liqinisekisa ukuba abathengi banokunyusela okanye behlise kuphela ngaphakathi kosapho lwezicwangciso ze-FitSite. Kwithebhu **yoNyuselo & Ukwehliswa** yesicwangciso ngasinye:
 
@@ -118,7 +118,7 @@ Iqela lesicwangciso liqinisekisa ukuba abathengi banokunyusela okanye behlise ku
 
 Oku kudala indlela ecacileyo yokunyusela: Starter → Growth → Pro.
 
-## Ukongeza Izongezo ze-Odolo
+## Ukongeza Izongezo ze-Odolo {#adding-order-bumps}
 
 Izongezo ze-odolo ziimveliso ezongezelelweyo ezinikezelwa ngexesha le-checkout. Kwi-FitSite, qwalasela:
 
@@ -128,7 +128,7 @@ Izongezo ze-odolo ziimveliso ezongezelelweyo ezinikezelwa ngexesha le-checkout. 
 
 Yenza ezi njengeemveliso zohlobo lwe-**Phakheji** ku-Ultimate Multisite uze uzinxulumanise nezicwangciso ezifanelekileyo.
 
-## Kutheni Olu Lwakhiwo Lusebenza
+## Kutheni Olu Lwakhiwo Lusebenza {#why-this-structure-works}
 
 - **Starter** isusa imiqobo yokungena -- ixabiso eliphantsi, umnikelo olula, ifaka abaqeqeshi kwi-intanethi ngokukhawuleza
 - **Growth** yongeza iimpawu ezicelwa ziigym ngokwenene -- ukubhukisha, iigalari, iidomeyini zesiko
@@ -136,7 +136,7 @@ Yenza ezi njengeemveliso zohlobo lwe-**Phakheji** ku-Ultimate Multisite uze uzin
 - **Izongezo ze-odolo** zivumela abathengi ukuba bazenzele ngokwezidingo zabo ngaphandle kokwenza izicwangciso ezingundoqo zibe nzima
 - **Indlela ecacileyo yokunyusela** ithetha ukuba abathengi bakhula nawe endaweni yokuhamba
 
-## Inethiwekhi ye-FitSite Ukuza Kuthi Ga Ngoku
+## Inethiwekhi ye-FitSite Ukuza Kuthi Ga Ngoku {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Into Esiyakhileyo Kwesi Sifundo
+## Into Esiyakhileyo Kwesi Sifundo {#what-we-built-this-lesson}
 
 - **Amanqanaba amathathu ezicwangciso** ahambelana namacandelo okwenene amashishini okuzilolonga
 - **Ukuvalelwa kweempawu** kusetyenziswa ulawulo lweeplagi nee-template lwe-Ultimate Multisite

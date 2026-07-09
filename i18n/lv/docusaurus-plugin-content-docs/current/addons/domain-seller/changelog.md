@@ -3,7 +3,7 @@ title: Domēnu pārdevēja izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domēnu pārdevēja izmaiņu žurnāls
+# Domēnu pārdevēja izmaiņu žurnāls {#domain-seller-changelog}
 
 Versija 1.3.0 - Izlaista 2026-06-02
 - Jauns: Pievienots tīkla administratora brīdinājums, kad HostAfrica tālākpārdevēja atlikums kļūst pārāk zems
@@ -134,20 +134,20 @@ Versija 1.0.0 - Izlaista 2025-09-28
 * **Labots:** Viss novecojušais v1 kods atjaunināts atbilstoši v2 standartiem
 * **Noņemts:** Mantotā v1 saderība (lauzošas izmaiņas)
 
-### Iepriekšējās versijas (v1 mantojums)
+### Iepriekšējās versijas (v1 mantojums) {#previous-versions-v1-legacy}
 
-### Versija 0.0.3 - 20/08/2019
+### Versija 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Labots: Nesaderība ar Groundhogg CRM
 * Piezīme: Šis bija pēdējais ar v1 saderīgais laidiens
 
-### Versija 0.0.2 - 07/12/2018
+### Versija 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Labots: Noņemts License Key lauks
 * Labots: Plānu cilnes trūka, kad funkcijas plugin ir aktīvs
 * Uzlabots: Reģistrācijas laukam pievienota izlaišanas poga
 
-### Versija 0.0.1 - Sākotnējais laidiens
+### Versija 0.0.1 - Sākotnējais laidiens {#version-001---initial-release}
 
 * Pamata OpenSRS integrācija WP Ultimo v1
 * Vienkārša domēna meklēšana un reģistrācija

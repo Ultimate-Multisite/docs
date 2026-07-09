@@ -3,7 +3,7 @@ title: ווי צו אינסטאַלירן WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# ווי אינסטאַליר איך WordPress Multisite?
+# ווי אינסטאַליר איך WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ערלויבט אײַך צו האָבן אַ נעצווערק פֿון וועבזײַטן אויף איין אינסטאַלירונג. דאָס איז אַן אײַנגעבויטע פֿונקציע, אָבער זי איז ניט אַקטיוו לויטן סטאַנדאַרט.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 נאָך אויספֿילן די פֿעלדער, קליקט דעם "צולייגן וועבזײַט" קנעפּל. ווען די נײַע אונטער־וועבזײַט איז געשאַפֿן, גייט ווײַטער און באַזוכט זי כדי זיכער מאַכן אַז די אונטער־וועבזײַט פֿונקציאָנירט.
 
-## געוויינטלעכע פּראָבלעמען:
+## געוויינטלעכע פּראָבלעמען: {#common-problems}
 
-### 1\. איך קען שאַפֿן נײַע וועבזײַטן אָבער מע קען זיי נישט דערגרייכן.
+### 1\. איך קען שאַפֿן נײַע וועבזײַטן אָבער מע קען זיי נישט דערגרייכן. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 אויב איר האָט אויסגעקליבן אונטער־דאָמיינס, דאַרפֿט איר אויך אויפֿשטעלן ווילדקאַרד אונטער־דאָמיינס פֿאַר אײַער multisite נעצווערק.
 

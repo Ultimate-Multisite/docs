@@ -3,17 +3,17 @@ title: Qalabka iyo Habaynta
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Qalabka iyo Habaynta
+# Qalabka iyo Habaynta {#tools-and-configuration}
 
 Theme Builder waxa uu adeegsadaa urur qalab ah si uu u falanqeeyo, u naqshadeeyo, una dhiso mareegtaada WordPress. Nooca 1.16.0, **sd-ai-agent/site-scrape hadda waa qalab Heerka 1 ah**, taas oo ka dhigaysa mid si caadi ah looga heli karo Theme Builder. Superdav AI Agent v1.18.0 waxa kale oo uu soo bandhigayaa xirmo wehel Advanced ah oo si gaar ah loo qaybiyo, looguna talagalay socodsiinnada horumariye ee la aamini karo; qalabkaas kama tirsana xirmada asaasiga ah ee WordPress.org waana in si gaar ah loo rakibaa loona oggolaadaa.
 
-## Qalabka La Heli Karo
+## Qalabka La Heli Karo {#available-tools}
 
-### Qalabka Heerka 1 (Had iyo Jeer La Heli Karo)
+### Qalabka Heerka 1 (Had iyo Jeer La Heli Karo) {#tier-1-tools-always-available}
 
 Qalabka Heerka 1 si caadi ah ayaa looga heli karaa Theme Builder iyada oo aan loo baahnayn habayn dheeraad ah.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Ujeeddo:** Falanqee mareegaha jira si looga soo saaro dhiirigelin naqshadeed, qaab-dhismeed nuxur, iyo shaqayn.
 
@@ -51,11 +51,11 @@ Falanqee naqshadda example.com oo u isticmaal dhiirigelin ahaan mareegtayda.
 - Mareegaha JavaScript-ku ku badan yahay waxa laga yaabaa inay yeeshaan falanqayn xaddidan
 - Mareegaha waaweyn waxa laga yaabaa inay qaataan waqti dheer in la falanqeeyo
 
-### Qalabka Heerka 2 (Ikhtiyaari)
+### Qalabka Heerka 2 (Ikhtiyaari) {#tier-2-tools-optional}
 
 Qalabka Heerka 2 waxa la heli karaa marka si cad looga hawlgeliyo dejinta Theme Builder.
 
-#### Falanqayn Sare
+#### Falanqayn Sare {#advanced-analytics}
 
 Waxa uu bixiyaa cabbirro waxqabad oo faahfaahsan:
 
@@ -65,7 +65,7 @@ Waxa uu bixiyaa cabbirro waxqabad oo faahfaahsan:
 - Dhibcaha helitaan
 - Dhibcaha hab-dhaqannada ugu fiican
 
-#### Hagaajiyaha Nuxurka
+#### Hagaajiyaha Nuxurka {#content-optimizer}
 
 Waxa uu falanqeeyaa oo soo jeediyaa hagaajinno loogu talagalay:
 
@@ -75,11 +75,11 @@ Waxa uu falanqeeyaa oo soo jeediyaa hagaajinno loogu talagalay:
 - Qaab-dhismeedka nuxurka
 - Meelaynta call-to-action
 
-### Qalabka Heerka 3 (Premium)
+### Qalabka Heerka 3 (Premium) {#tier-3-tools-premium}
 
 Qalabka Heerka 3 waxa uu u baahan yahay habayn dheeraad ah ama astaamo premium ah.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Waxa uu abuuraa nuxur loogu talagalay:
 
@@ -89,7 +89,7 @@ Waxa uu abuuraa nuxur loogu talagalay:
 - Sharaxaadaha meta
 - Qoraalka call-to-action
 
-#### Qalabka Naqshadeynta Sare
+#### Qalabka Naqshadeynta Sare {#advanced-design-tools}
 
 Waxa uu bixiyaa awoodaha naqshadeyn sare:
 
@@ -99,7 +99,7 @@ Waxa uu bixiyaa awoodaha naqshadeyn sare:
 - Aragti midab oo sare
 - Hagaajinta typography
 
-### Qalabka Wehelka Advanced (Xirmo Gaar ah)
+### Qalabka Wehelka Advanced (Xirmo Gaar ah) {#advanced-companion-tools-separate-package}
 
 Xirmada wehelka Advanced waxa si gaar ah looga qaybiyo sii-daynta asaasiga ah ee Superdav AI Agent. Waxa loogu talagalay deegaanada horumariyaha iyo milkiilaha mareegta ee la aamini karo, halkaas oo maamulayaashu si cad ugu oggolaadaan agent-ka inuu isticmaalo qalab saamayn sare leh.
 
@@ -116,9 +116,9 @@ Awoodaha wehelka Advanced waxa ka mid noqon kara:
 
 Ha u diiwaangelin kuwan sidii qalab Theme Builder oo guud ahaan looga heli karo rakibid kasta. Waxa la heli karaa oo keliya marka xirmada wehelka Advanced la rakibo, la hawlgeliyo, laguna xaddido maamulayaasha la aamini karo.
 
-## Habaynta Qalabka
+## Habaynta Qalabka {#tool-configuration}
 
-### Hawlgelinta Qalabka
+### Hawlgelinta Qalabka {#enabling-tools}
 
 Si aad u hawlgeliso qalab dheeraad ah gudaha Theme Builder:
 
@@ -127,7 +127,7 @@ Si aad u hawlgeliso qalab dheeraad ah gudaha Theme Builder:
 3. Daar/demi qalabka sida loo baahdo
 4. Kaydi dejinta
 
-### Ogolaanshaha Qalabka
+### Ogolaanshaha Qalabka {#tool-permissions}
 
 Qalabka qaar waxa uu u baahan yahay ogolaansho:
 
@@ -137,7 +137,7 @@ Qalabka qaar waxa uu u baahan yahay ogolaansho:
 - **Astaamaha sare** — waxa laga yaabaa inay u baahan yihiin subscription premium ah
 - **Qalabka wehelka Advanced** — waxay u baahan yihiin xirmada Advanced ee si gaar ah loo qaybiyo iyo kalsoonida maamulka oo cad
 
-### Furayaasha API iyo Aqoonsiyada
+### Furayaasha API iyo Aqoonsiyada {#api-keys-and-credentials}
 
 Habe furayaasha API ee qalabka u baahan:
 
@@ -146,13 +146,13 @@ Habe furayaasha API ee qalabka u baahan:
 3. Tijaabi xiriirka
 4. Si ammaan ah u kaydi
 
-### Rakibidda Xirmada Wehelka Advanced
+### Rakibidda Xirmada Wehelka Advanced {#installing-the-advanced-companion-package}
 
 Xirmada wehelka Advanced waxa si gaar ah looga sii daayaa ZIP-ka asaasiga ah ee WordPress.org. Ku rakib oo keliya kanaalka qaybinta rasmiga ah ee mashruuca ee sii-daynta, ka dibna ku xaddid helitaanka maamulayaasha la aamini karo. Dib u eeg albaabbada oggolaanshaha bini’aadamka iyo hab-dhaqanka git snapshot ka hor inta aanad hawlgelin qalabka filesystem, database, WP-CLI, REST dispatcher, dhisaha plugin-ka, maaraynta isticmaalaha, ama benchmark ee mareeg wax-soo-saar ah.
 
-## Isticmaalka sd-ai-agent/site-scrape
+## Isticmaalka sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Isticmaal Aasaasi ah
+### Isticmaal Aasaasi ah {#basic-usage}
 
 Weydii Theme Builder inuu falanqeeyo mareeg:
 
@@ -161,7 +161,7 @@ Falanqee naqshadda mareegta tartankayga ee competitor.com
 oo soo jeedi hagaajinno naqshadeed oo loogu talagalay mareegtayda.
 ```
 
-### Falanqayn Gaar ah
+### Falanqayn Gaar ah {#specific-analysis}
 
 Codso noocyo falanqayn oo gaar ah:
 
@@ -179,7 +179,7 @@ Hubi ka-jawaabidda mobilka ee example.com oo xaqiiji in mareegtaydu
 si la mid ah u jawaabto.
 ```
 
-### Falanqaynta Isbarbardhigga
+### Falanqaynta Isbarbardhigga {#comparison-analysis}
 
 Isbarbardhig mareego badan:
 
@@ -188,22 +188,22 @@ Isbarbardhig naqshadaha site1.com iyo site2.com oo samee naqshad
 isku darta qaybaha ugu fiican ee labadaba.
 ```
 
-## Xaddidaadaha Qalabka iyo Tixgelinnada
+## Xaddidaadaha Qalabka iyo Tixgelinnada {#tool-limitations-and-considerations}
 
-### Xaddididda Heerka
+### Xaddididda Heerka {#rate-limiting}
 
 - Scraping waxaa lagu xaddidaa heer si looga hortago culays xad-dhaaf ah oo saaran server-ka
 - Codsiyo badan oo loo diro isla goobta waa la gaabin karaa
 - Goobo waaweyn waxay qaadan karaan waqti dheer in la falanqeeyo
 
-### Saxnaanta Nuxurka
+### Saxnaanta Nuxurka {#content-accuracy}
 
 - Nuxurka isbeddelaya si buuxda looma qaban karo
 - Nuxurka lagu soo bandhigo JavaScript wuxuu noqon karaa mid aan dhammaystirnayn
 - Xogta waqtiga-dhabta ah waxaa laga yaabaa inaanay ka muuqan
 - Nuxur qaar wuxuu ka dambayn karaa paywalls
 
-### Tixgelinno Sharci iyo Anshax
+### Tixgelinno Sharci iyo Anshax {#legal-and-ethical-considerations}
 
 - Ixtiraam robots.txt iyo siyaasadaha goobta
 - Ha scrape-gareyn nuxur xuquuq-daabacaad leh si dib loogu soo saaro
@@ -211,16 +211,16 @@ isku darta qaybaha ugu fiican ee labadaba.
 - Xaqiiji inaad leedahay xuquuq aad ku isticmaasho nuxurka la soo saaray
 - Raac shuruudaha adeegga ee goobaha la falanqeeyay
 
-### Saamaynta Waxqabadka
+### Saamaynta Waxqabadka {#performance-impact}
 
 - Scraping goobo waaweyn wuxuu qaadan karaa waqti
 - Scrapes badan oo isku mar ah waxay noqon karaan kuwo gaabis ah
 - Isku-xirnaanta shabakadda waxay saamaysaa xawaaraha
 - Xirmooyin xogeed waaweyn waxay u baahan karaan habayn dheeraad ah
 
-## Hababka Ugu Fiican
+## Hababka Ugu Fiican {#best-practices}
 
-### Isticmaalka Falanqaynta Goobta
+### Isticmaalka Falanqaynta Goobta {#using-site-analysis}
 
 1. **Falanqee goobo badan** — ka ururi dhiirigelin ilo kala duwan
 2. **Diiradda saar qaab-dhismeedka** — baro qaababka layout-ka iyo abaabulka
@@ -228,7 +228,7 @@ isku darta qaybaha ugu fiican ee labadaba.
 4. **Baro typography** — aqoonso isku-darka font-yada aad jeceshahay
 5. **Dib u eeg navigation** — faham abaabulka menu-ga
 
-### Scraping Anshax Leh
+### Scraping Anshax Leh {#ethical-scraping}
 
 1. **Ixtiraam robots.txt** — raac tilmaamaha goobta
 2. **Ha nuqulin nuxurka** — u isticmaal falanqaynta dhiirigelin keliya
@@ -236,7 +236,7 @@ isku darta qaybaha ugu fiican ee labadaba.
 4. **Xigasho ilaha** — credit sii ilaha dhiirigelinta
 5. **Raac shuruudaha** — u hoggaansanow shuruudaha adeegga ee goobta
 
-### Kordhinta Waxtarka Qalabka
+### Kordhinta Waxtarka Qalabka {#maximizing-tool-effectiveness}
 
 1. **Noqo mid gaar ah** — codso noocyo gaar ah oo falanqayn ah
 2. **Bixi macnaha guud** — sharax ujeeddada goobtaada
@@ -244,9 +244,9 @@ isku darta qaybaha ugu fiican ee labadaba.
 4. **Ku celceli oo hagaaji** — natiijooyinka ku saleysan sii turxaan bixi
 5. **Isku dar qalab** — isticmaal qalab badan si loo helo falanqayn dhammaystiran
 
-## Xallinta Dhibaatooyinka
+## Xallinta Dhibaatooyinka {#troubleshooting}
 
-### Goobtu Ma Scrape-gareynayso
+### Goobtu Ma Scrape-gareynayso {#site-wont-scrape}
 
 - Hubi in goobtu si dadweyne loo heli karo
 - Xaqiiji in robots.txt oggol yahay scraping
@@ -254,7 +254,7 @@ isku darta qaybaha ugu fiican ee labadaba.
 - Hubi xiriirka internetka
 - La xiriir taageerada haddii dhibaatadu sii socoto
 
-### Falanqayn Aan Dhammaystirnayn
+### Falanqayn Aan Dhammaystirnayn {#incomplete-analysis}
 
 - Goobtu waxay yeelan kartaa nuxur isbeddelaya
 - JavaScript si buuxda looma render-gareyn karo
@@ -262,7 +262,7 @@ isku darta qaybaha ugu fiican ee labadaba.
 - Isku day inaad falanqayso bogag gaar ah halkii
 - Codso noocyo gaar ah oo falanqayn ah
 
-### Waxqabad Gaabis ah
+### Waxqabad Gaabis ah {#slow-performance}
 
 - Goobo waaweyn waxay qaataan waqti dheer in la falanqeeyo
 - Scrapes badan oo isku mar ah waa gaabis
@@ -270,7 +270,7 @@ isku darta qaybaha ugu fiican ee labadaba.
 - Isku day saacadaha aan mashquulka ahayn
 - Marka hore falanqee qaybo yaryar
 
-## Dukumentiyada La Xiriira
+## Dukumentiyada La Xiriira {#related-documentation}
 
 - [Wareysiga Sahaminta](./discovery-interview.md) — ururi macluumaadka naqshadeynta
 - [Jihada Naqshadeynta](./design-direction.md) — turxaan bixi naqshaddaada

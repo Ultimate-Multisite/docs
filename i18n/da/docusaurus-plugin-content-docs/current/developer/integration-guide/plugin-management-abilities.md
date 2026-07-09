@@ -3,11 +3,11 @@ title: Muligheder for pluginhåndtering
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin-administrationsfunktioner
+# Plugin-administrationsfunktioner {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 leveres med **7 plugin-administrationsfunktioner**, som AI-assistenten kan kalde under en samtale. Disse funktioner giver programmatisk kontrol over WordPress plugins installeret via [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Oversigt over funktioner
+## Oversigt over funktioner {#abilities-overview}
 
 | Funktion | Slug | Beskrivelse |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 leveres med **7 plugin-administrationsfunktioner**, som A
 | Installer Plugin | `install_plugin` | Udruller et sandboxet plugin til den live WordPress plugin-mappe. |
 | Aktivér Plugin | `activate_plugin` | Aktiverer et sandboxet plugin i wp-env sandbox-miljøet. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Plugin-installationsprogrammet håndterer filsystemoperationer ved udrulning eller fjernelse af plugins. Centrale adfærdsmønstre:
 
@@ -28,7 +28,7 @@ Plugin-installationsprogrammet håndterer filsystemoperationer ved udrulning ell
 - **Opdatering**: Erstatter eksisterende plugin-filer. Deaktiverer pluginet før skrivning for at undgå fejl med delvis tilstand.
 - **Slet efter slug**: Finder plugin-mappen efter slug, deaktiverer på tværs af alle sites og fjerner derefter mappen.
 
-### Registrering af en brugerdefineret installationshåndtering
+### Registrering af en brugerdefineret installationshåndtering {#registering-a-custom-install-handler}
 
 Du kan hooke ind i installationslivscyklussen ved hjælp af `gratis_ai_plugin_installer_before_install`- og `gratis_ai_plugin_installer_after_install`-handlingerne:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Økosystemregister
+## Økosystemregister {#ecosystem-registry}
 
 Funktioner registreres gennem **plugin-økosystemregisteret**. Registeret mapper funktions-slugs til deres handler-klasser og eksponerer dem for AI-agentens værktøjsdispatcher.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner-integration
+## HookScanner-integration {#hookscanner-integration}
 
 Funktionerne `create_plugin` og `update_plugin` kører automatisk **HookScanner** mod nyligt genereret kode. HookScanner returnerer en liste over WordPress action- og filter-hooks, der er registreret af pluginet.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner springer automatisk mapperne `vendor/` og `node_modules/` over.
 
-## Arkitektur for async jobs
+## Arkitektur for async jobs {#async-job-architecture}
 
 Langvarige plugin-operationer (generering, installation) afsendes som **async jobs** med live statussporing. AI-chatgrænsefladen poller efter status og streamer statusopdateringer til brugeren:
 

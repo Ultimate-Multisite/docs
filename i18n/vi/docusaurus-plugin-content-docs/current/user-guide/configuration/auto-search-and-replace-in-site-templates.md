@@ -3,7 +3,7 @@ title: Tự động tìm kiếm và thay thế trong Mẫu trang web
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Tự động Tìm kiếm và Thay thế trong mẫu site (v2)
+# Tự động Tìm kiếm và Thay thế trong mẫu site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Hướng dẫn này yêu cầu WP UItimo phiên bản 2.x.**_
 
@@ -17,7 +17,7 @@ Khách hàng của bạn sau đó sẽ có thể điền trường đó trong qu
 
 Ultimate Multisite sau đó sẽ tự động thay thế các phần giữ chỗ bằng dữ liệu do khách hàng cung cấp.
 
-## **Giải quyết vấn đề "mẫu đầy phần giữ chỗ"**
+## **Giải quyết vấn đề "mẫu đầy phần giữ chỗ"** {#solving-the-template-full-of-placeholders-problem}
 
 Tất cả điều đó đều tuyệt vời, nhưng chúng ta sẽ gặp một vấn đề khó coi: giờ đây các mẫu site của chúng ta - vốn có thể được khách hàng truy cập - lại đầy những phần giữ chỗ xấu xí và không nói lên được nhiều điều.
 

@@ -4,20 +4,20 @@ title: Parzûn - wu_after_ . $this->slug . _api_arguments
 sidebar_label: wu_after_ . $this->slug . _api_arguments
 _i18n_hash: 562602bab1532a31c4f5065a3a5f4a9f
 ---
-# Filter: wu_after_ . $this->slug . _api_arguments
+# Filter: wu_after_ . $this->slug . _api_arguments {#filter-wuafter--this-slug--apiarguments}
 
 Parzûn piştî ku hate guherandin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Ravekirin |
 |------|------|-------------|
 | $args | `array` | Argumanên API ji bo vî rêveberî. |
 | $this | `object` | Ev rêveber. |
 
-### Ji
+### Ji {#since}
 
 - 2.0.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L606) de li rêza 606 hate pênasekirin.

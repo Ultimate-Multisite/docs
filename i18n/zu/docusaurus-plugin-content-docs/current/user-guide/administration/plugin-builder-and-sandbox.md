@@ -3,11 +3,11 @@ title: Umakhi we-Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Umakhi wama-Plugin & Sandbox
+# Umakhi wama-Plugin & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 yethula **Uhlelo Lomakhi wama-Plugin & Sandbox**, oluvumela umsizi we-AI ukuthi akhiqize, asebenzise, futhi aphathe ama-plugin e-WordPress kunethiwekhi yakho — konke lokhu ngendawo ye-sandbox ephephile, ehlukanisiwe.
 
-## Uhlolojikelele
+## Uhlolojikelele {#overview}
 
 Umakhi wama-Plugin uvumela umsizi we-AI ukuthi abhale ama-plugin e-WordPress enziwe ngokwezifiso ngokuphendula izicelo zolimi lwemvelo. Ama-plugin akhiqiziwe ayaqinisekiswa, agcinwe, futhi asetshenziswe ngaphakathi kongqimba lwe-sandbox ngaphambi kokuthi athinte ukusebenza kwesayithi elibukhoma.
 
@@ -17,7 +17,7 @@ Izimo zokusetshenziswa zihlanganisa:
 - Ukwenza izibonelo zokuqala zezici ezidinga ama-hook e-WordPress noma izinhlobo zokuthunyelwe ezenziwe ngokwezifiso.
 - Ukwakha izikripthi zokuzenzakalela zesikhashana zemisebenzi yeqoqo.
 
-## Ukukhiqiza i-Plugin nge-AI
+## Ukukhiqiza i-Plugin nge-AI {#generating-a-plugin-via-ai}
 
 Ukuze ukhiqize i-plugin, vula isikhombimsebenzisi sengxoxo se-Gratis AI Agent bese uchaza okudingayo. Isibonelo:
 
@@ -32,7 +32,7 @@ I-AI izokwenza lokhu:
 
 Ungawucwenga umphumela ngokulandela ngomlayezo ochungechungeni lwengxoxo olufanayo ngaphambi kokuwusebenzisa.
 
-## Ukusebenzisa ku-Sandbox
+## Ukusebenzisa ku-Sandbox {#sandbox-activation}
 
 Ukusebenzisa i-plugin ekhiqiziwe ku-sandbox kwehlukile ekuyisebenziseni kunethiwekhi ebukhoma. I-sandbox:
 
@@ -48,7 +48,7 @@ Ukuze usebenzise i-plugin ku-sandbox, chofoza inkinobho ethi **Sebenzisa ku-Sand
 
 Umlayezo wesimo uqinisekisa ukuthi ukusebenzisa kuphumelele noma kwehlulekile. Uma kwehluleka, i-log yephutha iboniswa ochungechungeni lwengxoxo.
 
-## Ukuphatha ama-Plugin Akhiqiziwe
+## Ukuphatha ama-Plugin Akhiqiziwe {#managing-generated-plugins}
 
 Ama-plugin akhiqiziwe afakwe ohlwini ku-**Gratis AI Agent → Umakhi wama-Plugin → Phatha ama-Plugin**. Kulesi sikrini ungakwazi:
 
@@ -64,7 +64,7 @@ Ama-plugin akhiqiziwe afakwe ohlwini ku-**Gratis AI Agent → Umakhi wama-Plugin
 **Install on network** deploys the generated plugin to your live WordPress multisite. Review the plugin code before proceeding. Gratis AI Agent will prompt for confirmation before completing a live install.
 :::
 
-## Ukufaka i-Plugin Ekhiqiziwe Kunethiwekhi
+## Ukufaka i-Plugin Ekhiqiziwe Kunethiwekhi {#installing-a-generated-plugin-on-the-network}
 
 Uma usenelisekile nge-plugin esesandbox, ungayifaka kunethiwekhi ebukhoma:
 
@@ -78,7 +78,7 @@ Kungenjalo, sebenzisa umyalo we-slash esikhombimsebenzisini sengxoxo:
 /install-plugin <plugin-slug>
 ```
 
-## Izibuyekezo ze-Plugin
+## Izibuyekezo ze-Plugin {#plugin-updates}
 
 Ukuze ubuyekeze i-plugin ekhiqiziwe, chaza ushintsho kumsizi we-AI engxoxweni entsha:
 
@@ -86,7 +86,7 @@ Ukuze ubuyekeze i-plugin ekhiqiziwe, chaza ushintsho kumsizi we-AI engxoxweni en
 
 I-AI ikhiqiza inguqulo entsha, ebonakala ku-sandbox eceleni kwenguqulo yamanje. Ubuyekeza umehluko bese uqinisekisa ngaphambi kokuthi isibuyekezo sisetshenziswe.
 
-## Ukuhlanganiswa kwe-HookScanner
+## Ukuhlanganiswa kwe-HookScanner {#hookscanner-integration}
 
 Umakhi wama-Plugin usebenzisa **HookScanner** ehlanganisiwe ukuze ahlaziye ama-hook nama-filter abhaliswe yi-plugin ngayinye ekhiqiziwe. Okukhishwa yi-HookScanner kuboniswa empendulweni yengxoxo futhi kuhlanganisa:
 
@@ -96,7 +96,7 @@ Umakhi wama-Plugin usebenzisa **HookScanner** ehlanganisiwe ukuze ahlaziye ama-h
 
 Lokhu kukusiza ukuthi uqonde ukuziphatha kwe-plugin ngaphambi kokuyisebenzisa.
 
-## Okucatshangwayo Kwezokuphepha
+## Okucatshangwayo Kwezokuphepha {#security-considerations}
 
 - Ama-plugin akhiqiziwe agcinwa ngokwehlukana nama-plugin afakwe ngesandla futhi awatholakali ngesikrini esijwayelekile sokuphatha ama-plugin e-WordPress kuze kube yilapho uwafaka ngokusobala kunethiwekhi.
 - I-sandbox isebenzisa ukuqinisekiswa kwendlela ukuvimbela ukuhamba phakathi kwezinkomba lapho kubhalwa amafayela e-plugin.

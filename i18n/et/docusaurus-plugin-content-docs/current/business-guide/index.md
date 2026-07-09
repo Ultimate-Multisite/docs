@@ -3,13 +3,13 @@ title: Loo nišiveebisaitide äri
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Loo nišiveebisaitide äri Ultimate Multisite abil
+# Loo nišiveebisaitide äri Ultimate Multisite abil {#build-a-niche-website-business-with-ultimate-multisite}
 
 Enamik inimesi, kes üritavad veebisaite müüa, konkureerib hinnaga Wix, Squarespace’i ja tuhandete vabakutselistega. Nad kaotavad. Võitjad valivad konkreetse sihtrühma, loovad sellele sihtrühmale kohandatud lahenduse ja küsivad tasu väärtuse eest, mida nad pakuvad.
 
 See kursus õpetab sulle, kuidas teha täpselt seda Ultimate Multisite abil.
 
-## Mida sa ehitad
+## Mida sa ehitad {#what-you-will-build}
 
 Kogu selle kursuse jooksul ehitad sa päris töötava võrgustiku nimega **FitSite** -- veebisaidiplatvormi, mis on loodud spetsiaalselt fitness-stuudiotele, personaaltreeneritele ja jõusaaliomanikele.
 
@@ -23,7 +23,7 @@ Viimaseks õppetunniks on FitSite täielik nišiplatvorm, millel on:
 
 Sa liigud samm-sammult kaasa ning lõpuks on sul nii töötav platvorm kui ka teadmised, kuidas seda protsessi korrata mis tahes valitud nišis.
 
-## Miks fitness-stuudiod?
+## Miks fitness-stuudiod? {#why-fitness-studios}
 
 Vajasime konkreetset näidet, mida igaüks saab järgida. Fitness-stuudiod sobivad, sest:
 
@@ -34,7 +34,7 @@ Vajasime konkreetset näidet, mida igaüks saab järgida. Fitness-stuudiod sobiv
 
 Kõik, mida õpid FitSite’i ehitades, rakendub otse ükskõik millisele sinu valitud nišile: restoranid, kinnisvaramaaklerid, advokaadibürood, kirikud, ehitus- ja remonditööde tegijad või mis tahes muu vertikaal.
 
-## Kursuse ülesehitus
+## Kursuse ülesehitus {#course-structure}
 
 Iga õppetund tutvustab üht kontseptsiooni, selgitab, miks see oluline on, ja juhendab sind selle rakendamisel FitSite’i võrgustikus. Iga õppetund tugineb eelmisele.
 
@@ -55,7 +55,7 @@ Iga õppetund tutvustab üht kontseptsiooni, selgitab, miks see oluline on, ja j
 | [13. Kasvu skaleerimine](lesson-13-growth) | Esimestest klientidest päris ärini kasvamine | FitSite’i kasvu- ja automatiseerimisstrateegia |
 | [14. Mis saab edasi](lesson-14-whats-next) | Laienemine külgnevatesse niššidesse ja uutesse võimalustesse | Sinu teekaart pärast FitSite’i |
 
-## Eeltingimused
+## Eeltingimused {#prerequisites}
 
 - WordPress Multisite’i paigaldus (või valmisolek see seadistada)
 - Aktiivne Ultimate Multisite’i litsents
@@ -63,6 +63,6 @@ Iga õppetund tutvustab üht kontseptsiooni, selgitab, miks see oluline on, ja j
 
 Kodeerimist pole vaja. Kui sa pole varem Ultimate Multisite’i kasutanud, pole sellest midagi -- 3. õppetund alustab värskest paigaldusest.
 
-## Valmis?
+## Valmis? {#ready}
 
 Alusta siit: [Õppetund 1: Miks nišš võidab](lesson-1-why-niche).

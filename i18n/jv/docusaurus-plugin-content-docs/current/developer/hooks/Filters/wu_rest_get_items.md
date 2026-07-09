@@ -4,11 +4,11 @@ title: Saringan - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Saringan: wu_rest_get_items
+# Saringan: wu_rest_get_items {#filter-wurestgetitems}
 
 Nyaring apa panjaluk diijini diterusake utawa ora.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Nyaring apa panjaluk diijini diterusake utawa ora.
 | $rest_base | `array` | Slug entitas. |
 | $this | `\Base_Manager` | Instans obyek. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) ing baris 336

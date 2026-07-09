@@ -3,15 +3,15 @@ title: 'Phunziro 8: Kuyambitsa Kasitomala'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Phunziro 8: Kulowetsa Makasitomala
+# Phunziro 8: Kulowetsa Makasitomala {#lesson-8-customer-onboarding}
 
 Kupangitsa kasitomala kulembetsa ndi theka lokha la ntchito. Ngati alowa, amva kuti zasokoneza kwambiri, ndipo sabwereranso, mwawataya. Phunziro ili limapanga chokumana nacho chomwe chimasandutsa kulembetsa kwatsopano kukhala kasitomala wogwira ntchito komanso wotenga nawo mbali.
 
-## Pomwe Tinathera
+## Pomwe Tinathera {#where-we-left-off}
 
 FitSite ili ndi chizindikiro chokwanira ndi njira ya checkout yogwira ntchito. Tsopano tikuyang'ana pa zomwe zimachitika mwini wa studio ya fitness akamaliza kulembetsa ndi kufika pa site yake yatsopano koyamba.
 
-## Chifukwa Chake Onboarding Ndi Yofunika
+## Chifukwa Chake Onboarding Ndi Yofunika {#why-onboarding-matters}
 
 Mphindi 30 zoyambirira pambuyo polembetsa zimatsimikiza ngati kasitomala akhala kapena achoka. Mwini wa studio ya fitness amene:
 
@@ -21,9 +21,9 @@ Mphindi 30 zoyambirira pambuyo polembetsa zimatsimikiza ngati kasitomala akhala 
 
 Ma template anu a niche (Phunziro 4) amayendetsa mfundo yoyamba. Phunziro ili limayendetsa yachiwiri.
 
-## Chokumana Nacho cha Kulowa Koyamba
+## Chokumana Nacho cha Kulowa Koyamba {#the-first-login-experience}
 
-### Widget ya Welcome Dashboard
+### Widget ya Welcome Dashboard {#welcome-dashboard-widget}
 
 Pangani dashboard widget yapadera yomwe imalandira makasitomala atsopano ndi kuwatsogolera pa kukhazikitsa. Izi ziyenera kuwoneka bwino akamalowa koyamba.
 
@@ -37,7 +37,7 @@ Pangani dashboard widget yapadera yomwe imalandira makasitomala atsopano ndi kuw
 
 Gawo lililonse limalumikiza mwachindunji ku tsamba kapena zoikamo zogwirizana. Palibe kufufuza m'mamenyu.
 
-### Chepetsani Dashboard
+### Chepetsani Dashboard {#simplify-the-dashboard}
 
 Makasitomala atsopano safunika kuona chilichonse cha mu menu ya WordPress. Ganizirani:
 
@@ -47,29 +47,29 @@ Makasitomala atsopano safunika kuona chilichonse cha mu menu ya WordPress. Ganiz
 
 Addon ya [Plugin & Theme Manager](/addons/plugin-and-theme-manager) ingathandize kuwongolera zomwe makasitomala amawona.
 
-## Mndandanda wa Email Wolandira
+## Mndandanda wa Email Wolandira {#welcome-email-sequence}
 
 Email imodzi yolandira sikokwanira. Khazikitsani mndandanda womwe umatsogolera makasitomala pa sabata yawo yoyamba:
 
-### Email 1: Kulandira (Nthawi yomweyo pambuyo polembetsa)
+### Email 1: Kulandira (Nthawi yomweyo pambuyo polembetsa) {#email-1-welcome-immediately-after-signup}
 
 - Mutu: "Takulandirani ku FitSite -- tsamba la studio yanu lili live"
 - Zomwe zili: Link yolowera, masitepe oyamba mwachangu, link kupita ku zothandizira
 - Kamvekedwe: Kosangalala, kolimbikitsa, kogwirizana ndi fitness
 
-### Email 2: Kupambana Mwachangu (Tsiku 1)
+### Email 2: Kupambana Mwachangu (Tsiku 1) {#email-2-quick-wins-day-1}
 
 - Mutu: "Zinthu 3 zoyamba kuchita pa FitSite yanu"
 - Zomwe zili: Onjezani logo yanu, sinthani chithunzi cha hero pa homepage, onjezani ndandanda ya makalasi anu
 - Phatikizani zithunzi za pa screen zosonyeza komwe mungadine
 
-### Email 3: Pangani Kukhala Kwanu (Tsiku 3)
+### Email 3: Pangani Kukhala Kwanu (Tsiku 3) {#email-3-make-it-yours-day-3}
 
 - Mutu: "Pangani fitness site yanu kuoneka yosiyana"
 - Zomwe zili: Sinthani mitundu, onjezani zithunzi za aphunzitsi, lembani nkhani ya studio yanu
 - Link kupita ku zitsanzo za ma fitness site abwino pa platform
 
-### Email 4: Pitani Live (Tsiku 7)
+### Email 4: Pitani Live (Tsiku 7) {#email-4-go-live-day-7}
 
 - Mutu: "Mwakonzeka kugawana FitSite yanu ndi dziko?"
 - Zomwe zili: Mndandanda wa zinthu zoti mutsimikizire musanagawane, momwe mungalumikizire domain yanu yapadera (ngati muli pa Growth/Pro), malangizo ogawana pa social
@@ -78,11 +78,11 @@ Email imodzi yolandira sikokwanira. Khazikitsani mndandanda womwe umatsogolera m
 Gwiritsani ntchito [Webhooks](/user-guide/integrations/webhooks) kapena [Zapier](/user-guide/integrations/zapier) kuyambitsa ma email awa kudzera pa platform yanu ya email marketing. Izi zimakupatsani ulamuliro wochuluka pa nthawi yotumizira ndipo zimakulolani kutsata kutenga nawo mbali.
 :::
 
-## Zothandizira
+## Zothandizira {#help-resources}
 
 Pangani zothandizira zogwirizana ndi niche zomwe zimayankha mafunso omwe eni ma studio a fitness amafunsa kwenikweni:
 
-### Zolemba za Knowledge Base
+### Zolemba za Knowledge Base {#knowledge-base-articles}
 
 - "Momwe mungasinthire ndandanda ya makalasi anu"
 - "Kuwonjezera ndi kusintha ma profile a aphunzitsi"
@@ -92,7 +92,7 @@ Pangani zothandizira zogwirizana ndi niche zomwe zimayankha mafunso omwe eni ma 
 
 Lembani izi kwa ogwiritsa ntchito osati akatswiri aukadaulo. Gwiritsani ntchito zithunzi za pa screen. Pewani mawu ovuta a WordPress.
 
-### Ma Video Walkthrough
+### Ma Video Walkthrough {#video-walkthroughs}
 
 Zojambulidwa zazifupi za screen (mphindi 2-3) zosonyeza:
 
@@ -103,7 +103,7 @@ Zojambulidwa zazifupi za screen (mphindi 2-3) zosonyeza:
 
 Izi siziyenera kukhala zopangidwa mwaukadaulo kwambiri. Zomveka, zothandiza, komanso zogwirizana ndi niche ndi zomwe zili zofunika.
 
-## Tsamba la Account
+## Tsamba la Account {#the-account-page}
 
 Ultimate Multisite ili ndi [Account Page](/user-guide/client-management/account-page) loyang'ana kasitomala kumene makasitomala amasamalira subscription yawo. Sinthani izi kuti:
 
@@ -112,7 +112,7 @@ Ultimate Multisite ili ndi [Account Page](/user-guide/client-management/account-
 - Ipereke mbiri ya billing ndi kutsitsa invoice
 - Ilumikize ku zothandizira
 
-## Kuyeza Kupambana kwa Onboarding
+## Kuyeza Kupambana kwa Onboarding {#measuring-onboarding-success}
 
 Tsatani zizindikiro izi kuti mudziwe ngati onboarding yanu ikugwira ntchito:
 
@@ -121,7 +121,7 @@ Tsatani zizindikiro izi kuti mudziwe ngati onboarding yanu ikugwira ntchito:
 - **Ma ticket a support ochokera kwa makasitomala atsopano**: Kuchuluka kwakukulu kumatanthauza kuti onboarding yanu ili ndi mipata
 - **Kusintha kuchokera ku trial kupita ku yolipira**: Ngati mumapereka ma trial, ndi kuchuluka kotani komwe kumasintha?
 
-## FitSite Network Mpaka Pano
+## FitSite Network Mpaka Pano {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Zomwe Tinamanga Mu Phunziro Ili
+## Zomwe Tinamanga Mu Phunziro Ili {#what-we-built-this-lesson}
 
 - **Chokumana nacho chotsogozedwa cha kulowa koyamba** ndi Quick Start widget
 - **Dashboard yosavuta** yoyang'ana pa ntchito za kasamalidwe ka fitness site

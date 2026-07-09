@@ -3,13 +3,13 @@ title: Création de codes de réduction
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Créer des codes de réduction (v2)
+# Créer des codes de réduction (v2) {#creating-discount-codes-v2}
 
 _**NOTE IMPORTANTE : Cet article fait référence à Ultimate Multisite version 2.x.**_
 
 Avec Ultimate Multisite, vous pouvez créer des codes de réduction pour accorder des réductions à vos clients sur leurs abonnements. Et les créer est facile !
 
-## Créer et modifier des codes de réduction
+## Créer et modifier des codes de réduction {#creating-and-editing-discount-codes}
 
 Pour créer ou modifier un code de réduction, allez dans **Ultimate Multisite > Codes de réduction**.
 
@@ -87,7 +87,7 @@ Le coupon est maintenant dans votre liste et, depuis celle-ci, vous pouvez cliqu
 
 ###
 
-### Utiliser les paramètres d’URL :
+### Utiliser les paramètres d’URL : {#using-url-parameters}
 
 Si vous souhaitez personnaliser vos tableaux de prix ou créer une belle page de code de coupon pour votre site web et appliquer automatiquement un code de réduction à votre formulaire de paiement, vous pouvez le faire via des paramètres d’URL.
 

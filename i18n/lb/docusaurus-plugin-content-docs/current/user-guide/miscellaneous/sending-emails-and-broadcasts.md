@@ -3,13 +3,13 @@ title: E-Mailen a Rundsendunge schécken
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-Mailen a Broadcasts schécken (v2)
+# E-Mailen a Broadcasts schécken (v2) {#sending-emails-and-broadcasts-v2}
 
 _**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 
 Ultimate Multisite kënnt mat enger Funktioun, déi Iech erlaabt mat Äre Clienten ze kommunizéieren, andeems Dir eng E-Mail un e gezielte Benotzer oder eng Grupp vu Benotzer schéckt, souwéi Hiwäiser op hirem Admin-Dashboard ze schécken, fir Ukënnegungen ze broadcasten
 
-## Admin-Hiwäiser mat Broadcasts op den Dashboard vun Äre Clienten derbäisetzen
+## Admin-Hiwäiser mat Broadcasts op den Dashboard vun Äre Clienten derbäisetzen {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Mat der Ultimate Multisite Broadcast-Funktioun kënnt Dir **Admin-Hiwäiser** op den Admin-Dashboard vun der Ënnersäit vun Ärem Benotzer derbäisetzen.
 
@@ -51,7 +51,7 @@ Nodeems Dir Äre Message erstallt hutt, kënnt Dir dann op de **Send** Knäppche
 
 An dat ass et. Den Admin-Hiweis soll direkt um Dashboard vun Ärem Benotzer gewise ginn.
 
-## E-Mailen un Är Clienten schécken
+## E-Mailen un Är Clienten schécken {#send-emails-to-your-customers}
 
 Mat der Ultimate Multisite Broadcast-Funktioun kënnt Dir eng E-Mail un Är Benotzer schécken. Dir hutt d'Méiglechkeet, d'E-Mail nëmmen un spezifesch Benotzer ze schécken oder eng spezifesch Benotzergrupp unzeviséieren, baséiert op dem Produkt oder Plang, ënner deem si abonnéiert sinn.
 
@@ -81,11 +81,11 @@ Nodeems Dir Äre Message erstallt hutt, kënnt Dir op de **Send** Knäppchen dr�
 
 An esou einfach ass et, eng E-Mail un Är Endbenotzer mat der Broadcast-Funktioun ze schécken.
 
-## System-E-Mailen
+## System-E-Mailen {#system-emails}
 
 System-E-Mailen an Ultimate Multisite sinn déi **automatesch Notifikatiounen**, déi vum System no bestëmmten Aktiounen, wéi Registréierung, Bezuelung, Domain-Mapping, asw., geschéckt ginn. Dës E-Maile kënnen aus den Ultimate Multisite Astellungen geännert oder modifizéiert ginn. Et kënnt och mat enger Funktioun, déi Iech erlaabt, bestehend Astellunge vun enger anerer Ultimate Multisite Installatioun zeréckzesetzen an z'importéieren.
 
-### Zerécksetzen & Importéieren
+### Zerécksetzen & Importéieren {#resetting--importing}
 
 Nei Ultimate Multisite Versiounen, souwéi Add-ons, kënnen a wäerten heiansdo nei E-Mailen registréieren.
 
@@ -93,7 +93,7 @@ Fir Konflikter an aner Problemer ze vermeiden, **füüge mir déi nei E-Mail-Tem
 
 Allerdéngs kënnen Super-Admins an Agenten dës nei registréiert E-Mailen iwwer d'Importer-Tool importéieren. Dee Prozess erstellt eng nei System-E-Mail mam Inhalt an der Konfiguratioun vum neien E-Mail-Template, wat dem Super-Admin erlaabt all Modifikatiounen ze maachen, déi e wëllt, oder se esou ze behalen, wéi se sinn.
 
-#### Wéi System-E-Mailen importéiert ginn
+#### Wéi System-E-Mailen importéiert ginn {#how-to-import-system-emails}
 
 Gitt op Är Ultimate Multisite Settings Säit a wiesselt op den **Emails** Tab.
 
@@ -111,7 +111,7 @@ Da kënnt Dir d'Import Emails Optiounen ëmschalten, fir ze gesinn, wéi eng Sys
 
 <!-- Screenshot net verfügbar: Modal fir Zerécksetzen an Importéieren mat den Optiounen fir E-Mailen z'importéieren ausgeklappt -->
 
-#### System-E-Mailen zerécksetzen
+#### System-E-Mailen zerécksetzen {#reseting-system-emails}
 
 Heiansdo mierks du, datt d'Ännerungen, déi s du un enger bestëmmter E-Mail-Schabloun gemaach hues, net méi fir dech funktionéieren an datt s du se op hiren **Standardzoustand** zerécksetze wëlls.
 

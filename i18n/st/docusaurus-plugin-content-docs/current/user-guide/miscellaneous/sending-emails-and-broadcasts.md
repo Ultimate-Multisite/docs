@@ -3,13 +3,13 @@ title: Ho romela li-imeile le liphatlalatso
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ho Romela Di-imeile le Dikgaso (v2)
+# Ho Romela Di-imeile le Dikgaso (v2) {#sending-emails-and-broadcasts-v2}
 
 _**TLHOKOMELISO YA BOHLOKWA: Sengolwa sena se bua ka Ultimate Multisite mofuta wa 2.x.**_
 
 Ultimate Multisite e tla le sebopeho se tla o dumella ho buisana le bareki ba hao ka ho romela imeile ho mosebedisi ya lebisitsweng kapa sehlopha sa basebedisi, hammoho le ho romela ditsebiso ho admin dashboard ya bona ho phatlalatsa ditsebiso
 
-## Kenya ditsebiso tsa admin ho dashboard ya bareki ba hao ka Dikgaso
+## Kenya ditsebiso tsa admin ho dashboard ya bareki ba hao ka Dikgaso {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ka ho sebedisa sebopeho sa kgaso sa Ultimate Multisite, o ka kenya **ditsebiso tsa admin** ho subsite admin dashboard ya mosebedisi wa hao.
 
@@ -51,7 +51,7 @@ Kamora ho bopa molaetsa wa hao, o ka tobetsa konopo ya **Send**.
 
 Mme ke phetho. Tsebiso ya admin e lokela ho hlaha hanghang ho dashboard ya mosebedisi wa hao.
 
-## Romela di-imeile ho bareki ba hao
+## Romela di-imeile ho bareki ba hao {#send-emails-to-your-customers}
 
 Ka ho sebedisa sebopeho sa kgaso sa Ultimate Multisite, o ka romela imeile ho basebedisi ba hao. O na le kgetho ya ho romela imeile feela ho basebedisi ba itseng kapa ho lebisa sehlopha se itseng sa basebedisi ho latela sehlahiswa kapa plan eo ba ingodisitseng tlasa yona.
 
@@ -81,11 +81,11 @@ Kamora ho bopa molaetsa wa hao, o ka tobetsa konopo ya **Send**.
 
 Mme ke kamoo ho leng bonolo kateng ho romela imeile ho basebedisi ba hao ba ho qetela ka ho sebedisa sebopeho sa kgaso.
 
-## Di-imeile tsa system
+## Di-imeile tsa system {#system-emails}
 
 Di-imeile tsa system ho Ultimate Multisite ke **ditsebiso tsa othomathiki** tse romelwang ke system kamora diketso tse itseng tse kang ngodiso, tefo, domain mapping, jj. Di-imeile tsena di ka hlophiswa kapa tsa fetolwa ho tswa ho disetting tsa Ultimate Multisite. E boetse e tla le sebopeho se tla o dumella ho seta botjha le ho kenya disetting tse teng ho tswa ho keno e nngwe ya Ultimate Multisite.
 
-### Ho seta botjha & Ho kenya
+### Ho seta botjha & Ho kenya {#resetting--importing}
 
 Mefuta e metjha ya Ultimate Multisite, hammoho le add-ons, e ka ngodisa di-imeile tse ntjha nako le nako mme e tla etsa jwalo.
 
@@ -93,7 +93,7 @@ Ho thibela dikgohlano le mathata a mang, **re ke ke ra kenya dithempleite tse nt
 
 Leha ho le jwalo, super admins le agents ba ka kenya di-imeile tsena tse sa tswa ngodiswa ka sesebediswa sa ho kenya. Tshebetso eo e tla bopa imeile e ntjha ya system e nang le dikahare le tlhophiso ya thempleite e ntjha ya imeile, e dumellang super admin ho etsa diphetoho dife kapa dife tseo a di batlang kapa ho di boloka jwalo ka ha di le teng.
 
-#### Mokgwa wa ho kenya di-imeile tsa system
+#### Mokgwa wa ho kenya di-imeile tsa system {#how-to-import-system-emails}
 
 Eya leqepheng la hao la Ultimate Multisite Settings mme o ye ho tab ya **Emails**.
 
@@ -111,7 +111,7 @@ Jwale, o ka toggle dikgetho tsa Import Emails ho bona hore na ke di-imeile dife 
 
 <!-- Setshwantsho ha se fumanehe: modal ya Seta Botjha le ho Kenya e nang le dikgetho tsa Kenya Di-imeile tse atolositsoeng -->
 
-#### Ho Seta Botjha Di-imeile tsa Sistimi
+#### Ho Seta Botjha Di-imeile tsa Sistimi {#reseting-system-emails}
 
 Ka dinako tse ding, o tla hlokomela hore diphetoho tseo o di entseng sebopehong se itseng sa imeile ha di sa o sebeletsa mme o ka rata ho se kgutlisetsa **boemong ba sona ba kamehla**.
 

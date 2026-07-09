@@ -3,19 +3,19 @@ title: 'Leson 10: Jou Lansman'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leson 10: Jou Lansman
+# Leson 10: Jou Lansman {#lesson-10-launch-day}
 
 Tout bagay konstwi. Anvan ou louvri pòt yo, leson sa a pase sou lis verifikasyon anvan lansman an pou asire pa gen anyen ki kase, ki manke, oswa ki anbarasan.
 
-## Kote Nou Te Rete
+## Kote Nou Te Rete {#where-we-left-off}
 
 FitSite gen modèl, plan, checkout, mak, onboarding, ak pri yo tout konfigire. Kounye a nou verifye tout bagay mache epi nou ale live.
 
-## Lis Verifikasyon Anvan Lansman
+## Lis Verifikasyon Anvan Lansman {#pre-launch-checklist}
 
 Travay sou chak eleman. Pa sote okenn.
 
-### Enfrastrikti Platfòm
+### Enfrastrikti Platfòm {#platform-infrastructure}
 
 - [ ] Hosting estab epi li bay bon pèfòmans anba chaj
 - [ ] Wildcard SSL aktif epi tout subdomains yo sèvi sou HTTPS
@@ -23,7 +23,7 @@ Travay sou chak eleman. Pa sote okenn.
 - [ ] Sovgad yo konfigire epi teste (restore omwen youn pou verifye)
 - [ ] Monitoring an plas -- ou pral konnen si platfòm nan tonbe
 
-### Modèl
+### Modèl {#templates}
 
 - [ ] Tout twa modèl yo chaje kòrèkteman sou nouvo sit yo
 - [ ] Kontni placeholder la itil epi li pa gen erè òtograf
@@ -32,7 +32,7 @@ Travay sou chak eleman. Pa sote okenn.
 - [ ] Vitès chajman paj la akseptab (teste ak yon zouti tankou GTmetrix oswa PageSpeed Insights)
 - [ ] Pa gen lyen kase oswa assets ki manke sou okenn modèl
 
-### Plan ak Pwodwi
+### Plan ak Pwodwi {#plans-and-products}
 
 - [ ] Tout twa plan yo aktif epi vizib
 - [ ] Deskripsyon plan yo egzak epi espesifik pou nich la
@@ -42,7 +42,7 @@ Travay sou chak eleman. Pa sote okenn.
 - [ ] Order bumps yo parèt kòrèkteman pandan checkout
 - [ ] Limitasyon plugin ak theme yo aplike kòrèkteman pou chak plan
 
-### Koule Checkout
+### Koule Checkout {#checkout-flow}
 
 - [ ] Konplete yon enskripsyon tès konplè sou chak plan (sèvi ak mòd peman tès)
 - [ ] Seleksyon modèl la montre modèl ki kòrèk yo pou chak plan
@@ -52,7 +52,7 @@ Travay sou chak eleman. Pa sote okenn.
 - [ ] Kliyan an ka konekte sou nouvo sit li a imedyatman
 - [ ] Kòd rabè yo mache kòrèkteman
 
-### Mak
+### Mak {#branding}
 
 - [ ] Paj login nan montre mak FitSite
 - [ ] Admin dashboard la montre mak FitSite
@@ -60,7 +60,7 @@ Travay sou chak eleman. Pa sote okenn.
 - [ ] Fakti yo afiche kòrèkteman ak detay biznis ou yo
 - [ ] Sit maketing la live epi li lye ak fòm checkout la
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Widget Quick Start la parèt sou dashboards nouvo kliyan yo
 - [ ] Tout lyen Quick Start yo mennen nan paj ki kòrèk yo
@@ -68,7 +68,7 @@ Travay sou chak eleman. Pa sote okenn.
 - [ ] Atik baz konesans yo pibliye epi aksesib
 - [ ] Paj Account la montre enfòmasyon plan kòrèk ak opsyon upgrade yo
 
-### Legal ak Biznis
+### Legal ak Biznis {#legal-and-business}
 
 - [ ] Terms of service yo pibliye epi lye depi checkout
 - [ ] Privacy policy a pibliye epi aksesib
@@ -77,11 +77,11 @@ Travay sou chak eleman. Pa sote okenn.
 - [ ] Payment gateway a nan mòd live (pa mòd tès)
 - [ ] Konfigirasyon taks la kòrèk pou jiridiksyon ou
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Konsidere yon lansman an de faz:
 
-### Faz 1: Soft Launch
+### Faz 1: Soft Launch {#phase-1-soft-launch}
 
 Envite 5-10 pwopriyetè estidyo fitness pou enskri anvan lansman piblik la. Sa yo se kliyan beta ou yo. Ofri yo yon rabè enpòtan (50% rabè pou lavi, oswa 3 mwa gratis) an echanj pou:
 
@@ -91,7 +91,7 @@ Envite 5-10 pwopriyetè estidyo fitness pou enskri anvan lansman piblik la. Sa y
 
 Sa ba ou feedback reyèl nan men kliyan ak sit live pou montre anvan ou louvri pou piblik la.
 
-### Faz 2: Lansman Piblik
+### Faz 2: Lansman Piblik {#phase-2-public-launch}
 
 Yon fwa feedback soft launch la enkòpore:
 
@@ -100,7 +100,7 @@ Yon fwa feedback soft launch la enkòpore:
 - Kòmanse akizisyon kliyan (Leson 11)
 - Anonse sou chanèl endistri fitness ki enpòtan
 
-## Aksyon Jou Lansman
+## Aksyon Jou Lansman {#launch-day-actions}
 
 Jou ou ale piblik la:
 
@@ -110,7 +110,7 @@ Jou ou ale piblik la:
 4. **Rete disponib** -- premye kliyan reyèl ou yo ka bezwen èd, epi repons rapid bati konfyans
 5. **Selebre yon ti moman** -- apre sa retounen travay
 
-## Sa Ki Ka Mal Pase
+## Sa Ki Ka Mal Pase {#what-can-go-wrong}
 
 Prepare pou:
 
@@ -120,7 +120,7 @@ Prepare pou:
 - **Pèfòmans anba chaj**: Si ou jwenn yon ogmantasyon trafik, konnen kijan pou scale hosting ou
 - **Konfizyon kliyan**: Kenbe baz konesans ou ak chanèl sipò yo pare
 
-## Rezo FitSite la Jiskaprezan
+## Rezo FitSite la Jiskaprezan {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Sa Nou Te Konstwi Nan Leson Sa a
+## Sa Nou Te Konstwi Nan Leson Sa a {#what-we-built-this-lesson}
 
 - **Yon lis verifikasyon konplè anvan lansman** ki kouvri enfrastrikti, kontni, peman, ak legal
 - **Yon estrateji soft launch** pou jwenn feedback reyèl anvan ou ale piblik

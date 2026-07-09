@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 ປລັກອິນ WordPress ທີ່ເພີ່ມການແກ້ໄຂຄວາມເຂົ້າກັນໄດ້ສຳລັບ Tutor LMS ໃນສະພາບແວດລ້ອມ multisite.
 
-## ຄຳອະທິບາຍ
+## ຄຳອະທິບາຍ {#description}
 
 ປລັກອິນນີ້ມີການແກ້ໄຂຄວາມເຂົ້າກັນໄດ້ທີ່ຈຳເປັນສຳລັບການໃຊ້ Tutor LMS ຢູ່ເທິງເຄືອຂ່າຍ multisite ຂອງ WordPress. ມັນຈັດການການລົງທະບຽນຜູ້ໃຊ້, ການຈັດການຜູ້ສອນ, ຂໍ້ຈຳກັດຂອງຫຼັກສູດ, ແລະຟັງຊັນອື່ນໆທີ່ເຉພາະສຳລັບ multisite.
 
-## ຄຸນສົມບັດ
+## ຄຸນສົມບັດ {#features}
 
 - **ການຈັດການຕາຕະລາງຖານຂໍ້ມູນ**: ກວດພົບແລະສ້າງຕາຕະລາງ Tutor LMS ທີ່ຂາດຫາຍໂດຍອັດຕະໂນມັດ ເຊິ່ງລົ້ມເຫຼວເນື່ອງຈາກຂໍ້ຈຳກັດ foreign key ຂອງ multisite
 - **ການລົງທະບຽນຜູ້ໃຊ້ Multisite**: ຕົວຈັດການ AJAX ແບບກຳນົດເອງສຳລັບການຈັດການການລົງທະບຽນຜູ້ໃຊ້ຂ້າມເວັບໄຊໃນເຄືອຂ່າຍ
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **ມຸມມອງຜູ້ດູແລແບບກຳນົດເອງ**: ລາຍການຜູ້ສອນແລະອິນເຕີເຟດການຈັດການທີ່ຮັບຮູ້ multisite
 - **ເຄື່ອງມືຜູ້ດູແລ**: ອິນເຕີເຟດການຈັດການຖານຂໍ້ມູນສຳລັບຜູ້ດູແລເຄືອຂ່າຍແລະເວັບໄຊ
 
-## ຂໍ້ກຳນົດ
+## ຂໍ້ກຳນົດ {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - ການຕິດຕັ້ງ WordPress Multisite
 - ປລັກອິນ Ultimate Multisite (ສຳລັບຟັງຊັນຂໍ້ຈຳກັດຂອງຫຼັກສູດ)
 
-## ການຕິດຕັ້ງ
+## ການຕິດຕັ້ງ {#installation}
 
 1. ອັບໂຫຼດໄຟລ໌ປລັກອິນໄປທີ່ `/wp-content/plugins/tutor-multisite-compatibility/`
 2. ໃຫ້ແນ່ໃຈວ່າ Tutor LMS ໄດ້ຖືກຕິດຕັ້ງແລະເປີດໃຊ້ງານແລ້ວ
 3. ເປີດໃຊ້ງານປລັກອິນຜ່ານເມນູ 'ປລັກອິນ' ໃນ WordPress
 4. ປລັກອິນຈະຜະສານກັບ Tutor LMS ໂດຍອັດຕະໂນມັດ
 
-## ໂຄງສ້າງໄຟລ໌
+## ໂຄງສ້າງໄຟລ໌ {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## ຟັງຊັນທີ່ຍ້າຍມາຈາກ MU plugin
+## ຟັງຊັນທີ່ຍ້າຍມາຈາກ MU plugin {#functionality-moved-from-mu-plugin}
 
 ປລັກອິນນີ້ມີຟັງຊັນທີ່ເຄີຍຢູ່ໃນ `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - ການຈັດການການລົງທະບຽນຜູ້ໃຊ້ Multisite
 - ການສະແດງ ID ສິນຄ້າຂອງຫຼັກສູດ
 
-## ການຈັດການຖານຂໍ້ມູນ
+## ການຈັດການຖານຂໍ້ມູນ {#database-management}
 
-### ບັນຫາ
+### ບັນຫາ {#the-problem}
 
 ໃນສະພາບແວດລ້ອມ multisite ຂອງ WordPress, ການສ້າງຕາຕະລາງ Tutor LMS ຈະລົ້ມເຫຼວສຳລັບຕາຕະລາງທີ່ມີຂໍ້ຈຳກັດ foreign key ໄປຫາຕາຕະລາງຜູ້ໃຊ້. ສິ່ງນີ້ເກີດຂຶ້ນເພາະວ່າ:
 
@@ -81,7 +81,7 @@ tutor-multisite-compatibility/
 - Foreign keys ອ້າງອີງໄປຫາ `wp_2_users` (ເຊິ່ງບໍ່ມີຢູ່)
 - ຕາຕະລາງຜູ້ໃຊ້ຕົວຈິງແມ່ນ `wp_users` (ໃຊ້ຮ່ວມກັນທົ່ວເຄືອຂ່າຍ)
 
-### ວິທີແກ້ໄຂ
+### ວິທີແກ້ໄຂ {#the-solution}
 
 ປລັກອິນນີ້ຈະເຮັດສິ່ງຕໍ່ໄປນີ້ໂດຍອັດຕະໂນມັດ:
 
@@ -92,13 +92,13 @@ tutor-multisite-compatibility/
    - ການສ້າງເວັບໄຊໃໝ່ໃນເຄືອຂ່າຍ
    - ການກວດສອບຕາຕະລາງແບບຄູ່ມືຜ່ານອິນເຕີເຟດຜູ້ດູແລ
 
-### ຕາຕະລາງທີ່ໄດ້ຮັບຜົນກະທົບ
+### ຕາຕະລາງທີ່ໄດ້ຮັບຜົນກະທົບ {#affected-tables}
 
 - `tutor_coupon_usages` - ມີ foreign key ໄປຫາຕາຕະລາງຜູ້ໃຊ້
 - `tutor_carts` - ມີ foreign key ໄປຫາຕາຕະລາງຜູ້ໃຊ້
 - `tutor_notification_preferences` - ຕາຕະລາງ TutorPro ທີ່ມີ foreign key ໄປຫາຕາຕະລາງຜູ້ໃຊ້
 
-### ອິນເຕີເຟດຜູ້ດູແລ
+### ອິນເຕີເຟດຜູ້ດູແລ {#admin-interface}
 
 ເຂົ້າເຖິງເຄື່ອງມືການຈັດການຖານຂໍ້ມູນໄດ້ທີ່:
 
@@ -111,6 +111,6 @@ tutor-multisite-compatibility/
 - ກວດສອບການກຳນົດຄ່າຖານຂໍ້ມູນ
 - ເບິ່ງຂໍ້ມູນສະຖານະແບບລະອຽດ
 
-## ການສະໜັບສະໜູນ
+## ການສະໜັບສະໜູນ {#support}
 
 ປລັກອິນນີ້ຖືກອອກແບບມາເຉພາະສຳລັບແພລດຟອມ KursoPro. ສຳລັບການສະໜັບສະໜູນດ້ານເຕັກນິກ, ຕິດຕໍ່ທີມພັດທະນາ.

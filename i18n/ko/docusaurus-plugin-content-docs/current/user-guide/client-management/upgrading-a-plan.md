@@ -3,7 +3,7 @@ title: 요금제 업그레이드
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# 플랜 업그레이드(v2)
+# 플랜 업그레이드(v2) {#upgrading-a-plan-v2}
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x를 기준으로 합니다.**_
 
@@ -41,7 +41,7 @@ Account 페이지에는 현재 멤버십과 그에 연결된 플랜이 표시됩
 
 ##
 
-## 업그레이드 및 다운그레이드 경로
+## 업그레이드 및 다운그레이드 경로 {#upgrade-and-downgrade-paths}
 
 각 제품에는 **Up & Downgrades** 탭이 있습니다. 해당 탭의 첫 번째 옵션은 **Plan Group**이라는 필드입니다.
 

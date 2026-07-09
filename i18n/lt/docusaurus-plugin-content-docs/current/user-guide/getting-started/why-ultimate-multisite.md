@@ -3,11 +3,11 @@ title: Kodėl Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kodėl Ultimate Multisite
+# Kodėl Ultimate Multisite {#why-ultimate-multisite}
 
 Jei atsiradėte šio straipsnio, tikėtina, kad išgirdėte, kad mūsų pluginas gali būti sp ir jūsų verslo idėjai įgyti realybę. Tikime, kad iki šios raidės galite gauti visus reikiamus atsakymus.
 
-## Kas tai yra Ultimate Multisite?
+## Kas tai yra Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite yra WordPress Multisite pluginas, kuris leidžia jums siūlyti klientams WaaS (Website as a Service). Su mūsų pluginu galite turėti skirtingus prenumeros lygis ir klientai gali mokėti jums periodinį mokesčių už tai, kad jų svetainė būtų hostuojama jūsų Multisite tinklu.
 
@@ -15,7 +15,7 @@ Ultimate Multisite leidžia jums gauti mokėjimą su skirtingais gateway'ais (pv
 
 O tai tik pradžia, nes galite išplaukti jo funkcijas naudojant add-ons ir webhooks.
 
-## Kiti vaizdai
+## Kiti vaizdai {#other-features}
 
 Ultimate Multisite taip pat siūlo:
 
@@ -33,11 +33,11 @@ Ir daugiau pažangios dalykles:
 
 * Paieška ir keitimas (Search and Replace API): Galite taip pat pažymėti svetainės šablonus laukais, tokiais kaip {{site_name}}, ir naudoti Search and Replace API, kad automatiškai užpildytumėte šiuos laukus informacija, pateikta jūsų klientuoti po registracijos.
 
-## Naudojimai
+## Naudojimai {#use-cases}
 
 Dabar atvykime pamatyti kelis galimus naudingiems naudojimui Ultimate Multisite.
 
-### Pavyzdys 1: Agentūra
+### Pavyzdys 1: Agentūra {#case-1-an-agency}
 
 Papildomai agentūros pagrindinės įgūdžiai dažnai susijia su svetainių dizainu, kurioje yra aspektai, pabaudinti jų hostavimą ar marketingą kaip papildomus paslaugas.
 
@@ -47,7 +47,7 @@ Kiekvieno produkto bazės kontrolė ir tematų naudojimas bus išlaikytas per Ul
 
 Agencijai gauti ramybės su Ultimate Multisite, leidžiant, jums daryti tai, kas jums labiausiai tinka – kurti aiprėjančius svetainis.
 
-### Pavyzdys 2: Niche tiekėjas
+### Pavyzdys 2: Niche tiekėjas {#case-2-niche-provider}
 
 Gali būti ilgas patarimas, kad „darykite vieną dalyką ir padarykite jį gausiai“. Daugeliui specialistų tai reiškia, kad sukurtų produktą ar paslaugą apima vieną pagrindinę idėją.
 
@@ -57,7 +57,7 @@ Viena iš Ultimate Multisite inovacinių funkcijos – šaltinis (template) svet
 
 Tiekėjui nicher svetainių ir paslaugų tai suteikia nepritaikomyzą vantaggio – galimybę iš karto sukurti prêt ready svetainę su pritaikytais pluginais ir dizainu. Klientas turėtų pateikti minimalius įvestines duomenis, kad paslaugą būtų užbaigta.
 
-### Pavyzdys 3: WordPress svetainės hostavimas
+### Pavyzdys 3: WordPress svetainės hostavimas {#case-3-wordpress-web-hosting}
 
 Gali būti daugybų būdų hostuoti WordPress svetainis, bet retai tai yra taip pat spinduliui kaip pateikti klientui interneto vietos su preinstaluotu versija WordPress. Tai ta, nes reikia susijusiame reiškinių ir ataskaitų, kad suteikti reikšmingą paslaugą.
 

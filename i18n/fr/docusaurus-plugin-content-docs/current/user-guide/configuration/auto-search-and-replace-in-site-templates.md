@@ -3,7 +3,7 @@ title: Recherche et remplacement automatiques dans les modèles de site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Recherche et remplacement automatiques dans les modèles de site (v2)
+# Recherche et remplacement automatiques dans les modèles de site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ce tutoriel nécessite WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Votre client pourra ensuite remplir ce champ lors de l’inscription.
 
 Ultimate Multisite remplacera ensuite automatiquement les espaces réservés par les données fournies par le client.
 
-## **Résoudre le problème du « modèle rempli d’espaces réservés »**
+## **Résoudre le problème du « modèle rempli d’espaces réservés »** {#solving-the-template-full-of-placeholders-problem}
 
 Tout cela est excellent, mais nous rencontrons un problème peu esthétique : nos modèles de site — qui peuvent être visités par nos clients — sont maintenant remplis d’espaces réservés peu élégants qui ne disent pas grand-chose.
 

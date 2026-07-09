@@ -4,11 +4,11 @@ title: Filter - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 ಆಥೆಂಟಿಕೇಶನ್ ಕುકી (authentication cookie) ಅವಧಿ ಮುಗಿಯುವ ಸಮಯದ ಅವಧಿಯನ್ನು ಇದು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 | $user_id | `int` | ಬಳಕೆದಾರರ ID. |
 | $remember | `bool` | ಬಳಕೆದಾರರ ಲಾಗಿನ್ ನೆನಪಿಟ್ಟುಕೊಳ್ಳಬೇಕೇ. ಡೀಫಾಲ್ಟ್ ಫಾಲ್ಸ್. |
 
-### Since
+### Since {#since}
 
 - 2.8.0
-### Source
+### Source {#source}
 
 Defined in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) at line 52

@@ -3,13 +3,13 @@ title: தனிப்பயன் மேம்பாட்டு உதவி
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-இலிருந்து Custom Development உதவியை எவ்வாறு பெறுவது?
+# Codeable-இலிருந்து Custom Development உதவியை எவ்வாறு பெறுவது? {#how-to-get-custom-development-help-from-codeable}
 
 சில நேரங்களில், நமது network செயல்பாடுகளை நாம் விரும்பும் விதத்தில் சரியாக அமைக்க சில அருமையான customization-கள் உண்மையிலேயே தேவைப்படும். நீங்கள் அதைத் தேடுகிறீர்கள் என்றால், [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)-ஐ பரிந்துரைக்கிறோம், இங்கு Ultimate Multisite நிபுணத்துவம் கொண்ட அனுபவமுள்ள developers-ஐ நீங்கள் கண்டறியலாம்.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) என்பது வாடிக்கையாளர்களை தகுதிவாய்ந்த WordPress freelance developers-உடன் இணைக்கும் ஒரு தளமாகும், இவர்கள் எந்த அளவிலான projects-லும் பணியாற்ற முடியும். நீங்கள் நினைத்திருக்கும் பணிக்கு குறிப்பாக தகுதியான நிபுணர்களுடன் உங்களை இணைப்பதை உறுதி செய்ய அவர்கள் கவனமான விண்ணப்ப செயல்முறையை கொண்டுள்ளனர்.
 
-### Codeable-ல் ஒரு project-ஐ எவ்வாறு உருவாக்குவது?
+### Codeable-ல் ஒரு project-ஐ எவ்வாறு உருவாக்குவது? {#how-to-create-a-project-in-codeable}
 
 முதலில், [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)-க்கு சென்று **Start a Project** பொத்தானை கிளிக் செய்யுங்கள்.
 

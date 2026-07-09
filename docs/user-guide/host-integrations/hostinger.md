@@ -131,5 +131,5 @@ For subdomain multisite installations, when a new site is created:
 For additional help with the Hostinger integration, please refer to:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

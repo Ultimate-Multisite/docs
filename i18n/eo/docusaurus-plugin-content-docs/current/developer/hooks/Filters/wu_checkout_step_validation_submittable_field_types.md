@@ -4,22 +4,22 @@ title: Filtrilo - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filtro: wu_checkout_step_validation_submittable_field_types
+# Filtro: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
 
 Permesu al programistoj preteriri la kontrolon se kampo estas aŭtomate submetebla.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
 | $submittable_field_types | `array` | La listo de kampotipoj. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/helpers/validation-rules/class-checkout-steps.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/validation-rules/class-checkout-steps.php#L92) ĉe linio 92
 
 
-## Redonas
+## Redonas {#returns}

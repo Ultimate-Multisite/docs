@@ -4,11 +4,11 @@ title: Veprim - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered
+# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Aktivizohet pasi MCP abilities regjistrohen për një entitet.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Aktivizohet pasi MCP abilities regjistrohen për një entitet.
 | $model_name | `string` | Emri i modelit. |
 | $this | `object` | Instanca e menaxherit. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.5.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) në rreshtin 171

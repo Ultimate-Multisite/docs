@@ -3,11 +3,11 @@ title: ಚೇಂಜ್‌ಲೋಗ್
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# ಬದಲಾವಣೆಗಳ ದಾಖಲೆ
+# ಬದಲಾವಣೆಗಳ ದಾಖಲೆ {#changelog}
 
-## 1.9.0 — ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2026-04-28
+## 1.9.0 — ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2026-04-28 {#190--released-on-2026-04-28}
 
-### ಹೊಸದಾಗಿ
+### ಹೊಸದಾಗಿ {#new}
 
 - **`create_contact_form` ಸಾಮರ್ಥ್ಯ** — ಇದು ಸಕ್ರಿಯ ಫಾರ್ಮ್ ಪ್ಲಗ್ಇನ್ (Contact Form 7, WPForms, Fluent Forms, ಅಥವಾ Gravity Forms) ಬಳಸಿ ಒಂದು contact form ಅನ್ನು ರಚಿಸುತ್ತದೆ ಮತ್ತು ಅದನ್ನು ಯಾವುದೇ post ಅಥವಾ page ನಲ್ಲಿ ಸೇರಿಸಲು ಸಿದ್ಧವಾದ shortcode ಅನ್ನು ಮರಳಿ ನೀಡುತ್ತದೆ.
 - **`set_featured_image` ಸಾಮರ್ಥ್ಯ** — ಇದು ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ Media Library attachment ID ಅಥವಾ remote URL ನಿಂದ post ಅಥವಾ page ಗೆ featured image ಅನ್ನು ನಿಯೋಜಿಸುತ್ತದೆ; URL ಒದಗಿಸಿದಾಗ ಚಿತ್ರವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಆಮದು ಮಾಡಿಕೊಳ್ಳುತ್ತದೆ.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **ಕಳೆದ session ಅನ್ನು ಮರುಸ್ಥಾಪಿಸುವುದು** — ಚಾಟ್ ಪ್ಯಾನೆಲ್ ಈಗ page ಲೋಡ್ ಆದಾಗ ಮತ್ತು widget ತೆರೆದಾಗ ಅತ್ಯಂತ ಇತ್ತೀಚಿನ ಸಂಭಾಷಣೆಯನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮರುಲೋಡ್ ಮಾಡುತ್ತದೆ, ಇದರಿಂದ page navigation ಮಾಡುವಾಗ ಸಂದರ್ಭ (context) ಎಂದಿಗೂ ಕಳೆದುಹೋಗುವುದಿಲ್ಲ.
 - **ಪ್ಲಗ್ಇನ್ action ಲಿಂಕ್‌ಗಳು** — WordPress ನ **Plugins → Installed Plugins** ಪರದೆಯ ಮೇಲೆ, ಪ್ಲಗ್ಇನ್ ವಿವರಣೆಯ ಕೆಳಗೆ, Settings ಮತ್ತು Abilities Registry ಗೆ ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು ಕಾಣಿಸುತ್ತವೆ.
 
-### ಸುಧಾರಣೆಗಳು
+### ಸುಧಾರಣೆಗಳು {#improved}
 
 - **Image source retry** — ಡೌನ್‌ಲೋಡ್ ವಿಫಲವಾದಾಗ, ಏಜೆಂಟ್ ಈಗ ಎಲ್ಲಾ ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ಉಚಿತ image sources ಅನ್ನು ಮರುಪ್ರಯತ್ನಿಸುತ್ತದೆ, ಆ ನಂತರ AI-ಉತ್ಪಾದಿತ ಚಿತ್ರಕ್ಕೆ ಹಿಂತಿರುಗುತ್ತದೆ.
 - **Model info panel** — ಇದು ಚಾಟ್ ಹೆಡರ್‌ನಲ್ಲಿ ಯಾವಾಗಲೂ ಗೋಚರಿಸುತ್ತದೆ; ಮೊದಲ ಸಂದೇಶದ ನಂತರ ಅಡಗುವುದಿಲ್ಲ.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — ಏಕೀಕೃತ AI ಐಕಾನ್ ಹಿಂದಿನ ಕಸ್ಟಮ್ ಅವತಾರವನ್ನು ಬದಲಾಯಿಸುತ್ತದೆ; ಇದು ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್ ವ್ಯವಸ್ಥೆಯೊಂದಿಗೆ ಸ್ಥಿರವಾಗಿದೆ.
 - **URL linkification** — system messages ಮತ್ತು error message bubbles ನಲ್ಲಿ ಕಾಣಿಸುವ URL ಗಳನ್ನು ಈಗ ಕ್ಲಿಕ್ ಮಾಡಬಹುದಾದ ಲಿಂಕ್‌ಗಳಾಗಿ ಪ್ರದರ್ಶಿಸಲಾಗುತ್ತದೆ.
 
-### ಸರಿಪಡಿಸಲಾದ
+### ಸರಿಪಡಿಸಲಾದ {#fixed}
 
 - **Ability discoverability** — ಎಲ್ಲಾ ಸಾಮರ್ಥ್ಯಗಳು ಏಜೆಂಟ್‌ನ ಟೂಲ್ ಲಿಸ್ಟ್‌ನಲ್ಲಿ ವಿಶ್ವಾಸಾರ್ಹವಾಗಿ ಕಾಣಿಸುವಂತೆ ವಿವರಣೆಗಳು, system prompt referencess, ಮತ್ತು namespace alignment ಅನ್ನು ಸರಿಪಡಿಸಲಾಗಿದೆ.
 - **Providers cache** — multisite networks ನಲ್ಲಿ ಹಳೆಯ-provider ಸಮಸ್ಯೆಗಳನ್ನು ತಡೆಯಲು, providers ಅನ್ನು ಈಗ version counter ಮೂಲಕ site-wide cache ಮಾಡಲಾಗಿದೆ.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2026-04-09
+## 1.4.0 — ಬಿಡುಗಡೆಯಾದ ದಿನಾಂಕ: 2026-04-09 {#140--released-on-2026-04-09}
 
-### ಹೊಸದಾಗಿ
+### ಹೊಸದಾಗಿ {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — ಇದು CI pipelines ಮತ್ತು model evaluation workflows ಗಾಗಿ command line ನಿಂದ Agent Capabilities v1 benchmark suite ಅನ್ನು ಚಲಾಯಿಸುತ್ತದೆ. ಪ್ರತಿ ಪ್ರಶ್ನೆಗಳ runs, provider/model overrides, ಮತ್ತು JSON/CSV output ಅನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.
 - **Agent Capabilities v1 benchmark suite** — ಇದು ಸಾಮರ್ಥ್ಯದ ಸಂಪೂರ್ಣ ವಿಸ್ತಾರವನ್ನು ವ್ಯಾಯಾಮ ಮಾಡುವ, ಸ್ಕೋರ್‌ಗಳing ಮತ್ತು token/duration ವರದಿ ಮಾಡುವ, ಸಂಕೀರ್ಣ, multi-step prompts ಗಳ ರಚನಾತ್ಮಕ ಸೆಟ್ ಆಗಿದೆ.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT registration, design system, navigation, ಮತ್ತು plugin discovery ಅನ್ನು ಒಳಗೊಂಡ end-to-end ಪರೀಕ್ಷೆ.
 - **AI provider connector plugins** ಸ್ಥಳೀಯ ಅಭಿವೃದ್ಧಿ ಸೆಟಪ್‌ಗಾಗಿ WordPress Playground blueprints ಗೆ ಸೇರಿಸಲಾಗಿದೆ.
 
-### ಸುಧಾರಣೆಗಳು
+### ಸುಧಾರಣೆಗಳು {#improved-1}
 
 - README ಅನ್ನು AI provider connector documentation ಮತ್ತು setup instructions ಯೊಂದಿಗೆ ಅಪ್ಡೇಟ್ ಮಾಡಲಾಗಿದೆ.
 
-### ಸರಿಪಡಿಸಲಾದ
+### ಸರಿಪಡಿಸಲಾದ {#fixed-1}
 
 - `main` branch ನಲ್ಲಿ 25 PHPUnit test failures ಅನ್ನು ಪರಿಹರಿಸಲಾಗಿದೆ.
 - `blueprint.json` ನಲ್ಲಿ GitHub releases URL format ಅನ್ನು ಸರಿಪಡಿಸಲಾಗಿದೆ.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _ಹಿಂದಿನ ಬಿಡುಗಡೆ ಟಿಪ್ಪಣಿಗಳನ್ನು ಪ್ಲಗ್ಇನ್ repository ನಲ್ಲಿ ನಿರ್ವಹಿಸಲಾಗಿದೆ._

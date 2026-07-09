@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Ƙarin WordPress da ke ƙara gyare-gyaren dacewa ga Tutor LMS a muhallan multisite.
 
-## Bayani
+## Bayani {#description}
 
 Wannan ƙari yana samar da muhimman gyare-gyaren dacewa don gudanar da Tutor LMS a kan hanyoyin sadarwar WordPress multisite. Yana kula da rajistar masu amfani, sarrafa malamai, iyakokin darasi, da sauran ayyuka na musamman ga multisite.
 
-## Fasaloli
+## Fasaloli {#features}
 
 - **Sarrafa Teburin Database**: Yana gano ta atomatik kuma yana ƙirƙirar teburan Tutor LMS da suka ɓace waɗanda suka kasa saboda ƙuntatawar maɓallin waje na multisite
 - **Rajistar Mai Amfani na Multisite**: Masu sarrafa AJAX na musamman don sarrafa rajistar masu amfani a tsakanin shafukan hanyar sadarwa
@@ -24,7 +24,7 @@ Wannan ƙari yana samar da muhimman gyare-gyaren dacewa don gudanar da Tutor LMS
 - **Ra'ayoyin Admin na Musamman**: Jerin malamai da ke fahimtar multisite da mu'amalar sarrafawa
 - **Kayan Aikin Admin**: Mu'amalar sarrafa database ga masu gudanar da hanyar sadarwa da shafi
 
-## Bukatu
+## Bukatu {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Wannan ƙari yana samar da muhimman gyare-gyaren dacewa don gudanar da Tutor LMS
 - Shigarwar WordPress Multisite
 - Ƙarin Ultimate Multisite (don aikin iyakokin darasi)
 
-## Shigarwa
+## Shigarwa {#installation}
 
 1. Loda fayilolin ƙarin zuwa `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Tabbatar an shigar da Tutor LMS kuma an kunna shi
 3. Kunna ƙarin ta cikin menu na 'Plugins' a WordPress
 4. Ƙarin zai haɗu da Tutor LMS ta atomatik
 
-## Tsarin Fayil
+## Tsarin Fayil {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Aikin da Aka Matsar daga MU plugin
+## Aikin da Aka Matsar daga MU plugin {#functionality-moved-from-mu-plugin}
 
 Wannan ƙari yana ɗauke da aikin da a baya yake cikin `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Wannan ƙari yana ɗauke da aikin da a baya yake cikin `wp-content/mu-plugins/da
 - Sarrafa rajistar mai amfani na multisite
 - Nuna ID na samfurin darasi
 
-## Sarrafa Database
+## Sarrafa Database {#database-management}
 
-### Matsalar
+### Matsalar {#the-problem}
 
 A muhallan WordPress multisite, ƙirƙirar teburin Tutor LMS yana kasawa ga tebura masu ƙuntatawar maɓallin waje zuwa teburin masu amfani. Wannan yana faruwa ne saboda:
 
@@ -81,7 +81,7 @@ A muhallan WordPress multisite, ƙirƙirar teburin Tutor LMS yana kasawa ga tebu
 - Maɓallan waje suna nuni zuwa `wp_2_users` (wanda babu shi)
 - Ainihin teburin masu amfani shi ne `wp_users` (ana raba shi a cikin hanyar sadarwar)
 
-### Maganin
+### Maganin {#the-solution}
 
 Wannan ƙari yana ta atomatik:
 
@@ -92,13 +92,13 @@ Wannan ƙari yana ta atomatik:
    - Ƙirƙirar sabon shafi a hanyar sadarwa
    - Duba tebur da hannu ta hanyar mu'amalar admin
 
-### Teburan da Abin Ya Shafa
+### Teburan da Abin Ya Shafa {#affected-tables}
 
 - `tutor_coupon_usages` - Yana ɗauke da maɓallin waje zuwa teburin masu amfani
 - `tutor_carts` - Yana ɗauke da maɓallin waje zuwa teburin masu amfani
 - `tutor_notification_preferences` - Teburin TutorPro mai maɓallin waje zuwa teburin masu amfani
 
-### Mu'amalar Admin
+### Mu'amalar Admin {#admin-interface}
 
 Samu damar kayan aikin sarrafa database a:
 
@@ -111,6 +111,6 @@ Mu'amalar tana ba ka damar:
 - Duba saitin database
 - Duba cikakken bayanin matsayi
 
-## Tallafi
+## Tallafi {#support}
 
 An tsara wannan ƙari musamman don dandalin KursoPro. Don tallafin fasaha, tuntuɓi ƙungiyar haɓakawa.

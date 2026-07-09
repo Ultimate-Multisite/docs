@@ -3,13 +3,13 @@ title: Imfashanyigisho yo Guhuza
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Amabwiriza yo Guhuza
+# Amabwiriza yo Guhuza {#integration-guide}
 
 Aya mabwiriza asobanura uburyo busanzwe bwo guhuza na Ultimate Multisite, harimo kwihuza na serivisi zo hanze, kubaka payment gateways zihariye, no gucunga webhooks.
 
 Ku bikorwaremezo by’umukodesha wihariye, reba [Guhuza Multi-Tenancy](./multi-tenancy) ku mabwiriza yo gutangiza umukodesha wigenga, kugenzura kwimura, SSO, no gusiba.
 
-## Guhuza CRM
+## Guhuza CRM {#crm-integration}
 
 Huza amakuru y’abakiriya na CRM yawe igihe abakiriya bashya biyandikishije:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Guhuza Analytics
+## Guhuza Analytics {#analytics-integration}
 
 Kurikirana ibikorwa by’ingenzi by’ubucuruzi mu rugendo rwose rw’umukiriya:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Intambwe Zikurikira
+## Intambwe Zikurikira {#next-steps}
 
 - [Guteza Imbere Gateway Yihariye](./custom-gateway) — Iyubakire payment gateway yawe
 - [Gucunga Webhook](./webhooks) — Hanga endpoints za webhook zihariye

@@ -3,13 +3,13 @@ title: Hostinger többszintes szerverrendszer
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 beilleszt egy Hostinger multi-tenancy képességet, amely lehetővé teszi a tárhelyelt domainok számára, hogy az elszigetelt tenent biztosítás mellett részt vehessenek a meglévő Hostinger domain-mapping integrációval együtt.
 
 Használja ezt a képességet akkor, ha a tenent domainokat és az elszigetelt tenent infrastruktúrát Hostinger hPanel segítségével kezelik.
 
-## Beállítási jegyzetek
+## Beállítási jegyzetek {#setup-notes}
 
 1. A fő Hostinger integrációt beállítsa meg **Ultimate Multisite > Settings > Host Integrations** menüpont alatt.
 2. Ellenőrizze, hogy a Hostinger API token képes-e kezelni az céldomainet vagy aldomainat.
@@ -19,14 +19,14 @@ Használja ezt a képességet akkor, ha a tenent domainokat és az elszigetelt t
 
 A Hostinger képesség az eszköz oldali műveletekhez a közös Hostinger kapcsolatot használja. Az DNS továbbra is a megfelelő Hostinger fiókra kell mutatnia, és az hPanel fiókok korlátai továbbra is érvényesek.
 
-## Képességes-specifikus változások
+## Képességes-specifikus változások {#capability-specific-changes}
 
 - A szuverén tenent host-tudatos domain műveletekkel lehet létrehozni.
 - Az ugyanazon a gépen lévő adatbázis host stringeket normalizálják az engedélyezési ellenőrzés előtt.
 - A Hostinger által kezelendő tenent az hPanelben megmutatott adatbázis host értékét kell használnia, kivéve ha a WordPress runtime helyi átirányítást igényel.
 - Az SSO (Single Sign-On) látogatások függenek abban, hogy a tenent domain milyen Hostinger-hostot oldja fel.
 
-## A Hostinger tenent problémamegel való megoldása
+## A Hostinger tenent problémamegel való megoldása {#troubleshooting-hostinger-tenants}
 
 - Ha egy tenyész telepítése sikertelen, ellenőrizze, hogy az adott domain már csatlakozott-e a Hostinger fiókhoz.
 - Ha az adatbázis ellenőrzés sikertelen, hasonlítsa össze a tenent DB felhasználójját, adatbázis nevét és host kötését az hPanel adataihoz.

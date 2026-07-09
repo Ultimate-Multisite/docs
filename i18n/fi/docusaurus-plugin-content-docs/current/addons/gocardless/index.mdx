@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless-maksu
 
 Anna asiakkaidesi maksaa Multisite Ultimate -jäsenyydet ja -tuotteet suoraveloituksella GoCardlessin avulla!
 
-## Asennus
+## Asennus {#installation}
 
 1. Lataa 'ultimate-multisite-gocardless' hakemistoon '/wp-content/plugins/'
 2. Aktivoi liitännäinen WordPressin 'Lisäosat'-valikon kautta
 3. Määritä liitännäinen vaiheittaisen ohjatun toiminnon avulla
 
-## Käyttöopas
+## Käyttöopas {#usage-guide}
 
 _GoCardless_ on **Euroopassa ja Isossa-Britanniassa** saatavilla oleva maksuyhdyskäytävä, joka mahdollistaa **suoraveloitus**maksut.
 
@@ -29,7 +29,7 @@ Tässä ohjeessa käydään läpi, miten _GoCardless_ määritetään, jotta voi
 
 _**Huomautus: GoCardless toimii vain seuraavilla valuutoilla:**_ **EUR, GBP, AUD, SEK ja DKK.**
 
-## Lisäosan asentaminen
+## Lisäosan asentaminen {#installing-the-add-on}
 
 Ensiksi sinun täytyy asentaa GoCardless-lisäosa Ultimate Multisitea varten. Voit tehdä sen siirtymällä kohtaan **Ultimate Multisite > Settings > Add-ons (sivupalkissa)**. Valitse sitten GoCardless-lisäosa kyseisestä luettelosta.
 
@@ -37,7 +37,7 @@ Kun lisäosa on asennettu ja aktivoitu, siirry kohtaan **Ultimate Multisite > Se
 
 ![Maksuyhdyskäytävän asetukset](/img/config/settings-payment-gateways.png)
 
-## Access Tokenin hankkiminen
+## Access Tokenin hankkiminen {#getting-an-access-token}
 
 Luo tili _GoCardlessiin_ (tai _GoCardless_-sandboxiin, jos haluat **testata sitä ensin**, mikä on suositeltavaa). Kirjautumisen jälkeen siirry **Developers**-valikkokohtaan.
 
@@ -61,7 +61,7 @@ Varmista, että sijoitat sen oikeaan kenttään. Jos se on **live toke** **n** ,
 
 Ensimmäinen vaihe on siinä. Seuraavaksi sinun täytyy määrittää webhook-kuuntelija.
 
-## Webhook-kuuntelijan määrittäminen
+## Webhook-kuuntelijan määrittäminen {#setting-up-the-webhook-listener}
 
 Kun käsitellään tilauksia, Ultimate Multisiten täytyy saada tieto tilauksen tilan muutoksista, uusista suoritetuista maksuista ja muista vastaavista asioista.
 

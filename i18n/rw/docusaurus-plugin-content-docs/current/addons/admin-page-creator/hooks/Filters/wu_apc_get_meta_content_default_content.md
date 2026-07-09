@@ -4,11 +4,11 @@ title: Muyunguruzo - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Akayunguruzo: wu_apc_get_meta_content_default_content
+# Akayunguruzo: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Emerera abatunganya porogaramu kuyungurura indangagaciro zisanzwe
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Emerera abatunganya porogaramu kuyungurura indangagaciro zisanzwe
 | $meta_type | `string` | Ubwoko bwa meta data igomba kugarurwa. |
 | $meta_key | `string` | Izina ry'umwanya wa meta. |
 
-### Kuva kuri
+### Kuva kuri {#since}
 
 - 1.4.0
-### Inkomoko
+### Inkomoko {#source}
 
 Bisobanuwe muri [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) ku murongo wa 68
 
 
-## Ibisubizwa
+## Ibisubizwa {#returns}
 Agaciro gashya gasanzwe.

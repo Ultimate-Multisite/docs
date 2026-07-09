@@ -3,17 +3,17 @@ title: Eksport u Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 aggiunge un unico strumento di **Export & Import** sotto **Tools > Export & Import**. Usalo quando ti serve impacchettare un sito WordPress come file ZIP, ripristinare quel ZIP o spostare un sito tra installazioni Ultimate Multisite e single-site WordPress compatibili.
 
-## Permessi necessari
+## Permessi necessari {#required-permissions}
 
 Devi accedere come amministratore che ha accesso al menu **Tools** di WordPress sul sito che stai esportando o importando. Su una rete multisite, usa un account di amministratore della rete quando esporti o importi sottositi utilizzando gli strumenti Ultimate Multisite a livello di rete.
 
 I download ZIP dell'esportazione vengono serviti tramite un endpoint di download autenticato, quindi tieni attiva la sessione admin finché il download non è terminato e non condividere pubblicamente le URL di download generate.
 
-## Esportare un sito in un ZIP
+## Esportare un sito in un ZIP {#exporting-a-site-to-a-zip}
 
 1. Nell'admin di WordPress del sito che vuoi copiare, vai su **Tools > Export & Import**.
 2. Apri l'area di esportazione e scegli il sito che vuoi impacchettare.
@@ -23,7 +23,7 @@ I download ZIP dell'esportazione vengono serviti tramite un endpoint di download
 
 Tieni il ZIP in una posizione sicura. Può contenere contenuti del sito, impostazioni, file multimediali e asset di codice selezionati.
 
-## Cosa include l'esportazione
+## Cosa include l'esportazione {#what-the-export-includes}
 
 Un ZIP di esportazione può includere:
 
@@ -34,7 +34,7 @@ Un ZIP di esportazione può includere:
 
 Il-għadd ta' dimensione tal-ZIP jikkontrolla l-importazzjoni ta' media, il-pluginijiet u temi li saltu, u l-dimizzjoni tal-tabeli tal-database tal-sitemap.
 
-## Importa siti min ZIP
+## Importa siti min ZIP {#importing-a-site-from-a-zip}
 
 1. Idħol għal **Tools > Export & Import** fuq sit WordPress destinazzjonat.
 2. Iftah il-applikazzjoni ta' import u l-upload il-ZIP li għandu jkun kunsidrat mill-Export & Import tool.
@@ -46,7 +46,7 @@ Il-għadd ta' dimensione tal-ZIP jikkontrolla l-importazzjoni ta' media, il-plug
 
 Fuq installazzjoni WordPress ta' sit waħda, l-importa tal-ZIP tistabbilixxi is-sit الحالي b'is-sit li importat. Iżgħar backup kumpre fuq is-sit target qabel ma tibda, u evita li tibda importi multipli għas-sit isiem fl-istess ħin.
 
-## Limitazzjonijiet u nota kompatibilitaj
+## Limitazzjonijiet u nota kompatibilitaj {#limitations-and-compatibility-notes}
 
 
 

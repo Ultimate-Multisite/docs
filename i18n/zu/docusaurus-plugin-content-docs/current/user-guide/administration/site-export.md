@@ -3,27 +3,27 @@ title: Ukuthekelisa Isayithi
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Ukuthekelisa Isayithi
+# Ukuthekelisa Isayithi {#site-export}
 
 Ikhasi lomlawuli le-**Site Export** livumela abalawuli benethiwekhi ukuthi bapakishe isayithi elilodwa, noma yonke inethiwekhi, libe i-archive elandekayo yokuthutha, ukwenza isipele, noma umsebenzi wokudlulisela komunye.
 
-## Ukuthekelisa isayithi elilodwa
+## Ukuthekelisa isayithi elilodwa {#exporting-one-site}
 
 Yiya ku-**Ultimate Multisite > Site Export** bese ukhetha **Generate new Site Export**. Khetha i-subsite ofuna ukuyithekelisa, bese ukhetha ukuthi i-archive kufanele ifake uploads, plugins, namathemes yini.
 
 Lapho ukuthekelisa kuqeda, landa i-ZIP ohlwini lwe-**Existing Exports**. Ama-ZIP okuthekelisa manje afaka i-`index.php` eziqalisa yona kanye ne-`readme.txt`, ngakho i-archive ingalayishwa ku-host entsha futhi iqalwe ngaphandle kokufaka kuqala i-plugin ehlukile yokungenisa.
 
-## Ukuthekelisa yonke inethiwekhi
+## Ukuthekelisa yonke inethiwekhi {#exporting-the-whole-network}
 
 Sebenzisa **Network Export** ekhasini le-Site Export lapho udinga i-archive eyodwa equkethe wonke ama-subsite kunethiwekhi. Lokhu kuyasiza ngaphambi kokuthutha ama-host, izivivinyo zokululama enhlekeleleni, noma ukwakha kabusha indawo yokuhlola lapho i-subsite ngayinye idinga ukuhamba ndawonye.
 
 Ngenxa yokuthi ukuthekelisa inethiwekhi kungaba kukhulu kakhulu kunokuthekelisa isayithi elilodwa, kusebenzise ngesikhathi esinethrafikhi ephansi futhi uqinisekise ukuthi isitoreji okuqondiswe kuso sinesikhala esanele samahhala se-uploads, plugins, themes, namafayela e-ZIP akhiqiziwe.
 
-### Ama-Network Import Bundles
+### Ama-Network Import Bundles {#network-import-bundles}
 
 Kusukela ku-Ultimate Multisite 2.12.0, i-Site Exporter ingakhiqiza **network import bundles** — ama-archive akhethekile aklanyelwe ukubuyisela amasayithi kuyo yonke inethiwekhi ngendlela elula. I-network import bundle iqukethe wonke amafayela adingekayo nemethadatha yokubuyisela amasayithi amaningi ekufakweni okusha kwenethiwekhi.
 
-#### Ukukhiqiza i-Network Import Bundle
+#### Ukukhiqiza i-Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Yiya ku-**Ultimate Multisite > Site Export**
 2. Chofoza **Generate new Network Export**
@@ -32,7 +32,7 @@ Kusukela ku-Ultimate Multisite 2.12.0, i-Site Exporter ingakhiqiza **network imp
 5. Chofoza **Generate**
 6. Landa i-bundle ZIP ohlwini lwe-**Existing Exports**
 
-#### Ukubuyisela kusuka ku-Network Import Bundle
+#### Ukubuyisela kusuka ku-Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Ukuze ubuyisele amasayithi kusuka ku-network import bundle:
 
@@ -52,7 +52,7 @@ Ama-network import bundles agcina:
 - Ukulayishwa kwemidiya (uma kufakiwe ku-bundle)
 - Amathebula edathabheyisi enziwe ngokwezifiso nedatha
 
-## Ukufaka i-ZIP yokuthekelisa eziqalisa yona
+## Ukufaka i-ZIP yokuthekelisa eziqalisa yona {#installing-a-self-booting-export-zip}
 
 Ukuze ubuyisele i-ZIP eziqalisa yona ku-host entsha:
 

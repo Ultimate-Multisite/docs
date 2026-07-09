@@ -3,7 +3,7 @@ title: 常见问题
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# 常见问题
+# 常见问题 {#frequently-asked-questions}
 
 以下是一些在支持请求中经常出现的**常见问题**。
 

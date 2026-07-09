@@ -3,17 +3,17 @@ title: 'Lektion 12: Das Geschäft führen'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lektion 12: Das Geschäft führen
+# Lektion 12: Das Geschäft führen {#lesson-12-running-the-business}
 
 Eine Plattform ist kein Projekt, das man abschließt – sie ist ein Geschäft, das man betreibt. In dieser Lektion behandeln wir den täglichen Betrieb von FitSite: Support, Abrechnung, Wartung und die Zufriedenheit der Kunden.
 
-## Wo wir aufgehört haben
+## Wo wir aufgehört haben {#where-we-left-off}
 
 FitSite ist live und Kunden melden sich an. Jetzt müssen Sie den Betrieb nachhaltig führen.
 
-## Tägliche Abläufe
+## Tägliche Abläufe {#daily-operations}
 
-### Überwachung (Monitoring)
+### Überwachung (Monitoring) {#monitoring}
 
 Überprüfen Sie diese täglich (oder richten Sie Benachrichtigungen ein):
 
@@ -22,7 +22,7 @@ FitSite ist live und Kunden melden sich an. Jetzt müssen Sie den Betrieb nachha
 - **Fehlgeschlagene Zahlungen**: Gibt es Zahlungsausfälle, die Beachtung erfordern?
 - **Support-Anfragen**: Gibt es unbeantwortete Kundenfragen?
 
-### Kundensupport
+### Kundensupport {#customer-support}
 
 Ihr Nischenfokus ist hier ein Vorteil. Da alle Ihre Kunden Fitnessstudios sind, werden Sie immer wieder dieselben Fragen sehen:
 
@@ -36,7 +36,7 @@ Ihr Nischenfokus ist hier ein Vorteil. Da alle Ihre Kunden Fitnessstudios sind, 
 
 Bauen Sie Ihre Wissensdatenbank (die Sie in Lektion 8 begonnen haben) um diese wiederkehrenden Fragen auf. Jedes Support-Ticket, das ein Artikel in der Wissensdatenbank sein könnte, ist ein Anzeichen dafür, dass Sie diesen Artikel verfassen sollten.
 
-### Support-Stufen (Support Tiers)
+### Support-Stufen (Support Tiers) {#support-tiers}
 
 Wenn Sie wachsen, strukturieren Sie den Support nach dem Plan:
 
@@ -48,9 +48,9 @@ Wenn Sie wachsen, strukturieren Sie den Support nach dem Plan:
 
 Das [Support Tickets Addon](/addons/support-tickets) kann helfen, Support-Anfragen innerhalb der Plattform zu verwalten.
 
-## Abrechnungsabläufe (Billing Operations)
+## Abrechnungsabläufe (Billing Operations) {#billing-operations}
 
-### Wiederkehrende Zahlungen
+### Wiederkehrende Zahlungen {#recurring-payments}
 
 Ultimate Multisite übernimmt die wiederkehrende Abrechnung automatisch über Ihr Zahlungs-Gateway. Ihre Aufgabe ist es, auf Folgendes zu achten:
 
@@ -58,7 +58,7 @@ Ultimate Multisite übernimmt die wiederkehrende Abrechnung automatisch über Ih
 - **Dunning**: Richten Sie eine automatisierte Wiederholungslogik über Ihr Zahlungs-Gateway ein (Stripe kümmert sich gut darum).
 - **Kündigungsanfragen**: Verstehen Sie, warum Kunden gehen. Jede Kündigung ist ein Feedback.
 
-### Mitgliedschaften verwalten (Managing Memberships)
+### Mitgliedschaften verwalten (Managing Memberships) {#managing-memberships}
 
 Navigieren Sie zu **Ultimate Multisite > Memberships**, um:
 
@@ -69,13 +69,13 @@ Navigieren Sie zu **Ultimate Multisite > Memberships**, um:
 
 Siehe [Managing Memberships](/user-guide/administration/managing-memberships) für die vollständige Referenz.
 
-### Rechnungsstellung (Invoicing)
+### Rechnungsstellung (Invoicing) {#invoicing}
 
 Stellen Sie sicher, dass für jede Zahlung korrekt Rechnungen erstellt werden. Kunden benötigen möglicherweise Rechnungen für die Geschäftsbelegführung. Siehe [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Plattformwartung (Platform Maintenance)
+## Plattformwartung (Platform Maintenance) {#platform-maintenance}
 
-### WordPress- und Plugin-Updates
+### WordPress- und Plugin-Updates {#wordpress-and-plugin-updates}
 
 Als Netzwerkadministrator sind Sie verantwortlich für:
 
@@ -88,14 +88,14 @@ Als Netzwerkadministrator sind Sie verantwortlich für:
 Ein fehlerhaftes Update betrifft jede Kundensite in Ihrem Netzwerk. Testen Sie Updates immer zuerst auf einer Staging-Kopie Ihres Netzwerks.
 :::
 
-### Sicherheit (Security)
+### Sicherheit (Security) {#security}
 
 - Halten Sie alle Software aktuell
 - Verwenden Sie starke Passwörter und die Zwei-Faktor-Authentifizierung für Admin-Konten
 - Überwachen Sie verdächtige Aktivitäten
 - Haben Sie einen Plan für Sicherheitsvorfälle
 
-### Leistung (Performance)
+### Leistung (Performance) {#performance}
 
 Wenn Ihr Netzwerk wächst, überwachen Sie:
 
@@ -105,9 +105,9 @@ Wenn Ihr Netzwerk wächst, überwachen Sie:
 
 Erwägen Sie die Implementierung von Caching (Seiten-Cache, Objekt-Cache) und einem CDN, falls Sie dies noch nicht getan haben. Die [Cloudflare Integration](/user-guide/host-integrations/cloudflare) übernimmt viel davon.
 
-## Kundenlebenszyklus-Management (Customer Lifecycle Management)
+## Kundenlebenszyklus-Management (Customer Lifecycle Management) {#customer-lifecycle-management}
 
-### Abwanderung reduzieren (Reducing Churn)
+### Abwanderung reduzieren (Reducing Churn) {#reducing-churn}
 
 Churn ist der Prozentsatz der Kunden, die jeden Monat kündigen. Für ein Abonnementgeschäft ist die Reduzierung der Abwanderung genauso wichtig wie die Akquise neuer Kunden.
 
@@ -119,7 +119,7 @@ Churn ist der Prozentsatz der Kunden, die jeden Monat kündigen. Für ein Abonne
 - Sie fanden eine günstigere Alternative → Ihren Nischenwert stärken
 - Ihr Geschäft wurde geschlossen → unvermeidbar, aber separat verfolgen
 
-### Upgrades fördern (Encouraging Upgrades)
+### Upgrades fördern (Encouraging Upgrades) {#encouraging-upgrades}
 
 Kunden auf dem Starter-Plan, die erfolgreich sind, sollten ermutigt werden, aufzurüsten:
 
@@ -127,7 +127,7 @@ Kunden auf dem Starter-Plan, die erfolgreich sind, sollten ermutigt werden, aufz
 - Senden Sie gezielte E-Mails, die Funktionen des Growth-Plans hervorheben, von denen sie profitieren würden.
 - Zeigen Sie, was Growth-/Pro-Kunden aufgebaut haben.
 
-### Win-Back-Kampagnen
+### Win-Back-Kampagnen {#win-back-campaigns}
 
 Wenn ein Kunde kündigt:
 
@@ -135,30 +135,30 @@ Wenn ein Kunde kündigt:
 2. Beheben Sie das Problem, wenn möglich
 3. Bieten Sie einen Rabatt für die Rückkehr an (30–60 Tage nach der Kündigung)
 
-## Wöchentliche und monatliche Routinen
+## Wöchentliche und monatliche Routinen {#weekly-and-monthly-routines}
 
-### Wöchentlich
+### Wöchentlich {#weekly}
 
 - Neue Anmeldungen und Kündigungen überprüfen
 - Auf alle offenen Support-Tickets antworten
 - Plattformleistung und Verfügbarkeit prüfen
 - Fehlgeschlagene Zahlungen überprüfen
 
-### Monatlich
+### Monatlich {#monthly}
 
 - Wichtige Kennzahlen analysieren (MRR, Abwanderung, neue Kunden, Upgrades)
 - WordPress- und Plugin-Updates durchführen (nach Staging-Test)
 - Wissensdatenbank basierend auf Support-Mustern überprüfen und aktualisieren
 - Einen Newsletter oder ein Update für die Kunden senden (neue Funktionen, Tipps, Nachrichten aus der Fitnessbranche)
 
-### Quartalsweise
+### Quartalsweise {#quarterly}
 
 - Preise im Vergleich zu Wettbewerbern und Kundenfeedback überprüfen
 - Vorlagen-Designs bewerten – müssen sie aufgefrischt werden?
 - Hosting-Kapazität einschätzen – müssen Sie skalieren?
 - Onboarding überprüfen und verbessern, basierend auf Aktivierungsdaten
 
-## Was wir in dieser Lektion aufgebaut haben
+## Was wir in dieser Lektion aufgebaut haben {#what-we-built-this-lesson}
 
 - **Tägliche Überwachungsroutinen** für Verfügbarkeit, Anmeldungen, Zahlungen und Support
 - **Eine gestufte Support-Struktur**, abgestimmt auf die Planstufen

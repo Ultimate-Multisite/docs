@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI سائيٽ ٺاهيندڙ
+# AI سائيٽ ٺاهيندڙ {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## گهرجون
+## گهرجون {#requirements}
 
 - WordPress 5.3 يا وڌيڪ
 - PHP 7.4 يا وڌيڪ
 - Multisite Ultimate پلگ اِن (فعال)
 
-## تنصيب
+## تنصيب {#installation}
 
 1. اضافي جون فائلون پنهنجي `/wp-content/plugins/` ڊائريڪٽري ۾ اپلوڊ ڪريو
 2. WordPress ۾ 'Plugins' مينيو ذريعي پلگ اِن فعال ڪريو
 3. نيٽ ورڪ منتظم ۾ اضافي جون سيٽنگون ترتيب ڏيو
 
-## ترقياتي ڪم
+## ترقياتي ڪم {#development}
 
-### ترتيب
+### ترتيب {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### منصوبي جي بناوت
+### منصوبي جي بناوت {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # ڪوڊ جديد ڪرڻ جا قاعدا
 ```
 
-### ٽيسٽنگ
+### ٽيسٽنگ {#testing}
 
 اضافي ۾ هڪ جامع ٽيسٽنگ فريم ورڪ شامل آهي:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **ٽيسٽ ڪوريج**: ڪوڊ ڪوريج کي ٽريڪ ڪرڻ لاءِ ترتيب ڏنل
 - **Multisite ٽيسٽنگ**: ٽيسٽون multisite ماحول ۾ هلن ٿيون
 
-### ڪوڊ معيار
+### ڪوڊ معيار {#code-standards}
 
 - **WordPress ڪوڊنگ معيار**: PHPCS ذريعي لاڳو ڪيل
 - **PHP 7.4+ مطابقت**: جديد PHP خاصيتن جي حمايت
 - **جامد تجزيو**: قسم چيڪنگ لاءِ PHPStan انٽيگريشن
 - **ڪوڊ جديد ڪرڻ**: PHP اپگريڊن لاءِ Rector قاعدا
 
-### بلڊ سسٽم
+### بلڊ سسٽم {#build-system}
 
 - **اثاثن جي پروسيسنگ**: CSS/JS فائلن لاءِ minification
 - **ترجمو**: POT فائل جي تياري
 - **پيڪيجنگ**: ورڇ لاءِ آرڪائيو ٺاهڻ
 - **ترقياتي موڊ**: debugging لاءِ اڻ-minified اثاثا
 
-## ترتيب
+## ترتيب {#configuration}
 
 اضافو نيٽ ورڪ منتظم انٽرفيس ذريعي رسائي لائق مختلف ترتيب اختيارن کي سپورٽ ڪري ٿو.
 
-## Hooks ۽ Filters
+## Hooks ۽ Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - اضافي جي شروعات کان پوءِ هلندو آهي
 - `ultimate-multisite-ai-site-builder_loaded` - سڀ اضافي فائلون لوڊ ٿيڻ کان پوءِ هلندو آهي
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - اضافي جون سيٽنگون تبديل ڪريو
 - `ultimate-multisite-ai-site-builder_enabled` - اضافي جي فعال/غير فعال حالت کي override ڪريو
 
-## لائسنس
+## لائسنس {#license}
 
 هي اضافو GPL v3 يا ان کان پوءِ واري نسخي تحت لائسنس ٿيل آهي.
 
-## سپورٽ
+## سپورٽ {#support}
 
 سپورٽ ۽ دستاويزن لاءِ، [MultisiteUltimate.com](https://multisiteultimate.com) تي وڃو
-## تبديلي لاگ
+## تبديلي لاگ {#changelog}
 
 - نسخو 1.0.1 (2025-09-28): prefix کي ultimate-multisite ۾ نالو تبديل ڪريو؛ text domain اپڊيٽ ڪريو؛ نسخي ۾ واڌ.
 

@@ -3,9 +3,9 @@ title: Ghi chú phát hành
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Ghi chú phát hành
+# Ghi chú phát hành {#release-notes}
 
-## Phiên bản 2.13.0 — Phát hành vào 2026-06-05
+## Phiên bản 2.13.0 — Phát hành vào 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Mới: Đã thêm hỗ trợ sovereign-tenant cho các luồng tài khoản khách hàng, thanh toán, lập hóa đơn, site, hóa đơn, chuyển đổi mẫu và ánh xạ tên miền để các mạng tenant có thể chuyển khách hàng trở lại site chính cho các hành động được quản lý.
 - Mới: Đã thêm kiểm tra thông tin xác thực gia hạn cho các membership định kỳ để gateway có thể tắt tự động gia hạn khi thiếu thỏa thuận thanh toán đã lưu, subscription hoặc vault token.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Sửa: Các trường hợp biên về gia hạn membership, hiển thị ngày hết hạn và thu thanh toán giờ đây tránh hết hạn ngay lập tức, sự cố hoặc bỏ lỡ các khoản thanh toán bắt buộc.
 - Cải thiện: Khả năng tương thích WordPress được kiểm thử đến 7.0, tài nguyên Vue production được dựng lại từ nguồn npm, và phạm vi kiểm thử end-to-end Cypress giờ đây kiểm tra nhiều luồng thanh toán, thiết lập, SSO và gateway hơn.
 
-## Phiên bản 2.12.0 — Phát hành vào 2026-05-15
+## Phiên bản 2.12.0 — Phát hành vào 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Mới: Đã thêm Hostinger (hPanel) làm nhà cung cấp host được hỗ trợ với tích hợp ánh xạ tên miền
 - Mới: Site Exporter giờ đây xử lý các gói nhập mạng để khôi phục site trên toàn mạng một cách tinh gọn
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Sửa: Site Exporter CLI giờ đây giữ đúng lựa chọn site mạng mặc định
 - Cải thiện: Đã loại bỏ wp-cli đóng gói khỏi gói plugin, giảm kích thước plugin
 
-## Phiên bản 2.11.0 — Phát hành vào 2026-05-11
+## Phiên bản 2.11.0 — Phát hành vào 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Mới: Xuất site giờ đây đóng gói một `index.php` tự khởi động để tệp ZIP có thể được cài đặt trên host mới mà không cần cài đặt plugin riêng.
 - Mới: Xuất mạng cho phép quản trị viên xuất tất cả subsite trong một kho lưu trữ duy nhất từ trang quản trị Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Mới: Trình chỉnh sửa biểu mẫu thanh toán cảnh báo khi một sản phẩm được thêm mà chưa cấu hình trường bắt buộc.
 - Mới: Tab cài đặt Import/Export giờ đây mô tả rõ phạm vi của nó và liên kết trực tiếp đến công cụ Site Export.
 
-## Phiên bản 2.10.0 — Phát hành vào 2026-05-05
+## Phiên bản 2.10.0 — Phát hành vào 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Mới: Trình hướng dẫn thiết lập PayPal có hướng dẫn để nhập thông tin xác thực thủ công với cổng cờ OAuth nhằm cấu hình gateway liền mạch.
 - Mới: Bảng khách hàng chuyển đổi mẫu được thiết kế lại với thẻ mẫu hiện tại, lưới bền vững và nút **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Sửa: Đường dẫn SSO đã lọc được tôn trọng trên tất cả các luồng đăng nhập.
 - Sửa: Các tùy chọn định danh site trống được giữ nguyên khi lưu.
 
-## Phiên bản 2.9.0 — Phát hành vào 2026-04-30
+## Phiên bản 2.9.0 — Phát hành vào 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Mới: Đã thêm xuất và nhập single-site trong **Tools > Export & Import**.
 - Sửa: Các tệp ZIP xuất giờ đây được phục vụ qua một endpoint tải xuống đã xác thực.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Sửa: ID tour được chuẩn hóa thành dấu gạch dưới trong các khóa cài đặt người dùng.
 - Cải thiện: ZipArchive giờ đây được dùng thay cho Alchemy/Zippy để tương thích tốt hơn.
 
-## Phiên bản 2.8.0 — Phát hành vào 2026-04-29
+## Phiên bản 2.8.0 — Phát hành vào 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Mới: Đã thêm công tắc Enable Jumper vào UI cài đặt Other Options.
 - Mới: Đã thêm cột Status vào bảng danh sách biểu mẫu checkout.

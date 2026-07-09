@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# څو-کرایه‌والي
+# څو-کرایه‌والي {#multi-tenancy}
 
 د کړنې او امنیت لپاره فرعي سایټونه د سرورونو او ډیټابېسونو ترمنځ ووېشئ
 
-## د نسخې 1.2.0 د خپرېدو مهم ټکي
+## د نسخې 1.2.0 د خپرېدو مهم ټکي {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 د تولید د جلاوالي کاري بهیرونو لپاره د خپلواک کرایه‌دار بنسټ زیاتوي:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 د تولید د جلاوالي کاري بهیرونو لپ
 
 د [خپلواک لېږد کاري بهیر](/user-guide/getting-started/sovereign-migration-workflow)، [څو-کرایه‌والي جلاوالی](/user-guide/configuration/multi-tenancy-isolation)، او [د خپلواک کرایه‌دار عملیات](/user-guide/administration/sovereign-tenant-operations) لپاره د کارن لارښودونه وګورئ.
 
-## اړتیاوې
+## اړتیاوې {#requirements}
 
 - WordPress 5.3 یا تر هغه لوړه
 - PHP 7.4 یا تر هغه لوړه
 - Multisite Ultimate پلگین (فعال)
 
-## نصب
+## نصب {#installation}
 
 1. د اضافې فایلونه خپل `/wp-content/plugins/` ډایرکټرۍ ته پورته کړئ
 2. پلگین په WordPress کې د 'پلگینونه' غورنۍ له لارې فعال کړئ
 3. د شبکې د مدیر په برخه کې د اضافې تنظیمات عیار کړئ
 
-## پراختیا
+## پراختیا {#development}
 
-### تنظیم
+### تنظیم {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### د پروژې جوړښت
+### د پروژې جوړښت {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # د کوډ عصري کولو اصول
 ```
 
-### ازموینه
+### ازموینه {#testing}
 
 اضافه یو بشپړ ازموینې چوکاټ لري:
 
@@ -93,54 +93,54 @@ ultimate-multisite-addon-template/
 - **د ازموینې پوښښ**: د کوډ پوښښ د تعقیب لپاره تنظیم شوی
 - **Multisite ازموینه**: ازموینې په multisite چاپېریال کې چلېږي
 
-### د کوډ معیارونه
+### د کوډ معیارونه {#code-standards}
 
 - **د WordPress کوډ لیکلو معیارونه**: د PHPCS له لارې پلي کېږي
 - **PHP 7.4+ سازګاري**: د PHP عصري ځانګړنې ملاتړ کېږي
 - **ثابت تحلیل**: د ډول کتنې لپاره د PHPStan ادغام
 - **د کوډ عصري کول**: د PHP لوړولو لپاره د Rector اصول
 
-### د جوړولو سیستم
+### د جوړولو سیستم {#build-system}
 
 - **د شتمنیو پروسس**: د CSS/JS فایلونو لپاره کوچنی کول
 - **ژباړه**: د POT فایل جوړول
 - **بسته بندي**: د وېش لپاره د ارشیف جوړول
 - **د پراختیا حالت**: د اشکال موندنې لپاره ناپرې‌کوچني شوې شتمنۍ
 
-## تنظیمات
+## تنظیمات {#configuration}
 
 اضافه د شبکې د مدیر انٹرفېس له لارې لاسرسی‌لرونکي بېلابېل تنظیماتي اختیارونه ملاتړ کوي.
 
-### د خپلواک کرایه‌دار تنظیمات
+### د خپلواک کرایه‌دار تنظیمات {#sovereign-tenant-configuration}
 
 د خپلواکو کرایه‌دارانو لپاره، د کرایه‌دار ډیټابېس، د فایل‌سیسټم ریښه، د ډیټابېس کوربه تړنه، او د کوربه وړتیا مخکې له دې تنظیم کړئ چې ترافیک کرایه‌دار ته مسیر کړئ. له هر هغه بدلون وروسته د لېږد تایید وچلوئ چې د ډیټابېس اسناد، کوربه تړنه، مسیرونه، یا د کارن برابرول اغېزمنوي.
 
 `localhost` یوازې هغه وخت وکاروئ چې د کرایه‌دار runtime او د ډیټابېس اجازې د محلي socket یا همدې ماشین لاسرسی تمه لري. `127.0.0.1` یا د خدمت کوربه نوم هغه وخت وکاروئ چې هماغه د اجازې کوربه وي چې ستاسو برابروونکي تنظیم کړی وي.
 
-### د Hostinger وړتیا
+### د Hostinger وړتیا {#hostinger-capability}
 
 د Hostinger څو-کرایه‌والي وړتیا د شریک Hostinger ادغام token سره کار کوي. تایید کړئ چې ډومېن په hPanel کې شته، DNS د Hostinger Account ته اشاره کوي، او د کرایه‌دار ډیټابېس تنظیمات له hPanel سره د تایید مخکې سمون لري.
 
-## Hooks او Filters
+## Hooks او Filters {#hooks-and-filters}
 
-### کړنې
+### کړنې {#actions}
 
 - `ultimate-multisite-addon-template_init` - د اضافې له پیل وروسته چلېږي
 - `ultimate-multisite-addon-template_loaded` - وروسته له هغې چلېږي چې د اضافې ټول فایلونه بار شي
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - د اضافې تنظیمات بدل کړئ
 - `ultimate-multisite-addon-template_enabled` - د اضافې د فعال/غیرفعال حالت override کړئ
 
-## جواز
+## جواز {#license}
 
 دا اضافه د GPL v3 یا وروسته نسخې لاندې جواز لري.
 
-## ملاتړ
+## ملاتړ {#support}
 
 د ملاتړ او لاسوندونو لپاره، [MultisiteUltimate.com](https://multisiteultimate.com) ته ورشئ
-## د بدلونونو یادښت
+## د بدلونونو یادښت {#changelog}
 
 - نسخه 1.2.0 (2026-06-03): بې‌حالته کرایه‌دار خپلکار ننوتل، د Hostinger څو-کرایه‌والي وړتیا، د هر فرعي سایټ ډیټابېس او فایل‌سیسټم جلاوالی، د خپلواک لېږد تایید دروازې، د کرایه‌دار bootstrap/ډیټابېس لیکونکي ښه‌والي، د MySQL کوربه تړنه چې تنظیمېدلی شي، او خوندي‌تر خپلواک teardown زیاتوي.
 

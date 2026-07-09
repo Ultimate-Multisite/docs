@@ -3,11 +3,11 @@ title: Referenza tal-Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referenza tal-Hooks
+# Referenza tal-Hooks {#hooks-reference}
 
 Dokumentazzjoni ġġenerata awtomatikament għall-**59 actions** u **118 filters** kollha f'Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Jitħaddem qabel ir-ridirezzjoni tal-awtentikazzjoni.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Jitħaddem immedjatament qabel ma tiġi ssettjata l-cookie tal-awtentikazzjoni.
@@ -70,7 +70,7 @@ Dokumentazzjoni ġġenerata awtomatikament għall-**59 actions** u **118 filters
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Jinbeda wara li oġġett jinħażen fid-database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Jippermetti lill-iżviluppaturi tal-plugin iżidu azzjonijiet mal-proċess tal-ftuħ.
 
-## Filtri
+## Filtri {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Jiffiltra t-tul tal-perjodu tal-iskadenza tal-cookie tal-awtentikazzjoni.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Jiffiltra l-iskema tar-redirect tal-awtentikazzjoni.

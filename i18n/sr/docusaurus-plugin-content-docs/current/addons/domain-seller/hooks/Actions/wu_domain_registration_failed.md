@@ -4,11 +4,11 @@ title: Акција - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Покреће се након што покушај регистрације домена не успе.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 | $registration_data | `array&lt;string,mixed&gt;` | Метаподаци регистрације који укључују status=failed и error_message. |
 | $error_message | `string` | Читљива порука о грешци од регистрара. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.0.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) у реду 1250

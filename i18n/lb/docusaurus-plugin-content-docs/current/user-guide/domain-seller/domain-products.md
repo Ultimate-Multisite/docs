@@ -3,11 +3,11 @@ title: Domaine Produkt an Pris
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain-Produkte und Preisgestaltung
+# Domain-Produkte und Preisgestaltung {#domain-products-and-pricing}
 
 Domain-Produkte sind die Art, wie Sie Preise, TLDs (Top-Level Domains), WHOIS-Datenschutz und Anbieter auswählen steuern. Jedes Domain-Produkt ist ein Standard-Multisite Ultimate-Produkt mit einem zusätzlichen Tab **Domain Settings**.
 
-## Ein Domain-Produkt erstellen
+## Ein Domain-Produkt erstellen {#creating-a-domain-product}
 
 1. Gehe zu **Network Admin › Ultimate Multisite › Products**
 2. Klicke auf **Add New** (Neu hinzufügen)
@@ -17,19 +17,19 @@ Domain-Produkte sind die Art, wie Sie Preise, TLDs (Top-Level Domains), WHOIS-Da
 
 Domain-Produkte erscheinen mit einem lila **Domain** Badge in der Produktliste und können über den Tab **Domain Products** gefiltert werden.
 
-## Domain-Einstellungen Tab
+## Domain-Einstellungen Tab {#domain-settings-tab}
 
-### Anbieter (Provider)
+### Anbieter (Provider) {#provider}
 
 Wähle, welcher Registrar die Registrierung für dieses Produkt übernimmt. Standard ist der globale **Default provider**, der in den Einstellungen des Domain Sellers festgelegt ist.
 
-### Unterstützte TLDs (Top-Level Domains)
+### Unterstützte TLDs (Top-Level Domains) {#supported-tlds}
 
 Lass dies leer, um ein **catch-all product** zu erstellen, das auf alle TLDs gilt, die nicht von einem anderen Produkt abgeglichen werden. Gib eine durch Kommas getrennte Liste von TLDs an (z.B. `.com, .net, .org`), um ein **TLD-spezifisches Produkt** zu erstellen, das nur für diese Endungen gilt.
 
 **Wie die Produktabgleich funktioniert:** Wenn ein Kunde nach einer Domain sucht, wählt der Addon das spezifischste passende Produkt aus. Ein Produkt mit `.com` in seiner TLD-Liste hat Vorrang vor einem catch-all-Produkt. Wenn kein TLD-spezifisches Produkt passt, wird das catch-all verwendet. Wenn keine Produkte existieren, wird die Domain-Suche nicht angezeigt.
 
-### Markup-Typ (Markup type)
+### Markup-Typ (Markup type) {#markup-type}
 
 Drei Modi steuern, wie Ihr Verkaufspreis vom Großhandelspreis berechnet wird:
 
@@ -39,13 +39,13 @@ Drei Modi steuern, wie Ihr Verkaufspreis vom Großhandelspreis berechnet wird:
 | **Fester Aufschlag (Fixed markup)** | Fügt einen festen Geldbetrag hinzu. Ein Aufschlag von 5 $ auf eine Domain von 10 $ ergibt 15 $. |
 | **Fixpreis** | Ignoriert den Großhandelspreis komplett. Es wird immer der Betrag berechnet, den Sie eingeben. |
 
-### Einführungs-Preise (Introductory pricing)
+### Einführungs-Preise (Introductory pricing) {#introductory-pricing}
 
-### Werben Sie mit eme rabattierte Erstjahrespriis
+### Werben Sie mit eme rabattierte Erstjahrespriis {#whois-privacy}
 
 Stelle en separate **Introductory price** (de Priis für Jahr 1) neben de reguläre **Renewal price** (für Jahr 2+) i. De Kunde gseht beidi Priise bim Checkout, so er weiss, was er bi de Verlängerig erwartet.
 
-### WHOIS-Privatsphäre
+### WHOIS-Privatsphäre {#tld-import-and-sync}
 
 Steuert, öb d'WHOIS-Privatsphäre für Domainene, wo mit dem Produkt registriert sind, aabote wird.
 
@@ -59,7 +59,7 @@ Für Namecheap brucht WHOIS-Privatsphäre WhoisGuard (immer gratis). Für OpenSR
 
 ---
 
-## TLD Import und Synchronisation
+## TLD Import und Synchronisation {#auto-renewal}
 
 Domain-Produkte zeige Echtzit-Großhandelspreise, wo vom verbundene Provider abgno worde sind. Damit das funktioniert, müend d'TLDs importiert werde.
 
@@ -70,7 +70,7 @@ Nach ere Synchronisation gaht uf de Tab "Domain Settings" vo jedem Domain-Produk
 
 ---
 
-## Auto-Erneuerung
+## Auto-Erneuerung {#admin-manual-domain-registration}
 
 Domain-Verlängerige sind mit em Mitgliedschaftszustand vom Kunde verbunde:
 

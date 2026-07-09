@@ -4,20 +4,20 @@ title: Филтер - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# Филтер: networks_user_is_network_admin
+# Филтер: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
 
 Ги филтрира мрежите на кои корисникот е администратор.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $ | `array\|bool` | Листа на ID-а на мрежи или false ако нема мрежи за корисникот. |
 | $ | `int` | ID на корисник за кој треба да се вратат мрежите. |
 
-### Од
+### Од {#since}
 
 - 2.0.0
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L703) на линија 703

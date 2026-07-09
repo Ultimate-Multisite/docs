@@ -3,11 +3,11 @@ title: ڈیزائن سسٹم جمالیات مہارت
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# ڈیزائن سسٹم ایسٹھیٹکس سکل
+# ڈیزائن سسٹم ایسٹھیٹکس سکل {#design-system-aesthetics-skill}
 
 **ڈیزائن سسٹم ایسٹھیٹکس سکل** آپ کی سائٹ کی بصری شناخت (visual identity) کو بہتر بنانے کا ایک رہنمائی والا طریقہ ہے۔ یہ آپ کو ٹائپوگرافی، رنگ، فاصلے (spacing)، اور موشن ٹُکنز کے بارے میں مستقل فیصلے کرنے میں مدد کرتا ہے جو آپ کے ڈیزائن سسٹم کی بنیاد بناتے ہیں۔
 
-## ڈیزائن سسٹم ایسٹھیٹکس کیا ہے؟
+## ڈیزائن سسٹم ایسٹھیٹکس کیا ہے؟ {#what-is-design-system-aesthetics}
 
 ڈیزائن سسٹم ایسٹھیٹکس ایک منظم مہارت ہے جو مندرجہ ذیل چیزوں کا احاطہ کرتی ہے:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 یہ فیصلے آپ کے تھیم کی `theme.json` فائل میں محفوظ ہو جاتے ہیں، جس سے ایک ہم آہنگ بصری نظام (cohesive visual system) بنتا ہے۔
 
-## ڈیزائن سسٹم ایسٹھیٹکس کیوں استعمال کریں؟
+## ڈیزائن سسٹم ایسٹھیٹکس کیوں استعمال کریں؟ {#why-use-design-system-aesthetics}
 
-### ہم آہنگی (Consistency)
+### ہم آہنگی (Consistency) {#consistency}
 
 ایک ڈیزائن سسٹم اس بات کو یقینی بناتا ہے:
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - فاصلہ ایک قابلِ پیش گوئی نمونے پر عمل کرتا ہے
 - اینیمیشنز ایک جیسے محسوس ہوتے ہیں
 
-### کارکردگی (Efficiency)
+### کارکردگی (Efficiency) {#efficiency}
 
 ہر پیج پر ڈیزائن کے فیصلے کرنے کے بجائے، آپ:
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - انہیں ہر جگہ لاگو کرتے ہیں
 - صرف ایک ویلیو تبدیل کر کے عالمی سطح پر اپ ڈیٹ کرتے ہیں
 
-### لچک (Flexibility)
+### لچک (Flexibility) {#flexibility}
 
 آپ یہ کر سکتے ہیں:
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - مختلف ایسٹھیٹکس کے ساتھ تجربہ کر سکتے ہیں
 - ارتقاء پذیر ہوتے ہوئے بھی برانڈ کی ہم آہنگی برقرار رکھ سکتے ہیں
 
-## ڈیزائن سسٹم ایسٹھیٹکس سکل کو ٹرگر کرنا
+## ڈیزائن سسٹم ایسٹھیٹکس سکل کو ٹرگر کرنا {#triggering-the-design-system-aesthetics-skill}
 
-### دستی ایکٹیویشن (Manual Activation)
+### دستی ایکٹیویشن (Manual Activation) {#manual-activation}
 
 آپ کسی بھی وقت اس سکل کو شروع کر سکتے ہیں:
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Guide me through design system decisions"
 ```
 
-### خودکار تجاویز (Automatic Suggestions)
+### خودکار تجاویز (Automatic Suggestions) {#automatic-suggestions}
 
 ایجنٹس آپ کو یہ حالات میں سکل استعمال کرنے کی تجویز دے سکتے ہیں:
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - جب آپ بصری ہم آہنگی کو بہتر بنانا چاہتے ہیں
 - جب آپ اپنی سائٹ لانچ کرنے کی تیاری کر رہے ہوتے ہیں
 
-## ڈیزائن سسٹم ایسٹھیٹکس کا عمل (Process)
+## ڈیزائن سسٹم ایسٹھیٹکس کا عمل (Process) {#the-design-system-aesthetics-process}
 
-### مرحلہ 1: ٹائپوگرافی (Typography)
+### مرحلہ 1: ٹائپوگرافی (Typography) {#step-1-typography}
 
 ایجنٹ آپ کے فونٹ کے انتخاب کے بارے میں پوچھتا ہے:
 
@@ -110,7 +110,7 @@ For your body font:
 - **ویٹ اسکیل (Weight scale)**: فونٹ ویٹس (regular, medium, bold, وغیرہ)
 - **لائن ہائٹ (Line height)**: پڑھنے کی صلاحیت کے لیے لائنوں کے درمیان فاصلہ
 
-### مرحلہ 2: رنگ پیلیٹ (Color Palette)
+### مرحلہ 2: رنگ پیلیٹ (Color Palette) {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -140,7 +140,7 @@ Neutral palette (grays for text, borders, backgrounds):
 - سیمیٹک رنگ (success, warning, error)
 - ہوور اور ایکٹو اسٹیٹس
 
-### مرحلہ 3: اسپیسنگ (Spacing)
+### مرحلہ 3: اسپیسنگ (Spacing) {#step-3-spacing}
 
 ```
 How much breathing room do you want?
@@ -162,7 +162,7 @@ This affects:
 - اسکیل: xs, sm, md, lg, xl, 2xl
 - پیڈنگ، مارجن، گپ کے لیے مخصوص ویلیوز
 
-### مرحلہ 4: بورڈرز اور شیڈوز (Borders and Shadows)
+### مرحلہ 4: بورڈرز اور شیڈوز (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition:
@@ -185,7 +185,7 @@ Shadow depth:
 - ایلیویشن لیولز کے لیے شیڈو ٹُکنز
 - بورڈر وڈتھ ٹُکنز
 
-### مرحلہ 5: موشن اور اینیمیشن (Motion and Animation)
+### مرحلہ 5: موشن اور اینیمیشن (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive?
@@ -207,9 +207,9 @@ Specific animations:
 - ایزنگ فنکشنز (ease-in, ease-out, ease-in-out)
 - عام تعاملات کے لیے اینیمیشن کی فریمز
 
-## ڈیزائن سسٹم ایسٹھیٹکس کو لاگو کرنا
+## ڈیزائن سسٹم ایسٹھیٹکس کو لاگو کرنا {#applying-design-system-aesthetics}
 
-### خودکار اطلاق (Automatic Application)
+### خودکار اطلاق (Automatic Application) {#automatic-application}
 
 آپ کے سکل مکمل کرنے کے بعد، ایجنٹ:
 
@@ -218,7 +218,7 @@ Specific animations:
 3. نئے سسٹم سے مطابقت رکھنے کے لیے بلاک اسٹائلز کو دوبارہ تیار کرتا ہے
 4. اپ ڈیٹ شدہ تھیم کو فعال کرتا ہے
 
-### دستی اطلاق (Manual Application)
+### دستی اطلاق (Manual Application) {#manual-application}
 
 آپ براہ راست `theme.json` کو بھی ایڈٹ کر سکتے ہیں:
 
@@ -257,9 +257,9 @@ Specific animations:
 }
 ```
 
-## اپنے ڈیزائن سسٹم کو دیکھنا
+## اپنے ڈیزائن سسٹم کو دیکھنا {#viewing-your-design-system}
 
-### ایجنٹ سے پوچھیں
+### ایجنٹ سے پوچھیں {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ Specific animations:
 
 ایجنٹ آپ کی ٹائپوگرافی، رنگ، اسپیسنگ، اور دیگر ٹُکنز دکھائے گا۔
 
-### theme.json دیکھیں
+### theme.json دیکھیں {#view-themejson}
 
 ری (text) ایڈیٹر میں `/wp-content/themes/[theme-name]/theme.json` کھولیں تاکہ آپ کو خام ٹُکن تعریفات (raw token definitions) نظر آ سکیں۔
 
-## اپنے ڈیزائن سسٹم کو اپ ڈیٹ کرنا
+## اپنے ڈیزائن سسٹم کو اپ ڈیٹ کرنا {#updating-your-design-system}
 
-### فوری اپ ڈیٹس (Quick Updates)
+### فوری اپ ڈیٹس (Quick Updates) {#quick-updates}
 
 ایجنٹ سے مخصوص تبدیلیوں کے بارے میں پوچھیں:
 
@@ -299,7 +299,7 @@ Specific animations:
 "Change the heading font to a serif"
 ```
 
-### مکمل ری ڈیزائن (Full Redesign)
+### مکمل ری ڈیزائن (Full Redesign) {#full-redesign}
 
 ڈیزائن سسٹم ایسٹھیٹکس سکل کو دوبارہ چلائیں:
 
@@ -309,7 +309,7 @@ Specific animations:
 
 یہ آپ کو تمام فیصلوں کے ذریعے دوبارہ رہنمائی کرے گا، جو آپ کی موجودہ ویلیوز سے شروع ہوگا۔
 
-### جزوی اپ ڈیٹس (Partial Updates)
+### جزوی اپ ڈیٹس (Partial Updates) {#partial-updates}
 
 مخصوص پہلوؤں کو اپ ڈیٹ کریں:
 
@@ -317,15 +317,15 @@ Specific animations:
 "Just update the color palette, keep everything else"
 ```
 
-## ڈیزائن سسٹم کی بہترین پریکٹسز (Best Practices)
+## ڈیزائن سسٹم کی بہترین پریکٹسز (Best Practices) {#design-system-best-practices}
 
-### ہم آہنگی (Consistency)
+### ہم آہنگی (Consistency) {#consistency-1}
 
 - ہر جگہ ایک ہی ٹُکنز استعمال کریں
 - ایک بار کے لیے رنگ یا سائز نہ بنائیں
 - ویلیوز کو ہارڈکوڈ کرنے کے بجائے ٹُکنز کا حوالہ دیں
 
-### نامકરણ (Naming)
+### نامકરણ (Naming) {#naming}
 
 واضح، سیمیٹک نام استعمال کریں:
 
@@ -335,7 +335,7 @@ Specific animations:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### پیمانہ سازی (Scalability)
+### پیمانہ سازی (Scalability) {#scalability}
 
 اپنے سسٹم کو بڑھنے کے لیے ڈیزائن کریں:
 
@@ -343,7 +343,7 @@ Specific animations:
 - بے ترتیب ویلیوز کے بجائے اسکیلز (xs, sm, md, lg, xl) بنائیں
 - مستقبل میں اضافے کے لیے منصوبہ بندی کریں
 
-### دستاویزات (Documentation)
+### دستاویزات (Documentation) {#documentation}
 
 اپنے ڈیزائن سسٹم کو دستاویز کریں:
 
@@ -351,9 +351,9 @@ Specific animations:
 - ہر ٹُکن کو کب استعمال کرنا ہے
 - استثنیات اور کنارے کے کیسز (Exceptions and edge cases)
 
-## عام ڈیزائن سسٹم پیٹرن (Common Design System Patterns)
+## عام ڈیزائن سسٹم پیٹرن (Common Design System Patterns) {#common-design-system-patterns}
 
-### جدید منیمالسٹ (Modern Minimalist)
+### جدید منیمالسٹ (Modern Minimalist) {#modern-minimalist}
 
 - Sans-serif ٹائپوگرافی (Inter, Helvetica)
 - محدود رنگ پیلیٹ (2-3 رنگ)
@@ -361,7 +361,7 @@ Specific animations:
 - ہلکے شیڈوز
 - ہموار، تیز اینیمیشنز
 
-### گرم اور دوستانہ (Warm and Friendly)
+### گرم اور دوستانہ (Warm and Friendly) {#warm-and-friendly}
 
 - Serif اور sans-serif کا امتزاج
 - گرم رنگ پیلیٹ (نارنجی، گرم گرے)
@@ -369,7 +369,7 @@ Specific animations:
 - نرم شیڈوز
 - چہل قدمی والے اینیمیشنز (Playful animations)
 
-### پیشہ ور کارپوریٹ (Professional Corporate)
+### پیشہ ور کارپوریٹ (Professional Corporate) {#professional-corporate}
 
 - صاف sans-serif (Roboto, Open Sans)
 - ایکسینٹ رنگ کے ساتھ نیوٹرل پیلیٹ
@@ -377,7 +377,7 @@ Specific animations:
 - کم سے کم شیڈوز
 - ہلکے ٹرانزیشنز
 
-### تخلیقی اور جری (Creative and Bold)
+### تخلیقی اور جری (Creative and Bold) {#creative-and-bold}
 
 - نمایاں ٹائپوگرافی
 - جری رنگ پیلیٹ
@@ -385,7 +385,7 @@ Specific animations:
 - مضبوط شیڈوز
 - نمایاں اینیمیشنز
 
-## ٹرابل شوٹنگ (Troubleshooting)
+## ٹرابل شوٹنگ (Troubleshooting) {#troubleshooting}
 
 **میرے ڈیزائن سسٹم کی تبدیلیاں نظر نہیں آ رہیں**
 - اپنے براؤزر کی کیش (cache) صاف کریں
@@ -403,7 +403,7 @@ Specific animations:
 - دستی طور پر `theme.json` کو پچھلی ویلیوز پر ایڈٹ کریں
 - مختلف انتخاب کے ساتھ سکل کو دوبارہ چلائیں
 
-## اگلے اقدامات (Next Steps)
+## اگلے اقدامات (Next Steps) {#next-steps}
 
 اپنے ڈیزائن سسٹم کو define کرنے کے بعد:
 

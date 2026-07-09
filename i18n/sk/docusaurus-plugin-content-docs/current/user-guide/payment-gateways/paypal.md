@@ -3,7 +3,7 @@ title: Nastavenie PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Konfigurácia PayPal brány (v2)
+# Konfigurácia PayPal brány (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**DÔLEŽITÉU POZNÁDANIE: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 
@@ -13,13 +13,13 @@ Ako aj pri Stripe je PayPal široko používaný na online platby, najmä na web
 
 Pozrite, že potrebujete mať **bizniscový účet PayPal**, aby ste získali API kredenciálne údaje potrebné pre túto integráciu.
 
-## Aktivácia Paypala na vašej sieti
+## Aktivácia Paypala na vašej sieti {#enabling-paypal-on-your-network}
 
 Aby ste aktivovali PayPal ako dostupnú metódu platby v sieti, prejdite do sekcie **Ultimate Multisite > Settings > Payments** a označte políčko vedľa PayPal.
 
 ![Aktivácia Paypala v aktívnych bránach platob](/img/config/settings-payment-gateways.png)
 
-## Používanie prvej asistencie konfigurácie (wizard)
+## Používanie prvej asistencie konfigurácie (wizard) {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 pridáva prvej asistencie konfigurácie PayPal do nastavení brány platby. Po aktivácii Paypala použite assistent na **Ultimate Multisite > Settings > Payments**, aby ste si vybrali, ako chcete pripojiť bránu a potvrdili, ktoré kredenciálne údaje stále potrebujete, než urobíte uložitie.
 
@@ -30,7 +30,7 @@ Asistent podporuje dve cesty konfigurácie:
 
 Ak nevidíte možnosť OAuth v wizardovi, dokončite postup manuálneho zadania prihlasovacích údajov nižšie. Bránenie funguje s rovnakými kredenciálnymi údajmi PayPal Business API ako v pôvodných verziách Ultimate Multisite 2.x.
 
-## Ako získať kredenciálne údaje pre PayPal API
+## Ako získať kredenciálne údaje pre PayPal API {#getting-the-paypal-api-credentials}
 
 Keď je PayPal aktivovaný ako platobné bránenie, budete musieť vyplniť poloch **Username** (Používateľské meno) pre PayPal API, **Password** (Heslo) pre PayPal API a **Signature** (Podpis) pre PayPal API.
 

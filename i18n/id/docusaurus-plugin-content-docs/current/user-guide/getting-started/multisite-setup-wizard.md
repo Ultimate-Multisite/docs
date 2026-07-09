@@ -3,7 +3,7 @@ title: Wizard Pengaturan Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Wizard Pengaturan Multisite
+# Wizard Pengaturan Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite dilengkapi dengan wizard bawaan yang secara otomatis mengubah instalasi WordPress standar menjadi jaringan WordPress Multisite. Fitur ini menghilangkan kebutuhan untuk mengedit `wp-config.php` secara manual atau menjalankan perintah database.
 
@@ -11,13 +11,13 @@ Ultimate Multisite dilengkapi dengan wizard bawaan yang secara otomatis mengubah
 Jika instalasi WordPress Anda sudah berjalan sebagai jaringan Multisite, Anda dapat melewati langkah ini sepenuhnya. Wizard hanya muncul ketika Multisite belum diaktifkan.
 :::
 
-## Kapan Wizard Muncul?
+## Kapan Wizard Muncul? {#when-does-the-wizard-appear}
 
 Ketika Anda mengaktifkan Ultimate Multisite pada instalasi WordPress standar (bukan Multisite), plugin mendeteksi bahwa Multisite belum diaktifkan dan secara otomatis mengarahkan Anda ke Wizard Pengaturan Multisite, bukan ke wizard pengaturan biasa.
 
 Anda juga dapat mengaksesnya langsung di **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Prasyarat
+## Prasyarat {#prerequisites}
 
 Sebelum menjalankan wizard, pastikan:
 
@@ -29,7 +29,7 @@ Sebelum menjalankan wizard, pastikan:
 Wizard ini memodifikasi file `wp-config.php` Anda dan membuat tabel database baru. Selalu buat backup sebelum melanjutkan.
 :::
 
-## Langkah 1: Selamat Datang
+## Langkah 1: Selamat Datang {#step-1-welcome}
 
 Layar pertama menjelaskan apa itu WordPress Multisite dan apa yang akan dilakukan wizard:
 
@@ -42,11 +42,11 @@ Layar pertama menjelaskan apa itu WordPress Multisite dan apa yang akan dilakuka
 
 Klik **Continue** untuk melanjutkan.
 
-## Langkah 2: Konfigurasi Jaringan
+## Langkah 2: Konfigurasi Jaringan {#step-2-network-configuration}
 
 Langkah ini meminta Anda untuk mengonfigurasi pengaturan jaringan Anda.
 
-### Struktur Situs
+### Struktur Situs {#site-structure}
 
 Pilih bagaimana situs-situs dalam jaringan Anda akan diorganisir:
 
@@ -57,11 +57,11 @@ Pilih bagaimana situs-situs dalam jaringan Anda akan diorganisir:
 Jika Anda memilih sub-domain, Anda perlu mengonfigurasi **wildcard DNS** dan **wildcard SSL certificate** untuk domain Anda. Sebagian besar penyedia hosting WordPress terkelola menangani ini secara otomatis. Lihat [Ultimate Multisite 101](./ultimate-multisite-101) untuk perbandingan lengkap.
 :::
 
-### Nama Jaringan
+### Nama Jaringan {#network-title}
 
 Masukkan nama untuk jaringan Anda. Secara default, ini adalah judul situs Anda saat ini dengan tambahan "Network". Anda dapat mengubahnya nanti dari pengaturan jaringan.
 
-### Email Admin Jaringan
+### Email Admin Jaringan {#network-admin-email}
 
 Alamat email yang digunakan untuk notifikasi administrasi jaringan. Secara default, ini adalah alamat email pengguna saat ini.
 
@@ -69,7 +69,7 @@ Alamat email yang digunakan untuk notifikasi administrasi jaringan. Secara defau
 
 Setelah mengisi semua kolom, klik **Continue** untuk melanjutkan.
 
-## Langkah 3: Instalasi
+## Langkah 3: Instalasi {#step-3-installation}
 
 Klik tombol **Install** untuk memulai. Wizard melakukan lima langkah otomatis secara berurutan, masing-masing menampilkan progresnya secara real-time:
 
@@ -96,7 +96,7 @@ Setelah semua langkah selesai dengan sukses, Anda akan melihat status "Success!"
 
 Wizard kemudian akan secara otomatis melanjutkan ke layar penyelesaian.
 
-## Langkah 4: Selesai
+## Langkah 4: Selesai {#step-4-complete}
 
 Setelah instalasi selesai, Anda akan melihat pesan sukses yang mengonfirmasi bahwa WordPress Multisite telah diaktifkan.
 
@@ -108,7 +108,7 @@ Anda sekarang dapat melanjutkan dengan wizard pengaturan Ultimate Multisite untu
 Setelah instalasi multisite selesai, browser Anda akan diarahkan melalui network admin yang baru diaktifkan. Anda mungkin perlu login kembali karena cookie autentikasi diperbarui untuk lingkungan multisite.
 :::
 
-## Pengaturan Manual Sebagai Cadangan
+## Pengaturan Manual Sebagai Cadangan {#manual-setup-fallback}
 
 Jika wizard tidak dapat menulis ke file `wp-config.php` Anda (karena izin file atau pembatasan server), wizard akan menampilkan kode yang perlu Anda tambahkan secara manual:
 
@@ -117,9 +117,9 @@ Jika wizard tidak dapat menulis ke file `wp-config.php` Anda (karena izin file a
 
 Setelah melakukan perubahan manual, refresh halaman dan wizard akan mendeteksi bahwa multisite sekarang sudah aktif.
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
-### Wizard mengatakan wp-config.php tidak dapat ditulis
+### Wizard mengatakan wp-config.php tidak dapat ditulis {#the-wizard-says-wp-configphp-is-not-writable}
 
 Proses web server Anda memerlukan izin tulis ke file `wp-config.php`. Anda dapat:
 
@@ -127,7 +127,7 @@ Proses web server Anda memerlukan izin tulis ke file `wp-config.php`. Anda dapat
 - Menggunakan instruksi pengaturan manual yang disediakan oleh wizard
 - Meminta bantuan dari penyedia hosting Anda
 
-### Situs tidak dapat diakses setelah pengaturan (subdomain)
+### Situs tidak dapat diakses setelah pengaturan (subdomain) {#sites-are-not-accessible-after-setup-subdomains}
 
 Jika Anda memilih struktur subdomain, Anda perlu mengonfigurasi **wildcard DNS** untuk domain Anda. Tambahkan DNS record:
 
@@ -139,7 +139,7 @@ Value: [IP server Anda]
 
 Hubungi penyedia hosting Anda jika Anda tidak yakin cara mengonfigurasi ini.
 
-### Masalah autentikasi setelah pengaturan
+### Masalah autentikasi setelah pengaturan {#authentication-issues-after-setup}
 
 Jika Anda keluar atau mengalami error cookie setelah pengaturan multisite:
 
@@ -147,7 +147,7 @@ Jika Anda keluar atau mengalami error cookie setelah pengaturan multisite:
 2. Login kembali di `domainanda.com/wp-login.php`
 3. Jika masalah berlanjut, periksa apakah `wp-config.php` Anda tidak memiliki `COOKIE_DOMAIN` yang diatur ke `false` — ini adalah masalah yang diketahui pada instalasi multisite subdomain
 
-### Sebuah langkah gagal selama instalasi
+### Sebuah langkah gagal selama instalasi {#a-step-failed-during-installation}
 
 Jika salah satu langkah instalasi menampilkan error:
 

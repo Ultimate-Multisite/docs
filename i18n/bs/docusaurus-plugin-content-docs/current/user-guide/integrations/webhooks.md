@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Prvi pogled na Webhooks (v2)
+# Prvi pogled na Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**PAŽNJA: Imajte na umu da je ova funkcija ili članak namijenjen naprednim korisnicima.**_
 
@@ -11,7 +11,7 @@ _**PAŽNJA: Imajte na umu da je ova funkcija ili članak namijenjen naprednim ko
 
 Ovo je korisno ako trebate integrisati ili proslijediti određene podatke iz Ultimate Multisite u drugi CRM ili sistem svaki put kada se pokrene događaj. Na primjer, trebate poslati korisnikovo ime i email adresu na mailing listu svaki put kada se kreira novi korisnički račun.
 
-## Kako kreirati webhook
+## Kako kreirati webhook {#how-to-create-a-webhook}
 
 Da biste kreirali webhook, idite na svoj network admin dashboard. Kliknite na **Ultimate Multisite > Webhooks > Dodaj novi Webhook.**
 

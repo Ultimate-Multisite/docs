@@ -3,17 +3,17 @@ title: Så här konfigurerar du domänmappning
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Så här konfigurerar du Domain Mapping (v2)
+# Så här konfigurerar du Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
 
 _**VIKTIGT MEDDELANDE: Den här artikeln avser Ultimate Multisite version 2.x.**_
 
 En av de mest kraftfulla funktionerna i ett premiumnätverk är möjligheten att erbjuda våra kunder chansen att koppla en toppdomän till sina webbplatser. När allt kommer omkring, vilket ser mest professionellt ut: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) eller [_**joesbikeshop.com**_](http://joesbikeshop.com)? Det är därför Ultimate Multisite erbjuder den funktionen inbyggd, utan behov av att använda tredjepartsplugins.
 
-## Vad är domain mapping?
+## Vad är domain mapping? {#whats-domain-mapping}
 
 Som namnet antyder är domain mapping den möjlighet som Ultimate Multisite erbjuder för att ta emot en begäran om en anpassad domän och mappa den begäran till motsvarande webbplats i nätverket med just den domänen kopplad.
 
-### Så här ställer du in domain mapping på ditt Ultimate Multisite-nätverk
+### Så här ställer du in domain mapping på ditt Ultimate Multisite-nätverk {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domain mapping kräver en del konfigurering från din sida för att fungera. Lyckligtvis automatiserar Ultimate Multisite det hårda arbetet åt dig så att du enkelt kan uppfylla kraven.
 
@@ -45,7 +45,7 @@ Men innan du börjar mappa den anpassade domänen till en av undersajterna i dit
 
 ###
 
-### Säkerställ att domänens DNS-inställningar är korrekt konfigurerade
+### Säkerställ att domänens DNS-inställningar är korrekt konfigurerade {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 För att en mappning ska fungera måste du säkerställa att domänen du planerar att mappa pekar mot ditt nätverks IP-adress. Observera att du behöver nätverkets IP-adress – IP-adressen för domänen där Ultimate Multisite är installerat – inte IP-adressen för den anpassade domänen du vill mappa. För att söka efter IP-adressen för en specifik domän föreslår vi att du går till [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), till exempel.
 
@@ -55,7 +55,7 @@ Om du har problem med att få detta att fungera, **kontakta supporten hos din do
 
 Om du planerar att låta dina kunder mappa sina egna domäner måste de själva göra arbetet i den här delen. Hänvisa dem till sin registrators supportsystem om de inte kan skapa A Record.
 
-### Mappa anpassat domännamn som Super Admin
+### Mappa anpassat domännamn som Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 När du är inloggad som super admin på ditt nätverk kan du enkelt lägga till och hantera anpassade domännamn genom att gå till **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Om du klickar på domännamnet kommer du att kunna se några alternativ inuti de
 
 **Is Secure?:** Även om Ultimate Multisite kontrollerar om domänen har ett SSL-certifikat eller inte innan den aktiveras, kan du manuellt välja att ladda domänen med eller utan ett SSL-certifikat. Observera att om webbplatsen inte har ett SSL-certifikat och du försöker tvinga den att laddas med SSL kan det ge dig fel.
 
-### Mappa anpassat domännamn som Subsite-användare
+### Mappa anpassat domännamn som Subsite-användare {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite-administratörer kan också mappa anpassade domännamn från sin subsite admin dashboard.
 
@@ -121,7 +121,7 @@ Användaren kan sedan klicka på **Next Step** och fortsätta med att lägga til
 
 Att klicka på **Add Domain** startar processen för att verifiera och hämta DNS-informationen för den anpassade domänen.
 
-### Om domänsynkronisering
+### Om domänsynkronisering {#about-domain-syncing}
 
 Domänsynkronisering är en process där Ultimate Multisite lägger till det anpassade domännamnet i ditt hosting Account som en add-on-domän **för att domänmappningen ska fungera**.
 

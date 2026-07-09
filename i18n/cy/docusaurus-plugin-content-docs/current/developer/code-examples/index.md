@@ -3,11 +3,11 @@ title: Enghreifftiau Cod Uwch
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Enghreifftiau Cod Uwch
+# Enghreifftiau Cod Uwch {#advanced-code-examples}
 
 Mae’r enghreifftiau hyn yn dangos patrymau integreiddio uwch gyda Ultimate Multisite.
 
-## Peiriant Prisiau Dynamig
+## Peiriant Prisiau Dynamig {#dynamic-pricing-engine}
 
 Peiriant prisiau seiliedig ar reolau sy’n cymhwyso gostyngiadau cyfaint, teyrngarwch a thymhorol:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Darparu Safleoedd Uwch
+## Darparu Safleoedd Uwch {#advanced-site-provisioning}
 
 Ffurfweddu safleoedd newydd yn awtomatig gyda plugins, SSL, CDN, copïau wrth gefn, a monitro yn seiliedig ar nodweddion plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## System Cyfyngiadau Custom
+## System Cyfyngiadau Custom {#custom-limitations-system}
 
 Olrhain a gorfodi terfynau adnoddau gyda rhybuddion defnydd:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Rhifydd Atomig BerlinDB gyda `increment_item()`
+## Rhifydd Atomig BerlinDB gyda `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ychwanegodd Ultimate Multisite v2.6.1 ddull `increment_item()` at ddosbarth `Query` BerlinDB. Defnyddiwch ef i berfformio cynnyddau diogel, atomig ar golofnau rhifol heb rasys darllen-addasu-ysgrifennu — yn ddefnyddiol ar gyfer rhifyddion, cwotâu defnydd, a gwiriadau cyfyngu cyfradd sy’n rhedeg o dan geisiadau cydamserol.
 
-### Llofnod dull
+### Llofnod dull {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ychwanegodd Ultimate Multisite v2.6.1 ddull `increment_item()` at ddosbarth `Que
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Defnydd sylfaenol
+### Defnydd sylfaenol {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Olrhain defnydd API fesul aelodaeth
+### Olrhain defnydd API fesul aelodaeth {#tracking-api-usage-per-membership}
 
 Patrwm ymarferol ar gyfer gorfodi cyfyngiadau cyfradd API fesul aelodaeth:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Pam `increment_item()` yn lle `update_item()`
+### Pam `increment_item()` yn lle `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Mae dull darllen-addasu-ysgrifennu naïf yn anniogel o dan geisiadau cydamserol:
 

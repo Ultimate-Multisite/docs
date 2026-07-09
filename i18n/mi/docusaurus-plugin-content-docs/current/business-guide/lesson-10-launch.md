@@ -3,19 +3,19 @@ title: 'Akoranga 10: Rā Whakarewa'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Akoranga 10: Rā Whakarewa
+# Akoranga 10: Rā Whakarewa {#lesson-10-launch-day}
 
 Kua hangaia ngā mea katoa. I mua i tō whakatuwhera i ngā kūaha, ka ārahi tēnei akoranga i a koe mā te rārangi arowhai i mua i te whakarewatanga kia mārama ai kāore he mea kua pakaru, kua ngaro, kua whakama rānei.
 
-## Te Wāhi i Mutu Ai Tātou
+## Te Wāhi i Mutu Ai Tātou {#where-we-left-off}
 
 Kua whirihoratia katoatia ngā tauira, ngā mahere, te utu, te waitohu, te whakataki kiritaki, me te rautaki utu o FitSite. Inaianei ka manatoko tātou kei te mahi ngā mea katoa, kātahi ka whakarewa.
 
-## Rārangi Arowhai i Mua i te Whakarewatanga
+## Rārangi Arowhai i Mua i te Whakarewatanga {#pre-launch-checklist}
 
 Mahia ia tūemi. Kaua e tīpoka i tētahi.
 
-### Hanganga Tūāpapa
+### Hanganga Tūāpapa {#platform-infrastructure}
 
 - [ ] He pūmau te manaaki, ā, he pai te mahi i raro i te kawenga
 - [ ] Kei te hohe te wildcard SSL, ā, ka tukuna ngā subdomains katoa mā HTTPS
@@ -23,7 +23,7 @@ Mahia ia tūemi. Kaua e tīpoka i tētahi.
 - [ ] Kua whirihoratia, kua whakamātauria hoki ngā tārua haumaru (whakahokia kia kotahi neke atu hei manatoko)
 - [ ] Kei te tū te aroturuki -- ka mōhio koe mēnā ka hinga te tūāpapa
 
-### Ngā Tauira
+### Ngā Tauira {#templates}
 
 - [ ] Ka uta tika ngā tauira e toru katoa ki ngā pae hou
 - [ ] He āwhina ngā ihirangi whakakī, ā, kāore he hē patopato
@@ -32,7 +32,7 @@ Mahia ia tūemi. Kaua e tīpoka i tētahi.
 - [ ] He pai te tere uta whārangi (whakamātauria ki tētahi taputapu pērā i GTmetrix, PageSpeed Insights rānei)
 - [ ] Kāore he hononga pakaru, he rawa ngaro rānei ki tētahi tauira
 
-### Ngā Mahere me ngā Hua
+### Ngā Mahere me ngā Hua {#plans-and-products}
 
 - [ ] Kei te hohe, kei te kitea hoki ngā mahere e toru katoa
 - [ ] He tika, he hāngai ki te mākete motuhake ngā whakaahuatanga mahere
@@ -42,7 +42,7 @@ Mahia ia tūemi. Kaua e tīpoka i tētahi.
 - [ ] Ka puta tika ngā tuku tāpiri i te wā utu
 - [ ] Ka ū tika ngā here mono me ngā here kaupapa mō ia mahere
 
-### Rere Utu
+### Rere Utu {#checkout-flow}
 
 - [ ] Whakaotia tētahi rēhitatanga whakamātau katoa ki ia mahere (whakamahia te aratau utu whakamātau)
 - [ ] Ka whakaatu te kōwhiringa tauira i ngā tauira tika mō ia mahere
@@ -52,7 +52,7 @@ Mahia ia tūemi. Kaua e tīpoka i tētahi.
 - [ ] Ka taea e te kiritaki te takiuru tonu ki tō rātou pae hou
 - [ ] Kei te mahi tika ngā waehere hekenga utu
 
-### Waitohu
+### Waitohu {#branding}
 
 - [ ] Ka whakaatu te whārangi takiuru i te waitohu FitSite
 - [ ] Ka whakaatu te Admin Dashboard i te waitohu FitSite
@@ -60,7 +60,7 @@ Mahia ia tūemi. Kaua e tīpoka i tētahi.
 - [ ] Ka whakaatu tika ngā nama me ō taipitopito pakihi
 - [ ] Kei te ora te pae hokohoko, ā, ka hono ki te puka utu
 
-### Whakataki Kiritaki
+### Whakataki Kiritaki {#onboarding}
 
 - [ ] Ka puta te widget Tīmata Tere ki ngā Dashboard kiritaki hou
 - [ ] Ka tohu ngā hononga Tīmata Tere katoa ki ngā whārangi tika
@@ -68,7 +68,7 @@ Mahia ia tūemi. Kaua e tīpoka i tētahi.
 - [ ] Kua whakaputaina, ā, ka taea te toro atu ki ngā tuhinga pātengi mātauranga
 - [ ] Ka whakaatu te whārangi Account i ngā mōhiohio mahere tika me ngā kōwhiringa whakahou
 
-### Ture me te Pakihi
+### Ture me te Pakihi {#legal-and-business}
 
 - [ ] Kua whakaputaina ngā tikanga ratonga, ā, kua hono mai i te utu
 - [ ] Kua whakaputaina te kaupapa here tūmataiti, ā, ka taea te toro atu
@@ -77,11 +77,11 @@ Mahia ia tūemi. Kaua e tīpoka i tētahi.
 - [ ] Kei te aratau live te kūaha utu (ehara i te aratau whakamātau)
 - [ ] He tika te whirihoranga tāke mō tō mana ā-ture
 
-## Whakarewatanga Ngohengohe vs. Whakarewatanga Mārō
+## Whakarewatanga Ngohengohe vs. Whakarewatanga Mārō {#soft-launch-vs-hard-launch}
 
 Whakaarohia he whakarewatanga wāhanga-rua:
 
-### Wāhanga 1: Whakarewatanga Ngohengohe
+### Wāhanga 1: Whakarewatanga Ngohengohe {#phase-1-soft-launch}
 
 Pōwhiritia kia 5-10 ngā rangatira whare whakapakari tinana kia rēhita i mua i te whakarewatanga tūmatanui. Ko rātou ō kiritaki beta. Tukuna he hekenga utu nui ki a rātou (50% hekenga mō ake tonu atu, kia 3 marama kore utu rānei) hei utu mō:
 
@@ -91,7 +91,7 @@ Pōwhiritia kia 5-10 ngā rangatira whare whakapakari tinana kia rēhita i mua i
 
 Mā konei ka whiwhi koe i te urupare kiritaki tūturu me ngā pae ora hei whakaatu i mua i tō whakatuwhera ki te marea.
 
-### Wāhanga 2: Whakarewatanga Tūmatanui
+### Wāhanga 2: Whakarewatanga Tūmatanui {#phase-2-public-launch}
 
 Ina whakaurua te urupare o te whakarewatanga ngohengohe:
 
@@ -100,7 +100,7 @@ Ina whakaurua te urupare o te whakarewatanga ngohengohe:
 - Tīmatahia te kimi kiritaki (Akoranga 11)
 - Pānuitia ki ngā hongere ahumahi whakapakari tinana e hāngai ana
 
-## Ngā Mahi o te Rā Whakarewa
+## Ngā Mahi o te Rā Whakarewa {#launch-day-actions}
 
 I te rā ka puta koe ki te marea:
 
@@ -110,7 +110,7 @@ I te rā ka puta koe ki te marea:
 4. **Kia wātea** -- tērā pea ka hiahia āwhina ō kiritaki tūturu tuatahi, ā, ka hanga te whakautu tere i te whakawhirinaki
 5. **Whakanui poto** -- kātahi ka hoki ki te mahi
 
-## He Aha Ka Hē Pea
+## He Aha Ka Hē Pea {#what-can-go-wrong}
 
 Kia rite mō:
 
@@ -120,7 +120,7 @@ Kia rite mō:
 - **Te mahinga i raro i te kawenga**: Mēnā ka piki ohorere te hokohoko, me mōhio me pēhea te whakatauine i tō manaaki
 - **Te rangirua o te kiritaki**: Kia rite tō pātengi mātauranga me ō hongere tautoko
 
-## Te Whatunga FitSite Tae Mai ki Tēnei Wā
+## Te Whatunga FitSite Tae Mai ki Tēnei Wā {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Ngā Mea i Hanga e Tātou i Tēnei Akoranga
+## Ngā Mea i Hanga e Tātou i Tēnei Akoranga {#what-we-built-this-lesson}
 
 - **Tētahi rārangi arowhai whānui i mua i te whakarewatanga** e kapi ana i te hanganga tūāpapa, te ihirangi, ngā utu, me ngā take ture
 - **Tētahi rautaki whakarewatanga ngohengohe** kia whiwhi urupare tūturu i mua i te puta ki te marea

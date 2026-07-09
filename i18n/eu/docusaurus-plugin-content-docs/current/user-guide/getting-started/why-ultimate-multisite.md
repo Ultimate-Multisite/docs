@@ -3,11 +3,11 @@ title: Nola Ultimate Multisitea?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Zerbi Ultimate Multisite-aren
+# Zerbi Ultimate Multisite-aren {#why-ultimate-multisite}
 
 Hau aurki daura, gure artikuluan aurkitu zutuz, pluginari zure negozio ideak errealizatzeko aukera izango dela eskatzen duzu. Horrek guztia arau behar duten zehalak iragatik espero dugu.
 
-## Zer da Ultimate Multisite-aren?
+## Zer da Ultimate Multisite-aren? {#what-is-ultimate-multisite}
 
 Ultimate Multisite da WordPress Multisite plugin bat da, eta horrek leku hartzeko WaaS (Website as a Service) teklatzea gure erabiltzaileei konpondu egiten du. Gure pluginarekin, abonazio zehalak onartu dezakezu eta erabiltzaileek zure Multisite-aren webgune bat hostea duen bitartean iragatik errespetu edo abonazio laburua ordaintzen dituz.
 
@@ -15,7 +15,7 @@ Ultimate Multisite arau duzu errendatutako metodo batzuekin (adibidez, WooCommer
 
 Eta horra lehen partea da, gure funtzioak add-ons eta webhook-ekin bidez hobetzeko aukera oso handia da.
 
-## Beste funtunaldiak
+## Beste funtunaldiak {#other-features}
 
 Ultimate Multisite hauek ere eskaintzen du:
 
@@ -33,11 +33,11 @@ Eta gehiago advanceda da:
 
 * Search and Replace API: Leitzateak {{site_name}} bezala placeholder-ek markatuta ere egin dezakezu eta customer-ek signatu egin ondoren ematen informazioa Search and Replace API-aren erabiliz, automatikoki horiek placeholder-ek hartzen dituz.
 
-## Erabili edukiak (Use cases)
+## Erabili edukiak (Use cases) {#use-cases}
 
 Ultimate Multisite-ren posible use cases bat begiratzeko ordu da.
 
-### Kasu 1: Agenzia
+### Kasu 1: Agenzia {#case-1-an-agency}
 
 Geroan, agenziako jardueraren espezialitatea webstei diseinatzen ari dira, zehatzko hosting edo marketinga jatorrizko serbisuak gisa listatuta jakinarazten beste aspektuak eta.
 
@@ -47,7 +47,7 @@ Ultimate Multisite-ren aukerak plugin eta tema batzuk pertsonalizatuta administr
 
 Agencias will find peace of mind with Ultimate Multisite allowing them to do what they do best - design exceptional websites.
 
-### Kasu 2: Provedor Nichea (Niche Provider)
+### Kasu 2: Provedor Nichea (Niche Provider) {#case-2-niche-provider}
 
 Dau da ezberdune dagoela irudi hau: "Bat beste gauza egin eta hori on egiten duzu". Orain, espezialista askorengari, horrek bat ideakaren edo serbisua bat sentazioa aldatzeko gabe.
 
@@ -57,7 +57,7 @@ Ultimate Multisite-aren inobazioa bat da, site template bat da horrek tema (them
 
 Nichea site eta serbisuek ematen duen provedor bat bilera, hau da ezberdune bat: custom pluginak eta diseinazioa eskatzen sansaltzeko, site batean lehenbait input (input) emate behar da. Kliantzak serbisuak amaitzen duela minimal input bat ematea dugu.
 
-### Kasu 3: WordPress Web Hosting
+### Kasu 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 WordPress site-ak hostatzea artean pertsona askorena erantzuna dago, baina WordPress bertsio bat instalatuta kliantzak web espazio emateko garrantzia ez da. Hau da horrek, espezialbidea serbisu on bat emateko beharrezkoa da erabaki eta ikuspenak (considerations) batzuk batatu behar dira.
 

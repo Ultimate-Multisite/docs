@@ -3,15 +3,15 @@ title: 'Pelajaran 7: Menjadikannya Milikmu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Pelajaran 7: Menjadikannya Milik Anda
+# Pelajaran 7: Menjadikannya Milik Anda {#lesson-7-making-it-yours}
 
 Pelanggan Anda tidak boleh merasa seperti mereka menggunakan "plugin WordPress sembarangan." Mereka harus merasa seperti menggunakan FitSite—sebuah platform yang dibangun khusus untuk industri mereka. Pelajaran ini akan membahas *branding*, *white-labeling*, dan cara membuat platform ini terasa seperti produk yang utuh.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah memiliki alur *checkout* yang berfungsi, yang membawa pemilik studio kebugaran dari pemilihan paket hingga situs yang aktif. Sekarang, kita akan membuat seluruh pengalaman ini terasa seperti produk yang kohesif dan ber-*branding*.
 
-## Domain Platform Anda
+## Domain Platform Anda {#your-platform-domain}
 
 Fondasi dari *brand* Anda adalah domain Anda. Untuk FitSite:
 
@@ -19,7 +19,7 @@ Fondasi dari *brand* Anda adalah domain Anda. Untuk FitSite:
 - **Situs pelanggan**: `namastudio.fitsite.com` (subdomain)
 - **Domain kustom**: Pelanggan dengan paket Growth dan Pro dapat memetakan domain mereka sendiri
 
-### Mengatur Domain Anda
+### Mengatur Domain Anda {#setting-up-your-domain}
 
 1. Daftarkan domain platform Anda
 2. Arahkan domain tersebut ke penyedia *hosting* Anda
@@ -28,11 +28,11 @@ Fondasi dari *brand* Anda adalah domain Anda. Untuk FitSite:
 
 Lihat [Cara Mengonfigurasi Pemetaan Domain](/user-guide/domain-mapping/how-to-configure-domain-mapping) untuk petunjuk terperinci.
 
-## *White-Labeling* Pengalaman Admin
+## *White-Labeling* Pengalaman Admin {#white-labeling-the-admin-experience}
 
 Ketika pemilik studio kebugaran masuk ke *dashboard* situs mereka, mereka harus melihat *brand* Anda, bukan *branding* WordPress atau Ultimate Multisite.
 
-### Halaman Login Kustom
+### Halaman Login Kustom {#custom-login-page}
 
 Kustomisasi halaman login WordPress untuk menampilkan:
 
@@ -40,7 +40,7 @@ Kustomisasi halaman login WordPress untuk menampilkan:
 - Gambar latar belakang yang sesuai untuk kebugaran
 - Warna *brand* Anda
 
-### *Branding* Dashboard
+### *Branding* Dashboard {#dashboard-branding}
 
 Gunakan *addon* [Admin Page Creator](/addons/admin-page-creator) atau CSS kustom untuk:
 
@@ -48,7 +48,7 @@ Gunakan *addon* [Admin Page Creator](/addons/admin-page-creator) atau CSS kustom
 - Menyesuaikan skema warna admin agar sesuai dengan *brand* Anda
 - Menambahkan *widget* *dashboard* kustom dengan tautan cepat dan sumber daya bantuan spesifik kebugaran
 
-### Halaman Admin Kustom
+### Halaman Admin Kustom {#custom-admin-pages}
 
 Pertimbangkan untuk membuat halaman admin kustom yang menampilkan tindakan yang paling relevan bagi pemilik studio kebugaran:
 
@@ -58,11 +58,11 @@ Pertimbangkan untuk membuat halaman admin kustom yang menampilkan tindakan yang 
 
 Ini mengurangi kurva belajar dengan menempatkan tindakan yang relevan dengan niche di bagian depan, alih-alih menyembunyikannya di menu standar WordPress.
 
-## *Branding* Komunikasi Anda
+## *Branding* Komunikasi Anda {#branding-your-communications}
 
 Setiap email, faktur, dan notifikasi harus memperkuat *brand* Anda.
 
-### Email Sistem
+### Email Sistem {#system-emails}
 
 Arahkan ke **Ultimate Multisite > Settings > Emails** dan kustomisasi semua email sistem:
 
@@ -79,7 +79,7 @@ Email penting yang perlu dikustomisasi:
 | Tanda Terima Pembayaran | "Pembayaran diterima" | "Pembayaran langganan FitSite dikonfirmasi" |
 | Uji Coba Berakhir | "Uji coba Anda akan segera berakhir" | "Uji coba FitSite Anda berakhir dalam 3 hari—pertahankan situs web studio Anda tetap aktif" |
 
-### Faktur
+### Faktur {#invoices}
 
 Kustomisasi template faktur dengan:
 
@@ -87,7 +87,7 @@ Kustomisasi template faktur dengan:
 - Detail bisnis Anda
 - Nama produk spesifik kebugaran (bukan ID paket umum)
 
-## Situs yang Dilihat Pelanggan
+## Situs yang Dilihat Pelanggan {#the-customer-facing-site}
 
 Domain utama Anda (`fitsite.com`) memerlukan situs pemasaran yang menjual platform ini. Ini terpisah dari admin jaringan Ultimate Multisite—ini adalah wajah publik dari bisnis Anda.
 
@@ -103,7 +103,7 @@ Halaman-halaman penting:
 Buat situs pemasaran Anda sebagai situs di dalam jaringan Anda sendiri. Ini memungkinkan Anda mengelolanya dari *dashboard* yang sama dan menunjukkan kemampuan platform Anda sendiri.
 :::
 
-## Domain Kustom untuk Pelanggan
+## Domain Kustom untuk Pelanggan {#custom-domain-for-customers}
 
 Untuk pelanggan dengan paket yang mencakup domain kustom, dokumentasikan prosesnya dengan jelas:
 
@@ -113,7 +113,7 @@ Untuk pelanggan dengan paket yang mencakup domain kustom, dokumentasikan prosesn
 
 Buat artikel bantuan atau entri basis pengetahuan khusus untuk proses ini, ditulis untuk pemilik studio kebugaran yang tidak teknis.
 
-## Jaringan FitSite Sejauh Ini
+## Jaringan FitSite Sejauh Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Siap untuk alur *onboarding* (pelajaran berikutnya)
 ```
 
-## Apa yang Kita Bangun di Pelajaran Ini
+## Apa yang Kita Bangun di Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Domain platform dan DNS** dikonfigurasi untuk pengalaman ber-*brand*
 - **Admin *white-label*** dengan *branding* FitSite di seluruh bagian

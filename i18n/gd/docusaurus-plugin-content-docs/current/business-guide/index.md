@@ -3,13 +3,13 @@ title: Tog gnìomhachas làraich-lìn sònraichte
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Tog Gnìomhachas Làraich-lìn Niche le Ultimate Multisite
+# Tog Gnìomhachas Làraich-lìn Niche le Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Bidh a’ mhòr-chuid de dhaoine a dh’fheuchas ri làraich-lìn a reic a’ farpais air prìs an aghaidh Wix, Squarespace, agus mìltean de luchd-obrach neo-cheangailte. Caillidh iad. Bidh an fheadhainn a bhuannaicheas a’ taghadh luchd-èisteachd sònraichte, a’ togail fuasgladh a tha freagarrach don luchd-èisteachd sin, agus a’ cur cosgais air an luach a lìbhrigeas iad.
 
 Bidh an cùrsa seo gad theagasg mar a nì thu sin gu dìreach le Ultimate Multisite.
 
-## Na Thogas Tu
+## Na Thogas Tu {#what-you-will-build}
 
 Tron chùrsa seo togaidh tu lìonra fìor, obrachail ris an canar **FitSite** -- àrd-ùrlar làraich-lìn a chaidh a thogail gu sònraichte airson stiùideothan fallaineachd, trèanaichean pearsanta, agus sealbhadairean tallaichean-spòrs.
 
@@ -23,7 +23,7 @@ Ron leasan mu dheireadh, bidh FitSite na àrd-ùrlar niche iomlan le:
 
 Leanaidh tu ceum air cheum, agus aig an deireadh bidh an dà chuid àrd-ùrlar obrachail agad agus an t-eòlas gus am pròiseas ath-riochdachadh airson niche sam bith a thaghas tu.
 
-## Carson Stiùideothan Fallaineachd?
+## Carson Stiùideothan Fallaineachd? {#why-fitness-studios}
 
 Bha feum againn air eisimpleir chruaidh as urrainn do dhuine sam bith a leantainn. Bidh stiùideothan fallaineachd ag obair oir:
 
@@ -34,7 +34,7 @@ Bha feum againn air eisimpleir chruaidh as urrainn do dhuine sam bith a leantain
 
 Buinidh a h-uile rud a dh’ionnsaicheas tu a’ togail FitSite gu dìreach ri niche sam bith a thaghas tu: taighean-bìdh, riochdairean thogalaichean, companaidhean lagha, eaglaisean, cunnradairean ciùird, no roinn dhìreach sam bith eile.
 
-## Structar a’ Chùrsa
+## Structar a’ Chùrsa {#course-structure}
 
 Bheir gach leasan a-steach aon bhun-bheachd, mìnichidh e carson a tha e cudromach, agus stiùiridh e thu tro bhith ga chur an gnìomh ann an lìonra FitSite. Bidh gach leasan a’ togail air an fhear roimhe.
 
@@ -55,7 +55,7 @@ Bheir gach leasan a-steach aon bhun-bheachd, mìnichidh e carson a tha e cudroma
 | [13. A’ Sgèileadh Suas](lesson-13-growth) | A’ fàs bho chiad luchd-ceannach gu gnìomhachas fìor | Ro-innleachd fàis agus fèin-ghluasaid FitSite |
 | [14. Na Thig An-ath](lesson-14-whats-next) | A’ leudachadh gu niches faisg air làimh agus cothroman ùra | Do mhapa-rathaid seachad air FitSite |
 
-## Ro-ghoireasan
+## Ro-ghoireasan {#prerequisites}
 
 - Stàladh WordPress Multisite (no deònach fear a stèidheachadh)
 - Cead Ultimate Multisite gnìomhach
@@ -63,6 +63,6 @@ Bheir gach leasan a-steach aon bhun-bheachd, mìnichidh e carson a tha e cudroma
 
 Chan eil còdadh riatanach. Mura do chleachd thu Ultimate Multisite a-riamh roimhe, tha sin ceart gu leòr -- tòisichidh Leasan 3 bho stàladh ùr.
 
-## Deiseil?
+## Deiseil? {#ready}
 
 Tòisich le [Leasan 1: Carson a Bhuannaicheas Niche](lesson-1-why-niche).

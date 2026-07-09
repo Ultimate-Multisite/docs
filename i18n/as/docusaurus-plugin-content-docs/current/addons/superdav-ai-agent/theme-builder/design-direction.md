@@ -3,17 +3,17 @@ title: নকশাৰ দিশা
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction (নকশাৰ দিশা)
+# Design Direction (নকশাৰ দিশা) {#design-direction}
 
 **Design Direction** ধাপটোৱে Theme Builder-এ সম্পূৰ্ণ থীমটো সৃষ্টি কৰাৰ আগতে আপোনাৰ থীমৰ ভিজুৱেল ডিজাইন (visual design) এটা পুনৰীক্ষণ কৰিবলৈ, উন্নত কৰিবলৈ আৰু চূড়ান্ত কৰিবলৈ সুযোগ দিয়ে।
 
-## Overview (সামৰণ)
+## Overview (সামৰণ) {#overview}
 
 Discovery Interview সম্পূৰ্ণ কৰাৰ পিছত, Theme Builder-এ **desktop আৰু mobile preview rendering** সহ আপোনাৰ ডিজাইনৰ দিশা প্ৰদৰ্শিত কৰে। ই আপোনাক থীমটোত চূড়ান্ত সিদ্ধান্ত ল’বলৈ আগবাঢ়াৰ আগতে বিভিন্ন ডিভাইচত আপোনাৰ ডিজাইনটো কেনেকুৱে দেখিব বুলি স্পষ্টকৈ বুজাই দিয়ে।
 
-## Design Direction Components (নকশাৰ দিশাৰ উপাদানসমূহ)
+## Design Direction Components (নকশাৰ দিশাৰ উপাদানসমূহ) {#design-direction-components}
 
-### 1. Color Palette (ৰংৰ প্যালেট)
+### 1. Color Palette (ৰংৰ প্যালেট) {#1-color-palette}
 
 আপোনাৰ থীমৰ ৰংৰ স্কীমটো, যাৰ ভিতৰত আছে:
 
@@ -23,7 +23,7 @@ Discovery Interview সম্পূৰ্ণ কৰাৰ পিছত, Theme Bu
 - **Neutral colors** — পটভূমি (background) আৰু পাঠ্যৰ বাবে ধূসৰ আৰু বগা ৰং।
 - **Text color** — পঢ়িবলৈ সুবিধা হোৱাকৈ মূল পাঠ্যৰ ৰং।
 
-### 2. Typography (অক্ষৰ শৈলী)
+### 2. Typography (অক্ষৰ শৈলী) {#2-typography}
 
 এইবোৰৰ বাবে ফণ্ট নিৰ্বাচন:
 
@@ -33,14 +33,14 @@ Discovery Interview সম্পূৰ্ণ কৰাৰ পিছত, Theme Bu
 - **Line height** — পঢ়িবলৈ সুবিধা হোৱাকৈ শাৰীৰ মাজৰ ফাঁক।
 - **Font weights** — bold, regular, আৰু light ধৰণৰ ভিন্নতা।
 
-### 3. Layout and Spacing (লেআউট আৰু ফাঁক)
+### 3. Layout and Spacing (লেআউট আৰু ফাঁক) {#3-layout-and-spacing}
 
 - **Container width** — বিষয়বস্তুৰ বাবে আটাইতকৈ বেছি আকাৰ।
 - **Padding and margins** — উপাদানৰ চাৰিওফালে থকা ফাঁক।
 - **Grid system** — responsive ডিজাইনৰ বাবে কলাম লেআউট।
 - **Component spacing** — UI উপাদানসমূহৰ মাজৰ দূৰত্ব।
 
-### 4. Visual Elements (ভিজুৱেল উপাদান)
+### 4. Visual Elements (ভিজুৱেল উপাদান) {#4-visual-elements}
 
 - **Button styles** — primary, secondary, আৰু tertiary বাটনৰ ডিজাইন।
 - **Card designs** — বিষয়বস্তুৰ ব্লকৰ বাবে লেআউট।
@@ -48,9 +48,9 @@ Discovery Interview সম্পূৰ্ণ কৰাৰ পিছত, Theme Bu
 - **Borders and shadows** — সূক্ষ্ম ভিজুৱেল গভীৰতা।
 - **Hover effects** — ইন্টাৰেক্টিভ ষ্টেটৰ শৈলী।
 
-## Preview Rendering (প্ৰিভিউ প্ৰদৰ্শন)
+## Preview Rendering (প্ৰিভিউ প্ৰদৰ্শন) {#preview-rendering}
 
-### Desktop Preview (ডেস্কটপ প্ৰিভিউ)
+### Desktop Preview (ডেস্কটপ প্ৰিভিউ) {#desktop-preview}
 
 ডেস্কটপ প্ৰিভিউয়ে আপোনাৰ ডিজাইনটো সম্পূৰ্ণ আকাৰত (সাধাৰণতে ১২০০px বা তাতকৈ বেছি) দেখুৱায়:
 
@@ -59,7 +59,7 @@ Discovery Interview সম্পূৰ্ণ কৰাৰ পিছত, Theme Bu
 - ডাঙৰ টাইপগ্ৰাফি আৰু ফাঁক।
 - সকলো ভিজুৱেল উপাদান সম্পূৰ্ণ আকাৰত।
 
-### Mobile Preview (মোবাইল প্ৰিভিউ)
+### Mobile Preview (মোবাইল প্ৰিভিউ) {#mobile-preview}
 
 মোবাইল প্ৰিভিউয়ে আপোনাৰ ডিজাইনটো মোবাইল আকাৰত (সাধাৰণতে ৩৭৫px) দেখুৱায়:
 
@@ -68,7 +68,7 @@ Discovery Interview সম্পূৰ্ণ কৰাৰ পিছত, Theme Bu
 - সামঞ্জস্য কৰা টাইপগ্ৰাফি আৰু ফাঁক।
 - টাচ কৰিবলৈ সুবিধা হোৱাকৈ বাটনৰ আকাৰ।
 
-### Responsive Breakpoints (responsive ব্ৰেকপইণ্ট)
+### Responsive Breakpoints (responsive ব্ৰেকপইণ্ট) {#responsive-breakpoints}
 
 Theme Builder-এ এই ব্ৰেকপইণ্টত প্ৰিভিউ প্ৰদৰ্শন কৰে:
 
@@ -79,9 +79,9 @@ Theme Builder-এ এই ব্ৰেকপইণ্টত প্ৰিভিউ
 | **Desktop** | 1200px | Full-width desktop |
 | **Large Desktop** | 1920px | Ultra-wide display |
 
-## Refining Your Design (আপোনাৰ ডিজাইন উন্নত কৰা)
+## Refining Your Design (আপোনাৰ ডিজাইন উন্নত কৰা) {#refining-your-design}
 
-### Making Adjustments (সংশোধন কৰা)
+### Making Adjustments (সংশোধন কৰা) {#making-adjustments}
 
 আপুনি তলত দিয়া ধৰণেৰে আপোনাৰ ডিজাইনৰ দিশা উন্নত কৰিব পাৰে:
 
@@ -91,7 +91,7 @@ Theme Builder-এ এই ব্ৰেকপইণ্টত প্ৰিভিউ
 4. **Updating layout** — container width আৰু grid কলাম সলনি কৰক।
 5. **Customizing elements** — বাটনৰ শৈলী, card design আদি সলনি কৰক।
 
-### Preview Updates (প্ৰিভিউ আপডেট)
+### Preview Updates (প্ৰিভিউ আপডেট) {#preview-updates}
 
 সংশোধনবোৰ তাৎক্ষণিকভাৱে প্ৰতিফলিত হয়:
 
@@ -100,7 +100,7 @@ Theme Builder-এ এই ব্ৰেকপইণ্টত প্ৰিভিউ
 - সকলো responsive ব্ৰেকপইণ্ট আপডেট হয়।
 - আপুনি পৰিৱৰ্তনসমূহ পৰীক্ষা কৰিবলৈ প্ৰিভিউৰ মাজত স্থানান্তৰ হ'ব পাৰে।
 
-### Comparison View (তুলনাৰ দৃশ্য)
+### Comparison View (তুলনাৰ দৃশ্য) {#comparison-view}
 
 আপোনাৰ ডিজাইনৰ দিশাক তলৰ উপাদানসমূহৰ সৈতে তুলনা কৰক:
 
@@ -108,7 +108,7 @@ Theme Builder-এ এই ব্ৰেকপইণ্টত প্ৰিভিউ
 - **Competitor designs** — অনুপ্ৰেৰণাৰ স্থানসমূহৰ সৈতে তুলনা কৰক।
 - **Previous versions** — পূৰ্বৰ ডিজাইনৰ দিশালৈ পুনৰ গ'লক।
 
-## Design Direction Approval (নকশাৰ দিশা অনুমোদন)
+## Design Direction Approval (নকশাৰ দিশা অনুমোদন) {#design-direction-approval}
 
 আপুনি আপোনাৰ ডিজাইনটোত সন্তুষ্ট হোৱাৰ পিছত:
 
@@ -118,7 +118,7 @@ Theme Builder-এ এই ব্ৰেকপইণ্টত প্ৰিভিউ
 4. **Confirm layout** — ফাঁক আৰু alignment পৰীক্ষা কৰক।
 5. **Approve design** — থীম সৃষ্টিৰ বাবে আগবাঢ়ক।
 
-## Next Steps (পৰৱৰ্তী পদক্ষেপ)
+## Next Steps (পৰৱৰ্তী পদক্ষেপ) {#next-steps}
 
 আপুনি আপোনাৰ ডিজাইনৰ দিশা অনুমোদন কৰাৰ পিছত:
 
@@ -127,7 +127,7 @@ Theme Builder-এ এই ব্ৰেকপইণ্টত প্ৰিভিউ
 3. আপুনি WordPress customizer ব্যৱহাৰ কৰি আৰু অধিক customize কৰিব পাৰে।
 4. [Hospitality Menus](./hospitality-menus.md) বা আন বৈশিষ্ট্যলৈ আগবাঢ়ক।
 
-## Best Practices (ভাল অভ্যাস)
+## Best Practices (ভাল অভ্যাস) {#best-practices}
 
 - **Test on real devices** — সম্ভৱ হ'লে সঁচাকৈৰ ফোন আৰু টাবলেট ব্যৱহাৰ কৰক।
 - **Check readability** — নিশ্চিত কৰক যে সকলো আকাৰত পাঠ্য পঢ়িবলৈ সুবিধা হয়।
@@ -135,30 +135,30 @@ Theme Builder-এ এই ব্ৰেকপইণ্টত প্ৰিভিউ
 - **Consider performance** — গতিৰ বাবে ছবি আৰু ফণ্ট অপটিমাইজ কৰক।
 - **Plan for content** — নিশ্চিত কৰক যে লেআউটটো আপোনাৰ সঁচাকৈৰ বিষয়বস্তুৰ সৈতে কাম কৰে।
 
-## Troubleshooting (সমস্যা সমাধান)
+## Troubleshooting (সমস্যা সমাধান) {#troubleshooting}
 
-### Preview Not Updating (প্ৰিভিউ আপডেট নহ'লে)
+### Preview Not Updating (প্ৰিভিউ আপডেট নহ'লে) {#preview-not-updating}
 
 - পৃষ্ঠা Refresh কৰক।
 - Browser cache Clear কৰক।
 - অন্য Browser এটা চেষ্টা কৰক।
 - Internet connection পৰীক্ষা কৰক।
 
-### Colors Look Different (ৰং বেলেগ লাগলে)
+### Colors Look Different (ৰং বেলেগ লাগলে) {#colors-look-different}
 
 - Monitor color settings পৰীক্ষা কৰক।
 - বিভিন্ন ডিভাইচত চেষ্টা কৰক।
 - accessibility tools ব্যৱহাৰ কৰি color contrast পৰীক্ষা কৰক।
 - color blindness simulators বিবেচনা কৰক।
 
-### Typography Issues (টাইপগ্ৰাফিৰ সমস্যা)
+### Typography Issues (টাইপগ্ৰাফিৰ সমস্যা) {#typography-issues}
 
 - ফণ্ট ফাইলবোৰ load হৈছে নে নাই, পৰীক্ষা কৰক।
 - বিভিন্ন ব্ৰেকপইণ্টত ফণ্ট আকাৰ পৰীক্ষা কৰক।
 - সঁচাকৈৰ বিষয়বস্তুৰে পৰীক্ষা কৰক।
 - পঢ়িবলৈ সুবিধা হোৱাকৈ শাৰীৰ দৈৰ্ঘ্য (line length) বিবেচনা কৰক।
 
-## Related Documentation (সম্পৰক ডকুমেন্টেশ্বন)
+## Related Documentation (সম্পৰক ডকুমেন্টেশ্বন) {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — ডিজাইনৰ তথ্য সংগ্ৰহ কৰক।
 - [Hospitality Menus](./hospitality-menus.md) — structured menu page সৃষ্টি কৰক।

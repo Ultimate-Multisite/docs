@@ -3,15 +3,15 @@ title: Validasi Kontras Palét
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validasi Kontras Palét
+# Validasi Kontras Palét {#validate-palette-contrast}
 
 Kamampuh **Validasi Kontras Palét** mariksa pasangan warna dina palét desain anjeun pikeun kasaluyuan jeung WCAG (Web Content Accessibility Guidelines) saméméh dilarapkeun kana téma anjeun.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Kamampuh ieu mastikeun skéma warna situs anjeun nyumponan standar aksésibilitas ku ngavalidasi rasio kontras antara téks jeung warna latar. Ieu mantuan nyegah kombinasi warna anu bisa hésé dibaca ku pamaké anu boga gangguan paningalan.
 
-## Format Input
+## Format Input {#input-format}
 
 Kamampuh ieu narima palét warna minangka input:
 
@@ -35,7 +35,7 @@ Kamampuh ieu narima palét warna minangka input:
 }
 ```
 
-### Parameter
+### Parameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Kamampuh ieu narima palét warna minangka input:
 | `wcag_level` | string | No | Tingkat kasaluyuan WCAG: "A", "AA" (standar), atawa "AAA" |
 | `pairs_to_check` | array | No | Pasangan warna husus pikeun divalidasi (contona, `["primary-text", "background-text"]`) |
 
-## Tingkat WCAG anu Dipariksa
+## Tingkat WCAG anu Dipariksa {#wcag-levels-checked}
 
 Kamampuh ieu ngavalidasi rasio kontras numutkeun standar WCAG:
 
@@ -56,7 +56,7 @@ Kamampuh ieu ngavalidasi rasio kontras numutkeun standar WCAG:
 - **Téks Normal** — téks leuwih leutik ti 18pt (atawa 14pt bold)
 - **Téks Gedé** — téks 18pt atawa leuwih gedé (atawa 14pt bold atawa leuwih gedé)
 
-## Skéma Output
+## Skéma Output {#output-schema}
 
 Kamampuh ieu mulangkeun laporan validasi anu jéntré:
 
@@ -95,7 +95,7 @@ Kamampuh ieu mulangkeun laporan validasi anu jéntré:
 }
 ```
 
-### Widang Output
+### Widang Output {#output-fields}
 
 | Widang | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Kamampuh ieu mulangkeun laporan validasi anu jéntré:
 | `status` | string | "pass" atawa "fail" pikeun unggal pasangan |
 | `recommendations` | array | Saran pikeun ningkatkeun pasangan anu gagal |
 
-## Conto Pamakéan
+## Conto Pamakéan {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Kamampuh ieu ngavalidasi sakabéh kombinasi warna sarta mulangkeun:
 - ✅ Latar + Téks: rasio 12.1:1 (lulus WCAG AAA)
 - Gemblengna: Saluyu jeung WCAG AA
 
-## Integrasi jeung Theme Builder
+## Integrasi jeung Theme Builder {#integration-with-theme-builder}
 
 Nalika maké pamilihan arah-desain Theme Builder, kamampuh Validasi Kontras Palét:
 
@@ -129,7 +129,7 @@ Nalika maké pamilihan arah-desain Theme Builder, kamampuh Validasi Kontras Pal�
 4. Nyadiakeun saran pikeun pasangan anu teu saluyu
 5. Nyegah dilarapkeunana skéma warna anu teu aksésibel
 
-## Prakték Panghadéna
+## Prakték Panghadéna {#best-practices}
 
 - **Mimitian ku tingkat AA** — WCAG AA nyaéta standar pikeun kalolobaan situs wéb
 - **Uji saméméh dilarapkeun** — validasi palét anjeun saméméh netepkeun kana hiji desain
@@ -137,7 +137,7 @@ Nalika maké pamilihan arah-desain Theme Builder, kamampuh Validasi Kontras Pal�
 - **Pertimbangkeun karesep pamaké** — sababaraha pamaké bisa miboga sénsitipitas warna tambahan
 - **Paké pamariksa kontras** — gabungkeun kamampuh ieu jeung parabot panyungsi pikeun verifikasi
 
-## Pasangan anu Gagal jeung Saran
+## Pasangan anu Gagal jeung Saran {#failing-pairs-and-recommendations}
 
 Lamun pasangan warna gagal validasi, kamampuh ieu nyadiakeun saran:
 
@@ -155,7 +155,7 @@ Lamun pasangan warna gagal validasi, kamampuh ieu nyadiakeun saran:
 }
 ```
 
-## Kamampuh Patali
+## Kamampuh Patali {#related-abilities}
 
 - [Jieun Logo SVG](./generate-logo-svg.md) — jieun logo kalayan palét warna anu geus divalidasi
 - [Jieun Menu](./create-menu.md) — ngawangun navigasi kalayan warna anu aksésibel

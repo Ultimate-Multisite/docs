@@ -4,11 +4,11 @@ title: 過濾器 - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# 篩選器：wu_return_url
+# 篩選器：wu_return_url {#filter-wureturnurl}
 
 允許開發人員更改結帳流程完成後使用的閘道（gateway）回傳 URL。
 
-## 參數
+## 參數 {#parameters}
 
 | 名稱 | 類型 | 描述 |
 |------|------|-------------|
@@ -17,11 +17,11 @@ _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 | $payment | `\WP_Ultimo\Models\Payment` | Ultimate Multisite 付款實例。 |
 | $cart | `\WP_Ultimo\Checkout\Cart` | 當前的 Ultimate Multisite 購物車訂單。 |
 
-### 自
+### 自 {#since}
 
 - 2.0.20
-### 來源
+### 來源 {#source}
 
 定義於 [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) 的第 683 行。
 
-## 回傳值
+## 回傳值 {#returns}

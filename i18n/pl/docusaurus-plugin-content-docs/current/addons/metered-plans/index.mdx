@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Plany z rozliczaniem zużycia (Metered Plans)
+# Plany z rozliczaniem zużycia (Metered Plans) {#metered-plans}
 
 Dodatek Ultimate Multisite: Plany z rozliczaniem zużycia zmienia sposób, w jaki rozliczasz się z klientami, wprowadzając elastyczne możliwości rozliczania oparte na faktycznym zużyciu. Zamiast sztywnych limitów, które blokują użytkowników po przekroczeniu, umożliwia naliczanie opłat za nadwyżkę, które automatycznie rozliczają klientów za dodatkowe zużycie.
 
-## Kluczowe funkcje
+## Kluczowe funkcje {#key-features}
 
 * **Rozliczanie oparte na zużyciu (Metered Billing)**: Rozliczanie klientów na podstawie faktycznego zużycia, a nie stałych progów.
 * **Zarządzanie nadwyżką (Overage Management)**: Automatyczne rozliczanie za zużycie przekraczające limity planu.
@@ -21,14 +21,14 @@ Dodatek Ultimate Multisite: Plany z rozliczaniem zużycia zmienia sposób, w jak
 * **Automatyczne fakturowanie**: Automatyczne generowanie faktur, gdy przekroczone zostaną progi zużycia.
 * **Raporty zużycia**: Szczegółowa analiza i raportowanie zużycia dla klientów i administratorów.
 
-## Idealne dla
+## Idealne dla {#perfect-for}
 
 * **Dostawców hostingu**: Oferowanie skalowalnych planów, które rosną wraz z potrzebami klienta.
 * **Platform SaaS**: Rozliczanie na podstawie faktycznego zużycia zasobów.
 * **Sieci agencji**: Elastyczne modele cenowe dla projektów klientów.
 * **Dostawców hostingu typu Reseller**: Umożliwienie partnerom oferowania cen opartych na zużyciu.
 
-## Jak to działa
+## Jak to działa {#how-it-works}
 
 1. Skonfiguruj zasoby z rozliczaniem (np. przestrzeń dyskowa, przepustowość, liczba witryn itp.).
 2. Ustaw limity podstawowego planu i stawki za nadwyżkę.
@@ -37,13 +37,13 @@ Dodatek Ultimate Multisite: Plany z rozliczaniem zużycia zmienia sposób, w jak
 5. Faktury są generowane automatycznie na podstawie cyklu rozliczeniowego.
 6. Klienci mogą widzieć swoje zużycie i nadchodzące opłaty w czasie rzeczywistym.
 
-## Rozliczanie tokenów AI
+## Rozliczanie tokenów AI {#ai-token-billing}
 
 Wersja 1.1.0 dodaje rozliczanie tokenów AI dla sieci oferujących funkcje AI za pośrednictwem WordPress AI Client SDK. Plany z rozliczaniem zużycia nasłuchują zakończonych żądań generowania AI, rejestrują liczbę tokenów wejściowych i wyjściowych dla bieżącej podstrony, a następnie konwertują te tokeny na rozliczany koszt AI dla bieżącego okresu rozliczeniowego klienta.
 
 Użyj rozliczania tokenów AI, gdy chcesz oferować narzędzia AI na stronach klientów, nie absorbując przy tym nieprzewidywalnych kosztów modeli. Każde żądanie jest przypisywane do podstrony, klienta, członkostwa, dostawcy i modelu, dzięki czemu administratorzy mogą audytować zużycie, a klienci widzą, jak ich zużycie AI wpływa na ich konto.
 
-### Konfiguracja stawek za token
+### Konfiguracja stawek za token {#configure-per-token-rates}
 
 Stawki AI są konfigurowane dla każdego modelu jako oddzielne stawki wejściowe i wyjściowe. Stawki są obliczane za 1 milion tokenów, co odpowiada popularnym stronom z cenami dostawców AI.
 
@@ -55,7 +55,7 @@ Stawki AI są konfigurowane dla każdego modelu jako oddzielne stawki wejściowe
 
 Jeśli nie jest skonfigurowany dokładny identyfikator modelu, Plany z rozliczaniem zużycia mogą dopasować go na podstawie prefiksu modelu. Na przykład, stawka skonfigurowana dla `claude-sonnet-4` może mieć zastosowanie do identyfikatorów modeli z znacznikami czasu, które zaczynają się od tego prefiksu. Deweloperzy mogą również dostosować końcową tabelę stawek za pomocą filtra [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Obsługiwane konnektory AI
+### Obsługiwane konnektory AI {#supported-ai-connectors}
 
 Rozliczanie tokenów AI działa z konnektorami, które emitują zdarzenia WordPress AI Client SDK generowania i zawierają zużycie tokenów w metadanych odpowiedzi. Obejmuje to rodzinę konnektorów Ultimate Multisite AI udokumentowaną tutaj:
 
@@ -65,13 +65,13 @@ Rozliczanie tokenów AI działa z konnektorami, które emitują zdarzenia WordPr
 
 Niestandardowe konnektory mogą uczestniczyć, emitując standardowe zdarzenia `wp_ai_client_before_generate_result` i `wp_ai_client_after_generate_result` wraz z metadanymi modelu, dostawcy i zużycia tokenów. Ustawienia konnektora są egzekwowane z głównej witryny na podstrony, dzięki czemu strony klientów używają dostawców i limitów zatwierdzonych na poziomie sieci.
 
-### Zużycie konta klienta
+### Zużycie konta klienta {#customer-account-usage}
 
 Klienci widzą zużycie AI obok innych zasobów z rozliczaniem w swoim obszarze konta. Wiersz zużycia AI pokazuje całkowite zużycie za bieżący okres rozliczeniowy, pochodzące z zarejestrowanych tokenów prompt i completion, skonfigurowane stawki modelu oraz ewentualny wliczony budżet w planie.
 
 Jeśli klient ma zapisany sposób płatności, zużycie przekraczające wliczony budżet jest traktowane jako rozliczana nadwyżka. Jeśli plan jest skonfigurowany z twardym limitem, a klient nie ma dostępnego sposobu płatności, żądania AI mogą zostać zablokowane po osiągnięciu budżetu, a klient zostanie poproszony o dodanie danych płatniczych, zanim będzie mógł kontynuować.
 
-## Obsługiwane zasoby
+## Obsługiwane zasoby {#supported-resources}
 
 * Pamięć dyskowa
 * Przepustowość/Transfer danych
@@ -80,13 +80,13 @@ Jeśli klient ma zapisany sposób płatności, zużycie przekraczające wliczony
 * Zużycie tokenów AI i wydatki AI
 * Niestandardowe typy zasobów
 
-## Wymagania
+## Wymagania {#requirements}
 
 * Ultimate Multisite 2.0.0 lub nowszy
 * Instalacja WordPress Multisite
 * PHP 7.4 lub nowszy
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij pliki plugin do `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Aktywuj plugin w ekranie 'Plugins' w WordPress.
@@ -94,24 +94,24 @@ Jeśli klient ma zapisany sposób płatności, zużycie przekraczające wliczony
 4. Skonfiguruj swoje zasoby z rozliczaniem i ceny.
 5. Włącz rozliczanie zużycia dla produktów w edytorze produktów.
 
-## Najczęściej zadawane pytania
+## Najczęściej zadawane pytania {#frequently-asked-questions}
 
-## Co się dzieje, gdy klient przekroczy swój limit?
+## Co się dzieje, gdy klient przekroczy swój limit? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Zamiast blokować dostęp, system śledzi nadwyżkę i dodaje ją do następnej faktury na podstawie skonfigurowanych przez Ciebie stawek.
 
-## Czy mogę ustawić różne stawki za nadwyżkę dla różnych produktów?
+## Czy mogę ustawić różne stawki za nadwyżkę dla różnych produktów? {#can-i-set-different-overage-rates-for-different-products}
 
 Tak, każdy produkt może mieć unikalne zasoby z rozliczaniem i ceny za nadwyżkę.
 
-## Jak informuje się klientów o zużyciu?
+## Jak informuje się klientów o zużyciu? {#how-are-customers-notified-about-usage}
 
 Klienci mogą zobaczyć swoje bieżące zużycie na dashboardzie i otrzymać opcjonalne powiadomienia zbliżające się do limitu lub przekraczające go.
 
-## Jak wyceniane jest zużycie tokenów AI?
+## Jak wyceniane jest zużycie tokenów AI? {#how-is-ai-token-usage-priced}
 
 Zużycie tokenów AI jest wyceniane na podstawie skonfigurowanych stawek wejściowych i wyjściowych modelu za 1 milion tokenów. Plany z rozliczaniem zużycia mnożą liczby tokenów prompt i completion każdego żądania przez te stawki, dodają wynik do bieżącego wydatku AI klienta za okres rozliczeniowy i stosują budżet lub zasady nadwyżki planu.
 
-## Czy nadal mogę używać twardych limitów?
+## Czy nadal mogę używać twardych limitów? {#can-i-still-use-hard-limits}
 
 Tak, rozliczanie oparte na zużyciu jest opcjonalne dla każdego produktu. Możesz łączyć tradycyjne produkty z twardymi limitami z produktami z rozliczaniem zużycia.

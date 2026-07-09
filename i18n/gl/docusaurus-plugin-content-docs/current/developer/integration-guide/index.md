@@ -3,13 +3,13 @@ title: Guía de integración
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guía de integración
+# Guía de integración {#integration-guide}
 
 Esta guía abrangue patróns habituais de integración con Ultimate Multisite, incluída a conexión con servizos externos, a creación de pasarelas de pagamento personalizadas e a xestión de webhooks.
 
 Para infraestrutura de inquilinos illados, consulta [Integración Multi-Tenancy](./multi-tenancy) para orientación sobre o arranque de inquilinos soberanos, verificación de migración, SSO e desmontaxe.
 
-## Integración con CRM
+## Integración con CRM {#crm-integration}
 
 Sincroniza os datos dos clientes co teu CRM cando se rexistren novos clientes:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integración con Analytics
+## Integración con Analytics {#analytics-integration}
 
 Rastrexa eventos empresariais clave ao longo do ciclo de vida do cliente:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Seguintes pasos
+## Seguintes pasos {#next-steps}
 
 - [Desenvolvemento de pasarela personalizada](./custom-gateway) — Crea a túa propia pasarela de pagamento
 - [Xestión de webhooks](./webhooks) — Crea endpoints de webhook personalizados

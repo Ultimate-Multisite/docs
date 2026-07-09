@@ -3,7 +3,7 @@ title: API-eindpunt registreren
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Het Ultimate Multisite Register API-eindpunt
+# Het Ultimate Multisite Register API-eindpunt {#the-ultimate-multisite-register-api-endpoint}
 
 In deze tutorial leer je hoe je het Ultimate Multisite /register API-eindpunt gebruikt om het volledige onboardingproces voor een nieuwe klant in je netwerk te maken en hoe je dat met Zapier doet.
 
@@ -29,11 +29,11 @@ Selecteer **Enable API** en haal je API-inloggegevens op.
 
 Laten we nu het eindpunt verkennen en daarna een registratieactie in Zapier maken.
 
-## Bodyparameters van het eindpunt
+## Bodyparameters van het eindpunt {#endpoint-body-parameters}
 
 Laten we een overzicht bekijken van de minimale informatie die we naar het eindpunt moeten sturen. Aan het einde van dit artikel vind je de volledige aanroep.
 
-### Customer
+### Customer {#customer}
 
 Dit is de informatie die nodig is voor het proces van het aanmaken van de User en de Ultimate Multisite Customer:
 
@@ -43,25 +43,25 @@ Het is mogelijk om de customer ID te verzenden die in je netwerk is aangemaakt. 
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 De enige informatie die we binnen dit object nodig hebben, is Membership Status.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Products krijgen een array met 1 of meer product ID uit je netwerk. Let op: dit eindpunt maakt geen producten aan. Bekijk de documentatie van Ultimate Multisite om het eindpunt voor het aanmaken van producten beter te begrijpen.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Net als bij Membership hebben we alleen de status nodig.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 En om de body af te sluiten hebben we de URL en titel van de site nodig, beide binnen het Site-object.
 
@@ -69,13 +69,13 @@ En om de body af te sluiten hebben we de URL en titel van de site nodig, beide b
 
 De return van het register-eindpunt is een array met de nieuw aangemaakte membership-informatie.
 
-## Een actie maken in Zapier
+## Een actie maken in Zapier {#creating-an-action-in-zapier}
 
 Met de introductie van dit nieuwe en robuustere eindpunt voor het aanmaken van Accounts krijg je ook toegang tot een nieuwe actie in Zapier.
 
 Weet je hoe je alles kunt gebruiken en benutten wat de nieuwe versie van Zapier biedt? Lees hier meer. (link?)
 
-### Een actie maken
+### Een actie maken {#creating-an-action}
 
 Om beter te illustreren hoe je het registratie-eindpunt met Zapier gebruikt, maken we een integratie met Google Forms. Elke keer dat dit formulier wordt ingevuld en de informatie wordt opgeslagen in het antwoordblad van het formulier, wordt er een nieuwe membership aangemaakt in het Ultimate Multisite netwerk.
 
@@ -105,7 +105,7 @@ Ga met de ingestelde informatie door naar de laatste test. Op het laatste scherm
 
 Test je nieuwe Zap en deze zou succesvol moeten worden voltooid. Als er een fout optreedt, controleer dan alle velden en of ze correct worden verzonden. Omdat er veel informatie is, kunnen sommige dingen onopgemerkt blijven.
 
-### Volledige eindpuntparameters
+### Volledige eindpuntparameters {#complete-endpoint-parameters}
 
 Hier is de volledige aanroep en alle mogelijkheden van velden die kunnen worden verzonden.
 

@@ -3,11 +3,11 @@ title: Fərdi ödəniş keçidinin hazırlanması
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Fərdi ödəniş keçidi hazırlanması
+# Fərdi ödəniş keçidi hazırlanması {#custom-gateway-development}
 
 `Base_Gateway` sinfini genişləndirərək fərdi ödəniş keçidləri yarada bilərsiniz.
 
-## Ödəniş keçidi sinfi
+## Ödəniş keçidi sinfi {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Ödəniş keçidini qeydiyyatdan keçirin
+## Ödəniş keçidini qeydiyyatdan keçirin {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Əsas metodlar
+## Əsas metodlar {#key-methods}
 
 | Metod | Məqsəd |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Geri ödəniş sorğularını emal etmək |
 | `get_payment_methods()` | Müştəri üçün saxlanmış ödəniş metodlarını qaytarmaq |
 
-## Təkrarlanan üzvlüklər üçün yenilənmə etimad məlumatları
+## Təkrarlanan üzvlüklər üçün yenilənmə etimad məlumatları {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ödəniş keçidi inteqrasiyalarına `auto_renew` saxlanmazdan əvvəl təkrarlanan üzvlüyün təkrar istifadə edilə bilən yenilənmə etimad məlumatının olub-olmadığını bildirməyə imkan verir. `wu_membership_has_renewal_credential` hook-una qoşulun və qaytarın:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Yeni təkrar istifadə edilə bilən etimad məlumatı saxlandıqdan sonra ödəniş keçidinizin uğurlu yenidən avtorizasiya axınının bir hissəsi kimi çatışmayan etimad məlumatı işarəsini təmizləyin.
 
-## Məsləhətlər
+## Məsləhətlər {#tips}
 
 - Uğursuzluq zamanı həmişə `WP_Error` qaytarın ki, Ultimate Multisite xəta göstərilməsini idarə edə bilsin
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Ödəniş keçidinə məxsus jurnal qeydləri üçün `wu_log_add()` istifadə edin
 
-## AI connector provayder imkanları
+## AI connector provayder imkanları {#ai-connector-provider-capabilities}
 
 AI connector əsaslı əməliyyatları çağıran fərdi inteqrasiyalar AI Provider for Anthropic Max v1.3.0 ilə təqdim edilmiş dəstəklənən OAuth provayder dəsti ilə uyğunlaşdırılmalıdır:
 

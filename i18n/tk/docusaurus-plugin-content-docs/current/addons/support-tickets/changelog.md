@@ -3,13 +3,13 @@ title: Goldaw petekleriniň üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Goldaw biletleriniň üýtgeşmeler taryhy
+# Goldaw biletleriniň üýtgeşmeler taryhy {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Kämilleşdirildi: vendor/ katalogy Git yzarlamasyndan aýryldy (.gitignore tarapyndan eýýäm gurşalypdy), repository ölçegi azaldyldy
 * Kämilleşdirildi: WordPress 7.0-a çenli synag edildi
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Düzedildi: Nullable bilet model setter-lerinde null bahalary kabul etmek
 * Düzedildi: Dogry multisite goldawy üçin ähli biletleri global, bütin network boýunça tablisalarda saklamak
 * Düzedildi: Müşderiniň täze bilet formasynda işgär meýdanlaryny gizlemek we boş sahypa ugrukdyrmasyny düzetmek
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Kämilleşdirildi: Frontend asset-lerini diňe goldaw bilet sahypalarynda şertli ýüklemek
 * Kämilleşdirildi: Bedrock root autoloader eýýäm dependencies ýüklän bolsa plugin autoloader-den geçmek
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Goşuldy: Admin we frontend üçin doly bilet görme funksiýonallygy
 * Goşuldy: Bilet jogap tabşyryklary üçin AJAX handler
 * Goşuldy: Dogry forma işlenişi bilen bilet jogap funksiýonallygyna goldaw
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Kämilleşdirildi: Jogaplar we attachment-ler üçin dogry query we schema class-lary bilen database gurluşy
 * Kämilleşdirildi: Bilet modelleri üçin attributes ýerine hakyky properties-e migrasiýa
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Täzelendi: Yzygiderlilik üçin prefix ultimate-multisite diýip täzeden atlandyryldy
 * Täzelendi: Text domain standartlaşdyrylyşy
 * Düzedildi: Ownuk bug düzedişleri we kämilleşdirmeler
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Ilkinji çykarylyş
 * Doly bilet dolandyryş ulgamy
 * Köp derejeli elýeterlilik gözegçiligi

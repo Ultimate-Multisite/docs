@@ -3,11 +3,11 @@ title: Tixraaca WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Tixraaca WP-CLI
+# Tixraaca WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent waxa uu la yimaadaa qoys amarro `wp gratis-ai-agent` ah oo loogu talagalay cabbiridda agent-ka, maareynta awoodaha, iyo weydiinta xaaladda agent-ka laga bilaabo command line. Dhammaan amarradu waxay u baahan yihiin WP-CLI 2.0 ama ka sarreeya.
 
-## Rakibid
+## Rakibid {#installation}
 
 Amarrada WP-CLI si toos ah ayaa loo diiwaangeliyaa marka plugin-ku firfircoon yahay. Ku xaqiiji:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Waxa uu socodsiiyaa xirmada cabbirka Awoodaha Agent-ka — koox prompts adag oo tallaabooyin badan leh kuwaas oo tijaabiya dusha awoodda oo dhan. U adeegso tan si aad u qiimeyso waxqabadka model-ka, u barbar dhigto bixiyeyaasha AI, ama u ansixiso xirmooyinka awoodaha ka hor inta aan loo dirin production.
 
-### Dulmar
+### Dulmar {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Ikhtiyaarro
+### Ikhtiyaarro {#options}
 
 | Ikhtiyaar | Sharaxaad |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Qaabka soo saarista: `table` (default), `json`, `csv` |
 | `--save` | Ku kaydi natiijooyinka cabbirka database-ka si loo barbar dhigo taariikh ahaan |
 
-### Tusaalooyin
+### Tusaalooyin {#examples}
 
 Socodsii xirmada cabbirka oo dhan adigoo isticmaalaya bixiyaha iyo model-ka hadda jira:
 
@@ -57,7 +57,7 @@ Ku socodsii model gaar ah oo kaydi natiijooyinka:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Soo saarid
+### Soo saarid {#output}
 
 Cabbirku waxa uu soo saaraa hal saf su’aal kasta oo leh tiirarkan soo socda:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Su’aalaha Cabbirka
+### Su’aalaha Cabbirka {#benchmark-questions}
 
 Xirmada default-ka ah waxa ku jira:
 
@@ -95,11 +95,11 @@ Su’aalo dheeraad ah waxaa lagu diiwaangeli karaa filter-ka `gratis_ai_agent_be
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Waxa uu maareeyaa awoodaha iyo xirmooyinka awoodaha ee la rakibay.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Waxa uu taxaa dhammaan awoodaha la diiwaangaliyay, isha ay ka yimaadeen (core ama pack), iyo xaaladdooda hadda.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Waxa uu ka soo dejiyaa oo firfircooni geliyaa xirmo awood registry-ga.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Waxa uu damiyaa awood gaar ah isaga oo aan ka saarin pack-ka. Waa waxtar marka la xaddidayo baaxadda agent-ka ee site la siiyay.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Waxa uu dib u firfircooni geliyaa awood hore loo damiyay.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Waxa uu soo bandhigaa habaynta agent-ka hadda iyo xaaladda isku xirnaanta.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Waxa uu soo bandhigaa hawlihii agent-ka ee dhowaa kana yimid debug log-ka.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Waxay dib u dejisaa xaaladda agent-ka: waxay nadiifisaa CSS la geliyay, ka saartaa CPTs iyo taxonomies uu agent-ku diiwaangeliyay, dib u dejisaa global styles, waxayna faaruqisaa cache-ka ikhtiyaarrada agent-ka. Kama saarto plugin-ka ama settings-kiisa.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 Dhammaan commands-ku waxay ku baxaan `0` marka ay guulaystaan. Exit codes aan eber ahayn:
 

@@ -3,11 +3,11 @@ title: Agjentë të integruar
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agentët e integruar
+# Agentët e integruar {#built-in-agents}
 
 Gratis AI Agent v1.9.0 vjen me pesë agentë të integruar, secili i parakonfiguruar me një grup të fokusuar mjetesh, një system prompt të përshtatur dhe sugjerime fillestare që përputhen me detyra të zakonshme në atë fushë. Kalimi nga një agent te tjetri ndryshon çfarë mund të bëjë asistenti dhe si përgjigjet — pa asnjë konfigurim nga ana juaj. Superdav AI Agent v1.18.0 mund t’u shtojë këtyre rrjedhave të punës mjete të vetëdijshme për oraret, regjistra kujtesash, porta miratimi dhe njoftime SMS kur integrimet përkatëse janë të konfiguruara.
 
-## Çfarë është një agent?
+## Çfarë është një agent? {#what-is-an-agent}
 
 Çdo agent është një profil konfigurimi me emër që kombinon:
 
@@ -15,7 +15,7 @@ Gratis AI Agent v1.9.0 vjen me pesë agentë të integruar, secili i parakonfigu
 - **System prompt** — udhëzime që përcaktojnë tonin, përparësitë dhe kufizimet e agentit
 - **Sugjerimet** — prompt-e të shkruara paraprakisht që shfaqen në ndërfaqen e bisedës për t’ju ndihmuar të nisni shpejt
 
-## Qasja te zgjedhësi i agentit
+## Qasja te zgjedhësi i agentit {#accessing-the-agent-picker}
 
 1. Hapni panelin **Gratis AI Agent** në shiritin anësor të administrimit të WordPress.
 2. Klikoni **ikonën e agentit** në këndin e sipërm majtas të kokës së bisedës (ikona ndryshon për të pasqyruar agentin aktiv).
@@ -24,9 +24,9 @@ Gratis AI Agent v1.9.0 vjen me pesë agentë të integruar, secili i parakonfigu
 
 Mund të ndërroni agentë edhe në mes të bisedës — system prompt i agentit të ri hyn në fuqi nga mesazhi i radhës.
 
-## Pesë agentët e integruar
+## Pesë agentët e integruar {#the-five-built-in-agents}
 
-### Shkrues Përmbajtjeje
+### Shkrues Përmbajtjeje {#content-writer}
 
 **Fokusi:** Krijimi dhe redaktimi i postimeve, faqeve dhe formularëve të kontaktit.
 
@@ -47,7 +47,7 @@ Mund të ndërroni agentë edhe në mes të bisedës — system prompt i agentit
 
 ---
 
-### Ndërtues Sajti
+### Ndërtues Sajti {#site-builder}
 
 **Fokusi:** Krijim i plotë i uebsajtit nga një prompt i vetëm.
 
@@ -70,7 +70,7 @@ Mund të ndërroni agentë edhe në mes të bisedës — system prompt i agentit
 
 ---
 
-### Studio Dizajni
+### Studio Dizajni {#design-studio}
 
 **Fokusi:** Përshtatje vizuale — ngjyra, tipografi, CSS dhe modele blloqesh.
 
@@ -87,7 +87,7 @@ Mund të ndërroni agentë edhe në mes të bisedës — system prompt i agentit
 - *Merr një pamje ekrani të faqes kryesore dhe më thuaj çfarë do të përmirësoje.*
 - *Krijo një model blloku hero të ripërdorshëm me një imazh sfondi me gjerësi të plotë dhe titull të qendërzuar.*
 
-### Menaxher Plugin-esh
+### Menaxher Plugin-esh {#plugin-manager}
 
 **Fokusi:** Zbulimi, instalimi dhe menaxhimi i plugin-eve WordPress.
 
@@ -105,7 +105,7 @@ Mund të ndërroni agentë edhe në mes të bisedës — system prompt i agentit
 
 ---
 
-### Asistent Mbështetjeje
+### Asistent Mbështetjeje {#support-assistant}
 
 **Fokusi:** Përgjigjja ndaj pyetjeve rreth përmbajtjes së sajtit, cilësimeve dhe konfigurimit të WordPress.
 
@@ -124,7 +124,7 @@ Mund të ndërroni agentë edhe në mes të bisedës — system prompt i agentit
 
 ---
 
-## Integrimet e Automatizimit Superdav
+## Integrimet e Automatizimit Superdav {#superdav-automation-integrations}
 
 Kur integrimet e Superdav AI Agent v1.18.0 janë konfiguruar, agjentët e integruar mund të marrin pjesë në rrjedha pune automatizimi më të sigurta dhe të vetëdijshme për orarin:
 
@@ -138,11 +138,11 @@ Rrjedhë pune e rekomanduar: kërkoji agjentit të përgatisë mesazhin ose vepr
 
 ---
 
-## Personalizimi i agjentëve
+## Personalizimi i agjentëve {#customising-agents}
 
 Çdo agjent i integruar mund të zgjerohet ose zëvendësohet përmes filtrit `gratis_ai_agent_agents`.
 
-### Shtimi i një kërkese sistemi të personalizuar te një agjent ekzistues
+### Shtimi i një kërkese sistemi të personalizuar te një agjent ekzistues {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Regjistrimi i një agjenti të ri
+### Regjistrimi i një agjenti të ri {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Agjenti i ri shfaqet në Agent Picker menjëherë pasi filtri të ekzekutohet.
 
-### Heqja e një agjenti të integruar
+### Heqja e një agjenti të integruar {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

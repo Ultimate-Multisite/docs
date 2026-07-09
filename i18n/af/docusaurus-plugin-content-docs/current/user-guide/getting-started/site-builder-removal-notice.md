@@ -3,13 +3,13 @@ title: Verwydering van Site Builder Modus Kennisgewing
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Verwydering van Site Builder-modus
+# Verwydering van Site Builder-modus {#site-builder-mode-removal-notice}
 
 **Site Builder-modus is verwyder in Superdav AI Agent v1.12.0.** As jy Site Builder-modus gebruik het, moet jy migreer na die **Setup Assistant agent** vir tema-skepping en werfopstelling.
 
-## Wat het gebeur?
+## Wat het gebeur? {#what-happened}
 
-### Site Builder-modus (Verouderd)
+### Site Builder-modus (Verouderd) {#site-builder-mode-legacy}
 
 Site Builder-modus was 'n wenner-gebaseerde koppelvlak vir:
 
@@ -18,7 +18,7 @@ Site Builder-modus was 'n wenner-gebaseerde koppelvlak vir:
 - Die kies van 'n tema
 - Die opstel van aanvanklike inhoud
 
-### Wat het dit vervang?
+### Wat het dit vervang? {#what-replaced-it}
 
 Die **Setup Assistant agent** hanteer nou al die Site Builder-funksionaliteit met:
 
@@ -27,15 +27,15 @@ Die **Setup Assistant agent** hanteer nou al die Site Builder-funksionaliteit me
 - Integrasie met Theme Builder onboarding
 - 'n Permanente site_brief geheue vir toekomstige sessies
 
-## As jy Site Builder-modus gebruik het
+## As jy Site Builder-modus gebruik het {#if-you-were-using-site-builder-mode}
 
-### Jou werwe is veilig
+### Jou werwe is veilig {#your-sites-are-safe}
 
 - Bestaande werwe wat met Site Builder-modus geskep is, funksioneer steeds
 - Geen dataverlies of werfonderbreking
 - Jy kan jou werwe normaal bestuur
 
-### Migreer na Setup Assistant Agent
+### Migreer na Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Vir nuwe werfopstelling of tema-veranderinge, gebruik die Setup Assistant agent:
 
@@ -51,7 +51,7 @@ of
 
 Die Setup Assistant agent bied dieselfde funksionaliteit met meer buigsaamheid.
 
-## Vergelyking: Site Builder teenoor Setup Assistant
+## Vergelyking: Site Builder teenoor Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Funksie | Site Builder (Verwyder) | Setup Assistant (Nuut) |
 |---------|------------------------|------------------------|
@@ -62,9 +62,9 @@ Die Setup Assistant agent bied dieselfde funksionaliteit met meer buigsaamheid.
 | Toekomstige sessies | Herhaal opstel | Gebruik gestoorde site_brief |
 | Buigsamheid | Vasgestelde werkvloei | Aanpasbare gesprek |
 
-## Migreer na Setup Assistant Agent
+## Migreer na Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Vir Nuwe Werwe
+### Vir Nuwe Werwe {#for-new-sites}
 
 In plaas daarvan om Site Builder-modus te gebruik:
 
@@ -76,7 +76,7 @@ In plaas daarvan om Site Builder-modus te gebruik:
    - Tema-generasie
    - Aanvanklike konfigurasie
 
-### Vir Bestaande Werwe
+### Vir Bestaande Werwe {#for-existing-sites}
 
 As jy 'n bestaande werf uit Site Builder-modus het:
 
@@ -85,7 +85,7 @@ As jy 'n bestaande werf uit Site Builder-modus het:
 3. Die Setup Assistant agent sal jou help om 'n nuwe tema te skep
 4. Jou werfdata bly onveranderd
 
-### Vir Tema-veranderinge
+### Vir Tema-veranderinge {#for-theme-changes}
 
 In plaas van Site Builder-modus se tema-keuse:
 
@@ -95,9 +95,9 @@ In plaas van Site Builder-modus se tema-keuse:
    - 'n Pasgemaakte tema genereer
    - Dit op jou werf aktiver
 
-## Sleutelverskille
+## Sleutelverskille {#key-differences}
 
-### Site Builder-modus
+### Site Builder-modus {#site-builder-mode}
 
 ```
 1. Kies 'n sjabloon
@@ -106,7 +106,7 @@ In plaas van Site Builder-modus se tema-keuse:
 4. Klaar
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Beskryf die doel van jou werf
@@ -117,36 +117,36 @@ In plaas van Site Builder-modus se tema-keuse:
 6. Site_brief gestoor vir toekomstige sessies
 ```
 
-## Voordele van Setup Assistant Agent
+## Voordele van Setup Assistant Agent {#benefits-of-setup-assistant-agent}
 
-### Meer Buigsam
+### Meer Buigsam {#more-flexible}
 
 - Beskryf jou werf in natuurlike taal
 - Kry pasgemaakte aanbevelings
 - Pas aan aan jou spesifieke behoeftes
 
-### Beter Aanpassing
+### Beter Aanpassing {#better-customization}
 
 - Pasgemaakte tema-generasie
 - Ontwerpstelsel-besluite
 - Permanente ontwerp-tokens
 
-### Permanente Geheue
+### Permanente Geheue {#persistent-memory}
 
 - Jou site_brief word gestoor
 - Toekomstige agents verstaan jou werf
 - Geen behoefte om opstel-inligting te herhaal nie
 
-### Geïntegreerde Werkvloei
+### Geïntegreerde Werkvloei {#integrated-workflow}
 
 - Theme Builder onboarding
 - Design System Aesthetics skill
 - Ability Visibility controls
 - Alles werk saam sonder naat
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Ek kan Site Builder-modus nie vind nie
+### Ek kan Site Builder-modus nie vind nie {#i-cant-find-site-builder-mode}
 
 Site Builder-modus is verwyder. Gebruik die Setup Assistant agent in plaas:
 
@@ -154,7 +154,7 @@ Site Builder-modus is verwyder. Gebruik die Setup Assistant agent in plaas:
 "Help me set up a new site"
 ```
 
-### Ek wil 'n werf van Site Builder herskep
+### Ek wil 'n werf van Site Builder herskep {#i-want-to-recreate-a-site-from-site-builder}
 
 Jy kan dit met die Setup Assistant agent herskep:
 
@@ -163,7 +163,7 @@ Jy kan dit met die Setup Assistant agent herskep:
 3. Die agent sal 'n soortgelyke tema genereer
 4. Jou site_brief sal gestoor word vir toekomstige verwysing
 
-### My bestaande Site Builder-werf werk nie nie
+### My bestaande Site Builder-werf werk nie nie {#my-existing-site-builder-site-isnt-working}
 
 Bestaande werwe wat met Site Builder-modus geskep is, funksioneer steeds. As jy probleme ondervind:
 
@@ -172,7 +172,7 @@ Bestaande werwe wat met Site Builder-modus geskep is, funksioneer steeds. As jy 
 3. Kontroleer WordPress fout-logboeke
 4. Kontak ondersteuning indien probleme aanhou
 
-### Kan ek steeds my ou Site Builder-sjablone gebruik?
+### Kan ek steeds my ou Site Builder-sjablone gebruik? {#can-i-still-use-my-old-site-builder-templates}
 
 Site Builder-sjablone is nie meer beskikbaar nie. Maar:
 
@@ -180,14 +180,14 @@ Site Builder-sjablone is nie meer beskikbaar nie. Maar:
 - Jy kan soortgelyke werwe met die Setup Assistant agent herskep
 - Die Setup Assistant agent bied meer aanpasopties
 
-## Volgende Stappe
+## Volgende Stappe {#next-steps}
 
 1. **Vir nuwe werwe**: Gebruik die Setup Assistant agent
 2. **Vir bestaande werwe**: Hou aan om dit soos is te gebruik
 3. **Vir tema-veranderinge**: Versoek hulp van die Setup Assistant agent
 4. **Vir ontwerpverfynings**: Gebruik die Design System Aesthetics skill
 
-## Verwante Onderwerpe
+## Verwante Onderwerpe {#related-topics}
 
 - **Theme Builder Onboarding**: Geleide opstelling vir pasgemaakte temas
 - **Setup Assistant Agent**: Agent-geleide werfopstelling

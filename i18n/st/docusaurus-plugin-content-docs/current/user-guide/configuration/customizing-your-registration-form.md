@@ -3,13 +3,13 @@ title: Ho Fetola Foromo ea Hao ea Ngoliso
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ho iketsetsa Registration Form ya hao
+# Ho iketsetsa Registration Form ya hao {#customizing-your-registration-form}
 
 Ho etsa hore network ya hao e shebahale e ikgetha ho SaaS tse ding tsohle tse ahilweng hodima platform ya WordPress, Ultimate Multisite e o dumella ho iketsetsa maqephe a hao a ngodiso le ho kena ka karolo ya rona ya **Checkout Forms**.
 
 Le hoja e le tsela e bonolo le e feto-fetohang ya ho leka mekgwa e fapaneng ha o leka ho fetola bareki ba batjha hore e be ba lefang, hangata di sebediswa ho etsa diforomo tsa ngodiso tse ikgethileng. Sengolwa sena se reretswe ho o bontsha hore na o ka etsa seo jwang.
 
-## Maqephe a ho kena le a ngodiso:
+## Maqephe a ho kena le a ngodiso: {#login-and-registration-pages}
 
 Ha Ultimate Multisite e kenngwa, e iketsetsa maqephe a ikgethileng a ho kena le a ngodiso sebakeng sa hao sa sehlooho. O ka fetola maqephe ana a kamehla neng kapa neng ka ho ya leqepheng la hao la **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Jwale, ha re boneng dikgetho tse ding tse ntseng di amana le tshebetso ya ho ken
 
 Mme ke tsona dikgetho tsohle tse amanang le ho kena le ngodiso tseo o ka di iketsetsang! O se ke wa lebala ho boloka disetting tsa hao ka mora hore o qete ho di hlophisa.
 
-## Ho sebedisa diforomo tse ngata tsa ngodiso:
+## Ho sebedisa diforomo tse ngata tsa ngodiso: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 e fana ka mohlophisi wa checkout form o o dumellang ho etsa diforomo tse ngata kamoo o batlang, ka fields tse fapaneng, dihlahiswa tse fanwang, jj.
 
@@ -69,7 +69,7 @@ Ka tsela e nngwe, o ka hlophisa kapa wa kopitsa diforomo tseo o seng o na le tso
 
 Haeba o kgetha mohato o le mong kapa mehato e mengata, checkout form e tla be e se e tlatsitswe pele ka mehato ya motheo hore e sebetse. Jwale, haeba o batla, o ka eketsa mehato e meng ho yona.
 
-### Ho hlophisa Checkout Form:
+### Ho hlophisa Checkout Form: {#editing-a-checkout-form}
 
 Jwaloka ha re boletse pejana, o ka etsa checkout forms bakeng sa merero e fapaneng. Mohlaleng ona re tla sebetsa foromong ya ngodiso.
 
@@ -131,11 +131,11 @@ Ho fumana shortcode ea foromo ea hao tobetsa **Hlahisa Shortcode** ebe u kopitsa
 
 _**Tlhokomeliso:** U tla hloka ho eketsa shortcode ena leqepheng la hao la ngoliso e le hore foromo ena ea ho lefella e eketsoe ho lona._
 
-## Ho khetha esale pele lihlahisoa le templates ka lipharamitha tsa URL:
+## Ho khetha esale pele lihlahisoa le templates ka lipharamitha tsa URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Haeba u batla ho etsa litafole tsa litheko tse ikhethileng bakeng sa lihlahisoa tsa hao le ho khetha esale pele foromong ea ho lefella sehlahisoa kapa template eo moreki oa hao a e khethang tafoleng ea hao ea litheko kapa leqepheng la templates, u ka sebelisa lipharamitha tsa URL bakeng sa sena.
 
-### **Bakeng sa meralo:**
+### **Bakeng sa meralo:** {#for-plans}
 
 E-ea ho **Ultimate Multisite > Lihlahisoa > Khetha moralo**. U lokela ho bona konopo ea **Tobetsa ho kopitsa Sehokelo se ka Arolelanoang** ka holimo leqepheng. Ena ke sehokelo seo u ka se sebelisang ho khetha esale pele moralo ona o itseng foromong ea hao ea ho lefella.
 
@@ -143,7 +143,7 @@ E-ea ho **Ultimate Multisite > Lihlahisoa > Khetha moralo**. U lokela ho bona ko
 
 Hlokomela hore sehokelo sena se ka arolelanoang se sebetsa feela bakeng sa **Meralo**. U ke ke ua sebelisa lihokelo tse ka arolelanoang bakeng sa liphutheloana kapa litšebeletso.
 
-### Bakeng sa templates:
+### Bakeng sa templates: {#for-templates}
 
 Haeba u batla ho khetha esale pele templates tsa site foromong ea hao ea ho lefella, u ka sebelisa pharamitha: **?template_id=X** ho URL ea leqephe la hao la ngoliso. "X" e lokela ho nkeloa sebaka ke **nomoro ea ID ea site template**. Ho fumana nomoro ena, e-ea ho **Ultimate Multisite > Sites**.
 

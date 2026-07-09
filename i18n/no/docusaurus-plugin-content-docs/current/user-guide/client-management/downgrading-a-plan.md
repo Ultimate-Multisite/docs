@@ -3,13 +3,13 @@ title: Nedgradering av et abonnement
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Nedgradere et abonnement (v2)
+# Nedgradere et abonnement (v2) {#downgrading-a-plan-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
 
 Å nedgradere en plan eller et abonnement er en vanlig handling kundene dine kan gjøre hvis de har et begrenset budsjett, eller hvis de har bestemt at de ikke trenger mange ressurser for å drive undersiden sin.
 
-## Slik nedgraderer du et abonnement
+## Slik nedgraderer du et abonnement {#how-to-downgrade-a-plan}
 
 Kundene dine kan nedgradere abonnementet sitt når som helst ved å logge inn på admin-Dashboard for undersiden sin og klikke på **Endre** under Account-siden sin.
 
@@ -25,7 +25,7 @@ For å fortsette trenger brukeren bare å klikke på **Fullfør betaling**-knapp
 
 ![Account-side som viser banner for ventende medlemskapsendring](/img/account-page/pending-change.png)
 
-### Hva skjer når en bruker nedgraderer abonnementet sitt
+### Hva skjer når en bruker nedgraderer abonnementet sitt {#what-happens-when-a-user-downgrades-their-plan}
 
 Det er viktig å merke seg at nedgradering av abonnementet ikke endrer den eksisterende konfigurasjonen på brukerens underside.
 
@@ -37,7 +37,7 @@ For innleggene som overskrider grensen satt for abonnementet, har du 3 ulike alt
 
 ![Siden Nettverksadmininnstillinger Nettsteder som viser alternativer for atferd når innleggsgrensen overskrides](/img/account-page/settings-sites-post-limit.png)
 
-### Hva skjer med betalingen
+### Hva skjer med betalingen {#what-happens-to-the-payment}
 
 I versjon 2.0 kreves det ikke lenger noen justeringer av betalingen når det gjelder forholdsmessig beregning.
 

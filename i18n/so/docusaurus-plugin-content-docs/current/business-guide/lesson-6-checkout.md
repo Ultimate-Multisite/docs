@@ -3,15 +3,15 @@ title: 'Casharka 6: Khibradda Isdiiwaangelinta'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Casharka 6: Khibradda Isdiiwaangelinta
+# Casharka 6: Khibradda Isdiiwaangelinta {#lesson-6-the-signup-experience}
 
 Socodka bixintu waa halka xiisuhu isu beddelo dakhli. Hab isdiiwaangelin oo wareer leh ama guud ah wuxuu lumiyaa macaamiil. Socod u gaar ah niche-ka oo ku hadla luqaddooda una muuqda mid fudud ayaa iyaga u beddela macaamiil.
 
-## Halkii Aan Ka Joognay
+## Halkii Aan Ka Joognay {#where-we-left-off}
 
 FitSite waxay leedahay naqshado-diyaarsan iyo qorshayaal la habeeyey. Hadda waxaan dhisaynaa khibradda diiwaangelinta iyo bixinta ee milkiilayaasha istuudiyaha jimicsiga u beddesha macaamiil lacag bixiya.
 
-## Fahamka Socodka Diiwaangelinta
+## Fahamka Socodka Diiwaangelinta {#understanding-the-registration-flow}
 
 Foomamka bixinta ee Ultimate Multisite waa foomam tallaabooyin badan leh oo si buuxda loo habayn karo. FitSite, waxaan rabnaa socod:
 
@@ -21,11 +21,11 @@ Foomamka bixinta ee Ultimate Multisite waa foomam tallaabooyin badan leh oo si b
 
 Eeg [Socodka Diiwaangelinta](/user-guide/configuration/the-registration-flow) si aad u hesho tixraaca farsamo ee buuxa.
 
-## Naqshadaynta Bixinta FitSite
+## Naqshadaynta Bixinta FitSite {#designing-the-fitsite-checkout}
 
 U gudub **Ultimate Multisite > Foomamka Bixinta** oo samee foom cusub.
 
-### Tallaabada 1: Xulashada Qorshaha
+### Tallaabada 1: Xulashada Qorshaha {#step-1-plan-selection}
 
 Waxa ugu horreeya ee milkiilaha istuudiyaha jimicsigu arko waa inuu noqdaa qorshayaasha, iyadoo lagu soo bandhigayo erayo ay fahmayaan.
 
@@ -37,7 +37,7 @@ Waxa ugu horreeya ee milkiilaha istuudiyaha jimicsigu arko waa inuu noqdaa qorsh
 "1 GB storage" means nothing to a gym owner. "Everything you need for a professional studio website" means everything. Write plan descriptions in your customer's language.
 :::
 
-### Tallaabada 2: Xulashada Naqshadda-Diyaarsan
+### Tallaabada 2: Xulashada Naqshadda-Diyaarsan {#step-2-template-selection}
 
 Kadib marka uu doorto qorshe, macmiilku wuxuu doortaa naqshadda-diyaarsan ee uu ka bilaabayo.
 
@@ -45,7 +45,7 @@ Kadib marka uu doorto qorshe, macmiilku wuxuu doortaa naqshadda-diyaarsan ee uu 
 - Naqshadaha-diyaarsan ee la heli karo waxaa lagu shaandheeyaa qorshaha ay doorteen (lagu habeeyey Casharka 5)
 - Naqshad-diyaarsan kastaa waa inay leedahay sawir hordhac ah oo muujinaya naqshad u gaar ah jimicsiga
 
-### Tallaabada 3: Abuurista Account
+### Tallaabada 3: Abuurista Account {#step-3-account-creation}
 
 Tan ka dhig mid kooban. Ururi oo keliya:
 
@@ -55,27 +55,27 @@ Tan ka dhig mid kooban. Ururi oo keliya:
 
 Ha weydiin macluumaad aadan u baahnayn marka la isdiiwaangelinayo. Beer kasta oo dheeraad ah waxay yareysaa beddelka macaamiisha.
 
-### Tallaabada 4: Dejinta Goobta
+### Tallaabada 4: Dejinta Goobta {#step-4-site-setup}
 
 - **Cinwaanka goobta**: Hore uga buuxi magaca istuudiyaha ee lagu geliyey Tallaabada 3
 - **URL-ka goobta**: Si toos ah uga samee magaca istuudiyaha (tusaale, `ironworks.fitsite.com`)
 
-### Tallaabada 5: Bixinta
+### Tallaabada 5: Bixinta {#step-5-payment}
 
 - Ku dar beerta **Bixinta**
 - Habeey gateway-gaaga bixinta ([Stripe](/user-guide/payment-gateways/stripe) ayaa lagula talinayaa biilasha subscription)
 - Haddii aad ku abuurtay order bumps Casharka 5, ku dar beer **Order Bump** ka hor tallaabada bixinta
 
-### Tallaabada 6: Xaqiijinta
+### Tallaabada 6: Xaqiijinta {#step-6-confirmation}
 
 - Ku habeey fariinta xaqiijinta luqad u gaar ah jimicsiga
 - Tusaale: "Goobta istuudiyahaaga jimicsiga waa la abuurayaa. Waxaa laguu wareejin doonaa goobtaada cusub dhowr ilbiriqsi gudahood."
 
-## Ku Darista Beddelaha Xulashada Muddada
+## Ku Darista Beddelaha Xulashada Muddada {#adding-a-period-selection-toggle}
 
 Haddii aad dejisay kala-duwanaansho qiimeyn ah qorshayaashaada (bille vs. sanadle), ku dar beer **Xulashada Muddada** foomka bixinta si macaamiishu ugu beddeli karaan muddada biilasha. Eeg [Foomamka Bixinta](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) si aad u hesho tilmaamaha.
 
-## Habaynta Bixinta
+## Habaynta Bixinta {#configuring-payment}
 
 Haddii aadan weli dejin gateway bixineed:
 
@@ -85,7 +85,7 @@ Haddii aadan weli dejin gateway bixineed:
 
 Eeg [Lacag Helista](/user-guide/payment-gateways/getting-paid) si aad faahfaahin uga hesho sida lacag-bixinnadu ugu qulqulaan account-kaaga.
 
-## Tijaabinta Socodka
+## Tijaabinta Socodka {#testing-the-flow}
 
 Kahor intaadan sii socon, dhammaystir isdiiwaangelin tijaabo ah oo buuxda:
 
@@ -105,7 +105,7 @@ Hubi in:
 - [ ] Macmiilku ku dago goob shaqaynaysa oo leh naqshadda-diyaarsan ee la doortay
 - [ ] Iimayllada xaqiijintu isticmaalaan luqad u gaar ah jimicsiga
 
-## Shabakadda FitSite Ilaa Hadda
+## Shabakadda FitSite Ilaa Hadda {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Waxa Aan Ku Dhisnay Casharkan
+## Waxa Aan Ku Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Foom bixineed tallaabooyin badan leh** oo loo habeeyey milkiilayaasha istuudiyaha jimicsiga
 - **Luqad u gaar ah niche-ka** inta lagu jiro socodka isdiiwaangelinta

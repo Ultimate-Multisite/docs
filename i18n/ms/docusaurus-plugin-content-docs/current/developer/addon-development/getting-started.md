@@ -3,9 +3,9 @@ title: Bermula dengan Pembangunan Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Pembangunan Addon
+# Pembangunan Addon {#addon-development}
 
-## Struktur Addon
+## Struktur Addon {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Templat Fail Addon Utama
+## Templat Fail Addon Utama {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Contoh Model Tersuai
+## Contoh Model Tersuai {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrasi Halaman Admin
+## Integrasi Halaman Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Menguji Addon Anda
+## Menguji Addon Anda {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## titik sambungan v2.13.0
+## titik sambungan v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 menambah beberapa titik sambungan yang berguna untuk addon yang berintegrasi dengan tenant berdaulat, domain checkout, atau automasi DNS penyedia hos.
 
-### URL pengurusan SSO dan tapak utama
+### URL pengurusan SSO dan tapak utama {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Domain asas borang checkout
+### Domain asas borang checkout {#checkout-form-base-domains}
 
 Gunakan `wu_checkout_form_base_domains` apabila addon anda menyediakan domain asas kongsi tambahan yang sepatutnya berkelakuan seperti domain **URL Tapak** borang checkout dan bukannya pemetaan tersuai bagi setiap tapak:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite menormalkan hos ini dan melangkau rekod domain dipetakan automatik bagi setiap tapak untuknya.
 
-### Penciptaan rekod domain automatik
+### Penciptaan rekod domain automatik {#automatic-domain-record-creation}
 
 Gunakan `wu_should_create_domain_record_for_site` apabila addon anda perlu menyekat atau menangguhkan penciptaan rekod domain automatik untuk tapak yang baru dicipta:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Integrasi penyedia hos yang mendengar `wu_add_subdomain` boleh mencipta rekod DNS di pihak penyedia apabila tapak dicipta. Jika tiada integrasi didaftarkan untuk tindakan itu, Ultimate Multisite melangkau kerja latar belakang yang kosong.
 
-## Langkah Seterusnya
+## Langkah Seterusnya {#next-steps}
 
 - Semak [Rujukan Hooks](/developer/hooks) untuk tindakan dan penapis yang tersedia
 - Semak [Gambaran Keseluruhan REST API](/developer/rest-api/overview) untuk integrasi API

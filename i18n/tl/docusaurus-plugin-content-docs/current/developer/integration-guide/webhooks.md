@@ -3,11 +3,11 @@ title: Pangangasiwa ng Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Pangangasiwa ng Webhook
+# Pangangasiwa ng Webhook {#webhook-handling}
 
 Gumawa ng mga pasadyang endpoint ng webhook upang makatanggap ng mga kaganapan mula sa mga panlabas na serbisyo at i-sync ang datos sa Ultimate Multisite.
 
-## Pasadyang Endpoint ng Webhook
+## Pasadyang Endpoint ng Webhook {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Mga Pagsasaalang-alang sa Seguridad
+## Mga Pagsasaalang-alang sa Seguridad {#security-considerations}
 
 - Palaging beripikahin ang mga lagda ng webhook gamit ang HMAC o isang pinagsasaluhang lihim
 - Gumamit ng `permission_callback` sa iyong REST route — huwag kailanman itakda ito sa `__return_true` sa production

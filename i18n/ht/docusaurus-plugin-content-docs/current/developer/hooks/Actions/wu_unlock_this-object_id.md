@@ -4,13 +4,13 @@ title: 'Aksyon - wu_unlock_{$this->object_id}'
 sidebar_label: 'wu_unlock_{$this->object_id}'
 _i18n_hash: 99683dddc59912e6cb4cb0e3c11d1591
 ---
-# Action: wu_unlock_\{$this->object_id\}
+# Action: wu_unlock_\{$this->object_id\} {#action-wuunlockthis-objectid}
 
 Pèmèt devlopè plugin yo ajoute aksyon nan pwosesis deblokaj la.
 
-### Depi
+### Depi {#since}
 
 - 1.8.2
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/admin-pages/class-edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-edit-admin-page.php#L182) nan liy 182

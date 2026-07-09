@@ -3,13 +3,13 @@ title: Водич за интеграција
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Водич за интеграција
+# Водич за интеграција {#integration-guide}
 
 Овој водич ги опфаќа вообичаените обрасци за интеграција со Ultimate Multisite, вклучувајќи поврзување со надворешни услуги, градење сопствени payment gateways и ракување со webhooks.
 
 За изолирана tenant инфраструктура, видете [Multi-Tenancy интеграција](./multi-tenancy) за sovereign tenant bootstrap, проверка на миграција, SSO и насоки за teardown.
 
-## CRM интеграција
+## CRM интеграција {#crm-integration}
 
 Синхронизирајте ги податоците за клиенти со вашиот CRM кога ќе се регистрираат нови клиенти:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Интеграција со аналитика
+## Интеграција со аналитика {#analytics-integration}
 
 Следете клучни деловни настани низ животниот циклус на клиентот:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Следни чекори
+## Следни чекори {#next-steps}
 
 - [Развој на сопствен Gateway](./custom-gateway) — Изградете сопствен payment gateway
 - [Ракување со Webhook](./webhooks) — Создајте сопствени webhook endpoints

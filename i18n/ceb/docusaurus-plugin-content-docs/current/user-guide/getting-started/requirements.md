@@ -3,11 +3,11 @@ title: Mga Kinahanglanon
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Mga Kinahanglanon sa Ultimate Multisite
+# Mga Kinahanglanon sa Ultimate Multisite {#ultimate-multisite-requirements}
 
 Ang una nga butang nga mahimong pangutana nimo sa dili pa mogasto para sa Ultimate Multisite kay unsa ang mga kinahanglanon aron ma-run nato ang plugin. Sa maayo, gamay ra gyud ang basic requirements para sa pag-run og Ultimate Multisite: usa ka **domain name**, usa ka maayong **hosting provider** ug usa ka WordPress **Multisite** installation. Mao na lang ang kinahanglan nimo!
 
-## Domain Name
+## Domain Name {#domain-name}
 
 Una, atong hisgutan ang domain name.
 
@@ -17,7 +17,7 @@ Ang among plugin naghatag og subscription services, pag-collect og bayad, checko
 
 Bisan unsa man imong niche, mahimong ma-manage gamit ang among plugin basta nagbaligya ka og mga website isip serbisyo! Siguraduhon nga mopili ka og domain name nga tugma sa imong business plan.
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 Karon nga naa kay usa ka nindot nga domain name nga nagrepresentar sa imong niche ug negosyo, kinahanglan nimo magpili og maayong web hosting company aron i-host ang imong network uban sa Ultimate Multisite. Naa pipila ka maayong mga opsyon sa merkado. Ang ubang hosting provider maayo nga mag-integrate uban sa Ultimate Multisite, nga mahimong usa ka importante nga butang depende kung unsa ang imong plano nga himoon.
 
@@ -25,7 +25,7 @@ Ang Ultimate Multisite mahimo gamiton sa bisan unsang hosting provider. Ang nag-
 
 Kon bahin sa server specifications, walay espesipikong pormula kay kini magdepende sa mga features ug functions nga imong i-offer ug sa gidak-on sa imong network. Ang shared hosting mahimong maayo nga pagsugod, apan samtang nagsugod ang imong network nga molambo, siguro kinahanglan nimo og dedicated VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Karon, atong hisgutan gamay bahin sa usa ka WordPress Multisite installation.
 

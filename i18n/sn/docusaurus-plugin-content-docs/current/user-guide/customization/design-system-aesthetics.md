@@ -3,11 +3,11 @@ title: Kufaraira Kuti Kune Mufanzo Wechinhu
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kufungur Aesthetics ya Design System Skill
+# Kufungur Aesthetics ya Design System Skill {#design-system-aesthetics-skill}
 
 **Skill ya Design System Aesthetics** ndiyo njia inoshandiswa kuti urefine chine chine chako cha zvinovimba. Inokubatsira kuita zvigadzirwa zvinhu zvakakosha nezve typography, rangi, spacing (kufarera), uye motion tokens anozvinoreva design system yako.
 
-## Design System Aesthetics ndiyo?
+## Design System Aesthetics ndiyo? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics ndiyo skill inoshandiswa nekuita zvinhu zvakaita kuti:
 
@@ -20,9 +20,9 @@ Design System Aesthetics ndiyo skill inoshandiswa nekuita zvinhu zvakaita kuti:
 
 Ndezvinhu izvi inoshandiswa mufile `theme.json` ya theme yako, zvichigadzira system yakasimba yekuti zvizvo zvine chine chine.
 
-## Ndiwe nezvinhu zvinoshandiswa Design System Aesthetics?
+## Ndiwe nezvinhu zvinoshandiswa Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Consistency (Kufanana)
+### Consistency (Kufanana) {#consistency}
 
 Design system inonzwisisa kuti:
 
@@ -31,7 +31,7 @@ Design system inonzwisisa kuti:
 - Spacing inoshandiswa nzira yakasimba (predictable pattern)
 - Animations dzinokwanisa kuone kuti dzinotsanana
 
-### Efficiency (Kufamba nekuita zvinhu zvakanyanya)
+### Efficiency (Kufamba nekuita zvinhu zvakanyanya) {#efficiency}
 
 Panguva unoziva design decisions page-by-page, unogona:
 
@@ -39,7 +39,7 @@ Panguva unoziva design decisions page-by-page, unogona:
 - Kuita zvinhu zvose neva
 - Kutaura zvakare nekubata chine chine chete (changing one value) kuti utore update yese.
 
-### Flexibility (Kufamba nekuwana zvinokwanisa)
+### Flexibility (Kufamba nekuwana zvinokwanisa) {#flexibility}
 
 Unogona:
 
@@ -47,9 +47,9 @@ Unogona:
 - Kuti unzire (experiment) nemazano akasiyana-siyana
 - Kuita kuti brand yako iweone yakasimba sezvo inobva kutaura.
 
-## Kufunguro Kwe Design System Aesthetics
+## Kufunguro Kwe Design System Aesthetics {#triggering-the-design-system-aesthetics-skill}
 
-### Dinguva 1: Typography
+### Dinguva 1: Typography {#manual-activation}
 
 Mufundisi anakuulinda nezvinhu zvinotora font yako:
 
@@ -79,7 +79,7 @@ Mufundisi anotsanangura izvi:
 - **Weight scale**: Weights dzefont (regular, medium, bold, nheshe)
 - **Line height**: Kufamba pakati pe lines kune kuratidza zvakanaka
 
-### Dinguva 2: Color Palette
+### Dinguva 2: Color Palette {#automatic-suggestions}
 
 ```
 Tiri kuita palette yako ye colors.
@@ -127,7 +127,7 @@ Mudzidzisi anodefira spacing tokens:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Specific values kuti padding, margin, gap dzine kuita
 
-### Step 4: Borders ne Shadows
+### Step 4: Borders ne Shadows {#the-design-system-aesthetics-process}
 
 ```
 Kuti kunge kuone kudzokera uye kukwira:
@@ -150,7 +150,7 @@ Mudzidzisi anokera:
 - Shadow tokens kuti elevation levels zvinhu zviri kuita
 - Border width tokens
 
-### Step 5: Motion ne Animation
+### Step 5: Motion ne Animation {#step-1-typography}
 
 ```
 Kuti site yako ine kunge kuva sei kana inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge in

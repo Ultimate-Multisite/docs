@@ -3,7 +3,7 @@ title: Incompatibilitates notae
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Incompatibilitates noti omnis Pluginum aliorum
+# Incompatibilitates noti omnis Pluginum aliorum {#known-incompatibilities-with-other-plugins}
 
 Post installation et activation Ultimate Multisite, potes incidere in quaestionibus causa incompatibilitatum non adhibita cum aliis pluginibus.
 

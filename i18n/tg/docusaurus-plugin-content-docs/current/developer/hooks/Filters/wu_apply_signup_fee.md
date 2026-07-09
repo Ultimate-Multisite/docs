@@ -4,11 +4,11 @@ title: Филтр - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Филтр: wu_apply_signup_fee
+# Филтр: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Филтр мекунад, ки оё ҳаққи сабтином татбиқ шавад ё не.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 | $product | `object` | Объекти сатҳи узвият. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Объекти сабтином. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 3.1
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) дар сатри 1769 муайян шудааст

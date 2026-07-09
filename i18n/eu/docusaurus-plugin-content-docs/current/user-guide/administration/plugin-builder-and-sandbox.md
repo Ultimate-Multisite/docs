@@ -3,11 +3,11 @@ title: Plugin Builder eta Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 introducea **Plugin Builder & Sandbox System**, ze leletzen AI assistantu WordPress plugins sortu, aktibatu eta erregulatu iruzteko network-an — guztiz segurua, izolatu sandbox erabiliz.
 
-## Deskuntzua
+## Deskuntzua {#overview}
 
 Ze Plugin Builder-ek leletzen AI assistantu iradokizun natural language-an WordPress plugins sortzeko gaitasuna du. Sortutako pluginsak bidez ikustea da, datu-gordetan ematen da eta aktibatu egiten da sandbox layeraren belurra ere, orrekiko situailean erabiliz lehen da bere eragiketa direla live site funtzioari.
 
@@ -17,7 +17,7 @@ Erabiltzeko aukerak hauek dira:
 - WordPress hooks edo custom post types behar dituzten funtunaldeak prototipatu.
 - Batch operazioetara iruzteko laburrak automation scripts sortzea.
 
-## AI bidez Plugin Sortzea
+## AI bidez Plugin Sortzea {#generating-a-plugin-via-ai}
 
 Plugin sortzeko, Gratis AI Agent chat interface-a ireki eta zer behar duzu esaltzea. Adibidez:
 
@@ -32,7 +32,7 @@ AI-ak hauek egin dezake:
 
 Aktibatu aurretik, beste jarduerak egin dezakezu horrek aldatzeko eskatzen da.
 
-## Sandbox Aktibazioa
+## Sandbox Aktibazioa {#sandbox-activation}
 
 Sandboxan sortutako plugin bat aktibatu ez da bere live networkan aktibatu. Sandbox-ak:
 
@@ -48,7 +48,7 @@ Plugin bat sandboxan aktibatu dezakezu, AI chat erantzunaren **Activate in Sandb
 
 Estatuaren mezu bat adierazten du, zer aktivazioa onartu nahi duela edo ez duela. Ez onartu dela, error loga da chat thread-an erakusten da.
 
-## Generatutako Plugin-ek Eskaintzea (Managing Generated Plugins)
+## Generatutako Plugin-ek Eskaintzea (Managing Generated Plugins) {#managing-generated-plugins}
 
 Generatutako plugin-ek listatzen da **Gratis AI Agent → Plugin Builder → Manage Plugins**-ean. Horrekik ez duzu:
 
@@ -64,7 +64,7 @@ Generatutako plugin-ek listatzen da **Gratis AI Agent → Plugin Builder → Man
 **Install on network** plugin-a live WordPress multisite-an (network) eskatzen da. Aurrera jartelako plugin kodea begiratu. Gratis AI Agent-ek live instalazioa amaitzen aurretik konformitatea gerratu duela ematen du.
 :::
 
-## Plugin-a Network-an Eskaintzea (Installing a Generated Plugin on the Network)
+## Plugin-a Network-an Eskaintzea (Installing a Generated Plugin on the Network) {#installing-a-generated-plugin-on-the-network}
 
 Sandbox-an plugin bat onartu duenean, live network-an eskatzen dituzte:
 
@@ -78,7 +78,7 @@ Alternatiboa, chat interface-aren slash command-a erabilizite:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin Updateak (Plugin Updates)
+## Plugin Updateak (Plugin Updates) {#plugin-updates}
 
 Generatutako plugin bat update egin nahi duenean, berria jarduerarekin AI asistentiaren daura aldatu dena:
 
@@ -86,7 +86,7 @@ Generatutako plugin bat update egin nahi duenean, berria jarduerarekin AI asiste
 
 AI-ek berria bertsio bat generatzen du, eta hori sandbox-an oraindian dagoen bertsioarekin pareatu da. Diff-a begiratu eta update-a aplikatatu aurretik konformatu duela.
 
-## HookScanner Integrazioa
+## HookScanner Integrazioa {#hookscanner-integration}
 
 Plugin Builder-ek, generatu plugin guztiek ezarritutako hooks eta filters-ek analisia egin dezake **HookScanner** bat integratuta. HookScanner-ren outputa chat erantzunekoan erakusten da eta hauek barne dago:
 
@@ -96,7 +96,7 @@ Plugin Builder-ek, generatu plugin guztiek ezarritutako hooks eta filters-ek ana
 
 Hau laguntzen duzu plugin bat aktibatu munduan aurretik bere beteera jakretara.
 
-## Segurantzaren Pertabilitateak
+## Segurantzaren Pertabilitateak {#security-considerations}
 
 - Generatu plugin-ek manuel instalatutako plugin-ekatik errepiketa da eta standard WordPress plugin management screen-eko ez dago erabiliz, zehatz instalatzen duzu networkan.
 - Sandbox-ek direktoriak yazpen prozesuaren (path validation) erabiliz, plugin file-ek yazpen aurrera egiten duen problemaa prevenitzatzen du.

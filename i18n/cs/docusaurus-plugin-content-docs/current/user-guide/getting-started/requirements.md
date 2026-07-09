@@ -3,11 +3,11 @@ title: Požadavky
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Požadavky na Ultimate Multisite
+# Požadavky na Ultimate Multisite {#ultimate-multisite-requirements}
 
 První věc, na kterou se pravděpodobně zeptáte před zakoupením Ultimate Multisite, jsou požadavky pro provoz našeho pluginu. Naštěstí existuje jen několik základních požadavků pro provoz Ultimate Multisite: **doménové jméno**, dobrý **poskytovatel hostingu** a instalace WordPress **Multisite**. To je vše, co potřebujete!
 
-## Doménové jméno
+## Doménové jméno {#domain-name}
 
 Nejprve si promluvme o doménovém jménu.
 
@@ -17,7 +17,7 @@ Náš plugin poskytuje předplatné služby, zpracování plateb, pokladní form
 
 Jakoukoliv oblast, kterou si vyberete, můžete spravovat pomocí našeho pluginu, pokud prodáváte webové stránky jako službu! Ujistěte se, že zvolíte doménové jméno, které odpovídá vašemu obchodnímu plánu.
 
-## Poskytovatel hostingu
+## Poskytovatel hostingu {#hosting-provider}
 
 Nyní, když máte chytlavé doménové jméno reprezentující vaši oblast působení a podnikání, budete potřebovat vybrat dobrého poskytovatele webhostingu pro hostování vaší sítě s Ultimate Multisite. Na trhu existuje několik dobrých možností. Někteří poskytovatelé hostingu se dobře integrují s Ultimate Multisite, což může být rozhodující faktor v závislosti na tom, co plánujete vytvořit.
 
@@ -25,7 +25,7 @@ Ultimate Multisite by měl fungovat u jakéhokoliv poskytovatele hostingu. Jedin
 
 Pokud jde o specifikace serveru, neexistuje žádný konkrétní vzorec, protože to bude záviset na funkcích a možnostech, které budete nabízet, a na velikosti vaší sítě. Sdílený hosting může být dobrý začátek, ale jakmile vaše síť začne růst, pravděpodobně budete potřebovat dedikovaný VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nyní si povíme něco o instalaci WordPress Multisite.
 

@@ -3,11 +3,11 @@ title: Fluxu migrazioa soberanoa
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migrazio Fluxuua
+# Sovereign Migrazio Fluxuua {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 has añade gate-akizketa migrazioa egindura standard subsite bat sozin txartzeen tenent infrastrukturako.
 
-## Aurrera egin baino lehen
+## Aurrera egin baino lehen {#before-you-start}
 
 Ezin daite ziurtatu que has:
 
@@ -17,7 +17,7 @@ Ezin daite ziurtatu que has:
 - Database host binding bat duan destino erabilera aurkitzen duena.
 - Network-eratik WP-CLI komandak jarri dezake.
 
-## Fluxuua hautatutakoa
+## Fluxuua hautatutakoa {#recommended-workflow}
 
 1. Destino tenant databasea eta filesystem-ea aurretik tratatu.
 2. Tenant isolation heniaren emate edo aktualizatu.
@@ -28,7 +28,7 @@ Ezin daite ziurtatu que has:
 7. SSO-rekin tenantra bisitu.
 8. Zein DNS edo routing aldatu, zehaztza pasatu ondoren.
 
-## Zehaztzeko gate-ak
+## Zehaztzeko gate-ak {#verification-gates}
 
 Zehaztzeko fluxuua migrazioa luetan ikusten du:
 
@@ -40,6 +40,6 @@ Zehaztzeko fluxuua migrazioa luetan ikusten du:
 
 Zehaztzeko erantzunak pre-launch blokioak (aurrera egin baino lehen ezarritzeak) tratatu. Database, user, queue edo routing problemaa jasoa, eta ondoren zehaztza berri bizitzaren aurretik tenantra iragatu.
 
-## Lehen produktion bisita
+## Lehen produktion bisita {#first-production-visit}
 
 Zehaztza pasatuta, site management screen-etik **Visit (SSO)** erabili lehen admin bisitua. Horrek tenant routing-a, SSO token-ek tratatzea, origin pinning-a eta tenant-side user provisioning-ak kontrolatu baten urtsu egiten du.

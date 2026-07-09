@@ -3,7 +3,7 @@ title: Országlista
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Az Ultimate Multisite országlista átrendezése
+# Az Ultimate Multisite országlista átrendezése {#re-ordering-the-ultimate-multisite-country-list}
 
 Az országválasztó legördülő lista az országnevek angol változatai alapján, ábécé sorrendben jelenik meg. Ez azt jelenti, hogy előfordulhat, hogy a céged vagy a legtöbb ügyfeled országa valahol a hosszú lista közepén rejtőzik.
 

@@ -4,11 +4,11 @@ title: Saringan - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Mbalèkaké jeneng apik saka sub-divisi administratif negara.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Mbalèkaké jeneng apik saka sub-divisi administratif negara.
 | $ucwords | `bool` | yèn kita nggawé tembung dadi huruf gedhé. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance saka class saiki. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.11
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ing baris 250
 
 
-## Balènan
+## Balènan {#returns}
 Jeneng divisi sing wis diowahi.

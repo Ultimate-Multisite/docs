@@ -4,11 +4,11 @@ title: Filtër - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Filtron datën e llogaritur të skadimit që do të caktohet pas rinovimit.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Lloji | Përshkrimi |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtron datën e llogaritur të skadimit që do të caktohet pas rinovimit.
 | $membership_id | `int` | ID-ja e anëtarësimit. |
 | $membership | `\Membership` | Objekti i anëtarësimit. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.0.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) në rreshtin 2192

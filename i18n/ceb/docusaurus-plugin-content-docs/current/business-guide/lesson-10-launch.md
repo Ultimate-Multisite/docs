@@ -3,19 +3,19 @@ title: 'Leksyon 10: Adlaw sa Paglunsad'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day (Adlaw sa Paglunsad)
+# Lesson 10: Launch Day (Adlaw sa Paglunsad) {#lesson-10-launch-day}
 
 Naka-build na ang tanan. Sa dili pa nimo buksan ang pultahan, kining leksyon naggiya kanimo pinaagi sa pre-launch checklist aron masiguro nga walay nasira, nawala, o makapahiya.
 
-## Where We Left Off (Diin Kita Nagpahunong)
+## Where We Left Off (Diin Kita Nagpahunong) {#where-we-left-off}
 
 Ang FitSite adunay mga templates, plans, checkout, branding, onboarding, ug pricing nga naka-configure na. Karon, i-verify nato ang tanan aron masiguro nga naglihok kini og maayo ug andam na ta mo-go live.
 
-## Pre-Launch Checklist (Checklist sa Pag-andam)
+## Pre-Launch Checklist (Checklist sa Pag-andam) {#pre-launch-checklist}
 
 Pag-review sa matag item. Ayaw kalimti bisan usa.
 
-### Platform Infrastructure (Imprastraktura sa Plataporma)
+### Platform Infrastructure (Imprastraktura sa Plataporma) {#platform-infrastructure}
 
 - [ ] Stable ba ang hosting ug maayo pa ka performance niini pag daghan og load
 - [ ] Aktibo ba ang Wildcard SSL ug tanang subdomains nagserbisyo pinaagi sa HTTPS
@@ -23,7 +23,7 @@ Pag-review sa matag item. Ayaw kalimti bisan usa.
 - [ ] Naka-configure ug na-test ba ang backups (i-restore pa ang labing menos usa aron ma-verify)
 - [ ] Naa bay monitoring system -- mahibal-an nimo kung mo-down ang plataporma
 
-### Templates (Mga Template)
+### Templates (Mga Template) {#templates}
 
 - [ ] Ang tanang tulo ka templates naglo-load og tarong sa bag-ong site
 - [ ] Makatabang ug walay typo ba ang placeholder content
@@ -32,7 +32,7 @@ Pag-review sa matag item. Ayaw kalimti bisan usa.
 - [ ] Maayo ba ang page load speed (i-test gamit ang tool sama sa GTmetrix o PageSpeed Insights)
 - [ ] Walay broken links o nawala nga assets sa bisan unsang template
 
-### Plans and Products (Mga Plan ug Produkto)
+### Plans and Products (Mga Plan ug Produkto) {#plans-and-products}
 
 - [ ] Aktibo ug makita ba ang tanang tulo ka plans
 - [ ] Tama ba ug niche-specific ang mga deskripsyon sa plan
@@ -42,7 +42,7 @@ Pag-review sa matag item. Ayaw kalimti bisan usa.
 - [ ] Maayo bang makita ang order bumps atol sa checkout
 - [ ] Nasunod ba og tarong ang plugin ug theme limitations matag plan
 
-### Checkout Flow (Pagdaloy sa Pagbayad)
+### Checkout Flow (Pagdaloy sa Pagbayad) {#checkout-flow}
 
 - [ ] Kumpleto nga test signup sa matag plan (gamit ang test payment mode)
 - [ ] Nagpakita ba ang template selection sa saktong templates matag plan
@@ -52,7 +52,7 @@ Pag-review sa matag item. Ayaw kalimti bisan usa.
 - [ ] Makasulod dayon ba sa ilang bag-ong site ang customer
 - [ ] Naglihok ba og tarong ang discount codes
 
-### Branding (Pagpabrand)
+### Branding (Pagpabrand) {#branding}
 
 - [ ] Ang login page nagpakita og FitSite branding
 - [ ] Ang admin dashboard nagpakita og FitSite branding
@@ -60,7 +60,7 @@ Pag-review sa matag item. Ayaw kalimti bisan usa.
 - [ ] Maayo bang magpakita ang mga invoices uban sa imong business details
 - [ ] Live ba ang marketing site ug naglink sa checkout form
 
-### Onboarding (Pagpahibalo/Pagsugod)
+### Onboarding (Pagpahibalo/Pagsugod) {#onboarding}
 
 - [ ] Nagpakita ba ang Quick Start widget sa dashboards sa bag-ong customer
 - [ ] Ang tanang Quick Start links nagtudlo sa saktong pages
@@ -68,7 +68,7 @@ Pag-review sa matag item. Ayaw kalimti bisan usa.
 - [ ] Na-publish ug ma-access ba ang mga knowledge base articles
 - [ ] Nagpakita ba og saktong plan information ug upgrade options ang account page
 
-### Legal and Business (Legal ug Negosyo)
+### Legal and Business (Legal ug Negosyo) {#legal-and-business}
 
 - [ ] Naka-publish ug naglink ba ang Terms of service gikan sa checkout
 - [ ] Naka-publish ug ma-access ba ang Privacy policy
@@ -77,11 +77,11 @@ Pag-review sa matag item. Ayaw kalimti bisan usa.
 - [ ] Live mode ba ang payment gateway (dili test mode)
 - [ ] Sakto ba ang tax configuration para sa imong jurisdiction
 
-## Soft Launch vs. Hard Launch (Soft Launch batok sa Hard Launch)
+## Soft Launch vs. Hard Launch (Soft Launch batok sa Hard Launch) {#soft-launch-vs-hard-launch}
 
 Pagkonsiderar og duha ka yugto nga paglunsad:
 
-### Phase 1: Soft Launch (Malumo nga Paglunsad)
+### Phase 1: Soft Launch (Malumo nga Paglunsad) {#phase-1-soft-launch}
 
 Imbitahi ang 5-10 fitness studio owners aron mag-sign up sa dili pa ang public launch. Sila kining imong beta customers. Hatagi sila og dako nga diskwento (50% off for life, o 3 months free) isip pagbaylo sa:
 
@@ -91,7 +91,7 @@ Imbitahi ang 5-10 fitness studio owners aron mag-sign up sa dili pa ang public l
 
 Kini makahatag kanimo og tinuod nga customer feedback ug live sites aron ipakita sa dili pa ka mo-open sa publiko.
 
-### Phase 2: Public Launch (Publiko nga Paglunsad)
+### Phase 2: Public Launch (Publiko nga Paglunsad) {#phase-2-public-launch}
 
 Kung naapil na ang soft launch feedback:
 
@@ -100,7 +100,7 @@ Kung naapil na ang soft launch feedback:
 - Sugdi ang customer acquisition (Lesson 11)
 - Ipahibalo sa may kalabutan nga fitness industry channels
 
-## Launch Day Actions (Mga Buhat sa Adlaw sa Paglunsad)
+## Launch Day Actions (Mga Buhat sa Adlaw sa Paglunsad) {#launch-day-actions}
 
 Sa adlaw nga mo-go public ka:
 
@@ -110,7 +110,7 @@ Sa adlaw nga mo-go public ka:
 4. **Andam mo motabang** -- basin manginahanglan og tabang ang imong unang tinuod nga customers, ug ang dali nga tubag makapalig-on sa pagsalig
 5. **Mag-celebrate pagadiyot** -- dayon mobalik sa trabaho
 
-## What Can Go Wrong (Unsa ang Mahimong Masala)
+## What Can Go Wrong (Unsa ang Mahimong Masala) {#what-can-go-wrong}
 
 Pagandam alang sa:
 
@@ -120,7 +120,7 @@ Pagandam alang sa:
 - **Performance under load**: Kung adunay traffic spike, kahibalo ka unsaon pagpa-scale sa imong hosting
 - **Customer confusion**: Pag-andam og knowledge base ug support channels
 
-## The FitSite Network So Far (Ang FitSite Network Hangtud Karon)
+## The FitSite Network So Far (Ang FitSite Network Hangtud Karon) {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## What We Built This Lesson (Unsa ang Nato'y Naka-build Niining Leksyon)
+## What We Built This Lesson (Unsa ang Nato'y Naka-build Niining Leksyon) {#what-we-built-this-lesson}
 
 - **Usa ka komprehensibo nga pre-launch checklist** nga naglakip sa infrastructure, content, payments, ug legal
 - **Usa ka soft launch strategy** aron makakuha og tinuod nga feedback sa dili pa mo-go public

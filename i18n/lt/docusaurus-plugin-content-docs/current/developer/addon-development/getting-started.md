@@ -3,9 +3,9 @@ title: Pradžia kuriant priedus
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Priedo kūrimas
+# Priedo kūrimas {#addon-development}
 
-## Priedo struktūra
+## Priedo struktūra {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Pagrindinio priedo failo šablonas
+## Pagrindinio priedo failo šablonas {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Pasirinktinio modelio pavyzdys
+## Pasirinktinio modelio pavyzdys {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Administratoriaus puslapio integracija
+## Administratoriaus puslapio integracija {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Jūsų priedo testavimas
+## Jūsų priedo testavimas {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 plėtimo taškai
+## v2.13.0 plėtimo taškai {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 prideda kelis plėtimo taškus, kurie naudingi priedams, integruojamiems su suvereniais nuomininkais, atsiskaitymo domenais arba prieglobos teikėjo DNS automatizavimu.
 
-### SSO ir pagrindinės svetainės valdymo URL
+### SSO ir pagrindinės svetainės valdymo URL {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Atsiskaitymo formos baziniai domenai
+### Atsiskaitymo formos baziniai domenai {#checkout-form-base-domains}
 
 Naudokite `wu_checkout_form_base_domains`, kai jūsų priedas pateikia papildomus bendrinamus bazinius domenus, kurie turėtų veikti kaip atsiskaitymo formos **Svetainės URL** domenai, o ne kaip atskiri kiekvienai svetainei priskirti tinkinti susiejimai:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite normalizuoja šiuos prieglobos vardus ir praleidžia automatinius kiekvienos svetainės susieto domeno įrašus jiems.
 
-### Automatinis domeno įrašo kūrimas
+### Automatinis domeno įrašo kūrimas {#automatic-domain-record-creation}
 
 Naudokite `wu_should_create_domain_record_for_site`, kai jūsų priedui reikia nuslopinti arba atidėti automatinį domeno įrašo kūrimą naujai sukurtai svetainei:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Prieglobos teikėjo integracijos, kurios klauso `wu_add_subdomain`, gali sukurti teikėjo pusės DNS įrašus, kai sukuriamos svetainės. Jei šiam veiksmui nėra užregistruota jokia integracija, Ultimate Multisite praleidžia tuščią foninę užduotį.
 
-## Tolesni veiksmai
+## Tolesni veiksmai {#next-steps}
 
 - Peržiūrėkite [Hooks nuorodą](/developer/hooks), kad sužinotumėte galimus veiksmus ir filtrus
 - Patikrinkite [REST API apžvalgą](/developer/rest-api/overview), skirtą API integracijai

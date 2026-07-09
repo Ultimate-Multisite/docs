@@ -3,18 +3,18 @@ title: Temabuilder-förmågor
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: Scaffold and Activate Block Themes
+# Theme Builder Abilities: Scaffold and Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introducerar två kraftfulla funktioner som låter dig generera och driftsätta anpassade blockteman direkt från chattgränssnittet.
 
-## Översikt
+## Översikt {#overview}
 
 Funktionerna **scaffold-block-theme** och **activate-theme** gör det möjligt för agenter att:
 - Generera kompletta, produktionsredo blockteman baserat på dina specifikationer
 - Automatiskt aktivera teman på din webbplats utan manuell inblandning
 - Skapa sammanhängande visuella identiteter genom vägledda designbeslut
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Funktionen **scaffold-block-theme** genererar ett nytt WordPress blocktema med en komplett temastruktur, inklusive:
 
@@ -23,7 +23,7 @@ Funktionen **scaffold-block-theme** genererar ett nytt WordPress blocktema med e
 - Anpassade blockstilar och variationer
 - Temameta-data och supportdeklarationer
 
-### Hur du anropar den
+### Hur du anropar den {#how-to-invoke}
 
 I ditt chattmeddelande med Superdav AI Agent kan du begära teman­generering:
 
@@ -38,7 +38,7 @@ Agenten kommer att:
 3. Skapa alla nödvändiga temafilerna
 4. Förbereda temat för aktivering
 
-### Förväntat resultat
+### Förväntat resultat {#expected-output}
 
 När funktionen exekveras framgångsrikt ser du:
 
@@ -56,11 +56,11 @@ Exempel på resultat:
   Status: Ready to activate
 ```
 
-## Activate Theme
+## Activate Theme {#activate-theme}
 
 Funktionen **activate-theme** byter din webbplats till ett nyligen skaffolderat eller befintligt blocktema.
 
-### Hur du anropar den
+### Hur du anropar den {#how-to-invoke-1}
 
 Efter att ha skaffolderat ett tema kan du aktivera det direkt:
 
@@ -74,7 +74,7 @@ Eller aktivera vilket befintligt tema som helst:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Förväntat resultat
+### Förväntat resultat {#expected-output-1}
 
 När aktiveringen lyckas:
 
@@ -92,7 +92,7 @@ Exempel på resultat:
   Note: Check your homepage to verify the layout
 ```
 
-## Arbetsflöde: Scaffold och Aktivera
+## Arbetsflöde: Scaffold och Aktivera {#workflow-scaffold-and-activate}
 
 Ett typiskt arbetsflöde kombinerar båda funktionerna:
 
@@ -102,7 +102,7 @@ Ett typiskt arbetsflöde kombinerar båda funktionerna:
 4. **Aktivera**: "Activate the theme now"
 5. **Verifiera**: Besök din webbplats för att bekräfta att den nya designen är live
 
-## Design Tokens och Anpassning
+## Design Tokens och Anpassning {#design-tokens-and-customization}
 
 Skaffolderade teman använder WordPress design-tokens (via `theme.json`) för:
 
@@ -114,14 +114,14 @@ Skaffolderade teman använder WordPress design-tokens (via `theme.json`) för:
 
 Dessa tokens är centraliserade i `theme.json`, vilket gör det enkelt att justera hela ditt designsystem från en enda fil.
 
-## Begränsningar och anteckningar
+## Begränsningar och anteckningar {#limitations-and-notes}
 
 - Teman skaffolderas i `/wp-content/themes/` och måste följa WordPress namngivningskonventioner
 - Aktivering kräver lämpliga behörigheter på din WordPress-webbplats
 - Anpassad PHP-kod i teman är minimal; använd plugins för komplex funktionalitet
 - Blockteman fungerar bäst med WordPress 5.9 och senare
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
 **Temat dyker inte upp efter scaffolding**
 - Kontrollera att temakatalogen existerar och har korrekta behörigheter
@@ -138,7 +138,7 @@ Dessa tokens är centraliserade i `theme.json`, vilket gör det enkelt att juste
 - Rensa alla caching-plugins
 - Kontrollera att din WordPress-version stöder de tokens du använder
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 Efter att du har aktiverat ditt tema kan du:
 - Använda **Design System Aesthetics skill** för att förfina typografi, färger och avstånd

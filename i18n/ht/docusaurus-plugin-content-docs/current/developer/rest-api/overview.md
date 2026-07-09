@@ -3,28 +3,28 @@ title: Apèsi jeneral sou REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referans REST API
+# Referans REST API {#rest-api-reference}
 
-## Konfigirasyon Baz
+## Konfigirasyon Baz {#base-configuration}
 
 **URL Baz:** `{site_url}/wp-json/wu/v2/`
 **Otantifikasyon:** Kle API ak Sekrè (HTTP Basic Auth oswa Paramèt URL)
 
-## Otantifikasyon
+## Otantifikasyon {#authentication}
 
-### Aktive API
+### Aktive API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Jwenn Idantifyan API
+### Jwenn Idantifyan API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metòd Otantifikasyon
+### Metòd Otantifikasyon {#authentication-methods}
 
 **HTTP Basic Auth (Rekòmande):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Pwen Final Prensipal yo
+## Pwen Final Prensipal yo {#core-endpoints}
 
-### 1. API Kliyan
+### 1. API Kliyan {#1-customers-api}
 
 **Wout Baz:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Sit yo
+### 2. API Sit yo {#2-sites-api}
 
 **Wout Baz:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Abònman yo
+### 3. API Abònman yo {#3-memberships-api}
 
 **Wout Baz:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Pwodwi yo
+### 4. API Pwodwi yo {#4-products-api}
 
 **Wout Baz:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Peman yo
+### 5. API Peman yo {#5-payments-api}
 
 **Wout Baz:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Domèn yo
+### 6. API Domèn yo {#6-domains-api}
 
 **Wout Baz:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Pwen Final Enskripsyon
+## Pwen Final Enskripsyon {#registration-endpoint}
 
 Pwen final `/register` la bay yon koule checkout/enskripsyon konplè:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Pwen Final Lokatè Souvren yo
+## Pwen Final Lokatè Souvren yo {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ajoute kouvèti REST pou lokatè souvren pou entegrasyon ki pwovizyone, enspekte, oswa verifye lokatè izole yo.
 
@@ -242,7 +242,7 @@ Repons tipik pou estati migrasyon gen ladan:
 
 Trete `ready: false` kòm yon blokaj anvan lansman. Tcheke detay verifikasyon yo, korije atachman host baz done a, keu a, pwovizyon itilizatè a, oswa pwoblèm routaj la, epi eseye verifikasyon ankò.
 
-## Repons Erè
+## Repons Erè {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Trete `ready: false` kòm yon blokaj anvan lansman. Tcheke detay verifikasyon yo
 }
 ```
 
-## Pajinen ak Filtraj
+## Pajinen ak Filtraj {#pagination-and-filtering}
 
 **Paramèt Rekèt:**
 ```http

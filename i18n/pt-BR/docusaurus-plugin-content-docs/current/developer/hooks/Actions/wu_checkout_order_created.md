@@ -4,13 +4,13 @@ title: Ação - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Ação: wu_checkout_order_created
+# Ação: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 Fires after the checkout order is fully assembled.
 
 Addons can use this to create secondary memberships for products with independent billing cycles.
 
-## Parameters
+## Parameters {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Addons can use this to create secondary memberships for products with independen
 | $membership | `\WP_Ultimo\Models\Membership` | A associação principal. |
 | $payment | `\WP_Ultimo\Models\Payment` | O pagamento. |
 
-### Desde
+### Desde {#since}
 
 - 2.5.0
 
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) na linha 891

@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# د مصنوعي ځیرکتیا د وېبپاڼې جوړوونکی
+# د مصنوعي ځیرکتیا د وېبپاڼې جوړوونکی {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## اړتیاوې
+## اړتیاوې {#requirements}
 
 - WordPress 5.3 یا لوړ
 - PHP 7.4 یا لوړ
 - Multisite Ultimate پلګین (فعال)
 
-## لګول
+## لګول {#installation}
 
 1. د addon فایلونه خپل `/wp-content/plugins/` ډایرکټرۍ ته پورته کړئ
 2. پلګین په WordPress کې د 'Plugins' مېنو له لارې فعال کړئ
 3. د addon امستنې د شبکې اډمین کې تنظیم کړئ
 
-## پراختیا
+## پراختیا {#development}
 
-### چمتو کول
+### چمتو کول {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### د پروژې جوړښت
+### د پروژې جوړښت {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # د کوډ عصري کولو قاعدې
 ```
 
-### ازموینه
+### ازموینه {#testing}
 
 دا addon د ازموینې یو جامع چوکاټ لري:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **د ازموینې پوښښ**: د کوډ پوښښ تعقیبولو لپاره تنظیم شوی
 - **Multisite ازموینه**: ازموینې په multisite چاپېریال کې چلېږي
 
-### د کوډ معیارونه
+### د کوډ معیارونه {#code-standards}
 
 - **د WordPress کوډ لیکنې معیارونه**: د PHPCS له لارې پلي کېږي
 - **PHP 7.4+ مطابقت**: د PHP عصري ځانګړنې ملاتړ کېږي
 - **ثابت تحلیل**: د ډول کتنې لپاره د PHPStan ادغام
 - **د کوډ عصري کول**: د PHP لوړونو لپاره د Rector قاعدې
 
-### د جوړولو سیستم
+### د جوړولو سیستم {#build-system}
 
 - **د شتمنیو پروسس**: د CSS/JS فایلونو لپاره کوچني کول
 - **ژباړه**: د POT فایل جوړول
 - **بسته بندي**: د وېش لپاره د ارشیف جوړول
 - **د پراختیا حالت**: د ستونزو موندلو لپاره نه کوچني شوې شتمنۍ
 
-## تنظیمات
+## تنظیمات {#configuration}
 
 دا addon بېلابېل د تنظیماتو اختیارونه ملاتړ کوي چې د شبکې اډمین انترفېس له لارې لاسرسی ورته کېږي.
 
-## هوکونه او فلټرونه
+## هوکونه او فلټرونه {#hooks-and-filters}
 
-### کړنې
+### کړنې {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - د addon له پیل وروسته چلېږي
 - `ultimate-multisite-ai-site-builder_loaded` - د ټولو addon فایلونو له بارېدو وروسته چلېږي
 
-### فلټرونه
+### فلټرونه {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - د addon امستنې بدل کړئ
 - `ultimate-multisite-ai-site-builder_enabled` - د addon د فعالولو/غیرفعالولو حالت بدل کړئ
 
-## جواز
+## جواز {#license}
 
 دا addon د GPL v3 یا وروسته له مخې جواز لري.
 
-## ملاتړ
+## ملاتړ {#support}
 
 د ملاتړ او مستنداتو لپاره، [MultisiteUltimate.com](https://multisiteultimate.com) ته ورشئ
-## د بدلونونو سجل
+## د بدلونونو سجل {#changelog}
 
 - نسخه 1.0.1 (2025-09-28): مخکینی نوم ultimate-multisite ته بدلول؛ د متن ډومېن اوسمهالول؛ د نسخې لوړول.
 

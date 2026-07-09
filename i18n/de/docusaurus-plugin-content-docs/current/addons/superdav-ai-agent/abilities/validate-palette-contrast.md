@@ -3,15 +3,15 @@ title: Palette-Kontrast validieren
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palette-Kontrast validieren
+# Palette-Kontrast validieren {#validate-palette-contrast}
 
 Die **Palette-Kontrast-Validierung** prüft Farbkombinationen in Ihrer Designpalette auf WCAG-Konformität (Web Content Accessibility Guidelines), bevor Sie diese auf Ihr Theme anwenden.
 
-## Überblick
+## Überblick {#overview}
 
 Diese Funktion stellt sicher, dass das Farbschema Ihrer Website die Barrierefreiheitsstandards erfüllt, indem sie das Kontrastverhältnis zwischen Text- und Hintergrundfarben überprüft. Sie hilft, Farbkombinationen zu vermeiden, die für Benutzer mit Sehbehinderungen schwer lesbar sein könnten.
 
-## Eingabeformat
+## Eingabeformat {#input-format}
 
 Die Funktion erwartet eine Farbpalette als Eingabe:
 
@@ -35,7 +35,7 @@ Die Funktion erwartet eine Farbpalette als Eingabe:
 }
 ```
 
-### Parameter
+### Parameter {#parameters}
 
 | Parameter | Typ | Erforderlich | Beschreibung |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Die Funktion erwartet eine Farbpalette als Eingabe:
 | `wcag_level` | string | Nein | WCAG-Konformitätsstufe: "A", "AA" (Standard) oder "AAA" |
 | `pairs_to_check` | array | Nein | Spezifische Farbkombinationen zur Validierung (z. B. `["primary-text", "background-text"]`) |
 
-## Überprüfte WCAG-Stufen
+## Überprüfte WCAG-Stufen {#wcag-levels-checked}
 
 Die Funktion validiert das Kontrastverhältnis gemäß den WCAG-Standards:
 
@@ -56,7 +56,7 @@ Die Funktion validiert das Kontrastverhältnis gemäß den WCAG-Standards:
 - **Normaler Text** — Text kleiner als 18pt (oder 14pt fett)
 - **Großer Text** — Text von 18pt oder größer (oder 14pt fett oder größer)
 
-## Ausgabe-Schema
+## Ausgabe-Schema {#output-schema}
 
 Die Funktion gibt einen detaillierten Validierungsbericht zurück:
 
@@ -95,7 +95,7 @@ Die Funktion gibt einen detaillierten Validierungsbericht zurück:
 }
 ```
 
-### Ausgabe-Felder
+### Ausgabe-Felder {#output-fields}
 
 | Feld | Typ | Beschreibung |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Die Funktion gibt einen detaillierten Validierungsbericht zurück:
 | `status` | string | "pass" oder "fail" für jedes Paar |
 | `recommendations` | array | Vorschläge zur Verbesserung fehlgeschlagener Paare |
 
-## Anwendungsbeispiel
+## Anwendungsbeispiel {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Die Funktion validiert alle Farbkombinationen und gibt zurück:
 - ✅ Background + Text: 12.1:1 Verhältnis (bestanden WCAG AAA)
 - Insgesamt: Konform mit WCAG AA
 
-## Integration mit Theme Builder
+## Integration mit Theme Builder {#integration-with-theme-builder}
 
 Wenn Sie bei der Auswahl der Designrichtung im Theme Builder sind, analysiert die Palette-Kontrast-Validierung:
 
@@ -129,7 +129,7 @@ Wenn Sie bei der Auswahl der Designrichtung im Theme Builder sind, analysiert di
 4. Gibt Empfehlungen für nicht konforme Paare
 5. Verhindert die Anwendung nicht zugänglicher Farbschemata
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Beginnen Sie mit AA** — WCAG AA ist der Standard für die meisten Websites
 - **Vor der Anwendung testen** — Validieren Sie Ihre Palette, bevor Sie sich auf ein Design festlegen
@@ -137,7 +137,7 @@ Wenn Sie bei der Auswahl der Designrichtung im Theme Builder sind, analysiert di
 - **Nutzerpräferenzen berücksichtigen** — Einige Benutzer können zusätzliche Farbsensibilitäten haben
 - **Kontrastprüfer verwenden** — Kombinieren Sie diese Funktion mit Browser-Tools zur Verifizierung
 
-## Fehlgeschlagene Paare und Empfehlungen
+## Fehlgeschlagene Paare und Empfehlungen {#failing-pairs-and-recommendations}
 
 Wenn ein Farbkombination die Validierung nicht besteht, gibt die Funktion Empfehlungen:
 
@@ -155,7 +155,7 @@ Wenn ein Farbkombination die Validierung nicht besteht, gibt die Funktion Empfeh
 }
 ```
 
-## Verwandte Funktionen
+## Verwandte Funktionen {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — Erstellen Sie Logos mit Ihrer validierten Farbpalette
 - [Create Menu](./create-menu.md) — Erstellen Sie Navigation mit zugänglichen Farben

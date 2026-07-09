@@ -4,11 +4,11 @@ title: Pagsala - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Tugoti ang mga developer nga makausab sa katapusang content
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Type | Deskripsyon |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Tugoti ang mga developer nga makausab sa katapusang content
 | $to_replace | `array` | Array nga naglangkob sa mga placeholder nga gihuptan. |
 | $placeholder_count | `int` | Gidaghanon sa mga placeholder nga nakit-an. |
 
-### Sukad
+### Sukad {#since}
 
 - 1.4.0
-### Source
+### Source {#source}
 
 Gihubit sa [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) sa linya 46
 
 
-## Mga Gibalik
+## Mga Gibalik {#returns}
 Content human sa pag-usab.

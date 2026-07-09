@@ -3,27 +3,27 @@ title: साइट निर्यात
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# साइट निर्यात (Site Export)
+# साइट निर्यात (Site Export) {#site-export}
 
 **साइट निर्यात** ॲडमिन पेज नेटवर्क ॲडमिनिस्ट्रेटरला एका साइटचे किंवा संपूर्ण नेटवर्कचे बॅकअप घेण्यासाठी, स्थलांतर (migration) करण्यासाठी किंवा दुसऱ्या व्यक्तीकडे हस्तांतरित करण्यासाठी (hand-off) डाउनलोड करण्यायोग्य आर्काइव्हमध्ये पॅकेज करण्याची सुविधा देते.
 
-## एक साइट निर्यात करणे (Exporting one site)
+## एक साइट निर्यात करणे (Exporting one site) {#exporting-one-site}
 
 **Ultimate Multisite > Site Export** येथे जा आणि **Generate new Site Export** निवडा. तुम्हाला जी सबसाइट निर्यात करायची आहे, ती निवडा आणि आर्काइव्हमध्ये अपलोड्स (uploads), प्लगइन्स (plugins) आणि थीम्स (themes) समाविष्ट करायचे आहेत की नाही, हे निवडा.
 
 निर्यात पूर्ण झाल्यावर, **Existing Exports** या यादीतून ZIP डाउनलोड करा. निर्यात केलेले ZIP आता स्वतःहून सुरू होणारे `index.php` आणि `readme.txt` समाविष्ट करतात, ज्यामुळे हे आर्काइव्ह थेट नवीन होस्टवर अपलोड करून, वेगळे इम्पोर्टर प्लगइन (importer plugin) इन्स्टॉल न करता सुरू करता येते.
 
-## संपूर्ण नेटवर्क निर्यात करणे (Exporting the whole network)
+## संपूर्ण नेटवर्क निर्यात करणे (Exporting the whole network) {#exporting-the-whole-network}
 
 जेव्हा तुम्हाला नेटवर्कमधील सर्व सबसाइट्स एकाच आर्काइव्हमध्ये हव्या असतात, तेव्हा साइट निर्यात पेजवर **Network Export** वापरा. हे होस्ट स्थलांतर (host migrations), आपत्ती निवारण सराव (disaster-recovery drills) किंवा स्टेजिंग रीबिल्ड्स (staging rebuilds) करण्यापूर्वी उपयुक्त आहे, जिथे प्रत्येक सबसाइट एकत्र प्रवास करणे आवश्यक असते.
 
 नेटवर्क निर्यात एका सिंगल-साइट निर्यातीपेक्षा खूप मोठी असू शकते, त्यामुळे हे कमी ट्रॅफिकच्या वेळेत करा आणि लक्ष्य स्टोरेजमध्ये अपलोड्स, प्लगइन्स, थीम्स आणि तयार झालेल्या ZIP फाईल्ससाठी पुरेसा मोकळा साठा आहे की नाही, याची खात्री करा.
 
-### नेटवर्क इम्पोर्ट बंडल्स (Network Import Bundles)
+### नेटवर्क इम्पोर्ट बंडल्स (Network Import Bundles) {#network-import-bundles}
 
 Ultimate Multisite 2.12.0 पासून, Site Exporter **नेटवर्क इम्पोर्ट बंडल्स** तयार करू शकतो — हे विशेष आर्काइव्ह आहेत जे नेटवर्क-व्यापी साइट पुनर्संचयनासाठी (site restoration) डिझाइन केलेले आहेत. नेटवर्क इम्पोर्ट बंडलमध्ये अनेक साइट्स एका नवीन नेटवर्क इन्स्टॉलेशनवर पुनर्संचयित करण्यासाठी आवश्यक असलेल्या सर्व फाईल्स आणि मेटाडेटाचा समावेश असतो.
 
-#### नेटवर्क इम्पोर्ट बंडल तयार करणे (Generating a Network Import Bundle)
+#### नेटवर्क इम्पोर्ट बंडल तयार करणे (Generating a Network Import Bundle) {#generating-a-network-import-bundle}
 
 1. **Ultimate Multisite > Site Export** येथे जा
 2. **Generate new Network Export** वर क्लिक करा
@@ -32,7 +32,7 @@ Ultimate Multisite 2.12.0 पासून, Site Exporter **नेटवर्क
 5. **Generate** वर क्लिक करा
 6. **Existing Exports** या यादीतून बंडल ZIP डाउनलोड करा
 
-#### नेटवर्क इम्पोर्ट बंडलमधून पुनर्संचयित करणे (Restoring from a Network Import Bundle)
+#### नेटवर्क इम्पोर्ट बंडलमधून पुनर्संचयित करणे (Restoring from a Network Import Bundle) {#restoring-from-a-network-import-bundle}
 
 नेटवर्क इम्पोर्ट बंडलमधून साइट्स पुनर्संचयित करण्यासाठी:
 
@@ -52,7 +52,7 @@ Ultimate Multisite 2.12.0 पासून, Site Exporter **नेटवर्क
 - मीडिया अपलोड्स (जर बंडलमध्ये समाविष्ट असतील)
 - कस्टम डेटाबेस टेबल्स आणि डेटा
 
-## स्वतःहून सुरू होणारे निर्यात ZIP इन्स्टॉल करणे (Installing a self-booting export ZIP)
+## स्वतःहून सुरू होणारे निर्यात ZIP इन्स्टॉल करणे (Installing a self-booting export ZIP) {#installing-a-self-booting-export-zip}
 
 नवीन होस्टवर स्वतःहून सुरू होणारे (self-booting) ZIP पुनर्संचयित करण्यासाठी:
 

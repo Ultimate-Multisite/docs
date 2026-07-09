@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Mandantenfähigkeit
+# Mandantenfähigkeit {#multi-tenancy}
 
 Verteilen Sie Unterseiten auf Server und Datenbanken für Performance und Sicherheit
 
-## Highlights der Version 1.2.0
+## Highlights der Version 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 fügt die souveräne Mandantenbasis für Workflows zur Produktionsisolierung hinzu:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 fügt die souveräne Mandantenbasis für Workflows zur Produ
 
 Siehe die Benutzerhandbücher für den [Workflow zur souveränen Migration](/user-guide/getting-started/sovereign-migration-workflow), [Isolierung bei Mandantenfähigkeit](/user-guide/configuration/multi-tenancy-isolation) und [Betrieb souveräner Mandanten](/user-guide/administration/sovereign-tenant-operations).
 
-## Anforderungen
+## Anforderungen {#requirements}
 
 - WordPress 5.3 oder höher
 - PHP 7.4 oder höher
 - Multisite Ultimate plugin (aktiv)
 
-## Installation
+## Installation {#installation}
 
 1. Laden Sie die Add-on-Dateien in Ihr Verzeichnis `/wp-content/plugins/` hoch
 2. Aktivieren Sie das plugin über das Menü „Plugins“ in WordPress
 3. Konfigurieren Sie die Add-on-Einstellungen im Netzwerk-Adminbereich
 
-## Entwicklung
+## Entwicklung {#development}
 
-### Einrichtung
+### Einrichtung {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektstruktur
+### Projektstruktur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testen
+### Testen {#testing}
 
 Das Add-on enthält ein umfassendes Test-Framework:
 
@@ -93,54 +93,54 @@ Das Add-on enthält ein umfassendes Test-Framework:
 - **Testabdeckung**: Konfiguriert, um Codeabdeckung zu verfolgen
 - **Multisite-Tests**: Tests werden in einer Multisite-Umgebung ausgeführt
 
-### Code-Standards
+### Code-Standards {#code-standards}
 
 - **WordPress Coding Standards**: Durchgesetzt über PHPCS
 - **PHP 7.4+-Kompatibilität**: Moderne PHP-Funktionen werden unterstützt
 - **Statische Analyse**: PHPStan-Integration zur Typprüfung
 - **Code-Modernisierung**: Rector-Regeln für PHP-Upgrades
 
-### Build-System
+### Build-System {#build-system}
 
 - **Asset-Verarbeitung**: Minifizierung für CSS/JS-Dateien
 - **Übersetzung**: POT-Dateigenerierung
 - **Paketierung**: Archiverstellung für die Verteilung
 - **Entwicklungsmodus**: Nicht minifizierte Assets zum Debugging
 
-## Konfiguration
+## Konfiguration {#configuration}
 
 Das Add-on unterstützt verschiedene Konfigurationsoptionen, die über die Netzwerk-Adminoberfläche zugänglich sind.
 
-### Konfiguration souveräner Mandanten
+### Konfiguration souveräner Mandanten {#sovereign-tenant-configuration}
 
 Für souveräne Mandanten konfigurieren Sie die Mandanten-Datenbank, das Dateisystem-Stammverzeichnis, die Datenbank-Host-Bindung und die Host-Fähigkeit, bevor Sie Traffic zum Mandanten routen. Führen Sie nach jeder Änderung, die Datenbank-Zugangsdaten, Host-Bindung, Routing oder Benutzerbereitstellung betrifft, eine Migrationsverifizierung aus.
 
 Verwenden Sie `localhost` nur, wenn die Mandanten-Laufzeitumgebung und die Datenbankberechtigungen lokalen Socket- oder Zugriff auf derselben Maschine erwarten. Verwenden Sie `127.0.0.1` oder einen Service-Hostnamen, wenn dies der Grant-Host ist, der von Ihrem Anbieter konfiguriert wurde.
 
-### Hostinger-Fähigkeit
+### Hostinger-Fähigkeit {#hostinger-capability}
 
 Die Hostinger-Fähigkeit für Mandantenfähigkeit arbeitet mit dem gemeinsamen Hostinger-Integrationstoken. Bestätigen Sie, dass die Domain in hPanel vorhanden ist, DNS auf den Hostinger Account zeigt und die Mandanten-Datenbankeinstellungen vor der Verifizierung mit hPanel übereinstimmen.
 
-## Hooks und Filter
+## Hooks und Filter {#hooks-and-filters}
 
-### Aktionen
+### Aktionen {#actions}
 
 - `ultimate-multisite-addon-template_init` - Wird nach der Add-on-Initialisierung ausgelöst
 - `ultimate-multisite-addon-template_loaded` - Wird ausgelöst, nachdem alle Add-on-Dateien geladen wurden
 
-### Filter
+### Filter {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Add-on-Einstellungen ändern
 - `ultimate-multisite-addon-template_enabled` - Aktivierungs-/Deaktivierungsstatus des Add-ons überschreiben
 
-## Lizenz
+## Lizenz {#license}
 
 Dieses Add-on ist unter der GPL v3 oder höher lizenziert.
 
-## Support
+## Support {#support}
 
 Für Support und Dokumentation besuchen Sie [MultisiteUltimate.com](https://multisiteultimate.com)
-## Änderungsprotokoll
+## Änderungsprotokoll {#changelog}
 
 - Version 1.2.0 (2026-06-03): Zustandslose Mandanten-Autoanmeldung, Hostinger-Fähigkeit für Mandantenfähigkeit, Datenbank- und Dateisystemisolierung pro Unterseite, Verifizierungstore für souveräne Migrationen, Verbesserungen an Mandanten-Bootstrap/Datenbank-Writer, konfigurierbare MySQL-Host-Bindung und sichereren souveränen Abbau hinzufügen.
 

@@ -3,11 +3,11 @@ title: Fortgeschratt Code-Beispiller
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Fortgeschratt Code-Beispiller
+# Fortgeschratt Code-Beispiller {#advanced-code-examples}
 
 Dës Beispiller weisen fortgeschratt Integratiounsmustere mat Ultimate Multisite.
 
-## Dynamesch Präis-Engine
+## Dynamesch Präis-Engine {#dynamic-pricing-engine}
 
 Eng reegelbaséiert Präis-Engine, déi Volumen-, Loyalitéits- a saisonal Remisen uwent:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Fortgeschratt Websäit-Provisionéierung
+## Fortgeschratt Websäit-Provisionéierung {#advanced-site-provisioning}
 
 Konfiguréier nei Websäiten automatesch mat Plugins, SSL, CDN, Backups an Iwwerwaachung baséiert op de Funktioune vum Plang:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Benotzerdefinéiert Limitatiounssystem
+## Benotzerdefinéiert Limitatiounssystem {#custom-limitations-system}
 
 Ressourcelimite verfollegen an duerchsetzen, mat Notzungswarnungen:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB-atomare Konter mat `increment_item()`
+## BerlinDB-atomare Konter mat `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 huet eng `increment_item()`-Method der BerlinDB-`Query`-Klass bäigefüügt. Benotz se, fir sécher, atomar Erhéijungen op numeresche Kolonnen ouni Lies-Änneren-Schreiwen-Rennen auszeféieren — nëtzlech fir Konteren, Notzungsquoten a Rate-Limiting-Iwwerpréiwungen, déi ënner gläichzäitegen Ufroe lafen.
 
-### Methodesignatur
+### Methodesignatur {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 huet eng `increment_item()`-Method der BerlinDB-`Query
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Basisbenotzung
+### Basisbenotzung {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API-Notzung pro Memberschaft verfollegen
+### API-Notzung pro Memberschaft verfollegen {#tracking-api-usage-per-membership}
 
 E praktescht Muster, fir API-Rate-Limitte pro Memberschaft duerchzesetzen:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Firwat `increment_item()` amplaz vun `update_item()`
+### Firwat `increment_item()` amplaz vun `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Eng naiv Lies-Änneren-Schreiwen-Approche ass onsécher ënner gläichzäitegen Ufroen:
 

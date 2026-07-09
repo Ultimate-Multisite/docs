@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Ymddiantaueddau
+## Ymddiantaueddau {#requirements}
 
 - WordPress 5.3 neu ddiweddarach
 - PHP 7.4 neu ddiweddarach
 - Plugin Multisite Ultimate (defnyddio)
 
-## Rheoliad
+## Rheoliad {#installation}
 
 1. Rhowch y cyfathrebu'r addon i'r dyfodol `/wp-content/plugins/`
 2. Actiwwch y plugin drwy'r menyn 'Plugins' yn WordPress
 3. Rheoliwch y setegau'r addon yn y admin cyd-gynllun (network admin)
 
-## Datblygiad
+## Datblygiad {#development}
 
-### Rheoliad
+### Rheoliad {#setup}
 
 ```bash
 # Rhowch y cyfathrebu'r dependants i'r gweithrediad
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estrwyll Proffesiwn
+### Estrwyll Proffesiwn {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Rheoliadau modernu cod
 ```
 
-### Cynodiadau (Testing)
+### Cynodiadau (Testing) {#testing}
 
 Mae'r addon yn cynnwys ffurfiolyn cynaliad cyfan:
 
@@ -79,44 +79,44 @@ Mae'r addon yn cynnwys ffurfiolyn cynaliad cyfan:
 - **Cynodiadau Cod**: Mae'n cael eu cyflwyno i ddefnyddio ar gyfer cerdded cod (code coverage).
 - **Cynodiadau Multisite**: Cynodiadau yn cael eu gweithredu mewn anghytuntrio multisite.
 
-### Standardau Cod
+### Standardau Cod {#code-standards}
 
 **Standardau Codig WordPress**: wedi cael ei gyfyngol trwy PHPCS
 **Cymrydolod PHP 7.4+**: Mae ffychiadau PHP modern yn cael eu chynllunio
 **Analysau Statach (Static Analysis)**: Ychwanegiad PHPStan i gwylio tybedd (type checking)
 **Modernau Codig (Code Modernization)**: Rheoli Rector ar gyfer cyfathriadau PHP
 
-### System Gweithredol (Build System)
+### System Gweithredol (Build System) {#build-system}
 
 - **Prosesau Asset**: Minification ar gyfer ffili CSS/JS
 - **Cyfieithiad**: Cynllunio fyliau POT
 - **Pencadlu (Packaging)**: Creu archiwiaid ar gyfer disgyblhau
 - **Moddolion Mae'n Gweithredol (Development Mode)**: Assetau nid wedi'u minify i'r ddefnyddio am ddargano
 
-## Cyfluniadau (Configuration)
+## Cyfluniadau (Configuration) {#configuration}
 
 Mae'r addon yn chymryd ychwanegiadau cyfluniad yn cael eu cyfathri ar gyfer drwy ffurf admin cyd-llwybr.
 
-## Hookau a Fyrddau (Hooks and Filters)
+## Hookau a Fyrddau (Hooks and Filters) {#hooks-and-filters}
 
-### Gweithredoedd (Actions)
+### Gweithredoedd (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Mae'n cael ei gweithredu ar ôl ychwanegiad addon
 - `ultimate-multisite-ai-site-builder_loaded` - Mae'n cael ei gweithredu ar ôl i gyd y ffili addon wedi'u chynllunio
 
-### Fyrddau (Filters)
+### Fyrddau (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Gyfeiriad ychwanegiadau addon
 - `ultimate-multisite-ai-site-builder_enabled` - Mae'n gwneud ystodol i'r cyfathri addon yn cael ei gael/ddysbellu
 
-## Licensio (License)
+## Licensio (License) {#license}
 
 Mae'r addon hwn yn cael ei licensio o ddefnyddio GPL v3 neu fwy.
 
-## Cydweithrediadau (Support)
+## Cydweithrediadau (Support) {#support}
 
 Ar gyfer cydweithrediad a drafod documentaeth, yrru ar [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Versi 1.0.1 (2025-09-28): newid y cyfathriad i ultimate-multisite; cyfathriadau text domain; gwahanu'r chyfrif.
 

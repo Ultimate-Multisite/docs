@@ -3,17 +3,17 @@ title: Cara Mengonfigurasi Pemetaan Domain
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Cara Mengonfigurasi Domain Mapping (v2)
+# Cara Mengonfigurasi Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
 Salah satu fitur paling kuat dari jaringan premium adalah kemampuan untuk menawarkan kepada klien kami kesempatan melampirkan domain tingkat atas ke situs mereka. Lagi pula, mana yang terlihat lebih profesional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) atau [_**joesbikeshop.com**_](http://joesbikeshop.com)? Itulah sebabnya Ultimate Multisite menawarkan fitur tersebut secara bawaan, tanpa perlu menggunakan plugin pihak ketiga.
 
-## Apa itu domain mapping?
+## Apa itu domain mapping? {#whats-domain-mapping}
 
 Seperti namanya, domain mapping adalah kemampuan yang ditawarkan oleh Ultimate Multisite untuk menerima permintaan atas domain kustom dan memetakan permintaan tersebut ke situs yang sesuai di jaringan dengan domain tertentu yang dilampirkan.
 
-### Cara menyiapkan domain mapping di Ultimate Multisite Network Anda
+### Cara menyiapkan domain mapping di Ultimate Multisite Network Anda {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domain mapping memerlukan beberapa pengaturan dari pihak Anda agar berfungsi. Untungnya, Ultimate Multisite mengotomatiskan pekerjaan berat untuk Anda sehingga Anda dapat dengan mudah memenuhi persyaratannya.
 
@@ -45,7 +45,7 @@ Namun sebelum Anda mulai memetakan domain kustom ke salah satu subsite di jaring
 
 ###
 
-### Memastikan pengaturan DNS domain dikonfigurasi dengan benar
+### Memastikan pengaturan DNS domain dikonfigurasi dengan benar {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Agar mapping berfungsi, Anda perlu memastikan domain yang Anda rencanakan untuk dipetakan mengarah ke alamat IP Network Anda. Perhatikan bahwa Anda memerlukan alamat IP Network - alamat IP dari domain tempat Ultimate Multisite dipasang - bukan alamat IP dari domain kustom yang ingin Anda petakan. Untuk mencari alamat IP dari domain tertentu, kami menyarankan untuk membuka [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), misalnya.
 
@@ -55,7 +55,7 @@ Jika Anda mengalami kesulitan membuat ini berfungsi, **hubungi dukungan registra
 
 Jika Anda berencana mengizinkan klien Anda memetakan domain mereka sendiri, mereka harus mengerjakan bagian ini sendiri. Arahkan mereka ke sistem dukungan registrar mereka jika mereka tidak dapat membuat A Record.
 
-### Memetakan nama domain kustom sebagai Super Admin
+### Memetakan nama domain kustom sebagai Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Ketika Anda masuk sebagai super admin di jaringan Anda, Anda dapat dengan mudah menambahkan dan mengelola nama domain kustom dengan membuka **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Jika Anda mengklik nama domain, Anda akan dapat melihat beberapa opsi di dalamny
 
 **Is Secure?:** Meskipun Ultimate Multisite memeriksa apakah domain memiliki sertifikat SSL atau tidak sebelum mengaktifkannya, Anda dapat memilih secara manual untuk memuat domain dengan atau tanpa sertifikat SSL. Perhatikan bahwa jika website tidak memiliki sertifikat SSL dan Anda mencoba memaksanya dimuat dengan SSL, hal itu dapat menimbulkan error.
 
-### Memetakan nama domain kustom sebagai pengguna Subsite
+### Memetakan nama domain kustom sebagai pengguna Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Administrator subsite juga dapat memetakan nama domain kustom dari dashboard admin subsite mereka.
 
@@ -121,7 +121,7 @@ Pengguna kemudian dapat mengklik **Next Step** dan melanjutkan untuk menambahkan
 
 Mengklik **Add Domain** akan memulai proses verifikasi dan pengambilan informasi DNS dari domain kustom.
 
-### Tentang Sinkronisasi Domain
+### Tentang Sinkronisasi Domain {#about-domain-syncing}
 
 Sinkronisasi Domain adalah proses saat Ultimate Multisite menambahkan nama domain kustom ke akun hosting Anda sebagai domain add-on **agar domain mapping berfungsi**.
 

@@ -3,15 +3,15 @@ title: 'Leksjon 5: Designe dine planer'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leksjon 5: Designe Planene Dine
+# Leksjon 5: Designe Planene Dine {#lesson-5-designing-your-plans}
 
 Plan-nivåene dine er ikke bare prispunkter – de er en refleksjon av hvordan dine nisje-kunder faktisk opererer. I denne leksjonen skal du designe produktnivåer som matcher de virkelige behovene til treningsbedrifter i ulike faser.
 
-## Hvor Vi Slapp
+## Hvor Vi Slapp {#where-we-left-off}
 
 FitSite har tre maler klare (Studio Essential, Gym Pro, Fitness Chain). Nå skal vi lage planene som bestemmer hva kundene får tilgang til, og hva de betaler for.
 
-## Tenke i Kundesegmenter
+## Tenke i Kundesegmenter {#thinking-in-customer-segments}
 
 Feilen de fleste gjør, er å designe planer basert på tekniske funksjoner (lagring, båndbredde, antall sider). Dine nisje-kunder tenker ikke i slike termer. En treningsstudio-eier tenker på hva de trenger for å drive virksomheten sin.
 
@@ -25,11 +25,11 @@ For treningsstudioer finnes det tre naturlige segmenter:
 
 Planene dine bør kartlegges mot disse segmentene, ikke mot vilkårlige funksjonsklynger.
 
-## Opprette FitSite Planer
+## Opprette FitSite Planer {#creating-the-fitsite-plans}
 
 Gå til **Ultimate Multisite > Products > Add Product** for hver plan.
 
-### Plan 1: FitSite Starter -- $49/mnd
+### Plan 1: FitSite Starter -- $49/mnd {#plan-1-fitsite-starter----49month}
 
 **Målgruppe**: Solo-trenere og små studioer
 
@@ -59,7 +59,7 @@ Gå til **Ultimate Multisite > Products > Add Product** for hver plan.
 - Ditt valgte tema: Force Activate
 - Alle andre temaer: Hidden
 
-### Plan 2: FitSite Growth -- $99/mnd
+### Plan 2: FitSite Growth -- $99/mnd {#plan-2-fitsite-growth----99month}
 
 **Målgruppe**: Etablererte treningssentre i én lokasjon
 
@@ -85,7 +85,7 @@ Gå til **Ultimate Multisite > Products > Add Product** for hver plan.
 - Plan-gruppe: FitSite Plans
 - Produktrekkefølge: 2
 
-### Plan 3: FitSite Pro -- $199/mnd
+### Plan 3: FitSite Pro -- $199/mnd {#plan-3-fitsite-pro----199month}
 
 **Målgruppe**: Treningskjeder med flere lokasjoner
 
@@ -109,7 +109,7 @@ Gå til **Ultimate Multisite > Products > Add Product** for hver plan.
 - Plan-gruppe: FitSite Plans
 - Produktrekkefølge: 3
 
-## Oppsett av Plan-gruppen
+## Oppsett av Plan-gruppen {#setting-up-the-plan-group}
 
 Plan-gruppen sikrer at kundene kun kan oppgradere eller nedgradere innenfor FitSite-planfamilien. På **Up & Downgrades**-fanen for hver plan:
 
@@ -118,7 +118,7 @@ Plan-gruppen sikrer at kundene kun kan oppgradere eller nedgradere innenfor FitS
 
 Dette skaper en klar oppgraderingssti: Starter → Growth → Pro.
 
-## Legge til Order Bumps
+## Legge til Order Bumps {#adding-order-bumps}
 
 Order bumps er tilleggsprodukter som tilbys under kassen. For FitSite, vurder:
 
@@ -128,7 +128,7 @@ Order bumps er tilleggsprodukter som tilbys under kassen. For FitSite, vurder:
 
 Opprett disse som produkter av typen **Package** i Ultimate Multisite og knytt dem til de relevante planene.
 
-## Hvorfor Denne Strukturen Fungerer
+## Hvorfor Denne Strukturen Fungerer {#why-this-structure-works}
 
 - **Starter** fjerner inngangsbarrierer – lav pris, enkelt tilbud, får trenere online raskt
 - **Growth** legger til funksjoner som treningssentre faktisk etterspør – booking, gallerier, custom domains
@@ -136,7 +136,7 @@ Opprett disse som produkter av typen **Package** i Ultimate Multisite og knytt d
 - **Order bumps** lar kundene tilpasse uten å komplisere kjerneplanene
 - **Klar oppgraderingssti** betyr at kundene vokser med deg i stedet for å forlate deg
 
-## FitSite Nettverket Så Langt
+## FitSite Nettverket Så Langt {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Hva Vi Bygget Denne Leksjonen
+## Hva Vi Bygget Denne Leksjonen {#what-we-built-this-lesson}
 
 - **Tre plan-nivåer** kartlagt til virkelige treningsbedriftssegmenter
 - **Funksjonsbegrensning** ved hjelp av Ultimate Multisites plugin- og malkontroller

@@ -4,13 +4,13 @@ title: مەشغۇلات - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# مەشغۇلات: wu_activation
+# مەشغۇلات: wu_activation {#action-wuactivation}
 
 pluginنىڭ باشقا قىسىملىرىنىڭ ئاكتىپلاش ئۈچۈن ئۆز routineلىرىنى باغلىشىغا يول قويىدۇ
 
-### دىن باشلاپ
+### دىن باشلاپ {#since}
 
 - 1.9.6
-### مەنبە
+### مەنبە {#source}
 
 [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L91) دا 91-قۇردا بېكىتىلگەن.

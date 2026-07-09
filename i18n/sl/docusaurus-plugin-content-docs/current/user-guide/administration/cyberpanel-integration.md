@@ -3,25 +3,25 @@ title: Integracija CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integracija z CyberPanelom
+# Integracija z CyberPanelom {#cyberpanel-integration}
 
 Ta vodič pojasnjuje, kako konfigurirati integracijo Ultimate Multisite CyberPanel tako, da se mapirani domeni v vašeta omrežja samodejno dodajo (in odstranjujajo) kot virtualni hosti v CyberPanel, z opcionalno avtomatsko zagotovitvijo SSL-a preko Let's Encrypt.
 
-## Kaj to naredi
+## Kaj to naredi {#what-it-does}
 
 - Ko je domen mapiran v Ultimate Multisite, integracija uporabi API CyberPanel za ustvarjanje virtualnega hosta za taj domen.
 - Ko se odstrani mapiranje domena, integracija uporabi API za odstranitev odgovarjajočega virtualnega hosta.
 - Ko je avtomatsko SSL vključeno, integracija sproži izdanje sertifikata Let's Encrypt takoj po ustvarjanju virtualnega hosta.
 - Opcionalno dodaja/odstranja alias `www.` v skladu z vašim nastavitvami "Auto-create www subdomain" v nastavitvah mapiranja domen.
 
-## Predhodni podatki
+## Predhodni podatki {#prerequisites}
 
 - Delujoč CyberPanel instance (priporočamo verzijo 2.3 ali novje), ki je dostopna iz vaše WordPress serverja.
 - Obstajajoči spletni strani v CyberPanel, ki že služi vaš omrežni koren za WordPress. Integracija prilega nove virtualne hoste temu serverju.
 - Omogočen dostop do CyberPanel API. Avtorizacija uporablja uporabniško ime in geslo vaše administracije CyberPanel.
 - Vaša DNS podatkovna vpis za mapirane domene morajo že usmerjati na IP vašega serverja, preden avtomatsko SSL lahko izda validen sertifikat.
 
-## Zahtevi
+## Zahtevi {#requirements}
 
 Slede konstante morate definirati v datoteci `wp-config.php`:
 

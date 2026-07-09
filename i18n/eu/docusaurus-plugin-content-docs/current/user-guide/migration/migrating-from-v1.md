@@ -3,9 +3,9 @@ title: V1-etik migrazioa egin
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrazioa V1-etik
+# Migrazioa V1-etik {#migrating-from-v1}
 
-## Ultimate Multisite-ak bere orihila 1.x familia-tik bere orihila 2.x familia-ra hasi du.
+## Ultimate Multisite-ak bere orihila 1.x familia-tik bere orihila 2.x familia-ra hasi du. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite bertsio 2.0 eta berriagoak kodearen guztiz berri itxiltzea da, zehandritzen ez da ulertzeko irrizoa oso txiki dago eskuaren artean. Horrek, 1.x-etik 2.x-ra aukeratzen duenean, datuak berri bertsioek erantzute eta ulertzeko formatu bat daiteke itxiltzea behar izango duzu.
 
@@ -15,7 +15,7 @@ Hauko lekurri honek migratorra ondo jakosteko, ezberdinetan zer egin behar duzu 
 
 _**GARRDIRDI: Bertsio 1.x-etik bertsio 2.0-ra aukeratzen hasten den beti, site datuak backup egin duzu eta hori seguru egin duzu.**_
 
-## Lehen urrunak
+## Lehen urrunak {#first-steps}
 
 Lehen urruna da plugin .zip filea aldatu eta berriagoa (version 2.0) network admin dashboardan instalatu.
 
@@ -49,19 +49,19 @@ Key-a ibiltu ondoren, **Agree & Activate** (Erenbegitu eta aktibatu) den botonti
 
 Lisentzia aktibatu ondoren, instalazioa jartzeko prozesua hasi daiteke: lehen irudian **Install** (Instaluatu) den botontik klik egin behar duzu. Horrek version 2.0-re funtzionatzeko beharrezko file eta database-ak automatikoki sortuko dira.
 
-## Arrate, migrazioa
+## Arrate, migrazioa {#now-the-migration}
 
 Migrator-ek funtsezko segurtasun aukera dago, zein da Ultimate Multisite datu guztia ez dute problema edo errazi gabe migra dezake. Prozesua hasten artean **Run Check** botoia klikatu.
 
 Migrazioa jartzen ondoren, bi aukera duzu: errazi **besteko** edo **errazi gabe**.
 
-### Errazdian
+### Errazdian {#with-error}
 
 Errazi bat lortu dutenean, erraza bat bat emandute (support team) ere, errazaa bat arreglatzeko laguntzeko. Ticket bat emanez gero, **errazi logua** ematu behar duzu. Logua download dezakezu edo "contact our support team" den linkuare klik egin dezakezu. Horrek irudiaren hakutik esku-handiari (right-hand side) beharko dituzten espazioak emanez widgeta ofizioko aukera da, errazi loguak deskribapenailean dagoen.
 
 _**Sistema errazi bat aurkitu duela, 2.0 bertsioan migra dezake ez duzu. Horrek errazi arregla denean, errazte irudien networka jarraitzea lortzeko 1.x bertsioan itzale dezakezu.**_
 
-### Errazi gabe
+### Errazi gabe {#without-error}
 
 Sistema bat errazi ez aurkitu duela, suksesko mensajua eta migrazioa jartzen dituzten botoia lekuan (bottom) ikusten duzu. Horren aldeko, irudien database-ak backup egitea emateko aldatzeko eskatzen da, zein da garrantzitsua. Backup bat duela, **Migrate** botoia klikatu.
 

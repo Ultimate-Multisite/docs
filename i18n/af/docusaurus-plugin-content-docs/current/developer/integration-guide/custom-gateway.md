@@ -3,11 +3,11 @@ title: Pasgemaakte poortontwikkeling
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway-ontwikkeling
+# Custom Gateway-ontwikkeling {#custom-gateway-development}
 
 Jy kan pasgemaakte betalingsgateways skep deur die `Base_Gateway`-klas uit te brei.
 
-## Gateway-klas
+## Gateway-klas {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registreer die Gateway
+## Registreer die Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Sleutelmetodes
+## Sleutelmetodes {#key-methods}
 
 | Metode | Doel |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Hanteer terugbetalingsversoeke |
 | `get_payment_methods()` | Gee gestoorde betalingsmetodes vir ’n kliënt terug |
 
-## Hernuwingsbewyse vir herhalende lidmaatskappe
+## Hernuwingsbewyse vir herhalende lidmaatskappe {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 laat gateway-integrasies rapporteer of ’n herhalende lidmaatskap ’n herbruikbare hernuwingsbewys het voordat `auto_renew` voortgesit word. Hook `wu_membership_has_renewal_credential` en gee terug:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Verwyder die ontbrekende-bewys-merker as deel van jou gateway se suksesvolle hermagtigingsvloei nadat ’n nuwe herbruikbare bewys gestoor is.
 
-## Wenke
+## Wenke {#tips}
 
 - Gee altyd `WP_Error` terug by mislukking sodat Ultimate Multisite foutvertoning kan hanteer
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gebruik `wu_log_add()` vir gateway-spesifieke logboekregistrasie
 
-## AI-connector-verskaffervermoëns
+## AI-connector-verskaffervermoëns {#ai-connector-provider-capabilities}
 
 Pasgemaakte integrasies wat AI-connector-gesteunde bewerkings aanroep, moet ooreenstem met die ondersteunde OAuth-verskafferstel wat met AI Provider for Anthropic Max v1.3.0 bekendgestel is:
 

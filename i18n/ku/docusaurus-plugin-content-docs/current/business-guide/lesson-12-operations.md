@@ -3,17 +3,17 @@ title: 'Ders 12: Rêvebirina Karsaziyê'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ders 12: Meşandina Karsaziyê
+# Ders 12: Meşandina Karsaziyê {#lesson-12-running-the-business}
 
 Platform ne projeyek e ku tu bi dawî dikî -- ew karsaziyek e ku tu dimeşînî. Ev ders karên rojane yên birêvebirina FitSite vedigire: piştgirî, billing, parastin, û razîkirina xerîdaran.
 
-## Em Li Ku Ma Bûn
+## Em Li Ku Ma Bûn {#where-we-left-off}
 
 FitSite zindî ye û xerîdar xwe tomar dikin. Niha divê tu karê xwe bi awayekî domdar bimeşînî.
 
-## Karên Rojane
+## Karên Rojane {#daily-operations}
 
-### Şopandin
+### Şopandin {#monitoring}
 
 Van tiştan rojane kontrol bike (an jî hişyariyan saz bike):
 
@@ -22,7 +22,7 @@ Van tiştan rojane kontrol bike (an jî hişyariyan saz bike):
 - **Pereyên têkçûyî**: Ma têkçûnên pereyan hene ku pêdivî bi baldarî hene?
 - **Daxwazên piştgiriyê**: Ma pirsên xerîdaran hene ku hê nehatine bersivandin?
 
-### Piştgiriya Xerîdaran
+### Piştgiriya Xerîdaran {#customer-support}
 
 Baldariya te ya li ser nişê li vir avantaj e. Ji ber ku hemû xerîdarên te stûdyoyên fitness in, tu dê heman pirsan gelek caran bibînî:
 
@@ -36,7 +36,7 @@ Baldariya te ya li ser nişê li vir avantaj e. Ji ber ku hemû xerîdarên te s
 
 Bingeha zanînê ya xwe (ku di Ders 8 de dest pê kir) li ser van pirsên dubare ava bike. Her support ticket ku dikaribû bibe gotareke bingeha zanînê, nîşan e ku divê tu wê gotarê binivîsî.
 
-### Astanên Piştgiriyê
+### Astanên Piştgiriyê {#support-tiers}
 
 Dema tu mezin dibî, piştgiriyê li gorî plan saz bike:
 
@@ -48,9 +48,9 @@ Dema tu mezin dibî, piştgiriyê li gorî plan saz bike:
 
 [Support Tickets addon](/addons/support-tickets) dikare alîkariyê bike ku daxwazên piştgiriyê di nav platform de bên birêvebirin.
 
-## Karên Billing
+## Karên Billing {#billing-operations}
 
-### Pereyên Dubare
+### Pereyên Dubare {#recurring-payments}
 
 Ultimate Multisite billing-a dubare bi awayekî otomatîk bi rêya payment gateway-a te dimeşîne. Karê te ev e ku van tiştan bişopînî:
 
@@ -58,7 +58,7 @@ Ultimate Multisite billing-a dubare bi awayekî otomatîk bi rêya payment gatew
 - **Dunning**: Mantiqa hewildana dubare ya otomatîk bi rêya payment gateway-a xwe saz bike (Stripe vê baş dike)
 - **Daxwazên betalkirinê**: Fêm bike çima xerîdar diçin. Her betalkirin feedback e.
 
-### Birêvebirina Memberships
+### Birêvebirina Memberships {#managing-memberships}
 
 Biçe **Ultimate Multisite > Memberships** ji bo:
 
@@ -69,13 +69,13 @@ Biçe **Ultimate Multisite > Memberships** ji bo:
 
 Ji bo referansa tevahî, [Birêvebirina Memberships](/user-guide/administration/managing-memberships) bibîne.
 
-### Fature
+### Fature {#invoicing}
 
 Piştrast bike ku ji bo her pereyekî fature rast çêdibin. Xerîdar dikarin ji bo raporkirina mesrefên karsaziyê fatureyan bixwazin. [Birêvebirina Pere û Fatureyan](/user-guide/administration/managing-payments-and-invoices) bibîne.
 
-## Parastina Platformê
+## Parastina Platformê {#platform-maintenance}
 
-### Nûkirinên WordPress û Plugin
+### Nûkirinên WordPress û Plugin {#wordpress-and-plugin-updates}
 
 Wek rêveberê torê, tu berpirsiyar î ji bo:
 
@@ -88,14 +88,14 @@ Wek rêveberê torê, tu berpirsiyar î ji bo:
 Nûkirineke xerab bandorê li her malpera xerîdarê li ser tora te dike. Her dem pêşî nûkirinan li ser kopiyeke staging ya tora xwe test bike.
 :::
 
-### Ewlehî
+### Ewlehî {#security}
 
 - Hemû software-ê nû bihêle
 - Ji bo Account-ên admin şîfreyên bihêz û erêkirina du-faktorî bikar bîne
 - Çalakiyên gumanbar bişopîne
 - Ji bo bûyerên ewlehiyê planek hebe
 
-### Performans
+### Performans {#performance}
 
 Dema tora te mezin dibe, van tiştan bişopîne:
 
@@ -105,9 +105,9 @@ Dema tora te mezin dibe, van tiştan bişopîne:
 
 Heke hê te nekiriye, li ser sepandina caching (page cache, object cache) û CDN-ê bifikire. [Cloudflare integration](/user-guide/host-integrations/cloudflare) gelek ji vê karê dimeşîne.
 
-## Birêvebirina Çerxa Jiyana Xerîdar
+## Birêvebirina Çerxa Jiyana Xerîdar {#customer-lifecycle-management}
 
-### Kêmkirina Churn
+### Kêmkirina Churn {#reducing-churn}
 
 Churn rêjeya xerîdaran e ku her meh betal dikin. Ji bo karsaziyeke subscription, kêmkirina churn qasî bidestxistina xerîdarên nû girîng e.
 
@@ -119,7 +119,7 @@ Churn rêjeya xerîdaran e ku her meh betal dikin. Ji bo karsaziyeke subscriptio
 - Wan alternatîfek erzanîtir dît → nirxa nişê ya xwe xurt bike
 - Karsaziya wan girtî bû → neçar e, lê vê cuda bişopîne
 
-### Teşwîqkirina Upgrade-an
+### Teşwîqkirina Upgrade-an {#encouraging-upgrades}
 
 Xerîdarên li ser Starter ku serkeftî ne divê werin teşwîqkirin ku upgrade bikin:
 
@@ -127,7 +127,7 @@ Xerîdarên li ser Starter ku serkeftî ne divê werin teşwîqkirin ku upgrade 
 - Email-ên armanckirî bişîne ku taybetmendiyên plan-a Growth yên ji wan re sûdmend ronî dikin
 - Nîşan bide ku xerîdarên Growth/Pro çi ava kirine
 
-### Kampanyayên Vegerandinê
+### Kampanyayên Vegerandinê {#win-back-campaigns}
 
 Dema xerîdarek betal dike:
 
@@ -135,30 +135,30 @@ Dema xerîdarek betal dike:
 2. Heke gengaz be, xemê wan çareser bike
 3. Ji bo vegerê daxistineke pêşkêş bike (30-60 roj piştî betalkirinê)
 
-## Rûtînên Hefteyî û Mehane
+## Rûtînên Hefteyî û Mehane {#weekly-and-monthly-routines}
 
-### Hefteyî
+### Hefteyî {#weekly}
 
 - Tomarbûnên nû û betalkirinan binirxîne
 - Bersiva hemû support ticket-ên vekirî bide
 - Performansa platformê û uptime kontrol bike
 - Her pereya têkçûyî binirxîne
 
-### Mehane
+### Mehane {#monthly}
 
 - Metrîkên girîng analîz bike (MRR, churn, xerîdarên nû, upgrade)
 - Nûkirinên WordPress û plugin bisepîne (piştî testa staging)
 - Li gorî şêwazên piştgiriyê bingeha zanînê binirxîne û nû bike
 - Newsletter an nûkirinek ji xerîdaran re bişîne (taybetmendiyên nû, şîret, nûçeyên pîşesaziya fitness)
 
-### Sêmehane
+### Sêmehane {#quarterly}
 
 - Nirxan li hember hevrikan û feedback-a xerîdaran binirxîne
 - Sêwiranên template binirxîne -- ma pêdivî bi nûkirinê hene?
 - Kapasîteya hosting binirxîne -- ma pêdivî ye ku tu mezin bikî?
 - Li gorî daneyên çalakbûnê onboarding binirxîne û baştir bike
 
-## Me Di Vê Dersê De Çi Ava Kir
+## Me Di Vê Dersê De Çi Ava Kir {#what-we-built-this-lesson}
 
 - **Rûtînên çavdêriya rojane** ji bo uptime, tomarkirin, dayîn û piştgirî
 - **Avahiyek piştgiriyê ya astkirî** ku bi astên plan re tê lihevkirin

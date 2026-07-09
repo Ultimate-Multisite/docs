@@ -4,11 +4,11 @@ title: Aksi - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields
+# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Ngidini pangembang plugin nyimpen data meta pangguna kanthi cara sing beda yen dibutuhake.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Ngidini pangembang plugin nyimpen data meta pangguna kanthi cara sing beda yen d
 | $customer | `\Customer` | Objek pelanggan Ultimate Multisite. |
 | $checkout | `\Checkout` | Kelas checkout. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.4
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) ing baris 1244

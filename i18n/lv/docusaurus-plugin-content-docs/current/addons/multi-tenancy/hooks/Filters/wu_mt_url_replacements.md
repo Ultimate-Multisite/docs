@@ -4,11 +4,11 @@ title: Filtrs - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Filtrs: wu_mt_url_replacements
+# Filtrs: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 Filtrē URL aizvietošanas pārus.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtrē URL aizvietošanas pārus.
 | $new_url | `string` | Jaunais URL. |
 | $blog_id | `int` | Bloga ID. |
 
-### Kopš
+### Kopš {#since}
 
 - 1.0.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) 151. rindā

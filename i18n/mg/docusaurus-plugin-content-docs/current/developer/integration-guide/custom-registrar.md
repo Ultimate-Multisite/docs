@@ -3,13 +3,13 @@ title: Fananganana fampidirana mpisoratra anarana namboarina manokana
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Fananganana Fampidirana Registrar Manokana
+# Fananganana Fampidirana Registrar Manokana {#building-a-custom-registrar-integration}
 
 Ny Domain Seller addon dia mampiasa lamina **Integration Registry**. Ny registrar tsirairay dia class PHP izay mampihatra `Domain_Selling_Capability` ary manoratra ny tenany amin’ny alalan’ny action hook `wu_domain_seller_register_capabilities`.
 
 Ity torolalana ity dia mampiseho ny fomba hampifandraisana registrar manokana.
 
-## Ny interface
+## Ny interface {#the-interface}
 
 Ny class-nao dia tsy maintsy mampihatra `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ary manitatra `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Fomba tsy voatery
+### Fomba tsy voatery {#optional-methods}
 
 Ampiharo ireto mba hanokafana endri-javatra fanampiny. Ny addon dia mamantatra ny fanohanana amin’ny alalan’ny `method_exists()`:
 
@@ -81,7 +81,7 @@ Ampiharo ireto mba hanokafana endri-javatra fanampiny. Ny addon dia mamantatra n
 | `get_epp_code(string $domain_name): array` | Famindrana domain (mivoaka) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Famindrana domain (miditra) |
 
-### Fomba fanao amin’ny sanda averina
+### Fomba fanao amin’ny sanda averina {#return-value-convention}
 
 Ny fomba rehetra dia mamerina array iray izay ahitana farafahakeliny key `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Fisoratana ny capability-nao
+## Fisoratana ny capability-nao {#registering-your-capability}
 
 Soraty ny class-nao amin’ny fampiasana ny action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Ny argument voalohany amin’ny `add_capability()` dia ny **provider ID** — sl
 
 ---
 
-## Fanampiana saha credential amin’ny wizard
+## Fanampiana saha credential amin’ny wizard {#adding-credential-fields-to-the-wizard}
 
 Mba hahafahan’ny admins mampiditra credentials amin’ny alalan’ny setup wizard, soraty ny integration-nao:
 
@@ -137,7 +137,7 @@ Tehirizina ho network options ny credentials amin’ny fampiasana ny ID-n’ny s
 
 ---
 
-## Hooks ho an’ny asa aorian’ny fisoratana anarana
+## Hooks ho an’ny asa aorian’ny fisoratana anarana {#hooks-for-post-registration-actions}
 
 Ampiasao ireto actions ireto hanentanana webhooks, provisioning, fampahafantarana, na fanavaozana CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Fandraketana log
+## Fandraketana log {#logging}
 
 Soraty ao amin’ny fantsona log manokana ho an’ny provider-nao amin’ny fampiasana `wu_log_add()`:
 

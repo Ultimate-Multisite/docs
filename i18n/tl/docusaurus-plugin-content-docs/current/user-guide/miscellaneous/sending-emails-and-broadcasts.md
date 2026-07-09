@@ -3,13 +3,13 @@ title: Pagpapadala ng mga Email at Broadcast
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Pagpapadala ng mga Email at Broadcast (v2)
+# Pagpapadala ng mga Email at Broadcast (v2) {#sending-emails-and-broadcasts-v2}
 
 _**MAHALAGANG TANDAAN: Tumutukoy ang artikulong ito sa Ultimate Multisite bersyon 2.x.**_
 
 May kasamang feature ang Ultimate Multisite na magbibigay-daan sa iyo na makipag-ugnayan sa iyong mga customer sa pamamagitan ng pagpapadala ng email sa isang target na user o grupo ng mga user, pati na rin pagpapadala ng mga abiso sa kanilang admin dashboard upang mag-broadcast ng mga anunsyo
 
-## Magdagdag ng mga admin notice sa dashboard ng iyong mga customer gamit ang Broadcasts
+## Magdagdag ng mga admin notice sa dashboard ng iyong mga customer gamit ang Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Gamit ang broadcast feature ng Ultimate Multisite, maaari kang magdagdag ng **mga admin notice** sa subsite admin dashboard ng iyong user.
 
@@ -51,7 +51,7 @@ Pagkatapos gawin ang iyong mensahe, maaari mo nang pindutin ang button na **Ipad
 
 At iyon na iyon. Dapat agad na lumabas ang admin notice sa dashboard ng iyong user.
 
-## Magpadala ng mga email sa iyong mga customer
+## Magpadala ng mga email sa iyong mga customer {#send-emails-to-your-customers}
 
 Gamit ang broadcast feature ng Ultimate Multisite, maaari kang magpadala ng email sa iyong mga user. May opsyon kang ipadala ang email lamang sa mga partikular na user o mag-target ng partikular na grupo ng user batay sa produkto o plan na naka-subscribe sila.
 
@@ -81,11 +81,11 @@ Pagkatapos gawin ang iyong mensahe, maaari mong pindutin ang button na **Ipadala
 
 At ganoon kadaling magpadala ng email sa iyong mga end-user gamit ang broadcast feature.
 
-## Mga system email
+## Mga system email {#system-emails}
 
 Ang mga system email sa Ultimate Multisite ay ang mga **awtomatikong notification** na ipinapadala ng system pagkatapos ng ilang partikular na aksyon tulad ng registration, payment, domain mapping, atbp. Maaaring i-edit o baguhin ang mga email na ito mula sa settings ng Ultimate Multisite. May kasama rin itong feature na magbibigay-daan sa iyo na i-reset at i-import ang mga umiiral na setting mula sa isa pang installation ng Ultimate Multisite.
 
-### Pag-reset at Pag-import
+### Pag-reset at Pag-import {#resetting--importing}
 
 Ang mga bagong bersyon ng Ultimate Multisite, pati na rin ang mga add-on, ay maaari at magrerehistro ng mga bagong email paminsan-minsan.
 
@@ -93,7 +93,7 @@ Upang maiwasan ang mga conflict at iba pang isyu, **hindi namin awtomatikong ida
 
 Gayunpaman, maaaring i-import ng mga super admin at agent ang mga bagong rehistradong email na ito sa pamamagitan ng importer tool. Ang prosesong iyon ay gagawa ng bagong system email na may nilalaman at configuration ng bagong email template, na nagpapahintulot sa super admin na gumawa ng anumang pagbabago na nais nila o panatilihin ang mga ito kung ano ang kasalukuyan.
 
-#### Paano mag-import ng mga system email
+#### Paano mag-import ng mga system email {#how-to-import-system-emails}
 
 Pumunta sa iyong pahina ng Ultimate Multisite Settings at magtungo sa tab na **Emails**.
 
@@ -111,7 +111,7 @@ Pagkatapos, maaari mong i-toggle ang mga opsyon ng Import Emails upang makita ku
 
 <!-- Hindi available ang screenshot: Reset at Import modal na may pinalawak na mga opsyon sa Import Emails -->
 
-#### Pag-reset ng System Emails
+#### Pag-reset ng System Emails {#reseting-system-emails}
 
 Sa ibang pagkakataon, mapapansin mong hindi na gumagana para sa iyo ang mga pagbabagong ginawa mo sa isang partikular na template ng email at nais mong i-reset ito sa **default state** nito.
 

@@ -3,7 +3,7 @@ title: Ukuphathwa kweRhafu
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ukuphathwa kweRhafu
+# Ukuphathwa kweRhafu {#tax-handling}
 
 Ultimate Multisite inemodyuli yokuqokelela irhafu eyakhelwe kwi-plugin yethu engundoqo, ngoko ukuba kufuneka uqokelele iirhafu zentengiso kwizicwangciso zakho, iipakethe kunye neenkonzo, ungakwenza oko ngokulula ngaphandle kokubhenela ekufakeni naziphi na ii-add-ons.
 
@@ -11,7 +11,7 @@ Kwiinkampani eziseYurophu, sinikezela nge-**add-on** eyongeza izixhobo kunye nee
 
 Ultimate Multisite ayifayili okanye ayithumeli iirhafu egameni lakho kurhulumente; sikunceda nje uqokelele iirhafu ezifanelekileyo ngexesha lentengiselwano. **Kusafuneka uthumele iirhafu ngokwakho.**
 
-## Ukwenza Ukuqokelelwa Kwerhafu Kusebenze
+## Ukwenza Ukuqokelelwa Kwerhafu Kusebenze {#enabling-tax-collection}
 
 Ukuqokelelwa kwerhafu akusebenzi ngokungagqibekanga. Ukuze ukwenze kusebenze, kufuneka uye ku-**Ultimate Multisite > Settings > Taxes** uze utshintshe ukuze wenze isethingi ethi Enable Taxes isebenze.
 
@@ -25,7 +25,7 @@ Unokujonga kwakhona iisethingi zerhafu zeemveliso ezizodwa:
 
 ![Iisethingi zerhafu zeemveliso](/img/config/settings-taxes.png)
 
-### Irhafu engafakwanga vs. Irhafu efakiweyo
+### Irhafu engafakwanga vs. Irhafu efakiweyo {#tax-excluded-vs-tax-included}
 
 Ngokungagqibekanga, onke amaxabiso eemveliso zakho awabandakanyi rhafu, okuthetha ukuba iirhafu **azifakwanga** kwixabiso lemveliso. Ukuba sigqiba ukuba umthengi kufuneka ahlawule iirhafu kwintengo ethile, siya kongeza iirhafu **ngaphezulu** kwesixa esingaphambi kwerhafu.
 
@@ -37,7 +37,7 @@ Ungalibali **ukugcina** utshintsho olwenzileyo.
 
 ###
 
-## Ukwenza Amaxabiso Erhafu
+## Ukwenza Amaxabiso Erhafu {#creating-tax-rates}
 
 Emva kokuba wenze Ukuqokelelwa Kwerhafu kusebenze, kuya kufuneka wenze amaxabiso erhafu kwiindawo ezithile usebenzisa umhleli wethu wamaxabiso erhafu.
 
@@ -51,7 +51,7 @@ Kwiphepha lomhleli wamaxabiso erhafu, ungongeza Amaxabiso Erhafu amatsha ngokuco
 
 Kuya kufuneka unike ixabiso ngalinye lerhafu **isihloko** (esisetyenziswa kwii-invoices). Emva koko ungakhetha **ilizwe** (liyafuneka), **iphondo,** kunye **nesixeko** (zombini ziyakhethwa) apho le rhafu iza kuhlawuliswa khona. Ekugqibeleni, yongeza **ixabiso lerhafu ngeepesenti**.
 
-### Iindidi Zerhafu
+### Iindidi Zerhafu {#tax-categories}
 
 Unokwenza kwakhona Iindidi Zerhafu ezininzi, ukuze wongeze amaxabiso erhafu ahlukeneyo kwiintlobo ezahlukeneyo zeemveliso.
 
@@ -73,7 +73,7 @@ Ungaseta udidi lwerhafu lwemveliso ethile ngokuya ku-**Product edit page** emva 
 
 Kweso sikrini sinye, ungacima isitshintshi se-**Is Taxable?** ukuze wazise Ultimate Multisite ukuba ayifanele iqokelele iirhafu kuloo mveliso inikiweyo.
 
-## Inkxaso ye-VAT yaseYurophu
+## Inkxaso ye-VAT yaseYurophu {#european-vat-support}
 
 Njengoko kukhankanyiwe ngaphambili, sine-add-on ekhoyo kumthengi ose-EU oneemfuno ezongezelelweyo ngenxa yemimiselo ye-VAT yaseYurophu.
 
@@ -101,7 +101,7 @@ Ukuba ubuyela ku-**Tax Settings tab** , uya kubona iinketho ezintsha ezikhoyo. T
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Ukutsala Amaxabiso Erhafu ye-VAT
+### Ukutsala Amaxabiso Erhafu ye-VAT {#pulling-on-vat-tax-rates}
 
 Esinye sezixhobo ezongezwa ludibaniso lwethu kukukwazi ukulayisha amaxabiso erhafu kumazwe angamalungu e-EU. Oko kunokwenziwa ngokundwendwela iphepha lomhleli wamaxabiso erhafu emva kokwenza inkxaso ye-EU VAT isebenze.
 
@@ -111,7 +111,7 @@ Emazantsi ephepha, uya kubona iinketho zokutsala i-VAT. Ukukhetha uhlobo lwexabi
 
 Ungawahlela kwakhona amaxabiso emva kokuwatsala. Ukuze wenze oko, hlela nje umgca wetheyibhile owudingayo uze ucofe ukugcina amaxabiso amatsha.
 
-### Ukuqinisekiswa kwe-VAT
+### Ukuqinisekiswa kwe-VAT {#vat-validation}
 
 Xa inkxaso ye-VAT yenziwe yasebenza, Ultimate Multisite iya kongeza indawo eyongezelelweyo kwifomu ye-checkout, ngaphantsi kwendawo yedilesi yokuhlawula. Le ndawo iya kubonakala kuphela kubathengi abakwi-EU.
 

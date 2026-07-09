@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency membolehkan rangkaian anda menerima pembayaran dalam pelbagai mata wang. Ia secara automatik menukar harga menggunakan kadar pertukaran hidup atau manual, membenarkan anda menetapkan harga tepat bagi setiap produk dalam mana-mana mata wang, dan mengesan mata wang pilihan setiap pelawat melalui geolokasi — semuanya diuruskan dari satu papan pemuka pentadbir.
 
-## Ciri-ciri Utama
+## Ciri-ciri Utama {#key-features}
 
 - **Penukaran kadar pertukaran automatik** — harga ditukar daripada mata wang asas anda menggunakan kadar yang diambil daripada pembekal pilihan anda
 - **Penindasan harga per-produk** — tetapkan harga spesifik mata wang pada mana-mana produk untuk memintas penukaran automatik
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency membolehkan rangkaian anda menerima pembayara
 - **Pengesanan mata wang berasaskan geolokasi** — secara automatik memilih mata wang yang sepadan dengan negara pelawat
 - **Papan pemuka pentadbir** — uruskan mata wang aktif, kadar pertukaran, dan tetapan pembekal dari satu tempat
 
-## Keperluan
+## Keperluan {#requirements}
 
 - Ultimate Multisite 2.0.0 atau lebih tinggi
 - Pemasangan WordPress Multisite
 - PHP 7.4 atau lebih tinggi
 
-## Pemasangan
+## Pemasangan {#installation}
 
 1. Muat naik fail plugin ke `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktifkan plugin melalui skrin **Plugins** dalam WordPress (Aktifkan Rangkaian)
 3. Navigasi ke **Ultimate Multisite → Multi-Currency** untuk membuka papan pemuka pentadbir
 4. Tambah mata wang yang anda ingin terima dan konfigurasikan pembekal kadar pertukaran anda
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
-### Papan Pemuka Pentadbir
+### Papan Pemuka Pentadbir {#admin-dashboard}
 
 Papan pemuka pentadbir Multi-Currency (**Ultimate Multisite → Multi-Currency**) adalah tempat pusat untuk:
 
@@ -44,7 +44,7 @@ Papan pemuka pentadbir Multi-Currency (**Ultimate Multisite → Multi-Currency**
 - Menyemak kadar semasa untuk semua mata wang aktif
 - Menetapkan kadar manual apabila pembekal automatik tidak sesuai
 
-### Pembekal Kadar Pertukaran
+### Pembekal Kadar Pertukaran {#exchange-rate-providers}
 
 | Pembekal | Penerangan |
 |---|---|
@@ -55,7 +55,7 @@ Papan pemuka pentadbir Multi-Currency (**Ultimate Multisite → Multi-Currency**
 
 Pilih pembekal anda di bawah **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kadar boleh disegarkan secara manual pada bila-bila masa atau dijadualkan untuk dikemas kini secara automatik.
 
-### Penindasan Harga Per-Produk
+### Penindasan Harga Per-Produk {#per-product-pricing-overrides}
 
 Apabila penukaran automatik tidak cukup tepat, anda boleh menetapkan harga tepat untuk mata wang tertentu pada mana-mana produk:
 
@@ -66,7 +66,7 @@ Apabila penukaran automatik tidak cukup tepat, anda boleh menetapkan harga tepat
 
 Produk tanpa penindasan akan menggunakan harga yang ditukar daripada mata wang asas anda.
 
-### Medan Pendaftaran Pemilih Mata Wang
+### Medan Pendaftaran Pemilih Mata Wang {#currency-selector-signup-field}
 
 Medan pemilih mata wang boleh ditambah ke aliran pendaftaran/checkout anda supaya pelanggan memilih mata wang pilihan mereka semasa mendaftar:
 
@@ -76,7 +76,7 @@ Medan pemilih mata wang boleh ditambah ke aliran pendaftaran/checkout anda supay
 
 Mata wang yang dipilih disimpan bersama langganan dan digunakan untuk semua bil berikutnya.
 
-### Pengesanan Mata Wang Berasaskan Geolokasi
+### Pengesanan Mata Wang Berasaskan Geolokasi {#geolocation-based-currency-detection}
 
 Apabila pengesanan geolokasi diaktifkan, addon memetakan negara pelawat kepada mata wang dan memilihnya secara pra-pilihan dalam medan pemilih mata wang. Untuk mengaktifkan:
 
@@ -86,27 +86,27 @@ Apabila pengesanan geolokasi diaktifkan, addon memetakan negara pelawat kepada m
 
 Jika tiada pemetaan wujud untuk negara pelawat, mata wang asas rangkaian digunakan sebagai pilihan sandaran.
 
-## Soalan Lazim
+## Soalan Lazim {#frequently-asked-questions}
 
-### Apa yang berlaku jika pembekal kadar pertukaran tidak tersedia?
+### Apa yang berlaku jika pembekal kadar pertukaran tidak tersedia? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon akan kembali kepada kadar yang berjaya diambil kali terakhir. Jika tiada kadar pernah diambil, ia akan kembali kepada kadar manual yang telah anda konfigurasikan. Disyorkan untuk mengkonfigurasikan kadar manual sebagai langkah keselamatan.
 
-### Bolehkah saya menggunakan pembekal yang berbeza untuk mata wang yang berbeza?
+### Bolehkah saya menggunakan pembekal yang berbeza untuk mata wang yang berbeza? {#can-i-use-different-providers-for-different-currencies}
 
 Tidak — satu pembekal aktif pada satu masa untuk semua mata wang. Gunakan **Manual** jika anda memerlukan kawalan penuh ke atas kadar individu.
 
-### Adakah geolokasi memerlukan plugin berasingan?
+### Adakah geolokasi memerlukan plugin berasingan? {#does-geolocation-require-a-separate-plugin}
 
 Tiada plugin geolokasi luaran diperlukan. Addon menggunakan pengesanan IP-ke-negara terbina dalam WordPress. Untuk ketepatan yang lebih tinggi, perkhidmatan geolokasi khusus boleh diintegrasikan melalui *hook* penapis yang disediakan.
 
-### Adakah penindasan per-produk dikenakan sebelum atau selepas cukai?
+### Adakah penindasan per-produk dikenakan sebelum atau selepas cukai? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Penindasan per-produk menetapkan harga pra-cukai dalam mata wang sasaran. Cukai dikira di atas harga penindasan menggunakan konfigurasi cukai anda yang sedia ada.
 
-## Log Perubahan
+## Log Perubahan {#changelog}
 
-### Versi 1.0.0 — Dikeluarkan pada 2026-04-02
+### Versi 1.0.0 — Dikeluarkan pada 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Baharu: Sokongan multi-mata wang dengan penukaran kadar pertukaran automatik
 - Baharu: Penindasan harga per-produk untuk harga spesifik mata wang yang tepat

@@ -3,7 +3,7 @@ title: So kündigen Sie ein Abonnement
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Wie kann ich mein Abonnement kündigen?
+# Wie kann ich mein Abonnement kündigen? {#how-can-i-cancel-my-subscription}
 
 Wenn du eine Ultimate Multisite-Lizenz hast, kannst du deren Verlängerung jederzeit kündigen. Folge einfach den untenstehenden Schritten:
 

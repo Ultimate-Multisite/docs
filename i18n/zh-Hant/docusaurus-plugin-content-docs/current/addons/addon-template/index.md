@@ -3,25 +3,25 @@ title: 外掛範本
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# 外掛範本
+# 外掛範本 {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## 需求
+## 需求 {#requirements}
 
 - WordPress 5.3 或更高版本
 - PHP 7.4 或更高版本
 - Multisite Ultimate 外掛 (需啟用)
 
-## 安裝
+## 安裝 {#installation}
 
 1. 將外掛檔案上傳到您的 `/wp-content/plugins/` 目錄
 2. 透過 WordPress 的「外掛」選單啟用外掛
 3. 在網路管理員介面配置外掛設定
 
-## 開發
+## 開發 {#development}
 
-### 設定
+### 設定 {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### 專案結構
+### 專案結構 {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # 代碼現代化規則
 ```
 
-### 測試
+### 測試 {#testing}
 
 此外掛包含一個全面的測試框架：
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **測試覆蓋率 (Test Coverage)**：已配置用於追蹤代碼覆蓋率
 - **多站點測試 (Multisite Testing)**：測試會在多站點環境中運行
 
-### 代碼標準
+### 代碼標準 {#code-standards}
 
 - **WordPress 代碼標準 (WordPress Coding Standards)**：透過 PHPCS 執行強制檢查
 - **PHP 7.4+ 相容性 (PHP 7.4+ Compatibility)**：支援現代 PHP 功能
 - **靜態分析 (Static Analysis)**：整合 PHPStan 進行型別檢查
 - **代碼現代化 (Code Modernization)**：使用 Rector 規則進行 PHP 升級
 
-### 建構系統
+### 建構系統 {#build-system}
 
 - **資源處理 (Asset Processing)**：對 CSS/JS 檔案進行最小化處理 (Minification)
 - **翻譯 (Translation)**：生成 POT 檔案
 - **打包 (Packaging)**：創建用於發佈的壓縮檔案
 - **開發模式 (Development Mode)**：提供未最小化的資源檔案，用於除錯
 
-## 配置
+## 配置 {#configuration}
 
 此外掛支援多種配置選項，您可以在網路管理員介面中存取。
 
-## Hooks 與 Filters
+## Hooks 與 Filters {#hooks-and-filters}
 
-### Actions (動作)
+### Actions (動作) {#actions}
 
 - `ultimate-multisite-addon-template_init` - 在外掛初始化後觸發
 - `ultimate-multisite-addon-template_loaded` - 在所有外掛檔案載入後觸發
 
-### Filters (過濾器)
+### Filters (過濾器) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - 修改外掛設定
 - `ultimate-multisite-addon-template_enabled` - 覆寫外掛的啟用/停用狀態
 
-## 授權
+## 授權 {#license}
 
 此外掛根據 GPL v3 或更高版本授權。
 
-## 支援
+## 支援 {#support}
 
 如需支援和文件，請造訪 [MultisiteUltimate.com](https://multisiteultimate.com)
-## 更新日誌
+## 更新日誌 {#changelog}
 
 - Version 1.0.1 (2025-09-28)：將前綴名稱重命名為 ultimate-multisite；更新文字域 (text domain)；版本號提升。
 

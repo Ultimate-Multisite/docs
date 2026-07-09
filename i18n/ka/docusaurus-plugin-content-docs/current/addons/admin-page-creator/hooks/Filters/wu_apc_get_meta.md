@@ -4,11 +4,11 @@ title: ფილტრი - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 საშუალებას აძლევს დეველოპერებს გაფილტრონ საბოლოო მნიშვნელობები და დაამატონ დამუშავების ახალი შემთხვევები.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 | $meta_type | `string` | მისაღები მეტა-მონაცემების ტიპი. |
 | $meta_key | `string` | მეტა ველის სახელი. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 1.4.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93)-ში, 93-ე ხაზზე
 
 
-## აბრუნებს
+## აბრუნებს {#returns}
 ახალი ნაგულისხმევი მნიშვნელობა.

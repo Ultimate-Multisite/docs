@@ -3,18 +3,18 @@ title: କ୍ଲାଉଡଫ୍ଲାର ଇଣ୍ଟିଗ୍ରେସନ୍
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# ক্লাউডফ্লেয়ার ইন্টিগ্রেশন
+# ক্লাউডফ্লেয়ার ইন্টিগ্রেশন {#cloudflare-integration}
 
-## ওভারভিউ
+## ওভারভিউ {#overview}
 ক্লাউডফ্লেয়ার হলো একটি শীর্ষস্থানীয় কন্টেন্ট ডেলিভারি নেটওয়ার্ক (CDN) এবং সিকিউরিটি প্রোভাইডার যা ওয়েবসাইটগুলিকে রক্ষা করতে এবং দ্রুত করতে সাহায্য করে। এই ইন্টিগ্রেশনটি Ultimate Multisite এবং Cloudflare-এর মধ্যে স্বয়ংক্রিয় ডোমেইন ম্যানেজমেন্ট সক্ষম করে, বিশেষ করে সাবডোমেইন মাল্টিসাইট ইনস্টলেশনের ক্ষেত্রে।
 
-## বৈশিষ্ট্যসমূহ
+## বৈশিষ্ট্যসমূহ {#features}
 - ক্লাউডফ্লেয়ারে স্বয়ংক্রিয় সাবডোমেইন তৈরি
 - প্রক্সি করা সাবডোমেইন সাপোর্ট
 - DNS রেকর্ড ম্যানেজমেন্ট
 - Ultimate Multisite অ্যাডমিনে উন্নত DNS রেকর্ড প্রদর্শন
 
-## প্রয়োজনীয়তা
+## প্রয়োজনীয়তা {#requirements}
 আপনার `wp-config.php` ফাইলে নিম্নলিখিত কনস্ট্যান্টগুলি সংজ্ঞায়িত করতে হবে:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## সেটআপ নির্দেশাবলী
+## সেটআপ নির্দেশাবলী {#setup-instructions}
 
-### ১. আপনার ক্লাউডফ্লেয়ার API কী সংগ্রহ করুন
+### ১. আপনার ক্লাউডফ্লেয়ার API কী সংগ্রহ করুন {#1-get-your-cloudflare-api-key}
 
 ১. আপনার ক্লাউডফ্লেয়ার ড্যাশবোর্ডে লগ ইন করুন।
 ২. "My Profile"-এ যান (উপরে ডানদিকে আপনার ইমেলের উপর ক্লিক করুন)।
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 ৫. আপনার API টোকেনটি কপি করুন।
 
-### ২. আপনার জোন আইডি সংগ্রহ করুন
+### ২. আপনার জোন আইডি সংগ্রহ করুন {#2-get-your-zone-id}
 
 ১. আপনার ক্লাউডফ্লেয়ার ড্যাশবোর্ডে, আপনি যে ডোমেইনটি ব্যবহার করতে চান সেটি নির্বাচন করুন।
 ২. "Overview" ট্যাবে এবং ডানদিকের সাইডবারে "API"-এর অধীনে "Zone ID" দেখতে পাবেন।
 ৩. Zone ID কপি করুন।
 
-### ৩. wp-config.php এ কনস্ট্যান্ট যোগ করুন
+### ৩. wp-config.php এ কনস্ট্যান্ট যোগ করুন {#3-add-constants-to-wp-configphp}
 
 আপনার `wp-config.php` ফাইলে নিম্নলিখিত কনস্ট্যান্টগুলি যোগ করুন:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### ৪. ইন্টিগ্রেশন সক্ষম করুন
+### ৪. ইন্টিগ্রেশন সক্ষম করুন {#4-enable-the-integration}
 
 ১. আপনার ওয়ার্ডপ্রেস অ্যাডমিন থেকে, Ultimate Multisite > Settings-এ যান।
 ২. "Domain Mapping" ট্যাবে যান।
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ৪. ক্লাউডফ্লেয়ার ইন্টিগ্রেশন চালু করুন।
 ৫. "Save Changes" ক্লিক করুন।
 
-## এটি কিভাবে কাজ করে
+## এটি কিভাবে কাজ করে {#how-it-works}
 
-### সাবডোমেইন ম্যানেজমেন্ট
+### সাবডোমেইন ম্যানেজমেন্ট {#subdomain-management}
 
 যখন একটি সাবডোমেইন মাল্টিসাইট ইনস্টলেশনে একটি নতুন সাইট তৈরি করা হয়:
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. ডিଫାଉଟ୍ ଭାବରେ ସେହି সাবডোমେ인을 Cloudflare ମାଧ୍ୟମରେ ପ୍ରୋକ୍ସି (proxy) କରିବା ପାଇଁ ଠିକ୍ କରାଯାଇଥାଏ (ଏହା filters ଦ୍ୱାରା ବଦଳାଇପାରିବ)।
 3. ଯେତେବେଳେ ଏକ ସାଇଟ୍ ଡିଲିଟ୍ ହୁଏ, ଆଇଣ୍ଟିଗ୍ରେସନ୍ Cloudflare ରୁ ସେହି সাবডোমେઇన్‌କୁ ଉପରେ ଅନୁଯାୟୀ ବାହାର କରିଦେବ।
 
-### DNS ରେକର୍ଡ ପ୍ରଦର୍ଶନ (DNS Record Display)
+### DNS ରେକର୍ଡ ପ୍ରଦର୍ଶନ (DNS Record Display) {#dns-record-display}
 
 ଆଇଣ୍ଟିଗ୍ରେସନ୍ Ultimate Multisite एडମିନ୍ ମଧ୍ୟରେ DNS ରେକର୍ଡର ପ୍ରଦର୍ଶନକୁ ନିମ୍ନଲିଖିତ ଉପାୟରେ ବଢ଼ାଇ ଦିଏ:
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. ରେକର୍ଡଗୁଡ଼ିକ ପ୍ରୋକ୍ସି ହେଉଛନ୍ତି କି ନାହିଁ, ତାହା ଦେଖାଇବା।
 3. DNS ରେକର୍ଡ ବିଷୟରେ ଅତିରିକ୍ତ ସୂଚନା ଦେଖାଇବା।
 
-## Cloudflare কাস্টମ ହୋଷ୍ଟନେମ୍ (Cloudflare Custom Hostnames)
+## Cloudflare কাস্টମ ହୋଷ୍ଟନେମ୍ (Cloudflare Custom Hostnames) {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (ଯାହା ପୂର୍ବରୁ "Cloudflare for SaaS" ଭାବରେ ଜଣାପଡ଼ିଥିଲା) ହେଉଛି ଏକ Cloudflare ଫିଚର୍ ଯାହା ଆପଣଙ୍କ ଗ୍ରାହକମାନଙ୍କୁ SSL ସହିତ ଆପଣଙ୍କ ମల్ଟିସାଇଟ୍ ନେଟୱାର୍କରେ ନିଜର ଡୋमेन ବ୍ୟବହାର କରିବାକୁ ଅନୁମତି ଦିଏ। Cloudflare, ପ୍ରତ୍ୟେକ কাস্টମ ଡୋमेन ପାଇଁ SSL ସର୍ଟିଫିକେଟ୍ ଯୋଗୀକରଣ ଏବଂ ନୂଆ କରିବାକୁ ଆଧାରିତ ହୋଇ ଏହା ରେକମେଣ୍ଡେଡ୍ ଅପ୍ରହରଣ ପଦ୍ଧତି, କାରଣ Cloudflare ଆପଣଙ୍କୁ ସେହି କର୍ମିକ ଡୋमेनଗୁଡ଼ିକ ପାଇଁ SSL ମାନ ରଖିବ।
 
-### ସ୍ଥାପନ କରିବା (Setting up)
+### ସ୍ଥାପନ କରିବା (Setting up) {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | ସ୍ଥାପନ କରିବା (Standard integration) | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **ଉପଯୁକ୍ତ** | সাবଡୋମେઇନ୍ ମల్ଟିସାଇଟ୍ | ଡୋमेन-ମ୍ୟାପ୍ କରାଯାଇଥିବା ମల్ଟିସାଇଟ୍ |
 | **SSL** | ଅଲଗା ଭାଙ୍ଗି ବହୁଛି | Cloudflare ଦ୍ୱାରା ଆଧିକାରୀ ଭାବରେ ପରିଚାଳିତ ହୁଏ |
 
-### Cloudflare Custom Hostnames ସେଟଅପ କରିବା
+### Cloudflare Custom Hostnames ସେଟଅପ କରିବା {#setting-up-cloudflare-custom-hostnames}
 
 ୧. ଆପଣଙ୍କ Cloudflare dashboard ରେ, ଆପଣଙ୍କ ମୁଖ୍ୟ ଡୋमेन ପାଇଁ ଜୋନ୍ (zone) ଖୋଲନ୍ତୁ।
 ୨. **SSL/TLS > Custom Hostnames** କୁ ଯାଆନ୍ତୁ।
@@ -101,23 +101,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 Ultimate Multisite v2.6.1 ଠାରୁ, ଏହି ବିଶେଷ କୌଶଳକୁ (feature) ସମସ୍ତ plugin setting ଏବଂ label ରେ **Cloudflare Custom Hostnames** ଭାବରେ ଉଲ୍ଲେଖ କରାଯାଇଛି। ପୂର୍ବରୁ version ଗୁଡ଼ିକରେ "Cloudflare for SaaS" ନାମ ବ୍ୟବହାର କରାଯାଉଥିଲା, ଯାହା ହେଉଛି Cloudflare ର ମୂଳ product ନାମ।
 :::
 
-## ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଟିପ୍ପଣୀ (Important Notes)
+## ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଟିପ୍ପଣୀ (Important Notes) {#important-notes}
 
 Cloudflare ର ନିକଟରେ ଅପଡେଟ୍ କରିବା ପରେ, ସବୁ ଗ୍ରାହକଙ୍କ ପାଇଁ wildcard proxying ବ୍ୟବହାର କରିବାକୁ ମିଳିଛି। ଏହାର ଅର୍ଥ ହେଉଛି ଯେ, subdomain multisite installations ପାଇଁ ସ୍ୱାଧୀନ Cloudflare DNS integration ଆଗରୁ ଥିବା ଅପେକ୍ଷା କମିଯାଇଛି, କାରଣ ଆପଣ ବାସ୍ତବରେ Cloudflare ରେ ଏକ wildcard DNS record set କରିପାରିବେ।
 
-## ସମସ୍ୟା ସମାଧାନ (Troubleshooting)
+## ସମସ୍ୟା ସମାଧାନ (Troubleshooting) {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 - ଯାଞ୍ଚ କରନ୍ତୁ ଯେ ଆପଣଙ୍କ API token ସଠିକ୍ ଅଛି ଏବଂ ଆବଶ୍ୟକ ଅନୁମତି (permissions) ରହିଛି।
 - ଯାଞ୍ଚ କରନ୍ତୁ ଯେ ଆପଣଙ୍କ Zone ID ସଠିକ୍ ଅଛି।
 - ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଆପଣଙ୍କ Cloudflare accountରେ ଆବଶ୍ୟକ ଅନୁମତି ରହିଛି।
 
-### Subdomain Not Added
+### Subdomain Not Added {#subdomain-not-added}
 - କୌଣସି error message ପାଇଁ Ultimate Multisite logs ଖୋଲନ୍ତୁ।
 - ଯାଞ୍ଚ କରନ୍ତୁ ଯେ subdomainଟି ଆପଣଙ୍କ Cloudflare ରେ ଆଗରୁ ଯୋଡ଼ାଯାଇଛି କି ନାହିଁ।
 - ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଆପଣଙ୍କ Cloudflare plan ଆପଣ ସୃଷ୍ଟି କରୁଥିବା DNS record ଗୁଡ଼ିକ ପାଇଁ ସମର୍ଥନ କରେ।
 
-### ପ୍ରୋक्सीଇଙ୍ଗ ସମସ୍ୟା
+### ପ୍ରୋक्सीଇଙ୍ଗ ସମସ୍ୟା {#proxying-issues}
 
 - ଯଦି ଆପଣ ଉପ-ଡୋमेनକୁ ପ୍ରୋକ୍ସି (proxy) କରିବାକୁ ଚାହୁଁନାହାନ୍ତି, ତେବେ ଆପଣ `wu_cloudflare_should_proxy` filter ବ୍ୟବହାର କରିପାରିବେ।
 - କିଛି ଅବସରଗୁଡ଼ିକ ପ୍ରୋକ୍ସି ହେବା ସମୟରେ ସଠିକ୍ ଭାବରେ କାର୍ଯ୍ୟ କରିପାରିବ ନାହିଁ (ଉଦାହରଣ ସ୍ୱରୂପ, କିଛି WordPress एडମିନ୍ ଫଙ୍କସନ)।

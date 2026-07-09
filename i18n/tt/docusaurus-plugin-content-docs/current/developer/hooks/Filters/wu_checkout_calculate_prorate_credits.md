@@ -4,20 +4,20 @@ title: Фильтр - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Фильтр: wu_checkout_calculate_prorate_credits
+# Фильтр: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
 
 Плагин эшләүчеләргә кредит кыйммәтен үзгәртергә рөхсәт итә.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
 | $credit | `int` | Кредит суммасы. |
 | $cart | `self` | Бу кәрзин объекты. |
 
-### Кайчаннан бирле
+### Кайчаннан бирле {#since}
 
 - 2.0.0
-### Чыганак
+### Чыганак {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1287) эчендә, 1287 нче юлда билгеләнгән.

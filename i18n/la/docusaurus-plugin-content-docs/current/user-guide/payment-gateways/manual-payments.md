@@ -3,13 +3,13 @@ title: Configuratio solutionum manualium
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Solutiones Manuales Configurare (v2)
+# Solutiones Manuales Configurare (v2) {#setting-up-manual-payments-v2}
 
 _**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x pertinet.**_
 
 Solutiones manuales sunt modus quo alias rationes solvendi praebere potes, si **Stripe** vel **PayPal** usoribus tuis praesto non est. Potest esse translatio pecuniae per filum aut argentariam, vel quaelibet alia ratio solvendi quae usoribus tuis localiter praesto est.
 
-## Quomodo Solutiones Manuales habilitare
+## Quomodo Solutiones Manuales habilitare {#how-to-enable-manual-payments}
 
 Solutio manualis constituenda facillima est. Tantum opus est eam sub portis solutionum habilitare et instructiones accuratas inserere de modo quo usor solutionem mittere debeat.
 
@@ -31,7 +31,7 @@ Et nuntium etiam accipient in pagina tua **Gratias Tibi** cum instructionibus so
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Solutiones manuales confirmare
+## Solutiones manuales confirmare {#confirming-manual-payments}
 
 Ad solutionem manualem confirmandam, vade ad menu **Solutiones** in barra sinistra. Ibi omnes solutiones in rete tuo et earum singula videre potes, incluso earum **statu**. Solutio manualis semper statum **Pendentem** habebit donec eum manualiter mutes.
 

@@ -3,13 +3,13 @@ title: A' cur phuist-d agus chraolaidhean
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# A’ cur phuist-d agus chraolaidhean (v2)
+# A’ cur phuist-d agus chraolaidhean (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTA CUDROMACH: Tha an t-artaigil seo a’ buntainn ri Ultimate Multisite tionndadh 2.x.**_
 
 Tha Ultimate Multisite a’ tighinn le feart a leigeas leat conaltradh a dhèanamh ris na custamairean agad le bhith a’ cur post-d gu cleachdaiche targaidichte no gu buidheann de chleachdaichean, a bharrachd air brathan a chur air an Dashboard rianachd aca gus fiosan a chraoladh
 
-## Cuir brathan rianachd ri Dashboard do luchd-ceannach le Craolaidhean
+## Cuir brathan rianachd ri Dashboard do luchd-ceannach le Craolaidhean {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Le bhith a’ cleachdadh feart craolaidh Ultimate Multisite, faodaidh tu **brathan rianachd** a chur ri Dashboard rianachd fo-làraich a’ chleachdaiche agad.
 
@@ -51,7 +51,7 @@ Faodaidh tu an uair sin briogadh air **An Ath Cheum**.
 
 Agus sin agad e. Bu chòir don bhrath rianachd nochdadh sa bhad air Dashboard a’ chleachdaiche agad.
 
-## Cuir puist-d gu do luchd-ceannach
+## Cuir puist-d gu do luchd-ceannach {#send-emails-to-your-customers}
 
 Le bhith a’ cleachdadh feart craolaidh Ultimate Multisite, faodaidh tu post-d a chur gu na cleachdaichean agad. Tha roghainn agad am post-d a chur a-mhàin gu cleachdaichean sònraichte no buidheann chleachdaichean sònraichte a thargaideachadh stèidhichte air an toradh no am plana fon a bheil iad fo-sgrìobhte.
 
@@ -81,11 +81,11 @@ Nuair a bhios an luchd-èisteachd targaid agad air a thaghadh, faodaidh tu briog
 
 Agus sin cho furasta ’s a tha e post-d a chur gu na cleachdaichean deireannach agad le bhith a’ cleachdadh feart a’ chraolaidh.
 
-## Puist-d siostaim
+## Puist-d siostaim {#system-emails}
 
 ’S iad puist-d siostaim ann an Ultimate Multisite na **fiosan fèin-obrachail** a chuireas an siostam às dèidh gnìomhan sònraichte leithid clàradh, pàigheadh, mapadh àrainn, msaa. Faodar na puist-d seo a dheasachadh no atharrachadh bho roghainnean Ultimate Multisite. Tha e cuideachd a’ tighinn le feart a leigeas leat roghainnean a th’ ann mu thràth ath-shuidheachadh agus ion-phortadh bho stàladh Ultimate Multisite eile.
 
-### Ath-shuidheachadh & Ion-phortadh
+### Ath-shuidheachadh & Ion-phortadh {#resetting--importing}
 
 Faodaidh agus clàraichidh tionndaidhean ùra de Ultimate Multisite, a bharrachd air tuilleadain, puist-d ùra bho àm gu àm.
 
@@ -93,7 +93,7 @@ Gus còmhstri agus cùisean eile a sheachnadh, **cha chuir sinn na teamplaidean 
 
 Ach, faodaidh sàr-rianadairean agus riochdairean na puist-d ùra-chlàraichte seo ion-phortadh tron inneal ion-phortaidh. Cruthaichidh am pròiseas sin post-d siostaim ùr le susbaint agus rèiteachadh teamplaid a’ phuist-d ùir, a’ leigeil leis an t-sàr-rianadair atharrachaidhean sam bith a tha iad ag iarraidh a dhèanamh no an cumail mar a tha iad.
 
-#### Mar a nì thu ion-phortadh air puist-d siostaim
+#### Mar a nì thu ion-phortadh air puist-d siostaim {#how-to-import-system-emails}
 
 Rach gu duilleag Roghainnean Ultimate Multisite agad agus gluais gu taba **Puist-d**.
 
@@ -111,7 +111,7 @@ An uair sin, faodaidh tu roghainnean Ion-phortaich Puist-d a thoglaigeadh gus fa
 
 <!-- Glacadh-sgrìn ri fhaighinn: modal Ath-shuidhich is Ion-phortaich leis na roghainnean Ion-phortaich Puist-d air an leudachadh -->
 
-#### Ath-shuidheachadh Puist-d an t-Siostaim
+#### Ath-shuidheachadh Puist-d an t-Siostaim {#reseting-system-emails}
 
 Aig amannan eile, tuigidh tu nach eil na h-atharrachaidhean a rinn thu air teamplaid puist-d sònraichte ag obair dhut tuilleadh agus gum bu mhath leat a h-ath-shuidheachadh dhan **staid bhunaiteach** aice.
 

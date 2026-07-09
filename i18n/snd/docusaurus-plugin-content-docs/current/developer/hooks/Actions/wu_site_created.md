@@ -4,22 +4,22 @@ title: عمل - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# عمل: wu_site_created
+# عمل: wu_site_created {#action-wusitecreated}
 
 پهريون ڀيرو سائيٽ ٺهڻ کان پوءِ هلندو آهي.
 
 جيڪڏهن ٽيمپليٽ مان نقل ٿيل هجي ته نه هلندو.
 
-## پيراميٽر
+## پيراميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
 | $data | `array` | اها آبجيڪٽ ڊيٽا جيڪا محفوظ ڪئي ويندي. |
 | $site | `\Site` | آبجيڪٽ انسٽنس. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.0.0
-### ذريعو
+### ذريعو {#source}
 
 [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1652) ۾ لائن 1652 تي بيان ٿيل آهي.

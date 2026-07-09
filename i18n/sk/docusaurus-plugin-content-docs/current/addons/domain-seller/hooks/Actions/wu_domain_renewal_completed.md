@@ -4,11 +4,11 @@ title: Akcia - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Akcia: wu_domain_renewal_completed
+# Akcia: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Spustí sa po úspešnom obnovení domény.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Spustí sa po úspešnom obnovení domény.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadáta obnovenia (domain_name, years, customer_id atď.). |
 | $result | `array&lt;string,mixed&gt;` | Surové pole výsledku vrátené registrátorom vrátane nového expiry_date. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) na riadku 594

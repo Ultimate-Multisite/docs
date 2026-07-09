@@ -4,11 +4,11 @@ title: Aksyon - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Aksyon: wu_mcp_abilities_registered
+# Aksyon: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Mo-andar human marehistro ang MCP abilities para sa usa ka entity.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Type | Deskripsyon |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Mo-andar human marehistro ang MCP abilities para sa usa ka entity.
 | $model_name | `string` | Ang ngalan sa model. |
 | $this | `object` | Ang manager instance. |
 
-### Sukad
+### Sukad {#since}
 
 - 2.5.0
-### Gigikanan
+### Gigikanan {#source}
 
 Gidepina sa [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) sa linya 171

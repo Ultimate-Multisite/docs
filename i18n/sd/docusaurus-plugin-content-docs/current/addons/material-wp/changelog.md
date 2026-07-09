@@ -3,7 +3,7 @@ title: Material WP تبديلي لاگ
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP تبديلي لاگ
+# Material WP تبديلي لاگ {#material-wp-changelog}
 
 نسخو 1.1.15 - 01/26/2026
 * بهتر ڪيو ويو: ڪوڊ جو انداز ۽ فارميٽنگ؛

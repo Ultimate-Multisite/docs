@@ -4,19 +4,19 @@ title: فیلتر - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# Filter: wu_captcha_providers
+# Filter: wu_captcha_providers {#filter-wucaptchaproviders}
 
 فیلتر کردن ارائه‌دهندگان کپچا که در دسترس هستند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $providers | `\Abstract_Captcha_Provider[]` | ارائه‌دهندگان ثبت‌شده. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 1.2.0
-### منبع
+### منبع {#source}
 
 در [inc/captcha-providers/class-captcha-manager.php](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/captcha-providers/class-captcha-manager.php#L133) در خط ۱۳۳ تعریف شده است.

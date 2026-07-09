@@ -4,11 +4,11 @@ title: Filtër - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Filtron kohëzgjatjen e periudhës së skadimit të cookie-t të autentikimit.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Lloji | Përshkrimi |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtron kohëzgjatjen e periudhës së skadimit të cookie-t të autentikimit.
 | $user_id | `int` | ID e përdoruesit. |
 | $remember | `bool` | Nëse duhet të mbahet mend hyrja e përdoruesit. Parazgjedhja false. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.8.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) në rreshtin 52

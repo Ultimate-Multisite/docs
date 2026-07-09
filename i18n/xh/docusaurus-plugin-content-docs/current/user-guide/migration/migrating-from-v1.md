@@ -3,9 +3,9 @@ title: Ukufuduka kwi-V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Ukufuduka ukusuka ku-V1
+# Ukufuduka ukusuka ku-V1 {#migrating-from-v1}
 
-## Ultimate Multisite itshintshile ukusuka kusapho lwayo lokuqala lokukhutshwa lwe-1.x ukuya kusapho lokukhutshwa lwe-2.x.
+## Ultimate Multisite itshintshile ukusuka kusapho lwayo lokuqala lokukhutshwa lwe-1.x ukuya kusapho lokukhutshwa lwe-2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite inguqulelo 2.0 nangaphezulu ibhalwe ngokutsha ngokupheleleyo i-codebase, nto leyo ethetha ukuba kuncinci kakhulu okwabelwana ngako phakathi kwenguqulelo endala nentsha. Ngenxa yoko, xa uphucula ukusuka ku-1.x ukuya ku-2.x, idatha yakho kuya kufuneka ifuduselwe kwifomathi ezinokuqondwa ziinguqulelo ezintsha.
 
@@ -15,7 +15,7 @@ Esi sifundo sigubungela indlela asebenza ngayo umfudusi, into omawuyenze kwiimek
 
 _**KUBALULEKILE: Phambi kokuba uqale ukuphucula ukusuka kwinguqulelo 1.x ukuya kwinguqulelo 2.0 nceda uqinisekise ukuba wenza ikopi yokhuseleko yedatabase yesayithi yakho**_
 
-## Amanyathelo okuqala
+## Amanyathelo okuqala {#first-steps}
 
 Inyathelo lokuqala kukukhuphela ifayile ye-plugin .zip uze ufake inguqulelo 2.0 kwi-network admin dashboard yakho.
 
@@ -51,7 +51,7 @@ Emva kokuvula ilayisensi, ungaqala ukufakwa kokwenyani ngokucofa **Install** kwi
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Ngoku, ukufuduka
+## Ngoku, ukufuduka {#now-the-migration}
 
 Umfudusi unefitsha yokhuseleko eyakhelweyo apho iya kujonga yonke i-multisite yakho ukuqinisekisa ukuba yonke idatha yakho ye-Ultimate Multisite inokufuduswa ngaphandle kweengxaki. Cofa iqhosha elithi **Run Check** ukuqalisa inkqubo.
 
@@ -59,13 +59,13 @@ Umfudusi unefitsha yokhuseleko eyakhelweyo apho iya kujonga yonke i-multisite ya
 
 Emva kokusebenzisa uvavanyo, unezinto ezimbini ezinokwenzeka: isiphumo sinokuba **sinempazamo** okanye **singenampazamo**.
 
-### Kunempazamo
+### Kunempazamo {#with-error}
 
 Ukuba ufumana umyalezo wempazamo, kuya kufuneka unxibelelane neqela lethu lenkxaso ukuze likuncede ukulungisa impazamo. Qinisekisa ukuba **unikezela nge-error log** xa usenza itikiti. Ungakhuphela i-log okanye ucofe ikhonkco elithi nxibelelana neqela lethu lenkxaso. Iya kuvula i-widget yoncedo kwicala lasekunene lephepha lakho enamasimi agcwaliswe kwangaphambili kuwe aquka ii-error logs phantsi kwenkcazo.
 
 _**Kuba inkqubo ifumene impazamo, awuyi kukwazi ukuqhubeka nokufudukela kwinguqulelo 2.0. Ungabuyela kwinguqulelo 1.x ukuze uqhubeke nokuqhuba inethiwekhi yakho de impazamo ilungiswe.**_
 
-### Akukho mpazamo
+### Akukho mpazamo {#without-error}
 
 Ukuba inkqubo ayifumani mpazamo, uya kubona umyalezo wempumelelo kunye neqhosha elithi **Migrate** ezantsi eliya kukuvumela ukuba uqhubeke nokufuduka. Kweli phepha, uya kukhunjuzwa ukuba wenze ikopi yokhuseleko yedatabase yakho phambi kokuba uqhubeke, nto leyo esiyincomayo kakhulu. Cofa **Migrate** ukuba sele unayo ikopi yokhuseleko.
 

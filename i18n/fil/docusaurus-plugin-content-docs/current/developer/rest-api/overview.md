@@ -3,28 +3,28 @@ title: Pangkalahatang-ideya ng REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Sanggunian ng REST API
+# Sanggunian ng REST API {#rest-api-reference}
 
-## Batayang Konfigurasyon
+## Batayang Konfigurasyon {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Pagpapatunay:** API Key at Secret (HTTP Basic Auth o Mga Parameter ng URL)
 
-## Pagpapatunay
+## Pagpapatunay {#authentication}
 
-### Paganahin ang API
+### Paganahin ang API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Kunin ang Mga Kredensyal ng API
+### Kunin ang Mga Kredensyal ng API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Mga Paraan ng Pagpapatunay
+### Mga Paraan ng Pagpapatunay {#authentication-methods}
 
 **HTTP Basic Auth (Inirerekomenda):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Mga Pangunahing Dulong Punto
+## Mga Pangunahing Dulong Punto {#core-endpoints}
 
-### 1. API ng Mga Kostumer
+### 1. API ng Mga Kostumer {#1-customers-api}
 
 **Batayang Ruta:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API ng Mga Website
+### 2. API ng Mga Website {#2-sites-api}
 
 **Batayang Ruta:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API ng Mga Pagiging Miyembro
+### 3. API ng Mga Pagiging Miyembro {#3-memberships-api}
 
 **Batayang Ruta:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API ng Mga Produkto
+### 4. API ng Mga Produkto {#4-products-api}
 
 **Batayang Ruta:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API ng Mga Pagbabayad
+### 5. API ng Mga Pagbabayad {#5-payments-api}
 
 **Batayang Ruta:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API ng Mga Dominyo
+### 6. API ng Mga Dominyo {#6-domains-api}
 
 **Batayang Ruta:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Dulong Punto ng Pagpaparehistro
+## Dulong Punto ng Pagpaparehistro {#registration-endpoint}
 
 Nagbibigay ang dulong punto na `/register` ng kumpletong daloy ng checkout/pagpaparehistro:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Mga Dulong Punto ng Sovereign Tenant
+## Mga Dulong Punto ng Sovereign Tenant {#sovereign-tenant-endpoints}
 
 Nagdaragdag ang Ultimate Multisite: Multi-Tenancy 1.2.0 ng REST coverage para sa sovereign tenant para sa mga integrasyong nagpo-provision, nagsusuri, o nagbeberipika ng mga nakahiwalay na tenant.
 
@@ -242,7 +242,7 @@ Karaniwang kasama sa mga tugon ng katayuan ng migrasyon ang:
 
 Ituring ang `ready: false` bilang hadlang bago ang paglulunsad. Suriin ang mga detalye ng beripikasyon, ayusin ang database host binding, queue, user provisioning, o isyu sa routing, pagkatapos ay ulitin ang beripikasyon.
 
-## Mga Tugon ng Error
+## Mga Tugon ng Error {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Ituring ang `ready: false` bilang hadlang bago ang paglulunsad. Suriin ang mga d
 }
 ```
 
-## Pagination at Pag-filter
+## Pagination at Pag-filter {#pagination-and-filtering}
 
 **Mga Parameter ng Query:**
 ```http

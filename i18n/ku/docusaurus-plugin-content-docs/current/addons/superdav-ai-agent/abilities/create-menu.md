@@ -3,15 +3,15 @@ title: Menuyê çêbike
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Pêşek Çêbike
+# Pêşek Çêbike {#create-menu}
 
 Şiyana **Pêşek Çêbike** pêşekên rêveberiyê yên WordPress çêdike û piştgirî dide nîşanên rêveberiyê yên cuda ji sernavên rûpelan.
 
-## Nêrîna Giştî
+## Nêrîna Giştî {#overview}
 
 Ev şiyan karîna standard a çêkirina pêşekê bi karîna diyarkirina parametreya `navigation_label` dirêj dike. Ev dihêle tu pêşekan çêbikî ku nîşana ku di rêveberiyê de tê nîşandan ji sernavê rûpelê cuda be, û di avahiya malperê û ezmûna bikarhêner de zêdetir nermî dide.
 
-## Parametre
+## Parametre {#parameters}
 
 | Parametre | Cure | Pêwîst | Danasîn |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Ev şiyan karîna standard a çêkirina pêşekê bi karîna diyarkirina paramet
 | `location` | string | Na | Cihê theme ku ev pêşek jê re were veqetandin, wekî `primary` |
 | `navigation_label` | string | Na | Nîşana ku di rêveberiyê de tê nîşandan (cuda ji sernavê rûpelê) |
 
-## Nirxa Vegerê
+## Nirxa Vegerê {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Ev şiyan karîna standard a çêkirina pêşekê bi karîna diyarkirina paramet
 }
 ```
 
-## Nîşana Rêveberiyê li hember Sernavê Rûpelê
+## Nîşana Rêveberiyê li hember Sernavê Rûpelê {#navigation-label-vs-page-title}
 
 Parametreya `navigation_label` dihêle tu navê hundirîn ê pêşekê ji nîşana ku ji bikarhêneran re tê nîşandan veqetînî:
 
@@ -43,9 +43,9 @@ Ev kêrhatî ye dema ku:
 - Pêwîst e tu piştgirî bidî gelek zimanan bi dirêjahiyên nîşanên cuda
 - Tu ji bo herêmên taybet an komên bikarhêneran pêşekan ava dikî
 
-## Mînakên Bikaranînê
+## Mînakên Bikaranînê {#usage-examples}
 
-### Mînak 1: Pêşeka Hêsan bi Nîşana Rêveberiyê
+### Mînak 1: Pêşeka Hêsan bi Nîşana Rêveberiyê {#example-1-simple-menu-with-navigation-label}
 
 **Daxwaz:**
 ```
@@ -62,7 +62,7 @@ Pêşekeke rêveberiya sereke bi navê "Rêveberiya Sereke" û bi nîşana rêve
 }
 ```
 
-### Mînak 2: Pêşek ji bo Cihê Theme Taybet
+### Mînak 2: Pêşek ji bo Cihê Theme Taybet {#example-2-menu-for-specific-theme-location}
 
 **Daxwaz:**
 ```
@@ -80,7 +80,7 @@ Pêşekeke footer bi navê "Girêdanên Footer" û bi nîşana rêveberiyê "Gir
 }
 ```
 
-## Yekbûn bi Theme Builder re
+## Yekbûn bi Theme Builder re {#integration-with-theme-builder}
 
 Dema Theme Builder tê bikaranîn, şiyana Pêşek Çêbike:
 
@@ -89,13 +89,13 @@ Dema Theme Builder tê bikaranîn, şiyana Pêşek Çêbike:
 3. Pêşekan dide cihên rast ên theme
 4. Piştgirî dide zêdekirina hêmanên pêşekê piştî çêkirinê
 
-## Şiyanên Têkildar
+## Şiyanên Têkildar {#related-abilities}
 
 - **`add_menu_item`** — Hêmanan li pêşekeke heyî zêde bike
 - **`update_menu`** — Navê pêşekê biguherîne an wê ji nû ve bide cihekî theme
 - **`delete_menu`** — Pêşekekê ji malpera xwe rake
 
-## Rêbazên Herî Baş
+## Rêbazên Herî Baş {#best-practices}
 
 - **Nîşanên rêveberiyê yên zelal bi kar bîne** — nîşanan ji bo bikarhêneran kurt û raveker bihêle
 - **Cihên theme hevaheng bike** — pêşekan bide cihê rast ê theme da ku rast bên nîşandan
@@ -103,14 +103,14 @@ Dema Theme Builder tê bikaranîn, şiyana Pêşek Çêbike:
 - **Bersivdayîbûnê biceribîne** — piştrast bike ku pêşek li ser amûrên mobîl rast tê nîşandan
 - **Nîşanan herêmî bike** — ji bo guhertoyên zimanên cuda nîşanên rêveberiyê yên cuda bi kar bîne
 
-## Sînorkirin
+## Sînorkirin {#limitations}
 
 - Nîşanên rêveberiyê tenê ji bo nîşandanê ne; `name`-a hundirîn hîn jî ji bo nasandina WordPress tê bikaranîn
 - Piştgiriya theme diguhere; hemû themes piştgirî nadin hemû cihên pêşekê
 - Pêwîst e hêmanên pêşekê piştî çêkirina pêşekê cuda bên zêdekirin
 - Guhertina nîşaneke rêveberiyê pêdivî bi rojanekirina pêşekê heye
 
-## Şiyanên Têkildar
+## Şiyanên Têkildar {#related-abilities-1}
 
 - [Logo SVG Çêbike](./generate-logo-svg.md) — ji bo serê malpera xwe logo çêbike
 - [Kontrasta Paletê Erê Bike](./validate-palette-contrast.md) — piştrast bike ku nexşeyên rengan gihîştinbar in

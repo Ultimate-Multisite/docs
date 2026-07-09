@@ -3,7 +3,7 @@ title: Captcha ענדערונגען־לאָג
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# קאַפּטשאַ ענדערונגען-לאָג
+# קאַפּטשאַ ענדערונגען-לאָג {#captcha-changelog}
 
 ווערסיע: 1.5.0 - אַרויסגעלאָזט דעם 2026-05-22
 * נײַ: האַרטער-אָפּשטעל קורס-באַגרענעצער — ציילט יעדן GET און POST אויף קאַפּטשאַ-באַשיצטע אויבערפֿלעכן (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) און ענטפֿערט מיט HTTP 429, אַ `Retry-After` קעפל, און אַ צופֿעליק-געמאַכטע טאַרפּיט-שלאָף (1–5ס, האַרט באַגרענעצט אויף 15ס).

@@ -3,11 +3,11 @@ title: Жеке шлюзді әзірлеу
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Арнайы шлюз әзірлеу
+# Арнайы шлюз әзірлеу {#custom-gateway-development}
 
 `Base_Gateway` класын кеңейту арқылы арнайы төлем шлюздерін жасай аласыз.
 
-## Шлюз класы
+## Шлюз класы {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Шлюзді тіркеу
+## Шлюзді тіркеу {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Негізгі әдістер
+## Негізгі әдістер {#key-methods}
 
 | Әдіс | Мақсаты |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Қайтару сұрауларын өңдеу |
 | `get_payment_methods()` | Клиент үшін сақталған төлем әдістерін қайтару |
 
-## Қайталанатын мүшеліктерге арналған ұзарту тіркелгі деректері
+## Қайталанатын мүшеліктерге арналған ұзарту тіркелгі деректері {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 шлюз интеграцияларына `auto_renew` сақталмай тұрып, қайталанатын мүшелікте қайта пайдалануға болатын ұзарту тіркелгі дерегі бар-жоғын хабарлауға мүмкіндік береді. `wu_membership_has_renewal_credential` hook-ын қолданып, мынаны қайтарыңыз:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Жаңа қайта пайдалануға болатын тіркелгі дерегі сақталғаннан кейін, шлюзіңіздің сәтті қайта авторизациялау ағынының бөлігі ретінде жоқ тіркелгі дерегі белгісін тазалаңыз.
 
-## Кеңестер
+## Кеңестер {#tips}
 
 - Сәтсіздік кезінде әрқашан `WP_Error` қайтарыңыз, сонда Ultimate Multisite қате көрсетілуін өңдей алады
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Шлюзге тән журналдау үшін `wu_log_add()` пайдаланыңыз
 
-## AI connector провайдерінің мүмкіндіктері
+## AI connector провайдерінің мүмкіндіктері {#ai-connector-provider-capabilities}
 
 AI connector арқылы қолдау көрсетілетін операцияларды шақыратын арнайы интеграциялар Anthropic Max v1.3.0 үшін AI Provider бірге енгізілген қолдау көрсетілетін OAuth провайдерлер жиынымен үйлесуі керек:
 

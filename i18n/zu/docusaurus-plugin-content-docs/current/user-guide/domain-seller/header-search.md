@@ -3,11 +3,11 @@ title: Usesho Lwesizinda Lwesihloko
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Usesho Lwe-Domain Ku-Header
+# Usesho Lwe-Domain Ku-Header {#header-domain-search}
 
 Sebenzisa lokhu kulungiselelwa lapho ufuna ifomu elincane le-header eliqala usesho lwe-domain, bese livumela ikhasimende ukuthi likhethe kuma-domain atholakalayo ngaphakathi kwe-Ultimate Multisite checkout.
 
-## Izimfuneko
+## Izimfuneko {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Sebenzisa lokhu kulungiselelwa lapho ufuna ifomu elincane le-header eliqala uses
   - Ama-TLD asekelwayo alungiselelwe, isibonelo `com`, `net`, no-`org`.
 - Ifomu le-checkout elivumelekile eliqukethe inkambu ethi **Ukukhethwa Kwe-Domain**.
 
-## Ifomu le-checkout
+## Ifomu le-checkout {#checkout-form}
 
 1. Dala noma hlela ifomu le-checkout elisetshenziswa yikhasi lokubhalisa.
 2. Engeza izinkambu ezijwayelekile ezidingekayo ze-checkout/account, kuhlanganise ne-**Username**. Ifomu le-checkout eliqukethe inkambu ye-domain kuphela liyenqatshwa ukuqinisekiswa kwe-Ultimate Multisite.
@@ -30,7 +30,7 @@ Ikhasi lokubhalisa kufanele libonise ifomu le-checkout, isibonelo:
 [wu_checkout slug="domain-form"]
 ```
 
-## Ifomu le-header
+## Ifomu le-header {#header-form}
 
 Engeza ifomu elincane le-`GET` ku-header yesayithi elithumela igama lokusesha elifakiwe ekhasini le-checkout njenge-`domain_name`:
 
@@ -44,7 +44,7 @@ Engeza ifomu elincane le-`GET` ku-header yesayithi elithumela igama lokusesha el
 
 Ungakhethi kusengaphambili i-domain ku-JavaScript yangokwezifiso ye-header. I-header kufanele idlulise kuphela igama lokusesha. Isikripthi se-Domain Seller checkout sifunda `?domain_name=example`, sigcwalise ibhokisi lokusesha le-checkout, bese siqhuba usesho lokutholakala ukuze ikhasimende likhethe kuma-domain abuyisiwe.
 
-## Ukuziphatha okulindelekile
+## Ukuziphatha okulindelekile {#expected-behaviour}
 
 Ukusesha `example` ku-header kufanele kuvule:
 
@@ -61,7 +61,7 @@ I-checkout kufanele bese ibonisa imiphumela ekhethekayo efana nalena:
 
 Ngemva kokukhetha umphumela otholakalayo, isifinyezo se-oda kufanele sifake umkhiqizo wokubhalisa i-domain kanye negama le-domain elikhethiwe.
 
-## Ukuqinisekisa
+## Ukuqinisekisa {#verification}
 
 1. Vula ikhasi lasekhaya.
 2. Sesha igama elingenalutho olungeziwe, isibonelo `example`.
@@ -71,7 +71,7 @@ Ngemva kokukhetha umphumela otholakalayo, isifinyezo se-oda kufanele sifake umkh
 6. Chofoza **Khetha** ku-domain etholakalayo.
 7. Qinisekisa ukuthi isifinyezo se-oda siqukethe `Domain Registration - example.com` noma i-domain ekhethiwe.
 
-## Ukuxazulula izinkinga
+## Ukuxazulula izinkinga {#troubleshooting}
 
 - Uma kungekho hlu oluvelayo, hlola ithebhu yenethiwekhi yesiphequluli ye-`admin-ajax.php?action=wu_domain_search` bese uqinisekisa ukuthi ibuyisa `domains` noma `results` okungelona ize.
 - Uma ifomu le-checkout lehluleka ukuqinisekiswa ngesikhathi lilondolozwa, engeza izinkambu ze-account ezidingekayo ezifana ne-**Username**.

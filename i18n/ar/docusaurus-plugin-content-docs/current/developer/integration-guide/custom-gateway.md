@@ -3,11 +3,11 @@ title: تطوير بوابة مخصصة
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# تطوير بوابة مخصصة
+# تطوير بوابة مخصصة {#custom-gateway-development}
 
 يمكنك إنشاء بوابات دفع مخصصة عبر توسيع الفئة `Base_Gateway`.
 
-## فئة البوابة
+## فئة البوابة {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## تسجيل البوابة
+## تسجيل البوابة {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## الطرق الرئيسية
+## الطرق الرئيسية {#key-methods}
 
 | الطريقة | الغرض |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | معالجة طلبات الاسترداد |
 | `get_payment_methods()` | إرجاع طرق الدفع المحفوظة للعميل |
 
-## بيانات اعتماد التجديد للعضويات المتكررة
+## بيانات اعتماد التجديد للعضويات المتكررة {#renewal-credentials-for-recurring-memberships}
 
 يتيح Ultimate Multisite v2.13.0 لتكاملات البوابات الإبلاغ عمّا إذا كانت العضوية المتكررة لديها بيانات اعتماد تجديد قابلة لإعادة الاستخدام قبل استمرار `auto_renew`. اربط `wu_membership_has_renewal_credential` وأرجع:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 امسح علامة بيانات الاعتماد المفقودة كجزء من مسار إعادة التفويض الناجح الخاص ببوابتك بعد تخزين بيانات اعتماد جديدة قابلة لإعادة الاستخدام.
 
-## نصائح
+## نصائح {#tips}
 
 - أرجع دائمًا `WP_Error` عند الفشل حتى يتمكن Ultimate Multisite من التعامل مع عرض الخطأ
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - استخدم `wu_log_add()` للتسجيل الخاص بالبوابة
 
-## إمكانات موفّر موصل AI
+## إمكانات موفّر موصل AI {#ai-connector-provider-capabilities}
 
 ينبغي أن تتوافق التكاملات المخصصة التي تستدعي عمليات مدعومة بموصل AI مع مجموعة موفري OAuth المدعومة التي قُدمت مع AI Provider for Anthropic Max v1.3.0:
 

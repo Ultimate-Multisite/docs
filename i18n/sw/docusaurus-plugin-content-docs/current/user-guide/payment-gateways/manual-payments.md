@@ -3,13 +3,13 @@ title: Kusanidi Malipo ya Mwongozo
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Kuweka Malipo ya Kufanywa Mwenyewe (v2)
+# Kuweka Malipo ya Kufanywa Mwenyewe (v2) {#setting-up-manual-payments-v2}
 
 _**KUMBUKA MUHIMU: Makala haya yanahusu Ultimate Multisite toleo la 2.x.**_
 
 Malipo ya kufanywa mwenyewe ni njia ya kukuwezesha kutoa mbinu nyingine za malipo ikiwa **Stripe** au **PayPal** hazipatikani kwa watumiaji wako. Inaweza kuwa uhamisho wa fedha kwa waya au benki, au mbinu nyingine yoyote ya malipo inayopatikana kwa watumiaji wako katika eneo lao.
 
-## Jinsi ya kuwezesha Malipo ya Kufanywa Mwenyewe
+## Jinsi ya kuwezesha Malipo ya Kufanywa Mwenyewe {#how-to-enable-manual-payments}
 
 Kuweka malipo ya kufanywa mwenyewe ni rahisi sana. Unahitaji tu kuyawezesha chini ya njia za malipo na kuweka maelekezo ya kina kuhusu jinsi mtumiaji anavyopaswa kutuma malipo.
 
@@ -31,7 +31,7 @@ Na pia watapokea ujumbe kwenye ukurasa wako wa **Asante** wenye maelekezo yako y
 
 <!-- Picha ya skrini haipatikani: Ukurasa wa Asante unaoonyesha maelekezo ya malipo baada ya checkout -->
 
-## Kuthibitisha malipo ya kufanywa mwenyewe
+## Kuthibitisha malipo ya kufanywa mwenyewe {#confirming-manual-payments}
 
 Ili kuthibitisha malipo ya kufanywa mwenyewe, nenda kwenye menyu ya **Malipo** kwenye upau wa kushoto. Hapo unaweza kuona malipo yote kwenye mtandao wako na maelezo yake, ikijumuisha **hali** yake. Malipo ya kufanywa mwenyewe daima yatakuwa na hali ya **Inayosubiri** hadi uyabadilishe mwenyewe.
 

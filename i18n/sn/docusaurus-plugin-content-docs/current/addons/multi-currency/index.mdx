@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Mari Dzakawanda
+# Mari Dzakawanda {#multi-currency}
 
 Ultimate Multisite: Mari Dzakawanda inoita kuti network yako igamuchire kubhadhara mumari dzakasiyana-siyana. Inoshandura mitengo otomatiki ichishandisa zviyero zvekuchinjana zviri live kana zvemanyorerwo, inokutendera kuseta mitengo chaiyo pachigadzirwa chimwe nechimwe kune chero mari, uye inoona mari inofarirwa nemushanyi mumwe nemumwe kuburikidza nekuona nzvimbo — zvese zvichitungamirirwa kubva paDashboard imwe chete yeAdmin.
 
-## Zvinhu Zvikuru
+## Zvinhu Zvikuru {#key-features}
 
 - **Kushandurwa otomatiki kwechiyero chekuchinjana** — mitengo inoshandurwa kubva pamari yako yekutanga ichishandisa zviyero zvinotorwa kubva kumupi wawakasarudza
 - **Kutsiva mitengo pachigadzirwa chimwe nechimwe** — seta mitengo chaiyo inoenderana nemari pachigadzirwa chipi nechipi kuti usashandise kushandura otomatiki
@@ -20,22 +20,22 @@ Ultimate Multisite: Mari Dzakawanda inoita kuti network yako igamuchire kubhadha
 - **Kuonekwa kwemari kwakavakirwa panzvimbo** — inosarudza kare otomatiki mari inoenderana nenyika yemushanyi
 - **Dashboard yeAdmin** — tungamirira mari dzinoshanda, zviyero zvekuchinjana, uye marongero emupi kubva panzvimbo imwe
 
-## Zvinodiwa
+## Zvinodiwa {#requirements}
 
 - Ultimate Multisite 2.0.0 kana yepamusoro
 - WordPress Multisite installation
 - PHP 7.4 kana yepamusoro
 
-## Kuiswa
+## Kuiswa {#installation}
 
 1. Isa mafaera eplugin ku `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Activate plugin kuburikidza nechidzitiro che**Plugins** muWordPress (Network Activate)
 3. Enda ku **Ultimate Multisite → Mari Dzakawanda** kuti uvhure Dashboard yeAdmin
 4. Wedzera mari dzaunoda kugamuchira uye gadzirisa mupi wako wechiyero chekuchinjana
 
-## Kugadzirisa
+## Kugadzirisa {#configuration}
 
-### Dashboard yeAdmin
+### Dashboard yeAdmin {#admin-dashboard}
 
 Dashboard yeAdmin yeMari Dzakawanda (**Ultimate Multisite → Mari Dzakawanda**) ndiyo nzvimbo huru yeku:
 
@@ -44,7 +44,7 @@ Dashboard yeAdmin yeMari Dzakawanda (**Ultimate Multisite → Mari Dzakawanda**)
 - Ongorora zviyero zvazvino zvemari dzese dzinoshanda
 - Seta zviyero zvemanyorerwo kana vapi veotomatiki vasina kukodzera
 
-### Vapi veZviyero zveKuchinjana
+### Vapi veZviyero zveKuchinjana {#exchange-rate-providers}
 
 | Mupi | Tsananguro |
 |---|---|
@@ -55,7 +55,7 @@ Dashboard yeAdmin yeMari Dzakawanda (**Ultimate Multisite → Mari Dzakawanda**)
 
 Sarudza mupi wako pasi pe **Ultimate Multisite → Mari Dzakawanda → Marongero → Mupi weChiyero cheKuchinjana**. Zviyero zvinogona kuzozorodzwa nemanyorerwo chero nguva kana kurongwa kuti zvigadziriswe otomatiki.
 
-### Kutsiva Mitengo Pachigadzirwa Chimwe Nechimwe
+### Kutsiva Mitengo Pachigadzirwa Chimwe Nechimwe {#per-product-pricing-overrides}
 
 Kana kushandura otomatiki kusina kunyatsorurama zvakakwana, unogona kuseta mutengo chaiwo wemari yakati pachigadzirwa chipi nechipi:
 
@@ -66,7 +66,7 @@ Kana kushandura otomatiki kusina kunyatsorurama zvakakwana, unogona kuseta muten
 
 Zvigadzirwa zvisina kutsiva zvinoshandisa mutengo wakashandurwa kubva pamari yako yekutanga.
 
-### Nzvimbo yekusarudza mari pakunyoresa
+### Nzvimbo yekusarudza mari pakunyoresa {#currency-selector-signup-field}
 
 Nzvimbo yekusarudza mari inogona kuwedzerwa kuflow yako yesignup/checkout kuitira kuti vatengi vasarudze mari yavanofarira pakunyoresa:
 
@@ -76,7 +76,7 @@ Nzvimbo yekusarudza mari inogona kuwedzerwa kuflow yako yesignup/checkout kuitir
 
 Mari yakasarudzwa inochengetwa pamwe nesubscription uye inoshandiswa pakubhadhara kwese kunotevera.
 
-### Kuonekwa kweMari Kwakavakirwa paNzvimbo
+### Kuonekwa kweMari Kwakavakirwa paNzvimbo {#geolocation-based-currency-detection}
 
 Kana kuona nzvimbo kwagoneswa, addon inobatanidza nyika yemushanyi nemari uye inoisa sarudzo iyoyo kare munzvimbo yekusarudza mari. Kugonesa:
 
@@ -86,27 +86,27 @@ Kana kuona nzvimbo kwagoneswa, addon inobatanidza nyika yemushanyi nemari uye in
 
 Kana pasina mepu iripo yenyika yemushanyi, mari yekutanga yenetwork inoshandiswa seyokudzokera kwairi.
 
-## Mibvunzo Inowanzo Bvunzwa
+## Mibvunzo Inowanzo Bvunzwa {#frequently-asked-questions}
 
-### Chii chinoitika kana mupi wechiyero chekuchinjana asiri kuwanikwa?
+### Chii chinoitika kana mupi wechiyero chekuchinjana asiri kuwanikwa? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon inodzokera kuzviyero zvakapedzisira kutorwa zvinobudirira. Kana pasina zviyero zvakambotorwa, inodzokera kuzviyero zvemanyorerwo zvawakagadzirisa. Zvinokurudzirwa kugadzirisa zviyero zvemanyorerwo senzira yekuchengetedza.
 
-### Ndingashandisa vapi vakasiyana kumari dzakasiyana here?
+### Ndingashandisa vapi vakasiyana kumari dzakasiyana here? {#can-i-use-different-providers-for-different-currencies}
 
 Kwete — mupi mumwe chete ndiye anoshanda panguva imwe chete kumari dzese. Shandisa **Manual** kana uchida kutonga kwakazara pamusoro pezviyero zvimwe nezvimwe.
 
-### Kuona nzvimbo kunoda plugin yakaparadzana here?
+### Kuona nzvimbo kunoda plugin yakaparadzana here? {#does-geolocation-require-a-separate-plugin}
 
 Hapana plugin yekunze yekuona nzvimbo inodiwa. Addon inoshandisa kuonekwa kweIP-kuenda-kunyika kwakavakirwa muWordPress. Kuti uwane kunyatsojeka kwepamusoro, sevhisi yakatsaurirwa yekuona nzvimbo inogona kubatanidzwa kuburikidza nema filter hooks akapihwa.
 
-### Kutsiva pachigadzirwa chimwe nechimwe kunoshandiswa pamberi kana mushure memutero here?
+### Kutsiva pachigadzirwa chimwe nechimwe kunoshandiswa pamberi kana mushure memutero here? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Kutsiva pachigadzirwa chimwe nechimwe kunoseta mutengo usati waverengerwa mutero mumari iri kunangwa. Mutero unoverengerwa pamusoro pemutengo wakatsiviwa uchishandisa kugadzirisa mutero kwako kuripo.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.0.0 — Yakaburitswa musi wa2026-04-02
+### Version 1.0.0 — Yakaburitswa musi wa2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Chitsva: Rutsigiro rwemari dzakawanda nekushandurwa otomatiki kwezviyero zvekuchinjana
 - Chitsva: Kutsiva mitengo pachigadzirwa chimwe nechimwe kwemutengo chaiwo unoenderana nemari

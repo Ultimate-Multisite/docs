@@ -3,13 +3,13 @@ title: Kubinafsisha Fomu Yako ya Usajili
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kubinafsisha Fomu yako ya Usajili
+# Kubinafsisha Fomu yako ya Usajili {#customizing-your-registration-form}
 
 Ili kufanya network yako ionekane ya kipekee tofauti na SaaS nyingine zote zilizojengwa kwenye WordPress platform, Ultimate Multisite hukuruhusu kubinafsisha kurasa zako za usajili na kuingia kwa kutumia kipengele chetu cha **Checkout Forms**.
 
 Ingawa ni njia rahisi na nyumbufu ya kujaribu mbinu tofauti unapojaribu kuwabadilisha wateja wapya, hutumika zaidi kuunda fomu za usajili zilizobinafsishwa. Makala hii inalenga kukuonyesha jinsi unavyoweza kufanya hivyo.
 
-## Kurasa za kuingia na usajili:
+## Kurasa za kuingia na usajili: {#login-and-registration-pages}
 
 Baada ya usakinishaji wa Ultimate Multisite, huunda kiotomatiki kurasa maalum za kuingia na usajili kwenye site yako kuu. Unaweza kubadilisha kurasa hizi chaguomsingi wakati wowote kwa kwenda kwenye ukurasa wako wa **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Sasa, hebu tuone chaguo nyingine ambazo bado zinahusiana na mchakato wa kuingia 
 
 Na hayo ndiyo chaguo zote zinazohusiana na kuingia na usajili ambazo unaweza kubinafsisha! Usisahau kuhifadhi mipangilio yako baada ya kumaliza kuihariri.
 
-## Kutumia fomu nyingi za usajili:
+## Kutumia fomu nyingi za usajili: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 hutoa kihariri cha checkout form kinachokuruhusu kuunda fomu nyingi kadiri unavyotaka, zenye fields tofauti, products zinazotolewa, n.k.
 
@@ -69,7 +69,7 @@ Vinginevyo, unaweza kuhariri au kunakili fomu ulizonazo tayari kwa kubofya chagu
 
 Ukichagua hatua moja au hatua nyingi, checkout form itakuwa tayari imejazwa awali na hatua za msingi ili ifanye kazi. Kisha, ukitaka, unaweza kuongeza hatua za ziada kwake.
 
-### Kuhariri Checkout Form:
+### Kuhariri Checkout Form: {#editing-a-checkout-form}
 
 Kama tulivyotaja awali, unaweza kuunda checkout forms kwa madhumuni tofauti. Katika mfano huu tutashughulikia fomu ya usajili.
 
@@ -131,11 +131,11 @@ Ili kupata shortcode ya fomu yako, bofya **Tengeneza Shortcode** na unakili mato
 
 _**Kumbuka:** Utahitaji kuongeza shortcode hii kwenye ukurasa wako wa usajili ili fomu hii ya checkout iongezwe humo._
 
-## Kuchagua mapema bidhaa na violezo kupitia vigezo vya URL:
+## Kuchagua mapema bidhaa na violezo kupitia vigezo vya URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ikiwa unataka kuunda majedwali ya bei yaliyobinafsishwa kwa bidhaa zako na kuchagua mapema kwenye fomu ya checkout bidhaa au kiolezo ambacho mteja wako anachagua kutoka kwenye jedwali lako la bei au ukurasa wa violezo, unaweza kutumia vigezo vya URL kwa hili.
 
-### **Kwa mipango:**
+### **Kwa mipango:** {#for-plans}
 
 Nenda kwenye **Ultimate Multisite > Bidhaa > Chagua mpango**. Unapaswa kuona kitufe cha **Bofya kunakili Kiungo Kinachoweza Kushirikiwa** juu ya ukurasa. Hiki ndicho kiungo unachoweza kutumia kuchagua mapema mpango huu maalum kwenye fomu yako ya checkout.
 
@@ -143,7 +143,7 @@ Nenda kwenye **Ultimate Multisite > Bidhaa > Chagua mpango**. Unapaswa kuona kit
 
 Kumbuka kuwa kiungo hiki kinachoweza kushirikiwa ni halali tu kwa **Mipango**. Huwezi kutumia viungo vinavyoweza kushirikiwa kwa vifurushi au huduma.
 
-### Kwa violezo:
+### Kwa violezo: {#for-templates}
 
 Ikiwa unataka kuchagua mapema violezo vya tovuti kwenye fomu yako ya checkout, unaweza kutumia kigezo: **?template_id=X** kwenye URL ya ukurasa wako wa usajili. "X" inahitaji kubadilishwa na **nambari ya ID ya kiolezo cha tovuti**. Ili kupata nambari hii, nenda kwenye **Ultimate Multisite > Tovuti**.
 

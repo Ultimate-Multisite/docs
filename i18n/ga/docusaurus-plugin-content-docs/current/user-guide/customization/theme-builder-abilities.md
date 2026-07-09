@@ -3,18 +3,18 @@ title: Chuidiúirí an Tíme
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Aibhileacht na Teamaí: Scaffold agus Activate Block Themes
+# Aibhileacht na Teamaí: Scaffold agus Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Taispeántacht Superdav AI Agent v1.12.0 leat curte ag duine a bheith iad do chuid fáilteach agus a chur in áit teamaí block a bhaint as an chat interface.
 
-## Oibríochta
+## Oibríochta {#overview}
 
 Cén fáth go bhfuil na fáilteacha **scaffold-block-theme** agus **activate-theme** ag fáilteacht na agenta:
 - A chur i bhfeidm teamaí block leat, ar fáil do chuid production, ar bhealach a bhfáthfaidh tú an t-chat.
 - A chomhachtú teamaí ar an sinte agat gan aon rud féin.
 - A chur i bhfeidm teangail bunaithe ar cúiseanna d'fhéanteacha design.
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Bíonn fáilteacht **scaffold-block-theme** ag fáilteacht teama block nua ar WordPress le struchtúr teama leatúil, gan cur isteach:
 
@@ -23,7 +23,7 @@ Bíonn fáilteacht **scaffold-block-theme** ag fáilteacht teama block nua ar Wo
 - Stailanna agus variation block a mhaith
 - Metadata teama agus deacloilleachtaí fáilteacha
 
-### Conas a Chruinne (How to Invoke)
+### Conas a Chruinne (How to Invoke) {#how-to-invoke}
 
 Agus iad ag iarraidh teama a chur in áit, leat féidir leat a chur ar fáil:
 
@@ -38,7 +38,7 @@ Beidh an agent ag:
 3. A chur i bhfeidm cáilíocht file teamaí a mhaith
 4. A chur an teama ar fáil
 
-### Oibríochta a Bhaint As (Expected Output)
+### Oibríochta a Bhaint As (Expected Output) {#expected-output}
 
 Nuair a thácaire ag gníomhú go díreach, beidh tú ag fheiceáil:
 
@@ -56,11 +56,11 @@ Eagraíochta oibríochta:
   Stáraithe: Ready to activate
 ```
 
-## Activate Theme
+## Activate Theme {#activate-theme}
 
 Anáimse an **activate-theme** ar chuiditeas a thais an t-amach an fáil do site go dtí theme nua a bhaint amach nó atá ag obair.
 
-### Conas a Bhfhéidir Athbhriúchadh Éiteach
+### Conas a Bhfhéidir Athbhriúchadh Éiteach {#how-to-invoke-1}
 
 Tar éis féachaint (scaffolding) theme, leat ormhaint athbhriúchadh é seo ar an gcur.
 
@@ -74,7 +74,7 @@ Nó athbhriúchadh aon theme atá ag obair:
 "Athbhriúchadh go Twentytwentyfour"
 ```
 
-### An-bhfhéidir Athbhriúchadh
+### An-bhfhéidir Athbhriúchadh {#expected-output-1}
 
 Nuair a bhíonn athbhriúchadh ag teacht ar bhóthar:
 
@@ -92,7 +92,7 @@ Eisimpleir athbhriúchadh:
   Note: Déan ar an homepage a bheith agat chun an léamh a chosaint
 ```
 
-## Workflow: Scafffold agus Athbhriúchadh
+## Workflow: Scafffold agus Athbhriúchadh {#workflow-scaffold-and-activate}
 
 Tá workflow tídearmach ag cur beartas ar a dhá thais:
 
@@ -102,7 +102,7 @@ Tá workflow tídearmach ag cur beartas ar a dhá thais:
 4. **Athbhriúchadh**: "Athbhriúchadh an theme anois"
 5. **Cosaint**: Bhfhéidir site a bheith agat chun an léamh nua a chosaint
 
-## Design Tokens agus Athrú
+## Design Tokens agus Athrú {#design-tokens-and-customization}
 
 Bíonn themes a bhaint amach ag obair le design tokens WordPress (trá `theme.json`) chun:
 
@@ -114,14 +114,14 @@ Bíonn themes a bhaint amach ag obair le design tokens WordPress (trá `theme.js
 
 Tá na tokens seo ag cur chuireann i `theme.json`, rud a dhéanann é go fácil a athrú do chuid design system go léir ó chuid file amháin.
 
-## Limitiúin agus Cur Chuireann
+## Limitiúin agus Cur Chuireann {#limitations-and-notes}
 
 - Themes té aistraidh (scaffolded) i `/wp-content/themes/` agus phải leat ar chuid na curteacha WordPress.
 - Is féidir an athchúais (activation) a bheith ag iarraidh eangolaí (permissions) atá ag an site WordPress agat.
 - Is éad an t-amach PHP custom i themes go mbeidh sé beag; usaigh pluginí chun fhaisnéis mhór a dhéanamh.
 - Maith go leor na block themes le WordPress 5.9 agus níos fear grá.
 
-## Treoiche (Troubleshooting)
+## Treoiche (Troubleshooting) {#troubleshooting}
 
 **Ndiú níl ag tháir tar éis an athchúais**
 - Déan cinnte go bhfuil an curtach (directory) tem beag agus go bhfuil eangolaí ceart ar éad.
@@ -138,7 +138,7 @@ Tá na tokens seo ag cur chuireann i `theme.json`, rud a dhéanann é go fácil 
 - Glac an gcáimeanna caching (caching plugins) a bheith agat.
 - Déan cinnte go bhfuil curteacha WordPress atá ag teacht ag curteacha a bhuseartha a bhfuil tú ag úsáid.
 
-## An t-amachas (Next Steps)
+## An t-amachas (Next Steps) {#next-steps}
 
 Tar éis an athchúais tem beag agat, leat orm:
 - Uileadh **Design System Aesthetics skill** chun typography, colur agus spás a chruinneáil.

@@ -3,7 +3,7 @@ title: GoCardless മാറ്റങ്ങളുടെ പട്ടിക
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless മാറ്റങ്ങൾ (Changelog)
+# GoCardless മാറ്റങ്ങൾ (Changelog) {#gocardless-changelog}
 
 Version: 1.0.3 - Released on 2026-05-05
 * പരിഹരിച്ചു: ഒരു GoCardless membership 'pending' അല്ലെങ്കിൽ 'on-hold' സ്റ്റേറ്റിൽ നിന്ന് റദ്ദാക്കുമ്പോൾ, അനാഥമായ (orphaned) pending സൈറ്റുകൾ ഇപ്പോൾ വൃത്തിയാക്കപ്പെടുന്നു.

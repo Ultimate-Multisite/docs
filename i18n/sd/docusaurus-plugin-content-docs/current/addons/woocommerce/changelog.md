@@ -3,7 +3,7 @@ title: WooCommerce انضمام جي تبديلين جو رڪارڊ
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce انٽيگريشن تبديلي لاگ
+# WooCommerce انٽيگريشن تبديلي لاگ {#woocommerce-integration-changelog}
 
 ورزن 2.2.0 - 2026-07-01 تي جاري ڪيو ويو
 * نئون: Ultimate Multisite ٽيڪس رقمون هاڻي checkout تي الڳ WooCommerce فيس لائينن طور ظاهر ٿين ٿيون، جنهن سان ادائيگي کان اڳ ٽيڪس ڪل وڌيڪ واضح ٿين ٿا.

@@ -3,11 +3,11 @@ title: Specifo de la sitio skilo
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skil
+# Site Specification Skil {#site-specification-skill}
 
 La **Site Specification skil** estas struktura alproach por kapti la celojn de viajaj, la publikon kaj la markbrand identeco de viaja. Ĉi tiu informeco estas apartigita en via **site_brief** memoro, ki agentoj referas inter sesiojn por doni konstanta, kontekst-komita asiston.
 
-## Kion estas Site Specification?
+## Kion estas Site Specification? {#what-is-site-specification}
 
 Site Specification estas la procezo de dokumenti:
 
@@ -19,9 +19,9 @@ Site Specification estas la procezo de dokumenti:
 
 Ĉi tiu spesifikado fariĝas via **site_brief**, persistanta memoro, ki agentoj uzas por kompreni la kontekston de viaja.
 
-## kial uzi Site Specification?
+## kial uzi Site Specification? {#why-use-site-specification}
 
-### Konstanto inter sesioj
+### Konstanto inter sesioj {#consistency-across-sessions}
 
 Sen site `site_brief`, vi devus reeksplaini la celon de viaja ĉiam pri komenci novan sesion. Con ĝi, agentoj tuteble komprenas:
 
@@ -30,7 +30,7 @@ Sen site `site_brief`, vi devus reeksplaini la celon de viaja ĉiam pri komenci 
 - Viaj kontenaj strukturon
 - Viaj biznescelojn
 
-### Megaj pli bone rekomendoj
+### Megaj pli bone rekomendoj {#better-recommendations}
 
 Agentoj uzas via `site_brief` por:
 
@@ -39,17 +39,17 @@ Agentoj uzas via `site_brief` por:
 - Propozi dezajnon konsistanta kun via markbrand
 - Eviti sugesti inkompatabla funkciojn
 
-### Rapida enontigo
+### Rapida enontigo {#faster-onboarding}
 
 Novaj agentoj (aŭ agentoj en novaj sesioj) povas rapide akordi per legi via `site_brief` en sto de pordi klarigajn demandojn.
 
-## Iniciado de Site Specification
+## Iniciado de Site Specification {#initiating-site-specification}
 
-### Durante Theme Builder Onboarding
+### Durante Theme Builder Onboarding {#during-theme-builder-onboarding}
 
 La **Site Specification skil** estas aŭtomate iniciata durante la **Theme Builder onboarding flow**. La Setup Assistant agenteas demandojn kaj konstruas via `site_brief`.
 
-### Manua iniciado
+### Manua iniciado {#manual-initiation}
 
 Puis vous pouvez commencer la Spécification du Site à tout moment :
 
@@ -63,9 +63,9 @@ ou
 "Aide-moi à créer un brief de site"
 ```
 
-## Le Processus de Spécification du Site
+## Le Processus de Spécification du Site {#the-site-specification-process}
 
-### Étape 1 : Objectif du Site
+### Étape 1 : Objectif du Site {#step-1-site-purpose}
 
 L'agent demande :
 
@@ -81,7 +81,7 @@ Quel est l'objectif principal de votre site ?
 
 Vous pouvez sélectionner une catégorie ou décrire votre propre objectif.
 
-### Étape 2 : Public Cible
+### Étape 2 : Public Cible {#step-2-target-audience}
 
 ```
 Qui est votre public principal ?
@@ -94,7 +94,7 @@ Qui est votre public principal ?
 Quels sont leurs besoins principaux ?
 ```
 
-### Étape 3 : Identité de la Marque
+### Étape 3 : Identité de la Marque {#step-3-brand-identity}
 
 ```
 Quelles sont les couleurs de votre marque ?
@@ -110,7 +110,7 @@ Comment décririez-vous le ton de votre marque ?
 - Chaleureux / amical
 ```
 
-### Étape 4 : Objectifs Commerciaux
+### Étape 4 : Objectifs Commerciaux {#step-4-business-goals}
 
 ```
 À quoi ressemble le succès pour votre site ?
@@ -129,7 +129,7 @@ Quelle est votre métrique principale ?
 - Autre
 ```
 
-### Étape 5 : Structure du Contenu
+### Étape 5 : Structure du Contenu {#step-5-content-structure}
 
 ```
 Comment votre contenu est-il organisé ?
@@ -148,13 +148,13 @@ Quels types de contenu utilisez-vous ?
 - Autre
 ```
 
-## La Mémoire site_brief
+## La Mémoire site_brief {#your-sitebrief-memory}
 
 Après avoir terminé la Spécification du Site, vos informations sont stockées sous **site_brief** dans la mémoire de votre agent. Ceci est un enregistrement structuré contenant :
 
-## Site-brief Vizita kaj Modernigo de Viajankon
+## Site-brief Vizita kaj Modernigo de Viajankon {#viewing-and-updating-your-sitebrief}
 
-### Vidui Viankone Votre site-brief
+### Vidui Viankone Votre site-brief {#view-your-sitebrief}
 
 Demand la agen:
 
@@ -170,7 +170,7 @@ Demand la agen:
 
 La agen montros vian stoke specifikojn.
 
-### Modernigi Viankone Votre site-brief
+### Modernigi Viankone Votre site-brief {#update-your-sitebrief}
 
 Se viaja evoluas, vi povas moderni ĝin:
 
@@ -186,9 +186,9 @@ aŭ
 
 Tio refaros la Skill "Site Specification" kun via ekzista informo kiel komencigo.
 
-## Kiel Agen Utilizas Site-brief
+## Kiel Agen Utilizas Site-brief {#how-agents-use-sitebrief}
 
-### Dezajno Rekomendasjoj
+### Dezajno Rekomendasjoj {#design-recommendations}
 
 Kiam vi petas dezajnin ŝanĝojn, agen referas al vian site-brief:
 
@@ -199,7 +199,7 @@ kun varma, artizan temo. Mi kreos dezajnin, kiom emfazas
 vian homa joerio kaj la daŭrigebla valorojn."
 ```
 
-### Funkcio Sugestioj
+### Funkcio Sugestioj {#feature-suggestions}
 
 Agen sugeras funkciojn, kiuj estas aligitaj kun via celoj:
 
@@ -210,7 +210,7 @@ mi rekomendas: fidelaj programa, klientaj recenzoj, elektronika novinaro,
 kaj produkta rekomendoj."
 ```
 
-### Strukturo de Kontenoj
+### Strukturo de Kontenoj {#content-structure}
 
 Agen proponas organizon de la enon baseante sur vian strukturo:
 
@@ -219,16 +219,16 @@ Vi: "Kiel soll i min Blog organisiere?"
 Agent: "Da du en Produktkatalog mit Blog bruchsch, würd i vorschlage, d'Posts nach Produktkategorie z'organisiere und 'styling guides' z'erstelle, wo mehri Produkt zäme zeige."
 ```
 
-## Best Practices (Beste Praktike)
+## Best Practices (Beste Praktike) {#best-practices}
 
-### Si spezifisch sii (Sei spezifisch)
+### Si spezifisch sii (Sei spezifisch) {#be-specific}
 
 Statt "allgemeini Publikum" beschrib dini tatsächlechi Zielgruppe:
 
 - ✓ "Fraue im Alter vo 25-45, interessiert an nachhaltiger Mode"
 - ✗ "Alli"
 
-### Regelmässig aktualisiere (Aktualisiere regelmässig)
+### Regelmässig aktualisiere (Aktualisiere regelmässig) {#update-regularly}
 
 Wenn dini Site sich entwicklet, aktualisiere din site_brief:
 
@@ -237,14 +237,14 @@ Wenn dini Site sich entwicklet, aktualisiere din site_brief:
 - Wenn sich dini Markebild veränderet
 - Wenn sich dini Geschäftsziele ändere
 
-### Konsistenti Terminologie bruche (Verwende konsistenti Terminologie)
+### Konsistenti Terminologie bruche (Verwende konsistenti Terminologie) {#use-consistent-terminology}
 
 Bruche di gliiche Begriffe über alli Sitzige:
 
 - ✓ Sag immer "nachhaltigi Schmuckware" (nöd "umweltfründigi Schmuckware" und "grüeni Produkt")
 - ✓ Bezie dini Zielgruppe konsequent uf die gliichi Art
 
-### Kontext iibringe (Kontext einbeziehen)
+### Kontext iibringe (Kontext einbeziehen) {#include-context}
 
 Gib Hintergrundinformatione, wo de Agent hälfe, dini Entscheidigä z'verstoh:
 
@@ -252,7 +252,7 @@ Gib Hintergrundinformatione, wo de Agent hälfe, dini Entscheidigä z'verstoh:
 - "Üsi Zielgruppe isch technikaffin und erwartet modernes Design"
 - "Mir sind en Bootstrapped Startup, drum bruched mir kosteneffizienti Lösige"
 
-## Zämehang mit Theme Builder Onboarding (Beziehung zum Theme Builder Onboarding)
+## Zämehang mit Theme Builder Onboarding (Beziehung zum Theme Builder Onboarding) {#relationship-to-theme-builder-onboarding}
 
 D'Site Specification Fähigkeit isch i de **Theme Builder onboarding flow** integriert. Wenn du s'Onboarding abschliesst, wird din site_brief automatisch mit de Informatione erstellt, wo du gäh häsch.
 
@@ -262,7 +262,7 @@ Du chasch d'Site Specification au unabhängig laufe lah, wenn du wetsch:
 - Din site brief aktualisiere, wenn dini Site sich entwickelt
 - E detaillierti Spezifikation erstelle, bevor du mit Theme Builder startisch
 
-## Fehlerbehebig (Fehlerbehebung)
+## Fehlerbehebig (Fehlerbehebung) {#troubleshooting}
 
 **Min site_brief wird nöd brucht**
 - Bestätige, dass de Agent Zuegang zu em Gedächtnis het
@@ -278,7 +278,7 @@ Du chasch d'Site Specification au unabhängig laufe lah, wenn du wetsch:
 - Modernizi vian site_brief, se ĝi estas malnova
 - Doni pli da konteksto en viaj demandoj
 
-## Proksimaj Paŝoj
+## Proksimaj Paŝoj {#next-steps}
 
 Post kiam vi definas vian specifikon site (site specification):
 

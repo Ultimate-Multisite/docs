@@ -3,15 +3,15 @@ title: 'Les 4: Bou Niche Templates'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Les 4: Die Bou van Nis-Templates
+# Les 4: Die Bou van Nis-Templates {#lesson-4-building-niche-templates}
 
 Templates is die kern van jou nis-waardeproposisie. 'n Eienaar van 'n fiksheidsstudio wat aanmeld en 'n webwerf sien wat reeds soos 'n fiksheidswebwerf lyk – met klasroosters, afrigterprofiele en die regte beeldmateriaal – is baie waarskynliker om te bly as iemand wat 'n blou sketsbord sien.
 
-## Waar Ons Gebly Het
+## Waar Ons Gebly Het {#where-we-left-off}
 
 Ons het 'n werkende FitSite-netwerk met Ultimate Multisite geïnstalleer en geconfigureer. Nou bou ons die templates wat FitSite laat voel asof dit spesifiek vir fiksheidsbesighede gebou is.
 
-## Hoekom Nis-Templates Belangrik Is
+## Hoekom Nis-Templates Belangrik Is {#why-niche-templates-matter}
 
 Algemene templates dwing jou kliënte om die moeilike werk te doen: om uit te vind watter bladsye hulle nodig het, watter inhoudstruktuur werk, en hoe om dit vir hul industrie reg te laat lyk. Nis-templates elimineer daardie fynheid.
 
@@ -24,11 +24,11 @@ Algemene templates dwing jou kliënte om die moeilike werk te doen: om uit te vi
 
 Hulle vul net hul besonderhede in. Hulle begin nie van die begin nie.
 
-## Beplanning van Jou Templates
+## Beplanning van Jou Templates {#planning-your-templates}
 
 Voordat ons bou, besluit jy watter templates jy wil aanbied. Vir FitSite sal ons drie skep:
 
-### Template 1: Studio Essensieel
+### Template 1: Studio Essensieel {#template-1-studio-essential}
 
 Vir klein studios en persoonlike afrigters.
 
@@ -39,7 +39,7 @@ Vir klein studios en persoonlike afrigters.
 - **Kontak** bladsy met liggingskaart en formulier
 - **Skoon, moderne ontwerp** met 'n fiksheids-gepaste kleurskema
 
-### Template 2: Gym Pro
+### Template 2: Gym Pro {#template-2-gym-pro}
 
 Vir gevestigde gyms met meer dienste.
 
@@ -50,7 +50,7 @@ Vir gevestigde gyms met meer dienste.
 - **Getuigskrifte**-afdeling op die hoofblad
 - **Meer prominente** handelsmerkbewakingsopsies
 
-### Template 3: Fiksheidsketting
+### Template 3: Fiksheidsketting {#template-3-fitness-chain}
 
 Vir multi-liggings operasies.
 
@@ -60,17 +60,17 @@ Vir multi-liggings operasies.
 - **Gekentraliseerde handelsmerkbewaking** met ligging-spesifieke besonderhede
 - **Personeeldirektorie** oor liggings
 
-## Bou van 'n Template-Webwerf
+## Bou van 'n Template-Webwerf {#building-a-template-site}
 
 In Ultimate Multisite is 'n template bloot 'n WordPress-webwerf wat geconfigureer is soos jy wil hê nuwe kliëntwebwerwe moet lyk. Hier is hoe om een te skep:
 
-### Stap 1: Skep die Template-Webwerf
+### Stap 1: Skep die Template-Webwerf {#step-1-create-the-template-site}
 
 1. Navigeer na **Sites > Add New** in jou netwerk-admin
 2. Skep 'n webwerf met die naam `template-studio-essential`
 3. Hierdie webwerf word jou werkende sketsbord.
 
-### Stap 2: Installeer en Konfigureer die Tema
+### Stap 2: Installeer en Konfigureer die Tema {#step-2-install-and-configure-the-theme}
 
 Skakel oor na die template-webwerf-dashboard en:
 
@@ -82,7 +82,7 @@ Skakel oor na die template-webwerf-dashboard en:
 Kies 'n tema wat fleksibel genoeg is om vir fiksheid goed te lyk, maar nie so kompleks dat jou kliënte dit nie kan bestuur nie. Temas soos Astra, GeneratePress, of Kadence werk goed omdat dit lig, aanpasbaar en goed ondersteun word.
 :::
 
-### Stap 3: Skep die Bladsye
+### Stap 3: Skep die Bladsye {#step-3-create-the-pages}
 
 Bou elke bladsy uit met:
 
@@ -92,7 +92,7 @@ Bou elke bladsy uit met:
 
 Maak die placeholder-inhoud instruksioneel waar moontlik. In plaas van generiese vulteks, skryf inhoud soos: "Vervang dit met 'n kort beskrywing van jou studio en wat dit spesiaal maak. Noem jou afrigterfilosofie, jare van ervaring, of wat kliënte kan verwag."
 
-### Stap 4: Konfigureer Plugins
+### Stap 4: Konfigureer Plugins {#step-4-configure-plugins}
 
 Installeer en aktiveer plugins wat fiksheidsstudios benodig:
 
@@ -100,7 +100,7 @@ Installeer en aktiveer plugins wat fiksheidsstudios benodig:
 - 'n Kontakformulier-plugin
 - 'n SEO-plugin (voor-gekonfigureer met fiksheids-relevante standaardinstellings)
 
-### Stap 5: Merk as Template
+### Stap 5: Merk as Template {#step-5-mark-as-template}
 
 1. Navigeer na **Ultimate Multisite > Sites**
 2. Redigeer die template-webwerf
@@ -108,7 +108,7 @@ Installeer en aktiveer plugins wat fiksheidsstudios benodig:
 
 Herhaal hierdie proses vir elke template wat jy wil aanbied.
 
-## Template Kwaliteitskontrolelys
+## Template Kwaliteitskontrolelys {#template-quality-checklist}
 
 Voordat jy 'n template beskikbaar stel, verifieer:
 
@@ -121,7 +121,7 @@ Voordat jy 'n template beskikbaar stel, verifieer:
 - [ ] Geen gebreekte skakels of ontbrekende eiwwerkomste nie
 - [ ] Bladsylaai-spoed is aanvaarbaar
 
-## Die FitSite Netwerk Tot Nou
+## Die FitSite Netwerk Tot Nou {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Gereed vir plan-konfigurasie (volgende les)
 ```
 
-## Wat Ons Hierdie Les Gebou Het
+## Wat Ons Hierdie Les Gebou Het {#what-we-built-this-lesson}
 
 - **Drie nis-spesifieke templates** ontwerp vir verskillende fiksheidsbesigheidsgrootte
 - **Fiksheids-gepaste inhoud en beeldmateriaal** wat die platform laat voel asof dit spesifiek gebou is

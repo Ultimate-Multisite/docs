@@ -3,7 +3,7 @@ title: Rexistro de cambios de GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Rexistro de cambios de GoCardless
+# Rexistro de cambios de GoCardless {#gocardless-changelog}
 
 Versión: 1.0.3 - Publicada o 2026-05-05
 * Corrección: os sitios pendentes orfos agora límpanse cando unha membresía de GoCardless se cancela mentres está en estado pendente ou en espera

@@ -3,7 +3,7 @@ title: API Endpoint-a emateko
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API-ko Endpointa
+# Ultimate Multisite Register API-ko Endpointa {#the-ultimate-multisite-register-api-endpoint}
 
 Hauzuaren tutorial-an, Ultimate Multisite /register API endpointa erabiliziek, network-ek berri kliunturari (customer) irudi behar duen guztia bereizten eta Zapier-rekin ondo egin dezakezu.
 
@@ -29,11 +29,11 @@ API settings-aren burokizkoa da:
 
 Aurrez, endpointa eta Zapier-rekin registrazio aksio bat ezartu beharko dugu.
 
-## Endpoint body parametrak
+## Endpoint body parametrak {#endpoint-body-parameters}
 
 Endpointa bidali behar duen minimalki informazioa zer da, irudi ezarri du. Hau artikuluaren amaieran, eskerrekin, guztia aurkitu duzu.
 
-### Customer
+### Customer {#customer}
 
 Hau da Userra eta Ultimate Multisite-an Customerra emateko prozesuaren beharrezkoa den informazioa:
 
@@ -43,25 +43,25 @@ Ez dago erantzuna emateko, zein irudi da irudien bat. Hau da irudiena:
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Hau objektu horretan Membership Statusa (estatusa) dela garrantzia da.
 
 "membership" { "status" : "string", // "pending", "active", "trialing", "expired", "on-hold", "canceled" bat da }
 
-### **Products**
+### **Products** {#products}
 
 Produktoak irudien array batean, zein irudien bat edo gehiago dira, ematen da. Atzaintu, hau ez du produktoiak sortzen duen endpointa. Produkto sortzeko endpointa lehen eraldia Ultimate Multisitearen dokumentazioan jartzi eta mehatzeko.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Membership-like batean, statusa dela garrantzia da.
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" bat da }**
 
-### Site
+### Site {#site}
 
 Hau objektu horretan sitearen URL-a eta Tituluak (Title) dela garrantzia da.
 
@@ -69,13 +69,13 @@ Hau objektu horretan sitearen URL-a eta Tituluak (Title) dela garrantzia da.
 
 Register endpoint-ek itzultzea, leikitu membership informazio bat array batean izango da.
 
-## Zapier-ean akzioa sortzea
+## Zapier-ean akzioa sortzea {#creating-an-action-in-zapier}
 
 Hau irudien berragarri eta garrantzitsuak akun sortzeko endpointa introduktatuz, Zapier-an akzio berria ere erabiliko duzu.
 
 Zapier-ren bera berragarri bertsioaren zerbait erabiltzen eta onitzten jakin duzu? Hiera laitzen dut. (link?)
 
-### Akzio sortzea
+### Akzio sortzea {#creating-an-action}
 
 Zapier-repertua Google Forms-arekin Ultimate Multisite-n erregistro endpointa erabiltzen jakinarazten besteak irekitzeko, Google Formsarekin integrazio bat ez duzu. Horrek formua pleratu eta informazioa formaren zein-datu-listan saldatuenean, Ultimate Multisite-n network-ean membership berria emateko da.
 
@@ -105,7 +105,7 @@ Informazioak konfiguratuta jakin ditzakezu, egindua azpiegitura (test) iritu. Az
 
 Testu iritu zapiaren (Zap) eta ondo funtzionatu behar du. Erreur bat jakin dugu, guztietan field-ek ikusi eta jartzen duen eragiketa batek ondo dagoela. Informazioa asko da, gertatzen dira ez aurkitu beharko dituen besteak.
 
-### Endpoint parametrik guztia
+### Endpoint parametrik guztia {#complete-endpoint-parameters}
 
 Hona da eskatzeko guztia eta göndetzeko lehen field-ek guztiak.
 

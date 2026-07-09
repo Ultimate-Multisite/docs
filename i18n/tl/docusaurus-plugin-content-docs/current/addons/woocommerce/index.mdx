@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# Integrasyon ng WooCommerce
+# Integrasyon ng WooCommerce {#woocommerce-integration}
 
 Gumagana ang Integrasyon ng WooCommerce sa paraang halos kapareho ng paggana ng aming Manual Gateway. Nag-aalok ito ng napakaraming kakayahang umangkop para sa iyong mga user, na nagpapahintulot sa kanila na pumili ng alinman sa mga form ng pagbabayad na available sa iyong WooCommerce install. At simple ito: kapag natapos na ang panahon ng pagsingil ng user, inilalagay ang subscription ng user sa hold. Kasabay nito, gagawa ng order sa WooCommerce install ng pangunahing site ng network. Pagkatapos ay makakatanggap ang user ng invoice sa kanilang email, na may link para isagawa ang pagbabayad. Kapag natanggap na ang pagbabayad, nare-renew ang subscription.
 
-## Mga Tampok
+## Mga Tampok {#features}
 
 - Madaling integrasyon sa pagitan ng Ultimate Multisite at WooCommerce
 - Ilang paraan ng pagbabayad na available
 - Awtomatikong paulit-ulit na pagsingil gamit ang kasamang subscriptions core, na may opsyonal na mga pagpapahusay ng WooCommerce Subscriptions plugin
 - Kasama sa mga kabuuan ng checkout ang mga buwis ng Ultimate Multisite bilang magkakahiwalay, hindi nabubuwisang linya ng fee sa WooCommerce upang masuri ng mga customer ang mga halaga ng buwis bago magbayad
 
-## Dokumentasyon
+## Dokumentasyon {#documentation}
 
 **Pagse-set Up ng Integrasyon ng WooCommerce**
 
 **Pagpapalawak ng iyong mga Opsyon sa Pagbabayad gamit ang Ultimate Multisite: Integrasyon ng WooCommerce**
 
-## Pag-install
+## Pag-install {#installation}
 
 1. I-upload ang 'ultimate-multisite-woocommerce' sa direktoryong '/wp-content/plugins/'
 2. I-activate ang plugin sa pamamagitan ng menu na 'Plugins' sa WordPress
 3. Sundin ang step by step Wizard para i-set up ang plugin
 
-## Gabay sa Paggamit
+## Gabay sa Paggamit {#usage-guide}
 
 _**MAHALAGANG TALA: Tumutukoy ang artikulong ito sa Ultimate Multisite bersyon 2.x.**_
 
@@ -40,7 +40,7 @@ Nauunawaan namin na ang _Stripe_ at _PayPal_ ay hindi available sa ilang bansa n
 
 Ang _WooCommerce_ ay isang napakapopular na eCommerce plugin. Gumawa ang mga developer sa buong mundo ng mga add-on para i-integrate dito ang iba't ibang payment gateway. Sinamantala namin ito upang palawakin ang mga payment gateway na maaari mong gamitin sa billing system ng Ultimate Multisite.
 
-## Pagse-set Up Nito
+## Pagse-set Up Nito {#setting-it-up}
 
 Una, kailangan mong i-install ang WooCommerce Integration add-on na **libre para sa mga lisensyadong user**. Para i-install ito, mag-click sa Ultimate Multisite sa iyong super admin dashboard at piliin ang **Add-ons**.
 
@@ -68,11 +68,11 @@ Kapag na-install na, makakakita ka ng karagdagang opsyon sa ilalim ng mga settin
 
 Maaari mong i-configure ang ilang pangunahing setting tulad ng display name na lalabas sa front end at mga tagubilin upang gabayan ang iyong mga user sa kanilang checkout flow. Pagkatapos ay maaari kang pumunta sa **mga setting ng _WooCommerce_ ng iyong Pangunahing site** upang i-enable at i-configure ang payment gateway na gusto mong gamitin.
 
-### Mga linya ng fee para sa buwis sa checkout
+### Mga linya ng fee para sa buwis sa checkout {#checkout-tax-fee-lines}
 
 Kapag may kasamang mga buwis ang checkout ng Ultimate Multisite, idinaragdag ng integrasyon ang bawat halaga ng buwis ng Ultimate Multisite sa WooCommerce checkout bilang hiwalay, hindi nabubuwisang linya ng fee. Pinananatili nitong nakikita ang kabuuang buwis bago ang pagbabayad habang pinipigilan ang WooCommerce na buwisan muli ang tax fee.
 
-## Paano pamahalaan ang pagbabayad
+## Paano pamahalaan ang pagbabayad {#how-to-manage-the-payment}
 
 Gumagana ang WooCommerce Integration sa paraang halos kapareho ng paggana ng aming **Manual Gateway**. Ang kahinaan nito ay kailangang bayaran nang manu-mano ang bawat pagbabayad sa katapusan ng panahon ng pagsingil. Ganito gumagana ang daloy:
 
@@ -82,13 +82,13 @@ Gumagana ang WooCommerce Integration sa paraang halos kapareho ng paggana ng ami
 
   * Kapag natanggap na ang pagbabayad, ang membership ay **nare-renew** , nala-log ang pagbabayad sa Ultimate Multisite at itinatakda ang order bilang kumpleto.
 
-### Ilang Mahahalagang Tala:
+### Ilang Mahahalagang Tala: {#some-important-notes}
 
   * Gumagana pa rin ang default na functionality ng Ultimate Multisite sa form ng integrasyong ito. Halimbawa, ang **pag-isyu ng mga refund** mula sa screen ng **Subscription Management** ay makikipag-ugnayan sa WooCommerce upang i-isyu ang refund gamit ang napiling form ng pagbabayad.
 
   * Umaasa ang Ultimate Multisite: WooCommerce Integration sa WP-Cron upang gumana. Gumagana ito nang napakahusay sa karamihan ng pagkakataon, ngunit kung mababa ang traffic ng site, hindi napapa-prompt ang cron na tingnan ang mga naka-schedule na event at nalalagpasan ang event, na maaaring magdulot ng mga pagkaantala sa pagpapatupad.
 
-## WooCommerce Subscriptions Plugin
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
 Ang manu-manong pagsisimula ng bayad bawat buwan ay hindi angkop para sa mga end-user dahil inaasahang awtomatikong umuulit ang mga subscription sa bawat billing cycle. Ang WooCommerce Integration add-on ngayon ay may kasamang core subscriptions code, kaya palaging gumagamit ng subscriptions ang mga umuulit na produkto para sa umuulit na billing.
 
@@ -100,7 +100,7 @@ At iyon na. Hindi na kakailanganin ng iyong mga end-user na manu-manong magbayad
 
 Bukod sa isang order na nalilikha sa iyong pangunahing site sa ilalim ng _WooCommerce_, lilikha rin ito ng subscription para sa bawat Account.
 
-### Gawi ng pagsuspinde sa bigong renewal
+### Gawi ng pagsuspinde sa bigong renewal {#failed-renewal-suspension-behavior}
 
 Bilang default, nananatiling aktibo ang mga membership habang pinoproseso ng WooCommerce Subscriptions ang failed-payment retry schedule nito. Pinapanatili nito ang normal na grace window ng WooCommerce Subscriptions upang ang isang nabawing renewal ay makapagbalik ng subscription at membership sa pagkakasabay nang hindi napaaga ang pagputol ng access.
 

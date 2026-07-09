@@ -3,11 +3,11 @@ title: Index hamorum
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Index Hooks
+# Index Hooks {#hooks-reference}
 
 Documentatio automatice generata omnium **59 actionum** et **118 filtrorum** in Ultimate Multisite.
 
-## Actiones
+## Actiones {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Exardescit ante redirectionem authenticationis.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Exardescit statim antequam crustulum authenticationis ponitur.
@@ -70,7 +70,7 @@ Documentatio automatice generata omnium **59 actionum** et **118 filtrorum** in 
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Excitatur postquam obiectum in datorum basi conditum est.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permittit ut plugin effectores actiones processui reserandi addant.
 
-## Filtra
+## Filtra {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrat durationem temporis exspirationis crustuli authenticationis.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrat rationem redirectionis authenticationis.

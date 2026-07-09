@@ -3,7 +3,7 @@ title: Daftar Akun ngaliwatan Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Acara: Register akun lewat Zapier
+# Acara: Register akun lewat Zapier {#event-register-an-account-via-zapier}
 
 Di artikel [Mengintegrasikan Ultimate Multisite dengan Zapier](zapier.md), kita sudah bahas gimana cara pakai Zapier buat ngelakuin berbagai aksi di Ultimate Multisite berdasarkan pemicu (trigger) dan kejadian (event). Di artikel ini, kita bakal tunjukkin caranya bisa nyambung sama aplikasi pihak ketiga. Kita akan pakai Google Sheets sebagai sumber datanya terus kirim informasinya ke Ultimate Multisite buat daftar akun.
 

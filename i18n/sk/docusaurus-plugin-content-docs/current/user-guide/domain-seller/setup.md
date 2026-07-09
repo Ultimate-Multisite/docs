@@ -3,21 +3,21 @@ title: Nastavenie a konfigurácia poskytovateľa
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Doménový predajca: Nastavenie a konfigurácia poskytovateľa
+# Doménový predajca: Nastavenie a konfigurácia poskytovateľa {#domain-seller-setup-and-provider-configuration}
 
 Pridanie Domain Seller obsahuje pramenom súpisovým nástrojom na nastavenie, ktoré vás krok za krokom poprowadí cez každý požadovaný krok. Táto stránka pokrýva postup v tomto nástroji a to, ako nakonfigurovať alebo zkonfigurovať poskytovatele po tom.
 
-## Požiadavky
+## Požiadavky {#requirements}
 
 - **Multisite Ultimate** v2.4.12 alebo vyššie, aktivované v sieti
 - **PHP** 7.4+
 - API poverenia pre minimálne jeden podporovaný registrára
 
-## Nastavenie nástroja pri prvom spustení
+## Nastavenie nástroja pri prvom spustení {#first-run-setup-wizard}
 
 Nastavenie nástroja sa automaticky spustí prvýkrát, keď plugin aktivujete v sieti. Je k dispozícii aj v akomkoľvek čase z **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Krok 1 — Vyberte poskytovateľa
+### Krok 1 — Vyberte poskytovateľa {#step-1--choose-a-provider}
 
 Vyberte registrára, s ktorým chcete pripojiť. Podporované možnosti:
 
@@ -33,7 +33,7 @@ Vyberte registrára, s ktorým chcete pripojiť. Podporované možnosti:
 | NameSilo | Nie | Nie |
 | Enom | Áno | Nie |
 
-### Krok 2 — Vložte poverenia
+### Krok 2 — Vložte poverenia {#step-2--enter-credentials}
 
 Každý poskytovateľ má rôzne polia pre poverenia:
 
@@ -57,17 +57,17 @@ Každý poskytovateľ má rôzne polia pre poverenia:
 
 Pretestujte **Sandbox režim**, ak je dostupný, aby ste si mohli testovať proti testovej sieti poskytovateľa pred live nasadením.
 
-### Krok 3 — Testovanie spojenia
+### Krok 3 — Testovanie spojenia {#step-3--test-the-connection}
 
 Kliknite na **Test Connection**. Wizár pošle ľahký API hovor k overeniu údajov a pripojenia. Napravte akékoľvek problémy s údajmi, aby ste mohli pokračovať.
 
-### Krok 4 — Import TLDs
+### Krok 4 — Import TLDs {#step-4--import-tlds}
 
 Kliknite na **Import TLDs**, aby ste si stáli všetky dostupné TLD a dlhoprisku od zdieľajúceho poskytovateľa. Toto vyplní zoznam TLD používaný pre doménové produkty. Import môže trvať 30–60 sekúnd pri poskytovateľoch s veľkým katalógom TLD.
 
 TLDs sa automaticky synchronizujú aj raz za deň pomocou plánovaného cron jobu.
 
-### Krok 5 — Vytvorenie doménového produktu
+### Krok 5 — Vytvorenie doménového produktu {#step-5--create-a-domain-product}
 
 Wizár vytvorí štandardný produkt typu catch-all domény so zohľadnením marže 10 %. Môžete tento produkt upraviť okamžite alebo ho prejsť a vytvárať produkty manuálne pod **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Pre úplný pramen konfigurácie produktu si pozrite do [Domain Products and Pri
 
 ---
 
-## Prekonfigurovanie poskytovateľa
+## Prekonfigurovanie poskytovateľa {#reconfiguring-a-provider}
 
 Prejdite na **Network Admin › Ultimate Multisite › Settings › Domain Seller** (alebo kliknite na **Settings** v zozname pluginov).
 
@@ -88,17 +88,17 @@ Strana s nastaveniami obsahuje:
 - **Správa doménových produktov** — rýchly odkaz na zoznam Produktov
 - **Konfigurácia poskytovateľov** — otvorí si Vyznačenie integrácií (Integration Wizard) na pridanie alebo prekonfiguráciu poskytovateľov
 
-### Pridanie druhého poskytovateľa
+### Pridanie druhého poskytovateľa {#adding-a-second-provider}
 
 Kliknite na **Konfigurácia poskytovateľov** a ponovte viznačenie (wizard) pre nového registra. Môžete mať aktivované viacero poskytovateľov naraz. Každý doménový produkt priradíte konkrétnemu poskytovateľovi, alebo ho nechajte na predvolenom.
 
-### Manuálne synchronizovanie TLD
+### Manuálne synchronizovanie TLD {#syncing-tlds-manually}
 
 Na stránke nastavení kliknite na **Synchronizovať TLD** vedľa akéhokoľvek skonfigurovaného poskytovateľa, aby ste získali najnovšie ceny. Toto je užitočné po tom, čo poskytovateľ aktualizuje dlhopisové ceny alebo pridá nové TLD.
 
 ---
 
-## Logy
+## Logy {#logs}
 
 Každý poskytovateľ píše do vlastného kanálu logov. Logy sú viditeľné pod **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Každý poskytovateľ píše do vlastného kanálu logov. Logy sú viditeľné p
 
 ---
 
-## Poznámky k schopnostám poskytovateľa
+## Poznámky k schopnostám poskytovateľa {#provider-capability-notes}
 
 Nie všetky registračné API ponúkajú rovnaké operácie. Dodatok zobrazuje nesporované operácie s jasnými chybami pre admina, namiesto ich tichého neúspešného vykonania.
 

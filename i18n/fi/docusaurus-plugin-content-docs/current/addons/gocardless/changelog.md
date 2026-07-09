@@ -3,7 +3,7 @@ title: GoCardless-muutosloki
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless-muutosloki
+# GoCardless-muutosloki {#gocardless-changelog}
 
 Versio: 1.0.3 - Julkaistu 2026-05-05
 * Korjaus: Orvoiksi jääneet odottavat sivustot siivotaan nyt, kun GoCardless-jäsenyys peruutetaan odottavassa tai pidossa olevassa tilassa

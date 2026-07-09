@@ -3,13 +3,13 @@ title: Crearea codurilor de reducere
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Crearea codurilor de reducere (v2)
+# Crearea codurilor de reducere (v2) {#creating-discount-codes-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
 Cu Ultimate Multisite poți crea coduri de reducere pentru a le oferi clienților tăi reduceri la abonamentele lor. Iar crearea lor este ușoară!
 
-## Crearea și editarea codurilor de reducere
+## Crearea și editarea codurilor de reducere {#creating-and-editing-discount-codes}
 
 Pentru a crea sau edita un cod de reducere, mergi la **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Cuponul este acum în lista ta și, de acolo, poți face clic pentru a-l **edita
 
 ###
 
-### Utilizarea parametrilor URL:
+### Utilizarea parametrilor URL: {#using-url-parameters}
 
 Dacă vrei să îți personalizezi tabelele de prețuri sau să construiești o pagină frumoasă cu coduri de cupon pentru site-ul tău web și vrei să aplici automat un cod de reducere formularului tău de checkout, poți face acest lucru prin parametri URL.
 

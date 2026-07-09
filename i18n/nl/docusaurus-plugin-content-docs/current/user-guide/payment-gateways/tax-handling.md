@@ -3,7 +3,7 @@ title: Belastingafhandeling
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Belastingafhandeling
+# Belastingafhandeling {#tax-handling}
 
 Ultimate Multisite heeft een module voor belastinginning ingebouwd in onze core plugin, dus als je verkoopbelastingen op je plannen, pakketten en diensten moet innen, kun je dat eenvoudig doen zonder add-ons te hoeven installeren.
 
@@ -11,7 +11,7 @@ Voor bedrijven in Europa bieden we een **uitbreiding** die tools en functies toe
 
 Ultimate Multisite dient geen belastingen in en draagt geen belastingen namens jou af aan de overheid; we helpen je simpelweg de juiste belastingen te innen op het moment van de transactie. **Je moet belastingen nog steeds zelf afdragen.**
 
-## Belastinginning inschakelen
+## Belastinginning inschakelen {#enabling-tax-collection}
 
 Belastinginning is standaard niet ingeschakeld. Om dit in te schakelen, ga je naar **Ultimate Multisite > Instellingen > Belastingen** en zet je de instelling Belastingen inschakelen aan.
 
@@ -25,7 +25,7 @@ Je kunt ook de belastinginstellingen voor individuele producten bekijken:
 
 ![Belastinginstellingen voor producten](/img/config/settings-taxes.png)
 
-### Exclusief belasting vs. inclusief belasting
+### Exclusief belasting vs. inclusief belasting {#tax-excluded-vs-tax-included}
 
 Standaard zijn al je productprijzen exclusief belasting, wat betekent dat belastingen **niet zijn inbegrepen** in de prijs van het product. Als we bepalen dat een klant belasting moet betalen over een bepaalde aankoop, voegen we de belastingen **boven op** het subtotaal toe.
 
@@ -37,7 +37,7 @@ Vergeet niet de wijzigingen die je hebt aangebracht **op te slaan**.
 
 ###
 
-## Belastingtarieven aanmaken
+## Belastingtarieven aanmaken {#creating-tax-rates}
 
 Nadat je belastinginning hebt ingeschakeld, moet je belastingtarieven voor specifieke locaties aanmaken met onze editor voor belastingtarieven.
 
@@ -51,7 +51,7 @@ Op de editorpagina voor belastingtarieven kun je nieuwe belastingtarieven toevoe
 
 Je moet elk belastingtarief een **titel** geven (gebruikt op facturen). Daarna kun je het **land** (vereist), de **staat/provincie,** en de **stad** (beide optioneel) kiezen waar deze belasting in rekening wordt gebracht. Voeg ten slotte het **belastingtarief in procenten** toe.
 
-### Belastingcategorieën
+### Belastingcategorieën {#tax-categories}
 
 Je kunt ook meerdere belastingcategorieën aanmaken om verschillende belastingtarieven voor verschillende soorten producten toe te voegen.
 
@@ -73,7 +73,7 @@ Je kunt de belastingcategorie voor een bepaald product instellen door naar de **
 
 Op datzelfde scherm kun je de schakelaar **Is belastbaar?** uitzetten om Ultimate Multisite te laten weten dat het geen belastingen op dat bepaalde product moet innen.
 
-## Europese btw-ondersteuning
+## Europese btw-ondersteuning {#european-vat-support}
 
 Zoals eerder vermeld, hebben we een uitbreiding beschikbaar voor klanten in de EU die aanvullende vereisten hebben vanwege Europese btw-regelgeving.
 
@@ -101,7 +101,7 @@ Als je teruggaat naar het **tabblad Belastinginstellingen** , zie je nieuwe opti
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Btw-belastingtarieven ophalen
+### Btw-belastingtarieven ophalen {#pulling-on-vat-tax-rates}
 
 Een van de tools die onze integratie toevoegt, is de mogelijkheid om de belastingtarieven voor EU-lidstaten te laden. Dat kan door de editorpagina voor belastingtarieven te bezoeken nadat je EU-btw-ondersteuning hebt ingeschakeld.
 
@@ -111,7 +111,7 @@ Onderaan de pagina zie je de opties voor het ophalen van btw. Door een tarieftyp
 
 Je kunt de waarden ook bewerken nadat je ze hebt opgehaald. Om dat te doen, bewerk je eenvoudig de tabelregel die je nodig hebt en klik je om de nieuwe waarden op te slaan.
 
-### Btw-validatie
+### Btw-validatie {#vat-validation}
 
 Wanneer btw-ondersteuning is ingeschakeld, voegt Ultimate Multisite een extra veld toe aan het checkout-formulier, onder het veld voor het factuuradres. Het veld wordt alleen weergegeven voor klanten in de EU.
 

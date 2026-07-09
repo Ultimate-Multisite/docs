@@ -3,9 +3,9 @@ title: Moniverkoston muutosloki
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network-muutosloki
+# Multi-Network-muutosloki {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Uusi: Verkkopohjien esikatselin — selaa ja esikatsele verkkopohjia live-paneelissa ennen ostamista.
 * Uusi: Verkkopohjan valitsin kassalla — asiakkaat voivat valita verkkopohjan rekisteröitymisen kassaprosessin aikana.
 * Uusi: Verkkojen välinen magic link SSO — asiakkaat voivat käyttää aliverkkoja saumattomasti magic-link-tunnistautumisen kautta.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Korjaus: Suojaus määrittelemätöntä `network_id`-avainta vastaan sivustokyselyn rajauksessa.
 * Korjaus: Verkon oikeustarkistus ennen kontekstin vaihtoa estää `wpdb`-taulun ominaisuusvirheet.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Korjaus: Uuden verkon luonti.
 * Korjaus: Valikoiden renderöinti.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Päivitetty Plugin Update Checker v5:een
 * Lisätty modernit WordPress plugin -otsakkeet
 * Parannettu yhteensopivuutta uusimpien WordPress-versioiden kanssa
 
-### 1.0.2
+### 1.0.2 {#102}
 * Virheenkorjauksia ja suorituskykyparannuksia
 * Parannettu verkon eristystä
 
-### 1.0.0
+### 1.0.0 {#100}
 * Ensimmäinen julkaisu
 * Multiverkon ydintoiminnallisuus
 * Integraatio Multisite Ultimate kanssa

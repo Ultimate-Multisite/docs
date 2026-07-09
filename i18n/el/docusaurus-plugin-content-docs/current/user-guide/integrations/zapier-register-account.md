@@ -3,7 +3,7 @@ title: Εγγραφή Account μέσω Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Συμβάν: Εγγραφή Account μέσω Zapier
+# Συμβάν: Εγγραφή Account μέσω Zapier {#event-register-an-account-via-zapier}
 
 Στο άρθρο [Ενσωμάτωση του Ultimate Multisite με το Zapier](zapier.md), συζητήσαμε πώς να χρησιμοποιήσετε το Zapier για να εκτελείτε διαφορετικές ενέργειες μέσα στο Ultimate Multisite με βάση εναύσματα και συμβάντα. Σε αυτό το άρθρο, θα δείξουμε πώς μπορείτε να ενσωματώσετε εφαρμογές τρίτων. Θα χρησιμοποιήσουμε το Google Sheets ως πηγή δεδομένων και θα στείλουμε τις πληροφορίες στο Ultimate Multisite για να εγγράψουμε ένα Account.
 

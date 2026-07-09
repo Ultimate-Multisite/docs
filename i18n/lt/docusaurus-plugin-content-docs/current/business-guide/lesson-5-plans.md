@@ -3,15 +3,15 @@ title: '5 pamoka: savo planų kūrimas'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 5 pamoka: savo planų kūrimas
+# 5 pamoka: savo planų kūrimas {#lesson-5-designing-your-plans}
 
 Jūsų planų pakopos nėra tik kainų lygiai -- jos atspindi, kaip iš tikrųjų veikia jūsų nišos klientai. Šioje pamokoje sukursite produktų pakopas, atitinkančias tikruosius skirtinguose etapuose esančių fitneso verslų poreikius.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite turi paruoštus tris šablonus (Studio Essential, Gym Pro, Fitness Chain). Dabar sukursime planus, kurie nustato, prie ko klientai gauna prieigą ir kiek moka.
 
-## Mąstymas pagal klientų segmentus
+## Mąstymas pagal klientų segmentus {#thinking-in-customer-segments}
 
 Klaida, kurią daro dauguma žmonių, yra planų kūrimas pagal technines funkcijas (saugykla, pralaidumas, puslapių skaičius). Jūsų nišos klientai apie tai negalvoja tokiais terminais. Sporto klubo savininkas galvoja apie tai, ko jam reikia verslui valdyti.
 
@@ -25,11 +25,11 @@ Fitneso studijoms yra trys natūralūs segmentai:
 
 Jūsų planai turėtų atitikti šiuos segmentus, o ne savavališkus funkcijų rinkinius.
 
-## FitSite planų kūrimas
+## FitSite planų kūrimas {#creating-the-fitsite-plans}
 
 Eikite į **Ultimate Multisite > Produktai > Pridėti produktą** kiekvienam planui.
 
-### 1 planas: FitSite Starter -- 49 USD/mėn.
+### 1 planas: FitSite Starter -- 49 USD/mėn. {#plan-1-fitsite-starter----49month}
 
 **Tikslinė auditorija**: individualūs treneriai ir mažos studijos
 
@@ -59,7 +59,7 @@ Eikite į **Ultimate Multisite > Produktai > Pridėti produktą** kiekvienam pla
 - Jūsų pasirinkta theme: priverstinai aktyvuoti
 - Visos kitos themes: paslėptos
 
-### 2 planas: FitSite Growth -- 99 USD/mėn.
+### 2 planas: FitSite Growth -- 99 USD/mėn. {#plan-2-fitsite-growth----99month}
 
 **Tikslinė auditorija**: įsitvirtinę vienos vietos sporto klubai
 
@@ -85,7 +85,7 @@ Eikite į **Ultimate Multisite > Produktai > Pridėti produktą** kiekvienam pla
 - Plano grupė: FitSite Plans
 - Produkto eilė: 2
 
-### 3 planas: FitSite Pro -- 199 USD/mėn.
+### 3 planas: FitSite Pro -- 199 USD/mėn. {#plan-3-fitsite-pro----199month}
 
 **Tikslinė auditorija**: kelių vietų fitneso tinklai
 
@@ -109,7 +109,7 @@ Eikite į **Ultimate Multisite > Produktai > Pridėti produktą** kiekvienam pla
 - Plano grupė: FitSite Plans
 - Produkto eilė: 3
 
-## Plano grupės nustatymas
+## Plano grupės nustatymas {#setting-up-the-plan-group}
 
 Plano grupė užtikrina, kad klientai galėtų atsinaujinti arba pereiti į žemesnį planą tik FitSite planų šeimoje. Kiekvieno plano skirtuke **Atnaujinimai ir grąžinimai į žemesnį planą**:
 
@@ -118,7 +118,7 @@ Plano grupė užtikrina, kad klientai galėtų atsinaujinti arba pereiti į žem
 
 Tai sukuria aiškų atnaujinimo kelią: Starter → Growth → Pro.
 
-## Užsakymo papildomų pasiūlymų pridėjimas
+## Užsakymo papildomų pasiūlymų pridėjimas {#adding-order-bumps}
 
 Užsakymo papildomi pasiūlymai yra papildomi produktai, siūlomi atsiskaitymo metu. FitSite atveju apsvarstykite:
 
@@ -128,7 +128,7 @@ Užsakymo papildomi pasiūlymai yra papildomi produktai, siūlomi atsiskaitymo m
 
 Sukurkite juos kaip **paketo** tipo produktus Ultimate Multisite ir susiekite su atitinkamais planais.
 
-## Kodėl ši struktūra veikia
+## Kodėl ši struktūra veikia {#why-this-structure-works}
 
 - **Starter** pašalina įėjimo kliūtis -- maža kaina, paprastas pasiūlymas, treneriai greitai atsiduria internete
 - **Growth** prideda funkcijas, kurių sporto klubai iš tikrųjų prašo -- rezervacijos, galerijos, pasirinktiniai domenai
@@ -136,7 +136,7 @@ Sukurkite juos kaip **paketo** tipo produktus Ultimate Multisite ir susiekite su
 - **Užsakymo papildomi pasiūlymai** leidžia klientams prisitaikyti paslaugą neapsunkinant pagrindinių planų
 - **Aiškus atnaujinimo kelias** reiškia, kad klientai auga kartu su jumis, o ne išeina
 
-## FitSite tinklas iki šiol
+## FitSite tinklas iki šiol {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Trys planų pakopos**, susietos su realiais fitneso verslo segmentais
 - **Funkcijų ribojimas** naudojant Ultimate Multisite plugin ir šablonų valdiklius

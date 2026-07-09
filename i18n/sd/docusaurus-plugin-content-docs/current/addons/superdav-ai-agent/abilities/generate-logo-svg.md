@@ -3,15 +3,15 @@ title: لوگو SVG ٺاهيو
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG ٺاھيو
+# Logo SVG ٺاھيو {#generate-logo-svg}
 
 **Generate Logo SVG** صلاحيت Theme Builder کي اجازت ڏئي ٿي ته توهان جي WordPress سائيٽ ۾ سڌو سنئون حسب ضرورت logo SVGs ٺاهي ۽ شامل ڪري، خودڪار نيم اسپيس-محفوظ صفائي سان.
 
-## جائزو
+## جائزو {#overview}
 
 هي صلاحيت توهان جي سائيٽ جي برانڊنگ رخ ۽ ڊيزائن ترجيحن جي بنياد تي scalable vector graphics (SVG) لوگو ٺاهي ٿي. ٺاهيل SVGs پاڻمرادو صاف ڪيا وڃن ٿا ته جيئن WordPress ۾ استعمال لاءِ محفوظ هجن، جڏهن ته بصري سالميت برقرار رهي.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 | `height` | number | No | SVG اوچائي pixels ۾ (default: 200) |
 | `include_text` | boolean | No | ڇا لوگو ۾ سائيٽ جو نالو متن طور شامل ڪجي (default: true) |
 
-## آئوٽ پٽ فارميٽ
+## آئوٽ پٽ فارميٽ {#output-format}
 
 هي صلاحيت هيٺين جوڙجڪ سان هڪ SVG string واپس ڪري ٿي:
 
@@ -36,7 +36,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 }
 ```
 
-## SVG صفائي جو رويو
+## SVG صفائي جو رويو {#svg-sanitisation-behaviour}
 
 ٺاهيل SVGs پاڻمرادو نيم اسپيس-محفوظ صفائي مان گذرن ٿا ته جيئن:
 
@@ -48,7 +48,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 
 هي يقيني بڻائي ٿو ته SVG اضافي صفائي جي ضرورت کان سواءِ سڌو WordPress ۾ embed ڪرڻ لاءِ محفوظ آهي.
 
-## استعمال جو مثال
+## استعمال جو مثال {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 - جديد ڊيزائن اصولن جي پيروي ڪري ٿو
 - پاڻمرادو صاف ٿيل ۽ استعمال لاءِ تيار آهي
 
-## Theme Builder سان انٽيگريشن
+## Theme Builder سان انٽيگريشن {#integration-with-theme-builder}
 
 جڏهن Theme Builder جي design-direction چونڊ استعمال ڪئي وڃي، Generate Logo SVG صلاحيت:
 
@@ -71,21 +71,21 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 3. لوگو کي پاڻمرادو توهان جي سائيٽ جي header/branding علائقي ۾ embed ڪري ٿي
 4. SVG کي WordPress media ۾ custom logo طور محفوظ ڪري ٿي
 
-## بهترين طريقا
+## بهترين طريقا {#best-practices}
 
 - **واضح انداز جون ترجيحون ڏيو** — جيڪو ڊيزائن انداز توهان چاهيو ٿا اهو بيان ڪريو (modern، classic، playful، وغيره)
 - **رنگ مخصوص ڪريو** — مستقل مزاجي لاءِ پنهنجي brand رنگ شامل ڪريو
 - **rendering آزمائو** — تصديق ڪريو ته لوگو مختلف screen sizes تي صحيح ڏيکاري ٿو
 - **وڌيڪ حسب ضرورت بڻايو** — سائيز ۽ جڳهه ترتيب ڏيڻ لاءِ WordPress جا logo customization اوزار استعمال ڪريو
 
-## حدون
+## حدون {#limitations}
 
 - SVG لوگو static graphics طور ٺاهيا وڃن ٿا (animated نه)
 - ڪيترن عنصرن وارن پيچيده لوگوز کي هٿ سان refinement جي ضرورت ٿي سگهي ٿي
 - custom fonts سپورٽ ٿيل نه آهن؛ متن system fonts استعمال ڪري ٿو
 - تمام وڏيون يا تمام ننڍيون dimensions معيار تي اثر وجهي سگهن ٿيون
 
-## لاڳاپيل صلاحيتون
+## لاڳاپيل صلاحيتون {#related-abilities}
 
 - [Palette Contrast جي تصديق ڪريو](./validate-palette-contrast.md) — accessibility لاءِ رنگ contrast چيڪ ڪريو
 - [Menu ٺاهيو](./create-menu.md) — پنهنجي سائيٽ لاءِ navigation menus ٺاهيو

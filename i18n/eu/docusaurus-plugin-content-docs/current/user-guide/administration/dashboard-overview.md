@@ -3,11 +3,11 @@ title: Panelaren zerbitzua ikuspegiak
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Deskurtso
+# Dashboard Deskurtso {#dashboard-overview}
 
 Ultimate Multisite-ek **Dashboard** daingoa menuku Ultimate Multisite-an ondare dago, eta Network Dashboard-ra widget-ak gehiago ez du. Hau artikulu horiek bat daude daude erabiliko horietan.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite-k network-lekin dagoen dashboard-ean (My Sites → Network Admin → Dashboard) widget-ak garrantzitsuak jartzen ditu.
 
@@ -35,7 +35,7 @@ Hau daude widget lehen erabiliko:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Network dashboard-ek network-aren buruzko informazioa guztiz ematen du, baina Ultimate Multisite dashboard-ek (Ultimate Multisite menuku lehen zerean) serbisioaren buruzko informazioa ematen du.
 

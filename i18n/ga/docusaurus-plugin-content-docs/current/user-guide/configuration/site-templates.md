@@ -3,13 +3,13 @@ title: Teampad an t-aonail
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Shablóite Site (v2)
+# Shablóite Site (v2) {#site-templates-v2}
 
 _**NOTE: Tá an curte seo ag curte ar Ultimate Multisite version 2.x. Má tá tú ag úsáid version 1.x,**_ **faoi seo a bheith.**_
 
 Is é an t-amach agam nuair a bhaint amach le netwrk premium le Ultimate Multisite: a chuidiú go mór na gceanaí a bheith mar chuidiú go mór na ceangailte, ag teacht ar fáil do chliachta agus ag teacht ar fáil oiriúnacha eile chun a bheith ag iarraidh anois féachaint ag curte aisiú leat. Is é an chuid asan a bheith agat chun an t-amach seo a bheith agat: a úsáid feic an feidhm Site Templates de Ultimate Multisite.
 
-## Cad is é Site Template?
+## Cad is é Site Template? {#what-is-a-site-template}
 
 Mar a bhaineann an t-ainm, is Site Template site boilerplate (site atá ag curte) a thaisce ar fáil mar gréasán nuair a bhíonn siopa nua ag curte i netwrk.
 
@@ -17,7 +17,7 @@ Is é sin an t-amach: leat féidir leat a bheith ag curte site bunaithe, a chloi
 
 Tá sé ar fáil go maith, ach conas a bheith liom ag curte site template nua? Is é sin an t-amach is áit a bheith agat.
 
-## Curte agus Chuidú Site Template Nua
+## Curte agus Chuidú Site Template Nua {#creating-and-editing-a-new-site-template}
 
 Is Site Templates site normala ar netwrk tú. Chunnt a chur i bhfeic site nua, leat go comaite go sin: **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Arís an cur síneadh (toggle switch) **Copy Site** ag an t-amach is dearmad ar 
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Déanadh leat ar an cur síneadh (Site Template)
+### Déanadh leat ar an cur síneadh (Site Template) {#customizing-the-contents-of-a-site-template}
 
 Chun déanamh athrú ar an cur síneadh, anois, anois, cur isteach ar an panel dearmad atá ag é, agus déan an t-athrú a bhfuil tú ag iarraidh. Is féidir leat nua posts, pages a chur in áit, plugins a chrialú, agus an theme atá ag taitneamh a thaisrleitneadh. Is féidir leat é freisin go dtí an Customizer agus athrú rud é sin deachais ar fáil.
 
@@ -43,11 +43,11 @@ Chun déanamh athrú ar an cur síneadh, anois, anois, cur isteach ar an panel d
 
 Bíonn an daoine seo deata ag cur isteach nuair a chur in áit chuid is déanta ar an site nua atá ag taitneamh le sin Site Template.
 
-### Opciones ardchúramach (Advanced Options)
+### Opciones ardchúramach (Advanced Options) {#advanced-options}
 
 Má tá tú ag iarraidh a bheith agat i gcónaí codáil a bhaint ar fáil, leat a bheith ag úsáid API Search and Replace atá ag anas chun féachaint ar fhaisnéis ar an site nua ar aghaidh tar éifeachtach tar éifeachtach tar éifeachtach tar éifeachtach. Is é seo go bhfuil sé ag taitneamh le rud é sin mar athrú na námh comháin ar cur tiosú, athrú email contact ar cur tiosú, agus sin.
 
-### Uirlis ar Site Templates
+### Uirlis ar Site Templates {#using-site-templates}
 
 Go raibh maith agat, is amach, thaispeadáin deacairt (Site Templates) is déanta ag fáil leat ar an dtiocscrí, themes agus cur tiosú. Conas a dhéanamh é úsáideach ar do shonracha anois?
 
@@ -59,7 +59,7 @@ Ar chuid na hé, tá de dualte ar chuid ar féidir leat a bheith agat ar fáil a
 
   * Allowing your clients to choose the site templates themselves during sign-up.
 
-#### Mode 1: Assign Site Template
+#### Mode 1: Assign Site Template {#mode-1-assign-site-template}
 
 I gcás seo, níl féidir leis na clienta iarracht a dhéanamh ar template nuair a bhfaidh siad an account a chur in áit, ach is féidir leat a dhéanamh cinnte conas a bheith ag fháil ar an template atá ag úsáid ar chomh maith leat ar chuid deán.
 
@@ -71,7 +71,7 @@ Is féidir leis seo a bheith agat ar an cur síos **Edit Product** (Edit Product
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: Déan an Site Template Atá Ar Fáil
+#### Mode 2: Déan an Site Template Atá Ar Fáil {#mode-2-choose-available-site-template}
 
 I gcás seo, beidh tú ag teacht ar fáil ar an clienta iarracht nuair a bhfaidh siad an sign-up. Beidh siad ag cur chun cinn ó dhuit deathtanna site templates eile atá ag úsáid ar chuid deán a dhéan tú under product settings. Tá tús maith agat ar an option a bheith agat chun an template a bhfaidh siad a chur chun cinn under an product atá seachaint. Beidh sé seo ag ceart gointt ar liosta deathtanna site templates eile under chomh maith leat ar chuid deán, rud atá is fearr duit chun feicíocht agus feichar a bheith agat ar fáil ar chuid deán ar chuid product a bhaineann leat.
 
@@ -79,7 +79,7 @@ Ar an cur dia ar **Edit Product** page. Oibríonn tú i ndáir **Product Options
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Mode Déanach: Seachtain site template ar fáil ar an fómform Checkout
+### Mode Déanach: Seachtain site template ar fáil ar an fómform Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Má tá tú ag iarraidh go bhfuil gach site template agat ar fáil tríd an registration, nó má níl tú ag cur isteach eardal extra de chomhlaoiú nó spraighfidh site templates ar fáil i gcónaí ar chuid de chuid product a chur in áit. Anois, leat é seo a chur i bhfeicim an seachtain site template ar fáil ar an **Checkout Form** agat. Chun gur e seo a dhéanamh, raglan go dtí **Ultimate Multisite > Checkout Forms** agus cliceáil ar **Edit** ar an fómform a bhfuil tú ag cur isteach.
 
@@ -93,29 +93,29 @@ Ar an frontend, beidh na ghráisteoirí ag fheiceáil an chooser template tríd 
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opciones de Template Síne
+### Opciones de Template Síne {#site-template-options}
 
 Tá fadaí template site eile ag cur ar fáil a bhfaidh tú a chloint an t-aonracha (settings) de Ultimate Multisite.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Fhéad an gcur ar switch an template
+#### Fhéad an gcur ar switch an template {#allow-template-switching}
 
 Bealach éasca leat a fháil ar an t-option seo ag cur ar fáil do chlianta chun template a switch a bheith agat ag cur isteach ag an t-amachas (sign-up process) tar éis a bhaint an account agus an site. Is é seo go maith ó chuid chlianta, to gaethann siad ar ath-chunntadh template mar a bheith siad ag iarraidh a bheith ag cur isteach ag an t-amachas, má féachfaidh siad tar éis go níl an t-aonracha a bhaint a bhí an ceist as an t-amachas is fearr do chuid raibh ag cur isteach.
 
-#### Fhéad do chuidúsa a bheith ag úsáid an Site mar template
+#### Fhéad do chuidúsa a bheith ag úsáid an Site mar template {#allow-users-to-use-their-site-as-templates}
 
 Mar go bhfuil túsa chuidúsa subsite ag cur amhar ar an t-aonracha agus ar an dúnadh agus ar an-dighneú an site thar éis, is féidir leis a bheith ag iarraidh é a clón agus a úsáid mar aon de na template sites a bheith ag cur isteach ag cur isteach ag subsite eile ar do ngrú. Beidh an t-option seo leat a ghlacadh é.
 
-#### Clona media ar duplicação template
+#### Clona media ar duplicação template {#copy-media-on-template-duplication}
 
 Beidh an t-option seo ag cur clona an media a bhí ar an site template go dtí an site nua a chur isteach. Is féidir é a chloint ar chuid de na plána sin.
 
-#### **Preagann an gcur ar search engines a bheith ag index an Site Templates**
+#### **Preagann an gcur ar search engines a bheith ag index an Site Templates** {#prevent-search-engines-from-indexing-site-templates}
 
 Is é an t-aonracha (site templates) mar a bhí ag cur ar an fáil i gcathair seo, is é boilerplate ach tá sé an t-amachas de do ngrú, rud é sin ag cur ar fáil do search engines chun é a fháil. Beidh an t-option seo leat a bheith ag glaoch an site templates chun na h-search engines a bheith ag index mar a bhí.
 
-## Preagán Site Templates le auto search-and-replace
+## Preagán Site Templates le auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Is é amachasán de fáilte ar Ultimate Multisite: córas a bheith ag cur text, colur agus feidrigh a bhaint ar an form ríoladh (registration form). Mar chuid táin dá dath a bhaint ag cur isteach, is féidir linn a úsáid chun an t-amhasgairt (content) a pre-populate i ardánanna áirithe ar an template site atá chun cinn. Ansin, nuair a bhíonn an nualachas site ag cur in áit, beidh Ultimate Multisite ag gúntáil an placeholders le an t-amachaisce (information) a bhí cur isteach ag ríoladh.
 
@@ -135,7 +135,7 @@ Ansin, beidh Ultimate Multisite ag gúntáil an placeholders le an dath a bhí c
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Soláth an t-amhasgairt "template full of placeholders"
+### Soláth an t-amhasgairt "template full of placeholders" {#solving-the-template-full-of-placeholders-problem}
 
 Is é sin an áit, ach táimid ag cur isteach saolán: an template site atá agat - a bhí féidir leat a bheith ag cur ar fáil do chuid úsáideoracht - tá sé le placeholders ughramach (ugly) a bhíonn ar fáil agus níltear iad go léir.
 

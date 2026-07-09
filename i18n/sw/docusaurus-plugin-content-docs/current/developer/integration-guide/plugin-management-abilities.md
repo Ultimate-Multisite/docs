@@ -3,11 +3,11 @@ title: Uwezo wa Usimamizi wa Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Uwezo wa Kusimamia Plugins
+# Uwezo wa Kusimamia Plugins {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 inakuja na **uwezo 7 wa kusimamia plugins** ambavyo msaidizi wa AI anaweza kuzitumia wakati wa mazungumzo. Uwezo huu unatoa udhibiti wa ki-programu juu ya plugins za WordPress zilizosakinishwa kupitia [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Muhtasari wa Uwezo
+## Muhtasari wa Uwezo {#abilities-overview}
 
 | Uwezo | Slug | Maelezo |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 inakuja na **uwezo 7 wa kusimamia plugins** ambavyo msaid
 | Install Plugin | `install_plugin` | Inapanga plugin iliyo katika sandbox hadi kwenye directory halisi ya plugins ya WordPress. |
 | Activate Plugin | `activate_plugin` | Inasimamisha (activates) plugin iliyo katika sandbox ndani ya mazingira ya sandbox ya wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Plugin installer inashughulikia shughuli za mfumo wa faili wakati wa kupanga au kuondoa plugins. Tabia kuu ni:
 
@@ -28,7 +28,7 @@ Plugin installer inashughulikia shughuli za mfumo wa faili wakati wa kupanga au 
 - **Update**: Inabadilisha faili za plugin zilizopo. Inasimamisha plugin kabla ya kuandika ili kuepuka makosa ya hali nusu.
 - **Delete by slug**: Inatafuta directory ya plugin kwa kutumia slug, inazisimamisha kwenye sites zote, kisha inafuta directory hiyo.
 
-### Kusajili Handler ya Usakinishaji Maalum
+### Kusajili Handler ya Usakinishaji Maalum {#registering-a-custom-install-handler}
 
 Unaweza kuunganisha (hook) katika mzunguko wa usakinishaji kwa kutumia actions za `gratis_ai_plugin_installer_before_install` na `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 Uwezo (Abilities) unajisajili kupitia **plugin ecosystem registry**. Registry inahusisha ability slugs na class za kushughulikia (handler classes) na kuzifunika kwa tool dispatcher ya AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Uwezo wa `create_plugin` na `update_plugin` hufanya **HookScanner** kiotomatiki dhidi ya code iliyoanzishwa. HookScanner inarudisha orodha ya action na filter hooks za WordPress zilizosajiliwa na plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner inapuuza directories za `vendor/` na `node_modules/` kiotomatiki.
 
-## Async Job Architecture
+## Async Job Architecture {#async-job-architecture}
 
 Operesheni ndefu za plugins (kutengeneza, kupanga) zinatolewa kama **async jobs** na kufuatilia maendeleo kwa wakati halisi. Kiolesura cha chat cha AI kinatafuta maendeleo (polls) na kutiririsha (streams) masasisho ya hali kwa mtumiaji:
 

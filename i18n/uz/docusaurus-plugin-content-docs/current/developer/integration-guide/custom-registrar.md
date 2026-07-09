@@ -3,13 +3,13 @@ title: Maxsus registrator integratsiyasini yaratish
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Maxsus Registrar integratsiyasini yaratish
+# Maxsus Registrar integratsiyasini yaratish {#building-a-custom-registrar-integration}
 
 Domain Seller addon **Integration Registry** patternidan foydalanadi. Har bir registrar `Domain_Selling_Capability` ni implementatsiya qiladigan va `wu_domain_seller_register_capabilities` action hook orqali o‘zini ro‘yxatdan o‘tkazadigan PHP class hisoblanadi.
 
 Ushbu qo‘llanma custom registrarni qanday ulashni ko‘rsatadi.
 
-## Interfeys
+## Interfeys {#the-interface}
 
 Classingiz `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ni implementatsiya qilishi va `WP_Ultimo\Integrations\Base_Capability_Module` ni extend qilishi kerak.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Ixtiyoriy metodlar
+### Ixtiyoriy metodlar {#optional-methods}
 
 Qo‘shimcha imkoniyatlarni ochish uchun bularni implementatsiya qiling. Addon qo‘llab-quvvatlashni `method_exists()` orqali aniqlaydi:
 
@@ -81,7 +81,7 @@ Qo‘shimcha imkoniyatlarni ochish uchun bularni implementatsiya qiling. Addon q
 | `get_epp_code(string $domain_name): array` | Domen transferi (chiquvchi) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domen transferi (kiruvchi) |
 
-### Qaytariladigan qiymat konvensiyasi
+### Qaytariladigan qiymat konvensiyasi {#return-value-convention}
 
 Barcha metodlar kamida `success` kalitiga ega array qaytaradi:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Capabilityingizni ro‘yxatdan o‘tkazish
+## Capabilityingizni ro‘yxatdan o‘tkazish {#registering-your-capability}
 
 Classingizni `wu_domain_seller_register_capabilities` action yordamida ro‘yxatdan o‘tkazing:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Wizardga credential maydonlarini qo‘shish
+## Wizardga credential maydonlarini qo‘shish {#adding-credential-fields-to-the-wizard}
 
 Adminlarga setup wizard orqali credentiallarni kiritish imkonini berish uchun integratsiyangizni ro‘yxatdan o‘tkazing:
 
@@ -137,7 +137,7 @@ Credentiallar field IDlaridan key sifatida foydalanib network optionlar ko‘rin
 
 ---
 
-## Ro‘yxatdan o‘tkazishdan keyingi actionlar uchun hooklar
+## Ro‘yxatdan o‘tkazishdan keyingi actionlar uchun hooklar {#hooks-for-post-registration-actions}
 
 Webhooklar, provisioning, bildirishnomalar yoki CRM yangilanishlarini ishga tushirish uchun ushbu actionlardan foydalaning:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Jurnallash
+## Jurnallash {#logging}
 
 Provayderingizga xos jurnal kanaliga `wu_log_add()` yordamida yozing:
 

@@ -4,11 +4,11 @@ title: Action - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Eylem: wu_membership_pre_renew
+# Eylem: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Üyelik yenileme işleminden önce tetiklenir.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Adı | Tip | Açıklama |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 | $membership_id | `int` | Üyeliğin kimliği (ID). |
 | $membership | `\Membership` | Üyelik nesnesi. |
 
-### Sürüm
+### Sürüm {#since}
 
 - 2.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) adresinde 2204. satırda tanımlanmıştır.

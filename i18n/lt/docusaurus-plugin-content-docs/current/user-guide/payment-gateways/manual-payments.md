@@ -3,13 +3,13 @@ title: Rankinių mokėjimų nustatymas
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Rankinių mokėjimų nustatymas (v2)
+# Rankinių mokėjimų nustatymas (v2) {#setting-up-manual-payments-v2}
 
 _**SVARBI PASTABA: Šis straipsnis skirtas Ultimate Multisite 2.x versijai.**_
 
 Rankiniai mokėjimai yra būdas pasiūlyti kitus mokėjimo metodus, jei **Stripe** arba **PayPal** nėra prieinami jūsų naudotojams. Tai gali būti pavedimas, banko pervedimas ar bet koks kitas mokėjimo metodas, vietiškai prieinamas jūsų naudotojams.
 
-## Kaip įjungti rankinius mokėjimus
+## Kaip įjungti rankinius mokėjimus {#how-to-enable-manual-payments}
 
 Nustatyti rankinį mokėjimą labai paprasta. Jums tereikia jį įjungti mokėjimo sąsajose ir įrašyti išsamias instrukcijas, kaip naudotojas turėtų atsiųsti mokėjimą.
 
@@ -31,7 +31,7 @@ Jie taip pat gaus pranešimą jūsų **Ačiū** puslapyje su jūsų mokėjimo in
 
 <!-- Ekrano kopija nepasiekiama: Ačiū puslapis, kuriame po atsiskaitymo rodomos mokėjimo instrukcijos -->
 
-## Rankinių mokėjimų patvirtinimas
+## Rankinių mokėjimų patvirtinimas {#confirming-manual-payments}
 
 Norėdami patvirtinti rankinį mokėjimą, eikite į **Mokėjimai** meniu kairėje juostoje. Ten galite matyti visus savo tinklo mokėjimus ir jų duomenis, įskaitant jų **būseną**. Rankinis mokėjimas visada turės **Laukiama** būseną, kol ją pakeisite rankiniu būdu.
 

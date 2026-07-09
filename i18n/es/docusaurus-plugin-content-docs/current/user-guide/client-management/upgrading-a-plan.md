@@ -3,7 +3,7 @@ title: Actualizar un plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Actualizar un plan (v2)
+# Actualizar un plan (v2) {#upgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
@@ -41,7 +41,7 @@ Después de completar el pago, los nuevos productos se añadirán a la cuenta de
 
 ##
 
-## Rutas de actualización y degradación
+## Rutas de actualización y degradación {#upgrade-and-downgrade-paths}
 
 En cada uno de tus productos, tendrás una pestaña **Up & Downgrades**. La primera opción de esa pestaña es un campo llamado **Grupo de planes**.
 

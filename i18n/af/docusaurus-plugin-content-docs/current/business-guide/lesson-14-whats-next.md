@@ -3,15 +3,15 @@ title: 'Les 14: Wat volgende kom'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Les 14: Wat Kom Volgende
+# Les 14: Wat Kom Volgende {#lesson-14-what-comes-next}
 
 Jy het 'n nis-webwerf platform van die begin opgebou. FitSite is live, dien fiksheidsstudio's, en genereer herhalende inkomste. Hierdie finale les kyk na waar jy vandaan kan gaan.
 
-## Waar Ons Gebly Het
+## Waar Ons Gebly Het {#where-we-left-off}
 
 FitSite is 'n lopende besigheid met kliënte, operasies en 'n groeitrajek. Nou dink ons oor wat volgende is.
 
-## Die Volledige FitSite Netwerk
+## Die Volledige FitSite Netwerk {#the-complete-fitsite-network}
 
 Hier is alles wat ons oor 14 lesse gebou het:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Opsie 1: Dykper in Jou Nis
+## Opsie 1: Dykper in Jou Nis {#option-1-go-deeper-in-your-niche}
 
 Voordat jy uitbrei na nuwe nisse, oorweeg om die fiksheidssektor dieper te betree:
 
-### Sub-Nisse
+### Sub-Nisse {#sub-niches}
 
 - **Yoga-studio's** -- gespesialiseerde templates met meditasie-, retraite- en werkswinkelkenmerke
 - **CrossFit-bokse** -- WOD-spoor, kompetisie-resultate, gemeenskapskenmerke
@@ -59,7 +59,7 @@ Voordat jy uitbrei na nuwe nisse, oorweeg om die fiksheidssektor dieper te betre
 
 Elke sub-nis kan sy eie templates hê en potensieel sy eie handelsmerk, alles wat op dieselfde Ultimate Multisite netwerk loop.
 
-### Premium Kenmerke
+### Premium Kenmerke {#premium-features}
 
 Bou kenmerke waar fiksheidsstudio's ekstra vir sal betaal:
 
@@ -68,14 +68,14 @@ Bou kenmerke waar fiksheidsstudio's ekstra vir sal betaal:
 - **Fiksheidsblog templates** -- voorafgeboude inhoudstrukture vir fiksheidsinhoudsmarkings
 - **Sosiale media-integrasie** -- outo-plaas van klas-skedules en opdaterings
 
-### Geografiese Uitbreiding
+### Geografiese Uitbreiding {#geographic-expansion}
 
 As jy plaaslik begin het, brei dan uit na:
 
 - Ander stede in jou land
 - Ander lande (gebruik Ultimate Multisite se [lokalisasie-kenmerke](/user-guide/localization/translating) om verskeie tale te ondersteun)
 
-## Opsie 2: Brei Uit na Grensbewindende Nisse
+## Opsie 2: Brei Uit na Grensbewindende Nisse {#option-2-expand-to-adjacent-niches}
 
 Die proses wat jy vir fiksheidsstudio's gevolg het, werk vir enige nis. Jou tweede nis is makliker omdat jy reeds het:
 
@@ -83,7 +83,7 @@ Die proses wat jy vir fiksheidsstudio's gevolg het, werk vir enige nis. Jou twee
 - Operasionele ervaring
 - 'n Bewese werkplan
 
-### Grensbewindende Nisse vir Fiksheid
+### Grensbewindende Nisse vir Fiksheid {#adjacent-niches-to-fitness}
 
 - **Welstand en spa** -- maseringterapeënte, dagspa's, welstandsentrums
 - **Sportklubs** -- amateur sportspanne, ligas, recreatiewe klubs
@@ -91,7 +91,7 @@ Die proses wat jy vir fiksheidsstudio's gevolg het, werk vir enige nis. Jou twee
 
 Hierdie deel uit die gehoor met fiksheid, sodat jou bemarking en vennootskappe kan oordra word.
 
-### Heeltemal Nuwe Nisse
+### Heeltemal Nuwe Nisse {#completely-new-niches}
 
 Pas die raamwerk uit Les 2 toe om enige nis te evalueer:
 
@@ -108,7 +108,7 @@ Elke nuwe nis benodig:
 
 Die platforminfrastruktuur, fakturering en operasionele prosesse bly dieselfde.
 
-## Opsie 3: Bou 'n Platform van Platforms
+## Opsie 3: Bou 'n Platform van Platforms {#option-3-build-a-platform-of-platforms}
 
 Op skaal kan jy verskeie nis-handelsmerke op een Ultimate Multisite netwerk laat loop:
 
@@ -118,11 +118,11 @@ Op skaal kan jy verskeie nis-handelsmerke op een Ultimate Multisite netwerk laat
 
 Elke handelsmerk het sy eie templates, planne en bemarking, maar hulle deel infrastruktuur, fakturering en operasionele prosesse. Dit is waar die ekonomie van Ultimate Multisite kragtig word – een platform, baie vertikaalstrukture.
 
-### Multi-Netwerk
+### Multi-Netwerk {#multi-network}
 
 Vir volledige skeiding tussen nisse, oorweeg die [Multi-Network addon](/addons/multinetwork) wat jou toelaat om verskeie WordPress-netwerke van 'n enkele installasie uit te voer.
 
-## Opsie 4: Verkoop die Besigheid
+## Opsie 4: Verkoop die Besigheid {#option-4-sell-the-business}
 
 'n Nis-webwerf platform met herhalende inkomste, lae churn, en 'n duidelike markposisie is 'n waardevolle bate. SaaS-besighede verkoop tipies vir 3-5x die jaarlikse inkomste.
 
@@ -134,7 +134,7 @@ Vir volledige skeiding tussen nisse, oorweeg die [Multi-Network addon](/addons/m
 
 Dit is nie 'n gewaarborgde uitkoms nie, maar dit is 'n realistiese een vir 'n goed gelei nisplatform.
 
-## Wat Jy Geleer Het
+## Wat Jy Geleer Het {#what-you-have-learned}
 
 Hierdie kursus het jou 'n herhaalbare proses geleer:
 
@@ -150,7 +150,7 @@ Hierdie kursus het jou 'n herhaalbare proses geleer:
 
 Die nis is die strategie. Die platform is die gereedskap. Ultimate Multisite maak die gereedskap moontlik. Jou begrip van die nis maak dit waardevol.
 
-## Begin Bou
+## Begin Bou {#start-building}
 
 As jy met FitSite gevolg het, het jy 'n werkende platform. As jy gelees het om jou eie nis te vind, gaan terug na [Les 2: Kies Jou Nis](lesson-2-picking-your-niche) en begin die proses vir jou gekose vertikaal.
 

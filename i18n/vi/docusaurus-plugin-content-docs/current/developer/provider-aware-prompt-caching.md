@@ -3,11 +3,11 @@ title: Bộ nhớ đệm nhắc nhở nhận biết nhà cung cấp
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Bộ nhớ đệm Prompt nhận biết nhà cung cấp
+# Bộ nhớ đệm Prompt nhận biết nhà cung cấp {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 giới thiệu tính năng **bộ nhớ đệm Prompt nhận biết nhà cung cấp (provider-aware prompt caching)**, giúp tối ưu hóa chi phí API và độ trễ bằng cách lưu trữ bộ nhớ đệm các prompt trên nhiều nhà cung cấp LLM khác nhau. Mỗi nhà cung cấp có cơ chế và cấu hình bộ nhớ đệm khác nhau.
 
-## Tổng quan
+## Tổng quan {#overview}
 
 Bộ nhớ đệm Prompt cho phép bạn:
 
@@ -23,11 +23,11 @@ Các nhà cung cấp khác nhau triển khai bộ nhớ đệm theo những các
 - **OpenRouter**: Bộ nhớ đệm dành riêng cho nhà cung cấp
 - **Vertex Anthropic**: Bộ nhớ đệm Prompt với cache control
 
-## Google Gemini: API cachedContents
+## Google Gemini: API cachedContents {#google-gemini-cachedcontents-api}
 
 Google Gemini cung cấp khả năng quản lý bộ nhớ đệm rõ ràng thông qua API `cachedContents`.
 
-### Cấu hình
+### Cấu hình {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Tạo Prompt đã lưu bộ nhớ đệm
+### Tạo Prompt đã lưu bộ nhớ đệm {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Trả về: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Sử dụng Prompt đã lưu bộ nhớ đệm
+### Sử dụng Prompt đã lưu bộ nhớ đệm {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Vòng đời bộ nhớ đệm
+### Vòng đời bộ nhớ đệm {#cache-lifecycle}
 
 ```php
 // Liệt kê các nội dung đã lưu bộ nhớ đệm
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Thực hành tốt nhất cho Gemini
+### Thực hành tốt nhất cho Gemini {#best-practices-for-gemini}
 
 - **Thiết lập TTL phù hợp**: Cân bằng giữa tiết kiệm chi phí và độ cũ của bộ nhớ đệm
 - **Lưu bộ nhớ đệm prompt hệ thống**: Tái sử dụng cùng một prompt hệ thống qua các yêu cầu
 - **Theo dõi việc sử dụng bộ nhớ đệm**: Theo dõi các bộ nhớ đệm nào được sử dụng nhiều nhất
 - **Dọn dẹp bộ nhớ đệm hết hạn**: Định kỳ xóa các bộ nhớ đệm không sử dụng
 
-## Azure OpenAI: Bộ nhớ đệm Prompt
+## Azure OpenAI: Bộ nhớ đệm Prompt {#azure-openai-prompt-caching}
 
 Azure OpenAI hỗ trợ bộ nhớ đệm Prompt với quản lý TTL tự động.
 
-### Cấu hình
+### Cấu hình {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Kích hoạt Bộ nhớ đệm
+### Kích hoạt Bộ nhớ đệm {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Headers Bộ nhớ đệm
+### Headers Bộ nhớ đệm {#cache-headers}
 
 Azure OpenAI sử dụng HTTP headers để kiểm soát bộ nhớ đệm:
 
@@ -152,7 +152,7 @@ Các giá trị được hỗ trợ:
 - `no_cache`: Không lưu bộ nhớ đệm yêu cầu này
 - `no_store`: Không lưu bộ nhớ đệm và không tái sử dụng
 
-### Theo dõi việc sử dụng bộ nhớ đệm
+### Theo dõi việc sử dụng bộ nhớ đệm {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Tạo bộ nhớ đệm: $cache_tokens tokens\n";
 echo "Truy cập bộ nhớ đệm: $cache_hits tokens\n";
 ```
 
-### Thực hành tốt nhất cho Azure OpenAI
+### Thực hành tốt nhất cho Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Sử dụng prompt nhất quán**: Các prompt giống hệt nhau sẽ được hưởng lợi từ bộ nhớ đệm
 - **Thiết lập TTL hợp lý**: Cân bằng giữa chi phí và độ mới
 - **Theo dõi các chỉ số bộ nhớ đệm**: Theo dõi việc tạo bộ nhớ đệm so với lần truy cập thành công
 - **Gửi các yêu cầu tương tự theo lô**: Nhóm các yêu cầu để tối đa hóa lần truy cập thành công vào bộ nhớ đệm
 
-## OpenRouter: Bộ nhớ đệm dành riêng cho nhà cung cấp
+## OpenRouter: Bộ nhớ đệm dành riêng cho nhà cung cấp {#openrouter-provider-specific-caching}
 
 OpenRouter hỗ trợ bộ nhớ đệm thông qua các nhà cung cấp cơ bản (OpenAI, Anthropic, v.v.).
 
-### Cấu hình
+### Cấu hình {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Sử dụng Bộ nhớ đệm OpenRouter
+### Sử dụng Bộ nhớ đệm OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Tùy chọn dành riêng cho nhà cung cấp
+### Tùy chọn dành riêng cho nhà cung cấp {#provider-specific-options}
 
 Các nhà cung cấp khác nhau có các cơ chế bộ nhớ đệm khác nhau:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Thực hành tốt nhất cho OpenRouter
+### Thực hành tốt nhất cho OpenRouter {#best-practices-for-openrouter}
 
 - **Nắm rõ bộ nhớ đệm của nhà cung cấp**: Mỗi nhà cung cấp có cơ chế khác nhau
 - **Kiểm tra hành vi bộ nhớ đệm**: Xác minh bộ nhớ đệm hoạt động với nhà cung cấp bạn chọn
 - **Theo dõi chi phí**: Theo dõi khoản tiết kiệm từ bộ nhớ đệm
 - **Sử dụng các model nhất quán**: Việc chuyển đổi model sẽ làm mất cơ hội truy cập bộ nhớ đệm
 
-## Vertex Anthropic: Bộ nhớ đệm Prompt với Cache Control
+## Vertex Anthropic: Bộ nhớ đệm Prompt với Cache Control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) hỗ trợ bộ nhớ đệm Prompt với kiểm soát bộ nhớ đệm rõ ràng.
 
-### Cấu hình
+### Cấu hình {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Sử dụng Bộ nhớ đệm Vertex Anthropic
+### Sử dụng Bộ nhớ đệm Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Các loại Cache Control
+### Các loại Cache Control {#cache-control-types}
 
 - **ephemeral**: Lưu bộ nhớ đệm trong suốt thời gian yêu cầu (mặc định)
 - **persistent**: Lưu bộ nhớ đệm qua nhiều yêu cầu (nếu được hỗ trợ)
 
-### Theo dõi việc sử dụng bộ nhớ đệm
+### Theo dõi việc sử dụng bộ nhớ đệm {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Tạo bộ nhớ đệm: $cache_created tokens\n";
 echo "Đọc bộ nhớ đệm: $cache_read tokens\n";
 ```
 
-### Thực hành tốt nhất cho Vertex Anthropic
+### Thực hành tốt nhất cho Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Sử dụng bộ nhớ đệm ephemeral**: Tốt cho việc lưu bộ nhớ đệm trong một phiên làm việc
 - **Thiết lập max_tokens phù hợp**: Cân bằng giữa kích thước bộ nhớ đệm và chi phí
 - **Theo dõi các chỉ số bộ nhớ đệm**: Theo dõi hiệu quả của bộ nhớ đệm
 - **Kiểm tra với khối lượng công việc của bạn**: Xác minh bộ nhớ đệm mang lại lợi ích cho trường hợp sử dụng của bạn
 
-## Chiến lược Bộ nhớ đệm Đa Nhà cung cấp
+## Chiến lược Bộ nhớ đệm Đa Nhà cung cấp {#cross-provider-caching-strategy}
 
-### Cấu hình Hợp nhất
+### Cấu hình Hợp nhất {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Phát hiện Nhà cung cấp
+### Phát hiện Nhà cung cấp {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Sử dụng cấu hình bộ nhớ đệm dành riêng cho nhà cung cấp
 ```
 
-### Chiến lược dự phòng (Fallback)
+### Chiến lược dự phòng (Fallback) {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Tối ưu hóa Chi phí
+## Tối ưu hóa Chi phí {#cost-optimization}
 
-### Tính toán khoản tiết kiệm
+### Tính toán khoản tiết kiệm {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Ước tính tiết kiệm: \$$savings\n";
 ```
 
-### Mẹo Tối ưu hóa
+### Mẹo Tối ưu hóa {#optimization-tips}
 
 - **Lưu bộ nhớ đệm prompt hệ thống lớn**: Tiết kiệm chi phí lớn nhất
 - **Tái sử dụng ngữ cảnh**: Lưu bộ nhớ đệm các tài liệu ngữ cảnh được sử dụng thường xuyên
@@ -395,30 +395,30 @@ echo "Ước tính tiết kiệm: \$$savings\n";
 - **Theo dõi hiệu quả bộ nhớ đệm**: Theo dõi khoản tiết kiệm thực tế
 - **Điều chỉnh TTL**: Cân bằng giữa chi phí và độ mới
 
-## Khắc phục sự cố
+## Khắc phục sự cố {#troubleshooting}
 
-### Bộ nhớ đệm không được sử dụng
+### Bộ nhớ đệm không được sử dụng {#cache-not-being-used}
 
 - Xác minh bộ nhớ đệm đã được bật trong cấu hình
 - Kiểm tra rằng các prompt là giống hệt nhau (bộ nhớ đệm yêu cầu khớp chính xác)
 - Xác minh bộ nhớ đệm chưa hết hạn
 - Kiểm tra giới hạn bộ nhớ đệm dành riêng cho nhà cung cấp
 
-### Tạo bộ nhớ đệm thất bại
+### Tạo bộ nhớ đệm thất bại {#cache-creation-failing}
 
 - Xác minh kích thước bộ nhớ đệm nằm trong giới hạn của nhà cung cấp
 - Kiểm tra cú pháp cache control đã đúng
 - Đảm bảo nhà cung cấp hỗ trợ bộ nhớ đệm cho model của bạn
 - Xem lại tài liệu nhà cung cấp về các giới hạn
 
-### Chi phí bất ngờ
+### Chi phí bất ngờ {#unexpected-costs}
 
 - Theo dõi tokens tạo bộ nhớ đệm so với tokens đọc bộ nhớ đệm
 - Xác minh bộ nhớ đệm thực sự đang được sử dụng
 - Kiểm tra các trường hợp bỏ lỡ bộ nhớ đệm do biến thể prompt
 - Cân nhắc điều chỉnh TTL hoặc chiến lược bộ nhớ đệm
 
-## So sánh Nhà cung cấp
+## So sánh Nhà cung cấp {#provider-comparison}
 
 | Tính năng | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Ước tính tiết kiệm: \$$savings\n";
 | Giảm chi phí | 90% | 90% | Tùy nhà cung cấp | 90% |
 | Giám sát | Chi tiết | Qua metrics | Tùy nhà cung cấp | Qua usage |
 
-## Các bước tiếp theo
+## Các bước tiếp theo {#next-steps}
 
 1. **Chọn nhà cung cấp của bạn**: Lựa chọn dựa trên nhu cầu của bạn
 2. **Cấu hình bộ nhớ đệm**: Thiết lập bộ nhớ đệm dành riêng cho nhà cung cấp

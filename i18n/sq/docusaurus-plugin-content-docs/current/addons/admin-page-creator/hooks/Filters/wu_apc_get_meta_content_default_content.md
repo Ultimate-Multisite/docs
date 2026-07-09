@@ -4,11 +4,11 @@ title: Filtër - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Filter: wu_apc_get_meta_content_default_content
+# Filter: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Lejon zhvilluesit të filtrojnë vlerat e parazgjedhura
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Tipi | Përshkrimi |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Lejon zhvilluesit të filtrojnë vlerat e parazgjedhura
 | $meta_type | `string` | Tipi i meta të dhënave që do të merret. |
 | $meta_key | `string` | Emri i fushës meta. |
 
-### Që nga
+### Që nga {#since}
 
 - 1.4.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) në rreshtin 68
 
 
-## Kthen
+## Kthen {#returns}
 Vlerë të re të parazgjedhur.

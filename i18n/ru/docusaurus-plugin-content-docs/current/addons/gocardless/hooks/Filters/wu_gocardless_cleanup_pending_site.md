@@ -4,13 +4,13 @@ title: Фильтр - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Фильтр: wu_gocardless_cleanup_pending_site
+# Фильтр: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Срабатывает перед удалением осиротевшего ожидающего сайта после отмены членства GoCardless.
 
 Чтобы предотвратить удаление, верните `false` из этого фильтра.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 | $membership | `\WP_Ultimo\Models\Membership` | Отмененное членство. |
 | $old_status | `string` | Статус до отмены. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.0
-### Источник
+### Источник {#source}
 
 Определен в [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) в строке 1086

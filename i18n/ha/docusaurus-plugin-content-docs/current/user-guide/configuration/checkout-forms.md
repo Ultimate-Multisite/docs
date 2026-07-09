@@ -3,7 +3,7 @@ title: Fassarar Bayan da ake Samun Bayan Kuɗi
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Forms Na Bayar (Checkout Forms)
+# Forms Na Bayar (Checkout Forms) {#checkout-forms}
 
 Forms Na Bayar wani hanyar mai sauƙi da mai sauƙin don gwada hanyoyi daban-daban lokacin da kake so ka canza sabbin abokan ciniki zuwa makamalar ku.
 
@@ -36,13 +36,13 @@ Bisa kuma gyara ko dubi wa shafuka da kake da shi ta hanyar danna kan zaɓuɓɓu
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Bincike na Sansa Form Ƙara Kuɗi (Checkout Form Editor Overview)
+#### Bincike na Sansa Form Ƙara Kuɗi (Checkout Form Editor Overview) {#checkout-form-editor-overview}
 
 Sansan form ɗin ƙara kuɗi yana ba ka wani hanyar da taƙaitaccen don gina wa shafukan rubutu (registration forms) dinka. Ga bincike kan tsarin sansa:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Gyara Sansa Form Ƙara Kuɗi (Editing a Checkout Form)
+### Gyara Sansa Form Ƙara Kuɗi (Editing a Checkout Form) {#editing-a-checkout-form}
 
 Za ka iya ƙirƙirar shafukan rubutu na kuɗai don bambancin ayyuka daban-daban. A wannan misali za mu yi a kan wani shafi na shiga (registration form).
 
@@ -112,7 +112,7 @@ Za ka iya kuma samar da aiki ko kawar da checkout form ɗinka ta kai tsaye ta ha
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### فیلد جدول قیمت‌گذاری (The Pricing Table Field)
+### فیلد جدول قیمت‌گذاری (The Pricing Table Field) {#the-pricing-table-field}
 
 فیلد **Pricing Table** محصولات شما را در فرم چک‌اوت نمایش می‌دهد تا مشتریان بتوانند یک طرح (plan) را انتخاب کنند. وقتی این فیلد را ویرایش می‌کنید، می‌توانید چندین گزینه را تنظیم کنید:
 
@@ -130,17 +130,17 @@ Za ka iya kuma samar da aiki ko kawar da checkout form ɗinka ta kai tsaye ta ha
 
 اگر قبل از اینکه فرم شامل فیلدهای لازم برای تکمیل فرآیند چک‌اوت آن محصول باشد، یک محصول به Pricing Table اضافه کنید، ویرایشگر اکنون یک هشدار نشان می‌دهد. از این هشدار استفاده کنید تا قبل از انتشار یا ذخیره تغییرات برای یک فرم ثبت نام زنده، فیلد مورد نیاز را اضافه کنید.
 
-### Shiga Wajin da Zaɓar Makaddar
+### Shiga Wajin da Zaɓar Makaddar {#adding-a-period-selection-toggle}
 
 Idan ka shirya [Price Variations](creating-your-first-subscription-product#price-variations) a kan kayayyakin ka (misali farashin kowace wata ko shekara), za ka iya ƙara wani makonshikin **Period Selection** a cikin shafin checkout ɗinka. Wannan makonshiki yana nuna toggle wanda ke ba masu siyarwa damar canzawa tsakanin wuraren biyan kuɗi, kuma jadawalin farashi yana canzawa da sauri a zahiri.
 
-#### Mataki na 1: Shirya Price Variations a Kan Kayayyakin Ka
+#### Mataki na 1: Shirya Price Variations a Kan Kayayyakin Ka {#step-1-set-up-price-variations-on-your-products}
 
 Kafin ka ƙara makonshikin Period Selection, tabbatar cewa kayayyakin ka suna da price variations an shirya. Zuwa **Ultimate Multisite > Products**, gyara wani kayayyaki, kuma tafiya zuwa tabin **Price Variations** don ƙara wuraren biyan kuɗi na bambanci (misali shekara a farashin da aka rage).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Mataki na 2:Ƙara Makonshikin Period Selection a Shafin Checkout Ɗinka
+#### Mataki na 2:Ƙara Makonshikin Period Selection a Shafin Checkout Ɗinka {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Zuwa **Ultimate Multisite > Checkout Forms** kuma gyara shafin checkout ɗinka.
 
@@ -163,13 +163,13 @@ Kafin ka ƙara makonshikin Period Selection, tabbatar cewa kayayyakin ka suna da
 
 7. دکمه **Save Field** رو بزنید.
 
-#### مرحله 3: قرار دادن فیلد بالاتر از جدول قیمت‌گذاری
+#### مرحله 3: قرار دادن فیلد بالاتر از جدول قیمت‌گذاری {#step-3-position-the-field-above-the-pricing-table}
 
 برای اینکه بهترین تجربه کاربری رو داشته باشید، مطمئن بشید که فیلد انتخاب دوره (Period Selection) قبل از فیلد جدول قیمت‌گذاری در مرحله پرداخت شما نمایش داده بشه. شما می‌تونید فیلدها رو بکشید تا ترتیبشون رو توی ویرایشگر فرم پرداخت تغییر بدید. این کار باعث می‌شه مشتری اول یک دوره صورتحساب رو انتخاب کنه و بعد قیمت‌های اون دوره رو ببینه.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### چطور در فرانت‌اند (Frontend) کار می‌کنه
+#### چطور در فرانت‌اند (Frontend) کار می‌کنه {#how-it-works-on-the-frontend}
 
 وقتی تنظیمش کردید، مشتری‌هایی که به صفحه ثبت‌نام شما مراجعه می‌کنن، انتخاب دوره رو بالای جدول قیمت‌گذاری می‌بینن. وقتی اون‌ها روی یک دوره صورتحساب متفاوت کلیک می‌کنن:
 
@@ -177,7 +177,7 @@ Kafin ka ƙara makonshikin Period Selection, tabbatar cewa kayayyakin ka suna da
   * اگر **Force Different Durations** در فیلد جدول قیمت‌گذاری غیرفعال باشه، محصولاتی که برای دوره انتخاب شده تغییر قیمتی ندارن پنهان می‌شن.
   * اگر **Force Different Durations** فعال باشه، همه محصولات حتی اگه برای دوره انتخابی تغییر نداشته باشن هم قابل مشاهده باقی می‌مونن (قیمت پیش‌فرضشون رو نشون می‌دن).
 
-#### انتخاب پیش‌فرض یک دوره صورتحساب از طریق URL
+#### انتخاب پیش‌فرض یک دوره صورتحساب از طریق URL {#pre-selecting-a-billing-period-via-url}
 
 شما همچنین می‌تونید یک محصول و دوره صورتحساب رو از طریق آدرس URL از قبل انتخاب کنید. Ultimate Multisite از این الگوهای URL پشتیبانی می‌کنه:
 
@@ -185,11 +185,11 @@ Kafin ka ƙara makonshikin Period Selection, tabbatar cewa kayayyakin ka suna da
   * `/register/premium/12` — محصول و دوره 12 ماهه رو پیش‌انتخاب می‌کنه
   * `/register/premium/1/year` — محصول با دوره 1 ساله رو پیش‌انتخاب می‌کنه
 
-### فیلد انتخاب قالب (Template Selection Field)
+### فیلد انتخاب قالب (Template Selection Field) {#the-template-selection-field}
 
 فیلد **Template Selection** به مشتری اجازه می‌ده در طول پرداخت، یک قالب سایت رو انتخاب کنه. این فیلد حالا به صورت پیش‌فرض در قالب‌های فرم پرداخت تک مرحله‌ای (**single step**) و چند مرحله‌ای (**multi-step**) که در Ultimate Multisite v2.6.1 اضافه شده‌اند، وجود داره.
 
-#### افزودن دستی فیلد
+#### افزودن دستی فیلد {#adding-the-field-manually}
 
 Idan kuna aiki da wani form wanda aka ƙirƙira kafin v2.6.1, ko kuma an fara daga wata template mai tsabta:
 
@@ -200,11 +200,11 @@ Idan kuna aiki da wani form wanda aka ƙirƙira kafin v2.6.1, ko kuma an fara da
    - **Label** — Wannan shi ne labarin da abokan ciniki suke gani a sama na grid ɗin template (misali, "Zaɓi template na site").
    - **Required** — Ko abokan ciniki dole ne za su zaɓi template kafin su ci son ci gaba.
 
-#### Yadda yake aiki
+#### Yadda yake aiki {#how-it-works}
 
 Idan wani customer ya zaɓi template yayin da ake ci son ci gaba (checkout), Ultimate Multisite zai yi amfani da shi lokacin da ake samarwa da sabon site ɗin sa. Template-template da aka nuna suna zuwa daga cikin jadawalin **Site Templates** ɗinka (**Ultimate Multisite > Site Templates**). Hanya-haye (templates) da aka alamar su na mai amfani a kan abokan ciniki ne kawai za su bayyana nan.
 
-### Checkout-form base domains
+### Checkout-form base domains {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 tana alayar domain-domain da aka tsara a fildin **Site URL** ɗin checkout form a matsayin network base domains. Yi amfani da tsarin available-domain na fildin idan kana so abokan ciniki su ƙirƙiro sites a kan wata ko wasu domain-dami na rajista (registration domains) da aka raba, kamar `example.com` da `sites.example.com`.
 
@@ -212,6 +212,6 @@ Domain-domain na asali na checkout form da aka raba ba su yi amfani da tsarin ha
 
 Ka riƙe domain-dami na musamman ga hosts na mapped per-customer, kamar `customer-example.com`. Ka riƙe domain-dami na asali na checkout form don hosts na rajista na raba wa sites da yawa za su iya amfani da su.
 
-#### Cire fildin
+#### Cire fildin {#removing-the-field}
 
 Idan zaɓar shafin (site templates) ba ka ba da shi, ka kawo wuri na zaɓar model ko girbi (Template Selection field) daga wajumarka. Abin da faransa, abin da ke gaba ita ce gwamnatin zaɓi wancin model da aka tsara a ƙawun **Ultimate Multisite > Settings > Site Templates**.

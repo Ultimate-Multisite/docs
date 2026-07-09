@@ -3,15 +3,15 @@ title: 'Lektion 8: Kunden-Onboarding'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lektion 8: Kunden-Onboarding
+# Lektion 8: Kunden-Onboarding {#lesson-8-customer-onboarding}
 
 Einen Kunden zum Anmelden zu bewegen, ist nur die halbe Miete. Wenn er sich einloggt, sich überfordert fühlt und nie wiederkommt, haben Sie ihn verloren. Diese Lektion gestaltet das Erlebnis, das eine neue Anmeldung in einen aktiven, engagierten Kunden verwandelt.
 
-## Wo wir aufgehört haben
+## Wo wir aufgehört haben {#where-we-left-off}
 
 FitSite ist vollständig mit Branding versehen und verfügt über einen funktionierenden Checkout-Prozess. Jetzt konzentrieren wir uns darauf, was passiert, nachdem ein Betreiber eines Fitnessstudios die Anmeldung abgeschlossen und zum ersten Mal auf seine neue Website gelangt ist.
 
-## Warum Onboarding wichtig ist
+## Warum Onboarding wichtig ist {#why-onboarding-matters}
 
 Die ersten 30 Minuten nach der Anmeldung bestimmen, ob ein Kunde bleibt oder abwandert (churns). Ein Betreiber eines Fitnessstudios, der:
 
@@ -21,9 +21,9 @@ Die ersten 30 Minuten nach der Anmeldung bestimmen, ob ein Kunde bleibt oder abw
 
 Ihre Nischenvorlagen (Lektion 4) kümmern sich um den ersten Punkt. Diese Lektion kümmert sich um den zweiten.
 
-## Das erste Login-Erlebnis
+## Das erste Login-Erlebnis {#the-first-login-experience}
 
-### Willkommens-Dashboard-Widget
+### Willkommens-Dashboard-Widget {#welcome-dashboard-widget}
 
 Erstellen Sie ein benutzerdefiniertes Dashboard-Widget, das neue Kunden begrüßt und sie durch die Einrichtung führt. Dieses sollte beim ersten Login prominent erscheinen.
 
@@ -37,7 +37,7 @@ Erstellen Sie ein benutzerdefiniertes Dashboard-Widget, das neue Kunden begrüß
 
 Jeder Schritt verlinkt direkt auf die entsprechende Seite oder Einstellung. Kein Herumsuchen durch Menüs.
 
-### Das Dashboard vereinfachen
+### Das Dashboard vereinfachen {#simplify-the-dashboard}
 
 Neue Kunden müssen nicht jedes WordPress-Menüelement sehen. Überlegen Sie:
 
@@ -47,29 +47,29 @@ Neue Kunden müssen nicht jedes WordPress-Menüelement sehen. Überlegen Sie:
 
 Das [Plugin & Theme Manager](/addons/plugin-and-theme-manager) Addon kann helfen, zu steuern, was die Kunden sehen.
 
-## Willkommens-E-Mail-Sequenz
+## Willkommens-E-Mail-Sequenz {#welcome-email-sequence}
 
 Eine einzige Willkommens-E-Mail reicht nicht aus. Richten Sie eine Sequenz ein, die die Kunden durch ihre erste Woche führt:
 
-### E-Mail 1: Willkommen (Unmittelbar nach der Anmeldung)
+### E-Mail 1: Willkommen (Unmittelbar nach der Anmeldung) {#email-1-welcome-immediately-after-signup}
 
 - Betreff: „Willkommen bei FitSite – Ihre Studio-Website ist live“
 - Inhalt: Login-Link, Quick-Start-Schritte, Link zu Hilferessourcen
 - Ton: Begeistert, ermutigend, fitnessspezifisch
 
-### E-Mail 2: Schnelle Erfolge (Tag 1)
+### E-Mail 2: Schnelle Erfolge (Tag 1) {#email-2-quick-wins-day-1}
 
 - Betreff: „3 Dinge, die Sie zuerst auf Ihrer FitSite tun sollten“
 - Inhalt: Logo hinzufügen, Hero-Bild der Startseite aktualisieren, Stundenplan hinzufügen
 - Screenshots einfügen, die genau zeigen, wo geklickt werden muss
 
-### E-Mail 3: Machen Sie es zu Ihrem eigenen (Tag 3)
+### E-Mail 3: Machen Sie es zu Ihrem eigenen (Tag 3) {#email-3-make-it-yours-day-3}
 
 - Betreff: „Geben Sie Ihrer Fitness-Website ein Alleinstellungsmerkmal“
 - Inhalt: Farben anpassen, Trainerfotos hinzufügen, Ihre Studio-Geschichte schreiben
 - Link zu Beispielen toller Fitness-Websites auf der Plattform
 
-### E-Mail 4: Live gehen (Tag 7)
+### E-Mail 4: Live gehen (Tag 7) {#email-4-go-live-day-7}
 
 - Betreff: „Bereit, Ihre FitSite der Welt zu zeigen?“
 - Inhalt: Checkliste, was vor dem Teilen überprüft werden muss, wie man eine benutzerdefinierte Domain verbindet (falls Growth/Pro genutzt wird), Tipps zum Social Sharing
@@ -78,11 +78,11 @@ Eine einzige Willkommens-E-Mail reicht nicht aus. Richten Sie eine Sequenz ein, 
 Verwenden Sie [Webhooks](/user-guide/integrations/webhooks) oder [Zapier](/user-guide/integrations/zapier), um diese E-Mails über Ihre E-Mail-Marketing-Plattform auszulösen. Das gibt Ihnen mehr Kontrolle über den Zeitpunkt und ermöglicht es Ihnen, das Engagement zu verfolgen.
 :::
 
-## Hilferessourcen
+## Hilferessourcen {#help-resources}
 
 Erstellen Sie nischenspezifische Hilfsinhalte, die die Fragen beantworten, die Betreiber von Fitnessstudios tatsächlich stellen:
 
-### Knowledge Base Artikel
+### Knowledge Base Artikel {#knowledge-base-articles}
 
 - „Wie Sie Ihren Stundenplan aktualisieren“
 - „Trainerprofile hinzufügen und bearbeiten“
@@ -92,7 +92,7 @@ Erstellen Sie nischenspezifische Hilfsinhalte, die die Fragen beantworten, die B
 
 Schreiben Sie diese für nicht-technische Benutzer. Verwenden Sie Screenshots. Vermeiden Sie WordPress-Fachjargon.
 
-### Video-Anleitungen
+### Video-Anleitungen {#video-walkthroughs}
 
 Kurze (2–3 Minuten) Bildschirmaufnahmen, die zeigen:
 
@@ -103,7 +103,7 @@ Kurze (2–3 Minuten) Bildschirmaufnahmen, die zeigen:
 
 Diese müssen keine polierten Produktionen sein. Klar, hilfreich und nischenspezifisch ist das Wichtigste.
 
-## Die Kundenkontoseite
+## Die Kundenkontoseite {#the-account-page}
 
 Ultimate Multisite enthält eine kundenorientierte [Account Page](/user-guide/client-management/account-page), über die Kunden ihr Abonnement verwalten. Passen Sie diese an, um:
 
@@ -112,7 +112,7 @@ Ultimate Multisite enthält eine kundenorientierte [Account Page](/user-guide/cl
 - Die Abrechnungsgeschichte und Rechnungsdownloads bereitzustellen
 - Auf Hilferessourcen zu verlinken
 
-## Messung des Onboarding-Erfolgs
+## Messung des Onboarding-Erfolgs {#measuring-onboarding-success}
 
 Verfolgen Sie diese Indikatoren, um zu wissen, ob Ihr Onboarding funktioniert:
 
@@ -121,7 +121,7 @@ Verfolgen Sie diese Indikatoren, um zu wissen, ob Ihr Onboarding funktioniert:
 - **Support-Tickets von neuen Kunden**: Ein hohes Volumen bedeutet, dass Ihr Onboarding Lücken hat
 - **Conversion von Test- zu zahlendem Kunden**: Wenn Sie Testversionen anbieten, welcher Prozentsatz wandelt um?
 
-## Das FitSite Network bisher
+## Das FitSite Network bisher {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Bereit für Preisstrategie (nächste Lektion)
 ```
 
-## Was wir in dieser Lektion erstellt haben
+## Was wir in dieser Lektion erstellt haben {#what-we-built-this-lesson}
 
 - **Ein geführtes Erst-Login-Erlebnis** mit einem Quick Start Widget
 - **Ein vereinfachtes Dashboard**, das sich auf Aufgaben zur Fitness-Website-Verwaltung konzentriert

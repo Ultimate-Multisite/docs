@@ -3,7 +3,7 @@ title: Strona Account klienta
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Strona Account Twojego klienta (v2)
+# Strona Account Twojego klienta (v2) {#your-clients-account-page-v2}
 
 _**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 
@@ -11,7 +11,7 @@ Gdy klienci subskrybują plan w Twojej sieci, otrzymują dostęp do witryny i je
 
 W tym poradniku przeprowadzimy Cię przez stronę Account klienta i zobaczysz, co Twoi klienci mogą w niej widzieć oraz robić.
 
-## Strona Account
+## Strona Account {#the-account-page}
 
 Strona Account jest dostępna po kliknięciu **Account** w Dashboard Twojego klienta.
 
@@ -27,7 +27,7 @@ Po kliknięciu klient zobaczy przegląd swojego członkostwa, adresu rozliczenio
 
 Może również zmienić członkostwo na inny plan albo kupić inny pakiet lub usługę, którą oferujesz. Przyjrzyjmy się każdej sekcji osobno.
 
-### Przegląd Twojego członkostwa:
+### Przegląd Twojego członkostwa: {#your-membership-overview}
 
 Pierwszy blok tuż pod nazwą witryny Twoich klientów pokazuje przegląd ich obecnego planu oraz usług/pakietów, które zostały z nim zakupione. Blok pokazuje również numer członkostwa, początkową kwotę za nie zapłaconą, ile kosztuje plan oraz każda usługa/pakiet, a także ile razy rozliczono ich za to członkostwo. Mogą też zobaczyć, czy członkostwo jest **Aktywne**, **Wygasłe** lub **Anulowane**.
 
@@ -43,7 +43,7 @@ Jeśli natomiast Twoi klienci zdecydują się kupić pakiety lub usługi dla teg
 
 Pamiętaj, że kodów kuponów nie można dodawać na tej stronie zmiany członkostwa. Jeśli klient użył kodu kuponu przy pierwszym zakupie członkostwa, kod zostanie również zastosowany do tego nowego członkostwa.
 
-### Aktualizacja adresu rozliczeniowego:
+### Aktualizacja adresu rozliczeniowego: {#updating-the-billing-address}
 
 Na stronie Account Twoi klienci mogą również zaktualizować swój adres rozliczeniowy. Wystarczy, że klikną **Aktualizuj** obok _Adres rozliczeniowy_.
 
@@ -53,7 +53,7 @@ Klientowi pojawi się nowe okno. Wystarczy, że wypełni nowy adres i kliknie _Z
 
 ![Formularz aktualizacji adresu rozliczeniowego](/img/account-page/billing-address-form.png)
 
-### Zmiana szablonu witryny:
+### Zmiana szablonu witryny: {#changing-the-site-template}
 
 Aby umożliwić klientom zmianę szablonów ich witryn, musisz przejść do **Ultimate Multisite > Ustawienia > Witryny** i włączyć opcję **Zezwalaj na przełączanie szablonów**.
 
@@ -81,7 +81,7 @@ Po włączeniu potwierdzenia i kliknięciu **Przetwórz przełączenie** nowy sz
 
 Klienci mogą również użyć opcji **Reset current template** z tego panelu, gdy muszą zresetować witrynę z powrotem do aktualnie przypisanego szablonu. Podobnie jak przełączenie na inny szablon, zresetowanie szablonu może nadpisać zawartość witryny, więc klienci powinni potwierdzać tę akcję tylko wtedy, gdy rozumieją działanie resetowania.
 
-### Dodawanie własnych domen:
+### Dodawanie własnych domen: {#adding-custom-domains}
 
 Twoi klienci będą również mieli możliwość dodania własnej domeny dla tego planu na stronie swojego Account. Aby umożliwić klientom korzystanie z własnych domen, przejdź do **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Po kliknięciu **Next Step** Twoi klienci mogą dodać nazwę swojej własnej do
 
 Po kliknięciu **Add Domain** domena zostanie dodana do konta Twojego klienta. Teraz muszą jedynie zmienić rekordy DNS tej własnej domeny u swojego rejestratora domen.
 
-### Zmiana hasła:
+### Zmiana hasła: {#changing-password}
 
 W Dashboard konta Twoi klienci mogą również zmienić swoje hasło, klikając **Change Password**.
 
@@ -125,7 +125,7 @@ Spowoduje to wyświetlenie nowego okna, w którym Twoi klienci będą musieli wp
 
 ![Formularz zmiany hasła z polami obecnego i nowego hasła](/img/account-page/change-password-form.png)
 
-### Strefa niebezpieczna:
+### Strefa niebezpieczna: {#danger-zone}
 
 Mamy również dwie opcje, które są wyświetlane w części **Danger Zone**: **Delete Site** i **Delete Account**. Obie znajdują się w części Danger Zone, ponieważ te dwie akcje są nieodwracalne. Jeśli Twoi klienci usuną swoją witrynę lub swoje konto, nie będą mogli ich odzyskać.
 

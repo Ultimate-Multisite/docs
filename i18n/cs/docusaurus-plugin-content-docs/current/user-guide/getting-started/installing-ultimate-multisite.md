@@ -3,13 +3,13 @@ title: Instalace Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalace Ultimate Multisite
+# Instalace Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Tento návod předpokládá, že máte již nainstalovaný a nakonfigurovaný WordPress Multisite. Chcete-li se dozvědět, jak na to, podívejte se na [tento tutoriál](https://www.wpbeginner.com/glossary/multisite/) od WP Beginner.
 :::
 
-## Instalace pluginu
+## Instalace pluginu {#installing-the-plugin}
 
 Ultimate Multisite je k dispozici zdarma na [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Po aktivaci budete automaticky přesměrováni do průvodce nastavením.
 
 ![Plugin aktivován a přesměrován do průvodce](/img/installation/plugin-activated.png)
 
-## Průvodce nastavením
+## Průvodce nastavením {#setup-wizard}
 
 Průvodce nastavením vás provede konfigurací Ultimate Multisite přibližně za 10 minut.
 
-### Vítejte
+### Vítejte {#welcome}
 
 Klikněte na **Get Started** pro zahájení.
 
 ![Úvodní obrazovka průvodce nastavením](/img/installation/wizard-welcome.png)
 
-### Předběžné kontroly
+### Předběžné kontroly {#pre-install-checks}
 
 Tento krok kontroluje informace o vašem systému a instalaci WordPress, aby se zajistilo, že splňuje požadavky Ultimate Multisite. Pokud je vše v pořádku, klikněte na **Go to the Next Step**.
 
@@ -51,31 +51,31 @@ Pokud byl Ultimate Multisite nainstalován, ale **ještě nebyl aktivován v cel
 Kliknutím na **Network Activate** aktivujete plugin v celé vaší multisite síti automaticky. Po aktivaci průvodce pokračuje normálně do kroku instalace. Není třeba opustit průvodce, abyste opravili stav aktivace.
 :::
 
-### Instalace
+### Instalace {#installation}
 
 Instalátor vytvoří potřebné databázové tabulky a nainstaluje soubor `sunrise.php`, který Ultimate Multisite potřebuje pro správnou funkci. Klikněte na **Install** pro pokračování.
 
 ![Krok instalace zobrazující databázové tabulky a sunrise.php](/img/installation/wizard-installation.png)
 
-### Vaše společnost
+### Vaše společnost {#your-company}
 
 Vyplňte informace o vaší společnosti a nastavte výchozí měnu. Tyto informace budou používány v celé vaší platformě WaaS. Po dokončení klikněte na **Continue**.
 
 ![Krok konfigurace „Vaše společnost“](/img/installation/wizard-your-company.png)
 
-### Výchozí obsah
+### Výchozí obsah {#default-content}
 
 Tento krok vám umožní nainstalovat předdefinované šablony, produkty a další výchozí obsah. Je to skvělý způsob, jak se seznámit s funkcemi Ultimate Multisite. Klikněte na **Install** pro přidání výchozího obsahu nebo tento krok přeskočte, pokud chcete začít od nuly.
 
 ![Krok instalace výchozího obsahu](/img/installation/wizard-default-content.png)
 
-### Doporučené pluginy
+### Doporučené pluginy {#recommended-plugins}
 
 Volitelně nainstalujte doporučené doplňkové pluginy. Kliknutím na **Install** je přidáte nebo pokračujte, pokud to nechcete.
 
 ![Krok s doporučenými pluginy](/img/installation/wizard-recommended-plugins.png)
 
-### Hotovo!
+### Hotovo! {#ready}
 
 To je vše! Instalace Ultimate Multisite je dokončena. Nyní můžete začít budovat svou platformu Website as a Service z **Network Admin Dashboard**.
 

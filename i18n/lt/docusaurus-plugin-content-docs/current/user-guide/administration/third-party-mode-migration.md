@@ -3,13 +3,13 @@ title: Migracija į trečias pusę režimą
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migracija do tryktojinio režimo (Third-Party Mode)
+# Migracija do tryktojinio režimo (Third-Party Mode) {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 keičia, kaip tryktojiniai galimybes bus valdomi. **Tryktojiniai režimas dabar beprastai nustatytas į "auto",** leidžiant integraciją su nativiumu WordPress Abilities API versijose 7.0+ be reikalinga manulinkos konfigūracijos.
 
-## Ką keičiasi?
+## Ką keičiasi? {#what-changed}
 
-### Prieš v1.12.0
+### Prieš v1.12.0 {#before-v1120}
 
 Tryktojiniai galimybės reikalavo manuloje konfigūracijoje:
 
@@ -18,7 +18,7 @@ Tryktojiniai galimybės reikalavo manuloje konfigūracijoje:
 - Integracija su WordPress Abilities API buvo jokių
 - Senas režimas buvo beprastai
 
-### Po v1.12.0
+### Po v1.12.0 {#after-v1120}
 
 Tryktojiniai galimybės veikia automatiškai:
 
@@ -27,13 +27,13 @@ Tryktojiniai galimybės veikia automatiškai:
 - Be reikalinga manuloje konfigūracijos versijose 7.0+
 - Senas režimas vis dar yra prieinamas seniausiems WordPress versijoms
 
-## Kur tai reiškia?
+## Kur tai reiškia? {#who-is-affected}
 
-### Nauji įkėlimai (WordPress 7.0+)
+### Nauji įkėlimai (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Nėra reikalinga veikla.** Tryktojinio režimas automatiškai nustatytas į "auto", ir galimybės veikia be problemų.
 
-### Eksistojanti įkėlimai
+### Eksistojanti įkėlimai {#existing-installations}
 
 **Jūsų nustatymai bus išlaikomi.** Jei naudojote:
 
@@ -41,7 +41,7 @@ Tryktojiniai galimybės veikia automatiškai:
 - **Manulį tryktojinio režimą**: Jūs liksite manuloje režime (nėra keičiamojo)
 - **Auto režimą**: Jūs tęsite naudojant auto režimą (nėra keičiamojo)
 
-### WordPress versijos prieš 7.0
+### WordPress versijos prieš 7.0 {#wordpress-versions-before-70}
 
 **Senas režimas vis dar yra prieinamas.** Jei naudojate WordPress 6.x arba vėles:
 
@@ -49,9 +49,9 @@ Tryktojiniai galimybės veikia automatiškai:
 - Galite manuliai įjungti tryktojinį režimą, jei norite
 - Pakeiskite į WordPress 7.0+ naudoti nativių Abilities API
 
-## Režimų supratimas
+## Režimų supratimas {#understanding-the-modes}
 
-### Auto režimas (Naujas beprastasis)
+### Auto režimas (Naujas beprastasis) {#auto-mode-new-default}
 
 **Auto režimas** naudoja nativių WordPress Abilities API integraciją:
 
@@ -62,7 +62,7 @@ Tryktojiniai galimybės veikia automatiškai:
 
 **Kada naudoti**: WordPress 7.0+ su trečiosiomis pusės įgalinimo (third-party) galimybėmis
 
-### Manuelis režimas
+### Manuelis režimas {#manual-mode}
 
 **Manuelis režimas** reikalauja nurodyti nustatymus:
 
@@ -73,7 +73,7 @@ Tryktojiniai galimybės veikia automatiškai:
 
 **Kada naudoti**: Testavimui, pasirinkti galimybių įkrovimui ar pritaikyti kustomizuotus nustatymus
 
-### Senas režimas (Legacy Mode)
+### Senas režimas (Legacy Mode) {#legacy-mode}
 
 **Senas režimas** naudoja seną sistemą trečios pusės įgalinimo:
 
@@ -84,24 +84,24 @@ Tryktojiniai galimybės veikia automatiškai:
 
 **Kada naudoti**: WordPress 6.x arba vėliau, arba kai jums reikia atgaliojos ypatybėms
 
-## Patikrinti dabartinį režimą
+## Patikrinti dabartinį režimą {#checking-your-current-mode}
 
-### Per admin panelį
+### Per admin panelį {#via-admin-panel}
 
 1. Eikite į **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Paieškite nustatymą **Third-Party Mode** (Trečios pusės režimas)
 3. Prieš jums rodomos dabartinis režimas ir pasirinkti ją pakeisti opsijos
 
-### Per kodą
+### Per kodą {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual' arba 'legacy'
 ```
 
-## Pakeitimas režimo
+## Pakeitimas režimo {#changing-your-mode}
 
-### Pakeiti į Auto režimą (Auto Mode)
+### Pakeiti į Auto režimą (Auto Mode) {#switch-to-auto-mode}
 
 Jei naudojate WordPress 7.0+ ir norite naudoti auto režimą:
 
@@ -112,7 +112,7 @@ Jei naudojate WordPress 7.0+ ir norite naudoti auto režimą:
 
 Superdav AI Agent automatiškai atsiranda ir registruoja trečiaspusės įgalinimo galimybes.
 
-### Pakeiti į Manuelį režimą (Manual Mode)
+### Pakeiti į Manuelį režimą (Manual Mode) {#switch-to-manual-mode}
 
 Jei norite manuliai kontroliuoti, kurios galimybės įkraunamos:
 
@@ -122,7 +122,7 @@ Jei norite manuliai kontroliuoti, kurios galimybės įkraunamos:
 4. Spauskite **Save** (Išsaugoti)
 5. Redaguokite savo konfigūracijos failą, nurodant, kurias galimybes įkrauti
 
-### Pakeiti į Seną režimą (Legacy Mode)
+### Pakeiti į Seną režimą (Legacy Mode) {#switch-to-legacy-mode}
 
 Jei jums reikia atgaliojos ypatybėms:
 
@@ -131,9 +131,9 @@ Jei jums reikia atgaliojos ypatybėms:
 3. Pasirinkite **Legacy**
 4. Spauskite **Save**
 
-## Auto Mode Pranašumai
+## Auto Mode Pranašumai {#benefits-of-auto-mode}
 
-### Automatinis atidavimas
+### Automatinis atidavimas {#automatic-discovery}
 
 Galiybės automatiškai atsiranda iš:
 
@@ -144,7 +144,7 @@ Galiybės automatiškai atsiranda iš:
 
 Nėra reikalinga manulinkti registracija.
 
-### Natūralus integruojimas
+### Natūralus integruojimas {#native-integration}
 
 Galiybės integruojasi su WordPress Abilities API:
 
@@ -153,35 +153,35 @@ Galiybės integruojasi su WordPress Abilities API:
 - Sujungta su kitais pluginais, naudojant Abilities API
 - Bus tinkamas ateitymai, kai WordPress keičiasi
 
-### Paprastas valdymo režimas
+### Paprastas valdymo režimas {#simplified-management}
 
 - Nėra redaguoti konfigūracijos failų
 - Nėra manulinkti galiybę registruoti
 - Kontrolės galiybiui (Ability Visibility) veikia automatiškai
 - Adminu pranešimai informuos apie neapibrėžtas gailybės
 
-### Geros veikimo rezultatai
+### Geros veikimo rezultatai {#better-performance}
 
 - Galiybės yra keičiamas (cached)
 - Laikiai įkeliamos pagal reikalavimą (lazy-loaded on demand)
 - Optimizuotas WordPress 7.0+ versijoms ir vėliau
 
-### Mano my prita specialios ne rodoj
+### Mano my prita specialios ne rodoj {#migration-path}
 
 - Patikrinkite, ar jūsų įdiegti per WordPress hookus
 - Patikrinkite, kad jie teisingai implementauja Abilities API
 - Peržiūrėkite WordPress klaidos logus (error logs)
 - Naudokite **Ability Visibility** admin puslapį, kad pamatytumėte visus įregistruotus specialios
 
-### Manau „nepategorizuotos specialios“ pranešimus
+### Manau „nepategorizuotos specialios“ pranešimus {#if-youre-on-wordpress-6x}
 
 - Tai normalu naujiems trečiosioms specialioms.
 - Peržiūrėkite ir kategorizuokite juos admin pranešimu.
 - Pamatykite **Ability Visibility** daugiau informacijos apie kategorizavimą.
 
-## Atgaliojimo padidėjimas (Backward Compatibility)
+## Atgaliojimo padidėjimas (Backward Compatibility) {#if-youre-on-wordpress-70}
 
-### Eksistantai konfigūracijos
+### Eksistantai konfigūracijos {#troubleshooting}
 
 Jei turite jau turiant trečios šalys specialių konfigūracijų:
 
@@ -191,33 +191,33 @@ Jei turite jau turiant trečios šalys specialių konfigūracijų:
 
 Kad išlaikytumėte savo specialią konfigūraciją, likite Manual ar Legacy mode.
 
-### Deprecierimo laikas
+### Deprecierimo laikas {#abilities-arent-loading-in-auto-mode}
 
 - **v1.12.0**: Legacy ir Manual mode vis dar yra visiškai palaikomi
 - **v1.13.0+**: Legacy mode gali rodyti deprecierimo pranešimus
 - **v2.0.0**: Legacy mode gali būti pašalintas (nurodoma)
 
-## Geriaus praktikos
+## Geriaus praktikos {#i-want-to-keep-legacy-mode}
 
-### Naujiems įdiegti sistemoms
+### Naujiems įdiegti sistemoms {#my-custom-abilities-arent-showing}
 
 - Naudokite Auto mode (tai yra standartas)
 - Leiskite Superdav AI Agentui automatiškai atradyti specialias
 - Naudokite Ability Visibility, kad kontrolėtumėte prieigą
 
-### Eksistantai įdiegti sistemoms
+### Eksistantai įdiegti sistemoms {#im-getting-unclassified-ability-notices}
 
 - Jei galite, atnaujinkite iki WordPress 7.0+
 - Pasirinkite Auto mode paprastesniam vadovavimui
 - Peržiūrėkite ir kategorizuokite specialias naudojant Ability Visibility
 
-### Specialioms
+### Specialioms {#backward-compatibility}
 
 - Įregistruokite specialias per WordPress hookus (Abilities API)
 - Visiškai vengite naudoti özelų specialių registravimo sistemų
 - Pat testuokite su WordPress 7.0+ Auto mode
 
-## Naujose veiksmose
+## Naujose veiksmose {#existing-configurations}
 
 1. **Patikrinkite savo WordPress versiją**: Patikrinkite, kad naudojate 7.0+ (arba naujesnę) versiją, jei norite naudoti Auto režimą.
 2. **Peržiūrėkite savo trečios šalies režimą**: Eikite „Settings“ (Parametrai) ir patikrinkite, koks jūsų dabartinis režimas yra.
@@ -225,7 +225,7 @@ Kad išlaikytumėte savo specialią konfigūraciją, likite Manual ar Legacy mod
 4. **Klasifikuokite galimybes**: Peržiūrėkite ir klasifikuokite neklasifikuidas galimybes.
 5. **Patestinkite**: Patikrinkite, ar jūsų trečios šalies galimybės veikia tinkamai.
 
-## Susiję temai
+## Susiję temai {#deprecation-timeline}
 
 - **Galimybių matomybė (Ability Visibility)**: Kontroliuojate, kurioje vietoje kokie galimybės yra pamatomi.
 - **WordPress Abilities API**: Sužinokite apie natūralią WordPress galimybių registravimą.

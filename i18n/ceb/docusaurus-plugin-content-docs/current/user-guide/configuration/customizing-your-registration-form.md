@@ -3,13 +3,13 @@ title: Pagpasibo sa Imong Form sa Pagparehistro
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pag-customize sa imong Form sa Pagparehistro
+# Pag-customize sa imong Form sa Pagparehistro {#customizing-your-registration-form}
 
 Aron mahimong talagsaon ang hitsura sa imong network kumpara sa tanang ubang SaaS nga gitukod sa WordPress platform, gitugotan ka sa Ultimate Multisite nga i-customize ang imong mga panid sa pagparehistro ug pag-login gamit ang among **Mga Form sa Pag-checkout** nga feature.
 
 Bisan pa nga sayon ug flexible kini nga paagi sa pagsulay og lain-laing pamaagi kung maningkamot nga makabig ang bag-ong mga customer, kasagaran kini gigamit sa paghimo og personalized nga mga form sa pagparehistro. Tumong sa artikulo nga ipakita kanimo kung unsaon nimo kini pagbuhat.
 
-## Mga panid sa pag-login ug pagparehistro:
+## Mga panid sa pag-login ug pagparehistro: {#login-and-registration-pages}
 
 Sa pag-install sa Ultimate Multisite, awtomatiko kini nga maghimo og custom nga mga panid sa pag-login ug pagparehistro sa imong main site. Mahimo nimo usbon kini nga default nga mga panid bisan kanus-a pinaagi sa pag-adto sa imong **Ultimate Multisite > Mga Setting > Pag-login & Pagparehistro** nga panid.
 
@@ -45,7 +45,7 @@ Karon, tan-awon nato ang ubang mga opsyon nga may kalabutan gihapon sa proseso s
 
 Ug mao na kana ang tanang opsyon nga may kalabutan sa pag-login ug pagparehistro nga mahimo nimo i-customize! Ayaw kalimti nga i-save ang imong mga setting human nimo mahuman ang pag-edit niini.
 
-## Paggamit og daghang mga form sa pagparehistro:
+## Paggamit og daghang mga form sa pagparehistro: {#using-multiple-registration-forms}
 
 Ang Ultimate Multisite 2.0 nagtanyag og editor sa form sa pag-checkout nga nagtugot kanimo sa paghimo og bisan pila ka form nga gusto nimo, nga adunay lain-laing mga field, mga produkto nga gitanyag, ug uban pa.
 
@@ -69,7 +69,7 @@ Sa laing paagi, mahimo nimo i-edit o i-duplicate ang mga form nga naa na nimo pi
 
 Kung pilion nimo ang usa ka step o multi-step, ang form sa pag-checkout daan nang napun-an sa basic nga mga step aron kini molihok. Dayon, kung gusto nimo, makadugang ka og dugang nga mga step niini.
 
-### Pag-edit sa Form sa Pag-checkout:
+### Pag-edit sa Form sa Pag-checkout: {#editing-a-checkout-form}
 
 Sama sa among gihisgutan kaniadto, makahimo ka og mga form sa pag-checkout alang sa lain-laing katuyoan. Niini nga pananglitan magtrabaho kita sa usa ka form sa pagparehistro.
 
@@ -131,11 +131,11 @@ Aron makuha ang shortcode sa imong porma, i-klik ang **Generate Shortcode** ug k
 
 _**Pahinumdom:** Kinahanglan nimo idugang kini nga shortcode sa imong panid sa pagrehistro aron madugang kini nga porma sa pagkompleto sa pagpalit ngadto niini._
 
-## Pag-pre-select sa mga produkto ug hulmahan pinaagi sa URL parameters:
+## Pag-pre-select sa mga produkto ug hulmahan pinaagi sa URL parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Kung gusto ka maghimo og pinasahi nga mga talaan sa presyo para sa imong mga produkto ug i-pre-select sa porma sa pagkompleto sa pagpalit ang produkto o hulmahan nga pilion sa imong kustomer gikan sa imong talaan sa presyo o panid sa mga hulmahan, magamit nimo ang URL parameters para niini.
 
-### **Para sa mga plano:**
+### **Para sa mga plano:** {#for-plans}
 
 Adto sa **Ultimate Multisite > Mga Produkto > Pagpili og plano**. Makita nimo ang buton nga **I-klik aron kopyahon ang Shareable Link** sa ibabaw sa panid. Kini ang link nga magamit nimo aron i-pre-select kining piho nga plano sa imong porma sa pagkompleto sa pagpalit.
 
@@ -143,7 +143,7 @@ Adto sa **Ultimate Multisite > Mga Produkto > Pagpili og plano**. Makita nimo an
 
 Timan-i nga kini nga shareable link balido lamang para sa **Mga Plano**. Dili nimo magamit ang shareable links para sa mga pakete o mga serbisyo.
 
-### Para sa mga hulmahan:
+### Para sa mga hulmahan: {#for-templates}
 
 Kung gusto nimo i-pre-select ang mga hulmahan sa sityo sa imong porma sa pagkompleto sa pagpalit, magamit nimo ang parameter: **?template_id=X** sa URL sa imong panid sa pagrehistro. Ang "X" kinahanglan ilisan sa **numero sa ID sa hulmahan sa sityo**. Aron makuha kini nga numero, adto sa **Ultimate Multisite > Mga Sityo**.
 

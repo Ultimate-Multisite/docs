@@ -3,17 +3,17 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Carga de Archivos Sunrise de Addon
+# Carga de Archivos Sunrise de Addon {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 añade un cargador de extensiones sunrise para add-ons e integraciones personalizadas de MU-plugin que necesitan ejecutarse durante el arranque (bootstrapping) de WordPress sunrise sin tener que editar el archivo `wp-content/sunrise.php` generado.
 
-## Cuándo usarlo
+## Cuándo usarlo {#when-to-use-it}
 
 Utiliza una extensión sunrise cuando tu integración deba ejecutarse antes de que se carguen los plugins regulares, como en el enrutamiento de dominios personalizados, el manejo de peticiones específicas del host o ajustes tempranos del arranque de la red.
 
 Para integraciones normales, prefiere los plugins regulares de WordPress, los MU-plugins y los hooks documentados de Ultimate Multisite. El código sunrise se ejecuta muy temprano y debe mantenerse pequeño, defensivo y sin dependencias.
 
-## Convención de nombres de archivos
+## Convención de nombres de archivos {#file-naming-convention}
 
 Crea un archivo PHP llamado `sunrise.php` en un directorio de addon cuyo nombre comience con `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Los archivos que coinciden se cargan en orden alfabético según la ruta del addon.
 
-## Dónde colocar el archivo
+## Dónde colocar el archivo {#where-to-place-the-file}
 
 Coloca el archivo en el directorio raíz del addon que posee el comportamiento sunrise:
 
@@ -45,7 +45,7 @@ El escaneo se resuelve con respecto a `WP_CONTENT_DIR`, no al valor actual de `W
 
 No edites directamente el archivo `wp-content/sunrise.php` generado. El cargador permite que el código personalizado extienda el comportamiento sunrise sin tener que modificar el archivo core de sunrise que Ultimate Multisite instala y actualiza.
 
-## Hooks y filtros disponibles
+## Hooks y filtros disponibles {#hooks-and-filters-available}
 
 Los archivos sunrise de addon se ejecutan después de que el mapeo de dominios de Ultimate Multisite se ha cargado y antes de que WordPress dispare `ms_loaded`. En este punto, un archivo sunrise puede:
 
@@ -58,7 +58,7 @@ Ultimate Multisite dispara `wu_sunrise_loaded` después de que su cargador sunri
 
 Solo llama a funciones que ya estén cargadas en la fase sunrise. Evita el trabajo pesado con la base de datos, la renderización de plantillas, las peticiones HTTP y el código que asume que se ha completado el orden normal de carga de plugins.
 
-## Ejemplo mínimo
+## Ejemplo mínimo {#minimal-example}
 
 ```php
 <?php

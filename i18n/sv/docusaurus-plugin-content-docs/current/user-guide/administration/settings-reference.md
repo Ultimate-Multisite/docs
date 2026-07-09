@@ -3,11 +3,11 @@ title: Inställningsreferens
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Inställningsreferens
+# Inställningsreferens {#settings-reference}
 
 Den här sidan följer inställningar som påverkar den dagliga administrationen och senaste beteendeförändringar i Ultimate Multisite.
 
-## Andra alternativ
+## Andra alternativ {#other-options}
 
 Området **Andra alternativ** visas under **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Området **Andra alternativ** visas under **Ultimate Multisite > Settings > Logi
 |---|---|
 | **Aktivera Jumper** | Visar snabbnavigeringsverktyget Jumper i adminområdet. Använd det för att hoppa direkt till Ultimate Multisite-skärmar, nätverksobjekt och stödda admindestinationer. Inaktivera det om du inte vill att den här genvägen ska vara synlig. |
 
-## Felrapportering och telemetri
+## Felrapportering och telemetri {#error-reporting-and-telemetry}
 
 Den tidigare opt-in-inställningen för felrapportering har tagits bort från inställningssidan. Anonym telemetri är inaktiverad och det finns ingen UI-växlare för att aktivera den.
 
 Om du underhåller interna runbooks eller skärmbilder för inställningssidan, ta bort hänvisningar till det gamla opt-in-fältet för felrapportering så att administratörer inte letar efter en inställning som inte längre finns.
 
-## Import-/exportinställningar
+## Import-/exportinställningar {#importexport-settings}
 
 Inställningsfliken **Import/Export** beskriver vilka inställningar den styr och länkar direkt till **Ultimate Multisite > Site Export** för webbplats- och nätverksarkiv. Använd inställningsfliken för import-/exportkonfiguration, använd **Tools > Export & Import** för arbetsflödet för export/import av en enskild webbplats, och använd verktyget Site Export när du behöver ett fullständigt Network Export-arkiv.
 
-## Domain Seller HostAfrica-saldovarning
+## Domain Seller HostAfrica-saldovarning {#domain-seller-hostafrica-balance-warning}
 
 När Domain Seller addon är anslutet till HostAfrica ser nätverksadministratörer nu en avvisningsbar varning om lågt saldo när återförsäljarkontots saldo är för lågt för tillförlitlig hantering av domänregistreringar eller förnyelser.
 
 Behandla detta meddelande som en operativ varning: fyll på HostAfrica-återförsäljarsaldot innan du accepterar fler betalda domänregistreringar, och återvänd sedan till Domain Seller-inställningarna eller skärmen för domänövervakning för att bekräfta att registreringar och förnyelser kan fortsätta normalt.
 
-## Inställningar för AI-leverantörsanslutare
+## Inställningar för AI-leverantörsanslutare {#ai-provider-connector-settings}
 
 Inställningar för AI-leverantörsanslutare visar nu endast de stödda OAuth-kontopoolerna:
 

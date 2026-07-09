@@ -3,9 +3,9 @@ title: Fara da Ci gaban Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Haɓaka Addon
+# Haɓaka Addon {#addon-development}
 
-## Tsarin Addon
+## Tsarin Addon {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Samfurin Babban Fayil na Addon
+## Samfurin Babban Fayil na Addon {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Misalin Model na Musamman
+## Misalin Model na Musamman {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Haɗin Shafin Admin
+## Haɗin Shafin Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Gwada Addon ɗinka
+## Gwada Addon ɗinka {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## wuraren faɗaɗa na v2.13.0
+## wuraren faɗaɗa na v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 yana ƙara wuraren faɗaɗa da dama waɗanda ke da amfani ga addons da ke haɗuwa da masu haya masu zaman kansu, yankunan checkout, ko sarrafa DNS na mai ba da masauki ta atomatik.
 
-### SSO da URLs na sarrafa babban shafi
+### SSO da URLs na sarrafa babban shafi {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Yankunan tushe na fom ɗin checkout
+### Yankunan tushe na fom ɗin checkout {#checkout-form-base-domains}
 
 Yi amfani da `wu_checkout_form_base_domains` lokacin da addon ɗinka ke samar da ƙarin yankunan tushe na gama-gari waɗanda ya kamata su yi aiki kamar yankunan **Site URL** na fom ɗin checkout maimakon taswirar al’ada ta kowane shafi:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite yana daidaita waɗannan masaukai kuma yana tsallake rubutun yankin da aka taswira ta atomatik na kowane shafi a gare su.
 
-### Ƙirƙirar rikodin yanki ta atomatik
+### Ƙirƙirar rikodin yanki ta atomatik {#automatic-domain-record-creation}
 
 Yi amfani da `wu_should_create_domain_record_for_site` lokacin da addon ɗinka ke buƙatar dakatarwa ko jinkirta ƙirƙirar rikodin yanki ta atomatik don sabon shafin da aka ƙirƙira:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Haɗaɗɗun mai ba da masauki da ke sauraron `wu_add_subdomain` na iya ƙirƙirar rikodin DNS a gefen mai bayarwa lokacin da aka ƙirƙiri shafuka. Idan ba a yi rajistar wani haɗin kai don wannan aikin ba, Ultimate Multisite yana tsallake aikin bango mara komai.
 
-## Matakai na Gaba
+## Matakai na Gaba {#next-steps}
 
 - Duba [Bayanan Hooks](/developer/hooks) don ayyuka da tacewa da ke akwai
 - Duba [Takaitaccen Bayanin REST API](/developer/rest-api/overview) don haɗin API

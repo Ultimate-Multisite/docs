@@ -4,13 +4,13 @@ title: Filter - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Szűrőként módosítja az átirányítási URL-t, amikor egy domainet elsődlegesnek təmindőít.
 
 Ez a szűrő lehetővé teszi a fejlesztők számára, hogy testre szabják, hogy a felhasználók hová kerülnek átirányításra, miután sikeresen beállították egy domainet elsődlegesnek. Alapértelmezés szerint az átirányítás az aktuális URL-re történik a fő oldalon, vagy az oldal admin URL-jára, amelyet módosítottak.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Name | Type | Leírás |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Ez a szűrő lehetővé teszi a fejlesztők számára, hogy testre szabják, hog
 | $domain | `\Domain` | Az objektum, amely a domainet elsődlegesnek təmindőítette. |
 | $old_primary_domains | `array` | Array az ID-kkel, amelyek korábban elsődlegesek voltak. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) at line 639
 
 
-## Vrági
+## Vrági {#returns}
 Az átirányított, szűrő által módosított URL-t.

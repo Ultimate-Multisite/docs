@@ -3,11 +3,11 @@ title: Dokumentacja hooków
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referencja hooków
+# Referencja hooków {#hooks-reference}
 
 Automatycznie wygenerowana dokumentacja dla wszystkich **59 akcji** i **118 filtrów** w Ultimate Multisite.
 
-## Akcje
+## Akcje {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Uruchamiane przed przekierowaniem uwierzytelniania.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Uruchamiane bezpośrednio przed ustawieniem ciasteczka uwierzytelniania.
@@ -70,7 +70,7 @@ Automatycznie wygenerowana dokumentacja dla wszystkich **59 akcji** i **118 filt
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Uruchamia się po zapisaniu obiektu w bazie danych.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Umożliwia deweloperom pluginów dodawanie akcji do procesu odblokowywania.
 
-## Filtry
+## Filtry {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtruje czas trwania okresu wygaśnięcia pliku cookie uwierzytelniania.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtruje schemat przekierowania uwierzytelniania.

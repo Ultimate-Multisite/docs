@@ -3,7 +3,7 @@ title: Uyifaka njani i-WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Ndiyifaka njani i-WordPress Multisite?
+# Ndiyifaka njani i-WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ikuvumela ukuba ube nenethiwekhi yeesayithi kufakelo olunye. Eli luphawu olwakhelwe ngaphakathi, kodwa alusebenzi ngokungagqibekanga.
 
@@ -61,7 +61,7 @@ Kunye nale khowudi, ekwanikwe ngu-WordPress, kwifayile yakho ye-_**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Ukudala i-subsite:
 
 Emva kokugcwalisa iifildi, cofa iqhosha elithi "Yongeza isayithi". Xa i-subsite entsha sele idaliwe, qhubeka uyifikelele ukuze uqinisekise ukuba i-subsite iyasebenza.
 
-## Iingxaki eziqhelekileyo:
+## Iingxaki eziqhelekileyo: {#common-problems}
 
-### 1\. Ndiyakwazi ukudala iisayithi ezintsha kodwa azifikeleleki.
+### 1\. Ndiyakwazi ukudala iisayithi ezintsha kodwa azifikeleleki. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ukuba ukhethe ii-subdomain, kufuneka kwakhona usete ii-wildcard subdomain zenethiwekhi yakho ye-multisite.
 

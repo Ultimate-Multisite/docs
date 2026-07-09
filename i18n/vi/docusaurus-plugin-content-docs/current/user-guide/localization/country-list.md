@@ -3,7 +3,7 @@ title: Danh sách Quốc gia
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Sắp xếp lại danh sách quốc gia trong Ultimate Multisite
+# Sắp xếp lại danh sách quốc gia trong Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Dropdown chọn quốc gia được sắp xếp theo thứ tự bảng chữ cái dựa trên tên tiếng Anh của các quốc gia. Điều này có nghĩa là đôi khi quốc gia của công ty bạn hoặc quốc gia của phần lớn khách hàng có thể bị chìm giữa một danh sách dài các tên quốc gia.
 

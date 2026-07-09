@@ -4,11 +4,11 @@ title: Hành động - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Được kích hoạt ngay trước khi cookie xác thực được thiết lập.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | Cơ chế xác thực. Các giá trị bao gồm 'auth' hoặc 'secure_auth'. |
 | $token | `string` | Token phiên của người dùng để sử dụng cho cookie này. |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 - 4.9.0: Tham số <code>$token</code> đã được thêm vào.
-### Source
+### Source {#source}
 
 Được định nghĩa trong [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) tại dòng 124

@@ -4,22 +4,22 @@ title: Филтер - wu_checkout_pages_error_messages
 sidebar_label: wu_checkout_pages_error_messages
 _i18n_hash: 513f1f012abbaedc950e0d12f4fc01f4
 ---
-# Филтер: wu_checkout_pages_error_messages
+# Филтер: wu_checkout_pages_error_messages {#filter-wucheckoutpageserrormessages}
 
 Ги филтрира пораките за грешки.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Опис |
 |------|------|-------------|
 | $messages | `array` | Пораките за грешки. |
 
-### Од верзија
+### Од верзија {#since}
 
 - 2.1.1
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/checkout/class-checkout-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout-pages.php#L218) на линија 218
 
 
-## Враќања
+## Враќања {#returns}

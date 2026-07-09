@@ -3,7 +3,7 @@ title: ଅଡ ଇଞ୍ଜେକ୍ଟର
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಜಾಹೀರಾತುಗಳನ್ನು ಇಡುವುದಕ್ಕೆ Ultimate Multisite: Ad Injector
+# ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಜಾಹೀರಾತುಗಳನ್ನು ಇಡುವುದಕ್ಕೆ Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector ಒಂದು **ಉಚಿತ add-on** ಇದು ನಿಮಗೆ ನಿಮ್ಮ ಪ್ಲಾನ್‌ಗಳ ಮೇಲೆ ನೇರವಾಗಿ ಅವುಗಳ ಎಡಿಟ್ (edit) ಪುಟದಿಂದ ಜಾಹೀರಾತುಗಳನ್ನು ಹಾಕಲು ಬೇಕಾದ ಉಪಕರಣಗಳನ್ನು ನೀಡುತ್ತದೆ.
 
@@ -35,7 +35,7 @@ _ನಿಮ್ಮ ಜಾಹೀರಾತು ಕೋಡ್ ಅನ್ನು ಸೇರ
 
 _ನಿಮ್ಮ ಬಳಕೆದಾರರ ಬ್ಯಾಕ್‌ಎಂಡ್‌ನಲ್ಲಿ ಜಾಹೀರಾತುಗಳನ್ನು ಪ್ರದರ್ಶಿಸಲು ನೀವು Admin Panel Ad Code ಆಯ್ಕೆಗೆ ಹೋಗಿ_
 
-### ಜಾಹೀರಾತುಗಳಿಗಿಂತ ಮುಂದೆ
+### ಜಾಹೀರಾತುಗಳಿಗಿಂತ ಮುಂದೆ {#beyond-advertising}
 
 ನೀವು Ultimate Multisite: Ad Injector ಅನ್ನು ಹೈ-ಟಿಯರ್ ಪ್ಲಾನ್‌ಗಳಿಗೆ ಬೆಂಬಲ ನೀಡಲು ಬಳಸಬಹುದು.
 

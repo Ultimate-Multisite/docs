@@ -3,11 +3,11 @@ title: Provayderga mos prompt keshlash
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provayderdan xabardor Prompt Caching
+# Provayderdan xabardor Prompt Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 **provayderdan xabardor prompt caching**ni taqdim etadi; u promptlarni turli LLM provayderlari bo‘ylab keshlash orqali API xarajatlari va kechikishni optimallashtiradi. Har bir provayderning keshlash mexanizmlari va konfiguratsiyalari turlicha.
 
-## Umumiy ko‘rinish
+## Umumiy ko‘rinish {#overview}
 
 Prompt caching sizga quyidagilarni beradi:
 
@@ -23,11 +23,11 @@ Turli provayderlar keshlashni turlicha amalga oshiradi:
 - **OpenRouter**: Provayderga xos keshlash
 - **Vertex Anthropic**: Kesh boshqaruvi bilan prompt caching
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini `cachedContents` API orqali aniq kesh boshqaruvini taqdim etadi.
 
-### Konfiguratsiya
+### Konfiguratsiya {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Keshlangan prompt yaratish
+### Keshlangan prompt yaratish {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Keshlangan promptdan foydalanish
+### Keshlangan promptdan foydalanish {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Kesh hayot sikli
+### Kesh hayot sikli {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini uchun eng yaxshi amaliyotlar
+### Gemini uchun eng yaxshi amaliyotlar {#best-practices-for-gemini}
 
 - **Mos TTL belgilang**: Xarajatni tejash va keshning eskirishi o‘rtasida muvozanat saqlang
 - **Tizim promptlarini keshlang**: Bir xil tizim promptini so‘rovlar bo‘ylab qayta ishlating
 - **Keshdan foydalanishni kuzating**: Qaysi keshlar eng ko‘p ishlatilishini kuzatib boring
 - **Muddati o‘tgan keshlarni tozalang**: Ishlatilmaydigan keshlarni vaqti-vaqti bilan o‘chiring
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI avtomatik TTL boshqaruvi bilan prompt cachingni qo‘llab-quvvatlaydi.
 
-### Konfiguratsiya
+### Konfiguratsiya {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Keshlashni yoqish
+### Keshlashni yoqish {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Kesh headerlari
+### Kesh headerlari {#cache-headers}
 
 Azure OpenAI kesh boshqaruvi uchun HTTP headerlardan foydalanadi:
 
@@ -152,7 +152,7 @@ Qo‘llab-quvvatlanadigan qiymatlar:
 - `no_cache`: Bu so‘rovni keshlamang
 - `no_store`: Keshlamang va qayta ishlatmang
 
-### Keshdan foydalanishni kuzatish
+### Keshdan foydalanishni kuzatish {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Azure OpenAI uchun eng yaxshi amaliyotlar
+### Azure OpenAI uchun eng yaxshi amaliyotlar {#best-practices-for-azure-openai}
 
 - **Izchil promptlardan foydalaning**: Bir xil promptlar keshlashdan foyda ko‘radi
 - **Oqilona TTL belgilang**: Xarajat va yangilik o‘rtasida muvozanat saqlang
 - **Kesh metrikalarini kuzating**: Kesh yaratilishi va hitlarni kuzatib boring
 - **O‘xshash so‘rovlarni paketlang**: Kesh hitlarini maksimal qilish uchun so‘rovlarni guruhlang
 
-## OpenRouter: Provayderga xos keshlash
+## OpenRouter: Provayderga xos keshlash {#openrouter-provider-specific-caching}
 
 OpenRouter asosiy provayderlar (OpenAI, Anthropic va boshqalar) orqali keshlashni qo‘llab-quvvatlaydi.
 
-### Konfiguratsiya
+### Konfiguratsiya {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter keshlashidan foydalanish
+### OpenRouter keshlashidan foydalanish {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Provayderga xos variantlar
+### Provayderga xos variantlar {#provider-specific-options}
 
 Turli provayderlarning keshlash mexanizmlari turlicha:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter uchun eng yaxshi amaliyotlar
+### OpenRouter uchun eng yaxshi amaliyotlar {#best-practices-for-openrouter}
 
 - **Provayderingizning keshlashini biling**: Har bir provayderning mexanizmlari turlicha
 - **Keshlash xatti-harakatini sinang**: Tanlangan provayderingiz bilan keshlash ishlashini tekshiring
 - **Xarajatlarni kuzating**: Keshlashdan olingan tejashni kuzatib boring
 - **Izchil modellardan foydalaning**: Modellarni almashtirish kesh hitlarini buzadi
 
-## Vertex Anthropic: Kesh boshqaruvi bilan Prompt Caching
+## Vertex Anthropic: Kesh boshqaruvi bilan Prompt Caching {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) aniq kesh boshqaruvi bilan prompt cachingni qo‘llab-quvvatlaydi.
 
-### Konfiguratsiya
+### Konfiguratsiya {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic keshlashidan foydalanish
+### Vertex Anthropic keshlashidan foydalanish {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Kesh nazorati turlari
+### Kesh nazorati turlari {#cache-control-types}
 
 - **ephemeral**: So‘rov davomida keshda saqlash (standart)
 - **persistent**: Bir nechta so‘rovlar bo‘ylab keshda saqlash (agar qo‘llab-quvvatlansa)
 
-### Keshdan foydalanishni monitoring qilish
+### Keshdan foydalanishni monitoring qilish {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic uchun eng yaxshi amaliyotlar
+### Vertex Anthropic uchun eng yaxshi amaliyotlar {#best-practices-for-vertex-anthropic}
 
 - **Ephemeral keshlashdan foydalaning**: Yagona sessiyali keshlash uchun yaxshi
 - **max_tokens ni mos ravishda belgilang**: Kesh hajmi va xarajat o‘rtasida muvozanat saqlang
 - **Kesh metrikalarini monitoring qiling**: Kesh samaradorligini kuzatib boring
 - **Ish yuklamangiz bilan sinab ko‘ring**: Keshlash foydalanish holatingizga foyda berishini tekshiring
 
-## Provayderlararo keshlash strategiyasi
+## Provayderlararo keshlash strategiyasi {#cross-provider-caching-strategy}
 
-### Yagona konfiguratsiya
+### Yagona konfiguratsiya {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Provayderni aniqlash
+### Provayderni aniqlash {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Zaxira strategiyasi
+### Zaxira strategiyasi {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Xarajatlarni optimallashtirish
+## Xarajatlarni optimallashtirish {#cost-optimization}
 
-### Tejashni hisoblash
+### Tejashni hisoblash {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimallashtirish bo‘yicha maslahatlar
+### Optimallashtirish bo‘yicha maslahatlar {#optimization-tips}
 
 - **Katta tizim promptlarini keshda saqlang**: Eng katta xarajat tejalishi
 - **Kontekstdan qayta foydalaning**: Tez-tez ishlatiladigan kontekst hujjatlarini keshda saqlang
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Kesh samaradorligini monitoring qiling**: Haqiqiy tejashni kuzatib boring
 - **TTL ni sozlang**: Xarajat va yangilik o‘rtasida muvozanat saqlang
 
-## Muammolarni bartaraf etish
+## Muammolarni bartaraf etish {#troubleshooting}
 
-### Kesh ishlatilmayapti
+### Kesh ishlatilmayapti {#cache-not-being-used}
 
 - Konfiguratsiyada keshlash yoqilganini tekshiring
 - Promptlar bir xil ekanini tekshiring (keshlash aniq moslikni talab qiladi)
 - Kesh muddati tugamaganini tekshiring
 - Provayderga xos kesh cheklovlarini tekshiring
 
-### Kesh yaratish muvaffaqiyatsiz bo‘lmoqda
+### Kesh yaratish muvaffaqiyatsiz bo‘lmoqda {#cache-creation-failing}
 
 - Kesh hajmi provayder limitlari doirasida ekanini tekshiring
 - Kesh nazorati sintaksisi to‘g‘ri ekanini tekshiring
 - Provayder modelingiz uchun keshlashni qo‘llab-quvvatlashiga ishonch hosil qiling
 - Cheklovlar uchun provayder hujjatlarini ko‘rib chiqing
 
-### Kutilmagan xarajatlar
+### Kutilmagan xarajatlar {#unexpected-costs}
 
 - Kesh yaratish va keshdan o‘qish tokenlarini monitoring qiling
 - Kesh haqiqatda ishlatilayotganini tekshiring
 - Prompt o‘zgarishlari tufayli keshga tushmaslik holatlarini tekshiring
 - TTL yoki kesh strategiyasini sozlashni ko‘rib chiqing
 
-## Provayderlarni taqqoslash
+## Provayderlarni taqqoslash {#provider-comparison}
 
 | Xususiyat | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Xarajat kamayishi | 90% | 90% | Provayderga bog‘liq | 90% |
 | Monitoring | Batafsil | Metrikalar orqali | Provayderga bog‘liq | Foydalanish orqali |
 
-## Keyingi qadamlar
+## Keyingi qadamlar {#next-steps}
 
 1. **Provayderingizni tanlang**: Ehtiyojlaringiz asosida tanlang
 2. **Keshlashni sozlang**: Provayderga xos keshlashni sozlang

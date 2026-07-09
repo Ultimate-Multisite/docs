@@ -4,21 +4,21 @@ title: Filtre - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Filtre : wu_password_require_lowercase
+# Filtre : wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
 
 Filtre pour déterminer s'il faut exiger des lettres minuscules dans les mots de passe.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $require | `bool` | S'il faut exiger des minuscules. Valeur par défaut true lorsque les règles sont appliquées. |
 | $defender_active | `bool` | S'il faut que Defender Pro Strong Password soit actif. |
 
-### Depuis
+### Depuis {#since}
 
 - 2.4.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L563) à la ligne 563

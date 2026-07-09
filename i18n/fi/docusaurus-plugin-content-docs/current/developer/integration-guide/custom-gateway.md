@@ -3,11 +3,11 @@ title: Mukautetun maksuvälityspalvelun kehitys
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Mukautetun maksuyhdyskäytävän kehitys
+# Mukautetun maksuyhdyskäytävän kehitys {#custom-gateway-development}
 
 Voit luoda mukautettuja maksuyhdyskäytäviä laajentamalla `Base_Gateway`-luokkaa.
 
-## Maksuyhdyskäytävän luokka
+## Maksuyhdyskäytävän luokka {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Rekisteröi maksuyhdyskäytävä
+## Rekisteröi maksuyhdyskäytävä {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Keskeiset metodit
+## Keskeiset metodit {#key-methods}
 
 | Metodi | Tarkoitus |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Käsittele hyvityspyynnöt |
 | `get_payment_methods()` | Palauta asiakkaan tallennetut maksutavat |
 
-## Uusimistunnistetiedot toistuville jäsenyyksille
+## Uusimistunnistetiedot toistuville jäsenyyksille {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 sallii maksuyhdyskäytäväintegraatioiden ilmoittaa, onko toistuvalla jäsenyydellä uudelleenkäytettävä uusimistunnistetieto ennen kuin `auto_renew` tallennetaan. Kytke `wu_membership_has_renewal_credential` ja palauta:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Tyhjennä puuttuvan tunnistetiedon merkintä osana maksuyhdyskäytäväsi onnistunutta uudelleenvaltuutusprosessia sen jälkeen, kun uusi uudelleenkäytettävä tunnistetieto on tallennettu.
 
-## Vinkit
+## Vinkit {#tips}
 
 - Palauta aina `WP_Error` epäonnistumisen yhteydessä, jotta Ultimate Multisite voi käsitellä virhenäytön
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Käytä `wu_log_add()`-funktiota maksuyhdyskäytäväkohtaiseen lokitukseen
 
-## AI-yhdistimen tarjoajan ominaisuudet
+## AI-yhdistimen tarjoajan ominaisuudet {#ai-connector-provider-capabilities}
 
 Mukautettujen integraatioiden, jotka kutsuvat AI-yhdistimen tukemia toimintoja, tulisi olla linjassa AI Provider for Anthropic Max v1.3.0:n mukana esitellyn tuetun OAuth-tarjoajajoukon kanssa:
 

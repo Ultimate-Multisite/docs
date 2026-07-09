@@ -4,19 +4,19 @@ title: אַקציע - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Action: wu_admin_pages_editors
+# Action: wu_admin_pages_editors {#action-wuadminpageseditors}
 
 לאָזט plugin־אַנטוויקלערס צולייגן נײַע רעדאַקטאָר־אָפּציעס =)
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
 | $ | `\WU_Admin_Page` | די איצטיקע admin בלאַט |
 
-### זינט
+### זינט {#since}
 
 - 1.0.1
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`views/admin-pages/edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/admin-pages/edit-admin-page.php#L99) ביי שורה 99

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency ļauj jūsu tīklam pieņemt maksājumus vairākās valūtās. Tas automātiski konvertē cenas, izmantojot aktuālus vai manuālus maiņas kursus, ļauj iestatīt precīzas cenas katram produktam jebkurā valūtā un nosaka katra apmeklētāja vēlamo valūtu pēc ģeolokācijas — viss tiek pārvaldīts no viena admin Dashboard.
 
-## Galvenās funkcijas
+## Galvenās funkcijas {#key-features}
 
 - **Automātiska maiņas kursa konvertēšana** — cenas tiek konvertētas no jūsu pamatvalūtas, izmantojot kursus, kas iegūti no jūsu izvēlētā pakalpojumu sniedzēja
 - **Cenu pārrakstīšana katram produktam** — iestatiet precīzas valūtai specifiskas cenas jebkuram produktam, lai apietu automātisko konvertēšanu
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency ļauj jūsu tīklam pieņemt maksājumus vair
 - **Uz ģeolokāciju balstīta valūtas noteikšana** — automātiski iepriekš atlasa valūtu, kas atbilst apmeklētāja valstij
 - **Admin Dashboard** — pārvaldiet aktīvās valūtas, maiņas kursus un pakalpojumu sniedzēja iestatījumus vienuviet
 
-## Prasības
+## Prasības {#requirements}
 
 - Ultimate Multisite 2.0.0 vai jaunāka versija
 - WordPress Multisite instalācija
 - PHP 7.4 vai jaunāka versija
 
-## Instalēšana
+## Instalēšana {#installation}
 
 1. Augšupielādējiet plugin failus uz `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktivizējiet plugin caur **Plugins** ekrānu WordPress (Network Activate)
 3. Dodieties uz **Ultimate Multisite → Multi-Currency**, lai atvērtu admin Dashboard
 4. Pievienojiet valūtas, kuras vēlaties pieņemt, un konfigurējiet savu maiņas kursu pakalpojumu sniedzēju
 
-## Konfigurācija
+## Konfigurācija {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Multi-Currency admin Dashboard (**Ultimate Multisite → Multi-Currency**) ir centrālā vieta, kur:
 
@@ -44,7 +44,7 @@ Multi-Currency admin Dashboard (**Ultimate Multisite → Multi-Currency**) ir ce
 - Pārskatīt pašreizējos kursus visām aktīvajām valūtām
 - Iestatīt manuālus kursus, ja automātiskie pakalpojumu sniedzēji nav piemēroti
 
-### Maiņas kursu pakalpojumu sniedzēji
+### Maiņas kursu pakalpojumu sniedzēji {#exchange-rate-providers}
 
 | Pakalpojumu sniedzējs | Apraksts |
 |---|---|
@@ -55,7 +55,7 @@ Multi-Currency admin Dashboard (**Ultimate Multisite → Multi-Currency**) ir ce
 
 Atlasiet savu pakalpojumu sniedzēju sadaļā **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kursus jebkurā laikā var atjaunināt manuāli vai ieplānot automātisku atjaunināšanu.
 
-### Cenu pārrakstīšana katram produktam
+### Cenu pārrakstīšana katram produktam {#per-product-pricing-overrides}
 
 Ja automātiskā konvertēšana nav pietiekami precīza, varat iestatīt precīzu cenu konkrētai valūtai jebkuram produktam:
 
@@ -66,7 +66,7 @@ Ja automātiskā konvertēšana nav pietiekami precīza, varat iestatīt precīz
 
 Produkti bez pārrakstīšanas izmanto konvertēto cenu no jūsu pamatvalūtas.
 
-### Valūtas izvēles reģistrēšanās lauks
+### Valūtas izvēles reģistrēšanās lauks {#currency-selector-signup-field}
 
 Valūtas izvēles lauku var pievienot jūsu reģistrēšanās/checkout plūsmai, lai klienti reģistrācijas laikā izvēlētos vēlamo valūtu:
 
@@ -76,7 +76,7 @@ Valūtas izvēles lauku var pievienot jūsu reģistrēšanās/checkout plūsmai,
 
 Atlasītā valūta tiek saglabāta kopā ar abonementu un izmantota visiem turpmākajiem norēķiniem.
 
-### Uz ģeolokāciju balstīta valūtas noteikšana
+### Uz ģeolokāciju balstīta valūtas noteikšana {#geolocation-based-currency-detection}
 
 Kad ģeolokācijas noteikšana ir iespējota, addon sasaista apmeklētāja valsti ar valūtu un iepriekš atlasa to valūtas izvēles laukā. Lai iespējotu:
 
@@ -86,27 +86,27 @@ Kad ģeolokācijas noteikšana ir iespējota, addon sasaista apmeklētāja valst
 
 Ja apmeklētāja valstij nav izveidota sasaiste, kā rezerves variants tiek izmantota tīkla pamatvalūta.
 
-## Bieži uzdotie jautājumi
+## Bieži uzdotie jautājumi {#frequently-asked-questions}
 
-### Kas notiek, ja maiņas kursu pakalpojumu sniedzējs nav pieejams?
+### Kas notiek, ja maiņas kursu pakalpojumu sniedzējs nav pieejams? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon izmanto pēdējos veiksmīgi iegūtos kursus. Ja kursi nekad nav tikuši iegūti, tas izmanto jūsu konfigurētos manuālos kursus. Ieteicams konfigurēt manuālos kursus kā drošības tīklu.
 
-### Vai varu izmantot dažādus pakalpojumu sniedzējus dažādām valūtām?
+### Vai varu izmantot dažādus pakalpojumu sniedzējus dažādām valūtām? {#can-i-use-different-providers-for-different-currencies}
 
 Nē — visām valūtām vienlaikus ir aktīvs viens pakalpojumu sniedzējs. Izmantojiet **Manual**, ja jums nepieciešama pilnīga kontrole pār atsevišķiem kursiem.
 
-### Vai ģeolokācijai nepieciešams atsevišķs plugin?
+### Vai ģeolokācijai nepieciešams atsevišķs plugin? {#does-geolocation-require-a-separate-plugin}
 
 Ārējs ģeolokācijas plugin nav nepieciešams. Addon izmanto WordPress iebūvēto IP uz valsti noteikšanu. Augstākai precizitātei var integrēt īpašu ģeolokācijas pakalpojumu, izmantojot nodrošinātos filtra hooks.
 
-### Vai katra produkta pārrakstīšanas tiek piemērotas pirms vai pēc nodokļa?
+### Vai katra produkta pārrakstīšanas tiek piemērotas pirms vai pēc nodokļa? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Katra produkta pārrakstīšanas iestata cenu pirms nodokļa mērķa valūtā. Nodoklis tiek aprēķināts virs pārrakstīšanas cenas, izmantojot jūsu esošo nodokļu konfigurāciju.
 
-## Izmaiņu žurnāls
+## Izmaiņu žurnāls {#changelog}
 
-### Versija 1.0.0 — izlaista 2026-04-02
+### Versija 1.0.0 — izlaista 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Jauns: vairāku valūtu atbalsts ar automātisku maiņas kursu konvertēšanu
 - Jauns: cenu pārrakstīšana katram produktam precīzām valūtai specifiskām cenām

@@ -4,11 +4,11 @@ title: کردار - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# کردار: wu_membership_post_renew
+# کردار: wu_membership_post_renew {#action-wumembershippostrenew}
 
 دوای نوێکردنەوەی ئەندامێتی دەچالاکێت.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 | $membership_id | `int` | ناسنامەی ئەندامێتی. |
 | $membership | `\Membership` | شتێکی ئەندامێتی. |
 
-### لە وەشانی
+### لە وەشانی {#since}
 
 - 2.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) لە هێڵی 2235

@@ -3,11 +3,11 @@ title: บันทึกการเปลี่ยนแปลง
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Released on 2026-04-28
+## 1.9.0 — Released on 2026-04-28 {#190--released-on-2026-04-28}
 
-### New
+### New {#new}
 
 - **ความสามารถ `create_contact_form`** — สร้างแบบฟอร์มติดต่อโดยใช้ plugin แบบฟอร์มที่ใช้งานอยู่ (เช่น Contact Form 7, WPForms, Fluent Forms, หรือ Gravity Forms) และส่งคืน shortcode ที่พร้อมนำไปฝังในโพสต์หรือหน้าใดก็ได้
 - **ความสามารถ `set_featured_image`** — กำหนดรูปภาพเด่น (featured image) ให้กับโพสต์หรือหน้า โดยใช้ ID ของไฟล์จาก Media Library ที่มีอยู่แล้ว หรือใช้ URL จากภายนอก; หากระบุ URL จะมีการนำเข้าภาพโดยอัตโนมัติ
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **กู้คืนเซสชันล่าสุด (Restore last session)** — ตอนนี้แผงแชทจะโหลดการสนทนาล่าสุดโดยอัตโนมัติเมื่อเปิดหน้าหรือเปิด widget ทำให้บริบทการสนทนาไม่หายไประหว่างการนำทางหน้าเว็บ
 - **ลิงก์สำหรับ Plugin actions** — เพิ่มลิงก์ด่วนไปยัง Settings และ Abilities Registry บนหน้า **Plugins → Installed Plugins** ของ WordPress ใต้คำอธิบาย plugin
 
-### Improved
+### Improved {#improved}
 
 - **การลองใหม่ของแหล่งที่มาของรูปภาพ (Image source retry)** — ตอนนี้ Agent จะพยายามลองใช้แหล่งที่มาของรูปภาพฟรีที่กำหนดค่าไว้ทั้งหมดก่อนที่จะใช้ภาพที่สร้างโดย AI เมื่อการดาวน์โหลดล้มเหลว
 - **แผงข้อมูล Model (Model info panel)** — แสดงอยู่เสมอที่ส่วนหัวของแชท ไม่ซ่อนอีกต่อไปหลังจากข้อความแรก
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **การออกแบบ Chat widget ใหม่** — ไอคอน AI แบบรวมศูนย์เข้ามาแทนที่ avatar แบบกำหนดเองเดิม ให้มีความสอดคล้องกับระบบ Agent ในตัว
 - **การแปลง URL เป็นลิงก์ (URL linkification)** — URL ที่ปรากฏในข้อความระบบและฟองข้อความข้อผิดพลาดจะถูกแสดงเป็นลิงก์ที่คลิกได้แล้ว
 
-### Fixed
+### Fixed {#fixed}
 
 - **ความสามารถในการค้นพบ Ability (Ability discoverability)** — แก้ไขคำอธิบาย, การอ้างอิง system prompt, และการจัดแนว namespace เพื่อให้แน่ใจว่าทุก ability จะปรากฏในรายการเครื่องมือของ Agent อย่างน่าเชื่อถือ
 - **Providers cache** — ตอนนี้ providers จะถูกแคชทั่วทั้งเว็บไซต์ผ่านตัวนับเวอร์ชัน ป้องกันปัญหา stale-provider บนเครือข่าย multisite
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Released on 2026-04-09
+## 1.4.0 — Released on 2026-04-09 {#140--released-on-2026-04-09}
 
-### New
+### New {#new-1}
 
 - **คำสั่ง benchmark ของ WP-CLI** (`wp gratis-ai-agent benchmark`) — ใช้รันชุด benchmark ของ Agent Capabilities v1 จาก command line สำหรับ CI pipelines และ workflow การประเมิน model รองรับการรันแบบรายคำถาม, การกำหนดค่า provider/model ทับ, และ output เป็น JSON/CSV
 - **Agent Capabilities v1 benchmark suite** — ชุด prompt ที่ซับซ้อนหลายขั้นตอนและมีโครงสร้าง เพื่อทดสอบความสามารถทั้งหมด พร้อมการให้คะแนนและการรายงาน token/duration
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **คำถาม benchmark สำหรับเว็บไซต์ร้านอาหาร** (`q-restaurant-website`) — การทดสอบ end-to-end ที่ครอบคลุม CPT registration, design system, navigation, และ plugin discovery
 - **AI provider connector plugins** ถูกเพิ่มเข้าไปใน WordPress Playground blueprints เพื่อการตั้งค่าการพัฒนาในเครื่อง (local development) ที่รวดเร็วยิ่งขึ้น
 
-### Improved
+### Improved {#improved-1}
 
 - README อัปเดตด้วยเอกสารและคำแนะนำการตั้งค่า AI provider connector
 
-### Fixed
+### Fixed {#fixed-1}
 
 - แก้ไขความล้มเหลวของการทดสอบ PHPUnit 25 จุดบน main branch
 - แก้ไขรูปแบบ URL GitHub releases ใน `blueprint.json`
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _ดูบันทึกการปล่อยเวอร์ชันก่อนหน้าได้ที่ repository ของ plugin_

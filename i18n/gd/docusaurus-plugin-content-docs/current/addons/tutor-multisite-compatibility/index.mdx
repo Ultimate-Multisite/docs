@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Plugan WordPress a chuireas ceartachaidhean co-chòrdalachd ris airson Tutor LMS ann an àrainneachdan ioma-làraich.
 
-## Tuairisgeul
+## Tuairisgeul {#description}
 
 Tha am plugan seo a’ toirt seachad ceartachaidhean co-chòrdalachd riatanach airson Tutor LMS a ruith air lìonraidhean ioma-làraich WordPress. Bidh e a’ làimhseachadh clàradh luchd-cleachdaidh, stiùireadh luchd-teagaisg, crìochan chùrsaichean, agus gnìomhachd eile a tha sònraichte do dh’ioma-làraich.
 
-## Feartan
+## Feartan {#features}
 
 - **Stiùireadh Chlàran Stòr-dàta**: Lorgaidh agus cruthaichidh e gu fèin-obrachail clàran Tutor LMS a tha a dhìth agus a dh’fhàillig air sgàth chuingealachaidhean iuchrach cèin ioma-làraich
 - **Clàradh Luchd-cleachdaidh Ioma-làraich**: Làimhseadairean AJAX gnàthaichte airson clàradh luchd-cleachdaidh a stiùireadh thar làraichean lìonraidh
@@ -24,7 +24,7 @@ Tha am plugan seo a’ toirt seachad ceartachaidhean co-chòrdalachd riatanach a
 - **Seallaidhean Rianachd Gnàthaichte**: Liosta luchd-teagaisg agus eadar-aghaidh stiùiridh a tha mothachail air ioma-làraich
 - **Innealan Rianachd**: Eadar-aghaidh stiùiridh stòr-dàta airson rianairean lìonraidh agus làraich
 
-## Riatanasan
+## Riatanasan {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Tha am plugan seo a’ toirt seachad ceartachaidhean co-chòrdalachd riatanach a
 - Stàladh Ioma-làraich WordPress
 - Plugan Ultimate Multisite (airson gnìomhachd chrìochan chùrsaichean)
 
-## Stàladh
+## Stàladh {#installation}
 
 1. Luchdaich suas faidhlichean a’ phlugain gu `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Dèan cinnteach gu bheil Tutor LMS air a stàladh agus air a ghnìomhachadh
 3. Gnìomhaich am plugan tron chlàr-taice 'Plugan' ann an WordPress
 4. Amalachaidh am plugan gu fèin-obrachail le Tutor LMS
 
-## Structar Fhaidhlichean
+## Structar Fhaidhlichean {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Gnìomhachd air a Gluasad bhon MU plugin
+## Gnìomhachd air a Gluasad bhon MU plugin {#functionality-moved-from-mu-plugin}
 
 Tha am plugan seo a’ gabhail a-steach gnìomhachd a bha roimhe ann an `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Tha am plugan seo a’ gabhail a-steach gnìomhachd a bha roimhe ann an `wp-cont
 - Làimhseachadh clàraidh luchd-cleachdaidh ioma-làraich
 - Taisbeanadh ID toraidh cùrsa
 
-## Stiùireadh Stòr-dàta
+## Stiùireadh Stòr-dàta {#database-management}
 
-### An Duilgheadas
+### An Duilgheadas {#the-problem}
 
 Ann an àrainneachdan ioma-làraich WordPress, fàillidh cruthachadh chlàran Tutor LMS airson clàran le cuingealachaidhean iuchrach cèin ri clàr nan luchd-cleachdaidh. Tachraidh seo air sgàth:
 
@@ -81,7 +81,7 @@ Ann an àrainneachdan ioma-làraich WordPress, fàillidh cruthachadh chlàran Tu
 - Bidh iuchraichean cèin a’ toirt iomradh air `wp_2_users` (nach eil ann)
 - ’S e `wp_users` an clàr luchd-cleachdaidh fìor (co-roinnte thar an lìonra)
 
-### Am Fuasgladh
+### Am Fuasgladh {#the-solution}
 
 Bidh am plugan seo gu fèin-obrachail:
 
@@ -92,13 +92,13 @@ Bidh am plugan seo gu fèin-obrachail:
    - Cruthachadh làraich ùir san lìonra
    - Sgrùdadh làimhe air clàran tron eadar-aghaidh rianachd
 
-### Clàran air a bheil Buaidh
+### Clàran air a bheil Buaidh {#affected-tables}
 
 - `tutor_coupon_usages` - Tha iuchair chèin ann gu clàr nan luchd-cleachdaidh
 - `tutor_carts` - Tha iuchair chèin ann gu clàr nan luchd-cleachdaidh
 - `tutor_notification_preferences` - Clàr TutorPro le iuchair chèin gu clàr nan luchd-cleachdaidh
 
-### Eadar-aghaidh Rianachd
+### Eadar-aghaidh Rianachd {#admin-interface}
 
 Faigh cothrom air innealan stiùiridh an stòr-dàta aig:
 
@@ -111,6 +111,6 @@ Leigidh an eadar-aghaidh leat:
 - Rèiteachadh an stòr-dàta a sgrùdadh
 - Fiosrachadh inbhe mionaideach fhaicinn
 
-## Taic
+## Taic {#support}
 
 Chaidh am plugan seo a dhealbhadh gu sònraichte airson àrd-ùrlar KursoPro. Airson taic theicnigeach, cuir fios chun sgioba leasachaidh.

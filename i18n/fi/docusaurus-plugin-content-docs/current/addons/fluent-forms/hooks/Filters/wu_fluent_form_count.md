@@ -4,24 +4,24 @@ title: Suodatin - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count
+# Filter: wu_fluent_form_count {#filter-wufluentformcount}
 
 Salli plugin-kehittäjien muuttaa lomakkeiden kokonaismäärää
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
 | $count | `int` | Lomakkeiden kokonaismäärä |
 | $form_type | `string` | Lomaketyypin slug |
 
-### Alkaen
+### Alkaen {#since}
 
 - 1.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L156) rivillä 156
 
 
-## Palauttaa
+## Palauttaa {#returns}
 Uusi kokonaismäärä

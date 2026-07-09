@@ -3,28 +3,28 @@ title: Преглед REST API-ја
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Референца за REST API
+# Референца за REST API {#rest-api-reference}
 
-## Основна конфигурација
+## Основна конфигурација {#base-configuration}
 
 **Основни URL:** `{site_url}/wp-json/wu/v2/`
 **Аутентификација:** API кључ и тајна (HTTP Basic Auth или URL параметри)
 
-## Аутентификација
+## Аутентификација {#authentication}
 
-### Омогућите API
+### Омогућите API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Добијте API акредитиве
+### Добијте API акредитиве {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Методе аутентификације
+### Методе аутентификације {#authentication-methods}
 
 **HTTP Basic Auth (препоручено):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Основне крајње тачке
+## Основне крајње тачке {#core-endpoints}
 
-### 1. API за клијенте
+### 1. API за клијенте {#1-customers-api}
 
 **Основна рута:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API за сајтове
+### 2. API за сајтове {#2-sites-api}
 
 **Основна рута:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API за чланства
+### 3. API за чланства {#3-memberships-api}
 
 **Основна рута:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API за производе
+### 4. API за производе {#4-products-api}
 
 **Основна рута:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API за плаћања
+### 5. API за плаћања {#5-payments-api}
 
 **Основна рута:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API за домене
+### 6. API за домене {#6-domains-api}
 
 **Основна рута:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Крајња тачка за регистрацију
+## Крајња тачка за регистрацију {#registration-endpoint}
 
 Крајња тачка `/register` обезбеђује комплетан ток плаћања/регистрације:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Крајње тачке сувереног станара
+## Крајње тачке сувереног станара {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 додаје REST покривеност за сувереног станара за интеграције које обезбеђују, прегледају или верификују изоловане станаре.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 Третирајте `ready: false` као блокатор пре покретања. Проверите детаље верификације, поправите повезивање хоста базе података, ред, обезбеђивање корисника или проблем са рутирањем, затим поново покушајте верификацију.
 
-## Одговори о грешкама
+## Одговори о грешкама {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## Пагинација и филтрирање
+## Пагинација и филтрирање {#pagination-and-filtering}
 
 **Параметри упита:**
 ```http

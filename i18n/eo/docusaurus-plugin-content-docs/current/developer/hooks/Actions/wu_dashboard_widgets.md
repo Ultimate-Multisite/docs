@@ -4,11 +4,11 @@ title: Ago - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Ago: wu_dashboard_widgets
+# Ago: wu_dashboard_widgets {#action-wudashboardwidgets}
 
 Permesas al plugin-programistoj aldoni widgets al Reta Dashboard-panelo.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Permesas al plugin-programistoj aldoni widgets al Reta Dashboard-panelo.
 | $screen | `\WP_Screen` | The screen object. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ultimate Multisite admin page instance. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L225) ĉe linio 225

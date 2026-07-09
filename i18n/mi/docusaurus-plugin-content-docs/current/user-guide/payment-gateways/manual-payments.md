@@ -3,13 +3,13 @@ title: Te Whakarite Utu ā-Ringa
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Te Whirihora i ngā Utu ā-Ringa (v2)
+# Te Whirihora i ngā Utu ā-Ringa (v2) {#setting-up-manual-payments-v2}
 
 _**TUHIPOKA NUI: E kōrero ana tēnei tuhinga mō Ultimate Multisite putanga 2.x.**_
 
 Ko ngā utu ā-ringa tētahi huarahi kia taea e koe te tuku i ētahi atu tikanga utu mēnā kāore **Stripe** rānei **PayPal** rānei i te wātea ki ō kaiwhakamahi. Tērā pea he whakawhiti moni ā-waea, he whakawhiti pēke rānei, he tikanga utu kē atu rānei e wātea ana ki ō kaiwhakamahi i tō rātou rohe.
 
-## Me pēhea te whakahohe i ngā Utu ā-Ringa
+## Me pēhea te whakahohe i ngā Utu ā-Ringa {#how-to-enable-manual-payments}
 
 He tino māmā te whirihora i te utu ā-ringa. Me whakahohe noa iho i raro i ngā kuwaha utu, ā, me tuku ngā tohutohu taipitopito mō te āhua e tukuna ai e te kaiwhakamahi te utu.
 
@@ -31,7 +31,7 @@ Whai muri i te whirihora, pāwhiritia noa **Tiaki Tautuhinga**, ā, kua oti. Ina
 
 <!-- Kāore te whakaahua mata i te wātea: Whārangi Tēnā Koe e whakaatu ana i ngā tohutohu utu i muri i te whakaoti hoko -->
 
-## Te whakatūturu i ngā utu ā-ringa
+## Te whakatūturu i ngā utu ā-ringa {#confirming-manual-payments}
 
 Hei whakatūturu i tētahi utu ā-ringa, haere ki te tahua **Utu** i te pae mauī. I reira ka taea e koe te kite i ngā utu katoa i tō whatunga me ō rātou taipitopito, tae atu ki tō rātou **tūnga**. Ka whai **Tārewa** tonu tētahi utu ā-ringa kia whakarerekētia ā-ringatia rā anō e koe.
 

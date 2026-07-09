@@ -3,13 +3,13 @@ title: E-Mails und Rundsendungen versenden
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-Mails und Broadcasts senden (v2)
+# E-Mails und Broadcasts senden (v2) {#sending-emails-and-broadcasts-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
 Ultimate Multisite enthält eine Funktion, mit der du mit deinen Kunden kommunizieren kannst, indem du eine E-Mail an einen bestimmten Benutzer oder eine Gruppe von Benutzern sendest sowie Hinweise auf ihrem Admin-Dashboard anzeigst, um Ankündigungen zu verbreiten
 
-## Admin-Hinweise mit Broadcasts zum Dashboard deiner Kunden hinzufügen
+## Admin-Hinweise mit Broadcasts zum Dashboard deiner Kunden hinzufügen {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Mit der Broadcast-Funktion von Ultimate Multisite kannst du **Admin-Hinweise** zum Admin-Dashboard der Subsite deines Benutzers hinzufügen.
 
@@ -51,7 +51,7 @@ Nachdem du deine Nachricht erstellt hast, kannst du auf die Schaltfläche **Send
 
 Und das war’s. Der Admin-Hinweis sollte sofort auf dem Dashboard deines Benutzers angezeigt werden.
 
-## E-Mails an deine Kunden senden
+## E-Mails an deine Kunden senden {#send-emails-to-your-customers}
 
 Mit der Broadcast-Funktion von Ultimate Multisite kannst du eine E-Mail an deine Benutzer senden. Du hast die Möglichkeit, die E-Mail nur an bestimmte Benutzer zu senden oder eine bestimmte Benutzergruppe basierend auf dem Produkt oder Plan anzusprechen, unter dem sie abonniert sind.
 
@@ -81,11 +81,11 @@ Nachdem du deine Nachricht erstellt hast, kannst du auf die Schaltfläche **Send
 
 Und so einfach ist es, mit der Broadcast-Funktion eine E-Mail an deine Endbenutzer zu senden.
 
-## System-E-Mails
+## System-E-Mails {#system-emails}
 
 System-E-Mails in Ultimate Multisite sind jene **automatischen Benachrichtigungen**, die vom System nach bestimmten Aktionen wie Registrierung, Zahlung, Domain-Mapping usw. gesendet werden. Diese E-Mails können in den Ultimate Multisite-Einstellungen bearbeitet oder geändert werden. Es enthält außerdem eine Funktion, mit der du bestehende Einstellungen aus einer anderen Ultimate Multisite-Installation zurücksetzen und importieren kannst.
 
-### Zurücksetzen & Importieren
+### Zurücksetzen & Importieren {#resetting--importing}
 
 Neue Ultimate Multisite-Versionen sowie Add-ons können und werden von Zeit zu Zeit neue E-Mails registrieren.
 
@@ -93,7 +93,7 @@ Um Konflikte und andere Probleme zu vermeiden, **fügen wir die neuen E-Mail-Vor
 
 Super-Admins und Agenten können diese neu registrierten E-Mails jedoch über das Importer-Tool importieren. Dieser Vorgang erstellt eine neue System-E-Mail mit dem Inhalt und der Konfiguration der neuen E-Mail-Vorlage, sodass der Super-Admin beliebige Änderungen vornehmen oder sie unverändert lassen kann.
 
-#### So importierst du System-E-Mails
+#### So importierst du System-E-Mails {#how-to-import-system-emails}
 
 Gehe zu deiner Ultimate Multisite-Einstellungsseite und öffne den Tab **E-Mails**.
 
@@ -111,7 +111,7 @@ Dann kannst du die Optionen zum Importieren von E-Mails umschalten, um zu sehen,
 
 <!-- Screenshot nicht verfügbar: Modal „Zurücksetzen und importieren“ mit ausgeklappten Optionen zum Importieren von E-Mails -->
 
-#### System-E-Mails zurücksetzen
+#### System-E-Mails zurücksetzen {#reseting-system-emails}
 
 Manchmal stellen Sie fest, dass die Änderungen, die Sie an einer bestimmten E-Mail-Vorlage vorgenommen haben, für Sie nicht mehr funktionieren, und Sie möchten sie auf ihren **Standardzustand** zurücksetzen.
 

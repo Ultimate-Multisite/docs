@@ -3,15 +3,15 @@ title: Menyu Yarat
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menyu Yaratmaq
+# Menyu Yaratmaq {#create-menu}
 
 **Menyu Yaratmaq** funksionallığı, səhifə başlıqlarından ayrı, fərqli naviqasiya etiketləri dəstəkləyən WordPress naviqasiya menyularının yaradılmasına imkan verir.
 
-## Ümumi Baxış
+## Ümumi Baxış {#overview}
 
 Bu funksionallıq standart menyu yaratma işliliyinə `navigation_label` parametrinə malik olmaq imkanını əlavə edir. Bu, menyular yaratmağa imkan verir ki, naviqasiyada göstərilən etiket səhifə başlıqlarından fərqlənsin. Bu da sayt strukturunda və istifadəçi təcrübəsində daha çox çeviklik təmin edir.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Parametr | Tip | Tələb Olunur | Təsvir |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Bu funksionallıq standart menyu yaratma işliliyinə `navigation_label` paramet
 | `location` | string | Xeyr | Menyunu təyin etmək üçün mövzu (Theme) yeri, məs.: `primary` |
 | `navigation_label` | string | Xeyr | Naviqasiyada göstəriləcək etiket (səhifə başlıqlarından fərqli) |
 
-## Dönüş Dəyəri
+## Dönüş Dəyəri {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Bu funksionallıq standart menyu yaratma işliliyinə `navigation_label` paramet
 }
 ```
 
-## Naviqasiya Etiketi vs. Səhifə Başlığı
+## Naviqasiya Etiketi vs. Səhifə Başlığı {#navigation-label-vs-page-title}
 
 `navigation_label` parametri sizə daxili menyu adını istifadəçilərə göstərilən etiketdən ayırmağa imkan verir:
 
@@ -43,9 +43,9 @@ Bu, aşağıdakı hallarda faydalıdır:
 - Müxtəlif etiket uzunluqlarına malik bir neçə dili dəstəkləməyiniz lazım gəlsə
 - Müəyyən regionlar və ya istifadəçi qrupları üçün menyular qurursunuzsa
 
-## İstifadə Nümunələri
+## İstifadə Nümunələri {#usage-examples}
 
-### Nümunə 1: Naviqasiya Etiketli Sadə Menyu
+### Nümunə 1: Naviqasiya Etiketli Sadə Menyu {#example-1-simple-menu-with-navigation-label}
 
 **Komanda:**
 ```
@@ -62,7 +62,7 @@ Bu, aşağıdakı hallarda faydalıdır:
 }
 ```
 
-### Nümunə 2: Müəyyən Mövzu Yeri üçün Menyu
+### Nümunə 2: Müəyyən Mövzu Yeri üçün Menyu {#example-2-menu-for-specific-theme-location}
 
 **Komanda:**
 ```
@@ -80,7 +80,7 @@ Bu, aşağıdakı hallarda faydalıdır:
 }
 ```
 
-## Theme Builder ilə İntegrasiya
+## Theme Builder ilə İntegrasiya {#integration-with-theme-builder}
 
 Theme Builder istifadə edərkən, Create Menu funksionallığı:
 
@@ -89,13 +89,13 @@ Theme Builder istifadə edərkən, Create Menu funksionallığı:
 3. Menyuları düzgün mövzu yerlərinə təyin edir
 4. Yaratıldıqdan sonra menyu elementlərinin əlavə edilməsini dəstəkləyir
 
-## Əlaqəli Funksionallıqlar
+## Əlaqəli Funksionallıqlar {#related-abilities}
 
 - **`add_menu_item`** — Mövcud menyuya elementlər əlavə etmək
 - **`update_menu`** — Menyunu yeniləmək və ya onu mövzu yerinə yenidən təyin etmək
 - **`delete_menu`** — Saytınızdan menyunu silmək
 
-## Ən Yaxşı Praktikalara Nəzarət
+## Ən Yaxşı Praktikalara Nəzarət {#best-practices}
 
 - **Aydın naviqasiya etiketləri istifadə edin** — etiketləri istifadəçilər üçün qısa və təsvir edici saxlayın
 - **Mövzu yerlərinə uyğunlaşdırın** — düzgün göstərilməsi üçün menyuları doğru mövzu yerinə təyin edin
@@ -103,14 +103,14 @@ Theme Builder istifadə edərkən, Create Menu funksionallığı:
 - **Responsivliyi yoxlayın** — menyuların mobil cihazlarda düzgün göstərilməsini təsdiqləyin
 - **Etiketləri yerədilin (Localize)** — müxtəlif dil versiyaları üçün fərqli naviqasiya etiketləri istifadə edin
 
-## Məhdudiyyətlər
+## Məhdudiyyətlər {#limitations}
 
 - Naviqasiya etiketləri yalnız göstərilmə məqsədlidir; daxili `name` hələ də WordPress identifikatoru üçün istifadə olunur
 - Mövzu dəstəyi dəyişkəndir; bütün mövzular bütün menyu yerlərini dəstəkləmir
 - Menyu elementləri menyu yaradıldıqdan sonra ayrıca əlavə edilməlidir
 - Naviqasiya etiketini dəyişmək menyunu yeniləməyi tələb edir
 
-## Əlaqəli Funksionallıqlar
+## Əlaqəli Funksionallıqlar {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — sayt başlığı üçün loqolar yaratmaq
 - [Validate Palette Contrast](./validate-palette-contrast.md) — əlçatan rəng sxemlərini təmin etmək

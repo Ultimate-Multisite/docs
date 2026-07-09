@@ -3,15 +3,15 @@ title: Paghimo og Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Paghimo og Menu
+# Paghimo og Menu {#create-menu}
 
 Ang abilidad nga **Paghimo og Menu** naghimo og mga menu sa nabigasyon sa WordPress nga adunay suporta para sa lain nga mga label sa nabigasyon nga lahi sa mga titulo sa panid.
 
-## Kinatibuk-ang Tan-aw
+## Kinatibuk-ang Tan-aw {#overview}
 
 Kini nga abilidad nagpalapad sa standard nga gamit sa paghimo og menu pinaagi sa abilidad sa pagtino og `navigation_label` nga parameter. Kini nagtugot kanimo sa paghimo og mga menu diin ang label nga gipakita sa nabigasyon lahi sa titulo sa panid, nga naghatag og mas daghang pagka-flexible sa istruktura sa site ug kasinatian sa user.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Parameter | Type | Kinahanglan | Deskripsyon |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Kini nga abilidad nagpalapad sa standard nga gamit sa paghimo og menu pinaagi sa
 | `location` | string | Dili | Lokasyon sa theme nga i-assign niini nga menu, pananglitan `primary` |
 | `navigation_label` | string | Dili | Label nga ipakita sa nabigasyon (lahi sa titulo sa panid) |
 
-## Gibalik nga Bili
+## Gibalik nga Bili {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Kini nga abilidad nagpalapad sa standard nga gamit sa paghimo og menu pinaagi sa
 }
 ```
 
-## Label sa Nabigasyon vs Titulo sa Panid
+## Label sa Nabigasyon vs Titulo sa Panid {#navigation-label-vs-page-title}
 
 Ang `navigation_label` nga parameter nagtugot kanimo sa pagbulag sa internal nga ngalan sa menu gikan sa label nga gipakita sa mga user:
 
@@ -43,9 +43,9 @@ Mapuslanon kini kung:
 - Kinahanglan nimo mosuporta og daghang pinulongan nga adunay lain-laing gitas-on sa label
 - Naghimo ka og mga menu para sa piho nga mga rehiyon o mga grupo sa user
 
-## Mga Pananglitan sa Paggamit
+## Mga Pananglitan sa Paggamit {#usage-examples}
 
-### Pananglitan 1: Yano nga Menu nga adunay Label sa Nabigasyon
+### Pananglitan 1: Yano nga Menu nga adunay Label sa Nabigasyon {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Paghimo og primary nga menu sa nabigasyon nga gitawag og "Main Navigation" nga a
 }
 ```
 
-### Pananglitan 2: Menu para sa Piho nga Lokasyon sa Theme
+### Pananglitan 2: Menu para sa Piho nga Lokasyon sa Theme {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Paghimo og footer menu nga gitawag og "Footer Links" nga adunay label sa nabigas
 }
 ```
 
-## Integrasyon sa Theme Builder
+## Integrasyon sa Theme Builder {#integration-with-theme-builder}
 
 Kung mogamit og Theme Builder, ang abilidad nga Paghimo og Menu:
 
@@ -89,13 +89,13 @@ Kung mogamit og Theme Builder, ang abilidad nga Paghimo og Menu:
 3. Nag-assign sa mga menu ngadto sa hustong mga lokasyon sa theme
 4. Mosuporta sa pagdugang og mga item sa menu human sa paghimo
 
-## May Kalabotang mga Abilidad
+## May Kalabotang mga Abilidad {#related-abilities}
 
 - **`add_menu_item`** — Pagdugang og mga item ngadto sa anaa na nga menu
 - **`update_menu`** — Ilisan ang ngalan sa menu o i-assign kini pag-usab ngadto sa lokasyon sa theme
 - **`delete_menu`** — Kuhaa ang menu gikan sa imong site
 
-## Pinakamaayong mga Pamaagi
+## Pinakamaayong mga Pamaagi {#best-practices}
 
 - **Gamita ang klaro nga mga label sa nabigasyon** — himoa nga mubo ug deskriptibo ang mga label para sa mga user
 - **Itakdo ang mga lokasyon sa theme** — i-assign ang mga menu ngadto sa hustong lokasyon sa theme para sa sakto nga pagpakita
@@ -103,14 +103,14 @@ Kung mogamit og Theme Builder, ang abilidad nga Paghimo og Menu:
 - **Sulayi ang responsiveness** — siguroha nga sakto ang pagpakita sa mga menu sa mobile devices
 - **I-localize ang mga label** — gamita ang lain-laing mga label sa nabigasyon para sa lain-laing bersyon sa pinulongan
 
-## Mga Limitasyon
+## Mga Limitasyon {#limitations}
 
 - Ang mga label sa nabigasyon para ra sa pagpakita; ang internal nga `name` gigamit gihapon para sa identipikasyon sa WordPress
 - Nagkalain-lain ang suporta sa theme; dili tanan nga themes mosuporta sa tanang lokasyon sa menu
 - Ang mga item sa menu kinahanglang idugang nga bulag human sa paghimo sa menu
 - Ang pag-usab sa label sa nabigasyon nagkinahanglan og pag-update sa menu
 
-## May Kalabotang mga Abilidad
+## May Kalabotang mga Abilidad {#related-abilities-1}
 
 - [Paghimo og Logo SVG](./generate-logo-svg.md) — paghimo og mga logo para sa header sa imong site
 - [Pag-validate sa Contrast sa Palette](./validate-palette-contrast.md) — siguroha ang accessible nga mga scheme sa kolor

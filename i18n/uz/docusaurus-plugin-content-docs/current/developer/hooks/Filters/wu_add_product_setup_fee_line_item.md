@@ -4,11 +4,11 @@ title: Filtr - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filtr: wu_add_product_setup_fee_line_item
+# Filtr: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 Dasturchilarga sozlash to‘lovi qator elementiga o‘zgartirish kiritishga ruxsat beradi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Dasturchilarga sozlash to‘lovi qator elementiga o‘zgartirish kiritishga ruxs
 | $product | `\WP_Ultimo\Models\Product` | Sozlash to‘lovi bilan bog‘liq mahsulot. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | Savat obyekti. |
 
-### Versiyadan beri
+### Versiyadan beri {#since}
 
 - 2.1
-### Manba
+### Manba {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) faylida 1790-qatorda aniqlangan
 
 
-## Qaytaradi
+## Qaytaradi {#returns}

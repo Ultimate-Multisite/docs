@@ -3,11 +3,11 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite ترجمه
+# Ultimate Multisite ترجمه {#translating-ultimate-multisite}
 
 Ultimate Multisite هم انګلیسي ته جوړ شوی، तर این پڵگین کاملاً ترجمه کردنی میسرە و ئێمە بەخێربوومتر بۆ پێشنیارەکانی وەرگێڕان.
 
-## ترجمەی سەرەکی پڵگینەکان
+## ترجمەی سەرەکی پڵگینەکان {#core-plugin-translations}
 
 سەرەکی Ultimate Multisite پڵگینەکە لە ڕێگەی پلاتفۆرمی فەرمی **WordPress.org translation platform** یترجم دەکرێت:
 
@@ -24,7 +24,7 @@ Ultimate Multisite هم انګلیسي ته جوړ شوی، तर این پڵگ
 
 ئەگەر دەتەوێت دەبۆزیت وەرگێڕانکاری بۆ زمانی خۆت (واتە بتوانیت وەرگێڕانەکان پەسەند بکەیت)، لە ڕێگەی [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) پەیوەندی بە ئێمە بکە.
 
-## وەرگێڕانی Addon هاوڵاتییەکان (Addon Translations)
+## وەرگێڕانی Addon هاوڵاتییەکان (Addon Translations) {#addon-translations}
 
 وەرگێڕانی پڵگینەکانی Addon بە شێوەیەکی جیاواز لە شوێنێکدا دەکرێت:
 
@@ -32,11 +32,11 @@ Ultimate Multisite هم انګلیسي ته جوړ شوی، तर این پڵگ
 
 وەرگێڕانەکانی Addon ئێستا بە مۆدێل AI دروست کراون بۆ دەستپێکی کار. ئەوان هەموو زمانە پشتگیریکراوەکان دەگرن، بەڵام ڕەنگە وشەکاندا شێوازێکی نادەستیا یان ناهێتە ڕاستی بێت. ئێمە وەرگێڕەرانی مرۆیی پێویستمان بە دروستکردنی باشتر و وردتریان بۆ ئەوەی زیاتر سروشتی بن، بەخێربوومترین.
 
-## وەرگێڕانەکانی ناوخۆیی (Local Translations)
+## وەرگێڕانەکانی ناوخۆیی (Local Translations) {#local-translations}
 
 که تاسو غواړئ چې د خپل ځان پروژې لپاره محلي ترجمې جوړ کړئ او نه دا کار ته یې په upstream کې مشارکت وکړئ، دوه alternativen دي:
 
-### Poedit څخه کارول
+### Poedit څخه کارول {#using-poedit}
 
 تاسو کولی شئ د دسکټاپ اپلیکیشن **[Poedit](https://poedit.net)** کارولو لپاره `.pot` فایل ترڅنګ ترجمه وکړئ:
 
@@ -46,6 +46,6 @@ Ultimate Multisite هم انګلیسي ته جوړ شوی، तर این پڵگ
 4. حفظ کړئ -- Poedit `.po` او `.mo` فایلونه جوړوي
 5. خپلو نتيجې فایلونه په `lang` فولډر کې ځای پرځای کړئ
 
-### Loco Translate څخه کارول
+### Loco Translate څخه کارول {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** د WordPress پلاګین تاسو ته اجازه ورکوي چې مستقیم له admin panel څخه ترجمه وکړئ او هیڅ د desktop инструменти ته اړتیا نه لرئ. دا پلاګین د ترجمه فایلونه جوړولو او کمپایل کولو کار هم پیلوي.

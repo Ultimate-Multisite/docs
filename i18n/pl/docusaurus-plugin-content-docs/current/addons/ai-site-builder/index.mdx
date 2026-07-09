@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Wymagania
+## Wymagania {#requirements}
 
 - WordPress 5.3 lub nowszy
 - PHP 7.4 lub nowszy
 - Wtyczka Ultimate Multisite (aktywna)
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij pliki dodatku do katalogu `/wp-content/plugins/`
 2. Aktywuj wtyczkę w menu „Plugins” w WordPress
 3. Skonfiguruj ustawienia dodatku w panelu administracyjnym sieci (network admin)
 
-## Rozwój
+## Rozwój {#development}
 
-### Konfiguracja
+### Konfiguracja {#setup}
 
 ```bash
 # Instalacja zależności
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura Projektu
+### Struktura Projektu {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Zasady modernizacji kodu
 ```
 
-### Testowanie
+### Testowanie {#testing}
 
 Dodatek zawiera kompleksowy framework testowy:
 
@@ -79,44 +79,44 @@ Dodatek zawiera kompleksowy framework testowy:
 - **Pokrycie testami (Test Coverage)**: Skonfigurowane do śledzenia pokrycia kodu
 - **Testowanie Multisite**: Testy uruchamiane w środowisku multisite
 
-### Standardy Kodu
+### Standardy Kodu {#code-standards}
 
 - **Standardy Kodowania WordPress**: Egzekwowane za pomocą PHPCS
 - **Kompatybilność PHP 7.4+**: Wspierane nowoczesne funkcje PHP
 - **Analiza Statyczna (Static Analysis)**: Integracja PHPStan do sprawdzania typów
 - **Modernizacja Kodu**: Zasady Rector dla ulepszeń PHP
 
-### System Budowania (Build System)
+### System Budowania (Build System) {#build-system}
 
 - **Przetwarzanie Zasobów (Asset Processing)**: Minifikacja plików CSS/JS
 - **Tłumaczenie (Translation)**: Generowanie plików POT
 - **Pakowanie (Packaging)**: Tworzenie archiwum do dystrybucji
 - **Tryb Rozwojowy (Development Mode)**: Nie-minifikowane zasoby do debugowania
 
-## Konfiguracja
+## Konfiguracja {#configuration}
 
 Dodatek obsługuje różne opcje konfiguracyjne, dostępne przez interfejs administracyjny sieci (network admin).
 
-## Akcje i Filtry (Hooks and Filters)
+## Akcje i Filtry (Hooks and Filters) {#hooks-and-filters}
 
-### Akcje (Actions)
+### Akcje (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Wywoływana po inicjalizacji dodatku
 - `ultimate-multisite-ai-site-builder_loaded` - Wywoływana po załadowaniu wszystkich plików dodatku
 
-### Filtry (Filters)
+### Filtry (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modyfikacja ustawień dodatku
 - `ultimate-multisite-ai-site-builder_enabled` - Nadpisanie statusu włączenia/wyłączenia dodatku
 
-## Licencja
+## Licencja {#license}
 
 Dodatek jest licencjonowany na warunkach GPL v3 lub nowszych.
 
-## Wsparcie
+## Wsparcie {#support}
 
 W celu uzyskania wsparcia i dokumentacji odwiedź [MultisiteUltimate.com](https://multisiteultimate.com)
-## Historia zmian (Changelog)
+## Historia zmian (Changelog) {#changelog}
 
 - Wersja 1.0.1 (2025-09-28): zmiana prefiksu na ultimate-multisite; aktualizacja domeny tekstowej; zwiększenie wersji.
 

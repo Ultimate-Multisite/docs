@@ -3,15 +3,15 @@ title: 'Lezzjoni 7: Agħmlu Tiegħek'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lezzjoni 7: Nagħmluha Tiegħek
+# Lezzjoni 7: Nagħmluha Tiegħek {#lesson-7-making-it-yours}
 
 Il-klijenti tiegħek qatt m'għandhom iħossu li qed jużaw "xi plugin ta' WordPress." Għandhom iħossu li qed jużaw FitSite -- pjattaforma mibnija għall-industrija tagħhom. Din il-lezzjoni tkopri l-immarkar tad-ditta, il-white-labeling, u kif tagħmel il-pjattaforma tħossha bħal prodott.
 
-## Fejn Ħallejna
+## Fejn Ħallejna {#where-we-left-off}
 
 FitSite għandu fluss ta' checkout li jaħdem u li jieħu lis-sidien ta' studios tal-fitness mill-għażla tal-pjan għal sit live. Issa nagħmlu l-esperjenza kollha tħossha bħal prodott koerenti u b'ditta ċara.
 
-## Id-Dominju tal-Pjattaforma Tiegħek
+## Id-Dominju tal-Pjattaforma Tiegħek {#your-platform-domain}
 
 Il-pedament tad-ditta tiegħek huwa d-dominju tiegħek. Għal FitSite:
 
@@ -19,7 +19,7 @@ Il-pedament tad-ditta tiegħek huwa d-dominju tiegħek. Għal FitSite:
 - **Siti tal-klijenti**: `studioname.fitsite.com` (subdomains)
 - **Dominji personalizzati**: Klijenti fuq pjanijiet Growth u Pro jistgħu jimmappjaw id-dominju tagħhom stess
 
-### Kif Tissettja d-Dominju Tiegħek
+### Kif Tissettja d-Dominju Tiegħek {#setting-up-your-domain}
 
 1. Irreġistra d-dominju tal-pjattaforma tiegħek
 2. Ippuntah lejn il-fornitur tal-hosting tiegħek
@@ -28,11 +28,11 @@ Il-pedament tad-ditta tiegħek huwa d-dominju tiegħek. Għal FitSite:
 
 Ara [Kif Tikkonfigura l-Immappjar tad-Dominji](/user-guide/domain-mapping/how-to-configure-domain-mapping) għal struzzjonijiet dettaljati.
 
-## White-Labeling tal-Esperjenza tal-Admin
+## White-Labeling tal-Esperjenza tal-Admin {#white-labeling-the-admin-experience}
 
 Meta sid ta' studio tal-fitness jidħol fid-Dashboard tas-sit tiegħu, għandu jara d-ditta tiegħek, mhux il-marka ta' WordPress jew Ultimate Multisite.
 
-### Paġna tal-Login Personalizzata
+### Paġna tal-Login Personalizzata {#custom-login-page}
 
 Ippersonalizza l-paġna tal-login ta' WordPress biex turi:
 
@@ -40,7 +40,7 @@ Ippersonalizza l-paġna tal-login ta' WordPress biex turi:
 - Immaġni fl-isfond addattata għall-fitness
 - Il-kuluri tad-ditta tiegħek
 
-### Immarkar tad-Ditta fid-Dashboard
+### Immarkar tad-Ditta fid-Dashboard {#dashboard-branding}
 
 Uża l-addon [Admin Page Creator](/addons/admin-page-creator) jew CSS personalizzat biex:
 
@@ -48,7 +48,7 @@ Uża l-addon [Admin Page Creator](/addons/admin-page-creator) jew CSS personaliz
 - Tippersonalizza l-iskema tal-kuluri tal-admin biex taqbel mad-ditta tiegħek
 - Iżżid widget personalizzat fid-Dashboard b'links ta' malajr u riżorsi ta' għajnuna speċifiċi għall-fitness
 
-### Paġni tal-Admin Personalizzati
+### Paġni tal-Admin Personalizzati {#custom-admin-pages}
 
 Ikkunsidra li toħloq paġni tal-admin personalizzati li juru l-azzjonijiet l-aktar rilevanti għas-sidien ta' studios tal-fitness:
 
@@ -58,11 +58,11 @@ Ikkunsidra li toħloq paġni tal-admin personalizzati li juru l-azzjonijiet l-ak
 
 Dan inaqqas il-kurva tat-tagħlim billi jqiegħed azzjonijiet rilevanti għan-niċċa fuq quddiem u fiċ-ċentru minflok jaħbihom fil-menu standard ta' WordPress.
 
-## Immarkar tad-Ditta fil-Komunikazzjonijiet Tiegħek
+## Immarkar tad-Ditta fil-Komunikazzjonijiet Tiegħek {#branding-your-communications}
 
 Kull email, fattura, u notifika għandha ssaħħaħ id-ditta tiegħek.
 
-### Emails tas-Sistema
+### Emails tas-Sistema {#system-emails}
 
 Mur għal **Ultimate Multisite > Settings > Emails** u ppersjonalizza l-emails tas-sistema kollha:
 
@@ -79,7 +79,7 @@ Emails ewlenin li għandek tippersonalizza:
 | Irċevuta tal-ħlas | "Ħlas riċevut" | "Ħlas tas-subscription ta' FitSite kkonfermat" |
 | Tmiem tal-prova | "Il-prova tiegħek se tintemm dalwaqt" | "Il-prova FitSite tiegħek tintemm fi 3 ijiem -- żomm il-websajt tal-istudio tiegħek live" |
 
-### Fatturi
+### Fatturi {#invoices}
 
 Ippersonalizza l-mudelli tal-fatturi bi:
 
@@ -87,7 +87,7 @@ Ippersonalizza l-mudelli tal-fatturi bi:
 - Id-dettalji tan-negozju tiegħek
 - Ismijiet ta' prodotti speċifiċi għall-fitness (mhux IDs ġeneriċi tal-pjanijiet)
 
-## Is-Sit li Jaraw il-Klijenti
+## Is-Sit li Jaraw il-Klijenti {#the-customer-facing-site}
 
 Id-dominju ewlieni tiegħek (`fitsite.com`) jeħtieġ sit tal-marketing li jbigħ il-pjattaforma. Dan huwa separat mill-admin tan-network ta' Ultimate Multisite -- huwa l-wiċċ pubbliku tan-negozju tiegħek.
 
@@ -103,7 +103,7 @@ Paġni ewlenin:
 Oħloq is-sit tal-marketing tiegħek bħala sit fi ħdan in-network tiegħek stess. Dan iħallik timmaniġġjah mill-istess Dashboard u juri l-kapaċitajiet tal-pjattaforma tiegħek stess.
 :::
 
-## Dominju Personalizzat għall-Klijenti
+## Dominju Personalizzat għall-Klijenti {#custom-domain-for-customers}
 
 Għal klijenti fuq pjanijiet li jinkludu dominji personalizzati, iddokumenta l-proċess b'mod ċar:
 
@@ -113,7 +113,7 @@ Għal klijenti fuq pjanijiet li jinkludu dominji personalizzati, iddokumenta l-p
 
 Oħloq artiklu ta' għajnuna jew entrata fil-bażi tal-għarfien speċifikament għal dan il-proċess, miktuba għal sidien ta' studios tal-fitness mhux tekniċi.
 
-## In-Network FitSite S'issa
+## In-Network FitSite S'issa {#the-fitsite-network-so-far}
 
 ```
 Network FitSite
@@ -132,7 +132,7 @@ Network FitSite
 └── Lest għall-fluss ta' onboarding (il-lezzjoni li jmiss)
 ```
 
-## X'Bnejna f'Din il-Lezzjoni
+## X'Bnejna f'Din il-Lezzjoni {#what-we-built-this-lesson}
 
 - **Dominju tal-pjattaforma u DNS** ikkonfigurati għal esperjenza b'ditta
 - **Admin bil-white-label** bil-marka FitSite tul kollu

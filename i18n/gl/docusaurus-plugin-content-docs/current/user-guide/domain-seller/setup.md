@@ -3,21 +3,21 @@ title: Configuración e Configuración do Proveitor
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vendedor de Domínios: Configuración e Configuración del Proveedor
+# Vendedor de Domínios: Configuración e Configuración del Proveedor {#domain-seller-setup-and-provider-configuration}
 
 El addon Domain Seller se entrega con un asistente de configuración guiado que te guía a través de cada paso necesario. Esta página cubre el flujo del asistente y cómo configurar o reconfigurar los proveedores después.
 
-## Requisitos
+## Requisitos {#requirements}
 
 - **Multisite Ultimate** v2.4.12 o superior, activado en red
 - **PHP** 7.4+
 - Credenciales de API para al menos un registrador compatible
 
-## Asistente de configuración inicial
+## Asistente de configuración inicial {#first-run-setup-wizard}
 
 El asistente se lanza automáticamente la primera vez que activas el plugin en tu red. También está disponible en cualquier momento desde **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Paso 1 — Elige un proveedor
+### Paso 1 — Elige un proveedor {#step-1--choose-a-provider}
 
 Selecciona el registrador con el que quieres conectar. Opciones compatibles:
 
@@ -33,7 +33,7 @@ Selecciona el registrador con el que quieres conectar. Opciones compatibles:
 | NameSilo | No | No |
 | Enom | Sí | No |
 
-### Paso 2 — Introduce las credenciales
+### Paso 2 — Introduce las credenciales {#step-2--enter-credentials}
 
 Cada proveedor tiene campos de credenciales diferentes:
 
@@ -57,17 +57,17 @@ Cada proveedor tiene campos de credenciales diferentes:
 
 Verifique o **modo Sandbox**, se disponível, para testar contra o ambiente de teste do fornecedor antes de ir ao ar.
 
-### Passo 3 — Testar a ligação
+### Passo 3 — Testar a ligação {#step-3--test-the-connection}
 
 Clique em **Test Connection**. O assistente envia uma chamada de API leve para verificar as credenciais e a conectividade. Corrija quaisquer problemas de credenciais antes de continuar.
 
-### Passo 4 — Importar TLDs
+### Passo 4 — Importar TLDs {#step-4--import-tlds}
 
 Clique em **Import TLDs** para puxar todos os TLDs disponíveis e os preços de atacado do fornecedor conectado. Isto preenche a lista de TLDs usada pelos produtos de domínio. A importação pode demorar entre 30 e 60 segundos para fornecedores com grandes catálogos de TLDs.
 
 Os TLDs são também resincronizados automaticamente uma vez por dia através de um *cron job* agendado.
 
-### Passo 5 — Criar um produto de domínio
+### Passo 5 — Criar um produto de domínio {#step-5--create-a-domain-product}
 
 O assistente cria um produto de domínio genérico (catch-all) com uma margem de lucro de 10%. Pode editar este produto imediatamente ou pode saltar e criar produtos manualmente em **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Veja [Domain Products and Pricing](./domain-products) para o guia completo de co
 
 ---
 
-## Reconfigurar um fornecedor
+## Reconfigurar um fornecedor {#reconfiguring-a-provider}
 
 Vá a **Network Admin › Ultimate Multisite › Settings › Domain Seller** (ou clique em **Settings** na lista de plugins).
 
@@ -88,17 +88,17 @@ A página de definições contém:
 - **Gestionar productos de dominio** — enlace rápido a la lista de Productos
 - **Configurar proveedores** — abre el Asistente de Integración para añadir o reconfigurar proveedores
 
-### Añadir un segundo proveedor
+### Añadir un segundo proveedor {#adding-a-second-provider}
 
 Haz clic en **Configure providers** y ejecuta el asistente de nuevo para el nuevo registrador. Podes tener varios proveedores configurados a la vez. Asigna cada producto de dominio a un proveedor específico, o déjalo en el predefinido.
 
-### Sincronizar TLDs manualmente
+### Sincronizar TLDs manualmente {#syncing-tlds-manually}
 
 Na página de configuración, haz clic en **Sync TLDs** ao lado de cualquier provedor configurado para puxar os últimos precios. Isto é útil después de que un provedor actualize os precios mayoristas ou adicione novos TLDs.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Cada provedor escribe no súa propia canal de logs. Os logs son visíveis en **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Cada provedor escribe no súa propia canal de logs. Os logs son visíveis en **N
 
 ---
 
-## Notas sobre as capacidades dos provedores
+## Notas sobre as capacidades dos provedores {#provider-capability-notes}
 
 Nem todas as APIs de registadores expõem as mesmas operações. O addon mostra as operações não suportadas com erros claros para o administrador, em vez de falhar silenciosamente.
 

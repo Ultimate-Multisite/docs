@@ -3,15 +3,15 @@ title: Hookide kasutusjuhend
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hookide kasutamise juhend
+# Hookide kasutamise juhend {#hooks-usage-guide}
 
 Ultimate Multisite pakub 200+ action hooki ja 280+ filter hooki. See leht käsitleb kõige sagedamini kasutatavaid hooke koos praktiliste näidetega. Täieliku automaatselt genereeritud viite jaoks sirvi teisi selle jaotise lehti.
 
-## Action hookid
+## Action hookid {#action-hooks}
 
-### Kliendi elutsükkel
+### Kliendi elutsükkel {#customer-lifecycle}
 
-#### Pärast kliendi loomist
+#### Pärast kliendi loomist {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Kliendi staatuse muutus
+#### Kliendi staatuse muutus {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Saidi hookid
+### Saidi hookid {#site-hooks}
 
-#### Pärast saidi avaldamist
+#### Pärast saidi avaldamist {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Enne malli rakendamist
+#### Enne malli rakendamist {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Liikmesuse hookid
+### Liikmesuse hookid {#membership-hooks}
 
-#### Staatuse üleminekud
+#### Staatuse üleminekud {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Makse hookid
+### Makse hookid {#payment-hooks}
 
-#### Makse lõpetatud / ebaõnnestunud
+#### Makse lõpetatud / ebaõnnestunud {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkouti hookid
+### Checkouti hookid {#checkout-hooks}
 
-#### Enne töötlemist / pärast lõpetamist
+#### Enne töötlemist / pärast lõpetamist {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domeeni hookid
+### Domeeni hookid {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter hookid
+## Filter hookid {#filter-hooks}
 
-### Hinnastuse filtrid
+### Hinnastuse filtrid {#pricing-filters}
 
-#### Ostukorvi kogusumma
+#### Ostukorvi kogusumma {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Maksumäärad
+#### Maksumäärad {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Malli filtrid
+### Malli filtrid {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Piirangute filtrid
+### Piirangute filtrid {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway filtrid
+### Gateway filtrid {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkouti vormi väljad
+### Checkouti vormi väljad {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### E-kirja sisu
+### E-kirja sisu {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

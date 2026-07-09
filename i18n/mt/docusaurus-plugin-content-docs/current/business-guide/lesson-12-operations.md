@@ -3,17 +3,17 @@ title: 'Lezzjoni 12: It-Tmexxija tan-Negozju'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lezzjoni 12: It-Tmexxija tan-Negozju
+# Lezzjoni 12: It-Tmexxija tan-Negozju {#lesson-12-running-the-business}
 
 Pjattaforma mhijiex proġett li tispiċċa -- hija negozju li tmexxi. Din il-lezzjoni tkopri l-operazzjonijiet ta' kuljum tal-ġestjoni ta' FitSite: appoġġ, fatturazzjoni, manutenzjoni, u kif iżżomm lill-klijenti kuntenti.
 
-## Fejn Ħallejna
+## Fejn Ħallejna {#where-we-left-off}
 
 FitSite huwa live u l-klijenti qed jirreġistraw. Issa trid tmexxi l-operazzjoni b'mod sostenibbli.
 
-## Operazzjonijiet ta' Kuljum
+## Operazzjonijiet ta' Kuljum {#daily-operations}
 
-### Monitoraġġ
+### Monitoraġġ {#monitoring}
 
 Iċċekkja dawn kuljum (jew waqqaf twissijiet):
 
@@ -22,7 +22,7 @@ Iċċekkja dawn kuljum (jew waqqaf twissijiet):
 - **Ħlasijiet li fallew**: Hemm fallimenti fil-ħlas li jeħtieġu attenzjoni?
 - **Talbiet ta' appoġġ**: Hemm mistoqsijiet tal-klijenti li għadhom mhux imwieġba?
 
-### Appoġġ lill-Klijenti
+### Appoġġ lill-Klijenti {#customer-support}
 
 Il-fokus tiegħek fuq niċċa huwa vantaġġ hawnhekk. Minħabba li l-klijenti kollha tiegħek huma studios tal-fitness, se tara l-istess mistoqsijiet ripetutament:
 
@@ -36,7 +36,7 @@ Il-fokus tiegħek fuq niċċa huwa vantaġġ hawnhekk. Minħabba li l-klijenti k
 
 Ibni l-bażi tal-għarfien tiegħek (mibdija fil-Lezzjoni 8) madwar dawn il-mistoqsijiet rikorrenti. Kull ticket ta' appoġġ li seta' kien artiklu fil-bażi tal-għarfien huwa sinjal biex tikteb dak l-artiklu.
 
-### Livelli ta' Appoġġ
+### Livelli ta' Appoġġ {#support-tiers}
 
 Hekk kif tikber, struttura l-appoġġ skont il-pjan:
 
@@ -48,9 +48,9 @@ Hekk kif tikber, struttura l-appoġġ skont il-pjan:
 
 Il-[Support Tickets addon](/addons/support-tickets) jista' jgħin fil-ġestjoni tat-talbiet ta' appoġġ fi ħdan il-pjattaforma.
 
-## Operazzjonijiet tal-Fatturazzjoni
+## Operazzjonijiet tal-Fatturazzjoni {#billing-operations}
 
-### Ħlasijiet Rikorrenti
+### Ħlasijiet Rikorrenti {#recurring-payments}
 
 Ultimate Multisite jimmaniġġja l-fatturazzjoni rikorrenti awtomatikament permezz tal-gateway tal-ħlas tiegħek. Xogħlok huwa li timmonitorja għal:
 
@@ -58,7 +58,7 @@ Ultimate Multisite jimmaniġġja l-fatturazzjoni rikorrenti awtomatikament perme
 - **Dunning**: Waqqaf loġika awtomatizzata ta' prova mill-ġdid permezz tal-gateway tal-ħlas tiegħek (Stripe jimmaniġġja dan tajjeb)
 - **Talbiet ta' kanċellazzjoni**: Ifhem għaliex il-klijenti jitilqu. Kull kanċellazzjoni hija feedback.
 
-### Ġestjoni tas-Sħubijiet
+### Ġestjoni tas-Sħubijiet {#managing-memberships}
 
 Mur għal **Ultimate Multisite > Sħubijiet** biex:
 
@@ -69,13 +69,13 @@ Mur għal **Ultimate Multisite > Sħubijiet** biex:
 
 Ara [Ġestjoni tas-Sħubijiet](/user-guide/administration/managing-memberships) għar-referenza sħiħa.
 
-### Fatturazzjoni
+### Fatturazzjoni {#invoicing}
 
 Kun żgur li l-fatturi jiġu ġġenerati b'mod korrett għal kull ħlas. Il-klijenti jistgħu jkollhom bżonn fatturi għar-rappurtar tal-ispejjeż tan-negozju. Ara [Ġestjoni tal-Ħlasijiet u l-Fatturi](/user-guide/administration/managing-payments-and-invoices).
 
-## Manutenzjoni tal-Pjattaforma
+## Manutenzjoni tal-Pjattaforma {#platform-maintenance}
 
-### Aġġornamenti ta' WordPress u tal-Plugins
+### Aġġornamenti ta' WordPress u tal-Plugins {#wordpress-and-plugin-updates}
 
 Bħala l-amministratur tan-network, inti responsabbli għal:
 
@@ -88,14 +88,14 @@ Bħala l-amministratur tan-network, inti responsabbli għal:
 Aġġornament miksur jaffettwa kull sit ta' klijent fuq in-network tiegħek. Dejjem ittestja l-aġġornamenti fuq kopja ta' staging tan-network tiegħek l-ewwel.
 :::
 
-### Sigurtà
+### Sigurtà {#security}
 
 - Żomm is-software kollu aġġornat
 - Uża passwords b'saħħithom u awtentikazzjoni b'żewġ fatturi għall-accounts tal-admin
 - Immonitorja għal attività suspettuża
 - Ikollok pjan għal inċidenti tas-sigurtà
 
-### Prestazzjoni
+### Prestazzjoni {#performance}
 
 Hekk kif in-network tiegħek jikber, immonitorja:
 
@@ -105,9 +105,9 @@ Hekk kif in-network tiegħek jikber, immonitorja:
 
 Ikkunsidra li timplimenta caching (page cache, object cache) u CDN jekk għadek m'għamiltx dan. L-[integrazzjoni ta' Cloudflare](/user-guide/host-integrations/cloudflare) timmaniġġja ħafna minn dan.
 
-## Ġestjoni taċ-Ċiklu tal-Ħajja tal-Klijenti
+## Ġestjoni taċ-Ċiklu tal-Ħajja tal-Klijenti {#customer-lifecycle-management}
 
-### Tnaqqis tal-Churn
+### Tnaqqis tal-Churn {#reducing-churn}
 
 Churn huwa l-perċentwal ta' klijenti li jikkanċellaw kull xahar. Għal negozju ta' sottoskrizzjoni, it-tnaqqis tal-churn huwa importanti daqs l-akkwist ta' klijenti ġodda.
 
@@ -119,7 +119,7 @@ Churn huwa l-perċentwal ta' klijenti li jikkanċellaw kull xahar. Għal negozju
 - Sabu alternattiva orħos → saħħaħ il-valur tan-niċċa tiegħek
 - In-negozju tagħhom għalaq → inevitabbli, iżda segwi dan separatament
 
-### Tħeġġiġ għal Upgrades
+### Tħeġġiġ għal Upgrades {#encouraging-upgrades}
 
 Klijenti fuq Starter li qed jirnexxu għandhom jiġu mħeġġa jagħmlu upgrade:
 
@@ -127,7 +127,7 @@ Klijenti fuq Starter li qed jirnexxu għandhom jiġu mħeġġa jagħmlu upgrade:
 - Ibgħat emails immirati li jenfasizzaw il-karatteristiċi tal-pjan Growth li jibbenefikaw minnhom
 - Uri x'bnew klijenti ta' Growth/Pro
 
-### Kampanji ta' Win-Back
+### Kampanji ta' Win-Back {#win-back-campaigns}
 
 Meta klijent jikkanċella:
 
@@ -135,30 +135,30 @@ Meta klijent jikkanċella:
 2. Indirizza t-tħassib tiegħu jekk possibbli
 3. Offri skont biex jirritorna (30-60 jum wara l-kanċellazzjoni)
 
-## Rutini ta' Kull Ġimgħa u Kull Xahar
+## Rutini ta' Kull Ġimgħa u Kull Xahar {#weekly-and-monthly-routines}
 
-### Kull Ġimgħa
+### Kull Ġimgħa {#weekly}
 
 - Irrevedi reġistrazzjonijiet ġodda u kanċellazzjonijiet
 - Wieġeb għat-tickets kollha ta' appoġġ miftuħa
 - Iċċekkja l-prestazzjoni u l-uptime tal-pjattaforma
 - Irrevedi kwalunkwe ħlas li falla
 
-### Kull Xahar
+### Kull Xahar {#monthly}
 
 - Analizza metriċi ewlenin (MRR, churn, klijenti ġodda, upgrades)
 - Applika aġġornamenti ta' WordPress u tal-plugins (wara test ta' staging)
 - Irrevedi u aġġorna l-bażi tal-għarfien abbażi ta' mudelli ta' appoġġ
 - Ibgħat newsletter jew aġġornament lill-klijenti (karatteristiċi ġodda, pariri, aħbarijiet tal-industrija tal-fitness)
 
-### Kull Tliet Xhur
+### Kull Tliet Xhur {#quarterly}
 
 - Irrevedi l-prezzijiet kontra l-kompetituri u l-feedback tal-klijenti
 - Evalwa d-disinji tat-templates -- għandhom bżonn tiġdid?
 - Ivvaluta l-kapaċità tal-hosting -- għandek bżonn tiskala?
 - Irrevedi u tejjeb l-onboarding abbażi tad-data tal-attivazzjoni
 
-## X'Bnejna f'Din il-Lezzjoni
+## X'Bnejna f'Din il-Lezzjoni {#what-we-built-this-lesson}
 
 - **Rutini ta' monitoraġġ ta' kuljum** għal uptime, reġistrazzjonijiet, pagamenti, u appoġġ
 - **Struttura ta' appoġġ f'livelli** imqabbla mal-livelli tal-pjan

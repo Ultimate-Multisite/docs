@@ -3,13 +3,13 @@ title: Iwulite Njikọta Onye Ndebanye Aha Ahaziri Iche
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ịrụ Njikọ Registrar Ahaziri
+# Ịrụ Njikọ Registrar Ahaziri {#building-a-custom-registrar-integration}
 
 Addon Domain Seller na-eji ụkpụrụ **Integration Registry**. Registrar ọ bụla bụ klas PHP nke na-emejuputa `Domain_Selling_Capability` ma na-edebanye onwe ya site na action hook `wu_domain_seller_register_capabilities`.
 
 Nduzi a na-egosi otu esi ejikọ registrar ahaziri.
 
-## Interface ahụ
+## Interface ahụ {#the-interface}
 
 Klas gị ga-emejuputa `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ma gbasaa `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Ụzọ nhọrọ
+### Ụzọ nhọrọ {#optional-methods}
 
 Meejuputa ndị a iji meghee atụmatụ ndị ọzọ. Addon na-achọpụta nkwado site na `method_exists()`:
 
@@ -81,7 +81,7 @@ Meejuputa ndị a iji meghee atụmatụ ndị ọzọ. Addon na-achọpụta nk
 | `get_epp_code(string $domain_name): array` | Mbufe domain (na-apụ apụ) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Mbufe domain (na-abata) |
 
-### Usoro uru a na-alaghachi
+### Usoro uru a na-alaghachi {#return-value-convention}
 
 Ụzọ niile na-alaghachi array nwere opekata mpe igodo `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Idebanye capability gị
+## Idebanye capability gị {#registering-your-capability}
 
 Debanye klas gị site n’iji action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argument mbụ nye `add_capability()` bụ **ID onye na-eweta ọrụ** — slug
 
 ---
 
-## Ịgbakwunye ubi credential na wizard
+## Ịgbakwunye ubi credential na wizard {#adding-credential-fields-to-the-wizard}
 
 Iji kwe ka admin tinye credentials site na setup wizard, debanye njikọ gị:
 
@@ -137,7 +137,7 @@ A na-echekwa credentials dịka network options site n’iji ID ubi dị ka igod
 
 ---
 
-## Hooks maka omume mgbe ndebanye gasịrị
+## Hooks maka omume mgbe ndebanye gasịrị {#hooks-for-post-registration-actions}
 
 Jiri actions ndị a kpalite webhooks, provisioning, notifications, ma ọ bụ mmelite CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Ndekọ
+## Ndekọ {#logging}
 
 Dee na ọwa ndekọ nke onye na-eweta gị kpọmkwem site na iji `wu_log_add()`:
 

@@ -3,7 +3,7 @@ title: 客戶網站
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# 你客戶的網站 (v2)
+# 你客戶的網站 (v2) {#your-clients-websites-v2}
 
 在你的網路上註冊後，你的客戶可以存取他們的 Dashboard。
 

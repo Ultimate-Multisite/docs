@@ -4,11 +4,11 @@ title: Filtar - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Vraća lijepi naziv administrativnih podjela zemlje.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Vraća lijepi naziv administrativnih podjela zemlje.
 | $ucwords | `bool` | ako riječi pišemo velikim početnim slovima. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instanca trenutne klase. |
 
-### Od
+### Od {#since}
 
 - 2.0.11
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) u retku 250
 
 
-## Vraća
+## Vraća {#returns}
 Izmijenjeni naziv podjele.

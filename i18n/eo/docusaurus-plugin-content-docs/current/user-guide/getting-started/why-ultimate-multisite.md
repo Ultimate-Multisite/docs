@@ -3,11 +3,11 @@ title: Kion Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kion Why Ultimate Multisite
+# Kion Why Ultimate Multisite {#why-ultimate-multisite}
 
 Se vi atingis ti artikolon, probable aŭdis ke nia plugin povas esti la solvo por fari vian biznesideon reala. Ni esperas ke vi havis la respondo necesan al la fin de ĉi tiu teksto.
 
-## Kio estas Ultimate Multisite?
+## Kio estas Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite estas WordPress Multisite plugin, kiu permesas al vi oferi klientoj WaaS (Websiton kiel Servon). Con nia plugino, vi povas havi diversajn subskribiĝaj nivelojn kaj klientoj pagui al vi periodan talon por havi siton alojitan en via Multisite rinetvoro.
 
@@ -15,7 +15,7 @@ Ultimate Multisite permesas al vi ricevi vian pagamentojn per diversajn gateway'
 
 E tio estas nur komenco, ĉar vi povas elasti ĝiajn funkciojn per add-ons kaj webhooks.
 
-## Aliaj funkcioj
+## Aliaj funkcioj {#other-features}
 
 Ultimate Multisite ankaŭ oferas:
 
@@ -33,11 +33,11 @@ Kaj pli avanzaj bagayoj:
 
 * Search and Replace API: Vi ankaŭ povas annoti la sita templatojn kun plivortoj kiel {{site_name}} kaj uzi la Search and Replace API por aŭtomate plenigi tiuj plivortojn per informojn, kiuj estas providita de via klientaro post registriĝo.
 
-## K-vaziĝoj (Use cases)
+## K-vaziĝoj (Use cases) {#use-cases}
 
 Nuntempaj tempi vidi kelkajn posibilajn k-vaziĝojn por Ultimate Multisite.
 
-### Caso 1: Agencija
+### Caso 1: Agencija {#case-1-an-agency}
 
 Normalaj kernaj abiloj de agencio ofte bazas sur la dezajno de sitioj kun aspektoj kiel ilia hospedado aŭ marketado listita kiel pli da servoj.
 
@@ -47,7 +47,7 @@ Tisma kontrol sur pluginoj kaj temoj estas konservita per produkto bazita per la
 
 Agencies acquéront la pacez kon Ultimate Multisite permetant yo fè sa ki pi byen - konsepsi sit web eksepsionel.
 
-### Ka 2: Provizè Niche (Spesialist)
+### Ka 2: Provizè Niche (Spesialist) {#case-2-niche-provider}
 
 Gen yon vye deyò ki di, "Fè youn bagay epi fè li byen". Pou anpil espesyalis, sa vle di kreye yon pwodwi oswa sèvis ki baze sou yon sèl ide nòmal.
 
@@ -57,7 +57,7 @@ Youn nan fonksyon inovatè Ultimate Multisite a, yon site modèl se yon kote tè
 
 Pou yon pwovizè sit ak sèvis niche, sa bay avantaj san parèy nan kapasite pou ou kreye yon sit ki pare pou itilize imedyatman ak plugin ak konsepsyon espesyalize. Kliyan an sèlman bezwen bay repons minimize pou konplèt sèvis la.
 
-### Ka 3: Wèb Hosting WordPress
+### Ka 3: Wèb Hosting WordPress {#case-3-wordpress-web-hosting}
 
 Gen anpil fason pou wèb hosting sit WordPress, men li pa janm si senp tankou ofri espas wèb pou yon kliyan ak yon vèsyon WordPress ki deja enstale. Sa paske plizyè desizyon ak konsiderasyon bezwen kòme pou bay yon sèvis ki gen sans.
 

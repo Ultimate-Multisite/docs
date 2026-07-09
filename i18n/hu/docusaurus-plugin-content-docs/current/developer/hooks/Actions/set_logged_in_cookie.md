@@ -4,11 +4,11 @@ title: Akció - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 A bejelentkezett hitelesítő sütit (cookie) megadása közvetlenül előtti.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típusa | Leírás |
 |------|------|-------------|
@@ -19,10 +19,10 @@ A bejelentkezett hitelesítő sütit (cookie) megadása közvetlenül előtti.
 | $scheme | `string` | Hitelesítő rendszer. Alapértelmezett: 'logged_in'. |
 | $token | `string` | A felhasználó munkamenet-tokenje, amelyet e sütithez kell használni. |
 
-### Amikor elérhető
+### Amikor elérhető {#since}
 
 - 2.6.0
 - 4.9.0: A <code>$token</code> paramétert adták hozzá.
-### Forrás
+### Forrás {#source}
 
 Meghatározva a [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) fájlban, 141-sorban.

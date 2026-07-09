@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 WordPress doplnok, ktorý pridáva opravy kompatibility pre Tutor LMS v prostrediach multisite.
 
-## Popis
+## Popis {#description}
 
 Tento doplnok poskytuje nevyhnutné opravy kompatibility na spúšťanie Tutor LMS v sieťach WordPress multisite. Rieši zápis používateľov, správu inštruktorov, obmedzenia kurzov a ďalšiu funkcionalitu špecifickú pre multisite.
 
-## Funkcie
+## Funkcie {#features}
 
 - **Správa databázových tabuliek**: Automaticky zisťuje a vytvára chýbajúce tabuľky Tutor LMS, ktorých vytvorenie zlyhá pre obmedzenia cudzích kľúčov v multisite
 - **Zápis používateľov v multisite**: Vlastné AJAX handlery na správu zápisu používateľov naprieč lokalitami siete
@@ -24,7 +24,7 @@ Tento doplnok poskytuje nevyhnutné opravy kompatibility na spúšťanie Tutor L
 - **Vlastné zobrazenia administrácie**: Zoznam inštruktorov a rozhranie na správu s podporou multisite
 - **Nástroje administrácie**: Rozhranie na správu databázy pre administrátorov siete a lokality
 
-## Požiadavky
+## Požiadavky {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Tento doplnok poskytuje nevyhnutné opravy kompatibility na spúšťanie Tutor L
 - Inštalácia WordPress Multisite
 - Ultimate Multisite doplnok (pre funkcionalitu obmedzení kurzov)
 
-## Inštalácia
+## Inštalácia {#installation}
 
 1. Nahrajte súbory doplnku do `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Uistite sa, že Tutor LMS je nainštalovaný a aktivovaný
 3. Aktivujte doplnok cez menu „Doplnky“ vo WordPress
 4. Doplnok sa automaticky integruje s Tutor LMS
 
-## Štruktúra súborov
+## Štruktúra súborov {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funkcionalita presunutá z MU plugin
+## Funkcionalita presunutá z MU plugin {#functionality-moved-from-mu-plugin}
 
 Tento doplnok obsahuje funkcionalitu, ktorá bola predtým v `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Tento doplnok obsahuje funkcionalitu, ktorá bola predtým v `wp-content/mu-plug
 - Spracovanie zápisu používateľov v multisite
 - Zobrazenie ID produktu kurzu
 
-## Správa databázy
+## Správa databázy {#database-management}
 
-### Problém
+### Problém {#the-problem}
 
 V prostrediach WordPress multisite zlyháva vytváranie tabuliek Tutor LMS pre tabuľky s obmedzeniami cudzích kľúčov na tabuľku používateľov. Deje sa to preto, že:
 
@@ -81,7 +81,7 @@ V prostrediach WordPress multisite zlyháva vytváranie tabuliek Tutor LMS pre t
 - Cudzie kľúče odkazujú na `wp_2_users` (ktorá neexistuje)
 - Skutočná tabuľka používateľov je `wp_users` (zdieľaná naprieč sieťou)
 
-### Riešenie
+### Riešenie {#the-solution}
 
 Tento doplnok automaticky:
 
@@ -92,13 +92,13 @@ Tento doplnok automaticky:
    - Vytvorenie novej lokality v sieti
    - Manuálna kontrola tabuliek cez administračné rozhranie
 
-### Ovplyvnené tabuľky
+### Ovplyvnené tabuľky {#affected-tables}
 
 - `tutor_coupon_usages` - Obsahuje cudzí kľúč na tabuľku používateľov
 - `tutor_carts` - Obsahuje cudzí kľúč na tabuľku používateľov
 - `tutor_notification_preferences` - Tabuľka TutorPro s cudzím kľúčom na tabuľku používateľov
 
-### Administračné rozhranie
+### Administračné rozhranie {#admin-interface}
 
 K nástrojom na správu databázy získate prístup na:
 
@@ -111,6 +111,6 @@ Rozhranie vám umožňuje:
 - Skontrolovať konfiguráciu databázy
 - Zobraziť podrobné informácie o stave
 
-## Podpora
+## Podpora {#support}
 
 Tento doplnok je špeciálne navrhnutý pre platformu KursoPro. Pre technickú podporu kontaktujte vývojový tím.

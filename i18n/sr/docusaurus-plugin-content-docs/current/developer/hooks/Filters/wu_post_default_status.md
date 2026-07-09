@@ -4,11 +4,11 @@ title: Филтер - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Филтер: wu_post_default_status
+# Филтер: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Филтрира податке објекта пре него што се сачувају у базу података.
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 | $post_type | `string` | Тип објаве. |
 | $this | `\Base_Model` | Инстанца објекта. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.0.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) у реду 320

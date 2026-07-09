@@ -4,13 +4,13 @@ title: Sía - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Sía: get_blogs_of_user
+# Sía: get_blogs_of_user {#filter-getblogsofuser}
 
 Endurtekur upprunalegu WP-síuna hér, til öryggis.
 
 Síar listann yfir vefi sem notandi tilheyrir.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Heiti | Tegund | Lýsing |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Síar listann yfir vefi sem notandi tilheyrir.
 | $user_id | `int` | Notandaauðkenni. |
 | $all | `bool` | Hvort skilaða vefjafylkið ætti að innihalda alla vefi, þar á meðal þá sem eru merktir 'deleted', 'archived' eða 'spam'. Sjálfgefið false. |
 
-### Frá útgáfu
+### Frá útgáfu {#since}
 
 - 2.0.11
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851) í línu 851

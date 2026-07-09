@@ -3,9 +3,9 @@ title: Multi-Network የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# የባለብዙ ኔትወርክ የለውጥ መዝገብ
+# የባለብዙ ኔትወርክ የለውጥ መዝገብ {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * አዲስ፡ የኔትወርክ ቴምፕሌት ቅድመ እይታ ሰሪ — ከመግዛትዎ በፊት በलाइቭ ፓነል የኔትወርክ ቴምፕሌቶችን ይቃኙ እና ይመልከቱ።
 * አዲስ፡ በቼክአውት ላይ የኔትወርክ ቴምፕሌት መምረጥ — ደንበኞች በሰይነፕ (signup) ቼክአውት ሂደት ውስጥ የኔትወርክ ቴምፕሌት መምረጥ ይችላሉ።
 * አዲስ፡ በኔትወርኮች መካከል ያለው magic link SSO — ደንበኞች በmagic-link authentication አማካኝነት በኔትወርኮች ንዑስ ክፍሎች (sub-networks) ያለችግር መዳረስ ይችላሉ።
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * ማስተካከያ፡ በsite query scope ውስጥ ባልተገለጸ `network_id` ቁልፍ ላይ የሚከሰተውን ስህተት ይከላከላል።
 * ማስተካከያ፡ ከcontext switching በፊት የኔትወርክ ፈቃድ ፍተሻ `wpdb` የጠረጴዛ (table) ንብረት ስህተቶችን ይከላከላል።
 
-### 1.0.4
+### 1.0.4 {#104}
 * ማስተካከያ፡ አዲስ ኔትወርክ መፍጠር።
 * ማስተካከያ፡ ሜኑዎችን ማሳየት (Rendering Menus)።
 
-### 1.0.3
+### 1.0.3 {#103}
 * ወደ Plugin Update Checker v5 ተሻሽሏል
 * ዘመናዊ የWordPress plugin headers ተጨመረዋል
 * ከቅርብ ጊዜ የWordPress ስሪቶች ጋር የተሻሻለ ተኳሃኝነት
 
-### 1.0.2
+### 1.0.2 {#102}
 * የባグ ማስተካከያዎች እና የአፈጻጸም መሻሻሎች
 * የተሻሻለ የኔትወርክ መገለል (network isolation)
 
-### 1.0.0
+### 1.0.0 {#100}
 * የመጀመሪያ ስሪት
 * ዋና የባለብዙ ኔትወርክ ተግባር (Core multinetwork functionality)
 * ከMultisite Ultimate ጋር ውህደት (Integration)

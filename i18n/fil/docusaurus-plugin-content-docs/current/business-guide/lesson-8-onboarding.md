@@ -3,15 +3,15 @@ title: 'Lesson 8: Pag-onboard ng Kustomer'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lesson 8: Pag-onboard sa Customer
+# Lesson 8: Pag-onboard sa Customer {#lesson-8-customer-onboarding}
 
 Ang pagpaparehistro ng isang customer ay kalahati pa lang ng trabaho. Kung mag-log in sila, makaramdam ng pagkalito, at hindi na bumalik, nawalan na sila. Dinisenyo ng araling ito ang karanasan na magpapalit sa isang bagong pag-sign up tungo sa isang aktibo at engaged na customer.
 
-## Saan Tayo Tumigil
+## Saan Tayo Tumigil {#where-we-left-off}
 
 Ang FitSite ay ganap nang may branding at may gumaganang checkout flow. Ngayon, tututukan natin kung ano ang mangyayari pagkatapos mag-sign up ang isang may-ari ng fitness studio at unang makapasok sa kanilang bagong site.
 
-## Bakit Mahalaga ang Onboarding
+## Bakit Mahalaga ang Onboarding {#why-onboarding-matters}
 
 Ang unang 30 minuto pagkatapos mag-sign up ang magdedetermina kung mananatili ang customer o aalis (churns). Ang isang may-ari ng fitness studio na:
 
@@ -21,9 +21,9 @@ Ang unang 30 minuto pagkatapos mag-sign up ang magdedetermina kung mananatili an
 
 Ang mga niche template mo (Lesson 4) ang bahala sa unang punto. Ang araling ito naman ang bahala sa pangalawa.
 
-## Ang Karanasan sa Unang Pag-log In
+## Ang Karanasan sa Unang Pag-log In {#the-first-login-experience}
 
-### Welcome Dashboard Widget
+### Welcome Dashboard Widget {#welcome-dashboard-widget}
 
 Gumawa ng custom dashboard widget na magbati sa mga bagong customer at gagabay sa kanila sa setup. Dapat itong makita nang malaki kapag unang nag-log in sila.
 
@@ -37,7 +37,7 @@ Gumawa ng custom dashboard widget na magbati sa mga bagong customer at gagabay s
 
 Ang bawat hakbang ay direktang nagli-link sa nauugnay na page o setting. Walang paghahanap-hanap sa mga menu.
 
-### Pagpapasimple ng Dashboard
+### Pagpapasimple ng Dashboard {#simplify-the-dashboard}
 
 Hindi kailangang makita ng mga bagong customer ang bawat menu item ng WordPress. Isaalang-alang ang:
 
@@ -47,29 +47,29 @@ Hindi kailangang makita ng mga bagong customer ang bawat menu item ng WordPress.
 
 Ang [Plugin & Theme Manager](/addons/plugin-and-theme-manager) addon ay makakatulong sa pagkontrol kung ano ang nakikita ng mga customer.
 
-## Welcome Email Sequence
+## Welcome Email Sequence {#welcome-email-sequence}
 
 Hindi sapat ang isang welcome email lang. Mag-set up ng sequence na gagabay sa mga customer sa kanilang unang linggo:
 
-### Email 1: Welcome (Agad pagkatapos mag-sign up)
+### Email 1: Welcome (Agad pagkatapos mag-sign up) {#email-1-welcome-immediately-after-signup}
 
 - Subject: "Welcome to FitSite -- live na ang website ng studio mo"
 - Content: Login link, quick start steps, link sa help resources
 - Tone: Masigla, naghihikayat, at specific sa fitness
 
-### Email 2: Quick Wins (Araw 1)
+### Email 2: Quick Wins (Araw 1) {#email-2-quick-wins-day-1}
 
 - Subject: "3 bagay na dapat gawin muna sa FitSite mo"
 - Content: Idagdag ang logo mo, i-update ang hero image sa homepage, idagdag ang class schedule mo
 - Maglagay ng screenshots na nagpapakita kung saan eksaktong magki-click
 
-### Email 3: Gawin Mong Sarili Mo (Araw 3)
+### Email 3: Gawin Mong Sarili Mo (Araw 3) {#email-3-make-it-yours-day-3}
 
 - Subject: "Paano maging kakaiba ang fitness site mo"
 - Content: I-customize ang colors, magdagdag ng photos ng trainer, magsulat ng kwento ng studio mo
 - Mag-link sa mga halimbawa ng magagandang fitness sites sa platform
 
-### Email 4: Go Live (Araw 7)
+### Email 4: Go Live (Araw 7) {#email-4-go-live-day-7}
 
 - Subject: "Handa ka na bang ibahagi ang FitSite mo sa mundo?"
 - Content: Checklist ng mga kailangang i-verify bago ibahagi, paano ikonekta ang custom domain (kung nasa Growth/Pro), tips sa social sharing
@@ -78,11 +78,11 @@ Hindi sapat ang isang welcome email lang. Mag-set up ng sequence na gagabay sa m
 Gamitin ang [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/integrations/zapier) para mag-trigger ng mga email na ito sa pamamagitan ng iyong email marketing platform. Nagbibigay ito sa iyo ng mas maraming kontrol sa timing at nagpapahintulot sa iyo na ma-track ang engagement.
 :::
 
-## Help Resources
+## Help Resources {#help-resources}
 
 Gumawa ng niche-specific help content na sumasagot sa mga tanong na aktwal na tinatanong ng mga may-ari ng fitness studio:
 
-### Knowledge Base Articles
+### Knowledge Base Articles {#knowledge-base-articles}
 
 - "Paano i-update ang class schedule mo"
 - "Pagdaragdag at pag-e-edit ng trainer profiles"
@@ -92,7 +92,7 @@ Gumawa ng niche-specific help content na sumasagot sa mga tanong na aktwal na ti
 
 Isulat ang mga ito para sa mga user na hindi teknikal. Gumamit ng screenshots. Iwasan ang WordPress jargon.
 
-### Video Walkthroughs
+### Video Walkthroughs {#video-walkthroughs}
 
 Maikling (2-3 minuto) screen recordings na nagpapakita ng:
 
@@ -103,7 +103,7 @@ Maikling (2-3 minuto) screen recordings na nagpapakita ng:
 
 Hindi kailangang maging perpekto ang mga ito. Ang malinaw, kapaki-pakinabang, at niche-specific ang mahalaga.
 
-## Ang Account Page
+## Ang Account Page {#the-account-page}
 
 Kasama ng Ultimate Multisite ang isang customer-facing [Account Page](/user-guide/client-management/account-page) kung saan pinamamahalaan ng mga customer ang kanilang subscription. I-customize ito para:
 
@@ -112,7 +112,7 @@ Kasama ng Ultimate Multisite ang isang customer-facing [Account Page](/user-guid
 - Magbigay ng billing history at invoice downloads
 - Mag-link sa help resources
 
-## Pagsukat sa Tagumpay ng Onboarding
+## Pagsukat sa Tagumpay ng Onboarding {#measuring-onboarding-success}
 
 Subaybayan ang mga indicator na ito para malaman kung gumagana ang iyong onboarding:
 
@@ -121,7 +121,7 @@ Subaybayan ang mga indicator na ito para malaman kung gumagana ang iyong onboard
 - **Support tickets from new customers**: Ang mataas na volume ay nangangahulugang may mga puwang (gaps) sa iyong onboarding
 - **Trial-to-paid conversion**: Kung nag-aalok ka ng trials, anong porsyento ang nagko-convert?
 
-## Ang FitSite Network Hanggang Ngayon
+## Ang FitSite Network Hanggang Ngayon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Ano ang Binuo Natin sa Araling Ito
+## Ano ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Isang guided first-login experience** na may Quick Start widget
 - **Isang simplified dashboard** na nakatuon sa mga gawain sa pamamahala ng fitness site

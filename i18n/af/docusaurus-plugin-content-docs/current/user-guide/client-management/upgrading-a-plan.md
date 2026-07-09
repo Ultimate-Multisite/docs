@@ -3,7 +3,7 @@ title: Opgradeer 'n Plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Opgradeer 'n Plan (v2)
+# Opgradeer 'n Plan (v2) {#upgrading-a-plan-v2}
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
@@ -41,7 +41,7 @@ Nadat die afrekening voltooi is, sal die nuwe produk(te) by jou kliënte se reke
 
 ##
 
-## Opgradeer- en Afgradeerpaaie
+## Opgradeer- en Afgradeerpaaie {#upgrade-and-downgrade-paths}
 
 Op elkeen van jou produkte sal jy 'n **Op & Afgradeer**-tab hê. Die eerste opsie op daardie tab is 'n veld genaamd **Plan Groep**.
 

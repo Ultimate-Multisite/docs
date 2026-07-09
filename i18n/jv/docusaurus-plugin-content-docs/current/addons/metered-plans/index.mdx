@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Metered Plans
+# Metered Plans {#metered-plans}
 
 Addon Ultimate Multisite: Metered Plans ngowahi cara sampeyan nagih pelanggan kanthi ngenalake kabisan tagihan miturut panggunaan sing fleksibel. Tinimbang wates atos sing kaku sing ngalangi panganggo nalika ngluwihi, aktifake biaya kaluwihan sing otomatis nagih pelanggan kanggo panggunaan tambahan.
 
-## Fitur Utama
+## Fitur Utama {#key-features}
 
 * **Tagihan Miturut Panggunaan**: Nagih pelanggan adhedhasar panggunaan nyata tinimbang undhak-undhakan tetep
 * **Pangaturan Kaluwihan**: Otomatis nagih kanggo panggunaan sing ngluwihi wates rencana
@@ -21,14 +21,14 @@ Addon Ultimate Multisite: Metered Plans ngowahi cara sampeyan nagih pelanggan ka
 * **Pembuatan Invoice Otomatis**: Nggawe invoice kanthi otomatis nalika ambang panggunaan diluwihi
 * **Laporan Panggunaan**: Analitik lan laporan panggunaan rinci kanggo pelanggan lan administrator
 
-## Cocog Kanggo
+## Cocog Kanggo {#perfect-for}
 
 * **Panyedhiya Hosting**: Nawakake rencana sing bisa diskalakake lan tuwuh bareng kabutuhan pelanggan
 * **Platform SaaS**: Nagih adhedhasar konsumsi sumber daya nyata
 * **Jaringan Agensi**: Model rega fleksibel kanggo proyek klien
 * **Hosting Reseller**: Ngidini mitra nawakake rega adhedhasar panggunaan
 
-## Cara Kerjane
+## Cara Kerjane {#how-it-works}
 
 1. Konfigurasi sumber daya sing diukur (ruang disk, bandwidth, jumlah situs, lsp.)
 2. Setel wates rencana dhasar lan tarif kaluwihan
@@ -37,13 +37,13 @@ Addon Ultimate Multisite: Metered Plans ngowahi cara sampeyan nagih pelanggan ka
 5. Invoice digawe kanthi otomatis adhedhasar siklus tagihan
 6. Pelanggan bisa ndeleng panggunaan lan biaya sing bakal teka kanthi wektu nyata
 
-## Tagihan Token AI
+## Tagihan Token AI {#ai-token-billing}
 
 Versi 1.1.0 nambahake tagihan token AI kanggo jaringan sing nawakake fitur AI liwat WordPress AI Client SDK. Metered Plans ngrungokake panjaluk generasi AI sing wis rampung, nyathet jumlah token input lan output kanggo sub-situs saiki, lan ngowahi token kasebut dadi belanja AI sing bisa ditagih kanggo periode tagihan saiki pelanggan.
 
 Gunakake tagihan token AI nalika sampeyan pengin nawakake piranti AI ing situs pelanggan tanpa nanggung biaya model sing ora bisa diprakirakake. Saben panjaluk digandhengake karo sub-situs, pelanggan, keanggotaan, panyedhiya, lan model supaya administrator bisa ngaudit panggunaan nalika pelanggan bisa ndeleng kepiye konsumsi AI mengaruhi Account-e.
 
-### Konfigurasi Tarif Saben Token
+### Konfigurasi Tarif Saben Token {#configure-per-token-rates}
 
 Tarif AI dikonfigurasi saben model minangka tarif input lan output sing kapisah. Tarif diitung saben 1 yuta token, sing cocog karo kaca rega panyedhiya AI umum.
 
@@ -55,7 +55,7 @@ Tarif AI dikonfigurasi saben model minangka tarif input lan output sing kapisah.
 
 Nalika ID model sing pas ora dikonfigurasi, Metered Plans bisa cocog miturut prefiks model. Contone, tarif sing dikonfigurasi kanggo `claude-sonnet-4` bisa ditrapake menyang ID model nganggo cap wektu sing diwiwiti nganggo prefiks kasebut. Pangembang uga bisa nyetel tabel tarif final nganggo filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Konektor AI Sing Didhukung
+### Konektor AI Sing Didhukung {#supported-ai-connectors}
 
 Tagihan token AI bisa digunakake karo konektor sing ngetokake acara generasi WordPress AI Client SDK lan nyakup panggunaan token ing metadata tanggapan. Iki kalebu kulawarga konektor AI Ultimate Multisite sing didokumentasikake ing kene:
 
@@ -65,13 +65,13 @@ Tagihan token AI bisa digunakake karo konektor sing ngetokake acara generasi Wor
 
 Konektor kustom bisa melu kanthi micu acara standar `wp_ai_client_before_generate_result` lan `wp_ai_client_after_generate_result` nganggo metadata panggunaan model, panyedhiya, lan token. Setelan konektor ditindakake saka situs utama menyang sub-situs supaya situs pelanggan nggunakake panyedhiya lan wates sing disetujoni jaringan.
 
-### Panggunaan Account Pelanggan
+### Panggunaan Account Pelanggan {#customer-account-usage}
 
 Pelanggan ndeleng panggunaan AI bebarengan karo sumber daya sing diukur liyane ing area account-e. Larik belanja AI nuduhake total periode tagihan saiki sing dijupuk saka token prompt lan completion sing kacathet, tarif model sing dikonfigurasi, lan jatah apa wae sing kalebu ing rencana.
 
 Yen pelanggan duwe cara pembayaran ing file, panggunaan ing ndhuwur jatah sing kalebu dianggep minangka kaluwihan sing bisa ditagih. Yen rencana dikonfigurasi kanggo pedhotan atos lan pelanggan ora duwe cara pembayaran sing kasedhiya, panjaluk AI bisa diblokir sawise jatah tekan lan pelanggan dijaluk nambah rincian pembayaran sadurunge nerusake.
 
-## Sumber Daya Sing Didhukung
+## Sumber Daya Sing Didhukung {#supported-resources}
 
 * Panyimpenan disk
 * Bandwidth/transfer data
@@ -80,13 +80,13 @@ Yen pelanggan duwe cara pembayaran ing file, panggunaan ing ndhuwur jatah sing k
 * Panggunaan token AI lan belanja AI
 * Jinis sumber daya kustom
 
-## Syarat
+## Syarat {#requirements}
 
 * Multisite Ultimate 2.0.0 utawa luwih dhuwur
 * Instalasi WordPress Multisite
 * PHP 7.4 utawa luwih dhuwur
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah berkas piranti tambahan menyang `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Aktifake piranti tambahan liwat layar 'Plugins' ing WordPress
@@ -94,24 +94,24 @@ Yen pelanggan duwe cara pembayaran ing file, panggunaan ing ndhuwur jatah sing k
 4. Konfigurasi sumber daya sing diukur lan rega sampeyan
 5. Aktifake tagihan miturut panggunaan kanggo produk ing editor produk
 
-## Pitakonan Sing Kerep Ditakokake
+## Pitakonan Sing Kerep Ditakokake {#frequently-asked-questions}
 
-## Apa sing kedadeyan nalika pelanggan ngluwihi watese?
+## Apa sing kedadeyan nalika pelanggan ngluwihi watese? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Tinimbang mblokir akses, sistem nglacak keluwihan panggunaan lan nambahaké menyang tagihan sabanjuré adhedhasar tarif sing wis sampeyan atur.
 
-## Apa aku bisa nyetel tarif keluwihan sing béda kanggo produk sing béda?
+## Apa aku bisa nyetel tarif keluwihan sing béda kanggo produk sing béda? {#can-i-set-different-overage-rates-for-different-products}
 
 Ya, saben produk bisa nduwèni sumber daya terukur lan rega keluwihan panggunaan sing unik.
 
-## Kepiye pelanggan diwènèhi kabar babagan panggunaan?
+## Kepiye pelanggan diwènèhi kabar babagan panggunaan? {#how-are-customers-notified-about-usage}
 
 Pelanggan bisa ndeleng panggunaan saiki ing Dashboard lan nampa kabar opsional nalika nyedhaki utawa ngluwihi watesan.
 
-## Kepiye panggunaan token AI diregani?
+## Kepiye panggunaan token AI diregani? {#how-is-ai-token-usage-priced}
 
 Panggunaan token AI diregani saka tarif input lan output model sing wis dikonfigurasi saben 1 yuta token. Rencana terukur ngalikan jumlah token prompt lan completion saben panjaluk nganggo tarif kasebut, nambahaké asilé menyang blanja AI periode tagihan saiki pelanggan, lan ngetrapaké jatah rencana utawa aturan keluwihan panggunaan.
 
-## Apa aku isih bisa nggunakake watesan ketat?
+## Apa aku isih bisa nggunakake watesan ketat? {#can-i-still-use-hard-limits}
 
 Ya, tagihan terukur iku opsional kanggo saben produk. Sampeyan bisa nyampur produk watesan ketat tradisional karo produk terukur.

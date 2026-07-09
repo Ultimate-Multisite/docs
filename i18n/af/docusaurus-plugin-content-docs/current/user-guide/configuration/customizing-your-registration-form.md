@@ -3,13 +3,13 @@ title: Pas jou registrasievorm aan
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pas jou registrasievorm aan
+# Pas jou registrasievorm aan {#customizing-your-registration-form}
 
 Om jou netwerk uniek te laat lyk teenoor al die ander SaaS wat op die WordPress-platform gebou is, laat Ultimate Multisite jou toe om jou registrasie- en aanmeldbladsye met ons **Afrekenvorms**-funksie aan te pas.
 
 Alhoewel dit ’n maklike en buigsame manier is om met verskillende benaderings te eksperimenteer wanneer jy nuwe kliënte probeer omskakel, word dit meestal gebruik om gepersonaliseerde registrasievorms te skep. Hierdie artikel is daarop gemik om jou te wys hoe jy dit kan doen.
 
-## Aanmeld- en registrasiebladsye:
+## Aanmeld- en registrasiebladsye: {#login-and-registration-pages}
 
 Met Ultimate Multisite-installasie skep dit outomaties pasgemaakte aanmeld- en registrasiebladsye op jou hoofwebwerf. Jy kan hierdie verstekbladsye enige tyd verander deur na jou **Ultimate Multisite > Instellings > Aanmelding & Registrasie**-bladsy te gaan.
 
@@ -45,7 +45,7 @@ Kom ons kyk nou na ander opsies wat steeds relevant is vir die aanmeld- en regis
 
 En dit is al die opsies wat met aanmelding en registrasie verband hou wat jy kan aanpas! Moenie vergeet om jou instellings te stoor nadat jy klaar is met die redigering daarvan nie.
 
-## Gebruik veelvuldige registrasievorms:
+## Gebruik veelvuldige registrasievorms: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 bied ’n afrekenvorm-redigeerder wat jou toelaat om soveel vorms te skep as wat jy wil, met verskillende velde, produkte wat aangebied word, ens.
 
@@ -69,7 +69,7 @@ Alternatiewelik kan jy die vorms wat jy reeds het redigeer of dupliseer deur op 
 
 As jy enkelstap of multi-stap kies, sal die afrekenvorm reeds vooraf ingevul wees met die basiese stappe sodat dit kan werk. Dan, as jy wil, kan jy ekstra stappe daarby voeg.
 
-### Redigeer ’n afrekenvorm:
+### Redigeer ’n afrekenvorm: {#editing-a-checkout-form}
 
 Soos ons vroeër genoem het, kan jy afrekenvorms vir verskillende doeleindes skep. In hierdie voorbeeld sal ons aan ’n registrasievorm werk.
 
@@ -131,11 +131,11 @@ Om jou vorm se kortkode te kry, klik op **Genereer kortkode** en kopieer die res
 
 _**Nota:** Jy sal hierdie kortkode by jou registrasiebladsy moet voeg sodat hierdie afrekenvorm daarby gevoeg word._
 
-## Produkte en sjablone vooraf kies via URL-parameters:
+## Produkte en sjablone vooraf kies via URL-parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
 As jy pasgemaakte prysstabelle vir jou produkte wil skep en op die afrekenvorm die produk of sjabloon wat jou kliënt van jou prysstabel of sjablonebladsy kies vooraf wil kies, kan jy URL-parameters hiervoor gebruik.
 
-### **Vir planne:**
+### **Vir planne:** {#for-plans}
 
 Gaan na **Ultimate Multisite > Produkte > Kies ’n plan**. Jy behoort die **Klik om deelbare skakel te kopieer**-knoppie boaan die bladsy te sien. Dit is die skakel wat jy kan gebruik om hierdie spesifieke plan op jou afrekenvorm vooraf te kies.
 
@@ -143,7 +143,7 @@ Gaan na **Ultimate Multisite > Produkte > Kies ’n plan**. Jy behoort die **Kli
 
 Let daarop dat hierdie deelbare skakel slegs geldig is vir **Planne**. Jy kan nie deelbare skakels vir pakkette of dienste gebruik nie.
 
-### Vir sjablone:
+### Vir sjablone: {#for-templates}
 
 As jy webwerfsjablone op jou afrekenvorm vooraf wil kies, kan jy die parameter gebruik: **?template_id=X** op jou registrasiebladsy-URL. Die "X" moet vervang word deur die **webwerfsjabloon-ID-nommer**. Om hierdie nommer te kry, gaan na **Ultimate Multisite > Webwerwe**.
 

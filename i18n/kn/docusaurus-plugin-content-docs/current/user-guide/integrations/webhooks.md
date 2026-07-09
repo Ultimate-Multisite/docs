@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) ಕುರಿತು ಮೊದಲ ನೋಟ
+# Webhooks (v2) ಕುರಿತು ಮೊದಲ ನೋಟ {#a-first-look-on-webhooks-v2}
 
 _**ಗಮನಿಸಿ: ಈ ವೈಶಿಷ್ಟ್ಯ ಅಥವಾ ಲೇಖನವು ಮುಂದುವರಿದ ಬಳಕೆದಾರರಿಗಾಗಿ ಎಂಬುದನ್ನು ಗಮನಿಸಿ.**_
 
@@ -11,7 +11,7 @@ _**ಗಮನಿಸಿ: ಈ ವೈಶಿಷ್ಟ್ಯ ಅಥವಾ ಲೇಖನ
 
 Ultimate Multisite ನಿಂದ ಇನ್ನೊಂದು CRM ಅಥವಾ system ಗೆ ನಿರ್ದಿಷ್ಟ ಡೇಟಾವನ್ನು ಸಂಯೋಜಿಸಬೇಕಾದರೆ ಅಥವಾ ಕಳುಹಿಸಬೇಕಾದರೆ, ಪ್ರತಿ ಬಾರಿ event trigger ಆದಾಗ ಇದು ಸಹಾಯಕ. ಉದಾಹರಣೆಗೆ, ಹೊಸ ಬಳಕೆದಾರ Account ಸೃಷ್ಟಿಯಾದ ಪ್ರತಿ ಬಾರಿ ಬಳಕೆದಾರರ ಹೆಸರು ಮತ್ತು email address ಅನ್ನು mailing list ಗೆ ಕಳುಹಿಸಬೇಕು.
 
-## webhook ಅನ್ನು ಹೇಗೆ ರಚಿಸುವುದು
+## webhook ಅನ್ನು ಹೇಗೆ ರಚಿಸುವುದು {#how-to-create-a-webhook}
 
 webhook ರಚಿಸಲು, ನಿಮ್ಮ network admin dashboard ಗೆ ಹೋಗಿ. **Ultimate Multisite > Webhooks > Add New Webhook** ಮೇಲೆ click ಮಾಡಿ.
 

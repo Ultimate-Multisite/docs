@@ -3,13 +3,13 @@ title: Tworzenie pierwszego produktu subskrypcyjnego
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Tworzenie pierwszego produktu subskrypcyjnego (v2)
+# Tworzenie pierwszego produktu subskrypcyjnego (v2) {#creating-your-first-subscription-product-v2}
 
 _**WAŻNA UWAGA: Ten artykuł jest przeznaczony wyłącznie dla użytkowników Ultimate Multisite w wersji 2.x. Jeśli używasz wersji 1.x,**_ **_**zobacz ten artykuł**_**.
 
 Aby zacząć prowadzić swoją sieć i sprzedawać swoje usługi potencjalnym użytkownikom, musisz mieć różne opcje subskrypcji. Jak tworzy się te produkty? Jakie typy produktów możesz oferować? W tym artykule omówimy wszystko, co musisz wiedzieć o produktach.
 
-## Typ produktu
+## Typ produktu {#product-type}
 
 Z Ultimate Multisite możesz oferować swoim klientom dwie kategorie produktów: **plany** i **dodatki** **(Order Bump)**. Dodatki można podzielić na dwa typy: **pakiety** i **usługi**. Następnie omówimy ich różnice i szczególne cechy.
 
@@ -19,7 +19,7 @@ Z Ultimate Multisite możesz oferować swoim klientom dwie kategorie produktów:
 
   * **Usługi:** dodatki, które nie zmieniają funkcjonalności Ultimate Multisite. Są to zadania, które wykonasz dla swojego klienta oprócz kupionego przez niego planu. Na przykład Twój klient może kupić plan pozwalający na jedną witrynę i dodatkowo zapłacić za dodatkową usługę, w ramach której zostanie wykonany projekt tej witryny.
 
-## Zarządzanie produktami
+## Zarządzanie produktami {#managing-products}
 
 Dla wielu karta **Products** w Ultimate Multisite **(Ultimate Multisite > Products)** może być utożsamiana z planami w tradycyjnym środowisku hostingowym.
 
@@ -29,7 +29,7 @@ Ta sekcja pomoże Ci zrozumieć ten kluczowy fundament Ultimate Multisite.
 
 ![Strona listy produktów](/img/config/products-list.png)
 
-## Dodawanie produktów
+## Dodawanie produktów {#adding-products}
 
 Niezależnie od tego, czy chodzi o plan, pakiet czy usługę, punktem wejścia do zdefiniowania nowej pozycji jest **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Interfejs zawiera dwie główne sekcje. Po lewej znajduje się kilka kart, któr
 
 ![Przegląd strony edycji produktu](/img/config/product-edit-full.png)
 
-### Opis
+### Opis {#description}
 
 Podstawowe informacje o produkcie można zdefiniować, podając nazwę i opis produktu. Te identyfikatory są wyświetlane wszędzie tam, gdzie wymagane są informacje o produkcie, na przykład przy wyborze planu i cen, na fakturach, przy ulepszeniach i tym podobnych.
 
 ![Sekcja opisu produktu](/img/config/product-description.png)
 
-### Typ wyceny
+### Typ wyceny {#pricing-type}
 
 Po prawej stronie interfejsu można zdefiniować cenę bazową.
 
@@ -53,7 +53,7 @@ Po prawej stronie interfejsu można zdefiniować cenę bazową.
 
 Ultimate Multisite obsługuje trzy różne typy wyceny. Opcja **płatny** prosi administratora sieci o informacje dotyczące ceny produktu i częstotliwości rozliczeń.
 
-### Wycena
+### Wycena {#pricing}
 
 Komponent ceny definiuje bazową cenę produktu oraz interwał rozliczeniowy.
 
@@ -61,7 +61,7 @@ Komponent ceny definiuje bazową cenę produktu oraz interwał rozliczeniowy.
 
 tak więc przykładowa cena 29,99 USD z ustawieniem 1 miesiąca spowoduje naliczanie 29,99 USD każdego miesiąca. Podobnie cena 89,97 USD z ustawieniem 3 miesięcy spowoduje naliczanie tej kwoty co kwartał.
 
-### Cykle rozliczeniowe
+### Cykle rozliczeniowe {#billing-cycles}
 
 Sekcja cykli rozliczeniowych określa częstotliwość wspomnianego wcześniej interwału rozliczeniowego i jest ogólnie rozumiana w kontekście umów lub stałych okresów.
 
@@ -69,7 +69,7 @@ Sekcja cykli rozliczeniowych określa częstotliwość wspomnianego wcześniej i
 
 Na przykład cena produktu 29,99 USD z interwałem 1 miesiąca i 12 cyklami rozliczeniowymi oznaczałaby naliczanie 29,99 USD miesięcznie za produkt przez kolejne 12 miesięcy. Innymi słowy, takie ustawienie ustanowiłoby stały okres z ceną 29,99 USD miesięcznie przez 12 miesięcy, a następnie zakończyłoby naliczanie opłat.
 
-### Okres próbny
+### Okres próbny {#trial-period}
 
 Włączenie przełącznika oferty próbnej pozwala administratorowi sieci zdefiniować okres próbny dla produktu.
 
@@ -77,7 +77,7 @@ Włączenie przełącznika oferty próbnej pozwala administratorowi sieci zdefin
 
 W okresie próbnym klienci mogą bezpłatnie korzystać z produktu i nie zostaną obciążeni opłatą, dopóki okres próbny się nie zakończy.
 
-### Opłata konfiguracyjna
+### Opłata konfiguracyjna {#setup-fee}
 
 Możesz także zastosować opłatę konfiguracyjną do swojego planu.
 
@@ -85,7 +85,7 @@ Możesz także zastosować opłatę konfiguracyjną do swojego planu.
 
 Oznacza to, że Twój klient zapłaci dodatkową kwotę przy pierwszym obciążeniu (oprócz ceny planu), odpowiadającą opłacie zdefiniowanej w tej sekcji.
 
-### Aktywny
+### Aktywny {#active}
 
 Przełącznik aktywności skutecznie określa, czy produkt jest dostępny dla klientów przy nowych rejestracjach.
 
@@ -93,13 +93,13 @@ Przełącznik aktywności skutecznie określa, czy produkt jest dostępny dla kl
 
 Jeśli na tym planie są już istniejący klienci, ustawienie przełącznika w stanie wyłączonym skutecznie zachowuje plan dla dotychczasowych klientów, usuwając go z przyszłych rejestracji. **Istniejący klienci korzystający z planu nadal będą rozliczani**, dopóki nie zostaną przeniesieni na nowy plan lub usunięci z planu.
 
-### Obraz produktu
+### Obraz produktu {#product-image}
 
 Przycisk **Upload Image** pozwala administratorowi sieci skorzystać z biblioteki mediów, aby wybrać lub przesłać obraz produktu.
 
 ![Sekcja obrazu produktu](/img/config/product-image.png)
 
-### Usuń
+### Usuń {#delete}
 
 Przycisk **Delete Product** usuwa produkt z systemu. Pojawia się po opublikowaniu produktu.
 
@@ -107,11 +107,11 @@ Przycisk **Delete Product** usuwa produkt z systemu. Pojawia się po opublikowan
 
 W przeciwieństwie do innych usunięć produkt nie trafia do żadnego kosza. Dlatego po usunięciu ta czynność jest nieodwracalna.
 
-### Opcje produktu
+### Opcje produktu {#product-options}
 
 Po zdefiniowaniu podstawowych informacji o produkcie opcje produktu pomagają administratorowi sieci dalej określić konkretne atrybuty produktu.
 
-#### Ogólne
+#### Ogólne {#general}
 
 Karta **Ogólne** definiuje ogólne atrybuty produktu, które nie mają zastosowania do żadnych innych kart specyficznych dla produktu.
 
@@ -125,7 +125,7 @@ Ultimate Multisite obsługuje kilka typów produktów, mianowicie Plan, Pakiet i
 
 ![Ustawienia roli klienta](/img/config/product-customer-role-settings.png)
 
-#### Ulepszenia i obniżenia
+#### Ulepszenia i obniżenia {#up--downgrades}
 
 Ta karta określa ścieżki ulepszeń i obniżeń dostępne dla klienta w ramach jego konkretnego poziomu.
 
@@ -143,7 +143,7 @@ Aby zdefiniować grupę planów, określ zgodne plany na liście **grupa planów
 
 Ultimate Multisite zawiera również funkcję **order bump**, dzięki której odpowiednie dodatkowe produkty i usługi mogą być dodawane do planów. Są one oferowane klientowi jako dodatkowe pozycje, które można dodać do planów podczas checkout lub w trakcie ulepszenia.
 
-#### Warianty cenowe
+#### Warianty cenowe {#price-variations}
 
 Warianty cenowe pozwalają administratorowi sieci określić alternatywne poziomy cenowe w zależności od czasu trwania. To ustawienie umożliwia oferowanie tego samego produktu w miesięcznym, kwartalnym, rocznym lub dowolnym innym okresie rozliczeniowym. Na przykład możesz skonfigurować produkt za $29.99/miesiąc z obniżoną opcją roczną za $249.99/rok.
 
@@ -165,7 +165,7 @@ Na przykład, jeśli bazowa cena produktu wynosi $29.99 miesięcznie, możesz do
 Same warianty cenowe nie dodają przełącznika ani przełącznika typu switch do frontend checkout. Aby umożliwić klientom przełączanie się między okresami rozliczeniowymi (np. miesięczny / roczny), musisz dodać pole **Wybór okresu** do formularza checkout. Zobacz [Formularze checkout: dodawanie przełącznika wyboru okresu](checkout-forms#adding-a-period-selection-toggle), aby uzyskać instrukcje krok po kroku.
 :::
 
-#### Podatki
+#### Podatki {#taxes}
 
 Karta **Podatki** jest zgodna z ustawieniami podatków określonymi w **Ultimate Multisite > Ustawienia > Podatki**, a dokładniej ze zdefiniowanymi stawkami podatkowymi. Aby włączyć podatki i zdefiniować obowiązujące stawki podatkowe, zapoznaj się z dokumentacją w **Ultimate Multisite: Ustawienia**
 
@@ -179,7 +179,7 @@ Po zdefiniowaniu stawki podatku w **Ultimate Multisite > Ustawienia > Zarządzaj
 
 Aby wskazać, że produkt jest pozycją podlegającą opodatkowaniu, ustaw przełącznik **Podlega opodatkowaniu** jako aktywny i wybierz odpowiednią stawkę podatku z listy rozwijanej Kategoria podatkowa.
 
-#### Szablony witryn
+#### Szablony witryn {#site-templates}
 
 Zasadniczo szablony witryn to kompletne witryny WordPress, które są klonowane do witryny klienta na początku jego subskrypcji.
 
@@ -201,7 +201,7 @@ Na koniec **W** **ybierz dostępne szablony site** zastępuje szablony określon
 
 Ostatecznie, jeśli administrator sieci chce, aby wybór szablonu odbywał się w krokach checkout, wystarczy ustawienie „ _default_ ”. Alternatywnie, aby usunąć i zablokować wybór szablonu oraz delegować wybór do ustawień planu, pożądane mogą być opcje „ _assign new template_ ” lub „ _choose available site templates_ ”.
 
-#### Witryny
+#### Witryny {#sites}
 
 Karta **Sites** jest częścią funkcjonalności ograniczeń Ultimate Multisite.
 
@@ -211,7 +211,7 @@ To ustawienie określa maksymalną liczbę witryn, które klient może utworzyć
 
 Aby włączyć ograniczenie, ustaw przełącznik **limit sites** w stan aktywny i określ maksymalną liczbę witryn w polu **site allowance**.
 
-#### Wizyty
+#### Wizyty {#visits}
 
 Karta **Visits** jest kolejną częścią systemu ograniczeń Ultimate Multisite. To ustawienie pozwala na zliczanie i późniejsze ograniczanie unikalnych odwiedzających witrynę klienta.
 
@@ -223,7 +223,7 @@ Aby skorzystać z tej funkcji, ustaw przełącznik **limit unique visits** w sta
 
 Po osiągnięciu tego limitu Ultimate Multisite przestanie obsługiwać witrynę klienta, zamiast wyświetlać komunikat wskazujący, że limity zostały przekroczone.
 
-#### Użytkownicy
+#### Użytkownicy {#users}
 
 Ograniczenia „Users” w Ultimate Multisite pozwalają administratorowi sieci nakładać limity na liczbę użytkowników, których można utworzyć i przypisać do ról.
 
@@ -233,7 +233,7 @@ Aby włączyć funkcję ograniczeń, ustaw przełącznik **limit user** w stan a
 
 Następnie dla każdej roli, która ma zostać ograniczona, ustaw przełącznik obok niej w stan aktywny i zdefiniuj maksymalny górny limit w odpowiednim polu.
 
-#### Typy wpisów
+#### Typy wpisów {#post-types}
 
 Karta **Post Types** pozwala administratorowi sieci nakładać szczegółowe limity na rozbudowany zestaw typów wpisów w WordPress.
 
@@ -245,7 +245,7 @@ Aby włączyć ten podsystem limitów, ustaw przełącznik **limit post types** 
 
 Następnie dla każdego typu wpisu, który ma zostać ograniczony, włącz go, przesuwając przełącznik w prawo i określając maksymalny górny limit w odpowiednim polu.
 
-#### Miejsce na dysku
+#### Miejsce na dysku {#disk-space}
 
 Karta **Disk Space** pozwala administratorom sieci ograniczać przestrzeń zajmowaną przez klientów.
 
@@ -257,13 +257,13 @@ Aby włączyć ograniczenie użycia dysku, ustaw przełącznik **limit disk size
 
 Następnie określ maksymalny górny limit w megabajtach w polu **disk space allowanc** e.
 
-#### Domena niestandardowa
+#### Domena niestandardowa {#custom-domain}
 
 Przełączając tę opcję, możesz zezwolić na domeny niestandardowe konkretnie w tym planie.
 
 ![Karta Custom Domains](/img/config/product-custom-domains.png)
 
-#### Motywy
+#### Motywy {#themes}
 
 Karta **Themes** w opcjach produktu pozwala administratorowi sieci udostępniać motywy klientom do wyboru oraz opcjonalnie wymuszać stan motywu.
 
@@ -281,7 +281,7 @@ Wybór **behavior** pozwala administratorowi sieci zdefiniować stan motywu po u
 
 W stanie **D** **ostępny** motyw zostaje udostępniony klientowi do samodzielnej aktywacji. Z kolei stan **Niedostępny** odbiera klientowi możliwość aktywowania motywu. Na koniec opcja **Wymuś aktywację** wymusza wybór i aktywację motywu, ustawiając go tym samym jako domyślny po utworzeniu witryny.
 
-#### Wtyczki
+#### Wtyczki {#plugins}
 
 Podobnie jak w karcie Motywy, Ultimate Multisite pozwala administratorowi sieci definiować widoczność wtyczek dla klientów, a także ich stan po utworzeniu nowej witryny.
 
@@ -301,7 +301,7 @@ Ustawienie **Force Activate & Lock** działa podobnie, ale uniemożliwia kliento
 
 Administrator sieci może rozważyć ustawienia Force Activate & Lock oraz Force Inactivate & Lock w połączeniu z szablonami witryn, ponieważ te ustawienia, jeśli zostaną wybrane, mogą wpływać na pluginy i stany pluginów w szablonach.
 
-#### Resetowanie ograniczeń
+#### Resetowanie ograniczeń {#reset-limitations}
 
 Zakładka **Reset Limitations** resetuje wszystkie niestandardowe limity zdefiniowane dla produktu. Aby zresetować ograniczenia, kliknij przycisk **reset limitations**.
 
@@ -311,7 +311,7 @@ Aby potwierdzić działanie, przesuń przełącznik **confirm reset** do stanu a
 
 ![Zakładka resetowania ograniczeń](/img/config/product-reset-limitations.png)
 
-## Edytuj, duplikuj lub usuń produkt
+## Edytuj, duplikuj lub usuń produkt {#edit-duplicate-or-delete-product}
 
 Istniejące produkty można edytować, duplikować lub usuwać, przechodząc do **Ultimate Multisite > Products** i najeżdżając kursorem na nazwę istniejącego produktu.
 

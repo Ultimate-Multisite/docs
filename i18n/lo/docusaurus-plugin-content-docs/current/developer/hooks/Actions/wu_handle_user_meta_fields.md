@@ -4,11 +4,11 @@ title: ການກະທຳ - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# ການກະທຳ: wu_handle_user_meta_fields
+# ການກະທຳ: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ບັນທຶກຂໍ້ມູນ meta ຂອງຜູ້ໃຊ້ໃນວິທີຕ່າງໆ ຖ້າພວກເຂົາຕ້ອງການ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 | $customer | `\Customer` | ອອບເຈັກລູກຄ້າ Ultimate Multisite. |
 | $checkout | `\Checkout` | ຄລາສ checkout. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.4
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) ທີ່ແຖວ 1244

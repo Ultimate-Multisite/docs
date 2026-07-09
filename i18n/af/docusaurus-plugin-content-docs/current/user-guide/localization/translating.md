@@ -3,11 +3,11 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Vertaling van Ultimate Multisite
+# Vertaling van Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite is in Engels ontwikkel, maar die plugin is volledig vertaalbaar en ons wen aktief vertalingsbydraes.
 
-## Kern-plugin Vertalings
+## Kern-plugin Vertalings {#core-plugin-translations}
 
 Die kern Ultimate Multisite plugin word vertaal deur die amptelike **WordPress.org vertalingsplatform**:
 
@@ -24,7 +24,7 @@ Dit is die standaard WordPress gemeenskapsvertalingsstelsel. Wanneer vertalings 
 
 As jy 'n vertalingsredakteur vir jou taal wil word (wat vertalings kan goedkeur), kontak ons via [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Add-on Vertalings
+## Add-on Vertalings {#addon-translations}
 
 Add-on plugins word apart vertaal by:
 
@@ -32,11 +32,11 @@ Add-on plugins word apart vertaal by:
 
 Die add-on vertalings is tans AI-gegenereer as 'n beginpunt. Hulle dek al die ondersteunde tale, maar kan ongemaklike formulering of onakkuraathede bevat. Ons wen menslike vertalers welkom om dit te hersien en verbeterings voor te stel om dit meer natuurlik en akkuraat te maak.
 
-## Lokale Vertalings
+## Lokale Vertalings {#local-translations}
 
 As jy verkies om vertalings plaaslik vir jou eie projek te skep in plaas daarvan om stroomopwaarts by te dra, is daar twee opsies:
 
-### Gebruik Poedit
+### Gebruik Poedit {#using-poedit}
 
 Jy kan die desktop-toepassing **[Poedit](https://poedit.net)** gebruik om die `.pot`-lêer te vertaal:
 
@@ -46,6 +46,6 @@ Jy kan die desktop-toepassing **[Poedit](https://poedit.net)** gebruik om die `.
 4. Stoor weg -- Poedit genereer `.po` en `.mo`-lêers
 5. Plaas die uitvoerlêers in die `lang`-maatskappy
 
-### Gebruik Loco Translate
+### Gebruik Loco Translate {#using-loco-translate}
 
 Die **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin laat jou toe om direk vanaf die admin-paneel te vertaal sonder enige desktop-gereedskap. Dit hanteer die skep en saamstel van vertalingslêers vir jou.

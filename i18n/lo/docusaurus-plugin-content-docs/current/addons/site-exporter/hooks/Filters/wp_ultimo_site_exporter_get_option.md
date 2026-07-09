@@ -4,11 +4,11 @@ title: ຕົວກອງ - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# ຕົວກອງ: wp_ultimo_site_exporter_get_option
+# ຕົວກອງ: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 ສົ່ງຄືນຄ່າຕົວເລືອກເຄືອຂ່າຍທີ່ຖືກແປງເປັນ slug.
 
-## ພາລາມິເຕີ
+## ພາລາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | ຊື່ຕົວເລືອກ. |
 | $default | `mixed` | ຄ່າເລີ່ມຕົ້ນ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 1.9.6
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) ທີ່ບັນທັດ 126
 
 
-## ສົ່ງຄືນ
+## ສົ່ງຄືນ {#returns}
 ຄ່າຕົວເລືອກເຄືອຂ່າຍທີ່ຖືກແປງເປັນ slug.

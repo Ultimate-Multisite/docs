@@ -3,11 +3,11 @@ title: Võimendliku migratsiooni töövoori
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Suvereenne migratsioonivõtme töövoori
+# Suvereenne migratsioonivõtme töövoori {#sovereign-migration-workflow}
 
 Ultimate Multisite versioon 1.2.0 lisab migratsiooni kinnituse portale, kui siit standard subsite'i viemine suvereense tenant-infrastruktuuri sisse.
 
-## Enne alustamist
+## Enne alustamist {#before-you-start}
 
 Vakenda, et teil on:
 
@@ -17,7 +17,7 @@ Vakenda, et teil on:
 - Database host binding, mis vastab sihteseadme keskkonnale.
 - Kättesaadavus WP-CLI käskude käivitamiseks võrku jaoks.
 
-## soovitatav töövoori
+## soovitatav töövoori {#recommended-workflow}
 
 1. Valmistage sihtebändi database ja failijuur.
 2. Registreerige või uuendage tenant isolatsiooniseadistusi.
@@ -28,7 +28,7 @@ Vakenda, et teil on:
 7. Kanda sihteseade SSO-ga külastesse.
 8. Muuda DNS või routing ainult siis, kui kinnitus on läinud läbi.
 
-## Kinnituse portaalid
+## Kinnituse portaalid {#verification-gates}
 
 Kinnituse töövoori kontrollib migratsiooni mitmelest nägukorral:
 
@@ -40,6 +40,6 @@ Kinnituse töövoori kontrollib migratsiooni mitmelest nägukorral:
 
 Kinnituse ebaõnnestused tuleb panna ette käivitamise eest. Parandage raportitud database-, kasutaja-, juurde või routingi probleem, ja käivitage kinnitus uuesti enne, kui avate sihteseade klientidele.
 
-## Esimene tootmise külastamine
+## Esimene tootmise külastamine {#first-production-visit}
 
 Kinnituse läbivaatamise pärast kasutage **Visit (SSO)** saitija haldamise ekraanist esimest administraatori külastamiseks. See kinnitab tenant routingut, SSO tokeni käsitsemist, origini kinnitamist ja sihteseade poolide kasutajate valmistamist kontrollitud sammuga.

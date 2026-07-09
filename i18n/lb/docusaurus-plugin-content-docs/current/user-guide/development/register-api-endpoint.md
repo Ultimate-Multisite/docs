@@ -3,7 +3,7 @@ title: API-Endpunkt registriere
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# De API-Endpunkt vo de Ultimate Multisite Registrierig
+# De API-Endpunkt vo de Ultimate Multisite Registrierig {#the-ultimate-multisite-register-api-endpoint}
 
 In dë Tutorial lerne Dir, wéi Dir d'Ultimate Multisite /register API-Endpunkt bruche kënnt, um de ganz Onboarding-Prozess fir en neie Kunde i Ier Netz z'schaffe, und wéi Dir dat mit Zapier chunt.
 
@@ -29,11 +29,11 @@ Wahl de **Enable API** und bechumm Ier API-Credentials.
 
 Zou mir jetz de Endpunkt erkunden an d'Registration Action i Zapier.
 
-## Endpoint Body Parameter
+## Endpoint Body Parameter {#endpoint-body-parameters}
 
 Léissen mir en Ueberblick über d'minimale Informatiounen, déi mir an de Endpunkt schicke mues. Am End vun dësem Artikel fänd Dir de ganz Uruuf.
 
-### Customer
+### Customer {#customer}
 
 Dës sinn déi Informatiounen, déi notwendig sinn fir de Prozess vum User ze créeieren a de Ultimate Multisite Customer:
 
@@ -43,25 +43,25 @@ Es möglich, d'Kunde-ID z'Ihrer Netzwerch z'sende. Falls sie nöd übermittelt w
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Mitgliedschaft**
+### **Mitgliedschaft** {#membership}
 
 D'einzigi Information, wo mir i dem Objekt bruche mues, isch de Mitgliedschaftszustand.
 
 "membership" { "status" : "string", // e vo "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produkte**
+### **Produkte** {#products}
 
 Produkte überchömme en Array mit 1 oder meh Produkt-ID us Ihrem Netzwerk. Achtung, die Endpunkt erstellt kei Produkte. Lueg d'Dokumentation vo Ultimate Multisite für e besseri Verstandnis vom Produkt-Erstelligs-Endpunkt.
 
 **"products" : [1,2],**
 
-### Zahlig
+### Zahlig {#payment}
 
 Wie bi de Mitgliedschaft bruche mir nur de Status.
 
 **"payment" { "status" : "string", // e vo "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Und zum s'Endi z'schlüsse bruche mir d'URL und de Titel vo de Site, beidi i dem Site-Objekt.
 
@@ -69,13 +69,13 @@ Und zum s'Endi z'schlüsse bruche mir d'URL und de Titel vo de Site, beidi i dem
 
 D'Rückgab vom register Endpunkt wird en Array mit de neu erstellte Mitgliedschaftsinformatione si.
 
-## E Aktion in Zapier erstelle
+## E Aktion in Zapier erstelle {#creating-an-action-in-zapier}
 
 Mit de Iifüehrig vo däm nöie und robuster Account-Erstelligs-Endpunkt chönne Sie au e neui Aktion i Zapier nutze.
 
 Weet Sie, wie Sie alles nutze und gnüsse, was d'neui Version vo Zapier aabietet? Erfahre meh do. (link?)
 
-### E Aktion erstelle
+### E Aktion erstelle {#creating-an-action}
 
 Um besser z'zeige, wie mer de registration endpoint mit Zapier brucht, machemer e Integration mit Google Forms. Jedes Mal, wenn das Form usgfüllet wird und d'Informatione in de Antworttabelle vom Form gspeicheret wärde, wird en nöi Mitgliedschaft im Ultimate Multisite netzwerk erstellt.
 
@@ -105,7 +105,7 @@ Wenn Sie die Informationen eingerichtet haben, fahren Sie mit dem letzten Test f
 
 Testen Sie Ihren neuen Zap, er sollte erfolgreich abgeschlossen werden. Sollte ein Fehler auftreten, überprüfen Sie alle Felder und ob sie korrekt gesendet werden. Da es viel Information gibt, können einige Dinge übersehen werden.
 
-### Vollständige Endpoint Parameter
+### Vollständige Endpoint Parameter {#complete-endpoint-parameters}
 
 Hier ist der vollständige Aufruf und alle Möglichkeiten für die zu sendenden Felder.
 

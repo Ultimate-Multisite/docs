@@ -4,25 +4,25 @@ title: Filter - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled
+# Filter: wu_sso_enabled {#filter-wussoenabled}
 
 Maak die vermoë om single-sign-on oor domeine te skakel/uit te skakel.
 
 Filter hierdie waarde om single-sign-on heeltemal uit te skakel, of om dit in plaas daarvan kondisioneel te aktiveer.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
 | $enabled | `bool` | Moet SSO geaktiveer word? Waar vir aan, vals vir uit. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.0.11
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/sso/class-sso.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-sso.php#L110) op lyn 110
 
 
-## Keer terug
+## Keer terug {#returns}
 Of SSO geaktiveer is of nie.

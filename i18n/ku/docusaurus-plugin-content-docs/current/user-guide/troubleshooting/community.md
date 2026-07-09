@@ -3,7 +3,7 @@ title: کۆمەڵگە
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# چۆنی وەک یەک لە کۆمەڵگای Ultimate Multisite بانگەواز بکەیت
+# چۆنی وەک یەک لە کۆمەڵگای Ultimate Multisite بانگەواز بکەیت {#how-to-join-ultimate-multisite-community}
 
 کۆمەڵگای Ultimate Multisite شوێنێکە کە دەتوانیت پەیوەندی بەو بەکارهێنەرانەی دیکەی Ultimate Multisite بکەیتەوە و تێبینییەکان، ئەزموونەکان و زیاتر بەشەکانی دیکە بەشدار بیت. بۆ گەڕانەوە بۆ کۆمەڵگای Ultimate Multisite، سەردانی ئەم لینکە بکە: https://community.ultimatemultisite.com/home
 

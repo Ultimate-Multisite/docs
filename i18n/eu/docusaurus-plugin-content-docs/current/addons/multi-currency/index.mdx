@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency-k zure sareak hainbat monetatan ordainketak onartzea ahalbidetzen du. Prezioak automatikoki bihurtzen ditu zuzeneko edo eskuzko truke-tasak erabiliz, edozein monetatarako produktu bakoitzeko prezio zehatzak ezartzen uzten dizu, eta bisitari bakoitzaren moneta hobetsia geolokalizazioaren bidez hautematen du — guztia admin Dashboard bakar batetik kudeatuta.
 
-## Ezaugarri nagusiak
+## Ezaugarri nagusiak {#key-features}
 
 - **Truke-tasen bihurketa automatikoa** — prezioak zure oinarrizko monetatik bihurtzen dira, hautatu duzun hornitzailetik eskuratutako tasak erabiliz
 - **Produktu bakoitzeko prezio-salbuespenak** — ezarri moneta jakin baterako prezio zehatzak edozein produktutan, bihurketa automatikoa saihesteko
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency-k zure sareak hainbat monetatan ordainketak o
 - **Geolokalizazioan oinarritutako moneta-hautematea** — bisitariaren herrialdearekin bat datorren moneta automatikoki aurrez hautatzen du
 - **Admin Dashboard** — kudeatu moneta aktiboak, truke-tasak eta hornitzailearen ezarpenak leku bakarretik
 
-## Eskakizunak
+## Eskakizunak {#requirements}
 
 - Ultimate Multisite 2.0.0 edo berriagoa
 - WordPress Multisite instalazioa
 - PHP 7.4 edo berriagoa
 
-## Instalazioa
+## Instalazioa {#installation}
 
 1. Kargatu pluginaren fitxategiak `/wp-content/plugins/ultimate-multisite-multi-currency` karpetara
 2. Aktibatu plugina WordPress-eko **Pluginak** pantailaren bidez (Sarean aktibatu)
 3. Joan **Ultimate Multisite → Multi-Currency** atalera admin Dashboard irekitzeko
 4. Gehitu onartu nahi dituzun monetak eta konfiguratu zure truke-tasen hornitzailea
 
-## Konfigurazioa
+## Konfigurazioa {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Multi-Currency admin Dashboard-a (**Ultimate Multisite → Multi-Currency**) leku nagusia da honetarako:
 
@@ -44,7 +44,7 @@ Multi-Currency admin Dashboard-a (**Ultimate Multisite → Multi-Currency**) lek
 - Moneta aktibo guztien uneko tasak berrikusi
 - Tasa automatikoen hornitzaileak egokiak ez direnean eskuzko tasak ezarri
 
-### Truke-tasen hornitzaileak
+### Truke-tasen hornitzaileak {#exchange-rate-providers}
 
 | Hornitzailea | Deskribapena |
 |---|---|
@@ -55,7 +55,7 @@ Multi-Currency admin Dashboard-a (**Ultimate Multisite → Multi-Currency**) lek
 
 Hautatu zure hornitzailea **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** atalean. Tasak edozein unetan eskuz freska daitezke edo automatikoki eguneratzeko programatu.
 
-### Produktu bakoitzeko prezio-salbuespenak
+### Produktu bakoitzeko prezio-salbuespenak {#per-product-pricing-overrides}
 
 Bihurketa automatikoa behar bezain zehatza ez denean, moneta jakin baterako prezio zehatza ezar dezakezu edozein produktutan:
 
@@ -66,7 +66,7 @@ Bihurketa automatikoa behar bezain zehatza ez denean, moneta jakin baterako prez
 
 Salbuespenik ez duten produktuek zure oinarrizko monetatik bihurtutako prezioa erabiltzen dute.
 
-### Erregistroko moneta-hautatzailearen eremua
+### Erregistroko moneta-hautatzailearen eremua {#currency-selector-signup-field}
 
 Moneta-hautatzailearen eremua zure erregistro-/ordainketa-fluxura gehi daiteke, bezeroek erregistratzean beren moneta hobetsia aukera dezaten:
 
@@ -76,7 +76,7 @@ Moneta-hautatzailearen eremua zure erregistro-/ordainketa-fluxura gehi daiteke, 
 
 Hautatutako moneta harpidetzarekin gordetzen da eta ondorengo fakturazio guztietan erabiltzen da.
 
-### Geolokalizazioan oinarritutako moneta-hautematea
+### Geolokalizazioan oinarritutako moneta-hautematea {#geolocation-based-currency-detection}
 
 Geolokalizazio bidezko hautematea gaituta dagoenean, addonak bisitariaren herrialdea moneta batekin lotzen du eta moneta-hautatzailearen eremuan aurrez hautatzen du. Gaitzeko:
 
@@ -86,27 +86,27 @@ Geolokalizazio bidezko hautematea gaituta dagoenean, addonak bisitariaren herria
 
 Bisitariaren herrialderako loturarik ez badago, sarearen oinarrizko moneta erabiltzen da ordezko gisa.
 
-## Maiz egiten diren galderak
+## Maiz egiten diren galderak {#frequently-asked-questions}
 
-### Zer gertatzen da truke-tasen hornitzaile bat erabilgarri ez badago?
+### Zer gertatzen da truke-tasen hornitzaile bat erabilgarri ez badago? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addonak behar bezala azken aldiz eskuratutako tasetara jotzen du. Inoiz tasarik eskuratu ez bada, konfiguratu dituzun eskuzko tasetara jotzen du. Gomendagarria da eskuzko tasak konfiguratzea segurtasun-sare gisa.
 
-### Hornitzaile desberdinak erabil ditzaket moneta desberdinetarako?
+### Hornitzaile desberdinak erabil ditzaket moneta desberdinetarako? {#can-i-use-different-providers-for-different-currencies}
 
 Ez — hornitzaile bakarra dago aktibo une bakoitzean moneta guztietarako. Erabili **Manual** banakako tasen gaineko kontrol osoa behar baduzu.
 
-### Geolokalizazioak plugin bereizi bat behar al du?
+### Geolokalizazioak plugin bereizi bat behar al du? {#does-geolocation-require-a-separate-plugin}
 
 Ez da kanpoko geolokalizazio-pluginik behar. Addonak WordPress-en IPtik herrialdera hautemateko funtzio integratua erabiltzen du. Zehaztasun handiagoa lortzeko, geolokalizazio-zerbitzu dedikatu bat integra daiteke emandako iragazki-hooken bidez.
 
-### Produktu bakoitzeko salbuespenak zergaren aurretik edo ondoren aplikatzen dira?
+### Produktu bakoitzeko salbuespenak zergaren aurretik edo ondoren aplikatzen dira? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Produktu bakoitzeko salbuespenek zergarik gabeko prezioa ezartzen dute helburuko monetan. Zerga salbuespen-prezioaren gainean kalkulatzen da, zure uneko zerga-konfigurazioa erabiliz.
 
-## Aldaketen erregistroa
+## Aldaketen erregistroa {#changelog}
 
-### 1.0.0 bertsioa — 2026-04-02an argitaratua
+### 1.0.0 bertsioa — 2026-04-02an argitaratua {#version-100--released-on-2026-04-02}
 
 - Berria: Moneta anitzeko euskarria, truke-tasen bihurketa automatikoarekin
 - Berria: Produktu bakoitzeko prezio-salbuespenak, moneta jakin baterako prezio zehatzetarako

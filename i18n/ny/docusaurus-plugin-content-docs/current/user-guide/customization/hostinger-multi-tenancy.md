@@ -3,13 +3,13 @@ title: Kupanga kwa Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 imaliza uwezi wa multi-tenancy wa Hostinger, mukuuzikizera kuti domains zozakwazikwa (hosted domains) zidzirekeze kuupatsa wopatsa wamene (sovereign tenant provisioning) kudzikoza nazo mu mpingo wosiyanasiyana ndi integration ya mapulogula ya Hostinger yomwe imapereka.
 
 Gawira ulezi monga momwe mukuwamba domains za tenant ndi infrastructure ya tenant zomwe zimaperekedwa m'hPanel ya Hostinger.
 
-## Zomwe mukuwamba (Setup notes)
+## Zomwe mukuwamba (Setup notes) {#setup-notes}
 
 1. Onesha integration ya core ya Hostinger m'malo **Ultimate Multisite > Settings > Host Integrations**.
 2. Onesha kuti token ya Hostinger API imathandiza kuwamba domain kapena subdomain yomwe yomwe mukufuna.

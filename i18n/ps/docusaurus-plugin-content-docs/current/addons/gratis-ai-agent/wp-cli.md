@@ -3,11 +3,11 @@ title: WP-CLI ماخذ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ماخذ
+# WP-CLI ماخذ {#wp-cli-reference}
 
 Gratis AI Agent د `wp gratis-ai-agent` قوماندو کورنۍ وړاندې کوي، چې د agent د بنچمارک کولو، وړتیاوو د مدیریت، او له قوماندې کرښې څخه د agent حالت پوښتلو لپاره ده. ټولې قوماندې WP-CLI 2.0 یا تر هغه لوړې نسخې ته اړتیا لري.
 
-## نصب
+## نصب {#installation}
 
 د WP-CLI قوماندې په اتومات ډول ثبتېږي کله چې plugin فعال وي. په دې سره یې تایید کړئ:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 د Agent Capabilities بنچمارک ټولګه چلوي — د پېچلو، څو-پړاویزو promptونو یوه مجموعه چې د وړتیا بشپړ سطحه ازموي. دا د model د کړنې ارزولو، د AI برابروونکو پرتله کولو، یا production ته له ځای پر ځای کولو مخکې د وړتیا packs د تایید لپاره وکاروئ.
 
-### لنډیز
+### لنډیز {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### اختیارونه
+### اختیارونه {#options}
 
 | اختیار | تشریح |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | د وتنې بڼه: `table` (اصلي)، `json`, `csv` |
 | `--save` | د تاریخي پرتله کولو لپاره د بنچمارک پایلې database ته خوندي کړئ |
 
-### بېلګې
+### بېلګې {#examples}
 
 د اوسني برابروونکي او model سره بشپړه بنچمارک ټولګه وچلوئ:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### وتنه
+### وتنه {#output}
 
 بنچمارک د هرې پوښتنې لپاره یو کتار د لاندې ستنو سره ورکوي:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### د بنچمارک پوښتنې
+### د بنچمارک پوښتنې {#benchmark-questions}
 
 اصلي ټولګه پکې شاملوي:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 نصب شوې وړتیاوې او وړتیا packs مدیریت کوي.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 ټولې ثبت شوې وړتیاوې، د هغوی سرچینه (core یا pack)، او د هغوی اوسنی حالت لېست کوي.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 له registry څخه یو وړتیا pack ښکته کوي او فعالوي.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 یوه ځانګړې وړتیا د pack له لرې کولو پرته غیرفعالوي. په ورکړل شوي سایټ کې د agent د ساحې محدودولو لپاره ګټوره ده.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 یوه مخکې غیرفعاله شوې وړتیا بیا فعالوي.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 د agent اوسنی تنظیمات او د نښلېدو حالت ښکاره کوي.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 له debug log څخه د agent وروستۍ کړنې ښکاره کوي.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 د agent حالت بیا تنظیموي: داخل شوی CSS پاکوي، د agent-ثبت شوي CPTs او taxonomies لرې کوي، نړیوال سبکونه بیا تنظیموي، او د agent د غوراویو زېرمه تشوي. plugin یا د هغه امستنې نه لرې کوي.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## د وتلو کوډونه
+## د وتلو کوډونه {#exit-codes}
 
 ټول commandونه د بریا پر مهال له `0` سره وځي. غیر صفر د وتلو کوډونه:
 

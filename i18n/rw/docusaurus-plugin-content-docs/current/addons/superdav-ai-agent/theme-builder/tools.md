@@ -3,17 +3,17 @@ title: Ibikoresho n'Iboneza
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Ibikoresho n’Igenamiterere
+# Ibikoresho n’Igenamiterere {#tools-and-configuration}
 
 Theme Builder ikoresha urutonde rw’ibikoresho mu gusesengura, gutegura, no kubaka urubuga rwawe rwa WordPress. Muri verisiyo 1.16.0, **sd-ai-agent/site-scrape ubu ni igikoresho cya Tier 1**, bigatuma kiboneka ku buryo busanzwe muri Theme Builder. Superdav AI Agent v1.18.0 inatangiza package y’inyongera Advanced itangwa ukwajiye, igenewe imikorere y’abatekinisiye bizewe; ibyo bikoresho ntabwo biri muri package y’ibanze ya WordPress.org kandi bigomba gushyirwamo no kwemererwa ukwabyo.
 
-## Ibikoresho Biboneka
+## Ibikoresho Biboneka {#available-tools}
 
-### Ibikoresho bya Tier 1 (Bihora Biboneka)
+### Ibikoresho bya Tier 1 (Bihora Biboneka) {#tier-1-tools-always-available}
 
 Ibikoresho bya Tier 1 biboneka ku buryo busanzwe muri Theme Builder nta rindi genamiterere ry’inyongera risabwa.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Intego:** Gusesengura imbuga zisanzweho kugira ngo hakurwemo igitekerezo cy’igishushanyo, imiterere y’ibikubiyemo, n’imikorere.
 
@@ -51,11 +51,11 @@ Sesengura igishushanyo cya example.com maze ugikoreshe nk’igitekerezo cy’uru
 - Imbuga zishingiye cyane kuri JavaScript zishobora kugira isesengura rigarukira
 - Imbuga nini zishobora gufata igihe kinini mu gusesengurwa
 
-### Ibikoresho bya Tier 2 (By’Ubushake)
+### Ibikoresho bya Tier 2 (By’Ubushake) {#tier-2-tools-optional}
 
 Ibikoresho bya Tier 2 biboneka iyo byafunguwe ku buryo bweruye mu igenamiterere rya Theme Builder.
 
-#### Isesengura Ryimbitse
+#### Isesengura Ryimbitse {#advanced-analytics}
 
 Ritanga ibipimo birambuye by’imikorere:
 
@@ -65,7 +65,7 @@ Ritanga ibipimo birambuye by’imikorere:
 - Amanota y’ubugerwaho
 - Amanota y’imigenzereze myiza
 
-#### Mutunganyabikubiyemo
+#### Mutunganyabikubiyemo {#content-optimizer}
 
 Isesengura kandi igatanga inama z’icyanozwa kuri:
 
@@ -75,11 +75,11 @@ Isesengura kandi igatanga inama z’icyanozwa kuri:
 - Imiterere y’ibikubiyemo
 - Aho gushyira ubutumwa bushishikariza igikorwa
 
-### Ibikoresho bya Tier 3 (Premium)
+### Ibikoresho bya Tier 3 (Premium) {#tier-3-tools-premium}
 
 Ibikoresho bya Tier 3 bisaba igenamiterere ry’inyongera cyangwa ibiranga premium.
 
-#### AI Mutangazabikubiyemo
+#### AI Mutangazabikubiyemo {#ai-content-generator}
 
 Itanga ibikubiyemo bya:
 
@@ -89,7 +89,7 @@ Itanga ibikubiyemo bya:
 - Meta descriptions
 - Ubutumwa bushishikariza igikorwa
 
-#### Ibikoresho Byimbitse by’Igishushanyo
+#### Ibikoresho Byimbitse by’Igishushanyo {#advanced-design-tools}
 
 Bitanga ubushobozi bwimbitse bw’igishushanyo:
 
@@ -99,7 +99,7 @@ Bitanga ubushobozi bwimbitse bw’igishushanyo:
 - Ubumenyi bwimbitse bw’amabara
 - Kunoza imyandikire
 
-### Ibikoresho bya Advanced Companion (Package Ukwajiye)
+### Ibikoresho bya Advanced Companion (Package Ukwajiye) {#advanced-companion-tools-separate-package}
 
 Package ya Advanced companion itangwa ukwajiye n’isohoka ry’ibanze rya Superdav AI Agent. Igenewe ibidukikije by’abatekinisiye n’abany’urubuga bizewe aho administrators bemerera agent ku buryo bweruye gukoresha ibikoresho bifite ingaruka zikomeye.
 
@@ -116,9 +116,9 @@ Ubushobozi bwa Advanced companion bushobora kubamo:
 
 Ntubigaragaze nk’ibikoresho bya Theme Builder biboneka muri rusange kuri buri installation. Biboneka gusa iyo package ya Advanced companion yashyizwemo, yafunguwe, kandi igarukira kuri administrators bizewe.
 
-## Igenamiterere ry’Ibikoresho
+## Igenamiterere ry’Ibikoresho {#tool-configuration}
 
-### Gufungura Ibikoresho
+### Gufungura Ibikoresho {#enabling-tools}
 
 Kugira ngo ufungure ibikoresho by’inyongera muri Theme Builder:
 
@@ -127,7 +127,7 @@ Kugira ngo ufungure ibikoresho by’inyongera muri Theme Builder:
 3. Fungura cyangwa uzimye ibikoresho uko bikenewe
 4. Bika igenamiterere
 
-### Uburenganzira bw’Ibikoresho
+### Uburenganzira bw’Ibikoresho {#tool-permissions}
 
 Ibikoresho bimwe bisaba uburenganzira:
 
@@ -137,7 +137,7 @@ Ibikoresho bimwe bisaba uburenganzira:
 - **Ibiranga byimbitse** — bishobora gusaba premium subscription
 - **Ibikoresho bya Advanced companion** — bisaba package ya Advanced itangwa ukwajiye n’icyizere cyeruye cya administrator
 
-### API Keys n’Ibyangombwa
+### API Keys n’Ibyangombwa {#api-keys-and-credentials}
 
 Tunganya API keys z’ibikoresho bizisaba:
 
@@ -146,13 +146,13 @@ Tunganya API keys z’ibikoresho bizisaba:
 3. Gerageza ihuza
 4. Bika mu buryo butekanye
 
-### Gushyiramo Package ya Advanced Companion
+### Gushyiramo Package ya Advanced Companion {#installing-the-advanced-companion-package}
 
 Package ya Advanced companion isohorwa ukwajiye na ZIP y’ibanze ya WordPress.org. Yishyiremo gusa uyikuye ku muyoboro wemewe wo gutangiraho umushinga kuri iryo sohoka, hanyuma ugabanye uburenganzira kuri administrators bizewe. Suzuma amarembo yo kwemeza n’umuntu n’imyitwarire ya git snapshot mbere yo gufungura ibikoresho bya filesystem, database, WP-CLI, REST dispatcher, plugin builder, user-management, cyangwa benchmark ku rubuga rukora.
 
-## Gukoresha sd-ai-agent/site-scrape
+## Gukoresha sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Imikoreshereze y’Ibanze
+### Imikoreshereze y’Ibanze {#basic-usage}
 
 Saba Theme Builder gusesengura urubuga:
 
@@ -161,7 +161,7 @@ Sesengura igishushanyo cy’urubuga rw’uwo duhanganye kuri competitor.com
 kandi utange inama z’icyanozwa ku gishushanyo cy’urubuga rwanjye.
 ```
 
-### Isesengura Ryihariye
+### Isesengura Ryihariye {#specific-analysis}
 
 Saba ubwoko bwihariye bw’isesengura:
 
@@ -179,7 +179,7 @@ Genzura uko example.com ikora kuri telefoni kandi wizere ko urubuga rwanjye
 rukora neza kimwe.
 ```
 
-### Isesengura ryo Kugereranya
+### Isesengura ryo Kugereranya {#comparison-analysis}
 
 Gereranya imbuga nyinshi:
 
@@ -188,22 +188,22 @@ Gereranya ibishushanyo bya site1.com na site2.com maze ukore igishushanyo
 gihuza ibintu byiza kurusha ibindi muri byombi.
 ```
 
-## Imipaka y’Ibikoresho n’Ibyo Kuzirikana
+## Imipaka y’Ibikoresho n’Ibyo Kuzirikana {#tool-limitations-and-considerations}
 
-### Kugabanya Igipimo cyo Gukoresha
+### Kugabanya Igipimo cyo Gukoresha {#rate-limiting}
 
 - Scraping igenerwa umuvuduko ntarengwa kugira ngo server itaremerezwa birenze
 - Ibisabwa byinshi ku rubuga rumwe bishobora kugabanyirizwa umuvuduko
 - Imbuga nini zishobora gufata igihe kirekire gusesengurwa
 
-### Ukuri kw'Ibirimo
+### Ukuri kw'Ibirimo {#content-accuracy}
 
 - Ibirimo bihinduka bishobora kudafatwa byose
 - Ibirimo bigaragazwa na JavaScript bishobora kutuzura
 - Amakuru y'ako kanya ashobora kutagaragazwa
 - Bimwe mu birimo bishobora kuba inyuma ya paywalls
 
-### Ibirebana n'Amategeko n'Imyitwarire
+### Ibirebana n'Amategeko n'Imyitwarire {#legal-and-ethical-considerations}
 
 - Wubahe robots.txt na politiki z'urubuga
 - Ntugakore scraping y'ibirimo birinzwe n'uburenganzira bw'umwanditsi kugira ngo wongere kubitangaza
@@ -211,16 +211,16 @@ gihuza ibintu byiza kurusha ibindi muri byombi.
 - Genzura ko ufite uburenganzira bwo gukoresha ibirimo byakuweho
 - Kurikiza terms of service z'imbuga zasesenguwe
 
-### Ingaruka ku Mikorere
+### Ingaruka ku Mikorere {#performance-impact}
 
 - Scraping y'imbuga nini ishobora gufata igihe
 - Scrapes nyinshi zikorerwa icyarimwe zishobora kugenda gahoro
 - Ihuzanzira ry'umuyoboro rigira ingaruka ku muvuduko
 - Datasets nini zishobora gusaba gutunganywa byinshi
 
-## Uburyo Bwiza bwo Gukora
+## Uburyo Bwiza bwo Gukora {#best-practices}
 
-### Gukoresha Isesengura ry'Urubuga
+### Gukoresha Isesengura ry'Urubuga {#using-site-analysis}
 
 1. **Sesengura imbuga nyinshi** — koranya ibitekerezo uhereye ku masoko menshi
 2. **Wibande ku miterere** — menya imiterere y'imiterere y'ipaji n'uburyo bwo gutunganya
@@ -228,7 +228,7 @@ gihuza ibintu byiza kurusha ibindi muri byombi.
 4. **Iga typography** — menya imikoranire y'imyandikire ukunda
 5. **Suzuma navigation** — sobanukirwa n'itunganywa rya menu
 
-### Scraping Igendanye n'Imyitwarire
+### Scraping Igendanye n'Imyitwarire {#ethical-scraping}
 
 1. **Wubahe robots.txt** — kurikiza amabwiriza y'urubuga
 2. **Ntugakopore ibirimo** — koresha isesengura nk'inkomoko y'ibitekerezo gusa
@@ -236,7 +236,7 @@ gihuza ibintu byiza kurusha ibindi muri byombi.
 4. **Garagaza inkomoko** — shimira amasoko y'ibitekerezo
 5. **Kurikiza terms** — kubahiriza terms of service z'urubuga
 
-### Kongera Uburyo Igikoresho Gikora Neza
+### Kongera Uburyo Igikoresho Gikora Neza {#maximizing-tool-effectiveness}
 
 1. **Vuga mu buryo bwihariye** — saba ubwoko bwihariye bw'isesengura
 2. **Tanga imiterere rusange** — sobanura intego y'urubuga rwawe
@@ -244,9 +244,9 @@ gihuza ibintu byiza kurusha ibindi muri byombi.
 4. **Subiramo unonosore** — ononosora ukurikije ibisubizo
 5. **Huza ibikoresho** — koresha ibikoresho byinshi kugira ngo ubone isesengura ryuzuye
 
-## Gukemura Ibibazo
+## Gukemura Ibibazo {#troubleshooting}
 
-### Urubuga Ntirushobora Gukorerwa Scrape
+### Urubuga Ntirushobora Gukorerwa Scrape {#site-wont-scrape}
 
 - Reba niba urubuga rushobora kugerwaho na bose
 - Genzura ko robots.txt yemera scraping
@@ -254,7 +254,7 @@ gihuza ibintu byiza kurusha ibindi muri byombi.
 - Reba ihuzanzira rya internet
 - Vugana n'ubufasha niba ikibazo gikomeje
 
-### Isesengura Rituzuye
+### Isesengura Rituzuye {#incomplete-analysis}
 
 - Urubuga rushobora kuba rufite ibirimo bihinduka
 - JavaScript ishobora kuba itagaragajwe neza yose
@@ -262,7 +262,7 @@ gihuza ibintu byiza kurusha ibindi muri byombi.
 - Gerageza gusesengura paji zihariye aho kubikora byose
 - Saba ubwoko bwihariye bw'isesengura
 
-### Imikorere Itinda
+### Imikorere Itinda {#slow-performance}
 
 - Imbuga nini zifata igihe kirekire gusesengurwa
 - Scrapes nyinshi zikorerwa icyarimwe zigenda gahoro
@@ -270,7 +270,7 @@ gihuza ibintu byiza kurusha ibindi muri byombi.
 - Gerageza mu masaha atari ay'ubucucike
 - Banza usesengure ibice bito
 
-## Inyandiko Bifitanye Isano
+## Inyandiko Bifitanye Isano {#related-documentation}
 
 - [Ikiganiro cyo Kuvumbura](./discovery-interview.md) — koranya amakuru y'igishushanyo
 - [Icyerekezo cy'Igishushanyo](./design-direction.md) — nonosora igishushanyo cyawe

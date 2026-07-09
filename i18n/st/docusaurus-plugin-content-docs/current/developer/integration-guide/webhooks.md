@@ -3,11 +3,11 @@ title: Ho sebetsana le Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ho Sebetsana le Webhook
+# Ho Sebetsana le Webhook {#webhook-handling}
 
 Theha li-endpoint tsa webhook tse ikhethileng ho amohela liketsahalo tse tsoang litšebeletsong tsa kantle le ho sync data le Ultimate Multisite.
 
-## Endpoint ea Webhook e Ikhethileng
+## Endpoint ea Webhook e Ikhethileng {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Lintlha tsa Tšireletso
+## Lintlha tsa Tšireletso {#security-considerations}
 
 - Kamehla netefatsa mesaeno ea webhook u sebelisa HMAC kapa sephiri se arolelanoeng
 - Sebelisa `permission_callback` tseleng ea hao ea REST — le ka mohla u se e behe ho `__return_true` ho production

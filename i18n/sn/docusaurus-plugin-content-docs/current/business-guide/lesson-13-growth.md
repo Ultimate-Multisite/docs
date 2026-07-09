@@ -3,19 +3,19 @@ title: 'Chidzidzo 13: Kuwedzera Kukura'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Chidzidzo 13: Kukura Zvakanyanya
+# Chidzidzo 13: Kukura Zvakanyanya {#lesson-13-scaling-up}
 
 Une platform iri kushanda ine vatengi vanobhadhara. Chidzidzo ichi chinofukidza nzira yekukura kubva kubasa diki kusvika kuva bhizinesi rinogadzikana -- kukudza infrastructure, kuita operations otomatiki, uye kuwedzera mari inobva kumutengi mumwe nemumwe.
 
-## Patakagumira
+## Patakagumira {#where-we-left-off}
 
 FitSite yava kushanda, vatengi vari kunyoresa, uye uri kuita operations ezuva nezuva. Iye zvino tinotarisa pakukura.
 
-## Ziva Nhamba Dzako
+## Ziva Nhamba Dzako {#know-your-numbers}
 
 Usati wakura, nzwisisa paumire:
 
-### Metrics Akakosha
+### Metrics Akakosha {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Mari yose yemwedzi inobva kuma subscriptions
 - **Nhamba yevatengi**: Subscribers vese vari active
@@ -24,7 +24,7 @@ Usati wakura, nzwisisa paumire:
 - **LTV (Lifetime Value)**: Avhareji yemari inobva kumutengi panguva yose ye subscription yake
 - **CAC (Customer Acquisition Cost)**: Avhareji yemutengo wekuwana mutengi mumwe
 
-### Muenzaniso: FitSite paVatengi 50
+### Muenzaniso: FitSite paVatengi 50 {#example-fitsite-at-50-customers}
 
 | Metric | Kukosha |
 |--------|-------|
@@ -36,9 +36,9 @@ Usati wakura, nzwisisa paumire:
 
 Nhamba idzi dzinokuudza zvekutarisa. Churn yakakwira? Gadzirisa retention. ARPU yakaderera? Sundidzira upgrades. CAC yakakwira? Gadzirisa acquisition channels.
 
-## Kukudza Infrastructure
+## Kukudza Infrastructure {#scaling-infrastructure}
 
-### Nguva Yokukudza
+### Nguva Yokukudza {#when-to-scale}
 
 Kudza hosting kana:
 
@@ -47,7 +47,7 @@ Kudza hosting kana:
 - Wave kuswedera pa100+ masaiti ari active
 - Zvichemo zvevatengi pamusoro pekumhanya zvichiwedzera
 
-### Maitiro Ekukudza
+### Maitiro Ekukudza {#how-to-scale}
 
 - **Vertical scaling**: Simudzira kuenda ku server hombe (CPU yakawanda, RAM)
 - **Caching layers**: Wedzera Redis/Memcached ye object caching, page caching ye static content
@@ -55,7 +55,7 @@ Kudza hosting kana:
 - **Database optimization**: Sezvo network ichikura, database queries anononoka. Gadzirisa tables, wedzera indexes, funga nezve dedicated database server.
 - **Kupatsanura mabasa**: Fambisa media storage kuenda ku object storage (S3-compatible), endesa email ku transactional email service
 
-### Hosting Migration
+### Hosting Migration {#hosting-migration}
 
 Kana host yako yazvino isingachakwanisi kukura zvakare, ronga migration:
 
@@ -65,11 +65,11 @@ Kana host yako yazvino isingachakwanisi kukura zvakare, ronga migration:
 4. Gadzirisa DNS ne TTL shoma kare
 5. Simbisa kuti zvese zvinoshanda mushure me migration
 
-## Kuita Operations Otomatiki
+## Kuita Operations Otomatiki {#automating-operations}
 
 Sezvaunokura, maitiro emaoko anova zvipingamupinyi. Ita otomatiki zvaunogona:
 
-### Webhooks ne Zapier
+### Webhooks ne Zapier {#webhooks-and-zapier}
 
 Shandisa [Webhooks](/user-guide/integrations/webhooks) kana [Zapier](/user-guide/integrations/zapier) kuita otomatiki:
 
@@ -78,7 +78,7 @@ Shandisa [Webhooks](/user-guide/integrations/webhooks) kana [Zapier](/user-guide
 - **Payment failures** → zivisa mu monitoring tool yako
 - **Plan upgrades** → email yekukorokotedza ine guide yezvinhu zvitsva
 
-### Email Automation
+### Email Automation {#email-automation}
 
 Chinja kubva kumaemail emaoko kuenda kuma sequences otomatiki:
 
@@ -87,30 +87,30 @@ Chinja kubva kumaemail emaoko kuenda kuma sequences otomatiki:
 - Upgrade prompts kana vatengi vaswedera pamiganhu ye plan
 - Renewal reminders ye annual subscribers
 
-### Support Automation
+### Support Automation {#support-automation}
 
 - **Canned responses** yemibvunzo yakajairika
 - **Auto-replies** dzinobvuma kugamuchirwa kwema support tickets
 - **Knowledge base suggestions** kana vatengi vatumira tickets dzinoenderana nema articles aripo
 
-## Kuwedzera Mari
+## Kuwedzera Mari {#increasing-revenue}
 
 Kukura hakusi kwekuwana vatengi vakawanda chete. Kunewo kuwedzera mari inobva kumutengi mumwe nemumwe.
 
-### Upselling Vatengi Varipo
+### Upselling Vatengi Varipo {#upselling-existing-customers}
 
 - **Plan upgrades**: Campaigns dzakanangwa dzinoratidza Growth/Pro features kuvatengi ve Starter
 - **Order bumps**: Simudzira zvigadzirwa zvekuwedzera kuvatengi varipo kuburikidza ne email
 - **Annual conversion**: Ipa vatengi vemwedzi discount kuti vachinje ku annual billing
 
-### Nzira Itsva dzeMari
+### Nzira Itsva dzeMari {#new-revenue-streams}
 
 - **Done-for-you setup**: Bhadharisa premium kuti ugadzire uye ugadzirise saiti yemutengi panzvimbo yavo
 - **Custom design services**: Ipa basa re design rakagadzirwa zvakanangana pamusoro pe template
 - **Training sessions**: Walkthroughs dzinobhadharwa dzemunhu mumwe-ne-mumwe kuvatengi vanoda rubatsiro rwekuita nemaoko
 - **Premium plugins**: Ipa niche-specific premium plugins se paid add-ons (semuenzaniso, fitness class booking widget)
 
-### Kukwidza Mitengo
+### Kukwidza Mitengo {#raising-prices}
 
 Sezvo platform yako ichikura uye ichiwedzera value:
 
@@ -118,7 +118,7 @@ Sezvo platform yako ichikura uye ichiwedzera value:
 - Simudza mitengo kune vatsva vanonyoresa
 - Tsigira kuwedzera kwemitengo nezvinhu zvitsva nekuvandudzwa
 
-## Kuvaka Team
+## Kuvaka Team {#building-a-team}
 
 Pane imwe nguva, haugoni kuita zvese wega. Vanhu vekutanga vanowanzo hires:
 
@@ -128,7 +128,7 @@ Pane imwe nguva, haugoni kuita zvese wega. Vanhu vekutanga vanowanzo hires:
 
 Haudi vashandi vechigarire. Contractors nema freelancers anoshanda zvakanaka kubhizinesi re platform.
 
-## Growth Milestones
+## Growth Milestones {#growth-milestones}
 
 | Milestone | Approximate MRR | Focus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Haudi vashandi vechigarire. Contractors nema freelancers anoshanda zvakanaka kub
 | 250-500 vatengi | $25,000-$50,000 | Kuvaka team, nzira itsva dze revenue, premium features |
 | 500+ vatengi | $50,000+ | Kukura kwe platform, niches dziri pedyo, mukana we exit |
 
-## Zvatakavaka muChidzidzo Ichi
+## Zvatakavaka muChidzidzo Ichi {#what-we-built-this-lesson}
 
 - **Framework yema metrics** yekunzwisisa hutano hwebhizinesi
 - **Infrastructure scaling plan** yekukura kubva kumasaiti mashoma kusvika kumazana

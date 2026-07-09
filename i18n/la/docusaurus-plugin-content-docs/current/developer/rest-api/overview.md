@@ -3,28 +3,28 @@ title: Conspectus REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Relatio REST API
+# Relatio REST API {#rest-api-reference}
 
-## Configuratio Basis
+## Configuratio Basis {#base-configuration}
 
 **URL Basis:** `{site_url}/wp-json/wu/v2/`
 **Authenticatio:** API Key & Secret (HTTP Basic Auth aut URL Parametri)
 
-## Authenticatio
+## Authenticatio {#authentication}
 
-### API Activare
+### API Activare {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Credentials Accipere
+### API Credentials Accipere {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Methodi Authenticationis
+### Methodi Authenticationis {#authentication-methods}
 
 **HTTP Basic Auth (Commendatum):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpointa Principalia
+## Endpointa Principalia {#core-endpoints}
 
-### 1. API Clientium
+### 1. API Clientium {#1-customers-api}
 
 **Iter Basis:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Sitorum
+### 2. API Sitorum {#2-sites-api}
 
 **Iter Basis:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Membershipum
+### 3. API Membershipum {#3-memberships-api}
 
 **Iter Basis:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Productorum
+### 4. API Productorum {#4-products-api}
 
 **Iter Basis:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Solutionum
+### 5. API Solutionum {#5-payments-api}
 
 **Iter Basis:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Dominiorum
+### 6. API Dominiorum {#6-domains-api}
 
 **Iter Basis:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint Registrationis
+## Endpoint Registrationis {#registration-endpoint}
 
 Endpoint `/register` integrum fluxum checkout/registrationis praebet:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpointa Tenantium Sui Iuris
+## Endpointa Tenantium Sui Iuris {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 addit tegumentum REST tenantium sui iuris pro integrationibus quae tenantes segregatos provisionant, inspiciunt, aut verificent.
 
@@ -242,7 +242,7 @@ Responsa typica status migrationis includunt:
 
 Tracta `ready: false` ut impedimentum ante emissionem. Inspice singula verificationis, corrige ligamen hospitis basis datorum, caudam, provisioning usoris, aut quaestionem itinerationis, deinde verificationem iterum tenta.
 
-## Responsa Errorum
+## Responsa Errorum {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tracta `ready: false` ut impedimentum ante emissionem. Inspice singula verificat
 }
 ```
 
-## Paginatio et Filtratio
+## Paginatio et Filtratio {#pagination-and-filtering}
 
 **Parametri Quaestionis:**
 ```http

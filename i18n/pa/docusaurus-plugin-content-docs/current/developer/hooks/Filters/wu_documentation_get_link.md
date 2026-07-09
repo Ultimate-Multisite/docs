@@ -4,13 +4,13 @@ title: Filter - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Filter: wu_documentation_get_link
+# Filter: wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 ਪਲੱਗਇਨ ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਲਿੰਕਾਂ ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
 
 ਪੱਕਾ ਨਹੀਂ ਕਿ ਇਹ ਕਿਵੇਂ ਕੰਮ ਆ ਸਕਦਾ ਹੈ, ਪਰ ਇਸ ਨਾਲ ਕੋਈ ਨੁਕਸਾਨ ਨਹੀਂ ਹੋਵੇਗਾ।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 | $slug | `string` | ਲਿੰਕ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਵਰਤਿਆ ਗਿਆ ਸਲੱਗ |
 | $default_link | `string` | ਰਜਿਸਟਰ ਕੀਤਾ ਗਿਆ ਡਿਫਾਲਟ ਲਿੰਕ |
 
-### Since
+### Since {#since}
 
 - 1.7.0
-### Source
+### Source {#source}
 
 [`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) ਵਿੱਚ ਲਾਈਨ 125 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਗਿਆ

@@ -3,13 +3,13 @@ title: Diari de canvis de tickets de suport
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Diari de canvis de Tickets de Suport
+# Diari de canvis de Tickets de Suport {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Millorat: S'ha eliminat el directori `vendor/` del seguiment de Git (ja cobert per `.gitignore`), reduint la talla del repòsitori.
 * Millorat: Es va provar fins a WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Corregit: Acceptar valors nuls (null) als configuradors del model de tiquets anul·lable.
 * Corregit: Emmagatzemar tots els tiquets en taules globals de nivell de xarxa per a un suport multisite adequat.
 * Corregit: Ocultar els camps del personal i solucionar el redireccionament de pàgina buida al formulari de nou tiquet del client.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Millorat: Carregar els assets frontend de manera condicional només a les pàgines de tiquets de suport.
 * Millorat: Saltar l'autocargador de plugins quan l'autocargador de la raó Bedrock ja ha carregat les dependències.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Afegit: Funcionalitat completa de visualització de tiquets per a l'administrador i el frontend.
 * Afegit: Gestor AJAX per a les submissió de respostes de tiquets.
 * Afegit: Suport per a la funcionalitat de resposta de tiquets amb un maneig de formulari adequat.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Millorat: Estructura de la base de dades amb classes adequades de consulta i esquema per a respostes i adjunts.
 * Millorat: Migració a propietats reeals en lloc d'atributs per als models de tiquets.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Actualitzat: Nom de prefix col·lida a `ultimate-multisite` per a la consistència.
 * Actualitzat: Estandarització del domini de text.
 * Corregit: Correccions i millores de bugs menors.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Llançament inicial
 * Sistema complet de gestió de tiquets
 * Control d'accés de múltiples nivells

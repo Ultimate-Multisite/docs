@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Yeniləmə Qeydləri
+# GoCardless Yeniləmə Qeydləri {#gocardless-changelog}
 
 Version: 1.0.3 - 2026-05-05 tarixində buraxılıb
 * Fix: GoCardless üyarlığı gözləmə və ya dayandırılmış vəziyyətdə ləğv edildikdə, tənhalıqda qalan gözləmə saytları indi təmizlənir.

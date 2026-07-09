@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Tenencia múltiple
+# Tenencia múltiple {#multi-tenancy}
 
 Distribuye subsitios entre servidores y bases de datos para mejorar el rendimiento y la seguridad
 
-## Aspectos destacados del lanzamiento de la versión 1.2.0
+## Aspectos destacados del lanzamiento de la versión 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 añade la base de inquilinos soberanos para flujos de trabajo de aislamiento en producción:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 añade la base de inquilinos soberanos para flujos de trabaj
 
 Consulta las guías de usuario para el [flujo de trabajo de migración soberana](/user-guide/getting-started/sovereign-migration-workflow), el [aislamiento de tenencia múltiple](/user-guide/configuration/multi-tenancy-isolation) y las [operaciones de inquilinos soberanos](/user-guide/administration/sovereign-tenant-operations).
 
-## Requisitos
+## Requisitos {#requirements}
 
 - WordPress 5.3 o superior
 - PHP 7.4 o superior
 - plugin Multisite Ultimate (activo)
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube los archivos del complemento a tu directorio `/wp-content/plugins/`
 2. Activa el plugin a través del menú 'Plugins' en WordPress
 3. Configura los ajustes del complemento en la administración de red
 
-## Desarrollo
+## Desarrollo {#development}
 
-### Configuración
+### Configuración {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estructura del proyecto
+### Estructura del proyecto {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Reglas de modernización de código
 ```
 
-### Pruebas
+### Pruebas {#testing}
 
 El complemento incluye un marco de pruebas completo:
 
@@ -93,54 +93,54 @@ El complemento incluye un marco de pruebas completo:
 - **Cobertura de pruebas**: Configurada para hacer seguimiento de la cobertura de código
 - **Pruebas multisite**: Las pruebas se ejecutan en un entorno multisite
 
-### Estándares de código
+### Estándares de código {#code-standards}
 
 - **WordPress Coding Standards**: Aplicados mediante PHPCS
 - **Compatibilidad con PHP 7.4+**: Compatible con funciones modernas de PHP
 - **Análisis estático**: Integración de PHPStan para comprobación de tipos
 - **Modernización de código**: Reglas de Rector para actualizaciones de PHP
 
-### Sistema de compilación
+### Sistema de compilación {#build-system}
 
 - **Procesamiento de recursos**: Minificación de archivos CSS/JS
 - **Traducción**: Generación de archivo POT
 - **Empaquetado**: Creación de archivo para distribución
 - **Modo de desarrollo**: Recursos sin minificar para depuración
 
-## Configuración
+## Configuración {#configuration}
 
 El complemento admite varias opciones de configuración accesibles a través de la interfaz de administración de red.
 
-### Configuración de inquilinos soberanos
+### Configuración de inquilinos soberanos {#sovereign-tenant-configuration}
 
 Para inquilinos soberanos, configura la base de datos del inquilino, la raíz del sistema de archivos, el enlace del host de base de datos y la capacidad del host antes de enrutar tráfico al inquilino. Ejecuta la verificación de migración después de cada cambio que afecte a las credenciales de la base de datos, el enlace del host, el enrutamiento o el aprovisionamiento de usuarios.
 
 Usa `localhost` solo cuando el entorno de ejecución del inquilino y las concesiones de la base de datos esperen acceso mediante socket local o en la misma máquina. Usa `127.0.0.1` o un nombre de host de servicio cuando ese sea el host de concesión configurado por tu proveedor.
 
-### Capacidad de Hostinger
+### Capacidad de Hostinger {#hostinger-capability}
 
 La capacidad de tenencia múltiple de Hostinger funciona con el token de integración compartido de Hostinger. Confirma que el dominio esté presente en hPanel, que DNS apunte a la cuenta de Hostinger y que los ajustes de la base de datos del inquilino coincidan con hPanel antes de la verificación.
 
-## Hooks y filtros
+## Hooks y filtros {#hooks-and-filters}
 
-### Acciones
+### Acciones {#actions}
 
 - `ultimate-multisite-addon-template_init` - Se dispara después de la inicialización del complemento
 - `ultimate-multisite-addon-template_loaded` - Se dispara después de que se carguen todos los archivos del complemento
 
-### Filtros
+### Filtros {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifica los ajustes del complemento
 - `ultimate-multisite-addon-template_enabled` - Sobrescribe el estado de activación/desactivación del complemento
 
-## Licencia
+## Licencia {#license}
 
 Este complemento está licenciado bajo GPL v3 o posterior.
 
-## Soporte
+## Soporte {#support}
 
 Para soporte y documentación, visita [MultisiteUltimate.com](https://multisiteultimate.com)
-## Registro de cambios
+## Registro de cambios {#changelog}
 
 - Versión 1.2.0 (2026-06-03): añade inicio de sesión automático de inquilinos sin estado, capacidad de tenencia múltiple de Hostinger, aislamiento de base de datos y sistema de archivos por subsitio, puertas de verificación de migración soberana, mejoras en el arranque del inquilino/escritor de base de datos, enlace configurable de host MySQL y eliminación soberana más segura.
 

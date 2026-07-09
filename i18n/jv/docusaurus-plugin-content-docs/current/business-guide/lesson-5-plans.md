@@ -3,15 +3,15 @@ title: 'Pawulangan 5: Ngrancang Rencana Panjenengan'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Piwulang 5: Ngrancang Paket Sampeyan
+# Piwulang 5: Ngrancang Paket Sampeyan {#lesson-5-designing-your-plans}
 
 Tingkatan paket sampeyan ora mung tingkat rega -- kuwi minangka gambaran carane pelanggan ceruk sampeyan sejatine makarya. Ing piwulang iki sampeyan bakal ngrancang tingkatan produk sing cocog karo kabutuhan nyata bisnis kebugaran ing tahap sing beda-beda.
 
-## Panggonan Pungkasan Kita
+## Panggonan Pungkasan Kita {#where-we-left-off}
 
 FitSite wis nduweni telung template siap (Studio Essential, Gym Pro, Fitness Chain). Saiki kita nggawe paket sing nemtokake apa wae sing bisa diakses pelanggan lan pira sing kudu dibayar.
 
-## Mikir Miturut Segmen Pelanggan
+## Mikir Miturut Segmen Pelanggan {#thinking-in-customer-segments}
 
 Kesalahan sing paling kerep ditindakake wong yaiku ngrancang paket adhedhasar fitur teknis (panyimpenan, bandwidth, jumlah kaca). Pelanggan ceruk sampeyan ora mikir nganggo istilah kuwi. Pemilik gym mikir babagan apa sing dibutuhake kanggo nglakokake bisnise.
 
@@ -25,11 +25,11 @@ Kanggo studio kebugaran, ana telung segmen alami:
 
 Paket sampeyan kudu dipetakake menyang segmen-segmen iki, dudu menyang kumpulan fitur sing sembarangan.
 
-## Nggawe Paket FitSite
+## Nggawe Paket FitSite {#creating-the-fitsite-plans}
 
 Navigasi menyang **Ultimate Multisite > Produk > Tambah Produk** kanggo saben paket.
 
-### Paket 1: FitSite Starter -- $49/sasi
+### Paket 1: FitSite Starter -- $49/sasi {#plan-1-fitsite-starter----49month}
 
 **Target**: Pelatih solo lan studio cilik
 
@@ -59,7 +59,7 @@ Navigasi menyang **Ultimate Multisite > Produk > Tambah Produk** kanggo saben pa
 - Tema pilihan sampeyan: Paksa Aktifake
 - Kabeh tema liyane: Didhelikake
 
-### Paket 2: FitSite Growth -- $99/sasi
+### Paket 2: FitSite Growth -- $99/sasi {#plan-2-fitsite-growth----99month}
 
 **Target**: Gym siji lokasi sing wis mapan
 
@@ -85,7 +85,7 @@ Navigasi menyang **Ultimate Multisite > Produk > Tambah Produk** kanggo saben pa
 - Grup paket: FitSite Plans
 - Urutan produk: 2
 
-### Paket 3: FitSite Pro -- $199/sasi
+### Paket 3: FitSite Pro -- $199/sasi {#plan-3-fitsite-pro----199month}
 
 **Target**: Rantai kebugaran multi-lokasi
 
@@ -109,7 +109,7 @@ Navigasi menyang **Ultimate Multisite > Produk > Tambah Produk** kanggo saben pa
 - Grup paket: FitSite Plans
 - Urutan produk: 3
 
-## Nyetel Grup Paket
+## Nyetel Grup Paket {#setting-up-the-plan-group}
 
 Grup paket mesthekake pelanggan mung bisa upgrade utawa downgrade ing njero kulawarga paket FitSite. Ing tab **Nganyarke & Mudhunake** saben paket:
 
@@ -118,7 +118,7 @@ Grup paket mesthekake pelanggan mung bisa upgrade utawa downgrade ing njero kula
 
 Iki nggawe jalur upgrade sing cetha: Starter → Growth → Pro.
 
-## Nambahake Tambahan Pesenan
+## Nambahake Tambahan Pesenan {#adding-order-bumps}
 
 Tambahan pesenan yaiku produk tambahan sing ditawakake nalika checkout. Kanggo FitSite, pikirna:
 
@@ -128,7 +128,7 @@ Tambahan pesenan yaiku produk tambahan sing ditawakake nalika checkout. Kanggo F
 
 Gawe iki minangka produk jinis **Paket** ing Ultimate Multisite lan gandhengake karo paket sing relevan.
 
-## Napa Struktur Iki Bisa Mlaku
+## Napa Struktur Iki Bisa Mlaku {#why-this-structure-works}
 
 - **Starter** ngilangake alangan mlebu -- rega murah, tawaran prasaja, nggawe pelatih online kanthi cepet
 - **Growth** nambah fitur sing sejatine dijaluk gym -- booking, galeri, domain khusus
@@ -136,7 +136,7 @@ Gawe iki minangka produk jinis **Paket** ing Ultimate Multisite lan gandhengake 
 - **Tambahan pesenan** ngidini pelanggan ngatur miturut kabutuhan tanpa nggawe paket inti dadi ruwet
 - **Jalur upgrade sing cetha** tegese pelanggan tuwuh bareng sampeyan tinimbang lunga
 
-## Jaringan FitSite Nganti Saiki
+## Jaringan FitSite Nganti Saiki {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Apa Sing Wis Kita Bangun Ing Piwulang Iki
+## Apa Sing Wis Kita Bangun Ing Piwulang Iki {#what-we-built-this-lesson}
 
 - **Telung tingkatan paket** sing dipetakake menyang segmen bisnis kebugaran nyata
 - **Pambatesan fitur** nggunakake kontrol plugin lan template Ultimate Multisite

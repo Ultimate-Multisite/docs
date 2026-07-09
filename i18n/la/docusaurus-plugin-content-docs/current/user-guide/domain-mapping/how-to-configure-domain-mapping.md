@@ -3,17 +3,17 @@ title: Quomodo mappationem dominiorum configurare
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Quomodo Consociationem Dominiorum Configurare (v2)
+# Quomodo Consociationem Dominiorum Configurare (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x refertur.**_
 
 Una ex potentissimis proprietatibus retis praemialis est facultas clientibus nostris praebendi occasionem dominium summi gradus sitibus suis adiungendi. Denique, quid professionalius videtur: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) an [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ideo Ultimate Multisite hanc proprietatem iam inclusam praebet, sine necessitate pluginum tertiae partis adhibendi.
 
-## Quid est consociatio dominiorum?
+## Quid est consociatio dominiorum? {#whats-domain-mapping}
 
 Ut nomen indicat, consociatio dominiorum est facultas a Ultimate Multisite oblata accipiendi petitionem pro dominio proprio et illam petitionem ad respondentem situm in rete consociandi cui illud peculiare dominium adiunctum est.
 
-### Quomodo consociationem dominiorum in tuo Ultimate Multisite Rete constituere
+### Quomodo consociationem dominiorum in tuo Ultimate Multisite Rete constituere {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Consociatio dominiorum aliquam configurationem ex parte tua requirit ut operetur. Fortunate, Ultimate Multisite laborem difficilem pro te automatice peragit, ut requisita facile implere possis.
 
@@ -45,7 +45,7 @@ Sed antequam dominium proprium uni ex subsitibus in rete tuo consociare incipias
 
 ###
 
-### Curare ut configurationes DNS dominii rite configuratae sint
+### Curare ut configurationes DNS dominii rite configuratae sint {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Ut consociatio operetur, curare debes ut dominium quod consociare paras ad IP inscriptionem Retis tui indicet. Nota te IP inscriptione Retis indigere - IP inscriptione dominii ubi Ultimate Multisite institutum est - non IP inscriptione dominii proprii quod consociare vis. Ad IP inscriptionem certi dominii quaerendam, suademus ut ad [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) eas, exempli gratia.
 
@@ -55,7 +55,7 @@ Si difficultatem habes ut hoc operetur, **auxilium registratoris dominii tui con
 
 Si paras permittere clientibus tuis ut sua propria dominia consocient, ipsi laborem in hac parte facere debebunt. Eos ad systema auxilii registratoris sui dirige si se A Record creare non posse inveniant.
 
-### Consociare nomen dominii proprii ut Super Admin
+### Consociare nomen dominii proprii ut Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Cum in rete tuo ut super admin initus es, nomina dominiorum propriorum facile addere et administrare potes eundo sub **Ultimate Multisite > Dominia**.
 
@@ -93,7 +93,7 @@ Si nomen dominii premas, aliquas optiones intra illud videre poteris. Celeriter 
 
 **Estne Securum?:** Quamquam Ultimate Multisite explorat utrum dominium certificatum SSL habeat necne antequam id habilitet, manualiter eligere potes dominium cum certificato SSL aut sine certificato SSL onerare. Nota quod, si situs interretialis certificatum SSL non habet et eum cum SSL vi onerare conaris, errores tibi dare potest.
 
-### Nomen dominii proprii ut usor Subsitus mappare
+### Nomen dominii proprii ut usor Subsitus mappare {#mapping-custom-domain-name-as-subsite-user}
 
 Administratores subsitus quoque nomina dominiorum propria ex tabula administrativa subsitus sui mappare possunt.
 
@@ -121,7 +121,7 @@ Deinde usor **Gradus Sequens** premere potest et pergere ad nomen dominii propri
 
 Premere **Adde Dominium** processum verificandi et arcessendi informationem DNS dominii proprii incipiet.
 
-### De Synchronizatione Dominiorum
+### De Synchronizatione Dominiorum {#about-domain-syncing}
 
 Synchronizatio Dominiorum est processus quo Ultimate Multisite nomen dominii proprii ad rationem hospitationis tuae addit ut dominium addititium **ut mappatio dominiorum operetur**.
 

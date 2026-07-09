@@ -3,7 +3,7 @@ title: WooCommerce Integratioun Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integratiouns-Changelog
+# WooCommerce Integratiouns-Changelog {#woocommerce-integration-changelog}
 
 Versioun 2.2.0 - Verëffentlecht den 2026-07-01
 * Nei: Ultimate Multisite Steierbeträg erschéngen elo als separat WooCommerce Taxe-Linnen beim Checkout, wat d'Steiertotaler virun der Bezuelung méi kloer mécht.

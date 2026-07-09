@@ -3,9 +3,9 @@ title: ଆଡଅନ୍ ବିକାଶ ଆରମ୍ଭ କରିବା
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# ଅତିରିକ୍ତ ବିକାଶ
+# ଅତିରିକ୍ତ ବିକାଶ {#addon-development}
 
-## ଅତିରିକ୍ତର ଗଠନ
+## ଅତିରିକ୍ତର ଗଠନ {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## ମୁଖ୍ୟ ଅତିରିକ୍ତ ଫାଇଲ ନମୁନା
+## ମୁଖ୍ୟ ଅତିରିକ୍ତ ଫାଇଲ ନମୁନା {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## ନିଜସ୍ୱ ମଡେଲ ଉଦାହରଣ
+## ନିଜସ୍ୱ ମଡେଲ ଉଦାହରଣ {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## ପ୍ରଶାସନ ପୃଷ୍ଠା ସମନ୍ୱୟ
+## ପ୍ରଶାସନ ପୃଷ୍ଠା ସମନ୍ୱୟ {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## ଆପଣଙ୍କ ଆଡ଼ଅନ ପରୀକ୍ଷା
+## ଆପଣଙ୍କ ଆଡ଼ଅନ ପରୀକ୍ଷା {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 ବିସ୍ତାର ବିନ୍ଦୁ
+## v2.13.0 ବିସ୍ତାର ବିନ୍ଦୁ {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 ଏପରି ଅନେକ ବିସ୍ତାର ବିନ୍ଦୁ ଯୋଡ଼େ, ଯାହା ସ୍ୱାଧୀନ ଟେନାଣ୍ଟ, ଚେକଆଉଟ୍ ଡୋମେନ୍, କିମ୍ବା ହୋଷ୍ଟ-ପ୍ରଦାନକାରୀ DNS ସ୍ୱୟଂଚାଳନ ସହ ସମନ୍ୱୟ କରୁଥିବା ଆଡ଼ଅନ ପାଇଁ ଉପଯୋଗୀ।
 
-### SSO ଏବଂ ମୁଖ୍ୟ-ସାଇଟ ପରିଚାଳନା URL
+### SSO ଏବଂ ମୁଖ୍ୟ-ସାଇଟ ପରିଚାଳନା URL {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### ଚେକଆଉଟ୍-ଫର୍ମ ମୂଳ ଡୋମେନ୍
+### ଚେକଆଉଟ୍-ଫର୍ମ ମୂଳ ଡୋମେନ୍ {#checkout-form-base-domains}
 
 ଆପଣଙ୍କ ଆଡ଼ଅନ ପ୍ରତି-ସାଇଟ କଷ୍ଟମ୍ ମ୍ୟାପିଙ୍ଗ ପରିବର୍ତ୍ତେ ଚେକଆଉଟ୍-ଫର୍ମ **ସାଇଟ URL** ଡୋମେନ୍ ପରି ବ୍ୟବହାର ହେବା ଉଚିତ ଅତିରିକ୍ତ ସେୟାର୍ଡ୍ ମୂଳ ଡୋମେନ୍ ଦେଲେ `wu_checkout_form_base_domains` ବ୍ୟବହାର କରନ୍ତୁ:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite ଏହି ହୋଷ୍ଟଗୁଡ଼ିକୁ ସାମାନ୍ୟୀକୃତ କରେ ଏବଂ ସେଗୁଡ଼ିକ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ପ୍ରତି-ସାଇଟ ମ୍ୟାପ୍ ହୋଇଥିବା ଡୋମେନ୍ ରେକର୍ଡ ଛାଡ଼ିଦିଏ।
 
-### ସ୍ୱୟଂଚାଳିତ ଡୋମେନ୍-ରେକର୍ଡ ସୃଷ୍ଟି
+### ସ୍ୱୟଂଚାଳିତ ଡୋମେନ୍-ରେକର୍ଡ ସୃଷ୍ଟି {#automatic-domain-record-creation}
 
 ନୂଆଭାବେ ସୃଷ୍ଟି ହୋଇଥିବା ସାଇଟ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ଡୋମେନ୍-ରେକର୍ଡ ସୃଷ୍ଟିକୁ ଅଟକାଇବା କିମ୍ବା ପଛକୁ ଟାଳିବା ଦରକାର ହେଲେ ଆପଣଙ୍କ ଆଡ଼ଅନ `wu_should_create_domain_record_for_site` ବ୍ୟବହାର କରନ୍ତୁ:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` କୁ ଶୁଣୁଥିବା ହୋଷ୍ଟ-ପ୍ରଦାନକାରୀ ସମନ୍ୱୟଗୁଡ଼ିକ ସାଇଟ ସୃଷ୍ଟି ହେଲେ ପ୍ରଦାନକାରୀ ପକ୍ଷର DNS ରେକର୍ଡ ସୃଷ୍ଟି କରିପାରନ୍ତି। ସେହି କାର୍ଯ୍ୟ ପାଇଁ କୌଣସି ସମନ୍ୱୟ ପଞ୍ଜୀକୃତ ନଥିଲେ, Ultimate Multisite ଖାଲି ପୃଷ୍ଠଭୂମି କାମକୁ ଛାଡ଼ିଦିଏ।
 
-## ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ
+## ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ {#next-steps}
 
 - ଉପଲବ୍ଧ କାର୍ଯ୍ୟ ଏବଂ ଫିଲ୍ଟର ପାଇଁ [Hooks Reference](/developer/hooks) ସମୀକ୍ଷା କରନ୍ତୁ
 - API ସମନ୍ୱୟ ପାଇଁ [REST API Overview](/developer/rest-api/overview) ଯାଞ୍ଚ କରନ୍ତୁ

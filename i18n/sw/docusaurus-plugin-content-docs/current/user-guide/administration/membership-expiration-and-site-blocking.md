@@ -3,11 +3,11 @@ title: Mwisho wa Uanachama na Kuzima Tovuti
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Kuisha Muda kwa Uanachama na Kuzima Tovuti
+# Kuisha Muda kwa Uanachama na Kuzima Tovuti {#membership-expiration-and-site-blocking}
 
 Mwongozo huu unakufafanulia jinsi Ultimate Multisite inavyoshughulikia kuisha muda kwa uanachama, kumalizika kwa vipindi vya majaribio, na kuzima ufikiaji wa tovuti kutoka mbele (frontend). Unafunika mzunguko mzima wa uanachama kuanzia hali ya hai hadi kuisha muda, mipangilio inayodhibiti kama tovuti zinazozimwa, na nini cha kuangalia ikiwa tovuti bado zinaonekana kwa watu baada ya uanachama kuisha.
 
-## Mzunguko wa Hali ya Uanachama
+## Mzunguko wa Hali ya Uanachama {#membership-status-lifecycle}
 
 Kila uanachama katika Ultimate Multisite una mojawapo ya hali zifuatazo:
 
@@ -24,7 +24,7 @@ Uanachama wa bure haisha muda kiotomatiki. Ultimate Multisite inatitazama kama u
 | **Expired** | Limepita tarehe ya kuisha muda na kipindi cha neema bila uwezesha |
 | **Cancelled** | Kimefuta wazi na mteja au msimamizi |
 
-### Jinsi Uanachama Linavyoenda Hali ya Kuisha Muda
+### Jinsi Uanachama Linavyoenda Hali ya Kuisha Muda {#how-memberships-transition-to-expired}
 
 Ultimate Multisite inafanya ukaguzi wa nyuma (background check) **kila saa** kutafuta uanachama ambazo zinapaswa kuwekwa kama zimeisha muda. Ukaguzi huu unatumia [Action Scheduler](https://actionscheduler.org/) (sio WP-Cron moja kwa moja) na unaendeshwa kama kitendo kilichopangwa cha `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Ukaguzi wa kuisha muda una **kipindi cha neema cha ndani cha siku 3** kwa msingi
 Kipindi cha neema cha kuisha muda (expiration grace period) cha siku 3 ni tofauti na mipangilio ya Kipindi cha Neema cha Kuzima Frontend (Frontend Block Grace Period) iliyoonyeshwa hapa chini. Kipindi cha neema cha kuisha muda kinadhibiti wakati **hali inabadilika** kutoka hai/imesimamishwa hadi kuisha muda. Kipindi cha neema cha kuzima frontend kinadhibiti wakati **tovuti inazozimwa** baada ya hali kuwa imebadilika tayari.
 :::
 
-#### Uanachama Zinazojirejesha vs. Zinazozima Kujirejesha
+#### Uanachama Zinazojirejesha vs. Zinazozima Kujirejesha {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Tofauti hii ni muhimu sana kuelewa jinsi kuisha muda kwa uanachama kunavyofanya kazi:
 
@@ -42,7 +42,7 @@ Tofauti hii ni muhimu sana kuelewa jinsi kuisha muda kwa uanachama kunavyofanya 
 
 - **Uanachama zinazojirejesha** (`auto_renew = true`): Ukaguzi wa kuisha muda wa cron **unazipuuza kabisa**. Lugha ya malipo (payment gateway) (Stripe, PayPal, n.k.) inatarajiwa kuwajulisha Ultimate Multisite kupitia webhooks wakati usajili unashindwa au kufutwa. Ikiwa webhook haipokelewi—kwa sababu ya endpoint iliyopangwa vibaya, kukatika kwa gateway, au usajili kufutwa nje ya mfumo—uanachama inaweza kubaki `active` milele hata baada ya tarehe ya kuisha muda kupita.
 
-### Jinsi Majaribio Yanavyomalizika
+### Jinsi Majaribio Yanavyomalizika {#how-trials-end}
 
 Wakati kipindi cha majaribio cha uanachama kinamalizika, mfumo:
 
@@ -52,11 +52,11 @@ Wakati kipindi cha majaribio cha uanachama kinamalizika, mfumo:
 
 Mchakato huu unaendeshwa kwa ratiba ile ile ya saa kama ukaguzi wa kuisha muda wa kawaida, lakini **ni kwa uanachama zisazojirejesha tu**. Kwa majaribio yanayojirejesha, lugha ya malipo ndiyo inashughulikia mabadiliko kutoka jaribio hadi usajili ulio malipo.
 
-## Kuzima Ufikiaji wa Frontend
+## Kuzima Ufikiaji wa Frontend {#block-frontend-access}
 
 Kwa msingi, wakati uanachama kuisha muda au kusimamishwa, **ni dashboard ya wp-admin tu ndiyo inazuiliwa**. Frontend ya umma ya tovuti inabaki iwezekana kwa wageni. Ili kuzizuia ufikiaji wa umma pia, lazima uwezeshe mipangilio ya **Block Frontend Access**.
 
-### Kupanga Mipangilio
+### Kupanga Mipangilio {#configuring-the-setting}
 
 Nenda huku **Ultimate Multisite > Settings > Memberships** na uwezesha **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Mipangilio mitatu inayohusiana inadhibiti tabia hii:
 | **Frontend Block Grace Period** | Idadi ya siku za kusubiri baada ya uanachama kuwa hai kabla ya kuzima. Weka `0` kuzima mara moja. | 0 |
 | **Frontend Block Page** | Ukurasa kwenye tovuti kuu wa kumpeleka wageni anapozimwa. Ikiwa hawekwa, wageni wanaona ujumbe wa jumla wa "Site not available". | None |
 
-### Nini Wageni Wanachoona Wakati Tovuti Inazozimwa
+### Nini Wageni Wanachoona Wakati Tovuti Inazozimwa {#what-visitors-see-when-a-site-is-blocked}
 
 Wakati ufikiaji wa frontend unazozimwa, wageni wa tovuti watafanya mojawapo ya yafuatayo:
 
@@ -83,7 +83,7 @@ Wakati ufikiaji wa frontend unazozimwa, wageni wa tovuti watafanya mojawapo ya y
 
 Wasimamizi wa tovuti bado wanaweza kuingia—kurasa ya kuingia haizozimwi kamwe.
 
-### Nini Kinazuiliwa na Lini
+### Nini Kinazuiliwa na Lini {#what-gets-blocked-and-when}
 
 Tabia ya kuzima inategemea hali ya uanachama:
 
@@ -104,21 +104,21 @@ Hata kama kipindi cha majaribio kimeisha, uanachama yenye hali ya `trialing` **h
 Uanachama ilifutwa inazozimwa kila wakati mara tu tarehe ya kuisha muda imepita, bila kujali kama Block Frontend Access imewashwa. Kipindi cha Neema cha Kuzima Frontend hakitumiki kwa uanachama ilifutwa.
 :::
 
-## Kutatua Matatizo: Tovuti Zinazobaki Kuonekana Baada ya Kuisha Muda
+## Kutatua Matatizo: Tovuti Zinazobaki Kuonekana Baada ya Kuisha Muda {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Ikiwa tovuti bado zinaonekana kwa umma baada ya uanachama kuisha muda, fanya ukaguzi huu kwa mpangilio:
 
-### 1. Thibitisha Mipangilio ya Block Frontend Access Imewashwa
+### 1. Thibitisha Mipangilio ya Block Frontend Access Imewashwa {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Nenda huku **Ultimate Multisite > Settings > Memberships** na thibitisha kwamba swichi ya **Block Frontend Access** imewashwa. Mipangilio hii **haina mipangilio ya msingi**, kumaanisha kwamba wp-admin ndiyo inazuiliwa tu wakati uanachama inakuwa hai.
 
-### 2. Angalia Kipindi cha Neema cha Kuzima Frontend
+### 2. Angalia Kipindi cha Neema cha Kuzima Frontend {#2-check-the-frontend-block-grace-period}
 
 Kwenye ukurasa huo wa mipangilio, angalia thamani ya **Frontend Block Grace Period**. Ikiwa imewekwa kwa siku 7, kwa mfano, frontend haitazimwa mpaka siku 7 baada ya tarehe ya kuisha muda ya uanachama—hata ikiwa hali ya uanachama tayari ni `expired`.
 
 Weka hili kuwa `0` ikiwa unataka kuzima mara moja baada ya uanachama kuwa hai.
 
-### 3. Thibitisha Hali ya Uanachama Imebadilika Kweli
+### 3. Thibitisha Hali ya Uanachama Imebadilika Kweli {#3-confirm-the-membership-status-has-actually-changed}
 
 Nenda huku **Ultimate Multisite > Memberships** na angalia hali ya uanachama inayohusika. Ikiwa bado inaonyesha `active` licha ya tarehe ya kuisha muda kupita, mabadiliko ya hali hakutokea. Sababu za kawaida:
 
@@ -126,7 +126,7 @@ Nenda huku **Ultimate Multisite > Memberships** na angalia hali ya uanachama ina
 
 - **Kazi ya cron haijaendeshwa**: Angalia hatua inayofuata.
 
-### 4. Thibitisha Action Scheduler Inafanya Kazi
+### 4. Thibitisha Action Scheduler Inafanya Kazi {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite inatumia Action Scheduler kwa kazi zake za cron. Nenda huku **Tools > Scheduled Actions** kwenye admin ya mtandao na kutafuta:
 
@@ -148,7 +148,7 @@ Ili kuhakikisha utekelezaji wa cron unaaminika, weka kazi ya cron ya mfumo:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Angalia Matatizo ya Webhook ya Gateway (Uanachama Zinazojirejesha)
+### 5. Angalia Matatizo ya Webhook ya Gateway (Uanachama Zinazojirejesha) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Ikiwa uanachama inazojirejesha na usajili wa gateway umefutwa au umeshindwa, lakini Ultimate Multisite bado inaonyesha kuwa ni `active`:
 
@@ -157,7 +157,7 @@ Ikiwa uanachama inazojirejesha na usajili wa gateway umefutwa au umeshindwa, lak
 
 Ikiwa gateway inaonyesha usajili kama uliifutwa lakini Ultimate Multisite haionyeshi, uwasilishaji wa webhook ulikuwa umepotea. Unaweza kubadilisha hali ya uanachama kwa mikono huku **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Angalia Kipindi cha Neema cha Kuisha Muda (Kiwanja cha Cron)
+### 6. Angalia Kipindi cha Neema cha Kuisha Muda (Kiwanja cha Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Ukaguzi wa cron una kipindi chake cha neema (kiwango cha msingi: siku 3) kabla ya kuweka uanachama kama imesha muda. Hii ni tofauti na kipindi cha neema cha kuzima frontend. Muda jumla kabla ya tovuti kuzimwa unaweza kuwa:
 
@@ -165,7 +165,7 @@ Ukaguzi wa cron una kipindi chake cha neema (kiwango cha msingi: siku 3) kabla y
 
 Kwa mfano, kwa mipangilio ya msingi na kipindi cha neema cha frontend cha siku 7, inaweza kuchukua hadi siku 10 baada ya `date_expiration` kabla ya tovuti kuzimwa kweli.
 
-### 7. Kuweka Uanachama Kuisha Muda Kwa Mikono
+### 7. Kuweka Uanachama Kuisha Muda Kwa Mikono {#7-manually-expire-a-membership}
 
 Ikiwa unahitaji kuzima tovuti mara moja bila kusubiri mzunguko wa cron, unaweza kubadilisha hali ya uanachama kwa mikono:
 
@@ -176,7 +176,7 @@ Ikiwa unahitaji kuzima tovuti mara moja bila kusubiri mzunguko wa cron, unaweza 
 
 Kuzima frontend kutafanyika kwenye upakuaji wa ukurasa unaofuata (kulingana na Kipindi cha Neema cha Kuzima Frontend kwa uanachama iliyokuisha muda, au mara moja kwa uanachama ilifutwa).
 
-## Muhtasari
+## Muhtasari {#summary}
 
 Muda mzima kuanzia tarehe ya kuisha muda hadi kuzima tovuti:
 
@@ -208,7 +208,7 @@ Kwa uanachama ilifutwa, njia ni fupi zaidi:
   Frontend ya tovuti inazozimwa mara moja
 ```
 
-## Rejeleo la Mjenzi (Developer Reference)
+## Rejeleo la Mjenzi (Developer Reference) {#developer-reference}
 
 Hooks na filters zifuatazo zinakuwezesha kubadilisha tabia ya kuisha muda na kuzima:
 

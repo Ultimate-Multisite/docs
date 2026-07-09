@@ -4,13 +4,13 @@ title: Actio - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Actio: wp_ultimo_support_agents_activation
+# Actio: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
 
 Sinat alias partes plugin suas consuetudines activationis adiungere
 
-### Ex quo
+### Ex quo {#since}
 
 - 1.9.6
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-support-agents/blob/main/inc/class-hooks.php#L83) in linea 83

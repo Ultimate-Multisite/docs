@@ -3,19 +3,19 @@ title: 'Chidzidzo 10: Zuva Rekuparura'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Chidzidzo 10: Zuva Rekutangisa
+# Chidzidzo 10: Zuva Rekutangisa {#lesson-10-launch-day}
 
 Zvese zvavakwa. Usati wavhura mikova, chidzidzo ichi chinopfuura nepachinyorwa chekutarisa chisati chatangisa kuti uve nechokwadi chekuti hapana chakaputsika, chiri kushaikwa, kana chinonyadzisa.
 
-## Patakagumira
+## Patakagumira {#where-we-left-off}
 
 FitSite ine matemplate, zvirongwa, kubhadhara, branding, onboarding, uye mitengo zvese zvakagadziriswa. Zvino tinoongorora kuti zvese zvinoshanda uye toenda live.
 
-## Chinyorwa Chekutarisa Chisati Chatangisa
+## Chinyorwa Chekutarisa Chisati Chatangisa {#pre-launch-checklist}
 
 Shanda pachinhu chimwe nechimwe. Usasvetuka chero chipi.
 
-### Zvivakwa zvePlatform
+### Zvivakwa zvePlatform {#platform-infrastructure}
 
 - [ ] Hosting yakagadzikana uye iri kushanda zvakanaka pasi pemutoro
 - [ ] Wildcard SSL iri kushanda uye subdomains dzese dzinobuda neHTTPS
@@ -23,7 +23,7 @@ Shanda pachinhu chimwe nechimwe. Usasvetuka chero chipi.
 - [ ] Backups dzakagadziriswa uye dzakaedzwa (dzorera kanenge imwe kuti uone)
 - [ ] Monitoring iripo -- uchaziva kana platform ikadzika
 
-### Matemplate
+### Matemplate {#templates}
 
 - [ ] Matemplate ese matatu anovhura nemazvo pamasaiti matsva
 - [ ] Zvirimo zveplaceholder zvinobatsira uye hazvina zvikanganiso zvekunyora
@@ -32,7 +32,7 @@ Shanda pachinhu chimwe nechimwe. Usasvetuka chero chipi.
 - [ ] Kumhanya kwekuvhura peji kunogamuchirika (edza nechishandiso chakaita seGTmetrix kana PageSpeed Insights)
 - [ ] Hapana malink akaputsika kana assets dzisipo pane chero template
 
-### Zvirongwa neZvigadzirwa
+### Zvirongwa neZvigadzirwa {#plans-and-products}
 
 - [ ] Zvirongwa zvese zvitatu zviri kushanda uye zvinooneka
 - [ ] Tsananguro dzezvirongwa dzakarurama uye dzakanangana neniche
@@ -42,7 +42,7 @@ Shanda pachinhu chimwe nechimwe. Usasvetuka chero chipi.
 - [ ] Zvekuwedzera paodha zvinoonekwa nemazvo panguva yekubhadhara
 - [ ] Miganhu yeplugin neye theme inomanikidzwa nemazvo pachirongwa chimwe nechimwe
 
-### Kufamba kweKubhadhara
+### Kufamba kweKubhadhara {#checkout-flow}
 
 - [ ] Pedzisa test signup yakazara pachirongwa chimwe nechimwe (shandisa test payment mode)
 - [ ] Kusarudza template kunoratidza matemplate akarurama pachirongwa chimwe nechimwe
@@ -52,7 +52,7 @@ Shanda pachinhu chimwe nechimwe. Usasvetuka chero chipi.
 - [ ] Mutengi anogona kupinda musaiti yake itsva pakarepo
 - [ ] Discount codes dzinoshanda nemazvo
 
-### Branding
+### Branding {#branding}
 
 - [ ] Peji rekupinda rinoratidza FitSite branding
 - [ ] Admin dashboard inoratidza FitSite branding
@@ -60,7 +60,7 @@ Shanda pachinhu chimwe nechimwe. Usasvetuka chero chipi.
 - [ ] Ma invoice anoratidzwa nemazvo aine ruzivo rwebhizinesi rako
 - [ ] Saiti yekushambadzira iri live uye inobatanidza kuform rekubhadhara
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Quick Start widget inoonekwa pama dashboards evatengi vatsva
 - [ ] Malink ese eQuick Start anonongedza kumapeji akarurama
@@ -68,7 +68,7 @@ Shanda pachinhu chimwe nechimwe. Usasvetuka chero chipi.
 - [ ] Zvinyorwa zveknowledge base zvakaburitswa uye zvinowanikwa
 - [ ] Account page inoratidza ruzivo rwechirongwa rwakarurama uye sarudzo dzekukwidziridza
 
-### Zvemutemo neBhizinesi
+### Zvemutemo neBhizinesi {#legal-and-business}
 
 - [ ] Terms of service dzakaburitswa uye dzakabatanidzwa kubva pakubhadhara
 - [ ] Privacy policy yakaburitswa uye inowanikwa
@@ -77,11 +77,11 @@ Shanda pachinhu chimwe nechimwe. Usasvetuka chero chipi.
 - [ ] Payment gateway iri mu live mode (kwete test mode)
 - [ ] Tax configuration yakarurama kudunhu rako remutemo
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Funga nezvekutangisa muzvikamu zviviri:
 
-### Chikamu 1: Soft Launch
+### Chikamu 1: Soft Launch {#phase-1-soft-launch}
 
 Koka varidzi ve5-10 vema fitness studio kuti vasainire vasati vatangisa kuruzhinji. Ava ndivo beta customers vako. Vape discount yakakura (50% off kweupenyu hwese, kana mwedzi mitatu mahara) mukutsinhana ne:
 
@@ -91,7 +91,7 @@ Koka varidzi ve5-10 vema fitness studio kuti vasainire vasati vatangisa kuruzhin
 
 Izvi zvinokupa mhinduro dzevatengi chaivo uye masaiti ari live ekuratidza usati wavhura kuruzhinji.
 
-### Chikamu 2: Kutangisa Kuruzhinji
+### Chikamu 2: Kutangisa Kuruzhinji {#phase-2-public-launch}
 
 Kana mhinduro dze soft launch dzabatanidzwa:
 
@@ -100,7 +100,7 @@ Kana mhinduro dze soft launch dzabatanidzwa:
 - Tanga kutsvaga vatengi (Chidzidzo 11)
 - Zivisa pamachannel akakodzera efitness industry
 
-## Zviito zveZuva Rekutangisa
+## Zviito zveZuva Rekutangisa {#launch-day-actions}
 
 Pazuva raunobuda kuruzhinji:
 
@@ -110,7 +110,7 @@ Pazuva raunobuda kuruzhinji:
 4. **Iva uripo** -- vatengi vako vekutanga chaivo vangangoda rubatsiro, uye kupindura nekukurumidza kunovaka kuvimba
 5. **Pemberera kwenguva pfupi** -- wobva wadzokera kubasa
 
-## Chii Chingakanganisika
+## Chii Chingakanganisika {#what-can-go-wrong}
 
 Gadzirira izvi:
 
@@ -120,7 +120,7 @@ Gadzirira izvi:
 - **Performance pasi pemutoro**: Kana ukawana kuwanda kwe traffic, ziva maitiro eku scale hosting yako
 - **Kuvhiringidzika kwevatengi**: Iva neknowledge base yako uye support channels zvakagadzirira
 
-## FitSite Network Kusvika Parizvino
+## FitSite Network Kusvika Parizvino {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Zvatakavaka Muchidzidzo Ichi
+## Zvatakavaka Muchidzidzo Ichi {#what-we-built-this-lesson}
 
 - **Chinyorwa chekutarisa chisati chatangisa chakazara** chinofukidza zvivakwa, zvirimo, kubhadhara, uye zvemutemo
 - **Zano re soft launch** kuti uwane mhinduro chaidzo usati waenda kuruzhinji

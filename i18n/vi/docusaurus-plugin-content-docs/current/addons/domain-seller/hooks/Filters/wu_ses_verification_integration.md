@@ -4,7 +4,7 @@ title: Bộ lọc - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filter: wu_ses_verification_integration
+# Filter: wu_ses_verification_integration {#filter-wusesverificationintegration}
 
 Bộ lọc này cho phép các đoạn mã khác cung cấp đối tượng tích hợp SES.
 
@@ -13,15 +13,15 @@ Bộ lọc này cho phép các đoạn mã khác cung cấp đối tượng tíc
 - `check_domain_verification(string $domain): array\{verified: bool\}\|WP_Error`
 - `delete_identity(string $domain): true\|WP_Error`
 
-## Tham số
+## Tham số {#parameters}
 
 | Tên | Kiểu | Mô tả |
 |------|------|-------------|
 | $integration | `object\|null` | Đối tượng tích hợp SES, hoặc `null`. |
 
-### Từ phiên bản
+### Từ phiên bản {#since}
 
 - 2.2.0
-### Nguồn
+### Nguồn {#source}
 
 Được định nghĩa trong [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L731) tại dòng 731

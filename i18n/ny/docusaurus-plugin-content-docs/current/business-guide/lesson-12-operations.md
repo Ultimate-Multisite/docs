@@ -3,17 +3,17 @@ title: 'Phunziro 12: Kuyendetsa Bizinesi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Phunziro 12: Kuyendetsa Bizinesi
+# Phunziro 12: Kuyendetsa Bizinesi {#lesson-12-running-the-business}
 
 Nsanja si ntchito yomwe mumamaliza -- ndi bizinesi yomwe mumayendetsa. Phunziro ili limafotokoza ntchito za tsiku ndi tsiku poyang'anira FitSite: thandizo, kulipiritsa, kukonza, ndi kusunga makasitomala ali osangalala.
 
-## Kumene Tinasiya
+## Kumene Tinasiya {#where-we-left-off}
 
 FitSite ili pa intaneti ndipo makasitomala akulembetsa. Tsopano muyenera kuyendetsa ntchitoyi mokhazikika.
 
-## Ntchito za Tsiku ndi Tsiku
+## Ntchito za Tsiku ndi Tsiku {#daily-operations}
 
-### Kuwunika
+### Kuwunika {#monitoring}
 
 Onani izi tsiku lililonse (kapena khazikitsani machenjezo):
 
@@ -22,7 +22,7 @@ Onani izi tsiku lililonse (kapena khazikitsani machenjezo):
 - **Malipiro olephera**: Kodi pali kulephera kwa malipiro komwe kukufuna chisamaliro?
 - **Zopempha thandizo**: Kodi pali mafunso a makasitomala osayankhidwa?
 
-### Thandizo la Makasitomala
+### Thandizo la Makasitomala {#customer-support}
 
 Kuyang'ana pa niche yanu ndi mwayi pano. Chifukwa makasitomala anu onse ndi ma studio a fitness, mudzawona mafunso omwewo mobwerezabwereza:
 
@@ -36,7 +36,7 @@ Kuyang'ana pa niche yanu ndi mwayi pano. Chifukwa makasitomala anu onse ndi ma s
 
 Pangani nkhokwe yanu ya chidziwitso (yomwe inayambika mu Phunziro 8) mozungulira mafunso obwerezabwerezawa. Ticket iliyonse ya thandizo yomwe ikanatha kukhala nkhani ya nkhokwe ya chidziwitso ndi chizindikiro choti mulembere nkhaniyo.
 
-### Magawo a Thandizo
+### Magawo a Thandizo {#support-tiers}
 
 Pamene mukukula, konzani thandizo malinga ndi pulani:
 
@@ -48,9 +48,9 @@ Pamene mukukula, konzani thandizo malinga ndi pulani:
 
 [Support Tickets addon](/addons/support-tickets) ingathandize kuyang'anira zopempha thandizo mkati mwa nsanja.
 
-## Ntchito za Kulipiritsa
+## Ntchito za Kulipiritsa {#billing-operations}
 
-### Malipiro Obwerezabwereza
+### Malipiro Obwerezabwereza {#recurring-payments}
 
 Ultimate Multisite imasamalira kulipiritsa kobwerezabwereza zokha kudzera pa payment gateway yanu. Ntchito yanu ndi kuyang'anira:
 
@@ -58,7 +58,7 @@ Ultimate Multisite imasamalira kulipiritsa kobwerezabwereza zokha kudzera pa pay
 - **Dunning**: Khazikitsani njira yobwereza kuyesa yokha kudzera pa payment gateway yanu (Stripe imachita izi bwino)
 - **Zopempha zoletsa**: Mvetsetsani chifukwa chake makasitomala amachoka. Kuletsa kulikonse ndi ndemanga.
 
-### Kuwongolera Umembala
+### Kuwongolera Umembala {#managing-memberships}
 
 Pitani ku **Ultimate Multisite > Memberships** kuti:
 
@@ -69,13 +69,13 @@ Pitani ku **Ultimate Multisite > Memberships** kuti:
 
 Onani [Kuwongolera Umembala](/user-guide/administration/managing-memberships) kuti mupeze buku lonse lofotokozera.
 
-### Ma Invoice
+### Ma Invoice {#invoicing}
 
 Onetsetsani kuti ma invoice amapangidwa molondola pa malipiro aliwonse. Makasitomala angafunike ma invoice popereka lipoti la ndalama za bizinesi. Onani [Kuwongolera Malipiro ndi Ma Invoice](/user-guide/administration/managing-payments-and-invoices).
 
-## Kukonza Nsanja
+## Kukonza Nsanja {#platform-maintenance}
 
-### Zosintha za WordPress ndi Mapulagini
+### Zosintha za WordPress ndi Mapulagini {#wordpress-and-plugin-updates}
 
 Monga woyang'anira network, muli ndi udindo wa:
 
@@ -88,14 +88,14 @@ Monga woyang'anira network, muli ndi udindo wa:
 Kusintha kosweka kumakhudza tsamba lililonse la kasitomala pa network yanu. Nthawi zonse yesani zosintha pa kopi ya staging ya network yanu kaye.
 :::
 
-### Chitetezo
+### Chitetezo {#security}
 
 - Sungani mapulogalamu onse ali atsopano
 - Gwiritsani ntchito ma password amphamvu ndi two-factor authentication pa ma account a admin
 - Yang'anirani zochitika zokayikitsa
 - Khalani ndi pulani ya zochitika za chitetezo
 
-### Magwiridwe Antchito
+### Magwiridwe Antchito {#performance}
 
 Pamene network yanu ikukula, yang'anirani:
 
@@ -105,9 +105,9 @@ Pamene network yanu ikukula, yang'anirani:
 
 Ganizirani kukhazikitsa caching (page cache, object cache) ndi CDN ngati simunachite kale. [Cloudflare integration](/user-guide/host-integrations/cloudflare) imasamalira zambiri mwa izi.
 
-## Kuwongolera Moyo wa Kasitomala
+## Kuwongolera Moyo wa Kasitomala {#customer-lifecycle-management}
 
-### Kuchepetsa Churn
+### Kuchepetsa Churn {#reducing-churn}
 
 Churn ndi peresenti ya makasitomala omwe amaletsa mwezi uliwonse. Kwa bizinesi ya subscription, kuchepetsa churn n'kofunika mofanana ndi kupeza makasitomala atsopano.
 
@@ -119,7 +119,7 @@ Churn ndi peresenti ya makasitomala omwe amaletsa mwezi uliwonse. Kwa bizinesi y
 - Anapeza njira ina yotsika mtengo → limbikitsani phindu la niche yanu
 - Bizinesi yawo inatsekedwa → sizingapeweke, koma tsatirani izi padera
 
-### Kulimbikitsa Kukweza
+### Kulimbikitsa Kukweza {#encouraging-upgrades}
 
 Makasitomala a Starter omwe akuchita bwino ayenera kulimbikitsidwa kukweza:
 
@@ -127,7 +127,7 @@ Makasitomala a Starter omwe akuchita bwino ayenera kulimbikitsidwa kukweza:
 - Tumizani maimelo olunjika omwe akuwonetsa ma feature a pulani ya Growth omwe angawathandize
 - Sonyezani zomwe makasitomala a Growth/Pro apanga
 
-### Ma Campaign Obwezera
+### Ma Campaign Obwezera {#win-back-campaigns}
 
 Kasitomala akaletsa:
 
@@ -135,30 +135,30 @@ Kasitomala akaletsa:
 2. Yankhani nkhawa yake ngati n'kotheka
 3. Perekani discount kuti abwerere (masiku 30-60 pambuyo poletsa)
 
-## Zochita za Sabata Lililonse ndi Mwezi Uliwonse
+## Zochita za Sabata Lililonse ndi Mwezi Uliwonse {#weekly-and-monthly-routines}
 
-### Sabata Lililonse
+### Sabata Lililonse {#weekly}
 
 - Unikani olembetsa atsopano ndi oletsa
 - Yankhani ma ticket onse otseguka a thandizo
 - Onani magwiridwe a nsanja ndi uptime
 - Unikani malipiro aliwonse olephera
 
-### Mwezi Uliwonse
+### Mwezi Uliwonse {#monthly}
 
 - Santhulani ma metric ofunika (MRR, churn, makasitomala atsopano, zokweza)
 - Gwiritsani ntchito zosintha za WordPress ndi mapulagini (pambuyo pa kuyesa pa staging)
 - Unikani ndi kusintha nkhokwe ya chidziwitso kutengera ma pattern a thandizo
 - Tumizani newsletter kapena update kwa makasitomala (ma feature atsopano, malangizo, nkhani za makampani a fitness)
 
-### Kotala Iliyonse
+### Kotala Iliyonse {#quarterly}
 
 - Unikani mitengo poyerekeza ndi opikisana nawo ndi ndemanga za makasitomala
 - Unikani mapangidwe a template -- kodi akufunika kutsitsimutsidwa?
 - Yesani mphamvu ya hosting -- kodi muyenera kukulitsa?
 - Unikani ndi kukonza onboarding kutengera data ya activation
 
-## Zomwe Tinapanga mu Phunziro Ili
+## Zomwe Tinapanga mu Phunziro Ili {#what-we-built-this-lesson}
 
 - **Njira za tsiku ndi tsiku zowunikira** uptime, kulembetsa, malipiro, ndi chithandizo
 - **Kapangidwe ka chithandizo ka magawo** kogwirizana ndi milingo ya plan

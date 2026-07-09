@@ -3,15 +3,15 @@ title: 'Bài học 11: Tìm kiếm khách hàng'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Bài 11: Tìm kiếm Khách hàng
+# Bài 11: Tìm kiếm Khách hàng {#lesson-11-finding-customers}
 
 Một nền tảng tuyệt vời nhưng không có khách hàng thì cũng chỉ là một sở thích. Bài học này sẽ hướng dẫn bạn cách thu hút khách hàng trong một lĩnh vực ngách cụ thể — những chiến lược hoạt động hiệu quả vì bạn tập trung vào một ngành nghề duy nhất.
 
-## Chúng ta đã dừng ở đâu
+## Chúng ta đã dừng ở đâu {#where-we-left-off}
 
 FitSite đã hoạt động. Giờ chúng ta cần các chủ studio thể hình tìm thấy nó và đăng ký sử dụng.
 
-## Tại sao Tiếp cận Thị trường Ngách lại Khác biệt
+## Tại sao Tiếp cận Thị trường Ngách lại Khác biệt {#why-niche-acquisition-is-different}
 
 Khi bạn bán hàng cho tất cả mọi người, bạn phải cạnh tranh để thu hút sự chú ý trong một thị trường ồn ào. Khi bạn bán hàng cho một thị trường ngách, bạn có những lợi thế sau:
 
@@ -19,17 +19,17 @@ Khi bạn bán hàng cho tất cả mọi người, bạn phải cạnh tranh đ
 - **Thông điệp của bạn chạm đến người nghe ngay lập tức** — cụm từ "website cho studio thể hình" sẽ khiến chủ phòng gym dừng lướt mạng
 - **Giới thiệu lan tỏa theo cấp số nhân** — các chủ studio thể hình biết những chủ studio thể hình khác
 
-## Kênh 1: Tiếp cận Trực tiếp
+## Kênh 1: Tiếp cận Trực tiếp {#channel-1-direct-outreach}
 
 Cách nhanh nhất để có những khách hàng đầu tiên là tiếp cận cá nhân, trực tiếp.
 
-### Tìm kiếm Khách hàng Tiềm năng
+### Tìm kiếm Khách hàng Tiềm năng {#find-prospects}
 
 - Tìm kiếm trên Google Maps các studio thể hình, phòng gym và huấn luyện viên cá nhân trong khu vực của bạn
 - Truy cập các website hiện tại của họ (hoặc ghi chú rằng họ chưa có website)
 - Thu thập thông tin liên hệ từ hồ sơ Google Business hoặc mạng xã hội của họ
 
-### Đánh giá Tình hình Hiện tại của Họ
+### Đánh giá Tình hình Hiện tại của Họ {#evaluate-their-current-situation}
 
 Với mỗi khách hàng tiềm năng, hãy ghi chú:
 
@@ -37,7 +37,7 @@ Với mỗi khách hàng tiềm năng, hãy ghi chú:
 - **Website kém**: Khách hàng tiềm năng mạnh — cho họ thấy một lựa chọn tốt hơn trông như thế nào
 - **Website tốt**: Khách hàng tiềm năng yếu — họ đã tự giải quyết được vấn đề này
 
-### Thiết lập Liên hệ
+### Thiết lập Liên hệ {#make-contact}
 
 Gửi một email hoặc tin nhắn cá nhân hóa:
 
@@ -48,7 +48,7 @@ Gửi một email hoặc tin nhắn cá nhân hóa:
 
 Đừng gửi email hàng loạt. Việc tiếp cận cá nhân hóa đến 20 khách hàng được nghiên cứu kỹ lưỡng sẽ hiệu quả hơn nhiều so với việc gửi hàng loạt đến 2.000 người.
 
-## Kênh 2: Cộng đồng Ngách
+## Kênh 2: Cộng đồng Ngách {#channel-2-niche-communities}
 
 Các chủ studio thể hình thường tụ tập ở những nơi cụ thể trên mạng:
 
@@ -57,7 +57,7 @@ Các chủ studio thể hình thường tụ tập ở những nơi cụ thể t
 - **Các diễn đàn và bảng thảo luận ngành**
 - **Các nhóm LinkedIn** dành cho chuyên gia thể hình
 
-### Cách Tham gia
+### Cách Tham gia {#how-to-participate}
 
 Đừng tham gia rồi lập tức chào bán sản phẩm của bạn. Thay vào đó:
 
@@ -66,7 +66,7 @@ Các chủ studio thể hình thường tụ tập ở những nơi cụ thể t
 3. **Chia sẻ khi thích hợp** — khi ai đó hỏi về website, hãy chia sẻ nền tảng của bạn một cách tự nhiên
 4. **Tạo nội dung hữu ích** — viết các bài đăng về "những yếu tố nào tạo nên một website studio thể hình tuyệt vời" và dẫn dắt tự nhiên đến nền tảng của bạn
 
-## Kênh 3: Tiếp thị Nội dung (Content Marketing)
+## Kênh 3: Tiếp thị Nội dung (Content Marketing) {#channel-3-content-marketing}
 
 Tạo nội dung mà các chủ studio thể hình tìm kiếm:
 
@@ -77,7 +77,7 @@ Tạo nội dung mà các chủ studio thể hình tìm kiếm:
 
 Xuất bản những nội dung này trên blog marketing FitSite của bạn. Theo thời gian, nội dung này sẽ được các công cụ tìm kiếm xếp hạng và mang lại lưu lượng truy cập tự nhiên từ những người đang tích cực tìm kiếm những gì bạn cung cấp.
 
-## Kênh 4: Hợp tác Đối tác (Partnerships)
+## Kênh 4: Hợp tác Đối tác (Partnerships) {#channel-4-partnerships}
 
 Hợp tác với các doanh nghiệp đã phục vụ các studio thể hình:
 
@@ -88,7 +88,7 @@ Hợp tác với các doanh nghiệp đã phục vụ các studio thể hình:
 
 Đề nghị hoa hồng giới thiệu hoặc quảng bá qua lại. Addon [AffiliateWP](/addons/affiliatewp) có thể giúp bạn thiết lập một chương trình giới thiệu chính thức.
 
-## Kênh 5: Sự kiện Ngành
+## Kênh 5: Sự kiện Ngành {#channel-5-industry-events}
 
 Các sự kiện ngành thể hình giúp bạn tiếp xúc với hàng trăm khách hàng tiềm năng:
 
@@ -99,7 +99,7 @@ Các sự kiện ngành thể hình giúp bạn tiếp xúc với hàng trăm kh
 
 Bạn không cần một ngân sách lớn. Ngay cả việc tham dự với tư cách người tham gia và trò chuyện về những gì bạn làm cũng có thể tạo ra khách hàng tiềm năng.
 
-## Kênh 6: Trang Mẫu (Showcase Sites)
+## Kênh 6: Trang Mẫu (Showcase Sites) {#channel-6-showcase-sites}
 
 Marketing tốt nhất của bạn chính là các website của khách hàng hiện tại. Với sự cho phép:
 
@@ -108,7 +108,7 @@ Marketing tốt nhất của bạn chính là các website của khách hàng hi
 - Yêu cầu các khách hàng hài lòng cung cấp lời chứng thực
 - Khuyến khích khách hàng nhắc đến FitSite khi được hỏi về website của họ
 
-## Thiết lập Chương trình Giới thiệu
+## Thiết lập Chương trình Giới thiệu {#setting-up-a-referral-program}
 
 Truyền miệng là kênh mạnh mẽ nhất của bạn trong một thị trường ngách. Hãy chính thức hóa nó:
 
@@ -116,7 +116,7 @@ Truyền miệng là kênh mạnh mẽ nhất của bạn trong một thị trư
 2. Tặng phần thưởng cho khách hàng hiện tại khi họ giới thiệu (miễn phí một tháng, tín dụng tài khoản, v.v.)
 3. Giúp việc này dễ dàng — cung cấp cho họ một liên kết giới thiệu và một tin nhắn đơn giản để họ chuyển tiếp
 
-## Theo dõi Những gì Hiệu quả
+## Theo dõi Những gì Hiệu quả {#tracking-what-works}
 
 Đối với mỗi kênh, hãy theo dõi:
 
@@ -126,7 +126,7 @@ Truyền miệng là kênh mạnh mẽ nhất của bạn trong một thị trư
 
 Tập trung nguồn lực vào những kênh hoạt động tốt. Cắt bỏ những kênh không hiệu quả.
 
-## Kỳ vọng Thực tế
+## Kỳ vọng Thực tế {#realistic-expectations}
 
 - **Tháng 1-3**: 5-20 khách hàng, chủ yếu từ tiếp cận trực tiếp và cộng đồng
 - **Tháng 4-6**: 20-50 khách hàng, tiếp thị nội dung bắt đầu đóng góp
@@ -134,7 +134,7 @@ Tập trung nguồn lực vào những kênh hoạt động tốt. Cắt bỏ nh
 
 Những con số này có thể thay đổi, nhưng mô hình thì nhất quán: khách hàng ban đầu đến từ nỗ lực trực tiếp, khách hàng sau đến từ hiệu ứng cộng hưởng của nội dung, giới thiệu và uy tín.
 
-## Những gì chúng ta đã xây dựng trong Bài học này
+## Những gì chúng ta đã xây dựng trong Bài học này {#what-we-built-this-lesson}
 
 - **Sáu kênh thu hút khách hàng** được điều chỉnh cho thị trường thể hình
 - **Quy trình tiếp cận trực tiếp** để có những khách hàng đầu tiên

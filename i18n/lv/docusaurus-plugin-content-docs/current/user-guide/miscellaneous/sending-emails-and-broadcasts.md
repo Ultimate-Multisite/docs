@@ -3,13 +3,13 @@ title: E-pasta ziņojumu un apraižu sūtīšana
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-pastu un apraižu sūtīšana (v2)
+# E-pastu un apraižu sūtīšana (v2) {#sending-emails-and-broadcasts-v2}
 
 _**SVARĪGA PIEZĪME: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
 Ultimate Multisite ir funkcija, kas ļaus jums sazināties ar klientiem, nosūtot e-pastu mērķētam lietotājam vai lietotāju grupai, kā arī nosūtot paziņojumus viņu administrēšanas Dashboard, lai izplatītu paziņojumus
 
-## Pievienojiet administrēšanas paziņojumus savu klientu Dashboard ar apraidēm
+## Pievienojiet administrēšanas paziņojumus savu klientu Dashboard ar apraidēm {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Izmantojot Ultimate Multisite apraides funkciju, varat pievienot **administrēšanas paziņojumus** sava lietotāja apakšvietnes administrēšanas Dashboard.
 
@@ -51,7 +51,7 @@ Pēc ziņojuma izveidošanas varat nospiest pogu **Sūtīt**.
 
 Un tas arī viss. Administrēšanas paziņojumam nekavējoties vajadzētu parādīties jūsu lietotāja Dashboard.
 
-## Sūtiet e-pastus saviem klientiem
+## Sūtiet e-pastus saviem klientiem {#send-emails-to-your-customers}
 
 Izmantojot Ultimate Multisite apraides funkciju, varat nosūtīt e-pastu saviem lietotājiem. Jums ir iespēja nosūtīt e-pastu tikai konkrētiem lietotājiem vai mērķēt uz konkrētu lietotāju grupu, pamatojoties uz produktu vai plānu, kuram viņi ir abonēti.
 
@@ -81,11 +81,11 @@ Pēc ziņojuma izveidošanas varat nospiest pogu **Sūtīt**.
 
 Un tik vienkārši ir nosūtīt e-pastu saviem galalietotājiem, izmantojot apraides funkciju.
 
-## Sistēmas e-pasti
+## Sistēmas e-pasti {#system-emails}
 
 Sistēmas e-pasti Ultimate Multisite ir tie **automātiskie paziņojumi**, kurus sistēma nosūta pēc noteiktām darbībām, piemēram, reģistrācijas, maksājuma, domēna kartēšanas utt. Šos e-pastus var rediģēt vai modificēt Ultimate Multisite iestatījumos. Tam ir arī funkcija, kas ļaus jums atiestatīt un importēt esošos iestatījumus no citas Ultimate Multisite instalācijas.
 
-### Atiestatīšana un importēšana
+### Atiestatīšana un importēšana {#resetting--importing}
 
 Jaunas Ultimate Multisite versijas, kā arī papildinājumi, laiku pa laikam var reģistrēt un reģistrēs jaunus e-pastus.
 
@@ -93,7 +93,7 @@ Lai novērstu konfliktus un citas problēmas, **mēs automātiski nepievienosim 
 
 Tomēr superadministratori un aģenti var importēt šos nesen reģistrētos e-pastus, izmantojot importēšanas rīku. Šis process izveidos jaunu sistēmas e-pastu ar jaunās e-pasta veidnes saturu un konfigurāciju, ļaujot superadministratoram veikt jebkādas vēlamās izmaiņas vai saglabāt tos tādus, kādi tie ir.
 
-#### Kā importēt sistēmas e-pastus
+#### Kā importēt sistēmas e-pastus {#how-to-import-system-emails}
 
 Dodieties uz savu Ultimate Multisite iestatījumu lapu un pārejiet uz cilni **E-pasti**.
 
@@ -111,7 +111,7 @@ Pēc tam varat pārslēgt opciju Importēt e-pastus, lai redzētu, kuri sistēma
 
 <!-- Ekrānuzņēmums nav pieejams: atiestatīšanas un importēšanas modālais logs ar izvērstām e-pasta importēšanas opcijām -->
 
-#### Sistēmas e-pastu atiestatīšana
+#### Sistēmas e-pastu atiestatīšana {#reseting-system-emails}
 
 Citreiz jūs sapratīsiet, ka izmaiņas, ko veicāt konkrētā e-pasta veidnē, jums vairs neder, un vēlēsieties to atiestatīt uz tās **noklusējuma stāvokli**.
 

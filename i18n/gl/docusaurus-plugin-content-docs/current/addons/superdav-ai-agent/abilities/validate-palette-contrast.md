@@ -3,15 +3,15 @@ title: Validar o contraste da paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validar o contraste da paleta
+# Validar o contraste da paleta {#validate-palette-contrast}
 
 A capacidade **Validate Palette Contrast** comproba pares de cores na túa paleta de deseño para verificar o cumprimento das WCAG (Web Content Accessibility Guidelines) antes de aplicalos ao teu tema.
 
-## Visión xeral
+## Visión xeral {#overview}
 
 Esta capacidade garante que o esquema de cores do teu sitio cumpra os estándares de accesibilidade validando as relacións de contraste entre as cores do texto e do fondo. Axuda a evitar combinacións de cores que poderían resultar difíciles de ler para usuarios con discapacidades visuais.
 
-## Formato de entrada
+## Formato de entrada {#input-format}
 
 A capacidade acepta unha paleta de cores como entrada:
 
@@ -35,7 +35,7 @@ A capacidade acepta unha paleta de cores como entrada:
 }
 ```
 
-### Parámetros
+### Parámetros {#parameters}
 
 | Parámetro | Tipo | Obrigatorio | Descrición |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ A capacidade acepta unha paleta de cores como entrada:
 | `wcag_level` | string | Non | Nivel de cumprimento WCAG: "A", "AA" (predeterminado) ou "AAA" |
 | `pairs_to_check` | array | Non | Pares de cores específicos para validar (p. ex., `["primary-text", "background-text"]`) |
 
-## Niveis WCAG comprobados
+## Niveis WCAG comprobados {#wcag-levels-checked}
 
 A capacidade valida as relacións de contraste segundo os estándares WCAG:
 
@@ -56,7 +56,7 @@ A capacidade valida as relacións de contraste segundo os estándares WCAG:
 - **Texto normal** — texto máis pequeno ca 18pt (ou 14pt en negra)
 - **Texto grande** — texto de 18pt ou máis (ou 14pt en negra ou máis grande)
 
-## Esquema de saída
+## Esquema de saída {#output-schema}
 
 A capacidade devolve un informe detallado de validación:
 
@@ -95,7 +95,7 @@ A capacidade devolve un informe detallado de validación:
 }
 ```
 
-### Campos de saída
+### Campos de saída {#output-fields}
 
 | Campo | Tipo | Descrición |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ A capacidade devolve un informe detallado de validación:
 | `status` | string | "pass" ou "fail" para cada par |
 | `recommendations` | array | Suxestións para mellorar os pares que fallan |
 
-## Exemplo de uso
+## Exemplo de uso {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ A capacidade valida todas as combinacións de cores e devolve:
 - ✅ Fondo + Texto: relación 12.1:1 (cumpre WCAG AAA)
 - Global: cumpre WCAG AA
 
-## Integración con Theme Builder
+## Integración con Theme Builder {#integration-with-theme-builder}
 
 Ao usar a selección de dirección de deseño de Theme Builder, a capacidade Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Ao usar a selección de dirección de deseño de Theme Builder, a capacidade Val
 4. Proporciona recomendacións para pares non conformes
 5. Impide aplicar esquemas de cores inaccesibles
 
-## Boas prácticas
+## Boas prácticas {#best-practices}
 
 - **Comeza co nivel AA** — WCAG AA é o estándar para a maioría dos sitios web
 - **Proba antes de aplicar** — valida a túa paleta antes de comprometerte cun deseño
@@ -137,7 +137,7 @@ Ao usar a selección de dirección de deseño de Theme Builder, a capacidade Val
 - **Considera as preferencias dos usuarios** — algúns usuarios poden ter sensibilidade adicional ás cores
 - **Usa comprobadores de contraste** — combina esta capacidade con ferramentas do navegador para a verificación
 
-## Pares que fallan e recomendacións
+## Pares que fallan e recomendacións {#failing-pairs-and-recommendations}
 
 Se un par de cores falla a validación, a capacidade proporciona recomendacións:
 
@@ -155,7 +155,7 @@ Se un par de cores falla a validación, a capacidade proporciona recomendacións
 }
 ```
 
-## Capacidades relacionadas
+## Capacidades relacionadas {#related-abilities}
 
 - [Xerar Logo SVG](./generate-logo-svg.md) — crea logotipos coa túa paleta de cores validada
 - [Crear menú](./create-menu.md) — constrúe a navegación con cores accesibles

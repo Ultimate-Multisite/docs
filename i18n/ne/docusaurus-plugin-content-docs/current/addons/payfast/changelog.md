@@ -3,7 +3,7 @@ title: PayFast परिवर्तन अभिलेख
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast परिवर्तन लग
+# PayFast परिवर्तन लग {#payfast-changelog}
 
 संस्करण: 1.0.2 - 2025-09-28 मा जारी
 

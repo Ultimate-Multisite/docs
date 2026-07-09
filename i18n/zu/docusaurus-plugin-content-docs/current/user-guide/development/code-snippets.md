@@ -3,7 +3,7 @@ title: Izingcezu Zekhodi
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Izingcezu zekhodi ze-v2
+# Izingcezu zekhodi ze-v2 {#code-snippets-for-v2}
 
 Empeleni, izingcezu zekhodi ze-**WordPress** zisetshenziselwa ukwenza izenzo ezithile ebezingase zidinge isandiso esincane esizinikele. Izingcezu ezinjalo zekhodi zifakwa kwelinye lamafayela ayisisekelo e-WordPress noma e-theme (ngokuvamile ifayela le-functions.php le-theme yakho) noma zingasetshenziswa njenge-MU plugin.
 
@@ -15,13 +15,13 @@ Kulesi sihloko sizokubonisa izingcezu zekhodi ezintathu ezingasetshenziswa ne-**
 
   * [**Ukulungisa izinkinga ze-CORS ngama-Font-Icons kuma-domain amamephiwe**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Ukushintsha indawo yento yemenyu ye-Account
+## Ukushintsha indawo yento yemenyu ye-Account {#changing-the-position-of-the-account-menu-item}
 
 Ukuze ushintshe indawo yento yemenyu ye-Account ku-Dashboard yekhasimende lakho, mane ungeze ingcezu yekhodi elandelayo ku-functions.php ye-theme esebenzayo yesayithi lakho eliyinhloko. Ungaphinde ufake le ngcezu ngaphakathi kwenye yama-mu-plugins akho noma izandiso ezenziwe ngokwezifiso.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## Indlela yokuhlola ukuthi umsebenzisi ungaphansi kohlelo olunikeziwe futhi/noma unokubhaliselwe okusebenzayo
+## Indlela yokuhlola ukuthi umsebenzisi ungaphansi kohlelo olunikeziwe futhi/noma unokubhaliselwe okusebenzayo {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Njengomlawuli wenethiwekhi, ungase udinge ukudala imisebenzi eyenziwe ngokwezifiso ezokwenza izenzo eziyisisekelo noma yenze isevisi/isici sitholakale eqenjini elikhethiwe lababhalisile noma abasebenzisi bokugcina, ngokusekelwe esimweni sokubhaliselwe kwabo kanye nohlelo ababhalisele ngaphansi kwalo.
 
@@ -47,8 +47,8 @@ Qaphela ukuthi abasebenzisi bangabhaliselwa kuphela **Uhlelo** , hhayi Iphakheji
 
 ![Uhlu lwemikhiqizo olubonisa ama-ID wezinhlelo](/img/admin/products-list.png)
 
-## Ukulungisa izinkinga ze-CORS ngama-Font-Icons kuma-domain amamephiwe
-## Ukulungisa izinkinga ze-CORS ngama-Font-Icons kuma-domain amamephiwe
+## Ukulungisa izinkinga ze-CORS ngama-Font-Icons kuma-domain amamephiwe {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Ukulungisa izinkinga ze-CORS ngama-Font-Icons kuma-domain amamephiwe {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Ngemva kokumapha i-domain kusayithi elingaphansi, ungase uthole ukuthi isayithi linenkinga yokulayisha amafonti enziwe ngokwezifiso. Lokho kubangelwa ukuvinjwa kwe-cross-origin kuzilungiselelo zeseva yakho.
 
@@ -56,13 +56,13 @@ Njengoba amafayela amafonti cishe njalo elayishwa ngokuqondile ku-CSS, isandiso 
 
 Ngezansi kunezingcezu zekhodi zokulungisa inkinga ye-Apache ne-NGINX. Lezi zinguquko zidinga ulwazi oluthuthukile lwamafayela okulungiselela iseva (amafayela e-.htaccess namafayela e-config e-NGINX). Uma ungakhululekile ukwenza lezo zinguquko ngokwakho, thumela leli khasi kuma-ejenti osekelo omhlinzeki wakho wokusingatha lapho udinga usizo.
 
-### Apache
+### Apache {#apache}
 
 Kufayela lakho le-.htaccess, engeza:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 Kufayela lakho le-config leseva (indawo iyahluka kuseva kuya kuseva), engeza:
 

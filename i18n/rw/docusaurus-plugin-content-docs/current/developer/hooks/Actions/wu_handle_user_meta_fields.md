@@ -4,11 +4,11 @@ title: Igikorwa - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Igikorwa: wu_handle_user_meta_fields
+# Igikorwa: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Emerera abategura plugin kubika amakuru ya meta y'umukoresha mu buryo butandukanye niba babikeneye.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Emerera abategura plugin kubika amakuru ya meta y'umukoresha mu buryo butandukan
 | $customer | `\Customer` | Ikintu cy'umukiriya wa Ultimate Multisite. |
 | $checkout | `\Checkout` | Icyiciro cya checkout. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.0.4
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) ku murongo 1244

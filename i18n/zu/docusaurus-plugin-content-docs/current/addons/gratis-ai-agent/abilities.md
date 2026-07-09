@@ -3,7 +3,7 @@ title: Inkomba Yamakhono
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Inkomba Yamakhono
+# Inkomba Yamakhono {#abilities-reference}
 
 Amakhono ayizenzo eziyisisekelo i-Gratis AI Agent engazibiza ekufakweni kwakho kwe-WordPress. Ikhono ngalinye liyikilasi le-PHP elibhalisiwe eliveza i-schema ye-JSON — i-agent ifunda le schema ngesikhathi sokusebenza ukuze iqonde ukuthi yimaphi amapharamitha adingekayo nokuthi ikhono libuyisa ini.
 
@@ -11,11 +11,11 @@ Leli khasi libhala wonke amakhono ahambisana ne-Gratis AI Agent v1.9.0.
 
 ---
 
-## Izinhlobo Zokuthunyelwe Ezenziwe Ngokwezifiso
+## Izinhlobo Zokuthunyelwe Ezenziwe Ngokwezifiso {#custom-post-types}
 
 Lawa makhono aphatha izinhlobo zokuthunyelwe ezenziwe ngokwezifiso (CPTs) ezibhaliswe nge-agent. Ukubhaliswa kugcinwa etafuleni lezinketho ze-WordPress ukuze kuqhubeke nokuba khona ngemva kokuthi plugin ivaliwe bese ivuselelwa futhi.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Ibhalisa uhlobo olusha lokuthunyelwe olwenziwe ngokwezifiso.
 
@@ -50,7 +50,7 @@ Ibhalisa uhlobo olusha lokuthunyelwe olwenziwe ngokwezifiso.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Kubuyisa zonke izinhlobo zokuthunyelwe ezenziwe ngokwezifiso ezibhaliswe yi-agent.
 
@@ -73,7 +73,7 @@ Kubuyisa zonke izinhlobo zokuthunyelwe ezenziwe ngokwezifiso ezibhaliswe yi-agen
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Isusa ukubhaliswa kohlobo lokuthunyelwe olwenziwe ngokwezifiso olwalubhaliswe ngaphambilini yi-agent. Okuthunyelwe okukhona kwalolo hlobo kuhlala kusizindalwazi kodwa akusatholakali ngohlobo lokuthunyelwe.
 
@@ -87,11 +87,11 @@ Isusa ukubhaliswa kohlobo lokuthunyelwe olwenziwe ngokwezifiso olwalubhaliswe ng
 
 ---
 
-## Ama-Taxonomies Enziwe Ngokwezifiso
+## Ama-Taxonomies Enziwe Ngokwezifiso {#custom-taxonomies}
 
 Lawa makhono aphatha ama-taxonomies enziwe ngokwezifiso. Njengama-CPTs, ukubhaliswa kwama-taxonomy kugcinwa.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Ibhalisa i-taxonomy entsha eyenziwe ngokwezifiso.
 
@@ -123,7 +123,7 @@ Ibhalisa i-taxonomy entsha eyenziwe ngokwezifiso.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Kubuyisa wonke ama-taxonomies enziwe ngokwezifiso abhaliswe yi-agent.
 
@@ -146,7 +146,7 @@ Kubuyisa wonke ama-taxonomies enziwe ngokwezifiso abhaliswe yi-agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Isusa ukubhaliswa kwe-taxonomy eyenziwe ngokwezifiso eyayibhaliswe ngaphambilini yi-agent.
 
@@ -160,11 +160,11 @@ Isusa ukubhaliswa kwe-taxonomy eyenziwe ngokwezifiso eyayibhaliswe ngaphambilini
 
 ---
 
-## Uhlelo Lokuklama
+## Uhlelo Lokuklama {#design-system}
 
 Amakhono ohlelo lokuklama ashintsha ukubukeka okubukwayo kwe-site ye-WordPress — kusukela ku-CSS eyenziwe ngokwezifiso kuya kuma-pattern e-block kanye ne-logo ye-site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Yengeza i-CSS ku-`<head>` ye-site nge-`wp_add_inline_style`. I-CSS igcinwa enkethweni ye-`gratis_ai_agent_custom_css` futhi isuswa emgqeni ngokuhlanzekile lapho ikhono lisethwa kabusha.
 
@@ -190,7 +190,7 @@ Yengeza i-CSS ku-`<head>` ye-site nge-`wp_add_inline_style`. I-CSS igcinwa enket
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Ibhalisa i-pattern ye-block ephinde isetshenziswe kulabhulali yama-pattern ye-WordPress.
 
@@ -209,7 +209,7 @@ Ibhalisa i-pattern ye-block ephinde isetshenziswe kulabhulali yama-pattern ye-Wo
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Ibala wonke ama-pattern e-block abhaliswe yi-agent.
 
@@ -231,7 +231,7 @@ Ibala wonke ama-pattern e-block abhaliswe yi-agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Kusetha ilogo yesayithi le-WordPress ibe yi-ID yokunamathiselwe enikeziwe noma i-URL yesithombe esikude. Lapho kunikezwa i-URL, isithombe siyalandwa futhi singeniswe ku-Media Library.
 
@@ -248,7 +248,7 @@ Kufanele kunikezwe okukodwa kokuthi `attachment_id` noma `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Kusebenzisa i-preset enegama yombala/typography ku-`theme.json` (noma `global-styles`) yetimu esebenzayo. Ama-preset angamaphakheji akhethwe futhi agcinwa ithimba le-Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Kusebenzisa i-preset enegama yombala/typography ku-`theme.json` (noma `global-st
 
 ---
 
-## Izitayela Zomhlaba Wonke
+## Izitayela Zomhlaba Wonke {#global-styles}
 
 Amakhono e-Global Styles afunda futhi abhale amanani e-theme.json nge-WordPress Global Styles API, ethinta wonke amabhulokhi nama-template kusayithi lonke.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Kubuyisa ukucushwa kwamanje kwezitayela zomhlaba wonke.
 
@@ -291,7 +291,7 @@ Kubuyisa ukucushwa kwamanje kwezitayela zomhlaba wonke.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Kubuyekeza inani elilodwa noma amaningi ekucushweni kwezitayela zomhlaba wonke.
 
@@ -318,7 +318,7 @@ Kubuyekeza inani elilodwa noma amaningi ekucushweni kwezitayela zomhlaba wonke.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Kusetha kabusha zonke izinguquko zezitayela zomhlaba wonke ezisetshenziswe yi-agent, kubuyiselwe okuzenzakalelayo kwetimu.
 
@@ -328,11 +328,11 @@ Kusetha kabusha zonke izinguquko zezitayela zomhlaba wonke ezisetshenziswe yi-ag
 
 ---
 
-## Amamenyu Okuzulazula
+## Amamenyu Okuzulazula {#navigation-menus}
 
 Amakhono e-Navigation Menu akha futhi aphathe amamenyu e-WordPress nav nezinto zawo.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Kwakha imenyu entsha yokuzulazula ye-WordPress.
 
@@ -347,7 +347,7 @@ Kwakha imenyu entsha yokuzulazula ye-WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Kuqamba kabusha imenyu noma kuyabele kabusha endaweni yetimu.
 
@@ -363,7 +363,7 @@ Kuqamba kabusha imenyu noma kuyabele kabusha endaweni yetimu.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Kwengeza into kumenyu yokuzulazula ekhona.
 
@@ -383,7 +383,7 @@ Kwengeza into kumenyu yokuzulazula ekhona.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Kususa into kumenyu yokuzulazula.
 
@@ -397,7 +397,7 @@ Kususa into kumenyu yokuzulazula.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Kubala wonke amamenyu okuzulazula e-WordPress, kuhlanganise nezindawo zawo zetimu azabelwe kuzo.
 
@@ -420,11 +420,11 @@ Kubala wonke amamenyu okuzulazula e-WordPress, kuhlanganise nezindawo zawo zetim
 
 ---
 
-## Ukuphathwa Kwezinketho
+## Ukuphathwa Kwezinketho {#options-management}
 
 Amakhono ezinketho afunda futhi abhale izinketho ze-WordPress nge-`get_option` / `update_option`. Uhlu lokuvimba lokuphepha olwakhelwe ngaphakathi luvimbela ukuguqulwa ngengozi kwezilungiselelo ezibucayi.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Kufunda inketho ye-WordPress.
 
@@ -440,7 +440,7 @@ Kubuyisa iphutha uma `option_name` isohlwini lokuvimba lokuphepha.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Kubhala inketho ye-WordPress.
 
@@ -458,7 +458,7 @@ Ibuyisa iphutha uma `option_name` isohlwini lokuvimba lokuphepha.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Isusa inketho ye-WordPress.
 
@@ -474,7 +474,7 @@ Ibuyisa iphutha uma `option_name` isohlwini lokuvimba lokuphepha.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Ibala izinketho ze-WordPress ezifana nephethini.
 
@@ -498,11 +498,11 @@ Ibala izinketho ze-WordPress ezifana nephethini.
 
 ---
 
-## Ukuphathwa Kokuqukethwe
+## Ukuphathwa Kokuqukethwe {#content-management}
 
 Amakhono Okuphathwa Kokuqukethwe adala futhi ahlele okuthunyelwe namakhasi e-WordPress. Ama-ID okuthunyelwe ayabuyiswa ukuze izinyathelo ezilandelayo ezinhlelweni zamakhono amaningi zikwazi ukubhekisa kokuqukethwe okudaliwe.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Idala okuthunyelwe okusha kwe-WordPress, ikhasi, noma okufakiwe kohlobo lokuthunyelwe olwenziwe ngokwezifiso.
 
@@ -537,7 +537,7 @@ Idala okuthunyelwe okusha kwe-WordPress, ikhasi, noma okufakiwe kohlobo lokuthun
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Ibuyekeza okuthunyelwe noma ikhasi le-WordPress elikhona.
 
@@ -567,7 +567,7 @@ Ibuyekeza okuthunyelwe noma ikhasi le-WordPress elikhona.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Idala okuthunyelwe okuningi ekubizweni okukodwa kwekhono, inciphisa ukubuyela emuva naphambili ngesikhathi sokwakhiwa kwe-site noma ukungenisa okuqukethwe ngobuningi. Okuthunyelwe kudalwa ngokulandelana; uma okukodwa kwehluleka okunye kuyaqhubeka futhi ukwehluleka kubikwa ku-array yemiphumela.
 
@@ -619,7 +619,7 @@ Idala okuthunyelwe okuningi ekubizweni okukodwa kwekhono, inciphisa ukubuyela em
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Inika isithombe esivelele (isithonjana sokuthunyelwe) kokuthunyelwe noma ikhasi elikhona. Yamukela i-ID yokunamathiselwe ekhona ye-Media Library noma i-URL yesithombe esikude; uma kunikezwa i-URL, isithombe siyalandwa futhi singeniswe ngokuzenzakalelayo.
 
@@ -638,7 +638,7 @@ Enye ye-`attachment_id` noma `url` kufanele inikezwe.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Idala ifomu lokuxhumana isebenzisa i-plugin yefomu esebenzayo (Contact Form 7, WPForms, Fluent Forms, noma Gravity Forms, kuya ngokuthi iyiphi efakiwe). Ibuyisa i-shortcode engashumekwa kunoma yikuphi okuthunyelwe noma ikhasi.
 
@@ -691,11 +691,11 @@ Idala ifomu lokuxhumana isebenzisa i-plugin yefomu esebenzayo (Contact Form 7, W
 
 ---
 
-## Ukubuyekeza Okubonakalayo
+## Ukubuyekeza Okubonakalayo {#visual-review}
 
 Amakhono Okubuyekeza Okubonakalayo avumela i-ejenti ukuthi ithwebule izithombe-skrini zamakhasi abukhoma futhi izihlaziye, okuvumela ukubuyekezwa komklamo okuzimelayo, ukuqhathanisa ngaphambi/ngemva, kanye nokuhlolwa kokuhlehla kokubonakalayo ngaphandle kokudinga noma yisiphi isandiso sesiphequluli.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Ithwebula isithombe-skrini sekhasi le-WordPress ku-URL enikeziwe isebenzisa isiphequluli esingenakhanda esiseceleni kweseva. Isithombe sigcinwa ku-Media Library futhi kubuyiselwa i-URL ye-CDN.
 
@@ -724,7 +724,7 @@ Ithwebula isithombe-skrini sekhasi le-WordPress ku-URL enikeziwe isebenzisa isip
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Ithatha izithombe-skrini ezimbili bese ibuyisa isikolo somehluko obonakalayo kanye nesithombe somehluko esigqamisa izindawo ezishintshile. Kuyasiza ukuqinisekisa ukuthi ushintsho lomklamo lukhiqize umphumela olindelekile noma ukuthola ukuhlehla okungahlosiwe.
 
@@ -754,7 +754,7 @@ I-`diff_score` engu-`0.0` isho ukuthi alukho ushintsho olubonakalayo; `1.0` isho
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Ithwebula isithombe-skrini sekhasi bese isithumela kumodeli yolimi ukuze kuhlaziywe ngokubonakalayo. Ibuyisa ukuhlola okuhlelekile okuhlanganisa isakhiwo, i-typography, ukusetshenziswa kombala, kanye nokukhathazeka ngokufinyeleleka.
 
@@ -785,11 +785,11 @@ Ithwebula isithombe-skrini sekhasi bese isithumela kumodeli yolimi ukuze kuhlazi
 
 ---
 
-## Amakhono Afakekayo
+## Amakhono Afakekayo {#installable-abilities}
 
 Irejistri Yamakhono Afakekayo ikuvumela ukuthi welule i-ejenti ngamaphakethe amakhono engeziwe asatshalaliswa njengama-plugin e-WordPress. Iphakethe ngalinye libhalisa ikhono elilodwa noma amaningi lisebenzisa i-API yamakhono ejwayelekile.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Ibuyisa ikhathalogi yamaphakethe amakhono atholakalayo ukuze afakwe kusuka kurejistri.
 
@@ -818,7 +818,7 @@ Ibuyisa ikhathalogi yamaphakethe amakhono atholakalayo ukuze afakwe kusuka kurej
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Ilanda futhi isebenze iphakheji yamakhono kusuka kurejista.
 
@@ -832,7 +832,7 @@ Ilanda futhi isebenze iphakheji yamakhono kusuka kurejista.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Ibuza irejista yamakhono ukuze ithole i-plugin engcono kakhulu yesimo sokusetshenziswa esichaziwe futhi, ngokuzikhethela, iyifake.
 

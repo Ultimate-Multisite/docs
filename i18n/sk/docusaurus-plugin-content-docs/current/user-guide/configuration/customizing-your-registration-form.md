@@ -3,13 +3,13 @@ title: Prispôsobenie vášho registračného formulára
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Prispôsobenie vášho registračného formulára
+# Prispôsobenie vášho registračného formulára {#customizing-your-registration-form}
 
 Aby vaša sieť vyzerala jedinečne oproti všetkým ostatným SaaS postaveným na platforme WordPress, Ultimate Multisite vám umožňuje prispôsobiť registračné a prihlasovacie stránky pomocou našej funkcie **Checkout Forms**.
 
 Hoci sú jednoduchým a flexibilným spôsobom, ako experimentovať s rôznymi prístupmi pri snahe konvertovať nových zákazníkov, väčšinou sa používajú na vytváranie personalizovaných registračných formulárov. Cieľom tohto článku je ukázať vám, ako to môžete urobiť.
 
-## Prihlasovacie a registračné stránky:
+## Prihlasovacie a registračné stránky: {#login-and-registration-pages}
 
 Po inštalácii Ultimate Multisite automaticky vytvorí vlastné prihlasovacie a registračné stránky na vašej hlavnej lokalite. Tieto predvolené stránky môžete kedykoľvek zmeniť tak, že prejdete na stránku **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Teraz sa pozrime na ďalšie možnosti, ktoré sú stále relevantné pre proces
 
 A to sú všetky možnosti súvisiace s prihlásením a registráciou, ktoré môžete prispôsobiť! Po dokončení úprav nezabudnite uložiť svoje nastavenia.
 
-## Používanie viacerých registračných formulárov:
+## Používanie viacerých registračných formulárov: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 ponúka editor checkout formulárov, ktorý vám umožňuje vytvoriť toľko formulárov, koľko chcete, s rôznymi poľami, ponúkanými produktmi atď.
 
@@ -69,7 +69,7 @@ Prípadne môžete upraviť alebo duplikovať formuláre, ktoré už máte, klik
 
 Ak vyberiete jeden krok alebo viac krokov, checkout formulár už bude vopred vyplnený základnými krokmi potrebnými na jeho fungovanie. Potom, ak chcete, doň môžete pridať ďalšie kroky.
 
-### Úprava Checkout Form:
+### Úprava Checkout Form: {#editing-a-checkout-form}
 
 Ako sme už spomenuli, checkout formuláre môžete vytvárať na rôzne účely. V tomto príklade budeme pracovať na registračnom formulári.
 
@@ -131,11 +131,11 @@ Ak chcete získať shortcode svojho formulára, kliknite na **Vygenerovať short
 
 _**Poznámka:** Tento shortcode budete musieť pridať na svoju registračnú stránku, aby sa do nej pridal tento formulár pokladne._
 
-## Predvýber produktov a šablón pomocou URL parametrov:
+## Predvýber produktov a šablón pomocou URL parametrov: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ak chcete vytvoriť prispôsobené cenové tabuľky pre svoje produkty a vo formulári pokladne predvybrať produkt alebo šablónu, ktorú si zákazník vyberie z vašej cenovej tabuľky alebo stránky so šablónami, môžete na to použiť URL parametre.
 
-### **Pre plány:**
+### **Pre plány:** {#for-plans}
 
 Prejdite na **Ultimate Multisite > Produkty > Vybrať plán**. V hornej časti stránky by ste mali vidieť tlačidlo **Kliknutím skopírovať zdieľateľný odkaz**. Toto je odkaz, ktorý môžete použiť na predvýber tohto konkrétneho plánu vo svojom formulári pokladne.
 
@@ -143,7 +143,7 @@ Prejdite na **Ultimate Multisite > Produkty > Vybrať plán**. V hornej časti s
 
 Upozorňujeme, že tento zdieľateľný odkaz je platný iba pre **Plány**. Zdieľateľné odkazy nemôžete používať pre balíky ani služby.
 
-### Pre šablóny:
+### Pre šablóny: {#for-templates}
 
 Ak chcete vo formulári pokladne predvybrať šablóny webu, môžete na URL registračnej stránky použiť parameter: **?template_id=X**. „X“ je potrebné nahradiť **ID číslom šablóny webu**. Ak chcete získať toto číslo, prejdite na **Ultimate Multisite > Weby**.
 

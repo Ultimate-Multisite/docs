@@ -3,11 +3,11 @@ title: Binciken Yankin Kan Kai
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Neman Domain na Header
+# Neman Domain na Header {#header-domain-search}
 
 Yi amfani da wannan saitin idan kana son ƙaramin form a header wanda zai fara neman domain, sannan ya bar abokin ciniki ya zaɓa daga domains da suke samuwa a cikin Ultimate Multisite checkout.
 
-## Bukatu
+## Bukatu {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Yi amfani da wannan saitin idan kana son ƙaramin form a header wanda zai fara n
   - An tsara TLDs da ake tallafawa, misali `com`, `net`, da `org`.
 - Ingantaccen checkout form da ke ƙunshe da filin **Zaɓin Domain**.
 
-## Checkout form
+## Checkout form {#checkout-form}
 
 1. Ƙirƙiri ko gyara checkout form da shafin rajista ke amfani da shi.
 2. Ƙara filayen checkout/account na yau da kullum da ake buƙata, ciki har da **Username**. Ultimate Multisite validation tana ƙin checkout form da ke ɗauke da filin domain kawai.
@@ -30,7 +30,7 @@ Shafin rajista ya kamata ya nuna checkout form, misali:
 [wu_checkout slug="domain-form"]
 ```
 
-## Header form
+## Header form {#header-form}
 
 Ƙara ƙaramin form na `GET` a cikin header na shafi wanda ke aika kalmar nema da aka shigar zuwa shafin checkout a matsayin `domain_name`:
 
@@ -44,7 +44,7 @@ Shafin rajista ya kamata ya nuna checkout form, misali:
 
 Kada a riga a zaɓi domain a cikin JavaScript na header na musamman. Header ya kamata kawai ya wuce da kalmar nema. Script na Domain Seller checkout yana karanta `?domain_name=example`, yana cika akwatin neman checkout, kuma yana gudanar da binciken samuwa domin abokin ciniki ya zaɓa daga domains da aka dawo da su.
 
-## Halin da ake sa ran gani
+## Halin da ake sa ran gani {#expected-behaviour}
 
 Neman `example` a cikin header ya kamata ya buɗe:
 
@@ -61,7 +61,7 @@ Checkout ya kamata sannan ya nuna sakamakon da za a iya zaɓa kamar:
 
 Bayan zaɓar sakamako da yake samuwa, taƙaitaccen oda ya kamata ya ƙunshi samfurin rajistar domain da sunan domain da aka zaɓa.
 
-## Tabbatarwa
+## Tabbatarwa {#verification}
 
 1. Buɗe shafin gida.
 2. Nemi suna tsirara, misali `example`.
@@ -71,7 +71,7 @@ Bayan zaɓar sakamako da yake samuwa, taƙaitaccen oda ya kamata ya ƙunshi samf
 6. Danna **Zaɓi** don domain da yake samuwa.
 7. Tabbatar taƙaitaccen oda ya ƙunshi `Domain Registration - example.com` ko domain da aka zaɓa.
 
-## Gyaran Matsala
+## Gyaran Matsala {#troubleshooting}
 
 - Idan babu jerin da ya bayyana, duba browser network tab don `admin-ajax.php?action=wu_domain_search` kuma tabbatar yana dawo da `domains` ko `results` marasa wofi.
 - Idan checkout form ya kasa validation yayin adanawa, ƙara filayen account da ake buƙata kamar **Username**.

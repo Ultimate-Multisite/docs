@@ -3,11 +3,11 @@ title: Yerleşik Aracılar
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Yerleşik Agents
+# Yerleşik Agents {#built-in-agents}
 
 Gratis AI Agent v1.9.0, her biri odaklanmış bir araç seti, özelleştirilmiş bir sistem istemi ve o alandaki yaygın görevlerle eşleşen başlangıç önerileriyle önceden yapılandırılmış beş yerleşik agents ile gelir. Agents arasında geçiş yapmak, assistant'ın ne yapabileceğini ve nasıl yanıt verdiğini değiştirir — sizin tarafınızda herhangi bir yapılandırma gerekmeden. Superdav AI Agent v1.18.0, ilgili entegrasyonlar yapılandırıldığında bu iş akışlarına takvim farkındalıklı araçlar, hatırlatıcı kayıtları, onay kapıları ve SMS bildirimleri ekleyebilir.
 
-## Agent Nedir?
+## Agent Nedir? {#what-is-an-agent}
 
 Her agent, şunları birleştiren adlandırılmış bir yapılandırma profilidir:
 
@@ -15,7 +15,7 @@ Her agent, şunları birleştiren adlandırılmış bir yapılandırma profilidi
 - **Sistem istemi** — agent'ın tonunu, önceliklerini ve kısıtlarını belirleyen talimatlar
 - **Öneriler** — hızlı başlamanıza yardımcı olmak için sohbet arayüzünde gösterilen önceden yazılmış istemler
 
-## Agent Seçiciye Erişme
+## Agent Seçiciye Erişme {#accessing-the-agent-picker}
 
 1. WordPress yönetici kenar çubuğunda **Gratis AI Agent** panelini açın.
 2. Sohbet başlığının sol üstündeki **agent simgesine** tıklayın (simge, aktif agent'ı yansıtacak şekilde değişir).
@@ -24,9 +24,9 @@ Her agent, şunları birleştiren adlandırılmış bir yapılandırma profilidi
 
 Agents arasında konuşmanın ortasında da geçiş yapabilirsiniz — yeni agent'ın sistem istemi bir sonraki mesajdan itibaren etkili olur.
 
-## Beş Yerleşik Agents
+## Beş Yerleşik Agents {#the-five-built-in-agents}
 
-### İçerik Yazarı
+### İçerik Yazarı {#content-writer}
 
 **Odak:** Gönderiler, sayfalar ve iletişim formları oluşturma ve düzenleme.
 
@@ -47,7 +47,7 @@ Agents arasında konuşmanın ortasında da geçiş yapabilirsiniz — yeni agen
 
 ---
 
-### Site Oluşturucu
+### Site Oluşturucu {#site-builder}
 
 **Odak:** Tek bir istemden uçtan uca web sitesi oluşturma.
 
@@ -70,7 +70,7 @@ Agents arasında konuşmanın ortasında da geçiş yapabilirsiniz — yeni agen
 
 ---
 
-### Tasarım Stüdyosu
+### Tasarım Stüdyosu {#design-studio}
 
 **Odak:** Görsel özelleştirme — renkler, tipografi, CSS ve blok desenleri.
 
@@ -87,7 +87,7 @@ Agents arasında konuşmanın ortasında da geçiş yapabilirsiniz — yeni agen
 - *Ana sayfanın ekran görüntüsünü al ve bana neleri iyileştireceğini söyle.*
 - *Tam genişlikte arka plan görseli ve ortalanmış başlığı olan yeniden kullanılabilir bir hero blok deseni oluştur.*
 
-### Plugin Yöneticisi
+### Plugin Yöneticisi {#plugin-manager}
 
 **Odak:** WordPress pluginlerini keşfetme, kurma ve yönetme.
 
@@ -105,7 +105,7 @@ Agents arasında konuşmanın ortasında da geçiş yapabilirsiniz — yeni agen
 
 ---
 
-### Destek Assistant
+### Destek Assistant {#support-assistant}
 
 **Odak:** Site içeriği, ayarları ve WordPress yapılandırması hakkındaki soruları yanıtlama.
 
@@ -124,7 +124,7 @@ Agents arasında konuşmanın ortasında da geçiş yapabilirsiniz — yeni agen
 
 ---
 
-## Superdav Otomasyon Entegrasyonları
+## Superdav Otomasyon Entegrasyonları {#superdav-automation-integrations}
 
 Superdav AI Agent v1.18.0 entegrasyonları yapılandırıldığında, yerleşik agentlar daha güvenli, zamanlamaya duyarlı otomasyon iş akışlarına katılabilir:
 
@@ -138,11 +138,11 @@ Superdav AI Agent v1.18.0 entegrasyonları yapılandırıldığında, yerleşik 
 
 ---
 
-## Agentları Özelleştirme
+## Agentları Özelleştirme {#customising-agents}
 
 Her yerleşik agent, `gratis_ai_agent_agents` filtresi aracılığıyla genişletilebilir veya değiştirilebilir.
 
-### Mevcut bir agenta özel sistem istemi ekleme
+### Mevcut bir agenta özel sistem istemi ekleme {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Yeni bir agent kaydetme
+### Yeni bir agent kaydetme {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Yeni agent, filtre çalıştıktan hemen sonra Agent Picker'da görünür.
 
-### Yerleşik bir agentı kaldırma
+### Yerleşik bir agentı kaldırma {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

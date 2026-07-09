@@ -3,7 +3,7 @@ title: Preguntas frecuentes
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Preguntas frecuentes
+# Preguntas frecuentes {#frequently-asked-questions}
 
 Aquí tienes algunas **Preguntas frecuentes** que suelen surgir durante las solicitudes de soporte.
 

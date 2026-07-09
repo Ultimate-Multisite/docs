@@ -1,22 +1,22 @@
 ---
 title: Ìṣepọ̀ Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Ìṣepọ̀ Hostinger (hPanel)
+# Ìṣepọ̀ Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Àkótán
+## Àkótán {#overview}
 
 Hostinger jẹ́ olùpèsè ìgbàlejò wẹ́ẹ̀bù tó gbajúmọ̀ pẹ̀lú pánẹ́ẹ̀lì ìṣàkóso òde-òní tí a ń pè ní hPanel. Ìṣepọ̀ Ultimate Multisite Hostinger ń jẹ́ kí ìmúṣẹ́pọ̀ orúkọ ìkápá láàrín Ultimate Multisite àti hPanel ti Hostinger ṣẹlẹ̀ láìfọwọ́ṣọwọ́, kí o lè ṣàkóso àwọn ìbámu orúkọ ìkápá àti àwọn abẹ́-orúkọ ìkápá tààrà láti WordPress admin rẹ.
 
-## Àwọn Ẹ̀yà
+## Àwọn Ẹ̀yà {#features}
 
 - Ṣíṣẹ̀dá orúkọ ìkápá addon láìfọwọ́ṣọwọ́ nínú hPanel
 - Ṣíṣẹ̀dá abẹ́-orúkọ ìkápá láìfọwọ́ṣọwọ́ nínú hPanel (fún àwọn ìfìdí multisite abẹ́-orúkọ ìkápá múlẹ̀)
 - Yíyọ orúkọ ìkápá nígbà tí a bá pa àwọn ìbámu rẹ́
 - Ìṣepọ̀ tó rọrùn pẹ̀lú API ìṣàkóso orúkọ ìkápá ti hPanel
 
-## Àwọn Ìbéèrè
+## Àwọn Ìbéèrè {#requirements}
 
 Láti lo ìṣepọ̀ Hostinger, o nílò:
 
@@ -35,9 +35,9 @@ Ní àṣàyàn, o tún lè ṣàlàyé:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Default API endpoint
 ```
 
-## Àwọn Ìtọ́nisọ́nà Ìṣètò
+## Àwọn Ìtọ́nisọ́nà Ìṣètò {#setup-instructions}
 
-### 1. Ṣẹ̀dá Àmì API Hostinger Rẹ
+### 1. Ṣẹ̀dá Àmì API Hostinger Rẹ {#1-generate-your-hostinger-api-token}
 
 1. Wọlé sí Account Hostinger rẹ kí o sì wọlé sí hPanel
 2. Lọ sí **Ètò Account** → **Àwọn Àmì API**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Default API e
    - Ìṣàkóso abẹ́-orúkọ ìkápá
 6. Daakọ àmì tí a ṣẹ̀dá kí o sì tọ́jú rẹ ní ààbò
 
-### 2. Wá Account ID Rẹ
+### 2. Wá Account ID Rẹ {#2-find-your-account-id}
 
 1. Nínú hPanel, lọ sí **Ètò Account** → **Ìwífún Account**
 2. Account ID rẹ ni a fi hàn lórí ojú-ìwé yìí
 3. Daakọ kí o sì fi ID yìí pamọ́ fún ìgbésẹ̀ tó tẹ̀lé
 
-### 3. Ṣàfikún Constants sí wp-config.php
+### 3. Ṣàfikún Constants sí wp-config.php {#3-add-constants-to-wp-configphp}
 
 Ṣàfikún àwọn constants wọ̀nyí sí fáìlì `wp-config.php` rẹ:
 
@@ -69,7 +69,7 @@ Tí Account Hostinger rẹ bá ń lo endpoint API míì, o lè ṣàdáṣe rẹ
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Mú Ìṣepọ̀ Náà Ṣiṣẹ́
+### 4. Mú Ìṣepọ̀ Náà Ṣiṣẹ́ {#4-enable-the-integration}
 
 1. Nínú WordPress admin rẹ, lọ sí **Ultimate Multisite > Ètò**
 2. Lọ sí taabu **Ìbámu Orúkọ Ìkápá**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Mú ìṣepọ̀ **Hostinger (hPanel)** ṣiṣẹ́
 5. Tẹ **Fi Àwọn Àyípadà Pamọ́**
 
-## Bí Ó Ṣe Ń Ṣiṣẹ́
+## Bí Ó Ṣe Ń Ṣiṣẹ́ {#how-it-works}
 
-### Àwọn Orúkọ Ìkápá Addon
+### Àwọn Orúkọ Ìkápá Addon {#addon-domains}
 
 Nígbà tí o bá ṣe ìbámu orúkọ ìkápá kan nínú Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Nígbà tí o bá ṣe ìbámu orúkọ ìkápá kan nínú Ultimate Multisite:
 2. A ṣètò orúkọ ìkápá náà láti tọ́ka sí àkójọ gbòǹgbò rẹ
 3. Nígbà tí a bá yọ ìbámu orúkọ ìkápá kan, ìṣepọ̀ náà máa yọ orúkọ ìkápá addon náà kúrò nínú hPanel láìfọwọ́ṣọwọ́
 
-### Àwọn Abẹ́-orúkọ Ìkápá
+### Àwọn Abẹ́-orúkọ Ìkápá {#subdomains}
 
 Fún àwọn ìfìdí multisite abẹ́-orúkọ ìkápá múlẹ̀, nígbà tí a bá ṣẹ̀dá site tuntun:
 
@@ -95,7 +95,7 @@ Fún àwọn ìfìdí multisite abẹ́-orúkọ ìkápá múlẹ̀, nígbà tí
 2. Ó fi ìbéèrè ránṣẹ́ sí API ti Hostinger láti ṣàfikún abẹ́-orúkọ ìkápá náà
 3. A ṣètò abẹ́-orúkọ ìkápá náà láti tọ́ka sí àkójọ gbòǹgbò rẹ
 
-## Àwọn Àkíyèsí Pàtàkì
+## Àwọn Àkíyèsí Pàtàkì {#important-notes}
 
 - Ìṣepọ̀ náà ń lo REST API ti Hostinger láti bá Account rẹ sọ̀rọ̀
 - Àmì API rẹ gbọ́dọ̀ ní àwọn àṣẹ tó ṣe pàtàkì fún ìṣàkóso orúkọ ìkápá àti abẹ́-orúkọ ìkápá
@@ -103,33 +103,33 @@ Fún àwọn ìfìdí multisite abẹ́-orúkọ ìkápá múlẹ̀, nígbà tí
 - A ń ṣe àwọn ìbéèrè API ní ààbò lórí HTTPS
 - Pa àmì API rẹ mọ́ ní ààbò, má sì ṣe pín in ní gbangba láé
 
-## Ìtọ́jú Ìṣòro
+## Ìtọ́jú Ìṣòro {#troubleshooting}
 
-### Àwọn Ìṣòro Ìsopọ̀ API
+### Àwọn Ìṣòro Ìsopọ̀ API {#api-connection-issues}
 
 - Ṣàyẹ̀wò pé àmì API rẹ tọ́ àti pé kò tíì parí
 - Ṣàyẹ̀wò pé Account ID rẹ tọ́
 - Rí i dájú pé àmì API rẹ ní àwọn àṣẹ tó ṣe pàtàkì fún ìṣàkóso orúkọ ìkápá
 - Ṣàyẹ̀wò pé Account Hostinger rẹ ṣi ń ṣiṣẹ́ àti pé ó wà ní ipò tó dára
 
-### A Kò Ṣàfikún Orúkọ Ìkápá
+### A Kò Ṣàfikún Orúkọ Ìkápá {#domain-not-added}
 
 - Ṣàyẹ̀wò àwọn àkọsílẹ̀ Ultimate Multisite fún ìfiránṣẹ́ àṣìṣe èyíkéyìí
 - Ṣàyẹ̀wò pé a kò tíì ṣàfikún orúkọ ìkápá náà sí Account Hostinger rẹ tẹ́lẹ̀
 - Rí i dájú pé Account Hostinger rẹ kò tíì dé ààlà rẹ fún àwọn orúkọ ìkápá addon
 - Jẹ́rìí pé orúkọ ìkápá náà tọ́ka dáadáa sí àwọn nameservers Hostinger rẹ
 
-### Àwọn Ìṣòro Ìwé-ẹ̀rí SSL
+### Àwọn Ìṣòro Ìwé-ẹ̀rí SSL {#ssl-certificate-issues}
 
 - Ìṣepọ̀ náà kì í bójú tó fífúnni ní ìwé-ẹ̀rí SSL
 - Hostinger sábà máa ń pèsè àwọn ìwé-ẹ̀rí SSL ọ̀fẹ́ nípasẹ̀ AutoSSL
 - O lè ṣàkóso àwọn ìwé-ẹ̀rí SSL tààrà nínú hPanel lábẹ́ **SSL/TLS**
 - Ní ọ̀nà míì, lo Let's Encrypt pẹ̀lú ẹ̀yà AutoSSL ti Hostinger
 
-## Àtìlẹ́yìn
+## Àtìlẹ́yìn {#support}
 
 Fún ìrànlọ́wọ́ àfikún pẹ̀lú ìṣepọ̀ Hostinger, jọ̀wọ́ tọ́ka sí:
 
 - [Ìwé Ìtọ́nisọ́nà API Hostinger](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ìwé Ìtọ́nisọ́nà Ultimate Multisite](/docs)
+- [Ìwé Ìtọ́nisọ́nà Ultimate Multisite](/)
 - [Àtìlẹ́yìn Ultimate Multisite](https://ultimatemultisite.com/support)

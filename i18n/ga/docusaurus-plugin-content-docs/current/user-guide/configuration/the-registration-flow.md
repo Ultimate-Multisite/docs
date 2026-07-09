@@ -3,13 +3,13 @@ title: An Fhluint Róisiallaíocht
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# An Faocháir Registration (v2)
+# An Faocháir Registration (v2) {#the-registration-flow-v2}
 
 _**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
 
 Is féidir leis na súiliteoirí san áit a chur inregistri go dtí do ngrúpa. Is féidir leo a bheith ag úsáid an form inregistréad atá agat nó link iadúil chun plan ar chuid a bhfháil a bheith ag curte. Ag seo beidh munaí agam conas a chur inregistri do do súiliteoirí ar do ngrúpa ag úsáid na stiúirithe atá ag curte agus conas a tháir sonraí tar éifeachtach tar éifeachtach tar éifeachtach.
 
-## Úsáid an Form Inregistréad:
+## Úsáid an Form Inregistréad: {#using-the-registration-form}
 
 Is é seo an curte inregistréad tráthnacha. Taispeán inregistréad a chur i bhfeidm le **checkout form** agus is é an áit a bheith ag na súiliteoirí a bheith ag curte inregistri ar do ngrúpa agus a bheith ag curte ar plan. Is féidir leat teacht ag curte form inregistréad bunúsach, ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat ag curte ina leat
 
@@ -21,13 +21,13 @@ Má tá siad registered ar plan paid or níl é an t-aistriú email ag cur síos
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Aistriú le Link Shareable:
+## Aistriú le Link Shareable: {#using-a-shareable-link}
 
 Tá an t-aistriú ag cur síos ag úsáid link shareable ag cur isteach ar fáil mar atá an chéad aistriú, ach tá an t-aistriú ag úsáid link shareable, is é an t-aistriú a bheith ag cur chluainn nó template website ar fáil ar an form checkout (cur le cineál seo ar an seachtain Pre-selecting products and templates via URL parameters) nó beidh coupon code ag cur isteach (cur le cineál seo ar an seachtain Using URL Parameters).
 
 Beidh an t-aistriú ag cur síos ag cur chluainn, username, email address, ainm website agus titíl agus eile... ach beidh an plan nó template site atá ag cur chluainn ar fáil go léir.
 
-### Aistriú le Payante Manual:
+### Aistriú le Payante Manual: {#registering-using-manual-payments}
 
 Má níl tú ag cur isteach ar PayPal, Stripe nó aon ghlúin payante eile a chur ar fáil de do Ultimate Multisite nó na haghaidh is é, leat a bheith ag úsáid payante manual don chluainneacha. Mar chuid seo, leat an invoice a sh fóil chun siad a ghairt ar an phroiseas payante a bhfháil ar do chur-bhfháil payante ar fáil tar éis a bheith registered ar do ngrú.
 

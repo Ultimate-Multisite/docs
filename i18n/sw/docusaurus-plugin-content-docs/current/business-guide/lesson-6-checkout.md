@@ -3,15 +3,15 @@ title: 'Somo la 6: Uzoefu wa Kusajili'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Somo la 6: Uzoefu wa Kujiandikisha
+# Somo la 6: Uzoefu wa Kujiandikisha {#lesson-6-the-signup-experience}
 
 Mchakato wa malipo ndio mahali ambapo nia inabadilika kuwa mapato. Mchakato wa kujiandikisha ambao ni wenye kuchanganya au ni wa jumla unamwacha mteja. Mchakato maalum unaozungumza lugha yao na unaohisi rahisi sana ndio unawabadilisha kuwa wateja.
 
-## Popo Tulipoacha
+## Popo Tulipoacha {#where-we-left-off}
 
 FitSite ina templates na mipango iliyowekwa. Sasa tunajenga uzoefu wa kujiandikisha na malipo ambao unawabadilisha wamiliki wa studio za mazoezi kuwa wateja wanaolipa.
 
-## Kuelewa Mchakato wa Kujiandikisha
+## Kuelewa Mchakato wa Kujiandikisha {#understanding-the-registration-flow}
 
 Form za malipo za Ultimate Multisite ni aina ya fomu za hatua nyingi ambazo zinaweza kubadilishwa kabisa. Kwa FitSite, tunataka mchakato ambao:
 
@@ -21,11 +21,11 @@ Form za malipo za Ultimate Multisite ni aina ya fomu za hatua nyingi ambazo zina
 
 Tazama [The Registration Flow](/user-guide/configuration/the-registration-flow) kwa rejea kamili ya kiufundi.
 
-## Kubuni Malipo ya FitSite
+## Kubuni Malipo ya FitSite {#designing-the-fitsite-checkout}
 
 Nenda kwenye **Ultimate Multisite > Checkout Forms** na unda fomu mpya.
 
-### Hatua ya 1: Kuchagua Mpango (Plan Selection)
+### Hatua ya 1: Kuchagua Mpango (Plan Selection) {#step-1-plan-selection}
 
 Jambo la kwanza ambalo mmiliki wa studio ya mazoezi anapaswa kuona ni mipango, iliyowasilishwa kwa maneno anayoelewa.
 
@@ -37,7 +37,7 @@ Jambo la kwanza ambalo mmiliki wa studio ya mazoezi anapaswa kuona ni mipango, i
 "Hifadhi ya GB 1" haimaanishi chochote kwa mmiliki wa gym. "Kila unayohitaji kwa tovuti ya studio ya kitaalamu" inamaanisha kila kitu. Andika maelezo ya mipango kwa lugha ya mteja wako.
 :::
 
-### Hatua ya 2: Kuchagua Template
+### Hatua ya 2: Kuchagua Template {#step-2-template-selection}
 
 Baada ya kuchagua mpango, mteja anachagua template yake ya kuanzia.
 
@@ -45,7 +45,7 @@ Baada ya kuchagua mpango, mteja anachagua template yake ya kuanzia.
 - Templates zinazopatikana zimepitishwa kulingana na mpango ambao wamechagua (iliyowekwa katika Somo la 5)
 - Kila template inapaswa kuwa na picha ya muonyeshaji (preview image) inayoonyesha muundo maalum kwa mazoezi
 
-### Hatua ya 3: Kuunda Akaunti
+### Hatua ya 3: Kuunda Akaunti {#step-3-account-creation}
 
 Weka hili kuwa dogo. Kukusanya tu:
 
@@ -55,27 +55,27 @@ Weka hili kuwa dogo. Kukusanya tu:
 
 Uswaulize habari unazohitaji katika kujiandikisha. Kila sehemu ya ziada inapunguza idadi ya wateja wanaokamilisha usajili.
 
-### Hatua ya 4: Kuweka Tovuti (Site Setup)
+### Hatua ya 4: Kuweka Tovuti (Site Setup) {#step-4-site-setup}
 
 - **Site title**: Jaza kiotomatiki kutoka kwa jina la studio lililoingizwa katika Hatua ya 3
 - **Site URL**: Jitengenezwe kiotomatiki kutoka kwa jina la studio (mfano, `ironworks.fitsite.com`)
 
-### Hatua ya 5: Malipo (Payment)
+### Hatua ya 5: Malipo (Payment) {#step-5-payment}
 
 - Ongeza sehemu ya **Payment**
 - Weka mipangilio yako ya malipo (Stripe [Stripe](/user-guide/payment-gateways/stripe) inashauriwa kwa bili za usajili)
 - Ikiwa uliunda *order bumps* katika Somo la 5, ongeza sehemu ya **Order Bump** kabla ya hatua ya malipo
 
-### Hatua ya 6: Thibitisho (Confirmation)
+### Hatua ya 6: Thibitisho (Confirmation) {#step-6-confirmation}
 
 - Badilisha ujumbe wa uthibitisho kwa lugha maalum kwa mazoezi
 - Mfano: "Tovuti yako ya studio ya mazoezi inaundwa. Utarudi kwenye tovuti yako mpya baada ya sekunde chache."
 
-## Kuongeza Kichocheo cha Kuchagua Kipindi (Period Selection Toggle)
+## Kuongeza Kichocheo cha Kuchagua Kipindi (Period Selection Toggle) {#adding-a-period-selection-toggle}
 
 Ikiwa umeandaa tofauti za bei katika mipango yako (kwa kila mwezi dhidi ya kila mwaka), ongeza sehemu ya **Period Selection** kwenye fomu ya malipo ili wateja waweze kubadilisha kati ya vipindi vya malipo. Tazama [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) kwa maelekezo.
 
-## Kuweka Mipangilio ya Malipo
+## Kuweka Mipangilio ya Malipo {#configuring-payment}
 
 Ikiwa bado hujawaweka mipangilio ya malipo:
 
@@ -85,7 +85,7 @@ Ikiwa bado hujawaweka mipangilio ya malipo:
 
 Tazama [Getting Paid](/user-guide/payment-gateways/getting-paid) kwa maelezo ya jinsi malipo yanavyofika kwenye akaunti yako.
 
-## Kujaribu Mchakato (Testing the Flow)
+## Kujaribu Mchakato (Testing the Flow) {#testing-the-flow}
 
 Kabla ya kuendelea, kamilisha usajili kamili wa majaribio:
 
@@ -105,7 +105,7 @@ Thibitisha kwamba:
 - [ ] Mteja anafika kwenye tovuti inayofanya kazi na template iliyochaguliwa
 - [ ] Barua pepe za uthibitisho zinatumia lugha maalum kwa mazoezi
 
-## Mtandao wa FitSite Hadi Sasa
+## Mtandao wa FitSite Hadi Sasa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Tulichojenga Somo Hili
+## Tulichojenga Somo Hili {#what-we-built-this-lesson}
 
 - **Fomu ya malipo ya hatua nyingi** iliyobadilishwa kwa wamiliki wa studio za mazoezi
 - **Lugha maalum kwa sekta** kote mchakato wa kujiandikisha

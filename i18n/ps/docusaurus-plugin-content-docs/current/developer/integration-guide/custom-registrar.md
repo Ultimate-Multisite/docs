@@ -3,13 +3,13 @@ title: د دودیز راجسترار ادغام جوړول
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# د دودیز راجسترار ادغام جوړول
+# د دودیز راجسترار ادغام جوړول {#building-a-custom-registrar-integration}
 
 د ډومېن پلورونکي اضافي برخه د **ادغام ثبت‌لړ** بڼه کاروي. هر راجسترار د PHP یو کلاس دی چې `Domain_Selling_Capability` پلي کوي او ځان د `wu_domain_seller_register_capabilities` د عمل hook له لارې ثبتوي.
 
 دا لارښود ښيي چې څنګه یو دودیز راجسترار ونښلوئ.
 
-## انترفېس
+## انترفېس {#the-interface}
 
 ستاسو کلاس باید `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` پلي کړي او `WP_Ultimo\Integrations\Base_Capability_Module` وغځوي.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### اختیاري مېتودونه
+### اختیاري مېتودونه {#optional-methods}
 
 دا پلي کړئ څو اضافي ځانګړتیاوې فعالې شي. اضافي برخه د `method_exists()` له لارې ملاتړ پېژني:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | د ډومېن لېږد (بهر ته) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | د ډومېن لېږد (دننه ته) |
 
-### د راستنېدونکي ارزښت دود
+### د راستنېدونکي ارزښت دود {#return-value-convention}
 
 ټول مېتودونه لږ تر لږه د `success` کیلي لرونکی یو ارې راستنوي:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## ستاسو د وړتیا ثبتول
+## ستاسو د وړتیا ثبتول {#registering-your-capability}
 
 خپل کلاس د `wu_domain_seller_register_capabilities` عمل په کارولو ثبت کړئ:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## جادوګر ته د اعتبارپاڼو ساحې زیاتول
+## جادوګر ته د اعتبارپاڼو ساحې زیاتول {#adding-credential-fields-to-the-wizard}
 
 د دې لپاره چې اډمینان د جوړونې جادوګر له لارې اعتبارپاڼې دننه کړي، خپل ادغام ثبت کړئ:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## د ثبت وروسته کړنو لپاره hook ګانې
+## د ثبت وروسته کړنو لپاره hook ګانې {#hooks-for-post-registration-actions}
 
 دا کړنې د webhooks، چمتو کولو، خبرتیاوو، یا CRM تازه‌کولو د پیلولو لپاره وکاروئ:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## لاګ ثبتول
+## لاګ ثبتول {#logging}
 
 د `wu_log_add()` په کارولو سره خپل د برابرونکي-ځانګړي لاګ چینل ته ولیکئ:
 

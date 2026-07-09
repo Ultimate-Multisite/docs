@@ -3,21 +3,21 @@ title: Kursetmek we Ulanmak Tassyklary
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Kuramak ve Sağlayıcı Yapılandırması
+# Domain Seller: Kuramak ve Sağlayıcı Yapılandırması {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller eklentisi, sizi her bir gerekli adımdan geçiren rehberli bir kurulum sihirbazıyla birlikte gelir. Bu sayfa sihirbaz akışını ve sonrasında sağlayıcıları nasıl yapılandıracağınızı veya yeniden yapılandıracağınızı anlatır.
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 - **Multisite Ultimate** v2.4.12 veya daha yenisi, ağa aktif edilmiş olması gerekir
 - **PHP** 7.4+
 - En az bir desteklenen kayıt kuruluşu için API kimlik bilgileri
 
-## İlk çalıştırma kurulum sihirbazı
+## İlk çalıştırma kurulum sihirbazı {#first-run-setup-wizard}
 
 Kurulum sihirbazı eklentiyi ilk kez ağa bağladığınızda otomatik olarak başlar. Ayrıca her zaman **Network Admin › Ultimate Multisite › Domain Seller Setup** yolundan erişilebilir.
 
-### Adım 1 — Bir sağlayıcı seçin
+### Adım 1 — Bir sağlayıcı seçin {#step-1--choose-a-provider}
 
 Bağlamak istediğiniz kayıt kuruluşunu seçin. Desteklenen seçenekler:
 
@@ -33,7 +33,7 @@ Bağlamak istediğiniz kayıt kuruluşunu seçin. Desteklenen seçenekler:
 | NameSilo | Hayır | Hayır |
 | Enom | Evet | Hayır |
 
-### Adım 2 — Kimlik bilgilerini girin
+### Adım 2 — Kimlik bilgilerini girin {#step-2--enter-credentials}
 
 Her sağlayıcının farklı kimlik bilgisi alanları vardır:
 
@@ -57,17 +57,17 @@ Her sağlayıcının farklı kimlik bilgisi alanları vardır:
 
 Canli işe geçmeden önce, hasapda varsa **Sandbox mode**-u barlap test etmek üçin provider'in test mühiti bilen test etseň.
 
-### 3-nji ädim — Bağlananylygy barlapla
+### 3-nji ädim — Bağlananylygy barlapla {#step-3--test-the-connection}
 
 **Test Connection**-a basyň. Wizard (işlem asbaty) açaryly we bağlantylary barlamak üçin hafif API çagyryşyny göndereýär. Dowam etmeden önce islendik açar meselelerini düzetseň.
 
-### 4-nji ädim — TLDleri import etmek
+### 4-nji ädim — TLDleri import etmek {#step-4--import-tlds}
 
 Bağlanany providerdan ähli bar bolan TLDleri we tolgda narap (wholesale pricing) getirmek üçin **Import TLDs**-a basyň. Bu, domen önümleri üçin ulanylýan TLDler listini dolyt edýär. Ulanýan kataloglary uly providerlar üçin import 30–60 saniça çykyp biler.
 
 TLDler her bir günde bir we planlanan cron işi arkaly awtomatiki ýa-da täzelenip bilner.
 
-### 5-nji ädim — Domen önümi döretmek
+### 5-nji ädim — Domen önümi döretmek {#step-5--create-a-domain-product}
 
 Wizard (işlem asbaty) 10% narap bilen standart, ähli önüm üçin ulanylýan domen önümini döredendir. Siz bu önümi hemen redaktir edip bilersiňiz ýa-da **Ultimate Multisite › Products** aşagy manual önümleri döretmek üçin geçip bilerisiz.
 
@@ -75,7 +75,7 @@ Doly önüm görkezmesi üçin [Domain Products and Pricing](./domain-products) 
 
 ---
 
-## Provideri redaktir etmek (Reconfiguring a provider)
+## Provideri redaktir etmek (Reconfiguring a provider) {#reconfiguring-a-provider}
 
 **Network Admin › Ultimate Multisite › Settings › Domain Seller** aşagyka gitdiň (ýa-da plugin listinde **Settings**-e basyň).
 
@@ -88,17 +88,17 @@ Sagatlaşdyrmalar sahypasy şu zatlary öz içine alýar:
 - **Manage domain products** — Önümçilikler listine çalt link.
 - **Configure providers** — Providerleri goşmak ýa-da dürlilemek üçin Integration Wizard (Integrasiýa Wizarady) açýar.
 
-### Ikinji provider goşmak
+### Ikinji provider goşmak {#adding-a-second-provider}
 
 **Configure providers** düwmenine basyň we täze registrator üçin wizarady bedeldir. Siz birnäçe provideri bir wagtda dürlilemek bilerisiz. Her bir domain önümçilikini belli bir providera laýyklaşdyryp bilersiňiz, ýa-da defaultda saklap bilersiňiz.
 
-### TLDleri manual senkronlamak
+### TLDleri manual senkronlamak {#syncing-tlds-manually}
 
 Täze narjy resminlerini çykarmazdan, goşmaça görkezmek üçin, sazlamalar sahasynda (settings page) ulanylan her bir provideriň ýagnyndan soň **Sync TLDs** düwmenine basyň. Bu, bir provider hasyk resminleri ýa-da täze TLDleri goşanda amatlydyr.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Her bir provider özüniň log kanalyna ýazýar. Loglar **Network Admin › Ultimate Multisite › Logs** başlygyny görkezmek arkaly görüp bilneris:
 
@@ -118,7 +118,7 @@ Her bir provider özüniň log kanalyna ýazýar. Loglar **Network Admin › Ult
 
 ---
 
-## Provider mümkinlikleri barada ýazgylar
+## Provider mümkinlikleri barada ýazgylar {#provider-capability-notes}
 
 Her bir registrar API hasapda aynı işleri açyp bilmez. Addonlar bu desteklenmeyen işleri sessizce tapawut etmek yerine, net administrator görýän hatalar bilen göstederler.
 

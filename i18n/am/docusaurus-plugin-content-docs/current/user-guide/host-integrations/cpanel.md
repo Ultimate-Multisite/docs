@@ -3,17 +3,17 @@ title: cPanel ማዋሃድ
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel ውህደት (Integration)
+# cPanel ውህደት (Integration) {#cpanel-integration}
 
-## አጠቃላይ እይታ (Overview)
+## አጠቃላይ እይታ (Overview) {#overview}
 cPanel ብዙ የዌብ ሆስቲንግ አገልግሎት ሰጪዎች (shared and dedicated hosting providers) የሚጠቀሙበት በጣም ታዋቂ የዌብ ሆስቲንግ ቁጥጥር ፓነል ነው። ይህ ውህደት (integration) Ultimate Multisite እና cPanel መካከል የዶሜን መመሳሰልን በራስ-ሰር ያደርጋል፤ ይህም የዶሜን አሊያሶች (domain aliases) እና ንዑስ ዶሜኖች (subdomains) ወደ cPanel አካውንትዎ በራስ-ሰር እንዲጨመሩ ያስችልዎታል።
 
-## ባህሪያት (Features)
+## ባህሪያት (Features) {#features}
 - በcPanel ውስጥ የaddon domain በራስ-ሰር መፍጠር
 - በcPanel ውስጥ የንዑስ ዶሜን በራስ-ሰር መፍጠር (ለsubdomain multisite ጭነቶች)
 - የዶሜን ማዛመል ሲሰረዝ የዶሜን መጥፋት
 
-## መስፈርቶች (Requirements)
+## መስፈርቶች (Requirements) {#requirements}
 የሚከተሉት ቋሚ ተለዋዋጮች (constants) በ`wp-config.php` ፋይልዎ ውስጥ መገለጽ አለባቸው።
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Default is 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Default is /public_html
 ```
 
-## የማስጫ መመሪያዎች (Setup Instructions)
+## የማስጫ መመሪያዎች (Setup Instructions) {#setup-instructions}
 
-### 1. የcPanel መለያ መረጃዎን ያግኙ (Get Your cPanel Credentials)
+### 1. የcPanel መለያ መረጃዎን ያግኙ (Get Your cPanel Credentials) {#1-get-your-cpanel-credentials}
 
 1. የcPanel የተጠቃሚ ስምዎን እና የይለፍ ቃልዎን ከሆስቲንግ ሰጪዎ ያግኙ።
 2. የcPanel ሆስትዎን ይወስኑ (በአብዛኛው ጊዜ `cpanel.yourdomain.com` ወይም `yourdomain.com:2083` ይሆናል።)
 
-### 2. ቋሚ ተለዋዋጮችን ወደ wp-config.php ይጨምሩ (Add Constants to wp-config.php)
+### 2. ቋሚ ተለዋዋጮችን ወደ wp-config.php ይጨምሩ (Add Constants to wp-config.php) {#2-add-constants-to-wp-configphp}
 
 የሚከተሉትን ቋሚ ተለዋዋጮች ወደ `wp-config.php` ፋይልዎ ይጨምሩ፦
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Change if your cPanel uses a different port
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is different
 ```
 
-### 3. ውህደቱን ያንቁ (Enable the Integration)
+### 3. ውህደቱን ያንቁ (Enable the Integration) {#3-enable-the-integration}
 
 1. በWordPress አድሚንዎ ውስጥ፣ ወደ Ultimate Multisite > Settings ይሂዱ።
 2. ወደ "Domain Mapping" ትር (tab) ይጓዙ።
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 4. የcPanel ውህደትን ያንቁ (Enable)።
 5. "Save Changes" የሚለውን ይጫኑ።
 
-## እንዴት ይሰራል? (How It Works)
+## እንዴት ይሰራል? (How It Works) {#how-it-works}
 
-### Addon Domains (ተጨማሪ ዶሜኖች)
+### Addon Domains (ተጨማሪ ዶሜኖች) {#addon-domains}
 
 በUltimate Multisite ውስጥ አንድ ዶሜን ሲመዘገብ (mapped)፦
 
@@ -71,7 +71,7 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 2. ዶሜኑ ወደ ዋናው ዳይሬክቶሪዎ እንዲያመለክት (point) ይዘጋጃል።
 3. የዶሜን ማዛመል ሲሰረዝ፣ ውህደቱ addon domainን ከcPanel ያጠፋዋል።
 
-### Subdomains (ንዑስ ዶሜኖች)
+### Subdomains (ንዑስ ዶሜኖች) {#subdomains}
 
 ለsubdomain multisite ጭነቶች፣ አዲስ ድረ-ገጽ ሲፈጠር፦
 
@@ -79,27 +79,27 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 2. ንዑስ ዶሜኑን ለመጨመር ወደ cPanel API ጥያቄ ይልካል።
 3. ንዑስ ዶሜኑ ወደ ዋናው ዳይሬክቶሪዎ እንዲያመለክት ይዘጋጃል።
 
-## አስፈላጊ ማስታወሻዎች (Important Notes)
+## አስፈላጊ ማስታወሻዎች (Important Notes) {#important-notes}
 
 - ውህደቱ ከcPanel አካውንትዎ ጋር ለመገናኘት የcPanel's API2ን ይጠቀማል።
 - የcPanel አካውንትዎ addon domains እና subdomains የመጨመር ስልጣን ሊኖረው ይገባል።
 - አንዳንድ የሆስቲንግ ሰጪዎች ሊፈጥሩ የሚችሉባቸው addon domains ወይም subdomains ብዛት ሊገድቡ ይችላሉ።
 - ውህደቱ የDNS ውቅረትን (configuration) አያስተዳድርም፤ ዶሜኖችን ወደ የሰርቨርዎ IP አድራሻ ማመልከት አሁንም ያስፈልግዎታል።
 
-## ችግር መፍታት (Troubleshooting)
+## ችግር መፍታት (Troubleshooting) {#troubleshooting}
 
-### የAPI ግንኙነት ችግሮች (API Connection Issues)
+### የAPI ግንኙነት ችግሮች (API Connection Issues) {#api-connection-issues}
 - የcPanel የተጠቃሚ ስም እና የይለፍ ቃል ትክክል መሆናቸውን ያረጋግጡ።
 - የcPanel ሆስት ትክክል እና ተደራሽ መሆኑን ያረጋግጡ።
 - የcPanel አካውንትዎ አስፈላጊውን ስልጣን እንዳለው ያረጋግጡ።
 - ሆስቱን ሙሉ URL በመጠቀም ለመሞከር ይሞክሩ (ለምሳሌ፣ `https://cpanel.yourdomain.com`)።
 
-### ዶሜን አልተጨመረም (Domain Not Added)
+### ዶሜን አልተጨመረም (Domain Not Added) {#domain-not-added}
 - የUltimate Multisite መዝገቦችን (logs) ለስህተት መልዕክቶች (error messages) ይፈትሹ።
 - ዶሜኑ ቀድሞውንም በcPanel ውስጥ አለመጨመሩን ያረጋግጡ።
 - የcPanel አካውንትዎ ለaddon domains ወይም subdomains ገደብ ላይ እንደደረሰ ያረጋግጡ።
 
-### የSSL ሰርተፍኬት ችግሮች (SSL Certificate Issues)
+### የSSL ሰርተፍኬት ችግሮች (SSL Certificate Issues) {#ssl-certificate-issues}
 - ውህደቱ የSSL ሰርተፍኬት አወጣጥን አያስተዳድርም።
 - ለዶሜኖንዎ የSSL ሰርተፍኬት ለማውጣት የcPanel's SSL/TLS tools ወይም AutoSSL ባህሪን መጠቀም ያስፈልግዎታል።
 - አማራጭ በሆነ መንገድ፣ ከcPanel's AutoSSL ጋር Let's Encryptን የመሳሰሉ አገልግሎቶችን መጠቀም ይችላሉ።

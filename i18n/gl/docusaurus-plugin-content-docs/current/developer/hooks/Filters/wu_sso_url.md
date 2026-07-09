@@ -4,13 +4,13 @@ title: Filtro - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filtro: wu_sso_url
+# Filtro: wu_sso_url {#filter-wussourl}
 
 Filtra as URL de SSO xeradas antes de que se devolvan para accións de clientes entre dominios.
 
 Usa este filtro cando unha integración precisa engadir contexto de confianza a unha ligazón SSO dun tenant soberano ou substituír a URL do broker mantendo a validación do token de Ultimate Multisite.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Usa este filtro cando unha integración precisa engadir contexto de confianza a 
 | $site_id | `int` | ID do sitio de destino para a visita. |
 | $redirect_to | `string` | URL de destino despois dunha validación SSO correcta. |
 
-### Desde
+### Desde {#since}
 
 - 2.13.0
 
-### Fonte
+### Fonte {#source}
 
 Definido en `inc/sso/class-sso.php`.
 
 
-## Devolve
+## Devolve {#returns}
 
 URL de SSO filtrada.

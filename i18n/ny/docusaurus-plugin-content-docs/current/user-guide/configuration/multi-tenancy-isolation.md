@@ -3,11 +3,11 @@ title: Kukwera kwa Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Kufufu kwa Ufunga (Multi-Tenancy Isolation)
+# Kufufu kwa Ufunga (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 imasongeza uwezo wa kufanya database na filesystem isolation kwa kila subsite ili wateja wao wajue kuwa data yao inahifadhiwa tofauti, huku ukihifadhi mipangilio ya mtandao, malipo, na usimamizi.
 
-## Mkakati wa Isolation (Isolation strategy)
+## Mkakati wa Isolation (Isolation strategy) {#isolation-strategy}
 
 Tumia isolation ya sovereign kwa wateja wanaohitaji kutenganisha data zaidi, kuhifadhi la filesystem tofauti, au mipaka tofauti ya host.
 
@@ -18,7 +18,7 @@ Kila mteja wa sovereign anapaswa kuwa na:
 - Entry ya registry ya teja inayohusisha site hiyo na database yake, njia kuu (root path), jina la host (hostname), na mfumo wa isolation.
 - Matokeo ya uthibitishaji wa migration kabla ya teja kuhesabiwa kuwa hai.
 
-## Uunganishaji wa Host kwa Database (Database host binding)
+## Uunganishaji wa Host kwa Database (Database host binding) {#database-host-binding}
 
 Toleo 1.2.0 limebadilisha jinsi ufunguo wa default wa kufunga kwenye machine moja unavyofanya kwa install za sovereign. Thamani kama `localhost` inafanywa sawa ili Bedrock, FrankenPHP, na WordPress installs zilizowekwa kwenye container zinaweza kutoa na kuthibitisha ruhusa dhidi ya string ya host ambayo MySQL inayoona kweli.
 
@@ -31,11 +31,11 @@ Unapoweka mipangilio kwa teja wa sovereign:
 
 Ikiwa uthibitishaji unaonyesha kushindwa kupata ruhusa, soma ruhusa za mtumiaji kwenye DB ya teja na uunganishaji wa host uliowekwa. Mtumiaji aliyepokea ruhusa kwa `user@localhost` ni tofauti na `user@127.0.0.1` au `user@%`.
 
-## Msimbo (Filesystem root)
+## Msimbo (Filesystem root) {#filesystem-root}
 
 Mufumbwa wa m'biri (tenant root) ukonseka m'moyo wosavuta pansi ndi zowonjezera (restarts) ndi kupanga (deployments). Simukumbukira za m'mulo (temporary mount paths). Kwa kukhazikitsa m'mulo monga Bedrock, onani kuti mufumbwa wa m'biri umphuka ku m'mulo wopangidwa ndi WordPress omwe m'mulo yosavuta (tenant bootstrap) umayamba, osati m'mulo wopangidwa pansi (project root) monga chiyembekeza.
 
-## Mwayi wa kukhazikitsa (Provisioning order)
+## Mwayi wa kukhazikitsa (Provisioning order) {#provisioning-order}
 
 Poyamba kwa m'mulo wosavuta wosavuta (new sovereign tenants), simukumbukira mwayi wosavuta wosavuta:
 
@@ -49,7 +49,7 @@ Poyamba kwa m'mulo wosavuta wosavuta (new sovereign tenants), simukumbukira mway
 
 Mwayi wosavuta wosavuta umphuka m'mulo wosavuta wosavuta wokondetsedwa kupita poyamba pamene database writer, anthu, ndi m'mulo ya m'mulo yomwe ukonse wokhazikitsa (filesystem) kumayamba.
 
-## Mwayi wa kukhazikitsa kwa mamundiro a m'mulo wosavuta (Sovereign customer management flows)
+## Mwayi wa kukhazikitsa kwa mamundiro a m'mulo wosavuta (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 imapereka zinthu za ulamulira wamundiro (customer management actions) pa site yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe y
 

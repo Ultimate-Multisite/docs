@@ -3,11 +3,11 @@ title: Građeni plugin i sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 uvodi **Plugin Builder & Sandbox System**, koji omogućava asistentu AI da generiše, aktivira i upravlja WordPress pluginovima na vašoj mreži – sve kroz siguran, izolovani sandbox okruženje.
 
-## Pregled
+## Pregled {#overview}
 
 Plugin Builder omogućava asistentu AI da piše prilagođene WordPress pluginove kao odgovor na prirodno jezik upite. Generisani pluginovi se validiraju, čuvaju i aktiviraju unutar sloja sandboksa pre nego što utiču na funkcionalnost live sajta.
 
@@ -17,7 +17,7 @@ Primeri upotrebe uključuju:
 - Prototipiranje funkcija koje zahtevaju WordPress hookove ili prilagođene post tipove.
 - Kreiranje kratkotrajnih skripti za automatizaciju za masovne operacije.
 
-## Generisanje Plugin-a putem AI
+## Generisanje Plugin-a putem AI {#generating-a-plugin-via-ai}
 
 Da biste generisali plugin, otvorite čet interfejs Gratis AI Agent i opišite šta vam je potrebno. Na primer:
 
@@ -32,7 +32,7 @@ AI će:
 
 Možete dopuniti rezultat praćanjem u istoj konverzaciji pre aktiviranja.
 
-## Aktivacija u Sandboksu
+## Aktivacija u Sandboksu {#sandbox-activation}
 
 Aktivacija generisanog plugin-a u sandboksu je odvojena od aktivacije na live mreži. Sandboks:
 

@@ -3,15 +3,15 @@ title: Jenere Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Jenere Logo SVG
+# Jenere Logo SVG {#generate-logo-svg}
 
 Kapasite **Generate Logo SVG** la pèmèt Theme Builder kreye epi entegre logo SVG pèsonalize dirèkteman nan sit WordPress ou a ak netwayaj otomatik ki san danje pou namespace.
 
-## Apèsi
+## Apèsi {#overview}
 
 Kapasite sa a jenere logo grafik vektoryèl ki ka agrandi (SVG) selon direksyon mak sit ou a ak preferans konsepsyon ou yo. SVG yo jenere yo netwaye otomatikman pou asire yo san danje pou itilize nan WordPress pandan yo kenbe entegrite vizyèl yo.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Paramèt | Tip | Obligatwa | Deskripsyon |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Kapasite sa a jenere logo grafik vektoryèl ki ka agrandi (SVG) selon direksyon 
 | `height` | number | Non | Wotè SVG an piksèl (default: 200) |
 | `include_text` | boolean | Non | Si pou mete non sit la kòm tèks nan logo a (default: true) |
 
-## Fòma Sòti
+## Fòma Sòti {#output-format}
 
 Kapasite a retounen yon chèn SVG ak estrikti sa a:
 
@@ -36,7 +36,7 @@ Kapasite a retounen yon chèn SVG ak estrikti sa a:
 }
 ```
 
-## Konpòtman Netwayaj SVG
+## Konpòtman Netwayaj SVG {#svg-sanitisation-behaviour}
 
 SVG yo jenere yo sibi netwayaj otomatik ki san danje pou namespace pou:
 
@@ -48,7 +48,7 @@ SVG yo jenere yo sibi netwayaj otomatik ki san danje pou namespace pou:
 
 Sa asire SVG a san danje pou entegre dirèkteman nan WordPress san bezwen netwayaj anplis.
 
-## Egzanp Itilizasyon
+## Egzanp Itilizasyon {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Kapasite a kreye yon logo SVG ki:
 - Swiv prensip konsepsyon modèn
 - Netwaye otomatikman epi pare pou itilize
 
-## Entegrasyon ak Theme Builder
+## Entegrasyon ak Theme Builder {#integration-with-theme-builder}
 
 Lè w ap itilize seleksyon direksyon konsepsyon Theme Builder a, kapasite Generate Logo SVG la:
 
@@ -71,21 +71,21 @@ Lè w ap itilize seleksyon direksyon konsepsyon Theme Builder a, kapasite Genera
 3. Entegre logo a otomatikman nan zòn antèt/mak sit ou a
 4. Estoke SVG a kòm yon logo pèsonalize nan medya WordPress
 
-## Pi Bon Pratik
+## Pi Bon Pratik {#best-practices}
 
 - **Bay preferans stil ki klè** — dekri stil konsepsyon ou vle a (modèn, klasik, amizan, elatriye)
 - **Presize koulè** — mete koulè mak ou yo pou konsistans
 - **Teste rannman** — verifye logo a parèt kòrèkteman sou diferan gwosè ekran
 - **Pèsonalize plis** — itilize zouti pèsonalizasyon logo WordPress yo pou ajiste gwosè ak plasman
 
-## Limitasyon
+## Limitasyon {#limitations}
 
 - Logo SVG yo jenere kòm grafik estatik (pa anime)
 - Logo konplèks ak anpil eleman ka bezwen amelyorasyon manyèl
 - Polis pèsonalize pa sipòte; tèks itilize polis sistèm
 - Dimansyon ki twò gwo oswa twò piti ka afekte kalite
 
-## Kapasite Ki Gen Rapò
+## Kapasite Ki Gen Rapò {#related-abilities}
 
 - [Valide Kontras Palèt](./validate-palette-contrast.md) — verifye kontras koulè pou aksesibilite
 - [Kreye Meni](./create-menu.md) — kreye meni navigasyon pou sit ou a

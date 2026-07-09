@@ -3,17 +3,17 @@ title: אינטגרציית GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# אינטגרציה עם GridPane
+# אינטגרציה עם GridPane {#gridpane-integration}
 
-## סקירה כללית
+## סקירה כללית {#overview}
 GridPane היא לוח בקרה לאירוח WordPress שתוכנן במיוחד עבור אנשי מקצוע רציניים בתחום WordPress. האינטגרציה הזו מאפשרת סנכרון אוטומטי של דומיינים וניהול תעודות SSL בין Ultimate Multisite לבין GridPane.
 
-## תכונות
+## תכונות {#features}
 - סנכרון אוטומטי של דומיינים
 - ניהול תעודות SSL
 - הגדרה אוטומטית של קבוע SUNRISE
 
-## דרישות
+## דרישות {#requirements}
 יש להגדיר את הקבועים הבאים בקובץ `wp-config.php` שלכם:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## הוראות הגדרה
+## הוראות הגדרה {#setup-instructions}
 
-### 1. קבלת פרטי ה-API של GridPane
+### 1. קבלת פרטי ה-API של GridPane {#1-get-your-gridpane-api-credentials}
 
 1. התחברו ללוח הבקרה של GridPane
 2. עברו אל "Settings" > "API"
 3. צרו מפתח API אם אין לכם כזה עדיין
 4. העתיקו את מפתח ה-API
 
-### 2. קבלת מזהי השרת והאתר
+### 2. קבלת מזהי השרת והאתר {#2-get-your-server-and-site-ids}
 
 1. בלוח הבקרה של GridPane, עברו אל "Servers"
 2. בחרו את השרת שבו מאוחסן אתר ה-WordPress multisite שלכם
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. עברו אל "Sites" ובחרו את אתר ה-WordPress שלכם
 5. רשמו את מזהה האתר (Site ID) - ניתן לראות אותו בכתובת ה-URL או בדף פרטי האתר
 
-### 3. הוספת קבועים ל-wp-config.php
+### 3. הוספת קבועים ל-wp-config.php {#3-add-constants-to-wp-configphp}
 
 הוסיפו את הקבועים הבאים לקובץ `wp-config.php` שלכם:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. הפעלת האינטגרציה
+### 4. הפעלת האינטגרציה {#4-enable-the-integration}
 
 1. באזור הניהול של WordPress, עברו אל Ultimate Multisite > Settings
 2. נווטו ללשונית "Domain Mapping"
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. הפעילו את אינטגרציית GridPane
 5. לחצו על "Save Changes"
 
-## איך זה עובד
+## איך זה עובד {#how-it-works}
 
 כאשר דומיין ממופה ב-Ultimate Multisite:
 
@@ -69,23 +69,23 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 
 האינטגרציה גם מטפלת אוטומטית בקבוע SUNRISE בקובץ wp-config.php, שנדרש כדי שמיפוי הדומיינים יעבוד כראוי.
 
-## ניהול קבוע SUNRISE
+## ניהול קבוע SUNRISE {#sunrise-constant-management}
 
 תכונה ייחודית של אינטגרציית GridPane היא שהיא מחזירה אוטומטית את קבוע SUNRISE ב-wp-config.php למצבו המקורי, כדי למנוע התנגשויות עם מערכת מיפוי הדומיינים של GridPane עצמה. זה מבטיח ששתי המערכות יכולות לעבוד יחד ללא בעיות.
 
-## פתרון בעיות
+## פתרון בעיות {#troubleshooting}
 
-### בעיות בחיבור ל-API
+### בעיות בחיבור ל-API {#api-connection-issues}
 - ודאו שמפתח ה-API שלכם נכון
 - בדקו שמזהי השרת והאתר נכונים
 - ודאו שלחשבון GridPane שלכם יש את ההרשאות הנדרשות
 
-### בעיות בתעודות SSL
+### בעיות בתעודות SSL {#ssl-certificate-issues}
 - ייתכן ש-GridPane יצטרך זמן מה להנפקת תעודות SSL
 - ודאו שהדומיינים שלכם מצביעים כראוי לכתובת ה-IP של השרת
 - בדקו את הגדרות ה-SSL של GridPane עבור האתר שלכם
 
-### הדומיין לא נוסף
+### הדומיין לא נוסף {#domain-not-added}
 - בדקו את יומני Ultimate Multisite לאיתור הודעות שגיאה
 - ודאו שהדומיין לא נוסף כבר ל-GridPane
 - ודאו שרשומות ה-DNS של הדומיין מוגדרות כראוי

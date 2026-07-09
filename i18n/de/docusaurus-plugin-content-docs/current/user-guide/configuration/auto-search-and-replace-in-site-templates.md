@@ -3,7 +3,7 @@ title: Automatisches Suchen und Ersetzen in Website-Vorlagen
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisches Suchen und Ersetzen in Website-Vorlagen (v2)
+# Automatisches Suchen und Ersetzen in Website-Vorlagen (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Dieses Tutorial erfordert WP UItimo Version 2.x.**_
 
@@ -17,7 +17,7 @@ Dein Kunde kann dieses Feld dann während der Registrierung ausfüllen.
 
 Ultimate Multisite ersetzt die Platzhalter dann automatisch durch die vom Kunden bereitgestellten Daten.
 
-## **Das Problem „Vorlage voller Platzhalter“ lösen**
+## **Das Problem „Vorlage voller Platzhalter“ lösen** {#solving-the-template-full-of-placeholders-problem}
 
 All das ist großartig, aber wir stoßen auf ein unschönes Problem: Unsere Website-Vorlagen – die von unseren Kunden besucht werden können – sind nun voller unschöner Platzhalter, die nicht viel aussagen.
 

@@ -3,18 +3,18 @@ title: Tema quruvchi qobiliyatlar
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Tema Quruvchi Qobiliyatlar: Blok Temalarni Skaffoldlash va Faollashtirish
+# Tema Quruvchi Qobiliyatlar: Blok Temalarni Skaffoldlash va Faollashtirish {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 sizga chat interfeysidan bevosita maxsus blok temalarni yaratish va joylashtirish imkonini beradigan ikki kuchli qobiliyatni taqdim etadi.
 
-## Umumiy Ko'rinish
+## Umumiy Ko'rinish {#overview}
 
 **scaffold-block-theme** va **activate-theme** qobiliyatlari agentlarga quyidagilarni amalga oshirish imkonini beradi:
 - Sizning ko'rsatmalaringiz asosida to'liq, ishlab chiqarishga tayyor blok temalarni yaratish
 - Manuel aralashuvsiz temalarni saytingizda avtomatik faollashtirish
 - Yo'naltirilgan dizayn qarorlari orqali uyg'un vizual identitetlar yaratish
 
-## Blok Temani Skaffoldlash (Scaffold Block Theme)
+## Blok Temani Skaffoldlash (Scaffold Block Theme) {#scaffold-block-theme}
 
 **scaffold-block-theme** qobiliyati sizga to'liq tema tuzilishi bilan yangi WordPress blok temasini yaratadi, unda quyidagilar bo'ladi:
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0 sizga chat interfeysidan bevosita maxsus blok temalarn
 - Maxsus blok stili va variantlari
 - Tema metadata va qo'llab-quvvatlash deklaratsiyalari
 
-### Qanday ishlatish
+### Qanday ishlatish {#how-to-invoke}
 
 Superdav AI Agent bilan suhbatda tema yaratishni so'rashingiz mumkin:
 
@@ -37,7 +37,7 @@ Agent quyidagilarni qiladi:
 3. Barcha kerakli tema fayllarini tayyorlaydi
 4. Temani faollashtirish uchun tayyorlaydi
 
-### Kutilayotgan natija
+### Kutilayotgan natija {#expected-output}
 
 Imkonlik muvaffaqiyatli bajarilganda, siz quyidagilarni ko'rasiz:
 
@@ -47,11 +47,11 @@ Imkonlik muvaffaqiyatli bajarilganda, siz quyidagilarni ko'rasiz:
   Tipografiya: Inter (sans-serif)
   Holat: Faollashishga tayyor
 
-## Temani faollashtirish
+## Temani faollashtirish {#activate-theme}
 
 **activate-theme** imkoniyati sizning saytingizni yangi tuzilgan yoki mavjud blok temaga o'tkazadi.
 
-### Qanday ishlatiladi
+### Qanday ishlatiladi {#how-to-invoke-1}
 
 Tema tuzilgandan so'ng, uni darhol faollashtirishingiz mumkin:
 
@@ -65,7 +65,7 @@ Yoki mavjud har qanday temaga o'tish uchun:
 "Twentytwentyfour temasiga o'tish"
 ```
 
-### Kutilayotgan natija
+### Kutilayotgan natija {#expected-output-1}
 
 Faollashtirish muvaffaqiyatli yakunlanganda:
 

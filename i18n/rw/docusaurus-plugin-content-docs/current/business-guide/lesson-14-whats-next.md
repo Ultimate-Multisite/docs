@@ -3,15 +3,15 @@ title: 'Isomo rya 14: Ibikurikiraho'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Isomo rya 14: Ibikurikiraho
+# Isomo rya 14: Ibikurikiraho {#lesson-14-what-comes-next}
 
 Wubatse urubuga rwihariye rw'isoko runaka uhereye ku busa. FitSite iri gukora, ikorera studio za fitness, kandi yinjiza amafaranga agaruka buri gihe. Iri somo rya nyuma rireba aho wakwerekeza uhereye aha.
 
-## Aho Twagarukiye
+## Aho Twagarukiye {#where-we-left-off}
 
 FitSite ni ubucuruzi bukora bufite abakiriya, imikorere, n'icyerekezo cyo gukura. Ubu dutekereze ku bikurikiraho.
 
-## Umuyoboro Wuzuye wa FitSite
+## Umuyoboro Wuzuye wa FitSite {#the-complete-fitsite-network}
 
 Dore ibyo twubatse byose mu masomo 14:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Ihitamo rya 1: Jya Wimbika mu Isoko Ryawe Ryihariye
+## Ihitamo rya 1: Jya Wimbika mu Isoko Ryawe Ryihariye {#option-1-go-deeper-in-your-niche}
 
 Mbere yo kwagukira mu masoko mashya yihariye, tekereza kujya wimbika muri fitness:
 
-### Udusoko Twihariye
+### Udusoko Twihariye {#sub-niches}
 
 - **Studio za yoga** -- templates zihariye zifite meditation, retreat, n'ibiranga workshop
 - **CrossFit boxes** -- gukurikirana WOD, ibisubizo by'amarushanwa, ibiranga community
@@ -59,7 +59,7 @@ Mbere yo kwagukira mu masoko mashya yihariye, tekereza kujya wimbika muri fitnes
 
 Buri gasoko kihariye gashobora kugira templates zako bwite kandi wenda kakagira brand yako bwite, byose bikorera ku muyoboro umwe wa Ultimate Multisite.
 
-### Ibiranga Premium
+### Ibiranga Premium {#premium-features}
 
 Baka ibiranga studio za fitness zizishyurira amafaranga y'inyongera:
 
@@ -68,14 +68,14 @@ Baka ibiranga studio za fitness zizishyurira amafaranga y'inyongera:
 - **Templates za blog ya fitness** -- imiterere y'ibikubiyemo yateguwe mbere igenewe marketing y'ibikubiyemo bya fitness
 - **Guhuza social media** -- gushyira online gahunda z'amasomo n'amakuru mashya mu buryo bwikora
 
-### Kwaguka mu Turere
+### Kwaguka mu Turere {#geographic-expansion}
 
 Niba waratangiriye hafi yawe, wagukira kuri:
 
 - Indi mijyi yo mu gihugu cyawe
 - Ibindi bihugu (koresha [ibiranga localization bya Ultimate Multisite](/user-guide/localization/translating) kugira ngo ushyigikire indimi nyinshi)
 
-## Ihitamo rya 2: Wagukire mu Masoko Yegeranye
+## Ihitamo rya 2: Wagukire mu Masoko Yegeranye {#option-2-expand-to-adjacent-niches}
 
 Inzira wakurikije kuri studio za fitness ikora ku isoko iryo ari ryo ryose ryihariye. Isoko ryawe rya kabiri ryihariye riroroha kuko usanzwe ufite:
 
@@ -83,7 +83,7 @@ Inzira wakurikije kuri studio za fitness ikora ku isoko iryo ari ryo ryose ryiha
 - Uburambe mu mikorere
 - Uburyo bwagaragaye ko bukora
 
-### Amasoko Yegeranye na Fitness
+### Amasoko Yegeranye na Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness na spa** -- abakora massage, day spas, ibigo bya wellness
 - **Amakipe ya siporo** -- amakipe ya siporo y'abatarabigize umwuga, leagues, clubs z'imyidagaduro
@@ -91,7 +91,7 @@ Inzira wakurikije kuri studio za fitness ikora ku isoko iryo ari ryo ryose ryiha
 
 Aya masoko afite abumva bashobora guhura n'aba fitness, bityo marketing yawe n'ubufatanye bishobora gukomeza gukora.
 
-### Amasoko Mashya Rwose
+### Amasoko Mashya Rwose {#completely-new-niches}
 
 Koresha framework yo mu Isomo rya 2 kugira ngo usuzume isoko iryo ari ryo ryose ryihariye:
 
@@ -108,7 +108,7 @@ Buri soko rishya ryihariye rikeneye:
 
 Ibikorwaremezo by'urubuga, billing, n'inzira z'imikorere biguma ari bimwe.
 
-## Ihitamo rya 3: Kubaka Urubuga rw'Imbuga
+## Ihitamo rya 3: Kubaka Urubuga rw'Imbuga {#option-3-build-a-platform-of-platforms}
 
 Ku gipimo kinini, ushobora gukoresha brands nyinshi z'amasoko yihariye ku muyoboro umwe wa Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Ku gipimo kinini, ushobora gukoresha brands nyinshi z'amasoko yihariye ku muyobo
 
 Buri brand igira templates, plans, na marketing byayo, ariko zisangira ibikorwaremezo, billing, n'inzira z'imikorere. Aha ni ho ubukungu bwa Ultimate Multisite buba bukomeye -- urubuga rumwe, verticals nyinshi.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Kugira ngo amasoko yihariye atandukane burundu, tekereza kuri [addon ya Multi-Network](/addons/multinetwork) iguha ubushobozi bwo gukoresha imiyoboro myinshi ya WordPress uhereye kuri installation imwe.
 
-## Ihitamo rya 4: Kugurisha Ubucuruzi
+## Ihitamo rya 4: Kugurisha Ubucuruzi {#option-4-sell-the-business}
 
 Urubuga rwihariye rw'isoko runaka rufite amafaranga agaruka buri gihe, churn nto, n'umwanya usobanutse ku isoko ni umutungo w'agaciro. Ubusanzwe ubucuruzi bwa SaaS bugurishwa ku nshuro 3-5 z'amafaranga yinjira ku mwaka.
 
@@ -134,7 +134,7 @@ FitSite ifite abakiriya 200 kuri $89 ARPU:
 
 Ibi si umusaruro wizewe ijana ku ijana, ariko ni ibintu bishoboka ku rubuga rwihariye rucungwa neza.
 
-## Ibyo Wize
+## Ibyo Wize {#what-you-have-learned}
 
 Aya masomo yakwigishije inzira ishobora gusubirwamo:
 
@@ -150,7 +150,7 @@ Aya masomo yakwigishije inzira ishobora gusubirwamo:
 
 Isoko ryihariye ni ryo ngamba. Urubuga ni igikoresho. Ultimate Multisite ituma icyo gikoresho gishoboka. Uko usobanukiwe isoko ryihariye ni byo bituma rigira agaciro.
 
-## Tangira Kubaka
+## Tangira Kubaka {#start-building}
 
 Niba warakurikiye hamwe na FitSite, ufite urubuga rukora. Niba wasomye ushaka kubona icyuho cyawe bwite, subira kuri [Isomo rya 2: Guhitamo Icyuho Cyawe](lesson-2-picking-your-niche) maze utangire inzira y’icyiciro wahisemo.
 

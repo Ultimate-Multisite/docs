@@ -3,19 +3,19 @@ title: Stripe تنظیمول
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# ستراپ گیتوی تنظیم کردن (v2)
+# ستراپ گیتوی تنظیم کردن (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**مهم نکته: این مقاله Ultimate Multisite نسخه ۲.x را می شناسد.**_
 
 شما می‌توانید تا چهار روش پرداخت در صفحه تنظیمات پرداخت ما فعال کنید: Stripe، Stripe Checkout، PayPal و دستی. در این مقاله، خواهیم دید که چگونه با **Stripe** یکپارچه شوید.
 
-## فعال کردن Stripe
+## فعال کردن Stripe {#enabling-stripe}
 
 برای فعال کردن Stripe به عنوان یک دروازه پرداخت موجود در شبکه خود، به مسیر **Ultimate Multisite > Settings > Payments** بروید و کلیک روی دکمه کنار **Stripe** یا **Stripe Checkout** در بخش Active Payment Gateways را بزنید تا آن تیک زده شود.
 
 ![فعال کردن Stripe در دروازه‌های پرداخت فعال](/img/config/settings-payment-gateways.png)
 
-### Stripe در مقابل Stripe Checkout:
+### Stripe در مقابل Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** این روش فضایی برای وارد کردن شماره کارت اعتباری در طول فرآیند خرید نشان می‌دهد.
 
@@ -25,7 +25,7 @@ _**مهم نکته: این مقاله Ultimate Multisite نسخه ۲.x را می
 
 ![صفحه ریدایرکت Stripe Checkout در طول خرید](/img/config/settings-payment-gateways.png)
 
-### دریافت کلیدهای API استراپ (Stripe API keys)
+### دریافت کلیدهای API استراپ (Stripe API keys) {#setting-up-stripe-webhook}
 
 وقتی Stripe به عنوان یک دروازه پرداخت فعال شد، شما باید فیلدهای **Stripe Publishable Key** و **Stripe Secret Key** را پر کنید. می‌توانید این موارد را با ورود به حساب Stripe خود دریافت کنید.
 

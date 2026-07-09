@@ -4,21 +4,21 @@ title: फ़िल्टर - wu_checkout_step_validation_submittable_field_typ
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types
+# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
 
 डेवलपर्स को यह चेक बायपास करने की अनुमति देता है यदि कोई फ़ील्ड ऑटो-सबमिट करने योग्य (auto-submittable) है।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $submittable_field_types | `array` | फ़ील्ड प्रकारों की सूची। |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/helpers/validation-rules/class-checkout-steps.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/validation-rules/class-checkout-steps.php#L92) में लाइन 92 पर परिभाषित है।
 
-## Returns
+## Returns {#returns}

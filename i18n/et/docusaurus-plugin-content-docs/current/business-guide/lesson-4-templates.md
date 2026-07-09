@@ -3,15 +3,15 @@ title: '4. õppetund: Nišimallide loomine'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Õppetund 4: Nišimallide loomine
+# Õppetund 4: Nišimallide loomine {#lesson-4-building-niche-templates}
 
 Mallid on sinu nišiväärtuspakkumise tuum. Fitness-stuudio omanik, kes registreerub ja näeb saiti, mis näeb juba välja nagu fitnessi veebisait -- koos treeningtundide ajakavade, treeneriprofiilide ja sobivate piltidega -- jääb palju tõenäolisemalt kasutajaks kui see, kes näeb tühja lõuendit.
 
-## Kuhu pooleli jäime
+## Kuhu pooleli jäime {#where-we-left-off}
 
 Meil on töötav FitSite’i võrgustik, kuhu Ultimate Multisite on paigaldatud ja seadistatud. Nüüd loome mallid, mis panevad FitSite’i tunduma spetsiaalselt fitness-ettevõtetele looduna.
 
-## Miks nišimallid on olulised
+## Miks nišimallid on olulised {#why-niche-templates-matter}
 
 Üldised mallid sunnivad sinu kliente tegema raske töö: välja mõtlema, milliseid lehti neil vaja on, milline sisustruktuur toimib ja kuidas see nende valdkonna jaoks õige välja näeks. Nišimallid eemaldavad selle hõõrdumise.
 
@@ -24,11 +24,11 @@ Fitness-stuudio omanik, kes FitSite’i registreerub, peaks nägema:
 
 Nad täidavad oma andmed. Nad ei alusta nullist.
 
-## Mallide planeerimine
+## Mallide planeerimine {#planning-your-templates}
 
 Enne loomist otsusta, milliseid malle pakkuda. FitSite’i jaoks loome kolm:
 
-### Mall 1: Studio Essential
+### Mall 1: Studio Essential {#template-1-studio-essential}
 
 Väikestele stuudiotele ja personaaltreeneritele.
 
@@ -39,7 +39,7 @@ Väikestele stuudiotele ja personaaltreeneritele.
 - **Kontakt** leht asukohakaardi ja vormiga
 - **Puhas, kaasaegne kujundus** fitnessile sobiva värviskeemiga
 
-### Mall 2: Gym Pro
+### Mall 2: Gym Pro {#template-2-gym-pro}
 
 Väljakujunenud spordiklubidele, millel on rohkem teenuseid.
 
@@ -50,7 +50,7 @@ Väljakujunenud spordiklubidele, millel on rohkem teenuseid.
 - **Iseloomustused** jaotis avalehel
 - **Silmapaistvamad brändingu** valikud
 
-### Mall 3: Fitness Chain
+### Mall 3: Fitness Chain {#template-3-fitness-chain}
 
 Mitme asukohaga ettevõtmistele.
 
@@ -60,17 +60,17 @@ Mitme asukohaga ettevõtmistele.
 - **Tsentraliseeritud bränding** asukohapõhiste detailidega
 - **Töötajate kataloog** asukohtade lõikes
 
-## Mallisaidi loomine
+## Mallisaidi loomine {#building-a-template-site}
 
 Ultimate Multisite’is on mall lihtsalt WordPressi sait, mis on seadistatud nii, nagu soovid, et uued kliendisaidid välja näeksid. Selle loomiseks tee järgmist:
 
-### Samm 1: Loo mallisait
+### Samm 1: Loo mallisait {#step-1-create-the-template-site}
 
 1. Liigu oma võrgustiku haldusesse **Sites > Add New**
 2. Loo sait nimega `template-studio-essential`
 3. Sellest saidist saab sinu tööpind
 
-### Samm 2: Paigalda ja seadista teema
+### Samm 2: Paigalda ja seadista teema {#step-2-install-and-configure-the-theme}
 
 Mine mallisaidi Dashboardile ja:
 
@@ -82,7 +82,7 @@ Mine mallisaidi Dashboardile ja:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Samm 3: Loo lehed
+### Samm 3: Loo lehed {#step-3-create-the-pages}
 
 Ehita iga leht järgmiste elementidega:
 
@@ -92,7 +92,7 @@ Ehita iga leht järgmiste elementidega:
 
 Tee kohatäitesisu võimaluse korral juhendavaks. Üldise täiteteksti asemel kirjuta näiteks: "Asenda see oma stuudio lühikirjeldusega ja sellega, mis teeb selle eriliseks. Maini oma treeningfilosoofiat, kogemusaastaid või seda, mida kliendid võivad oodata."
 
-### Samm 4: Seadista pluginad
+### Samm 4: Seadista pluginad {#step-4-configure-plugins}
 
 Paigalda ja aktiveeri pluginad, mida fitness-stuudiod vajavad:
 
@@ -100,7 +100,7 @@ Paigalda ja aktiveeri pluginad, mida fitness-stuudiod vajavad:
 - Kontaktivormi plugin
 - SEO plugin (eelnevalt seadistatud fitnessiga seotud vaikeseadetega)
 
-### Samm 5: Märgi malliks
+### Samm 5: Märgi malliks {#step-5-mark-as-template}
 
 1. Liigu jaotisse **Ultimate Multisite > Sites**
 2. Muuda mallisaiti
@@ -108,7 +108,7 @@ Paigalda ja aktiveeri pluginad, mida fitness-stuudiod vajavad:
 
 Korda seda protsessi iga malli jaoks, mida soovid pakkuda.
 
-## Malli kvaliteedikontrolli nimekiri
+## Malli kvaliteedikontrolli nimekiri {#template-quality-checklist}
 
 Enne malli kättesaadavaks tegemist kontrolli:
 
@@ -121,7 +121,7 @@ Enne malli kättesaadavaks tegemist kontrolli:
 - [ ] Katkiseid linke ega puuduvaid varasid ei ole
 - [ ] Lehe laadimiskiirus on vastuvõetav
 
-## FitSite’i võrgustik seni
+## FitSite’i võrgustik seni {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Mida selles õppetunnis lõime
+## Mida selles õppetunnis lõime {#what-we-built-this-lesson}
 
 - **Kolm nišipõhist malli**, mis on loodud eri suurusega fitness-ettevõtetele
 - **Fitnessile sobiv sisu ja pildid**, mis panevad platvormi tunduma spetsiaalselt looduna

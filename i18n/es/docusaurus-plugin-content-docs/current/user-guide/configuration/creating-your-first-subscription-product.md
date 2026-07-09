@@ -3,13 +3,13 @@ title: Creación de tu primer producto de suscripción
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Crear tu primer producto de suscripción (v2)
+# Crear tu primer producto de suscripción (v2) {#creating-your-first-subscription-product-v2}
 
 _**NOTA IMPORTANTE: Este artículo es solo para usuarios de Ultimate Multisite versión 2.x. Si estás usando la versión 1.x,**_ **_**consulta este artículo**_**.
 
 Para empezar a gestionar tu red y comenzar a vender tus servicios a usuarios potenciales, necesitas tener diferentes opciones de suscripción. ¿Cómo creas estos productos? ¿Cuáles son los tipos de productos que puedes ofrecer? En este artículo, cubriremos todo lo que necesitas saber sobre los productos.
 
-## Tipo de producto
+## Tipo de producto {#product-type}
 
 Con Ultimate Multisite puedes ofrecer dos categorías de productos a tus clientes: **planes** y **complementos** **(incremento de pedido)**. Los complementos se pueden dividir en dos tipos:**paquetes** y **servicios**. A continuación veremos sus diferencias y particularidades.
 
@@ -19,7 +19,7 @@ Con Ultimate Multisite puedes ofrecer dos categorías de productos a tus cliente
 
   * **Servicios:** complementos que no modifican las funcionalidades de Ultimate Multisite. Son tareas que realizarás para tu cliente además del plan que compró. Por ejemplo, tu cliente podría comprar un plan que permite un solo sitio y también pagar por un servicio extra que hará el diseño de este sitio.
 
-## Gestionar productos
+## Gestionar productos {#managing-products}
 
 Para muchos, la pestaña **Productos** en Ultimate Multisite **(Ultimate Multisite > Productos)** puede equipararse con los planes en un entorno de alojamiento tradicional.
 
@@ -29,7 +29,7 @@ Esta sección guiará tu comprensión de esta piedra angular esencial de Ultimat
 
 ![Página de lista de productos](/img/config/products-list.png)
 
-## Añadir productos
+## Añadir productos {#adding-products}
 
 Ya sea un plan, paquete o servicio, el punto de entrada para definir un nuevo elemento es a través de **Ultimate Multisite > Productos > Añadir producto**.
 
@@ -39,13 +39,13 @@ La interfaz contiene dos secciones predominantes. A la izquierda hay varias pest
 
 ![Vista general de la página de edición del producto](/img/config/product-edit-full.png)
 
-### Descripción
+### Descripción {#description}
 
 La información base del producto se puede definir proporcionando un nombre y una descripción del producto. Estos identificadores se muestran dondequiera que se requiera la información del producto, como la selección de planes y precios, facturas, mejoras y similares.
 
 ![Sección de descripción del producto](/img/config/product-description.png)
 
-### Tipo de precio
+### Tipo de precio {#pricing-type}
 
 En el lado derecho de la interfaz, se puede definir el precio base.
 
@@ -53,7 +53,7 @@ En el lado derecho de la interfaz, se puede definir el precio base.
 
 Ultimate Multisite admite tres tipos de precios diferentes. La opción **de pago** solicita al administrador de la red información sobre el precio del producto y la frecuencia de facturación.
 
-### Precio
+### Precio {#pricing}
 
 El componente de precio define el precio base del producto y el intervalo de facturación.
 
@@ -61,7 +61,7 @@ El componente de precio define el precio base del producto y el intervalo de fac
 
 por lo tanto, un precio de ejemplo de $29.99 con una configuración de 1 mes facturará $29.99 cada mes. Del mismo modo, un precio de $89.97 con una configuración de 3 meses facturará esa cantidad cada trimestre.
 
-### Ciclos de facturación
+### Ciclos de facturación {#billing-cycles}
 
 La sección de ciclos de facturación especifica la frecuencia del intervalo de facturación mencionado anteriormente y generalmente se entiende a la luz de contratos o términos fijos.
 
@@ -69,7 +69,7 @@ La sección de ciclos de facturación especifica la frecuencia del intervalo de 
 
 Por ejemplo, un precio de producto de $29.99 con un intervalo de 1 mes y 12 ciclos de facturación facturaría $29.99 al mes por el producto durante los siguientes 12 meses. En otras palabras, dicha configuración establecería un término de precio fijo de $29.99 al mes durante 12 meses y luego dejaría de facturar.
 
-### Período de prueba
+### Período de prueba {#trial-period}
 
 Activar el interruptor de oferta de prueba permite al administrador de la red definir un período de prueba para el producto.
 
@@ -77,7 +77,7 @@ Activar el interruptor de oferta de prueba permite al administrador de la red de
 
 Durante el período de prueba, los clientes pueden usar el producto de forma gratuita y no se les facturará hasta que el período de prueba haya finalizado.
 
-### Cuota de configuración
+### Cuota de configuración {#setup-fee}
 
 También puedes aplicar una cuota de configuración a tu plan.
 
@@ -85,7 +85,7 @@ También puedes aplicar una cuota de configuración a tu plan.
 
 Esto significa que tu cliente pagará una cantidad extra en el primer cargo (además del precio del plan) que corresponde a la cuota que definiste en esta sección.
 
-### Activo
+### Activo {#active}
 
 El interruptor de activo define efectivamente si el producto está disponible para los clientes para nuevos registros.
 
@@ -93,13 +93,13 @@ El interruptor de activo define efectivamente si el producto está disponible pa
 
 Si hay clientes existentes en este plan, configurar el interruptor en su estado desactivado efectivamente conserva el plan para los clientes actuales, eliminándolo de futuros registros. **Los clientes existentes en el plan seguirán siendo facturados** hasta que sean trasladados a un nuevo plan o eliminados del plan.
 
-### Imagen del producto
+### Imagen del producto {#product-image}
 
 El botón **Subir imagen** permite al administrador de la red hacer uso de la biblioteca de medios para seleccionar o subir una imagen del producto.
 
 ![Sección de imagen del producto](/img/config/product-image.png)
 
-### Eliminar
+### Eliminar {#delete}
 
 El botón **Eliminar producto** elimina el producto del sistema. Aparece una vez que el producto está publicado.
 
@@ -107,11 +107,11 @@ El botón **Eliminar producto** elimina el producto del sistema. Aparece una vez
 
 A diferencia de otras eliminaciones, el producto no se coloca en ningún estado de papelera. Por lo tanto, una vez eliminado, la acción es irreversible.
 
-### Opciones del producto
+### Opciones del producto {#product-options}
 
 Una vez definida la información del producto a nivel base, las opciones del producto ayudan al administrador de la red a definir con más detalle los atributos específicos del producto.
 
-#### General
+#### General {#general}
 
 La pestaña **General** define los atributos generales del producto que no son aplicables a ninguna de las otras pestañas específicas del producto.
 
@@ -125,7 +125,7 @@ El **Rol del cliente** especifica el rol que se asigna al cliente cuando se crea
 
 ![Ajustes de rol del cliente](/img/config/product-customer-role-settings.png)
 
-#### Subidas y bajadas de categoría
+#### Subidas y bajadas de categoría {#up--downgrades}
 
 Esta pestaña especifica las rutas de subida y bajada de categoría disponibles para un cliente dentro de su nivel específico.
 
@@ -143,7 +143,7 @@ Para definir un grupo de planes, especifica los planes compatibles dentro de la 
 
 Ultimate Multisite también incluye una función de **order bump**, mediante la cual se pueden añadir a los planes productos y servicios complementarios adecuados. Estos se ofrecen al cliente como elementos adicionales que se pueden añadir a los planes durante el pago o durante una subida de categoría.
 
-#### Variaciones de precio
+#### Variaciones de precio {#price-variations}
 
 Las variaciones de precio permiten al administrador de la red especificar niveles de precios alternativos según la duración. Este ajuste permite ofrecer el mismo producto con facturación mensual, trimestral, anual o cualquier otro período de facturación. Por ejemplo, puedes configurar un producto a $29.99/mes con una opción anual con descuento a $249.99/año.
 
@@ -165,7 +165,7 @@ Por ejemplo, si el precio base de tu producto es $29.99 al mes, podrías añadir
 Las variaciones de precio por sí solas no añaden un conmutador o interruptor al pago de la interfaz pública. Para permitir que los clientes cambien entre períodos de facturación (por ejemplo, Mensual / Anual), debes añadir un campo de **Selección de período** a tu formulario de pago. Consulta [Formularios de pago: añadir un conmutador de selección de período](checkout-forms#adding-a-period-selection-toggle) para obtener instrucciones paso a paso.
 :::
 
-#### Impuestos
+#### Impuestos {#taxes}
 
 La pestaña **Impuestos** se alinea con los ajustes de impuestos especificados en **Ultimate Multisite > Settings > Taxes** y, más concretamente, con las tasas de impuestos definidas. Para habilitar impuestos y definir las tasas de impuestos aplicables, consulta la documentación en **Ultimate Multisite: Settings**
 
@@ -179,7 +179,7 @@ Una vez que la tasa de impuesto se define en **Ultimate Multisite > Settings > M
 
 Para indicar que un producto es un elemento imponible, activa el conmutador **Es imponible** y selecciona la tasa de impuesto aplicable en el menú desplegable Categoría de impuestos.
 
-#### Plantillas de sitio
+#### Plantillas de sitio {#site-templates}
 
 En esencia, las plantillas de sitio son sitios web completos de WordPress que se clonan en el sitio de un cliente al inicio de su suscripción.
 
@@ -201,7 +201,7 @@ Por último, **E** **legir plantillas de sitio disponibles** sustituye las plant
 
 En última instancia, si el administrador de la red desea que la selección de plantilla ocurra en los pasos de checkout, la configuración de ' _predeterminado_ ' será suficiente. Como alternativa, para eliminar y bloquear la selección de plantilla y delegar la selección en la configuración del plan, las opciones ' _asignar nueva plantilla_ ' o ' _elegir plantillas de sitio disponibles_ ' pueden ser deseables.
 
-#### Sitios
+#### Sitios {#sites}
 
 La pestaña **Sitios** forma parte de la funcionalidad de limitaciones de Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Esta configuración especifica el número máximo de sitios que un cliente puede
 
 Para activar la limitación, establece el interruptor **limitar sitios** en su estado activo y especifica el número máximo de sitios en el campo **asignación de sitios**.
 
-#### Visitas
+#### Visitas {#visits}
 
 La pestaña **Visitas** es otra parte del sistema de limitaciones de Ultimate Multisite. Esta configuración permite contabilizar y posteriormente limitar los visitantes únicos al sitio de un cliente.
 
@@ -223,7 +223,7 @@ Para utilizar esta función, establece el interruptor **limitar visitas únicas*
 
 Una vez que se alcance este límite, Ultimate Multisite dejará de servir el sitio del cliente en lugar de mostrar un mensaje para indicar que se han superado los límites.
 
-#### Usuarios
+#### Usuarios {#users}
 
 Las limitaciones de 'Usuarios' de Ultimate Multisite permiten al administrador de la red imponer límites al número de usuarios que se pueden crear y asignar a roles.
 
@@ -233,7 +233,7 @@ Para activar la función de limitaciones, establece el interruptor **limitar usu
 
 A continuación, para cada rol que deba limitarse, establece el interruptor junto a él en un estado activo y define el límite máximo superior en el campo correspondiente.
 
-#### Tipos de entrada
+#### Tipos de entrada {#post-types}
 
 La pestaña **Tipos de entrada** permite al administrador de la red imponer límites granulares sobre la amplia variedad de tipos de entrada dentro de WordPress.
 
@@ -245,7 +245,7 @@ Para activar este subsistema de límites, establece el interruptor **limitar tip
 
 A continuación, para cada tipo de entrada que deba limitarse, actívalo deslizándolo hacia la derecha y especificando el límite máximo superior en el campo correspondiente.
 
-#### Espacio en disco
+#### Espacio en disco {#disk-space}
 
 La pestaña **Espacio en disco** permite a los administradores de red restringir el espacio consumido por los clientes.
 
@@ -257,13 +257,13 @@ Para activar la limitación de uso de disco, establece el interruptor **limitar 
 
 A continuación, especifica el límite máximo superior en megabytes en el campo **asignación de espacio en disc** o.
 
-#### Dominio personalizado
+#### Dominio personalizado {#custom-domain}
 
 Al activar esta opción, puedes permitir dominios personalizados específicamente en este plan.
 
 ![Pestaña Dominios personalizados](/img/config/product-custom-domains.png)
 
-#### Temas
+#### Temas {#themes}
 
 La pestaña **Temas** dentro de las opciones del producto permite al administrador de la red poner temas a disposición de los clientes para su selección y, opcionalmente, forzar el estado del tema.
 
@@ -281,7 +281,7 @@ La selección de **comportamiento** permite al administrador de la red definir e
 
 En el estado **D** **isponible**, el tema se pone a disposición del cliente para que lo active por sí mismo. Por el contrario, el estado **No disponible** elimina para el cliente la capacidad de activar el tema. Por último, la opción **Forzar activación** fuerza la selección y activación del tema, estableciéndolo así como predeterminado al crear el sitio.
 
-#### Plugins
+#### Plugins {#plugins}
 
 De forma similar a la pestaña Temas, Ultimate Multisite permite al administrador de la red definir la visibilidad de los plugins para los clientes, así como su estado al crear un nuevo sitio.
 
@@ -301,7 +301,7 @@ La configuración **Force Activate & Lock** funciona de manera similar, pero imp
 
 El administrador de la red puede considerar las configuraciones Force Activate & Lock y Force Inactivate & Lock junto con las plantillas de sitio, ya que los plugins y los estados de los plugins dentro de las plantillas pueden verse afectados por estas configuraciones si se seleccionan.
 
-#### Restablecer limitaciones
+#### Restablecer limitaciones {#reset-limitations}
 
 La pestaña **Reset Limitations** restablece todos los límites personalizados definidos en el producto. Para restablecer las limitaciones, haz clic en el botón **reset limitations**.
 
@@ -311,7 +311,7 @@ Para confirmar la acción, desliza el interruptor **confirm reset** a su estado 
 
 ![Pestaña Reset Limitations](/img/config/product-reset-limitations.png)
 
-## Editar, duplicar o eliminar producto
+## Editar, duplicar o eliminar producto {#edit-duplicate-or-delete-product}
 
 Los productos existentes se pueden editar, duplicar o eliminar navegando a **Ultimate Multisite > Products** y pasando el cursor sobre el nombre del producto existente.
 

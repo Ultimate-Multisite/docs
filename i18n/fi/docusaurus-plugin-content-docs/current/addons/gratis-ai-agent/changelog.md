@@ -3,11 +3,11 @@ title: Muutosloki
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Muutosloki
+# Muutosloki {#changelog}
 
-## 1.9.0 — Julkaistu 2026-04-28
+## 1.9.0 — Julkaistu 2026-04-28 {#190--released-on-2026-04-28}
 
-### Uutta
+### Uutta {#new}
 
 - **`create_contact_form`-toiminto** — luo yhteydenottolomakkeen käyttäen aktiivista lomake-pluginia (Contact Form 7, WPForms, Fluent Forms tai Gravity Forms) ja palauttaa shortcoden, joka on valmis upotettavaksi mihin tahansa artikkeliin tai sivuun.
 - **`set_featured_image`-toiminto** — määrittää artikkelille tai sivulle artikkelikuvan olemassa olevan Media Library -liitteen ID:stä tai etä-URL:stä; tuo kuvan automaattisesti, kun URL annetaan.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Palauta viimeisin istunto** — chat-paneeli lataa nyt viimeisimmän keskustelun automaattisesti sivun latautuessa ja widgetin avautuessa, joten konteksti ei koskaan katoa sivusiirtymien välillä.
 - **Pluginin toimintolinkit** — pikalinkit asetuksiin ja toimintorekisteriin näkyvät nyt WordPressin **Pluginit → Asennetut pluginit** -näkymässä pluginin kuvauksen alapuolella.
 
-### Parannettu
+### Parannettu {#improved}
 
 - **Kuvalähteen uudelleenyritys** — agentti yrittää nyt kaikkia määritettyjä ilmaisia kuvalähteitä uudelleen ennen kuin se palaa AI:n luomaan kuvaan latausvirheen sattuessa.
 - **Mallin tietopaneeli** — näkyy aina chat-otsikossa; sitä ei enää piiloteta ensimmäisen viestin jälkeen.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat-widgetin uudistus** — yhtenäinen AI-kuvake korvaa aiemman mukautetun avatarin; yhdenmukainen sisäänrakennetun agenttijärjestelmän kanssa.
 - **URL-linkitys** — järjestelmäviesteissä ja virheviestikuplissa näkyvät URL:t renderöidään nyt klikattavina linkkeinä.
 
-### Korjattu
+### Korjattu {#fixed}
 
 - **Toimintojen löydettävyys** — kuvaukset, järjestelmäkehotteen viittaukset ja namespace-kohdistus korjattu, jotta kaikki toiminnot näkyvät luotettavasti agentin työkaluluettelossa.
 - **Palveluntarjoajien välimuisti** — palveluntarjoajat välimuistitetaan nyt sivuston laajuisesti versiolasurin kautta, mikä estää vanhentuneiden palveluntarjoajien ongelmat multisite-verkoissa.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Julkaistu 2026-04-09
+## 1.4.0 — Julkaistu 2026-04-09 {#140--released-on-2026-04-09}
 
-### Uutta
+### Uutta {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — suorittaa Agent Capabilities v1 benchmark suite -testikokonaisuuden komentoriviltä CI-putkia ja mallien arviointityönkulkuja varten. Tukee kysymyskohtaisia ajoja, tarjoajan/mallin ohituksia sekä JSON/CSV-tulostusta.
 - **Agent Capabilities v1 benchmark suite** — jäsennelty joukko monimutkaisia, monivaiheisia kehotteita, jotka testaavat koko kyvykkyyspinnan, pisteytyksen sekä tokenien/keston raportoinnin kanssa.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ravintolasivuston benchmark-kysymys** (`q-restaurant-website`) — päästä päähän -testi, joka kattaa CPT-rekisteröinnin, design systemin, navigaation ja pluginien löytämisen.
 - **AI-tarjoajan liitinpluginit** lisätty WordPress Playground -blueprinteihin nopeampaa paikallisen kehityksen asetusta varten.
 
-### Parannettu
+### Parannettu {#improved-1}
 
 - README päivitetty AI-tarjoajan liittimien dokumentaatiolla ja asennusohjeilla.
 
-### Korjattu
+### Korjattu {#fixed-1}
 
 - 25 PHPUnit-testivirhettä `main`-haarassa ratkaistu.
 - GitHub-julkaisujen URL-muoto kohdassa `blueprint.json` korjattu.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Aiemmat julkaisutiedot ylläpidetään pluginin repositoriossa._

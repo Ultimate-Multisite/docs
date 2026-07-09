@@ -3,17 +3,17 @@ title: Direction artistique
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direction du design
+# Direction du design {#design-direction}
 
 L'étape **Direction du design** vous permet de revoir, d'affiner et de finaliser le design visuel de votre thème avant que Theme Builder ne génère le thème complet.
 
-## Aperçu
+## Aperçu {#overview}
 
 Après avoir terminé l'entretien de découverte (Discovery Interview), Theme Builder vous présente votre direction de design avec un **aperçu de rendu pour ordinateur de bureau et mobile**. Cela vous permet de voir exactement à quoi ressemblera votre design sur différents appareils avant de vous engager sur le thème.
 
-## Composants de la Direction du design
+## Composants de la Direction du design {#design-direction-components}
 
-### 1. Palette de couleurs
+### 1. Palette de couleurs {#1-color-palette}
 
 Le schéma de couleurs de votre thème, incluant :
 
@@ -23,7 +23,7 @@ Le schéma de couleurs de votre thème, incluant :
 - **Couleurs neutres** — gris et blancs pour les arrière-plans et le texte
 - **Couleur de texte** — couleur de texte principale pour la lisibilité
 
-### 2. Typographie
+### 2. Typographie {#2-typography}
 
 Sélections de polices pour :
 
@@ -33,14 +33,14 @@ Sélections de polices pour :
 - **Hauteur de ligne** — espacement entre les lignes pour la lisibilité
 - **Graisses de police** — variations gras, régulier et léger
 
-### 3. Mise en page et espacement
+### 3. Mise en page et espacement {#3-layout-and-spacing}
 
 - **Largeur du conteneur** — largeur maximale du contenu
 - **Marge et rembourrage (Padding and margins)** — espacement autour des éléments
 - **Système de grille** — disposition en colonnes pour un design réactif
 - **Espacement des composants** — distance entre les éléments d'interface utilisateur
 
-### 4. Éléments visuels
+### 4. Éléments visuels {#4-visual-elements}
 
 - **Styles de boutons** — designs de boutons primaires, secondaires et tertiaires
 - **Designs de cartes** — mises en page pour les blocs de contenu
@@ -48,9 +48,9 @@ Sélections de polices pour :
 - **Bordures et ombres** — profondeur visuelle subtile
 - **Effets de survol (Hover effects)** — style des états interactifs
 
-## Rendu de l'aperçu
+## Rendu de l'aperçu {#preview-rendering}
 
-### Aperçu sur ordinateur de bureau
+### Aperçu sur ordinateur de bureau {#desktop-preview}
 
 L'aperçu sur ordinateur de bureau affiche votre design en pleine largeur (généralement 1200px ou plus) :
 
@@ -59,7 +59,7 @@ L'aperçu sur ordinateur de bureau affiche votre design en pleine largeur (gén�
 - Typographie et espacement importants
 - Tous les éléments visuels à pleine taille
 
-### Aperçu sur mobile
+### Aperçu sur mobile {#mobile-preview}
 
 L'aperçu sur mobile affiche votre design en largeur mobile (généralement 375px) :
 
@@ -68,7 +68,7 @@ L'aperçu sur mobile affiche votre design en largeur mobile (généralement 375p
 - Typographie et espacement ajustés
 - Tailles de boutons adaptées au toucher
 
-### Points de rupture réactifs
+### Points de rupture réactifs {#responsive-breakpoints}
 
 Theme Builder rend des aperçus à ces points de rupture :
 
@@ -79,9 +79,9 @@ Theme Builder rend des aperçus à ces points de rupture :
 | **Ordinateur de bureau** | 1200px | Ordinateur de bureau pleine largeur |
 | **Grand ordinateur de bureau** | 1920px | Écran ultra-large |
 
-## Affiner votre design
+## Affiner votre design {#refining-your-design}
 
-### Effectuer des ajustements
+### Effectuer des ajustements {#making-adjustments}
 
 Vous pouvez affiner votre direction de design en :
 
@@ -91,7 +91,7 @@ Vous pouvez affiner votre direction de design en :
 4. **Mettant à jour la mise en page** — changez les largeurs de conteneur et les colonnes de grille
 5. **Personnalisant les éléments** — modifiez les styles de boutons, les designs de cartes, etc.
 
-### Mises à jour de l'aperçu
+### Mises à jour de l'aperçu {#preview-updates}
 
 Les changements sont reflétés en temps réel :
 
@@ -100,7 +100,7 @@ Les changements sont reflétés en temps réel :
 - Tous les points de rupture réactifs sont mis à jour
 - Vous pouvez basculer entre les aperçus pour vérifier les changements
 
-### Vue de comparaison
+### Vue de comparaison {#comparison-view}
 
 Comparez votre direction de design avec :
 
@@ -108,7 +108,7 @@ Comparez votre direction de design avec :
 - **Designs de concurrents** — comparer avec des sites d'inspiration
 - **Versions précédentes** — revenir à des directions de design antérieures
 
-## Validation de la Direction du design
+## Validation de la Direction du design {#design-direction-approval}
 
 Une fois que vous êtes satisfait de votre design :
 
@@ -118,7 +118,7 @@ Une fois que vous êtes satisfait de votre design :
 4. **Confirmez la mise en page** — vérifiez l'espacement et l'alignement
 5. **Validez le design** — passez à la génération du thème
 
-## Prochaines étapes
+## Prochaines étapes {#next-steps}
 
 Après avoir validé votre direction de design :
 
@@ -127,7 +127,7 @@ Après avoir validé votre direction de design :
 3. Vous pouvez personnaliser davantage à l'aide du Customizer de WordPress
 4. Passez à [Hospitality Menus](./hospitality-menus.md) ou à d'autres fonctionnalités
 
-## Bonnes pratiques
+## Bonnes pratiques {#best-practices}
 
 - **Tester sur de vrais appareils** — utilisez de vrais téléphones et tablettes si possible
 - **Vérifier la lisibilité** — assurez-vous que le texte est lisible à toutes les tailles
@@ -135,30 +135,30 @@ Après avoir validé votre direction de design :
 - **Penser à la performance** — optimisez les images et les polices pour la vitesse
 - **Planifier le contenu** — assurez-vous que la mise en page fonctionne avec votre contenu réel
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-### L'aperçu ne se met pas à jour
+### L'aperçu ne se met pas à jour {#preview-not-updating}
 
 - Actualisez la page
 - Videz le cache du navigateur
 - Essayez un autre navigateur
 - Vérifiez la connexion Internet
 
-### Les couleurs semblent différentes
+### Les couleurs semblent différentes {#colors-look-different}
 
 - Vérifiez les paramètres de couleur du moniteur
 - Essayez sur différents appareils
 - Vérifiez le contraste des couleurs avec des outils d'accessibilité
 - Tenez compte des simulateurs de daltonisme
 
-### Problèmes de typographie
+### Problèmes de typographie {#typography-issues}
 
 - Vérifiez que les fichiers de polices se chargent
 - Vérifiez la taille de la police à différents points de rupture
 - Testez avec du contenu réel
 - Tenez compte de la longueur des lignes pour la lisibilité
 
-## Documentation connexe
+## Documentation connexe {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — collecter les informations de design
 - [Hospitality Menus](./hospitality-menus.md) — créer des pages de menus structurés

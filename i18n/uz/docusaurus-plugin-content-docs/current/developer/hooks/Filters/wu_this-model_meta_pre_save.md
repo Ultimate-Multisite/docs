@@ -4,11 +4,11 @@ title: 'Filtr - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Ma'lumotlar bazasiga saqlash uchun serializatsiya qilinishidan oldin data metani filtrlaydi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Ma'lumotlar bazasiga saqlash uchun serializatsiya qilinishidan oldin data metani
 | $data_unserialized | `array` | Saqlanadigan obyekt ma'lumotlari. |
 | $this | `\Base_Model` | Obyekt instansi. |
 
-### Versiyadan boshlab
+### Versiyadan boshlab {#since}
 
 - 2.0.0
-### Manba
+### Manba {#source}
 
 [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) faylida 534-qatorda aniqlangan

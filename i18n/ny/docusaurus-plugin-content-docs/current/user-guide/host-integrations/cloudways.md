@@ -3,18 +3,18 @@ title: Kuteteza Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration
+# Cloudways Integration {#cloudways-integration}
 
-## Zomwezi (Overview)
+## Zomwezi (Overview) {#overview}
 Cloudways ndi platforma ya ku host cloud yomwe imaphatira kuti mupereke WordPress sites pa zinthu zina za cloud monga DigitalOcean, AWS, Google Cloud, ndi zina. Kukhala kwa integration iyi kumaphatikiza synchronization ya domain ndi ulamulira SSL certificate mmodzi wopereka Ultimate Multisite ndi Cloudways.
 
-## Mafunso (Features)
+## Mafunso (Features) {#features}
 - Synchronization ya domain yomwe imaphatika
 - Ulamulira SSL certificate
 - Kuchuluka kwa domains zina
 - Kuwonjezera DNS kuti certificates za SSL zikukhale
 
-## Zomwe Zikufunika (Requirements)
+## Zomwe Zikufunika (Requirements) {#requirements}
 Zomwe zimenezi zikuyenera kudziwika m'wp-config.php yanu:
 
 ```php
@@ -30,16 +30,16 @@ Mmodzi wopereka, muli ndi ulemu:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Zomwe Zikufunika Kukhazikitsa (Setup Instructions)
+## Zomwe Zikufunika Kukhazikitsa (Setup Instructions) {#setup-instructions}
 
-### 1. Gundikira API Credentials ya Cloudways
+### 1. Gundikira API Credentials ya Cloudways {#1-get-your-cloudways-api-credentials}
 
 1. Kodi muli m'dashboard ya Cloudways?
 2. Kodi muli m'Account > API Keys?
 3. Gundikira API key ngati simukuti muli ndiwo.
 4. Kopya email yanu ndi API key yanu.
 
-### 2. Gundikira Server ID ndi Application IDs Yanu
+### 2. Gundikira Server ID ndi Application IDs Yanu {#2-get-your-server-and-application-ids}
 
 1. M'dashboard ya Cloudways, ndi ulemu "Servers".
 2. Kose server yomwe imaphatika WordPress multisite yanu.
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Kodi muli m'Applications ndikose application ya WordPress yanu.
 5. App ID limaphatikizidwa m'URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Kulemba Constants ku wp-config.php
+### 3. Kulemba Constants ku wp-config.php {#3-add-constants-to-wp-configphp}
 
 Limbani constants zina m'wp-config.php yanu:
 
@@ -70,7 +70,7 @@ Do **not** add `*.your-network.com` (or any subdomain pattern of your own networ
 below for why this prevents per-tenant SSL certificates from being issued.
 :::
 
-### 4. Enable the Integration
+### 4. Enable the Integration {#4-enable-the-integration}
 
 1. In your WordPress admin, go to Ultimate Multisite > Settings
 2. Navigate to the "Domain Mapping" tab
@@ -78,9 +78,9 @@ below for why this prevents per-tenant SSL certificates from being issued.
 4. Enable the Cloudways integration
 5. Click "Save Changes"
 
-## How It Works
+## How It Works {#how-it-works}
 
-### Domain Syncing
+### Domain Syncing {#domain-syncing}
 
 When a domain is mapped in Ultimate Multisite:
 
@@ -91,7 +91,7 @@ When a domain is mapped in Ultimate Multisite:
 
 Note: The Cloudways API requires sending the complete list of domains each time, not just adding or removing individual domains.
 
-### SSL Certificate Management
+### SSL Certificate Management {#ssl-certificate-management}
 
 After domains are synced:
 
@@ -101,7 +101,7 @@ After domains are synced:
 
 Kutete kukhulupirira **standard** (non-wildcard) Let's Encrypt certificates ku Cloudways. Ngati mukuwera pattern ya wildcard mu `WU_CLOUDWAYS_EXTRA_DOMAINS`, kukhala `*.` kumalira pansi pa SSL request — pattern ya wildcard yimeneza pansi pa installation yomwezi. Kuti utendeka certificate ya wildcard ku Cloudways, mutendeka uti mukuwera wameneza manema, koma kulipira lilo lili lopangidwa kwa domain zosonse (pwera lilo lili lopulilira pansi).
 
-## Extra Domains
+## Extra Domains {#extra-domains}
 
 Constant ya `WU_CLOUDWAYS_EXTRA_DOMAINS` imakuwera kuti mukuwera domains **external** zomwe zimeneza kuti zikuperekedwa m'aliases list ya Cloudways application. Mukuwera kuwera kuti:
 
@@ -110,13 +110,13 @@ Constant ya `WU_CLOUDWAYS_EXTRA_DOMAINS` imakuwera kuti mukuwera domains **exter
 
 **Musamukwera** constant iyi kuti mukuwera subdomain ya mitengo yanu (mwachitsanzo, `*.your-network.com`). Ngati mukuwera SSL ya wildcard, mukuwera lilo lili lopulilira pansi.
 
-## Zomwe Zikufunika — Pitfall ya Wildcard SSL
+## Zomwe Zikufunika — Pitfall ya Wildcard SSL {#important--wildcard-ssl-pitfall}
 
 Mwayi wosonyeza wosonyeza poyenera setup ya Cloudways yomweyi yomwezi ndi kuwera wildcard monga `*.your-network.com` mu `WU_CLOUDWAYS_EXTRA_DOMAINS`, kapena kuti mukuwera SSL ya wildcard ya Cloudways kwa wildcard iwo.
 
 **Ngati mukuwera izi, Cloudways idzakhudza kukhala komwezi Let's Encrypt certificates kwa domain zosonse zomwe Ultimate Multisite imapereka.** Cloudways imalimbikitsa certificate ya SSL yomweyi ikulimbikitsidwa pa application m'moyo wamenezi, ndipo certificate ya wildcard yomweyi imapereka pa application imalimbikitsa issuance ya Let's Encrypt kwa domain zosonse zomwe integration imaperekera.
 
-### Setup ya Cloudways SSL yomweyi yomwezi kwa Ultimate Multisite network
+### Setup ya Cloudways SSL yomweyi yomwezi kwa Ultimate Multisite network {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Muwira tab ya **SSL Certificate** ya Ultimate Multisite, shika **standard Let's Encrypt certificate** inayofunika tu `your-network.com` na `www.your-network.com` — **sio wildcard**.
 
@@ -126,14 +126,14 @@ Mwayi wosonyeza wosonyeza poyenera setup ya Cloudways yomweyi yomwezi ndi kuwera
 
 Kama domains za kibinafsi za wateja wako hazina SSL, zingatia tab ya Cloudways SSL. Ikiwa kuna wildcard certificate inayoifanya kazi hapo, futa iwe, toa tena standard Let's Encrypt certificate kwa domain kuu ya mtandao tu, na futa maingiliano yoyote ya wildcard kutoka kwenye `WU_CLOUDWAYS_EXTRA_DOMAINS`. Kisha jaribu upya kuweka mapping ya domain (au subiri moja inayofuata) na integration itaanza kutolea certificates kwa kila domain tena.
 
-## Matatizo (Troubleshooting)
+## Matatizo (Troubleshooting) {#troubleshooting}
 
-### Matatizo ya Muunganisho wa API
+### Matatizo ya Muunganisho wa API {#api-connection-issues}
 - Angalia kwamba email yako na api key ni sahihi
 - Angalia kwamba server yako na application IDs ziko sahihi
 - Hakikisha kuwa akaunti yako ya Cloudways ina ruhusa zinazohitajika
 
-### Matenda ya SSL Certificate
+### Matenda ya SSL Certificate {#ssl-certificate-issues}
 
 - Cloudways imafuna kuti domaina (domains) akune DNS records zoshipira ku server wako m'moyo m'moyo muiteka pa kupanga SSL certificates.
 - Integration imapini DNS records m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m'moyo m

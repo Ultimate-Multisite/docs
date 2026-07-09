@@ -3,11 +3,11 @@ title: Wakilan da aka gina a ciki
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents na Ciki
+# Agents na Ciki {#built-in-agents}
 
 Gratis AI Agent v1.9.0 yana zuwa da agents biyar na ciki, kowanne an riga an saita shi da tarin kayan aiki masu mayar da hankali, system prompt da aka keɓance, da shawarwarin farawa da suka dace da ayyuka na yau da kullum a wannan fanni. Sauyawa tsakanin agents yana canza abin da mataimakin zai iya yi da yadda yake amsawa — ba tare da wani saiti daga gare ka ba. Superdav AI Agent v1.18.0 zai iya ƙara kayan aiki masu lura da jadawali, bayanan tunatarwa, ƙofofin amincewa, da sanarwar SMS zuwa waɗannan hanyoyin aiki idan an saita haɗaɗɗun da suka dace.
 
-## Mene ne Agent?
+## Mene ne Agent? {#what-is-an-agent}
 
 Kowane agent bayanin martabar saiti ne mai suna wanda ke haɗa:
 
@@ -15,7 +15,7 @@ Kowane agent bayanin martabar saiti ne mai suna wanda ke haɗa:
 - **System prompt** — umarnin da ke saita salon agent, fifiko, da ƙuntatawa
 - **Shawarwari** — prompts da aka riga aka rubuta da ake nunawa a cikin mu'amalar hira don taimaka maka farawa da sauri
 
-## Samun Damar Agent Picker
+## Samun Damar Agent Picker {#accessing-the-agent-picker}
 
 1. Buɗe panel ɗin **Gratis AI Agent** a cikin gefen admin na WordPress.
 2. Danna **alamar agent** a saman-hagu na taken hira (alamar tana canzawa don nuna agent mai aiki).
@@ -24,9 +24,9 @@ Kowane agent bayanin martabar saiti ne mai suna wanda ke haɗa:
 
 Haka kuma za ka iya sauya agents a tsakiyar tattaunawa — system prompt na sabon agent zai fara aiki daga saƙo na gaba.
 
-## Agents Biyar na Ciki
+## Agents Biyar na Ciki {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Mayar da hankali:** Ƙirƙira da gyara rubuce-rubuce, shafuka, da fom ɗin tuntuɓa.
 
@@ -47,7 +47,7 @@ Haka kuma za ka iya sauya agents a tsakiyar tattaunawa — system prompt na sabo
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Mayar da hankali:** Ƙirƙirar website daga farko zuwa ƙarshe daga prompt guda ɗaya.
 
@@ -70,7 +70,7 @@ Haka kuma za ka iya sauya agents a tsakiyar tattaunawa — system prompt na sabo
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Mayar da hankali:** Keɓance gani — launuka, rubutun haruffa, CSS, da tsarin blocks.
 
@@ -87,7 +87,7 @@ Haka kuma za ka iya sauya agents a tsakiyar tattaunawa — system prompt na sabo
 - *Ɗauki hoton allo na homepage kuma gaya mini abin da za ka inganta.*
 - *Ƙirƙiri tsarin hero block da za a iya sake amfani da shi tare da hoton bango mai cikakken faɗi da taken da aka daidaita a tsakiya.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Mayar da hankali:** Ganowa, shigarwa, da sarrafa WordPress plugins.
 
@@ -105,7 +105,7 @@ Haka kuma za ka iya sauya agents a tsakiyar tattaunawa — system prompt na sabo
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Mayar da hankali:** Amsa tambayoyi game da abun cikin shafi, saituna, da tsarin WordPress.
 
@@ -124,7 +124,7 @@ Haka kuma za ka iya sauya agents a tsakiyar tattaunawa — system prompt na sabo
 
 ---
 
-## Haɗin Kai na Automation na Superdav
+## Haɗin Kai na Automation na Superdav {#superdav-automation-integrations}
 
 Lokacin da aka saita haɗin kai na Superdav AI Agent v1.18.0, wakilai na ciki za su iya shiga cikin hanyoyin aiki na automation masu aminci da ke la'akari da jadawali:
 
@@ -138,11 +138,11 @@ Hanyar aiki da aka ba da shawara: ka nemi wakilin ya shirya saƙon ko aikin, ka 
 
 ---
 
-## Keɓance Wakilai
+## Keɓance Wakilai {#customising-agents}
 
 Kowane wakili na ciki ana iya faɗaɗa shi ko a maye gurbinsa ta hanyar filter na `gratis_ai_agent_agents`.
 
-### Ƙara custom system prompt ga wakili da yake akwai
+### Ƙara custom system prompt ga wakili da yake akwai {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Rijistar sabon wakili
+### Rijistar sabon wakili {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Sabon wakilin yana bayyana a Mai Zaɓen Wakili nan take bayan filter ɗin ya gudana.
 
-### Cire wakili na ciki
+### Cire wakili na ciki {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

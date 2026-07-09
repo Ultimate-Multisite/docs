@@ -4,13 +4,13 @@ title: Aksi - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Aksi: wu_activation
+# Aksi: wu_activation {#action-wuactivation}
 
 Ngidinan bagian séjén tina pangaya ngagantelkeun rutinitasna pikeun aktivasina
 
-### Ti saprak
+### Ti saprak {#since}
 
 - 1.9.6
-### Sumber
+### Sumber {#source}
 
 Ditetepkeun dina [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L91) dina garis 91

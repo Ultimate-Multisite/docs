@@ -3,15 +3,15 @@ title: Menu pre pohostinstvo
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Jedálne lístky pre pohostinstvo
+# Jedálne lístky pre pohostinstvo {#hospitality-menus}
 
 Funkcia **Jedálne lístky pre pohostinstvo** umožňuje Theme Builder generovať a vkladať štruktúrované stránky s jedálnymi a nápojovými lístkami priamo do vášho WordPress webu.
 
-## Prehľad
+## Prehľad {#overview}
 
 Theme Builder teraz dokáže vytvárať profesionálne, štruktúrované stránky s jedálnymi lístkami pre pohostinské podniky vrátane reštaurácií, kaviarní, barov a cateringových služieb. Tieto jedálne lístky sú plne integrované do dizajnu vášho webu a dajú sa jednoducho aktualizovať a spravovať.
 
-## Podporované typy pohostinstva
+## Podporované typy pohostinstva {#supported-hospitality-types}
 
 - **Reštaurácie** — jedálne lístky pre plnohodnotné stolovanie
 - **Kaviarne** — lístky s kávou a ľahkými jedlami
@@ -21,9 +21,9 @@ Theme Builder teraz dokáže vytvárať profesionálne, štruktúrované stránk
 - **Food trucky** — lístky mobilných stravovacích služieb
 - **Pivovary a vinárstva** — nápojové lístky s opismi
 
-## Štruktúra jedálneho lístka
+## Štruktúra jedálneho lístka {#menu-structure}
 
-### Kategórie jedálneho lístka
+### Kategórie jedálneho lístka {#menu-categories}
 
 Jedálne lístky sú usporiadané do kategórií:
 
@@ -34,7 +34,7 @@ Jedálne lístky sú usporiadané do kategórií:
 - **Nápoje** — nápoje (alkoholické aj nealkoholické)
 - **Špeciality** — denné alebo sezónne špeciality
 
-### Formát položky jedálneho lístka
+### Formát položky jedálneho lístka {#menu-item-format}
 
 Každá položka jedálneho lístka obsahuje:
 
@@ -49,7 +49,7 @@ Každá položka jedálneho lístka obsahuje:
 }
 ```
 
-#### Polia položky
+#### Polia položky {#item-fields}
 
 | Pole | Typ | Opis |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Každá položka jedálneho lístka obsahuje:
 | `allergens` | array | Bežné alergény (orechy, kôrovce atď.) |
 | `availability` | string | Kedy je dostupné (denne, sezónne atď.) |
 
-## Vytváranie jedálnych lístkov pre pohostinstvo
+## Vytváranie jedálnych lístkov pre pohostinstvo {#creating-hospitality-menus}
 
-### Krok 1: Poskytnite informácie o jedálnom lístku
+### Krok 1: Poskytnite informácie o jedálnom lístku {#step-1-provide-menu-information}
 
 Povedzte Theme Builder o svojom jedálnom lístku:
 
@@ -71,7 +71,7 @@ Vytvor jedálny lístok reštaurácie pre moju taliansku reštauráciu s predjed
 cestovinovými jedlami, hlavnými chodmi a dezertmi. Zahrň ceny a opisy.
 ```
 
-### Krok 2: Theme Builder vygeneruje jedálny lístok
+### Krok 2: Theme Builder vygeneruje jedálny lístok {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Naformátuje ceny a opisy
 5. Pridá diétne informácie a informácie o alergénoch
 
-### Krok 3: Skontrolujte a prispôsobte
+### Krok 3: Skontrolujte a prispôsobte {#step-3-review-and-customize}
 
 Môžete:
 
@@ -91,9 +91,9 @@ Môžete:
 4. Aktualizovať opisy a diétne informácie
 5. Upraviť štýlovanie a rozloženie
 
-## Možnosti zobrazenia jedálneho lístka
+## Možnosti zobrazenia jedálneho lístka {#menu-display-options}
 
-### Kompletná stránka jedálneho lístka
+### Kompletná stránka jedálneho lístka {#full-menu-page}
 
 Samostatná stránka zobrazujúca celý váš jedálny lístok:
 
@@ -102,7 +102,7 @@ Samostatná stránka zobrazujúca celý váš jedálny lístok:
 - Rozloženie vhodné na tlač
 - Responzívny dizajn pre mobilné zariadenia
 
-### Widget jedálneho lístka
+### Widget jedálneho lístka {#menu-widget}
 
 Vložte sekcie jedálneho lístka na iné stránky:
 
@@ -111,7 +111,7 @@ Vložte sekcie jedálneho lístka na iné stránky:
 - Nápojový lístok na stránke baru
 - Prezentácia dezertov v pätičke
 
-### PDF jedálneho lístka
+### PDF jedálneho lístka {#menu-pdf}
 
 Vygenerujte stiahnuteľný PDF jedálny lístok:
 
@@ -120,9 +120,9 @@ Vygenerujte stiahnuteľný PDF jedálny lístok:
 - Zahŕňa obrázky a opisy
 - Jednoduché zdieľanie a odosielanie e-mailom
 
-## Diétne informácie a informácie o alergénoch
+## Diétne informácie a informácie o alergénoch {#dietary-and-allergen-information}
 
-### Diétne atribúty
+### Diétne atribúty {#dietary-attributes}
 
 Označte položky diétnymi informáciami:
 
@@ -134,7 +134,7 @@ Označte položky diétnymi informáciami:
 - **Nízkosacharidové** — znížený obsah sacharidov
 - **Vysokoproteínové** — bohaté na bielkoviny
 
-### Upozornenia na alergény
+### Upozornenia na alergény {#allergen-warnings}
 
 Zahrňte bežné alergény:
 
@@ -147,9 +147,9 @@ Zahrňte bežné alergény:
 - **Lepok** — pšenica a obilniny obsahujúce lepok
 - **Sezam** — sezamové semienka a olej
 
-## Správa jedálneho lístka
+## Správa jedálneho lístka {#menu-management}
 
-### Aktualizácia cien
+### Aktualizácia cien {#updating-prices}
 
 Jednoducho aktualizujte ceny v jedálnom lístku:
 
@@ -159,7 +159,7 @@ Jednoducho aktualizujte ceny v jedálnom lístku:
 4. Uložte zmeny
 5. Zmeny sa okamžite zobrazia na vašom webe
 
-### Pridávanie sezónnych položiek
+### Pridávanie sezónnych položiek {#adding-seasonal-items}
 
 Vytvorte sezónne variácie jedálneho lístka:
 
@@ -169,7 +169,7 @@ Vytvorte sezónne variácie jedálneho lístka:
 4. Naplánujte dátumy dostupnosti
 5. Automaticky zobrazujte počas sezóny
 
-### Správa špecialít
+### Správa špecialít {#managing-specials}
 
 Zobrazujte denné alebo týždenné špeciality:
 
@@ -179,7 +179,7 @@ Zobrazujte denné alebo týždenné špeciality:
 4. Aktualizujte denne alebo týždenne
 5. Archivujte staré špeciality
 
-## Integrácia s Theme Builder
+## Integrácia s Theme Builder {#integration-with-theme-builder}
 
 Pri používaní Theme Builder pre pohostinské weby:
 
@@ -189,9 +189,9 @@ Pri používaní Theme Builder pre pohostinské weby:
 4. **Optimalizácia pre mobilné zariadenia** — jedálne lístky sa krásne zobrazujú na telefónoch
 5. **SEO optimalizácia** — jedálne lístky sú vhodné pre vyhľadávače
 
-## Osvedčené postupy
+## Osvedčené postupy {#best-practices}
 
-### Dizajn jedálneho lístka
+### Dizajn jedálneho lístka {#menu-design}
 
 - **Jasná organizácia** — logická štruktúra kategórií
 - **Čitateľné opisy** — lákavé a informatívne
@@ -199,7 +199,7 @@ Pri používaní Theme Builder pre pohostinské weby:
 - **Profesionálne fotografie** — vysokokvalitné obrázky jedál
 - **Voľný priestor** — nepreplňujte stránku
 
-### Obsah
+### Obsah {#content}
 
 - **Presné opisy** — opisujte položky presne
 - **Zvýraznite špeciality** — nech špeciality vyniknú
@@ -207,7 +207,7 @@ Pri používaní Theme Builder pre pohostinské weby:
 - **Pravidelne aktualizujte** — udržiavajte ceny a položky aktuálne
 - **Používajte lákavý jazyk** — nech položky znejú chutne
 
-### Prístupnosť
+### Prístupnosť {#accessibility}
 
 - **Čitateľné písma** — používajte jasné, ľahko čitateľné typy písma
 - **Dostatočný kontrast** — zabezpečte čitateľnosť textu
@@ -215,9 +215,9 @@ Pri používaní Theme Builder pre pohostinské weby:
 - **Upozornenia na alergény** — výrazne zobrazte alergény
 - **Vhodné pre mobilné zariadenia** — testujte na všetkých zariadeniach
 
-## Príklady
+## Príklady {#examples}
 
-### Štruktúra jedálneho lístka reštaurácie
+### Štruktúra jedálneho lístka reštaurácie {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Štruktúra menu kaviarne
+### Štruktúra menu kaviarne {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Súvisiace funkcie
+## Súvisiace funkcie {#related-features}
 
 - [Vytvoriť menu](../abilities/create-menu.md) — vytvárať navigačné menu
 - [Smerovanie dizajnu](./design-direction.md) — prispôsobte dizajn svojej stránky

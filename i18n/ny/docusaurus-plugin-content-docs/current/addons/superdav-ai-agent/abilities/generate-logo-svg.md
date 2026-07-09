@@ -3,15 +3,15 @@ title: Pangani SVG ya chizindikiro
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Panga Logo SVG
+# Panga Logo SVG {#generate-logo-svg}
 
 Luso la **Panga Logo SVG** limalola Theme Builder kupanga ndi kuyika ma logo a SVG okonzedwa mwapadera mwachindunji mu site yanu ya WordPress ndi kuyeretsa kodzichitira kokha kotetezeka pa namespace.
 
-## Chidule
+## Chidule {#overview}
 
 Luso ili limapanga ma logo a scalable vector graphics (SVG) kutengera njira ya branding ya site yanu ndi zokonda za kapangidwe. Ma SVG opangidwa amayeretsedwa zokha kuti atsimikizire kuti ndi otetezeka kugwiritsidwa ntchito mu WordPress pomwe akusunga kukongola kwake.
 
-## Ma parameter
+## Ma parameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Luso ili limapanga ma logo a scalable vector graphics (SVG) kutengera njira ya b
 | `height` | number | Ayi | Kutalika kwa SVG mu pixels (default: 200) |
 | `include_text` | boolean | Ayi | Kaya muphatikize dzina la site ngati mawu mu logo (default: true) |
 
-## Mtundu wa zotuluka
+## Mtundu wa zotuluka {#output-format}
 
 Luso limabwezera chingwe cha SVG chokhala ndi kapangidwe kotsatiraku:
 
@@ -36,7 +36,7 @@ Luso limabwezera chingwe cha SVG chokhala ndi kapangidwe kotsatiraku:
 }
 ```
 
-## Khalidwe la kuyeretsa SVG
+## Khalidwe la kuyeretsa SVG {#svg-sanitisation-behaviour}
 
 Ma SVG opangidwa amadutsa kuyeretsa kodzichitira kokha kotetezeka pa namespace kuti:
 
@@ -48,7 +48,7 @@ Ma SVG opangidwa amadutsa kuyeretsa kodzichitira kokha kotetezeka pa namespace k
 
 Izi zimatsimikizira kuti SVG ndi yotetezeka kuyikidwa mwachindunji mu WordPress popanda kufunika kwa kuyeretsa kwina.
 
-## Chitsanzo cha kagwiritsidwe
+## Chitsanzo cha kagwiritsidwe {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Luso limapanga logo ya SVG yomwe:
 - Imatsatira mfundo za kapangidwe ka modern
 - Imayeretsedwa zokha ndipo yakonzeka kugwiritsidwa ntchito
 
-## Kuphatikizana ndi Theme Builder
+## Kuphatikizana ndi Theme Builder {#integration-with-theme-builder}
 
 Mukamagwiritsa ntchito kusankha njira ya kapangidwe ya Theme Builder, luso la Panga Logo SVG:
 
@@ -71,21 +71,21 @@ Mukamagwiritsa ntchito kusankha njira ya kapangidwe ya Theme Builder, luso la Pa
 3. Limayika logo yokhayo mu header/branding area ya site yanu
 4. Limasunga SVG ngati logo yokonzedwa mwapadera mu media ya WordPress
 
-## Njira zabwino
+## Njira zabwino {#best-practices}
 
 - **Perekani zokonda za style zomveka bwino** — fotokozani mtundu wa kapangidwe omwe mukufuna (modern, classic, playful, ndi zina zotero)
 - **Tchulani mitundu** — phatikizani mitundu ya brand yanu kuti pakhale kufanana
 - **Yesani kuwonetsedwa** — tsimikizirani kuti logo ikuwoneka bwino pa kukula kosiyanasiyana kwa ma screen
 - **Sinthani zambiri** — gwiritsani ntchito zida zosinthira logo za WordPress kuti musinthe kukula ndi malo ake
 
-## Malire
+## Malire {#limitations}
 
 - Ma logo a SVG amapangidwa ngati zithunzi zokhazikika (osati animated)
 - Ma logo ovuta okhala ndi zinthu zambiri angafunike kukonzedwanso pamanja
 - Ma font okonzedwa mwapadera sathandizidwa; mawu amagwiritsa ntchito ma font a system
 - Miyeso yayikulu kwambiri kapena yaying'ono kwambiri ingakhudze khalidwe
 
-## Maluso ogwirizana
+## Maluso ogwirizana {#related-abilities}
 
 - [Tsimikizani Kusiyana kwa Palette](./validate-palette-contrast.md) — fufuzani kusiyana kwa mitundu kuti izipezeka mosavuta
 - [Panga Menu](./create-menu.md) — panga ma menu oyendera a site yanu

@@ -3,7 +3,7 @@ title: Көчүрүүчү жана Фильтрлер
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Хуктар жана фильтрлер
+# Ultimate Multisite Хуктар жана фильтрлер {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite көптөгөн функциялар жана базалык суроолордон турат. Анда сиз бардык функцияларды өзгөртүү же жаңы кодду кошуу мүмкүн болгон хуктар (hooks) жана фильтрлер (filters) бар.
 

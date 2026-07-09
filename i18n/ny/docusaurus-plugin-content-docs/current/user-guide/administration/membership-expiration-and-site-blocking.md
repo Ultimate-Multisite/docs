@@ -3,11 +3,11 @@ title: Kutendeka kwa Upozi wa Uwanja na Kuzuia Uwanja
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Kufufu kwa Ufupi wa Ufanisi na Kuzuia Tovuti
+# Kufufu kwa Ufupi wa Ufanisi na Kuzuia Tovuti {#membership-expiration-and-site-blocking}
 
 Ili kufahamu jinsi Ultimate Multisite inavyoshughulikia kuisha kwa uwezo (membership expiration), kukataliwa kwa majaribio (trial endings), na kuzuia tovuti mbele ya wateja (frontend site blocking). Hii itakueleza maisha ya membership kutoka kuwa hai hadi kuisha, mipangilio inayodhibiti kama tovuti zinazotolewa inapaswa kukataliwa, na unachopaswa kuangalia wakati tovuti bado zinaweza kufikiwa baada ya uwezo kuisha.
 
-## Maisha ya Hali ya Membership (Membership Status Lifecycle)
+## Maisha ya Hali ya Membership (Membership Status Lifecycle) {#membership-status-lifecycle}
 
 Kila membership katika Ultimate Multisite ina hali moja kati ya hizi:
 
@@ -24,7 +24,7 @@ Free memberships hazikosi kwa wakati. Ultimate Multisite inazitambua kama fursa 
 | **Expired** | Imepita tarehe ya kuisha na kipindi cha huruma bila kufanya upya |
 | **Cancelled** | Imeozwa wazi na mteja au msimamizi |
 
-### Jinsi Membership Zinavyobadilika Kuisha (How Memberships Transition to Expired)
+### Jinsi Membership Zinavyobadilika Kuisha (How Memberships Transition to Expired) {#how-memberships-transition-to-expired}
 
 Ultimate Multisite inafanya ukaguzi wa nyuma **kila saa** unaotafuta membership ambayo inapaswa kuwekwa kama iliyoisha. Ukaguzi huu unatumia [Action Scheduler](https://actionscheduler.org/) (sio WP-Cron moja kwa moja) na hufanyika kama action ya `wu_membership_check` inayopangwa (scheduled).
 
@@ -34,7 +34,7 @@ Ukaguzi wa kuisha una **kipindi cha huruma cha awali cha siku 3** kimsingi. Memb
 Kutera ya muda wa kuisha (expiration grace period) ya siku 3 inapeperaka kutokana na mipangidwe ya Grace Period ya Frontend Block iliyoezwa hapa chini. Kutera ya muda wa kuisha inadhibiti wakati **status inabadilika** kutoka active/on-hold hadi expired. Mipangidwe ya Grace Period ya frontend inadhibiti wakati **site inalizwa (blocked)** baada ya status kubadilika tayari.
 :::
 
-#### Ubadile wa Huduma Zinazorejeshwa Kujyenyiti (Auto-Renewing) dhidi za Zilizopangwa (Non-Auto-Renewing)
+#### Ubadile wa Huduma Zinazorejeshwa Kujyenyiti (Auto-Renewing) dhidi za Zilizopangwa (Non-Auto-Renewing) {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Hii tofauti ni muhimu sana kuelewa jinsi muda wa kuisha unavyofanya kazi:
 
@@ -42,7 +42,7 @@ Hii tofauti ni muhimu sana kuelewa jinsi muda wa kuisha unavyofanya kazi:
 
 - **Huduma zinazorejeshwa kujyenyiti** (`auto_renew = true`): Ukaguzi wa kuisha kwa cron **unapita hizi zote**. Gateway ya malipo (Stripe, PayPal, n.k.) inatarajiwa itumie webhooks kuto Ultimate Multisite wakati usajili unashindwa au unapokatwa. Ikiwa webhook haitapokelewi -- kutokana na kiunganishi uliowekwa vibaya, kukatika kwa gateway, au usajili uliokatwa nje ya mfumo -- huduma inaweza kubaki `active` milele hata baada ya tarehe ya kuisha kupita.
 
-### Jinsi Majaribio (Trials) Yanavyoisha
+### Jinsi Majaribio (Trials) Yanavyoisha {#how-trials-end}
 
 Wakati kipindi cha majaribio (trialing membership) kinapokwisha, mfumo hufanya yafuatayo:
 
@@ -52,11 +52,11 @@ Wakati kipindi cha majaribio (trialing membership) kinapokwisha, mfumo hufanya y
 
 Mchakato huu unafanyika kwenye ratiba sawa ya kila saa kama ukaguzi wa kuisha wa kawaida, lakini **kwa huduma zisizirejeshwa kujyenyiti tu**. Kwa majaribio yanayorejeshwa kujyenyiti, gateway ya malipo ndiyo inashughulikia mabadiliko kutoka trial hadi usajili uliolipa.
 
-## Kuzuia Ufikiaji wa Frontend
+## Kuzuia Ufikiaji wa Frontend {#block-frontend-access}
 
 Kwa kawaida, wakati uwezo wa ujumbe (membership) unakwisha au unapokuwa umeoshwa (on hold), **hata wp-admin dashboard tu inahusishwa**. Frontend ya tovuti inabaki inapatikana kwa wageni. Ili pia kuziba upatikanaji wa umma, lazima uweze kuwasha mipangilio ya **Block Frontend Access**.
 
-### Kuweka Mipangilio
+### Kuweka Mipangilio {#configuring-the-setting}
 
 Nenda kwenye **Ultimate Multisite > Settings > Memberships** na uweke wazi (enable) **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Mipangilio mitatu inayohusiana inasimamia tabia hii:
 | **Frontend Block Grace Period** | Idadi ya siku unazojua baada ya ujumbe kuacha kufanya kazi kabla ya kuziba. Weka `0` ili kuziba mara moja. | 0 |
 | **Frontend Block Page** | Ukurasa kwenye tovuti kuu unaoongoza wageni pale site inapoiziba. Ikiwa haujaweka, wageni watakuta ujumbe wa kawaida "Site not available" na link kwenda ukurasa wa kuingia kwa admin wa site. | None |
 
-### Kile Kinachotokea Wakati Site Inapoziba
+### Kile Kinachotokea Wakati Site Inapoziba {#what-visitors-see-when-a-site-is-blocked}
 
 Wakati upatikanaji wa frontend unazoziba, wageni wanaweza:
 
@@ -83,7 +83,7 @@ Wakati upatikanaji wa frontend unazoziba, wageni wanaweza:
 
 Admin wa site bado anaweza kuingia -- ukurasa wa kuingia hauziba kamwe.
 
-### Kile Kinachoziba na Wakati
+### Kile Kinachoziba na Wakati {#what-gets-blocked-and-when}
 
 Tabia ya kuziba inategemea hali ya ujumbe:
 
@@ -104,21 +104,21 @@ Kuti mpaka mukuya, membership yomwe imayera n'maka, membership yomwe imayera n'm
 Membership ya Cancelled inapasira grace period. Membership ya Cancelled inapasira grace period. Membership ya Cancelled inapasira grace period. Membership ya Cancelled inapasira grace period. Membership ya Cancelled inapasira grace period. Membership ya Cancelled inapasira grace period. Membership ya Cancelled inapasira grace period.
 :::
 
-## Kuti Mukuya: Sites Zikupitira pamene zikayera
+## Kuti Mukuya: Sites Zikupitira pamene zikayera {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Kuti sites zikupitira pamene membership ikayera, mukuya kupeza ndalamazi monga mukuya kupeza ndalamazi monga mukuya kupeza ndalamazi.
 
-### 1. Kuti Mukuya Block Frontend Access Setting Iye Yera
+### 1. Kuti Mukuya Block Frontend Access Setting Iye Yera {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Tiyera ku **Ultimate Multisite > Settings > Memberships** ndi kukhulupirira kuti **Block Frontend Access** ikuyera. Iyi setting imayera monga default, zomwe zimene kuti wp-admin ikuyera pamene membership ikayera.
 
-### 2. Kuti Mukuya Frontend Block Grace Period
+### 2. Kuti Mukuya Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 Pati ndipo m'maka ya kuweka settings, chani **Frontend Block Grace Period** value. Ngati pano imetendeka kuti iwe yomwezi 7, mwachitsanzo, frontend haipitilika mpaka siku 7 m'maka poyamba kupita kudzera kwa membership -- ngati status ya membership imetendeka `expired` upamwamba.
 
 Seti ku `0` ngati mukufuna kukatula m'maka pamene membership imalimbikira.
 
-### 3. Onesha kuti Status ya Membership Imelimbikira Kwambiri
+### 3. Onesha kuti Status ya Membership Imelimbikira Kwambiri {#3-confirm-the-membership-status-has-actually-changed}
 
 Tiririra ku **Ultimate Multisite > Memberships** ndipo chani status ya membership yomwezi uliyoona. Ngati imeramba ikondwa `active` pamene siku ya kupita imetendeka, mukuya kuti upitiliza kuliye. Mwayi woperekera:
 
@@ -126,7 +126,7 @@ Tiririra ku **Ultimate Multisite > Memberships** ndipo chani status ya membershi
 
 - **Cron job haipita**: Chani step iliyonse.
 
-### 4. Onesha kuti Action Scheduler Imalimbikira
+### 4. Onesha kuti Action Scheduler Imalimbikira {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite imalimbikira Action Scheduler kwa cron jobs yake. Tiririra ku **Tools > Scheduled Actions** m'network admin ndipo chani:
 
@@ -144,7 +144,7 @@ Ultimate Multisite imalimbikira Action Scheduler kwa cron jobs yake. Tiririra ku
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Kufuna kuona matule ya Gateway Webhook (Memberships ikwamba muli)
+### 5. Kufuna kuona matule ya Gateway Webhook (Memberships ikwamba muli) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 M'maka membership ikwamba muli, koma subscription ya gateway imakwambidwa kapena imafamba, koma Ultimate Multisite ikuwamba kuti ikwamba:
 
@@ -153,7 +153,7 @@ M'maka membership ikwamba muli, koma subscription ya gateway imakwambidwa kapena
 
 Ngati gateway imalimbidwa kuti subscription imakwambidwa koma Ultimate Multisite simalimbidwa, muli woyamba notification ya webhook imakwambidwa. Muli woyamba kugawira status ya membership m'maka mu **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Kufuna kuona Mfulu wa Kuwamba (Cron Level)
+### 6. Kufuna kuona Mfulu wa Kuwamba (Cron Level) {#6-check-the-expiration-grace-period-cron-level}
 
 Kukonzi cron kumuli mfulu wake wamaka (default: siku 3) m'maka kuti membership ikuwamba. Iyi si m'maka ya frontend block. Nkhani yote yomwe ikuwamba m'maka yomwe sita ndi:
 
@@ -161,7 +161,7 @@ Kukonzi cron kumuli mfulu wake wamaka (default: siku 3) m'maka kuti membership i
 
 Mifweso, ndi kuti m'moyo wosayera (site) ufunikizidwa kupitilira. Mwachitsanzo, ndi zinthu zomwe zimapereka kwa mfundo yomwe imapereka m'moyo wosayera wosiyanasiyana.
 
-### 7. Kupitilira M'membership Maniwani (Manually Expire a Membership)
+### 7. Kupitilira M'membership Maniwani (Manually Expire a Membership) {#7-manually-expire-a-membership}
 
 Ngati mukufuna kupitilira site mwachidule pamene muli kumayamba kukhala kwa cron cycle, muli ndi ulemu wosayera (membership status) m'moyo wosiyanasiyana:
 
@@ -172,7 +172,7 @@ Ngati mukufuna kupitilira site mwachidule pamene muli kumayamba kukhala kwa cron
 
 Ulemu wosayera (frontend block) mudzakhala m'moyo wosiyanasiyana m'moyo wosayera womwe umayenera (subject to the Frontend Block Grace Period for expired memberships, or immediately for cancelled memberships).
 
-## Mwachidule (Summary)
+## Mwachidule (Summary) {#summary}
 
 Moyeso wosiyanasiyana wochokera ku tsiku la kupitilira kukhala kwa site:
 

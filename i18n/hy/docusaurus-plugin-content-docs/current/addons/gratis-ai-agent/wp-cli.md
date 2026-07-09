@@ -3,11 +3,11 @@ title: WP-CLI տեղեկատու
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI տեղեկատու
+# WP-CLI տեղեկատու {#wp-cli-reference}
 
 Gratis AI Agent-ը տրամադրում է `wp gratis-ai-agent` հրամանների ընտանիք՝ գործակալը բենչմարկ անելու, կարողությունները կառավարելու և հրամանային տողից գործակալի կարգավիճակը հարցնելու համար։ Բոլոր հրամանները պահանջում են WP-CLI 2.0 կամ ավելի բարձր։
 
-## Տեղադրում
+## Տեղադրում {#installation}
 
 WP-CLI հրամանները գրանցվում են ինքնաբար, երբ plugin-ը ակտիվ է։ Ստուգեք՝
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Գործարկում է գործակալի կարողությունների բենչմարկերի հավաքածուն՝ բարդ, բազմաքայլ հուշումների շարք, որը փորձարկում է կարողությունների ամբողջ մակերեսը։ Օգտագործեք սա մոդելի կատարողականը գնահատելու, AI մատակարարներին համեմատելու կամ կարողությունների փաթեթները production-ում ներդնելուց առաջ վավերացնելու համար։
 
-### Համառոտ նկարագրություն
+### Համառոտ նկարագրություն {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Ընտրանքներ
+### Ընտրանքներ {#options}
 
 | Ընտրանք | Նկարագրություն |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Ելքի ձևաչափ՝ `table` (լռելյայն), `json`, `csv` |
 | `--save` | Պահպանել բենչմարկի արդյունքները տվյալների բազայում՝ պատմական համեմատության համար |
 
-### Օրինակներ
+### Օրինակներ {#examples}
 
 Գործարկել ամբողջ բենչմարկերի հավաքածուն ընթացիկ մատակարարով և մոդելով՝
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Ելք
+### Ելք {#output}
 
 Բենչմարկը յուրաքանչյուր հարցի համար արտածում է մեկ տող՝ հետևյալ սյունակներով՝
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Կիրառել մուգ թեմայի նախակազմ  
 ...
 ```
 
-### Բենչմարկի հարցեր
+### Բենչմարկի հարցեր {#benchmark-questions}
 
 Լռելյայն հավաքածուն ներառում է՝
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Կիրառել մուգ թեմայի նախակազմ  
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Կառավարում է տեղադրված կարողությունները և կարողությունների փաթեթները։
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Ցուցադրում է բոլոր գրանցված կարողությունները, դրանց աղբյուրը (միջուկ կամ փաթեթ) և ընթացիկ կարգավիճակը։
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce      ակտիվ
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Ներբեռնում և ակտիվացնում է կարողությունների փաթեթը registry-ից։
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Անջատում է կոնկրետ կարողություն՝ առանց փաթեթը հեռացնելու։ Օգտակար է տվյալ կայքում գործակալի շրջանակը սահմանափակելու համար։
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Կրկին միացնում է նախկինում անջատված կարողությունը։
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Ցուցադրում է գործակալի ընթացիկ կազմաձևը և կապակցման կարգավիճակը։
 
@@ -200,7 +200,7 @@ AI մատակարար:             Anthropic
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Ցուցադրում է debug log-ից գործակալի վերջին ակտիվությունը։
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Վերակայում է գործակալի վիճակը՝ մաքրում է ներարկված CSS-ը, հեռացնում է գործակալի գրանցած CPT-ներն ու տաքսոնոմիաները, վերակայում է գլոբալ ոճերը և դատարկում է գործակալի ընտրանքների քեշը։ Չի հեռացնում plugin-ը կամ դրա կարգավորումները։
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Ելքի կոդեր
+## Ելքի կոդեր {#exit-codes}
 
 Բոլոր հրամանները հաջողության դեպքում ավարտվում են `0` կոդով։ Ոչ զրոյական ելքի կոդեր՝
 

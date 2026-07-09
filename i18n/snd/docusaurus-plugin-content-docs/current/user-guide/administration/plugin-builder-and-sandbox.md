@@ -3,11 +3,11 @@ title: پلاجن بلڊر ۽ ساندبو
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# प्लगइन बिल्डर र सेन्डबक्स
+# प्लगइन बिल्डर र सेन्डबक्स {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 ۾ **Plugin Builder & Sandbox System** شامل ڪيو آهي، جيڪو توهان جي نڪري (network) تي WordPress plugins کي محفوظ، الگ (isolated) sandbox ماحول ۾ جنريٽ ڪرڻ، فعال ڪرڻ ۽ منظم ڪرڻ جو موقعي ڏئي ٿو — هي هم سڀ هڪ محفوظ، الگ ماحول ۾ ٿيندو.
 
-## گهرجانب (Overview)
+## گهرجانب (Overview) {#overview}
 
 Plugin Builder ان AI assistant کي طبيعي ٻولي جي درخواستن جي جواب ۾ ڪسبي طور تي WordPress plugins لکڻ جي اجازت ڏئي ٿو. جنريٽ ٿيل plugins کي sandbox layer اندر تصديق (validate)، محفوظ ڪرڻ ۽ فعال ڪرڻ کان اڳ انهن کي لائیو سائيٽ جي ڪارڪردگي متاثر ٿيڻ کان سواءِ هڪ الگ ماحول ۾ رکيو ويندو آهي.
 
@@ -17,7 +17,7 @@ Plugin Builder ان AI assistant کي طبيعي ٻولي جي درخواستن 
 - انهن features کي پروٽوتاپ (prototype) ڪرڻ جيڪي WordPress hooks يا custom post types گهرجي ٿا.
 - بليڪ ڪريشن عملن لاءِ مختصر وقت وارن automation scripts جوٺ ڪرڻ.
 
-## AI جي ذريعي plugin جو جنريٽ ڪرڻ
+## AI جي ذريعي plugin جو جنريٽ ڪرڻ {#generating-a-plugin-via-ai}
 
 Plugin جنريٽ ڪرڻ لاءِ، Gratis AI Agent chat interface کي کيلو ۽ وضاحت ڪريو ته توهان کي ڪهڙي گهرج آهي. مثال طور:
 
@@ -32,7 +32,7 @@ AI اهو ڪندو:
 
 توهان فعال ڪرڻ کان اڳ، اها نتيجي کي وڌيڪ بهتر ڪري سگهو ٿا اني نفس گفتگو (conversation thread) ۾ follow-up ڪري سگهو ٿا.
 
-## Sandbox فعال ڪرڻ
+## Sandbox فعال ڪرڻ {#sandbox-activation}
 
 Sandbox ۾ جنريٽ ٿيل plugin کي فعال ڪرڻ ۽ لائیو network تي فعال ڪرڻ جو فرق آهي. sandbox:
 
@@ -48,7 +48,7 @@ Sandbox ۾ plugin فعال ڪرڻ لاءِ، AI جي جواب ۾ **Activate in S
 
 स्थिति (status) मेसेज بتاتا بتاي کہ پلےجن فعال ٿيو يا نه ٿيو. جيڪڏهن ڪو غلطي ٿئي، ته غلطي جو لاگ چٽ ٿري ۾ ڏيکاري ويندو آهي.
 
-## جنريٽڊ پلےجن جو انتظام ڪرڻ
+## جنريٽڊ پلےجن جو انتظام ڪرڻ {#managing-generated-plugins}
 
 جنريٽڊ پلےجن **Gratis AI Agent → Plugin Builder → Manage Plugins** ۾ لسٹ ٿيندا آهن. ان سڪرين کان توهان هيٺيون ڪري سگهو ٿا:
 
@@ -64,7 +64,7 @@ Sandbox ۾ plugin فعال ڪرڻ لاءِ، AI جي جواب ۾ **Activate in S
 **Install on network** جنريٽڊ پلےجن کي توهان جي لائیو WordPress multisite تي نصب ڪري ٿو. اڳتي وڌڻ کان پهريون پلےجن جو ڪوڊ ڏسو. Gratis AI Agent لائیو انستانت (live install) كامل ڪرڻ کان اڳ تصديق لاءِ پوڇندو.
 :::
 
-## ڪارڊ تي جنريٽڊ پلےجن نصب ڪرڻ
+## ڪارڊ تي جنريٽڊ پلےجن نصب ڪرڻ {#installing-a-generated-plugin-on-the-network}
 
 جڏهن توهان هڪ ساندبو ۾ پلےجن سان مطمئن ٿي آيو، ته توهان اهو لائیو ڪارڊ تي نصب ڪري سگهو ٿا:
 
@@ -78,7 +78,7 @@ Sandbox ۾ plugin فعال ڪرڻ لاءِ، AI جي جواب ۾ **Activate in S
 /install-plugin <plugin-slug>
 ```
 
-## پلےجن جي اپڊيٽس
+## پلےجن جي اپڊيٽس {#plugin-updates}
 
 ڪو جنريٽڊ پلےجن کي اپڊيٽ ڪرڻ لاءِ، نون گفتگو ۾ AI اسسٽنٽ کي تبديلي بيان ڪريو:
 
@@ -86,7 +86,7 @@ Sandbox ۾ plugin فعال ڪرڻ لاءِ، AI جي جواب ۾ **Activate in S
 
 AI هڪ نون نسخه جنريٽ ڪندو، جيڪا موجوده نسخه سان ساندبو ۾ ظاهر ٿيندي آهي. توهان ڊيفرنس (diff) ڏسو ۽ اپڊيٽ لاڳو ڪرڻ کان اڳ تصديق ڪريو.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Plugin Builder هر جاري پليجن جي hooks ۽ filters کي جانچڻ لاءِ هڪ integrated **HookScanner** جو استعمال ڪري ٿو جيڪو هر جاري پليجن طرفان register ڪيل hooks ۽ filters کي analyze ڪري ٿو. HookScanner جو نتيجو чаٽ جواب ۾ ڏيکاري ٿو ۽ ان ۾ شامل آهي:
 
@@ -96,7 +96,7 @@ Plugin Builder هر جاري پليجن جي hooks ۽ filters کي جانچڻ ل
 
 هي توهان کي پليجن کي activate ڪرڻ کان اڳ ان جو عمل سمجهڻ ۾ مدد ڪري ٿو.
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - جاري پليجن کي هٿ سان نصب ڪيل پليجن کان الگ رکيل آهي ۽ standard WordPress plugin management screen تائين اهو قابل رسائي ناهي جڏهن توهان اهو network تي explicitly install نه ڪريو.
 - sandbox ملفات لکڻ دوران directory traversal کي روڪڻ لاءِ path validation جو استعمال ڪري ٿو.

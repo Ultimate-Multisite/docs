@@ -3,7 +3,7 @@ title: Zapier 集成
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# 将 Ultimate Multisite 与 Zapier 集成
+# 将 Ultimate Multisite 与 Zapier 集成 {#integrating-ultimate-multisite-with-zapier}
 
 在其中一篇文章中，我们讨论了 [Webhook](webhooks.md)，以及它们如何用于与第三方应用程序集成。
 
@@ -15,7 +15,7 @@ Zapier 集成了超过 5000+ 个应用程序，这使不同应用程序之间的
 
 这是可行的，因为 **Ultimate Multisite Zapier 的触发器** 和操作由 [REST API](https://developer.ultimatemultisite.com/api/docs/) 提供支持。
 
-## 如何开始
+## 如何开始 {#how-to-start}
 
 首先，在 Zapier 应用列表中搜索 Ultimate Multisite。或者，你可以点击[此链接](https://zapier.com/apps/wp-ultimo/integrations)。
 
@@ -51,7 +51,7 @@ Zapier 集成了超过 5000+ 个应用程序，这使不同应用程序之间的
 
 点击 **是，继续** 按钮进入下一步。如果一切正常，你应该会看到新连接的 Account！点击 **继续** 创建新的触发器。
 
-## 如何创建新的触发器
+## 如何创建新的触发器 {#how-to-create-a-new-trigger}
 
 现在你的 Account 已连接，你可以看到可用事件。让我们在本教程中选择 **payment_received** 事件。
 
@@ -67,7 +67,7 @@ Zapier 集成了超过 5000+ 个应用程序，这使不同应用程序之间的
 
 在我们的教程中，测试已**成功完成**并返回了 payload 示例信息。此示例信息将在创建操作时为我们提供指导。你的触发器现在已创建，并准备好连接到其他应用程序。
 
-## 如何创建操作
+## 如何创建操作 {#how-to-create-actions}
 
 操作使用来自其他触发器的信息，在你的网络中创建新条目。
 
@@ -79,7 +79,7 @@ Zapier 集成了超过 5000+ 个应用程序，这使不同应用程序之间的
 
 ![为 Zapier 操作选择身份验证](/img/admin/webhooks-list.png)
 
-### 设置操作
+### 设置操作 {#setting-up-the-action}
 
 这是**操作的主要步骤**，这里的内容有些不同。你将选择的第一项信息是**条目**。条目是你网络的**信息模型**，例如**客户、付款、站点、电子邮件**等。
 

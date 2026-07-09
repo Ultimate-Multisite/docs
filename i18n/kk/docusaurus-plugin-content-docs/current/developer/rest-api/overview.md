@@ -3,28 +3,28 @@ title: REST API шолуы
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API анықтамалығы
+# REST API анықтамалығы {#rest-api-reference}
 
-## Негізгі конфигурация
+## Негізгі конфигурация {#base-configuration}
 
 **Негізгі URL:** `{site_url}/wp-json/wu/v2/`
 **Аутентификация:** API кілті және құпиясы (HTTP Basic Auth немесе URL параметрлері)
 
-## Аутентификация
+## Аутентификация {#authentication}
 
-### API қосу
+### API қосу {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API деректерін алу
+### API деректерін алу {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Аутентификация әдістері
+### Аутентификация әдістері {#authentication-methods}
 
 **HTTP Basic Auth (ұсынылады):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Негізгі соңғы нүктелер
+## Негізгі соңғы нүктелер {#core-endpoints}
 
-### 1. Клиенттер API
+### 1. Клиенттер API {#1-customers-api}
 
 **Негізгі маршрут:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Сайттар API
+### 2. Сайттар API {#2-sites-api}
 
 **Негізгі маршрут:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Мүшеліктер API
+### 3. Мүшеліктер API {#3-memberships-api}
 
 **Негізгі маршрут:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Өнімдер API
+### 4. Өнімдер API {#4-products-api}
 
 **Негізгі маршрут:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Төлемдер API
+### 5. Төлемдер API {#5-payments-api}
 
 **Негізгі маршрут:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Домендер API
+### 6. Домендер API {#6-domains-api}
 
 **Негізгі маршрут:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Тіркелу соңғы нүктесі
+## Тіркелу соңғы нүктесі {#registration-endpoint}
 
 `/register` соңғы нүктесі толық төлем рәсімдеу/тіркелу ағынын ұсынады:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Егемен тенант соңғы нүктелері
+## Егемен тенант соңғы нүктелері {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 оқшауланған тенанттарды қамтамасыз ететін, тексеретін немесе растайтын интеграциялар үшін егемен тенанттарға арналған REST қамтуын қосады.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` мәнін іске қосу алдындағы бөгет ретінде қарастырыңыз. Растау мәліметтерін тексеріңіз, дерекқор хостын байланыстыру, кезек, пайдаланушыны қамтамасыз ету немесе маршруттау мәселесін түзетіңіз, содан кейін растауды қайталаңыз.
 
-## Қате жауаптары
+## Қате жауаптары {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## Беттерге бөлу және сүзу
+## Беттерге бөлу және сүзу {#pagination-and-filtering}
 
 **Сұрау параметрлері:**
 ```http

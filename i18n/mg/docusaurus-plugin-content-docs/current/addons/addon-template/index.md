@@ -3,25 +3,25 @@ title: Môdely Fanampiny
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Lasitra Tovan
+# Lasitra Tovan {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Fepetra takiana
+## Fepetra takiana {#requirements}
 
 - WordPress 5.3 na ambony
 - PHP 7.4 na ambony
 - Tovan Multisite Ultimate (mavitrika)
 
-## Fametrahana
+## Fametrahana {#installation}
 
 1. Ampidiro ao amin'ny lahatahiry `/wp-content/plugins/` anao ny rakitry ny tovan
 2. Ampandehano amin'ny alalan'ny menio 'Tovan' ao amin'ny WordPress ny tovan
 3. Amboary ao amin'ny mpitantana tambajotra ny firafitry ny tovan
 
-## Fampivoarana
+## Fampivoarana {#development}
 
-### Fanomanana
+### Fanomanana {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Rafitry ny Tetikasa
+### Rafitry ny Tetikasa {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Fitsipika fanavaozana kaody
 ```
 
-### Fitsapana
+### Fitsapana {#testing}
 
 Ny tovan dia ahitana rafitra fitsapana feno:
 
@@ -75,44 +75,44 @@ Ny tovan dia ahitana rafitra fitsapana feno:
 - **Fandrakofana Fitsapana**: Voarindra hanara-maso ny fandrakofana kaody
 - **Fitsapana Multisite**: Mihazakazaka ao amin'ny tontolo multisite ny fitsapana
 
-### Fenitra Kaody
+### Fenitra Kaody {#code-standards}
 
 - **Fenitra Fanoratana Kaody WordPress**: Ampiharina amin'ny alalan'ny PHPCS
 - **Fifanarahana amin'ny PHP 7.4+**: Tohanana ny endri-javatra PHP maoderina
 - **Famakafakana Statika**: Fampidirana PHPStan ho an'ny fanamarinana karazana
 - **Fanavaozana Kaody**: Fitsipika Rector ho an'ny fanavaozana PHP
 
-### Rafitra Fananganana
+### Rafitra Fananganana {#build-system}
 
 - **Fanodinana Loharano**: Fampihenana haben'ny rakitra CSS/JS
 - **Fandikana**: Famoronana rakitra POT
 - **Fanamboarana Fonosana**: Famoronana arisiva ho an'ny fizarana
 - **Fomba Fampivoarana**: Loharano tsy nohamaivanina ho an'ny debugging
 
-## Firafitra
+## Firafitra {#configuration}
 
 Manohana safidy firafitra isan-karazany azo idirana amin'ny alalan'ny sehatr'asa mpitantana tambajotra ny tovan.
 
-## Hook sy Sivana
+## Hook sy Sivana {#hooks-and-filters}
 
-### Action
+### Action {#actions}
 
 - `ultimate-multisite-addon-template_init` - Alefa aorian'ny fanombohana ny tovan
 - `ultimate-multisite-addon-template_loaded` - Alefa rehefa voafeno avokoa ny rakitra tovan rehetra
 
-### Sivana
+### Sivana {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ovao ny firafitry ny tovan
 - `ultimate-multisite-addon-template_enabled` - Soloy ny satan'ny fampandehanana/famonoana ny tovan
 
-## Lisansa
+## Lisansa {#license}
 
 Ity tovan ity dia omena lisansa araka ny GPL v3 na aoriana.
 
-## Fanohanana
+## Fanohanana {#support}
 
 Ho an'ny fanohanana sy tahirin-kevitra, tsidiho ny [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): ovay ho ultimate-multisite ny prefix; havaozy ny text domain; fampiakarana version.
 

@@ -3,7 +3,7 @@ title: WordPress Multisite ndi chiyani?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kodi WordPress Multisite ndi chiyani?
+# Kodi WordPress Multisite ndi chiyani? {#what-is-wordpress-multisite}
 
 M'moyo wamene, WordPress imapereka chinthu chamene muliwo chiyenera chamene chimene chitsogolera kuti "Multisite". Izi zikuyenera ku mpaka 2010 pamene WordPress 3.0 iliperekedwa. Komwe m'maka, imapereka zambiri kuti zimene nkhani zake zikugwira zinthu zatsanitsa zatsanitsa ndi kukhazikitsa kukhala kwakukulu.
 
@@ -11,7 +11,7 @@ M'moyo wamene, WordPress multisite yomwe mungupatsedwe kuyesa ndi chonde: Njira 
 
 ##
 
-## Kodi Multisite ndi chiyani?
+## Kodi Multisite ndi chiyani? {#what-exactly-is-wordpress-multisite}
 
 Multisite ndi feature ya WordPress imene imaphatikizira sites zingapo kuti zikugwira installation imodzi la WordPress. Pamene multisite imaperekedwa, installation yomwe imodzi ya WordPress imaperekedwa kuti ipereke chinthu chomwe muliwo chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chimene chim
 
@@ -25,7 +25,7 @@ Moyo wosayowekos monga m'kolo wopanga subdomain mode ndi kukhala kwa SSL (HTTPS)
 
 Mwachidule ndi subdirectory mode, subsites pa network yomwe imapanga subdomain zimakumbutiridwa ndi search engines kuti ndi websites lina, koma izi zimenezi zikupanga kuti malo omwe ali m'subsite limodzi siyo kukhala kukhudza SEO ya subsites lina.
 
-## The Super Admin
+## The Super Admin {#subdomain-or-subdirectory}
 
 Single-site WordPress installations zimapangira kuti mupereke nthawi yomwe yosonyeza wosonyeza (users) ndi malo omwe ali ndi roles lina ndi ulemu lina.
 
@@ -39,7 +39,7 @@ Plugins ndi themes zimenezi zikupangira kapena kuchepa zimenezi zikupangira m'ne
 
 _Note: muliwiri, muliwiri wosomwe, ndikukumbutsa kuti kuita wone m'muliwiri wanu ndi kuyesa munthu wanu ndi kupereka iwo super admin status kumphatikizira wosoweka wanu m'muliwiri wanu. Mwachitsanzo, ena omwe ndi super admins angathe kuondoza super admin status yanu, ndipo izi zimapangitsa kuti muli wosoweka wanu woyamba wanu wosowekera wanu. Kuti uthangano Ultimate Multisite wamene anayesera kuti akulekeze kufunsa omwe ena a super admin angathe kuchita chiyani, tili ndi add-on lomwe limakwanira kukhala Support Agents. Add-on ili limakukwanira kupeza m'muliwiri wosoweka wina – agent – ndi kupereka iwo permissions zomwe mungikufunje kuti muperekeza ntchito zawo m'muliwiri wanu._
 
-## Kodi zimene zikuyenera m'muliwiri wosomwe ndizo zomwe sikuyenera
+## Kodi zimene zikuyenera m'muliwiri wosomwe ndizo zomwe sikuyenera {#the-super-admin}
 
 Kodi tikukumbutsa m'muliwiri wosomwe, chimodzi cha zokhudza kwambiri ndi kuti m'muliwiri onse imakugwiritsa ntchito mfundo zosonyeza (configurations), files za moyera (core files), themes, plugins, WordPress core files, ndi zina.
 
@@ -51,7 +51,7 @@ Komabe, kuli monga zinthu zomwe zimapereka bwino kwa m'muliwiri wosomwe wina.
 
 - Zinthu zingapo za database zimaperekedwa kwa muliwiri wosomwe wina, zomwezi ndi posts, comments, pages, settings, ndi zina.
 
-## Ulamulira wa anthu m'muliwiri wosomwe (User management on WordPress Multisite)
+## Ulamulira wa anthu m'muliwiri wosomwe (User management on WordPress Multisite) {#what-is-shared-among-subsites-and-what-is-not}
 
 Kukonzekera kwa anthu m'muliwiri wosomwe ndi chinthu chomwe chimakhala chofunikira kwambiri. Table ya users ya WordPress ndi imodzi monga momwe imaperekedwa m'muliwiri onse.
 
@@ -73,7 +73,7 @@ _Kumbukira: Timakhudza kuti zimene zikuyenera kukhala zikukhudza kwambiri kuposa
 
 Koma ndipo kuti chonde, pamene table ya users ikulimbikira, users angayendwa ndi subsites ndi admin a subsite kapena super admin, ndipo angayendera roles zosiyanasiyana pa subsites.
 
-## Zomwe Ziyenera Kuti Muli Ndi Kufunsa (Performance considerations)
+## Zomwe Ziyenera Kuti Muli Ndi Kufunsa (Performance considerations) {#user-management-on-wordpress-multisite}
 
 WordPress multisite imakuti ndi umodzi wogwira ntchito kwambiri pamene kukhala ndi anthu odziwo kuti imathandiza nkhani zambiri za sites. Izi yomwe mungutse ndi kuona kuti [WordPress.com](https://WordPress.com), Edublogs, ndi Campuspress ndi services zomwe zimakhala multisite, ndipo m'host imodzi imathandiza anthu zingapo zingapo.
 

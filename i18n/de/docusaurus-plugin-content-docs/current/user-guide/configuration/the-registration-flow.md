@@ -3,13 +3,13 @@ title: Der Registrierungsablauf
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Der Registrierungsablauf (v2)
+# Der Registrierungsablauf (v2) {#the-registration-flow-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
 Benutzer können sich auf verschiedene Weise in deinem Netzwerk registrieren. Sie können dein Registrierungsformular oder einen teilbaren Link zu einem vorausgewählten Tarif verwenden. Hier zeigen wir dir, wie sich deine Kunden über die verfügbaren Wege in deinem Netzwerk registrieren können und was passiert, nachdem sie sich in deinem Netzwerk registriert haben.
 
-## Verwendung des Registrierungsformulars:
+## Verwendung des Registrierungsformulars: {#using-the-registration-form}
 
 Dies ist der standardmäßige Registrierungsprozess. Du erstellst eine Registrierungsseite mit einem **Checkout-Formular**, und dort werden deine Kunden sich in deinem Netzwerk registrieren und einen Tarif abonnieren. Du kannst mehrere Registrierungsseiten haben, jeweils mit einem anderen Registrierungsformular, wenn du möchtest.
 
@@ -35,13 +35,13 @@ Wenn sie sich für einen kostenpflichtigen Tarif registriert haben oder die E-Ma
 
 ![Website aktiviert mit Link zur Anmeldung im Dashboard](/img/frontend/site-activated.png)
 
-## Verwendung eines teilbaren Links:
+## Verwendung eines teilbaren Links: {#using-a-shareable-link}
 
 Der Prozess der Registrierung über einen teilbaren Link ist im Grunde derselbe wie beim Registrierungsformular. Der einzige Unterschied besteht darin, dass deine Kunden bei Verwendung eines teilbaren Links ein Produkt oder eine Website-Vorlage im Checkout-Formular vorausgewählt haben können (siehe Abschnitt Vorauswahl von Produkten und Vorlagen über URL-Parameter) oder vielleicht ein Gutscheincode hinzugefügt wurde (siehe Abschnitt Verwendung von URL-Parametern).
 
 Der Registrierungsprozess bleibt derselbe: Sie müssen ihren Namen, Benutzernamen, ihre E-Mail-Adresse, den Website-Namen und -Titel usw. ausfüllen, aber der Tarif oder die Website-Vorlage ist für sie bereits vorausgewählt.
 
-### Registrierung mit manuellen Zahlungen:
+### Registrierung mit manuellen Zahlungen: {#registering-using-manual-payments}
 
 Wenn du PayPal, Stripe oder ein anderes von Ultimate Multisite oder seinen Add-on-Integrationen angebotenes Zahlungsgateway nicht verwenden möchtest, kannst du manuelle Zahlungen für deine Kunden nutzen. Auf diese Weise kannst du eine Rechnung für sie erstellen, die sie nach der Registrierung in deinem Netzwerk über deinen bevorzugten Zahlungsanbieter bezahlen.
 

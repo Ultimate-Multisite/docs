@@ -3,7 +3,7 @@ title: Gemeenskap
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Hoe om by die Ultimate Multisite Community te sluit
+# Hoe om by die Ultimate Multisite Community te sluit {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community is 'n plek waar jy met ander Ultimate Multisite-gebruikers kan kontak maak en tips, ervarings en meer kan deel. Om by die Ultimate Multisite Community te kom, gaan na https://community.ultimatemultisite.com/home.
 

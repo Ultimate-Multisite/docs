@@ -3,13 +3,13 @@ title: Mwongozo wa Ujumuishaji
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Mwongozo wa Uunganishaji
+# Mwongozo wa Uunganishaji {#integration-guide}
 
 Mwongozo huu unashughulikia mifumo ya kawaida ya uunganishaji na Ultimate Multisite, ikijumuisha kuunganisha na huduma za nje, kujenga payment gateways maalum, na kushughulikia webhooks.
 
 Kwa miundombinu ya tenant iliyotengwa, tazama [Uunganishaji wa Multi-Tenancy](./multi-tenancy) kwa mwongozo wa sovereign tenant bootstrap, uthibitishaji wa uhamishaji, SSO, na teardown.
 
-## Uunganishaji wa CRM
+## Uunganishaji wa CRM {#crm-integration}
 
 Sawazisha data ya wateja kwenye CRM yako wateja wapya wanapojisajili:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Uunganishaji wa Analytics
+## Uunganishaji wa Analytics {#analytics-integration}
 
 Fuatilia matukio muhimu ya biashara katika mzunguko mzima wa maisha ya mteja:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Hatua Zinazofuata
+## Hatua Zinazofuata {#next-steps}
 
 - [Uundaji wa Gateway Maalum](./custom-gateway) — Jenga payment gateway yako mwenyewe
 - [Ushughulikiaji wa Webhook](./webhooks) — Unda endpoints maalum za webhook

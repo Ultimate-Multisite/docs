@@ -3,11 +3,11 @@ title: Әзірлеуші құжаттамасы
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Әзірлеуші құжаттамасы
+# Әзірлеуші құжаттамасы {#developer-documentation}
 
 Бұл нұсқаулық әзірлеушілерге Ultimate Multisite-пен интеграциялану, оны кеңейту немесе оған арналған қосымшалар әзірлеу үшін қажеттінің бәрін береді. Ultimate Multisite WordPress Multisite желісін Website-as-a-Service (WaaS) платформасына айналдырады.
 
-## Не қолжетімді
+## Не қолжетімді {#whats-available}
 
 - **[REST API](./rest-api/overview)** — API кілті арқылы аутентификациямен барлық нысандарға (клиенттер, сайттар, мүшеліктер, төлемдер, өнімдер, домендер) арналған толық CRUD операциялары
 - **[Hooks анықтамалығы](./hooks/guide)** — Өмірлік цикл оқиғалары мен баптауға арналған 200+ әрекет hook-ы және 280+ сүзгі hook-ы
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Код мысалдары](./code-examples/)** — Динамикалық баға белгілеу, сайт дайындау, жеке шектеулер және бірнеше шлюзбен өңдеу үшін озық үлгілер
 - **[Қосымша әзірлеу](./addon-development/getting-started)** — Қосымша plugin-дерін құруға арналған құрылымдалған framework
 
-## Талаптар
+## Талаптар {#requirements}
 
 - WordPress Multisite орнатылымы
 - PHP 7.4 немесе одан жоғары
 - Ultimate Multisite plugin-і белсендірілген
 
-## Composer / Bedrock орнату
+## Composer / Bedrock орнату {#composer--bedrock-installation}
 
 Ultimate Multisite [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) ішінде `ultimate-multisite/ultimate-multisite` ретінде қолжетімді. Бұл [Bedrock](https://roots.io/bedrock/) негізіндегі WordPress баптаулары және Composer арқылы басқарылатын басқа орталар үшін ұсынылатын орнату әдісі.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Жылдам бастау
+## Жылдам бастау {#quick-start}
 
-### REST API пайдалану
+### REST API пайдалану {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Оқиғаларға hook қосу
+### Оқиғаларға hook қосу {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Қосымша құру
+### Қосымша құру {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

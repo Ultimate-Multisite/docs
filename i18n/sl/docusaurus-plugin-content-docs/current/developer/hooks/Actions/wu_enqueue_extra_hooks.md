@@ -4,19 +4,19 @@ title: Dejanje - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Action: wu_enqueue_extra_hooks
+# Action: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
 
 Omogoči razvijalcem vtičnikov dodajanje dodatnih kavljev
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
 | $page_hook | `string` | Kavelj strani. |
 
-### Od različice
+### Od različice {#since}
 
 - 1.8.2
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L643) v vrstici 643

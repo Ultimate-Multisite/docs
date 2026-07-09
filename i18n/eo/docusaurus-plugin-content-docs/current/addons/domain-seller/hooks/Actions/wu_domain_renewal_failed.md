@@ -4,11 +4,11 @@ title: Ago - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Ago: wu_domain_renewal_failed
+# Ago: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Ekfunkcias post kiam provo renovigi domajnon malsukcesas.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Ekfunkcias post kiam provo renovigi domajnon malsukcesas.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadatumoj pri renovigo (domain_name, years, ktp.). |
 | $error_message | `string` | Homlegebla erarmesaĝo de la domajna registristo. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) ĉe linio 630

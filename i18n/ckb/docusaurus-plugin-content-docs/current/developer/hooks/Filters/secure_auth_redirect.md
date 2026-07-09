@@ -4,19 +4,19 @@ title: فلتەر - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# فلتەر: secure_auth_redirect
+# فلتەر: secure_auth_redirect {#filter-secureauthredirect}
 
 فلتەر دەکات کە ئایا ڕەوانەکردنەوەی پشتڕاستکردنەوەی سەلامەت بەکاربهێنرێت یان نا.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
 | $secure | `bool` | ئایا ڕەوانەکردنەوەی پشتڕاستکردنەوەی سەلامەت بەکاربهێنرێت یان نا. بنەڕەت false. |
 
-### لە وەشانی
+### لە وەشانی {#since}
 
 - 3.1.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسە کراوە لە [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L190) لە دێڕی 190

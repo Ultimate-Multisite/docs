@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Pysäytä botit. Suojaa liikevaihto. Ei määritysvaivaa.**
 
@@ -15,7 +15,7 @@ Käytätkö multisite-verkkoa mukautetuilla verkkotunnuksilla? Tunnet tuskan: Go
 
 **Ultimate Multisite: Captcha muuttaa kaiken.**
 
-## Cap Captcha: itse isännöity suojaus, joka vain toimii
+## Cap Captcha: itse isännöity suojaus, joka vain toimii {#cap-captcha-self-hosted-protection-that-just-works}
 
 Uusi **Cap Captcha** -tarjoajamme muuttaa pelin multisite-verkoille:
 
@@ -25,7 +25,7 @@ Uusi **Cap Captcha** -tarjoajamme muuttaa pelin multisite-verkoille:
 * **Näkymätön proof-of-work** — Käyttäjät ratkaisevat laskennallisen pulman taustalla. Ei palopostien klikkailua, ei turhauttavia kuvaruudukoita.
 * **Kevyt** — Vain 20KB. Ei hidasta checkoutia.
 
-## WooCommerce-korttitestaussuojauksen
+## WooCommerce-korttitestaussuojauksen {#woocommerce-card-testing-protection}
 
 Korttitestaushyökkäykset maksavat kauppiaille miljardeja vuosittain. Huijarit käyttävät botteja varastettujen luottokorttien vahvistamiseen WooCommerce-checkoutiasi vastaan — sinä maksat käsittelymaksut, he saavat kelvollisia korttinumeroita.
 
@@ -35,7 +35,7 @@ Korttitestaushyökkäykset maksavat kauppiaille miljardeja vuosittain. Huijarit 
 * **PayPal Payments -yhteensopiva** — Toimii saumattomasti WooCommerce PayPal Paymentsin kanssa
 * **Reaaliaikaiset tilastot** — Näet tarkalleen, kuinka monta hyökkäystä estät
 
-## Tarvitsetko yhä Google reCAPTCHAn tai hCaptchan?
+## Tarvitsetko yhä Google reCAPTCHAn tai hCaptchan? {#still-need-google-recaptcha-or-hcaptcha}
 
 Me hoidamme sen. Täysi tuki seuraaville:
 
@@ -47,14 +47,14 @@ Me hoidamme sen. Täysi tuki seuraaville:
 
 Vaihda tarjoajien välillä milloin tahansa verkkoasetuksistasi.
 
-## Rakennettu skaalautumaan
+## Rakennettu skaalautumaan {#built-for-scale}
 
 * Koko verkon laajuiset asetukset sivustokohtaisilla ohituksilla
 * Tilastojen Dashboard suojauksen seurantaan
 * Säädettävät suojaustasot (Nopea, Keskitaso, Maksimi)
 * Kehittäjäystävällinen ja laajennettavissa olevalla tarjoaja-arkkitehtuurilla
 
-## Asennus
+## Asennus {#installation}
 
 1. Lataa `ultimate-multisite-captcha` hakemistoosi `/wp-content/plugins/`
 2. Verkkoaktivoi plugin
@@ -64,37 +64,37 @@ Cap Captcha aktivoituu automaattisesti — ei määritettäviä asetuksia, ei sy
 
 **Valinnainen:** Jos haluat käyttää sen sijaan Google reCAPTCHAa tai hCaptchaa, siirry kohtaan **Ultimate Multisite → Settings → Captcha** ja valitse haluamasi tarjoaja.
 
-## Usein kysytyt kysymykset
+## Usein kysytyt kysymykset {#frequently-asked-questions}
 
-## Täytyykö minun määrittää mitään?
+## Täytyykö minun määrittää mitään? {#do-i-need-to-configure-anything}
 
 Ei! Cap Captcha otetaan automaattisesti käyttöön, kun aktivoit lisäosan. Koko verkkosi on suojattu välittömästi — ei määritettäviä asetuksia, ei syötettäviä API-avaimia.
 
-## Tarvitsenko API-avaimia Cap Captchaa varten?
+## Tarvitsenko API-avaimia Cap Captchaa varten? {#do-i-need-api-keys-for-cap-captcha}
 
 Et. Cap Captcha on täysin itse isännöity. Ei ulkoisia tilejä, ei verkkotunnuksen rekisteröintiä, ei määrityspäänsärkyjä.
 
-## Hidastaako tämä checkoutiani?
+## Hidastaako tämä checkoutiani? {#will-this-slow-down-my-checkout}
 
 Cap Captcha on vain 20KB ja suorittaa proof-of-work-haasteet taustalla. Asiakkaasi eivät huomaa viivettä.
 
-## Suojaako tämä korttitestaushyökkäyksiltä?
+## Suojaako tämä korttitestaushyökkäyksiltä? {#does-this-protect-against-card-testing-attacks}
 
 Kyllä! Toisin kuin perinteiset captchat, jotka suojaavat vain HTML-lomakkeita, WooCommerce-integraatiomme kytkeytyy suoraan Store APIin estääkseen bottihyökkäykset API-tasolla — siellä, missä useimmat korttitestaushyökkäykset tapahtuvat.
 
-## Voinko käyttää eri captcha-tarjoajia eri sivustoilla?
+## Voinko käyttää eri captcha-tarjoajia eri sivustoilla? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Captcha-tarjoaja asetetaan koko verkon laajuisesti, mutta voit säätää vaikeusasetuksia tarpeidesi mukaan.
 
-## Onko tämä GDPR-yhteensopiva?
+## Onko tämä GDPR-yhteensopiva? {#is-this-gdpr-compliant}
 
 Cap Captcha on 100 % itse isännöity, eikä tietoja lähetetä ulkoisiin palveluihin. Google reCAPTCHAa ja hCaptchaa varten tarkista niiden omat tietosuojakäytännöt.
 
-## Nopeusrajoitus
+## Nopeusrajoitus {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 tuo käyttöön hard-stop-nopeusrajoittimen, joka suojaa verkkoasi brute-force- ja korttitestaushyökkäyksiltä.
 
-### Miten se toimii
+### Miten se toimii {#how-it-works}
 
 Nopeusrajoitin laskee jokaisen GET- ja POST-pyynnön captcha-suojatuilla pinnoilla:
 
@@ -108,9 +108,9 @@ Kun vierailija ylittää nopeusrajan, plugin vastaa seuraavilla:
 * **Retry-After**-otsake, joka ilmaisee, milloin voi yrittää uudelleen
 * **Satunnaistettu tarpit-viive** (oletuksena 1–5 sekuntia, kovalla ylärajalla 15 sekuntia) hyökkääjien hidastamiseksi
 
-### Määritys
+### Määritys {#configuration}
 
-#### Tarpit-ajoitus
+#### Tarpit-ajoitus {#tarpit-timing}
 
 Hallitse satunnaistettua viivettä, jota sovelletaan nopeusrajoitettuihin pyyntöihin:
 
@@ -119,9 +119,9 @@ Hallitse satunnaistettua viivettä, jota sovelletaan nopeusrajoitettuihin pyynt�
 
 Nämä asetukset ovat saatavilla kohdassa **Ultimate Multisite → Settings → Captcha**.
 
-### Laajennettavuus
+### Laajennettavuus {#extensibility}
 
-#### IP-sallittujen lista -suodatin
+#### IP-sallittujen lista -suodatin {#ip-whitelist-filter}
 
 Vapauta luotetut IP-alueet nopeusrajoituksesta:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Ennen estoa suoritettava toiminto
+#### Ennen estoa suoritettava toiminto {#pre-block-action}
 
 Suorita mukautettu logiikka välittömästi ennen kuin nopeusrajoitusesto lähetetään:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Asiakkaan IP-tunnistus ja luotetut proxyt
+## Asiakkaan IP-tunnistus ja luotetut proxyt {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 tuo käyttöön huijauksenkestävän asiakkaan IP-tunnistuksen. `Captcha_Core::get_client_ip()`-menetelmä on nyt ainoa totuuden lähde vierailijoiden IP-attribuutiolle seuraavissa:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 tuo käyttöön huijauksenkestävän asiakkaa
 * Captcha-palveluntarjoajan `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Tilastojen IP-hajautteet
 
-### Luottamusmalli
+### Luottamusmalli {#trust-model}
 
 Lisäosa pakottaa käyttöön tiukan IP-luottamushierarkian:
 
@@ -166,9 +166,9 @@ Lisäosa pakottaa käyttöön tiukan IP-luottamushierarkian:
    - Välitön osapuoli on ylläpitäjän määrittämässä luotettujen välityspalvelimien luettelossa
    - Otsake jäsennetään oikealta vasemmalle ohittaen luotetut/Cloudflare-hypyt
 
-### Määritys
+### Määritys {#configuration-1}
 
-#### Cloudflare-otsakkeen luottamus
+#### Cloudflare-otsakkeen luottamus {#cloudflare-header-trust}
 
 Ota käyttöön luottamus Cloudflaren `CF-Connecting-IP`-otsakkeeseen:
 
@@ -178,7 +178,7 @@ Ota käyttöön luottamus Cloudflaren `CF-Connecting-IP`-otsakkeeseen:
   - CIDR-alueet päivitetään viikoittain wp-cronin kautta
   - Mukana toimitettua varavaihtoehtoa käytetään, jos päivitys epäonnistuu
 
-#### Luotettujen välityspalvelimien määritys
+#### Luotettujen välityspalvelimien määritys {#trusted-proxy-configuration}
 
 Määritä etulinjan välityspalvelimet ja kuormantasaajat:
 
@@ -194,14 +194,14 @@ Määritä etulinjan välityspalvelimet ja kuormantasaajat:
     198.51.100.50
     ```
 
-#### Ensimmäisen käyttöönoton automaattinen tunnistus
+#### Ensimmäisen käyttöönoton automaattinen tunnistus {#first-enable-auto-detection}
 
 Kun otat nopeusrajoittimen käyttöön ensimmäistä kertaa, lisäosa tunnistaa todennäköisen Cloudflare- ja välityspalvelinasetelmasi ja näyttää yhden napsautuksen "Käytä tunnistettuja asetuksia" -ylläpitäjäilmoituksen.
 
 * Lisäosa **ei koskaan ylikirjoita** tallennettuja arvojasi
 * Jos myöhempi liikenne viittaa siihen, että määrityksesi ei enää vastaa todellisuutta (esim. Cloudflare muutti CIDR-alueita), ei-suljettava ristiriitailmoitus näyttää suositellun päivityksen
 
-### Miksi tällä on merkitystä
+### Miksi tällä on merkitystä {#why-this-matters}
 
 Tiukka IP-luottamusmalli sulkee kriittisen väärennysvektorin: suorat origin-palvelimen pyynnöt, joissa on väärennetty `CF-Connecting-IP`-otsake, olisi aiemmin sijoitettu väärennetyn IP:n bucketiin todellisen osapuolen sijaan. Tämä on erityisen tärkeää seuraaville:
 

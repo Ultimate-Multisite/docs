@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Arrêtez les bots. Protégez vos revenus. Zéro souci de configuration.**
 
@@ -15,7 +15,7 @@ Vous exploitez un réseau multisite avec des domaines personnalisés ? Vous conn
 
 **Ultimate Multisite: Captcha change tout.**
 
-## Cap Captcha : une protection auto-hébergée qui fonctionne tout simplement
+## Cap Captcha : une protection auto-hébergée qui fonctionne tout simplement {#cap-captcha-self-hosted-protection-that-just-works}
 
 Notre nouveau fournisseur **Cap Captcha** change la donne pour les réseaux multisites :
 
@@ -25,7 +25,7 @@ Notre nouveau fournisseur **Cap Captcha** change la donne pour les réseaux mult
 * **Preuve de travail invisible** — Les utilisateurs résolvent une énigme computationnelle en arrière-plan. Pas de clics sur des bouches d’incendie, pas de grilles d’images frustrantes.
 * **Léger** — Seulement 20 Ko. Ne ralentira pas votre checkout.
 
-## Protection contre les tests de cartes WooCommerce
+## Protection contre les tests de cartes WooCommerce {#woocommerce-card-testing-protection}
 
 Les attaques de test de cartes coûtent des milliards aux marchands chaque année. Les fraudeurs utilisent des bots pour valider des cartes bancaires volées via votre checkout WooCommerce : vous payez les frais de traitement, ils obtiennent des numéros de carte valides.
 
@@ -35,7 +35,7 @@ Les attaques de test de cartes coûtent des milliards aux marchands chaque anné
 * **Compatible avec PayPal Payments** — Fonctionne parfaitement avec WooCommerce PayPal Payments
 * **Statistiques en temps réel** — Voyez exactement combien d’attaques vous bloquez
 
-## Vous avez toujours besoin de Google reCAPTCHA ou hCaptcha ?
+## Vous avez toujours besoin de Google reCAPTCHA ou hCaptcha ? {#still-need-google-recaptcha-or-hcaptcha}
 
 Nous avons ce qu’il vous faut. Prise en charge complète de :
 
@@ -47,14 +47,14 @@ Nous avons ce qu’il vous faut. Prise en charge complète de :
 
 Passez d’un fournisseur à l’autre à tout moment depuis les réglages de votre réseau.
 
-## Conçu pour évoluer
+## Conçu pour évoluer {#built-for-scale}
 
 * Réglages à l’échelle du réseau avec remplacements par site
 * Dashboard de statistiques pour surveiller la protection
 * Niveaux de sécurité ajustables (rapide, moyen, maximum)
 * Adapté aux développeurs avec une architecture de fournisseurs extensible
 
-## Installation
+## Installation {#installation}
 
 1. Téléversez `ultimate-multisite-captcha` dans votre répertoire `/wp-content/plugins/`
 2. Activez le plugin sur le réseau
@@ -64,37 +64,37 @@ Cap Captcha s’active automatiquement : aucun réglage à configurer, aucune cl
 
 **Facultatif :** Pour utiliser Google reCAPTCHA ou hCaptcha à la place, accédez à **Ultimate Multisite → Settings → Captcha** et sélectionnez votre fournisseur préféré.
 
-## Questions fréquentes
+## Questions fréquentes {#frequently-asked-questions}
 
-## Dois-je configurer quelque chose ?
+## Dois-je configurer quelque chose ? {#do-i-need-to-configure-anything}
 
 Non ! Cap Captcha est activé automatiquement lorsque vous activez l’addon. Tout votre réseau est immédiatement protégé : aucun réglage à configurer, aucune clé API à saisir.
 
-## Ai-je besoin de clés API pour Cap Captcha ?
+## Ai-je besoin de clés API pour Cap Captcha ? {#do-i-need-api-keys-for-cap-captcha}
 
 Non. Cap Captcha est entièrement auto-hébergé. Aucun compte externe, aucun enregistrement de domaine, aucun casse-tête de configuration.
 
-## Cela ralentira-t-il mon checkout ?
+## Cela ralentira-t-il mon checkout ? {#will-this-slow-down-my-checkout}
 
 Cap Captcha ne pèse que 20 Ko et exécute les défis de preuve de travail en arrière-plan. Vos clients ne remarqueront aucun délai.
 
-## Cela protège-t-il contre les attaques de test de cartes ?
+## Cela protège-t-il contre les attaques de test de cartes ? {#does-this-protect-against-card-testing-attacks}
 
 Oui ! Contrairement aux captchas traditionnels qui protègent uniquement les formulaires HTML, notre intégration WooCommerce se connecte directement à la Store API pour bloquer les attaques de bots au niveau de l’API, là où se produisent la plupart des attaques de test de cartes.
 
-## Puis-je utiliser différents fournisseurs de captcha sur différents sites ?
+## Puis-je utiliser différents fournisseurs de captcha sur différents sites ? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Le fournisseur de captcha est défini à l’échelle du réseau, mais vous pouvez ajuster les réglages de difficulté selon vos besoins.
 
-## Est-ce conforme au RGPD ?
+## Est-ce conforme au RGPD ? {#is-this-gdpr-compliant}
 
 Cap Captcha est 100 % auto-hébergé, sans données envoyées à des services externes. Pour Google reCAPTCHA et hCaptcha, veuillez consulter leurs politiques de confidentialité respectives.
 
-## Limitation du débit
+## Limitation du débit {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 introduit un limiteur de débit à arrêt net qui protège votre réseau contre les attaques par force brute et les tests de cartes.
 
-### Fonctionnement
+### Fonctionnement {#how-it-works}
 
 Le limiteur de débit compte chaque requête GET et POST sur les surfaces protégées par captcha :
 
@@ -108,9 +108,9 @@ Lorsqu’un visiteur dépasse la limite de débit, le plugin répond avec :
 * En-tête **Retry-After** indiquant quand réessayer
 * **Pause tarpit aléatoire** (1 à 5 secondes par défaut, plafonnée strictement à 15 secondes) pour ralentir les attaquants
 
-### Configuration
+### Configuration {#configuration}
 
-#### Temporisation du tarpit
+#### Temporisation du tarpit {#tarpit-timing}
 
 Contrôlez le délai aléatoire appliqué aux requêtes limitées par le débit :
 
@@ -119,9 +119,9 @@ Contrôlez le délai aléatoire appliqué aux requêtes limitées par le débit 
 
 Ces réglages sont disponibles dans **Ultimate Multisite → Settings → Captcha**.
 
-### Extensibilité
+### Extensibilité {#extensibility}
 
-#### Filtre de liste blanche IP
+#### Filtre de liste blanche IP {#ip-whitelist-filter}
 
 Exemptez les plages IP de confiance de la limitation du débit :
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Action avant blocage
+#### Action avant blocage {#pre-block-action}
 
 Exécutez une logique personnalisée juste avant l’envoi d’un blocage de limite de débit :
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Détection de l’IP client et proxys de confiance
+## Détection de l’IP client et proxys de confiance {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 introduit une détection de l’IP client résistante à l’usurpation. La méthode `Captcha_Core::get_client_ip()` est désormais la source unique de vérité pour l’attribution de l’IP des visiteurs sur :
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 introduit une détection de l’IP client ré
 * `remoteip` du fournisseur de Captcha (reCAPTCHA, hCaptcha `siteverify`)
 * Hachages d’IP des statistiques
 
-### Modèle de confiance
+### Modèle de confiance {#trust-model}
 
 Le plugin applique une hiérarchie stricte de confiance IP :
 
@@ -166,9 +166,9 @@ Le plugin applique une hiérarchie stricte de confiance IP :
    - Le pair immédiat figure dans votre liste de proxy de confiance configurée par l’administrateur
    - Le header est analysé de droite à gauche, en ignorant les sauts de proxy de confiance/Cloudflare
 
-### Configuration
+### Configuration {#configuration-1}
 
-#### Confiance du header Cloudflare
+#### Confiance du header Cloudflare {#cloudflare-header-trust}
 
 Activez la confiance du header `CF-Connecting-IP` de Cloudflare :
 
@@ -178,7 +178,7 @@ Activez la confiance du header `CF-Connecting-IP` de Cloudflare :
   - Les plages CIDR sont actualisées chaque semaine via wp-cron
   - La solution de repli intégrée est utilisée si l’actualisation échoue
 
-#### Configuration des proxy de confiance
+#### Configuration des proxy de confiance {#trusted-proxy-configuration}
 
 Définissez vos proxy de première ligne et vos équilibreurs de charge :
 
@@ -194,14 +194,14 @@ Définissez vos proxy de première ligne et vos équilibreurs de charge :
     198.51.100.50
     ```
 
-#### Auto-détection lors de la première activation
+#### Auto-détection lors de la première activation {#first-enable-auto-detection}
 
 Lorsque vous activez le limiteur de débit pour la première fois, le plugin détecte votre posture probable concernant Cloudflare et les proxy, et affiche un avis d’administration « Apply detected settings » en un clic.
 
 * Le plugin **n’écrase jamais** vos valeurs enregistrées
 * Si le trafic ultérieur suggère que votre config ne correspond plus à la réalité (par exemple, Cloudflare a modifié des plages CIDR), un avis de non-correspondance non masquable affiche la mise à jour recommandée
 
-### Pourquoi c’est important
+### Pourquoi c’est important {#why-this-matters}
 
 Un modèle de confiance IP strict ferme un vecteur critique d’usurpation : les requêtes directes vers le serveur d’origine portant un header `CF-Connecting-IP` falsifié auraient auparavant été regroupées selon l’IP usurpée au lieu du pair réel. C’est particulièrement important pour :
 

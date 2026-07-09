@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons laajentaa Ultimate Multisitea lisäominaisuuksilla ja integraatioilla. Useimmat lisäosat ovat maksullisia ja ne voi ostaa osoitteesta [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Asennus
+## Asennus {#installation}
 
 Lisäosat voi asentaa kahdella tavalla:
 
 1. **Addon-sivun kautta** -- Siirry sivustosi lisäosien hallintasivulle WordPress-ylläpidossa
 2. **Manuaalinen lataus** -- Lataa [tililtäsi](https://ultimatemultisite.com/my-account/downloads/) ja lataa palveluun kohdasta Plugins > Add New
 
-## Saatavilla olevat Addons
+## Saatavilla olevat Addons {#available-addons}
 
 | Addon | Kuvaus |
 |-------|-------------|

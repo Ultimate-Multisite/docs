@@ -3,7 +3,7 @@ title: Awtomatikong Paghahanap at Pagpapalit sa mga Template ng Site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Awtomatikong Search and Replace sa mga Template ng Site (v2)
+# Awtomatikong Search and Replace sa mga Template ng Site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Kinakailangan ng tutorial na ito ang WP UItimo bersyon 2.x.**_
 
@@ -17,7 +17,7 @@ Magagawa ng iyong customer na punan ang patlang na iyon habang nagpaparehistro.
 
 Pagkatapos ay awtomatikong papalitan ng Ultimate Multisite ang mga placeholder ng datos na ibinigay ng customer.
 
-## **Paglutas sa problema ng "template na puno ng mga placeholder"**
+## **Paglutas sa problema ng "template na puno ng mga placeholder"** {#solving-the-template-full-of-placeholders-problem}
 
 Maganda ang lahat ng iyon, ngunit nakakaharap tayo ng hindi magandang problema: ngayon ang ating mga template ng site - na maaaring bisitahin ng ating mga customer - ay puno ng hindi magandang tingnang mga placeholder na hindi gaanong nagpapaliwanag.
 

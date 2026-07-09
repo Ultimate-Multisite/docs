@@ -3,7 +3,7 @@ title: PayPal irichte
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal-Gateway Irichte (v2)
+# PayPal-Gateway Irichte (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**WICHTIGE NOTIZ: Dä Artikel bezieht sich uf Ultimate Multisite Version 2.x.**_
 
@@ -13,13 +13,13 @@ Genau wie bi Stripe wird PayPal sehr viel für Online-Zahleige brucht, bsunders 
 
 Bitte bemerke Sie, dass Sie es **PayPal Business Account** müend ha, um d'API-Credentials z'becho, wo für die Integration nötig sind.
 
-## PayPal uf Ihrem Netzwerk aktiviere
+## PayPal uf Ihrem Netzwerk aktiviere {#enabling-paypal-on-your-network}
 
 Um PayPal als verfügbari Zahligsmethode uf Ihrem Netzwerk z'aktiviere, gönd Sie zu **Ultimate Multisite > Settings > Payments** und setze de Hake bi PayPal.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## De geführte Setup-Wizard bruche
+## De geführte Setup-Wizard bruche {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 füegt en gefüehrti PayPal Setup-Wizard zu de Zahligs-Gateway-Iistellige bi. Nachdem Sie PayPal aktiviert händ, bruuche Sie de Wizard uf **Ultimate Multisite > Settings > Payments**, um z'wähle, wie Sie d'Gateway verbinde wend und z'bestätige, welchi Credentials no nötig sind, bevor Sie speichere.
 
@@ -30,7 +30,7 @@ De Wizard unterstützt zwei Setup-Wäg:
 
 Wenn Sie d OAuth-Option im Wizard nöd gsehnd, vervollständige Sie de manuelle Benutzerangabefluss unde. De Gateway funktioniert mit de gliiche PayPal Business API Credentials wie bi früehere Ultimate Multisite 2.x Versionen.
 
-## PayPal API Credentials finde
+## PayPal API Credentials finde {#getting-the-paypal-api-credentials}
 
 Sobald PayPal als Zahligsgate aktiviert isch, müend Sie d Felder für de PayPal API **Username**, de PayPal API **Password** und d PayPal API **Signature** usfüllä.
 

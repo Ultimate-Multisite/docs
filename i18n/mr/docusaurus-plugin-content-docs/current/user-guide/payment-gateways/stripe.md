@@ -3,19 +3,19 @@ title: Stripe सेट करणे
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway सेट करणे (v2)
+# Stripe Gateway सेट करणे (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**महत्त्वाची सूचना: हा लेख Ultimate Multisite version 2.x साठी आहे.**_
 
 आमच्या payment settings पेजवर तुम्ही चार पेमेंट पद्धती सक्रिय करू शकता: Stripe, Stripe Checkout, PayPal आणि Manual. या लेखात आपण **Stripe** सोबत integration कसे करायचे ते पाहू.
 
-## Stripe सक्षम करणे
+## Stripe सक्षम करणे {#enabling-stripe}
 
 तुमच्या network वर Stripe हे payment gateway म्हणून सक्षम करण्यासाठी, **Ultimate Multisite > Settings > Payments** वर जा आणि Active Payment Gateways विभागात **Stripe** किंवा **Stripe Checkout** च्या बाजूला असलेला toggle चालू करा.
 
 ![Active payment gateways मध्ये Stripe सक्षम करणे](/img/config/settings-payment-gateways.png)
 
-### Stripe विरुद्ध Stripe Checkout:
+### Stripe विरुद्ध Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** या पद्धतीमध्ये checkout दरम्यान credit card नंबर टाकण्यासाठी एक जागा दिसेल.
 
@@ -47,7 +47,7 @@ _**टीप:** payment method व्यवस्थित काम करत �
 
 ![Ultimate Multisite settings मध्ये Stripe keys paste करणे](/img/config/settings-payment-gateways.png)
 
-## Stripe Webhook सेट करणे
+## Stripe Webhook सेट करणे {#setting-up-stripe-webhook}
 
 Stripe webhook events पाठवतो जे Ultimate Multisite ला **तुमच्या stripe account** वर कोणतीही घटना घडल्यावर सूचित करतात.
 

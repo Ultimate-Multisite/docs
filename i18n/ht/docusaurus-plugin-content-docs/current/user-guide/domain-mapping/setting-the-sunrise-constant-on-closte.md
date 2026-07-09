@@ -3,13 +3,13 @@ title: Règleman Konstanta Solèy sou Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Mete konstan Sunrise a true sou Closte
+# Mete konstan Sunrise a true sou Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Gen kèk fournisseur anjeneral bloke `wp-config.php` pou rezon sekirite. Sa vle di ke Ultimate Multisite pa ka otomatikman edite dos la pou mete konstante ki nesesè yo pou fè maper domain ak lòt fonksyon yo travay. Closte se yon gwo egzanp sa a.
 
 Sepandan, Closte of pase yon fason pou ajoute konstante nan `wp-config.php` nan yon fason ki sekirize. Ou jis bezwen swiv etap sa yo:
 
-## Sou dashboard Closte la
+## Sou dashboard Closte la {#on-the-closte-dashboard}
 
 Premye bagay, [log in kont Closte ou](https://app.closte.com/), klike sou mennu Sites, epi apre sa klike sou link Dashboard sou sit ou ap travay la:
 

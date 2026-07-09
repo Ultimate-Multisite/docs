@@ -3,13 +3,13 @@ title: Sitetempler
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Hjemmeside-skabeloner (v2)
+# Hjemmeside-skabeloner (v2) {#site-templates-v2}
 
 _**OBS: Denne artikel henviser til Ultimate Multisite version 2.x. Hvis du bruger version 1.x, se denne artikel.**_
 
 Vores mål når vi opretter et premium netværk med Ultimate Multisite er at automatisere så mange processer som muligt, samtidig med at vi giver vores kunder fleksibilitet og forskellige muligheder for valg, når de opretter deres hjemmesider. En nem måde at opnå denne balance på er ved at bruge funktionen Site Templates i Ultimate Multisite.
 
-## Hvad er en Site Template?
+## Hvad er en Site Template? {#what-is-a-site-template}
 
 Som navnet antyder er en Site Template et grundlagssite, der kan bruges som basis, når du opretter nye sider i dit netværk.
 
@@ -17,7 +17,7 @@ Det betyder, at du kan oprette en basis-site, aktivere forskellige plugins, sæt
 
 Det lyder fantastisk, men hvordan laver jeg en ny site template? Det er så simpelt som det kan være.
 
-## Oprettelse og redigering af en ny Site Template
+## Oprettelse og redigering af en ny Site Template {#creating-and-editing-a-new-site-template}
 
 Site Templates er bare almindelige sider i dit netværk. For at oprette en ny skabelon kan du blot gå til **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Nederst på formularen finder du en afbryder til **Copy Site**. Denne vil give d
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Tilpasning af indholdet i en Site Template
+### Tilpasning af indholdet i en Site Template {#customizing-the-contents-of-a-site-template}
 
 For at tilpasse din site template skal du blot gå til dens dashboard panel og foretage de ændringer, du har brug for. Du kan oprette nye opslag, sider, aktivere plugins og ændre det aktive tema. Du kan endda gå til Customizer og ændre alle slags tilpasningsmuligheder.
 
@@ -43,11 +43,11 @@ For at tilpasse din site template skal du blot gå til dens dashboard panel og f
 
 Al disse data vil blive kopieret over, når en kunde opretter en ny site baseret på den Site Template.
 
-### Avancerede muligheder
+### Avancerede muligheder {#advanced-options}
 
 Hvis du er bekendt med lidt custom coding, kan du bruge vores Search and Replace API til automatisk at erstatte informationer på den nye site efter dens oprettelse. Dette er nyttigt til ting som at erstatte virksomhedsnavne på en Om-side eller ændre kontakt-e-mailen på Kontakt-siden osv.
 
-### Brug af Site Templates
+### Brug af Site Templates {#using-site-templates}
 
 Ok, så du har lavet en masse forskellige Site Templates med forskellige designs, temaer og indstillinger. Hvordan gør du dem nyttige i dit netværk nu?
 
@@ -59,7 +59,7 @@ Grundlæggende er der nu to tilgange, du kan bruge (ikke samtidigt):
 
   * Tillade dine kunder selv at vælge site templates under tilmelding.
 
-#### Mode 1: Tildel Site Template
+#### Mode 1: Tildel Site Template {#mode-1-assign-site-template}
 
 I denne tilstand kan dine kunder ikke vælge en skabelon, når de opretter en konto, men i stedet definerer du, hvilken skabelon der skal bruges på hver af dine planer.
 
@@ -71,7 +71,7 @@ Dette vil føre dig til siden **Edit Product**. Under sektionen **Product Option
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Tilstand 2: Vælg tilgængelig skabelon
+#### Tilstand 2: Vælg tilgængelig skabelon {#mode-2-choose-available-site-template}
 
 I denne tilstand giver du dine kunder et valg under oprettelsesprocessen. De kan vælge mellem de forskellige skabeloner, du definerer under produktindstillingerne. Du har mulighed for at begrænse de skabeloner, de kan vælge imellem, under det valgte produkt. Dette gør det muligt for dig at have forskellige sæt af skabeloner under hvert produkt, hvilket er ideelt til at fremhæve forskellige funktioner og egenskaber for et dyrere produkt.
 
@@ -79,7 +79,7 @@ På siden **Rediger produkt**. Under sektionen **Produktmuligheder** finder du f
 
 ![Vælg tilgængelige hjemmeside-skabeloner med adfærdsoptioner](/img/config/product-site-templates.png)
 
-### Standardtilstand: Hjemmeside-skabelonvalg på kassen
+### Standardtilstand: Hjemmeside-skabelonvalg på kassen {#default-mode-site-template-selection-on-the-checkout-form}
 
 Hvis du ønsker, at alle dine hjemmeside-skabeloner skal være tilgængelige under registreringen, eller måske ikke vil bruge ekstra tid på at tildele eller specificere hjemmeside-skabeloner under hvert produkt, du opretter. Så kan du blot indstille valg af hjemmeside-skabelon under dit **Kasseskema**. For at gøre dette skal du gå til **Ultimate Multisite > Kasseskemaer** og klikke på **Rediger** under det skema, du ønsker at konfigurere.
 
@@ -93,29 +93,29 @@ På frontenden ser kunder skabelonvælgeren under kassen og kan vælge det start
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Valgmuligheder for siteskabeloner
+### Valgmuligheder for siteskabeloner {#site-template-options}
 
 Der er andre siteskabelonfunktioner til rådighed, som du kan slå fra eller til under indstillingerne for Ultimate Multisite.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Tillad skift af skabeloner
+#### Tillad skift af skabeloner {#allow-template-switching}
 
 Ved at aktivere denne mulighed får dine kunder mulighed for at skifte den skabelon, de vælger under oprettelsesprocessen efter konto og site er oprettet. Dette er nyttigt fra kundens side, da det giver dem mulighed for at genvælge en skabelon, hvis de senere finder ud af, at deres oprindelige valg ikke var bedst egnet til deres specifikke behov.
 
-#### Tillad brugere at bruge deres site som skabeloner
+#### Tillad brugere at bruge deres site som skabeloner {#allow-users-to-use-their-site-as-templates}
 
 Da subsite-brugere bruger tid på at bygge og designe deres egne sites, ønsker de måske at klone og bruge det som en af de tilgængelige siteskabeloner ved oprettelse af et nyt subsite i dit netværk. Denne mulighed giver dem mulighed for at opnå det.
 
-#### Kopier medier ved skabelon-duplikering
+#### Kopier medier ved skabelon-duplikering {#copy-media-on-template-duplication}
 
 Ved at markere denne mulighed kopieres medierne, der er uploadet på skabelonsitet, til det nyoprettede site. Dette kan overstyres på hver af planerne.
 
-#### **Forhindr søgemaskiner i at indeksere siteskabeloner**
+#### **Forhindr søgemaskiner i at indeksere siteskabeloner** {#prevent-search-engines-from-indexing-site-templates}
 
 Siteskabeloner som beskrevet i denne artikel er boilerplate, men de udgør stadig en del af dit netværk, hvilket betyder, at de stadig er tilgængelige for søgemaskiner. Denne mulighed giver dig mulighed for at skjule siteskabelonerne, så søgemaskiner kan indeksere dem.
 
-## Forudfyldning af siteskabeloner med auto search-and-replace
+## Forudfyldning af siteskabeloner med auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 En af Ultimate Multisite er en af de mest kraftfulde funktioner evnen til at tilføje vilkårlige tekst, farver og valgfelter til registreringsformularen. Når vi har indsamlet disse data, kan vi bruge dem til forudfyldning af indhold i visse dele af det valgte skabelon-site. Derefter erstatter Ultimate Multisite pladsholderne med den faktiske information, der er indtastet under registreringen, når den nye site bliver offentliggjort.
 
@@ -135,7 +135,7 @@ Ultimate Multisite vil derefter automatisk erstatte pladsholderne med de data, k
 
 ![Pladsholdere erstattet med kundedata på siden](/img/config/site-templates-list.png)
 
-### Løsning på problemet med "skabelon fyldt med pladsholdere"
+### Løsning på problemet med "skabelon fyldt med pladsholdere" {#solving-the-template-full-of-placeholders-problem}
 
 Alt det er fantastisk, men vi støder på et grimt problem: nu er vores siteskabeloner – som vores kunder kan besøge – fyldt med grimme pladsholdere, der ikke fortæller meget.
 

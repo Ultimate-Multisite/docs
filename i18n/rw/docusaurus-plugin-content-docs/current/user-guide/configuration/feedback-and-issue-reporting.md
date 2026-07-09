@@ -3,11 +3,11 @@ title: Urugendo rwa Umwujiza n'Ukurikirana Icyemezo
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Umuco ya Abantu n'Ubutumwa bishwe
+# Umuco ya Abantu n'Ubutumwa bishwe {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 irashobora kugufasha abantu kubwira ubutumwa n'ibintu byiza ku masezeri (feedback and issue reporting system) bitewe n'ubushobozi bw'ubwujobozi bwo gukoresha chat interface. Igihe cyo rishobora gufasha abantu kugira umuntu wese uba ashobora kubwira ibyo atari yiza cyangwa kubwira ibintu byiza mu gihe cy'amasezeri (chat). Ubutumwa bwo gukoresha uyu systemi bishobora gutera ku masezeri, uburyo bw'ubwujobozi bwo gufata umuntu wese ashobora kubona ubutumwa mu gihe cy'amasezeri (triage) ku Rwanda.
 
-## Icyo gukoresha Thumbs-Down Button
+## Icyo gukoresha Thumbs-Down Button {#thumbs-down-button}
 
 Icyo gukoresha AI assistant igice cyose cyitwa **thumbs-down** (👎). Iyo umuntu yagize, ashobora gufata ubutumwa cyangwa ibintu byatari yiza.
 
@@ -25,7 +25,7 @@ Icyo gukoresha AI assistant igice cyose cyitwa **thumbs-down** (👎). Iyo umunt
 - Icyo gukoresha kigira ubushobozi bwo kuboneka mu gihe cy'ubwujobozi (hover) ku masezeri y'AI assistant.
 - Iyo umuntu yagize, ashobora gufata ubutumwa cyangwa ibintu byatari yiza.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Iyo umuntu yagize Thumbs-Down Button, modal ya gukoresha ubwujobozi (consent modal) igira ubushobozi bwo kuboneka mbere y'uko data itangirirwe kwitwa. Icyo modal:
 
@@ -36,7 +36,7 @@ Iyo umuntu yagize Thumbs-Down Button, modal ya gukoresha ubwujobozi (consent mod
 
 Nta butumwa bwo gukoresha bitangirirwe mbere y'uko umuntu yagize ko ashobora gukoresha iyo data.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Mu gihe cyo gukoresha chat, AI assistant isobanura **auto-prompt feedback banner** — ubutumwa bwo gutanga ibyo bitangirirwe kwitwa (non-intrusive message) kugira ngo umuntu wese yibone niba igice cyo guhagarara ryari ryiza.
 
@@ -44,7 +44,7 @@ Icyo banner kigaragaza mu gihe cy'amasezeri ku buryo bwo gukoresha ubutumwa n'uk
 
 Icyo banner kigaragaza mu gihe cyo gukoresha ubutumwa n'uko byashobora gutera. Iyo banner itangirira mu gihe cyo gukoresha ubutumwa n'uko byashobora gutera.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Abantu bashobora gufata butumwa bwo gukoresha ubwujobozi (feedback flow) mu gihe cyo gukoresha chat, bishobora gukoresha `/report-issue` mu chat input. Icyo command:
 
@@ -54,7 +54,7 @@ Abantu bashobora gufata butumwa bwo gukoresha ubwujobozi (feedback flow) mu gihe
 
 Amruka `/report-issue` inapatikana katika miongozo yote ya mazungumzo (inline, floating widget, full-screen).
 
-## Triage kwa Msaada wa AI (AI-Assisted Triage)
+## Triage kwa Msaada wa AI (AI-Assisted Triage) {#ai-assisted-triage}
 
 Ripoti zilizotumwa zinawafanywa kazi na tabaka la triage la AI ambalo:
 

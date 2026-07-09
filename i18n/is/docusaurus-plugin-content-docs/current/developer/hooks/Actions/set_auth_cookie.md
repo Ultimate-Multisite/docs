@@ -4,11 +4,11 @@ title: Aðgerð - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Aðgerð: set_auth_cookie
+# Aðgerð: set_auth_cookie {#action-setauthcookie}
 
 Keyrir strax áður en auðkenningarkakan er stillt.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Keyrir strax áður en auðkenningarkakan er stillt.
 | $scheme | `string` | Auðkenningarkerfi. Gildi innihalda 'auth' eða 'secure_auth'. |
 | $token | `string` | Setutákn notanda til að nota fyrir þessa köku. |
 
-### Síðan
+### Síðan {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) í línu 124

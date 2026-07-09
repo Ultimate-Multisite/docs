@@ -3,11 +3,11 @@ title: بەڕێوەبردنی Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# مامەڵەکردن لەگەڵ Webhook
+# مامەڵەکردن لەگەڵ Webhook {#webhook-handling}
 
 خاڵەکۆتاییە تایبەتەکانی webhook دروست بکە بۆ وەرگرتنی ڕووداوەکان لە خزمەتگوزارییە دەرەکییەکان و هاوکاتکردنەوەی داتا لەگەڵ Ultimate Multisite.
 
-## خاڵەکۆتایی Webhookی تایبەت
+## خاڵەکۆتایی Webhookی تایبەت {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## تێبینییەکانی ئاسایش
+## تێبینییەکانی ئاسایش {#security-considerations}
 
 - هەمیشە واژۆکانی webhook بە بەکارهێنانی HMAC یان نهێنییەکی هاوبەش پشتڕاست بکەوە
 - لەسەر ڕێڕەوی REST ـەکەت `permission_callback` بەکاربهێنە — هەرگیز لە بەرهەمهێناندا دایمەنێ بە `__return_true`

@@ -3,7 +3,7 @@ title: AffiliateWP Дневник на промени
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Дневник на промени за AffiliateWP
+# Дневник на промени за AffiliateWP {#affiliatewp-changelog}
 
 Верзија: 2.0.1 - Објавено на 2025-09-28
 

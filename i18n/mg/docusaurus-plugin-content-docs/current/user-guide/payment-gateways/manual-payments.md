@@ -3,13 +3,13 @@ title: Fametrahana Fandoavam-bola Amin-tanana
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Fametrahana ny Fandoavam-bola amin'ny tanana (v2)
+# Fametrahana ny Fandoavam-bola amin'ny tanana (v2) {#setting-up-manual-payments-v2}
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka momba ny Ultimate Multisite kinova 2.x.**_
 
 Ny fandoavam-bola amin'ny tanana dia fomba ahafahanao manolotra fomba fandoavam-bola hafa raha tsy misy **Stripe** na **PayPal** ho an'ny mpampiasanao. Mety ho famindrana vola amin'ny tariby na amin'ny banky izany, na fomba fandoavam-bola hafa misy ho an'ny mpampiasanao eo an-toerana.
 
-## Ahoana ny fampandehanana ny Fandoavam-bola amin'ny tanana
+## Ahoana ny fampandehanana ny Fandoavam-bola amin'ny tanana {#how-to-enable-manual-payments}
 
 Tena mora ny mametraka fandoavam-bola amin'ny tanana. Mila mampandeha azy eo ambanin'ny vavahadin'ny fandoavam-bola fotsiny ianao ary mametraka torolalana amin'ny antsipiriany momba ny fomba tokony handefasan'ny mpampiasa ny fandoavam-bola.
 
@@ -31,7 +31,7 @@ Ary hahazo hafatra ihany koa izy ireo ao amin'ny pejinao **Misaotra Anao** miara
 
 <!-- Pikantsary tsy misy: Pejy Misaotra Anao mampiseho torolalana momba ny fandoavam-bola aorian'ny checkout -->
 
-## Fanamafisana ny fandoavam-bola amin'ny tanana
+## Fanamafisana ny fandoavam-bola amin'ny tanana {#confirming-manual-payments}
 
 Mba hanamafisana fandoavam-bola amin'ny tanana, mandehana any amin'ny menio **Fandoavam-bola** eo amin'ny bara havia. Any dia afaka mahita ny fandoavam-bola rehetra ao amin'ny tambajotranao sy ny antsipiriany momba azy ireo ianao, anisan'izany ny **sata**-ny. Ny fandoavam-bola amin'ny tanana dia hanana sata **Miandry** foana mandra-panovanao azy amin'ny tanana.
 

@@ -3,13 +3,13 @@ title: Izveidojot savu pirmo abīkuma produktu
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Izveido jūsu pirmo abonēšanas produktu (v2)
+# Izveido jūsu pirmo abonēšanas produktu (v2) {#creating-your-first-subscription-product-v2}
 
 _**SVARĪTĀ PIEZI: Šis raksts ir tikai Ultimate Multisite versijas 2.x lietotājiem. Ja jūs izmantojat versiju 1.x,**_ **skatieties šo rakstu**_.
 
 Lai sāktu veikt savu tīklu un sākāt ieguvit jūsu pakalpojumu pārdošanu potenciālajiem lietotājiem, jums ir nepieciešami dažādi abonēšanas opcijas. Kā izveidot šos produktus? Kādu veida produktus var piedāvāt? Šajā rakstā mēs apmeklēsim visu, kas jums nepieciešams zināt par produktiem.
 
-## Produktu veids
+## Produktu veids {#product-type}
 
 Ar Ultimate Multisite jūs varat piedāvāt klientiem divas kategorijas produktus: **plānus** un **papildus (Order Bump)**. Papildus var iedzielti divos veidiem: **pakuoti** un **pakalpojumi**. Nākamajā rakstā mēs apskatīsim tostarpes un īpašības.
 
@@ -19,7 +19,7 @@ Ar Ultimate Multisite jūs varat piedāvāt klientiem divas kategorijas produktu
 
   * **Pakalpojumi**: papildus, kas neizmaiņa Ultimate Multisite funkcionālitāti. Tas ir darbi, ko jūs veiciet klientam pirms viņa ieguvusiem planu. Piemēram, jūsu kliente var iegūt plani, kas ļauj vienu vietni, un arī maksāt par papildu pakalpojumu, kas nodrošina šo vietnes dizainu.
 
-## Produktu pārvaldīšana
+## Produktu pārvaldīšana {#managing-products}
 
 Daudziem, da daudziem **Products** (Produkti) Ultimate Multisite-ā sekmei (**Ultimate Multisite > Products**) var vienot ar plānus tradicionālajā hostingu vidē.
 
@@ -29,7 +29,7 @@ Ultimate Multisite-ā Products sekma definē to konstrukciju un ierobežojumus, 
 
 ![Products list page](/img/config/products-list.png)
 
-## Produktu pievienošana
+## Produktu pievienošana {#adding-products}
 
 Vai tas būs plāns, pakupe vai pakalpojums, kas ir ieejas vieta jauna elementa definēšanai, ir caur **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Interfeisā ir divas galvenās sadaļas. Kreistajā pusē ir vairāki tabuli, ka
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Apraksts (Description)
+### Apraksts (Description) {#description}
 
 Bazas produktu informāciju var definēt sniedzot produktu nosaukumu un aprakstu. Šie identifikatori tiek izskatīti visur, kur ir nepieciešama produktu informācija, piemēram, plāna un cenas izvēlēšanā, faktūrās, upp upgrades un tāds.
 
 ![Product description section](/img/config/product-description.png)
 
-### Cenas veids (Pricing Type)
+### Cenas veids (Pricing Type) {#pricing-type}
 
 Interfeisa labajā pusē var definēt bazas cenām.
 
@@ -53,7 +53,7 @@ Interfeisa labajā pusē var definēt bazas cenām.
 
 Ultimate Multisite atbalsta triju dažādus cenas veidus. **Paid** (maksājamais) opcija prasa tīkla administratoru informāciju par produkta cenu un fakturēšanas intervālu.
 
-### Cena (Pricing)
+### Cena (Pricing) {#pricing}
 
 Cenas komponenta definē bazas produktu cenu un fakturēšanas intervālu.
 
@@ -61,7 +61,7 @@ Cenas komponenta definē bazas produktu cenu un fakturēšanas intervālu.
 
 tādējādi piemērots cena $29.99 ar iestatījumu 1 mēnesim, kas nozīmē, ka tas maksās $29.99 katru mēnesi. Līdzīgi, cena $89.97 ar iestatījumu 3 mēnešiem maksā šo summu katru kvartālu.
 
-### Fakturēšanas cikli
+### Fakturēšanas cikli {#billing-cycles}
 
 Fakturēšanas cikli sadaļā norāda, cik bieži ir noteikts fakturēšanas intervalu, un to parasti saprotams līgumu vai fiksētās terminu kontekstā.
 
@@ -69,7 +69,7 @@ Fakturēšanas cikli sadaļā norāda, cik bieži ir noteikts fakturēšanas int
 
  Piemēram, ja produktam ir cena $29.99 ar intervalu 1 mēnesis un 12 fakturēšanas cikliem, tas maksās $29.99 katru mēnesi par produktu pirms nākamajiem 12 mēnešiem. Tas nozīmē, ka šāds iestatījums izveido fiksētu cenu terminu $29.99 mēnesī par 12 mēnesi un tad fakturēšanu beidz.
 
-### Pārbaudīšanas periods (Trial Period)
+### Pārbaudīšanas periods (Trial Period) {#trial-period}
 
 Iespējot piedāvājuma pārbaudes laiku (trial period) skaitītāju administratoram ir iespēja noteikt produktu pārbaudes laiku.
 
@@ -77,7 +77,7 @@ Iespējot piedāvājuma pārbaudes laiku (trial period) skaitītāju administrat
 
 Pārbaudes laikā klientiem ir brīvi lietot produktu, un tas neбуs fakturēts, kamēr pārbaudes laiks nav beidzies.
 
-### Iestatījuma maksa (Setup Fee)
+### Iestatījuma maksa (Setup Fee) {#setup-fee}
 
 Jūs varat arī uzlabot maksu iestatījumu (setup fee) savam plānam.
 
@@ -85,7 +85,7 @@ Jūs varat arī uzlabot maksu iestatījumu (setup fee) savam plānam.
 
 Tas nozīmē, ka jūsu klientam pirmajā maksājumā (paliekot cenas plānā) būs jāmaksā papildu summa, kas atbilst maksei, ko jūs noteikāt šajā sadaļā.
 
-### Aktīvs (Active)
+### Aktīvs (Active) {#active}
 
 Aktīvais skaitlis efektīvi definē, vai produktums ir pieejams klientiem jauniem reģistrācijām.
 
@@ -93,13 +93,13 @@ Aktīvais skaitlis efektīvi definē, vai produktums ir pieejams klientiem jauni
 
 Ja jos ir eksistenti klienti šajā plānā, atslēdzot to skaitītāju (toggle) ienestamā stāvoklī, tas efektīvi izņem plānu no nākotnes reģistrācijas. **Eksistenti klienti šajā plānā turpinās saņemt maksājumus**, līdz viņi pārvietojies uz jaunu planu vai tiek izņemti no plāna.
 
-### Produkta attēls
+### Produkta attēls {#product-image}
 
 **Upload Image** pogas ļauj tīkla administratoram izmantot mediju bibliotēku izvēlēties vai uzlādēt produktu attēlu.
 
 ![Product image section](/img/config/product-image.png)
 
-### Izņemt
+### Izņemt {#delete}
 
 **Delete Product** pogas izņem produktu no sistēmas. Tas parādās, kad produkts ir publicēts.
 
@@ -107,11 +107,11 @@ Ja jos ir eksistenti klienti šajā plānā, atslēdzot to skaitītāju (toggle)
 
 Atšķirībā no citām izņemšanām, produkts nav atlaidīts jebkurā "snieguma" (trash) stāvoklī. Tādējādi pēc izņemšanas šaite ir neatbalstams.
 
-### Produkta opcijas
+### Produkta opcijas {#product-options}
 
 Kad definēti pamata līmeņa produktu informācijas, produktu opcijas palīdz tīkla administratoram precizēt produktu konkrētās atributus.
 
-#### Vispārēji
+#### Vispārēji {#general}
 
 **General** posmā definīti produkta vispārējie atzīmes, kas nepiemērojas jebkurām citām specifiskām produktiem tabulēm.
 
@@ -125,7 +125,7 @@ Ultimate Multisite atbalsta vairākus produktu veidus: Planus, Pakežas (Package
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Pārsniegšana un atgriešana (Up & Downgrades)
+#### Pārsniegšana un atgriešana (Up & Downgrades) {#up--downgrades}
 
 Šajā posmā jūs noteikjat, kādi ceļi ir pieejami klientam upgrade vai atgriešanās savā konkrētā līmenī.
 
@@ -143,7 +143,7 @@ Lai definētu planu grupu, noteikojiet atbilstošos plānus **planu grupā** sar
 
 Ultimate Multisite arī ietver **order bump** funkciju, kurā atbilstoši plānus var pievienot papildu produktus un pakalpojumu. Šos piedāvā klientam kā papildu lietas, ko var pievienot planiem kas laikā darījuma (checkout) vai upgrade.
 
-#### Cenas variācijas
+#### Cenas variācijas {#price-variations}
 
 Cenī cena variāciju ļauj tīkla administratoram noteikt alternatīvas cenas līmeņus, kas atkarīgi no laika. Šaļojums ļauj piedāvāt dažādus maksājumu periodus, piemēram mēnesīgus, kvartālos, gadskārtas vai jebkurus citus maksājuma laikot. Piemēram, jūs varat noteikt produktu cenu $29.99/mėnībai ar atlaides gadskārtas opciju $249.99/gads.
 
@@ -165,7 +165,7 @@ Piemēram, ja jūsu baziskas produktu cena ir $29.99/mėnībai, jūs varat pievi
 Cenas variācijas vienasaciem nepievieno slēdzi vai skritušus frontendā kas kasina. Lai ļaut klientiem mainīt maksājuma periodus (piemēram, Mēnesīgs / Gadskārtas), jums ir jāievada **Period Selection** (Periodas izvēles) lauks formā. Redari [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) instrukcijas step-by-step.
 :::
 
-#### Nodrādinājumi
+#### Nodrādinājumi {#taxes}
 
 **Taxes** (Nodrādinājumi) atbilst nodrādinājumu iestatījumiem, kas noteikti **Ultimate Multisite > Settings > Taxes** un konkrētāk definēti nodrādinājumu līmeņus. Lai ieslēgtu nodrādinājumus un definētu piemērotos nodrādinājuma līmeņus, lūdzu skatiet dokumentāciju vietnē **Ultimate Multisite: Settings**.
 
@@ -179,7 +179,7 @@ Kad nodokļa līmenis ir definēts **Ultimate Multisite > Settings > Manage Tax 
 
 Lai norādītu, ka produkts ir nodokļu objekts, iestatiet **Is Taxable** (Vai ir nodokļojams) skaitli uz aktīvo un izvēlieties attiecīgo nodokļu līmeni no "Tax Category" (Nodokļu kategorijas) dropdowna.
 
-#### Vietas šabloni (Site Templates)
+#### Vietas šabloni (Site Templates) {#site-templates}
 
 Esam savā zināšanās, vietas šabloni ir pilni WordPress vietnes, kas klonētas klientam vietnē sākumā viņa abonentācijas laika.
 
@@ -199,7 +199,7 @@ Visbeidzami, **C** **Choose Available Site Templates** pārslēdz šobrīd defin
 
 Galvenokārt, ja tīkla administratoršs vēlas, lai lapas izvēles notiktu kases solījumos, pietiks ' _default_ ' iestatījums. Alternatīvi, lai atbalstītu lapas izvēles atbalsta un delegētu izvēli plāna iestatījumiem, var būt vēlami izmantot ' _assign new template_ ' vai ' _choose available site templates_ ' opcijas.
 
-#### Sites
+#### Sites {#sites}
 
 **Sites** lapa ir daļa no Ultimate Multisite ierobežojumu funkciju.
 
@@ -209,7 +209,7 @@ Galvenokārt, ja tīkla administratoršs vēlas, lai lapas izvēles notiktu kase
 
 Lai aktivizētu ierobežojumu, ieslēdziet **limit sites** slēdzi aktīvā stāvoklī un ievadiet maksimālo lapas skaitu **site allowance** laukā.
 
-#### Visits
+#### Visits {#visits}
 
 **Visits** lapa ir vēl viens daļa no Ultimate Multisite ierobežojumu sistēmas. Šis iestatījums ļauj atzīmēt un pēc tam regulēt unikālu apmeklējumus klienta lapai.
 
@@ -221,7 +221,7 @@ Lai izmantotu šo funkciju, ieslēciet **limit unique visits** (ierobežot unik�
 
 Kad šis ierobežojums tiek atteikts, Ultimate Multisite nebudēs sniedzot klienta vietni, bet būs redzams ziņojums par to, ka ierobežojumi ir pārsniegti.
 
-#### Lietotāji (Users)
+#### Lietotāji (Users) {#users}
 
 Ultimate Multisite 'Users' ierobežojumi ļauj tīkla administratoram uzliekt ierobežojumus uz lietotāju skaitu, ko var izveidot un piešķirtu loma.
 
@@ -231,7 +231,7 @@ Lai iestatu ierobežojumu funkciju, ieslēciet **limit user** (lietotāja ierobe
 
 Tālāk katram lomai, kuram jāieviecas ierobežojums, ieslēciet tās blakus iestatījumu aktīvā stāvoklī un noteikiet maksimālo augstākais ierobežojumu attiecīgajā laukā.
 
-#### Post Types (Vielas tipa)
+#### Post Types (Vielas tipa) {#post-types}
 
 **Post Types** (Vielas tipa) tabula ļauj tīkla administratoram uzliekt detaļas ierobežojumus WordPressa plašā postu tipu skaņā.
 
@@ -243,7 +243,7 @@ Lai iestatu šo ierobežojumu subsystems, ieslēciet **limit post types** (postu
 
 Kuru, katru postu ierobe limitēt, ieslēdziet to, slidot to pa labi un norādīto maksimālo augšcienu vērtību attiecīgajā laukā.
 
-#### Diska vieta (Disk Space)
+#### Diska vieta (Disk Space) {#disk-space}
 
 **Diskas vietas** (Disk Space) posmība ļauj tīkla administratoriem ierobežot, cik daudz vietas var izmantot klienti.
 
@@ -255,13 +255,13 @@ Lai aktivizētu diska lietošanas ierobežojumu, noteikiet **limit disk size per
 
 Tālāk, ievadiet maksimālo augšcienu vērtību megbajtos laukā **disk space allowanc**.
 
-#### Personalizēta domēna (Custom Domain)
+#### Personalizēta domēna (Custom Domain) {#custom-domain}
 
 Slīdojot šo opciju, jūs varat atļaut personalizētās domēnas īpaši šajā plānā.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Tēmas (Themes)
+#### Tēmas (Themes) {#themes}
 
 **Tēmas** (Themes) posmība produktumopcijās ļauj tīkla administratoram nodrošināt tēmas klientiem izvēles laikā un opcionāli priekšnoteikties tēmas stāvokli.
 
@@ -279,7 +279,7 @@ _**Piezīme: lai tēmas būtu pieejamas klientiem, tās jāveic tīklā administ
 
 Latīgā stāvoklī tēmas lietošana ir pieejama klientam pašizvēles veidā. Atšķirīgi, **Nav pieejam** stāvoklī no klientam tiek atņemta iespēja tēmu aktivizēt. Pēdējais ir **Forcēt aktivizēt** opcija, kas priekšlaicina un aktivizē tēmu, izmantojot to kā defaultu, kad veidams vietni.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Līdzīgi kā Tēmām (Themes) tabā, Ultimate Multisite ļauj tīkla administratoram noteikt plugins redzamības līmeni klientiem, kā arī viņu stāvokli ja tiek veidama jauna vieta.
 
@@ -299,7 +299,7 @@ Tīkla administratoram var vēl vairāk manipulēt ar plugins uzvedību, izmanto
 
 Адміністратор мережі може захотіти розглянути налаштування Force Activate & Lock та Force Inactivate & Lock у поєднанні з шаблонами сайту як плагіни, оскільки стани плагінів у шаблонах можуть бути змінені цими налаштуваннями, якщо вони вибрані.
 
-#### Обмеження скидання (Reset Limitations)
+#### Обмеження скидання (Reset Limitations) {#reset-limitations}
 
 Вкладка **Reset Limitations** скидає всі користувацькі обмеження, визначені для продукту. Щоб скинути обмеження, натисніть кнопку **reset limitations**.
 
@@ -309,7 +309,7 @@ Tīkla administratoram var vēl vairāk manipulēt ar plugins uzvedību, izmanto
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Редагувати, дублювати або видалити продукт
+## Редагувати, дублювати або видалити продукт {#edit-duplicate-or-delete-product}
 
 Існуючі продукти можна редагувати, дублювати або видаляти, перейшовши у розділ **Ultimate Multisite > Products** та навівши курсор на назву існуючого продукту.
 

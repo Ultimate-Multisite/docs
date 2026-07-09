@@ -3,17 +3,17 @@ title: Jak nakonfigurovat mapování domén
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Jak nakonfigurovat mapování domén (v2)
+# Jak nakonfigurovat mapování domén (v2) {#how-to-configure-domain-mapping-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
 
 Jednou z nejvýkonnějších funkcí prémiové sítě je možnost nabídnout našim klientům připojení domény nejvyšší úrovně k jejich webům. Koneckonců, co vypadá profesionálněji: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) nebo [_**joesbikeshop.com**_](http://joesbikeshop.com)? Proto Ultimate Multisite nabízí tuto funkci vestavěnou, bez nutnosti používat pluginy třetích stran.
 
-## Co je mapování domén?
+## Co je mapování domén? {#whats-domain-mapping}
 
 Jak název napovídá, mapování domén je schopnost, kterou Ultimate Multisite nabízí: přijmout požadavek na vlastní doménu a namapovat tento požadavek na odpovídající web v síti, ke kterému je tato konkrétní doména připojena.
 
-### Jak nastavit mapování domén ve vaší Ultimate Multisite Network
+### Jak nastavit mapování domén ve vaší Ultimate Multisite Network {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Mapování domén vyžaduje určité nastavení z vaší strany, aby fungovalo. Naštěstí Ultimate Multisite automatizuje těžkou práci za vás, takže můžete požadavky snadno splnit.
 
@@ -45,7 +45,7 @@ Než ale začnete mapovat vlastní doménu na jeden z dílčích webů ve vaší
 
 ###
 
-### Ujistěte se, že nastavení DNS domény je správně nakonfigurováno
+### Ujistěte se, že nastavení DNS domény je správně nakonfigurováno {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Aby mapování fungovalo, musíte se ujistit, že doména, kterou plánujete namapovat, směřuje na IP adresu vaší sítě. Všimněte si, že potřebujete IP adresu sítě – IP adresu domény, kde je nainstalován Ultimate Multisite – nikoli IP adresu vlastní domény, kterou chcete namapovat. Pro vyhledání IP adresy konkrétní domény doporučujeme například přejít na [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Pokud budete mít potíže to zprovoznit, **kontaktujte podporu svého registrá
 
 Pokud plánujete umožnit svým klientům mapovat vlastní domény, budou si tuto část muset udělat sami. Pokud nebudou schopni vytvořit A Record, nasměrujte je na systém podpory jejich registrátora.
 
-### Mapování vlastního názvu domény jako Super Admin
+### Mapování vlastního názvu domény jako Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Když jste ve své síti přihlášeni jako super admin, můžete snadno přidávat a spravovat vlastní názvy domén tím, že přejdete do části **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Pokud kliknete na název domény, uvidíte v ní několik možností. Pojďme se
 
 **Je zabezpečená?:** I když Ultimate Multisite před povolením domény kontroluje, zda doména má SSL certifikát, nebo ne, můžete ručně zvolit načítání domény se SSL certifikátem nebo bez něj. Pamatujte, že pokud web nemá SSL certifikát a pokusíte se vynutit jeho načtení přes SSL, může to způsobit chyby.
 
-### Mapování vlastního názvu domény jako uživatel dílčího webu
+### Mapování vlastního názvu domény jako uživatel dílčího webu {#mapping-custom-domain-name-as-subsite-user}
 
 Administrátoři dílčích webů mohou také mapovat vlastní názvy domén ze svého administračního Dashboard dílčího webu.
 
@@ -121,7 +121,7 @@ Uživatel pak může kliknout na **Další krok** a pokračovat v přidání vla
 
 Kliknutí na **Přidat doménu** zahájí proces ověřování a načítání DNS informací vlastní domény.
 
-### O synchronizaci domén
+### O synchronizaci domén {#about-domain-syncing}
 
 Synchronizace domén je proces, při kterém Ultimate Multisite přidá vlastní název domény do vašeho hostingového účtu jako doplňkovou doménu **aby mapování domény fungovalo**.
 

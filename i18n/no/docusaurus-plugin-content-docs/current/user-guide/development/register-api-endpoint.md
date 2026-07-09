@@ -3,7 +3,7 @@ title: Registrer API-endepunkt
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API-endepunktet
+# The Ultimate Multisite Register API-endepunktet {#the-ultimate-multisite-register-api-endpoint}
 
 I denne veiledningen lærer du hvordan du bruker Ultimate Multisite /register API-endepunktet til å opprette hele onboarding-prosessen for en ny kunde i nettverket ditt, og hvordan du gjør det med Zapier.
 
@@ -29,11 +29,11 @@ Velg **Enable API** og hent API-legitimasjonen din.
 
 La oss nå utforske endepunktet og deretter opprette en registreringshandling i Zapier.
 
-## Parametere for endepunktets body
+## Parametere for endepunktets body {#endpoint-body-parameters}
 
 La oss få en oversikt over minimumsinformasjonen vi må sende til endepunktet. På slutten av denne artikkelen finner du hele kallet.
 
-### Kunde
+### Kunde {#customer}
 
 Dette er informasjonen som er nødvendig for prosessen med å opprette brukeren og Ultimate Multisite-kunden:
 
@@ -43,25 +43,25 @@ Det er mulig å sende kunde-ID-en som er opprettet i nettverket ditt. Hvis den i
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Medlemskap**
+### **Medlemskap** {#membership}
 
 Den eneste informasjonen vi trenger inne i dette objektet, er medlemskapsstatus.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produkter**
+### **Produkter** {#products}
 
 Produkter gis som en array med 1 eller flere produkt-ID-er fra nettverket ditt. Merk at dette endepunktet ikke oppretter produkter. Sjekk dokumentasjonen til Ultimate Multisite for å forstå endepunktet for produktopprettelse bedre.
 
 **"products" : [1,2],**
 
-### Betaling
+### Betaling {#payment}
 
 Som med medlemskap trenger vi bare statusen.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Nettsted
+### Nettsted {#site}
 
 Og for å avslutte body trenger vi nettstedets URL og tittel, begge inne i nettsted-objektet.
 
@@ -69,13 +69,13 @@ Og for å avslutte body trenger vi nettstedets URL og tittel, begge inne i netts
 
 Returen fra register-endepunktet vil være en array med den nyopprettede medlemskapsinformasjonen.
 
-## Opprette en handling i Zapier
+## Opprette en handling i Zapier {#creating-an-action-in-zapier}
 
 Med introduksjonen av dette nye og mer robuste endepunktet for kontoopprettelse får du også tilgang til en ny handling i Zapier.
 
 Vet du hvordan du bruker og får glede av alt den nye versjonen av Zapier tilbyr? Lær mer her. (lenke?)
 
-### Opprette en handling
+### Opprette en handling {#creating-an-action}
 
 For å illustrere bedre hvordan du bruker registreringsendepunktet med Zapier, la oss opprette en integrasjon med Google Forms. Hver gang dette skjemaet fylles ut og informasjonen lagres i skjemaets svarark, vil et nytt medlemskap bli opprettet i Ultimate Multisite-nettverket.
 
@@ -105,7 +105,7 @@ Når informasjonen er satt opp, fortsetter du til den endelige testen. På den s
 
 Test din nye Zap, og den skal fullføres uten problemer. Hvis det oppstår en feil, sjekk alle felt og om de sendes riktig. Siden det er mye informasjon, kan enkelte ting gå ubemerket hen.
 
-### Fullstendige endepunktparametere
+### Fullstendige endepunktparametere {#complete-endpoint-parameters}
 
 Her er det fullstendige kallet og alle mulighetene for felt som kan sendes.
 

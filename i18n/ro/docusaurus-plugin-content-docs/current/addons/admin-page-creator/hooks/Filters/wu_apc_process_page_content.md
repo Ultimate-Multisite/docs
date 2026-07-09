@@ -4,11 +4,11 @@ title: Filtru - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Permite dezvoltatorilor să modifice conținutul final
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Permite dezvoltatorilor să modifice conținutul final
 | $to_replace | `array` | Un array care conține *placeholderele* care trebuie înlocuite. |
 | $placeholder_count | `int` | Numărul de *placeholdere* găsite. |
 
-### De la
+### De la {#since}
 
 - 1.4.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) la linia 46
 
 
-## Returnează
+## Returnează {#returns}
 Conținutul după modificare.

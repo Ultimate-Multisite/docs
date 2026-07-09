@@ -3,7 +3,7 @@ title: Tsoom API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# ຕፅໜັງສື API ເພື່ອລົງທະບຽນ Ultimate Multisite
+# ຕፅໜັງສື API ເພື່ອລົງທະບຽນ Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 ໃນຄູ່ມືນີ້, ທ່ານຈະໄດ້ຮຽນຮູ້ວິທີໃຊ້ Ultimate Multisite /register API endpoint ເພື່ອສ້າງຂັ້ນຕອນການຕ້ອນຮັບ (onboarding process) ທັງໝົດໃຫ້ກັບລູກຄ້າໃໝ່ໃນເຄືອຂ່າຍຂອງທ່ານ ແລະ ວິທີເຮັດແບບນັ້ນຜ່ານ Zapier.
 
@@ -29,11 +29,11 @@ Endpoint ນີ້ໃຊ້ method POST ແລະ ຖືກເອີ້ນດ້
 
 ດຽວນີ້, ເຊິ່ງເຮົາຈະໄປສຳຫຼວດ endpoint ນີ້ ແລະ ສ້າງ action ການລົງທະບຽນໃນ Zapier.
 
-## Customer body parameters
+## Customer body parameters {#endpoint-body-parameters}
 
 ຂໍໃຫ້ມີພາບລວມຂອງຂໍ້ມູນຂັ້ນຕ່ມininທີ່ພວກເຮົາຕ້ອງສົ່ງໄປຫາ endpoint ນີ້. ໃນທ້າຍບົດຄວາມນີ້, ທ່ານຈະພົບກັບການເອີ້ນໃຊ້ແບບເຕັມໆ.
 
-### Customer
+### Customer {#customer}
 
 ນີ້ແມ່ນຂໍ້ມູນທີ່ຈຳເປັນສຳລັບຂະບວນການສ້າງ User ແລະ Ultimate Multisite Customer:
 
@@ -43,25 +43,25 @@ Kuvlaj txhua ID ntawm lub neej uas koj ua raws li network koj yuav tsum yeej los
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Qhov tponible uas peb xav los yog qhov tseem ceeb rau hauv object no yog Membership Status.
 
 "membership" { "status" : "string", // ib yam ntawm "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Products yuav tau tsim cov array uas muaj 1 lossis ntau ID product los ntawm lub network koj. Tsis txhob txhob, endpoint no tsis tsim products. Vaj liw rau Ultimate Multisite documentation los paub txog endpoint tsim products zoo dua.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Yog li tias muaj Membership, peb xav los yog qhov status ucas.
 
 **"payment" { "status" : "string", // ib yam ntawm "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
  thiab los txhawm lub bod, peb xav los yog URL thiab Title ntawm lub site, muaj hauv object Site.
 
@@ -69,13 +69,13 @@ Yog li tias muaj Membership, peb xav los yog qhov status ucas.
 
 Qhov uas endpoint register tsis tsim yuav yog ib array uas muaj qhov kev hlub neej uas tshiab tau tsim los.
 
-## Tsim action hauv Zapier
+## Tsim action hauv Zapier {#creating-an-action-in-zapier}
 
 Thaum teb ceeb endpoint tsim account tshiab thiab muaj qholo dua, koj tseem yuav mus tau siv action tshiab hauv Zapier.
 
 Koj paub tias txawm li kawm thiab txaus yog qhov uas version tshiab ntawm Zapier muaj? Paub ntxiv ntawm no. (link?)
 
-### Tsim action
+### Tsim action {#creating-an-action}
 
 Kuvlaj tsoomjoo hmoov zoo li cas tsoom hais tam tang tsoomjoo registration endpoint lo Zapier, thaj tsoomjoo integration hais Google Forms neeg tsoomjoo. Form no hais form hais tsoomjoo fields min txog hais network tsoomjoo membership tsoomjoo.
 
@@ -111,7 +111,7 @@ Kuv siam, hav tiam set up the information, thov tsis tsoom tsis tsoom test tshia
 
 Test your new Zap, chu tsim tsim it should complete successfully. Haiv thau tsis tsoom error tshiab, check all fields thiab txog ti ua zoo. Yog ti muaj ntau yam, ib yam yuav tsis tsoom.
 
-### Complete endpoint parameters
+### Complete endpoint parameters {#complete-endpoint-parameters}
 
 Noj yog qhia hauv tcha call u tsim tsim all the possibilities of fields u yuav tsoom send.
 

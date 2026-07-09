@@ -3,17 +3,17 @@ title: 'Darasi na 12: Gudanar da Kasuwancin'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Darasi na 12: Gudanar da Kasuwancin
+# Darasi na 12: Gudanar da Kasuwancin {#lesson-12-running-the-business}
 
 Dandali ba aikin da ka gama ba ne -- kasuwanci ne da kake gudanarwa. Wannan darasi yana rufe ayyukan yau da kullum na sarrafa FitSite: tallafi, biyan kuɗi, kulawa, da faranta wa abokan ciniki rai.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 FitSite yana aiki kuma abokan ciniki suna yin rajista. Yanzu kana buƙatar gudanar da aikin cikin dorewa.
 
-## Ayyukan Yau da Kullum
+## Ayyukan Yau da Kullum {#daily-operations}
 
-### Sa ido
+### Sa ido {#monitoring}
 
 Duba waɗannan kullum (ko saita faɗakarwa):
 
@@ -22,7 +22,7 @@ Duba waɗannan kullum (ko saita faɗakarwa):
 - **Biyan kuɗi da suka gaza**: Shin akwai gazawar biyan kuɗi da ke buƙatar kulawa?
 - **Buƙatun tallafi**: Shin akwai tambayoyin abokan ciniki da ba a amsa ba?
 
-### Tallafin Abokan Ciniki
+### Tallafin Abokan Ciniki {#customer-support}
 
 Mayar da hankalinka kan wani fanni na musamman fa'ida ce a nan. Saboda duk abokan cinikinka ɗakunan motsa jiki ne, za ka riƙa ganin tambayoyi iri ɗaya akai-akai:
 
@@ -36,7 +36,7 @@ Mayar da hankalinka kan wani fanni na musamman fa'ida ce a nan. Saboda duk aboka
 
 Gina cibiyar iliminka (da aka fara a Darasi na 8) bisa waɗannan tambayoyin da ke maimaituwa. Duk wani tikitin tallafi da zai iya zama labarin cibiyar ilimi alama ce ta cewa a rubuta wannan labarin.
 
-### Matakan Tallafi
+### Matakan Tallafi {#support-tiers}
 
 Yayin da kake girma, tsara tallafi bisa tsari:
 
@@ -48,9 +48,9 @@ Yayin da kake girma, tsara tallafi bisa tsari:
 
 [Support Tickets addon](/addons/support-tickets) na iya taimakawa wajen sarrafa buƙatun tallafi a cikin dandalin.
 
-## Ayyukan Biyan Kuɗi
+## Ayyukan Biyan Kuɗi {#billing-operations}
 
-### Biyan Kuɗi Mai Maimaituwa
+### Biyan Kuɗi Mai Maimaituwa {#recurring-payments}
 
 Ultimate Multisite yana sarrafa biyan kuɗi mai maimaituwa ta atomatik ta hanyar payment gateway ɗinka. Aikinka shi ne ka sa ido kan:
 
@@ -58,7 +58,7 @@ Ultimate Multisite yana sarrafa biyan kuɗi mai maimaituwa ta atomatik ta hanyar
 - **Dunning**: Saita dabarar sake gwadawa ta atomatik ta hanyar payment gateway ɗinka (Stripe yana yin wannan da kyau)
 - **Buƙatun sokewa**: Fahimci dalilin da ya sa abokan ciniki ke barin sabis. Kowace sokewa martani ce.
 
-### Sarrafa Memberships
+### Sarrafa Memberships {#managing-memberships}
 
 Je zuwa **Ultimate Multisite > Memberships** don:
 
@@ -69,13 +69,13 @@ Je zuwa **Ultimate Multisite > Memberships** don:
 
 Duba [Sarrafa Memberships](/user-guide/administration/managing-memberships) don cikakken bayani.
 
-### Rasitoci
+### Rasitoci {#invoicing}
 
 Tabbatar an samar da rasitoci daidai ga kowane biyan kuɗi. Abokan ciniki na iya buƙatar rasitoci don rahoton kuɗaɗen kasuwanci. Duba [Sarrafa Biyan Kuɗi da Rasitoci](/user-guide/administration/managing-payments-and-invoices).
 
-## Kulawar Dandali
+## Kulawar Dandali {#platform-maintenance}
 
-### Sabuntawar WordPress da Plugin
+### Sabuntawar WordPress da Plugin {#wordpress-and-plugin-updates}
 
 A matsayinka na mai gudanar da network, kai ne ke da alhakin:
 
@@ -88,14 +88,14 @@ A matsayinka na mai gudanar da network, kai ne ke da alhakin:
 Sabuntawa da ta lalace tana shafar kowane shafin abokin ciniki a network ɗinka. Koyaushe ka fara gwada sabuntawa a kwafin staging na network ɗinka.
 :::
 
-### Tsaro
+### Tsaro {#security}
 
 - Riƙe duk software a sabunta
 - Yi amfani da kalmomin sirri masu ƙarfi da two-factor authentication don admin accounts
 - Sa ido kan ayyuka masu shakku
 - Ka kasance da tsari don lamuran tsaro
 
-### Aiki
+### Aiki {#performance}
 
 Yayin da network ɗinka ke girma, sa ido kan:
 
@@ -105,9 +105,9 @@ Yayin da network ɗinka ke girma, sa ido kan:
 
 Yi la'akari da aiwatar da caching (page cache, object cache) da CDN idan ba ka riga ka yi ba. [Cloudflare integration](/user-guide/host-integrations/cloudflare) yana sarrafa yawancin wannan.
 
-## Sarrafa Zagayen Rayuwar Abokin Ciniki
+## Sarrafa Zagayen Rayuwar Abokin Ciniki {#customer-lifecycle-management}
 
-### Rage Churn
+### Rage Churn {#reducing-churn}
 
 Churn shi ne kason abokan ciniki da ke soke sabis kowane wata. Ga kasuwancin subscription, rage churn yana da muhimmanci kamar samun sabbin abokan ciniki.
 
@@ -119,7 +119,7 @@ Churn shi ne kason abokan ciniki da ke soke sabis kowane wata. Ga kasuwancin sub
 - Sun sami madadin da ya fi arha → ƙarfafa ƙimar fanninka na musamman
 - Kasuwancinsu ya rufe → ba za a iya guje wa hakan ba, amma a bibiyi wannan daban
 
-### Ƙarfafa Haɓakawa
+### Ƙarfafa Haɓakawa {#encouraging-upgrades}
 
 Abokan ciniki a Starter da ke samun nasara ya kamata a ƙarfafa su su haɓaka:
 
@@ -127,7 +127,7 @@ Abokan ciniki a Starter da ke samun nasara ya kamata a ƙarfafa su su haɓaka:
 - Aika imel masu niyya da ke nuna fasalolin tsarin Growth da za su amfana da su
 - Nuna abin da abokan cinikin Growth/Pro suka gina
 
-### Kamfen ɗin Dawo da Abokin Ciniki
+### Kamfen ɗin Dawo da Abokin Ciniki {#win-back-campaigns}
 
 Lokacin da abokin ciniki ya soke:
 
@@ -135,30 +135,30 @@ Lokacin da abokin ciniki ya soke:
 2. Magance damuwarsu idan zai yiwu
 3. Bayar da ragi don dawowa (kwanaki 30-60 bayan sokewa)
 
-## Ayyukan Mako-mako da Wata-wata
+## Ayyukan Mako-mako da Wata-wata {#weekly-and-monthly-routines}
 
-### Mako-mako
+### Mako-mako {#weekly}
 
 - Duba sabbin rajista da sokewa
 - Amsa duk tikitin tallafi da ke buɗe
 - Duba aikin dandali da lokacin aiki
 - Duba duk wani biyan kuɗi da ya gaza
 
-### Wata-wata
+### Wata-wata {#monthly}
 
 - Nazari kan muhimman ma'auni (MRR, churn, sabbin abokan ciniki, haɓakawa)
 - Aiwatar da sabuntawar WordPress da plugin (bayan gwajin staging)
 - Duba kuma sabunta cibiyar ilimi bisa tsarin buƙatun tallafi
 - Aika wasiƙar labarai ko sabuntawa ga abokan ciniki (sabbin fasaloli, shawarwari, labaran masana'antar fitness)
 
-### Kwata-kwata
+### Kwata-kwata {#quarterly}
 
 - Duba farashi idan aka kwatanta da masu gasa da martanin abokan ciniki
 - Tantance ƙirar templates -- suna buƙatar sabuntawa?
 - Tantance ƙarfin hosting -- kana buƙatar faɗaɗawa?
 - Duba kuma inganta onboarding bisa bayanan activation
 
-## Abin da Muka Gina a Wannan Darasi
+## Abin da Muka Gina a Wannan Darasi {#what-we-built-this-lesson}
 
 - **Ayyukan sa ido na yau da kullum** don uptime, rajista, biyan kuɗi, da tallafi
 - **Tsarin tallafi mai matakai** da ya dace da matakan tsare-tsare

@@ -4,11 +4,11 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Vrací hezký název administrativního poddělení země.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Vrací hezký název administrativního poddělení země.
 | $ucwords | `bool` | zda máme slova ve velkých písmech. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instancí aktuální třídy. |
 
-### Od
+### Od {#since}
 
 - 2.0.11
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) na řádku 250
 
 
-## Vrací
+## Vrací {#returns}
 Změněný název poddělení.

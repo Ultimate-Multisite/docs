@@ -3,11 +3,11 @@ title: Haɓaka Ƙofa ta Musamman
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Gina Custom Gateway
+# Gina Custom Gateway {#custom-gateway-development}
 
 Za ka iya ƙirƙirar custom payment gateways ta hanyar faɗaɗa class ɗin `Base_Gateway`.
 
-## Class ɗin Gateway
+## Class ɗin Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Yi Rajistar Gateway
+## Yi Rajistar Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Muhimman Methods
+## Muhimman Methods {#key-methods}
 
 | Method | Manufa |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Sarrafa buƙatun maido da kuɗi |
 | `get_payment_methods()` | Mayar da hanyoyin biyan kuɗi da aka adana don abokin ciniki |
 
-## Shaidun sabuntawa don memberships masu maimaituwa
+## Shaidun sabuntawa don memberships masu maimaituwa {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 yana ba gateway integrations damar bayar da rahoto ko membership mai maimaituwa yana da shaidar sabuntawa da za a iya sake amfani da ita kafin a adana `auto_renew`. Hook `wu_membership_has_renewal_credential` sannan ka mayar da:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Share alamar shaidar da ta ɓace a matsayin wani ɓangare na nasarar tsarin sake-ba-da-izini na gateway ɗinka bayan an adana sabuwar shaida da za a iya sake amfani da ita.
 
-## Shawarwari
+## Shawarwari {#tips}
 
 - Koyaushe mayar da `WP_Error` idan an samu gazawa domin Ultimate Multisite ya iya sarrafa nuna kuskure
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Yi amfani da `wu_log_add()` don logging na musamman ga gateway
 
-## Iyawar provider na AI connector
+## Iyawar provider na AI connector {#ai-connector-provider-capabilities}
 
 Custom integrations da ke kiran ayyukan da AI connector ke tallafawa ya kamata su dace da jerin provider na OAuth da aka tallafa wanda aka gabatar da AI Provider for Anthropic Max v1.3.0:
 

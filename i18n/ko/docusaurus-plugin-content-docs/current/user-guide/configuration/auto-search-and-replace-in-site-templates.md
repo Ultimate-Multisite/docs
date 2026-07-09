@@ -3,7 +3,7 @@ title: 사이트 템플릿에서 자동 검색 및 바꾸기
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# 사이트 템플릿에서 자동 검색 및 바꾸기 (v2)
+# 사이트 템플릿에서 자동 검색 및 바꾸기 (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**이 튜토리얼에는 WP UItimo 버전 2.x가 필요합니다.**_
 
@@ -17,7 +17,7 @@ Ultimate Multisite의 가장 강력한 기능 중 하나는 등록 양식에 임
 
 그런 다음 Ultimate Multisite가 고객이 제공한 데이터로 자리 표시자를 자동으로 바꿉니다.
 
-## **"자리 표시자로 가득 찬 템플릿" 문제 해결하기**
+## **"자리 표시자로 가득 찬 템플릿" 문제 해결하기** {#solving-the-template-full-of-placeholders-problem}
 
 이 모든 것은 훌륭하지만, 보기 좋지 않은 문제가 생깁니다. 이제 고객이 방문할 수 있는 사이트 템플릿이 별다른 정보를 제공하지 않는 보기 좋지 않은 자리 표시자로 가득 차게 됩니다.
 

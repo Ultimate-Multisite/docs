@@ -3,13 +3,13 @@ title: Siti mallid
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Veebilehedid (v2)
+# Veebilehedid (v2) {#site-templates-v2}
 
 _**MÄÄRKE: See artikli viitab Ultimate Multisite versioon 2.x. Kui kasutate versiooni 1.x,**_ **vaata seda artiklit.**_
 
 Meie eesmärk Ultimate Multisite abil premium võrku loomisel on võimalikult palju protsesse automaatsustada samal ajal kui anname meie klientidele paindlikkuse ja erinevaid valikuid nende veebilehtide luomise ajal. See tasakaalu saavutamiseks lihtne viis on kasutada Ultimate Multisite Site Templates funktsiooni.
 
-## Mis on Site Template?
+## Mis on Site Template? {#what-is-a-site-template}
 
 Nagu nime viitab, on Site Template põhi veebileht, mida saab kasutada aluseks uute veebilehtide loomisel teie võrkudes.
 
@@ -17,7 +17,7 @@ See tähendab, et saate luua aluse veebilehti, aktiveerida erinevaid pluginid, s
 
 See kuulub hästi, kuid kuidas ma uue site template'i luun? See on võimalikult lihtne.
 
-## Uue Site Template loomine ja redigeerimine
+## Uue Site Template loomine ja redigeerimine {#creating-and-editing-a-new-site-template}
 
 Site Templates on lihtsalt tavaline veebileht teie võrkudes. Uue template loomiseks saate lihtsalt minna **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Formi alates, leidate **Copy Site** lühend. See võimaldab teil uuest veebilehu
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Site Template sisu muutmise
+### Site Template sisu muutmise {#customizing-the-contents-of-a-site-template}
 
 Omaduse site template muutmiseks navige lihtsalt selle dashboard paneelile ja tee neid muutusi, mida vajad. Saate luua uusi posts, lehted, aktiveerida pluginid ja muuta aktiivset teema. Saate isegi minna Customizeri ja muuta kõiki tüüpi kohandamise valikuid.
 
@@ -43,11 +43,11 @@ Omaduse site template muutmiseks navige lihtsalt selle dashboard paneelile ja te
 
 Kõik see andmed kopitakse üle, kui klient luub uue veebilehule selle Site Template põhjal.
 
-### Andmevahelised valikud (Advanced Options)
+### Andmevahelised valikud (Advanced Options) {#advanced-options}
 
 Kui te teada, kuidas mõnda kohandatud koodiga töötada, saate kasutada meie Search and Replace API-t, et anda uues veebilehule luomise pärast seda automaatselt infot asendada. See on kasulik asjade nagu ettevõtte nimi muutmiseks About lehel, kontakt e-posti aadressi muutmiseks Contact lehel jne.
 
-### Site Template kasutamine
+### Site Template kasutamine {#using-site-templates}
 
 Ok, siis te olete lunud palju erinevaid Site Templates erinevate disainidega, teemadega ja seadistustega. Kuidas neid nüüd oma võrreedel kasulikuks teha?
 
@@ -59,7 +59,7 @@ Põhjalikult on teil nüüd kaks lähenemist, mida saate kasutada (ei samanaikse
 
   * Lükkida klientide valima site template'id registreitumise ajal.
 
-#### Režiim 1: Site Template asendamine
+#### Režiim 1: Site Template asendamine {#mode-1-assign-site-template}
 
 Lacus režiimis kasutajad ei saa konto luoda, kus nad saaksid valiku teemakust, vaid teil tuleb määrata, millist teema igale oma Plaanile kasutatakse.
 
@@ -71,7 +71,7 @@ See viie teid **Product Options** sektsiooniga. Seal leiate **Site template** ta
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Režiim 2: Valige saadaval olev teema
+#### Režiim 2: Valige saadaval olev teema {#mode-2-choose-available-site-template}
 
 See režiimis annate oma klientide valikku registreitumise ajal. Nad saavad valida erinevate teemadest, mida definitsite produkti seadistustes. Teil on võimalus piirata neid teemasid, mida nad saan välja, valitud produkti all. See võimaldab teil saada erinevaid teemaomad iga produkti all, mis on ideaalne erinevate funktsioonide ja spetsiifiliste omadete esile tõstamiseks hilisemaks hinnaga olevatele produkitele.
 
@@ -79,7 +79,7 @@ See režiimis annate oma klientide valikku registreitumise ajal. Nad saavad vali
 
 ![Vali saatavate siti mallide käitumise valikud](/img/config/product-site-templates.png)
 
-### Oletusteel: Siti malli valik lahkumine ostukorvi vormis
+### Oletusteel: Siti malli valik lahkumine ostukorvi vormis {#default-mode-site-template-selection-on-the-checkout-form}
 
 Kui soovite, et kõik teie siti mallid oleksid registreerimise ajal saadaval, või ei soovi lisatöö teha iga toote all olevate siti mallide määramise või spetsifitseerimise osas. Siis saate lihtsalt asetada siti malli valik **Ostukorvi vormis**. Selleks minige **Ultimate Multisite > Checkout Forms** ja klõpsake **Redige** soovitud vormi all.
 
@@ -93,29 +93,29 @@ Etuleju lehel kasutajad näevad mallivalikku ostukorvi ajal ja saavad valida uue
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Veebilehtet valikud
+### Veebilehtet valikud {#site-template-options}
 
 On onne on saad kasutada teisi veebilehtemõõtlikke funktsioone, mida saab sisse lülitada või välja lülitada Ultimate Multisite seadistustes.
 
 ![Veebilehtemõõtlikkide valikud Ultimate Multisite seadistustes](/img/config/settings-sites-templates-section.png)
 
-#### Veebilehtemõõtlikkide ülemine võimaldamine
+#### Veebilehtemõõtlikkide ülemine võimaldamine {#allow-template-switching}
 
 See valiku sisse lülitamine võimaldab teie klientidele pärast konto ja veebileht loomist välja valitud veebilehtemõõtliku ülemine laadida. See on kas klientide jaoks kasulik, kuna see võimaldab neid uuesti valita veebilehtemõõtlikku, kui nad hiljem teavad, et nende algne valik ei olnud parim nende erispärade jaoks.
 
-#### Kasutajatele võimalus kasutada oma veebilehte veebilehtemõõtlikuna
+#### Kasutajatele võimalus kasutada oma veebilehte veebilehtemõõtlikuna {#allow-users-to-use-their-site-as-templates}
 
 Selle tõttu, et subsite kasutajad on aega kulutanud oma veebilehte laiamise ja disainimise loomisel, võivad nad soovida seda klonit ja kasutada selle ühtse veebilehtemõõtliku kui üks võimalustele olevaid veebilehtemõõtlikke, kui luuavad uue subsite oma võrku. See valik annab neile see saavutada.
 
-#### Media klonimine veebilehtemõõtliku duplikaati ajal
+#### Media klonimine veebilehtemõõtliku duplikaati ajal {#copy-media-on-template-duplication}
 
 Selle valiku kontrollimine klonib media, mida on laaditud veebilehtemõõtlikul veebilehel uuesti loomisel loodud veebilehega. Seda saab ületada iga plaaniga.
 
-#### **Veebilehtemõõtlike indeksimise vabanemine otsingumahvade poolt**
+#### **Veebilehtemõõtlike indeksimise vabanemine otsingumahvade poolt** {#prevent-search-engines-from-indexing-site-templates}
 
 Veebilehtemõõtlikud, nagu selles artiklis discusseeritakse, on boilerplateid, kuid elasid endiselt teie võrku osa, mis tähendab, et nad on edelleen saadaval otsimuhavade leida. See valik võimaldab teil veebilehtemõõtlike varjuta, seega saavad otsingumahvad neid indeksida.
 
-## Veebilehtemõõtlike ettevalmistamine automaatse otsingu ja asendamise abil
+## Veebilehtemõõtlike ettevalmistamine automaatse otsingu ja asendamise abil {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Ultimate Multisite kõige võimlikum funktsioon on võimalus lisada vaba teksti, värve ja valikud vormi registreerimise vormisse. Kui me selle andmeid kogume, saame neid kasutada sisse seadistatud sihtlehelte osade ettevalmistamiseks. Seejärel, kui uus sihtlehel on avaldatav, asendab Ultimate Multisite paigutajad (placeholders) tegelikud registreerimise ajal sisestatud informatsiooniga.
 
@@ -135,7 +135,7 @@ Ultimate Multisite asendab siis paigutajad automaatselt kliendilt antud andmeteg
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Paigutajate täitmise probleem lahendamine
+### Paigutajate täitmise probleem lahendamine {#solving-the-template-full-of-placeholders-problem}
 
 Kõik see on suurepärase, kuid me vastame kahju: meie sihtlehe hoolduslehelid – mida kliendid külastavad – on täis paigutajad, mis ei räägi palju.
 

@@ -3,13 +3,13 @@ title: Multi-tenancy Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje možnost multi-tenancy Hostingerja, ki omogoča, da lahko hostirani domene vstopijo v proces ustvarjanja suverenih tenentov obravnavan skupaj z obstoječo integracijo mapiranja domen Hostingerja.
 
 Uporabite to možnost, če upravljate domene tenentov in izolirano infrastrukturo tenentov preko Hostinger hPanel-a.
 
-## Opombe za nastavitve
+## Opombe za nastavitve {#setup-notes}
 
 1. Konfigurišite osnovno integracijo Hostingerja pod **Ultimate Multisite > Settings > Host Integrations**.
 2. Potrdite, da je Hostinger API token v stanie upravljati ciljni domen ali poddomen.
@@ -19,14 +19,14 @@ Uporabite to možnost, če upravljate domene tenentov in izolirano infrastruktur
 
 Hostinger možnost uporablja deljeno Hostinger povezavo za operacije na strani hosta. DNS mora še vedno usmerjati na pravi Hostinger račun, in omejitve računa hPanel se še vedno nanašajo.
 
-## Zmene specifične za možnost
+## Zmene specifične za možnost {#capability-specific-changes}
 
 - Suverene tenente lahko ustvarite z domenami, ki so obveščeni o hostih.
 - Stringovi hosta baze podatkov na isti strani sta normalizirani pred potrditvijo dostopa.
 - Tenenti upravljani Hostingerjem morajo uporabljati vrednost hosta baze podatkov prikazano v hPanel, razen če WordPress runtime zahteva lokalno nadomestitev.
 - Obrazenia SSO se oslanjajo na to, da domen tenenta razrešuje na tenenta hostiranega Hostingerja.
 
-## Reševanje težav z Hostinger tenenti
+## Reševanje težav z Hostinger tenenti {#troubleshooting-hostinger-tenants}
 
 - Če ne uspe instalacija tenenta, preverite, ali je domen že pripisan k računu Hostingerja.
 - Če potrditev baze podatkov ne uspe, primerjte uporabnika baze podatkov, ime baze podatkov in host binding s hPanelom.

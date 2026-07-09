@@ -3,11 +3,11 @@ title: Webhook හැසිරවීම
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook හැසිරවීම
+# Webhook හැසිරවීම {#webhook-handling}
 
 බාහිර සේවාවලින් සිදුවීම් ලබාගෙන දත්ත Ultimate Multisite සමඟ සමමුහුර්ත කිරීමට අභිරුචි webhook අවසන් ලක්ෂ්‍ය සාදන්න.
 
-## අභිරුචි Webhook අවසන් ලක්ෂ්‍යය
+## අභිරුචි Webhook අවසන් ලක්ෂ්‍යය {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## ආරක්ෂක කරුණු
+## ආරක්ෂක කරුණු {#security-considerations}
 
 - HMAC හෝ හවුල් රහසක් භාවිතයෙන් webhook අත්සන් සැමවිටම සත්‍යාපනය කරන්න
 - ඔබේ REST මාර්ගයේ `permission_callback` භාවිත කරන්න — නිෂ්පාදන පරිසරයේදී එය කිසිවිටෙක `__return_true` ලෙස සකසන්න එපා

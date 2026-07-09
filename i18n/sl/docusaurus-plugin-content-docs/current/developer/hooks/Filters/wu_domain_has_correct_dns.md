@@ -4,11 +4,11 @@ title: Filter - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Omogoči razvijalcem pluginov, da dodajo nova preverjanja za določitev rezultatov.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Omogoči razvijalcem pluginov, da dodajo nova preverjanja za določitev rezultat
 | $domain | `self` | Trenutna instanca domene. |
 | $domains_and_ips | `array` | Seznam domen in IP-jev, najdenih pri poizvedbi DNS. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.4
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) v vrstici 455
 
 
-## Vrne
+## Vrne {#returns}
 Ali je DNS pravilno nastavljen ali ne.

@@ -3,13 +3,13 @@ title: Usizo Lokuthuthukisa Ngokwezifiso
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Ungaluthola Kanjani Usizo Lokuthuthukisa Ngokwezifiso ku-Codeable?
+# Ungaluthola Kanjani Usizo Lokuthuthukisa Ngokwezifiso ku-Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Ngezinye izikhathi, sidinga ngempela ukwenza ngokwezifiso okuhle kakhulu ukuze ukugeleza kwenethiwekhi yethu kusebenze ngendlela esiyifunayo. Uma yilokho okufunayo, sincoma i-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), indawo lapho ungathola khona abathuthukisi abanolwazi ngobungcweti be-Ultimate Multisite.
 
 I-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) iyinkundla exhumanisa amakhasimende nabathuthukisi abazimele be-WordPress abaqeqeshiwe, abakwazi ukusebenza kumaphrojekthi anoma ibuphi usayizi. Banenqubo yokufaka isicelo ecophelelayo ukuze kuqinisekiswe ukuthi uxhunywa nochwepheshe abafanele ngokuqondile umsebenzi onawo engqondweni.
 
-### Ungawakha kanjani iphrojekthi ku-Codeable?
+### Ungawakha kanjani iphrojekthi ku-Codeable? {#how-to-create-a-project-in-codeable}
 
 Okokuqala, iya ku-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) bese uchofoza inkinobho ethi **Qala Iphrojekthi**.
 

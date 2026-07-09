@@ -3,11 +3,11 @@ title: Überblick del pannelli di controllo
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Vistas de la Pizarra (Dashboard Overview)
+# Vistas de la Pizarra (Dashboard Overview) {#dashboard-overview}
 
 Ultimate Multisite tiene una **Dashboard** dedicada bajo el menú de Ultimate Multisite, y también añade widgets a la Network Dashboard. Este artículo cubre lo que verás en ambos lugares.
 
-## La Network Dashboard
+## La Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite inyecta widgets útiles en la dashboard de nivel de red que se encuentra en **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Esto es lo que proporciona cada widget:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## La Dashboard de Ultimate Multisite
+## La Dashboard de Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Mientras que la network dashboard presenta información holística sobre la red, la dashboard de Ultimate Multisite (en el nivel superior del menú de Ultimate Multisite) presenta información sobre el servicio.
 

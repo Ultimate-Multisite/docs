@@ -4,11 +4,11 @@ title: Филтер - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Филтер: wp_ultimo_site_exporter_get_option
+# Филтер: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Враћа slugfied вредност мрежне опције.
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | Назив опције. |
 | $default | `mixed` | Подразумевана вредност. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 1.9.6
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) у реду 126
 
 
-## Враћа
+## Враћа {#returns}
 slugfield вредност мрежне опције.

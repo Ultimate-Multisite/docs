@@ -4,11 +4,11 @@ title: ຕົວກອງ - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# ຕົວກອງ: wu_mt_url_replacements
+# ຕົວກອງ: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 ກອງຄູ່ການແທນທີ່ URL.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 | $new_url | `string` | URL ໃໝ່. |
 | $blog_id | `int` | ID ຂອງບລັອກ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 1.0.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) ທີ່ແຖວ 151

@@ -3,9 +3,9 @@ title: Ultimate AI Connector for Compatible Endpoints Changelog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ενημερωτικό Συγγραφέιo (Changelog) για τον Ultimate AI Connector για Συμβατά Endpoints
+# Ενημερωτικό Συγγραφέιo (Changelog) για τον Ultimate AI Connector για Συμβατά Endpoints {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — Released on 2026-04-24
+## Version 2.0.0 — Released on 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Νέο: Υποστήριξη πολλαπλών παρόχων (Multi-provider support) — επιτρέπετε τη ρύθμιση πολλαπλών AI endpoints και τη διαδρομή αιτημάτων με αυτόματη ανακατεύθυνση (fallback) μεταξύ των παρόχων.
 * Διόρθωση: Ενσωμάτωση SDK πολλαπλών παρόχων με σωστούς αναγνωριστικούς παρόχων (provider IDs), URL εγγραφής και περιορισμό (scoping) φίλτρου HTTP ανά πάροχο.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Διόρθωση: Αφαιρέθηκε το μπλοκάρισμα HTTP αιτήματος που εκδொννούσε σε κάθε φόρτωση σελίδας.
 * Βελτίωση: Οι ροές εργασίας (workflows) του GitHub Actions αναβαθμίστηκαν στο Node.js 24.
 
-## Version 1.0.0 — Initial Release
+## Version 1.0.0 — Initial Release {#version-100--initial-release}

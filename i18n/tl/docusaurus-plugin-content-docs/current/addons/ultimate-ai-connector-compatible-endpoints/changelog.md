@@ -3,9 +3,9 @@ title: Changelog ng Ultimate AI Connector para sa Mga Katugmang Endpoint
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector para sa Compatible Endpoints Changelog
+# Ultimate AI Connector para sa Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Bersyon 2.0.0 — Inilabas noong 2026-04-24
+## Bersyon 2.0.0 — Inilabas noong 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Bago: Suporta sa multi-provider — i-configure ang maraming AI endpoints at i-route ang mga kahilingan na may awtomatikong fallback sa pagitan ng providers.
 * Ayos: Integrasyon ng multi-provider SDK na may tamang provider IDs, registration URLs, at saklaw ng HTTP filter bawat provider.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Ayos: Inalis ang humaharang na HTTP request na tumatakbo sa bawat pag-load ng page.
 * Pinahusay: Na-upgrade ang GitHub Actions workflows sa Node.js 24.
 
-## Bersyon 1.0.0 — Paunang Release
+## Bersyon 1.0.0 — Paunang Release {#version-100--initial-release}

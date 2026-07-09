@@ -3,11 +3,11 @@ title: Ingeboude agente
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ingeboude Agente
+# Ingeboude Agente {#built-in-agents}
 
 Gratis AI Agent v1.9.0 word met vyf ingeboude agente gelewer, elk vooraf gekonfigureer met ’n gefokusde stel gereedskap, ’n aangepaste stelselprompt, en beginvoorstelle wat by algemene take in daardie area pas. Om tussen agente te wissel verander wat die assistent kan doen en hoe dit reageer — sonder enige konfigurasie van jou kant af. Superdav AI Agent v1.18.0 kan skedule-bewuste gereedskap, herinneringrekords, goedkeuringshekke, en SMS-kennisgewings by hierdie werkvloeie voeg wanneer die verwante integrasies gekonfigureer is.
 
-## Wat Is ’n Agent?
+## Wat Is ’n Agent? {#what-is-an-agent}
 
 Elke agent is ’n benoemde konfigurasieprofiel wat kombineer:
 
@@ -15,7 +15,7 @@ Elke agent is ’n benoemde konfigurasieprofiel wat kombineer:
 - **Stelselprompt** — instruksies wat die agent se toon, prioriteite, en beperkings bepaal
 - **Voorstelle** — voorafgeskrewe prompts wat in die kletskoppelvlak gewys word om jou te help om vinnig te begin
 
-## Toegang tot die Agent-kieser
+## Toegang tot die Agent-kieser {#accessing-the-agent-picker}
 
 1. Maak die **Gratis AI Agent**-paneel in die WordPress-adminsybalk oop.
 2. Klik die **agent-ikoon** links bo in die kletskop (die ikoon verander om die aktiewe agent te weerspieël).
@@ -24,9 +24,9 @@ Elke agent is ’n benoemde konfigurasieprofiel wat kombineer:
 
 Jy kan ook agente midde-in ’n gesprek wissel — die nuwe agent se stelselprompt tree vanaf die volgende boodskap in werking.
 
-## Die Vyf Ingeboude Agente
+## Die Vyf Ingeboude Agente {#the-five-built-in-agents}
 
-### Inhoudskrywer
+### Inhoudskrywer {#content-writer}
 
 **Fokus:** Skep en redigeer plasings, bladsye, en kontakvorms.
 
@@ -47,7 +47,7 @@ Jy kan ook agente midde-in ’n gesprek wissel — die nuwe agent se stelselprom
 
 ---
 
-### Werfbouer
+### Werfbouer {#site-builder}
 
 **Fokus:** End-tot-end webwerf-skepping vanaf ’n enkele prompt.
 
@@ -70,7 +70,7 @@ Jy kan ook agente midde-in ’n gesprek wissel — die nuwe agent se stelselprom
 
 ---
 
-### Ontwerpateljee
+### Ontwerpateljee {#design-studio}
 
 **Fokus:** Visuele aanpassing — kleure, tipografie, CSS, en blokpatrone.
 
@@ -87,7 +87,7 @@ Jy kan ook agente midde-in ’n gesprek wissel — die nuwe agent se stelselprom
 - *Neem ’n skermskoot van die tuisblad en vertel my wat jy sou verbeter.*
 - *Skep ’n herbruikbare heldblokpatroon met ’n volle-breedte agtergrondbeeld en gesentreerde opskrif.*
 
-### Plugin-bestuurder
+### Plugin-bestuurder {#plugin-manager}
 
 **Fokus:** Ontdek, installeer, en bestuur WordPress plugins.
 
@@ -105,7 +105,7 @@ Jy kan ook agente midde-in ’n gesprek wissel — die nuwe agent se stelselprom
 
 ---
 
-### Ondersteuningsassistent
+### Ondersteuningsassistent {#support-assistant}
 
 **Fokus:** Beantwoord vrae oor werfinhoud, instellings, en WordPress-konfigurasie.
 
@@ -124,7 +124,7 @@ Jy kan ook agente midde-in ’n gesprek wissel — die nuwe agent se stelselprom
 
 ---
 
-## Superdav-outomatiseringsintegrasies
+## Superdav-outomatiseringsintegrasies {#superdav-automation-integrations}
 
 Wanneer Superdav AI Agent v1.18.0-integrasies gekonfigureer is, kan ingeboude agente aan veiliger skedule-bewuste outomatiseringswerkvloeie deelneem:
 
@@ -138,11 +138,11 @@ Aanbevole werkvloei: vra die agent om die boodskap of aksie voor te berei, hersi
 
 ---
 
-## Aanpassing van Agente
+## Aanpassing van Agente {#customising-agents}
 
 Elke ingeboude agent kan deur die `gratis_ai_agent_agents`-filter uitgebrei of vervang word.
 
-### Voeg ’n pasgemaakte stelselprompt by ’n bestaande agent
+### Voeg ’n pasgemaakte stelselprompt by ’n bestaande agent {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Registreer ’n nuwe agent
+### Registreer ’n nuwe agent {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Die nuwe agent verskyn onmiddellik in die Agent-kieser nadat die filter loop.
 
-### Verwyder ’n ingeboude agent
+### Verwyder ’n ingeboude agent {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

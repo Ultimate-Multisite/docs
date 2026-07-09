@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints integruoja su OpenAI suderinamų AI teikėjų API su jūsų WordPress multisite tinklu. Sukonfigūruokite kelis AI teikėjus — kiekvieną su savo galinio taško URL, API raktu ir numatytuoju modeliu — ir nukreipkite užklausas su automatiniu atsarginiu perjungimu, kai teikėjas nepasiekiamas.
 
-## Pagrindinės funkcijos
+## Pagrindinės funkcijos {#key-features}
 
 - **Kelių teikėjų palaikymas**: pridėkite kelias AI teikėjų korteles, kiekvieną su savo galinio taško URL, API raktu ir numatytuoju modeliu
 - **Vilkimas tvarkai keisti**: išdėstykite teikėjus pagal prioritetą naudodami kiekvienos kortelės suėmimo rankenėlę; užklausos naudoja teikėjus nurodyta tvarka
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints integruoja su OpenAI suderinamų 
 - **Automatinis išskleidimas pridėjus**: naujos teikėjų kortelės automatiškai išskleidžiamos, kad galėtumėte iškart įvesti informaciją
 - **Script cache busting**: teikėjų skriptų cache atnaujinamas atnaujinus įskiepį, kad būtų įkelta naujausia versija
 
-## Reikalavimai
+## Reikalavimai {#requirements}
 
 - WordPress 5.3 arba naujesnė
 - PHP 7.4 arba naujesnė
 - Ultimate Multisite įskiepis (aktyvus)
 - Su OpenAI suderinamas API galinis taškas (savarankiškai talpinamas arba trečiosios šalies)
 
-## Diegimas
+## Diegimas {#installation}
 
 1. Įkelkite priedo failus į savo `/wp-content/plugins/` katalogą
 2. Aktyvinkite įskiepį per WordPress meniu „Plugins“
 3. Eikite į **Ultimate Multisite → AI Connector**, kad sukonfigūruotumėte priedą
 
-## Konfigūracija
+## Konfigūracija {#configuration}
 
-### Kelių teikėjų sąranka
+### Kelių teikėjų sąranka {#multi-provider-setup}
 
 Konfigūracijos ekranas naudoja kortelėmis pagrįstą išdėstymą, kuriame kiekviena kortelė reiškia vieną AI teikėją. Galite pridėti tiek teikėjų, kiek reikia.
 
-#### Teikėjo pridėjimas
+#### Teikėjo pridėjimas {#adding-a-provider}
 
 1. Eikite į **Ultimate Multisite → AI Connector** tinklo administravime
 2. Spustelėkite **Pridėti teikėją**
@@ -52,15 +52,15 @@ Konfigūracijos ekranas naudoja kortelėmis pagrįstą išdėstymą, kuriame kie
    - **Numatytasis modelis** — modelio identifikatorius, kurį pagal numatytuosius nustatymus naudoti šiam teikėjui (pvz., `gpt-4o`, `mistral-small`)
 5. Spustelėkite **Išsaugoti nustatymus**
 
-#### Teikėjo pašalinimas
+#### Teikėjo pašalinimas {#removing-a-provider}
 
 Spustelėkite mygtuką **Pašalinti** bet kurioje teikėjo kortelėje, kad ją ištrintumėte. Išsaugokite nustatymus, kad pritaikytumėte pakeitimą.
 
-#### Teikėjų tvarkos keitimas
+#### Teikėjų tvarkos keitimas {#reordering-providers}
 
 Vilkite suėmimo piktogramą (⣿) bet kurios teikėjo kortelės kairėje pusėje, kad pakeistumėte jos vietą. Tvarka nustato atsarginio perjungimo prioritetą: užklausos siunčiamos pirmajam teikėjui ir, jei užklausa nepavyksta, perjungiamos į paskesnius teikėjus.
 
-### Atsarginis nukreipimas
+### Atsarginis nukreipimas {#fallback-routing}
 
 Kai užklausa pagrindiniam teikėjui nepavyksta — dėl laiko limito, greičio apribojimo arba paslaugos sutrikimo — jungtis automatiškai pakartoja bandymą su kitu sąrašo teikėju. Tai tęsiama sąrašu žemyn, kol teikėjas sėkmingai atsako arba išbandomi visi teikėjai.
 
@@ -72,7 +72,7 @@ Kai užklausa pagrindiniam teikėjui nepavyksta — dėl laiko limito, greičio 
 
 Atsarginis perjungimas kviečiančiam įskiepiui arba temai yra skaidrus — jie gauna arba sėkmingą atsakymą, arba galutinę klaidą, nepriklausomai nuo to, kiek teikėjų buvo išbandyta.
 
-### Teikėjo konfigūracijos nuoroda
+### Teikėjo konfigūracijos nuoroda {#provider-configuration-reference}
 
 | Laukas | Privaloma | Aprašymas |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Atsarginis perjungimas kviečiančiam įskiepiui arba temai yra skaidrus — jie
 | API raktas | Taip | Šio teikėjo autentifikavimo raktas |
 | Numatytasis modelis | Taip | Modelio identifikatorius, naudojamas, kai užklausoje nenurodytas modelis |
 
-## Trikčių šalinimas
+## Trikčių šalinimas {#troubleshooting}
 
-### Nerodomas nė vienas teikėjas
+### Nerodomas nė vienas teikėjas {#no-providers-are-listed}
 
 Jei po išsaugojimo teikėjų sąrašas tuščias, patikrinkite, ar:
 
@@ -91,21 +91,21 @@ Jei po išsaugojimo teikėjų sąrašas tuščias, patikrinkite, ar:
 - Jūsų naršyklė neužblokavo nustatymų puslapio išsaugojimo (patikrinkite naršyklės konsolę dėl JavaScript klaidų)
 - Įskiepis aktyvus ir esate tinklo administravimo ekrane
 
-### Užklausos nepavyksta visiems teikėjams
+### Užklausos nepavyksta visiems teikėjams {#requests-are-failing-for-all-providers}
 
 - Patikrinkite, ar kiekvieno teikėjo galinio taško URL pasiekiamas iš jūsų serverio (ne tik iš jūsų naršyklės)
 - Patikrinkite, ar kiekvienas API raktas galioja ir nėra pasibaigęs
 - Peržiūrėkite teikėjo greičio apribojimų ir kvotų būseną jų dashboarde
 - Įjunkite WordPress derinimo žurnalavimą (`WP_DEBUG_LOG`), kad užfiksuotumėte išsamius jungties klaidų pranešimus
 
-### Teikėjas nenaudojamas atsarginiam perjungimui
+### Teikėjas nenaudojamas atsarginiam perjungimui {#a-provider-is-not-being-used-for-fallback}
 
 Vilkimas tvarkai keisti pakeičia atsarginio perjungimo tvarką. Patikrinkite, ar teikėjas, kuris turėtų gauti atsargines užklausas, sąraše yra tinkamoje vietoje ir ar jo galinio taško URL bei API raktas yra teisingi.
 
-### Nauja teikėjo kortelė automatiškai neišsiskleidžia
+### Nauja teikėjo kortelė automatiškai neišsiskleidžia {#new-provider-card-does-not-expand-automatically}
 
 Automatiniam išskleidimui naršyklėje turi būti įjungtas JavaScript. Jei kortelė neišsiskleidžia spustelėjus, patikrinkite naršyklės konsolę dėl klaidų. Kortelės turinys visada pasiekiamas spustelėjus kortelės antraštę, net jei automatinis išskleidimas nesuveikia.
 
-## Pakeitimų žurnalas
+## Pakeitimų žurnalas {#changelog}
 
 Visą versijų istoriją rasite [Pakeitimų žurnale](./changelog).

@@ -3,9 +3,9 @@ title: Te Tīmata ki te Whanaketanga Tāpiritanga
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Whanaketanga Tāpiri
+# Whanaketanga Tāpiri {#addon-development}
 
-## Hanganga Tāpiri
+## Hanganga Tāpiri {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Tātauira Kōnae Matua mō te Tāpiri
+## Tātauira Kōnae Matua mō te Tāpiri {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Tauira Momo Ritenga
+## Tauira Momo Ritenga {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Whakaurunga Whārangi Whakahaere
+## Whakaurunga Whārangi Whakahaere {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Te Whakamātau i Tō Tāpiringa
+## Te Whakamātau i Tō Tāpiringa {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## ngā wāhi whakawhānui v2.13.0
+## ngā wāhi whakawhānui v2.13.0 {#v2130-extension-points}
 
 Ka tāpiri a Ultimate Multisite v2.13.0 i ētahi wāhi whakawhānui e whaihua ana mō ngā tāpiringa e hono ana ki ngā kairēti motuhake, ngā rohe utu whakaoti, rānei ki te whakaaunoatanga DNS a te kaiwhakarato hautū.
 
-### SSO me ngā URL whakahaere pae matua
+### SSO me ngā URL whakahaere pae matua {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Ngā rohe pūtake puka utu whakaoti
+### Ngā rohe pūtake puka utu whakaoti {#checkout-form-base-domains}
 
 Whakamahia `wu_checkout_form_base_domains` ina whakarato tō tāpiringa i ētahi atu rohe pūtake tiritahi me mahi pēnei i ngā rohe **URL Pae** o te puka utu whakaoti, kaua ko ngā whakamahere ritenga ā-pae:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ka whakanoatia e Ultimate Multisite ēnei hautū, ā, ka tīpoka i ngā rekoata rohe kua whakamaheretia ā-aunoa mō ia pae mō rātou.
 
-### Te waihanga aunoa i ngā rekoata rohe
+### Te waihanga aunoa i ngā rekoata rohe {#automatic-domain-record-creation}
 
 Whakamahia `wu_should_create_domain_record_for_site` ina hiahia tō tāpiringa ki te aukati, ki te whakaroa rānei i te waihanga aunoa i te rekoata rohe mō tētahi pae kātahi anō ka hangaia:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Ka taea e ngā whakaurunga kaiwhakarato hautū e whakarongo ana ki `wu_add_subdomain` te hanga rekoata DNS ki te taha kaiwhakarato ina hangaia ngā pae. Mēnā kāore he whakaurunga kua rēhitatia mō taua hohenga, ka tīpoka a Ultimate Multisite i te mahi papamuri kau.
 
-## Ngā Hipanga Panuku
+## Ngā Hipanga Panuku {#next-steps}
 
 - Arotakengia te [Tohutoro Hooks](/developer/hooks) mō ngā hohenga me ngā tātari e wātea ana
 - Tirohia te [Tirohanga Whānui REST API](/developer/rest-api/overview) mō te whakaurunga API

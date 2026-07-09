@@ -3,13 +3,13 @@ title: 통합 가이드
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# 통합 가이드
+# 통합 가이드 {#integration-guide}
 
 이 가이드는 외부 서비스 연결, 사용자 지정 결제 게이트웨이 구축, 웹훅 처리 등 Ultimate Multisite와의 일반적인 통합 패턴을 다룹니다.
 
 격리된 테넌트 인프라의 경우, 주권형 테넌트 부트스트랩, 마이그레이션 검증, SSO, 해체 지침은 [멀티테넌시 통합](./multi-tenancy)을 참조하세요.
 
-## CRM 통합
+## CRM 통합 {#crm-integration}
 
 새 고객이 가입할 때 고객 데이터를 CRM에 동기화하세요:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## 분석 통합
+## 분석 통합 {#analytics-integration}
 
 고객 생애주기 전반의 주요 비즈니스 이벤트를 추적하세요:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## 다음 단계
+## 다음 단계 {#next-steps}
 
 - [사용자 지정 게이트웨이 개발](./custom-gateway) — 자체 결제 게이트웨이를 구축하세요
 - [웹훅 처리](./webhooks) — 사용자 지정 웹훅 엔드포인트를 만드세요

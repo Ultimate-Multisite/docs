@@ -4,11 +4,11 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Laat ontwikkelaars de uiteindelijke content aanpassen
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Laat ontwikkelaars de uiteindelijke content aanpassen
 | $to_replace | `array` | Array containing the placeholders hold. |
 | $placeholder_count | `int` | Number of placeholders found. |
 
-### Sinds
+### Sinds {#since}
 
 - 1.4.0
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) op regel 46
 
 
-## Retourneert
+## Retourneert {#returns}
 Content na aanpassing.

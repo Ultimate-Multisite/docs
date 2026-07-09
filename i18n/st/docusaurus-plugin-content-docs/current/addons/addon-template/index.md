@@ -3,25 +3,25 @@ title: Thempleite ea Tlatsetso
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Thempleite ya Tlatsetso
+# Thempleite ya Tlatsetso {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Ditlhoko
+## Ditlhoko {#requirements}
 
 - WordPress 5.3 kapa ho feta
 - PHP 7.4 kapa ho feta
 - Tlatsetso ya Multisite Ultimate (e sebetsang)
 
-## Ho kenya
+## Ho kenya {#installation}
 
 1. Kenya difaele tsa tlatsetso bukeng ya hao ya `/wp-content/plugins/`
 2. Kenya tlatsetso tshebetsong ka menyu ya 'Ditlatsetso' ho WordPress
 3. Hlophisa disetting tsa tlatsetso ho motsamaisi wa netweke
 
-## Ntshetsopele
+## Ntshetsopele {#development}
 
-### Tlhophiso
+### Tlhophiso {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Sebopeho sa projeke
+### Sebopeho sa projeke {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Melao ya ho ntjhafatsa khoutu
 ```
 
-### Ho etsa diteko
+### Ho etsa diteko {#testing}
 
 Tlatsetso ena e kenyelletsa moralo o pharalletseng wa diteko:
 
@@ -75,44 +75,44 @@ Tlatsetso ena e kenyelletsa moralo o pharalletseng wa diteko:
 - **Kakaretso ya Diteko**: E hlophiseditswe ho sala morao kakaretso ya khoutu e lekilweng
 - **Diteko tsa Multisite**: Diteko di matha tikolohong ya multisite
 
-### Maemo a Khoutu
+### Maemo a Khoutu {#code-standards}
 
 - **Maemo a ho Ngola Khoutu a WordPress**: A qobellwa ka PHPCS
 - **Ho Tshehetsa PHP 7.4+**: Dikarolo tsa sejwalejwale tsa PHP di a tshehetswa
 - **Tlhahlobo e sa Fetoheng**: Kopanyo ya PHPStan bakeng sa ho hlahloba mefuta
 - **Ho Ntjhafatsa Khoutu**: Melao ya Rector bakeng sa dintlafatso tsa PHP
 
-### Sistimi ya ho Haha
+### Sistimi ya ho Haha {#build-system}
 
 - **Tshebetso ya Dithoto**: Ho fokotsa boholo ba difaele tsa CSS/JS
 - **Phetolelo**: Tlhahiso ya faele ya POT
 - **Ho paka**: Ho bopa archive bakeng sa kabo
 - **Mokgwa wa Ntshetsopele**: Dithoto tse sa fokotswang bakeng sa ho lokisa diphoso
 
-## Tlhophiso
+## Tlhophiso {#configuration}
 
 Tlatsetso e tshehetsa dikgetho tse fapaneng tsa tlhophiso tse fumanehang ka sehokelo sa motsamaisi wa netweke.
 
-## Dihoko le Disefe
+## Dihoko le Disefe {#hooks-and-filters}
 
-### Diketso
+### Diketso {#actions}
 
 - `ultimate-multisite-addon-template_init` - E qalwa ka mora ho qalisa tlatsetso
 - `ultimate-multisite-addon-template_loaded` - E qalwa ka mora hore difaele tsohle tsa tlatsetso di kenngwe
 
-### Disefe
+### Disefe {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Fetola disetting tsa tlatsetso
 - `ultimate-multisite-addon-template_enabled` - Hatella boemo ba ho bulela/tima tlatsetso
 
-## Laesense
+## Laesense {#license}
 
 Tlatsetso ena e laesensitswe tlasa GPL v3 kapa ya morao ho moo.
 
-## Tshehetso
+## Tshehetso {#support}
 
 Bakeng sa tshehetso le ditokomane, etela [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Mofuta 1.0.1 (2025-09-28): reha prefix lebitso hape hore e be ultimate-multisite; ntjhafatsa text domain; nyolla mofuta.
 

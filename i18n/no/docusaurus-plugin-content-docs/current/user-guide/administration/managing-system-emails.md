@@ -3,11 +3,11 @@ title: Administrering av system-e-poster
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Administrere system-e-poster
+# Administrere system-e-poster {#managing-system-emails}
 
 Ultimate Multisite sender ulike system-e-poster for hendelser som registreringsbekreftelser, betalingskvitteringer og medlemskapsendringer. Du kan tilpasse disse e-postmalene slik at de matcher merkevaren din.
 
-## Vise system-e-poster
+## Vise system-e-poster {#viewing-system-emails}
 
 Gå til **Ultimate Multisite → Settings** og klikk på fanen **Emails** for å se e-postrelaterte innstillinger.
 
@@ -21,7 +21,7 @@ Du kan også redigere individuelle e-postmaler med redigeringsverktøyet for sys
 
 ![Redigeringsverktøy for system-e-post](/img/admin/system-email-editor.png)
 
-## Importere nye e-postmaler
+## Importere nye e-postmaler {#importing-new-email-templates}
 
 Nye Ultimate Multisite-versjoner og tilleggsmoduler kan registrere nye e-postmaler. For å unngå konflikter legges ikke nye maler til automatisk — du må importere dem manuelt.
 
@@ -32,7 +32,7 @@ Slik importerer du nye e-postmaler:
 3. Slå på alternativet **Import Emails** for å se tilgjengelige maler
 4. Velg malene du vil importere, og bekreft
 
-## Tilbakestille e-postmaler
+## Tilbakestille e-postmaler {#resetting-email-templates}
 
 Hvis du har tilpasset en e-postmal og vil gå tilbake til standardinnholdet, har du to alternativer:
 

@@ -3,13 +3,13 @@ title: Ndërtoni një biznes me faqe interneti të specializuara
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ndërtoni një biznes faqesh interneti për një niche me Ultimate Multisite
+# Ndërtoni një biznes faqesh interneti për një niche me Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Shumica e njerëzve që përpiqen të shesin faqe interneti konkurrojnë për çmim kundër Wix, Squarespace dhe mijëra freelancer-ëve. Ata humbasin. Ata që fitojnë zgjedhin një audiencë specifike, ndërtojnë një zgjidhje të përshtatur për atë audiencë dhe tarifojnë për vlerën që ofrojnë.
 
 Ky kurs ju mëson si ta bëni pikërisht këtë duke përdorur Ultimate Multisite.
 
-## Çfarë do të ndërtoni
+## Çfarë do të ndërtoni {#what-you-will-build}
 
 Gjatë këtij kursi do të ndërtoni një rrjet real, funksional të quajtur **FitSite** -- një platformë faqesh interneti e ndërtuar posaçërisht për studio fitnessi, trajnerë personalë dhe pronarë palestrash.
 
@@ -23,7 +23,7 @@ Deri në mësimin e fundit, FitSite do të jetë një platformë e plotë për n
 
 Do të ndiqni hap pas hapi, dhe në fund do të keni si një platformë funksionale, ashtu edhe njohuritë për ta përsëritur procesin për çdo niche që zgjidhni.
 
-## Pse studio fitnessi?
+## Pse studio fitnessi? {#why-fitness-studios}
 
 Na duhej një shembull konkret që çdokush mund ta ndjekë. Studiot e fitnessit funksionojnë sepse:
 
@@ -34,7 +34,7 @@ Na duhej një shembull konkret që çdokush mund ta ndjekë. Studiot e fitnessit
 
 Çdo gjë që mësoni duke ndërtuar FitSite zbatohet drejtpërdrejt për çfarëdo niche që zgjidhni: restorante, agjentë imobiliarë, firma ligjore, kisha, kontraktorë zanatesh ose çdo vertikale tjetër.
 
-## Struktura e kursit
+## Struktura e kursit {#course-structure}
 
 Çdo mësim prezanton një koncept, shpjegon pse ka rëndësi dhe ju udhëzon në zbatimin e tij në rrjetin FitSite. Çdo mësim ndërtohet mbi të mëparshmin.
 
@@ -55,7 +55,7 @@ Na duhej një shembull konkret që çdokush mund ta ndjekë. Studiot e fitnessit
 | [13. Zgjerimi](lesson-13-growth) | Rritja nga klientët e parë në një biznes real | Strategjia e rritjes dhe automatizimit për FitSite |
 | [14. Çfarë vjen më pas](lesson-14-whats-next) | Zgjerimi në niche të afërta dhe mundësi të reja | Udhërrëfyesi juaj përtej FitSite |
 
-## Parakushtet
+## Parakushtet {#prerequisites}
 
 - Një instalim WordPress Multisite (ose gatishmëria për ta konfiguruar një)
 - Një licencë aktive Ultimate Multisite
@@ -63,6 +63,6 @@ Na duhej një shembull konkret që çdokush mund ta ndjekë. Studiot e fitnessit
 
 Nuk kërkohet kodim. Nëse nuk keni përdorur kurrë Ultimate Multisite më parë, nuk ka problem -- Mësimi 3 nis nga një instalim i ri.
 
-## Gati?
+## Gati? {#ready}
 
 Filloni me [Mësimi 1: Pse niche fiton](lesson-1-why-niche).

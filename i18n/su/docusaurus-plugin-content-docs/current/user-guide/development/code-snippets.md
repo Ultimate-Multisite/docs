@@ -3,7 +3,7 @@ title: Cuplikan Kode
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Cuplikan Kode pikeun v2
+# Cuplikan Kode pikeun v2 {#code-snippets-for-v2}
 
 Intina, cuplikan kode pikeun **WordPress** dipaké pikeun ngalakukeun sababaraha kagiatan anu biasana butuh plugin leutik khusus. Cuplikan kode saperti kitu dipasang dina salah sahiji file inti WordPress atawa tema (biasana file `functions.php` tina tema anjeun) atawa bisa dipaké salaku MU plugin.
 
@@ -15,7 +15,7 @@ Dina artikel ieu urang bakal nunjukkeun tilu cuplikan kode anu bisa dipaké jeun
 
   * [**Ngabenerkeun masalah CORS jeung Font-Icons di domain anu dipetakan**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Ngubah posisi item menu Akun
+## Ngubah posisi item menu Akun {#changing-the-position-of-the-account-menu-item}
 
 Kanggo ngubah posisi item menu Akun dina Dashboard klien anjeun, cukup tambihan cuplikan kode ieu ka file `functions.php` tina tema utama situs anjeun anu aktif. Anjeun ogé bisa masukan cuplikan éta di salah sahiji mu-plugin atawa plugin kustom anjeun.
 
@@ -23,7 +23,7 @@ Kanggo ngubah posisi item menu Akun dina Dashboard klien anjeun, cukup tambihan 
 add_filter('wu_my_account_menu_position', function() { return 10; // Sesuaikan nilai ieu pikeun ngadamel menu dina posisi anu dipikahoyong.
 ```
 
-## Kumaha cara nguji upami pengguna aya dina rencana tertentu sareng/atawa gaduh langganan aktif
+## Kumaha cara nguji upami pengguna aya dina rencana tertentu sareng/atawa gaduh langganan aktif {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Salaku admin jaringan, anjeun mungkin perlu nyiptake fungsi kustom anu bakal ngalakukeun tindakan dasar atawa ngajadikeun layanan/fitur ka kelompok pelanggan atanapi pamiang anu dipilih, dumasar kana status langganan jeung rencana anu dipikahoyongna.
 
@@ -51,8 +51,8 @@ Catatan yén user ngan ukur bisa langganan **Plan**, lain Package atawa Service,
 
 ![Daftar Produk nunjukkeun ID rencana](/img/admin/products-list.png)
 
-## Ngajaga CORS issues jeung Font-Icons dina domain anu di-map
-## Ngajaga CORS issues jeung Font-Icons dina domain anu di-map
+## Ngajaga CORS issues jeung Font-Icons dina domain anu di-map {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Ngajaga CORS issues jeung Font-Icons dina domain anu di-map {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Sanggeus mapkeun domain ka sub-site, anjeun bisa nemokkeun yén situs téh keur susah ngabaca font kustom. Éta sababna téh blok lintas origin (cross-origin block) dina pengaturan server anjeun.
 
@@ -60,13 +60,13 @@ Sabab file font hampir salawasna dimuat langsung tina CSS, plugin map domain ura
 
 Ieu sababaraha kode pikeun ngabenerkeun masalahna kanggo Apache jeung NGINX. Perubahan ieu butuh élmu anu loba ngeunaan konfigurasi server (file .htaccess jeung file config NGINX). Lamun anjeun teu betah ngarobah éta sorangan, kirimkeun halaman ieu ka agen support penyedia hosting nalika anjeun butuh bantuan.
 
-### Apache
+### Apache {#apache}
 
 Di file .htaccess anjeun, tambihan:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 Di file config server anjeun (lokasina bisa béda ti server ka server), tambihan:
 

@@ -4,13 +4,13 @@ title: سۈزگۈچ - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# سۈزگۈچ: wu_documentation_get_link
+# سۈزگۈچ: wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 قىستۇرما ئاچقۇچىلارغا ئۇلانمىلارنى سۈزۈشكە يول قويىدۇ.
 
 بۇنىڭ قانداق پايدىلىق بولىدىغانلىقى ئېنىق ئەمەس، ئەمما ئۇنى قوشۇپ قويۇش زىيان قىلمايدۇ
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | ئىسمى | تىپى | چۈشەندۈرۈش |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 | $slug | `string` | ئۇلانمىنى ئېلىش ئۈچۈن ئىشلىتىلگەن slug |
 | $default_link | `string` | تىزىملىتىلغان كۆڭۈلدىكى ئۇلانما |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 1.7.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) دا 125-قۇردا ئېنىقلانغان

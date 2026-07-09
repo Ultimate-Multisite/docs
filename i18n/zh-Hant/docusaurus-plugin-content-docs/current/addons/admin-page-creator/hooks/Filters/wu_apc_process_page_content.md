@@ -4,11 +4,11 @@ title: 過濾器 - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# 篩選器：wu_apc_process_page_content
+# 篩選器：wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 讓開發人員可以修改最終的內容
 
-## 參數
+## 參數 {#parameters}
 
 | 名稱 | 類型 | 描述 |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | 包含佔位符（placeholders）的陣列。 |
 | $placeholder_count | `int` | 找到的佔位符數量。 |
 
-### 適用版本
+### 適用版本 {#since}
 
 - 1.4.0
-### 來源
+### 來源 {#source}
 
 定義於 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) 的第 46 行
 
 
-## 回傳值
+## 回傳值 {#returns}
 修改後的內容。

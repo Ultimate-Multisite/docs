@@ -3,17 +3,17 @@ title: Suunnittelun suunta
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Suunnittelusuunta
+# Suunnittelusuunta {#design-direction}
 
 **Suunnittelusuunta**-vaiheessa voit tarkistaa, hioa ja viimeistellä teemasi visuaalisen suunnittelun ennen kuin Theme Builder luo täydellisen teeman.
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 Discovery Interviewin suorittamisen jälkeen Theme Builder näyttää suunnittelusuuntasi **desktop- ja mobiiliesikatselun renderöinnillä**. Näin voit nähdä tarkalleen, miltä suunnittelusi näyttää eri laitteilla ennen kuin sitoudut teemaan.
 
-## Suunnittelusuunnan osat
+## Suunnittelusuunnan osat {#design-direction-components}
 
-### 1. Väripaletti
+### 1. Väripaletti {#1-color-palette}
 
 Teemasi värimaailma, mukaan lukien:
 
@@ -23,7 +23,7 @@ Teemasi värimaailma, mukaan lukien:
 - **Neutraalit värit** — harmaat ja valkoiset taustoihin ja tekstiin
 - **Tekstin väri** — ensisijainen tekstiväri luettavuuden varmistamiseksi
 
-### 2. Typografia
+### 2. Typografia {#2-typography}
 
 Fonttivalinnat seuraaville:
 
@@ -33,14 +33,14 @@ Fonttivalinnat seuraaville:
 - **Riviväli** — rivien välinen väli luettavuuden parantamiseksi
 - **Fonttipaksuudet** — lihavoidut, normaalit ja kevyet muunnelmat
 
-### 3. Asettelu ja välit
+### 3. Asettelu ja välit {#3-layout-and-spacing}
 
 - **Säilön leveys** — sisällön enimmäisleveys
 - **Täytteet ja marginaalit** — elementtien ympärillä oleva tila
 - **Ruudukkojärjestelmä** — sarakeasettelu responsiivista suunnittelua varten
 - **Komponenttien välit** — UI-elementtien välinen etäisyys
 
-### 4. Visuaaliset elementit
+### 4. Visuaaliset elementit {#4-visual-elements}
 
 - **Painiketyylit** — ensisijaiset, toissijaiset ja kolmannen tason painikemallit
 - **Korttimallit** — asettelut sisältölohkoille
@@ -48,9 +48,9 @@ Fonttivalinnat seuraaville:
 - **Reunukset ja varjot** — hienovarainen visuaalinen syvyys
 - **Hover-tehosteet** — interaktiivisen tilan tyylit
 
-## Esikatselun renderöinti
+## Esikatselun renderöinti {#preview-rendering}
 
-### Desktop-esikatselu
+### Desktop-esikatselu {#desktop-preview}
 
 Desktop-esikatselu näyttää suunnittelusi täydellä leveydellä (yleensä 1200px tai leveämpänä):
 
@@ -59,7 +59,7 @@ Desktop-esikatselu näyttää suunnittelusi täydellä leveydellä (yleensä 120
 - Suuri typografia ja välit
 - Kaikki visuaaliset elementit täysikokoisina
 
-### Mobiiliesikatselu
+### Mobiiliesikatselu {#mobile-preview}
 
 Mobiiliesikatselu näyttää suunnittelusi mobiilileveydellä (yleensä 375px):
 
@@ -68,7 +68,7 @@ Mobiiliesikatselu näyttää suunnittelusi mobiilileveydellä (yleensä 375px):
 - Mukautettu typografia ja välit
 - Kosketusystävälliset painikekoot
 
-### Responsiiviset katkaisupisteet
+### Responsiiviset katkaisupisteet {#responsive-breakpoints}
 
 Theme Builder renderöi esikatselut näissä katkaisupisteissä:
 
@@ -79,9 +79,9 @@ Theme Builder renderöi esikatselut näissä katkaisupisteissä:
 | **Desktop** | 1200px | Täysleveä desktop |
 | **Suuri Desktop** | 1920px | Ultraleveä näyttö |
 
-## Suunnittelun hiominen
+## Suunnittelun hiominen {#refining-your-design}
 
-### Säätöjen tekeminen
+### Säätöjen tekeminen {#making-adjustments}
 
 Voit hioa suunnittelusuuntaasi seuraavasti:
 
@@ -91,7 +91,7 @@ Voit hioa suunnittelusuuntaasi seuraavasti:
 4. **Asettelun päivittäminen** — muuta säilöjen leveyksiä ja ruudukon sarakkeita
 5. **Elementtien mukauttaminen** — muokkaa painiketyylejä, korttimalleja jne.
 
-### Esikatselun päivitykset
+### Esikatselun päivitykset {#preview-updates}
 
 Muutokset näkyvät reaaliajassa:
 
@@ -100,7 +100,7 @@ Muutokset näkyvät reaaliajassa:
 - Kaikki responsiiviset katkaisupisteet päivitetään
 - Voit vaihtaa esikatselujen välillä varmistaaksesi muutokset
 
-### Vertailunäkymä
+### Vertailunäkymä {#comparison-view}
 
 Vertaa suunnittelusuuntaasi seuraaviin:
 
@@ -108,7 +108,7 @@ Vertaa suunnittelusuuntaasi seuraaviin:
 - **Kilpailijoiden suunnittelut** — vertaa inspiraatiosivustoihin
 - **Aiemmat versiot** — palaa aikaisempiin suunnittelusuuntiin
 
-## Suunnittelusuunnan hyväksyntä
+## Suunnittelusuunnan hyväksyntä {#design-direction-approval}
 
 Kun olet tyytyväinen suunnitteluusi:
 
@@ -118,7 +118,7 @@ Kun olet tyytyväinen suunnitteluusi:
 4. **Vahvista asettelu** — tarkista välit ja kohdistus
 5. **Hyväksy suunnittelu** — siirry teeman luontiin
 
-## Seuraavat vaiheet
+## Seuraavat vaiheet {#next-steps}
 
 Suunnittelusuunnan hyväksymisen jälkeen:
 
@@ -127,7 +127,7 @@ Suunnittelusuunnan hyväksymisen jälkeen:
 3. Voit mukauttaa lisää WordPressin mukauttimella
 4. Siirry kohtaan [Hospitality-valikot](./hospitality-menus.md) tai muihin ominaisuuksiin
 
-## Parhaat käytännöt
+## Parhaat käytännöt {#best-practices}
 
 - **Testaa oikeilla laitteilla** — käytä oikeita puhelimia ja tabletteja, jos mahdollista
 - **Tarkista luettavuus** — varmista, että teksti on luettavaa kaikissa ko'oissa
@@ -135,30 +135,30 @@ Suunnittelusuunnan hyväksymisen jälkeen:
 - **Huomioi suorituskyky** — optimoi kuvat ja fontit nopeutta varten
 - **Suunnittele sisällön mukaan** — varmista, että asettelu toimii todellisen sisältösi kanssa
 
-## Vianmääritys
+## Vianmääritys {#troubleshooting}
 
-### Esikatselu ei päivity
+### Esikatselu ei päivity {#preview-not-updating}
 
 - Päivitä sivu
 - Tyhjennä selaimen välimuisti
 - Kokeile toista selainta
 - Tarkista internetyhteys
 
-### Värit näyttävät erilaisilta
+### Värit näyttävät erilaisilta {#colors-look-different}
 
 - Tarkista näytön väriasetukset
 - Kokeile eri laitteilla
 - Varmista värikontrasti saavutettavuustyökaluilla
 - Harkitse värisokeussimulaattoreita
 
-### Typografiaongelmat
+### Typografiaongelmat {#typography-issues}
 
 - Varmista, että fonttitiedostot latautuvat
 - Tarkista fonttikoko eri katkaisupisteissä
 - Testaa todellisella sisällöllä
 - Huomioi rivin pituus luettavuuden kannalta
 
-## Aiheeseen liittyvä dokumentaatio
+## Aiheeseen liittyvä dokumentaatio {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — kerää suunnittelutietoja
 - [Hospitality Menus](./hospitality-menus.md) — luo rakenteisia valikkosivuja

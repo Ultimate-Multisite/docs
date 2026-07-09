@@ -3,15 +3,15 @@ title: 'Casharka 11: Helitaanka Macaamiisha'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Casharka 11: Helidda Macaamiisha
+# Casharka 11: Helidda Macaamiisha {#lesson-11-finding-customers}
 
 Madal weyn oo aan lahayn macaamiil waa hiwaayad keliya. Casharkani wuxuu daboolayaa sida macaamiil looga helo qayb gaar ah oo niche ah -- xeelado si gaar ah u shaqeeya sababtoo ah waxaad diiradda saaraysaa hal warshad.
 
-## Meeshii Aynu Ku Joognay
+## Meeshii Aynu Ku Joognay {#where-we-left-off}
 
 FitSite wuu shaqaynayaa. Hadda waxaan u baahanahay in milkiilayaasha istuudiyaha jimicsigu helaan oo isdiiwaangeliyaan.
 
-## Sababta Helidda Niche-ku Uga Duwan Tahay
+## Sababta Helidda Niche-ku Uga Duwan Tahay {#why-niche-acquisition-is-different}
 
 Markaad qof walba ka iibinayso, waxaad ku tartamaysaa dareen helid suuq buuq badan. Markaad niche ka iibinayso, waxaad leedahay faa'iidooyin:
 
@@ -19,17 +19,17 @@ Markaad qof walba ka iibinayso, waxaad ku tartamaysaa dareen helid suuq buuq bad
 - **Farriintaadu isla markiiba way saamaysaa** -- "websites loogu talagalay istuudiyaha jimicsiga" waxay joojisaa milkiile gym ah isagoo dhex rogaya
 - **Talo-bixinnadu way isbiirsadaan** -- milkiilayaasha istuudiyaha jimicsigu waxay yaqaannaan milkiilayaal kale oo istuudiyo jimicsi ah
 
-## Kanaalka 1: La Xiriir Toos ah
+## Kanaalka 1: La Xiriir Toos ah {#channel-1-direct-outreach}
 
 Jidka ugu dhaqsaha badan ee aad ku heli karto macaamiishaada ugu horreeya waa la xiriir toos ah oo shakhsi ah.
 
-### Hel Rajeyaal
+### Hel Rajeyaal {#find-prospects}
 
 - Ka raadi Google Maps istuudiyaha jimicsiga, gyms, iyo tababarayaasha shakhsiyeed ee aaggaaga
 - Booqo websites-kooda hadda jira (ama xus in aysan mid lahayn)
 - Ka ururi macluumaadka xiriirka profiles-kooda Google Business ama baraha bulshada
 
-### Qiimee Xaaladdooda Hadda
+### Qiimee Xaaladdooda Hadda {#evaluate-their-current-situation}
 
 Rajee kasta, xus:
 
@@ -37,7 +37,7 @@ Rajee kasta, xus:
 - **Website xun**: Rajee xooggan -- tus sida ikhtiyaar ka fiican u ekaan karo
 - **Website wanaagsan**: Rajee daciif ah -- hore ayay u xalliyeen dhibaatadan
 
-### Xiriir Samee
+### Xiriir Samee {#make-contact}
 
 Dir email ama farriin loo habeeyay qofka:
 
@@ -48,7 +48,7 @@ Dir email ama farriin loo habeeyay qofka:
 
 Ha dirin emails tiro badan. La xiriir shakhsi ah oo loo diro 20 rajeyaal si fiican loo baaray ayaa ka natiijo fiicnaan doona farriin guud oo loo diro 2,000.
 
-## Kanaalka 2: Bulshooyinka Niche-ka
+## Kanaalka 2: Bulshooyinka Niche-ka {#channel-2-niche-communities}
 
 Milkiilayaasha istuudiyaha jimicsigu waxay isugu yimaadaan meelo gaar ah oo online ah:
 
@@ -57,7 +57,7 @@ Milkiilayaasha istuudiyaha jimicsigu waxay isugu yimaadaan meelo gaar ah oo onli
 - **Forums-ka warshadda** iyo looxyada doodda
 - **Kooxaha LinkedIn** ee xirfadlayaasha jimicsiga
 
-### Sida Looga Qayb Qaato
+### Sida Looga Qayb Qaato {#how-to-participate}
 
 Ha ku biirin oo isla markiiba ha xayeysiin product-kaaga. Halkii:
 
@@ -66,7 +66,7 @@ Ha ku biirin oo isla markiiba ha xayeysiin product-kaaga. Halkii:
 3. **La wadaag marka ay khusayso** -- marka qof wax ka weydiiyo websites, si dabiici ah ula wadaag madashaada
 4. **Abuur nuxur waxtar leh** -- qor posts ku saabsan "waxa ka dhigaya website istuudiyo jimicsi mid weyn" oo si dabiici ah ugu horseeda madashaada
 
-## Kanaalka 3: Suuqgeynta Nuxurka
+## Kanaalka 3: Suuqgeynta Nuxurka {#channel-3-content-marketing}
 
 Abuur nuxur ay milkiilayaasha istuudiyaha jimicsigu raadiyaan:
 
@@ -77,7 +77,7 @@ Abuur nuxur ay milkiilayaasha istuudiyaha jimicsigu raadiyaan:
 
 Ku daabac tan blog-ka suuqgeynta ee FitSite. Waqti ka dib, nuxurkani wuxuu ka muuqdaa darajo sare search engines wuxuuna keenaa taraafik dabiici ah oo ka timaadda dadka si firfircoon u raadinaya waxa aad bixiso.
 
-## Kanaalka 4: Iskaashiyo
+## Kanaalka 4: Iskaashiyo {#channel-4-partnerships}
 
 La shaqee ganacsiyo horey ugu adeega istuudiyaha jimicsiga:
 
@@ -88,7 +88,7 @@ La shaqee ganacsiyo horey ugu adeega istuudiyaha jimicsiga:
 
 Bixi komishanno tixraac ama xayeysiin isdhaafsi ah. [AffiliateWP addon](/addons/affiliatewp) wuxuu kaa caawin karaa inaad dejiso barnaamij tixraac rasmi ah.
 
-## Kanaalka 5: Dhacdooyinka Warshadda
+## Kanaalka 5: Dhacdooyinka Warshadda {#channel-5-industry-events}
 
 Dhacdooyinka warshadda jimicsigu waxay kugu hor keenaan boqollaal macaamiil suurtagal ah:
 
@@ -99,7 +99,7 @@ Dhacdooyinka warshadda jimicsigu waxay kugu hor keenaan boqollaal macaamiil suur
 
 Uma baahnid miisaaniyad weyn. Xitaa ka qaybgal ahaan imaanshaha iyo wada sheekaysiga ku saabsan waxa aad qabato waxay dhalin karaan leads.
 
-## Kanaalka 6: Sites Bandhig ah
+## Kanaalka 6: Sites Bandhig ah {#channel-6-showcase-sites}
 
 Suuqgeyntaada ugu fiican waa sites-ka macaamiishaada jira. Haddii oggolaansho la helo:
 
@@ -108,7 +108,7 @@ Suuqgeyntaada ugu fiican waa sites-ka macaamiishaada jira. Haddii oggolaansho la
 - Weydii macaamiisha qanacsan testimonials
 - Ku dhiirrigeli macaamiisha inay xusaan FitSite marka wax laga weydiiyo website-kooda
 
-## Dejinta Barnaamij Tixraac
+## Dejinta Barnaamij Tixraac {#setting-up-a-referral-program}
 
 Af-ka-afku waa kanaalkaaga ugu awoodda badan ee niche. Ka dhig mid rasmi ah:
 
@@ -116,7 +116,7 @@ Af-ka-afku waa kanaalkaaga ugu awoodda badan ee niche. Ka dhig mid rasmi ah:
 2. U bixi macaamiisha jira abaalmarin tixraacyo darteed (hal bil bilaash ah, credit Account, iwm.)
 3. Ka dhig mid fudud -- sii link tixraac iyo farriin fudud oo ay gudbin karaan
 
-## Dabagalka Waxa Shaqeeya
+## Dabagalka Waxa Shaqeeya {#tracking-what-works}
 
 Kanaal kasta, la soco:
 
@@ -126,7 +126,7 @@ Kanaal kasta, la soco:
 
 Ku sii xooji kanaallada shaqeeya. Jooji kanaallada aan shaqayn.
 
-## Filashooyin Macquul ah
+## Filashooyin Macquul ah {#realistic-expectations}
 
 - **Bisha 1-3**: 5-20 macaamiil, inta badan ka imanaya la xiriir toos ah iyo bulshooyinka
 - **Bisha 4-6**: 20-50 macaamiil, suuqgeynta nuxurku waxay bilaabataa inay wax ku biiriso
@@ -134,7 +134,7 @@ Ku sii xooji kanaallada shaqeeya. Jooji kanaallada aan shaqayn.
 
 Tirooyinkani way kala duwanaan karaan, laakiin qaabku waa joogto: macaamiisha hore waxay ka yimaadaan dadaal toos ah, macaamiisha dambe waxay ka yimaadaan saameynta isbiirsata ee nuxurka, tixraacyada, iyo sumcadda.
 
-## Waxa Aynu Ku Dhisnay Casharkan
+## Waxa Aynu Ku Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Lix kanaal oo macaamiil lagu helo** oo loogu talagalay niche-ka fitness
 - **Hannaan outreach toos ah** oo lagu helo macaamiisha ugu horreeya

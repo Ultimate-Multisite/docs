@@ -3,13 +3,13 @@ title: Nyaluyukeun Formulir Pendaptaran Anjeun
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Nyaluyukeun Formulir Pendaptaran anjeun
+# Nyaluyukeun Formulir Pendaptaran anjeun {#customizing-your-registration-form}
 
 Pikeun ngajadikeun jaringan anjeun katingali unik dibandingkeun jeung SaaS séjén anu diwangun dina platform WordPress, Ultimate Multisite ngamungkinkeun anjeun nyaluyukeun kaca pendaptaran jeung login ku fitur **Checkout Forms** kami.
 
 Sanajan éta cara anu gampang jeung fléksibel pikeun nyobaan rupa-rupa pendekatan nalika rék ngarobah pangunjung anyar jadi palanggan, éta lolobana dipaké pikeun nyieun formulir pendaptaran anu dipersonalisasi. Artikel ieu tujuanana pikeun némbongkeun kumaha anjeun tiasa ngalakukeunana.
 
-## Kaca login jeung pendaptaran:
+## Kaca login jeung pendaptaran: {#login-and-registration-pages}
 
 Nalika masang Ultimate Multisite, éta sacara otomatis nyieun kaca login jeung pendaptaran kustom dina situs utama anjeun. Anjeun tiasa ngarobah kaca standar ieu iraha waé ku muka kaca **Ultimate Multisite > Settings > Login & Registration** anjeun.
 
@@ -45,7 +45,7 @@ Ayeuna, hayu urang tingali pilihan séjén anu masih patali jeung prosés login 
 
 Sareng éta sadaya pilihan anu patali jeung login jeung pendaptaran anu tiasa anjeun saluyukeun! Tong hilap nyimpen setélan anjeun sanggeus réngsé ngéditna.
 
-## Ngagunakeun sababaraha formulir pendaptaran:
+## Ngagunakeun sababaraha formulir pendaptaran: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 nawarkeun éditor formulir checkout anu ngamungkinkeun anjeun nyieun sabaraha waé formulir sakumaha dipikahoyong, kalayan widang anu béda, produk anu ditawarkeun, jsb.
 
@@ -69,7 +69,7 @@ Salaku alternatif, anjeun tiasa ngédit atawa ngadobelkeun formulir anu geus anj
 
 Lamun anjeun milih hiji léngkah atawa sababaraha léngkah, formulir checkout bakal geus dieusian heula ku léngkah dasar supaya éta tiasa jalan. Tuluy, lamun anjeun hoyong, anjeun tiasa nambahkeun léngkah tambahan kana éta.
 
-### Ngédit Checkout Form:
+### Ngédit Checkout Form: {#editing-a-checkout-form}
 
 Sakumaha anu geus kami sebutkeun saméméhna, anjeun tiasa nyieun formulir checkout pikeun rupa-rupa tujuan. Dina conto ieu urang bakal ngerjakeun formulir pendaptaran.
 
@@ -131,11 +131,11 @@ Pikeun meunangkeun shortcode formulir anjeun, klik **Jieun Shortcode** jeung sal
 
 _**Catetan:** Anjeun kedah nambahkeun shortcode ieu kana kaca pendaptaran anjeun supaya formulir checkout ieu ditambahkeun kana éta kaca._
 
-## Pra-milih produk jeung témplat ngaliwatan parameter URL:
+## Pra-milih produk jeung témplat ngaliwatan parameter URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Upami anjeun hoyong nyieun tabel harga anu dikustomisasi pikeun produk anjeun jeung pra-milih dina formulir checkout produk atawa témplat anu dipilih ku palanggan anjeun tina tabel harga atawa kaca témplat anjeun, anjeun tiasa ngagunakeun parameter URL pikeun ieu.
 
-### **Pikeun rencana:**
+### **Pikeun rencana:** {#for-plans}
 
 Buka **Ultimate Multisite > Produk > Pilih rencana**. Anjeun kedah ningali tombol **Klik pikeun nyalin Tautan anu Bisa Dibagikeun** di bagian luhur kaca. Ieu tautan anu tiasa anjeun paké pikeun pra-milih rencana spésifik ieu dina formulir checkout anjeun.
 
@@ -143,7 +143,7 @@ Buka **Ultimate Multisite > Produk > Pilih rencana**. Anjeun kedah ningali tombo
 
 Catet yén tautan anu bisa dibagikeun ieu ngan valid pikeun **Rencana**. Anjeun teu tiasa ngagunakeun tautan anu bisa dibagikeun pikeun pakét atawa jasa.
 
-### Pikeun témplat:
+### Pikeun témplat: {#for-templates}
 
 Upami anjeun hoyong pra-milih témplat situs dina formulir checkout anjeun, anjeun tiasa ngagunakeun parameter: **?template_id=X** dina URL kaca pendaptaran anjeun. "X" kedah diganti ku **nomer ID témplat situs**. Pikeun meunangkeun nomer ieu, buka **Ultimate Multisite > Situs**.
 

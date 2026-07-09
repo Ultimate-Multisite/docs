@@ -4,11 +4,11 @@ title: Toiminto - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Action: wu_dashboard_widgets
+# Action: wu_dashboard_widgets {#action-wudashboardwidgets}
 
 Salli lisäosien kehittäjien lisätä widgettejä verkon Dashboard-paneeliin.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Salli lisäosien kehittäjien lisätä widgettejä verkon Dashboard-paneeliin.
 | $screen | `\WP_Screen` | The screen object. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ultimate Multisite admin page instance. |
 
-### Alkaen versiosta
+### Alkaen versiosta {#since}
 
 - 2.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L225) rivillä 225

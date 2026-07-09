@@ -3,19 +3,19 @@ title: 'Casharka 2: Doorashada takhasuskaaga'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Casharka 2: Doorashada Niche-kaaga
+# Casharka 2: Doorashada Niche-kaaga {#lesson-2-picking-your-niche}
 
 Casharka 1 waxaan ku caddaynay sababta niche uu uga fiican yahay wax guud. Hadda waxaad u baahan tahay inaad doorato kaaga. Casharkani wuxuu ku siinayaa qaab-dhismeed aad ku heli karto kuna xaqiijin karto niche ka hor intaadan waqti gelin dhisiddiisa.
 
-## Meeshii Aan Ku Joogsannay
+## Meeshii Aan Ku Joogsannay {#where-we-left-off}
 
 Waxaan qeexnay fikradda FitSite: madal mareeg oo loogu talagalay istuudiyowyada jimicsiga. Laakiin sideen gaar ahaan ugu nimid istuudiyowyada jimicsiga? Casharkani wuxuu tallaabo-tallaabo u sharxayaa habka si aad ugu dabaqi karto helidda niche-kaaga.
 
-## Saddexda Shuruudood
+## Saddexda Shuruudood {#the-three-criteria}
 
 Niche wanaagsan oo loogu talagalay madal mareeg wuxuu buuxiyaa saddex shuruudood:
 
-### 1. Waxay U Baahan Yihiin Mareegyo Laakiin Way Ku Adkaataa Inay Helaan Kuwo Fiican
+### 1. Waxay U Baahan Yihiin Mareegyo Laakiin Way Ku Adkaataa Inay Helaan Kuwo Fiican {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Raadi warshado halkaas oo:
 
@@ -26,7 +26,7 @@ Raadi warshado halkaas oo:
 
 **Istuudiyowyada jimicsigu way ku habboon yihiin**: xubnuhu waxay filayaan inay online ka helaan jadwalka fasallada, qiimaha, iyo ballansashada. Inta badan mareegyada istuudiyowyadu waa duugoobeen ama waxaa lagu dhisay templates guud oo aan u adeegayn ujeeddada.
 
-### 2. Ganacsiyadu Way Awoodaan Subscription Bille ah
+### 2. Ganacsiyadu Way Awoodaan Subscription Bille ah {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Macaamiisha aad beegsanayso waxay u baahan yihiin inay noqdaan:
 
@@ -36,7 +36,7 @@ Macaamiisha aad beegsanayso waxay u baahan yihiin inay noqdaan:
 
 **Istuudiyowyada jimicsigu way ku habboon yihiin**: hore ayay u bixiyaan software-ka ballansashada, habaynta lacag-bixinta, iyo qalabka suuqgeynta. Subscription mareeg waa ku-dar dabiici ah.
 
-### 3. Way Isla Hadlaan
+### 3. Way Isla Hadlaan {#3-they-talk-to-each-other}
 
 Niche-yada ugu fiican waxay leeyihiin:
 
@@ -46,9 +46,9 @@ Niche-yada ugu fiican waxay leeyihiin:
 
 **Istuudiyowyada jimicsigu way ku habboon yihiin**: milkiilayaasha istuudiyowyadu waxay ka qaybgalaan dhacdooyinka warshadda jimicsiga, waxay ka qaybqaataan bulshooyinka online, waxayna si joogto ah ula wadaagaan asxaabtooda qalab iyo adeegyo.
 
-## Sida Loo Helo Musharrixiin Niche
+## Sida Loo Helo Musharrixiin Niche {#how-to-find-niche-candidates}
 
-### Ka Bilow Waxa Aad Taqaan
+### Ka Bilow Waxa Aad Taqaan {#start-with-what-you-know}
 
 Khibraddaada hadda jirta waa faa'iido. Tixgeli:
 
@@ -56,7 +56,7 @@ Khibraddaada hadda jirta waa faa'iido. Tixgeli:
 - Hiwaayado ama danaynno aad bulshada ku fahamsan tahay
 - Shabakado xirfadeed oo aad hore uga tirsan tahay
 
-### Raadi Calaamadaha Xanuunka
+### Raadi Calaamadaha Xanuunka {#look-for-pain-signals}
 
 Raadi caddayn muujinaysa in ganacsiyada ku jira niche ay ku dhibtoonayaan mareegyada:
 
@@ -65,7 +65,7 @@ Raadi caddayn muujinaysa in ganacsiyada ku jira niche ay ku dhibtoonayaan mareeg
 - Eeg mareegyada dhabta ah ee niche-ka -- badankoodu ma liitaan?
 - Hubi haddii tartamayaal jiraan iyo sida wanaagsan ee ay suuqa ugu adeegaan
 
-### Qiimee Dhaqaalaha
+### Qiimee Dhaqaalaha {#evaluate-the-economics}
 
 Niche kasta oo musharrax ah, qiyaas:
 
@@ -73,11 +73,11 @@ Niche kasta oo musharrax ah, qiyaas:
 - **Rabitaanka bixinta lacagta**: Maxay hadda ku bixiyaan qalab la mid ah?
 - **Suurtagalnimada qiimaha muddada nolosha**: Ganacsiyadani ma deggan yihiin, mise si dhakhso ah ayay u baxaan?
 
-## Xaqiijinta Niche-kaaga
+## Xaqiijinta Niche-kaaga {#validating-your-niche}
 
 Ka hor intaadan wax dhisin, xaqiiji baahida:
 
-### La Hadal Macaamiisha Suurtagalka ah
+### La Hadal Macaamiisha Suurtagalka ah {#talk-to-potential-customers}
 
 La xiriir 10-15 milkiile ganacsi oo ku jira niche-ka aad beegsanayso. Weydii:
 
@@ -88,17 +88,17 @@ La xiriir 10-15 milkiile ganacsi oo ku jira niche-ka aad beegsanayso. Weydii:
 
 Weli wax ma iibinaysid. Waad dhagaysanaysaa.
 
-### Hubi Muuqaalka Tartamayaasha
+### Hubi Muuqaalka Tartamayaasha {#check-competitor-landscape}
 
 - **Tartamayaal ma jiraan**: Waxay ka dhigan kartaa in baahi aysan jirin, ama waxay ka dhigan kartaa fursad aan weli la taaban. Wadahadallada macaamiishu ayaa kuu sheegi doona midka ay tahay.
 - **Tartamayaal yar**: Calaamad wanaagsan. Waxay xaqiijisaa baahida. Baro waxa ay si fiican u qabtaan iyo meelaha ay ka gaabiyaan.
 - **Tartamayaal badan**: Way adkaanaysaa in la galo, laakiin weli waa suurtagal haddii aad si cad u kala duwanaan karto.
 
-### Dhis Bog Soo-degis
+### Dhis Bog Soo-degis {#build-a-landing-page}
 
 Ka hor intaadan dhisin madasha, samee bog soo-degis fudud oo sharxaya xalalkaaga niche oo ururi isdiiwaangelinta email-ka. Orod xaddi yar oo xayeysiis beegsan ah si aad u tijaabiso xiisaha. Haddii dadku isdiiwaangeliyaan, waxaad haysataa xaqiijin.
 
-## Ku Dabaqidda Tan FitSite
+## Ku Dabaqidda Tan FitSite {#applying-this-to-fitsite}
 
 Waa tan sida FitSite uga dhibcaysatay shuruudaha:
 
@@ -112,7 +112,7 @@ Waa tan sida FitSite uga dhibcaysatay shuruudaha:
 
 Xaqiijintu waxay xaqiijisay fursadda. Hadda waan dhiseynaa.
 
-## Fikrado Niche oo La Tixgeliyo
+## Fikrado Niche oo La Tixgeliyo {#niche-ideas-to-consider}
 
 Haddii jimicsigu uusan ahayn suuqaaga, halkan waxaa ku yaal niche-yo kale oo buuxiya shuruudaha:
 
@@ -127,7 +127,7 @@ Haddii jimicsigu uusan ahayn suuqaaga, halkan waxaa ku yaal niche-yo kale oo buu
 
 Mid kasta oo kuwan ka mid ahi wuxuu leeyahay astaamo isku mid ah: baahiyo mareeg oo cad, awood bixinta lacagta, iyo talo-ku-faafid bulsho.
 
-## Waxa Aan Ku Dhisnay Casharkan
+## Waxa Aan Ku Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Qaab-dhismeed doorasho niche**: saddex shuruudood oo lagu qiimeeyo niche kasta
 - **Hababka xaqiijinta**: wadahadallo macaamiil, falanqayn tartamayaal, tijaabinta bog soo-degis

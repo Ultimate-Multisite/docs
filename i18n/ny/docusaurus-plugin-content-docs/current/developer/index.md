@@ -3,11 +3,11 @@ title: Zolemba za Opanga
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Zolemba za Developer
+# Zolemba za Developer {#developer-documentation}
 
 Kalozerayu amapatsa ma developer zonse zofunikira kuti alumikizane ndi, awonjezere, kapena apange ma addon a Ultimate Multisite. Ultimate Multisite imasandutsa netiweki ya WordPress Multisite kukhala nsanja ya Website-as-a-Service (WaaS).
 
-## Zomwe Zilipo
+## Zomwe Zilipo {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Ntchito zonse za CRUD pa zinthu zonse (makasitomala, ma site, umembala, zolipira, zogulitsa, ma domain) pogwiritsa ntchito kutsimikizira kwa API key
 - **[Buku la Hooks](./hooks/guide)** — Ma action hooks oposa 200 ndi ma filter hooks oposa 280 a zochitika za lifecycle ndi kusintha makonda
@@ -15,13 +15,13 @@ Kalozerayu amapatsa ma developer zonse zofunikira kuti alumikizane ndi, awonjeze
 - **[Zitsanzo za Code](./code-examples/)** — Njira zapamwamba za mitengo yosinthika, kukonzekera ma site, malire apadera, ndi kusamalira ma gateway angapo
 - **[Kupanga Addon](./addon-development/getting-started)** — Framework yokonzedwa bwino yopangira ma addon plugin
 
-## Zofunikira
+## Zofunikira {#requirements}
 
 - Kuyika kwa WordPress Multisite
 - PHP 7.4 kapena yapamwamba
 - Ultimate Multisite plugin yayatsidwa
 
-## Kuyika kwa Composer / Bedrock
+## Kuyika kwa Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite ilipo pa [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) monga `ultimate-multisite/ultimate-multisite`. Iyi ndi njira yolimbikitsidwa yoyikira ma setup a WordPress ochokera pa [Bedrock](https://roots.io/bedrock/) ndi malo ena oyendetsedwa ndi Composer.
 
@@ -45,15 +45,15 @@ Kapena, ngati mukutsegula plugin ngati must-use plugin kudzera mu autoloader ya 
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Yambani Mwachangu
+## Yambani Mwachangu {#quick-start}
 
-### Gwiritsani ntchito REST API
+### Gwiritsani ntchito REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Lumikizanani ndi Zochitika
+### Lumikizanani ndi Zochitika {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Pangani Addon
+### Pangani Addon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

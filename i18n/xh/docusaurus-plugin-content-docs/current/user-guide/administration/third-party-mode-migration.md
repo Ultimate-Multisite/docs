@@ -3,13 +3,13 @@ title: Ufuduko lweMowudi yeQela lesiThathu
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Ukufuduswa kweNdlela yeQela Lesithathu
+# Ukufuduswa kweNdlela yeQela Lesithathu {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 itshintsha indlela izakhono zamaqela esithathu eziphathwa ngayo. **Indlela yeqela lesithathu ngoku imiselwe ngokungagqibekanga ku-auto**, ivumela udibaniso lwendalo lwe-WordPress Abilities API kwi-WordPress 7.0+ ngaphandle koqwalaselo ngesandla.
 
-## Yintoni Etshintshileyo?
+## Yintoni Etshintshileyo? {#what-changed}
 
-### Ngaphambi kwe-v1.12.0
+### Ngaphambi kwe-v1.12.0 {#before-v1120}
 
 Izakhono zamaqela esithathu bezifuna uqwalaselo ngesandla:
 
@@ -18,7 +18,7 @@ Izakhono zamaqela esithathu bezifuna uqwalaselo ngesandla:
 - Udibaniso ne-WordPress Abilities API belukhethwa
 - Indlela yelifa yayiyeyona imiselwe ngokungagqibekanga
 
-### Emva kwe-v1.12.0
+### Emva kwe-v1.12.0 {#after-v1120}
 
 Izakhono zamaqela esithathu zisebenza ngokuzenzekelayo:
 
@@ -27,13 +27,13 @@ Izakhono zamaqela esithathu zisebenza ngokuzenzekelayo:
 - Akukho qwalaselo ngesandla lufunekayo kwi-WordPress 7.0+
 - Indlela yelifa isafumaneka kwiinguqulelo ezindala ze-WordPress
 
-## Ngubani Ochaphazelekayo?
+## Ngubani Ochaphazelekayo? {#who-is-affected}
 
-### Ufakelo Olutsha (WordPress 7.0+)
+### Ufakelo Olutsha (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Akukho manyathelo afunekayo.** Indlela yeqela lesithathu isetwa ngokuzenzekelayo ku-"auto", kwaye izakhono zisebenza kwangoko ngaphandle koqwalaselo olongezelelweyo.
 
-### Ufakelo Olukhoyo
+### Ufakelo Olukhoyo {#existing-installations}
 
 **Iisetingi zakho ziyagcinwa.** Ukuba ubusebenzisa:
 
@@ -41,7 +41,7 @@ Izakhono zamaqela esithathu zisebenza ngokuzenzekelayo:
 - **Indlela yeqela lesithathu ngesandla**: Uhlala kwindlela yesandla (akukho tshintsho)
 - **Indlela ye-auto**: Uyaqhubeka nendlela ye-auto (akukho tshintsho)
 
-### Iinguqulelo ze-WordPress Ngaphambi kwe-7.0
+### Iinguqulelo ze-WordPress Ngaphambi kwe-7.0 {#wordpress-versions-before-70}
 
 **Indlela yelifa isafumaneka.** Ukuba uku-WordPress 6.x okanye ngaphambili:
 
@@ -49,9 +49,9 @@ Izakhono zamaqela esithathu zisebenza ngokuzenzekelayo:
 - Ungavula ngesandla indlela yeqela lesithathu ukuba uyafuna
 - Nyusela kwi-WordPress 7.0+ ukuze usebenzise i-Abilities API yendalo
 
-## Ukuqonda Iindlela
+## Ukuqonda Iindlela {#understanding-the-modes}
 
-### Indlela ye-Auto (Entsha Emiselwe Ngokungagqibekanga)
+### Indlela ye-Auto (Entsha Emiselwe Ngokungagqibekanga) {#auto-mode-new-default}
 
 **Indlela ye-auto** isebenzisa udibaniso lwendalo lwe-WordPress Abilities API:
 
@@ -62,7 +62,7 @@ Izakhono zamaqela esithathu zisebenza ngokuzenzekelayo:
 
 **Xa isetyenziswa**: WordPress 7.0+ enezakhono zamaqela esithathu
 
-### Indlela Yesandla
+### Indlela Yesandla {#manual-mode}
 
 **Indlela yesandla** ifuna uqwalaselo olucacileyo:
 
@@ -73,7 +73,7 @@ Izakhono zamaqela esithathu zisebenza ngokuzenzekelayo:
 
 **Xa isetyenziswa**: Uvavanyo, ukulayishwa kwezakhono ezikhethiweyo, okanye uqwalaselo lwesiko
 
-### Indlela Yelifa
+### Indlela Yelifa {#legacy-mode}
 
 **Indlela yelifa** isebenzisa inkqubo endala yezakhono zamaqela esithathu:
 
@@ -84,24 +84,24 @@ Izakhono zamaqela esithathu zisebenza ngokuzenzekelayo:
 
 **Xa isetyenziswa**: WordPress 6.x okanye ngaphambili, okanye xa ufuna ukuhambelana nelifa
 
-## Ukujonga Indlela Yakho Yangoku
+## Ukujonga Indlela Yakho Yangoku {#checking-your-current-mode}
 
-### NgePhaneli Yolawulo
+### NgePhaneli Yolawulo {#via-admin-panel}
 
 1. Yiya ku-**WordPress Ulawulo** → **Superdav AI Agent** → **Iisetingi**
 2. Khangela isetingi ye-**Ndlela yeQela Lesithathu**
 3. Uza kubona indlela yakho yangoku kunye nokhetho lokuyitshintsha
 
-### NgeKhowudi
+### NgeKhowudi {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', or 'legacy'
 ```
 
-## Ukutshintsha Indlela Yakho
+## Ukutshintsha Indlela Yakho {#changing-your-mode}
 
-### Tshintshela kwiNdlela ye-Auto
+### Tshintshela kwiNdlela ye-Auto {#switch-to-auto-mode}
 
 Ukuba uku-WordPress 7.0+ kwaye ufuna ukusebenzisa indlela ye-auto:
 
@@ -112,7 +112,7 @@ Ukuba uku-WordPress 7.0+ kwaye ufuna ukusebenzisa indlela ye-auto:
 
 Superdav AI Agent iya kufumana kwaye ibhalise ngokuzenzekelayo izakhono zamaqela esithathu.
 
-### Tshintshela kwiNdlela Yesandla
+### Tshintshela kwiNdlela Yesandla {#switch-to-manual-mode}
 
 Ukuba ufuna ukulawula ngesandla ukuba zeziphi izakhono ezilayishwayo:
 
@@ -122,7 +122,7 @@ Ukuba ufuna ukulawula ngesandla ukuba zeziphi izakhono ezilayishwayo:
 4. Cofa **Gcina**
 5. Hlela ifayile yakho yoqwalaselo ukuze ucacise ukuba zeziphi izakhono ezimele zilayishwe
 
-### Tshintshela kwiNdlela Yelifa
+### Tshintshela kwiNdlela Yelifa {#switch-to-legacy-mode}
 
 Ukuba ufuna ukuhambelana nelifa:
 
@@ -131,9 +131,9 @@ Ukuba ufuna ukuhambelana nelifa:
 3. Khetha **Ilifa**
 4. Cofa **Gcina**
 
-## Iinzuzo zeNdlela ye-Auto
+## Iinzuzo zeNdlela ye-Auto {#benefits-of-auto-mode}
 
-### Ukufunyanwa Ngokuzenzekelayo
+### Ukufunyanwa Ngokuzenzekelayo {#automatic-discovery}
 
 Izakhono zifunyanwa ngokuzenzekelayo zisuka ku:
 
@@ -144,7 +144,7 @@ Izakhono zifunyanwa ngokuzenzekelayo zisuka ku:
 
 Akukho bhaliso ngesandla lufunekayo.
 
-### Udibaniso Lwendalo
+### Udibaniso Lwendalo {#native-integration}
 
 Izakhono zidibana ne-WordPress Abilities API:
 
@@ -153,67 +153,67 @@ Izakhono zidibana ne-WordPress Abilities API:
 - Iyahambelana nezinye iiplugin ezisebenzisa i-Abilities API
 - Ikhuselwe kwikamva njengoko WordPress ikhula
 
-### Ulawulo Olwenziwe Lula
+### Ulawulo Olwenziwe Lula {#simplified-management}
 
 - Akukho fayile zoqwalaselo zokuhlela
 - Akukho bhaliso lwesakhono ngesandla
 - Ulawulo lwe-Ability Visibility lusebenza ngokuzenzekelayo
 - Izaziso zolawulo ziyakulumkisa ngezakhono ezingahlelwanga
 
-### Ukusebenza Okungcono
+### Ukusebenza Okungcono {#better-performance}
 
 - Izakhono zigcinwa kwi-cache
 - Zilayishwa ngokucotha xa zifunwa
 - Zilungiselelwe i-WordPress 7.0+
 
-## Indlela Yokufuduka
+## Indlela Yokufuduka {#migration-path}
 
-### Ukuba uku-WordPress 6.x
+### Ukuba uku-WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Nyusela kwi-WordPress 7.0+** (xa sele ulungile)
 2. **Hlaziya Superdav AI Agent** ukuya ku-v1.12.0+
 3. **Tshintsha indlela yeqela lesithathu iye ku-Auto** (ukhetho; indlela yelifa isasebenza)
 4. **Hlola ukubonakala kwezakhono** ukuqinisekisa ulawulo olufanelekileyo lokufikelela
 
-### Ukuba uku-WordPress 7.0+
+### Ukuba uku-WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Hlaziya Superdav AI Agent** ukuya ku-v1.12.0+
 2. **Qinisekisa ukuba indlela yeqela lesithathu isetelwe ku-Auto** (imele ibe njalo ngokungagqibekanga)
 3. **Hlola ukubonakala kwezakhono** ukuqinisekisa ulawulo olufanelekileyo lokufikelela
 4. **Vavanya izakhono zamaqela esithathu** ukuqinisekisa ukuba ziyasebenza
 
-## Ukusombulula Iingxaki
+## Ukusombulula Iingxaki {#troubleshooting}
 
-### Izakhono azilayishi kwindlela ye-auto
+### Izakhono azilayishi kwindlela ye-auto {#abilities-arent-loading-in-auto-mode}
 
 - Qinisekisa ukuba uku-WordPress 7.0+
 - Jonga ukuba indlela yeqela lesithathu isetelwe ku-"Auto"
 - Qinisekisa ukuba iplugin enikezela ngesakhono iyasebenza
 - Jonga iilog zempazamo ze-WordPress ukuze ubone iimpazamo zobhaliso
 
-### Ndifuna ukugcina indlela yelifa
+### Ndifuna ukugcina indlela yelifa {#i-want-to-keep-legacy-mode}
 
 - Yiya ku-**Iisetingi** → **Indlela yeQela Lesithathu**
 - Khetha **Ilifa**
 - Cofa **Gcina**
 - Indlela yelifa iya kuqhubeka isebenza
 
-### Izakhono zam zesiko azibonakali
+### Izakhono zam zesiko azibonakali {#my-custom-abilities-arent-showing}
 
 - Qinisekisa ukuba zibhaliswe ngee-hook ze-WordPress
 - Jonga ukuba zisebenzisa i-Abilities API ngokuchanekileyo
 - Hlola iilog zempazamo ze-WordPress
 - Sebenzisa iphepha lolawulo le-**Ability Visibility** ukuze ubone zonke izakhono ezibhalisiweyo
 
-### Ndifumana izaziso ze-"sakhono esingahlelwanga"
+### Ndifumana izaziso ze-"sakhono esingahlelwanga" {#im-getting-unclassified-ability-notices}
 
 - Oku kuqhelekile kwizakhono ezintsha zamaqela esithathu
 - Zihlole kwaye uzihlele kwisaziso solawulo
 - Bona **Ability Visibility** ukuze ufumane iinkcukacha ngohlelo
 
-## Ukuhambelana Ngasemva
+## Ukuhambelana Ngasemva {#backward-compatibility}
 
-### Uqwalaselo Olukhoyo
+### Uqwalaselo Olukhoyo {#existing-configurations}
 
 Ukuba unalo uqwalaselo olukhoyo lwezakhono zamaqela esithathu:
 
@@ -223,33 +223,33 @@ Ukuba unalo uqwalaselo olukhoyo lwezakhono zamaqela esithathu:
 
 Ukugcina uqwalaselo lwakho olulungiselelweyo, hlala kwimowudi yesandla okanye yelifa.
 
-### Umgca wexesha wokuyekiswa
+### Umgca wexesha wokuyekiswa {#deprecation-timeline}
 
 - **v1.12.0**: Iimowudi zelifa nezesandla zisaxhaswa ngokupheleleyo
 - **v1.13.0+**: Imowudi yelifa inokubonisa izaziso zokuyekiswa
 - **v2.0.0**: Imowudi yelifa inokususwa (kuza kugqitywa)
 
-## Ezona ndlela zilungileyo
+## Ezona ndlela zilungileyo {#best-practices}
 
-### Kufakelo olutsha
+### Kufakelo olutsha {#for-new-installations}
 
 - Sebenzisa imowudi ezenzekelayo (yiyo engagqibekanga)
 - Vumela Superdav AI Agent ifumane izakhono ngokuzenzekelayo
 - Sebenzisa ukubonakala kwezakhono ukulawula ukufikelela
 
-### Kufakelo olukhoyo
+### Kufakelo olukhoyo {#for-existing-installations}
 
 - Nyusela ku-WordPress 7.0+ xa kunokwenzeka
 - Tshintshela kwimowudi ezenzekelayo ukuze ulawulo lube lula
 - Phonononga uze uhlele izakhono usebenzisa ukubonakala kwezakhono
 
-### Kwizakhono ezilungiselelweyo
+### Kwizakhono ezilungiselelweyo {#for-custom-abilities}
 
 - Bhalisa izakhono ngee-hooks ze-WordPress (Abilities API)
 - Kuphephe iirejistri zezakhono ezilungiselelweyo
 - Vavanya ku-WordPress 7.0+ ngemowudi ezenzekelayo
 
-## Amanyathelo alandelayo
+## Amanyathelo alandelayo {#next-steps}
 
 1. **Jonga inguqulelo yakho ye-WordPress**: Qinisekisa ukuba uku-7.0+ ukuze usebenzise imowudi ezenzekelayo
 2. **Phonononga imowudi yakho yomntu wesithathu**: Yiya kwi-Settings uze ujonge imowudi yakho yangoku
@@ -257,7 +257,7 @@ Ukugcina uqwalaselo lwakho olulungiselelweyo, hlala kwimowudi yesandla okanye ye
 4. **Hlela izakhono**: Phonononga uze uhlele naziphi na izakhono ezingekahlelwa
 5. **Vavanya**: Qinisekisa ukuba izakhono zakho zomntu wesithathu zisebenza ngokuchanekileyo
 
-## Izihloko ezinxulumene noko
+## Izihloko ezinxulumene noko {#related-topics}
 
 - **Ukubonakala kwezakhono**: Lawula ukuba zeziphi izakhono ezivezwa phi
 - **WordPress Abilities API**: Funda ngobhaliso lwezakhono lwendalo lwe-WordPress

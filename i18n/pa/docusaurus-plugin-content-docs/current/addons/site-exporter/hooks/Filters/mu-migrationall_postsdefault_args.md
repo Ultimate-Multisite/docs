@@ -4,23 +4,23 @@ title: Filter - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filter: mu-migration/all_posts/default_args
+# Filter: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
 
 ਇਹ `all_posts` method ਵਿੱਚ posts ਨੂੰ query ਕਰਨ ਲਈ default arguments (ਸੈਟਿੰਗਾਂ) ਨੂੰ filter ਕਰਦਾ ਹੈ।
 
-## ਪੈਰਾਮੀਟਰ (Parameters)
+## ਪੈਰਾਮੀਟਰ (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $default_args | `array` | Default arguments ਵਾਲਾ array। |
 
-### ਕਦੋਂ ਤੋਂ (Since)
+### ਕਦੋਂ ਤੋਂ (Since) {#since}
 
 - 0.2.0
-### ਸਰੋਤ (Source)
+### ਸਰੋਤ (Source) {#source}
 
 [`inc/mu-migration/includes/commands/class-mu-migration-base.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-base.php#L70) ਵਿੱਚ ਲਾਈਨ 70 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।
 
 
-## ਵਾਪਸ ਕਰਦਾ ਹੈ (Returns)
+## ਵਾਪਸ ਕਰਦਾ ਹੈ (Returns) {#returns}
 Default arguments ਵਾਲਾ array।

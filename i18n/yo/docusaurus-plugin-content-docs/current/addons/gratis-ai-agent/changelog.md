@@ -3,11 +3,11 @@ title: Àkọọlẹ̀ àwọn ìyípadà
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Àkọsílẹ̀ Àyípadà
+# Àkọsílẹ̀ Àyípadà {#changelog}
 
-## 1.9.0 — Tí a tu sílẹ̀ ní 2026-04-28
+## 1.9.0 — Tí a tu sílẹ̀ ní 2026-04-28 {#190--released-on-2026-04-28}
 
-### Tuntun
+### Tuntun {#new}
 
 - **agbára `create_contact_form`** — ń dá fọ́ọ̀mù ìbánisọ̀rọ̀ kan sílẹ̀ ní lílo plugin fọ́ọ̀mù tó ń ṣiṣẹ́ (Contact Form 7, WPForms, Fluent Forms, tàbí Gravity Forms) ó sì ń dá shortcode tó ti ṣetan láti fi sínú ìfìwéránṣẹ́ tàbí ojú-ewé èyíkéyìí padà.
 - **agbára `set_featured_image`** — ń yan àwòrán àfihàn sí ìfìwéránṣẹ́ tàbí ojú-ewé láti ID àfikún Media Library tó wà tẹ́lẹ̀ tàbí URL jíjìn; ó máa ń gbe àwòrán wọlé fúnra rẹ̀ nígbà tí a bá pèsè URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Dá session tó kẹ́yìn padà** — panel chat ń tún ìjíròrò tó ṣẹ̀ṣẹ̀ ṣẹlẹ̀ jù lọ gbé wọlé fúnra rẹ̀ báyìí nígbà tí ojú-ewé bá ń ṣí àti nígbà tí widget bá ṣí, nítorí náà context kì í sọnù mọ́ láàárín ìrìnàjò ojú-ewé.
 - **Àwọn link ìṣe plugin** — àwọn link yára sí Settings àti Abilities Registry ń hàn báyìí lórí iboju WordPress **Plugins → Installed Plugins** ní ìsàlẹ̀ àpèjúwe plugin.
 
-### Tí a mú sunwọ̀n síi
+### Tí a mú sunwọ̀n síi {#improved}
 
 - **Ìgbìyànjú orísun àwòrán lẹ́ẹ̀kansi** — aṣojú ń tún gbogbo àwọn orísun àwòrán ọ̀fẹ́ tí a ti ṣètò gbìyànjú báyìí kí ó tó padà sí àwòrán tí AI dá sílẹ̀ nígbà ìkùnà ìgbàsílẹ̀.
 - **Panel ìmọ̀ model** — máa ń hàn nígbà gbogbo nínú akọsórí chat; a kì í fi pamọ́ mọ́ lẹ́yìn ìfiranṣẹ́ àkọ́kọ́.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Àtúnṣe widget chat** — aami AI apapọ rọ́pò avatar àdáṣe tẹ́lẹ̀; ó bá eto aṣojú tí a kọ sínú rẹ̀ mu.
 - **Ṣíṣe URL di link** — àwọn URL tó ń hàn nínú àwọn ìfiranṣẹ́ system àti àwọn bubble ìfiranṣẹ́ àṣìṣe ni a ń ṣe àfihàn báyìí gẹ́gẹ́ bí àwọn link tí a lè tẹ̀.
 
-### Tí a túnṣe
+### Tí a túnṣe {#fixed}
 
 - **Ríri àwọn agbára** — a ṣàtúnṣe àwọn àpèjúwe, àwọn ìtọ́kasí system prompt, àti ìbámu namespace kí gbogbo àwọn agbára lè hàn nínú àtòkọ irinṣẹ́ aṣojú ní ìgbẹ́kẹ̀lé.
 - **Cache providers** — a ń cache àwọn providers báyìí jákèjádò site nípasẹ̀ counter version, tó ń dènà àwọn ìṣòro stale-provider lórí àwọn nẹ́tíwọ́ọ̀kì multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Tí a tu sílẹ̀ ní 2026-04-09
+## 1.4.0 — Tí a tu sílẹ̀ ní 2026-04-09 {#140--released-on-2026-04-09}
 
-### Tuntun
+### Tuntun {#new-1}
 
 - **Àṣẹ benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — ń ṣiṣẹ́ suite benchmark Agent Capabilities v1 láti command line fún àwọn pipeline CI àti àwọn workflow ìtúpalẹ̀ model. Ó ṣe àtìlẹ́yìn fún iṣẹ́ per-question, override provider/model, àti output JSON/CSV.
 - **Suite benchmark Agent Capabilities v1** — àkójọpọ̀ prompt onígbèsẹ̀-púpọ̀, dídíjú, tó ní ìṣètò, tí ń dán gbogbo àgbègbè agbára wò, pẹ̀lú scoring àti ìjábọ̀ token/àkókò.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ìbéèrè benchmark wẹ́ẹ̀bù-sáìtì ilé-ounjẹ** (`q-restaurant-website`) — ìdánwò láti ìbẹ̀rẹ̀ dé òpin tó bo ìforúkọsílẹ̀ CPT, design system, navigation, àti ìṣàwárí plugin.
 - **Àwọn plugin connector AI provider** tí a fi kún àwọn blueprint WordPress Playground fún setup ìdàgbàsókè agbègbè-yẹn tó yára síi.
 
-### Tí a mú sunwọ̀n síi
+### Tí a mú sunwọ̀n síi {#improved-1}
 
 - A ṣe ìmúdójúìwọ̀n README pẹ̀lú documentation connector AI provider àti àwọn ìtọ́nisọ́nà setup.
 
-### Tí a túnṣe
+### Tí a túnṣe {#fixed-1}
 
 - A yanjú àwọn ìkùnà ìdánwò PHPUnit 25 lórí ẹ̀ka `main`.
 - A ṣàtúnṣe format URL GitHub releases nínú `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Awọn àkọsílẹ̀ ìtúsílẹ̀ ṣáájú ni a ń tọ́jú nínú repository plugin._

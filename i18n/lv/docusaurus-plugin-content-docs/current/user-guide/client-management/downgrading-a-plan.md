@@ -3,13 +3,13 @@ title: Plāna samazināšana
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plāna atkarīšana (v2)
+# Plāna atkarīšana (v2) {#downgrading-a-plan-v2}
 
 _**SVITUMA ATMIŅAS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
 Plāna vai abonentēšanas plānu atkarīšana ir bieža darbība, ko jūsu klientiem var veikt, ja viņiem ierobežots budžets vai viņi izlūdzis, ka viņiem nav nepieciešams daudz resursu subsites vadīšanai.
 
-## Kā atkarīt planu
+## Kā atkarīt planu {#how-to-downgrade-a-plan}
 
 Jūs varat atkarīt savu planu jebkurā laikā, logojoties uz savas subsites admin dashboard un noklikšķinot uz **Mainīt** (Change) aktais lapā.
 
@@ -25,7 +25,7 @@ Lai turpinātu, lietotājam pietiks noklikšķināt uz pogas **Pabeigt kasinu** 
 
 ![Kontas lapa, kas redz nepiegādējošās izmaiņas banneri](/img/account-page/pending-change.png)
 
-### Kas notiek, kad lietotājs atkar un planu?
+### Kas notiek, kad lietotājs atkar un planu? {#what-happens-when-a-user-downgrades-their-plan}
 
 Līdzīgi ir svarīgi atzīmēt, ka plāna atkaršana neizvairina jau eksistējo konfigurāciju subsites.
 
@@ -37,7 +37,7 @@ Lai gan posts pārsniedz plāna ierobežojumus, jums ir 3 dažādi variantas: **
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Kas notiek ar maksājumiem
+### Kas notiek ar maksājumiem {#what-happens-to-the-payment}
 
 Versijā 2.0 nepieciešams piešķirt pratorācijas (proration) attiecībā uz maksājumiem.
 

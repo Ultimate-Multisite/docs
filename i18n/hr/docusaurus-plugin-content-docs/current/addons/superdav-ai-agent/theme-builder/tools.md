@@ -3,17 +3,17 @@ title: Alati i konfiguracija
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Alati i konfiguracija
+# Alati i konfiguracija {#tools-and-configuration}
 
 Theme Builder koristi skup alata za analizu, dizajn i izradu vaše WordPress stranice. U verziji 1.16.0, **sd-ai-agent/site-scrape sada je alat Tier 1**, što ga čini dostupnim prema zadanim postavkama u Theme Builder. Superdav AI Agent v1.18.0 također uvodi zasebno distribuirani Advanced popratni paket za pouzdane razvojne tijekove rada; ti alati nisu dio osnovnog WordPress.org paketa i moraju se instalirati i autorizirati zasebno.
 
-## Dostupni alati
+## Dostupni alati {#available-tools}
 
-### Tier 1 alati (uvijek dostupni)
+### Tier 1 alati (uvijek dostupni) {#tier-1-tools-always-available}
 
 Tier 1 alati dostupni su prema zadanim postavkama u Theme Builder bez ikakve dodatne konfiguracije.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Svrha:** Analizirati postojeće web-stranice radi izdvajanja dizajnerske inspiracije, strukture sadržaja i funkcionalnosti.
 
@@ -51,11 +51,11 @@ Analiziraj dizajn example.com i upotrijebi ga kao inspiraciju za moju stranicu.
 - Stranice s mnogo JavaScript-a mogu imati ograničenu analizu
 - Analiza velikih stranica može potrajati dulje
 
-### Tier 2 alati (neobavezno)
+### Tier 2 alati (neobavezno) {#tier-2-tools-optional}
 
 Tier 2 alati dostupni su kada su izričito omogućeni u postavkama Theme Builder.
 
-#### Napredna analitika
+#### Napredna analitika {#advanced-analytics}
 
 Pruža detaljne metrike performansi:
 
@@ -65,7 +65,7 @@ Pruža detaljne metrike performansi:
 - Ocjenu pristupačnosti
 - Ocjenu najboljih praksi
 
-#### Optimizator sadržaja
+#### Optimizator sadržaja {#content-optimizer}
 
 Analizira i predlaže poboljšanja za:
 
@@ -75,11 +75,11 @@ Analizira i predlaže poboljšanja za:
 - Strukturu sadržaja
 - Položaj poziva na akciju
 
-### Tier 3 alati (Premium)
+### Tier 3 alati (Premium) {#tier-3-tools-premium}
 
 Tier 3 alati zahtijevaju dodatnu konfiguraciju ili premium značajke.
 
-#### AI generator sadržaja
+#### AI generator sadržaja {#ai-content-generator}
 
 Generira sadržaj za:
 
@@ -89,7 +89,7 @@ Generira sadržaj za:
 - Meta opise
 - Tekst poziva na akciju
 
-#### Napredni dizajnerski alati
+#### Napredni dizajnerski alati {#advanced-design-tools}
 
 Pruža napredne dizajnerske mogućnosti:
 
@@ -99,7 +99,7 @@ Pruža napredne dizajnerske mogućnosti:
 - Naprednu teoriju boja
 - Optimizaciju tipografije
 
-### Advanced popratni alati (zasebni paket)
+### Advanced popratni alati (zasebni paket) {#advanced-companion-tools-separate-package}
 
 Advanced popratni paket distribuira se zasebno od osnovnog izdanja Superdav AI Agent. Namijenjen je pouzdanim okruženjima za developere i vlasnike stranica u kojima administratori izričito dopuštaju agentu upotrebu alata s velikim utjecajem.
 
@@ -116,9 +116,9 @@ Advanced popratne mogućnosti mogu uključivati:
 
 Nemojte ih dokumentirati kao općenito dostupne Theme Builder alate za svaku instalaciju. Dostupni su samo kada je Advanced popratni paket instaliran, omogućen i ograničen na pouzdane administratore.
 
-## Konfiguracija alata
+## Konfiguracija alata {#tool-configuration}
 
-### Omogućavanje alata
+### Omogućavanje alata {#enabling-tools}
 
 Za omogućavanje dodatnih alata u Theme Builder:
 
@@ -127,7 +127,7 @@ Za omogućavanje dodatnih alata u Theme Builder:
 3. Uključite ili isključite alate prema potrebi
 4. Spremite postavke
 
-### Dopuštenja alata
+### Dopuštenja alata {#tool-permissions}
 
 Neki alati zahtijevaju dopuštenja:
 
@@ -137,7 +137,7 @@ Neki alati zahtijevaju dopuštenja:
 - **Napredne značajke** — mogu zahtijevati premium pretplatu
 - **Advanced popratni alati** — zahtijevaju zasebno distribuirani Advanced paket i izričito povjerenje administratora
 
-### API ključevi i vjerodajnice
+### API ključevi i vjerodajnice {#api-keys-and-credentials}
 
 Konfigurirajte API ključeve za alate koji ih zahtijevaju:
 
@@ -146,13 +146,13 @@ Konfigurirajte API ključeve za alate koji ih zahtijevaju:
 3. Testirajte vezu
 4. Spremite na siguran način
 
-### Instaliranje Advanced popratnog paketa
+### Instaliranje Advanced popratnog paketa {#installing-the-advanced-companion-package}
 
 Advanced popratni paket objavljuje se zasebno od osnovnog WordPress.org ZIP-a. Instalirajte ga samo iz službenog distribucijskog kanala projekta za izdanje, zatim ograničite pristup pouzdanim administratorima. Pregledajte kontrolne točke ljudskog odobrenja i ponašanje git snapshota prije omogućavanja alata datotečnog sustava, baze podataka, WP-CLI, REST dispatchera, izrade pluginova, upravljanja korisnicima ili benchmarka na produkcijskoj stranici.
 
-## Upotreba sd-ai-agent/site-scrape
+## Upotreba sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Osnovna upotreba
+### Osnovna upotreba {#basic-usage}
 
 Zatražite od Theme Builder da analizira web-stranicu:
 
@@ -161,7 +161,7 @@ Analiziraj dizajn stranice mog konkurenta na competitor.com
 i predloži poboljšanja dizajna za moju stranicu.
 ```
 
-### Specifična analiza
+### Specifična analiza {#specific-analysis}
 
 Zatražite specifične vrste analize:
 
@@ -179,7 +179,7 @@ Provjeri prilagodljivost example.com mobilnim uređajima i osiguraj da je moja s
 jednako prilagodljiva.
 ```
 
-### Usporedna analiza
+### Usporedna analiza {#comparison-analysis}
 
 Usporedite više stranica:
 
@@ -188,22 +188,22 @@ Usporedi dizajne site1.com i site2.com i izradi dizajn
 koji kombinira najbolje elemente oba.
 ```
 
-## Ograničenja i razmatranja alata
+## Ograničenja i razmatranja alata {#tool-limitations-and-considerations}
 
-### Ograničavanje stope
+### Ograničavanje stope {#rate-limiting}
 
 - Scraping je ograničen brzinom kako bi se spriječilo preopterećenje poslužitelja
 - Višestruki zahtjevi prema istom siteu mogu biti usporeni
 - Analiza velikih siteova može potrajati dulje
 
-### Točnost sadržaja
+### Točnost sadržaja {#content-accuracy}
 
 - Dinamički sadržaj možda neće biti u potpunosti zabilježen
 - Sadržaj renderiran JavaScriptom može biti nepotpun
 - Podaci u stvarnom vremenu možda neće biti odraženi
 - Neki sadržaj može biti iza paywalla
 
-### Pravna i etička razmatranja
+### Pravna i etička razmatranja {#legal-and-ethical-considerations}
 
 - Poštujte robots.txt i pravila sitea
 - Nemojte scrapati sadržaj zaštićen autorskim pravima radi reprodukcije
@@ -211,16 +211,16 @@ koji kombinira najbolje elemente oba.
 - Provjerite imate li prava za upotrebu izdvojenog sadržaja
 - Slijedite uvjete korištenja analiziranih siteova
 
-### Utjecaj na performanse
+### Utjecaj na performanse {#performance-impact}
 
 - Scraping velikih siteova može potrajati
 - Višestruki istodobni scrapovi mogu biti sporiji
 - Mrežna povezivost utječe na brzinu
 - Veliki skupovi podataka mogu zahtijevati više obrade
 
-## Najbolje prakse
+## Najbolje prakse {#best-practices}
 
-### Korištenje analize sitea
+### Korištenje analize sitea {#using-site-analysis}
 
 1. **Analizirajte više siteova** — prikupite inspiraciju iz nekoliko izvora
 2. **Usredotočite se na strukturu** — naučite obrasce rasporeda i organizacije
@@ -228,7 +228,7 @@ koji kombinira najbolje elemente oba.
 4. **Proučite tipografiju** — prepoznajte kombinacije fontova koje vam se sviđaju
 5. **Pregledajte navigaciju** — razumijte organizaciju izbornika
 
-### Etički scraping
+### Etički scraping {#ethical-scraping}
 
 1. **Poštujte robots.txt** — slijedite smjernice sitea
 2. **Nemojte kopirati sadržaj** — koristite analizu samo za inspiraciju
@@ -236,7 +236,7 @@ koji kombinira najbolje elemente oba.
 4. **Navedite izvore** — navedite zasluge za izvore inspiracije
 5. **Slijedite uvjete** — pridržavajte se uvjeta korištenja sitea
 
-### Maksimiziranje učinkovitosti alata
+### Maksimiziranje učinkovitosti alata {#maximizing-tool-effectiveness}
 
 1. **Budite specifični** — zatražite specifične vrste analize
 2. **Pružite kontekst** — objasnite svrhu svojeg sitea
@@ -244,9 +244,9 @@ koji kombinira najbolje elemente oba.
 4. **Iterirajte** — doradite na temelju rezultata
 5. **Kombinirajte alate** — koristite više alata za sveobuhvatnu analizu
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
-### Site se ne može scrapati
+### Site se ne može scrapati {#site-wont-scrape}
 
 - Provjerite je li site javno dostupan
 - Provjerite dopušta li robots.txt scraping
@@ -254,7 +254,7 @@ koji kombinira najbolje elemente oba.
 - Provjerite internetsku vezu
 - Kontaktirajte podršku ako se problem nastavi
 
-### Nepotpuna analiza
+### Nepotpuna analiza {#incomplete-analysis}
 
 - Site može imati dinamički sadržaj
 - JavaScript možda neće biti u potpunosti renderiran
@@ -262,7 +262,7 @@ koji kombinira najbolje elemente oba.
 - Pokušajte umjesto toga analizirati specifične stranice
 - Zatražite specifične vrste analize
 
-### Spore performanse
+### Spore performanse {#slow-performance}
 
 - Analiza velikih siteova traje dulje
 - Višestruki istodobni scrapovi su sporiji
@@ -270,7 +270,7 @@ koji kombinira najbolje elemente oba.
 - Pokušajte tijekom sati manjeg opterećenja
 - Najprije analizirajte manje odjeljke
 
-## Povezana dokumentacija
+## Povezana dokumentacija {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — prikupite informacije o dizajnu
 - [Design Direction](./design-direction.md) — doradite svoj dizajn

@@ -3,7 +3,7 @@ title: AffiliateWP өөрчлөлтийн бүртгэл
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP өөрчлөлтийн бүртгэл
+# AffiliateWP өөрчлөлтийн бүртгэл {#affiliatewp-changelog}
 
 Хувилбар: 2.0.1 - 2025-09-28-нд гарсан
 

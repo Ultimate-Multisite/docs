@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Nres Bots. Tiv Thaiv Nyiaj Tau Los. Tsis Muaj Kev Nyuaj Siab Teeb Configuration.**
 
@@ -15,7 +15,7 @@ Koj khiav ib lub multisite network nrog cov domains kho raws siab nyiam? Koj yee
 
 **Ultimate Multisite: Captcha hloov txhua yam.**
 
-## Cap Captcha: Kev Tiv Thaiv Self-Hosted Uas Cia Li Ua Haujlwm
+## Cap Captcha: Kev Tiv Thaiv Self-Hosted Uas Cia Li Ua Haujlwm {#cap-captcha-self-hosted-protection-that-just-works}
 
 Peb tus provider tshiab **Cap Captcha** yog ib yam hloov kev ua si rau multisite networks:
 
@@ -25,7 +25,7 @@ Peb tus provider tshiab **Cap Captcha** yog ib yam hloov kev ua si rau multisite
 * **Invisible Proof-of-Work** — Cov neeg siv daws ib qho computational puzzle nyob tom qab. Tsis tas nias fire hydrants, tsis muaj image grids uas ua rau ntxhov siab.
 * **Lightweight** — Tsuas yog 20KB. Yuav tsis ua kom koj qhov checkout qeeb.
 
-## WooCommerce Kev Tiv Thaiv Card Testing
+## WooCommerce Kev Tiv Thaiv Card Testing {#woocommerce-card-testing-protection}
 
 Card testing attacks ua rau cov tub lag luam poob nyiaj ntau txhiab plhom txhua xyoo. Cov neeg dag siv bots los xyuas stolen credit cards ntawm koj WooCommerce checkout—koj them cov processing fees, lawv tau card numbers uas siv tau.
 
@@ -35,7 +35,7 @@ Card testing attacks ua rau cov tub lag luam poob nyiaj ntau txhiab plhom txhua 
 * **Siv Tau Nrog PayPal Payments** — Ua haujlwm du nrog WooCommerce PayPal Payments
 * **Real-Time Statistics** — Pom meej tias koj tab tom thaiv pes tsawg attacks
 
-## Tseem Xav Tau Google reCAPTCHA lossis hCaptcha?
+## Tseem Xav Tau Google reCAPTCHA lossis hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
 
 Peb npaj txhij pab koj. Txhawb tag nrho rau:
 
@@ -47,14 +47,14 @@ Peb npaj txhij pab koj. Txhawb tag nrho rau:
 
 Hloov providers tau txhua lub sijhawm ntawm koj network settings.
 
-## Tsim Los Rau Kev Loj Hlob
+## Tsim Los Rau Kev Loj Hlob {#built-for-scale}
 
 * Network-wide settings nrog per-site overrides
 * Statistics dashboard los saib xyuas kev tiv thaiv
 * Kho tau security levels (Fast, Medium, Maximum)
 * Haum rau developer nrog provider architecture uas nthuav tau
 
-## Kev Nruab
+## Kev Nruab {#installation}
 
 1. Upload `ultimate-multisite-captcha` rau koj phau ntawv `/wp-content/plugins/`
 2. Network Activate lub plugin
@@ -64,37 +64,37 @@ Cap Captcha qhib tau txais—tsis muaj settings yuav configure, tsis muaj API ke
 
 **Xaiv tau:** Yog xav siv Google reCAPTCHA lossis hCaptcha hloov, mus rau **Ultimate Multisite → Settings → Captcha** thiab xaiv provider uas koj nyiam.
 
-## Cov Lus Nug Nquag
+## Cov Lus Nug Nquag {#frequently-asked-questions}
 
-## Kuv puas yuav tsum configure dab tsi?
+## Kuv puas yuav tsum configure dab tsi? {#do-i-need-to-configure-anything}
 
 Tsis tas! Cap Captcha qhib tau txais thaum koj activate lub addon. Koj tag nrho network raug tiv thaiv tam sim—tsis muaj settings yuav configure, tsis muaj API keys yuav sau.
 
-## Kuv puas xav tau API keys rau Cap Captcha?
+## Kuv puas xav tau API keys rau Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
 
 Tsis xav tau. Cap Captcha yog self-hosted tag nrho. Tsis muaj external accounts, tsis muaj domain registration, tsis muaj configuration headaches.
 
-## Qhov no puas yuav ua rau kuv checkout qeeb?
+## Qhov no puas yuav ua rau kuv checkout qeeb? {#will-this-slow-down-my-checkout}
 
 Cap Captcha tsuas yog 20KB thiab khiav proof-of-work challenges nyob tom qab. Koj cov neeg yuav khoom yuav tsis pom tias qeeb li.
 
-## Qhov no puas tiv thaiv card testing attacks?
+## Qhov no puas tiv thaiv card testing attacks? {#does-this-protect-against-card-testing-attacks}
 
 Yog! Tsis zoo li cov captchas qub uas tsuas tiv thaiv HTML forms xwb, peb qhov WooCommerce integration hooks ncaj qha rau hauv Store API kom thaiv bot attacks ntawm qib API—qhov chaw uas feem ntau card testing attacks tshwm sim.
 
-## Kuv puas siv tau captcha providers sib txawv ntawm sites sib txawv?
+## Kuv puas siv tau captcha providers sib txawv ntawm sites sib txawv? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Tus captcha provider raug teeb network-wide, tab sis koj kho tau difficulty settings raws li koj xav tau.
 
-## Qhov no puas ua raws GDPR?
+## Qhov no puas ua raws GDPR? {#is-this-gdpr-compliant}
 
 Cap Captcha yog 100% self-hosted thiab tsis xa ntaub ntawv mus rau external services. Rau Google reCAPTCHA thiab hCaptcha, thov xyuas lawv cov privacy policies uas cuam tshuam.
 
-## Rate Limiting
+## Rate Limiting {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 qhia ib hard-stop rate limiter uas tiv thaiv koj network ntawm brute-force thiab card-testing attacks.
 
-### Nws Ua Haujlwm Li Cas
+### Nws Ua Haujlwm Li Cas {#how-it-works}
 
 Rate limiter suav txhua qhov GET thiab POST request ntawm cov chaw uas captcha tiv thaiv:
 
@@ -108,9 +108,9 @@ Thaum ib tus qhua tshaj rate limit, lub plugin teb nrog:
 * **Retry-After** header qhia thaum twg rov sim dua
 * **Randomised tarpit sleep** (1–5 vib nas this raws default, hard-capped ntawm 15 vib nas this) kom ua rau attackers qeeb
 
-### Configuration
+### Configuration {#configuration}
 
-#### Tarpit Timing
+#### Tarpit Timing {#tarpit-timing}
 
 Tswj qhov randomised delay uas siv rau rate-limited requests:
 
@@ -119,9 +119,9 @@ Tswj qhov randomised delay uas siv rau rate-limited requests:
 
 Cov settings no muaj nyob hauv **Ultimate Multisite → Settings → Captcha**.
 
-### Kev Nthuav Tau
+### Kev Nthuav Tau {#extensibility}
 
-#### IP Whitelist Filter
+#### IP Whitelist Filter {#ip-whitelist-filter}
 
 Zam cov trusted IP ranges ntawm rate limiting:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Pre-Block Action
+#### Pre-Block Action {#pre-block-action}
 
 Khiav custom logic tam sim ua ntej xa ib rate-limit block:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Client IP Detection & Trusted Proxies
+## Client IP Detection & Trusted Proxies {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 qhia spoof-resistant client-IP detection. Txoj method `Captcha_Core::get_client_ip()` tam sim no yog lub hauv paus tseeb nkaus xwb rau visitor IP attribution thoob plaws:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 qhia spoof-resistant client-IP detection. Txo
 * Tus muab Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Cov IP hash rau kev txheeb cais
 
-### Qauv Kev Ntseeg Siab
+### Qauv Kev Ntseeg Siab {#trust-model}
 
 Qhov txuas ntxiv no yuam siv ib qib kev ntseeg IP uas nruj heev:
 
@@ -166,9 +166,9 @@ Qhov txuas ntxiv no yuam siv ib qib kev ntseeg IP uas nruj heev:
    - Tus peer uas txuas ncaj qha nyob hauv koj daim trusted-proxy list uas admin teeb
    - Lub header raug parse ntawm sab xis mus rau sab laug, hla cov trusted/Cloudflare hops
 
-### Kev Teeb Tsa
+### Kev Teeb Tsa {#configuration-1}
 
-#### Kev Ntseeg Cloudflare Header
+#### Kev Ntseeg Cloudflare Header {#cloudflare-header-trust}
 
 Qhib kev ntseeg rau Cloudflare lub `CF-Connecting-IP` header:
 
@@ -178,7 +178,7 @@ Qhib kev ntseeg rau Cloudflare lub `CF-Connecting-IP` header:
   - CIDR ranges raug refresh txhua lub lim tiam ntawm wp-cron
   - Siv bundled fallback yog tias refresh tsis tiav
 
-#### Kev Teeb Tsa Trusted Proxy
+#### Kev Teeb Tsa Trusted Proxy {#trusted-proxy-configuration}
 
 Txhais koj cov proxy thiab load-balancer nyob pem hauv ntej:
 
@@ -194,14 +194,14 @@ Txhais koj cov proxy thiab load-balancer nyob pem hauv ntej:
     198.51.100.50
     ```
 
-#### Kev Tshawb Pom Nws Tus Kheej Thaum Qhib Thawj Zaug
+#### Kev Tshawb Pom Nws Tus Kheej Thaum Qhib Thawj Zaug {#first-enable-auto-detection}
 
 Thaum koj qhib rate limiter thawj zaug, qhov txuas ntxiv no yuav tshawb pom koj qhov Cloudflare thiab proxy posture uas zoo li yog tiag, thiab qhia ib daim admin notice uas nias ib zaug tau "Siv cov settings uas tshawb pom".
 
 * Qhov txuas ntxiv no **yeej tsis overwrite** koj cov nqi uas twb khaws tseg lawm
 * Yog tias traffic tom qab qhia tias koj qhov config tsis phim qhov muaj tiag lawm (piv txwv, Cloudflare hloov CIDR ranges), ib daim mismatch notice uas tshem tsis tau yuav qhia qhov update uas pom zoo
 
-### Vim Li Cas Qhov No Tseem Ceeb
+### Vim Li Cas Qhov No Tseem Ceeb {#why-this-matters}
 
 Ib qho qauv kev ntseeg IP uas nruj yuav kaw tau ib txoj kev spoofing tseem ceeb: cov request ncaj qha mus rau origin-server uas nqa ib lub `CF-Connecting-IP` header cuav yav dhau los yuav raug muab tso rau bucket raws IP cuav ntawd, tsis yog tus peer tiag. Qhov no tseem ceeb tshwj xeeb rau:
 

@@ -4,20 +4,20 @@ title: Akcia - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Action: wp_ultimo_ptm_page_edit_after_title
+# Action: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
 
 Umožňuje vývojárom pluginov pridať ďalšie tlačidlá na stránky úprav
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
 | $ | `object` | Objekt obsahujúci informácie |
 | $ | `\WU_Page` | Inštancia stránky Multisite Ultimate |
 
-### Od verzie
+### Od verzie {#since}
 
 - 1.8.2
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`views/base/edit.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/edit.php#L48) na riadku 48

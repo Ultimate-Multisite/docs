@@ -3,15 +3,15 @@ title: Manatoko i te Tauaro o te Papatae
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Whakamana i te Kanorau o te Papatae
+# Whakamana i te Kanorau o te Papatae {#validate-palette-contrast}
 
 Ka tirohia e te āheinga **Whakamana i te Kanorau o te Papatae** ngā takirua tae i tō papatae hoahoa mō te tautukunga ki te WCAG (Ngā Aratohu Urutanga Ihirangi Tukutuku) i mua i te hoatutanga ki tō kaupapa.
 
-## Tirohanga Whānui
+## Tirohanga Whānui {#overview}
 
 Ka whakarite tēnei āheinga kia tutuki te kaupapa tae o tō pae i ngā paerewa urutanga mā te whakamana i ngā ōwehenga kanorau i waenga i ngā tae kuputuhi me ngā tae papamuri. Ka āwhina ki te ārai i ngā huinga tae ka uaua pea te pānui mā ngā kaiwhakamahi whai waimaero ā-tirohanga.
 
-## Hōputu Tāuru
+## Hōputu Tāuru {#input-format}
 
 Ka whakaae te āheinga ki tētahi papatae tae hei tāuru:
 
@@ -35,7 +35,7 @@ Ka whakaae te āheinga ki tētahi papatae tae hei tāuru:
 }
 ```
 
-### Ngā Tawhā
+### Ngā Tawhā {#parameters}
 
 | Tawhā | Momo | E hiahiatia ana | Whakaahuatanga |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Ka whakaae te āheinga ki tētahi papatae tae hei tāuru:
 | `wcag_level` | string | Kāo | Taumata tautukunga WCAG: "A", "AA" (taunoa), "AAA" rānei |
 | `pairs_to_check` | array | Kāo | Ngā takirua tae motuhake hei whakamana (hei tauira, `["primary-text", "background-text"]`) |
 
-## Ngā Taumata WCAG ka Tirohia
+## Ngā Taumata WCAG ka Tirohia {#wcag-levels-checked}
 
 Ka whakamana te āheinga i ngā ōwehenga kanorau e ai ki ngā paerewa WCAG:
 
@@ -56,7 +56,7 @@ Ka whakamana te āheinga i ngā ōwehenga kanorau e ai ki ngā paerewa WCAG:
 - **Kuputuhi Pūnoa** — he kuputuhi iti iho i te 18pt (14pt miramira rānei)
 - **Kuputuhi Nui** — he kuputuhi 18pt, nui ake rānei (14pt miramira, nui ake rānei)
 
-## Aronui Huaputa
+## Aronui Huaputa {#output-schema}
 
 Ka whakahoki te āheinga i tētahi pūrongo whakamana taipitopito:
 
@@ -95,7 +95,7 @@ Ka whakahoki te āheinga i tētahi pūrongo whakamana taipitopito:
 }
 ```
 
-### Ngā Āpure Huaputa
+### Ngā Āpure Huaputa {#output-fields}
 
 | Āpure | Momo | Whakaahuatanga |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Ka whakahoki te āheinga i tētahi pūrongo whakamana taipitopito:
 | `status` | string | "pass", "fail" rānei mō ia takirua |
 | `recommendations` | array | Ngā tūtohutanga hei whakapai ake i ngā takirua kāore e tutuki |
 
-## Tauira Whakamahi
+## Tauira Whakamahi {#usage-example}
 
 **Tohuaki:**
 ```
@@ -119,7 +119,7 @@ Ka whakamana te āheinga i ngā huinga tae katoa, ā, ka whakahoki:
 - ✅ Papamuri + Kuputuhi: ōwehenga 12.1:1 (ka tutuki i te WCAG AAA)
 - Katoa: E tautuku ana ki te WCAG AA
 
-## Tuitui ki te Theme Builder
+## Tuitui ki te Theme Builder {#integration-with-theme-builder}
 
 Ina whakamahi i te kōwhiringa ahunga-hoahoa a Theme Builder, ka mahia e te āheinga Whakamana i te Kanorau o te Papatae:
 
@@ -129,7 +129,7 @@ Ina whakamahi i te kōwhiringa ahunga-hoahoa a Theme Builder, ka mahia e te āhe
 4. Ka whakarato tūtohutanga mō ngā takirua kāore e tautuku
 5. Ka ārai i te hoatu i ngā kaupapa tae kāore e taea te uru
 
-## Ngā Tikanga Pai
+## Ngā Tikanga Pai {#best-practices}
 
 - **Tīmata ki te taumata AA** — ko WCAG AA te paerewa mō te nuinga o ngā pae tukutuku
 - **Whakamātauria i mua i te hoatu** — whakamana tō papatae i mua i te ū ki tētahi hoahoa
@@ -137,7 +137,7 @@ Ina whakamahi i te kōwhiringa ahunga-hoahoa a Theme Builder, ka mahia e te āhe
 - **Whakaarohia ngā manakohanga kaiwhakamahi** — tērā pea he tairongo tae tāpiri tō ētahi kaiwhakamahi
 - **Whakamahia ngā kaitirotiro kanorau** — whakakotahitia tēnei āheinga me ngā taputapu pūtirotiro hei whakaū
 
-## Ngā Takirua Ka Rahua me Ngā Tūtohutanga
+## Ngā Takirua Ka Rahua me Ngā Tūtohutanga {#failing-pairs-and-recommendations}
 
 Ki te rahua te whakamana o tētahi takirua tae, ka whakarato tūtohutanga te āheinga:
 
@@ -155,7 +155,7 @@ Ki te rahua te whakamana o tētahi takirua tae, ka whakarato tūtohutanga te āh
 }
 ```
 
-## Ngā Āheinga E Hāngai Ana
+## Ngā Āheinga E Hāngai Ana {#related-abilities}
 
 - [Hanga Logo SVG](./generate-logo-svg.md) — waihangatia ngā moko me tō papatae tae kua whakamanatia
 - [Waihanga Tahua](./create-menu.md) — hanga whakatere me ngā tae e taea ana te uru

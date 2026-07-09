@@ -3,15 +3,15 @@ title: Contrarium tabulae colorum valida
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valida Contrarium Paletae
+# Valida Contrarium Paletae {#validate-palette-contrast}
 
 Facultas **Valida Contrarium Paletae** paria colorum in paleta consilii tui explorat ut cum WCAG (Praeceptis Accessibilitatis Contenti Web) congruant, antequam ea themati tuo applicentur.
 
-## Conspectus
+## Conspectus {#overview}
 
 Haec facultas curat ut schema colorum situs tui normas accessibilitatis impleat, rationes contrarii inter textum et colores fundi validando. Iuvat impedire coniunctiones colorum quae usoribus cum impedimentis visus lectu difficiles esse possint.
 
-## Forma Input
+## Forma Input {#input-format}
 
 Facultas paletam colorum ut input accipit:
 
@@ -35,7 +35,7 @@ Facultas paletam colorum ut input accipit:
 }
 ```
 
-### Parametra
+### Parametra {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Facultas paletam colorum ut input accipit:
 | `wcag_level` | string | Non | Gradus congruentiae WCAG: "A", "AA" (praedefinitus), vel "AAA" |
 | `pairs_to_check` | array | Non | Paria colorum certa ad validandum (exempli gratia, `["primary-text", "background-text"]`) |
 
-## Gradus WCAG Explorati
+## Gradus WCAG Explorati {#wcag-levels-checked}
 
 Facultas rationes contrarii secundum normas WCAG validat:
 
@@ -56,7 +56,7 @@ Facultas rationes contrarii secundum normas WCAG validat:
 - **Textus Normalis** — textus minor quam 18pt (vel 14pt crassus)
 - **Textus Magnus** — textus 18pt aut maior (vel 14pt crassus aut maior)
 
-## Schema Output
+## Schema Output {#output-schema}
 
 Facultas relationem validationis accuratam reddit:
 
@@ -95,7 +95,7 @@ Facultas relationem validationis accuratam reddit:
 }
 ```
 
-### Campi Output
+### Campi Output {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Facultas relationem validationis accuratam reddit:
 | `status` | string | "pass" vel "fail" pro singulis paribus |
 | `recommendations` | array | Suasiones ad paria deficientia emendanda |
 
-## Exemplum Usus
+## Exemplum Usus {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Facultas omnes coniunctiones colorum validat et reddit:
 - ✅ Fundus + Textus: ratio 12.1:1 (WCAG AAA transit)
 - Universim: Cum WCAG AA congruit
 
-## Integratio cum Theme Builder
+## Integratio cum Theme Builder {#integration-with-theme-builder}
 
 Cum selectione directionis consilii in Theme Builder uteris, facultas Valida Contrarium Paletae:
 
@@ -129,7 +129,7 @@ Cum selectione directionis consilii in Theme Builder uteris, facultas Valida Con
 4. Suasiones pro paribus non congruentibus praebet
 5. Impedit ne schemata colorum inaccessibilia applicentur
 
-## Optimae Consuetudines
+## Optimae Consuetudines {#best-practices}
 
 - **Incipe a gradu AA** — WCAG AA est norma plurimorum situum interretialium
 - **Proba ante applicationem** — valida paletam tuam antequam consilio te committas
@@ -137,7 +137,7 @@ Cum selectione directionis consilii in Theme Builder uteris, facultas Valida Con
 - **Considera praeferentias usorum** — nonnulli usores sensibilitatem coloris additam habere possunt
 - **Utere exploratoribus contrarii** — coniunge hanc facultatem cum instrumentis navigatoris ad verificationem
 
-## Paria Deficientia et Suasiones
+## Paria Deficientia et Suasiones {#failing-pairs-and-recommendations}
 
 Si par colorum validatione deficit, facultas suasiones praebet:
 
@@ -155,7 +155,7 @@ Si par colorum validatione deficit, facultas suasiones praebet:
 }
 ```
 
-## Facultates Relatae
+## Facultates Relatae {#related-abilities}
 
 - [Genera Logo SVG](./generate-logo-svg.md) — crea insignia cum paleta colorum tua valida
 - [Crea Menu](./create-menu.md) — construe navigationem cum coloribus accessibilibus

@@ -4,20 +4,20 @@ title: Filter - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Filter: wu_get_migration_steps
+# Filter: wu_get_migration_steps {#filter-wugetmigrationsteps}
 
 Võimaldab arendajatel ja lisadel lisada uusi migratsioonisamme
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
 | $steps | `array` | Sammude loend. |
 | $migrator | `\WP_Ultimo\Installers\Migrator` | Migrator klass. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/installers/class-migrator.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/installers/class-migrator.php#L399) real 399

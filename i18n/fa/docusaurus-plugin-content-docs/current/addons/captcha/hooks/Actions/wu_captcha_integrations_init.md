@@ -4,15 +4,15 @@ title: Action - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# Action: wu_captcha_integrations_init
+# Action: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
 
 این اکشن پس از مقداردهی اولیه شدن تمام افزونه‌های یکپارچه‌سازی (integrations) اجرا می‌شود.
 
 افزونه‌های یکپارچه‌سازی شخص ثالث می‌توانند در اینجا hook کنند تا افزونه‌های خودشان را اضافه کنند.
 
-### از زمان
+### از زمان {#since}
 
 - 1.2.0
-### منبع
+### منبع {#source}
 
 در [`inc/captcha-providers/class-captcha-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/captcha-providers/class-captcha-manager.php#L106) در خط ۱۰۶ تعریف شده است.

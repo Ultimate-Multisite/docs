@@ -3,7 +3,7 @@ title: جوامعت
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community-ye Qanday Qo'shilish Kerak?
+# Ultimate Multisite Community-ye Qanday Qo'shilish Kerak? {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community — bu boshqa Ultimate Multisite foydalanuvchilari bilan bog'lanishingiz va maslahatlar, tajribalar va boshqa narsalarni baham ko'rishingiz mumkin bo'lgan joy. Ultimate Multisite Communityga kirish uchun https://community.ultimatemultisite.com/home manziliga kiring.
 

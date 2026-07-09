@@ -3,13 +3,13 @@ title: Kreye Premye Pwodwi Abònman ou
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kreye ou Premye Deza Abonman An Premye (v2)
+# Kreye ou Premye Deza Abonman An Premye (v2) {#creating-your-first-subscription-product-v2}
 
 _**NOTE KRITIK: Sa tèks sa a sèlman pou moun ki itilize Ultimate Multisite v2.x. Si ou ap itilize v1.x,**_ **_tande tèks sa a**_ .
 
 Pou kòmanse fè rezo w ap mache epi kominse rive bay moun ki ka vin itilizatè ou yo ak sèvis ou yo, ou bezwen gen diferan opsyon abonman. Kijan ou ka kreye pwodwi sa yo? Ki kalite pwodwi ou kapab ofri? Nan tèks sa a, nou pral kouvri tout sa ou bezwen konnen sou pwodwi yo.
 
-## Tip Pwodwi
+## Tip Pwodwi {#product-type}
 
 Avè Ultimate Multisite ou kapab ofri de kategori pwodwi pou kliyan ou: **plans** ak **add-ons (Order Bump)**. Add-ons yo ka divize an de kalite: **packages** ak **services**. Nou pral wè diferans yo ak espesyalite yo apre sa.
 
@@ -19,7 +19,7 @@ Avè Ultimate Multisite ou kapab ofri de kategori pwodwi pou kliyan ou: **plans*
 
   * **Services:** se add-ons ki pa chanje fonksyonalite Ultimate Multisite la. Yo se travay ou pral fè pou kliyan ou anplisip ak plan yo te achte. Pa egzanp, kliyan ou ka achte yon plan ki pèmèt yon sèl sit epi tou peye pou yon sèvis ekstra ki pral fè konsepsyon sit sa a.
 
-## Jere Pwodwi
+## Jere Pwodwi {#managing-products}
 
 Pou anpil moun, tab **Products** nan Ultimate Multisite **(Ultimate Multisite > Products)** ka paré ak plan yo nan yon anviwònman hosting tradisyonèl.
 
@@ -29,7 +29,7 @@ Seksyon sa a pral gide ou nan konprann pi bon fondasyon Ultimate Multisite la.
 
 ![Products list page](/img/config/products-list.png)
 
-## Ajoute Pwodwi
+## Ajoute Pwodwi {#adding-products}
 
 Chwè plan, pake, oswa sèvis ki se pwen kòmanse pou defini yon nou an item la se atravè **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Entèfas la gen de seksyon prensipal. A sou mouye a gen plizyè onglet ki ede ak
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Deskripsyon
+### Deskripsyon {#description}
 
 Enfòmasyon baz pwodpwi a ka defini lè ou bay non pwofi (product name) ak deskripsyon. Idantifikatè sa yo parèt kote enfòmasyon pwodpwi a bezwen, tankou chwazi plan ak pri, faktura, up-grade, e konsa.
 
 ![Product description section](/img/config/product-description.png)
 
-### Tip Pri (Pricing Type)
+### Tip Pri (Pricing Type) {#pricing-type}
 
 Sou bò dwat entèfas la, pri baz la ka defini.
 
@@ -53,7 +53,7 @@ Sou bò dwat entèfas la, pri baz la ka defini.
 
 Ultimate Multisite sipò trè diferan tip pri. Opsyon **paid** a mande administrateur rezo a enfòmasyon sou pri pwodpwi a ak frekans faktouring la.
 
-### Pri (Pricing)
+### Pri (Pricing) {#pricing}
 
 Pwen pri a defini pri baz pwodpwi a ak entèvèl faktouring la.
 
@@ -61,7 +61,7 @@ Pwen pri a defini pri baz pwodpwi a ak entèvèl faktouring la.
 
 donk yon egzanp pri $29.99 ak yon fonksyon 1 mwa, li pral chaje $29.99 chak mwa. Menm jan an, yon pri $89.97 ak yon fonksyon 3 mwa, li pral chaje la menm kantite chak kwat.
 
-### Sikli Fè Chaj (Billing Cycles)
+### Sikli Fè Chaj (Billing Cycles) {#billing-cycles}
 
 Seksyon sikil fè chaj la di frekans interval fè chaj la sa a epi anjeneral konprann nan limyè kontrat yo oswa tèm fiks.
 
@@ -69,7 +69,7 @@ Seksyon sikil fè chaj la di frekans interval fè chaj la sa a epi anjeneral kon
 
 Pou egzanp, yon pri pwodwi $29.99 ak yon interval 1 mwa epi 12 sikil fè chaj, li pral chaje $29.99 chak mwa pou pwodwi a pandan 12 mwa ki vini apre sa. An lòt mo, fonksyon sa a ap mete yon tèm pri fiks de $29.99 pa mwa pou 12 mwa epi li pral sispann fè chaj apre sa.
 
-### Periyò Esè (Trial Period)
+### Periyò Esè (Trial Period) {#trial-period}
 
 Pèmèt fonksyon esè ofrè a pèmèt administrateur rezo defini yon peryò esè pou pwodwi a.
 
@@ -77,7 +77,7 @@ Pèmèt fonksyon esè ofrè a pèmèt administrateur rezo defini yon peryò esè
 
 Pandyan peryò esè a, kliyan yo lib pou itilize pwodwi a epi yo pa pral chaje jiskaske peryò esè a fini.
 
-### Fra Esè (Setup Fee)
+### Fra Esè (Setup Fee) {#setup-fee}
 
 Ou ka aplike yon fra esè pou plan ou tou.
 
@@ -85,7 +85,7 @@ Ou ka aplike yon fra esè pou plan ou tou.
 
 Sa vle di kliyan ou ap peye yon kantite ekstra sou premye chaj la (an okenn plis pase pri plan an) ki koresponn ak fra a ou defini nan seksyon sa a.
 
-### Aktif (Active)
+### Aktif (Active) {#active}
 
 Fonksyon aktif la efektivman defini si pwodwi a disponib pou kliyan yo pou nouvo enskripsyon.
 
@@ -93,13 +93,13 @@ Fonksyon aktif la efektivman defini si pwodwi a disponib pou kliyan yo pou nouvo
 
 Si gen des kliyan ki deja nan plan sa a, mete toggle la nan eta désactive (disabled), sa ap efektivman fè plan an retire li pou nouvo kayman. **Kliyan ki deja sou plan an ap kontinye te bay la** jwen rive transfere yo nan yon nouvo plan oswa retire yo de plan an.
 
-### Imaj Pwodwi a
+### Imaj Pwodwi a {#product-image}
 
 Bouton **Upload Image** pèmèt administrateur rezo a itilize kreyasyon medya (media library) pou chwazi oswa telechaje imaj pwofi a.
 
 ![Product image section](/img/config/product-image.png)
 
-### Delete
+### Delete {#delete}
 
 Bouton **Delete Product** ap retire pwofi a nan sistèm nan. Li parèt apre pwofi a te pibliye.
 
@@ -107,11 +107,11 @@ Bouton **Delete Product** ap retire pwofi a nan sistèm nan. Li parèt apre pwof
 
 Kontrè a ak lòt deseleksyon yo, pwofi a pa mete nan eta "trash" (déchet). Donk menm lè ou retire li, aksyon an pa ka revòte.
 
-### Product Options
+### Product Options {#product-options}
 
 Yon fwa enfòmasyon de baz pwofi a defini, opsyon pwofi yo ede administrateur rezo a define pi byen atribisyon espesifik pwofi a.
 
-#### General
+#### General {#general}
 
 Tab **General** la defini atribisyon jeneral pwofi a ki pa aplikab sou okenn lòt tab espesifik pwofi.
 
@@ -125,7 +125,7 @@ Ultimate Multisite sipòte plizyè kalite pwofi: Plan, Package, ak Service. Tab 
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Montée et Descente (Up & Downgrades)
+#### Montée et Descente (Up & Downgrades) {#up--downgrades}
 
 Sa tab montre les chemins de mise à niveau (upgrade) et de rétrogradation (downgrade) disponibles pour un client dans son niveau spécifique.
 
@@ -143,7 +143,7 @@ Pour définir un groupe de plans, spécifiez les plans compatibles dans la liste
 
 Ultimate Multisite inclut également une fonctionnalité d'**order bump** où des produits et services additionnels appropriés peuvent être ajoutés aux plans. Ceux-ci sont offerts au client comme articles supplémentaires qui peuvent être ajoutés aux plans lors du paiement (checkout) ou pendant une mise à niveau.
 
-#### Variations de Prix
+#### Variations de Prix {#price-variations}
 
 Chanjman de pri (Price variations) kite admin rezo a mete opsyon pri diferan selon tan ke sa a rete. Sa fon kite ou ofri diferan peryòd bay la, tankou chè a mwa, twa mwa, anpil, oswa nenpòt lòt pèyòd bay la pou menm pwodwi a. Pa egzanp, ou ka mete yon pwodwi a $29.99/mwa ak opsyon annilasyon ki pi bon a $249.99/an.
 
@@ -165,7 +165,7 @@ Pa egzanp, si pri pwodwi baz ou se $29.99 pa mwa, ou ka ajoute:
 Chanjman pri sèlman pa ajoute yon switch oswa yon bouton nan checkout frontend la. Pou kite kliyan yo chanje ant peryòd bay la (pa egzanp, Mwa / An), ou bezwen ajoute yon fld **Period Selection** nan fòm checkout ou a. Wè [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) pou enstriksyon etap pa etap.
 :::
 
-#### Taks (Taxes)
+#### Taks (Taxes) {#taxes}
 
 Tab **Taxes** la ap koresponn ak tout konfigirasyon taks ki mete nan **Ultimate Multisite > Settings > Taxes** epi pi espesyalman, tarif taks yo defann. Pou aktive taks yo epi defini tarif taks ki aplike, tanpri gade dokiman an nan **Ultimate Multisite: Settings**.
 
@@ -179,7 +179,7 @@ Yon fwa rate tès la define nan **Ultimate Multisite > Settings > Manage Tax Rat
 
 Pou endike ke yon pwodwi se bagay ki gen tès, mete switch **Is Taxable** an active epi chwazi rate tès ki aplikab nan menm nan dropdown Tax Category la.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Nan esans, site templates yo se sit WordPress konplè ki te klone pou sit kliyan an kòmanse abònman yo.
 
@@ -201,7 +201,7 @@ Finalman, **C** **hoose Available Site Templates** ap swiv (override) tout templ
 
 Nan fen fènwa, si admin rezo a vle chwazi template yo rive nan etap checkout la, konfigirasyon ' _default_ ' ap ase. Alternatif pou retire epi bloke chwazi template yo epi bay chwazi sa a ba plan an se opsyon ' _assign new template_ ' oswa ' _choose available site templates_ ' ka pi bon.
 
-#### Sites
+#### Sites {#sites}
 
 Tab **Sites** se pati nan fonksyonalite limitasyon Ultimate Multisite la.
 
@@ -211,7 +211,7 @@ Konfigirasyon sa a spesifye maksimòm kantite sit ki genyen yon kliyan ka kreye 
 
 Pou kòmanse limitasyon an, mete switch **limit sites** nan eta aktif li epi defini kantite maksimòm sit la nan chanèl **site allowance**.
 
-#### Visits
+#### Visits {#visits}
 
 Tab **Visits** se yon pati anplis nan sistèm limitasyon Ultimate Multisite a. Konfigirasyon sa a pèmèt konti ak apre sa limite vizitè inik pou sit kliyan an.
 
@@ -223,7 +223,7 @@ Pou itilize fonksyon sa a, mete switch **limit unique visits** la sou pozisyon a
 
 Lè limit sa a rive, Ultimate Multisite ap sispann sèvi ak sit kliyan an olye pou li yon mesaj ki endike ke limit yo te depase.
 
-#### Itilizatè (Users)
+#### Itilizatè (Users) {#users}
 
 Limitasyon 'Users' nan Ultimate Multisite pèmèt administrateur rezo a mete limit sou kantite itilizatè ki ka kreye epi bay wòl yo.
 
@@ -233,7 +233,7 @@ Pou kòmanse fonksyon limitasyon an, mete switch **limit user** la sou pozisyon 
 
 Answit pou chak wòl ki pral limite, mete switch ki bò kote l la sou pozisyon aktif epi defini limit anwo maksimòm nan fye ki apwopriye a.
 
-#### Tip Pòst (Post Types)
+#### Tip Pòst (Post Types) {#post-types}
 
 Tab **Post Types** la pèmèt administrateur rezo a mete limit granil sou tout kalite post ki gen anpil nan WordPress.
 
@@ -245,7 +245,7 @@ Pou kòmanse sous-sistèm limitasyon sa a, mete switch **limit post types** la s
 
 Lè, pou chak type de post ki pral limite, ou dwe active li lè w slide li a la droiti epi spesifye limit anwo maksimòm nan fòm ki apwopriye a.
 
-#### Espas Disk (Disk Space)
+#### Espas Disk (Disk Space) {#disk-space}
 
 Tab **Disk Space** la pèmèt administrateur rezo yo limite espas ki konsome pa kliyan yo.
 
@@ -257,13 +257,13 @@ Pou aktive limit itilizasyon disk la, mete switch **limit disk size per site** n
 
 Answit, spesifye limit anwo maksimòm an megabytes nan fòm **disk space allowance**.
 
-#### Domèn Koutim (Custom Domain)
+#### Domèn Koutim (Custom Domain) {#custom-domain}
 
 Pandan ou active opsyon sa a, ou ka pèmèt domèn koutim sou plan sa a espesyalman.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Tem (Themes)
+#### Tem (Themes) {#themes}
 
 Tab **Themes** nan opsyon pwodwi a pèmèt administrateur rezo a fè tem yo disponib pou kliyan yo chwazi epi opte yon fwa fòse eta tem la.
 
@@ -281,7 +281,7 @@ Chwazi **behavior** la pèmèt administrateur rezo a defini eta tem la lè sit k
 
 Nan estati **Available**, tem la disponib an koutim nan pou kliyan anseman li tèt li. Ankontravè, estati **Not Available** retire kapasite kliyan an pou aktive tem la. Finalman, opsyon **Force Activate** force seleksyon ak aktivasyon tem la, sa ki mete l kòm defòt lè sit la kreye.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Menm jan ak tab Themes, Ultimate Multisite pèmèt administrateur rezo a defini vizibilite plugins yo pou kliyan yo ansanm ak estati yo lè yon nouvo sit ap kreye.
 
@@ -301,7 +301,7 @@ La configuration **Force Activate & Lock** fonks la menm jan ak li bloke sa esta
 
 Administratè rezo a ka vle konsidere konfigirasyon Force Activate & Lock ak Force Inactivate & Lock ansanm ak site templates kòm plugins, e estati plugin nan templates yo ka afekte pa sa konfigirasyon yo si yo chwazi yo.
 
-#### Limit Resete
+#### Limit Resete {#reset-limitations}
 
 Tab **Reset Limitations** ap resete tout limit kreyatif ki defini sou pwodwi a. Pou resete limit yo, klike sou bouton **reset limitations**.
 
@@ -311,7 +311,7 @@ Pou konfime aksyon an, glise toggle **confirm reset** a nan estati aktif la sou 
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Edite, Duplike, oswa Delete Pwòdwi
+## Edite, Duplike, oswa Delete Pwòdwi {#edit-duplicate-or-delete-product}
 
 Pwòp pwodwi ki egziste ka edite, duplike oswa delete lè ou navige nan **Ultimate Multisite > Products** epi swiv (hover) sou non pwofò ki egziste a.
 

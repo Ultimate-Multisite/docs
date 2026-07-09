@@ -3,7 +3,7 @@ title: Zapier aracılığıyla bir Account kaydedin
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Etkinlik: Zapier aracılığıyla bir Account kaydetme
+# Etkinlik: Zapier aracılığıyla bir Account kaydetme {#event-register-an-account-via-zapier}
 
 [Ultimate Multisite’i Zapier ile entegre etme](zapier.md) makalesinde, tetikleyiciler ve etkinliklere göre Ultimate Multisite içinde farklı eylemleri gerçekleştirmek için Zapier’in nasıl kullanılacağını ele aldık. Bu makalede, 3. taraf uygulamaları nasıl entegre edebileceğinizi göstereceğiz. Veri kaynağı olarak Google Sheets kullanacağız ve bir Account kaydetmek için bilgileri Ultimate Multisite’e göndereceğiz.
 

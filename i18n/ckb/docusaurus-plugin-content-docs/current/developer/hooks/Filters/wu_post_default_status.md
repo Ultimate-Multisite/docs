@@ -4,11 +4,11 @@ title: فلتەر - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# پاڵێوەر: wu_post_default_status
+# پاڵێوەر: wu_post_default_status {#filter-wupostdefaultstatus}
 
 داتای ئۆبجێکت پێش ئەوەی لە بنکەدراوەدا هەڵبگیرێت، پاڵێو دەکات.
 
-## پارامیتەرەکان
+## پارامیتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 | $post_type | `string` | جۆری پۆست. |
 | $this | `\Base_Model` | نموونەی ئۆبجێکت. |
 
-### لە وەشانی
+### لە وەشانی {#since}
 
 - 2.0.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) لە دێڕی 320

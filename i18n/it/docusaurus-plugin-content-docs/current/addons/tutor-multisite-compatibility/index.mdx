@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Un plugin WordPress che aggiunge correzioni di compatibilità per Tutor LMS negli ambienti multisito.
 
-## Description
+## Description {#description}
 
 Questo plugin fornisce correzioni di compatibilità essenziali per eseguire Tutor LMS su reti WordPress multisito. Gestisce l'iscrizione degli utenti, la gestione degli istruttori, le limitazioni dei corsi e altre funzionalità specifiche del multisito.
 
-## Features
+## Features {#features}
 
 - **Database Table Management**: Rileva automaticamente e crea tabelle Tutor LMS mancanti che falliscono a causa delle restrizioni di chiave esterna multisito
 - **Multisite User Enrollment**: Gestori AJAX personalizzati per la gestione dell'iscrizione degli utenti tra i siti della rete
@@ -24,7 +24,7 @@ Questo plugin fornisce correzioni di compatibilità essenziali per eseguire Tuto
 - **Custom Admin Views**: Vista amministrativa personalizzata per la lista e la gestione degli istruttori consapevole del multisito
 - **Admin Tools**: Strumenti amministrativi: interfaccia di gestione del database per amministratori di rete e sito
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Questo plugin fornisce correzioni di compatibilità essenziali per eseguire Tuto
 - Installazione WordPress Multisite
 - Ultimate Multisite plugin (per la funzionalità di limitazione dei corsi)
 
-## Installation
+## Installation {#installation}
 
 1. Carica i file del plugin in `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Assicurati che Tutor LMS sia installato e attivato
 3. Attiva il plugin tramite il menu 'Plugins' in WordPress
 4. Il plugin si integrerà automaticamente con Tutor LMS
 
-## File Structure
+## File Structure {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Functionality Moved from MU Plugin
+## Functionality Moved from MU Plugin {#functionality-moved-from-mu-plugin}
 
 This plugin contains functionality that was previously in `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ This plugin contains functionality that was previously in `wp-content/mu-plugins
 - Gestione dell'iscrizione utente multisito
 - Visualizzazione ID prodotto del corso
 
-## Database Management
+## Database Management {#database-management}
 
-### Il problema
+### Il problema {#the-problem}
 
 In ambienti WordPress multisito, la creazione delle tabelle di Tutor LMS fallisce per le tabelle con vincoli di chiave esterna verso la tabella degli utenti. Questo accade perché:
 
@@ -81,7 +81,7 @@ In ambienti WordPress multisito, la creazione delle tabelle di Tutor LMS fallisc
 - Le chiavi esterne fanno riferimento a `wp_2_users` (che non esiste)
 - La tabella effettiva degli utenti è `wp_users` (condivisa in tutta la rete)
 
-### La soluzione
+### La soluzione {#the-solution}
 
 Questo plugin rileva automaticamente:
 
@@ -92,13 +92,13 @@ Questo plugin rileva automaticamente:
    - Creazione di un nuovo sito nella rete
    - Verifica manuale delle tabelle tramite l'interfaccia amministrativa
 
-### Tabelle interessate
+### Tabelle interessate {#affected-tables}
 
 - `tutor_coupon_usages` - Contiene chiave esterna verso la tabella utenti
 - `tutor_carts` - Contiene chiave esterna verso la tabella utenti
 - `tutor_notification_preferences` - Tabella TutorPro con chiave esterna verso la tabella utenti
 
-### Interfaccia amministrativa
+### Interfaccia amministrativa {#admin-interface}
 
 Accedi agli strumenti di gestione del database in:
 
@@ -111,6 +111,6 @@ L'interfaccia ti consente di:
 - Verificare la configurazione del database
 - Visualizzare informazioni di stato dettagliate
 
-## Support
+## Support {#support}
 
 Questo plugin è progettato specificamente per la piattaforma KursoPro. Per supporto tecnico, contatta il team di sviluppo.

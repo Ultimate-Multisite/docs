@@ -3,7 +3,7 @@ title: Come annullare un abbonamento
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Come posso annullare il mio abbonamento?
+# Come posso annullare il mio abbonamento? {#how-can-i-cancel-my-subscription}
 
 Se hai una licenza Ultimate Multisite, puoi annullarne il rinnovo in qualsiasi momento. Segui semplicemente i passaggi qui sotto:
 

@@ -3,11 +3,11 @@ title: Riferimento delle impostazioni
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Riferimento impostazioni
+# Riferimento impostazioni {#settings-reference}
 
 Questa pagina tiene traccia delle impostazioni che influenzano l’amministrazione quotidiana e le recenti modifiche di comportamento in Ultimate Multisite.
 
-## Altre opzioni
+## Altre opzioni {#other-options}
 
 L’area **Altre opzioni** appare sotto **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ L’area **Altre opzioni** appare sotto **Ultimate Multisite > Settings > Login 
 |---|---|
 | **Enable Jumper** | Mostra lo strumento di navigazione rapida Jumper nell’area di amministrazione. Usalo per passare direttamente alle schermate di Ultimate Multisite, agli oggetti di rete e alle destinazioni di amministrazione supportate. Disabilitalo se non vuoi che questa scorciatoia sia visibile. |
 
-## Segnalazione degli errori e telemetria
+## Segnalazione degli errori e telemetria {#error-reporting-and-telemetry}
 
 La precedente impostazione di consenso esplicito alla segnalazione degli errori è stata rimossa dalla pagina delle impostazioni. La telemetria anonima è disabilitata e non esiste alcun interruttore UI per abilitarla.
 
 Se mantieni runbook interni o screenshot per la pagina delle impostazioni, rimuovi i riferimenti al vecchio campo di consenso esplicito alla segnalazione degli errori, così gli amministratori non cercheranno un’impostazione che non è più presente.
 
-## Impostazioni Import/Export
+## Impostazioni Import/Export {#importexport-settings}
 
 La scheda delle impostazioni **Import/Export** descrive quali impostazioni controlla e collega direttamente a **Ultimate Multisite > Site Export** per gli archivi di sito e di rete. Usa la scheda delle impostazioni per la configurazione di import/export, usa **Tools > Export & Import** per il flusso di lavoro di esportazione/importazione del singolo sito e usa lo strumento Site Export quando hai bisogno di un archivio Network Export completo.
 
-## Avviso sul saldo Domain Seller HostAfrica
+## Avviso sul saldo Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Quando l’addon Domain Seller è connesso a HostAfrica, gli amministratori di rete ora vedono un avviso di saldo basso ignorabile quando il saldo dell’account rivenditore è troppo basso per un’elaborazione affidabile della registrazione o del rinnovo dei domini.
 
 Tratta questo avviso come un avviso operativo: ricarica il saldo rivenditore HostAfrica prima di accettare altre registrazioni di domini a pagamento, poi torna alle impostazioni di Domain Seller o alla schermata di monitoraggio dei domini per confermare che registrazioni e rinnovi possano continuare normalmente.
 
-## Impostazioni del connettore del provider AI
+## Impostazioni del connettore del provider AI {#ai-provider-connector-settings}
 
 Le impostazioni del connettore del provider AI ora espongono solo i pool di Account OAuth supportati:
 

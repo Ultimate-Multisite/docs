@@ -3,13 +3,13 @@ title: Konfigurimi i pagesave manuale
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Konfigurimi i pagesave manuale (v2)
+# Konfigurimi i pagesave manuale (v2) {#setting-up-manual-payments-v2}
 
 _**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 
 Pagesat manuale janë një mënyrë që ju të ofroni metoda të tjera pagese nëse **Stripe** ose **PayPal** nuk janë të disponueshme për përdoruesit tuaj. Mund të jetë një transfertë bankare ose çdo metodë tjetër pagese e disponueshme lokalisht për përdoruesit tuaj.
 
-## Si të aktivizoni pagesat manuale
+## Si të aktivizoni pagesat manuale {#how-to-enable-manual-payments}
 
 Konfigurimi i pagesës manuale është shumë i lehtë. Thjesht duhet ta aktivizoni te portat e pagesave dhe të vendosni udhëzime të detajuara se si përdoruesi duhet ta dërgojë pagesën.
 
@@ -31,7 +31,7 @@ Dhe ata gjithashtu do të marrin një mesazh në faqen tuaj **Faleminderit** me 
 
 <!-- Pamja e ekranit nuk është e disponueshme: Faqja Faleminderit që tregon udhëzimet e pagesës pas checkout -->
 
-## Konfirmimi i pagesave manuale
+## Konfirmimi i pagesave manuale {#confirming-manual-payments}
 
 Për të konfirmuar një pagesë manuale, shkoni te menuja **Pagesat** në shiritin e majtë. Aty mund të shihni të gjitha pagesat në rrjetin tuaj dhe detajet e tyre, duke përfshirë **statusin** e tyre. Një pagesë manuale do të ketë gjithmonë statusin **Në pritje** derisa ta ndryshoni manualisht.
 

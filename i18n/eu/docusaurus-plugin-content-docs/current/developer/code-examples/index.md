@@ -3,11 +3,11 @@ title: Kode-adibide aurreratuak
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Kode-adibide aurreratuak
+# Kode-adibide aurreratuak {#advanced-code-examples}
 
 Adibide hauek Ultimate Multisite-rekin integrazio-eredu aurreratuak erakusten dituzte.
 
-## Prezioen motor dinamikoa
+## Prezioen motor dinamikoa {#dynamic-pricing-engine}
 
 Arauetan oinarritutako prezioen motorra, bolumen-, leialtasun- eta sasoiko deskontuak aplikatzen dituena:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Guneen hornikuntza aurreratua
+## Guneen hornikuntza aurreratua {#advanced-site-provisioning}
 
 Konfiguratu automatikoki gune berriak pluginak, SSL, CDN, segurtasun-kopiak eta monitorizazioa erabiliz, planaren ezaugarrien arabera:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Muga pertsonalizatuen sistema
+## Muga pertsonalizatuen sistema {#custom-limitations-system}
 
 Baliabide-mugak jarraitu eta betearazi erabilera-ohartarazpenekin:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB kontagailu atomikoa `increment_item()` erabiliz
+## BerlinDB kontagailu atomikoa `increment_item()` erabiliz {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 bertsioak `increment_item()` metodoa gehitu zuen BerlinDB `Query` klasean. Erabili zutabe numerikoetan gehikuntza seguru eta atomikoak egiteko, read-modify-write lasterketa-baldintzarik gabe — erabilgarria kontagailuetarako, erabilera-kuotetarako eta aldi bereko eskaeren pean exekutatzen diren tasa-mugaketa egiaztapenetarako.
 
-### Metodoaren sinadura
+### Metodoaren sinadura {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 bertsioak `increment_item()` metodoa gehitu zuen Berli
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Oinarrizko erabilera
+### Oinarrizko erabilera {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API erabilera kidetza bakoitzeko jarraitzea
+### API erabilera kidetza bakoitzeko jarraitzea {#tracking-api-usage-per-membership}
 
 Kidetza bakoitzeko API tasa-mugak ezartzeko eredu praktiko bat:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Zergatik `increment_item()` eta ez `update_item()`
+### Zergatik `increment_item()` eta ez `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Read-modify-write ikuspegi inozoa ez da segurua aldi bereko eskaeren pean:
 

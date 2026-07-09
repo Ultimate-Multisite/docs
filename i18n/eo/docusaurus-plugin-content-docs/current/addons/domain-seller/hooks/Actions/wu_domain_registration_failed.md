@@ -4,11 +4,11 @@ title: Ago - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Ago: wu_domain_registration_failed
+# Ago: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Ekfunkcias post kiam provo registri domajnon malsukcesas.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Ekfunkcias post kiam provo registri domajnon malsukcesas.
 | $registration_data | `array&lt;string,mixed&gt;` | Registraj metadatenoj inkluzive de status=failed kaj error_message. |
 | $error_message | `string` | Homlegebla erarmesaĝo de la registristo. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) ĉe linio 1250

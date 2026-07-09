@@ -3,17 +3,17 @@ title: 'Zaj Kawm 9: Kev Teev Nqi Kom Tau Nyiaj Paj'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Zaj Kawm 9: Kev Teev Nqi Kom Tau Nyiaj Tshaj
+# Zaj Kawm 9: Kev Teev Nqi Kom Tau Nyiaj Tshaj {#lesson-9-pricing-for-profit}
 
 Hauv Zaj Kawm 5 peb tau teev cov nqi pib rau FitSite cov plan. Tam sim no peb yuav kho kom zoo dua txoj kev teev nqi nrog cov tswv yim uas pab nce nyiaj tau los, txhawb kom cov neeg siv upgrade, thiab txo churn.
 
-## Qhov Chaw Peb Tso Tseg
+## Qhov Chaw Peb Tso Tseg {#where-we-left-off}
 
 FitSite twb muaj cov plan, cov template, kev them nyiaj, branding, thiab onboarding npaj lawm. Tus nqi pib yog $49/$99/$199 ib hlis. Tam sim no peb yuav ua kom cov nqi ntawd ua haujlwm muaj zog dua.
 
-## Cov Ntsiab Cai Teev Nqi rau Cov Platform Niche
+## Cov Ntsiab Cai Teev Nqi rau Cov Platform Niche {#pricing-principles-for-niche-platforms}
 
-### Teev Nqi Raws Tus Nqi Muaj Nqis, Tsis Yog Tus Nqi Siv
+### Teev Nqi Raws Tus Nqi Muaj Nqis, Tsis Yog Tus Nqi Siv {#price-on-value-not-cost}
 
 Koj tus nqi hosting tej zaum yuav yog $5-$15 rau ib lub site ntawm ib tus customer. Qhov ntawd tsis txhais tias koj tus nqi yuav tsum yog $20. Koj tsis yog muag hosting. Koj tab tom muag:
 
@@ -24,7 +24,7 @@ Koj tus nqi hosting tej zaum yuav yog $5-$15 rau ib lub site ntawm ib tus custom
 
 Teev nqi raws tus nqi muaj nqis uas koj muab tau, tsis yog raws tus nqi uas siv los muab nws.
 
-### Muab Piv rau Lwm Txoj Kev Xaiv
+### Muab Piv rau Lwm Txoj Kev Xaiv {#anchor-to-alternatives}
 
 Thaum tus tswv fitness studio ntsuas FitSite, lawv muab piv rau:
 
@@ -34,7 +34,7 @@ Thaum tus tswv fitness studio ntsuas FitSite, lawv muab piv rau:
 
 Ntawm $49-$199/hlis, FitSite pheej yig dua ntiav developer, muaj peev xwm ntau dua cov builder dav dav, thiab zoo dua tsis muaj website kawg nkaus.
 
-## Siv Cov Kev Hloov Nqi
+## Siv Cov Kev Hloov Nqi {#implementing-price-variations}
 
 Kev teev nqi txhua xyoo txhawb kom muaj kev cog lus thiab txo churn. Mus rau txhua plan daim tab **Kev Hloov Tus Nqi** thiab ntxiv cov kev xaiv txhua xyoo:
 
@@ -46,12 +46,12 @@ Kev teev nqi txhua xyoo txhawb kom muaj kev cog lus thiab txo churn. Mus rau txh
 
 Ntxiv ib daim field **Xaiv Sijhawm Them** rau koj daim foos them nyiaj kom customers hloov tau ntawm kev them ib hlis thiab kev them txhua xyoo. Saib [Cov Foos Them Nyiaj](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Vim Li Cas Kev Teev Nqi Txhua Xyoo Ua Haujlwm Zoo
+### Vim Li Cas Kev Teev Nqi Txhua Xyoo Ua Haujlwm Zoo {#why-annual-pricing-works}
 
 - **Rau koj**: Tau nyiaj ua ntej, churn qis dua (customers uas them txhua xyoo feem ntau yuav tsis tshua cancel nruab nrab sijhawm)
 - **Rau lawv**: Txuag tau nyiaj tiag, thiab npaj budget tau yooj yim
 
-## Nqi Setup
+## Nqi Setup {#setup-fees}
 
 Xav txog ib qho nqi setup them ib zaug rau cov plan uas muaj kev teeb tsa pab ua tes-on:
 
@@ -61,7 +61,7 @@ Xav txog ib qho nqi setup them ib zaug rau cov plan uas muaj kev teeb tsa pab ua
 
 Teeb tsa cov nqi setup hauv txhua plan seem pricing. Saib [Tsim Koj Thawj Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) rau cov ntsiab lus.
 
-## Sijhawm Trial
+## Sijhawm Trial {#trial-periods}
 
 Muab trial pab txo kev nyuaj thaum signup tab sis muaj kev pheej hmoo tias lawv yuav tsis convert. Rau FitSite:
 
@@ -70,11 +70,11 @@ Muab trial pab txo kev nyuaj thaum signup tab sis muaj kev pheej hmoo tias lawv 
 
 Teeb tsa trial hauv Starter plan seem pricing los ntawm kev qhib toggle **Muab Trial** thiab teeb lub sijhawm kom yog 7 hnub.
 
-### Ua Kom Trial Convert
+### Ua Kom Trial Convert {#making-trials-convert}
 
 Ib qho trial tsuas ua haujlwm yog tias customer pom tus nqi muaj nqis thaum lub sijhawm trial. Koj txoj kev onboarding sequence (Zaj Kawm 8) tseem ceeb heev ntawm no -- cov email txais tos yuav tsum teem sijhawm kom txhawb engagement hauv lub qhov rais 7-hnub ntawd.
 
-## Discount Codes
+## Discount Codes {#discount-codes}
 
 Tsim cov discount code muaj tswv yim rau cov hom phiaj tshwj xeeb:
 
@@ -88,7 +88,7 @@ Mus rau **Ultimate Multisite > Discount Codes** kom tsim cov no. Saib [Tsim Disc
 Discount yuav tsum yog cov cuab yeej siv raws tswv yim, tsis yog yam nyob ruaj khov tas li. Yog txhua tus tau discount, ces nws tsis yog discount lawm -- nws yog koj tus nqi tiag. Siv lawv rau campaign tshwj xeeb, referrals, thiab promotions uas muaj sijhawm txwv.
 :::
 
-## Kev Tuav Tax
+## Kev Tuav Tax {#tax-handling}
 
 Yog koj ua haujlwm hauv ib thaj chaw uas yuav tsum sau tax:
 
@@ -98,7 +98,7 @@ Yog koj ua haujlwm hauv ib thaj chaw uas yuav tsum sau tax:
 
 Saib [Kev Tuav Tax](/user-guide/payment-gateways/tax-handling) rau kev teeb tsa ntxaws. Yog koj pab customers thoob ntiaj teb, xav txog [VAT addon](/addons/vat) rau EU compliance.
 
-## Tshuaj Xyuas Koj Tus Nqi
+## Tshuaj Xyuas Koj Tus Nqi {#reviewing-your-pricing}
 
 Tom qab launch, rov saib pricing txhua peb lub hlis. Saib rau:
 
@@ -107,7 +107,7 @@ Tom qab launch, rov saib pricing txhua peb lub hlis. Saib rau:
 - **Churn raws plan**: Yog annual customers churn tsawg dua, thawb annual pricing kom muaj zog dua
 - **Competitor pricing**: Lwm txoj kev xaiv them nqi li cas? Koj puas nyob hauv txoj hauj lwm raug?
 
-## FitSite Network Txog Tam Sim No
+## FitSite Network Txog Tam Sim No {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Yam Peb Tau Tsim Hauv Zaj Kawm No
+## Yam Peb Tau Tsim Hauv Zaj Kawm No {#what-we-built-this-lesson}
 
 - **Nqi them txhua xyoo** nrog 20% luv nqi los txhawb kom cog lus siv ntev
 - **Nqi teeb tsa** rau cov theem siab dua kom them taus kev pab pib siv

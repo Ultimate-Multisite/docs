@@ -3,7 +3,7 @@ title: Laman Cyflenwr
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pagina Cyflenau'r Client (v2)
+# Pagina Cyflenau'r Client (v2) {#your-clients-account-page-v2}
 
 _**NOTIADOLIA CRYTIDOL: Mae'r ail ddefnyddiol hwn yn cyfeiriad i Ultimate Multisite fersi 2.x.**_
 
@@ -11,7 +11,7 @@ Pan mae cyd-deunyddwyr yn cyfrifolio plan ar eich rheiniad, mae ganddynt y cyfat
 
 Yn y tutorial hwn, byddwn yn rhoi'r llwybr i chi trwy'r cyfathrebu'r cyflenau o'r cyd-deunyddwr ac byddwch yn gweld beth gall eu cyd-deunyddwyr gweld a wneud ynddynt.
 
-## Y Cyflenau Account (The Account Page)
+## Y Cyflenau Account (The Account Page) {#the-account-page}
 
 Mae'r cyflenau account yn cael ei cyffredin gan clisi ar **Account** yn y dyfyniad o'r cyd-deunyddwr.
 
@@ -27,7 +27,7 @@ Ar ôl i'r cyd-deunyddwr clisi arno, bydd eu gweld amgylchedd o'u cyflenau, adra
 
 Gall eu newid y cyflenau i plan arall, neu athrodd package neu weithrediad arall sy'n cael eich cynnig. Gadewch ydym yn gweld pob sefyllfa yn unig.
 
-### Overwain Your Cyflen:
+### Overwain Your Cyflen: {#your-membership-overview}
 
 Yn bloc cyntaf o'r chwarae arallan ystafell eich cwsmeriaid yn dangos amgylchedd o'r plan a gwasanaethau/pachau a roedd wedi cael eu prynu gyda hi. Mae'r bloc hefyd yn dangos nifer y cyflenwedig, y aml i'r cyntaf a ddihonwyd ar gyfer ei chwarae, sut mae'r plan a unrhyw gwasanaeth/pachau yn costio ac sut amser wedi cael eu ddihonnu ar gyfer y cyflenwedig hwn. Gallai hefyd gweld os yw'r cyflenwedig **Actif**, **Mae wedi cael ei ddefnyddio** neu **Mae wedi cael ei ddefnyddio**.
 
@@ -43,7 +43,7 @@ Mae hi'n ddefnyddiol hefyd iddo gwneud pobachau neu gwasanaethau ar gyfer y cyfl
 
 Rydych chi'n gwrthnos bod codau coupon yn cael eu cytuno ar y peiriant hwnnw. Os roedd y cwsmeriaid wedi defnyddio cod coupon ar gyfer y pryd cyntaf, bydd y cod hefyd yn cael ei ddefnyddio ar y cyflenwedig newydd hwnnw.
 
-### Cyfathoghio'r Rhestr o Dihonnu:
+### Cyfathoghio'r Rhestr o Dihonnu: {#updating-the-billing-address}
 
 Ar gyfer y cyfrannau, gall eich cyddee'r cyddeithwyr ei rheoli ar gyferol y cyfeiriad gweidiol eu billing hefyd. Mae angen nhw i chwarae ar **Update** yn y cyflwyniad o _Billing Address_.
 
@@ -53,7 +53,7 @@ Bydd gwndyn newydd yn dangos i'ch cyddeithwyr. Mae angen nhw i ddatblygu'r cyfei
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Newid y Model Cyfathrebu:
+### Newid y Model Cyfathrebu: {#changing-the-site-template}
 
 I gael eich cyddeithwyr ei allu newid eu modelau cyfathrebu, rhaid i chi fynd i **Ultimate Multisite > Settings > Sites** a chwarae ar y opsiwn **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Ar ôl gwneud y cyflwyno ar gyfer a clisi ar **Process Switch**, bydd y adeilad 
 
 Gall tebygwyr hefyd defnyddio **Reset current template** o'r panel hwn pan iddyntai nhw angen i ddatblygu'r siat yn ôl adeilad siatau a cael ei gyflwyno ar gyfer. Fel ychwanegu i newid adeilad siatau, gallu'r reset adeilad siatau gwneud amlwg ystod y cynnwys ar wefan; felly, bydd tebygwyr yn cael eu cyflwyno hi pan fyddant nhw yn deall y gweithrediad o'r reset.
 
-### Ychwanegu Ddrefion Custom (Custom Domains):
+### Ychwanegu Ddrefion Custom (Custom Domains): {#adding-custom-domains}
 
 Bydd ei chynllunio tebygwyr hefyd fod yn cael eu opsiwn i drosu ddrefion custom ar gyfer y plan hwn ar wahaniaeth eu cyfrifau. I gael eich tebygwyr defnyddio ddrefion custom, mynd i **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Ar ôl clisiad ar **Next Step**, gall eich cyddeeion ychwanegu eu enw domenaidd 
 
 Ar ôl clisiad ar **Add Domain**, bydd y domenaid yn cael ei drosu i'r peidiad eich cyddeeion. Mae pob hyn sydd wedi'i gynnwys i'w wneud nawr yw newid y cyfrannau DNS o'r domenaid custom hon ar eu rheol domenaidd (domain registrar).
 
-### Newid Cyfeiriad:
+### Newid Cyfeiriad: {#changing-password}
 
 Yn y dashboard peidiad, gall eich cyddeeion hefyd newid eu cyfeiriad gan clisiad ar **Change Password**.
 
@@ -125,7 +125,7 @@ Bydd hyn yn dangos gwydweliad newydd lle bydd ei ddefnyddwyr angen i fydd â'u c
 
 ![Form newid cyfrifol gyda ffeiliau cyfrifol a cyfrifol newydd](/img/account-page/change-password-form.png)
 
-### Zon Perysig:
+### Zon Perysig: {#danger-zone}
 
 Mae gennyfynion hefyd ddau opsiyn sy'n dangos ar gyfer y **Zon Perysig**: **Talyb Site** a **Talyb Cyfrifol**. Mae'r ddau hyn yn y zon perysig oherwydd mae'r gweithgareddau hyn yn anghyffredol. Os oes eich ddefnyddwyr yn talybu eu gwefan neu eu cyfrifol, nid oes gan nhw ddefnyddio eu allan.
 

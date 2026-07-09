@@ -4,11 +4,11 @@ title: Sía - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item
+# Filter: wu_rest_update_item {#filter-wurestupdateitem}
 
 Síar hvort leyfilegt sé að halda áfram með beiðnina eða ekki.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Heiti | Tegund | Lýsing |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Síar hvort leyfilegt sé að halda áfram með beiðnina eða ekki.
 | $rest_base | `array` | Slug einingar. |
 | $this | `\Base_Manager` | Tilvik hlutarins. |
 
-### Síðan
+### Síðan {#since}
 
 - 2.0.0
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) í línu 414

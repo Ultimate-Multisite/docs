@@ -4,11 +4,11 @@ title: Фильтр - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Фильтр: wu_apc_process_page_content
+# Фильтр: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Иштеп чыгуучуларга акыркы мазмунду өзгөртүүгө мүмкүндүк берет
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Толтуруучу белгилерди камтыган массив. |
 | $placeholder_count | `int` | Табылган толтуруучу белгилердин саны. |
 
-### Бери
+### Бери {#since}
 
 - 1.4.0
-### Булак
+### Булак {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) ичинде, 46-сапта аныкталган
 
 
-## Кайтарымдар
+## Кайтарымдар {#returns}
 Өзгөртүүдөн кийинки мазмун.

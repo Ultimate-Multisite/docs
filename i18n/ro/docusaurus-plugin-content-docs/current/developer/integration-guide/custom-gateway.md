@@ -3,11 +3,11 @@ title: Dezvoltarea unui gateway personalizat
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Dezvoltarea unui gateway personalizat
+# Dezvoltarea unui gateway personalizat {#custom-gateway-development}
 
 Poți crea gateway-uri de plată personalizate extinzând clasa `Base_Gateway`.
 
-## Clasa gateway-ului
+## Clasa gateway-ului {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Înregistrează gateway-ul
+## Înregistrează gateway-ul {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Metode cheie
+## Metode cheie {#key-methods}
 
 | Metodă | Scop |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Gestionează cererile de rambursare |
 | `get_payment_methods()` | Returnează metodele de plată salvate pentru un client |
 
-## Credențiale de reînnoire pentru abonamente recurente
+## Credențiale de reînnoire pentru abonamente recurente {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 permite integrărilor de gateway să raporteze dacă un abonament recurent are o credențială de reînnoire reutilizabilă înainte ca `auto_renew` să fie persistat. Atașează-te la `wu_membership_has_renewal_credential` și returnează:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Șterge marcatorul de credențială lipsă ca parte a fluxului de reautorizare reușit al gateway-ului tău, după ce este stocată o nouă credențială reutilizabilă.
 
-## Sfaturi
+## Sfaturi {#tips}
 
 - Returnează întotdeauna `WP_Error` la eșec, astfel încât Ultimate Multisite să poată gestiona afișarea erorilor
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Folosește `wu_log_add()` pentru jurnalizare specifică gateway-ului
 
-## Capacități ale furnizorilor pentru conectorul AI
+## Capacități ale furnizorilor pentru conectorul AI {#ai-connector-provider-capabilities}
 
 Integrările personalizate care apelează operațiuni bazate pe conectorul AI ar trebui să se alinieze cu setul de furnizori OAuth acceptați, introdus cu AI Provider for Anthropic Max v1.3.0:
 

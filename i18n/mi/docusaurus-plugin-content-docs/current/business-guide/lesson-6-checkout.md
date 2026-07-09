@@ -3,15 +3,15 @@ title: 'Akoranga 6: Te Wheako Rēhitatanga'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Akoranga 6: Te Wheako Rēhita
+# Akoranga 6: Te Wheako Rēhita {#lesson-6-the-signup-experience}
 
 Ko te rere utu te wāhi ka huri te hiahia hei moni whiwhi. Ka ngaro ngā kiritaki i tētahi tukanga rēhita rangirua, whānui rānei. Ka huri mai ngā kiritaki i tētahi rere e hāngai ana ki te wāhanga mākete, e kōrero ana i tō rātou reo, ā, e māmā ana te whakamahi.
 
-## Te Wāhi i Mutu ai Tātou
+## Te Wāhi i Mutu ai Tātou {#where-we-left-off}
 
 Kua whirihoratia ngā tātauira me ngā mahere o FitSite. Ināianei ka hanga tātou i te wheako rēhitatanga me te utu e huri ai ngā rangatira studio whakapakari tinana hei kiritaki utu.
 
-## Te Mārama ki te Rere Rēhitatanga
+## Te Mārama ki te Rere Rēhitatanga {#understanding-the-registration-flow}
 
 He puka utu taumata-maha, ka taea te whakarite katoa, ngā puka utu a Ultimate Multisite. Mō FitSite, e hiahia ana tātou ki tētahi rere e:
 
@@ -21,11 +21,11 @@ He puka utu taumata-maha, ka taea te whakarite katoa, ngā puka utu a Ultimate M
 
 Tirohia [Te Rere Rēhitatanga](/user-guide/configuration/the-registration-flow) mō te tohutoro hangarau katoa.
 
-## Te Hoahoa i te Utu FitSite
+## Te Hoahoa i te Utu FitSite {#designing-the-fitsite-checkout}
 
 Whakatere ki **Ultimate Multisite > Puka Utu** ka waihanga i tētahi puka hou.
 
-### Hipanga 1: Tīpakonga Mahere
+### Hipanga 1: Tīpakonga Mahere {#step-1-plan-selection}
 
 Ko te mea tuatahi me kite e tētahi rangatira studio whakapakari tinana ko ngā mahere, kua whakaaturia ki ngā kupu e mārama ana rātou.
 
@@ -37,7 +37,7 @@ Ko te mea tuatahi me kite e tētahi rangatira studio whakapakari tinana ko ngā 
 Kāore he tikanga o te "1 GB storage" ki tētahi rangatira whare whakapakari tinana. He nui te tikanga o te "Ngā mea katoa e hiahiatia ana mō tētahi paetukutuku studio ngaio." Tuhia ngā whakaahuatanga mahere ki te reo o tō kiritaki.
 :::
 
-### Hipanga 2: Tīpakonga Tātauira
+### Hipanga 2: Tīpakonga Tātauira {#step-2-template-selection}
 
 Whai muri i te kōwhiri i tētahi mahere, ka kōwhiri te kiritaki i tana tātauira tīmatanga.
 
@@ -45,7 +45,7 @@ Whai muri i te kōwhiri i tētahi mahere, ka kōwhiri te kiritaki i tana tātaui
 - Ka tātarihia ngā tātauira e wātea ana e ai ki te mahere i tīpakohia e rātou (i whirihoratia i te Akoranga 5)
 - Me whai ia tātauira i tētahi atahanga arokite e whakaatu ana i tētahi hoahoa motuhake ki te whakapakari tinana
 
-### Hipanga 3: Waihanga Account
+### Hipanga 3: Waihanga Account {#step-3-account-creation}
 
 Kia iti noa tēnei. Kohikohia anake:
 
@@ -55,27 +55,27 @@ Kia iti noa tēnei. Kohikohia anake:
 
 Kaua e tono mō ngā mōhiohio kāore e hiahiatia ana i te wā rēhita. Ka whakaheke ia āpure tāpiri i ngā hurihanga kiritaki.
 
-### Hipanga 4: Tatūnga Pae
+### Hipanga 4: Tatūnga Pae {#step-4-site-setup}
 
 - **Taitara pae**: Whakakī-aunoa mai i te ingoa studio i tāurutia i te Hipanga 3
 - **URL pae**: Hanga-aunoatia mai i te ingoa studio (hei tauira, `ironworks.fitsite.com`)
 
-### Hipanga 5: Utu
+### Hipanga 5: Utu {#step-5-payment}
 
 - Tāpirihia te āpure **Utu**
 - Whirihorahia tō kuwaha utu (e taunakitia ana a [Stripe](/user-guide/payment-gateways/stripe) mō te nama ohaurunga)
 - Mēnā i waihanga koe i ngā whakakikinga ota i te Akoranga 5, tāpirihia tētahi āpure **Whakakikinga Ota** i mua i te hipanga utu
 
-### Hipanga 6: Whakaūnga
+### Hipanga 6: Whakaūnga {#step-6-confirmation}
 
 - Whakaritea te karere whakaū ki te reo e hāngai ana ki te whakapakari tinana
 - Hei tauira: "Kei te waihangatia tō paetukutuku studio whakapakari tinana. Ka tukuna aunoa koe ki tō pae hou ākuanei."
 
-## Te Tāpirihia o tētahi Pana Tīpakonga Wā
+## Te Tāpirihia o tētahi Pana Tīpakonga Wā {#adding-a-period-selection-toggle}
 
 Mēnā i whakaritea e koe ngā rerekētanga utu ki ō mahere (ia marama ki te ā-tau), tāpirihia tētahi āpure **Tīpakonga Wā** ki te puka utu kia taea ai e ngā kiritaki te whakawhiti i waenga i ngā wā nama. Tirohia [Ngā Puka Utu](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) mō ngā tohutohu.
 
-## Te Whirihora Utu
+## Te Whirihora Utu {#configuring-payment}
 
 Mēnā kāore anō koe kia whakarite i tētahi kuwaha utu:
 
@@ -85,7 +85,7 @@ Mēnā kāore anō koe kia whakarite i tētahi kuwaha utu:
 
 Tirohia [Te Whiwhi Utu](/user-guide/payment-gateways/getting-paid) mō ngā taipitopito mō te āhua o te rere o ngā utu ki tō Account.
 
-## Te Whakamātau i te Rere
+## Te Whakamātau i te Rere {#testing-the-flow}
 
 I mua i te neke whakamua, whakaotihia tētahi rēhitatanga whakamātautau katoa:
 
@@ -105,7 +105,7 @@ Tirohia mēnā:
 - [ ] Ka tau te kiritaki ki tētahi pae e mahi ana me te tātauira i tīpakohia
 - [ ] Ka whakamahi ngā īmēra whakaū i te reo e hāngai ana ki te whakapakari tinana
 
-## Te Whatunga FitSite Tae Noa ki Tēnei Wā
+## Te Whatunga FitSite Tae Noa ki Tēnei Wā {#the-fitsite-network-so-far}
 
 ```
 Whatunga FitSite
@@ -123,7 +123,7 @@ Whatunga FitSite
 └── Kua rite mō te waitohu (akoranga e whai ake nei)
 ```
 
-## Ngā Mea i Hanga e Tātou i Tēnei Akoranga
+## Ngā Mea i Hanga e Tātou i Tēnei Akoranga {#what-we-built-this-lesson}
 
 - **Tētahi puka utu taumata-maha** kua whakaritea mō ngā rangatira studio whakapakari tinana
 - **Te reo e hāngai ana ki te wāhanga mākete** puta noa i te rere rēhita

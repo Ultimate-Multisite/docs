@@ -3,11 +3,11 @@ title: Įskiepių valdymo galimybės
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Įskiepių valdymo gebėjimai
+# Įskiepių valdymo gebėjimai {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 pateikiamas su **7 įskiepių valdymo gebėjimais**, kuriuos AI asistentas gali iškviesti pokalbio metu. Šie gebėjimai suteikia programinį WordPress įskiepių, įdiegtų per [Įskiepių kūrimo ir Sandbox sistemą](../../user-guide/administration/plugin-builder-and-sandbox), valdymą.
 
-## Gebėjimų apžvalga
+## Gebėjimų apžvalga {#abilities-overview}
 
 | Gebėjimas | Slug | Aprašymas |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 pateikiamas su **7 įskiepių valdymo gebėjimais**, kuri
 | Įdiegti įskiepį | `install_plugin` | Įdiegia sandbox įskiepį į aktyvų WordPress įskiepių katalogą. |
 | Aktyvuoti įskiepį | `activate_plugin` | Aktyvuoja sandbox įskiepį wp-env sandbox aplinkoje. |
 
-## Įskiepių diegiklio API
+## Įskiepių diegiklio API {#plugin-installer-api}
 
 Įskiepių diegiklis tvarko failų sistemos operacijas diegiant arba šalinant įskiepius. Pagrindinės elgsenos:
 
@@ -28,7 +28,7 @@ Gratis AI Agent v1.5.0 pateikiamas su **7 įskiepių valdymo gebėjimais**, kuri
 - **Atnaujinimas**: Pakeičia esamus įskiepio failus. Prieš rašant deaktyvuoja įskiepį, kad būtų išvengta dalinės būsenos klaidų.
 - **Ištrynimas pagal slug**: Suranda įskiepio katalogą pagal slug, deaktyvuoja visose svetainėse, tada pašalina katalogą.
 
-### Pasirinktinės diegimo tvarkyklės registravimas
+### Pasirinktinės diegimo tvarkyklės registravimas {#registering-a-custom-install-handler}
 
 Į diegimo gyvavimo ciklą galite įsijungti naudodami `gratis_ai_plugin_installer_before_install` ir `gratis_ai_plugin_installer_after_install` veiksmus:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ekosistemos registras
+## Ekosistemos registras {#ecosystem-registry}
 
 Gebėjimai registruojami per **įskiepių ekosistemos registrą**. Registras susieja gebėjimų slug su jų tvarkyklių klasėmis ir pateikia juos AI agento įrankių dispečeriui.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner integracija
+## HookScanner integracija {#hookscanner-integration}
 
 `create_plugin` ir `update_plugin` gebėjimai automatiškai paleidžia **HookScanner** naujai sugeneruotam kodui. HookScanner grąžina WordPress veiksmų ir filtrų hook sąrašą, kurį užregistravo įskiepis.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner automatiškai praleidžia `vendor/` ir `node_modules/` katalogus.
 
-## Asinchroninių užduočių architektūra
+## Asinchroninių užduočių architektūra {#async-job-architecture}
 
 Ilgai trunkančios įskiepių operacijos (generavimas, diegimas) paleidžiamos kaip **asinchroninės užduotys** su tiesioginiu progreso stebėjimu. AI pokalbių sąsaja periodiškai tikrina progresą ir transliuoja būsenos atnaujinimus naudotojui:
 

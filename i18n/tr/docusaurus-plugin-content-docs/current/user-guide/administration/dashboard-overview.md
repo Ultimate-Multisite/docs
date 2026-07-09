@@ -3,11 +3,11 @@ title: Gösterge Paneli Genel Bakış
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Kontrol Paneli Genel Bakış
+# Kontrol Paneli Genel Bakış {#dashboard-overview}
 
 Ultimate Multisite, kendi menüsü altında özel bir **Kontrol Paneli** sunar ve ayrıca Ağ Kontrol Paneli'ne widget'lar ekler. Bu makalede her iki yerde de neler göreceğinizi ele alıyoruz.
 
-## Ağ Kontrol Paneli
+## Ağ Kontrol Paneli {#the-network-dashboard}
 
 Ultimate Multisite, **Sitelerim → Ağ Yöneticisi → Kontrol Paneli** bölümündeki ağ düzeyindeki kontrol paneline kullanışlı widget'lar ekler.
 
@@ -35,7 +35,7 @@ Her bir widget'ın sağladıkları:
 
 ![Haberler widget'ı](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Kontrol Paneli
+## Ultimate Multisite Kontrol Paneli {#the-ultimate-multisite-dashboard}
 
 Ağ kontrol paneli, ağ hakkında bütünsel bilgiler sunarken, Ultimate Multisite kontrol paneli (Ultimate Multisite menüsünün en üst seviyesinde) hizmet hakkında bilgiler sunar.
 

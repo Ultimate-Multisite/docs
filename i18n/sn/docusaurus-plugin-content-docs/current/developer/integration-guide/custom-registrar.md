@@ -3,13 +3,13 @@ title: Kuvaka Kubatanidzwa kweRegistrar Kwetsika
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kuvaka Kubatanidzwa kweCustom Registrar
+# Kuvaka Kubatanidzwa kweCustom Registrar {#building-a-custom-registrar-integration}
 
 Addon yeDomain Seller inoshandisa maitiro e **Integration Registry**. Registrar imwe neimwe iPHP class inoshandisa `Domain_Selling_Capability` uye inozvinyoresa kuburikidza ne `wu_domain_seller_register_capabilities` action hook.
 
 Gwaro iri rinoratidza nzira yekubatanidza custom registrar.
 
-## Interface
+## Interface {#the-interface}
 
 Class yako inofanira kushandisa `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` uye kuwedzera `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Nzira dzokusarudza
+### Nzira dzokusarudza {#optional-methods}
 
 Shandisa idzi kuti uvhure zvimwe zvinhu. Addon inoona rutsigiro kuburikidza ne `method_exists()`:
 
@@ -81,7 +81,7 @@ Shandisa idzi kuti uvhure zvimwe zvinhu. Addon inoona rutsigiro kuburikidza ne `
 | `get_epp_code(string $domain_name): array` | Kutamiswa kwedomain (kubuda) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Kutamiswa kwedomain (kupinda) |
 
-### Tsika yekudzosa kukosha
+### Tsika yekudzosa kukosha {#return-value-convention}
 
 Nzira dzese dzinodzosa array ine kanenge kiyi ye `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Kunyoresa capability yako
+## Kunyoresa capability yako {#registering-your-capability}
 
 Nyoresa class yako uchishandisa `wu_domain_seller_register_capabilities` action:
 
@@ -109,7 +109,7 @@ Argument yekutanga ku `add_capability()` ndiyo **provider ID** — slug yemavara
 
 ---
 
-## Kuwedzera minda yezvitupa kuwizard
+## Kuwedzera minda yezvitupa kuwizard {#adding-credential-fields-to-the-wizard}
 
 Kuti ubvumire maadmins kuisa zvitupa kuburikidza ne setup wizard, nyoresa integration yako:
 
@@ -137,7 +137,7 @@ Zvitupa zvinochengetwa se network options uchishandisa field IDs semakiyi. Zvito
 
 ---
 
-## Hooks dzezviito zvepashure pekunyoresa
+## Hooks dzezviito zvepashure pekunyoresa {#hooks-for-post-registration-actions}
 
 Shandisa zviito izvi kutanga webhooks, provisioning, notifications, kana CRM updates:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Kunyora malogi
+## Kunyora malogi {#logging}
 
 Nyora kuchiteshi chelogi chakanangana nemupi wako uchishandisa `wu_log_add()`:
 

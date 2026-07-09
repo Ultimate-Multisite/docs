@@ -3,13 +3,13 @@ title: Ukusetha i-Sunrise Constant ku-Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Ukusetha i-Sunrise constant ibe yi-true ku-Closte
+# Ukusetha i-Sunrise constant ibe yi-true ku-Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Abanye abahlinzeki bokusingatha bakhiya i-wp-config.php ngezizathu zokuphepha. Lokhu kusho ukuthi Ultimate Multisite ayikwazi ukuhlela ngokuzenzakalelayo ifayela ukuze ifake ama-constants adingekayo ukuze domain mapping nezinye izici zisebenze. I-Closte ingomunye wabasingathi abanjalo.
 
 Nokho, i-Closte inikeza indlela yokwengeza ama-constants ku-wp-config.php ngendlela evikelekile. Udinga nje ukulandela izinyathelo ezingezansi:
 
-## Ku-Closte dashboard
+## Ku-Closte dashboard {#on-the-closte-dashboard}
 
 Okokuqala, [ngena ku-akhawunti yakho ye-Closte](https://app.closte.com/), chofoza entweni yemenyu ethi Sites, bese uchofoza kusixhumanisi se-Dashboard kusayithi osebenza kulo njengamanje:
 

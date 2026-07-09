@@ -3,28 +3,28 @@ title: REST API pārskats
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API atsauce
+# REST API atsauce {#rest-api-reference}
 
-## Pamata konfigurācija
+## Pamata konfigurācija {#base-configuration}
 
 **Pamata URL:** `{site_url}/wp-json/wu/v2/`
 **Autentifikācija:** API atslēga un noslēpums (HTTP Basic Auth vai URL parametri)
 
-## Autentifikācija
+## Autentifikācija {#authentication}
 
-### Iespējot API
+### Iespējot API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Iegūt API akreditācijas datus
+### Iegūt API akreditācijas datus {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentifikācijas metodes
+### Autentifikācijas metodes {#authentication-methods}
 
 **HTTP Basic Auth (ieteicams):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Galvenie galapunkti
+## Galvenie galapunkti {#core-endpoints}
 
-### 1. Klientu API
+### 1. Klientu API {#1-customers-api}
 
 **Pamata maršruts:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Vietņu API
+### 2. Vietņu API {#2-sites-api}
 
 **Pamata maršruts:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Dalību API
+### 3. Dalību API {#3-memberships-api}
 
 **Pamata maršruts:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produktu API
+### 4. Produktu API {#4-products-api}
 
 **Pamata maršruts:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Maksājumu API
+### 5. Maksājumu API {#5-payments-api}
 
 **Pamata maršruts:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domēnu API
+### 6. Domēnu API {#6-domains-api}
 
 **Pamata maršruts:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Reģistrācijas galapunkts
+## Reģistrācijas galapunkts {#registration-endpoint}
 
 Galapunkts `/register` nodrošina pilnu checkout/reģistrācijas plūsmu:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Suverēno tenantu galapunkti
+## Suverēno tenantu galapunkti {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 pievieno suverēno tenantu REST pārklājumu integrācijām, kas izveido, pārbauda vai verificē izolētus tenantus.
 
@@ -242,7 +242,7 @@ Tipiskas migrācijas statusa atbildes ietver:
 
 Uztveriet `ready: false` kā pirms palaišanas bloķētāju. Pārbaudiet verifikācijas informāciju, izlabojiet datubāzes resursdatora piesaisti, rindu, lietotāju nodrošināšanu vai maršrutēšanas problēmu, pēc tam atkārtojiet verifikāciju.
 
-## Kļūdu atbildes
+## Kļūdu atbildes {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Uztveriet `ready: false` kā pirms palaišanas bloķētāju. Pārbaudiet verifik
 }
 ```
 
-## Lapošana un filtrēšana
+## Lapošana un filtrēšana {#pagination-and-filtering}
 
 **Vaicājuma parametri:**
 ```http

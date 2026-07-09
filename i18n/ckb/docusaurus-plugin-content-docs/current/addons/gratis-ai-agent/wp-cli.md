@@ -3,11 +3,11 @@ title: سەرچاوەی WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# سەرچاوەی WP-CLI
+# سەرچاوەی WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent خێزانی فرمانی `wp gratis-ai-agent` دەنێرێت بۆ پێوانەکردنی ئەجێنتەکە، بەڕێوەبردنی تواناکان، و پرسیارکردن لە دۆخی ئەجێنت لە هێڵی فرمانەوە. هەموو فرمانەکان پێویستیان بە WP-CLI 2.0 یان بەرزتر هەیە.
 
-## دامەزراندن
+## دامەزراندن {#installation}
 
 فرمانەکانی WP-CLI بە شێوەیەکی خۆکار تۆمار دەکرێن کاتێک plugin چالاکە. پشتڕاستی بکەوە بە:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 کۆمەڵەی پێوانەکردنی تواناکانی ئەجێنت جێبەجێ دەکات — کۆمەڵێک داواکاری ئاڵۆز و فرە-هەنگاو کە تەواوی ڕووکاری تواناکان تاقی دەکەنەوە. ئەمە بەکاربهێنە بۆ هەڵسەنگاندنی کارایی مۆدێل، بەراوردکردنی دابینکەرانی AI، یان پشتڕاستکردنەوەی پاکێجەکانی تواناکان پێش بڵاوکردنەوە بۆ بەرهەمهێنان.
 
-### پوختە
+### پوختە {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### هەڵبژاردەکان
+### هەڵبژاردەکان {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | فۆرماتی دەرچوون: `table` (بنەڕەتی)، `json`، `csv` |
 | `--save` | ئەنجامەکانی پێوانەکردن لە بنکەدراوەدا پاشەکەوت بکە بۆ بەراوردی مێژوویی |
 
-### نموونەکان
+### نموونەکان {#examples}
 
 کۆمەڵەی پێوانەکردنی تەواو بە دابینکەر و مۆدێلی ئێستا جێبەجێ بکە:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### دەرچوون
+### دەرچوون {#output}
 
 پێوانەکردن بۆ هەر پرسیارێک یەک ڕیز دەرئەخات بە ستوونەکانی خوارەوە:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### پرسیارەکانی پێوانەکردن
+### پرسیارەکانی پێوانەکردن {#benchmark-questions}
 
 کۆمەڵەی بنەڕەتی ئەمانە لەخۆدەگرێت:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 تواناکان و پاکێجەکانی توانای دامەزراو بەڕێوە دەبات.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 هەموو تواناکانی تۆمارکراو، سەرچاوەکەیان (ناوەکی یان پاکێج)، و دۆخی ئێستایان پێشان دەدات.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 پاکێجی تواناکان لە تۆمارگەکە دادەگرێت و چالاکی دەکات.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 توانایەکی دیاریکراو ناچالاک دەکات بەبێ سڕینەوەی پاکێجەکە. بۆ سنووردارکردنی مەودای ئەجێنت لەسەر ماڵپەڕێکی دیاریکراو بەسوودە.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 توانایەکی پێشتر ناچالاککراو دووبارە چالاک دەکات.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 ڕێکخستنی ئێستای ئەجێنت و دۆخی پەیوەندیدان پێشان دەدات.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 چالاکییە نوێکانی ئەجێنت لە تۆماری هەڵەدۆزینەوە پێشان دەدات.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 دۆخی بریکارەکە دادەڕێژێتەوە: CSS ـی تێخراو پاک دەکاتەوە، CPT و پۆلێنە تۆمارکراوەکانی بریکارەکە لادەبات، ستایلە گشتییەکان دادەڕێژێتەوە، و کاشی هەڵبژاردنەکانی بریکارەکە بەتاڵ دەکاتەوە. پێوەکراوەکە یان ڕێکخستنەکانی لادەبات.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## کۆدەکانی دەرچوون
+## کۆدەکانی دەرچوون {#exit-codes}
 
 هەموو فرمانەکان لە کاتی سەرکەوتندا بە `0` دەر دەچن. کۆدەکانی دەرچوونی ناصفر:
 

@@ -3,11 +3,11 @@ title: Phát triển cổng tùy chỉnh
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Phát triển Gateway tùy chỉnh
+# Phát triển Gateway tùy chỉnh {#custom-gateway-development}
 
 Bạn có thể tạo các gateway thanh toán tùy chỉnh bằng cách mở rộng class `Base_Gateway`.
 
-## Class Gateway
+## Class Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Đăng ký Gateway
+## Đăng ký Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Các phương thức chính
+## Các phương thức chính {#key-methods}
 
 | Phương thức | Mục đích |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Xử lý các yêu cầu hoàn tiền |
 | `get_payment_methods()` | Trả về các phương thức thanh toán đã lưu cho một khách hàng |
 
-## Thông tin xác thực gia hạn cho các gói thành viên định kỳ
+## Thông tin xác thực gia hạn cho các gói thành viên định kỳ {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 cho phép các tích hợp gateway báo cáo liệu một gói thành viên định kỳ có thông tin xác thực gia hạn có thể tái sử dụng hay không trước khi `auto_renew` được lưu. Hook `wu_membership_has_renewal_credential` và trả về:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Xóa dấu hiệu thiếu thông tin xác thực như một phần trong luồng ủy quyền lại thành công của gateway của bạn sau khi một thông tin xác thực có thể tái sử dụng mới được lưu.
 
-## Mẹo
+## Mẹo {#tips}
 
 - Luôn trả về `WP_Error` khi thất bại để Ultimate Multisite có thể xử lý hiển thị lỗi
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Sử dụng `wu_log_add()` để ghi log dành riêng cho gateway
 
-## Khả năng của nhà cung cấp trình kết nối AI
+## Khả năng của nhà cung cấp trình kết nối AI {#ai-connector-provider-capabilities}
 
 Các tích hợp tùy chỉnh gọi các thao tác dựa trên trình kết nối AI nên phù hợp với tập hợp nhà cung cấp OAuth được hỗ trợ đã giới thiệu với AI Provider for Anthropic Max v1.3.0:
 

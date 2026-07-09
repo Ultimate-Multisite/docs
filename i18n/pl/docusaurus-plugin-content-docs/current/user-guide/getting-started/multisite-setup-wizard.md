@@ -3,7 +3,7 @@ title: Kreator konfiguracji Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Kreator konfiguracji Multisite
+# Kreator konfiguracji Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite zawiera wbudowany kreator, który automatycznie przekształca standardową instalację WordPress w sieć WordPress Multisite. Dzięki temu nie trzeba ręcznie edytować pliku `wp-config.php` ani uruchamiać poleceń bazodanowych.
 
@@ -11,13 +11,13 @@ Ultimate Multisite zawiera wbudowany kreator, który automatycznie przekształca
 Jeśli Twoja instalacja WordPress już działa jako sieć Multisite, możesz pominąć ten krok. Kreator pojawia się tylko wtedy, gdy funkcja Multisite nie jest jeszcze włączona.
 :::
 
-## Kiedy pojawia się kreator?
+## Kiedy pojawia się kreator? {#when-does-the-wizard-appear}
 
 Gdy aktywujesz Ultimate Multisite na standardowej instalacji WordPress (bez Multisite), wtyczka wykrywa, że Multisite nie jest włączony i automatycznie przekierowuje Cię do Kreatora konfiguracji Multisite zamiast do zwykłego kreatora ustawień.
 
 Możesz też przejść do niego bezpośrednio: **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Wymagania wstępne
+## Wymagania wstępne {#prerequisites}
 
 Przed uruchomieniem kreatora upewnij się, że:
 
@@ -29,7 +29,7 @@ Przed uruchomieniem kreatora upewnij się, że:
 Kreator modyfikuje plik `wp-config.php` i tworzy nowe tabele w bazie danych. Zawsze wykonaj kopię zapasową przed kontynuowaniem.
 :::
 
-## Krok 1: Powitanie
+## Krok 1: Powitanie {#step-1-welcome}
 
 Pierwszy ekran wyjaśnia, czym jest WordPress Multisite i co zrobi kreator:
 
@@ -42,11 +42,11 @@ Pierwszy ekran wyjaśnia, czym jest WordPress Multisite i co zrobi kreator:
 
 Kliknij **Continue**, aby przejść dalej.
 
-## Krok 2: Konfiguracja sieci
+## Krok 2: Konfiguracja sieci {#step-2-network-configuration}
 
 W tym kroku konfigurujesz ustawienia swojej sieci.
 
-### Struktura stron
+### Struktura stron {#site-structure}
 
 Wybierz sposób organizacji stron w Twojej sieci:
 
@@ -57,11 +57,11 @@ Wybierz sposób organizacji stron w Twojej sieci:
 Jeśli wybierzesz subdomeny, musisz skonfigurować **wildcard DNS** oraz **certyfikat SSL z obsługą wildcard** dla swojej domeny. Większość zarządzanych hostingów WordPress obsługuje to automatycznie. Zobacz [Ultimate Multisite 101](./ultimate-multisite-101), aby poznać szczegółowe porównanie.
 :::
 
-### Nazwa sieci
+### Nazwa sieci {#network-title}
 
 Wpisz nazwę swojej sieci. Domyślnie jest to tytuł Twojej obecnej strony z dopiskiem „Network". Możesz to zmienić później w ustawieniach sieci.
 
-### E-mail administratora sieci
+### E-mail administratora sieci {#network-admin-email}
 
 Adres e-mail używany do powiadomień związanych z administracją sieci. Domyślnie jest to adres e-mail aktualnie zalogowanego użytkownika.
 
@@ -69,7 +69,7 @@ Adres e-mail używany do powiadomień związanych z administracją sieci. Domyś
 
 Po wypełnieniu pól kliknij **Continue**, aby przejść dalej.
 
-## Krok 3: Instalacja
+## Krok 3: Instalacja {#step-3-installation}
 
 Kliknij przycisk **Install**, aby rozpocząć. Kreator wykonuje pięć zautomatyzowanych kroków w określonej kolejności, pokazując postęp każdego z nich w czasie rzeczywistym:
 
@@ -96,7 +96,7 @@ Po pomyślnym zakończeniu wszystkich kroków zobaczysz zielony status „Succes
 
 Kreator automatycznie przejdzie do ekranu zakończenia.
 
-## Krok 4: Zakończenie
+## Krok 4: Zakończenie {#step-4-complete}
 
 Po zakończeniu instalacji zobaczysz komunikat o sukcesie potwierdzający, że WordPress Multisite został włączony.
 
@@ -108,7 +108,7 @@ Możesz teraz kontynuować z kreatorem ustawień Ultimate Multisite, aby skonfig
 Po zakończeniu instalacji multisite Twoja przeglądarka przekieruje Cię przez nowo włączony panel administracyjny sieci. Może być konieczne ponowne zalogowanie, ponieważ ciasteczka uwierzytelniające są aktualizowane dla środowiska multisite.
 :::
 
-## Ręczna konfiguracja jako alternatywa
+## Ręczna konfiguracja jako alternatywa {#manual-setup-fallback}
 
 Jeśli kreator nie może zapisać do pliku `wp-config.php` (z powodu uprawnień do plików lub ograniczeń serwera), wyświetli dokładny kod, który musisz dodać ręcznie:
 
@@ -117,9 +117,9 @@ Jeśli kreator nie może zapisać do pliku `wp-config.php` (z powodu uprawnień 
 
 Po wprowadzeniu ręcznych zmian odśwież stronę, a kreator wykryje, że multisite jest już aktywny.
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
-### Kreator informuje, że wp-config.php nie jest zapisywalny
+### Kreator informuje, że wp-config.php nie jest zapisywalny {#the-wizard-says-wp-configphp-is-not-writable}
 
 Proces serwera WWW potrzebuje uprawnień do zapisu w pliku `wp-config.php`. Możesz:
 
@@ -127,7 +127,7 @@ Proces serwera WWW potrzebuje uprawnień do zapisu w pliku `wp-config.php`. Moż
 - Skorzystać z instrukcji ręcznej konfiguracji wyświetlonych przez kreator
 - Poprosić dostawcę hostingu o pomoc
 
-### Strony nie są dostępne po konfiguracji (subdomeny)
+### Strony nie są dostępne po konfiguracji (subdomeny) {#sites-are-not-accessible-after-setup-subdomains}
 
 Jeśli wybrałeś strukturę subdomen, musisz skonfigurować **wildcard DNS** dla swojej domeny. Dodaj rekord DNS:
 
@@ -139,7 +139,7 @@ Value: [adres IP Twojego serwera]
 
 Skontaktuj się z dostawcą hostingu, jeśli nie wiesz, jak to skonfigurować.
 
-### Problemy z uwierzytelnianiem po konfiguracji
+### Problemy z uwierzytelnianiem po konfiguracji {#authentication-issues-after-setup}
 
 Jeśli zostałeś wylogowany lub występują błędy ciasteczek po konfiguracji multisite:
 
@@ -147,7 +147,7 @@ Jeśli zostałeś wylogowany lub występują błędy ciasteczek po konfiguracji 
 2. Zaloguj się ponownie pod adresem `twojadomena.com/wp-login.php`
 3. Jeśli problem nie ustępuje, sprawdź, czy w pliku `wp-config.php` stała `COOKIE_DOMAIN` nie jest ustawiona na `false` — to znany problem w instalacjach multisite z subdomenami
 
-### Jeden z kroków zakończył się błędem podczas instalacji
+### Jeden z kroków zakończył się błędem podczas instalacji {#a-step-failed-during-installation}
 
 Jeśli jeden z kroków instalacji wyświetla błąd:
 

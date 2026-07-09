@@ -4,27 +4,27 @@ title: ફિલ્ટર - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Filter: wu_checkout_form_base_domains
+# Filter: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
 
 શેર કરેલા checkout-form આધાર ડોમેઇનને ફિલ્ટર કરે છે, જે mapped-domain records બનવા ન જોઈએ.
 
 જ્યારે કોઈ integration checkout form **Site URL** fields માટે વધારાના આધાર ડોમેઇન પ્રદાન કરે ત્યારે આ filter વાપરો. આ filter દ્વારા પરત કરાયેલા ડોમેઇનને per-site custom domains બદલે શેર કરેલા registration hosts તરીકે ગણવામાં આવે છે.
 
-## પેરામીટર્સ
+## પેરામીટર્સ {#parameters}
 
 | નામ | પ્રકાર | વર્ણન |
 |------|------|-------------|
 | $domains | `array` | checkout form configurationમાંથી એકત્ર કરાયેલા શેર કરેલા આધાર ડોમેઇન. |
 
-### Since
+### Since {#since}
 
 - 2.13.0
 
-### Source
+### Source {#source}
 
 `inc/functions/domain.php` માં વ્યાખ્યાયિત.
 
 
-## પરત આપે છે
+## પરત આપે છે {#returns}
 
 normalized checkout-form આધાર ડોમેઇનનો array.

@@ -3,11 +3,11 @@ title: Į teikėją atsižvelgiantis raginimų talpinimas podėlyje
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Teikėją atpažįstantis promptų podėlio naudojimas
+# Teikėją atpažįstantis promptų podėlio naudojimas {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 pristato **teikėją atpažįstantį promptų podėlio naudojimą**, kuris optimizuoja API sąnaudas ir delsą talpindamas promptus podėlyje skirtinguose LLM teikėjuose. Kiekvienas teikėjas turi skirtingus podėlio mechanizmus ir konfigūracijas.
 
-## Apžvalga
+## Apžvalga {#overview}
 
 Promptų podėlio naudojimas leidžia:
 
@@ -23,11 +23,11 @@ Skirtingi teikėjai podėlio naudojimą įgyvendina skirtingai:
 - **OpenRouter**: teikėjui specifinis podėlio naudojimas
 - **Vertex Anthropic**: promptų podėlio naudojimas su podėlio valdymu
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini suteikia aiškų podėlio valdymą per `cachedContents` API.
 
-### Konfigūracija
+### Konfigūracija {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Podėlyje talpinamo prompto kūrimas
+### Podėlyje talpinamo prompto kūrimas {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Podėlyje talpinamo prompto naudojimas
+### Podėlyje talpinamo prompto naudojimas {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Podėlio gyvavimo ciklas
+### Podėlio gyvavimo ciklas {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Geriausios praktikos Gemini
+### Geriausios praktikos Gemini {#best-practices-for-gemini}
 
 - **Nustatykite tinkamą TTL**: suderinkite sąnaudų taupymą ir podėlio pasenimą
 - **Talpinkite sistemos promptus podėlyje**: pakartotinai naudokite tą patį sistemos promptą skirtingoms užklausoms
 - **Stebėkite podėlio naudojimą**: sekite, kurie podėliai naudojami dažniausiai
 - **Išvalykite pasibaigusio galiojimo podėlius**: periodiškai ištrinkite nenaudojamus podėlius
 
-## Azure OpenAI: promptų podėlio naudojimas
+## Azure OpenAI: promptų podėlio naudojimas {#azure-openai-prompt-caching}
 
 Azure OpenAI palaiko promptų podėlio naudojimą su automatiniu TTL valdymu.
 
-### Konfigūracija
+### Konfigūracija {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Podėlio naudojimo įjungimas
+### Podėlio naudojimo įjungimas {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Podėlio antraštės
+### Podėlio antraštės {#cache-headers}
 
 Azure OpenAI podėlio valdymui naudoja HTTP antraštes:
 
@@ -152,7 +152,7 @@ Palaikomos reikšmės:
 - `no_cache`: netalpinti šios užklausos podėlyje
 - `no_store`: netalpinti podėlyje ir nenaudoti pakartotinai
 
-### Podėlio naudojimo stebėjimas
+### Podėlio naudojimo stebėjimas {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Geriausios praktikos Azure OpenAI
+### Geriausios praktikos Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Naudokite nuoseklius promptus**: identiški promptai gauna naudos iš podėlio naudojimo
 - **Nustatykite pagrįstą TTL**: suderinkite sąnaudas ir šviežumą
 - **Stebėkite podėlio metrikas**: sekite podėlio kūrimą ir pataikymus
 - **Grupuokite panašias užklausas**: sugrupuokite užklausas, kad maksimaliai padidintumėte podėlio pataikymus
 
-## OpenRouter: teikėjui specifinis podėlio naudojimas
+## OpenRouter: teikėjui specifinis podėlio naudojimas {#openrouter-provider-specific-caching}
 
 OpenRouter palaiko podėlio naudojimą per pagrindinius teikėjus (OpenAI, Anthropic ir kt.).
 
-### Konfigūracija
+### Konfigūracija {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter podėlio naudojimas
+### OpenRouter podėlio naudojimas {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Teikėjui specifinės parinktys
+### Teikėjui specifinės parinktys {#provider-specific-options}
 
 Skirtingi teikėjai turi skirtingus podėlio mechanizmus:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Geriausios praktikos OpenRouter
+### Geriausios praktikos OpenRouter {#best-practices-for-openrouter}
 
 - **Žinokite savo teikėjo podėlio naudojimą**: kiekvienas teikėjas turi skirtingus mechanizmus
 - **Išbandykite podėlio elgseną**: patikrinkite, ar podėlio naudojimas veikia su jūsų pasirinktu teikėju
 - **Stebėkite sąnaudas**: sekite sutaupymą dėl podėlio naudojimo
 - **Naudokite nuoseklius modelius**: modelių keitimas nutraukia podėlio pataikymus
 
-## Vertex Anthropic: promptų podėlio naudojimas su podėlio valdymu
+## Vertex Anthropic: promptų podėlio naudojimas su podėlio valdymu {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) palaiko promptų podėlio naudojimą su aiškiu podėlio valdymu.
 
-### Konfigūracija
+### Konfigūracija {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic kešavimo naudojimas
+### Vertex Anthropic kešavimo naudojimas {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Kešo valdymo tipai
+### Kešo valdymo tipai {#cache-control-types}
 
 - **ephemeral**: Kešuoti užklausos trukmei (numatyta)
 - **persistent**: Kešuoti per kelias užklausas (jei palaikoma)
 
-### Kešo naudojimo stebėjimas
+### Kešo naudojimo stebėjimas {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Geriausios praktikos Vertex Anthropic
+### Geriausios praktikos Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Naudokite ephemeral kešavimą**: Tinka vienos sesijos kešavimui
 - **Tinkamai nustatykite max_tokens**: Subalansuokite kešo dydį ir kainą
 - **Stebėkite kešo metrikas**: Sekite kešo veiksmingumą
 - **Testuokite su savo darbo krūviu**: Patikrinkite, ar kešavimas naudingas jūsų naudojimo atvejui
 
-## Kelių tiekėjų kešavimo strategija
+## Kelių tiekėjų kešavimo strategija {#cross-provider-caching-strategy}
 
-### Suvienodinta konfigūracija
+### Suvienodinta konfigūracija {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Tiekėjo aptikimas
+### Tiekėjo aptikimas {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Atsarginė strategija
+### Atsarginė strategija {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kainos optimizavimas
+## Kainos optimizavimas {#cost-optimization}
 
-### Sutaupymų skaičiavimas
+### Sutaupymų skaičiavimas {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimizavimo patarimai
+### Optimizavimo patarimai {#optimization-tips}
 
 - **Kešuokite didelius sistemos promptus**: Didžiausias kainos sutaupymas
 - **Pakartotinai naudokite kontekstą**: Kešuokite dažnai naudojamus konteksto dokumentus
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Stebėkite kešo veiksmingumą**: Sekite faktinius sutaupymus
 - **Koreguokite TTL**: Subalansuokite kainą ir naujumą
 
-## Trikčių šalinimas
+## Trikčių šalinimas {#troubleshooting}
 
-### Kešas nenaudojamas
+### Kešas nenaudojamas {#cache-not-being-used}
 
 - Patikrinkite, ar kešavimas įjungtas konfigūracijoje
 - Patikrinkite, ar promptai identiški (kešavimui reikia tikslaus sutapimo)
 - Patikrinkite, ar kešo galiojimas nėra pasibaigęs
 - Patikrinkite tiekėjui būdingus kešo apribojimus
 
-### Nepavyksta sukurti kešo
+### Nepavyksta sukurti kešo {#cache-creation-failing}
 
 - Patikrinkite, ar kešo dydis neviršija tiekėjo apribojimų
 - Patikrinkite, ar kešo valdymo sintaksė teisinga
 - Įsitikinkite, kad tiekėjas palaiko kešavimą jūsų modeliui
 - Peržiūrėkite tiekėjo dokumentaciją dėl apribojimų
 
-### Netikėtos išlaidos
+### Netikėtos išlaidos {#unexpected-costs}
 
 - Stebėkite kešo kūrimo ir kešo skaitymo tokenus
 - Patikrinkite, ar kešas iš tikrųjų naudojamas
 - Patikrinkite, ar nėra kešo nepataikymų dėl promptų variacijų
 - Apsvarstykite TTL arba kešavimo strategijos koregavimą
 
-## Tiekėjų palyginimas
+## Tiekėjų palyginimas {#provider-comparison}
 
 | Funkcija | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Kainos sumažinimas | 90% | 90% | Priklauso nuo tiekėjo | 90% |
 | Stebėjimas | Išsamus | Per metrikas | Priklauso nuo tiekėjo | Per naudojimą |
 
-## Kiti veiksmai
+## Kiti veiksmai {#next-steps}
 
 1. **Pasirinkite tiekėją**: Pasirinkite pagal savo poreikius
 2. **Sukonfigūruokite kešavimą**: Nustatykite tiekėjui būdingą kešavimą

@@ -3,16 +3,16 @@ title: Gratis AI Agent সেটিংস
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent সেটিংস
+# Gratis AI Agent সেটিংস {#gratis-ai-agent-settings}
 
 Gratis AI Agent-এর **সেটিংস → উন্নত** স্ক্রিনে backend ইন্টিগ্রেশনের জন্য প্রশাসক-স্তরের কনফিগারেশন থাকে। এই পাতায় feedback forwarding, search provider keys, managed Superdav service setup, Google Calendar controls, TextBee SMS settings এবং network-wide feature flags নথিভুক্ত করা হয়েছে।
 
-## সেটিংস অ্যাক্সেস করা
+## সেটিংস অ্যাক্সেস করা {#accessing-settings}
 
 1. WordPress admin-এ **Gratis AI Agent → সেটিংস**-এ যান।
 2. **উন্নত** ট্যাবে ক্লিক করুন।
 
-## Feedback Endpoint কনফিগারেশন
+## Feedback Endpoint কনফিগারেশন {#feedback-endpoint-configuration}
 
 feedback endpoint AI agent থেকে POST অনুরোধ গ্রহণ করে, যখনই কোনো ব্যবহারকারী thumbs-down বোতাম, auto-prompt banner, বা `/report-issue` কমান্ডের মাধ্যমে feedback জমা দেন।
 
@@ -21,7 +21,7 @@ feedback endpoint AI agent থেকে POST অনুরোধ গ্রহণ 
 | **Feedback Endpoint URL** | যে URL JSON body সহ HTTP POST অনুরোধ হিসেবে feedback জমা গ্রহণ করে। |
 | **Feedback API Key** | প্রতিটি feedback অনুরোধের `Authorization` header-এ পাঠানো bearer token। আপনার endpoint-এ authentication প্রয়োজন না হলে খালি রাখুন। |
 
-### প্রত্যাশিত JSON Payload
+### প্রত্যাশিত JSON Payload {#expected-json-payload}
 
 আপনার feedback endpoint-কে অন্তত নিচের ক্ষেত্রগুলোসহ একটি JSON body গ্রহণ করতে হবে:
 
@@ -36,7 +36,7 @@ feedback endpoint AI agent থেকে POST অনুরোধ গ্রহণ 
 
 কথোপকথনের context অনুযায়ী payload-এ অতিরিক্ত ক্ষেত্র থাকতে পারে।
 
-### `triage_category` মান
+### `triage_category` মান {#triagecategory-values}
 
 payload forward করার আগে AI triage layer `triage_category`-তে নিচের মানগুলোর একটি নির্ধারণ করে:
 
@@ -47,7 +47,7 @@ payload forward করার আগে AI triage layer `triage_category`-তে 
 | `inappropriate_content` | প্রতিক্রিয়ায় এমন content ছিল যা ব্যবহারকারীদের দেখানো উচিত নয়। |
 | `other` | feedback কোনো পরিচিত category-এর সঙ্গে মেলেনি। |
 
-### Authentication
+### Authentication {#authentication}
 
 আপনার endpoint-এ authentication প্রয়োজন হলে **Feedback API Key** ক্ষেত্রটি আপনার bearer token দিয়ে সেট করুন। agent পাঠায়:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 **Feedback API Key** ক্ষেত্র খালি থাকলে কোনো `Authorization` header পাঠানো হয় না।
 
-### Feedback সংগ্রহ নিষ্ক্রিয় করা
+### Feedback সংগ্রহ নিষ্ক্রিয় করা {#disabling-feedback-collection}
 
 **Feedback Endpoint URL** এবং **Feedback API Key**—দুটি ক্ষেত্রই খালি রাখুন। thumbs-down বোতাম এবং feedback UI ব্যবহারকারীদের কাছে দৃশ্যমান থাকবে, কিন্তু জমাগুলো কোনো external service-এ forward করা হবে না।
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 **উন্নত** ট্যাবেই **Brave Search API Key** ক্ষেত্রটি [Internet Search](../configuration/internet-search) ক্ষমতা সক্রিয় করে।
 
@@ -73,7 +73,7 @@ Authorization: Bearer <your-api-key>
 
 এই feature সম্পর্কে end-user documentation-এর জন্য [Internet Search](../configuration/internet-search) দেখুন।
 
-## Managed Superdav Service
+## Managed Superdav Service {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 supported সাইটগুলোর জন্য managed Superdav service endpoint এবং automatic connection provisioning যোগ করে। আপনার সাইট manually configured service endpoint-এর বদলে hosted provider-এ connect করা উচিত হলে এই controls ব্যবহার করুন।
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 supported সাইটগুলোর জন্য man
 
 provisioning-এর পর settings save করুন এবং managed-service workflows-এর ওপর নির্ভর করার আগে connection status যাচাই করুন। provisioning ব্যর্থ হলে প্রদর্শিত retry guidance দেখুন এবং সাইটটির hosted provider ব্যবহারের permission আছে কি না নিশ্চিত করুন।
 
-## Google Calendar কনফিগারেশন
+## Google Calendar কনফিগারেশন {#google-calendar-configuration}
 
 Superdav AI Agent v1.18.0 calendar features সক্রিয় থাকলে agent configured calendars এবং event details পড়তে পারে। Calendar tools read-oriented এবং schedule-aware reminders, attendee follow-up, ও contact matching-এর জন্য উপযোগী।
 
@@ -97,7 +97,7 @@ Superdav AI Agent v1.18.0 calendar features সক্রিয় থাকলে a
 
 calendar credentials শুধু agent-এর প্রয়োজনীয় calendars-এ সীমিত রাখুন। status expired token দেখালে credentials reconnect বা rotate করুন।
 
-## TextBee SMS Notifications
+## TextBee SMS Notifications {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 configured notification workflows-এর জন্য SMS provider হিসেবে TextBee যোগ করে। sensitive বা user-facing messages-এর ক্ষেত্রে SMS notifications মানব অনুমোদন gates-এর সঙ্গে ব্যবহার করা উচিত।
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 configured notification workflows-এর জন্য 
 
 শুধু administrator-owned number-এ test message পাঠান, তারপর scheduled বা attendee-facing reminders সক্রিয় করার আগে approval-gate behaviour নিশ্চিত করুন।
 
-## Feature Flags
+## Feature Flags {#feature-flags}
 
 v1.9.0-এ আরও যুক্ত হয়েছে **সেটিংস → Feature Flags** ট্যাব, যা optional functionality-এর জন্য toggle switches দেয়। প্রতিটি flag network-wide enabled বা disabled থাকে; এই মুহূর্তে per-site override নেই।
 
-### Feature Flags অ্যাক্সেস করা
+### Feature Flags অ্যাক্সেস করা {#accessing-feature-flags}
 
 1. WordPress admin-এ **Gratis AI Agent → সেটিংস**-এ যান।
 2. **Feature Flags** ট্যাবে ক্লিক করুন।
 
-### Access Control Flags
+### Access Control Flags {#access-control-flags}
 
 | ফ্ল্যাগ | ডিফল্ট | বিবরণ |
 |---|---|---|
@@ -127,7 +127,7 @@ v1.9.0-এ আরও যুক্ত হয়েছে **সেটিংস → Fe
 | **সাবস্ক্রাইবার অ্যাক্সেসের অনুমতি দিন** | বন্ধ | চালু করলে, `subscriber` ভূমিকার ব্যবহারকারীরা চ্যাট ইন্টারফেস ব্যবহার করতে পারবেন, তবে শুধু পড়ার ক্ষমতায় সীমিত থাকবেন (কোনো পোস্ট তৈরি বা সেটিংস পরিবর্তন নয়)। |
 | **নন-মেম্বারদের জন্য নিষ্ক্রিয় করুন** | বন্ধ | Ultimate Multisite membership স্ট্যাটাসের সঙ্গে সংযুক্ত হয়। চালু করলে, সক্রিয় membership নেই এমন সাইটগুলোর জন্য চ্যাট লুকানো থাকে। |
 
-### ব্র্যান্ডিং ফ্ল্যাগ
+### ব্র্যান্ডিং ফ্ল্যাগ {#branding-flags}
 
 | ফ্ল্যাগ | ডিফল্ট | বিবরণ |
 |---|---|---|
@@ -136,7 +136,7 @@ v1.9.0-এ আরও যুক্ত হয়েছে **সেটিংস → Fe
 | **এজেন্ট পিকার লুকান** | বন্ধ | চালু করলে, ব্যবহারকারীরা পাঁচটি বিল্ট-ইন এজেন্টের মধ্যে বদলাতে পারবেন না। Settings → General-এ ডিফল্ট হিসেবে যা কনফিগার করা আছে, বর্তমান এজেন্ট সেটিতেই স্থির থাকবে। |
 | **চ্যাট অ্যাভাটার হিসেবে সাইট আইকন ব্যবহার করুন** | বন্ধ | চ্যাট উইজেট হেডারের ডিফল্ট AI আইকনকে WordPress সাইট আইকন দিয়ে বদলে দেয় (Appearance → Customize → Site Identity-এর অধীনে সেট করা)। |
 
-### অটোমেশন নিরাপত্তা ফ্ল্যাগ
+### অটোমেশন নিরাপত্তা ফ্ল্যাগ {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 আরও নিরাপদ অটোমেশন রানগুলোর জন্য মানব অনুমোদন গেট এবং রিমাইন্ডার রেকর্ড যুক্ত করে। ইনস্টল করা প্যাকেজের ওপর নির্ভর করে, এই নিয়ন্ত্রণগুলো ফিচার ফ্ল্যাগ বা উন্নত অটোমেশন সেটিংসে দেখা যেতে পারে।
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 আরও নিরাপদ অটোমেশন র
 | **ক্যালেন্ডার টুলস চালু করুন** | কনফিগার না করা পর্যন্ত বন্ধ | এজেন্টকে কনফিগার করা Google ক্যালেন্ডার ও ইভেন্ট পড়ার অনুমতি দেয়। |
 | **SMS নোটিফিকেশন চালু করুন** | কনফিগার না করা পর্যন্ত বন্ধ | ক্রেডেনশিয়াল সংরক্ষণ করার পর অনুমোদিত ওয়ার্কফ্লোকে TextBee SMS নোটিফিকেশন পাঠানোর অনুমতি দেয়। |
 
-### পরিবর্তন প্রয়োগ করা
+### পরিবর্তন প্রয়োগ করা {#applying-changes}
 
 যেকোনো ফ্ল্যাগ টগল করার পরে **সেটিংস সংরক্ষণ করুন**-এ ক্লিক করুন। পরিবর্তন সঙ্গে সঙ্গে কার্যকর হয় — কোনো ক্যাশ ফ্লাশ বা plugin পুনরায় সক্রিয় করার দরকার নেই।

@@ -3,7 +3,7 @@ title: مجموعاتي منظم ڪرڻ
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# رکنیت (Memberships) کو سنبھالنا
+# رکنیت (Memberships) کو سنبھالنا {#managing-memberships}
 
 Ultimate Multisite ۾ توهان جي نڪري (network) تي سڀني سبسڪريپشنز کي سنڀال ۽ انهن جي رسائي (access) کي منظم ڪري سگهو ٿا. توهان پنهنجي پلانز ۽ پروڊڪٽس، سائٽن جي تعداد، بلنگ جو مقدار ۽ ڪ freqency، دفعي وارو تاريخ (payment history)، ۽ تايم سٽمپس کي ٻيهر ڏسي ۽ تعديل ڪري سگهو ٿا.
 

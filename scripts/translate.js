@@ -1005,11 +1005,80 @@ function splitMarkdownBody(text, maxChars) {
 	return chunks.filter(chunk => chunk.length > 0);
 }
 
+function stripHeadingId(text) {
+	return text.replace(/\s*\{#[A-Za-z0-9_-]+\}\s*$/u, '').trim();
+}
+
+function stripHeadingMarkdown(text) {
+	return stripHeadingId(text)
+		.replace(/!\[([^\]]*)\]\([^)]*\)/g, '$1')
+		.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+		.replace(/[`*_~]/g, '')
+		.replace(/<[^>]+>/g, '')
+		.trim();
+}
+
+function slugHeading(text, counts) {
+	const base = stripHeadingMarkdown(text)
+		.normalize('NFKD')
+		.toLowerCase()
+		.replace(/[^\p{Letter}\p{Number}\p{Mark}\s-]/gu, '')
+		.trim()
+		.replace(/\s+/g, '-') || 'section';
+	const count = counts.get(base) || 0;
+	counts.set(base, count + 1);
+	return count === 0 ? base : `${base}-${count}`;
+}
+
+function getSourceHeadingIds(markdown) {
+	const counts = new Map();
+	const headings = [];
+	let inCodeBlock = false;
+	for (const line of markdown.split('\n')) {
+		if (/^\s*```/.test(line)) {
+			inCodeBlock = !inCodeBlock;
+			continue;
+		}
+		if (inCodeBlock) continue;
+		const match = line.match(/^(#{1,6})\s+(.+?)\s*$/);
+		if (!match) continue;
+		headings.push(slugHeading(match[2], counts));
+	}
+	return headings;
+}
+
+function applySourceHeadingIds(sourceMarkdown, translatedMarkdown) {
+	const sourceHeadingIds = getSourceHeadingIds(sourceMarkdown);
+	if (sourceHeadingIds.length === 0) return translatedMarkdown;
+
+	const lines = translatedMarkdown.split('\n');
+	let inCodeBlock = false;
+	let headingIndex = 0;
+	let changed = false;
+	for (let i = 0; i < lines.length; i++) {
+		const line = lines[i];
+		if (/^\s*```/.test(line)) {
+			inCodeBlock = !inCodeBlock;
+			continue;
+		}
+		if (inCodeBlock) continue;
+		if (!/^(#{1,6})\s+(.+?)\s*$/.test(line)) continue;
+		const sourceHeadingId = sourceHeadingIds[headingIndex++];
+		if (!sourceHeadingId || /\s\{#[A-Za-z0-9_-]+\}\s*$/.test(line)) continue;
+		lines[i] = `${line.replace(/[\t ]+$/u, '')} {#${sourceHeadingId}}`;
+		changed = true;
+	}
+
+	return changed ? lines.join('\n') : translatedMarkdown;
+}
+
 async function translateBody(body, targetLocale, opts, context = {}) {
 	const chunks = splitMarkdownBody(body, opts.chunkMaxChars);
+	let translatedBody;
 
 	if (chunks.length === 1) {
-		return translateMarkdownChunk(body, targetLocale, opts, context);
+		translatedBody = await translateMarkdownChunk(body, targetLocale, opts, context);
+		return applySourceHeadingIds(body, translatedBody);
 	}
 
 	const translatedChunks = [];
@@ -1020,7 +1089,8 @@ async function translateBody(body, targetLocale, opts, context = {}) {
 		}));
 	}
 
-	return translatedChunks.join('\n\n');
+	translatedBody = translatedChunks.join('\n\n');
+	return applySourceHeadingIds(body, translatedBody);
 }
 
 async function translateMarkdownChunk(chunk, targetLocale, opts, context = {}) {

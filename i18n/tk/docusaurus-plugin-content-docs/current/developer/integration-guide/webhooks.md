@@ -3,11 +3,11 @@ title: Webhook-lary işlemek
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook dolandyryşy
+# Webhook dolandyryşy {#webhook-handling}
 
 Daşarky hyzmatlardan wakalary almak we maglumatlary Ultimate Multisite bilen sinhronlamak üçin ýörite webhook ahyrky nokatlaryny dörediň.
 
-## Ýörite webhook ahyrky nokady
+## Ýörite webhook ahyrky nokady {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Howpsuzlyk göz öňünde tutulmalary
+## Howpsuzlyk göz öňünde tutulmalary {#security-considerations}
 
 - Webhook gollaryny HMAC ýa-da paýlaşylan gizlin açar bilen elmydama barlaň
 - REST ugruňyzda `permission_callback` ulanyň — önümçilikde ony hiç haçan `__return_true` edip sazlamaň

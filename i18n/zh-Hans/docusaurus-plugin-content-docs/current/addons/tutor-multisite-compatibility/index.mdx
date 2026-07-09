@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 一个 WordPress 插件，为多站点环境中的 Tutor LMS 添加兼容性修复。
 
-## 描述
+## 描述 {#description}
 
 该插件为在 WordPress 多站点网络上运行 Tutor LMS 提供必要的兼容性修复。它处理用户注册、教师管理、课程限制以及其他多站点特定功能。
 
-## 功能
+## 功能 {#features}
 
 - **数据库表管理**：自动检测并创建因多站点外键约束导致失败的缺失 Tutor LMS 表。
 - **多站点用户注册**：跨网络站点管理用户注册的自定义 AJAX 处理程序。
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **自定义管理员视图**：多站点感知的教师列表和管理界面。
 - **管理员工具**：网络和站点管理员的数据库管理界面。
 
-## 要求
+## 要求 {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - WordPress 多站点安装
 - Ultimate Multisite 插件（用于课程限制功能）
 
-## 安装
+## 安装 {#installation}
 
 1. 将插件文件上传到 `/wp-content/plugins/tutor-multisite-compatibility/`
 2. 确保已安装并激活 Tutor LMS
 3. 通过 WordPress 的 '插件' 菜单激活插件
 4. 插件将自动与 Tutor LMS 集成
 
-## 文件结构
+## 文件结构 {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## 从 MU 插件迁移的功能
+## 从 MU 插件迁移的功能 {#functionality-moved-from-mu-plugin}
 
 此插件包含以前位于 `wp-content/mu-plugins/daves.php` 的功能：
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - 多站点用户注册处理
 - 课程产品 ID 显示
 
-## 数据库管理
+## 数据库管理 {#database-management}
 
-### 问题
+### 问题 {#the-problem}
 
 在 WordPress 多站点环境中，Tutor LMS 表的创建会因对 users 表的外键约束而失败。这是因为：
 
@@ -81,7 +81,7 @@ tutor-multisite-compatibility/
 - 外键引用 `wp_2_users`（不存在）
 - 实际的 users 表是 `wp_users`（在整个网络中共享）
 
-### 解决方案
+### 解决方案 {#the-solution}
 
 此插件会自动：
 
@@ -92,13 +92,13 @@ tutor-multisite-compatibility/
    - 网络中新站点创建
    - 通过管理员界面手动检查表
 
-### 受影响的表
+### 受影响的表 {#affected-tables}
 
 - `tutor_coupon_usages` - 包含指向 users 表的外键
 - `tutor_carts` - 包含指向 users 表的外键
 - `tutor_notification_preferences` - TutorPro 表，包含指向 users 表的外键
 
-### 管理界面
+### 管理界面 {#admin-interface}
 
 在以下位置访问数据库管理工具：
 
@@ -112,6 +112,6 @@ tutor-multisite-compatibility/
 - 检查数据库配置
 - 查看详细状态信息
 
-## 支持
+## 支持 {#support}
 
 此插件专为 KursoPro 平台设计。如需技术支持，请联系开发团队。

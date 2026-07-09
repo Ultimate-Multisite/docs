@@ -4,13 +4,13 @@ title: Isihlungi - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Ihlunga i-URL yokuqondisa kabusha ngemva kokwenza i-domain ibe eyinhloko.
 
 Ivumela abathuthukisi ukwenza ngokwezifiso lapho abasebenzisi beqondiswa khona kabusha ngemva kokusetha ngempumelelo i-domain njengeyinhloko. Ngokuzenzakalelayo, iqondisa kabusha ku-URL yamanje kusayithi eyinhloko, noma ku-URL ye-admin yesayithi elishintshwayo.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Ivumela abathuthukisi ukwenza ngokwezifiso lapho abasebenzisi beqondiswa khona k
 | $domain | `\Domain` | Into ye-domain eyenziwe yaba eyinhloko. |
 | $old_primary_domains | `array` | Uhlu lwama-ID ama-domain abekade eyinhloko ngaphambilini. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) emugqeni 639
 
 
-## Okubuyiswayo
+## Okubuyiswayo {#returns}
 I-URL yokuqondisa kabusha ehlungiwe.

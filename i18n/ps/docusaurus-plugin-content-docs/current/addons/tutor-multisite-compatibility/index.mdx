@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 یو WordPress پلګین چې په څو-سایټه چاپېریالونو کې د Tutor LMS لپاره د سازګارۍ سمونې زیاتوي.
 
-## تشریح
+## تشریح {#description}
 
 دا پلګین د WordPress څو-سایټه شبکو کې د Tutor LMS د چلولو لپاره اړینې د سازګارۍ سمونې برابروي. دا د کارونکي نوم‌لیکنه، د ښوونکي مدیریت، د کورس محدودیتونه، او نور څو-سایټه ځانګړي فعالیتونه اداره کوي.
 
-## ځانګړتیاوې
+## ځانګړتیاوې {#features}
 
 - **د ډیټابېس جدول مدیریت**: په اتومات ډول هغه ورک Tutor LMS جدولونه پېژني او جوړوي چې د څو-سایټه بهرني کلید محدودیتونو له امله ناکامېږي
 - **د څو-سایټه کارونکي نوم‌لیکنه**: د شبکې د سایټونو په اوږدو کې د کارونکي نوم‌لیکنې د مدیریت لپاره دودیز AJAX سمبالوونکي
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **دودیزې اډمین لیدنې**: د څو-سایټه پوه ښوونکي لېست او د مدیریت انترفېس
 - **اډمین وسیلې**: د شبکې او سایټ مدیرانو لپاره د ډیټابېس مدیریت انترفېس
 
-## اړتیاوې
+## اړتیاوې {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - د WordPress څو-سایټه نصب
 - Ultimate Multisite پلګین (د کورس محدودیتونو د فعالیت لپاره)
 
-## نصب
+## نصب {#installation}
 
 1. د پلګین فایلونه `/wp-content/plugins/tutor-multisite-compatibility/` ته پورته کړئ
 2. ډاډ ترلاسه کړئ چې Tutor LMS نصب او فعال شوی دی
 3. پلګین په WordPress کې د 'Plugins' مینو له لارې فعال کړئ
 4. پلګین به په اتومات ډول له Tutor LMS سره ادغام شي
 
-## د فایل جوړښت
+## د فایل جوړښت {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## هغه فعالیت چې له MU plugin څخه لېږدول شوی
+## هغه فعالیت چې له MU plugin څخه لېږدول شوی {#functionality-moved-from-mu-plugin}
 
 دا پلګین هغه فعالیت لري چې پخوا په `wp-content/mu-plugins/daves.php` کې و:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - د څو-سایټه کارونکي نوم‌لیکنې اداره کول
 - د کورس د محصول پېژند display
 
-## د ډیټابېس مدیریت
+## د ډیټابېس مدیریت {#database-management}
 
-### ستونزه
+### ستونزه {#the-problem}
 
 د WordPress څو-سایټه چاپېریالونو کې، د Tutor LMS جدول جوړول د هغو جدولونو لپاره ناکامېږي چې د کاروونکو جدول ته د بهرني کلید محدودیتونه لري. دا ځکه پېښېږي چې:
 
@@ -81,7 +81,7 @@ tutor-multisite-compatibility/
 - بهرني کلیدونه `wp_2_users` ته اشاره کوي (چې شتون نه لري)
 - اصلي د کاروونکو جدول `wp_users` دی (چې په ټوله شبکه کې شریک دی)
 
-### حل
+### حل {#the-solution}
 
 دا پلګین په اتومات ډول:
 
@@ -92,13 +92,13 @@ tutor-multisite-compatibility/
    - په شبکه کې د نوي سایټ جوړول
    - د اډمین انترفېس له لارې لاسي جدول کتنه
 
-### اغېزمن شوي جدولونه
+### اغېزمن شوي جدولونه {#affected-tables}
 
 - `tutor_coupon_usages` - د کاروونکو جدول ته بهرنی کلید لري
 - `tutor_carts` - د کاروونکو جدول ته بهرنی کلید لري
 - `tutor_notification_preferences` - د TutorPro جدول چې د کاروونکو جدول ته بهرنی کلید لري
 
-### اډمین انترفېس
+### اډمین انترفېس {#admin-interface}
 
 د ډیټابېس مدیریت وسیلو ته دلته لاسرسی ومومئ:
 
@@ -111,6 +111,6 @@ tutor-multisite-compatibility/
 - د ډیټابېس تشکیلات وګورئ
 - تفصیلي حالت معلومات وګورئ
 
-## ملاتړ
+## ملاتړ {#support}
 
 دا پلګین په ځانګړي ډول د KursoPro پلېټفارم لپاره ډیزاین شوی. د تخنیکي ملاتړ لپاره، د پراختیا ټیم سره اړیکه ونیسئ.

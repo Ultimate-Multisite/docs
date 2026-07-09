@@ -4,11 +4,11 @@ title: Isenzo - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Isenzo: set_auth_cookie
+# Isenzo: set_auth_cookie {#action-setauthcookie}
 
 Kuqala ngokushesha ngaphambi kokuthi ikhukhi yokuqinisekisa isethwe.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Kuqala ngokushesha ngaphambi kokuthi ikhukhi yokuqinisekisa isethwe.
 | $scheme | `string` | Uhlelo lokuqinisekisa. Amanani afaka 'auth' noma 'secure_auth'. |
 | $token | `string` | I-token yeseshini yomsebenzisi ezosetshenziswa kule khukhi. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) emgqeni 124

@@ -4,19 +4,19 @@ title: Дејство - wu_register_capabilities
 sidebar_label: wu_register_capabilities
 _i18n_hash: 9b32e061f2a98a4c1bd30af0badd5760
 ---
-# Акција: wu_register_capabilities
+# Акција: wu_register_capabilities {#action-wuregistercapabilities}
 
 Се активира за да им овозможи на додатоците да прикачат модули за способности на интеграциите.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Опис |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | Инстанцата на регистарот. |
 
-### Од верзија
+### Од верзија {#since}
 
 - 2.5.0
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L148) на линија 148

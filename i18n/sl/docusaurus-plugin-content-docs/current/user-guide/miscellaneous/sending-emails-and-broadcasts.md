@@ -3,13 +3,13 @@ title: Pošiljanje e-poštnih sporočil in razpošiljanj
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Pošiljanje e-poštnih sporočil in Broadcasts (v2)
+# Pošiljanje e-poštnih sporočil in Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**POMEMBNA OPOMBA: Ta članek se nanaša na Ultimate Multisite različico 2.x.**_
 
 Ultimate Multisite vključuje funkcijo, ki vam omogoča komunikacijo z vašimi strankami s pošiljanjem e-poštnega sporočila ciljnemu uporabniku ali skupini uporabnikov, pa tudi s pošiljanjem obvestil na njihov admin dashboard za objavo sporočil
 
-## Dodajte admin notices na dashboard svojih strank z Broadcasts
+## Dodajte admin notices na dashboard svojih strank z Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Z uporabo funkcije Broadcast v Ultimate Multisite lahko dodate **admin notices** na admin dashboard podstrani vašega uporabnika.
 
@@ -51,7 +51,7 @@ Ko ustvarite svoje sporočilo, lahko nato pritisnete gumb **Send**.
 
 In to je to. Admin notice bi se moral takoj prikazati na dashboardu vašega uporabnika.
 
-## Pošiljanje e-poštnih sporočil vašim strankam
+## Pošiljanje e-poštnih sporočil vašim strankam {#send-emails-to-your-customers}
 
 Z uporabo funkcije Broadcast v Ultimate Multisite lahko svojim uporabnikom pošljete e-poštno sporočilo. Imate možnost poslati e-poštno sporočilo samo določenim uporabnikom ali ciljati določeno skupino uporabnikov glede na izdelek ali paket, na katerega so naročeni.
 
@@ -81,11 +81,11 @@ Ko ustvarite svoje sporočilo, lahko pritisnete gumb **Send**.
 
 In tako enostavno je poslati e-poštno sporočilo svojim končnim uporabnikom z uporabo funkcije broadcast.
 
-## Sistemska e-poštna sporočila
+## Sistemska e-poštna sporočila {#system-emails}
 
 Sistemska e-poštna sporočila v Ultimate Multisite so tista **samodejna obvestila**, ki jih sistem pošlje po določenih dejanjih, kot so registracija, plačilo, preslikava domene itd. Ta e-poštna sporočila je mogoče urejati ali spreminjati v nastavitvah Ultimate Multisite. Vključuje tudi funkcijo, ki vam omogoča ponastavitev in uvoz obstoječih nastavitev iz druge namestitve Ultimate Multisite.
 
-### Ponastavitev in uvoz
+### Ponastavitev in uvoz {#resetting--importing}
 
 Nove različice Ultimate Multisite, pa tudi dodatki, lahko in bodo občasno registrirali nova e-poštna sporočila.
 
@@ -93,7 +93,7 @@ Da bi preprečili konflikte in druge težave, **novih predlog e-poštnih sporoč
 
 Vendar lahko super administratorji in agenti ta novo registrirana e-poštna sporočila uvozijo prek orodja za uvoz. Ta postopek bo ustvaril novo sistemsko e-poštno sporočilo z vsebino in konfiguracijo nove predloge e-poštnega sporočila, kar super administratorju omogoča, da naredi poljubne spremembe ali jih pusti takšne, kot so.
 
-#### Kako uvoziti sistemska e-poštna sporočila
+#### Kako uvoziti sistemska e-poštna sporočila {#how-to-import-system-emails}
 
 Pojdite na stran z nastavitvami Ultimate Multisite in odprite zavihek **Emails**.
 
@@ -111,7 +111,7 @@ Nato lahko preklopite možnosti Import Emails, da vidite, katera sistemska e-po�
 
 <!-- Posnetek zaslona ni na voljo: modalno okno Ponastavi in uvozi z razširjenimi možnostmi Uvozi e-poštna sporočila -->
 
-#### Ponastavljanje sistemskih e-poštnih sporočil
+#### Ponastavljanje sistemskih e-poštnih sporočil {#reseting-system-emails}
 
 Včasih boste ugotovili, da spremembe, ki ste jih naredili v določeni predlogi e-poštnega sporočila, ne delujejo več za vas in bi jo radi ponastavili v njeno **privzeto stanje**.
 

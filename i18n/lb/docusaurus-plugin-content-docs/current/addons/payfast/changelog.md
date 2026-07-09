@@ -3,7 +3,7 @@ title: PayFast Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast Ännerungsprotokoll
+# PayFast Ännerungsprotokoll {#payfast-changelog}
 
 Versioun: 1.0.2 - Verëffentlecht den 2025-09-28
 

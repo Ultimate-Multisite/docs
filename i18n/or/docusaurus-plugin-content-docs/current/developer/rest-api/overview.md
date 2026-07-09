@@ -3,28 +3,28 @@ title: REST API ଅବଲୋକନ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ସନ୍ଦର୍ଭ
+# REST API ସନ୍ଦର୍ଭ {#rest-api-reference}
 
-## ମୂଳ ବିନ୍ୟାସ
+## ମୂଳ ବିନ୍ୟାସ {#base-configuration}
 
 **ମୂଳ URL:** `{site_url}/wp-json/wu/v2/`
 **ପ୍ରମାଣୀକରଣ:** API Key ଓ Secret (HTTP Basic Auth କିମ୍ବା URL ପାରାମିଟର)
 
-## ପ୍ରମାଣୀକରଣ
+## ପ୍ରମାଣୀକରଣ {#authentication}
 
-### API ସକ୍ଷମ କରନ୍ତୁ
+### API ସକ୍ଷମ କରନ୍ତୁ {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ପରିଚୟତଥ୍ୟ ପାଆନ୍ତୁ
+### API ପରିଚୟତଥ୍ୟ ପାଆନ୍ତୁ {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### ପ୍ରମାଣୀକରଣ ପଦ୍ଧତି
+### ପ୍ରମାଣୀକରଣ ପଦ୍ଧତି {#authentication-methods}
 
 **HTTP Basic Auth (ସୁପାରିଶିତ):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ମୁଖ୍ୟ ଶେଷବିନ୍ଦୁ
+## ମୁଖ୍ୟ ଶେଷବିନ୍ଦୁ {#core-endpoints}
 
-### 1. ଗ୍ରାହକ API
+### 1. ଗ୍ରାହକ API {#1-customers-api}
 
 **ମୂଳ ରୁଟ୍:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. ୱେବସାଇଟ୍ API
+### 2. ୱେବସାଇଟ୍ API {#2-sites-api}
 
 **ମୂଳ ରୁଟ୍:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. ସଦସ୍ୟତା API
+### 3. ସଦସ୍ୟତା API {#3-memberships-api}
 
 **ମୂଳ ରୁଟ୍:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. ଉତ୍ପାଦ API
+### 4. ଉତ୍ପାଦ API {#4-products-api}
 
 **ମୂଳ ରୁଟ୍:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. ଦେୟ API
+### 5. ଦେୟ API {#5-payments-api}
 
 **ମୂଳ ରୁଟ୍:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ଡୋମେନ୍ API
+### 6. ଡୋମେନ୍ API {#6-domains-api}
 
 **ମୂଳ ରୁଟ୍:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## ପଞ୍ଜୀକରଣ ଶେଷବିନ୍ଦୁ
+## ପଞ୍ଜୀକରଣ ଶେଷବିନ୍ଦୁ {#registration-endpoint}
 
 `/register` ଶେଷବିନ୍ଦୁ ଏକ ସମ୍ପୂର୍ଣ୍ଣ କ୍ରୟ-ସମାପ୍ତି/ପଞ୍ଜୀକରଣ ପ୍ରବାହ ଦେଇଥାଏ:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## ସ୍ୱାଧୀନ ଭଡ଼ାଟିଆ ଶେଷବିନ୍ଦୁ
+## ସ୍ୱାଧୀନ ଭଡ଼ାଟିଆ ଶେଷବିନ୍ଦୁ {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ଏମିତି ଇଣ୍ଟିଗ୍ରେସନ୍ ପାଇଁ ସ୍ୱାଧୀନ ଭଡ଼ାଟିଆ REST କଭରେଜ୍ ଯୋଡ଼େ, ଯେଉଁମାନେ ଅଲଗା ଭଡ଼ାଟିଆଙ୍କୁ ପ୍ରସ୍ତୁତ, ଯାଞ୍ଚ କିମ୍ବା ସତ୍ୟାପନ କରନ୍ତି।
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` କୁ ପ୍ରାରମ୍ଭ ପୂର୍ବ ଅବରୋଧ ଭାବେ ଧରନ୍ତୁ। verification ବିବରଣୀ ଯାଞ୍ଚ କରନ୍ତୁ, ଡାଟାବେସ୍ host binding, queue, user provisioning କିମ୍ବା routing ସମସ୍ୟା ଠିକ୍ କରନ୍ତୁ, ତାପରେ ପୁଣି verification ଚେଷ୍ଟା କରନ୍ତୁ।
 
-## ତ୍ରୁଟି ପ୍ରତିକ୍ରିୟା
+## ତ୍ରୁଟି ପ୍ରତିକ୍ରିୟା {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## ପୃଷ୍ଠାଙ୍କନ ଓ ଫିଲ୍ଟରିଂ
+## ପୃଷ୍ଠାଙ୍କନ ଓ ଫିଲ୍ଟରିଂ {#pagination-and-filtering}
 
 **କ୍ୱେରି ପାରାମିଟର:**
 ```http

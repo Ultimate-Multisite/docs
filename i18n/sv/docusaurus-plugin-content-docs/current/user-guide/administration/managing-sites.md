@@ -3,7 +3,7 @@ title: Hantera webbplatser
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Hantera webbplatser
+# Hantera webbplatser {#managing-sites}
 
 Webbplatser (eller underwebbplatser) är kärnan i din WaaS-verksamhet. Ultimate Multisite har 3 typer av webbplatser:
 
@@ -11,13 +11,13 @@ Webbplatser (eller underwebbplatser) är kärnan i din WaaS-verksamhet. Ultimate
 - **Webbplatsmallar** — Fördefinierade webbplatser som kunder kan välja som utgångspunkt
 - **Huvudwebbplats** — Din primära nätverkswebbplats
 
-## Visa webbplatser
+## Visa webbplatser {#viewing-sites}
 
 Gå till **Ultimate Multisite → Sites** för att se alla underwebbplatser i ditt nätverk. Varje webbplats är märkt efter typ och du kan filtrera på All Sites, Customer-Owned, Templates eller Pending.
 
 ![Webbplatslista](/img/admin/sites-list.png)
 
-## Lägga till en ny webbplats
+## Lägga till en ny webbplats {#adding-a-new-site}
 
 Klicka på knappen **Add Site** för att skapa en ny webbplats. Du behöver ange:
 
@@ -27,15 +27,15 @@ Klicka på knappen **Add Site** för att skapa en ny webbplats. Du behöver ange
 
 Alternativet **Copy Site** låter dig skapa en ny webbplats baserad på en befintlig webbplatsmall. När det är aktiverat kan du välja vilken mall som ska användas som utgångspunkt. Se till att **Copy Media on Duplication** är aktiverat för att inkludera mediefiler.
 
-## Hantera en befintlig webbplats
+## Hantera en befintlig webbplats {#managing-an-existing-site}
 
 Klicka på **Manage** på valfri webbplats för att öppna sidan **Edit Site**. Här hittar du:
 
-### Grundläggande information
+### Grundläggande information {#basic-information}
 
 Webbplatsens namn, typ, webbplats-ID och beskrivning. Du ser också den mappade domänen, kopplat medlemskap och kundkontot som äger webbplatsen.
 
-### Webbplatsalternativ
+### Webbplatsalternativ {#site-options}
 
 Konfigurera webbplatsens funktioner och begränsningar:
 
@@ -47,7 +47,7 @@ Konfigurera webbplatsens funktioner och begränsningar:
 
 Som standard följer webbplatser de begränsningar som är satta på medlemskapsnivå. Att sätta begränsningar på webbplatsnivå åsidosätter medlemskapsinställningarna.
 
-### Kopplingar
+### Kopplingar {#associations}
 
 Under webbplatsalternativen hittar du information om:
 
@@ -55,7 +55,7 @@ Under webbplatsalternativen hittar du information om:
 - **Medlemskap** som webbplatsen tillhör
 - **Kundkonto** som är länkat till webbplatsen
 
-### Höger sidofält
+### Höger sidofält {#right-sidebar}
 
 På höger sida kan du:
 

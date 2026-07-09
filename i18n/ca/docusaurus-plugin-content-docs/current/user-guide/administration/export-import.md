@@ -3,17 +3,17 @@ title: Exportar i Importar
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportar i Importar
+# Exportar i Importar {#export--import}
 
 Ultimate Multisite 2.9.0 afegeix una eina d'**Exportació i Importació** de site únic dins de **Tools > Export & Import**. Utilitza aquesta eina quan necessites empaquetar un site de WordPress com a fitxer ZIP, restaurar aquest ZIP, o moure un site entre instal·lacions compatibles de Ultimate Multisite i WordPress de site únic.
 
-## Permisos requerits
+## Permisos requerits {#required-permissions}
 
 Has de connectar-te com un administrador que pugui accedir al menú **Tools** de WordPress del site que es va exportar o importar. En una xarxa multisite, utilitza una compte d'administrador de xarxa quan exportes o importes subsites utilitzant les eines de Ultimate Multisite a nivell de xarxa.
 
 Les descàrretes ZIP d'exportació es serveixen mitjançant un punt d'acció de descàrrega autenticat, així que mantén la sessió d'administració activa fins que es termini la descàrrega i no comparteixis les URL de descàrrega generades públicament.
 
-## Exportar un site a un ZIP
+## Exportar un site a un ZIP {#exporting-a-site-to-a-zip}
 
 1. A l'administració de WordPress del site que vols copiar, veu a **Tools > Export & Import**.
 2. Obre l'àrea d'exportació i tria el site que vols empaquetar.
@@ -23,7 +23,7 @@ Les descàrretes ZIP d'exportació es serveixen mitjançant un punt d'acció de 
 
 Guarda el ZIP en una ubicació segura. Pot contenir el contingut del site, configuracions, fitxers multimèdia i els assets de codi seleccionats.
 
-## Què inclou l'exportació
+## Què inclou l'exportació {#what-the-export-includes}
 
 Un ZIP d'exportació pot incloure:
 
@@ -34,7 +34,7 @@ Un ZIP d'exportació pot incloure:
 
 La mida exacta del ZIP depèn de la quantitat de multimèdia, els plugins i temes seleccionats, i la mida de les taules de la base de dades del site.
 
-## Importar un site des d'un ZIP
+## Importar un site des d'un ZIP {#importing-a-site-from-a-zip}
 
 1. Veu a **Tools > Export & Import** al site de WordPress de destinació.
 2. Obre l'àrea d'importació i carrega el ZIP creat per l'eina Export & Import.
@@ -46,7 +46,7 @@ La mida exacta del ZIP depèn de la quantitat de multimèdia, els plugins i teme
 
 En una instal·lació de WordPress de site únic, importar un ZIP substitueix el site actual per l'importat. Crea una còpia de segureta completa del site de destinació abans de començar, i evita iniciar múltiples importacions per al mateix site al mateix temps.
 
-## Limitacions i notes de compatibilitat
+## Limitacions i notes de compatibilitat {#limitations-and-compatibility-notes}
 
 - Els directòrius d'uploads o les biblioteques multimèdia molt grans poden generar fitxers ZIP grans. Confirma els límits d'uploads de PHP, els límits d'execució, l'espai de disc, la memòria i les configuracions de timeout del servidor abans d'exportar o importar sites grans.
 - Les biblioteques multimèdia molt grans poden necessitar ser traslladades durant una finestra de manteniment de baix trànsit.

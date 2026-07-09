@@ -3,17 +3,17 @@ title: Eklenti Sunrise Dosya Yükleyici
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise Dosya Yükleyici
+# Addon Sunrise Dosya Yükleyici {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0, add-onlar ve özel MU-plugin entegrasyonları için bir sunrise uzantı yükleyicisi ekler. Bu yükleyici, `wp-content/sunrise.php` dosyasını düzenlemeden, WordPress'in sunrise başlangıç (bootstrapping) aşamasında çalışması gereken entegrasyonlar için kullanılır.
 
-## Ne zaman kullanılır
+## Ne zaman kullanılır {#when-to-use-it}
 
 Entegrasyonunuzun, özel alan adı yönlendirmesi, ana bilgisayara özgü istek işleme veya erken ağ başlangıç ayarlamaları gibi işlemleri yapması gerektiği durumlarda bir sunrise uzantısı kullanın.
 
 Normal entegrasyonlar için ise, standart WordPress eklentilerini, MU-plugin'leri ve belgelenmiş Ultimate Multisite hook'larını tercih edin. Sunrise kodu çok erken çalıştığı için, küçük, savunmacı ve bağımlılıktan arındırılmış kalmalıdır.
 
-## Dosya adlandırma kuralı
+## Dosya adlandırma kuralı {#file-naming-convention}
 
 `ultimate-multisite-` ile başlayan bir add-on dizininde `sunrise.php` adında bir PHP dosyası oluşturun:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Eşleşen dosyalar, add-on yoluna göre alfabetik sırada yüklenir.
 
-## Dosyayı nereye koymalı
+## Dosyayı nereye koymalı {#where-to-place-the-file}
 
 Dosyayı, sunrise davranışına sahip olan add-on'ın kök dizinine yerleştirin:
 
@@ -45,7 +45,7 @@ Tarama, mevcut `WP_PLUGIN_DIR` değerine göre değil, `WP_CONTENT_DIR`'e göre 
 
 Lütfen oluşturulan `wp-content/sunrise.php` dosyasını doğrudan düzenlemeyin. Yükleyici, Ultimate Multisite'ın kurup güncellediği çekirdek sunrise dosyasını çatallamadan (forking) özel kodun sunrise davranışını genişletmesine olanak tanır.
 
-## Kullanılabilir Hook'lar ve Filtreler
+## Kullanılabilir Hook'lar ve Filtreler {#hooks-and-filters-available}
 
 Addon sunrise dosyaları, Ultimate Multisite alan adı eşlemesi yüklendikten ve WordPress `ms_loaded` olayını tetiklemeden sonra çalışır. Bu noktada bir sunrise dosyası şunları yapabilir:
 
@@ -58,7 +58,7 @@ Ultimate Multisite, sunrise yükleyicisi bittikten sonra `wu_sunrise_loaded` ola
 
 Yalnızca sunrise aşamasında zaten yüklenmiş olan fonksiyonları çağırın. Veritabanı yoğun işler, şablon oluşturma, HTTP istekleri ve normal eklenti yükleme sırasının tamamlandığını varsayan kodlardan kaçının.
 
-## Minimal örnek
+## Minimal örnek {#minimal-example}
 
 ```php
 <?php

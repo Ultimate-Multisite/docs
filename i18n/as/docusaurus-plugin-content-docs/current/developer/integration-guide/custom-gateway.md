@@ -3,11 +3,11 @@ title: কাষ্টম গেটৱে বিকাশ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# কাষ্টম গেটৱে উন্নয়ন
+# কাষ্টম গেটৱে উন্নয়ন {#custom-gateway-development}
 
 আপুনি `Base_Gateway` ক্লাছ বিস্তাৰ কৰি কাষ্টম পৰিশোধ গেটৱে সৃষ্টি কৰিব পাৰে।
 
-## গেটৱে ক্লাছ
+## গেটৱে ক্লাছ {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## গেটৱে পঞ্জীয়ন কৰক
+## গেটৱে পঞ্জীয়ন কৰক {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## মূল পদ্ধতিসমূহ
+## মূল পদ্ধতিসমূহ {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | ধন-ঘূৰাই দিয়াৰ অনুৰোধসমূহ পৰিচালনা কৰক |
 | `get_payment_methods()` | কোনো গ্ৰাহকৰ বাবে সংৰক্ষিত পৰিশোধ পদ্ধতিসমূহ ঘূৰাই দিয়ক |
 
-## পুনৰাবৃত্ত সদস্যপদসমূহৰ বাবে নবীকৰণ প্ৰমাণপত্ৰ
+## পুনৰাবৃত্ত সদস্যপদসমূহৰ বাবে নবীকৰণ প্ৰমাণপত্ৰ {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0-এ গেটৱে সংযোজনসমূহক `auto_renew` স্থায়ীভাৱে সংৰক্ষিত হোৱাৰ আগতে কোনো পুনৰাবৃত্ত সদস্যপদৰ পুনৰ্ব্যৱহাৰযোগ্য নবীকৰণ প্ৰমাণপত্ৰ আছে নে নাই জনাবলৈ দিয়ে। `wu_membership_has_renewal_credential` হুক কৰক আৰু ঘূৰাই দিয়ক:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 নতুন পুনৰ্ব্যৱহাৰযোগ্য প্ৰমাণপত্ৰ সংৰক্ষিত হোৱাৰ পিছত আপোনাৰ গেটৱেৰ সফল পুনৰ-অনুমোদন প্ৰবাহৰ অংশ হিচাপে অনুপস্থিত-প্ৰমাণপত্ৰ চিহ্ন মচি পেলাওক।
 
-## পৰামৰ্শ
+## পৰামৰ্শ {#tips}
 
 - বিফলতাত সদায় `WP_Error` ঘূৰাই দিয়ক যাতে Ultimate Multisite-এ ত্ৰুটি প্ৰদৰ্শন পৰিচালনা কৰিব পাৰে
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - গেটৱে-নিৰ্দিষ্ট লগিঙৰ বাবে `wu_log_add()` ব্যৱহাৰ কৰক
 
-## AI সংযোজক প্ৰদানকাৰীৰ সক্ষমতাসমূহ
+## AI সংযোজক প্ৰদানকাৰীৰ সক্ষমতাসমূহ {#ai-connector-provider-capabilities}
 
 AI সংযোজক-সমৰ্থিত কাৰ্য্যসমূহ কল কৰা কাষ্টম সংযোজনসমূহে AI Provider for Anthropic Max v1.3.0-ৰ সৈতে প্ৰৱৰ্তিত সমৰ্থিত OAuth প্ৰদানকাৰী ছেটৰ সৈতে মিল ৰাখিব লাগে:
 

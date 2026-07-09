@@ -3,13 +3,13 @@ title: Personnaliser votre formulaire d’inscription
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personnaliser votre formulaire d’inscription
+# Personnaliser votre formulaire d’inscription {#customizing-your-registration-form}
 
 Pour donner à votre réseau une apparence unique par rapport à tous les autres SaaS construits sur la plateforme WordPress, Ultimate Multisite vous permet de personnaliser vos pages d’inscription et de connexion avec notre fonctionnalité **Checkout Forms**.
 
 Bien qu’ils constituent un moyen simple et flexible d’expérimenter différentes approches lorsque vous essayez de convertir de nouveaux clients, ils sont principalement utilisés pour créer des formulaires d’inscription personnalisés. Cet article vise à vous montrer comment vous pouvez le faire.
 
-## Pages de connexion et d’inscription :
+## Pages de connexion et d’inscription : {#login-and-registration-pages}
 
 Lors de l’installation de Ultimate Multisite, celui-ci crée automatiquement des pages de connexion et d’inscription personnalisées sur votre site principal. Vous pouvez modifier ces pages par défaut à tout moment en vous rendant sur votre page **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Voyons maintenant d’autres options qui restent pertinentes pour le processus d
 
 Et voilà toutes les options liées à la connexion et à l’inscription que vous pouvez personnaliser ! N’oubliez pas d’enregistrer vos réglages après avoir terminé de les modifier.
 
-## Utiliser plusieurs formulaires d’inscription :
+## Utiliser plusieurs formulaires d’inscription : {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 propose un éditeur de formulaire de checkout qui vous permet de créer autant de formulaires que vous le souhaitez, avec différents champs, produits proposés, etc.
 
@@ -69,7 +69,7 @@ Vous pouvez également modifier ou dupliquer les formulaires que vous avez déj�
 
 Si vous sélectionnez étape unique ou multi-étapes, le formulaire de checkout sera déjà prérempli avec les étapes de base nécessaires à son fonctionnement. Ensuite, si vous le souhaitez, vous pouvez y ajouter des étapes supplémentaires.
 
-### Modifier un Checkout Form :
+### Modifier un Checkout Form : {#editing-a-checkout-form}
 
 Comme nous l’avons mentionné précédemment, vous pouvez créer des formulaires de checkout pour différents objectifs. Dans cet exemple, nous allons travailler sur un formulaire d’inscription.
 
@@ -131,11 +131,11 @@ Pour obtenir le shortcode de votre formulaire, cliquez sur **Générer un shortc
 
 _**Remarque :** Vous devrez ajouter ce shortcode à votre page d’inscription afin que ce formulaire de paiement y soit ajouté._
 
-## Pré-sélection des produits et des modèles via les paramètres d’URL :
+## Pré-sélection des produits et des modèles via les paramètres d’URL : {#pre-selecting-products-and-templates-via-url-parameters}
 
 Si vous souhaitez créer des tableaux de prix personnalisés pour vos produits et pré-sélectionner dans le formulaire de paiement le produit ou le modèle que votre client choisit depuis votre tableau des prix ou votre page de modèles, vous pouvez utiliser des paramètres d’URL pour cela.
 
-### **Pour les plans :**
+### **Pour les plans :** {#for-plans}
 
 Allez dans **Ultimate Multisite > Produits > Sélectionner un plan**. Vous devriez voir le bouton **Cliquer pour copier le lien partageable** en haut de la page. C’est le lien que vous pouvez utiliser pour pré-sélectionner ce plan spécifique dans votre formulaire de paiement.
 
@@ -143,7 +143,7 @@ Allez dans **Ultimate Multisite > Produits > Sélectionner un plan**. Vous devri
 
 Notez que ce lien partageable n’est valide que pour les **Plans**. Vous ne pouvez pas utiliser de liens partageables pour des forfaits ou des services.
 
-### Pour les modèles :
+### Pour les modèles : {#for-templates}
 
 Si vous souhaitez pré-sélectionner des modèles de site dans votre formulaire de paiement, vous pouvez utiliser le paramètre : **?template_id=X** dans l’URL de votre page d’inscription. Le « X » doit être remplacé par le **numéro d’ID du modèle de site**. Pour obtenir ce numéro, allez dans **Ultimate Multisite > Sites**.
 

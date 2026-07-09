@@ -4,11 +4,11 @@ title: الإجراء - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 يتم إطلاقه مباشرة قبل تعيين ملف تعريف الارتباط للمصادقة.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,11 +19,11 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | مخطط المصادقة. القيم تشمل 'auth' أو 'secure_auth'. |
 | $token | `string` | رمز جلسة المستخدم لاستخدامه لهذا الملف. |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 - 4.9.0: تم إضافة معلمة <code>$token</code>.
 
-### Source
+### Source {#source}
 
 تم تعريفه في [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) في السطر 124

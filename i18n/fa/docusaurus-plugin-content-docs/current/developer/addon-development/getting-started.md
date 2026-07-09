@@ -3,9 +3,9 @@ title: شروع کار با توسعه Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# توسعه افزونه
+# توسعه افزونه {#addon-development}
 
-## ساختار افزونه
+## ساختار افزونه {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## قالب فایل اصلی افزونه
+## قالب فایل اصلی افزونه {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## نمونه مدل سفارشی
+## نمونه مدل سفارشی {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## یکپارچه‌سازی صفحه مدیریت
+## یکپارچه‌سازی صفحه مدیریت {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## آزمایش Addon شما
+## آزمایش Addon شما {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## نقاط توسعه v2.13.0
+## نقاط توسعه v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 چندین نقطه توسعه اضافه می‌کند که برای Addonهایی که با مستأجران مستقل، دامنه‌های پرداخت، یا خودکارسازی DNS ارائه‌دهنده میزبان یکپارچه می‌شوند مفید هستند.
 
-### نشانی‌های مدیریت SSO و سایت اصلی
+### نشانی‌های مدیریت SSO و سایت اصلی {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### دامنه‌های پایه فرم پرداخت
+### دامنه‌های پایه فرم پرداخت {#checkout-form-base-domains}
 
 از `wu_checkout_form_base_domains` زمانی استفاده کنید که Addon شما دامنه‌های پایه مشترک اضافی ارائه می‌دهد که باید به‌جای نگاشت‌های سفارشی برای هر سایت، مانند دامنه‌های **Site URL** فرم پرداخت رفتار کنند:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite این میزبان‌ها را نرمال‌سازی می‌کند و رکوردهای خودکار دامنه نگاشت‌شده برای هر سایت را برای آن‌ها نادیده می‌گیرد.
 
-### ایجاد خودکار رکورد دامنه
+### ایجاد خودکار رکورد دامنه {#automatic-domain-record-creation}
 
 از `wu_should_create_domain_record_for_site` زمانی استفاده کنید که Addon شما نیاز دارد ایجاد خودکار رکورد دامنه را برای یک سایت تازه ایجادشده سرکوب یا به تعویق بیندازد:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 یکپارچه‌سازی‌های ارائه‌دهنده میزبان که به `wu_add_subdomain` گوش می‌دهند، می‌توانند هنگام ایجاد سایت‌ها رکوردهای DNS سمت ارائه‌دهنده ایجاد کنند. اگر هیچ یکپارچه‌سازی برای آن اقدام ثبت نشده باشد، Ultimate Multisite کار پس‌زمینه خالی را نادیده می‌گیرد.
 
-## مراحل بعدی
+## مراحل بعدی {#next-steps}
 
 - [مرجع Hooks](/developer/hooks) را برای اقدام‌ها و فیلترهای موجود مرور کنید
 - [نمای کلی REST API](/developer/rest-api/overview) را برای یکپارچه‌سازی API بررسی کنید

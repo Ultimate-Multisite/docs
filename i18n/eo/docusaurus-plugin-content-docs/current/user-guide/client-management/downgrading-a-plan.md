@@ -3,13 +3,13 @@ title: Plan de lafado
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plan de la planajni (v2)
+# Plan de la planajni (v2) {#downgrading-a-plan-v2}
 
 _**IMPORTANTE NOTA: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x.**_
 
 Downgrade de plan aŭ subskribo estas grava akcio, kiun viaj klientoj povas fari, se ili havas limitan budgeton aŭ decidas, ke ili ne bezonas multaj resurs por gordi sian subsite.
 
-## Kiel downgradigi planon
+## Kiel downgradigi planon {#how-to-downgrade-a-plan}
 
 Viaj klientoj povas downgrade sian planon kiamporti per logi-in al sia subsite admin dashboard kaj kliki **Change** (Mangi) sub sia konto paĝo.
 
@@ -25,7 +25,7 @@ Por procedi, uzanto nur bezonas kliki la butonon **Complete Checkout** (Finalizi
 
 ![Konto paĝo montrante banner pri pendanta ŝanĝo de membriado](/img/account-page/pending-change.png)
 
-### Kion okazas, kiam uzanto downgradigas sian planon
+### Kion okazas, kiam uzanto downgradigas sian planon {#what-happens-when-a-user-downgrades-their-plan}
 
 Ĝi estas grava noti, ke downgrade de la planon ne ŝanĝas la ekzistantan konfiguracion en la subsite de la uzanto.
 
@@ -37,7 +37,7 @@ Por postoj superantaj la limojn setitita en la plan, vi havas 3 malsamajn opcion
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Kion okazas kun la pago
+### Kion okazas kun la pago {#what-happens-to-the-payment}
 
 En versio 2.0, ĝi ne bezonas pliaj ajustoj pri proration en la pago.
 

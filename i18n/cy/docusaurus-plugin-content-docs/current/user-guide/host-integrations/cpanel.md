@@ -3,17 +3,17 @@ title: Ychwanegiad cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Ymddianolwg cPanel
+# Ymddianolwg cPanel {#cpanel-integration}
 
-## Cyflwyniadau
+## Cyflwyniadau {#overview}
 Mae cPanel yn un o'r cyfannau gwylio web (web hosting control panel) sydd yn hanfodol i lawer ychwanegwyr gweithredol a chwarae (shared and dedicated hosting providers). Mae’r cyfathriau hwn yn sylw'r cysylltiad domain yn awtomatig rhwng Ultimate Multisite a cPanel, gan gael eich cyflwyniadau alias a subdomains yn awtomatig i'ch cyfrifol cPanel.
 
-## Adranau
+## Adranau {#features}
 - Creu domenaid addol (addon domain) yn awtomatig mewn cPanel
 - Creu subdomain yn awtomatig mewn cPanel (ar gyfer y chwarae subdomain multisite)
 - Ailta domenaid pan cael eu taro pan fydd y cyfathriau wedi'u ddifynnu
 
-## Cyflwyniadau
+## Cyflwyniadau {#requirements}
 Rhaid i'r cywiroedd canlynol fod yn cael eu cyflwyno mewn ffeil `wp-config.php` eich:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Y cyflwyniad defnyddiol yw 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Y cyflwyniad defnyddiol yw /public_html
 ```
 
-## Cynllunau Cyfeiriadwy
+## Cynllunau Cyfeiriadwy {#setup-instructions}
 
-### 1. Derbyn eich Cyfrifolion cPanel
+### 1. Derbyn eich Cyfrifolion cPanel {#1-get-your-cpanel-credentials}
 
 1. Derbyn eich genedig username a cyfrifolion (password) o'r ychwanegwr gweithredol eich chwarae (hosting provider).
 2. Cynllunwch eich host cPanel (oeddf `cpanel.yourdomain.com` neu `yourdomain.com:2083`).
 
-### 2. Ymddangos Cywiroedd i wp-config.php
+### 2. Ymddangos Cywiroedd i wp-config.php {#2-add-constants-to-wp-configphp}
 
 Ymddangos y cywiroedd canlynol i ffeil `wp-config.php` eich:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Gwahanu os oes eich cPanel yn defnyddio port 
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Gwahanu os mae eich cyfrifol document root yn gwrthod
 ```
 
-### 3. Gynllunio'r Cyfathriau
+### 3. Gynllunio'r Cyfathriau {#3-enable-the-integration}
 
 1. Yn eich admin WordPress, mynd i Ultimate Multisite > Settings
 2. Myndwch i'r tab "Domain Mapping" (Mapiadau Domen)
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Gwahanu os mae eich cyfrifol do
 4. Gynnalwch y cysylltiad cPanel yn llai (Enable the cPanel integration)
 5. Clic ar "Save Changes" (Safwch y newidiadau)
 
-## Sut mae hyn yn gweithio
+## Sut mae hyn yn gweithio {#how-it-works}
 
-### Addon Domains (Domenau Ymddangosol)
+### Addon Domains (Domenau Ymddangosol) {#addon-domains}
 
 Pan cael ei mappio'r domen mewn Ultimate Multisite:
 
@@ -71,7 +71,7 @@ Pan cael ei mappio'r domen mewn Ultimate Multisite:
 2. Mae'r domen wedi'i cyflwyno i gwneud y cyfeiriad i'r dyfodol (root directory) eich gweithredol
 3. Pan cael ei ffwrdd y mappio domen, bydd y cysylltiad yn ffwrdd y addon domain o cPanel
 
-### Subdomains (Subdomenaid)
+### Subdomains (Subdomenaid) {#subdomains}
 
 Ar gyfer cyflwyniad multisite subdomain, pan cael site newydd cael ei creu:
 
@@ -79,7 +79,7 @@ Ar gyfer cyflwyniad multisite subdomain, pan cael site newydd cael ei creu:
 2. Mae'n anfon gyfle i API cPanel i dros y subdomain
 3. Mae'r subdomain wedi'i cyflwyno i gwneud y cyfeiriad i'r dyfodol (root directory) eich gweithredol
 
-## Notedau pwysig
+## Notedau pwysig {#important-notes}
 
 - Mae'r cysylltiad yn defnyddio API2 o cPanel i chyfathogh gyda'ch cyfrifau cPanel
 - Caiff ychwanegau mewn cyfrifau cPanel i dros addon domains a subdomains
@@ -87,20 +87,20 @@ Ar gyfer cyflwyniad multisite subdomain, pan cael site newydd cael ei creu:
 
 - Mae'r cysylltiad yn cael ei chyflwyno'r cyfrifau DNS; byddwch yn rhaid i chi ddangos eich domenion i'r cyfeiriad IP o'ch gweithredol
 
-## Cynllunio (Troubleshooting)
+## Cynllunio (Troubleshooting) {#troubleshooting}
 
-### Pัญหาau mewn cysylltiad API
+### Pัญหาau mewn cysylltiad API {#api-connection-issues}
 - Gwylio bod eich genywir a gyfrifau cPanel yn correg
 - Assuredd bod eich host cPanel yn correg ac yn cael ei cyffredin
 - Sicrhewch bod eich cyfrifau cPanel wedi'u cael ychwanegau sydd ei angen
 - Gofal i ddefnyddio'r URL llawn ar gyfer y host (e.e., `https://cpanel.yourdomain.com`)
 
-### Domen nid wedi cael ei dros
+### Domen nid wedi cael ei dros {#domain-not-added}
 - Gwylio'r log Ultimate Multisite am unrhyw mesg erorau
 - Assuredd bod y domen nid wedi cael ei dros i cPanel
 - Sicrhewch bod eich cyfrifau cPanel nid wedi cyrraedd ei hanwy ar gyfer addon domains neu subdomains
 
-### Pethau gyda Sertifig SSL
+### Pethau gyda Sertifig SSL {#ssl-certificate-issues}
 
 - Mae’r y cyfathrebu (integration) nid yn gwneud y cyflenwi sertifig SSL.
 - Byddwch yn angen i ddefnyddio'r toolau SSL/TLS o cPanel neu ffurf AutoSSL i gyflenwi sertifigau SSL ar gyfer eich domenaid.

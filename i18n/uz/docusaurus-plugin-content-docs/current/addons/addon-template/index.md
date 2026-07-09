@@ -3,25 +3,25 @@ title: Qo‘shimcha shabloni
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Qo‘shimcha shabloni
+# Qo‘shimcha shabloni {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Talablar
+## Talablar {#requirements}
 
 - WordPress 5.3 yoki undan yuqori
 - PHP 7.4 yoki undan yuqori
 - Multisite Ultimate plagini (faol)
 
-## O‘rnatish
+## O‘rnatish {#installation}
 
 1. Qo‘shimcha fayllarini `/wp-content/plugins/` katalogingizga yuklang
 2. WordPress ichidagi 'Pluginlar' menyusi orqali pluginni faollashtiring
 3. Qo‘shimcha sozlamalarini tarmoq adminida sozlang
 
-## Ishlab chiqish
+## Ishlab chiqish {#development}
 
-### Sozlash
+### Sozlash {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Loyiha tuzilmasi
+### Loyiha tuzilmasi {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kodni modernizatsiya qilish qoidalari
 ```
 
-### Testlash
+### Testlash {#testing}
 
 Qo‘shimcha keng qamrovli testlash freymvorkini o‘z ichiga oladi:
 
@@ -75,44 +75,44 @@ Qo‘shimcha keng qamrovli testlash freymvorkini o‘z ichiga oladi:
 - **Test qamrovi**: Kod qamrovini kuzatish uchun sozlangan
 - **Multisite testlash**: Testlar multisite muhitida ishlaydi
 
-### Kod standartlari
+### Kod standartlari {#code-standards}
 
 - **WordPress kodlash standartlari**: PHPCS orqali majburiy qo‘llanadi
 - **PHP 7.4+ mosligi**: Zamonaviy PHP funksiyalari qo‘llab-quvvatlanadi
 - **Statik tahlil**: Tur tekshiruvi uchun PHPStan integratsiyasi
 - **Kodni modernizatsiya qilish**: PHP yangilanishlari uchun Rector qoidalari
 
-### Yig‘ish tizimi
+### Yig‘ish tizimi {#build-system}
 
 - **Assetlarni qayta ishlash**: CSS/JS fayllari uchun minifikatsiya
 - **Tarjima**: POT faylini yaratish
 - **Qadoqlash**: Tarqatish uchun arxiv yaratish
 - **Ishlab chiqish rejimi**: Nosozliklarni tuzatish uchun minifikatsiya qilinmagan assetlar
 
-## Konfiguratsiya
+## Konfiguratsiya {#configuration}
 
 Qo‘shimcha tarmoq admin interfeysi orqali kirish mumkin bo‘lgan turli konfiguratsiya variantlarini qo‘llab-quvvatlaydi.
 
-## Hooklar va filtrlar
+## Hooklar va filtrlar {#hooks-and-filters}
 
-### Amallar
+### Amallar {#actions}
 
 - `ultimate-multisite-addon-template_init` - Qo‘shimcha ishga tushirilgandan keyin ishga tushiriladi
 - `ultimate-multisite-addon-template_loaded` - Barcha qo‘shimcha fayllari yuklangandan keyin ishga tushiriladi
 
-### Filtrlar
+### Filtrlar {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Qo‘shimcha sozlamalarini o‘zgartirish
 - `ultimate-multisite-addon-template_enabled` - Qo‘shimchaning yoqish/o‘chirish holatini bekor qilib belgilash
 
-## Litsenziya
+## Litsenziya {#license}
 
 Ushbu qo‘shimcha GPL v3 yoki undan keyingi versiya ostida litsenziyalangan.
 
-## Qo‘llab-quvvatlash
+## Qo‘llab-quvvatlash {#support}
 
 Qo‘llab-quvvatlash va hujjatlar uchun [MultisiteUltimate.com](https://multisiteultimate.com) saytiga tashrif buyuring
-## O‘zgarishlar jurnali
+## O‘zgarishlar jurnali {#changelog}
 
 - Versiya 1.0.1 (2025-09-28): prefiksni ultimate-multisite ga o‘zgartirish; matn domenini yangilash; versiyani oshirish.
 

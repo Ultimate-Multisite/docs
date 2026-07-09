@@ -4,11 +4,11 @@ title: Sefa - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Sefa: wu_return_url
+# Sefa: wu_return_url {#filter-wureturnurl}
 
 Bvumira vagadziri kuti vachinje gateway return URL inoshandiswa mushure memaitiro echeckout.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Bvumira vagadziri kuti vachinje gateway return URL inoshandiswa mushure memaitir
 | $payment | `\WP_Ultimo\Models\Payment` | instance yekubhadhara yeUltimate Multisite. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | odha yazvino yekariti yeUltimate Multisite. |
 
-### Kubva
+### Kubva {#since}
 
 - 2.0.20
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu[`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) pamutsetse 683
 
 
-## Zvinodzosa
+## Zvinodzosa {#returns}

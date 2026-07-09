@@ -4,20 +4,20 @@ title: Harakat - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Amal: add_network
+# Amal: add_network {#action-addnetwork}
 
 Yangi tarmoq qo‘shilgandan keyin ishga tushadi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
 | $new_network_id | `int` | Qo‘shilgan tarmoq IDsi. |
 | $r | `array` | Tarmoq argumentlarining to‘liq assotsiativ massivi. |
 
-### Joriy etilgan versiya
+### Joriy etilgan versiya {#since}
 
 - 1.3.0
-### Manba
+### Manba {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1304) faylida 1304-qatorda aniqlangan

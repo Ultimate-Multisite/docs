@@ -3,7 +3,7 @@ title: Rangitaki Panonitanga GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Rangitaki Panonitanga GoCardless
+# Rangitaki Panonitanga GoCardless {#gocardless-changelog}
 
 Putanga: 1.0.3 - I tukuna i te 2026-05-05
 * Whakatika: Kua horoia ināianei ngā pae tārewa kua pani ina whakakāhoretia tētahi mematanga GoCardless i te wā kei te āhua tārewa, āhua pupuri rānei

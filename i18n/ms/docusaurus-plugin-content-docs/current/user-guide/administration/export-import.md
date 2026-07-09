@@ -3,17 +3,17 @@ title: Eksport & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksport & Import
+# Eksport & Import {#export--import}
 
 Ultimate Multisite 2.9.0 menambah alat **Eksport & Import** untuk tapak tunggal di bawah **Tools > Export & Import**. Gunakan alat ini apabila anda perlu membungkus satu tapak WordPress sebagai fail ZIP, memulihkan fail ZIP tersebut, atau memindahkan tapak antara pemasangan WordPress Ultimate Multisite dan tapak tunggal yang serasi.
 
-## Keizinan yang Diperlukan
+## Keizinan yang Diperlukan {#required-permissions}
 
 Anda mesti log masuk sebagai pentadbir yang boleh mengakses menu **Tools** WordPress pada tapak yang dieksport atau diimport. Pada rangkaian multisite, gunakan akaun pentadbir rangkaian apabila mengeksport atau mengimport subsite daripada alat Ultimate Multisite pada peringkat rangkaian.
 
 Muat turun ZIP eksport disajikan melalui titik akhir muat turun yang memerlukan pengesahan, jadi pastikan sesi pentadbir kekal aktif sehingga muat turun selesai dan jangan kongsikan URL muat turun yang dijana secara awam.
 
-## Mengeksport tapak ke ZIP
+## Mengeksport tapak ke ZIP {#exporting-a-site-to-a-zip}
 
 1. Di pentadbir WordPress untuk tapak yang anda ingin salin, pergi ke **Tools > Export & Import**.
 2. Buka kawasan eksport dan pilih tapak yang anda ingin bungkus.
@@ -23,7 +23,7 @@ Muat turun ZIP eksport disajikan melalui titik akhir muat turun yang memerlukan 
 
 Simpan ZIP di lokasi yang selamat. Ia mungkin mengandungi kandungan tapak, tetapan, fail media, dan aset kod yang dipilih.
 
-## Apa yang termasuk dalam eksport
+## Apa yang termasuk dalam eksport {#what-the-export-includes}
 
 ZIP eksport boleh merangkumi:
 
@@ -34,7 +34,7 @@ ZIP eksport boleh merangkumi:
 
 Saiz ZIP yang tepat bergantung pada jumlah media, plugin dan tema yang dipilih, dan saiz jadual pangkalan data tapak.
 
-## Mengimport tapak dari ZIP
+## Mengimport tapak dari ZIP {#importing-a-site-from-a-zip}
 
 1. Pergi ke **Tools > Export & Import** pada tapak WordPress destinasi.
 2. Buka kawasan import dan muat naik ZIP yang dicipta oleh alat Export & Import.
@@ -46,7 +46,7 @@ Saiz ZIP yang tepat bergantung pada jumlah media, plugin dan tema yang dipilih, 
 
 Pada pemasangan WordPress tapak tunggal, mengimport ZIP akan menggantikan tapak semasa dengan tapak yang diimport. Sediakan sandaran penuh tapak sasaran sebelum anda mula, dan elakkan memulakan pelbagai import untuk tapak yang sama pada masa yang sama.
 
-## Batasan dan nota keserasian
+## Batasan dan nota keserasian {#limitations-and-compatibility-notes}
 
 - Direktori muat naik atau perpustakaan media yang sangat besar boleh menghasilkan fail ZIP yang besar. Sahkan had muat naik PHP, had pelaksanaan, ruang cakera, memori, dan tetapan masa tamat pelayan sebelum mengeksport atau mengimport tapak yang besar.
 - Perpustakaan media yang sangat besar mungkin perlu dipindahkan semasa jendela penyelenggaraan trafik rendah.

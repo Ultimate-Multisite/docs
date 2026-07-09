@@ -3,7 +3,7 @@ title: Ndi chii WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Ndi Zvinhu WordPress Multisite?
+# Ndi Zvinhu WordPress Multisite? {#what-is-wordpress-multisite}
 
 Muviri wecore, WordPress inoratid zvinhu chinhu chinotsoita neitaura yakazvo kuitaura kune 2010 kana kukumbira WordPress 3.0. Kuteura, achiine akaita zvinhu zvakawanda kuti zvisimbire zvinhu zvinotanga uye kuti zvinokurudzira kubatsirwa kwakawanda.
 
@@ -11,7 +11,7 @@ Muviri, WordPress multisite inogona kuoneka seizvi: Chinhu chinotanga neUniversi
 
 ##
 
-## WordPress Multisite Iyi Chii Zvinhu?
+## WordPress Multisite Iyi Chii Zvinhu? {#what-exactly-is-wordpress-multisite}
 
 Multisite ndiyo chinhu chinotanga neWordPress chinokubatsira kuti sites dzakawanda dzishere nedzo installation imwe yaWordPress. Kana multisite inopfungwa, installation imwe yaWordPress inobva kuitaura nezve **network ye sites**.
 
@@ -23,7 +23,7 @@ Iyi chii chinotanga nemain advantages dze multisite, sezvo inokubatsira kuti uta
 
 ##
 
-## Subdomain kana Subdirectory?
+## Subdomain kana Subdirectory? {#subdomain-or-subdirectory}
 
 Kune nzira dzimwe dzeita multisite yaWordPress – uye unofanira kutaura iye kana ukanga inobva neinstallation imwe yamultisite:
 
@@ -49,7 +49,7 @@ Chimweya chete chekoche chinogona kuita zvinhu zvakawanda munzira dzinogona kuit
 
 Kutanga kunenge kune subdirectory mode, subsites pamweye ne network inoshandiswa subdomain dzine kuva vhizha nekuti search engines vanonzi kuti ndiri websites dzakasiyana, izvi rinoreva kuti content inoshandiswa mu subsite yakiri haisi inogona kuita kunzwisisa (interfere) SEO performance ya subsites dzine.
 
-## The Super Admin
+## The Super Admin {#the-super-admin}
 
 Single-site WordPress installations dzinokubatsira kuita zvinhu zvinobatsira munzira dzinogona kuita (unlimited number of users) uye kupa vanhu aya roles dzakasiyana nepermissions dzakasiyana.
 
@@ -63,7 +63,7 @@ Plugins uye themes dzinokubatsira kunoone kana kuenda (install or uninstall) kun
 
 _Note: kune kuona, kuwana munhu wese muunhu wako uye kunopa super admin status kunoita kuti iwe uone chokwadi chete pamusoro pezvinangwa zvaunoda kuita. Sei nzira yakare, super admins vevevanhu vanogona kuenda kuenda ndiri kuva munhu wako we super admin, zvichizviharisa kuti uve mune kufamba kwemapuro dzako pane panel yako ye admin yavo. Kuti Ultimate Multisite vana vaone kuti vanogona kuita zvinhu zvakawanda pamusoro pesuper admins vakawanda, tinenge tiri na add-on rinoda kutaura rinoda kutaura Support Agents. Add-on iyi inokupa uwe kugadzira munhu wose wekuti agent – nekuva nemabhuku anogona kuita zvinhu zvakasiendeki zvinodzidzisa pamusoro pezvinangwa zavo pamusoro pehondo yenyika._
 
-## Chii chine kuenda pakati panzvimbo dzakaipa uye chii chinovaka
+## Chii chine kuenda pakati panzvimbo dzakaipa uye chii chinovaka {#what-is-shared-among-subsites-and-what-is-not}
 
 Kune chii chiti chine kuenda pakati panzvimbo dzakaipa, zvakare tinokumbira kuti munhu wese we subsites vanogona kuita zvinoshandiswa pamusoro pehondo yenyika.
 
@@ -95,7 +95,7 @@ _Chii chiri chinotevera ndicho: Tinobona kuti zvinhasi izvi zvinogona kuva zvisi
 
 Kuti chii kuti user table inoshandiswa, users vanogone kuva uye kuva mune subsites neadmins vesubsite kana super admin, uye vanogone kuno shandisa roles dzakasiyana-kasi munyanya.
 
-## Zvinhu zvinoreva zvinhu (Performance considerations)
+## Zvinhu zvinoreva zvinhu (Performance considerations) {#user-management-on-wordpress-multisite}
 
 WordPress multisite inenge yakakwana pane kuita nenzaniso dzinogona kubatsira. Izviya dzinogone kuonekwa nekuti [WordPress.com](https://WordPress.com), Edublogs, uye Campuspress ndivo services dzine multisite, uye munhu wese anogona kuita nevanhu vamilioni vesites.
 

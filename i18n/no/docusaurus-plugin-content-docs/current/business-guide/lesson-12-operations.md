@@ -3,17 +3,17 @@ title: 'Leksjon 12: Å drive virksomheten'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leksjon 12: Å drive virksomheten
+# Leksjon 12: Å drive virksomheten {#lesson-12-running-the-business}
 
 En plattform er ikke et prosjekt du fullfører – det er en virksomhet du driver. Denne leksjonen dekker den daglige driften av å administrere FitSite: support, fakturering, vedlikehold og hvordan du holder kundene fornøyde.
 
-## Hvor vi slapp
+## Hvor vi slapp {#where-we-left-off}
 
 FitSite er live, og kundene melder seg på. Nå må du drive driften bærekraftig.
 
-## Daglig drift
+## Daglig drift {#daily-operations}
 
-### Overvåking
+### Overvåking {#monitoring}
 
 Sjekk disse daglig (eller sett opp varsler):
 
@@ -22,7 +22,7 @@ Sjekk disse daglig (eller sett opp varsler):
 - **Mislykkede betalinger**: Er det betalingsfeil som krever oppmerksomhet?
 - **Supportforespørsler**: Er det ubesvarte kundehenvendelser?
 
-### Kundestøtte
+### Kundestøtte {#customer-support}
 
 Din nisjefokus er en fordel her. Siden alle kundene dine er treningsstudioer, vil du se de samme spørsmålene gjentatte ganger:
 
@@ -36,7 +36,7 @@ Din nisjefokus er en fordel her. Siden alle kundene dine er treningsstudioer, vi
 
 Bygg kunnskapsbasen din (begynt i Leksjon 8) rundt disse gjentakende spørsmålene. Hver supportbillett som kunne vært en artikkel i kunnskapsbasen, er et signal om at du bør skrive den artikkelen.
 
-### Supportnivåer
+### Supportnivåer {#support-tiers}
 
 Etter hvert som du vokser, bør du strukturere supporten basert på plan:
 
@@ -48,9 +48,9 @@ Etter hvert som du vokser, bør du strukturere supporten basert på plan:
 
 [Support Tickets addon](/addons/support-tickets) kan hjelpe deg med å administrere supportforespørsler i plattformen.
 
-## Fakturering og betalinger
+## Fakturering og betalinger {#billing-operations}
 
-### Periodiske betalinger
+### Periodiske betalinger {#recurring-payments}
 
 Ultimate Multisite håndterer periodisk fakturering automatisk gjennom betalingsgatewayen din. Jobben din er å overvåke følgende:
 
@@ -58,7 +58,7 @@ Ultimate Multisite håndterer periodisk fakturering automatisk gjennom betalings
 - **Dunning**: Sett opp automatisert retries-logikk gjennom betalingsgatewayen din (Stripe håndterer dette godt)
 - **Kanselleringsforespørsler**: Forstå hvorfor kundene forlater deg. Hver kansellering er tilbakemelding.
 
-### Administrere medlemskap
+### Administrere medlemskap {#managing-memberships}
 
 Gå til **Ultimate Multisite > Memberships** for å:
 
@@ -69,13 +69,13 @@ Gå til **Ultimate Multisite > Memberships** for å:
 
 Se [Managing Memberships](/user-guide/administration/managing-memberships) for full referanse.
 
-### Fakturering
+### Fakturering {#invoicing}
 
 Sørg for at fakturaer genereres korrekt for hver betaling. Kunder kan trenge fakturaer for rapportering av forretningsutgifter. Se [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Plattformvedlikehold
+## Plattformvedlikehold {#platform-maintenance}
 
-### WordPress- og plugin-oppdateringer
+### WordPress- og plugin-oppdateringer {#wordpress-and-plugin-updates}
 
 Som nettverksadministrator er du ansvarlig for:
 
@@ -88,14 +88,14 @@ Som nettverksadministrator er du ansvarlig for:
 En ødelagt oppdatering påvirker alle kundesidene på nettverket ditt. Test alltid oppdateringer på en staging-kopi av nettverket ditt først.
 :::
 
-### Sikkerhet
+### Sikkerhet {#security}
 
 - Hold all programvare oppdatert
 - Bruk sterke passord og tofaktorautentisering for admin-kontoer
 - Overvåk etter mistenkelig aktivitet
 - Ha en plan for sikkerhetshendelser
 
-### Ytelse
+### Ytelse {#performance}
 
 Etter hvert som nettverket ditt vokser, overvåk:
 
@@ -105,9 +105,9 @@ Etter hvert som nettverket ditt vokser, overvåk:
 
 Vurder å implementere caching (sidecaching, objektcaching) og en CDN hvis du ikke allerede har gjort det. [Cloudflare integration](/user-guide/host-integrations/cloudflare) håndterer mye av dette.
 
-## Livssyklusstyring av kunder
+## Livssyklusstyring av kunder {#customer-lifecycle-management}
 
-### Redusere frafall (Churn)
+### Redusere frafall (Churn) {#reducing-churn}
 
 Frafall er prosentandelen av kunder som kansellerer hver måned. For en abonnementsvirksomhet er det like viktig å redusere frafall som å skaffe nye kunder.
 
@@ -119,7 +119,7 @@ Frafall er prosentandelen av kunder som kansellerer hver måned. For en abonneme
 - De fant et billigere alternativ → forsterke din nisjeverdi
 - Virksomheten deres stengte → uunngåelig, men spor dette separat
 
-### Oppmuntre til oppgraderinger
+### Oppmuntre til oppgraderinger {#encouraging-upgrades}
 
 Kunder på Starter som har det bra, bør oppmuntres til å oppgradere:
 
@@ -127,7 +127,7 @@ Kunder på Starter som har det bra, bør oppmuntres til å oppgradere:
 - Send målrettede e-poster som fremhever Growth-planfunksjoner de kan dra nytte av
 - Vis frem hva Growth/Pro-kunder har bygget
 
-### Gjenkjøpskampanjer (Win-Back)
+### Gjenkjøpskampanjer (Win-Back) {#win-back-campaigns}
 
 Når en kunde kansellerer:
 
@@ -135,30 +135,30 @@ Når en kunde kansellerer:
 2. Adresser deres bekymring hvis det er mulig
 3. Tilby en rabatt for å komme tilbake (30–60 dager etter kansellering)
 
-## Ukentlige og månedlige rutiner
+## Ukentlige og månedlige rutiner {#weekly-and-monthly-routines}
 
-### Ukentlig
+### Ukentlig {#weekly}
 
 - Gjennomgå nye registreringer og kanselleringer
 - Svar på alle åpne supportbilletter
 - Sjekk plattformytelse og oppetid
 - Gjennomgå mislykkede betalinger
 
-### Månedlig
+### Månedlig {#monthly}
 
 - Analyser nøkkelmålinger (MRR, frafall, nye kunder, oppgraderinger)
 - Gjennomfør WordPress- og plugin-oppdateringer (etter staging-test)
 - Gjennomgå og oppdater kunnskapsbasen basert på supportmønstre
 - Send et nyhetsbrev eller en oppdatering til kundene (nye funksjoner, tips, nyheter fra treningsbransjen)
 
-### Kvartalsvis
+### Kvartalsvis {#quarterly}
 
 - Gjennomgå prissetting mot konkurrenter og kunde-tilbakemeldinger
 - Vurdere maldesign – trenger de oppfriskning?
 - Vurdere hostingkapasitet – må du skalere opp?
 - Gjennomgå og forbedre onboarding basert på aktiveringsdata
 
-## Hva vi lærte i denne leksjonen
+## Hva vi lærte i denne leksjonen {#what-we-built-this-lesson}
 
 - **Daglige overvåkningsrutiner** for oppetid, registreringer, betalinger og support
 - **En lagdelt supportstruktur** tilpasset plannivåer

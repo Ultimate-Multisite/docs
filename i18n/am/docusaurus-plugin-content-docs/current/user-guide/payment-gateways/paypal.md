@@ -3,7 +3,7 @@ title: የPayPal ዝግጅት
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# የPayPal Gateway ማዋቀር (v2)
+# የPayPal Gateway ማዋቀር (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 
@@ -13,13 +13,13 @@ _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultima
 
 ይህ ውህደትን ለማድረግ የሚያስፈልገውን የAPI መረጃ (credential) ለማግኘት **PayPal Business account** መኖርዎ እንዳለብዎ ልብ ይበሉ።
 
-## በኔትዎርክዎ ላይ PayPalን ማብራት
+## በኔትዎርክዎ ላይ PayPalን ማብራት {#enabling-paypal-on-your-network}
 
 በኔትዎርክዎ ላይ እንደ ተገኝ የክፍያ ዘዴ ለማብራት፣ ወደ **Ultimate Multisite > Settings > Payments** ትር ወዳር በመሄድ ከPayPal አጠገብ ባለው ሳጥን ላይ ምልክት ያድርጉ።
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## በመመሪያ የተሰጠውን የማዋቀር አስማሚ መጠቀም
+## በመመሪያ የተሰጠውን የማዋቀር አስማሚ መጠቀም {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 በክፍያ መግቢያ ማዋቀሪያ ቅንብሮች ውስጥ መመሪያ የተሰጠ የPayPal የማዋቀር አስማሚ (setup wizard) አክሏል። PayPalን ከከፈቱ በኋላ፣ በ**Ultimate Multisite > Settings > Payments** ላይ ባለው አስማሚ ውስጥ በመጠቀም፣ መግቢያውን እንዴት ማገናኘት እንደሚፈልጉ መምረጥ እና ከመስቀሉ በፊት ምን ዓይነት መረጃዎች እንደሚያስፈልጉ ማረጋገጥ ይችላሉ።
 
@@ -30,7 +30,7 @@ Ultimate Multisite 2.10.0 በክፍያ መግቢያ ማዋቀሪያ ቅንብሮ
 
 በአስማሚው ውስጥ የOAuth አማራጭ ካላዩ፣ ከታች ያለውን የእጅ መረጃ ማስገቢያ ሂደት ይጨርሱ። ይህ መግቢያ ከቀደምት Ultimate Multisite 2.x ስሪቶች ጋር ተመሳሳይ የPayPal Business API መረጃዎችን ይጠቀማል።
 
-## የPayPal API መረጃዎችን ማግኘት
+## የPayPal API መረጃዎችን ማግኘት {#getting-the-paypal-api-credentials}
 
 PayPal እንደ የክፍያ መግቢያ ከተበራከ በኋላ፣ ለPayPal API **Username**፣ ለPayPal API **Password** እና ለPayPal API **Signature** መስኮቶችን መሙላት ያስፈልግዎታል።
 

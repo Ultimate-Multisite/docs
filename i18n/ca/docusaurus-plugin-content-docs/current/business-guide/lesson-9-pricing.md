@@ -3,17 +3,17 @@ title: 'Lliçó 9: Prebació per profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Aula 9: Preu per a generar beneficis
+# Aula 9: Preu per a generar beneficis {#lesson-9-pricing-for-profit}
 
 A l'Aula 5 vam establir els preus inicials per als plans de FitSite. Ara, refinejem l'estratègia de preus amb tècniques que augmenten els ingressos, incentiven les actualitzacions i redueixen l'abandó (churn).
 
-## On acab vam
+## On acab vam {#where-we-left-off}
 
 FitSite té plans, templates, checkout, branding i onboarding configurats. El preu inicial era de $49/$99/$199 al mes. Ara, fem que aquest preu treballi més.
 
-## Princpis de preu per a plataformes de ni
+## Princpis de preu per a plataformes de ni {#pricing-principles-for-niche-platforms}
 
-### Preu basat en el valor, no en el cost
+### Preu basat en el valor, no en el cost {#price-on-value-not-cost}
 
 Els teus costos d'hosting poden ser de $5-$15 per site de client. Això no significa que el teu preu hagi de ser de $20. Tu no estem vendent hosting. Estem venent:
 
@@ -24,7 +24,7 @@ Els teus costos d'hosting poden ser de $5-$15 per site de client. Això no signi
 
 Preula basat en el valor que ofereixes, no en el cost de l'ofereix.
 
-### Ancrejar-se a les alternatives
+### Ancrejar-se a les alternatives {#anchor-to-alternatives}
 
 Quan un propietari d'estudi de fitness avalua FitSite, el compara amb:
 
@@ -34,7 +34,7 @@ Quan un propietari d'estudi de fitness avalua FitSite, el compara amb:
 
 Amb $49-$199/mes, FitSite és més barat que un desenvolupador, més capacitador que els constructors genèrics i infinitament millor que no tenir un lloc web.
 
-## Implementació de variacions de preu
+## Implementació de variacions de preu {#implementing-price-variations}
 
 El preu anual incentiva l'compromís i redueix l'abandó. Navega a la pestanya **Price Variations** de cada plan i afegeix les opcions anuals:
 
@@ -46,12 +46,12 @@ El preu anual incentiva l'compromís i redueix l'abandó. Navega a la pestanya *
 
 Afegeix un camp de **Period Selection** al teu formulari de checkout perquè els clients puguin alternar entre la facturació mensual i la anual. Veure [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Per què funciona el preu anual
+### Per què funciona el preu anual {#why-annual-pricing-works}
 
 - **Per a tu**: Efectiu caixa inicial, menor abandó (els clients que paguen anualment són menys propens a cancelar a mitjà de període)
 - **Per a ells**: Estalvis reals, previsible per al pressupost
 
-## Comissions de configuració
+## Comissions de configuració {#setup-fees}
 
 Considera una comissió de configuració de pagament únic per als plans que inclouen configuració manual:
 
@@ -61,7 +61,7 @@ Considera una comissió de configuració de pagament únic per als plans que inc
 
 Configura les comissions de configuració a la secció de preus de cada plan. Veure [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) per detalls.
 
-## Periodes d'essai
+## Periodes d'essai {#trial-periods}
 
 Ofrecer un period d'essai redueix la fricció d'inscripció, però introdueix el risc de no conversió. Per a FitSite:
 
@@ -70,11 +70,11 @@ Ofrecer un period d'essai redueix la fricció d'inscripció, però introdueix el
 
 Configura el period d'essai a la secció de preus del plan Starter activant el toggle **Offer Trial** i establint la durada a 7 dies.
 
-### Fes que els periodes d'essai converteixin
+### Fes que els periodes d'essai converteixin {#making-trials-convert}
 
 Un period d'essai només funciona si el client experimenta valor durant aquest període. La teva seqüència d'onboarding (Aula 8) és crítica aquí: els correus de benvinguda han de ser programats per impulsar l'engatjament durant la finestra de 7 dies.
 
-## Códigos de descompte
+## Códigos de descompte {#discount-codes}
 
 Crea códigos de descompte estratègics per a propòsits específics:
 
@@ -88,7 +88,7 @@ Navega a **Ultimate Multisite > Discount Codes** per crear-hi. Veure [Creating D
 Els descomptes han de ser eines estratègiques, no elements permanents. Si tothom reben un descompte, no és un descompte: és el teu preu real. Ús-hi per campanyes específiques, referències i promocions limitades en el temps.
 :::
 
-## Gestió de impostos
+## Gestió de impostos {#tax-handling}
 
 Si operes en una jurisdicció que exigeix la recollida d'impostos:
 
@@ -98,7 +98,7 @@ Si operes en una jurisdicció que exigeix la recollida d'impostos:
 
 Veure [Tax Handling](/user-guide/payment-gateways/tax-handling) per a una configuració detallada. Si serveixes clients internacionalment, considera l'addon [VAT addon](/addons/vat) per al compliment de la UE.
 
-## Revisió del teu preu
+## Revisió del teu preu {#reviewing-your-pricing}
 
 Després del llançament, revisa els preus trimestralment. Observa:
 
@@ -107,7 +107,7 @@ Després del llançament, revisa els preus trimestralment. Observa:
 - **Abandó per plan**: Si els clients anuals abandonen menys, impulsa el preu anual més fort
 - **Preus de la competència**: Què estan cobrant les alternatives? Estàs posicionat correctament?
 
-## La xarxa FitSite fins ara
+## La xarxa FitSite fins ara {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## El que vam construir en aquesta aula
+## El que vam construir en aquesta aula {#what-we-built-this-lesson}
 
 - **Preu anual** amb un descompte del 20% per incentivar l'compromís
 - **Comissions de configuració** als nivells més alts per cobrir l'esforç d'onboarding

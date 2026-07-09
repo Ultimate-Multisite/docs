@@ -3,15 +3,15 @@ title: Gumawa ng Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Gumawa ng Menu
+# Gumawa ng Menu {#create-menu}
 
 Ang kakayahang **Gumawa ng Menu** ay gumagawa ng mga navigation menu ng WordPress na may suporta para sa magkakaibang navigation label na hiwalay sa mga pamagat ng pahina.
 
-## Pangkalahatang-ideya
+## Pangkalahatang-ideya {#overview}
 
 Pinapalawak ng kakayahang ito ang karaniwang functionality sa paggawa ng menu sa pamamagitan ng kakayahang tumukoy ng parameter na `navigation_label`. Pinapayagan ka nitong gumawa ng mga menu kung saan ang label na ipinapakita sa nabigasyon ay naiiba sa pamagat ng pahina, na nagbibigay ng higit na flexibility sa istruktura ng site at karanasan ng user.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Parameter | Uri | Kinakailangan | Paglalarawan |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Pinapalawak ng kakayahang ito ang karaniwang functionality sa paggawa ng menu sa
 | `location` | string | Hindi | Lokasyon ng theme na pagtatalagahan ng menu na ito, hal. `primary` |
 | `navigation_label` | string | Hindi | Label na ipapakita sa nabigasyon (naiiba sa pamagat ng pahina) |
 
-## Halaga ng Pagbabalik
+## Halaga ng Pagbabalik {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Pinapalawak ng kakayahang ito ang karaniwang functionality sa paggawa ng menu sa
 }
 ```
 
-## Navigation Label kumpara sa Pamagat ng Pahina
+## Navigation Label kumpara sa Pamagat ng Pahina {#navigation-label-vs-page-title}
 
 Pinapayagan ka ng parameter na `navigation_label` na paghiwalayin ang panloob na pangalan ng menu mula sa label na ipinapakita sa mga user:
 
@@ -43,9 +43,9 @@ Kapaki-pakinabang ito kapag:
 - Kailangan mong suportahan ang maraming wika na may magkakaibang haba ng label
 - Gumagawa ka ng mga menu para sa partikular na mga rehiyon o pangkat ng user
 
-## Mga Halimbawa ng Paggamit
+## Mga Halimbawa ng Paggamit {#usage-examples}
 
-### Halimbawa 1: Simpleng Menu na may Navigation Label
+### Halimbawa 1: Simpleng Menu na may Navigation Label {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Gumawa ng pangunahing navigation menu na tinatawag na "Main Navigation" na may n
 }
 ```
 
-### Halimbawa 2: Menu para sa Partikular na Lokasyon ng Theme
+### Halimbawa 2: Menu para sa Partikular na Lokasyon ng Theme {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Gumawa ng footer menu na tinatawag na "Footer Links" na may navigation label na 
 }
 ```
 
-## Integrasyon sa Theme Builder
+## Integrasyon sa Theme Builder {#integration-with-theme-builder}
 
 Kapag ginagamit ang Theme Builder, ang kakayahang Gumawa ng Menu ay:
 
@@ -89,13 +89,13 @@ Kapag ginagamit ang Theme Builder, ang kakayahang Gumawa ng Menu ay:
 3. Itinatalaga ang mga menu sa tamang mga lokasyon ng theme
 4. Sumusuporta sa pagdaragdag ng mga item ng menu pagkatapos gawin
 
-## Mga Kaugnay na Kakayahan
+## Mga Kaugnay na Kakayahan {#related-abilities}
 
 - **`add_menu_item`** — Magdagdag ng mga item sa umiiral na menu
 - **`update_menu`** — Palitan ang pangalan ng menu o italaga muli ito sa lokasyon ng theme
 - **`delete_menu`** — Alisin ang menu mula sa iyong site
 
-## Pinakamahuhusay na Gawi
+## Pinakamahuhusay na Gawi {#best-practices}
 
 - **Gumamit ng malinaw na mga navigation label** — panatilihing maikli at naglalarawan ang mga label para sa mga user
 - **Itugma ang mga lokasyon ng theme** — italaga ang mga menu sa tamang lokasyon ng theme para sa wastong pagpapakita
@@ -103,14 +103,14 @@ Kapag ginagamit ang Theme Builder, ang kakayahang Gumawa ng Menu ay:
 - **Subukan ang pagiging responsive** — tiyaking tama ang pagpapakita ng mga menu sa mga mobile device
 - **I-localize ang mga label** — gumamit ng magkakaibang navigation label para sa magkakaibang bersyon ng wika
 
-## Mga Limitasyon
+## Mga Limitasyon {#limitations}
 
 - Pang-display lang ang mga navigation label; ginagamit pa rin ang panloob na `name` para sa pagkakakilanlan ng WordPress
 - Nag-iiba ang suporta ng theme; hindi lahat ng theme ay sumusuporta sa lahat ng lokasyon ng menu
 - Kailangang idagdag nang hiwalay ang mga item ng menu pagkatapos gawin ang menu
 - Ang pagpapalit ng navigation label ay nangangailangan ng pag-update sa menu
 
-## Mga Kaugnay na Kakayahan
+## Mga Kaugnay na Kakayahan {#related-abilities-1}
 
 - [Bumuo ng Logo SVG](./generate-logo-svg.md) — gumawa ng mga logo para sa header ng iyong site
 - [I-validate ang Contrast ng Palette](./validate-palette-contrast.md) — tiyakin ang mga accessible na scheme ng kulay

@@ -3,7 +3,7 @@ title: Ngaganti Rencana
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ngapresiasi Paket (v2)
+# Ngapresiasi Paket (v2) {#upgrading-a-plan-v2}
 
 _**CATATAN PENTING: Artikel ieu merujuk kana Ultimate Multisite versi 2.x.**_
 
@@ -41,7 +41,7 @@ Sanggeus *checkout* réngsé, produk anyar bakal ditambihan ka akun pelanggan je
 
 ##
 
-## Jalur *Upgrade* sareng *Downgrade*
+## Jalur *Upgrade* sareng *Downgrade* {#upgrade-and-downgrade-paths}
 
 Di unggal produk anjeun, anjeun bakal aya tab **Up & Downgrades**. Pilihan kahiji dina tab éta nyaéta kolom anu disebut **Plan Group**.
 

@@ -4,11 +4,11 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 국가 행정 하위 구역의 보기 좋은 이름을 반환합니다.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | 단어를 대문자로 변환할지 여부. |
 | $current_country | `\WP_Ultimo\Country\Country` | 현재 클래스의 인스턴스. |
 
-### Since
+### Since {#since}
 
 - 2.0.11
 
-### Source
+### Source {#source}
 
 정의 위치: [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) 250번째 줄
 
-## Returns
+## Returns {#returns}
 수정된 분할 이름.

@@ -3,11 +3,11 @@ title: Hooklar ma’lumotnomasi
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooklar ma’lumotnomasi
+# Hooklar ma’lumotnomasi {#hooks-reference}
 
 Ultimate Multisite’dagi barcha **59 ta amal** va **118 ta filtr** uchun avtomatik yaratilgan hujjatlar.
 
-## Amallar
+## Amallar {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Autentifikatsiya yo‘naltirishidan oldin ishga tushadi.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Autentifikatsiya cookie o‘rnatilishidan darhol oldin ishga tushadi.
@@ -70,7 +70,7 @@ Ultimate Multisite’dagi barcha **59 ta amal** va **118 ta filtr** uchun avtoma
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Obyekt ma’lumotlar bazasiga saqlangandan keyin ishga tushadi.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin ishlab chiquvchilariga qulfdan chiqarish jarayoniga amallar qo‘shishga ruxsat beradi.
 
-## Filtrlar
+## Filtrlar {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Autentifikatsiya cookie muddati tugash davrining davomiyligini filtrlaydi.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Autentifikatsiya yo‘naltirish sxemasini filtrlaydi.

@@ -3,7 +3,7 @@ title: Hizkuntza-hautatzailearen aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Hizkuntza hautatzailearen aldaketa-erregistroa
+# Hizkuntza hautatzailearen aldaketa-erregistroa {#language-selector-changelog}
 
 Bertsioa: 1.1.3 - Argitaratua: 2026-05-05
 * Konponketa: sarrera-aldagaiak orain garbitzen dira, eta hook pertsonalizatuen izenei aurrizkia gehitzen zaie hirugarrenen plugin-ekin gatazkak saihesteko

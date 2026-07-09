@@ -3,11 +3,11 @@ title: İşləmə Görünürlüyü
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Qabiliyyət Görünürlüyü
+# Qabiliyyət Görünürlüyü {#ability-visibility}
 
 Superdav AI Agent v1.12.0, hansı qabiliyyətlərin hansı interfeyslərdə görünəcəyini tənzimləyən **Qabiliyyət Görünürlüyü** (Ability Visibility) kontrollerlərini təqdim edir. Bu, administratorlara hansı agent funksionallıqlarının REST API-lər, MCP serverləri, WooCommerce inteqrasiyaları və digər interfeyslər vasitəsilə mövcud olacağını dəqiqləşdirməyə imkan verir.
 
-## Qabiliyyət Görünürlüyü Nədir?
+## Qabiliyyət Görünürlüyü Nədir? {#what-is-ability-visibility}
 
 Qabiliyyət Görünürlüyü, aşağıdakıları tənzimləyən bir icazə sistemidir:
 
@@ -18,9 +18,9 @@ Qabiliyyət Görünürlüyü, aşağıdakıları tənzimləyən bir icazə siste
 
 Hər bir qabiliyyət, müxtəlif interfeyslərdə mövcudluğunu müəyyən edən bir görünürlüyü səviyyəsi daşıyır.
 
-## Görünürlüyü Səviyyələri
+## Görünürlüyü Səviyyələri {#visibility-levels}
 
-### Public (Ümumi)
+### Public (Ümumi) {#public}
 
 **Public qabiliyyətlər** hər yerdə mövcuddur:
 
@@ -32,7 +32,7 @@ Hər bir qabiliyyət, müxtəlif interfeyslərdə mövcudluğunu müəyyən edə
 
 Nümunə: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Daxili)
+### Internal (Daxili) {#internal}
 
 **Internal qabiliyyətlər** yalnız WordPress quraşdırmanız daxilində mövcuddur:
 
@@ -43,7 +43,7 @@ Nümunə: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Nümunə: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Tərəfdaş)
+### Partner (Tərəfdaş) {#partner}
 
 **Partner qabiliyyətlər** yalnız siyahıya alınmış tərəfdaşlar üçün mövcuddur:
 
@@ -54,7 +54,7 @@ Nümunə: `manage-settings`, `view-analytics`, `export-data`
 
 Nümunə: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Dəqiqləşdirilmiş/İstifadə edilməyən)
+### Disabled (Dəqiqləşdirilmiş/İstifadə edilməyən) {#disabled}
 
 **Disabled qabiliyyətlər** heç yerdə mövcud deyil:
 
@@ -63,15 +63,15 @@ Nümunə: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Admin panellərində mövcud deyil
 - Köhnəlmiş və ya eksperimental qabiliyyətlər üçün faydalıdır
 
-## Qabiliyyət Görünürlüyünü İdarə Etmək
+## Qabiliyyət Görünürlüyünü İdarə Etmək {#managing-ability-visibility}
 
-### Qabiliyyət Görünürlüyü Ayarlantılarına Daxil Olmaq
+### Qabiliyyət Görünürlüyü Ayarlantılarına Daxil Olmaq {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** yolunu izləyin
 2. **Abilities** tabına klikləyin
 3. Quraşdırılmış bütün qabiliyyətlərin siyahısını və onların görünürlüyü səviyyələrini görəcəksiniz.
 
-### Qabiliyyət Detallarını Görmək
+### Qabiliyyət Detallarını Görmək {#viewing-ability-details}
 
 Hansı qabiliyyətə klikləsəniz, aşağıdakıları görəcəksiniz:
 
@@ -82,7 +82,7 @@ Hansı qabiliyyətə klikləsəniz, aşağıdakıları görəcəksiniz:
 - **Last updated**: Görünürlüyün son dəfə nə vaxt dəyişdirildiyi
 - **Status**: Recognized (Tanınmış) və ya Unclassified (Tanınmamış)
 
-### Görünürlüyü Səviyyələrini Dəyişmək
+### Görünürlüyü Səviyyələrini Dəyişmək {#changing-visibility-levels}
 
 Bir qabiliyyətin görünürlüyünü dəyişmək üçün:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Toplu Əməliyyatlar
+### Toplu Əməliyyatlar {#bulk-operations}
 
 Bir neçə qabiliyyətin görünürlüyünü dəyişmək üçün:
 
@@ -108,11 +108,11 @@ Bir neçə qabiliyyətin görünürlüyünü dəyişmək üçün:
 2. Toplu əməliyyatlar açılan menyudan yeni bir görünürlüyü səviyyəsi seçin
 3. **Apply** düyməsinə klikləyin
 
-## Partner Allow-List (Tərəfdaş İcazə Siyahısı)
+## Partner Allow-List (Tərəfdaş İcazə Siyahısı) {#partner-allow-list}
 
 **Partner allow-list**, hansı xarici tərəfdaşların Partner səviyyəli qabiliyyətlərə daxil ola biləcəyini tənzimləyir.
 
-### Tərəfdaş Əlavə Etmək
+### Tərəfdaş Əlavə Etmək {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** → **Partners** yolunu izləyin
 2. **Add Partner** düyməsinə klikləyin
@@ -120,7 +120,7 @@ Bir neçə qabiliyyətin görünürlüyünü dəyişmək üçün:
 4. İxtiyari olaraq tərəfdaş adı və təsvirini əlavə edin
 5. **Save** düyməsinə klikləyin
 
-### Qabiliyyətləri Tərəfdaşlara Təyin Etmək
+### Qabiliyyətləri Tərəfdaşlara Təyin Etmək {#assigning-abilities-to-partners}
 
 Bir tərəfdaş əlavə etdikdən sonra:
 
@@ -130,7 +130,7 @@ Bir tərəfdaş əlavə etdikdən sonra:
 4. "Partner allow-list" bölməsində, daxil olmasını istədiyiniz tərəfdaşlar üçün kvadratçığıqları işarələyin
 5. **Save** düyməsinə klikləyin
 
-### Tərəfdaş Girişini Ləğv Etmək
+### Tərəfdaş Girişini Ləğv Etmək {#revoking-partner-access}
 
 Bir tərəfdaşın girişini ləğv etmək üçün:
 
@@ -140,11 +140,11 @@ Bir tərəfdaşın girişini ləğv etmək üçün:
 
 Tərəfdaş dərhal həmin qabiliyyətə girişini itirəcək.
 
-## Unclassified Abilities (Tanınmamış Qabiliyyətlər)
+## Unclassified Abilities (Tanınmamış Qabiliyyətlər) {#unclassified-abilities}
 
 Superdav AI Agent-in tanımadığı bir üçüncü tərəf qabiliyyəti quraşdırdığınız zaman, o **Unclassified** (Tanınmamış) kimi işarələnir.
 
-### Unclassified Abilities üçün Admin Bildirişi
+### Unclassified Abilities üçün Admin Bildirişi {#admin-notice-for-unclassified-abilities}
 
 Aşağıdakı admin bildirişini görəcəksiniz:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Unclassified Abilities-i Nəzərdən Keçirmək
+### Unclassified Abilities-i Nəzərdən Keçirmək {#reviewing-unclassified-abilities}
 
 1. Bildirişdə **Review Abilities** düyməsinə klikləyin
 2. Hər bir tanınmamış qabiliyyət üçün aşağıdakıları görəcəksiniz:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Qərarınızı saxlamaq üçün **Classify** düyməsinə klikləyin
 
-### Unclassified Abilities-i Nəzərdən Keçirmək Niyə Lazımdır?
+### Unclassified Abilities-i Nəzərdən Keçirmək Niyə Lazımdır? {#why-classify-unclassified-abilities}
 
 Qabiliyyətləri təsnif etmək:
 
@@ -187,9 +187,9 @@ Qabiliyyətləri təsnif etmək:
 - **Funksionallığı mümkün edir**: Təsnif edildikdən sonra qabiliyyət mövcud olur
 - **Qərarları sənədləşdirir**: Seçimləriniz audit məqsədləri üçün qeyd edilir
 
-## Müxtəlif Interfeyslərdə Görünürlük
+## Müxtəlif Interfeyslərdə Görünürlük {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Public qabiliyyətlər** REST uç nöqtələri vasitəsilə mövcuddur:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Internal və Partner qabiliyyətlər** REST API vasitəsilə mövcud deyil.
 
-### MCP Serverlər
+### MCP Serverlər {#mcp-servers}
 
 **Public qabiliyyətlər** MCP vasitəsilə mövcuddur:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partner qabiliyyətlər** yalnız tərəfdaş təsdiqlənməsi ilə mövcuddur.
 
-### WooCommerce İntegrasiyası
+### WooCommerce İntegrasiyası {#woocommerce-integration}
 
 WooCommerce ilə bağlı **Public qabiliyyətlər** mövcuddur:
 
@@ -227,7 +227,7 @@ WooCommerce ilə bağlı **Public qabiliyyətlər** mövcuddur:
 
 **Internal qabiliyyətlər** WooCommerce-ə görünmür.
 
-### Chat Interfeysi
+### Chat Interfeysi {#chat-interface}
 
 **Bütün qabiliyyətlər** (Public, Internal, Partner) istifadəçi icazələrinə bağlı olaraq chat-də mövcuddur:
 
@@ -235,34 +235,34 @@ WooCommerce ilə bağlı **Public qabiliyyətlər** mövcuddur:
 - Adi istifadəçilər yalnız Public qabiliyyətlərini görür
 - Tərəfdaşlar Public + Partner qabiliyyətlərini görür (əgər siyahıya alınmışsa)
 
-## Təhlükəsizlik Ən Yaxşı Praktikaları
+## Təhlükəsizlik Ən Yaxşı Praktikaları {#security-best-practices}
 
-### Ən Az İmtiyaz Prinsipi (Principle of Least Privilege)
+### Ən Az İmtiyaz Prinsipi (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Qabiliyyətləri, istifadəsinə imkan verən ən məhdud görünürlüyü səviyyəsinə təyin edin
 - Həssas əməliyyatlar üçün Partner görünürlüyündən istifadə edin
 - İstifadə etmədiyiniz qabiliyyətləri deaktiv edin
 
-### Müntəzəm Auditlər
+### Müntəzəm Auditlər {#regular-audits}
 
 - Qabiliyyət görünürlüyünü aylıq nəzərdən keçirin
 - Tanınmamış qabiliyyətlər üçün yoxlama aparın
 - İstifadə edilməyən tərəfdaşlar üçün girişi ləğv edin
 
-### Loglama və Monitorinq
+### Loglama və Monitorinq {#logging-and-monitoring}
 
 - Hansı qabiliyyətlərin ən çox istifadə edildiyini izləyin
 - Tərəfdaşların giriş nümunələrini izləyin
 - Qeyri-adi qabiliyyət istifadəsi haqqında xəbərdarlıq edin
 
-### Üçüncü Tərəf Qabiliyyətləri
+### Üçüncü Tərəf Qabiliyyətləri {#third-party-abilities}
 
 - Aktivləşdirməzdən əvvəl üçüncü tərəf qabiliyyətlərini nəzərdən keçirin
 - Onları açıq şəkildə təsnif edin
 - Internal və ya Partner görünürlüyü ilə başlayın
 - Yalnız yoxlama keçdikdən sonra Public səviyyəsinə yüksəltməyin
 
-## Problemlərin Həlli (Troubleshooting)
+## Problemlərin Həlli (Troubleshooting) {#troubleshooting}
 
 **Siyahıda bir qabiliyyət görünmür**
 - Qabiliyyətin quraşdırılıb və aktiv olduğundan əmin olun
@@ -285,7 +285,7 @@ WooCommerce ilə bağlı **Public qabiliyyətlər** mövcuddur:
 - Təsnifinizin yadda saxlandığından əmin olun
 - Qabiliyyəti təmin edən pluginin yenilənməyə hazır olduğundan əmin olun
 
-## Legacy Rejimdən Köçürmə
+## Legacy Rejimdən Köçürmə {#migration-from-legacy-mode}
 
 Əgər Superdav AI Agent-in köhnə bir versiyasından yüksəltmə aparırsınızsa:
 
@@ -295,7 +295,7 @@ WooCommerce ilə bağlı **Public qabiliyyətlər** mövcuddur:
 
 Daha ətraflı məlumat üçün **Third-Party Mode Migration**-a baxın.
 
-## Növbəti Addımlar
+## Növbəti Addımlar {#next-steps}
 
 Qabiliyyət görünürlüyünü konfiqurasiya etdikdən sonra:
 

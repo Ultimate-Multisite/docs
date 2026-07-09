@@ -4,11 +4,11 @@ title: Handling - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 Kjøres umiddelbart før innloggings-autentiserings-cookien settes.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Kjøres umiddelbart før innloggings-autentiserings-cookien settes.
 | $scheme | `string` | Autentiseringsskjema. Standard er 'logged_in'. |
 | $token | `string` | Brukerens sesjonstoken som skal brukes for denne cookien. |
 
-### Siden
+### Siden {#since}
 
 - 2.6.0
 - 4.9.0: Parameteren <code>$token</code> ble lagt til.
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) på linje 141

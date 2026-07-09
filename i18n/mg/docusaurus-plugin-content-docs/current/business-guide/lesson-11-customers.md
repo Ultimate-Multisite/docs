@@ -3,15 +3,15 @@ title: 'Lesona 11: Fitadiavana mpanjifa'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lesona 11: Fitadiavana mpanjifa
+# Lesona 11: Fitadiavana mpanjifa {#lesson-11-finding-customers}
 
 Sehatra tena tsara tsy misy mpanjifa dia fialamboly fotsiny. Ity lesona ity dia mandrakotra ny fomba hahazoana mpanjifa ao anatin'ny sehatra niche mitsangana -- paikady miasa manokana satria mifantoka amin'ny indostria iray ianao.
 
-## Teo amin'izay nijanonantsika
+## Teo amin'izay nijanonantsika {#where-we-left-off}
 
 Efa mandeha mivantana ny FitSite. Ankehitriny mila mahita azy sy misoratra anarana ny tompon'ny studio fitness.
 
-## Nahoana no hafa ny fahazoana mpanjifa amin'ny niche
+## Nahoana no hafa ny fahazoana mpanjifa amin'ny niche {#why-niche-acquisition-is-different}
 
 Rehefa mivarotra amin'ny rehetra ianao, dia mifaninana hahazo saina ao amin'ny tsena be tabataba. Rehefa mivarotra amin'ny niche ianao, dia manana tombony:
 
@@ -19,17 +19,17 @@ Rehefa mivarotra amin'ny rehetra ianao, dia mifaninana hahazo saina ao amin'ny t
 - **Mifanaraka avy hatrany ny hafatrao** -- "tranonkala ho an'ny studio fitness" dia mampijanona tompon'ny gym iray eo am-pikorisany
 - **Mitombo mitambatra ny referral** -- mifankahalala amin'ny tompon'ny studio fitness hafa ny tompon'ny studio fitness
 
-## Fantsona 1: Fifandraisana mivantana
+## Fantsona 1: Fifandraisana mivantana {#channel-1-direct-outreach}
 
 Ny lalana haingana indrindra hahazoana ny mpanjifanao voalohany dia fifandraisana mivantana sy manokana.
 
-### Mitadiava prospect
+### Mitadiava prospect {#find-prospects}
 
 - Mitadiava studio fitness, gym, ary personal trainers ao amin'ny faritra misy anao amin'ny Google Maps
 - Tsidiho ny tranonkalan'izy ireo ankehitriny (na mariho fa tsy manana izy ireo)
 - Angony ny fampahalalana hifandraisana avy amin'ny profil Google Business na media sosialy ananany
 
-### Tombano ny toe-javatra misy azy ankehitriny
+### Tombano ny toe-javatra misy azy ankehitriny {#evaluate-their-current-situation}
 
 Ho an'ny prospect tsirairay, mariho:
 
@@ -37,7 +37,7 @@ Ho an'ny prospect tsirairay, mariho:
 - **Tranonkala ratsy**: Prospect matanjaka -- asehoy azy ireo ny endriky ny safidy tsara kokoa
 - **Tranonkala tsara**: Prospect malemy -- efa voavahan'izy ireo io olana io
 
-### Mifandraisa
+### Mifandraisa {#make-contact}
 
 Mandefasa email na hafatra natao manokana:
 
@@ -48,7 +48,7 @@ Mandefasa email na hafatra natao manokana:
 
 Aza mandefa email faobe. Ny fifandraisana natao manokana amin'ny prospect 20 voadinika tsara dia hahomby kokoa noho ny fandefasana ankapobeny amin'ny 2,000.
 
-## Fantsona 2: Vondrom-piarahamonina niche
+## Fantsona 2: Vondrom-piarahamonina niche {#channel-2-niche-communities}
 
 Mivory amin'ny toerana manokana an-tserasera ny tompon'ny studio fitness:
 
@@ -57,7 +57,7 @@ Mivory amin'ny toerana manokana an-tserasera ny tompon'ny studio fitness:
 - **Forum indostria** sy tabilao fifanakalozan-kevitra
 - **Vondrona LinkedIn** ho an'ny matihanina fitness
 
-### Fomba handraisana anjara
+### Fomba handraisana anjara {#how-to-participate}
 
 Aza miditra dia manolotra avy hatrany ny vokatrao. Fa kosa:
 
@@ -66,7 +66,7 @@ Aza miditra dia manolotra avy hatrany ny vokatrao. Fa kosa:
 3. **Zarao rehefa mifanaraka** -- rehefa misy manontany momba ny tranonkala, zarao amin'ny fomba voajanahary ny sehatrao
 4. **Mamorona votoaty mahasoa** -- manorata lahatsoratra momba ny "inona no mahatonga tranonkalan'ny studio fitness ho tena tsara" izay mitarika voajanahary mankany amin'ny sehatrao
 
-## Fantsona 3: Content Marketing
+## Fantsona 3: Content Marketing {#channel-3-content-marketing}
 
 Mamoròna votoaty tadiavin'ny tompon'ny studio fitness:
 
@@ -77,7 +77,7 @@ Mamoròna votoaty tadiavin'ny tompon'ny studio fitness:
 
 Avoahy ao amin'ny bilaogy marketing FitSite-nao izany. Rehefa mandeha ny fotoana, io votoaty io dia miakatra laharana amin'ny search engines ary mitondra traffic organic avy amin'ny olona mitady mavitrika izay atolotrao.
 
-## Fantsona 4: Fiaraha-miasa
+## Fantsona 4: Fiaraha-miasa {#channel-4-partnerships}
 
 Miara-miasa amin'ny orinasa efa manompo studio fitness:
 
@@ -88,7 +88,7 @@ Miara-miasa amin'ny orinasa efa manompo studio fitness:
 
 Atolory referral commissions na fampiroboroboana mifamaly. Ny [AffiliateWP addon](/addons/affiliatewp) dia afaka manampy anao hanangana programa referral ofisialy.
 
-## Fantsona 5: Hetsika indostria
+## Fantsona 5: Hetsika indostria {#channel-5-industry-events}
 
 Ny hetsika indostria fitness dia mametraka anao eo anoloan'ny mpanjifa mety ho an-jatony:
 
@@ -99,7 +99,7 @@ Ny hetsika indostria fitness dia mametraka anao eo anoloan'ny mpanjifa mety ho a
 
 Tsy mila teti-bola lehibe ianao. Na dia manatrika ho mpandray anjara fotsiny aza sy miresaka momba izay ataonao dia afaka mamorona leads.
 
-## Fantsona 6: Showcase Sites
+## Fantsona 6: Showcase Sites {#channel-6-showcase-sites}
 
 Ny marketing tsara indrindra anananao dia ny tranonkalan'ny mpanjifanao efa misy. Rehefa mahazo alalana:
 
@@ -108,7 +108,7 @@ Ny marketing tsara indrindra anananao dia ny tranonkalan'ny mpanjifanao efa misy
 - Angataho testimonials amin'ny mpanjifa afa-po
 - Amporisiho ny mpanjifa hilaza ny FitSite rehefa anontaniana momba ny tranonkalany
 
-## Fananganana programa referral
+## Fananganana programa referral {#setting-up-a-referral-program}
 
 Ny resaka am-bava no fantsona matanjaka indrindra ao amin'ny niche. Ataovy ofisialy izany:
 
@@ -116,7 +116,7 @@ Ny resaka am-bava no fantsona matanjaka indrindra ao amin'ny niche. Ataovy ofisi
 2. Atolory valisoa ho an'ny mpanjifa efa misy noho ny referral (iray volana maimaim-poana, account credit, sns.)
 3. Ataovy mora -- omeo referral link sy hafatra tsotra azon'izy ireo alefa izany
 
-## Fanarahana izay miasa
+## Fanarahana izay miasa {#tracking-what-works}
 
 Ho an'ny fantsona tsirairay, araho:
 
@@ -126,7 +126,7 @@ Ho an'ny fantsona tsirairay, araho:
 
 Ampitomboy amin'ny fantsona miasa. Atsaharo ny fantsona tsy miasa.
 
-## Andrasana ara-dalàna
+## Andrasana ara-dalàna {#realistic-expectations}
 
 - **Volana 1-3**: Mpanjifa 5-20, indrindra avy amin'ny fifandraisana mivantana sy vondrom-piarahamonina
 - **Volana 4-6**: Mpanjifa 20-50, manomboka mandray anjara ny content marketing
@@ -134,7 +134,7 @@ Ampitomboy amin'ny fantsona miasa. Atsaharo ny fantsona tsy miasa.
 
 Miovaova ireo isa ireo, saingy mitovy hatrany ny lamina: ny mpanjifa voalohany dia avy amin'ny ezaka mivantana, ny mpanjifa aoriana dia avy amin'ny vokatra mitambatra avy amin'ny votoaty, referrals, ary laza.
 
-## Izay naorinay tamin'ity lesona ity
+## Izay naorinay tamin'ity lesona ity {#what-we-built-this-lesson}
 
 - **Fantsona fahazoana mpanjifa enina** namboarina ho an’ny sehatra fitness
 - **Dingana fifandraisana mivantana** hahazoana ireo mpanjifa voalohany

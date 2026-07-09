@@ -4,13 +4,13 @@ title: Parzûn - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Parzûn: wu_enforce_password_rules
+# Parzûn: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Diyar dike ka rêgezên zêdetir ên şîfreyê bên sepandin an na.
 
 Dema ku true be, dirêjahiya herî kêm û daxwazên karakteran disepîne. Ji bo mîhenga "Super Strong" an dema ku taybetmendiya Strong Password ya Defender Pro çalak be, bixweber tê çalakkirin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Dema ku true be, dirêjahiya herî kêm û daxwazên karakteran disepîne. Ji bo
 | $strength_setting | `string` | Nirxa mîhenga rêveber. |
 | $defender_active | `bool` | Ka Defender Pro Strong Password çalak e an na. |
 
-### Ji kengî ve
+### Ji kengî ve {#since}
 
 - 2.4.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) de li rêza 531 hatiye pênasekirin.

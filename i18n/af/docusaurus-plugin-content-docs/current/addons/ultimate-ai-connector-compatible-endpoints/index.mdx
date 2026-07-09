@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Die Ultimate AI Connector for Compatible Endpoints integreer OpenAI-kompatibele AI-verskaffer API's met jou WordPress multisite-netwerk. Konfigureer verskeie AI-verskaffers — elkeen met sy eie endpoint URL, API-sleutel en standaardmodel — en roeteer versoekings met outomatiese terugval wanneer 'n verskaffer nie beskikbaar is nie.
 
-## Sleutelkenmerke
+## Sleutelkenmerke {#key-features}
 
 - **Multi-provider ondersteuning**: Voeg verskeie AI-verskaffer kaarte by, elkeen met sy eie endpoint URL, API-sleutel en standaardmodel.
 - **Sleep-om-herrangskik**: Rangskik verskaffers volgens prioriteit deur die greep-handvat op elke kaart te gebruik; versoekings gebruik verskaffers in volgorde.
@@ -21,26 +21,26 @@ Die Ultimate AI Connector for Compatible Endpoints integreer OpenAI-kompatibele 
 - **Outo-uitbreiding by byvoeging**: Nuwe verskafferkaarte word outomaties uitgebrei sodat jy die besonderhede onmiddellik kan invul.
 - **Script cache busting**: Verskaffer-skripte word ge-cache-gebreek by plugin-opdatering om te verseker dat die nuutste weergawe gelaai word.
 
-## Vereistes
+## Vereistes {#requirements}
 
 - WordPress 5.3 of hoër
 - PHP 7.4 of hoër
 - Ultimate Multisite plugin (aktief)
 - 'n OpenAI-kompatibele API-endpoint (self-gehost of derde party)
 
-## Instalering
+## Instalering {#installation}
 
 1. Laai die addon-lêre op na jou `/wp-content/plugins/` gids.
 2. Aktiveer die plugin deur die 'Plugins'-menu in WordPress.
 3. Navigeer na **Ultimate Multisite → AI Connector** om die addon te konfigureer.
 
-## Konfigurasie
+## Konfigurasie {#configuration}
 
-### Multi-Provider Opstelling
+### Multi-Provider Opstelling {#multi-provider-setup}
 
 Die konfigurasieskerm gebruik 'n kaartgebaseerde lêplek waar elke kaart een AI-verskaffer verteenwoordig. Jy kan soveel verskaffers byvoeg as wat jy benodig.
 
-#### Byvoeging van 'n Verskaffer
+#### Byvoeging van 'n Verskaffer {#adding-a-provider}
 
 1. Gaan na **Ultimate Multisite → AI Connector** in die netwerk-admin.
 2. Klik op **Add Provider**.
@@ -52,15 +52,15 @@ Die konfigurasieskerm gebruik 'n kaartgebaseerde lêplek waar elke kaart een AI-
    - **Default Model** — die model-identifikator wat standaard vir hierdie verskaffer gebruik moet word (bv. `gpt-4o`, `mistral-small`).
 5. Klik op **Save Settings**.
 
-#### Verwydering van 'n Verskaffer
+#### Verwydering van 'n Verskaffer {#removing-a-provider}
 
 Klik op die **Remove**-knoppie op enige verskafferkaart om dit te verwyder. Spaar die instellings om die verandering toe te pas.
 
-#### Herrangskik van Verskaffers
+#### Herrangskik van Verskaffers {#reordering-providers}
 
 Sleep die greep-ikoon (⣿) aan die linkerkant van enige verskafferkaart om dit te herrangskik. Die volgorde bepaal die terugvalprioriteit: versoekings word na die eerste verskaffer gestuur en val terug na daaropvolgende verskaffers indien 'n versoek misluk.
 
-### Terugvalroutering (Fallback Routing)
+### Terugvalroutering (Fallback Routing) {#fallback-routing}
 
 Wanneer 'n versoek na die primêre verskaffer misluk — weens 'n tydverloop, limiet, of diensonderbreking — probeer die connector outomaties met die volgende verskaffer in die lys. Dit gaan voort deur die lys totdat 'n verskaffer suksesvol is of al die verskaffers geprobe is.
 
@@ -72,7 +72,7 @@ Wanneer 'n versoek na die primêre verskaffer misluk — weens 'n tydverloop, li
 
 Terugval is deurskynlik vir die roepende plugin of tema — hulle ontvang óf 'n suksesvolle reaksie óf 'n finale fout, ongeag hoeveel verskaffers geprobe is.
 
-### Verskaffer Konfigurasie Verwysing
+### Verskaffer Konfigurasie Verwysing {#provider-configuration-reference}
 
 | Veld | Vereis | Beskrywing |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Terugval is deurskynlik vir die roepende plugin of tema — hulle ontvang óf 'n
 | API Key | Ja | Outentisering sleutel vir hierdie verskaffer |
 | Default Model | Ja | Model-identifikator wat gebruik word wanneer geen model in die versoek gespesifiseer is nie |
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Daar word geen verskaffers gelys nie
+### Daar word geen verskaffers gelys nie {#no-providers-are-listed}
 
 As die verskafferlys leeg is nadat jy gespaar het, bevestig asseblief dat:
 
@@ -91,21 +91,21 @@ As die verskafferlys leeg is nadat jy gespaar het, bevestig asseblief dat:
 - Jou browser die instellingsbladsy nie verhoed het om te spaar nie (kontroleer die browserkonsol vir JavaScript-foute).
 - Die plugin aktief is en jy op die netwerk-admin skerm is.
 
-### Versoekings misluk vir alle verskaffers
+### Versoekings misluk vir alle verskaffers {#requests-are-failing-for-all-providers}
 
 - Bevestig dat die endpoint URL van elke verskaffer vanaf jou bediener bereikbaar is (nie net vanaf jou browser nie).
 - Kontroleer of elke API-sleutel geldig is en nie verloop het nie.
 - Evalueer die verskaffer se limiet en kwota status in hul dashboard.
 - Aktiveer WordPress debug logging (`WP_DEBUG_LOG`) om gedetailleerde foutboodskappe van die connector vas te vang.
 
-### 'n Verskaffer word nie vir terugval gebruik nie
+### 'n Verskaffer word nie vir terugval gebruik nie {#a-provider-is-not-being-used-for-fallback}
 
 Sleep-om-herrangskik verander die terugvalvolgorde. Bevestig dat die verskaffer wat jy verwag om terugvalversoekings te ontvang, korrek geposisioneer is in die lys en dat sy endpoint URL en API-sleutel korrek is.
 
-### Nuwe verskafferkaart word nie outomaties uitgebrei nie
+### Nuwe verskafferkaart word nie outomaties uitgebrei nie {#new-provider-card-does-not-expand-automatically}
 
 Outo-uitbreiding vereis dat JavaScript in jou browser geaktiveer is. As die kaart nie by klik uitgebrei nie, kyk na die browserkonsol vir foute. Die inhoud van die kaart is altyd toeganklik deur op die kaartkop te klik, selfs al trig die outo-uitbreiding nie.
 
-## Changelog
+## Changelog {#changelog}
 
 Sien [Changelog](./changelog) vir die volledige weergawegeskiedenis.

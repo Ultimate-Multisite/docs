@@ -3,11 +3,11 @@ title: Dizayn Sistemi Estetika Bacarığı
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Dizayn Sistemi Estetikası Bacarığı
+# Dizayn Sistemi Estetikası Bacarığı {#design-system-aesthetics-skill}
 
 **Dizayn Sistemi Estetikası bacarığı**, saytınızın vizual identitetini təkmilləşdirmək üçün tətbiqi bir yanaşmadır. Bu bacarıq, dizayn sisteminizi müəyyən edən tipoqrafiya, rəng, boşluq və hərəkət tokenləri haqqında ardıcıl qərarlar verməyinizə kömək edir.
 
-## Dizayn Sistemi Estetikası nədir?
+## Dizayn Sistemi Estetikası nədir? {#what-is-design-system-aesthetics}
 
 Dizayn Sistemi Estetikası, aşağıdakıları əhatə edən strukturlaşdırılmış bir bacarıqdır:
 
@@ -20,9 +20,9 @@ Dizayn Sistemi Estetikası, aşağıdakıları əhatə edən strukturlaşdırıl
 
 Bu qərarlar, uyğun bir vizual sistem yaratmaq üçün mövzu (theme) `theme.json` faylınızda saxlanılır.
 
-## Dizayn Sistemi Estetikası Niyə İstifadə Edilməlidir?
+## Dizayn Sistemi Estetikası Niyə İstifadə Edilməlidir? {#why-use-design-system-aesthetics}
 
-### Ardıcıllık (Consistency)
+### Ardıcıllık (Consistency) {#consistency}
 
 Bir dizayn sistemi aşağıdakıları təmin edir:
 
@@ -31,7 +31,7 @@ Bir dizayn sistemi aşağıdakıları təmin edir:
 - Boşluqlar proqnozlaşdırıla bilən bir nizam izləyir
 - Animasiyalar birgə vəhdətlənmiş hiss olunur
 
-### Effektivlik (Efficiency)
+### Effektivlik (Efficiency) {#efficiency}
 
 Səhifə-səhifə dizayn qərarları vermək əvəzinə, siz:
 
@@ -39,7 +39,7 @@ Səhifə-səhifə dizayn qərarları vermək əvəzinə, siz:
 - Hər yerdə tətbiq edirsiniz
 - Bir dəyəri dəyişərək global olaraq yeniləyirsiniz
 
-### Çeviklik (Flexibility)
+### Çeviklik (Flexibility) {#flexibility}
 
 Aşağıdakıları edə bilərsiniz:
 
@@ -47,9 +47,9 @@ Aşağıdakıları edə bilərsiniz:
 - Müxtəlif estetikalarla sınaqdan keçirə bilərsiniz
 - İnkişaf edərkən brend ardıcılığını qoruyaraq
 
-## Dizayn Sistemi Estetikası Bacarığını Aktivləşdirmək
+## Dizayn Sistemi Estetikası Bacarığını Aktivləşdirmək {#triggering-the-design-system-aesthetics-skill}
 
-### Əl ilə Aktivləşdirmə
+### Əl ilə Aktivləşdirmə {#manual-activation}
 
 Bacarığı istənilən vaxt başlatmaq olar:
 
@@ -69,7 +69,7 @@ və ya
 "Guide me through design system decisions"
 ```
 
-### Avtomatik Təkliflər
+### Avtomatik Təkliflər {#automatic-suggestions}
 
 Agent, aşağıdakıları etdiyiniz zaman bacarıqdan istifadə etməyi təklif edə bilər:
 
@@ -78,9 +78,9 @@ Agent, aşağıdakıları etdiyiniz zaman bacarıqdan istifadə etməyi təklif 
 - Vizual ardıcılığı yaxşılaşdırmaq istəyirsinizsə
 - Saytınızı buraxmağa hazırlaşırsınızsa
 
-## Dizayn Sistemi Estetikası Prosesi
+## Dizayn Sistemi Estetikası Prosesi {#the-design-system-aesthetics-process}
 
-### Addım 1: Tipoqrafiya
+### Addım 1: Tipoqrafiya {#step-1-typography}
 
 Agent sizin şrift seçimləriniz haqqında soruşur:
 
@@ -110,7 +110,7 @@ Daha sonra agent aşağıdakıları təyin edir:
 - **Weight scale**: Şrift çəkimləri (regular, medium, bold və s.)
 - **Line height**: Oxunaqlıq üçün sətirlər arasındakı boşluq
 
-### Addım 2: Rəng Palitrası
+### Addım 2: Rəng Palitrası {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -140,7 +140,7 @@ Agent aşağıdakıları əhatə edən tam bir palitra yaradır:
 - Semantik rənglər (success, warning, error)
 - Hover və aktiv vəziyyətlər
 
-### Addım 3: Boşluq (Spacing)
+### Addım 3: Boşluq (Spacing) {#step-3-spacing}
 
 ```
 How much breathing room do you want?
@@ -162,7 +162,7 @@ Agent boşluq tokenlərini təyin edir:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Padding, margin, gap üçün spesifik dəyərlər
 
-### Addım 4: Sərhədlər və Kölgələr
+### Addım 4: Sərhədlər və Kölgələr {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition:
@@ -185,7 +185,7 @@ Agent aşağıdakıları yaradır:
 - Yüksəklik səviyyələri üçün kölgə tokenləri
 - Border en tokenləri
 
-### Addım 5: Hərəkət və Animasiya
+### Addım 5: Hərəkət və Animasiya {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive?
@@ -207,9 +207,9 @@ Agent aşağıdakıları təyin edir:
 - Easing funksiyaları (ease-in, ease-out, ease-in-out)
 - Ümumi interaksiyalar üçün animasiya keyframe-ləri
 
-## Dizayn Sistemi Estetikası Tətbiqi
+## Dizayn Sistemi Estetikası Tətbiqi {#applying-design-system-aesthetics}
 
-### Avtomatik Tətbiq
+### Avtomatik Tətbiq {#automatic-application}
 
 Bacarığı tamamladıqdan sonra, agent:
 
@@ -218,7 +218,7 @@ Bacarığı tamamladıqdan sonra, agent:
 3. Yeni sistemə uyğunlaşmaq üçün blok stillərini yenidən yaradır
 4. Yenilənmiş mövzunu aktivləşdirir
 
-### Əl ilə Tətbiq
+### Əl ilə Tətbiq {#manual-application}
 
 `theme.json` faylını birbaşa redaktə edə bilərsiniz:
 
@@ -257,9 +257,9 @@ Bacarığı tamamladıqdan sonra, agent:
 }
 ```
 
-## Dizayn Sisteminizi Görüntüləmək
+## Dizayn Sisteminizi Görüntüləmək {#viewing-your-design-system}
 
-### Agentdən Soruşmaq
+### Agentdən Soruşmaq {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ və ya
 
 Agent tipoqrafiyanızı, rənglərinizi, boşluqlarınızı və digər tokenlərinizi göstərəcək.
 
-### theme.json-u Görüntüləmək
+### theme.json-u Görüntüləmək {#view-themejson}
 
 Ham mətn redaktorunda `/wp-content/themes/[theme-name]/theme.json` yolunu açaraq xam token təriflərinə baxa bilərsiniz.
 
-## Dizayn Sisteminizi Yeniləmək
+## Dizayn Sisteminizi Yeniləmək {#updating-your-design-system}
 
-### Tez Yeniləmələr
+### Tez Yeniləmələr {#quick-updates}
 
 Agentdən spesifik dəyişikliklər üçün soruşun:
 
@@ -299,7 +299,7 @@ və ya
 "Change the heading font to a serif"
 ```
 
-### Tam Yenidən Dizayn
+### Tam Yenidən Dizayn {#full-redesign}
 
 Dizayn Sistemi Estetikası bacarığını yenidən işə salın:
 
@@ -309,7 +309,7 @@ Dizayn Sistemi Estetikası bacarığını yenidən işə salın:
 
 Bu, mövcud dəyərlərinizdən başlayaraq bütün qərarlardan keçməyinizə kömək edəcək.
 
-### Qismən Yeniləmələr
+### Qismən Yeniləmələr {#partial-updates}
 
 Müəyyən aspektləri yeniləyin:
 
@@ -317,15 +317,15 @@ Müəyyən aspektləri yeniləyin:
 "Just update the color palette, keep everything else"
 ```
 
-## Dizayn Sistemi Ən Yaxşı Praktikaları
+## Dizayn Sistemi Ən Yaxşı Praktikaları {#design-system-best-practices}
 
-### Ardıcıllık
+### Ardıcıllık {#consistency-1}
 
 - Hər yerdə eyni tokenlərdən istifadə edin
 - Bir dəfəlik rənglər və ya ölçülər yaratmayın
 - Dəyərləri sərt kodlamaq əvəzinə tokenlərdən istifadə edin
 
-### Adlandırma
+### Adlandırma {#naming}
 
 Aydın, semantik adlardan istifadə edin:
 
@@ -335,7 +335,7 @@ Aydın, semantik adlardan istifadə edin:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Miqyaslanabilirlik (Scalability)
+### Miqyaslanabilirlik (Scalability) {#scalability}
 
 Sisteminizi miqyaslanmaq üçün dizayn edin:
 
@@ -343,7 +343,7 @@ Sisteminizi miqyaslanmaq üçün dizayn edin:
 - Arbitrary dəyərlər əvəzinə miqyaslar yaradın (xs, sm, md, lg, xl)
 - Gələcək əlavələr üçün planlaşdırın
 
-### Dokumentasiya
+### Dokumentasiya {#documentation}
 
 Dizayn sisteminizi sənədləşdirin:
 
@@ -351,9 +351,9 @@ Dizayn sisteminizi sənədləşdirin:
 - Hər tokenin nə vaxt istifadə edilməli olduğunu
 - İstisnaları və kənar halları
 
-## Ümumi Dizayn Sistemi Nümunələri
+## Ümumi Dizayn Sistemi Nümunələri {#common-design-system-patterns}
 
-### Müasir Minimalist
+### Müasir Minimalist {#modern-minimalist}
 
 - Sans-serif tipoqrafiya (Inter, Helvetica)
 - Məhdud rəng palitrası (2-3 rəng)
@@ -361,7 +361,7 @@ Dizayn sisteminizi sənədləşdirin:
 - Zərif kölgələr
 - Hamar, sürətli animasiyalar
 
-### İstili və Dostyana
+### İstili və Dostyana {#warm-and-friendly}
 
 - Serif və sans-serif qarışığı
 - İstili rəng palitrası (narıncı, isti boz)
@@ -369,7 +369,7 @@ Dizayn sisteminizi sənədləşdirin:
 - Yumşaq kölgələr
 - Oyunçu animasiyalar
 
-### Peşəkar Korporativ
+### Peşəkar Korporativ {#professional-corporate}
 
 - Təmiz sans-serif (Roboto, Open Sans)
 - Vurğulayıcı rəngli neytral palitra
@@ -377,7 +377,7 @@ Dizayn sisteminizi sənədləşdirin:
 - Minimal kölgələr
 - Zərif keçidlər
 
-### Yaradıcı və Cəsarətli
+### Yaradıcı və Cəsarətli {#creative-and-bold}
 
 - Xüsusi tipoqrafiya
 - Cəsarətli rəng palitrası
@@ -385,7 +385,7 @@ Dizayn sisteminizi sənədləşdirin:
 - Güclü kölgələr
 - Diqqət çəkən animasiyalar
 
-## Problemlərin Həlli (Troubleshooting)
+## Problemlərin Həlli (Troubleshooting) {#troubleshooting}
 
 **Dizayn sistemimdəki dəyişikliklər görünmür**
 - Brauzer cache-inizi təmizləyin
@@ -403,7 +403,7 @@ Dizayn sisteminizi sənədləşdirin:
 - `theme.json` faylını əl ilə əvvəlki dəyərlərə redaktə edin
 - Bacarığı fərqli seçimlərlə yenidən işə salın
 
-## Növbəti Addımlar
+## Növbəti Addımlar {#next-steps}
 
 Dizayn sisteminizi təyin etdikdən sonra:
 

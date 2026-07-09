@@ -3,28 +3,28 @@ title: Ħarsa ġenerali lejn REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referenza tal-REST API
+# Referenza tal-REST API {#rest-api-reference}
 
-## Konfigurazzjoni Bażi
+## Konfigurazzjoni Bażi {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Awtentikazzjoni:** API Key u Secret (HTTP Basic Auth jew Parametri tal-URL)
 
-## Awtentikazzjoni
+## Awtentikazzjoni {#authentication}
 
-### Ippermetti l-API
+### Ippermetti l-API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Ikseb il-Kredenzjali tal-API
+### Ikseb il-Kredenzjali tal-API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metodi ta' Awtentikazzjoni
+### Metodi ta' Awtentikazzjoni {#authentication-methods}
 
 **HTTP Basic Auth (Rakkomandat):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Punti Finali Ewlenin
+## Punti Finali Ewlenin {#core-endpoints}
 
-### 1. API tal-Klijenti
+### 1. API tal-Klijenti {#1-customers-api}
 
 **Rotta Bażi:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API tas-Siti
+### 2. API tas-Siti {#2-sites-api}
 
 **Rotta Bażi:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API tas-Sħubijiet
+### 3. API tas-Sħubijiet {#3-memberships-api}
 
 **Rotta Bażi:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API tal-Prodotti
+### 4. API tal-Prodotti {#4-products-api}
 
 **Rotta Bażi:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API tal-Ħlasijiet
+### 5. API tal-Ħlasijiet {#5-payments-api}
 
 **Rotta Bażi:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API tad-Dominji
+### 6. API tad-Dominji {#6-domains-api}
 
 **Rotta Bażi:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Punt Finali tar-Reġistrazzjoni
+## Punt Finali tar-Reġistrazzjoni {#registration-endpoint}
 
 Il-punt finali `/register` jipprovdi proċess sħiħ ta' ħlas/reġistrazzjoni:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Punti Finali tat-Tenant Sovran
+## Punti Finali tat-Tenant Sovran {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 iżid kopertura REST għal tenant sovran għal integrazzjonijiet li jipproviżjonaw, jispezzjonaw, jew jivverifikaw tenants iżolati.
 
@@ -242,7 +242,7 @@ Risposti tipiċi tal-istatus tal-migrazzjoni jinkludu:
 
 Ittratta `ready: false` bħala ostaklu qabel it-tnedija. Iċċekkja d-dettalji tal-verifika, irranġa l-irbit tal-host tad-database, il-kju, il-proviżjonament tal-utent, jew il-problema tar-routing, imbagħad erġa' pprova l-verifika.
 
-## Risposti ta' Żball
+## Risposti ta' Żball {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Ittratta `ready: false` bħala ostaklu qabel it-tnedija. Iċċekkja d-dettalji t
 }
 ```
 
-## Paġinazzjoni u Ffiltrar
+## Paġinazzjoni u Ffiltrar {#pagination-and-filtering}
 
 **Parametri tal-Mistoqsija:**
 ```http

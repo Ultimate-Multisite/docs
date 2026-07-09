@@ -3,13 +3,13 @@ title: Nkwado Ọrụ
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Awụm Nkwado (v2)
+# Awụm Nkwado (v2) {#the-registration-flow-v2}
 
 _**NOTE MUỌLỊ: Ati dị ọnụ này na-enwe na Ultimate Multisite version 2.x.**_
 
 Nwanyị ndị nwere ike ịzụta nchekwa gị nchebe ọtụtụ ụzọ. Ha ga-arụrụ ihe nwere ike ịchọrọ akụm nkwado (registration form) tò nchebe, lebe link a nwere ike ịchiaụ ya n'ụzọ dị mma nke ewu plan onye anọ. Ọ bụrụ na anyị ga-arụrụ ihe ndị a, anyị ga-enweghị gị ọkụzi ahụ na ụzọ ndị dị n'ebe ahụ na ụzọ ndị a ga-eme ka ha azụta nchekwa gị, ma ọ bụ ihe ịdị ezi okwu anọ n'aka ha tarakwa ha azụta.
 
-## Ụzọ ịnweta Akụm Nkwado:
+## Ụzọ ịnweta Akụm Nkwado: {#using-the-registration-form}
 
 Ọ bụ akụkọ nkwado ọ bụla. Ị ga-eme akụkọ nkwado (registration page) nke na-enwe **checkout form** ahụ, ma ọ bụ ihe a bụ ebe ndị mmadụ anọ ga-arụrụ ịzụta nchekwa gị na nchebe site na plan. Ị ga-anọ akụkọ nkwado ọtụtụ, ma ọ bụrụ na ị chọrọ, ọ bụrụ na ọ bụrụ na akụm nkwado dị ọnụ dị Ọ bụla.
 
@@ -31,13 +31,13 @@ Ka ọ bụrụ ihe ị chọrọ xác nhận địa chỉ email, ha ga-agbịa 
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Ụdị Link Shareable (Shareable Link):
+## Ụdị Link Shareable (Shareable Link): {#using-a-shareable-link}
 
 Nkwado ịzụta website n'ime amakọrịta link shareable bụ ihe dị gị na akụkọ zare, ọ bụghị ihe dị mkpa na ọrụ ahụ. Ọ dị mma ma ị chọrọ ka ndị biara ịrụ registration ha na-agbịa product ma website template pre-selected (kpọrọ section Pre-selecting products and templates via URL parameters) ma ọ bụ nwere coupon code kpọrọ (kpọrọ section Using URL Parameters).
 
 Nkwado registration ga-abụ dị sama: ha ga-agbịa onye ahụ, username, email address, website name na title, ma ọ bụ ihe ndị ọzọ... ma plan ma template site ahụ ga-abụ dị pre-selected (kpọrọ) anọ.
 
-### Ịzụta Imebe Imebi (Manual Payments):
+### Ịzụta Imebe Imebi (Manual Payments): {#registering-using-manual-payments}
 
 Ọ bụrụ na ị chọrọ ka ị lafu PayPal, Stripe ma ọ bụ ihe ọ bụla dị n'ime payment gateway ndị Ultimate Multisite ma ọ bụ add-on ha na-agbịa, ị ga-anọ site manual payments. Biko, ị ga-abụ invoice (kwapụrụ) gị maka ha ka ha chọrọ ịpay ọkụ ahụ na processor payment ahụ ị chọrọ onye ahụ zare na network ha.
 

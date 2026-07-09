@@ -3,17 +3,17 @@ title: Nástroje a konfigurácia
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Nástroje a konfigurácia
+# Nástroje a konfigurácia {#tools-and-configuration}
 
 Theme Builder používa súbor nástrojov na analýzu, návrh a vytvorenie vašej WordPress stránky. Vo verzii 1.16.0 je **sd-ai-agent/site-scrape teraz nástroj Tier 1**, vďaka čomu je predvolene dostupný v Theme Builder. Superdav AI Agent v1.18.0 zároveň zavádza samostatne distribuovaný Advanced sprievodný balík pre dôveryhodné vývojárske pracovné postupy; tieto nástroje nie sú súčasťou základného balíka WordPress.org a musia byť nainštalované a autorizované samostatne.
 
-## Dostupné nástroje
+## Dostupné nástroje {#available-tools}
 
-### Nástroje Tier 1 (vždy dostupné)
+### Nástroje Tier 1 (vždy dostupné) {#tier-1-tools-always-available}
 
 Nástroje Tier 1 sú v Theme Builder predvolene dostupné bez akejkoľvek dodatočnej konfigurácie.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Účel:** Analyzovať existujúce webové stránky s cieľom získať dizajnovú inšpiráciu, štruktúru obsahu a funkcionalitu.
 
@@ -51,11 +51,11 @@ Analyzuj dizajn example.com a použi ho ako inšpiráciu pre moju stránku.
 - Stránky výrazne závislé od JavaScript môžu mať obmedzenú analýzu
 - Analýza veľkých stránok môže trvať dlhšie
 
-### Nástroje Tier 2 (voliteľné)
+### Nástroje Tier 2 (voliteľné) {#tier-2-tools-optional}
 
 Nástroje Tier 2 sú dostupné, keď sú výslovne povolené v nastaveniach Theme Builder.
 
-#### Pokročilá analytika
+#### Pokročilá analytika {#advanced-analytics}
 
 Poskytuje podrobné metriky výkonu:
 
@@ -65,7 +65,7 @@ Poskytuje podrobné metriky výkonu:
 - Skóre prístupnosti
 - Skóre osvedčených postupov
 
-#### Optimalizátor obsahu
+#### Optimalizátor obsahu {#content-optimizer}
 
 Analyzuje a navrhuje zlepšenia pre:
 
@@ -75,11 +75,11 @@ Analyzuje a navrhuje zlepšenia pre:
 - Štruktúru obsahu
 - Umiestnenie výziev na akciu
 
-### Nástroje Tier 3 (prémiové)
+### Nástroje Tier 3 (prémiové) {#tier-3-tools-premium}
 
 Nástroje Tier 3 vyžadujú dodatočnú konfiguráciu alebo prémiové funkcie.
 
-#### Generátor obsahu AI
+#### Generátor obsahu AI {#ai-content-generator}
 
 Generuje obsah pre:
 
@@ -89,7 +89,7 @@ Generuje obsah pre:
 - Meta popisy
 - Texty výziev na akciu
 
-#### Pokročilé dizajnové nástroje
+#### Pokročilé dizajnové nástroje {#advanced-design-tools}
 
 Poskytuje pokročilé dizajnové možnosti:
 
@@ -99,7 +99,7 @@ Poskytuje pokročilé dizajnové možnosti:
 - Pokročilá teória farieb
 - Optimalizácia typografie
 
-### Pokročilé sprievodné nástroje (samostatný balík)
+### Pokročilé sprievodné nástroje (samostatný balík) {#advanced-companion-tools-separate-package}
 
 Advanced sprievodný balík je distribuovaný samostatne od základného vydania Superdav AI Agent. Je určený pre dôveryhodné prostredia vývojárov a vlastníkov stránok, kde administrátori výslovne povoľujú agentovi používať nástroje s vysokým dopadom.
 
@@ -116,9 +116,9 @@ Možnosti Advanced sprievodného balíka môžu zahŕňať:
 
 Nedokumentujte ich ako všeobecne dostupné nástroje Theme Builder pre každú inštaláciu. Sú dostupné iba vtedy, keď je Advanced sprievodný balík nainštalovaný, povolený a obmedzený na dôveryhodných administrátorov.
 
-## Konfigurácia nástrojov
+## Konfigurácia nástrojov {#tool-configuration}
 
-### Povolenie nástrojov
+### Povolenie nástrojov {#enabling-tools}
 
 Ak chcete povoliť dodatočné nástroje v Theme Builder:
 
@@ -127,7 +127,7 @@ Ak chcete povoliť dodatočné nástroje v Theme Builder:
 3. Podľa potreby zapnite/vypnite nástroje
 4. Uložte nastavenia
 
-### Oprávnenia nástrojov
+### Oprávnenia nástrojov {#tool-permissions}
 
 Niektoré nástroje vyžadujú oprávnenia:
 
@@ -137,7 +137,7 @@ Niektoré nástroje vyžadujú oprávnenia:
 - **Pokročilé funkcie** — môžu vyžadovať prémiové predplatné
 - **Advanced sprievodné nástroje** — vyžadujú samostatne distribuovaný Advanced balík a výslovnú dôveru administrátora
 
-### API kľúče a prihlasovacie údaje
+### API kľúče a prihlasovacie údaje {#api-keys-and-credentials}
 
 Nakonfigurujte API kľúče pre nástroje, ktoré ich vyžadujú:
 
@@ -146,13 +146,13 @@ Nakonfigurujte API kľúče pre nástroje, ktoré ich vyžadujú:
 3. Otestujte pripojenie
 4. Bezpečne uložte
 
-### Inštalácia Advanced sprievodného balíka
+### Inštalácia Advanced sprievodného balíka {#installing-the-advanced-companion-package}
 
 Advanced sprievodný balík sa vydáva samostatne od základného ZIP balíka WordPress.org. Inštalujte ho iba z oficiálneho distribučného kanála projektu pre dané vydanie a potom obmedzte prístup na dôveryhodných administrátorov. Pred povolením nástrojov súborového systému, databázy, WP-CLI, REST dispečera, tvorby pluginov, správy používateľov alebo benchmarkov na produkčnej stránke skontrolujte brány ľudského schvaľovania a správanie Git snapshotov.
 
-## Používanie sd-ai-agent/site-scrape
+## Používanie sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Základné použitie
+### Základné použitie {#basic-usage}
 
 Požiadajte Theme Builder, aby analyzoval webovú stránku:
 
@@ -161,7 +161,7 @@ Analyzuj dizajn stránky môjho konkurenta na competitor.com
 a navrhni dizajnové zlepšenia pre moju stránku.
 ```
 
-### Špecifická analýza
+### Špecifická analýza {#specific-analysis}
 
 Vyžiadajte si konkrétne typy analýzy:
 
@@ -179,7 +179,7 @@ Skontroluj mobilnú responzivitu example.com a zabezpeč, aby moja stránka
 bola rovnako responzívna.
 ```
 
-### Porovnávacia analýza
+### Porovnávacia analýza {#comparison-analysis}
 
 Porovnajte viacero stránok:
 
@@ -188,22 +188,22 @@ Porovnaj dizajny site1.com a site2.com a vytvor dizajn,
 ktorý kombinuje najlepšie prvky oboch.
 ```
 
-## Obmedzenia a úvahy o nástrojoch
+## Obmedzenia a úvahy o nástrojoch {#tool-limitations-and-considerations}
 
-### Obmedzenie frekvencie
+### Obmedzenie frekvencie {#rate-limiting}
 
 - Scraping je obmedzený rýchlostným limitom, aby sa predišlo preťaženiu servera
 - Viaceré požiadavky na rovnaký web môžu byť spomalené
 - Analýza veľkých webov môže trvať dlhšie
 
-### Presnosť obsahu
+### Presnosť obsahu {#content-accuracy}
 
 - Dynamický obsah nemusí byť zachytený úplne
 - Obsah vykresľovaný pomocou JavaScript môže byť neúplný
 - Údaje v reálnom čase sa nemusia prejaviť
 - Časť obsahu môže byť za paywallmi
 
-### Právne a etické úvahy
+### Právne a etické úvahy {#legal-and-ethical-considerations}
 
 - Rešpektujte robots.txt a pravidlá webu
 - Nescrapujte obsah chránený autorskými právami na účely reprodukcie
@@ -211,16 +211,16 @@ ktorý kombinuje najlepšie prvky oboch.
 - Overte si, že máte práva na používanie extrahovaného obsahu
 - Dodržiavajte podmienky používania analyzovaných webov
 
-### Vplyv na výkon
+### Vplyv na výkon {#performance-impact}
 
 - Scraping veľkých webov môže trvať dlhšie
 - Viaceré súbežné scrapingy môžu byť pomalšie
 - Sieťové pripojenie ovplyvňuje rýchlosť
 - Veľké súbory údajov môžu vyžadovať viac spracovania
 
-## Osvedčené postupy
+## Osvedčené postupy {#best-practices}
 
-### Používanie analýzy webu
+### Používanie analýzy webu {#using-site-analysis}
 
 1. **Analyzujte viacero webov** — získajte inšpiráciu z viacerých zdrojov
 2. **Zamerajte sa na štruktúru** — spoznajte vzory rozloženia a organizácie
@@ -228,7 +228,7 @@ ktorý kombinuje najlepšie prvky oboch.
 4. **Študujte typografiu** — identifikujte kombinácie písiem, ktoré sa vám páčia
 5. **Skontrolujte navigáciu** — pochopte organizáciu menu
 
-### Etický scraping
+### Etický scraping {#ethical-scraping}
 
 1. **Rešpektujte robots.txt** — dodržiavajte pokyny webu
 2. **Nekopírujte obsah** — používajte analýzu iba na inšpiráciu
@@ -236,7 +236,7 @@ ktorý kombinuje najlepšie prvky oboch.
 4. **Uveďte zdroje** — pripíšte zásluhy zdrojom inšpirácie
 5. **Dodržiavajte podmienky** — riaďte sa podmienkami používania webu
 
-### Maximalizácia účinnosti nástroja
+### Maximalizácia účinnosti nástroja {#maximizing-tool-effectiveness}
 
 1. **Buďte konkrétni** — žiadajte konkrétne typy analýzy
 2. **Poskytnite kontext** — vysvetlite účel svojho webu
@@ -244,9 +244,9 @@ ktorý kombinuje najlepšie prvky oboch.
 4. **Iterujte** — spresňujte na základe výsledkov
 5. **Kombinujte nástroje** — použite viacero nástrojov na komplexnú analýzu
 
-## Riešenie problémov
+## Riešenie problémov {#troubleshooting}
 
-### Web sa nedá scrapovať
+### Web sa nedá scrapovať {#site-wont-scrape}
 
 - Skontrolujte, či je web verejne prístupný
 - Overte, či robots.txt povoľuje scraping
@@ -254,7 +254,7 @@ ktorý kombinuje najlepšie prvky oboch.
 - Skontrolujte internetové pripojenie
 - Ak problém pretrváva, kontaktujte podporu
 
-### Neúplná analýza
+### Neúplná analýza {#incomplete-analysis}
 
 - Web môže mať dynamický obsah
 - JavaScript nemusí byť úplne vykreslený
@@ -262,7 +262,7 @@ ktorý kombinuje najlepšie prvky oboch.
 - Skúste namiesto toho analyzovať konkrétne stránky
 - Požiadajte o konkrétne typy analýzy
 
-### Pomalý výkon
+### Pomalý výkon {#slow-performance}
 
 - Analýza veľkých webov trvá dlhšie
 - Viaceré súbežné scrapingy sú pomalšie
@@ -270,7 +270,7 @@ ktorý kombinuje najlepšie prvky oboch.
 - Skúste to mimo špičky
 - Najprv analyzujte menšie sekcie
 
-## Súvisiaca dokumentácia
+## Súvisiaca dokumentácia {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — zhromaždite informácie o dizajne
 - [Design Direction](./design-direction.md) — spresnite svoj dizajn

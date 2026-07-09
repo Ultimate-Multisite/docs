@@ -3,15 +3,15 @@ title: Svetingumo meniu
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Svetingumo meniu
+# Svetingumo meniu {#hospitality-menus}
 
 **Svetingumo meniu** funkcija leidžia Theme Builder generuoti ir įterpti struktūruotus maisto ir gėrimų meniu puslapius tiesiai į jūsų WordPress svetainę.
 
-## Apžvalga
+## Apžvalga {#overview}
 
 Theme Builder dabar gali kurti profesionalius, struktūruotus meniu puslapius svetingumo verslams, įskaitant restoranus, kavines, barus ir maitinimo paslaugas. Šie meniu yra visiškai integruoti į jūsų svetainės dizainą ir gali būti lengvai atnaujinami bei valdomi.
 
-## Palaikomi svetingumo tipai
+## Palaikomi svetingumo tipai {#supported-hospitality-types}
 
 - **Restoranai** — pilno aptarnavimo maitinimo meniu
 - **Kavinės** — kavos ir lengvų patiekalų meniu
@@ -21,9 +21,9 @@ Theme Builder dabar gali kurti profesionalius, struktūruotus meniu puslapius sv
 - **Maisto sunkvežimiai** — mobilių maisto paslaugų meniu
 - **Alaus daryklos ir vyninės** — gėrimų meniu su aprašymais
 
-## Meniu struktūra
+## Meniu struktūra {#menu-structure}
 
-### Meniu kategorijos
+### Meniu kategorijos {#menu-categories}
 
 Meniu suskirstomi į kategorijas:
 
@@ -34,7 +34,7 @@ Meniu suskirstomi į kategorijas:
 - **Gėrimai** — gėrimai (alkoholiniai ir nealkoholiniai)
 - **Specialūs pasiūlymai** — dienos ar sezoniniai pasiūlymai
 
-### Meniu elemento formatas
+### Meniu elemento formatas {#menu-item-format}
 
 Kiekvienas meniu elementas apima:
 
@@ -49,7 +49,7 @@ Kiekvienas meniu elementas apima:
 }
 ```
 
-#### Elemento laukai
+#### Elemento laukai {#item-fields}
 
 | Laukas | Tipas | Aprašymas |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Kiekvienas meniu elementas apima:
 | `allergens` | array | Dažni alergenai (riešutai, vėžiagyviai ir t. t.) |
 | `availability` | string | Kada pasiekiama (kasdien, sezoniškai ir t. t.) |
 
-## Svetingumo meniu kūrimas
+## Svetingumo meniu kūrimas {#creating-hospitality-menus}
 
-### 1 veiksmas: pateikite meniu informaciją
+### 1 veiksmas: pateikite meniu informaciją {#step-1-provide-menu-information}
 
 Papasakokite Theme Builder apie savo meniu:
 
@@ -71,7 +71,7 @@ Sukurk restorano meniu mano itališkam restoranui su užkandžiais,
 makaronų patiekalais, pagrindiniais patiekalais ir desertais. Įtrauk kainas ir aprašymus.
 ```
 
-### 2 veiksmas: Theme Builder sugeneruoja meniu
+### 2 veiksmas: Theme Builder sugeneruoja meniu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Suformatuoja kainas ir aprašymus
 5. Prideda mitybos ir alergenų informaciją
 
-### 3 veiksmas: peržiūrėkite ir pritaikykite
+### 3 veiksmas: peržiūrėkite ir pritaikykite {#step-3-review-and-customize}
 
 Galite:
 
@@ -91,9 +91,9 @@ Galite:
 4. Atnaujinti aprašymus ir mitybos informaciją
 5. Koreguoti stilių ir išdėstymą
 
-## Meniu rodymo parinktys
+## Meniu rodymo parinktys {#menu-display-options}
 
-### Visas meniu puslapis
+### Visas meniu puslapis {#full-menu-page}
 
 Specialus puslapis, kuriame rodomas visas jūsų meniu:
 
@@ -102,7 +102,7 @@ Specialus puslapis, kuriame rodomas visas jūsų meniu:
 - Spausdinimui patogus išdėstymas
 - Mobiliesiems pritaikytas dizainas
 
-### Meniu valdiklis
+### Meniu valdiklis {#menu-widget}
 
 Įterpkite meniu skyrius kituose puslapiuose:
 
@@ -111,7 +111,7 @@ Specialus puslapis, kuriame rodomas visas jūsų meniu:
 - Gėrimų meniu baro puslapyje
 - Desertų vitrina poraštėje
 
-### Meniu PDF
+### Meniu PDF {#menu-pdf}
 
 Sugeneruokite atsisiunčiamą PDF meniu:
 
@@ -120,9 +120,9 @@ Sugeneruokite atsisiunčiamą PDF meniu:
 - Įtraukiami vaizdai ir aprašymai
 - Lengva bendrinti ir siųsti el. paštu
 
-## Mitybos ir alergenų informacija
+## Mitybos ir alergenų informacija {#dietary-and-allergen-information}
 
-### Mitybos atributai
+### Mitybos atributai {#dietary-attributes}
 
 Pažymėkite elementus mitybos informacija:
 
@@ -134,7 +134,7 @@ Pažymėkite elementus mitybos informacija:
 - **Mažai angliavandenių** — sumažintas angliavandenių kiekis
 - **Daug baltymų** — gausu baltymų
 
-### Alergenų įspėjimai
+### Alergenų įspėjimai {#allergen-warnings}
 
 Įtraukite dažnus alergenus:
 
@@ -147,9 +147,9 @@ Pažymėkite elementus mitybos informacija:
 - **Glitimas** — kviečiai ir glitimo turintys grūdai
 - **Sezamas** — sezamo sėklos ir aliejus
 
-## Meniu valdymas
+## Meniu valdymas {#menu-management}
 
-### Kainų atnaujinimas
+### Kainų atnaujinimas {#updating-prices}
 
 Lengvai atnaujinkite meniu kainas:
 
@@ -159,7 +159,7 @@ Lengvai atnaujinkite meniu kainas:
 4. Išsaugokite pakeitimus
 5. Pakeitimai iškart pasirodo jūsų svetainėje
 
-### Sezoninių elementų pridėjimas
+### Sezoninių elementų pridėjimas {#adding-seasonal-items}
 
 Kurkite sezonines meniu variacijas:
 
@@ -169,7 +169,7 @@ Kurkite sezonines meniu variacijas:
 4. Suplanuokite pasiekiamumo datas
 5. Automatiškai rodykite sezono metu
 
-### Specialių pasiūlymų valdymas
+### Specialių pasiūlymų valdymas {#managing-specials}
 
 Rodykite dienos ar savaitės pasiūlymus:
 
@@ -179,7 +179,7 @@ Rodykite dienos ar savaitės pasiūlymus:
 4. Atnaujinkite kasdien arba kas savaitę
 5. Archyvuokite senus pasiūlymus
 
-## Integracija su Theme Builder
+## Integracija su Theme Builder {#integration-with-theme-builder}
 
 Naudojant Theme Builder svetingumo svetainėms:
 
@@ -189,9 +189,9 @@ Naudojant Theme Builder svetingumo svetainėms:
 4. **Mobilusis optimizavimas** — meniu gražiai rodomi telefonuose
 5. **SEO optimizavimas** — meniu yra draugiški paieškos sistemoms
 
-## Geriausios praktikos
+## Geriausios praktikos {#best-practices}
 
-### Meniu dizainas
+### Meniu dizainas {#menu-design}
 
 - **Aiški organizacija** — logiška kategorijų struktūra
 - **Skaitomi aprašymai** — apetitą keliantys ir informatyvūs
@@ -199,7 +199,7 @@ Naudojant Theme Builder svetingumo svetainėms:
 - **Profesionalios nuotraukos** — aukštos kokybės maisto vaizdai
 - **Baltoji erdvė** — neperkraukite puslapio
 
-### Turinys
+### Turinys {#content}
 
 - **Tikslūs aprašymai** — tiksliai apibūdinkite elementus
 - **Paryškinkite pasiūlymus** — pasirūpinkite, kad pasiūlymai išsiskirtų
@@ -207,7 +207,7 @@ Naudojant Theme Builder svetingumo svetainėms:
 - **Reguliariai atnaujinkite** — palaikykite kainas ir elementus aktualius
 - **Naudokite apetitą keliančią kalbą** — pateikite elementus taip, kad jie skambėtų gardžiai
 
-### Prieinamumas
+### Prieinamumas {#accessibility}
 
 - **Skaitomi šriftai** — naudokite aiškius, įskaitomus šriftus
 - **Pakankamas kontrastas** — užtikrinkite, kad tekstas būtų skaitomas
@@ -215,9 +215,9 @@ Naudojant Theme Builder svetingumo svetainėms:
 - **Alergenų įspėjimai** — matomai rodykite alergenus
 - **Draugiška mobiliesiems** — testuokite visuose įrenginiuose
 
-## Pavyzdžiai
+## Pavyzdžiai {#examples}
 
-### Restorano meniu struktūra
+### Restorano meniu struktūra {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Kavinės meniu struktūra
+### Kavinės meniu struktūra {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Susijusios funkcijos
+## Susijusios funkcijos {#related-features}
 
 - [Kurti meniu](../abilities/create-menu.md) — kurkite navigacijos meniu
 - [Dizaino kryptis](./design-direction.md) — tinkinkite savo svetainės dizainą

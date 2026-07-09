@@ -4,11 +4,11 @@ title: පෙරහන් - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# පෙරහන: wu_country_get_administrative_division_name
+# පෙරහන: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 රටේ පරිපාලන උප-කොටස්වල පැහැදිලි නම ආපසු ලබා දෙයි.
 
-## පරාමිතීන්
+## පරාමිතීන් {#parameters}
 
 | නම | වර්ගය | විස්තරය |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | වචන uppercase කරන්නේ නම්. |
 | $current_country | `\WP_Ultimo\Country\Country` | වත්මන් class එකේ instance එක. |
 
-### සිට
+### සිට {#since}
 
 - 2.0.11
-### මූලාශ්‍රය
+### මූලාශ්‍රය {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) තුළ 250 වන පේළියේ නිර්වචනය කර ඇත
 
 
-## ආපසු ලැබෙන්නේ
+## ආපසු ලැබෙන්නේ {#returns}
 වෙනස් කළ කොටසේ නම.

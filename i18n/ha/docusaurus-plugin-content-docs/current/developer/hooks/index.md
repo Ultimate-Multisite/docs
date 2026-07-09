@@ -3,11 +3,11 @@ title: Manazartar Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Manazartar Hooks
+# Manazartar Hooks {#hooks-reference}
 
 Takardun da aka samar ta atomatik don duk **ayyuka 59** da **filters 118** a cikin Ultimate Multisite.
 
-## Ayyuka
+## Ayyuka {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Yana faruwa kafin mayar da kai na tantancewa.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Yana faruwa nan take kafin a saita cookie na tantancewa.
@@ -70,7 +70,7 @@ Takardun da aka samar ta atomatik don duk **ayyuka 59** da **filters 118** a cik
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Yana aiki bayan an adana object a cikin database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Bada damar ga masu haɓaka plugin su ƙara actions zuwa tsarin buɗe kulle.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Yana tace tsawon lokacin ƙarewar cookie na tabbatar da shiga.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Yana tace tsarin redirect na tabbatar da shiga.

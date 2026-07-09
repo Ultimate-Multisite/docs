@@ -3,11 +3,11 @@ title: Obrada Webhooka
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Upravljanje Webhookovima
+# Upravljanje Webhookovima {#webhook-handling}
 
 Kreirajte prilagođene webhook endpoint-e kako biste primili događaje (events) s vanjskih servisa i uskladili podatke s Ultimate Multisite.
 
-## Prilagođeni Webhook Endpoint
+## Prilagođeni Webhook Endpoint {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Sigurnosne napomene
+## Sigurnosne napomene {#security-considerations}
 
 *   Uvijek provjeravajte webhook potpise (signatures) koristeći HMAC ili zajednički tajni ključ (shared secret).
 *   Koristite `permission_callback` na vašoj REST ruti — nikada ga ne postavljajte na `__return_true` u produkciji.

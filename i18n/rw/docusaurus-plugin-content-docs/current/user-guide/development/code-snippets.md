@@ -3,7 +3,7 @@ title: Urugero rw'ibyo bishobora gukoreshwa
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets ku v2
+# Code Snippets ku v2 {#code-snippets-for-v2}
 
 Muriye, code snippets mu **WordPress** bishobora gukoreshwa kugira ngo yorera ibyo byumva byashobora gutanga uburyo bwo plugin umwe w'ubwujubi. Ibi code snippets bisanzwe bishobora guhagarirwa mu ru rugero rwa WordPress cyangwa mu theme yawe (gusa, mu file functions.php). Cyangwa ushobora gukoresha mu MU plugin.
 
@@ -15,7 +15,7 @@ Mu gihe cyacu twakwibona uburyo bwo code snippets itatu byashobora gukoreshwa na
 
   * [**Gukemura ibyemezo byo CORS n'Font-Icons mu gihe cyose cyangwa domain zikoreshwa**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Gukoresha umuntu w'ubwujubi (Account menu item) uburenganzira
+## Gukoresha umuntu w'ubwujubi (Account menu item) uburenganzira {#changing-the-position-of-the-account-menu-item}
 
 Kugira ngo ushage umuntu w'ubwujubi ku Dashboard yawe, uburyo bwo gukoresha code snippet uyu mu file functions.php ya theme yawe ikoreshwa. Uho butera mu MU plugin cyangwa custom plugins zawe.
 
@@ -37,8 +37,8 @@ Ushobora gushyira umwujiza uyu munsi (Plan) gusa, nta Package cyangwa Service, k
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Gukemura ibibazo byo CORS n'Font-Icons mu gihe cyo gushyirwa (mapped domains)
-## Gukemura ibibazo byo CORS n'Font-Icons mu gihe cyo gushyirwa (mapped domains)
+## Gukemura ibibazo byo CORS n'Font-Icons mu gihe cyo gushyirwa (mapped domains) {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Gukemura ibibazo byo CORS n'Font-Icons mu gihe cyo gushyirwa (mapped domains) {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Nyuma yuko wari gushyira domain ikurikira ku sub-site, ushobora kumenya ko uburyo bwo gukoresha fonts zikoreshwa (custom fonts) bishobora guhinduka. Ibi byari byitwarirwa n'ibyo mu gihe cyo gushyira (server settings).
 
@@ -46,13 +46,13 @@ Kuko furi ya font files inshyerwa mu gihe cyose ku CSS, plugin yacu y'domain map
 
 Iyi ni uburyo bwo gukemura ikibazo cyangwa gukorera ibyo kuri Apache na NGINX. Uru rugero rwa kumenya uburenganzira bw'ubwuga (server configuration files) nk'uko .htaccess files n'NGINX config files. Ngira ko nta muntu wumva gukora uburyo bwo gukemura ibyo mu gihe cyose, ushije icyo cyangwa ugenda ku hosting provider support agents kugira ngo bashobore kukugira umuhombo.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Mu .htaccess file yawe, yandika iki:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Mu server config file yawe (iki gice kigira uburyo bwo kubara ku gihe cyose), yandika iki:
 

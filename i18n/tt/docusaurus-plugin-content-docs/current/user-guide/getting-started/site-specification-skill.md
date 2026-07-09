@@ -3,11 +3,11 @@ title: Веб-сайт специifikasi becerisi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Сайт Спецификация Навык
+# Сайт Спецификация Навык {#site-specification-skill}
 
 Навык **Site Specification** — это структурированный подход к описанию целей вашего сайта, аудитории и фирменного стиля. Эта информация хранится в вашей памяти **site_brief**, на которую агенты ссылаются между сессиями для предоставления последовательной и контекстно-зависимой помощи.
 
-## Что такое Site Specification?
+## Что такое Site Specification? {#what-is-site-specification}
 
 Site Specification — это процесс документирования:
 
@@ -19,9 +19,9 @@ Site Specification — это процесс документирования:
 
 Эта спецификация становится вашей **site_brief**, постоянной памятью, которую агенты используют для понимания контекста вашего сайта.
 
-## Зачем использовать Site Specification?
+## Зачем использовать Site Specification? {#why-use-site-specification}
 
-### Последовательность между сессиями
+### Последовательность между сессиями {#consistency-across-sessions}
 
 Без site_brief вам пришлось бы каждый раз заново объяснять цель вашего сайта при начале новой сессии. С ним агенты сразу понимают:
 
@@ -30,7 +30,7 @@ Site Specification — это процесс документирования:
 - Структуру вашего контента
 - Ваши бизнес-цели
 
-### Лучшие рекомендации
+### Лучшие рекомендации {#better-recommendations}
 
 Агенты используют ваш site_brief для:
 
@@ -39,17 +39,17 @@ Site Specification — это процесс документирования:
 - Предложения дизайнов, соответствующих вашему бренду
 - Избегания предложений несовместимых функций
 
-### Более быстрое введение в работу (Onboarding)
+### Более быстрое введение в работу (Onboarding) {#faster-onboarding}
 
 Новые агенты (или агенты в новых сессиях) могут быстро освоиться, прочитав ваш site_brief, вместо того чтобы задавать уточняющие вопросы.
 
-## Инициирование Site Specification
+## Инициирование Site Specification {#initiating-site-specification}
 
-### Во время Онбординга Theme Builder
+### Во время Онбординга Theme Builder {#during-theme-builder-onboarding}
 
 Навык Site Specification автоматически запускается во время **onboarding flow Theme Builder**. Агент Setup Assistant задает вопросы и строит вашу site_brief.
 
-### Ручное инициирование
+### Ручное инициирование {#manual-initiation}
 
 Вы в любое время начать Спецификацию сайта:
 
@@ -63,9 +63,9 @@ Site Specification — это процесс документирования:
 "Помоги мне создать краткое описание сайта"
 ```
 
-## Процесс Спецификации Сайта
+## Процесс Спецификации Сайта {#the-site-specification-process}
 
-### Шаг 1: Цель Сайта
+### Шаг 1: Цель Сайта {#step-1-site-purpose}
 
 Агент спросит:
 
@@ -81,7 +81,7 @@ Site Specification — это процесс документирования:
 
 Вы можете выбрать категорию или описать свою цель.
 
-### Шаг 2: Целевая Аудитория
+### Шаг 2: Целевая Аудитория {#step-2-target-audience}
 
 ```
 Кто ваша основная аудитория?
@@ -94,7 +94,7 @@ Site Specification — это процесс документирования:
 Каковы их основные потребности?
 ```
 
-### Шаг 3: Брендовая Идентичность
+### Шаг 3: Брендовая Идентичность {#step-3-brand-identity}
 
 ```
 Какие у вас фирменные цвета?
@@ -110,7 +110,7 @@ Site Specification — это процесс документирования:
 - Теплый / дружелюбный
 ```
 
-### Шаг 4: Бизнес-Цели
+### Шаг 4: Бизнес-Цели {#step-4-business-goals}
 
 ```
 Как выглядит успех для вашего сайта?
@@ -129,7 +129,7 @@ Site Specification — это процесс документирования:
 - Другое
 ```
 
-### Шаг 5: Структура Контента
+### Шаг 5: Структура Контента {#step-5-content-structure}
 
 ```
 Как организован ваш контент?
@@ -148,13 +148,13 @@ Site Specification — это процесс документирования:
 - Другое
 ```
 
-## Память site_brief
+## Память site_brief {#your-sitebrief-memory}
 
 После завершения Спецификации Сайта ваша информация сохраняется как **site_brief** в памяти вашего агента. Это структурированная запись, содержащая:
 
-## Sitenizin Özeti ve Güncelleme
+## Sitenizin Özeti ve Güncelleme {#viewing-and-updating-your-sitebrief}
 
-### Sitenizin Özetini Görüntüleme
+### Sitenizin Özetini Görüntüleme {#view-your-sitebrief}
 
 Aşağıdaki komutlardan birini kullanarak ajandanızdan isteyebilirsiniz:
 
@@ -170,7 +170,7 @@ veya
 
 Ajans, kaydettiğiniz teknik bilgileri size gösterecektir.
 
-### Sitenizin Özetini Güncelleme
+### Sitenizin Özetini Güncelleme {#update-your-sitebrief}
 
 Siteniz gelişirse, özetini güncelleyebilirsiniz:
 
@@ -186,9 +186,9 @@ veya
 
 Bu işlem, mevcut bilgilerinizle Sitenin Özellik (Site Specification) becerisini yeniden çalıştırır.
 
-## Ajanların Site Özetini Nasıl Kullandığı
+## Ajanların Site Özetini Nasıl Kullandığı {#how-agents-use-sitebrief}
 
-### Tasarım Tavsiyeleri
+### Tasarım Tavsiyeleri {#design-recommendations}
 
 Tasarım değişiklikleri istediğinizde, ajanslar sitenizin özetine bakarak size önerilerde bulunur:
 
@@ -197,7 +197,7 @@ Siz: "Redesign my homepage"
 Ajans: "Site özetinize göre, 25-45 yaş arası kadınlara sıcak ve el yapımı bir tonla odaklanıyorsunuz. El yapımı takılarınızı ve sürdürülebilirlik değerlerinizi vurgulayan bir tasarım oluşturacağım."
 ```
 
-### Özellik Önerileri
+### Özellik Önerileri {#feature-suggestions}
 
 Ajanslar hedeflerinize uygun özellikler önerir:
 
@@ -206,23 +206,23 @@ Siz: "What features should I add?"
 Ajans: "Müşteri sadakatine odaklanan bir e-ticaret mağazası için şunları öneririm: sadakat programı, müşteri yorumları, e-posta bülteni ve ürün önerileri."
 ```
 
-### İçerik Yapısı
+### İçerik Yapısı {#content-structure}
 
 Ajanslar yapınıza dayanarak içerik düzenlemesi önerir:
 
 Siz: "Blogımı nasıl düzenlemeliyim?"
 Agent: "Siz ürün kataloğu ile blog kullanıyorsunuz, bu yüzden gönderileri ürün kategorilerine göre düzenlemenizi ve birden fazla ürünü bir arada gösteren 'stil kılavuzları' oluşturmanızı öneririm."
 
-## En İyi Uygulamalar
+## En İyi Uygulamalar {#best-practices}
 
-### Belirli Olun
+### Belirli Olun {#be-specific}
 
 "Genel kitle" yerine kendi kitlenizi tanımlayın:
 
 - ✓ "Sürdürülebilir moda ile ilgilenen 25-45 yaş arası kadınlar"
 - ✗ "Herkes"
 
-### Düzenli Güncel Tutun
+### Düzenli Güncel Tutun {#update-regularly}
 
 Siteniz gelişirken site_brief'inizi güncelleyin:
 
@@ -231,14 +231,14 @@ Siteniz gelişirken site_brief'inizi güncelleyin:
 - Marka kimliğiniz değiştiğinde
 - İş hedefleriniz değiştiğinde
 
-### Tutarlı Terimler Kullanın
+### Tutarlı Terimler Kullanın {#use-consistent-terminology}
 
 Oturumlar boyunca aynı terimleri kullanın:
 
 - ✓ Her zaman "sürdürülebilir takı" deyin (yani "eko dost takı" veya "yeşil ürünler" demeyin)
 - ✓ Kitlenize her zaman aynı şekilde atıf yapın
 
-### Bağlam Ekleyin
+### Bağlam Ekleyin {#include-context}
 
 Ajanların kararlarınızı anlamasına yardımcı olacak arka plan bilgisi sağlayın:
 
@@ -246,7 +246,7 @@ Ajanların kararlarınızı anlamasına yardımcı olacak arka plan bilgisi sağ
 - "Kitleniz teknolojiye hakim ve modern tasarımı bekliyor"
 - "Biz bir başlangıç aşamasındaki startup'uz, bu yüzden maliyet etkin çözümlere ihtiyacımız var"
 
-## Tema Oluşturucu (Theme Builder) Onboarding ile İlişkisi
+## Tema Oluşturucu (Theme Builder) Onboarding ile İlişkisi {#relationship-to-theme-builder-onboarding}
 
 Site Spesifikasyonu becerisi **Tema Oluşturucu onboarding akışına** entegre edilmiştir. Onboarding'i tamamladığınızda, sağladığınız bilgilerle site_brief otomatik olarak oluşturulur.
 
@@ -256,7 +256,7 @@ Site Spesifikasyonu becerisi **Tema Oluşturucu onboarding akışına** entegre 
 - Siteniz gelişirken site brief'inizi güncellemek için
 - Tema Oluşturucu'ya başlamadan önce ayrıntılı bir spesifikasyon oluşturmak için
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
 **Site brief'im kullanılmıyor**
 - Ajanın belleğe erişimi olup olmadığını kontrol edin
@@ -272,7 +272,7 @@ Site Spesifikasyonu becerisi **Tema Oluşturucu onboarding akışına** entegre 
 - Обновите свой site\_brief, если он устарел
 - Предоставьте дополнительный контекст в своих запросах
 
-## Следующие шаги
+## Следующие шаги {#next-steps}
 
 После того как вы определили спецификацию вашего сайта:
 

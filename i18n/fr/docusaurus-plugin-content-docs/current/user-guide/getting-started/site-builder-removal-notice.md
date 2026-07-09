@@ -3,13 +3,13 @@ title: Avis de suppression du mode constructeur de site
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Suppression du Mode Constructeur de site
+# Suppression du Mode Constructeur de site {#site-builder-mode-removal-notice}
 
 **Le mode Constructeur de site (Site Builder mode) a été supprimé dans Superdav AI Agent v1.12.0.** Si vous utilisiez ce mode, vous devez migrer vers l'**agent Assistant de configuration (Setup Assistant agent)** pour la création de thèmes et la configuration de votre site.
 
-## Ce qui s'est passé ?
+## Ce qui s'est passé ? {#what-happened}
 
-### Mode Constructeur de site (Ancien)
+### Mode Constructeur de site (Ancien) {#site-builder-mode-legacy}
 
 Le mode Constructeur de site était une interface basée sur un assistant (wizard) permettant de :
 
@@ -18,7 +18,7 @@ Le mode Constructeur de site était une interface basée sur un assistant (wizar
 - Choisir un thème
 - Définir le contenu initial
 
-### Ce qui l'a remplacé ?
+### Ce qui l'a remplacé ? {#what-replaced-it}
 
 L'**agent Assistant de configuration (Setup Assistant agent)** gère désormais toutes les fonctionnalités du Constructeur de site grâce à :
 
@@ -27,15 +27,15 @@ L'**agent Assistant de configuration (Setup Assistant agent)** gère désormais 
 - L'intégration avec l'intégration du Constructeur de thèmes (Theme Builder onboarding)
 - Une mémoire persistante du `site_brief` pour les sessions futures
 
-## Si vous utilisiez le Mode Constructeur de site
+## Si vous utilisiez le Mode Constructeur de site {#if-you-were-using-site-builder-mode}
 
-### Vos sites sont en sécurité
+### Vos sites sont en sécurité {#your-sites-are-safe}
 
 - Les sites existants créés avec le Mode Constructeur de site continuent de fonctionner
 - Aucune perte de données ni interruption de votre site
 - Vous pouvez continuer à gérer vos sites normalement
 
-### Migrez vers l'agent Assistant de configuration
+### Migrez vers l'agent Assistant de configuration {#migrate-to-setup-assistant-agent}
 
 Pour la configuration de nouveaux sites ou les changements de thème, utilisez l'agent Assistant de configuration :
 
@@ -51,7 +51,7 @@ ou
 
 L'agent Assistant de configuration offre la même fonctionnalité, mais avec plus de flexibilité.
 
-## Comparaison : Constructeur de site vs. Assistant de configuration
+## Comparaison : Constructeur de site vs. Assistant de configuration {#comparison-site-builder-vs-setup-assistant}
 
 | Fonctionnalité | Constructeur de site (Supprimé) | Assistant de configuration (Nouveau) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ L'agent Assistant de configuration offre la même fonctionnalité, mais avec plu
 | Sessions futures | Configuration répétitive | Utilisation du `site_brief` stocké |
 | Flexibilité | Flux de travail fixe | Conversation adaptative |
 
-## Migration vers l'agent Assistant de configuration
+## Migration vers l'agent Assistant de configuration {#migrating-to-setup-assistant-agent}
 
-### Pour les nouveaux sites
+### Pour les nouveaux sites {#for-new-sites}
 
 Au lieu d'utiliser le Mode Constructeur de site :
 
@@ -76,7 +76,7 @@ Au lieu d'utiliser le Mode Constructeur de site :
    - La génération du thème
    - La configuration initiale
 
-### Pour les sites existants
+### Pour les sites existants {#for-existing-sites}
 
 Si vous avez un site existant créé avec le Mode Constructeur de site :
 
@@ -85,7 +85,7 @@ Si vous avez un site existant créé avec le Mode Constructeur de site :
 3. L'agent Assistant de configuration vous aidera à créer un nouveau thème
 4. Les données de votre site restent inchangées
 
-### Pour les changements de thème
+### Pour les changements de thème {#for-theme-changes}
 
 Au lieu de la sélection de thème du Mode Constructeur de site :
 
@@ -95,9 +95,9 @@ Au lieu de la sélection de thème du Mode Constructeur de site :
    - Générera un thème personnalisé
    - L'activera sur votre site
 
-## Différences clés
+## Différences clés {#key-differences}
 
-### Mode Constructeur de site
+### Mode Constructeur de site {#site-builder-mode}
 
 ```
 1. Choisir un modèle
@@ -106,7 +106,7 @@ Au lieu de la sélection de thème du Mode Constructeur de site :
 4. Terminé
 ```
 
-### Agent Assistant de configuration
+### Agent Assistant de configuration {#setup-assistant-agent}
 
 ```
 1. Décrire l'objectif de votre site
@@ -117,36 +117,36 @@ Au lieu de la sélection de thème du Mode Constructeur de site :
 6. Le site_brief est stocké pour les sessions futures
 ```
 
-## Avantages de l'agent Assistant de configuration
+## Avantages de l'agent Assistant de configuration {#benefits-of-setup-assistant-agent}
 
-### Plus flexible
+### Plus flexible {#more-flexible}
 
 - Décrivez votre site en langage naturel
 - Obtenez des recommandations personnalisées
 - S'adapte à vos besoins spécifiques
 
-### Meilleure personnalisation
+### Meilleure personnalisation {#better-customization}
 
 - Génération de thèmes personnalisés
 - Décisions basées sur le système de conception
 - Jeton de conception (design tokens) persistant
 
-### Mémoire persistante
+### Mémoire persistante {#persistent-memory}
 
 - Votre `site_brief` est stocké
 - Les agents futurs comprennent votre site
 - Pas besoin de répéter les informations de configuration
 
-### Flux de travail intégré
+### Flux de travail intégré {#integrated-workflow}
 
 - Intégration du Constructeur de thèmes
 - Compétence Esthétique du système de conception (Design System Aesthetics skill)
 - Contrôles de visibilité de capacité (Ability Visibility controls)
 - Tout fonctionne ensemble de manière transparente
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-### Je ne trouve pas le Mode Constructeur de site
+### Je ne trouve pas le Mode Constructeur de site {#i-cant-find-site-builder-mode}
 
 Le Mode Constructeur de site a été supprimé. Utilisez l'agent Assistant de configuration à la place :
 
@@ -154,7 +154,7 @@ Le Mode Constructeur de site a été supprimé. Utilisez l'agent Assistant de co
 "Aidez-moi à configurer un nouveau site"
 ```
 
-### Je veux recréer un site à partir du Constructeur de site
+### Je veux recréer un site à partir du Constructeur de site {#i-want-to-recreate-a-site-from-site-builder}
 
 Vous pouvez le recréer avec l'agent Assistant de configuration :
 
@@ -163,7 +163,7 @@ Vous pouvez le recréer avec l'agent Assistant de configuration :
 3. L'agent générera un thème similaire
 4. Votre `site_brief` sera stocké pour référence future
 
-### Mon site Constructeur de site existant ne fonctionne pas
+### Mon site Constructeur de site existant ne fonctionne pas {#my-existing-site-builder-site-isnt-working}
 
 Les sites existants créés avec le Mode Constructeur de site continuent de fonctionner. Si vous rencontrez des problèmes :
 
@@ -172,7 +172,7 @@ Les sites existants créés avec le Mode Constructeur de site continuent de fonc
 3. Consultez les journaux d'erreurs de WordPress
 4. Contactez le support si les problèmes persistent
 
-### Puis-je toujours utiliser mes anciens modèles Constructeur de site ?
+### Puis-je toujours utiliser mes anciens modèles Constructeur de site ? {#can-i-still-use-my-old-site-builder-templates}
 
 Les modèles Constructeur de site ne sont plus disponibles. Cependant :
 
@@ -180,14 +180,14 @@ Les modèles Constructeur de site ne sont plus disponibles. Cependant :
 - Vous pouvez recréer des sites similaires avec l'agent Assistant de configuration
 - L'agent Assistant de configuration offre plus d'options de personnalisation
 
-## Prochaines étapes
+## Prochaines étapes {#next-steps}
 
 1. **Pour les nouveaux sites** : Utilisez l'agent Assistant de configuration
 2. **Pour les sites existants** : Continuez de les utiliser tels quels
 3. **Pour les changements de thème** : Demandez de l'aide à l'agent Assistant de configuration
 4. **Pour le raffinement du design** : Utilisez la compétence Esthétique du système de conception
 
-## Sujets connexes
+## Sujets connexes {#related-topics}
 
 - **Intégration du Constructeur de thèmes (Theme Builder Onboarding)** : Configuration guidée pour les thèmes personnalisés
 - **Agent Assistant de configuration (Setup Assistant Agent)** : Configuration de site guidée par l'agent

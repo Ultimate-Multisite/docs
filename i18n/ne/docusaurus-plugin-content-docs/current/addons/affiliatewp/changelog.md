@@ -3,7 +3,7 @@ title: AffiliateWP परिवर्तन विवरण
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP परिवर्तन लग
+# AffiliateWP परिवर्तन लग {#affiliatewp-changelog}
 
 संस्करण: 2.0.1 - 2025-09-28 मा जारी गरिएको
 

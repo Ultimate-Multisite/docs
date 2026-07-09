@@ -4,11 +4,11 @@ title: ფილტრი - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# ფილტრი: wu_rest_get_items
+# ფილტრი: wu_rest_get_items {#filter-wurestgetitems}
 
 ფილტრავს, დაშვებულია თუ არა მოთხოვნის გაგრძელება.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 | $rest_base | `array` | ობიექტის slug. |
 | $this | `\Base_Manager` | ობიექტის ეგზემპლარი. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.0.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336)-ში, ხაზზე 336

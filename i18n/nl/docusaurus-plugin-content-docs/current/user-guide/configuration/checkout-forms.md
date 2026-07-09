@@ -3,7 +3,7 @@ title: Afrekenformulieren
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkoutformulieren
+# Checkoutformulieren {#checkout-forms}
 
 Checkoutformulieren zijn een eenvoudige en flexibele manier om te experimenteren met verschillende benaderingen wanneer je nieuwe klanten probeert te converteren.
 
@@ -36,13 +36,13 @@ Je kunt ook de formulieren die je al hebt bewerken of dupliceren door op de opti
 
 ![Checkout form-hoveracties](/img/config/checkout-form-hover-actions.png)
 
-#### Overzicht van de Checkout Form-editor
+#### Overzicht van de Checkout Form-editor {#checkout-form-editor-overview}
 
 De checkout form-editor biedt een uitgebreide interface voor het bouwen van je registratieformulieren. Hier is een overzicht van de editorindeling:
 
 ![Overzicht van de Checkout Form-editor](/img/config/checkout-form-editor-overview.png)
 
-### Een Checkout Form bewerken
+### Een Checkout Form bewerken {#editing-a-checkout-form}
 
 Je kunt checkout forms maken voor verschillende doeleinden. In dit voorbeeld werken we aan een registratieformulier.
 
@@ -112,7 +112,7 @@ Om de shortcode van je formulier te krijgen, klik je op Generate Shortcode en ko
 
 ![Opslaan-knop met shortcode](/img/config/checkout-form-save.png)
 
-### Het veld Pricing Table
+### Het veld Pricing Table {#the-pricing-table-field}
 
 Het veld **Pricing Table** toont je producten op het afrekenformulier zodat klanten een abonnement kunnen kiezen. Wanneer je dit veld bewerkt, kun je verschillende opties configureren:
 
@@ -130,17 +130,17 @@ Zo verschijnt de prijstabel op het frontend registratieformulier:
 
 Als je een product toevoegt aan de Pricing Table voordat het formulier de velden bevat die vereist zijn om de checkout-flow van dat product te voltooien, toont de editor nu een waarschuwing. Gebruik de waarschuwing om het ontbrekende verplichte veld toe te voegen voordat je wijzigingen publiceert of opslaat voor een live registratieformulier.
 
-### Een periodekeuze-toggle toevoegen
+### Een periodekeuze-toggle toevoegen {#adding-a-period-selection-toggle}
 
 Als je [Price Variations](creating-your-first-subscription-product#price-variations) op je producten hebt geconfigureerd (bijv. maandelijkse en jaarlijkse prijzen), kun je een **Period Selection**-veld toevoegen aan je checkout-formulier. Dit veld toont een schakelaar waarmee klanten kunnen wisselen tussen factureringsperioden, en de prijstabel wordt dynamisch in realtime bijgewerkt.
 
-#### Stap 1: Stel Price Variations in op je producten
+#### Stap 1: Stel Price Variations in op je producten {#step-1-set-up-price-variations-on-your-products}
 
 Voordat je het Period Selection-veld toevoegt, moet je ervoor zorgen dat je producten price variations geconfigureerd hebben. Ga naar **Ultimate Multisite > Products**, bewerk een product en navigeer naar het tabblad **Price Variations** om alternatieve factureringsperioden toe te voegen (bijv. Jaarlijks tegen een gereduceerde prijs).
 
 ![Price Variations-tabblad op een product](/img/config/product-price-variations-tab.png)
 
-#### Stap 2: Voeg het Period Selection-veld toe aan je checkout-formulier
+#### Stap 2: Voeg het Period Selection-veld toe aan je checkout-formulier {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Ga naar **Ultimate Multisite > Checkout Forms** en bewerk je checkout-formulier.
 
@@ -163,13 +163,13 @@ Voordat je het Period Selection-veld toevoegt, moet je ervoor zorgen dat je prod
 
 7. Klik op **Save Field**.
 
-#### Stap 3: Plaats het veld boven de prijstabel
+#### Stap 3: Plaats het veld boven de prijstabel {#step-3-position-the-field-above-the-pricing-table}
 
 Voor de beste gebruikerservaring moet je ervoor zorgen dat het veld Period Selection **vóór** het veld Pricing Table verschijnt in je checkout-stap. Je kunt velden verslepen om ze opnieuw te ordenen in de checkout-formuliereditor. Zo kiezen klanten eerst een factureringsperiode en zien ze daarna de prijzen voor die periode.
 
 ![Checkout-formuliereditor met veldvolgorde](/img/config/checkout-form-editor-with-fields.png)
 
-#### Hoe het werkt op de frontend
+#### Hoe het werkt op de frontend {#how-it-works-on-the-frontend}
 
 Zodra dit is geconfigureerd, zien klanten die je registratiepagina bezoeken de periode-selector boven de prijstabel. Wanneer ze op een andere factureringsperiode klikken:
 
@@ -177,7 +177,7 @@ Zodra dit is geconfigureerd, zien klanten die je registratiepagina bezoeken de p
   * Als **Force Different Durations** is uitgeschakeld op het veld Pricing Table, worden producten zonder prijsvariatie voor de geselecteerde periode verborgen.
   * Als **Force Different Durations** is ingeschakeld, blijven alle producten zichtbaar, zelfs als ze geen variatie voor de geselecteerde periode hebben (ze tonen dan hun standaardprijs).
 
-#### Een factureringsperiode vooraf selecteren via URL
+#### Een factureringsperiode vooraf selecteren via URL {#pre-selecting-a-billing-period-via-url}
 
 Je kunt ook vooraf een product en factureringsperiode selecteren via de URL. Ultimate Multisite ondersteunt deze URL-patronen:
 
@@ -185,11 +185,11 @@ Je kunt ook vooraf een product en factureringsperiode selecteren via de URL. Ult
   * `/register/premium/12` — Selecteert vooraf het product en een duur van 12 maanden
   * `/register/premium/1/year` — Selecteert vooraf het product met een duur van 1 jaar
 
-### Het Template Selection-veld
+### Het Template Selection-veld {#the-template-selection-field}
 
 Met het veld **Template Selection** kunnen klanten tijdens checkout een site-template kiezen. Het is nu standaard opgenomen in de checkout-formuliersjablonen voor **single step** en **multi-step** die zijn toegevoegd in Ultimate Multisite v2.6.1.
 
-#### Het veld handmatig toevoegen
+#### Het veld handmatig toevoegen {#adding-the-field-manually}
 
 Als je werkt met een formulier dat vóór v2.6.1 is gemaakt, of bent begonnen met een leeg sjabloon:
 
@@ -200,11 +200,11 @@ Als je werkt met een formulier dat vóór v2.6.1 is gemaakt, of bent begonnen me
    - **Label** — De kop die klanten boven het template-raster zien (bijv. "Kies een site-template").
    - **Required** — Of klanten een template moeten selecteren voordat ze verdergaan.
 
-#### Hoe het werkt
+#### Hoe het werkt {#how-it-works}
 
 Wanneer een klant tijdens checkout een template kiest, gebruikt Ultimate Multisite dit bij het provisionen van hun nieuwe site. De getoonde templates komen uit je lijst **Site Templates** (**Ultimate Multisite > Site Templates**). Alleen templates die zijn gemarkeerd als beschikbaar voor klanten verschijnen hier.
 
-### Basisdomeinen voor checkout-formulieren
+### Basisdomeinen voor checkout-formulieren {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 behandelt domeinen die zijn geconfigureerd in checkout-formulier **Site URL**-velden als netwerkbasisdomeinen. Gebruik de instellingen voor beschikbare domeinen van het veld wanneer je wilt dat klanten sites aanmaken onder een of meer gedeelde registratiedomeinen, zoals `example.com` en `sites.example.com`.
 
@@ -212,6 +212,6 @@ Gedeelde basisdomeinen van checkout-formulieren worden niet behandeld als aangep
 
 Gebruik aangepaste domeinen voor per klant gekoppelde hosts, zoals `customer-example.com`. Gebruik basisdomeinen van checkout-formulieren voor gedeelde registratiehosts die door veel sites kunnen worden gebruikt.
 
-#### Het veld verwijderen
+#### Het veld verwijderen {#removing-the-field}
 
 Als je geen site-templates aanbiedt, verwijder dan het veld Template Selection uit je formulier. Klanten ontvangen dan de standaardtemplate die is geconfigureerd onder **Ultimate Multisite > Settings > Site Templates**.

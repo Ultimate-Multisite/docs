@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM aduce inferența AI nativă în browser pe întreaga ta rețea multisite WordPress. Rulează modele lingvistice mari (LLM) integral în browser, folosind WebLLM și motorul MLC — fără chei API, fără apeluri externe și fără date care să părăsească dispozitivul utilizatorului.
 
-## Funcționalități Cheie
+## Funcționalități Cheie {#key-features}
 
 - **Inferență pe partea de browser**: LLM rulează local în browser-ul vizitatorului prin WebLLM/MLC — nu este necesară o GPU de server
 - **Widget de chat plutitor**: Utilizatorii logați pot solicita direct LLM-ul pe partea de browser, de pe front-end
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM aduce inferența AI nativă în browser pe înt
 - **Cache IndexedDB**: Descărcările greutăților modelelor supraviețuiesc redirecționărilor CDN care își rup calea implicită a Cache API
 - **Integrare wpai filter**: Se integrează în filtrul `wpai_preferred_text_models` astfel încât funcționalitatea AI Experiments să folosească motorul browser-ului, când este configurată
 
-## Cerințe
+## Cerințe {#requirements}
 
 - WordPress 5.3 sau mai nou
 - PHP 7.4 sau mai nou
 - Plugin-ul Ultimate Multisite (activ)
 - Un browser cu suport WebGPU (Chrome 113+, Edge 113+, sau Firefox Nightly cu WebGPU activat)
 
-## Instalare
+## Instalare {#installation}
 
 1. Uploadează fișierele addon-ului în directorul tău `/wp-content/plugins/`
 2. Activează plugin-ul prin meniul 'Plugins' din WordPress
 3. Navighează la **Ultimate Multisite → AI Connector** pentru a configura addon-ul
 
-## Widget-ul de Chat Plutitor
+## Widget-ul de Chat Plutitor {#floating-chat-widget}
 
 Widget-ul de chat plutitor permite oricărui utilizator logat să interacționeze cu LLM-ul pe partea de browser direct de pe front-end, fără a părăsi pagina pe care se află.
 
-### Ce face
+### Ce face {#what-it-does}
 
 Când este activat, apare o pictogramă de chat în colțul fiecărei pagini de pe front-end pentru utilizatorii logați. Clicul pe pictogramă deschide un panou de chat unde utilizatorul poate introduce prompturi și primește răspunsuri de la modelul WebLLM care rulează local. Deoarece modelul rulează integral în browser, răspunsurile sunt private și nu implică nicio procesare pe partea de server.
 
-### Indicatorul de Stare în Admin-Bar
+### Indicatorul de Stare în Admin-Bar {#admin-bar-status-indicator}
 
 Admin-bara WordPress include un indicator de stare care arată starea curentă a motorului WebLLM:
 
@@ -56,7 +56,7 @@ Admin-bara WordPress include un indicator de stare care arată starea curentă a
 
 Indicatorul se actualizează în timp real, fără a necesita reîncărcarea paginii.
 
-### Cum să activezi sau să dezactivezi Widget-ul
+### Cum să activezi sau să dezactivezi Widget-ul {#how-to-enable-or-disable-the-widget}
 
 1. Mergi la **Ultimate Multisite → AI Connector** în admin-ul rețelei
 2. Găsește panoul **Connector**
@@ -65,17 +65,17 @@ Indicatorul se actualizează în timp real, fără a necesita reîncărcarea pag
 
 Widget-ul poate fi de asemenea activat sau dezactivat pe site individual, de către adminul site-ului, dacă administratorul rețelei i-a acordat această capacitate.
 
-## Setările Widget-ului
+## Setările Widget-ului {#widget-settings}
 
 Panoul Connector din **Ultimate Multisite → AI Connector** conține următoarele setări pentru widget-ul de chat plutitor:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 Activează sau dezactivează widget-ul de chat pentru întreaga rețea. Când este dezactivat, widget-ul nu apare pe nicio pagină de pe front-end, indiferent de rolul utilizatorului.
 
 **Implicit:** Dezactivat
 
-### Auto-Prompt Behaviour
+### Auto-Prompt Behaviour {#auto-prompt-behaviour}
 
 Controlează dacă widget-ul de chat trimite automat un prompt atunci când un utilizator îl deschide.
 
@@ -93,7 +93,7 @@ Când este setat pe **Custom prompt**, apare un câmp de text suplimentar unde p
 
 **Implicit:** Dezactivat
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 Versiunea 1.1.0 introduce un SharedWorker runtime pentru motorul MLC. Anterior, fiecare tab de browser care folosea WebLLM încărca propria sa instanță a modelului, concurențind pentru memoria GPU și cauzând probleme de performanță pe dispozitive cu VRAM limitat.
 
@@ -105,29 +105,29 @@ Cu SharedWorker runtime, o singură tab acționează ca gazdă a motorului. Toat
 
 SharedWorker-ul este transparent pentru utilizatori. Indicatorul de stare din admin-bar reflectă întotdeauna starea motorului partajat, nu a tab-ului individual.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Addon-ul instalează un middleware `apiFetch` care interceptează cererile WordPress REST API care se potrivesc cu pattern-ul AI Client SDK. În loc să facă o cerere HTTP de tip loopback către server, aceste cereri sunt direcționate direct către broker-ul local WebLLM care rulează în SharedWorker.
 
 Acest lucru înseamnă că plugin-urile și temele care folosesc API-ul standard WordPress `apiFetch` pentru a apela endpoint-uri AI vor beneficia automat de modelul pe partea de browser, când acesta este disponibil, fără a fi necesare modificări de cod.
 
-## Hooks și Filtre
+## Hooks și Filtre {#hooks-and-filters}
 
-### Filtre
+### Filtre {#filters}
 
 - `wpai_preferred_text_models` — Înregistrează motorul browser WebLLM ca model text preferat. Addon-ul se integrează automat în acest filtru atunci când motorul este configurat și disponibil.
 - `ultimate_webllm_widget_enabled` — Overridează starea de activare a widget-ului pentru un utilizator sau un context specific. Returnează `true` sau `false`.
 - `ultimate_webllm_auto_prompt` — Modifică textul auto-prompt înainte ca acesta să fie trimis către widget. Primește șirul de prompt și obiectul curent `WP_Post`.
 
-## Depanare
+## Depanare {#troubleshooting}
 
-### Widget-ul de chat nu apare
+### Widget-ul de chat nu apare {#the-chat-widget-does-not-appear}
 
 - Confirmă că utilizatorul este logat — widget-ul este arătat doar utilizatorilor autentificați
 - Verifică dacă **Enable floating chat widget** este activat în panoul Connector
 - Verifică dacă browser-ul utilizatorului suportă WebGPU (vezi Cerințe de mai sus)
 
-### Indicatorul admin-bar arată "Error"
+### Indicatorul admin-bar arată "Error" {#the-admin-bar-indicator-shows-error}
 
 Deschide consola dezvoltatorului browser-ului (F12) și caută erorile legate de WebLLM. Cauze comune:
 
@@ -135,10 +135,10 @@ Deschide consola dezvoltatorului browser-ului (F12) și caută erorile legate de
 - Descărcarea greutăților modelului a eșuat — verifică conectivitatea rețelei și încearcă să ștergi cache-ul IndexedDB în instrumentele dezvoltatorului browser-ului (Application → IndexedDB)
 - O extensie de browser blochează SharedWorker-ul
 
-### Greutățile modelelor se descărcă în fiecare ocazie
+### Greutățile modelelor se descărcă în fiecare ocazie {#model-weights-download-every-time}
 
 Addon-ul folosește IndexedDB ca backend de cache pentru a asigura că greutățile modelelor supraviețuiesc redirecționărilor CDN. Dacă greutățile se descărcă din nou la fiecare vizită, verifică dacă IndexedDB nu este șters de o setare de confidențialitate a browser-ului sau de o extensie.
 
-## Changelog
+## Changelog {#changelog}
 
 Vezi [Changelog](./changelog) pentru istoricul complet al versiunilor.

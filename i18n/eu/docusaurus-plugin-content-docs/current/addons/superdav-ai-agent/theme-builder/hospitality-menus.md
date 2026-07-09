@@ -3,15 +3,15 @@ title: Ostalaritzako menuak
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ostalaritzako menuak
+# Ostalaritzako menuak {#hospitality-menus}
 
 **Ostalaritzako menuak** eginbideak Theme Builder-i janari eta edarien menu-orri egituratuak zuzenean zure WordPress gunean sortu eta txertatzeko aukera ematen dio.
 
-## Ikuspegi orokorra
+## Ikuspegi orokorra {#overview}
 
 Theme Builder-ek orain menu-orri profesional eta egituratuak sor ditzake ostalaritza-negozioentzat, besteak beste jatetxe, kafetegi, taberna eta catering zerbitzuentzat. Menu horiek guztiz integratuta daude zure gunearen diseinuan, eta erraz eguneratu eta kudea daitezke.
 
-## Onartutako ostalaritza motak
+## Onartutako ostalaritza motak {#supported-hospitality-types}
 
 - **Jatetxeak** — zerbitzu osoko otordu-menuak
 - **Kafetegiak** — kafe eta jaki arinen menuak
@@ -21,9 +21,9 @@ Theme Builder-ek orain menu-orri profesional eta egituratuak sor ditzake ostalar
 - **Food truck-ak** — janari-zerbitzu mugikorren menuak
 - **Garagardotegiak eta upategiak** — deskribapenak dituzten edari-menuak
 
-## Menuaren egitura
+## Menuaren egitura {#menu-structure}
 
-### Menu-kategoriak
+### Menu-kategoriak {#menu-categories}
 
 Menuak kategorietan antolatzen dira:
 
@@ -34,7 +34,7 @@ Menuak kategorietan antolatzen dira:
 - **Edariak** — edariak (alkoholdunak eta alkoholik gabeak)
 - **Bereziak** — eguneko edo sasoiko bereziak
 
-### Menu-elementuaren formatua
+### Menu-elementuaren formatua {#menu-item-format}
 
 Menu-elementu bakoitzak hau dauka:
 
@@ -49,7 +49,7 @@ Menu-elementu bakoitzak hau dauka:
 }
 ```
 
-#### Elementuaren eremuak
+#### Elementuaren eremuak {#item-fields}
 
 | Eremua | Mota | Deskribapena |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Menu-elementu bakoitzak hau dauka:
 | `allergens` | array | Alergeno arruntak (fruitu lehorrak, itsaskiak, etab.) |
 | `availability` | string | Noiz dagoen erabilgarri (egunero, sasoikoa, etab.) |
 
-## Ostalaritzako menuak sortzea
+## Ostalaritzako menuak sortzea {#creating-hospitality-menus}
 
-### 1. urratsa: eman menuaren informazioa
+### 1. urratsa: eman menuaren informazioa {#step-1-provide-menu-information}
 
 Esan Theme Builder-i zure menuari buruz:
 
@@ -71,7 +71,7 @@ Sortu jatetxe-menu bat nire jatetxe italiarrerako, aperitiboekin,
 pasta-platerekin, plater nagusiekin eta postreekin. Sartu prezioak eta deskribapenak.
 ```
 
-### 2. urratsa: Theme Builder-ek menua sortzen du
+### 2. urratsa: Theme Builder-ek menua sortzen du {#step-2-theme-builder-generates-menu}
 
 Theme Builder-ek:
 
@@ -81,7 +81,7 @@ Theme Builder-ek:
 4. Prezioak eta deskribapenak formateatzen ditu
 5. Dieta- eta alergeno-informazioa gehitzen du
 
-### 3. urratsa: berrikusi eta pertsonalizatu
+### 3. urratsa: berrikusi eta pertsonalizatu {#step-3-review-and-customize}
 
 Hau egin dezakezu:
 
@@ -91,9 +91,9 @@ Hau egin dezakezu:
 4. Deskribapenak eta dieta-informazioa eguneratu
 5. Estiloa eta diseinu-antolamendua doitu
 
-## Menua bistaratzeko aukerak
+## Menua bistaratzeko aukerak {#menu-display-options}
 
-### Menu-orri osoa
+### Menu-orri osoa {#full-menu-page}
 
 Zure menu osoa erakusten duen orri dedikatu bat:
 
@@ -102,7 +102,7 @@ Zure menu osoa erakusten duen orri dedikatu bat:
 - Inprimatzeko egokia den diseinu-antolamendua
 - Mugikorretarako egokitutako diseinua
 
-### Menu-widgeta
+### Menu-widgeta {#menu-widget}
 
 Txertatu menu-atalak beste orri batzuetan:
 
@@ -111,7 +111,7 @@ Txertatu menu-atalak beste orri batzuetan:
 - Edari-menua tabernaren orrian
 - Postreen erakusleihoa oinean
 
-### Menuaren PDFa
+### Menuaren PDFa {#menu-pdf}
 
 Sortu deskargatzeko moduko PDF menu bat:
 
@@ -120,9 +120,9 @@ Sortu deskargatzeko moduko PDF menu bat:
 - Irudiak eta deskribapenak barne
 - Partekatzeko eta posta elektronikoz bidaltzeko erraza
 
-## Dieta- eta alergeno-informazioa
+## Dieta- eta alergeno-informazioa {#dietary-and-allergen-information}
 
-### Dieta-atributuak
+### Dieta-atributuak {#dietary-attributes}
 
 Markatu elementuak dieta-informazioarekin:
 
@@ -134,7 +134,7 @@ Markatu elementuak dieta-informazioarekin:
 - **Karbohidrato gutxikoa** — karbohidrato murriztuak
 - **Proteina askokoa** — proteinatan aberatsa
 
-### Alergeno-ohartarazpenak
+### Alergeno-ohartarazpenak {#allergen-warnings}
 
 Sartu alergeno arruntak:
 
@@ -147,9 +147,9 @@ Sartu alergeno arruntak:
 - **Glutena** — garia eta glutena duten zerealak
 - **Sesamoa** — sesamo-haziak eta olioa
 
-## Menuaren kudeaketa
+## Menuaren kudeaketa {#menu-management}
 
-### Prezioak eguneratzea
+### Prezioak eguneratzea {#updating-prices}
 
 Eguneratu menu-prezioak erraz:
 
@@ -159,7 +159,7 @@ Eguneratu menu-prezioak erraz:
 4. Gorde aldaketak
 5. Aldaketak berehala agertzen dira zure gunean
 
-### Sasoiko elementuak gehitzea
+### Sasoiko elementuak gehitzea {#adding-seasonal-items}
 
 Sortu sasoiko menu-aldaerak:
 
@@ -169,7 +169,7 @@ Sortu sasoiko menu-aldaerak:
 4. Programatu erabilgarritasun-datak
 5. Bistaratu automatikoki sasoian
 
-### Bereziak kudeatzea
+### Bereziak kudeatzea {#managing-specials}
 
 Bistaratu eguneko edo asteko bereziak:
 
@@ -179,7 +179,7 @@ Bistaratu eguneko edo asteko bereziak:
 4. Eguneratu egunero edo astero
 5. Artxibatu berezi zaharrak
 
-## Theme Builder-ekin integrazioa
+## Theme Builder-ekin integrazioa {#integration-with-theme-builder}
 
 Theme Builder ostalaritzako guneetarako erabiltzean:
 
@@ -189,9 +189,9 @@ Theme Builder ostalaritzako guneetarako erabiltzean:
 4. **Mugikorretarako optimizazioa** — menuak ederki bistaratzen dira telefonoetan
 5. **SEO optimizazioa** — menuak bilatzaileentzat egokiak dira
 
-## Praktika gomendatuak
+## Praktika gomendatuak {#best-practices}
 
-### Menuaren diseinua
+### Menuaren diseinua {#menu-design}
 
 - **Antolaketa argia** — kategoria-egitura logikoa
 - **Deskribapen irakurgarriak** — erakargarriak eta informatiboak
@@ -199,7 +199,7 @@ Theme Builder ostalaritzako guneetarako erabiltzean:
 - **Argazki profesionalak** — kalitate handiko janari-irudiak
 - **Zuriunea** — ez pilatu gehiegi orria
 
-### Edukia
+### Edukia {#content}
 
 - **Deskribapen zehatzak** — deskribatu elementuak zehaztasunez
 - **Bereziak nabarmendu** — egin bereziak nabarmentzeko moduan
@@ -207,7 +207,7 @@ Theme Builder ostalaritzako guneetarako erabiltzean:
 - **Aldizka eguneratu** — mantendu prezioak eta elementuak eguneratuta
 - **Erabili hizkera erakargarria** — egin elementuak gozo entzuteko moduan
 
-### Irisgarritasuna
+### Irisgarritasuna {#accessibility}
 
 - **Letra-tipo irakurgarriak** — erabili letra-mota argiak eta irakurgarriak
 - **Kontraste nahikoa** — ziurtatu testua irakurgarria dela
@@ -215,9 +215,9 @@ Theme Builder ostalaritzako guneetarako erabiltzean:
 - **Alergeno-ohartarazpenak** — bistaratu alergenoak nabarmen
 - **Mugikorretarako egokia** — probatu gailu guztietan
 
-## Adibideak
+## Adibideak {#examples}
 
-### Jatetxe-menuaren egitura
+### Jatetxe-menuaren egitura {#restaurant-menu-structure}
 
 ```
 Hasierakoak
@@ -241,7 +241,7 @@ Postreak
 └── Gelato aukeraketa
 ```
 
-### Kafetegiko menuaren egitura
+### Kafetegiko menuaren egitura {#cafe-menu-structure}
 
 ```
 Kafea
@@ -260,7 +260,7 @@ Ogitartekoak
 └── Wrap begetarianoa
 ```
 
-## Lotutako eginbideak
+## Lotutako eginbideak {#related-features}
 
 - [Sortu menua](../abilities/create-menu.md) — sortu nabigazio-menuak
 - [Diseinuaren norabidea](./design-direction.md) — pertsonalizatu zure gunearen diseinua

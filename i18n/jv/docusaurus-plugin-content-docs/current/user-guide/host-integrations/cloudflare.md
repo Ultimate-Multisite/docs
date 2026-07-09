@@ -3,18 +3,18 @@ title: Integrasi Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integrasi Cloudflare
+# Integrasi Cloudflare {#cloudflare-integration}
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 Cloudflare iku salah satu penyedia jaringan pengiriman konten (CDN) lan keamanan utama sing mbantu nglindungi lan ngebut website. Integrasi iki bisa nggawe manajemen domain otomatis antara Ultimate Multisite lan Cloudflare, utamane kanggo instalasi subdomain multisite.
 
-## Fitur-fitur
+## Fitur-fitur {#features}
 - Otomatis nggawe subdomain ing Cloudflare
 - Dukungan subdomain sing di-proxy (proxied)
 - Manajemen record DNS
 - Tampilan record DNS sing luwih apik ing admin Ultimate Multisite
 
-## Persyaratan
+## Persyaratan {#requirements}
 Konstanta iki kudu didefinisikake ing file `wp-config.php` sampeyan:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Instruksi Setup
+## Instruksi Setup {#setup-instructions}
 
-### 1. Dapatkan API Key Cloudflare Sampeyan
+### 1. Dapatkan API Key Cloudflare Sampeyan {#1-get-your-cloudflare-api-key}
 
 1. Masuk menyang dashboard Cloudflare sampeyan
 2. Tindakake "My Profile" (klik email sampeyan ing pojok tengene)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. Salin token API sampeyan
 
-### 2. Dapatkan Zone ID Sampeyan
+### 2. Dapatkan Zone ID Sampeyan {#2-get-your-zone-id}
 
 1. Ing dashboard Cloudflare sampeyan, pilih domain sing arep dienggo
 2. Zone ID bisa ditemokake ing tab "Overview", ing sidebar tengene ngisor "API"
 3. Salin Zone ID kasebut
 
-### 3. Tambah Konstanta ing wp-config.php
+### 3. Tambah Konstanta ing wp-config.php {#3-add-constants-to-wp-configphp}
 
 Tambahkan konstanta iki menyang file `wp-config.php` sampeyan:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Aktifke Integrasi
+### 4. Aktifke Integrasi {#4-enable-the-integration}
 
 1. Ing admin WordPress sampeyan, tindakake Ultimate Multisite > Settings
 2. Tindakake menyang tab "Domain Mapping"
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Aktifke integrasi Cloudflare
 5. Klik "Save Changes"
 
-## Cara Kerjane
+## Cara Kerjane {#how-it-works}
 
-### Manajemen Subdomain
+### Manajemen Subdomain {#subdomain-management}
 
 Nalika website anyar digawe ing instalasi subdomain multisite:
 
@@ -67,7 +67,7 @@ Nalika website anyar digawe ing instalasi subdomain multisite:
 2. Subdomain diatur supaya diproksi liwat Cloudflare kanthi default (iki bisa diubah nganggo filter).
 3. Nalika situs dihapus, integrasi bakal ngilangake subdomain saka Cloudflare.
 
-### Tampilan Record DNS
+### Tampilan Record DNS {#dns-record-display}
 
 Integrasi iki nambah tampilan record DNS ing admin Ultimate Multisite kanthi cara:
 
@@ -75,11 +75,11 @@ Integrasi iki nambah tampilan record DNS ing admin Ultimate Multisite kanthi car
 2. Nampilake yen record iku diproksi utawa ora.
 3. Nggambarake informasi tambahan babagan record DNS kasebut.
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (sadurunge diarani "Cloudflare for SaaS") yaiku fitur ing Cloudflare sing menehi pelangganmu bisa nggunakake domain dhewe kanthi SSL ing jaringan multisite-mu. Iki cara sing direkomendake kanggo instalasi multisite sing dipetapakake domain sing nggunakake Cloudflare, amarga Cloudflare ngatur penerbitan lan pangresik sertifikat SSL kanggo saben domain kustom kanthi otomatis.
 
-### Kepiye bedane karo integrasi standar Cloudflare
+### Kepiye bedane karo integrasi standar Cloudflare {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Integrasi Standar | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ Integrasi iki nambah tampilan record DNS ing admin Ultimate Multisite kanthi car
 | **Cocok kanggo** | Multisite subdomain | Multisite sing dipetapakake domain |
 | **SSL** | Diurus terpisah | Dikelola otomatis dening Cloudflare |
 
-### Ngatur Cloudflare Custom Hostnames
+### Ngatur Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. Ing dashboard Cloudflare sampeyan, buka zona kanggo domain utama sampeyan.
 2. Tindakake **SSL/TLS > Custom Hostnames**.
@@ -101,23 +101,23 @@ Kanggo referensi API lengkap, deleng [Cloudflare Custom Hostnames documentation]
 Miturut Ultimate Multisite v2.6.1, fitur iki diarani **Cloudflare Custom Hostnames** ing kabeh pengaturan lan label plugin. Versi sadurunge nggunakake jeneng "Cloudflare for SaaS", sing yaiku jeneng produk Cloudflare sing dadi dasare.
 :::
 
-## Cathetan Penting
+## Cathetan Penting {#important-notes}
 
 Miturut pembaruan Cloudflare saiki, wildcard proxy wis bisa kanggo kabeh pelanggan. Iki tegese integrasi DNS standar Cloudflare ora pati penting maneh kanggo instalasi multisite subdomain tinimbang biyen, amarga sampeyan mung perlu ngatur record DNS wildcard ing Cloudflare.
 
-## Pemecahan Masalah (Troubleshooting)
+## Pemecahan Masalah (Troubleshooting) {#troubleshooting}
 
-### Masalah Koneksi API
+### Masalah Koneksi API {#api-connection-issues}
 - Verifikasi yen token API panjenengan bener lan duwe izin sing dibutuhake.
 - Cek yen Zone ID panjenengan bener.
 - Pastikan yen akun Cloudflare panjenengan duwe izin sing perlu.
 
-### Subdomain Ora Ditambah
+### Subdomain Ora Ditambah {#subdomain-not-added}
 - Cek log Ultimate Multisite kanggo pesan error apa wae.
 - Verifikasi yen subdomain wis ora ditambahi ing Cloudflare.
 - Pastikan yen paket Cloudflare panjenengan ndhukung jumlah record DNS sing sampeyan gawe.
 
-### Masalah Proxying
+### Masalah Proxying {#proxying-issues}
 
 - Yen sampeyan ora pengin subdomain dadi proxy, sampeyan bisa nggunakake filter `wu_cloudflare_should_proxy`.
 - Kadhang fitur mungkin ora bakal nyambung bener nalika di-proxy (contone, fungsi admin WordPress tartamtu).

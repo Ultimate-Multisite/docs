@@ -3,9 +3,9 @@ title: Ho qala ka nts'etsopele ea litlatsetso
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Ntshetsopele ya Keketso
+# Ntshetsopele ya Keketso {#addon-development}
 
-## Sebopeho sa Keketso
+## Sebopeho sa Keketso {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Thempleite ya Faele e Kgolo ya Keketso
+## Thempleite ya Faele e Kgolo ya Keketso {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Mohlala wa Model e Ikgethileng
+## Mohlala wa Model e Ikgethileng {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Kopanyo ya Leqephe la Taolo
+## Kopanyo ya Leqephe la Taolo {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Ho Lekola Tlatsetso ea Hao
+## Ho Lekola Tlatsetso ea Hao {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## lintlha tsa katoloso tsa v2.13.0
+## lintlha tsa katoloso tsa v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 e eketsa lintlha tse ’maloa tsa katoloso tse molemo bakeng sa ditlatsetso tse kopanang le bahiri ba ikemetseng, li-domain tsa tefo, kapa boiketsetso ba DNS ba mofani oa host.
 
-### SSO le URLs tsa tsamaiso ea sebaka se seholo
+### SSO le URLs tsa tsamaiso ea sebaka se seholo {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Li-domain tsa motheo tsa foromo ea tefo
+### Li-domain tsa motheo tsa foromo ea tefo {#checkout-form-base-domains}
 
 Sebelisa `wu_checkout_form_base_domains` ha tlatsetso ea hao e fana ka li-domain tse ling tsa motheo tse arolelanoang tse lokelang ho itšoara joaloka li-domain tsa foromo ea tefo tsa **URL ea Sebaka** ho e-na le limmapa tse ikhethileng tsa sebaka ka seng:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite e hlophisa hosts tsena ka mokhoa o tloaelehileng ’me e tlola direkoto tsa domain tse mapiloeng ka boiketsetso bakeng sa sebaka ka seng bakeng sa tsona.
 
-### Tlhahiso ea direkoto tsa domain ka boiketsetso
+### Tlhahiso ea direkoto tsa domain ka boiketsetso {#automatic-domain-record-creation}
 
 Sebelisa `wu_should_create_domain_record_for_site` ha tlatsetso ea hao e hloka ho thibela kapa ho chechisa tlhahiso ea rekoto ea domain ka boiketsetso bakeng sa sebaka se sa tsoa etsoa:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Likopano tsa mofani oa host tse mamelang `wu_add_subdomain` li ka etsa direkoto tsa DNS ka lehlakoreng la mofani ha libaka li etsoa. Haeba ho se kopano e ngolisitsoeng bakeng sa ketso eo, Ultimate Multisite e tlola mosebetsi oa morao-rao o se nang letho.
 
-## Mehato e Latelang
+## Mehato e Latelang {#next-steps}
 
 - Hlahloba [Tshupiso ea Hooks](/developer/hooks) bakeng sa diketso le difilthara tse fumanehang
 - Sheba [Kakaretso ea REST API](/developer/rest-api/overview) bakeng sa kopanyo ea API

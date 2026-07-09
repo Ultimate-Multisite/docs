@@ -3,15 +3,15 @@ title: 'Lektion 5: Designa dina planer'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lektion 5: Designa dina planer
+# Lektion 5: Designa dina planer {#lesson-5-designing-your-plans}
 
 Dina planerivåer är inte bara prissättningsnivåer – de är en spegling av hur dina nischkunder faktiskt arbetar. I denna lektion kommer du att designa produktnivåer som matchar de verkliga behoven hos träningsföretag i olika skeden.
 
-## Var vi slutade
+## Var vi slutade {#where-we-left-off}
 
 FitSite har tre färdiga mallar (Studio Essential, Gym Pro, Fitness Chain). Nu skapar vi planerna som bestämmer vad kunderna får tillgång till och vad de betalar för.
 
-## Tänk i kundsegment
+## Tänk i kundsegment {#thinking-in-customer-segments}
 
 Misstaget de flesta gör är att designa planer baserat på tekniska funktioner (lagring, bandbredd, antal sidor). Dina nischkunder tänker inte i sådana termer. En gymägare tänker på vad hen behöver för att driva sin verksamhet.
 
@@ -25,11 +25,11 @@ För träningsstudior finns det tre naturliga segment:
 
 Dina planer bör matcha dessa segment, inte godtyckliga funktionspaket.
 
-## Skapa FitSite-planerna
+## Skapa FitSite-planerna {#creating-the-fitsite-plans}
 
 Navigera till **Ultimate Multisite > Products > Add Product** för varje plan.
 
-### Plan 1: FitSite Starter -- $49/månad
+### Plan 1: FitSite Starter -- $49/månad {#plan-1-fitsite-starter----49month}
 
 **Målgrupp**: Enskilda tränare och små studior
 
@@ -59,7 +59,7 @@ Navigera till **Ultimate Multisite > Products > Add Product** för varje plan.
 - Ditt valda tema: Tvinga aktivering
 - Alla andra teman: Dolda
 
-### Plan 2: FitSite Growth -- $99/månad
+### Plan 2: FitSite Growth -- $99/månad {#plan-2-fitsite-growth----99month}
 
 **Målgrupp**: Etablerade gym på en plats
 
@@ -85,7 +85,7 @@ Navigera till **Ultimate Multisite > Products > Add Product** för varje plan.
 - Planfamilj: FitSite Plans
 - Produktordning: 2
 
-### Plan 3: FitSite Pro -- $199/månad
+### Plan 3: FitSite Pro -- $199/månad {#plan-3-fitsite-pro----199month}
 
 **Målgrupp**: Träningskedjor med flera platser
 
@@ -109,7 +109,7 @@ Navigera till **Ultimate Multisite > Products > Add Product** för varje plan.
 - Planfamilj: FitSite Plans
 - Produktordning: 3
 
-## Inställning av planfamiljen
+## Inställning av planfamiljen {#setting-up-the-plan-group}
 
 Planfamiljen säkerställer att kunderna endast kan uppgradera eller nedgradera inom FitSite-planfamiljen. På varje plans flik **Uppgraderingar & Nedgraderingar**:
 
@@ -118,7 +118,7 @@ Planfamiljen säkerställer att kunderna endast kan uppgradera eller nedgradera 
 
 Detta skapar en tydlig uppgraderingsväg: Starter → Growth → Pro.
 
-## Lägga till order bumps
+## Lägga till order bumps {#adding-order-bumps}
 
 Order bumps är tilläggsprodukter som erbjuds vid kassan. För FitSite kan du överväga:
 
@@ -128,7 +128,7 @@ Order bumps är tilläggsprodukter som erbjuds vid kassan. För FitSite kan du �
 
 Skapa dessa som produkter av typen **Package** i Ultimate Multisite och associera dem med de relevanta planerna.
 
-## Varför denna struktur fungerar
+## Varför denna struktur fungerar {#why-this-structure-works}
 
 - **Starter** tar bort inträdeshinder – lågt pris, enkelt erbjudande, får tränare online snabbt
 - **Growth** lägger till de funktioner gym faktiskt efterfrågar – bokning, gallerier, egna domäner
@@ -136,7 +136,7 @@ Skapa dessa som produkter av typen **Package** i Ultimate Multisite och associer
 - **Order bumps** låter kunder anpassa utan att komplicera kärnplanerna
 - **Tydlig uppgraderingsväg** innebär att kunderna växer med dig istället för att lämna
 
-## FitSite Network hittills
+## FitSite Network hittills {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Redo för kassa-konfiguration (nästa lektion)
 ```
 
-## Vad vi byggde i denna lektion
+## Vad vi byggde i denna lektion {#what-we-built-this-lesson}
 
 - **Tre plannivåer** kopplade till verkliga träningsverksamhetssegment
 - **Funktionsbegränsning** med hjälp av Ultimate Multisites plugin- och mallkontroller

@@ -3,11 +3,11 @@ title: Referenca WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Referenca WP-CLI
+# Referenca WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent vjen me një familje komandash `wp gratis-ai-agent` për krahasimin e performancës së agjentit, menaxhimin e aftësive dhe marrjen e statusit të agjentit nga linja e komandës. Të gjitha komandat kërkojnë WP-CLI 2.0 ose më të lartë.
 
-## Instalimi
+## Instalimi {#installation}
 
 Komandat WP-CLI regjistrohen automatikisht kur shtesa është aktive. Verifikojeni me:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Ekzekuton kompletin e benchmark-ut të Aftësive të Agjentit — një grup kërkesash komplekse, me shumë hapa, që ushtrojnë të gjithë sipërfaqen e aftësive. Përdoreni këtë për të vlerësuar performancën e modelit, për të krahasuar ofruesit e AI-së, ose për të validuar paketat e aftësive përpara vendosjes në prodhim.
 
-### Përmbledhje
+### Përmbledhje {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Opsionet
+### Opsionet {#options}
 
 | Opsion | Përshkrimi |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Formati i daljes: `table` (parazgjedhje), `json`, `csv` |
 | `--save` | Ruaj rezultatet e benchmark-ut në bazën e të dhënave për krahasim historik |
 
-### Shembuj
+### Shembuj {#examples}
 
 Ekzekuto kompletin e plotë të benchmark-ut me ofruesin dhe modelin aktual:
 
@@ -57,7 +57,7 @@ Ekzekuto kundrejt një modeli specifik dhe ruaj rezultatet:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Dalja
+### Dalja {#output}
 
 Benchmark-u nxjerr një rresht për çdo pyetje me kolonat e mëposhtme:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apliko një paravendosje theme të errët 100   apply_t
 ...
 ```
 
-### Pyetjet e Benchmark-ut
+### Pyetjet e Benchmark-ut {#benchmark-questions}
 
 Kompleti parazgjedhje përfshin:
 
@@ -95,11 +95,11 @@ Pyetje shtesë mund të regjistrohen përmes filtrit `gratis_ai_agent_benchmark_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Menaxhon aftësitë e instaluara dhe paketat e aftësive.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Liston të gjitha aftësitë e regjistruara, burimin e tyre (bazë ose paketë) dhe statusin e tyre aktual.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     aktive
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Shkarkon dhe aktivizon një paketë aftësish nga regjistri.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Çaktivizon një aftësi specifike pa hequr paketën. E dobishme për të kufizuar fushëveprimin e agjentit në një site të caktuar.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Riaktivizon një aftësi të çaktivizuar më parë.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Shfaq konfigurimin aktual të agjentit dhe statusin e lidhjes.
 
@@ -200,7 +200,7 @@ Blocklist opsionesh: 18 zëra
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Shfaq aktivitetin e fundit të agjentit nga regjistri i debug-ut.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Rivendos gjendjen e agjentit: pastron CSS-in e injektuar, heq CPT-të dhe taksonomitë e regjistruara nga agjenti, rivendos stilet globale dhe zbraz cache-in e opsioneve të agjentit. Nuk e heq plugin-in ose cilësimet e tij.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Kodet e daljes
+## Kodet e daljes {#exit-codes}
 
 Të gjitha komandat dalin me `0` në rast suksesi. Kode daljeje jo-zero:
 

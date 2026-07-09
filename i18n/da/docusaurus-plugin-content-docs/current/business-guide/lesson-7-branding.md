@@ -3,15 +3,15 @@ title: 'Lektion 7: Gør det dit eget'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lektion 7: Gør Det Til Dit Eget
+# Lektion 7: Gør Det Til Dit Eget {#lesson-7-making-it-yours}
 
 Dine kunder må aldrig føle, at de bruger "et tilfældigt WordPress plugin". De skal føle, at de bruger FitSite – en platform bygget specifikt til deres branche. Denne lektion dækker branding, white-labeling og hvordan man får platformen til at føles som et produkt.
 
-## Hvor Vi Sluttede Af
+## Hvor Vi Sluttede Af {#where-we-left-off}
 
 FitSite har nu en fungerende checkout flow, der tager fitnessstudioejere fra planvalg til en live side. Nu skal vi få hele oplevelsen til at føles som et sammenhængende, brandet produkt.
 
-## Din Platformens Domæne
+## Din Platformens Domæne {#your-platform-domain}
 
 Grundlaget for dit brand er dit domæne. For FitSite:
 
@@ -19,7 +19,7 @@ Grundlaget for dit brand er dit domæne. For FitSite:
 - **Kunde-sites**: `studionavn.fitsite.com` (subdomæner)
 - **Tilpassede domæner**: Kunder på Growth- og Pro-plan kan mappe deres eget domæne
 
-### Opsætning af Dit Domæne
+### Opsætning af Dit Domæne {#setting-up-your-domain}
 
 1. Registrer dit platformdomæne
 2. Peg det til din hostingudbyder
@@ -28,11 +28,11 @@ Grundlaget for dit brand er dit domæne. For FitSite:
 
 Se [Hvordan man konfigurerer domænemapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) for detaljerede instruktioner.
 
-## White-Labeling af Admin-oplevelsen
+## White-Labeling af Admin-oplevelsen {#white-labeling-the-admin-experience}
 
 Når en fitnessstudioejer logger ind på deres sites dashboard, skal de se dit brand, ikke WordPress eller Ultimate Multisite branding.
 
-### Tilpasset Login-side
+### Tilpasset Login-side {#custom-login-page}
 
 Tilpas WordPress login-siden til at vise:
 
@@ -40,7 +40,7 @@ Tilpas WordPress login-siden til at vise:
 - Fitness-relaterede baggrundsbilleder
 - Dine brandfarver
 
-### Dashboard Branding
+### Dashboard Branding {#dashboard-branding}
 
 Brug [Admin Page Creator](/addons/admin-page-creator) add-on eller custom CSS til at:
 
@@ -48,7 +48,7 @@ Brug [Admin Page Creator](/addons/admin-page-creator) add-on eller custom CSS ti
 - Tilpasse administrationsfarveskemaet til at matche dit brand
 - Tilføje en custom dashboard widget med fitness-specifikke hurtige links og hjælperessourcer
 
-### Custom Admin Sider
+### Custom Admin Sider {#custom-admin-pages}
 
 Overvej at oprette custom admin sider, der fremhæver de mest relevante handlinger for fitnessstudieejere:
 
@@ -58,11 +58,11 @@ Overvej at oprette custom admin sider, der fremhæver de mest relevante handling
 
 Dette reducerer læringskurven ved at placere niche-relevante handlinger i centrum frem for at gemme dem i den standard WordPress menu.
 
-## Branding af dine Kommunikation
+## Branding af dine Kommunikation {#branding-your-communications}
 
 Hver e-mail, faktura og notifikation skal styrke dit brand.
 
-### System E-mails
+### System E-mails {#system-emails}
 
 Gå til **Ultimate Multisite > Settings > Emails** og tilpas alle systeme-mails:
 
@@ -79,7 +79,7 @@ Vigtige e-mails at tilpasse:
 | Betalingskvittering | "Betaling modtaget" | "FitSite abonnement betaling bekræftet" |
 | Prøveperiode udløber | "Din prøveperiode slutter snart" | "Din FitSite prøveperiode slutter om 3 dage – hold dit studie-website kørende" |
 
-### Fakturaer
+### Fakturaer {#invoices}
 
 Tilpas fakturaskabeloner med:
 
@@ -87,7 +87,7 @@ Tilpas fakturaskabeloner med:
 - Dine virksomhedsdetaljer
 - Fitness-specifikke produktnavne (ikke generiske plan-ID'er)
 
-## Den Kundeorienterede Side
+## Den Kundeorienterede Side {#the-customer-facing-site}
 
 Din hoveddomæne (`fitsite.com`) skal have en markedsføringsside, der sælger platformen. Denne er adskilt fra administrator-delen af Ultimate Multisite-netværket – det er virksomhedens offentlige ansigt.
 
@@ -103,7 +103,7 @@ Vigtige sider:
 Opret din markedsføringsside som en side inden for dit eget netværk. Dette giver dig mulighed for at administrere den fra det samme dashboard og demonstrere dine egne platforms muligheder.
 :::
 
-## Custom Domæne til Kunder
+## Custom Domæne til Kunder {#custom-domain-for-customers}
 
 For kunder på planer, der inkluderer custom domæner, dokumentér processen tydeligt:
 
@@ -113,7 +113,7 @@ For kunder på planer, der inkluderer custom domæner, dokumentér processen tyd
 
 Opret en hjælpeartikel eller en artikel i vidensbasen specifikt til denne proces, skrevet til ikke-tekniske fitnessstudioejere.
 
-## FitSite Netværket Indtil Nu
+## FitSite Netværket Indtil Nu {#the-fitsite-network-so-far}
 
 FitSite Network
 ├── WordPress Multisite (subdomområde)
@@ -130,7 +130,7 @@ FitSite Network
 │   └── Markedsider på fitsite.com
 └── Klar til onboarding flow (næste lektion)
 
-## Hvad har vi bygget i denne lektion
+## Hvad har vi bygget i denne lektion {#what-we-built-this-lesson}
 
 - **Platformdomæne og DNS** konfigureret for en brandet oplevelse
 - **Hvidmærket admin** med FitSite branding overalt

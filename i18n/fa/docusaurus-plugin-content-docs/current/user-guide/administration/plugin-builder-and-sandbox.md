@@ -3,11 +3,11 @@ title: سازنده و محیط آزمایشی افزونه
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder و Sandbox
+# Plugin Builder و Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 با معرفی **سیستم Plugin Builder و Sandbox**، به دستیار هوش مصنوعی اجازه می‌دهد تا افزونه‌های وردپرس را در شبکه شما تولید، فعال و مدیریت کند؛ و این کار همگی از طریق یک محیط Sandbox ایزوله و امن انجام می‌شود.
 
-## نمای کلی (Overview)
+## نمای کلی (Overview) {#overview}
 
 Plugin Builder به دستیار هوش مصنوعی این قابلیت را می‌دهد که افزونه‌های سفارشی وردپرس را در پاسخ به درخواست‌های زبان طبیعی بنویسد. افزونه‌های تولید شده، قبل از اینکه هرگز روی عملکرد سایت زنده تأثیری بگذارند، در یک لایه Sandbox اعتبارسنجی، ذخیره و فعال می‌شوند.
 
@@ -17,7 +17,7 @@ Plugin Builder به دستیار هوش مصنوعی این قابلیت را م
 - نمونه‌سازی ویژگی‌هایی که نیاز به هوک‌های وردپرس (WordPress hooks) یا انواع پست سفارشی (custom post types) دارند.
 - ایجاد اسکریپت‌های اتوماسیون کوتاه‌مدت برای عملیات دسته‌ای (batch operations).
 
-## تولید افزونه با هوش مصنوعی (Generating a Plugin via AI)
+## تولید افزونه با هوش مصنوعی (Generating a Plugin via AI) {#generating-a-plugin-via-ai}
 
 برای تولید یک افزونه، رابط چت Gratis AI Agent را باز کرده و آنچه نیاز دارید را توصیف کنید. برای مثال:
 
@@ -32,7 +32,7 @@ Plugin Builder به دستیار هوش مصنوعی این قابلیت را م
 
 می‌توانید با پیگیری در همان رشته مکالمه، نتیجه را بهبود بخشید، قبل از اینکه آن را فعال کنید.
 
-## فعال‌سازی در Sandbox (Sandbox Activation)
+## فعال‌سازی در Sandbox (Sandbox Activation) {#sandbox-activation}
 
 فعال‌سازی یک افزونه تولید شده در Sandbox با فعال‌سازی آن در شبکه زنده متفاوت است. Sandbox:
 
@@ -48,7 +48,7 @@ Plugin Builder به دستیار هوش مصنوعی این قابلیت را م
 
 یک پیام وضعیت تأیید می‌کند که آیا فعال‌سازی موفقیت‌آمیز بوده یا خیر. در صورت شکست، گزارش خطا در رشته چت نمایش داده می‌شود.
 
-## مدیریت افزونه‌های تولید شده (Managing Generated Plugins)
+## مدیریت افزونه‌های تولید شده (Managing Generated Plugins) {#managing-generated-plugins}
 
 افزونه‌های تولید شده در مسیر **Gratis AI Agent → Plugin Builder → Manage Plugins** لیست شده‌اند. از این صفحه می‌توانید:
 
@@ -64,7 +64,7 @@ Plugin Builder به دستیار هوش مصنوعی این قابلیت را م
 **Install on network** افزونه تولید شده را در وردپرس چندسایتی (multisite) زنده شما مستقر می‌کند. قبل از ادامه، کد افزونه را بررسی کنید. Gratis AI Agent قبل از تکمیل نصب زنده، درخواست تأیید خواهد کرد.
 :::
 
-## نصب افزونه تولید شده در شبکه (Installing a Generated Plugin on the Network)
+## نصب افزونه تولید شده در شبکه (Installing a Generated Plugin on the Network) {#installing-a-generated-plugin-on-the-network}
 
 وقتی از یک افزونه در Sandbox راضی بودید، می‌توانید آن را در شبکه زنده نصب کنید:
 
@@ -78,7 +78,7 @@ Plugin Builder به دستیار هوش مصنوعی این قابلیت را م
 /install-plugin <plugin-slug>
 ```
 
-## به‌روزرسانی افزونه‌ها (Plugin Updates)
+## به‌روزرسانی افزونه‌ها (Plugin Updates) {#plugin-updates}
 
 برای به‌روزرسانی یک افزونه تولید شده، تغییر مورد نظر را در یک مکالمه جدید به دستیار هوش مصنوعی توصیف کنید:
 
@@ -86,7 +86,7 @@ Plugin Builder به دستیار هوش مصنوعی این قابلیت را م
 
 هوش مصنوعی یک نسخه جدید تولید می‌کند که در کنار نسخه فعلی در Sandbox ظاهر می‌شود. شما تفاوت‌ها (diff) را بررسی کرده و قبل از اعمال به‌روزرسانی، تأیید می‌کنید.
 
-## یکپارچه‌سازی HookScanner (HookScanner Integration)
+## یکپارچه‌سازی HookScanner (HookScanner Integration) {#hookscanner-integration}
 
 Plugin Builder از یک **HookScanner** یکپارچه برای تحلیل هوک‌ها و فیلترهایی که هر افزونه تولید شده ثبت می‌کند، استفاده می‌کند. خروجی HookScanner در پاسخ چت نمایش داده می‌شود و شامل موارد زیر است:
 
@@ -96,7 +96,7 @@ Plugin Builder از یک **HookScanner** یکپارچه برای تحلیل هو
 
 این کار به شما کمک می‌کند تا رفتار یک افزونه را قبل از فعال‌سازی آن درک کنید.
 
-## ملاحظات امنیتی (Security Considerations)
+## ملاحظات امنیتی (Security Considerations) {#security-considerations}
 
 - افزونه‌های تولید شده به طور جداگانه‌ای از افزونه‌های نصب شده دستی ذخیره می‌شوند و تا زمانی که شما به صراحت آن‌ها را در شبکه نصب نکنید، از طریق صفحه مدیریت افزونه استاندارد وردپرس قابل دسترسی نیستند.
 - Sandbox از اعتبارسنجی مسیر (path validation) برای جلوگیری از پیمایش دایرکتوری (directory traversal) هنگام نوشتن فایل‌های افزونه استفاده می‌کند.

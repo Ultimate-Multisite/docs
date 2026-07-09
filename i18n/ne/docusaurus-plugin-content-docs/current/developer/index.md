@@ -3,11 +3,11 @@ title: विकासकर्ता दस्तावेजीकरण
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# विकासकर्ता दस्तावेज
+# विकासकर्ता दस्तावेज {#developer-documentation}
 
 यो मार्गदर्शिकाले विकासकर्ताहरूलाई Ultimate Multisite सँग एकीकृत गर्न, विस्तार गर्न, वा त्यसका लागि एडअनहरू विकास गर्न आवश्यक सबै कुरा प्रदान गर्छ। Ultimate Multisite ले WordPress Multisite नेटवर्कलाई Website-as-a-Service (WaaS) प्लेटफर्ममा रूपान्तरण गर्छ।
 
-## के उपलब्ध छ
+## के उपलब्ध छ {#whats-available}
 
 - **[REST API](./rest-api/overview)** — API key प्रमाणीकरणसहित सबै निकायहरू (ग्राहकहरू, साइटहरू, सदस्यताहरू, भुक्तानीहरू, उत्पादनहरू, डोमेनहरू) का लागि पूर्ण CRUD सञ्चालनहरू
 - **[Hooks सन्दर्भ](./hooks/guide)** — जीवनचक्र घटनाहरू र अनुकूलनका लागि २००+ action hooks र २८०+ filter hooks
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[कोड उदाहरणहरू](./code-examples/)** — गतिशील मूल्य निर्धारण, साइट प्रावधान, अनुकूल सीमाहरू, र बहु-गेटवे प्रशोधनका लागि उन्नत ढाँचाहरू
 - **[एडअन विकास](./addon-development/getting-started)** — एडअन प्लगइनहरू बनाउनका लागि संरचित फ्रेमवर्क
 
-## आवश्यकताहरू
+## आवश्यकताहरू {#requirements}
 
 - WordPress Multisite स्थापना
 - PHP 7.4 वा सोभन्दा माथि
 - Ultimate Multisite प्लगइन सक्रिय गरिएको
 
-## Composer / Bedrock स्थापना
+## Composer / Bedrock स्थापना {#composer--bedrock-installation}
 
 Ultimate Multisite [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) मा `ultimate-multisite/ultimate-multisite` को रूपमा उपलब्ध छ। यो [Bedrock](https://roots.io/bedrock/)-आधारित WordPress सेटअपहरू र अन्य Composer-व्यवस्थित वातावरणहरूका लागि सिफारिस गरिएको स्थापना विधि हो।
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## छिटो सुरु गर्नुहोस्
+## छिटो सुरु गर्नुहोस् {#quick-start}
 
-### REST API प्रयोग गर्नुहोस्
+### REST API प्रयोग गर्नुहोस् {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### घटनाहरूमा Hook गर्नुहोस्
+### घटनाहरूमा Hook गर्नुहोस् {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### एडअन बनाउनुहोस्
+### एडअन बनाउनुहोस् {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

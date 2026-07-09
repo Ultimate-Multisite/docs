@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite papildinājumi
+# Ultimate Multisite papildinājumi {#ultimate-multisite-addons}
 
 Papildinājumi paplašina Ultimate Multisite ar papildu funkcijām un integrācijām. Lielākā daļa papildinājumu ir maksas, un tos var iegādāties vietnē [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Instalēšana
+## Instalēšana {#installation}
 
 Papildinājumus var instalēt divos veidos:
 
 1. **Izmantojot papildinājumu lapu** -- Dodieties uz savas vietnes papildinājumu pārvaldības lapu WordPress administrēšanas sadaļā
 2. **Manuāla lejupielāde** -- Lejupielādējiet no [sava Account](https://ultimatemultisite.com/my-account/downloads/) un augšupielādējiet, izmantojot Plugins > Add New
 
-## Pieejamie papildinājumi
+## Pieejamie papildinājumi {#available-addons}
 
 | Papildinājums | Apraksts |
 |-------|-------------|

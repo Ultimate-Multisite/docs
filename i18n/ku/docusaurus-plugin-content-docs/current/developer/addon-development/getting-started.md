@@ -3,9 +3,9 @@ title: Destpêkirin bi pêşxistina pêvekan
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Pêşxistina Addon
+# Pêşxistina Addon {#addon-development}
 
-## Avahiya Addon
+## Avahiya Addon {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Şablona Pelê Sereke ya Addon
+## Şablona Pelê Sereke ya Addon {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Nimûneya Modela Taybet
+## Nimûneya Modela Taybet {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Yekbûna Rûpela Admin
+## Yekbûna Rûpela Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Ceribandina Pêveka Te
+## Ceribandina Pêveka Te {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## xalên firehkirinê yên v2.13.0
+## xalên firehkirinê yên v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 çend xalên firehkirinê zêde dike ku ji bo pêvekên ku bi kirêdarên serbixwe, domainên qedandina kirînê, an otomatîzekirina DNS ya pêşkêşkerê mêvandarî re yekbûyî dibin bikêr in.
 
-### URL-ên SSO û rêvebirina malpera sereke
+### URL-ên SSO û rêvebirina malpera sereke {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Domainên bingehîn ên forma qedandina kirînê
+### Domainên bingehîn ên forma qedandina kirînê {#checkout-form-base-domains}
 
 Dema pêveka te domainên bingehîn ên hevpar ên zêde peyda dike ku divê wek domainên **URL-a Malperê** yên forma qedandina kirînê bixebitin, ne wek nexşeyên taybet ên ji bo her malperê, `wu_checkout_form_base_domains` bikar bîne:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite van hostan normal dike û ji bo wan tomarên domainên nexşeyî yên otomatîk ên ji bo her malperê derbas dike.
 
-### Çêkirina otomatîk a tomarên domainê
+### Çêkirina otomatîk a tomarên domainê {#automatic-domain-record-creation}
 
 Dema pêveka te hewce dike çêkirina otomatîk a tomara domainê ji bo malpereke nû hatî çêkirin rawestîne an paşde bixe, `wu_should_create_domain_record_for_site` bikar bîne:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Yekbûnên pêşkêşkerê mêvandarî ku guhdariya `wu_add_subdomain` dikin dikarin dema malper têne çêkirin tomarên DNS li aliyê pêşkêşkerê çêkin. Heke ji bo wê çalakiyê tu yekbûn nehatibe tomarkirin, Ultimate Multisite karê paşxaneyê yê vala derbas dike.
 
-## Gavên Dû re
+## Gavên Dû re {#next-steps}
 
 - [Referansa Hooks](/developer/hooks) ji bo çalakî û filterên berdest binêre
 - [Kurteya REST API](/developer/rest-api/overview) ji bo yekbûna API kontrol bike

@@ -3,7 +3,7 @@ title: Referenco pri kapabloj
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenco de Kapabloj
+# Referenco de Kapabloj {#abilities-reference}
 
 Kapabloj estas la atomaj agoj, kiujn Gratis AI Agent povas alvoki en via WordPress-instalaĵo. Ĉiu kapablo estas registrita PHP-klaso, kiu elmontras JSON-skemon — la agento legas ĉi tiun skemon dum rultempo por kompreni kiuj parametroj estas bezonataj kaj kion la kapablo redonas.
 
@@ -11,11 +11,11 @@ Kapabloj estas la atomaj agoj, kiujn Gratis AI Agent povas alvoki en via WordPre
 
 ---
 
-## Propraj Afiŝotipoj
+## Propraj Afiŝotipoj {#custom-post-types}
 
 Ĉi tiuj kapabloj administras proprajn afiŝotipojn (CPT-ojn) registritajn per la agento. Registradoj estas konservataj en la WordPress-opcia tabelo, tiel ke ili postvivas plugin-malaktivigon kaj reaktivigon.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registras novan propran afiŝotipon.
 
@@ -50,7 +50,7 @@ Registras novan propran afiŝotipon.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Redonas ĉiujn proprajn afiŝotipojn registritajn de la agento.
 
@@ -73,7 +73,7 @@ Redonas ĉiujn proprajn afiŝotipojn registritajn de la agento.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Malregistras propran afiŝotipon antaŭe registritan de la agento. Ekzistantaj afiŝoj de tiu tipo restas en la datumbazo sed ne plu estas alireblaj per la afiŝotipo.
 
@@ -87,11 +87,11 @@ Malregistras propran afiŝotipon antaŭe registritan de la agento. Ekzistantaj a
 
 ---
 
-## Propraj Taksonomioj
+## Propraj Taksonomioj {#custom-taxonomies}
 
 Ĉi tiuj kapabloj administras proprajn taksonomiojn. Kiel CPT-oj, taksonomiaj registradoj estas konservataj.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registras novan propran taksonomion.
 
@@ -123,7 +123,7 @@ Registras novan propran taksonomion.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Redonas ĉiujn proprajn taksonomiojn registritajn de la agento.
 
@@ -146,7 +146,7 @@ Redonas ĉiujn proprajn taksonomiojn registritajn de la agento.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Malregistras propran taksonomion antaŭe registritan de la agento.
 
@@ -160,11 +160,11 @@ Malregistras propran taksonomion antaŭe registritan de la agento.
 
 ---
 
-## Dezajna Sistemo
+## Dezajna Sistemo {#design-system}
 
 Dezajnsistemaj kapabloj modifas la vidan prezenton de la WordPress-retejo — de propra CSS ĝis blokaj ŝablonoj kaj la reteja emblemo.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Aldonas CSS-on al la `<head>` de la retejo per `wp_add_inline_style`. CSS estas stokita en la opcio `gratis_ai_agent_custom_css` kaj pure elviciĝas kiam la kapablo estas restarigita.
 
@@ -190,7 +190,7 @@ Aldonas CSS-on al la `<head>` de la retejo per `wp_add_inline_style`. CSS estas 
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registras reuzeblan blokan ŝablonon en la WordPress-ŝablona biblioteko.
 
@@ -209,7 +209,7 @@ Registras reuzeblan blokan ŝablonon en la WordPress-ŝablona biblioteko.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Listigas ĉiujn blokajn ŝablonojn registritajn de la agento.
 
@@ -231,7 +231,7 @@ Listigas ĉiujn blokajn ŝablonojn registritajn de la agento.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Agordas la emblemon de la WordPress retejo al donita aldonaĵa ID aŭ fora bilda URL. Kiam URL estas provizita, la bildo estas elŝutita kaj importita en la Aŭdvidan Bibliotekon.
 
@@ -248,7 +248,7 @@ Unu el `attachment_id` aŭ `url` devas esti provizita.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Aplikas nomitan kolor-/tipografian antaŭagordon al la `theme.json` de la aktiva etoso (aŭ `global-styles`). Antaŭagordoj estas prizorgataj pakaĵoj konservataj de la teamo de Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Aplikas nomitan kolor-/tipografian antaŭagordon al la `theme.json` de la aktiva
 
 ---
 
-## Ĉieaj Stiloj
+## Ĉieaj Stiloj {#global-styles}
 
 Kapabloj pri ĉieaj stiloj legas kaj skribas valorojn de theme.json per la WordPress API por Ĉieaj Stiloj, influante ĉiujn blokojn kaj ŝablonojn tra la tuta retejo.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Redonas la aktualan agordon de ĉieaj stiloj.
 
@@ -291,7 +291,7 @@ Redonas la aktualan agordon de ĉieaj stiloj.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Ĝisdatigas unu aŭ pli da valoroj en la agordo de ĉieaj stiloj.
 
@@ -318,7 +318,7 @@ Redonas la aktualan agordon de ĉieaj stiloj.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Restarigas ĉiujn de agento aplikitajn ŝanĝojn de ĉieaj stiloj, restaŭrante la defaŭltojn de la etoso.
 
@@ -328,11 +328,11 @@ Restarigas ĉiujn de agento aplikitajn ŝanĝojn de ĉieaj stiloj, restaŭrante 
 
 ---
 
-## Navigaj Menuoj
+## Navigaj Menuoj {#navigation-menus}
 
 Kapabloj pri navigaj menuoj kreas kaj administras WordPress navigajn menuojn kaj iliajn erojn.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Kreas novan WordPress navigan menuon.
 
@@ -347,7 +347,7 @@ Kreas novan WordPress navigan menuon.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Alinomas menuon aŭ reasignas ĝin al loko de etoso.
 
@@ -363,7 +363,7 @@ Alinomas menuon aŭ reasignas ĝin al loko de etoso.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Aldonas eron al ekzistanta naviga menuo.
 
@@ -383,7 +383,7 @@ Aldonas eron al ekzistanta naviga menuo.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Forigas eron el naviga menuo.
 
@@ -397,7 +397,7 @@ Forigas eron el naviga menuo.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Listigas ĉiujn WordPress navigajn menuojn, inkluzive iliajn atribuitajn lokojn de etoso.
 
@@ -420,11 +420,11 @@ Listigas ĉiujn WordPress navigajn menuojn, inkluzive iliajn atribuitajn lokojn 
 
 ---
 
-## Administrado de Opcioj
+## Administrado de Opcioj {#options-management}
 
 Kapabloj pri opcioj legas kaj skribas WordPress opciojn per `get_option` / `update_option`. Enkonstruita sekureca bloklisto malhelpas akcidentan modifon de kritikaj agordoj.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Legas WordPress opcion.
 
@@ -440,7 +440,7 @@ Redonas eraron se `option_name` estas en la sekureca bloklisto.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Skribas WordPress opcion.
 
@@ -458,7 +458,7 @@ Redonas eraron se `option_name` estas en la sekureca bloklisto.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Forigas WordPress opcion.
 
@@ -474,7 +474,7 @@ Redonas eraron se `option_name` estas en la sekureca bloklisto.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Listigas WordPress opciojn kongruajn kun ŝablono.
 
@@ -498,11 +498,11 @@ Listigas WordPress opciojn kongruajn kun ŝablono.
 
 ---
 
-## Enhava Administrado
+## Enhava Administrado {#content-management}
 
 Enhava Administrado-kapabloj kreas kaj redaktas WordPress afiŝojn kaj paĝojn. Afiŝaj ID-oj estas redonataj por ke postaj paŝoj en plurkapablaj planoj povu referenci la kreitan enhavon.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Kreas novan WordPress afiŝon, paĝon aŭ propran afiŝtipan enskribon.
 
@@ -537,7 +537,7 @@ Kreas novan WordPress afiŝon, paĝon aŭ propran afiŝtipan enskribon.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Ĝisdatigas ekzistantan WordPress afiŝon aŭ paĝon.
 
@@ -567,7 +567,7 @@ Kreas novan WordPress afiŝon, paĝon aŭ propran afiŝtipan enskribon.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Kreas plurajn afiŝojn per unu sola kapablovoko, reduktante rondirojn dum site-konstruoj aŭ amasa enhava importo. Afiŝoj estas kreataj sinsekve; se unu malsukcesas, la aliaj daŭras kaj la malsukceso estas raportita en la rezultotabelo.
 
@@ -619,7 +619,7 @@ Kreas plurajn afiŝojn per unu sola kapablovoko, reduktante rondirojn dum site-k
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Asignas elstarigitan bildon (afiŝan miniaturobildon) al ekzistanta afiŝo aŭ paĝo. Akceptas ID-on de ekzistanta Media Library aldonaĵo aŭ foran bildan URL; kiam URL estas provizita, la bildo estas elŝutita kaj importita aŭtomate.
 
@@ -638,7 +638,7 @@ Unu el `attachment_id` aŭ `url` devas esti provizita.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Kreas kontaktformularon uzante la aktivan formularan plugin (Contact Form 7, WPForms, Fluent Forms, aŭ Gravity Forms, depende de tio, kiu estas instalita). Redonas shortcode, kiu povas esti enkorpigita en ajna afiŝo aŭ paĝo.
 
@@ -691,11 +691,11 @@ Kreas kontaktformularon uzante la aktivan formularan plugin (Contact Form 7, WPF
 
 ---
 
-## Vida Revizio
+## Vida Revizio {#visual-review}
 
 Kapabloj de Vida Revizio permesas al la agento kapti ekrankopiojn de aktivaj paĝoj kaj analizi ilin, ebligante aŭtonoman dezajnorevizion, antaŭ/post-komparojn, kaj vidajn regresajn kontrolojn sen postuli ian retumilan etendaĵon.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Kaptas ekrankopion de WordPress-paĝo ĉe donita URL uzante servilflankan senkapan retumilon. La bildo estas konservata en la Media Library kaj CDN-URL estas redonata.
 
@@ -724,7 +724,7 @@ Kaptas ekrankopion de WordPress-paĝo ĉe donita URL uzante servilflankan senkap
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Prenas du ekrankopiojn kaj redonas vidan diferencopoentaron plus diferencobildon reliefigantan ŝanĝitajn regionojn. Utila por konfirmi, ke dezajnoŝanĝo produktis la atenditan rezulton aŭ por detekti neintencitajn regresojn.
 
@@ -754,7 +754,7 @@ Prenas du ekrankopiojn kaj redonas vidan diferencopoentaron plus diferencobildon
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Kaptas ekrankopion de paĝo kaj sendas ĝin al la lingva modelo por vida analizo. Redonas strukturitan takson pri aranĝo, tipografio, koloruzado, kaj alireblecaj zorgoj.
 
@@ -785,11 +785,11 @@ Kaptas ekrankopion de paĝo kaj sendas ĝin al la lingva modelo por vida analizo
 
 ---
 
-## Instalableblaj Kapabloj
+## Instalableblaj Kapabloj {#installable-abilities}
 
 La Registro de Instalableblaj Kapabloj permesas al vi etendi la agenton per aldonaj kapablopakaĵoj distribuitaj kiel WordPress plugins. Ĉiu pakaĵo registras unu aŭ pli da kapabloj uzante la norman kapablan API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Redonas la katalogon de kapablopakaĵoj disponeblaj por instalado el la registro.
 
@@ -818,7 +818,7 @@ Redonas la katalogon de kapablopakaĵoj disponeblaj por instalado el la registro
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Elŝutas kaj aktivigas kapablopakan plugin de la registro.
 
@@ -832,7 +832,7 @@ Elŝutas kaj aktivigas kapablopakan plugin de la registro.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Demandas la kapablo-registron por trovi la plej bonan plugin por priskribita uzokazo kaj, laŭvole, instalas ĝin.
 

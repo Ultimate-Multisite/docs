@@ -3,13 +3,13 @@ title: Mukautetun verkkotunnusvälittäjäintegraation rakentaminen
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Mukautetun rekisteröijäintegraation rakentaminen
+# Mukautetun rekisteröijäintegraation rakentaminen {#building-a-custom-registrar-integration}
 
 Domain Seller -lisäosa käyttää **Integration Registry** -mallia. Jokainen rekisteröijä on PHP-luokka, joka toteuttaa `Domain_Selling_Capability`-rajapinnan ja rekisteröi itsensä `wu_domain_seller_register_capabilities`-action hookin kautta.
 
 Tämä opas näyttää, miten mukautettu rekisteröijä kytketään mukaan.
 
-## Rajapinta
+## Rajapinta {#the-interface}
 
 Luokkasi täytyy toteuttaa `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ja laajentaa `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Valinnaiset metodit
+### Valinnaiset metodit {#optional-methods}
 
 Toteuta nämä avataksesi lisäominaisuuksia. Lisäosa tunnistaa tuen `method_exists()`-kutsulla:
 
@@ -81,7 +81,7 @@ Toteuta nämä avataksesi lisäominaisuuksia. Lisäosa tunnistaa tuen `method_ex
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### Paluuarvon käytäntö
+### Paluuarvon käytäntö {#return-value-convention}
 
 Kaikki metodit palauttavat taulukon, jossa on vähintään `success`-avain:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Ominaisuuden rekisteröinti
+## Ominaisuuden rekisteröinti {#registering-your-capability}
 
 Rekisteröi luokkasi käyttämällä `wu_domain_seller_register_capabilities`-actionia:
 
@@ -109,7 +109,7 @@ Ensimmäinen argumentti `add_capability()`-kutsulle on **palveluntarjoajan ID** 
 
 ---
 
-## Tunnistetietokenttien lisääminen ohjattuun toimintoon
+## Tunnistetietokenttien lisääminen ohjattuun toimintoon {#adding-credential-fields-to-the-wizard}
 
 Jotta ylläpitäjät voivat syöttää tunnistetiedot setup wizardin kautta, rekisteröi integraatiosi:
 
@@ -137,7 +137,7 @@ Tunnistetiedot tallennetaan verkkoasetuksina käyttäen kenttien ID:itä avaimin
 
 ---
 
-## Hookit rekisteröinnin jälkeisiin toimintoihin
+## Hookit rekisteröinnin jälkeisiin toimintoihin {#hooks-for-post-registration-actions}
 
 Käytä näitä actioneita käynnistääksesi webhookit, käyttöönoton, ilmoitukset tai CRM-päivitykset:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Lokitus
+## Lokitus {#logging}
 
 Kirjoita palveluntarjoajakohtaiseen lokikanavaan käyttämällä `wu_log_add()`:
 

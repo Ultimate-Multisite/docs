@@ -3,11 +3,11 @@ title: Эшләүчеләр өчен документация
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Эшләүчеләр өчен документация
+# Эшләүчеләр өчен документация {#developer-documentation}
 
 Бу кулланма эшләүчеләргә Ultimate Multisite белән интеграцияләү, аны киңәйтү яки аның өчен addonнар эшләү өчен кирәкле барлык мәгълүматны бирә. Ultimate Multisite WordPress Multisite челтәрен Website-as-a-Service (WaaS) платформасына әйләндерә.
 
-## Нәрсәләр бар
+## Нәрсәләр бар {#whats-available}
 
 - **[REST API](./rest-api/overview)** — API key аутентификациясе белән барлык сущностьлар (клиентлар, сайтлар, әгъзалыклар, түләүләр, продуктлар, доменнар) өчен тулы CRUD операцияләре
 - **[Hooks белешмәсе](./hooks/guide)** — тормыш циклы вакыйгалары һәм көйләү өчен 200+ action hook һәм 280+ filter hook
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Код мисаллары](./code-examples/)** — динамик бәяләү, сайт әзерләү, махсус чикләүләр һәм күп gatewayлы эшкәртү өчен алдынгы үрнәкләр
 - **[Addon эшләү](./addon-development/getting-started)** — addon pluginнар төзү өчен структураланган framework
 
-## Таләпләр
+## Таләпләр {#requirements}
 
 - WordPress Multisite урнаштыру
 - PHP 7.4 яки югарырак
 - Ultimate Multisite plugin активлаштырылган
 
-## Composer / Bedrock урнаштыру
+## Composer / Bedrock урнаштыру {#composer--bedrock-installation}
 
 Ultimate Multisite [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) сайтында `ultimate-multisite/ultimate-multisite` буларак бар. Бу [Bedrock](https://roots.io/bedrock/)-нигезендәге WordPress көйләүләре һәм Composer белән идарә ителә торган башка мохитләр өчен тәкъдим ителгән урнаштыру ысулы.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Тиз башлау
+## Тиз башлау {#quick-start}
 
-### REST API куллану
+### REST API куллану {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Вакыйгаларга hook аша тоташу
+### Вакыйгаларга hook аша тоташу {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Addon төзү
+### Addon төзү {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

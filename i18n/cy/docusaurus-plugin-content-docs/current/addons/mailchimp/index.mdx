@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: Integreiddiad Mailchimp
 
 Integreiddiwch eich rhwydwaith Multisite Ultimate â’ch Mailchimp. Gallwch gysylltu cynlluniau penodol â Rhestrau Mailchimp ac ychwanegu tanysgrifwyr yn awtomatig at y rhestrau hynny wrth gofrestru.
 
-## Gosod
+## Gosod {#installation}
 
 1. Llwythwch 'ultimate-multisite-mailchimp' i’r cyfeiriadur '/wp-content/plugins/'
 2. Gweithredwch y plugin drwy’r ddewislen 'Plugins' yn eich WordPress Network Admin
 
-## Canllaw Defnyddio
+## Canllaw Defnyddio {#usage-guide}
 
 Mae cysoni cyfeiriadau e-bost tanysgrifwyr â’ch rhestrau MailChimp yn hawdd iawn gyda’n ychwanegyn Ultimate Multisite: MailChimp Integration. Nod y tiwtorial hwn yw eich helpu i osod popeth!
 
-## Cael allwedd API
+## Cael allwedd API {#getting-an-api-key}
 
 Cyn i ni ddechrau edrych ar y gwahanol osodiadau sydd ar gael, mae angen allwedd API MailChimp arnom. Bydd hyn yn caniatáu i Ultimate Multisite siarad â’r MailChimp API i adalw rhestrau, grwpiau, ac ychwanegu cyfeiriadau e-bost at y rhestrau a’r grwpiau hynny pan fydd defnyddwyr yn cofrestru.
 
@@ -32,7 +32,7 @@ Dilynwch y tiwtorial hwn i gael eich allwedd API MailChimp eich hun: [Ynghylch A
 
 _Ychwanegwch eich allwedd API MailChimp ar_ _**Gosodiadau Ultimate Multisite - > Gosodiadau Ychwanegyn -> MailChimp**_
 
-## Modd Integreiddio
+## Modd Integreiddio {#integration-mode}
 
 Mae’r ychwanegyn MailChimp Integration yn cynnig dau “fodd integreiddio”, sy’n golygu bod dwy ffordd wahanol y gallwch ddefnyddio’r ychwanegyn i gysoni cyfeiriadau e-bost.
 
@@ -40,7 +40,7 @@ Mae’r ychwanegyn MailChimp Integration yn cynnig dau “fodd integreiddio”, 
 
 _Dau fodd integreiddio ar gyfer mwy o hyblygrwydd!_
 
-### Modd 1: Rhestrau Lluosog
+### Modd 1: Rhestrau Lluosog {#mode-1-multiple-lists}
 
 Mae’r modd diofyn yn defnyddio **Rhestrau Lluosog**. Bydd y modd hwn yn caniatáu i chi ddewis sawl rhestr MailChimp ar gyfer pob un o’r cynlluniau. Dyma’r opsiwn gorau os ydych yn segmentu eich defnyddwyr i restrau gwahanol.
 
@@ -52,7 +52,7 @@ I gyflawni hynny, gallwch ddefnyddio’r modd Rhestrau Lluosog i ychwanegu’r d
 
 _Dewiswch y rhestrau diofyn ar gyfer cyfrifon newydd ac ar gyfer cyfrifon wedi’u canslo_
 
-### Modd 2: Un Rhestr + Grwpiau Lluosog
+### Modd 2: Un Rhestr + Grwpiau Lluosog {#mode-2-single-list--multiple-groups}
 
 Mae MailChimp yn caniatáu i chi segmentu eich rhestr yn grwpiau llai o ddefnyddwyr o’r enw **Grwpiau**. Mae hyn yn caniatáu mwy o reolaeth i chi gan y gallwch anfon ymgyrch at is-set benodol o’ch tanysgrifwyr heb orfod creu copïau lluosog o’r un ymgyrch ar MailChimp (sy’n ei gwneud yn anodd dadansoddi metrigau’r ymgyrch honno wedyn).
 
@@ -62,13 +62,13 @@ Er enghraifft, gallwch gael un rhestr o’r enw **Tanysgrifwyr Fy Rhwydwaith,** 
 
 _Dewiswch y rhestrau a’r grwpiau diofyn, os ydych yn defnyddio’r modd integreiddio “un rhestr + grwpiau lluosog”_
 
-## Rhestrau a Grwpiau Diofyn
+## Rhestrau a Grwpiau Diofyn {#default-lists-and-groups}
 
 Ar ôl i chi ddewis pa fodd integreiddio sy’n gwneud mwy o synnwyr i’ch achos defnydd penodol, mae’n bryd dewis y rhestrau diofyn (a’r grwpiau, yn dibynnu ar y modd). Defnyddir y rhestr ddiofyn pan nad oes gan gynllun penodol Restr benodol wedi’i dewis.
 
 Gallwch hefyd ddewis y rhestr ddiofyn ar gyfer cyfrifon wedi’u canslo. Pryd bynnag y bydd defnyddiwr yn terfynu ei danysgrifiad neu’i thanysgrifiad ac yn tynnu ei gyfrif neu’i chyfrif o’ch rhwydwaith, bydd ei gyfeiriad e-bost neu’i chyfeiriad e-bost yn cael ei symud i’r rhestr a osodwyd ar gyfer cyfrifon wedi’u canslo.
 
-## Galluogi Tanysgrifiad Dwbl
+## Galluogi Tanysgrifiad Dwbl {#enabling-double-subscription}
 
 Ar yr un dudalen osodiadau, byddwch yn gallu galluogi **Tanysgrifiad Dwbl**. Bydd yr opsiwn hwn yn ychwanegu’r defnyddiwr at y rhestr ddiofyn a ddewiswyd A’R rhestr a ddewiswyd ar gyfer cynllun y defnyddiwr hwnnw. Os nad yw’r opsiwn hwn wedi’i alluogi, bydd y defnyddiwr ond yn cael ei ychwanegu at y rhestr a ddewiswyd ar gyfer cynllun y defnyddiwr. Os nad oes un wedi’i gosod ar gyfer y cynllun penodol hwnnw, yna bydd y defnyddiwr yn cael ei ychwanegu at y rhestr ddiofyn a ddewiswyd.
 
@@ -76,7 +76,7 @@ Ar yr un dudalen osodiadau, byddwch yn gallu galluogi **Tanysgrifiad Dwbl**. Byd
 
 _Gallwch gael eich defnyddwyr wedi’u tanysgrifio i’r rhestr ddiofyn a rhestr y cynllun wrth gofrestru_
 
-## Dewis Rhestrau a Grwpiau ar gyfer pob un o’r Cynlluniau
+## Dewis Rhestrau a Grwpiau ar gyfer pob un o’r Cynlluniau {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Ewch i’ch **Cynlluniau** a dewiswch y cynllun rydych am ei olygu. Sylwch y bydd tab newydd o’r enw MailChimp ar gael yn y blwch meta **Opsiynau Uwch**.
 

@@ -3,11 +3,11 @@ title: Референца за hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Референца за hooks
+# Референца за hooks {#hooks-reference}
 
 Автоматски генерирана документација за сите **59 акции** и **118 филтри** во Ultimate Multisite.
 
-## Акции
+## Акции {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Се активира пред пренасочувањето за автентикација.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Се активира непосредно пред да се постави колачето за автентикација.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Се активира откако објект ќе се зачува во базата на податоци.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Им овозможува на развивачите на plugin да додадат дејства во процесот на отклучување.
 
-## Филтри
+## Филтри {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Го филтрира траењето на периодот на истекување на колачето за автентикација.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Ја филтрира шемата за пренасочување при автентикација.

@@ -3,25 +3,25 @@ title: Шаблон дополнения
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Шаблон дополнения
+# Шаблон дополнения {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Требования
+## Требования {#requirements}
 
 - WordPress 5.3 или выше
 - PHP 7.4 или выше
 - Multisite Ultimate плагин (активен)
 
-## Установка
+## Установка {#installation}
 
 1. Загрузите файлы дополнения в ваш каталог `/wp-content/plugins/`
 2. Активируйте плагин через меню 'Plugins' в WordPress
 3. Настройте параметры дополнения в админке сети
 
-## Разработка
+## Разработка {#development}
 
-### Настройка
+### Настройка {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Структура проекта
+### Структура проекта {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Тестирование
+### Тестирование {#testing}
 
 Дополнение включает всестороннюю тестовую инфраструктуру:
 
@@ -75,45 +75,45 @@ ultimate-multisite-addon-template/
 - **Test Coverage**: Настроено для отслеживания покрытия кода
 - **Multisite Testing**: Тесты выполняются в многосайтовой среде
 
-### Стандарты кода
+### Стандарты кода {#code-standards}
 
 - **WordPress Coding Standards**: Применяются через PHPCS
 - **PHP 7.4+ Compatibility**: Поддерживаются современные функции PHP
 - **Static Analysis**: Интеграция PHPStan для проверки типов
 - **Code Modernization**: Правила Rector для обновления PHP
 
-### Система сборки
+### Система сборки {#build-system}
 
 - **Asset Processing**: Минификация файлов CSS/JS
 - **Translation**: Генерация файлов POT
 - **Packaging**: Создание архива для распространения
 - **Development Mode**: Ненарезанные ресурсы для отладки
 
-## Конфигурация
+## Конфигурация {#configuration}
 
 Дополнение поддерживает различные параметры конфигурации, доступные через интерфейс админки сети.
 
-## Хуки и фильтры
+## Хуки и фильтры {#hooks-and-filters}
 
-### Действия
+### Действия {#actions}
 
 - `ultimate-multisite-addon-template_init` - Вызывается после инициализации дополнения
 - `ultimate-multisite-addon-template_loaded` - Вызывается после загрузки всех файлов дополнения
 
-### Фильтры
+### Фильтры {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Изменяет настройки дополнения
 - `ultimate-multisite-addon-template_enabled` - Перезаписывает статус включения/выключения дополнения
 
-## Лицензия
+## Лицензия {#license}
 
 Это дополнение лицензировано под GPL v3 или более поздней версией.
 
-## Поддержка
+## Поддержка {#support}
 
 Для поддержки и документации посетите [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## Журнал изменений
+## Журнал изменений {#changelog}
 
 - Версия 1.0.1 (2025-09-28): переименовать префикс в ultimate-multisite; обновить текстовый домен; обновить версию.
 

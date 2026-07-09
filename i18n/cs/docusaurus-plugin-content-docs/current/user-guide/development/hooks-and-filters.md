@@ -3,7 +3,7 @@ title: Hooky a filtry
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Hooky a filtry Ultimate Multisite
+# Hooky a filtry Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite se skládá z celé řady funkcí a databázových dotazů. Obsahuje hooky a filtry, které vám umožňují upravovat stávající funkce nebo do nich přidávat nový kód.
 

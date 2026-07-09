@@ -4,11 +4,11 @@ title: Azzjoni - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Azzjoni: wu_membership_post_renew
+# Azzjoni: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Tiskatta wara t-tiġdid tas-sħubija.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Tiskatta wara t-tiġdid tas-sħubija.
 | $membership_id | `int` | L-ID tas-sħubija. |
 | $membership | `\Membership` | Oġġett tas-sħubija. |
 
-### Minn
+### Minn {#since}
 
 - 2.0
-### Sors
+### Sors {#source}
 
 Definita fi [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) fil-linja 2235

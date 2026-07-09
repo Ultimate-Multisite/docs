@@ -3,11 +3,11 @@ title: Reperensiya sa Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Pakisayran sa Hooks
+# Pakisayran sa Hooks {#hooks-reference}
 
 Awtomatikong gihimong dokumentasyon para sa tanang **59 ka aksyon** ug **118 ka filter** sa Ultimate Multisite.
 
-## Mga Aksyon
+## Mga Aksyon {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Moandar sa wala pa ang redirect sa pagpanghimatuod.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Moandar dayon sa wala pa itakda ang cookie sa pagpanghimatuod.
@@ -70,7 +70,7 @@ Awtomatikong gihimong dokumentasyon para sa tanang **59 ka aksyon** ug **118 ka 
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Moandar human matipigan ang usa ka object ngadto sa database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Tugoti ang mga plugin developer nga makadugang og actions sa proseso sa pag-unlock.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Mo-filter sa gidugayon sa panahon sa pag-expire sa authentication cookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Mo-filter sa authentication redirect scheme.

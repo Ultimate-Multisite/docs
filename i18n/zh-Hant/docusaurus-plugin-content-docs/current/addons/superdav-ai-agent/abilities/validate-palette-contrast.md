@@ -3,15 +3,15 @@ title: 驗證色盤對比度
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# 驗證調色盤對比度
+# 驗證調色盤對比度 {#validate-palette-contrast}
 
 **驗證調色盤對比度**功能會檢查您設計調色盤中的顏色組合，以確保其符合 WCAG（網頁內容無障礙指南）標準，然後再將這些顏色應用到您的主題上。
 
-## 概述
+## 概述 {#overview}
 
 此功能透過驗證文字與背景顏色之間的對比度比，確保您的網站配色方案符合無障礙標準。這有助於避免那些對視力受損用戶難以閱讀的顏色組合。
 
-## 輸入格式
+## 輸入格式 {#input-format}
 
 此功能接受一個顏色調色盤作為輸入：
 
@@ -35,7 +35,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### 參數
+### 參數 {#parameters}
 
 | 參數 | 類型 | 是否必要 | 描述 |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `wcag_level` | string | 否 | WCAG 符合度等級：「A」、「AA」（預設），或「AAA」 |
 | `pairs_to_check` | array | 否 | 需要驗證的特定顏色組合（例如：`["primary-text", "background-text"]`） |
 
-## 檢查的 WCAG 等級
+## 檢查的 WCAG 等級 {#wcag-levels-checked}
 
 此功能會根據 WCAG 標準來驗證對比度比：
 
@@ -56,7 +56,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 - **一般文字** — 小於 18pt（或 14pt 粗體）的文字
 - **大文字** — 18pt 或更大的文字（或 14pt 粗體或更大）
 
-## 輸出結構
+## 輸出結構 {#output-schema}
 
 此功能會回傳一份詳細的驗證報告：
 
@@ -95,7 +95,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### 輸出欄位
+### 輸出欄位 {#output-fields}
 
 | 欄位 | 類型 | 描述 |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `status` | string | 每個組合的狀態，為 "pass" 或 "fail" |
 | `recommendations` | array | 改善失敗組合的建議 |
 
-## 使用範例
+## 使用範例 {#usage-example}
 
 **提示：**
 ```
@@ -119,7 +119,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 - ✅ 背景 + 文字：12.1:1 比率（符合 WCAG AAA）
 - 總體：符合 WCAG AA 標準
 
-## 與主題建立器整合
+## 與主題建立器整合 {#integration-with-theme-builder}
 
 當您使用 Theme Builder 的設計方向選擇功能時，驗證調色盤對比度功能會：
 
@@ -129,7 +129,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 4. 為不符合標準的組合提供建議
 5. 防止應用無法存取的配色方案
 
-## 最佳實踐
+## 最佳實踐 {#best-practices}
 
 - **從 AA 等級開始** — WCAG AA 是大多數網站的標準
 - **應用前進行測試** — 在確定設計前，先驗證您的調色盤
@@ -137,7 +137,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 - **考慮用戶偏好** — 有些用戶可能會有額外的顏色敏感度
 - **使用對比度檢查器** — 將此功能與瀏覽器工具結合使用以進行驗證
 
-## 失敗組合與建議
+## 失敗組合與建議 {#failing-pairs-and-recommendations}
 
 如果某個顏色組合驗證失敗，此功能會提供建議：
 
@@ -155,7 +155,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-## 相關功能
+## 相關功能 {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — 使用您驗證過的調色盤創建 Logo
 - [Create Menu](./create-menu.md) — 使用無障礙顏色建立導航菜單

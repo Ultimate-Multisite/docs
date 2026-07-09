@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite ايڊآنز
+# Ultimate Multisite ايڊآنز {#ultimate-multisite-addons}
 
 ايڊآنز Ultimate Multisite کي اضافي خاصيتن ۽ انٽيگريشنز سان وڌائن ٿا. گهڻا ايڊآنز ادا ڪيل آهن ۽ [ultimatemultisite.com](https://ultimatemultisite.com) تان خريد ڪري سگهجن ٿا.
 
-## انسٽاليشن
+## انسٽاليشن {#installation}
 
 ايڊآنز ٻن طريقن سان انسٽال ڪري سگهجن ٿا:
 
 1. **ايڊآن صفحي ذريعي** -- WordPress ايڊمن ۾ پنهنجي سائيٽ جي ايڊآن انتظام واري صفحي ڏانهن وڃو
 2. **هٿرادو ڊائون لوڊ** -- [پنهنجي اڪائونٽ](https://ultimatemultisite.com/my-account/downloads/) تان ڊائون لوڊ ڪريو ۽ Plugins > Add New ذريعي اپلوڊ ڪريو
 
-## موجود ايڊآنز
+## موجود ايڊآنز {#available-addons}
 
 | ايڊآن | وضاحت |
 |-------|-------------|

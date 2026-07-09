@@ -3,7 +3,7 @@ title: Cyfluniad PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Ymddio'r Gweithro PayPal (v2)
+# Ymddio'r Gweithro PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTIADOLIA CRYTICA: Mae'r ail ddefnyddiol hwn yn cyfeiriad Ultimate Multisite ffurf 2.x.**_
 
@@ -13,13 +13,13 @@ Fel yr un fel Stripe, mae PayPal yn cael ei defnyddio'n gyffredinol ar gyfer ymd
 
 Rhaid i chi gwybod bod chi'n angen **cyfrifyn Business PayPal** i gael y cyfrifyn API sydd ei angen i'r cysylltiad hwnnw.
 
-## Mae'r PayPal yn cael ei chwarae ar eich rheol
+## Mae'r PayPal yn cael ei chwarae ar eich rheol {#enabling-paypal-on-your-network}
 
 I gwneud y PayPal yn cael ei chwarae fel ffordd ymdrech ar gael ar eich rheol, mynd i **Ultimate Multisite > Settings > Payments** a chwarae'r casg yn y cyfathrebu gyda PayPal.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Defnyddio'r gwyddu cyfarwyddiadol
+## Defnyddio'r gwyddu cyfarwyddiadol {#using-the-guided-setup-wizard}
 
 Mae Ultimate Multisite 2.10.0 yn ychwanegu gwyddu cyfarwyddiadol i'r setffroi PayPal ar gyfer ymdrechion. Ar ôl i chi chwarae'r PayPal, defnyddiwch y gwyddu ar **Ultimate Multisite > Settings > Payments** i ddwylo sut byddwch yn cysylltu â'r mdrech a sicrwch beth yw'r cyfrifyn sydd ei angen ar ôl قبل i ddefnyddio.
 
@@ -30,7 +30,7 @@ Mae'r gwyddu'n chwanegu ddau llwybr o gyfeiriadau:
 
 Os nad oes gennych chi'r opsiwn OAuth yn y wyliau, gwblhauwch y llwybr cyfraddau manwl isod. Mae'r gateway yn gweithio gyda'r cyfraddau PayPal Business API fellygol o ddefnyddioedd Ultimate Multisite 2.x blaenorol.
 
-## Cynnal y cyfraddau PayPal API
+## Cynnal y cyfraddau PayPal API {#getting-the-paypal-api-credentials}
 
 Ar ôl i'w chynllunio PayPal fel gateway o chyfalu, byddant yn angen i'ch gwblhau'r ffeiliaid ar gyfer **Username** API PayPal, **Password** API PayPal a **Signature** API PayPal.
 

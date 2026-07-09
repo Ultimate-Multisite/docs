@@ -4,18 +4,18 @@ title: Filtro - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0b11e9dd91ab7c817aae511e044f8d33
 ---
-# Filter: wp_ultimo_skip_network_active_check
+# Filter: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
 
 Permite que os programadores façam um short-circuit desta verificação.
 
 Isto é útil ao usar configurações baseadas em composer e outras configurações personalizadas, como Bedrock, por exemplo, onde usar extensões como mu-plugins é a norma.
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/class-requirements.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/class-requirements.php#L229) na linha 229
 
 
-## Retorna
+## Retorna {#returns}

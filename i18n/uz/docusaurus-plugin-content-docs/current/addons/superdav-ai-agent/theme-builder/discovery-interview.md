@@ -3,35 +3,35 @@ title: Aniqlash intervyusi
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery intervyu
+# Discovery intervyu {#discovery-interview}
 
 **Discovery intervyu** Theme Builder dizayn jarayonidagi birinchi qadamdir. U shaxsiylashtirilgan theme yaratish uchun saytingiz, biznesingiz va dizayn afzalliklaringiz haqida ma'lumot to'playdi.
 
-## Umumiy ko'rinish
+## Umumiy ko'rinish {#overview}
 
 Discovery intervyu brendingiz, maqsadli auditoriyangiz va dizayn maqsadlaringizni tushunish uchun sizni bir qator savollar orqali yo'naltiradi. 1.16.0 versiyasida intervyu endi dizayningiz uchun vizual ilhom berish imkonini beruvchi **fotosurat yuklash qadami**ni o'z ichiga oladi.
 
-## Intervyu qadamlari
+## Intervyu qadamlari {#interview-steps}
 
-### 1. Biznes ma'lumotlari
+### 1. Biznes ma'lumotlari {#1-business-information}
 
 - Sayt nomi va tagline
 - Biznes turi yoki soha
 - Asosiy biznes maqsadlari
 - Maqsadli auditoriya tavsifi
 
-### 2. Dizayn afzalliklari
+### 2. Dizayn afzalliklari {#2-design-preferences}
 
 - Afzal ko'rilgan rang sxemasi
 - Dizayn uslubi (zamonaviy, klassik, minimalist, o'ynoqi va h.k.)
 - Ilhom beruvchi veb-saytlar yoki brendlar
 - Bo'lishi shart bo'lgan dizayn elementlari
 
-### 3. Fotosurat yuklash (v1.16.0 da yangi)
+### 3. Fotosurat yuklash (v1.16.0 da yangi) {#3-photo-upload-new-in-v1160}
 
 Dizayn yo'nalishiga ta'sir qilish uchun bir yoki bir nechta fotosurat yuklang:
 
-#### Qabul qilinadigan formatlar
+#### Qabul qilinadigan formatlar {#accepted-formats}
 
 | Format | Kengaytma | Tafsilotlar |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Dizayn yo'nalishiga ta'sir qilish uchun bir yoki bir nechta fotosurat yuklang:
 | **WebP** | `.webp` | Zamonaviy format, kichikroq fayl hajmi |
 | **GIF** | `.gif` | Faqat statik tasvirlar (animatsiyasiz) |
 
-#### Fayl talablari
+#### Fayl talablari {#file-requirements}
 
 - **Maksimal fayl hajmi:** 10 MB
 - **Minimal o'lchamlar:** 400 × 300 piksel
 - **Tavsiya etilgan o'lchamlar:** 1200 × 800 piksel yoki kattaroq
 - **Tomonlar nisbati:** Har qanday nisbat qabul qilinadi
 
-#### Fotosuratlar dizayn yo'nalishiga qanday ta'sir qiladi
+#### Fotosuratlar dizayn yo'nalishiga qanday ta'sir qiladi {#how-photos-influence-design-direction}
 
 Siz yuklagan fotosuratlar Theme Builderga quyidagilarni tushunishga yordam beradi:
 
@@ -57,21 +57,21 @@ Siz yuklagan fotosuratlar Theme Builderga quyidagilarni tushunishga yordam berad
 - **Dizayn elementlari** — naqshlar, teksturalar va kompozitsion uslublar
 - **Tipografiya ilhomi** — vizual theme bilan mos keladigan shrift uslublari
 
-### 4. Kontent tuzilmasi
+### 4. Kontent tuzilmasi {#4-content-structure}
 
 - Kerakli asosiy sahifalar (Home, About, Services, Contact va h.k.)
 - Blog yoki yangiliklar bo'limi kerak
 - E-commerce funksionalligi kerak
 - Maxsus xususiyatlar yoki integratsiyalar
 
-### 5. Ko'rib chiqish va tasdiqlash
+### 5. Ko'rib chiqish va tasdiqlash {#5-review-and-confirmation}
 
 - Taqdim etilgan barcha ma'lumotlar xulosasi
 - Dizayn yaratish boshlanishidan oldin tasdiqlash
 
-## Fotosurat yuklash bo'yicha eng yaxshi amaliyotlar
+## Fotosurat yuklash bo'yicha eng yaxshi amaliyotlar {#photo-upload-best-practices}
 
-### Nimalarni yuklash kerak
+### Nimalarni yuklash kerak {#what-to-upload}
 
 - **Brend ilhomi** — logotiplar, rang namunalar yoki brend qo'llanmalari
 - **Raqobatchi saytlar** — sizga yoqadigan saytlarning skrinshotlari
@@ -80,7 +80,7 @@ Siz yuklagan fotosuratlar Theme Builderga quyidagilarni tushunishga yordam berad
 - **Jamoa yoki ofis fotosuratlari** — shaxsiy yoki professional brending uchun
 - **Turmush tarzi tasvirlari** — maqsadli auditoriyangizni ifodalaydi
 
-### Nimalardan qochish kerak
+### Nimalardan qochish kerak {#what-to-avoid}
 
 - **Past sifatli tasvirlar** — xira yoki piksellangan fotosuratlar
 - **Aloqasiz tasvirlar** — brendingizni ifodalamaydigan fotosuratlar
@@ -88,7 +88,7 @@ Siz yuklagan fotosuratlar Theme Builderga quyidagilarni tushunishga yordam berad
 - **Mualliflik huquqi bilan himoyalangan material** — tasvirlardan foydalanish huquqiga ega ekaningizga ishonch hosil qiling
 - **Animatsiyali GIFlar** — faqat statik tasvirlar qayta ishlanadi
 
-### Eng yaxshi natijalar uchun maslahatlar
+### Eng yaxshi natijalar uchun maslahatlar {#tips-for-best-results}
 
 1. **2-3 ta tasvir yuklang** — bir nechta tasvir yaxshiroq kontekst beradi
 2. **Yuqori sifatli fotosuratlardan foydalaning** — tiniq, yaxshi yoritilgan tasvirlar eng yaxshi ishlaydi
@@ -96,7 +96,7 @@ Siz yuklagan fotosuratlar Theme Builderga quyidagilarni tushunishga yordam berad
 4. **Kontekst bering** — har bir tasvirni nima uchun tanlaganingizni qisqacha tasvirlang
 5. **Aniq bo'ling** — agar muayyan element sizga yoqsa, uni ko'rsating
 
-## Dizayn yo'nalishi natijasi
+## Dizayn yo'nalishi natijasi {#design-direction-output}
 
 Discovery intervyudan so'ng, Theme Builder quyidagilarni yaratadi:
 
@@ -106,7 +106,7 @@ Discovery intervyudan so'ng, Theme Builder quyidagilarni yaratadi:
 - **Vizual elementlar** — ikonlar, naqshlar va dekorativ elementlar
 - **Kayfiyat doskasi** — dizayn yo'nalishining vizual ifodasi
 
-## Keyingi qadamlar
+## Keyingi qadamlar {#next-steps}
 
 Discovery intervyuni yakunlaganingizdan so'ng:
 
@@ -115,7 +115,7 @@ Discovery intervyuni yakunlaganingizdan so'ng:
 3. [Dizayn yo'nalishi](./design-direction.md) qadamiga o'ting
 4. Theme Builder sizning maxsus themeingizni yaratadi
 
-## Tegishli hujjatlar
+## Tegishli hujjatlar {#related-documentation}
 
 - [Dizayn yo'nalishi](./design-direction.md) — dizayningizni ko'rib chiqing va takomillashtiring
 - [Hospitality menyulari](./hospitality-menus.md) — tuzilmali menyu sahifalarini yarating

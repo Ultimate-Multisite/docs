@@ -3,15 +3,15 @@ title: 'Oppitunti 5: Suunnitelmiesi suunnittelu'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Oppitunti 5: Suunnitelmiesi suunnittelu
+# Oppitunti 5: Suunnitelmiesi suunnittelu {#lesson-5-designing-your-plans}
 
 Suunnitelmatasosi eivät ole vain hinnoittelutasoja -- ne heijastavat sitä, miten markkinarakosi asiakkaat todellisuudessa toimivat. Tässä oppitunnissa suunnittelet tuotetasot, jotka vastaavat kuntoilualan yritysten todellisia tarpeita eri vaiheissa.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSitella on kolme mallia valmiina (Studio Essential, Gym Pro, Fitness Chain). Nyt luomme suunnitelmat, jotka määrittävät, mihin asiakkaat saavat käyttöoikeuden ja mitä he maksavat.
 
-## Asiakassegmenttien pohtiminen
+## Asiakassegmenttien pohtiminen {#thinking-in-customer-segments}
 
 Useimpien ihmisten tekemä virhe on suunnitella suunnitelmat teknisten ominaisuuksien ympärille (tallennustila, kaistanleveys, sivujen määrä). Markkinarakosi asiakkaat eivät ajattele näillä termeillä. Kuntosalin omistaja ajattelee, mitä hän tarvitsee yrityksensä pyörittämiseen.
 
@@ -25,11 +25,11 @@ Fitness-studioille on olemassa kolme luonnollista segmenttiä:
 
 Suunnitelmiesi tulisi vastata näitä segmenttejä, ei mielivaltaisia ominaisuuspaketteja.
 
-## FitSite-suunnitelmien luominen
+## FitSite-suunnitelmien luominen {#creating-the-fitsite-plans}
 
 Siirry kohtaan **Ultimate Multisite > Tuotteet > Lisää tuote** kullekin suunnitelmalle.
 
-### Suunnitelma 1: FitSite Starter -- $49/kuukausi
+### Suunnitelma 1: FitSite Starter -- $49/kuukausi {#plan-1-fitsite-starter----49month}
 
 **Kohde**: Yksinyrittäjät ja pienet studiot
 
@@ -59,7 +59,7 @@ Siirry kohtaan **Ultimate Multisite > Tuotteet > Lisää tuote** kullekin suunni
 - Valitsemasi teema: Pakota aktivointi
 - Kaikki muut teemat: Piilotettu
 
-### Suunnitelma 2: FitSite Growth -- $99/kuukausi
+### Suunnitelma 2: FitSite Growth -- $99/kuukausi {#plan-2-fitsite-growth----99month}
 
 **Kohde**: Vakiintuneet yhden toimipisteen kuntosalit
 
@@ -85,7 +85,7 @@ Siirry kohtaan **Ultimate Multisite > Tuotteet > Lisää tuote** kullekin suunni
 - Suunnitelmaryhmä: FitSite Plans
 - Tuotejärjestys: 2
 
-### Suunnitelma 3: FitSite Pro -- $199/kuukausi
+### Suunnitelma 3: FitSite Pro -- $199/kuukausi {#plan-3-fitsite-pro----199month}
 
 **Kohde**: Usean toimipisteen fitness-ketjut
 
@@ -109,7 +109,7 @@ Siirry kohtaan **Ultimate Multisite > Tuotteet > Lisää tuote** kullekin suunni
 - Suunnitelmaryhmä: FitSite Plans
 - Tuotejärjestys: 3
 
-## Suunnitelmaryhmän määrittäminen
+## Suunnitelmaryhmän määrittäminen {#setting-up-the-plan-group}
 
 Suunnitelmaryhmä varmistaa, että asiakkaat voivat päivittää tai alentaa suunnitelmaansa vain FitSite-suunnitelmaperheen sisällä. Kunkin suunnitelman **Päivitykset ja alennukset** -välilehdellä:
 
@@ -118,7 +118,7 @@ Suunnitelmaryhmä varmistaa, että asiakkaat voivat päivittää tai alentaa suu
 
 Tämä luo selkeän päivityspolun: Starter → Growth → Pro.
 
-## Tilauslisien lisääminen
+## Tilauslisien lisääminen {#adding-order-bumps}
 
 Tilauslisät ovat lisätuotteita, joita tarjotaan maksuvaiheessa. FitSitelle kannattaa harkita:
 
@@ -128,7 +128,7 @@ Tilauslisät ovat lisätuotteita, joita tarjotaan maksuvaiheessa. FitSitelle kan
 
 Luo nämä **Paketti**-tyyppisinä tuotteina Ultimate Multisite -palvelussa ja yhdistä ne asiaankuuluviin suunnitelmiin.
 
-## Miksi tämä rakenne toimii
+## Miksi tämä rakenne toimii {#why-this-structure-works}
 
 - **Starter** poistaa aloituksen esteitä -- matala hinta, yksinkertainen tarjonta, saa trainerit verkkoon nopeasti
 - **Growth** lisää ominaisuudet, joita kuntosalit oikeasti pyytävät -- ajanvaraus, galleriat, mukautetut verkkotunnukset
@@ -136,7 +136,7 @@ Luo nämä **Paketti**-tyyppisinä tuotteina Ultimate Multisite -palvelussa ja y
 - **Tilauslisät** antavat asiakkaiden mukauttaa ilman, että ydinsuunnitelmat monimutkaistuvat
 - **Selkeä päivityspolku** tarkoittaa, että asiakkaat kasvavat kanssasi sen sijaan, että lähtisivät pois
 
-## FitSite-verkosto tähän mennessä
+## FitSite-verkosto tähän mennessä {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Mitä rakensimme tässä oppitunnissa
+## Mitä rakensimme tässä oppitunnissa {#what-we-built-this-lesson}
 
 - **Kolme suunnitelmatasoa**, jotka on sovitettu todellisiin fitness-liiketoimintasegmentteihin
 - **Ominaisuuksien portitus** Ultimate Multisite -lisäosa- ja mallihallintojen avulla

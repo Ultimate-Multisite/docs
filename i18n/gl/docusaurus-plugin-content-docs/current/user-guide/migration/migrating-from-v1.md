@@ -3,9 +3,9 @@ title: Migración de V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migración de V1
+# Migración de V1 {#migrating-from-v1}
 
-## Ultimate Multisite pasou da familia de lançamentos original 1.x para a família 2.x.
+## Ultimate Multisite pasou da familia de lançamentos original 1.x para a família 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 A versão 2.0 e superior do Ultimate Multisite é unha reescrita completa do código, o que significa que há pouca colaboración entre a versión antiga e a nova. Por esta razón, ao actualizar de 1.x a 2.x, os tus datos terás de ser migrados para un formato que as novas versiones cozan.
 
@@ -15,7 +15,7 @@ Esta liña explica como funciona o migrador, que debes hacer en caso de fallo e 
 
 _**IMPORTANTE: Antes de empezar a actualizar da versión 1.x á versión 2.0, asegúrate de crear un backup do banco de datos do teu sitio**_
 
-## Primeiros pasos
+## Primeiros pasos {#first-steps}
 
 O primeiro paso é descargar o ficheiro .zip do plugin e instalar a versión 2.0 no dashboard administrativo da tua rede.
 
@@ -49,17 +49,17 @@ Despois de introducir a clave, clica en **Concordar e Activar**.
 
 Despois da activación da licenza, podes empezar a instalación real facendo clic en **Instalar** na seguinte páxina. Isto creará automáticamente os arquivos e o banco de datos necesarios para que a versión 2.0 funcione.
 
-## Agora, a migración
+## Agora, a migración {#now-the-migration}
 
 O migrador ten unha característica de seguridade incorporada: comprobará todo o teu multisite para asegurarse de que todos os teus datos Ultimate Multisite poden ser migados sen ningún problema. Clica no botón **Run Check** (Executar Verificación) para iniciar o proceso.
 
-### Con Errores
+### Con Errores {#with-error}
 
 Se recibes unha mensaxe de erro, terás que contactar a nosa equipa de soporte para que te axuden a arranxar o erro. Asegúrate de **facilitar o log de erro** ao crear un ticket. Podes descargar o log ou podes clicar no enlace que di "contactar a nosa equipa de soporte". Abrirá o widget de axuda na parte derecha da páxina con os campos preenchidos para ti, que incluíron os logs de erro na descripción.
 
 _**Como o sistema encontrou un erro, non poderás continuar co migración á versión 2.0. Aínda podes volver á versión 1.x para continuar operando a tua rede en espera da reparación do erro.**_
 
-### Sen Errores
+### Sen Errores {#without-error}
 
 Se o sistema non encontra ningún erro, verás unha mensaxe de éxito e un botón **Migrate** (Migrar) na parte inferior que te permitirá continuar co proceso de migración. Nesta páxina, te recordarán crear un backup da túa base de datos antes de seguir, o que recomendamos fortemente. Pulsa en **Migrate** se ya tes un backup.
 

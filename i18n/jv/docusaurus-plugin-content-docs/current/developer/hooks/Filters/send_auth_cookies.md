@@ -4,19 +4,19 @@ title: Saringan - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies
+# Filter: send_auth_cookies {#filter-sendauthcookies}
 
 Ngidini nyegah auth cookies supaya ora bener-bener dikirim menyang client.
 
-## Parameter
+## Parameter {#parameters}
 
 | Jeneng | Tipe | Katrangan |
 |------|------|-------------|
 | $send | `bool` | Apa arep ngirim auth cookies menyang client. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 4.7.4
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L150) ing baris 150

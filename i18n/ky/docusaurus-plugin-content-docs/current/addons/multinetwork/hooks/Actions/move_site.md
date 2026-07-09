@@ -4,11 +4,11 @@ title: Аракет - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Аракет: move_site
+# Аракет: move_site {#action-movesite}
 
 Сайт жаңы тармакка көчүрүлгөндөн кийин иштейт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 | $old_network_id | `int` | Сайттын баштапкы тармагынын IDси. |
 | $new_network_id | `int` | Сайт көчүрүлгөн тармактын IDси. |
 
-### Баштап
+### Баштап {#since}
 
 - 1.3.0
-### Булак
+### Булак {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) ичинде 1587-сапта аныкталган

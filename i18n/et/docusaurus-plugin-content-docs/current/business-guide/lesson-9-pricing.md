@@ -3,17 +3,17 @@ title: 'Õppetund 9: Kasumlik hinnastamine'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Õppetund 9: Kasumlik hinnastamine
+# Õppetund 9: Kasumlik hinnastamine {#lesson-9-pricing-for-profit}
 
 Õppetunnis 5 määrasime FitSite’i pakettidele algsed hinnad. Nüüd täiustame hinnastrateegiat tehnikatega, mis suurendavad tulu, soodustavad kõrgemale paketile üleminekut ja vähendavad loobumist.
 
-## Kuhu me pooleli jäime
+## Kuhu me pooleli jäime {#where-we-left-off}
 
 FitSite’il on paketid, mallid, kassaprotsess, bränding ja sisseelamine paigas. Algne hinnastus oli $49/$99/$199 kuus. Nüüd paneme selle hinnastuse rohkem tööd tegema.
 
-## Hinnastamispõhimõtted nišiplatvormidele
+## Hinnastamispõhimõtted nišiplatvormidele {#pricing-principles-for-niche-platforms}
 
-### Hinda väärtuse, mitte kulu järgi
+### Hinda väärtuse, mitte kulu järgi {#price-on-value-not-cost}
 
 Sinu hostingu kulud võivad olla $5–$15 kliendi veebisaidi kohta. See ei tähenda, et sinu hind peaks olema $20. Sa ei müü hostingut. Sa müüd:
 
@@ -24,7 +24,7 @@ Sinu hostingu kulud võivad olla $5–$15 kliendi veebisaidi kohta. See ei tähe
 
 Hinda selle väärtuse põhjal, mida pakud, mitte selle kulu põhjal, mis sul selle pakkumiseks tekib.
 
-### Seo hind alternatiividega
+### Seo hind alternatiividega {#anchor-to-alternatives}
 
 Kui fitnessistuudio omanik hindab FitSite’i, võrdleb ta seda järgmiste võimalustega:
 
@@ -34,7 +34,7 @@ Kui fitnessistuudio omanik hindab FitSite’i, võrdleb ta seda järgmiste võim
 
 Hinnaga $49–$199/kuu on FitSite odavam kui arendaja, võimekam kui üldised ehitajad ja lõputult parem kui veebisaidi puudumine.
 
-## Hinnavariatsioonide rakendamine
+## Hinnavariatsioonide rakendamine {#implementing-price-variations}
 
 Aastane hinnastus soodustab pühendumist ja vähendab loobumist. Liigu iga paketi vahekaardile **Hinnavariatsioonid** ja lisa aastased valikud:
 
@@ -46,12 +46,12 @@ Aastane hinnastus soodustab pühendumist ja vähendab loobumist. Liigu iga paket
 
 Lisa oma kassavormile väli **Perioodi valik**, et kliendid saaksid vahetada kuu- ja aastapõhise arvelduse vahel. Vaata [Kassavormid](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Miks aastane hinnastus toimib
+### Miks aastane hinnastus toimib {#why-annual-pricing-works}
 
 - **Sinu jaoks**: Raha ette, väiksem loobumine (kliendid, kes maksavad aastaks ette, tühistavad väiksema tõenäosusega perioodi keskel)
 - **Nende jaoks**: Tegelik sääst, eelarve ennustatavus
 
-## Seadistustasud
+## Seadistustasud {#setup-fees}
 
 Kaalu ühekordset seadistustasu pakettidele, mis sisaldavad praktilist seadistamist:
 
@@ -61,7 +61,7 @@ Kaalu ühekordset seadistustasu pakettidele, mis sisaldavad praktilist seadistam
 
 Seadista seadistustasud iga paketi hinnastuse jaotises. Üksikasjade jaoks vaata [Oma esimese tellimustoote loomine](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Prooviperioodid
+## Prooviperioodid {#trial-periods}
 
 Prooviperioodi pakkumine vähendab registreerumise hõõrdumist, kuid tekitab riski, et kasutaja ei konverteeru maksvaks kliendiks. FitSite’i puhul:
 
@@ -70,11 +70,11 @@ Prooviperioodi pakkumine vähendab registreerumise hõõrdumist, kuid tekitab ri
 
 Seadista prooviperiood Starter-paketi hinnastuse jaotises, lubades lüliti **Paku prooviperioodi** ja määrates kestuseks 7 päeva.
 
-### Kuidas prooviperioodid konverteerima panna
+### Kuidas prooviperioodid konverteerima panna {#making-trials-convert}
 
 Prooviperiood toimib ainult siis, kui klient kogeb selle jooksul väärtust. Sinu sisseelamisjada (õppetund 8) on siin kriitiline -- tervituskirjad peaksid olema ajastatud nii, et need suurendaksid kaasatust 7-päevase akna jooksul.
 
-## Sooduskoodid
+## Sooduskoodid {#discount-codes}
 
 Loo strateegilisi sooduskoode konkreetsetel eesmärkidel:
 
@@ -88,7 +88,7 @@ Nende loomiseks liigu **Ultimate Multisite > Sooduskoodid**. Täieliku juhendi j
 Soodustused peaksid olema strateegilised tööriistad, mitte püsivad elemendid. Kui kõik saavad soodustust, ei ole see soodustus -- see on sinu tegelik hind. Kasuta neid konkreetsete kampaaniate, soovituste ja ajaliselt piiratud pakkumiste jaoks.
 :::
 
-## Maksude käsitlemine
+## Maksude käsitlemine {#tax-handling}
 
 Kui tegutsed jurisdiktsioonis, kus maksude kogumine on nõutav:
 
@@ -98,7 +98,7 @@ Kui tegutsed jurisdiktsioonis, kus maksude kogumine on nõutav:
 
 Üksikasjaliku seadistuse jaoks vaata [Maksude käsitlemine](/user-guide/payment-gateways/tax-handling). Kui teenindad kliente rahvusvaheliselt, kaalu EL-i nõuetele vastavuse jaoks [VAT addon](/addons/vat).
 
-## Hinnastuse ülevaatamine
+## Hinnastuse ülevaatamine {#reviewing-your-pricing}
 
 Pärast käivitamist vaata hinnastus kord kvartalis üle. Vaata järgmist:
 
@@ -107,7 +107,7 @@ Pärast käivitamist vaata hinnastus kord kvartalis üle. Vaata järgmist:
 - **Loobumine paketi lõikes**: Kui aastased kliendid loobuvad vähem, rõhuta aastast hinnastust tugevamalt
 - **Konkurentide hinnastus**: Kui palju alternatiivid küsivad? Kas sinu positsioneering on õige?
 
-## FitSite’i võrgustik seni
+## FitSite’i võrgustik seni {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Mida selles õppetunnis ehitasime
+## Mida selles õppetunnis ehitasime {#what-we-built-this-lesson}
 
 - **Aastane hinnastamine** 20% allahindlusega, et soodustada pühendumist
 - **Seadistustasud** kõrgematel pakettidel, et katta kasutuselevõtu töö

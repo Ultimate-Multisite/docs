@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# 多租戶
+# 多租戶 {#multi-tenancy}
 
 將子網站分散到多部伺服器與資料庫，以提升效能與安全性
 
-## Version 1.2.0 發布重點
+## Version 1.2.0 發布重點 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 為正式環境隔離工作流程新增主權租戶基礎：
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 為正式環境隔離工作流程新增主權租戶基礎：
 
 請參閱使用者指南中的[主權遷移工作流程](/user-guide/getting-started/sovereign-migration-workflow)、[多租戶隔離](/user-guide/configuration/multi-tenancy-isolation)與[主權租戶操作](/user-guide/administration/sovereign-tenant-operations)。
 
-## 需求
+## 需求 {#requirements}
 
 - WordPress 5.3 或更高版本
 - PHP 7.4 或更高版本
 - Multisite Ultimate plugin（已啟用）
 
-## 安裝
+## 安裝 {#installation}
 
 1. 將 addon 檔案上傳到你的 `/wp-content/plugins/` 目錄
 2. 透過 WordPress 中的「Plugins」選單啟用 plugin
 3. 在網路管理中設定 addon 設定
 
-## 開發
+## 開發 {#development}
 
-### 設定
+### 設定 {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### 專案結構
+### 專案結構 {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # 程式碼現代化規則
 ```
 
-### 測試
+### 測試 {#testing}
 
 此 addon 包含完整的測試框架：
 
@@ -93,54 +93,54 @@ ultimate-multisite-addon-template/
 - **測試覆蓋率**：已設定以追蹤程式碼覆蓋率
 - **Multisite 測試**：測試在 multisite 環境中執行
 
-### 程式碼標準
+### 程式碼標準 {#code-standards}
 
 - **WordPress Coding Standards**：透過 PHPCS 強制執行
 - **PHP 7.4+ 相容性**：支援現代 PHP 功能
 - **靜態分析**：整合 PHPStan 進行型別檢查
 - **程式碼現代化**：用於 PHP 升級的 Rector 規則
 
-### 建置系統
+### 建置系統 {#build-system}
 
 - **資產處理**：CSS/JS 檔案的最小化
 - **翻譯**：POT 檔案產生
 - **封裝**：建立用於發佈的封存檔
 - **開發模式**：用於偵錯的未最小化資產
 
-## 設定
+## 設定 {#configuration}
 
 此 addon 支援可透過網路管理介面存取的各種設定選項。
 
-### 主權租戶設定
+### 主權租戶設定 {#sovereign-tenant-configuration}
 
 對於主權租戶，在將流量路由到租戶之前，請設定租戶資料庫、檔案系統根目錄、資料庫主機繫結與主機能力。每次變更影響資料庫憑證、主機繫結、路由或使用者佈建時，都要執行遷移驗證。
 
 只有在租戶執行環境與資料庫授權預期使用本機 socket 或同機器存取時，才使用 `localhost`。當你的供應商設定的授權主機是 `127.0.0.1` 或服務主機名稱時，請使用它們。
 
-### Hostinger 能力
+### Hostinger 能力 {#hostinger-capability}
 
 Hostinger 多租戶能力會與共用的 Hostinger 整合 token 搭配運作。驗證前，請確認網域存在於 hPanel 中、DNS 指向 Hostinger 帳戶，且租戶資料庫設定符合 hPanel。
 
-## Hooks 與 Filters
+## Hooks 與 Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - 在 addon 初始化後觸發
 - `ultimate-multisite-addon-template_loaded` - 在所有 addon 檔案載入後觸發
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - 修改 addon 設定
 - `ultimate-multisite-addon-template_enabled` - 覆寫 addon 啟用／停用狀態
 
-## 授權
+## 授權 {#license}
 
 此 addon 採用 GPL v3 或更新版本授權。
 
-## 支援
+## 支援 {#support}
 
 如需支援與文件，請造訪 [MultisiteUltimate.com](https://multisiteultimate.com)
-## 變更記錄
+## 變更記錄 {#changelog}
 
 - Version 1.2.0 (2026-06-03)：新增無狀態租戶自動登入、Hostinger 多租戶能力、每個子網站的資料庫與檔案系統隔離、主權遷移驗證關卡、租戶啟動／資料庫寫入器改進、可設定的 MySQL 主機繫結，以及更安全的主權拆除。
 

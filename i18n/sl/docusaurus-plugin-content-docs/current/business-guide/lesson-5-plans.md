@@ -3,15 +3,15 @@ title: 'Lekcija 5: Oblikovanje vaših paketov'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lekcija 5: Oblikovanje vaših paketov
+# Lekcija 5: Oblikovanje vaših paketov {#lesson-5-designing-your-plans}
 
 Vaše ravni paketov niso samo cenovne ravni -- so odraz tega, kako vaše nišne stranke dejansko delujejo. V tej lekciji boste oblikovali ravni izdelkov, ki ustrezajo resničnim potrebam fitnes podjetij v različnih fazah.
 
-## Kje smo ostali
+## Kje smo ostali {#where-we-left-off}
 
 FitSite ima pripravljene tri predloge (Studio Essential, Gym Pro, Fitness Chain). Zdaj ustvarimo pakete, ki določajo, do česa stranke dobijo dostop in koliko plačajo.
 
-## Razmišljanje v segmentih strank
+## Razmišljanje v segmentih strank {#thinking-in-customer-segments}
 
 Napaka, ki jo naredi večina ljudi, je oblikovanje paketov okrog tehničnih funkcij (shramba, pasovna širina, število strani). Vaše nišne stranke ne razmišljajo v teh izrazih. Lastnik telovadnice razmišlja o tem, kaj potrebuje za vodenje svojega podjetja.
 
@@ -25,11 +25,11 @@ Za fitnes studie obstajajo trije naravni segmenti:
 
 Vaši paketi naj se ujemajo s temi segmenti, ne s poljubnimi svežnji funkcij.
 
-## Ustvarjanje paketov FitSite
+## Ustvarjanje paketov FitSite {#creating-the-fitsite-plans}
 
 Za vsak paket pojdite na **Ultimate Multisite > Izdelki > Dodaj izdelek**.
 
-### Paket 1: FitSite Starter -- 49 $/mesec
+### Paket 1: FitSite Starter -- 49 $/mesec {#plan-1-fitsite-starter----49month}
 
 **Cilj**: Samostojni trenerji in majhni studii
 
@@ -59,7 +59,7 @@ Za vsak paket pojdite na **Ultimate Multisite > Izdelki > Dodaj izdelek**.
 - Vaša izbrana tema: Prisili aktivacijo
 - Vse druge teme: Skrito
 
-### Paket 2: FitSite Growth -- 99 $/mesec
+### Paket 2: FitSite Growth -- 99 $/mesec {#plan-2-fitsite-growth----99month}
 
 **Cilj**: Uveljavljene telovadnice z eno lokacijo
 
@@ -85,7 +85,7 @@ Za vsak paket pojdite na **Ultimate Multisite > Izdelki > Dodaj izdelek**.
 - Skupina paketov: FitSite Plans
 - Vrstni red izdelka: 2
 
-### Paket 3: FitSite Pro -- 199 $/mesec
+### Paket 3: FitSite Pro -- 199 $/mesec {#plan-3-fitsite-pro----199month}
 
 **Cilj**: Fitnes verige z več lokacijami
 
@@ -109,7 +109,7 @@ Za vsak paket pojdite na **Ultimate Multisite > Izdelki > Dodaj izdelek**.
 - Skupina paketov: FitSite Plans
 - Vrstni red izdelka: 3
 
-## Nastavitev skupine paketov
+## Nastavitev skupine paketov {#setting-up-the-plan-group}
 
 Skupina paketov zagotavlja, da lahko stranke nadgradijo ali znižajo paket samo znotraj družine paketov FitSite. Na zavihku **Nadgradnje in znižanja** vsakega paketa:
 
@@ -118,7 +118,7 @@ Skupina paketov zagotavlja, da lahko stranke nadgradijo ali znižajo paket samo 
 
 To ustvari jasno pot nadgradnje: Starter → Growth → Pro.
 
-## Dodajanje dodatnih ponudb ob naročilu
+## Dodajanje dodatnih ponudb ob naročilu {#adding-order-bumps}
 
 Dodatne ponudbe ob naročilu so dodatni izdelki, ponujeni med zaključkom nakupa. Za FitSite razmislite o:
 
@@ -128,7 +128,7 @@ Dodatne ponudbe ob naročilu so dodatni izdelki, ponujeni med zaključkom nakupa
 
 Ustvarite jih kot izdelke vrste **Paket** v Ultimate Multisite in jih povežite z ustreznimi paketi.
 
-## Zakaj ta struktura deluje
+## Zakaj ta struktura deluje {#why-this-structure-works}
 
 - **Starter** odstrani ovire za vstop -- nizka cena, preprosta ponudba, trenerje hitro spravi na splet
 - **Growth** doda funkcije, ki jih telovadnice dejansko zahtevajo -- rezervacije, galerije, domene po meri
@@ -136,7 +136,7 @@ Ustvarite jih kot izdelke vrste **Paket** v Ultimate Multisite in jih povežite 
 - **Dodatne ponudbe ob naročilu** strankam omogočajo prilagajanje brez zapletanja osnovnih paketov
 - **Jasna pot nadgradnje** pomeni, da stranke rastejo z vami, namesto da odidejo
 
-## Omrežje FitSite doslej
+## Omrežje FitSite doslej {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Tri ravni paketov**, usklajene z resničnimi segmenti fitnes podjetij
 - **Omejevanje funkcij** z uporabo nadzora vtičnikov in predlog v Ultimate Multisite

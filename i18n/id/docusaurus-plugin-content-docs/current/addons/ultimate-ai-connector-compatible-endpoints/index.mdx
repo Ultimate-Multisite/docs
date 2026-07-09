@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints mengintegrasikan API penyedia AI yang kompatibel dengan OpenAI ke jaringan multisite WordPress Anda. Konfigurasikan beberapa penyedia AI — masing-masing dengan URL endpoint, API key, dan model default sendiri — dan alihkan permintaan dengan *automatic fallback* (pengalihan otomatis) ketika salah satu penyedia tidak tersedia.
 
-## Key Features
+## Key Features {#key-features}
 
 - **Dukungan multi-penyedia**: Tambahkan beberapa kartu penyedia AI, masing-masing dengan URL endpoint, API key, dan model default sendiri
 - **Urut ulang dengan *drag***: Atur penyedia berdasarkan prioritas menggunakan pegangan (*grip handle*) pada setiap kartu; permintaan akan menggunakan penyedia secara berurutan
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints mengintegrasikan API penyedia AI 
 - **Auto-expand saat tambah**: Kartu penyedia baru akan otomatis diperluas sehingga Anda dapat mengisi detailnya dengan segera
 - ***Script cache busting***: Skrip penyedia akan di-*cache-bust* saat pembaruan plugin untuk memastikan versi terbaru dimuat
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 atau lebih tinggi
 - PHP 7.4 atau lebih tinggi
 - Plugin Ultimate Multisite (aktif)
 - Endpoint API yang kompatibel dengan OpenAI (self-hosted atau pihak ketiga)
 
-## Installation
+## Installation {#installation}
 
 1. Unggah file *addon* ke direktori `/wp-content/plugins/` Anda
 2. Aktifkan plugin melalui menu 'Plugins' di WordPress
 3. Arahkan ke **Ultimate Multisite → AI Connector** untuk mengonfigurasi *addon*
 
-## Configuration
+## Configuration {#configuration}
 
-### Multi-Provider Setup
+### Multi-Provider Setup {#multi-provider-setup}
 
 Layar konfigurasi menggunakan tata letak berbasis kartu di mana setiap kartu mewakili satu penyedia AI. Anda dapat menambahkan sebanyak penyedia yang Anda butuhkan.
 
-#### Adding a Provider
+#### Adding a Provider {#adding-a-provider}
 
 1. Buka **Ultimate Multisite → AI Connector** di *network admin*
 2. Klik **Add Provider**
@@ -52,15 +52,15 @@ Layar konfigurasi menggunakan tata letak berbasis kartu di mana setiap kartu mew
    - **Default Model** — pengenal model yang akan digunakan secara default untuk penyedia ini (misalnya, `gpt-4o`, `mistral-small`)
 5. Klik **Save Settings**
 
-#### Removing a Provider
+#### Removing a Provider {#removing-a-provider}
 
 Klik tombol **Remove** pada kartu penyedia mana pun untuk menghapusnya. Simpan pengaturan untuk menerapkan perubahan.
 
-#### Reordering Providers
+#### Reordering Providers {#reordering-providers}
 
 Tarik ikon pegangan (⣿) di sisi kiri kartu penyedia mana pun untuk mengurutkannya kembali. Urutan menentukan prioritas *fallback*: permintaan dikirim ke penyedia pertama dan beralih ke penyedia berikutnya jika permintaan gagal.
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 Ketika permintaan ke penyedia utama gagal — karena *timeout*, *rate limit*, atau pemadaman layanan — *connector* akan otomatis mencoba kembali dengan penyedia berikutnya dalam daftar. Ini berlanjut ke bawah daftar sampai penyedia berhasil atau semua penyedia telah dicoba.
 
@@ -72,7 +72,7 @@ Ketika permintaan ke penyedia utama gagal — karena *timeout*, *rate limit*, at
 
 *Fallback* bersifat transparan bagi *plugin* atau tema pemanggil — mereka akan menerima respons sukses atau *error* akhir, terlepas dari berapa banyak penyedia yang telah dicoba.
 
-### Provider Configuration Reference
+### Provider Configuration Reference {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Ketika permintaan ke penyedia utama gagal — karena *timeout*, *rate limit*, at
 | API Key | Yes | Kunci otentikasi untuk penyedia ini |
 | Default Model | Yes | Pengenal model yang digunakan ketika tidak ada model yang ditentukan dalam permintaan |
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### No providers are listed
+### No providers are listed {#no-providers-are-listed}
 
 Jika daftar penyedia kosong setelah menyimpan, pastikan bahwa:
 
@@ -91,21 +91,21 @@ Jika daftar penyedia kosong setelah menyimpan, pastikan bahwa:
 - Browser Anda tidak memblokir halaman pengaturan dari penyimpanan (periksa konsol browser untuk *error* JavaScript)
 - Plugin aktif dan Anda berada di layar *network admin*
 
-### Requests are failing for all providers
+### Requests are failing for all providers {#requests-are-failing-for-all-providers}
 
 - Verifikasi bahwa endpoint URL setiap penyedia dapat dijangkau dari server Anda (tidak hanya dari browser Anda)
 - Periksa bahwa setiap API key valid dan belum kedaluwarsa
 - Tinjau status *rate-limit* dan kuota penyedia di *dashboard* mereka
 - Aktifkan *debug logging* WordPress (`WP_DEBUG_LOG`) untuk menangkap pesan *error* terperinci dari *connector*
 
-### A provider is not being used for fallback
+### A provider is not being used for fallback {#a-provider-is-not-being-used-for-fallback}
 
 *Drag-to-reorder* mengubah urutan *fallback*. Pastikan penyedia yang Anda harapkan menerima permintaan *fallback* berada di posisi yang benar dalam daftar dan bahwa endpoint URL serta API key-nya sudah benar.
 
-### New provider card does not expand automatically
+### New provider card does not expand automatically {#new-provider-card-does-not-expand-automatically}
 
 *Auto-expand* memerlukan JavaScript diaktifkan di browser Anda. Jika kartu tidak diperluas saat diklik, periksa konsol browser untuk *error*. Isi kartu selalu dapat diakses dengan mengklik *card header* meskipun *auto-expand* tidak terpicu.
 
-## Changelog
+## Changelog {#changelog}
 
 Lihat [Changelog](./changelog) untuk riwayat versi lengkap.

@@ -4,11 +4,11 @@ title: Aiki - wu_domain_registration_completed
 sidebar_label: wu_domain_registration_completed
 _i18n_hash: 092b475e74f3b937af068c83eeba2e0a
 ---
-# Aiki: wu_domain_registration_completed
+# Aiki: wu_domain_registration_completed {#action-wudomainregistrationcompleted}
 
 Yana aiki bayan an yi nasarar rijistar domain.
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yana aiki bayan an yi nasarar rijistar domain.
 | $registration_data | `array&lt;string,mixed&gt;` | Metadata na rijista (domain_name, provider_id, years, expiry_date, da sauransu). |
 | $result | `array&lt;string,mixed&gt;` | Danyen array na sakamako da registrar ya dawo da shi. |
 
-### Tun
+### Tun {#since}
 
 - 2.0.0
-### Tushe
+### Tushe {#source}
 
 An ayyana a cikin [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1204) a layi na 1204

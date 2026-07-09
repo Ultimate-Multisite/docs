@@ -3,11 +3,11 @@ title: Ìtọ́kasí Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Ìtọ́kasí Hooks
+# Ìtọ́kasí Hooks {#hooks-reference}
 
 Ìwé àkọsílẹ̀ tí a dá sílẹ̀ laifọwọyi fún gbogbo **59 actions** àti **118 filters** nínú Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Máa ń ṣẹlẹ̀ ṣáájú ìtọ́nisọ́nà-ọ̀nà ìfàṣẹsí.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Máa ń ṣẹlẹ̀ lẹ́sẹ̀kẹsẹ̀ ṣáájú kí a tó ṣètò cookie ìfàṣẹsí.
@@ -69,7 +69,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Máa ń ṣẹlẹ̀ lẹ́yìn tí object bá jẹ́ fífi pamọ́ sínú database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún actions sí ìlànà ṣíṣí.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Ṣe àlẹmọ iye àkókò tí cookie ìfàṣẹsí yóò fi parí.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Ṣe àlẹmọ ètò redirect ìfàṣẹsí.

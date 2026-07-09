@@ -3,11 +3,11 @@ title: اندروني ايجنٽس
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# ٺهيل-اندر Agents
+# ٺهيل-اندر Agents {#built-in-agents}
 
 Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر هڪ اڳواٽ ترتيب ڏنل آهي هڪ مرڪوز اوزارن جي سيٽ، ترتيب ڏنل system prompt، ۽ شروعاتي تجويزن سان جيڪي ان علائقي جي عام ڪمن سان ملن ٿيون. agents جي وچ ۾ مٽائڻ اهو بدلائي ٿو ته assistant ڇا ڪري سگهي ٿو ۽ ڪيئن جواب ڏئي ٿو — توهان جي طرفان ڪنهن به configuration کان سواءِ. Superdav AI Agent v1.18.0 انهن workflows ۾ schedule-aware tools، reminder records، approval gates، ۽ SMS notifications شامل ڪري سگهي ٿو جڏهن لاڳاپيل integrations ترتيب ڏنل هجن.
 
-## Agent ڇا آهي؟
+## Agent ڇا آهي؟ {#what-is-an-agent}
 
 هر agent هڪ نالي وارو configuration profile آهي جيڪو گڏ ڪري ٿو:
 
@@ -15,7 +15,7 @@ Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر
 - **System prompt** — هدايتون جيڪي agent جو لهجو، ترجيحون، ۽ حدون مقرر ڪن ٿيون
 - **تجويزون** — اڳواٽ لکيل prompts جيڪي chat interface ۾ ڏيکاريا وڃن ٿا ته جيئن توهان جلدي شروع ڪري سگهو
 
-## Agent Picker تائين رسائي
+## Agent Picker تائين رسائي {#accessing-the-agent-picker}
 
 1. WordPress admin sidebar ۾ **Gratis AI Agent** panel کوليو.
 2. chat header جي مٿين-کاٻي پاسي **agent icon** تي ڪلڪ ڪريو (icon فعال agent کي ظاهر ڪرڻ لاءِ بدلجي ٿو).
@@ -24,9 +24,9 @@ Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر
 
 توهان گفتگو جي وچ ۾ به agents مٽائي سگهو ٿا — نئين agent جو system prompt ايندڙ message کان اثرانداز ٿيندو.
 
-## پنج ٺهيل-اندر Agents
+## پنج ٺهيل-اندر Agents {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **ڌيان:** posts، pages، ۽ contact forms ٺاهڻ ۽ edit ڪرڻ.
 
@@ -47,7 +47,7 @@ Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **ڌيان:** هڪ ئي prompt مان end-to-end website ٺاهڻ.
 
@@ -70,7 +70,7 @@ Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **ڌيان:** Visual customisation — colours، typography، CSS، ۽ block patterns.
 
@@ -87,7 +87,7 @@ Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر
 - *homepage جو screenshot وٺو ۽ مون کي ٻڌايو ته توهان ڇا improve ڪندا.*
 - *full-width background image ۽ centred heading سان reusable hero block pattern ٺاهيو.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **ڌيان:** WordPress plugins ڳولڻ، install ڪرڻ، ۽ manage ڪرڻ.
 
@@ -105,7 +105,7 @@ Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **ڌيان:** site content، settings، ۽ WordPress configuration بابت سوالن جا جواب ڏيڻ.
 
@@ -124,7 +124,7 @@ Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر
 
 ---
 
-## Superdav آٽوميشن انٽيگريشنز
+## Superdav آٽوميشن انٽيگريشنز {#superdav-automation-integrations}
 
 جڏهن Superdav AI Agent v1.18.0 انٽيگريشنز ترتيب ڏنل هونديون آهن، built-in ايجنٽ وڌيڪ محفوظ شيڊول-آگاهه آٽوميشن ورڪ فلوز ۾ حصو وٺي سگهن ٿا:
 
@@ -138,11 +138,11 @@ Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر
 
 ---
 
-## ايجنٽن کي ڪسٽمائيز ڪرڻ
+## ايجنٽن کي ڪسٽمائيز ڪرڻ {#customising-agents}
 
 هر built-in ايجنٽ کي `gratis_ai_agent_agents` filter ذريعي وڌائي يا تبديل ڪري سگهجي ٿو.
 
-### موجود ايجنٽ ۾ ڪسٽم سسٽم پرامپٽ شامل ڪرڻ
+### موجود ايجنٽ ۾ ڪسٽم سسٽم پرامپٽ شامل ڪرڻ {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### نئون ايجنٽ رجسٽر ڪرڻ
+### نئون ايجنٽ رجسٽر ڪرڻ {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 نئون ايجنٽ filter هلڻ کان فوراً پوءِ Agent Picker ۾ ظاهر ٿئي ٿو.
 
-### built-in ايجنٽ هٽائڻ
+### built-in ايجنٽ هٽائڻ {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

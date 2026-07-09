@@ -4,11 +4,11 @@ title: 'Filter - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 এই ফিল্টারটি ডেটাবেসে সংরক্ষণ করার আগে ডেটা মেটা ফিল্টার করে।
 
-## প্যারামিটারসমূহ
+## প্যারামিটারসমূহ {#parameters}
 
 | Name | Type | বিবরণ |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 | $data_unserialized | `array` | যে অবজেক্ট ডেটাটি সংরক্ষণ করা হবে। |
 | $this | `\Base_Model` | অবজেক্টের ইনস্ট্যান্স। |
 
-### শুরু
+### শুরু {#since}
 
 - 2.0.0
-### উৎস
+### উৎস {#source}
 
 [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534)-এ লাইন ৫৩৪ তে সংজ্ঞায়িত করা হয়েছে।

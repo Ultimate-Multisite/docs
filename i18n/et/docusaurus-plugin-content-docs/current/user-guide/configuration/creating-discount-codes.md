@@ -3,13 +3,13 @@ title: Kuponide luomine
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kättemärkide luomine (v2)
+# Kättemärkide luomine (v2) {#creating-discount-codes-v2}
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioon 2.x.**_
 
 Ultimate Multisite abil saate luua kättemärgid, et antida oma klientidele allahindlusi nende jälgimiskirjandi jaoks. Ja neid luua on lihtne!
 
-## Kättemärkide loomine ja redigeerimine
+## Kättemärkide loomine ja redigeerimine {#creating-and-editing-discount-codes}
 
 Kättemärgi loomiseks või redigeerimiseks külastage **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kupon on nüüd teie loendil ja seal järgmine klikkida, et seda **redige või e
 
 ###
 
-### URL-parametrite kasutamine:
+### URL-parametrite kasutamine: {#using-url-parameters}
 
 Kui soovite oma hinnatavates tabelidesi kohandada või luua endale hästi näeviku kuponikoodipoolile veebile ja automaatselt rakendada allahindluse koodi oma kassas, saate seda teha URL-parametrite abil.
 

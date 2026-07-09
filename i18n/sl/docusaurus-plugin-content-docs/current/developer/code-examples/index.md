@@ -3,11 +3,11 @@ title: Napredni primeri kode
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Napredni primeri kode
+# Napredni primeri kode {#advanced-code-examples}
 
 Ti primeri prikazujejo napredne vzorce integracije z Ultimate Multisite.
 
-## Dinamični mehanizem določanja cen
+## Dinamični mehanizem določanja cen {#dynamic-pricing-engine}
 
 Mehanizem določanja cen na podlagi pravil, ki uporablja količinske, zvestobne in sezonske popuste:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Napredno zagotavljanje spletnih mest
+## Napredno zagotavljanje spletnih mest {#advanced-site-provisioning}
 
 Samodejno konfigurirajte nova spletna mesta z vtičniki, SSL, CDN, varnostnimi kopijami in nadzorom glede na funkcije paketa:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistem omejitev po meri
+## Sistem omejitev po meri {#custom-limitations-system}
 
 Spremljajte in uveljavljajte omejitve virov z opozorili o uporabi:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB atomski števec z `increment_item()`
+## BerlinDB atomski števec z `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 je razširil BerlinDB razred `Query` z metodo `increment_item()`. Uporabite jo za varna, atomska povečanja številskih stolpcev brez tekmovalnih pogojev pri branju-spreminjanju-zapisovanju — uporabno za števce, kvote uporabe in preverjanja omejevanja hitrosti, ki se izvajajo ob sočasnih zahtevah.
 
-### Podpis metode
+### Podpis metode {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 je razširil BerlinDB razred `Query` z metodo `increme
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Osnovna uporaba
+### Osnovna uporaba {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Sledenje uporabi API-ja na članstvo
+### Sledenje uporabi API-ja na članstvo {#tracking-api-usage-per-membership}
 
 Praktičen vzorec za uveljavljanje omejitev hitrosti API-ja na članstvo:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Zakaj `increment_item()` namesto `update_item()`
+### Zakaj `increment_item()` namesto `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Naiven pristop branja-spreminjanja-zapisovanja ni varen ob sočasnih zahtevah:
 

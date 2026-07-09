@@ -3,17 +3,17 @@ title: Oblikovalska smer
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Smer oblikovanja
+# Smer oblikovanja {#design-direction}
 
 Korak **Smer oblikovanja** vam omogoča, da pregledate, izpopolnite in dokončate vizualno zasnovo svoje teme, preden Theme Builder ustvari celotno temo.
 
-## Pregled
+## Pregled {#overview}
 
 Po dokončanju Discovery Interview vam Theme Builder prikaže smer oblikovanja z **upodabljanjem predogleda za namizje in mobilne naprave**. To vam omogoča, da natančno vidite, kako bo vaša zasnova videti na različnih napravah, preden se zavežete temi.
 
-## Komponente smeri oblikovanja
+## Komponente smeri oblikovanja {#design-direction-components}
 
-### 1. Barvna paleta
+### 1. Barvna paleta {#1-color-palette}
 
 Barvna shema vaše teme, vključno z:
 
@@ -23,7 +23,7 @@ Barvna shema vaše teme, vključno z:
 - **Nevtralne barve** — sive in bele za ozadja in besedilo
 - **Barva besedila** — primarna barva besedila za berljivost
 
-### 2. Tipografija
+### 2. Tipografija {#2-typography}
 
 Izbire pisav za:
 
@@ -33,14 +33,14 @@ Izbire pisav za:
 - **Višina vrstice** — razmik med vrsticami za berljivost
 - **Debeline pisave** — krepke, običajne in lahke različice
 
-### 3. Postavitev in razmiki
+### 3. Postavitev in razmiki {#3-layout-and-spacing}
 
 - **Širina vsebnika** — največja širina za vsebino
 - **Notranji odmiki in robovi** — razmiki okoli elementov
 - **Mrežni sistem** — postavitev stolpcev za odzivno oblikovanje
 - **Razmik med komponentami** — razdalja med elementi UI
 
-### 4. Vizualni elementi
+### 4. Vizualni elementi {#4-visual-elements}
 
 - **Slogi gumbov** — zasnove primarnih, sekundarnih in terciarnih gumbov
 - **Zasnove kartic** — postavitve za vsebinske bloke
@@ -48,9 +48,9 @@ Izbire pisav za:
 - **Obrobe in sence** — subtilna vizualna globina
 - **Učinki ob premiku kazalca** — oblikovanje interaktivnih stanj
 
-## Upodabljanje predogleda
+## Upodabljanje predogleda {#preview-rendering}
 
-### Predogled za namizje
+### Predogled za namizje {#desktop-preview}
 
 Predogled za namizje prikazuje vašo zasnovo v polni širini (običajno 1200px ali širše):
 
@@ -59,7 +59,7 @@ Predogled za namizje prikazuje vašo zasnovo v polni širini (običajno 1200px a
 - Velika tipografija in razmiki
 - Vsi vizualni elementi v polni velikosti
 
-### Predogled za mobilne naprave
+### Predogled za mobilne naprave {#mobile-preview}
 
 Predogled za mobilne naprave prikazuje vašo zasnovo pri mobilni širini (običajno 375px):
 
@@ -68,7 +68,7 @@ Predogled za mobilne naprave prikazuje vašo zasnovo pri mobilni širini (običa
 - Prilagojena tipografija in razmiki
 - Velikosti gumbov, prijazne dotiku
 
-### Odzivne prelomne točke
+### Odzivne prelomne točke {#responsive-breakpoints}
 
 Theme Builder upodobi predoglede pri teh prelomnih točkah:
 
@@ -79,9 +79,9 @@ Theme Builder upodobi predoglede pri teh prelomnih točkah:
 | **Namizje** | 1200px | Namizje v polni širini |
 | **Veliko namizje** | 1920px | Ultraširok zaslon |
 
-## Izpopolnjevanje vaše zasnove
+## Izpopolnjevanje vaše zasnove {#refining-your-design}
 
-### Izvajanje prilagoditev
+### Izvajanje prilagoditev {#making-adjustments}
 
 Svojo smer oblikovanja lahko izpopolnite tako, da:
 
@@ -91,7 +91,7 @@ Svojo smer oblikovanja lahko izpopolnite tako, da:
 4. **Posodobite postavitev** — spremenite širine vsebnikov in stolpce mreže
 5. **Prilagodite elemente** — spremenite sloge gumbov, zasnove kartic itd.
 
-### Posodobitve predogleda
+### Posodobitve predogleda {#preview-updates}
 
 Spremembe se odražajo v realnem času:
 
@@ -100,7 +100,7 @@ Spremembe se odražajo v realnem času:
 - Vse odzivne prelomne točke so posodobljene
 - Preklapljate lahko med predogledi, da preverite spremembe
 
-### Primerjalni pogled
+### Primerjalni pogled {#comparison-view}
 
 Primerjajte svojo smer oblikovanja z:
 
@@ -108,7 +108,7 @@ Primerjajte svojo smer oblikovanja z:
 - **Zasnove konkurentov** — primerjajte s spletnimi mesti za navdih
 - **Prejšnjimi različicami** — vrnite se na prejšnje smeri oblikovanja
 
-## Odobritev smeri oblikovanja
+## Odobritev smeri oblikovanja {#design-direction-approval}
 
 Ko ste zadovoljni s svojo zasnovo:
 
@@ -118,7 +118,7 @@ Ko ste zadovoljni s svojo zasnovo:
 4. **Potrdite postavitev** — preverite razmike in poravnavo
 5. **Odobrite zasnovo** — nadaljujte z ustvarjanjem teme
 
-## Naslednji koraki
+## Naslednji koraki {#next-steps}
 
 Po odobritvi svoje smeri oblikovanja:
 
@@ -127,7 +127,7 @@ Po odobritvi svoje smeri oblikovanja:
 3. Nadaljnje prilagoditve lahko izvedete z uporabo WordPress customizerja
 4. Nadaljujte na [Hospitality Menus](./hospitality-menus.md) ali druge funkcije
 
-## Najboljše prakse
+## Najboljše prakse {#best-practices}
 
 - **Preizkusite na resničnih napravah** — po možnosti uporabite dejanske telefone in tablice
 - **Preverite berljivost** — zagotovite, da je besedilo berljivo pri vseh velikostih
@@ -135,30 +135,30 @@ Po odobritvi svoje smeri oblikovanja:
 - **Upoštevajte zmogljivost** — optimizirajte slike in pisave za hitrost
 - **Načrtujte za vsebino** — zagotovite, da postavitev deluje z vašo dejansko vsebino
 
-## Odpravljanje težav
+## Odpravljanje težav {#troubleshooting}
 
-### Predogled se ne posodablja
+### Predogled se ne posodablja {#preview-not-updating}
 
 - Osvežite stran
 - Počistite predpomnilnik brskalnika
 - Poskusite z drugim brskalnikom
 - Preverite internetno povezavo
 
-### Barve so videti drugačne
+### Barve so videti drugačne {#colors-look-different}
 
 - Preverite nastavitve barv monitorja
 - Poskusite na različnih napravah
 - Preverite barvni kontrast z orodji za dostopnost
 - Razmislite o simulatorjih barvne slepote
 
-### Težave s tipografijo
+### Težave s tipografijo {#typography-issues}
 
 - Preverite, ali se datoteke pisav nalagajo
 - Preverite velikost pisave pri različnih prelomnih točkah
 - Preizkusite z dejansko vsebino
 - Upoštevajte dolžino vrstice za berljivost
 
-## Povezana dokumentacija
+## Povezana dokumentacija {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — zberite informacije o oblikovanju
 - [Hospitality Menus](./hospitality-menus.md) — ustvarite strukturirane strani menijev

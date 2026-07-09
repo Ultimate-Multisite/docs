@@ -3,7 +3,7 @@ title: Reġistru tal-Bidliet tal-Pjanijiet Imkejla
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Reġistru tal-Bidliet tal-Pjanijiet bil-Kejl
+# Reġistru tal-Bidliet tal-Pjanijiet bil-Kejl {#metered-plans-changelog}
 
 Verżjoni 1.1.0 - Maħruġa fit-2026-05-05
 - Ġdid: ħlas tat-token AI għal subsites multisite — segwi u ċċarġja l-użu tat-token AI fuq is-siti tal-klijenti b’rati konfigurabbli għal kull token
@@ -14,17 +14,17 @@ Verżjoni 1.1.0 - Maħruġa fit-2026-05-05
 - Tiswija: ġew solvuti żbalji fatali u problemi ta’ inizjalizzazzjoni doppja waqt it-tagħbija tal-plugin
 - Imtejjeb: miżjud script npm check-env sabiex l-ambjenti tal-iżviluppaturi jikkonfiguraw lilhom infushom mal-ewwel tħaddim
 
-### 1.0.3
+### 1.0.3 {#103}
 * Aġġornat għal Plugin Update Checker v5
 * Miżjuda headers moderni tal-plugin WordPress
 * Kompatibilità mtejba mal-aħħar verżjonijiet ta’ WordPress
 * Prestazzjoni mtejba tat-traċċar tal-użu
 
-### 1.0.2
+### 1.0.2 {#102}
 * Tiswijiet ta’ bugs u titjib fil-prestazzjoni
 * Rapportar imtejjeb tal-użu
 
-### 1.0.0
+### 1.0.0 {#100}
 * Rilaxx inizjali
 * Funzjonalità ewlenija tal-ħlas bil-kejl
 * Traċċar tal-użu u kalkolu tal-overage

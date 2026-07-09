@@ -3,13 +3,13 @@ title: Reducir un plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Baixar un plan (v2)
+# Baixar un plan (v2) {#downgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere-se à Ultimate Multisite versão 2.x.**_
 
 Baixar ou mudar de plano é unha acción que os vuestros clientes poden facer se tenxen un presupuesto limitado ou se deciden que non necesitan tantos recursos para xerar o seu subsite.
 
-## Como baixar un plan
+## Como baixar un plan {#how-to-downgrade-a-plan}
 
 Os vuestros clientes poden baixar o seu plan en cualquier momento entrando no dashboard de administración do seu subsite e facendo clic en **Change** (Cambiar) na páxina da súa conta.
 
@@ -25,7 +25,7 @@ Para continuar, o usuario só necesita facer clic no botón **Complete Checkout*
 
 ![Páxina da conta mostrando banner de cambio pendiente de membro](/img/account-page/pending-change.png)
 
-### O que acontece cando un usuario baixa o seu plan
+### O que acontece cando un usuario baixa o seu plan {#what-happens-when-a-user-downgrades-their-plan}
 
 É importante notar que baixar o plan non altera a configuración existente no subsite do usuario.
 
@@ -37,7 +37,7 @@ Para as publicacións que superen o límite establecido no plan, tes 3 opcións:
 
 ![Páxina de configuración do administrador da rede que mostra as opcións de comportamento cando se supera o límite de publicación](/img/account-page/settings-sites-post-limit.png)
 
-### O que acontece ao pagamento
+### O que acontece ao pagamento {#what-happens-to-the-payment}
 
 Na versión 2.0, non se necesita máis ningún ajuste no pago en termos de prorracionamento.
 

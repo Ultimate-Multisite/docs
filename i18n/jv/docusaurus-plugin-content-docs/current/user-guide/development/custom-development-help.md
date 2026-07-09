@@ -3,13 +3,13 @@ title: Bantuan Pengembangan Kustom
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Cara Nyuwuh Bantuan Pengembangan Custom saka Codeable?
+# Cara Nyuwuh Bantuan Pengembangan Custom saka Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Kadhang, kita pancen butuh kustomisasi sing mantep supaya alur jaringan kita pas banget kaya sing arep. Yen ngono sing kok goleki, kita rekomendasi [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), panggonan kanggo nemokake developer berpengalaman kanthi keahlian Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) kuwi platform sing nyambung pelanggan karo developer freelance WordPress sing kompeten, iso nggarap proyek ukuran apa wae. Dheweke duwe proses lamaran sing teliti supaya sampeyan cocok karo ahli sing wis divalidasi kanggo tugas sing arep kok lakoni.
 
-### Kepiye carane nggawe proyek ing Codeable?
+### Kepiye carane nggawe proyek ing Codeable? {#how-to-create-a-project-in-codeable}
 
 Dhisik, tindakake [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) lan klik tombol **Start a Project**.
 

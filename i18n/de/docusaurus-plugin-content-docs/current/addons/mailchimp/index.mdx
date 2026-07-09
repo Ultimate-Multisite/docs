@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: Mailchimp-Integration
 
 Integriere dein Multisite Ultimate-Netzwerk mit deinem Mailchimp. Du kannst bestimmte Tarife mit Mailchimp-Listen verknüpfen und Abonnenten bei der Registrierung automatisch zu diesen Listen hinzufügen.
 
-## Installation
+## Installation {#installation}
 
 1. Lade 'ultimate-multisite-mailchimp' in das Verzeichnis '/wp-content/plugins/' hoch
 2. Aktiviere das Plugin über das Menü 'Plugins' in deinem WordPress Network Admin
 
-## Nutzungsanleitung
+## Nutzungsanleitung {#usage-guide}
 
 Das Synchronisieren der E-Mail-Adressen von Abonnenten mit deinen MailChimp-Listen ist mit unserer Ultimate Multisite: MailChimp-Integrationserweiterung wirklich einfach. Dieses Tutorial soll dir helfen, alles einzurichten!
 
-## Einen API-Schlüssel erhalten
+## Einen API-Schlüssel erhalten {#getting-an-api-key}
 
 Bevor wir uns mit den verschiedenen verfügbaren Einstellungen befassen, benötigen wir einen MailChimp-API-Schlüssel. Damit kann Ultimate Multisite mit der MailChimp-API kommunizieren, um Listen und Gruppen abzurufen und E-Mail-Adressen zu diesen Listen und Gruppen hinzuzufügen, wenn sich Benutzer registrieren.
 
@@ -32,7 +32,7 @@ Folge diesem Tutorial, um deinen eigenen MailChimp-API-Schlüssel zu erhalten: [
 
 _Füge deinen MailChimp-API-Schlüssel hinzu unter_ _**Ultimate Multisite Einstellungen - > Erweiterungseinstellungen -> MailChimp**_
 
-## Integrationsmodus
+## Integrationsmodus {#integration-mode}
 
 Die MailChimp-Integrationserweiterung bietet zwei „Integrationsmodi“, was bedeutet, dass es zwei verschiedene Möglichkeiten gibt, die Erweiterung zum Synchronisieren von E-Mail-Adressen zu verwenden.
 
@@ -40,7 +40,7 @@ Die MailChimp-Integrationserweiterung bietet zwei „Integrationsmodi“, was be
 
 _Zwei Integrationsmodi für mehr Flexibilität!_
 
-### Modus 1: Mehrere Listen
+### Modus 1: Mehrere Listen {#mode-1-multiple-lists}
 
 Der Standardmodus verwendet **Mehrere Listen**. In diesem Modus kannst du für jeden Tarif mehrere MailChimp-Listen auswählen. Dies ist die beste Option, wenn du deine Benutzer in verschiedene Listen segmentierst.
 
@@ -52,7 +52,7 @@ Um das zu erreichen, kannst du den Modus Mehrere Listen verwenden, um sowohl die
 
 _Wähle die Standardlisten für neue Accounts und für gekündigte Accounts aus_
 
-### Modus 2: Einzelne Liste + mehrere Gruppen
+### Modus 2: Einzelne Liste + mehrere Gruppen {#mode-2-single-list--multiple-groups}
 
 MailChimp ermöglicht es dir, deine Liste in kleinere Benutzergruppen namens **Gruppen** zu segmentieren. Dadurch hast du mehr Kontrolle, da du eine Kampagne an eine bestimmte Teilmenge deiner Abonnenten senden kannst, ohne mehrere Kopien derselben Kampagne in MailChimp erstellen zu müssen (was es erschwert, die Kennzahlen dieser Kampagne später zu analysieren).
 
@@ -62,13 +62,13 @@ Zum Beispiel kannst du eine einzelne Liste namens **Meine Netzwerk-Abonnenten,**
 
 _Wähle die Standardlisten und -gruppen aus, wenn du den Integrationsmodus „einzelne Liste + mehrere Gruppen“ verwendest_
 
-## Standardlisten und -gruppen
+## Standardlisten und -gruppen {#default-lists-and-groups}
 
 Nachdem du ausgewählt hast, welcher Integrationsmodus für deinen speziellen Anwendungsfall sinnvoller ist, ist es an der Zeit, die Standardlisten (und je nach Modus Gruppen) auszuwählen. Die Standardliste wird verwendet, wenn für einen bestimmten Tarif keine spezifische Liste ausgewählt ist.
 
 Du kannst auch die Standardliste für gekündigte Accounts auswählen. Immer wenn ein Benutzer sein Abonnement beendet und seinen Account aus deinem Netzwerk entfernt, wird seine E-Mail-Adresse in die für gekündigte Accounts festgelegte Liste verschoben.
 
-## Doppelte Anmeldung aktivieren
+## Doppelte Anmeldung aktivieren {#enabling-double-subscription}
 
 Auf derselben Einstellungsseite kannst du **Doppelte Anmeldung** aktivieren. Diese Option fügt den Benutzer sowohl zur ausgewählten Standardliste ALS AUCH zur Liste hinzu, die für den Tarif dieses Benutzers ausgewählt wurde. Wenn diese Option nicht aktiviert ist, wird der Benutzer nur zur Liste hinzugefügt, die für den Tarif des Benutzers ausgewählt wurde. Wenn für diesen bestimmten Tarif keine festgelegt ist, wird der Benutzer zur ausgewählten Standardliste hinzugefügt.
 
@@ -76,7 +76,7 @@ Auf derselben Einstellungsseite kannst du **Doppelte Anmeldung** aktivieren. Die
 
 _Du kannst deine Benutzer bei der Registrierung sowohl für die Standardliste als auch für die Liste des Tarifs abonnieren lassen_
 
-## Listen und Gruppen für jeden der Tarife auswählen
+## Listen und Gruppen für jeden der Tarife auswählen {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Gehe zu deinen **Tarifen** und wähle den Tarif aus, den du bearbeiten möchtest. Beachte, dass in der Meta-Box **Erweiterte Optionen** ein neuer Tab namens MailChimp verfügbar sein wird.
 

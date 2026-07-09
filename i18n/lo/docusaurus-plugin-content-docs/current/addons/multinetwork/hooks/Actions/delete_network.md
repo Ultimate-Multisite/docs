@@ -4,19 +4,19 @@ title: ການກະທຳ - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# ການກະທຳ: delete_network
+# ການກະທຳ: delete_network {#action-deletenetwork}
 
 ເຮັດວຽກຫຼັງຈາກເຄືອຂ່າຍຖືກລຶບແລ້ວ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
 | $network | `\WP_Network` | ອອບເຈັກເຄືອຂ່າຍທີ່ຖືກລຶບ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 1.3.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1494) ທີ່ແຖວ 1494

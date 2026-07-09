@@ -3,7 +3,7 @@ title: အကောင့်စာမျက်နှာသို့ ဝင်ရ
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# ကျွန်ုပ်၏ အကောင့်စာမျက်နှာကို ပထမဆုံးအကြိမ် ဘယ်လို ဝင်ရောက်နိုင်မလဲ။
+# ကျွန်ုပ်၏ အကောင့်စာမျက်နှာကို ပထမဆုံးအကြိမ် ဘယ်လို ဝင်ရောက်နိုင်မလဲ။ {#how-can-i-access-my-account-page-for-the-first-time}
 
 Ultimate Multisite မှ ကြိုဆိုပါတယ်!
 

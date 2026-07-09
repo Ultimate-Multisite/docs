@@ -3,7 +3,7 @@ title: AffiliateWP चेंजलॉग
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP चेंजलॉग
+# AffiliateWP चेंजलॉग {#affiliatewp-changelog}
 
 Version: 2.0.1 - Released on 2025-09-28
 

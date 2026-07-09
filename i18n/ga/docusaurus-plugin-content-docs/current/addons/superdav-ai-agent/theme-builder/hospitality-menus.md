@@ -3,15 +3,15 @@ title: Biachláir Fáilteachais
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Biachláir Fáilteachais
+# Biachláir Fáilteachais {#hospitality-menus}
 
 Ligeann an ghné **Biachláir Fáilteachais** do Theme Builder leathanaigh struchtúrtha bia agus dí a ghiniúint agus a leabú go díreach isteach i do shuíomh WordPress.
 
-## Forbhreathnú
+## Forbhreathnú {#overview}
 
 Is féidir le Theme Builder anois leathanaigh bhiachláir ghairmiúla, struchtúrtha a chruthú do ghnólachtaí fáilteachais lena n-áirítear bialanna, caiféanna, beáir, agus seirbhísí lónadóireachta. Tá na biachláir seo comhtháite go hiomlán i ndearadh do shuímh agus is féidir iad a nuashonrú agus a bhainistiú go héasca.
 
-## Cineálacha Fáilteachais a dtacaítear leo
+## Cineálacha Fáilteachais a dtacaítear leo {#supported-hospitality-types}
 
 - **Bialanna** — biachláir itheacháin lánseirbhíse
 - **Caiféanna** — biachláir caife agus bia éadrom
@@ -21,9 +21,9 @@ Is féidir le Theme Builder anois leathanaigh bhiachláir ghairmiúla, struchtú
 - **Trucailí Bia** — biachláir seirbhíse bia soghluaiste
 - **Grúdlanna agus Fíonghoirt** — biachláir dí le cur síos
 
-## Struchtúr Biachláir
+## Struchtúr Biachláir {#menu-structure}
 
-### Catagóirí Biachláir
+### Catagóirí Biachláir {#menu-categories}
 
 Eagraítear biachláir ina gcatagóirí:
 
@@ -34,7 +34,7 @@ Eagraítear biachláir ina gcatagóirí:
 - **Deochanna** — deochanna (alcólacha agus neamh-mheisciúla)
 - **Speisialtachtaí** — speisialtachtaí laethúla nó séasúracha
 
-### Formáid Mhír Biachláir
+### Formáid Mhír Biachláir {#menu-item-format}
 
 Áirítear le gach mír bhiachláir:
 
@@ -49,7 +49,7 @@ Eagraítear biachláir ina gcatagóirí:
 }
 ```
 
-#### Réimsí Míre
+#### Réimsí Míre {#item-fields}
 
 | Réimse | Cineál | Cur síos |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Eagraítear biachláir ina gcatagóirí:
 | `allergens` | array | Ailléirginí coitianta (Cnónna, Sliogéisc, srl.) |
 | `availability` | string | Cathain atá sé ar fáil (Laethúil, Séasúrach, srl.) |
 
-## Biachláir Fáilteachais a Chruthú
+## Biachláir Fáilteachais a Chruthú {#creating-hospitality-menus}
 
-### Céim 1: Cuir Faisnéis Biachláir ar Fáil
+### Céim 1: Cuir Faisnéis Biachláir ar Fáil {#step-1-provide-menu-information}
 
 Inis do Theme Builder faoi do bhiachlár:
 
@@ -71,7 +71,7 @@ Cruthaigh biachlár bialainne do mo bhialann Iodálach le réamhbhianna,
 miasa pasta, príomhchúrsaí, agus milseoga. Cuir praghsanna agus cur síos san áireamh.
 ```
 
-### Céim 2: Gineann Theme Builder Biachlár
+### Céim 2: Gineann Theme Builder Biachlár {#step-2-theme-builder-generates-menu}
 
 Déanann Theme Builder:
 
@@ -81,7 +81,7 @@ Déanann Theme Builder:
 4. Formáidíonn sé praghsanna agus cur síos
 5. Cuireann sé faisnéis aiste bia agus ailléirginí leis
 
-### Céim 3: Athbhreithnigh agus Saincheap
+### Céim 3: Athbhreithnigh agus Saincheap {#step-3-review-and-customize}
 
 Is féidir leat:
 
@@ -91,9 +91,9 @@ Is féidir leat:
 4. Cur síos agus faisnéis aiste bia a nuashonrú
 5. Stíliú agus leagan amach a choigeartú
 
-## Roghanna Taispeána Biachláir
+## Roghanna Taispeána Biachláir {#menu-display-options}
 
-### Leathanach Iomlán Biachláir
+### Leathanach Iomlán Biachláir {#full-menu-page}
 
 Leathanach tiomnaithe a thaispeánann do bhiachlár iomlán:
 
@@ -102,7 +102,7 @@ Leathanach tiomnaithe a thaispeánann do bhiachlár iomlán:
 - Leagan amach cairdiúil don phriontáil
 - Dearadh freagrúil do ghléasanna soghluaiste
 
-### Giuirléid Biachláir
+### Giuirléid Biachláir {#menu-widget}
 
 Leabaigh rannóga biachláir ar leathanaigh eile:
 
@@ -111,7 +111,7 @@ Leabaigh rannóga biachláir ar leathanaigh eile:
 - Biachlár dí ar leathanach an bheáir
 - Taispeántas milseog sa bhuntásc
 
-### PDF Biachláir
+### PDF Biachláir {#menu-pdf}
 
 Gin biachlár PDF in-íoslódáilte:
 
@@ -120,9 +120,9 @@ Gin biachlár PDF in-íoslódáilte:
 - Áirítear íomhánna agus cur síos
 - Éasca le roinnt agus le ríomhphost a sheoladh
 
-## Faisnéis Aiste Bia agus Ailléirginí
+## Faisnéis Aiste Bia agus Ailléirginí {#dietary-and-allergen-information}
 
-### Tréithe Aiste Bia
+### Tréithe Aiste Bia {#dietary-attributes}
 
 Marcáil míreanna le faisnéis aiste bia:
 
@@ -134,7 +134,7 @@ Marcáil míreanna le faisnéis aiste bia:
 - **Low-Carb** — carbaihiodráití laghdaithe
 - **High-Protein** — saibhir i bpróitéin
 
-### Rabhaidh Ailléirginí
+### Rabhaidh Ailléirginí {#allergen-warnings}
 
 Cuir ailléirginí coitianta san áireamh:
 
@@ -147,9 +147,9 @@ Cuir ailléirginí coitianta san áireamh:
 - **Glútan** — cruithneacht agus gránaigh ina bhfuil glútan
 - **Síosam** — síolta agus ola síosaim
 
-## Bainistiú Biachláir
+## Bainistiú Biachláir {#menu-management}
 
-### Praghsanna a Nuashonrú
+### Praghsanna a Nuashonrú {#updating-prices}
 
 Nuashonraigh praghsanna biachláir go héasca:
 
@@ -159,7 +159,7 @@ Nuashonraigh praghsanna biachláir go héasca:
 4. Sábháil athruithe
 5. Taispeántar athruithe láithreach ar do shuíomh
 
-### Míreanna Séasúracha a Chur Leis
+### Míreanna Séasúracha a Chur Leis {#adding-seasonal-items}
 
 Cruthaigh athruithe biachláir séasúracha:
 
@@ -169,7 +169,7 @@ Cruthaigh athruithe biachláir séasúracha:
 4. Sceideal dátaí infhaighteachta
 5. Taispeáin go huathoibríoch le linn an tséasúir
 
-### Speisialtachtaí a Bhainistiú
+### Speisialtachtaí a Bhainistiú {#managing-specials}
 
 Taispeáin speisialtachtaí laethúla nó seachtainiúla:
 
@@ -179,7 +179,7 @@ Taispeáin speisialtachtaí laethúla nó seachtainiúla:
 4. Nuashonraigh go laethúil nó go seachtainiúil
 5. Cuir sean-speisialtachtaí i gcartlann
 
-## Comhtháthú le Theme Builder
+## Comhtháthú le Theme Builder {#integration-with-theme-builder}
 
 Agus Theme Builder á úsáid do shuímh fáilteachais:
 
@@ -189,9 +189,9 @@ Agus Theme Builder á úsáid do shuímh fáilteachais:
 4. **Optamú soghluaiste** — taispeántar biachláir go hálainn ar fhóin
 5. **Optamú SEO** — tá biachláir cairdiúil d’innill chuardaigh
 
-## Dea-Chleachtais
+## Dea-Chleachtais {#best-practices}
 
-### Dearadh Biachláir
+### Dearadh Biachláir {#menu-design}
 
 - **Eagrú soiléir** — struchtúr catagóire loighciúil
 - **Cur síos inléite** — blasta agus faisnéiseach
@@ -199,7 +199,7 @@ Agus Theme Builder á úsáid do shuímh fáilteachais:
 - **Grianghraif ghairmiúla** — íomhánna bia ardchaighdeáin
 - **Spás bán** — ná plódáil an leathanach
 
-### Ábhar
+### Ábhar {#content}
 
 - **Cur síos cruinn** — déan cur síos cruinn ar mhíreanna
 - **Aibhsigh speisialtachtaí** — déan speisialtachtaí feiceálach
@@ -207,7 +207,7 @@ Agus Theme Builder á úsáid do shuímh fáilteachais:
 - **Nuashonraigh go rialta** — coinnigh praghsanna agus míreanna cothrom le dáta
 - **Úsáid teanga bhlasta** — déan míreanna a fhuaimniú blasta
 
-### Inrochtaineacht
+### Inrochtaineacht {#accessibility}
 
 - **Clónna inléite** — bain úsáid as clófhoirne soiléire, soléite
 - **Codarsnacht leordhóthanach** — cinntigh go bhfuil an téacs inléite
@@ -215,9 +215,9 @@ Agus Theme Builder á úsáid do shuímh fáilteachais:
 - **Rabhaidh ailléirginí** — taispeáin ailléirginí go feiceálach
 - **Cairdiúil do ghléasanna soghluaiste** — tástáil ar gach gléas
 
-## Samplaí
+## Samplaí {#examples}
 
-### Struchtúr Biachláir Bialainne
+### Struchtúr Biachláir Bialainne {#restaurant-menu-structure}
 
 ```
 Réamhchúrsaí
@@ -241,7 +241,7 @@ Milseoga
 └── Rogha Gelato
 ```
 
-### Struchtúr Roghchláir Caifé
+### Struchtúr Roghchláir Caifé {#cafe-menu-structure}
 
 ```
 Caife
@@ -260,7 +260,7 @@ Ceapairí
 └── Wrap Veigeatórach
 ```
 
-## Gnéithe Gaolmhara
+## Gnéithe Gaolmhara {#related-features}
 
 - [Cruthaigh Roghchlár](../abilities/create-menu.md) — cruthaigh roghchláir nascleanúna
 - [Treo Dearaidh](./design-direction.md) — saincheap dearadh do shuímh

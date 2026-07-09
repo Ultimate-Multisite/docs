@@ -3,13 +3,13 @@ title: Te Whakarite i Tō Puka Rēhita
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Te Whakarite i tō Puka Rehitatanga
+# Te Whakarite i tō Puka Rehitatanga {#customizing-your-registration-form}
 
 Kia motuhake ai te āhua o tō whatunga i ērā atu SaaS katoa i hangaia ki runga i te tūāpapa WordPress, ka āhei a Ultimate Multisite ki te whakarite i ō whārangi rehitatanga me ō whārangi takiuru mā tā mātou āhuatanga **Puka Takiutu**.
 
 Ahakoa he ara māmā, he ngāwari hoki ēnei hei whakamātau i ngā huarahi rerekē ina ngana ana ki te huri i ngā kiritaki hou, ka whakamahia te nuinga hei waihanga puka rehitatanga whaiaro. Ko te whāinga o tēnei tuhinga he whakaatu ki a koe me pēhea e taea ai e koe tēnei.
 
-## Ngā whārangi takiuru me te rehitatanga:
+## Ngā whārangi takiuru me te rehitatanga: {#login-and-registration-pages}
 
 I te tāutanga o Ultimate Multisite, ka waihanga aunoa i ngā whārangi takiuru me ngā whārangi rehitatanga ritenga ki tō pae matua. Ka taea e koe te huri i ēnei whārangi taunoa i ngā wā katoa mā te haere ki tō whārangi **Ultimate Multisite > Tautuhinga > Takiuru me te Rehitatanga**.
 
@@ -45,7 +45,7 @@ Inaianei, me kite i ētahi atu kōwhiringa e hāngai tonu ana ki te tukanga taki
 
 Ā, koirā katoa ngā kōwhiringa e pā ana ki te takiuru me te rehitatanga ka taea e koe te whakarite! Kaua e wareware ki te tiaki i ō tautuhinga i muri i tō whakaoti i te whakatika.
 
-## Te whakamahi i ngā puka rehitatanga maha:
+## Te whakamahi i ngā puka rehitatanga maha: {#using-multiple-registration-forms}
 
 Ka tuku a Ultimate Multisite 2.0 i tētahi ētita puka takiutu e āhei ai koe ki te waihanga i te maha o ngā puka e hiahia ana koe, me ngā āpure rerekē, ngā hua e tukuna ana, me ērā atu.
 
@@ -69,7 +69,7 @@ Hei kē atu, ka taea e koe te whakatika, te tārua rānei i ngā puka kei a koe 
 
 Ki te tīpako koe i te hipanga kotahi, i te hipanga-maha rānei, kua whakakīa kē te puka takiutu ki ngā hipanga taketake kia mahi ai. Kātahi, ki te hiahia koe, ka taea e koe te tāpiri hipanga anō ki reira.
 
-### Te whakatika i tētahi Puka Takiutu:
+### Te whakatika i tētahi Puka Takiutu: {#editing-a-checkout-form}
 
 Pērā i tā mātou i kōrero ake nei, ka taea e koe te waihanga puka takiutu mō ngā kaupapa rerekē. I tēnei tauira ka mahi tātou ki tētahi puka rehitatanga.
 
@@ -131,11 +131,11 @@ Hei tiki i te shortcode o tō puka, pāwhiria **Hanga Shortcode** ka tāruatia t
 
 _**Tuhipoka:** Me tāpiri koe i tēnei shortcode ki tō whārangi rēhitatanga kia tāpirihia ai tēnei puka utu ki reira._
 
-## Te kōwhiri tōmua i ngā hua me ngā tauira mā ngā tawhā URL:
+## Te kōwhiri tōmua i ngā hua me ngā tauira mā ngā tawhā URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ki te hiahia koe ki te waihanga i ngā tēpu utu kua whakaritea mō ō hua, ā, ki te kōwhiri tōmua i runga i te puka utu i te hua, i te tauira rānei e kōwhiria ana e tō kiritaki mai i tō tēpu utu, i tō whārangi tauira rānei, ka taea e koe te whakamahi i ngā tawhā URL mō tēnei.
 
-### **Mō ngā mahere:**
+### **Mō ngā mahere:** {#for-plans}
 
 Haere ki **Ultimate Multisite > Ngā Hua > Tīpakohia tētahi mahere**. Me kite koe i te pātene **Pāwhiri hei tārua i te Hononga Tiri** kei runga rawa o te whārangi. Koinei te hononga ka taea e koe te whakamahi hei kōwhiri tōmua i tēnei mahere motuhake i runga i tō puka utu.
 
@@ -143,7 +143,7 @@ Haere ki **Ultimate Multisite > Ngā Hua > Tīpakohia tētahi mahere**. Me kite 
 
 Kia mōhio he whai mana tēnei hononga tiri mō **Ngā Mahere** anake. Kāore e taea e koe te whakamahi hononga tiri mō ngā mōkī, mō ngā ratonga rānei.
 
-### Mō ngā tauira:
+### Mō ngā tauira: {#for-templates}
 
 Ki te hiahia koe ki te kōwhiri tōmua i ngā tauira pae i runga i tō puka utu, ka taea e koe te whakamahi i te tawhā: **?template_id=X** i runga i te URL o tō whārangi rēhitatanga. Me whakakapi te "X" ki te **tau ID tauira pae**. Hei tiki i tēnei tau, haere ki **Ultimate Multisite > Ngā Pae**.
 

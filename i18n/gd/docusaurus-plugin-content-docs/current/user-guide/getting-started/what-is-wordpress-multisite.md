@@ -3,7 +3,7 @@ title: Cè a tha WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Mij è WordPress Multisite?
+# Mij è WordPress Multisite? {#what-is-wordpress-multisite}
 
 An t-amhair, WordPress a tha de dhèanamh seàllaidh 'Multisite', a tha a' tòiseachadh air 2010 ag tòiseachadh de WordPress 3.0. San sin, tha e wedi cael mòran de ràths airson ùraichean a thabhairt agus sgìthadh a chlàradh.
 
@@ -11,7 +11,7 @@ Air tòiseachadh, is e féidir a bhith a' ghnothachadh gu seo: Tha un nàdarachd
 
 ##
 
-## Còmhnaidh is e WordPress Multisite?
+## Còmhnaidh is e WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Is e feature de WordPress a tha a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' leat a' le
 
@@ -35,7 +35,7 @@ Tha an t-eòlas sinne, tha e sinnean a' ghnìomhachda de ne sinnean a bhith air 
 
 _Note: as eadar thu tha thu, a' chlàradh daoine gu eartachadh gu eartas a' chlàradh idir sinn agus a' tòiseachadh agad airson super admin status, a tha seo a' tòiseachadh an t-ùrall a chanaltachd gu mòr air a ghràdh. Mar eisimpleir, caithedh na super admins eile a bhith ag iarraidh a' chlàradh mar a tha thu a' tòiseachadh airson super admin status, a tha seo a' tòiseachadh a bhith agad a' fàgailte air an panel admin a thàinig. Gu h-aithreachadh a bhith a' fhéin a' chlàradh gu mionnach air cho rudan as fheàrr a tha thu a' tòiseachadh airson super admins eile a dhèanamh, tha sinn ag iarraidh add-on a tha a' tòiseachadh gu làidhinn. Tha an add-on seo a' gineadh eadar-daoine eile – un 'agent' – le dìreach na fìdichean a tha thu a' tòiseachadh airson a' sgaidh a dhèanamh air an t-ùrall._
 
-## Càr a tha a' chlàradh gu eadar agus cha tha e
+## Càr a tha a' chlàradh gu eadar agus cha tha e {#subdomain-or-subdirectory}
 Mar a bha sinn a' tòiseachadh air, air cheann de na fhaisghean a tha WordPress multisite a' chlàradh, is e cheann de na fhaisghean a tha a' chlàradh gu mòr: tha sin a' chlàradh gu mòr air an t-ùrall a chanaltachd, na fìleichean a thàinig, na themean, na pluginhean, na fìleichean core WordPress, agus eile.
 
 Mar sin, tha eadar-daoine a tha a' chlàradh gu mionnach air an t-ùrall a chlàradh.
@@ -46,7 +46,7 @@ Mar sin, tha eadar-daoine a tha a' chlàradh gu mionnach air an t-ùrall a chlà
 
 - Tha beagail tabiltean dbh (database tables) a choimhneach airson eachdraidh, mar a tha sin a' chlàradh air eachdraidh. Bidh sin, tha posts, comments, pages, settings, agus eile a' chlàradh air eachdraidh.
 
-## Càr a tha a' chlàradh de dháine ar WordPress Multisite
+## Càr a tha a' chlàradh de dháine ar WordPress Multisite {#the-super-admin}
 Tha seann a tha a' chlàradh gu mionnach air WordPress multisite, is e cheann de na fhaisghean a tha a' chlàradh gu mòr: tha tabiltean user (user table) a tha a' chlàradh gu mòr air an t-ùrall a chanaltachd.
 
 Bidh an t-àimeas seo a thòiseachadh beagail fhaisghean a tha thu a' tòiseachadh airson a tha thu a' sgaidh a dhèanamh le tòiseachadh air an t-ùrall a chanaltachd.
@@ -71,7 +71,7 @@ _Note: Tha sinn a' faicinn gu sònraichte gu sùil sin a' tòiseachadh air a' ch
 
 'S e che dùil an t-aighneachd a tha a' chùl, caithfear eadar-dheargadh na chuidir ùr (users) gu fhaighinn agus a thòisich a' chùlann subsite a' chùlann admin na subsite a' chùlann super admin, agus is e cheann-chùlann ùr a bhith ag obair air subsites fhaighinn.
 
-## Fhìoradh a tha a' chùlann (Performance considerations)
+## Fhìoradh a tha a' chùlann (Performance considerations) {#what-is-shared-among-subsites-and-what-is-not}
 
 Tha WordPress multisite gu mòr gu sònraich gu faic a tha a' chùlann site sin a thabhair. Is e cheann a tha a' chùlann seo a' tòisich, mar WordPress.com, Edublogs, agus Campuspress sinn a' chùlann multisite-based sin, agus a tha each host thànaidhean (thousands) de sitean.
 

@@ -4,19 +4,19 @@ title: ഫിൽട്ടർ - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filter: wu_magic_links_enabled
+# Filter: wu_magic_links_enabled {#filter-wumagiclinksenabled}
 
 മാജിക് ലിങ്കുകൾ പ്രവർത്തനക്ഷമമാされているかどうか ഇത് ഫിൽട്ടർ ചെയ്യാൻ ഉപയോഗിക്കുന്നു.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $enabled | `bool` | മാജിക് ലിങ്കുകൾ ഓൺ ആണോ എന്ന് ഇത് തീരുമാനിക്കുന്നു. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L377) at line 377

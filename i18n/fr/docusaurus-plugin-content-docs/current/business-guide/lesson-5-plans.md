@@ -3,15 +3,15 @@ title: 'Leçon 5 : Concevoir vos plans'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leçon 5 : Concevoir vos forfaits
+# Leçon 5 : Concevoir vos forfaits {#lesson-5-designing-your-plans}
 
 Vos niveaux de forfaits ne sont pas de simples paliers de prix ; ils reflètent la manière dont vos clients de niche fonctionnent réellement. Dans cette leçon, vous allez concevoir des niveaux de produits qui correspondent aux besoins réels des entreprises de fitness à différents stades de développement.
 
-## Où nous nous étions arrêtés
+## Où nous nous étions arrêtés {#where-we-left-off}
 
 FitSite dispose de trois modèles prêts à l'emploi (Studio Essential, Gym Pro, Fitness Chain). Maintenant, nous allons créer les forfaits qui déterminent ce que les clients peuvent consulter et ce qu'ils paient.
 
-## Penser en segments de clients
+## Penser en segments de clients {#thinking-in-customer-segments}
 
 L'erreur la plus courante est de concevoir des forfaits en fonction de fonctionnalités techniques (stockage, bande passante, nombre de pages). Vos clients de niche ne pensent pas de cette manière. Un propriétaire de salle de sport pense à ce dont il a besoin pour faire fonctionner son entreprise.
 
@@ -25,11 +25,11 @@ Pour les studios de fitness, trois segments naturels existent :
 
 Vos forfaits doivent correspondre à ces segments, et non à des groupes de fonctionnalités arbitraires.
 
-## Créer les forfaits FitSite
+## Créer les forfaits FitSite {#creating-the-fitsite-plans}
 
 Accédez à **Ultimate Multisite > Products > Add Product** pour chaque forfait.
 
-### Forfait 1 : FitSite Starter — 49 $/mois
+### Forfait 1 : FitSite Starter — 49 $/mois {#plan-1-fitsite-starter----49month}
 
 **Cible** : Coachs indépendants et petits studios
 
@@ -59,7 +59,7 @@ Accédez à **Ultimate Multisite > Products > Add Product** pour chaque forfait.
 - Votre thème sélectionné : Forcer l'activation
 - Tous les autres thèmes : Masqué
 
-### Forfait 2 : FitSite Growth — 99 $/mois
+### Forfait 2 : FitSite Growth — 99 $/mois {#plan-2-fitsite-growth----99month}
 
 **Cible** : Salles de sport établies avec un seul emplacement
 
@@ -85,7 +85,7 @@ Accédez à **Ultimate Multisite > Products > Add Product** pour chaque forfait.
 - Groupe de forfaits : FitSite Plans
 - Ordre du produit : 2
 
-### Forfait 3 : FitSite Pro — 199 $/mois
+### Forfait 3 : FitSite Pro — 199 $/mois {#plan-3-fitsite-pro----199month}
 
 **Cible** : Chaînes de fitness multi-emplacements
 
@@ -109,7 +109,7 @@ Accédez à **Ultimate Multisite > Products > Add Product** pour chaque forfait.
 - Groupe de forfaits : FitSite Plans
 - Ordre du produit : 3
 
-## Configuration du groupe de forfaits
+## Configuration du groupe de forfaits {#setting-up-the-plan-group}
 
 Le groupe de forfaits garantit que les clients ne peuvent passer au niveau supérieur ou rétrograder que dans la famille de forfaits FitSite. Sur l'onglet **Mise à niveau et rétrogradation** de chaque forfait :
 
@@ -118,7 +118,7 @@ Le groupe de forfaits garantit que les clients ne peuvent passer au niveau supé
 
 Cela crée un chemin de mise à niveau clair : Starter → Growth → Pro.
 
-## Ajouter des accroches de commande (Order Bumps)
+## Ajouter des accroches de commande (Order Bumps) {#adding-order-bumps}
 
 Les accroches de commande sont des produits additionnels proposés au moment du paiement. Pour FitSite, envisagez :
 
@@ -128,7 +128,7 @@ Les accroches de commande sont des produits additionnels proposés au moment du 
 
 Créez-les comme produits de type **Package** dans Ultimate Multisite et associez-les aux forfaits concernés.
 
-## Pourquoi cette structure fonctionne
+## Pourquoi cette structure fonctionne {#why-this-structure-works}
 
 - **Starter** élimine les barrières à l'entrée — prix bas, offre simple, permet aux coachs de se lancer rapidement
 - **Growth** ajoute les fonctionnalités que les salles de sport demandent réellement — réservation, galeries, domaines personnalisés
@@ -136,7 +136,7 @@ Créez-les comme produits de type **Package** dans Ultimate Multisite et associe
 - **Accroches de commande** permettent aux clients de personnaliser sans compliquer les forfaits de base
 - **Un chemin de mise à niveau clair** signifie que les clients grandissent avec vous au lieu de partir
 
-## Le réseau FitSite jusqu'à présent
+## Le réseau FitSite jusqu'à présent {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Prêt pour la configuration du paiement (prochaine leçon)
 ```
 
-## Ce que nous avons construit dans cette leçon
+## Ce que nous avons construit dans cette leçon {#what-we-built-this-lesson}
 
 - **Trois niveaux de forfaits** liés aux segments réels des entreprises de fitness
 - **Contrôle des fonctionnalités** grâce aux contrôles de plugins et de modèles d'Ultimate Multisite

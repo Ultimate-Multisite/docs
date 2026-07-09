@@ -3,19 +3,19 @@ title: 'Lekcia 2: Výber vášho zamerania'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lekcia 2: Výber vašej niky
+# Lekcia 2: Výber vašej niky {#lesson-2-picking-your-niche}
 
 V Lekcii 1 sme si ukázali, prečo nika poráža všeobecné riešenie. Teraz si musíte vybrať tú svoju. Táto lekcia vám poskytne rámec na nájdenie a overenie niky skôr, než investujete čas do budovania riešenia pre ňu.
 
-## Kde sme skončili
+## Kde sme skončili {#where-we-left-off}
 
 Definovali sme koncept FitSite: platformu webových stránok pre fitness štúdiá. Ako sme však dospeli konkrétne k fitness štúdiám? Táto lekcia vás prevedie procesom, aby ste ho mohli použiť na nájdenie vlastnej niky.
 
-## Tri kritériá
+## Tri kritériá {#the-three-criteria}
 
 Dobrá nika pre platformu webových stránok spĺňa tri podmienky:
 
-### 1. Potrebujú webové stránky, ale majú problém získať kvalitné
+### 1. Potrebujú webové stránky, ale majú problém získať kvalitné {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Hľadajte odvetvia, kde:
 
@@ -26,7 +26,7 @@ Hľadajte odvetvia, kde:
 
 **Fitness štúdiá vyhovujú**: členovia očakávajú, že online nájdu rozvrhy lekcií, ceny a rezervácie. Väčšina webových stránok štúdií je zastaraná alebo postavená na všeobecných šablónach, ktoré neslúžia svojmu účelu.
 
-### 2. Firmy si môžu dovoliť mesačné predplatné
+### 2. Firmy si môžu dovoliť mesačné predplatné {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Vaši cieľoví zákazníci musia byť:
 
@@ -36,7 +36,7 @@ Vaši cieľoví zákazníci musia byť:
 
 **Fitness štúdiá vyhovujú**: už platia za rezervačný softvér, spracovanie platieb a marketingové nástroje. Predplatné webovej stránky je prirodzeným doplnkom.
 
-### 3. Rozprávajú sa medzi sebou
+### 3. Rozprávajú sa medzi sebou {#3-they-talk-to-each-other}
 
 Najlepšie niky majú:
 
@@ -46,9 +46,9 @@ Najlepšie niky majú:
 
 **Fitness štúdiá vyhovujú**: majitelia štúdií navštevujú podujatia fitness odvetvia, zapájajú sa do online komunít a často zdieľajú nástroje a služby s kolegami.
 
-## Ako nájsť kandidátske niky
+## Ako nájsť kandidátske niky {#how-to-find-niche-candidates}
 
-### Začnite tým, čo poznáte
+### Začnite tým, čo poznáte {#start-with-what-you-know}
 
 Vaše existujúce skúsenosti sú výhodou. Zvážte:
 
@@ -56,7 +56,7 @@ Vaše existujúce skúsenosti sú výhodou. Zvážte:
 - Koníčky alebo záujmy, pri ktorých rozumiete komunite
 - Profesionálne siete, do ktorých už patríte
 
-### Hľadajte signály bolesti
+### Hľadajte signály bolesti {#look-for-pain-signals}
 
 Hľadajte dôkazy, že firmy v danej nike majú problém s webovými stránkami:
 
@@ -65,7 +65,7 @@ Hľadajte dôkazy, že firmy v danej nike majú problém s webovými stránkami:
 - Pozrite si skutočné webové stránky v nike -- je väčšina z nich slabá?
 - Skontrolujte, či existujú konkurenti a ako dobre obsluhujú trh
 
-### Vyhodnoťte ekonomiku
+### Vyhodnoťte ekonomiku {#evaluate-the-economics}
 
 Pre každú kandidátsku niku odhadnite:
 
@@ -73,11 +73,11 @@ Pre každú kandidátsku niku odhadnite:
 - **Ochota platiť**: Koľko aktuálne míňajú na podobné nástroje?
 - **Potenciál celoživotnej hodnoty**: Sú tieto firmy stabilné, alebo rýchlo odchádzajú?
 
-## Overenie vašej niky
+## Overenie vašej niky {#validating-your-niche}
 
 Skôr než začnete čokoľvek budovať, overte dopyt:
 
-### Rozprávajte sa s potenciálnymi zákazníkmi
+### Rozprávajte sa s potenciálnymi zákazníkmi {#talk-to-potential-customers}
 
 Oslovte 10-15 majiteľov firiem vo vašej cieľovej nike. Opýtajte sa:
 
@@ -88,17 +88,17 @@ Oslovte 10-15 majiteľov firiem vo vašej cieľovej nike. Opýtajte sa:
 
 Ešte nepredávate. Počúvate.
 
-### Skontrolujte konkurenčné prostredie
+### Skontrolujte konkurenčné prostredie {#check-competitor-landscape}
 
 - **Žiadni konkurenti**: Môže to znamenať nulový dopyt, alebo to môže znamenať nevyužitú príležitosť. Rozhovory so zákazníkmi vám ukážu, čo z toho platí.
 - **Niekoľko konkurentov**: Dobré znamenie. Overuje dopyt. Preskúmajte, čo robia dobre a kde zaostávajú.
 - **Veľa konkurentov**: Ťažšie sa vstupuje, ale stále je to možné, ak sa dokážete jasne odlíšiť.
 
-### Vytvorte vstupnú stránku
+### Vytvorte vstupnú stránku {#build-a-landing-page}
 
 Pred vybudovaním platformy vytvorte jednoduchú vstupnú stránku, ktorá opisuje vaše riešenie pre danú niku, a zbierajte e-mailové registrácie. Spustite malé množstvo cielenej reklamy na otestovanie záujmu. Ak sa ľudia zaregistrujú, máte overenie.
 
-## Aplikovanie na FitSite
+## Aplikovanie na FitSite {#applying-this-to-fitsite}
 
 Takto FitSite obstál podľa kritérií:
 
@@ -112,7 +112,7 @@ Takto FitSite obstál podľa kritérií:
 
 Overenie potvrdilo príležitosť. Teraz budujeme.
 
-## Nápady na niky na zváženie
+## Nápady na niky na zváženie {#niche-ideas-to-consider}
 
 Ak fitness nie je váš trh, tu sú ďalšie niky, ktoré spĺňajú kritériá:
 
@@ -127,7 +127,7 @@ Ak fitness nie je váš trh, tu sú ďalšie niky, ktoré spĺňajú kritériá:
 
 Každá z nich má rovnaké charakteristiky: jasné potreby webovej stránky, schopnosť platiť a komunitné odporúčania.
 
-## Čo sme vybudovali v tejto lekcii
+## Čo sme vybudovali v tejto lekcii {#what-we-built-this-lesson}
 
 - **Rámec výberu niky**: tri kritériá na vyhodnotenie akejkoľvek niky
 - **Metódy overenia**: rozhovory so zákazníkmi, analýza konkurencie, testovanie vstupnej stránky

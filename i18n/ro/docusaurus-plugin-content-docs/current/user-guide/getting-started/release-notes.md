@@ -3,9 +3,9 @@ title: Note de lansare
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Note de lansare
+# Note de lansare {#release-notes}
 
-## Versiunea 2.13.0 — Lansată pe 2026-06-05
+## Versiunea 2.13.0 — Lansată pe 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nou: A fost adăugat suport pentru chiriași suverani pentru fluxurile de Account client, checkout, facturare, site, factură, schimbare de șablon și mapare de domeniu, astfel încât rețelele de chiriași să poată direcționa clienții înapoi către site-ul principal pentru acțiuni gestionate.
 - Nou: Au fost adăugate verificări ale acreditărilor de reînnoire pentru abonamente recurente, astfel încât gateway-urile să poată dezactiva reînnoirea automată atunci când lipsește un acord de facturare salvat, o subscripție sau un token de seif.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corecție: Reînnoirile abonamentelor, afișarea expirării și cazurile limită de colectare a plăților evită acum expirările imediate, blocările sau plățile obligatorii ratate.
 - Îmbunătățit: Compatibilitatea WordPress este testată până la 7.0, activele Vue de producție sunt reconstruite din surse npm, iar acoperirea end-to-end Cypress testează acum mai multe fluxuri de checkout, configurare, SSO și gateway.
 
-## Versiunea 2.12.0 — Lansată pe 2026-05-15
+## Versiunea 2.12.0 — Lansată pe 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nou: A fost adăugat Hostinger (hPanel) ca furnizor de găzduire acceptat, cu integrare pentru maparea domeniilor
 - Nou: Site Exporter gestionează acum pachete de import de rețea pentru restaurarea simplificată a site-urilor la nivelul întregii rețele
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corecție: Site Exporter CLI păstrează acum selecția corectă a site-ului implicit al rețelei
 - Îmbunătățit: wp-cli inclus a fost eliminat din pachetul pluginului, reducând dimensiunea pluginului
 
-## Versiunea 2.11.0 — Lansată pe 2026-05-11
+## Versiunea 2.11.0 — Lansată pe 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nou: Exporturile de site includ acum un `index.php` auto-inițializabil, astfel încât ZIP-ul să poată fi instalat pe o gazdă nouă fără instalarea separată a unui plugin.
 - Nou: Exportul de rețea le permite administratorilor să exporte toate subsite-urile într-o singură arhivă din pagina de administrare Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nou: Editorul formularului de checkout avertizează când un produs este adăugat fără un câmp obligatoriu configurat.
 - Nou: Fila de setări Import/Export descrie acum clar aria sa de aplicare și leagă direct către instrumentul Site Export.
 
-## Versiunea 2.10.0 — Lansată pe 2026-05-05
+## Versiunea 2.10.0 — Lansată pe 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nou: Asistent de configurare ghidată PayPal pentru introducerea manuală a acreditărilor, cu poartă de flag OAuth pentru configurarea fără întreruperi a gateway-ului.
 - Nou: Panoul clientului pentru schimbarea șablonului a fost reproiectat cu card pentru șablonul curent, grilă persistentă și butonul **Resetează șablonul curent**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corecție: Calea SSO filtrată este respectată în toate fluxurile de autentificare.
 - Corecție: Opțiunile goale pentru identitatea site-ului sunt păstrate la salvare.
 
-## Versiunea 2.9.0 — Lansată pe 2026-04-30
+## Versiunea 2.9.0 — Lansată pe 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nou: Exportul și importul pentru site unic au fost adăugate sub **Instrumente > Export și import**.
 - Corecție: Fișierele ZIP de export sunt acum servite printr-un endpoint de descărcare autentificat.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corecție: ID-urile tururilor sunt normalizate cu underscore-uri în cheile setărilor utilizatorului.
 - Îmbunătățit: ZipArchive este acum folosit în loc de Alchemy/Zippy pentru compatibilitate mai bună.
 
-## Versiunea 2.8.0 — Lansată pe 2026-04-29
+## Versiunea 2.8.0 — Lansată pe 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nou: Comutatorul Enable Jumper a fost adăugat în interfața de setări Other Options.
 - Nou: Coloana Status a fost adăugată în tabelul listei formularelor de checkout.

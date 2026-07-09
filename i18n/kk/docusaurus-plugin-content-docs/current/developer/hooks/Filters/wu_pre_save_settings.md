@@ -4,11 +4,11 @@ title: Сүзгі - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Сүзгі: wu_pre_save_settings
+# Сүзгі: wu_pre_save_settings {#filter-wupresavesettings}
 
 Әзірлеушілерге параметрлерді Ultimate Multisite арқылы сақтаудан бұрын сүзуге мүмкіндік береді.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 | $settings_to_save | `array` | Қосылатын жаңа параметрлер. |
 | $saved_settings | `array` | Ағымдағы сақталған параметрлер. |
 
-### Бастап
+### Бастап {#since}
 
 - 2.0.18
-### Дереккөзі
+### Дереккөзі {#source}
 
 [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) ішінде 296-жолда анықталған.

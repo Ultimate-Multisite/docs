@@ -3,13 +3,13 @@ title: Sukurti savo pirmąjį prekybos abonementą
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Jūsų Pirmo Mokesčių Produktų Sukurimas (v2)
+# Jūsų Pirmo Mokesčių Produktų Sukurimas (v2) {#creating-your-first-subscription-product-v2}
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis skirtas tik Ultimate Multisite versijos 2.x vartotojams. Jei naudojate versiją 1.x,**_ **_skirkite šį straipsnis**_.
 
 Kad pradėti veikti savo tinklą ir pradėti parduoti savo paslaugas galimintiems vartotojams, jums reikės skirtingų mokesčių variantų. Kaip sukurti šiuos produktus? Kokių tipų produktų galite pasiūlyti? Šiame straipsnyje pateiksime viską, ką reikia sužinoti apie produktus.
 
-## Produktų Tipai
+## Produktų Tipai {#product-type}
 
 Su Ultimate Multisite galite pasiūlyti klientams dvi produktų kategorijas: **planus** ir **papildomai (Order Bump)**. Papildomai gali būti sukurti iki dviem tipais: **paketai** ir **paslaugos**. Ką jie skirties ir ypatybės pateiksime toliau.
 
@@ -19,7 +19,7 @@ Su Ultimate Multisite galite pasiūlyti klientams dvi produktų kategorijas: **p
 
   * **Paslaugos**: papildomai, kurie nepatinka Ultimate Multisite funkcijoms. Tai yra užduotys, kurias vyksite klientui, kurio pirkęs planą, beikant tą planą. Pavyzdžiui, jūsų klientas gali pirkti planą, kuris leido vienai vietos ir taip pat mokėti už papildomą paslaugą, kuri padarytų šį dizainą.
 
-## Produktų Valdymas
+## Produktų Valdymas {#managing-products}
 
 Daugeliui vartotojųにとって Ultimate Multisite **(Ultimate Multisite > Products)** puslapis „Products“ (Produktai) gali būti lygi su planų pasirinkimais tradiciinei hostingu aplinkvai.
 
@@ -29,7 +29,7 @@ Ultimate Multisite puslapio „Products“ puslapis nurodo konstrukciją ir apri
 
 ![Products list page](/img/config/products-list.png)
 
-## Produktų pridėjimas
+## Produktų pridėjimas {#adding-products}
 
 Jei tai planas, pakuotė ar paslauga yra įvestis naujo elementumo nurodymui, tai daroma per **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Interfejs turi dvi pagrindines dalis. Kairėje yra kelios languoti, kurie padeda
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Aprašymas
+### Aprašymas {#description}
 
 Bazines produktos informacijos galima nustatyti pateikdami produktų pavadinimą ir aprašymą. Šie identifikatoriai skamba, kur jie reikalinga informacija, pavyzdžiui, planų ir kainų pasirinkimo metu, paskyros, įmonių atnaujinimų ir panašios dalykų.
 
 ![Product description section](/img/config/product-description.png)
 
-### Kaina
+### Kaina {#pricing-type}
 
 Interfeysis dešinėje pusėje leidžia nustatyti bazinę kainą.
 
@@ -53,7 +53,7 @@ Interfeysis dešinėje pusėje leidžia nustatyti bazinę kainą.
 
 Ultimate Multisite palaiko trikus kitus kainos tipus. **Paid** (Mokėtinas) opsinai praneša tinklo administratorui informaciją apie produkto kainą ir paskirstymo tikslą.
 
-### Kainos nustatymas
+### Kainos nustatymas {#pricing}
 
 Kainos komponentas nurodo bazinę produkto kainą ir paskirstymo intervalą.
 
@@ -61,7 +61,7 @@ Kainos komponentas nurodo bazinę produkto kainą ir paskirstymo intervalą.
 
 ta, pavyzdžiui, jei turite kainą 29.99$, o kurio nustatytas laikas yra vienas mėnesis, tai bus skaičiuojama 29.99$ kiekvienam mėnesiu. Analogiai, jei kainos yra 89.97$ ir nustatyta per 3 mėnesius, tai bus skaičiuojama šią sumą kiekviename kvartale.
 
-### Skaičiavimo ciklai
+### Skaičiavimo ciklai {#billing-cycles}
 
 Skaičiavimo ciklus sekcija nurodo, kokia dažniausia yra ieškomos mokėjimo intervalo ir ji dažnai suprantama su santykiu prie sutarties ar fiksuotu laiko.
 
@@ -69,7 +69,7 @@ Skaičiavimo ciklus sekcija nurodo, kokia dažniausia yra ieškomos mokėjimo in
 
 Pavyzdžiui, jei produkto kaina yra 29.99$ ir intervalas yra vienas mėnesis ir 12 skaičiavimo ciklus, tai bus skaičiuojama 29.99$ kiekvienam mėnesiu už produktą per to 12 mėnesių laikotarpį. Vakar tokiu nustatymu bus sukurta fiksuota kaina 29.99$ per mėnesį per 12 mėnesius ir skaičiavimas bus nutrauktas.
 
-### Bandymo laikotarpis
+### Bandymo laikotarpis {#trial-period}
 
 Paleidžiant pasiūlymo bandymo mygtuką leidžia tinklo administratorui nustatyti bandymo laikotarpį produktai.
 
@@ -77,7 +77,7 @@ Paleidžiant pasiūlymo bandymo mygtuką leidžia tinklo administratorui nustaty
 
 Bandymo laikotarpiui vartotojai yra laisvai naudotis produktais ir nebus mokėti, kol bandymas laikotarpis bus išnaudotas.
 
-### Nustatymo didinimo mokestis (Setup Fee)
+### Nustatymo didinimo mokestis (Setup Fee) {#setup-fee}
 
 Galite taip pat pateikti nustatymo didinimo mokestį savo planui.
 
@@ -85,7 +85,7 @@ Galite taip pat pateikti nustatymo didinimo mokestį savo planui.
 
 Tai reiškia, kad jūsų klientas bus mokėti papildomą sumą per pirmą mokesčią (pas kurio kainos planą) kuri, atitina didinimo mokestį, kurį nustatyote šioje sekcijoje.
 
-### Aktyvus
+### Aktyvus {#active}
 
 Aktyvumo mygtukas efektyviai nurodo, ar produktas yra skirtas vartotojams naujiems registracijoms.
 
@@ -93,13 +93,13 @@ Aktyvumo mygtukas efektyviai nurodo, ar produktas yra skirtas vartotojams naujie
 
 Jei šio planui yra esantys klientai, nustabdykite šį mygtuką į neaktyvų būseną – tai efektyviai išlaikys planą ir pašalys jį ateitymo registracijose. **Esantys planui klientai bus pinigoti** iki kol jie pereis prie naujo plano arba bus pašalinti iš plano.
 
-### Produkto vaizdas
+### Produkto vaizdas {#product-image}
 
 Mygtukas **Upload Image** leidžia tinklo administratorui naudotis medijos biblioteka, kad pasirinktų ar įkeltų produkto vaizdą.
 
 ![Product image section](/img/config/product-image.png)
 
-### Ištrinti
+### Ištrinti {#delete}
 
 Mygtukas **Delete Product** pašalina produktą iš sistema. Jis pasirodys po to, kai produktas bus publikuotas.
 
@@ -107,11 +107,11 @@ Mygtukas **Delete Product** pašalina produktą iš sistema. Jis pasirodys po to
 
 Paprastai skiriasi kitoms pašalinimams – produktas nebus pateiktas į kokį šaltinį (trampas). Taigi, po ištrinkimo veiksmas yra neatvirkštas.
 
-### Produkto nustatymai
+### Produkto nustatymai {#product-options}
 
 Kai pagrindinė produkto informacija bus nurodyta, produkto nustatymai padės tinklo administratorui toliau nurodyti specifinius produktų atributus.
 
-#### Bendrasis
+#### Bendrasis {#general}
 
 **General** (Bendrasis) sąrašas nurodo bendrus produktų atributus, kurie ne taikomi jokiam kitam produktui specifikam sąrašui.
 
@@ -125,7 +125,7 @@ Ultimate Multisite palaiko kelis produkto tipus: Planą, Paketą ir Paslaugą. *
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Pakeit ir atšaukimas (Up & Downgrades)
+#### Pakeit ir atšaukimas (Up & Downgrades) {#up--downgrades}
 
 Ši vieta nurodo, kokie įtraukimai ir atsaukimo (downgrade) būdai yra skirti klientui jo konkretio lygio metu.
 
@@ -141,7 +141,7 @@ Kad nurodytumėte planų grupę, nurodykite sudergias planus **planų grupės** 
 
 Ultimate Multisite taip pat susijęs su funkcija **order bump**, kurioje tinkamai į planus gali būti pridėti papildomi produktai ir paslaugos. Tai siūloma klientui kaip papildomos dalys, kurias galima pridėti prie planų kasui ar metu atsaukimo (upgrade) metu.
 
-#### Kaina variantai
+#### Kaina variantai {#price-variations}
 
 Kaina variantai leidžia tinklo administratorui nurodyti alternatyvų kainos lygis, prieldant pagal laikotarpį. Ši nustatyimas leidžia pasiūlyti vienam pačiu produktui skirtingus mokesčių terminus – mėnesio, kvartalinio, annualinio ar bet kokio kitimo periodų. Pavyzdžiui, galite nustatyti produktą už 29,99 USD/mėnį ir pasiūlyti nuolaidytą annualinę opsiją už 249,99 USD/metus.
 
@@ -163,9 +163,9 @@ Pavyzdžiui, jei jūsų pagrindinio produkto kaina yra 29,99 USD per mėnesį, g
 Kainos variantai vieni negali pridėti mygtuko ar switch'o ant frontendio kasos. Kad klientai galėtų pasirinkti tarp mokesčių periodų (pvz., Mėnesio / Annualinio), turite pridėti **Period Selection** (Periodos pasirinkimo) laukelį į savo kasos formą. Paskutines instrukcijas rasite [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle).
 :::
 
-#### Mokesčiai
+#### Mokesčiai {#taxes}
 
-**Taxes** (Mokesčiai) puslapis susijęs su mokesčių nustatymais, nurodytais **Ultimate Multisite > Settings > Taxes** ir, specifiau, nurodytomis mokesčių lygiais. Norėdami įjungti mokesčius ir nustatyti pritaikomus mokesčių lygis, rasite dokumentaciją [Ultimate Multisite: Settings](ultimate-multisite-settings).
+**Taxes** (Mokesčiai) puslapis susijęs su mokesčių nustatymais, nurodytais **Ultimate Multisite > Settings > Taxes** ir, specifiau, nurodytomis mokesčių lygiais. Norėdami įjungti mokesčius ir nustatyti pritaikomus mokesčių lygis, rasite dokumentaciją **Ultimate Multisite: Settings**.
 
 ![Taxes tab](/img/config/product-taxes.png)
 
@@ -177,7 +177,7 @@ Kai mokesčio lygis bus nustatytas **Ultimate Multisite > Settings > Manage Tax 
 
 Norint nurodyti, kad produktas yra mokesčias itemas, paleiskite **Is Taxable** (Ar yra mokesčias) mygtuką ir pasirinkite pritaikytą mokesčių lygį iš Dropdown meniu Tax Category.
 
-#### Svetų šablonavimo (Site Templates)
+#### Svetų šablonavimo (Site Templates) {#site-templates}
 
 Pagrindinis požiūris – svetainės šablonavimas yra pilni WordPress svetainiai, kurie klonuojami klientui turimo svetaine pradžioje jų subskriptijos metu.
 
@@ -199,7 +199,7 @@ Kitas žingsnis, **C** **Choose Available Site Templates** (Pasirinkti turimos s
 
 Apibendrinant, jei tinklo administratorius nori, kad šablonų pasirinkimas būtų vykdomas užsakymo žingsniuose, visada sugenia nustatymas '_default_'. Alternatyviai, jei norite pašalyti ir užblokuoti šablonų pasirinkimą ir deleguoti pasirinkimą planui nustatymams, gali būti tinkami opsijos '_assign new template_' arba '_choose available site templates_'.
 
-#### Svetainės (Sites)
+#### Svetainės (Sites) {#sites}
 
 **Svetainės (Sites)** sąstumas yra Ultimate Multisite apribojimų funkcijų dalis.
 
@@ -209,7 +209,7 @@ Apibendrinant, jei tinklo administratorius nori, kad šablonų pasirinkimas būt
 
 Kad įjungti apribojimą, nustatykite **limit sites** (skaičius svetainių) mygtuką į aktyvų būsenį ir nurodykite maksimalų svetainių skaičių lauke **site allowance** (svetainės atsiuntimas).
 
-#### Apžiūros (Visits)
+#### Apžiūros (Visits) {#visits}
 
 **Apžiūros (Visits)** sąstumas yra Ultimate Multisite apribojimų sistema. Šis nustatymas leidžia sužinoti ir toliau kontroliuoti unikalius apsilankijančius klientus į klientų svetainę.
 
@@ -221,7 +221,7 @@ Kad naudoti šią funkciją, nustatykite **limit unique visits** (limito unikali
 
 Kai šis limitas pasiektas Ultimate Multisite nebus teikti klientui svetainės, o atvyks pranešimas apie tai, kad limitai buvo pasiekti.
 
-#### Vartotojai
+#### Vartotojai {#users}
 
 Ultimate Multisite „Vartotojų“ (Users) apribojimai leidžia tinklo administratorui nustatyti limitus skaičiumi vartotojų, kuriuos galima sukurti ir atsiųsti į vaidmenius.
 
@@ -231,7 +231,7 @@ Kad įjungti apribojimų funkciją, nustatykite **limit user** (vartotojo limita
 
 Kiekvienam vaidmeniui, kuriam reikia nustatyti limitus, nustatykite mygtuką šalia jį į aktyvų būsenį ir nurodykite maksimalų aukščiausią ribą tinkamame lauke.
 
-#### Post Types (Post Tipai)
+#### Post Types (Post Tipai) {#post-types}
 
 **Post Types** (Post Tipai) sąraδος leidžia tinklo administratorui nustatyti detalius limitus dideliai įtraukiamoms post tipams WordPress'e.
 
@@ -243,7 +243,7 @@ Kad įjungti šią apribojimų subsystemą, nustatykite **limit post types** (po
 
 Kiekvienam post tipui, kurį norite apriboti, paleiskite jį, slidžiant dešimtį į dešimtį (dešinėje pusėje) ir nurodykite maksimalų aukščiausią ribą tinkamu laiku atitinkame laiku.
 
-#### Disko ruošystė
+#### Disko ruošystė {#disk-space}
 
 **Disk Space** (Disko ruošystės) posviselis leidžia tinklo administratoriams apriboti vietą, kurį vartotojai gali užimti.
 
@@ -255,13 +255,13 @@ Sveikiame diskų naudojimo ribojimą, paleiskite **limit disk size per site** (r
 
 Toliau nurodykite maksimalų aukščiausią ribą megabajtams lauke **disk space allowance**.
 
-#### Pradėtas domenas (Custom Domain)
+#### Pradėtas domenas (Custom Domain) {#custom-domain}
 
 Paleiskdami šią funkciją, galite leisti naudoti pradinus domenus šiame planą.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Temai
+#### Temai {#themes}
 
 **Themes** (Temai) posviselis nustatymai produkto opsiniuose leidžia tinklo administratorui pateikti temai vartotojams pasirinkimui ir, opcionai, priversti temo būseną.
 
@@ -279,7 +279,7 @@ _**Pastaba: kad temai tų vartotojų pasiektų, jos turi būti tinklu įjungtos 
 
 W stanie **Dostępny** motyw jest dostępny dla klienta do samodzielnej aktywacji. Z drugiej strony, w stanie **Niedostępny** usuwa możliwość aktywowania motywu z klienta. Na koniec opcja **Wymuś Aktywację** wymusza wybór i aktywację motywu, ustawiając go jako domowy przy tworzeniu strony.
 
-#### Plugins (Wtyczki)
+#### Plugins (Wtyczki) {#plugins}
 
 Podobnie jak w zakładce Themes, Ultimate Multisite pozwala administratorowi sieci na określenie widoczności wtyczek dla klientów oraz ich stanu po utworzeniu nowej strony.
 
@@ -299,7 +299,7 @@ Ustawienie **Force Activate & Lock** działa podobnie, ale zapobiega zmianie sta
 
 Administrator sieci może chcieć rozważyć ustawienia Force Activate & Lock oraz Force Inactivate & Lock w połączeniu z szablonami witryny jako wtyczkami, ponieważ stany wtyczek w szablonach mogą zostać wpłynięte przez te ustawienia, jeśli zostaną one wybrane.
 
-#### Ograniczenia przy resetowaniu
+#### Ograniczenia przy resetowaniu {#reset-limitations}
 
 Zakładka **Reset Limitations** resetuje wszystkie własne limity zdefiniowane dla produktu. Aby zresetować ograniczenia, kliknij przycisk **reset limitations**.
 
@@ -309,7 +309,7 @@ Aby potwierdzić działanie, przełącz suwak **confirm reset** w prawo i klikni
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Edycja, duplikowanie lub usunięcie produktu
+## Edycja, duplikowanie lub usunięcie produktu {#edit-duplicate-or-delete-product}
 
 Istniejące produkty można edytować, duplikować lub usuwać, przechodząc do **Ultimate Multisite > Products** i najedając kursorem nad nazwą istniejącego produktu.
 

@@ -4,11 +4,11 @@ title: 'សកម្មភាព - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 ដំណើរការបន្ទាប់ពីវត្ថុមួយត្រូវបានរក្សាទុកទៅក្នុងមូលដ្ឋានទិន្នន័យ។
 
-## ប៉ារ៉ាម៉ែត្រ
+## ប៉ារ៉ាម៉ែត្រ {#parameters}
 
 | ឈ្មោះ | ប្រភេទ | ការពិពណ៌នា |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 | $this | `\Base_Model` | អង្គវត្ថុ។ |
 | $new | `bool` | ពិត ប្រសិនបើវត្ថុថ្មី។ |
 
-### ចាប់តាំងពី
+### ចាប់តាំងពី {#since}
 
 - 2.0.0
-### ប្រភព
+### ប្រភព {#source}
 
 - បានកំណត់នៅក្នុង [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) ត្រង់បន្ទាត់ 624
 - បានកំណត់នៅក្នុង [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) ត្រង់បន្ទាត់ 1754

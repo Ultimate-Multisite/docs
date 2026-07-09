@@ -3,13 +3,13 @@ title: Cael eich talu
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Cael eich Talu (v2)
+# Cael eich Talu (v2) {#getting-paid-v2}
 
 _**NODYN PWYSIG: Mae'r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 
 Mae gan Ultimate Multisite system aelodaeth a bilio fewnol. Er mwyn i'n system bilio weithredu, rydym wedi integreiddio'r pyrth talu mwyaf cyffredin a ddefnyddir mewn e-fasnach. Y pyrth talu diofyn yn Ultimate Multisite yw _Stripe_ , _PayPal_ , a Thaliad â Llaw. Gallwch hefyd ddefnyddio _WooCommerce_ , _GoCardless_ a _Payfast_ i dderbyn taliadau drwy osod eu hychwanegion priodol.
 
-## Gosodiadau Sylfaenol
+## Gosodiadau Sylfaenol {#basic-settings}
 
 Gallwch ffurfweddu unrhyw un o'r pyrth talu hyn o dan osodiadau talu Ultimate Multisite. Gallwch ddod o hyd iddo drwy fynd i **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Mae hyn yn atal aelodaeth rhag ymddangos fel petai'n adnewyddu'n awtomatig pan a
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Ble i ddod o hyd i'r pyrth:
+## Ble i ddod o hyd i'r pyrth: {#where-to-find-the-gateways}
 
 Gallwch sefydlu'r pyrth talu ar yr un dudalen ( **Ultimate Multisite > Settings > Payments**). Yn union o dan **pyrth talu gweithredol** , byddwch yn gallu gweld: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ a _Manual_.
 
@@ -67,7 +67,7 @@ Dyma hefyd olwg lawn ar osodiadau'r pyrth talu:
 
 Nawr, os ydych am ddefnyddio _WooCommerce_ , _GoCardless_ neu _Payfast_ fel eich porth talu, bydd angen i chi **osod a ffurfweddu eu hychwanegion**.
 
-### Sut i osod yr ychwanegyn WooCommerce:
+### Sut i osod yr ychwanegyn WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Rydym yn deall nad yw _Stripe_ a _PayPal_ ar gael mewn rhai gwledydd, sy'n cyfyngu neu'n rhwystro defnyddwyr Ultimate Multisite rhag defnyddio ein plugin yn effeithiol. Felly crëwyd ychwanegyn gennym i integreiddio _WooCommerce,_ sy'n plugin e-fasnach poblogaidd iawn. Creodd datblygwyr ledled y byd hychwanegion i integreiddio pyrth talu gwahanol iddo. Gwnaethom fanteisio ar hyn i ehangu'r pyrth talu y gallwch eu defnyddio gyda system bilio Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Ar ôl ei alluogi, os nad yw’r ategyn WooCommerce gennych wedi’i osod a’i 
 
 I ddarllen mwy am yr ychwanegyn WooCommerce Integration, **cliciwch yma**.
 
-### Sut i osod yr ychwanegyn GoCardless:
+### Sut i osod yr ychwanegyn GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Mae’r camau i osod yr ychwanegyn _GoCardless_ bron yr un fath â’r ychwanegyn _WooCommerce_. Ewch i dudalen yr ychwanegion a dewiswch yr ychwanegyn **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Ar ôl i’r gosodiad orffen, cewch eich ailgyfeirio i dudalen yr ategion. Yma, 
 
 I ddysgu sut i ddechrau gyda gateway _GoCardless_, **darllenwch yr erthygl hon**.
 
-### Sut i osod yr ychwanegyn Payfast:
+### Sut i osod yr ychwanegyn Payfast: {#how-to-install-the-payfast-add-on}
 
 Ewch i dudalen yr ychwanegion a dewiswch yr ychwanegyn **Ultimate Multisite: Payfast Gateway**.
 

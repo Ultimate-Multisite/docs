@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent mataimakin AI ne na WordPress mai cin gashin kansa wanda zai iya tsarawa, ginawa, da sarrafa cikakkun shafukan WordPress ta hanyar umarnin harshe na yau da kullum. Yana bayyana tsararren jerin **iyawa** — ayyuka daban-daban, masu iya gwaji da agent zai iya kira — da ke rufe komai daga sarrafa abun ciki zuwa keɓance tsarin zane. Sigar 1.9.0 tana ƙara iyawar ƙirƙirar abun ciki, bitar shafi ta gani ta hanyar hotunan allo na ɓangaren client, bayanan martabar agent guda biyar da aka gina a ciki, da tutocin fasali don sarrafa dama da branding.
 
-## Manyan Fasali
+## Manyan Fasali {#key-features}
 
 - **Tsarin iyawa** — kundin ayyuka na modular, mai faɗaɗawa wanda agent zai iya kira a kan shigarwar WordPress ɗinka
 - **Sarrafa Abun Ciki** — ƙirƙiri rubuce-rubuce da shafuka (ciki har da sanya samfuran shafi), ƙirƙiri rubuce-rubuce da yawa a lokaci guda cikin kira ɗaya, saita hotunan da aka fi nuna, kuma gina fom ɗin tuntuɓa
@@ -28,21 +28,21 @@ Gratis AI Agent mataimakin AI ne na WordPress mai cin gashin kansa wanda zai iya
 - **Tsarawar Site Builder v2** — tsare-tsaren gina shafi masu matakai da yawa tare da gano plugin, bin diddigin ci gaba, da dawo da kuskure
 - **Umarnin benchmark na WP-CLI** — gudanar da jerin benchmark na ƙarfin agent daga layin umarni don CI da kimanta model
 
-## Bukatu
+## Bukatu {#requirements}
 
 - WordPress 6.0 ko sama da haka
 - PHP 8.1 ko sama da haka
 - WordPress Multisite (an kunna a network) ko shigarwar single-site
 - Plugin na haɗin AI provider mai aiki (Anthropic, OpenAI, ko mai dacewa)
 
-## Shigarwa
+## Shigarwa {#installation}
 
 1. Loda fayilolin plugin zuwa `/wp-content/plugins/gratis-ai-agent`
 2. Kunna plugin ta allon **Plugins** a cikin WordPress
 3. Je zuwa **Gratis AI Agent → Settings** kuma haɗa AI provider ɗinka
 4. (Na zaɓi) Bincika **Rajistar Iyawa** don shigar da ƙarin fakitin iyawa
 
-## Fara Da Sauri
+## Fara Da Sauri {#quick-start}
 
 Da zarar an kunna kuma an haɗa da AI provider, buɗe panel ɗin **Gratis AI Agent** a gefen admin na WordPress. Rubuta umarni cikin harshe na yau da kullum kuma agent zai tsara tare da aiwatar da matakan da ake buƙata ta amfani da iyawarsa da ke akwai.
 
@@ -60,7 +60,7 @@ Saka palette na launin dark-mode cikin theme kuma saita babban launi zuwa #1a1a2
 Gina gidan yanar gizon gidan abinci tare da menu na kan layi, fom ɗin booking, da shafin tuntuɓa.
 ```
 
-## Bayanin Iyawa
+## Bayanin Iyawa {#abilities-overview}
 
 Iyawa su ne ƙananan ayyuka na asali da agent zai iya yi. Kowace iyawa class ce ta PHP da aka yi rajista wadda ke bayyana schema (parameters da nau'ikan dawowa) da agent ke karantawa a lokacin aiki. Ana rarraba iyawa zuwa fannoni masu aiki:
 
@@ -79,7 +79,7 @@ Iyawa su ne ƙananan ayyuka na asali da agent zai iya yi. Kowace iyawa class ce 
 
 Duba [Nuni na Iyawa](./abilities) don cikakkun takardun parameters da misalan amfani.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent yana zuwa da dangin umarnin `wp gratis-ai-agent` don gudanar da benchmarks da sarrafa iyawa daga layin umarni. Duba [Nuni na WP-CLI](./wp-cli) don cikakken jerin umarni.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Daidaitawa
+## Daidaitawa {#configuration}
 
 Dukkan saituna suna ƙarƙashin **Gratis AI Agent → Settings** a cikin admin na WordPress:
 
@@ -106,7 +106,7 @@ Dukkan saituna suna ƙarƙashin **Gratis AI Agent → Settings** a cikin admin n
 | **Lokacin Ƙarewar Iyawa** | Matsakaicin sakanni da iyawa ɗaya za ta iya gudana (tsoho 30) |
 | **Debug Logging** | Yi log na kiran iyawa da tunanin agent zuwa WordPress debug log |
 
-## Blocklist na Tsaro don Sarrafa Options
+## Blocklist na Tsaro don Sarrafa Options {#options-management-safety-blocklist}
 
 Ikon Sarrafa Options yana da ginannen blocklist da ke hana agent karanta ko rubuta muhimman options na WordPress. Tsohon blocklist yana rufe:
 
@@ -118,26 +118,26 @@ Ikon Sarrafa Options yana da ginannen blocklist da ke hana agent karanta ko rubu
 
 Za a iya ƙara ƙarin shigarwa ta hanyar filter na `gratis_ai_agent_options_blocklist`.
 
-## Hooks da Filters
+## Hooks da Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — ana kunna shi bayan an yi rajistar wani iko, yana karɓar sunan class na ikon
 - `gratis_ai_agent_plan_started` — ana kunna shi lokacin da shirin gina site ya fara aiwatarwa
 - `gratis_ai_agent_plan_completed` — ana kunna shi lokacin da shiri ya kammala cikin nasara
 - `gratis_ai_agent_plan_failed` — ana kunna shi lokacin da shiri ya gamu da kuskuren da ba za a iya farfaɗowa daga gare shi ba
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — gyara jerin ikon da aka yi rajista kafin agent ya loda shi
 - `gratis_ai_agent_options_blocklist` — faɗaɗa ko rage blocklist na tsaron options
 - `gratis_ai_agent_benchmark_questions` — ƙara tambayoyin benchmark na musamman zuwa rukunin kimantawa
 - `gratis_ai_agent_plan_plugins` — gyara jerin gano plugins yayin samar da shirin site
 
-## Tallafi
+## Tallafi {#support}
 
 Don tallafi, ziyarci [ultimatemultisite.com](https://ultimatemultisite.com) ko buɗe issue a ma’ajiyar plugin.
 
-## Changelog
+## Changelog {#changelog}
 
 Duba [Changelog](./changelog) don cikakken tarihin sigar.

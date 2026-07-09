@@ -3,7 +3,7 @@ title: Trang web của khách hàng
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Các trang web của khách hàng của bạn (v2)
+# Các trang web của khách hàng của bạn (v2) {#your-clients-websites-v2}
 
 Sau khi đăng ký trên mạng của bạn, khách hàng của bạn có thể truy cập Dashboard của họ.
 

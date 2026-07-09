@@ -3,11 +3,11 @@ title: Panoramika Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Panoramika tal-Dashboard
+# Panoramika tal-Dashboard {#dashboard-overview}
 
 Ultimate Multisite għandu **Dashboard** dedikata taħt il-menu Ultimate Multisite, u jiddeq widget biex jiddeq fil-Network Dashboard. Dan l-artikolu jikkawża x'la tista' tqasimu fless.
 
-## Il-Network Dashboard
+## Il-Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite jiddeq widget li għandhom f'dashboard ta livello network li tikkund fil-**My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Hawn huwa x'la qed jgħandu wkoll kull widget:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Il-Ultimate Multisite Dashboard
+## Il-Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Meta l-network dashboard tqed informazzjoni komprewda dwar il-network, il-Ultimate Multisite dashboard (f'top-level tal-menu Ultimate Multisite) tqed informazzjoni dwar is-servizz.
 

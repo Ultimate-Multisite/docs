@@ -3,13 +3,13 @@ title: Trimiterea e-mailurilor și a difuzărilor
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Trimiterea de emailuri și Broadcasts (v2)
+# Trimiterea de emailuri și Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
 Ultimate Multisite vine cu o funcționalitate care îți va permite să comunici cu clienții tăi trimițând un email către un utilizator țintit sau un grup de utilizatori, precum și trimițând notificări pe Dashboard-ul lor de administrare pentru a difuza anunțuri
 
-## Adaugă notificări de administrare în dashboard-ul clienților tăi cu Broadcasts
+## Adaugă notificări de administrare în dashboard-ul clienților tăi cu Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Folosind funcționalitatea de broadcast Ultimate Multisite, poți adăuga **notificări de administrare** în dashboard-ul de administrare al subsite-ului utilizatorului tău.
 
@@ -51,7 +51,7 @@ După ce ai creat mesajul, poți apăsa butonul **Trimite**.
 
 Și asta este tot. Notificarea de administrare ar trebui să apară imediat pe dashboard-ul utilizatorului tău.
 
-## Trimite emailuri clienților tăi
+## Trimite emailuri clienților tăi {#send-emails-to-your-customers}
 
 Folosind funcționalitatea de broadcast Ultimate Multisite, poți trimite un email utilizatorilor tăi. Ai opțiunea de a trimite emailul doar anumitor utilizatori sau de a ținti un anumit grup de utilizatori pe baza produsului sau planului la care sunt abonați.
 
@@ -81,11 +81,11 @@ După ce ai creat mesajul, poți apăsa butonul **Trimite**.
 
 Și așa de ușor este să trimiți un email utilizatorilor tăi finali folosind funcționalitatea de broadcast.
 
-## Emailuri de sistem
+## Emailuri de sistem {#system-emails}
 
 Emailurile de sistem din Ultimate Multisite sunt acele **notificări automate** trimise de sistem după anumite acțiuni, precum înregistrarea, plata, maparea domeniului etc. Aceste emailuri pot fi editate sau modificate din setările Ultimate Multisite. De asemenea, vine cu o funcționalitate care îți va permite să resetezi și să imporți setările existente dintr-o altă instalare Ultimate Multisite.
 
-### Resetare și importare
+### Resetare și importare {#resetting--importing}
 
 Noile versiuni Ultimate Multisite, precum și add-on-urile, pot și vor înregistra emailuri noi din când în când.
 
@@ -93,7 +93,7 @@ Pentru a preveni conflictele și alte probleme, **nu vom adăuga automat noile �
 
 Totuși, super administratorii și agenții pot importa aceste emailuri nou înregistrate prin instrumentul de import. Acest proces va crea un nou email de sistem cu conținutul și configurația noului șablon de email, permițând super administratorului să facă orice modificări dorește sau să le păstreze așa cum sunt.
 
-#### Cum să imporți emailuri de sistem
+#### Cum să imporți emailuri de sistem {#how-to-import-system-emails}
 
 Mergi la pagina Setări Ultimate Multisite și accesează fila **Emailuri**.
 
@@ -111,7 +111,7 @@ Apoi, poți comuta opțiunile Import Emails pentru a vedea ce emailuri de sistem
 
 <!-- Captură de ecran indisponibilă: fereastra modală Resetare și importare cu opțiunile de importare a emailurilor extinse -->
 
-#### Resetarea emailurilor de sistem
+#### Resetarea emailurilor de sistem {#reseting-system-emails}
 
 Alteori, îți vei da seama că modificările pe care le-ai făcut unui anumit șablon de email nu mai funcționează pentru tine și ai dori să îl resetezi la **starea implicită**.
 

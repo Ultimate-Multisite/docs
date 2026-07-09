@@ -3,7 +3,7 @@ title: GoCardless 更新日誌
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless 更新日誌
+# GoCardless 更新日誌 {#gocardless-changelog}
 
 Version: 1.0.3 - 發布日期 2026-05-05
 * 修復：當 GoCardless 會籍在待處理或暫停狀態下被取消時，系統會自動清理那些孤立的待處理網站。

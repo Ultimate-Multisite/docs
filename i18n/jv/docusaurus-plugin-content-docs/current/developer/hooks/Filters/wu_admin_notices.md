@@ -4,11 +4,11 @@ title: Saringan - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Saringan: wu_admin_notices
+# Saringan: wu_admin_notices {#filter-wuadminnotices}
 
 Ngidini pangembang nyaring wara-wara admin sing ditambahake dening Ultimate Multisite.
 
-## Parameter
+## Parameter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Ngidini pangembang nyaring wara-wara admin sing ditambahake dening Ultimate Mult
 | $filter | `string` | Yen wara-wara sing bisa diilangi wis disaring metu. |
 | $dismissed_messages | `array` | Dhaptar kunci wara-wara sing wis diilangi. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) ing baris 121
 
 
-## Ngasilake
+## Ngasilake {#returns}

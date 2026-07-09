@@ -3,15 +3,15 @@ title: '14 pamoka: Kas toliau'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# 14 pamoka: Kas toliau
+# 14 pamoka: Kas toliau {#lesson-14-what-comes-next}
 
 Jūs nuo nulio sukūrėte nišinę svetainių platformą. FitSite veikia, aptarnauja fitneso studijas ir generuoja pasikartojančias pajamas. Šioje paskutinėje pamokoje aptariama, kur judėti toliau.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite yra veikiantis verslas su klientais, operacijomis ir augimo trajektorija. Dabar galvojame apie tai, kas laukia toliau.
 
-## Visas FitSite tinklas
+## Visas FitSite tinklas {#the-complete-fitsite-network}
 
 Štai viskas, ką sukūrėme per 14 pamokų:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## 1 variantas: gilinkitės į savo nišą
+## 1 variantas: gilinkitės į savo nišą {#option-1-go-deeper-in-your-niche}
 
 Prieš plėsdamiesi į naujas nišas, apsvarstykite galimybę gilintis į fitneso sritį:
 
-### Subnišos
+### Subnišos {#sub-niches}
 
 - **Jogos studijos** -- specializuoti šablonai su meditacijos, retreatų ir dirbtuvių funkcijomis
 - **CrossFit salės** -- WOD sekimas, varžybų rezultatai, bendruomenės funkcijos
@@ -59,7 +59,7 @@ Prieš plėsdamiesi į naujas nišas, apsvarstykite galimybę gilintis į fitnes
 
 Kiekviena subniša gali turėti savo šablonus ir potencialiai savo prekės ženklą, o visa tai veiktų tame pačiame Ultimate Multisite tinkle.
 
-### Premium funkcijos
+### Premium funkcijos {#premium-features}
 
 Kurkite funkcijas, už kurias fitneso studijos norės mokėti papildomai:
 
@@ -68,14 +68,14 @@ Kurkite funkcijas, už kurias fitneso studijos norės mokėti papildomai:
 - **Fitneso tinklaraščio šablonai** -- iš anksto sukurtos turinio struktūros fitneso turinio rinkodarai
 - **Socialinių tinklų integracija** -- automatinis užsiėmimų tvarkaraščių ir naujienų skelbimas
 
-### Geografinė plėtra
+### Geografinė plėtra {#geographic-expansion}
 
 Jei pradėjote vietoje, plėskitės į:
 
 - Kitus savo šalies miestus
 - Kitas šalis (naudokite Ultimate Multisite [lokalizavimo funkcijas](/user-guide/localization/translating), kad palaikytumėte kelias kalbas)
 
-## 2 variantas: plėskitės į gretimas nišas
+## 2 variantas: plėskitės į gretimas nišas {#option-2-expand-to-adjacent-niches}
 
 Procesas, kurį taikėte fitneso studijoms, tinka bet kuriai nišai. Antroji niša yra lengvesnė, nes jau turite:
 
@@ -83,7 +83,7 @@ Procesas, kurį taikėte fitneso studijoms, tinka bet kuriai nišai. Antroji ni�
 - Operacinę patirtį
 - Patikrintą veiksmų planą
 
-### Gretimos fitnesui nišos
+### Gretimos fitnesui nišos {#adjacent-niches-to-fitness}
 
 - **Sveikatingumas ir spa** -- masažo terapeutai, dienos spa, sveikatingumo centrai
 - **Sporto klubai** -- mėgėjų sporto komandos, lygos, laisvalaikio klubai
@@ -91,7 +91,7 @@ Procesas, kurį taikėte fitneso studijoms, tinka bet kuriai nišai. Antroji ni�
 
 Šios nišos turi auditorijos persidengimą su fitnesu, todėl jūsų rinkodara ir partnerystės gali persikelti kartu.
 
-### Visiškai naujos nišos
+### Visiškai naujos nišos {#completely-new-niches}
 
 Taikykite 2 pamokos sistemą bet kuriai nišai įvertinti:
 
@@ -108,7 +108,7 @@ Kiekvienai naujai nišai reikia:
 
 Platformos infrastruktūra, atsiskaitymas ir operaciniai procesai lieka tokie patys.
 
-## 3 variantas: kurkite platformų platformą
+## 3 variantas: kurkite platformų platformą {#option-3-build-a-platform-of-platforms}
 
 Pasiekę mastą, galite valdyti kelis nišinius prekės ženklus viename Ultimate Multisite tinkle:
 
@@ -118,11 +118,11 @@ Pasiekę mastą, galite valdyti kelis nišinius prekės ženklus viename Ultimat
 
 Kiekvienas prekės ženklas turi savo šablonus, planus ir rinkodarą, tačiau jie dalijasi infrastruktūra, atsiskaitymu ir operaciniais procesais. Čia Ultimate Multisite ekonomika tampa galinga -- viena platforma, daug vertikalių.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Norėdami visiškai atskirti nišas, apsvarstykite [Multi-Network priedą](/addons/multinetwork), kuris leidžia valdyti kelis WordPress tinklus iš vienos instaliacijos.
 
-## 4 variantas: parduokite verslą
+## 4 variantas: parduokite verslą {#option-4-sell-the-business}
 
 Nišinė svetainių platforma su pasikartojančiomis pajamomis, mažu klientų nubyrėjimu ir aiškia rinkos pozicija yra vertingas turtas. SaaS verslai paprastai parduodami už 3–5 kartus didesnes metines pajamas.
 
@@ -134,7 +134,7 @@ FitSite su 200 klientų ir $89 ARPU:
 
 Tai nėra garantuotas rezultatas, bet tai realistiškas rezultatas gerai valdomai nišinei platformai.
 
-## Ko išmokote
+## Ko išmokote {#what-you-have-learned}
 
 Šis kursas išmokė jus kartojamo proceso:
 
@@ -150,7 +150,7 @@ Tai nėra garantuotas rezultatas, bet tai realistiškas rezultatas gerai valdoma
 
 Niša yra strategija. Platforma yra įrankis. Ultimate Multisite padaro įrankį įmanomą. Jūsų nišos supratimas padaro jį vertingą.
 
-## Pradėkite kurti
+## Pradėkite kurti {#start-building}
 
 Jei sekėte kartu su FitSite, turite veikiančią platformą. Jei skaitėte ieškodami savo nišos, grįžkite į [2 pamoką: nišos pasirinkimas](lesson-2-picking-your-niche) ir pradėkite procesą savo pasirinktai vertikalei.
 

@@ -3,13 +3,13 @@ title: Ավարտման դաշտ և հաճախորդի DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field և Հաճախորդի DNS-ի կառավարում
+# Checkout Field և Հաճախորդի DNS-ի կառավարում {#checkout-field-and-customer-dns-management}
 
-## Դոմենի ընտրության checkout դաշտը
+## Դոմենի ընտրության checkout դաշտը {#the-domain-selection-checkout-field}
 
 **Domain Selection** (Դոմենի ընտրություն) դաշտն է, որը checkout-ի տարրն է՝ հաճախորդներին տալու իրենց կայքի դոմենի ստացման վերաբերյալ ընտրություն։ Ավելացրեք այն ցանկացած checkout form-ի մեջ՝ դոմենի վաճառքը թույլ տալու համար։
 
-### Դաշտը checkout form-ում ավելացնելը
+### Դաշտը checkout form-ում ավելացնելը {#adding-the-field-to-a-checkout-form}
 
 1. Գնացեք **Network Admin › Ultimate Multisite › Checkout Forms** (Ցանցային ադմինիստրատոր › Ultimate Multisite › Checkout Forms)
 2. Բացեք կամ ստեղծեք checkout form։
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Կազմաձևեք դաշտի տարբերակները (տես ներքևում)։
 6. Պահպանեք form-ը։
 
-### Դաշտերի տարբերակներ
+### Դաշտերի տարբերակներ {#field-options}
 
 **Domain modes** (Դոմենի ռեժիմներ) — Ընտրեք, թե որแท็บերը կտեսնի հաճախորդը։ Յուրաքանչյուր ռեժիմ կարելի է միացնել կամ անջատել անկախ իրարից.
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domain product** (Դոմենային ապրանք) — Ընտրով կարող եք այս դաշտը կապել հատուկ դոմենային ապրանքի հետ։ Եթե չեք սահմանել, ավելացումը ավտոմատ կերպով կընտրի համապատասխան ապրանքը՝ հիմնվելով հաճախորդի փնտրած TLD-ի վրա։
 
-### Գրանցվողի կոնտակտային դաշտեր
+### Գրանցվողի կոնտակտային դաշտեր {#registrant-contact-fields}
 
 Երբ հաճախորդը ընտրում է **Register New Domain** (Գրանցել նոր դոմեն)แท็บը, checkout form-ը ներառում է գրանցվողի կոնտակտային դաշտերը inline.
 
@@ -43,11 +43,11 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 Բոլոր գրանցողների կողմից պահանջվում է այս տվյալները և դրանք ստուգվում են գրանցման API կանչի առաջ։ Հեռախոսահամարները ավտոմատ ձևաչափվում են `+CC.NNN` միջազգային ձևաչափով, որը սպասվում է գրանցողների կողմից։
 
-### Ավտոմատ ստեղծված կայքի URL-ը (Auto-generated site URL)
+### Ավտոմատ ստեղծված կայքի URL-ը (Auto-generated site URL) {#auto-generated-site-url}
 
 Երբ հաճախորհուրդը գրանցվում է կամ տիրապետում է Դոմենին, կայքի URL-ի դաշտը ավտոմատ լրացվում է ընտրված Դոմենից։ Հաճախորհուրդներին անհրաժեշտ չէ առանձին URL դաշտ լրացնել։
 
-### Որոնման վարքագիծ (Search behaviour)
+### Որոնման վարքագիծ (Search behaviour) {#search-behaviour}
 
 - Դոմենի հասանելիությունը ստուգվում է իրական ժամանակում AJAX-ով, երբ հաճախորհուրդը տառեր է մուտքագրում։
 - Երբ նախընտրելի դոմենը հասանելի չէ, ցուցադրվում են այլ TLD առաջարկներ։
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Հաճախորդի DNS-ի կառավարում (Customer DNS management)
+## Հաճախորդի DNS-ի կառավարում (Customer DNS management) {#customer-dns-management}
 
 Հաճախորհուրդները կարող են իրենց գրանցված Դոմենների համար DNS գրանցումներ կառավարել **Իմ հաշվից** էջից՝ իր դոմենի մուտքագրման ներքո։
 
-### Աջակցվող գրանցման տեսակներ (Supported record types)
+### Աջակցվող գրանցման տեսակներ (Supported record types) {#supported-record-types}
 
 | Տեսակ | Օգտագործումը |
 |---|---|
@@ -91,11 +91,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 | **MX** | Փոստային փոխանակման սերվերը սահմանել |
 | **TXT** | Ավելացնել SPF, DMARC, հաստատման կամ այլ տեքստային գրանցումներ |
 
-### Ո՞ր պրովայդերներն են աջակցում DNS-ի կառավարմանը (Which providers support DNS management?)
+### Ո՞ր պրովայդերներն են աջակցում DNS-ի կառավարմանը (Which providers support DNS management?) {#which-providers-support-dns-management}
 
 DNS-ի կառավարումը (գրանցում, խմբագրում, ջնջում) հնարավոր է **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** և **Openprovider**-ի միջոցով։ **Hostinger** ադոմեիները կարելի է թարմացնել nameservers՝ Domain Seller-ի միջոցով։ Հոստինգված ադոմեիների DNS գրանցումները կառավարվում են Hostinger-ի հիմնական ադոմեինային քարտեզագրման (domain-mapping) ինտեգրացիայով։ Namecheap, GoDaddy և NameSilo ադոմեիները ցուցադրում են կարգավիճակը և ժամկետի տեղեկությունները, բայց DNS-ը պետք է կառավարվի ուղղակի գրանցողի (registrar) վերահսկողական պանելով։
 
-### Տեղական (Default) DNS գրանցումներ
+### Տեղական (Default) DNS գրանցումներ {#default-dns-records}
 
 Դուք կարող եք սահմանել տեղական DNS գրանցումներ, որոնք ավտոմատ կերպով կկիրառվեն՝ ադոմեինը գրանցվելիս։ Գնացեք **Settings › Domain Seller › Default DNS Records**-ի։
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Տնօրեն (Admin). DNS-ի դիտում և խմբագրում
+### Տնօրեն (Admin). DNS-ի դիտում և խմբագրում {#admin-viewing-and-editing-dns}
 
 Ցանցային ադմինները կարող են տեսնել և խմբագրել ցանկացած հաճախորդի ադոմեինի DNS գրանցումները՝ ադոմեինի խմբագրման էջից **Network Admin › Ultimate Multisite › Domains**-ում։

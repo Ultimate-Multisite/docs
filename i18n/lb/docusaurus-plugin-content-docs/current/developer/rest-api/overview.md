@@ -3,28 +3,28 @@ title: REST API Iwwerbléck
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Referenz
+# REST API Referenz {#rest-api-reference}
 
-## Basis-Konfiguratioun
+## Basis-Konfiguratioun {#base-configuration}
 
 **Basis-URL:** `{site_url}/wp-json/wu/v2/`
 **Authentifikatioun:** API-Schlëssel & Secret (HTTP Basic Auth oder URL-Parameteren)
 
-## Authentifikatioun
+## Authentifikatioun {#authentication}
 
-### API aktivéieren
+### API aktivéieren {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API-Zougangsdaten kréien
+### API-Zougangsdaten kréien {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentifikatiounsmethoden
+### Authentifikatiounsmethoden {#authentication-methods}
 
 **HTTP Basic Auth (recommandéiert):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kär-Endpunkten
+## Kär-Endpunkten {#core-endpoints}
 
-### 1. Clienten API
+### 1. Clienten API {#1-customers-api}
 
 **Basis-Route:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Säiten API
+### 2. Säiten API {#2-sites-api}
 
 **Basis-Route:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberschaften API
+### 3. Memberschaften API {#3-memberships-api}
 
 **Basis-Route:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produkter API
+### 4. Produkter API {#4-products-api}
 
 **Basis-Route:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Bezuelungen API
+### 5. Bezuelungen API {#5-payments-api}
 
 **Basis-Route:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domainen API
+### 6. Domainen API {#6-domains-api}
 
 **Basis-Route:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registréierungsendpunkt
+## Registréierungsendpunkt {#registration-endpoint}
 
 Den `/register` Endpunkt bitt e komplette Kees-/Registréierungsfloss:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Souverän Tenant-Endpunkten
+## Souverän Tenant-Endpunkten {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 füügt souverän Tenant-REST-Ofdeckung fir Integratiounen derbäi, déi isoléiert Tenants bereetstellen, iwwerpréiwen oder verifizéieren.
 
@@ -242,7 +242,7 @@ Typesch Migratiounsstatus-Äntwerten enthalen:
 
 Behandelt `ready: false` als Pre-Launch-Blocker. Kontrolléiert d'Verifizéierungsdetailer, fixéiert d'Datebank-Host-Bindung, d'Schlaang, d'Benotzer-Bereetstellung oder de Routing-Problem, a probéiert d'Verifizéierung duerno nach eng Kéier.
 
-## Feeleräntwerten
+## Feeleräntwerten {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Behandelt `ready: false` als Pre-Launch-Blocker. Kontrolléiert d'Verifizéierun
 }
 ```
 
-## Säiteweis Opdeelung a Filteren
+## Säiteweis Opdeelung a Filteren {#pagination-and-filtering}
 
 **Ufroparameteren:**
 ```http

@@ -3,19 +3,19 @@ title: 'Ceacht 13: Ag Méadú ar Scála'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ceacht 13: Ag Méadú ar Scála
+# Ceacht 13: Ag Méadú ar Scála {#lesson-13-scaling-up}
 
 Tá ardán oibre agat le custaiméirí atá ag íoc. Clúdaíonn an ceacht seo conas fás ó oibríocht bheag go gnó inbhuanaithe -- bonneagar a mhéadú ar scála, oibríochtaí a uathoibriú, agus ioncam in aghaidh an chustaiméara a mhéadú.
 
-## An Áit ar Stopamar
+## An Áit ar Stopamar {#where-we-left-off}
 
 Tá FitSite beo, tá custaiméirí ag clárú, agus tá tú ag rith oibríochtaí laethúla. Anois dírímid ar fhás.
 
-## Bíodh Do Chuid Uimhreacha ar Eolas Agat
+## Bíodh Do Chuid Uimhreacha ar Eolas Agat {#know-your-numbers}
 
 Sula méadaíonn tú ar scála, tuig cá bhfuil tú:
 
-### Príomhmhéadrachtaí
+### Príomhmhéadrachtaí {#key-metrics}
 
 - **MRR (Ioncam Míosúil Athfhillteach)**: Ioncam iomlán míosúil ó shíntiúis
 - **Líon custaiméirí**: Líon iomlán síntiúsóirí gníomhacha
@@ -24,7 +24,7 @@ Sula méadaíonn tú ar scála, tuig cá bhfuil tú:
 - **LTV (Luach Saoil)**: Meánioncam in aghaidh an chustaiméara thar a síntiús iomlán
 - **CAC (Costas Fála Custaiméara)**: Meánchostas chun custaiméir amháin a fháil
 
-### Sampla: FitSite ag 50 Custaiméir
+### Sampla: FitSite ag 50 Custaiméir {#example-fitsite-at-50-customers}
 
 | Méadracht | Luach |
 |--------|-------|
@@ -36,9 +36,9 @@ Sula méadaíonn tú ar scála, tuig cá bhfuil tú:
 
 Insíonn na huimhreacha seo duit cad ar cheart díriú air. Tréigean ard? Deisigh coinneáil. ARPU íseal? Brúigh uasghráduithe. CAC ard? Optamaigh cainéil fála.
 
-## Bonneagar a Mhéadú ar Scála
+## Bonneagar a Mhéadú ar Scála {#scaling-infrastructure}
 
-### Cathain is Ceart Scálú
+### Cathain is Ceart Scálú {#when-to-scale}
 
 Méadaigh óstáil ar scála nuair:
 
@@ -47,7 +47,7 @@ Méadaigh óstáil ar scála nuair:
 - Tá tú ag druidim le 100+ suíomh gníomhach
 - Méadaíonn gearáin custaiméirí faoi luas
 
-### Conas Scálú
+### Conas Scálú {#how-to-scale}
 
 - **Scálú ingearach**: Uasghrádaigh go freastalaí níos mó (níos mó CPU, RAM)
 - **Sraitheanna taisce**: Cuir Redis/Memcached leis le haghaidh taisceadh oibiachtaí, taisceadh leathanaigh le haghaidh ábhair stataigh
@@ -55,7 +55,7 @@ Méadaigh óstáil ar scála nuair:
 - **Optamú bunachair sonraí**: De réir mar a fhásann an líonra, moillíonn fiosruithe bunachair sonraí. Optamaigh táblaí, cuir innéacsanna leis, smaoinigh ar fhreastalaí tiomnaithe bunachair sonraí.
 - **Scaradh cúraimí**: Bog stóráil meán chuig stóráil oibiachtaí (comhoiriúnach le S3), seachfhoinsigh ríomhphost chuig seirbhís ríomhphoist idirbheartaíochta
 
-### Imirce Óstála
+### Imirce Óstála {#hosting-migration}
 
 Mura féidir le d’óstach reatha scálú tuilleadh, pleanáil imirce:
 
@@ -65,11 +65,11 @@ Mura féidir le d’óstach reatha scálú tuilleadh, pleanáil imirce:
 4. Nuashonraigh DNS le TTL íosta roimh ré
 5. Fíoraigh go n-oibríonn gach rud i ndiaidh na himirce
 
-## Oibríochtaí a Uathoibriú
+## Oibríochtaí a Uathoibriú {#automating-operations}
 
 De réir mar a fhásann tú, éiríonn próisis láimhe ina scrogaill. Uathoibrigh an méid is féidir leat:
 
-### Webhooks agus Zapier
+### Webhooks agus Zapier {#webhooks-and-zapier}
 
 Úsáid [Webhooks](/user-guide/integrations/webhooks) nó [Zapier](/user-guide/integrations/zapier) chun uathoibriú:
 
@@ -78,7 +78,7 @@ De réir mar a fhásann tú, éiríonn próisis láimhe ina scrogaill. Uathoibri
 - **Teipeanna íocaíochta** → foláireamh i d’uirlis mhonatóireachta
 - **Uasghráduithe plean** → ríomhphost comhghairdis le treoir do ghnéithe nua
 
-### Uathoibriú Ríomhphoist
+### Uathoibriú Ríomhphoist {#email-automation}
 
 Bog ó ríomhphoist láimhe go seichimh uathoibrithe:
 
@@ -87,30 +87,30 @@ Bog ó ríomhphoist láimhe go seichimh uathoibrithe:
 - Spreagthaí uasghrádaithe nuair a bhíonn custaiméirí ag druidim le teorainneacha plean
 - Meabhrúcháin athnuachana do shíntiúsóirí bliantúla
 
-### Uathoibriú Tacaíochta
+### Uathoibriú Tacaíochta {#support-automation}
 
 - **Freagraí réamhullmhaithe** do cheisteanna coitianta
 - **Uathfhreagraí** a admhaíonn go bhfuarthas ticéid tacaíochta
 - **Moltaí bonn eolais** nuair a chuireann custaiméirí ticéid isteach a mheaitseálann ailt atá ann cheana
 
-## Ioncam a Mhéadú
+## Ioncam a Mhéadú {#increasing-revenue}
 
 Ní bhaineann fás le níos mó custaiméirí amháin. Baineann sé freisin le níos mó ioncaim in aghaidh an chustaiméara.
 
-### Uasdhíol le Custaiméirí Reatha
+### Uasdhíol le Custaiméirí Reatha {#upselling-existing-customers}
 
 - **Uasghráduithe plean**: Feachtais spriocdhírithe a thaispeánann gnéithe Growth/Pro do chustaiméirí Starter
 - **Breis-díolacháin ordaithe**: Cuir táirgí breise chun cinn do chustaiméirí reatha trí ríomhphost
 - **Tiontú bliantúil**: Tairg lascaine do chustaiméirí míosúla chun aistriú go billeáil bhliantúil
 
-### Sruthanna Nua Ioncaim
+### Sruthanna Nua Ioncaim {#new-revenue-streams}
 
 - **Socrú déanta duit**: Gearr táille phréimhe chun suíomh custaiméara a shocrú agus a shaincheapadh dóibh
 - **Seirbhísí dearaidh saincheaptha**: Tairg obair dhearaidh shaincheaptha anuas ar an teimpléad
 - **Seisiúin oiliúna**: Siúlóidí íoctha duine le duine do chustaiméirí atá ag iarraidh cabhair phraiticiúil
 - **Breiseáin phréimhe**: Tairg breiseáin phréimhe atá sainiúil don nideoige mar bhreiseáin íoctha (m.sh., giuirléid áirithinte ranganna aclaíochta)
 
-### Praghsanna a Ardú
+### Praghsanna a Ardú {#raising-prices}
 
 De réir mar a aibíonn d’ardán agus a chuireann sé luach leis:
 
@@ -118,7 +118,7 @@ De réir mar a aibíonn d’ardán agus a chuireann sé luach leis:
 - Ardaigh praghsanna do chlárúcháin nua
 - Tabhair údar le harduithe trí ghnéithe agus feabhsuithe nua
 
-## Foireann a Thógáil
+## Foireann a Thógáil {#building-a-team}
 
 Ag pointe éigin, ní féidir leat gach rud a dhéanamh leat féin. Na chéad fhostuithe coitianta:
 
@@ -128,7 +128,7 @@ Ag pointe éigin, ní féidir leat gach rud a dhéanamh leat féin. Na chéad fh
 
 Ní gá fostaithe a bheith agat. Oibríonn conraitheoirí agus saorálaithe go maith do ghnó ardáin.
 
-## Clocha Míle Fáis
+## Clocha Míle Fáis {#growth-milestones}
 
 | Cloch mhíle | MRR thart ar | Fócas |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Ní gá fostaithe a bheith agat. Oibríonn conraitheoirí agus saorálaithe go m
 | 250-500 custaiméir | $25,000-$50,000 | Tógáil foirne, sruthanna nua ioncaim, gnéithe préimhe |
 | 500+ custaiméir | $50,000+ | Aibíocht ardáin, nideoga cóngaracha, imeacht féideartha |
 
-## An Méid a Thógamar sa Cheacht Seo
+## An Méid a Thógamar sa Cheacht Seo {#what-we-built-this-lesson}
 
 - **Creat méadrachtaí** chun sláinte an ghnó a thuiscint
 - **Plean scálaithe bonneagair** chun fás ó dhosaenacha go céadta suíomh

@@ -4,11 +4,11 @@ title: Saringan - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Saringan: wu_setup_wizard
+# Saringan: wu_setup_wizard {#filter-wusetupwizard}
 
 Ngidinan pamekar pikeun nambahkeun léngkah setup wizard tambahan.
 
-## Paraméter
+## Paraméter {#parameters}
 
 | Ngaran | Tipe | Pedaran |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Ngidinan pamekar pikeun nambahkeun léngkah setup wizard tambahan.
 | $is_migration | `bool` | Naha ieu migrasi atawa henteu. |
 | $wizard | `object` | Instance ayeuna. |
 
-### Ti saprak
+### Ti saprak {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepkeun dina [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) dina garis 525
 
 
-## Mulangkeun
+## Mulangkeun {#returns}

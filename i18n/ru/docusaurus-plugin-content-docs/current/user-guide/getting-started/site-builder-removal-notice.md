@@ -3,13 +3,13 @@ title: Уведомление об удалении режима Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Уведомление об удалении режима Site Builder
+# Уведомление об удалении режима Site Builder {#site-builder-mode-removal-notice}
 
 **Режим Site Builder удален в Superdav AI Agent v1.12.0.** Если вы использовали Site Builder mode, вам следует перейти на использование агента **Setup Assistant** для создания тем и настройки сайта.
 
-## Что произошло?
+## Что произошло? {#what-happened}
 
-### Site Builder Mode (Устаревший)
+### Site Builder Mode (Устаревший) {#site-builder-mode-legacy}
 
 Site Builder mode был интерфейсом в формате мастера (wizard), предназначенным для:
 
@@ -18,7 +18,7 @@ Site Builder mode был интерфейсом в формате мастера
 - Выбора темы
 - Настройки начального контента
 
-### Что его заменило?
+### Что его заменило? {#what-replaced-it}
 
 Теперь все функции Site Builder обрабатывает агент **Setup Assistant**, который предлагает:
 
@@ -27,15 +27,15 @@ Site Builder mode был интерфейсом в формате мастера
 - Интеграцию с процессом адаптации Theme Builder
 - Постоянное хранение памяти `site_brief` для будущих сессий
 
-## Если вы использовали Site Builder Mode
+## Если вы использовали Site Builder Mode {#if-you-were-using-site-builder-mode}
 
-### Ваши сайты в безопасности
+### Ваши сайты в безопасности {#your-sites-are-safe}
 
 - Существующие сайты, созданные в режиме Site Builder, продолжают работать
 - Потеря данных или сбоев сайта не будет
 - Вы можете продолжать управлять своими сайтами в обычном режиме
 
-### Переход на Setup Assistant Agent
+### Переход на Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Для настройки нового сайта или изменения темы используйте Setup Assistant agent:
 
@@ -51,7 +51,7 @@ Site Builder mode был интерфейсом в формате мастера
 
 Агент Setup Assistant обеспечивает ту же функциональность, но с большей гибкостью.
 
-## Сравнение: Site Builder vs. Setup Assistant
+## Сравнение: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Функция | Site Builder (Удален) | Setup Assistant (Новый) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Site Builder mode был интерфейсом в формате мастера
 | Будущие сессии | Повторная настройка | Использование сохраненного site_brief |
 | Гибкость | Фиксированный рабочий процесс | Адаптивный диалог |
 
-## Переход на Setup Assistant Agent
+## Переход на Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Для новых сайтов
+### Для новых сайтов {#for-new-sites}
 
 Вместо использования Site Builder mode:
 
@@ -76,7 +76,7 @@ Site Builder mode был интерфейсом в формате мастера
    - Генерацию темы
    - Начальную конфигурацию
 
-### Для существующих сайтов
+### Для существующих сайтов {#for-existing-sites}
 
 Если у вас есть существующий сайт, созданный в режиме Site Builder:
 
@@ -85,7 +85,7 @@ Site Builder mode был интерфейсом в формате мастера
 3. Агент Setup Assistant поможет вам создать новую тему
 4. Данные вашего сайта останутся без изменений
 
-### Для изменения темы
+### Для изменения темы {#for-theme-changes}
 
 Вместо выбора темы в Site Builder mode:
 
@@ -95,9 +95,9 @@ Site Builder mode был интерфейсом в формате мастера
    - Сгенерирует кастомную тему
    - Активирует ее на вашем сайте
 
-## Ключевые различия
+## Ключевые различия {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Выбрать шаблон
@@ -106,7 +106,7 @@ Site Builder mode был интерфейсом в формате мастера
 4. Готово
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Описать цель сайта
@@ -117,36 +117,36 @@ Site Builder mode был интерфейсом в формате мастера
 6. site_brief сохраняется для будущих сессий
 ```
 
-## Преимущества Setup Assistant Agent
+## Преимущества Setup Assistant Agent {#benefits-of-setup-assistant-agent}
 
-### Больше гибкости
+### Больше гибкости {#more-flexible}
 
 - Опишите свой сайт на естественном языке
 - Получите кастомные рекомендации
 - Адаптируется к вашим конкретным потребностям
 
-### Лучшая кастомизация
+### Лучшая кастомизация {#better-customization}
 
 - Генерация кастомных тем
 - Решения на основе дизайн-системы
 - Постоянные дизайн-токены
 
-### Постоянная память
+### Постоянная память {#persistent-memory}
 
 - Ваш site_brief сохраняется
 - Будущие агенты будут знать о вашем сайте
 - Не нужно повторять информацию о настройке
 
-### Интегрированный рабочий процесс
+### Интегрированный рабочий процесс {#integrated-workflow}
 
 - Адаптация Theme Builder onboarding
 - Навык Design System Aesthetics
 - Управление видимостью (Ability Visibility controls)
 - Все работает вместе бесшовно
 
-## Устранение неполадок
+## Устранение неполадок {#troubleshooting}
 
-### Я не могу найти Site Builder mode
+### Я не могу найти Site Builder mode {#i-cant-find-site-builder-mode}
 
 Site Builder mode был удален. Используйте Setup Assistant agent вместо него:
 
@@ -154,7 +154,7 @@ Site Builder mode был удален. Используйте Setup Assistant ag
 "Help me set up a new site"
 ```
 
-### Я хочу воссоздать сайт из Site Builder
+### Я хочу воссоздать сайт из Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Вы можете воссоздать его с помощью Setup Assistant agent:
 
@@ -163,7 +163,7 @@ Site Builder mode был удален. Используйте Setup Assistant ag
 3. Агент сгенерирует похожую тему
 4. Ваш site_brief будет сохранен для дальнейшего использования
 
-### Мой существующий сайт Site Builder не работает
+### Мой существующий сайт Site Builder не работает {#my-existing-site-builder-site-isnt-working}
 
 Существующие сайты, созданные в режиме Site Builder, продолжают работать. Если вы столкнулись с проблемами:
 
@@ -172,7 +172,7 @@ Site Builder mode был удален. Используйте Setup Assistant ag
 3. Проверьте журналы ошибок WordPress
 4. Обратитесь в службу поддержки, если проблемы сохраняются
 
-### Могу ли я все еще использовать свои старые шаблоны Site Builder?
+### Могу ли я все еще использовать свои старые шаблоны Site Builder? {#can-i-still-use-my-old-site-builder-templates}
 
 Шаблоны Site Builder больше недоступны. Однако:
 
@@ -180,14 +180,14 @@ Site Builder mode был удален. Используйте Setup Assistant ag
 - Вы можете воссоздать похожие сайты с помощью Setup Assistant agent
 - Setup Assistant agent предоставляет больше возможностей для кастомизации
 
-## Следующие шаги
+## Следующие шаги {#next-steps}
 
 1. **Для новых сайтов**: Используйте Setup Assistant agent
 2. **Для существующих сайтов**: Продолжайте использовать их как есть
 3. **Для изменения темы**: Запросите помощь у Setup Assistant agent
 4. **Для улучшения дизайна**: Используйте навык Design System Aesthetics
 
-## Связанные темы
+## Связанные темы {#related-topics}
 
 - **Theme Builder Onboarding**: Пошаговая настройка кастомных тем
 - **Setup Assistant Agent**: Настройка сайта с помощью агента

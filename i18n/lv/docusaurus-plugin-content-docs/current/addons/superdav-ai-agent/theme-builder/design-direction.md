@@ -3,17 +3,17 @@ title: Dizaina virziens
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dizaina virziens
+# Dizaina virziens {#design-direction}
 
 **Design Direction** solis ļauj jums pārskatīt, precizēt un pabeigt jūsu tēmas vizuālo dizainu, pirms Theme Builder ģenerē pilnu tēmu.
 
-## Pārskats
+## Pārskats {#overview}
 
 Pēc Discovery Interview pabeigšanas Theme Builder parāda jūsu dizaina virzienu ar **darbvirsmas un mobilā priekšskatījuma renderēšanu**. Tas ļauj jums precīzi redzēt, kā jūsu dizains izskatīsies dažādās ierīcēs, pirms apstiprināt tēmu.
 
-## Dizaina virziena komponenti
+## Dizaina virziena komponenti {#design-direction-components}
 
-### 1. Krāsu palete
+### 1. Krāsu palete {#1-color-palette}
 
 Jūsu tēmas krāsu shēma, tostarp:
 
@@ -23,7 +23,7 @@ Jūsu tēmas krāsu shēma, tostarp:
 - **Neitrālās krāsas** — pelēkie un baltie toņi foniem un tekstam
 - **Teksta krāsa** — primārā teksta krāsa salasāmībai
 
-### 2. Tipogrāfija
+### 2. Tipogrāfija {#2-typography}
 
 Fontu izvēles:
 
@@ -33,14 +33,14 @@ Fontu izvēles:
 - **Rindas augstums** — atstarpes starp rindām salasāmībai
 - **Fontu biezumi** — treknas, parastas un vieglas variācijas
 
-### 3. Izkārtojums un atstarpes
+### 3. Izkārtojums un atstarpes {#3-layout-and-spacing}
 
 - **Konteinera platums** — maksimālais platums saturam
 - **Iekšējās un ārējās atkāpes** — atstarpes ap elementiem
 - **Režģa sistēma** — kolonnu izkārtojums responsīvam dizainam
 - **Komponentu atstarpes** — attālums starp UI elementiem
 
-### 4. Vizuālie elementi
+### 4. Vizuālie elementi {#4-visual-elements}
 
 - **Pogu stili** — primārie, sekundārie un terciārie pogu dizaini
 - **Kartīšu dizaini** — izkārtojumi satura blokiem
@@ -48,9 +48,9 @@ Fontu izvēles:
 - **Apmales un ēnas** — smalks vizuālais dziļums
 - **Norādīšanas efekti** — interaktīvo stāvokļu stilizēšana
 
-## Priekšskatījuma renderēšana
+## Priekšskatījuma renderēšana {#preview-rendering}
 
-### Darbvirsmas priekšskatījums
+### Darbvirsmas priekšskatījums {#desktop-preview}
 
 Darbvirsmas priekšskatījums rāda jūsu dizainu pilnā platumā (parasti 1200px vai platāk):
 
@@ -59,7 +59,7 @@ Darbvirsmas priekšskatījums rāda jūsu dizainu pilnā platumā (parasti 1200p
 - Liela tipogrāfija un atstarpes
 - Visi vizuālie elementi pilnā izmērā
 
-### Mobilais priekšskatījums
+### Mobilais priekšskatījums {#mobile-preview}
 
 Mobilais priekšskatījums rāda jūsu dizainu mobilajā platumā (parasti 375px):
 
@@ -68,7 +68,7 @@ Mobilais priekšskatījums rāda jūsu dizainu mobilajā platumā (parasti 375px
 - Pielāgota tipogrāfija un atstarpes
 - Pieskārieniem draudzīgi pogu izmēri
 
-### Responsīvie lūzumpunkti
+### Responsīvie lūzumpunkti {#responsive-breakpoints}
 
 Theme Builder renderē priekšskatījumus šajos lūzumpunktos:
 
@@ -79,9 +79,9 @@ Theme Builder renderē priekšskatījumus šajos lūzumpunktos:
 | **Darbvirsma** | 1200px | Pilna platuma darbvirsma |
 | **Liela darbvirsma** | 1920px | Īpaši plats displejs |
 
-## Dizaina precizēšana
+## Dizaina precizēšana {#refining-your-design}
 
-### Korekciju veikšana
+### Korekciju veikšana {#making-adjustments}
 
 Jūs varat precizēt savu dizaina virzienu, veicot šādas darbības:
 
@@ -91,7 +91,7 @@ Jūs varat precizēt savu dizaina virzienu, veicot šādas darbības:
 4. **Izkārtojuma atjaunināšana** — mainiet konteinera platumus un režģa kolonnas
 5. **Elementu pielāgošana** — modificējiet pogu stilus, kartīšu dizainus utt.
 
-### Priekšskatījuma atjauninājumi
+### Priekšskatījuma atjauninājumi {#preview-updates}
 
 Izmaiņas tiek atspoguļotas reāllaikā:
 
@@ -100,7 +100,7 @@ Izmaiņas tiek atspoguļotas reāllaikā:
 - Visi responsīvie lūzumpunkti tiek atjaunināti
 - Jūs varat pārslēgties starp priekšskatījumiem, lai pārbaudītu izmaiņas
 
-### Salīdzinājuma skats
+### Salīdzinājuma skats {#comparison-view}
 
 Salīdziniet savu dizaina virzienu ar:
 
@@ -108,7 +108,7 @@ Salīdziniet savu dizaina virzienu ar:
 - **Konkurentu dizainiem** — salīdziniet ar iedvesmas vietnēm
 - **Iepriekšējām versijām** — atgriezieties pie agrākiem dizaina virzieniem
 
-## Dizaina virziena apstiprināšana
+## Dizaina virziena apstiprināšana {#design-direction-approval}
 
 Kad esat apmierināts ar savu dizainu:
 
@@ -118,7 +118,7 @@ Kad esat apmierināts ar savu dizainu:
 4. **Apstipriniet izkārtojumu** — pārbaudiet atstarpes un līdzinājumu
 5. **Apstipriniet dizainu** — turpiniet ar tēmas ģenerēšanu
 
-## Nākamās darbības
+## Nākamās darbības {#next-steps}
 
 Pēc dizaina virziena apstiprināšanas:
 
@@ -127,7 +127,7 @@ Pēc dizaina virziena apstiprināšanas:
 3. Varat turpināt pielāgošanu, izmantojot WordPress pielāgotāju
 4. Turpiniet uz [Viesmīlības izvēlnes](./hospitality-menus.md) vai citām funkcijām
 
-## Labākā prakse
+## Labākā prakse {#best-practices}
 
 - **Testējiet īstās ierīcēs** — ja iespējams, izmantojiet faktiskus tālruņus un planšetdatorus
 - **Pārbaudiet salasāmību** — pārliecinieties, ka teksts ir salasāms visos izmēros
@@ -135,30 +135,30 @@ Pēc dizaina virziena apstiprināšanas:
 - **Apsveriet veiktspēju** — optimizējiet attēlus un fontus ātrumam
 - **Plānojiet saturu** — pārliecinieties, ka izkārtojums darbojas ar jūsu faktisko saturu
 
-## Problēmu novēršana
+## Problēmu novēršana {#troubleshooting}
 
-### Priekšskatījums neatjauninās
+### Priekšskatījums neatjauninās {#preview-not-updating}
 
 - Atsvaidziniet lapu
 - Notīriet pārlūkprogrammas kešatmiņu
 - Izmēģiniet citu pārlūkprogrammu
 - Pārbaudiet interneta savienojumu
 
-### Krāsas izskatās atšķirīgi
+### Krāsas izskatās atšķirīgi {#colors-look-different}
 
 - Pārbaudiet monitora krāsu iestatījumus
 - Izmēģiniet dažādās ierīcēs
 - Pārbaudiet krāsu kontrastu ar pieejamības rīkiem
 - Apsveriet krāsu akluma simulatorus
 
-### Tipogrāfijas problēmas
+### Tipogrāfijas problēmas {#typography-issues}
 
 - Pārliecinieties, ka fontu faili tiek ielādēti
 - Pārbaudiet fonta izmēru dažādos lūzumpunktos
 - Testējiet ar faktisko saturu
 - Apsveriet rindas garumu salasāmībai
 
-## Saistītā dokumentācija
+## Saistītā dokumentācija {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — apkopojiet dizaina informāciju
 - [Viesmīlības izvēlnes](./hospitality-menus.md) — izveidojiet strukturētas izvēlņu lapas

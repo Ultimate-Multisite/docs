@@ -3,7 +3,7 @@ title: Cambialetge de Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Historial de versions de Captcha
+# Historial de versions de Captcha {#captcha-changelog}
 
 Versió: 1.5.0 - Publicada el 2026-05-22
 * **Nou:** Limitador de taxa de parada forçada (Hard-stop rate limiter) — compta cada GET i POST en les pàgines protegudes per Captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) i respon amb HTTP 429, un capçalera `Retry-After` i una pausa simulada (tarpit sleep) randomitzada (1–5s, amb un màxim de 15s).

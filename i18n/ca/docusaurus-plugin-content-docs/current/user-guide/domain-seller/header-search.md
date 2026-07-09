@@ -3,11 +3,11 @@ title: Cerca de dominis de la capçalera
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Cerca de dominis a la capçalera
+# Cerca de dominis a la capçalera {#header-domain-search}
 
 Fes servir aquesta configuració quan vulguis un formulari petit a la capçalera que iniciï una cerca de dominis i després permeti al client triar entre els dominis disponibles dins del procés de pagament d'Ultimate Multisite.
 
-## Requisits
+## Requisits {#requirements}
 
 - Ultimate Multisite actiu a la xarxa.
 - Multisite Ultimate Domain Seller actiu a la xarxa.
@@ -16,7 +16,7 @@ Fes servir aquesta configuració quan vulguis un formulari petit a la capçalera
   - TLDs compatibles configurats, per exemple `com`, `net` i `org`.
 - Un formulari de pagament vàlid que contingui el camp **Selecció de domini**.
 
-## Formulari de pagament
+## Formulari de pagament {#checkout-form}
 
 1. Crea o edita el formulari de pagament utilitzat per la pàgina de registre.
 2. Afegeix els camps obligatoris normals de pagament/compte, incloent-hi **Nom d'usuari**. Ultimate Multisite rebutja en la validació un formulari de pagament que contingui només el camp de domini.
@@ -30,7 +30,7 @@ La pàgina de registre hauria de mostrar el formulari de pagament, per exemple:
 [wu_checkout slug="domain-form"]
 ```
 
-## Formulari de capçalera
+## Formulari de capçalera {#header-form}
 
 Afegeix un petit formulari `GET` a la capçalera del lloc que enviï el terme de cerca introduït a la pàgina de pagament com a `domain_name`:
 
@@ -44,7 +44,7 @@ Afegeix un petit formulari `GET` a la capçalera del lloc que enviï el terme de
 
 No preseleccionis cap domini amb JavaScript personalitzat de capçalera. La capçalera només hauria de passar el terme de cerca. L'script de pagament de Domain Seller llegeix `?domain_name=example`, omple el quadre de cerca del pagament i executa la cerca de disponibilitat perquè el client pugui triar entre els dominis retornats.
 
-## Comportament esperat
+## Comportament esperat {#expected-behaviour}
 
 Cercar `example` a la capçalera hauria d'obrir:
 
@@ -61,7 +61,7 @@ A continuació, el pagament hauria de mostrar resultats seleccionables com ara:
 
 Després de seleccionar un resultat disponible, el resum de la comanda hauria d'incloure el producte de registre de dominis i el nom de domini seleccionat.
 
-## Verificació
+## Verificació {#verification}
 
 1. Obre la pàgina d'inici.
 2. Cerca un nom sense TLD, per exemple `example`.
@@ -71,7 +71,7 @@ Després de seleccionar un resultat disponible, el resum de la comanda hauria d'
 6. Fes clic a **Selecciona** per a un domini disponible.
 7. Confirma que el resum de la comanda conté `Domain Registration - example.com` o el domini seleccionat.
 
-## Resolució de problemes
+## Resolució de problemes {#troubleshooting}
 
 - Si no apareix cap llista, comprova la pestanya de xarxa del navegador per a `admin-ajax.php?action=wu_domain_search` i confirma que retorna `domains` o `results` no buits.
 - Si el formulari de pagament falla la validació en desar, afegeix els camps de compte obligatoris com ara **Nom d'usuari**.

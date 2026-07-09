@@ -4,11 +4,11 @@ title: 'फ़िल्टर - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_{$type}_get_manage_url
+# Filter: wu_current_{$type}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 डेवलपर्स को मैनेज साइट URL के पैरामीटर्स को बदलने की अनुमति देता है।
 
-## पैरामीटर्स
+## पैरामीटर्स {#parameters}
 
 | Name | Type | विवरण |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | साइट ID। |
 | $site_hash | `string` | साइट हैश। |
 
-### कब से
+### कब से {#since}
 
 - 2.0.9
-### स्रोत
+### स्रोत {#source}
 
 [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) में लाइन 214 पर परिभाषित है।
 
 
-## रिटर्न करता है
+## रिटर्न करता है {#returns}
 संशोधित मैनेज URL।

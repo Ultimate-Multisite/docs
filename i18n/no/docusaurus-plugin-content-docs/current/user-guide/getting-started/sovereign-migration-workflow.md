@@ -3,11 +3,11 @@ title: Sovereign Migrasjonsflyt
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migrasjonsflyt
+# Sovereign Migrasjonsflyt {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 legger til migrasjonsverifikasjonsportaler for å flytte en standard underside over til suveren leietilbyderinfrastruktur.
 
-## Før du starter
+## Før du starter {#before-you-start}
 
 Bekreft at du har:
 
@@ -17,7 +17,7 @@ Bekreft at du har:
 - En databasevertbinding som samsvarer med destinasjonsmiljøet.
 - Tilgang til å kjøre WP-CLI-kommandoer for nettverket.
 
-## Anbefalt flyt
+## Anbefalt flyt {#recommended-workflow}
 
 1. Forbered destinasjonsleietilbyderdatabasen og filsystemet.
 2. Registrer eller oppdater leietilbyderisolasjoninnstillingene.
@@ -28,7 +28,7 @@ Bekreft at du har:
 7. Besøk leietilbyderen med SSO.
 8. Bytt DNS eller ruting først etter at verifikasjonen er bestått.
 
-## Verifikasjonsportaler
+## Verifikasjonsportaler {#verification-gates}
 
 Verifikasjonsflyten sjekker migrasjonen fra flere vinkler:
 
@@ -40,6 +40,6 @@ Verifikasjonsflyten sjekker migrasjonen fra flere vinkler:
 
 Behandle verifikasjonsfeil som hindringer før lansering. Fiks det rapporterte database-, bruker-, kø- eller rutingproblemet, og kjør deretter verifikasjonen på nytt før du eksponerer leietilbyderen for kunder.
 
-## Første produksjonsbesøk
+## Første produksjonsbesøk {#first-production-visit}
 
 Etter at verifikasjonen er bestått, bruk **Besøk (SSO)** fra administrasjonsskjermen for det første administrative besøket. Dette bekrefter leietilbyderens ruting, håndtering av SSO-tokens, opprinnelsesfeste (origin pinning) og brukerprovisjon på leietilbyder-siden i ett kontrollert steg.

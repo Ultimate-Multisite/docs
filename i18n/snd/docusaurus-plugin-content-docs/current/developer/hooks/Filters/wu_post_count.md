@@ -4,11 +4,11 @@ title: فلٽر - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filter: wu_post_count
+# Filter: wu_post_count {#filter-wupostcount}
 
 plugin ڊولپرن کي ڪل ڳڻپ بدلائڻ جي اجازت ڏئي ٿو
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -16,13 +16,13 @@ plugin ڊولپرن کي ڪل ڳڻپ بدلائڻ جي اجازت ڏئي ٿو
 | $post_counts | `object` | `wp_count_posts` fn طرفان واپس ڪيل WordPress آبجيڪٽ |
 | $post_type | `string` | پوسٽ قسم slug |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 1.9.1
-### ذريعو
+### ذريعو {#source}
 
 [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) ۾ لائين 136 تي بيان ڪيل
 
 
-## واپسيون
+## واپسيون {#returns}
 نئون ڪل

@@ -4,11 +4,11 @@ title: Sefa - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Sefa: wu_rest_delete_item
+# Sefa: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 Inosefa kana zvichibvumidzwa kuenderera nechikumbiro kana kwete.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Inosefa kana zvichibvumidzwa kuenderera nechikumbiro kana kwete.
 | $rest_base | `array` | Slug yechinhu. |
 | $this | `\Base_Manager` | Instance yechinhu. |
 
-### Kubvira
+### Kubvira {#since}
 
 - 2.0.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) pamutsara 440

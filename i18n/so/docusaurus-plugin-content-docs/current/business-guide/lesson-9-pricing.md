@@ -3,17 +3,17 @@ title: 'Casharka 9: Qiimeyn si Faa''iido loo Helo'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Casharka 9: Qiimeyn Faa'iido Leh
+# Casharka 9: Qiimeyn Faa'iido Leh {#lesson-9-pricing-for-profit}
 
 Casharka 5 waxaan u dejinnay qiimayaasha bilowga ah ee qorshayaasha FitSite. Hadda waxaan sii hagaajinaynaa istaraatiijiyadda qiimeynta annagoo adeegsanayna farsamooyin kordhiya dakhliga, dhiirrigeliya kor-u-qaadista, kana yareeya ka-tagista.
 
-## Meeshii Aan Ku Joognay
+## Meeshii Aan Ku Joognay {#where-we-left-off}
 
 FitSite waxa uu leeyahay qorshayaal, templates, bixinta, branding, iyo onboarding diyaarsan. Qiimeyntii bilowga ahayd waxay ahayd $49/$99/$199 bishii. Hadda waxaan ka dhigeynaa qiimeyntaas mid si ka adag u shaqeysa.
 
-## Mabaa'diida Qiimeynta ee Platforms Niche ah
+## Mabaa'diida Qiimeynta ee Platforms Niche ah {#pricing-principles-for-niche-platforms}
 
-### Ku Qiimee Qiimaha La Helo, Ma Aha Kharashka
+### Ku Qiimee Qiimaha La Helo, Ma Aha Kharashka {#price-on-value-not-cost}
 
 Kharashyadaada hosting waxay noqon karaan $5-$15 goob kasta oo macaamiil ah. Taasi macnaheedu ma aha in qiimahaagu noqdo $20. Ma iibinaysid hosting. Waxaad iibinaysaa:
 
@@ -24,7 +24,7 @@ Kharashyadaada hosting waxay noqon karaan $5-$15 goob kasta oo macaamiil ah. Taa
 
 Ku qiimee adigoo ku saleynaya qiimaha aad gaarsiiso, ee ha ku saleyn kharashka lagu gaarsiinayo.
 
-### Ku Xir Ikhtiyaarrada Kale
+### Ku Xir Ikhtiyaarrada Kale {#anchor-to-alternatives}
 
 Marka milkiilaha studio fitness uu qiimeynayo FitSite, wuxuu la barbardhigayaa:
 
@@ -34,7 +34,7 @@ Marka milkiilaha studio fitness uu qiimeynayo FitSite, wuxuu la barbardhigayaa:
 
 Marka uu yahay $49-$199/bishii, FitSite wuu ka jaban yahay developer, wuu ka awood badan yahay dhisayaasha guud, waana si aan la qiyaasi karin uga fiican yahay website la'aan.
 
-## Hirgelinta Kala-duwanaanshaha Qiimaha
+## Hirgelinta Kala-duwanaanshaha Qiimaha {#implementing-price-variations}
 
 Qiimeynta sannadlaha ah waxay dhiirrigelisaa ballanqaad waxayna yareysaa ka-tagista. U gudub tab-ka **Price Variations** ee qorshe kasta oo ku dar ikhtiyaarro sannadle ah:
 
@@ -46,12 +46,12 @@ Qiimeynta sannadlaha ah waxay dhiirrigelisaa ballanqaad waxayna yareysaa ka-tagi
 
 Ku dar field **Period Selection** foomkaaga bixinta si macaamiishu ugu kala wareegi karaan biil-bixinta billaha ah iyo tan sannadlaha ah. Eeg [Foomamka Bixinta](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Sababta Qiimeynta Sannadlaha ahi u Shaqeyso
+### Sababta Qiimeynta Sannadlaha ahi u Shaqeyso {#why-annual-pricing-works}
 
 - **Adiga kuu ahaan**: Lacag hore, ka-tagis hoose (macaamiisha sannadkii bixiya waxay u badan tahay inaysan joojin inta muddadu socoto)
 - **Iyaga u ahaan**: Kayd dhab ah, miisaaniyad la saadaalin karo
 
-## Khidmadaha Dejinta
+## Khidmadaha Dejinta {#setup-fees}
 
 Tixgeli khidmad dejin oo hal mar ah qorshayaasha ay ku jirto habeyn gacanta lagu qabto:
 
@@ -61,7 +61,7 @@ Tixgeli khidmad dejin oo hal mar ah qorshayaasha ay ku jirto habeyn gacanta lagu
 
 Ku habee khidmadaha dejinta qaybta qiimeynta ee qorshe kasta. Eeg [Abuurista Subscription Product-kaaga Koowaad](/user-guide/configuration/creating-your-first-subscription-product) si aad u hesho faahfaahin.
 
-## Muddooyinka Tijaabada
+## Muddooyinka Tijaabada {#trial-periods}
 
 Bixinta tijaabo waxay yareysaa carqaladda isdiiwaangelinta laakiin waxay keentaa khatarta in aan loo beddelmin macmiil lacag bixiya. FitSite:
 
@@ -70,11 +70,11 @@ Bixinta tijaabo waxay yareysaa carqaladda isdiiwaangelinta laakiin waxay keentaa
 
 Ku habee tijaabada qaybta qiimeynta ee qorshaha Starter adigoo dhaqaajinaya toggle-ka **Offer Trial** oo muddada ka dhigaya 7 maalmood.
 
-### Sida Tijaabooyinka Loogu Beddelo Macaamiil
+### Sida Tijaabooyinka Loogu Beddelo Macaamiil {#making-trials-convert}
 
 Tijaabo waxay shaqeysaa oo keliya haddii macmiilku dareemo qiime inta lagu jiro muddada tijaabada. Taxanahaaga onboarding (Casharka 8) ayaa halkan muhiim ah -- emails-ka soo-dhaweynta waa in waqti ahaan loo habeeyaa si ay u kiciyaan ka-qaybgalka gudaha daaqadda 7-da maalmood ah.
 
-## Koodhadhka Dhimista
+## Koodhadhka Dhimista {#discount-codes}
 
 Abuur koodhadh dhimis istaraatiiji ah oo ujeeddooyin gaar ah leh:
 
@@ -88,7 +88,7 @@ U gudub **Ultimate Multisite > Discount Codes** si aad kuwan u abuurto. Eeg [Abu
 Dhimisyadu waa inay ahaadaan qalab istaraatiiji ah, ma aha waxyaabo joogto ah. Haddii qof walba helo dhimis, ma aha dhimis -- waa qiimahaaga dhabta ah. U isticmaal ololeyaal gaar ah, tixraacyo, iyo xayeysiisyo waqti xaddidan leh.
 :::
 
-## Maareynta Canshuurta
+## Maareynta Canshuurta {#tax-handling}
 
 Haddii aad ka shaqeyso deegaan sharci oo u baahan ururinta canshuurta:
 
@@ -98,7 +98,7 @@ Haddii aad ka shaqeyso deegaan sharci oo u baahan ururinta canshuurta:
 
 Eeg [Maareynta Canshuurta](/user-guide/payment-gateways/tax-handling) si aad u hesho habeyn faahfaahsan. Haddii aad u adeegto macaamiil caalami ah, tixgeli [VAT addon](/addons/vat) si aad ugu hoggaansanto EU.
 
-## Dib-u-eegista Qiimeyntaada
+## Dib-u-eegista Qiimeyntaada {#reviewing-your-pricing}
 
 Furitaanka ka dib, dib u eeg qiimeynta rubuc kasta. Fiiri:
 
@@ -107,7 +107,7 @@ Furitaanka ka dib, dib u eeg qiimeynta rubuc kasta. Fiiri:
 - **Ka-tagista qorshe kasta**: Haddii macaamiisha sannadlaha ahi ka-tagis yar yihiin, si xooggan u riix qiimeynta sannadlaha ah
 - **Qiimeynta tartamayaasha**: Ikhtiyaarrada kale maxay ku dallacayaan? Si sax ah ma u taagan tahay?
 
-## Shabakadda FitSite Ilaa Hadda
+## Shabakadda FitSite Ilaa Hadda {#the-fitsite-network-so-far}
 
 ```
 Shabakadda FitSite
@@ -132,7 +132,7 @@ Shabakadda FitSite
 └── Diyaar u ah furitaanka (casharka xiga)
 ```
 
-## Waxa Aynu Dhisnay Casharkan
+## Waxa Aynu Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Qiimeyn sanadle ah** oo leh 20% dhimis si loo dhiirrigeliyo ballanqaadka
 - **Khidmadaha Setup** ee heerarka sare si loo daboolo dadaalka onboarding

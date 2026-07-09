@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# ’n Eerste kyk na Webhooks (v2)
+# ’n Eerste kyk na Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**AANDAG: Let daarop dat hierdie funksie of artikel vir gevorderde gebruikers is.**_
 
@@ -11,7 +11,7 @@ _**AANDAG: Let daarop dat hierdie funksie of artikel vir gevorderde gebruikers i
 
 Dit is nuttig as jy sekere data vanaf Ultimate Multisite na ’n ander CRM of stelsel moet integreer of deurgee elke keer wanneer ’n gebeurtenis geaktiveer word. Byvoorbeeld, jy moet die gebruiker se naam en e-posadres na ’n poslys stuur elke keer wanneer ’n nuwe gebruikersrekening geskep word.
 
-## Hoe om ’n webhook te skep
+## Hoe om ’n webhook te skep {#how-to-create-a-webhook}
 
 Om ’n webhook te skep, gaan na jou netwerkadmin-dashboard. Klik op **Ultimate Multisite > Webhooks > Voeg nuwe webhook by.**
 

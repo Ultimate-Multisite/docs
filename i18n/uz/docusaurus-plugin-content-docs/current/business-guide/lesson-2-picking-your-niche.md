@@ -3,19 +3,19 @@ title: '2-dars: O‘z nishangizni tanlash'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# 2-dars: O‘z Niche’ingizni tanlash
+# 2-dars: O‘z Niche’ingizni tanlash {#lesson-2-picking-your-niche}
 
 1-darsda nima uchun niche umumiy yondashuvdan ustun ekanini aniqladik. Endi o‘zingiznikini tanlashingiz kerak. Bu dars sizga vaqt sarflab uni qurishdan oldin niche topish va tasdiqlash uchun framework beradi.
 
-## Qayerda to‘xtagandik
+## Qayerda to‘xtagandik {#where-we-left-off}
 
 Biz FitSite konsepsiyasini belgiladik: fitness studiyalari uchun website platformasi. Ammo aynan fitness studiyalariga qanday keldik? Bu dars jarayonni bosqichma-bosqich ko‘rsatadi, shunda uni o‘zingizning niche’ingizni topish uchun qo‘llashingiz mumkin.
 
-## Uchta mezon
+## Uchta mezon {#the-three-criteria}
 
 Website platformasi uchun yaxshi niche uchta shartga javob beradi:
 
-### 1. Ularga website kerak, lekin yaxshisini olishda qiynalishadi
+### 1. Ularga website kerak, lekin yaxshisini olishda qiynalishadi {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Quyidagi sohalarni qidiring:
 
@@ -26,7 +26,7 @@ Quyidagi sohalarni qidiring:
 
 **Fitness studiyalari mos keladi**: a’zolar dars jadvali, narxlar va online booking’ni topishni kutishadi. Studio website’larining aksariyati eskirgan yoki maqsadga xizmat qilmaydigan umumiy template’larda qurilgan.
 
-### 2. Bizneslar oylik subscription’ni to‘lay oladi
+### 2. Bizneslar oylik subscription’ni to‘lay oladi {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Sizning maqsadli mijozlaringiz quyidagicha bo‘lishi kerak:
 
@@ -36,7 +36,7 @@ Sizning maqsadli mijozlaringiz quyidagicha bo‘lishi kerak:
 
 **Fitness studiyalari mos keladi**: ular allaqachon booking software, payment processing va marketing tool’lari uchun to‘laydi. Website subscription’i tabiiy qo‘shimcha.
 
-### 3. Ular bir-biri bilan gaplashadi
+### 3. Ular bir-biri bilan gaplashadi {#3-they-talk-to-each-other}
 
 Eng yaxshi niche’larda quyidagilar bo‘ladi:
 
@@ -46,9 +46,9 @@ Eng yaxshi niche’larda quyidagilar bo‘ladi:
 
 **Fitness studiyalari mos keladi**: studio egalari fitness sohasi tadbirlariga qatnashadi, online hamjamiyatlarda ishtirok etadi va ko‘pincha tool va xizmatlarni hamkasblari bilan bo‘lishadi.
 
-## Niche nomzodlarini qanday topish
+## Niche nomzodlarini qanday topish {#how-to-find-niche-candidates}
 
-### Bilgan narsangizdan boshlang
+### Bilgan narsangizdan boshlang {#start-with-what-you-know}
 
 Mavjud tajribangiz — ustunlik. Quyidagilarni ko‘rib chiqing:
 
@@ -56,7 +56,7 @@ Mavjud tajribangiz — ustunlik. Quyidagilarni ko‘rib chiqing:
 - Hamjamiyatini tushunadigan hobbi yoki qiziqishlaringiz
 - Siz allaqachon a’zo bo‘lgan professional tarmoqlar
 
-### Og‘riq signallarini qidiring
+### Og‘riq signallarini qidiring {#look-for-pain-signals}
 
 Niche’dagi bizneslar website’lar bilan qiynalayotgani haqida dalil qidiring:
 
@@ -65,7 +65,7 @@ Niche’dagi bizneslar website’lar bilan qiynalayotgani haqida dalil qidiring:
 - Niche’dagi haqiqiy website’larga qarang -- ularning aksariyati yomonmi?
 - Raqobatchilar bormi va ular bozorga qanchalik yaxshi xizmat qilayotganini tekshiring
 
-### Iqtisodiyotini baholang
+### Iqtisodiyotini baholang {#evaluate-the-economics}
 
 Har bir nomzod niche uchun taxmin qiling:
 
@@ -73,11 +73,11 @@ Har bir nomzod niche uchun taxmin qiling:
 - **To‘lashga tayyorlik**: Ular hozir o‘xshash tool’larga qancha sarflashadi?
 - **Lifetime value potensiali**: Bu bizneslar barqarormi yoki tezda churn bo‘ladimi?
 
-## Niche’ingizni tasdiqlash
+## Niche’ingizni tasdiqlash {#validating-your-niche}
 
 Biror narsa qurishdan oldin talabni tasdiqlang:
 
-### Potensial mijozlar bilan gaplashing
+### Potensial mijozlar bilan gaplashing {#talk-to-potential-customers}
 
 Maqsadli niche’ingizdagi 10-15 biznes egasiga murojaat qiling. So‘rang:
 
@@ -88,17 +88,17 @@ Maqsadli niche’ingizdagi 10-15 biznes egasiga murojaat qiling. So‘rang:
 
 Siz hali sotmayapsiz. Siz tinglayapsiz.
 
-### Raqobatchilar manzarasini tekshiring
+### Raqobatchilar manzarasini tekshiring {#check-competitor-landscape}
 
 - **Raqobatchilar yo‘q**: Talab yo‘qligini anglatishi mumkin yoki ochilmagan imkoniyatni anglatishi mumkin. Mijozlar bilan suhbatlar qaysi biri ekanini aytadi.
 - **Bir nechta raqobatchi**: Yaxshi belgi. Talabni tasdiqlaydi. Ular nimani yaxshi qilishini va qayerda kamchiliklari borligini o‘rganing.
 - **Ko‘p raqobatchilar**: Kirish qiyinroq, lekin aniq farqlana olsangiz baribir mumkin.
 
-### Landing page quring
+### Landing page quring {#build-a-landing-page}
 
 Platformani qurishdan oldin, niche yechimingizni tasvirlaydigan oddiy landing page yarating va email ro‘yxatdan o‘tishlarini yig‘ing. Qiziqishni sinash uchun oz miqdorda targeted advertising ishga tushiring. Agar odamlar ro‘yxatdan o‘tsa, sizda tasdiq bor.
 
-## Buni FitSite’ga qo‘llash
+## Buni FitSite’ga qo‘llash {#applying-this-to-fitsite}
 
 FitSite mezonlarga nisbatan shunday baholandi:
 
@@ -112,7 +112,7 @@ FitSite mezonlarga nisbatan shunday baholandi:
 
 Tasdiqlash imkoniyatni tasdiqladi. Endi quramiz.
 
-## Ko‘rib chiqish uchun niche g‘oyalari
+## Ko‘rib chiqish uchun niche g‘oyalari {#niche-ideas-to-consider}
 
 Agar fitness sizning bozoringiz bo‘lmasa, mezonlarga mos keladigan boshqa niche’lar:
 
@@ -127,7 +127,7 @@ Agar fitness sizning bozoringiz bo‘lmasa, mezonlarga mos keladigan boshqa nich
 
 Bularning har biri bir xil xususiyatlarga ega: aniq website ehtiyojlari, to‘lash qobiliyati va hamjamiyat ichidagi word-of-mouth.
 
-## Bu darsda nimalar qurdik
+## Bu darsda nimalar qurdik {#what-we-built-this-lesson}
 
 - **Niche tanlash framework’i**: har qanday niche’ni baholash uchun uchta mezon
 - **Tasdiqlash usullari**: mijozlar bilan suhbatlar, raqobatchilar tahlili, landing page testing

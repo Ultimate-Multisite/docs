@@ -3,15 +3,15 @@ title: Tataiso ea Tšebeliso ea Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Tataiso ea Tšebeliso ea Hooks
+# Tataiso ea Tšebeliso ea Hooks {#hooks-usage-guide}
 
 Ultimate Multisite e fana ka action hooks tse 200+ le filter hooks tse 280+. Leqephe lena le akaretsa hooks tse sebelisoang hangata ka mehlala e sebetsang. Bakeng sa referense e feletseng e iketselitsoeng ka bo eona, sheba maqephe a mang karolong ena.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Potoloho ea Bophelo ba Moreki
+### Potoloho ea Bophelo ba Moreki {#customer-lifecycle}
 
-#### Ka mor'a ho Bōptjoa ha Moreki
+#### Ka mor'a ho Bōptjoa ha Moreki {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Phetoho ea Boemo ba Moreki
+#### Phetoho ea Boemo ba Moreki {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Site Hooks
+### Site Hooks {#site-hooks}
 
-#### Ka mor'a hore Sebaka se Phatlalatsoe
+#### Ka mor'a hore Sebaka se Phatlalatsoe {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Pele ho Tšebeliso ea Template
+#### Pele ho Tšebeliso ea Template {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership Hooks
+### Membership Hooks {#membership-hooks}
 
-#### Liphetoho tsa Boemo
+#### Liphetoho tsa Boemo {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Payment Hooks
+### Payment Hooks {#payment-hooks}
 
-#### Tefo e Phethiloe / e Hlotsoe
+#### Tefo e Phethiloe / e Hlotsoe {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### Pele ho Ts'ebetso / Ka mor'a ho Phethela
+#### Pele ho Ts'ebetso / Ka mor'a ho Phethela {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain Hooks
+### Domain Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Lisefe tsa Theko
+### Lisefe tsa Theko {#pricing-filters}
 
-#### Kakaretso ea Cart
+#### Kakaretso ea Cart {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Litefiso tsa Lekhetho
+#### Litefiso tsa Lekhetho {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Lisefe tsa Template
+### Lisefe tsa Template {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Lisefe tsa Meeli
+### Lisefe tsa Meeli {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Lisefe tsa Gateway
+### Lisefe tsa Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Masimo a Foromo ea Checkout
+### Masimo a Foromo ea Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Litaba tsa Email
+### Litaba tsa Email {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

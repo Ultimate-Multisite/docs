@@ -3,7 +3,7 @@ title: Trajtimi i taksave
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Trajtimi i taksave
+# Trajtimi i taksave {#tax-handling}
 
 Ultimate Multisite ka një modul për mbledhjen e taksave të integruar në plugin-in tonë kryesor, kështu që nëse ju duhet të mblidhni taksa shitjeje për planet, paketat dhe shërbimet tuaja, mund ta bëni lehtësisht pa pasur nevojë të instaloni add-ons.
 
@@ -11,7 +11,7 @@ Për kompanitë e vendosura në Evropë, ne ofrojmë një **add-on** që shton m
 
 Ultimate Multisite nuk deklaron ose derdh taksa në emrin tuaj te qeveria; ne thjesht ju ndihmojmë të mblidhni taksat e duhura në momentin e transaksionit. **Ju do të duhet ende t’i derdhni taksat vetë.**
 
-## Aktivizimi i mbledhjes së taksave
+## Aktivizimi i mbledhjes së taksave {#enabling-tax-collection}
 
 Mbledhja e taksave nuk është e aktivizuar si parazgjedhje. Për ta aktivizuar, duhet të shkoni te **Ultimate Multisite > Settings > Taxes** dhe të aktivizoni cilësimin Enable Taxes.
 
@@ -25,7 +25,7 @@ Mund të shihni gjithashtu cilësimet e taksave për produktet individuale:
 
 ![Cilësimet e taksave për produktet](/img/config/settings-taxes.png)
 
-### Taksa e përjashtuar kundrejt taksës së përfshirë
+### Taksa e përjashtuar kundrejt taksës së përfshirë {#tax-excluded-vs-tax-included}
 
 Si parazgjedhje, të gjitha çmimet e produkteve tuaja janë pa taksa, që do të thotë se taksat **nuk janë të përfshira** në çmimin e produktit. Nëse përcaktojmë se një klient duhet të paguajë taksa për një blerje të caktuar, do t’i shtojmë taksat **mbi** nëntotalin.
 
@@ -37,7 +37,7 @@ Mos harroni të **ruani** ndryshimet që keni bërë.
 
 ###
 
-## Krijimi i normave të taksave
+## Krijimi i normave të taksave {#creating-tax-rates}
 
 Pasi të aktivizoni mbledhjen e taksave, do t’ju duhet të krijoni norma taksash për vendndodhje specifike duke përdorur editorin tonë të normave të taksave.
 
@@ -51,7 +51,7 @@ Në faqen e editorit të normave të taksave, mund të shtoni norma të reja tak
 
 Do t’ju duhet t’i jepni çdo norme takse një **titull** (që përdoret në fatura). Pastaj mund të zgjidhni **shtetin** (i detyrueshëm), **rajonin,** dhe **qytetin** (të dyja opsionale) ku do të tarifohet kjo taksë. Në fund, shtoni **normën e taksës në përqindje**.
 
-### Kategoritë e taksave
+### Kategoritë e taksave {#tax-categories}
 
 Mund të krijoni gjithashtu disa kategori taksash, për të shtuar norma të ndryshme taksash për lloje të ndryshme produktesh.
 
@@ -73,7 +73,7 @@ Mund të vendosni kategorinë e taksës për një produkt të caktuar duke shkua
 
 Në të njëjtin ekran, mund ta çaktivizoni çelësin **Is Taxable?** për t’i bërë të ditur Ultimate Multisite se nuk duhet të mbledhë taksa për atë produkt të caktuar.
 
-## Mbështetja për VAT evropian
+## Mbështetja për VAT evropian {#european-vat-support}
 
 Siç u përmend më parë, kemi një add-on të disponueshëm për klientët në BE që kanë kërkesa shtesë për shkak të rregulloreve evropiane të VAT.
 
@@ -101,7 +101,7 @@ Nëse ktheheni te **Tax Settings tab** , do të shihni opsione të reja të disp
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Tërheqja e normave të taksave VAT
+### Tërheqja e normave të taksave VAT {#pulling-on-vat-tax-rates}
 
 Një nga mjetet që shton integrimi ynë është aftësia për të ngarkuar normat e taksave për shtetet anëtare të BE-së. Kjo mund të bëhet duke vizituar faqen e editorit të normave të taksave pasi të keni aktivizuar mbështetjen për EU VAT.
 
@@ -111,7 +111,7 @@ Në fund të faqes, do të shihni opsionet e tërheqjes së VAT. Zgjedhja e një
 
 Mund t’i modifikoni gjithashtu vlerat pasi t’i keni tërhequr ato. Për ta bërë këtë, thjesht modifikoni rreshtin e tabelës që ju duhet dhe klikoni për të ruajtur vlerat e reja.
 
-### Validimi i VAT
+### Validimi i VAT {#vat-validation}
 
 Kur mbështetja për VAT është e aktivizuar, Ultimate Multisite do të shtojë një fushë shtesë në formularin e checkout, poshtë fushës së adresës së faturimit. Fusha do të shfaqet vetëm për klientët e vendosur në BE.
 

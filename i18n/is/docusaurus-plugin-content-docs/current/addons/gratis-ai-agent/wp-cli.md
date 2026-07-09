@@ -3,11 +3,11 @@ title: WP-CLI tilvísun
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI tilvísun
+# WP-CLI tilvísun {#wp-cli-reference}
 
 Gratis AI Agent kemur með `wp gratis-ai-agent` skipanafjölskyldu til að keyra afkastapróf á agentinum, stjórna eiginleikum og sækja stöðu agentsins úr skipanalínu. Allar skipanir krefjast WP-CLI 2.0 eða nýrra.
 
-## Uppsetning
+## Uppsetning {#installation}
 
 WP-CLI skipanirnar eru skráðar sjálfkrafa þegar plugin er virkt. Staðfestu með:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Keyrir Agent Capabilities afkastaprófasafnið — safn flókinna, margra skrefa fyrirmæla sem reyna á allt svið eiginleika. Notaðu þetta til að meta frammistöðu líkans, bera saman AI veitendur eða staðfesta eiginleikapakka áður en þeir eru settir í framleiðslu.
 
-### Yfirlit
+### Yfirlit {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Valkostir
+### Valkostir {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Úttakssnið: `table` (sjálfgefið), `json`, `csv` |
 | `--save` | Vista niðurstöður afkastaprófsins í gagnagrunninum til sögulegs samanburðar |
 
-### Dæmi
+### Dæmi {#examples}
 
 Keyra allt afkastaprófasafnið með núverandi veitanda og líkani:
 
@@ -57,7 +57,7 @@ Keyra gegn tilteknu líkani og vista niðurstöður:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Úttak
+### Úttak {#output}
 
 Afkastaprófið skilar einni röð fyrir hverja spurningu með eftirfarandi dálkum:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Afkastaprófsspurningar
+### Afkastaprófsspurningar {#benchmark-questions}
 
 Sjálfgefna safnið inniheldur:
 
@@ -95,11 +95,11 @@ Hægt er að skrá viðbótarspurningar í gegnum `gratis_ai_agent_benchmark_que
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Stjórnar uppsettum eiginleikum og eiginleikapökkum.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Listar alla skráða eiginleika, uppruna þeirra (kjarna eða pakka) og núverandi stöðu þeirra.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Sækir og virkjar eiginleikapakka úr skránni.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Gerir tiltekinn eiginleika óvirkan án þess að fjarlægja pakkann. Gagnlegt til að takmarka umfang agentsins á tilteknum vef.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Virkjar aftur eiginleika sem áður var gerður óvirkur.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Sýnir núverandi stillingar agentsins og tengistöðu.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Sýnir nýlega virkni agentsins úr villuleitarskránni.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Endurstillir stöðu agents: hreinsar innsprautað CSS, fjarlægir CPT og flokkunarkerfi sem agent hefur skráð, endurstillir hnattræna stíla og tæmir valkostaskyndiminni agentsins. Fjarlægir ekki plugin eða stillingar þess.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Lokakóðar
+## Lokakóðar {#exit-codes}
 
 Allar skipanir skila `0` við árangur. Lokakóðar sem eru ekki núll:
 

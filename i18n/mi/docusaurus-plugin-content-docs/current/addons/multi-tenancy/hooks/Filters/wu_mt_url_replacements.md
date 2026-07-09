@@ -4,11 +4,11 @@ title: Tātari - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Tātari: wu_mt_url_replacements
+# Tātari: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 Tātarihia ngā takirua whakakapinga URL.
 
-## Ngā tawhā
+## Ngā tawhā {#parameters}
 
 | Ingoa | Momo | Whakaahuatanga |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Tātarihia ngā takirua whakakapinga URL.
 | $new_url | `string` | URL hou. |
 | $blog_id | `int` | ID rangitaki. |
 
-### Mai rā anō
+### Mai rā anō {#since}
 
 - 1.0.0
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia i [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) i te rārangi 151

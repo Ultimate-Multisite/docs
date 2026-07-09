@@ -3,9 +3,9 @@ title: Warqaddii soo saarista
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Warbixinta Waxyaabaha La Soo Bixiyay (Release Notes)
+# Warbixinta Waxyaabaha La Soo Bixiyay (Release Notes) {#release-notes}
 
-## Nooca 2.13.0 — La soo bixiyay 2026-06-05
+## Nooca 2.13.0 — La soo bixiyay 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Cusbo cusub-tenant (sovereign-tenant) oo la soo daray dukumentiga macaamiisha, checkout-ka, bixinta lacagta, meesha website-ka, invoice-ka, isbeddelka template-yada iyo xiriirka domain-ka si shabakadaha tenant-ka ay u tilmaamaan macaamiisha inay dib ugu laabaadaan website-ka muhiimka ah si loo maamulo hawlaha.
 - Cusbo daro: Waxaa la soo daray hubinta xogta cusboonaysiinta (renewal-credential checks) ee xaafadaha socda (recurring memberships), si gateway-yada ay uga hor iskeedeen dib u bilaabidda auto-renewal marka aan la helo heshiis bixinti oo la kaydiyay, subscription ama vault token.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Saxiix: Dib u bilaabidda xaafadaha, muujinta dhamaadka (expiration display), iyo xaaladaha adag ee ka soo horjeeda helitaanka lacagta hadda waxay ka fogaadaan dib u bilaabidda degdega ah, burburka nidaamka (crashes) ama la maqnaqa lacagta loo baahan yahay.
 - Horumar: La hubiyay in WordPress uu shaqeeyo ilaa 7.0, waxyaabaha Vue ee production-ka waxaa dib loo dhiga micneoyinka npm-ka, iyo Cypress end-to-end coverage-ku wuxuu hadda si ballaaran u fulinaya hababka checkout, setup, SSO, iyo gateway-yada.
 
-## Qaabka 2.12.0 — Waxaa la soo saaray 2026-05-15
+## Qaabka 2.12.0 — Waxaa la soo saaray 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Cusboonaysi cusub: Waxaan ku daray Hostinger (hPanel) oo ah bixiyaha host-ka la taageero inkasta oo lagu dhexgeliyo isku xirnaanta domain-ka.
 - Cusboonaysi cusub: Site Exporter hadda wuxuu maamulaa bundle-ka import-ka shabakadaha (network import bundles) si loo fududeeyo soo celinta site-ka oo dhan ee shabakadda.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Wax hagaajin: CLI-ga Site Exporter wuxuu hadda ilaaliyaa doorka doorashada site-ka shabakadda ee caadiga ah (default network site selection).
 - Horumar: Waxaan ka saaray wp-cli-ga la isku dhexgeliyay package-ka plugin-ka, taasoo yareysaysa cabbirka plugin-ka.
 
-## Qaabka 2.11.0 — Waxaa la soo saaray 2026-05-11
+## Qaabka 2.11.0 — Waxaa la soo saaray 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Cusboonaysi cusub: Site exports hadda waxay isku dhexgelinayaan `index.php` oo is-dhisaya (self-booting) si ZIP-ka loogu qaadi karo host cusub iyadoo aan la baahna plugin kale lagu soo saarin.
 - Cusboonaysi cusub: Network export-ka waxay u oggolaanaysaa maamulayaasha inay soo saaraan dhammaan subsites-yada (subsites) hal fayl oo archive ah laga soo saaro bogga admin-ka Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Cusboonaysi cusub: Edit-ka foomka Checkout wuxuu diyaar u yahay inuu digniin bixiyo haddii la dariyo wax oo aan la dejin (required field) lagu daray alaabta.
 - Cusboonaysi cusub: Tab-ka Dejinta Import/Export-ka wuxuu si cad u sharraxayaa meesha uu ka mid yahay iyo isku xirnaa toos ah qalabka Site Export.
 
-## Qaabka 2.10.0 — Waxaa la soo saaray 2026-05-05
+## Qaabka 2.10.0 — Waxaa la soo saaray 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Cusbo: Wizard-ka diyaarsan PayPal oo lagu tilmaamo hababka la siiyo macluumaadka gacanta (manual credential entry) iyadoo la isticmaalayo OAuth flag gate si loo fududeeyo hababka gateway-ga.
 - Cusbo: Dashboard-ka macaamiisha ee template switch-ka la dib u qaabeeyay, oo lagu qurxiyay card-ka current-template, grid-ka joogtada ah (persistent grid), iyo badhka **Reset current template**.
@@ -51,7 +51,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Wax hagaag: Waa la raacaya waddooyinka SSO-ga (SSO path) dhammaan hababka galista.
 - Wax hagaag: Doorashada awoodda bogga bannaan (Blank site identity options) waxaa lagu ilaaliyay marka la kaydiyo.
 
-## Version 2.9.0 — La soo saaray 2026-04-30
+## Version 2.9.0 — La soo saaray 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Cusbo: In la soo saaro iyo in la soo geliyo hal-bog (Single-site export and import) ayaa la daray diyaarinta **Tools > Export & Import**.
 - Wax hagaag: Faylasha ZIP-ka waxaa hadda loo adeegsadaa endpoint-ka soo dejinta oo la xaqiijiyay.
@@ -65,7 +65,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Wax hagaag: Tour IDs waxaa loo habay (normalised) si ay u noqdaan kuwo underscore ah marka la isticmaalo keys-ka settings-ka macluumaadka.
 - Horumar: ZipArchive ayaa hadda loo isticmaalayaa halkii Alchemy/Zippy si loo helo isku-dubbarid oo wanaagsan.
 
-## Version 2.8.0 — La soo saaray 2026-04-29
+## Version 2.8.0 — La soo saaray 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Cusbo: Wax-ka Jumper toggle la lagu daray UI-ga Other Options settings.
 - Cusbo: Lajibu la Status column la lagu daray labada meelaha checkout forms list table-ka.

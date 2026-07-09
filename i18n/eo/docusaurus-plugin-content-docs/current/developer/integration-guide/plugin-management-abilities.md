@@ -3,11 +3,11 @@ title: Kapabloj pri mastrumado de kromprogramoj
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kapabloj pri Administrado de Kromprogramoj
+# Kapabloj pri Administrado de Kromprogramoj {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 liveriĝas kun **7 kapabloj pri administrado de kromprogramoj**, kiujn la AI-asistanto povas alvoki dum konversacio. Tiuj kapabloj provizas programeblan kontrolon super WordPress-kromprogramoj instalitaj per la [Kromprograma Konstruilo kaj Sablokesta Sistemo](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Superrigardo de Kapabloj
+## Superrigardo de Kapabloj {#abilities-overview}
 
 | Kapablo | Slug | Priskribo |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 liveriĝas kun **7 kapabloj pri administrado de kromprogr
 | Instali Kromprogramon | `install_plugin` | Deplojas sablokestitan kromprogramon al la viva WordPress-kromprograma dosierujo. |
 | Aktivigi Kromprogramon | `activate_plugin` | Aktivigas sablokestitan kromprogramon en la wp-env-sablokesta medio. |
 
-## API de Kromprograma Instalilo
+## API de Kromprograma Instalilo {#plugin-installer-api}
 
 La kromprograma instalilo pritraktas operaciojn de la dosiersistemo dum deplojado aŭ forigado de kromprogramoj. Ĉefaj kondutoj:
 
@@ -28,7 +28,7 @@ La kromprograma instalilo pritraktas operaciojn de la dosiersistemo dum deplojad
 - **Ĝisdatigo**: Anstataŭigas ekzistantajn kromprogramajn dosierojn. Malaktivigas la kromprogramon antaŭ skribado por eviti erarojn de parta stato.
 - **Forigo laŭ slug**: Trovas la kromprograman dosierujon laŭ slug, malaktivigas tra ĉiuj retejoj, poste forigas la dosierujon.
 
-### Registri Propran Instalan Pritraktilon
+### Registri Propran Instalan Pritraktilon {#registering-a-custom-install-handler}
 
 Vi povas konektiĝi al la instala vivciklo uzante la agojn `gratis_ai_plugin_installer_before_install` kaj `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ekosistema Registro
+## Ekosistema Registro {#ecosystem-registry}
 
 Kapabloj estas registritaj per la **kromprograma ekosistema registro**. La registro mapas kapablajn slug-ojn al iliaj pritraktilaj klasoj kaj eksponas ilin al la ila distribuanto de la AI-agento.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner-Integriĝo
+## HookScanner-Integriĝo {#hookscanner-integration}
 
 La kapabloj `create_plugin` kaj `update_plugin` aŭtomate rulas **HookScanner** kontraŭ nove generita kodo. HookScanner redonas liston de WordPress-agaj kaj filtrilaj hokoj registritaj de la kromprogramo.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner aŭtomate preterlasas dosierujojn `vendor/` kaj `node_modules/`.
 
-## Arkitekturo de Nesinkronaj Laboroj
+## Arkitekturo de Nesinkronaj Laboroj {#async-job-architecture}
 
 Longdaŭraj kromprogramaj operacioj (generi, instali) estas senditaj kiel **nesinkronaj laboroj** kun viva progresospurado. La AI-babila interfaco enketas pri progreso kaj fluigas statusajn ĝisdatigojn al la uzanto:
 

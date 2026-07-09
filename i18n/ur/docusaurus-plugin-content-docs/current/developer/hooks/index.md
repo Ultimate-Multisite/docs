@@ -3,11 +3,11 @@ title: Hooks کا حوالہ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks حوالہ
+# Hooks حوالہ {#hooks-reference}
 
 Ultimate Multisite میں تمام **59 actions** اور **118 filters** کے لیے خودکار طور پر تیار کردہ دستاویزات۔
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — authentication ری ڈائریکٹ سے پہلے چلتا ہے۔
 - [set_auth_cookie](./Actions/set_auth_cookie) — authentication cookie سیٹ ہونے سے فوراً پہلے چلتا ہے۔
@@ -70,7 +70,7 @@ Ultimate Multisite میں تمام **59 actions** اور **118 filters** کے ل
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — کسی object کے database میں محفوظ ہونے کے بعد چلتا ہے۔
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin developers کو unlocking process میں actions شامل کرنے کی اجازت دیں۔
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — توثیقی cookie کی میعاد ختم ہونے کی مدت کو فلٹر کرتا ہے۔
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — توثیقی redirect اسکیم کو فلٹر کرتا ہے۔

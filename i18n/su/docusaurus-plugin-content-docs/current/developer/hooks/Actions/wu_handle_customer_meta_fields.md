@@ -4,11 +4,11 @@ title: Tindakan - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Action: wu_handle_customer_meta_fields
+# Action: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Ngidinan pamekar plugin pikeun nyimpen data meta ku cara anu béda lamun diperlukeun.
 
-## Parameter
+## Parameter {#parameters}
 
 | Ngaran | Jenis | Pedaran |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Ngidinan pamekar plugin pikeun nyimpen data meta ku cara anu béda lamun diperlu
 | $customer | `\Customer` | Objek palanggan Ultimate Multisite. |
 | $checkout | `\Checkout` | Kelas pamayaran. |
 
-### Ti saprak
+### Ti saprak {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepkeun dina [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) dina garis 1211

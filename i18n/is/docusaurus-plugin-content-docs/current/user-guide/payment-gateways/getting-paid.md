@@ -3,13 +3,13 @@ title: Að fá greitt
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Að fá greitt (v2)
+# Að fá greitt (v2) {#getting-paid-v2}
 
 _**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 
 Ultimate Multisite er með innbyggt aðildar- og innheimtukerfi. Til að innheimtukerfið okkar virki höfum við samþætt algengustu greiðslugáttirnar sem notaðar eru í rafrænum viðskiptum. Sjálfgefnar greiðslugáttir í Ultimate Multisite eru _Stripe_ , _PayPal_ og handvirk greiðsla. Þú getur einnig notað _WooCommerce_ , _GoCardless_ og _Payfast_ til að taka við greiðslum með því að setja upp viðkomandi add-ons.
 
-## Grunnstillingar
+## Grunnstillingar {#basic-settings}
 
 Þú getur stillt hvaða greiðslugátt sem er undir greiðslustillingum Ultimate Multisite. Þú finnur þær með því að fara í **Ultimate Multisite valmynd > Stillingar > Greiðslur.**
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0 athugar hvort virka gáttin hafi endurnýtanleg endur
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Hvar á að finna gáttirnar:
+## Hvar á að finna gáttirnar: {#where-to-find-the-gateways}
 
 Þú getur sett upp greiðslugáttirnar á sömu síðu ( **Ultimate Multisite > Stillingar > Greiðslur**). Rétt fyrir neðan **virkar greiðslugáttir** munt þú geta séð: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ og _Handvirkt_.
 
@@ -67,7 +67,7 @@ Hér er einnig heildarsýn af stillingum greiðslugáttanna:
 
 Nú, ef þú vilt nota _WooCommerce_ , _GoCardless_ eða _Payfast_ sem greiðslugáttina þína, þarftu að **setja upp og stilla add-ons þeirra**.
 
-### Hvernig á að setja upp WooCommerce add-on:
+### Hvernig á að setja upp WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Við skiljum að _Stripe_ og _PayPal_ eru ekki í boði í sumum löndum, sem takmarkar eða hindrar notendur Ultimate Multisite í að nota plugin okkar á skilvirkan hátt. Þess vegna bjuggum við til add-on til að samþætta _WooCommerce,_ sem er mjög vinsælt plugin fyrir rafræn viðskipti. Hönnuðir um allan heim hafa búið til add-ons til að samþætta mismunandi greiðslugáttir við það. Við nýttum þetta til að fjölga greiðslugáttunum sem þú getur notað með innheimtukerfi Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Eftir að hún hefur verið virkjuð, ef þú ert enn ekki með WooCommerce við
 
 Til að lesa meira um WooCommerce Integration viðbótina, **smelltu hér**.
 
-### Hvernig á að setja upp GoCardless viðbótina:
+### Hvernig á að setja upp GoCardless viðbótina: {#how-to-install-the-gocardless-add-on}
 
 Skrefin til að setja upp _GoCardless_ viðbótina eru nánast þau sömu og fyrir _WooCommerce_ viðbótina. Farðu á viðbótasíðuna og veldu **Ultimate Multisite: GoCardless Gateway** viðbótina.
 
@@ -111,7 +111,7 @@ Viðbótarglugginn opnast. Smelltu á **Setja upp núna**.
 
 Til að læra hvernig á að byrja með _GoCardless_ gateway, **lestu þessa grein**.
 
-### Hvernig á að setja upp Payfast viðbótina:
+### Hvernig á að setja upp Payfast viðbótina: {#how-to-install-the-payfast-add-on}
 
 Farðu á viðbótasíðuna og veldu **Ultimate Multisite: Payfast Gateway** viðbótina.
 

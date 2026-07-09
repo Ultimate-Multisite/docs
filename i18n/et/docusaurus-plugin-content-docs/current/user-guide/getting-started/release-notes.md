@@ -3,7 +3,7 @@ title: Uusjuhendid
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Versioon 2.13.0 — Valmistatud 2026-06-05
+# Versioon 2.13.0 — Valmistatud 2026-06-05 {#release-notes}
 
 * Uued: Lisatud suvereense tenantide tuent (sovereign-tenant) klienti kontoile, ostukusprotsedidele, lahendustele, faktuuritele, šabloni ülemine ja domeenimappimise protsessidele, et tenantide võrked saaksid kliente juhatada tagasi peale site'ile haldeta toimingute jaoks.
 * Uued: Lisatud uuesti kinnituse kontrollid korduvate jälgenduste jaoks, et veebilehed (gateways) võisid auto-uudutust välja lülitada, kui puudub salvestatud faktuuriseheloole, jälgenduse või vault tokeni.
@@ -17,7 +17,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 * Parandatud: Jälgenduste uuesti kinnitused, lülituse näitamine ja maksude kogumine äärmise juhtumid vältivad nüüd koondatud lahendusi, krahid või vajalikud maksed puudutamist.
 * Parandatud: Parandatud WordPressi compatibiliteet testitud kuni versiooni 7.0, tootmisvahetuste (production) Vue asetest laaditakse npm allikatest ja Cypress end-to-end kattuvus täna uurib rohkem ostukusprotsesse, seadistamise, SSO ja veebilehejuhtimise protsesse.
 
-## Versioon 2.12.0 — Valmistatud 2026-05-15
+## Versioon 2.12.0 — Valmistatud 2026-05-15 {#version-2130--released-on-2026-06-05}
 
 - Uued: Lisati Hostinger (hPanel) toetud host providerina domeenmapingu integreerimise abil.
 - Uued: Site Exporter käsitleb nüüd võrku importi pakette, mis võimaldab ümberkõrgevõrku site restoratsiooni lihtsustada.
@@ -29,7 +29,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Parandused: Site Exporter CLI säilitab nüüd korrektselt pooltud pooltseade võrku site valiku.
 - Parandused: Kaasa pakutud wp-cli on plugin pakkust välja eemaldatud, mis vähendab plugin suurust.
 
-## Versioon 2.11.0 — Valmistatud 2026-05-11
+## Versioon 2.11.0 — Valmistatud 2026-05-11 {#version-2120--released-on-2026-05-15}
 
 - Uued: Site exportid pakuvad nüüd itse käivitavat `index.php` faili, nii et ZIP-fail saab installida uue hostile ilma eraldi pluginil olla.
 - Uued: Võrku eksport võimaldab administraatoritele eksportaalselt välja võtta kõik alatesite ühe arkivi kätte Site Export administratiivsest lehel.
@@ -37,7 +37,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Uued: Checkout vormi redigeerija teavitab, kui toodet lisatakse ilma vajalikule valdkonnale konfiguratsioonil.
 - Uued: Import/Export seadistuste tab kirjeldab nüüd oma ületust selgelt ja linkub otse Site Export tööriistasse.
 
-## Versioon 2.10.0 — Valmistatud 2026-05-05
+## Versioon 2.10.0 — Valmistatud 2026-05-05 {#version-2110--released-on-2026-05-11}
 
 - Uued: PayPal suunupäivitusjuhtis (guided setup wizard) manuaidud lehekülenduste sisestamiseks OAuth flagiga, mis võimaldab sujuva veebilehtide konfiguratsiooni.
 - Uued: Teemakujärjestikute (Template switch) kasutajapane uuendatud koos uue **current-template** kaartiga, pysenduvate gridiga ja **Reset current template** nupuga.
@@ -50,7 +50,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Korratus: Filtreeritud SSO-teeg (Single Sign-On) on tagatud kõigis sisselogi protsessides.
 - Korratus: Lehekülenduste salvestamisel tühjad lehekülenduse identiteetivalikud valikud säilitatakse.
 
-## Versioon 2.9.0 — Valmistatud 2026-04-30
+## Versioon 2.9.0 — Valmistatud 2026-04-30 {#version-2100--released-on-2026-05-05}
 
 - Uued: Ükslehe eksporti ja impordi lisatud **Tools > Export & Import** allpool.
 - Korratus: Eksport ZIP failid on nüüd teenindatud autentseeritud allalaadimispäeva (download endpoint) abil.
@@ -63,7 +63,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Korratus: Impordi cron-juurdepiduse tsükline sõltuvus lahendatud.
 - Parandatud: ZipArchive kasutatakse nüüd Alchemy/Zippy asemel parema compatibiliteedi tõttu.
 
-## Versioon 2.8.0 — Valmistatud 2026-04-29
+## Versioon 2.8.0 — Valmistatud 2026-04-29 {#version-290--released-on-2026-04-30}
 
 Uus: Lisatud Jumper-liiklik (toggle) "Muud valikute" (Other Options) seadistuste käyttöliini (UI) sekundi.
 Uus: Lisatud staatuskolonn (Status column) kassapõhja vormide nimekiri tabelile.

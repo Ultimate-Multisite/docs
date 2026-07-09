@@ -3,7 +3,7 @@ title: MailChimp ସମନ୍ୱୟ
 sidebar_position: 7
 _i18n_hash: 9f328f09dc98677c9567636a81a7bf0a
 ---
-# MailChimp ସହିତ ଏକାଠି ହେବା (MailChimp Integration)
+# MailChimp ସହିତ ଏକାଠି ହେବା (MailChimp Integration) {#mailchimp-integration}
 
 ଏହି ଅବଶ୍ୟସନଟି **Mailchimp** ଆଡଉନ୍ (addon) ଦ୍ୱାରା ଯୋଗାଯୋଗ କରାଯାଇଛି।
 

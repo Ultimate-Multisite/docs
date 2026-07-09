@@ -3,13 +3,13 @@ title: Handmatige betalingen instellen
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Handmatige betalingen instellen (v2)
+# Handmatige betalingen instellen (v2) {#setting-up-manual-payments-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
 Handmatige betalingen zijn een manier om andere betaalmethoden aan te bieden als **Stripe** of **PayPal** niet beschikbaar is voor je gebruikers. Dit kan een overschrijving of bankoverschrijving zijn, of een andere betaalmethode die lokaal beschikbaar is voor je gebruikers.
 
-## Handmatige betalingen inschakelen
+## Handmatige betalingen inschakelen {#how-to-enable-manual-payments}
 
 Het instellen van handmatige betaling is heel eenvoudig. Je hoeft het alleen in te schakelen onder betaalgateways en gedetailleerde instructies toe te voegen over hoe de gebruiker de betaling moet verzenden.
 
@@ -31,7 +31,7 @@ En ze ontvangen ook een bericht op je **Thank You**-pagina met je betalingsinstr
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Handmatige betalingen bevestigen
+## Handmatige betalingen bevestigen {#confirming-manual-payments}
 
 Om een handmatige betaling te bevestigen, ga je naar het menu **Payments** in de linkerbalk. Daar kun je alle betalingen op je netwerk en hun details zien, inclusief hun **status**. Een handmatige betaling heeft altijd de status **Pending** totdat je deze handmatig wijzigt.
 

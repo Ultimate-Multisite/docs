@@ -3,15 +3,15 @@ title: Ìṣàkóso Olùkọ́ Ojúlé v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Ìṣàkóso Olùkọ́ Aaye v2
+# Ìṣàkóso Olùkọ́ Aaye v2 {#site-builder-orchestration-v2}
 
 Ìṣàkóso Olùkọ́ Aaye v2 (tí a ṣàfihàn nínú Gratis AI Agent v1.4.0) ni ẹ̀rọ tó ń fún ìdá aaye ayelujara aláìgbésẹ̀-púpọ̀ lágbára. Nígbà tí o bá ní kí aṣojú náà "kọ aaye ayelujara ilé oúnjẹ" tàbí "dá àkójọpọ̀ iṣẹ́ pẹ̀lú blog", olùṣàkóso náà máa pín ète gíga yẹn sí **ètò** tó ní ìlànà, ṣàwárí àwọn ohun ìfikún tí a nílò láti mú un ṣẹ, ṣiṣẹ́ ìgbésẹ̀ kọ̀ọ̀kan ní títẹ̀lé ara wọn, tọpinpin ìlọsíwájú, ó sì máa bọ́ láti inú àwọn àṣìṣe fúnra rẹ̀.
 
 ---
 
-## Bí Ó Ṣe Ń Ṣiṣẹ́
+## Bí Ó Ṣe Ń Ṣiṣẹ́ {#how-it-works}
 
-### 1. Ṣíṣe Ètò
+### 1. Ṣíṣe Ètò {#1-plan-generation}
 
 Nígbà tí aṣojú náà bá gba ìtọ́ni ìkọ́-aaye, ó máa pe agbára `create_site_plan` láti ṣe **ètò aaye** JSON kan. Ètò náà ṣàlàyé:
 
@@ -61,7 +61,7 @@ Nígbà tí aṣojú náà bá gba ìtọ́ni ìkọ́-aaye, ó máa pe agbára 
 }
 ```
 
-### 2. Ìṣàwárí Ohun Ìfikún
+### 2. Ìṣàwárí Ohun Ìfikún {#2-plugin-discovery}
 
 Kí ìmúṣẹ tó bẹ̀rẹ̀, olùṣàkóso náà máa ṣàyẹ̀wò `plugin_requirements` inú ètò náà, ó sì máa ṣàyẹ̀wò àwọn ohun ìfikún wo ló ti wà ní ṣíṣiṣẹ́ tẹ́lẹ̀. Fún àwọn ohun ìfikún tí kò sí, ó máa:
 
@@ -71,7 +71,7 @@ Kí ìmúṣẹ tó bẹ̀rẹ̀, olùṣàkóso náà máa ṣàyẹ̀wò `plug
 
 Ìkùnà ìṣàwárí ohun ìfikún kì í pa iṣẹ́ dúró — olùṣàkóso náà máa samisi àwọn ìgbésẹ̀ tí ó kan gẹ́gẹ́ bí `skipped`, ó sì máa tẹ̀síwájú pẹ̀lú ìyókù ètò náà.
 
-### 3. Ìmúṣẹ Ètò
+### 3. Ìmúṣẹ Ètò {#3-plan-execution}
 
 Olùṣàkóso náà máa pe `execute_site_plan` pẹ̀lú ID ètò náà. Ìmúṣẹ máa lọ ní ìpele-ní-ìpele, ìgbésẹ̀-ní-ìgbésẹ̀:
 
@@ -79,7 +79,7 @@ Olùṣàkóso náà máa pe `execute_site_plan` pẹ̀lú ID ètò náà. Ìmú
 - **Àwọn ìgbésẹ̀ tó ń ṣiṣẹ́ lẹ́gbẹ̀ẹ́ ara wọn** — àwọn ìgbésẹ̀ nínú ìpele kan náà tí kò ní ìgbẹ́kẹ̀lé ara wọn ni a máa rán jáde nígbà kan náà nígbà tí àmì `parallel` bá wà ní ṣíṣiṣẹ́.
 - **Àkókò tí ìgbésẹ̀ gbọ́dọ̀ parí** — ìgbésẹ̀ kọ̀ọ̀kan ní àkókò ìparí tirẹ̀ (àkọ́kọ́: ètò `Ability Timeout`). Ìgbésẹ̀ tí àkókò rẹ̀ kọjá ni a samisi `failed`, ètò náà sì máa tẹ̀síwájú.
 
-### 4. Títọpinpin Ìlọsíwájú
+### 4. Títọpinpin Ìlọsíwájú {#4-progress-tracking}
 
 Pe `get_plan_progress` nígbàkigbà láti ṣàyẹ̀wò ipò ìmúṣẹ:
 
@@ -104,7 +104,7 @@ Pe `get_plan_progress` nígbàkigbà láti ṣàyẹ̀wò ipò ìmúṣẹ:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Ìmúpadàbọ̀ Láti Inú Àṣìṣe
+### 5. Ìmúpadàbọ̀ Láti Inú Àṣìṣe {#5-error-recovery}
 
 Nígbà tí ìgbésẹ̀ kan bá kùnà, olùṣàkóso náà máa ṣàyẹ̀wò fún ìgbésẹ̀ **ìrànlọ́wọ́-padà** tí a ṣàlàyé nínú ètò náà:
 
@@ -115,9 +115,9 @@ Aṣojú náà máa jábọ̀ gbogbo ìkùnà nínú àkótán ètò ìkẹyìn,
 
 ---
 
-## Àwọn Agbára Ètò Aaye
+## Àwọn Agbára Ètò Aaye {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Ó ń ṣe ètò aaye tó ní ìlànà láti inú àlàyé ète ní èdè adayeba.
 
@@ -134,7 +134,7 @@ Aṣojú náà máa jábọ̀ gbogbo ìkùnà nínú àkótán ètò ìkẹyìn,
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Ó bẹ̀rẹ̀ sí í ṣiṣẹ́ ètò aaye tí a ti ṣe tẹ́lẹ̀.
 
@@ -150,7 +150,7 @@ Aṣojú náà máa jábọ̀ gbogbo ìkùnà nínú àkótán ètò ìkẹyìn,
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Ó dá ipò ìmúṣẹ lọwọlọwọ ti ètò aaye kan padà.
 
@@ -164,7 +164,7 @@ Aṣojú náà máa jábọ̀ gbogbo ìkùnà nínú àkótán ètò ìkẹyìn,
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ó yanjú ìgbésẹ̀ tó kùnà ní ọwọ́, ó sì tún bẹ̀rẹ̀ ìmúṣẹ ètò láti ìgbésẹ̀ tó kàn. Lo èyí nígbà tí ìmúpadàbọ̀ aládàáṣiṣẹ́ kò ṣeé ṣe, tí o sì fẹ́ dá sí i.
 
@@ -180,7 +180,7 @@ Aṣojú náà máa jábọ̀ gbogbo ìkùnà nínú àkótán ètò ìkẹyìn,
 
 ---
 
-## Fífi v1 àti v2 Wéra
+## Fífi v1 àti v2 Wéra {#comparing-v1-and-v2}
 
 | Ẹ̀yà | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Aṣojú náà máa jábọ̀ gbogbo ìkùnà nínú àkótán ètò ìkẹyìn,
 
 ---
 
-## Àwọn Àṣẹ Ètò WP-CLI
+## Àwọn Àṣẹ Ètò WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Ó ń ṣe ètò aaye láti inú àlàyé ète.
 
@@ -205,7 +205,7 @@ Aṣojú náà máa jábọ̀ gbogbo ìkùnà nínú àkótán ètò ìkẹyìn,
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Ó ń ṣiṣẹ́ ètò tí a ti ṣe tẹ́lẹ̀.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Ó ń fi ìlọsíwájú lọwọlọwọ hàn fún ètò tí ń ṣiṣẹ́ tàbí tí a ti parí.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Ó ṣe àtòjọ gbogbo àwọn ètò aaye (tí ń dúró, tí ń lọ lọwọ, àti tí a ti parí).
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Ó tún ètò tó kùnà ṣètò sí `pending` kí a lè tún un ṣiṣẹ́ láti ìbẹ̀rẹ̀.
 

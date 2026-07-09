@@ -3,13 +3,13 @@ title: Jounal chanjman tikè sipò
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Jounal chanjman Tikè Sipò
+# Jounal chanjman Tikè Sipò {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Amelyore: Retire anyè vendor/ nan swivi Git (deja kouvri pa .gitignore), sa ki diminye gwosè depo a
 * Amelyore: Teste jiska WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Koreksyon: Aksepte valè null nan setters modèl tikè ki nullable
 * Koreksyon: Estoke tout tikè yo nan tablo global atravè tout rezo a pou bon sipò multisite
 * Koreksyon: Kache chan anplwaye yo epi korije redireksyon paj vid sou fòm nouvo tikè kliyan an
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Amelyore: Chaje assets frontend sèlman sou paj tikè sipò yo, selon kondisyon
 * Amelyore: Sote autoloader plugin lan lè autoloader rasin Bedrock la deja chaje depandans yo
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Ajoute: Fonksyonalite konplè pou wè tikè pou admin ak frontend
 * Ajoute: Handler AJAX pou soumèt repons tikè
 * Ajoute: Sipò pou fonksyonalite repons tikè ak bon jesyon fòm
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Amelyore: Estrikti bazdone ak klas query ak schema ki apwopriye pou repons ak atachman
 * Amelyore: Migrasyon pou ale sou pwopriyete reyèl olye de atribi pou modèl tikè yo
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Mizajou: Chanje non prefiks la pou vin ultimate-multisite pou konsistans
 * Mizajou: Estandadizasyon text domain
 * Korije: Ti koreksyon ensèk ak amelyorasyon
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Premye lansman
 * Sistèm jesyon tikè konplè
 * Kontwòl aksè plizyè nivo

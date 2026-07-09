@@ -4,16 +4,16 @@ title: Sefa - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Fyuluta: wu_element_maybe_extract_arguments
+# Fyuluta: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
 
 Imawonjezera fyuluta wamba kuti ilole opanga mapulogalamu kukulitsa parser iyi kuti igwire ntchito ndi omanga kapena mapulagini owonjezera.
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.0
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L584) pa mzere 584
 
 
-## Zimabwezera
+## Zimabwezera {#returns}

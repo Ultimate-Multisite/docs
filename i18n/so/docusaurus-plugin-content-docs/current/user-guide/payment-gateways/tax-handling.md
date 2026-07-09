@@ -3,7 +3,7 @@ title: Maareynta Canshuuraha
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Maareynta Canshuurta
+# Maareynta Canshuurta {#tax-handling}
 
 Ultimate Multisite waxa uu leeyahay module ururinta canshuurta oo ku dhex jira plugin-keena aasaasiga ah, sidaas darteed haddii aad u baahan tahay inaad ururiso canshuuraha iibka ee qorshayaashaada, xirmooyinkaaga iyo adeegyadaada, si fudud ayaad sidaas u samayn kartaa adigoon u baahnayn inaad rakibto add-ons.
 
@@ -11,7 +11,7 @@ Shirkadaha ku yaal Yurub, waxaan bixinnaa **add-on** ku dara qalab iyo astaamo s
 
 Ultimate Multisite canshuuraha uma gudbiyo ama uma bixiyo dowladda adiga oo wakiil ah; waxaan si fudud kaaga caawinnaa inaad ururiso canshuuraha ku habboon waqtiga macaamilka. **Weli waxaad u baahan doontaa inaad canshuuraha adigu bixiso.**
 
-## Daaridda Ururinta Canshuurta
+## Daaridda Ururinta Canshuurta {#enabling-tax-collection}
 
 Ururinta canshuurta si caadi ah uma furna. Si aad u daarto, waxaad u baahan tahay inaad tagto **Ultimate Multisite > Settings > Taxes** oo aad beddesho si aad u daarto dejinta Enable Taxes.
 
@@ -25,7 +25,7 @@ Waxaad sidoo kale arki kartaa dejimaha canshuurta ee alaabooyinka gaarka ah:
 
 ![Dejimaha canshuurta ee alaabooyinka](/img/config/settings-taxes.png)
 
-### Canshuur laga reebay iyo Canshuur lagu daray
+### Canshuur laga reebay iyo Canshuur lagu daray {#tax-excluded-vs-tax-included}
 
 Sida caadiga ah, dhammaan qiimayaasha alaabtaada waa canshuur laga reebay, taas oo macnaheedu yahay in canshuuraha **aan lagu darin** qiimaha alaabta. Haddii aan go'aaminno in macaamilku bixiyo canshuuraha iibsasho gaar ah, waxaan canshuuraha ku dari doonnaa **dusha** wadarta hoose.
 
@@ -37,7 +37,7 @@ Ha iloobin inaad **kaydiso** isbeddellada aad samaysay.
 
 ###
 
-## Abuurista Heerarka Canshuurta
+## Abuurista Heerarka Canshuurta {#creating-tax-rates}
 
 Kadib markaad daarto Ururinta Canshuurta, waxaad u baahan doontaa inaad abuurto heerar canshuureed oo loogu talagalay goobaha gaarka ah adigoo isticmaalaya tifaftiraha heerarka canshuurta.
 
@@ -51,7 +51,7 @@ Bogga tifaftiraha heerarka canshuurta, waxaad ku dari kartaa Tax Rates cusub adi
 
 Waxaad u baahan doontaa inaad heer kasta oo canshuureed siiso **cinwaan** (oo loo isticmaalo biilasha). Kadib waxaad dooran kartaa **dalka** (loo baahan yahay), **gobolka,** iyo **magaalada** (labaduba waa ikhtiyaari) halka canshuurtan laga qaadi doono. Ugu dambayn, ku dar **heerka canshuurta boqolley ahaan**.
 
-### Qaybaha Canshuurta
+### Qaybaha Canshuurta {#tax-categories}
 
 Waxaad sidoo kale abuuri kartaa Tax Categories badan, si aad ugu darto heerar canshuureed oo kala duwan noocyada kala duwan ee alaabooyinka.
 
@@ -73,7 +73,7 @@ Waxaad dejin kartaa qaybta canshuurta ee alaab gaar ah adigoo tagaya **Product e
 
 Shaashaddaas isla ah, waxaad damin kartaa beddelka **Is Taxable?** si aad Ultimate Multisite u ogeysiiso inuusan canshuuro ka ururin alaabtaas gaarka ah.
 
-## Taageerada VAT Yurub
+## Taageerada VAT Yurub {#european-vat-support}
 
 Sida hore loo sheegay, waxaan haynaa add-on diyaar u ah macaamiisha ku sugan EU ee leh shuruudo dheeraad ah sabab la xiriirta xeerarka VAT Yurub.
 
@@ -101,7 +101,7 @@ Haddii aad dib ugu noqoto **Tax Settings tab** , waxaad arki doontaa ikhtiyaarro
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Soo jiididda Heerarka Canshuurta VAT
+### Soo jiididda Heerarka Canshuurta VAT {#pulling-on-vat-tax-rates}
 
 Mid ka mid ah qalabka ay isdhexgalkeennu ku daro waa awoodda lagu raro heerarka canshuurta ee dalalka xubnaha ka ah EU. Taas waxaa lagu samayn karaa adigoo booqanaya bogga tifaftiraha heerarka canshuurta kadib markaad daarto taageerada EU VAT.
 
@@ -111,7 +111,7 @@ Hoosta bogga, waxaad arki doontaa ikhtiyaarrada soo jiididda VAT. Doorashada noo
 
 Waxaad sidoo kale wax ka beddeli kartaa qiimayaasha kadib markaad soo jiiddo. Si aad u samayso, si fudud u tafatir safka jadwalka ee aad u baahan tahay oo guji si aad u kaydiso qiimayaasha cusub.
 
-### Xaqiijinta VAT
+### Xaqiijinta VAT {#vat-validation}
 
 Marka taageerada VAT la daaro, Ultimate Multisite wuxuu ku dari doonaa goob dheeraad ah foomka checkout, hoosta goobta cinwaanka billing. Goobtu waxay u muuqan doontaa oo keliya macaamiisha ku sugan EU.
 

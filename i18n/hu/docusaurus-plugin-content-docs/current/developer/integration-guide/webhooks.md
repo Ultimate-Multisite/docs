@@ -3,11 +3,11 @@ title: Webhook kezelése
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Kezelése
+# Webhook Kezelése {#webhook-handling}
 
 Készítsen saját webhook végpontokat (endpoints), hogy külső szolgáltatásoktól érkező eseményeket fogadjon el, és szinkronizálja az adatokat az Ultimate Multisite-tal.
 
-## Saját Webhook Végpont (Custom Webhook Endpoint)
+## Saját Webhook Végpont (Custom Webhook Endpoint) {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Biztonsági Megfontolások (Security Considerations)
+## Biztonsági Megfontolások (Security Considerations) {#security-considerations}
 
 - Mindig ellenőrizze a webhook aláírásait HMAC-ot vagy megosztott titkot használva.
 - Használjon `permission_callback`-ot a REST útvonalán (route) — soha ne állítsa `__return_true`-ra a produkcióban.

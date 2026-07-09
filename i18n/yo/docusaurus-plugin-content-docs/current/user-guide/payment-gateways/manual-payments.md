@@ -3,13 +3,13 @@ title: Ṣíṣètò Àwọn Ìsanwó Afọwọ́ṣe
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ṣíṣètò Àwọn Ìsanwó Afọwọ́ṣe (v2)
+# Ṣíṣètò Àwọn Ìsanwó Afọwọ́ṣe (v2) {#setting-up-manual-payments-v2}
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 
 Àwọn ìsanwó afọwọ́ṣe jẹ́ ọ̀nà fún ọ láti fi àwọn ọ̀nà ìsanwó míì hàn tí **Stripe** tàbí **PayPal** kò bá sí fún àwọn aṣàmúlò rẹ. Ó lè jẹ́ fífi owó ránṣẹ́ nípasẹ̀ waya tàbí báńkì, tàbí ọ̀nà ìsanwó míì tí ó wà fún àwọn aṣàmúlò rẹ ní agbègbè wọn.
 
-## Bí a ṣe ń mú Manual Payments ṣiṣẹ́
+## Bí a ṣe ń mú Manual Payments ṣiṣẹ́ {#how-to-enable-manual-payments}
 
 Ṣíṣètò ìsanwó afọwọ́ṣe rọrùn gan-an. O kan nílò láti mú un ṣiṣẹ́ lábẹ́ àwọn ẹnu-ọ̀nà ìsanwó, kí o sì fi àwọn ìtọ́nisọ́nà kíkún sí i nípa bí aṣàmúlò ṣe yẹ kí ó fi ìsanwó ránṣẹ́.
 
@@ -31,7 +31,7 @@ Wọn yóò sì tún gba ìfiranṣẹ́ kan lórí ojú-ewé **Thank You** rẹ
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Ṣíṣe ìmúdájú àwọn ìsanwó afọwọ́ṣe
+## Ṣíṣe ìmúdájú àwọn ìsanwó afọwọ́ṣe {#confirming-manual-payments}
 
 Láti jẹ́rìí ìsanwó afọwọ́ṣe, lọ sí akojọ **Payments** lórí ọ̀pá òsì. Ní bẹ̀ o lè rí gbogbo àwọn ìsanwó lórí nẹ́tíwọ́ọ̀kì rẹ àti àwọn àlàyé wọn, pẹ̀lú **status** wọn. Ìsanwó afọwọ́ṣe yóò máa ní **Pending** status títí tí ìwọ yóò fi yí i padà fúnra rẹ.
 

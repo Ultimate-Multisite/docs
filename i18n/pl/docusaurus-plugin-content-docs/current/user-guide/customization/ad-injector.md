@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Umieszczanie reklam w Twojej sieci z Ultimate Multisite: Ad Injector
+# Umieszczanie reklam w Twojej sieci z Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector to **darmowy dodatek**, który pozwala umieszczać reklamy w planach bezpośrednio z poziomu ich edycji.
 
@@ -35,7 +35,7 @@ Możesz również umieszczać reklamy w nagłówku panelu administracyjnego dla 
 
 _Przejdź do opcji Kod reklamy w panelu administracyjnym, jeśli chcesz wyświetlać reklamy w zapleczu użytkowników_
 
-### Nie tylko reklamy
+### Nie tylko reklamy {#beyond-advertising}
 
 Ultimate Multisite: Ad Injector możesz wykorzystać również do oferowania wsparcia w planach wyższego poziomu.
 

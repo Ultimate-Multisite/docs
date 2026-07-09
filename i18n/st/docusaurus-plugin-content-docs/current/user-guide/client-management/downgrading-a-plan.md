@@ -3,7 +3,7 @@ title: Ho lula le tšhobo
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Ho lapa le lapa (v2)
+# Ho lapa le lapa (v2) {#downgrading-a-plan-v2}
 
 _**LIPOTSE E KOTSI: Le tsela ea pele e hlalosang sehlopha sa Ultimate Multisite v2.x.**_
 
@@ -25,7 +25,7 @@ Ho fana ka ho tsoela, bo lethatang ba hloka ho tsamaya le bonkanya **Complete Ch
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Ho eng thata e hlatsa fa morao o fana'a (downgrade) plan?
+### Ho eng thata e hlatsa fa morao o fana'a (downgrade) plan? {#how-to-downgrade-a-plan}
 
 Fa morao o fetola plan a lefetse (downgrade), ho tla seng fa bohlokoa ba se tla fetoha kae. Ke tla re bolela hore na le fa ntho e ntse e le teng, e tla tsamaea kae.
 
@@ -46,7 +46,7 @@ Ho fela le posts tse di fetang ho tšoaetso la plan, hau na litlhogo tse 3: **Ke
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Enga eng a tšepo ea tšepetso (What happens to the payment)
+### Enga eng a tšepo ea tšepetso (What happens to the payment) {#what-happens-when-a-user-downgrades-their-plan}
 
 Ke tla re kae e le eng sehlopha sa tšepetso (payment) ho hloka.
 

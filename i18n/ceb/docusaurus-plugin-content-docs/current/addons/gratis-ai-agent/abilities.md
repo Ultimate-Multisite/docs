@@ -3,7 +3,7 @@ title: Mga Referensya sa mga Kakayahan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Mga Abilidad nga Reference
+# Mga Abilidad nga Reference {#abilities-reference}
 
 Ang mga ability kay ang mga atomic nga lihok (actions) nga mahimong tawgon sa Gratis AI Agent sa imong WordPress installation. Ang matag ability usa ka registered nga PHP class nga nagpakita og JSON schema — ang agent nagbasa niining schema samtang nag-runtime aron masabtan kung unsa nga mga parameters ang gikinahanglan ug unsa ang ibalik sa ability.
 
@@ -11,11 +11,11 @@ Kini nga pahina nagdokumento sa tanang abilities nga gihatag uban sa Gratis AI A
 
 ---
 
-## Custom Post Types
+## Custom Post Types {#custom-post-types}
 
 Kini nga mga ability maoy nagdumala sa custom post types (CPTs) nga na-register pinaagi sa agent. Ang mga pagparehistro gipadayon sa WordPress options table aron magpabilin kini bisan pa sa pag-deactivate ug reactivation sa plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Nagparehistro og bag-ong custom post type.
 
@@ -50,7 +50,7 @@ Nagparehistro og bag-ong custom post type.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Nagbalik sa tanang custom post types nga na-register sa agent.
 
@@ -71,7 +71,7 @@ Nagbalik sa tanang custom post types nga na-register sa agent.
 }
 ```
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Gidili (Unregisters) ni custom post type nga kaniuna gi-register sa agent. Ang mga existing posts anang klase nagpabilin sa database pero dili na ma-access pinaagi sa post type.
 
@@ -85,11 +85,11 @@ Gidili (Unregisters) ni custom post type nga kaniuna gi-register sa agent. Ang m
 
 ---
 
-## Custom Taxonomies
+## Custom Taxonomies {#custom-taxonomies}
 
 Kini ang mga abilidad para sa custom taxonomies. Sama sa CPTs (Custom Post Types), ang pag-register sa taxonomy nagpabilin gihapon.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Nagarehistro og bag-ong custom taxonomy.
 
@@ -119,7 +119,7 @@ Nagarehistro og bag-ong custom taxonomy.
 
 **Returns** `{ "success": true, "slug": "project-category" }`
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Nagabalik ni tanan custom taxonomies nga na-register sa agent.
 
@@ -142,7 +142,7 @@ Nagabalik ni tanan custom taxonomies nga na-register sa agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Gidili ang usa ka custom taxonomy nga kaniadto na-register sa agent.
 
@@ -156,11 +156,11 @@ Gidili ang usa ka custom taxonomy nga kaniadto na-register sa agent.
 
 ---
 
-## Design System
+## Design System {#design-system}
 
 Ang mga abilidad sa Design System nag-usab sa porma sa pagtan-aw sa WordPress site — gikan sa custom CSS hangtod sa block patterns ug logo sa site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Nagdadagdag og CSS sa `<head>` sa site pinaagi sa `wp_add_inline_style`. Ang CSS gi-store sa option nga `gratis_ai_agent_custom_css` ug kini gipakaon pag-ayo kung i-reset ang abilidad.
 
@@ -186,7 +186,7 @@ Nagdadagdag og CSS sa `<head>` sa site pinaagi sa `wp_add_inline_style`. Ang CSS
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Nag-rehistro ang usa ka reusable block pattern sa WordPress pattern library.
 
@@ -205,7 +205,7 @@ Nag-rehistro ang usa ka reusable block pattern sa WordPress pattern library.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Ilista ang tanang block patterns nga na-register sa agent.
 
@@ -227,7 +227,7 @@ Ilista ang tanang block patterns nga na-register sa agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Mag-set sa WordPress site logo ng usa ka gihatag nga attachment ID o remote image URL. Kung adunay URL nga gihatag, ang hulagway ma-download ug i-import sa Media Library.
 
@@ -244,7 +244,7 @@ Kinahanglan ang usa o ang `attachment_id` o `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Nag-aapply kini og ngalan nga preset sa kolor/typography sa active theme's `theme.json` (o `global-styles`). Ang mga preset kay mga bundle nga gi-curate ug gipadayon sa Gratis AI Agent team.
 
@@ -269,11 +269,11 @@ Nag-aapply kini og ngalan nga preset sa kolor/typography sa active theme's `them
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Ang mga abilidad sa Global Styles nagbasa ug magsulat og mga bili sa theme.json pinaagi sa WordPress Global Styles API, nga makaapekto sa tanang blocks ug templates sa tibuok website.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Nagbalik kini sa kasamtangang configuration sa global styles.
 
@@ -287,7 +287,7 @@ Nagbalik kini sa kasamtangang configuration sa global styles.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Nag-update og usa o labaw pa nga mga value sa global styles configuration.
 
@@ -314,7 +314,7 @@ Nag-update og usa o labaw pa nga mga value sa global styles configuration.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Gihaplos (resets) ang tanang mga kausaban sa global styles nga gipangita sa agent, ug ibalik ang theme defaults.
 
@@ -324,11 +324,11 @@ Gihaplos (resets) ang tanang mga kausaban sa global styles nga gipangita sa agen
 
 ---
 
-## Navigation Menus
+## Navigation Menus {#navigation-menus}
 
 Ang abilidad sa Navigation Menu naghimo ug nagdumala sa WordPress nav menus ug sa ilang mga item.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Naghimo og bag-ong WordPress navigation menu.
 
@@ -341,7 +341,7 @@ Naghimo og bag-ong WordPress navigation menu.
 
 **Magbalik** ang `{ "success": true, "menu_id": 7 }`
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Nag-usab o i-reassign ang usa ka menu o ihatag kini sa usa ka location sa theme.
 
@@ -357,7 +357,7 @@ Nag-usab o i-reassign ang usa ka menu o ihatag kini sa usa ka location sa theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Magdugang og item sa usa ka nag-inusarang navigation menu.
 
@@ -377,7 +377,7 @@ Magdugang og item sa usa ka nag-inusarang navigation menu.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Magtangtang og item gikan sa usa ka navigation menu.
 
@@ -391,7 +391,7 @@ Magtangtang og item gikan sa usa ka navigation menu.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Ilista ang tanang WordPress navigation menus, lakip na sa ilang gihatag nga theme locations.
 
@@ -399,11 +399,11 @@ Ilista ang tanang WordPress navigation menus, lakip na sa ilang gihatag nga them
 
 **Nagbalik (Returns)**
 
-## Pagdum sa Options
+## Pagdum sa Options {#options-management}
 
 Ang mga abilidad sa Options nagbasa ug magsulat og WordPress options pinaagi sa `get_option` / `update_option`. Naa'y built-in nga safety blocklist nga nagpugong sa dili sinadya nga pag-modify sa importanteng settings.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Nagbasa og usa ka WordPress option.
 
@@ -419,7 +419,7 @@ Magbalik og error kung ang `option_name` anaa sa safety blocklist.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Nagsulat og usa ka WordPress option.
 
@@ -437,7 +437,7 @@ Magbalik og error kung ang `option_name` anaa sa safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Mag-delete og usa ka WordPress option.
 
@@ -451,7 +451,7 @@ Magbalik og error kung ang `option_name` anaa sa safety blocklist.
 
 **Nagbalik (Returns)** `{ "success": true, "option_name": "my_custom_option" }`
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Nagaplista ang mga options sa WordPress nga nagahigma sa usa ka pattern.
 
@@ -475,11 +475,11 @@ Nagaplista ang mga options sa WordPress nga nagahigma sa usa ka pattern.
 
 ---
 
-## Content Management
+## Content Management {#content-management}
 
 Ang mga abilidad sa Content Management naghimo ug nag-edit og WordPress posts ug pages. Ang Post IDs ibalik aron ang sunod nga mga lakang sa multi-ability plans mahimong mag-refer sa gihimo nga content.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Naghimo og bag-ong WordPress post, page, o custom post type entry.
 
@@ -514,7 +514,7 @@ Naghimo og bag-ong WordPress post, page, o custom post type entry.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Mag-update sa naay existing WordPress post o page.
 
@@ -544,7 +544,7 @@ Mag-update sa naay existing WordPress post o page.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Maghimo og daghang posts sa usa lang ka tawag sa ability, nga makapamenos sa mga round-trip inang paghimo sa site o bulk content import. Ang mga post gihatag sunod-sunod; kung ang usa mapakyas, magpadayon ang uban ug ang kapakyasan ireport sa results array.
 
@@ -594,7 +594,7 @@ Maghimo og daghang posts sa usa lang ka tawag sa ability, nga makapamenos sa mga
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Naghatag og featured image (thumbnail sa post o page) sa usa ka naa nang post o page. Nagdawat kini og ID sa existing Media Library attachment o remote image URL; kung adunay gihatag nga URL, awtomatikong idownload ug i-import ang hulagway.
 
@@ -613,7 +613,7 @@ Kinahanglan nimo ang usa o duha (attachment_id o url) aron magamit.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 ```
 
 Ito ay gumagawa ng contact form gamit ang active form plugin (Contact Form 7, WPForms, Fluent Forms, o Gravity Forms, depende sa kung alin ang naka-install). Nagbabalik ito ng shortcode na pwede mong i-embed kahit saan sa anumang post o page.

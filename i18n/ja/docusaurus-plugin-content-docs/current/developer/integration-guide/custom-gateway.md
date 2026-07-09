@@ -3,11 +3,11 @@ title: カスタムゲートウェイ開発
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# カスタムゲートウェイ開発
+# カスタムゲートウェイ開発 {#custom-gateway-development}
 
 `Base_Gateway` クラスを拡張して、カスタム決済ゲートウェイを作成できます。
 
-## ゲートウェイクラス
+## ゲートウェイクラス {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## ゲートウェイを登録する
+## ゲートウェイを登録する {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## 主要メソッド
+## 主要メソッド {#key-methods}
 
 | メソッド | 目的 |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | 返金リクエストを処理する |
 | `get_payment_methods()` | 顧客の保存済み決済方法を返す |
 
-## 継続メンバーシップの更新認証情報
+## 継続メンバーシップの更新認証情報 {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 では、`auto_renew` が保存される前に、ゲートウェイ連携が継続メンバーシップに再利用可能な更新認証情報があるかどうかを報告できます。`wu_membership_has_renewal_credential` をフックし、次を返します。
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 新しい再利用可能な認証情報が保存された後、ゲートウェイの再認証フローが成功した一部として、認証情報不足のマーカーを消去してください。
 
-## ヒント
+## ヒント {#tips}
 
 - 失敗時は必ず `WP_Error` を返し、Ultimate Multisite がエラー表示を処理できるようにします
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - ゲートウェイ固有のログ記録には `wu_log_add()` を使用します
 
-## AI コネクタープロバイダーの機能
+## AI コネクタープロバイダーの機能 {#ai-connector-provider-capabilities}
 
 AI コネクターに基づく操作を呼び出すカスタム連携は、AI Provider for Anthropic Max v1.3.0 で導入された対応済み OAuth プロバイダーセットに合わせる必要があります。
 

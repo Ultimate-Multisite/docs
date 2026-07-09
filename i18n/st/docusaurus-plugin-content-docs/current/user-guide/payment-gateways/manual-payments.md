@@ -3,13 +3,13 @@ title: Ho Seta Litefo tsa Matsoho
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ho Hloma Ditefo tsa Ka Letsoho (v2)
+# Ho Hloma Ditefo tsa Ka Letsoho (v2) {#setting-up-manual-payments-v2}
 
 _**TEMOSO YA BOHLOKWA: Sehlooho sena se bua ka mofuta wa Ultimate Multisite 2.x.**_
 
 Ditefo tsa ka letsoho ke tsela ya hore o fe basebedisi ba hao mekgwa e meng ya tefo ha **Stripe** kapa **PayPal** e sa fumanehe bakeng sa basebedisi ba hao. E ka ba phetiso ya terata kapa ya banka, kapa mokgwa ofe kapa ofe wa tefo o fumanehang sebakeng sa basebedisi ba hao.
 
-## Mokgwa wa ho bulela Ditefo tsa Ka Letsoho
+## Mokgwa wa ho bulela Ditefo tsa Ka Letsoho {#how-to-enable-manual-payments}
 
 Ho hloma tefo ya ka letsoho ho bonolo haholo. O hloka feela ho e bulela tlasa dikgoro tsa tefo mme o kenye ditaelo tse qaqileng tsa kamoo mosebedisi a lokelang ho romela tefo ka teng.
 
@@ -31,7 +31,7 @@ Mme hape ba tla fumana molaetsa leqepheng la hao la **Ke a Leboha** o nang le di
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Ho netefatsa ditefo tsa ka letsoho
+## Ho netefatsa ditefo tsa ka letsoho {#confirming-manual-payments}
 
 Ho netefatsa tefo ya ka letsoho, eya lenaneng la **Ditefo** bareng e ka ho le letshehadi. Moo o ka bona ditefo tsohle netwekeng ya hao le dintlha tsa tsona, ho kenyeletswa le **boemo** ba tsona. Tefo ya ka letsoho e tla dula e na le boemo ba **E Emetseng** ho fihlela o e fetola ka letsoho.
 

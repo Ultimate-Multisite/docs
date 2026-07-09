@@ -4,11 +4,11 @@ title: Filtre - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# Filtre: wu_magic_link_url
+# Filtre: wu_magic_link_url {#filter-wumagiclinkurl}
 
 Filtra l’URL de l’enllaç màgic generat.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtra l’URL de l’enllaç màgic generat.
 | $site_id | `int` | L’ID del lloc. |
 | $redirect_to | `string` | L’URL de redirecció. |
 
-### Des de
+### Des de {#since}
 
 - 2.0.0
-### Font
+### Font {#source}
 
 Definit a [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L148) a la línia 148

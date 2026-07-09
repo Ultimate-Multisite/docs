@@ -4,11 +4,11 @@ title: Aksyon - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Aksiyon: wu_handle_user_meta_fields
+# Aksiyon: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Payagan ang mga developer ng plugin na mag-save ng user meta data sa iba't ibang paraan kung kailangan nila.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Payagan ang mga developer ng plugin na mag-save ng user meta data sa iba't ibang
 | $customer | `\Customer` | Ang Ultimate Multisite customer object. |
 | $checkout | `\Checkout` | Ang checkout class. |
 
-### Mula noong
+### Mula noong {#since}
 
 - 2.0.4
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) sa linya 1244

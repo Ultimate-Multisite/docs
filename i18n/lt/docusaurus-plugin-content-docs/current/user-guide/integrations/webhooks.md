@@ -3,7 +3,7 @@ title: Webhookai
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhookai pagrindinis vaizdas (v2)
+# Webhookai pagrindinis vaizdas (v2) {#a-first-look-on-webhooks-v2}
 
 _**PAŽYMĖ: Ši funkcija arba straipsnis skirti pažangos vartotojams.**_
 
@@ -11,7 +11,7 @@ _**PAŽYMĖ: Ši funkcija arba straipsnis skirti pažangos vartotojams.**_
 
 Tai yra naudinga, jei turite integruoti ar pateikti saugias duomenis nuo Ultimate Multisite į kitą CRM arba sistemą kiekvienai laiku, kai pasiekiama jokių įvykio. Pavyzdžiui, jums reikia siuntioti vartotojo vardą ir el. pašto adresą į el. sąrašą kiekvienai naujausios vartotojo paskyros kūrimo metu.
 
-## Kaip sukurti webhooką
+## Kaip sukurti webhooką {#how-to-create-a-webhook}
 
 Sukurti webhooką galite eiti į savo tinklo administratoriaus dashboardą. Spauskite **Ultimate Multisite > Webhooks > Pridėti naują webhooką.**
 

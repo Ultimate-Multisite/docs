@@ -3,13 +3,13 @@ title: チェックアウトフィールドと顧客 DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout フィールドと顧客 DNS 管理
+# Checkout フィールドと顧客 DNS 管理 {#checkout-field-and-customer-dns-management}
 
-## Domain Selection チェックアウトフィールド
+## Domain Selection チェックアウトフィールド {#the-domain-selection-checkout-field}
 
 **Domain Selection** フィールドは、顧客が自分のサイトのドメインを取得する方法を選べるチェックアウト要素です。任意のチェックアウトフォームに追加すると、ドメイン販売を有効にできます。
 
-### チェックアウトフォームにフィールドを追加する
+### チェックアウトフォームにフィールドを追加する {#adding-the-field-to-a-checkout-form}
 
 1. **Network Admin › Ultimate Multisite › Checkout Forms** に移動します
 2. チェックアウトフォームを開くか作成します
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. フィールドオプションを設定します（下記参照）
 6. フォームを保存します
 
-### フィールドオプション
+### フィールドオプション {#field-options}
 
 **ドメインモード** — 顧客に表示するタブを選びます。各モードは個別に有効化または無効化できます。
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **ドメイン商品** — 任意で、このフィールドを特定のドメイン商品に固定できます。設定しない場合、アドオンは顧客が検索した TLD に基づいて、一致する商品を自動的に選択します。
 
-### 登録者連絡先フィールド
+### 登録者連絡先フィールド {#registrant-contact-fields}
 
 顧客が **新しいドメインを登録** タブを選択すると、チェックアウトフォームに登録者連絡先フィールドがインラインで追加されます。
 
@@ -43,11 +43,11 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 これらはすべてのレジストラで必須であり、登録 API 呼び出しの前に検証されます。電話番号は、レジストラが期待する `+CC.NNN` の国際形式に自動で整形されます。
 
-### 自動生成されるサイト URL
+### 自動生成されるサイト URL {#auto-generated-site-url}
 
 顧客がドメインを登録またはマッピングすると、サイト URL フィールドには選択したドメインが自動入力されます。顧客が別の URL フィールドに入力する必要はありません。
 
-### 検索の動作
+### 検索の動作 {#search-behaviour}
 
 - 顧客の入力中に、AJAX でドメインの空き状況をリアルタイムに確認します
 - 希望するドメインが利用できない場合は、代替 TLD の候補が表示されます
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## 顧客 DNS 管理
+## 顧客 DNS 管理 {#customer-dns-management}
 
 顧客は **My Account** ページで、自分のドメイン項目から登録済みドメインの DNS レコードを管理できます。
 
-### 対応レコードタイプ
+### 対応レコードタイプ {#supported-record-types}
 
 | タイプ | 用途 |
 |---|---|
@@ -91,11 +91,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 | **MX** | メール交換サーバーを設定します |
 | **TXT** | SPF、DMARC、検証、その他のテキストレコードを追加します |
 
-### DNS 管理に対応しているプロバイダー
+### DNS 管理に対応しているプロバイダー {#which-providers-support-dns-management}
 
 DNS 管理（レコードの追加、編集、削除）は **OpenSRS**、**ResellerClub**、**Enom**、**HostAfrica**、**Openprovider** で利用できます。**Hostinger** ドメインは Domain Seller を通じてネームサーバーを更新できます。ホストされたドメインの DNS レコードは、コアの Hostinger ドメインマッピング連携で管理されます。Namecheap、GoDaddy、NameSilo のドメインではステータスと有効期限情報が表示されますが、DNS はレジストラのコントロールパネルで直接管理する必要があります。
 
-### 既定の DNS レコード
+### 既定の DNS レコード {#default-dns-records}
 
 ドメイン登録時に自動適用される既定の DNS レコードを設定できます。**Settings › Domain Seller › Default DNS Records** に移動します。
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### 管理者: DNS の表示と編集
+### 管理者: DNS の表示と編集 {#admin-viewing-and-editing-dns}
 
 ネットワーク管理者は、**Network Admin › Ultimate Multisite › Domains** のドメイン編集ページから、任意の顧客ドメインの DNS レコードを表示および編集できます。

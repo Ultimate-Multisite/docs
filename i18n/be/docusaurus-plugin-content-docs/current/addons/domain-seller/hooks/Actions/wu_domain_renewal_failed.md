@@ -4,11 +4,11 @@ title: Дзея - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed
+# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Выклікаецца, калі спроба пановлення домену не ўдалася.
 
-## Параметры
+## Параметры {#parameters}
 
 | Назва | Тып | Апісан |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bff3fd7903485780766e490300546070
 | $renewal_data | `array<string,mixed>` | Метаданыя пановлення (назва домену, колькасць гадоў і г.д.). |
 | $error_message | `string` | Адразу чытальнае паведамленне аб памылцы ад рэгістратара. |
 
-### З
+### З {#since}
 
 - 2.0.0
-### Вынік
+### Вынік {#source}
 
 Вызначаны ў [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) на 630-й кропцы

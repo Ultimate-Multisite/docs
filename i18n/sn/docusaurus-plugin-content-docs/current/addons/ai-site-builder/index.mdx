@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Zvinodiwa
+## Zvinodiwa {#requirements}
 
 - WordPress 5.3 kana yepamusoro
 - PHP 7.4 kana yepamusoro
 - Multisite Ultimate plugin (iri kushanda)
 
-## Kuiswa
+## Kuiswa {#installation}
 
 1. Isa mafaera eaddon mudhairekitori rako re`/wp-content/plugins/`
 2. Shandisa plugin kuburikidza nemenyu ye'Plugins' muWordPress
 3. Gadzirisa marongero eaddon mu network admin
 
-## Kuvandudza
+## Kuvandudza {#development}
 
-### Kugadzirisa
+### Kugadzirisa {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Chimiro chePurojekiti
+### Chimiro chePurojekiti {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Mitemo yekuvandudza kodhi
 ```
 
-### Kuyedza
+### Kuyedza {#testing}
 
 Addon iyi inosanganisira hurongwa hwakazara hwekuyedza:
 
@@ -79,44 +79,44 @@ Addon iyi inosanganisira hurongwa hwakazara hwekuyedza:
 - **Kufukidzwa kweBvunzo**: Yakagadzirirwa kutevera kufukidzwa kwekodhi
 - **Kuyedza Multisite**: Miedzo inomhanya munzvimbo ye multisite
 
-### Mitemo yeKodhi
+### Mitemo yeKodhi {#code-standards}
 
 - **WordPress Coding Standards**: Inomanikidzwa kuburikidza nePHPCS
 - **Kuenderana nePHP 7.4+**: Zvimiro zvemazuva ano zvePHP zvinotsigirwa
 - **Ongororo Isingachinji**: Kubatanidzwa kwePHPStan kwekuongorora mhando
 - **Kuvandudza Kodhi**: Mitemo yeRector yekusimudzira PHP
 
-### Hurongwa hweKuvaka
+### Hurongwa hweKuvaka {#build-system}
 
 - **Kugadziriswa kweZviwanikwa**: Kuderedza mafaera eCSS/JS
 - **Dudziro**: Kugadzirwa kwefaira rePOT
 - **Kupakira**: Kugadzirwa kwearchive yekugovera
 - **Modhi yeKuvandudza**: Zviwanikwa zvisina kuderedzwa zvekutsvaga zvikanganiso
 
-## Kugadziriswa
+## Kugadziriswa {#configuration}
 
 Addon inotsigira sarudzo dzakasiyana dzekugadzirisa dzinowanikwa kuburikidza ne network admin interface.
 
-## Hooks neFilters
+## Hooks neFilters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Inotangwa mushure mekutanga kweaddon
 - `ultimate-multisite-ai-site-builder_loaded` - Inotangwa mushure mekunge mafaera ese eaddon atakurwa
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Chinja marongero eaddon
 - `ultimate-multisite-ai-site-builder_enabled` - Pfuurira pamusoro pemamiriro ekugonesa/kudzima addon
 
-## Rezinesi
+## Rezinesi {#license}
 
 Addon iyi ine rezinesi pasi peGPL v3 kana yepashure.
 
-## Rutsigiro
+## Rutsigiro {#support}
 
 Kuti uwane rutsigiro nemagwaro, shanyira [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): tumidzazve prefix kuti ive ultimate-multisite; vandudza text domain; simudza version.
 

@@ -3,9 +3,9 @@ title: Orodha ya Mabadiliko ya Kiunganishi cha AI Kamili kwa WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Orodha ya Mabadiliko ya Ultimate AI Connector kwa WebLLM
+# Orodha ya Mabadiliko ya Ultimate AI Connector kwa WebLLM {#ultimate-ai-connector-for-webllm-changelog}
 
-## Version 1.1.0 — Iliachishwa tarehe 2026-04-09
+## Version 1.1.0 — Iliachishwa tarehe 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Jipya: Widget ya mazungumzo inayotembea na kiashiria cha hali kwenye admin-bar — mtumiaji yeyote aliyelogin anaweza kuuliza LLM iliyo kwenye browser moja kwa moja kutoka kwenye sehemu ya mbele (front end).
 * Jipya: SharedWorker runtime — injini ya MLC sasa inatembea ndani ya SharedWorker, hivyo tab nyingi zinashiriki kikao kimoja cha GPU badala ya kupambana nalo.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Marekebisho: Kuunganisha WebLLM kwenye filter ya wpai_preferred_text_models ili kipengele cha AI Experiments kielekeze kwenye injini ya browser wakati mfumo unapowekwa.
 * Kuboresha: Marekebisho ya cache-busting, ukiunganishaji wa maudhui (content normalisation), na marekebisho ya marejeo ya vifaa (hardware-reference) yaliyogunduliwa wakati wa majaribio ya mwisho hadi mwisho (end-to-end testing).
 
-## Version 1.0.0 — Uzinduzi wa Awali
+## Version 1.0.0 — Uzinduzi wa Awali {#version-100--initial-release}

@@ -4,20 +4,20 @@ title: 'Gnìomh - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_\{$this->id\}_before_render
+# Action: wu_page_\{$this->id\}_before_render {#action-wupagethis-idbeforerender}
 
 Leig le luchd-leasachaidh plugin susbaint a bharrachd a chur ris mus cuir sinn an duilleag a-mach.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
 | $page_id | `string` | ID na duilleige seo. |
 | $page | `object` | Nì na duilleige. |
 
-### Bho
+### Bho {#since}
 
 - 1.8.2
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L398) aig loidhne 398

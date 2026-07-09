@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Mahitaji (Requirements)
+## Mahitaji (Requirements) {#requirements}
 
 - WordPress 5.3 au zaidi
 - PHP 7.4 au zaidi
 - Plugin ya Ultimate Multisite (iwe imefunguliwa/active)
 
-## Usakinishaji (Installation)
+## Usakinishaji (Installation) {#installation}
 
 1. Pakia faili za addon kwenye saraka yako ya `/wp-content/plugins/`
 2. Fungulia plugin kupitia menyu ya 'Plugins' ndani ya WordPress
 3. Sanifisha mipangilio ya addon katika sehemu ya kiadmini ya network (network admin)
 
-## Uendelezaji (Development)
+## Uendelezaji (Development) {#development}
 
-### Kuandaa (Setup)
+### Kuandaa (Setup) {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Muundo wa Mradi (Project Structure)
+### Muundo wa Mradi (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Kanuni za kuboresha msimbo
 ```
 
-### Vipimo (Testing)
+### Vipimo (Testing) {#testing}
 
 Addon inajumuisha mfumo kamili wa kufanya vipimo:
 
@@ -79,44 +79,44 @@ Addon inajumuisha mfumo kamili wa kufanya vipimo:
 - **Test Coverage**: Imewekwa kufuatilia ufuatiliaji wa msimbo
 - **Multisite Testing**: Vipimo vinatendeka katika mazingira ya multisite
 
-### Viwango vya Msimbo (Code Standards)
+### Viwango vya Msimbo (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: Vinatunzwa kupitia PHPCS
 - **PHP 7.4+ Compatibility**: Vipengele vya kisasa vya PHP vinasaudiwa
 - **Static Analysis**: Uunganishaji wa PHPStan kwa ajili ya kuangalia aina za data (type checking)
 - **Code Modernization**: Kanuni za Rector kwa ajili ya kuboresha PHP
 
-### Mfumo wa Kuunda (Build System)
+### Mfumo wa Kuunda (Build System) {#build-system}
 
 - **Asset Processing**: Kupunguza ukubwa (Minification) kwa faili za CSS/JS
 - **Translation**: Kuunda faili za POT
 - **Packaging**: Kuunda archive kwa ajili ya usambazaji
 - **Development Mode**: Rasilimali zisizopunguzwa ukubwa kwa ajili ya kutatua matatizo (debugging)
 
-## Kuweka Mipangilio (Configuration)
+## Kuweka Mipangilio (Configuration) {#configuration}
 
 Addon inasaidia chaguo mbalimbali za kuweka mipangilio ambazo zinaweza kufikiwa kupitia kiadmini cha network.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions (Vitendo)
+### Actions (Vitendo) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Inatokea baada ya kuanzishwa kwa addon
 - `ultimate-multisite-ai-site-builder_loaded` - Inatokea baada ya faili zote za addon kupakiwa
 
-### Filters (Vichujio)
+### Filters (Vichujio) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Kubadilisha mipangilio ya addon
 - `ultimate-multisite-ai-site-builder_enabled` - Kubatilisha hali ya kuwasha/kizima kwa addon
 
-## Leseni (License)
+## Leseni (License) {#license}
 
 Addon hii inasimamiwa chini ya GPL v3 au baadaye.
 
-## Msaada (Support)
+## Msaada (Support) {#support}
 
 Kwa msaada na waraka (documentation), tembelea [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): kubadilisha kiambatanisho (prefix) kuwa ultimate-multisite; kusasisha eneo la maandishi (text domain); kuongeza namba ya toleo.
 

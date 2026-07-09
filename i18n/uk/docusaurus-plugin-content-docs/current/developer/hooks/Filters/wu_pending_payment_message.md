@@ -4,11 +4,11 @@ title: Фільтр - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Фільтр: wu_pending_payment_message
+# Фільтр: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Дозволяє користувачеві змінити повідомлення про очікувані платежі.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 | $customer | `\WP_Ultimo\Models\Customer` | Поточний клієнт. |
 | $pending_payments | `array` | Список очікуваних платежів. |
 
-### Починаючи з
+### Починаючи з {#since}
 
 - 2.0.19
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) на рядку 244

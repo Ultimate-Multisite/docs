@@ -3,13 +3,13 @@ title: Ukwakha Ukuhlanganiswa Kombhalisi Okwenziwe Ngokwezifiso
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ukwakha Ukuhlanganiswa Kombhalisi Ngokwezifiso
+# Ukwakha Ukuhlanganiswa Kombhalisi Ngokwezifiso {#building-a-custom-registrar-integration}
 
 I-addon ye-Domain Seller isebenzisa iphethini ye-**Integration Registry**. Umbhalisi ngamunye uyikilasi le-PHP elisebenzisa `Domain_Selling_Capability` futhi lizibhalisa nge-action hook ethi `wu_domain_seller_register_capabilities`.
 
 Lo mhlahlandlela ubonisa ukuthi ungaxhuma kanjani umbhalisi wangokwezifiso.
 
-## I-interface
+## I-interface {#the-interface}
 
 Ikilasi lakho kufanele lisebenzise `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` futhi linwebe `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Izindlela ozikhethelayo
+### Izindlela ozikhethelayo {#optional-methods}
 
 Sebenzisa lezi ukuze uvule izici ezengeziwe. I-addon ithola ukusekelwa nge-`method_exists()`:
 
@@ -81,7 +81,7 @@ Sebenzisa lezi ukuze uvule izici ezengeziwe. I-addon ithola ukusekelwa nge-`meth
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### Umthetho wenani elibuyiswayo
+### Umthetho wenani elibuyiswayo {#return-value-convention}
 
 Zonke izindlela zibuyisa uhlu olune-key ethi `success` okungenani:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Ukubhalisa ikhono lakho
+## Ukubhalisa ikhono lakho {#registering-your-capability}
 
 Bhalisa ikilasi lakho usebenzisa i-action ethi `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ I-agumenti yokuqala ku-`add_capability()` yi-**provider ID** — i-slug yezinhla
 
 ---
 
-## Ukwengeza izinkambu zemininingwane yokuqinisekisa kuwizadi
+## Ukwengeza izinkambu zemininingwane yokuqinisekisa kuwizadi {#adding-credential-fields-to-the-wizard}
 
 Ukuze uvumele abalawuli bafake imininingwane yokuqinisekisa ngewizadi yokusetha, bhalisa ukuhlanganiswa kwakho:
 
@@ -137,7 +137,7 @@ Imininingwane yokuqinisekisa igcinwa njengezinketho zenethiwekhi kusetshenziswa 
 
 ---
 
-## Ama-hook ezenzo zangemva kokubhaliswa
+## Ama-hook ezenzo zangemva kokubhaliswa {#hooks-for-post-registration-actions}
 
 Sebenzisa lezi zenzo ukuze uqalise ama-webhook, ukuhlinzekwa, izaziso, noma izibuyekezo ze-CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Ukuloga
+## Ukuloga {#logging}
 
 Bhala esiteshini selogi esiqondene nomhlinzeki wakho usebenzisa `wu_log_add()`:
 

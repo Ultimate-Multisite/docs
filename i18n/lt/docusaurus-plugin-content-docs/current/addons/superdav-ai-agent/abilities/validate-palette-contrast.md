@@ -3,15 +3,15 @@ title: Patikrinti paletės kontrastą
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Paletės kontrasto patikrinimas
+# Paletės kontrasto patikrinimas {#validate-palette-contrast}
 
 **Validate Palette Contrast** gebėjimas patikrina spalvų poras jūsų dizaino paletėje pagal WCAG (Web Content Accessibility Guidelines) atitiktį prieš pritaikant jas jūsų temai.
 
-## Apžvalga
+## Apžvalga {#overview}
 
 Šis gebėjimas užtikrina, kad jūsų svetainės spalvų schema atitiktų prieinamumo standartus, patikrindamas kontrasto santykius tarp teksto ir fono spalvų. Jis padeda išvengti spalvų derinių, kuriuos gali būti sunku perskaityti naudotojams, turintiems regos sutrikimų.
 
-## Įvesties formatas
+## Įvesties formatas {#input-format}
 
 Gebėjimas kaip įvestį priima spalvų paletę:
 
@@ -35,7 +35,7 @@ Gebėjimas kaip įvestį priima spalvų paletę:
 }
 ```
 
-### Parametrai
+### Parametrai {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Gebėjimas kaip įvestį priima spalvų paletę:
 | `wcag_level` | string | No | WCAG atitikties lygis: "A", "AA" (numatytasis) arba "AAA" |
 | `pairs_to_check` | array | No | Konkrečios spalvų poros, kurias reikia patikrinti (pvz., `["primary-text", "background-text"]`) |
 
-## Tikrinami WCAG lygiai
+## Tikrinami WCAG lygiai {#wcag-levels-checked}
 
 Gebėjimas patikrina kontrasto santykius pagal WCAG standartus:
 
@@ -56,7 +56,7 @@ Gebėjimas patikrina kontrasto santykius pagal WCAG standartus:
 - **Įprastas tekstas** — tekstas, mažesnis nei 18pt (arba 14pt paryškintas)
 - **Didelis tekstas** — 18pt arba didesnis tekstas (arba 14pt paryškintas ar didesnis)
 
-## Išvesties schema
+## Išvesties schema {#output-schema}
 
 Gebėjimas grąžina išsamią patikrinimo ataskaitą:
 
@@ -95,7 +95,7 @@ Gebėjimas grąžina išsamią patikrinimo ataskaitą:
 }
 ```
 
-### Išvesties laukai
+### Išvesties laukai {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Gebėjimas grąžina išsamią patikrinimo ataskaitą:
 | `status` | string | "pass" arba "fail" kiekvienai porai |
 | `recommendations` | array | Pasiūlymai, kaip pagerinti neatitinkančias poras |
 
-## Naudojimo pavyzdys
+## Naudojimo pavyzdys {#usage-example}
 
 **Užklausa:**
 ```
@@ -119,7 +119,7 @@ Gebėjimas patikrina visus spalvų derinius ir grąžina:
 - ✅ Fonas + tekstas: santykis 12.1:1 (atitinka WCAG AAA)
 - Bendrai: atitinka WCAG AA
 
-## Integracija su Theme Builder
+## Integracija su Theme Builder {#integration-with-theme-builder}
 
 Naudojant Theme Builder dizaino krypties pasirinkimą, Validate Palette Contrast gebėjimas:
 
@@ -129,7 +129,7 @@ Naudojant Theme Builder dizaino krypties pasirinkimą, Validate Palette Contrast
 4. Pateikia rekomendacijas neatitinkančioms poroms
 5. Neleidžia pritaikyti neprieinamų spalvų schemų
 
-## Geriausios praktikos
+## Geriausios praktikos {#best-practices}
 
 - **Pradėkite nuo AA lygio** — WCAG AA yra standartas daugumai svetainių
 - **Patikrinkite prieš pritaikydami** — patikrinkite savo paletę prieš įsipareigodami dizainui
@@ -137,7 +137,7 @@ Naudojant Theme Builder dizaino krypties pasirinkimą, Validate Palette Contrast
 - **Atsižvelkite į naudotojų nuostatas** — kai kurie naudotojai gali turėti papildomą jautrumą spalvoms
 - **Naudokite kontrasto tikrintuvus** — derinkite šį gebėjimą su naršyklės įrankiais patikrai
 
-## Neatitinkančios poros ir rekomendacijos
+## Neatitinkančios poros ir rekomendacijos {#failing-pairs-and-recommendations}
 
 Jei spalvų pora nepraeina patikrinimo, gebėjimas pateikia rekomendacijas:
 
@@ -155,7 +155,7 @@ Jei spalvų pora nepraeina patikrinimo, gebėjimas pateikia rekomendacijas:
 }
 ```
 
-## Susiję gebėjimai
+## Susiję gebėjimai {#related-abilities}
 
 - [Generuoti Logo SVG](./generate-logo-svg.md) — kurkite logotipus su patikrinta spalvų palete
 - [Sukurti meniu](./create-menu.md) — kurkite navigaciją su prieinamomis spalvomis

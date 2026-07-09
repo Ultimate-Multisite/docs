@@ -4,11 +4,11 @@ title: Eylem - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Aksiyon: wu_domain_renewal_failed
+# Aksiyon: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Bir alan adı yenileme girişimi başarısız olduktan sonra tetiklenir.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Ad | Tip | Açıklama |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Bir alan adı yenileme girişimi başarısız olduktan sonra tetiklenir.
 | $renewal_data | `array&lt;string,mixed&gt;` | Yenileme meta verileri (domain_name, years vb.). |
 | $error_message | `string` | Kayıt kuruluşu tarafından sağlanan, okunabilir hata mesajı. |
 
-### Sürüm
+### Sürüm {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) dosyasında 630. satırda tanımlanmıştır.

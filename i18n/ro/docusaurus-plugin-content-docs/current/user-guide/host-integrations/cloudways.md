@@ -3,18 +3,18 @@ title: Integrare Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrare Cloudways
+# Integrare Cloudways {#cloudways-integration}
 
-## Prezentare generală
+## Prezentare generală {#overview}
 Cloudways este o platformă de găzduire cloud administrată care îți permite să implementezi site-uri WordPress pe diverși furnizori cloud precum DigitalOcean, AWS, Google Cloud și alții. Această integrare permite sincronizarea automată a domeniilor și gestionarea certificatelor SSL între Ultimate Multisite și Cloudways.
 
-## Funcționalități
+## Funcționalități {#features}
 - Sincronizare automată a domeniilor
 - Gestionarea certificatelor SSL
 - Suport pentru domenii suplimentare
 - Validare DNS pentru certificate SSL
 
-## Cerințe
+## Cerințe {#requirements}
 Următoarele constante trebuie definite în fișierul tău `wp-config.php`:
 
 ```php
@@ -30,16 +30,16 @@ Opțional, poți defini și:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Instrucțiuni de configurare
+## Instrucțiuni de configurare {#setup-instructions}
 
-### 1. Obține credențialele API Cloudways
+### 1. Obține credențialele API Cloudways {#1-get-your-cloudways-api-credentials}
 
 1. Autentifică-te în Dashboard-ul Cloudways
 2. Mergi la "Account" > "Chei API"
 3. Generează o cheie API dacă nu ai deja una
 4. Copiază emailul și cheia API
 
-### 2. Obține ID-urile serverului și aplicației tale
+### 2. Obține ID-urile serverului și aplicației tale {#2-get-your-server-and-application-ids}
 
 1. În Dashboard-ul Cloudways, mergi la "Servere"
 2. Selectează serverul pe care este găzduit multisite-ul tău WordPress
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Mergi la "Aplicații" și selectează aplicația ta WordPress
 5. ID-ul aplicației este vizibil în URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Adaugă constantele în wp-config.php
+### 3. Adaugă constantele în wp-config.php {#3-add-constants-to-wp-configphp}
 
 Adaugă următoarele constante în fișierul tău `wp-config.php`:
 
@@ -70,7 +70,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 mai jos pentru motivul pentru care acest lucru împiedică emiterea certificatelor SSL per chiriaș.
 :::
 
-### 4. Activează integrarea
+### 4. Activează integrarea {#4-enable-the-integration}
 
 1. În administrarea WordPress, mergi la Ultimate Multisite > Setări
 2. Navighează la fila "Mapare domenii"
@@ -78,9 +78,9 @@ mai jos pentru motivul pentru care acest lucru împiedică emiterea certificatel
 4. Activează integrarea Cloudways
 5. Fă clic pe "Salvează modificările"
 
-## Cum funcționează
+## Cum funcționează {#how-it-works}
 
-### Sincronizarea domeniilor
+### Sincronizarea domeniilor {#domain-syncing}
 
 Când un domeniu este mapat în Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Când un domeniu este mapat în Ultimate Multisite:
 
 Notă: API-ul Cloudways necesită trimiterea listei complete de domenii de fiecare dată, nu doar adăugarea sau eliminarea domeniilor individuale.
 
-### Gestionarea certificatelor SSL
+### Gestionarea certificatelor SSL {#ssl-certificate-management}
 
 După ce domeniile sunt sincronizate:
 
@@ -106,7 +106,7 @@ integrare. Pentru a folosi un certificat wildcard pe Cloudways, ar trebui să î
 manual, dar acest lucru blochează emiterea Let's Encrypt per domeniu pentru domeniile personalizate mapate
 (vezi capcana de mai jos).
 
-## Domenii suplimentare
+## Domenii suplimentare {#extra-domains}
 
 Constanta `WU_CLOUDWAYS_EXTRA_DOMAINS` îți permite să specifici domenii **externe**
 suplimentare care ar trebui păstrate mereu în lista de aliasuri a aplicației Cloudways. Folosește-o pentru:
@@ -117,7 +117,7 @@ suplimentare care ar trebui păstrate mereu în lista de aliasuri a aplicației 
 **Nu** folosi această constantă pentru wildcard-ul de subdomeniu al propriei tale rețele
 (de ex. `*.your-network.com`). Vezi capcana SSL wildcard de mai jos.
 
-## Important — capcana SSL wildcard
+## Important — capcana SSL wildcard {#important--wildcard-ssl-pitfall}
 
 O greșeală frecventă când urmezi configurarea implicită Cloudways este să adaugi un wildcard precum
 `*.your-network.com` în `WU_CLOUDWAYS_EXTRA_DOMAINS` sau să instalezi manual un certificat SSL
@@ -128,7 +128,7 @@ domeniile personalizate per chiriaș pe care Ultimate Multisite le mapează.** C
 SSL activ de pe aplicație de fiecare dată, iar un certificat wildcard preexistent pe
 aplicație blochează emiterea Let's Encrypt per domeniu pe care se bazează integrarea.
 
-### Configurarea SSL Cloudways recomandată pentru o rețea Ultimate Multisite
+### Configurarea SSL Cloudways recomandată pentru o rețea Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. În fila **Certificat SSL** a aplicației Cloudways, instalează un **certificat
    Let's Encrypt standard** care acoperă doar `your-network.com` și `www.your-network.com`
@@ -146,20 +146,20 @@ standard doar pentru domeniul principal al rețelei și elimină orice intrări 
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Apoi redeclanșează o mapare de domeniu (sau așteapt-o pe următoarea)
 și integrarea va începe din nou să emită certificate pentru fiecare domeniu.
 
-## Depanare
+## Depanare {#troubleshooting}
 
-### Probleme de conexiune API
+### Probleme de conexiune API {#api-connection-issues}
 - Verifică dacă emailul și cheia API sunt corecte
 - Verifică dacă ID-urile serverului și aplicației sunt corecte
 - Asigură-te că Account-ul tău Cloudways are permisiunile necesare
 
-### Probleme cu certificatele SSL
+### Probleme cu certificatele SSL {#ssl-certificate-issues}
 - Cloudways necesită ca domeniile să aibă înregistrări DNS valide care indică spre serverul tău înainte de a emite certificate SSL
 - Integrarea validează înregistrările DNS înainte de a solicita certificate SSL
 - Dacă certificatele SSL nu sunt emise, verifică dacă domeniile tale indică corect spre adresa IP a serverului tău
 - **Domeniile personalizate per tenant rămân fără SSL?** Verifică fila SSL Certificate a aplicației Cloudways. Dacă un certificat wildcard (instalat manual sau care acoperă `*.your-network.com`) este activ, Cloudways nu va emite certificate Let's Encrypt pentru domenii personalizate mapate individual. Înlocuiește-l cu un certificat Let's Encrypt standard care acoperă doar domeniul principal al rețelei (`your-network.com`, `www.your-network.com`) și elimină orice intrări wildcard din `WU_CLOUDWAYS_EXTRA_DOMAINS`. Apoi redeclanșează o mapare de domeniu (sau așteapt-o pe următoarea), iar integrarea va solicita certificate pentru fiecare domeniu.
 
-### Domeniul nu a fost adăugat
+### Domeniul nu a fost adăugat {#domain-not-added}
 - Verifică logurile Ultimate Multisite pentru orice mesaje de eroare
 - Verifică dacă domeniul nu este deja adăugat în Cloudways
 - Asigură-te că planul tău Cloudways acceptă numărul de domenii pe care le adaugi

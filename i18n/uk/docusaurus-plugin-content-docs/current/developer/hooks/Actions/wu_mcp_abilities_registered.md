@@ -4,11 +4,11 @@ title: Дія - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered
+# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Виконується після реєстрації здібностей MCP для сутності.
 
-## Параметри
+## Параметри {#parameters}
 
 | Ім'я | Тип | Опис |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 | $model_name | `string` | Ім'я моделі. |
 | $this | `object` | Екземпляр менеджера. |
 
-### Починаючи з
+### Починаючи з {#since}
 
 - 2.5.0
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) на рядку 171

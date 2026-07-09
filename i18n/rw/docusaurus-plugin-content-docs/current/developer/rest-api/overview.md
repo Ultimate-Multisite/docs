@@ -3,28 +3,28 @@ title: Incamake ya REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Indango ya REST API
+# Indango ya REST API {#rest-api-reference}
 
-## Iboneza Shingiro
+## Iboneza Shingiro {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Kwemeza umwirondoro:** API Key & Secret (HTTP Basic Auth cyangwa URL Parameters)
 
-## Kwemeza umwirondoro
+## Kwemeza umwirondoro {#authentication}
 
-### Fungura API
+### Fungura API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Bona ibyangombwa bya API
+### Bona ibyangombwa bya API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Uburyo bwo kwemeza umwirondoro
+### Uburyo bwo kwemeza umwirondoro {#authentication-methods}
 
 **HTTP Basic Auth (Bisabwa):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Inzira z'ibanze z'iherezo
+## Inzira z'ibanze z'iherezo {#core-endpoints}
 
-### 1. API y'abakiriya
+### 1. API y'abakiriya {#1-customers-api}
 
 **Inzira Shingiro:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API za site
+### 2. API za site {#2-sites-api}
 
 **Inzira Shingiro:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API z'ubunyamuryango
+### 3. API z'ubunyamuryango {#3-memberships-api}
 
 **Inzira Shingiro:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API z'ibicuruzwa
+### 4. API z'ibicuruzwa {#4-products-api}
 
 **Inzira Shingiro:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API z'ubwishyu
+### 5. API z'ubwishyu {#5-payments-api}
 
 **Inzira Shingiro:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API za domains
+### 6. API za domains {#6-domains-api}
 
 **Inzira Shingiro:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Inzira y'iherezo yo kwiyandikisha
+## Inzira y'iherezo yo kwiyandikisha {#registration-endpoint}
 
 Inzira y'iherezo ya `/register` itanga uruhererekane rwuzuye rwa checkout/kwiyandikisha:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Inzira z'iherezo z'umukodesha wigenga
+## Inzira z'iherezo z'umukodesha wigenga {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yongeramo ubwishingizi bwa REST ku bakodesha bigenga, bugenewe integrations zitunganya, zigenzura, cyangwa zemeza abakodesha batandukanye.
 
@@ -242,7 +242,7 @@ Ibisubizo bisanzwe by'imiterere ya migration birimo:
 
 Fata `ready: false` nk'imbogamizi mbere yo gutangiza. Reba ibisobanuro by'igenzura, ukosore guhuza database host, queue, gutunganya abakoresha, cyangwa ikibazo cya routing, hanyuma wongere ugerageze igenzura.
 
-## Ibisubizo by'amakosa
+## Ibisubizo by'amakosa {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Fata `ready: false` nk'imbogamizi mbere yo gutangiza. Reba ibisobanuro by'igenzu
 }
 ```
 
-## Gushyira ku mapaji no kuyungurura
+## Gushyira ku mapaji no kuyungurura {#pagination-and-filtering}
 
 **Query Parameters:**
 ```http

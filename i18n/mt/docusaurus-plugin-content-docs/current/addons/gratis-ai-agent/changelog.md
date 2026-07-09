@@ -3,11 +3,11 @@ title: Reġistru tal-bidliet
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Reġistru tal-bidliet
+# Reġistru tal-bidliet {#changelog}
 
-## 1.9.0 — Maħruġ fit-2026-04-28
+## 1.9.0 — Maħruġ fit-2026-04-28 {#190--released-on-2026-04-28}
 
-### Ġdid
+### Ġdid {#new}
 
 - **Kapaċità `create_contact_form`** — toħloq formola ta' kuntatt billi tuża l-plugin tal-formoli attiv (Contact Form 7, WPForms, Fluent Forms, jew Gravity Forms) u tirritorna shortcode lest biex jiġi inkorporat fi kwalunkwe post jew paġna.
 - **Kapaċità `set_featured_image`** — tassenja immaġni prinċipali lil post jew paġna minn attachment ID eżistenti fil-Media Library jew minn URL remot; timporta l-immaġni awtomatikament meta jiġi pprovdut URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Irrestawra l-aħħar sessjoni** — il-panel taċ-chat issa jerġa' jgħabbi l-aktar konverżazzjoni reċenti awtomatikament meta titgħabba l-paġna u meta jinfetaħ il-widget, sabiex il-kuntest qatt ma jintilef waqt navigazzjonijiet bejn il-paġni.
 - **Links ta' azzjoni tal-plugin** — links rapidi għal Settings u r-Reġistru tal-Kapaċitajiet issa jidhru fuq l-iskrin **Plugins → Plugins Installati** ta' WordPress taħt id-deskrizzjoni tal-plugin.
 
-### Imtejjeb
+### Imtejjeb {#improved}
 
 - **Tentattiv mill-ġdid tas-sors tal-immaġni** — l-agent issa jerġa' jipprova s-sorsi kollha ta' immaġnijiet b'xejn konfigurati qabel ma jaqa' lura għal immaġni ġġenerata mill-AI meta jonqos id-download.
 - **Panel tal-informazzjoni tal-mudell** — dejjem viżibbli fl-header taċ-chat; ma jibqax moħbi wara l-ewwel messaġġ.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Disinn mill-ġdid tal-widget taċ-chat** — ikona AI unifikata tissostitwixxi l-avatar personalizzat preċedenti; konsistenti mas-sistema tal-agent integrat.
 - **Linkifikazzjoni tal-URL** — URLs li jidhru f'messaġġi tas-sistema u bżieżaq ta' messaġġi ta' żball issa jintwerew bħala links li jistgħu jiġu kklikkjati.
 
-### Irranġat
+### Irranġat {#fixed}
 
 - **Skoperta tal-kapaċitajiet** — id-deskrizzjonijiet, ir-referenzi tas-system prompt, u l-allinjament tan-namespace ġew ikkoreġuti sabiex il-kapaċitajiet kollha jidhru b'mod affidabbli fil-lista tal-għodod tal-agent.
 - **Cache tal-providers** — il-providers issa jiġu cached fuq is-sit kollu permezz ta' counter tal-verżjoni, u b'hekk jiġu evitati kwistjonijiet ta' providers skaduti fuq networks multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Maħruġ fit-2026-04-09
+## 1.4.0 — Maħruġ fit-2026-04-09 {#140--released-on-2026-04-09}
 
-### Ġdid
+### Ġdid {#new-1}
 
 - **Kmand benchmark ta' WP-CLI** (`wp gratis-ai-agent benchmark`) — iħaddem is-sett benchmark Agent Capabilities v1 mil-linja tal-kmand għal CI pipelines u flussi tax-xogħol ta' evalwazzjoni tal-mudelli. Jappoġġja tħaddim għal kull mistoqsija, overrides tal-provider/mudell, u output JSON/CSV.
 - **Sett benchmark Agent Capabilities v1** — sett strutturat ta' prompts kumplessi u b'ħafna passi li jeżerċitaw il-firxa sħiħa tal-abbiltajiet, b'rapportar ta' punteġġi u tokens/tul ta' żmien.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Mistoqsija benchmark għal website ta' ristorant** (`q-restaurant-website`) — test minn tarf sa tarf li jkopri reġistrazzjoni ta' CPT, design system, navigazzjoni, u skoperta ta' plugins.
 - **Plugins tal-konnetturi tal-provider AI** miżjuda mal-blueprints ta' WordPress Playground għal setup ta' żvilupp lokali aktar mgħaġġel.
 
-### Imtejba
+### Imtejba {#improved-1}
 
 - README aġġornat b'dokumentazzjoni tal-konnetturi tal-provider AI u struzzjonijiet tas-setup.
 
-### Irranġat
+### Irranġat {#fixed-1}
 
 - 25 falliment tat-testijiet PHPUnit fuq il-fergħa `main` ġew solvuti.
 - Il-format tal-URL tar-rilaxxi ta' GitHub f'`blueprint.json` ġie kkoreġut.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _In-noti tar-rilaxxi preċedenti jinżammu fir-repożitorju tal-plugin._

@@ -3,13 +3,13 @@ title: Trešās puses režīma migrācija
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrācija uz tretiem pusēm
+# Migrācija uz tretiem pusēm {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 mainīja, kā tiek strādāti tretiepusēji spējumi. **Trešās puses režīms tagad defaultējas uz "auto",** ļaujot integrēties ar WordPress Abilities API tieši bez manas konfigurācijas, nepieciežīgi WordPress 7.0+ versijā.
 
-## Kāds ir mainījies?
+## Kāds ir mainījies? {#what-changed}
 
-### Pirms v1.12.0
+### Pirms v1.12.0 {#before-v1120}
 
 Trešās puses spējumi prasa manuālās konfigurācijas:
 
@@ -18,7 +18,7 @@ Trešās puses spējumi prasa manuālās konfigurācijas:
 - Integrācija ar WordPress Abilities API bija valkārīga
 - Senā režija bija defaultēta
 
-### Pēc v1.12.0
+### Pēc v1.12.0 {#after-v1120}
 
 Trešās puses spējumi strādā automātiski:
 
@@ -27,13 +27,13 @@ Trešās puses spējumi strādā automātiski:
 - Nepieciešama manas konfigurācijas veicšana WordPress 7.0+ versijās
 - Senā režija joprojām ir pieejama vecākiem WordPress versijām
 
-## Kur ir ietekmēts?
+## Kur ir ietekmēts? {#who-is-affected}
 
-### Jauni instalācijas (WordPress 7.0+)
+### Jauni instalācijas (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Nepieciešams neveikt nekāda darbība.** Trešās puses režīms automātiski tiek noteikts uz "auto", un spējumi strādā bez manas konfigurācijas.
 
-### Savi ir eksistējošie instalācijas
+### Savi ir eksistējošie instalācijas {#existing-installations}
 
 **Jūsu iestatījumi saglabātas.** Ja jūs izmantojāt:
 
@@ -41,7 +41,7 @@ Trešās puses spējumi strādā automātiski:
 - **Manuālo trešās puses režīmu**: Jūs paliekat manuālajā režīmā (nekāda izmaiņas)
 - **Auto režīmu**: Jūs turpināt strādāt auto režīmā (nekāda izmaiņas)
 
-### WordPress versijas pirms 7.0
+### WordPress versijas pirms 7.0 {#wordpress-versions-before-70}
 
 **Senā režija joprojām ir pieejama.** Ja jūs esat uz WordPress 6.x vai vēl senā:
 
@@ -49,9 +49,9 @@ Trešās puses spējumi strādā automātiski:
 - Jūs varat manuāli iespēt trešās puses režīmu, ja vēlaties
 - Pārvietojieties uz WordPress 7.0+ izmantot tiešu Abilities API
 
-## Režimu sapratīšana
+## Režimu sapratīšana {#understanding-the-modes}
 
-### Auto režīms (Jauns defaultējs)
+### Auto režīms (Jauns defaultējs) {#auto-mode-new-default}
 
 **Auto režīms** izmanto tiešu integrāciju ar WordPress Abilities API:
 
@@ -62,7 +62,7 @@ Trešās puses spējumi strādā automātiski:
 
 **Kāpēc izmantot**: WordPress 7.0+ ar tretišās puses iespējām
 
-### Manas režīms (Manual Mode)
+### Manas režīms (Manual Mode) {#manual-mode}
 
 **Manas režīmā** nepieciešama precīza konfigurācija:
 
@@ -73,7 +73,7 @@ Trešās puses spējumi strādā automātiski:
 
 **Kāpēc izmantot**: Testēšana, izvēlētas iespēju aizmirsta vai pielāgotas konfigurācijas
 
-### Vecais režīms (Legacy Mode)
+### Vecais režīms (Legacy Mode) {#legacy-mode}
 
 **Vecais režīms** izmanto vecais tretišās puses iespēju sistēmu:
 
@@ -84,24 +84,24 @@ Trešās puses spējumi strādā automātiski:
 
 **Kāpēc izmantot**: WordPress 6.x vai vēl vecākās versijas, vai jums ir nepieciešama vecais kompatibilite
 
-## Kā pārbaudīt pašreizējamo režīmu
+## Kā pārbaudīt pašreizējamo režīmu {#checking-your-current-mode}
 
-### Ar admin panelu
+### Ar admin panelu {#via-admin-panel}
 
 1. Ieiet uz **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Meklējiet iestatījumu **Third-Party Mode** (Tretišās puses režīms)
 3. Jūs redzēs savu pašreizējais režīmu un iespējas mainīt to
 
-### Ar kodu
+### Ar kodu {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual' vai 'legacy'
 ```
 
-## Kā mainīt savu režīmu
+## Kā mainīt savu režīmu {#changing-your-mode}
 
-### Pārvietot uz Auto režīmu (Auto Mode)
+### Pārvietot uz Auto režīmu (Auto Mode) {#switch-to-auto-mode}
 
 Ja jūs esat WordPress 7.0+ un vēlaties izmantot auto režīmu:
 
@@ -112,7 +112,7 @@ Ja jūs esat WordPress 7.0+ un vēlaties izmantot auto režīmu:
 
 Superdav AI Agent automātiski atklās un reģistrē tretišās puses iespējas.
 
-### Pārvietot uz Manas režīmu (Manual Mode)
+### Pārvietot uz Manas režīmu (Manual Mode) {#switch-to-manual-mode}
 
 Ja vēlaties manas kontrolēt, kuras iespējas jāaizmirst:
 
@@ -122,7 +122,7 @@ Ja vēlaties manas kontrolēt, kuras iespējas jāaizmirst:
 4. Nospiediet **Save** (Saglabāt)
 5. Rediģējiet savu konfiguraācijas failu, lai noteiktu, kuras iespējas jāaizmirst
 
-### Pārvietot uz Veco režīmu (Legacy Mode)
+### Pārvietot uz Veco režīmu (Legacy Mode) {#switch-to-legacy-mode}
 
 Ja jums ir nepieciešama vecais kompatibilite:
 
@@ -131,9 +131,9 @@ Ja jums ir nepieciešama vecais kompatibilite:
 3. Izvēlieties **Legacy** (Senāks)
 4. Nospiedi **Save** (Saglabāt)
 
-## Auto Mode priekšrocības
+## Auto Mode priekšrocības {#benefits-of-auto-mode}
 
-### Automātiskais atklājums
+### Automātiskais atklājums {#automatic-discovery}
 
 Spēju automātiski atrod no:
 
@@ -144,7 +144,7 @@ Spēju automātiski atrod no:
 
 Nav nepieciešams manuāli reģistrēt.
 
-### Datu integrācija ar WordPressu
+### Datu integrācija ar WordPressu {#native-integration}
 
 Spējas integrējas ar WordPress Abilities API:
 
@@ -153,67 +153,67 @@ Spējas integrējas ar WordPress Abilities API:
 - Kompatibils ar citām pluginiem, kas izmanto Abilities API
 - Ir nākotnes drošs, jo WordPress attīstās
 
-### Vienkāršā pārvaldība
+### Vienkāršā pārvaldība {#simplified-management}
 
 - Nav konfigurācijas failus, kurus jāredaktē
 - Nav manuāli reģistrēt spējām (abilities)
 - Spēju redzamības kontroles darbojas automātiski
 - Adminu paziņojumi atliec jums uzmanību neklassificētu spējām
 
-### Labāka veiktspēja
+### Labāka veiktspēja {#better-performance}
 
 - Spējas tiek kešotas (cached)
 - Laikmeklis tiek ielādēti tikai pēc pieprasījuma (lazy-loaded on demand)
 - Optimizētas WordPress 7.0+ versijās
 
-## Migrācijas ceļš
+## Migrācijas ceļš {#migration-path}
 
-### Ja esat uz WordPress 6.x
+### Ja esat uz WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Pārsniegt uz WordPress 7.0+** (kroku, kad būs gatavs)
 2. **Atjaunināt Superdav AI Agentu** uz v1.12.0+
 3. **Izveidot trešpārdo modu Auto** (optacionāli; senāks modes vēl darbojas)
 4. **Pārskatīt spēju redzamību**, lai nodrošinātu pareizu piekļuves kontroli
 
-### Ja esat uz WordPress 7.0+
+### Ja esat uz WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Atjaunināt Superdav AI Agentu** uz v1.12.0+
 2. **Apstiprināt, ka trešpārdo modes ir noteikts uz Auto** (tas par defaultem būs)
 3. **Pārskatīt spēju redzamību**, lai nodrošinātu pareizu piekļuves kontroli
 4. **Tests trešpārdo spējām**, lai apstiprinātu, ka tās darbojas
 
-## Kļūdu likums (Troubleshooting)
+## Kļūdu likums (Troubleshooting) {#troubleshooting}
 
-### Spējas neiekļaujas auto režīmā
+### Spējas neiekļaujas auto režīmā {#abilities-arent-loading-in-auto-mode}
 
 - Pārbaudiet, vai esat uz WordPress 7.0+
 - Pārbaudiet, vai trešpārdo modes ir noteikts uz "Auto"
 - Pārbaudiet, vai plugin, kas sniedz spēju, ir aktīvs
 - Pārbaudiet WordPressa kļūdu logus (error logs) reģistrācijas kļūdu meklē
 
-### Es vēlos saglabāt senāks modu
+### Es vēlos saglabāt senāks modu {#i-want-to-keep-legacy-mode}
 
 - Ieiet uz **Settings** → **Third-Party Mode**
 - Izvēlieties **Legacy** (Senāks)
 - Nospiedi **Save** (Saglabāt)
 - Senais modes turpinās darbojoties
 
-### Mans savas ne redzina parādās
+### Mans savas ne redzina parādās {#my-custom-abilities-arent-showing}
 
 - Pārbaudiet, vai tās ir reģistrētas ar WordPress hooks
 - Pārbaudiet, vai jūs labi implementējāt Abilities API
 - Pārskatiet WordPress kļūdu logus (error logs)
 - Izmantojiet admin lapu **Ability Visibility**, lai redzētu visus reģistrētos savus savus abilities
 
-### Man tiek saņemti "neklasificētas abilities" paziņojumi
+### Man tiek saņemti "neklasificētas abilities" paziņojumi {#im-getting-unclassified-ability-notices}
 
 - Tas ir normāls jauniem tretpasts abilities
 - Pārskatiet un klasificējiet tos admin paziņojumos
 - Redziet **Ability Visibility** detalizētām informācijām par klasifikāciju
 
-## Atpakaļcompatibilitāte (Backward Compatibility)
+## Atpakaļcompatibilitāte (Backward Compatibility) {#backward-compatibility}
 
-### Saviriktās konfigurācijas
+### Saviriktās konfigurācijas {#existing-configurations}
 
 Ja jums ir jau eksistējošas tretpasts abilities konfigurācijas:
 
@@ -223,33 +223,33 @@ Ja jums ir jau eksistējošas tretpasts abilities konfigurācijas:
 
 Lai saglabātu savu custom konfigurāciju, palikiet Manual vai Legacy režīmā.
 
-### Deprekācijas laiks (Deprecation Timeline)
+### Deprekācijas laiks (Deprecation Timeline) {#deprecation-timeline}
 
 - **v1.12.0**: Legacy un Manual modi turpinās pilnībā atbalstīti
 - **v1.13.0+**: Legacy mode var parādīt deprecācijas paziņojumus
 - **v2.0.0**: Legacy mode var būt izslēgts (noteikts)
 
-## Labākās prakses (Best Practices)
+## Labākās prakses (Best Practices) {#best-practices}
 
-### Ja ir jauni instalācijas
+### Ja ir jauni instalācijas {#for-new-installations}
 
 - Izmantojiet Auto mode (tā ir defaultais)
 -Ļaujiet Superdav AI Agentam automātiski atklāt abilities
 -Izmantojiet Ability Visibility, lai kontrolētu piekļuvi
 
-### Ja ir jau eksistējošas instalācijas
+### Ja ir jau eksistējošas instalācijas {#for-existing-installations}
 
 - Pārsniegt WordPress 7.0+ iespējams
 - Pārslēgties uz Auto mode vienkāršākas pārvaldības veidā
 - Pārskatīt un klasificēt abilities izmantojot Ability Visibility
 
-### Ja ir custom abilities
+### Ja ir custom abilities {#for-custom-abilities}
 
 - Reģistrējiet abilities ar WordPress hooks (Abilities API)
 - Iz베giet custom ability registries
 - Tests veikties WordPress 7.0+ Auto mode ar
 
-## Nākamie soļi
+## Nākamie soļi {#next-steps}
 
 1. **Pārbaudiet savu WordPress versiju**: Pārliecinieties, ka jums ir WordPress 7.0+ Auto režīmā.
 2. **Atbildiet uz savu trešās puses režīmu**: Ieiet iestatījumiem un pārbaudiet, kāds ir jūsu pašreizējais režīms.
@@ -257,7 +257,7 @@ Lai saglabātu savu custom konfigurāciju, palikiet Manual vai Legacy režīmā.
 4. **Klasificējiet spējas**: Pārbaudiet un klasificējiet jebkuras nekategorizētās spējas.
 5. **Pārbaudiet**: Pārliecinieties, ka jūsu trešās puses spējas darbojas pareizi.
 
-## Saistītie tēmāti
+## Saistītie tēmāti {#related-topics}
 
 - **Spēju redzamība (Ability Visibility)**: Kontrolējiet, kuras spējas ir pieejamas un kur.
 - **WordPress Abilities API**: Izpelciet vietējo WordPress spēju reģistrācijas parasti.

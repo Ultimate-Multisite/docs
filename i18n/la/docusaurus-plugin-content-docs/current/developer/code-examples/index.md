@@ -3,11 +3,11 @@ title: Exempla codicis provecta
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Exempla codicis provecta
+# Exempla codicis provecta {#advanced-code-examples}
 
 Haec exempla rationes integrationis provectas cum Ultimate Multisite demonstrant.
 
-## Machina pretiorum dynamica
+## Machina pretiorum dynamica {#dynamic-pricing-engine}
 
 Machina pretiorum regulis innixa quae deminutiones ob volumen, fidelitatem, et tempora anni applicat:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Provisio situum provecta
+## Provisio situum provecta {#advanced-site-provisioning}
 
 Novos situs automatice configura cum additamentis, SSL, CDN, subsidiis, et vigilantia secundum lineamenta consilii:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Systema limitationum consuetum
+## Systema limitationum consuetum {#custom-limitations-system}
 
 Limites facultatum indaga et exsequere cum admonitionibus de usu:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Numerator atomicus BerlinDB cum `increment_item()`
+## Numerator atomicus BerlinDB cum `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 methodum `increment_item()` classi BerlinDB `Query` addidit. Eo utere ut incrementa tuta et atomica in columnis numericis perficias sine contentionibus lege-muta-scribe — utile pro numeratoribus, quotis usus, et probationibus limitationis frequentiae quae sub petitionibus concurrentibus currunt.
 
-### Signatura methodi
+### Signatura methodi {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 methodum `increment_item()` classi BerlinDB `Query` ad
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Usus fundamentalis
+### Usus fundamentalis {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Usum API per membership vestigare
+### Usum API per membership vestigare {#tracking-api-usage-per-membership}
 
 Exemplar practicum ad limites frequentiae API per membership exsequendos:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Cur `increment_item()` loco `update_item()`
+### Cur `increment_item()` loco `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Ratio simplex lege-muta-scribe sub petitionibus concurrentibus tuta non est:
 

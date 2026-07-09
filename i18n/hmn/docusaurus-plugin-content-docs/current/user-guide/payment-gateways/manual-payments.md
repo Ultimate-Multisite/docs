@@ -3,13 +3,13 @@ title: Kev teeb tsa kev them nyiaj ua los ntawm tes
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Teeb Tsa Kev Them Nyiaj Ntawm Tes (v2)
+# Teeb Tsa Kev Them Nyiaj Ntawm Tes (v2) {#setting-up-manual-payments-v2}
 
 _**CEEB TOOM TSEEM CEEB: Kab lus no hais txog Ultimate Multisite version 2.x.**_
 
 Kev them nyiaj ntawm tes yog ib txoj kev uas koj siv tau los muab lwm txoj kev them nyiaj yog tias **Stripe** lossis **PayPal** tsis muaj rau koj cov neeg siv. Nws yuav yog kev xa nyiaj hauv bank, hloov nyiaj ntawm bank, lossis lwm txoj kev them nyiaj twg uas muaj rau koj cov neeg siv hauv lawv cheeb tsam.
 
-## Yuav qhib Kev Them Nyiaj Ntawm Tes li cas
+## Yuav qhib Kev Them Nyiaj Ntawm Tes li cas {#how-to-enable-manual-payments}
 
 Kev teeb tsa kev them nyiaj ntawm tes yooj yim heev. Koj tsuas yog yuav tsum qhib nws hauv cov chaw txais kev them nyiaj thiab muab cov lus qhia ntxaws txog yuav kom tus neeg siv xa nyiaj li cas.
 
@@ -31,7 +31,7 @@ Thiab lawv tseem yuav tau txais ib zaj lus ntawm koj nplooj **Ua Tsaug** nrog ko
 
 <!-- Screenshot tsis muaj: Nplooj Ua Tsaug qhia cov lus qhia kev them nyiaj tom qab checkout -->
 
-## Lees paub kev them nyiaj ntawm tes
+## Lees paub kev them nyiaj ntawm tes {#confirming-manual-payments}
 
 Txhawm rau lees paub ib qho kev them nyiaj ntawm tes, mus rau cov ntawv qhia **Kev Them Nyiaj** ntawm sab laug. Nyob ntawd koj pom tau tag nrho cov kev them nyiaj hauv koj lub network thiab lawv cov ntsiab lus, suav nrog lawv **xwm txheej**. Ib qho kev them nyiaj ntawm tes yuav ib txwm muaj xwm txheej **Tseem Tos** kom txog thaum koj hloov nws ntawm koj tus kheej.
 

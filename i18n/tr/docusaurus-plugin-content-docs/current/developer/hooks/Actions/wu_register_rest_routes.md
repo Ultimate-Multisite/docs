@@ -4,21 +4,21 @@ title: Aksiyon - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Aksiyon: wu_register_rest_routes
+# Aksiyon: wu_register_rest_routes {#action-wuregisterrestroutes}
 
 Ek rotaların kaydedilmesine izin verir.
 
 Bu, `/register` uç noktası (endpoint) tarafından kullanılır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $api_instance | `self` | Mevcut API örneği. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/class-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-api.php#L470) dosyasında 470. satırda tanımlanmıştır.

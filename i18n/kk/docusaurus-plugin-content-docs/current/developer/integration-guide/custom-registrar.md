@@ -3,13 +3,13 @@ title: Пайдаланушылық тіркеуші интеграциясын 
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Таңдаулы тіркеуші интеграциясын құру
+# Таңдаулы тіркеуші интеграциясын құру {#building-a-custom-registrar-integration}
 
 Domain Seller addon **Integration Registry** үлгісін қолданады. Әрбір тіркеуші — `Domain_Selling_Capability` іске асыратын және өзін `wu_domain_seller_register_capabilities` action hook арқылы тіркейтін PHP класы.
 
 Бұл нұсқаулық таңдаулы тіркеушіні қалай қосу керегін көрсетеді.
 
-## Интерфейс
+## Интерфейс {#the-interface}
 
 Сіздің класыңыз `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` іске асырып, `WP_Ultimo\Integrations\Base_Capability_Module` кеңейтуі керек.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Қосымша әдістер
+### Қосымша әдістер {#optional-methods}
 
 Қосымша мүмкіндіктерді ашу үшін осыларды іске асырыңыз. Addon қолдауды `method_exists()` арқылы анықтайды:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Доменді тасымалдау (шығыс) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Доменді тасымалдау (кіріс) |
 
-### Қайтарылатын мән келісімі
+### Қайтарылатын мән келісімі {#return-value-convention}
 
 Барлық әдістер кем дегенде `success` кілті бар массив қайтарады:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Capability тіркеу
+## Capability тіркеу {#registering-your-capability}
 
 Класыңызды `wu_domain_seller_register_capabilities` action арқылы тіркеңіз:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Шеберге деректеме өрістерін қосу
+## Шеберге деректеме өрістерін қосу {#adding-credential-fields-to-the-wizard}
 
 Әкімшілер setup wizard арқылы деректемелерді енгізе алуы үшін интеграцияңызды тіркеңіз:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## Тіркеуден кейінгі әрекеттерге арналған hook-тар
+## Тіркеуден кейінгі әрекеттерге арналған hook-тар {#hooks-for-post-registration-actions}
 
 Webhook-тарды, қамтамасыз етуді, хабарландыруларды немесе CRM жаңартуларын іске қосу үшін осы әрекеттерді қолданыңыз:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Журнал жүргізу
+## Журнал жүргізу {#logging}
 
 `wu_log_add()` арқылы провайдеріңізге тән журнал арнасына жазыңыз:
 

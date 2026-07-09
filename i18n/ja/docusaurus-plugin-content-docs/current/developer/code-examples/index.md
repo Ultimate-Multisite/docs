@@ -3,11 +3,11 @@ title: 高度なコード例
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# 高度なコード例
+# 高度なコード例 {#advanced-code-examples}
 
 これらの例は、Ultimate Multisite との高度な連携パターンを示します。
 
-## 動的料金エンジン
+## 動的料金エンジン {#dynamic-pricing-engine}
 
 数量、ロイヤルティ、季節割引を適用するルールベースの料金エンジンです。
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## 高度なサイトプロビジョニング
+## 高度なサイトプロビジョニング {#advanced-site-provisioning}
 
 プラン機能に基づいて、新しいサイトにプラグイン、SSL、CDN、バックアップ、監視を自動設定します。
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## カスタム制限システム
+## カスタム制限システム {#custom-limitations-system}
 
 使用量の警告を出しながら、リソース制限を追跡して適用します。
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## `increment_item()` を使用した BerlinDB のアトミックカウンター
+## `increment_item()` を使用した BerlinDB のアトミックカウンター {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 では、BerlinDB `Query` クラスに `increment_item()` メソッドが追加されました。これを使用すると、読み取り・変更・書き込みの競合なしに、数値カラムへ安全なアトミック増分を実行できます。同時リクエスト下で実行されるカウンター、使用量クォータ、レート制限チェックに役立ちます。
 
-### メソッドシグネチャ
+### メソッドシグネチャ {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 では、BerlinDB `Query` クラスに `increment_item
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### 基本的な使用方法
+### 基本的な使用方法 {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### メンバーシップごとの API 使用量の追跡
+### メンバーシップごとの API 使用量の追跡 {#tracking-api-usage-per-membership}
 
 メンバーシップごとの API レート制限を適用するための実用的なパターンです。
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### `update_item()` ではなく `increment_item()` を使う理由
+### `update_item()` ではなく `increment_item()` を使う理由 {#why-incrementitem-instead-of-updateitem}
 
 単純な読み取り・変更・書き込み方式は、同時リクエスト下では安全ではありません。
 

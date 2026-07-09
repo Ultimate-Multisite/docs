@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent ass en autonomen WordPress-AI-Assistent, dee komplett WordPress-Säiten iwwer natierlechsproocheg Uweisunge plangen, bauen a verwalte kann. Hie stellt eng strukturéiert Rei vu **Fäegkeeten** bereet — eenzel, testbar Aktiounen, déi den Agent opruffe kann — a deckt alles of, vu Contenu-Verwaltung bis zur Upassung vum Design-System. Versioun 1.9.0 füügt Fäegkeete fir Contenu-Erstellung, visuell Säiteniwwerpréiwung iwwer client-säiteg Screenshots, fënnef agebaut Agent-Profiler a Feature Flags fir Zougrëffskontroll a Branding derbäi.
 
-## Haaptfunktiounen
+## Haaptfunktiounen {#key-features}
 
 - **Fäegkeete-System** — e modulare, erweiderbare Katalog vun Aktiounen, déi den Agent op denger WordPress-Installatioun opruffe kann
 - **Contenu-Verwaltung** — Bäiträg a Säiten erstellen (inklusiv Zouweisung vu Säite-Virlagen), méi Bäiträg an engem Opruff batch-erstelle, Featured Images setzen a Kontaktformulairë bauen
@@ -28,21 +28,21 @@ Gratis AI Agent ass en autonomen WordPress-AI-Assistent, dee komplett WordPress-
 - **Site Builder-Orchestratioun v2** — méistufeg Site-Baupläng mat Plugin-Entdeckung, Fortschrëttsverfolgung a Feeler-Erhuelung
 - **WP-CLI-Benchmark-Kommando** — d'Benchmark-Suite fir Agent-Fäegkeeten aus der Kommandozeil fir CI a Modell-Evaluatioun ausféieren
 
-## Ufuerderungen
+## Ufuerderungen {#requirements}
 
 - WordPress 6.0 oder méi héich
 - PHP 8.1 oder méi héich
 - WordPress Multisite (netzaktivéiert) oder Single-Site-Installatioun
 - En aktiven AI-Provider-Connector-Plugin (Anthropic, OpenAI oder kompatibel)
 
-## Installatioun
+## Installatioun {#installation}
 
 1. Luet d'Plugin-Dateien op `/wp-content/plugins/gratis-ai-agent` erop
 2. Aktivéiert de Plugin iwwer den **Plugins**-Bildschierm a WordPress
 3. Navigéiert op **Gratis AI Agent → Settings** a verbann däin AI-Provider
 4. (Optional) Duerchsich den **Abilities Registry**, fir zousätzlech Fäegkeete-Päck z'installéieren
 
-## Schnellstart
+## Schnellstart {#quick-start}
 
 Soubal aktivéiert a mat engem AI-Provider verbonnen, méchs du de **Gratis AI Agent**-Panel an der WordPress-Admin-Säiteleescht op. Gëff eng natierlechsproocheg Uweisung an, an den Agent plangt a féiert déi néideg Schrëtt mat senge verfügbare Fäegkeeten aus.
 
@@ -60,7 +60,7 @@ Füügt eng Dark-Mode-Faarfpalette an den theme an a setz déi primär Faarf op 
 Bau eng Restaurant-Websäit mat engem Online-Menü, Buchungsformulaire a Kontakt-Säit.
 ```
 
-## Iwwersiicht iwwer d'Fäegkeeten
+## Iwwersiicht iwwer d'Fäegkeeten {#abilities-overview}
 
 Fäegkeete sinn déi atomar Aktiounen, déi den Agent ausféiere kann. All Fäegkeet ass eng registréiert PHP-Klass, déi e Schema (Parameteren a Retour-Typen) bereetstellt, dat den Agent zur Lafzäit liest. Fäegkeete ginn a funktionell Beräicher gruppéiert:
 
@@ -79,7 +79,7 @@ Fäegkeete sinn déi atomar Aktiounen, déi den Agent ausféiere kann. All Fäeg
 
 Kuck d'[Fäegkeete-Referenz](./abilities) fir déi komplett Parameter-Dokumentatioun a Benotzungsbeispiller.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent liwwert eng `wp gratis-ai-agent`-Kommandofamill fir Benchmarks auszeféieren a Fäegkeeten aus der Kommandozeil ze verwalten. Kuck d'[WP-CLI-Referenz](./wp-cli) fir déi komplett Kommando-Lëscht.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfiguratioun
+## Konfiguratioun {#configuration}
 
 All Astellunge sinn ënner **Gratis AI Agent → Settings** am WordPress-Admin:
 
@@ -106,7 +106,7 @@ All Astellunge sinn ënner **Gratis AI Agent → Settings** am WordPress-Admin:
 | **Ability Timeout** | Maximal Sekonnen, déi eng eenzel Fäegkeet lafe kann (Standard 30) |
 | **Debug Logging** | Fäegkeete-Opreeg an Agent-Reasoning an de WordPress-Debug-Log protokolléieren |
 
-## Sécherheets-Blocklist fir Optiounsverwaltung
+## Sécherheets-Blocklist fir Optiounsverwaltung {#options-management-safety-blocklist}
 
 D'Fäegkeet fir Optiounen ze verwalten enthält eng agebaute Blocklëscht, déi verhënnert, datt den Agent sensibel WordPress-Optiounen liest oder schreift. D'Standard-Blocklëscht ëmfaasst:
 
@@ -118,26 +118,26 @@ D'Fäegkeet fir Optiounen ze verwalten enthält eng agebaute Blocklëscht, déi 
 
 Zousätzlech Entréeë kënnen iwwer de `gratis_ai_agent_options_blocklist`-Filter derbäigesat ginn.
 
-## Hooks a Filteren
+## Hooks a Filteren {#hooks-and-filters}
 
-### Aktiounen
+### Aktiounen {#actions}
 
 - `gratis_ai_agent_ability_registered` — gëtt ausgeléist, nodeems eng Fäegkeet registréiert gouf, a kritt den Numm vun der Fäegkeetsklass
 - `gratis_ai_agent_plan_started` — gëtt ausgeléist, wann e Websäit-Builder-Plang mat der Ausféierung ufänkt
 - `gratis_ai_agent_plan_completed` — gëtt ausgeléist, wann e Plang erfollegräich fäerdeg ass
 - `gratis_ai_agent_plan_failed` — gëtt ausgeléist, wann e Plang op en net erhuelbare Feeler stéisst
 
-### Filteren
+### Filteren {#filters}
 
 - `gratis_ai_agent_abilities` — ännert déi registréiert Fäegkeetslëscht, ier den Agent se lued
 - `gratis_ai_agent_options_blocklist` — erweidert oder reduzéiert d'Sécherheets-Blocklëscht fir Optiounen
 - `gratis_ai_agent_benchmark_questions` — füügt personaliséiert Benchmark-Froen der Evaluatiounssuite bäi
 - `gratis_ai_agent_plan_plugins` — ännert d'Plugin-Entdeckungslëscht wärend der Generéierung vum Websäit-Plang
 
-## Support
+## Support {#support}
 
 Fir Support, besicht [ultimatemultisite.com](https://ultimatemultisite.com) oder maacht en Issue am Plugin-Repository op.
 
-## Changelog
+## Changelog {#changelog}
 
 Kuckt de [Changelog](./changelog) fir déi komplett Versiounsgeschicht.

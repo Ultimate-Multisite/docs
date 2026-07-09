@@ -3,21 +3,21 @@ title: Configurare și configurarea furnizorului
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Configurare și setarea furnizorului
+# Domain Seller: Configurare și setarea furnizorului {#domain-seller-setup-and-provider-configuration}
 
 Addon-ul Domain Seller vine cu un asistent de configurare ghidată care te conduce prin fiecare pas necesar. Această pagină acoperă fluxul asistentului și modul de configurare sau reconfigurare ulterioară a furnizorilor.
 
-## Cerințe
+## Cerințe {#requirements}
 
 - **Multisite Ultimate** v2.4.12 sau mai nou, activat la nivel de rețea
 - **PHP** 7.4+
 - Credențiale API pentru cel puțin un registrar acceptat
 
-## Asistentul de configurare la prima rulare
+## Asistentul de configurare la prima rulare {#first-run-setup-wizard}
 
 Asistentul de configurare pornește automat prima dată când activezi plugin-ul la nivel de rețea. Este disponibil și oricând din **Network Admin › Ultimate Multisite › Configurare Domain Seller**.
 
-### Pasul 1 — Alege un furnizor
+### Pasul 1 — Alege un furnizor {#step-1--choose-a-provider}
 
 Selectează registrarul pe care vrei să îl conectezi. Opțiuni acceptate:
 
@@ -33,7 +33,7 @@ Selectează registrarul pe care vrei să îl conectezi. Opțiuni acceptate:
 | NameSilo | Nu | Nu |
 | Enom | Da | Nu |
 
-### Pasul 2 — Introdu credențialele
+### Pasul 2 — Introdu credențialele {#step-2--enter-credentials}
 
 Fiecare furnizor are câmpuri de credențiale diferite:
 
@@ -57,17 +57,17 @@ Fiecare furnizor are câmpuri de credențiale diferite:
 
 Bifează **Mod sandbox** acolo unde este disponibil pentru a testa în mediul de testare al furnizorului înainte de a trece live.
 
-### Pasul 3 — Testează conexiunea
+### Pasul 3 — Testează conexiunea {#step-3--test-the-connection}
 
 Dă clic pe **Testează conexiunea**. Asistentul trimite un apel API ușor pentru a verifica credențialele și conectivitatea. Remediază orice probleme cu credențialele înainte de a continua.
 
-### Pasul 4 — Importă TLD-urile
+### Pasul 4 — Importă TLD-urile {#step-4--import-tlds}
 
 Dă clic pe **Importă TLD-urile** pentru a prelua toate TLD-urile disponibile și prețurile angro de la furnizorul conectat. Aceasta populează lista de TLD-uri folosită de produsele de domeniu. Importul poate dura 30–60 de secunde pentru furnizorii cu cataloage mari de TLD-uri.
 
 TLD-urile sunt, de asemenea, resincronizate automat o dată pe zi printr-o sarcină cron programată.
 
-### Pasul 5 — Creează un produs de domeniu
+### Pasul 5 — Creează un produs de domeniu {#step-5--create-a-domain-product}
 
 Asistentul creează un produs de domeniu implicit de tip catch-all cu un adaos de 10%. Poți edita acest produs imediat sau poți omite pasul și crea produse manual în **Ultimate Multisite › Produse**.
 
@@ -75,7 +75,7 @@ Consultă [Produse de domeniu și prețuri](./domain-products) pentru ghidul com
 
 ---
 
-## Reconfigurarea unui furnizor
+## Reconfigurarea unui furnizor {#reconfiguring-a-provider}
 
 Mergi la **Network Admin › Ultimate Multisite › Settings › Domain Seller** (sau dă clic pe **Setări** în lista de plugin-uri).
 
@@ -88,17 +88,17 @@ Pagina de setări conține:
 - **Gestionează produsele de domeniu** — link rapid către lista de Produse
 - **Configurează furnizorii** — deschide Integration Wizard pentru a adăuga sau reconfigura furnizori
 
-### Adăugarea unui al doilea furnizor
+### Adăugarea unui al doilea furnizor {#adding-a-second-provider}
 
 Dă clic pe **Configurează furnizorii** și rulează din nou asistentul pentru noul registrar. Poți avea mai mulți furnizori configurați simultan. Atribuie fiecare produs de domeniu unui furnizor specific sau lasă-l pe cel implicit.
 
-### Sincronizarea manuală a TLD-urilor
+### Sincronizarea manuală a TLD-urilor {#syncing-tlds-manually}
 
 În pagina de setări, dă clic pe **Sincronizează TLD-urile** lângă orice furnizor configurat pentru a prelua cele mai recente prețuri. Acest lucru este util după ce un furnizor actualizează prețurile angro sau adaugă TLD-uri noi.
 
 ---
 
-## Jurnale
+## Jurnale {#logs}
 
 Fiecare furnizor scrie în propriul canal de jurnal. Jurnalele pot fi vizualizate în **Network Admin › Ultimate Multisite › Jurnale**:
 
@@ -118,7 +118,7 @@ Fiecare furnizor scrie în propriul canal de jurnal. Jurnalele pot fi vizualizat
 
 ---
 
-## Note despre capabilitățile furnizorilor
+## Note despre capabilitățile furnizorilor {#provider-capability-notes}
 
 Nu fiecare API de registrar expune aceleași operațiuni. Addon-ul afișează operațiunile neacceptate cu erori clare pentru administratori, în loc să eșueze în tăcere.
 

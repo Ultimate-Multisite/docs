@@ -3,9 +3,9 @@ title: Управување со плаќања и фактури
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Управу наплати и фактурирање
+# Управу наплати и фактурирање {#managing-payments-and-invoices}
 
-## Поставки за плаќање
+## Поставки за плаќање {#payment-settings}
 
 Пред да почнете со прифаќање плаќања, ќе треба да го конфигурирате поставките поврзани со плаќање. Одете до **Ultimate Multisite → Settings** и кликнете на табот **Payment**.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Опции за општо плаќање
+### Опции за општо плаќање {#general-payment-options}
 
 Во општи поставки можете да ги конфигурирате:
 
@@ -24,7 +24,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Платежни вратиници (Payment Gateways)
+### Платежни вратиници (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite поддржува повеќе платежни вратиници. Можете да ги активирате и да ги конфигурирате секој од нив од табот **Payment settings**.
 
@@ -40,11 +40,11 @@ Ultimate Multisite поддржува повеќе платежни вратин
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Мод (Sandbox Mode)
+### Sandbox Мод (Sandbox Mode) {#sandbox-mode}
 
 Можете да го активирате **Sandbox Mode** за тестирање на вашата интеграција за плаќање пред да ја ставите во работна состојба. Кога е активен режим на песо, нема да се вршат реални начинување.
 
-## Гледење на плаќањата
+## Гледење на плаќањата {#viewing-payments}
 
 Одете до страницата **Payments** под Ultimate Multisite за да видите сите трансакции низ вашата мрежа.
 
@@ -54,7 +54,7 @@ Ultimate Multisite поддржува повеќе платежни вратин
 
 Кликнете на плаќање за да видите сите детали, вклучувајќи ги личните позиции, поврзаната членство, информациите за клиентот и податоците од платежниот врата (payment gateway).
 
-## Инвоци
+## Инвоци {#invoices}
 
 Ultimate Multisite може автоматски да генерира инвоци за плаќања. Можете да го прилагодите шаблонот на инвоцирање и форматирањето на бројките од поставките за плаќање (Payment settings).
 

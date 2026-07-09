@@ -4,20 +4,20 @@ title: Filtrační funkce - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filtr: networks_pre_user_is_network_admin
+# Filtr: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
 
 Filtruje sítě, z nichž je uživatel administrátor, a slouží k obejití standardního procesu.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
 | $ | `array\|bool\|null` | Seznam ID sítí nebo false. Jakékoli giá trị kromě null zkratuje proces. |
 | $ | `int` | ID uživatele, pro kterého se mají síťové sítě vrátit. |
 
-### Od verze
+### Od verze {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L688) na řádku 688

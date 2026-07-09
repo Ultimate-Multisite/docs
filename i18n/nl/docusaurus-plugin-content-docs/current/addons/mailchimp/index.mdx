@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: Mailchimp Integratie
 
 Integreer je Multisite Ultimate-netwerk met je Mailchimp. Je kunt bepaalde abonnementen koppelen aan Mailchimp-lijsten en automatisch abonnees aan die lijsten toevoegen bij registratie.
 
-## Installatie
+## Installatie {#installation}
 
 1. Upload 'ultimate-multisite-mailchimp' naar de map '/wp-content/plugins/'
 2. Activeer de plugin via het menu 'Plugins' in je WordPress Network Admin
 
-## Gebruikshandleiding
+## Gebruikshandleiding {#usage-guide}
 
 Het synchroniseren van e-mailadressen van abonnees met je MailChimp-lijsten is heel eenvoudig met onze Ultimate Multisite: MailChimp Integration Add-on. Deze tutorial helpt je om alles in te stellen!
 
-## Een API-sleutel verkrijgen
+## Een API-sleutel verkrijgen {#getting-an-api-key}
 
 Voordat we de verschillende beschikbare instellingen gaan bekijken, hebben we een MailChimp API-sleutel nodig. Hiermee kan Ultimate Multisite communiceren met de MailChimp API om lijsten en groepen op te halen en e-mailadressen aan die lijsten en groepen toe te voegen wanneer gebruikers zich registreren.
 
@@ -32,7 +32,7 @@ Volg deze tutorial om je eigen MailChimp API-sleutel te krijgen: [Over API-sleut
 
 _Voeg je MailChimp API-sleutel toe op_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
 
-## Integratiemodus
+## Integratiemodus {#integration-mode}
 
 De MailChimp Integration add-on biedt twee “integratiemodi”, wat betekent dat er twee verschillende manieren zijn waarop je de add-on kunt gebruiken om e-mailadressen te synchroniseren.
 
@@ -40,7 +40,7 @@ De MailChimp Integration add-on biedt twee “integratiemodi”, wat betekent da
 
 _Twee integratiemodi voor meer flexibiliteit!_
 
-### Modus 1: Meerdere lijsten
+### Modus 1: Meerdere lijsten {#mode-1-multiple-lists}
 
 De standaardmodus maakt gebruik van **Meerdere lijsten**. Met deze modus kun je meerdere MailChimp-lijsten selecteren voor elk van de abonnementen. Dit is de beste optie als je je gebruikers in verschillende lijsten segmenteert.
 
@@ -52,7 +52,7 @@ Om dat te bereiken, kun je de modus Meerdere lijsten gebruiken om zowel de lijst
 
 _Selecteer de standaardlijsten voor nieuwe accounts en voor geannuleerde accounts_
 
-### Modus 2: Enkele lijst + meerdere groepen
+### Modus 2: Enkele lijst + meerdere groepen {#mode-2-single-list--multiple-groups}
 
 MailChimp stelt je in staat om je lijst te segmenteren in kleinere groepen gebruikers, **Groepen** genoemd. Dit geeft je meer controle, omdat je een campagne naar een specifieke subset van je abonnees kunt sturen zonder meerdere kopieën van dezelfde campagne in MailChimp te hoeven maken (waardoor het lastig wordt om de statistieken van die campagne achteraf te analyseren).
 
@@ -62,13 +62,13 @@ Je kunt bijvoorbeeld één lijst hebben met de naam **Mijn netwerkabonnees,** en
 
 _Selecteer de standaardlijsten en groepen als je de integratiemodus “enkele lijst + meerdere groepen” gebruikt_
 
-## Standaardlijsten en groepen
+## Standaardlijsten en groepen {#default-lists-and-groups}
 
 Nadat je hebt geselecteerd welke integratiemodus het meest logisch is voor jouw specifieke gebruikssituatie, is het tijd om de standaardlijsten (en groepen, afhankelijk van de modus) te selecteren. De standaardlijst wordt gebruikt wanneer er voor een bepaald abonnement geen specifieke lijst is geselecteerd.
 
 Je kunt ook de standaardlijst voor geannuleerde accounts selecteren. Telkens wanneer een gebruiker zijn of haar abonnement beëindigt en zijn of haar account uit je netwerk verwijdert, wordt zijn of haar e-mailadres verplaatst naar de lijst die is ingesteld voor geannuleerde accounts.
 
-## Dubbele inschrijving inschakelen
+## Dubbele inschrijving inschakelen {#enabling-double-subscription}
 
 Op dezelfde instellingenpagina kun je **Dubbele inschrijving** inschakelen. Deze optie voegt de gebruiker toe aan zowel de geselecteerde standaardlijst ALS de lijst die is geselecteerd voor het abonnement van die gebruiker. Als deze optie niet is ingeschakeld, wordt de gebruiker alleen toegevoegd aan de lijst die is geselecteerd voor het abonnement van de gebruiker. Als er geen lijst is ingesteld voor dat specifieke abonnement, wordt de gebruiker toegevoegd aan de geselecteerde standaardlijst.
 
@@ -76,7 +76,7 @@ Op dezelfde instellingenpagina kun je **Dubbele inschrijving** inschakelen. Deze
 
 _Je kunt je gebruikers bij registratie laten inschrijven op zowel de standaardlijst als de lijst van het abonnement_
 
-## Lijsten en groepen selecteren voor elk van de abonnementen
+## Lijsten en groepen selecteren voor elk van de abonnementen {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Ga naar je **Abonnementen** en selecteer het abonnement dat je wilt bewerken. Let op dat in de meta-box **Geavanceerde opties** een nieuw tabblad met de naam MailChimp beschikbaar zal zijn.
 

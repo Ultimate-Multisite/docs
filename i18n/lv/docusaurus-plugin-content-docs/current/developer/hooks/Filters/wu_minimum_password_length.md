@@ -4,22 +4,22 @@ title: Filtrs - wu_minimum_password_length
 sidebar_label: wu_minimum_password_length
 _i18n_hash: 02317f8ab8200551a9d2112b8ba4b7a8
 ---
-# Filtrs: wu_minimum_password_length
+# Filtrs: wu_minimum_password_length {#filter-wuminimumpasswordlength}
 
 Filtrē minimālo paroles garumu.
 
 Tiek piemērots tikai tad, ja wu_enforce_password_rules ir true.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $min_length | `int` | Minimālais paroles garums. Noklusējums 12 (atbilst Defender Pro). |
 | $defender_active | `bool` | Vai Defender Pro Strong Password ir aktīvs. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.4.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L543) 543. rindā

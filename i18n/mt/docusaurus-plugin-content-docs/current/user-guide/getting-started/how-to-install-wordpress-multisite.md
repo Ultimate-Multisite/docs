@@ -3,7 +3,7 @@ title: Come installa WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Come tf installa WordPress Multisite?
+# Come tf installa WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite itta ti permetti li tieni una rete di siti su un'unica installazione. Questa è una funzione integrata, ma non è attiva di default.
 
@@ -105,9 +105,9 @@ Per creare un subsite:
 
 Dopo aver compilato i campi, clicca sul pulsante "Add site". Una volta creato il nuovo subsite, vai ad accedervi per assicurarti che il subsite funzioni correttamente.
 
-## Problemi Comuni:
+## Problemi Comuni: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Posso creare nuovi siti ma non sono accessibili.
+### 1. Posso creare nuovi siti ma non sono accessibili. {#common-problems}
 
 Se hai scelto i subdomain, devi anche configurare i wildcard subdomain per la tua rete multisite.
 

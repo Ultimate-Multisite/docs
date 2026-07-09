@@ -3,11 +3,11 @@ title: Админ панелін аңлау
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Админ Панели Түшю
+# Админ Панели Түшю {#touring-the-admin-panel}
 
 Ultimate Multisite максимально просты и понятен сам по себе, но с таким мощным инструментом он может помочь провести вам экскурсию. Давайте пройдемся по административным страницам, чтобы вы освоились.
 
-## Дашборд (Dashboard)
+## Дашборд (Dashboard) {#dashboard}
 
 **Дашборд** Ultimate Multisite показывает базовые отчеты и аналитику, включая доходы, активность сайтов, рост членства, количество посетителей и географические данные.
 
@@ -25,61 +25,61 @@ Ultimate Multisite максимально просты и понятен сам 
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Формы Оформления Заказов (Checkout Forms)
+## Формы Оформления Заказов (Checkout Forms) {#checkout-forms}
 
 **Формы оформления заказов** дают вам гибкость для создания пользовательских страниц регистрации. Вы можете настраивать поля, вставлять кастомные классы и скрипты, а также ограничивать доступ в зависимости от страны или местоположения посетителя.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Продукты (Products)
+## Продукты (Products) {#products}
 
 Раздел **Продукты** — это то место, где вы создаете разные тарифные планы, пакеты и услуги для вашей сети. Определяйте цены, частоту выставления счетов и лимиты и квоты на уровне продукта.
 
 ![Products list](/img/admin/products-list.png)
 
-## Членство (Memberships)
+## Членство (Memberships) {#memberships}
 
 Страница **Членства** показывает все подписки в вашей сети. Просматривайте и редактируйте детали подписок, включая планы, продукты, суммы и частоту выставления счетов, историю платежей и временные метки.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Платежи (Payments)
+## Платежи (Payments) {#payments}
 
 **Оплата (Payments)** sayfası tüm ağınızdaki ödeme geçmişinizin hızlı bir görünümünü sunar; bu, belirli ürünler ve tutarlar dahil olmak üzere ayrıntılı işlem bilgilerini içerir.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Müşteriler (Customers)
+## Müşteriler (Customers) {#customers}
 
 **Müşteriler** sayfası ağınızda kayıtlı tüm üyeleri gösterir; bunlara isim, e-posta adresi, son giriş zamanı ve alt sitelerine giriş yapmak için bir "geçiş yap" bağlantısı gibi temel kullanıcı bilgileri dahildir.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Siteler (Sites)
+## Siteler (Sites) {#sites}
 
 **Siteler** sayfası ağınızdaki tüm alt sitelerini, site şablonlarını ve müşteri tarafından sahip olunan siteleri listeler. Eşlenmiş alan adlarını (domains), limitleri ve kotasını, eklentileri ve temaları kolayca yönetebilir, ayrıca site küçük resimlerini de görebilirsiniz.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Alan Adları (Domains)
+## Alan Adları (Domains) {#domains}
 
 **Alan Adları** sayfası alt sitelere eşlenmiş özel alan adlarına ayrılmıştır. Süper yönetici olarak, özel alan adı isimlerini manuel olarak ekleyebilir veya eşleştirebilir ve DNS kayıtlarını ile günlükleri görüntüleyebilirsiniz.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## İndirim Kodları (Discount Codes)
+## İndirim Kodları (Discount Codes) {#discount-codes}
 
 **İndirim Kodları**, son kullanıcılarınıza indirimler sunmak için kupon kodları oluşturmanıza olanak tanır. İndirim değerini belirtin ve belirli kullanıcıları veya grupları hedefleyin.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Yayınlar (Broadcasts)
+## Yayınlar (Broadcasts) {#broadcasts}
 
 **Yayınlar**, alt site kullanıcılarına duyurular yayınlamak veya özel mesaj göndermek için bir araçtır. Aboneliklerine bağlı plana veya ürüne göre belirli kullanıcı gruplarını hedefleyebilirsiniz.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Ayarlar (Settings)
+## Ayarlar (Settings) {#settings}
 
 **Ayarlar** sayfası, Ultimate Multisite'ı yapılandırdığınız yerdir — kayıt ayarları, ödemeler, API ve webhooks, alan adı eşleştirmesi ve diğer entegrasyonlar.
 
@@ -109,13 +109,13 @@ AI коннектор настройка перечисляет поддержи
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## События (Events)
+## События (Events) {#events}
 
 Страница **События** ведет учет всех событий и журналов в вашей сети. Она отслеживает такие действия, как изменения планов, регистрации и другие перемещения — это полезно для мониторинга вашего мультисайта.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#webhooks}
 
 **Webhooks** позволяют отправлять данные в другое приложение. Это полезно для отправки данных из Ultimate Multisite на такие платформы, как Zapier.
 

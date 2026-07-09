@@ -4,11 +4,11 @@ title: 'Әрекет - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 Нысан дерекқорға сақталғаннан кейін іске қосылады.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 | $this | `\Base_Model` | Нысан данасы. |
 | $new | `bool` | Нысан жаңа болса, True. |
 
-### Бастап
+### Бастап {#since}
 
 - 2.0.0
-### Дереккөзі
+### Дереккөзі {#source}
 
 - [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) ішінде 624-жолда анықталған
 - [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) ішінде 1754-жолда анықталған

@@ -3,7 +3,7 @@ title: Checkout-Formulare
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout-Formulare
+# Checkout-Formulare {#checkout-forms}
 
 Checkout-Formulare sind eine einfache und flexible Möglichkeit, mit verschiedenen Ansätzen zu experimentieren, wenn Sie neue Kunden konvertieren möchten.
 
@@ -36,13 +36,13 @@ Alternativ kannst du die Formulare, die du bereits hast, bearbeiten oder duplizi
 
 ![Checkout-Formular-Hover-Aktionen](/img/config/checkout-form-hover-actions.png)
 
-#### Überblick über den Checkout-Formular-Editor
+#### Überblick über den Checkout-Formular-Editor {#checkout-form-editor-overview}
 
 Der Checkout-Formular-Editor bietet eine umfassende Oberfläche zum Erstellen deiner Registrierungsformulare. Hier ist ein Überblick über das Editor-Layout:
 
 ![Überblick über den Checkout-Formular-Editor](/img/config/checkout-form-editor-overview.png)
 
-### Bearbeiten eines Checkout-Formulars
+### Bearbeiten eines Checkout-Formulars {#editing-a-checkout-form}
 
 Du kannst Checkout-Formulare für verschiedene Zwecke erstellen. In diesem Beispiel arbeiten wir an einem Registrierungsformular.
 
@@ -112,7 +112,7 @@ Um den Shortcode Ihres Formulars zu erhalten, klicken Sie auf Generate Shortcode
 
 ![Speichern-Button mit Shortcode](/img/config/checkout-form-save.png)
 
-### Das Feld „Pricing Table“
+### Das Feld „Pricing Table“ {#the-pricing-table-field}
 
 Das Feld **Preistabelle** zeigt deine Produkte im Checkout-Formular an, damit Kunden einen Tarif auswählen können. Wenn du dieses Feld bearbeitest, kannst du mehrere Optionen konfigurieren:
 
@@ -130,17 +130,17 @@ So erscheint die Preistabelle im Frontend-Registrierungsformular:
 
 Wenn du ein Produkt zur Preistabelle hinzufügst, bevor das Formular die Felder enthält, die zum Abschließen des Checkout-Ablaufs dieses Produkts erforderlich sind, zeigt der Editor jetzt eine Warnung an. Verwende die Warnung, um das fehlende Pflichtfeld hinzuzufügen, bevor du Änderungen für ein Live-Registrierungsformular veröffentlichst oder speicherst.
 
-### Einen Umschalter für die Zeitraum-Auswahl hinzufügen
+### Einen Umschalter für die Zeitraum-Auswahl hinzufügen {#adding-a-period-selection-toggle}
 
 Wenn du [Price Variations](creating-your-first-subscription-product#price-variations) für deine Produkte konfiguriert hast (z. B. monatliche und jährliche Preise), kannst du deinem Checkout-Formular ein **Period Selection**-Feld hinzufügen. Dieses Feld zeigt einen Toggle an, mit dem Kunden zwischen Abrechnungszeiträumen wechseln können, und die Preistabelle wird dynamisch in Echtzeit aktualisiert.
 
-#### Schritt 1: Price Variations für deine Produkte einrichten
+#### Schritt 1: Price Variations für deine Produkte einrichten {#step-1-set-up-price-variations-on-your-products}
 
 Bevor du das Period Selection-Feld hinzufügst, stelle sicher, dass für deine Produkte Price Variations konfiguriert sind. Gehe zu **Ultimate Multisite > Products**, bearbeite ein Produkt und navigiere zum Tab **Price Variations**, um alternative Abrechnungszeiträume hinzuzufügen (z. B. jährlich zu einem reduzierten Preis).
 
 ![Price Variations-Tab bei einem Produkt](/img/config/product-price-variations-tab.png)
 
-#### Schritt 2: Das Period Selection-Feld zu deinem Checkout-Formular hinzufügen
+#### Schritt 2: Das Period Selection-Feld zu deinem Checkout-Formular hinzufügen {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Gehe zu **Ultimate Multisite > Checkout Forms** und bearbeite dein Checkout-Formular.
 
@@ -163,13 +163,13 @@ Bevor du das Period Selection-Feld hinzufügst, stelle sicher, dass für deine P
 
 7. Klicken Sie auf **Save Field**.
 
-#### Schritt 3: Das Feld oberhalb der Preistabelle positionieren
+#### Schritt 3: Das Feld oberhalb der Preistabelle positionieren {#step-3-position-the-field-above-the-pricing-table}
 
 Für die beste Benutzererfahrung stellen Sie sicher, dass das Period Selection-Feld in Ihrem Checkout-Schritt **vor** dem Pricing Table-Feld erscheint. Sie können Felder per Drag-and-drop neu anordnen im Checkout-Formular-Editor. So wählen Kunden zuerst einen Abrechnungszeitraum aus und sehen dann die Preise für diesen Zeitraum.
 
 ![Checkout-Formular-Editor mit Feldreihenfolge](/img/config/checkout-form-editor-with-fields.png)
 
-#### So funktioniert es im Frontend
+#### So funktioniert es im Frontend {#how-it-works-on-the-frontend}
 
 Nach der Konfiguration sehen Kunden, die Ihre Registrierungsseite besuchen, den Zeitraum-Selector oberhalb der Preistabelle. Wenn sie einen anderen Abrechnungszeitraum anklicken:
 
@@ -177,7 +177,7 @@ Nach der Konfiguration sehen Kunden, die Ihre Registrierungsseite besuchen, den 
   * Wenn **Force Different Durations** im Pricing Table-Feld deaktiviert ist, werden Produkte ohne Preisvariante für den ausgewählten Zeitraum ausgeblendet.
   * Wenn **Force Different Durations** aktiviert ist, bleiben alle Produkte sichtbar, auch wenn sie keine Variante für den ausgewählten Zeitraum haben (sie zeigen dann ihren Standardpreis an).
 
-#### Vorauswahl eines Abrechnungszeitraums per URL
+#### Vorauswahl eines Abrechnungszeitraums per URL {#pre-selecting-a-billing-period-via-url}
 
 Du kannst außerdem ein Produkt und einen Abrechnungszeitraum über die URL vorauswählen. Ultimate Multisite unterstützt diese URL-Muster:
 
@@ -185,11 +185,11 @@ Du kannst außerdem ein Produkt und einen Abrechnungszeitraum über die URL vora
   * `/register/premium/12` — Wählt das Produkt und eine Dauer von 12 Monaten voraus
   * `/register/premium/1/year` — Wählt das Produkt mit einer Dauer von 1 Jahr voraus
 
-### Das Feld für die Template-Auswahl
+### Das Feld für die Template-Auswahl {#the-template-selection-field}
 
 Das Feld **Template-Auswahl** ermöglicht es Kunden, während des Checkouts ein Website-Template auszuwählen. Es ist jetzt standardmäßig in den Checkout-Formular-Templates mit **einem Schritt** und **mehreren Schritten** enthalten, die in Ultimate Multisite v2.6.1 hinzugefügt wurden.
 
-#### Das Feld manuell hinzufügen
+#### Das Feld manuell hinzufügen {#adding-the-field-manually}
 
 Wenn du mit einem Formular arbeitest, das vor v2.6.1 erstellt wurde, oder mit einem leeren Template begonnen hast:
 
@@ -200,11 +200,11 @@ Wenn du mit einem Formular arbeitest, das vor v2.6.1 erstellt wurde, oder mit ei
    - **Label** — Die Überschrift, die Kunden über dem Template-Raster sehen (z. B. „Wähle ein Website-Template“).
    - **Erforderlich** — Ob Kunden ein Template auswählen müssen, bevor sie fortfahren können.
 
-#### So funktioniert es
+#### So funktioniert es {#how-it-works}
 
 Wenn ein Kunde während des Checkouts ein Template auswählt, verwendet Ultimate Multisite dieses beim Bereitstellen seiner neuen Website. Die angezeigten Templates stammen aus deiner Liste **Website-Templates** (**Ultimate Multisite > Website-Templates**). Nur Templates, die als für Kunden verfügbar markiert sind, erscheinen hier.
 
-### Basisdomains für Checkout-Formulare
+### Basisdomains für Checkout-Formulare {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 behandelt Domains, die in **Site URL**-Feldern von Checkout-Formularen konfiguriert sind, als Netzwerk-Basisdomains. Verwende die Verfügbarkeitsdomain-Einstellungen des Feldes, wenn Kunden Websites unter einer oder mehreren gemeinsam genutzten Registrierungsdomains erstellen sollen, wie `example.com` und `sites.example.com`.
 
@@ -212,6 +212,6 @@ Gemeinsam genutzte Basisdomains von Checkout-Formularen werden nicht als benutze
 
 Verwende benutzerdefinierte Domains für pro Kunde zugeordnete Hosts, wie `customer-example.com`. Verwende Basisdomains von Checkout-Formularen für gemeinsam genutzte Registrierungs-Hosts, die viele Websites nutzen können.
 
-#### Das Feld entfernen
+#### Das Feld entfernen {#removing-the-field}
 
 Wenn du keine Website-Vorlagen anbietest, entferne das Feld Template Selection aus deinem Formular. Kunden erhalten dann diejenige Standardvorlage, die unter **Ultimate Multisite > Settings > Site Templates** konfiguriert ist.

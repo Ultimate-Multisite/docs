@@ -3,7 +3,7 @@ title: Einen Tarif upgraden
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Einen Tarif upgraden (v2)
+# Einen Tarif upgraden (v2) {#upgrading-a-plan-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
@@ -41,7 +41,7 @@ Nachdem der Checkout abgeschlossen ist, werden die neuen Produkte dem Account Ih
 
 ##
 
-## Upgrade- und Downgrade-Pfade
+## Upgrade- und Downgrade-Pfade {#upgrade-and-downgrade-paths}
 
 Bei jedem Ihrer Produkte gibt es einen Tab **Upgrades & Downgrades**. Die erste Option in diesem Tab ist ein Feld namens **Tarifgruppe**.
 

@@ -3,7 +3,7 @@ title: WooCommerce integratsiooni muudatuste logi
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce integratsiooni muudatuste logi
+# WooCommerce integratsiooni muudatuste logi {#woocommerce-integration-changelog}
 
 Versioon 2.2.0 - avaldatud 2026-07-01
 * Uus: Ultimate Multisite maksusummad ilmuvad nüüd checkoutis eraldi WooCommerce tasuridadena, muutes maksude kogusummad enne maksmist selgemaks.

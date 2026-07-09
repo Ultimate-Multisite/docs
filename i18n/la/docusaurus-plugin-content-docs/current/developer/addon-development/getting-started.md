@@ -3,9 +3,9 @@ title: Initia evolutionis additamentorum
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Elaboratio Additamenti
+# Elaboratio Additamenti {#addon-development}
 
-## Structura Additamenti
+## Structura Additamenti {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Fasciculi exemplarium
 ```
 
-## Exemplar Fasciculi Principalis Additamenti
+## Exemplar Fasciculi Principalis Additamenti {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Exemplum Exemplaris Proprii
+## Exemplum Exemplaris Proprii {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integratio Paginae Administratoriae
+## Integratio Paginae Administratoriae {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addon Tuum Experiri
+## Addon Tuum Experiri {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Puncta extensionis v2.13.0
+## Puncta extensionis v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 addit plura puncta extensionis quae utilia sunt addonibus quae cum possessoribus sui iuris, dominiis checkout, aut automatizatione DNS provisoris hospitis integrantur.
 
-### SSO et URL administrationis situs principalis
+### SSO et URL administrationis situs principalis {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Dominia basica formae checkout
+### Dominia basica formae checkout {#checkout-form-base-domains}
 
 Utere `wu_checkout_form_base_domains` cum addon tuum praebet addita dominia basica communia quae se gerere debent sicut dominia **URL situs** formae checkout pro mappationibus propriis singulorum situum:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite hos hospites normalizat et praeterit automatica registra dominiorum mappatorum pro singulis sitibus eis destinata.
 
-### Creatio automatica registrorum dominii
+### Creatio automatica registrorum dominii {#automatic-domain-record-creation}
 
 Utere `wu_should_create_domain_record_for_site` cum addon tuum necesse habet supprimere aut differre creationem automaticam registri dominii pro situ nuper creato:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Integrationes provisoris hospitis quae auscultant `wu_add_subdomain` possunt creare registra DNS apud provisorem cum situs creantur. Si nulla integratio ad illam actionem relatus est, Ultimate Multisite opus inanis in postico praeterit.
 
-## Gradus Proximi
+## Gradus Proximi {#next-steps}
 
 - Recognosce [Indicem Hooks](/developer/hooks) pro actionibus et filtris praesto
 - Inspice [Conspectum REST API](/developer/rest-api/overview) pro integratione API

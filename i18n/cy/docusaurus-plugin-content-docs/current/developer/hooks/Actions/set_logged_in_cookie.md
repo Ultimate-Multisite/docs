@@ -4,11 +4,11 @@ title: Gweithred - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Gweithred: set_logged_in_cookie
+# Gweithred: set_logged_in_cookie {#action-setloggedincookie}
 
 Yn tanio yn syth cyn i’r cwci dilysu mewngofnodedig gael ei osod.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Yn tanio yn syth cyn i’r cwci dilysu mewngofnodedig gael ei osod.
 | $scheme | `string` | Cynllun dilysu. Rhagosodiad 'logged_in'. |
 | $token | `string` | Tocyn sesiwn y defnyddiwr i’w ddefnyddio ar gyfer y cwci hwn. |
 
-### Ers
+### Ers {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Wedi’i ddiffinio yn [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) ar linell 141

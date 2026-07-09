@@ -3,19 +3,19 @@ title: Kupanga Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Kuita Kufamba ne Stripe Gateway (v2)
+# Kuita Kufamba ne Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**CHINARI CHINARI: Iriweiri iri rinore referera ku Ultimate Multisite version 2.x.**_
 
 Kune zvinhu zvakawanda, unogona kuitanisa nzira dzirai dzakawanda dzehupenyu pamwe chete pa settings dzako dzehupenyu: Stripe, Stripe Checkout, PayPal uye Manual. Muirongo iri, tiri kuona sei kutanisa ne **Stripe**.
 
-## Kuva NeKuti Stripe Ione
+## Kuva NeKuti Stripe Ione {#enabling-stripe}
 
 Kuti utange Stripe kubva mhando inogona kushandiswa dzehupenyu pamwe chete mu network yako, ndichida kuti uenda ku **Ultimate Multisite > Settings > Payments** uye utange (tick) toggle inotevera ne **Stripe** kana **Stripe Checkout** munzira ya Active Payment Gateways.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Iri shanduro rinonyanya rine chakanangwa (space) kuti uingire namba dze credit card nguva inozvikira checkout.
 
@@ -45,7 +45,7 @@ Chinjisa value yekuita munzira **Publishable key** uye **Secret key**, kubva mu 
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Kuita Webhook ya Stripe
+## Kuita Webhook ya Stripe {#setting-up-stripe-webhook}
 
 Stripe inenge inedarira webhook events kuti Ultimate Multisite inozivisa mazuva onozivisa zvinhu zvakawanda munzira yako yekuti inozivisa (your stripe account).
 

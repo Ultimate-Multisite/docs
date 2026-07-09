@@ -3,11 +3,11 @@ title: Awoodaha Maamulka Plugin-ka
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Awoodaha Maamulka Fidinnada
+# Awoodaha Maamulka Fidinnada {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 wuxuu la yimaadaa **7 awoodood oo maamulka fidinnada ah** oo AI kaaliyuhu adeegsan karo inta lagu jiro wada hadal. Awoodahani waxay bixiyaan xakameyn barnaamijeed oo lagu maamulo fidinnada WordPress ee lagu rakibay [Nidaamka Dhisaha Fidinnada & Goobta Tijaabada](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Dulmarka Awoodaha
+## Dulmarka Awoodaha {#abilities-overview}
 
 | Awood | Slug | Sharaxaad |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 wuxuu la yimaadaa **7 awoodood oo maamulka fidinnada ah**
 | Rakib Fidinta | `install_plugin` | Waxay fidin goob tijaabo ku jirta u dirtaa galka fidinnada WordPress ee tooska ah. |
 | Daar Fidinta | `activate_plugin` | Waxay fidin goob tijaabo ku jirta ka daartaa deegaanka goobta tijaabada wp-env. |
 
-## API-ga Rakibaha Fidinta
+## API-ga Rakibaha Fidinta {#plugin-installer-api}
 
 Rakibaha fidintu wuxuu maamulaa hawlgallada nidaamka faylasha marka fidinno la dirayo ama la saarayo. Hab-dhaqannada muhiimka ah:
 
@@ -28,7 +28,7 @@ Rakibaha fidintu wuxuu maamulaa hawlgallada nidaamka faylasha marka fidinno la d
 - **Cusboonaysiin**: Waxay beddeshaa faylasha fidinta ee jira. Waxay damisaa fidinta ka hor qorista si looga fogaado khaladaadka xaalad-qayb ahaan ah.
 - **Tirtirid iyadoo slug la adeegsanayo**: Waxay heshaa galka fidinta iyadoo loo eegayo slug, waxay ka damisaa dhammaan bogagga, ka dibna waxay saartaa galka.
 
-### Diiwaangelinta Maareeye Rakibid Gaar ah
+### Diiwaangelinta Maareeye Rakibid Gaar ah {#registering-a-custom-install-handler}
 
 Waxaad ku xirmi kartaa meertada rakibidda adigoo adeegsanaya actions-ka `gratis_ai_plugin_installer_before_install` iyo `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Diiwaanka Ekosistemka
+## Diiwaanka Ekosistemka {#ecosystem-registry}
 
 Awoodaha waxaa lagu diiwaangeliyaa **diiwaanka ekosistemka fidinnada**. Diiwaanku wuxuu isku xiraa ability slugs iyo classes-kooda handler, wuxuuna u bandhigaa tool dispatcher-ka AI agent-ka.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Isdhexgalka HookScanner
+## Isdhexgalka HookScanner {#hookscanner-integration}
 
 Awoodaha `create_plugin` iyo `update_plugin` waxay si toos ah **HookScanner** ugu socodsiiyaan koodhka cusub ee la abuuray. HookScanner wuxuu soo celiyaa liis action iyo filter hooks WordPress ah oo fidintu diiwaangelisay.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner wuxuu si toos ah uga boodaa galalka `vendor/` iyo `node_modules/`.
 
-## Qaab-dhismeedka Shaqooyinka Async
+## Qaab-dhismeedka Shaqooyinka Async {#async-job-architecture}
 
 Hawlgallada fidinnada ee waqti dheer qaata (abuur, rakib) waxaa loo diraa sidii **shaqooyin async** oo leh la-socod horumar oo toos ah. Interface-ka wada sheekaysiga AI wuxuu weydiiyaa horumarka wuxuuna isticmaalaha u qulquliyaa cusboonaysiinta xaaladda:
 

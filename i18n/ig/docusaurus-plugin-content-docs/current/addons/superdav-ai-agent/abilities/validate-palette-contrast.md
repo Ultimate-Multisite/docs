@@ -3,15 +3,15 @@ title: Nyochaa Ọdịiche Paleti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Nyochaa Nkwekọrịta Palette Contrast
+# Nyochaa Nkwekọrịta Palette Contrast {#validate-palette-contrast}
 
 Ikike **Validate Palette Contrast** na-enyocha ụzọ abụọ agba n'ime palette imewe gị maka irube isi na WCAG (Web Content Accessibility Guidelines) tupu itinye ha na theme gị.
 
-## Nchịkọta
+## Nchịkọta {#overview}
 
 Ikike a na-eme ka usoro agba nke saịtị gị kwekọọ na ụkpụrụ nnweta site n'ịkwado oke nkwekọrịta dị n'etiti ederede na agba ndabere. Ọ na-enyere aka igbochi njikọta agba ndị nwere ike isi ike ka ndị ọrụ nwere nsogbu ịhụ ihe gụọ.
 
-## Ụdị Ntinye
+## Ụdị Ntinye {#input-format}
 
 Ikike a na-anabata palette agba dịka ntinye:
 
@@ -35,7 +35,7 @@ Ikike a na-anabata palette agba dịka ntinye:
 }
 ```
 
-### Parameters
+### Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Ikike a na-anabata palette agba dịka ntinye:
 | `wcag_level` | string | No | Ọkwa irube isi WCAG: "A", "AA" (ndabara), ma ọ bụ "AAA" |
 | `pairs_to_check` | array | No | Ụzọ abụọ agba akọwapụtara iji kwado (dịka, `["primary-text", "background-text"]`) |
 
-## Ọkwa WCAG A Na-enyocha
+## Ọkwa WCAG A Na-enyocha {#wcag-levels-checked}
 
 Ikike a na-akwado oke nkwekọrịta dịka ụkpụrụ WCAG si dị:
 
@@ -56,7 +56,7 @@ Ikike a na-akwado oke nkwekọrịta dịka ụkpụrụ WCAG si dị:
 - **Ederede Nkịtị** — ederede pere mpe karịa 18pt (ma ọ bụ 14pt bold)
 - **Ederede Ukwu** — ederede 18pt ma ọ bụ karịa (ma ọ bụ 14pt bold ma ọ bụ karịa)
 
-## Schema Mmepụta
+## Schema Mmepụta {#output-schema}
 
 Ikike a na-eweghachi akụkọ nkwado zuru ezu:
 
@@ -95,7 +95,7 @@ Ikike a na-eweghachi akụkọ nkwado zuru ezu:
 }
 ```
 
-### Ubi Mmepụta
+### Ubi Mmepụta {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Ikike a na-eweghachi akụkọ nkwado zuru ezu:
 | `status` | string | "pass" ma ọ bụ "fail" maka ụzọ abụọ ọ bụla |
 | `recommendations` | array | Aro maka imezi ụzọ abụọ dara ada |
 
-## Ihe Nlereanya Ojiji
+## Ihe Nlereanya Ojiji {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Ikike a na-akwado njikọta agba niile ma weghachite:
 - ✅ Background + Text: oke 12.1:1 (na-agafe WCAG AAA)
 - N'ozuzu: Na-erube isi na WCAG AA
 
-## Njikọ na Theme Builder
+## Njikọ na Theme Builder {#integration-with-theme-builder}
 
 Mgbe ị na-eji nhọrọ ntụziaka-imewe nke Theme Builder, ikike Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Mgbe ị na-eji nhọrọ ntụziaka-imewe nke Theme Builder, ikike Validate Pal
 4. Na-enye aro maka ụzọ abụọ na-adịghị erube isi
 5. Na-egbochi itinye usoro agba ndị na-adịghị enweta mfe
 
-## Omume Kacha Mma
+## Omume Kacha Mma {#best-practices}
 
 - **Malite na ọkwa AA** — WCAG AA bụ ụkpụrụ maka ọtụtụ webụsaịtị
 - **Nwalee tupu itinye** — kwado palette gị tupu ịkwado imewe
@@ -137,7 +137,7 @@ Mgbe ị na-eji nhọrọ ntụziaka-imewe nke Theme Builder, ikike Validate Pal
 - **Tụlee mmasị ndị ọrụ** — ụfọdụ ndị ọrụ nwere ike inwe mmetụta agba ọzọ
 - **Jiri ndị nyocha nkwekọrịta** — jikọta ikike a na ngwá ọrụ nchọgharị maka nkwenye
 
-## Ụzọ Abụọ Dara Ada na Aro
+## Ụzọ Abụọ Dara Ada na Aro {#failing-pairs-and-recommendations}
 
 Ọ bụrụ na ụzọ abụọ agba adaa nkwado, ikike a na-enye aro:
 
@@ -155,7 +155,7 @@ Mgbe ị na-eji nhọrọ ntụziaka-imewe nke Theme Builder, ikike Validate Pal
 }
 ```
 
-## Ikike Ndị Metụtara
+## Ikike Ndị Metụtara {#related-abilities}
 
 - [Mepụta Logo SVG](./generate-logo-svg.md) — mepụta logo jiri palette agba gị a kwadoro
 - [Mepụta Menu](./create-menu.md) — wuo ngagharị na agba ndị nwere nnweta

@@ -3,15 +3,15 @@ title: 'Lekcija 7: Naredite po svoje'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lekcija 7: Naj bo vaše
+# Lekcija 7: Naj bo vaše {#lesson-7-making-it-yours}
 
 Vaše stranke se nikoli ne bi smele počutiti, kot da uporabljajo "nek WordPress vtičnik." Počutiti bi se morale, kot da uporabljajo FitSite -- platformo, zgrajeno za njihovo panogo. Ta lekcija obravnava znamčenje, white-label označevanje in to, kako platformi dati občutek pravega izdelka.
 
-## Kje smo ostali
+## Kje smo ostali {#where-we-left-off}
 
 FitSite ima delujoč tok zaključka nakupa, ki lastnike fitnes studiev popelje od izbire paketa do živega spletnega mesta. Zdaj bomo poskrbeli, da bo celotna izkušnja delovala kot povezan, znamčen izdelek.
 
-## Domena vaše platforme
+## Domena vaše platforme {#your-platform-domain}
 
 Temelj vaše blagovne znamke je vaša domena. Za FitSite:
 
@@ -19,7 +19,7 @@ Temelj vaše blagovne znamke je vaša domena. Za FitSite:
 - **Spletna mesta strank**: `studioname.fitsite.com` (poddomena)
 - **Domene po meri**: Stranke na paketih Growth in Pro lahko preslikajo svojo domeno
 
-### Nastavitev vaše domene
+### Nastavitev vaše domene {#setting-up-your-domain}
 
 1. Registrirajte domeno svoje platforme
 2. Usmerite jo k svojemu ponudniku gostovanja
@@ -28,11 +28,11 @@ Temelj vaše blagovne znamke je vaša domena. Za FitSite:
 
 Za podrobna navodila glejte [Kako konfigurirati preslikavo domen](/user-guide/domain-mapping/how-to-configure-domain-mapping).
 
-## White-label označevanje skrbniške izkušnje
+## White-label označevanje skrbniške izkušnje {#white-labeling-the-admin-experience}
 
 Ko se lastnik fitnes studia prijavi v Dashboard svojega spletnega mesta, mora videti vašo blagovno znamko, ne pa WordPress ali Ultimate Multisite znamčenja.
 
-### Prilagojena prijavna stran
+### Prilagojena prijavna stran {#custom-login-page}
 
 Prilagodite WordPress prijavno stran, da prikazuje:
 
@@ -40,7 +40,7 @@ Prilagodite WordPress prijavno stran, da prikazuje:
 - Ozadje s podobami, primernimi za fitnes
 - Barve vaše blagovne znamke
 
-### Znamčenje Dashboarda
+### Znamčenje Dashboarda {#dashboard-branding}
 
 Uporabite dodatek [Admin Page Creator](/addons/admin-page-creator) ali CSS po meri, da:
 
@@ -48,7 +48,7 @@ Uporabite dodatek [Admin Page Creator](/addons/admin-page-creator) ali CSS po me
 - Prilagodite barvno shemo skrbništva, da se ujema z vašo blagovno znamko
 - Dodate gradnik Dashboarda po meri s hitrimi povezavami in viri pomoči, specifičnimi za fitnes
 
-### Skrbniške strani po meri
+### Skrbniške strani po meri {#custom-admin-pages}
 
 Razmislite o ustvarjanju skrbniških strani po meri, ki izpostavijo najpomembnejša dejanja za lastnike fitnes studiev:
 
@@ -58,11 +58,11 @@ Razmislite o ustvarjanju skrbniških strani po meri, ki izpostavijo najpomembnej
 
 To zmanjša krivuljo učenja, saj dejanja, relevantna za nišo, postavi v ospredje, namesto da bi bila zakopana v standardnem WordPress meniju.
 
-## Znamčenje vaših komunikacij
+## Znamčenje vaših komunikacij {#branding-your-communications}
 
 Vsako e-poštno sporočilo, račun in obvestilo bi morali krepiti vašo blagovno znamko.
 
-### Sistemska e-poštna sporočila
+### Sistemska e-poštna sporočila {#system-emails}
 
 Pojdite na **Ultimate Multisite > Settings > Emails** in prilagodite vsa sistemska e-poštna sporočila:
 
@@ -79,7 +79,7 @@ Ključna e-poštna sporočila za prilagoditev:
 | Potrdilo o plačilu | "Plačilo prejeto" | "Plačilo naročnine FitSite potrjeno" |
 | Konec preizkusnega obdobja | "Vaše preizkusno obdobje se kmalu konča" | "Vaše preizkusno obdobje FitSite se konča čez 3 dni -- ohranite spletno mesto svojega studia živo" |
 
-### Računi
+### Računi {#invoices}
 
 Prilagodite predloge računov z:
 
@@ -87,7 +87,7 @@ Prilagodite predloge računov z:
 - Podatki vašega podjetja
 - Imeni izdelkov, specifičnimi za fitnes (ne splošnimi ID-ji paketov)
 
-## Spletno mesto za stranke
+## Spletno mesto za stranke {#the-customer-facing-site}
 
 Vaša glavna domena (`fitsite.com`) potrebuje marketinško spletno mesto, ki prodaja platformo. To je ločeno od skrbništva omrežja Ultimate Multisite -- je javni obraz vašega podjetja.
 
@@ -103,7 +103,7 @@ Ključne strani:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Domena po meri za stranke
+## Domena po meri za stranke {#custom-domain-for-customers}
 
 Za stranke na paketih, ki vključujejo domene po meri, jasno dokumentirajte postopek:
 
@@ -113,7 +113,7 @@ Za stranke na paketih, ki vključujejo domene po meri, jasno dokumentirajte post
 
 Ustvarite članek pomoči ali vnos v bazi znanja posebej za ta postopek, napisan za netehnične lastnike fitnes studiev.
 
-## Omrežje FitSite do zdaj
+## Omrežje FitSite do zdaj {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Domeno platforme in DNS**, konfigurirana za znamčeno izkušnjo
 - **White-label skrbništvo** z FitSite znamčenjem povsod

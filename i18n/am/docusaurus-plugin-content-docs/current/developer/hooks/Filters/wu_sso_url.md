@@ -4,13 +4,13 @@ title: ማጣሪያ - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# ማጣሪያ፦ wu_sso_url
+# ማጣሪያ፦ wu_sso_url {#filter-wussourl}
 
 ለክሮስ-ዶሜን የደንበኛ እርምጃዎች ከመመለሳቸው በፊት የተፈጠሩ SSO URLs ያጣራል።
 
 አንድ ውህደት ለሉዓላዊ-ተከራይ SSO link የታመነ አውድ ማከል ወይም Ultimate Multisite's token ማረጋገጫን በማስጠበቅ broker URLን መተካት ሲያስፈልገው ይህን ማጣሪያ ይጠቀሙ።
 
-## መለኪያዎች
+## መለኪያዎች {#parameters}
 
 | ስም | ዓይነት | መግለጫ |
 |------|------|-------------|
@@ -19,15 +19,15 @@ _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 | $site_id | `int` | ለጉብኝቱ ዒላማ የጣቢያ ID። |
 | $redirect_to | `string` | ከተሳካ SSO ማረጋገጫ በኋላ የመድረሻ URL። |
 
-### ከ
+### ከ {#since}
 
 - 2.13.0
 
-### ምንጭ
+### ምንጭ {#source}
 
 በ`inc/sso/class-sso.php` ውስጥ ተገልጿል።
 
 
-## የሚመለሰው
+## የሚመለሰው {#returns}
 
 የተጣራ SSO URL።

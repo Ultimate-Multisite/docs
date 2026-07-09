@@ -3,7 +3,7 @@ title: GitHub שניפּלעך
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# ווי צו נוצן Ultimate Multisite קאָד־אויסשניטן אויף אונדזער GitHub רעפּאָזיטאָריע
+# ווי צו נוצן Ultimate Multisite קאָד־אויסשניטן אויף אונדזער GitHub רעפּאָזיטאָריע {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 עס זענען פֿאַראַן קאָד־אויסשניטן אין דער GitHub רעפּאָזיטאָריע, וואָס ווערן אָפֿט געפֿאָדערט דורך Ultimate Multisite באַניצער וואָס ווילן צולייגן קליינע פֿונקציאָנאַליטעטן, ווי צולייגן אַ Google Analytics סקריפּט אויף רעגיסטריר־זײַטן אָדער באַהאַלטן אַ מעטאַ־קעסטל פֿון דעם אַדמין Dashboard.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. מוז־נוצן־צושטעקן (mu-plugins)
 
-# ווי צו צולייגן דעם קאָד־אויסשניט אין דער functions.php טעקע פֿון אײַער טעמע.
+# ווי צו צולייגן דעם קאָד־אויסשניט אין דער functions.php טעקע פֿון אײַער טעמע. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. לאָגט זיך אַרײַן אין אײַער WordPress נעץ־אַדמין Dashboard און גייט צו טעמעס >טעמע־רעדאַקטאָר (זעט דעם סקרינשאָט אונטן).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- סקרינשאָט נישט בנימצא: WordPress טעמע־רעדאַקטאָר ווײַזט רעדאַקטירן די functions.php טעקע -->
 
-# ווי צו שאַפֿן מוז־נוצן־צושטעקן (mu-plugins)
+# ווי צו שאַפֿן מוז־נוצן־צושטעקן (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress האָט אַ פֿעיִקייט וואָס דערלויבט אײַך צו לאָדן אייגענע פֿונקציאָנאַליטעט גערופֿן "מוז־נוצן־צושטעקן", אָדער "mu-plugins" בקיצור.
 

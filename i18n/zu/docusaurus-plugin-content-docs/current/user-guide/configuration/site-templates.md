@@ -3,13 +3,13 @@ title: Izifanekiso Zesayithi
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Izifanekiso Zamasayithi (v2)
+# Izifanekiso Zamasayithi (v2) {#site-templates-v2}
 
 _**QAPHELA: Lesi sihloko sibhekisa ku-Ultimate Multisite version 2.x. Uma usebenzisa version 1.x,**_ **bheka lesi sihloko** _**.**_
 
 Umgomo wethu lapho sakha inethiwekhi esezingeni eliphezulu nge-Ultimate Multisite ukuzenzakalelayo izinqubo eziningi ngangokunokwenzeka kuyilapho sinikeza amaklayenti ethu ukuguquguquka nezinketho ezahlukene angakhetha kuzo lapho edala amawebhusayithi awo. Indlela elula yokufeza le bhalansi ukusebenzisa isici se-Ultimate Multisite Sezifanekiso Zamasayithi.
 
-## Siyini Isifanekiso Sesayithi?
+## Siyini Isifanekiso Sesayithi? {#what-is-a-site-template}
 
 Njengoba igama lisho, Isifanekiso Sesayithi siyisayithi eyisisekelo engasetshenziswa njengesisekelo lapho kudalwa amasayithi amasha kunethiwekhi yakho.
 
@@ -17,7 +17,7 @@ Lokhu kusho ukuthi ungakha isayithi eyisisekelo, uvule ama-plugin ahlukene, uset
 
 Lokho kuzwakala kukuhle kakhulu, kodwa ngisenza kanjani isifanekiso sesayithi esisha? Kulula ngangokunokwenzeka.
 
-## Ukudala Nokuhlela Isifanekiso Sesayithi esisha
+## Ukudala Nokuhlela Isifanekiso Sesayithi esisha {#creating-and-editing-a-new-site-template}
 
 Izifanekiso Zamasayithi zingamasayithi ajwayelekile nje kunethiwekhi yakho. Ukuze udale isifanekiso esisha ungavele uye ku-**Umphathi Wenethiwekhi > Ultimate Multisite > Amasayithi > Engeza Isayithi.**
 
@@ -35,7 +35,7 @@ Phansi kwefomu, uzoqaphela iswishi yokushintsha ethi **Kopisha Isayithi**. Lokhu
 
 ![I-modal yokwengeza isifanekiso sesayithi eneswishi yokukopisha isayithi](/img/config/site-templates-list.png)
 
-### Ukulungisa okuqukethwe Kwesifanekiso Sesayithi
+### Ukulungisa okuqukethwe Kwesifanekiso Sesayithi {#customizing-the-contents-of-a-site-template}
 
 Ukuze ulungise isifanekiso sakho sesayithi, vele uye kuphaneli yaso ye-Dashboard bese wenza izinguquko ozidingayo. Ungadala okuthunyelwe okusha, amakhasi, uvule ama-plugin futhi ushintshe itimu esebenzayo. Ungaze uye ku-Customizer futhi ushintshe zonke izinhlobo zezinketho zokulungisa.
 
@@ -43,11 +43,11 @@ Ukuze ulungise isifanekiso sakho sesayithi, vele uye kuphaneli yaso ye-Dashboard
 
 Yonke leyo datha izokopishwa lapho ikhasimende lidala isayithi entsha esekelwe kuleso Sifanekiso Sesayithi.
 
-### Izinketho Ezithuthukile
+### Izinketho Ezithuthukile {#advanced-options}
 
 Uma uyakwazi ukubhekana nokubhala ikhodi ethile yangokwezifiso, ungasebenzisa i-API yethu Yokusesha Nokushintsha ukuze ushintshe ngokuzenzakalelayo ulwazi kusayithi entsha ngemva kokudalwa kwayo. Lokhu kuyasiza ezintweni ezifana nokushintsha amagama ezinkampani ekhasini elithi Mayelana, ukushintsha i-imeyili yokuxhumana ekhasini Lokuxhumana, njll.
 
-### Ukusebenzisa Izifanekiso Zamasayithi
+### Ukusebenzisa Izifanekiso Zamasayithi {#using-site-templates}
 
 Kulungile, ngakho udale izifanekiso zamasayithi eziningi ezahlukene ezinemiklamo, amatimu nezilungiselelo ezahlukene. Uzizenze kanjani zibe wusizo kunethiwekhi yakho manje?
 
@@ -59,7 +59,7 @@ Ngokuyisisekelo, kunezindlela ezimbili ongazisebenzisa manje (hhayi ngesikhathi 
 
   * Ukuvumela amaklayenti akho ukuthi akhethe izifanekiso zamasayithi ngokwawo ngesikhathi sokubhalisa.
 
-#### Imodi 1: Nika Isifanekiso Sesayithi
+#### Imodi 1: Nika Isifanekiso Sesayithi {#mode-1-assign-site-template}
 
 Kule modi, amaklayenti akho ngeke akwazi ukukhetha isifanekiso lapho edala i-Account, kodwa kunalokho uzocacisa ukuthi yisiphi isifanekiso okufanele sisetshenziswe kuhlelo ngalunye lwezinhlelo zakho.
 
@@ -71,7 +71,7 @@ Lokhu kuzokuletha ekhasini elithi **Hlela Umkhiqizo**. Ngaphansi kwesigaba esith
 
 ![Ithebhu yesifanekiso sesayithi somkhiqizo enenketho yokunikeza isifanekiso sesayithi](/img/config/product-site-templates.png)
 
-#### Imodi 2: Khetha Isifanekiso Sesayithi Esitholakalayo
+#### Imodi 2: Khetha Isifanekiso Sesayithi Esitholakalayo {#mode-2-choose-available-site-template}
 
 Kule modi, uzonikeza amaklayenti akho ukukhetha ngesikhathi senqubo yokubhalisa. Azokwazi ukukhetha kuzifanekiso zamasayithi ezahlukene ozichaza ngaphansi kwezilungiselelo zomkhiqizo. Unenketho yokukhawulela isifanekiso sesayithi angakhetha kuso ngaphansi komkhiqizo okhethiwe. Lokhu kuzokuvumela ukuthi ube namaqoqo ahlukene ezifanekiso zamasayithi ngaphansi komkhiqizo ngamunye, okuyinto efanele ukugqamisa imisebenzi nezici ezahlukene zomkhiqizo onenani eliphezulu.
 
@@ -79,7 +79,7 @@ Ekhasini elithi **Hlela Umkhiqizo**. Ngaphansi kwesigaba esithi **Izinketho Zomk
 
 ![Khetha izifanekiso zamasayithi ezitholakalayo ngezinketho zokuziphatha](/img/config/product-site-templates.png)
 
-### Imodi Ezenzakalelayo: ukukhethwa kwesifanekiso sesayithi efomini Lokukhokha
+### Imodi Ezenzakalelayo: ukukhethwa kwesifanekiso sesayithi efomini Lokukhokha {#default-mode-site-template-selection-on-the-checkout-form}
 
 Uma ufisa ukuthi zonke izifanekiso zakho zamasayithi zitholakale ngesikhathi sokubhalisa, noma mhlawumbe ungakuthandi ukwenza umsebenzi owengeziwe wokunikeza noma wokucacisa izifanekiso zamasayithi ngaphansi komkhiqizo ngamunye owudalayo. Khona-ke ungavele usethe ukukhethwa kwesifanekiso sesayithi ngaphansi kwe-**Fomu Lokukhokha** lakho. Ukuze wenze lokhu, iya ku-**Ultimate Multisite > Amafomu Okukhokha** bese uchofoza **Hlela** ngaphansi kwefomu ofisa ukulilungisa.
 
@@ -93,29 +93,29 @@ Ohlangothini lwangaphambili, amakhasimende abona isikhethi sesifanekiso ngesikha
 
 ![Isikhethi sesifanekiso ohlangothini lwangaphambili ngesikhathi sokubhalisa](/img/config/frontend-template-chooser.png)
 
-### Izinketho Zezifanekiso Zamasayithi
+### Izinketho Zezifanekiso Zamasayithi {#site-template-options}
 
 Kukhona eminye imisebenzi yezifanekiso zamasayithi etholakalayo ongayivula noma uyivale ngaphansi kwezilungiselelo ze-Ultimate Multisite.
 
 ![Izinketho zezifanekiso zamasayithi kuzilungiselelo ze-Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Vumela Ukushintsha Isifanekiso
+#### Vumela Ukushintsha Isifanekiso {#allow-template-switching}
 
 Ukunika amandla le nketho kuzovumela amakhasimende akho ukuthi ashintshe isifanekiso asikhethile ngesikhathi senqubo yokubhalisa ngemva kokuthi i-Account nesayithi sekudaliwe. Lokhu kuwusizo ngokombono wekhasimende ngoba kubavumela ukuthi baphinde bakhethe isifanekiso uma kamuva bethola ukuthi ukukhetha kwabo kwasekuqaleni bekungekona okungcono kakhulu ngezidingo zabo ezithile.
 
-#### Vumela Abasebenzisi ukuthi basebenzise Isayithi labo njengezifanekiso
+#### Vumela Abasebenzisi ukuthi basebenzise Isayithi labo njengezifanekiso {#allow-users-to-use-their-site-as-templates}
 
 Njengoba abasebenzisi be-subsite bachithe isikhathi bakha futhi bedizayna isayithi labo, bangase bafune ukuliphinda futhi balisebenzise njengelinye lezifanekiso zamasayithi ezitholakalayo lapho kudalwa enye i-subsite kunethiwekhi yakho. Le nketho izobavumela ukuthi bakufeze lokho.
 
-#### Kopisha Imidiya Ekuphindaphindweni Kwesifanekiso
+#### Kopisha Imidiya Ekuphindaphindweni Kwesifanekiso {#copy-media-on-template-duplication}
 
 Ukumaka le nketho kuzokopisha imidiya elayishwe kusayithi lesifanekiso iye kusayithi elisanda kudalwa. Lokhu kungaqedwa ohlelweni ngalunye.
 
-#### **Vimbela Izinjini Zokusesha ekufakeni Izifanekiso Zamasayithi ohlwini**
+#### **Vimbela Izinjini Zokusesha ekufakeni Izifanekiso Zamasayithi ohlwini** {#prevent-search-engines-from-indexing-site-templates}
 
 Izifanekiso zamasayithi njengoba kuxoxiwe ngazo kulesi sihloko ziyisisekelo esilungisiwe kodwa ziseyingxenye yenethiwekhi yakho, okusho ukuthi zisatholakala ukuze izinjini zokusesha zizithole. Le nketho izokuvumela ukuthi ufihle izifanekiso zamasayithi ukuze izinjini zokusesha zikwazi ukuzifaka ohlwini.
 
-## Ukugcwalisa kusengaphambili Izifanekiso Zamasayithi ngokusesha-nokushintsha okuzenzakalelayo
+## Ukugcwalisa kusengaphambili Izifanekiso Zamasayithi ngokusesha-nokushintsha okuzenzakalelayo {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Esinye sezici ezinamandla kakhulu ze-Ultimate Multisite yikhono lokwengeza umbhalo, umbala, nezinkambu zokukhetha ezingahleliwe efomini lokubhalisa. Uma sesiyibambile leyo datha, singayisebenzisa ukugcwalisa kusengaphambili okuqukethwe ezingxenyeni ezithile zesifanekiso sesayithi esikhethiwe. Bese, lapho isayithi elisha lishicilelwa, i-Ultimate Multisite izoshintsha izibambindawo ngolwazi lwangempela olufakwe ngesikhathi sokubhalisa.
 
@@ -135,7 +135,7 @@ I-Ultimate Multisite izobe isishintsha izibambindawo ngedatha enikezwe ikhasimen
 
 ![Izibambindawo ezishintshwe ngedatha yekhasimende kusayithi](/img/config/site-templates-list.png)
 
-### Ukuxazulula inkinga ethi "isifanekiso esigcwele izibambindawo"
+### Ukuxazulula inkinga ethi "isifanekiso esigcwele izibambindawo" {#solving-the-template-full-of-placeholders-problem}
 
 Konke lokho kuhle, kodwa sihlangabezana nenkinga embi: manje izifanekiso zethu zamasayithi - ezingavakashelwa amakhasimende ethu - zigcwele izibambindawo ezimbi ezingasho okuningi.
 

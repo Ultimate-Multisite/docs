@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 ఆథెంటికేషన్ కుకీ సెట్ అవ్వడానికి సరిగ్గా ముందు ఇది పనిచేస్తుంది.
 
-## పారామీటర్లు
+## పారామీటర్లు {#parameters}
 
 | పేరు | రకం | వివరణ |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | ఆథెంటికేషన్ స్కీమ్. విలువల్లో 'auth' లేదా 'secure_auth' వంటివి ఉంటాయి. |
 | $token | `string` | ఈ కుకీ కోసం ఉపయోగించాల్సిన యూజర్ సెషన్ టోకెన్. |
 
-### ఎప్పటి నుండి
+### ఎప్పటి నుండి {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> పారామీటర్ జోడించబడింది.
-### మూలం
+### మూలం {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) లోని 124వ లైన్‌లో నిర్వచించబడింది

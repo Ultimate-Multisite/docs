@@ -4,11 +4,11 @@ title: Hohenga - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Mahi: set_logged_in_cookie
+# Mahi: set_logged_in_cookie {#action-setloggedincookie}
 
 Ka whakaoho inamata i mua i te whakatakotoranga o te pihikete motuhēhēnga kua takiuru.
 
-## Tawhā
+## Tawhā {#parameters}
 
 | Ingoa | Momo | Whakaahuatanga |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Ka whakaoho inamata i mua i te whakatakotoranga o te pihikete motuhēhēnga kua 
 | $scheme | `string` | Kaupapa motuhēhēnga. Taunoa 'logged_in'. |
 | $token | `string` | Te session token a te kaiwhakamahi hei whakamahi mō tēnei pihikete. |
 
-### Mai rā anō
+### Mai rā anō {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia ki [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) i te rārangi 141

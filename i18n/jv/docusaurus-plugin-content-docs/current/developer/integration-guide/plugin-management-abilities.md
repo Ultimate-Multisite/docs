@@ -3,11 +3,11 @@ title: Kapabilitas Pangelolaan Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kabisan Manajemen Plugin
+# Kabisan Manajemen Plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 teka karo **7 kabisan manajemen plugin** sing bisa diundang dening asisten AI sajrone pacelathon. Kabisan iki nyedhiyakake kontrol programatik marang plugin WordPress sing dipasang liwat [Sistem Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Ringkesan Kabisan
+## Ringkesan Kabisan {#abilities-overview}
 
 | Kabisan | Slug | Katrangan |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 teka karo **7 kabisan manajemen plugin** sing bisa diunda
 | Pasang Plugin | `install_plugin` | Nyebarake plugin sandbox menyang direktori plugin WordPress urip. |
 | Aktifake Plugin | `activate_plugin` | Ngaktifake plugin sandbox ing lingkungan sandbox wp-env. |
 
-## API Pemasang Plugin
+## API Pemasang Plugin {#plugin-installer-api}
 
 Pemasang plugin nangani operasi sistem berkas nalika nyebarake utawa mbusak plugin. Prilaku utama:
 
@@ -28,7 +28,7 @@ Pemasang plugin nangani operasi sistem berkas nalika nyebarake utawa mbusak plug
 - **Nganyari**: Ngganti berkas plugin sing wis ana. Mateni plugin sadurunge nulis kanggo ngindhari kasalahan kahanan parsial.
 - **Busak miturut slug**: Nemokake direktori plugin miturut slug, mateni ing kabeh situs, banjur mbusak direktori kasebut.
 
-### Ndhaptar Handler Pemasangan Kustom
+### Ndhaptar Handler Pemasangan Kustom {#registering-a-custom-install-handler}
 
 Sampeyan bisa nyambung menyang siklus urip pemasangan nganggo aksi `gratis_ai_plugin_installer_before_install` lan `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registry Ekosistem
+## Registry Ekosistem {#ecosystem-registry}
 
 Kabisan didhaptar liwat **registry ekosistem plugin**. Registry iki memetakake slug kabisan menyang kelas handler lan mbukak kanggo tool dispatcher kagungane agen AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integrasi HookScanner
+## Integrasi HookScanner {#hookscanner-integration}
 
 Kabisan `create_plugin` lan `update_plugin` kanthi otomatis mbukak **HookScanner** marang kode sing mentas digawe. HookScanner mbalekake dhaptar hook aksi lan filter WordPress sing didhaptar dening plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner kanthi otomatis ngliwati direktori `vendor/` lan `node_modules/`.
 
-## Arsitektur Job Async
+## Arsitektur Job Async {#async-job-architecture}
 
 Operasi plugin sing mlaku suwe (ngasilake, masang) dikirim minangka **job async** kanthi pelacakan kemajuan langsung. Antarmuka chat AI polling kemajuan lan ngirim update status kanthi stream marang pangguna:
 

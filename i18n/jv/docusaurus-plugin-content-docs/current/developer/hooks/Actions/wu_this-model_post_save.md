@@ -4,11 +4,11 @@ title: 'Aksi - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 Murub sawise sawijining obyek disimpen menyang database.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Tipe | Katrangan |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Murub sawise sawijining obyek disimpen menyang database.
 | $this | `\Base_Model` | Instance obyek. |
 | $new | `bool` | True yen obyek iku anyar. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 - Ditetepake ing [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) ing baris 624
 - Ditetepake ing [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) ing baris 1754

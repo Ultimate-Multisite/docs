@@ -3,11 +3,11 @@ title: Mga Kasanayang Nakaaayon sa Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills
+# Theme-Aware Skills {#theme-aware-skills}
 
 Ang Superdav AI Agent v1.10.0 ay naglalabas ng apat na bagong built-in skills na "theme-aware" (nakabatay sa tema) na awtomatikong umaangkop sa iyong kasalukuyang WordPress theme. Ang mga skills na ito ay nagbibigay ng espesyal na gabay at kakayahan na akma sa arkitektura at mga feature ng iyong tema.
 
-## Ano ang Theme-Aware Skills?
+## Ano ang Theme-Aware Skills? {#what-are-theme-aware-skills}
 
 Ang theme-aware skills ay mga pre-configured na knowledge base at tool set na awtomatikong pinipili ng AI assistant batay sa WordPress theme na kasalukuyang ginagamit sa iyong site. Kapag nagpalit ka ng tema, awtomatikong nag-uupdate ang mga available na skills ng assistant — hindi na kailangan ng manual na pag-configure.
 
@@ -18,9 +18,9 @@ Kasama sa bawat skill ang:
 - **Customization examples** — mga code snippet at configuration pattern para sa mga karaniwang gawain
 - **Best practices** — mga rekomendasyon para sa arkitektura at workflow ng tema
 
-## Available Theme-Aware Skills
+## Available Theme-Aware Skills {#available-theme-aware-skills}
 
-### Block Themes
+### Block Themes {#block-themes}
 
 **Para sa:** Mga tema na gumagamit ng block-based (Full Site Editing) architecture ng WordPress.
 
@@ -34,7 +34,7 @@ Nagbibigay ang Block Themes skill ng gabay sa:
 
 **Awtomatikong nag-a-activate kapag:** Ang iyong active theme ay isang block theme (sumusuporta sa feature na `block-templates`).
 
-### Classic Themes
+### Classic Themes {#classic-themes}
 
 **Para sa:** Mga tradisyonal na WordPress themes na gumagamit ng PHP templates at classic editor.
 
@@ -48,7 +48,7 @@ Nagbibigay ang Classic Themes skill ng gabay sa:
 
 **Awtomatikong nag-a-activate kapag:** Ang iyong active theme ay isang classic (non-block) theme.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Para sa:** Mga site na gumagamit ng Kadence Blocks plugin para sa advanced block-based design.
 
@@ -62,7 +62,7 @@ Nagbibigay ang Kadence Blocks skill ng gabay sa:
 
 **Awtomatikong nag-a-activate kapag:** Ang Kadence Blocks plugin ay active sa iyong site.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Para sa:** Mga site na gumagamit ng Kadence theme para sa block-based design at customization.
 
@@ -76,15 +76,15 @@ Nagbibigay ang Kadence Theme skill ng gabay sa:
 
 **Awtomatikong nag-a-activate kapag:** Ang Kadence theme ang iyong active theme.
 
-## Paano Pinipili ang Skills
+## Paano Pinipili ang Skills {#how-skills-are-selected}
 
 Awtomatikong natutukoy ng assistant ang iyong active theme at mga installed na plugins sa bawat mensahe. Kung mayroong tumutugmang theme-aware skill na available, ito ay awtomatikong ilalagay sa context ng assistant. Hindi mo kailangang mano-manong i-enable o palitan ang mga skills.
 
-### Multiple Skills
+### Multiple Skills {#multiple-skills}
 
 Kung maraming skills ang naaangkop sa iyong site (halimbawa, kung pareho mong active ang Kadence Blocks at Kadence Theme), may access ang assistant sa lahat ng applicable skills at maaaring mag-reference ng gabay mula sa bawat isa.
 
-### Switching Themes
+### Switching Themes {#switching-themes}
 
 Kapag nagpalit ka ng active theme, awtomatikong nag-uupdate ang mga available na skills ng assistant sa susunod na mensahe. Halimbawa:
 
@@ -92,11 +92,11 @@ Kapag nagpalit ka ng active theme, awtomatikong nag-uupdate ang mga available na
 2. Nagpalit ka sa isang classic theme.
 3. Sa iyong susunod na mensahe, awtomatikong ilalagay ang **Classic Themes** skill, at hindi na available ang **Block Themes** skill.
 
-## Paggamit ng Theme-Aware Skills
+## Paggamit ng Theme-Aware Skills {#using-theme-aware-skills}
 
 Upang magamit ang isang theme-aware skill, ilarawan mo lang kung ano ang gusto mong gawin sa chat interface. Awtomatikong ire-reference ng assistant ang naaangkop na gabay ng skill.
 
-### Example Prompts
+### Example Prompts {#example-prompts}
 
 **Para sa Block Themes:**
 > "Create a hero section with a background image and centered text using block patterns."

@@ -3,13 +3,13 @@ title: Käsitsi maksete seadistamine
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Käsitsi maksete seadistamine (v2)
+# Käsitsi maksete seadistamine (v2) {#setting-up-manual-payments-v2}
 
 _**TÄHTIS MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
 
 Käsitsi maksed on viis pakkuda teisi makseviise juhul, kui **Stripe** või **PayPal** ei ole teie kasutajatele saadaval. See võib olla pangaülekanne või mõni muu makseviis, mis on teie kasutajatele kohapeal saadaval.
 
-## Kuidas lubada käsitsi makseid
+## Kuidas lubada käsitsi makseid {#how-to-enable-manual-payments}
 
 Käsitsi makse seadistamine on väga lihtne. Peate selle lihtsalt makseväravate all lubama ja lisama üksikasjalikud juhised selle kohta, kuidas kasutaja peaks makse saatma.
 
@@ -31,7 +31,7 @@ Samuti saavad nad teie **Aitäh** lehel sõnumi koos teie maksejuhistega.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Käsitsi maksete kinnitamine
+## Käsitsi maksete kinnitamine {#confirming-manual-payments}
 
 Käsitsi makse kinnitamiseks minge vasakul ribal menüüsse **Maksed**. Seal näete kõiki oma võrgustiku makseid ja nende üksikasju, sealhulgas nende **olekut**. Käsitsi maksel on alati olek **Ootel**, kuni te seda käsitsi muudate.
 

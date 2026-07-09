@@ -3,11 +3,11 @@ title: Produk Domain dan Harga
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produk Domain dan Harga
+# Produk Domain dan Harga {#domain-products-and-pricing}
 
 Produk domain adalah cara Anda mengontrol penetapan harga, TLD, privasi WHOIS, dan pemilihan penyedia. Setiap produk domain adalah produk standar Ultimate Multisite dengan tab tambahan **Pengaturan Domain** (Domain Settings).
 
-## Membuat produk domain
+## Membuat produk domain {#creating-a-domain-product}
 
 1. Buka **Network Admin › Ultimate Multisite › Products**
 2. Klik **Add New**
@@ -17,13 +17,13 @@ Produk domain adalah cara Anda mengontrol penetapan harga, TLD, privasi WHOIS, d
 
 Produk domain akan muncul dengan lencana **Domain** berwarna ungu di daftar produk dan dapat difilter menggunakan tab **Produk Domain** (Domain Products).
 
-## Tab pengaturan domain
+## Tab pengaturan domain {#domain-settings-tab}
 
-### Penyedia (Provider)
+### Penyedia (Provider) {#provider}
 
 Pilih registrar mana yang menangani pendaftaran untuk produk ini. Secara default, ini menggunakan **Penyedia Default** (Default provider) global yang diatur di pengaturan Domain Seller.
 
-### TLD yang didukung (Supported TLDs)
+### TLD yang didukung (Supported TLDs) {#supported-tlds}
 
 Biarkan kosong untuk membuat **produk *catch-all*** yang berlaku untuk semua TLD yang tidak cocok dengan produk lain.
 
@@ -31,7 +31,7 @@ Masukkan daftar TLD yang dipisahkan koma (misalnya, `.com, .net, .org`) untuk me
 
 **Cara kerja pencocokan produk:** Ketika pelanggan mencari domain, *addon* akan memilih produk yang paling spesifik cocok. Produk dengan `.com` dalam daftar TLD-nya akan diprioritaskan daripada produk *catch-all*. Jika tidak ada produk spesifik TLD yang cocok, maka *catch-all* yang digunakan. Jika tidak ada produk yang ada, pencarian domain tidak akan ditampilkan.
 
-### Jenis markup (Markup type)
+### Jenis markup (Markup type) {#markup-type}
 
 Tiga mode mengontrol bagaimana harga ritel Anda dihitung dari biaya grosir:
 
@@ -41,11 +41,11 @@ Tiga mode mengontrol bagaimana harga ritel Anda dihitung dari biaya grosir:
 | **Markup tetap (Fixed markup)** | Menambahkan jumlah dolar tetap. Markup $5 pada domain $10 akan menghasilkan $15. |
 | **Harga tetap (Fixed price)** | Mengabaikan biaya grosir sepenuhnya. Selalu menagih jumlah yang Anda masukkan. |
 
-### Harga perkenalan (Introductory pricing)
+### Harga perkenalan (Introductory pricing) {#introductory-pricing}
 
 Aktifkan untuk menawarkan harga tahun pertama yang diskon. Atur **Harga perkenalan** (harga tahun ke-1) terpisah dari **Harga perpanjangan** (Renewal price) reguler (tahun ke-2 dan seterusnya). Pelanggan akan melihat kedua harga ini saat *checkout* sehingga mereka tahu apa yang diharapkan saat perpanjangan.
 
-### Privasi WHOIS (WHOIS privacy)
+### Privasi WHOIS (WHOIS privacy) {#whois-privacy}
 
 Mengontrol apakah perlindungan privasi WHOIS ditawarkan untuk domain yang didaftarkan melalui produk ini.
 
@@ -59,7 +59,7 @@ Untuk Namecheap, privasi WHOIS menggunakan WhoisGuard (selalu gratis). Untuk Ope
 
 ---
 
-## Impor dan sinkronisasi TLD
+## Impor dan sinkronisasi TLD {#tld-import-and-sync}
 
 Produk domain menampilkan harga grosir *real-time* yang diambil dari penyedia yang terhubung. Agar ini berfungsi, TLD harus diimpor.
 
@@ -70,7 +70,7 @@ Setelah sinkronisasi, buka tab Pengaturan Domain dari produk domain mana pun dan
 
 ---
 
-## Perpanjangan otomatis (Auto-renewal)
+## Perpanjangan otomatis (Auto-renewal) {#auto-renewal}
 
 Perpanjangan domain terkait dengan status keanggotaan pelanggan:
 
@@ -90,7 +90,7 @@ ID template email untuk acara siklus hidup domain:
 
 ---
 
-## Admin: Pendaftaran domain manual
+## Admin: Pendaftaran domain manual {#admin-manual-domain-registration}
 
 Untuk mendaftarkan domain atas nama pelanggan tanpa mereka harus melalui *checkout*:
 

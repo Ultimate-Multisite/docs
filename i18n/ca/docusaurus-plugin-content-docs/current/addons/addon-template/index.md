@@ -3,25 +3,25 @@ title: Plantilla d'Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template
+# Addon Template {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Requisits
+## Requisits {#requirements}
 
 - WordPress 5.3 o més recent
 - PHP 7.4 o més recent
 - Plugin Ultimate Multisite (activat)
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Carrega els fitxers de l'addon al directori `/wp-content/plugins/`
 2. Activa el plugin des del menú 'Plugins' de WordPress
 3. Configura les impostes de l'addon a l'administració de la xarxa
 
-## Desenvolupament
+## Desenvolupament {#development}
 
-### Configuració
+### Configuració {#setup}
 
 ```bash
 # Instal·lar dependències
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estructura del projecte
+### Estructura del projecte {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regles de modernització de codi
 ```
 
-### Proves
+### Proves {#testing}
 
 L'addon inclou un marc de proves complet:
 
@@ -75,44 +75,44 @@ L'addon inclou un marc de proves complet:
 - **Cobertura de proves**: Configurades per rastrejar la cobertura de codi
 - **Proves Multisite**: Les proves s'executen en un entorn multisite
 
-### Estàndards de codi
+### Estàndards de codi {#code-standards}
 
 - **Estàndards de codi de WordPress**: Aplicats mitjançant PHPCS
 - **Compatibilitat PHP 7.4+**: Suporta funcions modernes de PHP
 - **Anàlisi estàtica**: Integració de PHPStan per a la verificació de tipus
 - **Modernització de codi**: Regles de Rector per a les actualitzacions de PHP
 
-### Sistema de construcció (Build System)
+### Sistema de construcció (Build System) {#build-system}
 
 - **Processament d'recursos**: Minificació per a fitxers CSS/JS
 - **Traducció**: Generació de fitxer POT
 - **Embalatge (Packaging)**: Creació d'arxiu per a la distribució
 - **Mode de desenvolupament**: Recursos no minificats per a la depuració
 
-## Configuració
+## Configuració {#configuration}
 
 L'addon suporta diverses opcions de configuració accessibles a través de l'interfície d'administració de la xarxa.
 
-## Hooks i Filtres
+## Hooks i Filtres {#hooks-and-filters}
 
-### Accions (Actions)
+### Accions (Actions) {#actions}
 
 - `ultimate-multisite-addon-template_init` - S'executa després de l'inicialització de l'addon
 - `ultimate-multisite-addon-template_loaded` - S'executa després de carregar tots els fitxers de l'addon
 
-### Filtres (Filters)
+### Filtres (Filters) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifica les impostes de l'addon
 - `ultimate-multisite-addon-template_enabled` - Sobrepassa l'estat d'habilitar/deshabilitar de l'addon
 
-## Llicència
+## Llicència {#license}
 
 Aquest addon està llicenciós sota GPL v3 o més recent.
 
-## Suport
+## Suport {#support}
 
 Per a suport i documentació, visita [MultisiteUltimate.com](https://multisiteultimate.com)
-## Historial de canvis (Changelog)
+## Historial de canvis (Changelog) {#changelog}
 
 - Versió 1.0.1 (2025-09-28): canvi de prefix a ultimate-multisite; actualització del domini de text; increment de versió.
 

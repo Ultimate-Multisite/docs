@@ -3,13 +3,13 @@ title: Kunde kodak sortzea
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Discount Codes Erdatzea (v2)
+# Discount Codes Erdatzea (v2) {#creating-discount-codes-v2}
 
 _**IMPORTANTE NOTA: Hau artikulu Ultimate Multisite bertsio 2.x-era referentzia egiten du.**_
 
 Ultimate Multisite-rekin, client-ek bere abonazioakaren eskaintzak egin dezisten discount codes ez daitezke sortu dezakezu. Aurreratzea erabeliandunak!
 
-## Discount Codes Erdatzea eta Editzea
+## Discount Codes Erdatzea eta Editzea {#creating-and-editing-discount-codes}
 
 Discount code bat sortzeko edo editatzeko, **Ultimate Multisite > Discount Codes** funtziokoan jarraitu.
 
@@ -87,7 +87,7 @@ Coupon-ek orain lista-rek dago eta, hinu klik egin dezake **edit edo delete** (e
 
 ###
 
-### URL parametrikak erabiliz:
+### URL parametrikak erabiliz: {#using-url-parameters}
 
 Harga-lekuak zehazteko edo web-sailan coupon kodea daiteke aplikatzea eta checkout form-era otomatikamente apply egin nahi duzu, hori URL parametrikak bidez egin dezakezu.
 

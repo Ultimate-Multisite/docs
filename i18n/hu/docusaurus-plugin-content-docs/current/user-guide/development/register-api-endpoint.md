@@ -3,7 +3,7 @@ title: API-végpont regisztrálása
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Az Ultimate Multisite Register API endpoint
+# Az Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 Ebben az útmutatóban megtanulod, hogyan használd az Ultimate Multisite /register API endpointot, hogy létrehozd egy új ügyfél teljes onboarding folyamatát a hálózatodban, és hogyan tedd ezt meg Zapierrel.
 
@@ -29,11 +29,11 @@ Válaszd az **Enable API** opciót, és szerezd meg az API hitelesítő adataida
 
 Most nézzük meg az endpointot, majd hozzunk létre egy regisztrációs műveletet Zapierben.
 
-## Endpoint törzsparaméterei
+## Endpoint törzsparaméterei {#endpoint-body-parameters}
 
 Tekintsük át azt a minimális információmennyiséget, amelyet el kell küldenünk az endpointnak. A cikk végén megtalálod a teljes hívást.
 
-### Ügyfél
+### Ügyfél {#customer}
 
 Ez az az információ, amely a felhasználó és az Ultimate Multisite ügyfél létrehozási folyamatához szükséges:
 
@@ -43,25 +43,25 @@ Lehetséges elküldeni a hálózatodban létrehozott ügyfél-ID-t. Ha nincs meg
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Az egyetlen információ, amelyre ebben az objektumban szükségünk van, a Membership Status.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Termékek**
+### **Termékek** {#products}
 
 A termékek egy tömbben vannak megadva, a hálózatodból származó 1 vagy több termék-ID-val. Figyelem, ez az endpoint nem hoz létre termékeket. Nézd meg az Ultimate Multisite dokumentációját, hogy jobban megértsd a terméklétrehozási endpointot.
 
 **"products" : [1,2],**
 
-### Fizetés
+### Fizetés {#payment}
 
 Ahogy a Membership esetében, itt is csak a statusra van szükségünk.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 A törzs lezárásához pedig szükségünk van a site URL-jére és címére, mindkettőre a Site objektumon belül.
 
@@ -69,13 +69,13 @@ A törzs lezárásához pedig szükségünk van a site URL-jére és címére, m
 
 A register endpoint visszatérési értéke egy tömb lesz az újonnan létrehozott membership információival.
 
-## Művelet létrehozása Zapierben
+## Művelet létrehozása Zapierben {#creating-an-action-in-zapier}
 
 Ennek az új és robusztusabb Account-létrehozási endpointnak a bevezetésével egy új művelethez is hozzáférsz Zapierben.
 
 Tudod, hogyan használd és élvezd mindazt, amit a Zapier új verziója kínál? Tudj meg többet itt. (link?)
 
-### Művelet létrehozása
+### Művelet létrehozása {#creating-an-action}
 
 Annak jobb szemléltetésére, hogyan használd a regisztrációs endpointot Zapierrel, hozzunk létre egy integrációt a Google Forms szolgáltatással. Minden alkalommal, amikor ezt az űrlapot kitöltik, és az információk elmentésre kerülnek az űrlap válaszlapján, egy új membership jön létre az Ultimate Multisite hálózatban.
 
@@ -105,7 +105,7 @@ Az információk beállítása után folytasd a végső teszttel. Az utolsó ké
 
 Teszteld az új Zapedet, és sikeresen le kell futnia. Ha bármilyen hiba történik, ellenőrizd az összes mezőt, és azt, hogy helyesen vannak-e elküldve. Mivel sok információról van szó, néhány dolog könnyen észrevétlen maradhat.
 
-### Teljes endpoint-paraméterek
+### Teljes endpoint-paraméterek {#complete-endpoint-parameters}
 
 Íme a teljes hívás és az elküldhető mezők összes lehetősége.
 

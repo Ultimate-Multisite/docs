@@ -3,7 +3,7 @@ title: Magparehistro ng Account sa pamamagitan ng Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Kaganapan: Mag-register ng account gamit ang Zapier
+# Kaganapan: Mag-register ng account gamit ang Zapier {#event-register-an-account-via-zapier}
 
 Sa artikulong [Integrating Ultimate Multisite with Zapier](zapier.md), tinalakay natin kung paano gamitin ang Zapier para gumawa ng iba't ibang aksyon sa loob ng Ultimate Multisite batay sa mga trigger at event. Sa artikulong ito, ipapakita namin kung paano mag-integrate ng third-party applications. Gagamit tayo ng Google Sheets bilang source ng data at ipapadala ang impormasyon nito sa Ultimate Multisite para mag-register ng account.
 

@@ -3,19 +3,19 @@ title: 'Lectio 13: Amplificatio'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lectio 13: Amplificatio
+# Lectio 13: Amplificatio {#lesson-13-scaling-up}
 
 Habes suggestum operans cum clientibus solventibus. Haec lectio explicat quomodo ex parva operatione in negotium sustinendum crescere possis -- infrastructuram amplificando, operationes automatizando, et reditum per clientem augendo.
 
-## Ubi Desiimus
+## Ubi Desiimus {#where-we-left-off}
 
 FitSite publice operatur, clientes se inscribunt, et tu operationes cotidianas administras. Nunc in incrementum incumbimus.
 
-## Numeros Tuos Cognosce
+## Numeros Tuos Cognosce {#know-your-numbers}
 
 Antequam amplifices, intellege ubi stes:
 
-### Metricae Praecipuae
+### Metricae Praecipuae {#key-metrics}
 
 - **MRR (Reditus Menstruus Recurrens)**: Totus reditus menstruus ex subscriptionibus
 - **Numerus clientium**: Totus numerus subscriptorum activorum
@@ -24,7 +24,7 @@ Antequam amplifices, intellege ubi stes:
 - **LTV (Valor Per Totam Vitam)**: Reditus mediocris per clientem per totam eius subscriptionem
 - **CAC (Sumptus Clientis Acquirendi)**: Sumptus mediocris ad unum clientem acquirendum
 
-### Exemplum: FitSite ad 50 Clientes
+### Exemplum: FitSite ad 50 Clientes {#example-fitsite-at-50-customers}
 
 | Metrica | Valor |
 |--------|-------|
@@ -36,9 +36,9 @@ Antequam amplifices, intellege ubi stes:
 
 Hi numeri tibi indicant in quid incumbendum sit. Discessio alta? Retentionem corrige. ARPU humilis? Promove promotiones ad consilia superiora. CAC altus? Canales acquisitionis optimiza.
 
-## Infrastructurae Amplificatio
+## Infrastructurae Amplificatio {#scaling-infrastructure}
 
-### Quando Amplificandum Sit
+### Quando Amplificandum Sit {#when-to-scale}
 
 Hospitium amplia quando:
 
@@ -47,7 +47,7 @@ Hospitium amplia quando:
 - Ad 100+ situs activos appropinquas
 - Querelae clientium de celeritate augentur
 
-### Quomodo Amplificandum Sit
+### Quomodo Amplificandum Sit {#how-to-scale}
 
 - **Amplificatio verticalis**: Transi ad maiorem ministrum (plus CPU, RAM)
 - **Strata conditoria**: Adde Redis/Memcached ad conditorium obiectorum, conditorium paginarum ad contentum staticum
@@ -55,7 +55,7 @@ Hospitium amplia quando:
 - **Optimizatio datorum datorii**: Cum rete crescit, interrogationes datorum datorii tardiores fiunt. Tabulas optimiza, indices adde, ministrum datorum datorii dedicatum considera.
 - **Res separare**: Repositorium mediorum ad repositorium obiectorum move (S3-compatible), epistulas electronicas ad servitium epistularum transactionalium transfer
 
-### Migratio Hospitii
+### Migratio Hospitii {#hosting-migration}
 
 Si hospes tuus praesens amplius amplificari non potest, migrationem dispone:
 
@@ -65,11 +65,11 @@ Si hospes tuus praesens amplius amplificari non potest, migrationem dispone:
 4. DNS antea cum minimo TTL renova
 5. Confirma omnia post migrationem operari
 
-## Operationes Automatizare
+## Operationes Automatizare {#automating-operations}
 
 Dum crescis, processus manuales angustiae fiunt. Automatiza quod potes:
 
-### Webhooks et Zapier
+### Webhooks et Zapier {#webhooks-and-zapier}
 
 Utere [Webhooks](/user-guide/integrations/webhooks) vel [Zapier](/user-guide/integrations/zapier) ad automatizandum:
 
@@ -78,7 +78,7 @@ Utere [Webhooks](/user-guide/integrations/webhooks) vel [Zapier](/user-guide/int
 - **Defectus solutionis** → monitum in instrumento vigilantiae tuae
 - **Promotiones consilii** → epistula gratulatoria cum duce novarum functionum
 
-### Automatio Epistularum
+### Automatio Epistularum {#email-automation}
 
 A manualibus epistulis ad series automatizatas transi:
 
@@ -87,30 +87,30 @@ A manualibus epistulis ad series automatizatas transi:
 - Adhortationes promotionis cum clientes ad fines consilii appropinquant
 - Recordationes renovationis pro subscriptoribus annuis
 
-### Automatio Auxilii
+### Automatio Auxilii {#support-automation}
 
 - **Responsa praeparata** ad quaestiones communes
 - **Responsa automatica** quae acceptam tesseram auxilii agnoscunt
 - **Suggestiones basis scientiae** cum clientes tesseras mittunt quae articulis exstantibus respondent
 
-## Reditum Augere
+## Reditum Augere {#increasing-revenue}
 
 Incrementum non solum de pluribus clientibus agitur. Etiam de maiore reditu per clientem agitur.
 
-### Clientibus Exstantibus Plus Vendere
+### Clientibus Exstantibus Plus Vendere {#upselling-existing-customers}
 
 - **Promotiones consilii**: Expeditiones directae quae functiones Growth/Pro clientibus Starter ostendunt
 - **Augmenta ordinis**: Producta additicia clientibus exstantibus per epistulam promove
 - **Conversio annua**: Clientibus menstruis deminutionem pretii offer ut ad rationem annuam solvendi transeant
 
-### Novi Fontes Reditus
+### Novi Fontes Reditus {#new-revenue-streams}
 
 - **Constitutio pro te facta**: Pretium maius exige ut situm clientis pro eo constituas et aptes
 - **Servitia designationis consuetae**: Opus designationis singulare praeter exemplar offer
 - **Sessiones institutionis**: Perambulationes singulares solutae pro clientibus qui auxilium practicum volunt
 - **Premium plugins**: Offer plugins premium ad propriam aream pertinentia ut additamenta soluta (e.g., instrumentum reservationis classium exercitationis)
 
-### Pretia Tollere
+### Pretia Tollere {#raising-prices}
 
 Dum suggestum tuum maturatur et valorem addit:
 
@@ -118,7 +118,7 @@ Dum suggestum tuum maturatur et valorem addit:
 - Pretia pro novis inscriptionibus tolle
 - Incrementa novis functionibus et emendationibus iustifica
 
-## Turmam Aedificare
+## Turmam Aedificare {#building-a-team}
 
 Aliquando omnia solus facere non potes. Primae conductiones communes:
 
@@ -128,7 +128,7 @@ Aliquando omnia solus facere non potes. Primae conductiones communes:
 
 Operariis non eges. Conductores externi et operarii liberi bene operantur pro negotio suggesti.
 
-## Metae Incrementi
+## Metae Incrementi {#growth-milestones}
 
 | Meta | MRR approximatus | Focus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Operariis non eges. Conductores externi et operarii liberi bene operantur pro ne
 | 250-500 clientes | $25,000-$50,000 | Aedificatio turmae, novi fontes reditus, functiones premium |
 | 500+ clientes | $50,000+ | Maturitas suggesti, areae vicinae, exitus potentialis |
 
-## Quid Hac Lectione Aedificavimus
+## Quid Hac Lectione Aedificavimus {#what-we-built-this-lesson}
 
 - **Schema metricarum** ad salutem negotii intellegendam
 - **Consilium infrastructurae amplificandae** ad crescendum a duodenis ad centena situs

@@ -3,15 +3,15 @@ title: 'Lekce 5: Návrhování vašich plánů'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lekce 5: Navrhování vašich plánů
+# Lekce 5: Navrhování vašich plánů {#lesson-5-designing-your-plans}
 
 Vaše úrovně plánů nejsou pouhým cenotvorbou – odrážejí, jak skutečně funguje vaše zacílená klientela. V této lekci navrhnete produktové úrovně, které odpovídají skutečným potřebám fitness podniků v různých fázích.
 
-## Kde jsme skončili
+## Kde jsme skončili {#where-we-left-off}
 
 FitSite má připraveno tři šablony (Studio Essential, Gym Pro, Fitness Chain). Nyní vytvoříme plány, které určují, na co mají zákazníci přístup a za co platí.
 
-## Myšlení v segmentu zákazníků
+## Myšlení v segmentu zákazníků {#thinking-in-customer-segments}
 
 Chyba, kterou většina lidí udělá, je navrhování plánů kolem technických funkcí (úložiště, propustnost, počet stránek). Vaše zacílená klientela neuvádí tyto termíny. Vlastník posilovny přemýšlí o tom, co potřebuje k provozování svého podnikání.
 
@@ -25,11 +25,11 @@ Pro fitness studia existují tři přirozené segmenty:
 
 Vaše plány by měly odpovídat těmto segmentům, nikoli náhodným balíčkům funkcí.
 
-## Vytváření plánů FitSite
+## Vytváření plánů FitSite {#creating-the-fitsite-plans}
 
 Pro každý plán se dostanete na **Ultimate Multisite > Products > Add Product**.
 
-### Plán 1: FitSite Starter – 49 USD/měsíc
+### Plán 1: FitSite Starter – 49 USD/měsíc {#plan-1-fitsite-starter----49month}
 
 **Cíl**: Samostatní trenéři a malé studia
 
@@ -59,7 +59,7 @@ Pro každý plán se dostanete na **Ultimate Multisite > Products > Add Product*
 - Vybraná téma: Nutí aktivovat
 - Všechny ostatní téma: Skryto
 
-### Plán 2: FitSite Growth – 99 USD/měsíc
+### Plán 2: FitSite Growth – 99 USD/měsíc {#plan-2-fitsite-growth----99month}
 
 **Cíl**: Zavedené posilovny v jedné lokalitě
 
@@ -85,7 +85,7 @@ Pro každý plán se dostanete na **Ultimate Multisite > Products > Add Product*
 - Skupina plánů: FitSite Plans
 - Pořadí produktu: 2
 
-### Plán 3: FitSite Pro – 199 USD/měsíc
+### Plán 3: FitSite Pro – 199 USD/měsíc {#plan-3-fitsite-pro----199month}
 
 **Cíl**: Fitness řetězce s více lokalitami
 
@@ -109,7 +109,7 @@ Pro každý plán se dostanete na **Ultimate Multisite > Products > Add Product*
 - Skupina plánů: FitSite Plans
 - Pořadí produktu: 3
 
-## Nastavení skupiny plánů
+## Nastavení skupiny plánů {#setting-up-the-plan-group}
 
 Skupina plánů zajišťuje, že zákazníci mohou upgradovat nebo downgradovat pouze v rámci rodiny plánů FitSite. Na sekci **Upgrade a Downgrade** každého plánu:
 
@@ -118,7 +118,7 @@ Skupina plánů zajišťuje, že zákazníci mohou upgradovat nebo downgradovat 
 
 Tím vytvoříte jasnou cestu k upgradu: Starter → Growth → Pro.
 
-## Přidání doplnění objednávky
+## Přidání doplnění objednávky {#adding-order-bumps}
 
 Doplnění objednávky (Order bumps) jsou doplňkové produkty nabízené při pokladně. Pro FitSite zvažte:
 
@@ -128,7 +128,7 @@ Doplnění objednávky (Order bumps) jsou doplňkové produkty nabízené při p
 
 Vytvořte je jako produkty typu **Package** v Ultimate Multisite a asociujte je s relevantními plány.
 
-## Proč tato struktura funguje
+## Proč tato struktura funguje {#why-this-structure-works}
 
 - **Starter** ničí bariéry vstupu – nízká cena, jednoduchá nabídka, rychle dostane trenéry online
 - **Growth** přidává funkce, které posilovny skutečně požadují – rezervace, galerie, vlastní domény
@@ -136,7 +136,7 @@ Vytvořte je jako produkty typu **Package** v Ultimate Multisite a asociujte je 
 - **Doplnění objednávky** umožňují zákazníkům přizpůsobit bez komplikování základních plánů
 - **Jasná cesta k upgradu** znamená, že zákazníci rostou s vámi, místo aby odešli
 
-## FitSite Network na tuto chvíli
+## FitSite Network na tuto chvíli {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Co jsme v této lekci vytvořili
+## Co jsme v této lekci vytvořili {#what-we-built-this-lesson}
 
 - **Tři úrovně plánů** mapované na skutečné segmenty fitness podnikání
 - **Omezování funkcí** pomocí ovládacích prvků pluginů a šablon Ultimate Multisite

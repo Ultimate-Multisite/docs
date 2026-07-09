@@ -3,17 +3,17 @@ title: Tengo na Ingiza
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 limeongeza zana ya **Export & Import** ya tovuti moja chini ya **Tools > Export & Import**. Tumia zana hii wakati unahitaji kuweka tovuti moja ya WordPress kama faili ya ZIP, kurejesha faili hiyo ya ZIP, au kuhamisha tovuti kati ya usakinishaji vinavyolingana vya Ultimate Multisite na WordPress vya tovuti moja.
 
-## Ruhusa Zinazohitajika
+## Ruhusa Zinazohitajika {#required-permissions}
 
 Lazima uingie kama msimamizi (administrator) ambaye ana uwezo wa kufikia menyu ya **Tools** ya WordPress kwenye tovuti inayopangwa kuondolewa au kuingizwa. Katika mtandao wa multisite, tumia akaunti ya msimamizi wa mtandao unapopanga kuondolewa au kuingizwa subsite kutoka kwa zana za Ultimate Multisite za kiwango cha mtandao.
 
 Paketi za ZIP za kupakua hutoziwa kupitia njia ya kupakua inayohitaji uthibitisho (authenticated download endpoint), kwa hivyo weka kikao cha admin kikiwa hai hadi upakaji uimalizike na usishiriki URL za kupakua zilizoundwa hadharani.
 
-## Kuondoa Tovuti hadi ZIP
+## Kuondoa Tovuti hadi ZIP {#exporting-a-site-to-a-zip}
 
 1. Kwenye admin ya WordPress ya tovuti unayotaka kuibadilisha, nenda **Tools > Export & Import**.
 2. Fungua eneo la kuondoa (export area) na uchague tovuti unayotaka kuifunga.
@@ -23,7 +23,7 @@ Paketi za ZIP za kupakua hutoziwa kupitia njia ya kupakua inayohitaji uthibitish
 
 Weka ZIP katika eneo salama. Inaweza kuunda maudhui ya tovuti, mipangilio, faili za media, na rasilimali za msimbo zilizochaguliwa.
 
-## Nini Utoaji Unajumuisha
+## Nini Utoaji Unajumuisha {#what-the-export-includes}
 
 ZIP ya uondoaji inaweza kujumuisha:
 
@@ -34,7 +34,7 @@ ZIP ya uondoaji inaweza kujumuisha:
 
 Ukubwa halisi wa ZIP unategemea kiasi cha media, plugins na themes zilizochaguliwa, na ukubwa wa meza za database za tovuti.
 
-## Kuingiza Tovuti kutoka ZIP
+## Kuingiza Tovuti kutoka ZIP {#importing-a-site-from-a-zip}
 
 1. Nenda **Tools > Export & Import** kwenye tovuti ya WordPress lengwa.
 2. Fungua eneo la kuingiza (import area) na pakua ZIP iliyoanzishwa na zana ya Export & Import.
@@ -46,7 +46,7 @@ Ukubwa halisi wa ZIP unategemea kiasi cha media, plugins na themes zilizochaguli
 
 Kwenye usakinishaji wa WordPress wa tovuti moja, kuingiza ZIP hubadilisha tovuti ya sasa na tovuti iliyoingizwa. Tengeneza nakala kamili (full backup) ya tovuti lengwa kabla ya kuanza, na epuka kuanzisha uingizaji mwingi kwa tovuti moja wakati mmoja.
 
-## Mapungufu na Vidokezo vya Ulinganifu
+## Mapungufu na Vidokezo vya Ulinganifu {#limitations-and-compatibility-notes}
 
 - Directories kubwa sana za uploads au maktaba za media zinaweza kuunda faili kubwa za ZIP. Thibitisha mipaka ya kupakua ya PHP, mipaka ya utekelezaji, nafasi ya disk, kumbukumbu (memory), na mipangilio ya muda wa seva kabla ya kuondoa au kuingiza tovuti kubwa.
 - Maktaba kubwa sana za media zinaweza kuhitaji kuhamishwa wakati wa kipindi cha matengenezo ambapo trafiki ni ndogo.

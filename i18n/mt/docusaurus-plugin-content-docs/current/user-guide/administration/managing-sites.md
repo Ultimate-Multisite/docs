@@ -3,7 +3,7 @@ title: Id-Diskussjoni tal-Siti
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Aħjar l-Sitji
+# Aħjar l-Sitji {#managing-sites}
 
 Is-sitji (o subsitji) huma l-qalb tal-bizness tiegħek WaaS. Ultimate Multisite għandu 3 tipijiet ta sitji:
 
@@ -11,13 +11,13 @@ Is-sitji (o subsitji) huma l-qalb tal-bizness tiegħek WaaS. Ultimate Multisite 
 - **Site Templates** — Sitji predefiniti li il-kliemti jistgħu jgħażlu bħala punkt aħħar
 - **Main Site** — Is-sitju primari tal-rete tiegħek
 
-## Viewing Sites
+## Viewing Sites {#viewing-sites}
 
 Naviga għal **Ultimate Multisite → Sites** biex tara kull subsitji fil-rete tiegħek. Kulle sitj huwa mmarkat b tip u tista' tfiltra b All Sites, Customer-Owned, Templates, jew Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Adding a New Site
+## Adding a New Site {#adding-a-new-site}
 
 Iċ클ik fuq buttan **Add Site** biex tgħmli sitj جديد. Tista' tiddir fornit:
 
@@ -27,15 +27,15 @@ Iċ클ik fuq buttan **Add Site** biex tgħmli sitj جديد. Tista' tiddir forni
 
 L-opzjoni **Copy Site** tista' tkun biex tgħmli sitj جديد bbażi fuq template esistenti. Meta hija aktiva, tista' tagħżel qabel li u għandu jkun bbażi. Assigurah li **Copy Media on Duplication** hija aktiva biex inklużi l-file media.
 
-## Managing an Existing Site
+## Managing an Existing Site {#managing-an-existing-site}
 
 Iċ클ik fuq **Manage** fuq sitj kulla biex tuftahja l-paġna **Edit Site**. Hemm fejn tista' tikkung:
 
-### Basic Information
+### Basic Information {#basic-information}
 
 Is-isim tal-sitj, tipu, site ID, u deskrizzjoni. Tista' tqabbilha wkoll id-domain mappat, is-sħubija (membership) assoċjata, u l-account tal-kliemt li jappartien lil sitj.
 
-### Site Options
+### Site Options {#site-options}
 
 Konfigura l-kapabilitajiet u l-limitijiet tal-sitj:
 
@@ -47,7 +47,7 @@ Konfigura l-kapabilitajiet u l-limitijiet tal-sitj:
 
 בי default, האתרים עוקבים אחרי המגבלות שהוגדרו ברמת החברות (membership level). הגדרת מגבלות לרמת האתר תעדיף את הגדרות החברות.
 
-### קישורים (Associations)
+### קישורים (Associations) {#associations}
 
 מתחת לאפשרויות האתר תמצא מידע על:
 
@@ -55,7 +55,7 @@ Konfigura l-kapabilitajiet u l-limitijiet tal-sitj:
 - **Membership** (חברות) שאליו שייך האתר
 - **Customer account** (חשבון לקוח) המקושר לאתר
 
-### ה-Sidebar הימני (Right Sidebar)
+### ה-Sidebar הימני (Right Sidebar) {#right-sidebar}
 
 בצד ימין תוכל:
 

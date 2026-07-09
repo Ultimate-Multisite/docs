@@ -3,11 +3,11 @@ title: Referenco pri agordoj
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Agordoj-Referenco
+# Agordoj-Referenco {#settings-reference}
 
 Ĉi tiu paĝo spuras agordojn kiuj influas ĉiutagan administradon kaj lastatempajn kondutŝanĝojn en Ultimate Multisite.
 
-## Aliaj Opcioj
+## Aliaj Opcioj {#other-options}
 
 La areo **Aliaj Opcioj** aperas sub **Ultimate Multisite > Agordoj > Ensaluto & Registriĝo**.
 
@@ -15,23 +15,23 @@ La areo **Aliaj Opcioj** aperas sub **Ultimate Multisite > Agordoj > Ensaluto & 
 |---|---|
 | **Ebligi Jumper** | Montras la rapidnavigan ilon Jumper en la administra areo. Uzu ĝin por salti rekte al ekranoj de Ultimate Multisite, retaj objektoj, kaj subtenataj administraj cellokoj. Malebligu ĝin se vi ne volas ke ĉi tiu ŝparvojo estu videbla. |
 
-## Erarraportado kaj telemetrio
+## Erarraportado kaj telemetrio {#error-reporting-and-telemetry}
 
 La antaŭa elektebla agordo por erarraportado estis forigita de la agordoj-paĝo. Anonima telemetrio estas malebligita kaj ne ekzistas UI-ŝaltilo por ebligi ĝin.
 
 Se vi prizorgas internajn procedurlibrojn aŭ ekrankopiojn por la agordoj-paĝo, forigu referencojn al la malnova elektebla kampo por erarraportado por ke administrantoj ne serĉu agordon kiu ne plu ĉeestas.
 
-## Import/Export-agordoj
+## Import/Export-agordoj {#importexport-settings}
 
 La agorda langeto **Import/Export** priskribas kiujn agordojn ĝi regas kaj ligas rekte al **Ultimate Multisite > Site Export** por retejo- kaj retaj arkivoj. Uzu la agordan langeton por import-/eksport-konfigurado, uzu **Iloj > Eksporto & Importo** por la unu-reteja eksporta/importa laborfluo, kaj uzu la ilon Site Export kiam vi bezonas plenan arkivon Network Export.
 
-## Averto pri saldo de Domain Seller HostAfrica
+## Averto pri saldo de Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Kiam la aldonaĵo Domain Seller estas konektita al HostAfrica, retaj administrantoj nun vidas forfermeblan averton pri malalta saldo kiam la saldo de la revendista Account estas tro malalta por fidinda domajna registrado aŭ prilaborado de renovigoj.
 
 Traktu ĉi tiun avizon kiel operacian averton: replenigu la revendistan saldon de HostAfrica antaŭ ol akcepti pliajn pagitajn domajnajn registradojn, poste revenu al la agordoj de Domain Seller aŭ al la ekrano por domajna monitorado por konfirmi ke registradoj kaj renovigoj povas daŭri normale.
 
-## Agordoj de konektiloj por AI-provizantoj
+## Agordoj de konektiloj por AI-provizantoj {#ai-provider-connector-settings}
 
 Agordoj de konektiloj por AI-provizantoj nun montras nur la subtenatajn OAuth-kontajn grupojn:
 

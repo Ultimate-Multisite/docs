@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Paral·lels Bots. Protegeu els ingressos. Sense complicacions de configuració.**
 
@@ -15,7 +15,7 @@ Estàs gestionant una xarxa multisite amb domínis personalitzats? Coneixes el p
 
 **Ultimate Multisite: El Captcha ho canvia tot.**
 
-## Cap Captcha: Protecció auto-alojada que simplement funciona
+## Cap Captcha: Protecció auto-alojada que simplement funciona {#cap-captcha-self-hosted-protection-that-just-works}
 
 El nostre nou proveïdor, **Cap Captcha**, és un canvi de joc per a les xarxes multisite:
 
@@ -25,7 +25,7 @@ El nostre nou proveïdor, **Cap Captcha**, és un canvi de joc per a les xarxes 
 * **Prova de treball invisible** — Els usuaris resoleuen un enigma computacional en el fons. Sense clicar esquenares d'incendis, sense grilles d'imatges frustrants.
 * **Lliges** — Només 20KB. No ralentitzarà el teu checkout.
 
-## Protecció contra la prova de targetes de WooCommerce
+## Protecció contra la prova de targetes de WooCommerce {#woocommerce-card-testing-protection}
 
 Els atacs de prova de targetes costen milers de milions d'euros als comerciants anualment. Els fraudesistes utilitzen bots per validar targetes de crèdit robades contra el teu checkout de WooCommerce: tu pagues les comissions de processament, i ells reben números de targetes vàlids.
 
@@ -35,7 +35,7 @@ Els atacs de prova de targetes costen milers de milions d'euros als comerciants 
 * **Compatible amb pagaments PayPal** — Funciona perfectament amb WooCommerce PayPal Payments.
 * **Estadístiques en temps real** — Veu exactament quants atacs estàs bloquejant.
 
-## També necessites Google reCAPTCHA o hCaptcha?
+## També necessites Google reCAPTCHA o hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
 
 T'ho tenim cobert. Suport complet per a:
 
@@ -47,14 +47,14 @@ T'ho tenim cobert. Suport complet per a:
 
 Canvia entre proveïdors en qualsevol moment des de la configuració de la teva xarxa.
 
-## Dissenyat per a la escala
+## Dissenyat per a la escala {#built-for-scale}
 
 * Configuració a nivell de xarxa amb anul·lament per lloc web
 * Panell de control de estadístiques per monitoritzar la protecció
 * Nivells de seguretat ajustables (Ràpid, Mitjà, Màxim)
 * Amigable per als desenvolupadors amb arquitectura de proveïdors extensible
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Carrega `ultimate-multisite-captcha` al teu directori `/wp-content/plugins/`
 2. Activa el plugin a nivell de xarxa
@@ -64,37 +64,37 @@ Cap Captcha s'activa automàticament: sense configuracions que configurar, sense
 
 **Opcional:** Per utilitzar Google reCAPTCHA o hCaptcha en canvi, navega a **Ultimate Multisite → Settings → Captcha** i selecciona el proveïdor que prefereu.
 
-## Preguntes Freqüents
+## Preguntes Freqüents {#frequently-asked-questions}
 
-## Ho necessito configurar alguna cosa?
+## Ho necessito configurar alguna cosa? {#do-i-need-to-configure-anything}
 
 No! Cap Captcha s'activa automàticament quan actives el plugin. La teva xarxa completa està protegit immediatament: sense configuracions que configurar, sense clau API que introduir.
 
-## Necessito clau API per Cap Captcha?
+## Necessito clau API per Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
 
 No. Cap Captcha és completament auto-alojat. Sense comptes externs, sense registre de domínis, sense complicacions de configuració.
 
-## Ho ralentitzarà el meu checkout?
+## Ho ralentitzarà el meu checkout? {#will-this-slow-down-my-checkout}
 
 Cap Captcha només té 20KB i executa desafiaments de prova de treball en el fons. Els teus clients no notaran cap retard.
 
-## Protegeix contra atacs de prova de targetes?
+## Protegeix contra atacs de prova de targetes? {#does-this-protect-against-card-testing-attacks}
 
 Sí! A diferència dels captchas tradicionals que només protegin formularis HTML, la nostra integració de WooCommerce es connecta directament a l'API de la botiga per blocar els atacs de bots a nivell d'API, on tenen lloc la majoria dels atacs de prova de targetes.
 
-## Puc utilitzar proveïdors de captcha diferents en diferents llocs?
+## Puc utilitzar proveïdors de captcha diferents en diferents llocs? {#can-i-use-different-captcha-providers-on-different-sites}
 
 El proveïdor de captcha es configura a nivell de xarxa, però pots ajustar les configuracions de dificultat segons les teves necessitats.
 
-## És compatible amb GDPR?
+## És compatible amb GDPR? {#is-this-gdpr-compliant}
 
 Cap Captcha és 100% auto-alojat i no envia dades a serveis externs. Per a Google reCAPTCHA i hCaptcha, si us plau, reviseu les seves respectives polítiques de privacitat.
 
-## Limitació de taxa (Rate Limiting)
+## Limitació de taxa (Rate Limiting) {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 introdueix un limitador de taxa de parada forçada que protegeix la teva xarxa contra atacs de força bruta i prova de targetes.
 
-### Com funciona
+### Com funciona {#how-it-works}
 
 El limitador de taxa compta cada sol·licitat GET i POST en les superfícies protegudes per captcha:
 
@@ -108,9 +108,9 @@ Quan un visitant excedeix el límit de taxa, el plugin respon amb:
 * **Capçalera Retry-After** indicant quan intentar de nou
 * **Dormitge tarpit randomitzat** (1–5 segons per defecte, amb un límit màxim de 15 segons) per ralentitzar els atacants
 
-### Configuració
+### Configuració {#configuration}
 
-#### Temps de Tarpit
+#### Temps de Tarpit {#tarpit-timing}
 
 Controleja el retard randomitzat aplicat a les sol·licitacions limitades per taxa:
 
@@ -119,9 +119,9 @@ Controleja el retard randomitzat aplicat a les sol·licitacions limitades per ta
 
 Aquestes configuracions estan disponibles a **Ultimate Multisite → Settings → Captcha**.
 
-### Extensibilitat
+### Extensibilitat {#extensibility}
 
-#### Filtre de llista blanca d'IP
+#### Filtre de llista blanca d'IP {#ip-whitelist-filter}
 
 Exempta rangs d'IP de confiança de la limitació de taxa:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Acció de pre-blocatge
+#### Acció de pre-blocatge {#pre-block-action}
 
 Executa lògica personalitzada immediatament abans de enviar un blocatge de limitació de taxa:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Detecció d'IP del client i Proxys de confiança
+## Detecció d'IP del client i Proxys de confiança {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 introdueix la detecció d'IP del client resistent a spoofing. El mètode `Captcha_Core::get_client_ip()` és ara la única font de veritat per a l'atribució d'IP del visitant en:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 introdueix la detecció d'IP del client resis
 * `remoteip` del proveïdor de captcha (reCAPTCHA, hCaptcha `siteverify`)
 * Hashes d'IP de estadístiques
 
-### Model de confiança
+### Model de confiança {#trust-model}
 
 El plugin fa servir una jerarquia estricta de confiança d'IP:
 
@@ -166,9 +166,9 @@ El plugin fa servir una jerarquia estricta de confiança d'IP:
    - El pare immediat és en la teva llista de proxys de confiança configurada a l'administració
    - El capçalera es parseja de dreta a esquerra, saltant les parades de confiança/Cloudflare
 
-### Configuració
+### Configuració {#configuration-1}
 
-#### Confiança de capçaleres Cloudflare
+#### Confiança de capçaleres Cloudflare {#cloudflare-header-trust}
 
 Habilitar la confiança del capçalera `CF-Connecting-IP` de Cloudflare:
 
@@ -178,7 +178,7 @@ Habilitar la confiança del capçalera `CF-Connecting-IP` de Cloudflare:
   - Els rangs CIDR es refresquen setmanalment mitjançant wp-cron
   - Es fa servir un fallback empaquetat si el refresh falla
 
-#### Configuració de proxys de confiança
+#### Configuració de proxys de confiança {#trusted-proxy-configuration}
 
 Defineix els teus proxys i balanceadors de càrrega de primera línia:
 
@@ -194,14 +194,14 @@ Defineix els teus proxys i balanceadors de càrrega de primera línia:
     198.51.100.50
     ```
 
-#### Detecció automàtica al primer habilitar
+#### Detecció automàtica al primer habilitar {#first-enable-auto-detection}
 
 Quan actives el limitador de taxa per primera vegada, el plugin detecta la teva probable postura de Cloudflare i proxy i mostra un avís d'administració de "Aplicar configuració detectada" amb un clic.
 
 * El plugin **mai sobreescriu** els teus valors guardats
 * Si el trànsit posterior suggereix que la teva configuració ja no coincideix amb la realitat (per exemple, Cloudflare ha canviat els rangs CIDR), apareix un avís de desalineació no eliminable amb la actualització recomanada
 
-### Per què és important això
+### Per què és important això {#why-this-matters}
 
 Un model de confiança d'IP estrict fa servir un vector crític de spoofing: les sol·licitacions directes de l'origin-server que porten un capçalera `CF-Connecting-IP` falsificat haurien estat blocsat prèviament pel bot de l'IP falsificat en lloc del pare real. Això és especialment important per:
 

@@ -3,11 +3,11 @@ title: Utviklerdokumentasjon
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Utviklerdokumentasjon
+# Utviklerdokumentasjon {#developer-documentation}
 
 Denne guiden gir utviklere alt de trenger for å integrere med, utvide eller utvikle tillegg (addons) for Ultimate Multisite. Ultimate Multisite transformerer et WordPress Multisite-nettverk til en Website-as-a-Service (WaaS) plattform.
 
-## Hva som er tilgjengelig
+## Hva som er tilgjengelig {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Fullstendige CRUD-operasjoner for alle enheter (kunder, nettsteder, medlemskap, betalinger, produkter, domener) med API-nøkkelautentisering
 - **[Hooks Reference](./hooks/guide)** — Over 200 action hooks og over 280 filter hooks for livssyklushendelser og tilpasning
@@ -15,13 +15,13 @@ Denne guiden gir utviklere alt de trenger for å integrere med, utvide eller utv
 - **[Code Examples](./code-examples/)** — Avanserte mønstre for dynamisk prising, nettstedprovisionering, tilpassede begrensninger og multi-gateway-behandling
 - **[Addon Development](./addon-development/getting-started)** — Strukturert rammeverk for bygging av tilleggsplugins
 
-## Krav
+## Krav {#requirements}
 
 - WordPress Multisite-installasjon
 - PHP 7.4 eller høyere
 - Ultimate Multisite-plugin aktivert
 
-## Composer / Bedrock-installasjon
+## Composer / Bedrock-installasjon {#composer--bedrock-installation}
 
 Ultimate Multisite er tilgjengelig på [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) som `ultimate-multisite/ultimate-multisite`. Dette er den anbefalte installasjonsmetoden for [Bedrock](https://roots.io/bedrock/)-baserte WordPress-oppsett og andre Composer-administrerte miljøer.
 
@@ -45,15 +45,15 @@ Eller, hvis du laster inn pluginet som et must-use plugin via Bedrocks autoloade
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Rask start
+## Rask start {#quick-start}
 
-### Bruk REST API
+### Bruk REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Hook til hendelser
+### Hook til hendelser {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Bygg et tillegg
+### Bygg et tillegg {#build-an-addon}
 
 ```bash
 # Generer addon-skjelett fra malen

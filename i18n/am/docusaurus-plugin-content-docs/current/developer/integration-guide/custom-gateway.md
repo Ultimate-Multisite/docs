@@ -3,11 +3,11 @@ title: ብጁ ጌትዌይ ልማት
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ብጁ Gateway ልማት
+# ብጁ Gateway ልማት {#custom-gateway-development}
 
 `Base_Gateway` classን በማስፋት ብጁ የክፍያ gateways መፍጠር ይችላሉ።
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gatewayን ይመዝግቡ
+## Gatewayን ይመዝግቡ {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## ቁልፍ ዘዴዎች
+## ቁልፍ ዘዴዎች {#key-methods}
 
 | ዘዴ | ዓላማ |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | የተመላሽ ክፍያ ጥያቄዎችን ያስተናግዱ |
 | `get_payment_methods()` | ለደንበኛ የተቀመጡ የክፍያ ዘዴዎችን ይመልሱ |
 
-## ለተደጋጋሚ አባልነቶች የእድሳት credentials
+## ለተደጋጋሚ አባልነቶች የእድሳት credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway ውህደቶች `auto_renew` ከመቀመጡ በፊት ተደጋጋሚ አባልነት ዳግም ጥቅም ላይ የሚውል የእድሳት credential እንዳለው መግለጽ እንዲችሉ ያደርጋል። `wu_membership_has_renewal_credential`ን Hook ያድርጉ እና ይመልሱ፦
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 አዲስ ዳግም ጥቅም ላይ የሚውል credential ከተቀመጠ በኋላ እንደ gatewayዎ የተሳካ የዳግም-ፈቃድ ፍሰት አካል የጎደለ-credential ምልክቱን ያጽዱ።
 
-## ጠቃሚ ምክሮች
+## ጠቃሚ ምክሮች {#tips}
 
 - በውድቀት ጊዜ ሁልጊዜ `WP_Error` ይመልሱ፣ ስለዚህ Ultimate Multisite የስህተት ማሳያን ማስተናገድ ይችላል
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - ለgateway-ተኮር መመዝገብ `wu_log_add()`ን ይጠቀሙ
 
-## የAI connector አቅራቢ ችሎታዎች
+## የAI connector አቅራቢ ችሎታዎች {#ai-connector-provider-capabilities}
 
 በAI connector የተደገፉ ክንውኖችን የሚጠሩ ብጁ ውህደቶች ከAI Provider for Anthropic Max v1.3.0 ጋር ከተዋወቀው የተደገፈ የOAuth አቅራቢ ስብስብ ጋር መጣጣም አለባቸው፦
 

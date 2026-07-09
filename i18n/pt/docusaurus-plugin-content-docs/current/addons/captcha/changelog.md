@@ -3,7 +3,7 @@ title: Registo de alterações do Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Registro de alterações do Captcha
+# Registro de alterações do Captcha {#captcha-changelog}
 
 Versão: 1.5.0 - Lançada em 2026-05-22
 * Novo: Limitador de taxa com bloqueio rígido — conta cada GET e POST em superfícies protegidas por captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, finalização de compra do Ultimate Multisite / inline-login) e responde com HTTP 429, um header `Retry-After` e uma espera tarpit aleatória (1–5s, limitada rigidamente a 15s).

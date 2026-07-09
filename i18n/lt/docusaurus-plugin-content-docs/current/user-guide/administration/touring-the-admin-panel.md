@@ -3,11 +3,11 @@ title: Administracijos panelio apžiūra
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Administracijos panel vizitas
+# Administracijos panel vizitas {#touring-the-admin-panel}
 
 Ultimate Multisite stebiui yra kuo greičiau ir aiškiau, kokiu, bet su tokia galingu įrankiu jis gali padėti turėti vadovotiną ekskursiją. Pateikime perskaičiamas adminų puslapis, kad jums labiau pasitiktumė.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 Ultimate Multisite **Dashboard** rodo pagrindinius raportus ir analitikus, įskaitant pajamos, svetainės veiksmus, nuskaitų augimą, vizitatori skaičius ir geografinius duomenis.
 
@@ -25,61 +25,61 @@ Ir dashboardo apačioje esanti dalis:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Užsakymo formos
+## Užsakymo formos {#checkout-forms}
 
 **Checkout Forms** suteikia jūsų įrankimą sukurti pritaikomas registracijos puslapis. Jūs galite pakeisti laukus, įdėti pritaikomus klasės ir skriptus, o apriboti prieigą pagal vizitatori šalį ar vietą.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Produktai
+## Produktai {#products}
 
 **Products** sekcija yra tai, kur jūs sukurate skirtingus planus, paketus ir paslaugas savo tinklui. Nurodykite kainas, paskirstymo dažnumus ir ribas ir kvotas produkto lygio.
 
 ![Products list](/img/admin/products-list.png)
 
-## Abonentai
+## Abonentai {#memberships}
 
 **Memberships** puslapis rodo visus abonentus jūsų tinklyje. Peržiūrėkite ir redaguokite abonemento detales, įskaitant planus, produktai, paskirstymo sumas ir dažnumus, mokėjimo istoriją ir laiko žymė.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Mokėjimai
+## Mokėjimai {#payments}
 
 Strona **Payments** daje szybki widok historii płatydžių po całej Twojej sieci, wraz z szczegółowymi informacjami o transakcjose, w tym konkretnymi produktami i kwotami.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Klienci
+## Klienci {#customers}
 
 Strona **Customers** pokazuje wszystkich członków zarejestrowanych w Twojej sieci wraz z podstawowymi danymi użytkownika, takimi jak imię, adres e-mail, ostatnie zalogowanie oraz link „przełącz się do” (switch to) do zalogowania się na ich poddomenę.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Serwisy (Sites)
+## Serwisy (Sites) {#sites}
 
 Strona **Sites** wymienia wszystkie poddomeny w Twojej sieci, w tym szablony stron oraz strony własne klientów. Łatwo zarządzaj mapowanymi domenami, limitami i alokacją, pluginami i motywami oraz miniaturami stron.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domeny
+## Domeny {#domains}
 
 Strona **Domains** jest przeznaczona dla niestandardowych domen powiązanych z poddomenami. Jako super administrator możesz ręcznie dodawać lub mapować nazwy domen i przeglądać rekordy DNS oraz logi.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Kody Rabatowe (Discount Codes)
+## Kody Rabatowe (Discount Codes) {#discount-codes}
 
 **Kody Rabatowe** pozwalają tworzyć kody kuponowe, aby oferować zniżki swoim użytkownikom końcowym. Określ wartość rabatu i celuj w określone grupy użytkowników lub klientów.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Transmisje (Broadcasts)
+## Transmisje (Broadcasts) {#broadcasts}
 
 **Transmisje** to narzędzie do wysyłania ogłoszeń lub prywatnych wiadomości do użytkowników Twojej poddomeny. Celuj w określone grupy użytkowników na podstawie planu lub produktu, do którego są subskrybowani.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Ustawienia (Settings)
+## Ustawienia (Settings) {#settings}
 
 Strona **Settings** to miejsce, gdzie konfigurujesz Ultimate Multisite — ustawienia rejestracji, płatności, API i webhooks, mapowanie domen oraz inne integracje.
 
@@ -109,13 +109,13 @@ I strona ustawień witryn (sites settings page):
 
 ![Pełna strona ustawień witryn](/img/admin/settings-sites-full.png)
 
-## Wydarzenia (Events)
+## Wydarzenia (Events) {#events}
 
 Strona **Wydarzenia** przechowuje rejestr wszystkich zdarzeń i logów w Twojej sieci. Śledzi takie aktywności jak zmiany planów, rejestracje i inne ruchy – co jest przydatne do monitorowania Twojego multisite.
 
 ![Lista wydarzeń](/img/admin/events-list.png)
 
-## Webhooki (Webhooks)
+## Webhooki (Webhooks) {#webhooks}
 
 **Webhooki** pozwalają wysyłać dane do innej aplikacji. Przydatne do wysyłania danych z Ultimate Multisite na platformy takie jak Zapier.
 

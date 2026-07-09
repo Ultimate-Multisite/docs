@@ -3,7 +3,7 @@ title: Automatisk søk og erstatt i nettstedsmaler
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisk søk og erstatt i nettstedsmaler (v2)
+# Automatisk søk og erstatt i nettstedsmaler (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Denne veiledningen krever WP UItimo versjon 2.x.**_
 
@@ -17,7 +17,7 @@ Kunden din vil deretter kunne fylle ut det feltet under registreringen.
 
 Ultimate Multisite vil deretter automatisk erstatte plassholderne med dataene som kunden har oppgitt.
 
-## **Løse problemet med «mal full av plassholdere»**
+## **Løse problemet med «mal full av plassholdere»** {#solving-the-template-full-of-placeholders-problem}
 
 Alt dette er flott, men vi støter på et stygt problem: Nå er nettstedsmalene våre – som kan besøkes av kundene våre – fulle av stygge plassholdere som ikke sier så mye.
 

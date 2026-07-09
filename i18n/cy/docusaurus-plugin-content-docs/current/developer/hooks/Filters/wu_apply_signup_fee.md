@@ -4,11 +4,11 @@ title: Hidlydd - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Hidlydd: wu_apply_signup_fee
+# Hidlydd: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Yn hidlo a ddylid cymhwyso’r ffi gofrestru ai peidio.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yn hidlo a ddylid cymhwyso’r ffi gofrestru ai peidio.
 | $product | `object` | Gwrthrych lefel aelodaeth. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Gwrthrych cofrestru. |
 
-### Ers
+### Ers {#since}
 
 - 3.1
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Wedi’i ddiffinio yn [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) ar linell 1769

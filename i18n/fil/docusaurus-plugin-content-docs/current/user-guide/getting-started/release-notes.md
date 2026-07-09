@@ -3,9 +3,9 @@ title: Mga Tala sa Paglabas
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Mga Tala sa Release
+# Mga Tala sa Release {#release-notes}
 
-## Bersyon 2.13.0 — Inilabas noong 2026-06-05
+## Bersyon 2.13.0 — Inilabas noong 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Bago: Nagdagdag ng suporta sa sovereign-tenant para sa customer account, checkout, billing, site, invoice, pagpapalit ng template, at mga daloy ng domain mapping upang maidirekta ng mga network ng tenant ang mga customer pabalik sa pangunahing site para sa mga pinamamahalaang aksyon.
 - Bago: Nagdagdag ng mga pagsusuri sa renewal-credential para sa mga umuulit na membership upang ma-disable ng mga gateway ang auto-renewal kapag nawawala ang naka-save na billing agreement, subscription, o vault token.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ayos: Iniiwasan na ngayon ng mga edge case sa pag-renew ng membership, pagpapakita ng expiration, at pagkolekta ng bayad ang agarang expiration, crash, o hindi nakuhang kinakailangang bayad.
 - Pinahusay: Nasusubukan ang compatibility sa WordPress hanggang 7.0, muling binuo ang production Vue assets mula sa npm sources, at mas marami nang checkout, setup, SSO, at gateway flow ang sinasaklaw ng Cypress end-to-end coverage.
 
-## Bersyon 2.12.0 — Inilabas noong 2026-05-15
+## Bersyon 2.12.0 — Inilabas noong 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Bago: Idinagdag ang Hostinger (hPanel) bilang suportadong host provider na may integrasyon sa domain mapping
 - Bago: Pinoproseso na ngayon ng Site Exporter ang mga network import bundle para sa mas pinadaling pagpapanumbalik ng site sa buong network
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ayos: Pinananatili na ngayon ng Site Exporter CLI ang tamang default na pagpili ng network site
 - Pinahusay: Inalis ang bundled wp-cli mula sa package ng plugin, kaya nabawasan ang laki ng plugin
 
-## Bersyon 2.11.0 — Inilabas noong 2026-05-11
+## Bersyon 2.11.0 — Inilabas noong 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Bago: Nagsasama na ngayon ang mga export ng site ng self-booting na `index.php` upang ma-install ang ZIP sa bagong host nang walang hiwalay na pag-install ng plugin.
 - Bago: Pinapahintulutan ng network export ang mga administrator na i-export ang lahat ng subsite sa iisang archive mula sa admin page ng Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Bago: Nagbababala ang editor ng checkout form kapag idinagdag ang isang produkto nang walang naka-configure na kinakailangang field.
 - Bago: Malinaw na inilalarawan na ngayon ng tab ng mga setting ng Import/Export ang saklaw nito at direktang nagli-link sa tool na Site Export.
 
-## Bersyon 2.10.0 — Inilabas noong 2026-05-05
+## Bersyon 2.10.0 — Inilabas noong 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Bago: PayPal guided setup wizard para sa manu-manong pagpasok ng credential na may OAuth flag gate para sa seamless na configuration ng gateway.
 - Bago: Muling idinisenyo ang panel ng customer para sa pagpapalit ng template na may current-template card, persistent grid, at **I-reset ang kasalukuyang template** na button.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ayos: Nirerespeto ang filtered SSO path sa lahat ng login flow.
 - Ayos: Pinananatili ang mga blangkong opsyon sa pagkakakilanlan ng site kapag nagse-save.
 
-## Bersyon 2.9.0 — Inilabas noong 2026-04-30
+## Bersyon 2.9.0 — Inilabas noong 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Bago: Idinagdag ang single-site export at import sa ilalim ng **Tools > Export & Import**.
 - Ayos: Inihahatid na ngayon ang mga Export ZIP file sa pamamagitan ng authenticated download endpoint.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ayos: Na-normalize ang mga Tour ID sa mga underscore sa mga key ng user settings.
 - Pinahusay: Ginagamit na ngayon ang ZipArchive sa halip na Alchemy/Zippy para sa mas mahusay na compatibility.
 
-## Bersyon 2.8.0 — Inilabas noong 2026-04-29
+## Bersyon 2.8.0 — Inilabas noong 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Bago: Idinagdag ang toggle na Enable Jumper sa UI ng mga setting ng Other Options.
 - Bago: Idinagdag ang column na Status sa list table ng mga checkout form.

@@ -3,13 +3,13 @@ title: Integrointiopas
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integraatio-opas
+# Integraatio-opas {#integration-guide}
 
 Tämä opas käsittelee yleisiä integraatiomalleja Ultimate Multisite kanssa, mukaan lukien yhdistäminen ulkoisiin palveluihin, mukautettujen maksuyhdyskäytävien rakentaminen ja webhookien käsittely.
 
 Eristettyä tenant-infrastruktuuria varten katso [Multi-Tenancy-integraatio](./multi-tenancy), joka sisältää ohjeet itsenäisen tenantin alustukseen, migraation varmistukseen, SSO:hon ja purkamiseen.
 
-## CRM-integraatio
+## CRM-integraatio {#crm-integration}
 
 Synkronoi asiakastiedot CRM:ään, kun uudet asiakkaat rekisteröityvät:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics-integraatio
+## Analytics-integraatio {#analytics-integration}
 
 Seuraa keskeisiä liiketoimintatapahtumia koko asiakkaan elinkaaren aikana:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Seuraavat vaiheet
+## Seuraavat vaiheet {#next-steps}
 
 - [Mukautetun Gatewayn kehitys](./custom-gateway) — Rakenna oma maksuyhdyskäytäväsi
 - [Webhookien käsittely](./webhooks) — Luo mukautettuja webhook-päätepisteitä

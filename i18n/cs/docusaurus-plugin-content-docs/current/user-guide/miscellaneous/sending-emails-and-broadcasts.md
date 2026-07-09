@@ -3,13 +3,13 @@ title: Odesílání e-mailů a hromadných rozesílek
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Odesílání e-mailů a Broadcasts (v2)
+# Odesílání e-mailů a Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
 Ultimate Multisite obsahuje funkci, která vám umožní komunikovat se zákazníky odesláním e-mailu cílenému uživateli nebo skupině uživatelů, stejně jako odesíláním oznámení na jejich admin dashboard pro vysílání oznámení
 
-## Přidání admin oznámení na dashboard vašich zákazníků pomocí Broadcasts
+## Přidání admin oznámení na dashboard vašich zákazníků pomocí Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Pomocí funkce Broadcast Ultimate Multisite můžete přidat **admin oznámení** na admin dashboard subsitu vašeho uživatele.
 
@@ -51,7 +51,7 @@ Po vytvoření zprávy můžete kliknout na tlačítko **Send**.
 
 A to je vše. Admin oznámení by se mělo okamžitě zobrazit na dashboardu vašeho uživatele.
 
-## Odesílání e-mailů zákazníkům
+## Odesílání e-mailů zákazníkům {#send-emails-to-your-customers}
 
 Pomocí funkce Broadcast Ultimate Multisite můžete svým uživatelům odeslat e-mail. Máte možnost odeslat e-mail pouze konkrétním uživatelům nebo zacílit na konkrétní skupinu uživatelů podle produktu nebo plánu, ke kterému jsou přihlášeni.
 
@@ -81,11 +81,11 @@ Po vytvoření zprávy můžete kliknout na tlačítko **Send**.
 
 A tak snadné je odeslat e-mail vašim koncovým uživatelům pomocí funkce Broadcast.
 
-## Systémové e-maily
+## Systémové e-maily {#system-emails}
 
 Systémové e-maily v Ultimate Multisite jsou **automatická oznámení** odesílaná systémem po určitých akcích, jako je registrace, platba, mapování domény atd. Tyto e-maily lze upravovat nebo měnit v nastaveních Ultimate Multisite. Obsahuje také funkci, která vám umožní resetovat a importovat stávající nastavení z jiné instalace Ultimate Multisite.
 
-### Resetování a import
+### Resetování a import {#resetting--importing}
 
 Nové verze Ultimate Multisite, stejně jako add-ony, mohou a budou čas od času registrovat nové e-maily.
 
@@ -93,7 +93,7 @@ Abychom předešli konfliktům a dalším problémům, **nepřidáme nové e-mai
 
 Super admini a agenti však mohou tyto nově registrované e-maily importovat pomocí nástroje pro import. Tento proces vytvoří nový systémový e-mail s obsahem a konfigurací nové e-mailové šablony, což super adminovi umožní provést libovolné úpravy nebo je ponechat tak, jak jsou.
 
-#### Jak importovat systémové e-maily
+#### Jak importovat systémové e-maily {#how-to-import-system-emails}
 
 Přejděte na stránku Ultimate Multisite Settings a otevřete kartu **Emails**.
 
@@ -111,7 +111,7 @@ Poté můžete přepnout možnosti Import Emails a zobrazit, které systémové 
 
 <!-- Snímek obrazovky není k dispozici: Modální okno Obnovit a importovat s rozbalenými možnostmi Importovat e-maily -->
 
-#### Obnovení systémových e-mailů
+#### Obnovení systémových e-mailů {#reseting-system-emails}
 
 Jindy si uvědomíte, že změny, které jste provedli v dané šabloně e-mailu, vám už nevyhovují a chcete ji obnovit do jejího **výchozího stavu**.
 

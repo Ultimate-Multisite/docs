@@ -4,11 +4,11 @@ title: Veprim - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Veprim: set_logged_in_cookie
+# Veprim: set_logged_in_cookie {#action-setloggedincookie}
 
 Ekzekutohet menjëherë përpara se të vendoset cookie i autentikimit për përdoruesin e identifikuar.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Tipi | Përshkrimi |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Ekzekutohet menjëherë përpara se të vendoset cookie i autentikimit për për
 | $scheme | `string` | Skema e autentikimit. Parazgjedhja 'logged_in'. |
 | $token | `string` | Tokeni i sesionit të përdoruesit për t’u përdorur për këtë cookie. |
 
-### Që prej
+### Që prej {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) në rreshtin 141

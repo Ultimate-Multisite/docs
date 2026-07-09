@@ -3,11 +3,11 @@ title: Ikhono Lokucacisa Isayithi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Ikhono Lokucacisa Isayithi
+# Ikhono Lokucacisa Isayithi {#site-specification-skill}
 
 **Ikhono Lokucacisa Isayithi** liyindlela ehlelekile yokubamba imigomo yesayithi lakho, izethameli, nobuwena bomkhiqizo. Lolu lwazi lugcinwa enkumbulweni yakho ye-**site_brief**, ama-agent ayibhekisela kuyo kuzo zonke izikhathi ukuze anikeze usizo olungaguquguquki, oluqonda umongo.
 
-## Kuyini Ukucacisa Isayithi?
+## Kuyini Ukucacisa Isayithi? {#what-is-site-specification}
 
 Ukucacisa Isayithi kuyinqubo yokubhala:
 
@@ -19,9 +19,9 @@ Ukucacisa Isayithi kuyinqubo yokubhala:
 
 Lokhu kucaciswa kuba yi-**site_brief** yakho, inkumbulo eqhubekayo ama-agent ayisebenzisayo ukuze aqonde umongo wesayithi lakho.
 
-## Kungani Usebenzise Ukucacisa Isayithi?
+## Kungani Usebenzise Ukucacisa Isayithi? {#why-use-site-specification}
 
-### Ukungaguquguquki Kuzo Zonke Izikhathi
+### Ukungaguquguquki Kuzo Zonke Izikhathi {#consistency-across-sessions}
 
 Ngaphandle kwe-site_brief, kuzodingeka uphinde uchaze inhloso yesayithi lakho njalo uma uqala isikhathi esisha. Ngayo, ama-agent aqonda ngokushesha:
 
@@ -30,7 +30,7 @@ Ngaphandle kwe-site_brief, kuzodingeka uphinde uchaze inhloso yesayithi lakho nj
 - Isakhiwo sokuqukethwe kwakho
 - Izinhloso zakho zebhizinisi
 
-### Izincomo Ezingcono
+### Izincomo Ezingcono {#better-recommendations}
 
 Ama-agent asebenzisa i-site_brief yakho ukuze:
 
@@ -39,17 +39,17 @@ Ama-agent asebenzisa i-site_brief yakho ukuze:
 - Aphakamise imiklamo ehambisana nomkhiqizo wakho
 - Agweme ukuphakamisa izici ezingahambisani
 
-### Ukuqalisa Ngokushesha
+### Ukuqalisa Ngokushesha {#faster-onboarding}
 
 Ama-agent amasha (noma ama-agent ezikhathini ezintsha) angashesha aqonde isimo ngokufunda i-site_brief yakho esikhundleni sokubuza imibuzo yokucacisa.
 
-## Ukuqalisa Ukucacisa Isayithi
+## Ukuqalisa Ukucacisa Isayithi {#initiating-site-specification}
 
-### Ngesikhathi Sokuqalisa se-Theme Builder
+### Ngesikhathi Sokuqalisa se-Theme Builder {#during-theme-builder-onboarding}
 
 Ikhono Lokucacisa Isayithi liqalwa ngokuzenzakalela ngesikhathi se-**Theme Builder onboarding flow**. I-Setup Assistant agent ibuza imibuzo futhi yakha i-site_brief yakho.
 
-### Ukuqalisa Mathupha
+### Ukuqalisa Mathupha {#manual-initiation}
 
 Ungaqala Ukucacisa Isayithi nganoma yisiphi isikhathi:
 
@@ -63,9 +63,9 @@ noma
 "Ngisize ngidale i-site brief"
 ```
 
-## Inqubo Yokucacisa Isayithi
+## Inqubo Yokucacisa Isayithi {#the-site-specification-process}
 
-### Isinyathelo 1: Inhloso Yesayithi
+### Isinyathelo 1: Inhloso Yesayithi {#step-1-site-purpose}
 
 I-agent iyabuza:
 
@@ -81,7 +81,7 @@ Iyini inhloso eyinhloko yesayithi lakho?
 
 Ungakhetha isigaba noma uchaze inhloso yakho.
 
-### Isinyathelo 2: Izethameli Eziqondiwe
+### Isinyathelo 2: Izethameli Eziqondiwe {#step-2-target-audience}
 
 ```
 Ubani izethameli zakho eziyinhloko?
@@ -94,7 +94,7 @@ Ubani izethameli zakho eziyinhloko?
 Yiziphi izidingo zabo eziyinhloko?
 ```
 
-### Isinyathelo 3: Ubuwena Bomkhiqizo
+### Isinyathelo 3: Ubuwena Bomkhiqizo {#step-3-brand-identity}
 
 ```
 Iyini imibala yomkhiqizo wakho?
@@ -110,7 +110,7 @@ Ungayichaza kanjani ithoni yomkhiqizo wakho?
 - Efudumele / enobungane
 ```
 
-### Isinyathelo 4: Imigomo Yebhizinisi
+### Isinyathelo 4: Imigomo Yebhizinisi {#step-4-business-goals}
 
 ```
 Impumelelo ibukeka kanjani kusayithi lakho?
@@ -129,7 +129,7 @@ Iyiphi inkomba yakho eyinhloko?
 - Okunye
 ```
 
-### Isinyathelo 5: Isakhiwo Sokuqukethwe
+### Isinyathelo 5: Isakhiwo Sokuqukethwe {#step-5-content-structure}
 
 ```
 Okuqukethwe kwakho kuhlelwe kanjani?
@@ -148,7 +148,7 @@ Yiziphi izinhlobo zokuqukethwe ozisebenzisayo?
 - Okunye
 ```
 
-## Inkumbulo Yakho ye-site_brief
+## Inkumbulo Yakho ye-site_brief {#your-sitebrief-memory}
 
 Ngemva kokuqeda Ukucacisa Isayithi, ulwazi lwakho lugcinwa njenge-**site_brief** enkumbulweni ye-agent yakho. Leli irekhodi elihlelekile eliqukethe:
 
@@ -169,9 +169,9 @@ Ngemva kokuqeda Ukucacisa Isayithi, ulwazi lwakho lugcinwa njenge-**site_brief**
 }
 ```
 
-## Ukubuka Nokubuyekeza i-site_brief Yakho
+## Ukubuka Nokubuyekeza i-site_brief Yakho {#viewing-and-updating-your-sitebrief}
 
-### Buka i-site_brief Yakho
+### Buka i-site_brief Yakho {#view-your-sitebrief}
 
 Buza i-agent:
 
@@ -187,7 +187,7 @@ noma
 
 I-agent izobonisa ukucaciswa kwakho okugcinwe.
 
-### Buyekeza i-site_brief Yakho
+### Buyekeza i-site_brief Yakho {#update-your-sitebrief}
 
 Uma isayithi lakho lithuthuka, ungayibuyekeza:
 
@@ -203,9 +203,9 @@ noma
 
 Lokhu kuzophinda kuqalise ikhono Lokucacisa Isayithi ngolwazi lwakho olukhona njengendawo yokuqala.
 
-## Ama-agent Ayisebenzisa Kanjani i-site_brief
+## Ama-agent Ayisebenzisa Kanjani i-site_brief {#how-agents-use-sitebrief}
 
-### Izincomo Zomklamo
+### Izincomo Zomklamo {#design-recommendations}
 
 Uma ucela izinguquko zomklamo, ama-agent abhekisela ku-site_brief yakho:
 
@@ -216,7 +216,7 @@ ngethoni efudumele, yobuciko bezandla. Ngizodala umklamo ogcizelela
 ubucwebe bakho obenziwe ngesandla namanani akho okusimama."
 ```
 
-### Iziphakamiso Zezici
+### Iziphakamiso Zezici {#feature-suggestions}
 
 Ama-agent aphakamisa izici ezihambisana nemigomo yakho:
 
@@ -227,7 +227,7 @@ ngingancoma: uhlelo lokwethembeka, ukubuyekezwa kwamakhasimende, incwadi yezinda
 nezincomo zemikhiqizo."
 ```
 
-### Isakhiwo Sokuqukethwe
+### Isakhiwo Sokuqukethwe {#content-structure}
 
 Ama-agent aphakamisa ukuhlelwa kokuqukethwe ngokusekelwe esakhiweni sakho:
 
@@ -238,16 +238,16 @@ ukuhlela okuthunyelwe ngesigaba somkhiqizo nokudala 'imihlahlandlela yesitayela'
 ekhombisa imikhiqizo eminingi ndawonye."
 ```
 
-## Imikhuba Engcono Kakhulu
+## Imikhuba Engcono Kakhulu {#best-practices}
 
-### Cacisa Ngokunembile
+### Cacisa Ngokunembile {#be-specific}
 
 Esikhundleni sokuthi "izethameli ezijwayelekile," chaza izethameli zakho zangempela:
 
 - ✓ "Abesifazane abaneminyaka engu-25-45, abanentshisekelo emfashinini esimeme"
 - ✗ "Wonke umuntu"
 
-### Buyekeza Njalo
+### Buyekeza Njalo {#update-regularly}
 
 Njengoba isayithi lakho lithuthuka, buyekeza i-site_brief yakho:
 
@@ -256,14 +256,14 @@ Njengoba isayithi lakho lithuthuka, buyekeza i-site_brief yakho:
 - Lapho ubuwena bomkhiqizo wakho bushintsha
 - Lapho imigomo yakho yebhizinisi ishintsha
 
-### Sebenzisa Amagama Angaguquguquki
+### Sebenzisa Amagama Angaguquguquki {#use-consistent-terminology}
 
 Sebenzisa amagama afanayo kuzo zonke izikhathi:
 
 - ✓ Hlala uthi "ubucwebe obuzinzile" (hhayi "ubucwebe obungalimazi imvelo" noma "imikhiqizo eluhlaza")
 - ✓ Bhekisela njalo ezethamelini zakho ngendlela efanayo
 
-### Faka Umongo
+### Faka Umongo {#include-context}
 
 Nikeza isizinda esisiza ama-agent aqonde izinqumo zakho:
 
@@ -271,7 +271,7 @@ Nikeza isizinda esisiza ama-agent aqonde izinqumo zakho:
 - "Izethameli zethu ziyaluqonda ubuchwepheshe futhi zilindele idizayini yesimanje"
 - "Siyi-startup ezixhasayo, ngakho sidinga izixazululo ezingabizi kakhulu"
 
-## Ubudlelwano Nokwamukeliswa kwe-Theme Builder
+## Ubudlelwano Nokwamukeliswa kwe-Theme Builder {#relationship-to-theme-builder-onboarding}
 
 Ikhono Lokucaciswa Kwesayithi lihlanganiswe **nenqubo yokwamukeliswa kwe-Theme Builder**. Uma uqeda ukwamukeliswa, i-site_brief yakho idalwa ngokuzenzakalelayo ngolwazi olunikezile.
 
@@ -281,7 +281,7 @@ Ungakwazi futhi ukusebenzisa Ukucaciswa Kwesayithi ngokuzimela uma ufuna uku:
 - Buyekeza isifingqo sesayithi lakho njengoba isayithi lakho lithuthuka
 - Dala ukucaciswa okunemininingwane ngaphambi kokuqala i-Theme Builder
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
 **I-site_brief yami ayisetshenziswa**
 - Qinisekisa ukuthi i-agent inokufinyelela enkumbulweni
@@ -297,7 +297,7 @@ Ungakwazi futhi ukusebenzisa Ukucaciswa Kwesayithi ngokuzimela uma ufuna uku:
 - Buyekeza i-site_brief yakho uma isiphelelwe yisikhathi
 - Nikeza umongo owengeziwe ezicelweni zakho
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 Ngemva kokuchaza ukucaciswa kwesayithi lakho:
 

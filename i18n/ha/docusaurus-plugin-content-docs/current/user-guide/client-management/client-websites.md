@@ -3,7 +3,7 @@ title: Wurin Gida na Abokan Hannu
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Gidanin Abokan Ma'aikaci (v2)
+# Gidanin Abokan Ma'aikaci (v2) {#your-clients-websites-v2}
 
 Bayaninka a cikin shafukan ku bayan an rubuta (register) a kan yanarku, za su iya samun dashboard ɗinsu.
 

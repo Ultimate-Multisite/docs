@@ -4,11 +4,11 @@ title: פֿילטער - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# פֿילטער: wu_post_count
+# פֿילטער: wu_post_count {#filter-wupostcount}
 
 דערלויבט plugin־אַנטוויקלער צו טוישן דעם סך־הכּל ציילונג
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 | $post_counts | `object` | WordPress אָביעקט אומגעקערט דורך דער wp_count_posts fn |
 | $post_type | `string` | דער פּאָסט־טיפּ slug |
 
-### זינט
+### זינט {#since}
 
 - 1.9.1
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) אויף שורה 136
 
 
-## גיט צוריק
+## גיט צוריק {#returns}
 נײַער סך־הכּל

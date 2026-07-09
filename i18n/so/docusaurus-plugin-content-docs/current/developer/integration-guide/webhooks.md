@@ -3,11 +3,11 @@ title: Maareynta Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Maareynta Webhook
+# Maareynta Webhook {#webhook-handling}
 
 Abuur baro webhook oo gaar ah si aad dhacdooyin uga hesho adeegyo dibadeed oo aad xogta ula waafajiso Ultimate Multisite.
 
-## Barta Webhook ee Gaarka ah
+## Barta Webhook ee Gaarka ah {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Tixgelinno Amni
+## Tixgelinno Amni {#security-considerations}
 
 - Had iyo jeer xaqiiji saxiixyada webhook adigoo adeegsanaya HMAC ama sir la wadaago
 - Adeegso `permission_callback` marinkaaga REST — waligaa ha u dejin `__return_true` gudaha deegaanka wax-soo-saarka

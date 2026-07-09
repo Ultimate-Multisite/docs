@@ -3,28 +3,28 @@ title: REST API apžvalga
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API nuoroda
+# REST API nuoroda {#rest-api-reference}
 
-## Pagrindinė konfigūracija
+## Pagrindinė konfigūracija {#base-configuration}
 
 **Bazinis URL:** `{site_url}/wp-json/wu/v2/`
 **Autentifikavimas:** API raktas ir slaptasis raktas (HTTP Basic Auth arba URL parametrai)
 
-## Autentifikavimas
+## Autentifikavimas {#authentication}
 
-### Įjungti API
+### Įjungti API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Gauti API kredencialus
+### Gauti API kredencialus {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentifikavimo metodai
+### Autentifikavimo metodai {#authentication-methods}
 
 **HTTP Basic Auth (rekomenduojama):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Pagrindiniai galutiniai taškai
+## Pagrindiniai galutiniai taškai {#core-endpoints}
 
-### 1. Klientų API
+### 1. Klientų API {#1-customers-api}
 
 **Bazinis maršrutas:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Svetainių API
+### 2. Svetainių API {#2-sites-api}
 
 **Bazinis maršrutas:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Narystės API
+### 3. Narystės API {#3-memberships-api}
 
 **Bazinis maršrutas:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produktų API
+### 4. Produktų API {#4-products-api}
 
 **Bazinis maršrutas:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Mokėjimų API
+### 5. Mokėjimų API {#5-payments-api}
 
 **Bazinis maršrutas:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domenų API
+### 6. Domenų API {#6-domains-api}
 
 **Bazinis maršrutas:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registracijos galutinis taškas
+## Registracijos galutinis taškas {#registration-endpoint}
 
 Galutinis taškas `/register` suteikia visą atsiskaitymo / registracijos eigą:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Suvereniųjų nuomininkų galutiniai taškai
+## Suvereniųjų nuomininkų galutiniai taškai {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 prideda suvereniųjų nuomininkų REST aprėptį integracijoms, kurios parengia, tikrina arba patvirtina izoliuotus nuomininkus.
 
@@ -242,7 +242,7 @@ Tipiniai migracijos būsenos atsakymai apima:
 
 Laikykite `ready: false` paleidimą blokuojančia kliūtimi. Patikrinkite patikrinimo informaciją, ištaisykite duomenų bazės host susiejimą, eilę, naudotojų parengimą arba maršrutizavimo problemą, tada pakartokite patikrinimą.
 
-## Klaidų atsakymai
+## Klaidų atsakymai {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Laikykite `ready: false` paleidimą blokuojančia kliūtimi. Patikrinkite patikr
 }
 ```
 
-## Puslapiavimas ir filtravimas
+## Puslapiavimas ir filtravimas {#pagination-and-filtering}
 
 **Užklausos parametrai:**
 ```http

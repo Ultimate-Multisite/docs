@@ -4,11 +4,11 @@ title: فلتر - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# فلتر: wu_mt_url_replacements
+# فلتر: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 تصفية أزواج استبدال URL.
 
-## المعلمات
+## المعلمات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -17,10 +17,10 @@ _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 | $new_url | `string` | URL الجديد. |
 | $blog_id | `int` | معرف المدونة. |
 
-### منذ
+### منذ {#since}
 
 - 1.0.0
 
-### المصدر
+### المصدر {#source}
 
 معرّف في [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) في السطر 151

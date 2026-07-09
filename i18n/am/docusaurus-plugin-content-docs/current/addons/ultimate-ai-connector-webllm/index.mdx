@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 የUltimate AI Connector for WebLLM በWordPress multisite networkዎ ውስጥ በብራውዘር ውስጥ በቀጥታ የAI አቅም ማስኬድ (inference) ያመጣል። ትልልቅ የቋንቋ ሞዴሎችን (LLMs) በሙሉ በብራውዘር ውስጥ በመጠቀም WebLLM እና MLC engineን ይጠቀማል — ምንም API key፣ ምንም ውጫዊ ጥሪ፣ እና ምንም መረጃ የተጠቃሚውን መሳሪያ አይለቅም።
 
-## ቁልፍ ባህሪያት (Key Features)
+## ቁልፍ ባህሪያት (Key Features) {#key-features}
 
 - **በብራውዘር ደረጃ አቅም ማስኬድ (Browser-side inference)**: LLM በጎብኚው ብራውዘር ውስጥ በWebLLM/MLC በኩል ይሰራል — የሰርቨር GPU አያስፈልግም።
 - **የሚንሳፈፍ የውይይት ዊጄት (Floating chat widget)**: የተመዘገቡ ተጠቃሚዎች የብራውዘር ደረጃ LLMን በቀጥታ ከፊት ለፊት (front end) ሊጠይቁ ይችላሉ።
@@ -22,28 +22,28 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **IndexedDB ካሽ (Cache)**: የሞዴል ክብደት ማውረዶች (Model weight downloads) መደበኛውን Cache API መንገድ የሚያቋርጡ CDN redirection ሲፈጠሩ ሳይጠፉ ይቀራሉ።
 - **wpai filter integration**: AI Experiments ባህሪ ወደ ብራውዘር engine እንዲሄድ የሚያደርግበት ከሆነ፣ ወደ `wpai_preferred_text_models` filter ይገባል።
 
-## መስፈርቶች (Requirements)
+## መስፈርቶች (Requirements) {#requirements}
 
 - WordPress 5.3 ወይም ከዚያ በላይ
 - PHP 7.4 ወይም ከዚያ በላይ
 - Ultimate Multisite plugin (በሥራ ላይ መሆን አለበት)
 - WebGPU ድጋፍ ያለው ብራውዘር (Chrome 113+, Edge 113+, ወይም WebGPU በየተቀየረበት Firefox Nightly)
 
-## መጫን (Installation)
+## መጫን (Installation) {#installation}
 
 1. የፕልጊን ፋይሎችን ወደ `/wp-content/plugins/` ዳይሬክቶሪዎ ይጫኑ።
 2. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት ፕልጊኑን ያንቁ።
 3. የaddonን ለማስቀመጥ ወደ **Ultimate Multisite → AI Connector** ይሂዱ።
 
-## የሚንሳፈፍ የውይይት ዊጄት (Floating Chat Widget)
+## የሚንሳፈፍ የውይይት ዊጄት (Floating Chat Widget) {#floating-chat-widget}
 
 የሚንሳፈፍ የውይይት ዊጄት ማንኛውንም የተመዘገበ ተጠቃሚ በገጹን ሳይለቅ በቀጥታ ከፊት ለፊት (front end) ከብራውዘር ደረጃ LLM ጋር እንዲገናኝ ያስችላል።
 
-### ምን ያደርጋል (What It Does)
+### ምን ያደርጋል (What It Does) {#what-it-does}
 
 የተንቀሳቀሰ ከሆነ፣ በተመዘገቡ ተጠቃሚዎች በየፊት-የገጹ ጥግ ላይ የውይይት አዶ ይታያል። አዶውን መጫን ተጠቃሚው ፕሮምፕቶችን ሊጽፍበት እና ከበራውዘር ውስጥ በየሚሰራው WebLLM ሞዴል ምላሾችን ሊቀበልበት የሚያስችል የውይይት ፓነል ይከፍታል። ሞዴሉ በሙሉ በብራውዘር ውስጥ ስለሚሰራ፣ ምላሾቹ ሚስጥራዊ ናቸው እና ምንም የሰርቨር-ጎን ሂደት አያካትቱም።
 
-### የአድሚን ባር ሁኔታ አመልካች (Admin-Bar Status Indicator)
+### የአድሚን ባር ሁኔታ አመልካች (Admin-Bar Status Indicator) {#admin-bar-status-indicator}
 
 የWordPress አድሚን ባር የWebLLM engineን የአሁኑን ሁኔታ የሚያሳይ ሁኔታ አመልካችን ያካትታል፡
 
@@ -56,7 +56,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 አመልካቹ ገጽን እንደገና ሳይጫን በቅጽበታዊ እውreal time ይዘምናል።
 
-### ዊጄቱን እንዴት ማብራት ወይም ማጥፋት እንደሚቻል (How to Enable or Disable the Widget)
+### ዊጄቱን እንዴት ማብራት ወይም ማጥፋት እንደሚቻል (How to Enable or Disable the Widget) {#how-to-enable-or-disable-the-widget}
 
 1. በnetwork admin ውስጥ ወደ **Ultimate Multisite → AI Connector** ይሂዱ።
 2. **Connector** ፓነሉን ያግኙ።
@@ -65,17 +65,17 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 የnetwork አስተዳዳሪ ይህንን አቅም ከሰጠው፣ ዊጄቱ በየገጹ በየsiteው አስተዳዳሪ ውስጥም ሊበራ ወይም ሊጠፋ ይችላል።
 
-## የዊጄት ቅንብሮች (Widget Settings)
+## የዊጄት ቅንብሮች (Widget Settings) {#widget-settings}
 
 በ**Ultimate Multisite → AI Connector** ውስጥ ያለው የኮነክተር ፓነል የሚንሳፈፍ የውይይት ዊጄት የሚከተሉትን ቅንብሮች ይዟል፡
 
-### የሚንሳፈፍ የውይይት ዊጄትን ማብራት (Enable Floating Chat Widget)
+### የሚንሳፈፍ የውይይት ዊጄትን ማብራት (Enable Floating Chat Widget) {#enable-floating-chat-widget}
 
 ይህ የውይይት ዊጄቱን ለጠቅላላው network ያብራል ወይም ያጥፋል። ሲሰቀል፣ ዊጄቱ በየትኛውም የፊት-የገጽ ላይ አይታይም፣ ተጠቃሚው ሚና ምንም ይሁን ምን።
 
 **መነሻ (Default):** Off
 
-### የራስ-ፕሮምፕት ባህሪ (Auto-Prompt Behaviour)
+### የራስ-ፕሮምፕት ባህሪ (Auto-Prompt Behaviour) {#auto-prompt-behaviour}
 
 ተጠቃሚው ዊጄቱን ሲከፍተው ፕሮምፕት በራስ-ሰር መላክ መሆኑን ይቆጣጠራል።
 
@@ -93,7 +93,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 **መነሻ (Default):** Disabled
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 የVersion 1.1.0 ለMLC engine የSharedWorker runtime አቅርቧል። ቀደም ሲል፣ WebLLMን የሚጠቀም እያንዳንዱ የብራውዘር ትር የራሱን የሞዴል ተልዕኮ (instance) ይጫን ነበር፣ ይህም በVRAM ውስንነት ባላቸው መሳሪያዎች ላይ የGPU ሜሞሪ እንዲወዳደር በማድረግ የአፈጻጸም ችግሮችን ይፈጥራል።
 
@@ -105,29 +105,29 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 SharedWorker ለተጠቃሚዎች ግልጽ አይደለም። የአድሚን ባር ሁኔታ አመልካች ሁልጊዜ የጋራ engineን ሁኔታን ነው የሚያንፀባርቀው፣ የየብራውዘር ትሩን አይደለም።
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 የaddonው የWordPress REST API ጥያቄዎችን የሚቋረጥ `apiFetch` middleware ይጭናል፣ ይህም ከAI Client SDK ስርዓት ጋር የሚመሳሰሉ ጥያቄዎችን ይይዛል። እነዚህ ጥያቄዎች ወደ ሰርቨሩ የloopback HTTP ጥያቄ ከመላክ ይልቅ፣ በSharedWorker ውስጥ በሚሰራው አካባቢያዊ WebLLM broker ላይ በቀጥታ ይላካሉ።
 
 ይህ ማለት የAI endpoints ለመጥራት መደበኛውን የWordPress `apiFetch` API የሚጠቀሙ ፕልጊኖች እና ቴሞች፣ ምንም የኮድ ለውጥ ሳያስፈልጋቸው፣ ሞዴሉ ሲገኝ በብራውዘር ደረጃ በራስ-ሰር ይጠቀማሉ።
 
-## Hooks እና Filters
+## Hooks እና Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — WebLLM የብራውዘር engineን እንደ ተመራጭ የጽሑፍ ሞዴል ይመዝግቡ። engine ሲዘጋጅ እና ሲገኝ፣ የaddonው ወደዚህ filter በራስ-ሰር ይገባል።
 - `ultimate_webllm_widget_enabled` — ለተወሰነ ተጠቃሚ ወይም ሁኔታ የዊጄትን የብቃት ሁኔታ ይሽረዋል። `true` ወይም `false` ይመልሱ።
 - `ultimate_webllm_auto_prompt` — ወደ ዊጄቱ ከመላኩ በፊት የራስ-ፕሮምፕት ጽሑፍን ያሻሽላል። የፕሮምፕት ስትሪንግን እና የአሁኑን `WP_Post` object ይቀበላል።
 
-## ችግር መፍታት (Troubleshooting)
+## ችግር መፍታት (Troubleshooting) {#troubleshooting}
 
-### የውይይት ዊጄቱ አይታይም
+### የውይይት ዊጄቱ አይታይም {#the-chat-widget-does-not-appear}
 
 - ተጠቃሚው መግባቱን ያረጋግጡ — ዊጄቱ ለተረጋገጡ ተጠቃሚዎች ብቻ ይታያል።
 - በConnector panel ውስጥ **Enable floating chat widget** መብራት መሆኑን ያረጋግጡ።
 - የተጠቃሚው ብራውዘር WebGPU እንደሚደግፍ ያረጋግጡ (ከላይ ባለው መስፈርቶች ይመልከቱ)።
 
-### የአድሚን ባር አመልካች "Error" ያሳያል
+### የአድሚን ባር አመልካች "Error" ያሳያል {#the-admin-bar-indicator-shows-error}
 
 የብራውዘር developer console (F12) ይክፈቱ እና ከWebLLM ጋር የተያያዙ ስህተቶችን ይፈልጉ። የተለመዱ ምክንያቶች፡
 
@@ -135,10 +135,10 @@ SharedWorker ለተጠቃሚዎች ግልጽ አይደለም። የአድሚን 
 - የሞዴል ክብደት ማውረድ አልተሳካም — የኔትወርክ ግንኙነትን ይፈትሹ እና በብራውዘር developer tools (Application → IndexedDB) ውስጥ የIndexedDB ካሽን ለማጽዳት ይሞክሩ።
 - የብራውዘር ቅጥያ (extension) የSharedWorkerን እያደነዘዘ ነው።
 
-### የሞዴል ክብደት ሁልጊዜ ይወረዳል
+### የሞዴል ክብደት ሁልጊዜ ይወረዳል {#model-weights-download-every-time}
 
 የaddonው የሞዴል ክብደቶች CDN redirection ሲፈጠሩ ሳይጠፉ እንዲቀሩ IndexedDBን እንደ ካሽ backend ይጠቀማል። ክብደቶቹ በየጉብኝቱ እየወረዱ ከሆነ፣ IndexedDB በብራውዘር የግላዊነት ቅንብሮች ወይም ቅጥያ ስለማጽዳት ያረጋግጡ።
 
-## የለውጥ መዝገብ (Changelog)
+## የለውጥ መዝገብ (Changelog) {#changelog}
 
 ሙሉ የversion ታሪክን ለማየት [Changelog](./changelog) ይመልከቱ።

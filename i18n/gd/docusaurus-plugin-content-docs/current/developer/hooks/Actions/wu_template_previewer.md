@@ -4,19 +4,19 @@ title: Gnìomh - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Gnìomh: wu_template_previewer
+# Gnìomh: wu_template_previewer {#action-wutemplatepreviewer}
 
 Ruithidh seo nuair a tha thu taobh a-staigh co-theacsa ro-shealladair an teamplaid.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
 | $template_previewer | `self` | Instance den chlas làithreach. |
 
-### Bho
+### Bho {#since}
 
 - 2.0.4
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) aig loidhne 86

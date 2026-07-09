@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Mitmikrentlus
+# Mitmikrentlus {#multi-tenancy}
 
 Jaota alamsaidid serverite ja andmebaaside vahel jõudluse ja turvalisuse parandamiseks
 
-## Versiooni 1.2.0 väljalaske olulisemad punktid
+## Versiooni 1.2.0 väljalaske olulisemad punktid {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 lisab suveräänse rentniku aluse tootmiskeskkonna isolatsiooni töövoogude jaoks:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 lisab suveräänse rentniku aluse tootmiskeskkonna isolatsio
 
 Vaata kasutajajuhendeid: [suveräänse migratsiooni töövoog](/user-guide/getting-started/sovereign-migration-workflow), [mitmikrentluse isolatsioon](/user-guide/configuration/multi-tenancy-isolation) ja [suveräänsete rentnike toimingud](/user-guide/administration/sovereign-tenant-operations).
 
-## Nõuded
+## Nõuded {#requirements}
 
 - WordPress 5.3 või uuem
 - PHP 7.4 või uuem
 - Multisite Ultimate plugin (aktiivne)
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 1. Laadi lisamooduli failid üles oma `/wp-content/plugins/` kataloogi
 2. Aktiveeri plugin WordPressi menüü „Plugins” kaudu
 3. Konfigureeri lisamooduli sätted võrgu halduses
 
-## Arendus
+## Arendus {#development}
 
-### Seadistamine
+### Seadistamine {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projekti struktuur
+### Projekti struktuur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Koodi moderniseerimise reeglid
 ```
 
-### Testimine
+### Testimine {#testing}
 
 Lisamoodul sisaldab põhjalikku testimisraamistikku:
 
@@ -93,54 +93,54 @@ Lisamoodul sisaldab põhjalikku testimisraamistikku:
 - **Testikate**: Konfigureeritud koodikatte jälgimiseks
 - **Multisite testimine**: Testid töötavad multisite-keskkonnas
 
-### Koodistandardid
+### Koodistandardid {#code-standards}
 
 - **WordPressi koodistandardid**: Jõustatakse PHPCS-i kaudu
 - **PHP 7.4+ ühilduvus**: Toetatud on kaasaegsed PHP funktsioonid
 - **Staatiline analüüs**: PHPStani integratsioon tüübikontrolliks
 - **Koodi moderniseerimine**: Rectori reeglid PHP uuenduste jaoks
 
-### Koostesüsteem
+### Koostesüsteem {#build-system}
 
 - **Varade töötlemine**: CSS/JS failide minimeerimine
 - **Tõlge**: POT-faili genereerimine
 - **Pakendamine**: Arhiivi loomine levitamiseks
 - **Arendusrežiim**: Minimeerimata varad silumiseks
 
-## Konfiguratsioon
+## Konfiguratsioon {#configuration}
 
 Lisamoodul toetab mitmesuguseid konfiguratsioonivalikuid, millele pääseb ligi võrgu haldusliidese kaudu.
 
-### Suveräänse rentniku konfiguratsioon
+### Suveräänse rentniku konfiguratsioon {#sovereign-tenant-configuration}
 
 Suveräänsete rentnike puhul konfigureeri rentniku andmebaas, failisüsteemi juur, andmebaasihosti sidumine ja hosti võimekus enne liikluse suunamist rentnikule. Käivita migratsiooni kontroll pärast iga muudatust, mis mõjutab andmebaasi mandaate, hosti sidumist, marsruutimist või kasutajate ettevalmistamist.
 
 Kasuta `localhost` ainult siis, kui rentniku käituskeskkond ja andmebaasi õigused eeldavad kohalikku soklit või sama masina juurdepääsu. Kasuta `127.0.0.1` või teenuse hostinime, kui see on sinu teenusepakkuja konfigureeritud õiguste host.
 
-### Hostingeri võimekus
+### Hostingeri võimekus {#hostinger-capability}
 
 Hostingeri mitmikrentluse võimekus töötab jagatud Hostingeri integratsioonitokeniga. Veendu, et domeen on hPanelis olemas, DNS osutab Hostingeri kontole ja rentniku andmebaasisätted vastavad enne kontrollimist hPanelile.
 
-## Haakeseosed ja filtrid
+## Haakeseosed ja filtrid {#hooks-and-filters}
 
-### Toimingud
+### Toimingud {#actions}
 
 - `ultimate-multisite-addon-template_init` - Käivitatakse pärast lisamooduli lähtestamist
 - `ultimate-multisite-addon-template_loaded` - Käivitatakse pärast kõigi lisamooduli failide laadimist
 
-### Filtrid
+### Filtrid {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Muuda lisamooduli sätteid
 - `ultimate-multisite-addon-template_enabled` - Kirjuta üle lisamooduli lubatud/keelatud olek
 
-## Litsents
+## Litsents {#license}
 
 See lisamoodul on litsentsitud GPL v3 või uuema alusel.
 
-## Tugi
+## Tugi {#support}
 
 Toe ja dokumentatsiooni jaoks külasta [MultisiteUltimate.com](https://multisiteultimate.com)
-## Muudatuste logi
+## Muudatuste logi {#changelog}
 
 - Versioon 1.2.0 (2026-06-03): lisa olekuta rentniku automaatne sisselogimine, Hostingeri mitmikrentluse võimekus, iga alamsaidi andmebaasi ja failisüsteemi isolatsioon, suveräänse migratsiooni kontrollväravad, rentniku alglaadimise / andmebaasikirjutaja täiustused, konfigureeritav MySQL hosti sidumine ja turvalisem suveräänne eemaldamine.
 

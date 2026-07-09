@@ -3,11 +3,11 @@ title: Kundfeedback & Problem-Meldig
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kundefeedback & Problemberichte
+# Kundefeedback & Problemberichte {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 füecht en integrierten System zur Rückmeldig und Meldig vo Problem hinzu, wo Endbenutzer d'Antworte als nöd hilfreich markiere und Problem direkt us de Chat-Oberflächi melde chönd. Sues System beinhaltet Zuestimmigsverwaltung (consent management), en automatisches Meldekommando und AI-unterstützte Sortierig (triage) im Backend.
 
-## Daumen runter-Button
+## Daumen runter-Button {#thumbs-down-button}
 
 Jede Nachricht, wo de AI-Assistent schickt, zeigt en **Daumen runter** (👎) Button a. Wenn en Benutzer druf klickt, chan er d'Antwort als nöd hilfreich oder falsch markiere.
 
@@ -15,7 +15,7 @@ Jede Nachricht, wo de AI-Assistent schickt, zeigt en **Daumen runter** (👎) Bu
 - Wenn mer druf klickt, öffnet sich s'**Feedback Consent Modal**.
 - D'Rückmeldig wird mit em Gesprächsverlauf und de spezifische Nachricht verbunde.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Wenn en Benutzer uf de Daumen runter-Button klickt, erscheint es en Zuestimmigsmodal, bevor irgendwelchi Date gschickt wärde. S'Modal:
 
@@ -26,13 +26,13 @@ Wenn en Benutzer uf de Daumen runter-Button klickt, erscheint es en Zuestimmigsm
 
 Kei Rückmeldig wird ufzeichnet, bis de Benutzer explizit bestätigt het.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Am End vo eme Gespräch chan de Assistent en **Auto-Prompt Feedback Banner** azeige — e nöd aufdringlichi Nachricht, wo fragt, ob d'Sitzig hilfreich gsi isch.
 
 Diesen Banner erscheint automatisch basierend uf de Länge vom Gespräch und Heuristiken über s'Ergebnis. Er verlinkt zur gliiche Feedback-Ablauf wie de Daumen runter-Button. Benutzer chönd de Banner ohni Rückmeldig abschließe.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Benutzer chönd de Feedback-Ablauf direkt uslöse, indem sie `/report-issue` i d'Chat-Eingabe tippe. Dä Befehl:
 
@@ -42,7 +42,7 @@ Benutzer chönd de Feedback-Ablauf direkt uslöse, indem sie `/report-issue` i d
 
 De `/report-issue` Command isch in all Chat Modi (inline, floating widget, full-screen) verfügbar.
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 Abgsendti Feedback wird an e AI Triage Layer gschickt, wo:
 

@@ -3,11 +3,11 @@ title: Gestion des e-mails système
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestion des emails système
+# Gestion des emails système {#managing-system-emails}
 
 Ultimate Multisite envoie divers emails système pour des événements tels que les confirmations d’inscription, les reçus de paiement et les changements d’abonnement. Vous pouvez personnaliser ces modèles d’email pour qu’ils correspondent à votre marque.
 
-## Afficher les emails système
+## Afficher les emails système {#viewing-system-emails}
 
 Accédez à **Ultimate Multisite → Settings** et cliquez sur l’onglet **Emails** pour voir les réglages liés aux emails.
 
@@ -21,7 +21,7 @@ Vous pouvez également modifier des modèles d’email individuels à l’aide d
 
 ![Éditeur d’email système](/img/admin/system-email-editor.png)
 
-## Importer de nouveaux modèles d’email
+## Importer de nouveaux modèles d’email {#importing-new-email-templates}
 
 Les nouvelles versions de Ultimate Multisite et les modules complémentaires peuvent enregistrer de nouveaux modèles d’email. Pour éviter les conflits, les nouveaux modèles ne sont pas ajoutés automatiquement — vous devez les importer manuellement.
 
@@ -32,7 +32,7 @@ Pour importer de nouveaux modèles d’email :
 3. Activez l’option **Import Emails** pour voir les modèles disponibles
 4. Sélectionnez les modèles que vous souhaitez importer et confirmez
 
-## Réinitialiser les modèles d’email
+## Réinitialiser les modèles d’email {#resetting-email-templates}
 
 Si vous avez personnalisé un modèle d’email et souhaitez revenir au contenu par défaut, vous avez deux options :
 

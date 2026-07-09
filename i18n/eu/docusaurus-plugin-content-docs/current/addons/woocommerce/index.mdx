@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce integrazioa
+# WooCommerce integrazioa {#woocommerce-integration}
 
 WooCommerce integrazioak gure eskuzko pasabideak funtzionatzen duen modu oso antzekoan funtzionatzen du. Malgutasun handia eskaintzen die zure erabiltzaileei, zure WooCommerce instalazioan eskuragarri dauden ordainketa-inprimakietako edozein aukeratzeko aukera emanez. Eta erraza da: erabiltzailearen fakturazio-aldia amaitzen denean, erabiltzailearen harpidetza geldiarazita jartzen da. Aldi berean, eskaera bat sortuko da sareko gune nagusiko WooCommerce instalazioan. Ondoren, erabiltzaileak faktura bat jasoko du bere email-ean, ordainketa egiteko esteka batekin. Ordainketa jasotzen denean, harpidetza berritzen da.
 
-## Ezaugarriak
+## Ezaugarriak {#features}
 
 - Ultimate Multisite eta WooCommerce arteko integrazio erraza
 - Hainbat ordainketa-metodo eskuragarri
 - Fakturazio errepikari automatizatua, barne hartutako harpidetzen core-a erabiliz, aukerako WooCommerce Subscriptions plugin hobekuntzekin
 - Checkout guztizkoek Ultimate Multisite zergak sartzen dituzte WooCommerce kuota-lerro bereizi eta ez-zergapeko gisa, bezeroek ordainketa egin aurretik zerga-kopuruak berrikusi ahal izan ditzaten
 
-## Dokumentazioa
+## Dokumentazioa {#documentation}
 
 **WooCommerce integrazioa konfiguratzea**
 
 **Zure ordainketa-aukerak zabaltzea Ultimate Multisite-rekin: WooCommerce integrazioa**
 
-## Instalazioa
+## Instalazioa {#installation}
 
 1. Igo 'ultimate-multisite-woocommerce' '/wp-content/plugins/' direktoriora
 2. Aktibatu plugin-a WordPress-eko 'Plugins' menuaren bidez
 3. Jarraitu urratsez urratseko Wizard-a plugin-a konfiguratzeko
 
-## Erabilera-gida
+## Erabilera-gida {#usage-guide}
 
 _**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 
@@ -40,7 +40,7 @@ Ulertzen dugu _Stripe_ eta _PayPal_ ez daudela eskuragarri herrialde batzuetan, 
 
 _WooCommerce_ eCommerce plugin oso ezaguna da. Mundu osoko garatzaileek gehigarriak sortu dituzte ordainketa-pasabide desberdinak harekin integratzeko. Horretaz baliatu ginen Ultimate Multisite fakturazio-sisteman erabil ditzakezun ordainketa-pasabideak zabaltzeko.
 
-## Konfiguratzea
+## Konfiguratzea {#setting-it-up}
 
 Lehenik, WooCommerce integrazioaren gehigarria instalatu behar duzu, **lizentzia duten erabiltzaileentzat doakoa** dena. Instalatzeko, egin klik Ultimate Multisite-n zure super admin Dashboard-ean eta hautatu **Add-ons**.
 
@@ -68,11 +68,11 @@ Instalatu ondoren, aukera gehigarri bat ikusiko duzu Ultimate Multisite ordainke
 
 Oinarrizko ezarpen batzuk konfigura ditzakezu, hala nola front end-ean agertuko den bistaratze-izena eta zure erabiltzaileak checkout fluxuan gidatzeko argibideak. Ondoren, zure **gune nagusiaren _WooCommerce_ ezarpenetara** joan zaitezke erabili nahi duzun ordainketa-pasabidea gaitzeko eta konfiguratzeko.
 
-### Checkout-eko zerga-kuoten lerroak
+### Checkout-eko zerga-kuoten lerroak {#checkout-tax-fee-lines}
 
 Ultimate Multisite checkout batek zergak barne hartzen dituenean, integrazioak Ultimate Multisite zerga-kopuru bakoitza WooCommerce checkout-era gehitzen du kuota-lerro bereizi eta ez-zergapeko gisa. Horrek zerga-guztizkoa ikusgai mantentzen du ordainketa egin aurretik, eta, aldi berean, WooCommerce-k zerga-kuota berriro zergapetzea eragozten du.
 
-## Ordainketa nola kudeatu
+## Ordainketa nola kudeatu {#how-to-manage-the-payment}
 
 WooCommerce integrazioak gure **eskuzko pasabideak** funtzionatzen duen modu oso antzekoan funtzionatzen du. Alde txarra da ordainketa bakoitza eskuz ordaindu behar dela fakturazio-aldiaren amaieran. Hona hemen fluxuak nola funtzionatzen duen:
 
@@ -82,13 +82,13 @@ WooCommerce integrazioak gure **eskuzko pasabideak** funtzionatzen duen modu oso
 
   * Ordainketa jasotzen denean, membership-a **berritzen** da, ordainketa Ultimate Multisite-n erregistratzen da eta eskaera osatutzat ezartzen da.
 
-### Ohar garrantzitsu batzuk:
+### Ohar garrantzitsu batzuk: {#some-important-notes}
 
   * Ultimate Multisite-ren funtzionalitate lehenetsiak integrazio-modu honekin funtzionatzen jarraitzen du. Adibidez, **itzulketak jaulkitzeak** **Subscription Management** pantailatik WooCommerce-rekin komunikatuko da itzulketa hautatutako ordainketa-inprimakia erabiliz jaulkitzeko.
 
   * Ultimate Multisite: WooCommerce integrazioak WP-Cron-en mende dago funtzionatzeko. Gehienetan oso ondo funtzionatzen du, baina guneak trafiko txikia badu, cron-a ez da abiarazten programatutako gertaerak egiaztatzeko eta gertaera galtzen da; horrek exekuzio-atzerapenak eragin ditzake.
 
-## WooCommerce Subscriptions plugin-a
+## WooCommerce Subscriptions plugin-a {#woocommerce-subscriptions-plugin}
 
 Hilero ordainketa bat eskuz abiaraztea ez da egokiena azken erabiltzaileentzat, harpidetzak fakturazio-ziklo bakoitzean automatikoki errepikatzea espero delako. WooCommerce Integration add-on-ek orain harpidetzen oinarrizko kodea barne hartzen du; beraz, produktu errepikariek beti erabiltzen dituzte harpidetzak fakturazio errepikarirako.
 
@@ -100,7 +100,7 @@ Eta hori da dena. Zure azken erabiltzaileek ez dute gehiago ordainketa bat eskuz
 
 Zure gune nagusian _WooCommerce_ atalean eskaera bat sortzeaz gain, Account bakoitzerako harpidetza bat ere sortuko du.
 
-### Berritze huts egindakoaren esekitze-portaera
+### Berritze huts egindakoaren esekitze-portaera {#failed-renewal-suspension-behavior}
 
 Lehenespenez, kidetzak aktibo mantentzen dira WooCommerce Subscriptions-ek huts egindako ordainketen berriro saiatzeko egutegia prozesatzen duen bitartean. Horrek WooCommerce Subscriptions-en ohiko grazia-epea mantentzen du, berreskuratutako berritze batek harpidetza eta kidetza berriro sinkronizatu ahal izan ditzan, sarbidea garaiz baino lehen eten gabe.
 

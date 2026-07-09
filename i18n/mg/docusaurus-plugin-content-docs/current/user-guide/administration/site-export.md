@@ -3,27 +3,27 @@ title: Famoahana ny toerana
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportation an' Site
+# Exportation an' Site {#site-export}
 
 Ny pejy admin hoe **Site Export**, dia mamela ny administrator an'ny tambajotra (network) mba hampaketrahana site iray, na ny tambajotra manontolo rehetra ho archive azo alaina ho an'ny famindrana (migration), fanatsarana (backup), na asa fanomezana.
 
-## Famindrana site iray
+## Famindrana site iray {#exporting-one-site}
 
 Mandehana any amin'i **Ultimate Multisite > Site Export** ary safidio hoe **Generate new Site Export**. Safidio ny subsite tianao hivoaka, dia safidio koa raha tokony ahitana ao anatin'ilay archive ireo uploads, plugins, ary themes.
 
 Rehefa vita ny famindrana, dia alao ZIP avy amin'ny lisitry ny **Existing Exports**. Ireo ZIP azo alefa dia ahitana `index.php` mampandray azy ho automatique (self-booting) sy `readme.txt`, ka afaka atao ny mametraka ilay archive amin'ny host vaovao ary manomboka avy hatrany tsy mila mametraka plugin importer hafa aloha.
 
-## Famindrana ny tambajotra manontolo
+## Famindrana ny tambajotra manontolo {#exporting-the-whole-network}
 
 Ampiasao ny **Network Export** eo amin'ny pejy Site Export rehefa mila archive iray ahitana ireo subsite rehetra ao anatin'ny tambajotra ianao. Tena ilaina izany mialoha ny famindrana host, fanazaran-tena momba ny fahasimban'ny rafitra (disaster-recovery drills), na fanamboarana staging izay mila miara-miasa tsirairay ny subsite rehetra.
 
 Satria ny Network Export dia mety lehibe kokoa noho ny famindrana site iray, dia ataovy izany mandritra fotoana tsy misy olana (low-traffic window) ary avereno ve raha azo antoka fa manana toerana malalaka ampy ny toerana fitehirizana ho an'ny uploads, plugins, themes, ary ZIP voatavo.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Nanomboka tamin'ny Ultimate Multisite 2.12.0, ny Site Exporter dia afaka mamorona **network import bundles** — archive manokana natao mba hanatsarana ny famerenana site an-tanjon-dranomasina (network-wide site restoration). Ny network import bundle dia ahitana ireo rakitra sy metadata ilaina rehetra mba hanatsarana ireo site maromaro ho amin'ny fampiasana tambajotra vaovao.
 
-#### Famoronana Network Import Bundle
+#### Famoronana Network Import Bundle {#generating-a-network-import-bundle}
 
 1. **Ultimate Multisite > Site Export**-nifotra
 2. Tsindrio ny **Generate new Network Export**
@@ -32,7 +32,7 @@ Nanomboka tamin'ny Ultimate Multisite 2.12.0, ny Site Exporter dia afaka mamoron
 5. Tsindrio **Generate**
 6. Download ny ZIP bundle avy ao amin'ny lisitry ny **Existing Exports**
 
-#### Famohana avy amin'ny Network Import Bundle
+#### Famohana avy amin'ny Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Mba hanamboarana (restore) ireo tranonkala avy amin'ny network import bundle ianao:
 
@@ -51,7 +51,7 @@ Ny network import bundles dia mitazona:
 - Uploads media (raha voarakitra ao amin'ilay bundle)
 - Database tables sy data manokana
 
-## Fametrahana ZIP export izay mitsangana (self-booting)
+## Fametrahana ZIP export izay mitsangana (self-booting) {#installing-a-self-booting-export-zip}
 
 Mba hanamboarana ny ZIP mitsangana eo amin'ny host vaovao:
 

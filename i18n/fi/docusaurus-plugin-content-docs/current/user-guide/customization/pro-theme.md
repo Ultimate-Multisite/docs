@@ -3,7 +3,7 @@ title: PRO-teema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Muokkaa hallintapaneelia PRO-teemalla
+# Muokkaa hallintapaneelia PRO-teemalla {#customizing-your-admin-panel-with-pro-theme}
 
 Usein asiakkaan työtä tekemisen yhteydessä meillä on tarve tarjota asiakkaille räätälöity kokemus WordPress-hallintapaneelissa. Jos etsit ammattimaisempaa ulkoasua ja tuntua, PRO Theme voi auttaa sinua.
 

@@ -3,11 +3,11 @@ title: Дэвшилтэт кодын жишээнүүд
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Дэвшилтэт кодын жишээнүүд
+# Дэвшилтэт кодын жишээнүүд {#advanced-code-examples}
 
 Эдгээр жишээ нь Ultimate Multisite-тэй дэвшилтэт интеграцийн загваруудыг харуулна.
 
-## Динамик үнийн хөдөлгүүр
+## Динамик үнийн хөдөлгүүр {#dynamic-pricing-engine}
 
 Хэмжээ, үнэнч байдал болон улирлын хөнгөлөлтийг хэрэгжүүлдэг дүрэмд суурилсан үнийн хөдөлгүүр:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Дэвшилтэт сайт үүсгэж бэлтгэх
+## Дэвшилтэт сайт үүсгэж бэлтгэх {#advanced-site-provisioning}
 
 Төлөвлөгөөний боломжууд дээр үндэслэн шинэ сайтуудыг plugin, SSL, CDN, нөөцлөлт болон хяналттайгаар автоматаар тохируулна:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Захиалгат хязгаарлалтын систем
+## Захиалгат хязгаарлалтын систем {#custom-limitations-system}
 
 Ашиглалтын анхааруулгатайгаар нөөцийн хязгаарыг хянаж, хэрэгжүүлнэ:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## `increment_item()` бүхий BerlinDB атомар тоолуур
+## `increment_item()` бүхий BerlinDB атомар тоолуур {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 нь BerlinDB `Query` class-д `increment_item()` method нэмсэн. Үүнийг тоон багануудад read-modify-write өрсөлдөөнгүйгээр аюулгүй, атомар нэмэгдүүлэлт хийхэд ашиглана — зэрэгцээ хүсэлтүүдийн үед ажилладаг тоолуур, хэрэглээний квот, rate-limiting шалгалтад хэрэгтэй.
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 нь BerlinDB `Query` class-д `increment_item()` meth
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Үндсэн хэрэглээ
+### Үндсэн хэрэглээ {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Гишүүнчлэл бүрийн API хэрэглээг хянах
+### Гишүүнчлэл бүрийн API хэрэглээг хянах {#tracking-api-usage-per-membership}
 
 Гишүүнчлэл бүрийн API rate limit-ийг хэрэгжүүлэх практик загвар:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Яагаад `update_item()`-ийн оронд `increment_item()` ашиглах вэ
+### Яагаад `update_item()`-ийн оронд `increment_item()` ашиглах вэ {#why-incrementitem-instead-of-updateitem}
 
 Энгийн read-modify-write арга нь зэрэгцээ хүсэлтүүдийн үед аюултай:
 

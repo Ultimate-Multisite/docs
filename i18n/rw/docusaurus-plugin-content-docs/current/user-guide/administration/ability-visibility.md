@@ -3,11 +3,11 @@ title: Uburyo bwo gushobora kubona
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Uburyo Ubwumuryo (Ability Visibility)
+# Uburyo Ubwumuryo (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 yitangira **Uburyo Ubwumuryo** (Ability Visibility) uburyo bwo gukoresha uburenganzira bwo kumenya ibyerekezo by'uburyo bw'uburyo (abilities) byo kubyara ku ntego zikoreshwa. Ibi bituma abanyamwuga (administrators) guhindura uburyo uburyo bwo kubyara ku ntego zikoreshwa mu gihe cyo gukoresha REST API, MCP servers, WooCommerce integrations, no ibindi byerekezo by'ibindi.
 
-## Uburyo Ubwumuryo ni iki?
+## Uburyo Ubwumuryo ni iki? {#what-is-ability-visibility}
 
 Uburyo Ubwumuryo ni uburyo bwo gukora uburenganzira (permission system) bwo kumenya:
 
@@ -18,9 +18,9 @@ Uburyo Ubwumuryo ni uburyo bwo gukora uburenganzira (permission system) bwo kume
 
 Kubwo byo bya ubwumva, byishobora gukoresha mu gihe cyo gukoresha ibindi.
 
-## Ibyerekezo By'Uburyo Ubwumuryo (Visibility Levels)
+## Ibyerekezo By'Uburyo Ubwumuryo (Visibility Levels) {#visibility-levels}
 
-### Public (Icyo Cyose)
+### Public (Icyo Cyose) {#public}
 
 **Ibyerekezo by'uburyo bw'uburyo (Public abilities)** byishobora gukoreshwa mu gihe cyose:
 
@@ -32,7 +32,7 @@ Kubwo byo bya ubwumva, byishobora gukoresha mu gihe cyo gukoresha ibindi.
 
 Urugero: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Bwa Bakoresha Muho)
+### Internal (Bwa Bakoresha Muho) {#internal}
 
 **Ibyerekezo by'uburyo bw'uburyo (Internal abilities)** byishobora gukoreshwa mu gihe cyo gukoresha WordPress yawe gusa:
 
@@ -43,7 +43,7 @@ Urugero: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Urugero: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Bwa Partner)
+### Partner (Bwa Partner) {#partner}
 
 **Ibyerekezo by'uburyo bw'uburyo bwa partner (Partner abilities)** byishobora gukoreshwa ku batereye bafite ubwumva (whitelisted partners) gusa:
 
@@ -53,7 +53,7 @@ Urugero: `manage-settings`, `view-analytics`, `export-data`
 
 Urugero: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Bwiboneka)
+### Disabled (Bwiboneka) {#disabled}
 
 **Ibyerekezo by'uburyo bw'uburyo bwa bwarashyirwe (Disabled abilities)** byishobora gukoreshwa mu gihe cyose:
 
@@ -64,15 +64,15 @@ Urugero: `bulk-import-users`, `modify-billing`, `access-analytics`
 
 
 
-## Gukoresha Ubwumuryo W'Ubwumva
+## Gukoresha Ubwumuryo W'Ubwumva {#managing-ability-visibility}
 
-### Gutangira Ubwumuryo W'Ubwumva (Accessing Ability Visibility Settings)
+### Gutangira Ubwumuryo W'Ubwumva (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. Tunda ku **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Clickye tab ya **Abilities**
 3. Uza kubona list yose y'ability zizikoreshwa n'ubwumuryo bwo kuvuga (visibility levels)
 
-### Gukoresha Ubwumva Bwo Ability (Viewing Ability Details)
+### Gukoresha Ubwumva Bwo Ability (Viewing Ability Details) {#viewing-ability-details}
 
 Clickye ku ability runa kugira ngo ubonde:
 
@@ -83,7 +83,7 @@ Clickye ku ability runa kugira ngo ubonde:
 - **Last updated**: Icyo gihe ubwumuryo bwagize uburyo bwo guhindurwa
 - **Status**: Yabonewe cyangwa Yaboneje
 
-### Guhindura Ubwumuryo Bwo Kuvuga (Changing Visibility Levels)
+### Guhindura Ubwumuryo Bwo Kuvuga (Changing Visibility Levels) {#changing-visibility-levels}
 
 Kugira ngo uhindure ubwumuryo bwo kuvuga bwo ability:
 
@@ -101,7 +101,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Uburyo Bwo Gukora Icyemezo (Bulk Operations)
+### Uburyo Bwo Gukora Icyemezo (Bulk Operations) {#bulk-operations}
 
 Kugira ngo uhindure ubwumuryo bwo kuvuga bwo ability nyamukuru:
 
@@ -109,11 +109,11 @@ Kugira ngo uhindure ubwumuryo bwo kuvuga bwo ability nyamukuru:
 2. Selecta ubwumuryo bukwirwa mu dropdown ya bulk action
 3. Clickye **Apply**
 
-## Allow-List Y'Abanyamwuga (Partner Allow-List)
+## Allow-List Y'Abanyamwuga (Partner Allow-List) {#partner-allow-list}
 
 I **partner allow-list** igira urugero bwo gukemura abanyamwuga bashobora gukoresha ubwumuryo bwo Partner.
 
-### Gufasha Abanyamwuga (Adding Partners)
+### Gufasha Abanyamwuga (Adding Partners) {#adding-partners}
 
 1. Tunda ku **Superdav AI Agent** → **Settings** → **Partners**
 2. Clickye **Add Partner**
@@ -121,7 +121,7 @@ I **partner allow-list** igira urugero bwo gukemura abanyamwuga bashobora gukore
 4. Urugero, ushije cyemezo y'abanyamwuga n'uburyo bwo kubyitwa
 5. Clickye **Save**
 
-### Gukoresha Ability ku Banyamwuga (Assigning Abilities to Partners)
+### Gukoresha Ability ku Banyamwuga (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 Nyuma yo gufasha partner:
 
@@ -131,7 +131,7 @@ Nyuma yo gufasha partner:
 4. Mu igice cy'Partner allow-list', shaka ubwoko bw'box ku byo mu batabugenge bwo partner wumva umusobanuro (access)
 5. Gukora click **Save**
 
-### Guhagarika Uburyo Bwa Partner
+### Guhagarika Uburyo Bwa Partner {#revoking-partner-access}
 
 Kugera ku gukoresha uburyo bwa partner:
 
@@ -141,11 +141,11 @@ Kugera ku gukoresha uburyo bwa partner:
 
 Ubutabugenge bwa partner uzagira umusobanuro w'uburyo bwa partner bw'umva umusobanuro (access) mu gihe cy'ibyo byose.
 
-## Ibyiciro Itabugenge (Unclassified Abilities)
+## Ibyiciro Itabugenge (Unclassified Abilities) {#unclassified-abilities}
 
 Icyo gishya uburyo bwa third-party ability (ability yawe) kandi Superdav AI Agent ntacyumva, kigishirwa nk'**Unclassified**.
 
-### Umusobanuro ku batabugenge bwo Ibyiciro Itabugenge
+### Umusobanuro ku batabugenge bwo Ibyiciro Itabugenge {#admin-notice-for-unclassified-abilities}
 
 Ushobora kubona umusobanuro w'admin:
 
@@ -162,7 +162,7 @@ Nshobora kugira ngo murebe kandi nshobora guhagarika.
 [Gushyira Ibyiciro] [Kugera Kuva]
 ```
 
-### Gushyira Ibyiciro Itabugenge
+### Gushyira Ibyiciro Itabugenge {#reviewing-unclassified-abilities}
 
 1. Gukora click **Review Abilities** mu umusobanuro
 2. Ku gihe cyo gishya uburyo bwa partner, ushobora kubona:
@@ -179,7 +179,7 @@ Nshobora kugira ngo murebe kandi nshobora guhagarika.
 
 4. Gukora click **Classify** kugira ngo ushye ikindi kintu cyo gukora ubwumvikane
 
-### Uburyo Bwo Gukomeza Ibyiciro Itabugenge?
+### Uburyo Bwo Gukomeza Ibyiciro Itabugenge? {#why-classify-unclassified-abilities}
 
 Gukomeza uburyo bwa partner:
 
@@ -189,9 +189,9 @@ Gukomeza uburyo bwa partner:
 
 - **Kugera umusobanuro**: Ubwoko bw'uburyo bwawe bishirwa mu gihe cyo guhagarika (audit)
 
-## Ubwumva mu Ntchito Ziri Ihariye (Visibility in Different Surfaces)
+## Ubwumva mu Ntchito Ziri Ihariye (Visibility in Different Surfaces) {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Ubufatanye bw'abantu bose** (Public abilities) bufite ubufatanye bwa REST endpoints:
 
@@ -203,7 +203,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Ubufatanye bw'abantu b'umukono n'abandi b'umwezi** (Internal and Partner abilities) bufite ubufatanye bwa REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Ubufatanye bw'abantu bose** (Public abilities) bufite ubufatanye bwa MCP:
 
@@ -219,7 +219,7 @@ Abilities zifite ubufatanye:
 
 **Ubufatanye bw'abandi b'umwezi** (Partner abilities) bufite ubufatanye gusa n'ubwoko bw'abantu b'umwezi (partner credentials).
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Ubufatanye bw'abantu bose** (Public abilities) bifite ubushobozi bukurikirana na WooCommerce:
 
@@ -229,7 +229,7 @@ Abilities zifite ubufatanye:
 
 **Ubufatanye bw'umukono n'abandi b'umwezi** (Internal abilities) bifite ubufatanye mu WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Imwe n'imwezo yose** (All abilities) zifite ubufatanye mu chat, bukurikirana n'ubwoko bw'abantu b'umuntu:
 
@@ -237,33 +237,33 @@ Abilities zifite ubufatanye:
 - Abantu b'umukono bafona imwezo yose
 - Abandi b'umwezi bifona imwezo yose (niba bafite ubufatanye)
 
-## Uburyo Bwo Gukora Icyemezo (Security Best Practices)
+## Uburyo Bwo Gukora Icyemezo (Security Best Practices) {#security-best-practices}
 
-### Ubwoko bw'Ubwoko Bwa Mwezi (Principle of Least Privilege)
+### Ubwoko bw'Ubwoko Bwa Mwezi (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Kurinda imwezo mu buryo bwo gukoresha cyane kandi kuko bishobora gukoreshwa.
 - Gukoresha ubufatanye bw'abandi b'umwezi ku byiciro byiza cyane.
 - Guhagarira imwezo yose usho nta mwezi wuri gukoresha.
 
-### Icyemezo Cy'Ubwoko (Regular Audits)
+### Icyemezo Cy'Ubwoko (Regular Audits) {#regular-audits}
 
 - Gushyira imwezo mu gihe cy'umwezi
 - Gutera ku byiciro bishobora kuba bishya
 - Guhagarira ubufatanye ku bandi bafite ubufatanye kandi batagukoreshwa.
 
-### Uburyo Bwo Gukoresha Icyemezo (Logging and Monitoring)
+### Uburyo Bwo Gukoresha Icyemezo (Logging and Monitoring) {#logging-and-monitoring}
 
 - Kurinda ibyo imwezo bifite gukoreshwa cyane
 - Gutangira ubwoko bw'abandi bafite ubufatanye
 - Guhagarira ku byiciro by'ubwoko bw'imwezo yose
 
-### Icyemezo Cy'Abantu B'umwezi (Third-Party Abilities)
+### Icyemezo Cy'Abantu B'umwezi (Third-Party Abilities) {#third-party-abilities}
 
 - Kurinda imwezo cy'abantu b'umwezi mbere y'ibyo gukoreshwa
 - Gufata ubufatanye mu buryo bw'ubwoko.
 - Guhagarira ku bufatanye bw'umukono n'abandi b'umwezi mbere y'uko byashobora gufata ubufatanye bw'abantu bose (Public).
 
-## Gukoresha
+## Gukoresha {#troubleshooting}
 
 **Uburyo bwo kubona uburyo bw'ubwujumbura mu listi**
 - Shobora kugera ko uburyo bw'ubwujumbura bugaragaza kandi kigaragaza (active)
@@ -286,7 +286,7 @@ Abilities zifite ubufatanye:
 - Shobora kugera ko wumva ko wari yashyizwe mu bikorwa
 - Shoba gushyira ngo plugin yashyize uburyo bw'ubwujumbura yari yashyizwe mu bikorwa
 
-## Gukoresha ku gice cy'Ubwuzine (Migration from Legacy Mode)
+## Gukoresha ku gice cy'Ubwuzine (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Iyo uri kubone uburyo bwo guhindura ku gihe cy'Superdav AI Agent ya mbere:
 
@@ -296,7 +296,7 @@ Iyo uri kubone uburyo bwo guhindura ku gihe cy'Superdav AI Agent ya mbere:
 
 Shobora kugera ku **Third-Party Mode Migration** kugira ngo umva ibindi by'ubwujumbura ku gukoresha API ya Native Abilities.
 
-## Icyemezo cy'Uburyo bw'Ubwuzine (Next Steps)
+## Icyemezo cy'Uburyo bw'Ubwuzine (Next Steps) {#next-steps}
 
 Nyuma yo guhindura uburyo bwo kubona uburyo bw'ubwujumbura:
 

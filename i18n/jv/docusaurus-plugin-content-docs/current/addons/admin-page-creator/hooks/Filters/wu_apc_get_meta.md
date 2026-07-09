@@ -4,11 +4,11 @@ title: Saringan - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Ngidini pangembang nyaring nilai pungkasan, lan nambah kasus pangolahan anyar.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Ngidini pangembang nyaring nilai pungkasan, lan nambah kasus pangolahan anyar.
 | $meta_type | `string` | Jinis data meta sing arep dijupuk. |
 | $meta_key | `string` | Jeneng field meta. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 1.4.0
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) ing baris 93
 
 
-## Balikan
+## Balikan {#returns}
 Nilai baku anyar.

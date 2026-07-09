@@ -4,15 +4,15 @@ title: ھەرىكەت - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# ھەرىكەت: wu_captcha_integrations_init
+# ھەرىكەت: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
 
 بارلىق integrations دەسلەپكى ھالەتكە كەلتۈرۈلگەندىن كېيىن ئىجرا بولىدۇ.
 
 ئۈچىنچى تەرەپ integrations ئۆزلىرىنى قوشۇش ئۈچۈن بۇ يەرگە hook قىلالايدۇ.
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 1.2.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/captcha-providers/class-captcha-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/captcha-providers/class-captcha-manager.php#L106) دا 106-قۇردا ئېنىقلانغان

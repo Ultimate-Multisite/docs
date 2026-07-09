@@ -3,11 +3,11 @@ title: Ыңгайлаштырылган шлюзду иштеп чыгуу
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Ыңгайлаштырылган Gateway иштеп чыгуу
+# Ыңгайлаштырылган Gateway иштеп чыгуу {#custom-gateway-development}
 
 `Base_Gateway` классын кеңейтүү аркылуу ыңгайлаштырылган төлөм gatewayлерин түзө аласыз.
 
-## Gateway классы
+## Gateway классы {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gatewayди каттоо
+## Gatewayди каттоо {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Негизги методдор
+## Негизги методдор {#key-methods}
 
 | Метод | Максаты |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Кайтарым сурамдарын иштетүү |
 | `get_payment_methods()` | Кардар үчүн сакталган төлөм ыкмаларын кайтаруу |
 
-## Кайталануучу мүчөлүктөр үчүн жаңыртуу эсептик дайындары
+## Кайталануучу мүчөлүктөр үчүн жаңыртуу эсептик дайындары {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway интеграцияларына `auto_renew` сакталганга чейин кайталануучу мүчөлүктө кайра колдонулуучу жаңыртуу эсептик дайыны бар-жогун билдирүүгө мүмкүндүк берет. `wu_membership_has_renewal_credential` hook колдонуңуз жана төмөнкүлөрдү кайтарыңыз:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Жаңы кайра колдонулуучу эсептик дайын сакталгандан кийин gatewayиңиздин ийгиликтүү кайра авторизациялоо агымынын бир бөлүгү катары жетишпеген эсептик дайын белгисин тазалаңыз.
 
-## Кеңештер
+## Кеңештер {#tips}
 
 - Ultimate Multisite ката көрсөтүүнү иштете алышы үчүн, ийгиликсиз учурда дайыма `WP_Error` кайтарыңыз
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gatewayге тиешелүү журналдоо үчүн `wu_log_add()` колдонуңуз
 
-## AI connector provider мүмкүнчүлүктөрү
+## AI connector provider мүмкүнчүлүктөрү {#ai-connector-provider-capabilities}
 
 AI connector негизиндеги операцияларды чакырган ыңгайлаштырылган интеграциялар AI Provider for Anthropic Max v1.3.0 менен киргизилген колдоого алынган OAuth provider топтомуна шайкеш болушу керек:
 

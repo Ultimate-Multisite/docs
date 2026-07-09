@@ -3,7 +3,7 @@ title: Com instal·lar WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Com instal·lar WordPress Multisite?
+# Com instal·lar WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite et permet tenir una xarxa de sites en una única instal·lació. És una funcionalitat pròpia, però no està activa per defecte.
 
@@ -61,7 +61,7 @@ I aquest codi, també proporcionat per WordPress, al teu fitxer _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Per crear un subsite:
 
 Després d'omplir els camps, fes clic al botó "Add site". Una vegada creat el nou subsite, continua i accedeix-hi per assegurar-te que el subsite funciona.
 
-## Problemes Comuns:
+## Problemes Comuns: {#common-problems}
 
-### 1. Incapacitat de crear sites nous, però no són accessibles.
+### 1. Incapacitat de crear sites nous, però no són accessibles. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Si et trigues subdominis, també has de configurar subdominis wildcard per la teva xarxa multisite.
 

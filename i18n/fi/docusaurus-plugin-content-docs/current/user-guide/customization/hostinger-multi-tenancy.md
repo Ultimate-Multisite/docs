@@ -3,13 +3,13 @@ title: Hostingerin moni-vuokrasopimus
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 lisää Hostingerin multi-tenancy -ominaisuuden, jolloin isännöidyt nimet voivat osallistua itsemääräiseen vuokralaisproviisioon olemassa olevan Hostinger domain-mapping -integraation rinnalla.
 
 Käytä tätä ominaisuutta, kun vuokralaisnimet ja eristetty vuokralaisinfrastruktuuri hallitaan Hostinger hPanelin kautta.
 
-## Asetushuomautukset
+## Asetushuomautukset {#setup-notes}
 
 1. Konfiguroi perus-Hostinger-integraatio **Ultimate Multisite > Settings > Host Integrations** -osiossa.
 2. Varmista, että Hostinger API-token pystyy hallitsemaan kohdattavaa nimeä tai alalohkoa.
@@ -19,14 +19,14 @@ Käytä tätä ominaisuutta, kun vuokralaisnimet ja eristetty vuokralaisinfrastr
 
 Hostinger-ominaisuus käyttää yhteistä Hostinger-yhteyttä isäntäpuolisille operaatioille. DNS:n on silti osoitettava oikeaan Hostinger-tilaukseen, ja hPanelin tilikaasut soveltuvat edelleen.
 
-## Ominaisuuteen liittyvät muutokset
+## Ominaisuuteen liittyvät muutokset {#capability-specific-changes}
 
 - Itsemääräisiä vuokralaisia voidaan luoda isäntää tietoisia domain-operaatioilla.
 - Samalla koneella olevat tietokantoyhteyden merkit normalisoidaan ennen vahvistusta.
 - Hostingerin hallitsemat vuokralaiset tulisi käyttää hPanelissa näkyvää tietokannan isännän arvoa, ellei WordPressin ajonympäristö vaadi paikallista ylivoimaa.
 - SSO-vierailut perustuvat siihen, että vuokralaisen nimi ratkaisee Hostingerissa isännöidyn vuokralaisen.
 
-## Hostinger-vuokralaisien vianmääritys
+## Hostinger-vuokralaisien vianmääritys {#troubleshooting-hostinger-tenants}
 
 - Jos vuokralaisen asennus epäonnistuu, varmista, että nimi on jo liitetty Hostinger-tilaukseen.
 - Jos tietokannan vahvistus epäonnistuu, vertaa vuokralaisen DB-käyttäjää, tietokannan nimeä ja isäntän sitoutumista hPanelin kanssa.

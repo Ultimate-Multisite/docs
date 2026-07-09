@@ -3,7 +3,7 @@ title: Domain Seller Changelog
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller-wijzigingslog
+# Domain Seller-wijzigingslog {#domain-seller-changelog}
 
 Versie 1.3.0 - Uitgebracht op 2026-06-02
 - Nieuw: Een waarschuwing voor de netwerkbeheerder toegevoegd wanneer het HostAfrica reseller-saldo te laag wordt
@@ -136,20 +136,20 @@ Versie 1.0.0 - Uitgebracht op 2025-09-28
 * **Opgelost:** Alle verouderde v1-code bijgewerkt naar v2-standaarden
 * **Verwijderd:** Legacy v1-compatibiliteit (breaking change)
 
-### Vorige versies (v1 Legacy)
+### Vorige versies (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Versie 0.0.3 - 20/08/2019
+### Versie 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Opgelost: Incompatibiliteit met Groundhogg CRM
 * Opmerking: Dit was de laatste v1-compatibele release
 
-### Versie 0.0.2 - 07/12/2018
+### Versie 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Opgelost: Het License Key-veld verwijderd
 * Opgelost: Plan-tabs ontbreken wanneer de feature plugin actief is
 * Verbeterd: Een overslaanknop toegevoegd aan het registratieveld
 
-### Versie 0.0.1 - Eerste release
+### Versie 0.0.1 - Eerste release {#version-001---initial-release}
 
 * Basis OpenSRS-integratie voor WP Ultimo v1
 * Eenvoudige domeinzoekopdracht en registratie

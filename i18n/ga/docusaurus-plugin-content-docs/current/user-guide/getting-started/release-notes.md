@@ -3,9 +3,9 @@ title: Note a chreachtais
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Note de Sláinte
+# Note de Sláinte {#release-notes}
 
-## Versi 2.13.0 — Déanach ar 5-láin 5-míneamh 2026
+## Versi 2.13.0 — Déanach ar 5-láin 5-míneamh 2026 {#version-2130--released-on-2026-06-05}
 
 New: Added support do tenant networks iarr na chuiditeachanna (sovereign-tenant) chun contaíocht oileán, checkout, billing, site, invoice, switch de template agus mapping domáin, mar a bhfaidh teachtnaí uileán a chur ar fáil do chuidisteachtáil chuidisteachtanna go dtí an sinte.
 New: Added chreideachanna nua chun chreideachanna uileán (renewal-credential checks) chun gabháilí (gateways) a bheith ag teachtnaí auto-renewal a laighneadh nuair níl aon chuidisteachtail billing, subscription, nó vault token caillte.
@@ -19,7 +19,7 @@ Fix: Tá email broadcasta níos pearsanta ar fáil anois chun chomhcheangailte (
 Fix: Tá chreideachanna uileán, féachaint ar fholgadh (expiration display), agus edge cases do gabháilte cothrom ag cur isteach anois chun teachtnaí a laighneadh a bheith ag teachtnaí níl aon chuidisteachtail, crasha, nó teachtnaí caillte.
 Improved: Tá WordPress compatibility ar fáil go dtí 7.0 a shonraithe, tá asset production Vue ag cur isteach ó npm sources, agus tá Cypress end-to-end coverage ag cur isteach níos mó de checkout, setup, SSO, agus gateway flows.
 
-## Versiún 2.12.0 — Leasaithe ar 2026-05-15
+## Versiún 2.12.0 — Leasaithe ar 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - New: Added Hostinger (hPanel) as a host provider a bheith ag cur áit le mapeadh domáin.
 - New: Tá an Site Exporter ag cur isteach bundle import siopa neteacha chun siopa a chur ar ais go léir le fáil ar an ngrób.
@@ -31,7 +31,7 @@ Improved: Tá WordPress compatibility ar fáil go dtí 7.0 a shonraithe, tá ass
 - Fix: Tá an Site Exporter CLI ag cur áit an t-aonach de neteacha a bhfhéidir go léir.
 - Improved: Déanann an wp-cli bundle a bhaint as an cur chuig an plugin, chun cur isteach an cothrom plugin a chruthú.
 
-## Versiún 2.11.0 — Leasaithe ar 2026-05-11
+## Versiún 2.11.0 — Leasaithe ar 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - New: Tá na Site exports ag cur isteach `index.php` a bhíonn ag cur áit le fáil, chun an ZIP a chur ar ais ar chuid host nua gan cur plugin a chur arais go héifeachtach.
 - New: Déanann an export neteacha a bheith ag cur isteach na sinteacha ar chuid archive amach de chuid admin site export.
@@ -39,7 +39,7 @@ Improved: Tá WordPress compatibility ar fáil go dtí 7.0 a shonraithe, tá ass
 - New: Tá an editor form checkout ag cur isteach nuair a bhíonn siopa ag cur áit gan cur chuid feidhm ag cur áit.
 - New: Déanann an tab Cailte/Cur áit (Import/Export settings) a bheith ag cur áit ar chuid scáileán agus a bheith ag cur cur chuig díreach ar an Site Export tool.
 
-## Versiún 2.10.0 — Leasaithe ar 2026-05-05
+## Versiún 2.10.0 — Leasaithe ar 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - New: Wizard set-up PayPal leathanach ar chuid cúrama le curteacha manual le flag OAuth chun curteacha gateway a bheith go léir.
 - New: Déanadh an panel cúrama le template a réimse ar chuid card current-template, grid persistent, agus nút **Reset current template**.
@@ -52,7 +52,7 @@ Improved: Tá WordPress compatibility ar fáil go dtí 7.0 a shonraithe, tá ass
 - Fix: Tá an stiú SSO (SSO path) a chosaint ar chuid curteacha login a bheith go léir.
 - Fix: Tá na optiona site identity ag curtha ar fáil ar chuid athbhreithniú leathanach ar bhealach a bhaint am chun curtha ar fáil.
 
-## Version 2.9.0 — Leasaithe ar 2026-04-30
+## Version 2.9.0 — Leasaithe ar 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - New: Tá export agus import single-site ag curteacha ag curtha ar fáil oir **Tools > Export & Import**.
 - Fix: Tá ZIP files export ag curteacha a bheith ag curteacha leathanach ar chuid endpoint download a chosaint.
@@ -66,7 +66,7 @@ Improved: Tá WordPress compatibility ar fáil go dtí 7.0 a shonraithe, tá ass
 - Fix: Tá Tour IDs ábhairt (normalised) go underscores i gcurteacha user settings keys.
 - Improved: Tá ZipArchive ag curteacha a bheith ag curtha ar fáil anois ag Alchemy/Zippy chun curteacha a bheith go léir.
 
-## Version 2.8.0 — Leasaithe ar 2026-04-29
+## Version 2.8.0 — Leasaithe ar 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - New: Enable Jumper toggle added to Other Options settings UI.
 - New: Status column added to the checkout forms list table.

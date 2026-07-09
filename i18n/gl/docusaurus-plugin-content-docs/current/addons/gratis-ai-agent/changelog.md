@@ -3,11 +3,11 @@ title: Rexistro de cambios
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Rexistro de cambios
+# Rexistro de cambios {#changelog}
 
-## 1.9.0 — Publicado o 2026-04-28
+## 1.9.0 — Publicado o 2026-04-28 {#190--released-on-2026-04-28}
 
-### Novo
+### Novo {#new}
 
 - **habilidade `create_contact_form`** — crea un formulario de contacto usando o plugin de formularios activo (Contact Form 7, WPForms, Fluent Forms ou Gravity Forms) e devolve un shortcode listo para inserir en calquera entrada ou páxina.
 - **habilidade `set_featured_image`** — asigna unha imaxe destacada a unha entrada ou páxina desde un ID de anexo existente da biblioteca multimedia ou desde un URL remoto; importa automaticamente a imaxe cando se proporciona un URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurar a última sesión** — o panel de chat agora recarga automaticamente a conversa máis recente ao cargar a páxina e ao abrir o widget, polo que o contexto nunca se perde ao navegar entre páxinas.
 - **Ligazóns de acción do plugin** — as ligazóns rápidas a Axustes e ao Rexistro de habilidades agora aparecen na pantalla **Plugins → Plugins instalados** de WordPress baixo a descrición do plugin.
 
-### Mellorado
+### Mellorado {#improved}
 
 - **Reintento de orixe de imaxes** — o axente agora volve intentar todas as fontes gratuítas de imaxes configuradas antes de recorrer a unha imaxe xerada por IA cando falla a descarga.
 - **Panel de información do modelo** — sempre visible na cabeceira do chat; xa non queda oculto despois da primeira mensaxe.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Redeseño do widget de chat** — unha icona de IA unificada substitúe o avatar personalizado anterior; é coherente co sistema de axentes integrados.
 - **Conversión de URL en ligazóns** — os URL que aparecen en mensaxes do sistema e burbullas de mensaxes de erro agora represéntanse como ligazóns clicables.
 
-### Corrixido
+### Corrixido {#fixed}
 
 - **Descubribilidade das habilidades** — corrixíronse descricións, referencias do prompt do sistema e aliñamento do espazo de nomes para que todas as habilidades aparezan de forma fiable na lista de ferramentas do axente.
 - **Caché de provedores** — os provedores agora almacénanse na caché en todo o sitio mediante un contador de versión, evitando problemas de provedores obsoletos en redes multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Publicado o 2026-04-09
+## 1.4.0 — Publicado o 2026-04-09 {#140--released-on-2026-04-09}
 
-### Novo
+### Novo {#new-1}
 
 - **Comando de benchmark de WP-CLI** (`wp gratis-ai-agent benchmark`) — executa a suite de benchmark Agent Capabilities v1 desde a liña de comandos para pipelines de CI e fluxos de traballo de avaliación de modelos. Admite execucións por pregunta, substitucións de provedor/modelo e saída JSON/CSV.
 - **Suite de benchmark Agent Capabilities v1** — un conxunto estruturado de prompts complexos de varios pasos que exercitan toda a superficie de capacidades, con puntuación e informes de tokens/duración.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pregunta de benchmark de sitio web de restaurante** (`q-restaurant-website`) — proba de extremo a extremo que cobre o rexistro de CPT, o sistema de deseño, a navegación e o descubrimento de plugins.
 - **Plugins conectores de provedores de AI** engadidos aos blueprints de WordPress Playground para unha configuración de desenvolvemento local máis rápida.
 
-### Mellorado
+### Mellorado {#improved-1}
 
 - README actualizado coa documentación dos conectores de provedores de AI e instrucións de configuración.
 
-### Corrixido
+### Corrixido {#fixed-1}
 
 - Resoltas 25 fallas de probas PHPUnit na rama `main`.
 - Corrixido o formato do URL de lanzamentos de GitHub en `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _As notas de versión anteriores mantéñense no repositorio do plugin._

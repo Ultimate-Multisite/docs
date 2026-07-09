@@ -4,11 +4,11 @@ title: 'Дејство - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 Се активира откако објект ќе се зачува во базата на податоци.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Опис |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 | $this | `\Base_Model` | Инстанцата на објектот. |
 | $new | `bool` | True ако објектот е нов. |
 
-### Од верзија
+### Од верзија {#since}
 
 - 2.0.0
-### Извор
+### Извор {#source}
 
 - Дефинирано во [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) на линија 624
 - Дефинирано во [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) на линија 1754

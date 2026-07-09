@@ -3,11 +3,11 @@ title: Peev xwm tswj hwm Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Cov Peev Xwm Tswj Plugin
+# Cov Peev Xwm Tswj Plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 los nrog **7 qhov peev xwm tswj plugin** uas tus pab AI siv tau thaum sib tham. Cov peev xwm no muab kev tswj WordPress plugins uas tau nruab los ntawm [Qhov System Tsim Plugin & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox) raws li programmatic.
 
-## Saib Tag Nrho Cov Peev Xwm
+## Saib Tag Nrho Cov Peev Xwm {#abilities-overview}
 
 | Peev Xwm | Slug | Kev Piav Qhia |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 los nrog **7 qhov peev xwm tswj plugin** uas tus pab AI s
 | Nruab Plugin | `install_plugin` | Deploy ib qho sandboxed plugin mus rau live WordPress plugin directory. |
 | Activate Plugin | `activate_plugin` | Activate ib qho sandboxed plugin hauv wp-env sandbox environment. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Tus plugin installer tswj cov haujlwm file system thaum deploy lossis tshem plugins. Cov cwj pwm tseem ceeb:
 
@@ -28,7 +28,7 @@ Tus plugin installer tswj cov haujlwm file system thaum deploy lossis tshem plug
 - **Hloov kho**: Hloov cov plugin files uas twb muaj lawm. Deactivate plugin ua ntej sau kom zam kev yuam kev partial-state.
 - **Rho tawm raws slug**: Nrhiav plugin directory raws slug, deactivate hla txhua lub sites, ces tshem directory ntawd.
 
-### Sau Npe Custom Install Handler
+### Sau Npe Custom Install Handler {#registering-a-custom-install-handler}
 
 Koj tuaj yeem hook rau hauv install lifecycle siv cov actions `gratis_ai_plugin_installer_before_install` thiab `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 Cov peev xwm raug sau npe los ntawm **plugin ecosystem registry**. Lub registry map ability slugs mus rau lawv cov handler classes thiab nthuav lawv rau AI agent lub tool dispatcher.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Cov peev xwm `create_plugin` thiab `update_plugin` khiav **HookScanner** rau code uas nyuam qhuav tsim tawm. HookScanner xa rov qab daim ntawv teev WordPress action thiab filter hooks uas plugin tau register.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner hla `vendor/` thiab `node_modules/` directories yam automatic.
 
-## Async Job Architecture
+## Async Job Architecture {#async-job-architecture}
 
 Cov haujlwm plugin uas siv sijhawm ntev (generate, install) raug dispatch ua **async jobs** nrog kev taug qab progress live. AI chat interface poll kom tau progress thiab stream status updates rau tus neeg siv:
 

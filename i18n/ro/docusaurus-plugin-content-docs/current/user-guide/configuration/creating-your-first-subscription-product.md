@@ -3,13 +3,13 @@ title: Crearea primului tău produs cu abonament
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Crearea primului tău produs cu abonament (v2)
+# Crearea primului tău produs cu abonament (v2) {#creating-your-first-subscription-product-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol este doar pentru utilizatorii Ultimate Multisite versiunea 2.x. Dacă folosești versiunea 1.x,**_ **_**consultă acest articol**_**.
 
 Pentru a începe să îți rulezi rețeaua și să începi să îți vinzi serviciile utilizatorilor potențiali, trebuie să ai diferite opțiuni de abonament. Cum creezi aceste produse? Care sunt tipurile de produse pe care le poți oferi? În acest articol, vom acoperi tot ce trebuie să știi despre produse.
 
-## Tip de produs
+## Tip de produs {#product-type}
 
 Cu Ultimate Multisite poți oferi două categorii de produse clienților tăi: **planuri** și **suplimente** **(ofertă suplimentară la comandă)**. Suplimentele pot fi împărțite în două tipuri:**pachete** și **servicii**. Vom vedea în continuare diferențele și particularitățile lor.
 
@@ -19,7 +19,7 @@ Cu Ultimate Multisite poți oferi două categorii de produse clienților tăi: *
 
   * **Servicii:** suplimente care nu modifică funcționalitățile Ultimate Multisite. Acestea sunt sarcini pe care le vei realiza pentru clientul tău în plus față de planul pe care l-a cumpărat. De exemplu, clientul tău ar putea cumpăra un plan care permite un singur site și să plătească și pentru un serviciu suplimentar care va realiza designul acestui site.
 
-## Gestionarea produselor
+## Gestionarea produselor {#managing-products}
 
 Pentru mulți, fila **Produse** din Ultimate Multisite **(Ultimate Multisite > Produse)** poate fi echivalată cu planurile dintr-un mediu tradițional de găzduire.
 
@@ -29,7 +29,7 @@ Această secțiune îți va ghida înțelegerea acestei pietre de temelie esenț
 
 ![Pagina listei de produse](/img/config/products-list.png)
 
-## Adăugarea produselor
+## Adăugarea produselor {#adding-products}
 
 Fie că este vorba despre un plan, pachet sau serviciu, punctul de intrare pentru definirea unui element nou este prin **Ultimate Multisite > Produse > Adaugă produs**.
 
@@ -39,13 +39,13 @@ Interfața conține două secțiuni predominante. În stânga sunt mai multe fil
 
 ![Prezentare generală a paginii de editare a produsului](/img/config/product-edit-full.png)
 
-### Descriere
+### Descriere {#description}
 
 Informațiile de bază ale produsului pot fi definite prin furnizarea unui nume și a unei descrieri pentru produs. Acești identificatori sunt afișați oriunde sunt necesare informațiile despre produs, cum ar fi selecția planului și a prețurilor, facturi, upgrade-uri și altele asemenea.
 
 ![Secțiunea de descriere a produsului](/img/config/product-description.png)
 
-### Tip de preț
+### Tip de preț {#pricing-type}
 
 În partea dreaptă a interfeței, prețul de bază poate fi definit.
 
@@ -53,7 +53,7 @@ Informațiile de bază ale produsului pot fi definite prin furnizarea unui nume 
 
 Ultimate Multisite acceptă trei tipuri diferite de prețuri. Opțiunea **plătit** solicită administratorului rețelei informații privind prețul produsului și frecvența de facturare.
 
-### Preț
+### Preț {#pricing}
 
 Componenta de preț definește prețul de bază al produsului și intervalul de facturare.
 
@@ -61,7 +61,7 @@ Componenta de preț definește prețul de bază al produsului și intervalul de 
 
 astfel, un exemplu de preț de $29.99 cu o setare de 1 lună va factura $29.99 în fiecare lună. În mod similar, un preț de $89.97 cu o setare de 3 luni va factura acea sumă în fiecare trimestru.
 
-### Cicluri de facturare
+### Cicluri de facturare {#billing-cycles}
 
 Secțiunea ciclurilor de facturare specifică frecvența intervalului de facturare menționat anterior și este în general înțeleasă în contextul contractelor sau al termenelor fixe.
 
@@ -69,7 +69,7 @@ Secțiunea ciclurilor de facturare specifică frecvența intervalului de factura
 
 De exemplu, un preț al produsului de $29.99 cu un interval de 1 lună și 12 cicluri de facturare ar factura $29.99 pe lună pentru produs pe parcursul următoarelor 12 luni. Cu alte cuvinte, o astfel de setare ar stabili un termen cu preț fix de $29.99 pe lună timp de 12 luni și apoi ar opri facturarea.
 
-### Perioadă de probă
+### Perioadă de probă {#trial-period}
 
 Activarea comutatorului pentru oferta de probă permite administratorului rețelei să definească o perioadă de probă pentru produs.
 
@@ -77,7 +77,7 @@ Activarea comutatorului pentru oferta de probă permite administratorului rețel
 
 În timpul perioadei de probă, clienții pot folosi gratuit produsul și nu vor fi facturați până când perioada de probă nu se încheie.
 
-### Taxă de configurare
+### Taxă de configurare {#setup-fee}
 
 Poți aplica și o taxă de configurare planului tău.
 
@@ -85,7 +85,7 @@ Poți aplica și o taxă de configurare planului tău.
 
 Aceasta înseamnă că clientul tău va plăti o sumă suplimentară la prima taxare (în plus față de prețul planului) care corespunde taxei pe care ai definit-o în această secțiune.
 
-### Activ
+### Activ {#active}
 
 Comutatorul activ definește efectiv dacă produsul este disponibil clienților pentru înscrieri noi.
 
@@ -93,13 +93,13 @@ Comutatorul activ definește efectiv dacă produsul este disponibil clienților 
 
 Dacă există clienți existenți pe acest plan, setarea comutatorului în starea dezactivată menține efectiv planul pentru clienții existenți, eliminându-l din înscrierile viitoare. **Clienții existenți pe plan vor continua să fie facturați** până când sunt mutați la un plan nou sau eliminați din plan.
 
-### Imaginea produsului
+### Imaginea produsului {#product-image}
 
 Butonul **Încarcă imagine** permite administratorului rețelei să folosească biblioteca media pentru a selecta sau încărca o imagine a produsului.
 
 ![Secțiunea imaginii produsului](/img/config/product-image.png)
 
-### Ștergere
+### Ștergere {#delete}
 
 Butonul **Șterge produsul** șterge produsul din sistem. Apare după ce produsul este publicat.
 
@@ -107,11 +107,11 @@ Butonul **Șterge produsul** șterge produsul din sistem. Apare după ce produsu
 
 Spre deosebire de alte ștergeri, produsul nu este plasat în nicio stare de coș de gunoi. Astfel, odată șters, acțiunea este ireversibilă.
 
-### Opțiuni produs
+### Opțiuni produs {#product-options}
 
 Odată ce informațiile de bază despre produs sunt definite, opțiunile produsului ajută administratorul rețelei să definească mai departe atributele specifice ale produsului.
 
-#### General
+#### General {#general}
 
 Fila **General** definește atributele generale ale produsului care nu se aplică niciuneia dintre celelalte file specifice produsului.
 
@@ -125,7 +125,7 @@ Ultimate Multisite acceptă mai multe tipuri de produse, și anume plan, pachet 
 
 ![Setările rolului clientului](/img/config/product-customer-role-settings.png)
 
-#### Upgrade-uri și downgrade-uri
+#### Upgrade-uri și downgrade-uri {#up--downgrades}
 
 Această filă specifică traseele de upgrade și downgrade disponibile unui client în cadrul nivelului său specific.
 
@@ -143,7 +143,7 @@ Pentru a defini un grup de planuri, specificați planurile compatibile în lista
 
 Ultimate Multisite include și o funcționalitate **order bump**, prin care produse și servicii suplimentare adecvate pot fi adăugate la planuri. Acestea sunt oferite clientului ca elemente suplimentare care pot fi adăugate la planuri la checkout sau în timpul unui upgrade.
 
-#### Variații de preț
+#### Variații de preț {#price-variations}
 
 Variațiile de preț permit administratorului rețelei să specifice niveluri alternative de preț în funcție de durată. Această setare face posibilă oferirea pentru același produs a unei perioade de facturare lunare, trimestriale, anuale sau de orice alt tip. De exemplu, puteți configura un produs la 29,99 USD/lună cu o opțiune anuală redusă la 249,99 USD/an.
 
@@ -165,7 +165,7 @@ De exemplu, dacă prețul produsului de bază este 29,99 USD pe lună, ați pute
 Variațiile de preț singure nu adaugă un comutator sau un switch la checkout-ul de pe frontend. Pentru a le permite clienților să comute între perioadele de facturare (de ex. lunar / anual), trebuie să adăugați un câmp **Selectarea perioadei** în formularul de checkout. Consultați [Formulare de checkout: adăugarea unui comutator pentru selectarea perioadei](checkout-forms#adding-a-period-selection-toggle) pentru instrucțiuni pas cu pas.
 :::
 
-#### Taxe
+#### Taxe {#taxes}
 
 Fila **Taxe** se aliniază cu setările de taxe specificate în **Ultimate Multisite > Setări > Taxe** și, mai exact, cu cotele de taxă definite. Pentru a activa taxele și a defini cotele de taxă aplicabile, consultați documentația de la **Ultimate Multisite: Setări**
 
@@ -179,7 +179,7 @@ Odată ce cota de taxă este definită în **Ultimate Multisite > Setări > Gest
 
 Pentru a indica faptul că un produs este un articol taxabil, setați comutatorul **Este taxabil** la activ și selectați cota de taxă aplicabilă din meniul dropdown Categorie de taxă.
 
-#### Șabloane de site
+#### Șabloane de site {#site-templates}
 
 În esență, șabloanele de site sunt site-uri web WordPress complete, care sunt clonate pe site-ul unui client la începutul abonamentului său.
 
@@ -201,7 +201,7 @@ Specificarea **A** **ssign Site Template** forțează selectarea șablonului spe
 
 În final, dacă administratorul rețelei dorește ca selectarea șablonului să aibă loc în pașii de checkout, setarea „ _default_ ” va fi suficientă. Alternativ, pentru a elimina și bloca selectarea șablonului și a delega selecția către setările planului, opțiunile „ _assign new template_ ” sau „ _choose available site templates_ ” pot fi de dorit.
 
-#### Site-uri
+#### Site-uri {#sites}
 
 Fila **Site-uri** face parte din funcționalitatea de limitări a Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Această setare specifică numărul maxim de site-uri pe care un client le poate
 
 Pentru a activa limitarea, setați comutatorul **limitează site-urile** în starea activă și specificați numărul maxim de site-uri în câmpul **alocare site-uri**.
 
-#### Vizite
+#### Vizite {#visits}
 
 Fila **Vizite** este o parte suplimentară a sistemului de limitări Ultimate Multisite. Această setare permite contabilizarea și limitarea ulterioară a vizitatorilor unici pe site-ul unui client.
 
@@ -223,7 +223,7 @@ Pentru a utiliza această funcționalitate, setați comutatorul **limitează viz
 
 Odată ce această limită este atinsă, Ultimate Multisite va înceta să servească site-ul clientului, în loc să afișeze un mesaj care indică faptul că limitele au fost depășite.
 
-#### Utilizatori
+#### Utilizatori {#users}
 
 Limitările „Utilizatori” ale Ultimate Multisite permit administratorului rețelei să impună limite asupra numărului de utilizatori care pot fi creați și atribuiți rolurilor.
 
@@ -233,7 +233,7 @@ Pentru a activa funcționalitatea de limitări, setați comutatorul **limitează
 
 Apoi, pentru fiecare rol care trebuie limitat, setați comutatorul de lângă acesta în starea activă și definiți limita maximă superioară în câmpul corespunzător.
 
-#### Tipuri de articole
+#### Tipuri de articole {#post-types}
 
 Fila **Tipuri de articole** permite administratorului rețelei să impună limite granulare asupra gamei extinse de tipuri de articole din WordPress.
 
@@ -245,7 +245,7 @@ Pentru a activa acest subsistem de limite, setați comutatorul **limitează tipu
 
 Apoi, pentru fiecare tip de articol care trebuie limitat, activați-l glisându-l spre dreapta și specificând limita maximă superioară în câmpul corespunzător.
 
-#### Spațiu pe disc
+#### Spațiu pe disc {#disk-space}
 
 Fila **Spațiu pe disc** permite administratorilor rețelei să restricționeze spațiul consumat de clienți.
 
@@ -257,13 +257,13 @@ Pentru a activa limitarea utilizării discului, setați comutatorul **limitează
 
 Apoi, specificați limita maximă superioară în megabytes în câmpul **alocare spațiu pe disc**.
 
-#### Domeniu personalizat
+#### Domeniu personalizat {#custom-domain}
 
 Prin activarea acestei opțiuni, puteți permite domenii personalizate în mod specific pentru acest plan.
 
 ![Fila Domenii personalizate](/img/config/product-custom-domains.png)
 
-#### Teme
+#### Teme {#themes}
 
 Fila **Teme** din opțiunile produsului permite administratorului rețelei să pună teme la dispoziția clienților pentru selectare și să forțeze opțional starea temei.
 
@@ -281,7 +281,7 @@ Selectarea **comportamentului** permite administratorului rețelei să defineasc
 
 În starea **A** **vailable**, tema este pusă la dispoziția clientului pentru autoactivare. În schimb, starea **Not Available** elimină pentru client posibilitatea de a activa tema. În cele din urmă, opțiunea **Force Activate** forțează selectarea și activarea temei, setând-o astfel ca implicită la crearea site-ului.
 
-#### Plugin-uri
+#### Plugin-uri {#plugins}
 
 Similar filei Teme, Ultimate Multisite permite administratorului rețelei să definească vizibilitatea plugin-urilor pentru clienți, precum și starea acestora la crearea unui site nou.
 
@@ -301,7 +301,7 @@ Setarea **Force Activate & Lock** funcționează similar, dar împiedică modifi
 
 Administratorul de rețea poate dori să ia în considerare setările Force Activate & Lock și Force Inactivate & Lock împreună cu șabloanele de site, deoarece pluginurile și stările pluginurilor din șabloane pot fi afectate de aceste setări dacă sunt selectate.
 
-#### Resetarea limitărilor
+#### Resetarea limitărilor {#reset-limitations}
 
 Fila **Reset Limitations** resetează toate limitele personalizate definite pentru produs. Pentru a reseta limitările, fă clic pe butonul **reset limitations**.
 
@@ -311,7 +311,7 @@ Pentru a confirma acțiunea, glisează comutatorul **confirm reset** în starea 
 
 ![Fila Resetarea limitărilor](/img/config/product-reset-limitations.png)
 
-## Editează, duplică sau șterge produsul
+## Editează, duplică sau șterge produsul {#edit-duplicate-or-delete-product}
 
 Produsele existente pot fi editate, duplicate sau șterse navigând la **Ultimate Multisite > Products** și trecând cursorul peste numele produsului existent.
 

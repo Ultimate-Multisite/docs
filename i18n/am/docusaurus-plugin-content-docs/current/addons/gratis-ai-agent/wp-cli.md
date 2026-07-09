@@ -3,11 +3,11 @@ title: WP-CLI ማጣቀሻ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ማጣቀሻ
+# WP-CLI ማጣቀሻ {#wp-cli-reference}
 
 Gratis AI Agent የኤጀንቱን ለማጥኛ (benchmarking)፣ ችሎታዎችን ለማስተዳደር እና የኤጀንቱን ሁኔታ ከኮማንድ መስመር (command line) ላይ ለመጠየቅ `wp gratis-ai-agent` የኮማንድ ቤተሰብን ያቀርባል። ሁሉም የኮማንድዎች ስብስብ WP-CLI 2.0 ወይም ከዚያ በላይ ያስፈልጋል።
 
-## መጫን (Installation)
+## መጫን (Installation) {#installation}
 
 የWP-CLI የኮማንዶች ስብስብ የፕልጊኑ ስራ ሲጀመር በራስ-ሰር ይመዘገባል። ለማረጋገጥ የሚከተለውን ይጠቀሙ፦
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 የኤጀንት ችሎታዎች የሙከራ ስብስብን (benchmark suite) ያካሂዳል — ይህ ስብስብ ሙሉውን የችሎታ ስፋት የሚያሰልጥን ውስብስብ፣ ብዙ-ደረጃ ጥያቄዎችን ያካትታል። ይህንን የሞዴል አፈጻጸምን ለመገምገም፣ የAI አቅራቢዎችን ለማነፃፀር፣ ወይም ወደ ፕሮዳክሽን ከመልቀቅዎ በፊት የችሎታ ፓኬጆችን ለማረጋገጥ ይጠቀሙ።
 
-### ማጠቃለያ (Synopsis)
+### ማጠቃለያ (Synopsis) {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### አማራጮች (Options)
+### አማራጮች (Options) {#options}
 
 | አማራጭ | መግለጫ |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | የውጤት ቅርጸት፡ `table` (በቅድፋት)፣ `json`፣ `csv`። |
 | `--save` | የሙከራ ውጤቶችን ለታሪካዊ ንጽጽር በዳታቤዝ ውስጥ ማስቀመጥ። |
 
-### ምሳሌዎች (Examples)
+### ምሳሌዎች (Examples) {#examples}
 
 በአሁኑ አቅራቢ እና ሞዴል ሙሉውን የሙከራ ስብስብ ለማስኬድ፦
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### ውጤት (Output)
+### ውጤት (Output) {#output}
 
 የሙከራው ውጤት ለእያንዳንዱ ጥያቄ አንድ ረድፍ (row) ያቀርባል፣ ከሚከተሉት ዓምዶች ጋር፦
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### የሙከራ ጥያቄዎች (Benchmark Questions)
+### የሙከራ ጥያቄዎች (Benchmark Questions) {#benchmark-questions}
 
 የቅድፋት ስብስብ የሚከተሉትን ያካትታል፦
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 የተጫኑ ችሎታዎችን እና የችሎታ ፓኬጆችን ያስተዳድራል።
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 የተመዘገቡትን ሁሉንም ችሎታዎች፣ ምንጮቻቸውን (core ወይም pack) እና የአሁኑን ሁኔታ ያሳያል።
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 ከመመዝገቢያው (registry) የችሎታ ፓኬጅ ያወርዳል እና ያነቃቃል።
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 የፓኬጁን ስፋት ለመገደብ ጠቃሚ ነው። የተወሰነ ችሎታ ፓኬጅ ሳይሰርዝ አንድ የተወሰነ ችሎታ ያጠፋዋል።
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 በዚህ ቀደም ብሎ በተበላቀ ችሎታ እንደገና ያነቃዋል።
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 የአሁኑን የኤጀንት ውቅር እና የግንኙነት ሁኔታ ያሳያል።
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 የቅርብ ጊዜ የኤጀንት እንቅስቃሴዎችን ከዲባግ መዝገብ (debug log) ያሳያል።
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 የኤጀንት ሁኔታን ዳግም ያስጀምራል፡ የተጨመሩ CSS ን ያጽዳል፣ በኤጀንቱ የተመዘገቡ CPTs እና ታክሶኖሚዎችን ያስወጣል፣ ዓለም አቀፍ ቅጦችን ዳግም ያስጀምራል፣ እና የኤጀንቱን አማራጮች ካሽ ባዶ ያደርጋል። ፕልጊኑን ወይም ቅንብሮቹን አያጠፋም።
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## የውፅአት ኮዶች (Exit Codes)
+## የውፅአት ኮዶች (Exit Codes) {#exit-codes}
 
 ሁሉም የኮማንዶች ስብስብ ስኬታማ ከሆነ `0` ይወጣሉ። μη-ዜሮ የውፅአት ኮዶች፦
 

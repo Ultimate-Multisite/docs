@@ -3,13 +3,13 @@ title: Laguntza-tiketen aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Laguntza-tiketen aldaketen erregistroa
+# Laguntza-tiketen aldaketen erregistroa {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Hobetua: vendor/ direktorioa Git jarraipenetik kendu da (dagoeneko .gitignore-ek estaltzen zuen), biltegiaren tamaina murriztuz
 * Hobetua: WordPress 7.0 bertsiora arte probatua
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Konponketa: null balioak onartu ticket ereduko setter nullable-etan
 * Konponketa: Ticket guztiak sare osoko taula globaletan gorde, multisite euskarria behar bezala emateko
 * Konponketa: Langileen eremuak ezkutatu eta orri hutsaren birbideratzea konpondu bezeroaren ticket berriko formularioan
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Hobetua: Frontend baliabideak baldintzapean kargatu soilik laguntza-tiketen orrietan
 * Hobetua: Pluginaren kargatzaile automatikoa saltatu Bedrock erroko kargatzaile automatikoak mendekotasunak dagoeneko kargatu dituenean
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Gehitua: Ticketak osorik ikusteko funtzionaltasuna administraziorako eta frontenderako
 * Gehitua: Ticket-erantzunen bidalketetarako AJAX kudeatzailea
 * Gehitua: Ticket-erantzunen funtzionaltasunerako euskarria, formularioen kudeaketa egokiarekin
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Hobetua: Datu-basearen egitura, kontsulta- eta eskema-klase egokiekin erantzunetarako eta eranskinetarako
 * Hobetua: Ticket ereduetarako atributuen ordez benetako propietateetara egindako migrazioa
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Eguneratua: Aurrizkia ultimate-multisite izenera aldatu da koherentziagatik
 * Eguneratua: Testu-domeinuaren estandarizazioa
 * Konponduta: Akats txikien konponketak eta hobekuntzak
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Hasierako argitalpena
 * Ticket kudeaketa-sistema osoa
 * Maila anitzeko sarbide-kontrola

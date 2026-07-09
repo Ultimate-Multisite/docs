@@ -3,15 +3,15 @@ title: 'Mësimi 8: Orientimi i klientëve'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Mësimi 8: Onboarding i klientëve
+# Mësimi 8: Onboarding i klientëve {#lesson-8-customer-onboarding}
 
 Ta bësh një klient të regjistrohet është vetëm gjysma e punës. Nëse ai hyn, ndihet i mbingarkuar dhe nuk kthehet më kurrë, e ke humbur. Ky mësim projekton përvojën që e kthen një regjistrim të ri në një klient aktiv dhe të angazhuar.
 
-## Ku e lamë
+## Ku e lamë {#where-we-left-off}
 
 FitSite është plotësisht i markuar me një rrjedhë checkout funksionale. Tani fokusohemi te ajo që ndodh pasi një pronar studioje fitnessi përfundon regjistrimin dhe hyn për herë të parë në site-in e tij të ri.
 
-## Pse ka rëndësi onboarding-u
+## Pse ka rëndësi onboarding-u {#why-onboarding-matters}
 
 30 minutat e para pas regjistrimit përcaktojnë nëse një klient qëndron apo largohet. Një pronar studioje fitnessi që:
 
@@ -21,9 +21,9 @@ FitSite është plotësisht i markuar me një rrjedhë checkout funksionale. Tan
 
 Modelet e tua të niche-it (Mësimi 4) trajtojnë pikën e parë. Ky mësim trajton të dytën.
 
-## Përvoja e hyrjes së parë
+## Përvoja e hyrjes së parë {#the-first-login-experience}
 
-### Widget-i i mirëseardhjes në Dashboard
+### Widget-i i mirëseardhjes në Dashboard {#welcome-dashboard-widget}
 
 Krijo një widget të personalizuar dashboard-i që i përshëndet klientët e rinj dhe i udhëzon gjatë konfigurimit. Ky duhet të shfaqet dukshëm kur ata hyjnë për herë të parë.
 
@@ -37,7 +37,7 @@ Krijo një widget të personalizuar dashboard-i që i përshëndet klientët e r
 
 Çdo hap lidhet drejtpërdrejt me faqen ose cilësimin përkatës. Pa kërkuar nëpër menu.
 
-### Thjeshto Dashboard-in
+### Thjeshto Dashboard-in {#simplify-the-dashboard}
 
 Klientët e rinj nuk kanë nevojë të shohin çdo artikull menuje të WordPress. Merr parasysh:
 
@@ -47,29 +47,29 @@ Klientët e rinj nuk kanë nevojë të shohin çdo artikull menuje të WordPress
 
 Addon-i [Plugin & Theme Manager](/addons/plugin-and-theme-manager) mund të ndihmojë në kontrollin e asaj që shohin klientët.
 
-## Sekuenca e email-eve të mirëseardhjes
+## Sekuenca e email-eve të mirëseardhjes {#welcome-email-sequence}
 
 Një email i vetëm mirëseardhjeje nuk mjafton. Krijo një sekuencë që i udhëzon klientët gjatë javës së tyre të parë:
 
-### Email 1: Mirë se erdhe (Menjëherë pas regjistrimit)
+### Email 1: Mirë se erdhe (Menjëherë pas regjistrimit) {#email-1-welcome-immediately-after-signup}
 
 - Subjekti: "Mirë se erdhe në FitSite -- website-i i studios sate është live"
 - Përmbajtja: Lidhja e hyrjes, hapat e nisjes së shpejtë, lidhje te burimet e ndihmës
 - Toni: Entuziast, inkurajues, specifik për fitness
 
-### Email 2: Fitore të shpejta (Dita 1)
+### Email 2: Fitore të shpejta (Dita 1) {#email-2-quick-wins-day-1}
 
 - Subjekti: "3 gjëra për të bërë së pari në FitSite-in tënd"
 - Përmbajtja: Shto logon tënde, përditëso imazhin kryesor të homepage-it, shto orarin e klasave
 - Përfshi screenshot-e që tregojnë saktësisht ku të klikosh
 
-### Email 3: Bëje tëndin (Dita 3)
+### Email 3: Bëje tëndin (Dita 3) {#email-3-make-it-yours-day-3}
 
 - Subjekti: "Bëje site-in tënd të fitnessit të dallohet"
 - Përmbajtja: Personalizo ngjyrat, shto foto të trajnerëve, shkruaj historinë e studios sate
 - Lidhje te shembuj site-sh të shkëlqyer fitnessi në platformë
 
-### Email 4: Dil live (Dita 7)
+### Email 4: Dil live (Dita 7) {#email-4-go-live-day-7}
 
 - Subjekti: "Gati ta ndash FitSite-in tënd me botën?"
 - Përmbajtja: Checklist e gjërave që duhen verifikuar para ndarjes, si të lidhësh një domain të personalizuar (nëse je në Growth/Pro), këshilla për ndarje sociale
@@ -78,11 +78,11 @@ Një email i vetëm mirëseardhjeje nuk mjafton. Krijo një sekuencë që i udh�
 Përdor [Webhooks](/user-guide/integrations/webhooks) ose [Zapier](/user-guide/integrations/zapier) për t’i aktivizuar këto email-e përmes platformës sate të marketingut me email. Kjo të jep më shumë kontroll mbi kohën dhe të lejon të ndjekësh angazhimin.
 :::
 
-## Burimet e ndihmës
+## Burimet e ndihmës {#help-resources}
 
 Krijo përmbajtje ndihme specifike për niche-in që u përgjigjet pyetjeve që pronarët e studiove të fitnessit bëjnë realisht:
 
-### Artikuj të bazës së njohurive
+### Artikuj të bazës së njohurive {#knowledge-base-articles}
 
 - "Si të përditësosh orarin e klasave"
 - "Shtimi dhe redaktimi i profileve të trajnerëve"
@@ -92,7 +92,7 @@ Krijo përmbajtje ndihme specifike për niche-in që u përgjigjet pyetjeve që 
 
 Shkruaji këto për përdorues jo-teknikë. Përdor screenshot-e. Shmang zhargonin e WordPress.
 
-### Udhëzime me video
+### Udhëzime me video {#video-walkthroughs}
 
 Regjistrime të shkurtra ekrani (2-3 minuta) që tregojnë:
 
@@ -103,7 +103,7 @@ Regjistrime të shkurtra ekrani (2-3 minuta) që tregojnë:
 
 Këto nuk kanë nevojë të jenë prodhime të lustruara. Ajo që ka rëndësi është të jenë të qarta, të dobishme dhe specifike për niche-in.
 
-## Faqja Account
+## Faqja Account {#the-account-page}
 
 Ultimate Multisite përfshin një [Faqe Account](/user-guide/client-management/account-page) për klientët, ku ata menaxhojnë subscription-in e tyre. Personalizoje këtë për të:
 
@@ -112,7 +112,7 @@ Ultimate Multisite përfshin një [Faqe Account](/user-guide/client-management/a
 - Ofruar historikun e faturimit dhe shkarkime faturash
 - Lidhur me burimet e ndihmës
 
-## Matja e suksesit të onboarding-ut
+## Matja e suksesit të onboarding-ut {#measuring-onboarding-success}
 
 Ndiq këta tregues për të ditur nëse onboarding-u yt po funksionon:
 
@@ -121,7 +121,7 @@ Ndiq këta tregues për të ditur nëse onboarding-u yt po funksionon:
 - **Tiketa support-i nga klientët e rinj**: Volumi i lartë do të thotë që onboarding-u yt ka boshllëqe
 - **Konvertimi nga trial në pagesë**: Nëse ofron trial-e, çfarë përqindjeje konvertohen?
 
-## Rrjeti FitSite deri tani
+## Rrjeti FitSite deri tani {#the-fitsite-network-so-far}
 
 ```
 Rrjeti FitSite
@@ -142,7 +142,7 @@ Rrjeti FitSite
 └── Gati për strategjinë e çmimeve (mësimi tjetër)
 ```
 
-## Çfarë ndërtuam në këtë mësim
+## Çfarë ndërtuam në këtë mësim {#what-we-built-this-lesson}
 
 - **Një përvojë të udhëzuar të hyrjes së parë** me një widget Quick Start
 - **Një dashboard të thjeshtuar** të fokusuar te detyrat e menaxhimit të site-it të fitnessit

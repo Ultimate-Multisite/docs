@@ -3,7 +3,7 @@ title: Integrasi Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Mengintegrasikan Ultimate Multisite dengan Zapier
+# Mengintegrasikan Ultimate Multisite dengan Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Dalam salah satu artikel, kami membincangkan [Webhooks](webhooks.md) dan cara ia boleh digunakan untuk berintegrasi dengan aplikasi pihak ke-3.
 
@@ -15,7 +15,7 @@ Anda boleh mencipta **Triggers** yang akan dicetuskan apabila peristiwa berlaku 
 
 Ini boleh dilakukan kerana **triggers Ultimate Multisite Zapier** dan actions dikuasakan oleh [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Cara bermula
+## Cara bermula {#how-to-start}
 
 Mula-mula, cari Ultimate Multisite dalam senarai app Zapier. Sebagai alternatif, anda boleh klik [pautan ini](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Pada medan URL, masukkan URL penuh network anda, termasuk protokol (HTTP atau HT
 
 Klik butang **Yes, Continue** untuk bergerak ke langkah seterusnya. Jika semuanya berjalan lancar, anda sepatutnya disambut oleh account bersambung baharu anda! Klik **Continue** untuk mencipta trigger baharu.
 
-## Cara mencipta Trigger baharu
+## Cara mencipta Trigger baharu {#how-to-create-a-new-trigger}
 
 Sekarang setelah Account anda disambungkan, anda boleh melihat peristiwa yang tersedia. Mari pilih peristiwa **payment_received** untuk tutorial ini.
 
@@ -67,7 +67,7 @@ Pada peringkat ini, Zapier akan menguji sama ada Zap anda boleh **mengambil payl
 
 Dalam tutorial kami, ujian telah **completed successfully** dan mengembalikan maklumat contoh payload. Maklumat contoh ini akan berguna untuk membimbing kami semasa mencipta actions. Trigger anda kini telah dicipta dan sedia untuk disambungkan kepada aplikasi lain.
 
-## Cara mencipta Actions
+## Cara mencipta Actions {#how-to-create-actions}
 
 Actions menggunakan maklumat daripada triggers lain untuk mencipta entri baharu dalam network anda.
 
@@ -79,7 +79,7 @@ Dalam langkah seterusnya, anda sama ada akan mencipta pengesahan anda, seperti y
 
 ![Memilih pengesahan untuk action Zapier](/img/admin/webhooks-list.png)
 
-### Menyediakan Action
+### Menyediakan Action {#setting-up-the-action}
 
 Ini ialah **langkah utama action** dan di sini keadaannya sedikit berbeza. Maklumat pertama yang akan anda pilih ialah **Item**. Item ialah **model maklumat** network anda seperti **Customers, Payments, Sites, Emails** dan lain-lain.
 

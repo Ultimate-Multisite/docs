@@ -3,15 +3,15 @@ title: 'Leksjon 6: Registreringsopplevelsen'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Leksjon 6: Opplevelsen ved registrering
+# Leksjon 6: Opplevelsen ved registrering {#lesson-6-the-signup-experience}
 
 Betalingsflyten er der interessen blir til inntekt. En forvirrende eller generisk registreringsprosess får kundene til å falle fra. En nisje-spesifikk flyt som snakker deres språk og føles uanstrengt, konverterer dem.
 
-## Hvor vi slapp
+## Hvor vi slapp {#where-we-left-off}
 
 FitSite har konfigurerte maler og planer. Nå bygger vi registrerings- og betalingsopplevelsen som forvandler treningsstudioeiere til betalende kunder.
 
-## Forstå registreringsflyten
+## Forstå registreringsflyten {#understanding-the-registration-flow}
 
 Ultimate Multisite sine kasse-skjemaer er fullt tilpassbare flertrinns-skjemaer. For FitSite ønsker vi en flyt som:
 
@@ -21,11 +21,11 @@ Ultimate Multisite sine kasse-skjemaer er fullt tilpassbare flertrinns-skjemaer.
 
 Se [The Registration Flow](/user-guide/configuration/the-registration-flow) for full teknisk referanse.
 
-## Design av FitSite-kassen
+## Design av FitSite-kassen {#designing-the-fitsite-checkout}
 
 Naviger til **Ultimate Multisite > Checkout Forms** og opprett et nytt skjema.
 
-### Trinn 1: Planvalg
+### Trinn 1: Planvalg {#step-1-plan-selection}
 
 Det første en treningsstudioeier ser, bør være planene, presentert i termer de forstår.
 
@@ -37,7 +37,7 @@ Det første en treningsstudioeier ser, bør være planene, presentert i termer d
 "1 GB lagringsplass" betyr ingenting for en treningsstudioeier. "Alt du trenger for et profesjonelt studio-nettsted" betyr alt. Skriv planbeskrivelser i kundens språk.
 :::
 
-### Trinn 2: Malvalg
+### Trinn 2: Malvalg {#step-2-template-selection}
 
 Etter at planen er valgt, velger kunden sin startmal.
 
@@ -45,7 +45,7 @@ Etter at planen er valgt, velger kunden sin startmal.
 - De tilgjengelige malene filtreres basert på planen de har valgt (konfigurert i Leksjon 5)
 - Hver mal bør ha et forhåndsvisningsbilde som viser et treningsstudio-spesifikt design
 
-### Trinn 3: Kontoopprettelse
+### Trinn 3: Kontoopprettelse {#step-3-account-creation}
 
 Hold dette minimalt. Samle kun inn:
 
@@ -55,27 +55,27 @@ Hold dette minimalt. Samle kun inn:
 
 Ikke spør om informasjon du ikke trenger ved registrering. Hvert ekstra felt reduserer konverteringen.
 
-### Trinn 4: Nettstedoppsett
+### Trinn 4: Nettstedoppsett {#step-4-site-setup}
 
 - **Site title**: Fyll inn automatisk fra studio-navnet som ble angitt i Trinn 3
 - **Site URL**: Genereres automatisk fra studio-navnet (f.eks. `ironworks.fitsite.com`)
 
-### Trinn 5: Betaling
+### Trinn 5: Betaling {#step-5-payment}
 
 - Legg til feltet **Payment**
 - Konfigurer betalingsgatewayen din ([Stripe](/user-guide/payment-gateways/stripe) anbefales for abonnementer)
 - Hvis du opprettet bestillings-tillegg i Leksjon 5, legg til et felt for **Order Bump** før betalingssteget
 
-### Trinn 6: Bekreftelse
+### Trinn 6: Bekreftelse {#step-6-confirmation}
 
 - Tilpass bekreftelsesmeldingen med treningsstudio-spesifikt språk
 - Eksempel: "Nettstedet til treningsstudioet ditt blir opprettet. Du blir omdirigert til ditt nye nettsted om noen sekunder."
 
-## Legge til en periodevelger (Toggle)
+## Legge til en periodevelger (Toggle) {#adding-a-period-selection-toggle}
 
 Hvis du har satt opp prisvariasjoner i planene dine (månedlig vs. årlig), legg til et felt for **Period Selection** i kasse-skjemaet slik at kundene kan bytte mellom betalingsperioder. Se [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) for instruksjoner.
 
-## Konfigurere betaling
+## Konfigurere betaling {#configuring-payment}
 
 Hvis du ennå ikke har satt opp en betalingsgateway:
 
@@ -85,7 +85,7 @@ Hvis du ennå ikke har satt opp en betalingsgateway:
 
 Se [Getting Paid](/user-guide/payment-gateways/getting-paid) for detaljer om hvordan betalinger kommer til kontoen din.
 
-## Testing av flyten
+## Testing av flyten {#testing-the-flow}
 
 Før du går videre, fullfør en komplett testregistrering:
 
@@ -105,7 +105,7 @@ Sjekk at:
 - [ ] Kunden lander på et fungerende nettsted med den valgte malen
 - [ ] Bekreftelses-e-postene bruker treningsstudio-spesifikt språk
 
-## FitSite Network så langt
+## FitSite Network så langt {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Hva vi bygde i denne leksjonen
+## Hva vi bygde i denne leksjonen {#what-we-built-this-lesson}
 
 - **Et flertrinns kasse-skjema** tilpasset treningsstudioeiere
 - **Nisje-spesifikt språk** gjennom hele registreringsflyten

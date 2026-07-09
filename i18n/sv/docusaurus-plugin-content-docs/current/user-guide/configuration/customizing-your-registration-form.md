@@ -3,13 +3,13 @@ title: Anpassa ditt registreringsformulär
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Anpassa ditt registreringsformulär
+# Anpassa ditt registreringsformulär {#customizing-your-registration-form}
 
 För att få ditt nätverk att se unikt ut jämfört med alla andra SaaS-lösningar byggda på WordPress-plattformen låter Ultimate Multisite dig anpassa dina registrerings- och inloggningssidor med vår funktion **Checkout Forms**.
 
 Även om de är ett enkelt och flexibelt sätt att experimentera med olika tillvägagångssätt när du försöker konvertera nya kunder, används de främst för att skapa personliga registreringsformulär. Den här artikeln visar hur du kan göra det.
 
-## Inloggnings- och registreringssidor:
+## Inloggnings- och registreringssidor: {#login-and-registration-pages}
 
 När Ultimate Multisite installeras skapas automatiskt anpassade inloggnings- och registreringssidor på din huvudwebbplats. Du kan när som helst ändra dessa standardsidor genom att gå till sidan **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Nu ska vi se andra alternativ som fortfarande är relevanta för inloggnings- oc
 
 Och det är alla alternativ relaterade till inloggning och registrering som du kan anpassa! Glöm inte att spara dina inställningar när du är klar med att redigera dem.
 
-## Använda flera registreringsformulär:
+## Använda flera registreringsformulär: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 erbjuder en redigerare för checkout-formulär som låter dig skapa så många formulär du vill, med olika fält, produkter som erbjuds osv.
 
@@ -69,7 +69,7 @@ Alternativt kan du redigera eller duplicera de formulär du redan har genom att 
 
 Om du väljer ett steg eller flera steg kommer checkout-formuläret redan att vara förifyllt med de grundläggande steg som behövs för att det ska fungera. Sedan kan du, om du vill, lägga till extra steg i det.
 
-### Redigera ett Checkout Form:
+### Redigera ett Checkout Form: {#editing-a-checkout-form}
 
 Som vi nämnde tidigare kan du skapa checkout-formulär för olika syften. I det här exemplet arbetar vi med ett registreringsformulär.
 
@@ -131,11 +131,11 @@ För att få formulärets shortcode klickar du på **Generate Shortcode** och ko
 
 _**Obs:** Du måste lägga till denna shortcode på din registreringssida för att detta checkout-formulär ska läggas till där._
 
-## Förvälja produkter och mallar via URL-parametrar:
+## Förvälja produkter och mallar via URL-parametrar: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Om du vill skapa anpassade pristabeller för dina produkter och förvälja den produkt eller mall som din kund väljer från din pristabell eller mallsida i checkout-formuläret, kan du använda URL-parametrar för detta.
 
-### **För planer:**
+### **För planer:** {#for-plans}
 
 Gå till **Ultimate Multisite > Products > Select a plan**. Du bör se knappen **Click to copy Shareable Link** högst upp på sidan. Detta är länken du kan använda för att förvälja denna specifika plan i ditt checkout-formulär.
 
@@ -143,7 +143,7 @@ Gå till **Ultimate Multisite > Products > Select a plan**. Du bör se knappen *
 
 Observera att denna delbara länk endast är giltig för **Plans**. Du kan inte använda delbara länkar för paket eller tjänster.
 
-### För mallar:
+### För mallar: {#for-templates}
 
 Om du vill förvälja sitemallar i ditt checkout-formulär kan du använda parametern: **?template_id=X** i URL:en till din registreringssida. "X" måste ersättas med **ID-numret för sitemallen**. För att få detta nummer, gå till **Ultimate Multisite > Sites**.
 

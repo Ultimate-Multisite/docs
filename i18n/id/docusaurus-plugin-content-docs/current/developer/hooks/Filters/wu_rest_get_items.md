@@ -4,11 +4,11 @@ title: Filter - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filter: wu_rest_get_items
+# Filter: wu_rest_get_items {#filter-wurestgetitems}
 
 Memfilter apakah permintaan boleh dilanjutkan atau tidak.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Memfilter apakah permintaan boleh dilanjutkan atau tidak.
 | $rest_base | `array` | Slug entitas. |
 | $this | `\Base_Manager` | Instansi objek. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Didefinisikan di [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) pada baris 336

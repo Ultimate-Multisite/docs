@@ -3,7 +3,7 @@ title: Site Templates میں خودکار تلاش اور تبدیلی
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# سائٹ ٹیمپلیٹس میں خودکار تلاش اور تبدیلی (v2)
+# سائٹ ٹیمپلیٹس میں خودکار تلاش اور تبدیلی (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**اس ٹیوٹوریل کے لیے WP UItimo ورژن 2.x درکار ہے۔**_
 
@@ -17,7 +17,7 @@ Ultimate Multisite کی سب سے طاقتور خصوصیات میں سے ایک
 
 Ultimate Multisite پھر placeholders کو customer کی فراہم کردہ ڈیٹا سے خودکار طور پر بدل دے گا۔
 
-## **"placeholders سے بھرے template" کے مسئلے کا حل**
+## **"placeholders سے بھرے template" کے مسئلے کا حل** {#solving-the-template-full-of-placeholders-problem}
 
 یہ سب بہت اچھا ہے، لیکن ہمیں ایک بدنما مسئلہ درپیش آتا ہے: اب ہماری site templates - جنہیں ہمارے customers دیکھ سکتے ہیں - بدنما placeholders سے بھری ہوتی ہیں جو زیادہ کچھ نہیں بتاتے۔
 

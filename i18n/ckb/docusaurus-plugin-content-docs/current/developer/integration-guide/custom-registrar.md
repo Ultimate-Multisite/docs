@@ -3,13 +3,13 @@ title: دروستکردنی یەکخستنی تۆمارکەری تایبەت
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# دروستکردنی تێکەڵکردنی تۆمارکەرێکی تایبەت
+# دروستکردنی تێکەڵکردنی تۆمارکەرێکی تایبەت {#building-a-custom-registrar-integration}
 
 پێوەکراوی فرۆشی دۆمەین شێوازی **تۆماری تێکەڵکردن** بەکاردەهێنێت. هەر تۆمارکەرێک classـێکی PHP ـە کە `Domain_Selling_Capability` جێبەجێ دەکات و خۆی لە ڕێگەی action hook ـی `wu_domain_seller_register_capabilities` تۆمار دەکات.
 
 ئەم ڕێبەرە پیشان دەدات چۆن تۆمارکەرێکی تایبەت پەیوەست بکەیت.
 
-## ڕووکارەکە
+## ڕووکارەکە {#the-interface}
 
 class ـەکەت دەبێت `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` جێبەجێ بکات و `WP_Ultimo\Integrations\Base_Capability_Module` درێژ بکاتەوە.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### میتۆدە ئارەزوومەندانەکان
+### میتۆدە ئارەزوومەندانەکان {#optional-methods}
 
 ئەمە جێبەجێ بکە بۆ کردنەوەی تایبەتمەندی زیاتر. پێوەکراوەکە پشتگیری لە ڕێگەی `method_exists()` دەدۆزێتەوە:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | گواستنەوەی دۆمەین (چوونە دەرەوە) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | گواستنەوەی دۆمەین (هاتنە ژوورەوە) |
 
-### ڕێککەوتنی نرخی گەڕاوە
+### ڕێککەوتنی نرخی گەڕاوە {#return-value-convention}
 
 هەموو میتۆدەکان array ـێک دەگەڕێننەوە کە بە کەمترینەوە key ـی `success` ـی تێدایە:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## تۆمارکردنی تواناییەکەت
+## تۆمارکردنی تواناییەکەت {#registering-your-capability}
 
 class ـەکەت بە بەکارهێنانی کرداری `wu_domain_seller_register_capabilities` تۆمار بکە:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## زیادکردنی خانەکانی ناسنامە بۆ wizard
+## زیادکردنی خانەکانی ناسنامە بۆ wizard {#adding-credential-fields-to-the-wizard}
 
 بۆ ئەوەی بەڕێوەبەران بتوانن لە ڕێگەی setup wizard ناسنامەکان داخڵ بکەن، تێکەڵکردنەکەت تۆمار بکە:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## Hook ـەکان بۆ کردارەکانی دوای تۆمارکردن
+## Hook ـەکان بۆ کردارەکانی دوای تۆمارکردن {#hooks-for-post-registration-actions}
 
 ئەم کردارەکان بەکاربهێنە بۆ دەستپێکردنی webhook، provisioning، ئاگادارکردنەوە، یان نوێکردنەوەکانی CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## تۆمارکردن
+## تۆمارکردن {#logging}
 
 بۆ کەناڵی تۆماری تایبەت بە دابینکەرەکەت بە بەکارهێنانی `wu_log_add()` بنووسە:
 

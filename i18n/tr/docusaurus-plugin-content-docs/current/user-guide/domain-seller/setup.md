@@ -3,21 +3,21 @@ title: Kurulum ve Sağlayıcı Yapılandırması
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Kurulum ve Sağlayıcı Yapılandırması
+# Domain Seller: Kurulum ve Sağlayıcı Yapılandırması {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller eklentisi, sizi gerekli her adımda yönlendiren rehberli bir kurulum sihirbazıyla gelir. Bu sayfa, sihirbaz akışını ve sonrasında sağlayıcıları nasıl yapılandıracağınızı veya yeniden yapılandıracağınızı kapsar.
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 - **Multisite Ultimate** v2.4.12 veya üzeri, ağda etkinleştirilmiş
 - **PHP** 7.4+
 - En az bir desteklenen kayıt kuruluşu için API kimlik bilgileri
 
-## İlk çalıştırma kurulum sihirbazı
+## İlk çalıştırma kurulum sihirbazı {#first-run-setup-wizard}
 
 Kurulum sihirbazı, plugin’i ağda ilk kez etkinleştirdiğinizde otomatik olarak başlatılır. Ayrıca istediğiniz zaman **Network Admin › Ultimate Multisite › Domain Seller Setup** üzerinden de kullanılabilir.
 
-### Adım 1 — Bir sağlayıcı seçin
+### Adım 1 — Bir sağlayıcı seçin {#step-1--choose-a-provider}
 
 Bağlanmak istediğiniz kayıt kuruluşunu seçin. Desteklenen seçenekler:
 
@@ -33,7 +33,7 @@ Bağlanmak istediğiniz kayıt kuruluşunu seçin. Desteklenen seçenekler:
 | NameSilo | Hayır | Hayır |
 | Enom | Evet | Hayır |
 
-### Adım 2 — Kimlik bilgilerini girin
+### Adım 2 — Kimlik bilgilerini girin {#step-2--enter-credentials}
 
 Her sağlayıcının farklı kimlik bilgisi alanları vardır:
 
@@ -57,17 +57,17 @@ Her sağlayıcının farklı kimlik bilgisi alanları vardır:
 
 Canlıya geçmeden önce sağlayıcının test ortamına karşı test etmek için mevcut olduğu yerlerde **Sandbox mode** seçeneğini işaretleyin.
 
-### Adım 3 — Bağlantıyı test edin
+### Adım 3 — Bağlantıyı test edin {#step-3--test-the-connection}
 
 **Test Connection** öğesine tıklayın. Sihirbaz, kimlik bilgilerini ve bağlantıyı doğrulamak için hafif bir API çağrısı gönderir. Devam etmeden önce tüm kimlik bilgisi sorunlarını düzeltin.
 
-### Adım 4 — TLD’leri içe aktarın
+### Adım 4 — TLD’leri içe aktarın {#step-4--import-tlds}
 
 Bağlı sağlayıcıdan mevcut tüm TLD’leri ve toptan fiyatlandırmayı çekmek için **Import TLDs** öğesine tıklayın. Bu, domain ürünleri tarafından kullanılan TLD listesini doldurur. Büyük TLD kataloglarına sahip sağlayıcılar için içe aktarma 30–60 saniye sürebilir.
 
 TLD’ler ayrıca planlanmış bir cron görevi aracılığıyla günde bir kez otomatik olarak yeniden eşitlenir.
 
-### Adım 5 — Bir domain ürünü oluşturun
+### Adım 5 — Bir domain ürünü oluşturun {#step-5--create-a-domain-product}
 
 Sihirbaz, %10 kâr marjına sahip varsayılan bir tümünü yakala domain ürünü oluşturur. Bu ürünü hemen düzenleyebilir veya atlayıp **Ultimate Multisite › Products** altında ürünleri manuel olarak oluşturabilirsiniz.
 
@@ -75,7 +75,7 @@ Tam ürün yapılandırma kılavuzu için [Domain Ürünleri ve Fiyatlandırma](
 
 ---
 
-## Bir sağlayıcıyı yeniden yapılandırma
+## Bir sağlayıcıyı yeniden yapılandırma {#reconfiguring-a-provider}
 
 **Network Admin › Ultimate Multisite › Settings › Domain Seller** bölümüne gidin (veya plugin listesinde **Settings** öğesine tıklayın).
 
@@ -88,17 +88,17 @@ Ayarlar sayfası şunları içerir:
 - **Domain ürünlerini yönet** — Products listesine hızlı bağlantı
 - **Sağlayıcıları yapılandır** — sağlayıcı eklemek veya yeniden yapılandırmak için Integration Wizard’ı açar
 
-### İkinci bir sağlayıcı ekleme
+### İkinci bir sağlayıcı ekleme {#adding-a-second-provider}
 
 **Configure providers** öğesine tıklayın ve yeni kayıt kuruluşu için sihirbazı tekrar çalıştırın. Aynı anda birden fazla sağlayıcı yapılandırabilirsiniz. Her domain ürününü belirli bir sağlayıcıya atayın veya varsayılanda bırakın.
 
-### TLD’leri manuel olarak eşitleme
+### TLD’leri manuel olarak eşitleme {#syncing-tlds-manually}
 
 Ayarlar sayfasında, en güncel fiyatlandırmayı çekmek için yapılandırılmış herhangi bir sağlayıcının yanındaki **Sync TLDs** öğesine tıklayın. Bu, bir sağlayıcı toptan fiyatlandırmayı güncelledikten veya yeni TLD’ler ekledikten sonra kullanışlıdır.
 
 ---
 
-## Günlükler
+## Günlükler {#logs}
 
 Her sağlayıcı kendi günlük kanalına yazar. Günlükler **Network Admin › Ultimate Multisite › Logs** altında görüntülenebilir:
 
@@ -118,7 +118,7 @@ Her sağlayıcı kendi günlük kanalına yazar. Günlükler **Network Admin ›
 
 ---
 
-## Sağlayıcı yetenek notları
+## Sağlayıcı yetenek notları {#provider-capability-notes}
 
 Her kayıt kuruluşu API’si aynı işlemleri sunmaz. Eklenti, desteklenmeyen işlemleri sessizce başarısız olmak yerine yöneticiye yönelik net hatalarla gösterir.
 

@@ -3,11 +3,11 @@ title: Constructor i Sandbox de Plugins
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 presenta el **Plugin Builder & Sandbox System**, un sistema que permet a l'assistència AI generar, activar i gestionar plugins de WordPress a la teva xarxa, tot dins d'un entorn sandbox (de prova) segur i aïllat.
 
-## Resum general
+## Resum general {#overview}
 
 El Plugin Builder permet a l'assistència AI escriure plugins personalitzats de WordPress en resposta a peticions en llenguatge natural. Els plugins generats es validen, es guarden i s'activen dins d'una capa sandbox abans de que afectin a la funcionalitat del lloc en directe.
 
@@ -17,7 +17,7 @@ Els casos d'ús inclouen:
 - Prototipar funcionalitats que requereixen hooks de WordPress o tipus d'altres tipus de contingut (custom post types).
 - Crear scripts d'automatització de curta durada per a operacions per part de grup.
 
-## Generar un plugin amb AI
+## Generar un plugin amb AI {#generating-a-plugin-via-ai}
 
 Per generar un plugin, obre la interfície de xat de Gratis AI Agent i descriu el que necessites. Per exemple:
 
@@ -32,7 +32,7 @@ L'AI farà:
 
 Pots afinar el resultat fent un seguiment en el mateix fil de conversa abans de l'activació.
 
-## Activació en Sandbox
+## Activació en Sandbox {#sandbox-activation}
 
 Activar un plugin generat en el sandbox és diferent d'activarlo a la xarxa en directe. El sandbox:
 
@@ -48,7 +48,7 @@ Per activar un plugin en el sandbox, fes clic al botó **Activate in Sandbox** a
 
 Un missatge d'estat confirma si l'activació va ser exitosa o fallida. En cas de fallida, el registre d'errors es mostra al fil de xat.
 
-## Gestió de plugins generats
+## Gestió de plugins generats {#managing-generated-plugins}
 
 Els plugins generats es llisten a **Gratis AI Agent → Plugin Builder → Manage Plugins**. Des d'aquesta pantalla pots:
 
@@ -64,7 +64,7 @@ Els plugins generats es llisten a **Gratis AI Agent → Plugin Builder → Manag
 **Install on network** despliega el plugin generat al teu WordPress multisite en directe. Revisa el codi del plugin abans de continuar. Gratis AI Agent demanarà confirmació abans de completar una instal·lació en directe.
 :::
 
-## Instal·lació d'un plugin generat a la xarxa
+## Instal·lació d'un plugin generat a la xarxa {#installing-a-generated-plugin-on-the-network}
 
 Quan et sentis satisfet amb un plugin sandbox, pots instal·lar-lo a la xarxa en directe:
 
@@ -78,7 +78,7 @@ Alternativament, utilitza el comodín a la interfície de xat:
 /install-plugin <plugin-slug>
 ```
 
-## Actualitzacions de plugins
+## Actualitzacions de plugins {#plugin-updates}
 
 Per actualitzar un plugin generat, descriu el canvi a l'assistència AI en una nova conversa:
 
@@ -86,7 +86,7 @@ Per actualitzar un plugin generat, descriu el canvi a l'assistència AI en una n
 
 L'AI genera una nova versió, que apareix al sandbox juntament amb la versió actual. Tu revises el diferència (diff) i confirmes abans que s'apliqui l'actualització.
 
-## Integració HookScanner
+## Integració HookScanner {#hookscanner-integration}
 
 El Plugin Builder utilitza un **HookScanner** integrat per analitzar els hooks i els filtres registrats per cada plugin generat. L'output de HookScanner es mostra a la resposta de xat i inclou:
 
@@ -96,7 +96,7 @@ El Plugin Builder utilitza un **HookScanner** integrat per analitzar els hooks i
 
 Això et ajuda a entendre el comportament d'un plugin abans de l'activar.
 
-## Consideracions de seguretat
+## Consideracions de seguretat {#security-considerations}
 
 - Els plugins generats es guarden separat dels plugins instal·lats manualment i no són accessibles a través de la pantalla estàndard de gestió de plugins de WordPress fins que els instal·les explícitament a la xarxa.
 - El sandbox utilitza la validació de camins (path validation) per prevenir la navegació per directoris (directory traversal) quan escriu fitxers de plugins.

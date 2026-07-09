@@ -3,15 +3,15 @@ title: Hamarino ny fifanoheran'ny paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Hamarino ny Fifanoheran’ny Paleta
+# Hamarino ny Fifanoheran’ny Paleta {#validate-palette-contrast}
 
 Ny fahaiza-manao **Validate Palette Contrast** dia manamarina ny tsiroaroan-loko ao amin’ny paletan’ny endrikao raha mifanaraka amin’ny WCAG (Web Content Accessibility Guidelines) alohan’ny hampiharana azy amin’ny theme-nao.
 
-## Topimaso
+## Topimaso {#overview}
 
 Ity fahaiza-manao ity dia miantoka fa mahafeno ny fenitry ny fahazoana idirana ny rafitra lokon’ny tranokalanao amin’ny fanamarinana ny tahan’ny fifanoherana eo amin’ny lokon’ny soratra sy ny lokon’ny afara. Manampy hisoroka fitambaran-loko mety ho sarotra vakiana ho an’ny mpampiasa manana fahasembanana ara-pahitana izany.
 
-## Endrika Fampidirana
+## Endrika Fampidirana {#input-format}
 
 Mandray paleta loko ho fampidirana ilay fahaiza-manao:
 
@@ -35,7 +35,7 @@ Mandray paleta loko ho fampidirana ilay fahaiza-manao:
 }
 ```
 
-### Masontsivana
+### Masontsivana {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Mandray paleta loko ho fampidirana ilay fahaiza-manao:
 | `wcag_level` | string | No | Haavon’ny fanarahana WCAG: "A", "AA" (default), na "AAA" |
 | `pairs_to_check` | array | No | Tsiroaroan-loko manokana hohamarinina (oh., `["primary-text", "background-text"]`) |
 
-## Haavon’ny WCAG Hamarihina
+## Haavon’ny WCAG Hamarihina {#wcag-levels-checked}
 
 Manamarina ny tahan’ny fifanoherana araka ny fenitry ny WCAG ilay fahaiza-manao:
 
@@ -56,7 +56,7 @@ Manamarina ny tahan’ny fifanoherana araka ny fenitry ny WCAG ilay fahaiza-mana
 - **Soratra Mahazatra** — soratra kely kokoa noho ny 18pt (na 14pt bold)
 - **Soratra Lehibe** — soratra 18pt na lehibe kokoa (na 14pt bold na lehibe kokoa)
 
-## Skeman’ny Vokatra
+## Skeman’ny Vokatra {#output-schema}
 
 Mamerina tatitra fanamarinana amin’ny antsipiriany ilay fahaiza-manao:
 
@@ -95,7 +95,7 @@ Mamerina tatitra fanamarinana amin’ny antsipiriany ilay fahaiza-manao:
 }
 ```
 
-### Sahan’ny Vokatra
+### Sahan’ny Vokatra {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Mamerina tatitra fanamarinana amin’ny antsipiriany ilay fahaiza-manao:
 | `status` | string | "pass" na "fail" ho an’ny tsiroaroa tsirairay |
 | `recommendations` | array | Soso-kevitra hanatsarana ireo tsiroaroa tsy mahomby |
 
-## Ohatra Fampiasana
+## Ohatra Fampiasana {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Manamarina ny fitambaran-loko rehetra ilay fahaiza-manao ary mamerina:
 - ✅ Afara + Soratra: tahan’ny 12.1:1 (mahafeno WCAG AAA)
 - Amin’ny ankapobeny: Mifanaraka amin’ny WCAG AA
 
-## Fampidirana amin’ny Theme Builder
+## Fampidirana amin’ny Theme Builder {#integration-with-theme-builder}
 
 Rehefa mampiasa ny fifantenana lalan’endrika ao amin’ny Theme Builder, ny fahaiza-manao Validate Palette Contrast dia:
 
@@ -129,7 +129,7 @@ Rehefa mampiasa ny fifantenana lalan’endrika ao amin’ny Theme Builder, ny fa
 4. Manome soso-kevitra ho an’ireo tsiroaroa tsy mifanaraka
 5. Misoroka ny fampiharana rafitra loko tsy mora idirana
 
-## Fomba Fanao Tsara Indrindra
+## Fomba Fanao Tsara Indrindra {#best-practices}
 
 - **Atombohy amin’ny haavo AA** — WCAG AA no fenitra ho an’ny ankamaroan’ny tranonkala
 - **Andramo alohan’ny hampiharana** — hamarino ny paletanao alohan’ny hirosoana amin’ny endrika iray
@@ -137,7 +137,7 @@ Rehefa mampiasa ny fifantenana lalan’endrika ao amin’ny Theme Builder, ny fa
 - **Eritrereto ny safidin’ny mpampiasa** — mety hanana fahatsapana loko fanampiny ny mpampiasa sasany
 - **Mampiasà mpanamarina fifanoherana** — ampifandraiso amin’ny fitaovan’ny navigateur ity fahaiza-manao ity ho fanamarinana
 
-## Tsiroaroa Tsy Mahomby sy Soso-kevitra
+## Tsiroaroa Tsy Mahomby sy Soso-kevitra {#failing-pairs-and-recommendations}
 
 Raha tsy mahomby amin’ny fanamarinana ny tsiroaroan-loko iray, dia manome soso-kevitra ilay fahaiza-manao:
 
@@ -155,7 +155,7 @@ Raha tsy mahomby amin’ny fanamarinana ny tsiroaroan-loko iray, dia manome soso
 }
 ```
 
-## Fahaiza-manao Mifandray
+## Fahaiza-manao Mifandray {#related-abilities}
 
 - [Mamorona Logo SVG](./generate-logo-svg.md) — mamorona logo amin’ny paletan-loko voamarinao
 - [Mamorona Menu](./create-menu.md) — manorina fitetezana amin’ny loko mora idirana

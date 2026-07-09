@@ -4,11 +4,11 @@ title: Hereket - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Hereket: set_auth_cookie
+# Hereket: set_auth_cookie {#action-setauthcookie}
 
 Autentifikasiýa cookie-si bellenmezinden edil öň işledilýär.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Ady | Görnüşi | Düşündiriş |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Autentifikasiýa cookie-si bellenmezinden edil öň işledilýär.
 | $scheme | `string` | Autentifikasiýa shemasy. Bahalara 'auth' ýa-da 'secure_auth' girýär. |
 | $token | `string` | Bu cookie üçin ulanyljak ulanyjynyň sessiýa tokeni. |
 
-### Şondan bäri
+### Şondan bäri {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Çeşme
+### Çeşme {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) içinde 124-nji setirde kesgitlenen.

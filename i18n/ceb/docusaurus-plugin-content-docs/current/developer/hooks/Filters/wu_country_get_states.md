@@ -4,11 +4,11 @@ title: Salaan - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Salain: wu_country_get_states
+# Salain: wu_country_get_states {#filter-wucountrygetstates}
 
 Mobalik sa lista sa mga estado alang niining nasora.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Matang | Deskripsyon |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Mobalik sa lista sa mga estado alang niining nasora.
 | $country_code | `string` | Duha-ka-letrang ISO code alang sa nasod. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance sa kasamtangang class. |
 
-### Sukad
+### Sukad {#since}
 
 - 2.0.11
-### Tinubdan
+### Tinubdan {#source}
 
 Gidepina sa [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) sa linya 86
 
 
-## Mobalik
+## Mobalik {#returns}
 Ang nasala nga lista sa mga estado.

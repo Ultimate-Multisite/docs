@@ -3,11 +3,11 @@ title: Sanda wa Kayayyakin Dominin da Farashin Suya
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# mahadun-duniya da farashin samun kayan (Domain Products and Pricing)
+# mahadun-duniya da farashin samun kayan (Domain Products and Pricing) {#domain-products-and-pricing}
 
 Kayan domain suna yadda kake sarrafa farashin, TLDs (domain extensions), sirrin WHOIS, da zaɓar gudanarwa. Kowane kayan domain shine wani kayan na standard Ultimate Multisite tare da tab mai ƙarfi **Domain Settings**.
 
-## Samar da kayan domain
+## Samar da kayan domain {#creating-a-domain-product}
 
 1. Zuwa **Network Admin › Ultimate Multisite › Products**
 2. Danna **Add New** (Ƙara Mai Sabuni)
@@ -17,13 +17,13 @@ Kayan domain suna yadda kake sarrafa farashin, TLDs (domain extensions), sirrin 
 
 Kayan domain suna bayyana tare da alamar purple mai suna **Domain** a cikin babban rarrabawar kayan kuma za ka iya fassara su ta amfani da tab na **Domain Products**.
 
-## Tab na Domain Settings
+## Tab na Domain Settings {#domain-settings-tab}
 
-### Provider (Gudanarwa/Mai samarwa)
+### Provider (Gudanarwa/Mai samarwa) {#provider}
 
 Zaɓi wanda zai yi tsara rijista ga wannan kayan. Yana fara tare da **Default provider** a duniya da aka sanya a cikin Domain Seller settings.
 
-### Supported TLDs (TLDs da ake himata)
+### Supported TLDs (TLDs da ake himata) {#supported-tlds}
 
 Ka bar shi a matsayin buɗaɗɗen don samar da wani kayan **catch-all product** wanda ke aiki ga dukkan TLDs ba su da haɗi da wani kayan.
 
@@ -31,7 +31,7 @@ Ka shigar da ƙila mai tsokaci (comma-separated list) na TLDs (misali: `.com, .n
 
 **Yadda ake aiki da haɗin kayan:** Lokacin da abokin ciniki ya nema domain, wannan addon zai zaɓi mafi dacewa da kayan da suka dace. Kayar da ke da `.com` a cikin yanzuwar TLD ɗinta tana da muhimmanci fiye da wani catch-all product. Idan ba a sami wani kayan na TLD ba, ana amfani da catch-all. Idan babu wani kayan, ba za a nuna binciken domain ba.
 
-### Markup type (Nau'in farashin ƙara)
+### Markup type (Nau'in farashin ƙara) {#markup-type}
 
 Takwas nau'ikan ke sarrafa yadda ake cawa farashin kasuwanci daga kuɗin samun shi:
 
@@ -41,11 +41,11 @@ Takwas nau'ikan ke sarrafa yadda ake cawa farashin kasuwanci daga kuɗin samun s
 | **Fixed markup** (Farashin ƙara na tsari) | Yana ƙara wani latsa na musamman. Wani farashin ƙara na $5 a kan domain da ya kasance $10 yana ba da $15. |
 | **Fixed price** (Farashi na tsari) | Yana lalata kuɗin samun shi gaba ɗaya. Ya dauka kowane latsa da ka shigar. |
 
-### Introductory pricing (Farashin fara)
+### Introductory pricing (Farashin fara) {#introductory-pricing}
 
 **قیمت سال اول تخفیفی دادن را فعال کنید.** یک **قیمت معرفی (قیمت سال اول)** جداگانه در کنار **قیمت تمدید عادی (قیمت سال دوم به بعد)** قرار دهید. مشتری هر دو قیمت را هنگام تسویه حساب می‌بیند تا بداند در زمان تمدید چه انتظاری داشته باشد.
 
-### حریم خصوصی WHOIS
+### حریم خصوصی WHOIS {#whois-privacy}
 
 کنترل می‌کند که آیا برای دامنه‌های ثبت شده از طریق این محصول، حفاظت از حریم خصوصی WHOIS ارائه می‌شود یا خیر.
 
@@ -59,7 +59,7 @@ Takwas nau'ikan ke sarrafa yadda ake cawa farashin kasuwanci daga kuɗin samun s
 
 ---
 
-## وارد کردن و همگام‌سازی TLDها
+## وارد کردن و همگام‌سازی TLDها {#tld-import-and-sync}
 
 محصولات دامنه قیمت‌های عمده لحظه‌ای را از ارائه‌دهنده متصل دریافت می‌کنند. برای اینکه این کار انجام شود، باید TLDها وارد شوند.
 
@@ -70,7 +70,7 @@ Takwas nau'ikan ke sarrafa yadda ake cawa farashin kasuwanci daga kuɗin samun s
 
 ---
 
-## تمدید خودکار
+## تمدید خودکار {#auto-renewal}
 
 تمدید دامنه‌ها به وضعیت عضویت مشتری وابسته است:
 
@@ -90,7 +90,7 @@ Takwas nau'ikan ke sarrafa yadda ake cawa farashin kasuwanci daga kuɗin samun s
 
 ---
 
-## Admin: Rubutawar domain a hannun kai (Manual domain registration)
+## Admin: Rubutawar domain a hannun kai (Manual domain registration) {#admin-manual-domain-registration}
 
 Don rubuta domain a hannun wani abokin ciniki ba tare da ya tafiya ta checkout ba:
 

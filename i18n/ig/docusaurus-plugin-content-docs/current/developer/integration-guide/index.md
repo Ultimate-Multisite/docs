@@ -3,13 +3,13 @@ title: Ntuziaka Njikọ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Nduzi Njikọ
+# Nduzi Njikọ {#integration-guide}
 
 Nduzi a na-ekpuchi usoro njikọ a na-ahụkarị na Ultimate Multisite, gụnyere ijikọ na ọrụ mpụga, iwu gateways ịkwụ ụgwọ ahaziri iche, na ijikwa webhooks.
 
 Maka akụrụngwa tenant dịpụrụ adịpụ, lee [Njikọ Multi-Tenancy](./multi-tenancy) maka nduzi bootstrap tenant nwere ọchịchị onwe ya, nkwenye migration, SSO, na teardown.
 
-## Njikọ CRM
+## Njikọ CRM {#crm-integration}
 
 Mekọrịta data ndị ahịa na CRM gị mgbe ndị ahịa ọhụrụ debanyere aha:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Njikọ Analytics
+## Njikọ Analytics {#analytics-integration}
 
 Soro ihe omume azụmahịa ndị bụ isi n'ofe ndụ onye ahịa:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Nzọụkwụ Ndị Ọzọ
+## Nzọụkwụ Ndị Ọzọ {#next-steps}
 
 - [Mmepe Gateway Ahaziri Iche](./custom-gateway) — Wuo gateway ịkwụ ụgwọ nke gị
 - [Ijikwa Webhook](./webhooks) — Mepụta endpoints webhook ahaziri iche

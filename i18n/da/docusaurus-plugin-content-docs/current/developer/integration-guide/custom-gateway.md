@@ -3,11 +3,11 @@ title: Udvikling af tilpasset gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Udvikling af brugerdefineret gateway
+# Udvikling af brugerdefineret gateway {#custom-gateway-development}
 
 Du kan oprette brugerdefinerede betalingsgateways ved at udvide klassen `Base_Gateway`.
 
-## Gateway-klasse
+## Gateway-klasse {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrer gatewayen
+## Registrer gatewayen {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Nøglemetoder
+## Nøglemetoder {#key-methods}
 
 | Metode | Formål |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Håndter anmodninger om refundering |
 | `get_payment_methods()` | Returner gemte betalingsmetoder for en kunde |
 
-## Fornyelseslegitimationsoplysninger for tilbagevendende medlemskaber
+## Fornyelseslegitimationsoplysninger for tilbagevendende medlemskaber {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 lader gateway-integrationer rapportere, om et tilbagevendende medlemskab har en genanvendelig fornyelseslegitimationsoplysning, før `auto_renew` gemmes. Hook `wu_membership_has_renewal_credential` og returner:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Ryd markøren for manglende legitimationsoplysning som en del af din gateways vellykkede flow til gengodkendelse, efter at en ny genanvendelig legitimationsoplysning er gemt.
 
-## Tips
+## Tips {#tips}
 
 - Returner altid `WP_Error` ved fejl, så Ultimate Multisite kan håndtere fejlvisning
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Brug `wu_log_add()` til gateway-specifik logning
 
-## AI connector-udbyderfunktioner
+## AI connector-udbyderfunktioner {#ai-connector-provider-capabilities}
 
 Brugerdefinerede integrationer, der kalder operationer understøttet af AI connector, bør være afstemt med det understøttede sæt af OAuth-udbydere, der blev introduceret med AI Provider for Anthropic Max v1.3.0:
 

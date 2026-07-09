@@ -4,11 +4,11 @@ title: Aiki - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Aiki: set_logged_in_cookie
+# Aiki: set_logged_in_cookie {#action-setloggedincookie}
 
 Yana faruwa nan take kafin a saita cookie na tabbatarwa na mai shiga.
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Yana faruwa nan take kafin a saita cookie na tabbatarwa na mai shiga.
 | $scheme | `string` | Tsarin tabbatarwa. Tsoho 'logged_in'. |
 | $token | `string` | Token na zaman mai amfani da za a yi amfani da shi don wannan cookie. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Tushe
+### Tushe {#source}
 
 An ayyana shi a cikin [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) a layi 141

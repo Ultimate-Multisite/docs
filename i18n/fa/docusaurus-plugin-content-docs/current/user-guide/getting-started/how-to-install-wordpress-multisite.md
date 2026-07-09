@@ -3,7 +3,7 @@ title: چگونه وردپرس مالتی‌سایت را نصب کنیم
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# چطور وردپرس چندسایته را نصب کنم؟
+# چطور وردپرس چندسایته را نصب کنم؟ {#how-do-i-install-wordpress-multisite}
 
 وردپرس چندسایته (WordPress Multisite) به شما امکان می‌دهد شبکه‌ای از سایت‌ها را روی یک نصب واحد داشته باشید. این یک قابلیت داخلی است، اما به صورت پیش‌فرض فعال نیست.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# اضافه کردن اسلش انتهایی به /wp-admin
+# اضافه کردن اسلش انتهایی به /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 پس از پر کردن فیلدها، روی دکمه «افزودن سایت» کلیک کنید. بعد از ایجاد زیرسایت جدید، به آن دسترسی پیدا کنید تا مطمئن شوید زیرسایت به درستی کار می‌کند.
 
-## مشکلات رایج:
+## مشکلات رایج: {#common-problems}
 
-### ۱. می‌توانم سایت‌های جدید ایجاد کنم اما قابل دسترسی نیستند.
+### ۱. می‌توانم سایت‌های جدید ایجاد کنم اما قابل دسترسی نیستند. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 اگر زیردامنه را انتخاب کرده‌اید، باید زیردامنه‌های wildcard را نیز برای شبکه چندسایته خود تنظیم کنید.
 

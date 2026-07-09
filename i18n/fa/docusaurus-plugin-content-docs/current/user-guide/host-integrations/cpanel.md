@@ -3,17 +3,17 @@ title: یکپارچه‌سازی cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# یکپارچه‌سازی با cPanel
+# یکپارچه‌سازی با cPanel {#cpanel-integration}
 
-## معرفی
+## معرفی {#overview}
 cPanel یکی از محبوب‌ترین کنترل پنل‌های میزبانی وب است که توسط بسیاری از ارائه‌دهندگان هاست اشتراکی و اختصاصی استفاده می‌شود. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه‌ها بین Ultimate Multisite و cPanel را فراهم می‌کند و به شما اجازه می‌دهد دامنه‌های جایگزین و زیردامنه‌ها را به‌صورت خودکار به حساب cPanel خود اضافه کنید.
 
-## ویژگی‌ها
+## ویژگی‌ها {#features}
 - ایجاد خودکار addon domain در cPanel
 - ایجاد خودکار زیردامنه در cPanel (برای نصب‌های چندسایتی از نوع زیردامنه)
 - حذف دامنه هنگام پاک شدن نگاشت‌ها
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 ثابت‌های زیر باید در فایل `wp-config.php` شما تعریف شوند:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Default is 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Default is /public_html
 ```
 
-## راهنمای راه‌اندازی
+## راهنمای راه‌اندازی {#setup-instructions}
 
-### ۱. دریافت اطلاعات ورود cPanel
+### ۱. دریافت اطلاعات ورود cPanel {#1-get-your-cpanel-credentials}
 
 1. نام کاربری و رمز عبور cPanel خود را از ارائه‌دهنده هاست دریافت کنید
 2. آدرس هاست cPanel خود را مشخص کنید (معمولاً `cpanel.yourdomain.com` یا `yourdomain.com:2083`)
 
-### ۲. افزودن ثابت‌ها به wp-config.php
+### ۲. افزودن ثابت‌ها به wp-config.php {#2-add-constants-to-wp-configphp}
 
 ثابت‌های زیر را به فایل `wp-config.php` خود اضافه کنید:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Change if your cPanel uses a different port
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is different
 ```
 
-### ۳. فعال‌سازی یکپارچه‌سازی
+### ۳. فعال‌سازی یکپارچه‌سازی {#3-enable-the-integration}
 
 1. در پیشخوان WordPress، به Ultimate Multisite > Settings بروید
 2. به تب "Domain Mapping" بروید
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 4. یکپارچه‌سازی cPanel را فعال کنید
 5. روی "Save Changes" کلیک کنید
 
-## نحوه عملکرد
+## نحوه عملکرد {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 هنگامی که یک دامنه در Ultimate Multisite نگاشت می‌شود:
 
@@ -71,7 +71,7 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 2. دامنه طوری پیکربندی می‌شود که به پوشه اصلی شما اشاره کند
 3. هنگامی که نگاشت دامنه حذف می‌شود، یکپارچه‌سازی addon domain را از cPanel حذف می‌کند
 
-### زیردامنه‌ها
+### زیردامنه‌ها {#subdomains}
 
 برای نصب‌های چندسایتی از نوع زیردامنه، هنگامی که سایت جدیدی ایجاد می‌شود:
 
@@ -79,27 +79,27 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 2. درخواستی به API cPanel ارسال می‌کند تا زیردامنه را اضافه کند
 3. زیردامنه طوری پیکربندی می‌شود که به پوشه اصلی شما اشاره کند
 
-## نکات مهم
+## نکات مهم {#important-notes}
 
 - این یکپارچه‌سازی از API2 cPanel برای ارتباط با حساب cPanel شما استفاده می‌کند
 - حساب cPanel شما باید مجوز افزودن addon domains و زیردامنه‌ها را داشته باشد
 - برخی ارائه‌دهندگان هاست ممکن است تعداد addon domains یا زیردامنه‌هایی که می‌توانید ایجاد کنید را محدود کنند
 - این یکپارچه‌سازی پیکربندی DNS را مدیریت نمی‌کند؛ همچنان باید دامنه‌های خود را به آدرس IP سرورتان هدایت کنید
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
-### مشکلات اتصال به API
+### مشکلات اتصال به API {#api-connection-issues}
 - از صحت نام کاربری و رمز عبور cPanel خود اطمینان حاصل کنید
 - بررسی کنید که آدرس هاست cPanel صحیح و قابل دسترسی باشد
 - مطمئن شوید که حساب cPanel شما مجوزهای لازم را دارد
 - آدرس کامل هاست را امتحان کنید (مثلاً `https://cpanel.yourdomain.com`)
 
-### دامنه اضافه نشد
+### دامنه اضافه نشد {#domain-not-added}
 - گزارش‌های Ultimate Multisite را برای پیام‌های خطا بررسی کنید
 - مطمئن شوید که دامنه قبلاً به cPanel اضافه نشده باشد
 - اطمینان حاصل کنید که حساب cPanel شما به سقف محدودیت addon domains یا زیردامنه‌ها نرسیده باشد
 
-### مشکلات گواهی SSL
+### مشکلات گواهی SSL {#ssl-certificate-issues}
 - این یکپارچه‌سازی صدور گواهی SSL را مدیریت نمی‌کند
 - برای صدور گواهی SSL برای دامنه‌هایتان باید از ابزارهای SSL/TLS یا قابلیت AutoSSL در cPanel استفاده کنید
 - همچنین می‌توانید از سرویسی مانند Let's Encrypt همراه با AutoSSL cPanel استفاده کنید

@@ -4,13 +4,13 @@ title: Filter - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Filtruje URL presmerovania po nastavení domény ako primárnej.
 
 Umožňuje vývojárom prispôsobiť, kam budú používatelia presmerovaní po úspešnom nastavení domény ako primárnej. Predvolene presmeruje na aktuálnu URL na hlavnej lokalite alebo na admin URL upravovanej lokality.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Umožňuje vývojárom prispôsobiť, kam budú používatelia presmerovaní po 
 | $domain | `\Domain` | Objekt domény, ktorý bol nastavený ako primárny. |
 | $old_primary_domains | `array` | Pole ID domén, ktoré boli predtým primárne. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) na riadku 639
 
 
-## Návratová hodnota
+## Návratová hodnota {#returns}
 Filtrovaná URL presmerovania.

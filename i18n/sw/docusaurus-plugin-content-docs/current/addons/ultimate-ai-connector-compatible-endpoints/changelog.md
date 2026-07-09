@@ -3,9 +3,9 @@ title: Orodha ya Mabadiliko ya Kiunganishi cha AI Kamili kwa Endpoints Zinazolin
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Historia ya Mabadiliko ya Ultimate AI Connector kwa Endpoints Zinazolingana
+# Historia ya Mabadiliko ya Ultimate AI Connector kwa Endpoints Zinazolingana {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Toleo 2.0.0 — Ili kutolewa tarehe 2026-04-24
+## Toleo 2.0.0 — Ili kutolewa tarehe 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * **Jipya:** Usaidizi wa watoa huduma wengi — sasa unaweza kuweka mipangilio ya endpoints za AI nyingi na kusambaza maombi kwa kurudi kiotomatiki (automatic fallback) kupitia watoa huduma wote.
 * **Kuboresha:** Uunganishaji wa Multi-provider SDK kwa kutumia ID sahihi za watoa huduma, URLs za usajili, na ukomo wa HTTP filter kwa kila mtoa huduma.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * **Kuboresha:** Imefuta ombi la HTTP linalozuia (blocking HTTP request) ambalo lilikuwa likitokea kila wakati unapopakua ukurasa.
 * **Uboreshaji:** Mifumo ya GitHub Actions imesasishwa hadi Node.js 24.
 
-## Toleo 1.0.0 — Toleo la Awali
+## Toleo 1.0.0 — Toleo la Awali {#version-100--initial-release}

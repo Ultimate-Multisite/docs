@@ -3,7 +3,7 @@ title: Ymddygiad Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ymddio'r Ultimate Multisite gyda Zapier
+# Ymddio'r Ultimate Multisite gyda Zapier {#integrating-ultimate-multisite-with-zapier}
 
  mewn un o'r anghylchenau, ddebethau ni ddysgwylch [Webhooks](webhooks.md) ac sut gallai eu defnyddio i gysylltu â ffurfau allweddol (3rd party applications).
 
@@ -15,7 +15,7 @@ Gallwch creu **Triggers** aros y byth i fod yn cael eu gweithredu pan fydd ei fr
 
 Mae hyn yn bosibl oherwydd bod y **triggers a actions o'r Ultimate Multisite Zapier** yn cael eu gweithredu trwy'r [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Sut i entynnu
+## Sut i entynnu {#how-to-start}
 
 Cyndd, chwilio am Ultimate Multisite mewn llyfr appiau Zapier. Fel alternatiw, gallwch chi clisi'r [llink hwn](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Ar y field URL, rhoi eich llwybr cyd-llwybr rheol yn llawn, gan gynnwys y protoc
 
 Cliciw ar y bot **Yes, Continue** i symud i'r cynllun nesaf. Os bydd pob hyn yn gweithio'n dda, bydd eich cyfrifau newydd a chysylltiedig yn cael eu cyflwyno! Clicwch ar **Continue** i creu rhywbeth newydd fel trigger.
 
-## Sut i creu trigger newydd
+## Sut i creu trigger newydd {#how-to-create-a-new-trigger}
 
 Nydyn fy nghyddu eich cyfrif wedi'i cysylltu, gallwch gweld y digwyddiadau sydd ar gael. Gadewch y digwyddiad **payment_received** (deimlo'r cyflwyniad) ar gyfer y tutorial hwn.
 
@@ -67,7 +67,7 @@ Yn y stad hwn, bydd Zapier yn gwneud gwylio os oes capacol eich Zap gallu **gwyn
 
 Yn eurol yn y tutorial, roedd y gwylio wedi'i **cyflawio'n iawn** ac wedi dod â phryd o ffurfiad enw. Bydd y ddata hyn yn ddefnyddiol i'r cyfarwyddo i ni pan byddwn yn creu gweithredoedd (actions). Mae eich triger yn cael ei creu ac yn barod i'w cysylltu â chwaraeon eraill.
 
-## Sut i creu Actions
+## Sut i creu Actions {#how-to-create-actions}
 
 Mae actions yn defnyddio wybodaeth o trigerau eraill i creu cyflwyniadau newydd yn y rhwydwaith eich.
 
@@ -79,7 +79,7 @@ Yn y cynllun nesaf, gallwch creu eich cyfathriant (authentication), fel yr oeddw
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Cyflwyniad y Action
+### Cyflwyniad y Action {#setting-up-the-action}
 
 Mae hyn yn **y cynllun canol y action** ac mae pethau yn rhywfaint yn ddiwethaf. Y wybodaeth cyntaf y byddwch yn debyg yw'r **Item**. Mae'r Item yn **model wybodaeth** o'ch rhwydwaith fel **Customers, Payments, Sites, Emails** a chwaraeon eraill.
 

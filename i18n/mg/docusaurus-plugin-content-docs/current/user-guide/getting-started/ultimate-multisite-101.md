@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite dia plugin WordPress izay ahafahanao manolotra WaaS na Websites as a Service ho an'ny mpanjifa. Alohan'ny handroso sy fianarana ny fomba hanampian'i Ultimate Multisite amin'ny fandraisana anjara iainanao sy ireo mpanjifanao dia misy fahalalana fototra tokony azontsika.
 
-## Ny WordPress Multisite
+## Ny WordPress Multisite {#the-wordpress-multisite}
 
 Mino antsika rehetra no mahazatra amin'ny fametrahana WordPress izay efa misy (stock-standard). Na mamorona azy ianao amin'ny alalan'ny control panel an'ny hosting provider anao na, ho ireo mpanjaka matanjaka dia manamboatra server sy database vaovao, mandray ny fichier fototra ary manomboka ny dingana fametrahana.
 
@@ -21,13 +21,13 @@ Raha fintinina, azo heverina ho toy izao ny WordPress multisite: Ny Oniversite i
 
 Mba hanazavana ity fehezanteny ity isika hifantoka amin'ny teny fototra vitsivitsy izay misy ao anatin'ny antontan-taratasy Ultimate Multisite ihany fa eo amin'ny vondron'ny WordPress koa.
 
-### Ny Tambonina (The Network)
+### Ny Tambonina (The Network) {#the-network}
 
 Amin'ny lafiny WordPress, ny multisite network dia toerana ahafahana mitantana ireo subsite maro avy amin'ny dashboard iray. Na dia miova aza ny fomba famoronana multisite network eo anelanelan'ny mpamatsy hosting samihafa, dia matetika dia misy toromarika fanampiny vitsivitsy ao amin'ny fichier `wp-config.php` mba hanomezana ny WordPress fahalalana fa miasa amin'ity fomba manokana ity izy.
 
 Misy fahasamihafana maro eo anelanelan'ny multisite network sy ny fametrahana WordPress tsy misy (stand-alone installation) izay hohazavaina fohy isika.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#subdomain-vs-subdirectory}
 
 Iray amin'ireo fanapahan-kevitra voalohany tokony hataonao dia hoe raha ny fametrahana multisite dia hiara-miasa amin'ny _subdirectories_ (fizarana) na _subdomains_ (domaine aloha). Ny Ultimate Multisite dia miasa tsara amin'ireo safidy roa ireo, saingy misy fahasamihafana ara-drafitra eo amin'ireo fametrahana roa ireo.
 
@@ -43,7 +43,7 @@ Amin'ny fanamboarana `_subdomain_`, ny fampiasana wildcard SSL certificate dia i
 
 Na misy safidy hafa aza, matetika dia voafetra amin'ny fatra sy ny fampiasana izy ireo ary mitaky fanamboarana sy fandinihana hafa momba ny mety ho azo atao.
 
-#### Plugins sy Themes
+#### Plugins sy Themes {#plugins-and-themes}
 
 Inona no ataon'i WordPress izay mampanina azy koa, indrindra raha jerena avy amin'ny lafiny mpampiasa (customer). Raha misy fampiasana WordPress iray manokana (stand-alone installation) dia raha misy administrator ny tranonkala nampiditra plugin ratsy na tsy mitazona ny fampiasana azy ho vaovao, dia izy ihany no ho loha-taranaka sy olana amin'izany asa izany. Na izany aza, rehefa manome plugin ratsy ny administrator amin'ny fanamboarana multisite, dia miteraka loha-taranaka ho an'ny toerana rehetra voafidy ao anatin'ny tambajotra (network).
 
@@ -51,7 +51,7 @@ Izany noho izany rehefa voafidy ho WordPress multisite dia manala ny fahaizana a
 
 Amin'izay lafiny io, ny network administrator no tompon'andraikitra amin'ny fametrahana plugin sy theme ao anatin'ny tambajotra ary manome alalana (permissions) mba hampiasain'ireo plugin sy theme ireo ho an'ireo tranokala ao amin'ny tambajotra. Tsy afaka mametraka plugin na theme ny mpitantana ireo tranokala, na tsy afaka miditra amin'ny plugin sy theme izay tsy voatendry azy ireo.
 
-#### Mpampiasa sy Mpitantana (Users and Administrators)
+#### Mpampiasa sy Mpitantana (Users and Administrators) {#users-and-administrators}
 
 Ao anatin'ny WordPress Multisite, ny tranokala rehetra ao amin'ny tambajotra dia mizara ny database iray ary noho izany dia mizara ny mpampiasa, ny anjara toerana (roles), ary ny fahaizana (capabilities) mitovy. Ny fomba tsara indrindra hihevitra azy dia hoe ny mpampiasa rehetra dia mpikambana ao amin'ny tambajotra fa tsy tranokala iray manokana.
 
@@ -63,13 +63,13 @@ Mamerina indray ny fanambarana etsy ambony, na dia toa mifandray amin'ny tranoka
 
 Na dia tsy fomba mahazatra amin'ny rafitra orinasa aza, ity loharanon-teny iray ho an'ny fametrahana sy fanamarinana mpampiasa (user registration and authentication) dia sarotra kokoa ho fantatry ny olona izay mahazatra amin'ny WordPress misy manokana (stand-alone installations), satria mora kokoa ny fitantanana mpampiasa eo amin'izany.
 
-#### Media
+#### Media {#media}
 
 Rehefa misarika database iray ny tranokala maro ao anatin'ny WordPress Multisite, dia mitazona lalana samihafa eo amin'ny rafitry ny fitaovana (filesystem) ho an'ny rakitra media izy ireo.
 
 Ny toerana mahazatra an'ny WordPress (wp-content/uploads) dia mijanona ho toy ny teo aloha; na dia ovaina aza ny lalany mba hanehoana ny famantarana manokana an'ilay site maro. Vokatr'izany, ny rakitra media ho an'ny site maro dia miseho amin'ny endrika wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Efa nilaza teo aloha fa misy tombony manokana ny fomba fanaovana _subdomain_ mihoatra ny _subdirectory_. Iza izany no lalana (paths).
 
@@ -83,7 +83,7 @@ Amin'ny fomba _subdomain_, tsy ilaina ity asa ity satria ny site maro tsirairay 
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 Ao amin'ny fepetra ao amin'ny _subdirectory_ dia misy mety hisian'ny fifanolanana anarana amin'ireo pejy statika ho toy ny toerana lehibe ary ireo tranonkala tambajotra (network sites) dia mizara ny lalana mitovy.
 
@@ -93,7 +93,7 @@ Mba hisorohana izany, manome fomba iantsoana an-tsokosoko WordPress mba hanakana
 
 Ao amin'ny fepetra _subdomain_ dia voafehy ny mety hisian'ny fifanolanana anarana noho ny _subdomain_, satria manokana ho an'ilay tranonkala tambajotra izy ary tsy mifandray amin'ny tranonkala lehibe na inona na inona.
 
-### Fisoratana (Registration)
+### Fisoratana (Registration) {#registration}
 
 Ao anatin'ny fepetra tambajotra WordPress Multisite dia misy safidy vaovao maromaro ho an'ny fisoratana anarana mpampiasa, izay ahafahana mamorona toerana vaovao sy manome toerana ireo mpampiasa efa misy.
 
@@ -111,7 +111,7 @@ Amin'izay fomba io, rehefa miditra ny mpampiasa, dia miditra ao amin'ny network 
 
 Na izany aza, raha ny tanjona sy ny antony namboarin'ilay multisite dia hanolotra toerana maromaro tsy mifandray amin'ny hafa ianao, dia matetika mila plugins ivelany na fanampiny mba hanovana ny anjara asan'ny mpampiasa.
 
-### Domain sy SSL
+### Domain sy SSL {#domain-and-ssl}
 
 Andao hiresaka momba ny fametrahana WordPress Multisite izay tena mety ho very amin'ny saina antsika - Wordpress.com. Io no ohatra mivelatra indrindra momba ny WordPress multisite ary mampiseho ny fahaizany lehibe amin'ny fanovana sy famoronana azy mba hanatanterahana tanjona iray manokana.
 
@@ -125,11 +125,11 @@ Ho an'ny mpitantana ny tambajotra, izany dia manome dingana fanampiny sarotra eo
 
 Amin'izay lafiny, na dia manome fomba iray aza ny WordPress Multisite mba hahafahana mampifandray [www.anotherdomain.com](http://www.anotherdomain.com) amin'ny 'site1', dia mijanona ho an'ny mpitantana ny tambajotra ny fanamby momba ny fitantanana ivelany ireo entry DNS sy ny fanatanterahana ireo sertifika SSL.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Rehefa fantatra tsara ny fahasamihafana eo amin'ny fametrahana WordPress iray manokana (stand-alone) sy ny fametrahana Multisite, andeha hijery hoe ahoana no fitaovana tena ilaina an'i Ultimate Multisite mba hanomezana Websites as a Service (WaaS).
 
-### Fampidirana
+### Fampidirana {#introduction}
 
 Ny Ultimate Multisite dia toy ny "Swiss Army knife" anao rehefa manao Website as a Service (WaaS) ianao. Heverina hoe Wix.com, Squarespace, WordPress.com ary avy eo mieritreritra ny fananana tolotra anao manokana.
 
@@ -137,9 +137,9 @@ Ao anatiny, mampiasa ny Ultimate Multisite ny WordPress Multisite fa amin'ny fom
 
 Ao amin'ireo faritra manaraka dia hijery antsika ny ohatra fampiasana (use cases) sy ny zavatra ilaina mba hanohanana ireo toe-javatra ireo.
 
-### Ohatra Fampiasana (Use Cases)
+### Ohatra Fampiasana (Use Cases) {#use-cases}
 
-#### Tranga 1: Antso (An Agency)
+#### Tranga 1: Antso (An Agency) {#case-1-an-agency}
 
 Matetika, ny fahaizana fototra an'ny antso dia mifantoka amin'ny famolavolana tranonkala izay misy lafiny toy ny fanomezana toerana (hosting) na ny marketing ho serivisy fanampiny.
 
@@ -165,7 +165,7 @@ Ny thème dia manome fiasa mitovy, izay ahafahana manao ny thème iray ho azo am
 
 Ho an'ny agency ireo dia hahatsapa fiadanana amin'ny alalan'ny Ultimate Multisite satria ahafahany manao izay tena mahay azy—manamboatra tranonkala tsara indrindra.
 
-#### Tranga 2: Mpamatsy Manokana (Niche Provider)
+#### Tranga 2: Mpamatsy Manokana (Niche Provider) {#case-2-niche-provider}
 
 Misy teny lany taloha hoe, “manao zavatra iray ary ataovy tsara”. Ho an'ny manam-pahaizana maro dia midika izany ny famoronana vokatra na serivisy mifototra amin'ny hevitra fototra tokana.
 
@@ -179,7 +179,7 @@ Ho an'ny mpamatsy toerana manokana (niche sites) sy serivisy, izany dia manome t
 
 Miankina amin'ny fepetra ilainao dia mety ho an'ny _subdirectory_ na _subdomain_ ny fanamboarana, ary amin'izay toe-javatra izay, ny safidy momba ny rafitra dia eo amin'ny mari-pahaizana SSL tsotra ho an'ny _subdirectories_ na mari-pahaizana wildcard SSL ho an'ny _subdomains_.
 
-#### Tranga 3: Fampiasana WordPress Web Hosting
+#### Tranga 3: Fampiasana WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Misy fomba maro samihafa hanome hosting ho an'ny tranonkala WordPress, saingy tsy dia tsotra loatra ny manome toerana web ho an'ny mpanjifa miaraka amin'ny dikan-teny efa voa asiana WordPress. Izany no satria mila fanapahan-kevitra sy fandraisana an-tsaina maro izay tokony hifandray mba hanomezana tolotra tena ilain'ny mpanjifa.
 
@@ -191,11 +191,11 @@ Ho an'ireo developer izay te-hifandray amin'ny Ultimate Multisite, ny vahaolana 
 
 Tsy mitaky fanohanana ireo plugin sy lisansy ivelany maro i Ultimate Multisite, satria manome vahaolana be tolotra ary azo ampitahaina amin'ny Wix, Squarespace, WordPress.com ary hafa.
 
-### Fandraisana an-tsaina momba ny rafitra (Architecture Considerations)
+### Fandraisana an-tsaina momba ny rafitra (Architecture Considerations) {#architecture-considerations}
 
 Na dia tsy toromarika feno aza izany, ireo zavatra manaraka dia tokony ho torolalana amin'ny safidy marina amin'ireo teknolojia hanohanana ny fanatanterahana Ultimate Multisite.
 
-#### Hosting miaraka (Shared vs. Dedicated Hosting)
+#### Hosting miaraka (Shared vs. Dedicated Hosting) {#shared-vs-dedicated-hosting}
 
 Mba misy olona rehetra manome asa mitovy, ary ny sasany dia mampiasa fahaizana be amin'ny server. Matetika, ireo mpamatsy mora vidy dia mahazo tombony amin'ny alalan'ny fanatontosana ny haavo avo indrindra amin'ny server. Noho izany, ny fametrahanao Ultimate Multisite dia mety ho iray amin'ireo toerana maro an'ilay server iray ihany.
 
@@ -209,7 +209,7 @@ Fantatro fa miasa tsara amin'ireo mpamatsy hosting maromaro i Ultimate Multisite
 
 Ho an'ny lisitry ny mpamatsy mifanaraka sy toromarika feno momba ny fanamboarana azy ho tsirairay dia jereo ao amin'ny dokamanta Compatible Providers.
 
-#### Fanamarihana Momba ny Fahombiazana (Performance Considerations)
+#### Fanamarihana Momba ny Fahombiazana (Performance Considerations) {#performance-considerations}
 
 Tsy rindrambaiko salama i Ultimate Multisite, fa haingana be izy. Na izany aza, miasa hatramin'izay vitan'ilay application sy ny fototra (infrastructure) eo aminy ihany ary afaka mampiasa izay azon'izy ireo ihany.
 
@@ -227,7 +227,7 @@ Noho izany, ny mpitantana tambajotra maro dia mampiasa vahaolana caching amin'ny
 
 Ny Ultimate Multisite dia ahitana modifika Cloudflare sarotra izay ahafahan'ireo mpitantana tambajotra mametraka ny fametrahany ao aoriana an'i Cloudflare ary mampiasa tsy ny fahaizana mitahiry (caching) ihany fa koa DNS hosting, SSL certificates ary fomba fiarovana.
 
-#### Backups
+#### Backups {#backups}
 
 Afaka mangataka olona 50 ianao mba hanome torohevitra momba ny backups ary handray hevitra samihafa 50 momba ny paikady fanatanterahana backups. Ny valiny dia: miankina amin'izany.
 
@@ -237,7 +237,7 @@ Ho an'ity fizarana ity dia hataontsika fifanarahana fa ny *backup* dia kopia ira
 
 Amin'ity fahatakarana ity, ny valiny momba ny fomba hanatanterahana ireo *backups* ary izay tsara indrindra ho an'ny tontolo iainanao dia miankina betsaka amin'ny zavatra ilainao sy ny fahafahan'ny mpamatsy (hosting provider) hanome ireo zavatra ireo. Na izany aza, araka ny fepetra manokana indrindra ka hatramin'ny tsy misy fepetra mihitsy, ireto no safidy azo atao mba hanomezana toromarika anareo:
 
-#### Snapshots (Fandrefesana)
+#### Snapshots (Fandrefesana) {#snapshots}
 
 Ny *Snapshots* dia toy ny "silver bullets" ho an'ny *backups* satria mora, tsy sarotra (raha te-handray azy amin'ny fampidirana), ary mandeha tsara izy. Na izany aza, mila fanampiana kely avy amin'ny mpamatsy ianao ary matetika dia miankina amin'ny VPS (Virtual Private Server) na zavatra mitovitovy amin'izany no tena ilainao. Misy mpamatsy maromaro voalaza ao amin'ny antontan-taratasy momba ny "Compatible Providers" anay izay manome *backups* tsy mila fampidirana na fanazavana hafa avy amin'ny *network administrator*.
 
@@ -247,7 +247,7 @@ Rehefa ny famahan-tsary (backup) mahazatra dia mikendry ireo rakitra sy database
 
 Mety hitondra fandoavam-bola fanampiny ny *snapshot* avy amin'ny mpamatsy (hosting provider) izany, fa fiantohana izany dia toy ny fiantohana ho an'ny loza.
 
-#### Scripts ivelany (*External Scripts*)
+#### Scripts ivelany (*External Scripts*) {#external-scripts}
 
 Tsy misy olana betsaka momba ireo script sy vahaolana ivelany mba hifampianarana (backup) ireo harena WordPress sy MySQL ary mety tsara ho an'Ultimate Multisite satria plugin WordPress izy, izay mampiasa ny rafitra fiasan'ny WordPress sy ny database. Noho izany, vahaolana manao backup ireo tranokala WordPress dia afaka manome tombony amin'ny filan'ny Ultimate Multisite.
 
@@ -255,7 +255,7 @@ Tsy afaka manoro hevitra script iray ho tsara kokoa noho ny hafa isika fa torohe
 
 Tokony ho fantatra fa rehefa miasa ireo script ireo dia hanome lanja ny rafitra (system load), izay tokony hodinihina.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Tsy misy olana tena lehibe amin'ny WordPress izay tsy azo voavaha amin'ny alalan'ny plugin ary raha tsy mahay mitantana ireo script ivelany ianao, dia mety ho ny plugin no safidy tsara indrindra manaraka.
 
@@ -263,7 +263,7 @@ Na dia misy fomba maro ny plugin, nefa matetika mitovy ny asany: ny mamorona kop
 
 Rehefa misafidy plugin anao, dia tsara raha fantatrao fa mahafantatra ny fahaizany miasa amin'ny multisite izy. Noho ny fomba fiasany mandritra ny fanatanterahana backup, dia azo inoana fa hisy fampitomboana (load) eo amin'ny server ianao mandra-pahatongan'ny dingana.
 
-#### Domain sy SSL
+#### Domain sy SSL {#domain-and-ssl-1}
 
 Misy resaka maro efa nolazainy momba ny domain anarana amin'ny fomba _subdomain_ ao amin'ny multisite. Vahaolana tena mahazatra ho an'ny mpitantana tambajotra dia ny mampiasa "wildcard DNS entries".
 
@@ -287,7 +287,7 @@ Ho an'ny olona maro, ny fampiasana Cloudflare dia safidy mora. Ny mpanjifa dia m
 
 Ankoatra izany, mila mitady vahaolana hafa izay no antony nampanantenan'i Ultimate Multisite ny lisitry ny Compatible Providers (Vahaolana Mifanaraka). Izany dia satria ny fomba fanamboarana DNS sy SSL dia mety ho zavatra sarotra. Na izany aza, amin'ny alalan'ny fampifandraisan'i Ultimate Multisite amin'ireo provider ireo, dia lasa mora kokoa ny fahasarotana ary voatanteraka ny fomba fiasa.
 
-#### Plugins (Fitaovana Fanampiny)
+#### Plugins (Fitaovana Fanampiny) {#plugins-1}
 
 Mety ho mila plugins hafa ianao mba hanomezana fahaizana ho an'ny mpanjifa na ireo toerana ao amin'ny tambajotra (network sites). Ny plugin rehetra ve dia miasa tsara amin'ny WordPress Multisite sy Ultimate Multisite? Miankina amin'izany.
 

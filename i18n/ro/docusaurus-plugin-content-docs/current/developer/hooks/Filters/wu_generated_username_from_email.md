@@ -4,11 +4,11 @@ title: Filtru - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Filtru: wu_generated_username_from_email
+# Filtru: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Filtrează numele de utilizator generat pentru clienți.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtrează numele de utilizator generat pentru clienți.
 | $new_user_args | `array` | Un array cu argumente pentru utilizatorul nou, care poate include numele de familie și prenumele. |
 | $suffix | `string` | Cărecola de text pe care o adaugă la numele de utilizator pentru a-l face unic. |
 
-### De la
+### De la {#since}
 
 - 3.7.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) la linia 488

@@ -4,13 +4,13 @@ title: Veprim - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Veprim: wp_ultimo_captcha_load
+# Veprim: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
 
 Aktivizohet kur të gjitha varësitë janë ngarkuar.
 
-### Që nga
+### Që nga {#since}
 
 - 1.0.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`ultimate-multisite-captcha.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/ultimate-multisite-captcha.php#L240) në rreshtin 240

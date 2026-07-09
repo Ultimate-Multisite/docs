@@ -3,13 +3,13 @@ title: Konstruu niĉan retejan komercon
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Konstruu niĉan retejan komercon per Ultimate Multisite
+# Konstruu niĉan retejan komercon per Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Plej multaj homoj, kiuj provas vendi retejojn, konkuras pri prezo kontraŭ Wix, Squarespace, kaj miloj da sendependaj laboristoj. Ili perdas. Tiuj, kiuj venkas, elektas specifan publikon, konstruas solvon adaptitan al tiu publiko, kaj postulas pagon por la valoro, kiun ili liveras.
 
 Ĉi tiu kurso instruas al vi kiel fari ĝuste tion uzante Ultimate Multisite.
 
-## Kion vi konstruos
+## Kion vi konstruos {#what-you-will-build}
 
 Dum ĉi tiu kurso vi konstruos realan, funkciantan reton nomatan **FitSite** -- reteja platformo konstruita specife por taŭgecaj studioj, personaj trejnistoj, kaj gimnastikejaj posedantoj.
 
@@ -23,7 +23,7 @@ Dum ĉi tiu kurso vi konstruos realan, funkciantan reton nomatan **FitSite** -- 
 
 Vi sekvos paŝon post paŝo, kaj ĝis la fino vi havos kaj funkciantan platformon kaj la scion por ripeti la procezon por ajna niĉo, kiun vi elektos.
 
-## Kial taŭgecaj studioj?
+## Kial taŭgecaj studioj? {#why-fitness-studios}
 
 Ni bezonis konkretan ekzemplon, kiun iu ajn povas sekvi. Taŭgecaj studioj taŭgas ĉar:
 
@@ -34,7 +34,7 @@ Ni bezonis konkretan ekzemplon, kiun iu ajn povas sekvi. Taŭgecaj studioj taŭg
 
 Ĉio, kion vi lernas konstruante FitSite, aplikiĝas rekte al kia ajn niĉo vi elektas: restoracioj, nemoveblaĵaj agentoj, advokataj firmaoj, preĝejoj, metiaj kontraktistoj, aŭ ajna alia vertikalo.
 
-## Kursa strukturo
+## Kursa strukturo {#course-structure}
 
 Ĉiu leciono enkondukas unu koncepton, klarigas kial ĝi gravas, kaj gvidas vin tra efektivigo de ĝi en la FitSite-reto. Ĉiu leciono konstruas sur la antaŭa.
 
@@ -55,7 +55,7 @@ Ni bezonis konkretan ekzemplon, kiun iu ajn povas sekvi. Taŭgecaj studioj taŭg
 | [13. Pligrandiĝo](lesson-13-growth) | Kresko de unuaj klientoj al vera komerco | FitSite-kreska kaj aŭtomatiga strategio |
 | [14. Kio sekvas](lesson-14-whats-next) | Vastiĝo al apudaj niĉoj kaj novaj ŝancoj | Via vojmapo preter FitSite |
 
-## Antaŭkondiĉoj
+## Antaŭkondiĉoj {#prerequisites}
 
 - WordPress Multisite-instalaĵo (aŭ volo starigi tian)
 - Aktiva Ultimate Multisite-licenco
@@ -63,6 +63,6 @@ Ni bezonis konkretan ekzemplon, kiun iu ajn povas sekvi. Taŭgecaj studioj taŭg
 
 Neniu kodado estas bezonata. Se vi neniam antaŭe uzis Ultimate Multisite, tio estas en ordo -- Leciono 3 komenciĝas de freŝa instalado.
 
-## Ĉu preta?
+## Ĉu preta? {#ready}
 
 Komencu per [Leciono 1: Kial niĉo venkas](lesson-1-why-niche).

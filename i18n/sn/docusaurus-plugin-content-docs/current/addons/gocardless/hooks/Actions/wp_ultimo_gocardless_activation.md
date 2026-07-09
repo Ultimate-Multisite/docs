@@ -4,13 +4,13 @@ title: Chiito - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Chiito: wp_ultimo_gocardless_activation
+# Chiito: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
 
 Rega zvimwe zvikamu zvewedzero zvibatanidze maitiro azvo ekubatidzwa
 
-### Kubva
+### Kubva {#since}
 
 - 1.9.6
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/class-hooks.php#L83) pamutsetse 83

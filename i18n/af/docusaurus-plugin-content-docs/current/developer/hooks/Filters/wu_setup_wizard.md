@@ -4,11 +4,11 @@ title: Filter - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard
+# Filter: wu_setup_wizard {#filter-wusetupwizard}
 
 Dit laat ontwikkelaars toe om bykomende stappe by die opstel-wizard te voeg.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Dit laat ontwikkelaars toe om bykomende stappe by die opstel-wizard te voeg.
 | $is_migration | `bool` | Of dit 'n migrasie is of nie. |
 | $wizard | `object` | Die huidige instansie. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.0.0
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) by lyn 525
 
 
-## Gee terug
+## Gee terug {#returns}

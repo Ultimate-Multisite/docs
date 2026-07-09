@@ -3,7 +3,7 @@ title: AffiliateWP izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP izmaiņu žurnāls
+# AffiliateWP izmaiņu žurnāls {#affiliatewp-changelog}
 
 Versija: 2.0.1 - Izlaista 2025-09-28
 

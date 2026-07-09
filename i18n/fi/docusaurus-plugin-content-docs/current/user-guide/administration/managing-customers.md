@@ -3,7 +3,7 @@ title: Asiakkaiden hallinta
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Asiakkaiden hallinta
+# Asiakkaiden hallinta {#managing-customers}
 
 **Asiakkaat**-sivu näyttää listan jäsenistä, jotka ovat rekisteröityneet verkostoon. Tällä sivulla näkyy peruskäyttäjätietoja, kuten nimi, sähköpostiosoite, viimeisin kirjautuminen ja **vaihto**-linkki, jolla voit kirjautua käyttäjän alisivulle sivuston ylläpitäjänä.
 

@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## လိုအပ်ချက်များ (Requirements)
+## လိုအပ်ချက်များ (Requirements) {#requirements}
 
 - WordPress 5.3 သို့မဟုတ် အထက်
 - PHP 7.4 သို့မဟုတ် အထက်
 - Multisite Ultimate plugin (အသက်ဝင်ရမည်)
 
-## တပ်ဆင်ခြင်း (Installation)
+## တပ်ဆင်ခြင်း (Installation) {#installation}
 
 1. Addon ဖိုင်များကို သင့်ရဲ့ `/wp-content/plugins/` directory ထဲသို့ တင်ပါ။
 2. WordPress ရဲ့ 'Plugins' menu မှတစ်ဆင့် Plugin ကို အသက်သွင်းပါ။
 3. Network Admin မှာ Addon settings များကို စနစ်တကျ ချိန်ညှိပါ။
 
-## ဖွံ့ဖြိုးတိုးတက်မှု (Development)
+## ဖွံ့ဖြိုးတိုးတက်မှု (Development) {#development}
 
-### စတင်ပြင်ဆင်ခြင်း (Setup)
+### စတင်ပြင်ဆင်ခြင်း (Setup) {#setup}
 
 ```bash
 # Dependencies များကို တင်ခြင်း
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure (စီမံကဏ္ဍဖွဲ့စည်းပုံ)
+### Project Structure (စီမံကဏ္ဍဖွဲ့စည်းပုံ) {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### စမ်းသပ်မှုများ (Testing)
+### စမ်းသပ်မှုများ (Testing) {#testing}
 
 ဤ Addon တွင် အပြည့်အဝ စမ်းသပ်မှု စနစ် (testing framework) ပါဝင်သည်-
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Test Coverage**: Code coverage ကို စောင့်ကြည့်ရန် စနစ်တကျ ချိန်ညှိထားသည်
 - **Multisite Testing**: Multisite ပတ်ဝန်းကျင်တွင် စမ်းသပ်မှုများ လုပ်ဆောင်သည်
 
-### Code Standards (ကုဒ် စံနှုန်းများ)
+### Code Standards (ကုဒ် စံနှုန်းများ) {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS မှတစ်ဆင့် အကောင်အထည်ဖော်ထားသည်
 - **PHP 7.4+ Compatibility**: ခေတ်မီ PHP အင်္ဂါရပ်များကို ပံ့ပိုးပေးသည်
 - **Static Analysis**: Type checking အတွက် PHPStan ကို ပေါင်းစပ်ထားသည်
 - **Code Modernization**: PHP upgrade အတွက် Rector rules များ
 
-### Build System (တည်ဆောက်မှု စနစ်)
+### Build System (တည်ဆောက်မှု စနစ်) {#build-system}
 
 - **Asset Processing**: CSS/JS ဖိုင်များအတွက် Minification လုပ်ခြင်း
 - **Translation**: POT file ထုတ်ပေးခြင်း
 - **Packaging**: ဖြန့်ဝေရန် Archive ဖန်တီးခြင်း
 - **Development Mode**: Debugging အတွက် Minified မလုပ်ထားသော assets များ
 
-## Configuration (ဖွဲ့စည်းပုံ)
+## Configuration (ဖွဲ့စည်းပုံ) {#configuration}
 
 ဤ Addon သည် network admin interface မှတစ်ဆင့် ဝင်ရောက်နိုင်သော ဖွဲ့စည်းပုံ ရွေးချယ်မှု အမျိုးမျိုးကို ပံ့ပိုးပေးပါသည်။
 
-## Hooks and Filters (Hooks နှင့် Filters)
+## Hooks and Filters (Hooks နှင့် Filters) {#hooks-and-filters}
 
-### Actions (လုပ်ဆောင်ချက်များ)
+### Actions (လုပ်ဆောင်ချက်များ) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Addon ကို စတင်ချိန်ပြီးနောက် အလုပ်လုပ်သည်
 - `ultimate-multisite-ai-site-builder_loaded` - Addon ဖိုင်အားလုံး တင်ပြီးနောက် အလုပ်လုပ်သည်
 
-### Filters (စစ်ထုတ်မှုများ)
+### Filters (စစ်ထုတ်မှုများ) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Addon settings များကို ပြုပြင်ရန်
 - `ultimate-multisite-ai-site-builder_enabled` - Addon ဖွင့်/ပိတ် အခြေအနေကို အစားထိုးရန်
 
-## License (လိုင်စင်)
+## License (လိုင်စင်) {#license}
 
 ဤ Addon ကို GPL v3 သို့မဟုတ် နောက်ပိုင်းဗားရှင်းအောက်တွင် လိုင်စင်ပေးထားပါသည်။
 
-## Support (အကူအညီ)
+## Support (အကူအညီ) {#support}
 
 အကူအညီနှင့် စာရွက်စာတမ်းများအတွက် [MultisiteUltimate.com](https://multisiteultimate.com) သို့ ဝင်ရောက်ကြည့်ရှုပါ။
-## Changelog (ပြောင်းလဲမှု မှတ်တမ်း)
+## Changelog (ပြောင်းလဲမှု မှတ်တမ်း) {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix ကို ultimate-multisite အဖြစ် ပြောင်းလဲခြင်း၊ text domain ကို အပ်ဒိတ်လုပ်ခြင်း၊ version တိုးမြှင့်ခြင်း။
 

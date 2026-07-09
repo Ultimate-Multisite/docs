@@ -3,11 +3,11 @@ title: হুকসমূহৰ তথ্যসূত্ৰ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks সন্দৰ্ভ
+# Hooks সন্দৰ্ভ {#hooks-reference}
 
 Ultimate Multisite-ৰ সকলো **59টা actions** আৰু **118টা filters**-ৰ বাবে স্বয়ংক্ৰিয়ভাৱে সৃষ্টি কৰা নথিপত্ৰ।
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — প্ৰমাণীকৰণ পুনঃনিৰ্দেশৰ আগতে চলে।
 - [set_auth_cookie](./Actions/set_auth_cookie) — প্ৰমাণীকৰণ cookie ছেট কৰাৰ ঠিক আগতে চলে।
@@ -70,7 +70,7 @@ Ultimate Multisite-ৰ সকলো **59টা actions** আৰু **118টা f
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — এটা বস্তু ডাটাবেছত সংৰক্ষিত হোৱাৰ পিছত চলে।
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — প্লাগইন বিকাশকাৰীসকলক আনলক কৰাৰ প্ৰক্ৰিয়াত কাৰ্য যোগ কৰিবলৈ অনুমতি দিয়ে।
 
-## ফিল্টাৰসমূহ
+## ফিল্টাৰসমূহ {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — প্ৰমাণীকৰণ কুকিৰ মেয়াদ উকলাৰ সময়সীমাৰ অৱধি ফিল্টাৰ কৰে।
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — প্ৰমাণীকৰণ পুনঃনিৰ্দেশ আঁচনি ফিল্টাৰ কৰে।

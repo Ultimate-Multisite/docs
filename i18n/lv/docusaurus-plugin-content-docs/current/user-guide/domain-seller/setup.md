@@ -3,21 +3,21 @@ title: Iestatījumi un sniedzēja konfigurācija
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domen pārdevējs: Iestatījumi un sniedzēja konfigurēšana
+# Domen pārdevējs: Iestatījumi un sniedzēja konfigurēšana {#domain-seller-setup-and-provider-configuration}
 
 Domen pārdevējs addon ietveru ar gida iestatījumus, kas palīdz jums veikt katru nepieciešamā soļu. Šajā lapā aprakstīts iestatījumu plāna plūsma un to, kā konfigurēt vai atkonfigurēt sniedzējus pēc tam.
 
-## Prasības
+## Prasības {#requirements}
 
 - **Multisite Ultimate** v2.4.12 vai augstāka versija, ar tīkla aktivizēšanu
 - **PHP** 7.4+
 - API autentikācijas dati vismaz vienam atbalstītam reģistrājam
 
-## Pirmais izvēles plāna iestatījums (First-run setup wizard)
+## Pirmais izvēles plāna iestatījums (First-run setup wizard) {#first-run-setup-wizard}
 
 Iestatījumu plāns automātiski starts, kad pirms aktivizējat plugin tīklā. Tas ir pieejams arī jebkurā laikā no **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### 1. Solis — Izvēli sniedzēja
+### 1. Solis — Izvēli sniedzēja {#step-1--choose-a-provider}
 
 Izvēlieties reģistrāju, ar kuru vēlaties savienojties. Atbalstītie variantu:
 
@@ -33,7 +33,7 @@ Izvēlieties reģistrāju, ar kuru vēlaties savienojties. Atbalstītie variantu
 | NameSilo | Nē | Nē |
 | Enom | Jā | Nē |
 
-### 2. Solis — Ievadi autentikācijas datus (Enter credentials)
+### 2. Solis — Ievadi autentikācijas datus (Enter credentials) {#step-2--enter-credentials}
 
 Katram sniedzējam ir atšķirīgi iestatījumus:
 
@@ -57,17 +57,17 @@ Katram sniedzējam ir atšķirīgi iestatījumus:
 
 Pārbaudiet **Sandbox režīmu**, ja tas ir pieejams, lai pārtests pret sniedzēja testsveidroju vidi pirms lansēšanas.
 
-### 3. So mainiet savienojumu
+### 3. So mainiet savienojumu {#step-3--test-the-connection}
 
 Noklikšķiniet uz **Testēt savienojumu**. Wizard nosūtīs mazliet svarīgu API zvanu, lai apstiprinātu krediti un sazinātību. Nolaiciet jebkādas kredīti problēmas pirms turpināt.
 
-### 4. Importēt TLDs
+### 4. Importēt TLDs {#step-4--import-tlds}
 
 Noklikšķiniet uz **Importēt TLDs**, lai ieņemtu visus pieejamos TLDs un tūkstogus cenās no savienojamā sniedzēja. Tas aizpilda TLD sarakstu, kas tiek izmantots domānu produktos. Importēšana var aizņemt 30–60 sekundes, ja sniedzēji ir ar lielu TLD katalogu.
 
 TLDs automātiski atjaunojas arī reiz dienā caur grafiku (cron job).
 
-### 5. Izveidot domānu produktu
+### 5. Izveidot domānu produktu {#step-5--create-a-domain-product}
 
 Wizard izveido defaultu catch-all domānu produktu ar 10% margīnu. Jūs varat rediģēt šo produktu neatkarīgi vai pārsniegt un izveidot produktus manuāli zem **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Redari [Domain Products and Pricing](./domain-products) vispārīgās produktu k
 
 ---
 
-## Sniedzēja konfigūracija atjaunošana
+## Sniedzēja konfigūracija atjaunošana {#reconfiguring-a-provider}
 
 Dodieties uz **Network Admin › Ultimate Multisite › Settings › Domain Seller** (vai noklikšķiniet uz **Settings** pluginu sarakstā).
 
@@ -88,17 +88,17 @@ Konfiguracijas lapā ir:
 - **Izvēlē domānu produktus** — ātrs saite uz Produktu sarakstu
 - **Konfiguruēt sniedzējus** — atver integrācijas mācību (Integration Wizard) veikalu sniedzēju pievienošanai vai konfigūras
 
-### Jaunā sniedzēja pievienošana
+### Jaunā sniedzēja pievienošana {#adding-a-second-provider}
 
 Noklikšķiniet uz **Konfiguruēt sniedzējus** un atkārtoti veiciet mācību jaunu reģistrājam. Jūs varat turēt konfiguriēts vairākus sniedzējus vienlaikus. Pielietojiet katru domānu produktu specifiskam sniedzējam vai atstājiet to uz defraulais.
 
-### TLDs manāšana manuāli
+### TLDs manāšana manuāli {#syncing-tlds-manually}
 
 Iestatījumu lapā noklikšķiniet uz **Sinkrotēt TLDs** (Sync TLDs) blakus jebkuram konfiguriētam sniedzējam, lai saņemtu jaunāko cenām. Tas ir noderīgs pēc tam, kad sniedzējs atjauninā wholesale cenās vai pievieno jaunas TLDs.
 
 ---
 
-## Logi
+## Logi {#logs}
 
 Katrs sniedzējs raksta savam loga kanālam. Logus var skatīt **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Katrs sniedzējs raksta savam loga kanālam. Logus var skatīt **Network Admin �
 
 ---
 
-## Piegāvojumu iespējas atzīmes (Provider capability notes)
+## Piegāvojumu iespējas atzīmes (Provider capability notes) {#provider-capability-notes}
 
 Nevis visi registratoru API atklāj vienundas operācijas. Addon parādās neatbalstītas operācijas ar skaidri admina lietotāja kļūdas, vietā to, ka tās slēpjas un neveidrojams.
 

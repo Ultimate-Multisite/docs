@@ -3,7 +3,7 @@ title: कोड स्निपेट्स
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 के लिए कोड स्निपेट्स
+# v2 के लिए कोड स्निपेट्स {#code-snippets-for-v2}
 
 असल में, **WordPress** के लिए कोड स्निपेट्स का उपयोग कुछ ऐसे काम करने के लिए किया जाता है जिनके लिए अन्यथा एक अलग छोटे plugin की जरूरत होती। ऐसे कोड स्निपेट्स को WordPress core या theme फाइलों में से किसी एक में रखा जाता है (आमतौर पर आपकी theme की functions.php फाइल में) या इन्हें MU plugin के रूप में उपयोग किया जा सकता है।
 
@@ -15,13 +15,13 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**मैप किए गए डोमेन में Font-Icons के साथ CORS समस्याओं को ठीक करना**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Account मेनू आइटम की स्थिति बदलना
+## Account मेनू आइटम की स्थिति बदलना {#changing-the-position-of-the-account-menu-item}
 
 अपने क्लाइंट के Dashboard पर Account मेनू आइटम की स्थिति बदलने के लिए, बस निम्नलिखित कोड स्निपेट को अपनी मुख्य साइट की सक्रिय theme के functions.php में जोड़ें। आप इस स्निपेट को अपने mu-plugins या custom plugins में से किसी एक में भी रख सकते हैं।
 
 add_filter('wu_my_account_menu_position', function() { return 10; // मेनू को वांछित स्थिति पर रखने के लिए इस मान को बदलें।
 
-## यह कैसे जांचें कि उपयोगकर्ता किसी निश्चित प्लान के अंतर्गत है और/या उसकी सक्रिय सदस्यता है
+## यह कैसे जांचें कि उपयोगकर्ता किसी निश्चित प्लान के अंतर्गत है और/या उसकी सक्रिय सदस्यता है {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 एक network admin के रूप में, आपको ऐसे custom functions बनाने की जरूरत हो सकती है जो बुनियादी कार्य करें या किसी सेवा/सुविधा को चुनिंदा subscribers या end-users के समूह के लिए उपलब्ध कराएं, उनकी subscription की स्थिति और उनके द्वारा सब्सक्राइब किए गए प्लान के आधार पर।
 
@@ -47,8 +47,8 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 ![प्लान IDs दिखाती Products सूची](/img/admin/products-list.png)
 
-## मैप किए गए डोमेन में Font-Icons के साथ CORS समस्याओं को ठीक करना
-## मैप किए गए डोमेन में Font-Icons के साथ CORS समस्याओं को ठीक करना
+## मैप किए गए डोमेन में Font-Icons के साथ CORS समस्याओं को ठीक करना {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## मैप किए गए डोमेन में Font-Icons के साथ CORS समस्याओं को ठीक करना {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 किसी sub-site पर डोमेन मैप करने के बाद आप पा सकते हैं कि साइट को custom fonts लोड करने में समस्या हो रही है। यह आपकी server settings में cross-origin block के कारण होता है।
 
@@ -56,13 +56,13 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 नीचे Apache और NGINX के लिए इस समस्या को ठीक करने के कोड स्निपेट्स हैं। इन बदलावों के लिए server configuration फाइलों (.htaccess फाइलें और NGINX config फाइलें) का उन्नत ज्ञान आवश्यक है। यदि आप स्वयं ये बदलाव करने में सहज नहीं हैं, तो सहायता मांगते समय इस पेज को अपने hosting provider के support agents को भेजें।
 
-### Apache
+### Apache {#apache}
 
 अपनी .htaccess फाइल में, यह जोड़ें:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 अपनी server config फाइल में (स्थान सर्वर से सर्वर अलग होती है), यह जोड़ें:
 

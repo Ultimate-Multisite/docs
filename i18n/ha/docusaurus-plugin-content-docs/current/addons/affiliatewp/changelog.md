@@ -3,7 +3,7 @@ title: Kundin Canje-canje na AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Tarihin Canje-canje na AffiliateWP
+# Tarihin Canje-canje na AffiliateWP {#affiliatewp-changelog}
 
 Siga: 2.0.1 - An sake ta a 2025-09-28
 

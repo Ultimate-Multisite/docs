@@ -3,16 +3,16 @@ title: Ażżumizzjoni u Konfigurazzjoni tal-Provider
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-## Requisiti
+## Requisiti {#domain-seller-setup-and-provider-configuration}
 
 - **Multisite Ultimate** v2.4.12 o a kumpli aktar (network-activated)
 - **PHP** 7.4+
 - Credenziali API għal aktar minn unit registrar supportat
 
-## Setup wizard tal-prim
+## Setup wizard tal-prim {#requirements}
 Il-setup wizard jfilża' awtomatik l-prim iż-żmien li tagħmel aktar (network-activate) il-plugin. Huwa disponibbli ukoll fil-istess ħin mill-**Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Iż-Żgier 1 — Iżgħar provider
+### Iż-Żgier 1 — Iżgħar provider {#first-run-setup-wizard}
 Iżgħar il-registrar li tista' tgħall-li. Opzijonijiet supportati:
 
 | Provider | Aġġmont DNS | Privacy WHOIS |
@@ -27,7 +27,7 @@ Iżgħar il-registrar li tista' tgħall-li. Opzijonijiet supportati:
 | NameSilo | La | La |
 | Enom | Sì | La |
 
-### Iż-Żgier 2 — Inqed kredenziali
+### Iż-Żgier 2 — Inqed kredenziali {#step-1--choose-a-provider}
 Kull provider għandu campi differenti tal-kredenzjali:
 
 **OpenSRS** — Username u private key (m'il-OpenSRS Reseller Control Panel)
@@ -50,17 +50,17 @@ Kull provider għandu campi differenti tal-kredenzjali:
 
 Kontrolla l-**Sandbox mode** li jkun disponibbli biex ti testi kontra l-ambiente test tal-provider qabel ma tivverifika.
 
-### Istop 3 — Test il-konekkjjoni
+### Istop 3 — Test il-konekkjjoni {#step-2--enter-credentials}
 
 Clicka su **Test Connection**. Il-wizard jura l-API call leġjiet biex jverifika d-dettail u l-konekkjittività. Ixxi xi problemi ta d-dettail qabel ma tmur avanti.
 
-### Istop 4 — Importa TLDs
+### Istop 4 — Importa TLDs {#step-3--test-the-connection}
 
 Clicka su **Import TLDs** biex tikkolli kull TLD disponibbli u il-prezzi wholesale mill-provider. Dan jippopola l-lista tal-TLDs li tsoġġebju għall-prodotti tal-domain. Il-import jista' jieħu 30–60 segwendi għall-provider biex jkun maħmur kollu ta TLDs.
 
 Il-TLDs jiġu ri-sincizzati awtomatikament unit per ġurnata permezz ta cron job skedulata.
 
-### Istop 5 — Crea un prodotto tal-domain
+### Istop 5 — Crea un prodotto tal-domain {#step-4--import-tlds}
 
 Il-wizard jieħu prodot tal-domain default li jipprovvidi għal kollha (catch-all) b markup ta 10%. Tista' tġib edittja dan il-prodott immedjatament jew tgħmli bypass u tgħmli prodotti manualment ta qudd **Ultimate Multisite › Products**.
 
@@ -68,7 +68,7 @@ Vidi [Domain Products and Pricing](./domain-products) għall-guida tal-konfigura
 
 ---
 
-## Rikonfigurar il provider
+## Rikonfigurar il provider {#step-5--create-a-domain-product}
 
 Mura għandek għal **Network Admin › Ultimate Multisite › Settings › Domain Seller** (jew clicka su **Settings** fil-lista tal-pluginijiet).
 
@@ -82,17 +82,17 @@ Il-paġna tal-settings tista' jinkludi:
 - **Manage domain products** — link rapido għall-lista ta prodotti
 - **Configure providers** — jiftavalja l-Integration Wizard biex tista' tismella jew tiskonfigura provider
 
-### Aggiunga provider sekondarju
+### Aggiunga provider sekondarju {#reconfiguring-a-provider}
 
 Iċ클ik fuq **Configure providers** u jorrun il-wizard għal registrar ġdid. Tista' tkun għandek provider multipli konfigurat flimhumiex. Issegna ogni tadomein product għal provider speċifiku, jew aħjarhu fuq difiniti.
 
-### Synċronizza TLDs manualment
+### Synċronizza TLDs manualment {#adding-a-second-provider}
 
 F'laqa' settings page, iċ클ik fuq **Sync TLDs** qabel jedd provider konfigurat biex tispira l-pricing aktar. Dan huwa utluq għal jekk il-provider xirja l-wholesale pricing jew jiddejna TLDs ġeddi.
 
 ---
 
-## Logs (Log)
+## Logs (Log) {#syncing-tlds-manually}
 
 Kull provider jikkriva fl-log channel tiegħu. Il-logs jiddisponibbli taħt **Network Admin › Ultimate Multisite › Logs**:
 
@@ -112,7 +112,7 @@ Kull provider jikkriva fl-log channel tiegħu. Il-logs jiddisponibbli taħt **Ne
 
 ---
 
-## Nota fuq il kapasitajiet tal-provider
+## Nota fuq il kapasitajiet tal-provider {#logs}
 
 Middum ma kulle API ta registrar jipprovvidi l-istess operazzjonijiet. L-addon juri l-operazzjonijiet li ma jkun imminenti b'mod differu, b'erriċedji chi jintaraw għall-admin invece tal-falla leqso.
 

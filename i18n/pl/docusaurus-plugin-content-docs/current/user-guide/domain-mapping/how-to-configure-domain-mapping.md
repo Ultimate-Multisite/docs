@@ -3,17 +3,17 @@ title: Jak skonfigurować mapowanie domen
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Jak skonfigurować mapowanie domen (v2)
+# Jak skonfigurować mapowanie domen (v2) {#how-to-configure-domain-mapping-v2}
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
 Jedną z najpotężniejszych funkcji sieci premium jest możliwość zaoferowania naszym klientom opcji podłączenia domeny najwyższego poziomu do ich witryn. W końcu co wygląda bardziej profesjonalnie: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) czy [_**joesbikeshop.com**_](http://joesbikeshop.com)? Właśnie dlatego Ultimate Multisite oferuje tę funkcję wbudowaną, bez potrzeby używania pluginów firm trzecich.
 
-## Czym jest mapowanie domen?
+## Czym jest mapowanie domen? {#whats-domain-mapping}
 
 Jak sama nazwa wskazuje, mapowanie domen to możliwość oferowana przez Ultimate Multisite, która pozwala przyjąć żądanie dotyczące niestandardowej domeny i zmapować je do odpowiedniej witryny w sieci, do której ta konkretna domena jest przypisana.
 
-### Jak skonfigurować mapowanie domen w swojej sieci Ultimate Multisite
+### Jak skonfigurować mapowanie domen w swojej sieci Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Mapowanie domen wymaga z Twojej strony pewnej konfiguracji, aby działało. Na szczęście Ultimate Multisite automatyzuje za Ciebie trudną część pracy, dzięki czemu możesz łatwo spełnić wymagania.
 
@@ -45,7 +45,7 @@ Zanim jednak zaczniesz mapować niestandardową domenę do jednej z podwitryn w 
 
 ###
 
-### Upewnienie się, że ustawienia DNS domeny są poprawnie skonfigurowane
+### Upewnienie się, że ustawienia DNS domeny są poprawnie skonfigurowane {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Aby mapowanie działało, musisz upewnić się, że domena, którą planujesz zmapować, wskazuje adres IP Twojej sieci. Pamiętaj, że potrzebujesz adresu IP sieci — adresu IP domeny, na której zainstalowany jest Ultimate Multisite — a nie adresu IP niestandardowej domeny, którą chcesz zmapować. Aby wyszukać adres IP konkretnej domeny, sugerujemy skorzystanie na przykład z [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Jeśli masz problem z uruchomieniem tego, **skontaktuj się z pomocą techniczn�
 
 Jeśli planujesz pozwolić swoim klientom mapować własne domeny, będą musieli wykonać tę część pracy samodzielnie. Skieruj ich do systemu pomocy technicznej ich rejestratora, jeśli nie będą w stanie utworzyć A Record.
 
-### Mapowanie niestandardowej nazwy domeny jako Super Admin
+### Mapowanie niestandardowej nazwy domeny jako Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Gdy jesteś zalogowany jako super administrator w swojej sieci, możesz łatwo dodawać niestandardowe nazwy domen i zarządzać nimi, przechodząc do **Ultimate Multisite > Domeny**.
 
@@ -93,7 +93,7 @@ Jeśli klikniesz nazwę domeny, zobaczysz w niej kilka opcji. Przyjrzyjmy się i
 
 **Czy jest bezpieczna?:** Mimo że Ultimate Multisite sprawdza, czy domena ma certyfikat SSL przed jej włączeniem, możesz ręcznie wybrać, czy domena ma być ładowana z certyfikatem SSL, czy bez niego. Pamiętaj, że jeśli witryna nie ma certyfikatu SSL, a spróbujesz wymusić jej ładowanie z SSL, może to spowodować błędy.
 
-### Mapowanie niestandardowej nazwy domeny jako użytkownik podwitryny
+### Mapowanie niestandardowej nazwy domeny jako użytkownik podwitryny {#mapping-custom-domain-name-as-subsite-user}
 
 Administratorzy podwitryn mogą także mapować niestandardowe nazwy domen z panelu administracyjnego swojej podwitryny.
 
@@ -121,7 +121,7 @@ Następnie użytkownik może kliknąć **Następny krok** i przejść do dodawan
 
 Kliknięcie **Dodaj domenę** rozpocznie proces weryfikacji i pobierania informacji DNS niestandardowej domeny.
 
-### O synchronizacji domen
+### O synchronizacji domen {#about-domain-syncing}
 
 Synchronizacja domen to proces, w którym Ultimate Multisite dodaje niestandardową nazwę domeny do Twojego konta hostingowego jako domenę dodatkową **aby mapowanie domen działało**.
 

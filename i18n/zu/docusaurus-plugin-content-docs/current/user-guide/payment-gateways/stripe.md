@@ -3,19 +3,19 @@ title: Ukusetha i-Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ukusetha i-Stripe Gateway (v2)
+# Ukusetha i-Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite inguqulo 2.x.**_
 
 Ungavula izindlela zokukhokha ezifika kwezine ekhasini lethu lezilungiselelo zokukhokha: Stripe, Stripe Checkout, PayPal kanye nokukhokha okwenziwa ngesandla. Kulesi sihloko, sizobona ukuthi singahlanganisa kanjani ne-**Stripe**.
 
-## Ukuvula i-Stripe
+## Ukuvula i-Stripe {#enabling-stripe}
 
 Ukuze uvule i-Stripe njengendlela yokukhokha etholakalayo kunethiwekhi yakho, iya ku-**Ultimate Multisite > Izilungiselelo > Izinkokhelo** bese umaka i-toggle eseduze kwe-**Stripe** noma **Stripe Checkout** esigabeni sama-Gateway Okukhokha Asebenzayo.
 
 ![Ukuvula i-Stripe kuma-gateway okukhokha asebenzayo](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Le ndlela izobonisa indawo yokufaka inombolo yekhadi lesikweletu ngesikhathi sokukhokha.
 
@@ -47,7 +47,7 @@ Kopisha inani elivela ku-**Publishable key** kanye ne-**Secret key** , kukholomu
 
 ![Ukunamathisela okhiye be-Stripe kuzilungiselelo ze-Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Ukusetha i-Stripe Webhook
+## Ukusetha i-Stripe Webhook {#setting-up-stripe-webhook}
 
 I-Stripe ithumela imicimbi ye-webhook eyazisa i-Ultimate Multisite noma nini lapho kwenzeka umcimbi ku-**akhawunti yakho ye-stripe**.
 

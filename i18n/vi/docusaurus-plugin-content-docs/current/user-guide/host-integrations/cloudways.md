@@ -3,18 +3,18 @@ title: Tích hợp Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Tích hợp Cloudways
+# Tích hợp Cloudways {#cloudways-integration}
 
-## Tổng quan
+## Tổng quan {#overview}
 Cloudways là một nền tảng lưu trữ đám mây được quản lý, cho phép bạn triển khai các trang WordPress trên nhiều nhà cung cấp đám mây khác nhau như DigitalOcean, AWS, Google Cloud, và nhiều dịch vụ khác. Tích hợp này cho phép đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và Cloudways.
 
-## Tính năng
+## Tính năng {#features}
 - Đồng bộ tên miền tự động
 - Quản lý chứng chỉ SSL
 - Hỗ trợ tên miền bổ sung
 - Xác thực DNS cho chứng chỉ SSL
 
-## Yêu cầu
+## Yêu cầu {#requirements}
 Các hằng số sau phải được định nghĩa trong tệp `wp-config.php` của bạn:
 
 ```php
@@ -30,16 +30,16 @@ Tùy chọn, bạn cũng có thể định nghĩa:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Hướng dẫn thiết lập
+## Hướng dẫn thiết lập {#setup-instructions}
 
-### 1. Lấy thông tin xác thực Cloudways API của bạn
+### 1. Lấy thông tin xác thực Cloudways API của bạn {#1-get-your-cloudways-api-credentials}
 
 1. Đăng nhập vào Dashboard Cloudways của bạn
 2. Đi tới "Account" > "API Keys"
 3. Tạo một API key nếu bạn chưa có
 4. Sao chép email và API key của bạn
 
-### 2. Lấy ID máy chủ và ứng dụng của bạn
+### 2. Lấy ID máy chủ và ứng dụng của bạn {#2-get-your-server-and-application-ids}
 
 1. Trong Dashboard Cloudways của bạn, đi tới "Servers"
 2. Chọn máy chủ nơi WordPress multisite của bạn được lưu trữ
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Đi tới "Applications" và chọn ứng dụng WordPress của bạn
 5. App ID hiển thị trong URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Thêm hằng số vào wp-config.php
+### 3. Thêm hằng số vào wp-config.php {#3-add-constants-to-wp-configphp}
 
 Thêm các hằng số sau vào tệp `wp-config.php` của bạn:
 
@@ -70,7 +70,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 bên dưới để biết vì sao điều này ngăn chứng chỉ SSL theo từng tenant được cấp.
 :::
 
-### 4. Bật tích hợp
+### 4. Bật tích hợp {#4-enable-the-integration}
 
 1. Trong trang quản trị WordPress của bạn, đi tới Ultimate Multisite > Settings
 2. Điều hướng đến tab "Domain Mapping"
@@ -78,9 +78,9 @@ bên dưới để biết vì sao điều này ngăn chứng chỉ SSL theo từ
 4. Bật tích hợp Cloudways
 5. Nhấp "Save Changes"
 
-## Cách hoạt động
+## Cách hoạt động {#how-it-works}
 
-### Đồng bộ tên miền
+### Đồng bộ tên miền {#domain-syncing}
 
 Khi một tên miền được ánh xạ trong Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Khi một tên miền được ánh xạ trong Ultimate Multisite:
 
 Lưu ý: Cloudways API yêu cầu gửi danh sách tên miền đầy đủ mỗi lần, không chỉ thêm hoặc xóa từng tên miền riêng lẻ.
 
-### Quản lý chứng chỉ SSL
+### Quản lý chứng chỉ SSL {#ssl-certificate-management}
 
 Sau khi tên miền được đồng bộ:
 
@@ -106,7 +106,7 @@ tích hợp này. Để sử dụng chứng chỉ wildcard trên Cloudways, bạ
 nhưng làm như vậy sẽ chặn việc cấp Let's Encrypt theo từng tên miền cho các tên miền tùy chỉnh đã ánh xạ
 (xem cạm bẫy bên dưới).
 
-## Tên miền bổ sung
+## Tên miền bổ sung {#extra-domains}
 
 Hằng số `WU_CLOUDWAYS_EXTRA_DOMAINS` cho phép bạn chỉ định thêm các tên miền **bên ngoài**
 cần luôn được giữ trong danh sách bí danh của ứng dụng Cloudways. Hãy dùng nó cho:
@@ -117,7 +117,7 @@ cần luôn được giữ trong danh sách bí danh của ứng dụng Cloudway
 **Không** dùng hằng số này cho wildcard tên miền phụ của mạng riêng của bạn
 (ví dụ: `*.your-network.com`). Xem cạm bẫy SSL wildcard bên dưới.
 
-## Quan trọng — cạm bẫy SSL wildcard
+## Quan trọng — cạm bẫy SSL wildcard {#important--wildcard-ssl-pitfall}
 
 Một lỗi phổ biến khi làm theo thiết lập mặc định của Cloudways là thêm một wildcard như
 `*.your-network.com` vào `WU_CLOUDWAYS_EXTRA_DOMAINS`, hoặc cài đặt thủ công một chứng chỉ SSL wildcard Cloudways
@@ -128,7 +128,7 @@ tên miền tùy chỉnh theo từng tenant mà Ultimate Multisite ánh xạ.** 
 trên ứng dụng mỗi lần, và một chứng chỉ wildcard đã tồn tại trên
 ứng dụng sẽ chặn việc cấp Let's Encrypt theo từng tên miền mà tích hợp này dựa vào.
 
-### Thiết lập SSL Cloudways được khuyến nghị cho mạng Ultimate Multisite
+### Thiết lập SSL Cloudways được khuyến nghị cho mạng Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Trong tab **SSL Certificate** của ứng dụng Cloudways, hãy cài đặt một **chứng chỉ Let's Encrypt
    tiêu chuẩn** chỉ bao gồm `your-network.com` và `www.your-network.com`
@@ -146,20 +146,20 @@ tiêu chuẩn chỉ cho tên miền mạng chính, và xóa mọi mục wildcard
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Sau đó kích hoạt lại việc ánh xạ tên miền (hoặc chờ lần tiếp theo)
 và tích hợp sẽ bắt đầu cấp lại chứng chỉ theo từng tên miền.
 
-## Khắc phục sự cố
+## Khắc phục sự cố {#troubleshooting}
 
-### Sự cố kết nối API
+### Sự cố kết nối API {#api-connection-issues}
 - Xác minh rằng email và API key của bạn là chính xác
 - Kiểm tra rằng server và application IDs của bạn là chính xác
 - Đảm bảo rằng Account Cloudways của bạn có các quyền cần thiết
 
-### Sự cố chứng chỉ SSL
+### Sự cố chứng chỉ SSL {#ssl-certificate-issues}
 - Cloudways yêu cầu các tên miền có bản ghi DNS hợp lệ trỏ đến server của bạn trước khi cấp chứng chỉ SSL
 - Tích hợp xác thực bản ghi DNS trước khi yêu cầu chứng chỉ SSL
 - Nếu chứng chỉ SSL không được cấp, hãy kiểm tra rằng tên miền của bạn đang trỏ đúng đến địa chỉ IP của server
 - **Tên miền tùy chỉnh theo từng khách thuê bị kẹt không có SSL?** Kiểm tra tab Chứng chỉ SSL của ứng dụng Cloudways. Nếu một chứng chỉ wildcard (được cài đặt thủ công, hoặc bao phủ `*.your-network.com`) đang hoạt động, Cloudways sẽ không cấp chứng chỉ Let's Encrypt cho các tên miền tùy chỉnh được ánh xạ riêng lẻ. Thay thế nó bằng một chứng chỉ Let's Encrypt tiêu chuẩn chỉ bao phủ tên miền mạng chính (`your-network.com`, `www.your-network.com`) và xóa mọi mục wildcard khỏi `WU_CLOUDWAYS_EXTRA_DOMAINS`. Sau đó kích hoạt lại việc ánh xạ tên miền (hoặc chờ lần tiếp theo) và tích hợp sẽ yêu cầu chứng chỉ theo từng tên miền.
 
-### Tên miền chưa được thêm
+### Tên miền chưa được thêm {#domain-not-added}
 - Kiểm tra nhật ký Ultimate Multisite để tìm bất kỳ thông báo lỗi nào
 - Xác minh rằng tên miền chưa được thêm vào Cloudways
 - Đảm bảo rằng plan Cloudways của bạn hỗ trợ số lượng tên miền bạn đang thêm

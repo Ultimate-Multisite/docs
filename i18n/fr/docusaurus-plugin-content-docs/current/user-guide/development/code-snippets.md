@@ -3,7 +3,7 @@ title: Extraits de code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Extraits de code pour v2
+# Extraits de code pour v2 {#code-snippets-for-v2}
 
 En gros, les extraits de code pour **WordPress** sont utilisés pour effectuer certaines actions qui nécessiteraient autrement une petite extension dédiée. Ces extraits de code sont placés dans l’un des fichiers du cœur de WordPress ou du thème (généralement le fichier functions.php de votre thème), ou ils peuvent être utilisés comme MU plugin.
 
@@ -15,13 +15,13 @@ Dans cet article, nous vous montrerons trois extraits de code qui peuvent être 
 
   * [**Résoudre les problèmes CORS avec les icônes de police dans les domaines mappés**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Modifier la position de l’élément de menu Account
+## Modifier la position de l’élément de menu Account {#changing-the-position-of-the-account-menu-item}
 
 Pour modifier la position de l’élément de menu Account sur le Dashboard de votre client, ajoutez simplement l’extrait de code suivant au functions.php du thème actif de votre site principal. Vous pouvez également placer l’extrait dans l’un de vos mu-plugins ou extensions personnalisées.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## Comment vérifier si l’utilisateur relève d’un forfait donné et/ou possède un abonnement actif
+## Comment vérifier si l’utilisateur relève d’un forfait donné et/ou possède un abonnement actif {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 En tant qu’administrateur réseau, vous devrez peut-être créer des fonctions personnalisées qui effectueront des actions de base ou rendront un service/une fonctionnalité disponible pour un groupe sélectionné d’abonnés ou d’utilisateurs finaux, en fonction de l’état de leur abonnement et du forfait auquel ils sont abonnés.
 
@@ -47,8 +47,8 @@ Notez que les utilisateurs ne peuvent être abonnés qu’à un **forfait** , et
 
 ![Liste des produits affichant les ID de forfait](/img/admin/products-list.png)
 
-## Résoudre les problèmes CORS avec les icônes de police dans les domaines mappés
-## Résoudre les problèmes CORS avec les icônes de police dans les domaines mappés
+## Résoudre les problèmes CORS avec les icônes de police dans les domaines mappés {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Résoudre les problèmes CORS avec les icônes de police dans les domaines mappés {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Après avoir mappé un domaine vers un sous-site, vous pourriez constater que le site a du mal à charger les polices personnalisées. Cela est dû à un blocage cross-origin dans les paramètres de votre serveur.
 
@@ -56,13 +56,13 @@ Après avoir mappé un domaine vers un sous-site, vous pourriez constater que le
 
 Vous trouverez ci-dessous des extraits de code pour résoudre le problème avec Apache et NGINX. Ces changements nécessitent des connaissances avancées des fichiers de configuration serveur (fichiers .htaccess et fichiers de configuration NGINX). Si vous n’êtes pas à l’aise pour effectuer vous-même ces changements, envoyez cette page aux agents d’assistance de votre hébergeur lorsque vous demandez de l’aide.
 
-### Apache
+### Apache {#apache}
 
 Dans votre fichier .htaccess, ajoutez :
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 Dans le fichier de configuration de votre serveur (l’emplacement varie d’un serveur à l’autre), ajoutez :
 

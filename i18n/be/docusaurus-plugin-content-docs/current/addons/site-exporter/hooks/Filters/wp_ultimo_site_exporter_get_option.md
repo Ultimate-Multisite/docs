@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Фільтр: wp_ultimo_site_exporter_get_option
+# Фільтр: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Павяртае значэнне сеткавага аптыяна ў фармаце slug.
 
-## Параметры
+## Параметры {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | Назва аптыяна. |
 | $default | `mixed` | Значэнне па замаўчанні. |
 
-### З
+### З {#since}
 
 - 1.9.6
-### Вынік
+### Вынік {#source}
 
 Вызначана ў [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) на 126-й пасылцы.
 
 
-## Павяртае
+## Павяртае {#returns}
 Значэнне сеткавага аптыяна ў фармаце slug.

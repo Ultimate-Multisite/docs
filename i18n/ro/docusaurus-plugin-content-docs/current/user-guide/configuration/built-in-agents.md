@@ -3,11 +3,11 @@ title: Agenți integrați
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agenți încorporați
+# Agenți încorporați {#built-in-agents}
 
 Gratis AI Agent v1.9.0 livrează cinci agenți încorporați, fiecare preconfigurat cu un set concentrat de instrumente, un prompt de sistem adaptat și sugestii de început potrivite pentru sarcini comune din acea zonă. Comutarea între agenți schimbă ce poate face asistentul și cum răspunde — fără nicio configurare din partea ta. Superdav AI Agent v1.18.0 poate adăuga instrumente care țin cont de program, înregistrări de mementouri, porți de aprobare și notificări SMS acestor fluxuri de lucru atunci când integrările aferente sunt configurate.
 
-## Ce este un agent?
+## Ce este un agent? {#what-is-an-agent}
 
 Fiecare agent este un profil de configurare denumit care combină:
 
@@ -15,7 +15,7 @@ Fiecare agent este un profil de configurare denumit care combină:
 - **Prompt de sistem** — instrucțiuni care stabilesc tonul, prioritățile și constrângerile agentului
 - **Sugestii** — prompturi pre-scrise afișate în interfața de chat pentru a te ajuta să începi rapid
 
-## Accesarea selectorului de agenți
+## Accesarea selectorului de agenți {#accessing-the-agent-picker}
 
 1. Deschide panoul **Gratis AI Agent** din bara laterală de administrare WordPress.
 2. Fă clic pe **pictograma agentului** din colțul stânga sus al antetului chatului (pictograma se schimbă pentru a reflecta agentul activ).
@@ -24,9 +24,9 @@ Fiecare agent este un profil de configurare denumit care combină:
 
 Poți comuta agenții și în mijlocul conversației — promptul de sistem al noului agent intră în vigoare de la următorul mesaj.
 
-## Cei cinci agenți încorporați
+## Cei cinci agenți încorporați {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Focus:** Crearea și editarea articolelor, paginilor și formularelor de contact.
 
@@ -47,7 +47,7 @@ Poți comuta agenții și în mijlocul conversației — promptul de sistem al n
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Focus:** Crearea completă a unui site web dintr-un singur prompt.
 
@@ -70,7 +70,7 @@ Poți comuta agenții și în mijlocul conversației — promptul de sistem al n
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Focus:** Personalizare vizuală — culori, tipografie, CSS și modele de blocuri.
 
@@ -87,7 +87,7 @@ Poți comuta agenții și în mijlocul conversației — promptul de sistem al n
 - *Fă o captură de ecran a paginii principale și spune-mi ce ai îmbunătăți.*
 - *Creează un model reutilizabil de bloc hero cu o imagine de fundal pe toată lățimea și un titlu centrat.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Focus:** Descoperirea, instalarea și gestionarea pluginurilor WordPress.
 
@@ -105,7 +105,7 @@ Poți comuta agenții și în mijlocul conversației — promptul de sistem al n
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Focus:** Răspunsuri la întrebări despre conținutul site-ului, setări și configurarea WordPress.
 
@@ -124,7 +124,7 @@ Poți comuta agenții și în mijlocul conversației — promptul de sistem al n
 
 ---
 
-## Integrări de automatizare Superdav
+## Integrări de automatizare Superdav {#superdav-automation-integrations}
 
 Când integrările Superdav AI Agent v1.18.0 sunt configurate, agenții încorporați pot participa la fluxuri de lucru de automatizare mai sigure, conștiente de programări:
 
@@ -138,11 +138,11 @@ Flux recomandat: cere agentului să pregătească mesajul sau acțiunea, revizui
 
 ---
 
-## Personalizarea agenților
+## Personalizarea agenților {#customising-agents}
 
 Fiecare agent încorporat poate fi extins sau înlocuit prin filtrul `gratis_ai_agent_agents`.
 
-### Adăugarea unui prompt de sistem personalizat la un agent existent
+### Adăugarea unui prompt de sistem personalizat la un agent existent {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Înregistrarea unui agent nou
+### Înregistrarea unui agent nou {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Noul agent apare în Agent Picker imediat după rularea filtrului.
 
-### Eliminarea unui agent încorporat
+### Eliminarea unui agent încorporat {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

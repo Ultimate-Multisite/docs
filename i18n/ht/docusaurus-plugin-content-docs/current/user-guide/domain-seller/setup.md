@@ -3,21 +3,21 @@ title: Konfigirasyon ak Pwovizyon
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vendeur de Domaine : Configuration et Fournisseurs
+# Vendeur de Domaine : Configuration et Fournisseurs {#domain-seller-setup-and-provider-configuration}
 
 L'addon Domain Seller vient avec un assistant d'installation guidé qui vous accompagne à travers chaque étape nécessaire. Cette page couvre le déroulement de l'assistant et comment configurer ou reconfigurer les fournisseurs après.
 
-## Exigences
+## Exigences {#requirements}
 
 - **Multisite Ultimate** v2.4.12 ou plus récent, activé sur réseau
 - **PHP** 7.4+
 - Identifiants API pour au moins un registraire pris en charge
 
-## Assistant d'installation initial
+## Assistant d'installation initial {#first-run-setup-wizard}
 
 L'assistant d'installation se lance automatiquement la première fois que vous activez le plugin sur votre réseau. Il est également disponible à tout moment via **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Étape 1 — Choisir un fournisseur
+### Étape 1 — Choisir un fournisseur {#step-1--choose-a-provider}
 
 Sélectionnez le registraire que vous voulez connecter. Options prises en charge :
 
@@ -33,7 +33,7 @@ Sélectionnez le registraire que vous voulez connecter. Options prises en charge
 | NameSilo | Non | Non |
 | Enom | Oui | Non |
 
-### Étape 2 — Entrer les identifiants
+### Étape 2 — Entrer les identifiants {#step-2--enter-credentials}
 
 Chaque fournisseur a des champs d'identifiants différents :
 
@@ -57,17 +57,17 @@ Chaque fournisseur a des champs d'identifiants différents :
 
 Kontwe **Sandbox mode** kote li disponib pou w teste kont pwofòvè a anvan ou lanse lavi reyèl.
 
-### Etap 3 — Test koneksyon an
+### Etap 3 — Test koneksyon an {#step-3--test-the-connection}
 
 Klike sou **Test Connection**. Wizard la voye yon ti apèl API ki fèt pou verifye kredyansyo ak konektivite. Repare nenpòt pwoblèm ak kredyansyo anvan ou kontinye.
 
-### Etap 4 — Import TLDs
+### Etap 4 — Import TLDs {#step-4--import-tlds}
 
 Klike sou **Import TLDs** pou w tire tout TLD yo disponib ak pri wholesale soti nan pwofòvè ki konekte a. Sa ap ranpli lis TLD sa ki itilize pou pwodwi domain yo. Import la ka pran 30–60 segond pou pwofòvè ki gen gwo katalò TLD.
 
 TLDs yo tou re-synced otomatikman yon fwa pa jou atravè yon cron job planifye.
 
-### Etap 5 — Kreye yon pwodwi domain
+### Etap 5 — Kreye yon pwodwi domain {#step-5--create-a-domain-product}
 
 Wizard la kreye yon pwodwi domain catch-all de baz ak yon markup 10%. Ou ka edite pwodwi sa a imedyatman oswa ou ka pase epi kreye pwodwi manman anba **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Gade [Domain Products and Pricing](./domain-products) pou gidyen konfigirasyon p
 
 ---
 
-## Rekonfigire yon pwofòvè
+## Rekonfigire yon pwofòvè {#reconfiguring-a-provider}
 
 Ale nan **Network Admin › Ultimate Multisite › Settings › Domain Seller** (oswa klike sou **Settings** nan lis plugin yo).
 
@@ -88,17 +88,17 @@ Paj konfigirasyon an genyen:
 - **Gérer les produits de domaine** — lien rapide vers la liste des Produits
 - **Configurer les fournisseurs** — ouvre l'Assistant d'intégration pour ajouter ou reconfigurer des fournisseurs
 
-### Ajouter un deuxième fournisseur
+### Ajouter un deuxième fournisseur {#adding-a-second-provider}
 
 Cliquez sur **Configurer les fournisseurs** et lancez à nouveau l'assistant pour le nouvel enregistreur (registrar). Vous pouvez avoir plusieurs fournisseurs configurés en même temps. Attribuez chaque produit de domaine à un fournisseur spécifique, ou laissez-le sur le défaut.
 
-### Synchroniser les TLD manuellement
+### Synchroniser les TLD manuellement {#syncing-tlds-manually}
 
 Dans la page des paramètres, cliquez sur **Synchroniser les TLD** à côté de n'importe quel fournisseur configuré pour récupérer les derniers prix. C'est utile après qu'un fournisseur mette à jour les prix de gros ou ajoute de nouveaux TLD.
 
 ---
 
-## Journaux (Logs)
+## Journaux (Logs) {#logs}
 
 Chaque fournisseur écrit dans son propre canal de journal. Les journaux sont visibles sous **Network Admin › Ultimate Multisite › Logs** :
 
@@ -118,7 +118,7 @@ Chaque fournisseur écrit dans son propre canal de journal. Les journaux sont vi
 
 ---
 
-## Notes sur les capacités des fournisseurs
+## Notes sur les capacités des fournisseurs {#provider-capability-notes}
 
 Pas toutes les API des registraires exposent les mêmes opérations. L'addon montre les opérations non supportées avec des erreurs claires visibles par l'administrateur au lieu d'échouer silencieusement.
 

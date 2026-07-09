@@ -3,33 +3,33 @@ title: Thuthukisa Ukuhlanganiswa Kwephaneli Yokulawula
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Thuthukisa Ukuhlanganiswa kwe-Control Panel
+# Thuthukisa Ukuhlanganiswa kwe-Control Panel {#enhance-control-panel-integration}
 
-## Ukubuka konke
+## Ukubuka konke {#overview}
 Enhance iyi-control panel yesimanje enikeza amandla anamandla okuzenzakalela nokuphatha ukusingathwa. Lokhu kuhlanganiswa kuvumela ukuvumelanisa izizinda ngokuzenzakalela nokuphathwa kwezitifiketi ze-SSL phakathi kwe-Ultimate Multisite ne-Enhance Control Panel.
 
 **Ingxoxo Ehlobene:** Bona [Ingxoxo ye-GitHub #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) ukuze uthole amathiphu omphakathi nolwazi olwengeziwe.
 
-## Izici
+## Izici {#features}
 - Ukuvumelanisa izizinda ngokuzenzakalela lapho izizinda zifakwa imephu ku-Ultimate Multisite
 - Ukuhlinzekwa kwezitifiketi ze-SSL ngokuzenzakalela nge-LetsEncrypt lapho i-DNS ixazulula
 - Ukusekelwa kwe-subdomain kumanethiwekhi asebenza kumodi ye-subdomain
 - Ukususwa kwesizinda lapho ukufakwa kumephu kususwa
 - Ukuhlolwa kokuxhumeka ukuze kuqinisekiswe iziqinisekiso ze-API
 
-## Izidingo
+## Izidingo {#requirements}
 
-### Izidingo Zesistimu
+### Izidingo Zesistimu {#system-requirements}
 - I-Enhance Control Panel ifakiwe futhi iyatholakala
 - Ukufakwa kwe-WordPress Multisite kusingathwe ku-Enhance server noma kuxhunywe kuyo
 - Iseva yewebhu ye-Apache (Enhance okwamanje isekela izilungiselelo ze-Apache; i-LiteSpeed Enterprise iyatholakala ngezindleko ezincishisiwe)
 
-### Ukufinyelela kwe-API
+### Ukufinyelela kwe-API {#api-access}
 Kufanele ube nokufinyelela komlawuli ku-Enhance Control Panel ukuze udale ama-token e-API.
 
-## Ukuthola Iziqinisekiso Zakho ze-API
+## Ukuthola Iziqinisekiso Zakho ze-API {#getting-your-api-credentials}
 
-### 1. Dala i-API Token
+### 1. Dala i-API Token {#1-create-an-api-token}
 
 1. Ngena ku-Enhance Control Panel yakho njengomlawuli
 2. Chofoza ku-**Settings** kumenyu yokuzula
@@ -44,7 +44,7 @@ Kufanele ube nokufinyelela komlawuli ku-Enhance Control Panel ukuze udale ama-to
 
 Ngemuva kokudala, i-**Access Token** yakho ne-**Organization ID** kuzoboniswa. **Kugcine lokhu ngokushesha** njengoba i-token izoboniswa kanye kuphela.
 
-### 2. Thola i-Organization ID Yakho
+### 2. Thola i-Organization ID Yakho {#2-get-your-organization-id}
 
 I-Organization ID iboniswa ekhasini le-Access Tokens ebhokisini lolwazi eliluhlaza okwesibhakabhaka elibhalwe "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Ungathola futhi i-Organization ID yekhasimende ngokuthi:
 2. Chofoza **Manage customer** kukhasimende elifanele
 3. Bheka i-URL - i-Organization ID izinhlamvu nezinombolo ezilandela `/customers/`
 
-### 3. Thola i-Server ID Yakho
+### 3. Thola i-Server ID Yakho {#3-get-your-server-id}
 
 Ukuze uthole i-Server ID yakho (edingekayo emisebenzini yezizinda):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 I-ID yeseva ilandela ifomethi ye-UUID: `00000000-0000-0000-0000-000000000000`
 
-### 4. Thola i-API URL Yakho
+### 4. Thola i-API URL Yakho {#4-get-your-api-url}
 
 I-API URL yakho iyi-URL ye-Enhance Control Panel yakho engezwe ngo-`/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Ukusebenzisa isizinda kuphela ngaphandle kuka-`/api/`
 - Ukusebenzisa i-HTTP esikhundleni se-HTTPS (i-HTTPS iyadingeka ngokuphepha)
 
-## Ukulungiselela
+## Ukulungiselela {#configuration}
 
-### Ama-Constants Adingekayo
+### Ama-Constants Adingekayo {#required-constants}
 
 Engeza ama-constants alandelayo kufayela lakho le-`wp-config.php`:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Ukusetha nge-Integration Wizard
+### Ukusetha nge-Integration Wizard {#setup-via-integration-wizard}
 
 1. Ku-admin yakho ye-WordPress, iya ku-**Ultimate Multisite** > **Settings**
 2. Zulazula uye kuthebhu ethi **Integrations**
@@ -112,17 +112,17 @@ Ungakhetha ukuthi:
 - Uvumele i-wizard ifake ama-constants kufayela lakho le-`wp-config.php` ngokuzenzakalela
 - Ukopishe izincazelo zama-constant futhi uzingeze mathupha
 
-## Ukulungiselela Okungeziwe kwe-WordPress
+## Ukulungiselela Okungeziwe kwe-WordPress {#additional-wordpress-configuration}
 
 Ngokusekelwe empendulweni yomphakathi ([Ingxoxo #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), kungase kudingeke ulungiselele lezi zilungiselelo ezengeziwe:
 
-### Ukulungiselela kwe-.htaccess
+### Ukulungiselela kwe-.htaccess {#htaccess-configuration}
 
 Uma uhlangabezana nezinkinga ngokufakwa kumephu kwezizinda:
 1. Susa ifayela le-Enhance `.htaccess` lokuqala
 2. Lifake esikhundleni ngefayela elijwayelekile le-WordPress Multisite `.htaccess`
 
-### Ama-Constants ama-Cookie
+### Ama-Constants ama-Cookie {#cookie-constants}
 
 Engeza lawa ma-constants ku-`wp-config.php` ukuze uqinisekise ukuphathwa okufanele kwama-cookie kuzo zonke izizinda ezifakwe imephu:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Indlela Esebenza Ngayo
+## Indlela Esebenza Ngayo {#how-it-works}
 
-### Lapho Isizinda Sifakwa Imephu
+### Lapho Isizinda Sifakwa Imephu {#when-a-domain-is-mapped}
 
 1. Umsebenzisi ufaka imephu yesizinda sangokwezifiso ku-Ultimate Multisite (noma isayithi elisha lidalwa kumodi ye-subdomain)
 2. Ukuhlanganiswa kuthumela isicelo se-POST ku-API ye-Enhance: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Lapho i-DNS ixazulula iye kuseva yakho, Enhance ihlinzeka ngokuzenzakalela isitifiketi se-SSL nge-LetsEncrypt
 5. Isizinda sisebenza nge-HTTPS
 
-### Lapho Isizinda Sisuswa
+### Lapho Isizinda Sisuswa {#when-a-domain-is-removed}
 
 1. Ukufakwa kumephu kwesizinda kususwa ku-Ultimate Multisite
 2. Ukuhlanganiswa kubuza i-Enhance ukuze kuthole i-ID yesizinda
 3. Isicelo se-DELETE sithunyelwa ku-: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance isusa isizinda ekulungiselelweni kweseva yakho
 
-### Ukuhlola i-DNS ne-SSL
+### Ukuhlola i-DNS ne-SSL {#dns-and-ssl-checking}
 
 Ultimate Multisite ihlanganisa ukuhlola kwe-DNS ne-SSL okwakhelwe ngaphakathi:
 - Ungalungiselela isikhawu sokuhlola ku-**Domain Mapping Settings** (okuzenzakalelayo: imizuzwana engu-300/imizuzu engu-5)
@@ -157,9 +157,9 @@ Ultimate Multisite ihlanganisa ukuhlola kwe-DNS ne-SSL okwakhelwe ngaphakathi:
 - Ukufaneleka kwesitifiketi se-SSL kuhlolwa ngokuzenzakalela
 - Enhance iphatha ukuhlinzekwa kwe-SSL ngokuzenzakalela, ngakho ukulungiselela i-SSL mathupha akudingeki
 
-## Ukuqinisekisa Ukusetha
+## Ukuqinisekisa Ukusetha {#verifying-setup}
 
-### Hlola Ukuxhumeka
+### Hlola Ukuxhumeka {#test-the-connection}
 
 1. Ku-Integration Wizard, sebenzisa isinyathelo se-**Test Connection**
 2. I-plugin izozama ukubala ama-domain ku-server yakho
@@ -169,7 +169,7 @@ Ultimate Multisite ihlanganisa ukuhlola kwe-DNS ne-SSL okwakhelwe ngaphakathi:
    - I-Server ID ivumelekile
    - Izimvume zisethwe kahle
 
-### Ngemva Kokumapha I-domain
+### Ngemva Kokumapha I-domain {#after-mapping-a-domain}
 
 1. Mapha i-domain yokuhlola ku-Ultimate Multisite
 2. Hlola amalogi e-Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Ultimate Multisite ihlanganisa ukuhlola kwe-DNS ne-SSL okwakhelwe ngaphakathi:
    - I-domain entsha kufanele ivele ohlwini
 4. Uma i-DNS isisabalale, qinisekisa ukuthi i-SSL ihlinzekwa ngokuzenzakalelayo
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
-### Izinkinga Zokuxhumeka kwe-API
+### Izinkinga Zokuxhumeka kwe-API {#api-connection-issues}
 
 **Iphutha: "Failed to connect to Enhance API"**
 - Qinisekisa ukuthi `WU_ENHANCE_API_URL` ifaka `/api/` ekugcineni
@@ -198,7 +198,7 @@ Ultimate Multisite ihlanganisa ukuhlola kwe-DNS ne-SSL okwakhelwe ngaphakathi:
 - Qinisekisa ukuthi i-Server ID iyifomethi ye-UUID evumelekile
 - Qinisekisa ukuthi i-server ikhona kuphaneli yakho ye-Enhance
 
-### I-domain Ayengezwanga
+### I-domain Ayengezwanga {#domain-not-added}
 
 **Hlola amalogi:**
 1. Iya ku-**Ultimate Multisite** > **Logs**
@@ -211,7 +211,7 @@ Ultimate Multisite ihlanganisa ukuhlola kwe-DNS ne-SSL okwakhelwe ngaphakathi:
 - Izimvume ze-API ezinganele (qinisekisa ukuthi i-token inendima ye-System Administrator)
 - I-Server ID ayifani ne-server yangempela ku-Enhance
 
-### Izinkinga Zesitifiketi se-SSL
+### Izinkinga Zesitifiketi se-SSL {#ssl-certificate-issues}
 
 **I-SSL ayihlinzekwa:**
 - Qinisekisa ukuthi i-DNS ikhomba ekhelini le-IP le-server yakho
@@ -225,7 +225,7 @@ Ultimate Multisite ihlanganisa ukuhlola kwe-DNS ne-SSL okwakhelwe ngaphakathi:
 2. Thola i-domain yakho bese uhlola isimo sayo se-SSL
 3. Ungaqalisa mathupha ukuhlinzekwa kwe-SSL uma kudingeka
 
-### Isikhawu Sokuhlola i-DNS
+### Isikhawu Sokuhlola i-DNS {#dns-check-interval}
 
 Uma ama-domain noma izitifiketi ze-SSL kuthatha isikhathi eside kakhulu ukusebenza:
 1. Iya ku-**Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -233,7 +233,7 @@ Uma ama-domain noma izitifiketi ze-SSL kuthatha isikhathi eside kakhulu ukuseben
 3. Lungisa kusuka kokuzenzakalelayo kwamasekhondi angu-300 uye enanini eliphansi (ubuncane: imizuzwana engu-10)
 4. **Qaphela:** Izikhawu eziphansi zisho ukuhlolwa okuvame kakhulu kodwa umthwalo ophezulu ku-server
 
-### Amaphutha Okuqinisekisa
+### Amaphutha Okuqinisekisa {#authentication-errors}
 
 **Amaphutha e-HTTP 401/403:**
 - Khiqiza kabusha i-API token yakho ku-Enhance
@@ -241,7 +241,7 @@ Uma ama-domain noma izitifiketi ze-SSL kuthatha isikhathi eside kakhulu ukuseben
 - Hlola ukuthi i-token ayiphelelwe yisikhathi
 - Qinisekisa ukuthi usebenzisa i-Organization ID efanele (nakuba ngokuvamile ingadingeki ku-URL)
 
-### Ukuhlaziywa Kwamalogi
+### Ukuhlaziywa Kwamalogi {#log-analysis}
 
 Vumela ukuloga okunemininingwane:
 ```php
@@ -255,15 +255,15 @@ Bese uhlola amalogi ku-:
 - Ilogi yokulungisa amaphutha ye-WordPress: `wp-content/debug.log`
 - Amalogi ephaneli ye-Enhance: Ayatholakala ku-interface yomlawuli ye-Enhance
 
-## Ireferensi ye-API
+## Ireferensi ye-API {#api-reference}
 
-### Ukuqinisekisa
+### Ukuqinisekisa {#authentication}
 Zonke izicelo ze-API zisebenzisa ukuqinisekisa kwe-Bearer token:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Ama-endpoint Avamile Asetshenziswayo
+### Ama-endpoint Avamile Asetshenziswayo {#common-endpoints-used}
 
 **Bala Ama-server:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Imibhalo Egcwele ye-API
+### Imibhalo Egcwele ye-API {#full-api-documentation}
 Imibhalo ephelele ye-API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Izindlela Ezingcono Kakhulu
+## Izindlela Ezingcono Kakhulu {#best-practices}
 
-### Ukuphepha
+### Ukuphepha {#security}
 - **Ungalokothi ufake ama-API tokens ku-version control**
 - Gcina ama-token ku-`wp-config.php` okufanele ingafakwa ku-Git
 - Sebenzisa ama-token anezimvume ezifanele (System Administrator yokuhlanganisa okuphelele)
 - Setha izinsuku zokuphelelwa yisikhathi kwama-token ezindaweni zokukhiqiza
 - Shintshanisa ama-token ngezikhathi ezithile
 
-### Ukusebenza
+### Ukusebenza {#performance}
 - Sebenzisa isikhawu sokuhlola i-DNS esizenzakalelayo (amasekhondi angu-300) ukuze ugweme izingcingo ze-API ezeqile
 - Qapha izinsiza ze-Enhance server lapho usebenzisa imisebenzi ye-domain ngezinga elikhulu
 - Cabangela ukusabalalisa ukwengezwa kwama-domain uma umapha ama-domain amaningi ngesikhathi esisodwa
 
-### Ukuqapha
+### Ukuqapha {#monitoring}
 - Hlola njalo amalogi e-Ultimate Multisite ukuze uthole amaphutha okuhlanganisa
 - Setha ukuqapha kokwengezwa kwama-domain okuhlulekile
 - Qinisekisa ukuthi izitifiketi ze-SSL zihlinzekwa kahle
 - Qapha umthamo we-Enhance server nemikhawulo yama-domain
 
-## Izinsiza Ezengeziwe
+## Izinsiza Ezengeziwe {#additional-resources}
 
 - **Imibhalo Esemthethweni ye-Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Imibhalo ye-Enhance API:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ Imibhalo ephelele ye-API: [https://apidocs.enhance.com](https://apidocs.enhance.
 - **Ingxoxo ye-GitHub:** [Udaba #265 - Amathiphu Okuhlanganisa i-Enhance](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Umhlahlandlela Wokumapha Ama-domain we-Ultimate Multisite:** Bheka ikhasi le-wiki elithi "How to Configure Domain Mapping v2"
 
-## Usekelo
+## Usekelo {#support}
 
 Uma uhlangabezana nezinkinga:
 1. Hlola isigaba Sokuxazulula Izinkinga ngenhla
@@ -326,7 +326,7 @@ Uma uhlangabezana nezinkinga:
 4. Xhumana nosekelo lwe-Enhance ngezinkinga eziqondene nephaneli
 5. Dala ingxoxo entsha enamalogi amaphutha anemininingwane ukuze uthole usizo lomphakathi
 
-## Amanothi
+## Amanothi {#notes}
 
 - Lokhu kuhlanganiswa kuphatha ama-domain alias kuphela; i-Enhance ilawula i-SSL ngokuzenzakalelayo
 - Ukuhlanganiswa kusekela kokubili ukumepha ama-domain angokwezifiso kanye nama-site asekelwe kuma-subdomain

@@ -3,28 +3,28 @@ title: ภาพรวม REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# เอกสารอ้างอิง REST API
+# เอกสารอ้างอิง REST API {#rest-api-reference}
 
-## การกำหนดค่าพื้นฐาน
+## การกำหนดค่าพื้นฐาน {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **การยืนยันตัวตน:** API Key และ Secret (HTTP Basic Auth หรือพารามิเตอร์ URL)
 
-## การยืนยันตัวตน
+## การยืนยันตัวตน {#authentication}
 
-### เปิดใช้งาน API
+### เปิดใช้งาน API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### รับข้อมูลรับรอง API
+### รับข้อมูลรับรอง API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### วิธีการยืนยันตัวตน
+### วิธีการยืนยันตัวตน {#authentication-methods}
 
 **HTTP Basic Auth (แนะนำ):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoint หลัก
+## Endpoint หลัก {#core-endpoints}
 
-### 1. API ลูกค้า
+### 1. API ลูกค้า {#1-customers-api}
 
 **Base Route:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API เว็บไซต์
+### 2. API เว็บไซต์ {#2-sites-api}
 
 **Base Route:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API สมาชิกภาพ
+### 3. API สมาชิกภาพ {#3-memberships-api}
 
 **Base Route:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API ผลิตภัณฑ์
+### 4. API ผลิตภัณฑ์ {#4-products-api}
 
 **Base Route:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API การชำระเงิน
+### 5. API การชำระเงิน {#5-payments-api}
 
 **Base Route:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API โดเมน
+### 6. API โดเมน {#6-domains-api}
 
 **Base Route:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint การลงทะเบียน
+## Endpoint การลงทะเบียน {#registration-endpoint}
 
 Endpoint `/register` มอบขั้นตอน checkout/การลงทะเบียนที่สมบูรณ์:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint ผู้เช่าแบบอธิปไตย
+## Endpoint ผู้เช่าแบบอธิปไตย {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 เพิ่มการครอบคลุม REST สำหรับผู้เช่าแบบอธิปไตย สำหรับการเชื่อมต่อที่จัดเตรียม ตรวจสอบ หรือยืนยันผู้เช่าที่แยกอิสระ
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 ให้ถือว่า `ready: false` เป็นตัวขัดขวางก่อนเปิดตัว ตรวจสอบรายละเอียดการยืนยัน แก้ไขการผูกโฮสต์ฐานข้อมูล คิว การจัดเตรียมผู้ใช้ หรือปัญหาการกำหนดเส้นทาง แล้วลองยืนยันอีกครั้ง
 
-## การตอบกลับข้อผิดพลาด
+## การตอบกลับข้อผิดพลาด {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## การแบ่งหน้าและการกรอง
+## การแบ่งหน้าและการกรอง {#pagination-and-filtering}
 
 **พารามิเตอร์ Query:**
 ```http

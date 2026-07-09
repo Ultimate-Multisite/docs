@@ -3,13 +3,13 @@ title: حسب ضرورت رجسٽرار انٽيگريشن ٺاهڻ
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# ڪسٽم Registrar انٽيگريشن ٺاهڻ
+# ڪسٽم Registrar انٽيگريشن ٺاهڻ {#building-a-custom-registrar-integration}
 
 Domain Seller addon هڪ **Integration Registry** نمونو استعمال ڪري ٿو. هر registrar هڪ PHP ڪلاس آهي جيڪو `Domain_Selling_Capability` لاڳو ڪري ٿو ۽ `wu_domain_seller_register_capabilities` action hook ذريعي پاڻ کي رجسٽر ڪري ٿو.
 
 هي رهنمائي ڏيکاري ٿي ته ڪسٽم registrar کي ڪيئن ڳنڍجي.
 
-## انٽرفيس
+## انٽرفيس {#the-interface}
 
 توهان جي ڪلاس کي `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` لاڳو ڪرڻ ۽ `WP_Ultimo\Integrations\Base_Capability_Module` کي extend ڪرڻ لازمي آهي.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### اختياري طريقا
+### اختياري طريقا {#optional-methods}
 
 اضافي فيچرز کولڻ لاءِ اهي لاڳو ڪريو. addon `method_exists()` ذريعي سپورٽ سڃاڻي ٿو:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Domain منتقلي (ٻاهر ويندڙ) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain منتقلي (اندر ايندڙ) |
 
-### واپسي قدر جو رواج
+### واپسي قدر جو رواج {#return-value-convention}
 
 سڀئي طريقا گهٽ ۾ گهٽ `success` key سان هڪ array واپس ڪن ٿا:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## پنهنجي capability رجسٽر ڪرڻ
+## پنهنجي capability رجسٽر ڪرڻ {#registering-your-capability}
 
 `wu_domain_seller_register_capabilities` action استعمال ڪندي پنهنجي ڪلاس کي رجسٽر ڪريو:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## wizard ۾ credential fields شامل ڪرڻ
+## wizard ۾ credential fields شامل ڪرڻ {#adding-credential-fields-to-the-wizard}
 
 ايڊمنز کي setup wizard ذريعي credentials داخل ڪرڻ ڏيڻ لاءِ، پنهنجي انٽيگريشن رجسٽر ڪريو:
 
@@ -137,7 +137,7 @@ Credentials کي field IDs کي keys طور استعمال ڪندي network opti
 
 ---
 
-## رجسٽريشن کان پوءِ جي actions لاءِ Hooks
+## رجسٽريشن کان پوءِ جي actions لاءِ Hooks {#hooks-for-post-registration-actions}
 
 webhooks، provisioning، notifications، يا CRM updates کي trigger ڪرڻ لاءِ اهي actions استعمال ڪريو:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## لاگنگ
+## لاگنگ {#logging}
 
 `wu_log_add()` استعمال ڪندي پنهنجي provider-specific لاگ چينل ۾ لکو:
 

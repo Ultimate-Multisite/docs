@@ -3,7 +3,7 @@ title: GoCardless aldaketen erregistroa
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless aldaketa-erregistroa
+# GoCardless aldaketa-erregistroa {#gocardless-changelog}
 
 Bertsioa: 1.0.3 - 2026-05-05ean argitaratua
 * Konponketa: GoCardless kidetza bat zain edo atxikita egoeran dagoela bertan behera uzten denean, zain dauden gune umezurtzak orain garbitzen dira

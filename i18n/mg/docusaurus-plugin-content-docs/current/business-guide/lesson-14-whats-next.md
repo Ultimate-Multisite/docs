@@ -3,15 +3,15 @@ title: 'Lesona 14: Inona no manaraka'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lesona 14: Inona no Manaraka
+# Lesona 14: Inona no Manaraka {#lesson-14-what-comes-next}
 
 Nanangana sehatra tranonkala ho an’ny niche iray avy amin’ny aotra ianao. Efa mandeha mivantana ny FitSite, manompo studio fitness, ary mamokatra vola miditra miverimberina. Ity lesona farany ity dia mijery izay haleha manomboka eto.
 
-## Teo no Nijanontsika
+## Teo no Nijanontsika {#where-we-left-off}
 
 FitSite dia orinasa mandeha manana mpanjifa, asa fitantanana, ary lalana fitomboana. Ankehitriny dia mieritreritra izay manaraka isika.
 
-## Ny Tambajotra FitSite Feno
+## Ny Tambajotra FitSite Feno {#the-complete-fitsite-network}
 
 Ireto avy ny zava-drehetra naorintsika nandritra ny lesona 14:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Safidy 1: Midira Lalindalina kokoa ao amin’ny Niche-nao
+## Safidy 1: Midira Lalindalina kokoa ao amin’ny Niche-nao {#option-1-go-deeper-in-your-niche}
 
 Alohan’ny hanitarana mankany amin’ny niche vaovao, diniho ny hidirana lalindalina kokoa amin’ny fitness:
 
-### Sub-Niche
+### Sub-Niche {#sub-niches}
 
 - **Studio yoga** -- template manokana misy fiasa ho an’ny fisaintsainana, retreat, ary workshop
 - **CrossFit boxes** -- fanarahana WOD, valin’ny fifaninanana, fiasa ho an’ny vondrom-piarahamonina
@@ -59,7 +59,7 @@ Alohan’ny hanitarana mankany amin’ny niche vaovao, diniho ny hidirana lalind
 
 Ny sub-niche tsirairay dia afaka manana ny template azy manokana ary mety hanana ny brand-ny manokana, samy mandeha amin’ilay tambajotra Ultimate Multisite iray ihany.
 
-### Fiasa Premium
+### Fiasa Premium {#premium-features}
 
 Manangana fiasa izay handoavan’ny studio fitness vola fanampiny:
 
@@ -68,14 +68,14 @@ Manangana fiasa izay handoavan’ny studio fitness vola fanampiny:
 - **Template bilaogy fitness** -- rafitra votoaty efa voaomana ho an’ny marketing votoaty fitness
 - **Fampidirana tambajotra sosialy** -- fandefasana ho azy ny fandaharam-potoanan’ny kilasy sy ny fanavaozana
 
-### Fanitarana Ara-jeografia
+### Fanitarana Ara-jeografia {#geographic-expansion}
 
 Raha nanomboka teo an-toerana ianao, mitaràna mankany amin’ny:
 
 - Tanàna hafa ao amin’ny firenenao
 - Firenena hafa (ampiasao ny [fiasa localization](/user-guide/localization/translating) an’ny Ultimate Multisite hanohanana fiteny maro)
 
-## Safidy 2: Mivelara amin’ny Niche Mifanakaiky
+## Safidy 2: Mivelara amin’ny Niche Mifanakaiky {#option-2-expand-to-adjacent-niches}
 
 Ny dingana narahinao ho an’ny studio fitness dia miasa amin’ny niche rehetra. Mora kokoa ny niche faharoa satria efa manana ianao:
 
@@ -83,7 +83,7 @@ Ny dingana narahinao ho an’ny studio fitness dia miasa amin’ny niche rehetra
 - Traikefa amin’ny asa fitantanana
 - Playbook voaporofo
 
-### Niche Mifanakaiky amin’ny Fitness
+### Niche Mifanakaiky amin’ny Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness sy spa** -- mpanao massage, day spa, foibe wellness
 - **Klioba fanatanjahantena** -- ekipa fanatanjahantena amateur, ligy, klioba fialamboly
@@ -91,7 +91,7 @@ Ny dingana narahinao ho an’ny studio fitness dia miasa amin’ny niche rehetra
 
 Mizara fitoviana amin’ny mpihaino amin’ny fitness ireo, ka mety hifindra miaraka ny marketing sy ny fiaraha-miasa nataonao.
 
-### Niche Vaovao Tanteraka
+### Niche Vaovao Tanteraka {#completely-new-niches}
 
 Ampiharo ny rafitra avy amin’ny Lesona 2 mba hanombanana niche rehetra:
 
@@ -108,7 +108,7 @@ Ny niche vaovao tsirairay dia mila:
 
 Ny fotodrafitrasan’ny sehatra, ny billing, ary ny fizotran’asa fitantanana dia mitoetra ho mitovy.
 
-## Safidy 3: Manangana Sehatra Ahitana Sehatra Maro
+## Safidy 3: Manangana Sehatra Ahitana Sehatra Maro {#option-3-build-a-platform-of-platforms}
 
 Rehefa lehibe ny ambaratonga, afaka mampandeha brand niche maro amin’ny tambajotra Ultimate Multisite tokana ianao:
 
@@ -118,11 +118,11 @@ Rehefa lehibe ny ambaratonga, afaka mampandeha brand niche maro amin’ny tambaj
 
 Ny brand tsirairay dia manana ny template, plan, ary marketing azy manokana, saingy mizara fotodrafitrasa, billing, ary fizotran’asa fitantanana izy ireo. Eto no manjary matanjaka ny lafiny ara-toekaren’ny Ultimate Multisite -- sehatra iray, vertical maro.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Ho an’ny fisarahana tanteraka eo amin’ny niche, diniho ny [Multi-Network addon](/addons/multinetwork) izay mamela anao hampandeha tambajotra WordPress maro avy amin’ny installation tokana.
 
-## Safidy 4: Amidio ny Orinasa
+## Safidy 4: Amidio ny Orinasa {#option-4-sell-the-business}
 
 Ny sehatra tranonkala niche manana vola miditra miverimberina, churn ambany, ary toerana mazava eo amin’ny tsena dia fananana sarobidy. Matetika ny orinasa SaaS dia amidy amin’ny 3-5x ny vola miditra isan-taona.
 
@@ -134,7 +134,7 @@ FitSite manana mpanjifa 200 amin’ny $89 ARPU:
 
 Tsy vokatra azo antoka izany, fa zava-misy azo tratrarina ho an’ny sehatra niche tantanana tsara.
 
-## Izay Nianaranao
+## Izay Nianaranao {#what-you-have-learned}
 
 Ity taranja ity dia nampianatra anao dingana azo averina:
 
@@ -150,7 +150,7 @@ Ity taranja ity dia nampianatra anao dingana azo averina:
 
 Ny niche no paikady. Ny sehatra no fitaovana. Ultimate Multisite no mahatonga ilay fitaovana ho azo tanterahina. Ny fahatakaranao ny niche no mahatonga azy ho sarobidy.
 
-## Manomboha Manangana
+## Manomboha Manangana {#start-building}
 
 Raha nanaraka niaraka tamin'ny FitSite ianao dia manana sehatra miasa. Raha namaky ianao mba hahita ny niche-nao manokana, miverena any amin'ny [Lesona 2: Fifidianana ny niche-nao](lesson-2-picking-your-niche) ary atombohy ny dingana ho an'ilay sehatra mitsangana nofidinao.
 

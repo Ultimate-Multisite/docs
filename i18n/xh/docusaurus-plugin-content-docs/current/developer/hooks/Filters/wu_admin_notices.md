@@ -4,11 +4,11 @@ title: Isihluzi - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Isihluzi: wu_admin_notices
+# Isihluzi: wu_admin_notices {#filter-wuadminnotices}
 
 Vumela abaphuhlisi ukuba bahluze izaziso ze-admin ezongezwe yi-Ultimate Multisite.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Vumela abaphuhlisi ukuba bahluze izaziso ze-admin ezongezwe yi-Ultimate Multisit
 | $filter | `string` | Ukuba izaziso ezinokucinywa zihluziwe zakhutshwa. |
 | $dismissed_messages | `array` | Uluhlu lwezitshixo zezaziso ezicinyiweyo. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe ku-[`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) kumgca 121
 
 
-## Ibuyisela
+## Ibuyisela {#returns}

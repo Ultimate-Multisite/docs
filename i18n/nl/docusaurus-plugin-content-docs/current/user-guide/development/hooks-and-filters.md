@@ -3,7 +3,7 @@ title: Hooks en Filters
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks en filters
+# Ultimate Multisite Hooks en filters {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite bestaat uit een hele reeks functies en database‑query's. Het heeft hooks en filters die je in staat stellen bestaande functies te wijzigen of nieuwe code toe te voegen.
 

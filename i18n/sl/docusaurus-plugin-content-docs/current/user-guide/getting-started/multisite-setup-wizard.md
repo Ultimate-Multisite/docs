@@ -3,7 +3,7 @@ title: Asistent za nastavitvo multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite nastavitveni vodič
+# Multisite nastavitveni vodič {#multisite-setup-wizard}
 
 Ultimate Multisite vključuje zgrajen vodič, ki sam avtomatsko spremeni standardno WordPress instalacijo v WordPress Multisite omrežje. To odloča potrebo po ručnem urejanju datoteke `wp-config.php` ali uporabi baznih komand.
 
@@ -11,13 +11,13 @@ Ultimate Multisite vključuje zgrajen vodič, ki sam avtomatsko spremeni standar
 Če je vaša WordPress instalacija že deluje kot Multisite omrežje, lahko ta korak popolnoma preskočite. Vodič se pojavlja le, ko ni Multisite še vključeno.
 :::
 
-## Kdaj se pojavi vodič?
+## Kdaj se pojavi vodič? {#when-does-the-wizard-appear}
 
 Ko aktivirate Ultimate Multisite na standardni (ne-Multisite) WordPress instalaciji, plugin zazna, da Multisite ni vklopljen in vas sam avtomatsko preusmeri na Multisite nastavitveni vodič namesto običajnega vodiča za nastavitve.
 
 Lahko ga lahko dostopate tudi neposredno preko **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Predhodni podatki
+## Predhodni podatki {#prerequisites}
 
 Pred začetkom uporabe vodiča se prepričajte, da imate:
 
@@ -29,7 +29,7 @@ Pred začetkom uporabe vodiča se prepričajte, da imate:
 Vodič spremeni vašo datoteko `wp-config.php` in ustvarja nove tabele v bazi podatkov. vedno ustvarite rezervno kopijo pred nadaljnjo uporabo.
 :::
 
-## Korak 1: Dobši dobiček (Welcome)
+## Korak 1: Dobši dobiček (Welcome) {#step-1-welcome}
 
 Prvi zaslon pojasni, kaj je WordPress Multisite in kaj bo vodič naredil:
 
@@ -42,11 +42,11 @@ Prvi zaslon pojasni, kaj je WordPress Multisite in kaj bo vodič naredil:
 
 Kliknite na **Nastavi nadalje** (Continue), da nadaljujete.
 
-## Korak 2: Konfiguracija omrežja (Network Configuration)
+## Korak 2: Konfiguracija omrežja (Network Configuration) {#step-2-network-configuration}
 
 Ta korak vam vpraša, kako želite konfigurirati nastavitve vaše mreže.
 
-### Struktura spletnih strani (Site Structure)
+### Struktura spletnih strani (Site Structure) {#site-structure}
 
 Izberite kako bodo vaše spletne strani v mreži organizirane:
 
@@ -57,11 +57,11 @@ Izberite kako bodo vaše spletne strani v mreži organizirane:
 Če izberete subdomene boste morali konfigurirati **wildcard DNS** in **wildcard SSL certificate** za vaš domen. Večina upravljanih WordPress hostov to obravnava samodejno. Pogledajte [Ultimate Multisite 101](./ultimate-multisite-101) za podrobno primerjavo.
 :::
 
-### Ime mreže (Network Title)
+### Ime mreže (Network Title) {#network-title}
 
 Vnesite ime za vašo mrežno stran. To po defaultu uporablja trenutno ime vaše strani z pripomočnim besedilom "Network" na koncu. Lahko ga kasneje spremenite v nastavitvah mreže.
 
-### E-pošta administratorja mreže (Network Admin Email)
+### E-pošta administratorja mreže (Network Admin Email) {#network-admin-email}
 
 E-pošta, ki se uporablja za obvestila o administraciji mreže. To po defaultu uporablja e-pošto trenutnega uporabnika.
 
@@ -69,7 +69,7 @@ E-pošta, ki se uporablja za obvestila o administraciji mreže. To po defaultu u
 
 Po zapolnjenju polj kliknite na **Continue** (Naslednji), da nadaljujete.
 
-## Korak 3: Instalacija
+## Korak 3: Instalacija {#step-3-installation}
 
 Kliknite na gumb **Install** (Instaliraj), da začnete. Wizard opravi pet avtomatiziranih korakov v vrstvi, ki vsak prikazuje svoj napredek v realnem času:
 
@@ -96,7 +96,7 @@ Ko bodo vsi koraki uspešno končani, boste videli zeleno stanje "Success!" za v
 
 Potem bo wizard sam avtomatsko prešel na zaslon dokončanja.
 
-## Korak 4: Končanje
+## Korak 4: Končanje {#step-4-complete}
 
 Ko je instalacija končana, boste videli sporočilo uspeha, ki potrjuje, da je WordPress Multisite omogočen.
 
@@ -108,7 +108,7 @@ Zdaj lahko nadaljujete z wizardom za nastavitvo Ultimate Multisite, da bi konfig
 Po dokončan namestitvi multisite se bo vaš preglednik preusmeril skozi novonastavljeni admin omrežja. Morda boste morali ponovno prijaviti, ker so piškotki za avtorizacijo posodobljeni za okolje multisite.
 :::
 
-## Rezerva za ručno namestitev
+## Rezerva za ručno namestitev {#manual-setup-fallback}
 
 Če wizard ne more zapisati v vaš `wp-config.php` datotek (zaradi dovoljenj za datoteke ali omejitev serverja), prikazuje vam točno kod, ki ga morate dodati ručno:
 
@@ -117,9 +117,9 @@ Po dokončan namestitvi multisite se bo vaš preglednik preusmeril skozi novonas
 
 Po opravitvi ručnih sprememb, osvežite stran in wizard bo opazil, da je multisite zdaj aktiv.
 
-## Reševanje težav
+## Reševanje težav {#troubleshooting}
 
-### Wizard pravi, da wp-config.php ni zapisabilen
+### Wizard pravi, da wp-config.php ni zapisabilen {#the-wizard-says-wp-configphp-is-not-writable}
 
 Vaš proces spletnega serverja potrebuje pisni dovoljenje za datoteko `wp-config.php`. Lahko:
 
@@ -127,7 +127,7 @@ Vaš proces spletnega serverja potrebuje pisni dovoljenje za datoteko `wp-config
 - Uporabite navodila za rezervno namestitev, ki jih zagotavlja wizard
 - Vprašajte vašega hostnega ponudnika za pomoč
 
-### Stranki niso dostopne po namestitvi (poddomene)
+### Stranki niso dostopne po namestitvi (poddomene) {#sites-are-not-accessible-after-setup-subdomains}
 
 Če ste izbrali strukturo poddomen, morate konfigurirati **wildcard DNS** za svojo domeno. Dodajte zapis DNS:
 
@@ -139,7 +139,7 @@ Value: [vaša server IP]
 
 Preverite z vašim hostnim ponudnikom, če niste prepričani kako to konfigurirati.
 
-### Problemi z avtorizacijo po namestitvi
+### Problemi z avtorizacijo po namestitvi {#authentication-issues-after-setup}
 
 Če ste izbrisali prijavu ali imate napake s piškotki po namestitvi multisite:
 
@@ -147,7 +147,7 @@ Preverite z vašim hostnim ponudnikom, če niste prepričani kako to konfigurira
 2. Ponovno se prijavite na `yourdomain.com/wp-login.php`
 3. Če je problem še vedno, preverite, da ni v vašem `wp-config.php` nastavljeno `COOKIE_DOMAIN` na `false` — to je znana težava pri namestitvah multisite z poddomenami
 
-### Enakratni korak ni uspešil med namestitvijo
+### Enakratni korak ni uspešil med namestitvijo {#a-step-failed-during-installation}
 
 Če vam pri eni od korakov namestitve nastane napaka:
 

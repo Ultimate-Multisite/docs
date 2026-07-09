@@ -3,15 +3,15 @@ title: Logotip SVG yaratish
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG yaratish
+# Logo SVG yaratish {#generate-logo-svg}
 
 **Logo SVG yaratish** qobiliyati Theme Builder’ga avtomatik namespace-xavfsiz sanitisation bilan maxsus logo SVG’larini bevosita WordPress saytingizga yaratish va joylashtirish imkonini beradi.
 
-## Umumiy ko‘rinish
+## Umumiy ko‘rinish {#overview}
 
 Bu qobiliyat saytingizning brending yo‘nalishi va dizayn afzalliklari asosida kengaytiriladigan vektor grafikasi (SVG) logolarini yaratadi. Yaratilgan SVG’lar vizual yaxlitlikni saqlagan holda WordPress’da foydalanish uchun xavfsiz bo‘lishini ta’minlash maqsadida avtomatik sanitisation qilinadi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Bu qobiliyat saytingizning brending yo‘nalishi va dizayn afzalliklari asosida 
 | `height` | number | No | SVG balandligi pikselda (standart: 200) |
 | `include_text` | boolean | No | Sayt nomini logoda matn sifatida kiritish-kiritmaslik (standart: true) |
 
-## Chiqish formati
+## Chiqish formati {#output-format}
 
 Qobiliyat quyidagi tuzilishga ega SVG satrini qaytaradi:
 
@@ -36,7 +36,7 @@ Qobiliyat quyidagi tuzilishga ega SVG satrini qaytaradi:
 }
 ```
 
-## SVG sanitisation xatti-harakati
+## SVG sanitisation xatti-harakati {#svg-sanitisation-behaviour}
 
 Yaratilgan SVG’lar quyidagilar uchun avtomatik namespace-xavfsiz sanitisation’dan o‘tadi:
 
@@ -48,7 +48,7 @@ Yaratilgan SVG’lar quyidagilar uchun avtomatik namespace-xavfsiz sanitisation�
 
 Bu SVG’ni qo‘shimcha sanitisation talab qilmasdan bevosita WordPress ichiga joylashtirish uchun xavfsiz bo‘lishini ta’minlaydi.
 
-## Foydalanish namunasi
+## Foydalanish namunasi {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Qobiliyat quyidagilarga ega SVG logo yaratadi:
 - Zamonaviy dizayn tamoyillariga amal qiladi
 - Avtomatik sanitisation qilingan va foydalanishga tayyor bo‘ladi
 
-## Theme Builder bilan integratsiya
+## Theme Builder bilan integratsiya {#integration-with-theme-builder}
 
 Theme Builder’ning dizayn yo‘nalishini tanlashidan foydalanganda, Logo SVG yaratish qobiliyati:
 
@@ -71,21 +71,21 @@ Theme Builder’ning dizayn yo‘nalishini tanlashidan foydalanganda, Logo SVG y
 3. Logoni avtomatik ravishda saytingiz header/brending hududiga joylashtiradi
 4. SVG’ni WordPress media’da maxsus logo sifatida saqlaydi
 
-## Eng yaxshi amaliyotlar
+## Eng yaxshi amaliyotlar {#best-practices}
 
 - **Aniq uslub afzalliklarini bering** — xohlagan dizayn uslubingizni tasvirlang (zamonaviy, klassik, o‘ynoqi va hokazo)
 - **Ranglarni belgilang** — izchillik uchun brend ranglaringizni kiriting
 - **Render qilishni sinab ko‘ring** — logo turli ekran o‘lchamlarida to‘g‘ri ko‘rinishini tekshiring
 - **Yanada moslang** — o‘lcham va joylashuvni sozlash uchun WordPress’ning logo moslash vositalaridan foydalaning
 
-## Cheklovlar
+## Cheklovlar {#limitations}
 
 - SVG logolar statik grafika sifatida yaratiladi (animatsiyali emas)
 - Ko‘p elementli murakkab logolar qo‘lda takomillashtirishni talab qilishi mumkin
 - Maxsus shriftlar qo‘llab-quvvatlanmaydi; matn tizim shriftlaridan foydalanadi
 - Juda katta yoki juda kichik o‘lchamlar sifatga ta’sir qilishi mumkin
 
-## Bog‘liq qobiliyatlar
+## Bog‘liq qobiliyatlar {#related-abilities}
 
 - [Palitra kontrastini tekshirish](./validate-palette-contrast.md) — accessibility uchun rang kontrastini tekshiring
 - [Menu yaratish](./create-menu.md) — saytingiz uchun navigatsiya menyularini yarating

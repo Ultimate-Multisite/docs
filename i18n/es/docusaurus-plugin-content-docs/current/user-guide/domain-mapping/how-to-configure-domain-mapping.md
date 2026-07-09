@@ -3,17 +3,17 @@ title: Cómo configurar el mapeo de dominios
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Cómo configurar la asignación de dominios (v2)
+# Cómo configurar la asignación de dominios (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
 Una de las funciones más potentes de una red premium es la capacidad de ofrecer a nuestros clientes la posibilidad de adjuntar un dominio de nivel superior a sus sitios. Después de todo, ¿qué se ve más profesional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) o [_**joesbikeshop.com**_](http://joesbikeshop.com)? Por eso Ultimate Multisite ofrece esa función integrada, sin necesidad de usar plugins de terceros.
 
-## ¿Qué es la asignación de dominios?
+## ¿Qué es la asignación de dominios? {#whats-domain-mapping}
 
 Como su nombre indica, la asignación de dominios es la capacidad ofrecida por Ultimate Multisite para recibir una solicitud de un dominio personalizado y asignar esa solicitud al sitio correspondiente en la red que tiene ese dominio concreto adjunto.
 
-### Cómo configurar la asignación de dominios en tu red Ultimate Multisite
+### Cómo configurar la asignación de dominios en tu red Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 La asignación de dominios requiere cierta configuración por tu parte para funcionar. Afortunadamente, Ultimate Multisite automatiza el trabajo difícil por ti para que puedas cumplir fácilmente los requisitos.
 
@@ -45,7 +45,7 @@ Pero antes de empezar a asignar el dominio personalizado a uno de los subsitios 
 
 ###
 
-### Asegurarse de que los ajustes DNS del dominio estén configurados correctamente
+### Asegurarse de que los ajustes DNS del dominio estén configurados correctamente {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Para que una asignación funcione, debes asegurarte de que el dominio que planeas asignar apunte a la dirección IP de tu red. Ten en cuenta que necesitas la dirección IP de la red —la dirección IP del dominio donde está instalado Ultimate Multisite—, no la dirección IP del dominio personalizado que quieres asignar. Para buscar la dirección IP de un dominio específico, sugerimos ir a [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), por ejemplo.
 
@@ -55,7 +55,7 @@ Si tienes problemas para hacer que esto funcione, **contacta con el soporte de t
 
 Si planeas permitir que tus clientes asignen sus propios dominios, tendrán que hacer el trabajo de esta parte por sí mismos. Dirígelos al sistema de soporte de su registrador si no pueden crear el registro A.
 
-### Asignar un nombre de dominio personalizado como superadministrador
+### Asignar un nombre de dominio personalizado como superadministrador {#mapping-custom-domain-name-as-super-admin}
 
 Cuando has iniciado sesión como superadministrador en tu red, puedes añadir y gestionar fácilmente nombres de dominio personalizados yendo a **Ultimate Multisite > Dominios**.
 
@@ -93,7 +93,7 @@ Si haces clic en el nombre de dominio, podrás ver algunas opciones dentro de é
 
 **Is Secure?:** Aunque Ultimate Multisite comprueba si el dominio tiene un certificado SSL o no antes de habilitarlo, puedes seleccionar manualmente cargar el dominio con o sin un certificado SSL. Ten en cuenta que, si el sitio web no tiene un certificado SSL e intentas forzar su carga con SSL, puede darte errores.
 
-### Mapear un nombre de dominio personalizado como usuario de subsitio
+### Mapear un nombre de dominio personalizado como usuario de subsitio {#mapping-custom-domain-name-as-subsite-user}
 
 Los administradores de subsitios también pueden mapear nombres de dominio personalizados desde el dashboard de administración de su subsitio.
 
@@ -121,7 +121,7 @@ Luego, el usuario puede hacer clic en **Next Step** y continuar para añadir el 
 
 Hacer clic en **Add Domain** iniciará el proceso de verificar y obtener la información DNS del dominio personalizado.
 
-### Acerca de Domain Syncing
+### Acerca de Domain Syncing {#about-domain-syncing}
 
 Domain Syncing es un proceso en el que Ultimate Multisite añade el nombre de dominio personalizado a tu cuenta de hosting como un dominio adicional **para que el mapeo de dominios funcione**.
 

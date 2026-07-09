@@ -3,7 +3,7 @@ title: 如何安装 WordPress 多站点
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# 如何安装 WordPress 多站点？
+# 如何安装 WordPress 多站点？ {#how-do-i-install-wordpress-multisite}
 
 WordPress 多站点允许你在单个安装中拥有一个站点网络。这是一个内置功能，但默认并未启用。
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 填写完字段后，点击“添加站点”按钮。创建新的子站点后，继续访问它以确保该子站点可以正常工作。
 
-## 常见问题：
+## 常见问题： {#common-problems}
 
-### 1\. 我可以创建新站点，但它们无法访问。
+### 1\. 我可以创建新站点，但它们无法访问。 {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 如果你选择了子域名，还需要为你的多站点网络设置通配符子域名。
 

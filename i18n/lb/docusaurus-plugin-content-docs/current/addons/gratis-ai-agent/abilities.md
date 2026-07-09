@@ -3,7 +3,7 @@ title: Fäegkeeten-Referenz
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenz vun de Fäegkeeten
+# Referenz vun de Fäegkeeten {#abilities-reference}
 
 Fäegkeete sinn déi atomar Aktiounen, déi Gratis AI Agent op denger WordPress-Installatioun opruffe kann. All Fäegkeet ass eng registréiert PHP-Klass, déi e JSON-Schema bereetstellt — den agent liest dëst Schema wärend der Lafzäit, fir ze verstoen, wéi eng Parameteren erfuerderlech sinn a wat d'Fäegkeet zeréckgëtt.
 
@@ -11,11 +11,11 @@ Dës Säit dokumentéiert all Fäegkeeten, déi mat Gratis AI Agent v1.9.0 geliw
 
 ---
 
-## Benotzerdefinéiert Bäitragszorten
+## Benotzerdefinéiert Bäitragszorten {#custom-post-types}
 
 Dës Fäegkeete verwalten benotzerdefinéiert Bäitragszorten (CPTs), déi iwwer den agent registréiert goufen. Registréierunge ginn an der WordPress-Optiounstabell gespäichert, sou datt se d'Deaktivéierung an d'Reaktivéierung vum plugin iwwerliewen.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registréiert eng nei benotzerdefinéiert Bäitragszort.
 
@@ -50,7 +50,7 @@ Registréiert eng nei benotzerdefinéiert Bäitragszort.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Gëtt all benotzerdefinéiert Bäitragszorten zeréck, déi vum agent registréiert goufen.
 
@@ -73,7 +73,7 @@ Gëtt all benotzerdefinéiert Bäitragszorten zeréck, déi vum agent registréi
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Mellt eng benotzerdefinéiert Bäitragszort of, déi virdru vum agent registréiert gouf. Bestehend Bäiträg vun där Zort bleiwen an der Datebank, si sinn awer net méi iwwer d'Bäitragszort zougänglech.
 
@@ -87,11 +87,11 @@ Mellt eng benotzerdefinéiert Bäitragszort of, déi virdru vum agent registréi
 
 ---
 
-## Benotzerdefinéiert Taxonomien
+## Benotzerdefinéiert Taxonomien {#custom-taxonomies}
 
 Dës Fäegkeete verwalten benotzerdefinéiert Taxonomien. Wéi CPTs ginn Taxonomie-Registréierunge gespäichert.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registréiert eng nei benotzerdefinéiert Taxonomie.
 
@@ -123,7 +123,7 @@ Registréiert eng nei benotzerdefinéiert Taxonomie.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Gëtt all benotzerdefinéiert Taxonomien zeréck, déi vum agent registréiert goufen.
 
@@ -146,7 +146,7 @@ Gëtt all benotzerdefinéiert Taxonomien zeréck, déi vum agent registréiert g
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Mellt eng benotzerdefinéiert Taxonomie of, déi virdru vum agent registréiert gouf.
 
@@ -160,11 +160,11 @@ Mellt eng benotzerdefinéiert Taxonomie of, déi virdru vum agent registréiert 
 
 ---
 
-## Design-System
+## Design-System {#design-system}
 
 Design-System-Fäegkeete änneren déi visuell Presentatioun vum WordPress site — vu benotzerdefinéiertem CSS bis zu Block-Musteren an dem site-Logo.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Hänkt CSS iwwer `wp_add_inline_style` un den `<head>` vum site un. CSS gëtt an der Optioun `gratis_ai_agent_custom_css` gespäichert a propper aus der Schlaang geholl, wann d'Fäegkeet zeréckgesat gëtt.
 
@@ -190,7 +190,7 @@ Hänkt CSS iwwer `wp_add_inline_style` un den `<head>` vum site un. CSS gëtt an
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registréiert e widderverwendbaart Block-Muster an der WordPress-Musterbibliothéik.
 
@@ -209,7 +209,7 @@ Registréiert e widderverwendbaart Block-Muster an der WordPress-Musterbiblioth�
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Lëscht all Block-Musteren op, déi vum agent registréiert goufen.
 
@@ -231,7 +231,7 @@ Lëscht all Block-Musteren op, déi vum agent registréiert goufen.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Setzt de WordPress Site-Logo op eng uginn Attachment-ID oder eng Remote-Bild-URL. Wann eng URL uginn ass, gëtt d'Bild erofgelueden an an d'Media Library importéiert.
 
@@ -248,7 +248,7 @@ Ee vun `attachment_id` oder `url` muss uginn ginn.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Wendt en benannte Faarf-/Typografie-Preset op d'`theme.json` (oder `global-styles`) vum aktive Theme un. Presets si kuratéiert Paketer, déi vum Gratis AI Agent-Team ënnerhale ginn.
 
@@ -273,11 +273,11 @@ Wendt en benannte Faarf-/Typografie-Preset op d'`theme.json` (oder `global-style
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Global Styles-Fäegkeete liesen a schreiwen theme.json-Wäerter iwwer d'WordPress Global Styles API a beaflossen all Blocks an Templates sitewäit.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Gëtt déi aktuell Global Styles-Konfiguratioun zréck.
 
@@ -291,7 +291,7 @@ Gëtt déi aktuell Global Styles-Konfiguratioun zréck.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Aktualiséiert een oder méi Wäerter an der Global Styles-Konfiguratioun.
 
@@ -318,7 +318,7 @@ Aktualiséiert een oder méi Wäerter an der Global Styles-Konfiguratioun.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Setzt all vum Agent ugewannt Global Styles-Ännerungen zréck a restauréiert d'Theme-Standardwäerter.
 
@@ -328,11 +328,11 @@ Setzt all vum Agent ugewannt Global Styles-Ännerungen zréck a restauréiert d'
 
 ---
 
-## Navigatiounsmenüen
+## Navigatiounsmenüen {#navigation-menus}
 
 Navigatiounsmenü-Fäegkeete erstellen a verwalten WordPress Navigatiounsmenüen an hir Elementer.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Erstellt en neie WordPress Navigatiounsmenü.
 
@@ -347,7 +347,7 @@ Erstellt en neie WordPress Navigatiounsmenü.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Benennt e Menü ëm oder weist en enger Theme-Positioun nei zou.
 
@@ -363,7 +363,7 @@ Benennt e Menü ëm oder weist en enger Theme-Positioun nei zou.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Setzt en Element an en existente Navigatiounsmenü derbäi.
 
@@ -383,7 +383,7 @@ Setzt en Element an en existente Navigatiounsmenü derbäi.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Läscht en Element aus engem Navigatiounsmenü.
 
@@ -397,7 +397,7 @@ Läscht en Element aus engem Navigatiounsmenü.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Lëscht all WordPress Navigatiounsmenüen op, inklusiv hiren zougewisene Theme-Positiounen.
 
@@ -420,11 +420,11 @@ Lëscht all WordPress Navigatiounsmenüen op, inklusiv hiren zougewisene Theme-P
 
 ---
 
-## Optiounsverwaltung
+## Optiounsverwaltung {#options-management}
 
 Optiouns-Fäegkeete liesen a schreiwen WordPress Optiounen iwwer `get_option` / `update_option`. Eng agebaut Sécherheets-Blocklëscht verhënnert zoufälleg Ännerunge vu kriteschen Astellungen.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Liest eng WordPress Optioun.
 
@@ -440,7 +440,7 @@ Gëtt e Feeler zréck, wann `option_name` op der Sécherheets-Blocklëscht steet
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Schreift eng WordPress Optioun.
 
@@ -458,7 +458,7 @@ Gëtt e Feeler zeréck, wann `option_name` op der Sécherheets-Blocklist ass.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Läscht eng WordPress-Optioun.
 
@@ -474,7 +474,7 @@ Gëtt e Feeler zeréck, wann `option_name` op der Sécherheets-Blocklist ass.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Lëscht WordPress-Optiounen op, déi engem Muster entspriechen.
 
@@ -498,11 +498,11 @@ Lëscht WordPress-Optiounen op, déi engem Muster entspriechen.
 
 ---
 
-## Inhaltsverwaltung
+## Inhaltsverwaltung {#content-management}
 
 Inhaltsverwaltungsfäegkeeten erstellen an änneren WordPress-Beiträg a Säiten. Beitrags-IDe ginn zeréckginn, esou datt uschléissend Schrëtt a Pläng mat méi Fäegkeeten op den erstallten Inhalt verweise kënnen.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Erstellt en neie WordPress-Beitrag, eng Säit oder en Entrée vun engem personaliséierte Beitragstyp.
 
@@ -537,7 +537,7 @@ Erstellt en neie WordPress-Beitrag, eng Säit oder en Entrée vun engem personal
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Aktualiséiert en existéierende WordPress-Beitrag oder eng Säit.
 
@@ -567,7 +567,7 @@ Aktualiséiert en existéierende WordPress-Beitrag oder eng Säit.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Erstellt méi Beiträg an engem eenzege Fäegkeetsopruff a reduzéiert domat Round-trips beim Opbau vu Sitten oder beim Bulk-Import vun Inhalt. Beiträg ginn der Rei no erstallt; wann een ausfält, fueren déi aner weider an den Ausfall gëtt am Resultater-Array gemellt.
 
@@ -619,7 +619,7 @@ Erstellt méi Beiträg an engem eenzege Fäegkeetsopruff a reduzéiert domat Rou
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Weist engem existéierende Beitrag oder enger Säit e Featured Image (Beitragsminiatur) zou. Akzeptéiert eng existéierend Media Library-Attachment-ID oder eng Remote-Bild-URL; wann eng URL uginn ass, gëtt d'Bild automatesch erofgelueden an importéiert.
 
@@ -638,7 +638,7 @@ Ee vun `attachment_id` oder `url` muss uginn ginn.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Erstellt e Kontaktformular mat dem aktive Form-Plugin (Contact Form 7, WPForms, Fluent Forms oder Gravity Forms, jee nodeem wat installéiert ass). Gëtt e Shortcode zeréck, deen an all Beitrag oder Säit agebett ka ginn.
 
@@ -691,11 +691,11 @@ Erstellt e Kontaktformular mat dem aktive Form-Plugin (Contact Form 7, WPForms, 
 
 ---
 
-## Visuell Iwwerpréiwung
+## Visuell Iwwerpréiwung {#visual-review}
 
 D'Fäegkeete vun der visueller Iwwerpréiwung erlaben dem Agent, Screenshots vu Live-Säiten ze erfaassen an ze analyséieren, an erméiglechen autonom Design-Iwwerpréiwung, Virun/No-Vergläicher a visuell Regressiounskontrollen, ouni eng Browser-Erweiderung ze erfuerderen.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Erfaasst e Screenshot vun enger WordPress-Säit op enger uginnener URL mat engem server-säitegen headless Browser. D'Bild gëtt an d'Mediebibliothéik gespäichert an eng CDN-URL gëtt zeréckginn.
 
@@ -724,7 +724,7 @@ Erfaasst e Screenshot vun enger WordPress-Säit op enger uginnener URL mat engem
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Hëlt zwee Screenshots a gëtt e visuellen Diff-Score plus en Diff-Bild zeréck, dat geännert Beräicher ervirhieft. Nëtzlech fir ze bestätegen, datt eng Designännerung dat erwaart Resultat produzéiert huet, oder fir onerwaart Regressiounen z'erkennen.
 
@@ -754,7 +754,7 @@ E `diff_score` vun `0.0` bedeit keng siichtbar Ännerung; `1.0` bedeit, datt all
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Erfaasst e Screenshot vun enger Säit a schéckt en un de Sproochmodell fir visuell Analyse. Gëtt eng strukturéiert Bewäertung zeréck, déi Layout, Typografie, Faarfgebrauch an Accessibilitéitsbedenken ofdeckt.
 
@@ -785,11 +785,11 @@ Erfaasst e Screenshot vun enger Säit a schéckt en un de Sproochmodell fir visu
 
 ---
 
-## Installéierbar Fäegkeeten
+## Installéierbar Fäegkeeten {#installable-abilities}
 
 Den Installable Abilities Registry léisst dech den Agent mat zousätzleche Fäegkeetspäck erweideren, déi als WordPress-Plugins verdeelt ginn. All Pack registréiert eng oder méi Fäegkeeten iwwer déi standardméisseg Ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Gëtt de Katalog vun de Fäegkeetspäck zeréck, déi aus dem Registry fir d'Installatioun verfügbar sinn.
 
@@ -818,7 +818,7 @@ Gëtt de Katalog vun de Fäegkeetspäck zeréck, déi aus dem Registry fir d'Ins
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Luet en Ability-Pack aus dem Regëster erof an aktivéiert en.
 
@@ -832,7 +832,7 @@ Luet en Ability-Pack aus dem Regëster erof an aktivéiert en.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Freet den Ability-Regëster of, fir déi bescht Erweiderung fir e beschriwwenen Uwendungsfall ze fannen an se optional ze installéieren.
 

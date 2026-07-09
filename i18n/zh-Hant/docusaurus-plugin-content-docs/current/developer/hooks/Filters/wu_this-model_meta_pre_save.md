@@ -4,11 +4,11 @@ title: '過濾器 - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 在資料元數據（meta data）被序列化並儲存到資料庫之前，會過濾這些資料。
 
-## 參數
+## 參數 {#parameters}
 
 | 名稱 | 類型 | 描述 |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 | $data_unserialized | `array` | 即將被儲存的物件資料。 |
 | $this | `\Base_Model` | 物件實例。 |
 
-### 適用版本
+### 適用版本 {#since}
 
 - 2.0.0
-### 來源
+### 來源 {#source}
 
 定義於 [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) 第 534 行

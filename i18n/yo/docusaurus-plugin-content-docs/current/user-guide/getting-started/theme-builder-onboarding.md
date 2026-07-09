@@ -3,11 +3,11 @@ title: Ìlànà Ìbẹ̀rẹ̀ Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Ìṣàn Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Theme Builder
+# Ìṣàn Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 mú **ìṣàn ìtọ́sọ́nà ìbẹ̀rẹ̀ Theme Builder** tí a ń darí wá, tí ó ràn ọ́ lọ́wọ́ láti dá akori block àdáni kan nígbà ìṣètò ìbẹ̀rẹ̀ rẹ. Èyí rọ́pò módù Site Builder àtijọ́ pẹ̀lú ọ̀nà tí ó rọrùn síi, tí agent ń ràn lọ́wọ́.
 
-## Kí ni Ìṣàn Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Theme Builder?
+## Kí ni Ìṣàn Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Ìṣàn ìtọ́sọ́nà ìbẹ̀rẹ̀ Theme Builder jẹ́ wizard ìṣètò alábáṣepọ̀ tí ó:
 
@@ -18,9 +18,9 @@ Superdav AI Agent v1.12.0 mú **ìṣàn ìtọ́sọ́nà ìbẹ̀rẹ̀ Theme 
 
 Ìṣàn náà ń ṣiṣẹ́ nípasẹ̀ **Setup Assistant agent**, èyí tí ń béèrè àwọn ìbéèrè ìtúmọ̀ síi, tí ó sì ń kọ akori rẹ díẹ̀díẹ̀.
 
-## Bíbẹ̀rẹ̀ Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Theme Builder
+## Bíbẹ̀rẹ̀ Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Ìṣètò Ìṣiṣẹ́ Àkọ́kọ́
+### Ìṣètò Ìṣiṣẹ́ Àkọ́kọ́ {#first-run-setup}
 
 Nígbà tí o bá kọ́kọ́ ṣe ìfilọ́lẹ̀ Superdav AI Agent lórí fífi WordPress tuntun sílẹ̀, ìwọ yóò rí:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Yan **"Build a custom theme"** láti wọ inú ìṣàn ìtọ́sọ́nà ìbẹ̀rẹ̀ Theme Builder.
 
-### Mímú Ṣiṣẹ́ Pẹ̀lú Ọwọ́
+### Mímú Ṣiṣẹ́ Pẹ̀lú Ọwọ́ {#manual-activation}
 
 O tún lè bẹ̀rẹ̀ ìtọ́sọ́nà ìbẹ̀rẹ̀ Theme Builder nígbàkigbà nípa bíbẹ̀rẹ̀ pé:
 
@@ -49,9 +49,9 @@ tàbí
 "Help me create a custom theme"
 ```
 
-## Àwọn Ìgbésẹ̀ Ìtọ́sọ́nà Ìbẹ̀rẹ̀
+## Àwọn Ìgbésẹ̀ Ìtọ́sọ́nà Ìbẹ̀rẹ̀ {#the-onboarding-steps}
 
-### Ìgbésẹ̀ 1: Yíyan Módù
+### Ìgbésẹ̀ 1: Yíyan Módù {#step-1-mode-selection}
 
 Setup Assistant agent béèrè nípa ìfẹ́ rẹ:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Módù ìtọ́sọ́nà** ni a ṣedámọ̀ràn fún ọ̀pọ̀lọpọ̀ àwọn aṣàmúlò; agent náà máa ń ṣe àwọn ìmọ̀ràn àpẹrẹ tó dá lórí ilé-iṣẹ́ àti àwọn ibi-afẹ́ rẹ.
 
-### Ìgbésẹ̀ 2: Àlàyé Ojúlé
+### Ìgbésẹ̀ 2: Àlàyé Ojúlé {#step-2-site-specification}
 
 A óò béèrè lọ́wọ́ rẹ nípa ojúlé rẹ:
 
@@ -74,7 +74,7 @@ A óò béèrè lọ́wọ́ rẹ nípa ojúlé rẹ:
 
 Aláyé yìí ni a máa ń tọ́jú sínú ìrántí **site_brief** rẹ, èyí tí àwọn agent máa tọ́ka sí ní àwọn àkókò ọjọ́ iwájú.
 
-### Ìgbésẹ̀ 3: Àwọn Ìpinnu Ètò Àpẹrẹ
+### Ìgbésẹ̀ 3: Àwọn Ìpinnu Ètò Àpẹrẹ {#step-3-design-system-decisions}
 
 Agent náà darí rẹ nípasẹ̀ yíyan àwọn token àpẹrẹ:
 
@@ -83,7 +83,7 @@ Agent náà darí rẹ nípasẹ̀ yíyan àwọn token àpẹrẹ:
 - **Ààlà ààyè**: Àwọn layout títẹ̀, deede, tàbí tó ní ààyè púpọ̀
 - **Ìrìnàjò**: Àwọn animation àti transition (bí o bá fẹ́)
 
-### Ìgbésẹ̀ 4: Ṣíṣẹ̀dá Akori
+### Ìgbésẹ̀ 4: Ṣíṣẹ̀dá Akori {#step-4-theme-generation}
 
 Setup Assistant agent kọ́ ìpilẹ̀ akori block àdáni rẹ pẹ̀lú:
 
@@ -92,7 +92,7 @@ Setup Assistant agent kọ́ ìpilẹ̀ akori block àdáni rẹ pẹ̀lú:
 - Àwọn style block àdáni tí ó bá ètò àpẹrẹ rẹ mu
 - Metadata akori àti àwọn ìkéde àtìlẹ́yìn WordPress
 
-### Ìgbésẹ̀ 5: Mímú Ṣiṣẹ́ àti Ìjẹ́rìí
+### Ìgbésẹ̀ 5: Mímú Ṣiṣẹ́ àti Ìjẹ́rìí {#step-5-activation-and-verification}
 
 Akori náà ni a máa mú ṣiṣẹ́ láìfọwọ́ṣe, ìwọ yóò sì rí:
 
@@ -107,7 +107,7 @@ Akori náà ni a máa mú ṣiṣẹ́ láìfọwọ́ṣe, ìwọ yóò sì rí
 
 Lẹ́yìn náà, o lè ṣàbẹ̀wò sí ojúlé rẹ láti jẹ́rìí pé akori náà ń hàn dáadáa.
 
-## Àlàyé Ojúlé àti Ìrántí site_brief
+## Àlàyé Ojúlé àti Ìrántí site_brief {#site-specification-and-sitebrief-memory}
 
 Nígbà ìtọ́sọ́nà ìbẹ̀rẹ̀, agent náà gba àlàyé ojúlé rẹ sínú ẹ̀ka ìrántí **site_brief** kan. Èyí ní:
 
@@ -117,7 +117,7 @@ Nígbà ìtọ́sọ́nà ìbẹ̀rẹ̀, agent náà gba àlàyé ojúlé rẹ 
 - Àwọn ìfẹ́kúfẹ̀ẹ́ àpẹrẹ
 - Ìgbékalẹ̀ àkóónú
 
-### Ìdí tí site_brief Fi Ṣe Pàtàkì
+### Ìdí tí site_brief Fi Ṣe Pàtàkì {#why-sitebrief-matters}
 
 Ní àwọn àkókò ọjọ́ iwájú, àwọn agent máa ń tọ́ka sí site_brief rẹ láti:
 
@@ -126,7 +126,7 @@ Ní àwọn àkókò ọjọ́ iwájú, àwọn agent máa ń tọ́ka sí site_
 - Pèsè àwọn ìmọ̀ràn tó mọ àyíká
 - Yàgò fún ṣíṣe àtúnṣe àwọn ìbéèrè ìṣètò
 
-### Wíwo site_brief Rẹ
+### Wíwo site_brief Rẹ {#viewing-your-sitebrief}
 
 O lè béèrè lọ́wọ́ agent náà pé:
 
@@ -142,11 +142,11 @@ tàbí
 
 Agent náà yóò ṣàfihàn àlàyé ojúlé tí a tọ́jú fún ọ.
 
-## Ṣíṣe Àdáni Lẹ́yìn Ìtọ́sọ́nà Ìbẹ̀rẹ̀
+## Ṣíṣe Àdáni Lẹ́yìn Ìtọ́sọ́nà Ìbẹ̀rẹ̀ {#customizing-after-onboarding}
 
 Lẹ́yìn tí ìtọ́sọ́nà ìbẹ̀rẹ̀ Theme Builder bá parí, o lè:
 
-### Lo Ọgbọ́n Design System Aesthetics
+### Lo Ọgbọ́n Design System Aesthetics {#use-the-design-system-aesthetics-skill}
 
 Bẹ̀rẹ̀ àwọn ìmúdára àpẹrẹ:
 
@@ -162,7 +162,7 @@ tàbí
 
 **Ọgbọ́n Design System Aesthetics** máa ń darí rẹ nípasẹ̀ àwọn ìmúdójúìwọ̀n àpẹrẹ tó ní àfojúsùn.
 
-### Ṣàtúnṣe theme.json Taara
+### Ṣàtúnṣe theme.json Taara {#edit-themejson-directly}
 
 Fún àwọn aṣàmúlò tó ti ni ìrírí, ṣàtúnṣe `/wp-content/themes/[theme-name]/theme.json` láti ṣàtúnṣe:
 
@@ -171,7 +171,7 @@ Fún àwọn aṣàmúlò tó ti ni ìrírí, ṣàtúnṣe `/wp-content/themes/
 - Àwọn iye ààlà ààyè
 - Àwọn ìtumọ̀ border àti shadow
 
-### Ṣẹ̀dá Àwọn Template Block Àdáni
+### Ṣẹ̀dá Àwọn Template Block Àdáni {#create-custom-block-templates}
 
 Lo olùṣàtúnṣe block WordPress láti ṣẹ̀dá àwọn template àdáni fún:
 
@@ -180,7 +180,7 @@ Lo olùṣàtúnṣe block WordPress láti ṣẹ̀dá àwọn template àdáni 
 - Àwọn ojúewé ọjà
 - Àwọn fọ́ọ̀mù ìkànìyàn
 
-## Ìfiwéra: Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Àtijọ́ vs. Tuntun
+## Ìfiwéra: Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Àtijọ́ vs. Tuntun {#comparison-old-vs-new-onboarding}
 
 | Ẹ̀ya | Site Builder (Àtijọ́) | Theme Builder (Tuntun) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Lo olùṣàtúnṣe block WordPress láti ṣẹ̀dá àwọn template àdáni 
 | Ìrọ̀rùn | Àwọn aṣayan tí ó dúró | Ṣeé ṣe àdáni |
 | Àwọn ìmúdójúìwọ̀n ọjọ́ iwájú | Kò tọ́ka sí | A tọ́jú sínú site_brief |
 
-## Yíyanjú Ìṣòro
+## Yíyanjú Ìṣòro {#troubleshooting}
 
 **Ìṣàn ìtọ́sọ́nà ìbẹ̀rẹ̀ kò parí**
 - Tún ìṣàn náà bẹ̀rẹ̀: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Lo olùṣàtúnṣe block WordPress láti ṣẹ̀dá àwọn template àdáni 
 - Béèrè lọ́wọ́ agent náà láti "regenerate the theme with [specific changes]"
 - Ṣàtúnṣe theme.json taara fún ìṣàkóso pípé
 
-## Àwọn Ìgbésẹ̀ Tó Kàn
+## Àwọn Ìgbésẹ̀ Tó Kàn {#next-steps}
 
 Lẹ́yìn pípárí ìtọ́sọ́nà ìbẹ̀rẹ̀ Theme Builder:
 

@@ -3,11 +3,11 @@ title: تعيين ثابت شروق الشمس على Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# تعيين ثابت Sunrise إلى true على Closte
+# تعيين ثابت Sunrise إلى true على Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 بعض مزودي الاستضافة يقومون بقفل wp-config.php لأسباب أمنية. هذا يعني أن Ultimate Multisite لا يمكنه تعديل الملف تلقائيًا لإضافة الثوابت اللازمة لتفعيل خريطة النطاق وغيرها من الميزات. Closte هو أحد هذه المزودين.
 
-## على لوحة تحكم Closte
+## على لوحة تحكم Closte {#on-the-closte-dashboard}
 
 أولاً، [تسجيل الدخول إلى حسابك في Closte](https://app.closte.com/)، انقر على عنصر قائمة المواقع، ثم انقر على رابط لوحة التحكم في الموقع الذي تعمل عليه حاليًا:
 

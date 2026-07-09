@@ -4,11 +4,11 @@ title: Muyunguruzi - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filter: wu_post_count
+# Filter: wu_post_count {#filter-wupostcount}
 
 Emerera abategura plugin guhindura igiteranyo cy’umubare
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Emerera abategura plugin guhindura igiteranyo cy’umubare
 | $post_counts | `object` | Object ya WordPress isubizwa na wp_count_posts fn |
 | $post_type | `string` | Slug y’ubwoko bw’inyandiko |
 
-### Since
+### Since {#since}
 
 - 1.9.1
-### Source
+### Source {#source}
 
 Byasobanuwe muri [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) ku murongo wa 136
 
 
-## Returns
+## Returns {#returns}
 Igiteranyo gishya

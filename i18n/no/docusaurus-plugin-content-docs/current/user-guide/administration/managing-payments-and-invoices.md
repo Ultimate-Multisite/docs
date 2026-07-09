@@ -3,9 +3,9 @@ title: Administrere betalinger og fakturaer
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Administrere betalinger og fakturaer
+# Administrere betalinger og fakturaer {#managing-payments-and-invoices}
 
-## Betalingsinnstillinger
+## Betalingsinnstillinger {#payment-settings}
 
 Før du begynner å motta betalinger, må du konfigurere de betalingsrelaterte innstillingene. Gå til **Ultimate Multisite → Innstillinger** og klikk på fanen **Betaling**.
 
@@ -15,7 +15,7 @@ Her er en full visning av siden for betalingsinnstillinger:
 
 ![Full side for betalingsinnstillinger](/img/admin/settings-payments-full.png)
 
-### Generelle betalingsalternativer
+### Generelle betalingsalternativer {#general-payment-options}
 
 I de generelle innstillingene kan du konfigurere:
 
@@ -24,7 +24,7 @@ I de generelle innstillingene kan du konfigurere:
 
 ![Innstillinger for betalingsgateway](/img/admin/settings-payments-options.png)
 
-### Betalingsgatewayer
+### Betalingsgatewayer {#payment-gateways}
 
 Ultimate Multisite støtter flere betalingsgatewayer. Du kan aktivere og konfigurere hver enkelt fra fanen Betalingsinnstillinger.
 
@@ -40,11 +40,11 @@ Hver gateway har sin egen konfigurasjonsdel der du oppgir API-nøkler og andre i
 
 ![Ytterligere gateway-innstillinger](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Du kan aktivere **Sandbox Mode** for å teste betalingsintegrasjonen før du går live. Når sandbox-modus er aktiv, blir det ikke gjort noen reelle belastninger.
 
-## Vise betalinger
+## Vise betalinger {#viewing-payments}
 
 Gå til siden **Betalinger** under Ultimate Multisite for å se alle transaksjoner på tvers av nettverket ditt.
 
@@ -54,7 +54,7 @@ Du kan filtrere betalinger etter status (fullført, venter, mislykket, refundert
 
 Klikk på en betaling for å se alle detaljer, inkludert linjeelementer, tilknyttet medlemskap, kundeinformasjon og betalingsgateway-data.
 
-## Fakturaer
+## Fakturaer {#invoices}
 
 Ultimate Multisite kan automatisk generere fakturaer for betalinger. Du kan tilpasse fakturamal og nummereringsformat fra betalingsinnstillingene.
 

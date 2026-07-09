@@ -3,15 +3,15 @@ title: 'Lektioun 7: Et zu Ärem maachen'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lektioun 7: Maacht et zu Ärem Eegenen
+# Lektioun 7: Maacht et zu Ärem Eegenen {#lesson-7-making-it-yours}
 
 Är Clientë sollten ni d'Gefill hunn, datt si "iergendee WordPress Plugin" benotzen. Si sollten d'Gefill hunn, datt si FitSite benotzen -- eng Plattform, déi fir hir Branche gebaut ass. Dës Lektioun behandelt Branding, White-Labeling, an wéi d'Plattform sech wéi e Produkt ufillt.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 FitSite huet e funktionéierende Bezuelflow, deen Besëtzer vu Fitnessstudioe vun der Plangauswiel bis bei eng live Site féiert. Elo maache mir déi ganz Erfarung zu engem zesummenhängenden, markéierte Produkt.
 
-## Är Plattform-Domain
+## Är Plattform-Domain {#your-platform-domain}
 
 D'Fundament vun Ärer Mark ass Är Domain. Fir FitSite:
 
@@ -19,7 +19,7 @@ D'Fundament vun Ärer Mark ass Är Domain. Fir FitSite:
 - **Client-Siten**: `studioname.fitsite.com` (Subdomains)
 - **Eegen Domains**: Clienten op Growth- a Pro-Pläng kënnen hir eege Domain verknëppen
 
-### Är Domain ariichten
+### Är Domain ariichten {#setting-up-your-domain}
 
 1. Registréiert Är Plattform-Domain
 2. Weist se op Ären Hosting-Ubidder
@@ -28,11 +28,11 @@ D'Fundament vun Ärer Mark ass Är Domain. Fir FitSite:
 
 Kuckt [Wéi een Domain Mapping konfiguréiert](/user-guide/domain-mapping/how-to-configure-domain-mapping) fir detailléiert Uweisungen.
 
-## D'Admin-Erfarung als White-Label ubidden
+## D'Admin-Erfarung als White-Label ubidden {#white-labeling-the-admin-experience}
 
 Wann e Besëtzer vun engem Fitnessstudio sech an hire Site-Dashboard aloggt, soll hien Är Mark gesinn, net WordPress- oder Ultimate Multisite-Branding.
 
-### Personaliséiert Login-Säit
+### Personaliséiert Login-Säit {#custom-login-page}
 
 Passt d'WordPress-Login-Säit un, fir Folgendes ze weisen:
 
@@ -40,7 +40,7 @@ Passt d'WordPress-Login-Säit un, fir Folgendes ze weisen:
 - Fitness-passend Hannergrondbiller
 - Är Markefaarwen
 
-### Dashboard-Branding
+### Dashboard-Branding {#dashboard-branding}
 
 Benotzt den [Admin Page Creator](/addons/admin-page-creator) Addon oder eegent CSS, fir:
 
@@ -48,7 +48,7 @@ Benotzt den [Admin Page Creator](/addons/admin-page-creator) Addon oder eegent C
 - D'Admin-Faarfschema un Är Mark unzepassen
 - E personaliséierten Dashboard-Widget mat fitness-spezifesche Schnelllinken an Hëllefsressourcen derbäizesetzen
 
-### Personaliséiert Admin-Säiten
+### Personaliséiert Admin-Säiten {#custom-admin-pages}
 
 Iwwerleet, personaliséiert Admin-Säiten ze erstellen, déi déi relevantst Aktioune fir Besëtzer vu Fitnessstudioen ervirhiewen:
 
@@ -58,11 +58,11 @@ Iwwerleet, personaliséiert Admin-Säiten ze erstellen, déi déi relevantst Akt
 
 Dat reduzéiert d'Léierkurv, andeems niche-relevant Aktiounen an de Mëttelpunkt gesat ginn, amplaz se am Standard-WordPress-Menü ze verstoppen.
 
-## Är Kommunikatiounen branden
+## Är Kommunikatiounen branden {#branding-your-communications}
 
 All E-Mail, Rechnung an Notifikatioun soll Är Mark verstäerken.
 
-### System-E-Mailen
+### System-E-Mailen {#system-emails}
 
 Navigéiert op **Ultimate Multisite > Settings > Emails** a passt all System-E-Mailen un:
 
@@ -79,7 +79,7 @@ Wichteg E-Mailen, déi Dir upasse sollt:
 | Bezuelquittung | "Bezuelung empfaangen" | "FitSite-Abonnementsbezuelung confirméiert" |
 | Testphas geet op en Enn | "Är Testphas geet geschwënn op en Enn" | "Är FitSite-Testphas endet an 3 Deeg -- haalt Är Studio-Websäit live" |
 
-### Rechnungen
+### Rechnungen {#invoices}
 
 Passt Rechnungsschablounen un mat:
 
@@ -87,7 +87,7 @@ Passt Rechnungsschablounen un mat:
 - Äre Geschäftsdetailer
 - Fitness-spezifesche Produktnimm (net generesch Plang-IDen)
 
-## D'Client-orientéiert Site
+## D'Client-orientéiert Site {#the-customer-facing-site}
 
 Är Haaptdomain (`fitsite.com`) brauch eng Marketing-Site, déi d'Plattform verkeeft. Dëst ass getrennt vum Ultimate Multisite-Netzwierk-Admin -- et ass dat ëffentlecht Gesiicht vun Ärem Geschäft.
 
@@ -103,7 +103,7 @@ Wichteg Säiten:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Eegen Domain fir Clienten
+## Eegen Domain fir Clienten {#custom-domain-for-customers}
 
 Fir Clienten op Pläng, déi eegen Domains enthalen, dokumentéiert de Prozess kloer:
 
@@ -113,7 +113,7 @@ Fir Clienten op Pläng, déi eegen Domains enthalen, dokumentéiert de Prozess k
 
 Erstellt en Hëllefsartikel oder en Entrée an der Wëssensbasis speziell fir dëse Prozess, geschriwwe fir net-technesch Besëtzer vu Fitnessstudioen.
 
-## De FitSite-Netzwierk bis elo
+## De FitSite-Netzwierk bis elo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Wat mir an dëser Lektioun gebaut hunn
+## Wat mir an dëser Lektioun gebaut hunn {#what-we-built-this-lesson}
 
 - **Plattform-Domain an DNS** konfiguréiert fir eng markéiert Erfarung
 - **White-Label-Admin** mat FitSite-Branding duerchgoend

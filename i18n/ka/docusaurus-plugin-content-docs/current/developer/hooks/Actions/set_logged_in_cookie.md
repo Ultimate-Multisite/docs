@@ -4,11 +4,11 @@ title: მოქმედება - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 იშვება დაუყოვნებლივ, სანამ სისტემაში შესული მომხმარებლის ავთენტიფიკაციის cookie დაყენდება.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | ავთენტიფიკაციის სქემა. ნაგულისხმევია 'logged_in'. |
 | $token | `string` | მომხმარებლის სესიის token, რომელიც გამოიყენება ამ cookie-სთვის. |
 
-### გამოჩნდა ვერსიიდან
+### გამოჩნდა ვერსიიდან {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141)-ში, 141-ე ხაზზე

@@ -4,25 +4,25 @@ title: פֿילטער - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# פֿילטער: wu_sso_enabled
+# פֿילטער: wu_sso_enabled {#filter-wussoenabled}
 
 אַקטיווירן/דיאַקטיווירן קראָס־דאָמעין single-sign-on פֿעיִקייט.
 
 פֿילטערט דעם ווערט כּדי אויסצושאַלטן single-sign-on גאָר, אָדער אַנשטאָט אים אַקטיווירן באַדינגט.
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
 | $enabled | `bool` | זאָל SSO זײַן אַקטיווירט? True פֿאַר אָן, false-ish פֿאַר אויס. |
 
-### זינט
+### זינט {#since}
 
 - 2.0.11
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/sso/class-sso.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-sso.php#L110) בײַ שורה 110
 
 
-## גיט צוריק
+## גיט צוריק {#returns}
 צי SSO איז אַקטיווירט אָדער נישט.

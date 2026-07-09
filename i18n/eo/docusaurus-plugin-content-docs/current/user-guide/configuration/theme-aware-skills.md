@@ -3,11 +3,11 @@ title: Temo-sensaj abilibidoj
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Temo-Aware Skills
+# Temo-Aware Skills {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 lanzas kvar novaj temo-aware built-in skills kiuj otomatikman adaptas al temo de WordPress aktiva de vi. Ti estas estas specialigita gvidado kaj kapablitaj, molditaj al la arkitekturo kaj funkcio de via temo.
 
-## Kion estas Temo-Aware Skills?
+## Kion estas Temo-Aware Skills? {#what-are-theme-aware-skills}
 
 Temo-aware skills estas prekonfiguritaj sciobazoj kaj instrumentsetoj, kiujn la AI asistanto selektas otomatikman bazitante sur la WordPress temo aktiva sur via sitio. Kiam vi ŝanĝas temojn, la disponiblaj skills de la asistanto aktualigas otomatikman — sen manua konfigurita bezono.
 
@@ -18,9 +18,9 @@ Chakla skill inkluzas:
 - **Personaligaj ekzemploj** — kodo fragmentoj kaj konfiguraj patternoj por komuna taskoj
 - **Mezaj praktiko** — rekomendoj pri la arkitekturo kaj flujo de la temo
 
-## Disponiblaj Temo-Aware Skills
+## Disponiblaj Temo-Aware Skills {#available-theme-aware-skills}
 
-### Block Temoj
+### Block Temoj {#block-themes}
 
 **Aplikas al:** Temoj kiuj uzas la block-based (Full Site Editing) arkitekturon de WordPress.
 
@@ -34,7 +34,7 @@ La skill Block Themes donas gvidado pri:
 
 **Aktiva otomatikman kiam:** Via aktiva temo estas block tema (subtenas la `block-templates` funkcion).
 
-### Klasaj Temoj
+### Klasaj Temoj {#classic-themes}
 
 **Aplikas al:** Tradicia WordPress temoj kiuj uzas PHP templateojn kaj la klasikan editoron.
 
@@ -48,7 +48,7 @@ Kompreni temon hierarhion kaj template tags
 
 **Automate aktivaĝas kiam:** Via aktiva tema estas klasika (ne-bloka) tema.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Aplikas al:** Sitoj, kiuj uzas la plugin Kadence Blocks por avangada blok-bazita dezajno.
 
@@ -62,7 +62,7 @@ La skilo Kadence Blocks donas gvidon pri:
 
 **Automate aktivaĝas kiam:** La plugin Kadence Blocks estas aktiva sur via sitaĉo.
 
-### Kadence Tema
+### Kadence Tema {#kadence-theme}
 
 **Aplikas al:** Sitoj, kiuj uzas la Kadence temon por blok-bazita dezajno kaj personaligo.
 
@@ -76,15 +76,15 @@ La skilo Kadence Theme donas gvidon pri:
 
 **Automate aktivaĝas kiam:** La Kadence tema estas via aktiva tema.
 
-## Kiel Skiloj Selektaĝas
+## Kiel Skiloj Selektaĝas {#how-skills-are-selected}
 
 La asistanto automaite detektas via aktivan temon kaj instalitajn pluginojn sur ĉiu mesaĝo. Se korespondanta tem-konscia skilo estas dispona, ĝi estas aŭtomate cargita en la konteksto de la asistanto. Vi ne bezonas manuale aktivi aŭ ŝanĝi skilojn.
 
-### Multaj Skiloj
+### Multaj Skiloj {#multiple-skills}
 
 Se pluraj abilite aluz al vaša sit (per esempio, se aveți active atât Kadence Blocks, cât și Kadence Theme), asistanto aksesas ĉiuj aplikablajn abilitojn kaj povas referi la gvidon de ĉiu el ili.
 
-### Migri Temojn
+### Migri Temojn {#switching-themes}
 
 Kiam vi ŝanĝas vian aktivan temon, la disponiblaj abilitecoj de la asistanto aŭtomate ĝisdatigas en la suivante mesaĝo. Per esempio:
 
@@ -92,11 +92,11 @@ Kiam vi ŝanĝas vian aktivan temon, la disponiblaj abilitecoj de la asistanto a
 2. Vi ŝanĝas al klasika tema.
 3. En vian sekvenca mesaĝo, la abiliteco **Classic Themes** estas aŭtomate cargita, kaj la abiliteco **Block Themes** ne estas pli disponabla.
 
-## Uzo de Temo-Konsciaj Abilitaj
+## Uzo de Temo-Konsciaj Abilitaj {#using-theme-aware-skills}
 
 Por uzui temo-konscian abilitecon, simple deskribi, kion vi volas fari en la chataj interfacoj. La asistanto aŭtomate referos la ĝustan gvidon de la apropriata abiliteco.
 
-### Ekzemplaj Promtajktoj
+### Ekzemplaj Promtajktoj {#example-prompts}
 
 **Por Block Themes:**
 > "Krei hero-sektion kun arka imago kaj centratita teksto uzante blokpatron."

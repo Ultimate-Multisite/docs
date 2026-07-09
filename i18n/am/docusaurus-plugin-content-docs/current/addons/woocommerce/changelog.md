@@ -3,7 +3,7 @@ title: WooCommerce ውህደት የለውጦች መዝገብ
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce ውህደት የለውጦች መዝገብ
+# WooCommerce ውህደት የለውጦች መዝገብ {#woocommerce-integration-changelog}
 
 ስሪት 2.2.0 - በ2026-07-01 ተለቋል
 * አዲስ: Ultimate Multisite የግብር መጠኖች አሁን በcheckout ላይ እንደ ተለያዩ WooCommerce የክፍያ መስመሮች ይታያሉ፣ ከክፍያ በፊት የግብር ድምሮችን የበለጠ ግልጽ ያደርጋሉ።

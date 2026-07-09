@@ -3,11 +3,11 @@ title: Pluginleri dolandyrmak mümkinçilikleri
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin dolandyryş mümkinçilikleri
+# Plugin dolandyryş mümkinçilikleri {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 söhbet wagtynda AI kömekçisiniň çagyryp bilýän **7 plugin dolandyryş mümkinçiligi** bilen gelýär. Bu mümkinçilikler [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) arkaly gurnalan WordPress plugin-lerine programmalaýyn gözegçiligi üpjün edýär.
 
-## Mümkinçilikleriň syny
+## Mümkinçilikleriň syny {#abilities-overview}
 
 | Mümkinçilik | Slug | Düşündiriş |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 söhbet wagtynda AI kömekçisiniň çagyryp bilýän **7
 | Plugin gurnamak | `install_plugin` | Sandbox-daky plugin-i janly WordPress plugin katalogyna ýerleşdirýär. |
 | Plugin aktiwleşdirmek | `activate_plugin` | Sandbox-daky plugin-i wp-env sandbox gurşawynda aktiwleşdirýär. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Plugin installer plugin-leri ýerleşdirende ýa-da aýyranda faýl ulgamy amallaryny dolandyrýar. Esasy özüni alyp baryşlar:
 
@@ -28,7 +28,7 @@ Plugin installer plugin-leri ýerleşdirende ýa-da aýyranda faýl ulgamy amall
 - **Täzeleme**: Bar bolan plugin faýllaryny çalyşýar. Bölekleýin ýagdaý ýalňyşlyklaryndan gaça durmak üçin ýazmazdan öň plugin-i deaktiwleşdirýär.
 - **Slug boýunça pozmak**: Plugin katalogyny slug boýunça tapýar, ähli saýtlarda deaktiwleşdirýär, soňra katalogy aýyrýar.
 
-### Ýörite gurnama işledijisini bellige almak
+### Ýörite gurnama işledijisini bellige almak {#registering-a-custom-install-handler}
 
 Gurnama ýaşaýyş aýlawyna `gratis_ai_plugin_installer_before_install` we `gratis_ai_plugin_installer_after_install` hereketleri arkaly birikdirip bilersiňiz:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ekoulgam registri
+## Ekoulgam registri {#ecosystem-registry}
 
 Mümkinçilikler **plugin ekoulgam registri** arkaly bellige alynýar. Registr mümkinçilik slug-laryny olaryň işlediji klaslaryna baglaýar we olary AI agent-iň gural paýlaýjysyna açýar.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner integrasiýasy
+## HookScanner integrasiýasy {#hookscanner-integration}
 
 `create_plugin` we `update_plugin` mümkinçilikleri täze döredilen koda garşy awtomatik **HookScanner** işledýär. HookScanner plugin tarapyndan bellige alnan WordPress action we filter hook-larynyň sanawyny gaýtarýar.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner `vendor/` we `node_modules/` kataloglaryny awtomatik geçirip goýberýär.
 
-## Async iş arhitekturasy
+## Async iş arhitekturasy {#async-job-architecture}
 
 Uzak dowam edýän plugin amallary (döretmek, gurnamak) janly ösüş yzarlamasy bilen **async işler** hökmünde ugradylyp iberilýär. AI chat interfeýsi ösüş üçin soraglap durýar we ýagdaý täzelenmelerini ulanyja akdyrýar:
 

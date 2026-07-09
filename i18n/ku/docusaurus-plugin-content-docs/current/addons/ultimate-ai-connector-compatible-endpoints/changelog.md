@@ -3,9 +3,9 @@ title: Tomara guhertinan a Ultimate AI Connector ji bo endpointên lihevhatî
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector ji bo Compatible Endpoints Changelog
+# Ultimate AI Connector ji bo Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Guhertoya 2.0.0 — Di 2026-04-24 de hat berdan
+## Guhertoya 2.0.0 — Di 2026-04-24 de hat berdan {#version-200--released-on-2026-04-24}
 
 * Nû: Piştgiriya çend-provider — çend AI endpoint ava bike û daxwazan bi fallback-a xweber di navbera provider-an de bişîne.
 * Serrastkirin: Yekbûna SDK ya çend-provider bi provider ID-yên rast, URL-yên tomarkirinê, û sînorkirina HTTP filter ji bo her provider.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Serrastkirin: Daxwaza HTTP ya astengker ku li her barkirina rûpelê dixebitî hate rakirin.
 * Başkirin: Workflow-yên GitHub Actions hatin bilindkirin bo Node.js 24.
 
-## Guhertoya 1.0.0 — Berdana Destpêkê
+## Guhertoya 1.0.0 — Berdana Destpêkê {#version-100--initial-release}

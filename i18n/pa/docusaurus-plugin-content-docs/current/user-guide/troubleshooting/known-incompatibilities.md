@@ -3,7 +3,7 @@ title: ਜਾਣੀਆਂ-ਪਛਾਣੀਆਂ ਅਸੰਗਤੀਆਂ
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# ਹੋਰ Plugins ਨਾਲ ਜਾਣੀਆਂ-ਪਛਾਣੀਆਂ ਅਸੰਗਤਤਾਵਾਂ
+# ਹੋਰ Plugins ਨਾਲ ਜਾਣੀਆਂ-ਪਛਾਣੀਆਂ ਅਸੰਗਤਤਾਵਾਂ {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite ਨੂੰ ਇੰਸਟਾਲ ਅਤੇ ਐਕਟੀਵੇਟ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਤੁਹਾਨੂੰ ਹੋਰ plugins ਨਾਲ ਅਣਸੁਲਝੀਆਂ ਅਸੰਗਤਤਾਵਾਂ ਕਾਰਨ ਸਮੱਸਿਆਵਾਂ ਆ ਸਕਦੀਆਂ ਹਨ।
 

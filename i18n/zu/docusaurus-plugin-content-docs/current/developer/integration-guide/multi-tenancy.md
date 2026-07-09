@@ -3,11 +3,11 @@ title: Ukuhlanganiswa Kobuqashi Obuningi
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Ukuhlanganiswa kwe-Multi-Tenancy
+# Ukuhlanganiswa kwe-Multi-Tenancy {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ishintsha izindawo eziningana zokuxhumana kokuhlanganiswa kwabaqashi abazimele, ukuqinisekiswa kokufuduka, kanye nokuzenzakalela komjikelezo wokuphila womqashi.
 
-## Ukugeleza kokuqala komqashi
+## Ukugeleza kokuqala komqashi {#tenant-bootstrap-flow}
 
 Ukuhlanganiswa okudala noma okushintsha abaqashi kufanele kulandele lolu hlelo:
 
@@ -20,13 +20,13 @@ Ukuhlanganiswa okudala noma okushintsha abaqashi kufanele kulandele lolu hlelo:
 
 Ungacabangi ukuthi umqashi ozimele angaphinda asebenzise uxhumano lwedathabheyisi yenethiwekhi. Sebenzisa irejista yomqashi kanye nezindlela zokubhala ezihlinzekwa yi-addon.
 
-## Ama-hook e-SSO ne-REST
+## Ama-hook e-SSO ne-REST {#sso-and-rest-hooks}
 
 Ukungena ngokuzenzakalela komqashi okungenasimo kusebenzisa amathokheni aphila isikhathi esifushane anesimangalo senjongo, ukuvikelwa kokuphindwa kwe-JTI, umkhawulo wokuphelelwa yisikhathi, nokubophezela kumsuka. Ukuhlanganiswa okwengeza izinkinobho zokungena noma izixhumanisi zokuphatha ukude kufanele kukhiqize ukuvakasha komqashi ngokugeleza kwe-SSO okusekelwayo kunokwakha ama-URL okungena komqashi ngqo.
 
 Imicimbi yokuhlolwa kwe-API ohlangothini lwenethiwekhi nezifinyezo zansuku zonke ziyatholakala kumagateway abaqashi abazimele. Sebenzisa lawo malogi lapho ulungisa amaphutha ezinhlelweni zangaphandle ezibiza ama-endpoint omjikelezo wokuphila womqashi.
 
-## Ama-URL ezenzo zekhasimende elizimele
+## Ama-URL ezenzo zekhasimende elizimele {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 iqondisa izenzo zamakhasimende abaqashi abazimele emuva kusayithi eliyinhloko ngokugeleza kwe-account, checkout, billing, invoice, isayithi, ukushintsha ithempulethi, nokumatanisa isizinda. Ukuhlanganiswa okubonisa izixhumanisi zokuphatha ohlangothini lomqashi kufanele kuqondise lezo zenzo kuphaneli yekhasimende lesayithi eliyinhloko futhi kufake indawo yokubuyela eqinisekisiwe lapho umsebenzisi kufanele akwazi ukubuyela kumqashi ngemva kokuqeda isenzo.
 
@@ -40,7 +40,7 @@ I-URL ekhiqiziwe isalokhu ingahlungwa nge-`wu_sso_url`, ethola i-URL ye-SSO, ums
 
 Ungaphindi isimo sobulungu, invoice, ikheli lokukhokhisa, ithempulethi, noma ukuphathwa kwesizinda ngaphakathi komqashi ozimele. Phatha ideshibhodi yomqashi njengesiqalisi kanye nephaneli yekhasimende lesayithi eliyinhloko njengohlelo oluyirekhodi lezenzo eziphathwayo.
 
-## Ukuqinisekiswa kokufuduka
+## Ukuqinisekiswa kokufuduka {#migration-verification}
 
 Ngemva kokuthi ukufuduka noma ukuhlanganiswa komjikelezo wokuphila kushintshe idatha yomqashi, qalisa amasango okuqinisekisa:
 
@@ -49,10 +49,10 @@ Ngemva kokuthi ukufuduka noma ukuhlanganiswa komjikelezo wokuphila kushintshe id
 
 Ukuhlanganiswa kufanele kuphathe ukuqinisekiswa okuhlulekile njengesivimbeli sokufakwa futhi kugweme ukumaka umqashi njengophilayo kuze kube yilapho ukwehluleka sekuxazululiwe.
 
-## Ukususwa komqashi
+## Ukususwa komqashi {#tenant-deletion}
 
 Ukugeleza kokususa kufanele kubize indlela yokudiliza ye-addon ukuze imininingwane yokufinyelela kudathabheyisi yomqashi ihlanzwe. Ukuhlanganiswa kwangaphandle kungasusa izinsiza zomhlinzeki ngemva kokuthi ukudiliza kuphumelele, kodwa akufanele kususe amadathabheyisi noma amafolda osokhaya ngesikhathi ukuqinisekiswa noma imisebenzi ye-async push isasebenza.
 
-## Irutha yedathabheyisi ephelelwe yisikhathi
+## Irutha yedathabheyisi ephelelwe yisikhathi {#deprecated-database-router}
 
 I-`Database_Router` yakudala ithathelwe indawo i-stub yokuphelelwa yisikhathi. Ukuhlanganiswa okusha kufanele kuthole abaqashi nge-router yamanje yesayithi nama-API erejista yomqashi kunokuncika ku-class ye-router endala.

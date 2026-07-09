@@ -4,22 +4,22 @@ title: 'Hereket - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Plugin döredijilerine belli bir sahypa goşmaça hook-lary goşmaga rugsat berýär.
 
 Ulanylyşy: Dinamik bölek dogry sahypa ID-si bilen çalşyrylmalydyr, meselem add_action('wu_page_events_load', 'callback_with_aditional_hook', 10, 2);
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Ady | Görnüşi | Beýany |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Bu sahypanyň ID-si. |
 | $page_hook | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Bu sahypa üçin döredilen hook. |
 
-### Şu wersiýadan bäri
+### Şu wersiýadan bäri {#since}
 
 - 1.8.2
-### Çeşme
+### Çeşme {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L301) içinde 301-nji setirde kesgitlenen

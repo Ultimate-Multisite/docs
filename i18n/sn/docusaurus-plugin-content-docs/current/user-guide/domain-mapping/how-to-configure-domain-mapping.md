@@ -3,17 +3,17 @@ title: Maitiro Ekumisikidza Kubatanidzwa kweDomain
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Maitiro Ekugadzirisa Kubatanidza Domain (v2)
+# Maitiro Ekugadzirisa Kubatanidza Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**CHIZIVISO CHAKAKOSHA: Chinyorwa ichi chinoreva Ultimate Multisite vhezheni 2.x.**_
 
 Chimwe chezvinhu zvine simba zvikuru panetiweki yepremium kugona kupa vatengi vedu mukana wekubatanidza domain yepamusoro-soro kumasaiti avo. Pakupedzisira, ndeipi inotaridzika sehunyanzvi zvikuru: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) kana [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ndokusaka Ultimate Multisite ichipa chinhu ichocho chakavakirwa-mukati, pasina kudiwa kwekushandisa maplugin echitatu-bato.
 
-## Chii chinonzi kubatanidza domain?
+## Chii chinonzi kubatanidza domain? {#whats-domain-mapping}
 
 Sezvinoratidzwa nezita, kubatanidza domain kugona kunopihwa neUltimate Multisite kugamuchira chikumbiro chedomain yakasarudzika uye kubatanidza chikumbiro ichocho nesaiti inoenderana munetiweki ine domain iyoyo yakabatanidzwa.
 
-### Maitiro ekuseta kubatanidza domain paUltimate Multisite Network yako
+### Maitiro ekuseta kubatanidza domain paUltimate Multisite Network yako {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Kubatanidza domain kunoda kumwe kuseta kwaunoita kuti kushande. Nerombo rakanaka, Ultimate Multisite inozviitira basa rakaoma kuitira kuti ugone kuzadzisa zvinodiwa zviri nyore.
 
@@ -45,7 +45,7 @@ Asi usati watanga kubatanidza domain yakasarudzika kune imwe yemasubsite munetiw
 
 ###
 
-### Kuva nechokwadi chekuti zvirongwa zveDNS zvedomain zvakagadziriswa nemazvo
+### Kuva nechokwadi chekuti zvirongwa zveDNS zvedomain zvakagadziriswa nemazvo {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Kuti kubatanidza kushande, unofanira kuva nechokwadi chekuti domain yauri kuronga kubatanidza iri kunongedzera kuIP address yeNetwork yako. Cherechedza kuti unoda IP address yeNetwork - IP address yedomain kwakaiswa Ultimate Multisite - kwete IP address yedomain yakasarudzika yaunoda kubatanidza. Kuti utsvage IP address yedomain chaiyo, tinokurudzira kuenda ku[Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), semuenzaniso.
 
@@ -55,7 +55,7 @@ Kana ukazviwana uchinetseka kuita kuti izvi zvishande, **taura nerutsigiro rwemu
 
 Kana uchironga kubvumira vatengi vako kubatanidza madomain avo pachavo, vachafanira kuita basa pachikamu ichi ivo pachavo. Vatungamire kusisitimu yerutsigiro rwemunyoresi wavo kana vakazviwana vasingakwanisi kugadzira A Record.
 
-### Kubatanidza zita redomain yakasarudzika seSuper Admin
+### Kubatanidza zita redomain yakasarudzika seSuper Admin {#mapping-custom-domain-name-as-super-admin}
 
 Paunenge wakapinda se super admin panetiweki yako, unogona kuwedzera nekutarisira mazita emadomain akasarudzika zviri nyore nekuenda pasi pe**Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Kana ukadzvanya pazita redomain, uchakwanisa kuona dzimwe sarudzo mukati maro. N
 
 **Yakachengeteka Here?:** Kunyangwe Ultimate Multisite ichiongorora kana domain iine SSL certificate kana kuti kwete isati yaigonesa, unogona kusarudza nemaoko kurodha domain iine kana isina SSL certificate. Cherechedza kuti kana webhusaiti isina SSL certificate uye ukaedza kuimanikidza kurodha neSSL, inogona kukupa zvikanganiso.
 
-### Kumapa zita redomain rakasarudzika semushandisi weSubsite
+### Kumapa zita redomain rakasarudzika semushandisi weSubsite {#mapping-custom-domain-name-as-subsite-user}
 
 Vatongi veSubsite vanogonawo kumapa mazita edomain akasarudzika kubva pa dashboard yekutonga ye subsite yavo.
 
@@ -121,7 +121,7 @@ Mushandisi anogona kuzodzvanya **Danho Rinotevera** uye oenderera mberi nekuwedz
 
 Kudzvanya **Wedzera Domain** kuchatanga maitiro ekuongorora uye kutora ruzivo rweDNS rwedomain yakasarudzika.
 
-### Nezve Kuwiriranisa Domain
+### Nezve Kuwiriranisa Domain {#about-domain-syncing}
 
 Kuwiriranisa Domain inzira apo Ultimate Multisite inowedzera zita redomain rakasarudzika ku account yako yehosting sedomain yekuwedzera **kuti kumapa domain kushande**.
 

@@ -3,11 +3,11 @@ title: Seznámení s administračním panelem
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Prohlídka panelu správce
+# Prohlídka panelu správce {#touring-the-admin-panel}
 
 Ultimate Multisite se snaží být co nejjednodušší a nejsrozumitelnější, ale u takto výkonného nástroje může pomoci komentovaná prohlídka. Projděme si stránky správy, abyste se zorientovali.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 **Dashboard** Ultimate Multisite zobrazuje základní přehledy a analytiku včetně příjmů, aktivit webů, růstu členství, počtů návštěvníků a geografických údajů.
 
@@ -25,61 +25,61 @@ Zde je také úplný pohled na network dashboard:
 
 ![Network Dashboard celá stránka](/img/admin/network-dashboard-full-page.png)
 
-## Checkout formuláře
+## Checkout formuláře {#checkout-forms}
 
 **Checkout formuláře** vám dávají flexibilitu vytvářet vlastní registrační stránky. Můžete přizpůsobit pole, vkládat vlastní třídy a skripty a omezit přístup podle země nebo polohy návštěvníka.
 
 ![Seznam Checkout formulářů](/img/admin/checkout-forms-list.png)
 
-## Produkty
+## Produkty {#products}
 
 Sekce **Produkty** je místem, kde vytváříte různé plány, balíčky a služby pro svou síť. Definujte ceny, frekvence fakturace a limity & kvóty na úrovni produktu.
 
 ![Seznam produktů](/img/admin/products-list.png)
 
-## Členství
+## Členství {#memberships}
 
 Stránka **Členství** zobrazuje všechna předplatná ve vaší síti. Kontrolujte a upravujte podrobnosti předplatného včetně plánů, produktů, fakturovaných částek a frekvencí, historie plateb a časových značek.
 
 ![Seznam členství](/img/admin/memberships-list.png)
 
-## Platby
+## Platby {#payments}
 
 Stránka **Platby** poskytuje rychlý přehled historie plateb v celé vaší síti s podrobnými informacemi o transakcích včetně konkrétních produktů a částek.
 
 ![Seznam plateb](/img/admin/payments-list.png)
 
-## Zákazníci
+## Zákazníci {#customers}
 
 Stránka **Zákazníci** zobrazuje všechny členy registrované ve vaší síti se základními informacemi o uživateli včetně jména, e-mailové adresy, posledního přihlášení a odkazu „přepnout na“ pro přihlášení do jejich podwebu.
 
 ![Seznam zákazníků](/img/admin/customers-list.png)
 
-## Weby
+## Weby {#sites}
 
 Stránka **Weby** uvádí všechny podweby ve vaší síti včetně šablon webů a webů vlastněných zákazníky. Snadno spravujte namapované domény, limity & kvóty, pluginy a motivy a náhledy webů.
 
 ![Seznam webů](/img/admin/sites-list.png)
 
-## Domény
+## Domény {#domains}
 
 Stránka **Domény** je určena pro vlastní domény namapované na podweby. Jako super admin můžete ručně přidávat nebo mapovat vlastní názvy domén a zobrazovat DNS záznamy a protokoly.
 
 ![Seznam domén](/img/admin/domains-list.png)
 
-## Slevové kódy
+## Slevové kódy {#discount-codes}
 
 **Slevové kódy** vám umožňují vytvářet kuponové kódy pro nabídku slev koncovým uživatelům. Určete hodnotu slevy a zacilte na konkrétní uživatele nebo skupiny.
 
 ![Seznam slevových kódů](/img/admin/discount-codes-list.png)
 
-## Rozesílky
+## Rozesílky {#broadcasts}
 
 **Rozesílky** jsou nástroj pro zavádění oznámení nebo posílání soukromých zpráv uživatelům vašich podwebů. Zacilte na konkrétní skupiny uživatelů podle plánu nebo produktu, k němuž mají předplatné.
 
 ![Seznam rozesílek](/img/admin/broadcasts-list.png)
 
-## Nastavení
+## Nastavení {#settings}
 
 Stránka **Nastavení** je místem, kde konfigurujete Ultimate Multisite — nastavení registrace, platby, API a webhooky, mapování domén a další integrace.
 
@@ -109,13 +109,13 @@ A stránka nastavení webů:
 
 ![Nastavení webů celá stránka](/img/admin/settings-sites-full.png)
 
-## Události
+## Události {#events}
 
 Stránka **Události** uchovává záznam všech událostí a protokolů ve vaší síti. Sleduje aktivity, jako jsou změny plánů, registrace a další pohyby — užitečné pro monitorování vašeho multisite.
 
 ![Seznam událostí](/img/admin/events-list.png)
 
-## Webhooky
+## Webhooky {#webhooks}
 
 **Webhooky** vám umožňují doručovat data do jiné aplikace. Užitečné pro odesílání dat z Ultimate Multisite na platformy jako Zapier.
 

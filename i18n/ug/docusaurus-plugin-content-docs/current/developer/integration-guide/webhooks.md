@@ -3,11 +3,11 @@ title: Webhook نى بىر تەرەپ قىلىش
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook بىر تەرەپ قىلىش
+# Webhook بىر تەرەپ قىلىش {#webhook-handling}
 
 سىرتقى مۇلازىمەتلەردىن ھادىسىلەرنى قوبۇل قىلىش ۋە سانلىق مەلۇماتلارنى Ultimate Multisite بىلەن ماسقەدەملەش ئۈچۈن ئىختىيارىي webhook ئاخىر نۇقتىلىرىنى قۇرۇڭ.
 
-## ئىختىيارىي Webhook ئاخىر نۇقتىسى
+## ئىختىيارىي Webhook ئاخىر نۇقتىسى {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## بىخەتەرلىككە دائىر ئويلىشىشلار
+## بىخەتەرلىككە دائىر ئويلىشىشلار {#security-considerations}
 
 - HMAC ياكى ئورتاق مەخپىي سۆز ئارقىلىق webhook ئىمزالىرىنى ھەمىشە دەلىللەڭ
 - REST يۆنىلىشىڭىزدە `permission_callback` ئىشلىتىڭ — ئىشلەپچىقىرىش مۇھىتىدا ئۇنى ھەرگىز `__return_true` قىلىپ تەڭشىمەڭ

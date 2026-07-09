@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 He WordPress plugin e tāpiri ana i ngā whakatikanga hototahitanga mō Tutor LMS i ngā taiao multisite.
 
-## Whakaahuatanga
+## Whakaahuatanga {#description}
 
 Ka whakarato tēnei plugin i ngā whakatikanga hototahitanga matua mō te whakahaere i Tutor LMS i runga i ngā whatunga WordPress multisite. Ka whakahaere i te whakauru kaiwhakamahi, te whakahaere kaiwhakaako, ngā here akoranga, me ētahi atu āheinga e hāngai ana ki te multisite.
 
-## Āhuatanga
+## Āhuatanga {#features}
 
 - **Whakahaere Ripanga Pātengi Raraunga**: Ka kite aunoa, ka waihanga hoki i ngā ripanga Tutor LMS e ngaro ana nā te rahunga i ngā here kī rāwaho multisite
 - **Whakauru Kaiwhakamahi Multisite**: Ngā pūwhakahaere AJAX ritenga mō te whakahaere i te whakauru kaiwhakamahi puta noa i ngā pae o te whatunga
@@ -24,7 +24,7 @@ Ka whakarato tēnei plugin i ngā whakatikanga hototahitanga matua mō te whakah
 - **Ngā Tirohanga Admin Ritenga**: He rārangi kaiwhakaako me tētahi atanga whakahaere e mōhio ana ki te multisite
 - **Ngā Utauta Admin**: He atanga whakahaere pātengi raraunga mō ngā kaiwhakahaere whatunga me ngā kaiwhakahaere pae
 
-## Ngā Whakaritenga
+## Ngā Whakaritenga {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Ka whakarato tēnei plugin i ngā whakatikanga hototahitanga matua mō te whakah
 - Tāutanga WordPress Multisite
 - Ultimate Multisite plugin (mō te āheinga here akoranga)
 
-## Tāutanga
+## Tāutanga {#installation}
 
 1. Tukuake ngā kōnae plugin ki `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Me whakarite kua tāutatia, kua whakahohe hoki a Tutor LMS
 3. Whakahohe i te plugin mā te tahua 'Plugins' i WordPress
 4. Ka kōmitimiti aunoa te plugin ki Tutor LMS
 
-## Hanganga Kōnae
+## Hanganga Kōnae {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Āheinga i Nekehia mai i te MU Plugin
+## Āheinga i Nekehia mai i te MU Plugin {#functionality-moved-from-mu-plugin}
 
 Kei roto i tēnei plugin ngā āheinga i noho i mua i `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Kei roto i tēnei plugin ngā āheinga i noho i mua i `wp-content/mu-plugins/dav
 - Te whakahaere whakauru kaiwhakamahi multisite
 - Te whakaaturanga ID hua akoranga
 
-## Whakahaere Pātengi Raraunga
+## Whakahaere Pātengi Raraunga {#database-management}
 
-### Te Raru
+### Te Raru {#the-problem}
 
 I ngā taiao WordPress multisite, ka rahua te waihanga ripanga Tutor LMS mō ngā ripanga whai here kī rāwaho ki te ripanga kaiwhakamahi. Ka tupu tēnei nā te mea:
 
@@ -81,7 +81,7 @@ I ngā taiao WordPress multisite, ka rahua te waihanga ripanga Tutor LMS mō ng�
 - Ka tohutoro ngā kī rāwaho ki `wp_2_users` (kāore e tīariari)
 - Ko te ripanga kaiwhakamahi tūturu ko `wp_users` (ka tiritiria puta noa i te whatunga)
 
-### Te Rongoā
+### Te Rongoā {#the-solution}
 
 Ka mahi aunoa tēnei plugin i ēnei:
 
@@ -92,13 +92,13 @@ Ka mahi aunoa tēnei plugin i ēnei:
    - Te waihanga pae hou i te whatunga
    - Te tirotiro ā-ringa i ngā ripanga mā te atanga admin
 
-### Ngā Ripanga e Pāngia Ana
+### Ngā Ripanga e Pāngia Ana {#affected-tables}
 
 - `tutor_coupon_usages` - Kei roto he kī rāwaho ki te ripanga kaiwhakamahi
 - `tutor_carts` - Kei roto he kī rāwaho ki te ripanga kaiwhakamahi
 - `tutor_notification_preferences` - He ripanga TutorPro whai kī rāwaho ki te ripanga kaiwhakamahi
 
-### Atanga Admin
+### Atanga Admin {#admin-interface}
 
 Uru ki ngā utauta whakahaere pātengi raraunga i:
 
@@ -111,6 +111,6 @@ Mā te atanga ka āhei koe ki te:
 - Tirotiro i te whirihoranga pātengi raraunga
 - Tiro i ngā mōhiohio tūnga taipitopito
 
-## Tautoko
+## Tautoko {#support}
 
 Kua hoahoatia motuhake tēnei plugin mō te tūāpapa KursoPro. Mō te tautoko hangarau, whakapā atu ki te tīma whakawhanake.

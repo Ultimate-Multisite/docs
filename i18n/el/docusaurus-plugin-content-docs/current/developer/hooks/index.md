@@ -3,11 +3,11 @@ title: Αναφορά Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Αναφορά Hooks
+# Αναφορά Hooks {#hooks-reference}
 
 Αυτόματα δημιουργημένη τεκμηρίωση για όλες τις **59 ενέργειες** και τα **118 φίλτρα** στο Ultimate Multisite.
 
-## Ενέργειες
+## Ενέργειες {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Εκτελείται πριν από την ανακατεύθυνση πιστοποίησης.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Εκτελείται αμέσως πριν οριστεί το cookie πιστοποίησης.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Εκτελείται αφού ένα αντικείμενο αποθηκευτεί στη βάση δεδομένων.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν ενέργειες στη διαδικασία ξεκλειδώματος.
 
-## Φίλτρα
+## Φίλτρα {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Φιλτράρει τη διάρκεια της περιόδου λήξης του cookie ελέγχου ταυτότητας.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Φιλτράρει το σχήμα ανακατεύθυνσης ελέγχου ταυτότητας.

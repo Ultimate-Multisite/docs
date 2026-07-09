@@ -4,11 +4,11 @@ title: Filter - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filter: wu_add_product_setup_fee_line_item
+# Filter: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 Ermöglicht Entwicklern, Änderungen an der Setup-Gebühr-Position vorzunehmen.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Beschreibung |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Ermöglicht Entwicklern, Änderungen an der Setup-Gebühr-Position vorzunehmen.
 | $product | `\WP_Ultimo\Models\Product` | Das Produkt, das mit der Setup-Gebühr verknüpft ist. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | Das Warenkorb-Objekt. |
 
-### Seit
+### Seit {#since}
 
 - 2.1
 
-### Quelle
+### Quelle {#source}
 
 Definiert in [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) in Zeile 1790
 
-## Rückgabe
+## Rückgabe {#returns}

@@ -3,7 +3,7 @@ title: Mainosinjektori
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Mainosten mainettasi Ultimate Multisite: Ad Injectorilla
+# Mainosten mainettasi Ultimate Multisite: Ad Injectorilla {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector on **ilmainen lisäosa**, joka antaa sinulle työkalut mainosten sijoittamiseen suunnitelmiisi suoraan niiden muokkaussivulta.
 
@@ -35,7 +35,7 @@ Voit myös lisätä mainoksia hallintapaneelien yläosaan kyseisen suunnitelman 
 
 _Mene Admin Panel Ad Code -vaihtoehtoon, jos haluat näyttää mainoksia käyttäjän takana (back-end)_
 
-### Mainonnan ulkopuolella
+### Mainonnan ulkopuolella {#beyond-advertising}
 
 Voit myös käyttää Ultimate Multisite: Ad Injector -lisäosaa tukemaan korkeamman tason suunnitelmia.
 

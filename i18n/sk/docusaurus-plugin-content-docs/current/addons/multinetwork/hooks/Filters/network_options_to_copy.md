@@ -4,17 +4,17 @@ title: Filter - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Filter: network_options_to_copy
+# Filter: network_options_to_copy {#filter-networkoptionstocopy}
 
 Filtruje predvolené sieťové možnosti na kopírovanie.
 
-### Od verzie
+### Od verzie {#since}
 
 - 1.3.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1649) na riadku 1649
 
 
-## Vráti
+## Vráti {#returns}
 List of network $option_name =&gt; $option_label pairs.

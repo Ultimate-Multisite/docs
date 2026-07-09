@@ -3,17 +3,17 @@ title: Gukoresha no gukoresha
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 yifashije **Export & Import** (Kugera no Gutera) uburyo runaka mu **Tools > Export & Import**. Ureba uyu zindiwe n'ubwo ushaka kugabanya site ya WordPress mu ZIP file, gutera ubuzima bwa ZIP, cyangwa gukoresha site hagati y'Ultimate Multisite na single-site WordPress zitera.
 
-## Ubwumvikane (Required permissions)
+## Ubwumvikane (Required permissions) {#required-permissions}
 
 Ushobora gufata umwanya nk'umuntu w'ubwujaji (administrator) ukeneye kwerekana menu ya **Tools** kuri site yifashijwe cyangwa gukera. Mu network ya multisite, ushobora gukoresha aka ntambi ry'ubwujaji bw'ubwoko (network administrator account) mu gihe utera cyangwa gutera subsites zitera z'Ultimate Multisite.
 
 Uburyo bwo gutera ZIP download bifashijwe ku uburyo bwo gufata umwanya (authenticated download endpoint), nko mu gihe ushaka ko download yisobanura, ugukomeza gukoresha umwanya w'ubujaji (admin session) kandi ushobora kwibanda URL z'download cyangwa ukwibanda ku bantu bose.
 
-## Gutera site mu ZIP
+## Gutera site mu ZIP {#exporting-a-site-to-a-zip}
 
 1. Mu admin ya WordPress ya site ushaka gufata, gukora **Tools > Export & Import**.
 2. Gukoresha ubushobozi bwo gutera kandi ugabona site ushaka kugabanya.
@@ -27,7 +27,7 @@ Gukomeza ZIP mu cyerekezo cyiza kuko ishobora kugira ubushobozi bwo kubyara site
 
 Urukozi rw'umzi w'ibizzi (ZIP size) rishobora gukoreshwa n'ubwo mu gihe cyo media, plugins na themes ugiye gutangira, no ku maseke y'ibyo database tables y'igice.
 
-## Gutangira site yakiri ZIP
+## Gutangira site yakiri ZIP {#what-the-export-includes}
 
 1. Gukoresha **Tools > Export & Import** kuri WordPress site ya mbere (site ya gutangira).
 2. Gukoresha amahirwe (import area) kandi ugufasha ZIP wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari wari

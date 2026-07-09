@@ -4,13 +4,13 @@ title: Filtrační funkce - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Filtruje, zda má být vynucováno dodatečná pravidla pro heslo.
 
 Pokud je nastaven na true, vynucuje minimální délku a požadavky na znaky. Je automaticky aktivováno pro nastavení "Super Strong" nebo když je funkce Strong Password v Defender Pro aktivní.
 
-## Parametry
+## Parametry {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Pokud je nastaven na true, vynucuje minimální délku a požadavky na znaky. Je
 | $strength_setting | `string` | Hodnota nastavení administrátora. |
 | $defender_active | `bool` | Čím je aktivní Strong Password v Defender Pro. |
 
-### Since
+### Since {#since}
 
 - 2.4.0
-### Source
+### Source {#source}
 
 Definováno v [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) na řádku 531

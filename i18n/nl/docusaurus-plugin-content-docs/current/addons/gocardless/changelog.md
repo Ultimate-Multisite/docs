@@ -3,7 +3,7 @@ title: GoCardless-wijzigingslogboek
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless-wijzigingslog
+# GoCardless-wijzigingslog {#gocardless-changelog}
 
 Versie: 1.0.3 - Uitgebracht op 2026-05-05
 * Oplossing: Verweesde sites in behandeling worden nu opgeschoond wanneer een GoCardless-lidmaatschap wordt geannuleerd terwijl het in behandeling is of de status in de wacht heeft

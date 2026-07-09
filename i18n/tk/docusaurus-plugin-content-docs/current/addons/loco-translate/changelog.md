@@ -3,14 +3,14 @@ title: Loco Translate üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate Üýtgeşmeler taryhy
+# Loco Translate Üýtgeşmeler taryhy {#loco-translate-changelog}
 
-### 1.0.1
+### 1.0.1 {#101}
 * Iň soňky Loco Translate wersiýasy bilen laýyklyk gowulandyryldy
 * Has gowy howpsuzlyk üçin giriş gözegçiligi kämilleşdirildi
 * Öndürijilik optimizasiýalary
 
-### 1.0.0
+### 1.0.0 {#100}
 * Ilkinji goýberiliş
 * Saýta mahsus terjime kataloglary
 * Terjime ileri tutma ulgamy

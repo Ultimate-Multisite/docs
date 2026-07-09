@@ -3,25 +3,25 @@ title: قاڵبی Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# قاڵبی پێوەکراو
+# قاڵبی پێوەکراو {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## پێداویستییەکان
+## پێداویستییەکان {#requirements}
 
 - WordPress 5.3 یان بەرزتر
 - PHP 7.4 یان بەرزتر
 - پڵەگینی Multisite Ultimate (چالاک)
 
-## دامەزراندن
+## دامەزراندن {#installation}
 
 1. پەڕگەکانی پێوەکراوەکە باربکە بۆ بوخچەی `/wp-content/plugins/`
 2. پڵەگینەکە لە ڕێگەی مێنیوی 'Plugins' لە WordPress چالاک بکە
 3. ڕێکخستنەکانی پێوەکراوەکە لە بەڕێوەبەری تۆڕدا ڕێکبخە
 
-## پەرەپێدان
+## پەرەپێدان {#development}
 
-### ئامادەکردن
+### ئامادەکردن {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### پێکهاتەی پڕۆژە
+### پێکهاتەی پڕۆژە {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # یاساکانی نوێکردنەوەی کۆد
 ```
 
-### تاقیکردنەوە
+### تاقیکردنەوە {#testing}
 
 پێوەکراوەکە چوارچێوەیەکی تاقیکردنەوەی گشتگیری تێدایە:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **داپۆشینی تاقیکردنەوە**: ڕێکخراوە بۆ شوێنکەوتنی داپۆشینی کۆد
 - **تاقیکردنەوەی Multisite**: تاقیکردنەوەکان لە ژینگەی multisiteدا ئەنجام دەدرێن
 
-### ستانداردەکانی کۆد
+### ستانداردەکانی کۆد {#code-standards}
 
 - **ستانداردەکانی کۆدنووسی WordPress**: لە ڕێگەی PHPCS جێبەجێ دەکرێت
 - **گونجانی PHP 7.4+**: تایبەتمەندییە نوێیەکانی PHP پشتگیری دەکرێن
 - **شیکاریی نەگۆڕ**: یەکخستنی PHPStan بۆ پشکنینی جۆر
 - **نوێکردنەوەی کۆد**: یاساکانی Rector بۆ بەرزکردنەوەی PHP
 
-### سیستەمی Build
+### سیستەمی Build {#build-system}
 
 - **پرۆسێسکردنی سەرچاوەکان**: بچووککردنەوە بۆ پەڕگەکانی CSS/JS
 - **وەرگێڕان**: دروستکردنی پەڕگەی POT
 - **پاکێجکردن**: دروستکردنی ئەرشیف بۆ دابەشکردن
 - **دۆخی پەرەپێدان**: سەرچاوە بچووک‌نەکراوەکان بۆ هەڵەدۆزینەوە
 
-## ڕێکخستن
+## ڕێکخستن {#configuration}
 
 پێوەکراوەکە پشتگیریی هەڵبژاردەی ڕێکخستنی جۆراوجۆر دەکات کە لە ڕووکاری بەڕێوەبەری تۆڕەوە دەستپێگەیشتوون.
 
-## Hooks و Filters
+## Hooks و Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - دوای دەستپێکردنی پێوەکراوەکە کاردەکات
 - `ultimate-multisite-addon-template_loaded` - دوای بارکردنی هەموو پەڕگەکانی پێوەکراوەکە کاردەکات
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - گۆڕینی ڕێکخستنەکانی پێوەکراو
 - `ultimate-multisite-addon-template_enabled` - تێپەڕاندنی دۆخی چالاککردن/ناچالاککردنی پێوەکراو
 
-## مۆڵەت
+## مۆڵەت {#license}
 
 ئەم پێوەکراوە بە GPL v3 یان دواتر مۆڵەتدراوە.
 
-## پشتگیری
+## پشتگیری {#support}
 
 بۆ پشتگیری و بەڵگەنامە، سەردانی [MultisiteUltimate.com](https://multisiteultimate.com) بکە
-## گۆڕانکارییەکان
+## گۆڕانکارییەکان {#changelog}
 
 - وەشانی 1.0.1 (2025-09-28): گۆڕینی ناوی پێشگر بۆ ultimate-multisite؛ نوێکردنەوەی text domain؛ بەرزکردنەوەی وەشان.
 

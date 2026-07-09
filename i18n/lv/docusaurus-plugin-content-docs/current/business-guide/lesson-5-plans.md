@@ -3,15 +3,15 @@ title: '5. nodarbība: Jūsu plānu izstrāde'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 5. nodarbība: Plānu izstrāde
+# 5. nodarbība: Plānu izstrāde {#lesson-5-designing-your-plans}
 
 Jūsu plānu līmeņi nav tikai cenu līmeņi -- tie atspoguļo to, kā jūsu nišas klienti patiesībā darbojas. Šajā nodarbībā jūs izstrādāsiet produktu līmeņus, kas atbilst fitnesa uzņēmumu reālajām vajadzībām dažādos posmos.
 
-## Kur mēs apstājāmies
+## Kur mēs apstājāmies {#where-we-left-off}
 
 FitSite ir gatavas trīs veidnes (Studio Essential, Gym Pro, Fitness Chain). Tagad mēs izveidosim plānus, kas nosaka, kam klienti iegūst piekļuvi un cik viņi maksā.
 
-## Domāšana klientu segmentos
+## Domāšana klientu segmentos {#thinking-in-customer-segments}
 
 Kļūda, ko pieļauj lielākā daļa cilvēku, ir plānu izstrāde, balstoties uz tehniskām funkcijām (krātuve, joslas platums, lapu skaits). Jūsu nišas klienti nedomā šādos terminos. Sporta zāles īpašnieks domā par to, kas viņam nepieciešams uzņēmuma vadīšanai.
 
@@ -25,11 +25,11 @@ Fitnesa studijām ir trīs dabiski segmenti:
 
 Jūsu plāniem jāatbilst šiem segmentiem, nevis patvaļīgām funkciju pakotnēm.
 
-## FitSite plānu izveide
+## FitSite plānu izveide {#creating-the-fitsite-plans}
 
 Dodieties uz **Ultimate Multisite > Produkti > Pievienot produktu** katram plānam.
 
-### 1. plāns: FitSite Starter -- $49/mēnesī
+### 1. plāns: FitSite Starter -- $49/mēnesī {#plan-1-fitsite-starter----49month}
 
 **Mērķauditorija**: Individuālie treneri un mazās studijas
 
@@ -59,7 +59,7 @@ Dodieties uz **Ultimate Multisite > Produkti > Pievienot produktu** katram plān
 - Jūsu izvēlētā theme: Piespiedu aktivizēšana
 - Visas pārējās themes: Paslēptas
 
-### 2. plāns: FitSite Growth -- $99/mēnesī
+### 2. plāns: FitSite Growth -- $99/mēnesī {#plan-2-fitsite-growth----99month}
 
 **Mērķauditorija**: Nostiprinājušās sporta zāles ar vienu atrašanās vietu
 
@@ -85,7 +85,7 @@ Dodieties uz **Ultimate Multisite > Produkti > Pievienot produktu** katram plān
 - Plānu grupa: FitSite Plans
 - Produkta secība: 2
 
-### 3. plāns: FitSite Pro -- $199/mēnesī
+### 3. plāns: FitSite Pro -- $199/mēnesī {#plan-3-fitsite-pro----199month}
 
 **Mērķauditorija**: Fitnesa ķēdes ar vairākām atrašanās vietām
 
@@ -109,7 +109,7 @@ Dodieties uz **Ultimate Multisite > Produkti > Pievienot produktu** katram plān
 - Plānu grupa: FitSite Plans
 - Produkta secība: 3
 
-## Plānu grupas iestatīšana
+## Plānu grupas iestatīšana {#setting-up-the-plan-group}
 
 Plānu grupa nodrošina, ka klienti var jaunināt vai pazemināt plānu tikai FitSite plānu saimes ietvaros. Katra plāna cilnē **Jauninājumi un pazeminājumi**:
 
@@ -118,7 +118,7 @@ Plānu grupa nodrošina, ka klienti var jaunināt vai pazemināt plānu tikai Fi
 
 Tas izveido skaidru jaunināšanas ceļu: Starter → Growth → Pro.
 
-## Pasūtījuma papildpiedāvājumu pievienošana
+## Pasūtījuma papildpiedāvājumu pievienošana {#adding-order-bumps}
 
 Pasūtījuma papildpiedāvājumi ir papildu produkti, kas tiek piedāvāti norēķināšanās laikā. FitSite gadījumā apsveriet:
 
@@ -128,7 +128,7 @@ Pasūtījuma papildpiedāvājumi ir papildu produkti, kas tiek piedāvāti norē
 
 Izveidojiet tos kā **Pakotnes** tipa produktus Ultimate Multisite un saistiet tos ar attiecīgajiem plāniem.
 
-## Kāpēc šī struktūra darbojas
+## Kāpēc šī struktūra darbojas {#why-this-structure-works}
 
 - **Starter** novērš šķēršļus uzsākšanai -- zema cena, vienkāršs piedāvājums, ātri nodrošina treneru klātbūtni tiešsaistē
 - **Growth** pievieno funkcijas, ko sporta zāles patiesībā prasa -- rezervēšanu, galerijas, pielāgotus domēnus
@@ -136,7 +136,7 @@ Izveidojiet tos kā **Pakotnes** tipa produktus Ultimate Multisite un saistiet t
 - **Pasūtījuma papildpiedāvājumi** ļauj klientiem pielāgot piedāvājumu, nesarežģījot pamatplānus
 - **Skaidrs jaunināšanas ceļš** nozīmē, ka klienti aug kopā ar jums, nevis aiziet
 
-## FitSite tīkls līdz šim
+## FitSite tīkls līdz šim {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Trīs plānu līmeņi**, kas piesaistīti reāliem fitnesa uzņēmumu segmentiem
 - **Funkciju piekļuves ierobežošana**, izmantojot Ultimate Multisite plugin un veidņu kontroles

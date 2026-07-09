@@ -3,7 +3,7 @@ title: Breytingaskrá WooCommerce-samþættingar
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Breytingaskrá WooCommerce-samþættingar
+# Breytingaskrá WooCommerce-samþættingar {#woocommerce-integration-changelog}
 
 Útgáfa 2.2.0 - Gefin út 2026-07-01
 * Nýtt: Skattupphæðir Ultimate Multisite birtast nú sem aðskildar WooCommerce gjaldalínur í checkout, sem gerir skattasamtölur skýrari fyrir greiðslu.

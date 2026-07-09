@@ -3,15 +3,15 @@ title: 'Isomo rya 4: Kubaka inyandikorugero z’ibyiciro byihariye'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Isomo 4: Kubaka Inyandikorugero z’Icyiciro Cyihariye
+# Isomo 4: Kubaka Inyandikorugero z’Icyiciro Cyihariye {#lesson-4-building-niche-templates}
 
 Inyandikorugero ni zo shingiro ry’agaciro utanga ku cyiciro cyihariye. Nyiri studio y’imyitozo ngororamubiri wiyandikisha akabona urubuga rusa n’urw’imyitozo ngororamubiri -- rufite ingengabihe z’amasomo, imyirondoro y’abatoza, n’amashusho akwiye -- aba afite amahirwe menshi yo kuguma kurusha ubona urupapuro rwerurutse rutagira ikiriho.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 Dufite urusobe rwa FitSite rukora, Ultimate Multisite yarashyizweho kandi iratunganywa. Ubu tugiye kubaka inyandikorugero zituma FitSite yumvikana nk’iyubakiwe by’umwihariko ubucuruzi bw’imyitozo ngororamubiri.
 
-## Impamvu Inyandikorugero z’Icyiciro Cyihariye Zifite Akamaro
+## Impamvu Inyandikorugero z’Icyiciro Cyihariye Zifite Akamaro {#why-niche-templates-matter}
 
 Inyandikorugero rusange zishyira akazi kagoye ku bakiriya bawe: kumenya amapaji bakeneye, imiterere y’ibikubiyemo ikora neza, n’uko babituma bigaragara neza ku rwego rw’inganda zabo. Inyandikorugero z’icyiciro cyihariye zikuraho iyo mbogamizi.
 
@@ -24,11 +24,11 @@ Nyiri studio y’imyitozo ngororamubiri wiyandikisha kuri FitSite akwiye kubona:
 
 Buzuza amakuru yabo. Ntibatangirira ku busa.
 
-## Gutegura Inyandikorugero Zawe
+## Gutegura Inyandikorugero Zawe {#planning-your-templates}
 
 Mbere yo kubaka, banza uhitemo inyandikorugero uzatanga. Kuri FitSite, tuzakora eshatu:
 
-### Inyandikorugero 1: Studio Essential
+### Inyandikorugero 1: Studio Essential {#template-1-studio-essential}
 
 Ku ma-studio mato n’abatoza ku giti cyabo.
 
@@ -39,7 +39,7 @@ Ku ma-studio mato n’abatoza ku giti cyabo.
 - Ipaji ya **Twandikire** ifite ikarita y’aho giherereye n’ifishi
 - **Igishushanyo gisukuye, kijyambere** gifite amabara akwiye imyitozo ngororamubiri
 
-### Inyandikorugero 2: Gym Pro
+### Inyandikorugero 2: Gym Pro {#template-2-gym-pro}
 
 Ku ma-gym amaze gushinga imizi afite serivisi nyinshi.
 
@@ -50,7 +50,7 @@ Ku ma-gym amaze gushinga imizi afite serivisi nyinshi.
 - Igice cya **Ubuhamya** ku ipaji ibanza
 - Amahitamo y’**ikirango kigaragara kurushaho**
 
-### Inyandikorugero 3: Fitness Chain
+### Inyandikorugero 3: Fitness Chain {#template-3-fitness-chain}
 
 Ku bikorwa bifite ahantu henshi.
 
@@ -60,17 +60,17 @@ Ku bikorwa bifite ahantu henshi.
 - **Ikirango gihurijwe hamwe** gifite amakuru yihariye y’ahantu
 - **Ububiko bw’abakozi** mu hantu hatandukanye
 
-## Kubaka Urubuga rw’Inyandikorugero
+## Kubaka Urubuga rw’Inyandikorugero {#building-a-template-site}
 
 Muri Ultimate Multisite, inyandikorugero ni urubuga rwa WordPress rwatunganyijwe uko ushaka ko imbuga nshya z’abakiriya zigaragara. Dore uko wakora rumwe:
 
-### Intambwe 1: Kora Urubuga rw’Inyandikorugero
+### Intambwe 1: Kora Urubuga rw’Inyandikorugero {#step-1-create-the-template-site}
 
 1. Jya kuri **Imbuga > Ongeraho Urushya** mu buyobozi bw’urusobe rwawe
 2. Kora urubuga rwitwa `template-studio-essential`
 3. Uru rubuga ruhinduka aho ukorera
 
-### Intambwe 2: Shyiramo kandi Utunganye Insanganyamatsiko
+### Intambwe 2: Shyiramo kandi Utunganye Insanganyamatsiko {#step-2-install-and-configure-the-theme}
 
 Hindukira kuri dashboard y’urubuga rw’inyandikorugero maze:
 
@@ -82,7 +82,7 @@ Hindukira kuri dashboard y’urubuga rw’inyandikorugero maze:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Intambwe 3: Kora Amapaji
+### Intambwe 3: Kora Amapaji {#step-3-create-the-pages}
 
 Ubaka buri paji ukoresheje:
 
@@ -92,7 +92,7 @@ Ubaka buri paji ukoresheje:
 
 Bitume ibikubiyemo by’agateganyo bigira amabwiriza aho bishoboka. Aho gushyiramo amagambo rusange yo kuzuza umwanya, andika ibikubiyemo nka: "Simbuza ibi ibisobanuro bigufi bya studio yawe n’ibiyigira yihariye. Vuga filozofiya yawe y’imyitozo, imyaka y’uburambe, cyangwa ibyo abakiriya bashobora kwitega."
 
-### Intambwe 4: Tunganya Ibyomekwaho
+### Intambwe 4: Tunganya Ibyomekwaho {#step-4-configure-plugins}
 
 Shyiramo kandi ukorese ibyomekwaho studio z’imyitozo ngororamubiri zikenera:
 
@@ -100,7 +100,7 @@ Shyiramo kandi ukorese ibyomekwaho studio z’imyitozo ngororamubiri zikenera:
 - Icyomekwaho cy’ifishi yo kuvugana
 - Icyomekwaho cya SEO (cyatunganyijwe mbere n’amahitamo asanzwe ajyanye n’imyitozo ngororamubiri)
 
-### Intambwe 5: Shyiraho Ikimenyetso nk’Inyandikorugero
+### Intambwe 5: Shyiraho Ikimenyetso nk’Inyandikorugero {#step-5-mark-as-template}
 
 1. Jya kuri **Ultimate Multisite > Imbuga**
 2. Hindura urubuga rw’inyandikorugero
@@ -108,7 +108,7 @@ Shyiramo kandi ukorese ibyomekwaho studio z’imyitozo ngororamubiri zikenera:
 
 Subiramo iyi nzira kuri buri nyandikorugero ushaka gutanga.
 
-## Urutonde rwo Kugenzura Ubuziranenge bw’Inyandikorugero
+## Urutonde rwo Kugenzura Ubuziranenge bw’Inyandikorugero {#template-quality-checklist}
 
 Mbere yo gutuma inyandikorugero iboneka, genzura ko:
 
@@ -121,7 +121,7 @@ Mbere yo gutuma inyandikorugero iboneka, genzura ko:
 - [ ] Nta links zacitse cyangwa ibikoresho bibura
 - [ ] Umuvuduko wo gufungura ipaji ur acceptable
 
-## Urusobe rwa FitSite Kugeza Ubu
+## Urusobe rwa FitSite Kugeza Ubu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Ibyo Twubatse Muri Iri Somo
+## Ibyo Twubatse Muri Iri Somo {#what-we-built-this-lesson}
 
 - **Inyandikorugero eshatu zihariye ku cyiciro** zagenewe ingano zitandukanye z’ubucuruzi bw’imyitozo ngororamubiri
 - **Ibikubiyemo n’amashusho bikwiye imyitozo ngororamubiri** bituma urubuga rwumvikana nk’urwubakiwe iyo ntego

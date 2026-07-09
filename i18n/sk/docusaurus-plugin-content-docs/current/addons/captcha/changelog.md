@@ -3,7 +3,7 @@ title: Zoznam zmien Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Zoznam zmien Captcha
+# Zoznam zmien Captcha {#captcha-changelog}
 
 Verzia: 1.5.0 - Vydané dňa 2026-05-22
 * Nové: Tvrdý obmedzovač frekvencie — počíta každý GET a POST na captcha-chránených plochách (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) a odpovedá pomocou HTTP 429, hlavičky `Retry-After` a náhodne zvoleného tarpit uspania (1–5 s, s pevným limitom 15 s).

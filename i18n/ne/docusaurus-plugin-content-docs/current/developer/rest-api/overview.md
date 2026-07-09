@@ -3,28 +3,28 @@ title: REST API अवलोकन
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API सन्दर्भ
+# REST API सन्दर्भ {#rest-api-reference}
 
-## आधारभूत कन्फिगरेसन
+## आधारभूत कन्फिगरेसन {#base-configuration}
 
 **आधार URL:** `{site_url}/wp-json/wu/v2/`
 **प्रमाणीकरण:** API Key र Secret (HTTP Basic Auth वा URL प्यारामिटरहरू)
 
-## प्रमाणीकरण
+## प्रमाणीकरण {#authentication}
 
-### API सक्षम गर्नुहोस्
+### API सक्षम गर्नुहोस् {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API प्रमाणहरू प्राप्त गर्नुहोस्
+### API प्रमाणहरू प्राप्त गर्नुहोस् {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### प्रमाणीकरण विधिहरू
+### प्रमाणीकरण विधिहरू {#authentication-methods}
 
 **HTTP Basic Auth (सिफारिस गरिएको):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## मुख्य अन्त्यबिन्दुहरू
+## मुख्य अन्त्यबिन्दुहरू {#core-endpoints}
 
-### 1. ग्राहक API
+### 1. ग्राहक API {#1-customers-api}
 
 **आधार मार्ग:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. साइटहरू API
+### 2. साइटहरू API {#2-sites-api}
 
 **आधार मार्ग:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. सदस्यताहरू API
+### 3. सदस्यताहरू API {#3-memberships-api}
 
 **आधार मार्ग:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. उत्पादनहरू API
+### 4. उत्पादनहरू API {#4-products-api}
 
 **आधार मार्ग:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. भुक्तानीहरू API
+### 5. भुक्तानीहरू API {#5-payments-api}
 
 **आधार मार्ग:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. डोमेनहरू API
+### 6. डोमेनहरू API {#6-domains-api}
 
 **आधार मार्ग:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## दर्ता अन्त्यबिन्दु
+## दर्ता अन्त्यबिन्दु {#registration-endpoint}
 
 `/register` अन्त्यबिन्दुले पूर्ण चेकआउट/दर्ता प्रवाह प्रदान गर्छ:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## स्वायत्त टेनेन्ट अन्त्यबिन्दुहरू
+## स्वायत्त टेनेन्ट अन्त्यबिन्दुहरू {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ले पृथक टेनेन्टहरू प्रावधान गर्ने, निरीक्षण गर्ने, वा प्रमाणित गर्ने एकीकरणहरूका लागि स्वायत्त टेनेन्ट REST कभरेज थप्छ।
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` लाई प्रि-लन्च अवरोधका रूपमा लिनुहोस्। प्रमाणीकरण विवरणहरू जाँच गर्नुहोस्, डेटाबेस होस्ट बाइन्डिङ, क्यु, प्रयोगकर्ता प्रावधान, वा राउटिङ समस्या समाधान गर्नुहोस्, त्यसपछि प्रमाणीकरण पुनः प्रयास गर्नुहोस्।
 
-## त्रुटि प्रतिक्रियाहरू
+## त्रुटि प्रतिक्रियाहरू {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## पृष्ठांकन र फिल्टरिङ
+## पृष्ठांकन र फिल्टरिङ {#pagination-and-filtering}
 
 **क्वेरी प्यारामिटरहरू:**
 ```http

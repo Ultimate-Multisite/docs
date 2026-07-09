@@ -3,9 +3,9 @@ title: Inyandiko za Urugero
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Noter ya Urugero
+# Noter ya Urugero {#release-notes}
 
-## Versiyon 2.13.0 — Yemerwe ku 2026-06-05
+## Versiyon 2.13.0 — Yemerwe ku 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Shya: Twifish yemezo ya sovereign-tenant ku kumenya imyanya y'abantu b'ubwoko bw'umwe (customer account), checkout, billing, site, invoice, gukoresha template, no gukoresha domain mapping. Ibi byagira ngo tenant networks zikoreshe imyanya y'abantu kugira ngo ziboneye mu site y'ingamba nyamukuru ku mishinga itandukanye.
 - Shya: Twifish yemezo ya renewal-credential ku gukoresha uburyo bwo kumenya ko umuntu yashobora kuboneka mu gihe cy'umwe (recurring memberships) kugira ngo gateways ziboneye ko zikoresha auto-renewal iyo hari ibyo byashoboye kubonwa nk'ibyo bya billing, subscription, cyangwa vault token.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Gukora: Icyemezo cy'renewal memberships, gukoresha expiration display, no edge cases zikoreshe mu gukoresha amafaranga ntiziboneye ibyo byo kubyara uburyo bwo gutangira imyitwarire (renewals), gukoresha expiration display, no edge cases.
 - Gukora: Uburyo bwo gukoresha WordPress byashobye kwigishwa ku gihe cy'7.0, assets y'ubwoko Vue byashobye kuboneka mu gihe cy'npm sources, kandi Cypress end-to-end coverage iriho ibyo byo checkout, setup, SSO, no gateway flows byashobye kubyara uburyo bwo gukoresha.
 
-## Versiyon 2.12.0 — Yisobanura ku giheye ku itirindwe ku gihe 2026-05-15
+## Versiyon 2.12.0 — Yisobanura ku giheye ku itirindwe ku gihe 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Shya: Wakarwa Hostinger (hPanel) nk'ubwoko bw'ibwoko bishobora gukoreshwa n'uburyo bwo gutandukanya domain.
 - Shya: Site Exporter yitwa imbere uburyo bwo gukoresha network import bundles kugira ngo ugashobore guhindura site mu giti cyose mu buryo bwiza.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Gukora (Fix): Site Exporter CLI yitwa imbere kugira ngo itandukanye n'ubwoko bwiza bwo gukoresha site mu gihe cyo.
 - Gutera (Improved): Wakarwa wp-cli wari mu plugin, byitwarira uburyo bwo gutera umubare w'plugin, byitwarira ibyo byo bitandukanye n'ibindi.
 
-## Versiyon 2.11.0 — Yisobanura ku gihe cyo gufata ku gihe 2026-05-11
+## Versiyon 2.11.0 — Yisobanura ku gihe cyo gufata ku gihe 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Shya: Site exports zishobora gukoresha self-booting `index.php` kugira ngo ZIP yitwa imbere mu buryo bwo gutandukanya site mu gihe cyo nta plugin itandukanye.
 - Shya: Network export yishobora guhindura abagize ibyo bose by'ubwoko (subsites) mu archive runaka ku page ya Site Export admin.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Shya: Checkout form editor yishobora guhagarara iyo ugiye gukoresha product nta field itarimo kubyitwa.
 - Shya: Tab ya Import/Export settings yisobanura neza ibyo byo bitwarira mu gihe cyo kandi yitwa imbere kugira ngo yoroshye guhagarara ku Site Export tool.
 
-## Versiyon 2.10.0 — Yisobanura ku gihe cyo gufata ku gihe 2026-05-05
+## Versiyon 2.10.0 — Yisobanura ku gihe cyo gufata ku gihe 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Shya: Urugero ya PayPal kwa uburyo bwa setup w'ubwujumbura (guided setup wizard) kwa kuingiza credentials kwa mkono na OAuth flag gate kumenyeshwa kwa ushirikizi wa gateway.
 - Shya: Panel ya mteja iliyobadilishwa kwa kutumia template inayoitwa current-template, grid inayodumu (persistent grid), na kitufe cha **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kurekebisha: Itaratibu ya SSO iliyofiltri imepokelewa katika mitiririko yote ya kuingia.
 - Kurekebisha: Chaguo za utambulisho wa site ambazo zimefuta zimehifadhi wakati wa kuhifadhi.
 
-## Version 2.9.0 — Iliyotolewa tarehe 30-04-2026
+## Version 2.9.0 — Iliyotolewa tarehe 30-04-2026 {#version-290--released-on-2026-04-30}
 
 - Shya: Export na import ya single-site imejaliwa chini ya **Tools > Export & Import**.
 - Kurekebisha: Faili za ZIP sasa zinatolewa kupitia endpoint wa kupakua unaohitaji uthibitisho (authenticated download endpoint).
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kurekebisha: Tour IDs zimefanywa sawa na underscores kwenye keys za user settings.
 - Kuboreshwa: ZipArchive sasa inatumika badala ya Alchemy/Zippy kwa utendaji bora wa utendaji (compatibility).
 
-## Version 2.8.0 — Iliyotolewa tarehe 29-04-2026
+## Version 2.8.0 — Iliyotolewa tarehe 29-04-2026 {#version-280--released-on-2026-04-29}
 
 - Nyaho: Jumper toggle yashyemo cyo gushyira mu settings UI ya Other Options.
 - Nyaho: Kolamu (Status column) yashyirwaho mu list table ya checkout forms.

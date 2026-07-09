@@ -3,19 +3,19 @@ title: '10-dars: Ishga tushirish kuni'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Dars 10: Ishga tushirish kuni
+# Dars 10: Ishga tushirish kuni {#lesson-10-launch-day}
 
 Hammasi qurildi. Eshiklarni ochishdan oldin, bu dars ishga tushirishdan oldingi nazorat ro‘yxati orqali o‘tib, hech narsa buzilmagan, yetishmayotgan yoki noqulay holatga olib kelmasligiga ishonch hosil qiladi.
 
-## Qayerda to‘xtagan edik
+## Qayerda to‘xtagan edik {#where-we-left-off}
 
 FitSite’da shablonlar, tariflar, to‘lovni rasmiylashtirish, brending, boshlang‘ich yo‘naltirish va narxlashning hammasi sozlangan. Endi hammasi ishlashini tekshiramiz va jonli rejimga chiqamiz.
 
-## Ishga tushirishdan oldingi nazorat ro‘yxati
+## Ishga tushirishdan oldingi nazorat ro‘yxati {#pre-launch-checklist}
 
 Har bir bandni bajaring. Hech birini o‘tkazib yubormang.
 
-### Platforma infratuzilmasi
+### Platforma infratuzilmasi {#platform-infrastructure}
 
 - [ ] Hosting barqaror va yuklama ostida yaxshi ishlayapti
 - [ ] Wildcard SSL faol va barcha subdomenlar HTTPS orqali xizmat ko‘rsatadi
@@ -23,7 +23,7 @@ Har bir bandni bajaring. Hech birini o‘tkazib yubormang.
 - [ ] Zaxira nusxalar sozlangan va sinovdan o‘tkazilgan (tekshirish uchun kamida bittasini tiklang)
 - [ ] Monitoring yo‘lga qo‘yilgan -- platforma ishlamay qolsa, bundan xabardor bo‘lasiz
 
-### Shablonlar
+### Shablonlar {#templates}
 
 - [ ] Uchala shablon ham yangi saytlarda to‘g‘ri yuklanadi
 - [ ] Placeholder kontent foydali va imlo xatolarisiz
@@ -32,7 +32,7 @@ Har bir bandni bajaring. Hech birini o‘tkazib yubormang.
 - [ ] Sahifa yuklanish tezligi maqbul (GTmetrix yoki PageSpeed Insights kabi vosita bilan sinab ko‘ring)
 - [ ] Hech bir shablonda buzilgan havolalar yoki yetishmayotgan resurslar yo‘q
 
-### Tariflar va mahsulotlar
+### Tariflar va mahsulotlar {#plans-and-products}
 
 - [ ] Uchala tarif ham faol va ko‘rinib turibdi
 - [ ] Tarif tavsiflari aniq va yo‘nalishga xos
@@ -42,7 +42,7 @@ Har bir bandni bajaring. Hech birini o‘tkazib yubormang.
 - [ ] Order bump’lar to‘lovni rasmiylashtirish paytida to‘g‘ri ko‘rinadi
 - [ ] Plagin va mavzu cheklovlari har bir tarif bo‘yicha to‘g‘ri majburlanadi
 
-### To‘lovni rasmiylashtirish jarayoni
+### To‘lovni rasmiylashtirish jarayoni {#checkout-flow}
 
 - [ ] Har bir tarifda to‘liq sinov ro‘yxatdan o‘tishini bajaring (sinov to‘lov rejimidan foydalaning)
 - [ ] Shablon tanlash har bir tarif bo‘yicha to‘g‘ri shablonlarni ko‘rsatadi
@@ -52,7 +52,7 @@ Har bir bandni bajaring. Hech birini o‘tkazib yubormang.
 - [ ] Mijoz darhol yangi saytiga kira oladi
 - [ ] Chegirma kodlari to‘g‘ri ishlaydi
 
-### Brending
+### Brending {#branding}
 
 - [ ] Kirish sahifasi FitSite brendingini ko‘rsatadi
 - [ ] Admin Dashboard FitSite brendingini ko‘rsatadi
@@ -60,7 +60,7 @@ Har bir bandni bajaring. Hech birini o‘tkazib yubormang.
 - [ ] Hisob-fakturalar biznes ma’lumotlaringiz bilan to‘g‘ri ko‘rsatiladi
 - [ ] Marketing sayti jonli va to‘lovni rasmiylashtirish formasiga havola qiladi
 
-### Boshlang‘ich yo‘naltirish
+### Boshlang‘ich yo‘naltirish {#onboarding}
 
 - [ ] Tez boshlash vidjeti yangi mijoz Dashboard’larida paydo bo‘ladi
 - [ ] Barcha Tez boshlash havolalari to‘g‘ri sahifalarga olib boradi
@@ -68,7 +68,7 @@ Har bir bandni bajaring. Hech birini o‘tkazib yubormang.
 - [ ] Bilimlar bazasi maqolalari chop etilgan va ochiq
 - [ ] Account sahifasi to‘g‘ri tarif ma’lumotlari va upgrade variantlarini ko‘rsatadi
 
-### Huquqiy va biznes masalalari
+### Huquqiy va biznes masalalari {#legal-and-business}
 
 - [ ] Xizmat shartlari chop etilgan va to‘lovni rasmiylashtirishdan havola qilingan
 - [ ] Maxfiylik siyosati chop etilgan va ochiq
@@ -77,11 +77,11 @@ Har bir bandni bajaring. Hech birini o‘tkazib yubormang.
 - [ ] To‘lov gateway’i jonli rejimda (sinov rejimida emas)
 - [ ] Soliq sozlamasi yurisdiksiyangiz uchun to‘g‘ri
 
-## Yumshoq ishga tushirish va to‘liq ishga tushirish
+## Yumshoq ishga tushirish va to‘liq ishga tushirish {#soft-launch-vs-hard-launch}
 
 Ikki bosqichli ishga tushirishni ko‘rib chiqing:
 
-### 1-bosqich: Yumshoq ishga tushirish
+### 1-bosqich: Yumshoq ishga tushirish {#phase-1-soft-launch}
 
 Ommaviy ishga tushirishdan oldin 5-10 nafar fitness studiyasi egasini ro‘yxatdan o‘tishga taklif qiling. Bular sizning beta mijozlaringiz. Ularga quyidagilar evaziga sezilarli chegirma taklif qiling (umrbod 50% chegirma yoki 3 oy bepul):
 
@@ -91,7 +91,7 @@ Ommaviy ishga tushirishdan oldin 5-10 nafar fitness studiyasi egasini ro‘yxatd
 
 Bu sizga ommaga ochilishdan oldin haqiqiy mijoz fikr-mulohazasi va namoyish qilish uchun jonli saytlarni beradi.
 
-### 2-bosqich: Ommaviy ishga tushirish
+### 2-bosqich: Ommaviy ishga tushirish {#phase-2-public-launch}
 
 Yumshoq ishga tushirish fikr-mulohazalari kiritilgach:
 
@@ -100,7 +100,7 @@ Yumshoq ishga tushirish fikr-mulohazalari kiritilgach:
 - Mijoz jalb qilishni boshlang (Dars 11)
 - Tegishli fitness sohasi kanallarida e’lon qiling
 
-## Ishga tushirish kuni amallari
+## Ishga tushirish kuni amallari {#launch-day-actions}
 
 Ommaga chiqqan kuningizda:
 
@@ -110,7 +110,7 @@ Ommaga chiqqan kuningizda:
 4. **Mavjud bo‘ling** -- birinchi haqiqiy mijozlaringizga yordam kerak bo‘lishi mumkin, tez javob esa ishonchni oshiradi
 5. **Qisqa nishonlang** -- keyin yana ishga qayting
 
-## Nimalar noto‘g‘ri ketishi mumkin
+## Nimalar noto‘g‘ri ketishi mumkin {#what-can-go-wrong}
 
 Quyidagilarga tayyor bo‘ling:
 
@@ -120,7 +120,7 @@ Quyidagilarga tayyor bo‘ling:
 - **Yuklama ostidagi unumdorlik**: Trafik keskin oshsa, hosting’ingizni qanday kengaytirishni biling
 - **Mijoz chalkashligi**: Bilimlar bazangiz va qo‘llab-quvvatlash kanallaringizni tayyor tuting
 
-## Hozirgacha FitSite Network
+## Hozirgacha FitSite Network {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Bu darsda nimalarni qurdik
+## Bu darsda nimalarni qurdik {#what-we-built-this-lesson}
 
 - **Keng qamrovli ishga tushirishdan oldingi nazorat ro‘yxati** infratuzilma, kontent, to‘lovlar va huquqiy masalalarni qamrab oladi
 - **Yumshoq ishga tushirish strategiyasi** ommaga chiqishdan oldin haqiqiy fikr-mulohaza olish uchun

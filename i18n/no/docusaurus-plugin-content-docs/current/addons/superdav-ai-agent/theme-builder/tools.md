@@ -3,17 +3,17 @@ title: Verktøy og konfigurasjon
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Verktøy og konfigurasjon
+# Verktøy og konfigurasjon {#tools-and-configuration}
 
 Theme Builder bruker et sett med verktøy for å analysere, designe og bygge WordPress-nettstedet ditt. I versjon 1.16.0 er **sd-ai-agent/site-scrape nå et Tier 1-verktøy**, noe som gjør det tilgjengelig som standard i Theme Builder. Superdav AI Agent v1.18.0 introduserer også en separat distribuert Advanced-følgepakke for betrodde utviklerarbeidsflyter; disse verktøyene er ikke en del av WordPress.org-kjernepakken og må installeres og autoriseres separat.
 
-## Tilgjengelige verktøy
+## Tilgjengelige verktøy {#available-tools}
 
-### Tier 1-verktøy (alltid tilgjengelige)
+### Tier 1-verktøy (alltid tilgjengelige) {#tier-1-tools-always-available}
 
 Tier 1-verktøy er tilgjengelige som standard i Theme Builder uten ekstra konfigurasjon.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Formål:** Analysere eksisterende nettsteder for å hente ut designinspirasjon, innholdsstruktur og funksjonalitet.
 
@@ -51,11 +51,11 @@ Analyser designet på example.com og bruk det som inspirasjon for nettstedet mit
 - JavaScript-tunge nettsteder kan ha begrenset analyse
 - Store nettsteder kan ta lengre tid å analysere
 
-### Tier 2-verktøy (valgfritt)
+### Tier 2-verktøy (valgfritt) {#tier-2-tools-optional}
 
 Tier 2-verktøy er tilgjengelige når de er eksplisitt aktivert i Theme Builder-innstillingene.
 
-#### Avansert analyse
+#### Avansert analyse {#advanced-analytics}
 
 Gir detaljerte ytelsesmålinger:
 
@@ -65,7 +65,7 @@ Gir detaljerte ytelsesmålinger:
 - Tilgjengelighetspoengsum
 - Poengsum for beste praksis
 
-#### Innholdsoptimaliserer
+#### Innholdsoptimaliserer {#content-optimizer}
 
 Analyserer og foreslår forbedringer for:
 
@@ -75,11 +75,11 @@ Analyserer og foreslår forbedringer for:
 - Innholdsstruktur
 - Plassering av handlingsoppfordring
 
-### Tier 3-verktøy (Premium)
+### Tier 3-verktøy (Premium) {#tier-3-tools-premium}
 
 Tier 3-verktøy krever ekstra konfigurasjon eller premiumfunksjoner.
 
-#### AI-innholdsgenerator
+#### AI-innholdsgenerator {#ai-content-generator}
 
 Genererer innhold for:
 
@@ -89,7 +89,7 @@ Genererer innhold for:
 - Metabeskrivelser
 - Tekst til handlingsoppfordringer
 
-#### Avanserte designverktøy
+#### Avanserte designverktøy {#advanced-design-tools}
 
 Gir avanserte designmuligheter:
 
@@ -99,7 +99,7 @@ Gir avanserte designmuligheter:
 - Avansert fargeteori
 - Typografioptimalisering
 
-### Advanced-følgeverktøy (separat pakke)
+### Advanced-følgeverktøy (separat pakke) {#advanced-companion-tools-separate-package}
 
 Advanced-følgepakken distribueres separat fra kjerneutgivelsen av Superdav AI Agent. Den er ment for betrodde utvikler- og nettstedseiermiljøer der administratorer eksplisitt tillater at agenten bruker verktøy med høy påvirkning.
 
@@ -116,9 +116,9 @@ Advanced-følgefunksjoner kan omfatte:
 
 Ikke dokumenter disse som generelt tilgjengelige Theme Builder-verktøy for hver installasjon. De er bare tilgjengelige når Advanced-følgepakken er installert, aktivert og begrenset til betrodde administratorer.
 
-## Verktøykonfigurasjon
+## Verktøykonfigurasjon {#tool-configuration}
 
-### Aktivere verktøy
+### Aktivere verktøy {#enabling-tools}
 
 Slik aktiverer du ekstra verktøy i Theme Builder:
 
@@ -127,7 +127,7 @@ Slik aktiverer du ekstra verktøy i Theme Builder:
 3. Slå verktøy av/på etter behov
 4. Lagre innstillingene
 
-### Verktøytillatelser
+### Verktøytillatelser {#tool-permissions}
 
 Noen verktøy krever tillatelser:
 
@@ -137,7 +137,7 @@ Noen verktøy krever tillatelser:
 - **Avanserte funksjoner** — kan kreve premiumabonnement
 - **Advanced-følgeverktøy** — krever den separat distribuerte Advanced-pakken og eksplisitt administratortillit
 
-### API-nøkler og legitimasjon
+### API-nøkler og legitimasjon {#api-keys-and-credentials}
 
 Konfigurer API-nøkler for verktøy som krever dem:
 
@@ -146,13 +146,13 @@ Konfigurer API-nøkler for verktøy som krever dem:
 3. Test tilkoblingen
 4. Lagre sikkert
 
-### Installere Advanced-følgepakken
+### Installere Advanced-følgepakken {#installing-the-advanced-companion-package}
 
 Advanced-følgepakken utgis separat fra WordPress.org-kjerne-ZIP-en. Installer den bare fra prosjektets offisielle distribusjonskanal for utgivelsen, og begrens deretter tilgang til betrodde administratorer. Gjennomgå porter for menneskelig godkjenning og git snapshot-atferd før du aktiverer filsystem-, database-, WP-CLI-, REST-dispatcher-, plugin-bygger-, brukeradministrasjons- eller benchmark-verktøy på et produksjonsnettsted.
 
-## Bruke sd-ai-agent/site-scrape
+## Bruke sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Grunnleggende bruk
+### Grunnleggende bruk {#basic-usage}
 
 Be Theme Builder om å analysere et nettsted:
 
@@ -161,7 +161,7 @@ Analyser designet på konkurrentens nettsted på competitor.com
 og foreslå designforbedringer for nettstedet mitt.
 ```
 
-### Spesifikk analyse
+### Spesifikk analyse {#specific-analysis}
 
 Be om spesifikke analysetyper:
 
@@ -179,7 +179,7 @@ Sjekk mobiltilpasningen på example.com og sørg for at nettstedet mitt
 er like responsivt.
 ```
 
-### Sammenligningsanalyse
+### Sammenligningsanalyse {#comparison-analysis}
 
 Sammenlign flere nettsteder:
 
@@ -188,22 +188,22 @@ Sammenlign designene på site1.com og site2.com og lag et design
 som kombinerer de beste elementene fra begge.
 ```
 
-## Verktøybegrensninger og hensyn
+## Verktøybegrensninger og hensyn {#tool-limitations-and-considerations}
 
-### Hastighetsbegrensning
+### Hastighetsbegrensning {#rate-limiting}
 
 - Scraping er hastighetsbegrenset for å forhindre overbelastning av serveren
 - Flere forespørsler til samme nettsted kan bli strupet
 - Store nettsteder kan ta lengre tid å analysere
 
-### Innholdsnøyaktighet
+### Innholdsnøyaktighet {#content-accuracy}
 
 - Dynamisk innhold blir kanskje ikke fanget opp fullstendig
 - JavaScript-rendered innhold kan være ufullstendig
 - Sanntidsdata blir kanskje ikke gjenspeilet
 - Noe innhold kan være bak betalingsmurer
 
-### Juridiske og etiske hensyn
+### Juridiske og etiske hensyn {#legal-and-ethical-considerations}
 
 - Respekter robots.txt og nettstedets retningslinjer
 - Ikke scrape opphavsrettsbeskyttet innhold for reproduksjon
@@ -211,16 +211,16 @@ som kombinerer de beste elementene fra begge.
 - Bekreft at du har rettigheter til å bruke uttrukket innhold
 - Følg tjenestevilkårene for analyserte nettsteder
 
-### Ytelsespåvirkning
+### Ytelsespåvirkning {#performance-impact}
 
 - Scraping av store nettsteder kan ta tid
 - Flere samtidige scrapes kan være tregere
 - Nettverkstilkobling påvirker hastigheten
 - Store datasett kan kreve mer behandling
 
-## Beste praksis
+## Beste praksis {#best-practices}
 
-### Bruke nettstedanalyse
+### Bruke nettstedanalyse {#using-site-analysis}
 
 1. **Analyser flere nettsteder** — samle inspirasjon fra flere kilder
 2. **Fokuser på struktur** — lær oppsett- og organisasjonsmønstre
@@ -228,7 +228,7 @@ som kombinerer de beste elementene fra begge.
 4. **Studer typografi** — identifiser skriftkombinasjoner du liker
 5. **Gjennomgå navigasjon** — forstå menyorganisering
 
-### Etisk scraping
+### Etisk scraping {#ethical-scraping}
 
 1. **Respekter robots.txt** — følg nettstedets retningslinjer
 2. **Ikke kopier innhold** — bruk analyse kun som inspirasjon
@@ -236,7 +236,7 @@ som kombinerer de beste elementene fra begge.
 4. **Oppgi kilder** — krediter inspirasjonskilder
 5. **Følg vilkår** — overhold nettstedets tjenestevilkår
 
-### Maksimere verktøyets effektivitet
+### Maksimere verktøyets effektivitet {#maximizing-tool-effectiveness}
 
 1. **Vær spesifikk** — be om spesifikke typer analyse
 2. **Gi kontekst** — forklar nettstedets formål
@@ -244,9 +244,9 @@ som kombinerer de beste elementene fra begge.
 4. **Iterer** — forbedre basert på resultater
 5. **Kombiner verktøy** — bruk flere verktøy for omfattende analyse
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### Nettstedet kan ikke scrapes
+### Nettstedet kan ikke scrapes {#site-wont-scrape}
 
 - Sjekk om nettstedet er offentlig tilgjengelig
 - Bekreft at robots.txt tillater scraping
@@ -254,7 +254,7 @@ som kombinerer de beste elementene fra begge.
 - Sjekk internettforbindelsen
 - Kontakt support hvis problemet vedvarer
 
-### Ufullstendig analyse
+### Ufullstendig analyse {#incomplete-analysis}
 
 - Nettstedet kan ha dynamisk innhold
 - JavaScript blir kanskje ikke fullstendig rendret
@@ -262,7 +262,7 @@ som kombinerer de beste elementene fra begge.
 - Prøv å analysere spesifikke sider i stedet
 - Be om spesifikke analysetyper
 
-### Treg ytelse
+### Treg ytelse {#slow-performance}
 
 - Store nettsteder tar lengre tid å analysere
 - Flere samtidige scrapes er tregere
@@ -270,7 +270,7 @@ som kombinerer de beste elementene fra begge.
 - Prøv utenom rushtid
 - Analyser mindre seksjoner først
 
-## Relatert dokumentasjon
+## Relatert dokumentasjon {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — samle designinformasjon
 - [Design Direction](./design-direction.md) — finjuster designet ditt

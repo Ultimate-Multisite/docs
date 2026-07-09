@@ -3,9 +3,9 @@ title: Maniĝo de Pagoj kaj Fakturaj
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pagamentoj kaj Fakturoj Administrado
+# Pagamentoj kaj Fakturoj Administrado {#managing-payments-and-invoices}
 
-## Pagamentaj Rekonfiguradoj
+## Pagamentaj Rekonfiguradoj {#payment-settings}
 
 Intervendi antaŭ tio, kiel vi komencas ricevi pagamentojn, vi bezonas konfiguri la pagament-relacionajn rekonfiguradojn. Navigu al **Ultimate Multisite → Settings** kaj kliku sur la tabon **Payment**.
 
@@ -15,7 +15,7 @@ Jen kompleta vido de la paĝo de pagamentaj rekonfiguradoj:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### ĝenerala Pagamentaj Opcioj
+### ĝenerala Pagamentaj Opcioj {#general-payment-options}
 
 En la ĝeneraj rekonfiguradoj vi povas konfiguri:
 
@@ -24,7 +24,7 @@ En la ĝeneraj rekonfiguradoj vi povas konfiguri:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Pagamentaj Portoj (Payment Gateways)
+### Pagamentaj Portoj (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite suportas plurajn pagamentajn portojn. Vi povas aktivi kaj rekonfigurigi ĉion el ĉi tiu tabo de Pagamentaj rekonfiguradoj.
 
@@ -40,11 +40,11 @@ Chakla portoj havas sian propran sekcion de rekonfigurado, kie vi enteras API-ch
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Modo (Sandbox Mode)
+### Sandbox Modo (Sandbox Mode) {#sandbox-mode}
 
 Vi povas aktivi **Sandbox Mode** por testare vian pagamentan integriĝon antaŭ ol vi komencas operi en la reala mondo. Kiam sandbox modo estas aktiva, neniu realaj fakturoj sera fariĝos.
 
-## Pagado de Pagamentoj
+## Pagado de Pagamentoj {#viewing-payments}
 
 Navigu al la paĝo **Payments** sub Ultimate Multisite por vidi ĉiuj transakciojn sur via reron.
 
@@ -54,7 +54,7 @@ Vi povas filtri pagamentojn per staton (kompletita, pendanta, neokita, reklamita
 
 Klicu sur la pago por detaloj ĝia plene informojn inkluzivaj liniojn de artikolo, asociitan membrespon, informojn pri la klastro kaj datumstaton de la pagamenta portanto.
 
-## Fakturoj (Invoices)
+## Fakturoj (Invoices) {#invoices}
 
 Ultimate Multisite povas aŭtomate generi fakturojn por pagamentoj. Vi povas personaligi la faktura mallapon kaj numeradon de la formato el la ŝanĝaj datumoj de Pagamento (Payment settings).
 

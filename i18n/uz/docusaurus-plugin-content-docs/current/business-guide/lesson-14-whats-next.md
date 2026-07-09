@@ -3,15 +3,15 @@ title: '14-dars: Keyin nima bo‘ladi'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Dars 14: Keyin nima bo‘ladi
+# Dars 14: Keyin nima bo‘ladi {#lesson-14-what-comes-next}
 
 Siz noldan boshlab maxsus yo‘nalishdagi veb-sayt platformasini qurdingiz. FitSite ishga tushgan, fitness studiyalariga xizmat ko‘rsatmoqda va takroriy daromad keltirmoqda. Ushbu yakuniy dars endi qayerga borish haqida.
 
-## Qayerda to‘xtagan edik
+## Qayerda to‘xtagan edik {#where-we-left-off}
 
 FitSite mijozlari, operatsiyalari va o‘sish yo‘nalishiga ega ishlayotgan biznesdir. Endi keyingi qadam haqida o‘ylaymiz.
 
-## To‘liq FitSite Network
+## To‘liq FitSite Network {#the-complete-fitsite-network}
 
 14 ta dars davomida qurgan hamma narsamiz:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Variant 1: Yo‘nalishingizda chuqurroq boring
+## Variant 1: Yo‘nalishingizda chuqurroq boring {#option-1-go-deeper-in-your-niche}
 
 Yangi yo‘nalishlarga kengayishdan oldin fitness ichida chuqurroq borishni ko‘rib chiqing:
 
-### Ichki yo‘nalishlar
+### Ichki yo‘nalishlar {#sub-niches}
 
 - **Yoga studiyalari** -- meditatsiya, retreat va seminar funksiyalariga ega ixtisoslashgan andozalar
 - **CrossFit zallari** -- WOD kuzatuvi, musobaqa natijalari, hamjamiyat funksiyalari
@@ -59,7 +59,7 @@ Yangi yo‘nalishlarga kengayishdan oldin fitness ichida chuqurroq borishni ko�
 
 Har bir ichki yo‘nalish o‘z andozalariga va ehtimol o‘z brendiga ega bo‘lishi mumkin, barchasi bir xil Ultimate Multisite network ustida ishlaydi.
 
-### Premium funksiyalar
+### Premium funksiyalar {#premium-features}
 
 Fitness studiyalari qo‘shimcha haq to‘lashga tayyor bo‘ladigan funksiyalarni yarating:
 
@@ -68,14 +68,14 @@ Fitness studiyalari qo‘shimcha haq to‘lashga tayyor bo‘ladigan funksiyalar
 - **Fitness blog andozalari** -- fitness kontent marketingi uchun oldindan qurilgan kontent tuzilmalari
 - **Ijtimoiy tarmoq integratsiyasi** -- dars jadvallari va yangiliklarni avtomatik joylash
 
-### Geografik kengayish
+### Geografik kengayish {#geographic-expansion}
 
 Agar mahalliy boshlagan bo‘lsangiz, quyidagilarga kengaying:
 
 - Mamlakatingizdagi boshqa shaharlar
 - Boshqa mamlakatlar (bir nechta tilni qo‘llab-quvvatlash uchun Ultimate Multisite'ning [lokalizatsiya funksiyalari](/user-guide/localization/translating)dan foydalaning)
 
-## Variant 2: Yondosh yo‘nalishlarga kengaying
+## Variant 2: Yondosh yo‘nalishlarga kengaying {#option-2-expand-to-adjacent-niches}
 
 Fitness studiyalari uchun qo‘llagan jarayoningiz har qanday yo‘nalish uchun ishlaydi. Ikkinchi yo‘nalishingiz osonroq bo‘ladi, chunki sizda allaqachon quyidagilar bor:
 
@@ -83,7 +83,7 @@ Fitness studiyalari uchun qo‘llagan jarayoningiz har qanday yo‘nalish uchun 
 - Operatsion tajriba
 - Isbotlangan ish rejasi
 
-### Fitnessga yondosh yo‘nalishlar
+### Fitnessga yondosh yo‘nalishlar {#adjacent-niches-to-fitness}
 
 - **Wellness va spa** -- massaj terapevtlari, kunduzgi spa markazlari, wellness markazlari
 - **Sport klublari** -- havaskor sport jamoalari, ligalar, hordiq sport klublari
@@ -91,7 +91,7 @@ Fitness studiyalari uchun qo‘llagan jarayoningiz har qanday yo‘nalish uchun 
 
 Bular fitness bilan auditoriya o‘xshashligiga ega, shuning uchun marketingingiz va hamkorliklaringiz davom etishi mumkin.
 
-### Butunlay yangi yo‘nalishlar
+### Butunlay yangi yo‘nalishlar {#completely-new-niches}
 
 Har qanday yo‘nalishni baholash uchun 2-darsdagi freymvorkni qo‘llang:
 
@@ -108,7 +108,7 @@ Har bir yangi yo‘nalishga quyidagilar kerak:
 
 Platforma infratuzilmasi, billing va operatsion jarayonlar bir xil qoladi.
 
-## Variant 3: Platformalar platformasini quring
+## Variant 3: Platformalar platformasini quring {#option-3-build-a-platform-of-platforms}
 
 Katta miqyosda bitta Ultimate Multisite network ustida bir nechta maxsus yo‘nalish brendlarini yuritishingiz mumkin:
 
@@ -118,11 +118,11 @@ Katta miqyosda bitta Ultimate Multisite network ustida bir nechta maxsus yo‘na
 
 Har bir brendning o‘z andozalari, planlari va marketingi bor, lekin ular infratuzilma, billing va operatsion jarayonlarni bo‘lishadi. Ultimate Multisite iqtisodiyoti aynan shu yerda kuchli bo‘ladi -- bitta platforma, ko‘plab vertikallar.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Yo‘nalishlar o‘rtasida to‘liq ajratish uchun bitta o‘rnatmadan bir nechta WordPress network yuritishga imkon beruvchi [Multi-Network addon](/addons/multinetwork)ni ko‘rib chiqing.
 
-## Variant 4: Biznesni soting
+## Variant 4: Biznesni soting {#option-4-sell-the-business}
 
 Takroriy daromad, past churn va aniq bozor pozitsiyasiga ega maxsus yo‘nalishdagi veb-sayt platformasi qimmatli aktivdir. SaaS bizneslar odatda yillik daromadning 3-5 baravariga sotiladi.
 
@@ -134,7 +134,7 @@ Takroriy daromad, past churn va aniq bozor pozitsiyasiga ega maxsus yo‘nalishd
 
 Bu kafolatlangan natija emas, lekin yaxshi yuritiladigan maxsus yo‘nalish platformasi uchun real natijadir.
 
-## Nimalarni o‘rgandingiz
+## Nimalarni o‘rgandingiz {#what-you-have-learned}
 
 Bu kurs sizga takrorlanadigan jarayonni o‘rgatdi:
 
@@ -150,7 +150,7 @@ Bu kurs sizga takrorlanadigan jarayonni o‘rgatdi:
 
 Yo‘nalish — strategiya. Platforma — vosita. Ultimate Multisite vositani mumkin qiladi. Yo‘nalishni tushunishingiz uni qimmatli qiladi.
 
-## Qurishni boshlang
+## Qurishni boshlang {#start-building}
 
 Agar FitSite bilan birga bajargan bo‘lsangiz, sizda ishlayotgan platforma bor. Agar o‘z yo‘nalishingizni topish uchun o‘qib chiqqan bo‘lsangiz, [2-dars: O‘z yo‘nalishingizni tanlash](lesson-2-picking-your-niche) ga qayting va tanlagan vertikalingiz uchun jarayonni boshlang.
 

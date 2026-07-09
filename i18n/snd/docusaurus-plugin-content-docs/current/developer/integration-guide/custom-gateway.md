@@ -3,11 +3,11 @@ title: حسب ضرورت گيٽ وي جي ترقي
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ڪسٽم Gateway ڊولپمينٽ
+# ڪسٽم Gateway ڊولپمينٽ {#custom-gateway-development}
 
 توهان `Base_Gateway` ڪلاس کي وڌائي ڪسٽم ادائيگي gateways ٺاهي سگهو ٿا.
 
-## Gateway ڪلاس
+## Gateway ڪلاس {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway رجسٽر ڪريو
+## Gateway رجسٽر ڪريو {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## اهم طريقا
+## اهم طريقا {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | refund درخواستون سنڀاليو |
 | `get_payment_methods()` | customer لاءِ محفوظ ٿيل ادائيگي جا طريقا واپس ڪريو |
 
-## ٻيهر ٿيندڙ memberships لاءِ renewal اسناد
+## ٻيهر ٿيندڙ memberships لاءِ renewal اسناد {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway integrations کي اجازت ڏئي ٿو ته اهي رپورٽ ڪن ته ڇا ٻيهر ٿيندڙ membership وٽ `auto_renew` محفوظ ٿيڻ کان اڳ ٻيهر استعمال لائق renewal سند آهي. `wu_membership_has_renewal_credential` کي hook ڪريو ۽ واپس ڪريو:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 نئين ٻيهر استعمال لائق سند محفوظ ٿيڻ کان پوءِ پنهنجي gateway جي ڪامياب re-authorization وهڪري جي حصي طور غائب-سند marker صاف ڪريو.
 
-## صلاحون
+## صلاحون {#tips}
 
 - ناڪامي تي هميشه `WP_Error` واپس ڪريو ته جيئن Ultimate Multisite غلطي جي ڏيک کي سنڀالي سگهي
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway-مخصوص logging لاءِ `wu_log_add()` استعمال ڪريو
 
-## AI connector provider صلاحيتون
+## AI connector provider صلاحيتون {#ai-connector-provider-capabilities}
 
 ڪسٽم integrations جيڪي AI connector-backed عملن کي call ڪن ٿيون، انهن کي AI Provider for Anthropic Max v1.3.0 سان متعارف ڪرايل supported OAuth provider سيٽ سان هم آهنگ ٿيڻ گهرجي:
 

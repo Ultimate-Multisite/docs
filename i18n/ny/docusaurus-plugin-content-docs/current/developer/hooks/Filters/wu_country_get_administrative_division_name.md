@@ -4,11 +4,11 @@ title: Fyuluta - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Fyuluta: wu_country_get_administrative_division_name
+# Fyuluta: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Imabweza dzina labwino la zigawo zoyang'anira za dziko.
 
-## Zizindikiro
+## Zizindikiro {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Imabweza dzina labwino la zigawo zoyang'anira za dziko.
 | $ucwords | `bool` | ngati tikulemba mawu ndi zilembo zazikulu. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance ya class yapano. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.11
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) pa mzere 250
 
 
-## Zobwezedwa
+## Zobwezedwa {#returns}
 Dzina la chigawo losinthidwa.

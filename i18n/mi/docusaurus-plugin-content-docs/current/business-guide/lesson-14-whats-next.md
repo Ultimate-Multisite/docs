@@ -3,15 +3,15 @@ title: 'Akoranga 14: He Aha ka Whai Ake'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Akoranga 14: He Aha Ka Whai Ake
+# Akoranga 14: He Aha Ka Whai Ake {#lesson-14-what-comes-next}
 
 Kua hangaia e koe tētahi tūāpapa paetukutuku mākete motuhake mai i te tīmatanga. Kei te ora a FitSite, e mahi ana ki ngā whare whakakori tinana, ā, e whakaputa ana i te moni whiwhi auau. Ka tirohia e tēnei akoranga whakamutunga te ara hei whai atu i konei.
 
-## Te Wāhi i Mutu Ai Tātou
+## Te Wāhi i Mutu Ai Tātou {#where-we-left-off}
 
 He pakihi e rere ana a FitSite, he kiritaki, he whakahaere, ā, he ahunga tipu tōna. Ināianei ka whakaaro tātou ki te mea ka whai ake.
 
-## Te Whatunga FitSite Katoa
+## Te Whatunga FitSite Katoa {#the-complete-fitsite-network}
 
 Anei ngā mea katoa i hangaia e tātou puta noa i ngā akoranga 14:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Kōwhiringa 1: Hōhonu Atu ki Tō Mākete Motuhake
+## Kōwhiringa 1: Hōhonu Atu ki Tō Mākete Motuhake {#option-1-go-deeper-in-your-niche}
 
 I mua i te whakawhānui ki ngā mākete motuhake hou, whakaarohia te hōhonu atu ki te whakakori tinana:
 
-### Ngā Mākete Iti Motuhake
+### Ngā Mākete Iti Motuhake {#sub-niches}
 
 - **Ngā whare yoga** -- he tauira motuhake me ngā āhuatanga mō te whakaaroaro, te hokinga whakangā, me ngā awheawhe
 - **Ngā whare CrossFit** -- te aroturuki WOD, ngā hua whakataetae, ngā āhuatanga hapori
@@ -59,7 +59,7 @@ I mua i te whakawhānui ki ngā mākete motuhake hou, whakaarohia te hōhonu atu
 
 Ka taea e ia mākete iti motuhake āna ake tauira, ā, tērā pea tōna ake waitohu, ā, ka rere katoa i runga i te whatunga Ultimate Multisite kotahi.
 
-### Ngā Āhuatanga Premium
+### Ngā Āhuatanga Premium {#premium-features}
 
 Hangaia he āhuatanga ka utu tāpiri ai ngā whare whakakori tinana:
 
@@ -68,14 +68,14 @@ Hangaia he āhuatanga ka utu tāpiri ai ngā whare whakakori tinana:
 - **Ngā tauira rangitaki whakakori tinana** -- he hanganga ihirangi kua oti kē te hanga mō te hokohoko ihirangi whakakori tinana
 - **Whakaurunga pāpāho pāpori** -- te tuku-aunoa i ngā wātaka karaehe me ngā whakahōu
 
-### Whakawhānuitanga Matawhenua
+### Whakawhānuitanga Matawhenua {#geographic-expansion}
 
 Mēnā i tīmata ā-rohe koe, whakawhānui ki:
 
 - Ētahi atu tāone i tō whenua
 - Ētahi atu whenua (whakamahia ngā [āhuatanga whakaritenga ā-rohe a Ultimate Multisite](/user-guide/localization/translating) hei tautoko i ngā reo maha)
 
-## Kōwhiringa 2: Whakawhānui ki Ngā Mākete Motuhake Pātata
+## Kōwhiringa 2: Whakawhānui ki Ngā Mākete Motuhake Pātata {#option-2-expand-to-adjacent-niches}
 
 Ko te tukanga i whāia e koe mō ngā whare whakakori tinana ka whai hua mō tētahi mākete motuhake ahakoa te aha. He māmā ake tō mākete motuhake tuarua nā te mea kua whai kē koe i:
 
@@ -83,7 +83,7 @@ Ko te tukanga i whāia e koe mō ngā whare whakakori tinana ka whai hua mō tē
 - Te wheako whakahaere
 - Tētahi aratohu kua whakamātauhia
 
-### Ngā Mākete Motuhake Pātata ki te Whakakori Tinana
+### Ngā Mākete Motuhake Pātata ki te Whakakori Tinana {#adjacent-niches-to-fitness}
 
 - **Oranga me te spa** -- ngā kaiwhakaora mirimiri, ngā spa rā, ngā pokapū oranga
 - **Ngā karapu hākinakina** -- ngā tīma hākinakina runaruna, ngā rīki, ngā karapu rēhia
@@ -91,7 +91,7 @@ Ko te tukanga i whāia e koe mō ngā whare whakakori tinana ka whai hua mō tē
 
 He ōrite ētahi wāhanga o te hunga mātakitaki ki te whakakori tinana, nō reira ka taea pea te whakawhiti mai o tō hokohoko me ō hononga.
 
-### Ngā Mākete Motuhake Hou Rawa
+### Ngā Mākete Motuhake Hou Rawa {#completely-new-niches}
 
 Whakamahia te anga mai i te Akoranga 2 hei aromātai i tētahi mākete motuhake:
 
@@ -108,7 +108,7 @@ Me whai ia mākete motuhake hou i:
 
 Ka noho ōrite tonu te hanganga tūāpapa, te nama utu, me ngā tukanga whakahaere.
 
-## Kōwhiringa 3: Hangaia he Tūāpapa o Ngā Tūāpapa
+## Kōwhiringa 3: Hangaia he Tūāpapa o Ngā Tūāpapa {#option-3-build-a-platform-of-platforms}
 
 Ina nui te tauine, ka taea e koe te whakahaere i ngā waitohu mākete motuhake maha i runga i tētahi whatunga Ultimate Multisite kotahi:
 
@@ -118,11 +118,11 @@ Ina nui te tauine, ka taea e koe te whakahaere i ngā waitohu mākete motuhake m
 
 Kei ia waitohu āna ake tauira, mahere, me te hokohoko, engari ka tiritiri rātou i te hanganga, te nama utu, me ngā tukanga whakahaere. Ko konei ka kaha rawa ngā ōhanga o Ultimate Multisite -- kotahi te tūāpapa, he maha ngā poutū.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Mō te wehenga tino oti i waenga i ngā mākete motuhake, whakaarohia te [tāpiritanga Multi-Network](/addons/multinetwork) e āhei ai koe ki te whakahaere i ngā whatunga WordPress maha mai i tētahi tāutanga kotahi.
 
-## Kōwhiringa 4: Hokona te Pakihi
+## Kōwhiringa 4: Hokona te Pakihi {#option-4-sell-the-business}
 
 He rawa whai uara tētahi tūāpapa paetukutuku mākete motuhake e whai moni whiwhi auau ana, he iti te churn, ā, he tūnga mākete mārama. Ko te tikanga, ka hokona ngā pakihi SaaS mō te 3-5x o te moni whiwhi ā-tau.
 
@@ -134,7 +134,7 @@ Tētahi FitSite e 200 ngā kiritaki ki te $89 ARPU:
 
 Ehara tēnei i te putanga kua taurangi, engari he putanga tūturu mō tētahi tūāpapa mākete motuhake e pai ana te whakahaere.
 
-## Ngā Mea Kua Akona e Koe
+## Ngā Mea Kua Akona e Koe {#what-you-have-learned}
 
 I whakaako tēnei akoranga i a koe ki tētahi tukanga ka taea te tukurua:
 
@@ -150,7 +150,7 @@ I whakaako tēnei akoranga i a koe ki tētahi tukanga ka taea te tukurua:
 
 Ko te mākete motuhake te rautaki. Ko te tūāpapa te taputapu. Mā Ultimate Multisite e taea ai taua taputapu. Mā tō māramatanga ki te mākete motuhake e whai uara ai.
 
-## Tīmata ki te Hanga
+## Tīmata ki te Hanga {#start-building}
 
 Mēnā i whai haere koe i a FitSite, he tūāpapa mahi tōu. Mēnā i pānui koe kia kitea tō ake aronga motuhake, hoki ki [Akoranga 2: Te Kōwhiri i Tō Aronga Motuhake](lesson-2-picking-your-niche) ka tīmata i te tukanga mō tō rāngai i kōwhiria.
 

@@ -3,15 +3,15 @@ title: Luo logo-SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Luo logo-SVG
+# Luo logo-SVG {#generate-logo-svg}
 
 **Luo logo-SVG** -kyky antaa Theme Builderin luoda ja upottaa mukautettuja logo-SVG:itä suoraan WordPress-sivustollesi automaattisella nimiavaruusturvallisella puhdistuksella.
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 Tämä kyky luo skaalautuvia vektorigrafiikka- (SVG) logoja sivustosi brändäyssuunnan ja suunnittelumieltymysten perusteella. Luodut SVG:t puhdistetaan automaattisesti, jotta ne ovat turvallisia käyttää WordPressissä visuaalisen eheyden säilyessä.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Parametri | Tyyppi | Pakollinen | Kuvaus |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Tämä kyky luo skaalautuvia vektorigrafiikka- (SVG) logoja sivustosi brändäys
 | `height` | number | Ei | SVG:n korkeus pikseleinä (oletus: 200) |
 | `include_text` | boolean | Ei | Sisällytetäänkö sivuston nimi logoon tekstinä (oletus: true) |
 
-## Tulostusmuoto
+## Tulostusmuoto {#output-format}
 
 Kyky palauttaa SVG-merkkijonon seuraavalla rakenteella:
 
@@ -36,7 +36,7 @@ Kyky palauttaa SVG-merkkijonon seuraavalla rakenteella:
 }
 ```
 
-## SVG-puhdistuksen toiminta
+## SVG-puhdistuksen toiminta {#svg-sanitisation-behaviour}
 
 Luoduille SVG:ille tehdään automaattinen nimiavaruusturvallinen puhdistus, joka:
 
@@ -48,7 +48,7 @@ Luoduille SVG:ille tehdään automaattinen nimiavaruusturvallinen puhdistus, jok
 
 Tämä varmistaa, että SVG on turvallista upottaa suoraan WordPressiin ilman lisäpuhdistusta.
 
-## Käyttöesimerkki
+## Käyttöesimerkki {#usage-example}
 
 **Kehote:**
 ```
@@ -62,7 +62,7 @@ Kyky luo SVG-logon, joka:
 - Noudattaa modernin suunnittelun periaatteita
 - Puhdistetaan automaattisesti ja on valmis käyttöön
 
-## Integrointi Theme Builderin kanssa
+## Integrointi Theme Builderin kanssa {#integration-with-theme-builder}
 
 Kun käytät Theme Builderin suunnittelusuunnan valintaa, Luo logo-SVG -kyky:
 
@@ -71,21 +71,21 @@ Kun käytät Theme Builderin suunnittelusuunnan valintaa, Luo logo-SVG -kyky:
 3. Upottaa logon automaattisesti sivustosi ylätunnisteeseen/brändäysalueelle
 4. Tallentaa SVG:n mukautettuna logona WordPress-mediaan
 
-## Parhaat käytännöt
+## Parhaat käytännöt {#best-practices}
 
 - **Anna selkeät tyylimieltymykset** — kuvaile haluamasi suunnittelutyyli (moderni, klassinen, leikkisä jne.)
 - **Määritä värit** — sisällytä brändivärisi yhtenäisyyden varmistamiseksi
 - **Testaa renderöinti** — varmista, että logo näkyy oikein eri näyttökokojen välillä
 - **Mukauta lisää** — käytä WordPressin logon mukautustyökaluja koon ja sijoittelun säätämiseen
 
-## Rajoitukset
+## Rajoitukset {#limitations}
 
 - SVG-logot luodaan staattisina grafiikkoina (ei animoituina)
 - Monimutkaiset logot, joissa on paljon elementtejä, saattavat vaatia manuaalista viimeistelyä
 - Mukautettuja fontteja ei tueta; tekstissä käytetään järjestelmäfontteja
 - Erittäin suuret tai erittäin pienet mitat voivat vaikuttaa laatuun
 
-## Liittyvät kyvyt
+## Liittyvät kyvyt {#related-abilities}
 
 - [Vahvista paletin kontrasti](./validate-palette-contrast.md) — tarkista värikontrasti saavutettavuutta varten
 - [Luo valikko](./create-menu.md) — luo navigointivalikoita sivustollesi

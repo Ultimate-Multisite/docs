@@ -3,7 +3,7 @@ title: কোড স্নিপেট
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2-ৰ বাবে কোড স্নিপেট
+# v2-ৰ বাবে কোড স্নিপেট {#code-snippets-for-v2}
 
 মূলতঃ, **WordPress**-ৰ বাবে কোড স্নিপেট ব্যৱহাৰ কৰা হয় এনে কিছুমান কাৰ্য্য সম্পাদন কৰিবলৈ, যাৰ বাবে আনকি এটা ডেডিকেটেড সৰু প্লাগইনৰ প্ৰয়োজন হ'ব পাৰে। এনে কোড স্নিপেটবোৰ WordPress-ৰ core বা theme ফাইলৰ (সাধাৰণতে আপোনাৰ theme-ৰ functions.php ফাইল) ভিতৰত যোগ কৰিব পাৰি, অথবা ইয়াক এটা MU প্লাগইন হিচাপেও ব্যৱহাৰ কৰিব পাৰি।
 
@@ -15,13 +15,13 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**ম্যাপ কৰা ডোমেইনত Font-Icons লগত CORS সমস্যা সমাধান কৰা**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Account মেনু আইটেমৰ স্থান সলনি কৰা
+## Account মেনু আইটেমৰ স্থান সলনি কৰা {#changing-the-position-of-the-account-menu-item}
 
 আপোনাৰ client-ৰ Dashboard-ত Account মেনু আইটেমৰ স্থান সলনি কৰিবলৈ, কেৱল তলৰ কোড স্নিপেটটো আপোনাৰ মূল site-ৰ active theme-ৰ functions.php ফাইলত যোগ কৰক। আপুনি এই স্নিপেটটো এটা mu-plugin বা custom pluginৰ ভিতৰতো ৰাখিব পাৰে।
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## ব্যৱহাৰকাৰী কোনো এটা Plan-ৰ অধীনত আছে নে নহয় আৰু/অথবা তেওঁৰ active subscription আছে নে নাই, কেনেকৈ পৰীক্ষা কৰিব
+## ব্যৱহাৰকাৰী কোনো এটা Plan-ৰ অধীনত আছে নে নহয় আৰু/অথবা তেওঁৰ active subscription আছে নে নাই, কেনেকৈ পৰীক্ষা কৰিব {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 এটা network admin হিচাপে, আপোনাক এনে কিছুমান custom function বনোৱাৰ প্ৰয়োজন হ'ব পাৰে, যিয়ে মৌলিক কাৰ্য্য সম্পাদন কৰিব বা তেওঁলোকৰ subscription আৰু তেওঁ কোন Plan-ৰ অধীনত আছে তাৰ ওপৰত ভিত্তি কৰি কিছুমান নিৰ্বাচিত subscriber বা end-user গোটলৈ এটা service/feature উপলব্ধ কৰিব।
 
@@ -47,8 +47,8 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## ম্যাপ কৰা ডোমেইনত Font-Icons লগত CORS সমস্যা সমাধান কৰা
-## ম্যাপ কৰা ডোমেইনত Font-Icons লগত CORS সমস্যা সমাধান কৰা
+## ম্যাপ কৰা ডোমেইনত Font-Icons লগত CORS সমস্যা সমাধান কৰা {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## ম্যাপ কৰা ডোমেইনত Font-Icons লগত CORS সমস্যা সমাধান কৰা {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 এটা ডোমেইনক sub-site লগত ম্যাপ কৰাৰ পিছত আপুনি পালে যে site-টোৱে custom fonts লোড কৰাত সমস্যা কৰিছে। ই আপোনাৰ server settings-ত থকা cross-origin block-ৰ বাবে হৈছে।
 
@@ -56,13 +56,13 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 তলত Apache আৰু NGINX-ৰ বাবে সমস্যাটো সমাধান কৰিবলৈ কোড স্নিপেট দিয়া হৈছে। এই সলনিবোৰৰ বাবে server configuration file (.htaccess file আৰু NGINX config file) সম্পৰ্কে উন্নত জ্ঞানৰ প্ৰয়োজন। যদি আপুনি নিজে এই সলনিবোৰ কৰাত স্বচ্ছন্দ নহয়, তেন্তে সহায়ৰ প্ৰয়োজন হ'লে এই পৃষ্ঠাখন আপোনাৰ hosting provider support agent-লৈ প্ৰেণ কৰক।
 
-### Apache
+### Apache {#apache}
 
 আপোনাৰ .htaccess ফাইলত, যোগ কৰক:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 আপোনাৰ server config file (location server অনুসৰি সলনি হয়), যোগ কৰক:
 

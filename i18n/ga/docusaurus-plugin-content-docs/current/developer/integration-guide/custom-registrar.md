@@ -3,13 +3,13 @@ title: Comhtháthú Saincheaptha Cláraitheora a Thógáil
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Comhtháthú Cláraitheora Saincheaptha a Thógáil
+# Comhtháthú Cláraitheora Saincheaptha a Thógáil {#building-a-custom-registrar-integration}
 
 Úsáideann an breiseán Domain Seller patrún **Integration Registry**. Is rang PHP é gach cláraitheoir a chuireann `Domain_Selling_Capability` i bhfeidhm agus a chláraíonn é féin tríd an action hook `wu_domain_seller_register_capabilities`.
 
 Taispeánann an treoir seo conas cláraitheoir saincheaptha a nascadh isteach.
 
-## An comhéadan
+## An comhéadan {#the-interface}
 
 Ní mór do do rang `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` a chur i bhfeidhm agus `WP_Ultimo\Integrations\Base_Capability_Module` a leathnú.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Modhanna roghnacha
+### Modhanna roghnacha {#optional-methods}
 
 Cuir iad seo i bhfeidhm chun gnéithe breise a dhíghlasáil. Aimsíonn an breiseán tacaíocht trí `method_exists()`:
 
@@ -81,7 +81,7 @@ Cuir iad seo i bhfeidhm chun gnéithe breise a dhíghlasáil. Aimsíonn an breis
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### Coinbhinsiún luacha fillte
+### Coinbhinsiún luacha fillte {#return-value-convention}
 
 Filleann gach modh eagar le heochair `success` ar a laghad:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Do chumas a chlárú
+## Do chumas a chlárú {#registering-your-capability}
 
 Cláraigh do rang ag úsáid an action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Is é an chéad argóint le `add_capability()` an **ID soláthraí** — slug i 
 
 ---
 
-## Réimsí dintiúr a chur leis an draoi
+## Réimsí dintiúr a chur leis an draoi {#adding-credential-fields-to-the-wizard}
 
 Chun ligean do riarthóirí dintiúir a iontráil tríd an draoi socraithe, cláraigh do chomhtháthú:
 
@@ -137,7 +137,7 @@ Stóráiltear dintiúir mar roghanna líonra ag úsáid IDanna na réimsí mar e
 
 ---
 
-## Hooks le haghaidh gníomhartha iar-chláraithe
+## Hooks le haghaidh gníomhartha iar-chláraithe {#hooks-for-post-registration-actions}
 
 Úsáid na gníomhartha seo chun webhooks, soláthar, fógraí, nó nuashonruithe CRM a spreagadh:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logáil
+## Logáil {#logging}
 
 Scríobh chuig do chainéal logála atá sonrach don soláthraí ag úsáid `wu_log_add()`:
 

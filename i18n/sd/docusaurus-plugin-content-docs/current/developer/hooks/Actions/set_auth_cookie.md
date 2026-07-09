@@ -4,11 +4,11 @@ title: عمل - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# عمل: set_auth_cookie
+# عمل: set_auth_cookie {#action-setauthcookie}
 
 تصديق واري cookie سيٽ ٿيڻ کان بلڪل اڳ هلي ٿو.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | تصديق وارو scheme. قيمتن ۾ 'auth' يا 'secure_auth' شامل آهن. |
 | $token | `string` | هن cookie لاءِ استعمال ڪرڻ واسطي يوزر جو session token. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### ماخذ
+### ماخذ {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ۾ لائين 124 تي بيان ٿيل آهي.

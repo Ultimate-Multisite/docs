@@ -3,11 +3,11 @@ title: Skill sa Estetika sa Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kasan sa Skill sa Design System Aesthetics
+# Kasan sa Skill sa Design System Aesthetics {#design-system-aesthetics-skill}
 
 Ang **Design System Aesthetics skill** usa ka giya nga pamaagi para mapino ang biswal nga pagkakita sa imong website. Gitudlo ni kini kanimo sa paghimo og mga konsistent nga desisyon bahin sa typography, kolor, spacing, ug motion tokens nga naghatag ngalan sa imong design system.
 
-## Unsa ang Design System Aesthetics?
+## Unsa ang Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Ang Design System Aesthetics kay usa ka structured skill nga naglakip sa:
 
@@ -20,9 +20,9 @@ Ang Design System Aesthetics kay usa ka structured skill nga naglakip sa:
 
 Kining mga desisyon giisip sa imong `theme.json` file sa imong theme, nga naghimo og usa ka magkabuhaton nga biswal nga sistema.
 
-## Ngano Gamiton ang Design System Aesthetics?
+## Ngano Gamiton ang Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Consistency (Pagka-konsistent)
+### Consistency (Pagka-konsistent) {#consistency}
 
 Ang design system nagsiguro nga:
 
@@ -31,7 +31,7 @@ Ang design system nagsiguro nga:
 - Ang spacing nagasunod sa usa ka predictable nga pattern
 - Ang mga animations morag usa ra ang pamaagi
 
-### Efficiency (Kagalingon)
+### Efficiency (Kagalingon) {#efficiency}
 
 Imbes nga maghimo og design decisions kada page, ikaw:
 
@@ -39,7 +39,7 @@ Imbes nga maghimo og design decisions kada page, ikaw:
 - I-apply kini sa tanang lugar
 - I-update sa tibuok pinaagi sa pag-change og usa ka value
 
-### Flexibility (Pagka-flexible)
+### Flexibility (Pagka-flexible) {#flexibility}
 
 Mahimo kang:
 
@@ -47,9 +47,9 @@ Mahimo kang:
 - Mag-experiment sa lain-laing aesthetics
 - Magpabilin sa brand consistency samtang nag-uswag
 
-## Pag-trigger sa Design System Aesthetics Skill
+## Pag-trigger sa Design System Aesthetics Skill {#triggering-the-design-system-aesthetics-skill}
 
-### Manual Activation (Manual nga Pag-on)
+### Manual Activation (Manual nga Pag-on) {#manual-activation}
 
 Mahimo nimong sugdan ang skill bisan kanus-a:
 
@@ -69,7 +69,7 @@ o
 "Guide me through design system decisions"
 ```
 
-### Automatic Suggestions (Automatic nga mga Suhestiyon)
+### Automatic Suggestions (Automatic nga mga Suhestiyon) {#automatic-suggestions}
 
 Mahimong magsuha ang mga agent sa paggamit sa skill kung ikaw:
 
@@ -78,9 +78,9 @@ Mahimong magsuha ang mga agent sa paggamit sa skill kung ikaw:
 - Gusto nga mapalambo ang biswal nga consistency
 - Nagapaghahanda na sa paglunsad sa imong site
 
-## Proses ng Estetika sa Design System
+## Proses ng Estetika sa Design System {#the-design-system-aesthetics-process}
 
-### Hakbang 1: Typography
+### Hakbang 1: Typography {#step-1-typography}
 
 Ang agent magapangutana bahin sa imong mga pultahan (font choices):
 
@@ -110,7 +110,7 @@ Dayon, ihatag sa agent ang mga kahulogan:
 - **Weight scale**: Mga gibug-aton sa font (regular, medium, bold, etc.)
 - **Line height**: Ang paglayo tali sa mga linya para sa dali basahon
 
-### Hakbang 2: Color Palette
+### Hakbang 2: Color Palette {#step-2-color-palette}
 
 ```
 Atong ipadayon ang imong color palette.
@@ -158,7 +158,7 @@ Ang agent nag-define og spacing tokens:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Mga espesipikong bili para sa padding, margin, gap
 
-### Step 4: Borders ug Shadows
+### Step 4: Borders ug Shadows {#step-3-spacing}
 
 ```
 Visual depth ug definisyon:
@@ -181,7 +181,7 @@ Ang agent naghimo og:
 - Shadow tokens para sa mga lebel sa elevation
 - Border width tokens
 
-### Step 5: Motion ug Animation
+### Step 5: Motion ug Animation {#step-4-borders-and-shadows}
 
 ```
 Unsaon kini pagbati sa imong site kung interactive?
@@ -203,9 +203,9 @@ Ang agent nag-define:
 - Easing functions (ease-in, ease-out, ease-in-out)
 - Animation keyframes para sa kasagaran nga mga interaksyon
 
-## Pag-apply sa Design System Aesthetics
+## Pag-apply sa Design System Aesthetics {#step-5-motion-and-animation}
 
-### Automatic Application
+### Automatic Application {#applying-design-system-aesthetics}
 
 Human nimo mahuman ang skill, ang agent:
 
@@ -214,7 +214,7 @@ Human nimo mahuman ang skill, ang agent:
 3. Mag-regenerate og block styles para magmatch sa bag-ong sistema
 4. I-activate ang updated theme
 
-### Manual Application
+### Manual Application {#automatic-application}
 
 Mahimo usab nimo i-edit direkta ang `theme.json`:
 
@@ -253,9 +253,9 @@ Mahimo usab nimo i-edit direkta ang `theme.json`:
 }
 ```
 
-## Pagtan-aw sa Imong Design System
+## Pagtan-aw sa Imong Design System {#manual-application}
 
-### Pangutana sa Agent (Ask the Agent)
+### Pangutana sa Agent (Ask the Agent) {#viewing-your-design-system}
 
 ```
 "Ipakita mo nako akong design system ko"
@@ -269,13 +269,13 @@ o
 
 Ang agent magpakita sa imong typography, colors, spacing, ug uban pang tokens.
 
-### Tan-awa ang theme.json (View theme.json)
+### Tan-awa ang theme.json (View theme.json) {#ask-the-agent}
 
 Ablihi ang `/wp-content/themes/[theme-name]/theme.json` sa usa ka text editor para makita nimo ang raw nga mga definisyon sa token.
 
-## Pag-update sa Imong Design System
+## Pag-update sa Imong Design System {#view-themejson}
 
-### Dali nga Mga Update (Quick Updates)
+### Dali nga Mga Update (Quick Updates) {#updating-your-design-system}
 
 Pagpangutana sa agent alang sa piho nga mga kausaban:
 
@@ -295,7 +295,7 @@ o
 "Usba sa font para sa heading ngadto sa serif"
 ```
 
-### Bug-os nga Redesign (Full Redesign)
+### Bug-os nga Redesign (Full Redesign) {#quick-updates}
 
 I-run pag-usab ang Design System Aesthetics skill:
 
@@ -305,7 +305,7 @@ I-run pag-usab ang Design System Aesthetics skill:
 
 Kini maggiya kanimo sa tanang mga desisyon pag-usab, sugod sa imong kasamtangang mga value.
 
-### Bahin nga Mga Update (Partial Updates)
+### Bahin nga Mga Update (Partial Updates) {#full-redesign}
 
 I-update ang piho nga mga bahin:
 
@@ -313,15 +313,15 @@ I-update ang piho nga mga bahin:
 "Update lang ang color palette, i-keep ang uban"
 ```
 
-## Mga Maayong Pamaagi sa Design System (Design System Best Practices)
+## Mga Maayong Pamaagi sa Design System (Design System Best Practices) {#partial-updates}
 
-### Pagka-consistent (Consistency)
+### Pagka-consistent (Consistency) {#design-system-best-practices}
 
 - Gamita ang parehas nga tokens sa tanang lugar
 - Ayaw maghimo og mga kolor o gidak-on nga usa ra
 - Mag-refer sa mga tokens imbes nga i-hardcode ang mga value
 
-### Pagpangalan (Naming)
+### Pagpangalan (Naming) {#consistency-1}
 
 Gamit og klaro ug semantic nga mga ngalan:
 
@@ -331,7 +331,7 @@ Gamit og klaro ug semantic nga mga ngalan:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalability (Pagka-scalable)
+### Scalability (Pagka-scalable) {#naming}
 
 Disenyo ang imong sistema para magpadako (scale):
 
@@ -339,7 +339,7 @@ Disenyo ang imong sistema para magpadako (scale):
 - Paghimo og mga scale (xs, sm, md, lg, xl) imbes nga arbitrary values
 - Magplano alang sa umaabot nga mga dugang
 
-### Dokumentasyon
+### Dokumentasyon {#scalability}
 
 Dokumenta imong design system:
 
@@ -347,9 +347,9 @@ Dokumenta imong design system:
 - Kanus-a gamiton ang matag token
 - Mga eksepsyon ug edge cases
 
-## Mga Kasagaran nga Design System Patterns
+## Mga Kasagaran nga Design System Patterns {#documentation}
 
-### Modern Minimalist
+### Modern Minimalist {#common-design-system-patterns}
 
 - Sans-serif typography (Inter, Helvetica)
 - Limitado nga color palette (2-3 ka kolor)
@@ -357,7 +357,7 @@ Dokumenta imong design system:
 - Subtle shadows
 - Smooth, paspas nga mga animation
 
-### Warm and Friendly
+### Warm and Friendly {#modern-minimalist}
 
 - Mix sa serif ug sans-serif
 - Warm color palette (orange, warm grays)
@@ -365,7 +365,7 @@ Dokumenta imong design system:
 - Soft shadows
 - Playful nga mga animation
 
-### Professional Corporate
+### Professional Corporate {#warm-and-friendly}
 
 - Limpyo nga sans-serif (Roboto, Open Sans)
 - Neutral palette uban ang accent color
@@ -373,7 +373,7 @@ Dokumenta imong design system:
 - Minimal shadows
 - Subtle transitions
 
-### Creative and Bold
+### Creative and Bold {#professional-corporate}
 
 - Distinctive typography
 - Bold color palette
@@ -381,7 +381,7 @@ Dokumenta imong design system:
 - Strong shadows
 - Noticeable nga mga animation
 
-## Troubleshooting
+## Troubleshooting {#creative-and-bold}
 
 **Ang akong mga pagbag-o sa design system wala makita**
 - Limpyohan ang imong browser cache
@@ -399,7 +399,7 @@ Dokumenta imong design system:
 - Manually i-edit ang theme.json ngadto sa miaging mga value
 - I-run pag-usab ang skill uban ang lain nga mga pagpili
 
-## Sunod nga mga Lakang
+## Sunod nga mga Lakang {#troubleshooting}
 
 Human sa paghimo og imong design system:
 

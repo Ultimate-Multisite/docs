@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Estensjoni ta’ WordPress li żżid tiswijiet ta’ kompatibbiltà għal Tutor LMS f’ambjenti multisite.
 
-## Deskrizzjoni
+## Deskrizzjoni {#description}
 
 Din l-estensjoni tipprovdi tiswijiet essenzjali ta’ kompatibbiltà biex tħaddem Tutor LMS fuq networks multisite ta’ WordPress. Tieħu ħsieb ir-reġistrazzjoni tal-utenti, il-ġestjoni tal-għalliema, il-limitazzjonijiet tal-korsijiet, u funzjonalità oħra speċifika għal multisite.
 
-## Karatteristiċi
+## Karatteristiċi {#features}
 
 - **Ġestjoni tat-Tabelli tad-Database**: Tinduna awtomatikament b’tabelli nieqsa ta’ Tutor LMS u toħloqhom meta jonqsu minħabba restrizzjonijiet ta’ foreign key f’multisite
 - **Reġistrazzjoni tal-Utenti f’Multisite**: Handlers AJAX personalizzati għall-ġestjoni tar-reġistrazzjoni tal-utenti fuq siti tan-network
@@ -24,7 +24,7 @@ Din l-estensjoni tipprovdi tiswijiet essenzjali ta’ kompatibbiltà biex tħadd
 - **Veduti Personalizzati tal-Amministrazzjoni**: Lista tal-għalliema u interface ta’ ġestjoni konxji ta’ multisite
 - **Għodod tal-Amministrazzjoni**: Interface ta’ ġestjoni tad-database għall-amministraturi tan-network u tas-sit
 
-## Rekwiżiti
+## Rekwiżiti {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Din l-estensjoni tipprovdi tiswijiet essenzjali ta’ kompatibbiltà biex tħadd
 - Installazzjoni WordPress Multisite
 - Estensjoni Ultimate Multisite (għall-funzjonalità tal-limitazzjonijiet tal-korsijiet)
 
-## Installazzjoni
+## Installazzjoni {#installation}
 
 1. Tella’ l-fajls tal-estensjoni f’`/wp-content/plugins/tutor-multisite-compatibility/`
 2. Kun żgur li Tutor LMS huwa installat u attivat
 3. Attiva l-estensjoni permezz tal-menu 'Plugins' f’WordPress
 4. L-estensjoni tintegra awtomatikament ma’ Tutor LMS
 
-## Struttura tal-Fajls
+## Struttura tal-Fajls {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funzjonalità Mċaqalqa minn MU plugin
+## Funzjonalità Mċaqalqa minn MU plugin {#functionality-moved-from-mu-plugin}
 
 Din l-estensjoni fiha funzjonalità li qabel kienet f’`wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Din l-estensjoni fiha funzjonalità li qabel kienet f’`wp-content/mu-plugins/d
 - Ġestjoni tar-reġistrazzjoni tal-utenti f’multisite
 - Wiri tal-ID tal-prodott tal-kors
 
-## Ġestjoni tad-Database
+## Ġestjoni tad-Database {#database-management}
 
-### Il-Problema
+### Il-Problema {#the-problem}
 
 F’ambjenti multisite ta’ WordPress, il-ħolqien tat-tabelli ta’ Tutor LMS ifalli għal tabelli b’restrizzjonijiet ta’ foreign key għat-tabella tal-utenti. Dan jiġri għaliex:
 
@@ -81,7 +81,7 @@ F’ambjenti multisite ta’ WordPress, il-ħolqien tat-tabelli ta’ Tutor LMS 
 - Foreign keys jirreferu għal `wp_2_users` (li ma teżistix)
 - It-tabella attwali tal-utenti hija `wp_users` (maqsuma fin-network kollu)
 
-### Is-Soluzzjoni
+### Is-Soluzzjoni {#the-solution}
 
 Din l-estensjoni awtomatikament:
 
@@ -92,13 +92,13 @@ Din l-estensjoni awtomatikament:
    - Ħolqien ta’ sit ġdid fin-network
    - Iċċekkjar manwali tat-tabelli permezz tal-interface tal-amministrazzjoni
 
-### Tabelli Affettwati
+### Tabelli Affettwati {#affected-tables}
 
 - `tutor_coupon_usages` - Fiha foreign key għat-tabella tal-utenti
 - `tutor_carts` - Fiha foreign key għat-tabella tal-utenti
 - `tutor_notification_preferences` - Tabella TutorPro b’foreign key għat-tabella tal-utenti
 
-### Interface tal-Amministrazzjoni
+### Interface tal-Amministrazzjoni {#admin-interface}
 
 Aċċessa l-għodod tal-ġestjoni tad-database f’:
 
@@ -111,6 +111,6 @@ L-interface jippermettilek:
 - Tiċċekkja l-konfigurazzjoni tad-database
 - Tara informazzjoni dettaljata dwar l-istatus
 
-## Appoġġ
+## Appoġġ {#support}
 
 Din l-estensjoni hija mfassla speċifikament għall-pjattaforma KursoPro. Għal appoġġ tekniku, ikkuntattja lit-tim tal-iżvilupp.

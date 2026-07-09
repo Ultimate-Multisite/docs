@@ -3,11 +3,11 @@ title: डेवलपर डॉक्यूमेंटेशन
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# डेवलपर डॉक्यूमेंटेशन
+# डेवलपर डॉक्यूमेंटेशन {#developer-documentation}
 
 यह गाइड डेवलपर्स को Ultimate Multisite के साथ इंटीग्रेट करने, इसे एक्सटेंड करने, या इसके लिए ऐडऑन विकसित करने के लिए ज़रूरी सब कुछ प्रदान करती है। Ultimate Multisite एक WordPress Multisite नेटवर्क को Website-as-a-Service (WaaS) प्लेटफॉर्म में बदल देता है।
 
-## क्या उपलब्ध है
+## क्या उपलब्ध है {#whats-available}
 
 - **[REST API](./rest-api/overview)** — API key authentication के साथ सभी एंटिटीज़ (ग्राहकों, साइटों, मेंबरशिप, भुगतानों, उत्पादों, डोमेन) के लिए पूर्ण CRUD ऑपरेशन।
 - **[Hooks Reference](./hooks/guide)** — लाइफसाइकिल इवेंट्स और कस्टमाइज़ेशन के लिए 200+ एक्शन हुक्स और 280+ फ़िल्टर हुक्स।
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Code Examples](./code-examples/)** — डायनामिक प्राइसिंग, साइट प्रोविजनिंग, कस्टम लिमिटेशन्स और मल्टी-गेटवे प्रोसेसिंग के लिए एडवांस पैटर्न।
 - **[Addon Development](./addon-development/getting-started)** — ऐडऑन प्लगइन्स बनाने के लिए एक संरचित फ्रेमवर्क।
 
-## आवश्यकताएँ
+## आवश्यकताएँ {#requirements}
 
 - WordPress Multisite इंस्टॉलेशन
 - PHP 7.4 या इससे उच्च
 - Ultimate Multisite प्लगइन सक्रिय होना चाहिए
 
-## Composer / Bedrock इंस्टॉलेशन
+## Composer / Bedrock इंस्टॉलेशन {#composer--bedrock-installation}
 
 Ultimate Multisite [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) पर `ultimate-multisite/ultimate-multisite` के रूप में उपलब्ध है। यह [Bedrock](https://roots.io/bedrock/)-आधारित WordPress सेटअप और अन्य Composer-managed वातावरणों के लिए अनुशंसित इंस्टॉलेशन तरीका है।
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## त्वरित शुरुआत
+## त्वरित शुरुआत {#quick-start}
 
-### REST API का उपयोग करें
+### REST API का उपयोग करें {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### इवेंट्स में हुक करें
+### इवेंट्स में हुक करें {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### एक ऐडऑन बनाएँ
+### एक ऐडऑन बनाएँ {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

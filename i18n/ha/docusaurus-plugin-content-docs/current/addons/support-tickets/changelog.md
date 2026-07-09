@@ -3,13 +3,13 @@ title: Tarihin Canje-canje na Tikitin Tallafi
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Rajistar Canje-canje na Tikitin Tallafi
+# Rajistar Canje-canje na Tikitin Tallafi {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * An inganta: An cire kundin vendor/ daga bin diddigin Git (tuni .gitignore ya rufe shi), don rage girman ma’ajiyar lamba
 * An inganta: An gwada har zuwa WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Gyara: Karɓar ƙimomin null a cikin masu saita samfurin tikiti masu nullable
 * Gyara: Adana duk tikiti a cikin jadawalin duniya na dukkan network don ingantaccen tallafin multisite
 * Gyara: Ɓoye filayen ma’aikata da gyara karkatarwar shafi mara komai a fom ɗin sabon tikitin abokin ciniki
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * An inganta: Loda kayan frontend bisa sharaɗi kawai a shafukan tikitin tallafi
 * An inganta: Tsallake autoloader na plugin idan autoloader na tushen Bedrock ya riga ya loda dependencies
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * An ƙara: Cikakken aikin kallon tikiti ga admin da frontend
 * An ƙara: Mai sarrafa AJAX don aika martanin tikiti
 * An ƙara: Tallafi ga aikin martanin tikiti tare da ingantaccen sarrafa fom
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * An inganta: Tsarin database tare da ingantattun azuzuwan tambaya da schema don martani da maƙaloli
 * An inganta: Hijira zuwa ainihin properties maimakon attributes don samfuran tikiti
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * An sabunta: An sake sanya prefix zuwa ultimate-multisite don daidaito
 * An sabunta: Daidaita text domain
 * An gyara: Ƙananan gyaran kurakurai da ingantawa
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Fitowar farko
 * Cikakken tsarin sarrafa tikiti
 * Sarrafa samun dama mai matakai da yawa

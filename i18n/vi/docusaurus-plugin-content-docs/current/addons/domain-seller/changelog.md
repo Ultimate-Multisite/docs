@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Nhật ký thay đổi Domain Seller
+# Nhật ký thay đổi Domain Seller {#domain-seller-changelog}
 
 Phiên bản 1.3.0 - Phát hành vào 2026-06-02
 - Mới: Đã thêm cảnh báo quản trị mạng khi số dư đại lý HostAfrica xuống quá thấp
@@ -134,20 +134,20 @@ Phiên bản 1.0.0 - Phát hành vào 2025-09-28
 * **Đã sửa:** Tất cả mã v1 không còn được khuyến nghị đã được cập nhật theo tiêu chuẩn v2
 * **Đã xóa:** Khả năng tương thích v1 cũ (thay đổi phá vỡ tương thích)
 
-### Các phiên bản trước (v1 cũ)
+### Các phiên bản trước (v1 cũ) {#previous-versions-v1-legacy}
 
-### Phiên bản 0.0.3 - 20/08/2019
+### Phiên bản 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Đã sửa: Không tương thích với Groundhogg CRM
 * Ghi chú: Đây là bản phát hành cuối cùng tương thích với v1
 
-### Phiên bản 0.0.2 - 07/12/2018
+### Phiên bản 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Đã sửa: Đã xóa trường License Key
 * Đã sửa: Thiếu tab gói khi plugin tính năng đang hoạt động
 * Cải thiện: Đã thêm nút bỏ qua trên trường đăng ký
 
-### Phiên bản 0.0.1 - Bản phát hành ban đầu
+### Phiên bản 0.0.1 - Bản phát hành ban đầu {#version-001---initial-release}
 
 * Tích hợp OpenSRS cơ bản cho WP Ultimo v1
 * Tìm kiếm và đăng ký tên miền đơn giản

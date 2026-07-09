@@ -4,11 +4,11 @@ title: فلتەر - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# فلتەر: wp_ultimo_render_vars
+# فلتەر: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 ڕێگە بدە بە گەشەپێدەرانی پڵەگین گۆڕاوەی زیادە بە شێوەی جیهانی زیاد بکەن بۆ کۆنتێکستی ڕێندەرکردن.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | ناوی بینینەکە کە دەبێت ڕێندەر بکرێت. |
 | $default_view | `string` | ناوی fallback_view |
 
-### لە وەشانی
+### لە وەشانی {#since}
 
 - 2.0.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) لە هێڵی 31
 
 
-## دەگەڕێنێتەوە
+## دەگەڕێنێتەوە {#returns}

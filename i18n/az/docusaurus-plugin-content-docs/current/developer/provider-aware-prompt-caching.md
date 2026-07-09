@@ -3,11 +3,11 @@ title: Təchizatçıya Uyğun Prompt Keşləmə
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Providerə Uyğun Prompt Cacheləmə
+# Providerə Uyğun Prompt Cacheləmə {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0, müxtəlif LLM (Böyük Dil Modeli) providerları arasında promptları cacheləyərək API xərclərini və gecikməni (latency) optimallaşdıran **providerə uyğun prompt cacheləmə** funksionallığını təqdim edir. Hər bir providerun özünəməxsus cacheləmə mexanizmləri və konfiqurasiyaları var.
 
-## Ümumi Baxış
+## Ümumi Baxış {#overview}
 
 Prompt cacheləmə sizə aşağıdakıları etməyə imkan verir:
 
@@ -23,11 +23,11 @@ Fərqli providerlar cacheləməni fərqli şəkildə tətbiq edir:
 - **OpenRouter**: Providerə xas cacheləmə
 - **Vertex Anthropic**: Cache nəzarəti ilə Prompt cacheləmə
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini, `cachedContents` API vasitəsilə açıq cache idarəetməsi təmin edir.
 
-### Konfiqurasiya
+### Konfiqurasiya {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Cachelənmiş Prompt Yaratmaq
+### Cachelənmiş Prompt Yaratmaq {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Nəticə: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Cachelənmiş Promptdan İstifadə Etmək
+### Cachelənmiş Promptdan İstifadə Etmək {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache Həyat Dövrü
+### Cache Həyat Dövrü {#cache-lifecycle}
 
 ```php
 // Cachelənmiş məzmunları siyahıla
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini üçün Ən Yaxşı Praktikalara Nəzarət
+### Gemini üçün Ən Yaxşı Praktikalara Nəzarət {#best-practices-for-gemini}
 
 - **Uyğun TTL təyin edin**: Xərclərdən qənaət və cache köhnəlməsi arasında balans tapın
 - **Sistem promptlarını cacheləyin**: Sorğular arasında eyni sistem promptundan istifadə edin
 - **Cache istifadəsini monitorinq edin**: Hansı cachelərin ən çox istifadə olunduğunu izləyin
 - **Expired cacheləri təmizləyin**: İstifadə edilməyən cacheləri müntəzəm olaraq silin
 
-## Azure OpenAI: Prompt Cacheləmə
+## Azure OpenAI: Prompt Cacheləmə {#azure-openai-prompt-caching}
 
 Azure OpenAI, avtomatik TTL idarəetməsi ilə prompt cacheləməni dəstəkləyir.
 
-### Konfiqurasiya
+### Konfiqurasiya {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Cacheləməni Aktivləşdirmək
+### Cacheləməni Aktivləşdirmək {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Başlıqları (Cache Headers)
+### Cache Başlıqları (Cache Headers) {#cache-headers}
 
 Azure OpenAI, cache nəzarəti üçün HTTP başlıqlarından istifadə edir:
 
@@ -152,7 +152,7 @@ Dəstəklənən dəyərlər:
 - `no_cache`: Bu sorğunu cacheləməyin
 - `no_store`: Cacheləməyin və yenidən istifadə etməyin
 
-### Cache İstifadəsinin Monitorinqi
+### Cache İstifadəsinin Monitorinqi {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache yaratma: $cache_tokens token\n";
 echo "Cache tutuşu (hits): $cache_hits token\n";
 ```
 
-### Azure OpenAI üçün Ən Yaxşı Praktikalara Nəzarət
+### Azure OpenAI üçün Ən Yaxşı Praktikalara Nəzarət {#best-practices-for-azure-openai}
 
 - **Müəyyən promptlardan istifadə edin**: Eyni promptlar cachelənmədən faydalanır
 - **Məntiq bir TTL təyin edin**: Xərc və təzəlik arasında balans tapın
 - **Cache metrikalarını monitorinq edin**: Cache yaratma ilə tutuşları izləyin
 - **Oxşar sorğuları toplu (batch) göndərin**: Cache tutuşlarını maksimallaşdırmaq üçün sorğuları qruplaşdırın
 
-## OpenRouter: Providerə Xas Cacheləmə
+## OpenRouter: Providerə Xas Cacheləmə {#openrouter-provider-specific-caching}
 
 OpenRouter, əsas providerlar (OpenAI, Anthropic və s.) vasitəsilə cacheləməni dəstəkləyir.
 
-### Konfiqurasiya
+### Konfiqurasiya {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Cacheləməsindən İstifadə Etmək
+### OpenRouter Cacheləməsindən İstifadə Etmək {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Providerə Xas Seçimlər
+### Providerə Xas Seçimlər {#provider-specific-options}
 
 Fərqli providerların fərqli cacheləmə mexanizmləri var:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter üçün Ən Yaxşı Praktikalara Nəzarət
+### OpenRouter üçün Ən Yaxşı Praktikalara Nəzarət {#best-practices-for-openrouter}
 
 - **Providerunuzun cacheləməsini bilin**: Hər providerun fərqli mexanizmləri var
 - **Cacheləmə davranışını test edin**: Seçdiyiniz provider ilə cacheləmənin işlədiyini yoxlayın
 - **Xərcləri monitorinq edin**: Cacheləmədən qənaətləri izləyin
 - **Müəyyən modellərdən istifadə edin**: Model dəyişmək cache tutuşlarını pozur
 
-## Vertex Anthropic: Cache Nəzarəti ilə Prompt Cacheləmə
+## Vertex Anthropic: Cache Nəzarəti ilə Prompt Cacheləmə {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) açıq cache nəzarəti ilə prompt cacheləməni dəstəkləyir.
 
-### Konfiqurasiya
+### Konfiqurasiya {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic Cacheləməsindən İstifadə Etmək
+### Vertex Anthropic Cacheləməsindən İstifadə Etmək {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache Nəzarəti Tipləri
+### Cache Nəzarəti Tipləri {#cache-control-types}
 
 - **ephemeral**: Sorğu müddətində cacheləyin (default)
 - **persistent**: Bir neçə sorğu boyunca cacheləyin (dəstəklənirsə)
 
-### Cache İstifadəsinin Monitorinqi
+### Cache İstifadəsinin Monitorinqi {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache yaradıldı: $cache_created token\n";
 echo "Cache oxundu: $cache_read token\n";
 ```
 
-### Vertex Anthropic üçün Ən Yaxşı Praktikalara Nəzarət
+### Vertex Anthropic üçün Ən Yaxşı Praktikalara Nəzarət {#best-practices-for-vertex-anthropic}
 
 - **Ephemeral cacheləmə istifadə edin**: Bir sessiya ərzində cacheləmə üçün yaxşıdır
 - **max_tokens-i uyğun təyin edin**: Cache ölçüsü və xərc arasında balans tapın
 - **Cache metrikalarını monitorinq edin**: Cache effektivliyini izləyin
 - **Yükünüzlə test edin**: Cacheləmənin istifadə halınıza fayda verdiyini yoxlayın
 
-## Providerlararası Cacheləmə Strategiyası
+## Providerlararası Cacheləmə Strategiyası {#cross-provider-caching-strategy}
 
-### Birləşdirilmiş Konfiqurasiya
+### Birləşdirilmiş Konfiqurasiya {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Provider Müəyyən Etmə
+### Provider Müəyyən Etmə {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Providerə xas cacheləmə konfiqurasiyasından istifadə et
 ```
 
-### Fallback Strategiyası
+### Fallback Strategiyası {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Xərc Optimallaşdırılması
+## Xərc Optimallaşdırılması {#cost-optimization}
 
-### Qənaətləri Hesablamaq
+### Qənaətləri Hesablamaq {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Təxmini qənaət: \$$savings\n";
 ```
 
-### Optimallaşdırma Məsləhətləri
+### Optimallaşdırma Məsləhətləri {#optimization-tips}
 
 - **Böyük sistem promptlarını cacheləyin**: Ən böyük xərc qənaəti
 - **Konteksti yenidən istifadə edin**: Tez-tez istifadə olunan kontekst sənədlərini cacheləyin
@@ -395,23 +395,23 @@ echo "Təxmini qənaət: \$$savings\n";
 - **Cache effektivliyini monitorinq edin**: Faktiki qənaətləri izləyin
 - **TTL-ni tənzimləyin**: Xərc və təzəlik arasında balans tapın
 
-## Problemlərin Həlli (Troubleshooting)
+## Problemlərin Həlli (Troubleshooting) {#troubleshooting}
 
-### Cache istifadə edilmir
+### Cache istifadə edilmir {#cache-not-being-used}
 
 - Konfiqurasiyada cacheləmənin aktiv olduğundan əmin olun
 - Promptların eyni olduğundan əmin olun (cacheləmə dəqiq uyğunluğu tələb edir)
 - Cachenin bitmədiyini yoxlayın
 - Providerə xas cache limitlərini yoxlayın
 
-### Cache yaratmaq uğursuz olur
+### Cache yaratmaq uğursuz olur {#cache-creation-failing}
 
 - Cache ölçüsünün provider limitləri daxilində olduğundan əmin olun
 - Cache nəzarəti sintaksisinin düzgün olduğundan əmin olun
 - Providerun modeliniz üçün cacheləməni dəstəklədiyini yoxlayın
 - Məhdudiyyətlər üçün provider sənədlərinə nəzər salın
 
-### Gözlənilməz xərclər
+### Gözlənilməz xərclər {#unexpected-costs}
 
 - Cache yaratma ilə cache oxuma tokenlarını monitorinq edin
 - Cachenin həqiqətən istifadə olunduğunu yoxlayın

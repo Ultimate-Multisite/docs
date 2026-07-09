@@ -3,11 +3,11 @@ title: Takardun Masu Haɓakawa
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Takardun Masu Ci gaba
+# Takardun Masu Ci gaba {#developer-documentation}
 
 Wannan jagora yana ba masu ci gaba duk abin da ake bukata don haɗawa da, faɗaɗa, ko haɓaka addons don Ultimate Multisite. Ultimate Multisite yana sauya WordPress Multisite network zuwa dandalin Website-as-a-Service (WaaS).
 
-## Abin da Akwai
+## Abin da Akwai {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Cikakkun ayyukan CRUD ga dukkan entities (abokan ciniki, sites, memberships, biyan kuɗi, products, domains) tare da tantancewar API key
 - **[Hooks Reference](./hooks/guide)** — Fiye da action hooks 200 da fiye da filter hooks 280 don abubuwan lifecycle da keɓancewa
@@ -15,13 +15,13 @@ Wannan jagora yana ba masu ci gaba duk abin da ake bukata don haɗawa da, faɗa�
 - **[Code Examples](./code-examples/)** — Tsare-tsare na gaba don dynamic pricing, samar da site, custom limitations, da sarrafa multi-gateway
 - **[Addon Development](./addon-development/getting-started)** — Tsararren framework don gina addon plugins
 
-## Bukatu
+## Bukatu {#requirements}
 
 - Shigarwar WordPress Multisite
 - PHP 7.4 ko sama da haka
 - An kunna Ultimate Multisite plugin
 
-## Shigarwar Composer / Bedrock
+## Shigarwar Composer / Bedrock {#composer--bedrock-installation}
 
 Ana samun Ultimate Multisite a [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) a matsayin `ultimate-multisite/ultimate-multisite`. Wannan ita ce hanyar shigarwa da ake ba da shawara ga saitunan WordPress masu tushe a kan [Bedrock](https://roots.io/bedrock/) da sauran mahallai da Composer ke sarrafawa.
 
@@ -45,15 +45,15 @@ Ko, idan kana ɗora plugin a matsayin must-use plugin ta autoloader na Bedrock, 
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Farawa Cikin Sauri
+## Farawa Cikin Sauri {#quick-start}
 
-### Yi amfani da REST API
+### Yi amfani da REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Shiga cikin Abubuwan Da Ke Faruwa
+### Shiga cikin Abubuwan Da Ke Faruwa {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Gina Addon
+### Gina Addon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

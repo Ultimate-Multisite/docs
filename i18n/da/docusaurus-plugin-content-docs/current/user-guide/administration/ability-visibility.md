@@ -3,11 +3,11 @@ title: Synlighed af funktioner
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Tilgængelighedsvisibilitet (Ability Visibility)
+# Tilgængelighedsvisibilitet (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introducerer **Tilgængelighedsvisibilitets** kontroller, som styrer, hvilke overflader der viser hver evne. Dette giver administrator mulighed for at finjustere, hvilke agentkapaciteter der er tilgængelige via REST API'er, MCP-servere, WooCommerce-integrationer og andre interfaces.
 
-## Hvad er Tilgængelighedsvisibilitet?
+## Hvad er Tilgængelighedsvisibilitet? {#what-is-ability-visibility}
 
 Tilgængelighedsvisibilitet er et tilladelsessystem, der styrer:
 
@@ -18,9 +18,9 @@ Tilgængelighedsvisibilitet er et tilladelsessystem, der styrer:
 
 Hver evne har et synlighedsniveau, der bestemmer dens tilgængelighed på tværs af forskellige overflader.
 
-## Synlighedsniveauer
+## Synlighedsniveauer {#visibility-levels}
 
-### Offentlig (Public)
+### Offentlig (Public) {#public}
 
 **Offentlige evner** er tilgængelige overalt:
 
@@ -32,7 +32,7 @@ Hver evne har et synlighedsniveau, der bestemmer dens tilgængelighed på tværs
 
 Eksempel: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Intern (Internal)
+### Intern (Internal) {#internal}
 
 **Interne evner** er kun tilgængelige inden for din WordPress-installation:
 
@@ -43,7 +43,7 @@ Eksempel: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Eksempel: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Partner-evner** er kun tilgængelige for hvidlister af partnere:
 
@@ -54,7 +54,7 @@ Eksempel: `manage-settings`, `view-analytics`, `export-data`
 
 Eksempel: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Deaktiveret (Disabled)
+### Deaktiveret (Disabled) {#disabled}
 
 **Deaktiverede evner** er ikke tilgængelige nogen steder:
 
@@ -63,15 +63,15 @@ Eksempel: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Ikke tilgængelig i admin panels
 - Nyttigt for devaluerede eller eksperimentelle evner
 
-## Administrering synlighed for evner
+## Administrering synlighed for evner {#managing-ability-visibility}
 
-### Tilgang til indstillinger for synlighed af evner
+### Tilgang til indstillinger for synlighed af evner {#accessing-ability-visibility-settings}
 
 1. Gå til **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klik på fanen **Abilities** (Evner)
 3. Her ser du en liste over alle installerede evner med deres synlighedsgrader
 
-### Se detaljer om evner
+### Se detaljer om evner {#viewing-ability-details}
 
 Klik på enhver evne for at se:
 
@@ -82,7 +82,7 @@ Klik på enhver evne for at se:
 - **Last updated** (Sidste opdatering): Hvornår synligheden sidst blev ændret
 - **Status**: Anerkendt eller Uklassificeret
 
-### Ændring af synlighedsgrader
+### Ændring af synlighedsgrader {#changing-visibility-levels}
 
 For at ændre en evnes synlighed:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Masseoperationer
+### Masseoperationer {#bulk-operations}
 
 For at ændre synligheden for flere evner:
 
@@ -108,11 +108,11 @@ For at ændre synligheden for flere evner:
 2. Vælg et nyt synlighedsniveau fra rullemenuen til massehandling
 3. Klik på **Apply** (Anvend)
 
-## Partner tilladelsesliste
+## Partner tilladelsesliste {#partner-allow-list}
 
 **Partner allow-list** styrer, hvilke eksterne partnere der kan få adgang til evner med Partner-niveau.
 
-### Tilføjelse af partnere
+### Tilføjelse af partnere {#adding-partners}
 
 1. Gå til **Superdav AI Agent** → **Settings** → **Partners**
 2. Klik på **Add Partner** (Tilføj partner)
@@ -120,7 +120,7 @@ For at ændre synligheden for flere evner:
 4. Tilføj eventuelt et partnernavn og en beskrivelse
 5. Klik på **Save** (Gem)
 
-### Tildeling af evner til partnere
+### Tildeling af evner til partnere {#assigning-abilities-to-partners}
 
 Efter at have tilføjet en partner:
 
@@ -130,7 +130,7 @@ Efter at have tilføjet en partner:
 4. I sektionen "Partner allow-list" skal du markere de bokse for de partnere, der skal have adgang
 5. Klik på **Gem**
 
-### Tilbagetrækning af partneradgang
+### Tilbagetrækning af partneradgang {#revoking-partner-access}
 
 For at fjerne en partners adgang:
 
@@ -140,11 +140,11 @@ For at fjerne en partners adgang:
 
 Partneren mister øjeblikkeligt adgangen til den pågældende evne.
 
-## Uklassificerede evner
+## Uklassificerede evner {#unclassified-abilities}
 
 Når du installerer en tredjeparts-evne, som Superdav AI Agent ikke genkender, markeres den som **Uklassificeret**.
 
-### Admin meddelelse for uklassificerede evner
+### Admin meddelelse for uklassificerede evner {#admin-notice-for-unclassified-abilities}
 
 Du vil se en admin meddelelse:
 
@@ -161,7 +161,7 @@ Venligst gennemgå og klassificer dem.
 [Gennemse evner] [Afvis]
 ```
 
-### Gennemgang af uklassificerede evner
+### Gennemgang af uklassificerede evner {#reviewing-unclassified-abilities}
 
 1. Klik på **Review Abilities** i meddelelsen
 2. For hver uklassificeret evne vil du se:
@@ -178,7 +178,7 @@ Venligst gennemgå og klassificer dem.
 
 4. Klik på **Classify** for at gemme din beslutning
 
-### Hvorfor klassificere uklassificerede evner?
+### Hvorfor klassificere uklassificerede evner? {#why-classify-unclassified-abilities}
 
 Klassificering af evner:
 
@@ -187,9 +187,9 @@ Klassificering af evner:
 - **Muliggør funktioner**: Når en evne er klassificeret, bliver den tilgængelig
 - **Dokumenterer beslutninger**: Dine valg logges til revisionsformål
 
-## Synlighed på Forskellige Overflader
+## Synlighed på Forskellige Overflader {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Offentlige evner** er tilgængelige via REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Interne og partner-evner** er ikke tilgængelige via REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Offentlige evner** er tilgængelige via MCP:
 
@@ -217,7 +217,7 @@ Tilgængelige evner:
 
 **Partner-evner** er kun tilgængelige med partneroplysninger.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Offentlige evner** relateret til WooCommerce er tilgængelige:
 
@@ -227,7 +227,7 @@ Tilgængelige evner:
 
 **Interne evner** eksponeres ikke til WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Alle evner** (Offentlige, Interne, Partner) er tilgængelige i chatten, afhængigt af brugerrettigheder:
 
@@ -235,34 +235,34 @@ Tilgængelige evner:
 - Almindelige brugere ser kun offentlige evner
 - Partnere ser offentlige + partner-evner (hvis de er hvidlistet)
 
-## Sikkerhedsmæssige Bedste Praksisser
+## Sikkerhedsmæssige Bedste Praksisser {#security-best-practices}
 
-### Mindst Privilegeret Adgangsprincip
+### Mindst Privilegeret Adgangsprincip {#principle-of-least-privilege}
 
 - Sæt evner til den mest restriktive synlighed, der stadig tillader deres brug
 - Brug partner-synlighed til følsomme operationer
 - Deaktiver evner, du ikke bruger
 
-### Regelmæssige Revisioner
+### Regelmæssige Revisioner {#regular-audits}
 
 - Gennemgå evne-synligheden månedligt
 - Tjek efter uklassificerede evner
 - Fjern adgang for ubrugte partnere
 
-### Logning og Overvågning
+### Logning og Overvågning {#logging-and-monitoring}
 
 - Overvåg hvilke evner der bruges mest
 - Spor partneradgangsmønstre
 - Alarm ved usædvanlig brug af evner
 
-### Tredjeparts Evner
+### Tredjeparts Evner {#third-party-abilities}
 
 - Gennemgå tredjeparts evner, før du aktiverer dem
 - Klassificér dem eksplicit
 - Start med intern eller partner-synlighed
 - Promover til offentlig kun efter godkendelse
 
-## Fejlfinding
+## Fejlfinding {#troubleshooting}
 
 **En evne vises ikke i listen**
 - Tjek, at evnen er installeret og aktiv
@@ -285,7 +285,7 @@ Tilgængelige evner:
 - Kontroller, om din klassifikation er gemt
 - Bekræft, at plugin'et, der leverer evnen, er opdateret
 
-## Migration fra Legacy Mode
+## Migration fra Legacy Mode {#migration-from-legacy-mode}
 
 Hvis du opgraderer fra en ældre version af Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Hvis du opgraderer fra en ældre version af Superdav AI Agent:
 
 Se **Migration til Third-Party Mode** for flere detaljer om overgangen til integration med native Abilities API.
 
-## Næste skridt
+## Næste skridt {#next-steps}
 
 Efter at have konfigureret synligheden af evner:
 

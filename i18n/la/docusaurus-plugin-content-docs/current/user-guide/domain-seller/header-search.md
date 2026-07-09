@@ -3,11 +3,11 @@ title: Quaestio dominii in capite
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Investigatio Dominii in Capite
+# Investigatio Dominii in Capite {#header-domain-search}
 
 Utere hac configuratione cum vis parvam formam in capite quae investigationem dominii incipit, deinde emptori sinit ex dominiis praesto intra emptionem Ultimate Multisite eligere.
 
-## Requisita
+## Requisita {#requirements}
 
 - Ultimate Multisite in reti activum.
 - Multisite Ultimate Domain Seller in reti activum.
@@ -16,7 +16,7 @@ Utere hac configuratione cum vis parvam formam in capite quae investigationem do
   - TLDs sustentata configurata, exempli gratia `com`, `net`, et `org`.
 - Forma emptionis valida continens agrum **Electio Dominii**.
 
-## Forma emptionis
+## Forma emptionis {#checkout-form}
 
 1. Crea vel edita formam emptionis qua pagina registrationis utitur.
 2. Adde campos emptionis/account normales requisitos, inter quos **Nomen usoris**. Forma emptionis quae solum agrum dominii continet a validatione Ultimate Multisite reicitur.
@@ -30,7 +30,7 @@ Pagina registrationis formam emptionis reddere debet, exempli gratia:
 [wu_checkout slug="domain-form"]
 ```
 
-## Forma capitis
+## Forma capitis {#header-form}
 
 Adde parvam formam `GET` in capite situs quae terminum investigationis ingressum ad paginam emptionis mittit ut `domain_name`:
 
@@ -44,7 +44,7 @@ Adde parvam formam `GET` in capite situs quae terminum investigationis ingressum
 
 Noli dominium in JavaScript capitis custom praeligere. Caput solum terminum investigationis tradere debet. Scriptum emptionis Domain Seller legit `?domain_name=example`, capsam investigationis emptionis implet, et investigationem disponibilitatis exsequitur ut emptor ex dominiis redditis eligere possit.
 
-## Mores exspectati
+## Mores exspectati {#expected-behaviour}
 
 Investigatio `example` in capite aperire debet:
 
@@ -61,7 +61,7 @@ Emptio deinde eventus eligibiles ostendere debet tales quales:
 
 Postquam eventus praesto electus est, summarium ordinis productum registrationis dominii et nomen dominii electum includere debet.
 
-## Verificatio
+## Verificatio {#verification}
 
 1. Aperi paginam principalem.
 2. Quaere nomen nudum, exempli gratia `example`.
@@ -71,7 +71,7 @@ Postquam eventus praesto electus est, summarium ordinis productum registrationis
 6. Preme **Selige** pro dominio praesto.
 7. Confirma summarium ordinis continere `Domain Registration - example.com` vel dominium electum.
 
-## Solutio difficultatum
+## Solutio difficultatum {#troubleshooting}
 
 - Si nullus index apparet, inspice tabulam retialem navigatoris pro `admin-ajax.php?action=wu_domain_search` et confirma eam reddere `domains` vel `results` non vacua.
 - Si forma emptionis validationem servando non superat, adde campos account requisitos tales qualis **Nomen usoris**.

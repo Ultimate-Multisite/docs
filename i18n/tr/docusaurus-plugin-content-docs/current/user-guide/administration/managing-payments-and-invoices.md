@@ -3,9 +3,9 @@ title: Ödemeleri ve Faturaları Yönetme
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödemeleri ve Faturaları Yönetme
+# Ödemeleri ve Faturaları Yönetme {#managing-payments-and-invoices}
 
-## Ödeme Ayarları
+## Ödeme Ayarları {#payment-settings}
 
 Ödeme almaya başlamadan önce, ödemeyle ilgili ayarları yapılandırmanız gerekir. **Ultimate Multisite → Ayarlar** bölümüne gidin ve **Ödeme** sekmesine tıklayın.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Ödeme ayarları tam sayfa](/img/admin/settings-payments-full.png)
 
-### Genel Ödeme Seçenekleri
+### Genel Ödeme Seçenekleri {#general-payment-options}
 
 Genel ayarlarda şunları yapılandırabilirsiniz:
 
@@ -24,7 +24,7 @@ Genel ayarlarda şunları yapılandırabilirsiniz:
 
 ![Ödeme gateway ayarları](/img/admin/settings-payments-options.png)
 
-### Ödeme Gateway'leri
+### Ödeme Gateway'leri {#payment-gateways}
 
 Ultimate Multisite birden fazla ödeme gateway'ini destekler. Her birini Ödeme ayarları sekmesinden etkinleştirip yapılandırabilirsiniz.
 
@@ -40,11 +40,11 @@ Her gateway'in API anahtarlarını ve diğer ayarları girdiğiniz kendi yapıla
 
 ![Ek gateway ayarları](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Canlıya geçmeden önce ödeme entegrasyonunuzu test etmek için **Sandbox Mode**'u etkinleştirebilirsiniz. Sandbox mode aktif olduğunda gerçek ücretlendirme yapılmaz.
 
-## Ödemeleri Görüntüleme
+## Ödemeleri Görüntüleme {#viewing-payments}
 
 Ağınızdaki tüm işlemleri görmek için Ultimate Multisite altındaki **Ödemeler** sayfasına gidin.
 
@@ -54,7 +54,7 @@ Ağınızdaki tüm işlemleri görmek için Ultimate Multisite altındaki **Öde
 
 Satır kalemleri, ilişkili üyelik, müşteri bilgileri ve ödeme gateway verileri dahil olmak üzere tüm ayrıntılarını görmek için bir ödemeye tıklayın.
 
-## Faturalar
+## Faturalar {#invoices}
 
 Ultimate Multisite ödemeler için otomatik olarak faturalar oluşturabilir. Fatura şablonunu ve numaralandırma biçimini Ödeme ayarlarından özelleştirebilirsiniz.
 

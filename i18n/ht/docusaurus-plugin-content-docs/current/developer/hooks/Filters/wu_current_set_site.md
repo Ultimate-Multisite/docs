@@ -4,23 +4,23 @@ title: Filtè - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Filtè: wu_current_set_site
+# Filtè: wu_current_set_site {#filter-wucurrentsetsite}
 
 Pèmèt devlopè modifye konpòtman defo a epi mete site aktyèl la yon fason diferan.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Non | Tip | Deskripsyon |
 |------|------|-------------|
 | $site | `\WP_Ultimo\Models\Site` | Site aktyèl pou mete a. |
 | $ | `self` | Enstans klas Current la. |
 
-### Depi
+### Depi {#since}
 
 - 2.0.9
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L331) nan liy 331
 
 
-## Retounen
+## Retounen {#returns}

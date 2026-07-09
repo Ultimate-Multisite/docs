@@ -3,17 +3,17 @@ title: 'Ders 9: Nirxdan ji bo Qezencê'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Ders 9: Nirxdan ji bo Qezencê
+# Ders 9: Nirxdan ji bo Qezencê {#lesson-9-pricing-for-profit}
 
 Di Dersa 5 de me nirxên destpêkê ji bo planên FitSite danîn. Niha em stratejiya nirxdanê bi teknîkên ku dahatê zêde dikin, upgrade-an teşwîq dikin, û churn kêm dikin baştir dikin.
 
-## Li Ku Derê Ma Bûn
+## Li Ku Derê Ma Bûn {#where-we-left-off}
 
 FitSite niha plan, şablon, dayîn, branding, û onboarding hene. Nirxên destpêkê $49/$99/$199 di mehê de bûn. Niha em dihêlin ev nirxdan zêdetir kar bike.
 
-## Prensîbên Nirxdanê ji bo Platformên Nîş
+## Prensîbên Nirxdanê ji bo Platformên Nîş {#pricing-principles-for-niche-platforms}
 
-### Li Gorî Nirxê Bidin, Ne Li Gorî Mesrefê
+### Li Gorî Nirxê Bidin, Ne Li Gorî Mesrefê {#price-on-value-not-cost}
 
 Mesrefên hosting-a te dibe ku ji bo her malpera mişterî $5-$15 bin. Ev nayê wê wateyê ku nirxa te divê $20 be. Tu hosting nafiroşî. Tu van tiştan difiroşî:
 
@@ -24,7 +24,7 @@ Mesrefên hosting-a te dibe ku ji bo her malpera mişterî $5-$15 bin. Ev nayê 
 
 Nirxê li gorî nirxa ku tu radest dikî danê, ne li gorî mesrefa radestkirina wê.
 
-### Bi Alternatîfan Girê Bidin
+### Bi Alternatîfan Girê Bidin {#anchor-to-alternatives}
 
 Dema xwediyê stûdyoyek fitness FitSite dinirxîne, ew wê bi van tiştan re dide ber hev:
 
@@ -34,7 +34,7 @@ Dema xwediyê stûdyoyek fitness FitSite dinirxîne, ew wê bi van tiştan re di
 
 Bi $49-$199/di mehê de, FitSite ji developer-ekê erzantir e, ji çêkerên giştî zêdetir kar dike, û ji nebûna malperê bêhed baştir e.
 
-## Bicîhanîna Guherandinên Nirxê
+## Bicîhanîna Guherandinên Nirxê {#implementing-price-variations}
 
 Nirxandina salane pabendiyê teşwîq dike û churn kêm dike. Biçe tab-a **Guherandinên Nirxê** ya her planê û vebijarkên salane lê zêde bike:
 
@@ -46,12 +46,12 @@ Nirxandina salane pabendiyê teşwîq dike û churn kêm dike. Biçe tab-a **Guh
 
 Qadeke **Hilbijartina Demê** li forma dayîna xwe zêde bike da ku mişterî karibin di navbera fatûreya mehane û salane de biguherînin. Binêre [Formên Dayînê](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Çima Nirxandina Salane Kar Dike
+### Çima Nirxandina Salane Kar Dike {#why-annual-pricing-works}
 
 - **Ji bo te**: Pereyê pêşîn, churn-a kêmtir (mişteriyên ku salane didin bi ihtimaleke kêmtir di nîvê demê de betal dikin)
 - **Ji bo wan**: Teserûfa rastîn, pêşbîniya budceyê
 
-## Xercên Setup
+## Xercên Setup {#setup-fees}
 
 Ji bo planên ku veavakirina bi alîkarî dihewînin, xerceke yek-carî ya setup bifikire:
 
@@ -61,7 +61,7 @@ Ji bo planên ku veavakirina bi alîkarî dihewînin, xerceke yek-carî ya setup
 
 Xercên setup di beşa nirxdanê ya her planê de veava bike. Ji bo hûrguliyan binêre [Afirandina Yekemîn Hilbera Abonetiya Xwe](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Demên Ceribandinê
+## Demên Ceribandinê {#trial-periods}
 
 Pêşkêşkirina ceribandinê astengiya tomarkirinê kêm dike lê rîska neguherînê jî tîne. Ji bo FitSite:
 
@@ -70,11 +70,11 @@ Pêşkêşkirina ceribandinê astengiya tomarkirinê kêm dike lê rîska neguhe
 
 Ceribandinê li beşa nirxdanê ya plana Destpêk veava bike: toggle-a **Ceribandin Pêşkêş Bike** çalak bike û demê 7 roj danê.
 
-### Çawa Ceribandin Têne Veguherandin
+### Çawa Ceribandin Têne Veguherandin {#making-trials-convert}
 
 Ceribandin tenê dema kar dike ku mişterî di dema ceribandinê de nirxê bibîne. Rêza onboarding-a te (Dersa 8) li vir girîng e -- divê emailên pêşwaziyê di dema rast de werin şandin da ku di nav pencereya 7 rojî de tevlîbûnê bimeşînin.
 
-## Kodên Daxistinê
+## Kodên Daxistinê {#discount-codes}
 
 Ji bo armancên taybet kodên daxistinê yên stratejîk biafirîne:
 
@@ -88,7 +88,7 @@ Ji bo afirandina van, biçe **Ultimate Multisite > Discount Codes**. Ji bo rêbe
 Daxistin divê amûrên stratejîk bin, ne tiştên herdemî. Heke her kes daxistinê bistîne, ew ne daxistin e -- ew nirxa te ya rastîn e. Wan ji bo kampanyayên taybet, referral-an, û pêşvebirinên dem-sînorkirî bi kar bîne.
 :::
 
-## Birêvebirina Bacê
+## Birêvebirina Bacê {#tax-handling}
 
 Heke tu li herêmekê kar dikî ku berhevkirina bacê hewce dike:
 
@@ -98,7 +98,7 @@ Heke tu li herêmekê kar dikî ku berhevkirina bacê hewce dike:
 
 Ji bo veavakirina hûrgulî binêre [Birêvebirina Bacê](/user-guide/payment-gateways/tax-handling). Heke tu ji mişteriyên navneteweyî re xizmet dikî, ji bo lihevhatina EU-ê [VAT addon](/addons/vat) bifikire.
 
-## Nirxandina Nirxdanê ya Xwe
+## Nirxandina Nirxdanê ya Xwe {#reviewing-your-pricing}
 
 Piştî launch, her sê meh carekê vegere nirxdanê. Li van binihêre:
 
@@ -107,7 +107,7 @@ Piştî launch, her sê meh carekê vegere nirxdanê. Li van binihêre:
 - **Churn li gorî planê**: Heke mişteriyên salane kêmtir churn dikin, nirxandina salane zêdetir pêş bixe
 - **Nirxandina hevrikan**: Alternatîf çiqas digirin? Tu rast hatiyî cihkirin?
 
-## Tora FitSite Heta Niha
+## Tora FitSite Heta Niha {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Me Di Vê Dersê de Çi Avakirin
+## Me Di Vê Dersê de Çi Avakirin {#what-we-built-this-lesson}
 
 - **Nirxandina salane** bi 20% daxistinê ji bo teşwîqkirina pabendbûnê
 - **Mesrefên sazkirinê** li ser astên bilindtir ji bo vegirtina hewldana destpêkirinê

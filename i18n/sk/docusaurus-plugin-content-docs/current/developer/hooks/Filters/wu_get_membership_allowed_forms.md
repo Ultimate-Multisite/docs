@@ -4,16 +4,16 @@ title: Filter - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Filter: wu_get_membership_allowed_forms
+# Filter: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
 
 Umožňuje vývojárom pridať nové slugy formulárov na obídenie tohto správania.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
 | $slugs | `array` | zoznam slugov formulárov na obídenie. |
 
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/ui/class-checkout-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-checkout-element.php#L409) na riadku 409

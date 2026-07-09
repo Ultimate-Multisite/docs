@@ -4,11 +4,11 @@ title: Sía - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit
+# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
 
 Athugar hvort tiltekin eyðublaðstegund sé leyfð í þessari áætlun Leyfir plugin-hönnuðum að sía skilagildið
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Nafn | Tegund | Lýsing |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Athugar hvort tiltekin eyðublaðstegund sé leyfð í þessari áætlun Leyfir 
 | $form_count | `int` | Núverandi fjöldi eyðublaða |
 | $quota | `int` | Leyfður kvóti |
 
-### Síðan
+### Síðan {#since}
 
 - 1.0.0
-### Uppruni
+### Uppruni {#source}
 
 - Skilgreint í [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L56) á línu 56
 - Skilgreint í [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L89) á línu 89

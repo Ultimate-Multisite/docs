@@ -3,13 +3,13 @@ title: Setio'r Constanta Gorau ar Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Mae'r cyflwyno'r constant Sunrise i'r Closte
+# Mae'r cyflwyno'r constant Sunrise i'r Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Mae rhai prifau gweithredwyr sy'n roedd yn chynllhau'r wp-config.php am y dyfodol. Mae hyn yn ei fod yn rhyfeddu Ultimate Multisite i redig y ffeil amlwg i gael y constantau hanesyddol a buedau eraill i weithio. Closte yw un o'r prifau hyn.
 
 Fodd bynnag, mae Closte yn cynnig ffordd i drosglai constantau i'r wp-config.php mewn modd diogel. Mae angen i chi dilyn y cynllunau isod:
 
-## Ar y dashboard Closte
+## Ar y dashboard Closte {#on-the-closte-dashboard}
 
 Cyndd cyntaf, [cyflwynwch eich cyfrif Closte](https://app.closte.com/), cliw ar y menu Sites, yna cliw ar y linc Dashboard ar y safle sy'n gweithio arno:
 

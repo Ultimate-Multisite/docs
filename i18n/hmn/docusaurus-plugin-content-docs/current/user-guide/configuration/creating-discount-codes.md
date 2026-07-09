@@ -3,13 +3,13 @@ title: Tsim khoom cod discount
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Discount Code Tạo (v2)
+# Discount Code Tạo (v2) {#creating-discount-codes-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
 Với Ultimate Multisite, bạn có thể tạo các mã giảm giá để tặng khách hàng của mình chiết khấu cho gói đăng ký của họ. Và việc tạo chúng rất dễ!
 
-## Tạo và Chỉnh sửa Mã Giảm Giá
+## Tạo và Chỉnh sửa Mã Giảm Giá {#creating-and-editing-discount-codes}
 
 Để tạo hoặc chỉnh sửa một mã giảm giá, hãy vào **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Bạn cũng có thể xem mã giảm giá là đang hoạt động (active) hay 
 
 ###
 
-### URL Parameters အသုံးပြုခြင်း:
+### URL Parameters အသုံးပြုခြင်း: {#using-url-parameters}
 
 သင့်ရဲ့ pricing table တွေကို စိတ်ကြိုက်ပြင်ချင်တယ်၊ သင့် website အတွက် လှပတဲ့ coupon code page တစ်ခု တည်ဆောက်ချင်တယ်၊ နောက်ပြီး checkout form ကို discount code နဲ့ အလိုအလျောက် ပေးချေမှု လုပ်ချင်ရင် URL parameters တွေကနေ လုပ်လို့ရပါတယ်။
 

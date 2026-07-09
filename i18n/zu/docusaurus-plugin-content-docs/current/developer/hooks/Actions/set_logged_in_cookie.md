@@ -4,11 +4,11 @@ title: Isenzo - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Isenzo: set_logged_in_cookie
+# Isenzo: set_logged_in_cookie {#action-setloggedincookie}
 
 Senzeka ngokushesha ngaphambi kokuthi i-cookie yokuqinisekisa yokungena ngemvume isethwe.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Senzeka ngokushesha ngaphambi kokuthi i-cookie yokuqinisekisa yokungena ngemvume
 | $scheme | `string` | Isikimu sokuqinisekisa. Okuzenzakalelayo 'logged_in'. |
 | $token | `string` | I-session token yomsebenzisi ezosetshenziswa kule cookie. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) emgqeni 141

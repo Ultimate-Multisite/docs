@@ -3,7 +3,7 @@ title: Whakawātea API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Te Endpoint Register API o Whānau Whānui (Multisite)
+# Te Endpoint Register API o Whānau Whānui (Multisite) {#the-ultimate-multisite-register-api-endpoint}
 
 I roto i tēnei tutorial, i whakaritea atu koe ki te whakamahi i te Ultimate Multisite /register API endpoint kia whakatō i te tino whaiaro (onboarding process) mō te mea hou i te whānau o koe ā, me te whakaahuatanga ahau i te whakamahi Zapier.
 
@@ -26,11 +26,11 @@ Whakaritenga i **Enable API** ā, whai i ahau ki ngā credentials API ahau.
 
 I tēnei wā, he whakamārama mō te endpoint me te whakawhanake i te registration action i Zapier.
 
-## Ngā parameter o te body o te endpoint
+## Ngā parameter o te body o te endpoint {#endpoint-body-parameters}
 
 He whakamārama mō ngā mea hāpai nui kua roa atu e kitea ki te tino whiriwhiri (endpoint) ahau. I te whakatā o tēnei article, ka roto koe i te whakawhanake katoa.
 
-### Customer
+### Customer {#customer}
 
 Ko te mōhioinga he pēnei ana me te mahi mō te mahi whakatō User me te Ultimate Multisite Customer:
 
@@ -40,25 +40,25 @@ He takahi i te whaiaro o te mea whānau e whakatō i roto i tō wāhi. Ko te mea
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Te mea tino nui e pēnei i te whaiaro ko te Status o te Membership.
 
 "membership" { "status" : "string", // he tahi o "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Ko ngā Products e pēnei i te array (list) me te ID o ngā products mai i tō wāhi. He tino whakatika, ko koe e whakamārama ana, ko te endpoint (endpoint) này he ka taea te whakatō i ngā products. Kia kaha ki te whakamārama i te documentation o Ultimate Multisite kia mōhio rāmore iti i te endpoint e tika ana mo te whakatō i ngā products.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Ko te mea pēnei i te Membership, he tino nui ko te status.
 
 **"payment" { "status" : "string", // he tahi o "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Ko mō te whakamutunga, he tino nui ko te URL o te site me te Titau (Title) o te site, kōrero mai i roto i te Site object.
 
@@ -66,13 +66,13 @@ Ko mō te whakamutunga, he tino nui ko te URL o te site me te Titau (Title) o te
 
 Ko te whaiaro o te register endpoint e pēnei ana he array me ngā mōhaka (information) o te membership e pēnei i te whakatō mai.
 
-## Whakawhanaungatanga action i Zapier
+## Whakawhanaungatanga action i Zapier {#creating-an-action-in-zapier}
 
 Me te whakatū o te endpoint whakatō account hou me tino kaha ko, koe e taea ai te whaiaro action hou i Zapier.
 
 Ko koe mōhio ana ahau i te whakamahi me te whaiaro katoa e te wera hou o Zapier e hoatu? Whakarongo atu ki a ia i tēnei link. (link?)
 
-### Whakawhanaungatanga action
+### Whakawhanaungatanga action {#creating-an-action}
 
 Kia ora! Hei whakamārama mō te whakamahi o te registration endpoint me Zapier, he pēhea mātou e whakatō i te whaiaro (integration) ki Google Forms. Kei ngaro ahau i te screenshot: He tino pai tēnei. Kei ora mai i roto i te form o Google Forms, kia whakatō i ngā rohe (fields) anō ana ka taea te whakaratake i te whaiaro hou i te wāhi Ultimate Multisite network.
 
@@ -102,7 +102,7 @@ Mea te whakamahi i te mōhio, whai i te whakamārama whakamutunga. I te whero wh
 
 Whakawātea i tō Zap hou ā, ka whakatutaku i ai i runga i te pai. Ko te mea e pēnei i ko ngā whakamohio katoa, he taea ai ki te whakaatu i ngā mea katoa. He tino mōhio nui, he taea ai i ngā mea i roto i te pō kia whakatutaku.
 
-### Ngā whakaritenga o te endpoint katoa
+### Ngā whakaritenga o te endpoint katoa {#complete-endpoint-parameters}
 
 He tēnei whakawātea katoa me ngā mea katoa e taea te whakato.
 

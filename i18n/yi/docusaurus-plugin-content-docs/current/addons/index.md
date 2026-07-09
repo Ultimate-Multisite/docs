@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons פֿאַרברייטערן Ultimate Multisite מיט נאָך פֿעיִקייטן און אינטעגראַציעס. רובֿ Addons זענען באַצאָלטע און מע קען זיי קויפֿן פֿון [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## אינסטאַלאַציע
+## אינסטאַלאַציע {#installation}
 
 Addons קען מען אינסטאַלירן אויף צוויי אופֿנים:
 
 1. **דורך דער Addon־בלאַט** -- נאַוויגירט צו דער Addon־פֿאַרוואַלטונגסבלאַט פֿון אײַער פּלאַץ אין דעם WordPress אַדמין
 2. **מאַנועלע אַראָפּלאָדונג** -- לאָדט אַראָפּ פֿון [אײַער Account](https://ultimatemultisite.com/my-account/downloads/) און לאָדט אַרויף דורך Plugins > Add New
 
-## פֿאַראַנענע Addons
+## פֿאַראַנענע Addons {#available-addons}
 
 | Addon | באַשרײַבונג |
 |-------|-------------|

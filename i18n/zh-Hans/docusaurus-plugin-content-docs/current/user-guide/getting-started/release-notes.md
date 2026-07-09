@@ -3,9 +3,9 @@ title: 发布说明
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# 发布说明
+# 发布说明 {#release-notes}
 
-## 版本 2.13.0 — 发布于 2026-06-05
+## 版本 2.13.0 — 发布于 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - 新增：为客户 Account、checkout、billing、站点、invoice、template 切换和 domain mapping 流程添加了主权租户支持，使租户网络能够将客户引导回主站点执行托管操作。
 - 新增：为循环 membership 添加了续订凭据检查，以便当缺少已保存的 billing agreement、subscription 或 vault token 时，gateway 可以禁用自动续订。
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 修复：Membership 续订、到期显示和付款收取的边缘情况现在可避免立即到期、崩溃或遗漏必需付款。
 - 改进：WordPress 兼容性已测试至 7.0，生产 Vue 资源已从 npm 源重新构建，并且 Cypress 端到端覆盖现在会测试更多 checkout、setup、SSO 和 gateway 流程。
 
-## 版本 2.12.0 — 发布于 2026-05-15
+## 版本 2.12.0 — 发布于 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - 新增：添加 Hostinger (hPanel) 作为受支持的主机提供商，并集成 domain mapping
 - 新增：Site Exporter 现在可处理网络导入包，以简化全网络站点恢复
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 修复：Site Exporter CLI 现在会保留正确的默认网络站点选择
 - 改进：从 plugin 包中移除了捆绑的 wp-cli，减小了 plugin 体积
 
-## 版本 2.11.0 — 发布于 2026-05-11
+## 版本 2.11.0 — 发布于 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - 新增：站点导出现在会打包一个可自启动的 `index.php`，因此 ZIP 可在全新主机上安装，无需单独安装 plugin。
 - 新增：网络导出允许管理员从 Site Export 管理页面将所有子站点导出到一个归档文件中。
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 新增：当添加的 product 未配置必需字段时，checkout 表单编辑器会发出警告。
 - 新增：Import/Export 设置标签页现在会清楚说明其范围，并直接链接到 Site Export 工具。
 
-## 版本 2.10.0 — 发布于 2026-05-05
+## 版本 2.10.0 — 发布于 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - 新增：PayPal 引导式 setup wizard，用于手动输入凭据，并带有 OAuth 标志门控，以实现无缝 gateway 配置。
 - 新增：Template 切换客户面板已重新设计，包含当前 template 卡片、持久网格和 **重置当前 template** 按钮。
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 修复：所有登录流程都会遵循经过筛选的 SSO 路径。
 - 修复：空白站点身份选项在保存时会被保留。
 
-## 版本 2.9.0 — 发布于 2026-04-30
+## 版本 2.9.0 — 发布于 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - 新增：在 **工具 > 导出与导入** 下添加了单站点导出和导入。
 - 修复：导出 ZIP 文件现在通过经过身份验证的下载 endpoint 提供。
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 修复：导览 ID 在用户设置键中规范化为下划线。
 - 改进：现在使用 ZipArchive 代替 Alchemy/Zippy，以获得更好的兼容性。
 
-## 版本 2.8.0 — 发布于 2026-04-29
+## 版本 2.8.0 — 发布于 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - 新增：在 Other Options 设置 UI 中添加了 Enable Jumper 开关。
 - 新增：在结账表单列表表中添加了状态列。

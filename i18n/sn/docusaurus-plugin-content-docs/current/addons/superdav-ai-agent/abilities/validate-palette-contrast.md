@@ -3,15 +3,15 @@ title: Simbisa Kusiyana kweMuunganidzwa weMavara
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Simbisa Kusiyana kwePalette
+# Simbisa Kusiyana kwePalette {#validate-palette-contrast}
 
 Kugona kwe**Validate Palette Contrast** kunoongorora mapeya emavara mupalette yedhizaini yako kuti aenderane neWCAG (Web Content Accessibility Guidelines) usati waashandisa pa theme yako.
 
-## Pfupiso
+## Pfupiso {#overview}
 
 Kugona uku kunovimbisa kuti chirongwa chemavara chesaiti yako chinosangana nemiyero yekusvikirika nekusimbisa zviyero zvekusiyana pakati pemavara echinyorwa nemavara ekumashure. Kunobatsira kudzivirira misanganiswa yemavara inogona kuomera vashandisi vane matambudziko ekuona kuverenga.
 
-## Chimiro cheInput
+## Chimiro cheInput {#input-format}
 
 Kugona uku kunogamuchira palette yemavara seinput:
 
@@ -35,7 +35,7 @@ Kugona uku kunogamuchira palette yemavara seinput:
 }
 ```
 
-### Parameters
+### Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Kugona uku kunogamuchira palette yemavara seinput:
 | `wcag_level` | string | No | Chikamu chekutevedzera WCAG: "A", "AA" (default), kana "AAA" |
 | `pairs_to_check` | array | No | Mapeya emavara chaiwo ekusimbisa (semuenzaniso, `["primary-text", "background-text"]`) |
 
-## Zvikamu zveWCAG Zvinoongororwa
+## Zvikamu zveWCAG Zvinoongororwa {#wcag-levels-checked}
 
 Kugona uku kunosimbisa zviyero zvekusiyana zvinoenderana nemiyero yeWCAG:
 
@@ -56,7 +56,7 @@ Kugona uku kunosimbisa zviyero zvekusiyana zvinoenderana nemiyero yeWCAG:
 - **Chinyorwa Chajairika** — chinyorwa chidiki kupfuura 18pt (kana 14pt bold)
 - **Chinyorwa Chikuru** — chinyorwa che18pt kana chikuru (kana 14pt bold kana chikuru)
 
-## Schema yeOutput
+## Schema yeOutput {#output-schema}
 
 Kugona uku kunodzosa rondedzero yakadzama yekusimbisa:
 
@@ -95,7 +95,7 @@ Kugona uku kunodzosa rondedzero yakadzama yekusimbisa:
 }
 ```
 
-### Minda yeOutput
+### Minda yeOutput {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Kugona uku kunodzosa rondedzero yakadzama yekusimbisa:
 | `status` | string | "pass" kana "fail" yepeya imwe neimwe |
 | `recommendations` | array | Mazano ekuvandudza mapeya ari kukundikana |
 
-## Muenzaniso Wekushandisa
+## Muenzaniso Wekushandisa {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Kugona uku kunosimbisa misanganiswa yose yemavara uye kunodzosa:
 - ✅ Kumashure + Chinyorwa: chiyero che12.1:1 (chinopfuura WCAG AAA)
 - Zvose: Zvinoenderana neWCAG AA
 
-## Kubatanidzwa neTheme Builder
+## Kubatanidzwa neTheme Builder {#integration-with-theme-builder}
 
 Paunenge uchishandisa kusarudza nzira yedhizaini muTheme Builder, kugona kweValidate Palette Contrast:
 
@@ -129,7 +129,7 @@ Paunenge uchishandisa kusarudza nzira yedhizaini muTheme Builder, kugona kweVali
 4. Kunopa mazano emapeya asingatevedzeri
 5. Kunodzivirira kushandisa zvirongwa zvemavara zvisingasvikiriki
 
-## Maitiro Akanakisisa
+## Maitiro Akanakisisa {#best-practices}
 
 - **Tanga nechikamu cheAA** — WCAG AA ndiyo mwero wemawebhusaiti mazhinji
 - **Edza usati washandisa** — simbisa palette yako usati wazvipira kudhizaini
@@ -137,7 +137,7 @@ Paunenge uchishandisa kusarudza nzira yedhizaini muTheme Builder, kugona kweVali
 - **Funga zvido zvevashandisi** — vamwe vashandisi vanogona kuva nekukanganiswa kwakawedzera nemavara
 - **Shandisa maturusi ekuongorora kusiyana** — batanidza kugona uku nematurusi ebrowser kuti usimbise
 
-## Mapeya Ari Kukundikana neMazano
+## Mapeya Ari Kukundikana neMazano {#failing-pairs-and-recommendations}
 
 Kana peya yemavara ikakundikana kusimbiswa, kugona uku kunopa mazano:
 
@@ -155,7 +155,7 @@ Kana peya yemavara ikakundikana kusimbiswa, kugona uku kunopa mazano:
 }
 ```
 
-## Kugona Kune Hukama
+## Kugona Kune Hukama {#related-abilities}
 
 - [Gadzira Logo SVG](./generate-logo-svg.md) — gadzira malogo uchishandisa palette yako yemavara yakasimbiswa
 - [Gadzira Menu](./create-menu.md) — vaka navigation ine mavara anosvikirika

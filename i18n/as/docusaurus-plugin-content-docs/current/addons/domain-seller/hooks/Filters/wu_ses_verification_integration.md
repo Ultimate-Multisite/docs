@@ -4,7 +4,7 @@ title: Filter - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filter: wu_ses_verification_integration
+# Filter: wu_ses_verification_integration {#filter-wusesverificationintegration}
 
 ফিল্টাৰ: আন কোডক SES ইন্টিগ্ৰেচন অবজেক্ট যোগ কৰিবলৈ অনুমতি দিয়ে।
 
@@ -13,15 +13,15 @@ _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 - `check_domain_verification(string $domain): array\{verified: bool\}\|WP_Error`
 - `delete_identity(string $domain): true\|WP_Error`
 
-## পৰিটাৰ (Parameters)
+## পৰিটাৰ (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $integration | `object\|null` | SES ইন্টিগ্ৰেচন অবজেক্ট, অথবা null। |
 
-### Since
+### Since {#since}
 
 - 2.2.0
-### Source
+### Source {#source}
 
 Defined in [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L731) at line 731

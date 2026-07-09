@@ -4,11 +4,11 @@ title: Filtrum - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filtrum: wu_apc_process_page_content
+# Filtrum: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Sinite elaboratores contentum finale mutare
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Sinite elaboratores contentum finale mutare
 | $to_replace | `array` | Series quae placeholders retinet. |
 | $placeholder_count | `int` | Numerus placeholders inventorum. |
 
-### Ab
+### Ab {#since}
 
 - 1.4.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) linea 46
 
 
-## Reddit
+## Reddit {#returns}
 Contentum post modificationem.

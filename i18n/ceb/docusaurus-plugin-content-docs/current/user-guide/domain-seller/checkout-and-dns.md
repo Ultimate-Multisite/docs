@@ -3,13 +3,13 @@ title: Field sa Checkout ug Customer DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field ug DNS Management sa Customer
+# Checkout Field ug DNS Management sa Customer {#checkout-field-and-customer-dns-management}
 
-## Ang checkout field para sa Domain Selection
+## Ang checkout field para sa Domain Selection {#the-domain-selection-checkout-field}
 
 Ang **Domain Selection** field kay usa ka elemento sa checkout nga naghatag sa mga customer og kapilian kung unsaon nila pagkuha sa domain sa ilang site. Idugang kini sa bisan unsang checkout form aron mapagana ang pagbaligya sa domain.
 
-### Pagdugang sa field sa checkout form
+### Pagdugang sa field sa checkout form {#adding-the-field-to-a-checkout-form}
 
 1. Adto sa **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Buksan o himuon og bag-ong checkout form
@@ -18,7 +18,7 @@ Ang **Domain Selection** field kay usa ka elemento sa checkout nga naghatag sa m
 5. I-configure ang mga opsyon sa field (tan-awa sa ubos)
 6. I-save ang form
 
-### Mga opsyon sa field
+### Mga opsyon sa field {#field-options}
 
 **Domain modes** — Pilia kung unsang tabs makita sa customer. Ang matag mode pwede i-enable o i-disable nga independente:
 
@@ -32,7 +32,7 @@ Ang **Domain Selection** field kay usa ka elemento sa checkout nga naghatag sa m
 
 **Domain product** — Optional ba ni nga field nga i-pin sa usa ka specific domain product. Kung wala i-set, ang addon awtomatikong mopili sa matching product base sa TLD nga gitan-aw sa customer.
 
-### Mga contact fields sa Registrant
+### Mga contact fields sa Registrant {#registrant-contact-fields}
 
 Kung ang usa ka customer mogamit sa **Register New Domain** tab, ang checkout form magdugang og registrant contact fields sa sulod:
 
@@ -43,11 +43,11 @@ Kung ang usa ka customer mogamit sa **Register New Domain** tab, ang checkout fo
 
 Kini kinahanglanon sa tanang mga registrar ug gi-validate una pa magpadala og registration API call. Ang mga numero sa telepono awtomatikong ma-format ngadto sa internasyonal nga format nga `+CC.NNN` nga gipaabot sa mga registrar.
 
-### Auto-generated site URL
+### Auto-generated site URL {#auto-generated-site-url}
 
 Kung ang usa ka customer nagparehistro o nagmapa og domain, ang field sa site URL awtomatikong mapuno gikan sa napili nga domain. Ang mga customer dili kinahanglan magpuno og laing field para sa URL.
 
-### Search behaviour
+### Search behaviour {#search-behaviour}
 
 - Ang availability sa domain gi-check sa real-time gamit ang AJAX samtang nag-type ang customer
 - Gipakita ang mga alternatibo nga TLD suggestions kung wala ang gusto nga domain
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Customer DNS management
+## Customer DNS management {#customer-dns-management}
 
 Ang mga customer makama sa pagdumala og DNS records para sa ilang mga registered domains gikan sa **My Account** page, ubos sa entry sa ilang domain.
 
-### Mga suportadong klase sa record
+### Mga suportadong klase sa record {#supported-record-types}
 
 | Type | Gamit |
 |---|---|
@@ -91,11 +91,11 @@ Ang mga customer makama sa pagdumala og DNS records para sa ilang mga registered
 | **MX** | Mag-set og mail exchange server |
 | **TXT** | Dugang og SPF, DMARC, verification, o uban pang text records |
 
-### Unsa nga mga provider ang nagsuporta sa DNS management?
+### Unsa nga mga provider ang nagsuporta sa DNS management? {#which-providers-support-dns-management}
 
 Ang pag-manage sa DNS (pagdagay, pag-edit, pagtanggal og mga record) kay available gamit ang **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, ug **Openprovider**. Ang mga domain sa **Hostinger** pwede i-update ang nameservers pinaagi sa Domain Seller; ang DNS records para sa mga gi-host nga domain gihimong manage pinaagi sa core Hostinger domain-mapping integration. Ang mga domain sa Namecheap, GoDaddy, ug NameSilo nagpakita og status ug expiry information pero kinahanglan i-manage direkta sa control panel sa registrar.
 
-### Default DNS records
+### Default DNS records {#default-dns-records}
 
 Pwede ka mag-configure og default DNS records nga awtomatikong iapil kung ang usa ka domain gi-register. Adto sa **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: pagtan-aw ug pag-edit sa DNS
+### Admin: pagtan-aw ug pag-edit sa DNS {#admin-viewing-and-editing-dns}
 
 Ang mga network admin pwede tan-aw ug i-edit ang DNS records para sa bisan unsang customer domain gikan sa edit page sa domain sa **Network Admin › Ultimate Multisite › Domains**.

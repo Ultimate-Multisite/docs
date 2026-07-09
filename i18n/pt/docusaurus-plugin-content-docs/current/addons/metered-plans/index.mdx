@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Planos Medidos
+# Planos Medidos {#metered-plans}
 
 O addon Ultimate Multisite: Metered Plans transforma a forma como fatura os seus clientes ao introduzir capacidades flexíveis de faturação medida. Em vez de limites rígidos que bloqueiam os utilizadores quando são excedidos, active cobranças por excesso que faturam automaticamente os clientes por utilização adicional.
 
-## Funcionalidades Principais
+## Funcionalidades Principais {#key-features}
 
 * **Faturação Medida**: Cobre aos clientes com base na utilização real em vez de escalões fixos
 * **Gestão de Excesso**: Fature automaticamente a utilização que excede os limites do plano
@@ -21,14 +21,14 @@ O addon Ultimate Multisite: Metered Plans transforma a forma como fatura os seus
 * **Faturação Automática**: Gere faturas automaticamente quando os limiares de utilização são excedidos
 * **Relatórios de Utilização**: Análises e relatórios detalhados de utilização para clientes e administradores
 
-## Perfeito Para
+## Perfeito Para {#perfect-for}
 
 * **Fornecedores de Alojamento**: Ofereça planos escaláveis que crescem com as necessidades dos clientes
 * **Plataformas SaaS**: Fature com base no consumo real de recursos
 * **Redes de Agências**: Modelos de preços flexíveis para projetos de clientes
 * **Alojamento de Revenda**: Permita que parceiros ofereçam preços baseados na utilização
 
-## Como Funciona
+## Como Funciona {#how-it-works}
 
 1. Configure recursos medidos (espaço em disco, largura de banda, número de sites, etc.)
 2. Defina limites do plano base e tarifas por excesso
@@ -37,13 +37,13 @@ O addon Ultimate Multisite: Metered Plans transforma a forma como fatura os seus
 5. As faturas são geradas automaticamente com base no ciclo de faturação
 6. Os clientes podem ver a sua utilização e as cobranças futuras em tempo real
 
-## Faturação de Tokens de IA
+## Faturação de Tokens de IA {#ai-token-billing}
 
 A versão 1.1.0 adiciona faturação de tokens de IA para redes que oferecem funcionalidades de IA através do WordPress AI Client SDK. Metered Plans escuta pedidos de geração de IA concluídos, regista contagens de tokens de entrada e saída para o subsite atual e converte esses tokens em gastos de IA faturáveis para o período de faturação atual do cliente.
 
 Use a faturação de tokens de IA quando quiser oferecer ferramentas de IA em sites de clientes sem absorver custos de modelos imprevisíveis. Cada pedido é atribuído ao subsite, cliente, subscrição, fornecedor e modelo para que os administradores possam auditar a utilização, enquanto os clientes podem ver como o seu consumo de IA afeta a sua Account.
 
-### Configurar Tarifas Por Token
+### Configurar Tarifas Por Token {#configure-per-token-rates}
 
 As tarifas de IA são configuradas por modelo como tarifas separadas de entrada e saída. As tarifas são calculadas por 1 milhão de tokens, o que corresponde às páginas de preços comuns de fornecedores de IA.
 
@@ -55,7 +55,7 @@ As tarifas de IA são configuradas por modelo como tarifas separadas de entrada 
 
 Quando um ID de modelo exato não está configurado, Metered Plans pode corresponder por prefixo de modelo. Por exemplo, uma tarifa configurada para `claude-sonnet-4` pode aplicar-se a IDs de modelo com carimbo de data/hora que começam com esse prefixo. Os programadores também podem ajustar a tabela final de tarifas com o filtro [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Conectores de IA Suportados
+### Conectores de IA Suportados {#supported-ai-connectors}
 
 A faturação de tokens de IA funciona com conectores que emitem eventos de geração do WordPress AI Client SDK e incluem utilização de tokens nos metadados da resposta. Isto inclui a família de conectores de IA do Ultimate Multisite documentada aqui:
 
@@ -65,13 +65,13 @@ A faturação de tokens de IA funciona com conectores que emitem eventos de gera
 
 Conectores personalizados podem participar ao disparar os eventos padrão `wp_ai_client_before_generate_result` e `wp_ai_client_after_generate_result` com metadados de modelo, fornecedor e utilização de tokens. As definições do conector são aplicadas do site principal aos subsites para que os sites dos clientes usem os fornecedores e limites aprovados pela rede.
 
-### Utilização da Account do Cliente
+### Utilização da Account do Cliente {#customer-account-usage}
 
 Os clientes veem a utilização de IA juntamente com os seus outros recursos medidos na sua área de Account. A linha de gastos de IA mostra o total do período de faturação atual derivado dos tokens de prompt e conclusão registados, das tarifas de modelo configuradas e de qualquer franquia incluída no plano.
 
 Se um cliente tiver um método de pagamento registado, a utilização acima da franquia incluída é tratada como excesso faturável. Se o plano estiver configurado para um corte rígido e o cliente não tiver nenhum método de pagamento disponível, os pedidos de IA podem ser bloqueados quando a franquia for atingida e o cliente é solicitado a adicionar detalhes de pagamento antes de continuar.
 
-## Recursos Suportados
+## Recursos Suportados {#supported-resources}
 
 * Armazenamento em disco
 * Largura de banda/Transferência de dados
@@ -80,13 +80,13 @@ Se um cliente tiver um método de pagamento registado, a utilização acima da f
 * Utilização de tokens de IA e gastos de IA
 * Tipos de recursos personalizados
 
-## Requisitos
+## Requisitos {#requirements}
 
 * Multisite Ultimate 2.0.0 ou superior
 * Instalação WordPress Multisite
 * PHP 7.4 ou superior
 
-## Instalação
+## Instalação {#installation}
 
 1. Carregue os ficheiros do plugin para `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Active o plugin através do ecrã 'Plugins' no WordPress
@@ -94,24 +94,24 @@ Se um cliente tiver um método de pagamento registado, a utilização acima da f
 4. Configure os seus recursos medidos e preços
 5. Active a faturação medida para produtos no editor de produtos
 
-## Perguntas Frequentes
+## Perguntas Frequentes {#frequently-asked-questions}
 
-## O que acontece quando um cliente excede o seu limite?
+## O que acontece quando um cliente excede o seu limite? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Em vez de bloquear o acesso, o sistema regista o excedente e adiciona-o à próxima fatura com base nas tarifas que configurou.
 
-## Posso definir tarifas de excedente diferentes para produtos diferentes?
+## Posso definir tarifas de excedente diferentes para produtos diferentes? {#can-i-set-different-overage-rates-for-different-products}
 
 Sim, cada produto pode ter recursos medidos e preços de excedente próprios.
 
-## Como são os clientes notificados sobre a utilização?
+## Como são os clientes notificados sobre a utilização? {#how-are-customers-notified-about-usage}
 
 Os clientes podem ver a sua utilização atual no Dashboard e receber notificações opcionais quando se aproximam dos limites ou os excedem.
 
-## Como é definido o preço da utilização de tokens de IA?
+## Como é definido o preço da utilização de tokens de IA? {#how-is-ai-token-usage-priced}
 
 A utilização de tokens de IA é precificada a partir das tarifas de entrada e saída configuradas do modelo por 1 milhão de tokens. Os Planos Medidos multiplicam as contagens de tokens de prompt e de conclusão de cada pedido por essas tarifas, adicionam o resultado ao gasto atual de IA do cliente no período de faturação e aplicam a franquia do plano ou as regras de excedente.
 
-## Ainda posso usar limites rígidos?
+## Ainda posso usar limites rígidos? {#can-i-still-use-hard-limits}
 
 Sim, a faturação medida é opcional por produto. Pode combinar produtos tradicionais com limites rígidos com produtos medidos.

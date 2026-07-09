@@ -4,19 +4,19 @@ title: Ekintza - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Ekintza: delete_network
+# Ekintza: delete_network {#action-deletenetwork}
 
 Sare bat ezabatu ondoren abiarazten da.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
 | $network | `\WP_Network` | Ezabatutako sare-objektua. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 1.3.0
-### Iturburua
+### Iturburua {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1494) fitxategian definitua, 1494. lerroan

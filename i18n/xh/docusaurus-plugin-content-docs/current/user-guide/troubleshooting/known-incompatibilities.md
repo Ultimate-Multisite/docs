@@ -3,7 +3,7 @@ title: Ukungahambelani okwaziwayo
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Ukungahambelani okwaziwayo nezinye iiPlugins
+# Ukungahambelani okwaziwayo nezinye iiPlugins {#known-incompatibilities-with-other-plugins}
 
 Emva kokufaka nokuvula i-Ultimate Multisite, unokudibana nemiba ngenxa yokungahambelani okungakalungiswa nezinye ii-plugin.
 

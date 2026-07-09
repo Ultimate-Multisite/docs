@@ -3,7 +3,7 @@ title: Automatisk sökning och ersättning i webbplatsmallar
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisk sökning och ersättning i webbplatsmallar (v2)
+# Automatisk sökning och ersättning i webbplatsmallar (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Den här handledningen kräver WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Din kund kommer sedan att kunna fylla i det fältet under registreringen.
 
 Ultimate Multisite kommer sedan automatiskt att ersätta platshållarna med de data som kunden har angett.
 
-## **Lösa problemet med "mall full av platshållare"**
+## **Lösa problemet med "mall full av platshållare"** {#solving-the-template-full-of-placeholders-problem}
 
 Allt detta är bra, men vi stöter på ett fult problem: nu är våra webbplatsmallar - som kan besökas av våra kunder - fulla av fula platshållare som inte säger särskilt mycket.
 

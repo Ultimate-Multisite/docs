@@ -4,11 +4,11 @@ title: Lim - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Lim: wu_generated_username_from_email
+# Lim: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Lim lub npe neeg siv khoom uas tsim tawm.
 
-## Cov Parameter
+## Cov Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Lim lub npe neeg siv khoom uas tsim tawm.
 | $new_user_args | `array` | Array ntawm cov args rau user tshiab, tej zaum suav nrog npe thiab xeem. |
 | $suffix | `string` | Ntxiv string rau username kom ua rau nws tshwj xeeb. |
 
-### Txij li
+### Txij li {#since}
 
 - 3.7.0
-### Qhov chaw
+### Qhov chaw {#source}
 
 Txhais nyob rau hauv [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) ntawm kab 488

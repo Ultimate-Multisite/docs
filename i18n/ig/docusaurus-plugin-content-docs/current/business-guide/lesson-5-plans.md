@@ -3,15 +3,15 @@ title: 'Ihe ọmụmụ 5: Ịchepụta atụmatụ gị'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ihe Ọmụmụ 5: Ịmepụta Atụmatụ Gị
+# Ihe Ọmụmụ 5: Ịmepụta Atụmatụ Gị {#lesson-5-designing-your-plans}
 
 Ọkwa atụmatụ gị abụghị naanị ọkwa ọnụahịa -- ha bụ ngosipụta nke otú ndị ahịa niche gị si arụ ọrụ n'ezie. N'ime ihe ọmụmụ a, ị ga-emepụta ọkwa ngwaahịa kwekọrọ na mkpa eziokwu nke azụmahịa mmega ahụ n'ọkwa dị iche iche.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 FitSite enweela templates atọ dị njikere (Studio Essential, Gym Pro, Fitness Chain). Ugbu a, anyị na-emepụta atụmatụ ndị na-ekpebi ihe ndị ahịa ga-enweta ohere iji na ihe ha ga-akwụ.
 
-## Iche Echiche n'Otu Ndị Ahịa
+## Iche Echiche n'Otu Ndị Ahịa {#thinking-in-customer-segments}
 
 Njehie ọtụtụ mmadụ na-eme bụ imepụta atụmatụ dabere na atụmatụ teknụzụ (ebe nchekwa, bandwidth, ọnụọgụ peeji). Ndị ahịa niche gị anaghị eche echiche n'ụzọ ahụ. Onye nwe gym na-eche banyere ihe ha chọrọ iji mee ka azụmahịa ha rụọ ọrụ.
 
@@ -25,11 +25,11 @@ Maka studio mmega ahụ, e nwere otu atọ pụtara ìhè:
 
 Atụmatụ gị kwesịrị ịdakọ na otu ndị a, ọ bụghị na nchịkọta atụmatụ e haziri n'enweghị usoro.
 
-## Ịmepụta Atụmatụ FitSite
+## Ịmepụta Atụmatụ FitSite {#creating-the-fitsite-plans}
 
 Gaa na **Ultimate Multisite > Ngwaahịa > Tinye Ngwaahịa** maka atụmatụ ọ bụla.
 
-### Atụmatụ 1: FitSite Starter -- $49/ọnwa
+### Atụmatụ 1: FitSite Starter -- $49/ọnwa {#plan-1-fitsite-starter----49month}
 
 **Ebumnuche**: Ndị nkuzi naanị ha na obere studio
 
@@ -59,7 +59,7 @@ Gaa na **Ultimate Multisite > Ngwaahịa > Tinye Ngwaahịa** maka atụmatụ �
 - Isiokwu ị họọrọ: Manye ka ọ rụọ ọrụ
 - Isiokwu ndị ọzọ niile: Zoro ezo
 
-### Atụmatụ 2: FitSite Growth -- $99/ọnwa
+### Atụmatụ 2: FitSite Growth -- $99/ọnwa {#plan-2-fitsite-growth----99month}
 
 **Ebumnuche**: Gym otu ebe guzobere nke ọma
 
@@ -85,7 +85,7 @@ Gaa na **Ultimate Multisite > Ngwaahịa > Tinye Ngwaahịa** maka atụmatụ �
 - Otu atụmatụ: FitSite Plans
 - Usoro ngwaahịa: 2
 
-### Atụmatụ 3: FitSite Pro -- $199/ọnwa
+### Atụmatụ 3: FitSite Pro -- $199/ọnwa {#plan-3-fitsite-pro----199month}
 
 **Ebumnuche**: Ụlọ ọrụ fitness nwere ọtụtụ ebe
 
@@ -109,7 +109,7 @@ Gaa na **Ultimate Multisite > Ngwaahịa > Tinye Ngwaahịa** maka atụmatụ �
 - Otu atụmatụ: FitSite Plans
 - Usoro ngwaahịa: 3
 
-## Ịtọlite Otu Atụmatụ
+## Ịtọlite Otu Atụmatụ {#setting-up-the-plan-group}
 
 Otu atụmatụ na-eme ka ndị ahịa nwee ike ịkwalite ma ọ bụ wedata naanị n'ime ezinụlọ atụmatụ FitSite. Na taabụ **Nkwalite & Mgbada** nke atụmatụ ọ bụla:
 
@@ -118,7 +118,7 @@ Otu atụmatụ na-eme ka ndị ahịa nwee ike ịkwalite ma ọ bụ wedata na
 
 Nke a na-emepụta ụzọ nkwalite doro anya: Starter → Growth → Pro.
 
-## Ịgbakwunye Order Bumps
+## Ịgbakwunye Order Bumps {#adding-order-bumps}
 
 Order bumps bụ ngwaahịa mgbakwunye a na-enye n'oge checkout. Maka FitSite, tụlee:
 
@@ -128,7 +128,7 @@ Order bumps bụ ngwaahịa mgbakwunye a na-enye n'oge checkout. Maka FitSite, t
 
 Mepụta ndị a dị ka ngwaahịa ụdị **Ngwugwu** na Ultimate Multisite ma jikọta ha na atụmatụ ndị metụtara ya.
 
-## Ihe Mere Nhazi A Ji Arụ Ọrụ
+## Ihe Mere Nhazi A Ji Arụ Ọrụ {#why-this-structure-works}
 
 - **Starter** na-ewepụ ihe mgbochi nbanye -- ọnụahịa dị ala, onyinye dị mfe, na-eme ka ndị nkuzi banye n'ịntanetị ngwa ngwa
 - **Growth** na-agbakwunye atụmatụ ndị gym na-ajụ maka ha n'ezie -- ntinye akwụkwọ, galleries, ngalaba omenala
@@ -136,7 +136,7 @@ Mepụta ndị a dị ka ngwaahịa ụdị **Ngwugwu** na Ultimate Multisite ma
 - **Order bumps** na-enye ndị ahịa ohere ịhazi ihe ha chọrọ n'enweghị ime ka atụmatụ isi sie ike
 - **Ụzọ nkwalite doro anya** pụtara na ndị ahịa na-eto gị na gị kama ịpụ
 
-## Netwọkụ FitSite Ruo Ugbu A
+## Netwọkụ FitSite Ruo Ugbu A {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Ihe Anyị Wuru n'Ihe Ọmụmụ A
+## Ihe Anyị Wuru n'Ihe Ọmụmụ A {#what-we-built-this-lesson}
 
 - **Ọkwa atụmatụ atọ** ejikọrọ na ezigbo otu azụmahịa mmega ahụ
 - **Ịchịkwa atụmatụ site n'ikwe ma ọ bụ igbochi** iji njikwa mgbakwunye na template nke Ultimate Multisite

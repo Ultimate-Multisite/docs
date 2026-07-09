@@ -3,18 +3,18 @@ title: Teeman rakentamisominaisuudet
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Teemanrakentajaomina: Block-teemojen luominen ja aktivoiminen
+# Teemanrakentajaomina: Block-teemojen luominen ja aktivoiminen {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 tuo mukanaan kaksi tehokasta ominaisuutta, jotka mahdollistavat räätälöityjen block-teemojen luomisen ja käyttöönoton suoraan chat-käyttöliittymän kautta.
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 **scaffold-block-theme**- ja **activate-theme** -ominaisuudet mahdollistavat agenttien:
 - Luodaksesi täydellisiä, tuotantoon valmiita block-teemoja annettujen ohjeiden perusteella
 - Aktivoimaan teemoja sivustollasi automaattisesti ilman manuaalista toimintaa
 - Luomaan yhtenäisen visuaalisen identiteetin ohjattuina suunnittelupäätöksillä
 
-## Block-teeman luominen (Scaffold Block Theme)
+## Block-teeman luominen (Scaffold Block Theme) {#scaffold-block-theme}
 
 **scaffold-block-theme**-ominaisuus luo uuden WordPress block-teeman, joka sisältää täydellisen teemarakenteen, mukaan lukien:
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0 tuo mukanaan kaksi tehokasta ominaisuutta, jotka mahdo
 - Mukautettuja block-tyylejä ja variaatioita
 - Teeman metatietoja ja tukea ilmoittavia tietoja
 
-### Käyttöohje
+### Käyttöohje {#how-to-invoke}
 
 Chatissa Superdav AI Agentin kanssa voit pyytää teeman luomista:
 
@@ -38,7 +38,7 @@ Agentti tekee seuraavaa:
 3. Luo kaikki tarvittavat teeman tiedostot
 4. Valmistele teema aktivoimista varten
 
-### Odotettu tuloste
+### Odotettu tuloste {#expected-output}
 
 Kun ominaisuus suoritetaan onnistuneesti, näet:
 
@@ -56,11 +56,11 @@ Esimerkki tulosteesta:
   Tila: Valmis aktivoimiseen
 ```
 
-## Teeman aktivoiminen (Activate Theme)
+## Teeman aktivoiminen (Activate Theme) {#activate-theme}
 
 **activate-theme** -ominaisuus vaihtaa sivustosi uuden rakennusmallin tai olemassa olevan lohkon teeman välillä.
 
-### Miten kutsua toimintoa
+### Miten kutsua toimintoa {#how-to-invoke-1}
 
 Teeman luomisen jälkeen voit aktivoida sen heti:
 
@@ -74,7 +74,7 @@ Tai aktivoi minkä tahansa olemassa olevan teeman:
 "Vaihtovi Twentytwentyfour -teemaan"
 ```
 
-### Odotettu tuloste
+### Odotettu tuloste {#expected-output-1}
 
 Kun aktivoituminen onnistuu:
 
@@ -92,7 +92,7 @@ Esimerkki tulosteesta:
   Huomautus: Tarkista etusivu varmistaaksesi asettelun
 ```
 
-## Työprosessi: LuonCreate ja Aktivoi
+## Työprosessi: LuonCreate ja Aktivoi {#workflow-scaffold-and-activate}
 
 Tyypillinen työnkulku yhdistää molemmat kyvyt:
 
@@ -102,7 +102,7 @@ Tyypillinen työnkulku yhdistää molemmat kyvyt:
 4. **Aktivoi**: "Aktivoi teeman nyt"
 5. **Vahvista**: Vieraile sivustollasi varmistaaksesi, että uusi ulkoasu on käytössä
 
-## Suunnittelutekoni ja mukauttaminen (Design Tokens and Customization)
+## Suunnittelutekoni ja mukauttaminen (Design Tokens and Customization) {#design-tokens-and-customization}
 
 Luo teemasta käyttävät WordPress design tokens -mekanismeja (`theme.json`) seuraaviin asioihin:
 
@@ -114,14 +114,14 @@ Luo teemasta käyttävät WordPress design tokens -mekanismeja (`theme.json`) se
 
 Nämä tokenit on keskitetty `theme.json`-tiedostoon, mikä helpottaa koko suunnittelujärjestelmän muuttamista yhdestä tiedostosta.
 
-## Rajoitukset ja huomiot
+## Rajoitukset ja huomiot {#limitations-and-notes}
 
 Teemat luodaan kansioihin `/wp-content/themes/` ja niiden on noudatettava WordPressin nimikkeitä.
 Aktivointi vaatii asianmukaisia oikeuksia WordPress-sivustollasi.
 Mukautettu PHP-koodi teemoissa on vähäistä; käytä plugin-lisäosia monimutkaisempiin toimintoihin.
 Blokki-teemat toimivat parhaiten WordPress 5.9 ja sitä uudemmissa versioissa.
 
-## Ongelmanratkaisu
+## Ongelmanratkaisu {#troubleshooting}
 
 **Teema ei ilmesty luodun kansiosta**
 - Tarkista, että teemakansio on olemassa ja siinä on oikeat käyttöoikeudet.
@@ -138,7 +138,7 @@ Blokki-teemat toimivat parhaiten WordPress 5.9 ja sitä uudemmissa versioissa.
 - Tyhjennä kaikki välimuistia koskevat pluginit.
 - Tarkista, tukikohtasi WordPress-versio tuettavan tunnisteiden (tokens) versio.
 
-## Seuraavat askeleet
+## Seuraavat askeleet {#next-steps}
 
 Teeman aktivoimisen jälkeen voit:
 - Käyttää **Design System Aesthetics** -taitoa tyypin, värien ja väljiyden hienosäätöön.

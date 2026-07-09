@@ -3,13 +3,13 @@ title: Campo de Checkout e DNS do Cliente
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gestión de Campos de Pago y DNS del Cliente
+# Gestión de Campos de Pago y DNS del Cliente {#checkout-field-and-customer-dns-management}
 
-## El campo de selección de dominio en el checkout
+## El campo de selección de dominio en el checkout {#the-domain-selection-checkout-field}
 
 El campo **Selección de Dominio** é un elemento del checkout que da a os os clientes a elección sobre como queren obtener o dominio do seu sitio. Añádeselo a calquera formulario de checkout para activar a venta de dominios.
 
-### Añadir o campo a un formulario de checkout
+### Añadir o campo a un formulario de checkout {#adding-the-field-to-a-checkout-form}
 
 1. Ve a **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Abre ou cría un formulario de checkout
@@ -18,7 +18,7 @@ El campo **Selección de Dominio** é un elemento del checkout que da a os os cl
 5. Configura as opcións do campo (véase a continuación)
 6. Guarda o formulario
 
-### Opcións do campo
+### Opcións do campo {#field-options}
 
 **Modos de dominio** — Escolhe que pestañas ve o cliente. Cada modo pode activar ou desativar de forma independente:
 
@@ -32,7 +32,7 @@ El campo **Selección de Dominio** é un elemento del checkout que da a os os cl
 
 **Produto de dominio** — Opcionalmente fija este campo a un produto de dominio específico. Se non se establece, o addon selecciona automáticamente o produto que coincida en base ao TLD (extensión del dominio) que busca o cliente.
 
-### Campos de contacto do registrador
+### Campos de contacto do registrador {#registrant-contact-fields}
 
 Quando un cliente selecciona a pestaña **Registrar Novo Dominio**, o formulario de checkout añade campos de contacto do registrador de forma inline:
 
@@ -42,11 +42,11 @@ Quando un cliente selecciona a pestaña **Registrar Novo Dominio**, o formulario
 
 Estes son os que todos os registadores exigen e são validados antes de se fazer a chamada da API de registo. Os números de telemóvel são formatados automaticamente para o formato internacional `+CC.NNN` que os registadores esperam.
 
-### URL do site gerada automaticamente
+### URL do site gerada automaticamente {#auto-generated-site-url}
 
 Quando un customer se regista ou mapeia um domínio, o campo URL do site é preenchido automaticamente com base no domínio escolhido. Os customers não precisam de preencher um campo de URL separado.
 
-### Comportamento da pesquisa
+### Comportamento da pesquisa {#search-behaviour}
 
 - A disponibilidade do domínio é verificada em tempo real com AJAX enquanto o customer digita
 - Sugestões de TLDs alternativos são mostradas quando o domínio preferido não está disponível
@@ -76,11 +76,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Gestão de DNS do Customer
+## Gestão de DNS do Customer {#customer-dns-management}
 
 Os customers podem gerir os registos DNS para os seus domínios registados a partir da página **Min Conta**, sob o registo do domínio.
 
-### Tipos de registos suportados
+### Tipos de registos suportados {#supported-record-types}
 
 | Tipo | Uso |
 |---|---|
@@ -90,11 +90,11 @@ Os customers podem gerir os registos DNS para os seus domínios registados a par
 | **MX** | Definir o servidor de troca de correio |
 | **TXT** | Adicionar registos SPF, DMARC, verificação ou outros registos de texto |
 
-### Quais os provedores que suportam a gestão de DNS?
+### Quais os provedores que suportam a gestão de DNS? {#which-providers-support-dns-management}
 
 A administración de DNS (añadir, editar, eliminar registros) está disponible con **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** e **Openprovider**. Los dominios de **Hostinger** se poden actualizar os servidores de nomes a través do Domain Seller; os registros de DNS para dominios albergados son gestionados pola integración central de mapeo de dominios de Hostinger. Os dominios de Namecheap, GoDaddy e NameSilo mostran o estado e a data de caducidade, pero o DNS debe ser gestionado directamente no no panel de control do registrador.
 
-### Registros de DNS predeterminados
+### Registros de DNS predeterminados {#default-dns-records}
 
 Podes configurar os registros de DNS predeterminados que se aplican automáticamente cando un dominio se regista. Ve a **Settings › Domain Seller › Default DNS Records**.
 
@@ -117,6 +117,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: visualización e edición de DNS
+### Admin: visualización e edición de DNS {#admin-viewing-and-editing-dns}
 
 Os administradores de rede poden visualizar e editar os registros de DNS para cualquier dominio do cliente desde a páxina de edición do dominio en **Network Admin › Ultimate Multisite › Domains**.

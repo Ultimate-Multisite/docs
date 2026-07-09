@@ -4,12 +4,12 @@ title: Ketso - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Ketso: wu_domain_mapping_load
+# Ketso: wu_domain_mapping_load {#action-wudomainmappingload}
 
 E qalisoa ka mor'a hore Domain Mapping ya mantlha ya rona e laetswe
 
 Kenella ho sena ho sebetsana le tshebetso efe kapa efe ya katoloso.
 
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/class-domain-mapping.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-domain-mapping.php#L175) moleng wa 175

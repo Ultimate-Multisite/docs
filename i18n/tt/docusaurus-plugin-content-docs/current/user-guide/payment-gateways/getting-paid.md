@@ -3,13 +3,13 @@ title: Түләү алу
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Түләүләр алу (v2)
+# Түләүләр алу (v2) {#getting-paid-v2}
 
 _**МӨҺИМ ИСКӘРМӘ: Бу мәкалә Ultimate Multisite 2.x версиясенә карый.**_
 
 Ultimate Multisite эчендә урнаштырылган әгъзалык һәм исәп-хисап системасына ия. Безнең исәп-хисап системасы эшләсен өчен, без электрон сәүдәдә кулланыла торган иң киң таралган түләү шлюзларын интеграцияләдек. Ultimate Multisite эчендәге килешү буенча түләү шлюзлары — _Stripe_ , _PayPal_ , һәм Кулдан түләү. Сез шулай ук, тиешле өстәмәләрен урнаштырып, түләүләр кабул итү өчен _WooCommerce_ , _GoCardless_ һәм _Payfast_ куллана аласыз.
 
-## Төп көйләүләр
+## Төп көйләүләр {#basic-settings}
 
 Сез бу түләү шлюзларының теләсә кайсын Ultimate Multisite түләү көйләүләре астында көйли аласыз. Аны **Ultimate Multisite менюсы > Көйләүләр > Түләүләр** юлы белән таба аласыз.
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0 авто-яңарту кабызылган кабат
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Шлюзларны кайдан табарга:
+## Шлюзларны кайдан табарга: {#where-to-find-the-gateways}
 
 Сез түләү шлюзларын шул ук биттә көйли аласыз ( **Ultimate Multisite > Settings > Payments**). **актив түләү шлюзлары** астында ук сез түбәндәгеләрне күрә алачаксыз: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ һәм _Manual_.
 
@@ -67,7 +67,7 @@ Ultimate Multisite v2.13.0 авто-яңарту кабызылган кабат
 
 Хәзер, әгәр сез түләү шлюзы буларак _WooCommerce_ , _GoCardless_ яки _Payfast_ кулланырга теләсәгез, сезгә **аларның өстәмәләрен урнаштырырга һәм көйләргә** кирәк булачак.
 
-### WooCommerce өстәмәсен ничек урнаштырырга:
+### WooCommerce өстәмәсен ничек урнаштырырга: {#how-to-install-the-woocommerce-add-on}
 
 Без _Stripe_ һәм _PayPal_ кайбер илләрдә мөмкин түгел икәнен аңлыйбыз, бу Ultimate Multisite кулланучыларына безнең plugin-ны нәтиҗәле куллануны чикли яки тоткарлый. Шуңа күрә без _WooCommerce,_ белән интеграцияләү өчен өстәмә ясадык; ул бик популяр электрон сәүдә plugin-ы. Дөнья буйлап эшләүчеләр аңа төрле түләү шлюзларын интеграцияләү өчен өстәмәләр ясады. Без моның өстенлеген кулланып, Ultimate Multisite исәп-хисап системасы белән куллана алган түләү шлюзларын киңәйттек.
 
@@ -95,7 +95,7 @@ _**МӨҺИМ:** Ultimate Multisite: WooCommerce Integration WooCommerce-ның 
 
 WooCommerce Integration өстәмәсе турында күбрәк уку өчен, **монда басыгыз**.
 
-### GoCardless өстәмәсен ничек урнаштырырга:
+### GoCardless өстәмәсен ничек урнаштырырга: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ өстәмәсен урнаштыру адымнары _WooCommerce_ өстәмәсе белән диярлек бер үк. Зинһар, өстәмәләр битенә керегез һәм **Ultimate Multisite: GoCardless Gateway** өстәмәсен сайлагыз.
 
@@ -111,7 +111,7 @@ _GoCardless_ өстәмәсен урнаштыру адымнары _WooCommerce
 
 _GoCardless_ шлюзы белән ничек башларга икәнен белү өчен, **бу мәкаләне укыгыз**.
 
-### Payfast өстәмәсен ничек урнаштырырга:
+### Payfast өстәмәсен ничек урнаштырырга: {#how-to-install-the-payfast-add-on}
 
 Өстәмәләр битенә керегез һәм **Ultimate Multisite: Payfast Gateway** өстәмәсен сайлагыз.
 

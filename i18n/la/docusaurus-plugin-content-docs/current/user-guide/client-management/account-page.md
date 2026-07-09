@@ -3,7 +3,7 @@ title: Pagina account clientis
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pagina de Cuenta del Cliente (v2)
+# Pagina de Cuenta del Cliente (v2) {#your-clients-account-page-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
@@ -11,7 +11,7 @@ Cuando los clientes se suscriben a un plan en tu red, obtienen acceso a un sitio
 
 En este tutorial, te guiaremos a través de la página de cuenta del cliente y verás lo que tus clientes pueden ver y hacer dentro de ella.
 
-## La Página de Cuenta
+## La Página de Cuenta {#the-account-page}
 
 La página de cuenta se accede haciendo clic en **Account** (Cuenta) dentro del panel de control de tu cliente.
 
@@ -27,7 +27,7 @@ Después de que un cliente haga clic en ella, verá una visión general de su me
 
 También pueden cambiar la membresía a otro plan, o comprar otro paquete o servicio que ofreces. Veamos cada sección por separado.
 
-### Vistua Membrum Tuum:
+### Vistua Membrum Tuum: {#your-membership-overview}
 
 Il primum blocco subito sub nomine situerii vestrorum clientium ostendit un brevis resumé planit et servitiorum/paquetum quae cum illo acquiritur. Blocco hoc etiam numerum membrorum, quantitatem initialem pagata pro eo, quomam plan et aliquae servitia/paquetum costant et quomam plerumque pro memoria illi facta sunt. Possunt etiam videre si membrum est **Activum**, **Expiratum** vel **Cancellatum**.
 
@@ -43,7 +43,7 @@ Nunc, si vestri clientes eligant acquirere paqueta vel servitia pro memoria actu
 
 Notandum est quod codices couponis in hoc pagina mutationis membrorum non addiri possunt. Si client codicem couponis usus est pro primo acquisto membrorum, codex etiam ad hoc novo membrum applicetur.
 
-### Actualizare Adressi Facturationis:
+### Actualizare Adressi Facturationis: {#updating-the-billing-address}
 
 In pagina account, clienti possunt etiam actualizari adreem facturandi. Sufficium est quod debent cliquare in **Update** pro _Billing Address_.
 
@@ -53,7 +53,7 @@ Nova finestra apparerit ad tuem clientem. Omnia quod debet facere est plenam adr
 
 ![Form update billing address](/img/account-page/billing-address-form.png)
 
-### Mutare Template Situi:
+### Mutare Template Situi: {#changing-the-site-template}
 
 Ad permittendum vobis clientes mutare template situi, debet ad **Ultimate Multisite > Settings > Sites** ire et optionem **Allow Template Switching** activare.
 
@@ -81,7 +81,7 @@ Después de activar la confirmación y hacer clic en **Process Switch** (Procesa
 
 Los clientes también pueden usar **Reset current template** (Restablecer plantilla actual) desde este panel cuando necesiten restablecer el sitio a la plantilla asignada actualmente. Al igual que al cambiar a otra plantilla, restablecer una plantilla puede sobrescribir el contenido del sitio, por lo que los clientes solo deben confirmarlo cuando entiendan la acción de restablecimiento.
 
-### Añadir dominios personalizados:
+### Añadir dominios personalizados: {#adding-custom-domains}
 
 Sus clientes también tendrán la opción de añadir un dominio personalizado para este plan en su página de cuenta. Para permitir que sus clientes usen dominios personalizados, vaya a **Ultimate Multisite > Settings >** **Domain Mapping** (Mapeo de Dominios).
 
@@ -115,7 +115,7 @@ Post cliquem in **Next Step**, vostri clienti possunt appellare nomen domini cus
 
 Post cliquem in **Add Domain**, dominium ad account vos clienti additur. Omnia quod nunc debent facere est mutare record DNS huius domini customici in registri dominii proprii.
 
-### Mutatio Password:
+### Mutatio Password: {#changing-password}
 
 In dashboard account, vostri clienti etiam potest mutare password per cliquem in **Change Password**.
 
@@ -125,7 +125,7 @@ Hic window nunc aperiet ubi clienti vobiscum debent confere password suum actuel
 
 ![Forma mutandi password cum campi currentem et novam password](/img/account-page/change-password-form.png)
 
-### Zona Periculosa:
+### Zona Periculosa: {#danger-zone}
 
 Habemus etiam duas optiones quae in parte **Zona Periculosa** ostendae sunt: **Delare Situs** et **Delare Account**. Ambae in parte Periculosa sunt quia haec duae actiones non reverti possunt. Si vobiscum clienti suum situs vel suum account delant, eos rediucere nec possunt.
 

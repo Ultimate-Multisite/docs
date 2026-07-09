@@ -3,11 +3,11 @@ title: Constructor y Entorno de Pruebas de Plugins
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 presenta el **Plugin Builder & Sandbox System**, que permite al asistente de IA generar, activar y gestionar plugins de WordPress en tu red, todo esto a través de un entorno sandbox seguro y aislado.
 
-## Overview
+## Overview {#overview}
 
 El Plugin Builder permite al asistente de IA escribir plugins personalizados de WordPress en respuesta a peticiones en lenguaje natural. Los plugins generados se validan, almacenan y activan dentro de una capa sandbox antes de afectar en cualquier momento la funcionalidad del sitio en vivo.
 
@@ -17,7 +17,7 @@ Los casos de uso incluyen:
 - Crear prototipos de funcionalidades que requieren hooks de WordPress o tipos de contenido personalizados (custom post types).
 - Crear scripts de automatización de corta duración para operaciones por lotes.
 
-## Generating a Plugin via AI
+## Generating a Plugin via AI {#generating-a-plugin-via-ai}
 
 Para generar un plugin, abre la interfaz de chat de Gratis AI Agent y describe lo que necesitas. Por ejemplo:
 
@@ -32,7 +32,7 @@ La IA hará lo siguiente:
 
 Puedes refinar el resultado haciendo preguntas de seguimiento en el mismo hilo de conversación antes de activarlo.
 
-## Sandbox Activation
+## Sandbox Activation {#sandbox-activation}
 
 Activar un plugin generado en el sandbox es diferente a activarlo en la red en vivo. El sandbox:
 
@@ -48,7 +48,7 @@ Para activar un plugin en el sandbox, haz clic en el botón **Activate in Sandbo
 
 Un mensaje de estado confirma si la activación tuvo éxito o falló. En caso de fallo, el registro de errores se mostrará en el hilo de chat.
 
-## Managing Generated Plugins
+## Managing Generated Plugins {#managing-generated-plugins}
 
 Los plugins generados se listan en **Gratis AI Agent → Plugin Builder → Manage Plugins**. Desde esta pantalla puedes:
 
@@ -64,7 +64,7 @@ Los plugins generados se listan en **Gratis AI Agent → Plugin Builder → Mana
 **Install on network** despliega el plugin generado en tu multisite de WordPress en vivo. Revisa el código del plugin antes de continuar. Gratis AI Agent solicitará confirmación antes de completar una instalación en vivo.
 :::
 
-## Installing a Generated Plugin on the Network
+## Installing a Generated Plugin on the Network {#installing-a-generated-plugin-on-the-network}
 
 Cuando estés satisfecho con un plugin en el sandbox, puedes instalarlo en la red en vivo:
 
@@ -78,7 +78,7 @@ Alternativamente, usa el comando de barra en la interfaz de chat:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin Updates
+## Plugin Updates {#plugin-updates}
 
 Para actualizar un plugin generado, describe el cambio al asistente de IA en una nueva conversación:
 
@@ -86,7 +86,7 @@ Para actualizar un plugin generado, describe el cambio al asistente de IA en una
 
 La IA genera una nueva versión, que aparece en el sandbox junto a la versión actual. Tú revisas la diferencia (diff) y confirmas antes de que se aplique la actualización.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 El Plugin Builder utiliza un **HookScanner** integrado para analizar los hooks y filtros registrados por cada plugin generado. La salida de HookScanner se muestra en la respuesta del chat e incluye:
 
@@ -96,7 +96,7 @@ El Plugin Builder utiliza un **HookScanner** integrado para analizar los hooks y
 
 Esto te ayuda a entender el comportamiento de un plugin antes de activarlo.
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - Los plugins generados se almacenan por separado de los plugins instalados manualmente y no son accesibles a través de la pantalla estándar de gestión de plugins de WordPress hasta que los instales explícitamente en la red.
 - El sandbox utiliza validación de rutas para prevenir la travesía de directorios al escribir archivos de plugin.

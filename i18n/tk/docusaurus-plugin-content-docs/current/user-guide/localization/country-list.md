@@ -3,7 +3,7 @@ title: Ýurtlar Sazlary
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite ýurt sanawyny dürlilemek
+# Ultimate Multisite ýurt sanawyny dürlilemek {#re-ordering-the-ultimate-multisite-country-list}
 
 Ýurt saýlamak üçin düşündiriş (dropdown) sanawy türkmençe ýazylan ýurt adlarynyň iňlis variantlaryna görä alfabetik tertibe goýar. Bu, käwagi kompaniýanyň we/ýa köp müşderileriniň ana ýurtlaryny uly ýurt adlarynyň ortasyna saklanyp biljekdigini aňladyp biler.
 

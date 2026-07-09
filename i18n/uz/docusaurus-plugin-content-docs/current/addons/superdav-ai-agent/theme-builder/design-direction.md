@@ -3,17 +3,17 @@ title: Dizayn yo‘nalishi
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dizayn yo‘nalishi
+# Dizayn yo‘nalishi {#design-direction}
 
 **Dizayn yo‘nalishi** bosqichi Theme Builder to‘liq mavzuni yaratishidan oldin mavzuyingizning vizual dizaynini ko‘rib chiqish, takomillashtirish va yakunlash imkonini beradi.
 
-## Umumiy ko‘rinish
+## Umumiy ko‘rinish {#overview}
 
 Discovery Interview yakunlangach, Theme Builder dizayn yo‘nalishingizni **desktop va mobil oldindan ko‘rish renderingi** bilan taqdim etadi. Bu mavzuga o‘tishdan oldin dizayningiz turli qurilmalarda aynan qanday ko‘rinishini ko‘rish imkonini beradi.
 
-## Dizayn yo‘nalishi komponentlari
+## Dizayn yo‘nalishi komponentlari {#design-direction-components}
 
-### 1. Rang palitrasi
+### 1. Rang palitrasi {#1-color-palette}
 
 Mavzuyingizning rang sxemasi, jumladan:
 
@@ -23,7 +23,7 @@ Mavzuyingizning rang sxemasi, jumladan:
 - **Neytral ranglar** — fonlar va matn uchun kulranglar hamda oqlar
 - **Matn rangi** — o‘qilishi qulay bo‘lishi uchun asosiy matn rangi
 
-### 2. Tipografiya
+### 2. Tipografiya {#2-typography}
 
 Shrift tanlovlari:
 
@@ -33,14 +33,14 @@ Shrift tanlovlari:
 - **Qator balandligi** — o‘qilishi qulay bo‘lishi uchun qatorlar orasidagi masofa
 - **Shrift vaznlari** — qalin, odatiy va yengil variantlar
 
-### 3. Joylashuv va oraliqlar
+### 3. Joylashuv va oraliqlar {#3-layout-and-spacing}
 
 - **Konteyner kengligi** — kontent uchun maksimal kenglik
 - **Ichki va tashqi oraliqlar** — elementlar atrofidagi masofa
 - **Grid tizimi** — moslashuvchan dizayn uchun ustunli joylashuv
 - **Komponentlar orasidagi masofa** — UI elementlari orasidagi masofa
 
-### 4. Vizual elementlar
+### 4. Vizual elementlar {#4-visual-elements}
 
 - **Tugma uslublari** — asosiy, ikkilamchi va uchinchi darajali tugma dizaynlari
 - **Karta dizaynlari** — kontent bloklari uchun joylashuvlar
@@ -48,9 +48,9 @@ Shrift tanlovlari:
 - **Chegaralar va soyalar** — nozik vizual chuqurlik
 - **Hover effektlari** — interaktiv holat uslublari
 
-## Oldindan ko‘rish renderingi
+## Oldindan ko‘rish renderingi {#preview-rendering}
 
-### Desktop oldindan ko‘rish
+### Desktop oldindan ko‘rish {#desktop-preview}
 
 Desktop oldindan ko‘rish dizayningizni to‘liq kenglikda ko‘rsatadi (odatda 1200px yoki kengroq):
 
@@ -59,7 +59,7 @@ Desktop oldindan ko‘rish dizayningizni to‘liq kenglikda ko‘rsatadi (odatda
 - Katta tipografiya va oraliqlar
 - Barcha vizual elementlar to‘liq o‘lchamda
 
-### Mobil oldindan ko‘rish
+### Mobil oldindan ko‘rish {#mobile-preview}
 
 Mobil oldindan ko‘rish dizayningizni mobil kenglikda ko‘rsatadi (odatda 375px):
 
@@ -68,7 +68,7 @@ Mobil oldindan ko‘rish dizayningizni mobil kenglikda ko‘rsatadi (odatda 375p
 - Moslashtirilgan tipografiya va oraliqlar
 - Tegishga qulay tugma o‘lchamlari
 
-### Moslashuvchan breakpointlar
+### Moslashuvchan breakpointlar {#responsive-breakpoints}
 
 Theme Builder oldindan ko‘rishlarni ushbu breakpointlarda render qiladi:
 
@@ -79,9 +79,9 @@ Theme Builder oldindan ko‘rishlarni ushbu breakpointlarda render qiladi:
 | **Desktop** | 1200px | To‘liq kenglikdagi desktop |
 | **Katta Desktop** | 1920px | Ultra-keng displey |
 
-## Dizayningizni takomillashtirish
+## Dizayningizni takomillashtirish {#refining-your-design}
 
-### O‘zgartirishlar kiritish
+### O‘zgartirishlar kiritish {#making-adjustments}
 
 Dizayn yo‘nalishingizni quyidagicha takomillashtirishingiz mumkin:
 
@@ -91,7 +91,7 @@ Dizayn yo‘nalishingizni quyidagicha takomillashtirishingiz mumkin:
 4. **Joylashuvni yangilash** — konteyner kengliklari va grid ustunlarini o‘zgartirish
 5. **Elementlarni moslashtirish** — tugma uslublari, karta dizaynlari va hokazolarni o‘zgartirish
 
-### Oldindan ko‘rish yangilanishlari
+### Oldindan ko‘rish yangilanishlari {#preview-updates}
 
 O‘zgarishlar real vaqtda aks etadi:
 
@@ -100,7 +100,7 @@ O‘zgarishlar real vaqtda aks etadi:
 - Barcha moslashuvchan breakpointlar yangilanadi
 - O‘zgarishlarni tekshirish uchun oldindan ko‘rishlar orasida almashishingiz mumkin
 
-### Taqqoslash ko‘rinishi
+### Taqqoslash ko‘rinishi {#comparison-view}
 
 Dizayn yo‘nalishingizni quyidagilar bilan taqqoslang:
 
@@ -108,7 +108,7 @@ Dizayn yo‘nalishingizni quyidagilar bilan taqqoslang:
 - **Raqobatchi dizaynlari** — ilhom olingan saytlar bilan taqqoslang
 - **Oldingi versiyalar** — avvalgi dizayn yo‘nalishlariga qayting
 
-## Dizayn yo‘nalishini tasdiqlash
+## Dizayn yo‘nalishini tasdiqlash {#design-direction-approval}
 
 Dizayningizdan mamnun bo‘lgach:
 
@@ -118,7 +118,7 @@ Dizayningizdan mamnun bo‘lgach:
 4. **Joylashuvni tasdiqlang** — oraliqlar va tekislanishni tekshiring
 5. **Dizaynni tasdiqlang** — mavzu yaratishga o‘ting
 
-## Keyingi qadamlar
+## Keyingi qadamlar {#next-steps}
 
 Dizayn yo‘nalishingizni tasdiqlaganingizdan so‘ng:
 
@@ -127,7 +127,7 @@ Dizayn yo‘nalishingizni tasdiqlaganingizdan so‘ng:
 3. WordPress customizer yordamida yanada moslashtirishingiz mumkin
 4. [Hospitality menyulari](./hospitality-menus.md) yoki boshqa funksiyalarga o‘ting
 
-## Eng yaxshi amaliyotlar
+## Eng yaxshi amaliyotlar {#best-practices}
 
 - **Haqiqiy qurilmalarda sinang** — imkon bo‘lsa, haqiqiy telefon va planshetlardan foydalaning
 - **O‘qilishi qulayligini tekshiring** — matn barcha o‘lchamlarda o‘qilishi qulayligiga ishonch hosil qiling
@@ -135,30 +135,30 @@ Dizayn yo‘nalishingizni tasdiqlaganingizdan so‘ng:
 - **Unumdorlikni hisobga oling** — tezlik uchun rasmlar va shriftlarni optimallashtiring
 - **Kontentni rejalashtiring** — joylashuv haqiqiy kontentingiz bilan ishlashiga ishonch hosil qiling
 
-## Muammolarni bartaraf etish
+## Muammolarni bartaraf etish {#troubleshooting}
 
-### Oldindan ko‘rish yangilanmayapti
+### Oldindan ko‘rish yangilanmayapti {#preview-not-updating}
 
 - Sahifani yangilang
 - Brauzer keshini tozalang
 - Boshqa brauzerni sinab ko‘ring
 - Internet ulanishini tekshiring
 
-### Ranglar boshqacha ko‘rinmoqda
+### Ranglar boshqacha ko‘rinmoqda {#colors-look-different}
 
 - Monitor rang sozlamalarini tekshiring
 - Boshqa qurilmalarda sinab ko‘ring
 - Accessibility vositalari bilan rang kontrastini tekshiring
 - Rang ko‘rligi simulyatorlarini ko‘rib chiqing
 
-### Tipografiya muammolari
+### Tipografiya muammolari {#typography-issues}
 
 - Shrift fayllari yuklanayotganini tekshiring
 - Turli breakpointlarda shrift o‘lchamini tekshiring
 - Haqiqiy kontent bilan sinang
 - O‘qilishi qulayligi uchun qator uzunligini hisobga oling
 
-## Tegishli hujjatlar
+## Tegishli hujjatlar {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — dizayn ma’lumotlarini to‘plash
 - [Hospitality menyulari](./hospitality-menus.md) — tuzilmali menyu sahifalarini yaratish

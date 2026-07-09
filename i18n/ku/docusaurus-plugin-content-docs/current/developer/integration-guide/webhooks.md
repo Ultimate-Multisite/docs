@@ -3,11 +3,11 @@ title: Rêvebirina Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Birêvebirina webhookan
+# Birêvebirina webhookan {#webhook-handling}
 
 Xalên dawî yên webhooka taybet biafirînin da ku bûyeran ji xizmetên derveyî bistînin û dane bi Ultimate Multisite re hevdem bikin.
 
-## Xalê Dawî yê Webhooka Taybet
+## Xalê Dawî yê Webhooka Taybet {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Têbînîyên Ewlehiyê
+## Têbînîyên Ewlehiyê {#security-considerations}
 
 - Her dem îmzeyên webhookê bi HMAC an bi veşartiyeke hevpar piştrast bikin
 - Li ser rêya REST ya xwe `permission_callback` bi kar bînin — di productionê de qet wê wek `__return_true` danênin

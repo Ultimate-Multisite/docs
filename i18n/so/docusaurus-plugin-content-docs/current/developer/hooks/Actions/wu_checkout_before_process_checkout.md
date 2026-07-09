@@ -4,19 +4,19 @@ title: Ficil - wu_checkout_before_process_checkout
 sidebar_label: wu_checkout_before_process_checkout
 _i18n_hash: 7d37900d450aaae15aba34a9a2f50ff5
 ---
-# Ficil: wu_checkout_before_process_checkout
+# Ficil: wu_checkout_before_process_checkout {#action-wucheckoutbeforeprocesscheckout}
 
 Ka hor inta aynaan habayn checkout-ka.
 
-## Parameters
+## Parameters {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
 | $checkout | `\Checkout` | Instance-ka checkout-ka hadda jira; |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 2.0.11
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L2324) safka 2324

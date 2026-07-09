@@ -3,7 +3,7 @@ title: Fomu za Malipo
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fomu za Malipo
+# Fomu za Malipo {#checkout-forms}
 
 Fomu za Malipo ni njia rahisi na nyumbufu ya kujaribu mbinu tofauti unapojaribu kubadilisha wateja wapya.
 
@@ -36,13 +36,13 @@ Vinginevyo, unaweza kuhariri au kunakili fomu ulizo nazo tayari kwa kubofya chag
 
 ![Vitendo vinavyoonekana unapolea juu ya fomu ya malipo](/img/config/checkout-form-hover-actions.png)
 
-#### Muhtasari wa Kihariri cha Fomu ya Malipo
+#### Muhtasari wa Kihariri cha Fomu ya Malipo {#checkout-form-editor-overview}
 
 Kihariri cha fomu ya malipo hutoa kiolesura cha kina cha kujenga fomu zako za usajili. Huu hapa ni muhtasari wa mpangilio wa kihariri:
 
 ![Muhtasari wa kihariri cha Fomu ya Malipo](/img/config/checkout-form-editor-overview.png)
 
-### Kuhariri Fomu ya Malipo
+### Kuhariri Fomu ya Malipo {#editing-a-checkout-form}
 
 Unaweza kuunda fomu za malipo kwa madhumuni tofauti. Katika mfano huu tutashughulikia fomu ya usajili.
 
@@ -112,7 +112,7 @@ Ili kupata shortcode ya fomu yako bofya Tengeneza Shortcode na unakili matokeo y
 
 ![Kitufe cha kuhifadhi chenye shortcode](/img/config/checkout-form-save.png)
 
-### Sehemu ya Jedwali la Bei
+### Sehemu ya Jedwali la Bei {#the-pricing-table-field}
 
 Sehemu ya **Jedwali la Bei** huonyesha bidhaa zako kwenye fomu ya malipo ili wateja waweze kuchagua mpango. Unapohariri sehemu hii, unaweza kusanidi chaguo kadhaa:
 
@@ -130,17 +130,17 @@ Hivi ndivyo jedwali la bei linavyoonekana kwenye fomu ya usajili ya upande wa mb
 
 Ukiongeza bidhaa kwenye Jedwali la Bei kabla ya fomu kujumuisha sehemu zinazohitajika kukamilisha mtiririko wa checkout wa bidhaa hiyo, kihariri sasa huonyesha onyo. Tumia onyo hilo kuongeza sehemu inayohitajika iliyokosekana kabla ya kuchapisha au kuhifadhi mabadiliko kwa fomu hai ya usajili.
 
-### Kuongeza Kigeuzi cha Kuchagua Kipindi
+### Kuongeza Kigeuzi cha Kuchagua Kipindi {#adding-a-period-selection-toggle}
 
 Ikiwa umesanidi [Tofauti za Bei](creating-your-first-subscription-product#price-variations) kwenye bidhaa zako (k.m. bei ya kila mwezi na ya kila mwaka), unaweza kuongeza sehemu ya **Uchaguzi wa Kipindi** kwenye fomu yako ya checkout. Sehemu hii huonyesha kigeuzi kinachoruhusu wateja kubadilisha kati ya vipindi vya bili, na jedwali la bei husasishwa kwa nguvu papo hapo.
 
-#### Hatua ya 1: Sanidi Tofauti za Bei kwenye Bidhaa Zako
+#### Hatua ya 1: Sanidi Tofauti za Bei kwenye Bidhaa Zako {#step-1-set-up-price-variations-on-your-products}
 
 Kabla ya kuongeza sehemu ya Uchaguzi wa Kipindi, hakikisha bidhaa zako zimesanidiwa na tofauti za bei. Nenda kwenye **Ultimate Multisite > Bidhaa**, hariri bidhaa, na uende kwenye kichupo cha **Tofauti za Bei** ili kuongeza vipindi mbadala vya bili (k.m. Kila Mwaka kwa bei iliyopunguzwa).
 
 ![Kichupo cha Tofauti za Bei kwenye bidhaa](/img/config/product-price-variations-tab.png)
 
-#### Hatua ya 2: Ongeza Sehemu ya Uchaguzi wa Kipindi kwenye Fomu Yako ya Checkout
+#### Hatua ya 2: Ongeza Sehemu ya Uchaguzi wa Kipindi kwenye Fomu Yako ya Checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Nenda kwenye **Ultimate Multisite > Fomu za Checkout** na uhariri fomu yako ya checkout.
 
@@ -163,13 +163,13 @@ Kabla ya kuongeza sehemu ya Uchaguzi wa Kipindi, hakikisha bidhaa zako zimesanid
 
 7. Bofya **Hifadhi Sehemu**.
 
-#### Hatua ya 3: Weka Sehemu Juu ya Jedwali la Bei
+#### Hatua ya 3: Weka Sehemu Juu ya Jedwali la Bei {#step-3-position-the-field-above-the-pricing-table}
 
 Kwa matumizi bora ya mtumiaji, hakikisha sehemu ya Uchaguzi wa Kipindi inaonekana **kabla** ya sehemu ya Jedwali la Bei katika hatua yako ya checkout. Unaweza kuburuta sehemu ili kuzipanga upya katika kihariri cha fomu ya checkout. Kwa njia hii, wateja kwanza huchagua kipindi cha bili kisha huona bei za kipindi hicho.
 
 ![Kihariri cha fomu ya checkout kikionyesha mpangilio wa sehemu](/img/config/checkout-form-editor-with-fields.png)
 
-#### Jinsi Inavyofanya Kazi Upande wa Mbele
+#### Jinsi Inavyofanya Kazi Upande wa Mbele {#how-it-works-on-the-frontend}
 
 Baada ya kusanidiwa, wateja wanaotembelea ukurasa wako wa usajili wataona kiteuzi cha kipindi juu ya jedwali la bei. Wanapobofya kipindi tofauti cha bili:
 
@@ -177,7 +177,7 @@ Baada ya kusanidiwa, wateja wanaotembelea ukurasa wako wa usajili wataona kiteuz
   * Ikiwa **Lazimisha Muda Tofauti** imezimwa kwenye sehemu ya Jedwali la Bei, bidhaa zisizo na tofauti ya bei kwa kipindi kilichochaguliwa zitafichwa.
   * Ikiwa **Lazimisha Muda Tofauti** imewashwa, bidhaa zote hubaki kuonekana hata kama hazina tofauti kwa kipindi kilichochaguliwa (zitaonyesha bei yake chaguo-msingi).
 
-#### Kuchagua Mapema Kipindi cha Bili kupitia URL
+#### Kuchagua Mapema Kipindi cha Bili kupitia URL {#pre-selecting-a-billing-period-via-url}
 
 Unaweza pia kuchagua mapema bidhaa na kipindi cha bili kupitia URL. Ultimate Multisite inasaidia miundo hii ya URL:
 
@@ -185,11 +185,11 @@ Unaweza pia kuchagua mapema bidhaa na kipindi cha bili kupitia URL. Ultimate Mul
   * `/register/premium/12` — Huchagua mapema bidhaa na muda wa miezi 12
   * `/register/premium/1/year` — Huchagua mapema bidhaa yenye muda wa mwaka 1
 
-### Sehemu ya Uchaguzi wa Kiolezo
+### Sehemu ya Uchaguzi wa Kiolezo {#the-template-selection-field}
 
 Sehemu ya **Uchaguzi wa Kiolezo** huruhusu wateja kuchagua kiolezo cha tovuti wakati wa checkout. Sasa imejumuishwa kwa chaguo-msingi katika violezo vya fomu ya checkout vya **hatua moja** na **hatua nyingi** vilivyoongezwa katika Ultimate Multisite v2.6.1.
 
-#### Kuongeza sehemu kwa mkono
+#### Kuongeza sehemu kwa mkono {#adding-the-field-manually}
 
 Ikiwa unafanya kazi na fomu iliyoundwa kabla ya v2.6.1, au iliyoanza kutoka kiolezo tupu:
 
@@ -200,11 +200,11 @@ Ikiwa unafanya kazi na fomu iliyoundwa kabla ya v2.6.1, au iliyoanza kutoka kiol
    - **Lebo** — Kichwa ambacho wateja huona juu ya gridi ya violezo (k.m. "Chagua kiolezo cha tovuti").
    - **Inahitajika** — Ikiwa wateja lazima wachague kiolezo kabla ya kuendelea.
 
-#### Jinsi inavyofanya kazi
+#### Jinsi inavyofanya kazi {#how-it-works}
 
 Mteja anapochagua kiolezo wakati wa checkout, Ultimate Multisite hukitumia inapounda tovuti yao mpya. Violezo vinavyoonyeshwa vinatoka kwenye orodha yako ya **Violezo vya Tovuti** (**Ultimate Multisite > Violezo vya Tovuti**). Violezo tu vilivyowekwa kuwa vinapatikana kwa wateja ndivyo huonekana hapa.
 
-### Vikoa msingi vya fomu ya checkout
+### Vikoa msingi vya fomu ya checkout {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 huchukulia vikoa vilivyosanidiwa kwenye sehemu za **URL ya Tovuti** za fomu ya checkout kama vikoa msingi vya mtandao. Tumia mipangilio ya vikoa vinavyopatikana ya sehemu hiyo unapotaka wateja kuunda tovuti chini ya kikoa kimoja au zaidi vya usajili vinavyoshirikiwa, kama vile `example.com` na `sites.example.com`.
 
@@ -212,6 +212,6 @@ Vikoa vikuu vya pamoja vya checkout-form havichukuliwi kama ramani za vikoa maal
 
 Hifadhi vikoa maalum kwa wenyeji waliopangwa kwa kila mteja, kama vile `customer-example.com`. Hifadhi vikoa vikuu vya checkout-form kwa wenyeji wa usajili wa pamoja ambao tovuti nyingi zinaweza kutumia.
 
-#### Kuondoa field
+#### Kuondoa field {#removing-the-field}
 
 Ikiwa hutoa violezo vya tovuti, ondoa field ya Template Selection kutoka kwenye form yako. Wateja kisha watapokea kiolezo chochote chaguomsingi kilichosanidiwa chini ya **Ultimate Multisite > Settings > Site Templates**.

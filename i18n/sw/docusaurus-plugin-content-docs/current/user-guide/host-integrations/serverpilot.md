@@ -3,17 +3,17 @@ title: Muunganiko wa ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Kuunganisha ServerPilot
+# Kuunganisha ServerPilot {#serverpilot-integration}
 
-## Muhtasari
+## Muhtasari {#overview}
 ServerPilot ni huduma ya wingu kwa kuhost tovuti za WordPress na tovuti nyingine za PHP kwenye seva za DigitalOcean, Amazon, Google, au mtoa huduma mwingine yeyote wa seva. Uunganishaji huu unawezesha usawazishaji wa moja kwa moja wa domain na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na ServerPilot.
 
-## Vipengele
+## Vipengele {#features}
 - Usawazishaji wa moja kwa moja wa domain
 - Usimamizi wa cheti cha SSL na Let's Encrypt
 - Uhuishaji wa moja kwa moja wa SSL
 
-## Mahitaji
+## Mahitaji {#requirements}
 Constant zifuatazo lazima zifafanuliwe katika faili yako ya `wp-config.php`:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## Maelekezo ya Usanidi
+## Maelekezo ya Usanidi {#setup-instructions}
 
-### 1. Pata Taarifa Zako za API za ServerPilot
+### 1. Pata Taarifa Zako za API za ServerPilot {#1-get-your-serverpilot-api-credentials}
 
 1. Ingia kwenye dashibodi yako ya ServerPilot
 2. Nenda "Account" > "API"
 3. Unda API key mpya ikiwa huna tayari
 4. Nakili Client ID yako na API Key
 
-### 2. Pata App ID Yako
+### 2. Pata App ID Yako {#2-get-your-app-id}
 
 1. Katika dashibodi yako ya ServerPilot, nenda "Apps"
 2. Chagua app ambapo multisite yako ya WordPress inahostishwa
 3. App ID inaonekana kwenye URL: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Ongeza Constant kwenye wp-config.php
+### 3. Ongeza Constant kwenye wp-config.php {#3-add-constants-to-wp-configphp}
 
 Ongeza constant zifuatazo kwenye faili yako ya `wp-config.php`:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. Wezesha Uunganishaji
+### 4. Wezesha Uunganishaji {#4-enable-the-integration}
 
 1. Katika admin yako ya WordPress, nenda Ultimate Multisite > Settings
 2. Nenda kwenye tab ya "Domain Mapping"
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. Wezesha uunganishaji wa ServerPilot
 5. Bofya "Save Changes"
 
-## Jinsi Inavyofanya Kazi
+## Jinsi Inavyofanya Kazi {#how-it-works}
 
-### Usawazishaji wa Domain
+### Usawazishaji wa Domain {#domain-syncing}
 
 Domain inapounganishwa katika Ultimate Multisite:
 
@@ -66,7 +66,7 @@ Domain inapounganishwa katika Ultimate Multisite:
 3. Unatuma orodha iliyosasishwa kwa ServerPilot kupitia API
 4. ServerPilot inasasisha orodha ya domain kwa programu yako
 
-### Usimamizi wa Cheti cha SSL
+### Usimamizi wa Cheti cha SSL {#ssl-certificate-management}
 
 Baada ya domain kusawazishwa:
 
@@ -74,27 +74,27 @@ Baada ya domain kusawazishwa:
 2. ServerPilot inashughulikia utoaji na usakinishaji wa cheti cha SSL kwa kutumia Let's Encrypt
 3. ServerPilot pia inashughulikia uhuishaji wa moja kwa moja wa vyeti vya SSL
 
-## Uthibitishaji wa Cheti cha SSL
+## Uthibitishaji wa Cheti cha SSL {#ssl-certificate-verification}
 
 Uunganishaji umesanidiwa kuongeza idadi ya majaribio ya uthibitishaji wa cheti cha SSL kwa ServerPilot, kwani inaweza kuchukua muda kwa ServerPilot kutoa na kusakinisha vyeti vya SSL. Kwa chaguo-msingi, itajaribu hadi mara 5, lakini hii inaweza kurekebishwa kwa kutumia filter.
 
-## Kutatua Matatizo
+## Kutatua Matatizo {#troubleshooting}
 
-### Matatizo ya Muunganisho wa API
+### Matatizo ya Muunganisho wa API {#api-connection-issues}
 - Hakikisha kuwa Client ID yako na API Key ni sahihi
 - Angalia kuwa App ID yako ni sahihi
 - Hakikisha kuwa akaunti yako ya ServerPilot ina ruhusa zinazohitajika
 
-### Matatizo ya Cheti cha SSL
+### Matatizo ya Cheti cha SSL {#ssl-certificate-issues}
 - ServerPilot inahitaji domain ziwe na rekodi sahihi za DNS zinazoelekeza kwenye seva yako kabla ya kutoa vyeti vya SSL
 - Ikiwa vyeti vya SSL havitolei, angalia kuwa domain zako zinaelekeza vizuri kwenye anwani ya IP ya seva yako
 - Inaweza kuchukua muda kwa ServerPilot kutoa na kusakinisha vyeti vya SSL (kawaida dakika 5-15)
 
-### Domain Haijaongezwa
+### Domain Haijaongezwa {#domain-not-added}
 - Angalia kumbukumbu za Ultimate Multisite kwa ujumbe wowote wa kosa
 - Hakikisha kuwa domain haijawahi kuongezwa kwenye ServerPilot
 - Hakikisha kuwa mpango wako wa ServerPilot unasaidia idadi ya domain unazozongeza
 
-### Kuondoa Domain
+### Kuondoa Domain {#domain-removal}
 - Kwa sasa, API ya ServerPilot haitoi njia ya kuondoa domain moja moja
 - Uunganishaji wa domain unapoondolewa katika Ultimate Multisite, uunganishaji utasasisha orodha ya domain katika ServerPilot ili kuondoa domain iliyoondolewa

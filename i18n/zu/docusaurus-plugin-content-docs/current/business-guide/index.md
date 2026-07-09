@@ -3,13 +3,13 @@ title: Yakha Ibhizinisi Lewebhusayithi Eligxile Emkhakheni Othile
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Yakha Ibhizinisi Lewebhusayithi Eligxile Emkhakheni nge-Ultimate Multisite
+# Yakha Ibhizinisi Lewebhusayithi Eligxile Emkhakheni nge-Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Abantu abaningi abazama ukuthengisa amawebhusayithi bancintisana ngentengo ne-Wix, Squarespace, nezinkulungwane zama-freelancer. Bayahluleka. Labo abaphumelelayo bakhetha izethameli ezithile, bakhe isixazululo esenzelwe lezo zethameli, bese bekhokhisa ngenani abalilethayo.
 
 Lesi sifundo sikufundisa ukuthi ukwenze kanjani lokho ngqo usebenzisa i-Ultimate Multisite.
 
-## Ozokwakha
+## Ozokwakha {#what-you-will-build}
 
 Kuyo yonke le khosi uzokwakha inethiwekhi yangempela, esebenzayo ebizwa ngokuthi **FitSite** -- inkundla yewebhusayithi eyakhelwe ngokukhethekile ama-studio okufaneleka komzimba, abaqeqeshi bomuntu siqu, nabanikazi bama-gym.
 
@@ -23,7 +23,7 @@ Ekupheleni kwesifundo sokugcina, i-FitSite izoba inkundla ephelele egxile emkhak
 
 Uzolandela isinyathelo ngesinyathelo, futhi ekugcineni uzoba nenkundla esebenzayo kanye nolwazi lokuphinda le nqubo kunoma yimuphi umkhakha owukhethayo.
 
-## Kungani Ama-Studio Okufaneleka Komzimba?
+## Kungani Ama-Studio Okufaneleka Komzimba? {#why-fitness-studios}
 
 Besidinga isibonelo esicacile noma ubani angasilandela. Ama-studio okufaneleka komzimba ayasebenza ngoba:
 
@@ -34,7 +34,7 @@ Besidinga isibonelo esicacile noma ubani angasilandela. Ama-studio okufaneleka k
 
 Konke okufundayo lapho wakha i-FitSite kusebenza ngqo kunoma yimuphi umkhakha owukhethayo: izindawo zokudlela, ama-ejenti ezindlu, amafemu omthetho, amasonto, osonkontileka bemisebenzi yezandla, noma yimuphi omunye umkhakha oqondile.
 
-## Isakhiwo Sekhosi
+## Isakhiwo Sekhosi {#course-structure}
 
 Isifundo ngasinye sethula umqondo owodwa, sichaze ukuthi kungani ubalulekile, futhi sikuhambise ekusisebenziseni kunethiwekhi ye-FitSite. Isifundo ngasinye sakhela kwesandulelayo.
 
@@ -55,7 +55,7 @@ Isifundo ngasinye sethula umqondo owodwa, sichaze ukuthi kungani ubalulekile, fu
 | [13. Ukukhula](lesson-13-growth) | Ukukhula kusuka kumakhasimende okuqala kuya ebhizinisini langempela | Isu lokukhula nokuzenzakalela kwe-FitSite |
 | [14. Okulandelayo](lesson-14-whats-next) | Ukwandela emikhakheni eseduze namathuba amasha | Imephu yakho yomgwaqo ngale kwe-FitSite |
 
-## Okudingekayo Ngaphambi Kokuqala
+## Okudingekayo Ngaphambi Kokuqala {#prerequisites}
 
 - Ukufakwa kwe-WordPress Multisite (noma ukuzimisela ukukusetha)
 - Ilayisensi ye-Ultimate Multisite esebenzayo
@@ -63,6 +63,6 @@ Isifundo ngasinye sethula umqondo owodwa, sichaze ukuthi kungani ubalulekile, fu
 
 Akudingeki ukubhala ikhodi. Uma ungakaze usebenzise i-Ultimate Multisite ngaphambili, kulungile -- Isifundo 3 siqala ekufakweni okusha.
 
-## Usukulungele?
+## Usukulungele? {#ready}
 
 Qala ngo-[Isifundo 1: Kungani Umkhakha Oqondile Uphumelela](lesson-1-why-niche).

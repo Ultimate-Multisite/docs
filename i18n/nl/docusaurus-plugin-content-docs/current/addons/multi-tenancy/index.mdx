@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Verdeel subsites over servers en databases voor prestaties en beveiliging
 
-## Hoogtepunten van versie 1.2.0-release
+## Hoogtepunten van versie 1.2.0-release {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 voegt de sovereign tenant-basis toe voor productie-isolatieworkflows:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 voegt de sovereign tenant-basis toe voor productie-isolatiew
 
 Bekijk de gebruikershandleidingen voor [sovereign migratieworkflow](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy-isolatie](/user-guide/configuration/multi-tenancy-isolation) en [sovereign tenant-bewerkingen](/user-guide/administration/sovereign-tenant-operations).
 
-## Vereisten
+## Vereisten {#requirements}
 
 - WordPress 5.3 of hoger
 - PHP 7.4 of hoger
 - Multisite Ultimate-plugin (actief)
 
-## Installatie
+## Installatie {#installation}
 
 1. Upload de addon-bestanden naar je `/wp-content/plugins/`-directory
 2. Activeer de plugin via het menu 'Plugins' in WordPress
 3. Configureer de addon-instellingen in de netwerkbeheerder
 
-## Ontwikkeling
+## Ontwikkeling {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projectstructuur
+### Projectstructuur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testen
+### Testen {#testing}
 
 De addon bevat een uitgebreid testframework:
 
@@ -93,54 +93,54 @@ De addon bevat een uitgebreid testframework:
 - **Test Coverage**: Geconfigureerd om codedekking bij te houden
 - **Multisite-testen**: Tests draaien in een multisite-omgeving
 
-### Codestandaarden
+### Codestandaarden {#code-standards}
 
 - **WordPress Coding Standards**: Afgedwongen via PHPCS
 - **PHP 7.4+-compatibiliteit**: Moderne PHP-functies worden ondersteund
 - **Statische analyse**: PHPStan-integratie voor typecontrole
 - **Codemodernisering**: Rector-regels voor PHP-upgrades
 
-### Buildsysteem
+### Buildsysteem {#build-system}
 
 - **Assetverwerking**: Minificatie voor CSS/JS-bestanden
 - **Vertaling**: Generatie van POT-bestanden
 - **Packaging**: Archiefcreatie voor distributie
 - **Ontwikkelmodus**: Niet-geminificeerde assets voor debugging
 
-## Configuratie
+## Configuratie {#configuration}
 
 De addon ondersteunt verschillende configuratieopties die toegankelijk zijn via de netwerkbeheerinterface.
 
-### Sovereign tenant-configuratie
+### Sovereign tenant-configuratie {#sovereign-tenant-configuration}
 
 Configureer voor sovereign tenants de tenant-database, de root van het bestandssysteem, database-hostbinding en host-mogelijkheid voordat je verkeer naar de tenant routeert. Voer migratieverificatie uit na elke wijziging die invloed heeft op database-inloggegevens, hostbinding, routing of gebruikersprovisioning.
 
 Gebruik `localhost` alleen wanneer de tenant-runtime en database-grants lokale socket- of toegang op dezelfde machine verwachten. Gebruik `127.0.0.1` of een service-hostnaam wanneer dat de grant-host is die door je provider is geconfigureerd.
 
-### Hostinger-mogelijkheid
+### Hostinger-mogelijkheid {#hostinger-capability}
 
 De Hostinger multi-tenancy-mogelijkheid werkt met de gedeelde Hostinger-integratietoken. Bevestig dat het domein aanwezig is in hPanel, DNS naar het Hostinger-account verwijst en de tenant-database-instellingen overeenkomen met hPanel vóór verificatie.
 
-## Hooks en filters
+## Hooks en filters {#hooks-and-filters}
 
-### Acties
+### Acties {#actions}
 
 - `ultimate-multisite-addon-template_init` - Geactiveerd na initialisatie van de addon
 - `ultimate-multisite-addon-template_loaded` - Geactiveerd nadat alle addon-bestanden zijn geladen
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Wijzig addon-instellingen
 - `ultimate-multisite-addon-template_enabled` - Overschrijf de inschakel-/uitschakelstatus van de addon
 
-## Licentie
+## Licentie {#license}
 
 Deze addon is gelicentieerd onder de GPL v3 of later.
 
-## Ondersteuning
+## Ondersteuning {#support}
 
 Ga voor ondersteuning en documentatie naar [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Versie 1.2.0 (2026-06-03): voeg stateless tenant autologin, Hostinger multi-tenancy-mogelijkheid, database- en bestandssysteemisolatie per subsite, verificatiepoorten voor sovereign migratie, verbeteringen aan tenant bootstrap/database writer, configureerbare MySQL-hostbinding en veiligere sovereign teardown toe.
 

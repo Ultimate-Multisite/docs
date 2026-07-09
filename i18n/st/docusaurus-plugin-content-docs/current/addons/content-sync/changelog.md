@@ -3,9 +3,9 @@ title: Lenane la liphetoho la kgokahanyo ya dikahare
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Changelog ya Content Sync
+# Changelog ya Content Sync {#content-sync-changelog}
 
-### Version 1.1.0 - E lokollotswe ka 2025-12-31
+### Version 1.1.0 - E lokollotswe ka 2025-12-31 {#version-110---released-on-2025-12-31}
 * E ntjha: Tshehetso ya ho sync mefuta yohle ya diposo (diposo, maqephe, mefuta ya diposo e ikgethileng)
 * E ntjha: Ho sefa mofuta wa poso mohatong wa kgetho ya dikahare
 * E ntjha: Mohato wa kgetho ya saete ya mohlodi - sync ho tswa saeteng efe kapa efe, eseng feela saeteng e kgolo
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * E fetotswe: Mohato wa "Select Templates" o bitsitswe hape "Select Data"
 * E ntlafaditswe: Khoutu e ikgethileng ya Elementor jwale e sebetsa feela bakeng sa mofuta wa poso wa elementor_library
 
-### Version 1.0.0 - E lokollotswe ka 2025-12-19
+### Version 1.0.0 - E lokollotswe ka 2025-12-19 {#version-100---released-on-2025-12-19}
 * Tokollo ya pele
 * Wizard ya mehato e mengata bakeng sa kgetho ya template le saete
 * Tshebetso ya batch ka karabelo ya kgatelopele ya nako ya nnete

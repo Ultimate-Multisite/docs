@@ -3,11 +3,11 @@ title: קאַסטאַם Gateway אַנטוויקלונג
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# אַנטוויקלונג פֿון אַ מנהג־Gateway
+# אַנטוויקלונג פֿון אַ מנהג־Gateway {#custom-gateway-development}
 
 איר קענט שאַפֿן מנהג־צאָלונג־gateways דורך אויסברייטערן די `Base_Gateway` קלאַס.
 
-## Gateway קלאַס
+## Gateway קלאַס {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## רעגיסטרירן דעם Gateway
+## רעגיסטרירן דעם Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## שליסל־מעטאָדן
+## שליסל־מעטאָדן {#key-methods}
 
 | מעטאָד | ציל |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | באַהאַנדלען צוריקצאָל־בקשות |
 | `get_payment_methods()` | צוריקגעבן געראַטעוועטע צאָלונג־מעטאָדן פֿאַר אַ קונה |
 
-## באַנײַונג־קרעדענציאַלן פֿאַר ריקערנדיקע מיטגלידערשאַפֿטן
+## באַנײַונג־קרעדענציאַלן פֿאַר ריקערנדיקע מיטגלידערשאַפֿטן {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 לאָזט gateway־אינטעגראַציעס מעלדן צי אַ ריקערנדיקע מיטגלידערשאַפֿט האָט אַ ווידערניצבאַרן באַנײַונג־קרעדענציאַל איידער `auto_renew` ווערט אָפּגעהיט. האַקט `wu_membership_has_renewal_credential` און גיט צוריק:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 מעקט אויס דעם פֿעלנדיק־קרעדענציאַל־צייכן ווי אַ טייל פֿון אײַער gatewayס מצליחדיקן ווידער־אויטאָריזאַציע־פֿלוס נאָך דעם ווי אַ נײַער ווידערניצבאַרער קרעדענציאַל ווערט אָפּגעהיט.
 
-## עצות
+## עצות {#tips}
 
 - גיט שטענדיק צוריק `WP_Error` בײַ דורכפֿאַל, כּדי Ultimate Multisite זאָל קענען באַהאַנדלען טעות־ווײַזונג
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - ניצט `wu_log_add()` פֿאַר gateway־ספּעציפֿישע לאָגנונג
 
-## AI פֿאַרבינדער־פֿאַרזאָרגער מעגלעכקייטן
+## AI פֿאַרבינדער־פֿאַרזאָרגער מעגלעכקייטן {#ai-connector-provider-capabilities}
 
 מנהג־אינטעגראַציעס וואָס רופֿן אָפּ AI פֿאַרבינדער־געשטיצטע אָפּעראַציעס זאָלן זיך צופּאַסן צום געשטיצטן OAuth פֿאַרזאָרגער־זאַמלונג, אַרײַנגעפֿירט מיט AI Provider for Anthropic Max v1.3.0:
 

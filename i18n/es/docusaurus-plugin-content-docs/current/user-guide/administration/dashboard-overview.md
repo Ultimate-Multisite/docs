@@ -3,11 +3,11 @@ title: Resumen del Panel
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Visión general del Panel
+# Visión general del Panel {#dashboard-overview}
 
 Ultimate Multisite tiene un **Panel** dedicado bajo el menú Ultimate Multisite, y también agrega widgets al Panel de la Red. Este artículo cubre lo que verás en ambos lugares.
 
-## El Panel de la Red
+## El Panel de la Red {#the-network-dashboard}
 
 Ultimate Multisite inyecta widgets útiles en el panel de nivel de red que se encuentra en **Mis Sitios → Administrador de la Red → Panel**.
 
@@ -35,7 +35,7 @@ Esto es lo que cada widget ofrece:
 
 ![Widget Noticias](/img/admin/network-dashboard-news.png)
 
-## El Panel de Ultimate Multisite
+## El Panel de Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Mientras que el panel de la red presenta información holística sobre la red, el panel de Ultimate Multisite (en el nivel superior del menú Ultimate Multisite) presenta información sobre el servicio.
 

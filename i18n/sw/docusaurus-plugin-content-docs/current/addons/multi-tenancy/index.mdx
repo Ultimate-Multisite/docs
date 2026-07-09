@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Upangaji Wengi
+# Upangaji Wengi {#multi-tenancy}
 
 Sambaza tovuti ndogo kwenye seva na hifadhidata kwa utendaji na usalama
 
-## Muhtasari wa toleo la Version 1.2.0
+## Muhtasari wa toleo la Version 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 huongeza msingi wa mpangaji huru kwa mitiririko ya kazi ya utenganishaji wa uzalishaji:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 huongeza msingi wa mpangaji huru kwa mitiririko ya kazi ya u
 
 Tazama miongozo ya mtumiaji kwa [mtiririko wa kazi wa uhamishaji huru](/user-guide/getting-started/sovereign-migration-workflow), [utenganishaji wa upangaji wengi](/user-guide/configuration/multi-tenancy-isolation), na [uendeshaji wa mpangaji huru](/user-guide/administration/sovereign-tenant-operations).
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 - WordPress 5.3 au juu zaidi
 - PHP 7.4 au juu zaidi
 - Programu-jalizi ya Multisite Ultimate (imeamilishwa)
 
-## Usakinishaji
+## Usakinishaji {#installation}
 
 1. Pakia faili za nyongeza kwenye saraka yako ya `/wp-content/plugins/`
 2. Amilisha programu-jalizi kupitia menyu ya 'Plugins' katika WordPress
 3. Sanidi mipangilio ya nyongeza katika msimamizi wa mtandao
 
-## Uendelezaji
+## Uendelezaji {#development}
 
-### Usanidi
+### Usanidi {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Muundo wa Mradi
+### Muundo wa Mradi {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kanuni za kusasisha msimbo
 ```
 
-### Majaribio
+### Majaribio {#testing}
 
 Nyongeza inajumuisha mfumo mpana wa majaribio:
 
@@ -93,54 +93,54 @@ Nyongeza inajumuisha mfumo mpana wa majaribio:
 - **Ufunikaji wa Majaribio**: Umesanidiwa kufuatilia ufunikaji wa msimbo
 - **Majaribio ya Multisite**: Majaribio huendeshwa katika mazingira ya multisite
 
-### Viwango vya Msimbo
+### Viwango vya Msimbo {#code-standards}
 
 - **Viwango vya Uandishi wa Msimbo vya WordPress**: Vinatekelezwa kupitia PHPCS
 - **Upatanifu wa PHP 7.4+**: Vipengele vya kisasa vya PHP vinaungwa mkono
 - **Uchambuzi Tuli**: Ujumuishaji wa PHPStan kwa ukaguzi wa aina
 - **Usasishaji wa Msimbo**: Kanuni za Rector kwa maboresho ya PHP
 
-### Mfumo wa Kujenga
+### Mfumo wa Kujenga {#build-system}
 
 - **Uchakataji wa Rasilimali**: Upunguzaji kwa faili za CSS/JS
 - **Tafsiri**: Uzalishaji wa faili ya POT
 - **Ufungashaji**: Uundaji wa jalada kwa usambazaji
 - **Hali ya Uendelezaji**: Rasilimali zisizopunguzwa kwa utatuzi
 
-## Usanidi
+## Usanidi {#configuration}
 
 Nyongeza inaunga mkono chaguo mbalimbali za usanidi zinazopatikana kupitia kiolesura cha msimamizi wa mtandao.
 
-### Usanidi wa mpangaji huru
+### Usanidi wa mpangaji huru {#sovereign-tenant-configuration}
 
 Kwa wapangaji huru, sanidi hifadhidata ya mpangaji, mzizi wa mfumo wa faili, ufungaji wa mwenyeji wa hifadhidata, na uwezo wa mwenyeji kabla ya kuelekeza trafiki kwa mpangaji. Endesha uthibitishaji wa uhamishaji baada ya kila badiliko linaloathiri vitambulisho vya hifadhidata, ufungaji wa mwenyeji, uelekezaji, au utoaji wa watumiaji.
 
 Tumia `localhost` tu wakati mazingira ya utekelezaji ya mpangaji na ruhusa za hifadhidata zinatarajia soketi ya ndani au ufikiaji wa mashine ileile. Tumia `127.0.0.1` au jina la mwenyeji wa huduma wakati huyo ndiye mwenyeji wa ruhusa aliyesanidiwa na mtoa huduma wako.
 
-### Uwezo wa Hostinger
+### Uwezo wa Hostinger {#hostinger-capability}
 
 Uwezo wa Hostinger wa upangaji wengi hufanya kazi na tokeni ya ujumuishaji ya Hostinger iliyoshirikiwa. Thibitisha kuwa kikoa kipo katika hPanel, DNS inaelekeza kwenye Account ya Hostinger, na mipangilio ya hifadhidata ya mpangaji inalingana na hPanel kabla ya uthibitishaji.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Huwashwa baada ya uanzishaji wa nyongeza
 - `ultimate-multisite-addon-template_loaded` - Huwashwa baada ya faili zote za nyongeza kupakiwa
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Rekebisha mipangilio ya nyongeza
 - `ultimate-multisite-addon-template_enabled` - Batilisha hali ya kuwezesha/kulemaza nyongeza
 
-## Leseni
+## Leseni {#license}
 
 Nyongeza hii imepewa leseni chini ya GPL v3 au ya baadaye.
 
-## Usaidizi
+## Usaidizi {#support}
 
 Kwa usaidizi na nyaraka, tembelea [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.2.0 (2026-06-03): ongeza kuingia kiotomatiki kwa mpangaji bila hali, uwezo wa Hostinger wa upangaji wengi, utenganishaji wa hifadhidata na mfumo wa faili kwa kila tovuti ndogo, milango ya uthibitishaji wa uhamishaji huru, maboresho ya uanzishaji wa mpangaji/mwandishi wa hifadhidata, ufungaji unaoweza kusanidiwa wa mwenyeji wa MySQL, na uondoaji salama zaidi wa huru.
 

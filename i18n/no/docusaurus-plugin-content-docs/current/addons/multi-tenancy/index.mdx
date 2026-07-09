@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Distribuer undernettsteder på tvers av servere og databaser for ytelse og sikkerhet
 
-## Høydepunkter i versjon 1.2.0-utgivelsen
+## Høydepunkter i versjon 1.2.0-utgivelsen {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 legger til grunnlaget for suverene leietakere for isolasjonsarbeidsflyter i produksjon:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 legger til grunnlaget for suverene leietakere for isolasjons
 
 Se brukerveiledningene for [arbeidsflyt for suveren migrering](/user-guide/getting-started/sovereign-migration-workflow), [flerleietaker-isolasjon](/user-guide/configuration/multi-tenancy-isolation) og [operasjoner for suverene leietakere](/user-guide/administration/sovereign-tenant-operations).
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller høyere
 - PHP 7.4 eller høyere
 - Multisite Ultimate-programtillegg (aktivt)
 
-## Installasjon
+## Installasjon {#installation}
 
 1. Last opp tilleggsfilene til `/wp-content/plugins/`-katalogen din
 2. Aktiver programtillegget gjennom «Programtillegg»-menyen i WordPress
 3. Konfigurer tilleggsinnstillingene i nettverksadministrasjonen
 
-## Utvikling
+## Utvikling {#development}
 
-### Oppsett
+### Oppsett {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Prosjektstruktur
+### Prosjektstruktur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regler for kodemodernisering
 ```
 
-### Testing
+### Testing {#testing}
 
 Tillegget inkluderer et omfattende testrammeverk:
 
@@ -93,54 +93,54 @@ Tillegget inkluderer et omfattende testrammeverk:
 - **Testdekning**: Konfigurert til å spore kodedekning
 - **Multisite-testing**: Tester kjøres i et multisite-miljø
 
-### Kodestandarder
+### Kodestandarder {#code-standards}
 
 - **WordPress-kodestandarder**: Håndheves via PHPCS
 - **PHP 7.4+-kompatibilitet**: Moderne PHP-funksjoner støttes
 - **Statisk analyse**: PHPStan-integrasjon for typekontroll
 - **Kodemodernisering**: Rector-regler for PHP-oppgraderinger
 
-### Byggesystem
+### Byggesystem {#build-system}
 
 - **Ressursbehandling**: Minimering for CSS/JS-filer
 - **Oversettelse**: Generering av POT-fil
 - **Pakking**: Oppretting av arkiv for distribusjon
 - **Utviklingsmodus**: Ikke-minimerte ressurser for feilsøking
 
-## Konfigurasjon
+## Konfigurasjon {#configuration}
 
 Tillegget støtter ulike konfigurasjonsalternativer som er tilgjengelige gjennom nettverksadministrasjonsgrensesnittet.
 
-### Konfigurasjon av suverene leietakere
+### Konfigurasjon av suverene leietakere {#sovereign-tenant-configuration}
 
 For suverene leietakere konfigurerer du leietakerdatabasen, filsystemroten, databasevertsbindingen og vertskapasiteten før du ruter trafikk til leietakeren. Kjør migreringsverifisering etter hver endring som påvirker databaselegitimasjon, vertsbinding, ruting eller brukerklargjøring.
 
 Bruk `localhost` bare når leietakerens kjøretidsmiljø og databasetilskudd forventer lokal socket- eller samme-maskin-tilgang. Bruk `127.0.0.1` eller et tjenestevertsnavn når det er tilskuddsverten som er konfigurert av leverandøren din.
 
-### Hostinger-funksjonalitet
+### Hostinger-funksjonalitet {#hostinger-capability}
 
 Hostinger flerleietaker-funksjonalitet fungerer med det delte Hostinger-integrasjonstokenet. Bekreft at domenet finnes i hPanel, at DNS peker til Hostinger-kontoen, og at leietakerdatabaseinnstillingene samsvarer med hPanel før verifisering.
 
-## Hooks og filtre
+## Hooks og filtre {#hooks-and-filters}
 
-### Handlinger
+### Handlinger {#actions}
 
 - `ultimate-multisite-addon-template_init` - Utløses etter initialisering av tillegg
 - `ultimate-multisite-addon-template_loaded` - Utløses etter at alle tilleggsfiler er lastet inn
 
-### Filtre
+### Filtre {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Endre tilleggsinnstillinger
 - `ultimate-multisite-addon-template_enabled` - Overstyr status for aktivering/deaktivering av tillegg
 
-## Lisens
+## Lisens {#license}
 
 Dette tillegget er lisensiert under GPL v3 eller nyere.
 
-## Brukerstøtte
+## Brukerstøtte {#support}
 
 For brukerstøtte og dokumentasjon, besøk [MultisiteUltimate.com](https://multisiteultimate.com)
-## Endringslogg
+## Endringslogg {#changelog}
 
 - Versjon 1.2.0 (2026-06-03): legg til tilstandsløs automatisk leietakerinnlogging, Hostinger flerleietaker-funksjonalitet, database- og filsystemisolasjon per undernettsted, verifiseringsporter for suveren migrering, forbedringer av leietaker-bootstrap/databaseskriver, konfigurerbar MySQL-vertsbinding og tryggere suveren nedbygging.
 

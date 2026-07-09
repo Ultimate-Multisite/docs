@@ -3,7 +3,7 @@ title: 能力參考
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# 能力參考
+# 能力參考 {#abilities-reference}
 
 能力是 Gratis AI Agent 可以在你的 WordPress 安裝中呼叫的原子動作。每項能力都是已註冊的 PHP 類別，會公開 JSON schema — agent 會在執行時讀取此 schema，以了解需要哪些參數以及該能力會回傳什麼。
 
@@ -11,11 +11,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 自訂文章類型
+## 自訂文章類型 {#custom-post-types}
 
 這些能力管理透過 agent 註冊的自訂文章類型（CPT）。註冊資料會持久保存到 WordPress options 資料表，因此在 plugin 停用與重新啟用後仍會保留。
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 註冊新的自訂文章類型。
 
@@ -50,7 +50,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 回傳 agent 註冊的所有自訂文章類型。
 
@@ -73,7 +73,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 取消註冊先前由 agent 註冊的自訂文章類型。該類型的既有文章會保留在資料庫中，但不再能透過該文章類型存取。
 
@@ -87,11 +87,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 自訂分類法
+## 自訂分類法 {#custom-taxonomies}
 
 這些能力管理自訂分類法。與 CPT 一樣，分類法註冊資料會持久保存。
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 註冊新的自訂分類法。
 
@@ -123,7 +123,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 回傳 agent 註冊的所有自訂分類法。
 
@@ -146,7 +146,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 取消註冊先前由 agent 註冊的自訂分類法。
 
@@ -160,11 +160,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 設計系統
+## 設計系統 {#design-system}
 
 設計系統能力會修改 WordPress 網站的視覺呈現 — 從自訂 CSS 到區塊版型與網站標誌。
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 透過 `wp_add_inline_style` 將 CSS 附加到網站的 `<head>`。CSS 會儲存在 `gratis_ai_agent_custom_css` option 中，並在能力重設時乾淨地移出佇列。
 
@@ -190,7 +190,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 在 WordPress 版型庫中註冊可重複使用的區塊版型。
 
@@ -209,7 +209,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 列出 agent 註冊的所有區塊版型。
 
@@ -231,7 +231,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 將 WordPress 網站標誌設定為指定的附件 ID 或遠端圖片 URL。提供 URL 時，圖片會被下載並匯入媒體庫。
 
@@ -248,7 +248,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 將具名色彩／排版預設套用至啟用中佈景主題的 `theme.json`（或 `global-styles`）。預設是由 Gratis AI Agent 團隊維護的精選套件。
 
@@ -273,11 +273,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 全域樣式
+## 全域樣式 {#global-styles}
 
 全域樣式能力會透過 WordPress Global Styles API 讀寫 theme.json 值，影響整個網站的所有區塊與範本。
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 傳回目前的全域樣式設定。
 
@@ -291,7 +291,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 更新全域樣式設定中的一個或多個值。
 
@@ -318,7 +318,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 重設所有由代理套用的全域樣式變更，還原佈景主題預設值。
 
@@ -328,11 +328,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 導覽選單
+## 導覽選單 {#navigation-menus}
 
 導覽選單能力可建立及管理 WordPress 導覽選單及其項目。
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 建立新的 WordPress 導覽選單。
 
@@ -347,7 +347,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 重新命名選單，或將其重新指派至佈景主題位置。
 
@@ -363,7 +363,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 將項目新增至現有導覽選單。
 
@@ -383,7 +383,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 從導覽選單移除項目。
 
@@ -397,7 +397,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 列出所有 WordPress 導覽選單，包含其已指派的佈景主題位置。
 
@@ -420,11 +420,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 選項管理
+## 選項管理 {#options-management}
 
 選項能力透過 `get_option` / `update_option` 讀寫 WordPress 選項。內建安全封鎖清單可防止意外修改關鍵設定。
 
-### `get_option`
+### `get_option` {#getoption}
 
 讀取 WordPress 選項。
 
@@ -440,7 +440,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 寫入 WordPress 選項。
 
@@ -458,7 +458,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 刪除 WordPress 選項。
 
@@ -474,7 +474,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 列出符合模式的 WordPress 選項。
 
@@ -498,11 +498,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 內容管理
+## 內容管理 {#content-management}
 
 內容管理能力可建立和編輯 WordPress 文章與頁面。系統會傳回文章 ID，讓多能力方案中的後續步驟可以參照已建立的內容。
 
-### `create_post`
+### `create_post` {#createpost}
 
 建立新的 WordPress 文章、頁面或自訂文章類型項目。
 
@@ -537,7 +537,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 更新現有的 WordPress 文章或頁面。
 
@@ -567,7 +567,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 在單一能力呼叫中建立多篇文章，以減少網站建置或大量內容匯入期間的往返次數。文章會依序建立；如果其中一篇失敗，其他文章仍會繼續，且失敗情況會回報在結果陣列中。
 
@@ -619,7 +619,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 將精選圖片（文章縮圖）指派給現有文章或頁面。接受現有 Media Library 附件 ID 或遠端圖片 URL；提供 URL 時，圖片會自動下載並匯入。
 
@@ -638,7 +638,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 使用啟用中的表單 plugin（Contact Form 7、WPForms、Fluent Forms 或 Gravity Forms，取決於已安裝哪一個）建立聯絡表單。傳回可嵌入任何文章或頁面的 shortcode。
 
@@ -691,11 +691,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 視覺審查
+## 視覺審查 {#visual-review}
 
 視覺審查能力可讓代理程式擷取即時頁面的螢幕截圖並進行分析，支援自主設計審查、前後比較與視覺迴歸檢查，且不需要任何瀏覽器擴充功能。
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 使用伺服器端無頭瀏覽器擷取指定 URL 的 WordPress 頁面螢幕截圖。圖片會儲存到媒體庫，並回傳 CDN URL。
 
@@ -724,7 +724,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 取得兩張螢幕截圖，並回傳視覺差異分數以及標示變更區域的差異圖片。適合用於確認設計變更是否產生預期結果，或偵測非預期的迴歸。
 
@@ -754,7 +754,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 擷取頁面的螢幕截圖，並將其傳送至語言模型進行視覺分析。回傳涵蓋版面配置、字體排印、色彩使用與無障礙疑慮的結構化評估。
 
@@ -785,11 +785,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## 可安裝能力
+## 可安裝能力 {#installable-abilities}
 
 可安裝能力登錄檔可讓你使用以 WordPress 外掛形式發佈的額外能力套件來擴充代理程式。每個套件都會使用標準能力 API 註冊一項或多項能力。
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 回傳可從登錄檔安裝的能力套件目錄。
 
@@ -818,7 +818,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 從註冊庫下載並啟用能力套件。
 
@@ -832,7 +832,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 查詢能力註冊庫，以找出最符合所描述使用案例的 plugin，並可選擇安裝它。
 

@@ -3,15 +3,15 @@ title: Vejledning til brug af hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Guide til brug af hooks
+# Guide til brug af hooks {#hooks-usage-guide}
 
 Ultimate Multisite leverer 200+ action hooks og 280+ filter hooks. Denne side dækker de mest almindeligt anvendte hooks med praktiske eksempler. For en komplet automatisk genereret reference kan du gennemse de andre sider i dette afsnit.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Kundelivscyklus
+### Kundelivscyklus {#customer-lifecycle}
 
-#### Efter kundeoprettelse
+#### Efter kundeoprettelse {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Ændring af kundestatus
+#### Ændring af kundestatus {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Site-hooks
+### Site-hooks {#site-hooks}
 
-#### Efter site er udgivet
+#### Efter site er udgivet {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Før anvendelse af skabelon
+#### Før anvendelse af skabelon {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership-hooks
+### Membership-hooks {#membership-hooks}
 
-#### Statusovergange
+#### Statusovergange {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Betalings-hooks
+### Betalings-hooks {#payment-hooks}
 
-#### Betaling gennemført / mislykket
+#### Betaling gennemført / mislykket {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout-hooks
+### Checkout-hooks {#checkout-hooks}
 
-#### Før behandling / efter gennemførelse
+#### Før behandling / efter gennemførelse {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domæne-hooks
+### Domæne-hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Prisfiltre
+### Prisfiltre {#pricing-filters}
 
-#### Kurvtotal
+#### Kurvtotal {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Skattesatser
+#### Skattesatser {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Skabelonfiltre
+### Skabelonfiltre {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Begrænsningsfiltre
+### Begrænsningsfiltre {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway-filtre
+### Gateway-filtre {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Formularfelter til checkout
+### Formularfelter til checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### E-mailindhold
+### E-mailindhold {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

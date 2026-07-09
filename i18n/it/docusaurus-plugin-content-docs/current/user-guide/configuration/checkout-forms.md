@@ -3,7 +3,7 @@ title: Moduli di checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Moduli di checkout
+# Moduli di checkout {#checkout-forms}
 
 I moduli di checkout sono un modo semplice e flessibile per sperimentare approcci diversi quando si cerca di convertire nuovi clienti.
 
@@ -36,13 +36,13 @@ In alternativa, puoi modificare o duplicare i moduli che hai già cliccando sull
 
 ![azioni al passaggio del mouse sul modulo di checkout](/img/config/checkout-form-hover-actions.png)
 
-#### Panoramica del Checkout Form Editor
+#### Panoramica del Checkout Form Editor {#checkout-form-editor-overview}
 
 L'editor del modulo di checkout offre un'interfaccia completa per creare i tuoi moduli di registrazione. Ecco una panoramica del layout dell'editor:
 
 ![panoramica dell'editor del Checkout Form](/img/config/checkout-form-editor-overview.png)
 
-### Modificare un modulo di checkout
+### Modificare un modulo di checkout {#editing-a-checkout-form}
 
 Puoi creare moduli di checkout per scopi diversi. In questo esempio lavoreremo su un modulo di registrazione.
 
@@ -112,7 +112,7 @@ Per ottenere lo shortcode del tuo modulo, fai clic su Generate Shortcode e copia
 
 ![Pulsante Salva con shortcode](/img/config/checkout-form-save.png)
 
-### Il campo Pricing Table
+### Il campo Pricing Table {#the-pricing-table-field}
 
 Il campo **Pricing Table** mostra i tuoi prodotti nel modulo di checkout così che i clienti possano scegliere un piano. Quando modifichi questo campo, puoi configurare diverse opzioni:
 
@@ -130,17 +130,17 @@ Ecco come appare la tabella prezzi nel modulo di registrazione frontend:
 
 Se aggiungi un prodotto alla Pricing Table prima che il modulo includa i campi necessari per completare il flusso di checkout di quel prodotto, l'editor ora mostra un avviso. Usa l'avviso per aggiungere il campo obbligatorio mancante prima di pubblicare o salvare modifiche per un modulo di registrazione live.
 
-### Aggiunta di un selettore del periodo
+### Aggiunta di un selettore del periodo {#adding-a-period-selection-toggle}
 
 If you have configured [Price Variations](creating-your-first-subscription-product#price-variations) on your products (e.g. monthly and annual pricing), you can add a **Period Selection** field to your checkout form. This field displays a toggle that allows customers to switch between billing periods, and the pricing table updates dynamically in real time.
 
-#### Step 1: Set Up Price Variations on Your Products
+#### Step 1: Set Up Price Variations on Your Products {#step-1-set-up-price-variations-on-your-products}
 
 Before adding the Period Selection field, make sure your products have price variations configured. Go to **Ultimate Multisite > Products**, edit a product, and navigate to the **Price Variations** tab to add alternate billing periods (e.g. Annual at a discounted price).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Step 2: Add the Period Selection Field to Your Checkout Form
+#### Step 2: Add the Period Selection Field to Your Checkout Form {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Go to **Ultimate Multisite > Checkout Forms** and edit your checkout form.
 
@@ -163,13 +163,13 @@ Before adding the Period Selection field, make sure your products have price var
 
 7. Fai clic su **Save Field**.
 
-#### Passaggio 3: Posizionare il field sopra la tabella dei prezzi
+#### Passaggio 3: Posizionare il field sopra la tabella dei prezzi {#step-3-position-the-field-above-the-pricing-table}
 
 Per la migliore esperienza utente, assicurati che il field Period Selection appaia **prima** del field Pricing Table nel tuo passaggio di checkout. Puoi trascinare i field per riordinarli nell’editor del modulo di checkout. In questo modo, i clienti scelgono prima un periodo di fatturazione e poi vedono i prezzi per quel periodo.
 
 ![Editor del modulo di checkout che mostra l’ordine dei field](/img/config/checkout-form-editor-with-fields.png)
 
-#### Come funziona sul frontend
+#### Come funziona sul frontend {#how-it-works-on-the-frontend}
 
 Una volta configurato, i clienti che visitano la tua pagina di registrazione vedranno il selettore del periodo sopra la tabella dei prezzi. Quando fanno clic su un periodo di fatturazione diverso:
 
@@ -177,7 +177,7 @@ Una volta configurato, i clienti che visitano la tua pagina di registrazione ved
   * Se **Force Different Durations** è disabilitato nel field Pricing Table, i prodotti senza una variazione di prezzo per il periodo selezionato saranno nascosti.
   * Se **Force Different Durations** è abilitato, tutti i prodotti rimangono visibili anche se non hanno una variazione per il periodo selezionato (mostreranno il loro prezzo predefinito).
 
-#### Preselezionare un periodo di fatturazione tramite URL
+#### Preselezionare un periodo di fatturazione tramite URL {#pre-selecting-a-billing-period-via-url}
 
 Puoi anche preselezionare un prodotto e un periodo di fatturazione tramite l'URL. Ultimate Multisite supporta questi schemi di URL:
 
@@ -185,11 +185,11 @@ Puoi anche preselezionare un prodotto e un periodo di fatturazione tramite l'URL
   * `/register/premium/12` — Preseleziona il prodotto e la durata di 12 mesi
   * `/register/premium/1/year` — Preseleziona il prodotto con una durata di 1 anno
 
-### Il campo Selezione template
+### Il campo Selezione template {#the-template-selection-field}
 
 Il campo **Selezione template** consente ai clienti di scegliere un template per il sito durante il checkout. Ora è incluso per impostazione predefinita nei template dei moduli di checkout **a passaggio singolo** e **multi-passaggio** aggiunti in Ultimate Multisite v2.6.1.
 
-#### Aggiungere il campo manualmente
+#### Aggiungere il campo manualmente {#adding-the-field-manually}
 
 Se stai lavorando con un modulo creato prima della v2.6.1, o partito da un template vuoto:
 
@@ -200,11 +200,11 @@ Se stai lavorando con un modulo creato prima della v2.6.1, o partito da un templ
    - **Etichetta** — Il titolo che i clienti vedono sopra la griglia dei template (ad es. "Scegli un template per il sito").
    - **Obbligatorio** — Se i clienti devono selezionare un template prima di procedere.
 
-#### Come funziona
+#### Come funziona {#how-it-works}
 
 Quando un cliente sceglie un template durante il checkout, Ultimate Multisite lo utilizza durante il provisioning del suo nuovo sito. I template mostrati provengono dal tuo elenco **Template dei siti** (**Ultimate Multisite > Template dei siti**). Qui compaiono solo i template contrassegnati come disponibili per i clienti.
 
-### Domini di base dei moduli di checkout
+### Domini di base dei moduli di checkout {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 tratta i domini configurati nei campi **Site URL** del modulo di checkout come domini base della rete. Usa le impostazioni dei domini disponibili del campo quando vuoi che i clienti creino siti sotto uno o più domini di registrazione condivisi, come `example.com` e `sites.example.com`.
 
@@ -212,6 +212,6 @@ I domini base condivisi del modulo di checkout non sono trattati come mappature 
 
 Mantieni i domini personalizzati per gli host mappati per cliente, come `customer-example.com`. Mantieni i domini base del modulo di checkout per gli host di registrazione condivisi che molti siti possono usare.
 
-#### Rimozione del campo
+#### Rimozione del campo {#removing-the-field}
 
 Se non offri template di siti, rimuovi il campo Template Selection dal tuo modulo. I clienti riceveranno quindi il template predefinito configurato in **Ultimate Multisite > Settings > Site Templates**.

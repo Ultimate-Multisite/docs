@@ -3,13 +3,13 @@ title: Nastavenie manuálnych platieb
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Nastavenie manuálnych platieb (v2)
+# Nastavenie manuálnych platieb (v2) {#setting-up-manual-payments-v2}
 
 _**DÔLEŽITÁ POZNÁMKA: Tento článok sa vzťahuje na Ultimate Multisite verzie 2.x.**_
 
 Manuálne platby sú spôsob, ako ponúknuť iné platobné metódy, ak **Stripe** alebo **PayPal** nie sú pre vašich používateľov dostupné. Môže ísť o bankový prevod alebo akúkoľvek inú platobnú metódu dostupnú vašim používateľom lokálne.
 
-## Ako povoliť manuálne platby
+## Ako povoliť manuálne platby {#how-to-enable-manual-payments}
 
 Nastavenie manuálnej platby je veľmi jednoduché. Stačí ju povoliť v platobných bránach a zadať podrobné pokyny, ako má používateľ odoslať platbu.
 
@@ -31,7 +31,7 @@ A správu s vašimi pokynmi k platbe dostanú aj na vašej stránke **Ďakujeme*
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Potvrdzovanie manuálnych platieb
+## Potvrdzovanie manuálnych platieb {#confirming-manual-payments}
 
 Ak chcete potvrdiť manuálnu platbu, prejdite do menu **Platby** na ľavej lište. Tam môžete vidieť všetky platby vo vašej sieti a ich podrobnosti vrátane ich **stavu**. Manuálna platba bude mať vždy stav **Čaká na spracovanie**, kým ho manuálne nezmeníte.
 

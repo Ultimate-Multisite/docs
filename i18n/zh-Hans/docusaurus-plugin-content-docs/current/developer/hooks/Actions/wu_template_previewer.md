@@ -4,19 +4,19 @@ title: 操作 - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# 动作: wu_template_previewer
+# 动作: wu_template_previewer {#action-wutemplatepreviewer}
 
 在模板预览器上下文中运行。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $template_previewer | `self` | 当前类的实例。 |
 
-### 自
+### 自 {#since}
 
 - 2.0.4
-### 来源
+### 来源 {#source}
 
 Defined in [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) at line 86

@@ -3,11 +3,11 @@ title: Ezaugarriak
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite eskakizunak
+# Ultimate Multisite eskakizunak {#ultimate-multisite-requirements}
 
 Ultimate Multisite-a eritzeko iridian duan aurretik galdetzeko garrantzitsu da, pluginaren eritzeko beharrezko irudiak zerren dira? Irudi ez da, Ultimate Multisite eritzeko oso garrantzitsuak ezren jakin dira: **domain name** bat, ona **hosting provider** bat eta WordPress-en **Multisite** instalazioa. Horrek dugu behar du!
 
-## Domain Name
+## Domain Name {#domain-name}
 
 Lehenik, domain name-a eztabaiduon.
 
@@ -17,7 +17,7 @@ Pluginaren parte batean abonazio serbisuak, mugikorrak, checkout forms, eskaintz
 
 Zer nire niche bat ereintzen ari zaitut, websteia serbisua gisa salduz! Zerren domain name bat ereintzen duzu.
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 Domain name bat eztabaiduon eta niche-n irudiak ematen duen biznearen edo negozio planaren espezifikazioa da, Ultimate Multisitearekin networka hostatzeko ona **web hosting company** bat eritzu behar duzu. Merkian oneko opsioak dituz. Zerren web hosting provider-ek Ultimate Multisitearekin ondore egiten dute, eta hori erabakiak ematen da zer sortzeko planatu duzun bero dagoen.
 
@@ -25,7 +25,7 @@ Ultimate Multisite-ak gure jakrak hosting provider ere lan funtzionatzen da. Arr
 
 Server espezifikazioei dagoen formulazio bat ez da, karena funtzioak eta zerbitzuak zehatzen dituzten eta network-aren diseinazioa dependeratuko du. Shared hosting (hosting-a saltu-saltu) ondo lehenbait izan daiteke, baina network-a handitu gurean hasten den, dedeku VPS dedicated bat behar izango du.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Orain, WordPress Multisite instalazioari gure ezagutzea gure.
 

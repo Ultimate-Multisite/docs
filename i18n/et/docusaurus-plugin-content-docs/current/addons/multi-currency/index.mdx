@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency võimaldab teie võrgustikul aktsepteerida makseid mitmes valuutas. See teisendab hinnad automaatselt reaalajas või käsitsi määratud vahetuskursside abil, laseb teil määrata iga valuuta jaoks täpsed tootepõhised hinnad ning tuvastab iga külastaja eelistatud valuuta geolokatsiooni kaudu — kõike hallatakse ühest admin Dashboardist.
 
-## Põhifunktsioonid
+## Põhifunktsioonid {#key-features}
 
 - **Automaatne vahetuskursi teisendus** — hinnad teisendatakse teie baasvaluutast, kasutades teie valitud teenusepakkujalt hangitud kursse
 - **Tootepõhised hinnaerandid** — määrake mis tahes tootele täpsed valuutapõhised hinnad, et automaatne teisendus vahele jätta
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency võimaldab teie võrgustikul aktsepteerida ma
 - **Geolokatsioonipõhine valuuta tuvastamine** — valib automaatselt eelnevalt valuuta, mis vastab külastaja riigile
 - **Admin Dashboard** — hallake aktiivseid valuutasid, vahetuskursse ja teenusepakkuja seadeid ühest kohast
 
-## Nõuded
+## Nõuded {#requirements}
 
 - Ultimate Multisite 2.0.0 või uuem
 - WordPress Multisite paigaldus
 - PHP 7.4 või uuem
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 1. Laadige lisamooduli failid üles kausta `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktiveerige lisamoodul WordPressi **Lisamoodulite** vaates (Network Activate)
 3. Liikuge jaotisse **Ultimate Multisite → Multi-Currency**, et avada admin Dashboard
 4. Lisage valuutad, mida soovite aktsepteerida, ja seadistage oma vahetuskursi pakkuja
 
-## Seadistamine
+## Seadistamine {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Multi-Currency admin Dashboard (**Ultimate Multisite → Multi-Currency**) on keskne koht, kus saate:
 
@@ -44,7 +44,7 @@ Multi-Currency admin Dashboard (**Ultimate Multisite → Multi-Currency**) on ke
 - Vaadata üle kõigi aktiivsete valuutade praegused kursid
 - Määrata käsitsi kursid, kui automaatsed pakkujad ei sobi
 
-### Vahetuskursi pakkujad
+### Vahetuskursi pakkujad {#exchange-rate-providers}
 
 | Pakkuja | Kirjeldus |
 |---|---|
@@ -55,7 +55,7 @@ Multi-Currency admin Dashboard (**Ultimate Multisite → Multi-Currency**) on ke
 
 Valige oma pakkuja jaotises **Ultimate Multisite → Multi-Currency → Seaded → Vahetuskursi pakkuja**. Kursse saab igal ajal käsitsi värskendada või ajastada automaatselt uuenema.
 
-### Tootepõhised hinnaerandid
+### Tootepõhised hinnaerandid {#per-product-pricing-overrides}
 
 Kui automaatne teisendus ei ole piisavalt täpne, saate määrata konkreetse valuuta jaoks täpse hinna mis tahes tootel:
 
@@ -66,7 +66,7 @@ Kui automaatne teisendus ei ole piisavalt täpne, saate määrata konkreetse val
 
 Ilma erandita tooted kasutavad teie baasvaluutast teisendatud hinda.
 
-### Valuutavaliku registreerumisväli
+### Valuutavaliku registreerumisväli {#currency-selector-signup-field}
 
 Valuutavaliku välja saab lisada teie registreerumise/maksmise voogu, et kliendid valiksid registreerimisel oma eelistatud valuuta:
 
@@ -76,7 +76,7 @@ Valuutavaliku välja saab lisada teie registreerumise/maksmise voogu, et kliendi
 
 Valitud valuuta salvestatakse koos tellimusega ja seda kasutatakse kõigi järgnevate arvelduste jaoks.
 
-### Geolokatsioonipõhine valuuta tuvastamine
+### Geolokatsioonipõhine valuuta tuvastamine {#geolocation-based-currency-detection}
 
 Kui geolokatsioonipõhine tuvastamine on lubatud, seostab lisamoodul külastaja riigi valuutaga ja valib selle valuutavaliku väljal eelnevalt. Lubamiseks:
 
@@ -86,27 +86,27 @@ Kui geolokatsioonipõhine tuvastamine on lubatud, seostab lisamoodul külastaja 
 
 Kui külastaja riigi jaoks vastendust pole, kasutatakse varuvariandina võrgustiku baasvaluutat.
 
-## Korduma kippuvad küsimused
+## Korduma kippuvad küsimused {#frequently-asked-questions}
 
-### Mis juhtub, kui vahetuskursi pakkuja pole saadaval?
+### Mis juhtub, kui vahetuskursi pakkuja pole saadaval? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Lisamoodul kasutab varuvariandina viimati edukalt hangitud kursse. Kui kursse pole kunagi hangitud, kasutatakse varuvariandina teie seadistatud käsitsi kursse. Soovitatav on seadistada käsitsi kursid turvavõrguna.
 
-### Kas saan kasutada eri valuutade jaoks erinevaid pakkujaid?
+### Kas saan kasutada eri valuutade jaoks erinevaid pakkujaid? {#can-i-use-different-providers-for-different-currencies}
 
 Ei — kõigi valuutade jaoks on korraga aktiivne üks pakkuja. Kasutage valikut **Käsitsi**, kui vajate täielikku kontrolli üksikute kursside üle.
 
-### Kas geolokatsioon nõuab eraldi lisamoodulit?
+### Kas geolokatsioon nõuab eraldi lisamoodulit? {#does-geolocation-require-a-separate-plugin}
 
 Välist geolokatsiooni lisamoodulit pole vaja. Lisamoodul kasutab WordPressi sisseehitatud IP-aadressi riigiks tuvastamist. Suurema täpsuse jaoks saab pakutud filtrikonksude kaudu integreerida spetsiaalse geolokatsiooniteenuse.
 
-### Kas tootepõhiseid erandeid rakendatakse enne või pärast maksu?
+### Kas tootepõhiseid erandeid rakendatakse enne või pärast maksu? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Tootepõhised erandid määravad sihtvaluutas maksueelse hinna. Maks arvutatakse erandihinnale lisaks, kasutades teie olemasolevat maksuseadistust.
 
-## Muudatuste logi
+## Muudatuste logi {#changelog}
 
-### Versioon 1.0.0 — avaldatud 2026-04-02
+### Versioon 1.0.0 — avaldatud 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Uus: mitme valuuta tugi automaatse vahetuskursi teisendusega
 - Uus: tootepõhised hinnaerandid täpsete valuutapõhiste hindade jaoks

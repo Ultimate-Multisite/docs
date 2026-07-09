@@ -3,7 +3,7 @@ title: Creador de pàgina d'administració
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Admin Page Creator
+# Admin Page Creator {#admin-page-creator}
 
 Aquesta funcionalitat és proporcionada pel addon **Admin Page Creator**.
 

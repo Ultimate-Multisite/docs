@@ -1,22 +1,22 @@
 ---
 title: Hostinger (hPanel) Интеграция
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integration
+# Hostinger (hPanel) Integration {#hostinger-hpanel-integration}
 
-## گشتی (Overview)
+## گشتی (Overview) {#overview}
 
 Hostinger اینترنت میزبانی یکی از سرویس‌های محبوب است که یک پنل کنترل مدرن به نام hPanel دارد. Ultimate Multisite Hostinger integration به شما اجازه می‌دهد که همزمان در مدیریت وردپرس خود، تنظیمات دامنه‌ها و زیردامنه‌ها را مستقیماً از طریق адمن داشبورد وردپرس مدیریت کنید؛ این قابلیت باعث می‌شود دامنه ها بین Ultimate Multisite و پنل hPanel هستا با یکدیگر به‌صورت خودکار همگام شوند.
 
-## ویژگی‌ها (Features)
+## ویژگی‌ها (Features) {#features}
 
 - ایجاد خودکار addon domain در hPanel
 - ایجاد خودکار subdomain در hPanel (برای نصب‌های چند دامنه‌ای زیردامنه‌ای)
 - حذف دامنه زمانی که نگاشت‌ها (mappings) حذف می‌شوند
 - یکپارچگی بی‌نقص با API مدیریت دامنه hPanel
 
-## پیش‌نیازها (Requirements)
+## پیش‌نیازها (Requirements) {#requirements}
 
 برای استفاده از این ادغام Hostinger، شما به موارد زیر نیاز دارید:
 
@@ -35,9 +35,9 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // نقطه پایانی API پیش‌فرض
 ```
 
-## دستورالعمل‌های تنظیم (Setup Instructions)
+## دستورالعمل‌های تنظیم (Setup Instructions) {#setup-instructions}
 
-### ۱. توکن API خود را تولید کنید (Generate Your Hostinger API Token)
+### ۱. توکن API خود را تولید کنید (Generate Your Hostinger API Token) {#1-generate-your-hostinger-api-token}
 
 ۱. وارد حساب کاربری Hostinger خود شوید و به hPanel دسترسی پیدا کنید.
 ۲. به **Account Settings** → **API Tokens** بروید.
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // نقطه پا
    - Subdomain management (مدیریت زیردامنه)
 ۶. توکن تولید شده را کپی کرده و آن را به صورت امن ذخیره کنید.
 
-### ۲. شناسه حساب خود را پیدا کنید (Find Your Account ID)
+### ۲. شناسه حساب خود را پیدا کنید (Find Your Account ID) {#2-find-your-account-id}
 
 ۱. در hPanel، به **Account Settings** → **Account Information** بروید.
 ۲. شناسه حساب شما در این صفحه نمایش داده می‌شود.
 ۳. این شناسه را کپی کرده و برای مرحله بعد ذخیره کنید.
 
-### ۳. ثابت‌ها را در wp-config.php اضافه کنید (Add Constants to wp-config.php)
+### ۳. ثابت‌ها را در wp-config.php اضافه کنید (Add Constants to wp-config.php) {#3-add-constants-to-wp-configphp}
 
 ثابت‌های زیر را به فایل `wp-config.php` خود اضافه کنید:
 
@@ -69,7 +69,7 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Integrasiyanı Etkinləşdirin
+### 4. Integrasiyanı Etkinləşdirin {#4-enable-the-integration}
 
 1. WordPress admin panelinizdə **Ultimate Multisite > Settings** (Parametrlər) bölməsinə gedin.
 2. **Domain Mapping** (Domän Xəritələnməsi) tabına keçin.
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. **Hostinger (hPanel)** inteqrasiyasını aktiv edin.
 5. **Save Changes** (Dəyişiklikləri Yadda Saxla) düyməsini basın.
 
-## Necə İşləyir?
+## Necə İşləyir? {#how-it-works}
 
-### Addon Domains (Əlavə Domənler)
+### Addon Domains (Əlavə Domənler) {#addon-domains}
 
 Ultimate Multisite-da bir domän xəritələndikdə:
 
@@ -87,7 +87,7 @@ Ultimate Multisite-da bir domän xəritələndikdə:
 2. Domän sizin kök (root) direktoriyanıza yönləndirilmək üçün konfiqurasiya edilir.
 3. Bir domän xəritələnməsi silindikdə, inteqrasiya avtomatik olaraq addon domaini hPanel-dən silir.
 
-### Subdomains (Alt Domenlər)
+### Subdomains (Alt Domenlər) {#subdomains}
 
 Subdomain multisite quraşdırmaları üçün, yeni bir sayt yaradılarkən:
 
@@ -95,7 +95,7 @@ Subdomain multisite quraşdırmaları üçün, yeni bir sayt yaradılarkən:
 2. Hostinger API-sinə subdomaini əlavə etmək üçün sorğu göndərir.
 3. Subdomain sizin kök direktoriyanıza yönləndirilmək üçün konfiqurasiya edilir.
 
-## Vacib Qeydlər
+## Vacib Qeydlər {#important-notes}
 
 - İnteqrasiya hesabınızla əlaqə saxlamaq üçün Hostinger'in REST API-sindən istifadə edir.
 - API tokeninizin domän və subdomain idarəçiliyi üçün lazım olan icazələrə malik olması lazımdır.
@@ -103,33 +103,33 @@ Subdomain multisite quraşdırmaları üçün, yeni bir sayt yaradılarkən:
 - API sorğuları HTTPS vasitəsilə təhlükəsiz şəkildə aparılır.
 - API tokeninizi təhlükəsiz saxlayın və onu heç vaxt açıq yerlərdə paylaşmayın.
 
-## Problemləri Həll Etmə (Troubleshooting)
+## Problemləri Həll Etmə (Troubleshooting) {#troubleshooting}
 
-### API Bağlantı Problemləri
+### API Bağlantı Problemləri {#api-connection-issues}
 
 API token'ınızın doğru olup olmadığını ve süresinin dolup dolmadığını kontrol edin.
 Hesap Kimliğinizin (Account ID) doğru olduğundan emin olun.
 API token'ınızın alan yönetimi için gerekli izinlere sahip olduğundan emin olun.
 Hostinger hesabınızın aktif olduğunu ve iyi durumda olduğunu doğrulayın.
 
-### Alan Eklendi Değilse (Domain Not Added)
+### Alan Eklendi Değilse (Domain Not Added) {#domain-not-added}
 
 - Ultimate Multisite loglarında herhangi bir hata mesajı olup olmadığını kontrol edin.
 - Alanın Hostinger hesabınıza zaten eklenip eklenmediğini doğrulayın.
 - Hostinger hesabınızın eklenti alan adları için limitine ulaşmadığından emin olun.
 - Alanın Hostinger isim sunucularınıza (nameservers) doğru şekilde yönlendirildiğini teyit edin.
 
-### SSL Sertifikası Sorunları (SSL Certificate Issues)
+### SSL Sertifikası Sorunları (SSL Certificate Issues) {#ssl-certificate-issues}
 
 - Bu entegrasyon SSL sertifikası verme işini yapmaz.
 - Hostinger genellikle AutoSSL aracılığıyla ücretsiz SSL sertifikaları sağlar.
 - SSL sertifikalarını hPanel'de **SSL/TLS** altında doğrudan yönetebilirsiniz.
 - Alternatif olarak, Hostinger'ın AutoSSL özelliğini kullanarak Let's Encrypt'i kullanabilirsiniz.
 
-## Destek (Support)
+## Destek (Support) {#support}
 
 Hostinger entegrasyonuyla ilgili ek yardıma ihtiyacınız olursa lütfen şuralara bakın:
 
 - [Hostinger API Dokümantasyonu](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Dokümantasyonu](/docs)
+- [Ultimate Multisite Dokümantasyonu](/)
 - [Ultimate Multisite Destek](https://ultimatemultisite.com/support)

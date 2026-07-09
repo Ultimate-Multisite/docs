@@ -4,11 +4,11 @@ title: Filter - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Vraća slugificiranu vrijednost mrežne opcije.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Vraća slugificiranu vrijednost mrežne opcije.
 | $option_name | `string` | Ime opcije. |
 | $default | `mixed` | Podrazumevana vrijednost. |
 
-### Since
+### Since {#since}
 
 - 1.0.0
-### Source
+### Source {#source}
 
 Definisano u [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) na liniji 126
 
 
-## Returns
+## Returns {#returns}
 Vrijednost mrežne opcije slugfield.

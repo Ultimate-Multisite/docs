@@ -3,15 +3,15 @@ title: Criar menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Criar Menu
+# Criar Menu {#create-menu}
 
 A capacidade **Criar Menu** cria menus de navegação WordPress com suporte para rótulos de navegação distintos, separados dos títulos das páginas.
 
-## Visão geral
+## Visão geral {#overview}
 
 Esta capacidade expande a funcionalidade padrão de criação de menus com a capacidade de especificar um parâmetro `navigation_label`. Isto permite criar menus em que o rótulo apresentado na navegação difere do título da página, proporcionando mais flexibilidade na estrutura do sítio e na experiência do utilizador.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Parâmetro | Tipo | Obrigatório | Descrição |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Esta capacidade expande a funcionalidade padrão de criação de menus com a cap
 | `location` | string | Não | Localização do tema à qual atribuir este menu, por exemplo, `primary` |
 | `navigation_label` | string | Não | Rótulo a apresentar na navegação (distinto do título da página) |
 
-## Valor de retorno
+## Valor de retorno {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Esta capacidade expande a funcionalidade padrão de criação de menus com a cap
 }
 ```
 
-## Rótulo de navegação vs título da página
+## Rótulo de navegação vs título da página {#navigation-label-vs-page-title}
 
 O parâmetro `navigation_label` permite separar o nome interno do menu do rótulo apresentado aos utilizadores:
 
@@ -43,9 +43,9 @@ Isto é útil quando:
 - Precisa de dar suporte a vários idiomas com comprimentos de rótulo diferentes
 - Está a criar menus para regiões ou grupos de utilizadores específicos
 
-## Exemplos de utilização
+## Exemplos de utilização {#usage-examples}
 
-### Exemplo 1: Menu simples com rótulo de navegação
+### Exemplo 1: Menu simples com rótulo de navegação {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Crie um menu de navegação principal chamado "Main Navigation" com o rótulo de
 }
 ```
 
-### Exemplo 2: Menu para uma localização específica do tema
+### Exemplo 2: Menu para uma localização específica do tema {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Crie um menu de rodapé chamado "Footer Links" com o rótulo de navegação "Qui
 }
 ```
 
-## Integração com Theme Builder
+## Integração com Theme Builder {#integration-with-theme-builder}
 
 Ao usar Theme Builder, a capacidade Criar Menu:
 
@@ -89,13 +89,13 @@ Ao usar Theme Builder, a capacidade Criar Menu:
 3. Atribui menus às localizações corretas do tema
 4. Suporta a adição de itens de menu após a criação
 
-## Capacidades relacionadas
+## Capacidades relacionadas {#related-abilities}
 
 - **`add_menu_item`** — Adicionar itens a um menu existente
 - **`update_menu`** — Renomear um menu ou reatribuí-lo a uma localização do tema
 - **`delete_menu`** — Remover um menu do seu sítio
 
-## Boas práticas
+## Boas práticas {#best-practices}
 
 - **Use rótulos de navegação claros** — mantenha os rótulos concisos e descritivos para os utilizadores
 - **Faça corresponder as localizações do tema** — atribua menus à localização correta do tema para uma apresentação adequada
@@ -103,14 +103,14 @@ Ao usar Theme Builder, a capacidade Criar Menu:
 - **Teste a capacidade de resposta** — verifique se os menus são apresentados corretamente em dispositivos móveis
 - **Localize os rótulos** — use rótulos de navegação diferentes para versões em idiomas diferentes
 
-## Limitações
+## Limitações {#limitations}
 
 - Os rótulos de navegação são apenas para apresentação; o `name` interno continua a ser usado para identificação pelo WordPress
 - O suporte dos temas varia; nem todos os temas suportam todas as localizações de menu
 - Os itens de menu devem ser adicionados separadamente após a criação do menu
 - Alterar um rótulo de navegação exige atualizar o menu
 
-## Capacidades relacionadas
+## Capacidades relacionadas {#related-abilities-1}
 
 - [Gerar logótipo SVG](./generate-logo-svg.md) — criar logótipos para o cabeçalho do seu sítio
 - [Validar contraste da paleta](./validate-palette-contrast.md) — garantir esquemas de cores acessíveis

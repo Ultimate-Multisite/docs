@@ -3,15 +3,15 @@ title: Generer Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generer logo SVG
+# Generer logo SVG {#generate-logo-svg}
 
 Funksjonaliteten **Generer logo SVG** lar Theme Builder lage og innebygge tilpassede logo-SVG-er direkte i WordPress-nettstedet ditt, med automatisk, trygg sanering av navnerommet.
 
-## Oversikt
+## Oversikt {#overview}
 
 Denne funksjonaliteten genererer skalerbare vektorbaserte grafikk-logoer (SVG) basert på nettstedets merkevareretning og designpreferanser. De genererte SVG-ene saneres automatisk for å sikre at de er trygge å bruke i WordPress, samtidig som den visuelle integriteten opprettholdes.
 
-## Parametere
+## Parametere {#parameters}
 
 | Parameter | Type | Påkrevd | Beskrivelse |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Denne funksjonaliteten genererer skalerbare vektorbaserte grafikk-logoer (SVG) b
 | `height` | number | Nei | SVG-høyde i piksler (standard: 200) |
 | `include_text` | boolean | Nei | Om nettstednavnet skal inkluderes som tekst i logoen (standard: true) |
 
-## Utdataformat
+## Utdataformat {#output-format}
 
 Funksjonaliteten returnerer en SVG-streng med følgende struktur:
 
@@ -36,7 +36,7 @@ Funksjonaliteten returnerer en SVG-streng med følgende struktur:
 }
 ```
 
-## SVG-sanering
+## SVG-sanering {#svg-sanitisation-behaviour}
 
 De genererte SVG-ene gjennomgår automatisk, trygg sanering av navnerommet for å:
 
@@ -48,7 +48,7 @@ De genererte SVG-ene gjennomgår automatisk, trygg sanering av navnerommet for �
 
 Dette sikrer at SVG-en er trygg å innebygge direkte i WordPress uten at det kreves ytterligere sanering.
 
-## Brukseksempel
+## Brukseksempel {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Funksjonaliteten oppretter en SVG-logo som:
 - Følger moderne designprinsipper
 - Er automatisk sanert og klar til bruk
 
-## Integrasjon med Theme Builder
+## Integrasjon med Theme Builder {#integration-with-theme-builder}
 
 Når du bruker designretningsvalget i Theme Builder, vil Generate Logo SVG-funksjonaliteten:
 
@@ -71,21 +71,21 @@ Når du bruker designretningsvalget i Theme Builder, vil Generate Logo SVG-funks
 3. Automatisk innebygge logoen i nettstedets header/merkevareområde
 4. Lagre SVG-en som en tilpasset logo i WordPress media
 
-## Beste praksis
+## Beste praksis {#best-practices}
 
 - **Gi klare stilpreferanser** — beskriv designstilen du ønsker (moderne, klassisk, lekende, osv.)
 - **Spesifiser farger** — inkluder merkevarefargene dine for konsistens
 - **Test gjengivelsen** — verifiser at logoen vises korrekt på forskjellige skjermstørrelser
 - **Tilpass videre** — bruk WordPress's verktøy for logo-tilpasning for å justere størrelse og plassering
 
-## Begrensninger
+## Begrensninger {#limitations}
 
 - SVG-logoer genereres som statiske grafikk (ikke animerte)
 - Komplekse logoer med mange elementer kan kreve manuell finjustering
 - Tilpassede fonter støttes ikke; tekst bruker systemfonter
 - Svært store eller svært små dimensjoner kan påvirke kvaliteten
 
-## Relaterte funksjonaliteter
+## Relaterte funksjonaliteter {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — sjekk fargekontrast for tilgjengelighet
 - [Create Menu](./create-menu.md) — opprett navigasjonsmenyer for nettstedet ditt

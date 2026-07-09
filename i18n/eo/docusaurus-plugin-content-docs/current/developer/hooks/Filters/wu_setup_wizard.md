@@ -4,11 +4,11 @@ title: Filtrilo - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filtrilo: wu_setup_wizard
+# Filtrilo: wu_setup_wizard {#filter-wusetupwizard}
 
 Permesas al programistoj aldoni pliajn paŝojn de agorda asistanto.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Permesas al programistoj aldoni pliajn paŝojn de agorda asistanto.
 | $is_migration | `bool` | Ĉu ĉi tio estas migrado aŭ ne. |
 | $wizard | `object` | La aktuala instanco. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) ĉe linio 525
 
 
-## Redonas
+## Redonas {#returns}

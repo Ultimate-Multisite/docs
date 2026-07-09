@@ -4,11 +4,11 @@ title: Sía - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Sía: wu_country_get_administrative_division_name
+# Sía: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Skilar snyrtilegu heiti á stjórnsýslusvæðum landsins.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Skilar snyrtilegu heiti á stjórnsýslusvæðum landsins.
 | $ucwords | `bool` | hvort við breytum orðum í hástafi. |
 | $current_country | `\WP_Ultimo\Country\Country` | Tilvik af núverandi klasa. |
 
-### Síðan
+### Síðan {#since}
 
 - 2.0.11
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) í línu 250
 
 
-## Skilar
+## Skilar {#returns}
 Breytta heiti svæðisins.

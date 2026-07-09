@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector airson Puingean-crìche Co-chòrdail
+# Ultimate AI Connector airson Puingean-crìche Co-chòrdail {#ultimate-ai-connector-for-compatible-endpoints}
 
 Bidh Ultimate AI Connector airson Puingean-crìche Co-chòrdail ag amalachadh APIan sholaraichean AI a tha co-chòrdail ri OpenAI leis an lìonra multisite WordPress agad. Rèitich iomadh solaraiche AI — gach fear leis an URL puing-crìche, iuchair API, agus modail bunaiteach aige fhèin — agus stiùir iarrtasan le fallback fèin-obrachail nuair nach eil solaraiche ri fhaighinn.
 
-## Prìomh Fheartan
+## Prìomh Fheartan {#key-features}
 
 - **Taic do dh’iomadh solaraiche**: Cuir iomadh cairt solaraiche AI ris, gach fear leis an URL puing-crìche, iuchair API, agus modail bunaiteach aige fhèin
 - **Slaod-gus-ath-òrdachadh**: Cuir solaraichean air dòigh a rèir prìomhachais leis an làmh-ghreim air gach cairt; cleachdaidh iarrtasan solaraichean san òrdugh
@@ -21,26 +21,26 @@ Bidh Ultimate AI Connector airson Puingean-crìche Co-chòrdail ag amalachadh AP
 - **Leudachadh fèin-obrachail nuair a thèid cur ris**: Leudaichidh cairtean solaraiche ùra gu fèin-obrachail gus an urrainn dhut am mion-fhiosrachadh a lìonadh a-steach sa bhad
 - **Briseadh tasgadan sgriobt**: Thèid sgriobtaichean solaraiche a bhriseadh às an tasgadan nuair a thèid am plugan ùrachadh gus dèanamh cinnteach gu bheil an tionndadh as ùire air a luchdadh
 
-## Riatanasan
+## Riatanasan {#requirements}
 
 - WordPress 5.3 no nas àirde
 - PHP 7.4 no nas àirde
 - Plugan Ultimate Multisite (gnìomhach)
 - Puing-crìche API co-chòrdail ri OpenAI (fèin-aoigheachd no treas-phàrtaidh)
 
-## Stàladh
+## Stàladh {#installation}
 
 1. Luchdaich suas faidhlichean an addon dhan eòlaire `/wp-content/plugins/` agad
 2. Gnìomhaich am plugan tron chlàr-taice 'Plugain' ann an WordPress
 3. Rach gu **Ultimate Multisite → AI Connector** gus an addon a rèiteachadh
 
-## Rèiteachadh
+## Rèiteachadh {#configuration}
 
-### Suidheachadh Iomadh Solaraiche
+### Suidheachadh Iomadh Solaraiche {#multi-provider-setup}
 
 Cleachdaidh an sgrìn rèiteachaidh cruth stèidhichte air cairtean far a bheil gach cairt a’ riochdachadh aon solaraiche AI. Faodaidh tu uiread de sholaraichean a chur ris ’s a dh’fheumas tu.
 
-#### A’ Cur Solaraiche Ris
+#### A’ Cur Solaraiche Ris {#adding-a-provider}
 
 1. Rach gu **Ultimate Multisite → AI Connector** ann an rianachd an lìonraidh
 2. Briog air **Cuir Solaraiche Ris**
@@ -52,15 +52,15 @@ Cleachdaidh an sgrìn rèiteachaidh cruth stèidhichte air cairtean far a bheil 
    - **Modail Bunaiteach** — aithnichear a’ mhodail ri chleachdadh gu bunaiteach airson an t-solaraiche seo (m.e. `gpt-4o`, `mistral-small`)
 5. Briog air **Sàbhail Roghainnean**
 
-#### A’ Toirt Solaraiche Air Falbh
+#### A’ Toirt Solaraiche Air Falbh {#removing-a-provider}
 
 Briog air a’ phutan **Thoir air falbh** air cairt solaraiche sam bith gus a sguabadh às. Sàbhail roghainnean gus an t-atharrachadh a chur an sàs.
 
-#### Ag Ath-òrdachadh Sholaraichean
+#### Ag Ath-òrdachadh Sholaraichean {#reordering-providers}
 
 Slaod an ìomhaigheag greim (⣿) air taobh clì cairt solaraiche sam bith gus ath-òrdachadh a dhèanamh oirre. Bidh an t-òrdugh a’ dearbhadh prìomhachas fallback: thèid iarrtasan a chur chun chiad sholaraiche agus thèid iad air ais gu solaraichean a leanas ma dh’fhàilligear iarrtas.
 
-### Stiùireadh Fallback
+### Stiùireadh Fallback {#fallback-routing}
 
 Nuair a dh’fhàilligear iarrtas chun phrìomh sholaraiche — air sgàth timeout, crìoch reata, no briseadh seirbheis — feuchaidh an connector a-rithist gu fèin-obrachail leis an ath sholaraiche air an liosta. Leanaidh seo sìos an liosta gus an soirbhich le solaraiche no gus am bi gach solaraiche air fheuchainn.
 
@@ -72,7 +72,7 @@ Nuair a dh’fhàilligear iarrtas chun phrìomh sholaraiche — air sgàth timeo
 
 Tha fallback follaiseach don phlugan no theme a tha a’ gairm — gheibh iad an dàrna cuid freagairt shoirbheachail no mearachd dheireannach, ge bith cia mheud solaraiche a chaidh fheuchainn.
 
-### Iomradh air Rèiteachadh Solaraiche
+### Iomradh air Rèiteachadh Solaraiche {#provider-configuration-reference}
 
 | Raon | Riatanach | Tuairisgeul |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Tha fallback follaiseach don phlugan no theme a tha a’ gairm — gheibh iad an
 | Iuchair API | Tha | Iuchair dearbhaidh airson an t-solaraiche seo |
 | Modail Bunaiteach | Tha | Aithnichear modail a thèid a chleachdadh nuair nach eil modail air a shònrachadh san iarrtas |
 
-## Fuasgladh Dhuilgheadasan
+## Fuasgladh Dhuilgheadasan {#troubleshooting}
 
-### Chan eil solaraichean sam bith air an liostadh
+### Chan eil solaraichean sam bith air an liostadh {#no-providers-are-listed}
 
 Ma tha liosta nan solaraichean falamh às dèidh sàbhaladh, dearbhaich:
 
@@ -91,21 +91,21 @@ Ma tha liosta nan solaraichean falamh às dèidh sàbhaladh, dearbhaich:
 - Nach do bhac am brabhsair agad duilleag nan roghainnean bho bhith a’ sàbhaladh (thoir sùil air consola a’ bhrabhsair airson mearachdan JavaScript)
 - Gu bheil am plugan gnìomhach agus gu bheil thu air sgrìn rianachd an lìonraidh
 
-### Tha iarrtasan a’ fàiligeadh airson gach solaraiche
+### Tha iarrtasan a’ fàiligeadh airson gach solaraiche {#requests-are-failing-for-all-providers}
 
 - Dearbhaich gu bheil URL puing-crìche gach solaraiche ruigsinneach bhon fhrithealaiche agad (chan ann dìreach bhon bhrabhsair agad)
 - Dèan cinnteach gu bheil gach iuchair API dligheach agus nach eil i air tighinn gu crìch
 - Lèirmheas air inbhe crìoch-reata agus cuota an t-solaraiche san dashboard aca
 - Cuir logadh dì-bhugachaidh WordPress an comas (`WP_DEBUG_LOG`) gus teachdaireachdan mearachd mionaideach bhon connector a ghlacadh
 
-### Chan eil solaraiche ga chleachdadh airson fallback
+### Chan eil solaraiche ga chleachdadh airson fallback {#a-provider-is-not-being-used-for-fallback}
 
 Atharraichidh slaod-gus-ath-òrdachadh òrdugh fallback. Dearbhaich gu bheil an solaraiche ris a bheil thu an dùil iarrtasan fallback fhaighinn air a shuidheachadh gu ceart air an liosta agus gu bheil an URL puing-crìche agus an iuchair API aige ceart.
 
-### Chan eil cairt solaraiche ùr a’ leudachadh gu fèin-obrachail
+### Chan eil cairt solaraiche ùr a’ leudachadh gu fèin-obrachail {#new-provider-card-does-not-expand-automatically}
 
 Feumaidh leudachadh fèin-obrachail JavaScript a bhith an comas sa bhrabhsair agad. Mura leudaich a’ chairt nuair a bhriogar oirre, thoir sùil air consola a’ bhrabhsair airson mhearachdan. Tha susbaint na cairt an-còmhnaidh ruigsinneach le bhith a’ briogadh air bann-cinn na cairt fiù mura brosnaich leudachadh fèin-obrachail.
 
-## Loga Atharrachaidhean
+## Loga Atharrachaidhean {#changelog}
 
 Faic [Loga Atharrachaidhean](./changelog) airson eachdraidh slàn nan tionndaidhean.

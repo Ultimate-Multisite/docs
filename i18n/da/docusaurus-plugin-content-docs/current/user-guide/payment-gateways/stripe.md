@@ -3,19 +3,19 @@ title: Opsætning af Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Opsætning af Stripe Gateway (v2)
+# Opsætning af Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
 Du kan aktivere op til fire betalingsmetoder på din betalingsindstillingsside: Stripe, Stripe Checkout, PayPal og Manuel. I denne artikel ser vi hvordan du integrerer med **Stripe**.
 
-## Aktivering af Stripe
+## Aktivering af Stripe {#enabling-stripe}
 
 For at aktivere Stripe som en tilgængelig betalingsgateway på dit netværk skal du gå til **Ultimate Multisite > Indstillinger > Betalinger** og sætte flueben ved knappen ved siden af **Stripe** eller **Stripe Checkout** i sektionen Aktive betalingsgateways.
 
 ![Aktivering af Stripe i aktive betalingsgateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Denne metode vil vise et felt til indtastning af kreditkortnummeret under kassen.
 
@@ -25,7 +25,7 @@ For at aktivere Stripe som en tilgængelig betalingsgateway på dit netværk ska
 
 ![Omdirigeringsside til Stripe Checkout under kassen](/img/config/settings-payment-gateways.png)
 
-## Få dine Stripe API-nøgler
+## Få dine Stripe API-nøgler {#setting-up-stripe-webhook}
 
 Når Stripe er aktiveret som betalingsgateway, skal du udfylde felterne for **Stripe Publishable Key** og **Stripe Secret Key**. Du kan få disse ved at logge ind på din Stripe-konto.
 

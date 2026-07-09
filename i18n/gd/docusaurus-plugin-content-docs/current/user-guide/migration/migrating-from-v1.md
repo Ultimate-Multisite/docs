@@ -3,9 +3,9 @@ title: A' chlàradh a' le V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# A' Chlàradhchail a' Chùineachadh de V1
+# A' Chlàradhchail a' Chùineachadh de V1 {#migrating-from-v1}
 
-## Tha Ultimate Multisite a' chluichd air sealladh 1.x air sealladh 2.x.
+## Tha Ultimate Multisite a' chluichd air sealladh 1.x air sealladh 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Tha version 2.0 agus air a' chùineachadh de Ultimate Multisite èifeachd le atharrachadh gu latha, a tha a' chluichd an codal, mar a tha eadar an sinneachdairean a' chluichd. Mar a tha sinn a' chluichd air sealladh 1.x air sealladh 2.x, faighinn thu do chuid datha a' chlàradh gu fòmach a tha na sealladhaidh ùra a' faighinn.
 
@@ -33,13 +33,13 @@ Tha e a' tuile do chluiche gu tha thu a' sgaidh. Chan eil e ag tairt do chluiche
 
 Tha e a' tuile do chluiche gu tha thu a' sgaidh. Chan eil e ag tairt do chluiche gu tha thu a' sgaidh air an pàipear a' sgaidh, le ceannas fìor **Get Started**.
 
-## An tòr mhaighreachadh (Now, the migration)
+## An tòr mhaighreachadh (Now, the migration) {#first-steps}
 
 Tha an mhaighreachaidh a' chluasach faighinn fhaighinn sealladh a tha beag a' chluasach air a' chluasach a tha a' chluasach. Tha eadar-dhearg a' chluasach a tha beag a' chluasach faighinn sealladh a tha beag a' chluasach. Chruaidh an nútinn **Run Check** chun an t-seòl a' fhaighinn a th' ann a tha a' chluasach.
 
 Tha eadar-dhearg a' chluasach faicinn duine a tha de dhòigh: an t-seòl is dòigh **le** an t-seòl is dòigh **fàilte**.
 
-### Le an t-seòl (With Error)
+### Le an t-seòl (With Error) {#now-the-migration}
 
 Tha thuair a thig an t-seòl, faicinn thu thuair a tha de dhòigh, tha thu thuair a tha beag a' chluasach gu sònraich. Tha thu air a' chluasach le fhaighinn sealladh, tha thu air a' chluasach le fhaighinn sealladh. Tha thu an t-seòl a' chluasach faicinn duine a tha de dhòigh: tha thuair a tha beag a' chluasach gu sònraich.
 
@@ -47,7 +47,7 @@ Tha thu an t-seòl a' chluasach faicinn duine a tha de dhòigh: Tha thu air a' c
 
 _**Mar a tha an t-seòl a' chluasach, cha thu a bhith ag obair gu 2.0. Tha thu eadar-dhearg a' chluasach a' chluasach air a' chluasach a tha beag a' chluasach chun a' chluasach a' chluasach a th' ann faicinn an t-seòl.**_
 
-### Fàilte (Without Error)
+### Fàilte (Without Error) {#with-error}
 
 Tha an t-seòl cha tha thu air a' chluasach, tha thuair a tha beag a' chluasach is **Migrate** a' chluasach a tha a' chluasach a tha a' chluasach. Tha thu an t-seòl a' chluasach faicinn duine a tha de dhòigh: tha thuair a tha beag a' chluasach is **Migrate** a' chluasach a tha a' chluasach a tha a' chluasach. Tha thu an t-seòl a' chluasach faicinn duine a tha de dhòigh: tha thuair a tha beag a' chluasach is **Migrate** a' chluasach a tha a' chluasach a tha a' chluasach.
 

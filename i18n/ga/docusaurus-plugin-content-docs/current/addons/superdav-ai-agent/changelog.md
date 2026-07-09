@@ -3,11 +3,11 @@ title: Loga athruithe
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Loga athruithe
+# Loga athruithe {#changelog}
 
-## 1.18.0 — Eisithe ar 2026-06-29
+## 1.18.0 — Eisithe ar 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Nua
+### Nua {#new}
 
 - **Uirlisí Google Calendar** — léigh féilirí agus imeachtaí cumraithe le haghaidh uathoibrithe atá feasach ar sceideal
 - **Mapáil teagmhálaithe agus cúntóirí freastalaithe** — meaitseáil rannpháirtithe féilire le húsáideoirí agus teagmhálaithe an tsuímh
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Soláthraí SMS TextBee** — seol fógraí teachtaireachta téacs cumraithe trí TextBee
 - **Pacáiste compánach ardleibhéil** — cuir uirlisí córas comhad forbróra iontaofa, bunachar sonraí, WP-CLI, dáileoir REST, tógálaí breiseán, léargas git, bainistíocht úsáideoirí, agus tagarmharcála leis, arna ndáileadh ar leithligh ón tógáil WordPress.org
 
-### Feabhsaithe
+### Feabhsaithe {#improved}
 
 - **Socrú seirbhíse bainistithe Superdav** — cuir endpoints seirbhíse óstáilte agus soláthar ceangail uathoibríoch leis do shuímh thacaithe
 - **Pacáistiú eisiúna** — tóg ZIPanna ar leith don chroí agus don Advanced, foilsigh an dá cheann ar GitHub, agus seol an pacáiste croí amháin chuig WordPress.org
 
-### Ceartaithe
+### Ceartaithe {#fixed}
 
 - **Iontaofacht iarratais AI** — feabhsaigh roghnú samhla, teorainneacha ama iarratais, samhail socraithe réamhshocraithe, láimhseáil téacs réasúnaíochta, agus treoir athiarrachta le haghaidh glaonna uirlise neamhbhailí
 - **Daingniú féilire agus meabhrúcháin** — neartaigh tokens Google Calendar agus dí-dhúbláil meabhrúcháin
 - **Tosú úsáide agus atosuithe faofa** — deisigh seoltaí tosaithe úsáide ar an frontend agus atosuithe cumais dheimhnithe
 - **Saincheisteanna athbhreithnithe pacáistithe WordPress.org** — tabhair aghaidh ar aiseolas athbhreithnithe pacáistithe don eisiúint chroí
 
-## 1.16.0 — Eisithe ar 2026-05-20
+## 1.16.0 — Eisithe ar 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Nua
+### Nua {#new-1}
 
 - **Cumas Generate Logo SVG** — is féidir le Theme Builder SVGanna lógó saincheaptha a ghiniúint agus a leabú anois le sláintíocht atá sábháilte ó thaobh namespace de
 - **Uaslódáil grianghraif san agallamh fionnachtana** — áirítear céim uaslódála grianghraif anois in agallamh fionnachtana Theme Builder le haghaidh comhthéacs dearaidh níos saibhre
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Paraiméadar lipéid nascleanúna** — tacaíonn cumas Create Menu anois le `navigation_label` ar leithligh ó theideal an leathanaigh
 - **Infhaighteacht uirlise Sraith 1** — tá sd-ai-agent/site-scrape anois ina uirlis Sraith 1 atá ar fáil de réir réamhshocraithe in Theme Builder
 
-### Ceartaithe
+### Ceartaithe {#fixed-1}
 
 - **Taisce AI Client** — tacaítear léi anois le transients le haghaidh buanseasmhachta tras-iarratais, rud a choisceann caillteanas sonraí ar thascanna gníomhaire fadreatha
 - **Naisc ghnímh as a chéile breiseáin** — ceartaithe agus athainmnithe ar mhaithe le soiléireacht
 
-## 1.10.0 — Eisithe ar 2026-05-05
+## 1.10.0 — Eisithe ar 2026-05-05 {#1100--released-on-2026-05-05}
 
-### Nua
+### Nua {#new-2}
 
 - **Cuardach idirlín Tavily** — cuir Tavily leis mar sholáthraí cuardaigh le haghaidh torthaí cuardaigh idirlín níos saibhre in éineacht le Brave Search
 - **Scileanna ionsuite atá feasach ar théamaí** — seoltar treoracha scileanna Block Themes, Classic Themes, Kadence Blocks, agus Kadence Theme leis an mbreiseán anois
 - **Cumas foirme teagmhála tógálaí suímh** — cuir foirm theagmhála le haon leathanach go díreach ón gcomhéadan comhrá
 
-### Feabhsaithe
+### Feabhsaithe {#improved-1}
 
 - **Comhtháthú WooCommerce athstruchtúraithe** — úsáideann sé APIanna dúchasacha WooCommerce anois le haghaidh iontaofachta agus comhoiriúnachta níos fearr
 - **Athnuachan uathoibríoch ar liosta soláthraithe** — nuair a ghníomhachtaítear nó a dhíghníomhachtaítear aon bhreiseán
 
-### Ceartaithe
+### Ceartaithe {#fixed-2}
 
 - **cumas navigate-to** — deisíodh lúb athluchtaithe gan teorainn ar roinnt leathanaigh riaracháin
 - **cumas list-posts** — réitíonn sé anois ainmneacha catagóirí agus clibeanna go slugaí i gceart

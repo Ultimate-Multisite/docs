@@ -3,9 +3,9 @@ title: Betalingen en facturen beheren
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Betalingen en facturen beheren
+# Betalingen en facturen beheren {#managing-payments-and-invoices}
 
-## Betalingsinstellingen
+## Betalingsinstellingen {#payment-settings}
 
 Voordat je betalingen gaat ontvangen, moet je de betalingsgerelateerde instellingen configureren. Navigeer naar **Ultimate Multisite → Settings** en klik op het tabblad **Payment**.
 
@@ -15,7 +15,7 @@ Hier is een volledige weergave van de pagina met betalingsinstellingen:
 
 ![Volledige pagina Betalingsinstellingen](/img/admin/settings-payments-full.png)
 
-### Algemene betalingsopties
+### Algemene betalingsopties {#general-payment-options}
 
 In de algemene instellingen kun je het volgende configureren:
 
@@ -24,7 +24,7 @@ In de algemene instellingen kun je het volgende configureren:
 
 ![Instellingen voor betalingsgateway](/img/admin/settings-payments-options.png)
 
-### Betalingsgateways
+### Betalingsgateways {#payment-gateways}
 
 Ultimate Multisite ondersteunt meerdere betalingsgateways. Je kunt ze allemaal inschakelen en configureren via het tabblad Payment-instellingen.
 
@@ -40,11 +40,11 @@ Elke gateway heeft een eigen configuratiesectie waar je API keys en andere inste
 
 ![Aanvullende gateway-instellingen](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Je kunt **Sandbox Mode** inschakelen om je betalingsintegratie te testen voordat je live gaat. Wanneer Sandbox Mode actief is, worden er geen echte kosten in rekening gebracht.
 
-## Betalingen bekijken
+## Betalingen bekijken {#viewing-payments}
 
 Navigeer naar de pagina **Payments** onder Ultimate Multisite om alle transacties in je netwerk te zien.
 
@@ -54,7 +54,7 @@ Je kunt betalingen filteren op status (voltooid, in behandeling, mislukt, terugb
 
 Klik op een betaling om de volledige details te bekijken, inclusief de regelitems, bijbehorend lidmaatschap, klantinformatie en betalingsgatewaygegevens.
 
-## Facturen
+## Facturen {#invoices}
 
 Ultimate Multisite kan automatisch facturen genereren voor betalingen. Je kunt de factuursjabloon en het nummeringsformaat aanpassen via de betalingsinstellingen.
 

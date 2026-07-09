@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Àfikún WordPress kan tí ó ṣàfikún àwọn àtúnṣe ìbámu fún Tutor LMS nínú àwọn àyíká ọ̀pọ̀-ojúlé.
 
-## Àpèjúwe
+## Àpèjúwe {#description}
 
 Àfikún yìí ń pèsè àwọn àtúnṣe ìbámu pàtàkì fún lílo Tutor LMS lórí àwọn nẹ́tíwọ́ọ̀kì ọ̀pọ̀-ojúlé WordPress. Ó ń bójú tó ìforúkọsílẹ̀ àwọn aṣàmúlò, ìṣàkóso olùkọ́, àwọn ìdíwọ̀n ẹ̀kọ́, àti àwọn iṣẹ́ míì tí ó jẹ́ ti ọ̀pọ̀-ojúlé pàtó.
 
-## Àwọn Ẹ̀yà
+## Àwọn Ẹ̀yà {#features}
 
 - **Ìṣàkóso Tábìlì Database**: Ó máa ń ṣàwárí àti ṣẹ̀dá àwọn tábìlì Tutor LMS tí ó sọnù laifọwọ́yi, tí wọ́n kùnà nítorí àwọn ìdènà foreign key ọ̀pọ̀-ojúlé
 - **Ìforúkọsílẹ̀ Aṣàmúlò Ọ̀pọ̀-ojúlé**: Àwọn olùmúlò AJAX àdáni fún ṣíṣàkóso ìforúkọsílẹ̀ aṣàmúlò kọjá àwọn ojúlé nẹ́tíwọ́ọ̀kì
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **Àwọn Ìwo Admin Àdáni**: Àtòkọ olùkọ́ àti ojú ìṣàkóso tí ó mọ̀ nípa ọ̀pọ̀-ojúlé
 - **Àwọn Irinṣẹ́ Admin**: Ojú ìṣàkóso database fún àwọn alákóso nẹ́tíwọ́ọ̀kì àti ojúlé
 
-## Àwọn Ohun Tí Ó Nílò
+## Àwọn Ohun Tí Ó Nílò {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - Ìfí sori WordPress Ọ̀pọ̀-ojúlé
 - Àfikún Ultimate Multisite (fún iṣẹ́ àwọn ìdíwọ̀n ẹ̀kọ́)
 
-## Ìfí Sori
+## Ìfí Sori {#installation}
 
 1. Ṣàgbéwọlé àwọn fáìlì àfikún sí `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Rí i dájú pé Tutor LMS ti fi sori ẹrọ àti pé ó ti ṣiṣẹ́
 3. Mú àfikún náà ṣiṣẹ́ nípasẹ̀ àkọsílẹ̀ aṣàyàn 'Àwọn Àfikún' nínú WordPress
 4. Àfikún náà yóò darapọ̀ mọ́ Tutor LMS laifọwọ́yi
 
-## Ètò Fáìlì
+## Ètò Fáìlì {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Iṣẹ́ Tí A Gbé Kúrò Nínú MU Plugin
+## Iṣẹ́ Tí A Gbé Kúrò Nínú MU Plugin {#functionality-moved-from-mu-plugin}
 
 Àfikún yìí ní iṣẹ́ tí ó wà tẹ́lẹ̀ nínú `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - Ìmúlò ìforúkọsílẹ̀ aṣàmúlò ọ̀pọ̀-ojúlé
 - Ìfihàn ID ọjà ẹ̀kọ́
 
-## Ìṣàkóso Database
+## Ìṣàkóso Database {#database-management}
 
-### Ìṣòro Náà
+### Ìṣòro Náà {#the-problem}
 
 Nínú àwọn àyíká ọ̀pọ̀-ojúlé WordPress, ìṣẹ̀dá tábìlì Tutor LMS máa ń kùnà fún àwọn tábìlì tí ó ní àwọn ìdènà foreign key sí tábìlì àwọn aṣàmúlò. Èyí ń ṣẹlẹ̀ nítorí pé:
 
@@ -81,7 +81,7 @@ Nínú àwọn àyíká ọ̀pọ̀-ojúlé WordPress, ìṣẹ̀dá tábìlì T
 - Àwọn foreign key ń tọ́ka sí `wp_2_users` (èyí tí kò sí)
 - Tábìlì àwọn aṣàmúlò gangan ni `wp_users` (tí a pín káàkiri nẹ́tíwọ́ọ̀kì)
 
-### Ojútùú Náà
+### Ojútùú Náà {#the-solution}
 
 Àfikún yìí máa ń ṣe wọ̀nyí laifọwọ́yi:
 
@@ -92,13 +92,13 @@ Nínú àwọn àyíká ọ̀pọ̀-ojúlé WordPress, ìṣẹ̀dá tábìlì T
    - Ìṣẹ̀dá ojúlé tuntun nínú nẹ́tíwọ́ọ̀kì
    - Ṣíṣe àyẹ̀wò tábìlì pẹ̀lú ọwọ́ nípasẹ̀ ojú Admin
 
-### Àwọn Tábìlì Tí Ó Kan
+### Àwọn Tábìlì Tí Ó Kan {#affected-tables}
 
 - `tutor_coupon_usages` - Ó ní foreign key sí tábìlì àwọn aṣàmúlò
 - `tutor_carts` - Ó ní foreign key sí tábìlì àwọn aṣàmúlò
 - `tutor_notification_preferences` - Tábìlì TutorPro pẹ̀lú foreign key sí tábìlì àwọn aṣàmúlò
 
-### Ojú Admin
+### Ojú Admin {#admin-interface}
 
 Wọlé sí àwọn irinṣẹ́ ìṣàkóso database ní:
 
@@ -111,6 +111,6 @@ Ojú náà jẹ́ kí o lè:
 - Ṣàyẹ̀wò àtòpọ̀ database
 - Wo ìwífún ipò ní kíkún
 
-## Àtìlẹ́yìn
+## Àtìlẹ́yìn {#support}
 
 Àfikún yìí jẹ́ èyí tí a ṣe pàtó fún pẹpẹ KursoPro. Fún àtìlẹ́yìn imọ̀-ẹ̀rọ, kàn sí ẹgbẹ́ ìdàgbàsókè.

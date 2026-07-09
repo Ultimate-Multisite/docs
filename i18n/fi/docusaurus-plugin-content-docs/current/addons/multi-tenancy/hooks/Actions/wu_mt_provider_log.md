@@ -4,11 +4,11 @@ title: Toiminto - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Action: wu_mt_provider_log
+# Action: wu_mt_provider_log {#action-wumtproviderlog}
 
 Käynnistyy, kun palveluntarjoaja kirjaa viestin lokiin.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Käynnistyy, kun palveluntarjoaja kirjaa viestin lokiin.
 | $level | `string` | Lokitaso. |
 | $context | `array` | Lisäkonteksti. |
 
-### Alkaen
+### Alkaen {#since}
 
 - 1.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400) rivillä 400

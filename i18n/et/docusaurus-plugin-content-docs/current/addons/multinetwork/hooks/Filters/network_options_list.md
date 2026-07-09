@@ -4,19 +4,19 @@ title: Filter - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Filter: network_options_list
+# Filter: network_options_list {#filter-networkoptionslist}
 
 Filtreerib võrgu valikute loendit, mis sõltuvad võrgu domeenist ja teest.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
 | $network_options | `array` | Võrgu valikute nimede loend. |
 
-### Alates
+### Alates {#since}
 
 - 1.3.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1615) real 1615

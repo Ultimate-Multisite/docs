@@ -3,18 +3,18 @@ title: Temas izstrādes spējās
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Temas būvums: Bloktemu scaffoldēšana un aktivizācija
+# Temas būvums: Bloktemu scaffoldēšana un aktivizācija {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 ieviesta divas spēcīgas iespējas, kas ļauj jums tieši no чаta interfeisa izveidot un izvietot personalizētus bloktemas.
 
-## Īssvarojums
+## Īssvarojums {#overview}
 
 Iespējās **scaffold-block-theme** un **activate-theme** iespējas ļauj agentiem:
 - Izveidot pilnas, produkcijai gatavas bloktemas atbilstoši jūsu specifikācijām
 - Automāti aktivizēt temus uz jūsu vietnē bez manas iejaukšanās
 - Izveidot kohesīvu vizuālu identitāti ar ceļvedojamajiem dizaina lēmumiem
 
-## Bloktemas scaffoldēšana
+## Bloktemas scaffoldēšana {#scaffold-block-theme}
 
 **scaffold-block-theme** iespēja izveido jaunu WordPress bloktemu ar pilnu temu struktūru, kur ietver:
 
@@ -23,7 +23,7 @@ Iespējās **scaffold-block-theme** un **activate-theme** iespējas ļauj agenti
 - Personalizētus bloku stili un variācijas
 - Temas metadatus un atbalsta deklarācijas
 
-### Kā izmantot
+### Kā izmantot {#how-to-invoke}
 
 Jautājumā ar Superdav AI Agent varētu lūgt temu izveidi:
 
@@ -38,7 +38,7 @@ Agentis darīs šo:
 3. Izveidīs visus nepieciešamos temas failus
 4. Gatavo temu aktivizācijai
 
-### Jautājums par rezultātiem
+### Jautājums par rezultātiem {#expected-output}
 
 Kad iespēja veiksmīgi izstrādās, jūs redziet:
 
@@ -56,11 +56,11 @@ Piemēra rezultāta:
   Statuss: Gatava aktivizācijai
 ```
 
-## Temas aktivizācija
+## Temas aktivizācija {#activate-theme}
 
 Spēkmes **activate-theme** ļauj pārlaupīt savu vietni uz jauni izveidotu vai jau eksistējo blokiem temām.
 
-### Kā izmantot
+### Kā izmantot {#how-to-invoke-1}
 
 Pēc tēmas izveidošanas jūs varat to aktivizēt neatkarīgi no laika:
 
@@ -74,7 +74,7 @@ Vai aktivizēt jebkuru jau eksistējo tēmu:
 "Pārlaupīt Twentytwentyfour tēmām"
 ```
 
-### Jautājums par rezultātiem
+### Jautājums par rezultātiem {#expected-output-1}
 
 Kad aktivizācija veiksmīgi pabeidzjas:
 
@@ -92,7 +92,7 @@ Piemēra rezultāta:
   Piezīme: Pārbaudiet savu puslipi, lai apstiprinātu jauno dizainu
 ```
 
-## Darba plāns: Izveidot un aktivizēt
+## Darba plāns: Izveidot un aktivizēt {#workflow-scaffold-and-activate}
 
 Tipisks darba plāns kombinē abas iespējas:
 
@@ -102,7 +102,7 @@ Tipisks darba plāns kombinē abas iespējas:
 4. **Aktivizēt**: "Aktivizēt tēmu tagad"
 5. **Apstiprināt**: Apmeklējiet savu vietni, lai apstiprinātu, ka jaunais dizains ir pieejams
 
-## Dizaina tokeni un personalizācija
+## Dizaina tokeni un personalizācija {#design-tokens-and-customization}
 
 Izveidotas tēmas izmanto WordPress dizaina tokenus (kairībā ar `theme.json`) šādi:
 
@@ -114,14 +114,14 @@ Izveidotas tēmas izmanto WordPress dizaina tokenus (kairībā ar `theme.json`) 
 
 Šie tokeni ir centrēti `theme.json` failā, kas ļauj viegli pielāgot visu dizaina sistēmu no vienas faila.
 
-## ierobežojumi un paziņojumi
+## ierobežojumi un paziņojumi {#limitations-and-notes}
 
 Tema tiek izveidots failā `/wp-content/themes/` un jāievēro WordPress nosaukuma konvencijas.
 Aktivizācija prasa atbilstošas iestatas uz jūsu WordPress vietnē.
 Piemērotu PHP koda temās ir minimāli; sarežģītas funkcijas veidzam ar pluginus.
 Bloktemas labāk darbojas ar WordPress 5.9 un jaunāku versiju.
 
-## Kļūdu likums (Troubleshooting)
+## Kļūdu likums (Troubleshooting) {#troubleshooting}
 
 **Tema neparādās pēc izveidošanas (scaffolding)**
 - Pārbaudiet, vai temāji direktorijs ir savāts un ir atbilstošas iestatas.
@@ -138,7 +138,7 @@ Bloktemas labāk darbojas ar WordPress 5.9 un jaunāku versiju.
 - Tīriet jebkuru kešēšanas pluginu (caching plugins).
 - Pārbaudiet, vai jūsu WordPress versija atbalsta to tokenus, ko jūs izmantojat.
 
-## Nākamie soļi
+## Nākamie soļi {#next-steps}
 
 Pēc tematas aktivizēšanas var:
 - Izmantot **Design System Aesthetics** prasmi, lai uzlabotu tipografiju, krāsas un atstarpes (spacing).

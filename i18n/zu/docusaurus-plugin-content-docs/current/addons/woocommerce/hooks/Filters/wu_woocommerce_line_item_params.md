@@ -4,11 +4,11 @@ title: Isihlungi - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params
+# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Hlunga amapharamitha asetshenziswa ukudala izinto zomugqa ku-WooCommerce Cart, ngaphambi kokuqondisa ikhasimende ekukhokheni kwe-WooCommerce.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Hlunga amapharamitha asetshenziswa ukudala izinto zomugqa ku-WooCommerce Cart, n
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Isenzakalo sento yomugqa se-Ultimate Multisite. |
 | $wc_product | `\WC_Product` | Umkhiqizo we-WooCommerce. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) emgqeni 662
 
 
-## Okubuyiswayo
+## Okubuyiswayo {#returns}
 Amapharamitha ento yomugqa ashintshiwe.

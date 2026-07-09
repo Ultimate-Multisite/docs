@@ -3,21 +3,21 @@ title: Installation och leverantörskonfiguration
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: installation och leverantörskonfiguration
+# Domain Seller: installation och leverantörskonfiguration {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller addon levereras med en guidad installationsguide som leder dig genom varje obligatoriskt steg. Den här sidan beskriver guideflödet och hur du konfigurerar eller konfigurerar om leverantörer efteråt.
 
-## Krav
+## Krav {#requirements}
 
 - **Ultimate Multisite** v2.4.12 eller högre, nätverksaktiverad
 - **PHP** 7.4+
 - API-uppgifter för minst en registrar som stöds
 
-## Installationsguide vid första körning
+## Installationsguide vid första körning {#first-run-setup-wizard}
 
 Installationsguiden startar automatiskt första gången du nätverksaktiverar pluginet. Den är också tillgänglig när som helst från **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Steg 1 — Välj en leverantör
+### Steg 1 — Välj en leverantör {#step-1--choose-a-provider}
 
 Välj den registrar du vill ansluta. Alternativ som stöds:
 
@@ -33,7 +33,7 @@ Välj den registrar du vill ansluta. Alternativ som stöds:
 | NameSilo | Nej | Nej |
 | Enom | Ja | Nej |
 
-### Steg 2 — Ange uppgifter
+### Steg 2 — Ange uppgifter {#step-2--enter-credentials}
 
 Varje leverantör har olika uppgiftsfält:
 
@@ -57,17 +57,17 @@ Varje leverantör har olika uppgiftsfält:
 
 Markera **Sandbox mode** där det är tillgängligt för att testa mot leverantörens testmiljö innan du går live.
 
-### Steg 3 — Testa anslutningen
+### Steg 3 — Testa anslutningen {#step-3--test-the-connection}
 
 Klicka på **Test Connection**. Guiden skickar ett lättviktigt API-anrop för att verifiera uppgifter och anslutning. Åtgärda eventuella problem med uppgifterna innan du fortsätter.
 
-### Steg 4 — Importera TLD:er
+### Steg 4 — Importera TLD:er {#step-4--import-tlds}
 
 Klicka på **Import TLDs** för att hämta alla tillgängliga TLD:er och grossistpriser från den anslutna leverantören. Detta fyller TLD-listan som används av domänprodukter. Importen kan ta 30–60 sekunder för leverantörer med stora TLD-kataloger.
 
 TLD:er synkroniseras också om automatiskt en gång per dag via ett schemalagt cron-jobb.
 
-### Steg 5 — Skapa en domänprodukt
+### Steg 5 — Skapa en domänprodukt {#step-5--create-a-domain-product}
 
 Guiden skapar en standardiserad catch-all-domänprodukt med 10 % påslag. Du kan redigera denna produkt direkt eller hoppa över och skapa produkter manuellt under **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Se [Domänprodukter och prissättning](./domain-products) för den fullständiga
 
 ---
 
-## Konfigurera om en leverantör
+## Konfigurera om en leverantör {#reconfiguring-a-provider}
 
 Gå till **Network Admin › Ultimate Multisite › Settings › Domain Seller** (eller klicka på **Settings** i pluginlistan).
 
@@ -88,17 +88,17 @@ Inställningssidan innehåller:
 - **Hantera domänprodukter** — snabblänk till produktlistan
 - **Konfigurera leverantörer** — öppnar Integration Wizard för att lägga till eller konfigurera om leverantörer
 
-### Lägga till en andra leverantör
+### Lägga till en andra leverantör {#adding-a-second-provider}
 
 Klicka på **Konfigurera leverantörer** och kör guiden igen för den nya registraren. Du kan ha flera leverantörer konfigurerade samtidigt. Tilldela varje domänprodukt till en specifik leverantör, eller lämna den på standarden.
 
-### Synkronisera TLD:er manuellt
+### Synkronisera TLD:er manuellt {#syncing-tlds-manually}
 
 På inställningssidan klickar du på **Sync TLDs** bredvid valfri konfigurerad leverantör för att hämta den senaste prissättningen. Detta är användbart efter att en leverantör uppdaterar grossistpriser eller lägger till nya TLD:er.
 
 ---
 
-## Loggar
+## Loggar {#logs}
 
 Varje leverantör skriver till sin egen loggkanal. Loggar kan visas under **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Varje leverantör skriver till sin egen loggkanal. Loggar kan visas under **Netw
 
 ---
 
-## Anteckningar om leverantörers funktioner
+## Anteckningar om leverantörers funktioner {#provider-capability-notes}
 
 Inte varje registrar-API exponerar samma åtgärder. Addon visar åtgärder som inte stöds med tydliga fel för administratörer i stället för att misslyckas tyst.
 

@@ -3,13 +3,13 @@ title: Isaziso Sokususwa Kwemodi Yokwakha Isayithi
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Isaziso Sokususwa Kwemodi Yokwakha Isayithi
+# Isaziso Sokususwa Kwemodi Yokwakha Isayithi {#site-builder-mode-removal-notice}
 
 **Imodi Yokwakha Isayithi isusiwe ku-Superdav AI Agent v1.12.0.** Uma ubusebenzisa imodi Yokwakha Isayithi, kufanele uthuthele ku-**Setup Assistant agent** ukuze wakhe itimu futhi usethe isayithi.
 
-## Kwenzekeni?
+## Kwenzekeni? {#what-happened}
 
-### Imodi Yokwakha Isayithi (Endala)
+### Imodi Yokwakha Isayithi (Endala) {#site-builder-mode-legacy}
 
 Imodi Yokwakha Isayithi yayiyisixhumi esibonakalayo esisekelwe kusisizi esinyathelo ngesinyathelo sokwenza lokhu:
 
@@ -18,7 +18,7 @@ Imodi Yokwakha Isayithi yayiyisixhumi esibonakalayo esisekelwe kusisizi esinyath
 - Ukukhetha itimu
 - Ukusetha okuqukethwe kokuqala
 
-### Yini Eyithathe Esikhundleni?
+### Yini Eyithathe Esikhundleni? {#what-replaced-it}
 
 I-**Setup Assistant agent** manje isingatha konke ukusebenza kwe-Yokwakha Isayithi ngokuthi:
 
@@ -27,15 +27,15 @@ I-**Setup Assistant agent** manje isingatha konke ukusebenza kwe-Yokwakha Isayit
 - Ukuhlanganiswa nokungeniswa kwe-Theme Builder
 - Inkumbulo ye-site_brief ehlala ikhona yezikhathi ezizayo
 
-## Uma Ubusebenzisa Imodi Yokwakha Isayithi
+## Uma Ubusebenzisa Imodi Yokwakha Isayithi {#if-you-were-using-site-builder-mode}
 
-### Amasayithi Akho Aphephile
+### Amasayithi Akho Aphephile {#your-sites-are-safe}
 
 - Amasayithi akhona adalwe ngemodi Yokwakha Isayithi ayaqhubeka nokusebenza
 - Akukho ukulahleka kwedatha noma ukuphazamiseka kwesayithi
 - Ungaqhubeka nokuphatha amasayithi akho ngokujwayelekile
 
-### Thuthela ku-Setup Assistant agent
+### Thuthela ku-Setup Assistant agent {#migrate-to-setup-assistant-agent}
 
 Ukuze usethe isayithi entsha noma ushintshe itimu, sebenzisa i-Setup Assistant agent:
 
@@ -51,7 +51,7 @@ noma
 
 I-Setup Assistant agent ihlinzeka ngokusebenza okufanayo ngokuguquguquka okwengeziwe.
 
-## Ukuqhathanisa: Umakhi Wesayithi vs. Setup Assistant
+## Ukuqhathanisa: Umakhi Wesayithi vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Isici | Umakhi Wesayithi (Ususiwe) | Setup Assistant (Entsha) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ I-Setup Assistant agent ihlinzeka ngokusebenza okufanayo ngokuguquguquka okwenge
 | Izikhathi ezizayo | Phinda ukusetha | Sebenzisa i-site_brief egciniwe |
 | Ukuvumelana nezimo | Ukuhamba komsebenzi okugxilile | Ingxoxo ezivumelanisa nezimo |
 
-## Ukuthuthela ku-Setup Assistant agent
+## Ukuthuthela ku-Setup Assistant agent {#migrating-to-setup-assistant-agent}
 
-### Kumasayithi Amasha
+### Kumasayithi Amasha {#for-new-sites}
 
 Esikhundleni sokusebenzisa imodi Yokwakha Isayithi:
 
@@ -76,7 +76,7 @@ Esikhundleni sokusebenzisa imodi Yokwakha Isayithi:
    - Ukukhiqizwa kwetimu
    - Ukulungiselela kokuqala
 
-### Kumasayithi Akhona
+### Kumasayithi Akhona {#for-existing-sites}
 
 Uma unesayithi ekhona evela kwimodi Yokwakha Isayithi:
 
@@ -85,7 +85,7 @@ Uma unesayithi ekhona evela kwimodi Yokwakha Isayithi:
 3. I-Setup Assistant agent izokusiza ukudala itimu entsha
 4. Idatha yesayithi yakho ihlala ingashintshiwe
 
-### Kuzinguquko Zetimu
+### Kuzinguquko Zetimu {#for-theme-changes}
 
 Esikhundleni sokukhetha itimu kwemodi Yokwakha Isayithi:
 
@@ -95,9 +95,9 @@ Esikhundleni sokukhetha itimu kwemodi Yokwakha Isayithi:
    - Ikhiqize itimu eyenziwe ngokwezifiso
    - Iyivule kusayithi yakho
 
-## Umehluko Obalulekile
+## Umehluko Obalulekile {#key-differences}
 
-### Imodi Yokwakha Isayithi
+### Imodi Yokwakha Isayithi {#site-builder-mode}
 
 ```
 1. Khetha isifanekiso
@@ -106,7 +106,7 @@ Esikhundleni sokukhetha itimu kwemodi Yokwakha Isayithi:
 4. Kuqediwe
 ```
 
-### Setup Assistant agent
+### Setup Assistant agent {#setup-assistant-agent}
 
 ```
 1. Chaza inhloso yesayithi yakho
@@ -117,36 +117,36 @@ Esikhundleni sokukhetha itimu kwemodi Yokwakha Isayithi:
 6. Isifinyezo sesayithi sigcinwa ngezikhathi ezizayo
 ```
 
-## Izinzuzo ze-Setup Assistant agent
+## Izinzuzo ze-Setup Assistant agent {#benefits-of-setup-assistant-agent}
 
-### Iguquguquka Kakhulu
+### Iguquguquka Kakhulu {#more-flexible}
 
 - Chaza isayithi yakho ngolimi lwemvelo
 - Thola izincomo ezenziwe ngokwezifiso
 - Zivumelanise nezidingo zakho ezithile
 
-### Ukwenza Ngokwezifiso Okungcono
+### Ukwenza Ngokwezifiso Okungcono {#better-customization}
 
 - Ukukhiqizwa kwetimu eyenziwe ngokwezifiso
 - Izinqumo zohlelo lokuklama
 - Amathokheni okuklama ahlala ekhona
 
-### Inkumbulo Ehlala Ikhona
+### Inkumbulo Ehlala Ikhona {#persistent-memory}
 
 - I-site_brief yakho iyagcinwa
 - Ama-agent esikhathi esizayo ayiqonda isayithi yakho
 - Asikho isidingo sokuphinda ulwazi lokusetha
 
-### Ukuhamba Komsebenzi Okuhlanganisiwe
+### Ukuhamba Komsebenzi Okuhlanganisiwe {#integrated-workflow}
 
 - Ukungeniswa kwe-Theme Builder
 - Ikhono Lobuhle Bohlelo Lokuklama
 - Izilawuli Zokubonakala Kwamakhono
 - Konke kusebenza ndawonye ngokushelelayo
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
-### Angikwazi ukuthola imodi Yokwakha Isayithi
+### Angikwazi ukuthola imodi Yokwakha Isayithi {#i-cant-find-site-builder-mode}
 
 Imodi Yokwakha Isayithi isusiwe. Sebenzisa i-Setup Assistant agent esikhundleni salokho:
 
@@ -154,7 +154,7 @@ Imodi Yokwakha Isayithi isusiwe. Sebenzisa i-Setup Assistant agent esikhundleni 
 "Ngisize ngisethe isayithi entsha"
 ```
 
-### Ngifuna ukuphinda ngakhe isayithi evela kuMumakhi Wesayithi
+### Ngifuna ukuphinda ngakhe isayithi evela kuMumakhi Wesayithi {#i-want-to-recreate-a-site-from-site-builder}
 
 Ungayakha kabusha nge-Setup Assistant agent:
 
@@ -163,7 +163,7 @@ Ungayakha kabusha nge-Setup Assistant agent:
 3. I-agent izokhiqiza itimu efanayo
 4. I-site_brief yakho izogcinwa ukuze isetshenziswe ngokuzayo
 
-### Isayithi yami ekhona ye-Yokwakha Isayithi ayisebenzi
+### Isayithi yami ekhona ye-Yokwakha Isayithi ayisebenzi {#my-existing-site-builder-site-isnt-working}
 
 Amasayithi akhona adalwe ngemodi Yokwakha Isayithi ayaqhubeka nokusebenza. Uma uhlangabezana nezinkinga:
 
@@ -172,7 +172,7 @@ Amasayithi akhona adalwe ngemodi Yokwakha Isayithi ayaqhubeka nokusebenza. Uma u
 3. Hlola amarekhodi amaphutha e-WordPress
 4. Xhumana nosekelo uma izinkinga ziqhubeka
 
-### Ngisengakwazi ukusebenzisa izifanekiso zami ezindala ze-Yokwakha Isayithi?
+### Ngisengakwazi ukusebenzisa izifanekiso zami ezindala ze-Yokwakha Isayithi? {#can-i-still-use-my-old-site-builder-templates}
 
 Izifanekiso ze-Yokwakha Isayithi azisatholakali. Nokho:
 
@@ -180,14 +180,14 @@ Izifanekiso ze-Yokwakha Isayithi azisatholakali. Nokho:
 - Ungakha kabusha amasayithi afanayo nge-Setup Assistant agent
 - I-Setup Assistant agent ihlinzeka ngezinketho ezengeziwe zokwenza ngokwezifiso
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 1. **Kumasayithi amasha**: Sebenzisa i-Setup Assistant agent
 2. **Kumasayithi akhona**: Qhubeka uwasebenzisa njengoba enjalo
 3. **Kuzinguquko zetimu**: Cela usizo ku-Setup Assistant agent
 4. **Ekucoliseni umklamo**: Sebenzisa ikhono Lobuhle Bohlelo Lokuklama
 
-## Izihloko Ezihlobene
+## Izihloko Ezihlobene {#related-topics}
 
 - **Ukungeniswa kwe-Theme Builder**: Ukusetha okuqondisiwe kwamatimu enziwe ngokwezifiso
 - **Setup Assistant Agent**: Ukusetha isayithi okuholwa i-agent

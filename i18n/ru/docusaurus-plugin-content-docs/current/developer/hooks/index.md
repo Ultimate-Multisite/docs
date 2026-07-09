@@ -3,11 +3,11 @@ title: Справочник хуков
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Справочник хуков
+# Справочник хуков {#hooks-reference}
 
 Автоматически сгенерированная документация для всех **59 действий** и **118 фильтров** в Ultimate Multisite.
 
-## Действия
+## Действия {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Срабатывает перед перенаправлением аутентификации.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Срабатывает непосредственно перед установкой cookie аутентификации.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Срабатывает после сохранения объекта в базе данных.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Позволяет разработчикам plugin добавлять действия в процесс разблокировки.
 
-## Фильтры
+## Фильтры {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Фильтрует длительность периода истечения срока действия cookie аутентификации.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Фильтрует схему перенаправления аутентификации.

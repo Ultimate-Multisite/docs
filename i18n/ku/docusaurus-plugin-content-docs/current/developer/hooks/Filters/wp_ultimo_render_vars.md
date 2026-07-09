@@ -4,11 +4,11 @@ title: Parzûn - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Parzûn: wp_ultimo_render_vars
+# Parzûn: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Destûrê bide pêşdebirên plugin ku guhêrbarekî zêde li konteksta renderê bi awayekî gerdûnî zêde bikin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Daxuyanî |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Destûrê bide pêşdebirên plugin ku guhêrbarekî zêde li konteksta renderê
 | $view | `string` | Navê dîtinê ku dê were render kirin. |
 | $default_view | `string` | Navê fallback_view |
 
-### Ji guhertoya
+### Ji guhertoya {#since}
 
 - 2.0.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) de li rêza 31 hatiye pênase kirin
 
 
-## Vedigerîne
+## Vedigerîne {#returns}

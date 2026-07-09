@@ -3,28 +3,28 @@ title: REST API கண்ணோட்டம்
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API குறிப்பு
+# REST API குறிப்பு {#rest-api-reference}
 
-## அடிப்படை கட்டமைப்பு
+## அடிப்படை கட்டமைப்பு {#base-configuration}
 
 **அடிப்படை URL:** `{site_url}/wp-json/wu/v2/`
 **அங்கீகாரம்:** API Key மற்றும் ரகசியம் (HTTP Basic Auth அல்லது URL அளவுருக்கள்)
 
-## அங்கீகாரம்
+## அங்கீகாரம் {#authentication}
 
-### API-ஐ இயக்கு
+### API-ஐ இயக்கு {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API சான்றுகளைப் பெறுக
+### API சான்றுகளைப் பெறுக {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### அங்கீகார முறைகள்
+### அங்கீகார முறைகள் {#authentication-methods}
 
 **HTTP Basic Auth (பரிந்துரைக்கப்படுகிறது):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## முதன்மை முடிவுப்புள்ளிகள்
+## முதன்மை முடிவுப்புள்ளிகள் {#core-endpoints}
 
-### 1. வாடிக்கையாளர்கள் API
+### 1. வாடிக்கையாளர்கள் API {#1-customers-api}
 
 **அடிப்படை வழி:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. தளங்கள் API
+### 2. தளங்கள் API {#2-sites-api}
 
 **அடிப்படை வழி:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. உறுப்பினர் சேர்க்கைகள் API
+### 3. உறுப்பினர் சேர்க்கைகள் API {#3-memberships-api}
 
 **அடிப்படை வழி:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. தயாரிப்புகள் API
+### 4. தயாரிப்புகள் API {#4-products-api}
 
 **அடிப்படை வழி:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. கட்டணங்கள் API
+### 5. கட்டணங்கள் API {#5-payments-api}
 
 **அடிப்படை வழி:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. டொமைன்கள் API
+### 6. டொமைன்கள் API {#6-domains-api}
 
 **அடிப்படை வழி:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## பதிவுசெய்தல் முடிவுப்புள்ளி
+## பதிவுசெய்தல் முடிவுப்புள்ளி {#registration-endpoint}
 
 `/register` முடிவுப்புள்ளி முழுமையான checkout/பதிவுசெய்தல் ஓட்டத்தை வழங்குகிறது:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## சுயாட்சி tenant முடிவுப்புள்ளிகள்
+## சுயாட்சி tenant முடிவுப்புள்ளிகள் {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 தனிமைப்படுத்தப்பட்ட tenant-களை வழங்க, ஆய்வு செய்ய அல்லது சரிபார்க்கும் ஒருங்கிணைப்புகளுக்கான சுயாட்சி tenant REST கவரேஜைச் சேர்க்கிறது.
 
@@ -242,7 +242,7 @@ tenant பதிவகம், தரவுத்தளம், கோப்பு
 
 `ready: false` என்பதை வெளியீட்டுக்கு முன் தடையாகக் கருதவும். சரிபார்ப்பு விவரங்களைப் பார்த்து, தரவுத்தள host binding, queue, பயனர் provisioning அல்லது routing சிக்கலைச் சரிசெய்து, பின்னர் verification-ஐ மீண்டும் முயலவும்.
 
-## பிழை பதில்கள்
+## பிழை பதில்கள் {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ tenant பதிவகம், தரவுத்தளம், கோப்பு
 }
 ```
 
-## பக்கமாக்கல் மற்றும் வடிகட்டல்
+## பக்கமாக்கல் மற்றும் வடிகட்டல் {#pagination-and-filtering}
 
 **வினவல் அளவுருக்கள்:**
 ```http

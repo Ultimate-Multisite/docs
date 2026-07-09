@@ -3,27 +3,27 @@ title: Siti eksporti
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sätti eksportimine
+# Sätti eksportimine {#site-export}
 
 **Sätti eksportimise** adminileht võimaldab võrku administraatoritele üht site või kogu võrku pakkuda allalaaditavaks arkiviks migratsiooni, varjenduse või üleandmiseks.
 
-## Ühise site eksportimine
+## Ühise site eksportimine {#exporting-one-site}
 
 Minema **Ultimate Multisite > Site Export** ja valima **Generate new Site Export**. Valige see subsite, mida soovite eksporta, seejärel valige, kas arkiv sisalda üleslaadimisi, pluginid ja teemad.
 
 Kui eksport lõpub, laadige ZIP fail **Existing Exports** nist. Eksportitud ZIP failid sisaldavad nüüd itse käivitava `index.php` ja `readme.txt`, seega saab arkivi laadida uue hoosti ja alustada ilma eraldi importi pluginil installimata.
 
-## Kogu võrku eksportimine
+## Kogu võrku eksportimine {#exporting-the-whole-network}
 
 Kasutage **Network Export** Site Exportimise lehel, kui vajate ühtset arkivi, mis sisaldab kogu võrku subsaitid. See on kasulik hoostmigratsioonide enne, katastroofivajenduse harjoitusi või staging rebuildi jaoks, kus iga subsait peab liigutuma koos.
 
 Seega, kuna võrku eksport võib olla palju suurem kui ühise site eksport, kä jätke see ebaväga perioodil ja kinnitage, et siletuju on piisavalt vaba ruumi laadimisfileide, pluginide, teemade ja genereeritud ZIP failide jaoks.
 
-### Võrku importi pakettid (Network Import Bundles)
+### Võrku importi pakettid (Network Import Bundles) {#network-import-bundles}
 
 Ultimate Multisite 2.12.0 alustades saab Site Exporter genereerida **network import bundles** – erialise arkivid, mille eesmärk on ühtlustatud võrku lahendamise jaoks. Võrku importi pakett sisaldab kõik vajalikud failid ja metadata mitme site uue võrku installatsiooni taastamiseks.
 
-#### Võrku importi paketti genereerimine
+#### Võrku importi paketti genereerimine {#generating-a-network-import-bundle}
 
 1. Minime **Ultimate Multisite > Site Export**'i küldu.
 2. Klõpsake **Generate new Network Export**ile.
@@ -32,7 +32,7 @@ Ultimate Multisite 2.12.0 alustades saab Site Exporter genereerida **network imp
 5. Klõpsake **Generate**.
 6. Ladda lahti bundle ZIP fail **Existing Exports**-listist.
 
-#### Restaauramine Network Import Bundle'ist
+#### Restaauramine Network Import Bundle'ist {#restoring-from-a-network-import-bundle}
 
 Saitide restaureerimiseks network import bundle'ist:
 
@@ -52,7 +52,7 @@ Network import bundle'id säilitavad:
 - Media üleslaadimised (nend, kui need on bundleis sisaldatud)
 - Kasutusvaldkonna tabelid ja andmed
 
-## Itself käivitava eksport ZIP faili installimine
+## Itself käivitava eksport ZIP faili installimine {#installing-a-self-booting-export-zip}
 
 Uues hostil itse käivitava ZIP faili restaureerimiseks:
 

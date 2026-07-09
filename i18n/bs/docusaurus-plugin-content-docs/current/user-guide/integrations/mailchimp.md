@@ -3,7 +3,7 @@ title: Integracija sa MailChimpom
 sidebar_position: 7
 _i18n_hash: 9f328f09dc98677c9567636a81a7bf0a
 ---
-# Integracija MailChimp-a
+# Integracija MailChimp-a {#mailchimp-integration}
 
 Ova funkcionalnost je dostupna putem dodataka (addon) **Mailchimp**.
 

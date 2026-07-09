@@ -3,11 +3,11 @@ title: Mmepe Ọnụ ụzọ Ahaziri Ahazi
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Mmepe Custom Gateway
+# Mmepe Custom Gateway {#custom-gateway-development}
 
 Ị nwere ike ịmepụta custom payment gateways site n’ịgbatị class `Base_Gateway`.
 
-## Class Gateway
+## Class Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Debanye Gateway ahụ
+## Debanye Gateway ahụ {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ụzọ Ndị Dị Mkpa
+## Ụzọ Ndị Dị Mkpa {#key-methods}
 
 | Method | Ebumnuche |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Jikwaa arịrịọ refund |
 | `get_payment_methods()` | Weghachite ụzọ ịkwụ ụgwọ echekwara maka onye ahịa |
 
-## Credentials mmeghari maka memberships na-emegharị ugboro ugboro
+## Credentials mmeghari maka memberships na-emegharị ugboro ugboro {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 na-eme ka gateway integrations kọọ ma membership na-emegharị ugboro ugboro nwere credential mmeghari a pụrụ iji ọzọ tupu echekwaa `auto_renew`. Hook `wu_membership_has_renewal_credential` ma weghachite:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Hichapụ akara credential na-efu dịka akụkụ nke usoro re-authorization gara nke ọma nke gateway gị mgbe echekwara credential ọhụrụ a pụrụ iji ọzọ.
 
-## Ndụmọdụ
+## Ndụmọdụ {#tips}
 
 - Weghachite `WP_Error` mgbe niile ma ọ bụrụ na ọ dara ka Ultimate Multisite nwee ike ijikwa ngosipụta njehie
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Jiri `wu_log_add()` maka ndekọ kpọmkwem nke gateway
 
-## Ike ndị na-eweta AI connector
+## Ike ndị na-eweta AI connector {#ai-connector-provider-capabilities}
 
 Custom integrations na-akpọ ọrụ ndị AI connector na-akwado kwesịrị ikwekọ na setị provider OAuth akwadoro nke ewebatara na AI Provider for Anthropic Max v1.3.0:
 

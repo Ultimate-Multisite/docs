@@ -4,11 +4,11 @@ title: 'Suodatin - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Suodattaa data-metatiedot ennen kuin ne serialisoidaan tietokantaan tallennettaviksi.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Suodattaa data-metatiedot ennen kuin ne serialisoidaan tietokantaan tallennettav
 | $data_unserialized | `array` | Objektin tiedot, jotka tallennetaan. |
 | $this | `\Base_Model` | Objekti-instanssi. |
 
-### Alkaen
+### Alkaen {#since}
 
 - 2.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) rivillä 534

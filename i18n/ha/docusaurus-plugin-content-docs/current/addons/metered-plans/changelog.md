@@ -3,7 +3,7 @@ title: Kundin Canje-canje na Tsare-tsaren Auna Amfani
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Tarihin Canje-canje na Tsare-tsaren Metered
+# Tarihin Canje-canje na Tsare-tsaren Metered {#metered-plans-changelog}
 
 Siga 1.1.0 - An saki a 2026-05-05
 - Sabo: Biyan kuɗin AI token don ƙananan shafukan multisite — bibiyi kuma cajin amfani da AI token a fadin shafukan abokan ciniki tare da farashin kowane token da za a iya saita
@@ -14,17 +14,17 @@ Siga 1.1.0 - An saki a 2026-05-05
 - Gyara: An warware fatal errors da matsalolin fara sau biyu a lokacin lodin plugin
 - Ingantawa: An ƙara check-env npm script domin muhallan developer su saita kansu a gudu na farko
 
-### 1.0.3
+### 1.0.3 {#103}
 * An sabunta zuwa Plugin Update Checker v5
 * An ƙara sabbin headers na WordPress plugin
 * An inganta dacewa da sabbin sigogin WordPress
 * An ƙara inganta aikin bin diddigin amfani
 
-### 1.0.2
+### 1.0.2 {#102}
 * Gyaran kurakurai da inganta aiki
 * An inganta rahoton amfani
 
-### 1.0.0
+### 1.0.0 {#100}
 * Sakin farko
 * Babban aikin lissafin kuɗi na metered
 * Bin diddigin amfani da ƙididdigar overage

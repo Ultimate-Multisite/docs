@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Mwongozo wa Msingi wa Ultimate Multisite
+# Mwongozo wa Msingi wa Ultimate Multisite {#ultimate-multisite-101}
 
 Ultimate Multisite ni programu-jalizi ya WordPress Multisite inayokuwezesha kutoa WaaS au Tovuti kama Huduma kwa wateja. Kabla ya kuanza kujifunza jinsi Ultimate Multisite inavyoweza kusaidia biashara yako na wateja wako, kuna maarifa ya msingi tunayohitaji kupata kwanza.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Wengi wetu tunafahamu usakinishaji wa kawaida wa WordPress. Unaweza kuuunda kupitia paneli ya kudhibiti ya mtoaji wako wa hosting au, kwa wajasiri zaidi, kuweka seva mpya ya wavuti na hifadhidata, kupakua faili za msingi na kuanza mchakato wa usakinishaji.
 
@@ -21,13 +21,13 @@ Kwa ufupi, WordPress multisite inaweza kueleweka hivi: Chuo Kikuu kinadumisha us
 
 Ili kuelewa kauli hii vizuri, hebu tuangalie baadhi ya istilahi za msingi zinazopatikana si tu katika nyaraka za Ultimate Multisite bali pia katika jamii ya WordPress kwa ujumla.
 
-### Mtandao (Network)
+### Mtandao (Network) {#the-network}
 
 Kwa mujibu wa WordPress, mtandao wa multisite ni mahali ambapo tovuti ndogo kadhaa zinaweza kusimamiwa kutoka kwenye dashibodi moja. Ingawa kuunda mtandao wa multisite kunatofautiana kati ya watoa huduma za hosting, matokeo ya mwisho kwa kawaida ni maagizo machache ya ziada katika faili ya wp-config.php ili kumjulisha WordPress kuwa inafanya kazi katika hali hii maalum.
 
 Kuna tofauti kadhaa dhahiri kati ya mtandao wa multisite na usakinishaji wa WordPress wa peke yake ambazo tutazijadili kwa ufupi.
 
-#### Subdomain dhidi ya Subdirectory
+#### Subdomain dhidi ya Subdirectory {#subdomain-vs-subdirectory}
 
 Moja ya maamuzi ya kwanza utakayohitaji kufanya ni kama usakinishaji wa multisite utafanya kazi na _subdirectories_ au _subdomains_. Ultimate Multisite inafanya kazi vizuri sawa na chaguo zote mbili lakini kuna tofauti za kiusanifu kati ya usanidi huu mbili.
 
@@ -43,7 +43,7 @@ Katika usanidi wa _subdomain_, matumizi ya cheti cha SSL cha wildcard ni mojawap
 
 Ingawa chaguo nyingine zipo, mara nyingi zina upeo na matumizi machache na zinahitaji usanidi wa ziada na kuzingatia kuhusu uhalali.
 
-#### Programu-jalizi na Mandhari
+#### Programu-jalizi na Mandhari {#plugins-and-themes}
 
 Kile WordPress inachokipa pia inakiondoa, angalau kutoka kwa mtazamo wa mteja. Katika usakinishaji wa WordPress wa peke yake, ikiwa msimamizi wa tovuti anasakinisha programu-jalizi mbaya au anashindwa kudumisha usakinishaji wake, mwathirika na mhasiriwa pekee wa kitendo hiki ni yeye mwenyewe. Hata hivyo, msimamizi wa tovuti anayesakinisha programu-jalizi mbaya kwenye usakinishaji wa multisite anaunda mwathirika wa kila tovuti iliyosakinishwa kwenye mtandao.
 
@@ -51,7 +51,7 @@ Kwa sababu hii, inaposanidiwa kama multisite, WordPress inaondoa uwezo kutoka kw
 
 Kwa kiwango hiki, msimamizi wa mtandao ana jukumu la kusakinisha programu-jalizi na mandhari kwenye mtandao na kukabidhi ruhusa za kutumia programu-jalizi na mandhari hizi kwa tovuti za mtandao. Wasimamizi wa tovuti hawawezi kusakinisha programu-jalizi na mandhari au kufikia programu-jalizi na mandhari ambayo hayajakabidhiwa kwa tovuti yao.
 
-#### Watumiaji na Wasimamizi
+#### Watumiaji na Wasimamizi {#users-and-administrators}
 
 Katika WordPress Multisite, tovuti zote za mtandao zinashiriki hifadhidata sawa na kwa hivyo zinashiriki watumiaji, majukumu na uwezo sawa. Njia bora ya kufikiri juu yake ni kwamba watumiaji wote ni wanachama wa mtandao na si tovuti fulani.
 
@@ -63,13 +63,13 @@ Kurudia kauli hapo juu, ingawa akaunti za watumiaji zinaonekana kuhusiana na tov
 
 Ingawa si dhana ya kigeni katika mifumo ya biashara, chanzo hiki kimoja cha usajili na uthibitishaji wa watumiaji mara nyingi ni dhana ngumu kuelewa kwa watu wanaofahamu usakinishaji wa WordPress wa peke yake ambapo usimamizi wa watumiaji ni rahisi zaidi.
 
-#### Vyombo vya Habari (Media)
+#### Vyombo vya Habari (Media) {#media}
 
 Ambapo tovuti za mtandao zinashiriki hifadhidata moja katika WordPress Multisite, zinadumisha njia tofauti kwenye mfumo wa faili kwa faili za vyombo vya habari.
 
 Mahali pa kawaida pa WordPress (wp-content/uploads) linabaki; hata hivyo, njia yake inabadilishwa ili kuonyesha kitambulisho cha kipekee cha tovuti ya mtandao. Kwa hivyo, faili za vyombo vya habari kwa tovuti ya mtandao zinaonekana kama wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Tulitaja hapo awali kwamba kuna faida dhahiri za _subdomain_ kuliko usanidi wa _subdirectory_ na hapa ndipo: njia.
 
@@ -83,7 +83,7 @@ Katika usanidi wa _subdomain_, hatua hii si lazima kwa sababu kila tovuti ya mta
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Kurasa Tuli
+#### Kurasa Tuli {#static-pages}
 
 Katika usanidi wa _subdirectory_, uwezekano wa migogoro ya majina unaenea hadi kurasa tuli kwa kuwa tovuti kuu na tovuti za mtandao zinashiriki njia sawa.
 
@@ -93,7 +93,7 @@ Ili kuzuia hili, WordPress inatoa njia ya kuweka orodha nyeusi majina fulani ya 
 
 Katika usanidi wa _subdomain_, uwezekano wa migogoro ya majina unapunguzwa na _subdomain_ kwa kuwa ni ya kipekee kwa tovuti ya mtandao na haihusiani kwa njia yoyote na tovuti kuu.
 
-### Usajili
+### Usajili {#registration}
 
 Ndani ya mipangilio ya mtandao wa WordPress Multisite, chaguo kadhaa mpya za usajili wa watumiaji zinapatikana, kuruhusu watumiaji wapya na waliopo kuunda tovuti.
 
@@ -111,7 +111,7 @@ Kwa kiwango hiki, wakati mtumiaji anaingia, anaingia kwenye mtandao na hatimaye 
 
 Hata hivyo, ikiwa asili na madhumuni yaliyokusudiwa ya multisite yalikuwa kutoa tovuti za mtandao tofauti ambazo hazina uhusiano wowote, karibu kila mara inahitajika programu-jalizi za nje au za ziada kudhibiti majukumu ya watumiaji.
 
-### Kikoa na SSL
+### Kikoa na SSL {#domain-and-ssl}
 
 Hebu tuzungumze kuhusu usakinishaji wa WordPress Multisite ambao karibu unaepuka umakini wetu - Wordpress.com. Hii ndiyo mfano mkubwa zaidi wa WordPress multisite na inaonyesha uwezo wake mpana wa kubinafsishwa na kuumbwa ili kutimiza madhumuni.
 
@@ -125,11 +125,11 @@ Kwa wasimamizi wa mtandao, hii inawasilisha safu ya ziada ya ugumu katika usanid
 
 Kwa kiwango hiki, ingawa WordPress Multisite inatoa njia ya kuruhusu [www.anotherdomain.com](http://www.anotherdomain.com) kuwekwa ramani kwa 'site1', msimamizi wa mtandao anaachwa na changamoto ya kusimamia kwa nje maingizo ya DNS na utekelezaji wa vyeti vya SSL.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Kwa tofauti kati ya usakinishaji wa WordPress wa peke yake na usakinishaji wa Multisite kueleweka, hebu tuangalie jinsi Ultimate Multisite ilivyo silaha kuu ya kutoa Tovuti kama Huduma.
 
-### Utangulizi
+### Utangulizi {#introduction}
 
 Ultimate Multisite ni kisu chako cha Uswisi linapokuja suala la kuunda Tovuti kama Huduma (WaaS). Fikiria kuhusu Wix.com, Squarespace, WordPress.com na kisha fikiria kumiliki huduma yako mwenyewe.
 
@@ -137,9 +137,9 @@ Chini ya uso, Ultimate Multisite inatumia WordPress Multisite lakini inafanya hi
 
 Katika sehemu zifuatazo, tutaangalia baadhi ya matumizi ya kawaida na mambo ya kuzingatia yanayohitajika kusaidia matumizi hayo.
 
-### Matumizi
+### Matumizi {#use-cases}
 
-#### Kesi ya 1: Shirika
+#### Kesi ya 1: Shirika {#case-1-an-agency}
 
 Kwa kawaida, ujuzi wa msingi wa shirika upo katika muundo wa tovuti na vipengele kama vile hosting au uuzaji vikiorodheshwa kama huduma za ziada.
 
@@ -165,7 +165,7 @@ Mandhari zinatoa utendaji kama huo, kuruhusu mandhari fulani kuanzishwa au kufic
 
 Mashirika yatapata amani ya akili na Ultimate Multisite ikiwaruhusu kufanya wanachofanya vizuri zaidi - kuunda tovuti za kipekee.
 
-#### Kesi ya 2: Mtoaji wa Eneo Maalum
+#### Kesi ya 2: Mtoaji wa Eneo Maalum {#case-2-niche-provider}
 
 Kuna msemo wa zamani unaosema, "fanya jambo moja na ulifanye vizuri". Kwa wataalamu wengi, hii inamaanisha kuunda bidhaa au huduma kulingana na wazo moja la msingi.
 
@@ -179,7 +179,7 @@ Kwa mtoaji wa tovuti na huduma za eneo maalum, hii inatoa faida isiyolinganishwa
 
 Kulingana na mahitaji, usanidi wa _subdirectory_ au _subdomain_ unaweza kufaa, katika hali hiyo chaguo za kiusanifu zingekuwa kati ya cheti rahisi cha SSL kwa _subdirectories_ au cheti cha SSL cha wildcard kwa _subdomains_.
 
-#### Kesi ya 3: Web Hosting ya WordPress
+#### Kesi ya 3: Web Hosting ya WordPress {#case-3-wordpress-web-hosting}
 
 Kuna njia nyingi za kuhost tovuti za WordPress lakini mara chache ni rahisi kama kutoa nafasi ya wavuti kwa mteja na toleo lililosakinishwa mapema la WordPress. Hii ni kwa sababu maamuzi na mambo kadhaa ya kuzingatia yanahitaji kukuja pamoja ili kutoa huduma yenye maana.
 
@@ -191,11 +191,11 @@ Kwa watengenezaji wanaotaka kushirikiana na Ultimate Multisite, suluhisho pia li
 
 Bila kutegemea programu-jalizi nyingi za nje na leseni, Ultimate Multisite inatoa suluhisho lenye vipengele vingi na linalolinganishwa na lile la Wix, Squarespace, WordPress.com na nyingine.
 
-### Mambo ya Kuzingatia ya Kiusanifu
+### Mambo ya Kuzingatia ya Kiusanifu {#architecture-considerations}
 
 Ingawa si mwongozo kamili, vitu vifuatavyo vinapaswa kutumika kama mwongozo wa uchaguzi sahihi wa teknolojia kusaidia usakinishaji wa Ultimate Multisite.
 
-#### Shared dhidi ya Dedicated Hosting
+#### Shared dhidi ya Dedicated Hosting {#shared-vs-dedicated-hosting}
 
 Kwa bahati mbaya si watoa huduma wote wa hosting ni sawa na baadhi wanafanya msongamano mkubwa wa seva. Watoa huduma wa gharama ya chini kwa kawaida wanazalisha mapato kwa kuongeza msongamano wa seva. Kwa hivyo, usakinishaji wako wa Ultimate Multisite unaweza kuwa moja tu kati ya mamia kadhaa ya tovuti kwenye seva sawa.
 
@@ -209,7 +209,7 @@ Ultimate Multisite inajulikana kufanya kazi na watoa huduma kadhaa wazuri wa hos
 
 Kwa orodha ya watoa huduma wanaoendana na maelekezo kamili ya usanidi kwa kila mmoja, tafadhali angalia nyaraka za Watoa Huduma Wanaoendana.
 
-#### Mambo ya Kuzingatia ya Utendaji
+#### Mambo ya Kuzingatia ya Utendaji {#performance-considerations}
 
 Ultimate Multisite si programu polepole, badala yake, ni ya haraka sana. Hata hivyo, inafanya kazi tu kwa ubora wa programu na miundombinu ya msingi na inaweza kutumia tu kile ambacho ina ufikiaji.
 
@@ -227,7 +227,7 @@ Kwa sababu hii, wasimamizi wengi wa mtandao wanatumia suluhisho za caching za mb
 
 Ultimate Multisite inajumuisha nyongeza ya kisasa ya Cloudflare inayowawezesha wasimamizi wa mtandao kuweka usakinishaji wao nyuma ya Cloudflare na kutumia si tu uwezo wake wa caching bali pia hosting ya DNS, vyeti vya SSL na mbinu za usalama pia.
 
-#### Hifadhi rudufu (Backups)
+#### Hifadhi rudufu (Backups) {#backups}
 
 Mtu anaweza kuuliza watu 50 kwa ushauri juu ya hifadhi rudufu na kupokea maoni 50 tofauti juu ya mikakati ya hifadhi rudufu. Jibu ni, inategemea.
 
@@ -237,7 +237,7 @@ Kwa madhumuni ya sehemu hii, hebu tukubaliane kuwa hifadhi rudufu ni nakala ya h
 
 Kwa uelewa huu, jibu la jinsi ya kufikia hifadhi rudufu na nini ni bora kwa mazingira yako litategemea sana mahitaji yako na uwezo wa mtoaji wa hosting kutimiza mahitaji hayo. Hata hivyo, kwa mpangilio wa yenye maoni mengi zaidi hadi yenye maoni machache, chaguo zilizo hapa chini zinapaswa kutoa mwongozo fulani.
 
-#### Picha za Papo Hapo (Snapshots)
+#### Picha za Papo Hapo (Snapshots) {#snapshots}
 
 Picha za papo hapo ni risasi za fedha kwa hifadhi rudufu kwa sababu ni rahisi, zisizo ngumu (hadi utake kurejesha) na 'zinafanya kazi tu'. Zinahitaji msaada fulani kutoka kwa mtoaji wako ingawa na kwa kawaida zinatumika tu ikiwa una VPS (Virtual Private Server) au kitu kama hicho. Watoa huduma kadhaa walioorodheshwa katika nyaraka zetu za 'Watoa Huduma Wanaoendana' wanatoa hifadhi rudufu zisizohitaji kuingiliwa zaidi au kuzingatia na msimamizi wa mtandao.
 
@@ -245,7 +245,7 @@ Ambapo hifadhi rudufu za jadi zinalenga faili na hifadhidata, picha ya papo hapo
 
 Picha za papo hapo zinaweza kuvutia gharama ya ziada na mtoaji wa hosting lakini ni bima dhidi ya ajali.
 
-#### Hati za Nje
+#### Hati za Nje {#external-scripts}
 
 Inaonekana hakuna uhaba wa hati za nje na suluhisho za kuhifadhi rasilimali za WordPress na MySQL na hizi zingefanya kazi vizuri kwa Ultimate Multisite kwani ni programu-jalizi ya WordPress inayotumia mfumo wa faili wa WordPress na hifadhidata. Hivyo suluhisho linalohifadhi tovuti za WordPress lingeweza kushughulikia mahitaji ya Ultimate Multisite kwa ufasaha.
 
@@ -253,7 +253,7 @@ Hatuwezi kupendekeza hati moja juu ya nyingine lakini ushauri wetu wa jumla ni k
 
 Inapaswa kuzingatiwa kuwa hati hizi, zikiendesha, zitaongeza mzigo wa mfumo ambao unapaswa kuzingatiwa.
 
-#### Programu-jalizi
+#### Programu-jalizi {#plugins}
 
 Karibu hakuna tatizo katika WordPress ambalo haliwezi kutatuliwa na programu-jalizi na ikiwa kusimamia hati za nje si jambo unalolipenda basi labda programu-jalizi ni chaguo bora linalofuata.
 
@@ -261,7 +261,7 @@ Ingawa programu-jalizi zinatofautiana katika chaguo na vipengele, kwa kawaida zi
 
 Katika kuchagua programu-jalizi yako, jihadhari kuthibitisha kuwa inafahamu multisite. Kwa sababu ya asili yake ya uendeshaji wakati hifadhi rudufu inafanya kazi unaweza kutarajia mzigo wa muda kwenye seva hadi mchakato ukamilike.
 
-#### Kikoa na SSL
+#### Kikoa na SSL {#domain-and-ssl-1}
 
 Mengi yamejadiliwa tayari kuhusu majina ya kikoa katika hali ya _subdomain_ ya multisite. Suluhisho karibu la ulimwengu kwa wasimamizi wa mtandao ni kutumia maingizo ya wildcard DNS.
 
@@ -285,7 +285,7 @@ Kwa wengi, matumizi ya Cloudflare ni chaguo rahisi. Mteja anahitaji tu kuweka ki
 
 Nje ya hili, suluhisho mbadala zinahitaji kutafutwa ndiyo maana Ultimate Multisite inapendekeza orodha ya Watoa Huduma Wanaoendana. Hii ni kwa sababu mchakato wa kuweka DNS na SSL unaweza kuwa mchakato usio wa kawaida. Hata hivyo, kwa ushirikiano wa Ultimate Multisite na watoa huduma hawa, ugumu unaondolewa sana na utaratibu unakuwa wa kiotomatiki.
 
-#### Programu-jalizi
+#### Programu-jalizi {#plugins-1}
 
 Kuna uwezekano mkubwa kwamba utahitaji programu-jalizi za ziada kutoa utendaji kwa wateja wako au tovuti za mtandao. Je, programu-jalizi zote zinafanya kazi na WordPress Multisite na Ultimate Multisite? Kweli, inategemea.
 

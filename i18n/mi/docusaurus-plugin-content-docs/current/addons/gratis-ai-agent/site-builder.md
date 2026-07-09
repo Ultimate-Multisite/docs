@@ -3,15 +3,15 @@ title: Whakaruruku Kaihanga Pae v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Ko Site Builder Orchestration v2 (i whakaurua ki Gratis AI Agent v1.4.0) te pūkaha e whakakaha ana i te waihanga paetukutuku ā-taahiraa maha. Ina tono koe i te agent kia "hangaia he paetukutuku wharekai", kia "waihangatia he kohinga mahi me tētahi rangitaki" rānei, ka wāwāhia e te orchestrator taua whāinga taumata-runga hei **mahere** hanganga, ka kimi i ngā plugins e hiahiatia ana hei whakatutuki, ka whakahaere i ia taahiraa ā-raupapa, ka whai i te ahunga whakamua, ā, ka whakaora aunoa i ngā hapa.
 
 ---
 
-## Me Pēhea Te Mahi
+## Me Pēhea Te Mahi {#how-it-works}
 
-### 1. Te Waihanga Mahere
+### 1. Te Waihanga Mahere {#1-plan-generation}
 
 Ina whiwhi te agent i tētahi tohutohu hanga pae, ka karanga ia i te āheinga `create_site_plan` hei whakaputa i tētahi **mahere pae** JSON. Ka whakaahua te mahere i:
 
@@ -61,7 +61,7 @@ Ina whiwhi te agent i tētahi tohutohu hanga pae, ka karanga ia i te āheinga `c
 }
 ```
 
-### 2. Te Kimi Plugin
+### 2. Te Kimi Plugin {#2-plugin-discovery}
 
 I mua i te tīmatanga o te whakahaere, ka matawai te orchestrator i ngā `plugin_requirements` o te mahere, ā, ka tirohia ko ēhea plugins kua kaha kē. Mō ngā plugins e ngaro ana, ka:
 
@@ -71,7 +71,7 @@ I mua i te tīmatanga o te whakahaere, ka matawai te orchestrator i ngā `plugin
 
 Ehara ngā rahunga kimi plugin i te mea whakamutu — ka tohu te orchestrator i ngā taahiraa kua pāngia hei `skipped`, ā, ka haere tonu me te toenga o te mahere.
 
-### 3. Te Whakahaere Mahere
+### 3. Te Whakahaere Mahere {#3-plan-execution}
 
 Ka karanga te orchestrator i `execute_site_plan` me te ID mahere. Ka ahu te whakahaere ā-wāhanga, ā-taahiraa:
 
@@ -79,7 +79,7 @@ Ka karanga te orchestrator i `execute_site_plan` me te ID mahere. Ka ahu te whak
 - **Taahiraa whakarara** — ko ngā taahiraa i roto i te wāhanga kotahi kāore he whakawhirinakitanga ki a rātou anō, ka tukuna ngātahitia ina tautuhia te haki `parallel`.
 - **Wāhiki taahiraa** — he wāhiki takitahi tō ia taahiraa (taunoa: te tautuhinga `Ability Timeout`). Ka tohua tētahi taahiraa kua pau te wā hei `failed`, ā, ka haere tonu te mahere.
 
-### 4. Te Aroturuki Ahunga Whakamua
+### 4. Te Aroturuki Ahunga Whakamua {#4-progress-tracking}
 
 Karangatia `get_plan_progress` i ngā wā katoa hei tirotiro i te tūnga whakahaere:
 
@@ -104,7 +104,7 @@ Ka taea e ngā kaiwhakamahi WP-CLI te aroturuki i te ahunga whakamua mā:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Te Whakaora Hapa
+### 5. Te Whakaora Hapa {#5-error-recovery}
 
 Ina rahua tētahi taahiraa, ka tirohia e te orchestrator mēnā he taahiraa **kōwhiringa kē** kua tautuhia i te mahere:
 
@@ -115,9 +115,9 @@ Ka pūrongo te agent i ngā rahunga katoa i te whakarāpopototanga mahere whakam
 
 ---
 
-## Ngā Āheinga Mahere Pae
+## Ngā Āheinga Mahere Pae {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Ka waihanga i tētahi mahere pae hanganga mai i tētahi whakaahuatanga whāinga reo māori.
 
@@ -134,7 +134,7 @@ Ka waihanga i tētahi mahere pae hanganga mai i tētahi whakaahuatanga whāinga 
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Ka tīmata ki te whakahaere i tētahi mahere pae kua oti kē te waihanga.
 
@@ -150,7 +150,7 @@ Ka tīmata ki te whakahaere i tētahi mahere pae kua oti kē te waihanga.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Ka whakahoki i te tūnga whakahaere onāianei o tētahi mahere pae.
 
@@ -164,7 +164,7 @@ Ka whakahoki i te tūnga whakahaere onāianei o tētahi mahere pae.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ka whakatau ā-ringa i tētahi hipanga kua rahua, ā, ka tīmata anō i te whakahaere mahere mai i te hipanga e whai ake nei. Whakamahia tēnei ina kāore i taea te whakaora aunoa, ā, e hiahia ana koe ki te wawaotanga.
 
@@ -180,7 +180,7 @@ Ka whakatau ā-ringa i tētahi hipanga kua rahua, ā, ka tīmata anō i te whaka
 
 ---
 
-## Te whakataurite i te v1 me te v2
+## Te whakataurite i te v1 me te v2 {#comparing-v1-and-v2}
 
 | Āhuatanga | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Ka whakatau ā-ringa i tētahi hipanga kua rahua, ā, ka tīmata anō i te whaka
 
 ---
 
-## Ngā Tono Mahere WP-CLI
+## Ngā Tono Mahere WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Ka waihanga i tētahi mahere pae mai i tētahi whakaahuatanga whāinga.
 
@@ -205,7 +205,7 @@ Ka waihanga i tētahi mahere pae mai i tētahi whakaahuatanga whāinga.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Ka whakahaere i tētahi mahere i waihangatia i mua.
 
@@ -213,7 +213,7 @@ Ka whakahaere i tētahi mahere i waihangatia i mua.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Ka whakaatu i te kauneke onāianei mō tētahi mahere e whakahaerehia ana, kua oti rānei.
 
@@ -221,7 +221,7 @@ Ka whakaatu i te kauneke onāianei mō tētahi mahere e whakahaerehia ana, kua o
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Ka whakarārangi i ngā mahere pae katoa (e tārewa ana, e haere ana, kua oti hoki).
 
@@ -229,7 +229,7 @@ Ka whakarārangi i ngā mahere pae katoa (e tārewa ana, e haere ana, kua oti ho
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Ka tautuhi anō i tētahi mahere kua rahua ki `pending` kia taea ai te whakahaere anō mai i te tīmatanga.
 

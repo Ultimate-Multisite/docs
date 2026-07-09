@@ -3,11 +3,11 @@ title: Pluginak kudeatzeko gaitasunak
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Pluginak kudeatzeko gaitasunak
+# Pluginak kudeatzeko gaitasunak {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 bertsioak **pluginak kudeatzeko 7 gaitasun** dakartza, AI laguntzaileak elkarrizketa batean dei ditzakeenak. Gaitasun hauek [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) bidez instalatutako WordPress pluginen gaineko kontrol programatikoa ematen dute.
 
-## Gaitasunen ikuspegi orokorra
+## Gaitasunen ikuspegi orokorra {#abilities-overview}
 
 | Gaitasuna | Slug | Deskribapena |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 bertsioak **pluginak kudeatzeko 7 gaitasun** dakartza, AI
 | Instalatu plugina | `install_plugin` | Sandboxeko plugin bat zuzeneko WordPress plugin direktoriora hedatzen du. |
 | Aktibatu plugina | `activate_plugin` | Sandboxeko plugin bat aktibatzen du wp-env sandbox ingurunean. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Plugin instalatzaileak fitxategi-sistemako eragiketak kudeatzen ditu pluginak hedatzean edo kentzean. Portaera nagusiak:
 
@@ -28,7 +28,7 @@ Plugin instalatzaileak fitxategi-sistemako eragiketak kudeatzen ditu pluginak he
 - **Eguneratzea**: Lehendik dauden plugin fitxategiak ordezten ditu. Plugina desaktibatzen du idatzi aurretik, egoera partzialeko erroreak saihesteko.
 - **Ezabatzea slug bidez**: Plugin direktorioa slug bidez aurkitzen du, gune guztietan desaktibatzen du, eta ondoren direktorioa kentzen du.
 
-### Instalazio-kudeatzaile pertsonalizatu bat erregistratzea
+### Instalazio-kudeatzaile pertsonalizatu bat erregistratzea {#registering-a-custom-install-handler}
 
 Instalazioaren bizi-zikloan sar zaitezke `gratis_ai_plugin_installer_before_install` eta `gratis_ai_plugin_installer_after_install` ekintzak erabiliz:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ekosistemaren erregistroa
+## Ekosistemaren erregistroa {#ecosystem-registry}
 
 Gaitasunak **pluginen ekosistemaren erregistroaren** bidez erregistratzen dira. Erregistroak gaitasunen slugak haien kudeatzaile-klaseekin mapatzen ditu, eta AI agentaren tresnen banatzaileari erakusten dizkio.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner integrazioa
+## HookScanner integrazioa {#hookscanner-integration}
 
 `create_plugin` eta `update_plugin` gaitasunek automatikoki exekutatzen dute **HookScanner** sortu berri den kodearen aurka. HookScanner-ek pluginak erregistratutako WordPress action eta filter hooken zerrenda itzultzen du.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner-ek automatikoki saltatzen ditu `vendor/` eta `node_modules/` direktorioak.
 
-## Async lanen arkitektura
+## Async lanen arkitektura {#async-job-architecture}
 
 Luzaroan exekutatzen diren plugin-eragiketak (sortu, instalatu) **async lan** gisa bidaltzen dira, aurrerapenaren zuzeneko jarraipenarekin. AI txat-interfazeak aurrerapena kontsultatzen du eta egoera-eguneraketak erabiltzaileari transmititzen dizkio:
 

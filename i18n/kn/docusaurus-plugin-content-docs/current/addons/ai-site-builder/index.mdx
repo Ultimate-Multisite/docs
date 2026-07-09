@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಆವೃತ್ತಿ
 - PHP 7.4 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಆವೃತ್ತಿ
 - Multisite Ultimate plugin (ಸಕ್ರಿಯವಾಗಿರಬೇಕು)
 
-## Installation
+## Installation {#installation}
 
 1. Addon files ಅನ್ನು ನಿಮ್ಮ `/wp-content/plugins/` ಡೈರೆಕ್ಟರಿಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ
 2. WordPress ನಲ್ಲಿರುವ 'Plugins' ಮೆನುವಿನ ಮೂಲಕ plugin ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ (Activate ಮಾಡಿ)
 3. ನೆಟ್‌ವರ್ಕ್ ಅಡ್ಮಿನ್‌ನಲ್ಲಿ addon ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ
 
-## Development
+## Development {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Project Structure {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testing
+### Testing {#testing}
 
 ಈ addon ಒಂದು ಸಮಗ್ರ ಟೆಸ್ಟಿಂಗ್ ಫ್ರೇಮ್‌ವರ್ಕ್ ಅನ್ನು ಒಳಗೊಂಡಿದೆ:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Test Coverage**: ಕೋಡ್ ಕವರೇಜ್ ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಕಾನ್ಫಿಗರ್ ಮಾಡಲಾಗಿದೆ
 - **Multisite Testing**: ಈ tests ಅನ್ನು multisite environment ನಲ್ಲಿ ನಡೆಸಲಾಗುತ್ತದೆ
 
-### Code Standards
+### Code Standards {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS ಮೂಲಕ ಜಾರಿಗೊಳಿಸಲಾಗಿದೆ
 - **PHP 7.4+ Compatibility**: ಆಧುನಿಕ PHP ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ
 - **Static Analysis**: ಟೈಪ್ ಚೆಕಿಂಗ್‌ಗಾಗಿ PHPStan integration
 - **Code Modernization**: PHP upgrades ಗಾಗಿ Rector rules
 
-### Build System
+### Build System {#build-system}
 
 - **Asset Processing**: CSS/JS files ಗಾಗಿ Minification
 - **Translation**: POT file generation
 - **Packaging**: ವಿತರಣೆಗಾಗಿ Archive ರಚನೆ
 - **Development Mode**: debugging ಗಾಗಿ Unminified assets
 
-## Configuration
+## Configuration {#configuration}
 
 ಈ addon, network admin interface ಮೂಲಕ ಲಭ್ಯವಿರುವ ವಿವಿಧ configuration options ಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Addon initialization ಆದ ನಂತರ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ (Fired)
 - `ultimate-multisite-ai-site-builder_loaded` - ಎಲ್ಲಾ addon files ಲೋಡ್ ಆದ ನಂತರ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ (Fired)
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Addon ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮಾರ್ಪಡಿಸಲು
 - `ultimate-multisite-ai-site-builder_enabled` - Addon enable/disable ಸ್ಥಿತಿಯನ್ನು ಬದಲಾಯಿಸಲು (Override)
 
-## License
+## License {#license}
 
 ಈ addon GPL v3 ಅಥವಾ ನಂತರದ ಆವೃತ್ತಿಯ ಅಡಿಯಲ್ಲಿ ಲೈಸೆನ್ಸ್ ಆಗಿದೆ.
 
-## Support
+## Support {#support}
 
 ಸಹಾಯ ಮತ್ತು documentation ಗಾಗಿ, [MultisiteUltimate.com](https://multisiteultimate.com) ಗೆ ಭೇಟಿ ನೀಡಿ
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix ಅನ್ನು ultimate-multisite ಎಂದು ಮರುನಾಮಕರಣ ಮಾಡಲಾಗಿದೆ; text domain ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ; version bump.
 

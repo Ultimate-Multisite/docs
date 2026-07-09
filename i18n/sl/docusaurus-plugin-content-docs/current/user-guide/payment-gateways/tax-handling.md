@@ -3,7 +3,7 @@ title: Obravnava davkov
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Obravnava davkov
+# Obravnava davkov {#tax-handling}
 
 Ultimate Multisite ima modul za pobiranje davkov vgrajen v naš osnovni plugin, zato lahko, če morate pobirati prometne davke za svoje pakete, pakete storitev in storitve, to preprosto storite brez nameščanja kakršnih koli dodatkov.
 
@@ -11,7 +11,7 @@ Za podjetja s sedežem v Evropi ponujamo **dodatek**, ki doda orodja in funkcije
 
 Ultimate Multisite ne vlaga ali nakazuje davkov vladi v vašem imenu; preprosto vam pomagamo pobrati ustrezne davke ob času transakcije. **Davke boste še vedno morali nakazati sami.**
 
-## Omogočanje pobiranja davkov
+## Omogočanje pobiranja davkov {#enabling-tax-collection}
 
 Pobiranje davkov privzeto ni omogočeno. Če ga želite omogočiti, morate iti na **Ultimate Multisite > Nastavitve > Davki** in preklopiti nastavitev Omogoči davke.
 
@@ -25,7 +25,7 @@ Ogledate si lahko tudi nastavitve davkov za posamezne izdelke:
 
 ![Nastavitve davkov za izdelke](/img/config/settings-taxes.png)
 
-### Davek izključen v primerjavi z davkom vključenim
+### Davek izključen v primerjavi z davkom vključenim {#tax-excluded-vs-tax-included}
 
 Privzeto so vse cene vaših izdelkov brez davka, kar pomeni, da davki **niso vključeni** v ceno izdelka. Če ugotovimo, da mora stranka plačati davke za določen nakup, bomo davke dodali **na vrh** vmesnega seštevka.
 
@@ -37,7 +37,7 @@ Ne pozabite **shraniti** sprememb, ki ste jih naredili.
 
 ###
 
-## Ustvarjanje davčnih stopenj
+## Ustvarjanje davčnih stopenj {#creating-tax-rates}
 
 Ko omogočite pobiranje davkov, boste morali z našim urejevalnikom davčnih stopenj ustvariti davčne stopnje za določene lokacije.
 
@@ -51,7 +51,7 @@ Na strani urejevalnika davčnih stopenj lahko dodate nove davčne stopnje s klik
 
 Vsaki davčni stopnji boste morali dodeliti **naslov** (uporabljen na računih). Nato lahko izberete **državo** (obvezno), **zvezno državo/pokrajino** in **mesto** (obe neobvezni), kjer bo ta davek zaračunan. Na koncu dodajte **davčno stopnjo v odstotkih**.
 
-### Davčne kategorije
+### Davčne kategorije {#tax-categories}
 
 Ustvarite lahko tudi več davčnih kategorij, da dodate različne davčne stopnje za različne vrste izdelkov.
 
@@ -73,7 +73,7 @@ Davčno kategorijo za določen izdelek lahko nastavite tako, da greste na **stra
 
 Na istem zaslonu lahko izklopite preklop **Je obdavčljivo?**, da Ultimate Multisite obvestite, da za ta določen izdelek ne sme pobirati davkov.
 
-## Podpora za evropski VAT
+## Podpora za evropski VAT {#european-vat-support}
 
 Kot omenjeno prej, imamo za stranke v EU na voljo dodatek, ki imajo zaradi evropskih predpisov o VAT dodatne zahteve.
 
@@ -101,7 +101,7 @@ Nato pojdite na **Omrežna administracija > Plugins** in aktivirajte ta dodatek 
 
 <!-- Posnetek zaslona ni na voljo: preklop Omogoči podporo za VAT v nastavitvah davkov po aktivaciji dodatka -->
 
-### Pridobivanje davčnih stopenj VAT
+### Pridobivanje davčnih stopenj VAT {#pulling-on-vat-tax-rates}
 
 Eno od orodij, ki jih doda naša integracija, je možnost nalaganja davčnih stopenj za države članice EU. To lahko storite tako, da po omogočitvi podpore za EU VAT obiščete stran urejevalnika davčnih stopenj.
 
@@ -111,7 +111,7 @@ Na dnu strani boste videli možnosti pridobivanja VAT. Izbira vrste stopnje in k
 
 Vrednosti lahko po pridobivanju tudi uredite. To storite tako, da preprosto uredite vrstico tabele, ki jo potrebujete, in kliknete za shranjevanje novih vrednosti.
 
-### Preverjanje VAT
+### Preverjanje VAT {#vat-validation}
 
 Ko je podpora za VAT omogočena, bo Ultimate Multisite v obrazec za zaključek nakupa dodal dodatno polje, pod poljem naslova za obračun. Polje se bo prikazalo samo strankam, ki se nahajajo v EU.
 

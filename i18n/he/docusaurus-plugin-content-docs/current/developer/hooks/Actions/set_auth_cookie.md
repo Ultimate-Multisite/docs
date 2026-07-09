@@ -4,11 +4,11 @@ title: פעולה - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# פעולה: set_auth_cookie
+# פעולה: set_auth_cookie {#action-setauthcookie}
 
 מופעל מיד לפני שקוביית האימות מוגדרת.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Name | Type | תיאור |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | סכמת האימות. ערכים כוללים 'auth' או 'secure_auth'. |
 | $token | `string` | אסימון המשתמש שמשמש לקובייה הזו. |
 
-### מאז
+### מאז {#since}
 
 - 2.5.0
 - 4.9.0: הוסף הפרמטר <code>$token</code>.
-### מקור
+### מקור {#source}
 
 מוגדר ב-[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) בשורה 124

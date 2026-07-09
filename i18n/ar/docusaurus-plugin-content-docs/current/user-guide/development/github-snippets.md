@@ -3,7 +3,7 @@ title: مقتطفات GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# كيفية استخدام مقتطفات Ultimate Multisite في مستودع GitHub الخاص بنا
+# كيفية استخدام مقتطفات Ultimate Multisite في مستودع GitHub الخاص بنا {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 هناك مقتطفات كود متاحة في مستودع GitHub يُطلبها غالبًا من قبل مستخدمي Ultimate Multisite الذين يرغبون في إضافة وظائف صغيرة مثل إضافة نص Google Analytics على صفحات التسجيل أو إخفاء صندوق ميتا من لوحة تحكم المسؤول.
 
@@ -18,7 +18,7 @@ https://github.com/next-press/wp-ultimo-snippets/
   1. في ملف functions.php الخاص بالقالب الخاص بك.
   2. ملحقات Must-Use (mu-plugins)
 
-# كيفية إضافة المقتطف في ملف functions.php الخاص بالقالب الخاص بك.
+# كيفية إضافة المقتطف في ملف functions.php الخاص بالقالب الخاص بك. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. سجّل الدخول إلى لوحة تحكم شبكة WordPress الخاصة بك واذهب إلى Themes > Theme Editor (انظر لقطة الشاشة أدناه).
   2. في صفحة "Edit Themes"، تأكد من أن القالب النشط لديك مختار في حقل القائمة المنسدلة الموجود في الجانب العلوي الأيمن من الشاشة (#3 في لقطة الشاشة أدناه).
@@ -26,7 +26,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# كيفية إنشاء ملحقات Must-Use (mu-plugins)
+# كيفية إنشاء ملحقات Must-Use (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 يحتوي WordPress على ميزة تسمح لك بتحميل وظائف مخصصة تُسمى "ملحقات Must-Use"، أو "mu-plugins" اختصارًا.  
 يتم تحميل هذه الملحقات الخاصة mu-plugins قبل جميع الملحقات العادية، ولا يمكن إلغاء تفعيلها. في شبكة متعددة المواقع، سيتم تحميل الكود في هذه الملحقات mu-plugins على جميع المواقع في التثبيت الخاص بك.

@@ -6,15 +6,15 @@ _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
 Let plugin developers add new editor options =)
 
-## Parameters
+## Parameters {#action-wuadminpageseditors}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
 | $ | `\WU_Admin_Page` | A página de administração atual |
 
-### Since
+### Since {#parameters}
 
 - 1.0.1
-### Source
+### Source {#since}
 
 Definido em [`views/admin-pages/edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/admin-pages/edit-admin-page.php#L99) na linha 99

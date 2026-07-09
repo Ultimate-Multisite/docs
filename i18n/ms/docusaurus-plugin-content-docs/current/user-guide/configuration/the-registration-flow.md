@@ -3,13 +3,13 @@ title: Aliran Pendaftaran
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Aliran Pendaftaran (v2)
+# Aliran Pendaftaran (v2) {#the-registration-flow-v2}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
 Pengguna boleh mendaftar ke rangkaian anda dengan cara yang berbeza. Mereka boleh menggunakan borang pendaftaran anda atau pautan yang boleh dikongsi ke pelan yang telah dipilih terlebih dahulu. Di sini kami akan menunjukkan cara pelanggan anda boleh mendaftar di rangkaian anda menggunakan laluan yang tersedia dan apa yang berlaku selepas mereka mendaftar di rangkaian anda.
 
-## Menggunakan Borang Pendaftaran:
+## Menggunakan Borang Pendaftaran: {#using-the-registration-form}
 
 Ini ialah proses pendaftaran standard. Anda mencipta halaman pendaftaran dengan **borang pembayaran** dan di sinilah pelanggan anda akan pergi untuk mendaftar di rangkaian anda dan melanggan pelan. Anda boleh mempunyai berbilang halaman pendaftaran, setiap satu dengan borang pendaftaran yang berbeza jika anda mahu.
 
@@ -35,13 +35,13 @@ Jika mereka telah mendaftar pada pelan berbayar atau pengesahan e-mel tidak diwa
 
 ![Laman diaktifkan dengan pautan untuk log masuk ke Dashboard](/img/frontend/site-activated.png)
 
-## Menggunakan Pautan yang Boleh Dikongsi:
+## Menggunakan Pautan yang Boleh Dikongsi: {#using-a-shareable-link}
 
 Proses mendaftar menggunakan pautan yang boleh dikongsi pada asasnya sama seperti borang pendaftaran, satu-satunya perbezaan ialah dengan menggunakan pautan yang boleh dikongsi, pelanggan anda boleh mempunyai produk atau templat laman web yang dipilih terlebih dahulu pada borang pembayaran (rujuk bahagian Memilih produk dan templat terlebih dahulu melalui parameter URL) atau mungkin kod kupon ditambah (rujuk bahagian Menggunakan Parameter URL).
 
 Proses pendaftaran akan sama: mereka perlu mengisi nama, nama pengguna, alamat e-mel, nama dan tajuk laman web, dll... tetapi pelan atau templat laman sudah pun dipilih terlebih dahulu untuk mereka.
 
-### Mendaftar Menggunakan Pembayaran Manual:
+### Mendaftar Menggunakan Pembayaran Manual: {#registering-using-manual-payments}
 
 Jika anda tidak mahu menggunakan PayPal, Stripe atau mana-mana gerbang pembayaran lain yang ditawarkan oleh Ultimate Multisite atau integrasi add-onnya, anda boleh menggunakan pembayaran manual untuk pelanggan anda. Dengan cara ini, anda boleh menjana invois untuk mereka bayar pada pemproses pembayaran pilihan anda selepas mereka mendaftar di rangkaian anda.
 

@@ -3,7 +3,7 @@ title: เอกสารอ้างอิงความสามารถ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# อ้างอิงความสามารถ
+# อ้างอิงความสามารถ {#abilities-reference}
 
 ความสามารถคือการกระทำย่อยพื้นฐานที่ Gratis AI Agent สามารถเรียกใช้บนการติดตั้ง WordPress ของคุณได้ แต่ละความสามารถคือ PHP class ที่ลงทะเบียนไว้ซึ่งเปิดเผย JSON schema — agent จะอ่าน schema นี้ขณะรันไทม์เพื่อทำความเข้าใจว่าต้องใช้พารามิเตอร์ใดและความสามารถนั้นส่งคืนอะไร
 
@@ -11,11 +11,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ประเภทโพสต์แบบกำหนดเอง
+## ประเภทโพสต์แบบกำหนดเอง {#custom-post-types}
 
 ความสามารถเหล่านี้จัดการประเภทโพสต์แบบกำหนดเอง (CPT) ที่ลงทะเบียนผ่าน agent การลงทะเบียนจะถูกบันทึกคงอยู่ในตารางตัวเลือกของ WordPress เพื่อให้ยังคงอยู่หลังการปิดใช้งานและเปิดใช้งาน plugin อีกครั้ง
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 ลงทะเบียนประเภทโพสต์แบบกำหนดเองใหม่
 
@@ -50,7 +50,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 ส่งคืนประเภทโพสต์แบบกำหนดเองทั้งหมดที่ลงทะเบียนโดย agent
 
@@ -73,7 +73,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 ยกเลิกการลงทะเบียนประเภทโพสต์แบบกำหนดเองที่เคยลงทะเบียนโดย agent โพสต์ที่มีอยู่ของประเภทนั้นยังคงอยู่ในฐานข้อมูล แต่จะไม่สามารถเข้าถึงผ่านประเภทโพสต์นั้นได้อีกต่อไป
 
@@ -87,11 +87,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## อนุกรมวิธานแบบกำหนดเอง
+## อนุกรมวิธานแบบกำหนดเอง {#custom-taxonomies}
 
 ความสามารถเหล่านี้จัดการอนุกรมวิธานแบบกำหนดเอง เช่นเดียวกับ CPTs การลงทะเบียนอนุกรมวิธานจะถูกบันทึกคงอยู่
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 ลงทะเบียนอนุกรมวิธานแบบกำหนดเองใหม่
 
@@ -123,7 +123,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 ส่งคืนอนุกรมวิธานแบบกำหนดเองทั้งหมดที่ลงทะเบียนโดย agent
 
@@ -146,7 +146,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 ยกเลิกการลงทะเบียนอนุกรมวิธานแบบกำหนดเองที่เคยลงทะเบียนโดย agent
 
@@ -160,11 +160,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ระบบการออกแบบ
+## ระบบการออกแบบ {#design-system}
 
 ความสามารถของระบบการออกแบบปรับเปลี่ยนการนำเสนอด้านภาพของ site WordPress — ตั้งแต่ CSS แบบกำหนดเองไปจนถึงรูปแบบบล็อกและโลโก้ของ site
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 เพิ่ม CSS ต่อท้ายเข้าไปใน `<head>` ของ site ผ่าน `wp_add_inline_style` CSS จะถูกเก็บไว้ในตัวเลือก `gratis_ai_agent_custom_css` และถูกนำออกจากคิวอย่างสะอาดเมื่อรีเซ็ตความสามารถนี้
 
@@ -190,7 +190,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 ลงทะเบียนรูปแบบบล็อกที่ใช้ซ้ำได้ในไลบรารีรูปแบบของ WordPress
 
@@ -209,7 +209,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 แสดงรายการรูปแบบบล็อกทั้งหมดที่ลงทะเบียนโดย agent
 
@@ -231,7 +231,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 ตั้งค่าโลโก้ไซต์ WordPress เป็น ID ไฟล์แนบที่กำหนด หรือ URL รูปภาพระยะไกล เมื่อระบุ URL ระบบจะดาวน์โหลดรูปภาพและนำเข้าไปยังคลังสื่อ
 
@@ -248,7 +248,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 ใช้พรีเซ็ตสี/ตัวพิมพ์ที่มีชื่อกับ `theme.json` (หรือ `global-styles`) ของธีมที่ใช้งานอยู่ พรีเซ็ตเป็นชุดที่คัดสรรและดูแลโดยทีม Gratis AI Agent
 
@@ -273,11 +273,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## สไตล์ส่วนกลาง
+## สไตล์ส่วนกลาง {#global-styles}
 
 ความสามารถของสไตล์ส่วนกลางอ่านและเขียนค่า theme.json ผ่าน WordPress Global Styles API ซึ่งส่งผลต่อบล็อกและเทมเพลตทั้งหมดทั่วทั้งไซต์
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 ส่งคืนการกำหนดค่าสไตล์ส่วนกลางปัจจุบัน
 
@@ -291,7 +291,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 อัปเดตค่าหนึ่งค่าหรือมากกว่าในการกำหนดค่าสไตล์ส่วนกลาง
 
@@ -318,7 +318,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 รีเซ็ตการเปลี่ยนแปลงสไตล์ส่วนกลางทั้งหมดที่เอเจนต์นำไปใช้ โดยกู้คืนค่าเริ่มต้นของธีม
 
@@ -328,11 +328,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## เมนูนำทาง
+## เมนูนำทาง {#navigation-menus}
 
 ความสามารถของเมนูนำทางสร้างและจัดการเมนูนำทางของ WordPress และรายการต่าง ๆ ของเมนู
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 สร้างเมนูนำทาง WordPress ใหม่
 
@@ -347,7 +347,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 เปลี่ยนชื่อเมนูหรือกำหนดเมนูใหม่ให้กับตำแหน่งธีม
 
@@ -363,7 +363,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 เพิ่มรายการลงในเมนูนำทางที่มีอยู่
 
@@ -383,7 +383,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 ลบรายการออกจากเมนูนำทาง
 
@@ -397,7 +397,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 แสดงรายการเมนูนำทาง WordPress ทั้งหมด รวมถึงตำแหน่งธีมที่ถูกกำหนดให้
 
@@ -420,11 +420,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## การจัดการตัวเลือก
+## การจัดการตัวเลือก {#options-management}
 
 ความสามารถของตัวเลือกอ่านและเขียนตัวเลือก WordPress ผ่าน `get_option` / `update_option` รายการบล็อกเพื่อความปลอดภัยในตัวช่วยป้องกันการแก้ไขการตั้งค่าสำคัญโดยไม่ตั้งใจ
 
-### `get_option`
+### `get_option` {#getoption}
 
 อ่านตัวเลือก WordPress
 
@@ -440,7 +440,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 เขียนตัวเลือก WordPress
 
@@ -458,7 +458,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 ลบตัวเลือก WordPress
 
@@ -474,7 +474,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 แสดงรายการตัวเลือก WordPress ที่ตรงกับรูปแบบ
 
@@ -498,11 +498,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## การจัดการเนื้อหา
+## การจัดการเนื้อหา {#content-management}
 
 ความสามารถด้านการจัดการเนื้อหาสร้างและแก้ไขโพสต์และหน้า WordPress ระบบจะส่งคืน ID ของโพสต์เพื่อให้ขั้นตอนถัดไปในแผนหลายความสามารถสามารถอ้างอิงเนื้อหาที่สร้างขึ้นได้
 
-### `create_post`
+### `create_post` {#createpost}
 
 สร้างโพสต์ หน้า หรือรายการประเภทโพสต์แบบกำหนดเองใหม่ใน WordPress
 
@@ -537,7 +537,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 อัปเดตโพสต์หรือหน้า WordPress ที่มีอยู่
 
@@ -567,7 +567,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 สร้างโพสต์หลายรายการในการเรียกความสามารถครั้งเดียว ลดการไปกลับระหว่างการสร้างไซต์หรือการนำเข้าเนื้อหาจำนวนมาก โพสต์จะถูกสร้างตามลำดับ หากรายการหนึ่งล้มเหลว รายการอื่นจะดำเนินต่อไป และจะรายงานความล้มเหลวในอาร์เรย์ผลลัพธ์
 
@@ -619,7 +619,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 กำหนดรูปภาพเด่น (ภาพขนาดย่อของโพสต์) ให้โพสต์หรือหน้าที่มีอยู่ รองรับ ID ไฟล์แนบ Media Library ที่มีอยู่หรือ URL รูปภาพระยะไกล เมื่อระบุ URL รูปภาพจะถูกดาวน์โหลดและนำเข้าโดยอัตโนมัติ
 
@@ -638,7 +638,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 สร้างแบบฟอร์มติดต่อโดยใช้ plugin แบบฟอร์มที่ใช้งานอยู่ (Contact Form 7, WPForms, Fluent Forms หรือ Gravity Forms ขึ้นอยู่กับว่าติดตั้งตัวใดอยู่) ส่งคืน shortcode ที่สามารถฝังในโพสต์หรือหน้าใดก็ได้
 
@@ -691,11 +691,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## การตรวจสอบด้วยภาพ
+## การตรวจสอบด้วยภาพ {#visual-review}
 
 ความสามารถในการตรวจสอบด้วยภาพช่วยให้ agent จับภาพหน้าจอของหน้าที่เผยแพร่แล้วและวิเคราะห์ได้ ทำให้สามารถตรวจสอบการออกแบบโดยอัตโนมัติ เปรียบเทียบก่อน/หลัง และตรวจสอบ visual regression ได้โดยไม่ต้องใช้ส่วนขยายเบราว์เซอร์ใด ๆ
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 จับภาพหน้าจอของหน้า WordPress ที่ URL ที่กำหนดโดยใช้เบราว์เซอร์ headless ฝั่งเซิร์ฟเวอร์ รูปภาพจะถูกบันทึกลงใน Media Library และส่งคืน URL ของ CDN
 
@@ -724,7 +724,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 รับภาพหน้าจอสองภาพและส่งคืนคะแนนความแตกต่างทางภาพพร้อมรูปภาพแสดงความแตกต่างที่เน้นบริเวณที่เปลี่ยนแปลง มีประโยชน์สำหรับยืนยันว่าการเปลี่ยนแปลงการออกแบบให้ผลลัพธ์ตามที่คาดไว้ หรือสำหรับตรวจจับ regression ที่ไม่ตั้งใจ
 
@@ -754,7 +754,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 จับภาพหน้าจอของหน้าและส่งไปยังโมเดลภาษาเพื่อวิเคราะห์ด้วยภาพ ส่งคืนการประเมินแบบมีโครงสร้างที่ครอบคลุมเลย์เอาต์ ตัวอักษร การใช้สี และข้อกังวลด้านการเข้าถึง
 
@@ -785,11 +785,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ความสามารถที่ติดตั้งได้
+## ความสามารถที่ติดตั้งได้ {#installable-abilities}
 
 รีจิสทรีความสามารถที่ติดตั้งได้ช่วยให้คุณขยาย agent ด้วยชุดความสามารถเพิ่มเติมที่แจกจ่ายเป็น WordPress plugins แต่ละชุดจะลงทะเบียนความสามารถหนึ่งอย่างหรือมากกว่าโดยใช้ API ความสามารถมาตรฐาน
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 ส่งคืนแค็ตตาล็อกของชุดความสามารถที่พร้อมติดตั้งจากรีจิสทรี
 
@@ -818,7 +818,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 ดาวน์โหลดและเปิดใช้งานชุดความสามารถจากรีจิสทรี
 
@@ -832,7 +832,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 สอบถามรีจิสทรีความสามารถเพื่อค้นหา plugin ที่ดีที่สุดสำหรับกรณีการใช้งานที่อธิบายไว้ และติดตั้งหากต้องการ
 

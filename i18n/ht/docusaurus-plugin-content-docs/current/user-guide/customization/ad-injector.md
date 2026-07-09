@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Mete Annen Anba L'Anba ou rete ak Ultimate Multisite: Ad Injector
+# Mete Annen Anba L'Anba ou rete ak Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector se yon **add-on gratis** ki bay ou zouti pou mete anba anba plan ou yo dirèkteman nan paj edisyon yo.
 
@@ -35,7 +35,7 @@ Ou ka tou mete anba nan en-tè (header) Paj Admin pou itilizat yo ki gen plan sa
 
 _Ale nan opsyon Kòd Anba Panel Admin si ou vle montre anba sou back-end itilizat ou a_
 
-### Pi Lwè pase Anba Anba (Beyond Advertising)
+### Pi Lwè pase Anba Anba (Beyond Advertising) {#beyond-advertising}
 
 Ou ka tou itilize Ultimate Multisite: Ad Injector pou ofri sipò pou plan ki pi wo.
 

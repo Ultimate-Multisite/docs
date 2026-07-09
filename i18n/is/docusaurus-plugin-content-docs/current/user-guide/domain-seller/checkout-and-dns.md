@@ -3,13 +3,13 @@ title: Skráningarfelt og viðskiptavarkennar DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Fél og DNS-stjórnun við viðskipti
+# Checkout Fél og DNS-stjórnun við viðskipti {#checkout-field-and-customer-dns-management}
 
-## Felturinn fyrir doménvalg
+## Felturinn fyrir doménvalg {#the-domain-selection-checkout-field}
 
 **Domain Selection** felturinn er eitthvaður sem kemur í viðskipti og gefur viðskiptavinum val á því hvernig þeir geta skráð sitt símtíðarviði. Skrá hann í hvaða viðskiptiform sem bara til að leysa domén.
 
-### Að bæta feltinu í viðskiptiform
+### Að bæta feltinu í viðskiptiform {#adding-the-field-to-a-checkout-form}
 
 1. Gangi yfir **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Opna eða skapa viðskiptiform
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Stillinga feltans (sjá hér að neðan)
 6. Skrá formann
 
-### Feltustillingar
+### Feltustillingar {#field-options}
 
 **Domain modes** — Veldu hvern tabinn viðskiptavinur sjá. Hvert mönnum getist séð á við eða sést sérstaklega:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domain product** — Veldu valfræðlega að binda þetta felt í sérstaka produkt. Ef ekki er sett á, velur viðbúið add-on sjálft samsvarandi produkt ánar eftir því hvernig doménin leitar eftir TLD (top-level domain).
 
-### Feltur fyrir tengiljan/skráningu
+### Feltur fyrir tengiljan/skráningu {#registrant-contact-fields}
 
 Þegar viðskiptavinur velur **Register New Domain** tabinn, bætir viðskiptiforminn feltum fyrir tengiljan/skráningu í sama form:
 
@@ -43,11 +43,11 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 Þessir eru nauðsynlegar fyrir alla registrara og valdið viðkoma þegar byggingarnafn er skráð. Telefonnúmer eru sjálfvirkt formáttarðarðar í alþjóðlega áttamótuna `+CC.NNN` sem registrara spara sér.
 
-### Sjálfvirkur vísar til vefsítalls (Auto-generated site URL)
+### Sjálfvirkur vísar til vefsítalls (Auto-generated site URL) {#auto-generated-site-url}
 
 Þegar viðskiptavinur skráir sig inn eða tengir domén, er fältið fyrir vefsítallinn sjálfvirkt fyllt með valtu doméni. Viðviljandi þarf ekki að fylla í sérstakt fält fyrir URL-gildi.
 
-### Leitarhættur (Search behaviour)
+### Leitarhættur (Search behaviour) {#search-behaviour}
 
 - Til að skoða tilvarðar domén eru skortunar á raunverulegri tíma með AJAX þegar viðskiptavinur er að skrifa
 - Alternativt forslag um TLD (top-level domain) sýnist þegar framlagður domén er ekki til við disponir
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Stjórnun DNS fyrir viðskiptavini (Customer DNS management)
+## Stjórnun DNS fyrir viðskiptavini (Customer DNS management) {#customer-dns-management}
 
 Viðviljandi geta stýrt DNS skjuli fyrir skráð domén hennar í **My Account** síðu, undir innburði þeirra doméns.
 
-### Staðfestar skjulisorð (Supported record types)
+### Staðfestar skjulisorð (Supported record types) {#supported-record-types}
 
 | Staða | Notkun |
 |---|---|
@@ -91,11 +91,11 @@ Viðviljandi geta stýrt DNS skjuli fyrir skráð domén hennar í **My Account*
 | **MX** | Setja server fyrir tölvupósti |
 | **TXT** | Að bæta SPF, DMARC, staðfestingu eða övrum texta skjuli |
 
-### Hvernig veitir viðskipti stjórnun DNS?
+### Hvernig veitir viðskipti stjórnun DNS? {#which-providers-support-dns-management}
 
 DNS-stjórnun (að viðbúa, breyta, sýna úrskurð) er til aðgengi með **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** og **Openprovider**. Þú getur uppfærð nafnarvörðum fyrir Hostinger dómvörð með vönduðum sölujafnari (Domain Seller); DNS-skráir fyrir hostaða dómvörð eru stýrt af kjarninnáttunni Hostinger domain-mapping integration. Namecheap, GoDaddy og NameSilo dómvörð sýna staðsetning og lausa tímabréf, en þú verður að stjórna DNS beint í kontrollpanelinn registrarinnar.
 
-### Skráir með skrefum (Default DNS records)
+### Skráir með skrefum (Default DNS records) {#default-dns-records}
 
 Þú getur sett upp skráir með skrefum sem eru nánast sjálfar á við þegar dómvörð er skráð. Gangi **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Stjórnari: sýna og breyta DNS-skráum
+### Stjórnari: sýna og breyta DNS-skráum {#admin-viewing-and-editing-dns}
 
 Netverkstjórnmenn geta sýnt og breytt DNS-skráir fyrir hvaða viðskiptavin dómvörðs í **Network Admin › Ultimate Multisite › Domains** á breytingasíðu dómvörðs.

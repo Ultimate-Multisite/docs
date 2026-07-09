@@ -3,15 +3,15 @@ title: 'Oppitunti 14: Mitä seuraavaksi'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Oppitunti 14: Mitä seuraavaksi
+# Oppitunti 14: Mitä seuraavaksi {#lesson-14-what-comes-next}
 
 Olet rakentanut niche-verkkosivustoalustan alusta asti. FitSite on julkaistu, se palvelee fitness-studioita ja tuottaa toistuvaa liikevaihtoa. Tämä viimeinen oppitunti tarkastelee, minne tästä jatketaan.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSite on toimiva yritys, jolla on asiakkaita, operaatioita ja kasvusuunta. Nyt mietimme, mitä seuraavaksi.
 
-## Koko FitSite-verkosto
+## Koko FitSite-verkosto {#the-complete-fitsite-network}
 
 Tässä on kaikki, mitä rakensimme 14 oppitunnin aikana:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Vaihtoehto 1: Mene syvemmälle omassa nichessäsi
+## Vaihtoehto 1: Mene syvemmälle omassa nichessäsi {#option-1-go-deeper-in-your-niche}
 
 Ennen kuin laajennat uusiin nicheihin, harkitse syventymistä fitness-alaan:
 
-### Alinichtet
+### Alinichtet {#sub-niches}
 
 - **Joogastudiot** -- erikoistuneet sivupohjat, joissa on meditaatio-, retriitti- ja työpajaominaisuuksia
 - **CrossFit-salit** -- WOD-seuranta, kilpailutulokset, yhteisöominaisuudet
@@ -59,7 +59,7 @@ Ennen kuin laajennat uusiin nicheihin, harkitse syventymistä fitness-alaan:
 
 Jokaisella alinichellä voi olla omat sivupohjansa ja mahdollisesti oma brändinsä, kaikki samalla Ultimate Multisite -verkostolla.
 
-### Premium-ominaisuudet
+### Premium-ominaisuudet {#premium-features}
 
 Rakenna ominaisuuksia, joista fitness-studiot maksavat mielellään lisää:
 
@@ -68,14 +68,14 @@ Rakenna ominaisuuksia, joista fitness-studiot maksavat mielellään lisää:
 - **Fitness-blogisivupohjat** -- valmiiksi rakennetut sisältörakenteet fitness-sisältömarkkinointiin
 - **Sosiaalisen median integraatio** -- tuntiaikataulujen ja päivitysten automaattinen julkaisu
 
-### Maantieteellinen laajentuminen
+### Maantieteellinen laajentuminen {#geographic-expansion}
 
 Jos aloitit paikallisesti, laajenna:
 
 - Muihin kaupunkeihin omassa maassasi
 - Muihin maihin (käytä Ultimate Multisite'n [lokalisointiominaisuuksia](/user-guide/localization/translating) useiden kielten tukemiseen)
 
-## Vaihtoehto 2: Laajenna läheisiin nicheihin
+## Vaihtoehto 2: Laajenna läheisiin nicheihin {#option-2-expand-to-adjacent-niches}
 
 Prosessi, jota seurasit fitness-studioiden kohdalla, toimii missä tahansa nichessä. Toinen nichesisi on helpompi, koska sinulla on jo:
 
@@ -83,7 +83,7 @@ Prosessi, jota seurasit fitness-studioiden kohdalla, toimii missä tahansa niche
 - Operatiivinen kokemus
 - Todistettu toimintamalli
 
-### Fitness-alaan liittyvät läheiset nichet
+### Fitness-alaan liittyvät läheiset nichet {#adjacent-niches-to-fitness}
 
 - **Hyvinvointi ja spa** -- hierojat, päiväkylpylät, hyvinvointikeskukset
 - **Urheiluseurat** -- amatööriurheilujoukkueet, sarjat, harrasteseurat
@@ -91,7 +91,7 @@ Prosessi, jota seurasit fitness-studioiden kohdalla, toimii missä tahansa niche
 
 Näillä on yleisöjen päällekkäisyyttä fitness-alan kanssa, joten markkinointisi ja kumppanuutesi voivat siirtyä mukana.
 
-### Täysin uudet nichet
+### Täysin uudet nichet {#completely-new-niches}
 
 Sovella oppitunnin 2 viitekehystä minkä tahansa nichen arviointiin:
 
@@ -108,7 +108,7 @@ Jokainen uusi niche tarvitsee:
 
 Alustan infrastruktuuri, laskutus ja operatiiviset prosessit pysyvät samoina.
 
-## Vaihtoehto 3: Rakenna alustojen alusta
+## Vaihtoehto 3: Rakenna alustojen alusta {#option-3-build-a-platform-of-platforms}
 
 Mittakaavan kasvaessa voit pyörittää useita niche-brändejä yhdellä Ultimate Multisite -verkostolla:
 
@@ -118,11 +118,11 @@ Mittakaavan kasvaessa voit pyörittää useita niche-brändejä yhdellä Ultimat
 
 Jokaisella brändillä on omat sivupohjansa, tilauksensa ja markkinointinsa, mutta ne jakavat infrastruktuurin, laskutuksen ja operatiiviset prosessit. Tässä Ultimate Multisite'n taloudellinen hyöty muuttuu voimakkaaksi -- yksi alusta, monta vertikaalia.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Täydellistä erottelua nichejen välillä varten harkitse [Multi-Network addon](/addons/multinetwork) -lisäosaa, jonka avulla voit pyörittää useita WordPress-verkostoja yhdestä asennuksesta.
 
-## Vaihtoehto 4: Myy yritys
+## Vaihtoehto 4: Myy yritys {#option-4-sell-the-business}
 
 Niche-verkkosivustoalusta, jolla on toistuvaa liikevaihtoa, alhainen poistuma ja selkeä markkina-asema, on arvokas omaisuuserä. SaaS-yritykset myydään tyypillisesti 3–5-kertaisella vuosiliikevaihdolla.
 
@@ -134,7 +134,7 @@ FitSite, jolla on 200 asiakasta ja $89 ARPU:
 
 Tämä ei ole taattu lopputulos, mutta se on realistinen hyvin johdetulle niche-alustalle.
 
-## Mitä olet oppinut
+## Mitä olet oppinut {#what-you-have-learned}
 
 Tämä kurssi opetti sinulle toistettavan prosessin:
 
@@ -150,7 +150,7 @@ Tämä kurssi opetti sinulle toistettavan prosessin:
 
 Niche on strategia. Alusta on työkalu. Ultimate Multisite tekee työkalusta mahdollisen. Ymmärryksesi nichestä tekee siitä arvokkaan.
 
-## Aloita rakentaminen
+## Aloita rakentaminen {#start-building}
 
 Jos seurasit mukana FitSiten kanssa, sinulla on toimiva alusta. Jos luit löytääksesi oman markkinarakosi, palaa kohtaan [Oppitunti 2: Markkinaraon valitseminen](lesson-2-picking-your-niche) ja aloita prosessi valitsemallesi toimialalle.
 

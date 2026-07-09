@@ -3,13 +3,13 @@ title: Multi-tenancy de Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Multi-tenencia de Hostinger
+# Multi-tenencia de Hostinger {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 añade una capacidad de multi-tenencia de Hostinger para que los dominios alojados puedan participar en el aprovisionamiento de inquilinos soberanos junto con la integración existente de mapeo de dominios de Hostinger.
 
 Utiliza esta capacidad cuando los dominios de inquilino e infraestructura de inquilino aislada se gestionan a través de hPanel de Hostinger.
 
-## Notas de configuración
+## Notas de configuración {#setup-notes}
 
 1. Configura la integración principal de Hostinger en **Ultimate Multisite > Settings > Host Integrations**.
 2. Confirma que el token de API de Hostinger pueda gestionar el dominio o subdominio objetivo.
@@ -19,14 +19,14 @@ Utiliza esta capacidad cuando los dominios de inquilino e infraestructura de inq
 
 La capacidad de Hostinger utiliza la conexión compartida de Hostinger para las operaciones del lado del host. El DNS todavía debe apuntar a la cuenta correcta de Hostinger, y los límites de la cuenta de hPanel siguen aplicándose.
 
-## Cambios específicos de la capacidad
+## Cambios específicos de la capacidad {#capability-specific-changes}
 
 - Se pueden crear inquilinos soberanos con operaciones de dominio conscientes del host.
 - Las cadenas de host de base de datos en la misma máquina se normalizan antes de la verificación de concesión.
 - Los inquilinos gestionados por Hostinger deben usar el valor del host de la base de datos que se muestra en hPanel a menos que el entorno de ejecución de WordPress requiera una anulación local.
 - Las visitas SSO dependen de que el dominio del inquilino resuelva al inquilino alojado por Hostinger.
 
-## Solución de problemas de inquilinos de Hostinger
+## Solución de problemas de inquilinos de Hostinger {#troubleshooting-hostinger-tenants}
 
 - Si la instalación de un inquilino falla, verifica que el dominio ya esté adjunto a la cuenta de Hostinger.
 - Si la verificación de la base de datos falla, compara el nombre de usuario de la BD del inquilino, el nombre de la base de datos y la vinculación del host con hPanel.

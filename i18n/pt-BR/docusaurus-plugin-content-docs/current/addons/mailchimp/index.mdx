@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: integração com Mailchimp
 
 Integre sua rede Multisite Ultimate ao seu Mailchimp. Você pode vincular determinados planos a listas do Mailchimp e adicionar automaticamente assinantes a essas listas no cadastro.
 
-## Instalação
+## Instalação {#installation}
 
 1. Envie 'ultimate-multisite-mailchimp' para o diretório '/wp-content/plugins/'
 2. Ative o plugin pelo menu 'Plugins' no seu WordPress Network Admin
 
-## Guia de uso
+## Guia de uso {#usage-guide}
 
 Sincronizar os e-mails dos assinantes com suas listas do MailChimp é muito fácil com nosso complemento Ultimate Multisite: MailChimp Integration. Este tutorial tem como objetivo ajudar você a configurar tudo!
 
-## Como obter uma chave de API
+## Como obter uma chave de API {#getting-an-api-key}
 
 Antes de começarmos a ver as diferentes configurações disponíveis, precisamos de uma chave de API do MailChimp. Isso permitirá que o Ultimate Multisite se comunique com a API do MailChimp para recuperar listas, grupos e adicionar endereços de e-mail a essas listas e grupos quando os usuários se cadastrarem.
 
@@ -32,7 +32,7 @@ Siga este tutorial para obter sua própria chave de API do MailChimp: [Sobre cha
 
 _Adicione sua chave de API do MailChimp em_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
 
-## Modo de integração
+## Modo de integração {#integration-mode}
 
 O complemento de integração do MailChimp oferece dois “modos de integração”, o que significa que há duas maneiras diferentes de usar o complemento para sincronizar endereços de e-mail.
 
@@ -40,7 +40,7 @@ O complemento de integração do MailChimp oferece dois “modos de integração
 
 _Dois modos de integração para maior flexibilidade!_
 
-### Modo 1: Múltiplas listas
+### Modo 1: Múltiplas listas {#mode-1-multiple-lists}
 
 O modo padrão usa **Múltiplas listas**. Este modo permitirá que você selecione várias listas do MailChimp para cada um dos planos. Esta é a melhor opção se você segmenta seus usuários em listas diferentes.
 
@@ -52,7 +52,7 @@ Para conseguir isso, você pode usar o modo Múltiplas listas para adicionar as 
 
 _Selecione as listas padrão para novas contas e para contas canceladas_
 
-### Modo 2: Lista única + múltiplos grupos
+### Modo 2: Lista única + múltiplos grupos {#mode-2-single-list--multiple-groups}
 
 O MailChimp permite segmentar sua lista em grupos menores de usuários chamados **Grupos**. Isso permite que você tenha mais controle, pois pode enviar uma campanha para um subconjunto específico dos seus assinantes sem precisar criar várias cópias da mesma campanha no MailChimp (o que dificulta analisar as métricas dessa campanha depois).
 
@@ -62,13 +62,13 @@ Por exemplo, você pode ter uma única lista chamada **Assinantes da minha rede,
 
 _Selecione as listas e os grupos padrão, se estiver usando o modo de integração “lista única + múltiplos grupos”_
 
-## Listas e grupos padrão
+## Listas e grupos padrão {#default-lists-and-groups}
 
 Depois de selecionar qual modo de integração faz mais sentido para seu caso de uso específico, é hora de selecionar as listas padrão (e grupos, dependendo do modo). A lista padrão será usada quando um determinado plano não tiver uma lista específica selecionada.
 
 Você também pode selecionar a lista padrão para contas canceladas. Sempre que um usuário encerrar sua assinatura e remover sua conta da sua rede, o endereço de e-mail dele será movido para a lista definida para contas canceladas.
 
-## Como ativar a assinatura dupla
+## Como ativar a assinatura dupla {#enabling-double-subscription}
 
 Na mesma página de configurações, você poderá ativar a **Assinatura dupla**. Esta opção adicionará o usuário tanto à lista padrão selecionada QUANTO à lista selecionada para o plano desse usuário. Se esta opção não estiver ativada, o usuário será adicionado apenas à lista selecionada para o plano do usuário. Se nenhuma estiver definida para esse plano específico, então o usuário será adicionado à lista padrão selecionada.
 
@@ -76,7 +76,7 @@ Na mesma página de configurações, você poderá ativar a **Assinatura dupla**
 
 _Você pode fazer com que seus usuários sejam assinados tanto na lista padrão quanto na lista do plano no cadastro_
 
-## Como selecionar listas e grupos para cada um dos planos
+## Como selecionar listas e grupos para cada um dos planos {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Vá para seus **Planos** e selecione o plano que deseja editar. Observe que, na meta-box **Opções avançadas**, uma nova aba chamada MailChimp estará disponível.
 

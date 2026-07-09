@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# ການຮອງຮັບຜູ້ເຊົ່າຫຼາຍລາຍ
+# ການຮອງຮັບຜູ້ເຊົ່າຫຼາຍລາຍ {#multi-tenancy}
 
 ກະຈາຍເວັບໄຊຍ່ອຍໄປທົ່ວ servers ແລະຖານຂໍ້ມູນ ເພື່ອປະສິດທິພາບ ແລະຄວາມປອດໄພ
 
-## ຈຸດເດັ່ນຂອງການປ່ອຍ Version 1.2.0
+## ຈຸດເດັ່ນຂອງການປ່ອຍ Version 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 ເພີ່ມພື້ນຖານຜູ້ເຊົ່າແບບອະທິປະໄຕ ສຳລັບເວີກໂຟລການແຍກສ່ວນໃນການຜະລິດ:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 ເພີ່ມພື້ນຖານຜູ້ເຊົ່າ
 
 ເບິ່ງຄູ່ມືຜູ້ໃຊ້ສຳລັບ [ເວີກໂຟລການຍ້າຍແບບອະທິປະໄຕ](/user-guide/getting-started/sovereign-migration-workflow), [ການແຍກສ່ວນ multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), ແລະ [ການດຳເນີນງານຜູ້ເຊົ່າແບບອະທິປະໄຕ](/user-guide/administration/sovereign-tenant-operations).
 
-## ຂໍ້ກຳນົດ
+## ຂໍ້ກຳນົດ {#requirements}
 
 - WordPress 5.3 ຫຼືສູງກວ່າ
 - PHP 7.4 ຫຼືສູງກວ່າ
 - ປລັກອິນ Multisite Ultimate (ເປີດໃຊ້ງານ)
 
-## ການຕິດຕັ້ງ
+## ການຕິດຕັ້ງ {#installation}
 
 1. ອັບໂຫຼດໄຟລ໌ addon ໄປຍັງໄດເຣັກທໍຣີ `/wp-content/plugins/` ຂອງທ່ານ
 2. ເປີດໃຊ້ປລັກອິນຜ່ານເມນູ 'Plugins' ໃນ WordPress
 3. ປັບຄ່າການຕັ້ງຄ່າ addon ໃນຜູ້ບໍລິຫານເຄືອຂ່າຍ
 
-## ການພັດທະນາ
+## ການພັດທະນາ {#development}
 
-### ການຕັ້ງຄ່າ
+### ການຕັ້ງຄ່າ {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ໂຄງສ້າງໂຄງການ
+### ໂຄງສ້າງໂຄງການ {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # ກົດການປັບໂຄດໃຫ້ທັນສະໄໝ
 ```
 
-### ການທົດສອບ
+### ການທົດສອບ {#testing}
 
 addon ນີ້ມີ framework ການທົດສອບທີ່ຄົບຖ້ວນ:
 
@@ -93,54 +93,54 @@ addon ນີ້ມີ framework ການທົດສອບທີ່ຄົບຖ
 - **ຄວາມຄອບຄຸມການທົດສອບ**: ຖືກປັບຄ່າໃຫ້ຕິດຕາມຄວາມຄອບຄຸມໂຄດ
 - **ການທົດສອບ Multisite**: ການທົດສອບເຮັດວຽກໃນສະພາບແວດລ້ອມ multisite
 
-### ມາດຕະຖານໂຄດ
+### ມາດຕະຖານໂຄດ {#code-standards}
 
 - **WordPress Coding Standards**: ບັງຄັບໃຊ້ຜ່ານ PHPCS
 - **ຄວາມເຂົ້າກັນໄດ້ PHP 7.4+**: ຮອງຮັບຄຸນສົມບັດ PHP ສະໄໝໃໝ່
 - **ການວິເຄາະ Static**: ການຜະສານ PHPStan ສຳລັບການກວດສອບ type
 - **ການປັບໂຄດໃຫ້ທັນສະໄໝ**: ກົດ Rector ສຳລັບການອັບເກຣດ PHP
 
-### ລະບົບສ້າງ
+### ລະບົບສ້າງ {#build-system}
 
 - **ການປະມວນຜົນຊັບພະຍາກອນ**: ການຫຍໍ້ຂະໜາດໄຟລ໌ CSS/JS
 - **ການແປພາສາ**: ການສ້າງໄຟລ໌ POT
 - **ການບັນຈຸຫີບຫໍ່**: ການສ້າງ archive ສຳລັບການແຈກຈ່າຍ
 - **ໂໝດພັດທະນາ**: ຊັບພະຍາກອນທີ່ບໍ່ຖືກຫຍໍ້ຂະໜາດ ສຳລັບການ debug
 
-## ການປັບຄ່າ
+## ການປັບຄ່າ {#configuration}
 
 addon ນີ້ຮອງຮັບຕົວເລືອກການປັບຄ່າຫຼາຍຢ່າງ ທີ່ເຂົ້າເຖິງໄດ້ຜ່ານອິນເຕີເຟດຜູ້ບໍລິຫານເຄືອຂ່າຍ.
 
-### ການປັບຄ່າຜູ້ເຊົ່າແບບອະທິປະໄຕ
+### ການປັບຄ່າຜູ້ເຊົ່າແບບອະທິປະໄຕ {#sovereign-tenant-configuration}
 
 ສຳລັບຜູ້ເຊົ່າແບບອະທິປະໄຕ, ໃຫ້ປັບຄ່າຖານຂໍ້ມູນຜູ້ເຊົ່າ, root ຂອງລະບົບໄຟລ໌, ການຜູກ database host, ແລະຄວາມສາມາດ host ກ່ອນສົ່ງ traffic ໄປຫາຜູ້ເຊົ່າ. ໃຫ້ແລ່ນການກວດຢືນຢັນການຍ້າຍຫຼັງຈາກທຸກການປ່ຽນແປງທີ່ກະທົບຕໍ່ credentials ຖານຂໍ້ມູນ, ການຜູກ host, ການ route, ຫຼືການຈັດສັນຜູ້ໃຊ້.
 
 ໃຊ້ `localhost` ເທົ່ານັ້ນເມື່ອ runtime ຂອງຜູ້ເຊົ່າ ແລະ database grants ຄາດຫວັງການເຂົ້າເຖິງ socket ທ້ອງຖິ່ນ ຫຼືເຄື່ອງດຽວກັນ. ໃຊ້ `127.0.0.1` ຫຼື hostname ຂອງ service ເມື່ອນັ້ນແມ່ນ grant host ທີ່ຜູ້ໃຫ້ບໍລິການຂອງທ່ານປັບຄ່າໄວ້.
 
-### ຄວາມສາມາດ Hostinger
+### ຄວາມສາມາດ Hostinger {#hostinger-capability}
 
 ຄວາມສາມາດ Hostinger multi-tenancy ເຮັດວຽກກັບ token ການຜະສານ Hostinger ແບບໃຊ້ຮ່ວມ. ຢືນຢັນວ່າໂດເມນມີຢູ່ໃນ hPanel, DNS ຊີ້ໄປຫາ Account Hostinger, ແລະການຕັ້ງຄ່າຖານຂໍ້ມູນຜູ້ເຊົ່າກົງກັບ hPanel ກ່ອນການກວດຢືນຢັນ.
 
-## Hooks ແລະ Filters
+## Hooks ແລະ Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - ຖືກເອີ້ນຫຼັງຈາກການເລີ່ມຕົ້ນ addon
 - `ultimate-multisite-addon-template_loaded` - ຖືກເອີ້ນຫຼັງຈາກໄຟລ໌ addon ທັງໝົດຖືກໂຫຼດແລ້ວ
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - ປັບແກ້ການຕັ້ງຄ່າ addon
 - `ultimate-multisite-addon-template_enabled` - ລົບລ້າງສະຖານະເປີດ/ປິດ addon
 
-## ໃບອະນຸຍາດ
+## ໃບອະນຸຍາດ {#license}
 
 addon ນີ້ໄດ້ຮັບອະນຸຍາດພາຍໃຕ້ GPL v3 ຫຼືໃໝ່ກວ່າ.
 
-## ການສະໜັບສະໜູນ
+## ການສະໜັບສະໜູນ {#support}
 
 ສຳລັບການສະໜັບສະໜູນ ແລະເອກະສານ, ເຂົ້າເບິ່ງ [MultisiteUltimate.com](https://multisiteultimate.com)
-## ບັນທຶກການປ່ຽນແປງ
+## ບັນທຶກການປ່ຽນແປງ {#changelog}
 
 - Version 1.2.0 (2026-06-03): ເພີ່ມການເຂົ້າສູ່ລະບົບຜູ້ເຊົ່າອັດຕະໂນມັດແບບບໍ່ເກັບສະຖານະ, ຄວາມສາມາດ Hostinger multi-tenancy, ການແຍກຖານຂໍ້ມູນ ແລະລະບົບໄຟລ໌ຕາມແຕ່ລະເວັບໄຊຍ່ອຍ, ປະຕູກວດຢືນຢັນການຍ້າຍແບບອະທິປະໄຕ, ການປັບປຸງ bootstrap/ຕົວຂຽນຖານຂໍ້ມູນຂອງຜູ້ເຊົ່າ, ການຜູກ MySQL host ທີ່ປັບຄ່າໄດ້, ແລະການຖອນອອກແບບອະທິປະໄຕທີ່ປອດໄພກວ່າ.
 

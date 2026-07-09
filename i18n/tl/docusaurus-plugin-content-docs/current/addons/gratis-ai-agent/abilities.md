@@ -3,7 +3,7 @@ title: Sanggunian ng Mga Kakayahan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Sanggunian ng mga Kakayahan
+# Sanggunian ng mga Kakayahan {#abilities-reference}
 
 Ang mga kakayahan ay ang mga atomikong aksyon na maaaring i-invoke ng Gratis AI Agent sa iyong WordPress installation. Bawat kakayahan ay isang nakarehistrong PHP class na naglalantad ng JSON schema — binabasa ng agent ang schema na ito sa runtime upang maunawaan kung anong mga parameter ang kinakailangan at kung ano ang ibinabalik ng kakayahan.
 
@@ -11,11 +11,11 @@ Idinodokumento ng pahinang ito ang lahat ng kakayahang kasama sa Gratis AI Agent
 
 ---
 
-## Mga Custom Post Type
+## Mga Custom Post Type {#custom-post-types}
 
 Pinamamahalaan ng mga kakayahang ito ang mga custom post type (CPT) na nakarehistro sa pamamagitan ng agent. Ang mga rehistrasyon ay pinananatili sa WordPress options table upang manatili ang mga ito kahit ma-deactivate at ma-reactivate ang plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Nagrerehistro ng bagong custom post type.
 
@@ -50,7 +50,7 @@ Nagrerehistro ng bagong custom post type.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Ibinabalik ang lahat ng custom post type na nakarehistro ng agent.
 
@@ -73,7 +73,7 @@ Ibinabalik ang lahat ng custom post type na nakarehistro ng agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Ina-unregister ang custom post type na dati nang nirehistro ng agent. Ang mga umiiral na post ng uri na iyon ay nananatili sa database ngunit hindi na accessible sa pamamagitan ng post type.
 
@@ -87,11 +87,11 @@ Ina-unregister ang custom post type na dati nang nirehistro ng agent. Ang mga um
 
 ---
 
-## Mga Custom Taxonomy
+## Mga Custom Taxonomy {#custom-taxonomies}
 
 Pinamamahalaan ng mga kakayahang ito ang mga custom taxonomy. Tulad ng CPTs, pinananatili ang mga rehistrasyon ng taxonomy.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Nagrerehistro ng bagong custom taxonomy.
 
@@ -123,7 +123,7 @@ Nagrerehistro ng bagong custom taxonomy.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Ibinabalik ang lahat ng custom taxonomy na nakarehistro ng agent.
 
@@ -146,7 +146,7 @@ Ibinabalik ang lahat ng custom taxonomy na nakarehistro ng agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Ina-unregister ang custom taxonomy na dati nang nirehistro ng agent.
 
@@ -160,11 +160,11 @@ Ina-unregister ang custom taxonomy na dati nang nirehistro ng agent.
 
 ---
 
-## Design System
+## Design System {#design-system}
 
 Binabago ng mga kakayahan ng design system ang biswal na presentasyon ng WordPress site — mula custom CSS hanggang block patterns at site logo.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Nagdadagdag ng CSS sa `<head>` ng site sa pamamagitan ng `wp_add_inline_style`. Iniimbak ang CSS sa option na `gratis_ai_agent_custom_css` at malinis na dine-dequeue kapag na-reset ang kakayahan.
 
@@ -190,7 +190,7 @@ Nagdadagdag ng CSS sa `<head>` ng site sa pamamagitan ng `wp_add_inline_style`. 
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Nagrerehistro ng reusable block pattern sa WordPress pattern library.
 
@@ -209,7 +209,7 @@ Nagrerehistro ng reusable block pattern sa WordPress pattern library.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Inililista ang lahat ng block pattern na nakarehistro ng agent.
 
@@ -231,7 +231,7 @@ Inililista ang lahat ng block pattern na nakarehistro ng agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Itinatakda ang WordPress logo ng site sa isang ibinigay na attachment ID o isang remote image URL. Kapag may ibinigay na URL, dina-download ang larawan at ini-import sa Media Library.
 
@@ -248,7 +248,7 @@ Dapat ibigay ang isa sa `attachment_id` o `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Inilalapat ang pinangalanang preset ng kulay/typography sa `theme.json` (o `global-styles`) ng aktibong theme. Ang mga preset ay mga piniling bundle na pinananatili ng koponan ng Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Inilalapat ang pinangalanang preset ng kulay/typography sa `theme.json` (o `glob
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Ang mga kakayahan ng Global Styles ay nagbabasa at nagsusulat ng mga value ng theme.json sa pamamagitan ng WordPress Global Styles API, na nakaaapekto sa lahat ng block at template sa buong site.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Nagbabalik ng kasalukuyang configuration ng global styles.
 
@@ -291,7 +291,7 @@ Nagbabalik ng kasalukuyang configuration ng global styles.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Ina-update ang isa o higit pang value sa configuration ng global styles.
 
@@ -318,7 +318,7 @@ Ina-update ang isa o higit pang value sa configuration ng global styles.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Nire-reset ang lahat ng pagbabago sa global styles na inilapat ng agent, at ibinabalik ang mga default ng theme.
 
@@ -328,11 +328,11 @@ Nire-reset ang lahat ng pagbabago sa global styles na inilapat ng agent, at ibin
 
 ---
 
-## Mga Navigation Menu
+## Mga Navigation Menu {#navigation-menus}
 
 Ang mga kakayahan ng Navigation Menu ay lumilikha at namamahala ng WordPress nav menus at ng mga item nito.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Lumilikha ng bagong WordPress navigation menu.
 
@@ -347,7 +347,7 @@ Lumilikha ng bagong WordPress navigation menu.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Pinapalitan ang pangalan ng menu o muling itinatalaga ito sa isang lokasyon ng theme.
 
@@ -363,7 +363,7 @@ Pinapalitan ang pangalan ng menu o muling itinatalaga ito sa isang lokasyon ng t
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Nagdaragdag ng item sa umiiral na navigation menu.
 
@@ -383,7 +383,7 @@ Nagdaragdag ng item sa umiiral na navigation menu.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Nag-aalis ng item mula sa isang navigation menu.
 
@@ -397,7 +397,7 @@ Nag-aalis ng item mula sa isang navigation menu.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Nililista ang lahat ng WordPress navigation menu, kabilang ang mga nakatalagang lokasyon ng theme.
 
@@ -420,11 +420,11 @@ Nililista ang lahat ng WordPress navigation menu, kabilang ang mga nakatalagang 
 
 ---
 
-## Pamamahala ng Options
+## Pamamahala ng Options {#options-management}
 
 Ang mga kakayahan ng Options ay nagbabasa at nagsusulat ng WordPress options sa pamamagitan ng `get_option` / `update_option`. Pinipigilan ng built-in na safety blocklist ang aksidenteng pagbabago ng mahahalagang setting.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Nagbabasa ng isang WordPress option.
 
@@ -440,7 +440,7 @@ Nagbabalik ng error kung ang `option_name` ay nasa safety blocklist.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Nagsusulat ng isang WordPress option.
 
@@ -458,7 +458,7 @@ Nagbabalik ng error kung ang `option_name` ay nasa safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Binubura ang isang WordPress option.
 
@@ -474,7 +474,7 @@ Nagbabalik ng error kung ang `option_name` ay nasa safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Naglilista ng mga WordPress option na tumutugma sa isang pattern.
 
@@ -498,11 +498,11 @@ Naglilista ng mga WordPress option na tumutugma sa isang pattern.
 
 ---
 
-## Pamamahala ng Nilalaman
+## Pamamahala ng Nilalaman {#content-management}
 
 Ang mga kakayahan sa Pamamahala ng Nilalaman ay lumilikha at nag-eedit ng mga WordPress post at page. Ibinabalik ang mga Post ID upang magamit ng mga susunod na hakbang sa mga planong may maraming kakayahan ang nilalamang ginawa.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Lumilikha ng bagong WordPress post, page, o custom post type entry.
 
@@ -537,7 +537,7 @@ Lumilikha ng bagong WordPress post, page, o custom post type entry.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Ina-update ang umiiral na WordPress post o page.
 
@@ -567,7 +567,7 @@ Ina-update ang umiiral na WordPress post o page.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Lumilikha ng maraming post sa iisang tawag sa kakayahan, na nagpapabawas ng mga pabalik-balik na tawag habang gumagawa ng site o nag-iimport ng maramihang nilalaman. Ginagawa ang mga post nang sunod-sunod; kung pumalya ang isa, magpapatuloy ang iba at iuulat ang pagkabigo sa array ng mga resulta.
 
@@ -619,7 +619,7 @@ Lumilikha ng maraming post sa iisang tawag sa kakayahan, na nagpapabawas ng mga 
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Nagtatalaga ng featured image (post thumbnail) sa umiiral na post o page. Tumatanggap ng umiiral na Media Library attachment ID o remote image URL; kapag ibinigay ang isang URL, awtomatikong dina-download at ini-import ang image.
 
@@ -638,7 +638,7 @@ Dapat ibigay ang isa sa `attachment_id` o `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Lumilikha ng contact form gamit ang aktibong form plugin (Contact Form 7, WPForms, Fluent Forms, o Gravity Forms, depende sa kung alin ang naka-install). Nagbabalik ng shortcode na maaaring i-embed sa anumang post o page.
 
@@ -691,11 +691,11 @@ Lumilikha ng contact form gamit ang aktibong form plugin (Contact Form 7, WPForm
 
 ---
 
-## Visual Review
+## Visual Review {#visual-review}
 
 Hinahayaan ng mga kakayahan ng Visual Review ang agent na kumuha ng mga screenshot ng mga live na page at suriin ang mga ito, na nagbibigay-daan sa awtonomong pagsusuri ng disenyo, mga paghahambing bago/pagkatapos, at mga visual regression check nang hindi nangangailangan ng anumang browser extension.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Kumukuha ng screenshot ng isang WordPress page sa ibinigay na URL gamit ang isang server-side headless browser. Sine-save ang image sa Media Library at ibinabalik ang isang CDN URL.
 
@@ -724,7 +724,7 @@ Kumukuha ng screenshot ng isang WordPress page sa ibinigay na URL gamit ang isan
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Kumukuha ng dalawang screenshot at nagbabalik ng visual diff score kasama ang diff image na nagha-highlight ng mga binagong rehiyon. Kapaki-pakinabang para kumpirmahin na ang pagbabago sa disenyo ay nagbunga ng inaasahang resulta o para matukoy ang hindi sinasadyang regressions.
 
@@ -754,7 +754,7 @@ Ang `diff_score` na `0.0` ay nangangahulugang walang nakikitang pagbabago; ang `
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Kumukuha ng screenshot ng isang page at ipinapadala ito sa language model para sa visual analysis. Nagbabalik ng structured assessment na sumasaklaw sa layout, typography, paggamit ng kulay, at mga alalahanin sa accessibility.
 
@@ -785,11 +785,11 @@ Kumukuha ng screenshot ng isang page at ipinapadala ito sa language model para s
 
 ---
 
-## Mga Nai-install na Kakayahan
+## Mga Nai-install na Kakayahan {#installable-abilities}
 
 Hinahayaan ka ng Installable Abilities Registry na palawakin ang agent gamit ang karagdagang mga ability pack na ipinamamahagi bilang WordPress plugins. Nirerehistro ng bawat pack ang isa o higit pang mga kakayahan gamit ang standard ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Ibinabalik ang catalogue ng mga ability pack na available para sa pag-install mula sa registry.
 
@@ -818,7 +818,7 @@ Ibinabalik ang catalogue ng mga ability pack na available para sa pag-install mu
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Dina-download at ina-activate ang isang pakete ng kakayahan mula sa rehistro.
 
@@ -832,7 +832,7 @@ Dina-download at ina-activate ang isang pakete ng kakayahan mula sa rehistro.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Kina-query ang rehistro ng kakayahan upang mahanap ang pinakamahusay na pandagdag para sa inilarawang kaso ng paggamit at, opsyonal, i-install ito.
 

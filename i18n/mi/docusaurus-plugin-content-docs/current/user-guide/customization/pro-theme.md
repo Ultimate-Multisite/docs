@@ -3,7 +3,7 @@ title: Te Whānau PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Whakamahi i tō Admin Panel ki te whakamārama ana me PRO Theme
+# Whakamahi i tō Admin Panel ki te whakamārama ana me PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 I roto i ngaro, i roto i te mahi mō klien, he mea nui te mea e hiahi ai te whakamahi ā-tahi i te wahi admin o WordPress. Ko te PRO Theme he pēape (theme) admin kua oti te whakawhanakea kia tū i runga i a koe i te whakamārama ana me te whaiaro mō dashboard o ngā klien. He tino whero atu, he heta e hiahia koe ki te whakatere i te whakaaro.
 

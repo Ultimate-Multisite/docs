@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: Pagamento GoCardless
 
 Permita que os seus clientes paguem memberships e produtos do Ultimate Multisite por Direct Debit usando GoCardless!
 
-## Instalação
+## Instalação {#installation}
 
 1. Carregue 'ultimate-multisite-gocardless' para o diretório '/wp-content/plugins/'
 2. Ative o plugin através do menu 'Plugins' no WordPress
 3. Siga o assistente passo a passo para configurar o plugin
 
-## Guia de utilização
+## Guia de utilização {#usage-guide}
 
 _GoCardless_ é uma gateway de pagamento disponível na **Europa e no Reino Unido** que permite pagamentos por **Direct Debit**.
 
@@ -29,7 +29,7 @@ Este tutorial abordará como configurar _GoCardless_ para começar a aceitar pag
 
 _**Nota: GoCardless só funciona com as seguintes moedas:**_ **EUR, GBP, AUD, SEK e DKK.**
 
-## Instalar o add-on
+## Instalar o add-on {#installing-the-add-on}
 
 Antes de tudo, terá de instalar o add-on GoCardless para Ultimate Multisite. Pode fazê-lo indo a **Ultimate Multisite > Settings > Add-ons (na barra lateral)**. E escolhendo o add-on GoCardless nessa lista.
 
@@ -37,7 +37,7 @@ Depois de o add-on estar instalado e ativado, vá a **Ultimate Multisite > Setti
 
 ![Definições da gateway de pagamento](/img/config/settings-payment-gateways.png)
 
-## Obter um Access Token
+## Obter um Access Token {#getting-an-access-token}
 
 Crie uma conta em _GoCardless_ (ou no sandbox de _GoCardless_, se quiser **testar primeiro**, o que é recomendado). Depois, após iniciar sessão, navegue até ao item de menu **Developers**.
 
@@ -61,7 +61,7 @@ Certifique-se de que o coloca no campo correto. Se for um **token de produção*
 
 É tudo para o primeiro passo. Em seguida, precisa de configurar um webhook listener.
 
-## Configurar o Webhook Listener
+## Configurar o Webhook Listener {#setting-up-the-webhook-listener}
 
 Ao lidar com subscrições, o Ultimate Multisite precisa de saber sobre alterações no estado da subscrição, novos pagamentos efetuados e outras coisas semelhantes.
 

@@ -3,7 +3,7 @@ title: PRO Tema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Admin Panelni PRO Tema bilan Qanday Sozlash
+# Admin Panelni PRO Tema bilan Qanday Sozlash {#customizing-your-admin-panel-with-pro-theme}
 
 Mijozlar uchun WordPress admin panelida o'zingizning xususiy tajribangizni taqdim etish kerak bo'lgan vaziyatda ko'pincha keladi. Agar siz yanada professional ko'rinish va his-tuyg'u izlayotgan bo'lsangiz, PRO Theme yordam berishi mumkin.
 

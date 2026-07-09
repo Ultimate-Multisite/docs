@@ -3,17 +3,17 @@ title: 'Lesona 9: Fametrahana vidiny hahazoana tombony'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesona 9: Fanomezana vidiny hahazoana tombom-barotra
+# Lesona 9: Fanomezana vidiny hahazoana tombom-barotra {#lesson-9-pricing-for-profit}
 
 Tamin'ny Lesona 5 dia nametraka ny vidiny voalohany ho an'ny drafitra FitSite isika. Ankehitriny dia hatsaraintsika ny paikady fanomezana vidiny amin'ny teknika mampitombo ny vola miditra, mamporisika ny fanavaozana drafitra, ary mampihena ny fialan'ny mpanjifa.
 
-## Teo amin'izay nijanonantsika
+## Teo amin'izay nijanonantsika {#where-we-left-off}
 
 FitSite dia efa manana drafitra, môdely, checkout, branding, ary onboarding. Ny vidiny voalohany dia $49/$99/$199 isam-bolana. Ankehitriny dia ataontsika miasa mafy kokoa izany fanomezana vidiny izany.
 
-## Fitsipika fanomezana vidiny ho an'ny sehatra niche
+## Fitsipika fanomezana vidiny ho an'ny sehatra niche {#pricing-principles-for-niche-platforms}
 
-### Omeo vidiny araka ny sanda, fa tsy ny sarany
+### Omeo vidiny araka ny sanda, fa tsy ny sarany {#price-on-value-not-cost}
 
 Mety ho $5-$15 isaky ny tranokalan'ny mpanjifa ny saran'ny hosting anao. Tsy midika izany fa tokony ho $20 ny vidinao. Tsy hosting no amidinao. Ireto no amidinao:
 
@@ -24,7 +24,7 @@ Mety ho $5-$15 isaky ny tranokalan'ny mpanjifa ny saran'ny hosting anao. Tsy mid
 
 Omeo vidiny araka ny sanda atolotrao, fa tsy araka ny sarany ilaina hanaterana azy.
 
-### Ampifandraiso amin'ny safidy hafa
+### Ampifandraiso amin'ny safidy hafa {#anchor-to-alternatives}
 
 Rehefa manombana ny FitSite ny tompon'ny studio fitness, dia ampitahainy amin'ireto izany:
 
@@ -34,7 +34,7 @@ Rehefa manombana ny FitSite ny tompon'ny studio fitness, dia ampitahainy amin'ir
 
 Amin'ny $49-$199/volana, mora kokoa noho ny developer ny FitSite, mahavita bebe kokoa noho ny mpanamboatra ankapobeny, ary tsara lavitra noho ny tsy fananana tranonkala.
 
-## Fampiharana fiovaovan'ny vidiny
+## Fampiharana fiovaovan'ny vidiny {#implementing-price-variations}
 
 Ny vidiny isan-taona dia mamporisika fanoloran-tena ary mampihena ny fialan'ny mpanjifa. Mandehana amin'ny tabilao **Fiovaovan'ny vidiny** an'ny drafitra tsirairay ary ampio safidy isan-taona:
 
@@ -46,12 +46,12 @@ Ny vidiny isan-taona dia mamporisika fanoloran-tena ary mampihena ny fialan'ny m
 
 Ampio saha **Safidin'ny vanim-potoana** amin'ny checkout form-nao mba hahafahan'ny mpanjifa mifamadika eo amin'ny faktiora isam-bolana sy isan-taona. Jereo [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Nahoana no miasa ny vidiny isan-taona
+### Nahoana no miasa ny vidiny isan-taona {#why-annual-pricing-works}
 
 - **Ho anao**: Vola miditra mialoha, fialan'ny mpanjifa ambany kokoa (ny mpanjifa mandoa isan-taona dia tsy dia mety hanafoana eo afovoan'ny fe-potoana)
 - **Ho azy ireo**: Tahiry tena izy, fahafahana maminavina tetibola
 
-## Saram-pananganana
+## Saram-pananganana {#setup-fees}
 
 Eritrereto ny saram-pananganana indray mandeha ho an'ny drafitra ahitana fanamboarana tanana:
 
@@ -61,7 +61,7 @@ Eritrereto ny saram-pananganana indray mandeha ho an'ny drafitra ahitana fanambo
 
 Amboary ny saram-pananganana ao amin'ny fizarana vidin'ny drafitra tsirairay. Jereo [Mamorona ny vokatra famandrihanao voalohany](/user-guide/configuration/creating-your-first-subscription-product) ho an'ny antsipiriany.
 
-## Vanim-potoana fitsapana
+## Vanim-potoana fitsapana {#trial-periods}
 
 Ny fanomezana fitsapana dia mampihena ny sakana amin'ny fisoratana anarana saingy mitondra ny risika tsy hivadihana ho mpanjifa mandoa. Ho an'ny FitSite:
 
@@ -70,11 +70,11 @@ Ny fanomezana fitsapana dia mampihena ny sakana amin'ny fisoratana anarana saing
 
 Amboary ny fitsapana ao amin'ny fizarana vidin'ny drafitra Starter amin'ny fampandehanana ny toggle **Atolory fitsapana** ary apetraho ho 7 andro ny faharetany.
 
-### Fomba hahatonga ny fitsapana hivadika ho fividianana
+### Fomba hahatonga ny fitsapana hivadika ho fividianana {#making-trials-convert}
 
 Ny fitsapana dia miasa ihany raha mahatsapa sanda mandritra ny vanim-potoana fitsapana ny mpanjifa. Zava-dehibe eto ny filaharan'ny onboarding-nao (Lesona 8) -- tokony hapetraka amin'ny fotoana mety ny mailaka fandraisana mba hanosika fandraisana anjara ao anatin'ny varavarankely 7 andro.
 
-## Kaody fihenam-bidy
+## Kaody fihenam-bidy {#discount-codes}
 
 Mamoròna kaody fihenam-bidy stratejika ho an'ny tanjona manokana:
 
@@ -88,7 +88,7 @@ Mandehana amin'ny **Ultimate Multisite > Kaody fihenam-bidy** hamorona ireo. Jer
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Fitantanana hetra
+## Fitantanana hetra {#tax-handling}
 
 Raha miasa ao amin'ny faritra mitaky fanangonana hetra ianao:
 
@@ -98,7 +98,7 @@ Raha miasa ao amin'ny faritra mitaky fanangonana hetra ianao:
 
 Jereo [Fitantanana hetra](/user-guide/payment-gateways/tax-handling) ho an'ny fanamboarana amin'ny antsipiriany. Raha manompo mpanjifa iraisam-pirenena ianao, diniho ny [VAT addon](/addons/vat) ho an'ny fanarahan-dalàna EU.
 
-## Famerenana mijery ny vidinao
+## Famerenana mijery ny vidinao {#reviewing-your-pricing}
 
 Aorian'ny fanombohana, avereno jerena isan-telo volana ny vidiny. Jereo ireto:
 
@@ -107,7 +107,7 @@ Aorian'ny fanombohana, avereno jerena isan-telo volana ny vidiny. Jereo ireto:
 - **Fialan'ny mpanjifa isaky ny drafitra**: Raha vitsy kokoa ny fialan'ny mpanjifa isan-taona, tosikao mafy kokoa ny vidiny isan-taona
 - **Vidin'ny mpifaninana**: Ohatrinona no angatahin'ny safidy hafa? Voapetraka tsara ve ianao?
 
-## Ny tambajotra FitSite hatreto
+## Ny tambajotra FitSite hatreto {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Izay Namboarintsika Tamin’ity Lesona ity
+## Izay Namboarintsika Tamin’ity Lesona ity {#what-we-built-this-lesson}
 
 - **Vidiny isan-taona** miaraka amin’ny fihenam-bidy 20% mba hamporisihana ny fanoloran-tena
 - **Sarany fanombohana** amin’ny ambaratonga avo kokoa mba handrakofana ny ezaka onboarding

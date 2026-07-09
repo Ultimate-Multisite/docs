@@ -4,11 +4,11 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_{$this->id}_load
+# Action: wu_page_{$this->id}_load {#action-wupagethis-idload}
 
 Plugin sahiblərinin səhifələrimizə əlavə hooklar əlavə etməsinə imkan verir.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Plugin sahiblərinin səhifələrimizə əlavə hooklar əlavə etməsinə imkan
 | $page_hook | `string` | Bu səhifənin səhifə hooku. |
 | $admin_page | `self` | Səhifə nümunəsi (instance). |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 1.8.2
 - 2.0.4: Üçüncü parametr əlavə edildi: səhifə nümunəsi.
-### Mənbə
+### Mənbə {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) faylında 332-ci sətirdə təyin edilmişdir.

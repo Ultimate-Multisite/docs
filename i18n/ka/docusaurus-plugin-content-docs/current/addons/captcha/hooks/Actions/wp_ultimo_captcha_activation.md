@@ -4,13 +4,13 @@ title: მოქმედება - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# მოქმედება: wp_ultimo_captcha_activation
+# მოქმედება: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
 
 საშუალება მიეცით plugin-ის სხვა ნაწილებს, გააბან თავიანთი პროცედურები აქტივაციისთვის
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 1.9.6
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-hooks.php#L83) 83-ე ხაზზე

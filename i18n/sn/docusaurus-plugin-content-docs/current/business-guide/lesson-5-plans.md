@@ -3,15 +3,15 @@ title: 'Chidzidzo 5: Kugadzira Zvirongwa Zvako'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Chidzidzo 5: Kugadzira Zvirongwa Zvako
+# Chidzidzo 5: Kugadzira Zvirongwa Zvako {#lesson-5-designing-your-plans}
 
 Matanho ezvirongwa zvako haasi mazinga emitengo chete -- anoratidza mashandiro chaiwo evatengi vemusika wako wakasarudzika. Muchidzidzo chino uchagadzira matanho ezvigadzirwa anoenderana nezvinodiwa chaizvo nemabhizinesi efitness pamatanho akasiyana.
 
-## Patakasiyira
+## Patakasiyira {#where-we-left-off}
 
 FitSite ine matemplate matatu akagadzirira (Studio Essential, Gym Pro, Fitness Chain). Iye zvino tinogadzira zvirongwa zvinotarisa kuti vatengi vanowana kupinda kuchii uye zvavanobhadhara.
 
-## Kufunga Nezvezvikamu zveVatengi
+## Kufunga Nezvezvikamu zveVatengi {#thinking-in-customer-segments}
 
 Chikanganiso chinoitwa nevanhu vazhinji kugadzira zvirongwa zvichibva pazvinhu zvehunyanzvi (chengetedzo, bandwidth, huwandu hwemapeji). Vatengi vemusika wako wakasarudzika havafungi nenzira iyoyo. Muridzi wegym anofunga nezvezvaanoda kuti afambise bhizinesi rake.
 
@@ -25,11 +25,11 @@ Kumastudio efitness, kune zvikamu zvitatu zvechisikigo:
 
 Zvirongwa zvako zvinofanira kuenderana nezvikamu izvi, kwete nemapoka ezvinhu asina kurongeka.
 
-## Kugadzira Zvirongwa zveFitSite
+## Kugadzira Zvirongwa zveFitSite {#creating-the-fitsite-plans}
 
 Enda ku **Ultimate Multisite > Zvigadzirwa > Wedzera Chigadzirwa** pachirongwa chimwe nechimwe.
 
-### Chirongwa 1: FitSite Starter -- $49/mwedzi
+### Chirongwa 1: FitSite Starter -- $49/mwedzi {#plan-1-fitsite-starter----49month}
 
 **Chinangwa**: Varairidzi vega uye mastudio madiki
 
@@ -59,7 +59,7 @@ Enda ku **Ultimate Multisite > Zvigadzirwa > Wedzera Chigadzirwa** pachirongwa c
 - Theme yawasarudza: Force Activate
 - Mamwe matheme ese: Akavanzwa
 
-### Chirongwa 2: FitSite Growth -- $99/mwedzi
+### Chirongwa 2: FitSite Growth -- $99/mwedzi {#plan-2-fitsite-growth----99month}
 
 **Chinangwa**: Magym akatosimba ane nzvimbo imwe chete
 
@@ -85,7 +85,7 @@ Enda ku **Ultimate Multisite > Zvigadzirwa > Wedzera Chigadzirwa** pachirongwa c
 - Boka rechirongwa: FitSite Plans
 - Kurongeka kwechigadzirwa: 2
 
-### Chirongwa 3: FitSite Pro -- $199/mwedzi
+### Chirongwa 3: FitSite Pro -- $199/mwedzi {#plan-3-fitsite-pro----199month}
 
 **Chinangwa**: Machain efitness ane nzvimbo dzakawanda
 
@@ -109,7 +109,7 @@ Enda ku **Ultimate Multisite > Zvigadzirwa > Wedzera Chigadzirwa** pachirongwa c
 - Boka rechirongwa: FitSite Plans
 - Kurongeka kwechigadzirwa: 3
 
-## Kugadzira Boka reChirongwa
+## Kugadzira Boka reChirongwa {#setting-up-the-plan-group}
 
 Boka rechirongwa rinoona kuti vatengi vanogona kungokwidziridza kana kudzikisa mukati memhuri yezvirongwa zveFitSite chete. Patabu ye **Kukwidziridza nekudzikisa** yechirongwa chimwe nechimwe:
 
@@ -118,7 +118,7 @@ Boka rechirongwa rinoona kuti vatengi vanogona kungokwidziridza kana kudzikisa m
 
 Izvi zvinogadzira nzira yakajeka yekukwidziridza: Starter → Growth → Pro.
 
-## Kuwedzera Order Bumps
+## Kuwedzera Order Bumps {#adding-order-bumps}
 
 Order bumps zvigadzirwa zvekuwedzera zvinopihwa panguva yecheckout. KuFitSite, funga izvi:
 
@@ -128,7 +128,7 @@ Order bumps zvigadzirwa zvekuwedzera zvinopihwa panguva yecheckout. KuFitSite, f
 
 Gadzira izvi sezvigadzirwa zverudzi rwe **Package** muUltimate Multisite uye uzvibatanidze nezvirongwa zvinoenderana.
 
-## Nei Chimiro Ichi Chichishanda
+## Nei Chimiro Ichi Chichishanda {#why-this-structure-works}
 
 - **Starter** inobvisa zvipingamupinyi zvekupinda -- mutengo wakaderera, chinopihwa chiri nyore, chinoita kuti varairidzi vapinde paindaneti nekukurumidza
 - **Growth** inowedzera zvinhu zvinobvunzwa chaizvo nemagym -- kubhuka, magallery, ma domain akasarudzika
@@ -136,7 +136,7 @@ Gadzira izvi sezvigadzirwa zverudzi rwe **Package** muUltimate Multisite uye uzv
 - **Order bumps** dzinobvumira vatengi kugadzirisa zvavanoda pasina kuomesa zvirongwa zvikuru
 - **Nzira yakajeka yekukwidziridza** inoreva kuti vatengi vanokura newe pane kuti vaende
 
-## Network yeFitSite Kusvika Parizvino
+## Network yeFitSite Kusvika Parizvino {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Zvatakavaka Muchidzidzo Chino
+## Zvatakavaka Muchidzidzo Chino {#what-we-built-this-lesson}
 
 - **Matanho matatu ezvirongwa** akaenderaniswa nezvikamu chaizvo zvebhizinesi refitness
 - **Kuvharira zvinhu** uchishandisa kudzora kweplugin nematemplate kweUltimate Multisite

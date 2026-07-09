@@ -3,7 +3,7 @@ title: Uluhlu lwamazwe
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ukuphinda uhlele uluhlu lwamazwe lwe-Ultimate Multisite
+# Ukuphinda uhlele uluhlu lwamazwe lwe-Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Imenyu eyehlayo yokukhetha ilizwe ihlelwe ngokulandelelana kwealfabhethi ngokusekelwe kwiinguqulelo zesiNgesi zamagama amazwe. Oku kunokuthetha ukuba, ngamanye amaxesha, ilizwe lasekhaya lenkampani yakho kunye/okanye uninzi lwabathengi bakho lifihlakele embindini woluhlu olukhulu lwamagama amazwe.
 

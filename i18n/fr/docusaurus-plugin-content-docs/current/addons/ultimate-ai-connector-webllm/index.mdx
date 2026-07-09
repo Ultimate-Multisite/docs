@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Connecteur IA Ultimate pour WebLLM" />
 
-# Connecteur IA Ultimate pour WebLLM
+# Connecteur IA Ultimate pour WebLLM {#ultimate-ai-connector-for-webllm}
 
 Le Connecteur IA Ultimate pour WebLLM apporte l'inférence IA native au navigateur de votre réseau multisite WordPress. Il exécute des grands modèles de langage entièrement dans le navigateur en utilisant WebLLM et le moteur MLC — aucune clé API, aucun appel externe, aucune donnée qui quitte l'appareil de l'utilisateur.
 
-## Fonctionnalités Clés
+## Fonctionnalités Clés {#key-features}
 
 - **Inférence côté navigateur** : Le LLM s'exécute localement dans le navigateur du visiteur via WebLLM/MLC — pas de GPU serveur requis
 - **Widget de chat flottant** : Les utilisateurs connectés peuvent interroger le LLM côté navigateur directement depuis le front-end
@@ -22,28 +22,28 @@ Le Connecteur IA Ultimate pour WebLLM apporte l'inférence IA native au navigate
 - **Cache IndexedDB** : Les téléchargements des poids du modèle survivent aux redirections CDN qui cassent le chemin par défaut de l'API Cache
 - **Intégration wpai filter** : Se connecte au filtre `wpai_preferred_text_models` afin que la fonctionnalité Expérimentations IA soit acheminée vers le moteur navigateur lorsqu'elle est configurée
 
-## Prérequis
+## Prérequis {#requirements}
 
 - WordPress 5.3 ou supérieur
 - PHP 7.4 ou supérieur
 - Plugin Ultimate Multisite (actif)
 - Un navigateur prenant en charge WebGPU (Chrome 113+, Edge 113+, ou Firefox Nightly avec WebGPU activé)
 
-## Installation
+## Installation {#installation}
 
 1. Téléchargez les fichiers du complément dans votre répertoire `/wp-content/plugins/`
 2. Activez le plugin via le menu 'Plugins' de WordPress
 3. Rendez-vous sur **Ultimate Multisite → Connecteur IA** pour configurer le complément
 
-## Widget de Chat Flottant
+## Widget de Chat Flottant {#floating-chat-widget}
 
 Le widget de chat flottant permet à tout utilisateur connecté d'interagir avec le LLM côté navigateur directement depuis votre front-end, sans quitter la page sur laquelle il se trouve.
 
-### Ce qu'il fait
+### Ce qu'il fait {#what-it-does}
 
 Lorsqu'il est activé, une icône de chat apparaît dans le coin de chaque page front-end pour les utilisateurs connectés. Cliquer sur l'icône ouvre un panneau de chat où l'utilisateur peut taper des invites et recevoir des réponses du modèle WebLLM fonctionnant localement. Étant donné que le modèle s'exécute entièrement dans le navigateur, les réponses sont privées et n'impliquent aucun traitement côté serveur.
 
-### Indicateur de statut dans la barre d'administration
+### Indicateur de statut dans la barre d'administration {#admin-bar-status-indicator}
 
 La barre d'administration WordPress comprend un indicateur de statut qui affiche l'état actuel du moteur WebLLM :
 
@@ -56,7 +56,7 @@ La barre d'administration WordPress comprend un indicateur de statut qui affiche
 
 L'indicateur se met à jour en temps réel sans nécessiter de rechargement de page.
 
-### Comment activer ou désactiver le widget
+### Comment activer ou désactiver le widget {#how-to-enable-or-disable-the-widget}
 
 1. Allez sur **Ultimate Multisite → Connecteur IA** dans l'administration du réseau
 2. Trouvez le panneau **Connecteur**
@@ -65,17 +65,17 @@ L'indicateur se met à jour en temps réel sans nécessiter de rechargement de p
 
 Le widget peut également être activé ou désactivé par site depuis l'administration du site lui-même si l'administrateur du réseau a accordé cette capacité.
 
-## Paramètres du Widget
+## Paramètres du Widget {#widget-settings}
 
 Le panneau Connecteur dans **Ultimate Multisite → Connecteur IA** contient les paramètres suivants pour le widget de chat flottant :
 
-### Activer le widget de chat flottant
+### Activer le widget de chat flottant {#enable-floating-chat-widget}
 
 Active ou désactive le widget de chat pour l'ensemble du réseau. Lorsqu'il est désactivé, le widget n'apparaît sur aucune page front-end, quel que soit le rôle de l'utilisateur.
 
 **Défaut :** Désactivé
 
-### Comportement de l'invite automatique
+### Comportement de l'invite automatique {#auto-prompt-behaviour}
 
 Contrôle si le widget de chat envoie automatiquement une invite lorsqu'un utilisateur l'ouvre.
 
@@ -93,7 +93,7 @@ Lorsqu'il est défini sur **Invite personnalisée**, un champ de texte suppléme
 
 **Défaut :** Désactivé
 
-## Runtime SharedWorker
+## Runtime SharedWorker {#sharedworker-runtime}
 
 La version 1.1.0 introduit un runtime SharedWorker pour le moteur MLC. Auparavant, chaque onglet de navigateur utilisant WebLLM chargeait sa propre instance du modèle, se faisant concurrence pour la mémoire GPU et provoquant des problèmes de performance sur les appareils disposant d'une VRAM limitée.
 
@@ -105,29 +105,29 @@ Avec le runtime SharedWorker, un onglet agit comme l'hôte du moteur. Tous les a
 
 Le SharedWorker est transparent pour les utilisateurs. L'indicateur de statut dans la barre d'administration reflète toujours l'état du moteur partagé, et non celui de l'onglet individuel.
 
-## Middleware apiFetch
+## Middleware apiFetch {#apifetch-middleware}
 
 Le complément installe un middleware `apiFetch` qui intercepte les requêtes WordPress REST API correspondant au modèle AI Client SDK. Au lieu d'effectuer une requête HTTP de boucle vers le serveur, ces requêtes sont acheminées directement vers le broker WebLLM local fonctionnant dans le SharedWorker.
 
 Cela signifie que les plugins et les thèmes qui utilisent l'API standard `apiFetch` de WordPress pour appeler des points de terminaison IA bénéficieront automatiquement du modèle côté navigateur lorsqu'il sera disponible, sans modification de code nécessaire.
 
-## Hooks et Filtres
+## Hooks et Filtres {#hooks-and-filters}
 
-### Filtres
+### Filtres {#filters}
 
 - `wpai_preferred_text_models` — Enregistre le moteur navigateur WebLLM comme modèle de texte préféré. Le complément se connecte automatiquement à ce filtre lorsque le moteur est configuré et disponible.
 - `ultimate_webllm_widget_enabled` — Remplace l'état activé du widget pour un utilisateur ou un contexte spécifique. Retourne `true` ou `false`.
 - `ultimate_webllm_auto_prompt` — Modifie le texte de l'invite automatique avant qu'il ne soit envoyé au widget. Reçoit la chaîne d'invite et l'objet `WP_Post` actuel.
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-### Le widget de chat n'apparaît pas
+### Le widget de chat n'apparaît pas {#the-chat-widget-does-not-appear}
 
 - Confirmez que l'utilisateur est connecté — le widget n'est visible que pour les utilisateurs authentifiés
 - Vérifiez que **Activer le widget de chat flottant** est activé dans le panneau Connecteur
 - Vérifiez que le navigateur de l'utilisateur prend en charge WebGPU (voir Prérequis ci-dessus)
 
-### L'indicateur de la barre d'administration affiche "Error"
+### L'indicateur de la barre d'administration affiche "Error" {#the-admin-bar-indicator-shows-error}
 
 Ouvrez la console de développement du navigateur (F12) et recherchez les erreurs liées à WebLLM. Causes courantes :
 
@@ -135,10 +135,10 @@ Ouvrez la console de développement du navigateur (F12) et recherchez les erreur
 - Échec du téléchargement des poids du modèle — vérifiez la connectivité réseau et essayez de vider le cache IndexedDB dans les outils de développement du navigateur (Application → IndexedDB)
 - Une extension de navigateur bloque le SharedWorker
 
-### Les poids du modèle se téléchargent à chaque fois
+### Les poids du modèle se téléchargent à chaque fois {#model-weights-download-every-time}
 
 Le complément utilise IndexedDB comme backend de cache pour garantir que les poids du modèle survivent aux redirections CDN. Si les poids sont re-téléchargés à chaque visite, vérifiez que IndexedDB n'est pas vidé par un paramètre de confidentialité ou une extension de navigateur.
 
-## Journal des modifications
+## Journal des modifications {#changelog}
 
 Consultez [Changelog](./changelog) pour l'historique complet des versions.

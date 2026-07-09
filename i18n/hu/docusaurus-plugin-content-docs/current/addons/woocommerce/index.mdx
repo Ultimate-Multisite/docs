@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce integráció
+# WooCommerce integráció {#woocommerce-integration}
 
 A WooCommerce integráció nagyon hasonlóan működik ahhoz, ahogyan a Manual Gateway működik. Rengeteg rugalmasságot kínál a felhasználóidnak, lehetővé téve számukra, hogy a WooCommerce telepítéseden elérhető bármely fizetési űrlapot kiválasszák. És egyszerű: amikor a felhasználói számlázási időszak véget ér, a felhasználói előfizetés felfüggesztésre kerül. Ezzel egy időben létrejön egy rendelés a hálózat fő webhelyének WooCommerce telepítésén. A felhasználó ezután számlát kap e-mailben, egy linkkel a fizetés végrehajtásához. Amint a fizetés beérkezik, az előfizetés megújul.
 
-## Funkciók
+## Funkciók {#features}
 
 - Egyszerű integráció az Ultimate Multisite és a WooCommerce között
 - Több elérhető fizetési mód
 - Automatizált ismétlődő számlázás a mellékelt előfizetési mag használatával, opcionális WooCommerce Subscriptions plugin fejlesztésekkel
 - A pénztári végösszegek az Ultimate Multisite adókat külön, nem adóköteles WooCommerce díjsorokként tartalmazzák, így az ügyfelek a fizetés előtt áttekinthetik az adóösszegeket
 
-## Dokumentáció
+## Dokumentáció {#documentation}
 
 **A WooCommerce integráció beállítása**
 
 **Fizetési lehetőségeid bővítése az Ultimate Multisite segítségével: WooCommerce integráció**
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltsd fel az 'ultimate-multisite-woocommerce' mappát a '/wp-content/plugins/' könyvtárba
 2. Aktiváld a plugint a WordPress 'Plugins' menüjén keresztül
 3. Kövesd a lépésről lépésre haladó varázslót a plugin beállításához
 
-## Használati útmutató
+## Használati útmutató {#usage-guide}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
@@ -40,7 +40,7 @@ Tudjuk, hogy a _Stripe_ és a _PayPal_ egyes országokban nem érhető el, ami k
 
 A _WooCommerce_ egy nagyon népszerű eCommerce plugin. A fejlesztők világszerte kiegészítőket hoztak létre különböző fizetési átjárók integrálására hozzá. Ezt kihasználva bővítettük az Ultimate Multisite számlázási rendszerében használható fizetési átjárókat.
 
-## Beállítás
+## Beállítás {#setting-it-up}
 
 Először telepítened kell a WooCommerce Integration kiegészítőt, amely **licencelt felhasználók számára ingyenes**. A telepítéshez kattints az Ultimate Multisite elemre a super admin dashboardon, majd válaszd az **Add-ons** lehetőséget.
 
@@ -68,11 +68,11 @@ Telepítés után egy további lehetőséget fogsz látni az Ultimate Multisite 
 
 Beállíthatsz néhány alapvető beállítást, például a megjelenítési nevet, amely a frontenden látható, valamint utasításokat, amelyek végigvezetik a felhasználóidat a checkout folyamaton. Ezután a **fő webhelyed _WooCommerce_ beállításaihoz** léphetsz, hogy engedélyezd és konfiguráld a használni kívánt fizetési átjárót.
 
-### Checkout adódíjsorok
+### Checkout adódíjsorok {#checkout-tax-fee-lines}
 
 Amikor egy Ultimate Multisite checkout adókat tartalmaz, az integráció minden Ultimate Multisite adóösszeget külön, nem adóköteles díjsorként ad hozzá a WooCommerce checkouthoz. Ez láthatóvá teszi az adó végösszegét a fizetés előtt, miközben megakadályozza, hogy a WooCommerce újra megadóztassa az adódíjat.
 
-## A fizetés kezelése
+## A fizetés kezelése {#how-to-manage-the-payment}
 
 A WooCommerce Integration nagyon hasonlóan működik ahhoz, ahogyan a **Manual Gateway** működik. Hátránya, hogy minden fizetést manuálisan kell kifizetni a számlázási időszak végén. Így működik a folyamat:
 
@@ -82,13 +82,13 @@ A WooCommerce Integration nagyon hasonlóan működik ahhoz, ahogyan a **Manual 
 
   * Amint a fizetés beérkezik, a tagság **megújul** , a fizetés rögzítésre kerül az Ultimate Multisite-ban, és a rendelés teljesítettként lesz beállítva.
 
-### Néhány fontos megjegyzés:
+### Néhány fontos megjegyzés: {#some-important-notes}
 
   * Az Ultimate Multisite alapértelmezett funkciói továbbra is működnek ezzel az integrációs formával. Például a **visszatérítések kiadása** a **Subscription Management** képernyőről kommunikálni fog a WooCommerce-szel, hogy a kiválasztott fizetési űrlap használatával kiadja a visszatérítést.
 
   * Az Ultimate Multisite: WooCommerce Integration működése a WP-Cronra támaszkodik. Ez a legtöbbször nagyon jól működik, de ha a webhely forgalma alacsony, akkor a cron nem kap felszólítást az ütemezett események ellenőrzésére, és az esemény kimarad, ami végrehajtási késéseket okozhat.
 
-## WooCommerce Subscriptions Plugin
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
 A fizetés kézi elindítása minden hónapban nem ideális a végfelhasználók számára, mert az előfizetésektől elvárt, hogy minden számlázási ciklusban automatikusan ismétlődjenek. A WooCommerce Integration add-on most már tartalmazza az alapvető előfizetési kódot, így az ismétlődő termékek mindig előfizetéseket használnak az ismétlődő számlázáshoz.
 
@@ -100,7 +100,7 @@ A fizetés kézi elindítása minden hónapban nem ideális a végfelhasználók
 
 Amellett, hogy a fő site-odon létrejön egy rendelés a _WooCommerce_ alatt, minden Account számára előfizetést is létrehoz.
 
-### Sikertelen megújításkori felfüggesztési viselkedés
+### Sikertelen megújításkori felfüggesztési viselkedés {#failed-renewal-suspension-behavior}
 
 Alapértelmezés szerint a tagságok aktívak maradnak, amíg a WooCommerce Subscriptions feldolgozza a sikertelen fizetések újrapróbálkozási ütemezését. Ez megőrzi a szokásos WooCommerce Subscriptions türelmi időszakot, így egy sikeresen helyreállított megújítás visszaszinkronizálhatja az előfizetést és a tagságot anélkül, hogy idő előtt megszakítaná a hozzáférést.
 

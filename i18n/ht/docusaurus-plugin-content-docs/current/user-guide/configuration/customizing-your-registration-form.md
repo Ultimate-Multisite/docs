@@ -3,13 +3,13 @@ title: Pèsonalize Fòm Enskripsyon Ou an
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pèsonalize Fòm Enskripsyon ou
+# Pèsonalize Fòm Enskripsyon ou {#customizing-your-registration-form}
 
 Pou fè rezo ou parèt inik parapò ak tout lòt SaaS ki bati sou platfòm WordPress, Ultimate Multisite pèmèt ou pèsonalize paj enskripsyon ak koneksyon ou yo ak fonksyon **Checkout Forms** nou an.
 
 Malgre yo se yon fason fasil ak fleksib pou fè eksperyans ak diferan apwòch lè w ap eseye konvèti nouvo kliyan, yo sitou itilize pou kreye fòm enskripsyon pèsonalize. Atik sa a gen pou objektif montre ou kijan ou ka fè sa.
 
-## Paj koneksyon ak enskripsyon:
+## Paj koneksyon ak enskripsyon: {#login-and-registration-pages}
 
 Lè w enstale Ultimate Multisite, li kreye otomatikman paj koneksyon ak enskripsyon pèsonalize sou sit prensipal ou. Ou ka chanje paj defo sa yo nenpòt ki lè lè w ale anba paj **Ultimate Multisite > Settings > Login & Registration** ou.
 
@@ -45,7 +45,7 @@ Kounye a, ann wè lòt opsyon ki toujou enpòtan pou pwosesis koneksyon ak enskr
 
 E se tout opsyon ki gen rapò ak koneksyon ak enskripsyon ou ka pèsonalize yo! Pa bliye sove paramèt ou yo apre ou fini modifye yo.
 
-## Itilize plizyè fòm enskripsyon:
+## Itilize plizyè fòm enskripsyon: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 ofri yon editè checkout form ki pèmèt ou kreye otan fòm ou vle, ak diferan chan, pwodwi ki an òf, elatriye.
 
@@ -69,7 +69,7 @@ Altènativman, ou ka modifye oswa diplike fòm ou deja genyen yo lè w klike sou
 
 Si ou chwazi yon sèl etap oswa plizyè etap, checkout form nan ap deja ranpli davans ak etap debaz yo pou li fonksyone. Apre sa, si ou vle, ou ka ajoute etap anplis ladan l.
 
-### Modifye yon Checkout Form:
+### Modifye yon Checkout Form: {#editing-a-checkout-form}
 
 Jan nou te mansyone anvan, ou ka kreye checkout forms pou diferan objektif. Nan egzanp sa a nou pral travay sou yon fòm enskripsyon.
 
@@ -131,11 +131,11 @@ Pou jwenn shortcode fòm ou an klike sou **Jenere Shortcode** epi kopye rezilta 
 
 _**Nòt:** W ap bezwen ajoute shortcode sa a sou paj enskripsyon ou an pou fòm finalizasyon acha sa a ajoute ladan l._
 
-## Pre-seleksyone pwodwi ak modèl atravè paramèt URL:
+## Pre-seleksyone pwodwi ak modèl atravè paramèt URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Si ou vle kreye tablo pri pèsonalize pou pwodwi ou yo epi pre-seleksyone sou fòm finalizasyon acha a pwodwi oswa modèl kliyan ou a chwazi nan tablo pri ou oswa paj modèl yo, ou ka itilize paramèt URL pou sa.
 
-### **Pou plan yo:**
+### **Pou plan yo:** {#for-plans}
 
 Ale nan **Ultimate Multisite > Pwodwi > Chwazi yon plan**. Ou ta dwe wè bouton **Klike pou kopye Lyen Pataj** la anlè paj la. Sa a se lyen ou ka itilize pou pre-seleksyone plan espesifik sa a sou fòm finalizasyon acha ou a.
 
@@ -143,7 +143,7 @@ Ale nan **Ultimate Multisite > Pwodwi > Chwazi yon plan**. Ou ta dwe wè bouton 
 
 Remake ke lyen pataj sa a valab sèlman pou **Plan**. Ou pa ka itilize lyen pataj pou pakè oswa sèvis.
 
-### Pou modèl yo:
+### Pou modèl yo: {#for-templates}
 
 Si ou vle pre-seleksyone modèl sit sou fòm finalizasyon acha ou a, ou ka itilize paramèt la: **?template_id=X** sou URL paj enskripsyon ou an. "X" la bezwen ranplase pa **nimewo ID modèl sit la**. Pou jwenn nimewo sa a, ale nan **Ultimate Multisite > Sit**.
 

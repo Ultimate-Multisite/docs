@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Ultimate Multisite: Mailchimp integracija
 
 Integruokite savo Ultimate Multisite tinklą su Mailchimp. Galite susieti tam tikrus planus su Mailchimp sąrašais ir automatiškai pridėti prenumeratorius prie tų sąrašų registracijos metu.
 
-## Diegimas
+## Diegimas {#installation}
 
 1. Įkelkite 'ultimate-multisite-mailchimp' į '/wp-content/plugins/' katalogą
 2. Aktyvuokite įskiepį per 'Įskiepiai' meniu savo WordPress tinklo administravime
 
-## Naudojimo vadovas
+## Naudojimo vadovas {#usage-guide}
 
 Prenumeratorių el. pašto adresų sinchronizavimas su jūsų MailChimp sąrašais yra labai paprastas naudojant mūsų Ultimate Multisite: MailChimp Integration priedą. Ši pamoka skirta padėti jums viską nustatyti!
 
-## API rakto gavimas
+## API rakto gavimas {#getting-an-api-key}
 
 Prieš pradėdami nagrinėti skirtingus galimus nustatymus, mums reikia MailChimp API rakto. Tai leis Ultimate Multisite bendrauti su MailChimp API, kad būtų galima gauti sąrašus, grupes ir pridėti el. pašto adresus prie tų sąrašų ir grupių, kai naudotojai registruojasi.
 
@@ -32,7 +32,7 @@ Vadovaukitės šia pamoka, kad gautumėte savo MailChimp API raktą: [Apie API r
 
 _Pridėkite savo MailChimp API raktą skiltyje_ _**Ultimate Multisite Nustatymai - > Priedo nustatymai -> MailChimp**_
 
-## Integracijos režimas
+## Integracijos režimas {#integration-mode}
 
 MailChimp Integration priedas siūlo du „integracijos režimus“, tai reiškia, kad yra du skirtingi būdai, kaip galite naudoti priedą el. pašto adresams sinchronizuoti.
 
@@ -40,7 +40,7 @@ MailChimp Integration priedas siūlo du „integracijos režimus“, tai reiški
 
 _Du integracijos režimai didesniam lankstumui!_
 
-### 1 režimas: Keli sąrašai
+### 1 režimas: Keli sąrašai {#mode-1-multiple-lists}
 
 Numatytasis režimas naudoja **Kelis sąrašus**. Šis režimas leis pasirinkti kelis MailChimp sąrašus kiekvienam planui. Tai geriausia parinktis, jei segmentuojate savo naudotojus į skirtingus sąrašus.
 
@@ -52,7 +52,7 @@ Norėdami tai pasiekti, galite naudoti Kelių sąrašų režimą ir pridėti abu
 
 _Pasirinkite numatytuosius sąrašus naujoms paskyroms ir atšauktoms paskyroms_
 
-### 2 režimas: Vienas sąrašas + kelios grupės
+### 2 režimas: Vienas sąrašas + kelios grupės {#mode-2-single-list--multiple-groups}
 
 MailChimp leidžia segmentuoti savo sąrašą į mažesnes naudotojų grupes, vadinamas **Grupėmis**. Tai suteikia daugiau kontrolės, nes galite siųsti kampaniją konkrečiam savo prenumeratorių pogrupiui, nereikėdami kurti kelių tos pačios kampanijos kopijų MailChimp (dėl ko vėliau sunku analizuoti tos kampanijos metriką).
 
@@ -62,13 +62,13 @@ Pavyzdžiui, galite turėti vieną sąrašą, pavadintą **Mano tinklo prenumera
 
 _Pasirinkite numatytuosius sąrašus ir grupes, jei naudojate „vienas sąrašas + kelios grupės“ integracijos režimą_
 
-## Numatytieji sąrašai ir grupės
+## Numatytieji sąrašai ir grupės {#default-lists-and-groups}
 
 Kai pasirinksite, kuris integracijos režimas labiau tinka jūsų konkrečiam naudojimo atvejui, laikas pasirinkti numatytuosius sąrašus (ir grupes, priklausomai nuo režimo). Numatytasis sąrašas bus naudojamas, kai tam tikram planui nėra pasirinktas konkretus sąrašas.
 
 Taip pat galite pasirinkti numatytąjį sąrašą atšauktoms paskyroms. Kai naudotojas nutraukia savo prenumeratą ir pašalina savo paskyrą iš jūsų tinklo, jo arba jos el. pašto adresas bus perkeltas į sąrašą, nustatytą atšauktoms paskyroms.
 
-## Dvigubos prenumeratos įjungimas
+## Dvigubos prenumeratos įjungimas {#enabling-double-subscription}
 
 Tame pačiame nustatymų puslapyje galėsite įjungti **Dvigubą prenumeratą**. Ši parinktis pridės naudotoją tiek prie pasirinkto numatytojo sąrašo, TIEK prie sąrašo, pasirinkto to naudotojo planui. Jei ši parinktis neįjungta, naudotojas bus pridėtas tik prie sąrašo, pasirinkto naudotojo planui. Jei tam konkrečiam planui niekas nenustatyta, naudotojas bus pridėtas prie pasirinkto numatytojo sąrašo.
 
@@ -76,7 +76,7 @@ Tame pačiame nustatymų puslapyje galėsite įjungti **Dvigubą prenumeratą**.
 
 _Galite registracijos metu prenumeruoti savo naudotojus tiek prie numatytojo sąrašo, tiek prie plano sąrašo_
 
-## Sąrašų ir grupių pasirinkimas kiekvienam planui
+## Sąrašų ir grupių pasirinkimas kiekvienam planui {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Eikite į savo **Planus** ir pasirinkite planą, kurį norite redaguoti. Atkreipkite dėmesį, kad **Išplėstinių parinkčių** meta laukelyje bus pasiekiamas naujas skirtukas, pavadintas MailChimp.
 

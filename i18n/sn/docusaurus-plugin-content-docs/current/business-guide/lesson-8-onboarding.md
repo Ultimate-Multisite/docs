@@ -3,15 +3,15 @@ title: 'Chidzidzo 8: Kupinza Mutengi muSevhisi'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Chidzidzo 8: Kupinza Vatengi Pakutanga
+# Chidzidzo 8: Kupinza Vatengi Pakutanga {#lesson-8-customer-onboarding}
 
 Kuita kuti mutengi anyorese ihafu chete yebasa. Kana vakapinda, vakanzwa kuremerwa, uye vasingazodzoki, warasikirwa navo. Chidzidzo ichi chinogadzira ruzivo runoshandura munhu achangonyoresa kuva mutengi anoshanda uye ane chekuita.
 
-## Patakagumira
+## Patakagumira {#where-we-left-off}
 
 FitSite yakazara nebranding ine checkout flow iri kushanda. Iye zvino tinotarisa zvinoitika mushure mekunge muridzi wefitness studio apedza kunyoresa uye asvika pasaiti yake itsva kekutanga.
 
-## Nei Onboarding Ichikosha
+## Nei Onboarding Ichikosha {#why-onboarding-matters}
 
 Maminitsi ekutanga 30 mushure mekunyoresa ndiwo anosarudza kana mutengi achigara kana kuti achisiya. Muridzi wefitness studio uyo:
 
@@ -21,9 +21,9 @@ Maminitsi ekutanga 30 mushure mekunyoresa ndiwo anosarudza kana mutengi achigara
 
 Matemplate ako eniche (Chidzidzo 4) anobata pfungwa yekutanga. Chidzidzo ichi chinobata yechipiri.
 
-## Ruzivo rweKutanga Kupinda
+## Ruzivo rweKutanga Kupinda {#the-first-login-experience}
 
-### Widget yeDashboard Yekugamuchira
+### Widget yeDashboard Yekugamuchira {#welcome-dashboard-widget}
 
 Gadzira widget yeDashboard yakagadzirirwa iwe inokwazisa vatengi vatsva uye inovatungamira kuburikidza nesetup. Izvi zvinofanira kuoneka zvakajeka pavanotanga kupinda.
 
@@ -37,7 +37,7 @@ Gadzira widget yeDashboard yakagadzirirwa iwe inokwazisa vatengi vatsva uye inov
 
 Nhanho imwe neimwe inobatanidza zvakananga kupeji kana setting yakakodzera. Hapana kutsvaga-famba mumamenu.
 
-### Ita Kuti Dashboard Ive Nyore
+### Ita Kuti Dashboard Ive Nyore {#simplify-the-dashboard}
 
 Vatengi vatsva havadi kuona chinhu chimwe nechimwe cheWordPress menu. Funga nezve:
 
@@ -47,29 +47,29 @@ Vatengi vatsva havadi kuona chinhu chimwe nechimwe cheWordPress menu. Funga nezv
 
 Addon ye[Plugin & Theme Manager](/addons/plugin-and-theme-manager) inogona kubatsira kudzora zvinoonekwa nevatengi.
 
-## Nhevedzano yeEmail Yekugamuchira
+## Nhevedzano yeEmail Yekugamuchira {#welcome-email-sequence}
 
 Email imwe chete yekugamuchira haina kukwana. Seta nhevedzano inotungamira vatengi muvhiki yavo yekutanga:
 
-### Email 1: Kugamuchira (Pakarepo mushure mekunyoresa)
+### Email 1: Kugamuchira (Pakarepo mushure mekunyoresa) {#email-1-welcome-immediately-after-signup}
 
 - Musoro: "Welcome to FitSite -- your studio website is live"
 - Zviri mukati: Link yekupinda, nhanho dzequick start, link kuzviwanikwa zvekubatsira
 - Matauriro: Anofara, anokurudzira, akanangana nefitness
 
-### Email 2: Zvinokurumidza Kubudirira (Zuva 1)
+### Email 2: Zvinokurumidza Kubudirira (Zuva 1) {#email-2-quick-wins-day-1}
 
 - Musoro: "3 things to do first on your FitSite"
 - Zviri mukati: Wedzera logo yako, gadzirisa mufananidzo wehomepage hero, wedzera schedule yemakirasi ako
 - Sanganisira mascreenshot anoratidza chaizvo pekudzvanya
 
-### Email 3: Iite Yako (Zuva 3)
+### Email 3: Iite Yako (Zuva 3) {#email-3-make-it-yours-day-3}
 
 - Musoro: "Make your fitness site stand out"
 - Zviri mukati: Gadzirisa mavara, wedzera mafoto ematrainer, nyora nyaya ye studio yako
 - Link kumienzaniso yemasaiti efiteness akanaka ari paplatform
 
-### Email 4: Enda Live (Zuva 7)
+### Email 4: Enda Live (Zuva 7) {#email-4-go-live-day-7}
 
 - Musoro: "Ready to share your FitSite with the world?"
 - Zviri mukati: Checklist yezvinofanira kuongororwa usati wagovera, mabatanidzirwo e custom domain (kana uri paGrowth/Pro), mazano ekugovera pasocial
@@ -78,11 +78,11 @@ Email imwe chete yekugamuchira haina kukwana. Seta nhevedzano inotungamira vaten
 Use [Webhooks](/user-guide/integrations/webhooks) or [Zapier](/user-guide/integrations/zapier) to trigger these emails through your email marketing platform. This gives you more control over timing and allows you to track engagement.
 :::
 
-## Zviwanikwa Zvekubatsira
+## Zviwanikwa Zvekubatsira {#help-resources}
 
 Gadzira zvirimo zvekubatsira zvakanangana neniche zvinopindura mibvunzo inobvunzwa chaizvo nevaridzi ve fitness studio:
 
-### Zvinyorwa zveKnowledge Base
+### Zvinyorwa zveKnowledge Base {#knowledge-base-articles}
 
 - "Maitiro ekugadzirisa schedule yemakirasi ako"
 - "Kuwedzera nekugadzirisa maprofile ematrainer"
@@ -92,7 +92,7 @@ Gadzira zvirimo zvekubatsira zvakanangana neniche zvinopindura mibvunzo inobvunz
 
 Nyora izvi kune vashandisi vasiri technical. Shandisa mascreenshot. Dzivisa jargon yeWordPress.
 
-### Mavhidhiyo Ekufambiswa
+### Mavhidhiyo Ekufambiswa {#video-walkthroughs}
 
 Mapfupi (maminitsi 2-3) marekodhi escreen anoratidza:
 
@@ -103,7 +103,7 @@ Mapfupi (maminitsi 2-3) marekodhi escreen anoratidza:
 
 Izvi hazvidi kuva zvigadzirwa zvakanyatsopukutwa. Kujeka, kubatsira, uye kunangana neniche ndizvo zvakakosha.
 
-## Peji reAccount
+## Peji reAccount {#the-account-page}
 
 Ultimate Multisite inosanganisira [Peji reAccount](/user-guide/client-management/account-page) rinoonekwa nemutengi uko vatengi vanotungamira subscription yavo. Gadzirisa iri kuti:
 
@@ -112,7 +112,7 @@ Ultimate Multisite inosanganisira [Peji reAccount](/user-guide/client-management
 - Ripe nhoroondo yekubhadhara uye kudhawunirodha invoice
 - Ribatanidze kuzviwanikwa zvekubatsira
 
-## Kuyera Kubudirira kweOnboarding
+## Kuyera Kubudirira kweOnboarding {#measuring-onboarding-success}
 
 Tevera zviratidzo izvi kuti uzive kana onboarding yako iri kushanda:
 
@@ -121,7 +121,7 @@ Tevera zviratidzo izvi kuti uzive kana onboarding yako iri kushanda:
 - **Matiketi erutsigiro kubva kuvatengi vatsva**: Huwandu hwepamusoro hunoreva kuti onboarding yako ine maburi
 - **Trial-to-paid conversion**: Kana uchipa matrial, ipercentage ipi inoshanduka kuva vanobhadhara?
 
-## FitSite Network Kusvika Parizvino
+## FitSite Network Kusvika Parizvino {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Zvatakavaka muChidzidzo Ichi
+## Zvatakavaka muChidzidzo Ichi {#what-we-built-this-lesson}
 
 - **Ruzivo rwekutanga kupinda rune gwara** neQuick Start widget
 - **Dashboard yakaitwa nyore** yakanangana nemabasa ekutungamira saiti yefitness

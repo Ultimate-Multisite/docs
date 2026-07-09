@@ -4,23 +4,23 @@ title: פילטר - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# מסנן: wu_is_development_mode
+# מסנן: wu_is_development_mode {#filter-wuisdevelopmentmode}
 
 מאפשר למפתחי תוספים להוסיף בדיקות נוספות עבור מצב פיתוח.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | שם | סוג | תיאור |
 |------|------|-------------|
 | $is_development_mode | `bool` | סטטוס הפיתוח הנוכחי. |
 | $site_url | `string` | כתובת האתר (URL). |
 
-### מאז
+### מאז {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 מוגדר ב[`inc/domain-mapping/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/domain-mapping/class-helper.php#L63) בשורה 63
 
 
-## מחזיר
+## מחזיר {#returns}

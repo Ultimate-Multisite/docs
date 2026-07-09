@@ -4,11 +4,11 @@ title: عمل - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# عمل: move_site
+# عمل: move_site {#action-movesite}
 
 تڏهن هلندو آهي جڏهن ڪا سائيٽ نئين نيٽورڪ ڏانهن منتقل ڪئي وئي هجي.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 | $old_network_id | `int` | سائيٽ لاءِ اصل نيٽورڪ جو ID. |
 | $new_network_id | `int` | انهي نيٽورڪ جو ID جتي سائيٽ منتقل ڪئي وئي آهي. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 1.3.0
-### ماخذ
+### ماخذ {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) ۾ لائين 1587 تي بيان ڪيل.

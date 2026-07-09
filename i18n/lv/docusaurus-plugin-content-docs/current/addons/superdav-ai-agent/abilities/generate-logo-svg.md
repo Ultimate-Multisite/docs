@@ -3,15 +3,15 @@ title: Ģenerēt logotipa SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Ģenerēt Logo SVG
+# Ģenerēt Logo SVG {#generate-logo-svg}
 
 **Generate Logo SVG** spēja ļauj Theme Builder izveidot un iegult pielāgotus logo SVG tieši jūsu WordPress vietnē ar automātisku, nosaukumvietām drošu sanitizāciju.
 
-## Pārskats
+## Pārskats {#overview}
 
 Šī spēja ģenerē mērogojamus vektorgrafikas (SVG) logo, balstoties uz jūsu vietnes zīmolvedības virzienu un dizaina preferencēm. Ģenerētie SVG tiek automātiski sanitizēti, lai nodrošinātu, ka tie ir droši lietošanai WordPress, vienlaikus saglabājot vizuālo integritāti.
 
-## Parametri
+## Parametri {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 | `height` | number | No | SVG augstums pikseļos (noklusējums: 200) |
 | `include_text` | boolean | No | Vai iekļaut vietnes nosaukumu kā tekstu logo (noklusējums: true) |
 
-## Izvades formāts
+## Izvades formāts {#output-format}
 
 Šī spēja atgriež SVG virkni ar šādu struktūru:
 
@@ -36,7 +36,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 }
 ```
 
-## SVG sanitizācijas uzvedība
+## SVG sanitizācijas uzvedība {#svg-sanitisation-behaviour}
 
 Ģenerētajiem SVG tiek veikta automātiska, nosaukumvietām droša sanitizācija, lai:
 
@@ -48,7 +48,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 
 Tas nodrošina, ka SVG ir droši iegult tieši WordPress bez papildu sanitizācijas.
 
-## Lietošanas piemērs
+## Lietošanas piemērs {#usage-example}
 
 **Uzvedne:**
 ```
@@ -62,7 +62,7 @@ Tas nodrošina, ka SVG ir droši iegult tieši WordPress bez papildu sanitizāci
 - Ievēro mūsdienīga dizaina principus
 - Ir automātiski sanitizēts un gatavs lietošanai
 
-## Integrācija ar Theme Builder
+## Integrācija ar Theme Builder {#integration-with-theme-builder}
 
 Izmantojot Theme Builder dizaina virziena atlasi, Generate Logo SVG spēja:
 
@@ -71,21 +71,21 @@ Izmantojot Theme Builder dizaina virziena atlasi, Generate Logo SVG spēja:
 3. Automātiski iegulst logo jūsu vietnes galvenes/zīmolvedības zonā
 4. Saglabā SVG kā pielāgotu logo WordPress multividē
 
-## Labākā prakse
+## Labākā prakse {#best-practices}
 
 - **Sniedziet skaidras stila preferences** — aprakstiet vēlamo dizaina stilu (modernu, klasisku, rotaļīgu utt.)
 - **Norādiet krāsas** — iekļaujiet sava zīmola krāsas konsekvencei
 - **Pārbaudiet attēlošanu** — pārliecinieties, ka logo tiek pareizi attēlots dažādos ekrāna izmēros
 - **Pielāgojiet tālāk** — izmantojiet WordPress logo pielāgošanas rīkus, lai koriģētu izmēru un izvietojumu
 
-## Ierobežojumi
+## Ierobežojumi {#limitations}
 
 - SVG logo tiek ģenerēti kā statiska grafika (ne animēti)
 - Sarežģītiem logo ar daudziem elementiem var būt nepieciešama manuāla pilnveide
 - Pielāgoti fonti netiek atbalstīti; teksts izmanto sistēmas fontus
 - Ļoti lieli vai ļoti mazi izmēri var ietekmēt kvalitāti
 
-## Saistītās spējas
+## Saistītās spējas {#related-abilities}
 
 - [Validēt paletes kontrastu](./validate-palette-contrast.md) — pārbaudīt krāsu kontrastu piekļūstamībai
 - [Izveidot izvēlni](./create-menu.md) — izveidot navigācijas izvēlnes jūsu vietnei

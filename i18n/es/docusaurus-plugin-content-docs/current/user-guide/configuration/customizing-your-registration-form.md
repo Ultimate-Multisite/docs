@@ -3,13 +3,13 @@ title: Personalización de tu formulario de registro
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizar tu formulario de registro
+# Personalizar tu formulario de registro {#customizing-your-registration-form}
 
 Para hacer que tu red se vea única frente a todos los demás SaaS construidos sobre la plataforma WordPress, Ultimate Multisite te permite personalizar tus páginas de registro e inicio de sesión con nuestra función **Checkout Forms**.
 
 Aunque son una forma fácil y flexible de experimentar con diferentes enfoques al intentar convertir nuevos clientes, se usan principalmente para crear formularios de registro personalizados. Este artículo tiene como objetivo mostrarte cómo puedes hacerlo.
 
-## Páginas de inicio de sesión y registro:
+## Páginas de inicio de sesión y registro: {#login-and-registration-pages}
 
 Tras la instalación de Ultimate Multisite, se crean automáticamente páginas personalizadas de inicio de sesión y registro en tu sitio principal. Puedes cambiar estas páginas predeterminadas en cualquier momento yendo a tu página **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Ahora, veamos otras opciones que siguen siendo relevantes para el proceso de ini
 
 ¡Y esas son todas las opciones relacionadas con el inicio de sesión y el registro que puedes personalizar! No olvides guardar tus ajustes después de terminar de editarlos.
 
-## Usar múltiples formularios de registro:
+## Usar múltiples formularios de registro: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 ofrece un editor de checkout forms que te permite crear tantos formularios como quieras, con diferentes campos, productos en oferta, etc.
 
@@ -69,7 +69,7 @@ Como alternativa, puedes editar o duplicar los formularios que ya tienes haciend
 
 Si seleccionas un solo paso o varios pasos, el checkout form ya estará prerellenado con los pasos básicos para que funcione. Luego, si quieres, puedes añadirle pasos adicionales.
 
-### Editar un Checkout Form:
+### Editar un Checkout Form: {#editing-a-checkout-form}
 
 Como mencionamos antes, puedes crear checkout forms para diferentes propósitos. En este ejemplo trabajaremos en un formulario de registro.
 
@@ -131,11 +131,11 @@ Para obtener el shortcode de tu formulario, haz clic en **Generar shortcode** y 
 
 _**Nota:** Tendrás que añadir este shortcode a tu página de registro para que este formulario de pago se añada a ella._
 
-## Preseleccionar productos y plantillas mediante parámetros de URL:
+## Preseleccionar productos y plantillas mediante parámetros de URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Si quieres crear tablas de precios personalizadas para tus productos y preseleccionar en el formulario de pago el producto o la plantilla que tu cliente elija desde tu tabla de precios o página de plantillas, puedes usar parámetros de URL para esto.
 
-### **Para planes:**
+### **Para planes:** {#for-plans}
 
 Ve a **Ultimate Multisite > Productos > Seleccionar un plan**. Deberías ver el botón **Haz clic para copiar enlace compartible** en la parte superior de la página. Este es el enlace que puedes usar para preseleccionar este plan específico en tu formulario de pago.
 
@@ -143,7 +143,7 @@ Ve a **Ultimate Multisite > Productos > Seleccionar un plan**. Deberías ver el 
 
 Ten en cuenta que este enlace compartible solo es válido para **Planes**. No puedes usar enlaces compartibles para paquetes o servicios.
 
-### Para plantillas:
+### Para plantillas: {#for-templates}
 
 Si quieres preseleccionar plantillas de sitio en tu formulario de pago, puedes usar el parámetro: **?template_id=X** en la URL de tu página de registro. La "X" debe ser reemplazada por el **número de ID de la plantilla de sitio**. Para obtener este número, ve a **Ultimate Multisite > Sitios**.
 

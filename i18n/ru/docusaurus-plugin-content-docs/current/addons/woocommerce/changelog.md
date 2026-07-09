@@ -3,7 +3,7 @@ title: Журнал изменений интеграции WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Журнал изменений интеграции WooCommerce
+# Журнал изменений интеграции WooCommerce {#woocommerce-integration-changelog}
 
 Версия 2.2.0 - Выпущена 2026-07-01
 * Новое: суммы налогов Ultimate Multisite теперь отображаются как отдельные строки сборов WooCommerce при оформлении заказа, делая итоговые суммы налогов понятнее до оплаты.

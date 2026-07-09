@@ -3,7 +3,7 @@ title: ອ້າງອີງຄວາມສາມາດ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# ອ້າງອີງຄວາມສາມາດ
+# ອ້າງອີງຄວາມສາມາດ {#abilities-reference}
 
 ຄວາມສາມາດແມ່ນການກະທຳຍ່ອຍພື້ນຖານທີ່ Gratis AI Agent ສາມາດເອີ້ນໃຊ້ໃນການຕິດຕັ້ງ WordPress ຂອງທ່ານ. ແຕ່ລະຄວາມສາມາດແມ່ນ PHP class ທີ່ລົງທະບຽນໄວ້ ເຊິ່ງເປີດເຜີຍ JSON schema — ຕົວແທນຈະອ່ານ schema ນີ້ໃນຂະນະເຮັດວຽກ ເພື່ອເຂົ້າໃຈວ່າຕ້ອງການພາຣາມິເຕີໃດ ແລະຄວາມສາມາດນັ້ນສົ່ງຄືນຫຍັງ.
 
@@ -11,11 +11,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ປະເພດໂພສແບບກຳນົດເອງ
+## ປະເພດໂພສແບບກຳນົດເອງ {#custom-post-types}
 
 ຄວາມສາມາດເຫຼົ່ານີ້ຈັດການປະເພດໂພສແບບກຳນົດເອງ (CPTs) ທີ່ລົງທະບຽນຜ່ານຕົວແທນ. ການລົງທະບຽນຈະຖືກເກັບໄວ້ໃນຕາຕະລາງ options ຂອງ WordPress ເພື່ອໃຫ້ຍັງຄົງຢູ່ຫຼັງຈາກປິດໃຊ້ແລະເປີດໃຊ້ plugin ຄືນໃໝ່.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 ລົງທະບຽນປະເພດໂພສແບບກຳນົດເອງໃໝ່.
 
@@ -50,7 +50,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 ສົ່ງຄືນປະເພດໂພສແບບກຳນົດເອງທັງໝົດທີ່ລົງທະບຽນໂດຍຕົວແທນ.
 
@@ -73,7 +73,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 ຍົກເລີກການລົງທະບຽນປະເພດໂພສແບບກຳນົດເອງທີ່ເຄີຍລົງທະບຽນໂດຍຕົວແທນ. ໂພສທີ່ມີຢູ່ຂອງປະເພດນັ້ນຈະຍັງຄົງຢູ່ໃນຖານຂໍ້ມູນ ແຕ່ຈະບໍ່ສາມາດເຂົ້າເຖິງຜ່ານປະເພດໂພສນັ້ນໄດ້ອີກ.
 
@@ -87,11 +87,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ການຈັດໝວດໝູ່ແບບກຳນົດເອງ
+## ການຈັດໝວດໝູ່ແບບກຳນົດເອງ {#custom-taxonomies}
 
 ຄວາມສາມາດເຫຼົ່ານີ້ຈັດການການຈັດໝວດໝູ່ແບບກຳນົດເອງ. ເຊັ່ນດຽວກັບ CPTs, ການລົງທະບຽນ taxonomy ຈະຖືກເກັບໄວ້.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 ລົງທະບຽນການຈັດໝວດໝູ່ແບບກຳນົດເອງໃໝ່.
 
@@ -123,7 +123,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 ສົ່ງຄືນການຈັດໝວດໝູ່ແບບກຳນົດເອງທັງໝົດທີ່ລົງທະບຽນໂດຍຕົວແທນ.
 
@@ -146,7 +146,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 ຍົກເລີກການລົງທະບຽນການຈັດໝວດໝູ່ແບບກຳນົດເອງທີ່ເຄີຍລົງທະບຽນໂດຍຕົວແທນ.
 
@@ -160,11 +160,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ລະບົບອອກແບບ
+## ລະບົບອອກແບບ {#design-system}
 
 ຄວາມສາມາດຂອງລະບົບອອກແບບແກ້ໄຂການນຳສະເໜີດ້ານພາບຂອງເວັບໄຊ WordPress — ຕັ້ງແຕ່ CSS ແບບກຳນົດເອງ ໄປຈົນເຖິງຮູບແບບບລັອກແລະໂລໂກ້ຂອງເວັບໄຊ.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 ເພີ່ມ CSS ເຂົ້າໄປໃນ `<head>` ຂອງເວັບໄຊຜ່ານ `wp_add_inline_style`. CSS ຖືກເກັບໄວ້ໃນ option `gratis_ai_agent_custom_css` ແລະຖືກຖອນອອກຈາກຄິວຢ່າງສະອາດເມື່ອຄວາມສາມາດຖືກຣີເຊັດ.
 
@@ -190,7 +190,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 ລົງທະບຽນຮູບແບບບລັອກທີ່ນຳກັບມາໃຊ້ຊ້ຳໄດ້ໃນຫ້ອງສະໝຸດຮູບແບບຂອງ WordPress.
 
@@ -209,7 +209,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 ສະແດງລາຍການຮູບແບບບລັອກທັງໝົດທີ່ລົງທະບຽນໂດຍຕົວແທນ.
 
@@ -231,7 +231,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 ຕັ້ງໂລໂກ້ site WordPress ໃຫ້ເປັນ ID ໄຟລ໌ແນບທີ່ກຳນົດ ຫຼື URL ຮູບພາບທາງໄກ. ເມື່ອມີການໃຫ້ URL, ຮູບພາບຈະຖືກດາວໂຫຼດ ແລະນຳເຂົ້າໄປໃນ Media Library.
 
@@ -248,7 +248,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 ນຳໃຊ້ຄ່າສຳເລັດຮູບສີ/ຕົວພິມທີ່ມີຊື່ ໃສ່ `theme.json` (ຫຼື `global-styles`) ຂອງ theme ທີ່ກຳລັງໃຊ້ງານ. ຄ່າສຳເລັດຮູບແມ່ນຊຸດທີ່ຄັດສັນ ແລະດູແລໂດຍທີມ Gratis AI Agent.
 
@@ -273,11 +273,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ສະໄຕລ໌ທົ່ວໄປ
+## ສະໄຕລ໌ທົ່ວໄປ {#global-styles}
 
 ຄວາມສາມາດ Global Styles ອ່ານ ແລະຂຽນຄ່າ theme.json ຜ່ານ WordPress Global Styles API, ມີຜົນຕໍ່ບລັອກ ແລະແມ່ແບບທັງໝົດທົ່ວ site.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 ສົ່ງຄືນການກຳນົດຄ່າສະໄຕລ໌ທົ່ວໄປປັດຈຸບັນ.
 
@@ -291,7 +291,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 ອັບເດດໜຶ່ງຄ່າ ຫຼືຫຼາຍຄ່າໃນການກຳນົດຄ່າສະໄຕລ໌ທົ່ວໄປ.
 
@@ -318,7 +318,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 ຣີເຊັດການປ່ຽນແປງສະໄຕລ໌ທົ່ວໄປທີ່ agent ໄດ້ນຳໃຊ້ທັງໝົດ, ຟື້ນຄືນຄ່າເລີ່ມຕົ້ນຂອງ theme.
 
@@ -328,11 +328,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ເມນູນຳທາງ
+## ເມນູນຳທາງ {#navigation-menus}
 
 ຄວາມສາມາດເມນູນຳທາງສ້າງ ແລະຈັດການເມນູນຳທາງ WordPress ແລະລາຍການຂອງມັນ.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 ສ້າງເມນູນຳທາງ WordPress ໃໝ່.
 
@@ -347,7 +347,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 ປ່ຽນຊື່ເມນູ ຫຼືກຳນົດມັນໃໝ່ໃຫ້ກັບຕຳແໜ່ງ theme.
 
@@ -363,7 +363,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 ເພີ່ມລາຍການໃສ່ເມນູນຳທາງທີ່ມີຢູ່.
 
@@ -383,7 +383,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 ລຶບລາຍການອອກຈາກເມນູນຳທາງ.
 
@@ -397,7 +397,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 ສະແດງລາຍການເມນູນຳທາງ WordPress ທັງໝົດ, ລວມທັງຕຳແໜ່ງ theme ທີ່ຖືກກຳນົດໃຫ້.
 
@@ -420,11 +420,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ການຈັດການຕົວເລືອກ
+## ການຈັດການຕົວເລືອກ {#options-management}
 
 ຄວາມສາມາດຕົວເລືອກອ່ານ ແລະຂຽນຕົວເລືອກ WordPress ຜ່ານ `get_option` / `update_option`. ບັນຊີບລັອກຄວາມປອດໄພໃນຕົວປ້ອງກັນການແກ້ໄຂການຕັ້ງຄ່າສຳຄັນໂດຍບັງເອີນ.
 
-### `get_option`
+### `get_option` {#getoption}
 
 ອ່ານຕົວເລືອກ WordPress.
 
@@ -440,7 +440,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 ຂຽນຕົວເລືອກ WordPress.
 
@@ -458,7 +458,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 ລຶບຕົວເລືອກ WordPress.
 
@@ -474,7 +474,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 ສະແດງລາຍການຕົວເລືອກ WordPress ທີ່ກົງກັບຮູບແບບ.
 
@@ -498,11 +498,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ການຈັດການເນື້ອຫາ
+## ການຈັດການເນື້ອຫາ {#content-management}
 
 ຄວາມສາມາດການຈັດການເນື້ອຫາສ້າງ ແລະ ແກ້ໄຂໂພສ ແລະ ໜ້າ WordPress. ID ຂອງໂພສຈະຖືກສົ່ງຄືນ ເພື່ອໃຫ້ຂັ້ນຕອນຕໍ່ໄປໃນແຜນຫຼາຍຄວາມສາມາດສາມາດອ້າງອີງເນື້ອຫາທີ່ສ້າງໄດ້.
 
-### `create_post`
+### `create_post` {#createpost}
 
 ສ້າງໂພສ WordPress, ໜ້າ, ຫຼື ລາຍການປະເພດໂພສກຳນົດເອງໃໝ່.
 
@@ -537,7 +537,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 ອັບເດດໂພສ ຫຼື ໜ້າ WordPress ທີ່ມີຢູ່ແລ້ວ.
 
@@ -567,7 +567,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 ສ້າງໂພສຫຼາຍອັນໃນການເອີ້ນຄວາມສາມາດຄັ້ງດຽວ, ຫຼຸດການໄປກັບຫຼາຍຮອບລະຫວ່າງການສ້າງເວັບໄຊ ຫຼື ການນຳເຂົ້າເນື້ອຫາຈຳນວນຫຼາຍ. ໂພສຖືກສ້າງຕາມລຳດັບ; ຖ້າອັນໜຶ່ງລົ້ມເຫຼວ ອັນອື່ນໆຈະດຳເນີນຕໍ່ ແລະ ຄວາມລົ້ມເຫຼວຈະຖືກລາຍງານໃນອາເຣຜົນລັບ.
 
@@ -619,7 +619,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 ກຳນົດຮູບເດັ່ນ (ຮູບຫຍໍ້ຂອງໂພສ) ໃຫ້ໂພສ ຫຼື ໜ້າທີ່ມີຢູ່ແລ້ວ. ຮອງຮັບ ID ໄຟລ໌ແນບຈາກ Media Library ທີ່ມີຢູ່ ຫຼື URL ຮູບພາບຈາກທາງໄກ; ເມື່ອສະໜອງ URL, ຮູບພາບຈະຖືກດາວໂຫຼດ ແລະ ນຳເຂົ້າໂດຍອັດຕະໂນມັດ.
 
@@ -638,7 +638,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 ສ້າງແບບຟອມຕິດຕໍ່ໂດຍໃຊ້ plugin ແບບຟອມທີ່ເປີດໃຊ້ຢູ່ (Contact Form 7, WPForms, Fluent Forms, ຫຼື Gravity Forms, ຂຶ້ນກັບວ່າອັນໃດຖືກຕິດຕັ້ງ). ສົ່ງຄືນ shortcode ທີ່ສາມາດຝັງໃນໂພສ ຫຼື ໜ້າໃດກໍໄດ້.
 
@@ -691,11 +691,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ການກວດທານດ້ວຍພາບ
+## ການກວດທານດ້ວຍພາບ {#visual-review}
 
 ຄວາມສາມາດການກວດທານດ້ວຍພາບຊ່ວຍໃຫ້ agent ຈັບພາບໜ້າຈໍຂອງໜ້າທີ່ກຳລັງໃຊ້ງານຢູ່ ແລະວິເຄາະມັນ, ເຮັດໃຫ້ສາມາດກວດທານການອອກແບບແບບອັດຕະໂນມັດ, ປຽບທຽບກ່ອນ/ຫຼັງ, ແລະກວດກາການຖົດຖອຍທາງພາບ ໂດຍບໍ່ຕ້ອງມີ browser extension.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 ຈັບພາບໜ້າຈໍຂອງໜ້າ WordPress ທີ່ URL ທີ່ກຳນົດ ໂດຍໃຊ້ browser ໄຮ້ຫົວຝັ່ງ server. ຮູບພາບຖືກບັນທຶກໄປທີ່ Media Library ແລະສົ່ງກັບ URL CDN.
 
@@ -724,7 +724,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 ນຳພາບໜ້າຈໍສອງຮູບ ແລະສົ່ງກັບຄະແນນຄວາມແຕກຕ່າງທາງພາບ ພ້ອມຮູບພາບຄວາມແຕກຕ່າງທີ່ເນັ້ນບໍລິເວນທີ່ປ່ຽນແປງ. ມີປະໂຫຍດໃນການຢືນຢັນວ່າການປ່ຽນແປງການອອກແບບໄດ້ຜົນຕາມຄາດ ຫຼືເພື່ອກວດຫາການຖົດຖອຍທີ່ບໍ່ຕັ້ງໃຈ.
 
@@ -754,7 +754,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 ຈັບພາບໜ້າຈໍຂອງໜ້າ ແລະສົ່ງມັນໄປທີ່ຕົວແບບພາສາເພື່ອວິເຄາະດ້ວຍພາບ. ສົ່ງກັບການປະເມີນທີ່ມີໂຄງສ້າງ ຄອບຄຸມເລື່ອງການຈັດວາງ, ການຈັດຕົວພິມ, ການໃຊ້ສີ, ແລະຂໍ້ກັງວົນດ້ານການເຂົ້າເຖິງ.
 
@@ -785,11 +785,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ຄວາມສາມາດທີ່ຕິດຕັ້ງໄດ້
+## ຄວາມສາມາດທີ່ຕິດຕັ້ງໄດ້ {#installable-abilities}
 
 ທະບຽນຄວາມສາມາດທີ່ຕິດຕັ້ງໄດ້ ຊ່ວຍໃຫ້ທ່ານຂະຫຍາຍ agent ດ້ວຍຊຸດຄວາມສາມາດເພີ່ມເຕີມທີ່ແຈກຈ່າຍເປັນ WordPress plugins. ແຕ່ລະຊຸດລົງທະບຽນຄວາມສາມາດໜຶ່ງຫຼືຫຼາຍຢ່າງໂດຍໃຊ້ API ຄວາມສາມາດມາດຕະຖານ.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 ສົ່ງກັບລາຍການຊຸດຄວາມສາມາດທີ່ມີສຳລັບຕິດຕັ້ງຈາກທະບຽນ.
 
@@ -818,7 +818,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 ດາວໂຫຼດ ແລະ ເປີດໃຊ້ຊຸດຄວາມສາມາດຈາກທະບຽນ.
 
@@ -832,7 +832,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 ສອບຖາມທະບຽນຄວາມສາມາດເພື່ອຊອກຫາປລັກອິນທີ່ດີທີ່ສຸດສຳລັບການນຳໃຊ້ທີ່ອະທິບາຍໄວ້ ແລະ ຖ້າຕ້ອງການ ກໍຕິດຕັ້ງມັນ.
 

@@ -3,13 +3,13 @@ title: Pandhuan Integrasi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Pandhuan Integrasi
+# Pandhuan Integrasi {#integration-guide}
 
 Pandhuan iki nyakup pola integrasi umum karo Ultimate Multisite, kalebu nyambung menyang layanan eksternal, mbangun payment gateway khusus, lan nangani webhooks.
 
 Kanggo infrastruktur tenant sing kapisah, delengen [Integrasi Multi-Tenancy](./multi-tenancy) kanggo pandhuan bootstrap tenant sovereign, verifikasi migrasi, SSO, lan teardown.
 
-## Integrasi CRM
+## Integrasi CRM {#crm-integration}
 
 Sinkronake data pelanggan menyang CRM nalika pelanggan anyar ndhaptar:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrasi Analytics
+## Integrasi Analytics {#analytics-integration}
 
 Lacak acara bisnis utama ing saindhenging siklus urip pelanggan:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Langkah Sabanjure
+## Langkah Sabanjure {#next-steps}
 
 - [Pangembangan Gateway Khusus](./custom-gateway) — Bangun payment gateway sampeyan dhewe
 - [Nangani Webhook](./webhooks) — Gawe endpoint webhook khusus

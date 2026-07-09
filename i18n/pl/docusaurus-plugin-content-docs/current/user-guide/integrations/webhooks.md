@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Pierwsze spojrzenie na Webhooks (v2)
+# Pierwsze spojrzenie na Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**UWAGA: Pamiętaj, że ta funkcja lub artykuł jest przeznaczony dla zaawansowanych użytkowników.**_
 
@@ -11,7 +11,7 @@ _**UWAGA: Pamiętaj, że ta funkcja lub artykuł jest przeznaczony dla zaawansow
 
 Jest to pomocne, jeśli musisz zintegrować lub przekazać określone dane z Ultimate Multisite do innego CRM lub systemu za każdym razem, gdy zostanie wyzwolone zdarzenie. Na przykład musisz wysłać imię i adres e-mail użytkownika na listę mailingową za każdym razem, gdy tworzone jest nowe konto użytkownika.
 
-## Jak utworzyć webhook
+## Jak utworzyć webhook {#how-to-create-a-webhook}
 
 Aby utworzyć webhook, przejdź do panelu administratora sieci. Kliknij **Ultimate Multisite > Webhooks > Add New Webhook.**
 

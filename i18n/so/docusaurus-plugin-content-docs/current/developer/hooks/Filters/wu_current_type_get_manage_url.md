@@ -4,11 +4,11 @@ title: 'Sifeeye - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 U oggolow horumariyeyaasha inay wax ka beddelaan cabbirrada URL-ka maaraynta goobta.
 
-## Cabbirrada
+## Cabbirrada {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -16,13 +16,13 @@ U oggolow horumariyeyaasha inay wax ka beddelaan cabbirrada URL-ka maaraynta goo
 | $id | `int` | Aqoonsiga goobta. |
 | $site_hash | `string` | Hash-ka goobta. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 2.0.9
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) safka 214
 
 
-## Soo-celinta
+## Soo-celinta {#returns}
 URL-ka maaraynta ee wax laga beddelay.

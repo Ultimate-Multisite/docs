@@ -4,13 +4,13 @@ title: Филтр - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site
+# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Пеш аз нест кардани сайти даринтизори ятиммонда барои узвияти GoCardless бекоршуда иҷро мешавад.
 
 Аз ин filter `false` баргардонед, то несткунӣ пешгирӣ шавад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 | $membership | `\WP_Ultimo\Models\Membership` | Узвияти бекоршуда. |
 | $old_status | `string` | Вазъият пеш аз бекоркунӣ. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 2.0.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) дар сатри 1086 муайян шудааст.

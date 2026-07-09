@@ -3,7 +3,7 @@ title: Fòm Kontèk
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fòms de Kontèkout (Checkout Forms)
+# Fòms de Kontèkout (Checkout Forms) {#checkout-forms}
 
 Fòms de kontèkout se yon fason fasil ak fleksib pou eseye diferan apwòch lè ou ap eseye konvèti nouvo kliyan yo.
 
@@ -36,13 +36,13 @@ Ou ka tou edite oswa kopye fòm ou deja genyen lè w klike sou opsyon ki anba no
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Aperçu editeur fòm checkout (Checkout Form Editor Overview)
+#### Aperçu editeur fòm checkout (Checkout Form Editor Overview) {#checkout-form-editor-overview}
 
 Edit yon Fòm Chèkout (Checkout Form) la bay yon entèfas ki konplè pou ou ka bati fòm reyegis ou yo. Men yon aperçu sou layout editeur la:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Edite yon Fòm Chèkout
+### Edite yon Fòm Chèkout {#editing-a-checkout-form}
 
 Ou ka kreye fòm checkout pou diferan bagay. Nan egzanp sa a, nou pral travay sou yon fòm registrasyon.
 
@@ -112,7 +112,7 @@ Pou w jwenn shortcode pou form ou, klike sou "Generate Shortcode" epi copie sa k
 
 ![Bouton Sauve ak shortcode](/img/config/checkout-form-save.png)
 
-### Champ Tablo Pri
+### Champ Tablo Pri {#the-pricing-table-field}
 
 Chant la champ **Pricing Table** montre ou yo pwodwi ou sou fòm chèkout la pou kliyan yo ka chwazi yon plan. Lè ou modifise sa a, ou ka konfigire plizyè opsyon:
 
@@ -133,7 +133,7 @@ Men kijan tabli pri a parie sou fòm reyegistrasyon an frontend:
 
 Si ou ajoute yon pwodwi nan Tab Pri (Pricing Table) anvan fòm la genyen tout chak enfòmasyon ki nesesè pou konplete pwosesis achte pwodwi sa a, editeur a kounye a montre yon avètisman. Itilize avètisman an pou ajoute chak chot ki manke anvan ou pibliye oswa kay chanjman pou yon fòm reyèl (live registration form).
 
-### Ajoute un Bouton à Lèvèl Sélection Période
+### Ajoute un Bouton à Lèvèl Sélection Période {#adding-a-period-selection-toggle}
 
 Pou ajoute yon bouton ki pèmèt ou chwazi (toggle) yon peryòd, nou pral itilize yon modil (modal) oswa yon switch. Sa vle di, ou ka fè li montre oswa ka fè li kache selon sa ou vle.
 
@@ -179,7 +179,7 @@ Asire w ke ou konprann kijan JavaScript ak WordPress yo pale ak youn lòt. Si ou
 
 Si ou fin configure [Price Variations](creating-your-first-subscription-product#price-variations) sou pwodwi w (tankou pri mensil ak annil), ou ka ajoute yon fld **Period Selection** nan fòm checkout ou a. Fld sa a montre yon bouton ki pèmèt kliyan yo chanje ant period faktouring, epi tab pri an ap rafraîchi dinamikman nan tan reyèl la.
 
-#### Etap 1: Mete Varyasyon Pwòp Pri sou Lòt Pwòp Ou
+#### Etap 1: Mete Varyasyon Pwòp Pri sou Lòt Pwòp Ou {#step-1-set-up-price-variations-on-your-products}
 
 Kouman ou ka mete diferan pri pou lòt pwòp ou yo (varyations) sou pwofò ou yo nan WordPress la, menm jan ou fè sa ak WooCommerce. Sa ede w bay kliyan ou opsyon pou chwazi kalite oswa pake ki pi bon pou yo.
 
@@ -206,7 +206,7 @@ Anvan ou ajoute champ Sélection de Période, asire w ke nouvo pwodwi ou yo gen 
 
 ![Tab Varyasyon Pwòp Pri sou yon pwodwi](/img/config/product-price-variations-tab.png)
 
-#### Etap 2: Ajoute Chyen Seleksyon Periyòd la nan Fòm Checkout ou a
+#### Etap 2: Ajoute Chyen Seleksyon Periyòd la nan Fòm Checkout ou a {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Ale nan **Ultimate Multisite > Checkout Forms** epi edite fòm checkout ou a.
 
@@ -229,7 +229,7 @@ Anvan ou ajoute champ Sélection de Période, asire w ke nouvo pwodwi ou yo gen 
 
 7. Klike sou **Save Field**.
 
-#### Etap 3: Mete Filye a Anwo Tablo Pri
+#### Etap 3: Mete Filye a Anwo Tablo Pri {#step-3-position-the-field-above-the-pricing-table}
 
 
 
@@ -237,7 +237,7 @@ Pou gen pi bon eksperyans pou itilizat la, asire w ke champ Sa ki chwazi Périod
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Kijan Li Travay sou Frontend la
+#### Kijan Li Travay sou Frontend la {#how-it-works-on-the-frontend}
 
 ---
 
@@ -249,7 +249,7 @@ Si ou pa aktif "Force Different Durations" sou champ Pricing Table la, yo pral c
 
 * Si ou active **Force Different Durations**, tout pwodwi rete vizib menm si yo pa gen varyasyon pou peryòd ki chwazi la (yo ap montre pri dekouchat yo).
 
-#### Pré-sélection yon Peryòd Fèman nan URL
+#### Pré-sélection yon Peryòd Fèman nan URL {#pre-selecting-a-billing-period-via-url}
 
 Ou ka tou pre-sélection yon pwodwi ak peryòd fakturi atravè URL la. Ultimate Multisite sipòte modèl URL sa yo:
 
@@ -257,11 +257,11 @@ Ou ka tou pre-sélection yon pwodwi ak peryòd fakturi atravè URL la. Ultimate 
   * `/register/premium/12` — Li pre-sélectionne pwodòt la ak dirije 12 mwa (1 an).
   * `/register/premium/1/year` — Li pre-sélectionne pwodòt la ak yon dirije 1 an.
 
-### Champ Sa Wout Template la
+### Champ Sa Wout Template la {#the-template-selection-field}
 
 Chant **Template Selection** la pèmèt kliyan yo chwazi yon modèl sit ka lè yo ap fè achte. Kounye a, li genyen deja nan modèl fòm achte ki rele **single step** ak **multi-step** ki ajoute nan Ultimate Multisite v2.6.1.
 
-#### Ajoute anba menm jan ou ap travay ak yon fòm ki te kreye anvan v2.6.1, oswa ki te kòmanse nan yon modèl vid:
+#### Ajoute anba menm jan ou ap travay ak yon fòm ki te kreye anvan v2.6.1, oswa ki te kòmanse nan yon modèl vid: {#adding-the-field-manually}
 
 1. Ale nan **Ultimate Multisite > Checkout Forms** epi edite fòm checkout ou a.
 2. Nan etap kote detay sit la yo kolekte, klike sou **Add new Field**.
@@ -271,11 +271,11 @@ Chant **Template Selection** la pèmèt kliyan yo chwazi yon modèl sit ka lè y
 - **Label** — Tit la kote kliyan yo wè anwo nan gril template yo (pa egzanp, "Chwazi yon template sit").
    - **Obligatwa** — Si kliyan yo dwe chwazi yon template anvan yo ka kontinye.
 
-#### Kijan li fonksyone
+#### Kijan li fonksyone {#how-it-works}
 
 Lè yon kliyan chwazi yon template pandan pwosesis achite (checkout), Ultimate Multisite ap itilize li lè li ap prepare sit la nouvo a. Template yo ki montre la soti nan lis **Site Templates** ou (**Ultimate Multisite > Site Templates**). Sèlman template ki marake kòm disponib pou kliyan yo parèt isit.
 
-### Domèn baz fòm chèkout (Checkout-form base domains)
+### Domèn baz fòm chèkout (Checkout-form base domains) {#checkout-form-base-domains}
 
 Sa vle di ki domèn yo (domain names) k ap sèvi kòm baz pou tout fòm chèkout ou genyen nan WordPress ak WooCommerce. Sa se pati enpòtan an pou w konprann kijan sa fonksyone.
 
@@ -285,6 +285,6 @@ Domain baz ki parèt pou checkout la pa itilize kòm domain custom pou chak sit.
 
 Gade menm domain pou host ki mapye pou chak kliyan, tankou `customer-example.com`. Kenbe domain baz fòm checkout pou host ki pale (shared) kote anpil sit ka itilize yo.
 
-#### Retire fld la
+#### Retire fld la {#removing-the-field}
 
 Si ou pa ofri site templates (modèl sit), retire champ Sélection de Modèle (Template Selection) nan fòm ou a. Kounye a, kliyan yo ap resevwa modèl defòt ki configure anba **Ultimate Multisite > Settings > Site Templates**.

@@ -3,7 +3,7 @@ title: Fikarohana sy Fandikana Miverimberina ao amin'ny Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Fikarohana sy Famohana Atao ao amin'ny Site Templates (v2)
+# Fikarohana sy Famohana Atao ao amin'ny Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ity toromarika ity dia mitaky ny WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Ny mpanjifa anareo dia afaka mameno io champ io mandritra ny famarihana.
 
 Ary avy eo, ny Ultimate Multisite dia hanoloana ireo placeholders ireo amin'ny data nomena avy amin'ny mpanjifa ho azy.
 
-## **Fanomezana vahaolana ny olana hoe "template feno placeholder"**
+## **Fanomezana vahaolana ny olana hoe "template feno placeholder"** {#solving-the-template-full-of-placeholders-problem}
 
 Izay rehetra izany dia tsara, fa miatrika olana ratsy isika: ankehitriny ireo site template anareo - izay azo jerena avy amin'ny mpanjifanao - dia feno placeholders ratsy tsy manome zavatra maromaro.
 

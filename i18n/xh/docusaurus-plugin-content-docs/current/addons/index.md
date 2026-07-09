@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Izongezo ze-Ultimate Multisite
+# Izongezo ze-Ultimate Multisite {#ultimate-multisite-addons}
 
 Izongezo zandisa i-Ultimate Multisite ngeempawu ezongezelelweyo kunye nokudityaniswa. Uninzi lwezongezo luyahlawulelwa kwaye lungathengwa ku-[ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Ufakelo
+## Ufakelo {#installation}
 
 Izongezo zingafakelwa ngeendlela ezimbini:
 
 1. **NgePhepha leZongezo** -- Yiya kwiphepha lolawulo lwezongezo zesayithi yakho kumlawuli we-WordPress
 2. **Ukukhuphela ngesandla** -- Khuphela kwi-[Account yakho](https://ultimatemultisite.com/my-account/downloads/) kwaye ulayishe nge-Plugins > Add New
 
-## Izongezo Ezikhoyo
+## Izongezo Ezikhoyo {#available-addons}
 
 | Isongezo | Inkcazo |
 |-------|-------------|

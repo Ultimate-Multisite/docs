@@ -4,11 +4,11 @@ title: 'Զտիչ - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Թույլ է տալիս մշակողներին փոփոխել կայքի կառավարման URL-ի պարամետրերը։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | Կայքի ID-ն։ |
 | $site_hash | `string` | Կայքի hash-ը։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.0.9
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214)-ում՝ 214-րդ տողում
 
 
-## Վերադարձնում է
+## Վերադարձնում է {#returns}
 Փոփոխված կառավարման URL-ը։

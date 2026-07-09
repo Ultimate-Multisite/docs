@@ -3,15 +3,15 @@ title: Bruksveiledning for Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Veiledning for bruk av hooks
+# Veiledning for bruk av hooks {#hooks-usage-guide}
 
 Ultimate Multisite tilbyr over 200 action hooks og over 280 filter hooks. Denne siden dekker de hooks som brukes oftest, med praktiske eksempler. For en komplett, automatisk generert referanse, se på de andre sidene i dette avsnittet.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Customer Lifecycle (Kundens livssyklus)
+### Customer Lifecycle (Kundens livssyklus) {#customer-lifecycle}
 
-#### After Customer Creation (Etter opprettelse av kunde)
+#### After Customer Creation (Etter opprettelse av kunde) {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Customer Status Change (Endring av kundestatus)
+#### Customer Status Change (Endring av kundestatus) {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Site Hooks (Nettsteds-hooks)
+### Site Hooks (Nettsteds-hooks) {#site-hooks}
 
-#### After Site Published (Etter at nettstedet er publisert)
+#### After Site Published (Etter at nettstedet er publisert) {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Before Template Application (Før mal brukes)
+#### Before Template Application (Før mal brukes) {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership Hooks (Medlemskaps-hooks)
+### Membership Hooks (Medlemskaps-hooks) {#membership-hooks}
 
-#### Status Transitions (Statusoverganger)
+#### Status Transitions (Statusoverganger) {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Payment Hooks (Betalings-hooks)
+### Payment Hooks (Betalings-hooks) {#payment-hooks}
 
-#### Payment Completed / Failed (Betaling fullført / mislykket)
+#### Payment Completed / Failed (Betaling fullført / mislykket) {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks (Kasse-hooks)
+### Checkout Hooks (Kasse-hooks) {#checkout-hooks}
 
-#### Before Processing / After Completion (Før behandling / Etter fullføring)
+#### Before Processing / After Completion (Før behandling / Etter fullføring) {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain Hooks (Domene-hooks)
+### Domain Hooks (Domene-hooks) {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks (Filter-hooks)
+## Filter Hooks (Filter-hooks) {#filter-hooks}
 
-### Pricing Filters (Prisfilter)
+### Pricing Filters (Prisfilter) {#pricing-filters}
 
-#### Cart Total (Handlekurvtotal)
+#### Cart Total (Handlekurvtotal) {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Tax Rates (Skatterater)
+#### Tax Rates (Skatterater) {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Template Filters (Malfilter)
+### Template Filters (Malfilter) {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Limitation Filters (Begrensningsfiltre)
+### Limitation Filters (Begrensningsfiltre) {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway Filters (Betalingsgateway-filtre)
+### Gateway Filters (Betalingsgateway-filtre) {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout Form Fields (Kasseformfelt)
+### Checkout Form Fields (Kasseformfelt) {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Email Content (E-postinnhold)
+### Email Content (E-postinnhold) {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

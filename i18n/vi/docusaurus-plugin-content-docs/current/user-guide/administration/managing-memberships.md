@@ -3,7 +3,7 @@ title: Quản lý tư cách thành viên
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Quản lý gói thành viên
+# Quản lý gói thành viên {#managing-memberships}
 
 Trong Ultimate Multisite, bạn có thể quản lý gói thành viên và truy cập tất cả các gói đăng ký trên mạng của mình. Xem lại và chỉnh sửa chi tiết gói đăng ký như gói và sản phẩm, số lượng trang, số tiền và tần suất thanh toán, lịch sử thanh toán và dấu thời gian.
 

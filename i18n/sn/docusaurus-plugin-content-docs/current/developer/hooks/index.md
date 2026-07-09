@@ -3,11 +3,11 @@ title: Referensi yeHooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referensi yeHooks
+# Referensi yeHooks {#hooks-reference}
 
 Gwaro rakagadzirwa otomatiki rezviito zvese **59** uye mafirita **118** muUltimate Multisite.
 
-## Zviito
+## Zviito {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Inoitika pamberi pekudzorerwa kwekusimbisa kuzivikanwa.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Inoitika pakarepo cookie yekusimbisa kuzivikanwa isati yaiswa.
@@ -70,7 +70,7 @@ Gwaro rakagadzirwa otomatiki rezviito zvese **59** uye mafirita **118** muUltima
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Inoitika mushure mekunge object yachengetwa mudatabase.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Bvumira vagadziri veplugin kuwedzera zviito kuprocess yekuvhura.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Inosefa nguva yenguva yekupera kwecookie yekusimbisa.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Inosefa hurongwa hwekutungamirira patsva hwekusimbisa.

@@ -3,9 +3,9 @@ title: Registre de canvis del Connector d'IA Ultimate per WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Diari de canvis d'Ultimate AI Connector per a WebLLM
+# Diari de canvis d'Ultimate AI Connector per a WebLLM {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versió 1.1.0 — Publicada el 2026-04-09
+## Versió 1.1.0 — Publicada el 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * **Nou:** Widget de xat flotant amb indicador d'estat a la barra d'administració: qualsevol usuari connectat pot emprar directament el LLM del navegador des del *front end*.
 * **Nou:** Entorn de treball compartit (*SharedWorker*): el motor MLC ara s'executa en un *SharedWorker*, de manera que múltiples *tabs* comparteixen una sessió de GPU en lloc de competir per ella.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * **Correcció:** Connectar WebLLM al filtre `wpai_preferred_text_models` perquè la funcionalitat AI Experiments es redirigeixi al motor del navegador quan es configura un model.
 * **Millorat:** Correccions de *cache-busting*, normalització de contingut i referència de *hardware* detectades durant les proves de punta a punta.
 
-## Versió 1.0.0 — Lliurament inicial
+## Versió 1.0.0 — Lliurament inicial {#version-100--initial-release}

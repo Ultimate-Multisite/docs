@@ -4,11 +4,11 @@ title: Chochita - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Imayambitsidwa pambuyo poti kuyesa kolembetsa domain kulephera.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Imayambitsidwa pambuyo poti kuyesa kolembetsa domain kulephera.
 | $registration_data | `array&lt;string,mixed&gt;` | Metadata ya kulembetsa kuphatikizapo status=failed ndi error_message. |
 | $error_message | `string` | Uthenga wolakwika wowerengeka ndi munthu kuchokera kwa registrar. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Yatanthauzidwa mu [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) pa mzere 1250

@@ -3,13 +3,13 @@ title: Уведомление за отстранување на режимот 
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Забелешка за прекирање на режим Site Builder
+# Забелешка за прекирање на режим Site Builder {#site-builder-mode-removal-notice}
 
 **Редот Site Builder е отстранет во Superdav AI Agent v1.12.0.** Ако сте користиле Site Builder режим, треба да мигрирате кон **Setup Assistant agent** за креирање теми и поставување на сайтови.
 
-## Што се случи?
+## Што се случи? {#what-happened}
 
-### Site Builder Mode (Стари)
+### Site Builder Mode (Стари) {#site-builder-mode-legacy}
 
 Site Builder mode беше интерфейс за користење wizards за:
 
@@ -18,7 +18,7 @@ Site Builder mode беше интерфейс за користење wizards з
 - Избор на тема
 - Поставување на почетен содржина
 
-### Што го замени?
+### Што го замени? {#what-replaced-it}
 
 **Setup Assistant agent** сега ја управува целата функционалност на Site Builder со:
 
@@ -27,15 +27,15 @@ Site Builder mode беше интерфейс за користење wizards з
 - Интеграција со onboarding за Theme Builder
 - Персистентна памет (site_brief) за идните сесии
 
-## Ако сте користеле Site Builder режим
+## Ако сте користеле Site Builder режим {#if-you-were-using-site-builder-mode}
 
-### Вашите сайтови сигурни
+### Вашите сайтови сигурни {#your-sites-are-safe}
 
 - Существуваат сайтови создадени со Site Builder режимот продолжат да работат
 - Нема загуба на податоци или прекида на сайтовите
 - Можете да продолжите нормално да ги управувате со своите сайтови
 
-### Мигрирајте кон Setup Assistant agent
+### Мигрирајте кон Setup Assistant agent {#migrate-to-setup-assistant-agent}
 
 За ново поставување на сайтови или промени во теми, користите Setup Assistant agent:
 
@@ -51,7 +51,7 @@ Site Builder mode беше интерфейс за користење wizards з
 
 Setup Assistant agent нуди иста функционалност со повеќе флексибилност.
 
-## Сравна: Site Builder против Setup Assistant
+## Сравна: Site Builder против Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Карактеристика | Site Builder (Отстранет) | Setup Assistant (Нов) |
 |---|---|---|
@@ -62,9 +62,9 @@ Setup Assistant agent нуди иста функционалност со пов
 | Идни сесии | Повторно поставување | Користите чувани site_brief |
 | Флексибилност | Фиксиран работни процес | Адаптивен разговор |
 
-## Миграција кон Setup Assistant agent
+## Миграција кон Setup Assistant agent {#migrating-to-setup-assistant-agent}
 
-### За нови сайтови
+### За нови сайтови {#for-new-sites}
 
 Вместо користење на режим за изградба на сайт (Site Builder mode):
 
@@ -76,7 +76,7 @@ Setup Assistant agent нуди иста функционалност со пов
    - Генерација на тема
    - Почетна конфигурација
 
-### За постоечки сајтови
+### За постоечки сајтови {#for-existing-sites}
 
 Ако имате постоечки сайт од режим за изградба на сайт:
 
@@ -85,7 +85,7 @@ Setup Assistant agent нуди иста функционалност со пов
 3. Агентот за поставување ќе ви помогне да креирате нова тема
 4. Вашите податоци од сајтот остануваат неменчувачки
 
-### За промени во темата
+### За промени во темата {#for-theme-changes}
 
 Вместо изборот на тема од режимот за изградба на сайт:
 
@@ -95,9 +95,9 @@ Setup Assistant agent нуди иста функционалност со пов
    - Генерализира персонализирана тема
    - Ја активира на вашиот сайт
 
-## Клучни разлики
+## Клучни разлики {#key-differences}
 
-### Режим за изградба на сайт (Site Builder Mode)
+### Режим за изградба на сайт (Site Builder Mode) {#site-builder-mode}
 
 ```
 1. Избери шаблон
@@ -106,7 +106,7 @@ Setup Assistant agent нуди иста функционалност со пов
 4. Го завршено
 ```
 
-### Агентот за поставување (Setup Assistant Agent)
+### Агентот за поставување (Setup Assistant Agent) {#setup-assistant-agent}
 
 ```
 1. Опишете целта на вашиот сайт
@@ -117,42 +117,42 @@ Setup Assistant agent нуди иста функционалност со пов
 6. Бриф на сајтот се чува за идни сесии
 ```
 
-## Предности на Агентот за поставување (Setup Assistant Agent)
+## Предности на Агентот за поставување (Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Поголема флексибилност
+### Поголема флексибилност {#more-flexible}
 
 - Опишете го вашиот сайт на природни јазици
 - добијте персонализирани препораки
 - прилагодете се на вашите специфични потреби
 
-### Подобро персонализирање
+### Подобро персонализирање {#better-customization}
 
 - Генерација на персонализирана тема
 - Одлуки за систем на дизајн (Design system decisions)
 - Персистентни дизајн токени (Persistent design tokens)
 
-### Персистентна памет
+### Персистентна памет {#persistent-memory}
 
 - Вашиот `site_brief` се чува
 - Идниот агенти ќе го разбираат вашиот сайт
 - Не е потребно да повторувате информации за поставување
 
-### Интегриран работни процес (Integrated Workflow)
+### Интегриран работни процес (Integrated Workflow) {#integrated-workflow}
 
 - Онбординг на Theme Builder
 - Вештини во Естетиката на Дизајн Системот (Design System Aesthetics skill)
 - Способност за контроли на видливост (Visibility controls)
 - Сѐ работи заедно без прекиди
 
-## Решавање проблеми (Troubleshooting)
+## Решавање проблеми (Troubleshooting) {#troubleshooting}
 
-### Не можам да најдам режим за изградба на сайт
+### Не можам да најдам режим за изградба на сайт {#i-cant-find-site-builder-mode}
 
 Режимот за изградба на сайт е отстранет. Користете агентот за поставување (Setup Assistant agent) наместо него:
 
 "Помог ми да почнам нов сайт"
 
-### Сакам да го креирам сайт од Site Builder
+### Сакам да го креирам сайт од Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Можеш да го направиш со агентот Setup Assistant:
 
@@ -161,7 +161,7 @@ Setup Assistant agent нуди иста функционалност со пов
 3. Агентот ќе генерира сличен тема
 4. Твојот `site_brief` ќе биде зачуван за идни референции
 
-### Мојот постоечки сайт од Site Builder не работи
+### Мојот постоечки сайт од Site Builder не работи {#my-existing-site-builder-site-isnt-working}
 
 Постоечките сајтови креирани со модом Site Builder сè уште функционираат. Ако имаш проблеми:
 
@@ -170,7 +170,7 @@ Setup Assistant agent нуди иста функционалност со пов
 3. Провери WordPress грешки лог (error logs)
 4. Контактирај ја поддршката ако проблемите се продолжат
 
-### Може ли да користам старите шаблони од Site Builder?
+### Може ли да користам старите шаблони од Site Builder? {#can-i-still-use-my-old-site-builder-templates}
 
 Шаблоните од Site Builder веќе не се достапни. Меѓутоа:
 
@@ -178,14 +178,14 @@ Setup Assistant agent нуди иста функционалност со пов
 - Можеш да го креираш сличен сайт со агентот Setup Assistant
 - Агентот Setup Assistant нуди повеќе опции за персонализација
 
-## Следен чекори
+## Следен чекори {#next-steps}
 
 1. **За нови сајтови**: Користи агентот Setup Assistant
 2. **За постоечки сајтови**: Продолжи да ги користиш како што се
 3. **За промени во темата**: Забавај ја Setup Assistant агентот за помош
 4. **За усогласување на дизајнот**: Користи вештината Design System Aesthetics
 
-## Снабдесни теми
+## Снабдесни теми {#related-topics}
 
 - **Theme Builder Onboarding**: Водичко поставување за кастомни теми
 - **Setup Assistant Agent**: Поставување на сайт преку агентот Setup Assistant

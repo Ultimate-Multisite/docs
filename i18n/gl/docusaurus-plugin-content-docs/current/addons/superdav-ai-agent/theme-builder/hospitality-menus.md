@@ -3,15 +3,15 @@ title: Menús de hostalaría
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menús de hostalaría
+# Menús de hostalaría {#hospitality-menus}
 
 A funcionalidade **Menús de hostalaría** permite a Theme Builder xerar e inserir páxinas estruturadas de menús de comida e bebida directamente no teu sitio WordPress.
 
-## Visión xeral
+## Visión xeral {#overview}
 
 Theme Builder agora pode crear páxinas de menú profesionais e estruturadas para negocios de hostalaría, incluíndo restaurantes, cafés, bares e servizos de catering. Estes menús están totalmente integrados no deseño do teu sitio e pódense actualizar e xestionar facilmente.
 
-## Tipos de hostalaría compatibles
+## Tipos de hostalaría compatibles {#supported-hospitality-types}
 
 - **Restaurantes** — menús de comidas con servizo completo
 - **Cafés** — menús de café e pratos lixeiros
@@ -21,9 +21,9 @@ Theme Builder agora pode crear páxinas de menú profesionais e estruturadas par
 - **Food trucks** — menús de servizo de comida móbil
 - **Cervexarías e adegas** — menús de bebidas con descricións
 
-## Estrutura do menú
+## Estrutura do menú {#menu-structure}
 
-### Categorías do menú
+### Categorías do menú {#menu-categories}
 
 Os menús organízanse en categorías:
 
@@ -34,7 +34,7 @@ Os menús organízanse en categorías:
 - **Bebidas** — bebidas (alcohólicas e non alcohólicas)
 - **Especiais** — especiais diarios ou de tempada
 
-### Formato do elemento do menú
+### Formato do elemento do menú {#menu-item-format}
 
 Cada elemento do menú inclúe:
 
@@ -49,7 +49,7 @@ Cada elemento do menú inclúe:
 }
 ```
 
-#### Campos do elemento
+#### Campos do elemento {#item-fields}
 
 | Campo | Tipo | Descrición |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Cada elemento do menú inclúe:
 | `allergens` | array | Alérxenos comúns (froitos secos, marisco, etc.) |
 | `availability` | string | Cando está dispoñible (diario, de tempada, etc.) |
 
-## Crear menús de hostalaría
+## Crear menús de hostalaría {#creating-hospitality-menus}
 
-### Paso 1: Proporciona información do menú
+### Paso 1: Proporciona información do menú {#step-1-provide-menu-information}
 
 Fálalle a Theme Builder sobre o teu menú:
 
@@ -71,7 +71,7 @@ Crea un menú de restaurante para o meu restaurante italiano con aperitivos,
 pratos de pasta, pratos principais e sobremesas. Inclúe prezos e descricións.
 ```
 
-### Paso 2: Theme Builder xera o menú
+### Paso 2: Theme Builder xera o menú {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formata prezos e descricións
 5. Engade información dietética e de alérxenos
 
-### Paso 3: Revisa e personaliza
+### Paso 3: Revisa e personaliza {#step-3-review-and-customize}
 
 Podes:
 
@@ -91,9 +91,9 @@ Podes:
 4. Actualizar descricións e información dietética
 5. Axustar o estilo e a disposición
 
-## Opcións de visualización do menú
+## Opcións de visualización do menú {#menu-display-options}
 
-### Páxina de menú completa
+### Páxina de menú completa {#full-menu-page}
 
 Unha páxina dedicada que mostra o teu menú completo:
 
@@ -102,7 +102,7 @@ Unha páxina dedicada que mostra o teu menú completo:
 - Disposición apta para imprimir
 - Deseño adaptable a móbiles
 
-### Widget de menú
+### Widget de menú {#menu-widget}
 
 Insire seccións do menú noutras páxinas:
 
@@ -111,7 +111,7 @@ Insire seccións do menú noutras páxinas:
 - Menú de bebidas na páxina do bar
 - Mostra de sobremesas no pé de páxina
 
-### PDF do menú
+### PDF do menú {#menu-pdf}
 
 Xera un menú PDF descargable:
 
@@ -120,9 +120,9 @@ Xera un menú PDF descargable:
 - Inclúe imaxes e descricións
 - Fácil de compartir e enviar por correo electrónico
 
-## Información dietética e de alérxenos
+## Información dietética e de alérxenos {#dietary-and-allergen-information}
 
-### Atributos dietéticos
+### Atributos dietéticos {#dietary-attributes}
 
 Marca os elementos con información dietética:
 
@@ -134,7 +134,7 @@ Marca os elementos con información dietética:
 - **Baixo en carbohidratos** — carbohidratos reducidos
 - **Alto en proteínas** — rico en proteínas
 
-### Avisos de alérxenos
+### Avisos de alérxenos {#allergen-warnings}
 
 Inclúe alérxenos comúns:
 
@@ -147,9 +147,9 @@ Inclúe alérxenos comúns:
 - **Glute** — trigo e cereais que conteñen glute
 - **Sésamo** — sementes e aceite de sésamo
 
-## Xestión do menú
+## Xestión do menú {#menu-management}
 
-### Actualizar prezos
+### Actualizar prezos {#updating-prices}
 
 Actualiza facilmente os prezos do menú:
 
@@ -159,7 +159,7 @@ Actualiza facilmente os prezos do menú:
 4. Garda os cambios
 5. Os cambios aparecen inmediatamente no teu sitio
 
-### Engadir elementos de tempada
+### Engadir elementos de tempada {#adding-seasonal-items}
 
 Crea variacións de menú de tempada:
 
@@ -169,7 +169,7 @@ Crea variacións de menú de tempada:
 4. Programa datas de dispoñibilidade
 5. Móstraos automaticamente durante a tempada
 
-### Xestionar especiais
+### Xestionar especiais {#managing-specials}
 
 Mostra especiais diarios ou semanais:
 
@@ -179,7 +179,7 @@ Mostra especiais diarios ou semanais:
 4. Actualiza diariamente ou semanalmente
 5. Arquiva os especiais antigos
 
-## Integración con Theme Builder
+## Integración con Theme Builder {#integration-with-theme-builder}
 
 Ao usar Theme Builder para sitios de hostalaría:
 
@@ -189,9 +189,9 @@ Ao usar Theme Builder para sitios de hostalaría:
 4. **Optimización móbil** — os menús móstranse de forma excelente en teléfonos
 5. **Optimización SEO** — os menús son amigables para os motores de busca
 
-## Boas prácticas
+## Boas prácticas {#best-practices}
 
-### Deseño do menú
+### Deseño do menú {#menu-design}
 
 - **Organización clara** — estrutura lóxica de categorías
 - **Descricións lexibles** — apetitosas e informativas
@@ -199,7 +199,7 @@ Ao usar Theme Builder para sitios de hostalaría:
 - **Fotos profesionais** — imaxes de comida de alta calidade
 - **Espazo en branco** — non sobrecargues a páxina
 
-### Contido
+### Contido {#content}
 
 - **Descricións precisas** — describe os elementos con precisión
 - **Destacar especiais** — fai que os especiais sobresaian
@@ -207,7 +207,7 @@ Ao usar Theme Builder para sitios de hostalaría:
 - **Actualizar regularmente** — mantén os prezos e elementos ao día
 - **Usar linguaxe apetitosa** — fai que os elementos soen deliciosos
 
-### Accesibilidade
+### Accesibilidade {#accessibility}
 
 - **Tipos de letra lexibles** — usa tipografías claras e lexibles
 - **Contraste suficiente** — asegúrate de que o texto sexa lexible
@@ -215,9 +215,9 @@ Ao usar Theme Builder para sitios de hostalaría:
 - **Avisos de alérxenos** — mostra os alérxenos de forma destacada
 - **Apto para móbiles** — proba en todos os dispositivos
 
-## Exemplos
+## Exemplos {#examples}
 
-### Estrutura do menú dun restaurante
+### Estrutura do menú dun restaurante {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Estrutura do menú da cafetería
+### Estrutura do menú da cafetería {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Funcionalidades relacionadas
+## Funcionalidades relacionadas {#related-features}
 
 - [Crear menú](../abilities/create-menu.md) — crear menús de navegación
 - [Dirección de deseño](./design-direction.md) — personaliza o deseño do teu sitio

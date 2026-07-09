@@ -3,13 +3,13 @@ title: Ngadamel Kode Diskon
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ngadiran Kode Diskon (v2)
+# Ngadiran Kode Diskon (v2) {#creating-discount-codes-v2}
 
 _**CATATAN PENTING: Artikel ieu merujuk kana Ultimate Multisite versi 2.x.**_
 
 Naan Ultimate Multisite, anjeun bisa ngadiri kode diskon pikeun méré rabat ka pelangganna dina langgananna. Jeung ngadiri éta gampang pisan!
 
-## Ngadiri jeung Ngédit Kode Diskon
+## Ngadiri jeung Ngédit Kode Diskon {#creating-and-editing-discount-codes}
 
 Kanggo ngadiri atawa ngédit kode diskon, nyaéta indit ka **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kuponnya sekarang ada di daftar kamu dan dari sana, kamu bisa klik untuk **edit 
 
 ###
 
-### Menggunakan URL Parameters:
+### Menggunakan URL Parameters: {#using-url-parameters}
 
 Kalau kamu mau kustomisasi tabel harga atau membuat halaman kode kupon yang bagus untuk website kamu dan ingin menerapkan kode diskon ke formulir checkout secara otomatis, kamu bisa melakukannya lewat URL parameters.
 

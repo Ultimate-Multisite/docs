@@ -3,19 +3,19 @@ title: 'Les 13: Opskaal'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Les 13: Opskalering
+# Les 13: Opskalering {#lesson-13-scaling-up}
 
 Jy het 'n werkende platform met betaalende kliënte. Hierdie les dek hoe om van 'n klein operasie tot 'n volhoubare besigheid te groei – die opskalering van infrastruktuur, die outomatisering van operasies, en die verhoging van inkomste per kliënt.
 
-## Waar Ons Gebly Het
+## Waar Ons Gebly Het {#where-we-left-off}
 
 FitSite is live, kliënte skryf in, en jy bestuur daaglikse operasies. Nou fokus ons op groei.
 
-## Ken Jou Getalle
+## Ken Jou Getalle {#know-your-numbers}
 
 Voordat jy opskaal, verstaan waar jy staan:
 
-### Sleutelmetrieke
+### Sleutelmetrieke {#key-metrics}
 
 - **MRR (Maandelikse Herhalende Inkomste)**: Totale maandelikse abonnementsinkomste
 - **Klanttelling**: Totale aktiewe abonnees
@@ -24,7 +24,7 @@ Voordat jy opskaal, verstaan waar jy staan:
 - **LTV (Lewenslange Waarde)**: Gemiddelde inkomste per kliënt oor hul hele abonnement
 - **CAC (Koste om Klante te Verkry)**: Gemiddelde koste om een kliënt te verkry
 
-### Voorbeeld: FitSite by 50 Kliënte
+### Voorbeeld: FitSite by 50 Kliënte {#example-fitsite-at-50-customers}
 
 | Metriek | Waarde |
 |--------|-------|
@@ -36,9 +36,9 @@ Voordat jy opskaal, verstaan waar jy staan:
 
 Hierdie getalle vertel jou waar jy moet fokus. Hoë afskrywingskoë? Herstel die behoud. Lae ARPU? Stoot opgraderings. Hoë CAC? Optimaliseer verkryingskanale.
 
-## Opskalering van Infrastruktuur
+## Opskalering van Infrastruktuur {#scaling-infrastructure}
 
-### Wanneer Opskaal
+### Wanneer Opskaal {#when-to-scale}
 
 Opskalering van hosting wanneer:
 
@@ -47,7 +47,7 @@ Opskalering van hosting wanneer:
 - Jy nader aan 100+ aktiewe webwerwe kom
 - Kliëntklagtes oor spoed toeneem
 
-### Hoe Opskaal
+### Hoe Opskaal {#how-to-scale}
 
 - **Vertikale opskalering**: Graweer na 'n groter bediener (meer CPU, RAM)
 - **Kaskeringlae (Caching layers)**: Voeg Redis/Memcached by vir objekkaskering, paglaai-kaskering vir statiese inhoud
@@ -55,7 +55,7 @@ Opskalering van hosting wanneer:
 - **Databasisoptimalisering**: Soos die netwerk groei, vertraag databaskerige. Optimaliseer tabels, voeg indeks by, oorweeg 'n toegewyde databasisbediener.
 - **Afsonderlike sake**: Verhuis mediastoorplaas na objekstoëring (S3-kompatibel), en laai e-pos na 'n transaksionele e-posdiens.
 
-### Hosting Migrasie
+### Hosting Migrasie {#hosting-migration}
 
 As jou huidige verhuurder nie verder kan opskaal nie, beplan dan 'n migrasie:
 
@@ -65,11 +65,11 @@ As jou huidige verhuurder nie verder kan opskaal nie, beplan dan 'n migrasie:
 4. Pas DNS aan met minimale TTL vooraf
 5. Verifieer alles werk na migrasie
 
-## Operasies Outomatiseer
+## Operasies Outomatiseer {#automating-operations}
 
 Soos jy groei, word handmatige prosesse beperkingspunte. Outomatiseer wat jy kan:
 
-### Webhooks en Zapier
+### Webhooks en Zapier {#webhooks-and-zapier}
 
 Gebruik [Webhooks](/user-guide/integrations/webhooks) of [Zapier](/user-guide/integrations/zapier) om te outomatiseer:
 
@@ -78,7 +78,7 @@ Gebruik [Webhooks](/user-guide/integrations/webhooks) of [Zapier](/user-guide/in
 - **Betalingsmislukkinge** → waarskuwing in jou monitoringsinstrument
 - **Beplanningsopgraderings** → geluk-e-pos met 'n nuwe kenmerksgids
 
-### E-pos Outomatisering
+### E-pos Outomatisering {#email-automation}
 
 Gaan van handmatige e-posse na outomatiese reekse:
 
@@ -87,30 +87,30 @@ Gaan van handmatige e-posse na outomatiese reekse:
 - Opgraderingsprompts wanneer kliënte die beplanningslimiete benader
 - Hernuwingherinneringe vir jaarlikse abonnees
 
-### Ondersteuningsoutomatisering
+### Ondersteuningsoutomatisering {#support-automation}
 
 - **Voorbeelde-antwoorde** vir algemene vrae
 - **Outo-antwoorde** wat die ontvangs van ondersteuningswenke erken
 - **Kennisbasis-voorstelle** wanneer kliënte wenke indien wat by bestaande artikels pas
 
-## Inkomste Verhoog
+## Inkomste Verhoog {#increasing-revenue}
 
 Groei gaan nie net oor meer kliënte nie. Dit gaan ook oor meer inkomste per kliënt.
 
-### Bestaande Kliënte Opwaarde-verkoop
+### Bestaande Kliënte Opwaarde-verkoop {#upselling-existing-customers}
 
 - **Beplanningsopgraderings**: Gerigte veldtogte wat Growth/Pro-kenmerke aan Starter-kliënte wys
 - **Bestel-opkoms**: Bevorder bykomende produkte aan bestaande kliënte via e-pos
 - **Jaarlikse omskakeling**: Bied maandelikse kliënte 'n afslag om na jaarlikse fakturering te skakel
 
-### Nuwe Inkomstestrome
+### Nuwe Inkomstestrome {#new-revenue-streams}
 
 - **Gereed-vir-jou opstelling**: Bel 'n premie om 'n kliënt se webwerf vir hulle op te stel en aan te pas
 - **Op maat gemaakte ontwerpsdienste**: Bied op maat gemaakte ontwerkarbeid bo-op die sjabloon
 - **Opleidingssessies**: Betaalde een-tot-een deurloop vir kliënte wat praktiese hulp wil hê
 - **Premium plugins**: Bied nis-spesifieke premium plugins as betaalde bykomende items aan (bv. 'n fitnessklas-boekingswidget)
 
-### Pryse Verhoog
+### Pryse Verhoog {#raising-prices}
 
 Soos jou platform volwasse word en waarde byvoeg:
 
@@ -118,7 +118,7 @@ Soos jou platform volwasse word en waarde byvoeg:
 - Verhoog pryse vir nuwe skryf-ins
 - Regverdig verhogings met nuwe kenmerke en verbeteringe
 
-## 'n Span Bou
+## 'n Span Bou {#building-a-team}
 
 Op 'n stadium kan jy nie alles alleen doen nie. Algemene eerste werfnemers:
 
@@ -128,7 +128,7 @@ Op 'n stadium kan jy nie alles alleen doen nie. Algemene eerste werfnemers:
 
 Jy het nie werknemers nodig nie. Kontrakteurs en vryskrifstellers werk goed vir 'n platformbesigheid.
 
-## Groeimilepaal
+## Groeimilepaal {#growth-milestones}
 
 | Milepaal | Benaderde MRR | Fokus |
 |-----------|--------------|-------|
@@ -138,7 +138,7 @@ Jy het nie werknemers nodig nie. Kontrakteurs en vryskrifstellers werk goed vir 
 | 250-500 kliënte | $25,000-$50,000 | Spanbou, nuwe inkomstestrome, premium kenmerke |
 | 500+ kliënte | $50,000+ | Platformvolwassenheid, aangrensende nis, potensiële uitgang |
 
-## Wat Ons Hierdie Les Gebou Het
+## Wat Ons Hierdie Les Gebou Het {#what-we-built-this-lesson}
 
 - **'n Metrieke raamwerk** om besigheidsgesondheid te verstaan
 - **Infrastruktuur opskaleringplan** vir groei van dosyne na honderde webwerwe

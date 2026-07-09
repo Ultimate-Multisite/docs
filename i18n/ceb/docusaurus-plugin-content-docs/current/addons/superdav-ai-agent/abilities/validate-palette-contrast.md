@@ -3,15 +3,15 @@ title: I-validate ang Kontras sa Paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# I-validate ang Contrast sa Paleta
+# I-validate ang Contrast sa Paleta {#validate-palette-contrast}
 
 Ang **I-validate ang Contrast sa Paleta** nga abilidad mosusi sa mga pares sa kolor sa imong paleta sa disenyo alang sa pagsunod sa WCAG (Web Content Accessibility Guidelines) sa wala pa kini i-apply sa imong theme.
 
-## Kinatibuk-ang Tan-aw
+## Kinatibuk-ang Tan-aw {#overview}
 
 Kini nga abilidad nagsiguro nga ang color scheme sa imong site motuman sa mga sumbanan sa accessibility pinaagi sa pag-validate sa mga contrast ratio tali sa teksto ug mga kolor sa background. Makatabang kini sa pagpugong sa mga kombinasyon sa kolor nga mahimong lisod basahon sa mga user nga adunay visual impairments.
 
-## Format sa Input
+## Format sa Input {#input-format}
 
 Ang abilidad modawat og paleta sa kolor isip input:
 
@@ -35,7 +35,7 @@ Ang abilidad modawat og paleta sa kolor isip input:
 }
 ```
 
-### Mga Parameter
+### Mga Parameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Ang abilidad modawat og paleta sa kolor isip input:
 | `wcag_level` | string | No | Level sa pagsunod sa WCAG: "A", "AA" (default), o "AAA" |
 | `pairs_to_check` | array | No | Espesipikong mga pares sa kolor nga i-validate (pananglitan, `["primary-text", "background-text"]`) |
 
-## Mga Level sa WCAG nga Gisusi
+## Mga Level sa WCAG nga Gisusi {#wcag-levels-checked}
 
 Gi-validate sa abilidad ang mga contrast ratio sumala sa mga sumbanan sa WCAG:
 
@@ -56,7 +56,7 @@ Gi-validate sa abilidad ang mga contrast ratio sumala sa mga sumbanan sa WCAG:
 - **Normal nga Teksto** — teksto nga mas gamay sa 18pt (o 14pt bold)
 - **Dakong Teksto** — teksto nga 18pt o mas dako (o 14pt bold o mas dako)
 
-## Schema sa Output
+## Schema sa Output {#output-schema}
 
 Ang abilidad mobalik og detalyadong report sa pag-validate:
 
@@ -95,7 +95,7 @@ Ang abilidad mobalik og detalyadong report sa pag-validate:
 }
 ```
 
-### Mga Field sa Output
+### Mga Field sa Output {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Ang abilidad mobalik og detalyadong report sa pag-validate:
 | `status` | string | "pass" o "fail" alang sa matag pares |
 | `recommendations` | array | Mga sugyot alang sa pagpaayo sa mga pares nga napakyas |
 
-## Pananglitan sa Paggamit
+## Pananglitan sa Paggamit {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Gi-validate sa abilidad ang tanang kombinasyon sa kolor ug mobalik og:
 - ✅ Background + Teksto: 12.1:1 ratio (nakapasar sa WCAG AAA)
 - Kinatibuk-an: Motuman sa WCAG AA
 
-## Integration uban sa Theme Builder
+## Integration uban sa Theme Builder {#integration-with-theme-builder}
 
 Kung mogamit sa pagpili sa direksyon sa disenyo sa Theme Builder, ang abilidad nga I-validate ang Contrast sa Paleta:
 
@@ -129,7 +129,7 @@ Kung mogamit sa pagpili sa direksyon sa disenyo sa Theme Builder, ang abilidad n
 4. Mohatag og mga rekomendasyon alang sa mga pares nga dili motuman
 5. Mopugong sa pag-apply sa mga color scheme nga dili accessible
 
-## Pinakamaayong mga Pamaagi
+## Pinakamaayong mga Pamaagi {#best-practices}
 
 - **Sugdi sa level nga AA** — ang WCAG AA mao ang sumbanan alang sa kadaghanang website
 - **Sulayi sa dili pa i-apply** — i-validate ang imong paleta sa dili pa mopasalig sa usa ka disenyo
@@ -137,7 +137,7 @@ Kung mogamit sa pagpili sa direksyon sa disenyo sa Theme Builder, ang abilidad n
 - **Tagda ang mga gusto sa user** — ang ubang user mahimong adunay dugang nga pagkasensitibo sa kolor
 - **Gamita ang mga contrast checker** — isagol kini nga abilidad uban sa mga browser tool alang sa pag-verify
 
-## Mga Pares nga Napakyas ug mga Rekomendasyon
+## Mga Pares nga Napakyas ug mga Rekomendasyon {#failing-pairs-and-recommendations}
 
 Kung ang usa ka pares sa kolor mapakyas sa pag-validate, ang abilidad mohatag og mga rekomendasyon:
 
@@ -155,7 +155,7 @@ Kung ang usa ka pares sa kolor mapakyas sa pag-validate, ang abilidad mohatag og
 }
 ```
 
-## May Kalabotang mga Abilidad
+## May Kalabotang mga Abilidad {#related-abilities}
 
 - [Paghimo og Logo SVG](./generate-logo-svg.md) — paghimo og mga logo gamit ang imong na-validate nga paleta sa kolor
 - [Paghimo og Menu](./create-menu.md) — paghimo og nabigasyon nga adunay accessible nga mga kolor

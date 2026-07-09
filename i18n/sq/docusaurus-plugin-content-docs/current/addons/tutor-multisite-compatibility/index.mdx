@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Një shtojcë WordPress që shton rregullime për përputhshmërinë e Tutor LMS në mjedise multisite.
 
-## Përshkrimi
+## Përshkrimi {#description}
 
 Kjo shtojcë ofron rregullime thelbësore për përputhshmërinë për ekzekutimin e Tutor LMS në rrjete WordPress multisite. Ajo trajton regjistrimin e përdoruesve, menaxhimin e instruktorëve, kufizimet e kurseve dhe funksionalitete të tjera specifike për multisite.
 
-## Veçoritë
+## Veçoritë {#features}
 
 - **Menaxhimi i tabelave të bazës së të dhënave**: Zbulon dhe krijon automatikisht tabelat e munguara të Tutor LMS që dështojnë për shkak të kufizimeve të çelësave të huaj në multisite
 - **Regjistrimi i përdoruesve në multisite**: Trajtues të personalizuar AJAX për menaxhimin e regjistrimit të përdoruesve nëpër sajtet e rrjetit
@@ -24,7 +24,7 @@ Kjo shtojcë ofron rregullime thelbësore për përputhshmërinë për ekzekutim
 - **Pamje të personalizuara të administratorit**: Listë instruktorësh dhe ndërfaqe menaxhimi të vetëdijshme për multisite
 - **Mjete administratori**: Ndërfaqe për menaxhimin e bazës së të dhënave për administratorët e rrjetit dhe të sajtit
 
-## Kërkesat
+## Kërkesat {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Kjo shtojcë ofron rregullime thelbësore për përputhshmërinë për ekzekutim
 - Instalimi WordPress Multisite
 - Shtojca Ultimate Multisite (për funksionalitetin e kufizimeve të kurseve)
 
-## Instalimi
+## Instalimi {#installation}
 
 1. Ngarkoni skedarët e shtojcës në `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Sigurohuni që Tutor LMS është instaluar dhe aktivizuar
 3. Aktivizoni shtojcën përmes menusë 'Shtojcat' në WordPress
 4. Shtojca do të integrohet automatikisht me Tutor LMS
 
-## Struktura e skedarëve
+## Struktura e skedarëve {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funksionaliteti i zhvendosur nga MU plugin
+## Funksionaliteti i zhvendosur nga MU plugin {#functionality-moved-from-mu-plugin}
 
 Kjo shtojcë përmban funksionalitet që më parë ishte në `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Kjo shtojcë përmban funksionalitet që më parë ishte në `wp-content/mu-plug
 - Trajtimi i regjistrimit të përdoruesve në multisite
 - Shfaqja e ID-së së produktit të kursit
 
-## Menaxhimi i bazës së të dhënave
+## Menaxhimi i bazës së të dhënave {#database-management}
 
-### Problemi
+### Problemi {#the-problem}
 
 Në mjediset WordPress multisite, krijimi i tabelave të Tutor LMS dështon për tabelat me kufizime të çelësave të huaj drejt tabelës së përdoruesve. Kjo ndodh sepse:
 
@@ -81,7 +81,7 @@ Në mjediset WordPress multisite, krijimi i tabelave të Tutor LMS dështon për
 - Çelësat e huaj i referohen `wp_2_users` (që nuk ekziston)
 - Tabela reale e përdoruesve është `wp_users` (e përbashkët në të gjithë rrjetin)
 
-### Zgjidhja
+### Zgjidhja {#the-solution}
 
 Kjo shtojcë automatikisht:
 
@@ -92,13 +92,13 @@ Kjo shtojcë automatikisht:
    - Krijimi i një sajti të ri në rrjet
    - Kontroll manual i tabelave përmes ndërfaqes së administratorit
 
-### Tabelat e prekura
+### Tabelat e prekura {#affected-tables}
 
 - `tutor_coupon_usages` - Përmban çelës të huaj drejt tabelës së përdoruesve
 - `tutor_carts` - Përmban çelës të huaj drejt tabelës së përdoruesve
 - `tutor_notification_preferences` - Tabelë TutorPro me çelës të huaj drejt tabelës së përdoruesve
 
-### Ndërfaqja e administratorit
+### Ndërfaqja e administratorit {#admin-interface}
 
 Hyni te mjetet e menaxhimit të bazës së të dhënave te:
 
@@ -111,6 +111,6 @@ Ndërfaqja ju lejon të:
 - Kontrolloni konfigurimin e bazës së të dhënave
 - Shikoni informacion të detajuar të statusit
 
-## Mbështetje
+## Mbështetje {#support}
 
 Kjo shtojcë është projektuar posaçërisht për platformën KursoPro. Për mbështetje teknike, kontaktoni ekipin e zhvillimit.

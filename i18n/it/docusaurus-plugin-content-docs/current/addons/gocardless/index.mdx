@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: pagamento GoCardless
 
 Consenti ai tuoi clienti di pagare membership e prodotti Multisite Ultimate con addebito diretto usando GoCardless!
 
-## Installazione
+## Installazione {#installation}
 
 1. Carica 'ultimate-multisite-gocardless' nella directory '/wp-content/plugins/'
 2. Attiva il plugin tramite il menu 'Plugin' in WordPress
 3. Segui la procedura guidata passo dopo passo per configurare il plugin
 
-## Guida all'uso
+## Guida all'uso {#usage-guide}
 
 _GoCardless_ è un gateway di pagamento disponibile in **Europa e nel Regno Unito** che consente pagamenti con **addebito diretto**.
 
@@ -29,7 +29,7 @@ Questo tutorial illustrerà come configurare _GoCardless_ per iniziare ad accett
 
 _**Nota: GoCardless funziona solo con le seguenti valute:**_ **EUR, GBP, AUD, SEK e DKK.**
 
-## Installazione dell'add-on
+## Installazione dell'add-on {#installing-the-add-on}
 
 Prima di tutto, dovrai installare l'add-on GoCardless per Ultimate Multisite. Puoi farlo andando su **Ultimate Multisite > Settings > Add-ons (nella barra laterale)**. E scegliendo l'add-on GoCardless in quell'elenco.
 
@@ -37,7 +37,7 @@ Dopo che l'add-on è stato installato e attivato, vai su **Ultimate Multisite > 
 
 ![Impostazioni del gateway di pagamento](/img/config/settings-payment-gateways.png)
 
-## Ottenere un access token
+## Ottenere un access token {#getting-an-access-token}
 
 Crea un account su _GoCardless_ (o sulla sandbox di _GoCardless_, se vuoi **testarlo prima**, cosa consigliata). Poi, dopo aver effettuato l'accesso, vai alla voce di menu **Developers**.
 
@@ -61,7 +61,7 @@ Assicurati di inserirlo nel campo corretto. Se è un **token live**, disattiva l
 
 Questo è tutto per il primo passaggio. Ora devi configurare un listener webhook.
 
-## Configurazione del listener webhook
+## Configurazione del listener webhook {#setting-up-the-webhook-listener}
 
 Quando si gestiscono abbonamenti, Ultimate Multisite deve essere informato sui cambiamenti nello stato dell'abbonamento, sui nuovi pagamenti effettuati e su altre cose simili.
 

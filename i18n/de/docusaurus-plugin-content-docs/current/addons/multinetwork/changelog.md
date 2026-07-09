@@ -3,9 +3,9 @@ title: Multi-Network-Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network-Änderungsprotokoll
+# Multi-Network-Änderungsprotokoll {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Neu: Network-Template-Vorschau — Network-Templates vor dem Kauf mit einem Live-Panel durchsuchen und in der Vorschau anzeigen.
 * Neu: Network-Template-Auswahl beim Checkout — Kunden können während des Signup-Checkout-Ablaufs ein Network-Template auswählen.
 * Neu: Netzwerkübergreifendes Magic-Link-SSO — Kunden können über Magic-Link-Authentifizierung nahtlos auf Sub-Netzwerke zugreifen.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Fix: Schutz vor undefiniertem `network_id`-Schlüssel im Website-Abfragebereich.
 * Fix: Network-Berechtigungsprüfung vor dem Kontextwechsel verhindert Fehler bei `wpdb`-Tabelleneigenschaften.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Fix: Erstellen eines neuen Netzwerks.
 * Fix: Rendern von Menüs.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Aktualisiert auf Plugin Update Checker v5
 * Moderne WordPress-Plugin-Header hinzugefügt
 * Verbesserte Kompatibilität mit den neuesten WordPress-Versionen
 
-### 1.0.2
+### 1.0.2 {#102}
 * Fehlerbehebungen und Leistungsverbesserungen
 * Verbesserte Netzwerkisolierung
 
-### 1.0.0
+### 1.0.0 {#100}
 * Erstveröffentlichung
 * Kernfunktionalität für Multinetwork
 * Integration mit Multisite Ultimate

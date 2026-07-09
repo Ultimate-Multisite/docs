@@ -3,11 +3,11 @@ title: Láimhseáil Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Láimhseáil Webhookanna
+# Láimhseáil Webhookanna {#webhook-handling}
 
 Cruthaigh críochphointí webhook saincheaptha chun imeachtaí a fháil ó sheirbhísí seachtracha agus sonraí a shioncronú le Ultimate Multisite.
 
-## Críochphointe Webhook Saincheaptha
+## Críochphointe Webhook Saincheaptha {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Breithnithe Slándála
+## Breithnithe Slándála {#security-considerations}
 
 - Fíoraigh sínithe webhook i gcónaí ag úsáid HMAC nó rún comhroinnte
 - Úsáid `permission_callback` ar do bhealach REST — ná socraigh riamh é go `__return_true` i dtáirgeadh

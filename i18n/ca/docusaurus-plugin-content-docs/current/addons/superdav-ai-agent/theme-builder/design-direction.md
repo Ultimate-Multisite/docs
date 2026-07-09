@@ -3,17 +3,17 @@ title: Direcció de disseny
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direcció de Disseny
+# Direcció de Disseny {#design-direction}
 
 El pas de la **Direcció de Disseny** et permet revisar, refinar i finalitzar el disseny visual del teu tema abans que Theme Builder generi el tema complet.
 
-## Resum
+## Resum {#overview}
 
 Després d'acabar amb l'Entrevista de Descobriment, Theme Builder t'apresenta la direcció del teu disseny amb **previsualització en desktop i mòbil**. Això et permet veure exactament com tindrà la teva màquina visual en diferents dispositius abans d'comprometir-te amb el tema.
 
-## Components de Direcció de Disseny
+## Components de Direcció de Disseny {#design-direction-components}
 
-### 1. Paleta de Colors
+### 1. Paleta de Colors {#1-color-palette}
 
 El esquema de colors del teu tema, inclou:
 
@@ -23,7 +23,7 @@ El esquema de colors del teu tema, inclou:
 - **Colors neutrals** — grises i blancs per als fons i el text
 - **Color de text** — color de text principal per a la legibilitat
 
-### 2. Tipografia
+### 2. Tipografia {#2-typography}
 
 Seleccions de fonts per:
 
@@ -33,14 +33,14 @@ Seleccions de fonts per:
 - **Altura de línea (Line height)** — espai entre línies per a la legibilitat
 - **Pes de font (Font weights)** — variacions negre, regular i lleuger
 
-### 3. Disposició i Espaciament
+### 3. Disposició i Espaciament {#3-layout-and-spacing}
 
 - **Amplitud del contèiner** — amplat max per al contingut
 - **Padding i margins** — espai al voltant dels elements
 - **Sistema de grilla (Grid system)** — disposició de colones per a disseny responsiv
 - **Espai entre components** — distància entre els elements d'interfície de l'usuari (UI)
 
-### 4. Elements Visuals
+### 4. Elements Visuals {#4-visual-elements}
 
 - **Estils de botons** — dissenys de botons primari, secundari i terciari
 - **Dissenys de cards** — disposicions per a blocs de contingut
@@ -48,9 +48,9 @@ Seleccions de fonts per:
 - **Bordes i ombres** — profunditat visual subtil
 - **Efectes al passar el mouse (Hover effects)** — estilització de l'estat interactiu
 
-## Previsualització del Render
+## Previsualització del Render {#preview-rendering}
 
-### Previsualització per a Desktop
+### Previsualització per a Desktop {#desktop-preview}
 
 La previsualització per a desktop mostra el teu disseny amb màxima amplatza (normalment 1200px o més):
 
@@ -59,7 +59,7 @@ La previsualització per a desktop mostra el teu disseny amb màxima amplatza (n
 - Tipografia i espaciament grans
 - Tots els elements visuals en mida completa
 
-### Previsualització per a Mobile
+### Previsualització per a Mobile {#mobile-preview}
 
 La previsualització per a mobile mostra el teu disseny al format mòbil (normalment 375px):
 
@@ -68,7 +68,7 @@ La previsualització per a mobile mostra el teu disseny al format mòbil (normal
 - Tipografia i espaciament ajustats
 - Mires de botons amenedades per a toques
 
-### Punts de ruptura responsius (Responsive Breakpoints)
+### Punts de ruptura responsius (Responsive Breakpoints) {#responsive-breakpoints}
 
 El Theme Builder rendera les previsualitzacions en aquests punts de ruptura:
 
@@ -79,9 +79,9 @@ El Theme Builder rendera les previsualitzacions en aquests punts de ruptura:
 | **Desktop** | 1200px | Desktop de màxima amplatza |
 | **Large Desktop** | 1920px | Pantalla ultra-ampla |
 
-## Refinant el teu disseny
+## Refinant el teu disseny {#refining-your-design}
 
-### Fes Ajustaments
+### Fes Ajustaments {#making-adjustments}
 
  Pots refinar la direcció del teu disseny fent servir:
 
@@ -91,7 +91,7 @@ El Theme Builder rendera les previsualitzacions en aquests punts de ruptura:
 4. **Actualitzar disposició** — canvia amplatzes dels conteneurs i col·lectives de la grilla (grid columns)
 5. **Personalitzar elements** — modifica estils de botons, dissenys de cards, etc.
 
-### Actualitzacions de previsualització
+### Actualitzacions de previsualització {#preview-updates}
 
 Les modificacions es reflecten en temps real:
 
@@ -100,7 +100,7 @@ Les modificacions es reflecten en temps real:
 - S'actualitzen tots els breakpoints responsius
 - Pots passar entre les previsualitzacions per verificar els canvis
 
-### Vista de Comparació
+### Vista de Comparació {#comparison-view}
 
 Compara la teva direcció de disseny amb:
 
@@ -108,7 +108,7 @@ Compara la teva direcció de disseny amb:
 - **Dissenyos dels competidors** — compara amb llocs d'inspiració
 - **Versions anteriors** — torna a direccions de disseny més antigues
 
-## Aprovació de la Direcció de Disseny
+## Aprovació de la Direcció de Disseny {#design-direction-approval}
 
 Una vegada estiguis satisfet amb el teu disseny:
 
@@ -118,7 +118,7 @@ Una vegada estiguis satisfet amb el teu disseny:
 4. **Confirma el pla** — comprueba el espaciament i l'alineació
 5. **Aprova el disseny** — procedeix a la generació del tema
 
-## Pròximos Passos
+## Pròximos Passos {#next-steps}
 
 Després d'aprovar la teva direcció de disseny:
 
@@ -127,7 +127,7 @@ Després d'aprovar la teva direcció de disseny:
 3. Pots personalitzar més utilitzant el customizer de WordPress
 4. Procedeix a [Hospitality Menus](./hospitality-menus.md) o altres funcions
 
-## Bones Pràctiques
+## Bones Pràctiques {#best-practices}
 
 - **Prova en dispositius reals** — utilitza telefons i tabletes reals si és possible
 - **Comprova la legibilitat** — assegura't que el text sigui llegible a totes les talles
@@ -135,30 +135,30 @@ Després d'aprovar la teva direcció de disseny:
 - **Considera el rendiment** — optimitza les imatges i fonts per la velocitat
 - **Planifica el contingut** — assegura't que el pla funciona amb el teu contingut real
 
-## Solucionar Problemas
+## Solucionar Problemas {#troubleshooting}
 
-### La vista previa no se actualiza
+### La vista previa no se actualiza {#preview-not-updating}
 
 - Actualitza la pàgina (Refresh the page).
 - Cleia la cache del navegador (Clear browser cache).
 - Prova amb un navegadore diferent (Try a different browser).
 - Comprova la connexió a internet (Check internet connection).
 
-### Els colors semblen diferents
+### Els colors semblen diferents {#colors-look-different}
 
 - Comprova les configuracions de color del monitor (Check monitor color settings).
 - Prova amb dispositius diferents (Try on different devices).
 - Verifica el contrast de color amb eines d'accessibilitat (Verify color contrast with accessibility tools).
 - Considera simuladors de ceguera al color (Consider color blindness simulators).
 
-### Problemes de tipografia
+### Problemes de tipografia {#typography-issues}
 
 - Comprova que els fitxers de font estan carregats (Verify font files are loading).
 - Comprova el size de la font en diferents breakpoints (Check font size at different breakpoints).
 - Testa amb contingut real (Test with actual content).
 - Considera la longitud de la línia per a la legibilitat (Consider line length for readability).
 
-## Documentació Relacionada
+## Documentació Relacionada {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — recopila informació de disseny
 - [Hospitality Menus](./hospitality-menus.md) — crea pàgines de menús estructurades

@@ -3,7 +3,7 @@ title: لغو عضویت
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# لغو عضویت (v2)
+# لغو عضویت (v2) {#canceling-a-membership-v2}
 
 _**یادداشت مهم: این مقاله به نسخه 2.x از Ultimate Multisite اشاره دارد.**_
 

@@ -3,11 +3,11 @@ title: Buforowanie Promptów Dostawczo-Świadome
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Buforowanie Promptów Zależne od Dostawcy
+# Buforowanie Promptów Zależne od Dostawcy {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 wprowadza **buforowanie promptów zależne od dostawcy** (provider-aware prompt caching), co optymalizuje koszty API i opóźnienia, buforując prompty w różnych dostawcach LLM. Każdy dostawca ma inne mechanizmy i konfiguracje buforowania.
 
-## Przegląd
+## Przegląd {#overview}
 
 Buforowanie promptów pozwala Ci:
 
@@ -23,11 +23,11 @@ Różne dostawcy implementują buforowanie inaczej:
 - **OpenRouter**: Buforowanie specyficzne dla dostawcy
 - **Vertex Anthropic**: Buforowanie promptów z kontrolą nad buforem (cache control)
 
-## Google Gemini: API cachedContents
+## Google Gemini: API cachedContents {#google-gemini-cachedcontents-api}
 
 Google Gemini zapewnia jawne zarządzanie buforem za pomocą API `cachedContents`.
 
-### Konfiguracja
+### Konfiguracja {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Tworzenie Buforowanego Promptu
+### Tworzenie Buforowanego Promptu {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Zwraca: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Użycie Buforowanego Promptu
+### Użycie Buforowanego Promptu {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cykl Życia Bufora
+### Cykl Życia Bufora {#cache-lifecycle}
 
 ```php
 // Wyświetl buforowane treści
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Najlepsze Praktyki dla Gemini
+### Najlepsze Praktyki dla Gemini {#best-practices-for-gemini}
 
 - **Ustaw odpowiedni TTL**: Zrównoważ oszczędności kosztów z przestarzałością bufora
 - **Buforuj systemowe prompty**: Ponownie używaj tego samego promptu systemowego w różnych żądaniach
 - **Monitoruj użycie bufora**: Śledź, które buforowanie jest używane najczęściej
 - **Czyszcz buforowane treści po wygaśnięciu**: Okresowo usuwaj nieużywane buforowanie
 
-## Azure OpenAI: Buforowanie Promptów
+## Azure OpenAI: Buforowanie Promptów {#azure-openai-prompt-caching}
 
 Azure OpenAI obsługuje buforowanie promptów z automatycznym zarządzaniem TTL.
 
-### Konfiguracja
+### Konfiguracja {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Włączenie Buforowania
+### Włączenie Buforowania {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Nagłówki Bufora (Cache Headers)
+### Nagłówki Bufora (Cache Headers) {#cache-headers}
 
 Azure OpenAI używa nagłówków HTTP do kontroli bufora:
 
@@ -152,7 +152,7 @@ Obsługiwane wartości:
 - `no_cache`: Nie buforuj tego żądania
 - `no_store`: Nie buforuj i nie używaj ponownie
 
-### Monitorowanie Użycia Bufora
+### Monitorowanie Użycia Bufora {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Tworzenie bufora: $cache_tokens tokenów\n";
 echo "Użycie bufora: $cache_hits tokenów\n";
 ```
 
-### Najlepsze Praktyki dla Azure OpenAI
+### Najlepsze Praktyki dla Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Używaj spójnych promptów**: Identyczne prompty korzystają z buforowania
 - **Ustaw rozsądny TTL**: Zrównoważ koszt z świeżością danych
 - **Monitoruj metryki bufora**: Śledź tworzenie vs. użycie bufora
 - **Dziel żądania na partie**: Grupuj żądania, aby zmaksymalizować trafienia w bufor
 
-## OpenRouter: Buforowanie Specyficzne dla Dostawcy
+## OpenRouter: Buforowanie Specyficzne dla Dostawcy {#openrouter-provider-specific-caching}
 
 OpenRouter obsługuje buforowanie poprzez podstawowe dostawcy (OpenAI, Anthropic itp.).
 
-### Konfiguracja
+### Konfiguracja {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Użycie Buforowania OpenRouter
+### Użycie Buforowania OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Opcje Specyficzne dla Dostawcy
+### Opcje Specyficzne dla Dostawcy {#provider-specific-options}
 
 Różne dostawcy mają różne mechanizmy buforowania:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Najlepsze Praktyki dla OpenRouter
+### Najlepsze Praktyki dla OpenRouter {#best-practices-for-openrouter}
 
 - **Poznaj buforowanie swojego dostawcy**: Każdy dostawca ma inne mechanizmy
 - **Testuj działanie buforowania**: Sprawdź, czy buforowanie działa z wybranym dostawcą
 - **Monitoruj koszty**: Śledź oszczędności wynikające z buforowania
 - **Używaj spójnych modeli**: Zmiana modelu powoduje utratę trafień w bufor
 
-## Vertex Anthropic: Buforowanie Promptów z Kontrolą nad Buforem
+## Vertex Anthropic: Buforowanie Promptów z Kontrolą nad Buforem {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) obsługuje buforowanie promptów z jawną kontrolą nad buforem.
 
-### Konfiguracja
+### Konfiguracja {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Użycie Buforowania Vertex Anthropic
+### Użycie Buforowania Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Typy Kontroli Bufora
+### Typy Kontroli Bufora {#cache-control-types}
 
 - **ephemeral**: Buforowanie na czas trwania żądania (domyślne)
 - **persistent**: Buforowanie przez wiele żądań (jeśli jest obsługiwane)
 
-### Monitorowanie Użycia Bufora
+### Monitorowanie Użycia Bufora {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Bufor utworzony: $cache_created tokenów\n";
 echo "Bufor odczytany: $cache_read tokenów\n";
 ```
 
-### Najlepsze Praktyki dla Vertex Anthropic
+### Najlepsze Praktyki dla Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Używaj buforowania efemerycznego**: Idealne do buforowania sesji
 - **Ustaw max_tokens odpowiednio**: Zrównoważ rozmiar bufora z kosztem
 - **Monitoruj metryki bufora**: Śledź skuteczność buforowania
 - **Testuj na swoim obciążeniu**: Sprawdź, czy buforowanie jest korzystne dla Twojego przypadku użycia
 
-## Strategia Buforowania Między Dostawcami
+## Strategia Buforowania Między Dostawcami {#cross-provider-caching-strategy}
 
-### Ujednolicona Konfiguracja
+### Ujednolicona Konfiguracja {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Wykrywanie Dostawcy
+### Wykrywanie Dostawcy {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Użyj konfiguracji buforowania specyficznej dla dostawcy
 ```
 
-### Strategia Awaryjna (Fallback)
+### Strategia Awaryjna (Fallback) {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Optymalizacja Kosztów
+## Optymalizacja Kosztów {#cost-optimization}
 
-### Obliczanie Oszczędności
+### Obliczanie Oszczędności {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Szacowane oszczędności: \$$savings\n";
 ```
 
-### Wskazówki Optymalizacyjne
+### Wskazówki Optymalizacyjne {#optimization-tips}
 
 - **Buforuj duże prompty systemowe**: Największe oszczędności kosztów
 - **Ponownie używaj kontekstu**: Buforuj często używane dokumenty kontekstowe
@@ -395,30 +395,30 @@ echo "Szacowane oszczędności: \$$savings\n";
 - **Monitoruj skuteczność buforowania**: Śledź rzeczywiste oszczędności
 - **Dostosuj TTL**: Zrównoważ koszt z świeżością danych
 
-## Rozwiązywanie Problemów
+## Rozwiązywanie Problemów {#troubleshooting}
 
-### Buforowanie nie jest używane
+### Buforowanie nie jest używane {#cache-not-being-used}
 
 - Sprawdź, czy buforowanie jest włączone w konfiguracji
 - Upewnij się, że prompty są identyczne (buforowanie wymaga dokładnego dopasowania)
 - Sprawdź, czy bufor nie wygasł
 - Sprawdź limity buforowania specyficzne dla dostawcy
 
-### Błąd tworzenia bufora
+### Błąd tworzenia bufora {#cache-creation-failing}
 
 - Sprawdź, czy rozmiar bufora mieści się w limitach dostawcy
 - Upewnij się, że składnia kontroli bufora jest poprawna
 - Upewnij się, że dostawca obsługuje buforowanie dla Twojego modelu
 - Przejrzyj dokumentację dostawcy pod kątem ograniczeń
 
-### Nieoczekiwane koszty
+### Nieoczekiwane koszty {#unexpected-costs}
 
 - Monitoruj tokeny tworzenia bufora vs. tokeny odczytu bufora
 - Sprawdź, czy buforowanie jest faktycznie używane
 - Sprawdź, czy nie ma braków bufora z powodu zmian w promptach
 - Rozważ dostosowanie TTL lub strategii buforowania
 
-## Porównanie Dostawców
+## Porównanie Dostawców {#provider-comparison}
 
 | Funkcja | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Szacowane oszczędności: \$$savings\n";
 | Redukcja kosztów | 90% | 90% | Zależne od dostawcy | 90% |
 | Monitorowanie | Szczegółowe | Poprzez metryki | Zależne od dostawcy | Poprzez użycie |
 
-## Następne Kroki
+## Następne Kroki {#next-steps}
 
 1. **Wybierz dostawcę**: Wybierz na podstawie swoich potrzeb
 2. **Skonfiguruj buforowanie**: Ustaw buforowanie specyficzne dla dostawcy

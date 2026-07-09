@@ -3,11 +3,11 @@ title: Instellingsverwysing
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Instellingsverwysing
+# Instellingsverwysing {#settings-reference}
 
 Hierdie bladsy hou instellings dop wat daaglikse administrasie en onlangse gedragsveranderings in Ultimate Multisite beïnvloed.
 
-## Ander opsies
+## Ander opsies {#other-options}
 
 Die **Ander opsies**-area verskyn onder **Ultimate Multisite > Instellings > Aanmelding & Registrasie**.
 
@@ -15,23 +15,23 @@ Die **Ander opsies**-area verskyn onder **Ultimate Multisite > Instellings > Aan
 |---|---|
 | **Aktiveer Jumper** | Wys die Jumper-snelnavigasiehulpmiddel in die admin-area. Gebruik dit om direk na Ultimate Multisite-skerms, netwerkobjekte en ondersteunde admin-bestemmings te spring. Deaktiveer dit as jy nie wil hê hierdie kortpad moet sigbaar wees nie. |
 
-## Foutrapportering en telemetrie
+## Foutrapportering en telemetrie {#error-reporting-and-telemetry}
 
 Die vorige intekeninstelling vir foutrapportering is van die instellingsbladsy verwyder. Anonieme telemetrie is gedeaktiveer en daar is geen UI-skakelaar om dit te aktiveer nie.
 
 As jy interne draaiboeke of skermskote vir die instellingsbladsy onderhou, verwyder verwysings na die ou intekenveld vir foutrapportering sodat administrateurs nie na ’n instelling soek wat nie meer teenwoordig is nie.
 
-## Invoer-/uitvoerinstellings
+## Invoer-/uitvoerinstellings {#importexport-settings}
 
 Die **Invoer/Uitvoer**-instellingsoortjie beskryf watter instellings dit beheer en skakel direk na **Ultimate Multisite > Werfuitvoer** vir werf- en netwerkargiewe. Gebruik die instellingsoortjie vir invoer-/uitvoerkonfigurasie, gebruik **Gereedskap > Uitvoer & Invoer** vir die enkelwerf-uitvoer-/invoerwerkvloei, en gebruik die Werfuitvoer-hulpmiddel wanneer jy ’n volledige Netwerkuitvoer-argief benodig.
 
-## Domain Seller HostAfrica-saldowaarskuwing
+## Domain Seller HostAfrica-saldowaarskuwing {#domain-seller-hostafrica-balance-warning}
 
 Wanneer die Domain Seller-addon aan HostAfrica gekoppel is, sien netwerkadministrateurs nou ’n wegklikbare waarskuwing oor lae saldo wanneer die herverkoperrekening se saldo te laag is vir betroubare domeinregistrasie- of hernuwingsverwerking.
 
 Hanteer hierdie kennisgewing as ’n operasionele waarskuwing: vul die HostAfrica-herverkopersaldo aan voordat jy meer betaalde domeinregistrasies aanvaar, keer dan terug na die Domain Seller-instellings of domeinmoniteringskerm om te bevestig dat registrasies en hernuwings normaal kan voortgaan.
 
-## AI-verskafferkoppelaarinstellings
+## AI-verskafferkoppelaarinstellings {#ai-provider-connector-settings}
 
 AI-verskafferkoppelaarinstellings stel nou slegs die ondersteunde OAuth-rekeningpoele bloot:
 

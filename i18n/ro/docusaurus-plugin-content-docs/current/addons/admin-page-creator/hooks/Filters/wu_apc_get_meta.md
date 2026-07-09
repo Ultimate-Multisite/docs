@@ -4,11 +4,11 @@ title: Filter - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Permite dezvoltatorilor să filtreze valorile finale și să adauge cazuri de procesare noi.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Permite dezvoltatorilor să filtreze valorile finale și să adauge cazuri de pr
 | $meta_type | `string` | Tipul de date meta de recuperat. |
 | $meta_key | `string` | Numele câmpului meta. |
 
-### De la
+### De la {#since}
 
 - 1.4.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) la linia 93
 
-## Returnează
+## Returnează {#returns}
 Noua valoare implicită.

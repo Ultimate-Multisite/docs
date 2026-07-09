@@ -3,13 +3,13 @@ title: Envio de e-mails e transmissões
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviar Emails e Broadcasts (v2)
+# Enviar Emails e Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 
 Ultimate Multisite inclui uma funcionalidade que lhe permite comunicar com os seus clientes enviando um email para um utilizador específico ou para um grupo de utilizadores, bem como enviar avisos no respetivo Dashboard de administração para transmitir anúncios
 
-## Adicionar avisos de administração ao Dashboard dos seus clientes com Broadcasts
+## Adicionar avisos de administração ao Dashboard dos seus clientes com Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Usando a funcionalidade de broadcast do Ultimate Multisite, pode adicionar **avisos de administração** ao Dashboard de administração do subsite do seu utilizador.
 
@@ -51,7 +51,7 @@ Depois de criar a sua mensagem, pode então carregar no botão **Send**.
 
 E é isso. O aviso de administração deverá aparecer imediatamente no Dashboard do seu utilizador.
 
-## Enviar emails aos seus clientes
+## Enviar emails aos seus clientes {#send-emails-to-your-customers}
 
 Usando a funcionalidade de broadcast do Ultimate Multisite, pode enviar um email aos seus utilizadores. Tem a opção de enviar o email apenas a utilizadores específicos ou de direcionar um grupo específico de utilizadores com base no produto ou plano ao qual estão subscritos.
 
@@ -81,11 +81,11 @@ Depois de criar a sua mensagem, pode carregar no botão **Send**.
 
 E é assim tão fácil enviar um email aos seus utilizadores finais usando a funcionalidade de broadcast.
 
-## Emails do sistema
+## Emails do sistema {#system-emails}
 
 Os emails do sistema no Ultimate Multisite são aquelas **notificações automáticas** enviadas pelo sistema após determinadas ações, como registo, pagamento, mapeamento de domínio, etc. Estes emails podem ser editados ou modificados nas definições do Ultimate Multisite. Também inclui uma funcionalidade que lhe permite repor e importar definições existentes de outra instalação do Ultimate Multisite.
 
-### Repor e importar
+### Repor e importar {#resetting--importing}
 
 Novas versões do Ultimate Multisite, bem como add-ons, podem e irão registar novos emails de tempos a tempos.
 
@@ -93,7 +93,7 @@ Para evitar conflitos e outros problemas, **não adicionaremos automaticamente o
 
 No entanto, super administradores e agentes podem importar estes emails recém-registados através da ferramenta de importação. Esse processo criará um novo email do sistema com o conteúdo e a configuração do novo modelo de email, permitindo ao super administrador fazer quaisquer modificações que pretenda ou mantê-los como estão.
 
-#### Como importar emails do sistema
+#### Como importar emails do sistema {#how-to-import-system-emails}
 
 Vá à página de Definições do Ultimate Multisite e aceda ao separador **Emails**.
 
@@ -111,7 +111,7 @@ Depois, pode alternar as opções Import Emails para ver quais emails do sistema
 
 <!-- Captura de ecrã indisponível: modal Repor e Importar com as opções Importar emails expandidas -->
 
-#### Repor emails do sistema
+#### Repor emails do sistema {#reseting-system-emails}
 
 Noutras ocasiões, irá perceber que as alterações que fez a um determinado modelo de email já não funcionam para si e que gostaria de o repor para o seu **estado predefinido**.
 

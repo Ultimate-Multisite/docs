@@ -3,21 +3,21 @@ title: Usanidi na Mipangilio ya Mtoa Huduma
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Muuzaji wa Vikoa: Usanidi na Mipangilio ya Watoa Huduma
+# Muuzaji wa Vikoa: Usanidi na Mipangilio ya Watoa Huduma {#domain-seller-setup-and-provider-configuration}
 
 Nyongeza ya Muuzaji wa Vikoa huja na mchawi wa usanidi unaokuongoza kupitia kila hatua inayohitajika. Ukurasa huu unaeleza mtiririko wa mchawi na jinsi ya kusanidi au kusanidi upya watoa huduma baadaye.
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 - **Multisite Ultimate** v2.4.12 au ya juu zaidi, imewashwa kwenye mtandao
 - **PHP** 7.4+
 - Vitambulisho vya API kwa angalau msajili mmoja unaoungwa mkono
 
-## Mchawi wa usanidi wa mara ya kwanza
+## Mchawi wa usanidi wa mara ya kwanza {#first-run-setup-wizard}
 
 Mchawi wa usanidi huanzishwa kiotomatiki mara ya kwanza unapowasha plugin kwenye mtandao. Pia unapatikana wakati wowote kutoka **Msimamizi wa Mtandao › Ultimate Multisite › Usanidi wa Muuzaji wa Vikoa**.
 
-### Hatua ya 1 — Chagua mtoa huduma
+### Hatua ya 1 — Chagua mtoa huduma {#step-1--choose-a-provider}
 
 Chagua msajili unayetaka kuunganisha. Chaguo zinazoungwa mkono:
 
@@ -33,7 +33,7 @@ Chagua msajili unayetaka kuunganisha. Chaguo zinazoungwa mkono:
 | NameSilo | Hapana | Hapana |
 | Enom | Ndiyo | Hapana |
 
-### Hatua ya 2 — Weka vitambulisho
+### Hatua ya 2 — Weka vitambulisho {#step-2--enter-credentials}
 
 Kila mtoa huduma ana sehemu tofauti za vitambulisho:
 
@@ -57,17 +57,17 @@ Kila mtoa huduma ana sehemu tofauti za vitambulisho:
 
 Weka alama kwenye **Hali ya sandbox** inapopatikana ili kujaribu dhidi ya mazingira ya majaribio ya mtoa huduma kabla ya kwenda moja kwa moja.
 
-### Hatua ya 3 — Jaribu muunganisho
+### Hatua ya 3 — Jaribu muunganisho {#step-3--test-the-connection}
 
 Bofya **Jaribu Muunganisho**. Mchawi hutuma mwito mwepesi wa API ili kuthibitisha vitambulisho na muunganisho. Rekebisha matatizo yoyote ya vitambulisho kabla ya kuendelea.
 
-### Hatua ya 4 — Ingiza TLD
+### Hatua ya 4 — Ingiza TLD {#step-4--import-tlds}
 
 Bofya **Ingiza TLD** ili kuvuta TLD zote zinazopatikana na bei za jumla kutoka kwa mtoa huduma aliyeunganishwa. Hii hujaza orodha ya TLD inayotumiwa na bidhaa za vikoa. Uingizaji unaweza kuchukua sekunde 30–60 kwa watoa huduma wenye katalogi kubwa za TLD.
 
 TLD pia husawazishwa upya kiotomatiki mara moja kwa siku kupitia kazi ya cron iliyoratibiwa.
 
-### Hatua ya 5 — Unda bidhaa ya kikoa
+### Hatua ya 5 — Unda bidhaa ya kikoa {#step-5--create-a-domain-product}
 
 Mchawi huunda bidhaa chaguomsingi ya kikoa inayojumuisha zote kwa nyongeza ya bei ya 10%. Unaweza kuhariri bidhaa hii mara moja au kuruka na kuunda bidhaa mwenyewe chini ya **Ultimate Multisite › Bidhaa**.
 
@@ -75,7 +75,7 @@ Tazama [Bidhaa za Vikoa na Bei](./domain-products) kwa mwongozo kamili wa usanid
 
 ---
 
-## Kusanidi upya mtoa huduma
+## Kusanidi upya mtoa huduma {#reconfiguring-a-provider}
 
 Nenda kwenye **Msimamizi wa Mtandao › Ultimate Multisite › Mipangilio › Muuzaji wa Vikoa** (au bofya **Mipangilio** kwenye orodha ya plugin).
 
@@ -88,17 +88,17 @@ Ukurasa wa mipangilio una:
 - **Dhibiti bidhaa za vikoa** — kiungo cha haraka kwenda kwenye orodha ya Bidhaa
 - **Sanidi watoa huduma** — hufungua Mchawi wa Ujumuishaji ili kuongeza au kusanidi upya watoa huduma
 
-### Kuongeza mtoa huduma wa pili
+### Kuongeza mtoa huduma wa pili {#adding-a-second-provider}
 
 Bofya **Sanidi watoa huduma** na endesha mchawi tena kwa msajili mpya. Unaweza kuwa na watoa huduma wengi waliowekwa mipangilio kwa wakati mmoja. Pangia kila bidhaa ya kikoa mtoa huduma mahususi, au iache kwenye chaguomsingi.
 
-### Kusawazisha TLD mwenyewe
+### Kusawazisha TLD mwenyewe {#syncing-tlds-manually}
 
 Kwenye ukurasa wa mipangilio, bofya **Sawazisha TLD** karibu na mtoa huduma yeyote aliyesanidiwa ili kuvuta bei za hivi karibuni. Hii ni muhimu baada ya mtoa huduma kusasisha bei za jumla au kuongeza TLD mpya.
 
 ---
 
-## Kumbukumbu
+## Kumbukumbu {#logs}
 
 Kila mtoa huduma huandika kwenye chaneli yake ya kumbukumbu. Kumbukumbu zinaweza kutazamwa chini ya **Msimamizi wa Mtandao › Ultimate Multisite › Kumbukumbu**:
 
@@ -118,7 +118,7 @@ Kila mtoa huduma huandika kwenye chaneli yake ya kumbukumbu. Kumbukumbu zinaweza
 
 ---
 
-## Vidokezo vya uwezo wa watoa huduma
+## Vidokezo vya uwezo wa watoa huduma {#provider-capability-notes}
 
 Si kila API ya msajili hufichua shughuli zilezile. Nyongeza huonyesha shughuli zisizoungwa mkono kwa hitilafu zilizo wazi zinazoonekana kwa msimamizi badala ya kushindwa kimya kimya.
 

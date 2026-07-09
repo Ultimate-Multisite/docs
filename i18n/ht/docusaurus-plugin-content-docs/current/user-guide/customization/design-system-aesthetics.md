@@ -3,11 +3,11 @@ title: Sistèm Estetik Konpènsi
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Savèt Estetik Sistèm Design
+# Savèt Estetik Sistèm Design {#design-system-aesthetics-skill}
 
 **Savèt Estetik Sistèm Design** se yon fason ki gide ou pou amelyore idantite vizyèl sit ou. Li ede w pran desizyon konsistan sou tipografi, koulè, espas (spacing), ak token mouvman (motion tokens) ki defini sistèm design ou a.
 
-## Kisa Savèt Estetik Sistèm Design ye?
+## Kisa Savèt Estetik Sistèm Design ye? {#what-is-design-system-aesthetics}
 
 Savèt Estetik Sistèm Design se yon sèl fòs ki gen estrikti k ap kouvri:
 
@@ -20,9 +20,9 @@ Savèt Estetik Sistèm Design se yon sèl fòs ki gen estrikti k ap kouvri:
 
 Desizyon sa yo ap enkòpile nan fichye `theme.json` tèm ou a, kreyasyon yon sistèm vizyèl ki kohezif.
 
-## Poukisa itilize Savèt Estetik Sistèm Design?
+## Poukisa itilize Savèt Estetik Sistèm Design? {#why-use-design-system-aesthetics}
 
-### Konsistans (Consistency)
+### Konsistans (Consistency) {#consistency}
 
 Sistèm design la asire:
 
@@ -31,7 +31,7 @@ Sistèm design la asire:
 - Espas yo swiv yon patan pèdi (predictable pattern)
 - Animasyon yo santi yo unifye
 
-### Efisyans (Efficiency)
+### Efisyans (Efficiency) {#efficiency}
 
 Olye pou w fè desizyon design pou chak paj, ou:
 
@@ -39,7 +39,7 @@ Olye pou w fè desizyon design pou chak paj, ou:
 - Aplike yo kotempo
 - Mete yon chanjman global lè w chanje yon sèl valè
 
-### Fleksibilite (Flexibility)
+### Fleksibilite (Flexibility) {#flexibility}
 
 Ou ka:
 
@@ -47,9 +47,9 @@ Ou ka:
 - Eksperimante ak diferan estetik
 - Kenbe konsistans marke a pandan ou ap evolye
 
-## Kijan pou kòmanse Savèt Estetik Sistèm Design?
+## Kijan pou kòmanse Savèt Estetik Sistèm Design? {#triggering-the-design-system-aesthetics-skill}
 
-### Aktive Manmanèl (Manual Activation)
+### Aktive Manmanèl (Manual Activation) {#manual-activation}
 
 Ou ka kòmanse savèt la nenpòt lè:
 
@@ -69,7 +69,7 @@ oswa
 "Guide me through design system decisions"
 ```
 
-### Sijesyon Otomatik (Automatic Suggestions)
+### Sijesyon Otomatik (Automatic Suggestions) {#automatic-suggestions}
 
 Agent yo ka sijere pou w itilize savèt la lè ou:
 
@@ -78,9 +78,9 @@ Agent yo ka sijere pou w itilize savèt la lè ou:
 - Vle amelyore konsistans vizyèl la
 - Prepare pou lanse sit ou a
 
-## Pwosesis Estetik Sistèm nan
+## Pwosesis Estetik Sistèm nan {#the-design-system-aesthetics-process}
 
-### Etap 1: Tipografi
+### Etap 1: Tipografi {#step-1-typography}
 
 Agent la mande ou sou chwa font ou yo:
 
@@ -110,7 +110,7 @@ Lè sa a, agent la defini:
 - **Eskalè pwa (Weight scale)**: Pwa font (regular, medium, bold, elatriye)
 - **Lajè liy (Line height)**: Espas ant liy yo pou li fasil pou li
 
-### Etap 2: Palèt koulè
+### Etap 2: Palèt koulè {#step-2-color-palette}
 
 ```
 Ann defini palèt koulè ou.
@@ -158,7 +158,7 @@ L'agent la defini token espas yo:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Valè espesifik pou padding, margin, gap
 
-### Etap 4: Border ak Shadow (Ombre)
+### Etap 4: Border ak Shadow (Ombre) {#step-3-spacing}
 
 ```
 Pwofondè vizyèl ak definisyon:
@@ -181,7 +181,7 @@ L'agent la kreye:
 - Shadow tokens pou nivo eleve (elevation levels)
 - Border width tokens
 
-### Etap 5: Moti ak Animasyon (Motion and Animation)
+### Etap 5: Moti ak Animasyon (Motion and Animation) {#step-4-borders-and-shadows}
 
 ```
 Kijan ou ta vle sit ou santi lè w ap fè yon bagay antyap (interactive)?
@@ -203,9 +203,9 @@ L'agent la defini:
 - Fonksyon easing (ease-in, ease-out, ease-in-out)
 - Keyframes animasyon pou interaksyon komen yo
 
-## Aplike Estetik Sistèm Design (Applying Design System Aesthetics)
+## Aplike Estetik Sistèm Design (Applying Design System Aesthetics) {#step-5-motion-and-animation}
 
-### Aplikasyon Otomatik (Automatic Application)
+### Aplikasyon Otomatik (Automatic Application) {#applying-design-system-aesthetics}
 
 Malgre ou fini skill la, l'agent la ap fè sa:
 
@@ -214,13 +214,13 @@ Malgre ou fini skill la, l'agent la ap fè sa:
 3. Li jenerasyon mwayen style blok yo pou matche nouvo sistèm lan
 4. Li aktive theme ki rafraîchi a
 
-### Aplikasyon Manèl (Manual Application)
+### Aplikasyon Manèl (Manual Application) {#automatic-application}
 
 Ou ka edite `theme.json` dirèkteman tou:
 
-## Gade Wè Design System ou
+## Gade Wè Design System ou {#manual-application}
 
-### Mande Agant la Kesyon
+### Mande Agant la Kesyon {#viewing-your-design-system}
 
 ```
 "Montre m design system mwen"
@@ -234,13 +234,13 @@ oswa
 
 Agant la ap montre ou tipografi, koulè, espas, e lòt token yo.
 
-### Wè theme.json
+### Wè theme.json {#ask-the-agent}
 
 Louvri `/wp-content/themes/[theme-name]/theme.json` nan yon editeur tèks pou w wè defisyè token yo dirèk.
 
-## Mete Update Design System ou
+## Mete Update Design System ou {#view-themejson}
 
-### Update Rapid
+### Update Rapid {#updating-your-design-system}
 
 Mande agant la pou chanjman espesifik:
 
@@ -260,7 +260,7 @@ oswa
 "Chanje font tit la pou yon serif"
 ```
 
-### Redesign Total
+### Redesign Total {#quick-updates}
 
 Relaye aprann konpèti Design System Aesthetics la:
 
@@ -270,7 +270,7 @@ Relaye aprann konpèti Design System Aesthetics la:
 
 Sa ap gide ou nan tout desizyon yo ankò, kòmanse ak valè ou kounye a.
 
-### Update Parèsi
+### Update Parèsi {#full-redesign}
 
 Mete update sou aspè espesifik:
 
@@ -278,15 +278,15 @@ Mete update sou aspè espesifik:
 "Sèlman mete update pale koulè a, kenbe tout lòt bagay menm"
 ```
 
-## Bon Pratik Design System
+## Bon Pratik Design System {#partial-updates}
 
-### Konsistans
+### Konsistans {#design-system-best-practices}
 
 - Itilize menm token kote ou gen yo
 - Pa kreye koulè oswa gwosè ki sèlman pou yon fwa
 - Refè token yo olye pou w mete valè dirèk nan kòd la
 
-### Nonnam
+### Nonnam {#consistency-1}
 
 Itilize non ki klè ak semantic:
 
@@ -296,7 +296,7 @@ Itilize non ki klè ak semantic:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalabilite
+### Skalabilite {#naming}
 
 Konsepe yon sistèm ki ka grandi (Design your system to scale):
 
@@ -304,7 +304,7 @@ Konsepe yon sistèm ki ka grandi (Design your system to scale):
 - Kreye lòt skal (xs, sm, md, lg, xl) olye de valè arbitré
 - Planifye pou ajou nan lavni
 
-### Dokiman sistèm konsepsyon ou a:
+### Dokiman sistèm konsepsyon ou a: {#scalability}
 
 Dokimante sistèm konsepsyon ou a:
 
@@ -312,9 +312,9 @@ Dokimante sistèm konsepsyon ou a:
 - Lè pou itilize chak token (token)
 - Eksèpasyon ak kaje difisil (edge cases)
 
-## Modèl Sistèm Konsepsyon komen (Common Design System Patterns)
+## Modèl Sistèm Konsepsyon komen (Common Design System Patterns) {#documentation}
 
-### Modern Minimalist
+### Modern Minimalist {#common-design-system-patterns}
 
 - Tipografi san serif (Inter, Helvetica)
 - Palèt koulè limite (2-3 koulè)
@@ -322,7 +322,7 @@ Dokimante sistèm konsepsyon ou a:
 - Ombre subtil (subtle shadows)
 - Animasyon rapid ak plizyè (smooth, fast animations)
 
-### Chale ak Amical (Warm and Friendly)
+### Chale ak Amical (Warm and Friendly) {#modern-minimalist}
 
 - Miks serif ak san serif
 - Palèt koulè chale (orange, grè nan chofe)
@@ -330,7 +330,7 @@ Dokimante sistèm konsepsyon ou a:
 - Ombre souf (soft shadows)
 - Animasyon jwèt (playful animations)
 
-### Korporat Pwofesyonèl (Professional Corporate)
+### Korporat Pwofesyonèl (Professional Corporate) {#warm-and-friendly}
 
 - San serif ki pwòp (Roboto, Open Sans)
 - Palèt nòmal ak koulè aksan (accent color)
@@ -338,7 +338,7 @@ Dokimante sistèm konsepsyon ou a:
 - Ombre minimize (minimal shadows)
 - Transisyon subtil (subtle transitions)
 
-### Kreatif ak Fò (Creative and Bold)
+### Kreatif ak Fò (Creative and Bold) {#professional-corporate}
 
 - Tipografi ki diferan (distinctive typography)
 - Palèt koulè fò (bold color palette)
@@ -346,7 +346,7 @@ Dokimante sistèm konsepsyon ou a:
 - Ombre fò (strong shadows)
 - Animasyon ki atire atansyon (noticeable animations)
 
-## Rezolisyon pwoblèm (Troubleshooting)
+## Rezolisyon pwoblèm (Troubleshooting) {#creative-and-bold}
 
 **Chanjman nan sistèm konsepsyon mwen an pa parèt**
 - Netwaye cache bra ou a (Clear your browser cache)
@@ -364,7 +364,7 @@ Dokimante sistèm konsepsyon ou a:
 - Edite manman `theme.json` pou valè anvan yo
 - Rete itilize skill la ak chwazi diferan
 
-## Etap Kounye a (Next Steps)
+## Etap Kounye a (Next Steps) {#troubleshooting}
 
 Ap fè ou defini sistèm konsepsyon ou anvan:
 

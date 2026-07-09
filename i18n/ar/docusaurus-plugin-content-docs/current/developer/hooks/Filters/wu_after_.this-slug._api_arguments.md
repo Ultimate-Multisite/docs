@@ -4,21 +4,21 @@ title: مرشح - wu_after_ . $this->slug . _api_arguments
 sidebar_label: wu_after_ . $this->slug . _api_arguments
 _i18n_hash: 562602bab1532a31c4f5065a3a5f4a9f
 ---
-# مرشح: wu_after_ . $this->slug . _api_arguments
+# مرشح: wu_after_ . $this->slug . _api_arguments {#filter-wuafter--this-slug--apiarguments}
 
 المرشح بعد التغيير.
 
-## المعلمات
+## المعلمات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
 | $args | `array` | وسائط API لهذا المدير. |
 | $this | `object` | هذا المدير. |
 
-### منذ
+### منذ {#since}
 
 - 2.0.0
 
-### المصدر
+### المصدر {#source}
 
 تم تعريفه في [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L606) في السطر 606

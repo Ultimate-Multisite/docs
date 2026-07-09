@@ -3,9 +3,9 @@ title: Ultimate AI Connector פֿאַר WebLLM ענדערונגען־לאָג
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector פֿאַר WebLLM ענדערונג־לאָג
+# Ultimate AI Connector פֿאַר WebLLM ענדערונג־לאָג {#ultimate-ai-connector-for-webllm-changelog}
 
-## ווערסיע 1.1.0 — אַרויסגעגעבן דעם 2026-04-09
+## ווערסיע 1.1.0 — אַרויסגעגעבן דעם 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * נײַ: שוועבנדיקער שמועס־ווידזשעט מיט admin-bar סטאַטוס־אינדיקאַטאָר — יעדער איינגעשריבענער באַניצער קען שיקן אַ prompt צום בלעטערער־זײַטיקן LLM גלײַך פֿון דער פראָנט־זײַט.
 * נײַ: SharedWorker לויפֿצײַט — דער MLC מאָטאָר לויפֿט איצט אין אַ SharedWorker, אַזוי אַז עטלעכע קוויטלעך טיילן איין GPU סעסיע אַנשטאָט זיך צו שלאָגן דערפֿאַר.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * פֿאַרריכטונג: פֿאַרבינדן WebLLM אין דעם wpai_preferred_text_models filter, אַזוי אַז די AI Experiments פֿונקציע רוטעט צום בלעטערער־מאָטאָר ווען אַ מאָדעל איז קאָנפֿיגורירט.
 * פֿאַרבעסערט: Cache-busting, אינהאַלט־נאָרמאַליזאַציע, און פֿאַרריכטונגען פֿאַר hardware-reference וואָס זענען אויפֿגעקומען בעת end-to-end טעסטינג.
 
-## ווערסיע 1.0.0 — ערשטע אַרויסגאַבע
+## ווערסיע 1.0.0 — ערשטע אַרויסגאַבע {#version-100--initial-release}

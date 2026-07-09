@@ -3,7 +3,7 @@ title: Ilogi yezinguquko ye-Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Umlando wezinguquko we-Mailchimp
+# Umlando wezinguquko we-Mailchimp {#mailchimp-changelog}
 
 Inguqulo: 1.1.1 - Ikhishwe ngo-2025-09-28
 

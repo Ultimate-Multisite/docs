@@ -5,11 +5,11 @@ title: >-
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ubutumwe mu gukoresha no Guhagarira ry'Ubutumwe
+# Ubutumwe mu gukoresha no Guhagarira ry'Ubutumwe {#membership-expiration-and-site-blocking}
 
 Iyi inyandiko irafasha kumenya uko Ultimate Multisite yikora ibisubizo ku guhagarira ry'ubutumwe, ukugera kw'ibitiramo (trials), no guhagarira ry'ibinyabwivu mu gice cyo gukoresha (frontend site blocking). Iyi inyandiko ifasha kumenya uburyo ubutumwe bwa umuntu bishobora gukora, kuva ku gukoresha kugeza ku guhagarira. Iyo ifasha kumenya ibyerekezo byo gutera ko ibiteguye (sites) bigaragara mu gihe cy'ubutumwe bwa umuntu bishobora guhagarirwa, no ibyo gukoresha kuvuga iyo ibiteguye bigaragara ariko ubutumwe bwa umuntu bishobora guhagarira.
 
-## Uburyo Ubutumwe Bwa Umuntu Bishobora Gukera ku Guhagarira
+## Uburyo Ubutumwe Bwa Umuntu Bishobora Gukera ku Guhagarira {#membership-status-lifecycle}
 
 Ubutumwe bwose mu Ultimate Multisite bishobora kuba mu gihe cy'ubutumwe runaka:
 
@@ -26,7 +26,7 @@ Ibyubutumwe by'umwihariko bitagira guhagarira. Ultimate Multisite bishobora ibyi
 | **Expired** | Icyo cyo gukera ku gihe cy'ubutumwe cyangwa igihe cy'ubumvikane cyangwa guhagarira nta gufungura |
 | **Cancelled** | Guhagarirwa mu buryo bwo kwifashishamo n'umuntu cyangwa umukozi |
 
-### Uburyo Ubutumwe Bishobora Gukera ku Guhagarira
+### Uburyo Ubutumwe Bishobora Gukera ku Guhagarira {#how-memberships-transition-to-expired}
 
 Ultimate Multisite yikora gukoresha uburyo runaka (background check) **gukera ku gihe cy'umwuka** kugira ngo itire ibyubutumwe byashobora guhagarirwa. Iyo gukoresha igice cy'ubundo (WP-Cron) nta gukoresha Action Scheduler, kandi yikora nk'igice cyo gutera ko `wu_membership_check`.
 
@@ -36,7 +36,7 @@ Guhagarira ry'ubutumwe rishobora gufashishwa mu gihe cy'umwuka **cyo 3** mu gihe
 Impamukuru y'umwuka w'ubwumvikane (3-day expiration grace period) ni ikigo cyiza cy'ibindi byo gukoresha uburyo bwo gukoresha Icyemezo cy'Umuco (Frontend Block Grace Period setting). Impamukuru y'ubwumvikane igaragaza igihe cyo guhindura **status** kuva ari "active/on-hold" kugeza kuri "expired". Icyemezo cyo gukoresha uburyo bwo gukoresha Frontend Block Grace Period igaragaza igihe cyo guhindura **site yari itangiriraho (blocked)** nyuma y'uko status yagize.
 :::
 
-#### Umuco w'ubwumvikane bw'ibindi byo gukoresha Auto-Renewing vs. Non-Auto-Renewing Memberships
+#### Umuco w'ubwumvikane bw'ibindi byo gukoresha Auto-Renewing vs. Non-Auto-Renewing Memberships {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Icyemezo cyo guhindura iki ni ikigo cyiza kumenya uburyo ubwumvikane bishobora gukora:
 
@@ -44,7 +44,7 @@ Icyemezo cyo guhindura iki ni ikigo cyiza kumenya uburyo ubwumvikane bishobora g
 
 - **Memberships y'ubwumvikane bw'ibindi (Auto-renewing memberships)** (`auto_renew = true`): Icyemezo cyo gukoresha uburyo bwo guhindura kuri cron job igaragaza iki mu gihe cyose. Icyemezo cyo gukoresha imyenda ya imyenda (Stripe, PayPal, n'ibindi) ni ikigo cyiza kumenya Ultimate Multisite ku buryo bwo kubwira uburyo bwo guhindura status cyangwa gukoreshwa mu gihe cyose. Niba webhook ntari yagize -- ku buryo bwo gukoresha endpoint yashoboye gutangwa, cyangwa niba imyenda ya imyenda itangiriraho mu gihe cyose -- ubwumvikane bushobora kwibuka kuri `active` mu gihe cyose, ntabwo ari mu gihe cyo guhindura.
 
-### Uburyo Ubwumvikane Bishobora Gukemura (How Trials End)
+### Uburyo Ubwumvikane Bishobora Gukemura (How Trials End) {#how-trials-end}
 
 Iyo imyenda y'ubwumvikane y'ubwumvikane bishobora gukoresha (trialing membership) igihe cyo gufira, ishusho ya system igira ibi:
 
@@ -54,11 +54,11 @@ Iyo imyenda y'ubwumvikane y'ubwumvikane bishobora gukoresha (trialing membership
 
 Icyo cyose cyikora mu gihe cyo cron job cyangwa igihe cyo gukemura uburyo bwo gukoresha (regular expiration check), ariko **gusa ku memberships y'ubwumvikane bw'ibindi**. Ku imyenda y'ubwumvikane bishobora gukoresha, imyenda ya imyenda ni ikigo cyiza kumenya uburyo bwo guhindura ku muco w'imyenda (trial to paid subscription).
 
-## Guhindura Umuco W'Ubwumvikane (Block Frontend Access)
+## Guhindura Umuco W'Ubwumvikane (Block Frontend Access) {#block-frontend-access}
 
 Mbya, mu gihe, igihe umukono w'umukono (membership) ugarira cyangwa ugashyirwa mu gihe cy'ubwoba, **gusa wp-admin dashboard irereye**. Uruburyo rwa site ry'umunsi rishobora kugera ku bantu bose babona. Kugira ngo ushake gukora ubwoba bwa bintu byose, ugomba gukoresha igikorwa cy'ubwoba cy'ibyo (setting) cyo **Block Frontend Access**.
 
-### Gukoresha Igihe Cy'Icyemezo (Configuring the Setting)
+### Gukoresha Igihe Cy'Icyemezo (Configuring the Setting) {#configuring-the-setting}
 
 Gukoresha **Ultimate Multisite > Settings > Memberships** kandi ugomba gukora **Block Frontend Access**.
 
@@ -76,7 +76,7 @@ Icyemezo cy'ibindi byiza bitewe n'iki gikorwa kiba:
 | **Frontend Block Grace Period** | Icyo cyo gihe cyo gukora mbere y'uko umukono ugarira mbere y'uko kirereye mbere y'uko kirereye. Gukoresha `0` kugira ngo ugore mu gihe cyose. | 0 |
 | **Frontend Block Page** | Icyo ni igice cy'umunsi w'ubwoko bwose kigomba gukora umuntu wese yashobora kubona iyo umunsi ugarirwa. Niba ntabwo ugiye, abantu babona uburyo bwa "Iri site si ryari mu gihe cyacu." kandi hari link ku login page ya admin ya site. | None (Ntabwo) |
 
-### Icyo Abantu Babona Iyo Umunsi Ugarirwa
+### Icyo Abantu Babona Iyo Umunsi Ugarirwa {#what-visitors-see-when-a-site-is-blocked}
 
 Iyo umukono w'umunsi ugarirwa, abantu babona ibi:
 
@@ -85,7 +85,7 @@ Iyo umukono w'umunsi ugarirwa, abantu babona ibi:
 
 Abantu babera umunsi (site admins) bashobora kumenya -- login page ntibyo igarirwa.
 
-### Icyo Gigarirwa Kandi Iyo?
+### Icyo Gigarirwa Kandi Iyo? {#what-gets-blocked-and-when}
 
 Uburyo bwo gukora ubwoba bishobora kwerekana ku gihe cy'umukono:
 
@@ -106,15 +106,15 @@ Icyo ni ukuri ko ntabwo ubushobozi bw'Ubutumwa (frontend) bishobora kwibuka, nta
 Ubutumwa bwa Cancelled bifite uburyo bwo kwibuka mu gihe cyose iyo umwuka w'ubwujumbura (expiration date) yariye, ntabwo ubushobozi bw'Ubutumwa (frontend) bishobora kwibuka, ntabwo umuti w'Urugero (Grace Period) uburyo bwo gukorwa ku butumwa bwa Cancelled.
 :::
 
-## Uguherye: Icyo Gishobora Kwibuka Iyo Butumwa Bwiriye Mu gihe cyiza
+## Uguherye: Icyo Gishobora Kwibuka Iyo Butumwa Bwiriye Mu gihe cyiza {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Iyo butumwa bifite ubwujumbura (membership) bishobora kwibuka iyo umwuka w'ubwujumbura yariye, gukoresha uburyo bwo guhura ivi mu buryo uyuhe:
 
-### 1. Gushyira Ubutumwa Bwa Block Frontend Access Iyo Yariye Yariye
+### 1. Gushyira Ubutumwa Bwa Block Frontend Access Iyo Yariye Yariye {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Gukora ku **Ultimate Multisite > Settings > Memberships** kandi ugushyira umuvugizi (toggle) wa **Block Frontend Access** yariye yariye. Icyo cyiza ni **off by default**, bigera ko gusa wp-admin irashobora kwibuka iyo ubutumwa bwa butumwa bwa mbere bishobora kuba bishobora kwibuka.
 
-### 2. Gushyira Urugero (Grace Period) Y'Ubutumwa Bwiriye Mu gihe cyiza
+### 2. Gushyira Urugero (Grace Period) Y'Ubutumwa Bwiriye Mu gihe cyiza {#2-check-the-frontend-block-grace-period}
 
 Muze kugera ku gihe cy'ibyo bikoreshwa mu gihe cy'ibyo bishobora kuba byari mu gihe cyo gukoresha. Dore uburyo bwo gukora ibi:
 
@@ -122,7 +122,7 @@ Gukera ku gihe cyo gukoresha, gukera **Frontend Block Grace Period** (Uruko rw'u
 
 Gukora ibi ku 0 (zero) niba wifuza ko ubwoba bugaragaza mu gihe cy'umwujiza ukaba yagabanyijwe mu gihe cyo gukoresha.
 
-### 3. Gukora Umuco W'Umwujiza Yagize Ubwoba
+### 3. Gukora Umuco W'Umwujiza Yagize Ubwoba {#3-confirm-the-membership-status-has-actually-changed}
 
 Gera ku **Ultimate Multisite > Memberships** kandi ugereye kumenya ubwoba bw'umwujiza wifuza gukora ibi. Niba bishobora kuba byari `active` mu gihe cyo gufite ubwoba ntabwo iforanyi yagize, ibyo bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba byari bishobora kuba by
 
@@ -138,7 +138,7 @@ Kugira ngo uburyo bwo gukora cron bwiza, twitanye impinduka z'ibyo mu cron ya sy
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Gukoresha Icyemezo cy'Gateway Webhook (Auto-Renewing Memberships)
+### 5. Gukoresha Icyemezo cy'Gateway Webhook (Auto-Renewing Memberships) {#4-verify-action-scheduler-is-running}
 
 Iyo umwanya w'ubwoko (membership) ukarereye mu gihe cyo gukora buri gihe kandi igikorwa cy'gateway subscription yashyirwe mu gihe cyangwa yashoboye, ariko Ultimate Multisite yitera ko iri `active`:
 
@@ -147,7 +147,7 @@ Iyo umwanya w'ubwoko (membership) ukarereye mu gihe cyo gukora buri gihe kandi i
 
 Iyo gateway yitera ko ubwoko bw'ubwoko washobye ariko Ultimate Multisite si yitera, ibyo webhook cyari cyishyurwa cyangwa cyagize mu gihe cyo gukora buri gihe. Uzi gukora umwanya w'ubwoko bw'ubwoko mu **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Gukoresha Icyemezo cy'Expiration Grace Period (Cron Level)
+### 6. Gukoresha Icyemezo cy'Expiration Grace Period (Cron Level) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Icyemezo cyo cron kigira igihe cyo gukora (grace period) cyitwa (default: ifoto za 3) mbere y'ubwoko bwo ubwoko bwo kubaho mu gihe cyo gufata ko ryari yashobye. Icyo ni cyiza cyane ku gihe cyo gukora cyangwa uburyo bwo gukoresha (frontend block grace period). Igice cyose cy'umwihariko bwo kubaho mu gihe cyo gufata ko ryari yashobye cyaba:
 
@@ -155,7 +155,7 @@ Icyemezo cyo cron kigira igihe cyo gukora (grace period) cyitwa (default: ifoto 
 
 Urugero, nkoze uburyo bwo kuva mu gihe cy'umwihariko. Nko mu gihe cy'ubwujisoro kandi ugiye ku gihe cy'umwihariko (grace period) cy'amajyayo y'umwezi 7, hari uburyo bwo gukora umunsi 10 cyangwa uburyo bwo gukoresha igihe kire cyane mbere uko uburyo bwo guhagarara bwihagarara.
 
-### 7. Guhagarara Umwezi Mu gihe Cy'umwihariko (Manually Expire a Membership)
+### 7. Guhagarara Umwezi Mu gihe Cy'umwihariko (Manually Expire a Membership) {#6-check-the-expiration-grace-period-cron-level}
 
 Iyo ushaka guhagarara umwezi mu gihe cy'ubwujisoro nta gukora cron cycle, uza kuba ufite uburyo bwo guhindura uburenganzira bw'umwezi mu gihe cy'umwihariko (membership status) mu buryo bw'ibyo:
 
@@ -166,7 +166,7 @@ Iyo ushaka guhagarara umwezi mu gihe cy'ubwujisoro nta gukora cron cycle, uza ku
 
 Uburyo bwo guhagarara mu frontend (frontend block) bishobora kwitwarira ku gihe cy'umwihariko cy'amajyayo y'umwezi 7 (subject to the Frontend Block Grace Period for expired memberships), cyangwa gukora imbaraga mu gihe cy'umwihariko cy'amajyayo y'umwezi 7 (immediately for cancelled memberships).
 
-## Umuco (Summary)
+## Umuco (Summary) {#7-manually-expire-a-membership}
 
 Uburyo bwo guhagarara ku gihe cyose kuva ku gihe cy'umwezi kugeza guhagarara umwezi:
 

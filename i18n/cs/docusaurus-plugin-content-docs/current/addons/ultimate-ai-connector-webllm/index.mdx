@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM přináší inferenci AI přímo v prohlížeči na vaši WordPress multisite síť. Model velkého jazyka (LLM) běží kompletně v prohlížeči pomocí WebLLM a enginu MLC — nepotřebujete API klíče, žádné externí volání a žádná data opouštějí zařízení uživatele.
 
-## Klíčové funkce
+## Klíčové funkce {#key-features}
 
 - **Inferenční proces v prohlížeči**: LLM běží lokálně v prohlížeči návštěvníka pomocí WebLLM/MLC — není vyžadována GPU na serveru
 - **Plující chatovací widget**: Přihlášené uživatele mohou zadávat dotazy do LLM v prohlížeči přímo z frontendu
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM přináší inferenci AI přímo v prohlížeč
 - **Cache v IndexedDB**: Stahování vah modelu přežije přesměrování CDN, které narušuje výchozí cestu Cache API
 - **Integrace filtru wpai**: Hookuje se do filtru `wpai_preferred_text_models`, takže funkce AI Experiments směřuje do prohlížečového enginu, pokud je nakonfigurována
 
-## Požadavky
+## Požadavky {#requirements}
 
 - WordPress 5.3 nebo vyšší
 - PHP 7.4 nebo vyšší
 - Plugin Ultimate Multisite (aktivní)
 - Prohlížeč s podporou WebGPU (Chrome 113+, Edge 113+ nebo Firefox Nightly s aktivovanou podporou WebGPU)
 
-## Instalace
+## Instalace {#installation}
 
 1. Nahrajte soubory addon do adresáře `/wp-content/plugins/`
 2. Aktivujte plugin v menu „Plugins“ v WordPressu
 3. Navigujte do **Ultimate Multisite → AI Connector** pro nakonfiguraci addon
 
-## Plující chatovací widget
+## Plující chatovací widget {#floating-chat-widget}
 
 Plující chatovací widget umožňuje jakémukoli přihlášenému uživateli interagovat s LLM v prohlížeči přímo z vašeho frontendu, aniž by opouštěl stránku, na které je.
 
-### Co dělá
+### Co dělá {#what-it-does}
 
 Po aktivaci se v rohu každé front-end stránky pro přihlášené uživatele objeví ikona chatu. Kliknutím na ikonu se otevře chatovací panel, kde může uživatel zadávat dotazy a dostávat odpovědi od lokálně spouštěného modelu WebLLM. Protože model běží kompletně v prohlížeči, odpovědi jsou soukromé a nevyžadují žádnou serverovou úpravu.
 
-### Indikátor stavu v admin panelu
+### Indikátor stavu v admin panelu {#admin-bar-status-indicator}
 
 WordPress admin panel obsahuje indikátor stavu, který zobrazuje aktuální stav WebLLM enginu:
 
@@ -56,7 +56,7 @@ WordPress admin panel obsahuje indikátor stavu, který zobrazuje aktuální sta
 
 Indikátor se aktualizuje v reálném čase bez nutnosti obnovení stránky.
 
-### Jak widget povolit nebo deaktivovat
+### Jak widget povolit nebo deaktivovat {#how-to-enable-or-disable-the-widget}
 
 1. Přejděte do **Ultimate Multisite → AI Connector** v administraci sítě
 2. Najděte panel **Connector**
@@ -65,17 +65,17 @@ Indikátor se aktualizuje v reálném čase bez nutnosti obnovení stránky.
 
 Widget lze také povolit nebo deaktivovat pro konkrétní stránku přímo z jejího vlastního admin panelu, pokud administrátor sítě udělil tuto schopnost.
 
-## Nastavení widgetu
+## Nastavení widgetu {#widget-settings}
 
 Panel Connector v **Ultimate Multisite → AI Connector** obsahuje následující nastavení pro plující chatovací widget:
 
-### Zapnout plující chatovací widget
+### Zapnout plující chatovací widget {#enable-floating-chat-widget}
 
 Přepíná chatovací widget pro celou síť. Pokud je vypnut, widget se na žádné front-end stránce nezobrazí, bez ohledu na roli uživatele.
 
 **Výchozí:** Vypnuto
 
-### Chování automatického dotazu
+### Chování automatického dotazu {#auto-prompt-behaviour}
 
 Kontroluje, zda widget automaticky odešle dotaz, když ho uživatel otevře.
 
@@ -93,7 +93,7 @@ Pokud je nastaveno na **Custom prompt**, objeví se další textové pole, kam m
 
 **Výchozí:** Vypnuto
 
-## SharedWorker runtime
+## SharedWorker runtime {#sharedworker-runtime}
 
 Verze 1.1.0 zavádí SharedWorker runtime pro engine MLC. Dříve každý prohlížečový panel, který používal WebLLM, načítal vlastní instanci modelu, což vedlo k konkurencí o paměť GPU a způsobovalo problémy s výkonem na zařízeních s omezenou VRAM.
 
@@ -105,29 +105,29 @@ S SharedWorker runtime funguje jedna záložka jako host pro engine. Všechny os
 
 SharedWorker je pro uživatele neviditelný. Indikátor stavu v admin panelu vždy odráží stav sdíleného enginu, nikoli jednotlivé záložky.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Addon instaluje middleware `apiFetch`, který zachytává požadavky WordPress REST API odpovídající vzoru AI Client SDK. Místo odeslání zpětného HTTP požadavku na server jsou tyto požadavky směrovány přímo k lokálnímu WebLLM brokerovi běžícímu v SharedWorkeru.
 
 To znamená, že pluginy a téma, která používají standardní WordPress `apiFetch` API k volání AI endpointů, automaticky profitují z modelu v prohlížeči, jakmile je k dispozici, a to bez nutnosti změn kódu.
 
-## Hooks a filtry
+## Hooks a filtry {#hooks-and-filters}
 
-### Filtry
+### Filtry {#filters}
 
 - `wpai_preferred_text_models` — Registruje prohlížečový engine WebLLM jako preferovaný textový model. Addon se do tohoto filtru automaticky hookuje, když je engine nakonfigurován a dostupný.
 - `ultimate_webllm_widget_enabled` — Přepíne stav widgetu pro konkrétního uživatele nebo kontext. Vrací `true` nebo `false`.
 - `ultimate_webllm_auto_prompt` — Modifikuje text automatického dotazu před jeho odesláním do widgetu. Dostává řetězec dotazu a aktuální objekt `WP_Post`.
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
-### Widget se neobjevuje
+### Widget se neobjevuje {#the-chat-widget-does-not-appear}
 
 - Potvrďte, že je uživatel přihlášen — widget je viditelný pouze pro ověřené uživatele
 - Zkontrolujte, zda je přepínač **Enable floating chat widget** zapnutý v panelu Connector
 - Ověřte, že prohlížeč uživatele podporuje WebGPU (viz Požadavky výše)
 
-### Indikátor v admin panelu zobrazuje „Error“
+### Indikátor v admin panelu zobrazuje „Error“ {#the-admin-bar-indicator-shows-error}
 
 Otevřete konzoli vývojáře prohlížeče (F12) a vyhledejte chyby související s WebLLM. Běžné příčiny:
 
@@ -135,10 +135,10 @@ Otevřete konzoli vývojáře prohlížeče (F12) a vyhledejte chyby souvisejíc
 - Stahování vah modelu selhalo — zkontrolujte síťové připojení a zkuste vymazat cache IndexedDB v nástrojích vývojáře prohlížeče (Application → IndexedDB)
 - Rozšíření prohlížeče blokuje SharedWorker
 
-### Váhy modelu se stahují při každé návštěvě
+### Váhy modelu se stahují při každé návštěvě {#model-weights-download-every-time}
 
 Addon používá IndexedDB jako backend cache, aby zajistil, že váhy modelu přežijí přesměrování CDN. Pokud se váhy stahují při každé návštěvě, zkontrolujte, že IndexedDB není vymazán nastavením soukromí prohlížeče nebo rozšířením.
 
-## Changelog
+## Changelog {#changelog}
 
 Podívejte se na [Changelog](./changelog) pro kompletní historii verzí.

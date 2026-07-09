@@ -4,11 +4,11 @@ title: Saringan - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Nyaring tanggal kadaluwarsa sing diitung kanggo disetel sawisé pembaruan.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Tipe | Katrangan |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Nyaring tanggal kadaluwarsa sing diitung kanggo disetel sawisé pembaruan.
 | $membership_id | `int` | ID saka membership. |
 | $membership | `\Membership` | Objek membership. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) ing baris 2192

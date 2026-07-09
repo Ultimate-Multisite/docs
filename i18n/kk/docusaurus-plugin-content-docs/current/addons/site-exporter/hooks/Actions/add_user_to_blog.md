@@ -4,11 +4,11 @@ title: Әрекет - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Әрекет: add_user_to_blog
+# Әрекет: add_user_to_blog {#action-addusertoblog}
 
 Пайдаланушы сайтқа қосылғаннан кейін бірден іске қосылады.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 | $role | `string` | Пайдаланушы рөлі. |
 | $blog_id | `int` | Блог ID-і. |
 
-### Бастап
+### Бастап {#since}
 
 - MU: MU
-### Дереккөзі
+### Дереккөзі {#source}
 
 [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) ішінде, 174-жолда анықталған.

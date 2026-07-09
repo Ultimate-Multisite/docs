@@ -3,13 +3,13 @@ title: Integrationsguide
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrationsguide
+# Integrationsguide {#integration-guide}
 
 Den här guiden täcker vanliga integrationsmönster med Ultimate Multisite, inklusive att ansluta till externa tjänster, bygga anpassade betalningsgateways och hantera webhooks.
 
 För isolerad klientinfrastruktur, se [Multi-Tenancy Integration](./multi-tenancy) för sovereign tenant bootstrap, migreringsverifiering, SSO och vägledning för nedmontering.
 
-## CRM-integration
+## CRM-integration {#crm-integration}
 
 Synkronisera kunddata till ditt CRM när nya kunder registrerar sig:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics-integration
+## Analytics-integration {#analytics-integration}
 
 Spåra viktiga affärshändelser genom hela kundlivscykeln:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 - [Utveckling av anpassad gateway](./custom-gateway) — Bygg din egen betalningsgateway
 - [Webhook-hantering](./webhooks) — Skapa anpassade webhook-endpoints

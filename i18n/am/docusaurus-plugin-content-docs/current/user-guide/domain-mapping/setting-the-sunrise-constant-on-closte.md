@@ -3,13 +3,13 @@ title: በ Closte ላይ የፀሐይ መውጣት 상수 ማዘጋጀት
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# በCloste ላይ የSunrise constantን ወደ true ማዘጋጀት
+# በCloste ላይ የSunrise constantን ወደ true ማዘጋጀት {#setting-the-sunrise-constant-to-true-on-closte}
 
 አንዳንድ የሆስት አገልግሎት ሰጪዎች (host providers) የwp-config.php ፋይልን ለደህንነት ስጋት ምክንያት ይከለክላሉ። ይህ ማለት Ultimate Multisite የዶሜይን ካርታ (domain mapping) እና ሌሎች ባህሪያት እንዲሰሩ የሚያስፈልጉትን constantዎች በራስ-ሰር ፋይሉን መለወጥ አይችልም ማለት ነው። Closte አንዱ እንዲህ ያለ ሆስት ነው።
 
 ሆኖም፣ Closte constantዎችን በwp-config.php ውስጥ በደህንነት መንገድ የሚያስቀምጡበት መንገድ አቅርቧል። የሚያስፈልግዎት ነገር ቢኖር ከዚህ በታች ያሉትን ደረጃዎች መከተል ብቻ ነው፦
 
-## በCloste dashboard ላይ
+## በCloste dashboard ላይ {#on-the-closte-dashboard}
 
 በመጀመሪያ፣ [የCloste አካውንትዎን ይግቡ](https://app.closte.com/)፣ Sites የሚለውን ሜኑ አይጥ (menu item) ይጫኑ፣ ከዚያም በበየጊዜው እየሰሩበት ባለው ድረ-ገጽ ላይ ያለውን Dashboard ሊንክ ይጫኑ፦
 

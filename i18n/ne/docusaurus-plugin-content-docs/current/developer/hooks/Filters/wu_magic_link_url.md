@@ -4,11 +4,11 @@ title: फिल्टर - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# फिल्टर: wu_magic_link_url
+# फिल्टर: wu_magic_link_url {#filter-wumagiclinkurl}
 
 उत्पन्न गरिएको magic link URL फिल्टर गर्नुहोस्।
 
-## प्यारामिटरहरू
+## प्यारामिटरहरू {#parameters}
 
 | नाम | प्रकार | विवरण |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 | $site_id | `int` | साइट ID। |
 | $redirect_to | `string` | पुनर्निर्देशन URL। |
 
-### देखि
+### देखि {#since}
 
 - 2.0.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L148) मा पङ्क्ति 148 मा परिभाषित गरिएको छ।

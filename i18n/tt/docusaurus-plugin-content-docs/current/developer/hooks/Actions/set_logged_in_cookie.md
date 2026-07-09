@@ -4,11 +4,11 @@ title: Гамәл - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Гамәл: set_logged_in_cookie
+# Гамәл: set_logged_in_cookie {#action-setloggedincookie}
 
 Системага керү аутентификация cookie куелганчы ук эшли.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | Аутентификация схемасы. Килешү буенча 'logged_in'. |
 | $token | `string` | Бу cookie өчен кулланыла торган кулланучының сессия токены. |
 
-### Бирле
+### Бирле {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Чыганак
+### Чыганак {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) эчендә, 141 нче юлда билгеләнгән

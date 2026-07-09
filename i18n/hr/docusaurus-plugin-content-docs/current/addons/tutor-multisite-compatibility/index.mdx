@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 WordPress dodatak koji dodaje ispravke kompatibilnosti za Tutor LMS u multisite okruženjima.
 
-## Opis
+## Opis {#description}
 
 Ovaj dodatak pruža ključne ispravke kompatibilnosti za pokretanje Tutor LMS-a na WordPress multisite mrežama. Upravlja upisom korisnika, upravljanjem instruktorima, ograničenjima tečajeva i drugim funkcionalnostima specifičnima za multisite.
 
-## Značajke
+## Značajke {#features}
 
 - **Upravljanje tablicama baze podataka**: Automatski otkriva i stvara nedostajuće Tutor LMS tablice koje ne uspiju zbog multisite ograničenja stranih ključeva
 - **Multisite upis korisnika**: Prilagođeni AJAX rukovatelji za upravljanje upisom korisnika na web-mjestima mreže
@@ -24,7 +24,7 @@ Ovaj dodatak pruža ključne ispravke kompatibilnosti za pokretanje Tutor LMS-a 
 - **Prilagođeni administratorski prikazi**: Popis instruktora i sučelje za upravljanje prilagođeni za multisite
 - **Administratorski alati**: Sučelje za upravljanje bazom podataka za administratore mreže i web-mjesta
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Ovaj dodatak pruža ključne ispravke kompatibilnosti za pokretanje Tutor LMS-a 
 - WordPress Multisite instalacija
 - Ultimate Multisite dodatak (za funkcionalnost ograničenja tečajeva)
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Prenesite datoteke dodatka u `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Provjerite je li Tutor LMS instaliran i aktiviran
 3. Aktivirajte dodatak putem izbornika 'Plugins' u WordPressu
 4. Dodatak će se automatski integrirati s Tutor LMS-om
 
-## Struktura datoteka
+## Struktura datoteka {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funkcionalnost premještena iz MU plugin
+## Funkcionalnost premještena iz MU plugin {#functionality-moved-from-mu-plugin}
 
 Ovaj dodatak sadrži funkcionalnost koja je prethodno bila u `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Ovaj dodatak sadrži funkcionalnost koja je prethodno bila u `wp-content/mu-plug
 - Rukovanje upisom multisite korisnika
 - Prikaz ID-a proizvoda tečaja
 
-## Upravljanje bazom podataka
+## Upravljanje bazom podataka {#database-management}
 
-### Problem
+### Problem {#the-problem}
 
 U WordPress multisite okruženjima stvaranje Tutor LMS tablica ne uspijeva za tablice s ograničenjima stranih ključeva prema tablici korisnika. To se događa zato što:
 
@@ -81,7 +81,7 @@ U WordPress multisite okruženjima stvaranje Tutor LMS tablica ne uspijeva za ta
 - Strani ključevi referenciraju `wp_2_users` (koja ne postoji)
 - Stvarna tablica korisnika je `wp_users` (dijeljena kroz mrežu)
 
-### Rješenje
+### Rješenje {#the-solution}
 
 Ovaj dodatak automatski:
 
@@ -92,13 +92,13 @@ Ovaj dodatak automatski:
    - Stvaranje novog web-mjesta u mreži
    - Ručna provjera tablica putem administratorskog sučelja
 
-### Zahvaćene tablice
+### Zahvaćene tablice {#affected-tables}
 
 - `tutor_coupon_usages` - Sadrži strani ključ prema tablici korisnika
 - `tutor_carts` - Sadrži strani ključ prema tablici korisnika
 - `tutor_notification_preferences` - TutorPro tablica sa stranim ključem prema tablici korisnika
 
-### Administratorsko sučelje
+### Administratorsko sučelje {#admin-interface}
 
 Pristupite alatima za upravljanje bazom podataka na:
 
@@ -111,6 +111,6 @@ Sučelje vam omogućuje:
 - Provjeru konfiguracije baze podataka
 - Pregled detaljnih informacija o statusu
 
-## Podrška
+## Podrška {#support}
 
 Ovaj dodatak posebno je dizajniran za platformu KursoPro. Za tehničku podršku obratite se razvojnom timu.

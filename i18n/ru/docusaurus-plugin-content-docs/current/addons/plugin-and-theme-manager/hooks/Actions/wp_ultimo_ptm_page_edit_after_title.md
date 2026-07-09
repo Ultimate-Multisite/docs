@@ -4,21 +4,21 @@ title: Action - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Action: wp_ultimo_ptm_page_edit_after_title
+# Action: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
 
 Позволяет разработчикам плагинов добавлять дополнительные кнопки для редактирования страниц
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $ | `object` | Объект, содержащий информацию |
 | $ | `\WU_Page` | Экземпляр Multisite Ultimate Page |
 
-### С версии
+### С версии {#since}
 
 - 1.8.2
 
-### Источник
+### Источник {#source}
 
 Определено в [`views/base/edit.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/edit.php#L48) на строке 48

@@ -4,11 +4,11 @@ title: 'Filtrs - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Filtrē datu meta informāciju, pirms tā tiek serializēta glabāšanai datubāzē.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrē datu meta informāciju, pirms tā tiek serializēta glabāšanai datubā
 | $data_unserialized | `array` | Objekta dati, kas tiks saglabāti. |
 | $this | `\Base_Model` | Objekta instance. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) 534. rindā

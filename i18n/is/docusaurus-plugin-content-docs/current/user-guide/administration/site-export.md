@@ -3,27 +3,27 @@ title: Útboð síða
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Útskiðing staðar
+# Útskiðing staðar {#site-export}
 
 Í admin-skýrslu **Site Export** getur nýtingarstjórnendur samkvæði eina staðar, eða heildar netverk, í nýjar nedlunarsamninga fyrir migra, uppfærslur, eða yfirferðun.
 
-## Útskiðing eina staðar
+## Útskiðing eina staðar {#exporting-one-site}
 
 Gangi **Ultimate Multisite > Site Export** og veldu **Generate new Site Export**. Veldu subsite sem þú vilt útskiða, síðan veldu hvort arkívið skali á upplufum, pluginum og þemarum.
 
 Þegar útskiðið er fullyð í, nedlun ZIP-ins frá lista **Existing Exports**. Útskiðingasamningar (ZIP) eru nú með sjálfskynnu `index.php` og `readme.txt`, svo arkívið geti laðast upp á nýtt host og starfa án þess að fyrst installa sérstaka plugin fyrir innleiðingu.
 
-## Útskiðing heildar netverkets
+## Útskiðing heildar netverkets {#exporting-the-whole-network}
 
 Brugðu **Network Export** á yfirskrifum Site Export eins og þú þarft eina arkívi sem inniheldur allar subsites í netverkinu. Þetta er hulega fyrir migra host-migra, öryggisþróunafyrstæði (disaster-recovery drills) eða uppbygging á staging þar sem hvert subsite þarf að ferðast saman.
 
 Þar sem netverskunútskiði getur verið margfalt stórrri hámarki en útskiði eina staðar, körfuðu það í gang undir tíma með lítilli trafiki og staðfesti að tölvun fyrir uppluf, plugin, þemur og gerð ZIP-a sé viðkomandi.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Beginning with Ultimate Multisite 2.12.0 getur Site Exporter gera **network import bundles** — sérstök arkívi sem eru sniðnir að einföldum uppfærslum netverkets staðar. Network import bundle inniheldur allar nauðsynlegar lausnir og metadata til að uppfærja fleiri staðar í nýja netverskunútsbrúna.
 
-#### Gera network import bundle
+#### Gera network import bundle {#generating-a-network-import-bundle}
 
 1. Gætu í **Ultimate Multisite > Site Export**
 2. Klikk á **Generate new Network Export** (Generera ny nettverksexport)
@@ -32,7 +32,7 @@ Beginning with Ultimate Multisite 2.12.0 getur Site Exporter gera **network impo
 5. Klikk á **Generate** (Generera)
 6. Lasta ned ZIP-bundleinn frá lista **Existing Exports** (Til að finna hefurðu það í listanum fyrir núverandi exportar)
 
-#### Til að nota með Network Import Bundle til að skila upp
+#### Til að nota með Network Import Bundle til að skila upp {#restoring-from-a-network-import-bundle}
 (Restoring from a Network Import Bundle)
 
 Til að skila upp staðir með network import bundle:
@@ -53,7 +53,7 @@ Network import bundles fyrirhaldast:
 - Media uppladdun (ef þeir eru í bundleinni)
 - Handnullar database-taflor og data
 
-## Installera sjálfskynnd export ZIP
+## Installera sjálfskynnd export ZIP {#installing-a-self-booting-export-zip}
 
 Til að skila upp sjálfskynnda ZIP á nýr vefsstöðu:
 

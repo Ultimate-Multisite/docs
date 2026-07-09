@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# כיצד להשתמש בקטעי קוד של Ultimate Multisite מהמאגר שלנו ב-GitHub
+# כיצד להשתמש בקטעי קוד של Ultimate Multisite מהמאגר שלנו ב-GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 ישנם קטעי קוד זמינים במאגר GitHub שמשתמשי Ultimate Multisite מבקשים לעיתים קרובות, כדי להוסיף פונקציונליות קטנות כמו הוספת סקריפט Google Analytics לדפי ההרשמה או הסתרת meta box מלוח הבקרה של המנהל.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. תוספים חובה (mu-plugins)
 
-# כיצד להוסיף את קטע הקוד לקובץ functions.php של התבנית שלך
+# כיצד להוסיף את קטע הקוד לקובץ functions.php של התבנית שלך {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. התחבר ללוח הבקרה של רשת ה-WordPress שלך ועבור אל תבניות > עורך תבניות (ראה צילום מסך למטה).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# כיצד ליצור תוספים חובה (mu-plugins)
+# כיצד ליצור תוספים חובה (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 ל-WordPress יש תכונה שמאפשרת לך לטעון פונקציונליות מותאמת אישית בשם "תוספים חובה", או בקיצור "mu-plugins".
 

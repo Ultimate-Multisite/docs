@@ -3,7 +3,7 @@ title: ভাষাselector
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Language Selector
+# Language Selector {#language-selector}
 
 এই বৈশিষ্ট্যটো **Language Selector** addon-ৰ দ্বাৰা প্ৰদান কৰা হয়।
 

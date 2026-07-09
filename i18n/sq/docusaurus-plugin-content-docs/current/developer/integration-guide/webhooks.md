@@ -3,11 +3,11 @@ title: Trajtimi i Webhook-eve
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Trajtimi i Webhook-ëve
+# Trajtimi i Webhook-ëve {#webhook-handling}
 
 Krijoni endpoint-e të personalizuara webhook për të marrë ngjarje nga shërbime të jashtme dhe për të sinkronizuar të dhënat me Ultimate Multisite.
 
-## Endpoint i personalizuar Webhook
+## Endpoint i personalizuar Webhook {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Konsiderata sigurie
+## Konsiderata sigurie {#security-considerations}
 
 - Verifikoni gjithmonë nënshkrimet e webhook duke përdorur HMAC ose një sekret të përbashkët
 - Përdorni një `permission_callback` në rrugën tuaj REST — mos e vendosni kurrë në `__return_true` në prodhim

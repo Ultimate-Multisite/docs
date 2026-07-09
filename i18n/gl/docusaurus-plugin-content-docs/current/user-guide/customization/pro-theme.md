@@ -3,7 +3,7 @@ title: Tema PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Personalizar o seu Painel de Administração com o Tema PRO
+# Personalizar o seu Painel de Administração com o Tema PRO {#customizing-your-admin-panel-with-pro-theme}
 
 Muitas veces, ao fazer trabalho para clientes, precisamos dar-lhes uma experiência personalizada no painel de administração do WordPress. Se estás à procura de um aspeto e sensação mais profissional, o PRO Theme pode ajudar-te.
 

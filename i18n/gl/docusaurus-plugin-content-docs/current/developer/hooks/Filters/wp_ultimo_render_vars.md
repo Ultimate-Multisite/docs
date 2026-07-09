@@ -4,11 +4,11 @@ title: Filtro - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filtro: wp_ultimo_render_vars
+# Filtro: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Permite aos desenvolvedores de complementos engadir unha variable extra ao contexto de renderización de forma global.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Permite aos desenvolvedores de complementos engadir unha variable extra ao conte
 | $view | `string` | Nome da vista que se vai renderizar. |
 | $default_view | `string` | Nome da fallback_view |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) na liña 31
 
 
-## Devolve
+## Devolve {#returns}

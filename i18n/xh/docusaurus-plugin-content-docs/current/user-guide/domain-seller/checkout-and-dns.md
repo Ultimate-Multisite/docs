@@ -3,13 +3,13 @@ title: Indawo yokugqiba ukuthenga kunye ne-DNS yoMthengi
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Ulawulo lwe-Checkout Field kunye ne-DNS yabathengi
+# Ulawulo lwe-Checkout Field kunye ne-DNS yabathengi {#checkout-field-and-customer-dns-management}
 
-## I-Checkout Field yokukhetha i-domain
+## I-Checkout Field yokukhetha i-domain {#the-domain-selection-checkout-field}
 
 I-**Domain Selection** field yinto ye-checkout enika abathengi ukhetho lwendlela yokufumana i-domain yesayithi yabo. Yongeze kuyo nayiphi na ifomu ye-checkout ukuze uvumele ukuthengiswa kwee-domain.
 
-### Ukongeza i-field kwifomu ye-checkout
+### Ukongeza i-field kwifomu ye-checkout {#adding-the-field-to-a-checkout-form}
 
 1. Yiya ku-**Network Admin › Ultimate Multisite › Checkout Forms**
 2. Vula okanye wenze ifomu ye-checkout
@@ -18,7 +18,7 @@ I-**Domain Selection** field yinto ye-checkout enika abathengi ukhetho lwendlela
 5. Lungisa iinketho ze-field (jonga ngezantsi)
 6. Gcina ifomu
 
-### Iinketho ze-field
+### Iinketho ze-field {#field-options}
 
 **Iindlela ze-domain** — Khetha ukuba zeziphi ii-tab ezibonwa ngumthengi. Indlela nganye inokuvulwa okanye icinywe ngokuzimeleyo:
 
@@ -32,7 +32,7 @@ I-**Domain Selection** field yinto ye-checkout enika abathengi ukhetho lwendlela
 
 **Imveliso ye-domain** — Ngokuzithandela, qhoboshela le field kwimveliso ethile ye-domain. Ukuba ayimiselwanga, i-addon ikhetha ngokuzenzekelayo imveliso ehambelanayo ngokusekelwe kwi-TLD ekhangelwa ngumthengi.
 
-### Ii-field zoqhagamshelwano lombhalisi
+### Ii-field zoqhagamshelwano lombhalisi {#registrant-contact-fields}
 
 Xa umthengi ekhetha i-tab ethi **Register New Domain**, ifomu ye-checkout yongeza ii-field zoqhagamshelwano lombhalisi ngaphakathi:
 
@@ -43,11 +43,11 @@ Xa umthengi ekhetha i-tab ethi **Register New Domain**, ifomu ye-checkout yongez
 
 Ezi ziyafuneka kubo bonke ababhalisi kwaye ziqinisekiswa ngaphambi kokuba kwenziwe umnxeba we-registration API. Iinombolo zefowuni zifomathwa ngokuzenzekelayo kwifomathi yamazwe ngamazwe ethi `+CC.NNN` elindelwe ngababhalisi.
 
-### I-URL yesayithi eyenziwa ngokuzenzekelayo
+### I-URL yesayithi eyenziwa ngokuzenzekelayo {#auto-generated-site-url}
 
 Xa umthengi ebhalisa okanye edibanisa i-domain, i-field ye-URL yesayithi izaliswa ngokuzenzekelayo kwi-domain ekhethiweyo. Abathengi akufuneki bagcwalise i-field ye-URL eyahlukileyo.
 
-### Ukuziphatha kokukhangela
+### Ukuziphatha kokukhangela {#search-behaviour}
 
 - Ukufumaneka kwe-domain kujongwa ngexesha lokwenyani nge-AJAX njengoko umthengi echwetheza
 - Iingcebiso zezinye ii-TLD ziboniswa xa i-domain ekhethiweyo ingafumaneki
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Ulawulo lwe-DNS lwabathengi
+## Ulawulo lwe-DNS lwabathengi {#customer-dns-management}
 
 Abathengi banokulawula iirekhodi ze-DNS zee-domain zabo ezibhalisiweyo kwiphepha le-**My Account**, phantsi kongeniso lwe-domain yabo.
 
-### Iintlobo zeerekhodi ezixhaswayo
+### Iintlobo zeerekhodi ezixhaswayo {#supported-record-types}
 
 | Uhlobo | Ukusetyenziswa |
 |---|---|
@@ -91,11 +91,11 @@ Abathengi banokulawula iirekhodi ze-DNS zee-domain zabo ezibhalisiweyo kwiphepha
 | **MX** | Misela iseva yokutshintshiselana ngeposi |
 | **TXT** | Yongeza i-SPF, i-DMARC, uqinisekiso, okanye ezinye iirekhodi zombhalo |
 
-### Ngabaphi ababoneleli abaxhasa ulawulo lwe-DNS?
+### Ngabaphi ababoneleli abaxhasa ulawulo lwe-DNS? {#which-providers-support-dns-management}
 
 Ulawulo lwe-DNS (ukongeza, ukuhlela, ukucima iirekhodi) luyafumaneka nge-**OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, kunye ne-**Openprovider**. Ii-domain ze-**Hostinger** zinokuhlaziya ii-nameserver nge-Domain Seller; iirekhodi ze-DNS zee-domain ezibanjelweyo zilawulwa ludibaniso oluphambili lwe-Hostinger domain-mapping. Ii-domain ze-Namecheap, GoDaddy, kunye ne-NameSilo zibonisa imeko kunye nolwazi lokuphelelwa lixesha kodwa i-DNS kufuneka ilawulwe ngqo kwipaneli yolawulo yombhalisi.
 
-### Iirekhodi ze-DNS ezimiselweyo
+### Iirekhodi ze-DNS ezimiselweyo {#default-dns-records}
 
 Unokumisela iirekhodi ze-DNS ezimiselweyo ezisetyenziswa ngokuzenzekelayo xa i-domain ibhalisiwe. Yiya ku-**Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: ukubukela nokuhlela i-DNS
+### Admin: ukubukela nokuhlela i-DNS {#admin-viewing-and-editing-dns}
 
 Abalawuli benethiwekhi banokujonga kwaye bahlele iirekhodi ze-DNS zayo nayiphi na i-domain yomthengi kwiphepha lokuhlela le-domain ku-**Network Admin › Ultimate Multisite › Domains**.

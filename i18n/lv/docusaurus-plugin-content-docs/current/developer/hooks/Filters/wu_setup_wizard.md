@@ -4,11 +4,11 @@ title: Filtrs - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filtrs: wu_setup_wizard
+# Filtrs: wu_setup_wizard {#filter-wusetupwizard}
 
 Ļauj izstrādātājiem pievienot papildu iestatīšanas vedņa soļus.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 | $is_migration | `bool` | Vai šī ir migrācija vai nav. |
 | $wizard | `object` | Pašreizējā instance. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) 525. rindā
 
 
-## Atgriež
+## Atgriež {#returns}

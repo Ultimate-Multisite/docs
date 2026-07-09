@@ -3,15 +3,15 @@ title: Validate Contrastul Paletei
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validarea Contrastului Paletei
+# Validarea Contrastului Paletei {#validate-palette-contrast}
 
 Abilitatea **Validarea Contrastului Paletei** verifică perechile de culori din paleta de design pentru conformitatea cu WCAG (Ghidurile de Accesibilitate pentru Conținut Web) înainte de a le aplica temei tale.
 
-## Prezentare Generală
+## Prezentare Generală {#overview}
 
 Această abilitate asigură că schema de culori a site-ului tău îndeplinește standardele de accesibilitate, validând raporturile de contrast dintre culorile textului și cele de fundal. Ajută la prevenirea combinațiilor de culori care ar putea fi greu de citit pentru utilizatorii cu deficitele vizuale.
 
-## Formatul de Intrare
+## Formatul de Intrare {#input-format}
 
 Abilitatea acceptă o paletă de culori ca intrare:
 
@@ -35,7 +35,7 @@ Abilitatea acceptă o paletă de culori ca intrare:
 }
 ```
 
-### Parametri
+### Parametri {#parameters}
 
 | Parametru | Tip | Obligatoriu | Descriere |
 |-----------|------|-------------|-------------|
@@ -43,7 +43,7 @@ Abilitatea acceptă o paletă de culori ca intrare:
 | `wcag_level` | string | Nu | Nivelul de conformitate WCAG: "A", "AA" (implicit) sau "AAA" |
 | `pairs_to_check` | array | Nu | Perechi specifice de culori de validat (ex: `["primary-text", "background-text"]`) |
 
-## Nivelurile WCAG Verificate
+## Nivelurile WCAG Verificate {#wcag-levels-checked}
 
 Abilitatea validează raporturile de contrast conform standardelor WCAG:
 
@@ -56,7 +56,7 @@ Abilitatea validează raporturile de contrast conform standardelor WCAG:
 - **Text Normal** — text mai mic de 18pt (sau 14pt în *bold*)
 - **Text Mare** — text de 18pt sau mai mare (sau 14pt în *bold* sau mai mare)
 
-## Schema de Ieșire
+## Schema de Ieșire {#output-schema}
 
 Abilitatea returnează un raport de validare detaliat:
 
@@ -95,7 +95,7 @@ Abilitatea returnează un raport de validare detaliat:
 }
 ```
 
-### Câmpuri de Ieșire
+### Câmpuri de Ieșire {#output-fields}
 
 | Câmp | Tip | Descriere |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Abilitatea returnează un raport de validare detaliat:
 | `status` | string | "pass" sau "fail" pentru fiecare pereche |
 | `recommendations` | array | Sugestii pentru îmbunătățirea perechilor care eșuează |
 
-## Exemplu de Utilizare
+## Exemplu de Utilizare {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Abilitatea validează toate combinațiile de culori și returnează:
 - ✅ Background + Text: raport 12.1:1 (trece WCAG AAA)
 - În totalitate: Conform WCAG AA
 
-## Integrarea cu Theme Builder
+## Integrarea cu Theme Builder {#integration-with-theme-builder}
 
 Când folosești selecția de direcție de design din Theme Builder, abilitatea Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Când folosești selecția de direcție de design din Theme Builder, abilitatea 
 4. Oferă recomandări pentru perechile care nu sunt conforme
 5. Previne aplicarea de scheme de culori inaccesibile
 
-## Cele Mai Bune Practici
+## Cele Mai Bune Practici {#best-practices}
 
 - **Începe cu nivelul AA** — WCAG AA este standardul pentru majoritatea site-urilor
 - **Testează înainte de a aplica** — validează paleta înainte de a te angaja într-un design
@@ -137,7 +137,7 @@ Când folosești selecția de direcție de design din Theme Builder, abilitatea 
 - **Ia în considerare preferințele utilizatorilor** — unii utilizatori pot avea o sensibilitate suplimentară la culori
 - **Folosește verificatoare de contrast** — combină această abilitate cu instrumentele browserului pentru verificare
 
-## Perechi Eșuate și Recomandări
+## Perechi Eșuate și Recomandări {#failing-pairs-and-recommendations}
 
 Dacă o pereche de culori eșuează validarea, abilitatea oferă recomandări:
 
@@ -155,7 +155,7 @@ Dacă o pereche de culori eșuează validarea, abilitatea oferă recomandări:
 }
 ```
 
-## Abilități Conexe
+## Abilități Conexe {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — creează logo-uri cu paleta ta de culori validată
 - [Create Menu](./create-menu.md) — construiește navigarea cu culori accesibile

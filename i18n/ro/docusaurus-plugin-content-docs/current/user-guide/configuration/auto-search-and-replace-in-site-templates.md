@@ -3,7 +3,7 @@ title: Căutare și înlocuire automată în șabloanele de site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Căutare și înlocuire automată în șabloanele de site (v2)
+# Căutare și înlocuire automată în șabloanele de site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Acest tutorial necesită WP UItimo versiunea 2.x.**_
 
@@ -17,7 +17,7 @@ Clientul tău va putea apoi să completeze acel câmp în timpul înregistrării
 
 Ultimate Multisite va înlocui apoi automat substituenții cu datele furnizate de client.
 
-## **Rezolvarea problemei „șablon plin de substituenți”**
+## **Rezolvarea problemei „șablon plin de substituenți”** {#solving-the-template-full-of-placeholders-problem}
 
 Toate acestea sunt grozave, dar ne lovim de o problemă neplăcută: acum șabloanele noastre de site - care pot fi vizitate de clienții noștri - sunt pline de substituenți urâți care nu spun prea multe.
 

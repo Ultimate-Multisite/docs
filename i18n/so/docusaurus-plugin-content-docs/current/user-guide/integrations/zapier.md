@@ -3,7 +3,7 @@ title: Isdhexgalka Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Iskuulka Ultimate Multisite iyo Zapierka Lagu Xiriirayo
+# Iskuulka Ultimate Multisite iyo Zapierka Lagu Xiriirayo {#integrating-ultimate-multisite-with-zapier}
 
 Maqaallo ka mid ah, waxaan ka warrabixiyay [Webhooks](webhooks.md) sida loo isticmaali karo si loo xiriirayo barnaamijyada saddexaad (3rd party applications).
 
@@ -15,7 +15,7 @@ Waxaad samayn kartaa **Triggers** (dhiirigelin) kuwaasoo dib u shaqeeya marka dh
 
 Tani waxay suurtagalka ah tahay sababtoo ah **Ultimate Multisite Zapier's triggers** iyo actions waxaa la hawlgeliyay [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Sida Loo Bilow
+## Sida Loo Bilow {#how-to-start}
 
 Marka hore, raadi Ultimate Multisite app-ka Zapier-ga ah. Sida kale, waxaad ku riix kartaa [link-kan](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Qaybta URL-ka, ku qor URL-ka buuxa ee network-kaaga, oo ay ku jirto protocol-ka 
 
 Riix badhka **Yes, Continue** (Haa, sii wad) si aad u gudubdo tallaabada xigta. Haddii dhammaan ay shaqeeyaan, waxaad la kulmi doontaa account-kaaga cusub ee la isku xiray! Riix **Continue** (Sii wad) si aad u abuurtid trigger cusub.
 
-## Sida loo abuuro Trigger cusub
+## Sida loo abuuro Trigger cusub {#how-to-create-a-new-trigger}
 
 Hadda oo account-kaagu la isku xiray, waxaad arki kartaa dhacdooyinka la heli karo. Aan doorano dhacdada **payment_received** (Lacag la helay) ee casharkaas.
 
@@ -67,7 +67,7 @@ Gabagalkani, Zapier wuxuu hubinayaa in Zap-kaaga uu awoodo inuu **la qaado paylo
 
 Markaashada testka waxaa si guuleed loo dhammaystiray oo ay soo celisay macluumaadka tusaalaha payload-ka ah. Macluumaadka tusaalahani wuxuu noqon doonaa mid muhiim ah inaan hagino marka aan samaynno actions (tallaabooyin). Trigger-kaaga ayaa hadda la abuuraa oo diyaar u yahay in la xiriiro barnaamijyo kale.
 
-## Sida loo abuuro Actions
+## Sida loo abuuro Actions {#how-to-create-actions}
 
 Actions waxay isticmaalaan macluumaadka laga helo triggers kale si ay u abuuraan faallo cusub oo ku jira shabakadahaaga (network).
 
@@ -79,7 +79,7 @@ In tallaabta xigta, waxaad ama samayn kartaa authentication-kaaga (xaqiijinta aq
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Dejinta Action-ka (Setting up the Action)
+### Dejinta Action-ka (Setting up the Action) {#setting-up-the-action}
 
 Tani waa **tallaabta ugu muhiimsan ee action-ka**, halkan waxyaabaha ayaa si yar oo kala duwan u ah. Macluumaadka ugu horreeya ee aad dooran doontid waa **Item**. Item waa qaabka macluumaadka (information model) shabakadahaaga sida **Customers, Payments, Sites, Emails** iyo kuwa kale.
 

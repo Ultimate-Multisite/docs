@@ -4,13 +4,13 @@ title: ຕົວກອງ - wu_use_domain_mapping
 sidebar_label: wu_use_domain_mapping
 _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 ---
-# Filter: wu_use_domain_mapping
+# Filter: wu_use_domain_mapping {#filter-wuusedomainmapping}
 
 ກຳນົດວ່າຄວນໃຊ້ການຈັບຄູ່ຫຼືບໍ່
 
 ໂດຍທົ່ວໄປ ທ່ານຈະຕ້ອງການອະນຸຍາດໃຫ້ໃຊ້ສະເພາະການຈັບຄູ່ທີ່ເປີດໃຊ້ງານຢູ່ເທົ່ານັ້ນ. ຢ່າງໃດກໍຕາມ ຖ້າທ່ານຕ້ອງການໃຊ້ເຫດຜົນຂັ້ນສູງກວ່ານີ້ ຫຼືອະນຸຍາດໃຫ້ໂດເມນທີ່ບໍ່ເປີດໃຊ້ງານຖືກຈັບຄູ່ໄດ້ເຊັ່ນກັນ ກໍພຽງແຕ່ກັ່ນຕອງຢູ່ບ່ອນນີ້.
 
-## ພາລາມິເຕີ
+## ພາລາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -18,6 +18,6 @@ _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 | $mapping | `\Domain` | ການຈັບຄູ່ທີ່ພວກເຮົາກຳລັງກວດເບິ່ງ |
 | $domain | `string` |  |
 
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/class-domain-mapping.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-domain-mapping.php#L391) ທີ່ແຖວ 391

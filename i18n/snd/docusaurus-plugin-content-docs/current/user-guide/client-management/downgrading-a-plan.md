@@ -3,13 +3,13 @@ title: پلان کي گهٽ ڪرڻ
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# پلان منگھل کرنا (v2)
+# پلان منگھل کرنا (v2) {#downgrading-a-plan-v2}
 
 _**اہم نوٹ: هي مضمون Ultimate Multisite کے ورژن 2.x سے متعلق ہے۔**_
 
 پلان یا سبسکرپشن کو کم کرنے کا عمل وہ عام کام ہے جو آپ کے کلائنٹس اس وقت کر سکتے ہیں جب ان کا بجٹ محدود ہو یا انہوں نے فیصلہ کیا ہو کہ انہیں اپنی سب سائٹ چلانے کے لیے بہت زیادہ وسائل کی ضرورت نہیں ہے۔
 
-## پلان کیسے کم کریں
+## پلان کیسے کم کریں {#how-to-downgrade-a-plan}
 
 آپ کے کلائنٹس کسی بھی وقت اپنے سبسائٹ ایڈمن ڈیش بورڈ میں لاگ ان کر کے اور اپنے اکاؤنٹ والے حصے کے نیچے **Change** پر کلک کر کے اپنا پلان کم کر سکتے ہیں۔
 
@@ -25,7 +25,7 @@ _**اہم نوٹ: هي مضمون Ultimate Multisite کے ورژن 2.x سے مت
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### جب کوئی صارف اپنا پلان کم کرتا ہے تو کیا ہوتا ہے
+### جب کوئی صارف اپنا پلان کم کرتا ہے تو کیا ہوتا ہے {#what-happens-when-a-user-downgrades-their-plan}
 
 یہ نوٹ کرنا ضروری ہے کہ پلان کم کرنے سے صارف کے سبسائٹ میں موجود موجودہ ترتیب (configuration) تبدیل نہیں ہوتی۔
 
@@ -37,7 +37,7 @@ _**اہم نوٹ: هي مضمون Ultimate Multisite کے ورژن 2.x سے مت
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### भुक्तानीको अवस्था के हुन्छ
+### भुक्तानीको अवस्था के हुन्छ {#what-happens-to-the-payment}
 
 संस्करण २.० मा, अब प्रोरेशन्स (proration) को सन्दर्भमा भुक्तानीमा कुनै समायोजन गर्न आवश्यक छैन।
 

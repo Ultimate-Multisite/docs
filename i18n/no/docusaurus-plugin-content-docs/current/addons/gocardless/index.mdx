@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless Betaling
 
 La kundene dine betale med direkte trekk (Direct Debit) for medlemskap og produkter i Multisite Ultimate ved hjelp av GoCardless!
 
-## Installasjon
+## Installasjon {#installation}
 
 1. Last opp 'ultimate-multisite-gocardless' til katalogen '/wp-content/plugins/'
 2. Aktiver pluginet via menyen 'Plugins' i WordPress
 3. Følg den trinnvise guiden for å sette opp pluginet
 
-## Brukerveiledning
+## Brukerveiledning {#usage-guide}
 
 _GoCardless_ er en betalingsgateway som er tilgjengelig i **Europa og Storbritannia** og som muliggjør betalinger via **direkte trekk (Direct Debit)**.
 
@@ -29,7 +29,7 @@ Denne guiden vil dekke hvordan du setter opp _GoCardless_ for å begynne å akse
 
 _**Merk: GoCardless fungerer kun med følgende valutaer:**_ **EUR, GBP, AUD, SEK og DKK.**
 
-## Installere tilleggsfunksjonen (Add-on)
+## Installere tilleggsfunksjonen (Add-on) {#installing-the-add-on}
 
 Først må du installere GoCardless tilleggsfunksjon for Ultimate Multisite. Du kan gjøre dette ved å navigere til **Ultimate Multisite > Settings > Add-ons (i sidefeltet)**. Og velge GoCardless tilleggsfunksjon fra listen.
 
@@ -37,7 +37,7 @@ Etter at tilleggsfunksjonen er installert og aktivert, går du til **Ultimate Mu
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Hente et Access Token
+## Hente et Access Token {#getting-an-access-token}
 
 Opprett en konto på _GoCardless_ (eller på _GoCardless_ sandbox, hvis du vil **teste det først**, noe som anbefales). Deretter, etter innlogging, naviger til menyvalget **Developers**.
 
@@ -61,7 +61,7 @@ Sørg for at du plasserer det i riktig felt. Hvis det er et **live token**, må 
 
 Det var alt for det første steget. Neste, må du sette opp en webhook-lytter (webhook listener).
 
-## Sette opp Webhook-lytteren
+## Sette opp Webhook-lytteren {#setting-up-the-webhook-listener}
 
 Når det gjelder abonnementer, må Ultimate Multisite motta informasjon om endringer i abonnementsstatus, nye betalinger og lignende ting.
 

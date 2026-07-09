@@ -3,13 +3,13 @@ title: Bumuo ng Negosyo ng Espesyalisadong Website
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bumuo ng Negosyong Niche Website gamit ang Ultimate Multisite
+# Bumuo ng Negosyong Niche Website gamit ang Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Karamihan sa mga taong sumusubok magbenta ng mga website ay nakikipagkompetensiya sa presyo laban sa Wix, Squarespace, at libo-libong freelancer. Natatalo sila. Ang mga nananalo ay pumipili ng partikular na audience, bumubuo ng solusyong iniangkop sa audience na iyon, at naniningil batay sa halagang naihahatid nila.
 
 Itinuturo sa kursong ito kung paano gawin mismo iyon gamit ang Ultimate Multisite.
 
-## Ang Iyong Bubuuin
+## Ang Iyong Bubuuin {#what-you-will-build}
 
 Sa buong kursong ito, bubuo ka ng tunay at gumaganang network na tinatawag na **FitSite** -- isang platform ng website na partikular na ginawa para sa mga fitness studio, personal trainer, at may-ari ng gym.
 
@@ -23,7 +23,7 @@ Sa huling aralin, ang FitSite ay magiging isang kumpletong niche platform na may
 
 Susunod ka nang paisa-isa sa bawat hakbang, at sa dulo ay magkakaroon ka ng parehong gumaganang platform at kaalamang magagamit para ulitin ang proseso sa anumang niche na pipiliin mo.
 
-## Bakit Fitness Studios?
+## Bakit Fitness Studios? {#why-fitness-studios}
 
 Kailangan namin ng kongkretong halimbawa na kayang sundan ng sinuman. Ang mga fitness studio ay angkop dahil:
 
@@ -34,7 +34,7 @@ Kailangan namin ng kongkretong halimbawa na kayang sundan ng sinuman. Ang mga fi
 
 Lahat ng matututuhan mo sa pagbuo ng FitSite ay direktang naaangkop sa anumang niche na pipiliin mo: mga restaurant, real estate agent, law firm, simbahan, trade contractor, o anumang iba pang vertical.
 
-## Estruktura ng Kurso
+## Estruktura ng Kurso {#course-structure}
 
 Bawat aralin ay nagpapakilala ng isang konsepto, nagpapaliwanag kung bakit ito mahalaga, at gumagabay sa iyo sa pagpapatupad nito sa FitSite network. Bawat aralin ay nakabatay sa nauna.
 
@@ -55,7 +55,7 @@ Bawat aralin ay nagpapakilala ng isang konsepto, nagpapaliwanag kung bakit ito m
 | [13. Pagpapalago](lesson-13-growth) | Paglago mula sa unang mga customer tungo sa tunay na negosyo | Estratehiya ng paglago at automation ng FitSite |
 | [14. Ano ang Susunod](lesson-14-whats-next) | Pagpapalawak sa mga kaugnay na niche at bagong oportunidad | Ang iyong roadmap lampas sa FitSite |
 
-## Mga Kinakailangan
+## Mga Kinakailangan {#prerequisites}
 
 - Isang WordPress Multisite installation (o kahandaang mag-set up nito)
 - Isang aktibong lisensya ng Ultimate Multisite
@@ -63,6 +63,6 @@ Bawat aralin ay nagpapakilala ng isang konsepto, nagpapaliwanag kung bakit ito m
 
 Walang kinakailangang coding. Kung hindi mo pa nagamit ang Ultimate Multisite dati, ayos lang -- nagsisimula ang Aralin 3 mula sa bagong install.
 
-## Handa Na?
+## Handa Na? {#ready}
 
 Magsimula sa [Aralin 1: Bakit Panalo ang Niche](lesson-1-why-niche).

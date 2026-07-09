@@ -3,7 +3,7 @@ title: Ŝanĝoprotokolo de AVI
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT Ŝanĝoprotokolo
+# VAT Ŝanĝoprotokolo {#vat-changelog}
 
 Versio 1.0.7 - Eldonita je 2026-02-03
 

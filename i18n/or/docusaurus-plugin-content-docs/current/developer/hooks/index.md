@@ -3,11 +3,11 @@ title: ହୁକ୍ସ ସନ୍ଦର୍ଭ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# ହୁକ୍ସ ସନ୍ଦର୍ଭ
+# ହୁକ୍ସ ସନ୍ଦର୍ଭ {#hooks-reference}
 
 Ultimate Multisite ର ସମସ୍ତ **59ଟି କାର୍ଯ୍ୟ** ଏବଂ **118ଟି ଫିଲ୍ଟର** ପାଇଁ ସ୍ୱୟଂଚାଳିତ ଭାବେ ସୃଷ୍ଟି ହୋଇଥିବା ଡକ୍ୟୁମେଣ୍ଟେସନ।
 
-## କାର୍ଯ୍ୟଗୁଡ଼ିକ
+## କାର୍ଯ୍ୟଗୁଡ଼ିକ {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — ପ୍ରମାଣୀକରଣ ପୁନଃନିର୍ଦ୍ଦେଶ ପୂର୍ବରୁ ଚାଲେ।
 - [set_auth_cookie](./Actions/set_auth_cookie) — ପ୍ରମାଣୀକରଣ cookie ସେଟ୍ ହେବାର ଠିକ୍ ପୂର୍ବରୁ ଚାଲେ।
@@ -70,7 +70,7 @@ Ultimate Multisite ର ସମସ୍ତ **59ଟି କାର୍ଯ୍ୟ** ଏବ
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ଏକ object database ରେ ସଞ୍ଚିତ ହେବା ପରେ ଚାଲେ।
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin ବିକାଶକାରୀମାନଙ୍କୁ unlock ପ୍ରକ୍ରିୟାରେ କାର୍ଯ୍ୟ ଯୋଡ଼ିବାକୁ ଅନୁମତି ଦିଏ।
 
-## ଛାଣନୀଗୁଡ଼ିକ
+## ଛାଣନୀଗୁଡ଼ିକ {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ପ୍ରମାଣୀକରଣ cookie ମେୟାଦ ସମାପ୍ତି ଅବଧିକୁ filter କରେ।
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ପ୍ରମାଣୀକରଣ redirect schemeକୁ filter କରେ।

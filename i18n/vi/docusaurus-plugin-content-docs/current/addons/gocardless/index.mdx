@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Ultimate Multisite: Thanh toán bằng GoCardless
 
 Cho phép khách hàng của bạn thanh toán các gói thành viên và sản phẩm Ultimate Multisite bằng hình thức Trừ trực tiếp (Direct Debit) thông qua GoCardless!
 
-## Cài đặt
+## Cài đặt {#installation}
 
 1. Tải tệp 'ultimate-multisite-gocardless' vào thư mục '/wp-content/plugins/'
 2. Kích hoạt plugin này qua menu 'Plugins' trong WordPress
 3. Làm theo các bước hướng dẫn của Wizard để thiết lập plugin
 
-## Hướng dẫn sử dụng
+## Hướng dẫn sử dụng {#usage-guide}
 
 _GoCardless_ là một cổng thanh toán có sẵn tại **Châu Âu và Vương quốc Anh**, hỗ trợ phương thức thanh toán **Trừ trực tiếp (Direct Debit)**.
 
@@ -29,7 +29,7 @@ Bài hướng dẫn này sẽ giúp bạn thiết lập _GoCardless_ để bắt
 
 _**Lưu ý: GoCardless chỉ hoạt động với các loại tiền tệ sau:**_ **EUR, GBP, AUD, SEK, và DKK.**
 
-## Cài đặt Add-on
+## Cài đặt Add-on {#installing-the-add-on}
 
 Trước hết, bạn cần cài đặt add-on GoCardless cho Ultimate Multisite. Bạn có thể thực hiện việc này bằng cách truy cập **Ultimate Multisite > Settings > Add-ons (ở thanh bên)**. Sau đó, chọn add-on GoCardless trong danh sách đó.
 
@@ -37,7 +37,7 @@ Sau khi add-on được cài đặt và kích hoạt, hãy truy cập **Ultimate
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Lấy Access Token
+## Lấy Access Token {#getting-an-access-token}
 
 Tạo một tài khoản trên _GoCardless_ (hoặc trên môi trường sandbox của _GoCardless_ nếu bạn muốn **thử nghiệm trước**, điều này được khuyến nghị). Sau khi đăng nhập, điều hướng đến mục menu **Developers**.
 
@@ -61,7 +61,7 @@ Hãy chắc chắn rằng bạn dán nó vào ô bên phải. Nếu đó là **l
 
 Đó là bước đầu tiên. Tiếp theo, bạn cần thiết lập một webhook listener.
 
-## Thiết lập Webhook Listener
+## Thiết lập Webhook Listener {#setting-up-the-webhook-listener}
 
 Khi xử lý các gói đăng ký (subscriptions), Ultimate Multisite cần được thông báo về các thay đổi trạng thái đăng ký, các khoản thanh toán mới được thực hiện và các sự kiện tương tự khác.
 

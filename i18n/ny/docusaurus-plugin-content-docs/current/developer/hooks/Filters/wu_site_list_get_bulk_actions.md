@@ -4,22 +4,22 @@ title: Fyuluta - wu_site_list_get_bulk_actions
 sidebar_label: wu_site_list_get_bulk_actions
 _i18n_hash: 0a18ab4a09da0089d688b72198c51711
 ---
-# Fyuluta: wu_site_list_get_bulk_actions
+# Fyuluta: wu_site_list_get_bulk_actions {#filter-wusitelistgetbulkactions}
 
 Sefa zochita zambiri zomwe zilipo pa masaiti.
 
-## Magawo
+## Magawo {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
 | $actions | `array` | Zochita zambiri. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.4.10
-### Gwero
+### Gwero {#source}
 
 Zafotokozedwa mu [`inc/list-tables/class-site-list-table.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/list-tables/class-site-list-table.php#L388) pa mzere 388
 
 
-## Zobwezera
+## Zobwezera {#returns}

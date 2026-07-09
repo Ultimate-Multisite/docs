@@ -3,11 +3,11 @@ title: Pamekaran Gateway Kustom
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pangwangunan Gateway Kustom
+# Pangwangunan Gateway Kustom {#custom-gateway-development}
 
 Anjeun tiasa nyieun gateway pamayaran kustom ku ngalegaan kelas `Base_Gateway`.
 
-## Kelas Gateway
+## Kelas Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Daptarkeun Gateway
+## Daptarkeun Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Métode Konci
+## Métode Konci {#key-methods}
 
 | Métode | Tujuan |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Nanganan pamundut ngabalikeun dana |
 | `get_payment_methods()` | Mulangkeun métode pamayaran anu disimpen pikeun hiji palanggan |
 
-## Kredénsial pembaruan pikeun kaanggotaan anu ngulang
+## Kredénsial pembaruan pikeun kaanggotaan anu ngulang {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ngamungkinkeun integrasi gateway ngalaporkeun naha hiji kaanggotaan anu ngulang miboga kredénsial pembaruan anu bisa dipaké deui saméméh `auto_renew` disimpen. Kaitkeun `wu_membership_has_renewal_credential` sarta mulangkeun:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Beresihan pananda kredénsial-leungit minangka bagian tina alur otorisasi deui gateway anjeun anu suksés sanggeus kredénsial anyar anu bisa dipaké deui disimpen.
 
-## Tips
+## Tips {#tips}
 
 - Salawasna mulangkeun `WP_Error` nalika gagal supaya Ultimate Multisite bisa nanganan pintonan kasalahan
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Paké `wu_log_add()` pikeun logging husus gateway
 
-## Kamampuhan panyadia panyambung AI
+## Kamampuhan panyadia panyambung AI {#ai-connector-provider-capabilities}
 
 Integrasi kustom anu nelepon operasi anu didukung panyambung AI kudu saluyu jeung susunan panyadia OAuth anu dirojong anu diwanohkeun ku AI Provider for Anthropic Max v1.3.0:
 

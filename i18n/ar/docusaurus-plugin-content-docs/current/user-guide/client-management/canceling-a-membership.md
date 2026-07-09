@@ -3,7 +3,7 @@ title: إلغاء عضوية
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# إلغاء عضوية (v2)
+# إلغاء عضوية (v2) {#canceling-a-membership-v2}
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 

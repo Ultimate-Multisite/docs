@@ -3,13 +3,13 @@ title: Manuelle Zahlungen einrichten
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuelle Zahlungen einrichten (v2)
+# Manuelle Zahlungen einrichten (v2) {#setting-up-manual-payments-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
 Manuelle Zahlungen sind eine Möglichkeit, andere Zahlungsmethoden anzubieten, falls **Stripe** oder **PayPal** für Ihre Benutzer nicht verfügbar ist. Das kann eine Überweisung, eine Banküberweisung oder jede andere Zahlungsmethode sein, die Ihren Benutzern lokal zur Verfügung steht.
 
-## So aktivieren Sie manuelle Zahlungen
+## So aktivieren Sie manuelle Zahlungen {#how-to-enable-manual-payments}
 
 Das Einrichten manueller Zahlungen ist sehr einfach. Sie müssen sie lediglich unter den Zahlungs-Gateways aktivieren und detaillierte Anweisungen dazu eingeben, wie der Benutzer die Zahlung senden soll.
 
@@ -31,7 +31,7 @@ Und sie erhalten außerdem eine Nachricht auf Ihrer **Thank You**-Seite mit Ihre
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manuelle Zahlungen bestätigen
+## Manuelle Zahlungen bestätigen {#confirming-manual-payments}
 
 Um eine manuelle Zahlung zu bestätigen, gehen Sie zum Menü **Payments** in der linken Leiste. Dort können Sie alle Zahlungen in Ihrem Netzwerk und deren Details sehen, einschließlich ihres **Status**. Eine manuelle Zahlung hat immer den Status **Pending**, bis Sie ihn manuell ändern.
 

@@ -3,11 +3,11 @@ title: WP-CLI Reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI સંદર્ભ
+# WP-CLI સંદર્ભ {#wp-cli-reference}
 
 Gratis AI Agent એ એજન્ટનું બેન્ચમાર્કિંગ કરવા, ક્ષમતાઓ (abilities)નું સંચાલન કરવા અને કમાન્ડ લાઇનમાંથી એજન્ટની સ્થિતિ (status)ની પૂછપરછ કરવા માટે `wp gratis-ai-agent` કમાન્ડ ફેમિલી પ્રદાન કરે છે. બધા કમાન્ડ્સને WP-CLI 2.0 અથવા તેનાથી ઉપરના વર્ઝનની જરૂર છે.
 
-## ઇન્સ્ટોલેશન (Installation)
+## ઇન્સ્ટોલેશન (Installation) {#installation}
 
 પ્લગઇન એક્ટિવ થતાં જ WP-CLI કમાન્ડ્સ આપોઆપ રજીસ્ટર થઈ જાય છે. નીચેના કમાન્ડથી ચકાસણી કરો:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 એજન્ટ ક્ષમતાઓ બેન્ચમાર્ક સ્યુટ (Agent Capabilities benchmark suite) ચલાવે છે — જે જટિલ, બહુ-પગલાંવાળા પ્રોમ્પ્ટ્સનો સમૂહ છે જે સંપૂર્ણ ક્ષમતાની રેન્જનું પરીક્ષણ કરે છે. આનો ઉપયોગ મોડેલની કામગીરીનું મૂલ્યાંકન કરવા, AI પ્રોવાઇડર્સની તુલના કરવા, અથવા પ્રોડક્શનમાં ડિપ્લોય કરતા પહેલા ક્ષમતા પેક્સને માન્ય કરવા માટે કરો.
 
-### સંક્ષિપ્તમાં (Synopsis)
+### સંક્ષિપ્તમાં (Synopsis) {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### વિકલ્પો (Options)
+### વિકલ્પો (Options) {#options}
 
 | વિકલ્પ (Option) | વર્ણન (Description) |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | આઉટપુટ ફોર્મેટ: `table` (ડિફોલ્ટ), `json`, `csv` |
 | `--save` | ઐતિહાસિક સરખામણી માટે બેન્ચમાર્ક પરિણામોને ડેટાબેઝમાં સેવ કરો |
 
-### ઉદાહરણો (Examples)
+### ઉદાહરણો (Examples) {#examples}
 
 વર્તમાન પ્રોવાઇડર અને મોડેલ સાથે સંપૂર્ણ બેન્ચમાર્ક સ્યુટ ચલાવો:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### આઉટપુટ (Output)
+### આઉટપુટ (Output) {#output}
 
 બેન્ચમાર્ક દરેક પ્રશ્ન માટે એક રો (row) આ કૉલમ્સ સાથે આઉટપુટ કરે છે:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### બેન્ચમાર્ક પ્રશ્નો (Benchmark Questions)
+### બેન્ચમાર્ક પ્રશ્નો (Benchmark Questions) {#benchmark-questions}
 
 ડિફોલ્ટ સ્યુટમાં શામેલ છે:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 ઇન્સ્ટોલ કરેલી ક્ષમતાઓ (abilities) અને ક્ષમતા પેક્સનું સંચાલન કરે છે.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 રજીસ્ટર થયેલી તમામ ક્ષમતાઓ, તેમના સ્ત્રોત (core અથવા pack), અને તેમની વર્તમાન સ્થિતિની યાદી આપે છે.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 રેજિસ્ટ્રીમાંથી એક ક્ષમતા પેક ડાઉનલોડ કરે છે અને એક્ટિવેટ કરે છે.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 પેકને દૂર કર્યા વિના ચોક્કસ ક્ષમતાને ડિસેબલ કરે છે. આ કોઈ ચોક્કસ સાઇટ પર એજન્ટના સ્કોપને મર્યાદિત કરવા માટે ઉપયોગી છે.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 પહેલા ડિસેબલ થયેલી ક્ષમતાને ફરીથી એનેબલ કરે છે.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 વર્તમાન એજન્ટ કન્ફિગરેશન અને કનેક્ટિવિટી સ્ટેટસ દર્શાવે છે.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 ડીબગ લોગમાંથી તાજેતરની એજન્ટ પ્રવૃત્તિ દર્શાવે છે.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 એજન્ટની સ્થિતિને રીસેટ કરે છે: ઇન્જેક્ટ કરેલ CSS સાફ કરે છે, એજન્ટ-રજીસ્ટર્ડ CPTs અને ટેક્સોનોમીને દૂર કરે છે, ગ્લોબલ સ્ટાઇલને રીસેટ કરે છે, અને એજન્ટના વિકલ્પો કેશને ખાલી કરે છે. તે પ્લગઇન અથવા તેની સેટિંગ્સને દૂર કરતું નથી.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 બધા કમાન્ડ્સ સફળતા પર `0` એક્ઝિટ કરે છે. નોન-ઝીરો એક્ઝિટ કોડ્સ:
 

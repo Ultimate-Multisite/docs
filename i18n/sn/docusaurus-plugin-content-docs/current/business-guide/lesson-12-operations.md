@@ -3,17 +3,17 @@ title: 'Chidzidzo 12: Kutungamira Bhizinesi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Chidzidzo 12: Kumhanyisa Bhizinesi
+# Chidzidzo 12: Kumhanyisa Bhizinesi {#lesson-12-running-the-business}
 
 Chikuva hachisi chirongwa chaunopedza -- ibhizinesi raunomhanyisa. Chidzidzo ichi chinovhara mabasa ezuva nezuva ekutarisira FitSite: rubatsiro, kubhadharisa, kuchengetedza, uye kuchengeta vatengi vachifara.
 
-## Patakasiira
+## Patakasiira {#where-we-left-off}
 
 FitSite yava kushanda uye vatengi vari kunyoresa. Iye zvino unofanira kumhanyisa mashandiro acho nenzira inoenderera.
 
-## Mabasa eZuva Nezuva
+## Mabasa eZuva Nezuva {#daily-operations}
 
-### Kuongorora
+### Kuongorora {#monitoring}
 
 Tarisa izvi zuva nezuva (kana kuseta zviziviso):
 
@@ -22,7 +22,7 @@ Tarisa izvi zuva nezuva (kana kuseta zviziviso):
 - **Kubhadhara kwakundikana**: Pane kukundikana kwekubhadhara kunoda kutariswa here?
 - **Zvikumbiro zverubatsiro**: Pane mibvunzo yevatengi isati yapindurwa here?
 
-### Rubatsiro rweVatengi
+### Rubatsiro rweVatengi {#customer-support}
 
 Kutarisisa niche yako kunobatsira pano. Nekuti vatengi vako vese mastudio efitness, uchaona mibvunzo yakafanana ichidzokororwa:
 
@@ -36,7 +36,7 @@ Kutarisisa niche yako kunobatsira pano. Nekuti vatengi vako vese mastudio efitne
 
 Vaka hwaro hweruzivo rwako (hwakatangwa muChidzidzo 8) uchitenderedza mibvunzo iyi inodzokororwa. Ticket rerubatsiro rega rega raigona kunge riri chinyorwa chehwaro hweruzivo chiratidzo chekuti unyore chinyorwa ichocho.
 
-### Matanho eRubatsiro
+### Matanho eRubatsiro {#support-tiers}
 
 Sezvaunokura, ronga rubatsiro maererano neplan:
 
@@ -48,9 +48,9 @@ Sezvaunokura, ronga rubatsiro maererano neplan:
 
 [Addon yeSupport Tickets](/addons/support-tickets) inogona kubatsira kutarisira zvikumbiro zverubatsiro mukati mechikuva.
 
-## Mabasa eKubhadharisa
+## Mabasa eKubhadharisa {#billing-operations}
 
-### Kubhadhara Kunodzokororwa
+### Kubhadhara Kunodzokororwa {#recurring-payments}
 
 Ultimate Multisite inobata kubhadharisa kunodzokororwa otomatiki kuburikidza negedhi rako rekubhadhara. Basa rako nderekutarisa:
 
@@ -58,7 +58,7 @@ Ultimate Multisite inobata kubhadharisa kunodzokororwa otomatiki kuburikidza neg
 - **Dunning**: Seta logic yekuedza zvakare otomatiki kuburikidza negedhi rako rekubhadhara (Stripe inobata izvi zvakanaka)
 - **Zvikumbiro zvekukanzura**: Nzwisisa kuti sei vatengi vachienda. Kukanzura kwega kwega imhinduro.
 
-### Kutarisira Unhengo
+### Kutarisira Unhengo {#managing-memberships}
 
 Enda ku **Ultimate Multisite > Unhengo** kuti:
 
@@ -69,13 +69,13 @@ Enda ku **Ultimate Multisite > Unhengo** kuti:
 
 Ona [Kutarisira Unhengo](/user-guide/administration/managing-memberships) kuti uwane referensi yakazara.
 
-### Mainvoice
+### Mainvoice {#invoicing}
 
 Ita shuwa kuti mainvoice anogadzirwa nemazvo pakubhadhara kwega kwega. Vatengi vangangoda mainvoice ekuzivisa mari dzebhizinesi. Ona [Kutarisira Kubhadhara neMainvoice](/user-guide/administration/managing-payments-and-invoices).
 
-## Kuchengetedza Chikuva
+## Kuchengetedza Chikuva {#platform-maintenance}
 
-### Kuvandudzwa kweWordPress nePlugin
+### Kuvandudzwa kweWordPress nePlugin {#wordpress-and-plugin-updates}
 
 Semutariri wenetwork, une mutoro we:
 
@@ -88,14 +88,14 @@ Semutariri wenetwork, une mutoro we:
 Kuvandudzwa kwakaputsika kunokanganisa saiti yemutengi wese panetwork yako. Gara uchiedza kuvandudzwa pacopy yekuedzera yenetwork yako kutanga.
 :::
 
-### Chengetedzo
+### Chengetedzo {#security}
 
 - Chengeta software yese iri yemazuva ano
 - Shandisa mapassword akasimba uye two-factor authentication kumaAccount eadmin
 - Tarisa zviitiko zvinofungidzirwa
 - Iva neplan yezviitiko zvechengetedzo
 
-### Kushanda Zvakanaka
+### Kushanda Zvakanaka {#performance}
 
 Sezvo network yako ichikura, tarisa:
 
@@ -105,9 +105,9 @@ Sezvo network yako ichikura, tarisa:
 
 Funga kushandisa caching (page cache, object cache) uye CDN kana usati watozviita. [Kubatanidzwa kweCloudflare](/user-guide/host-integrations/cloudflare) kunobata zvakawanda zveizvi.
 
-## Kutarisira Rwendo rweMutengi
+## Kutarisira Rwendo rweMutengi {#customer-lifecycle-management}
 
-### Kuderedza Churn
+### Kuderedza Churn {#reducing-churn}
 
 Churn iperesenti yevatengi vanokanzura mwedzi wega wega. Kune bhizinesi resubscription, kuderedza churn kwakakosha sekutsvaga vatengi vatsva.
 
@@ -119,7 +119,7 @@ Churn iperesenti yevatengi vanokanzura mwedzi wega wega. Kune bhizinesi resubscr
 - Vakawana imwe nzira yakachipa → simbisa kukosha kwe niche yako
 - Bhizinesi ravo rakavhara → hazvidzivisiki, asi tevera izvi zvakasiyana
 
-### Kukurudzira Kusimudzira
+### Kukurudzira Kusimudzira {#encouraging-upgrades}
 
 Vatengi vari paStarter vari kubudirira vanofanira kukurudzirwa kusimudzira:
 
@@ -127,7 +127,7 @@ Vatengi vari paStarter vari kubudirira vanofanira kukurudzirwa kusimudzira:
 - Tumira maemail akanangwa achiratidza maficha eGrowth plan angavabatsira
 - Ratidza zvakavakwa nevatengi veGrowth/Pro
 
-### Mishandirapamwe yeKudzosa Vatengi
+### Mishandirapamwe yeKudzosa Vatengi {#win-back-campaigns}
 
 Kana mutengi akanzura:
 
@@ -135,30 +135,30 @@ Kana mutengi akanzura:
 2. Gadzirisa chinetso chavo kana zvichibvira
 3. Ipa discount kuti vadzoke (mazuva 30-60 mushure mekukanzura)
 
-## Maitiro eVhiki neMwedzi
+## Maitiro eVhiki neMwedzi {#weekly-and-monthly-routines}
 
-### Vhiki Nevhiki
+### Vhiki Nevhiki {#weekly}
 
 - Ongorora kunyoresa kutsva nekukanzura
 - Pindura maticket ese erubatsiro akavhurika
 - Tarisa kushanda kwechikuva uye uptime
 - Ongorora kubhadhara kupi nekupi kwakundikana
 
-### Mwedzi Nemwedzi
+### Mwedzi Nemwedzi {#monthly}
 
 - Ongorora metrics dzakakosha (MRR, churn, vatengi vatsva, kusimudzira)
 - Isa kuvandudzwa kweWordPress neplugin (mushure mekuedza pastaging)
 - Ongorora uye vandudza hwaro hweruzivo zvichienderana nemapatani erubatsiro
 - Tumira newsletter kana update kuvatengi (maficha matsva, mazano, nhau dzeindasitiri yefitness)
 
-### Kota Yega Yega
+### Kota Yega Yega {#quarterly}
 
 - Ongorora pricing uchienzanisa nevakwikwidzi uye mhinduro dzevatengi
 - Ongorora magadzirirwo ematemplate -- anoda kuzorodzwa here?
 - Ongorora huwandu hwehosting -- unofanira kuscale here?
 - Ongorora uye vandudza onboarding zvichienderana nedata reactivation
 
-## Zvatakavaka muChidzidzo Ichi
+## Zvatakavaka muChidzidzo Ichi {#what-we-built-this-lesson}
 
 - **Maitiro ezuva nezuva ekutarisa** uptime, kunyoresa, kubhadhara, uye rutsigiro
 - **Chimiro cherutsigiro chine matanho** chinoenderana nemazinga eplan

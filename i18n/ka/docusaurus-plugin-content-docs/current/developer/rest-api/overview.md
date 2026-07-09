@@ -3,28 +3,28 @@ title: REST API მიმოხილვა
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ცნობარი
+# REST API ცნობარი {#rest-api-reference}
 
-## საბაზისო კონფიგურაცია
+## საბაზისო კონფიგურაცია {#base-configuration}
 
 **საბაზისო URL:** `{site_url}/wp-json/wu/v2/`
 **ავთენტიფიკაცია:** API Key და Secret (HTTP Basic Auth ან URL პარამეტრები)
 
-## ავთენტიფიკაცია
+## ავთენტიფიკაცია {#authentication}
 
-### API-ს ჩართვა
+### API-ს ჩართვა {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API სერტიფიკატების მიღება
+### API სერტიფიკატების მიღება {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### ავთენტიფიკაციის მეთოდები
+### ავთენტიფიკაციის მეთოდები {#authentication-methods}
 
 **HTTP Basic Auth (რეკომენდებულია):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ძირითადი endpoint-ები
+## ძირითადი endpoint-ები {#core-endpoints}
 
-### 1. მომხმარებლების API
+### 1. მომხმარებლების API {#1-customers-api}
 
 **საბაზისო მარშრუტი:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. საიტების API
+### 2. საიტების API {#2-sites-api}
 
 **საბაზისო მარშრუტი:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. წევრობების API
+### 3. წევრობების API {#3-memberships-api}
 
 **საბაზისო მარშრუტი:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. პროდუქტების API
+### 4. პროდუქტების API {#4-products-api}
 
 **საბაზისო მარშრუტი:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. გადახდების API
+### 5. გადახდების API {#5-payments-api}
 
 **საბაზისო მარშრუტი:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. დომენების API
+### 6. დომენების API {#6-domains-api}
 
 **საბაზისო მარშრუტი:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## რეგისტრაციის endpoint
+## რეგისტრაციის endpoint {#registration-endpoint}
 
 `/register` endpoint უზრუნველყოფს სრულ გადახდის/რეგისტრაციის პროცესს:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## სუვერენული tenant-ების endpoint-ები
+## სუვერენული tenant-ების endpoint-ები {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ამატებს სუვერენული tenant-ების REST დაფარვას ინტეგრაციებისთვის, რომლებიც იზოლირებულ tenant-ებს ამზადებენ, ამოწმებენ ან ადასტურებენ.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` მიიჩნიეთ გაშვებამდე ბლოკერად. შეამოწმეთ დადასტურების დეტალები, გამოასწორეთ მონაცემთა ბაზის ჰოსტის binding, queue, მომხმარებლის provision-ინგი ან მარშრუტიზაციის პრობლემა, შემდეგ ხელახლა სცადეთ დადასტურება.
 
-## შეცდომის პასუხები
+## შეცდომის პასუხები {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## გვერდებად დაყოფა და გაფილტვრა
+## გვერდებად დაყოფა და გაფილტვრა {#pagination-and-filtering}
 
 **მოთხოვნის პარამეტრები:**
 ```http

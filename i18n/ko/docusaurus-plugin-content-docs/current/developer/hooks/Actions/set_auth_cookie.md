@@ -4,11 +4,11 @@ title: 액션 - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# 액션: set_auth_cookie
+# 액션: set_auth_cookie {#action-setauthcookie}
 
 즉시 인증 쿠키가 설정되기 직전에 발생합니다.
 
-## 매개변수
+## 매개변수 {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,11 +19,11 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | 인증 스킴. 값은 'auth' 또는 'secure_auth'가 포함됩니다. |
 | $token | `string` | 이 쿠키에 사용할 사용자의 세션 토큰. |
 
-### 버전
+### 버전 {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> 매개변수가 추가되었습니다.
 
-### 출처
+### 출처 {#source}
 
 정의됨 in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) at line 124

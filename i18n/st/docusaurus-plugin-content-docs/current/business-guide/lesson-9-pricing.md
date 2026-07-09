@@ -3,17 +3,17 @@ title: 'Thuto ea 9: Ho beha litheko bakeng sa phaello'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Thuto 9: Ditheko bakeng sa Phaello
+# Thuto 9: Ditheko bakeng sa Phaello {#lesson-9-pricing-for-profit}
 
 Thutong ya 5 re behile ditheko tsa pele bakeng sa merero ya FitSite. Jwale re ntlafatsa leano la ditheko ka mekgwa e eketsang lekeno, e kgothalletsang dintlafatso, mme e fokotsa ho tlohela tshebeletso.
 
-## Moo re Ileng ra Fella Teng
+## Moo re Ileng ra Fella Teng {#where-we-left-off}
 
 FitSite e se e na le merero, dithempleite, mokgwa wa tefo, boitsebahatso ba lebitso, le kamohelo ya bareki di se di le teng. Ditheko tsa pele e ne e le $49/$99/$199 ka kgwedi. Jwale re etsa hore ditheko tseo di sebetse ka matla ho feta.
 
-## Melao-motheo ya Ditheko bakeng sa Dipeleiteforme tsa Niche
+## Melao-motheo ya Ditheko bakeng sa Dipeleiteforme tsa Niche {#pricing-principles-for-niche-platforms}
 
-### Beha Theko ho ya ka Boleng, Eseng Ditjeho
+### Beha Theko ho ya ka Boleng, Eseng Ditjeho {#price-on-value-not-cost}
 
 Ditjeho tsa hao tsa ho amohela saete di ka ba $5-$15 ka saete ya moreki. Seo ha se bolele hore theko ya hao e lokela ho ba $20. Ha o rekise hosting. O rekisa:
 
@@ -24,7 +24,7 @@ Ditjeho tsa hao tsa ho amohela saete di ka ba $5-$15 ka saete ya moreki. Seo ha 
 
 Beha theko ho ya ka boleng boo o bo fanang, eseng ditjeho tsa ho bo fana.
 
-### Ema ka Mekgwa e Meng
+### Ema ka Mekgwa e Meng {#anchor-to-alternatives}
 
 Ha mong wa studio sa boikoetliso a hlahloba FitSite, o e bapisa le:
 
@@ -34,7 +34,7 @@ Ha mong wa studio sa boikoetliso a hlahloba FitSite, o e bapisa le:
 
 Ka $49-$199/kgwedi, FitSite e theko e tlase ho feta moetsi wa webosaete, e na le bokgoni bo boholo ho feta dihahi tse akaretsang, mme e betere haholo ho feta ho hloka webosaete.
 
-## Ho Kenya Mefuta ya Ditheko Tshebetsong
+## Ho Kenya Mefuta ya Ditheko Tshebetsong {#implementing-price-variations}
 
 Ditheko tsa selemo le selemo di kgothalletsa boitlamo mme di fokotsa ho tlohela tshebeletso. Eya ho tab ya **Mefuta ya Ditheko** ya morero ka mong mme o kenye dikgetho tsa selemo le selemo:
 
@@ -46,12 +46,12 @@ Ditheko tsa selemo le selemo di kgothalletsa boitlamo mme di fokotsa ho tlohela 
 
 Kenya sebaka sa **Kgetho ya Nako** foromong ya hao ya tefo hore bareki ba kgone ho feto-fetola pakeng tsa tefiso ya kgwedi le kgwedi le ya selemo le selemo. Bona [Diforomo tsa Tefo](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Hobaneng Ditheko tsa Selemo le Selemo di Sebetsa
+### Hobaneng Ditheko tsa Selemo le Selemo di Sebetsa {#why-annual-pricing-works}
 
 - **Bakeng sa hao**: Chelete e kenang pele, ho tlohela tshebeletso ho tlase (bareki ba lefang selemo le selemo ha ba na monyetla o moholo wa ho hlakola bohareng ba nako)
 - **Bakeng sa bona**: Poloko ya nnete, tekanyetso e ka bolelehang esale pele
 
-## Ditefiso tsa Setup
+## Ditefiso tsa Setup {#setup-fees}
 
 Nahana ka tefiso ya setup ya hang feela bakeng sa merero e kenyeletsang tlhophiso e etswang ka matsoho:
 
@@ -61,7 +61,7 @@ Nahana ka tefiso ya setup ya hang feela bakeng sa merero e kenyeletsang tlhophis
 
 Hlophisa ditefiso tsa setup karolong ya ditheko ya morero ka mong. Bona [Ho Theha Sehlahiswa sa Hao sa Pele sa Peeletso](/user-guide/configuration/creating-your-first-subscription-product) bakeng sa dintlha.
 
-## Dinako tsa Teko
+## Dinako tsa Teko {#trial-periods}
 
 Ho fana ka teko ho fokotsa tshitiso ya ho ingodisa empa ho tlisa kotsi ya hore ba se ke ba fetoha bareki ba lefang. Bakeng sa FitSite:
 
@@ -70,11 +70,11 @@ Ho fana ka teko ho fokotsa tshitiso ya ho ingodisa empa ho tlisa kotsi ya hore b
 
 Hlophisa teko karolong ya ditheko ya morero wa Starter ka ho kgontsha toggle ya **Fana ka Teko** le ho beha bolelele ho matsatsi a 7.
 
-### Ho Etsa Hore Diteko di Fetole Bareki
+### Ho Etsa Hore Diteko di Fetole Bareki {#making-trials-convert}
 
 Teko e sebetsa feela haeba moreki a bona boleng nakong ya teko. Tatellano ya hao ya onboarding (Thuto 8) e bohlokwa mona -- di-imeile tsa kamohelo di lokela ho hlophiswa ka nako e loketseng ho kganna boikamahanyo ka hare ho fensetere ya matsatsi a 7.
 
-## Dikhoutu tsa Theolelo
+## Dikhoutu tsa Theolelo {#discount-codes}
 
 Theha dikhoutu tsa theolelo tsa leano bakeng sa merero e itseng:
 
@@ -88,7 +88,7 @@ Eya ho **Ultimate Multisite > Dikhoutu tsa Theolelo** ho di theha. Bona [Ho Theh
 Ditheolelo di lokela ho ba disebediswa tsa leano, eseng dintho tsa ka ho sa feleng. Haeba bohle ba fumana theolelo, ha se theolelo -- ke theko ya hao ya nnete. Di sebedise bakeng sa matsholo a itseng, ditshupiso, le dipapatso tse lekanyeditsweng ka nako.
 :::
 
-## Tshebetso ya Lekgetho
+## Tshebetso ya Lekgetho {#tax-handling}
 
 Haeba o sebetsa sebakeng se hlokang pokello ya lekgetho:
 
@@ -98,7 +98,7 @@ Haeba o sebetsa sebakeng se hlokang pokello ya lekgetho:
 
 Bona [Tshebetso ya Lekgetho](/user-guide/payment-gateways/tax-handling) bakeng sa tlhophiso e qaqileng. Haeba o sebeletsa bareki matjhabeng, nahana ka [addon ya VAT](/addons/vat) bakeng sa boikamahanyo ba EU.
 
-## Ho Hlahloba Ditheko tsa Hao
+## Ho Hlahloba Ditheko tsa Hao {#reviewing-your-pricing}
 
 Kamora ho thakgola, kgutlela ho ditheko kotara ka nngwe. Sheba:
 
@@ -107,7 +107,7 @@ Kamora ho thakgola, kgutlela ho ditheko kotara ka nngwe. Sheba:
 - **Ho tlohela tshebeletso ka morero**: Haeba bareki ba selemo le selemo ba tlohela tshebeletso hanyane, sutumelletsa ditheko tsa selemo le selemo ka matla
 - **Ditheko tsa bahlodisani**: Mekgwa e meng e lefisa bokae? Na o behilwe hantle?
 
-## Network ya FitSite ho Fihlela Jwale
+## Network ya FitSite ho Fihlela Jwale {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── E loketse ho thakgolwa (thuto e latelang)
 ```
 
-## Seo re se ahileng thutong ena
+## Seo re se ahileng thutong ena {#what-we-built-this-lesson}
 
 - **Litheko tsa selemo le selemo** ka theolelo ea 20% ho khothalletsa boitlamo
 - **Litefiso tsa ho seta** mekhahlelong e phahameng ho koahela boiteko ba ho kenya moreki tseleng

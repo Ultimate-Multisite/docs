@@ -3,11 +3,11 @@ title: Vývoj vlastnej brány
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Vývoj vlastnej platobnej brány
+# Vývoj vlastnej platobnej brány {#custom-gateway-development}
 
 Vlastné platobné brány môžete vytvárať rozšírením triedy `Base_Gateway`.
 
-## Trieda platobnej brány
+## Trieda platobnej brány {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrácia platobnej brány
+## Registrácia platobnej brány {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Kľúčové metódy
+## Kľúčové metódy {#key-methods}
 
 | Metóda | Účel |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Spracovať žiadosti o refundáciu |
 | `get_payment_methods()` | Vrátiť uložené platobné metódy pre zákazníka |
 
-## Obnovovacie prihlasovacie údaje pre opakované členstvá
+## Obnovovacie prihlasovacie údaje pre opakované členstvá {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 umožňuje integráciám platobných brán hlásiť, či má opakované členstvo opakovane použiteľný obnovovací prihlasovací údaj pred uložením `auto_renew`. Pripojte sa na `wu_membership_has_renewal_credential` a vráťte:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Vymažte značku chýbajúceho prihlasovacieho údaja ako súčasť úspešného toku opätovnej autorizácie vašej platobnej brány po uložení nového opakovane použiteľného prihlasovacieho údaja.
 
-## Tipy
+## Tipy {#tips}
 
 - Pri zlyhaní vždy vráťte `WP_Error`, aby Ultimate Multisite mohol spracovať zobrazenie chyby
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Použite `wu_log_add()` na zaznamenávanie špecifické pre platobnú bránu
 
-## Schopnosti poskytovateľov AI connectora
+## Schopnosti poskytovateľov AI connectora {#ai-connector-provider-capabilities}
 
 Vlastné integrácie, ktoré volajú operácie podporované AI connectorom, by mali byť v súlade s podporovanou sadou poskytovateľov OAuth zavedenou s AI Provider for Anthropic Max v1.3.0:
 

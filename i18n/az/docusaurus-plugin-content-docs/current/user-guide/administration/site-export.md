@@ -3,27 +3,27 @@ title: Sayt Eksportu
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sayt İxracı
+# Sayt İxracı {#site-export}
 
 **Site Export** (Sayt İxracı) admin səhifəsi şəbəkə administratorlarına bir saytı və ya bütün şəbəkəni köçürmə, ehtiyat nüsxə alma və ya təhvil vermə üçün yüklənə bilən bir arxivi hazırlama imkanı verir.
 
-## Bir Saytı İxrac Etmək
+## Bir Saytı İxrac Etmək {#exporting-one-site}
 
 **Ultimate Multisite > Site Export** səhifəsinə keçin və **Generate new Site Export** (Yeni Sayt İxracı Yaradır) seçin. İxrac etmək istədiyiniz alt saytı seçin, daha sonra arxivin yükləmələri, pluginlər və mövzuları (themes) ehtiva edib-etməyəcəyini seçin.
 
 İxrac tamamlandıqdan sonra, **Existing Exports** (Mövcud İxraclar) siyahısından ZIP faylını yükləyin. İxrac ZIP faylları indi özünü işə salan bir `index.php` və bir `readme.txt` ehtiva edir, beləliklə arxiv ayrı bir import plugin-i quraşdırmadan birbaşa yeni bir hosta yüklənib işə salına bilər.
 
-## Bütün Şəbəkəni İxrac Etmək
+## Bütün Şəbəkəni İxrac Etmək {#exporting-the-whole-network}
 
 Şəbəkədəki bütün alt saytları ehtiva edən tək bir arxivə ehtiyacınız varsa, Site Export səhifəsində **Network Export** (Şəbəkə İxracı) istifadə edin. Bu, host köçürmələri, fəlakətə qarşı hazırlıq məşqləri və ya hər alt saytın birlikdə köçməsi lazım olan staging yenidən qurulmaları zamanı faydalıdır.
 
 Şəbəkə ixracı tək sayt ixracından çox böyük ola biləcəyi üçün, onu aşağı trafikli bir vaxtda yerinə yetirin və həm yükləmələr, həm pluginlər, həm mövzular, həm də yaradılan ZIP faylları üçün hədəf yaddaşda kifayət qədər boş yer olduğundan əmin olun.
 
-### Network Import Bundles (Şəbəkə İxracı Paketləri)
+### Network Import Bundles (Şəbəkə İxracı Paketləri) {#network-import-bundles}
 
 Ultimate Multisite 2.12.0 versiyasından etibarən, Site Exporter **network import bundles** (şəbəkə import paketləri) yarada bilər — bunlar şəbəkə boyu saytların sadələşdirilmiş şəkildə bərpası üçün nəzərdə tutulmuş xüsusi arxivlərdir. Bir şəbəkə import paketi, bir çox saytı yeni bir şəbəkə quruluşuna bərpa etmək üçün lazım olan bütün faylları və metadata-nı ehtiva edir.
 
-#### Network Import Bundle Yaratmaq
+#### Network Import Bundle Yaratmaq {#generating-a-network-import-bundle}
 
 1. **Ultimate Multisite > Site Export** səhifəsinə keçin
 2. **Generate new Network Export** (Yeni Şəbəkə İxracı Yaradır) düyməsinə basın
@@ -32,7 +32,7 @@ Ultimate Multisite 2.12.0 versiyasından etibarən, Site Exporter **network impo
 5. **Generate** (Yaradır) düyməsinə basın
 6. **Existing Exports** (Mövcud İxraclar) siyahısından paket ZIP faylını yükləyin
 
-#### Network Import Bundle-dan Bərpa Etmək
+#### Network Import Bundle-dan Bərpa Etmək {#restoring-from-a-network-import-bundle}
 
 Saytları bir şəbəkə import paketindən bərpa etmək üçün:
 
@@ -52,7 +52,7 @@ Saytları bir şəbəkə import paketindən bərpa etmək üçün:
 - Media yükləmələri (paketdə daxil edildikdə)
 - Custom database tables və məlumatlar
 
-## Özünü İşə Salan İxrac ZIP-i Quraşdırmaq
+## Özünü İşə Salan İxrac ZIP-i Quraşdırmaq {#installing-a-self-booting-export-zip}
 
 Özünü işə salan bir ZIP faylını yeni bir hostda bərpa etmək üçün:
 

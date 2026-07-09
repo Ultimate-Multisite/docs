@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector ji bo WebLLM
+# Ultimate AI Connector ji bo WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector ji bo WebLLM derxistina AI ya xwemalî ya di gerokê de tîne ser tora multisite ya WordPress ya te. Ew modelên ziman ên mezin bi tevahî di gerokê de bi WebLLM û motora MLC dimeşîne — bê API key, bê bangên derveyî, bê ku dane ji amûra bikarhêner derkevin.
 
-## Taybetmendiyên Sereke
+## Taybetmendiyên Sereke {#key-features}
 
 - **Derxistina li aliyê gerokê**: LLM bi rêya WebLLM/MLC di geroka mêvan de herêmî dimeşe — GPU ya serverê pêwîst nîne
 - **Widget-a sohbetê ya şemitok**: Bikarhênerên têketî dikarin rasterast ji front end-ê daxwazê bidin LLM ya li aliyê gerokê
@@ -22,28 +22,28 @@ Ultimate AI Connector ji bo WebLLM derxistina AI ya xwemalî ya di gerokê de t�
 - **Cache ya IndexedDB**: Daxistinên giraniyên modelê li hember vegerandinên CDN ku rêya standard a Cache API dişkînin, sax dimînin
 - **Yekbûna filter-a wpai**: Bi filter-a `wpai_preferred_text_models` ve tê girêdan da ku taybetmendiya AI Experiments, dema were saz kirin, ber bi motora gerokê ve were rêvekirin
 
-## Pêdivî
+## Pêdivî {#requirements}
 
 - WordPress 5.3 an jî bilindtir
 - PHP 7.4 an jî bilindtir
 - Ultimate Multisite plugin (çalak)
 - Gerokek bi piştgiriya WebGPU (Chrome 113+, Edge 113+, an Firefox Nightly bi WebGPU-ya çalak)
 
-## Sazkirin
+## Sazkirin {#installation}
 
 1. Pelên addonê bar bike nav peldanka `/wp-content/plugins/` ya xwe
 2. Pluginê bi rêya menuya 'Plugins' di WordPress de çalak bike
 3. Here **Ultimate Multisite → AI Connector** da ku addonê saz bikî
 
-## Widget-a Sohbetê ya Şemitok
+## Widget-a Sohbetê ya Şemitok {#floating-chat-widget}
 
 Widget-a sohbetê ya şemitok dihêle her bikarhênerekî têketî rasterast ji front end-a te bi LLM ya li aliyê gerokê re têkilî bike, bê ku rûpela ku lê ye bihêle.
 
-### Ew Çi Dike
+### Ew Çi Dike {#what-it-does}
 
 Dema were çalak kirin, ji bo bikarhênerên têketî li quncikê her rûpela front-end îkonek sohbetê xuya dibe. Bi tikandina îkonê panelek sohbetê vedibe ku bikarhêner dikare prompt binivîse û ji modela WebLLM ya herêmî dimeşe bersivan bistîne. Ji ber ku model bi tevahî di gerokê de dimeşe, bersiv taybet in û tu pêvajoya li aliyê serverê tê de nîne.
 
-### Nîşandera Rewşê ya Admin-Bar
+### Nîşandera Rewşê ya Admin-Bar {#admin-bar-status-indicator}
 
 Admin bar ya WordPress nîşanderek rewşê dihewîne ku rewşa niha ya motora WebLLM nîşan dide:
 
@@ -56,7 +56,7 @@ Admin bar ya WordPress nîşanderek rewşê dihewîne ku rewşa niha ya motora W
 
 Nîşander bê hewcedariya nûbarkirina rûpelê di dem-rast de nû dibe.
 
-### Çawa Widget-ê Çalak an Neçalak Bikî
+### Çawa Widget-ê Çalak an Neçalak Bikî {#how-to-enable-or-disable-the-widget}
 
 1. Di rêveberiya torê de here **Ultimate Multisite → AI Connector**
 2. Panela **Connector** bibîne
@@ -65,17 +65,17 @@ Nîşander bê hewcedariya nûbarkirina rûpelê di dem-rast de nû dibe.
 
 Widget herwiha dikare ji rêveberiya taybet a malperê jî ji bo her malperê were çalak an neçalak kirin, heke rêveberê torê ew destûr daye.
 
-## Mîhengên Widget-ê
+## Mîhengên Widget-ê {#widget-settings}
 
 Panela Connector di **Ultimate Multisite → AI Connector** de ev mîhengên jêr ji bo widget-a sohbetê ya şemitok dihewîne:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 Widget-a sohbetê ji bo hemû torê vedike an digire. Dema girtî be, widget li ser tu rûpela front-end xuya nabe, bêyî ku rola bikarhêner çi be.
 
 **Standard:** Girtî
 
-### Tevgera Auto-Prompt
+### Tevgera Auto-Prompt {#auto-prompt-behaviour}
 
 Kontrol dike ka dema bikarhêner widget-ê vedike, widget bi awayekî xweber prompt bişîne an na.
 
@@ -93,7 +93,7 @@ Dema li ser **Custom prompt** were danîn, qadeke nivîsê ya zêde xuya dibe ku
 
 **Standard:** Disabled
 
-## Demxistina SharedWorker
+## Demxistina SharedWorker {#sharedworker-runtime}
 
 Guhertoya 1.1.0 demxistineke SharedWorker ji bo motora MLC dide nasîn. Berê, her taba gerokê ku WebLLM bi kar dianî mînaka xwe ya modelê bar dikir, ji bo bîra GPU pêşbazî dikir û li ser amûrên bi VRAM kêm pirsgirêkên performansê çêdikir.
 
@@ -105,29 +105,29 @@ Bi demxistina SharedWorker, yek tab wekî mêvandarê motorê tevdigere. Hemû t
 
 SharedWorker ji bikarhêneran re zelal e. Nîşandera rewşê ya admin-bar her dem rewşa motora parvekirî nîşan dide, ne rewşa taba takekesî.
 
-## Navberê apiFetch
+## Navberê apiFetch {#apifetch-middleware}
 
 Addon navberek `apiFetch` saz dike ku daxwazên WordPress REST API yên li gorî şêwaza AI Client SDK digire. Li şûna ku daxwazek HTTP ya loopback ji serverê re were çêkirin, ev daxwaz rasterast ber bi broker-a WebLLM ya herêmî ya di SharedWorker de dimeşe ve tên rêvekirin.
 
 Ev tê wateya ku plugin û theme-yên ku ji bo bangkirina endpoint-ên AI API ya standard a WordPress `apiFetch` bi kar tînin, dema modela li aliyê gerokê amade be, bê hewcedariya tu guherîna code-ê, bixwe sûdê jê werdigirin.
 
-## Hook û Filter
+## Hook û Filter {#hooks-and-filters}
 
-### Filter
+### Filter {#filters}
 
 - `wpai_preferred_text_models` — Motora gerokê ya WebLLM wekî modelekî nivîsê yê bijarte tomar bike. Ev pêvek dema motor hatibe mîhengkirin û berdest be, xweber bi vî filterê ve tê girêdan.
 - `ultimate_webllm_widget_enabled` — Rewşa çalakkirina widgetê ji bo bikarhênerekî taybet an çarçoveyekê biguherîne. `true` an `false` vegerîne.
 - `ultimate_webllm_auto_prompt` — Nivîsa auto-prompt berî ku ji widgetê re were şandin biguherîne. Rêza promptê û heybera heyî ya `WP_Post` werdigire.
 
-## Çareserkirin
+## Çareserkirin {#troubleshooting}
 
-### Widgeta sohbetê xuya nake
+### Widgeta sohbetê xuya nake {#the-chat-widget-does-not-appear}
 
 - Piştrast bike ku bikarhêner têketiye — widget tenê ji bikarhênerên piştrastkirî re tê nîşandan
 - Kontrol bike ku **Enable floating chat widget** di panela Connector de vekirî ye
 - Piştrast bike ku geroka bikarhêner WebGPU piştgirî dike (li Jorê Beşê Pêdiviyan binêre)
 
-### Nîşandera admin-bar "Error" nîşan dide
+### Nîşandera admin-bar "Error" nîşan dide {#the-admin-bar-indicator-shows-error}
 
 Konsola pêşvebirê ya gerokê veke (F12) û li xeletiyên girêdayî WebLLM bigere. Sedemên gelemperî:
 
@@ -135,10 +135,10 @@ Konsola pêşvebirê ya gerokê veke (F12) û li xeletiyên girêdayî WebLLM bi
 - Daxistina giraniya modelê bi ser neket — girêdana torê kontrol bike û biceribîne cache ya IndexedDB di amûrên pêşvebirê yên gerokê de paqij bike (Application → IndexedDB)
 - Pêveka gerokê SharedWorker asteng dike
 
-### Giraniyên modelê her carê tên daxistin
+### Giraniyên modelê her carê tên daxistin {#model-weights-download-every-time}
 
 Pêvek IndexedDB wekî piştgira cacheê bi kar tîne da ku giraniyên modelê piştî CDN redirects jî bimînin. Ger giranî li ser her serdanê dîsa tên daxistin, kontrol bike ku IndexedDB ji aliyê mîhengekî taybetmendiya nepenîtiyê ya gerokê an pêvekekê ve nayê paqijkirin.
 
-## Changelog
+## Changelog {#changelog}
 
 Ji bo dîroka tevahî ya guhertoyan li [Changelog](./changelog) binêre.

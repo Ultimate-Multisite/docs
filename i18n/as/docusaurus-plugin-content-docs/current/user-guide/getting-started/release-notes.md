@@ -3,9 +3,9 @@ title: ৰিলিজ টোকাস
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# ৰিলিজ টোকা
+# ৰিলিজ টোকা {#release-notes}
 
-## সংস্কৰণ 2.13.0 — 2026-06-05 তাৰিখে মুক্তি দিয়া হৈছে
+## সংস্কৰণ 2.13.0 — 2026-06-05 তাৰিখে মুক্তি দিয়া হৈছে {#version-2130--released-on-2026-06-05}
 
 - নতুন: গ্ৰাহক Account, checkout, billing, ছাইট, invoice, template সলনি কৰা, আৰু domain mapping প্ৰবাহৰ বাবে sovereign-tenant সমৰ্থন যোগ কৰা হৈছে, যাতে tenant network-সমূহে পৰিচালিত কাৰ্য্যৰ বাবে গ্ৰাহকসকলক মূল ছাইটলৈ ঘূৰাই পঠিয়াব পাৰে।
 - নতুন: recurring membership-সমূহৰ বাবে renewal-credential পৰীক্ষা যোগ কৰা হৈছে, যাতে সংৰক্ষিত billing agreement, subscription, বা vault token নথকা সময়ত gateway-সমূহে auto-renewal নিষ্ক্ৰিয় কৰিব পাৰে।
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - সংশোধন: Membership renewal, expiration display, আৰু payment collection edge case-সমূহে এতিয়া তৎক্ষণাত expiration, crash, বা আৱশ্যকীয় payment বাদ পৰাটো এৰাই চলে।
 - উন্নত: WordPress সামঞ্জস্যতা 7.0 লৈকে পৰীক্ষা কৰা হৈছে, production Vue asset-সমূহ npm source-ৰ পৰা পুনৰ নিৰ্মাণ কৰা হৈছে, আৰু Cypress end-to-end coverage-এ এতিয়া অধিক checkout, setup, SSO, আৰু gateway প্ৰবাহ পৰীক্ষা কৰে।
 
-## সংস্কৰণ 2.12.0 — 2026-05-15 তাৰিখে মুক্তি দিয়া হৈছে
+## সংস্কৰণ 2.12.0 — 2026-05-15 তাৰিখে মুক্তি দিয়া হৈছে {#version-2120--released-on-2026-05-15}
 
 - নতুন: domain mapping integration-সহ সমৰ্থিত host provider হিচাপে Hostinger (hPanel) যোগ কৰা হৈছে
 - নতুন: Site Exporter-এ এতিয়া streamlined network-wide ছাইট পুনৰুদ্ধাৰৰ বাবে network import bundle-সমূহ handle কৰে
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - সংশোধন: Site Exporter CLI-এ এতিয়া সঠিক default network ছাইট selection সংৰক্ষণ কৰে
 - উন্নত: plugin package-ৰ পৰা bundled wp-cli আঁতৰোৱা হৈছে, যাৰ ফলত plugin-ৰ আকাৰ কমিছে
 
-## সংস্কৰণ 2.11.0 — 2026-05-11 তাৰিখে মুক্তি দিয়া হৈছে
+## সংস্কৰণ 2.11.0 — 2026-05-11 তাৰিখে মুক্তি দিয়া হৈছে {#version-2110--released-on-2026-05-11}
 
 - নতুন: ছাইট export-সমূহে এতিয়া self-booting `index.php` bundle কৰে, যাতে ZIP-টো পৃথক plugin install নকৰাকৈ নতুন host-ত install কৰিব পৰা যায়।
 - নতুন: Network export-এ administrator-সকলক Site Export admin page-ৰ পৰা একেটা archive-ত সকলো subsite export কৰিবলৈ দিয়ে।
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - নতুন: checkout form editor-এ আৱশ্যকীয় field configured নকৰাকৈ product যোগ কৰিলে সতৰ্ক কৰে।
 - নতুন: Import/Export settings tab-এ এতিয়া নিজৰ scope স্পষ্টভাৱে বৰ্ণনা কৰে আৰু Site Export tool-লৈ পোনপটীয়াকৈ link কৰে।
 
-## সংস্কৰণ 2.10.0 — 2026-05-05 তাৰিখে মুক্তি দিয়া হৈছে
+## সংস্কৰণ 2.10.0 — 2026-05-05 তাৰিখে মুক্তি দিয়া হৈছে {#version-2100--released-on-2026-05-05}
 
 - নতুন: seamless gateway configuration-ৰ বাবে OAuth flag gate-সহ manual credential entry-ৰ PayPal guided setup wizard।
 - নতুন: বৰ্তমান-template card, persistent grid, আৰু **বৰ্তমান template reset কৰক** button-সহ template switch customer panel পুনৰ ডিজাইন কৰা হৈছে।
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - সংশোধন: সকলো login flow-ত filtered SSO path সন্মান কৰা হৈছে।
 - সংশোধন: Blank ছাইট identity option-সমূহ save কৰাৰ সময়ত সংৰক্ষিত থাকে।
 
-## সংস্কৰণ 2.9.0 — 2026-04-30 তাৰিখে মুক্তি দিয়া হৈছে
+## সংস্কৰণ 2.9.0 — 2026-04-30 তাৰিখে মুক্তি দিয়া হৈছে {#version-290--released-on-2026-04-30}
 
 - নতুন: **Tools > Export & Import**-ৰ অধীনত single-site export আৰু import যোগ কৰা হৈছে।
 - সংশোধন: Export ZIP file-সমূহ এতিয়া authenticated download endpoint-ৰ জৰিয়তে serve কৰা হয়।
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - সংশোধন: user settings key-সমূহত Tour ID-সমূহ underscore-লৈ normalise কৰা হৈছে।
 - উন্নত: ভাল compatibility-ৰ বাবে Alchemy/Zippy-ৰ সলনি এতিয়া ZipArchive ব্যৱহাৰ কৰা হৈছে।
 
-## সংস্কৰণ 2.8.0 — 2026-04-29
+## সংস্কৰণ 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - নতুন: Other Options ছেটিংছ UI-ত Enable Jumper toggle যোগ কৰা হৈছে।
 - নতুন: checkout ফৰ্মৰ তালিকা table-ত Status স্তম্ভ যোগ কৰা হৈছে।

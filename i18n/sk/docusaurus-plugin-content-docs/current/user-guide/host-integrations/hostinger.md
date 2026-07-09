@@ -1,22 +1,22 @@
 ---
 title: Integrácia Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrácia s Hostinger (hPanel)
+# Integrácia s Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Úvod
+## Úvod {#overview}
 
 Hostinger je populárny poskytovateľ webového hostingu s moderným kontrolným panelom nazvaným hPanel. Integrácia Ultimate Multisite Hostinger umožňuje automatické synchronizovanie domén medzi Ultimate Multisite a hPanel Hostinger, čo vám umožňuje automaticky spravovať mapovanie domén a poddomén priamo z admina WordPressu.
 
-## Funkcionality
+## Funkcionality {#features}
 
 - Automatické vytváranie pridaných domén (addon domain) v hPanel
 - Automatické vytváranie poddomén (pre inštalácie s poddoménovým multisite) v hPanel
 - Odstránenie domény pri odstránení mapovania
 - Bezproblémová integrácia s API správou doménami hPanel
 
-## Požiadavky
+## Požiadavky {#requirements}
 
 Aby ste mohli použiť integráciu Hostinger, potrebujete:
 
@@ -35,9 +35,9 @@ Voliteľne môžete tiež definovať:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Predvolený API endpoint
 ```
 
-## Pokyny na konfiguráciu
+## Pokyny na konfiguráciu {#setup-instructions}
 
-### 1. Vytvorenie vášho Hostinger API tokenu
+### 1. Vytvorenie vášho Hostinger API tokenu {#1-generate-your-hostinger-api-token}
 
 1. Prihláste sa do svojho účtu Hostinger a prístupte do hPanel
 2. Prejdite na **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Predvolený A
    - Subdomain management (Správa poddomén)
 6. Skopírujte vytvorený token a uloťte ho bezpečne
 
-### 2. Nájdite svoj ID účtu
+### 2. Nájdite svoj ID účtu {#2-find-your-account-id}
 
 1. V hPanel prejdite na **Account Settings** → **Account Information** (Informácie o účte)
 2. V tomto zozname je váš Account ID uvedený
 3. Skopírujte a uložte tento ID na nasledujúci krok
 
-### 3. Pridanie constantov do wp-config.php
+### 3. Pridanie constantov do wp-config.php {#3-add-constants-to-wp-configphp}
 
 Pridajte nasledujúce kon constanty do svojho súboru `wp-config.php`:
 
@@ -69,7 +69,7 @@ Ak máte in Hostinger účte in innej API konečnú bod, môžete ho prispôsobi
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Aktivácia integrácie
+### 4. Aktivácia integrácie {#4-enable-the-integration}
 
 1. V administrácii WordPress prejdite do **Ultimate Multisite > Settings**
 2. Prejdite na záložku **Domain Mapping** (Mapovanie domén)
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Aktivujte integráciu **Hostinger (hPanel)**
 5. Kliknite na **Save Changes** (Uložiť zmeny)
 
-## Ako to funguje
+## Ako to funguje {#how-it-works}
 
-### Addon domény
+### Addon domény {#addon-domains}
 
 Keď mapujete domén v Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Keď mapujete domén v Ultimate Multisite:
 2. Doména je nastavená tak, aby smerovala na váš základný adresár (root directory)
 3. Keď odstráníte mapovanie domény, integrácia automaticky odstráni addon doménu z hPanel
 
-### Poddomény
+### Poddomény {#subdomains}
 
 Pre inštalácie multisite s poddoménami, keď vytvoríte novú ponuku:
 
@@ -95,7 +95,7 @@ Pre inštalácie multisite s poddoménami, keď vytvoríte novú ponuku:
 2. Pošle požiadavku API Hostinger, aby prispôsobil poddoménu
 3. Poddoména je nastavená tak, aby smerovala na váš základný adresár (root directory)
 
-## Dôležité poznámky
+## Dôležité poznámky {#important-notes}
 
 - Integrácia používa REST API Hostinger na komunikáciu s vašou účtom
 - Vaš API token musí mať potrebné povolenia pre správu domén a poddomén
@@ -103,33 +103,33 @@ Pre inštalácie multisite s poddoménami, keď vytvoríte novú ponuku:
 - Požiadavky API sa vykonávajú bezpečne cez HTTPS
 - Udržiavajte svoj API token v bezpečnej ochrane a nikdy ho neposkytujte verejnosti
 
-## Riešenie problémov
+## Riešenie problémov {#troubleshooting}
 
-### Problémy s pripojením k API
+### Problémy s pripojením k API {#api-connection-issues}
 
 * Skontrolujte, či je váš API token správny a že neprecálil*
 * Skontrolujte, či je váš Account ID správny*
 * Uistite sa, že váš API token má potrebné povolenia na správu domén*
 * Overte, či je váš účet Hostinger aktívny a v poriadku
 
-### Doména nepridaná
+### Doména nepridaná {#domain-not-added}
 
 * Skontrolujte si logy Ultimate Multisite na akékoľvek chybové správy
 * Overte, či nie je doména už pridaná do vášho účtu Hostinger
 * Uistite sa, že váš účet Hostinger sa nezacholil na limit dodatočných domén
 * Potvrďte, že doména je správne smerovaná na vaše nameservery Hostinger
 
-### Problémy so SSL certifikátom
+### Problémy so SSL certifikátom {#ssl-certificate-issues}
 
 * Integrácia neobsahuje vydávanie SSL certifikátov
 * Hostinger zvyčajne poskytuje bezplatné SSL certifikáty prostredníctvom AutoSSL
 * Môžete SSL certifikáty spravovať priamo v hPanel pod sekci **SSL/TLS**
 * Alternatívne použite Let's Encrypt s funkciou AutoSSL od Hostinger
 
-## Podpora
+## Podpora {#support}
 
 Pre ďalšiu pomoc s integráciou Hostinger sa obráťte na:
 
 * [Hostinger API Dokumentácia](https://support.hostinger.com/en/articles/4286-api-documentation)
-* [Ultimate Multisite Dokumentácia](/docs)
+* [Ultimate Multisite Dokumentácia](/)
 * [Podpora Ultimate Multisite](https://ultimatemultisite.com/support)

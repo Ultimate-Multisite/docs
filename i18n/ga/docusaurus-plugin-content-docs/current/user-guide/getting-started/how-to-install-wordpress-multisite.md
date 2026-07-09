@@ -3,7 +3,7 @@ title: Conas aistriú WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Conas an WordPress Multisite?
+# Conas an WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 Leine WordPress Multisite leat faoi bhealach chun siomraithe (network) de shailte ar chuid isteach. Is éifeacht is éifeacht a bhí ag curtha go léir, ach níl é an-aontaithe go dtí.
 
@@ -55,7 +55,7 @@ Agus an code seo, a bhaineann le do _**.htaccess**_ file:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add an slash deiridh ar /wp-admin
+# add an slash deiridh ar /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -88,9 +88,9 @@ Chun cur isteach subsite:
 
 Tar éis an fáil iad na fáil, cliom ar an nútinn "Add site". Tar éis a bhcreodú an subsite nua, cur isteach go bhfuil sé ag déanamh cinnte go bhfuil an subsite ag déanamh díriú.
 
-## Probleanna Comhthabhairta:
+## Probleanna Comhthabhairta: {#common-problems}
 
-### 1\. Is féidir liom cur isteach nugaiteacha ach níl iad ag cur isteach.
+### 1\. Is féidir liom cur isteach nugaiteacha ach níl iad ag cur isteach. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Má bhí tú ag cur isteach subdomains, rud éigin leat a chur isteach ar an gréine wildcard subdomains do do ngrúin multisite.
 

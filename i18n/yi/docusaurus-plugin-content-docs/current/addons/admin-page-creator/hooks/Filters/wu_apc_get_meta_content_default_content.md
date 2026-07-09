@@ -4,11 +4,11 @@ title: פֿילטער - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# פילטער: wu_apc_get_meta_content_default_content
+# פילטער: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 דערלויבן אַנטוויקלער צו פֿילטערן די פעליקייט־ווערטן
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | טיפּ פֿון די מעטאַ־דאַטן וואָס זאָלן ווערן באַקומען. |
 | $meta_key | `string` | נאָמען פֿון דעם מעטאַ־פֿעלד. |
 
-### זינט
+### זינט {#since}
 
 - 1.4.0
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) אויף שורה 68
 
 
-## גיט צוריק
+## גיט צוריק {#returns}
 נײַער פעליקייט־ווערט.

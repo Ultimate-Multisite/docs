@@ -4,11 +4,11 @@ title: Akayunguruzo - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Akayunguruzo: wu_admin_notices
+# Akayunguruzo: wu_admin_notices {#filter-wuadminnotices}
 
 Emerera abategura porogaramu kuyungurura admin notices zongerwamo na Ultimate Multisite.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Emerera abategura porogaramu kuyungurura admin notices zongerwamo na Ultimate Mu
 | $filter | `string` | Niba notices zishobora gukurwaho zaba zayunguruwe zigakurwamo. |
 | $dismissed_messages | `array` | Urutonde rw’imfunguzo za notice zakuwemo. |
 
-### Kuva kuri
+### Kuva kuri {#since}
 
 - 2.0.0
-### Inkomoko
+### Inkomoko {#source}
 
 Bisobanuwe muri [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) ku murongo wa 121
 
 
-## Ibisubizwa
+## Ibisubizwa {#returns}

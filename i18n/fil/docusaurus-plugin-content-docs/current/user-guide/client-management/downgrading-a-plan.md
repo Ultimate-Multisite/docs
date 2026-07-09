@@ -3,13 +3,13 @@ title: Pag-downgrade ng Plano
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Pag-downgrade ng plan (v2)
+# Pag-downgrade ng plan (v2) {#downgrading-a-plan-v2}
 
 _**MAHALAGANG TANDAAN: Tumutukoy ang artikulong ito sa Ultimate Multisite bersyon 2.x.**_
 
 Ang pag-downgrade ng plan o subscription ay karaniwang aksyon na maaaring gawin ng iyong mga client kung may limitado silang badyet o napagpasyahan nilang hindi nila kakailanganin ng maraming resource para patakbuhin ang kanilang subsite.
 
-## Paano mag-downgrade ng plan
+## Paano mag-downgrade ng plan {#how-to-downgrade-a-plan}
 
 Maaaring i-downgrade ng iyong mga client ang kanilang plan anumang oras sa pamamagitan ng pag-log in sa kanilang subsite admin dashboard at pag-click sa **Change** sa ilalim ng kanilang Account page.
 
@@ -25,7 +25,7 @@ Para magpatuloy, kailangan lang ng user na i-click ang **Complete Checkout** but
 
 ![Account page na nagpapakita ng banner ng nakabinbing pagbabago sa membership](/img/account-page/pending-change.png)
 
-### Ano ang mangyayari kapag nag-downgrade ng plan ang isang user
+### Ano ang mangyayari kapag nag-downgrade ng plan ang isang user {#what-happens-when-a-user-downgrades-their-plan}
 
 Mahalagang tandaan na ang pag-downgrade ng plan ay hindi nagbabago sa kasalukuyang configuration sa subsite ng user.
 
@@ -37,7 +37,7 @@ Para sa mga post na lumalampas sa limitasyong itinakda sa plan, mayroon kang 3 m
 
 ![Page ng Network Admin Settings Sites na nagpapakita ng mga opsyon sa kilos kapag lumampas sa limitasyon ng post](/img/account-page/settings-sites-post-limit.png)
 
-### Ano ang mangyayari sa pagbabayad
+### Ano ang mangyayari sa pagbabayad {#what-happens-to-the-payment}
 
 Sa bersyon 2.0, hindi na ito nangangailangan ng anumang adjustment sa pagbabayad pagdating sa proration.
 

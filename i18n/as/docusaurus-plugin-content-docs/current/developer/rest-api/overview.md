@@ -3,28 +3,28 @@ title: REST API অৱলোকন
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ৰেফাৰেন্স
+# REST API ৰেফাৰেন্স {#rest-api-reference}
 
-## ভিত্তি কনফিগাৰেচন
+## ভিত্তি কনফিগাৰেচন {#base-configuration}
 
 **ভিত্তি URL:** `{site_url}/wp-json/wu/v2/`
 **প্ৰমাণীকৰণ:** API Key আৰু Secret (HTTP Basic Auth বা URL Parameters)
 
-## প্ৰমাণীকৰণ
+## প্ৰমাণীকৰণ {#authentication}
 
-### API সক্ৰিয় কৰক
+### API সক্ৰিয় কৰক {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ক্ৰেডেনচিয়েল লাভ কৰক
+### API ক্ৰেডেনচিয়েল লাভ কৰক {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### প্ৰমাণীকৰণ পদ্ধতিসমূহ
+### প্ৰমাণীকৰণ পদ্ধতিসমূহ {#authentication-methods}
 
 **HTTP Basic Auth (পৰামৰ্শিত):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## মূল এণ্ডপইণ্টসমূহ
+## মূল এণ্ডপইণ্টসমূহ {#core-endpoints}
 
-### 1. গ্ৰাহক API
+### 1. গ্ৰাহক API {#1-customers-api}
 
 **ভিত্তি ৰুট:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. ছাইটসমূহৰ API
+### 2. ছাইটসমূহৰ API {#2-sites-api}
 
 **ভিত্তি ৰুট:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. সদস্যপদসমূহৰ API
+### 3. সদস্যপদসমূহৰ API {#3-memberships-api}
 
 **ভিত্তি ৰুট:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. প্ৰডাক্টসমূহৰ API
+### 4. প্ৰডাক্টসমূহৰ API {#4-products-api}
 
 **ভিত্তি ৰুট:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. পেমেণ্টসমূহৰ API
+### 5. পেমেণ্টসমূহৰ API {#5-payments-api}
 
 **ভিত্তি ৰুট:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ডমেইনসমূহৰ API
+### 6. ডমেইনসমূহৰ API {#6-domains-api}
 
 **ভিত্তি ৰুট:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## পঞ্জীয়ন এণ্ডপইণ্ট
+## পঞ্জীয়ন এণ্ডপইণ্ট {#registration-endpoint}
 
 `/register` এণ্ডপইণ্টে এটা সম্পূৰ্ণ ক্ৰয়-সম্পূৰ্ণকৰণ/পঞ্জীয়ন প্ৰবাহ প্ৰদান কৰে:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## সাৰ্বভৌম টেনেণ্ট এণ্ডপইণ্টসমূহ
+## সাৰ্বভৌম টেনেণ্ট এণ্ডপইণ্টসমূহ {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0-এ পৃথক কৰা টেনেণ্ট প্ৰভিজন, পৰিদৰ্শন, বা যাচাই কৰা সংহতিসমূহৰ বাবে সাৰ্বভৌম টেনেণ্ট REST সমৰ্থন যোগ কৰে।
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false`-ক আৰম্ভণিৰ পূৰ্বৰ বাধা হিচাপে গণ্য কৰক। যাচাইৰ বিৱৰণ পৰীক্ষা কৰক, ডাটাবেছ হ’ষ্ট বাইণ্ডিং, কিউ, ব্যৱহাৰকাৰী প্ৰভিজনিং, বা ৰাউটিং সমস্যা ঠিক কৰক, তাৰ পিছত পুনৰ যাচাই চেষ্টা কৰক।
 
-## ত্ৰুটি প্ৰতিক্ৰিয়াসমূহ
+## ত্ৰুটি প্ৰতিক্ৰিয়াসমূহ {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## পৃষ্ঠাবিভাজন আৰু ফিল্টাৰিং
+## পৃষ্ঠাবিভাজন আৰু ফিল্টাৰিং {#pagination-and-filtering}
 
 **কুৱেৰী পেৰামিটাৰসমূহ:**
 ```http

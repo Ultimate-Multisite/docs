@@ -3,13 +3,13 @@ title: Rabattcodes erstellen
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Rabattcodes erstellen (v2)
+# Rabattcodes erstellen (v2) {#creating-discount-codes-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
 Mit Ultimate Multisite kannst du Rabattcodes erstellen, um deinen Kunden Rabatte auf ihre Abonnements zu geben. Und sie zu erstellen ist einfach!
 
-## Rabattcodes erstellen und bearbeiten
+## Rabattcodes erstellen und bearbeiten {#creating-and-editing-discount-codes}
 
 Um einen Rabattcode zu erstellen oder zu bearbeiten, gehe zu **Ultimate Multisite > Rabattcodes**.
 
@@ -87,7 +87,7 @@ Der Gutschein ist jetzt in deiner Liste, und von dort aus kannst du auf **bearbe
 
 ###
 
-### URL-Parameter verwenden:
+### URL-Parameter verwenden: {#using-url-parameters}
 
 Wenn du deine Preistabellen anpassen oder eine schöne Gutscheincode-Seite für deine Website erstellen möchtest und automatisch einen Rabattcode auf dein Checkout-Formular anwenden willst, kannst du dies über URL-Parameter tun.
 

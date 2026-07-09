@@ -3,11 +3,11 @@ title: Uhlolojikelele lwe-Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Ukubuka konke kwe-Dashboard
+# Ukubuka konke kwe-Dashboard {#dashboard-overview}
 
 Ultimate Multisite ine-**Dashboard** ezinikele ngaphansi kwemenyu ye-Ultimate Multisite, futhi ingeza namawijethi ku-Dashboard Yenethiwekhi. Lesi sihloko sichaza lokho ozokubona kuzo zombili izindawo.
 
-## I-Dashboard Yenethiwekhi
+## I-Dashboard Yenethiwekhi {#the-network-dashboard}
 
 Ultimate Multisite ifaka amawijethi awusizo ku-dashboard yezinga lenethiwekhi etholakala ku-**Amasayithi Ami → Ukuphatha Inethiwekhi → Dashboard**.
 
@@ -35,7 +35,7 @@ Nakhu okuhlinzekwa iwije thi ngayinye:
 
 ![Iwije thi Yezindaba](/img/admin/network-dashboard-news.png)
 
-## I-Dashboard ye-Ultimate Multisite
+## I-Dashboard ye-Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Nakuba i-dashboard yenethiwekhi iveza ulwazi oluphelele mayelana nenethiwekhi, i-dashboard ye-Ultimate Multisite (ezingeni eliphezulu lemenyu ye-Ultimate Multisite) iveza ulwazi mayelana nesevisi.
 

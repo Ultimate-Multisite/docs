@@ -3,11 +3,11 @@ title: Mawuwozo
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Requirements
+# Ultimate Multisite Requirements {#ultimate-multisite-requirements}
 
 Mwayi wamukondwa mwayi muli pafupi pamene muli kupanga kuti mwayi wanu wosangalala (Ultimate Multisite) ufunika kuti mudzire. Mwayi, mwayi wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga ndi zinthu zingapo. Kuti mudzire, mwayi wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga kuti mudzire. Mwayi, mwayi wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga kuti mudzire.
 
-## Domain Name
+## Domain Name {#domain-name}
 
 Mwayi, tsimikizani za domain name.
 
@@ -17,7 +17,7 @@ Mwayi wanu wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga 
 
 Mwayi onse womwe muli ndi chiyembekezo chomwe muli ndi chiyembekezo chomwe mudzire ndi chiyembekezo chomwe mudzire ndi chiyembekezo chomwe mudzire ndi chiyembekezo chomwe mudzire. Kodi muli woteteza kampani? Koma mwayi wanu wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga kuti mudzire, monga muli wopereka websites monga service! Simukondani kuti muli ndi domain name yomwe uyenera ndi njira yanu ya kampani.
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 Poyamba, mwayi wanu wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga chiyembekezo chomwe muli ndi chiyembekezo chomwe mudzire ndi chiyembekezo chomwe mudzire ndi chiyembekezo chomwe mudzire. Kodi muli ndi kampani yomwe imapereka hosting yomwe imapereka wopanga wanu ndi Ultimate Multisite? Kuli ndi zinthu zina zomwe zimapereka bwino ndi Ultimate Multisite, zomwe zimatha kukhala chinthu chomwe chimapangitsa kuti mwayi wanu wosangalala wosangalala (Ultimate Multisite) ufunika.
 
@@ -25,7 +25,7 @@ Ultimate Multisite yenda kutendeka ndi mpene wopereka kwa anthu onse ahosting. K
 
 Pamene mukuyenera ku mapulogalamu a server, kumukondetsedwa ndi formula yenera osati, koma kukhala kuyenera ndi mafunso ndi mfundo zomwe mukuwona ndipo kusiyanasi kwa mtundu wanu wa ntchito. Hosting yomwe imapereka ntchito yomwe yomwe (shared hosting) yomwe ndi chifukwa cha kukambitsidwa kuli chifukwa cha kuchokera, koma pamene mtindo wanu wopereka ntchito kumaganiza, mungakukondetsedwe ndi dedicated VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nkhawa, tili tikukonza malo kale za WordPress Multisite.
 

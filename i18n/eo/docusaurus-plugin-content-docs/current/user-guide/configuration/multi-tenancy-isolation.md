@@ -3,11 +3,11 @@ title: Multi-tenancy izolitaĵo
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isolatio
+# Multi-Tenancy Isolatio {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suportas izolacion per-subsite bazas de dates kaj sistemoj por sovrajn tenantoj. Tio sekvas separan lajn datumojn de tenantoj, plibordante la provizadon de la retoj, la fakturadon kaj la administradon.
 
-## Izolacian strategio
+## Izolacian strategio {#isolation-strategy}
 
 Uzu de sovrajna izolacio por klientoj kiuj bezonas pli fortran data separacion, dedikitan sistemaj storo (filesystem storage) aŭ apartan host-limito.
 
@@ -18,7 +18,7 @@ Chak sovrajni tenanto devas havi:
 - Un entrado de registrio de tenantoj kiu mapas la siton al sia baza, la root parto, la nombro de la servero kaj la izolacia modelo.
 - Un rezultato de migraverifikado antaŭ ol la tenanto konsideretas viva.
 
-## Baza host ligado (Database host binding)
+## Baza host ligado (Database host binding) {#database-host-binding}
 
 Versio 1.2.0 ŝanĝas la defaulton komporton de ligado al sama makina baza por sovrajn instaloj. La valoro "al sama makina" kiel `localhost` estas normaligita, tiel Bedrock, FrankenPHP kaj kontainerizita WordPress instaloj povas doni kaj verifi pli permesojn kontraŭ la hosta stringo MySQL de fakto vidi.
 
@@ -31,11 +31,11 @@ Kiam vi konfigurigas sovrajn tenanton:
 
 Se verifikado raportas ne sukcesajn donojn, kompare la donojn de la bazaj utilizantoj de la tenanton kun la konfigurita host ligado. Utilanto donita por `user@localhost` estas malsama ol `user@127.0.0.1` aŭ `user@%`.
 
-## Sistemo (Filesystem root)
+## Sistemo (Filesystem root) {#filesystem-root}
 
 La root de la locatant (tenant) devasigi stabil sur restartaj kaj deplojaj. Evitu temporajn montaj kurboj. Por Bedrock-stile instaloj, konfirmiĝu, ke la root de la locanto indikas al la WordPress web root esperita de la tenant bootstrapo, ne nur al la projekto root.
 
-## Ordino de provizoj (Provisioning order)
+## Ordino de provizoj (Provisioning order) {#provisioning-order}
 
 Por novaj suverajn locantojn, uzu ĉi tiun ordon:
 
@@ -49,7 +49,7 @@ Por novaj suverajn locantojn, uzu ĉi tiun ordon:
 
 Ĉi tiu ordino permesas, ke partaŭ izolita lokantoj ne ricevas trafikon, kiel baziga skribanto, utilizantoj kaj fizikaj kurboj estas جاهzaj.
 
-## Fluo de la administriĝo de suverajn klientoj (Sovereign customer management flows)
+## Fluo de la administriĝo de suverajn klientoj (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 mantas akciojn de administriĝo de klientoj sur la ĉefa sitio, kiam suverna modo estas aktivita. La locanto povas plu fari kiel izolitan WordPress instalilon, sed klient-orientitaj akcioj, kiuj dependas de retoj fakturaj, aĉetado (membership) aŭ partaj konto datumoj, devas diri la klienton ĉu al la ĉefa sitio en sto, en celo ne provi plenumi la akcion intern la runtime de la locanto.
 

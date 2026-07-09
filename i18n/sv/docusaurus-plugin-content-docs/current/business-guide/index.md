@@ -3,13 +3,13 @@ title: Bygg ett nischwebbplatsföretag
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bygg ett nischwebbplatsföretag med Ultimate Multisite
+# Bygg ett nischwebbplatsföretag med Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 De flesta som försöker sälja webbplatser konkurrerar på pris med Wix, Squarespace och tusentals frilansare. De förlorar. De som lyckas väljer istället en specifik målgrupp, bygger en lösning anpassad för den målgruppen och tar betalt för det värde de levererar.
 
 Den här kursen lär dig exakt hur du gör det med Ultimate Multisite.
 
-## Vad du kommer att bygga
+## Vad du kommer att bygga {#what-you-will-build}
 
 Under kursen kommer du att bygga ett riktigt, fungerande nätverk som kallas **FitSite** – en webbplatsplattform byggd specifikt för träningsstudior, personliga tränare och gymägare.
 
@@ -23,7 +23,7 @@ Vid sista lektionen kommer FitSite att vara en komplett nischplattform med:
 
 Du följer med steg för steg, och när du är klar har du både en fungerande plattform och kunskapen att replikera processen för vilken nisch du än väljer.
 
-## Varför träningsstudior?
+## Varför träningsstudior? {#why-fitness-studios}
 
 Vi behövde ett konkret exempel som vem som helst kan följa. Träningsstudior fungerar för att:
 
@@ -34,7 +34,7 @@ Vi behövde ett konkret exempel som vem som helst kan följa. Träningsstudior f
 
 Allt du lär dig genom att bygga FitSite kan tillämpas direkt på vilken nisch du än väljer: restauranger, fastighetsmäklare, advokatbyråer, kyrkor, hantverkare eller vilken annan bransch som helst.
 
-## Kursstruktur
+## Kursstruktur {#course-structure}
 
 Varje lektion introducerar ett koncept, förklarar varför det är viktigt och guidar dig genom implementeringen i FitSite-nätverket. Varje lektion bygger på den föregående.
 
@@ -55,7 +55,7 @@ Varje lektion introducerar ett koncept, förklarar varför det är viktigt och g
 | [13. Scaling Up](lesson-13-growth) | Växa från de första kunderna till en riktig verksamhet | FitSite tillväxt- och automatiseringsstrategi |
 | [14. What Comes Next](lesson-14-whats-next) | Utöka till angränsande nischer och nya möjligheter | Din färdplan bortom FitSite |
 
-## Förkunskaper
+## Förkunskaper {#prerequisites}
 
 - En WordPress Multisite-installation (eller vilja att sätta upp en)
 - En aktiv Ultimate Multisite-licens
@@ -63,6 +63,6 @@ Varje lektion introducerar ett koncept, förklarar varför det är viktigt och g
 
 Ingen kodning krävs. Om du aldrig använt Ultimate Multisite förut är det okej – Lektion 3 startar från en ny installation.
 
-## Redo?
+## Redo? {#ready}
 
 Börja med [Lektion 1: Why Niche Wins](lesson-1-why-niche).

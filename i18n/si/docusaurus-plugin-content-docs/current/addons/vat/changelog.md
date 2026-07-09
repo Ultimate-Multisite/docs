@@ -3,7 +3,7 @@ title: VAT වෙනස්කම් සටහන
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT වෙනස්කම් සටහන
+# VAT වෙනස්කම් සටහන {#vat-changelog}
 
 අනුවාදය 1.0.7 - 2026-02-03 දින නිකුත් කරන ලදී
 

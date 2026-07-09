@@ -3,11 +3,11 @@ title: Mienzaniso yeKodhi Yepamusoro
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mienzaniso yeCode Yepamusoro
+# Mienzaniso yeCode Yepamusoro {#advanced-code-examples}
 
 Mienzaniso iyi inoratidza mapatani ekubatanidza epamusoro neUltimate Multisite.
 
-## Injini yeMitengo Inochinja
+## Injini yeMitengo Inochinja {#dynamic-pricing-engine}
 
 Injini yemitengo yakavakirwa pamitemo inoshandisa zvidzikiso zvehuwandu, kuvimbika, uye zvemwaka:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Kugadzirira Site Kwepamusoro
+## Kugadzirira Site Kwepamusoro {#advanced-site-provisioning}
 
 Gadzirisa ma site matsva otomatiki nema plugin, SSL, CDN, mabhakapu, uye kuongorora zvichienderana nezvinhu zviri muplan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistimu yeMiganhu Yakagadzirwa
+## Sistimu yeMiganhu Yakagadzirwa {#custom-limitations-system}
 
 Tevedzera uye simbisa miganhu yezviwanikwa nezviziviso zvekushandisa:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter ine `increment_item()`
+## BerlinDB Atomic Counter ine `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 yakawedzera nzira ye `increment_item()` kuBerlinDB `Query` class. Ishandise kuita kuwedzera kwakachengeteka, atomic pamakoramu enhamba pasina makwikwi e read-modify-write — zvinobatsira kuma counters, usage quotas, uye rate-limiting checks dzinomhanya pasi pezvikumbiro zvinouya panguva imwe chete.
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 yakawedzera nzira ye `increment_item()` kuBerlinDB `Qu
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Kushandisa kwekutanga
+### Kushandisa kwekutanga {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Kutevera kushandiswa kweAPI pa membership imwe neimwe
+### Kutevera kushandiswa kweAPI pa membership imwe neimwe {#tracking-api-usage-per-membership}
 
 Maitiro anoshanda ekusimbisa API rate limits pa membership imwe neimwe:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Nei `increment_item()` panzvimbo pe `update_item()`
+### Nei `increment_item()` panzvimbo pe `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Nzira yakapusa ye read-modify-write haina kuchengeteka pasi pezvikumbiro zvinouya panguva imwe chete:
 

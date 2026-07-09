@@ -3,28 +3,28 @@ title: REST API күзәтүе
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API белешмәлеге
+# REST API белешмәлеге {#rest-api-reference}
 
-## Төп көйләү
+## Төп көйләү {#base-configuration}
 
 **Төп URL:** `{site_url}/wp-json/wu/v2/`
 **Аутентификация:** API ачкычы һәм сер (HTTP Basic Auth яки URL параметрлары)
 
-## Аутентификация
+## Аутентификация {#authentication}
 
-### APIны эшләтү
+### APIны эшләтү {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API таныклыкларын алу
+### API таныклыкларын алу {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Аутентификация ысуллары
+### Аутентификация ысуллары {#authentication-methods}
 
 **HTTP Basic Auth (тәкъдим ителә):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Төп нокталар
+## Төп нокталар {#core-endpoints}
 
-### 1. Клиентлар API
+### 1. Клиентлар API {#1-customers-api}
 
 **Төп маршрут:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Сайтлар API
+### 2. Сайтлар API {#2-sites-api}
 
 **Төп маршрут:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Әгъзалыклар API
+### 3. Әгъзалыклар API {#3-memberships-api}
 
 **Төп маршрут:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Продуктлар API
+### 4. Продуктлар API {#4-products-api}
 
 **Төп маршрут:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Түләүләр API
+### 5. Түләүләр API {#5-payments-api}
 
 **Төп маршрут:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Доменнар API
+### 6. Доменнар API {#6-domains-api}
 
 **Төп маршрут:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Теркәлү ноктасы
+## Теркәлү ноктасы {#registration-endpoint}
 
 `/register` ноктасы тулы түләп рәсмиләштерү/теркәлү агымын бирә:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Мөстәкыйль арендатор нокталары
+## Мөстәкыйль арендатор нокталары {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 изоляцияләнгән арендаторларны әзерли, тикшерә яки раслый торган интеграцияләр өчен мөстәкыйль арендаторлар буенча REST колачлау өсти.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` кыйммәтен эшләтеп җибәрүгә кадәрге киртә итеп карагыз. Раслау нечкәлекләрен тикшерегез, мәгълүмат базасы хосты бәйләнешен, чиратны, кулланучы әзерләүне яки маршрутлау мәсьәләсен төзәтегез, аннары раслауны кабатлап карагыз.
 
-## Хата җаваплары
+## Хата җаваплары {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## Битләү һәм сөзү
+## Битләү һәм сөзү {#pagination-and-filtering}
 
 **Сорау параметрлары:**
 ```http

@@ -3,7 +3,7 @@ title: Kupanga Makwamba
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Kutsatira Wopulizi (Managing Customers)
+# Kutsatira Wopulizi (Managing Customers) {#managing-customers}
 
 Upaputsi wa **Customers** uliwonetsa list ya wopulizi woshoja woshoja muliwendo wanu. Upaputsi huu uliwonetsa taulu ya msingi ya wopulizi ikiwemo jina lake, anwani ya barua pepe, wakati wa mwisho alipoweka (last login), na link la **switch to** ambalo linakuruhusu kuingia kwenye subsite ya mhusika kama msimamizi wa tovuti.
 

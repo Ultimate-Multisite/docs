@@ -3,13 +3,13 @@ title: একত্ৰীকৰণ নিৰ্দেশিকা
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# সংযোজন নিৰ্দেশিকা
+# সংযোজন নিৰ্দেশিকা {#integration-guide}
 
 এই নিৰ্দেশিকাত Ultimate Multisite-ৰ সৈতে সাধাৰণ সংযোজন ধৰণসমূহ সামৰি লোৱা হৈছে, য’ত বাহ্যিক সেৱাসমূহৰ সৈতে সংযোগ কৰা, স্বনিৰ্বাচিত পেমেণ্ট গেটৱে নিৰ্মাণ কৰা, আৰু webhooks পৰিচালনা কৰা অন্তৰ্ভুক্ত।
 
 বিচ্ছিন্ন tenant আন্তঃগাঁথনিৰ বাবে, sovereign tenant bootstrap, migration verification, SSO, আৰু teardown নিৰ্দেশনাৰ বাবে [Multi-Tenancy Integration](./multi-tenancy) চাওক।
 
-## CRM সংযোজন
+## CRM সংযোজন {#crm-integration}
 
 নতুন গ্ৰাহকে sign up কৰিলে গ্ৰাহকৰ তথ্য আপোনাৰ CRM-লৈ sync কৰক:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics সংযোজন
+## Analytics সংযোজন {#analytics-integration}
 
 গ্ৰাহক জীৱনচক্ৰজুৰি মুখ্য ব্যৱসায়িক ঘটনাসমূহ track কৰক:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## পৰৱৰ্তী পদক্ষেপ
+## পৰৱৰ্তী পদক্ষেপ {#next-steps}
 
 - [স্বনিৰ্বাচিত Gateway উন্নয়ন](./custom-gateway) — আপোনাৰ নিজা পেমেণ্ট গেটৱে নিৰ্মাণ কৰক
 - [Webhook পৰিচালনা](./webhooks) — স্বনিৰ্বাচিত webhook endpoint সৃষ্টি কৰক

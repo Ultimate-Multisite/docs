@@ -4,21 +4,21 @@ title: Pansala - wu_add_new_domain_modal_fields
 sidebar_label: wu_add_new_domain_modal_fields
 _i18n_hash: 82538b8033ce3cb1a2d4e59881ac1358
 ---
-# Pansala: wu_add_new_domain_modal_fields
+# Pansala: wu_add_new_domain_modal_fields {#filter-wuaddnewdomainmodalfields}
 
 Pini-filter ang mga patlang para sa modal ng pagdaragdag ng bagong domain.
 
 Pinapayagan ang mga add-on (hal. Domain Seller) na baguhin o palitan ang mga patlang sa pagrerehistro ng domain.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
 | $fields | `array` | Ang mga patlang ng pormularyo. |
 
-### Mula noong
+### Mula noong {#since}
 
 - 2.1.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/admin-pages/class-domain-list-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-domain-list-admin-page.php#L199) sa linya 199

@@ -3,7 +3,7 @@ title: Nâng cấp một gói
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Nâng cấp gói (v2)
+# Nâng cấp gói (v2) {#upgrading-a-plan-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
@@ -41,7 +41,7 @@ Sau khi thanh toán hoàn tất, (các) sản phẩm mới sẽ được thêm v
 
 ##
 
-## Đường dẫn nâng cấp và hạ cấp
+## Đường dẫn nâng cấp và hạ cấp {#upgrade-and-downgrade-paths}
 
 Trên mỗi sản phẩm của bạn, bạn sẽ có một tab **Nâng cấp & Hạ cấp**. Tùy chọn đầu tiên trên tab đó là một trường có tên **Nhóm gói**.
 

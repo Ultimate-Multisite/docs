@@ -3,13 +3,13 @@ title: Kev tsim kev txuas nrog tus registrar raws li koj xav tau
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Tsim ib qho Custom Registrar Integration
+# Tsim ib qho Custom Registrar Integration {#building-a-custom-registrar-integration}
 
 Lub Domain Seller addon siv tus qauv **Integration Registry**. Txhua tus registrar yog ib chav kawm PHP uas siv `Domain_Selling_Capability` thiab sau npe nws tus kheej dhau ntawm `wu_domain_seller_register_capabilities` action hook.
 
 Phau ntawv qhia no qhia yuav txuas ib tus registrar custom li cas.
 
-## Lub interface
+## Lub interface {#the-interface}
 
 Koj chav kawm yuav tsum siv `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` thiab extend `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Cov methods xaiv tau
+### Cov methods xaiv tau {#optional-methods}
 
 Siv cov no kom qhib tau cov features ntxiv. Lub addon kuaj kev txhawb nqa dhau ntawm `method_exists()`:
 
@@ -81,7 +81,7 @@ Siv cov no kom qhib tau cov features ntxiv. Lub addon kuaj kev txhawb nqa dhau n
 | `get_epp_code(string $domain_name): array` | Domain transfer (tawm mus) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (nkag los) |
 
-### Kev cai rau return value
+### Kev cai rau return value {#return-value-convention}
 
 Txhua method rov qab los ua ib array uas muaj yam tsawg kawg nkaus yog tus key `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Sau npe koj capability
+## Sau npe koj capability {#registering-your-capability}
 
 Sau npe koj chav kawm siv `wu_domain_seller_register_capabilities` action:
 
@@ -109,7 +109,7 @@ Thawj argument rau `add_capability()` yog **provider ID** — ib slug ntawv me u
 
 ---
 
-## Ntxiv credential fields rau hauv wizard
+## Ntxiv credential fields rau hauv wizard {#adding-credential-fields-to-the-wizard}
 
 Kom admins nkag tau credentials dhau ntawm setup wizard, sau npe koj integration:
 
@@ -137,7 +137,7 @@ Credentials raug khaws cia ua network options siv field IDs ua keys. Mus muab la
 
 ---
 
-## Hooks rau cov actions tom qab registration
+## Hooks rau cov actions tom qab registration {#hooks-for-post-registration-actions}
 
 Siv cov actions no los khiav webhooks, provisioning, notifications, lossis CRM updates:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Kev kaw log
+## Kev kaw log {#logging}
 
 Sau rau hauv koj tus provider-specific log channel siv `wu_log_add()`:
 

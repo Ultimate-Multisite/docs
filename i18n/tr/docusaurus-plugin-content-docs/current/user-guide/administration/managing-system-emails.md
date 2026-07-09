@@ -3,11 +3,11 @@ title: Sistem E-postalarını Yönetme
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistem E-postalarını Yönetme
+# Sistem E-postalarını Yönetme {#managing-system-emails}
 
 Ultimate Multisite; kayıt onayları, ödeme makbuzları ve üyelik değişiklikleri gibi etkinlikler için çeşitli sistem e-postaları gönderir. Bu e-posta şablonlarını markanıza uyacak şekilde özelleştirebilirsiniz.
 
-## Sistem E-postalarını Görüntüleme
+## Sistem E-postalarını Görüntüleme {#viewing-system-emails}
 
 E-postayla ilgili ayarları görmek için **Ultimate Multisite → Settings** bölümüne gidin ve **Emails** sekmesine tıklayın.
 
@@ -21,7 +21,7 @@ Ayrıca sistem e-posta düzenleyicisini kullanarak tek tek e-posta şablonların
 
 ![Sistem e-posta düzenleyicisi](/img/admin/system-email-editor.png)
 
-## Yeni E-posta Şablonlarını İçe Aktarma
+## Yeni E-posta Şablonlarını İçe Aktarma {#importing-new-email-templates}
 
 Yeni Ultimate Multisite sürümleri ve add-on’lar yeni e-posta şablonları kaydedebilir. Çakışmaları önlemek için yeni şablonlar otomatik olarak eklenmez — bunları manuel olarak içe aktarmanız gerekir.
 
@@ -32,7 +32,7 @@ Yeni e-posta şablonlarını içe aktarmak için:
 3. Kullanılabilir şablonları görmek için **Import Emails** seçeneğini açın
 4. İçe aktarmak istediğiniz şablonları seçin ve onaylayın
 
-## E-posta Şablonlarını Sıfırlama
+## E-posta Şablonlarını Sıfırlama {#resetting-email-templates}
 
 Bir e-posta şablonunu özelleştirdiyseniz ve varsayılan içeriğe geri dönmek istiyorsanız iki seçeneğiniz vardır:
 

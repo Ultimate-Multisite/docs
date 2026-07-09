@@ -3,13 +3,13 @@ title: Prebacivanje na niži plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Prebacivanje plana (v2)
+# Prebacivanje plana (v2) {#downgrading-a-plan-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
 Prebacivanje ili prebacivanje pretplate je uobičajena radnja koju vaši klijenti mogu učiniti ako imaju ograničen budžet ili odluče da više ne trebaju mnogo resursa za upravljanje svojim sub-sajtom.
 
-## Kako prebaciti plan
+## Kako prebaciti plan {#how-to-downgrade-a-plan}
 
 Vaši klijenti mogu prebaciti svoj plan bilo kada tako što se prijave na admin dashboard svog sub-sajta i kliknu na **Promijeni** (Change) pod stranicom s računom.
 
@@ -25,7 +25,7 @@ Da bi nastavili, korisnik samo treba kliknuti na gumb **Završi plaćanje** (Com
 
 ![Stranica s računom koja prikazuje banner za predstojeću promjenu članstva](/img/account-page/pending-change.png)
 
-### Što se događa kada korisnik prebaci plan
+### Što se događa kada korisnik prebaci plan {#what-happens-when-a-user-downgrades-their-plan}
 
 Važno je napomenuti da prebacivanje plana ne mijenja postojeću konfiguraciju na sub-sajtu korisnika.
 
@@ -37,7 +37,7 @@ Za objave koje premašuju limit postavljen na planu, imate 3 različita opcije: 
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Što se događa s plaćanjem
+### Što se događa s plaćanjem {#what-happens-to-the-payment}
 
 U verziji 2.0 više nije potrebno nikakvo podešavanje u vezi sa proračunom (proration).
 

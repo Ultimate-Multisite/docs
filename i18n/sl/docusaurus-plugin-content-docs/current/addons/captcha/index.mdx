@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Ustavite bote. Zaščitite prihodke. Brez težav s konfiguracijo.**
 
@@ -15,7 +15,7 @@ Upravljate multisite omrežje z domenami po meri? Poznate težavo: Google reCAPT
 
 **Ultimate Multisite: Captcha spremeni vse.**
 
-## Cap Captcha: samogostovana zaščita, ki preprosto deluje
+## Cap Captcha: samogostovana zaščita, ki preprosto deluje {#cap-captcha-self-hosted-protection-that-just-works}
 
 Naš novi ponudnik **Cap Captcha** je prelomnica za multisite omrežja:
 
@@ -25,7 +25,7 @@ Naš novi ponudnik **Cap Captcha** je prelomnica za multisite omrežja:
 * **Neviden Proof-of-Work** — Uporabniki v ozadju rešijo računsko uganko. Brez klikanja hidrantov, brez frustrirajočih mrež slik.
 * **Lahko** — Samo 20 KB. Ne bo upočasnilo vašega checkouta.
 
-## Zaščita pred testiranjem kartic v WooCommerce
+## Zaščita pred testiranjem kartic v WooCommerce {#woocommerce-card-testing-protection}
 
 Napadi testiranja kartic trgovce letno stanejo milijarde. Goljufi uporabljajo bote za preverjanje ukradenih kreditnih kartic na vašem WooCommerce checkoutu — vi plačate stroške obdelave, oni pa dobijo veljavne številke kartic.
 
@@ -35,7 +35,7 @@ Napadi testiranja kartic trgovce letno stanejo milijarde. Goljufi uporabljajo bo
 * **Združljivo s PayPal Payments** — Deluje brezhibno z WooCommerce PayPal Payments
 * **Statistika v realnem času** — Natančno vidite, koliko napadov blokirate
 
-## Še vedno potrebujete Google reCAPTCHA ali hCaptcha?
+## Še vedno potrebujete Google reCAPTCHA ali hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
 
 Poskrbeli smo tudi za to. Polna podpora za:
 
@@ -47,14 +47,14 @@ Poskrbeli smo tudi za to. Polna podpora za:
 
 Med ponudniki lahko kadar koli preklopite v nastavitvah omrežja.
 
-## Zgrajeno za obseg
+## Zgrajeno za obseg {#built-for-scale}
 
 * Nastavitve za celotno omrežje s preglasitvami za posamezno stran
 * Nadzorna plošča s statistiko za spremljanje zaščite
 * Prilagodljive ravni varnosti (Hitro, Srednje, Največje)
 * Prijazno za razvijalce z razširljivo arhitekturo ponudnikov
 
-## Namestitev
+## Namestitev {#installation}
 
 1. Naložite `ultimate-multisite-captcha` v svoj imenik `/wp-content/plugins/`
 2. Omrežno aktivirajte plugin
@@ -64,37 +64,37 @@ Cap Captcha se aktivira samodejno — brez nastavitev za konfiguriranje, brez AP
 
 **Izbirno:** Če želite namesto tega uporabiti Google reCAPTCHA ali hCaptcha, pojdite na **Ultimate Multisite → Settings → Captcha** in izberite želenega ponudnika.
 
-## Pogosta vprašanja
+## Pogosta vprašanja {#frequently-asked-questions}
 
-## Ali moram kaj konfigurirati?
+## Ali moram kaj konfigurirati? {#do-i-need-to-configure-anything}
 
 Ne! Cap Captcha je omogočen samodejno, ko aktivirate dodatek. Celotno vaše omrežje je takoj zaščiteno — brez nastavitev za konfiguriranje, brez API ključev za vnos.
 
-## Ali potrebujem API ključe za Cap Captcha?
+## Ali potrebujem API ključe za Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
 
 Ne. Cap Captcha je popolnoma samogostovan. Brez zunanjih računov, brez registracije domen, brez konfiguracijskih glavobolov.
 
-## Bo to upočasnilo moj checkout?
+## Bo to upočasnilo moj checkout? {#will-this-slow-down-my-checkout}
 
 Cap Captcha ima samo 20 KB in v ozadju izvaja izzive proof-of-work. Vaše stranke ne bodo opazile nobene zamude.
 
-## Ali to ščiti pred napadi testiranja kartic?
+## Ali to ščiti pred napadi testiranja kartic? {#does-this-protect-against-card-testing-attacks}
 
 Da! Za razliko od tradicionalnih captch, ki ščitijo samo HTML obrazce, se naša WooCommerce integracija neposredno poveže s Store API, da blokira napade botov na ravni API — tam, kjer se zgodi večina napadov testiranja kartic.
 
-## Ali lahko na različnih straneh uporabljam različne ponudnike captcha?
+## Ali lahko na različnih straneh uporabljam različne ponudnike captcha? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Ponudnik captcha je nastavljen za celotno omrežje, vendar lahko nastavitve zahtevnosti prilagodite svojim potrebam.
 
-## Ali je to skladno z GDPR?
+## Ali je to skladno z GDPR? {#is-this-gdpr-compliant}
 
 Cap Captcha je 100 % samogostovan, brez pošiljanja podatkov zunanjim storitvam. Za Google reCAPTCHA in hCaptcha preglejte njihove ustrezne pravilnike o zasebnosti.
 
-## Omejevanje hitrosti
+## Omejevanje hitrosti {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 uvaja strogi omejevalnik hitrosti, ki ščiti vaše omrežje pred napadi z grobo silo in testiranjem kartic.
 
-### Kako deluje
+### Kako deluje {#how-it-works}
 
 Omejevalnik hitrosti šteje vsako GET in POST zahtevo na površinah, zaščitenih s captcha:
 
@@ -108,9 +108,9 @@ Ko obiskovalec preseže omejitev hitrosti, plugin odgovori z:
 * **Retry-After** headerjem, ki označuje, kdaj poskusiti znova
 * **Naključen tarpit premor** (privzeto 1–5 sekund, strogo omejeno na 15 sekund) za upočasnitev napadalcev
 
-### Konfiguracija
+### Konfiguracija {#configuration}
 
-#### Časovna nastavitev tarpita
+#### Časovna nastavitev tarpita {#tarpit-timing}
 
 Nadzirajte naključno zakasnitev, uporabljeno za zahteve z omejeno hitrostjo:
 
@@ -119,9 +119,9 @@ Nadzirajte naključno zakasnitev, uporabljeno za zahteve z omejeno hitrostjo:
 
 Te nastavitve so na voljo v **Ultimate Multisite → Settings → Captcha**.
 
-### Razširljivost
+### Razširljivost {#extensibility}
 
-#### Filter seznama dovoljenih IP-jev
+#### Filter seznama dovoljenih IP-jev {#ip-whitelist-filter}
 
 Iz omejevanja hitrosti izvzemite zaupanja vredne razpone IP-jev:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Dejanje pred blokado
+#### Dejanje pred blokado {#pre-block-action}
 
 Izvedite logiko po meri tik preden se pošlje blokada zaradi omejitve hitrosti:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Zaznavanje IP-ja odjemalca in zaupanja vredni proxyji
+## Zaznavanje IP-ja odjemalca in zaupanja vredni proxyji {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 uvaja zaznavanje IP-ja odjemalca, odporno proti ponarejanju. Metoda `Captcha_Core::get_client_ip()` je zdaj edini vir resnice za pripis IP-ja obiskovalca v:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 uvaja zaznavanje IP-ja odjemalca, odporno pro
 * `remoteip` ponudnika Captcha (reCAPTCHA, hCaptcha `siteverify`)
 * Zgoščene vrednosti IP za statistiko
 
-### Model zaupanja
+### Model zaupanja {#trust-model}
 
 Vtičnik uveljavlja strogo hierarhijo zaupanja IP:
 
@@ -166,9 +166,9 @@ Vtičnik uveljavlja strogo hierarhijo zaupanja IP:
    - Je neposredni sogovornik na vašem skrbniško nastavljenem seznamu zaupanja vrednih proxyjev
    - Glava se razčleni od desne proti levi, pri čemer se preskočijo zaupanja vredni/Cloudflare skoki
 
-### Konfiguracija
+### Konfiguracija {#configuration-1}
 
-#### Zaupanje glavi Cloudflare
+#### Zaupanje glavi Cloudflare {#cloudflare-header-trust}
 
 Omogočite zaupanje Cloudflareovi glavi `CF-Connecting-IP`:
 
@@ -178,7 +178,7 @@ Omogočite zaupanje Cloudflareovi glavi `CF-Connecting-IP`:
   - Razponi CIDR se tedensko osvežujejo prek wp-cron
   - Če osveževanje ne uspe, se uporabi priložena nadomestna možnost
 
-#### Konfiguracija zaupanja vrednih proxyjev
+#### Konfiguracija zaupanja vrednih proxyjev {#trusted-proxy-configuration}
 
 Določite svoje prve proxyje in izravnalnike obremenitve:
 
@@ -194,14 +194,14 @@ Določite svoje prve proxyje in izravnalnike obremenitve:
     198.51.100.50
     ```
 
-#### Samodejno zaznavanje ob prvi omogočitvi
+#### Samodejno zaznavanje ob prvi omogočitvi {#first-enable-auto-detection}
 
 Ko prvič omogočite omejevalnik hitrosti, vtičnik zazna vašo verjetno postavitev Cloudflare in proxyjev ter prikaže skrbniško obvestilo z enim klikom »Uporabi zaznane nastavitve«.
 
 * Vtičnik **nikoli ne prepiše** vaših shranjenih vrednosti
 * Če poznejši promet nakazuje, da se vaša konfiguracija ne ujema več z dejanskim stanjem (npr. Cloudflare je spremenil razpone CIDR), se prikaže obvestilo o neujemanju, ki ga ni mogoče opustiti, s priporočenim popravkom
 
-### Zakaj je to pomembno
+### Zakaj je to pomembno {#why-this-matters}
 
 Strog model zaupanja IP zapre kritičen vektor ponarejanja: neposredne zahteve do izvornega strežnika s ponarejeno glavo `CF-Connecting-IP` bi bile prej razvrščene po ponarejenem IP-ju namesto po resničnem neposrednem sogovorniku. To je še posebej pomembno za:
 

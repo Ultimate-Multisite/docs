@@ -4,13 +4,13 @@ title: 'Action - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Action: wu_page_{$this->id}_register_widgets
+# Action: wu_page_{$this->id}_register_widgets {#action-wupagethis-idregisterwidgets}
 
 ఈ పేజీకి విడ్జెట్‌లు రిజిస్టర్ అయిన తర్వాత ఇది పనిచేస్తుంది (Fires).
 
 హుక్ పేరులోని డైనమిక్ భాగం, `$this->id`, అనేది పేజీ ఐడిని (page id) సూచిస్తుంది.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 | $page_hook | `string` | పేజీ హుక్. |
 | $page | `object` | పేజీ ఆబ్జెక్ట్. |
 
-### Since
+### Since {#since}
 
 - 2.4.10
-### Source
+### Source {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L755) లోని 755వ లైన్‌లో నిర్వచించబడింది.

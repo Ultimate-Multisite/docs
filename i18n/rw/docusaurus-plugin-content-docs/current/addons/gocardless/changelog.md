@@ -3,7 +3,7 @@ title: GoCardless Amateka y'impinduka
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog
+# GoCardless Changelog {#gocardless-changelog}
 
 Verisiyo: 1.0.3 - Yasohotse ku 2026-05-05
 * Gukosora: Imbuga ziri pending zasigaye zitagira nyirazo ubu zisukurwa iyo membership ya GoCardless ihagaritswe ikiri muri pending cyangwa mu mimerere ya on-hold

@@ -3,19 +3,19 @@ title: 'Lección 10: Día do lanzamento'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lección 10: Día do lanzamento
+# Lección 10: Día do lanzamento {#lesson-10-launch-day}
 
 Todo está construído. Antes de abrir as portas, esta lección percorre a lista de comprobación previa ao lanzamento para asegurarte de que nada está roto, falta ou resulta embarazoso.
 
-## Onde o deixamos
+## Onde o deixamos {#where-we-left-off}
 
 FitSite ten modelos, plans, fluxo de compra, marca, incorporación e prezos todo configurado. Agora verificamos que todo funciona e poñémolo en marcha.
 
-## Lista de comprobación previa ao lanzamento
+## Lista de comprobación previa ao lanzamento {#pre-launch-checklist}
 
 Revisa cada elemento. Non saltes ningún.
 
-### Infraestrutura da plataforma
+### Infraestrutura da plataforma {#platform-infrastructure}
 
 - [ ] O aloxamento é estable e rende ben baixo carga
 - [ ] O SSL comodín está activo e todos os subdominios se serven por HTTPS
@@ -23,7 +23,7 @@ Revisa cada elemento. Non saltes ningún.
 - [ ] As copias de seguridade están configuradas e probadas (restaura polo menos unha para verificalo)
 - [ ] A monitorización está en marcha -- saberás se a plataforma cae
 
-### Modelos
+### Modelos {#templates}
 
 - [ ] Os tres modelos cargan correctamente en sitios novos
 - [ ] O contido de marcador de posición é útil e non ten erros tipográficos
@@ -32,7 +32,7 @@ Revisa cada elemento. Non saltes ningún.
 - [ ] A velocidade de carga das páxinas é aceptable (proba cunha ferramenta como GTmetrix ou PageSpeed Insights)
 - [ ] Non hai ligazóns rotas nin recursos ausentes en ningún modelo
 
-### Plans e produtos
+### Plans e produtos {#plans-and-products}
 
 - [ ] Os tres plans están activos e visibles
 - [ ] As descricións dos plans son precisas e específicas do nicho
@@ -42,7 +42,7 @@ Revisa cada elemento. Non saltes ningún.
 - [ ] As ofertas adicionais aparecen correctamente durante o fluxo de compra
 - [ ] As limitacións de complementos e temas aplícanse correctamente por plan
 
-### Fluxo de compra
+### Fluxo de compra {#checkout-flow}
 
 - [ ] Completa un rexistro de proba completo en cada plan (usa o modo de pagamento de proba)
 - [ ] A selección de modelos mostra os modelos correctos por plan
@@ -52,7 +52,7 @@ Revisa cada elemento. Non saltes ningún.
 - [ ] O cliente pode iniciar sesión no seu novo sitio inmediatamente
 - [ ] Os códigos de desconto funcionan correctamente
 
-### Marca
+### Marca {#branding}
 
 - [ ] A páxina de inicio de sesión mostra a marca de FitSite
 - [ ] O Dashboard de administración mostra a marca de FitSite
@@ -60,7 +60,7 @@ Revisa cada elemento. Non saltes ningún.
 - [ ] As facturas móstranse correctamente cos datos da túa empresa
 - [ ] O sitio de marketing está activo e enlaza co formulario de compra
 
-### Incorporación
+### Incorporación {#onboarding}
 
 - [ ] O widget de Inicio rápido aparece nos Dashboards dos novos clientes
 - [ ] Todas as ligazóns de Inicio rápido apuntan ás páxinas correctas
@@ -68,7 +68,7 @@ Revisa cada elemento. Non saltes ningún.
 - [ ] Os artigos da base de coñecemento están publicados e accesibles
 - [ ] A páxina Account mostra a información correcta do plan e as opcións de mellora
 
-### Legal e negocio
+### Legal e negocio {#legal-and-business}
 
 - [ ] Os termos do servizo están publicados e enlazados desde o fluxo de compra
 - [ ] A política de privacidade está publicada e accesible
@@ -77,11 +77,11 @@ Revisa cada elemento. Non saltes ningún.
 - [ ] A pasarela de pagamento está en modo en vivo (non en modo de proba)
 - [ ] A configuración fiscal é correcta para a túa xurisdición
 
-## Lanzamento suave vs. lanzamento duro
+## Lanzamento suave vs. lanzamento duro {#soft-launch-vs-hard-launch}
 
 Considera un lanzamento en dúas fases:
 
-### Fase 1: Lanzamento suave
+### Fase 1: Lanzamento suave {#phase-1-soft-launch}
 
 Convida 5-10 propietarios de estudos de fitness a rexistrarse antes do lanzamento público. Estes son os teus clientes beta. Ofrécelles un desconto significativo (50% de desconto de por vida, ou 3 meses gratis) a cambio de:
 
@@ -91,7 +91,7 @@ Convida 5-10 propietarios de estudos de fitness a rexistrarse antes do lanzament
 
 Isto dáche comentarios reais de clientes e sitios en vivo para mostrar antes de abrir ao público.
 
-### Fase 2: Lanzamento público
+### Fase 2: Lanzamento público {#phase-2-public-launch}
 
 Unha vez incorporados os comentarios do lanzamento suave:
 
@@ -100,7 +100,7 @@ Unha vez incorporados os comentarios do lanzamento suave:
 - Comeza a captación de clientes (Lección 11)
 - Anuncia en canles relevantes da industria do fitness
 
-## Accións do día do lanzamento
+## Accións do día do lanzamento {#launch-day-actions}
 
 O día que saias ao público:
 
@@ -110,7 +110,7 @@ O día que saias ao público:
 4. **Está dispoñible** -- os teus primeiros clientes reais poden necesitar axuda, e unha resposta rápida xera confianza
 5. **Celebra brevemente** -- logo volve ao traballo
 
-## Que pode saír mal
+## Que pode saír mal {#what-can-go-wrong}
 
 Prepárate para:
 
@@ -120,7 +120,7 @@ Prepárate para:
 - **Rendemento baixo carga**: Se recibes un pico de tráfico, sabe como escalar o teu aloxamento
 - **Confusión dos clientes**: Ten preparados a túa base de coñecemento e as canles de soporte
 
-## A rede FitSite ata agora
+## A rede FitSite ata agora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## O que construímos nesta lección
+## O que construímos nesta lección {#what-we-built-this-lesson}
 
 - **Unha lista de comprobación previa ao lanzamento completa** que cobre infraestrutura, contido, pagamentos e legalidade
 - **Unha estratexia de lanzamento suave** para obter comentarios reais antes de saír ao público

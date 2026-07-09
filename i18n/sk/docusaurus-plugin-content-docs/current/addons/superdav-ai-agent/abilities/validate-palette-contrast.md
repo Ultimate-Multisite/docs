@@ -3,15 +3,15 @@ title: Overiť kontrast palety
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Overenie kontrastu palety
+# Overenie kontrastu palety {#validate-palette-contrast}
 
 Schopnosť **Validate Palette Contrast** kontroluje farebné páry vo vašej dizajnovej palete na súlad s WCAG (Web Content Accessibility Guidelines) pred ich použitím vo vašej téme.
 
-## Prehľad
+## Prehľad {#overview}
 
 Táto schopnosť zabezpečuje, aby farebná schéma vašej stránky spĺňala štandardy prístupnosti tým, že overuje kontrastné pomery medzi farbami textu a pozadia. Pomáha predchádzať farebným kombináciám, ktoré by mohli byť pre používateľov so zrakovým znevýhodnením ťažko čitateľné.
 
-## Formát vstupu
+## Formát vstupu {#input-format}
 
 Schopnosť prijíma ako vstup farebnú paletu:
 
@@ -35,7 +35,7 @@ Schopnosť prijíma ako vstup farebnú paletu:
 }
 ```
 
-### Parametre
+### Parametre {#parameters}
 
 | Parameter | Typ | Povinné | Popis |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Schopnosť prijíma ako vstup farebnú paletu:
 | `wcag_level` | string | Nie | Úroveň súladu s WCAG: "A", "AA" (predvolená) alebo "AAA" |
 | `pairs_to_check` | array | Nie | Konkrétne farebné páry na overenie (napr. `["primary-text", "background-text"]`) |
 
-## Kontrolované úrovne WCAG
+## Kontrolované úrovne WCAG {#wcag-levels-checked}
 
 Schopnosť overuje kontrastné pomery podľa štandardov WCAG:
 
@@ -56,7 +56,7 @@ Schopnosť overuje kontrastné pomery podľa štandardov WCAG:
 - **Normálny text** — text menší ako 18pt (alebo 14pt tučný)
 - **Veľký text** — text 18pt alebo väčší (alebo 14pt tučný alebo väčší)
 
-## Schéma výstupu
+## Schéma výstupu {#output-schema}
 
 Schopnosť vracia podrobnú správu o overení:
 
@@ -95,7 +95,7 @@ Schopnosť vracia podrobnú správu o overení:
 }
 ```
 
-### Výstupné polia
+### Výstupné polia {#output-fields}
 
 | Pole | Typ | Popis |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Schopnosť vracia podrobnú správu o overení:
 | `status` | string | "pass" alebo "fail" pre každý pár |
 | `recommendations` | array | Návrhy na zlepšenie nevyhovujúcich párov |
 
-## Príklad použitia
+## Príklad použitia {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Schopnosť overí všetky farebné kombinácie a vráti:
 - ✅ Pozadie + text: pomer 12.1:1 (spĺňa WCAG AAA)
 - Celkovo: V súlade s WCAG AA
 
-## Integrácia s Theme Builder
+## Integrácia s Theme Builder {#integration-with-theme-builder}
 
 Pri používaní výberu smerovania dizajnu v Theme Builderi schopnosť Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Pri používaní výberu smerovania dizajnu v Theme Builderi schopnosť Validate
 4. Poskytuje odporúčania pre nevyhovujúce páry
 5. Zabraňuje použitiu neprístupných farebných schém
 
-## Osvedčené postupy
+## Osvedčené postupy {#best-practices}
 
 - **Začnite úrovňou AA** — WCAG AA je štandardom pre väčšinu webových stránok
 - **Testujte pred použitím** — overte svoju paletu pred potvrdením dizajnu
@@ -137,7 +137,7 @@ Pri používaní výberu smerovania dizajnu v Theme Builderi schopnosť Validate
 - **Zohľadnite používateľské preferencie** — niektorí používatelia môžu mať dodatočnú citlivosť na farby
 - **Používajte kontroléry kontrastu** — kombinujte túto schopnosť s nástrojmi prehliadača na overenie
 
-## Nevyhovujúce páry a odporúčania
+## Nevyhovujúce páry a odporúčania {#failing-pairs-and-recommendations}
 
 Ak farebný pár neprejde overením, schopnosť poskytne odporúčania:
 
@@ -155,7 +155,7 @@ Ak farebný pár neprejde overením, schopnosť poskytne odporúčania:
 }
 ```
 
-## Súvisiace schopnosti
+## Súvisiace schopnosti {#related-abilities}
 
 - [Generovať logo SVG](./generate-logo-svg.md) — vytvorte logá s vašou overenou farebnou paletou
 - [Vytvoriť menu](./create-menu.md) — vytvorte navigáciu s prístupnými farbami

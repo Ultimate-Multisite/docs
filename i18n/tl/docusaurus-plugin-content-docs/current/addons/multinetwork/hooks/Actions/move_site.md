@@ -4,11 +4,11 @@ title: Aksyon - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Aksyon: move_site
+# Aksyon: move_site {#action-movesite}
 
 Nati-trigger matapos mailipat ang isang site sa isang bagong network.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Nati-trigger matapos mailipat ang isang site sa isang bagong network.
 | $old_network_id | `int` | ID ng orihinal na network para sa site. |
 | $new_network_id | `int` | ID ng network kung saan nailipat ang site. |
 
-### Mula Noong
+### Mula Noong {#since}
 
 - 1.3.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) sa linya 1587

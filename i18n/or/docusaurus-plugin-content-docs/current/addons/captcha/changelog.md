@@ -3,7 +3,7 @@ title: Captcha ପରିବର୍ତ୍ତନ ତାଲିକା
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha ପରିବର୍ତ୍ତନ ତାଲିକା
+# Captcha ପରିବର୍ତ୍ତନ ତାଲିକା {#captcha-changelog}
 
 ସଂସ୍କରଣ: 1.5.0 - 2026-05-22 ରେ ମୁକ୍ତିଲାଭ
 * ନୂଆ: କଠୋର-ବନ୍ଦ ହାର ସୀମାକାରୀ — captcha-ସୁରକ୍ଷିତ ସ୍ଥାନଗୁଡ଼ିକରେ ପ୍ରତ୍ୟେକ GET ଓ POST ଗଣେ (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ଏବଂ HTTP 429, ଏକ `Retry-After` header, ଓ ଯାଦୃଚ୍ଛିକ tarpit sleep (1–5s, 15s ରେ କଠୋର ଭାବେ ସୀମିତ) ସହିତ ଉତ୍ତର ଦିଏ।

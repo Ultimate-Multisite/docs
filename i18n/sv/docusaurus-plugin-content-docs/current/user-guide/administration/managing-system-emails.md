@@ -3,11 +3,11 @@ title: Hantera systemmejl
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Hantera systemmejl
+# Hantera systemmejl {#managing-system-emails}
 
 Ultimate Multisite skickar olika systemmejl för händelser som registreringsbekräftelser, betalningskvitton och medlemskapsändringar. Du kan anpassa dessa mejlmallar så att de matchar ditt varumärke.
 
-## Visa systemmejl
+## Visa systemmejl {#viewing-system-emails}
 
 Gå till **Ultimate Multisite → Settings** och klicka på fliken **Emails** för att se mejlrelaterade inställningar.
 
@@ -21,7 +21,7 @@ Du kan också redigera enskilda mejlmallar med systemmejlredigeraren:
 
 ![System email-redigerare](/img/admin/system-email-editor.png)
 
-## Importera nya mejlmallar
+## Importera nya mejlmallar {#importing-new-email-templates}
 
 Nya Ultimate Multisite-versioner och tillägg kan registrera nya mejlmallar. För att undvika konflikter läggs nya mallar inte till automatiskt — du behöver importera dem manuellt.
 
@@ -32,7 +32,7 @@ Så här importerar du nya mejlmallar:
 3. Växla alternativet **Import Emails** för att se tillgängliga mallar
 4. Välj de mallar du vill importera och bekräfta
 
-## Återställa mejlmallar
+## Återställa mejlmallar {#resetting-email-templates}
 
 Om du har anpassat en mejlmall och vill återgå till standardinnehållet har du två alternativ:
 

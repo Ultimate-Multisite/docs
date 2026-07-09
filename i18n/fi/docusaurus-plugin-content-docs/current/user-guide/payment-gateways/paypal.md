@@ -3,7 +3,7 @@ title: PayPalin asennus
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal-portaalivayksen asennus (v2)
+# PayPal-portaalivayksen asennus (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 
@@ -13,13 +13,13 @@ Aivan kuten Stripe, PayPal on laajalti käytetty verkossa tapahtuvaan maksuun, e
 
 Huomaa, että tarvitset **PayPal Business -tilin** saadaksesi API-tunnisteen, jota tarvitaan tähän integraatioon.
 
-## PayPalin aktivoiminen verkostossasi
+## PayPalin aktivoiminen verkostossasi {#enabling-paypal-on-your-network}
 
 Jotta voit aktivoida PayPali saatavaksi maksutavaksi verkkoyhteydessäsi, siirry kohtaan **Ultimate Multisite > Asetukset > Maksut** ja valitse ruutu PayPalin vieressä.
 
 ![PayPalin aktivoiminen aktiivisissa maksuportaaleissa](/img/config/settings-payment-gateways.png)
 
-## Ohjattu asennuswizardin käyttö
+## Ohjattu asennuswizardin käyttö {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 lisää ohjatun PayPal-asennuswizardin maksuportaalin asetuksiin. Kun olet aktivoimassa PayPaliä, käytä wizardia kohtaa **Ultimate Multisite > Asetukset > Maksut** valitaksesi, miten haluat yhdistää portailun ja vahvistaaksesi, mitä tunnisteita tarvitaan ennen tallennusta.
 
@@ -30,7 +30,7 @@ Wizard tukee kahta asennuspolkua:
 
 Jos et näe OAuth-vaihtoehtoa ohjelmassa, suorita alla olevan manuaalisen tunnisteiden syöttöprosessin. Portti toimii samoilla PayPal Business API -tunnisteilla kuin aiemmissa Ultimate Multisite 2.x -versioissa.
 
-## PayPal-API-tunnisteiden hankkiminen
+## PayPal-API-tunnisteiden hankkiminen {#getting-the-paypal-api-credentials}
 
 Kun olet aktivoitunut maksukeskuksena PayPalissa, sinun on täytettävä kentät PayPalin API **Username**, PayPalin API **Password** ja PayPalin API **Signature**.
 

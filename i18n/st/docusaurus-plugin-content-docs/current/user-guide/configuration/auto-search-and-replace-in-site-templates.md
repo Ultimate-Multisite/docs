@@ -3,7 +3,7 @@ title: Ho Hloboho le Ho Re-baetsa ka Template tsa Site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2)
+# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**O tšhobo o fana ka ho fetola le ho fetola.**_
 
@@ -15,7 +15,7 @@ Lumela, u ka fana le field ea registration e fetang ho fana ka data ena.
 
 Ultimate Multisite o tla fetola placeholders le data e fana ka customer ka ntlha.
 
-## **Ho fetola problema ea "template e ntšhha le placeholders"**
+## **Ho fetola problema ea "template e ntšhha le placeholders"** {#solving-the-template-full-of-placeholders-problem}
 
 Tona ke bohle, empa re feta le problema e ntšha: site templates ea rona - seo ba customer ba ka feta - e ntšha le placeholders e ntšha e e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse
 

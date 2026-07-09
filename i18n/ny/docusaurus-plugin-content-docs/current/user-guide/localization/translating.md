@@ -3,11 +3,11 @@ title: Kuthandiza Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Kuthandiza Ultimate Multisite
+# Kuthandiza Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite wamukwera kwa English, koma plugin uliwezi kutranslate bwino ndipo tuseka mwachuso kuti muthandize kuweka uthandizo lwa mtangamo.
 
-## Kutranslate Plugin Yosangalatsa (Core Plugin Translations)
+## Kutranslate Plugin Yosangalatsa (Core Plugin Translations) {#core-plugin-translations}
 
 Plugin yosangalatsa ya Ultimate Multisite imatranslate kupitenga **WordPress.org translation platform** yomakono:
 
@@ -24,7 +24,7 @@ Iyi ndiyo mfumo ya kutranslate ya WordPress community. Pamene uthandizo lwa kutr
 
 Ngati mukuwoneka kuti mufuna kuti mwereke chitsogo cha kutranslate kwa chiwerengero chanu (mungathe kuyesa uthandizo lwa kutranslate), onje muli ndi mafunso pa [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Kutranslate Addon Plugins
+## Kutranslate Addon Plugins {#addon-translations}
 
 Addon plugins zimatranslate m'malo wosiyanasiye pamene:
 
@@ -32,11 +32,11 @@ Addon plugins zimatranslate m'malo wosiyanasiye pamene:
 
 Kutranslate ya addon zili mwachidzi pa AI monga mfarizo yomweyo. Zikukwanira chiwerengero chonse chokondedwa koma zimenephwe kuti zili ndi mafunso osiyanasiye kapena kusintha. Tili tikufuna mtangamo wosiyanasiye kuti amwereke ndikusonyeza kuti zili ndi mafunso osiyanasiye kapena kusintha kuti zili ndi mfundo zomwezi komanso zikubwera mwayi.
 
-## Kutranslate Zitsogo Zokhudzana (Local Translations)
+## Kutranslate Zitsogo Zokhudzana (Local Translations) {#local-translations}
 
 Muli muli mukufuna kutumiza zotsatira mu project wanu wanu pa kusonye kwa upande wa upamwamba (upstream) n'kuti utereke kufrasa m'moyo wanu, muli ndi mavuto mawulu:
 
-### Kutumiza Poedit
+### Kutumiza Poedit {#using-poedit}
 
 Muli ndi ulewo wopangidwa pa desktop **[Poedit](https://poedit.net)** kuti mutereke `.pot` file yomwezi:
 
@@ -46,6 +46,6 @@ Muli ndi ulewo wopangidwa pa desktop **[Poedit](https://poedit.net)** kuti muter
 4. Save -- Poedit imapanga files zolemba (`.po` ndipo `.mo`)
 5. Panga files zomwe muli ndiwo m'folder ya `lang`
 
-### Kutumiza Loco Translate
+### Kutumiza Loco Translate {#using-loco-translate}
 
 Plugin ya WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** imapamukira kutereke m'moyo wanu (admin panel) m'moyo, osati muli ndi zotsatira pa desktop. Imapanga ndikufotokoza files za utereke ndi kupanga zolemba kuti muli.

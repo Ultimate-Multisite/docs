@@ -3,17 +3,17 @@ title: Lisamooduli Sunrise-faililaadija
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise faili laadija
+# Addon Sunrise faili laadija {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 lisab lisamoodulite ja kohandatud MU-plugin integratsioonide jaoks sunrise-laienduste laadija, mis peavad töötama WordPress sunrise algkäivituse ajal ilma genereeritud `wp-content/sunrise.php` faili muutmata.
 
-## Millal seda kasutada
+## Millal seda kasutada {#when-to-use-it}
 
 Kasuta sunrise-laiendust siis, kui sinu integratsioon peab töötama enne tavaliste pluginate laadimist, näiteks kohandatud domeeniruuting, hostipõhine päringute käsitlemine või varased võrgustiku algkäivituse kohandused.
 
 Tavaliste integratsioonide puhul eelista tavalisi WordPress pluginaid, MU-plugin'eid ja dokumenteeritud Ultimate Multisite konkse. Sunrise-kood töötab väga varakult ning peaks jääma väikeseks, kaitsvaks ja sõltuvustevabaks.
 
-## Faili nimetamise tava
+## Faili nimetamise tava {#file-naming-convention}
 
 Loo PHP-fail nimega `sunrise.php` lisamooduli kataloogis, mille nimi algab tekstiga `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Sobivad failid laaditakse lisamooduli tee järgi tähestikulises järjekorras.
 
-## Kuhu fail paigutada
+## Kuhu fail paigutada {#where-to-place-the-file}
 
 Paiguta fail selle lisamooduli juurkataloogi, millele sunrise-käitumine kuulub:
 
@@ -45,7 +45,7 @@ Skaneerimine lahendatakse `WP_CONTENT_DIR` suhtes, mitte `WP_PLUGIN_DIR` praegus
 
 Ära muuda genereeritud `wp-content/sunrise.php` faili otse. Laadija võimaldab kohandatud koodil laiendada sunrise-käitumist ilma Ultimate Multisite'i paigaldatavat ja uuendatavat põhilist sunrise-faili hargnemata.
 
-## Saadaolevad konksud ja filtrid
+## Saadaolevad konksud ja filtrid {#hooks-and-filters-available}
 
 Lisamoodulite sunrise-failid käivitatakse pärast seda, kui Ultimate Multisite domeenide kaardistamine on laaditud, ja enne seda, kui WordPress käivitab `ms_loaded`. Selles punktis saab sunrise-fail:
 
@@ -58,7 +58,7 @@ Ultimate Multisite käivitab `wu_sunrise_loaded` pärast seda, kui selle sunrise
 
 Kutsu ainult funktsioone, mis on sunrise-faasis juba laaditud. Väldi andmebaasimahukat tööd, mallide renderdamist, HTTP-päringuid ja koodi, mis eeldab, et tavaline pluginate laadimisjärjekord on lõpetatud.
 
-## Minimaalne näide
+## Minimaalne näide {#minimal-example}
 
 ```php
 <?php

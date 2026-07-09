@@ -3,11 +3,11 @@ title: هوک‌لار مرجعی
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# هوک‌لار قایناقی
+# هوک‌لار قایناقی {#hooks-reference}
 
 Ultimate Multisite ایچینده بوتون **59 عمل** و **118 فیلتر** اوچون اؤز-اؤزونه یارانمیش سندلر.
 
-## عمل‌لر
+## عمل‌لر {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — دوغرولاما یؤنلندیرمه‌سیندن اؤنجه ایشلیر.
 - [set_auth_cookie](./Actions/set_auth_cookie) — دوغرولاما cookie-سی قویولمامیشدان درست اؤنجه ایشلیر.
@@ -70,7 +70,7 @@ Ultimate Multisite ایچینده بوتون **59 عمل** و **118 فیلتر**
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — بیر آبجکت دیتابیسه یازیلا‌ندان سونرا ایشلیر.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin گلیشدیرنلرینه اجازه وئر کی آچما پروسه‌سینه action-لار علاوه ائله‌سینلر.
 
-## فیلترلر
+## فیلترلر {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — کیملیک تانیتما cookie-سینین بیتیش سوره‌سینین اۇزونلوغونو فیلتر ائدیر.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — کیملیک تانیتما یؤنلندیرمه scheme-ینی فیلتر ائدیر.

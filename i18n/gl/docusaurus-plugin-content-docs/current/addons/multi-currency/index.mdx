@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency permite que a túa rede acepte pagos en múltiples moedas. Converte automaticamente os prezos usando tipos de cambio en directo ou manuais, permíteche definir prezos exactos por produto para calquera moeda e detecta a moeda preferida de cada visitante mediante xeolocalización — todo xestionado desde un único Dashboard de administración.
 
-## Características principais
+## Características principais {#key-features}
 
 - **Conversión automática de tipos de cambio** — os prezos convértense desde a túa moeda base usando tipos obtidos do provedor que escollas
 - **Substitucións de prezos por produto** — define prezos exactos específicos por moeda en calquera produto para evitar a conversión automática
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency permite que a túa rede acepte pagos en múlt
 - **Detección de moeda baseada en xeolocalización** — preselecciona automaticamente a moeda que coincide co país do visitante
 - **Dashboard de administración** — xestiona moedas activas, tipos de cambio e axustes do provedor desde un único lugar
 
-## Requisitos
+## Requisitos {#requirements}
 
 - Ultimate Multisite 2.0.0 ou superior
 - Instalación de WordPress Multisite
 - PHP 7.4 ou superior
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube os ficheiros do plugin a `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Activa o plugin a través da pantalla **Plugins** en WordPress (Activar na rede)
 3. Vai a **Ultimate Multisite → Multi-Currency** para abrir o Dashboard de administración
 4. Engade as moedas que queres aceptar e configura o teu provedor de tipos de cambio
 
-## Configuración
+## Configuración {#configuration}
 
-### Dashboard de administración
+### Dashboard de administración {#admin-dashboard}
 
 O Dashboard de administración de Multi-Currency (**Ultimate Multisite → Multi-Currency**) é o lugar central para:
 
@@ -44,7 +44,7 @@ O Dashboard de administración de Multi-Currency (**Ultimate Multisite → Multi
 - Revisar os tipos actuais de todas as moedas activas
 - Definir tipos manuais cando os provedores automáticos non sexan axeitados
 
-### Provedores de tipos de cambio
+### Provedores de tipos de cambio {#exchange-rate-providers}
 
 | Provedor | Descrición |
 |---|---|
@@ -55,7 +55,7 @@ O Dashboard de administración de Multi-Currency (**Ultimate Multisite → Multi
 
 Selecciona o teu provedor en **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Os tipos poden actualizarse manualmente en calquera momento ou programarse para actualizarse automaticamente.
 
-### Substitucións de prezos por produto
+### Substitucións de prezos por produto {#per-product-pricing-overrides}
 
 Cando a conversión automática non é o suficientemente precisa, podes definir un prezo exacto para unha moeda específica en calquera produto:
 
@@ -66,7 +66,7 @@ Cando a conversión automática non é o suficientemente precisa, podes definir 
 
 Os produtos sen unha substitución usan o prezo convertido desde a túa moeda base.
 
-### Campo de rexistro selector de moeda
+### Campo de rexistro selector de moeda {#currency-selector-signup-field}
 
 O campo selector de moeda pode engadirse ao teu fluxo de rexistro/checkout para que os clientes escollan a súa moeda preferida no rexistro:
 
@@ -76,7 +76,7 @@ O campo selector de moeda pode engadirse ao teu fluxo de rexistro/checkout para 
 
 A moeda seleccionada gárdase coa subscrición e úsase para toda a facturación posterior.
 
-### Detección de moeda baseada en xeolocalización
+### Detección de moeda baseada en xeolocalización {#geolocation-based-currency-detection}
 
 Cando a detección por xeolocalización está activada, o addon asigna o país do visitante a unha moeda e preselecciónaa no campo selector de moeda. Para activala:
 
@@ -86,27 +86,27 @@ Cando a detección por xeolocalización está activada, o addon asigna o país d
 
 Se non existe ningunha asignación para o país dun visitante, úsase a moeda base da rede como alternativa.
 
-## Preguntas frecuentes
+## Preguntas frecuentes {#frequently-asked-questions}
 
-### Que acontece se un provedor de tipos de cambio non está dispoñible?
+### Que acontece se un provedor de tipos de cambio non está dispoñible? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 O addon recorre aos últimos tipos obtidos correctamente. Se nunca se obtiveron tipos, recorre aos tipos manuais que configuraches. Recoméndase configurar tipos manuais como rede de seguridade.
 
-### Podo usar provedores diferentes para moedas diferentes?
+### Podo usar provedores diferentes para moedas diferentes? {#can-i-use-different-providers-for-different-currencies}
 
 Non — hai un único provedor activo á vez para todas as moedas. Usa **Manual** se necesitas control total sobre os tipos individuais.
 
-### A xeolocalización require un plugin separado?
+### A xeolocalización require un plugin separado? {#does-geolocation-require-a-separate-plugin}
 
 Non se require ningún plugin externo de xeolocalización. O addon usa a detección de IP a país integrada de WordPress. Para unha maior precisión, pódese integrar un servizo de xeolocalización dedicado mediante os filter hooks proporcionados.
 
-### As substitucións por produto aplícanse antes ou despois dos impostos?
+### As substitucións por produto aplícanse antes ou despois dos impostos? {#are-per-product-overrides-applied-before-or-after-tax}
 
 As substitucións por produto definen o prezo antes de impostos na moeda de destino. O imposto calcúlase sobre o prezo de substitución usando a túa configuración fiscal existente.
 
-## Rexistro de cambios
+## Rexistro de cambios {#changelog}
 
-### Versión 1.0.0 — Publicada o 2026-04-02
+### Versión 1.0.0 — Publicada o 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Novo: compatibilidade con múltiples moedas con conversión automática de tipos de cambio
 - Novo: substitucións de prezos por produto para prezos exactos específicos por moeda

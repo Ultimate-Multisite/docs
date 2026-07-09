@@ -3,15 +3,15 @@ title: Gin SVG Lógó
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Gin Logo SVG
+# Gin Logo SVG {#generate-logo-svg}
 
 Ligeann an cumas **Gin Logo SVG** do Theme Builder SVGanna lógó saincheaptha a chruthú agus a leabú go díreach i do shuíomh WordPress le glanadh uathoibríoch atá sábháilte ó thaobh ainmspáis de.
 
-## Forbhreathnú
+## Forbhreathnú {#overview}
 
 Gineann an cumas seo lógónna grafaicí veicteora inscálaithe (SVG) bunaithe ar threo brandála agus roghanna dearaidh do shuímh. Déantar na SVGanna ginte a ghlanadh go huathoibríoch lena chinntiú go bhfuil siad sábháilte le húsáid in WordPress agus sláine amhairc á coinneáil acu.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Paraiméadar | Cineál | Riachtanach | Cur síos |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Gineann an cumas seo lógónna grafaicí veicteora inscálaithe (SVG) bunaithe a
 | `height` | number | Níl | Airde SVG i bpicteilíní (réamhshocrú: 200) |
 | `include_text` | boolean | Níl | Cé acu ainm an tsuímh a chur san áireamh mar théacs sa lógó nó gan é a chur (réamhshocrú: true) |
 
-## Formáid Aschuir
+## Formáid Aschuir {#output-format}
 
 Filleann an cumas teaghrán SVG leis an struchtúr seo a leanas:
 
@@ -36,7 +36,7 @@ Filleann an cumas teaghrán SVG leis an struchtúr seo a leanas:
 }
 ```
 
-## Iompar Glanta SVG
+## Iompar Glanta SVG {#svg-sanitisation-behaviour}
 
 Téann na SVGanna ginte trí ghlanadh uathoibríoch atá sábháilte ó thaobh ainmspáis de chun:
 
@@ -48,7 +48,7 @@ Téann na SVGanna ginte trí ghlanadh uathoibríoch atá sábháilte ó thaobh a
 
 Cinntíonn sé seo go bhfuil an SVG sábháilte le leabú go díreach in WordPress gan gá le glanadh breise.
 
-## Sampla Úsáide
+## Sampla Úsáide {#usage-example}
 
 **Leid:**
 ```
@@ -62,7 +62,7 @@ Cruthaíonn an cumas lógó SVG a:
 - Leanann prionsabail dearaidh nua-aimseartha
 - Déantar é a ghlanadh go huathoibríoch agus tá sé réidh le húsáid
 
-## Comhtháthú le Theme Builder
+## Comhtháthú le Theme Builder {#integration-with-theme-builder}
 
 Agus roghnú treo dearaidh Theme Builder á úsáid, déanann an cumas Gin Logo SVG:
 
@@ -71,21 +71,21 @@ Agus roghnú treo dearaidh Theme Builder á úsáid, déanann an cumas Gin Logo 
 3. Leabaíonn sé an lógó go huathoibríoch i gceantar ceanntáisc/brandála do shuímh
 4. Stórálann sé an SVG mar lógó saincheaptha i meáin WordPress
 
-## Dea-Chleachtais
+## Dea-Chleachtais {#best-practices}
 
 - **Tabhair roghanna soiléire stíle** — déan cur síos ar an stíl dearaidh atá uait (nua-aimseartha, clasaiceach, spraíúil, srl.)
 - **Sonraigh dathanna** — cuir dathanna do bhranda san áireamh ar mhaithe le comhsheasmhacht
 - **Tástáil an rindreáil** — deimhnigh go dtaispeántar an lógó i gceart thar mhéideanna éagsúla scáileáin
 - **Saincheap tuilleadh** — úsáid uirlisí saincheaptha lógó WordPress chun méid agus suíomh a choigeartú
 
-## Teorainneacha
+## Teorainneacha {#limitations}
 
 - Gintear lógónna SVG mar ghrafaicí statacha (ní beoite)
 - D’fhéadfadh lógónna casta le go leor eilimintí mionchoigeartú láimhe a éileamh
 - Ní thacaítear le clónna saincheaptha; úsáideann téacs clónna córais
 - D’fhéadfadh toisí an-mhóra nó an-bheaga tionchar a imirt ar cháilíocht
 
-## Cumais Ghaolmhara
+## Cumais Ghaolmhara {#related-abilities}
 
 - [Bailíochtaigh Codarsnacht Pailéid](./validate-palette-contrast.md) — seiceáil codarsnacht dathanna ar mhaithe le hinrochtaineacht
 - [Cruthaigh Roghchlár](./create-menu.md) — cruthaigh roghchláir nascleanúna do do shuíomh

@@ -3,11 +3,11 @@ title: Обработка на вебхукови
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ракување со webhook-и
+# Ракување со webhook-и {#webhook-handling}
 
 Создајте прилагодени webhook крајни точки за да примате настани од надворешни услуги и да синхронизирате податоци со Ultimate Multisite.
 
-## Прилагодена webhook крајна точка
+## Прилагодена webhook крајна точка {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Безбедносни напомени
+## Безбедносни напомени {#security-considerations}
 
 - Секогаш проверувајте ги webhook потписите користејќи HMAC или споделена тајна
 - Користете `permission_callback` на вашата REST рута — никогаш не го поставувајте на `__return_true` во продукција

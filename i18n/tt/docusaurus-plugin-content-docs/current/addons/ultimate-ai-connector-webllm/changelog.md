@@ -3,9 +3,9 @@ title: WebLLM өчен Ultimate AI Connector үзгәрешләр журналы
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector өчен WebLLM үзгәрешләр журналы
+# Ultimate AI Connector өчен WebLLM үзгәрешләр журналы {#ultimate-ai-connector-for-webllm-changelog}
 
-## Версия 1.1.0 — 2026-04-09 чыгарылды
+## Версия 1.1.0 — 2026-04-09 чыгарылды {#version-110--released-on-2026-04-09}
 
 * Яңа: admin-bar статус күрсәткече булган йөзмә чат виджеты — системага кергән теләсә кайсы кулланучы браузер ягындагы LLMга турыдан-туры алгы өлештән prompt җибәрә ала.
 * Яңа: SharedWorker башкару мохите — MLC engine хәзер SharedWorker эчендә эшли, шуңа берничә кыстыргыч бер GPU сессиясен үзара бүлешә, аның өчен көрәшми.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Төзәтү: модель көйләнгәндә AI Experiments функциясе браузер engineына юнәлсен өчен, WebLLM wpai_preferred_text_models фильтрына тоташтырылды.
 * Яхшыртылды: end-to-end сынау вакытында ачыкланган cache-busting, эчтәлек нормальләштерү һәм hardware-reference төзәтмәләре.
 
-## Версия 1.0.0 — Беренче чыгарылыш
+## Версия 1.0.0 — Беренче чыгарылыш {#version-100--initial-release}

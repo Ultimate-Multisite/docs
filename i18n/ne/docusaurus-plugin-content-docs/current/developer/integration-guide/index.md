@@ -3,13 +3,13 @@ title: एकीकरण मार्गदर्शिका
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# एकीकरण मार्गदर्शिका
+# एकीकरण मार्गदर्शिका {#integration-guide}
 
 यो मार्गदर्शिकाले Ultimate Multisite सँगका सामान्य एकीकरण ढाँचाहरू समेट्छ, जसमा बाह्य सेवाहरूसँग जडान गर्ने, कस्टम भुक्तानी gateway बनाउने, र webhooks ह्यान्डल गर्ने कुरा समावेश छन्।
 
 अलग tenant पूर्वाधारका लागि, sovereign tenant bootstrap, migration verification, SSO, र teardown मार्गदर्शनका लागि [Multi-Tenancy एकीकरण](./multi-tenancy) हेर्नुहोस्।
 
-## CRM एकीकरण
+## CRM एकीकरण {#crm-integration}
 
 नयाँ ग्राहकहरूले साइन अप गर्दा ग्राहक डेटा आफ्नो CRM मा sync गर्नुहोस्:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics एकीकरण
+## Analytics एकीकरण {#analytics-integration}
 
 ग्राहक जीवनचक्रभरिका प्रमुख व्यवसायिक घटनाहरू track गर्नुहोस्:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## अर्को चरणहरू
+## अर्को चरणहरू {#next-steps}
 
 - [कस्टम Gateway विकास](./custom-gateway) — आफ्नो भुक्तानी gateway बनाउनुहोस्
 - [Webhook ह्यान्डलिङ](./webhooks) — कस्टम webhook endpoints सिर्जना गर्नुहोस्

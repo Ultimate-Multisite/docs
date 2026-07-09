@@ -3,15 +3,15 @@ title: 'Darasi na 8: Shigar da Abokin Ciniki'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Darasi na 8: Shigar da Abokan Ciniki
+# Darasi na 8: Shigar da Abokan Ciniki {#lesson-8-customer-onboarding}
 
 Samu abokin ciniki ya yi rajista rabin aikin ne kawai. Idan sun shiga, suka ji sun ruɗe, sannan ba su sake dawowa ba, ka rasa su. Wannan darasin yana tsara ƙwarewar da ke mayar da sabon mai rajista zuwa abokin ciniki mai aiki kuma mai hulɗa.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 FitSite an gama masa branding da tsarin checkout flow mai aiki. Yanzu za mu mai da hankali kan abin da ke faruwa bayan mai gidan studio na motsa jiki ya kammala rajista kuma ya sauka a sabon site ɗinsa a karon farko.
 
-## Me Ya Sa Onboarding Ke Da Muhimmanci
+## Me Ya Sa Onboarding Ke Da Muhimmanci {#why-onboarding-matters}
 
 Minti 30 na farko bayan rajista suna ƙayyade ko abokin ciniki zai zauna ko zai daina. Mai gidan fitness studio wanda:
 
@@ -21,9 +21,9 @@ Minti 30 na farko bayan rajista suna ƙayyade ko abokin ciniki zai zauna ko zai 
 
 Samfuran niche ɗinka (Darasi na 4) suna kula da batu na farko. Wannan darasin yana kula da na biyu.
 
-## Ƙwarewar Shiga Na Farko
+## Ƙwarewar Shiga Na Farko {#the-first-login-experience}
 
-### Welcome Dashboard Widget
+### Welcome Dashboard Widget {#welcome-dashboard-widget}
 
 Ƙirƙiri dashboard widget na musamman da ke maraba da sababbin abokan ciniki kuma yana jagorantar su ta hanyar saiti. Ya kamata wannan ya bayyana a fili lokacin da suka fara shiga.
 
@@ -37,7 +37,7 @@ Samfuran niche ɗinka (Darasi na 4) suna kula da batu na farko. Wannan darasin y
 
 Kowane mataki yana haɗa kai tsaye zuwa shafi ko saiti mai dacewa. Babu bincike cikin menus.
 
-### Sauƙaƙa Dashboard
+### Sauƙaƙa Dashboard {#simplify-the-dashboard}
 
 Sababbin abokan ciniki ba sa buƙatar ganin kowane abu a menu na WordPress. Yi la’akari da:
 
@@ -47,29 +47,29 @@ Sababbin abokan ciniki ba sa buƙatar ganin kowane abu a menu na WordPress. Yi l
 
 Addon na [Plugin & Theme Manager](/addons/plugin-and-theme-manager) zai iya taimakawa wajen sarrafa abin da abokan ciniki ke gani.
 
-## Jerin Imel na Maraba
+## Jerin Imel na Maraba {#welcome-email-sequence}
 
 Imel ɗaya na maraba bai isa ba. Saita jerin imel da ke jagorantar abokan ciniki cikin makonsu na farko:
 
-### Imel 1: Maraba (Nan take bayan rajista)
+### Imel 1: Maraba (Nan take bayan rajista) {#email-1-welcome-immediately-after-signup}
 
 - Subject: "Barka da zuwa FitSite -- gidan yanar gizon studio ɗinka yana live"
 - Content: Link na shiga, matakan farawa cikin sauri, link zuwa albarkatun taimako
 - Tone: Mai faranta rai, mai ƙarfafawa, kuma na musamman ga fitness
 
-### Imel 2: Nasarori Masu Sauri (Rana ta 1)
+### Imel 2: Nasarori Masu Sauri (Rana ta 1) {#email-2-quick-wins-day-1}
 
 - Subject: "Abubuwa 3 da za ka fara yi a FitSite ɗinka"
 - Content: Ƙara tambarinka, sabunta hoton hero na homepage, ƙara jadawalin azuzuwanka
 - Haɗa screenshots da ke nuna ainihin inda za a danna
 
-### Imel 3: Ka Mai da Shi Naka (Rana ta 3)
+### Imel 3: Ka Mai da Shi Naka (Rana ta 3) {#email-3-make-it-yours-day-3}
 
 - Subject: "Ka sa fitness site ɗinka ya yi fice"
 - Content: Daidaita launuka, ƙara hotunan masu horarwa, rubuta labarin studio ɗinka
 - Link zuwa misalan kyawawan fitness sites a kan platform
 
-### Imel 4: Fara Live (Rana ta 7)
+### Imel 4: Fara Live (Rana ta 7) {#email-4-go-live-day-7}
 
 - Subject: "Ka shirya raba FitSite ɗinka da duniya?"
 - Content: Jerin abubuwan dubawa kafin raba shi, yadda ake haɗa custom domain (idan kana kan Growth/Pro), shawarwarin rabawa a social media
@@ -78,11 +78,11 @@ Imel ɗaya na maraba bai isa ba. Saita jerin imel da ke jagorantar abokan ciniki
 Use [Webhooks](/user-guide/integrations/webhooks) or [Zapier](/user-guide/integrations/zapier) to trigger these emails through your email marketing platform. This gives you more control over timing and allows you to track engagement.
 :::
 
-## Albarkatun Taimako
+## Albarkatun Taimako {#help-resources}
 
 Ƙirƙiri abun taimako na musamman ga niche wanda ke amsa tambayoyin da masu fitness studio ke yi a zahiri:
 
-### Labaran Knowledge Base
+### Labaran Knowledge Base {#knowledge-base-articles}
 
 - "Yadda ake sabunta jadawalin azuzuwanka"
 - "Ƙara da gyara bayanan martabar masu horarwa"
@@ -92,7 +92,7 @@ Use [Webhooks](/user-guide/integrations/webhooks) or [Zapier](/user-guide/integr
 
 Rubuta waɗannan don masu amfani marasa ƙwarewar fasaha. Yi amfani da screenshots. Guji jargon na WordPress.
 
-### Bidiyon Bayani Mataki-mataki
+### Bidiyon Bayani Mataki-mataki {#video-walkthroughs}
 
 Gajerun rikodin allo (minti 2-3) da ke nuna:
 
@@ -103,7 +103,7 @@ Gajerun rikodin allo (minti 2-3) da ke nuna:
 
 Ba lallai ne waɗannan su zama shirye-shirye masu tsantseni ba. Abin da ya fi muhimmanci shi ne su kasance a bayyane, masu taimako, kuma na musamman ga niche.
 
-## Shafin Account
+## Shafin Account {#the-account-page}
 
 Ultimate Multisite ya haɗa da [Shafin Account](/user-guide/client-management/account-page) da abokan ciniki ke gani inda suke sarrafa subscription ɗinsu. Daidaita wannan don:
 
@@ -112,7 +112,7 @@ Ultimate Multisite ya haɗa da [Shafin Account](/user-guide/client-management/ac
 - Samar da tarihin billing da zazzage invoices
 - Link zuwa albarkatun taimako
 
-## Auna Nasarar Onboarding
+## Auna Nasarar Onboarding {#measuring-onboarding-success}
 
 Bi waɗannan alamomi don sanin ko onboarding ɗinka yana aiki:
 
@@ -121,7 +121,7 @@ Bi waɗannan alamomi don sanin ko onboarding ɗinka yana aiki:
 - **Tikits na support daga sababbin abokan ciniki**: Yawan yawa yana nufin onboarding ɗinka yana da gibi
 - **Juyawa daga trial zuwa paid**: Idan kana bayar da trials, wane kaso ne ke canzawa?
 
-## FitSite Network Zuwa Yanzu
+## FitSite Network Zuwa Yanzu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Abin da Muka Gina a Wannan Darasin
+## Abin da Muka Gina a Wannan Darasin {#what-we-built-this-lesson}
 
 - **Ƙwarewar shiga na farko mai jagora** tare da Quick Start widget
 - **Dashboard mai sauƙi** da ya mai da hankali kan ayyukan sarrafa fitness site

@@ -3,7 +3,7 @@ title: GoCardless পৰিৱৰ্তনৰ তালিকা
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless চেঞ্জলগ
+# GoCardless চেঞ্জলগ {#gocardless-changelog}
 
 সংস্কৰণ: 1.0.3 - মুকলি কৰা হৈছিল: 2026-05-05
 * সংশোধন: GoCardless সদস্যপদ বাতিল কৰাৰ সময়ত, যদি কোনো সদস্যপদ প্ৰেণ্ডিং বা ৰখা অৱস্থাত থাকে, তেন্তে থকা অনাথ (orphaned) প্ৰেণ্ডিং সাইটসমূহ এতিয়া পৰিষ্কাৰ কৰা হয়।

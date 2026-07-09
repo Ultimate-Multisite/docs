@@ -3,19 +3,19 @@ title: 'Isifundo 13: Ukwandisa'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Isifundo 13: Ukukhula Ngomlinganiselo
+# Isifundo 13: Ukukhula Ngomlinganiselo {#lesson-13-scaling-up}
 
 Unendawo esebenzayo enabathengi abahlawulayo. Esi sifundo sigubungela indlela yokukhula ukusuka kumsebenzi omncinci uye kwishishini elizinzileyo -- ukwandisa iziseko zobugcisa, ukwenza imisebenzi ngokuzenzekelayo, nokunyusa ingeniso kumthengi ngamnye.
 
-## Apho Sashiya Khona
+## Apho Sashiya Khona {#where-we-left-off}
 
 FitSite iyasebenza, abathengi bayabhalisa, kwaye uqhuba imisebenzi yemihla ngemihla. Ngoku sigxila ekukhuleni.
 
-## Wazi Amanani Akho
+## Wazi Amanani Akho {#know-your-numbers}
 
 Phambi kokukhula ngomlinganiselo, qonda ukuba umi phi:
 
-### Iimetriki Ezibalulekileyo
+### Iimetriki Ezibalulekileyo {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Ingeniso iyonke yenyanga evela kumirhumo ephindaphindwayo
 - **Inani labathengi**: Inani lilonke lababhalisileyo abasebenzayo
@@ -24,7 +24,7 @@ Phambi kokukhula ngomlinganiselo, qonda ukuba umi phi:
 - **LTV (Lifetime Value)**: Ingeniso ephakathi kumthengi ngamnye kulo lonke ubhaliso lwakhe
 - **CAC (Customer Acquisition Cost)**: Iindleko eziphakathi zokufumana umthengi omnye
 
-### Umzekelo: FitSite kubathengi abangama-50
+### Umzekelo: FitSite kubathengi abangama-50 {#example-fitsite-at-50-customers}
 
 | Imetriki | Ixabiso |
 |--------|-------|
@@ -36,9 +36,9 @@ Phambi kokukhula ngomlinganiselo, qonda ukuba umi phi:
 
 La manani akuxelela into ekufuneka ugxile kuyo. Ukurhoxa kuphezulu? Lungisa ukugcina abathengi. ARPU iphantsi? Tyhala ukuphuculwa kweeplan. CAC iphezulu? Lungisa amajelo okufumana abathengi.
 
-## Ukukhulisa Iziseko Zobugcisa
+## Ukukhulisa Iziseko Zobugcisa {#scaling-infrastructure}
 
-### Nini Ukukhulisa
+### Nini Ukukhulisa {#when-to-scale}
 
 Khulisa ukusingathwa xa:
 
@@ -47,7 +47,7 @@ Khulisa ukusingathwa xa:
 - Usondela kwiisayithi ezisebenzayo ezingaphezu kwe-100
 - Izikhalazo zabathengi ngesantya ziyanda
 
-### Indlela Yokukhulisa
+### Indlela Yokukhulisa {#how-to-scale}
 
 - **Ukukhulisa ngokuthe nkqo**: Phucula uye kwiseva enkulu (i-CPU engakumbi, RAM)
 - **Iingqimba ze-caching**: Yongeza Redis/Memcached ye-object caching, page caching yomxholo ongatshintshiyo
@@ -55,7 +55,7 @@ Khulisa ukusingathwa xa:
 - **Ukulungisa database**: Njengoko inethiwekhi ikhula, imibuzo ye-database iyacotha. Lungisa iitafile, yongeza ii-index, cinga ngeseva ye-database ezinikeleyo.
 - **Yahlula imiba**: Hambisa ukugcinwa kwemidiya kwi-object storage (ehambelana ne-S3), ukhuphele email kwinkonzo ye-email yentengiselwano
 
-### Ukufuduswa Kokusingathwa
+### Ukufuduswa Kokusingathwa {#hosting-migration}
 
 Ukuba umsingathi wakho wangoku akanakukhula ngakumbi, cwangcisa ukufuduka:
 
@@ -65,11 +65,11 @@ Ukuba umsingathi wakho wangoku akanakukhula ngakumbi, cwangcisa ukufuduka:
 4. Hlaziya DNS nge-TTL encinci kwangaphambili
 5. Qinisekisa ukuba yonke into iyasebenza emva kokufuduka
 
-## Ukwenza Imisebenzi Ngokuzenzekelayo
+## Ukwenza Imisebenzi Ngokuzenzekelayo {#automating-operations}
 
 Njengoko ukhula, iinkqubo ezenziwa ngesandla ziba zizithintelo. Yenza ngokuzenzekelayo oko unokukwenza:
 
-### Webhooks kunye ne-Zapier
+### Webhooks kunye ne-Zapier {#webhooks-and-zapier}
 
 Sebenzisa [Webhooks](/user-guide/integrations/webhooks) okanye [Zapier](/user-guide/integrations/zapier) ukwenza ngokuzenzekelayo:
 
@@ -78,7 +78,7 @@ Sebenzisa [Webhooks](/user-guide/integrations/webhooks) okanye [Zapier](/user-gu
 - **Ukusilela kwentlawulo** → isilumkiso kwisixhobo sakho sokubeka esweni
 - **Ukuphuculwa kweplan** → email yokuvuyisana nesikhokelo seempawu ezintsha
 
-### Ukuzenzekelayo Kwe-email
+### Ukuzenzekelayo Kwe-email {#email-automation}
 
 Suka kwii-email ezenziwa ngesandla uye kuthotho oluzenzekelayo:
 
@@ -87,30 +87,30 @@ Suka kwii-email ezenziwa ngesandla uye kuthotho oluzenzekelayo:
 - Izikhumbuzo zokuphucula xa abathengi besondela kwimida yeplan
 - Izikhumbuzo zokuhlaziya kubabhalisi bonyaka
 
-### Ukuzenzekelayo Kwenkxaso
+### Ukuzenzekelayo Kwenkxaso {#support-automation}
 
 - **Iimpendulo ezilungisiweyo** zemibuzo eqhelekileyo
 - **Iimpendulo ezizenzekelayo** eziqinisekisa ukufunyanwa kweetikiti zenkxaso
 - **Iingcebiso zesiseko solwazi** xa abathengi befaka iitikiti ezihambelana namanqaku akhoyo
 
-## Ukunyusa Ingeniso
+## Ukunyusa Ingeniso {#increasing-revenue}
 
 Ukukhula akubhekiseli kuphela kubathengi abaninzi. Kukwabhekisa nakwingeniso engakumbi kumthengi ngamnye.
 
-### Ukuthengisela Abathengi Abakhoyo Izinto Ezingaphezulu
+### Ukuthengisela Abathengi Abakhoyo Izinto Ezingaphezulu {#upselling-existing-customers}
 
 - **Ukuphuculwa kweplan**: Amaphulo ajoliswe kubathengi be-Starter abonisa iimpawu ze-Growth/Pro
 - **Order bumps**: Khuthaza iimveliso ezongezelelekileyo kubathengi abakhoyo nge-email
 - **Ukuguqulela konyaka**: Nika abathengi benyanga isaphulelo sokutshintshela kwintlawulo yonyaka
 
-### Imithombo Emitsha Yengeniso
+### Imithombo Emitsha Yengeniso {#new-revenue-streams}
 
 - **Ukumisela okwenzelwa wena**: Biza ixabiso eliphezulu lokumisela nokwenza ngokwezifiso isayithi yomthengi endaweni yakhe
 - **Iinkonzo zoyilo ezikhethekileyo**: Nika umsebenzi woyilo olwenziwe ngokukodwa ngaphezu kwetemplate
 - **Iiseshini zoqeqesho**: Uhambo oluhlawulelwayo lomntu nomntu kubathengi abafuna uncedo olusebenzayo
 - **Iiplugin ze-premium**: Nika iiplugin ze-premium ezijolise kwiniche njengezongezelelo ezihlawulelwayo (umz., i-widget yokubhukisha iklasi yomthambo)
 
-### Ukunyusa Amaxabiso
+### Ukunyusa Amaxabiso {#raising-prices}
 
 Njengoko iqonga lakho likhula kwaye longeza ixabiso:
 
@@ -118,7 +118,7 @@ Njengoko iqonga lakho likhula kwaye longeza ixabiso:
 - Nyusa amaxabiso kubabhalisi abatsha
 - Chaza izizathu zokunyuka ngeempawu ezintsha kunye nophuculo
 
-## Ukwakha Iqela
+## Ukwakha Iqela {#building-a-team}
 
 Ngexesha elithile, awukwazi ukwenza yonke into wedwa. Abantu bokuqala abaqhelekileyo abaqeshwayo:
 
@@ -128,7 +128,7 @@ Ngexesha elithile, awukwazi ukwenza yonke into wedwa. Abantu bokuqala abaqheleki
 
 Awudingi abasebenzi. Iikontraka kunye nabasebenza ngokuzimeleyo basebenza kakuhle kwishishini leqonga.
 
-## Izigaba Zokukhula
+## Izigaba Zokukhula {#growth-milestones}
 
 | Isigaba | MRR eqikelelwayo | Ugxininiso |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Awudingi abasebenzi. Iikontraka kunye nabasebenza ngokuzimeleyo basebenza kakuhl
 | 250-500 abathengi | $25,000-$50,000 | Ukwakha iqela, imithombo emitsha yengeniso, iimpawu ze-premium |
 | 500+ abathengi | $50,000+ | Ukuvuthwa kweqonga, iiniche ezikufutshane, ukuphuma okunokwenzeka |
 
-## Esikwakhileyo Kwesi Sifundo
+## Esikwakhileyo Kwesi Sifundo {#what-we-built-this-lesson}
 
 - **Isakhelo seemetriki** sokuqonda impilo yeshishini
 - **Isicwangciso sokukhulisa iziseko zobugcisa** sokukhula ukusuka kwiisayithi ezininzi ezimbalwa ukuya kumakhulu

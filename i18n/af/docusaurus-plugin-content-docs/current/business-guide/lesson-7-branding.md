@@ -3,15 +3,15 @@ title: 'Les 7: Maak Dit Joune'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Les 7: Maak Dit Joune
+# Les 7: Maak Dit Joune {#lesson-7-making-it-yours}
 
 Jou kliënte moet nooit voel of hulle "net 'n WordPress plugin" gebruik nie. Hulle moet voel of hulle FitSite gebruik – 'n platform wat gebou is vir hul bedryf. Hierdie les dek branding, white-labeling, en hoe om die platform te laat voel soos 'n eie produk.
 
-## Waar Ons Gebly Het
+## Waar Ons Gebly Het {#where-we-left-off}
 
 FitSite het 'n werkende checkout-proses wat fiksheidsstudio-eienaars van plankeuse na 'n werklike webwerf neem. Nou laat ons die hele ervaring voel soos 'n samehangende, gebrande produk.
 
-## Jou Platform Domein
+## Jou Platform Domein {#your-platform-domain}
 
 Die fondasie van jou handelsmerk is jou domein. Vir FitSite:
 
@@ -19,7 +19,7 @@ Die fondasie van jou handelsmerk is jou domein. Vir FitSite:
 - **Kliëntwebwerwe**: `studioname.fitsite.com` (subdomeine)
 - **Aangepaste domeine**: Kliënte op Growth en Pro-planne kan hul eie domein koppel
 
-### Opstel van Jou Domein
+### Opstel van Jou Domein {#setting-up-your-domain}
 
 1. Registreer jou platformdomein
 2. Wys dit na jou hosting-verskaareder
@@ -28,11 +28,11 @@ Die fondasie van jou handelsmerk is jou domein. Vir FitSite:
 
 Kyk na [How to Configure Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) vir gedetailleerde instruksies.
 
-## White-Labeling van die Admin-Ervaring
+## White-Labeling van die Admin-Ervaring {#white-labeling-the-admin-experience}
 
 Wanneer 'n fiksheidsstudio-eienaar in hul webwerf-dashboard aanmeld, moet hulle jou handelsmerk sien, nie WordPress of Ultimate Multisite branding nie.
 
-### Maatgemaakte Aanmeldbladsy
+### Maatgemaakte Aanmeldbladsy {#custom-login-page}
 
 Pas die WordPress-aanmeldbladsy aan om te wys:
 
@@ -40,7 +40,7 @@ Pas die WordPress-aanmeldbladsy aan om te wys:
 - Fiksheids-gepaste agtergrondbeeldmateriaal
 - Jou handelsmerkkleure
 
-### Dashboard Branding
+### Dashboard Branding {#dashboard-branding}
 
 Gebruik die [Admin Page Creator](/addons/admin-page-creator) bykomsteen of aangepaste CSS om:
 
@@ -48,7 +48,7 @@ Gebruik die [Admin Page Creator](/addons/admin-page-creator) bykomsteen of aange
 - Die admin-kleurskema aan te pas om by jou handelsmerk te pas
 - 'n Maatgemaakte dashboard-widget by te voeg met fiksheids-spesifieke vinnige skakels en hulpbronne
 
-### Maatgemaakte Admin-Bladsye
+### Maatgemaakte Admin-Bladsye {#custom-admin-pages}
 
 Oorweeg om maatgemaakte admin-bladsye te skep wat die mees relevante aksies vir fiksheidsstudio-eienaars aan die oppervlak bring:
 
@@ -58,11 +58,11 @@ Oorweeg om maatgemaakte admin-bladsye te skep wat die mees relevante aksies vir 
 
 Dit verminder die leerkromme deur nis-relevante aksies vooraan te plaas in plaas daarvan om dit in die standaard WordPress-menu te begrawe.
 
-## Branding van Jou Kommunikasie
+## Branding van Jou Kommunikasie {#branding-your-communications}
 
 Elke e-pos, faktuur en kennisgewing moet jou handelsmerk versterk.
 
-### Sisteem-E-posse
+### Sisteem-E-posse {#system-emails}
 
 Navigeer na **Ultimate Multisite > Settings > Emails** en pas al die sisteem-e-posse aan:
 
@@ -79,7 +79,7 @@ Belangrike e-posse om aan te pas:
 | Betalingskwitansie | "Betaling ontvang" | "FitSite-abonnementbetaling bevestig" |
 | Proefperiode eindig | "Jou proefperiode eindig binnekort" | "Jou FitSite-proefperiode eindig oor 3 dae – hou jou studio-webwerf live" |
 
-### Fakture
+### Fakture {#invoices}
 
 Pas faktuurtemplates aan met:
 
@@ -87,7 +87,7 @@ Pas faktuurtemplates aan met:
 - Jou besigheidsbesonderhede
 - Fiksheids-spesifieke produkname (nie algemene plan-ID's nie)
 
-## Die Kliënt-Webwerf
+## Die Kliënt-Webwerf {#the-customer-facing-site}
 
 Jou hoofdomein (`fitsite.com`) benodig 'n bemarkingswebwerf wat die platform verkoop. Dit is geskei van die Ultimate Multisite netwerk-admin – dit is die publieke gesig van jou besigheid.
 
@@ -103,7 +103,7 @@ Belangrike bladsye:
 Skep jou bemarkingswebwerf as 'n webwerf binne jou eie netwerk. Dit laat jou toe om dit vanaf dieselfde dashboard te bestuur en demonstreer jou eie platform se vermoëns.
 :::
 
-## Maatgemaakte Domein vir Kliënte
+## Maatgemaakte Domein vir Kliënte {#custom-domain-for-customers}
 
 Vir kliënte op planne wat aangepaste domeine insluit, dokumenteer die proses dan duidelik:
 
@@ -113,7 +113,7 @@ Vir kliënte op planne wat aangepaste domeine insluit, dokumenteer die proses da
 
 Skep 'n hulp-artikel of kennisbank-inskrywing spesifiek vir hierdie proses, geskryf vir nie-tegniese fiksheidsstudio-eienaars.
 
-## Die FitSite Netwerk Tot Nou
+## Die FitSite Netwerk Tot Nou {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Wat Ons Hierdie Les Gebou Het
+## Wat Ons Hierdie Les Gebou Het {#what-we-built-this-lesson}
 
 - **Platformdomein en DNS** geconfigureer vir 'n gebrande ervaring
 - **White-labeled admin** met FitSite branding deurgaans

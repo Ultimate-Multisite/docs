@@ -3,9 +3,9 @@ title: Tarihin canje-canje na Ultimate AI Connector don WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Changelog
+# Ultimate AI Connector for WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Siga 1.1.0 — An fitar a 2026-04-09
+## Siga 1.1.0 — An fitar a 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Sabo: Na’urar chat mai shawagi tare da mai nuna matsayi na admin-bar — kowane mai amfani da ya shiga zai iya aika tambaya ga LLM na ɓangaren browser kai tsaye daga front end.
 * Sabo: SharedWorker runtime — yanzu MLC engine yana gudana a cikin SharedWorker don haka shafuka da dama suna raba zaman GPU guda ɗaya maimakon su yi rigima a kai.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Gyara: Haɗa WebLLM cikin filter na wpai_preferred_text_models don fasalin AI Experiments ya bi engine na browser idan an daidaita model.
 * An inganta: Cache-busting, daidaita abun ciki, da gyare-gyaren hardware-reference da suka fito yayin gwajin ƙarshe-zuwa-ƙarshe.
 
-## Siga 1.0.0 — Fitarwa ta Farko
+## Siga 1.0.0 — Fitarwa ta Farko {#version-100--initial-release}

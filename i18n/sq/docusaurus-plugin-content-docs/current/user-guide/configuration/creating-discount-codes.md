@@ -3,13 +3,13 @@ title: Krijimi i Kodit Ulëvizës
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Krijimi Kodit Discount (v2)
+# Krijimi Kodit Discount (v2) {#creating-discount-codes-v2}
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 
 Me Ultimate Multisite mund të krijoni kode discount për t'u dhënë klientëve ndonjë përfitim në abonime. Dhe krijimi i tyre është i thjeshtë!
 
-## Krijimi dhe Redaktimi i Kodit Discount
+## Krijimi dhe Redaktimi i Kodit Discount {#creating-and-editing-discount-codes}
 
 Për të krijuar ose redaktuar një kod discount, shkoni te **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kuponi tani është në listën tuaj dhe, nga aty, mund ta klikoni për të **re
 
 ###
 
-### Përdorimi i parametrave URL:
+### Përdorimi i parametrave URL: {#using-url-parameters}
 
 Nëse dëshironi të personalizoni tabelat tuaja të çmimeve ose të ndërtoni një faqe të bukur për kod kuponi në faqen tuaj dhe dëshironi të aplikoni një kod kuponi automatikisht në formularin tuaj të pagesës, mund ta bëni këtë përmes parametrave URL.
 

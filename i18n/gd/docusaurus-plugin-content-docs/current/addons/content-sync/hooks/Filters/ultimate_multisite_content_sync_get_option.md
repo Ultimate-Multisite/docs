@@ -4,11 +4,11 @@ title: Criathrag - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Criathrag: ultimate_multisite_content_sync_get_option
+# Criathrag: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Tillidh e luach roghainn an lìonraidh air a slugadh.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Tillidh e luach roghainn an lìonraidh air a slugadh.
 | $option_name | `string` | Ainm na roghainn. |
 | $default | `mixed` | An luach bunaiteach. |
 
-### Bho
+### Bho {#since}
 
 - 1.0.0
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) aig loidhne 126
 
 
-## Ais-thilleadh
+## Ais-thilleadh {#returns}
 Luach roghainn an lìonraidh air a slugadh.

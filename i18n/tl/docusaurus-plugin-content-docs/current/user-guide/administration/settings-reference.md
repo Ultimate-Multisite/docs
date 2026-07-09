@@ -3,11 +3,11 @@ title: Sanggunian ng mga Setting
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Sanggunian ng Settings
+# Sanggunian ng Settings {#settings-reference}
 
 Sinusubaybayan ng pahinang ito ang settings na nakaaapekto sa pang-araw-araw na pangangasiwa at mga kamakailang pagbabago sa gawi sa Ultimate Multisite.
 
-## Iba Pang Opsyon
+## Iba Pang Opsyon {#other-options}
 
 Ang bahagi ng **Iba Pang Opsyon** ay lumilitaw sa ilalim ng **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Ang bahagi ng **Iba Pang Opsyon** ay lumilitaw sa ilalim ng **Ultimate Multisite
 |---|---|
 | **Enable Jumper** | Ipinapakita ang mabilisang kasangkapan sa nabigasyon na Jumper sa bahagi ng admin. Gamitin ito upang direktang lumipat sa mga screen ng Ultimate Multisite, mga object ng network, at mga sinusuportahang destinasyon ng admin. I-disable ito kung ayaw mong makita ang shortcut na ito. |
 
-## Pag-uulat ng error at telemetry
+## Pag-uulat ng error at telemetry {#error-reporting-and-telemetry}
 
 Ang dating setting para sa pag-opt in sa pag-uulat ng error ay inalis na sa pahina ng settings. Naka-disable ang anonymous telemetry at walang UI toggle para i-enable ito.
 
 Kung nagpapanatili ka ng mga internal runbook o screenshot para sa pahina ng settings, alisin ang mga sanggunian sa lumang field ng pag-opt in sa pag-uulat ng error upang hindi hanapin ng mga administrator ang setting na wala na.
 
-## Settings ng Import/Export
+## Settings ng Import/Export {#importexport-settings}
 
 Inilalarawan ng tab ng settings na **Import/Export** kung aling settings ang kinokontrol nito at direktang nagli-link sa **Ultimate Multisite > Site Export** para sa mga archive ng site at network. Gamitin ang tab ng settings para sa configuration ng import/export, gamitin ang **Tools > Export & Import** para sa workflow ng export/import ng iisang site, at gamitin ang kasangkapan na Site Export kapag kailangan mo ng kumpletong archive ng Network Export.
 
-## Babala sa balanse ng Domain Seller HostAfrica
+## Babala sa balanse ng Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Kapag nakakonekta ang addon na Domain Seller sa HostAfrica, makakakita na ngayon ang mga administrator ng network ng babala sa mababang balanse na maaaring i-dismiss kapag masyadong mababa ang balanse ng reseller account para sa maaasahang pagproseso ng pagpaparehistro o pag-renew ng domain.
 
 Ituring ang abisong ito bilang operational na babala: dagdagan ang balanse ng HostAfrica reseller bago tumanggap ng mas marami pang bayad na pagpaparehistro ng domain, pagkatapos ay bumalik sa settings ng Domain Seller o screen ng pagsubaybay ng domain upang kumpirmahing maaaring magpatuloy nang normal ang mga pagpaparehistro at pag-renew.
 
-## Settings ng connector ng AI provider
+## Settings ng connector ng AI provider {#ai-provider-connector-settings}
 
 Ipinapakita na ngayon ng settings ng connector ng AI provider ang mga sinusuportahan lamang na OAuth account pool:
 

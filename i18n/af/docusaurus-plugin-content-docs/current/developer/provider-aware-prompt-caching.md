@@ -3,11 +3,11 @@ title: Provider-Bewuste Prompte-Kassering
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Verskaffer-Bewus Prompt-Caching
+# Verskaffer-Bewus Prompt-Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 stel **verskaffer-bewus prompt-caching** bekend, wat API-koste en latensie optimaliseer deur prompts oor verskillende LLM-verskaffers te cache. Elke verskaffer het verskillende caching-meganismes en -konfigurasies.
 
-## Oorsig
+## Oorsig {#overview}
 
 Prompt-caching laat jou toe om:
 
@@ -23,11 +23,11 @@ Verskillende verskaffers implementeer caching op verskillende maniere:
 - **OpenRouter**: Verskaffer-spesifieke caching
 - **Vertex Anthropic**: Prompt-caching met cachebeheer
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini bied eksplisiete cachebestuur via die `cachedContents` API.
 
-### Konfigurasie
+### Konfigurasie {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Skep 'n Gecachede Prompt
+### Skep 'n Gecachede Prompt {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Gee terug: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Gebruik 'n Gecachede Prompt
+### Gebruik 'n Gecachede Prompt {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache-Lewensydsiklus
+### Cache-Lewensydsiklus {#cache-lifecycle}
 
 ```php
 // Lys gecachede inhoud
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Beste Praktyke vir Gemini
+### Beste Praktyke vir Gemini {#best-practices-for-gemini}
 
 - **Stel 'n toepaslike TTL**: Balanseer kostebesparing teenoor cache-veroudering
 - **Cache sisteme-prompts**: Hergebruik dieselfde sisteme-prompt oor aanvraag
 - **Monitor cache-gebruik**: Hou by wie se caches die meeste gebruik word
 - **Skoonmaak verouderde caches**: Verwyder periodiek ongebruikte caches
 
-## Azure OpenAI: Prompt-Caching
+## Azure OpenAI: Prompt-Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI ondersteun prompt-caching met outomatiese TTL-bestuur.
 
-### Konfigurasie
+### Konfigurasie {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Aktivering van Caching
+### Aktivering van Caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache-koppe (Cache Headers)
+### Cache-koppe (Cache Headers) {#cache-headers}
 
 Azure OpenAI gebruik HTTP-koppe vir cachebeheer:
 
@@ -152,7 +152,7 @@ Ondersteunde waardes:
 - `no_cache`: Moenie hierdie aanvraag cache nie
 - `no_store`: Moenie cache nie en hergebruik nie
 
-### Monitor Cache-Gebruik
+### Monitor Cache-Gebruik {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache skep: $cache_tokens tokens\n";
 echo "Cache treffers: $cache_hits tokens\n";
 ```
 
-### Beste Praktyke vir Azure OpenAI
+### Beste Praktyke vir Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Gebruik konsekwente prompts**: Identieke prompts baat by caching
 - **Stel 'n redelike TTL**: Balanseer koste teenoor varsheid
 - **Monitor cache-metrieke**: Hou by cache-skepping teenoor treffers
 - **Batch soortgelyke aanvraag**: Groepeer aanvraag om cache-treffers te maksimeer
 
-## OpenRouter: Verskaffer-Spesifieke Caching
+## OpenRouter: Verskaffer-Spesifieke Caching {#openrouter-provider-specific-caching}
 
 OpenRouter ondersteun caching deur onderliggende verskaffers (OpenAI, Anthropic, ens.).
 
-### Konfigurasie
+### Konfigurasie {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Gebruik OpenRouter Caching
+### Gebruik OpenRouter Caching {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Verskaffer-Spesifieke Opsies
+### Verskaffer-Spesifieke Opsies {#provider-specific-options}
 
 Verskillende verskaffers het verskillende caching-meganismes:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Beste Praktyke vir OpenRouter
+### Beste Praktyke vir OpenRouter {#best-practices-for-openrouter}
 
 - **Ken jou verskaffer se caching**: Elke verskaffer het verskillende meganismes
 - **Toets caching-gedrag**: Verifieer dat caching werk met jou gekose verskaffer
 - **Monitor koste**: Hou by besparings deur caching
 - **Gebruik konsekwente modelle**: Om modelle te skakel breek cache-treffers
 
-## Vertex Anthropic: Prompt-Caching met Cachebeheer
+## Vertex Anthropic: Prompt-Caching met Cachebeheer {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) ondersteun prompt-caching met eksplisiete cachebeheer.
 
-### Konfigurasie
+### Konfigurasie {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Gebruik Vertex Anthropic Caching
+### Gebruik Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cachebeheer Tipes
+### Cachebeheer Tipes {#cache-control-types}
 
 - **ephemeral**: Cache vir die duur van die aanvraag (standaard)
 - **persistent**: Cache oor verskeie aanvraag (indien ondersteun)
 
-### Monitor Cache-Gebruik
+### Monitor Cache-Gebruik {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache geskep: $cache_created tokens\n";
 echo "Cache gelees: $cache_read tokens\n";
 ```
 
-### Beste Praktyke vir Vertex Anthropic
+### Beste Praktyke vir Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Gebruik ephemeral caching**: Goed vir enkele sessie caching
 - **Stel max_tokens toepaslik**: Balanseer cachegrootte teenoor koste
 - **Monitor cache-metrieke**: Hou by cache-doeltreffendheid
 - **Toets met jou werklas**: Verifieer dat caching jou gebruik geval voordeel
 
-## Verskaffer-Oorskrydende Caching Strategie
+## Verskaffer-Oorskrydende Caching Strategie {#cross-provider-caching-strategy}
 
-### Geunifieerde Konfigurasie
+### Geunifieerde Konfigurasie {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Verskaffer-Opsporing
+### Verskaffer-Opsporing {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Gebruik verskaffer-spesifieke caching-konfigurasie
 ```
 
-### Terugvalstrategie
+### Terugvalstrategie {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kostebesparing
+## Kostebesparing {#cost-optimization}
 
-### Bereken Besparings
+### Bereken Besparings {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Geskatte besparing: \$$savings\n";
 ```
 
-### Optimalisering Wenke
+### Optimalisering Wenke {#optimization-tips}
 
 - **Cache groot sisteme-prompts**: Grootste kostebesparings
 - **Hergebruik konteks**: Cache dikwels gebruikte konteksdokumente
@@ -395,30 +395,30 @@ echo "Geskatte besparing: \$$savings\n";
 - **Monitor cache-doeltreffendheid**: Hou by werklike besparings
 - **Pas TTL aan**: Balanseer koste teenoor varsheid
 
-## Foutopsporing
+## Foutopsporing {#troubleshooting}
 
-### Cache word nie gebruik nie
+### Cache word nie gebruik nie {#cache-not-being-used}
 
 - Verifieer dat caching in die konfigurasie geaktiveer is
 - Kontroleer dat prompts identies is (caching vereis presiese pas)
 - Verifieer dat die cache nie verouderd is nie
 - Kontroleer verskaffer-spesifieke cachelimiete
 
-### Cache-skepping misluk
+### Cache-skepping misluk {#cache-creation-failing}
 
 - Verifieer dat die cachegrootte binne verskafferlimiete is
 - Kontroleer dat die cachebeheer sintaks korrek is
 - Verseker dat die verskaffer caching vir jou model ondersteun
 - Raadpleeg verskaffer-dokumentasie vir beperkings
 
-### Onverwagte koste
+### Onverwagte koste {#unexpected-costs}
 
 - Monitor cache-skeppings-teenoor-cache-lees-tokens
 - Verifieer dat die cache werklik gebruik word
 - Kontroleer vir cache-misses as gevolg van prompt-variasies
 - Oorweeg om TTL of die cache-strategie aan te pas
 
-## Verskaffervergelyking
+## Verskaffervergelyking {#provider-comparison}
 
 | Funksie | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Geskatte besparing: \$$savings\n";
 | Kostevermindering | 90% | 90% | Verskaffer-afhanklik | 90% |
 | Monitoring | Gedetailleerd | Via metrieke | Verskaffer-afhanklik | Via gebruik |
 
-## Volgende Stappe
+## Volgende Stappe {#next-steps}
 
 1. **Kies jou verskaffer**: Kies op grond van jou behoeftes
 2. **Konfigureer caching**: Stel verskaffer-spesifieke caching op

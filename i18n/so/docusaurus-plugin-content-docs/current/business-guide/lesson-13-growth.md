@@ -3,19 +3,19 @@ title: 'Casharka 13: Ballaarinta'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Casharka 13: Kor-u-qaadista Baaxadda
+# Casharka 13: Kor-u-qaadista Baaxadda {#lesson-13-scaling-up}
 
 Waxaad haysataa madal shaqaynaysa oo leh macaamiil lacag bixiya. Casharkani wuxuu daboolayaa sida looga koro hawlgal yar loona noqdo ganacsi waara -- kor-u-qaadista kaabayaasha, otomaatig ka dhigista hawlgallada, iyo kordhinta dakhliga macmiil kasta.
 
-## Meeshii Aynu Ku Joognay
+## Meeshii Aynu Ku Joognay {#where-we-left-off}
 
 FitSite waa live, macaamiishu way isdiiwaangelinayaan, adiguna waxaad waddaa hawlgallada maalinlaha ah. Hadda waxaan diiradda saaraynaa koritaanka.
 
-## Ogow Tirooyinkaaga
+## Ogow Tirooyinkaaga {#know-your-numbers}
 
 Ka hor kor-u-qaadista, faham halka aad taagan tahay:
 
-### Cabbirro Muhiim ah
+### Cabbirro Muhiim ah {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Wadarta dakhliga isdiiwaangelinta bil kasta
 - **Customer count**: Wadarta macaamiisha firfircoon ee isdiiwaangashan
@@ -24,7 +24,7 @@ Ka hor kor-u-qaadista, faham halka aad taagan tahay:
 - **LTV (Lifetime Value)**: Celceliska dakhliga macmiil kasta inta ay socoto isdiiwaangelintiisu oo dhan
 - **CAC (Customer Acquisition Cost)**: Celceliska kharashka lagu helo hal macmiil
 
-### Tusaale: FitSite oo leh 50 Macmiil
+### Tusaale: FitSite oo leh 50 Macmiil {#example-fitsite-at-50-customers}
 
 | Cabbir | Qiime |
 |--------|-------|
@@ -36,9 +36,9 @@ Ka hor kor-u-qaadista, faham halka aad taagan tahay:
 
 Tirooyinkani waxay kuu sheegayaan waxa aad diiradda saari lahayd. Baajin badan? Hagaaji haynta macaamiisha. ARPU hooseeya? Riix upgrades. CAC sareeya? Hagaaji kanaalada helitaanka macaamiisha.
 
-## Kor-u-qaadista Kaabayaasha
+## Kor-u-qaadista Kaabayaasha {#scaling-infrastructure}
 
-### Goorta La Kor-u-qaado
+### Goorta La Kor-u-qaado {#when-to-scale}
 
 Kor u qaad hosting marka:
 
@@ -47,7 +47,7 @@ Kor u qaad hosting marka:
 - Aad ku dhowdahay 100+ site oo firfircoon
 - Cabashooyinka macaamiisha ee ku saabsan xawaaraha ay kordhaan
 
-### Sida Loo Kor-u-qaado
+### Sida Loo Kor-u-qaado {#how-to-scale}
 
 - **Kor-u-qaadis toosan**: U wareeg server weyn (CPU iyo RAM badan)
 - **Lakabyo caching**: Ku dar Redis/Memcached si loo cache-gareeyo objects, iyo page caching loogu talagalay nuxurka static
@@ -55,7 +55,7 @@ Kor u qaad hosting marka:
 - **Hagaajinta database-ka**: Marka network-ku koro, queries-ka database-ku way gaabiyaan. Hagaaji tables, ku dar indexes, tixgeli server database oo gaar ah.
 - **Kala saar arrimaha**: U wareeji kaydinta media-ga object storage (S3-compatible), email-kana u wareeji adeeg transactional email ah
 
-### U-guurista Hosting
+### U-guurista Hosting {#hosting-migration}
 
 Haddii host-kaaga hadda uusan sii kor-u-qaadi karin, qorshee u-guuris:
 
@@ -65,11 +65,11 @@ Haddii host-kaaga hadda uusan sii kor-u-qaadi karin, qorshee u-guuris:
 4. Hore u cusbooneysii DNS adigoo isticmaalaya TTL ugu yar
 5. Xaqiiji in wax walba shaqeeyaan u-guurista ka dib
 
-## Otomaatig Ka Dhigista Hawlgallada
+## Otomaatig Ka Dhigista Hawlgallada {#automating-operations}
 
 Markaad korto, hababka gacanta lagu qabtaa waxay noqdaan ciriiri. Otomaatig ka dhig waxa aad awooddo:
 
-### Webhooks iyo Zapier
+### Webhooks iyo Zapier {#webhooks-and-zapier}
 
 Isticmaal [Webhooks](/user-guide/integrations/webhooks) ama [Zapier](/user-guide/integrations/zapier) si aad otomaatig uga dhigto:
 
@@ -78,7 +78,7 @@ Isticmaal [Webhooks](/user-guide/integrations/webhooks) ama [Zapier](/user-guide
 - **Guuldarrooyinka lacag-bixinta** → digniin ku jirta qalabkaaga kormeerka
 - **Upgrades-ka plan-ka** → email hambalyo ah oo leh hage feature cusub
 
-### Otomaatigga Email-ka
+### Otomaatigga Email-ka {#email-automation}
 
 Ka guur emails gacanta ah una guur taxane otomaatig ah:
 
@@ -87,30 +87,30 @@ Ka guur emails gacanta ah una guur taxane otomaatig ah:
 - Dhiirrigelinta upgrade marka macaamiishu ku dhowaadaan xadka plan-ka
 - Xusuusinta cusbooneysiinta ee macaamiisha sanadlaha ah
 
-### Otomaatigga Taageerada
+### Otomaatigga Taageerada {#support-automation}
 
 - **Jawaabo diyaarsan** oo loogu talagalay su'aalaha caadiga ah
 - **Jawaabo otomaatig ah** oo xaqiijinaya helitaanka tickets-ka taageerada
 - **Talooyinka knowledge base** marka macaamiishu soo gudbiyaan tickets la mid ah articles jira
 
-## Kordhinta Dakhliga
+## Kordhinta Dakhliga {#increasing-revenue}
 
 Koritaanka ma aha oo keliya macaamiil badan. Sidoo kale waa dakhli badan oo laga helo macmiil kasta.
 
-### Ka Iibinta Dheeraadka ah Macaamiisha Jirta
+### Ka Iibinta Dheeraadka ah Macaamiisha Jirta {#upselling-existing-customers}
 
 - **Upgrades-ka plan-ka**: Ololayaal bartilmaameed ah oo muujinaya features-ka Growth/Pro macaamiisha Starter
 - **Order bumps**: U xayaysii products add-on ah macaamiisha jirta adigoo adeegsanaya email
 - **U-beddelidda sanadlaha**: Sii macaamiisha billaha ah qiimo-dhimis si ay ugu wareegaan billing sanadle ah
 
-### Ilaha Dakhli ee Cusub
+### Ilaha Dakhli ee Cusub {#new-revenue-streams}
 
 - **Diyaarinta adiga laguu sameeyay**: Ka qaad lacag premium ah si aad u diyaarisid una habeysid site-ka macmiilka isaga
 - **Adeegyada naqshadeynta gaarka ah**: Bixi shaqo naqshadeyn oo gaar ah oo ka sarreysa template-ka
 - **Kalfadhiyada tababarka**: Socodsiin fool-ka-fool ah oo lacag leh oo loogu talagalay macaamiisha doonaya caawimo gacanta lagu hayo
 - **Plugins premium ah**: Bixi plugins premium ah oo niche-gaar ah sida add-ons lacag leh (tusaale, widget booking fasal fitness ah)
 
-### Kordhinta Qiimaha
+### Kordhinta Qiimaha {#raising-prices}
 
 Marka madashaadu bislaato oo ay qiime ku darto:
 
@@ -118,7 +118,7 @@ Marka madashaadu bislaato oo ay qiime ku darto:
 - Kor u qaad qiimaha isdiiwaangelinta cusub
 - Sababee kordhinta adigoo muujinaya features cusub iyo horumarinno
 
-## Dhisidda Koox
+## Dhisidda Koox {#building-a-team}
 
 Mar uun, wax walba kaligaa ma qaban kartid. Shaqaaleysiimaha ugu horreeya ee caadiga ah:
 
@@ -128,7 +128,7 @@ Mar uun, wax walba kaligaa ma qaban kartid. Shaqaaleysiimaha ugu horreeya ee caa
 
 Uma baahnid shaqaale rasmi ah. Contractors iyo freelancers si fiican ayay ugu shaqeeyaan ganacsi madal ah.
 
-## Marxaladaha Koritaanka
+## Marxaladaha Koritaanka {#growth-milestones}
 
 | Marxalad | MRR Qiyaas ah | Diiradda |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Uma baahnid shaqaale rasmi ah. Contractors iyo freelancers si fiican ayay ugu sh
 | 250-500 macaamiil | $25,000-$50,000 | Dhisidda koox, ilo dakhli oo cusub, features premium ah |
 | 500+ macaamiil | $50,000+ | Bisaylka madasha, niches ku dhow, exit suurtagal ah |
 
-## Waxa Aynu Ku Dhisnay Casharkan
+## Waxa Aynu Ku Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Qaab-dhismeed cabbirro** si loo fahmo caafimaadka ganacsiga
 - **Qorshe kor-u-qaadista kaabayaasha** si looga koro tobanaan ilaa boqollaal sites

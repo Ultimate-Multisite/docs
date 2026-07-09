@@ -3,7 +3,7 @@ title: Sarrafa Haraji
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Sarrafa Haraji
+# Sarrafa Haraji {#tax-handling}
 
 Ultimate Multisite yana da tsarin tattara haraji da aka gina a cikin core plugin ɗinmu, don haka idan kana buƙatar tattara harajin tallace-tallace a kan tsare-tsarenka, fakitinka da ayyukanka, zaka iya yin hakan cikin sauƙi ba tare da komawa ga girka wasu ƙarin abubuwa ba.
 
@@ -11,7 +11,7 @@ Ga kamfanoni da ke Turai, muna ba da **ƙarin abu** wanda ke ƙara kayan aiki da
 
 Ultimate Multisite ba ya gabatar ko tura haraji a madadinka zuwa gwamnati; kawai muna taimaka maka tattara harajin da ya dace a lokacin mu’amala. **Har yanzu za ka buƙaci tura haraji da kanka.**
 
-## Kunna Tattara Haraji
+## Kunna Tattara Haraji {#enabling-tax-collection}
 
 Ba a kunna tattara haraji ta tsohuwa ba. Don kunna shi, kana buƙatar zuwa **Ultimate Multisite > Settings > Taxes** sannan ka kunna saitin Enable Taxes.
 
@@ -25,7 +25,7 @@ Haka kuma zaka iya duba saitunan haraji na kayayyaki ɗai-ɗai:
 
 ![Saitunan haraji na kayayyaki](/img/config/settings-taxes.png)
 
-### Ba a haɗa haraji ba vs. an haɗa haraji
+### Ba a haɗa haraji ba vs. an haɗa haraji {#tax-excluded-vs-tax-included}
 
 Ta tsohuwa, duk farashin kayayyakinka ba su haɗa da haraji ba, ma’ana haraji **ba ya cikin** farashin samfurin. Idan muka tantance cewa abokin ciniki ya kamata ya biya haraji a kan wani saye, za mu ƙara harajin **a kan** jimillar ƙananan kuɗi.
 
@@ -37,7 +37,7 @@ Kar ka manta ka **adana** canje-canjen da ka yi.
 
 ###
 
-## Ƙirƙirar Adadin Haraji
+## Ƙirƙirar Adadin Haraji {#creating-tax-rates}
 
 Bayan ka kunna Tattara Haraji, za ka buƙaci ƙirƙirar adadin haraji ga takamaiman wurare ta amfani da editan adadin harajinmu.
 
@@ -51,7 +51,7 @@ A shafin editan adadin haraji, zaka iya ƙara sabbin Adadin Haraji ta danna maɓ
 
 Za ka buƙaci ba kowane adadin haraji **take** (da ake amfani da shi a kan rasitoci). Sannan zaka iya zaɓar **ƙasa** (wajibi), **jiha,** da **birni** (duka na zaɓi) inda za a caji wannan haraji. A ƙarshe, ƙara **adadin haraji a cikin kaso**.
 
-### Rukunonin Haraji
+### Rukunonin Haraji {#tax-categories}
 
 Haka kuma zaka iya ƙirƙirar Rukunonin Haraji da yawa, don ƙara adadin haraji daban-daban ga nau’o’in kayayyaki daban-daban.
 
@@ -73,7 +73,7 @@ Zaka iya saita rukunin haraji ga wani takamaiman samfur ta zuwa **shafin gyara S
 
 A wannan allon, zaka iya kashe maɓallin **Is Taxable?** don sanar da Ultimate Multisite cewa bai kamata ya tattara haraji a kan wannan samfurin ba.
 
-## Goyon Bayan VAT na Turai
+## Goyon Bayan VAT na Turai {#european-vat-support}
 
 Kamar yadda aka ambata a baya, muna da ƙarin abu da yake akwai ga abokin ciniki a EU wanda ke da ƙarin buƙatu saboda ƙa’idojin VAT na Turai.
 
@@ -101,7 +101,7 @@ Idan ka koma zuwa **shafin Saitunan Haraji** , za ka ga sabbin zaɓuɓɓuka da s
 
 <!-- Ba a samu hoton allo ba: Maɓallin Enable VAT Support a cikin saitunan Haraji bayan kunna ƙarin abu -->
 
-### Jawo Adadin Harajin VAT
+### Jawo Adadin Harajin VAT {#pulling-on-vat-tax-rates}
 
 Ɗaya daga cikin kayan aikin da haɗinmu ke ƙarawa shi ne ikon ɗora adadin haraji na ƙasashen membobin EU. Ana iya yin hakan ta ziyartar shafin editan adadin haraji bayan kunna goyon bayan EU VAT.
 
@@ -111,7 +111,7 @@ A ƙasan shafin, za ka ga zaɓuɓɓukan jawo VAT. Zaɓar nau’in adadi da danna
 
 Haka kuma zaka iya gyara ƙimomin bayan jawo su. Don yin hakan, kawai gyara layin teburin da kake buƙata kuma ka danna don adana sabbin ƙimomin.
 
-### Tabbatar da VAT
+### Tabbatar da VAT {#vat-validation}
 
 Lokacin da aka kunna goyon bayan VAT, Ultimate Multisite zai ƙara ƙarin fili a fom ɗin checkout, a ƙasa da filin adireshin biyan kuɗi. Filin zai bayyana ne kawai ga abokan ciniki da ke cikin EU.
 

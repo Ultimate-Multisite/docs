@@ -3,7 +3,7 @@ title: Rendera API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint ya Register API ya Ultimate Multisite
+# Endpoint ya Register API ya Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Muviri wechinyorwa uyu tutorial, munaona kuti ndikubatsira kuenda sei nemashoko anogona kuita onboarding wese wekudzidzwa kwemutauro wekudzidzwa (onboarding process) kwemumbe wedu wekufamba neUltimate Multisite /register API endpoint uye sei kunoita iye neZapier.
 
@@ -29,11 +29,11 @@ Chine chiri chiri cha **Enable API** uye ndichida credentials yako yekuti uende.
 
 Nekuti, tiri kuenda kutaura endpoint uye ndikubatsira kuita registration action muZapier.
 
-## Endpoint body parameters
+## Endpoint body parameters {#endpoint-body-parameters}
 
 Tiri kuona zvinhu zvakakosha zvinodzidzwa kuti tinenge tichingava dzinogona kutangazvitsika kuendpoint. Mune mangwana emweya, uona full call.
 
-### Customer
+### Customer {#customer}
 
 Iyi ndiyo mahengetsi anoda kuti process yewedzera User uye Ultimate Multisite Customer ine:
 
@@ -43,25 +43,25 @@ Kuti kutauri ID ya mwana wemwe wako uyu munzara. Kana ukavandikwa, maelezo aya a
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Chii chiri chinotore kana munzara inoshandiswa ndicho chiri Membership Status.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Products anogone kupewa array inozivisa ID ya product yakawanda kubva munzara wako. Zviona, endpoint iyi haizovaka products. Shandisa documentation ya Ultimate Multisite kuti uone zvakanaka endpoint yekuvaka products.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Seunogona neMembership, tinoda status chete.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Nekuti tichipfira, tinoda URL ya site uye Title yayo, zvose zvinogona kuva munzara weSite.
 
@@ -69,13 +69,13 @@ Nekuti tichipfira, tinoda URL ya site uye Title yayo, zvose zvinogona kuva munza
 
 Zvinorewa kubva endpoint yekuvaka (register) zvichiri array inozivisa maelezo ekuzara mwana wemwe wekuti chiri kuitwa.
 
-## Kuita action mu Zapier
+## Kuita action mu Zapier {#creating-an-action-in-zapier}
 
 Nekuti endpoint yepamusoro yepamusoro uye yakakwana yekuita account creation, unogona kuona action yepamusoro yepamusoro mu Zapier.
 
 Unoziva sei kuita uye kuenda zvakanaka nezvose zvinoremedzwa neversion ya Zapier? Unzwisisa zvakanyanya pano. (link?)
 
-### Kuita action
+### Kuita action {#creating-an-action}
 
 Kuti kuti kutaura zvakanaka nezvinhu zvinogona kuwedzera sei kutamba ne registration endpoint neZapier, tiri kuita integration neGoogle Forms. Mazuva onozivaka iye form uye kanai inosavaka maererano mabhariro yainguva yenyika Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Ndiri kuita zvinhu zvose, ndichatanga nekuita test wakanaka. Pa chivimbo chinote
 
 Tseya test wako weZap (Zap) uye zvinoita zvakanaka. Kana kune kuratidza kunge kune matambudziko, ndichigadzirisa zvose zvinoteverwa kuti zvibatsire. Kubva kuna zvinhu zvakawanda, zvinhu zvakawanda zviri kuonekwa zvichienderana.
 
-### Zvinoteverwa zvese zveendpoint (Complete endpoint parameters)
+### Zvinoteverwa zvese zveendpoint (Complete endpoint parameters) {#complete-endpoint-parameters}
 
 Iyi nzira yakanaka yakawanda uye zvose zvinogone kuteverwa.
 

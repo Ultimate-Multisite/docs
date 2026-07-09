@@ -3,13 +3,13 @@ title: Fael y Cyflwyniad a DNS Cwmiwr
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gweithioedd y Cyflwyniad a Gwarlo DNS o'r Clientwr
+# Gweithioedd y Cyflwyniad a Gwarlo DNS o'r Clientwr {#checkout-field-and-customer-dns-management}
 
-## Y field Dechlinio Ddwyllian (Domain Selection)
+## Y field Dechlinio Ddwyllian (Domain Selection) {#the-domain-selection-checkout-field}
 
 Mae'r field **Dechlinio Ddwyllian** yn element o'r cyflwyniad checkout sy'n rhoi ddefnyddiol i'r tebyg i gael y ddwyllian eu siwyl. Refnogwch ef i unrhyw ffurf checkout i gael ei ddefnyddio ar gyfer gwerthu ddwyllian.
 
-### Ymloi'r field i ffurf checkout
+### Ymloi'r field i ffurf checkout {#adding-the-field-to-a-checkout-form}
 
 1. Gweithio i **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Agorwch neu creuwch ffurf checkout
@@ -18,7 +18,7 @@ Mae'r field **Dechlinio Ddwyllian** yn element o'r cyflwyniad checkout sy'n rhoi
 5. Rheoliwch y opsiynau y field (gweli isod)
 6. Cadw'r ffurf
 
-### Opsiynau y field
+### Opsiynau y field {#field-options}
 
 **Modau ddwyllian (Domain modes)** — Dewch beth yw'r tabau a'r tebyg yn gweld. Gall cael unrhyw un o'r modau i gael ei chwarae neu ddwyn yn sefydlog:
 
@@ -32,7 +32,7 @@ Mae'r field **Dechlinio Ddwyllian** yn element o'r cyflwyniad checkout sy'n rhoi
 
 **Prodwydd ddwyllian (Domain product)** — Gallwch chi gwneud ei field yn cyfathogol i produsdd ddwyllian penodol. Os nid yw'n cael ei setio, mae'r addon yn dewis prodwydd gyfathogol ar adeiladu ar gyfer y TLD (Top-Level Domain) a'r tebyg yn chwilio am.
 
-### Ffieldau cyflwyniad gwrthrychiadwr (Registrant contact fields)
+### Ffieldau cyflwyniad gwrthrychiadwr (Registrant contact fields) {#registrant-contact-fields}
 
 Pan mae'r tebyg yn dewis tab **Register New Domain**, mae'r ffurf checkout yn ychwanegu ffieldau cyflwyniad gwrthrychiadwr yn llwyr:
 
@@ -42,11 +42,11 @@ Pan mae'r tebyg yn dewis tab **Register New Domain**, mae'r ffurf checkout yn yc
 
 Mae'r hyn ymlaenau hyn yn cael eu cyflwyno gan holl gweithredwyr a fydd yn cael eu chyfathriol قبل asgynnu'r API o gyfrannu. Mae nwyromau ffôn yn cael eu ffurfio'n awtomatig i ffurf international `+CC.NNN` sydd yn cael ei gofyn gan y gweithredwyr.
 
-### URL siat aros-gynnol (Auto-generated site URL)
+### URL siat aros-gynnol (Auto-generated site URL) {#auto-generated-site-url}
 
 Pan mae client yn regrannu neu gyfathrioli domain, mae'r field URL siat yn cael ei cyflwyno'n awtomatig o'r domain a ddewiswyd. Nid oes angen i'r client gwneud fylch mewn field URL parhaol.
 
-### Ymhlawnydd chwilio (Search behaviour)
+### Ymhlawnydd chwilio (Search behaviour) {#search-behaviour}
 
 - Mae cyfathrioliad domain yn cael ei gyfeiriol mewn amser byr gyda AJAX pan mae'r client yn teimlo
 - Mae cynlluniau TLD allweddol arall yn cael eu dangos pan nid yw'r domain a dymunwyd yn llai
@@ -76,11 +76,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Rheoli DNS o ddefnyddwyr (Customer DNS management)
+## Rheoli DNS o ddefnyddwyr (Customer DNS management) {#customer-dns-management}
 
 Gall y gweithredwyr rheoli cyfrannau DNS ar gyfer eu domainau aregwyd o'r dudalen **My Account**, yn ôl y cyflwyniad eu domain.
 
-### Cypathau cyfrannau a ddefnyddio
+### Cypathau cyfrannau a ddefnyddio {#supported-record-types}
 
 | Tyd | Defnydd |
 |---|---|
@@ -90,11 +90,11 @@ Gall y gweithredwyr rheoli cyfrannau DNS ar gyfer eu domainau aregwyd o'r dudale
 | **MX** | Rheoli server cyfrannau llwybr |
 | **TXT** | Ychwanegu codau SPF, DMARC, cyfathrioliad, neu codau text eraill |
 
-### Pa beth sy'n chynllunio rheoli DNS?
+### Pa beth sy'n chynllunio rheoli DNS? {#which-providers-support-dns-management}
 
 Mae rheoliad DNS (ydd, redig, gwbl) ar gael gyda **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, a **Openprovider**. Gallai'r domena Hostinger gwneud newidi'r amrywiadau name server trwy Domain Seller; mae cyfathiadau DNS ar gyfer domena cael ei gysylltu yn cael eu rheoli gan y cyfathiadau domain-mapping sydd yn cyd-fynd â WordPress. Mae domena Namecheap, GoDaddy, a NameSilo yn dangos cyflwyniad a wybodaeth am ddyddiadau diwethaf ond rhaid i'r DNS ei rheoli'n dros y panel cyd-gweithredol y registrar sydd yn cael ei gysylltu.
 
-### Cyfathiadau DNS ddefnyddiol (Default)
+### Cyfathiadau DNS ddefnyddiol (Default) {#default-dns-records}
 
 Gallwch chi gynllun cyfathiadau DNS ddefnyddiol sydd wedi'u cyflwyno'n awtomatig pan fydd domena yn cael ei regrffynnu. Ymddangos i **Settings › Domain Seller › Default DNS Records**.
 
@@ -117,6 +117,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: gwylio a redig DNS
+### Admin: gwylio a redig DNS {#admin-viewing-and-editing-dns}
 
 Gall y gweithredwyr cyd-gweithredol gwylio a redig cyfathiadau DNS ar gyfer unrhyw domena cyd-defnyddwyr o'r dudalen redig y domena yn **Network Admin › Ultimate Multisite › Domains**.

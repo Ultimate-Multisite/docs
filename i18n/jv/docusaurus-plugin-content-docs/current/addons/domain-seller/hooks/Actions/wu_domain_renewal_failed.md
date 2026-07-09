@@ -4,11 +4,11 @@ title: Aksi - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Tindakan: wu_domain_renewal_failed
+# Tindakan: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Kedadeyan sawisé upaya nganyari domain gagal.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Kedadeyan sawisé upaya nganyari domain gagal.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadata panganyaran (domain_name, taun, lsp.). |
 | $error_message | `string` | Pesen kasalahan sing bisa diwaca manungsa saka registrar. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) ing larik 630

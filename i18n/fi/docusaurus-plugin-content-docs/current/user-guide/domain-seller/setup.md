@@ -3,21 +3,21 @@ title: Asetukset ja tarjoajan konfigurointi
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Asetus ja Tarjoajan Konfigurointi
+# Domain Seller: Asetus ja Tarjoajan Konfigurointi {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller -lisäosa tulee mukana ohjeistavalla asennusoppaalla, joka ohjaa sinua läpi jokaisen tarvittavan vaiheen. Tämä sivu käsittelee oppaan virtaa sekä sitä, miten voit konfiguroida tai uudelleenkonfiguroida tarjoajia sen jälkeen.
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 
 - **Multisite Ultimate** v2.4.12 tai uudempi, verkkoaktivoitu
 - **PHP** 7.4+
 - API-tunnukset ainakin yhden tuettavan rekisteröijän (registrar) osalta
 
-## Ensimmäinen asennusoppa
+## Ensimmäinen asennusoppa {#first-run-setup-wizard}
 
 Asennusoppa käynnistyy automaattisesti ensimmäisen kerran, kun aktivoit lisäosan verkossa. Se on myös saatavilla milloin tahansa **Network Admin › Ultimate Multisite › Domain Seller Setup** -osiosta.
 
-### Vaihe 1 — Valitse tarjoaja
+### Vaihe 1 — Valitse tarjoaja {#step-1--choose-a-provider}
 
 Valitse rekisteröijä, johon haluat yhdistää. Tuetut vaihtoehdot:
 
@@ -33,7 +33,7 @@ Valitse rekisteröijä, johon haluat yhdistää. Tuetut vaihtoehdot:
 | NameSilo | Ei | Ei |
 | Enom | Kyllä | Ei |
 
-### Vaihe 2 — Syötä tunnukset
+### Vaihe 2 — Syötä tunnukset {#step-2--enter-credentials}
 
 Jokaisella tarjoajalla on erilaiset tunnuskentät:
 
@@ -57,17 +57,17 @@ Jokaisella tarjoajalla on erilaiset tunnuskentät:
 
 Tarkista saatavuudessa **Sandbox mode**, jotta voit testata palveluntarjoajan testiympäristössä ennen live-käyttöä.
 
-### Vaihe 3 — Yhdistelmän testaus
+### Vaihe 3 — Yhdistelmän testaus {#step-3--test-the-connection}
 
 Napsauta **Test Connection**. Ohjelma lähettää kevyen API-kutsun varmistaakseen tunnukset ja yhteys. Korjaa mahdolliset tunnistetiedot ongelmat ennen jatkamista.
 
-### Vaihe 4 — TLD:iden tuonti
+### Vaihe 4 — TLD:iden tuonti {#step-4--import-tlds}
 
 Napsauta **Import TLDs** (Tuonti TLD:t) hakeaksesi kaikki saatavilla olevat TLD:t ja tukkuhintojen yhdistetyn palveluntarjoajan kautta. Tämä täyttää domain-tuotteissa käytettävän TLD-listan. Tuonnilla voi kestää 30–60 sekuntia suurilla TLD-katalogeilla oleville palveluntarjoajille.
 
 TLD:t synkronoidaan myös automaattisesti kerran päivässä aikataulutetun cron-työn avulla.
 
-### Vaihe 5 — Domain-tuotteen luominen
+### Vaihe 5 — Domain-tuotteen luominen {#step-5--create-a-domain-product}
 
 Ohjelma luo oletusvaihtoehtoisen domain-tuotteen, jossa on 10 % lisäarvo (markup). Voit muokata tätä tuotetta heti tai ohittaa vaiheen ja luoda tuotteita manuaalisesti **Ultimate Multisite › Products** -osiossa.
 
@@ -75,7 +75,7 @@ Katso [Domain Products and Pricing](./domain-products) saadaksesi täydellisen t
 
 ---
 
-## Palveluntarjoajan uudelleenkonfigurointi
+## Palveluntarjoajan uudelleenkonfigurointi {#reconfiguring-a-provider}
 
 Siirry kohtaan **Network Admin › Ultimate Multisite › Settings › Domain Seller** (tai napsauta **Settings** -painiketta plugin-listalta).
 
@@ -88,17 +88,17 @@ Asetussivulla on:
 - **Manage domain products** — nopea linkki tuotteiden listaan
 - **Configure providers** — avaa Integraatiomestarin (Integration Wizard) lisättäksesi tai konfiguroidaksesi toimittajia uudelleen
 
-### Toisen toimittajan lisääminen
+### Toisen toimittajan lisääminen {#adding-a-second-provider}
 
 Napsauta **Configure providers** ja suorita ohjelma uudelleen uutta rekisteriä varten. Voit konfiguroida useita toimittajia samanaikaisesti. Vaikka jokainen verkkotunnus tuote (domain product) määritetään tiettyyn toimittajaan, voit jättää sen oletukseksi.
 
-### TLD:iden synkronointi manuaalisesti
+### TLD:iden synkronointi manuaalisesti {#syncing-tlds-manually}
 
 Asetusten sivulla napsauta **Sync TLDs** -painiketta konfiguroitujen toimittajien vieressä hakeaksesi uusimmat hinnat. Tämä on hyödyllistä, kun toimittaja päivittää tukkuhintoja tai lisää uusia TLD:itä.
 
 ---
 
-## Logs (Tiedot)
+## Logs (Tiedot) {#logs}
 
 Jokainen toimittaja kirjoittaa omiin log-kanavoiinsa. Logit näkyvät **Network Admin › Ultimate Multisite › Logs** -osiossa:
 
@@ -118,7 +118,7 @@ Jokainen toimittaja kirjoittaa omiin log-kanavoiinsa. Logit näkyvät **Network 
 
 ---
 
-## Tarjoajan ominaisuuksien huomiot
+## Tarjoajan ominaisuuksien huomiot {#provider-capability-notes}
 
 Ei jokainen rekisteröijayhtiön API paljasta samoja toimintoja. Addon näyttää tuetuttamattomat toiminnot selkeillä ylläpitäjän näkyvillä virheillä sen sijaan, että ne epäonnistuisi hiljaa.
 

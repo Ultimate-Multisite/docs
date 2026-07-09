@@ -3,7 +3,7 @@ title: Fællesskab
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Sådan tilslutter du dig til Ultimate Multisite Community
+# Sådan tilslutter du dig til Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community er et sted, hvor du kan komme i kontakt med andre Ultimate Multisite brugere og dele tips, erfaringer og mere. For at få adgang til Ultimate Multisite Community skal du gå til https://community.ultimatemultisite.com/home.
 

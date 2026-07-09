@@ -4,11 +4,11 @@ title: Амал - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Амал: set_auth_cookie
+# Амал: set_auth_cookie {#action-setauthcookie}
 
 Дарҳол пеш аз гузоштани cookie-и аутентификатсия иҷро мешавад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | Схемаи аутентификатсия. Қиматҳо 'auth' ё 'secure_auth'-ро дар бар мегиранд. |
 | $token | `string` | Токени сессияи корбар барои истифода бо ин cookie. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) дар сатри 124 муайян шудааст

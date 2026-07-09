@@ -4,13 +4,13 @@ title: 'Գործողություն - wu_save_{$this->object_id}'
 sidebar_label: 'wu_save_{$this->object_id}'
 _i18n_hash: 948ebe69d343e2f1e56544732995c2aa
 ---
-# Action: wu_save_\{$this->object_id\}
+# Action: wu_save_\{$this->object_id\} {#action-wusavethis-objectid}
 
 Թույլ տալ plugin մշակողներին ավելացնել գործողություններ պահպանման գործընթացին
 
-### Սկսած
+### Սկսած {#since}
 
 - 1.8.2
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/admin-pages/class-edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-edit-admin-page.php#L220) 220-րդ տողում

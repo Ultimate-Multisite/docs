@@ -3,11 +3,11 @@ title: Kufunso kwa Mwayi
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills Zikondi ndi Theme
+# Skills Zikondi ndi Theme {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 imapereka m’malo obwino (built-in skills) osatuwo omwe amagwirizana ndi theme yanu ya WordPress yomwe ikulimbikira. M’malo owi zimapereka chithandizo ndi ulemu wosonyeza zomwe zikuyenera kwambiri kwa mwayi wanu wamene (theme's architecture) ndi zinthu zina za theme yanu.
 
-## Kodi Skills Zikuti Zikuti Zikulimbikira Theme?
+## Kodi Skills Zikuti Zikuti Zikulimbikira Theme? {#what-are-theme-aware-skills}
 
 Skills zomwe zikulimbikira theme ndi knowledge bases ndi sets za tools zomwe AI assistant imapereka m’malo osatuwo omwe amagwirizana ndi theme ya WordPress yomwe ikulimbikira kwa site yanu. Pamene mukuweretsa themes, skills zomwe zikuyenera kuwoneka zimaperekedwa m’malo — samakukonza m’malo.
 
@@ -19,9 +19,9 @@ Kukonse skill imapereka:
 
 - **Best practices** — zikukonzekera za architecture ya theme ndi njira yopangira (workflow)
 
-## Skills Zomwe Zikuyenera Kuti Zikulimbikira Theme
+## Skills Zomwe Zikuyenera Kuti Zikulimbikira Theme {#available-theme-aware-skills}
 
-### Block Themes
+### Block Themes {#block-themes}
 
 **Zikuyenera kwa:** Themes zomwe zimapereka mwayi wosonyeza kwambiri (Full Site Editing) ya WordPress.
 
@@ -35,7 +35,7 @@ Skill ya Block Themes imapereka chithandizo pa:
 
 **Zikuyenera kuwoneka m’malo:** Theme yanu ikuti ndi block theme (imayenera feature ya `block-templates`).
 
-### Classic Themes
+### Classic Themes {#classic-themes}
 
 **Zikuyenera kwa:** Themes za WordPress zomwe zikugwiritsa ntchira PHP templates ndi classic editor.
 
@@ -50,7 +50,7 @@ Kuyamba kuona hierarchy ya theme ndi template tags
 
 **Kuyamba kukhala kwawo:** Theme yanu yomwe yomwe ikulimbikira ndi classic (non-block) imene.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Kukonera kwa:** Sites zomwe zimapereka kadence Blocks plugin kuti monga design omwe ndi blocks.
 
@@ -64,7 +64,7 @@ Skill ya Kadence Blocks imapereka mwayi wopereka ku:
 
 **Kuyamba kukhala kwawo:** Kadence Blocks plugin imene pa site yanu.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Kukonera kwa:** Sites zomwe zimapereka kadence theme kuti monga design omwe ndi blocks ndi kupambana.
 
@@ -78,15 +78,15 @@ Skill ya Kadence Theme imapereka mwayi wopereka ku:
 
 **Kuyamba kukhala kwawo:** Kadence theme imene yomwe ikulimbikira.
 
-## Kodi Skills Zimapereka Bwera bwanji?
+## Kodi Skills Zimapereka Bwera bwanji? {#how-skills-are-selected}
 
 Assistant imapereka mwayi wopambana kuti theme yanu yomwe ikulimbikira ndi plugins zomwe zikuperekedwa pa monga monga. Ngati kuli skill lomwe limapereka ku momwe mungapeze, imapereka m'context ya assistant kwawo monga momwe mungapeze. Musamukonzekera kuti mufotokozere kapena mukhazikitsa skills.
 
-### Multiple Skills
+### Multiple Skills {#multiple-skills}
 
 Mifano ya ujali wote unaowatenda kwenye tovuti yako (kwa mfano, ikiwa una Kadence Blocks na Kadence Theme zote zimefunguliwa), msaidizi ana uwezo wa kutumia ujuzi wote unaofaa na anaweza kurejelea mwongozo kutoka kila moja.
 
-### Kubadilisha Themes
+### Kubadilisha Themes {#switching-themes}
 
 Unapobadilisha theme unayotumia, ujuzi unaowezeshwa kwa msaidizi unabadilika kiotomatiki kwenye ujumbe wa pili. Kwa mfano:
 
@@ -94,11 +94,11 @@ Unapobadilisha theme unayotumia, ujuzi unaowezeshwa kwa msaidizi unabadilika kio
 2. Unabadilisha kwenda theme ya zamani (classic theme).
 3. Kwenye ujumbe wako ujao, ujuzi wa **Classic Themes** utalipakiwa kiotomatiki, na ujuzi wa **Block Themes** haujakubali tena.
 
-## Kutumia Ujuzi Unaohusu Theme (Theme-Aware Skills)
+## Kutumia Ujuzi Unaohusu Theme (Theme-Aware Skills) {#using-theme-aware-skills}
 
 Ili kutumia ujuzi unaohusu theme, rahisi tu ueleze unataka kufanya nini kwenye chat interface. Msaidizi atarejelea mwongozo wa ujuzi unaofaa kiotomatiki.
 
-### Mifano ya Maombi (Example Prompts)
+### Mifano ya Maombi (Example Prompts) {#example-prompts}
 
 **Kwa Block Themes:**
 > "Tengeneza sehemu ya hero yenye picha ya nyuma na maandishi yaliyowekwa katikati kwa kutumia block patterns."

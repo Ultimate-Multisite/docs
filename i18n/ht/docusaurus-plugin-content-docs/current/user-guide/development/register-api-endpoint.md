@@ -3,7 +3,7 @@ title: Enrejistre Pwòch API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Le point de terminaison API d'Ultimate Multisite
+# Le point de terminaison API d'Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Nan aprantisaj sa tèks la, ou pral aprann kijan pou w itilize le point de terminaison API Ultimate Multisite /register pou kreye tout pwosesis ansèpasyon (onboarding) pou yon nouvo kliyan nan rezo ou epi kijan pou fè sa ak Zapier.
 
@@ -29,11 +29,11 @@ Chwazi **Enable API** epi jwenn kredansyèl API ou yo.
 
 Kounye a, ann eksplore point de terminaison an epi kreye yon aksyon registrasyon nan Zapier.
 
-## Paramèt bodi point de terminaison an
+## Paramèt bodi point de terminaison an {#endpoint-body-parameters}
 
 Ann fè yon gade sou enfòmasyon minimum nou bezwen voye bay point de terminaison an. Nan fen atik sa a, ou pral jwenn apèl konplè a.
 
-### Kliyan (Customer)
+### Kliyan (Customer) {#customer}
 
 Sa se enfòmasyon ki nesesè pou pwosesis kreye Itilizat la ak Kliyan Ultimate Multisite a:
 
@@ -43,25 +43,25 @@ Sa se enfòmasyon ki nesesè pou pwosesis kreye Itilizat la ak Kliyan Ultimate M
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membresyè**
+### **Membresyè** {#membership}
 
 Sèl enfòmasyon nou bezwen nan objekt sa a se Statut Membresyè.
 
 "membership" { "status" : "string", // youn nan "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Pwodwi**
+### **Pwodwi** {#products}
 
 Pwodwi yo bay yon array ki gen 1 oki plis ID pwofi nan rezo ou la. Pran atansyon, endpoint sa a pa kreye pwofi. Tcheke dokiman Ultimate Multisite pou w konprann pi byen endpoint kreyasyon pwofi a.
 
 **"products" : [1,2],**
 
-### Peman
+### Peman {#payment}
 
 Tankou ak Membresyè, nou sèlman bezwen estatistik la.
 
 **"payment" { "status" : "string", // youn nan "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Sit
+### Sit {#site}
 
 E pou fè kò a fini, nou bezwen URL sit la ak Tit la, toude yo nan objekt Site a.
 
@@ -69,13 +69,13 @@ E pou fè kò a fini, nou bezwen URL sit la ak Tit la, toude yo nan objekt Site 
 
 Retounen endpoint register la ap gen yon array ki gen enfòmasyon membresyè ki te kreye a.
 
-## Kreye yon aksyon nan Zapier
+## Kreye yon aksyon nan Zapier {#creating-an-action-in-zapier}
 
 Avèk lansman endpoint nouvo ak pi fò sa pou kreye kont ou, ou pral jwenn yon nouvo aksyon nan Zapier tou.
 
 Ou konnen kijan pou w itilize epi pran plezi tout sa nouvo vèsyon Zapier la of pase? Aprann plis isit. (link?)
 
-### Kreye yon aksyon
+### Kreye yon aksyon {#creating-an-action}
 
 Pou montre pi byen kijan pou w itilize registration endpoint ak Zapier, nou pral kreye yon entegrasyon ak Google Forms. Chak fwa ou ranpli fòm sa a epi enfòmasyon an konserve nan lèt repons fòm la, yon nouvo manm (membership) ap kreye nan rezo Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Une fois que vous avez configuré les informations, passez au test final. Sur la
 
 Testez votre nouveau Zap et il devrait se terminer avec succès. Si une erreur survient, vérifiez tous les champs et voyez s'ils sont envoyés correctement. Comme il y a beaucoup d'informations, certaines choses peuvent passer inaperçues.
 
-### Paramètres complets de l'endpoint
+### Paramètres complets de l'endpoint {#complete-endpoint-parameters}
 
 Voici l'appel complet et toutes les possibilités de champs qui peuvent être envoyés.
 

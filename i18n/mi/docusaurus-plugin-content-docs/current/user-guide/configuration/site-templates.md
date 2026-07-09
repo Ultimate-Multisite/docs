@@ -3,13 +3,13 @@ title: Tātai Wāhi
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTE: Ko tēnei litanau e tino whai ana ki Ultimate Multisite version 2.x. Ko te whakamahi i te version 1.x,**_ **pātai i tēnei litanau.**_**.**_
 
 Ko te whakaaro mātou i roto i te whakauru network premium me Ultimate Multisite he whakamōhōhō (automate) pēnei i ngā mahi katoa e taea ai, ā, he tino whakatere (flexibility) me rātou optiona ake ki te hoki i te whero i te waka (website) i roto i te whakawhiti. He wakamahi tikanga mārie mō te whaiaro tēnei: te whakamahi i te feature Site Templates o Ultimate Multisite.
 
-## He aha he Site Template?
+## He aha he Site Template? {#what-is-a-site-template}
 
 Ko te ingoa ahau tino whakatutai ana, he Site Template he site pūrere (boilerplate) he taea ai te whakamahi katoa ko te pūrere whenua (base) i roto i te whakawhiti mai i te waka hou i tō network.
 
@@ -17,7 +17,7 @@ He reo ahau e hoki ana ki te whakatutai: he taea ahau te whakamaoritia te site p
 
 He tino pai tēnei, engari he pēnei ahau te whakamaoritia ko te whakatō site template hou? He pēnei te takawaahi i taea te hoki.
 
-## Whakawhanaungatanga me Whakamāoritanga i Site Template Hou
+## Whakawhanaungatanga me Whakamāoritanga i Site Template Hou {#creating-and-editing-a-new-site-template}
 
 Ko te Site Templates he site pūrere (normal sites) i tō network. Ko te whakamaoritia i te template hou, he taea ahau te pahu ki **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ I roto i te whakamāhi o te fōrm, ka taea e koe te whakaaro i te toggle switch 
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Whakawātea i te mōhaka o Site Template
+### Whakawātea i te mōhaka o Site Template {#customizing-the-contents-of-a-site-template}
 
 Kia whakawātea i tō site template, he tino tika ana ki te whai atu ki te dashboard panel o ia i te mea e pēnei i te mea e tika ana. Ko koe e taea ai te whakatō post hou, page hou, te whakamahi plugin hou, me te whakarere i te theme e active. He tino pai hoki na koe ki te whakaoti i te Customizer kia whakawātea i ngā optiona whānau o te whakatā.
 
@@ -43,11 +43,11 @@ Kia whakawātea i tō site template, he tino tika ana ki te whai atu ki te dashb
 
 Ko teina atu data katoa he whakapaihia ki te whenua i roto i te whenua hou e whai ana ki te Site Template tuatahi.
 
-### Option Whakamahi Whakamahi (Advanced Options)
+### Option Whakamahi Whakamahi (Advanced Options) {#advanced-options}
 
 Kia koe e tino mōhaki i te whakamahi kōkōrero (custom coding), ka taea e koe te whakamahi i tō Search and Replace API kia whakawātea te mōhaka hou i te site hou i runga i te whakatū i tana. He tino pai hoki ko tēnei mo mea he tino pēnei ahau, he whakawātea ingoa o ngā whānau i te About page, he whakawātea email o te contact page, me ngā mea katoa.
 
-### Whakawhanaungatanga Site Templates
+### Whakawhanaungatanga Site Templates {#using-site-templates}
 
 Ok, he tino whakatō koe i ngā site template whānau i roto i ngā whakaaro rānei, e hoki ana ki te whakamahi i ahau i tēnei whenua hou?
 
@@ -57,7 +57,7 @@ I te mea, he tino pai ana i ngā wāhi rua (e tino nui) e taea ai koe te whakama
 
 Me whai i tō mga wāhi (clients) kia whai i ngā site template hoki i tēnei wāhi (sign-up).
 
-#### Mode 1: Whakawhiti Site Template
+#### Mode 1: Whakawhiti Site Template {#mode-1-assign-site-template}
 
 I tēnei mode, ka taea te whai ake i ngā wāhi (templates) e ngā tino whānau (clients) i whakawhiti i te whakamahi i te whenua (site) i whakamaoritanga i roto i te whakatau i te whenua (template) ki te whakamahinga ana i runga i ngā Rapa (Plans) o koe.
 
@@ -71,35 +71,35 @@ I te puta no **Edit Product** (Whakarite Puku), e whakataki ki te whānau **Prod
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form (Whakarite Wāhi Template i te fōme Checkout)
+### Default Mode: Site template selection on the Checkout form (Whakarite Wāhi Template i te fōme Checkout) {#mode-2-choose-available-site-template}
 
 Ko te tino pai ahau ana kia whai i ngā site templates katoa i te wā registration, he tino pai ahau ana ki te whakamahi i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (Fōme Checkout). Hei āwhitu i te mea he tino pai ahau ana kia whai i te mahi nui o te whakarite pēnei me te tino pai ahau ana ki te whakawhiti i ngā site templates under every product e tino pai ahau. Ko te mea, ka taea e koe te whakatika te site template selection i runga i tō **Checkout Form** (
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opciones Template o Aotamate (Site Template Options)
+### Opciones Template o Aotamate (Site Template Options) {#default-mode-site-template-selection-on-the-checkout-form}
 
 He hoki ahau i ngā template site e taea, he tino whaiina ana ki te whakamahi i ngā whakaritenga o Ultimate Multisite. He pēnei ngā whānui e kaha ki te whakahou (turn on) ka whakatika (off).
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Whakarite i te Whakaahua Template (Allow Template Switching)
+#### Whakarite i te Whakaahua Template (Allow Template Switching) {#site-template-options}
 
 Ka whakanui tēnei option, ka taea ahau ki ngā wā e whakatō ana koe i te account me te site, he tino whaiina ana ki te mea o te kōrero. Ka taea ai ki ngā wakamahi (clients) te whakawhiti i te template kua roa kua oti i te whakatō, ko te mea he tino whaiina ana ahau i te mea ka taea e rātou te whiri i template anō i roto i te wā e mārama ana i te mea he tino tika ana tō whiri anurai mō ngā pēhea.
 
-#### Whakarite i ngā Wakamahi ki te whakamahi i te Site kua oti ahau katoa ko template (Allow Users to use their Site as templates)
+#### Whakarite i ngā Wakamahi ki te whakamahi i te Site kua oti ahau katoa ko template (Allow Users to use their Site as templates) {#allow-template-switching}
 
 I te mea, ka whai ake i ngā wakamahi o subsite i te whakatau i ngā site kua oti ana me te whakatō i tāmaki anō i te network, he tino pai ana ahau ki te whakakua (clone) ia ko te template kua oti ana kia tika ana mōna. Ka taea e tēnei option ahau ki te whaiaro atu i te mea he tino pai ana ahau ki te whakamahi i te site kua oti ahau katoa ko template anō i roto i te network.
 
-#### Whakarite i ngā Media (Copy Media on Template Duplication)
+#### Whakarite i ngā Media (Copy Media on Template Duplication) {#allow-users-to-use-their-site-as-templates}
 
 Ka whakatika tēnei option, ka whakakua ai i te media kua oti i te site template ki te site hou kua oti ana. Ka taea te whakahou tēnei mea i roto i ngā rātou plan katoa.
 
-#### **Whakarite i ngā Search Engines kia reira i te Site Templates (Prevent Search Engines from indexing Site Templates)**
+#### **Whakarite i ngā Search Engines kia reira i te Site Templates (Prevent Search Engines from indexing Site Templates)** {#copy-media-on-template-duplication}
 
 Ko ngā site templates e whakawhanake ahau i tēnei article he tino whaiina ana, engari ka wahi tōna i te network, ko te mea he tino pai ana ahau ki te whakamahi i te search engines kia mōna. Ka taea e tēnei option ahau ki te whakatohu (hide) ngā site templates kia taea ai i ngā search engines te reira i ngā template hoki.
 
-## Whakawhiti i Site Templates me auto search-and-replace
+## Whakawhiti i Site Templates me auto search-and-replace {#prevent-search-engines-from-indexing-site-templates}
 
 (Note: The original English heading was slightly awkward/incomplete, this translation aims for natural flow.)
 
@@ -121,7 +121,7 @@ Ka whakakihikitia e Ultimate Multisite ngā placeholder ki te data e whaiaroaota
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Whakamutunga i te "template pūrere nga wāhi whakaingo"
+### Whakamutunga i te "template pūrere nga wāhi whakaingo" {#pre-populating-site-templates-with-auto-search-and-replace}
 
 He tino pai ko katoa, engari he mea e whakatika ana ahau: i roto i te wā, ngā template o te site – i te mea e taea ai ngā kuia o koe te pahi atu ki a ia – he pūrere nga wāhi whakaingo (placeholders) nui me te hāpi i te korero tino pai.
 

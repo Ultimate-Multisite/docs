@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog
+# GoCardless Changelog {#gocardless-changelog}
 
 Version: 1.0.3 - جاری کیا گیا: 2026-05-05
 * درست کیا: جب GoCardless کی رکنیت منسوخ کی جاتی ہے، اور وہ معلق (pending) یا روکنے کی حالت (on-hold state) میں ہو، تو اب بے سہارا معلق سائیٹس کو صاف کر دیا جاتا ہے۔

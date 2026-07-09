@@ -4,11 +4,11 @@ title: Filtre - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filtre: wu_country_get_states
+# Filtre: wu_country_get_states {#filter-wucountrygetstates}
 
 Retorna la llista d’estats per a aquest país.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Retorna la llista d’estats per a aquest país.
 | $country_code | `string` | Codi ISO de dues lletres per al país. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instància de la classe actual. |
 
-### Des de
+### Des de {#since}
 
 - 2.0.11
-### Font
+### Font {#source}
 
 Definit a [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) a la línia 86
 
 
-## Retorna
+## Retorna {#returns}
 La llista filtrada d’estats.

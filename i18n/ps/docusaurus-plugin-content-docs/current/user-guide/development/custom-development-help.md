@@ -3,13 +3,13 @@ title: خصوصي د پراخت جوړول مرسته
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable څخه اپنی اندازه کولو لپاره همکاري ترلاسه कसरी गर्ने؟
+# Codeable څخه اپنی اندازه کولو لپاره همکاري ترلاسه कसरी गर्ने؟ {#how-to-get-custom-development-help-from-codeable}
 
 कहिलेकाहीँ, हामीलाई हाम्रो नेटवर्कहरू एकदमै हाम्रो मनपर्ने तरिकाले बनाउन केही उत्कृष्ट अनुकूलन (customization) चाहिन्छ। यदि तपाईं यस्तै खोज्दै हुनुहुन्छ भने, हामी [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) लाई सिफारिस गर्छौं, जहाँ तपाईं Ultimate Multisite विशेषज्ञता भएका अनुभवी डेभलपरहरू फेला पार्न सक्नुहुन्छ।
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) एउटा यस्तो प्लेटफर्म हो जसले ग्राहकहरूलाई योग्य WordPress फ्रीलान्स डेभलपरहरूसँग जोड्छ, जसले कुनै पनि आकारको परियोजनामा काम गर्न सक्छन्। उनीहरूको आवेदन गर्ने प्रक्रिया एकदमै ध्यानपूर्वक गरिएको हुन्छ ताकि तपाईंलाई तपाईंले सोचिरहनुभएको कार्यका लागि विशेष रूपमा योग्य विशेषज्ञहरूसँग मिलाउन सकियोस्।
 
-### Codeable मा परियोजना कसरी बनाउने?
+### Codeable मा परियोजना कसरी बनाउने? {#how-to-create-a-project-in-codeable}
 
 सबैभन्दा पहिले, [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) मा जानुहोस् र **Start a Project** बटनमा क्लिक गर्नुहोस्।
 

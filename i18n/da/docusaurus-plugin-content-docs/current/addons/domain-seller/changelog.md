@@ -3,7 +3,7 @@ title: Domænesælger ændringslog
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller-ændringslog
+# Domain Seller-ændringslog {#domain-seller-changelog}
 
 Version 1.3.0 - Udgivet den 2026-06-02
 - Nyt: Tilføjede en network-admin-advarsel, når HostAfrica-forhandlerens saldo bliver for lav
@@ -134,20 +134,20 @@ Version 1.0.0 - Udgivet den 2025-09-28
 * **Rettet:** Al forældet v1-kode opdateret til v2-standarder
 * **Fjernet:** Ældre v1-kompatibilitet (brydende ændring)
 
-### Tidligere versioner (v1 Legacy)
+### Tidligere versioner (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Rettet: Inkompatibilitet med Groundhogg CRM
 * Bemærk: Dette var den sidste v1-kompatible udgivelse
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Rettet: Fjernede License Key-feltet
 * Rettet: Plan-faner mangler, når funktions-plugin’et er aktivt
 * Forbedret: Tilføjede en spring over-knap på registreringsfeltet
 
-### Version 0.0.1 - Første udgivelse
+### Version 0.0.1 - Første udgivelse {#version-001---initial-release}
 
 * Grundlæggende OpenSRS-integration for WP Ultimo v1
 * Simpel domænesøgning og registrering

@@ -4,11 +4,11 @@ title: Сүзгі - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Сүзгі: wu_country_get_cities
+# Сүзгі: wu_country_get_cities {#filter-wucountrygetcities}
 
 Елдегі штат үшін қалалар тізімін қайтарады.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | Штаттың екі әріптік ISO коды. |
 | $current_country | `\WP_Ultimo\Country\Country` | Ағымдағы class данасы. |
 
-### Бастап
+### Бастап {#since}
 
 - 2.0.11
-### Дереккөзі
+### Дереккөзі {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) ішінде 146-жолда анықталған
 
 
-## Қайтарады
+## Қайтарады {#returns}
 Штаттардың сүзілген тізімі.

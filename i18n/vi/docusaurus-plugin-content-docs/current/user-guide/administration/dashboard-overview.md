@@ -3,11 +3,11 @@ title: Tổng quan Bảng điều khiển
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Tổng quan về Dashboard
+# Tổng quan về Dashboard {#dashboard-overview}
 
 Ultimate Multisite có một **Dashboard** riêng nằm trong menu Ultimate Multisite, đồng thời cũng thêm các widget vào Network Dashboard. Bài viết này sẽ giới thiệu những gì bạn sẽ thấy ở cả hai nơi.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite tích hợp các widget hữu ích vào dashboard cấp network, nằm tại **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Dưới đây là chức năng của từng widget:
 
 ![Widget News](/img/admin/network-dashboard-news.png)
 
-## Dashboard của Ultimate Multisite
+## Dashboard của Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Trong khi network dashboard hiển thị thông tin tổng quan về toàn bộ network, dashboard của Ultimate Multisite (nằm ở đầu menu Ultimate Multisite) hiển thị thông tin về dịch vụ.
 

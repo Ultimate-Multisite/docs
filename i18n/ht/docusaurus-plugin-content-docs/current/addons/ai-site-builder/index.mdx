@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Konstriktè sit AI
+# Konstriktè sit AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Egzijans
+## Egzijans {#requirements}
 
 - WordPress 5.3 oswa pi wo
 - PHP 7.4 oswa pi wo
 - plugin Multisite Ultimate (aktif)
 
-## Enstalasyon
+## Enstalasyon {#installation}
 
 1. Telechaje fichye addon yo nan repètwa `/wp-content/plugins/` ou a
 2. Aktive plugin nan atravè meni 'Plugins' nan WordPress
 3. Konfigire paramèt addon yo nan admin rezo a
 
-## Devlopman
+## Devlopman {#development}
 
-### Konfigirasyon
+### Konfigirasyon {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estrikti pwojè
+### Estrikti pwojè {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Règ modènizasyon kòd
 ```
 
-### Tès
+### Tès {#testing}
 
 Addon nan gen ladan yon kad tès konplè:
 
@@ -79,44 +79,44 @@ Addon nan gen ladan yon kad tès konplè:
 - **Kouvèti tès**: Konfigire pou swiv kouvèti kòd
 - **Tès Multisite**: Tès yo kouri nan anviwònman multisite
 
-### Estanda kòd
+### Estanda kòd {#code-standards}
 
 - **Estanda kodaj WordPress**: Aplike atravè PHPCS
 - **Konpatibilite PHP 7.4+**: Fonksyonalite PHP modèn sipòte
 - **Analiz estatik**: Entegrasyon PHPStan pou verifikasyon tip
 - **Modènizasyon kòd**: Règ Rector pou mizajou PHP
 
-### Sistèm konstriksyon
+### Sistèm konstriksyon {#build-system}
 
 - **Pwosesis resous**: Minifikasyon pou fichye CSS/JS
 - **Tradiksyon**: Jenerasyon fichye POT
 - **Anbalaj**: Kreyasyon achiv pou distribisyon
 - **Mòd devlopman**: Resous ki pa minifye pou debogaj
 
-## Konfigirasyon
+## Konfigirasyon {#configuration}
 
 Addon nan sipòte plizyè opsyon konfigirasyon ki aksesib atravè entèfas admin rezo a.
 
-## Hooks ak Filters
+## Hooks ak Filters {#hooks-and-filters}
 
-### Aksyon
+### Aksyon {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Deklanche apre inisyalizasyon addon nan
 - `ultimate-multisite-ai-site-builder_loaded` - Deklanche apre tout fichye addon yo chaje
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modifye paramèt addon yo
 - `ultimate-multisite-ai-site-builder_enabled` - Ranplase estati aktive/dezaktive addon nan
 
-## Lisans
+## Lisans {#license}
 
 Addon sa a gen lisans anba GPL v3 oswa pi resan.
 
-## Sipò
+## Sipò {#support}
 
 Pou sipò ak dokimantasyon, vizite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Chanjman
+## Chanjman {#changelog}
 
 - Vèsyon 1.0.1 (2025-09-28): chanje non prefiks la pou ultimate-multisite; mete domèn tèks la ajou; ogmante vèsyon an.
 

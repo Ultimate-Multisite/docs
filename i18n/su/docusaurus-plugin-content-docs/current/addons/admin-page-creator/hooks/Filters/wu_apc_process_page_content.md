@@ -4,11 +4,11 @@ title: Saringan - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Ngidinan pamekar ngarobah eusi ahir
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Ngidinan pamekar ngarobah eusi ahir
 | $to_replace | `array` | Array anu ngandung placeholder anu dicekel. |
 | $placeholder_count | `int` | Jumlah placeholder anu kapanggih. |
 
-### Ti saprak
+### Ti saprak {#since}
 
 - 1.4.0
-### Sumber
+### Sumber {#source}
 
 Ditetepkeun dina [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) dina garis 46
 
 
-## Mulangkeun
+## Mulangkeun {#returns}
 Eusi sanggeus dirobah.

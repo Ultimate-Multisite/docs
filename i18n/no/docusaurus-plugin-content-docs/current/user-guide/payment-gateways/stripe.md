@@ -3,19 +3,19 @@ title: Sette opp Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Sette opp Stripe-betalingsløsningen (v2)
+# Sette opp Stripe-betalingsløsningen (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**VIKTIG: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
 
 Du kan aktivere opptil fire betalingsmetoder på siden for betalingsinnstillinger: Stripe, Stripe Checkout, PayPal og Manuell. I denne artikkelen ser vi på hvordan du integrerer med **Stripe**.
 
-## Aktivere Stripe
+## Aktivere Stripe {#enabling-stripe}
 
 For å aktivere Stripe som en tilgjengelig betalingsløsning på nettverket ditt, går du til **Ultimate Multisite > Innstillinger > Betalinger** og slår på bryteren ved siden av **Stripe** eller **Stripe Checkout** i seksjonen for aktive betalingsløsninger.
 
 ![Aktivere Stripe i aktive betalingsløsninger](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Denne metoden viser et felt for å fylle inn kredittkortnummeret under betalingen.
 
@@ -47,7 +47,7 @@ Kopier verdien fra **Publishable key** og **Secret key** fra **Token**-kolonnen,
 
 ![Lime inn Stripe-nøkler i Ultimate Multisite-innstillinger](/img/config/settings-payment-gateways.png)
 
-## Sette opp Stripe Webhook
+## Sette opp Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe sender webhook-hendelser som varsler Ultimate Multisite hver gang noe skjer på **Stripe-kontoen din**.
 

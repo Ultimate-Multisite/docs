@@ -3,25 +3,25 @@ title: Šablóna doplnku
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Šablóna doplnku
+# Šablóna doplnku {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Požiadavky
+## Požiadavky {#requirements}
 
 - WordPress 5.3 alebo novší
 - PHP 7.4 alebo novší
 - plugin Multisite Ultimate (aktívny)
 
-## Inštalácia
+## Inštalácia {#installation}
 
 1. Nahrajte súbory doplnku do adresára `/wp-content/plugins/`
 2. Aktivujte plugin cez menu 'Pluginy' vo WordPress
 3. Nakonfigurujte nastavenia doplnku v správe siete
 
-## Vývoj
+## Vývoj {#development}
 
-### Nastavenie
+### Nastavenie {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Štruktúra projektu
+### Štruktúra projektu {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Pravidlá modernizácie kódu
 ```
 
-### Testovanie
+### Testovanie {#testing}
 
 Doplnok obsahuje komplexný testovací framework:
 
@@ -75,44 +75,44 @@ Doplnok obsahuje komplexný testovací framework:
 - **Pokrytie testami**: Nakonfigurované na sledovanie pokrytia kódu
 - **Multisite testovanie**: Testy bežia v multisite prostredí
 
-### Štandardy kódu
+### Štandardy kódu {#code-standards}
 
 - **WordPress Coding Standards**: Vynucované cez PHPCS
 - **Kompatibilita s PHP 7.4+**: Podporované moderné funkcie PHP
 - **Statická analýza**: Integrácia PHPStan na kontrolu typov
 - **Modernizácia kódu**: Pravidlá Rector pre upgrady PHP
 
-### Systém zostavenia
+### Systém zostavenia {#build-system}
 
 - **Spracovanie assetov**: Minifikácia súborov CSS/JS
 - **Preklad**: Generovanie súboru POT
 - **Balenie**: Vytvorenie archívu na distribúciu
 - **Vývojový režim**: Neminifikované assety na ladenie
 
-## Konfigurácia
+## Konfigurácia {#configuration}
 
 Doplnok podporuje rôzne možnosti konfigurácie dostupné cez rozhranie správy siete.
 
-## Hooky a filtre
+## Hooky a filtre {#hooks-and-filters}
 
-### Akcie
+### Akcie {#actions}
 
 - `ultimate-multisite-addon-template_init` - Spustí sa po inicializácii doplnku
 - `ultimate-multisite-addon-template_loaded` - Spustí sa po načítaní všetkých súborov doplnku
 
-### Filtre
+### Filtre {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Upravte nastavenia doplnku
 - `ultimate-multisite-addon-template_enabled` - Prepíšte stav zapnutia/vypnutia doplnku
 
-## Licencia
+## Licencia {#license}
 
 Tento doplnok je licencovaný pod GPL v3 alebo novšou.
 
-## Podpora
+## Podpora {#support}
 
 Podporu a dokumentáciu nájdete na [MultisiteUltimate.com](https://multisiteultimate.com)
-## Zoznam zmien
+## Zoznam zmien {#changelog}
 
 - Verzia 1.0.1 (2025-09-28): premenovanie prefixu na ultimate-multisite; aktualizácia text domain; zvýšenie verzie.
 

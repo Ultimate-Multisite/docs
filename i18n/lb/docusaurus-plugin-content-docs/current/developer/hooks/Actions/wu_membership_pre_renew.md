@@ -4,11 +4,11 @@ title: Aktioun - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Aktioun: wu_membership_pre_renew
+# Aktioun: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Gëtt virun der Erneierung vun der Memberschaft ausgeléist.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gëtt virun der Erneierung vun der Memberschaft ausgeléist.
 | $membership_id | `int` | D'ID vun der Memberschaft. |
 | $membership | `\Membership` | Memberschaftsobjet. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) op Linn 2204

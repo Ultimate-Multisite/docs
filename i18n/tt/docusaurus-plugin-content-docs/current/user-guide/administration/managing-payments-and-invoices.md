@@ -3,9 +3,9 @@ title: Төлөмләр һәм чекиләрне ярдү etmek
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödeme ve Fatura Yönetimi
+# Ödeme ve Fatura Yönetimi {#managing-payments-and-invoices}
 
-## Ödeme Ayarları
+## Ödeme Ayarları {#payment-settings}
 
 Ödeme almaya başlamadan önce, ödeme ile ilgili ayarları yapılandırmanız gerekecek. **Ultimate Multisite → Ayarlar** bölümüne gidin ve **Payment** (Ödeme) sekmesine tıklayın.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Genel Ödeme Seçenekleri
+### Genel Ödeme Seçenekleri {#general-payment-options}
 
 Genel ayarlarda şunları yapılandırabilirsiniz:
 
@@ -24,7 +24,7 @@ Genel ayarlarda şunları yapılandırabilirsiniz:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Ödeme Ağ Geçitleri (Payment Gateways)
+### Ödeme Ağ Geçitleri (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite birden fazla ödeme ağ geçidini destekler. Her birini Ödeme ayarları sekmesinden etkinleştirebilir ve yapılandırabilirsiniz.
 
@@ -40,11 +40,11 @@ Her ağ geçidinin kendi yapılandırma bölümü vardır; buraya API anahtarlar
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Modu (Sandbox Mode)
+### Sandbox Modu (Sandbox Mode) {#sandbox-mode}
 
 Canlıya geçmeden önce ödeme entegrasyonunuzu test etmek için **Sandbox Modunu** etkinleştirebilirsiniz. Sandbox modu aktifken gerçek ücretlendirme yapılmaz.
 
-## Ödemeleri Görüntüleme
+## Ödemeleri Görüntüleme {#viewing-payments}
 
 Ağınızdaki tüm işlemleri görmek için Ultimate Multisite altında **Payments** (Ödemeler) sayfasına gidin.
 
@@ -54,7 +54,7 @@ Ağınızdaki tüm işlemleri görmek için Ultimate Multisite altında **Paymen
 
 Оплате tıklayın, чтобы увидеть все подробности, включая позиции заказа, связанное членство, информацию о клиенте и данные платежного шлюза.
 
-## Счета (Invoices)
+## Счета (Invoices) {#invoices}
 
 Ultimate Multisite может автоматически создавать счета за платежи. Вы можете настроить шаблон счета и формат нумерации из настроек Платежей (Payment settings).
 

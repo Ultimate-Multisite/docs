@@ -4,11 +4,11 @@ title: ຕົວກອງ - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 ກັ່ນຕອງວັນໝົດອາຍຸທີ່ຄຳນວນແລ້ວ ເພື່ອກຳນົດຫຼັງຈາກການຕໍ່ອາຍຸ.
 
-## ພາລາມິເຕີ
+## ພາລາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 | $membership_id | `int` | ID ຂອງສະມາຊິກ. |
 | $membership | `\Membership` | ອອບເຈັກສະມາຊິກ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) ທີ່ແຖວ 2192

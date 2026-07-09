@@ -4,13 +4,13 @@ title: Aiki - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Aiki: wp_ultimo_host_providers_load
+# Aiki: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
 
 Ba wa masu haɓakawa damar ƙara nasu haɗin host provider ta hanyar WordPress plugins.
 
-### Tun daga
+### Tun daga {#since}
 
 - 2.0.0
-### Tushe
+### Tushe {#source}
 
 An bayyana a cikin [`inc/managers/class-domain-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-domain-manager.php#L1107) a layi na 1107

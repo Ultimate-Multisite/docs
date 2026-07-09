@@ -3,7 +3,7 @@ title: Journal des modifications Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Journal des modifications Mailchimp
+# Journal des modifications Mailchimp {#mailchimp-changelog}
 
 Version: 1.1.1 - Publié le 2025-09-28
 

@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve të TVSH-së
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Regjistri i ndryshimeve të VAT
+# Regjistri i ndryshimeve të VAT {#vat-changelog}
 
 Versioni 1.0.7 - Publikuar më 2026-02-03
 

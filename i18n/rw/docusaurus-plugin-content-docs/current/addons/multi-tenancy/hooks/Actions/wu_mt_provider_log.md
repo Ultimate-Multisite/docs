@@ -4,11 +4,11 @@ title: Igikorwa - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Igikorwa: wu_mt_provider_log
+# Igikorwa: wu_mt_provider_log {#action-wumtproviderlog}
 
 Gitangira iyo provider yanditse ubutumwa muri log.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gitangira iyo provider yanditse ubutumwa muri log.
 | $level | `string` | Urwego rwa log. |
 | $context | `array` | Ibisobanuro by’inyongera. |
 
-### Kuva
+### Kuva {#since}
 
 - 1.0.0
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400) ku murongo wa 400

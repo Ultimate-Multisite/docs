@@ -3,35 +3,35 @@ title: Kəşfiyyat Müsahibəsi
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Kəşfiyyat Müsahibəsi
+# Kəşfiyyat Müsahibəsi {#discovery-interview}
 
 **Kəşfiyyat Müsahibəsi** (Discovery Interview), Theme Builder-in dizayn prosesindəki ilk addımdır. Bu müsahibə saytınız, biznesiniz və dizayn üstünlükləriniz haqqında məlumat toplamaq üçün hazırlanmışdır ki, sizə xas bir tema yaradılsın.
 
-## Ümumi Baxış
+## Ümumi Baxış {#overview}
 
 Kəşfiyyat Müsahibəsi sizi brendinizi, hədəf auditoriyanızı və dizayn məqsədlərinizi anlamaq üçün bir sıra suallar vasitəsilə bələd çəkir. 1.16.0 versiyasında müsahibəyə artıq dizayn üçün vizual ilham verməyinizə imkan verən bir **foto yükləmə addımı** əlavə edilmişdir.
 
-## Müsahibə Addımları
+## Müsahibə Addımları {#interview-steps}
 
-### 1. Biznes Məlumatları
+### 1. Biznes Məlumatları {#1-business-information}
 
 - Sayt adı və şüar
 - Biznes növü və ya sektoru
 - Əsas biznes məqsədləri
 - Hədəf auditoriya təsviri
 
-### 2. Dizayn Üstünlükləri
+### 2. Dizayn Üstünlükləri {#2-design-preferences}
 
 - Üstün istənilən rəng palitrası
 - Dizayn üslubu (müasir, klassik, minimal, oyunbaz və s.)
 - İlham verən saytlar və ya brendlər
 - Mütləq olmalı dizayn elementləri
 
-### 3. Foto Yükləmə (v1.16.0-da Yeni)
+### 3. Foto Yükləmə (v1.16.0-da Yeni) {#3-photo-upload-new-in-v1160}
 
 Dizayn istiqamətini təsir etmək üçün bir və ya daha çox foto yükləyin:
 
-#### Qəbul Edilən Formatlar
+#### Qəbul Edilən Formatlar {#accepted-formats}
 
 | Format | Extension | Detallar |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Dizayn istiqamətini təsir etmək üçün bir və ya daha çox foto yükləyin:
 | **WebP** | `.webp` | Müasir format, kiçik fayl ölçüsü |
 | **GIF** | `.gif` | Yalnız statik şəkillər (animasiya yoxdur) |
 
-#### Fayl Tələbləri
+#### Fayl Tələbləri {#file-requirements}
 
 - **Maksimum fayl ölçüsü:** 10 MB
 - **Minimum ölçülər:** 400 × 300 piksel
 - **Tövsiyə olunan ölçülər:** 1200 × 800 piksel və ya daha böyük
 - **Format nisbəti:** Hər hansı nisbət qəbul edilir
 
-#### Fotoqrafiyalar Dizayn İstiqamətinə Necə Təsir Edir
+#### Fotoqrafiyalar Dizayn İstiqamətinə Necə Təsir Edir {#how-photos-influence-design-direction}
 
 Yüklədiyiniz fotoqrafiyalar Theme Builder-in aşağıdakıları anlamağa kömək edir:
 
@@ -57,21 +57,21 @@ Yüklədiyiniz fotoqrafiyalar Theme Builder-in aşağıdakıları anlamağa köm
 - **Dizayn elementləri** — naxışlar, teksturalar və kompozisiya üslubları
 - **Tipoqrafiya ilhamı** — vizual mövzuya uyğun gələn şrift üslubları
 
-### 4. Məzmun Strukturu
+### 4. Məzmun Strukturu {#4-content-structure}
 
 - Lazımi əsas səhifələr (Ana Səhifə, Haqqımızda, Xidmətlər, Əlaqə və s.)
 - Blog və ya xəbər bölməsi tələb olunur
 - E-commerce funksionallığı tələb olunur
 - Xüsusi funksiyalar və ya inteqrasiyalar
 
-### 5. Nəzərdən Keçirmə və Təsdiq
+### 5. Nəzərdən Keçirmə və Təsdiq {#5-review-and-confirmation}
 
 - Verilən bütün məlumatların xülasəsi
 - Dizayn generasiyası başlamazdan əvvəl təsdiq
 
-## Foto Yükləmə Üzrə Ən Yaxşı Praktikalara Nəzər
+## Foto Yükləmə Üzrə Ən Yaxşı Praktikalara Nəzər {#photo-upload-best-practices}
 
-### Nə Yükləməli
+### Nə Yükləməli {#what-to-upload}
 
 - **Brend ilhamı** — loqolar, rəng nümunələri və ya brend qaydaları
 - **Rəqib saytlar** — hayran olduğunuz saytların skrinşotları
@@ -80,7 +80,7 @@ Yüklədiyiniz fotoqrafiyalar Theme Builder-in aşağıdakıları anlamağa köm
 - **Komanda və ya ofis fotoqrafiyaları** — şəxsi və ya peşəkar brendləşdirmə üçün
 - **Yaşam üslubu şəkilləri** — hədəf auditoriyanızı təmsil edən
 
-### Nədən Qaçınmalı
+### Nədən Qaçınmalı {#what-to-avoid}
 
 - **Aşağı keyirli şəkillər** — bulanıq və ya pikselizasiya olunmuş fotoqrafiyalar
 - **Məqsədsiz şəkillər** — brendinizi təmsil etməyən fotoqrafiyalar
@@ -88,7 +88,7 @@ Yüklədiyiniz fotoqrafiyalar Theme Builder-in aşağıdakıları anlamağa köm
 - **Muhafaza edilmiş materiallar** — şəkilləri istifadə etmək hüququnuz olduğundan əmin olun
 - **Animasiyalı GIF-lər** — yalnız statik şəkillər emal edilir
 
-### Ən Yaxşı Nəticələr üçün Məsləhətlər
+### Ən Yaxşı Nəticələr üçün Məsləhətlər {#tips-for-best-results}
 
 1. **2-3 şəkil yükləyin** — bir neçə şəkil daha yaxşı kontekst verir
 2. **Yüksək keyirli fotoqrafiyalardan istifadə edin** — aydın, yaxşı işıqlı şəkillər ən yaxşı nəticəni verir
@@ -96,7 +96,7 @@ Yüklədiyiniz fotoqrafiyalar Theme Builder-in aşağıdakıları anlamağa köm
 4. **Kontekst verin** — hər bir şəkli niyə seçdiyinizi qısa təsvir edin
 5. **Konkret olun** — əgər müəyyən bir element xoşunuza gəlirsə, onu göstərin
 
-## Dizayn İstiqaməti Çıxışı
+## Dizayn İstiqaməti Çıxışı {#design-direction-output}
 
 Kəşfiyyat Müsahibəsindən sonra, Theme Builder aşağıdakıları yaradır:
 
@@ -106,7 +106,7 @@ Kəşfiyyat Müsahibəsindən sonra, Theme Builder aşağıdakıları yaradır:
 - **Vizual elementlər** — ikonlar, naxışlar və dekorativ elementlər
 - **Mood board** — dizayn istiqamətinin vizual təsviri
 
-## Növbəti Addımlar
+## Növbəti Addımlar {#next-steps}
 
 Kəşfiyyat Müsahibəsini tamamladıqdan sonra:
 
@@ -115,7 +115,7 @@ Kəşfiyyat Müsahibəsini tamamladıqdan sonra:
 3. [Design Direction](./design-direction.md) addımına keçin
 4. Theme Builder sizin üçün xüsusi temanı yaradır
 
-## Əlaqəli Dokumentasiya
+## Əlaqəli Dokumentasiya {#related-documentation}
 
 - [Design Direction](./design-direction.md) — dizaynınızı nəzərdən keçirin və təkmilləşdirin
 - [Hospitality Menus](./hospitality-menus.md) — strukturlaşdırılmış menyu səhifələri yaradın

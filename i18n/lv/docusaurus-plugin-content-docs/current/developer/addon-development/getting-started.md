@@ -3,9 +3,9 @@ title: Darba sākšana ar papildinājumu izstrādi
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Paplašinājuma izstrāde
+# Paplašinājuma izstrāde {#addon-development}
 
-## Paplašinājuma struktūra
+## Paplašinājuma struktūra {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Galvenā paplašinājuma faila veidne
+## Galvenā paplašinājuma faila veidne {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Pielāgota modeļa piemērs
+## Pielāgota modeļa piemērs {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Administrēšanas lapas integrācija
+## Administrēšanas lapas integrācija {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Jūsu papildinājuma testēšana
+## Jūsu papildinājuma testēšana {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 paplašināšanas punkti
+## v2.13.0 paplašināšanas punkti {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 pievieno vairākus paplašināšanas punktus, kas ir noderīgi papildinājumiem, kuri integrējas ar suverēniem nomniekiem, checkout domēniem vai hostinga pakalpojumu sniedzēja DNS automatizāciju.
 
-### SSO un galvenās vietnes pārvaldības URL
+### SSO un galvenās vietnes pārvaldības URL {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout formas bāzes domēni
+### Checkout formas bāzes domēni {#checkout-form-base-domains}
 
 Izmantojiet `wu_checkout_form_base_domains`, kad jūsu papildinājums nodrošina papildu koplietotus bāzes domēnus, kuriem jāuzvedas kā checkout formas **Vietnes URL** domēniem, nevis kā katrai vietnei atsevišķi pielāgotiem kartējumiem:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite normalizē šos resursdatorus un izlaiž automātiskus katrai vietnei atsevišķi kartēta domēna ierakstus tiem.
 
-### Automātiska domēna ierakstu izveide
+### Automātiska domēna ierakstu izveide {#automatic-domain-record-creation}
 
 Izmantojiet `wu_should_create_domain_record_for_site`, kad jūsu papildinājumam ir jānovērš vai jāatliek automātiska domēna ieraksta izveide jaunizveidotai vietnei:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Hostinga pakalpojumu sniedzēja integrācijas, kas klausās `wu_add_subdomain`, var izveidot pakalpojumu sniedzēja puses DNS ierakstus, kad tiek izveidotas vietnes. Ja šai darbībai nav reģistrēta neviena integrācija, Ultimate Multisite izlaiž tukšo fona uzdevumu.
 
-## Nākamās darbības
+## Nākamās darbības {#next-steps}
 
 - Pārskatiet [Hooks atsauci](/developer/hooks), lai uzzinātu pieejamās darbības un filtrus
 - Pārbaudiet [REST API pārskatu](/developer/rest-api/overview) API integrācijai

@@ -3,7 +3,7 @@ title: Injektori i njoftimit
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Vendos Njoftim në rrjetin tuaj me Ultimate Multisite: Ad Injector
+# Vendos Njoftim në rrjetin tuaj me Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector është një **add-on falas** që ju jep mjetet për të vendosur reklama direkt nga faqja e redaktimit të tyre.
 
@@ -35,7 +35,7 @@ Ndonjëherë mund të keni reklama të përfshira edhe në headerin e Faqive të
 
 _Shkoni te opsioni i Kodit të Reklamës në Panelin e Admin nëse dëshironi të shfaqni reklama në back-end të përdoruesit tuaj._
 
-### Përtej Reklamimit
+### Përtej Reklamimit {#beyond-advertising}
 
 Ndonjëherë mund të përdorni Ultimate Multisite: Ad Injector për t'u ofruar mbështetje planeve me nivel më të lartë.
 

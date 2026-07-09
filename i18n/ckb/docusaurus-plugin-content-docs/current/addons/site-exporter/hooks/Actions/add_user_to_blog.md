@@ -4,11 +4,11 @@ title: کردار - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# کردار: add_user_to_blog
+# کردار: add_user_to_blog {#action-addusertoblog}
 
 دەستبەجێ دوای زیادکردنی بەکارهێنەرێک بۆ ماڵپەڕێک کاردەکات.
 
-## پارامەترەکان
+## پارامەترەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 | $role | `string` | ڕۆڵی بەکارهێنەر. |
 | $blog_id | `int` | ناسنامەی بلۆگ. |
 
-### لەو کاتەوە
+### لەو کاتەوە {#since}
 
 - MU: MU
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسە کراوە لە [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) لە هێڵی 174

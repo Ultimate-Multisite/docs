@@ -4,13 +4,13 @@ title: පෙරහන - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filter: wu_contains_element
+# Filter: wu_contains_element {#filter-wucontainselement}
 
 සංවර්ධකයන්ට ආරම්භක සෙවීමේ ප්‍රතිඵල වෙනස් කිරීමට ඉඩ දෙයි.
 
 මෙය තෙවන පාර්ශ්ව නිර්මාණකයන් ආදිය සඳහා ප්‍රයෝජනවත් වේ.
 
-## පරාමිතීන්
+## පරාමිතීන් {#parameters}
 
 | නම | වර්ගය | විස්තරය |
 |------|------|-------------|
@@ -19,9 +19,9 @@ _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 | $element | `self` | වත්මන් මූලාංගය. |
 | $post | `null\|\WP_Post` | පරීක්ෂා කළ යුතු post. |
 
-### සිට
+### සිට {#since}
 
 - 2.0.0
-### මූලාශ්‍රය
+### මූලාශ්‍රය {#source}
 
 [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) හි 534 පේළියේ අර්ථ දක්වා ඇත.

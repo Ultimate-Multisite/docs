@@ -3,7 +3,7 @@ title: Integrasyon ng Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Pag-integrate ng Ultimate Multisite sa Zapier
+# Pag-integrate ng Ultimate Multisite sa Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Sa isa sa mga artikulo, tinalakay natin ang [Webhooks](webhooks.md) at kung paano ito magagamit para makipag-ugnayan sa mga third-party application.
 
@@ -15,7 +15,7 @@ Maaari kang gumawa ng mga **Triggers** na magsisimulang tumakbo kapag may nangya
 
 Ito ay posible dahil ang mga **triggers** at **actions** ng **Ultimate Multisite Zapier** ay pinapagana ng [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Paano Magsisimula
+## Paano Magsisimula {#how-to-start}
 
 Una, hanapin ang Ultimate Multisite sa listahan ng app ng Zapier. O kaya naman, maaari kang mag-click sa [link na ito](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Sa field na URL, ilagay ang buong URL ng iyong network, kasama ang protocol (HTT
 
 I-click ang button na **Yes, Continue** para magpatuloy sa susunod na hakbang. Kung maayos lahat, dapat malugod kang batiin ng iyong bagong konektadong account! I-click ang **Continue** para gumawa ng bagong trigger.
 
-## Paano Gumawa ng Bagong Trigger
+## Paano Gumawa ng Bagong Trigger {#how-to-create-a-new-trigger}
 
 Ngayon na nakakonekta na ang iyong account, makikita mo na ang mga available na events. Para sa tutorial na ito, piliin natin ang event na **payment_received**.
 
@@ -67,7 +67,7 @@ Sa yugtong ito, susubukan ng Zapier kung kaya nitong **kunin ang specific payloa
 
 Sa ating tutorial, ang test ay **matagumpay na natapos** at nagbalik ng halimbawa ng payload information. Ang halimbawang impormasyong ito ay magagamit sa paggabay sa atin habang gumagawa ng mga aksyon (actions). Ang iyong trigger ay nakagawa na at handa nang ikonekta sa ibang mga application.
 
-## Paano Gumawa ng Actions
+## Paano Gumawa ng Actions {#how-to-create-actions}
 
 Ang mga actions ay gumagamit ng impormasyon mula sa ibang mga trigger para lumikha ng mga bagong entry sa iyong network.
 
@@ -79,7 +79,7 @@ Sa susunod na hakbang, maaari kang gumawa ng iyong authentication, tulad ng gina
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Pag-set up ng Action
+### Pag-set up ng Action {#setting-up-the-action}
 
 Ito ang **pangunahing hakbang ng action** at dito medyo iba ang mga bagay. Ang unang impormasyong pipiliin mo ay ang **Item**. Ang Item ay ang **information model** ng iyong network gaya ng **Customers, Payments, Sites, Emails** at iba pa.
 

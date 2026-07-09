@@ -3,7 +3,7 @@ title: Nhoroondo yekuchinja kweCaptcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Nhoroondo yeshanduko yeCaptcha
+# Nhoroondo yeshanduko yeCaptcha {#captcha-changelog}
 
 Version: 1.5.0 - Yakaburitswa musi wa2026-05-22
 * Zvitsva: Hard-stop rate limiter — inoverenga GET nePOST yega yega panzvimbo dzakachengetedzwa necaptcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) uye inopindura neHTTP 429, `Retry-After` header, uye tarpit sleep yakasarudzwa zvisina kurongeka (1–5s, yakaganhurirwa zvakasimba pa15s).

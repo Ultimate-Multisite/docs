@@ -3,13 +3,13 @@ title: Cambiar a un plan inferior
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Degradar un plan (v2)
+# Degradar un plan (v2) {#downgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
 Degradar un plan o suscripción es una acción común que tus clientes podrían realizar si tienen un presupuesto limitado o decidieron que no necesitarán muchos recursos para ejecutar su subsitio.
 
-## Cómo degradar un plan
+## Cómo degradar un plan {#how-to-downgrade-a-plan}
 
 Tus clientes pueden degradar su plan en cualquier momento iniciando sesión en el dashboard de administración de su subsitio y haciendo clic en **Change** bajo su página de Account.
 
@@ -25,7 +25,7 @@ Para continuar, el usuario solo necesita hacer clic en el botón **Complete Chec
 
 ![Página de Account que muestra el banner de cambio pendiente de membership](/img/account-page/pending-change.png)
 
-### Qué sucede cuando un usuario degrada su plan
+### Qué sucede cuando un usuario degrada su plan {#what-happens-when-a-user-downgrades-their-plan}
 
 Es importante tener en cuenta que degradar el plan no altera la configuración existente en el subsitio del usuario.
 
@@ -37,7 +37,7 @@ Para las entradas que superen el límite establecido en el plan, tienes 3 opcion
 
 ![Página Sites de Network Admin Settings que muestra las opciones de comportamiento para post-limit-exceeded](/img/account-page/settings-sites-post-limit.png)
 
-### Qué sucede con el pago
+### Qué sucede con el pago {#what-happens-to-the-payment}
 
 En la versión 2.0, ya no requiere ningún ajuste en el pago en términos de prorrateo.
 

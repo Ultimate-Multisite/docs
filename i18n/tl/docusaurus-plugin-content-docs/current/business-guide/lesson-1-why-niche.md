@@ -3,11 +3,11 @@ title: 'Aralin 1: Bakit Nananaig ang Espesyalisadong Larangan'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Aralin 1: Bakit Panalo ang Niche
+# Aralin 1: Bakit Panalo ang Niche {#lesson-1-why-niche-wins}
 
 Bago natin hawakan ang anumang software, kailangan mong maunawaan kung bakit ang paggawa para sa isang partikular na audience ang nag-iisang pinakamahalagang desisyong gagawin mo.
 
-## Ang Problema sa Pagbebenta ng Generic na mga Website
+## Ang Problema sa Pagbebenta ng Generic na mga Website {#the-problem-with-selling-generic-websites}
 
 Kung nag-aalok ka ng "mga website para sa lahat," nakikipagkompetensiya ka sa:
 
@@ -17,11 +17,11 @@ Kung nag-aalok ka ng "mga website para sa lahat," nakikipagkompetensiya ka sa:
 
 Hindi ka mananalo sa presyo. Hindi ka mananalo sa mga feature. Ang generic na merkado ng website ay isang karera pababa.
 
-## Ano ang Nagbabago Kapag Pumili Ka ng Niche
+## Ano ang Nagbabago Kapag Pumili Ka ng Niche {#what-changes-when-you-pick-a-niche}
 
 Kapag bumuo ka ng platform na partikular para sa mga fitness studio (o anumang niche), lahat ay lumilipat pabor sa iyo:
 
-### Nilulutas Mo ang Tunay na mga Problema
+### Nilulutas Mo ang Tunay na mga Problema {#you-solve-real-problems}
 
 Ang may-ari ng fitness studio ay hindi gusto ng "isang website." Gusto nila ng:
 
@@ -33,45 +33,45 @@ Ang may-ari ng fitness studio ay hindi gusto ng "isang website." Gusto nila ng:
 
 Kapag nilulutas ng iyong platform ang mga partikular na problemang ito out of the box, hindi ka na nagbebenta ng website. Nagbebenta ka ng solusyon.
 
-### Maaari Kang Maningil ng Mas Mataas
+### Maaari Kang Maningil ng Mas Mataas {#you-can-charge-more}
 
 Ang generic na WordPress site ay maaaring maibenta sa $500-$2,000 bilang one-time na proyekto. Ang niche platform na lumulutas ng mga problemang partikular sa industriya ay maaaring maningil ng $49-$199/buwan bilang paulit-ulit na subscription dahil tuloy-tuloy at partikular ang halaga.
 
-### Nagiging Eksperto Ka
+### Nagiging Eksperto Ka {#you-become-the-expert}
 
 Kapag nakatuon ka sa isang industriya, natututunan mo ang wika nito, ang mga pain point nito, at ang mga pattern nito sa pagbili. Nag-uusap-usap ang mga may-ari ng fitness studio. Kapag nakahanap ang isa ng platform na gumagana, sinasabi nila sa iba. Makapangyarihan ang word of mouth sa isang niche dahil masinsin ang komunidad.
 
-### Mas Gumagaan ang Iyong Marketing
+### Mas Gumagaan ang Iyong Marketing {#your-marketing-gets-easier}
 
 Sa halip na "gumagawa kami ng mga website para sa mga negosyo," sinasabi mo na "gumagawa kami ng mga website para sa mga fitness studio." Direktang kinakausap ng iyong landing page ang mga may-ari ng gym. Mukhang mga fitness site ang iyong mga template. Ang iyong mga testimonial ay nagmumula sa mga trainer at may-ari ng studio. Mas malakas tumama ang bawat piraso ng marketing dahil partikular ito.
 
-## Ang Oportunidad ng FitSite
+## Ang Oportunidad ng FitSite {#the-fitsite-opportunity}
 
 Tingnan natin ang industriya ng fitness sa lente na ito:
 
-### Laki ng Merkado
+### Laki ng Merkado {#market-size}
 
 - May mahigit 100,000 fitness facility sa United States lamang
 - Karamihan ay independently owned na maliliit na negosyo
 - Karamihan ay alinman walang website, may pangit na website, o may sobrang mahal na website na hindi nila ma-update nang sila mismo
 
-### Kasalukuyang mga Solusyon
+### Kasalukuyang mga Solusyon {#current-solutions}
 
 - **Generic builders** (Wix, Squarespace): Walang mga feature na partikular sa fitness, nahihirapan ang mga may-ari ng studio na buuin ang kailangan nila
 - **Custom development**: Mahal, one-off, mahirap i-maintain
 - **Mga platform na partikular sa industriya**: Kakaunti ang mayroon, at karamihan ay nakatali sa mga booking system sa halip na mag-alok ng kumpletong web presence
 
-### Ang Gap
+### Ang Gap {#the-gap}
 
 May malinaw na gap sa pagitan ng "generic website builder" at "mahal na custom development" para sa mga fitness business. Ang platform na nagbibigay sa mga may-ari ng studio ng propesyonal, partikular sa fitness na website na may mga feature na kailangan nila -- sa presyong makatuwiran para sa maliit na negosyo -- ay pumupuno sa gap na iyon.
 
 Ito ang oportunidad na ita-target ng FitSite.
 
-## Pangunahing Aral
+## Pangunahing Aral {#key-takeaway}
 
 Ang pagpili ng niche ay hindi tungkol sa paglilimita sa sarili mo. Ito ay tungkol sa pagtutok ng iyong pagsisikap kung saan ito may pinakamalaking epekto. Ang isang niche platform na nagsisilbi sa 500 customer sa $99/buwan ay isang negosyong $600,000/taon. Hindi mo kailangan ng milyon-milyong customer. Kailangan mo ang mga tamang customer.
 
-## Ang Binuo Natin sa Araling Ito
+## Ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 Wala pang teknikal na gawain -- ngunit mayroon ka na ngayong estratehikong pundasyon:
 

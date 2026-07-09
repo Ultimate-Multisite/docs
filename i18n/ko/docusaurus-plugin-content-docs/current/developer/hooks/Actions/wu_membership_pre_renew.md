@@ -4,11 +4,11 @@ title: 액션 - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# 액션: wu_membership_pre_renew
+# 액션: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 멤버십 갱신 전에 트리거됩니다.
 
-## 매개변수
+## 매개변수 {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 | $membership_id | `int` | 멤버십의 ID입니다. |
 | $membership | `\Membership` | 멤버십 객체입니다. |
 
-### 버전
+### 버전 {#since}
 
 - 2.0
 
-### 소스
+### 소스 {#source}
 
 다음에서 정의됨: [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) (2204번째 줄)

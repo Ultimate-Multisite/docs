@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Ndekọ Mgbanwe Captcha
+# Ndekọ Mgbanwe Captcha {#captcha-changelog}
 
 Ụdị: 1.5.0 - Ewepụtara na 2026-05-22
 * Ọhụrụ: Ihe mgbochi ọnụego hard-stop — na-agụ GET na POST ọ bụla n’elu ebe e ji captcha chebe (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ma zaa na HTTP 429, `Retry-After` header, na ụra tarpit a họpụtara n’enweghị usoro (1–5s, e tinyere oke siri ike na 15s).

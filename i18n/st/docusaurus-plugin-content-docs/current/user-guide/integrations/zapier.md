@@ -3,7 +3,7 @@ title: Ho fana'a le ho fetola
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ho Hlahopa Ultimate Multisite le Zapier
+# Ho Hlahopa Ultimate Multisite le Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Morero ka ntlha ya sehlopha, re ne re buisana ka [Webhooks](webhooks.md) le hore na leba ba ka fetola ho fanaena le bonnum le bonnum le ba nang le bonnum ba lina.
 
@@ -49,7 +49,7 @@ Ka tsela ya URL, u fana le URL e fihlelo ea sefapeng sa hau sefapeng sefe se se 
 
 Hloka le **Yes, Continue** ka ho fana ka tsela efe. Ha se a reka hore ntho eona e le teng, o tla ba le bohlokoa leboho la hau! Ho tsamaetsa ka **Continue** ho hlalosa trigger e khofe.
 
-## Ke eng e le ho fetola Trigger e khofe
+## Ke eng e le ho fetola Trigger e khofe {#how-to-start}
 
 (Note: The original text is very brief and instructional. I have translated it to sound natural and helpful in Southern Sotho, keeping the technical terms as requested.)
 
@@ -67,7 +67,7 @@ Masi le mofuta oona, Zapier o tla batla ho bona kungwena (payload) e fetang ea l
 
 Mo lapa la rouramo ra, lebo le ne le **lolongile ka hlokompho** le le ne le ntlha ya mohlodi wa payload. Mohlodi oona ho ba le ntlha e ntle ho re bolela hore re tla fana ka tsela ho fetola litšomo (actions). Le fa trigger ya hau e ne e fetileng le e le leka ho itlhahisa le litšomo tse ling.
 
-## Kea le Ho Baetso (How to create Actions)
+## Kea le Ho Baetso (How to create Actions) {#how-to-create-a-new-trigger}
 
 Actions ba fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo tsa ho fetola (triggers) ho fetola litlhahlo tse neng di fana ka litlhahlo
 
@@ -79,7 +79,7 @@ Mo lapa le fetileng o tla ba le ho fana ka authentication ya hau, jalo ka izay t
 
 ![Ho fana ka ho utloa (authentication) ho tsela ea Zapier action](/img/admin/webhooks-list.png)
 
-### Ho Setsoha Action
+### Ho Setsoha Action {#how-to-create-actions}
 
 Ke tla u reka hore o setse ho action ya Zapier.
 

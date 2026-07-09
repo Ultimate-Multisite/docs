@@ -3,15 +3,15 @@ title: 'Palajaran 5: Ngarancang Rencana Anjeun'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Palajaran 5: Ngararancang Rencana Anjeun
+# Palajaran 5: Ngararancang Rencana Anjeun {#lesson-5-designing-your-plans}
 
 Tingkat rencana anjeun lain ngan saukur tingkat harga -- éta téh gambaran kumaha palanggan dina niche anjeun sabenerna beroperasi. Dina palajaran ieu anjeun bakal ngarancang tingkat produk anu saluyu jeung kabutuhan nyata usaha kabugaran dina rupa-rupa tahap.
 
-## Dimana Urang Eureun Saméméhna
+## Dimana Urang Eureun Saméméhna {#where-we-left-off}
 
 FitSite geus boga tilu témplat siap (Studio Essential, Gym Pro, Fitness Chain). Ayeuna urang nyieun rencana anu nangtukeun naon anu bisa diaksés ku palanggan jeung sabaraha anu kudu dibayar.
 
-## Mikir Dumasar kana Segmen Palanggan
+## Mikir Dumasar kana Segmen Palanggan {#thinking-in-customer-segments}
 
 Kasalahan anu paling mindeng dilakukeun ku jalma nyaéta ngarancang rencana dumasar kana fitur téknis (panyimpenan, bandwidth, jumlah kaca). Palanggan niche anjeun henteu mikir ku istilah kitu. Nu boga gym mikir ngeunaan naon anu diperlukeun pikeun ngajalankeun usahana.
 
@@ -25,11 +25,11 @@ Pikeun studio kabugaran, aya tilu segmen alami:
 
 Rencana anjeun kudu dipetakeun kana segmen ieu, lain kana kumpulan fitur anu sakarepna.
 
-## Nyieun Rencana FitSite
+## Nyieun Rencana FitSite {#creating-the-fitsite-plans}
 
 Buka **Ultimate Multisite > Produk > Tambah Produk** pikeun unggal rencana.
 
-### Rencana 1: FitSite Starter -- $49/bulan
+### Rencana 1: FitSite Starter -- $49/bulan {#plan-1-fitsite-starter----49month}
 
 **Target**: Palatih solo jeung studio leutik
 
@@ -59,7 +59,7 @@ Buka **Ultimate Multisite > Produk > Tambah Produk** pikeun unggal rencana.
 - Téma anu anjeun pilih: Aktipkeun Paksa
 - Sadaya téma séjén: Disumputkeun
 
-### Rencana 2: FitSite Growth -- $99/bulan
+### Rencana 2: FitSite Growth -- $99/bulan {#plan-2-fitsite-growth----99month}
 
 **Target**: Gym hiji lokasi anu geus mapan
 
@@ -85,7 +85,7 @@ Buka **Ultimate Multisite > Produk > Tambah Produk** pikeun unggal rencana.
 - Grup rencana: FitSite Plans
 - Urutan produk: 2
 
-### Rencana 3: FitSite Pro -- $199/bulan
+### Rencana 3: FitSite Pro -- $199/bulan {#plan-3-fitsite-pro----199month}
 
 **Target**: Ranté kabugaran sababaraha lokasi
 
@@ -109,7 +109,7 @@ Buka **Ultimate Multisite > Produk > Tambah Produk** pikeun unggal rencana.
 - Grup rencana: FitSite Plans
 - Urutan produk: 3
 
-## Nyetél Grup Rencana
+## Nyetél Grup Rencana {#setting-up-the-plan-group}
 
 Grup rencana mastikeun palanggan ngan bisa ningkatkeun atawa nurunkeun rencana dina kulawarga rencana FitSite. Dina tab **Ningkatkeun & Nurunkeun Rencana** unggal rencana:
 
@@ -118,7 +118,7 @@ Grup rencana mastikeun palanggan ngan bisa ningkatkeun atawa nurunkeun rencana d
 
 Ieu nyieun jalur ningkatkeun rencana anu écés: Starter → Growth → Pro.
 
-## Nambahkeun Panawaran Tambahan dina Pamayaran
+## Nambahkeun Panawaran Tambahan dina Pamayaran {#adding-order-bumps}
 
 Panawaran tambahan dina pamayaran nyaéta produk tambihan anu ditawarkeun salila prosés mayar. Pikeun FitSite, pertimbangkeun:
 
@@ -128,7 +128,7 @@ Panawaran tambahan dina pamayaran nyaéta produk tambihan anu ditawarkeun salila
 
 Jieun ieu minangka produk jinis **Paket** dina Ultimate Multisite jeung pakaitkeun kana rencana anu relevan.
 
-## Kunaon Struktur Ieu Jalan
+## Kunaon Struktur Ieu Jalan {#why-this-structure-works}
 
 - **Starter** ngaleungitkeun halangan pikeun asup -- harga murah, tawaran basajan, ngajadikeun palatih gancang online
 - **Growth** nambahkeun fitur anu bener-bener dipénta ku gym -- booking, galeri, domain kustom
@@ -136,7 +136,7 @@ Jieun ieu minangka produk jinis **Paket** dina Ultimate Multisite jeung pakaitke
 - **Panawaran tambahan dina pamayaran** ngamungkinkeun palanggan ngaluyukeun tanpa nyusahkeun rencana inti
 - **Jalur ningkatkeun rencana anu écés** hartina palanggan tumuwuh babarengan jeung anjeun tibatan indit
 
-## Jaringan FitSite Nepi ka Ayeuna
+## Jaringan FitSite Nepi ka Ayeuna {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Naon anu Urang Wangun dina Palajaran Ieu
+## Naon anu Urang Wangun dina Palajaran Ieu {#what-we-built-this-lesson}
 
 - **Tilu tingkat rencana** anu dipetakeun kana segmen usaha kabugaran nyata
 - **Ngawatesan fitur** ngagunakeun kontrol tambihan jeung témplat Ultimate Multisite

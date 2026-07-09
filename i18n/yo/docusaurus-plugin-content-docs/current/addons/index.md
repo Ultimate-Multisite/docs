@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Àwọn Àfikún Ultimate Multisite
+# Àwọn Àfikún Ultimate Multisite {#ultimate-multisite-addons}
 
 Àwọn àfikún ń faagun Ultimate Multisite pẹ̀lú àwọn àfikún ẹ̀yà àti ìṣepọ̀. Ọ̀pọ̀lọpọ̀ àfikún ni wọ́n sanwó fún, a sì lè rà wọ́n láti [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Fífì sílẹ̀
+## Fífì sílẹ̀ {#installation}
 
 A lè fi àwọn àfikún sílẹ̀ ní ọ̀nà méjì:
 
 1. **Nípasẹ̀ Ojúewé Àfikún** -- Lọ sí ojúewé ìṣàkóso àfikún site rẹ nínú WordPress admin
 2. **Ìgbàsílẹ̀ Ọwọ́** -- Gbàsílẹ̀ láti [Account rẹ](https://ultimatemultisite.com/my-account/downloads/) kí o sì gbé e sókè nípasẹ̀ Àwọn àfikún > Fi Tuntun Kún
 
-## Àwọn Àfikún Tó Wà
+## Àwọn Àfikún Tó Wà {#available-addons}
 
 | Àfikún | Àpèjúwe |
 |-------|-------------|

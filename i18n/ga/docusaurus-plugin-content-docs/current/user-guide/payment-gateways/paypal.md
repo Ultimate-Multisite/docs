@@ -3,7 +3,7 @@ title: An t-aonacht PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Set Up an PayPal Gateway (v2)
+# Set Up an PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTE CRUCIAL: An tairf seo an Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Is é sin mar Stripe, is é PayPal go leataithe go léir ar cheangailte oileáin
 
 Is é sin ag iarraidh acu cabhrú le **account Business PayPal** chun an cruthú (API credential) a bhí ag teacht ar cheangailte seo.
 
-## Fáilte le PayPal ar do ngrúpa
+## Fáilte le PayPal ar do ngrúpa {#enabling-paypal-on-your-network}
 
 Leat a fáil le PayPal mar chéim fáilteacht ar fáil ar do ngrúpa, cur isteach i **Ultimate Multisite > Settings > Payments** agus cur an t-bóca seo ar fáil ar PayPal.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Aistriú le seomra fáilteacht a chur ar fáil
+## Aistriú le seomra fáilteacht a chur ar fáil {#using-the-guided-setup-wizard}
 
 Tá Ultimate Multisite 2.10.0 ag cur isteach seomra fáilteacht ar fáil do PayPal ag an tairf de chuid meánais oileánach. Tar éis go bhfuil tú ag fáil le PayPal, úsáid an seomra ar **Ultimate Multisite > Settings > Payments** chun a bheith ag éifeachtú le chéile agus chun a chur in iúl conas atá tú ag iarraidh a chomhcheangail an meánais agus chun a chur in iúl conas atá teachtar na cruthú a bhí ag teacht ar cheangailte seo ar fáil ar chuid a chur in iúl.
 
@@ -30,7 +30,7 @@ Tá an seomra ag cur iarracht ar dhá chuid aistriú:
 
 Má tá tú níl ag fheiceáil an option OAuth i ngachais an wizard, déan an fhluth inseán curteacha chuidreacha seo a dhéanamh. Tá an gateway ag eolais le curteacha PayPal Business API atá ar fáil mar chuid ngrúpaí Ultimate Multisite 2.x a bheith ar fáil.
 
-## Gníomhartha curteacha API PayPal a fháil
+## Gníomhartha curteacha API PayPal a fháil {#getting-the-paypal-api-credentials}
 
 Agairm go dtí an t-aonacht PayPal mar gateway deidh, leat ag iarraidh iadú an feidhmanna ar **Username** API PayPal, **Password** API PayPal agus **Signature** API PayPal.
 

@@ -4,19 +4,19 @@ title: ການກະທຳ - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# ການກະທຳ: wu_captcha_before_field
+# ການກະທຳ: wu_captcha_before_field {#action-wucaptchabeforefield}
 
 ເຮັດວຽກກ່ອນທີ່ຟິວ captcha ຈະຖືກສະແດງຜົນ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
 | $args | `array` | ອາກິວເມັນສຳລັບການສະແດງຜົນ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 1.2.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ຖືກກຳນົດໃນ [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L127) ທີ່ແຖວ 127

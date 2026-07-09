@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Stop bots. Bescherm omzet. Geen configuratiegedoe.**
 
@@ -15,7 +15,7 @@ Beheer je een multisite-netwerk met aangepaste domeinen? Dan ken je de pijn: Goo
 
 **Ultimate Multisite: Captcha verandert alles.**
 
-## Cap Captcha: zelfgehoste bescherming die gewoon werkt
+## Cap Captcha: zelfgehoste bescherming die gewoon werkt {#cap-captcha-self-hosted-protection-that-just-works}
 
 Onze nieuwe **Cap Captcha**-provider is een gamechanger voor multisite-netwerken:
 
@@ -25,7 +25,7 @@ Onze nieuwe **Cap Captcha**-provider is een gamechanger voor multisite-netwerken
 * **Onzichtbare proof-of-work** — Gebruikers lossen op de achtergrond een rekenpuzzel op. Geen brandkranen aanklikken, geen frustrerende afbeeldingsrasters.
 * **Lichtgewicht** — Slechts 20KB. Vertraagt je checkout niet.
 
-## WooCommerce-bescherming tegen card testing
+## WooCommerce-bescherming tegen card testing {#woocommerce-card-testing-protection}
 
 Card-testing-aanvallen kosten verkopers jaarlijks miljarden. Fraudeurs gebruiken bots om gestolen creditcards te valideren via je WooCommerce-checkout—jij betaalt de verwerkingskosten, zij krijgen geldige kaartnummers.
 
@@ -35,7 +35,7 @@ Card-testing-aanvallen kosten verkopers jaarlijks miljarden. Fraudeurs gebruiken
 * **Compatibel met PayPal Payments** — Werkt naadloos met WooCommerce PayPal Payments
 * **Realtime statistieken** — Zie precies hoeveel aanvallen je blokkeert
 
-## Nog steeds Google reCAPTCHA of hCaptcha nodig?
+## Nog steeds Google reCAPTCHA of hCaptcha nodig? {#still-need-google-recaptcha-or-hcaptcha}
 
 We hebben je gedekt. Volledige ondersteuning voor:
 
@@ -47,14 +47,14 @@ We hebben je gedekt. Volledige ondersteuning voor:
 
 Schakel op elk moment tussen providers via je netwerkinstellingen.
 
-## Gebouwd voor schaal
+## Gebouwd voor schaal {#built-for-scale}
 
 * Netwerkbrede instellingen met overschrijvingen per site
 * Statistiekendashboard om bescherming te monitoren
 * Aanpasbare beveiligingsniveaus (Snel, Gemiddeld, Maximaal)
 * Ontwikkelaarsvriendelijk met uitbreidbare providerarchitectuur
 
-## Installatie
+## Installatie {#installation}
 
 1. Upload `ultimate-multisite-captcha` naar je `/wp-content/plugins/`-directory
 2. Activeer de plugin netwerkbreed
@@ -64,37 +64,37 @@ Cap Captcha wordt automatisch geactiveerd—geen instellingen om te configureren
 
 **Optioneel:** Om in plaats daarvan Google reCAPTCHA of hCaptcha te gebruiken, ga je naar **Ultimate Multisite → Settings → Captcha** en selecteer je je gewenste provider.
 
-## Veelgestelde vragen
+## Veelgestelde vragen {#frequently-asked-questions}
 
-## Moet ik iets configureren?
+## Moet ik iets configureren? {#do-i-need-to-configure-anything}
 
 Nee! Cap Captcha wordt automatisch ingeschakeld wanneer je de addon activeert. Je hele netwerk is onmiddellijk beschermd—geen instellingen om te configureren, geen API keys om in te voeren.
 
-## Heb ik API keys nodig voor Cap Captcha?
+## Heb ik API keys nodig voor Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
 
 Nee. Cap Captcha is volledig zelfgehost. Geen externe accounts, geen domeinregistratie, geen configuratiehoofdpijn.
 
-## Vertraagt dit mijn checkout?
+## Vertraagt dit mijn checkout? {#will-this-slow-down-my-checkout}
 
 Cap Captcha is slechts 20KB en voert proof-of-work-uitdagingen op de achtergrond uit. Je klanten merken geen enkele vertraging.
 
-## Beschermt dit tegen card-testing-aanvallen?
+## Beschermt dit tegen card-testing-aanvallen? {#does-this-protect-against-card-testing-attacks}
 
 Ja! In tegenstelling tot traditionele captcha’s die alleen HTML-formulieren beschermen, haakt onze WooCommerce-integratie rechtstreeks in op de Store API om botaanvallen op API-niveau te blokkeren—waar de meeste card-testing-aanvallen plaatsvinden.
 
-## Kan ik verschillende captcha-providers op verschillende sites gebruiken?
+## Kan ik verschillende captcha-providers op verschillende sites gebruiken? {#can-i-use-different-captcha-providers-on-different-sites}
 
 De captcha-provider wordt netwerkbreed ingesteld, maar je kunt de moeilijkheidsinstellingen aanpassen op basis van je behoeften.
 
-## Is dit AVG-conform?
+## Is dit AVG-conform? {#is-this-gdpr-compliant}
 
 Cap Captcha is 100% zelfgehost zonder dat gegevens naar externe diensten worden verzonden. Bekijk voor Google reCAPTCHA en hCaptcha hun respectieve privacybeleidsregels.
 
-## Rate limiting
+## Rate limiting {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 introduceert een hard-stop rate limiter die je netwerk beschermt tegen brute-force- en card-testing-aanvallen.
 
-### Hoe het werkt
+### Hoe het werkt {#how-it-works}
 
 De rate limiter telt elk GET- en POST-verzoek op captcha-beschermde oppervlakken:
 
@@ -108,9 +108,9 @@ Wanneer een bezoeker de rate limit overschrijdt, reageert de plugin met:
 * **Retry-After**-header die aangeeft wanneer opnieuw te proberen
 * **Gerandomiseerde tarpit-slaapstand** (standaard 1–5 seconden, hard begrensd op 15 seconden) om aanvallers te vertragen
 
-### Configuratie
+### Configuratie {#configuration}
 
-#### Tarpit-timing
+#### Tarpit-timing {#tarpit-timing}
 
 Beheer de gerandomiseerde vertraging die wordt toegepast op rate-limited verzoeken:
 
@@ -119,9 +119,9 @@ Beheer de gerandomiseerde vertraging die wordt toegepast op rate-limited verzoek
 
 Deze instellingen zijn beschikbaar in **Ultimate Multisite → Settings → Captcha**.
 
-### Uitbreidbaarheid
+### Uitbreidbaarheid {#extensibility}
 
-#### IP-whitelistfilter
+#### IP-whitelistfilter {#ip-whitelist-filter}
 
 Stel vertrouwde IP-bereiken vrij van rate limiting:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Pre-block-actie
+#### Pre-block-actie {#pre-block-action}
 
 Voer aangepaste logica uit direct voordat een rate-limit-blokkade wordt verzonden:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Client-IP-detectie en vertrouwde proxies
+## Client-IP-detectie en vertrouwde proxies {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 introduceert spoofbestendige client-IP-detectie. De methode `Captcha_Core::get_client_ip()` is nu de enige bron van waarheid voor IP-toeschrijving van bezoekers in:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 introduceert spoofbestendige client-IP-detect
 * Captcha-provider `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Statistieken-IP-hashes
 
-### Vertrouwensmodel
+### Vertrouwensmodel {#trust-model}
 
 De plugin dwingt een strikte IP-vertrouwenshiërarchie af:
 
@@ -166,9 +166,9 @@ De plugin dwingt een strikte IP-vertrouwenshiërarchie af:
    - De directe peer in je door de beheerder geconfigureerde lijst met vertrouwde proxy’s staat
    - De header van rechts naar links wordt geparseerd, waarbij vertrouwde/Cloudflare-hops worden overgeslagen
 
-### Configuratie
+### Configuratie {#configuration-1}
 
-#### Vertrouwen voor Cloudflare-header
+#### Vertrouwen voor Cloudflare-header {#cloudflare-header-trust}
 
 Schakel vertrouwen in voor de `CF-Connecting-IP` header van Cloudflare:
 
@@ -178,7 +178,7 @@ Schakel vertrouwen in voor de `CF-Connecting-IP` header van Cloudflare:
   - CIDR-ranges worden wekelijks vernieuwd via wp-cron
   - De gebundelde fallback wordt gebruikt als het vernieuwen mislukt
 
-#### Configuratie van vertrouwde proxy
+#### Configuratie van vertrouwde proxy {#trusted-proxy-configuration}
 
 Definieer je front-line proxy’s en load-balancers:
 
@@ -194,14 +194,14 @@ Definieer je front-line proxy’s en load-balancers:
     198.51.100.50
     ```
 
-#### Automatische detectie bij eerste inschakeling
+#### Automatische detectie bij eerste inschakeling {#first-enable-auto-detection}
 
 Wanneer je de rate limiter voor het eerst inschakelt, detecteert de plugin je waarschijnlijke Cloudflare- en proxy-instelling en toont een adminmelding met één klik: "Gedetecteerde instellingen toepassen".
 
 * De plugin **overschrijft nooit** je opgeslagen waarden
 * Als later verkeer suggereert dat je configuratie niet langer overeenkomt met de werkelijkheid (bijv. Cloudflare heeft CIDR-ranges gewijzigd), toont een niet-wegklikbare mismatchmelding de aanbevolen update
 
-### Waarom dit belangrijk is
+### Waarom dit belangrijk is {#why-this-matters}
 
 Een strikt IP-vertrouwensmodel sluit een kritieke spoofingvector: directe verzoeken aan de origin-server met een vervalste `CF-Connecting-IP` header zouden voorheen zijn ingedeeld op basis van het vervalste IP in plaats van de echte peer. Dit is vooral belangrijk voor:
 

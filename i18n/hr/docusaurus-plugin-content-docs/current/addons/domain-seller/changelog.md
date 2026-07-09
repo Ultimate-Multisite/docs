@@ -3,7 +3,7 @@ title: Dnevnik promjena prodavača domena
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Dnevnik promjena prodavača domena
+# Dnevnik promjena prodavača domena {#domain-seller-changelog}
 
 Verzija 1.3.0 - Objavljeno 2026-06-02
 - Novo: Dodano upozorenje u administraciji mreže kada saldo HostAfrica preprodavača postane prenizak
@@ -134,20 +134,20 @@ Verzija 1.0.0 - Objavljeno 2025-09-28
 * **Ispravljeno:** Sav zastarjeli v1 kod ažuriran na v2 standarde
 * **Uklonjeno:** Zastarjela v1 kompatibilnost (prijelomna promjena)
 
-### Prethodne verzije (v1 Legacy)
+### Prethodne verzije (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Verzija 0.0.3 - 20/08/2019
+### Verzija 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Ispravljeno: Nekompatibilnost s Groundhogg CRM
 * Napomena: Ovo je bilo posljednje izdanje kompatibilno s v1
 
-### Verzija 0.0.2 - 07/12/2018
+### Verzija 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Ispravljeno: Uklonjeno polje License Key
 * Ispravljeno: Kartice plana nedostaju kada je plugin značajke aktivan
 * Poboljšano: Dodan je gumb za preskakanje na registracijskom polju
 
-### Verzija 0.0.1 - Početno izdanje
+### Verzija 0.0.1 - Početno izdanje {#version-001---initial-release}
 
 * Osnovna OpenSRS integracija za WP Ultimo v1
 * Jednostavno pretraživanje i registracija domena

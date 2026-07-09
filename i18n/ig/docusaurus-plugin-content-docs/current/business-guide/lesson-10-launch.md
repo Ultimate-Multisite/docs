@@ -3,19 +3,19 @@ title: 'Ihe ọmụmụ 10: Ụbọchị Mwepụta'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Ihe Ọmụmụ 10: Ụbọchị Mwepụta
+# Ihe Ọmụmụ 10: Ụbọchị Mwepụta {#lesson-10-launch-day}
 
 Ewuchala ihe niile. Tupu i mepee ọnụ ụzọ, ihe ọmụmụ a na-agafe ndepụta nyocha tupu mwepụta iji hụ na ọ dịghị ihe mebiri, furu efu, ma ọ bụ na-eme ihere.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 FitSite nwere ndebiri, atụmatụ, usoro ịkwụ ụgwọ, akara njirimara, ntinye ndị ọhụrụ, na ọnụahịa ahazichara niile. Ugbu a anyị na-enyocha na ihe niile na-arụ ọrụ ma mee ka ọ dị ndụ.
 
-## Ndepụta Nyocha Tupu Mwepụta
+## Ndepụta Nyocha Tupu Mwepụta {#pre-launch-checklist}
 
 Gafee ihe ọ bụla. Awụpụla nke ọ bụla.
 
-### Akụrụngwa Platform
+### Akụrụngwa Platform {#platform-infrastructure}
 
 - [ ] Hosting kwụsie ike ma na-arụ ọrụ nke ọma mgbe ibu dị elu
 - [ ] Wildcard SSL na-arụ ọrụ ma subdomain niile na-eje ozi site na HTTPS
@@ -23,7 +23,7 @@ Gafee ihe ọ bụla. Awụpụla nke ọ bụla.
 - [ ] Ahaziela ndabere ma nwalee ha (weghachite ma ọ dịkarịa ala otu iji nyochaa)
 - [ ] Nlekota dị -- ị ga-ama ma ọ bụrụ na platform ada
 
-### Ndebiri
+### Ndebiri {#templates}
 
 - [ ] Ndebiri atọ niile na-ebudata nke ọma na saịtị ọhụrụ
 - [ ] Ọdịnaya placeholder bara uru ma enweghị njehie mkpụrụokwu
@@ -32,7 +32,7 @@ Gafee ihe ọ bụla. Awụpụla nke ọ bụla.
 - [ ] Ọsọ ibudata ibe dị mma (nwalee ya na ngwa dị ka GTmetrix ma ọ bụ PageSpeed Insights)
 - [ ] Enweghị njikọ mebiri emebi ma ọ bụ akụ furu efu na ndebiri ọ bụla
 
-### Atụmatụ na Ngwaahịa
+### Atụmatụ na Ngwaahịa {#plans-and-products}
 
 - [ ] Atụmatụ atọ niile na-arụ ọrụ ma na-apụta ìhè
 - [ ] Nkọwa atụmatụ ziri ezi ma kwekọọ na niche
@@ -42,7 +42,7 @@ Gafee ihe ọ bụla. Awụpụla nke ọ bụla.
 - [ ] Mgbakwunye iwu pụtara nke ọma n'oge usoro ịkwụ ụgwọ
 - [ ] Mmachi ngwa mgbakwunye na isiokwu na-arụ ọrụ nke ọma dịka atụmatụ si dị
 
-### Usoro Ịkwụ Ụgwọ
+### Usoro Ịkwụ Ụgwọ {#checkout-flow}
 
 - [ ] Mezue ndebanye nnwale zuru ezu na atụmatụ ọ bụla (jiri ọnọdụ ịkwụ ụgwọ nnwale)
 - [ ] Nhọrọ ndebiri na-egosi ndebiri ziri ezi dịka atụmatụ si dị
@@ -52,7 +52,7 @@ Gafee ihe ọ bụla. Awụpụla nke ọ bụla.
 - [ ] Onye ahịa nwere ike ịbanye na saịtị ọhụrụ ya ozugbo
 - [ ] Koodu mbelata na-arụ ọrụ nke ọma
 
-### Akara Njirimara
+### Akara Njirimara {#branding}
 
 - [ ] Ibe nbanye na-egosi akara njirimara FitSite
 - [ ] Admin dashboard na-egosi akara njirimara FitSite
@@ -60,7 +60,7 @@ Gafee ihe ọ bụla. Awụpụla nke ọ bụla.
 - [ ] Invoices na-egosi nke ọma na nkọwa azụmahịa gị
 - [ ] Saịtị ahịa dị ndụ ma na-ejikọta na fọm usoro ịkwụ ụgwọ
 
-### Ntinye Ndị Ọhụrụ
+### Ntinye Ndị Ọhụrụ {#onboarding}
 
 - [ ] Widget Quick Start na-apụta na Dashboard ndị ahịa ọhụrụ
 - [ ] Njikọ Quick Start niile na-eduga na ibe ziri ezi
@@ -68,7 +68,7 @@ Gafee ihe ọ bụla. Awụpụla nke ọ bụla.
 - [ ] E bipụtala edemede knowledge base ma ha dịrị mfe iru
 - [ ] Ibe Account na-egosi ozi atụmatụ ziri ezi na nhọrọ upgrade
 
-### Iwu na Azụmahịa
+### Iwu na Azụmahịa {#legal-and-business}
 
 - [ ] Ebipụtala usoro ọrụ ma jikọọ ha site na usoro ịkwụ ụgwọ
 - [ ] Ebipụtala iwu nzuzo ma ọ dịrị mfe iru
@@ -77,11 +77,11 @@ Gafee ihe ọ bụla. Awụpụla nke ọ bụla.
 - [ ] Payment gateway dị na ọnọdụ live (ọ bụghị ọnọdụ nnwale)
 - [ ] Nhazi ụtụ isi ziri ezi maka mpaghara iwu gị
 
-## Mwepụta Dị Jụụ megide Mwepụta Ike
+## Mwepụta Dị Jụụ megide Mwepụta Ike {#soft-launch-vs-hard-launch}
 
 Tụlee mwepụta n’ọkwa abụọ:
 
-### Ọkwa 1: Mwepụta Dị Jụụ
+### Ọkwa 1: Mwepụta Dị Jụụ {#phase-1-soft-launch}
 
 Kpọọ ndị nwe studio ahụike 5-10 ka ha debanye aha tupu mwepụta ọha. Ndị a bụ ndị ahịa beta gị. Nye ha nnukwu mbelata (50% mbelata ruo ndụ, ma ọ bụ ọnwa 3 n’efu) n’ọnọdụ ha ga-enye:
 
@@ -91,7 +91,7 @@ Kpọọ ndị nwe studio ahụike 5-10 ka ha debanye aha tupu mwepụta ọha. 
 
 Nke a na-enye gị nzaghachi ndị ahịa n’eziokwu na saịtị dị ndụ iji gosi tupu i mepee ya nye ọha.
 
-### Ọkwa 2: Mwepụta Ọha
+### Ọkwa 2: Mwepụta Ọha {#phase-2-public-launch}
 
 Ozugbo etinyere nzaghachi mwepụta dị jụụ:
 
@@ -100,7 +100,7 @@ Ozugbo etinyere nzaghachi mwepụta dị jụụ:
 - Malite ịchọta ndị ahịa (Ihe Ọmụmụ 11)
 - Kwusaa ya na ọwa ụlọ ọrụ ahụike ndị metụtara ya
 
-## Omume Ụbọchị Mwepụta
+## Omume Ụbọchị Mwepụta {#launch-day-actions}
 
 N’ụbọchị ị na-emepe nye ọha:
 
@@ -110,7 +110,7 @@ N’ụbọchị ị na-emepe nye ọha:
 4. **Dịrị njikere** -- ndị ahịa mbụ gị n’eziokwu nwere ike ịchọ enyemaka, na nzaghachi ngwa ngwa na-ewulite ntụkwasị obi
 5. **Mee emume obere oge** -- mgbe ahụ laghachi n’ọrụ
 
-## Ihe Nwere Ike Ịga Ọjọọ
+## Ihe Nwere Ike Ịga Ọjọọ {#what-can-go-wrong}
 
 Dịrị njikere maka:
 
@@ -120,7 +120,7 @@ Dịrị njikere maka:
 - **Ọrụ n’okpuru ibu**: Ọ bụrụ na ị nweta mmụba okporo ụzọ mberede, mara otu esi eme ka hosting gị gbasaa
 - **Mgbagwoju anya ndị ahịa**: Mee ka knowledge base na ọwa nkwado gị dị njikere
 
-## Network FitSite Ruo Ugbu A
+## Network FitSite Ruo Ugbu A {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Ihe Anyị Wuru n’Ihe Ọmụmụ A
+## Ihe Anyị Wuru n’Ihe Ọmụmụ A {#what-we-built-this-lesson}
 
 - **Ndepụta nyocha zuru ezu tupu mwepụta** nke na-ekpuchi akụrụngwa, ọdịnaya, ịkwụ ụgwọ, na iwu
 - **Atụmatụ mwepụta dị jụụ** iji nweta nzaghachi n’eziokwu tupu ịga n’ihu ọha

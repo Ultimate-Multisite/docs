@@ -3,7 +3,7 @@ title: Domen Satyjynyň üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller üýtgeşmeler žurnaly
+# Domain Seller üýtgeşmeler žurnaly {#domain-seller-changelog}
 
 Wersiýa 1.3.0 - 2026-06-02 senesinde çykaryldy
 - Täze: HostAfrica satyjysynyň balansy aşa peselende network-admin duýduryşy goşuldy
@@ -134,20 +134,20 @@ Wersiýa 1.0.0 - 2025-09-28 senesinde çykaryldy
 * **Düzedildi:** Ähli köne v1 kody v2 standartlaryna täzelendi
 * **Aýryldy:** Köne v1 laýyklygy (döwüji üýtgeşme)
 
-### Öňki wersiýalar (v1 Legacy)
+### Öňki wersiýalar (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Wersiýa 0.0.3 - 20/08/2019
+### Wersiýa 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Düzedildi: Groundhogg CRM bilen laýyk gelmezlik
 * Bellik: Bu v1 bilen laýyk gelýän iň soňky çykarylyşdy
 
-### Wersiýa 0.0.2 - 07/12/2018
+### Wersiýa 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Düzedildi: License Key meýdany aýryldy
 * Düzedildi: Feature plugin işjeň wagty plan tablary ýokdy
 * Kämilleşdirildi: Bellige alyş meýdanynda geçip gitmek düwmesi goşuldy
 
-### Wersiýa 0.0.1 - Ilkinji çykarylyş
+### Wersiýa 0.0.1 - Ilkinji çykarylyş {#version-001---initial-release}
 
 * WP Ultimo v1 üçin esasy OpenSRS integrasiýasy
 * Ýönekeý domen gözlegi we bellige alyş

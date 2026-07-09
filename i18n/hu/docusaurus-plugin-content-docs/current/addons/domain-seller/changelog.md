@@ -3,7 +3,7 @@ title: Doménértékesítő változásnaplója
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller változásnapló
+# Domain Seller változásnapló {#domain-seller-changelog}
 
 1.3.0 verzió - Kiadva: 2026-06-02
 - Új: Hálózati adminisztrátori figyelmeztetés hozzáadva, amikor a HostAfrica viszonteladói egyenleg túl alacsonyra csökken
@@ -134,20 +134,20 @@ _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 * **Javítva:** Minden elavult v1 kód frissítve v2 szabványokra
 * **Eltávolítva:** Régi v1 kompatibilitás (kompatibilitást megszakító változás)
 
-### Korábbi verziók (v1 örökölt)
+### Korábbi verziók (v1 örökölt) {#previous-versions-v1-legacy}
 
-### 0.0.3 verzió - 2019/08/20
+### 0.0.3 verzió - 2019/08/20 {#version-003---20082019}
 
 * Javítva: Inkompatibilitás a Groundhogg CRM-mel
 * Megjegyzés: Ez volt az utolsó v1-kompatibilis kiadás
 
-### 0.0.2 verzió - 2018/12/07
+### 0.0.2 verzió - 2018/12/07 {#version-002---07122018}
 
 * Javítva: Eltávolítva a License Key mező
 * Javítva: Hiányzó Plan fülek, amikor a funkció plugin aktív
 * Javítva: Kihagyás gomb hozzáadva a regisztrációs mezőnél
 
-### 0.0.1 verzió - Kezdeti kiadás
+### 0.0.1 verzió - Kezdeti kiadás {#version-001---initial-release}
 
 * Alap OpenSRS integráció a WP Ultimo v1-hez
 * Egyszerű domain-keresés és regisztráció

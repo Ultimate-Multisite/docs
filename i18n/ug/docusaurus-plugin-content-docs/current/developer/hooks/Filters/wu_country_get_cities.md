@@ -4,11 +4,11 @@ title: سۈزگۈچ - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 دۆلەت ئىچىدىكى بىر ئۆلكە ئۈچۈن شەھەرلەر تىزىملىكىنى قايتۇرىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | ئىسمى | تۈرى | چۈشەندۈرۈش |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | ئۆلكە ئۈچۈن ئىككى ھەرپلىك ISO كودى. |
 | $current_country | `\WP_Ultimo\Country\Country` | ھازىرقى سىنىپنىڭ instanceى. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 2.0.11
-### مەنبە
+### مەنبە {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) دا 146-قۇردا ئېنىقلانغان
 
 
-## قايتۇرىدۇ
+## قايتۇرىدۇ {#returns}
 سۈزۈلگەن ئۆلكىلەر تىزىملىكىنى.

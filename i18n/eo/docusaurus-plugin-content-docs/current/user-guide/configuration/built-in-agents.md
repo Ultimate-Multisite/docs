@@ -3,11 +3,11 @@ title: Enkonstruitaj Agentoj
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Enkonstruitaj agentoj
+# Enkonstruitaj agentoj {#built-in-agents}
 
 Gratis AI Agent v1.9.0 liveras kvin enkonstruitajn agentojn, ĉiu antaŭagordita kun fokusita aro de iloj, adaptita sistema instrukcio, kaj komencaj sugestoj kongruaj kun oftaj taskoj en tiu areo. Ŝanĝi inter agentoj ŝanĝas tion, kion la asistanto povas fari kaj kiel ĝi respondas — sen ajna agordo viaflanke. Superdav AI Agent v1.18.0 povas aldoni horar-konsciajn ilojn, rememorigaĵajn registrojn, aprobajn pordojn, kaj SMS-sciigojn al ĉi tiuj laborfluoj kiam la rilataj integriĝoj estas agorditaj.
 
-## Kio Estas Agento?
+## Kio Estas Agento? {#what-is-an-agent}
 
 Ĉiu agento estas nomita agorda profilo, kiu kombinas:
 
@@ -15,7 +15,7 @@ Gratis AI Agent v1.9.0 liveras kvin enkonstruitajn agentojn, ĉiu antaŭagordita
 - **Sistema instrukcio** — instrukcioj, kiuj difinas la tonon, prioritatojn, kaj limojn de la agento
 - **Sugestoj** — antaŭskribitaj petoj montrataj en la babila interfaco por helpi vin rapide komenci
 
-## Aliri la Elektilon de Agentoj
+## Aliri la Elektilon de Agentoj {#accessing-the-agent-picker}
 
 1. Malfermu la panelon **Gratis AI Agent** en la administra flankobreto de WordPress.
 2. Alklaku la **agentan piktogramon** supre maldekstre en la babila kaplinio (la piktogramo ŝanĝiĝas por reflekti la aktivan agenton).
@@ -24,9 +24,9 @@ Gratis AI Agent v1.9.0 liveras kvin enkonstruitajn agentojn, ĉiu antaŭagordita
 
 Vi ankaŭ povas ŝanĝi agentojn meze de konversacio — la sistema instrukcio de la nova agento ekvalidas de la sekva mesaĝo.
 
-## La Kvin Enkonstruitaj Agentoj
+## La Kvin Enkonstruitaj Agentoj {#the-five-built-in-agents}
 
-### Enhavoverkisto
+### Enhavoverkisto {#content-writer}
 
 **Fokuso:** Krei kaj redakti afiŝojn, paĝojn, kaj kontaktformularojn.
 
@@ -47,7 +47,7 @@ Vi ankaŭ povas ŝanĝi agentojn meze de konversacio — la sistema instrukcio d
 
 ---
 
-### Reteja Konstruisto
+### Reteja Konstruisto {#site-builder}
 
 **Fokuso:** Fina-al-fina reteja kreado el unu sola peto.
 
@@ -70,7 +70,7 @@ Vi ankaŭ povas ŝanĝi agentojn meze de konversacio — la sistema instrukcio d
 
 ---
 
-### Dezajna Studio
+### Dezajna Studio {#design-studio}
 
 **Fokuso:** Vida personigo — koloroj, tipografio, CSS, kaj blokaj ŝablonoj.
 
@@ -87,7 +87,7 @@ Vi ankaŭ povas ŝanĝi agentojn meze de konversacio — la sistema instrukcio d
 - *Prenu ekrankopion de la hejmpaĝo kaj diru al mi, kion vi plibonigus.*
 - *Kreu reuzeblan heroan blokan ŝablonon kun plenlarĝa fona bildo kaj centrigita titolo.*
 
-### Kromprograma Administranto
+### Kromprograma Administranto {#plugin-manager}
 
 **Fokuso:** Malkovri, instali, kaj administri WordPress-kromprogramojn.
 
@@ -105,7 +105,7 @@ Vi ankaŭ povas ŝanĝi agentojn meze de konversacio — la sistema instrukcio d
 
 ---
 
-### Subtena Asistanto
+### Subtena Asistanto {#support-assistant}
 
 **Fokuso:** Respondi demandojn pri reteja enhavo, agordoj, kaj WordPress-agordo.
 
@@ -124,7 +124,7 @@ Vi ankaŭ povas ŝanĝi agentojn meze de konversacio — la sistema instrukcio d
 
 ---
 
-## Superdav Aŭtomatigaj Integriĝoj
+## Superdav Aŭtomatigaj Integriĝoj {#superdav-automation-integrations}
 
 Kiam integriĝoj de Superdav AI Agent v1.18.0 estas agorditaj, enkonstruitaj agentoj povas partopreni en pli sekuraj aŭtomatigaj laborfluoj konsciaj pri horaro:
 
@@ -138,11 +138,11 @@ Rekomendita laborfluo: petu la agenton prepari la mesaĝon aŭ agon, reviziu la 
 
 ---
 
-## Agordigo de Agentoj
+## Agordigo de Agentoj {#customising-agents}
 
 Ĉiu enkonstruita agento povas esti etendita aŭ anstataŭigita per la filtro `gratis_ai_agent_agents`.
 
-### Aldoni propran sisteman inviton al ekzistanta agento
+### Aldoni propran sisteman inviton al ekzistanta agento {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Registri novan agenton
+### Registri novan agenton {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 La nova agento aperas en la Agento-Elektilo tuj post kiam la filtro ruliĝas.
 
-### Forigi enkonstruitan agenton
+### Forigi enkonstruitan agenton {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

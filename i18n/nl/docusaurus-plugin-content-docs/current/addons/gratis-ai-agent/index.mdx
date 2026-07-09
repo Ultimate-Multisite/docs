@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent is een autonoom WordPress AI-assistent die volledige WordPress-sites kan plannen, bouwen en beheren op basis van natuurlijke taalinstructies. Het biedt een gestructureerde set van **mogelijkheden** (abilities) — discrete, testbare acties die de agent kan oproepen — die alles bestrijken, van contentbeheer tot de aanpassing van het designsysteem. Versie 1.9.0 voegt contentcreatie-mogelijkheden, visuele paginanalyse via client-side screenshots, vijf ingebouwde agentprofielen en feature flags toe voor toegangscontrole en branding.
 
-## Belangrijkste functies
+## Belangrijkste functies {#key-features}
 
 - **Mogelijkheden systeem (Abilities system)** — een modulair, uitbreidbaar catalogus van acties die de agent op uw WordPress-installatie kan uitvoeren
 - **Contentbeheer** — creëer berichten en pagina's (inclusief het toewijzen van paginatemplates), creëer meerdere berichten in één keer, stel featured images in en bouw contactformulieren
@@ -28,21 +28,21 @@ Gratis AI Agent is een autonoom WordPress AI-assistent die volledige WordPress-s
 - **Site Builder Orchestration v2** — meerstaps sitebouwplannen met pluginontdekking, voortgangsregistratie en foutopsporing
 - **WP-CLI benchmark commando** — voer de agent capability benchmark suite vanuit de command line uit voor CI en modelevaluatie
 
-## Vereisten
+## Vereisten {#requirements}
 
 - WordPress 6.0 of hoger
 - PHP 8.1 of hoger
 - WordPress Multisite (netwerk-geactiveerd) of single-site installatie
 - Een actieve AI provider connector plugin (Anthropic, OpenAI of compatibel)
 
-## Installatie
+## Installatie {#installation}
 
 1. Upload de pluginbestanden naar `/wp-content/plugins/gratis-ai-agent`
 2. Activeer de plugin via het **Plugins** scherm in WordPress
 3. Ga naar **Gratis AI Agent → Settings** en verbind uw AI provider
 4. (Optioneel) Blader door de **Abilities Registry** om extra ability packs te installeren
 
-## Quick Start
+## Quick Start {#quick-start}
 
 Nadat u de plugin heeft geactiveerd en verbonden met een AI provider, opent u het **Gratis AI Agent** paneel in de WordPress admin sidebar. Typ een instructie in natuurlijke taal en de agent zal de vereiste stappen plannen en uitvoeren met behulp van zijn beschikbare mogelijkheden.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## Overzicht van Mogelijkheden (Abilities Overview)
+## Overzicht van Mogelijkheden (Abilities Overview) {#abilities-overview}
 
 Mogelijkheden zijn de atomaire acties die de agent kan uitvoeren. Elke mogelijkheid is een geregistreerde PHP-klasse die een schema (parameters en retourtypen) blootlegt dat de agent tijdens de runtime leest. Mogelijkheden zijn gegroepeerd in functionele gebieden:
 
@@ -79,7 +79,7 @@ Mogelijkheden zijn de atomaire acties die de agent kan uitvoeren. Elke mogelijkh
 
 Zie de [Abilities Reference](./abilities) voor volledige parameterdocumentatie en gebruiksexemples.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent levert een `wp gratis-ai-agent` commando-familie voor het uitvoeren van benchmarks en het beheren van mogelijkheden vanuit de command line. Zie de [WP-CLI Reference](./wp-cli) voor de volledige commando-lijst.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Configuratie
+## Configuratie {#configuration}
 
 Alle instellingen staan onder **Gratis AI Agent → Settings** in de WordPress admin:
 
@@ -106,7 +106,7 @@ Alle instellingen staan onder **Gratis AI Agent → Settings** in de WordPress a
 | **Ability Timeout** | Maximale seconden dat een individuele mogelijkheid kan draaien (standaard 30) |
 | **Debug Logging** | Log de oproepen van mogelijkheden en de redenering van de agent naar het WordPress debug log |
 
-## Options Management Veiligheidsblocklist
+## Options Management Veiligheidsblocklist {#options-management-safety-blocklist}
 
 De Options Management mogelijkheid bevat een ingebouwde blocklist die de agent ervan weerhoudt om gevoelige WordPress opties te lezen of te schrijven. De standaard blocklist dekt:
 
@@ -118,26 +118,26 @@ De Options Management mogelijkheid bevat een ingebouwde blocklist die de agent e
 
 Aanvullende vermeldingen kunnen worden toegevoegd via de `gratis_ai_agent_options_blocklist` filter.
 
-## Hooks en Filters
+## Hooks en Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — wordt afgevuurd nadat een mogelijkheid is geregistreerd, ontvangt de naam van de ability-klasse
 - `gratis_ai_agent_plan_started` — wordt afgevuurd wanneer een site builder plan begint met uitvoeren
 - `gratis_ai_agent_plan_completed` — wordt afgevuurd wanneer een plan succesvol is voltooid
 - `gratis_ai_agent_plan_failed` — wordt afgevuurd wanneer een plan een onherstelbare fout tegenkomt
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — wijzig de geregistreerde lijst met mogelijkheden voordat de agent deze laadt
 - `gratis_ai_agent_options_blocklist` — breid of verminder de optiesveiligheidsblocklist
 - `gratis_ai_agent_benchmark_questions` — voeg aangepaste benchmarkvragen toe aan de evaluatiesuite
 - `gratis_ai_agent_plan_plugins` — wijzig de pluginontdekkingslijst tijdens de siteplan-generatie
 
-## Ondersteuning
+## Ondersteuning {#support}
 
 Voor ondersteuning bezoeken wij [ultimatemultisite.com](https://ultimatemultisite.com) of openen een issue in het plugin repository.
 
-## Changelog
+## Changelog {#changelog}
 
 Zie de [Changelog](./changelog) voor de volledige versiegeschiedenis.

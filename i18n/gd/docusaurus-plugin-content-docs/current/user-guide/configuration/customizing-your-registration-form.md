@@ -3,13 +3,13 @@ title: A’ gnàthachadh an fhoirm clàraidh agad
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# A’ gnàthachadh an Fhoirm Chlàraidh agad
+# A’ gnàthachadh an Fhoirm Chlàraidh agad {#customizing-your-registration-form}
 
 Gus am bi coltas gun samhail air an lìonra agad an taca ris a h-uile SaaS eile a chaidh a thogail air àrd-ùrlar WordPress, leigidh Ultimate Multisite leat na duilleagan clàraidh is logaidh a-steach agad a ghnàthachadh leis an fheart **Checkout Forms** againn.
 
 Ged a tha iad nan dòigh fhurasta is shùbailte airson deuchainnean a dhèanamh le diofar dhòighean nuair a tha thu a’ feuchainn ri luchd-ceannach ùra a thionndadh, thathar gan cleachdadh sa mhòr-chuid gus foirmean clàraidh pearsanta a chruthachadh. Tha an artaigil seo ag amas air sealltainn dhut mar as urrainn dhut sin a dhèanamh.
 
-## Duilleagan logaidh a-steach agus clàraidh:
+## Duilleagan logaidh a-steach agus clàraidh: {#login-and-registration-pages}
 
 Nuair a stàlaichear Ultimate Multisite, cruthaichidh e gu fèin-obrachail duilleagan logaidh a-steach agus clàraidh gnàthaichte air a’ phrìomh làrach agad. Faodaidh tu na duilleagan bunaiteach seo atharrachadh uair sam bith le bhith a’ dol gu duilleag **Ultimate Multisite > Settings > Login & Registration** agad.
 
@@ -45,7 +45,7 @@ A-nis, chì sinn roghainnean eile a tha fhathast buntainneach don phròiseas log
 
 Agus sin a h-uile roghainn co-cheangailte ri logadh a-steach agus clàradh as urrainn dhut a ghnàthachadh! Na dìochuimhnich na roghainnean agad a shàbhaladh às dèidh dhut crìoch a chur air an deasachadh.
 
-## A’ cleachdadh iomadh foirm clàraidh:
+## A’ cleachdadh iomadh foirm clàraidh: {#using-multiple-registration-forms}
 
 Tha Ultimate Multisite 2.0 a’ tabhann deasaiche checkout form a leigeas leat uiread de dh’fhoirmean a chruthachadh ’s a tha thu ag iarraidh, le diofar raointean, toraidhean gan tabhann, msaa.
 
@@ -69,7 +69,7 @@ Air neo, faodaidh tu na foirmean a th’ agad mu thràth a dheasachadh no a dhù
 
 Ma thaghas tu aon cheum no ioma-cheum, bidh an checkout form air a lìonadh ro-làimh mu thràth leis na ceumannan bunaiteach a dh’fheumas e gus obrachadh. An uair sin, ma tha thu ag iarraidh, faodaidh tu ceumannan a bharrachd a chur ris.
 
-### A’ deasachadh Checkout Form:
+### A’ deasachadh Checkout Form: {#editing-a-checkout-form}
 
 Mar a dh’ainmich sinn roimhe, faodaidh tu checkout forms a chruthachadh airson diofar adhbharan. San eisimpleir seo obraichidh sinn air foirm clàraidh.
 
@@ -131,11 +131,11 @@ Gus shortcode na foirme agad fhaighinn, briog air **Cruthaich Shortcode** agus d
 
 _**Nòta:** Feumaidh tu an shortcode seo a chur ris an duilleag clàraidh agad gus an tèid an fhoirm pàighidh seo a chur rithe._
 
-## Ro-thaghadh bathar is teamplaidean tro pharamadairean URL:
+## Ro-thaghadh bathar is teamplaidean tro pharamadairean URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ma tha thu airson clàran prìsean gnàthaichte a chruthachadh airson do bhatharan agus an toradh no an teamplaid a thaghas an neach-ceannach agad bhon chlàr phrìsean agad no bhon duilleag teamplaidean agad a ro-thaghadh air an fhoirm pàighidh, faodaidh tu paramadairean URL a chleachdadh airson seo.
 
-### **Airson planaichean:**
+### **Airson planaichean:** {#for-plans}
 
 Rach gu **Ultimate Multisite > Bathar > Tagh plana**. Bu chòir dhut am putan **Briog gus Ceangal Co-roinnte a Lethbhreacadh** fhaicinn aig mullach na duilleige. Seo an ceangal as urrainn dhut a chleachdadh gus am plana sònraichte seo a ro-thaghadh air an fhoirm pàighidh agad.
 
@@ -143,7 +143,7 @@ Rach gu **Ultimate Multisite > Bathar > Tagh plana**. Bu chòir dhut am putan **
 
 Thoir an aire nach eil an ceangal co-roinnte seo dligheach ach airson **Planaichean**. Chan urrainn dhut ceanglaichean co-roinnte a chleachdadh airson pacaidean no seirbheisean.
 
-### Airson teamplaidean:
+### Airson teamplaidean: {#for-templates}
 
 Ma tha thu airson teamplaidean làraich a ro-thaghadh air an fhoirm pàighidh agad, faodaidh tu am paramadair a chleachdadh: **?template_id=X** air URL na duilleige clàraidh agad. Feumar an "X" a chur an àite le **àireamh ID teamplaid làraich**. Gus an àireamh seo fhaighinn, rach gu **Ultimate Multisite > Làraichean**.
 

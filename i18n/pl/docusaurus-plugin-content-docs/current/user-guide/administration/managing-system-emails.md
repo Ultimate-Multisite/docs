@@ -3,11 +3,11 @@ title: Zarządzanie e-mailami systemowymi
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Zarządzanie emailami systemowymi
+# Zarządzanie emailami systemowymi {#managing-system-emails}
 
 Ultimate Multisite wysyła różne emaile systemowe dla zdarzeń takich jak potwierdzenia rejestracji, potwierdzenia płatności i zmiany membership. Możesz dostosować te szablony emaili, aby pasowały do Twojej marki.
 
-## Przeglądanie emaili systemowych
+## Przeglądanie emaili systemowych {#viewing-system-emails}
 
 Przejdź do **Ultimate Multisite → Settings** i kliknij kartę **Emails**, aby zobaczyć ustawienia związane z emailami.
 
@@ -21,7 +21,7 @@ Możesz także edytować poszczególne szablony emaili za pomocą edytora emaili
 
 ![Edytor emaili systemowych](/img/admin/system-email-editor.png)
 
-## Importowanie nowych szablonów emaili
+## Importowanie nowych szablonów emaili {#importing-new-email-templates}
 
 Nowe wersje Ultimate Multisite i dodatki mogą rejestrować nowe szablony emaili. Aby zapobiec konfliktom, nowe szablony nie są dodawane automatycznie — musisz zaimportować je ręcznie.
 
@@ -32,7 +32,7 @@ Aby zaimportować nowe szablony emaili:
 3. Włącz opcję **Import Emails**, aby zobaczyć dostępne szablony
 4. Wybierz szablony, które chcesz zaimportować, i potwierdź
 
-## Resetowanie szablonów emaili
+## Resetowanie szablonów emaili {#resetting-email-templates}
 
 Jeśli dostosowałeś szablon emaila i chcesz przywrócić domyślną treść, masz dwie opcje:
 

@@ -3,11 +3,11 @@ title: Hooks ਸੰਦਰਭ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# ਹੁਕਸ ਹਵਾਲਾ
+# ਹੁਕਸ ਹਵਾਲਾ {#hooks-reference}
 
 Ultimate Multisite ਵਿੱਚ ਸਾਰੀਆਂ **59 ਕਾਰਵਾਈਆਂ** ਅਤੇ **118 ਫਿਲਟਰਾਂ** ਲਈ ਆਪਣੇ-ਆਪ ਬਣਾਇਆ ਗਿਆ ਦਸਤਾਵੇਜ਼।
 
-## ਕਾਰਵਾਈਆਂ
+## ਕਾਰਵਾਈਆਂ {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — ਪਰਮਾਣਿਕਤਾ ਰੀਡਾਇਰੈਕਟ ਤੋਂ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
 - [set_auth_cookie](./Actions/set_auth_cookie) — ਪਰਮਾਣਿਕਤਾ ਕੂਕੀ ਸੈੱਟ ਹੋਣ ਤੋਂ ਤੁਰੰਤ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
@@ -70,7 +70,7 @@ Ultimate Multisite ਵਿੱਚ ਸਾਰੀਆਂ **59 ਕਾਰਵਾਈਆਂ
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ਕਿਸੇ object ਨੂੰ database ਵਿੱਚ store ਕਰਨ ਤੋਂ ਬਾਅਦ ਚਲਦਾ ਹੈ।
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin developers ਨੂੰ unlocking process ਵਿੱਚ actions ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ਪਰਮਾਣਿਕਤਾ cookie ਦੀ ਮਿਆਦ ਸਮਾਪਤੀ ਅਵਧੀ ਦੀ ਮਿਆਦ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ਪਰਮਾਣਿਕਤਾ redirect scheme ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।

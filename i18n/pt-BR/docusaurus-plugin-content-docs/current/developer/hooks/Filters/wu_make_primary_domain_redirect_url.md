@@ -10,7 +10,7 @@ Filters the redirect URL after making a domain primary.
 
 Allows developers to customize where users are redirected after successfully setting a domain as primary. By default, redirects to the current URL on the main site, or to the admin URL of the site being modified.
 
-## Parameters
+## Parameters {#filter-wumakeprimarydomainredirecturl}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Allows developers to customize where users are redirected after successfully set
 | $domain | `\Domain` | The domain object that was made primary. |
 | $old_primary_domains | `array` | Array of IDs of domains that were previously primary. |
 
-### Since
+### Since {#parameters}
 
 - 2.0.0
-### Source
+### Source {#since}
 
 Defined in [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) at line 639
 
 
-## Returns
+## Returns {#source}
 The filtered redirect URL.

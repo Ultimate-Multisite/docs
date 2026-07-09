@@ -3,9 +3,9 @@ title: Pencatat Perubahan Ultimate AI Connector untuk Endpoint Serasi
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Senarai Perubahan Ultimate AI Connector untuk Endpoint Serasi
+# Senarai Perubahan Ultimate AI Connector untuk Endpoint Serasi {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Versi 2.0.0 — Dikeluarkan pada 2026-04-24
+## Versi 2.0.0 — Dikeluarkan pada 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * **Baru:** Sokongan pelbagai penyedia — kini boleh mengkonfigurasi pelbagai endpoint AI dan merutekan permintaan dengan pemulihan automatik merentasi penyedia.
 * **Pembetulan:** Integrasi SDK pelbagai penyedia dengan ID penyedia, URL pendaftaran, dan skop penapis HTTP yang betul untuk setiap penyedia.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * **Pembetulan:** Menghapuskan permintaan HTTP yang menyekat yang pernah dipicu pada setiap muat halaman.
 * **Peningkatan:** Aliran kerja GitHub Actions dinaik taraf kepada Node.js 24.
 
-## Versi 1.0.0 — Pelancaran Awal
+## Versi 1.0.0 — Pelancaran Awal {#version-100--initial-release}

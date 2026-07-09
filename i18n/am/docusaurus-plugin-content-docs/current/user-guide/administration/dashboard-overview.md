@@ -3,11 +3,11 @@ title: ዳሽቦርድ አጠቃላይ እይታ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# የዳሽቦርድ አጠቃላይ እይታ
+# የዳሽቦርድ አጠቃላይ እይታ {#dashboard-overview}
 
 Ultimate Multisite በUltimate Multisite ሜኑ ስር የተለየ **Dashboard** አለው፣ እንዲሁም በNetwork Dashboard ላይ widgets ይጨምራል። ይህ ጽሑፍ በሁለቱም ቦታዎች ምን እንደሚመለከቱ ያብራራል።
 
-## የኔትወርክ ዳሽቦርድ
+## የኔትወርክ ዳሽቦርድ {#the-network-dashboard}
 
 Ultimate Multisite ጠቃሚ widgets በ**My Sites → Network Admin → Dashboard** በሚገኘው የኔትወርክ ደረጃ ዳሽቦርድ ውስጥ ያስገባል።
 
@@ -35,7 +35,7 @@ Ultimate Multisite ጠቃሚ widgets በ**My Sites → Network Admin → Dashboa
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## የUltimate Multisite ዳሽቦርድ
+## የUltimate Multisite ዳሽቦርድ {#the-ultimate-multisite-dashboard}
 
 የኔትወርክ ዳሽቦርድ ስለ ኔትወርኩ አጠቃላይ መረጃን ሲያቀርብ፣ የUltimate Multisite ዳሽቦርድ (በUltimate Multisite ሜኑ ከፍተኛ ደረጃ ላይ) ስለ አገልግሎቱ መረጃን ያቀርባል።
 

@@ -3,15 +3,15 @@ title: Menu Pangalayanan Tamu
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ménu Hospitality
+# Ménu Hospitality {#hospitality-menus}
 
 Fitur **Hospitality Menus** ngamungkinkeun Theme Builder ngahasilkeun jeung nyelapkeun kaca ménu kadaharan jeung inuman anu terstruktur langsung kana situs WordPress anjeun.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Theme Builder ayeuna bisa nyieun kaca ménu profésional jeung terstruktur pikeun usaha hospitality kaasup réstoran, kafe, bar, jeung jasa katering. Ménu ieu sapinuhna ngahiji kana desain situs anjeun sarta bisa gampang diropéa jeung dikokolakeun.
 
-## Jinis Hospitality anu Dirojong
+## Jinis Hospitality anu Dirojong {#supported-hospitality-types}
 
 - **Réstoran** — ménu tuang layanan lengkep
 - **Kafe** — ménu kopi jeung kadaharan hampang
@@ -21,9 +21,9 @@ Theme Builder ayeuna bisa nyieun kaca ménu profésional jeung terstruktur pikeu
 - **Food Truck** — ménu layanan kadaharan mobil
 - **Brewery jeung Winery** — ménu inuman kalayan pedaran
 
-## Struktur Ménu
+## Struktur Ménu {#menu-structure}
 
-### Kategori Ménu
+### Kategori Ménu {#menu-categories}
 
 Ménu diatur kana kategori:
 
@@ -34,7 +34,7 @@ Ménu diatur kana kategori:
 - **Inuman** — inuman (ngandung alkohol jeung henteu ngandung alkohol)
 - **Spésial** — spésial sapopoé atawa musiman
 
-### Format Item Ménu
+### Format Item Ménu {#menu-item-format}
 
 Unggal item ménu ngawengku:
 
@@ -49,7 +49,7 @@ Unggal item ménu ngawengku:
 }
 ```
 
-#### Widang Item
+#### Widang Item {#item-fields}
 
 | Widang | Tipe | Pedaran |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Unggal item ménu ngawengku:
 | `allergens` | array | Allergén umum (kacang, kerang, jsb.) |
 | `availability` | string | Iraha sayaga (sapopoé, musiman, jsb.) |
 
-## Nyieun Ménu Hospitality
+## Nyieun Ménu Hospitality {#creating-hospitality-menus}
 
-### Léngkah 1: Nyayagikeun Inpormasi Ménu
+### Léngkah 1: Nyayagikeun Inpormasi Ménu {#step-1-provide-menu-information}
 
 Béjaan Theme Builder ngeunaan ménu anjeun:
 
@@ -71,7 +71,7 @@ Jieun ménu réstoran pikeun réstoran Italia kuring kalayan appetizer,
 hidangan pasta, hidangan utama, jeung dessert. Lebetkeun harga jeung pedaran.
 ```
 
-### Léngkah 2: Theme Builder Ngahasilkeun Ménu
+### Léngkah 2: Theme Builder Ngahasilkeun Ménu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Mormat harga jeung pedaran
 5. Nambihan inpormasi dietary jeung allergén
 
-### Léngkah 3: Tinjau jeung Saluyukeun
+### Léngkah 3: Tinjau jeung Saluyukeun {#step-3-review-and-customize}
 
 Anjeun bisa:
 
@@ -91,9 +91,9 @@ Anjeun bisa:
 4. Ngapdet pedaran jeung info dietary
 5. Nyaluyukeun gaya jeung tata perenah
 
-## Pilihan Tampilan Ménu
+## Pilihan Tampilan Ménu {#menu-display-options}
 
-### Kaca Ménu Lengkep
+### Kaca Ménu Lengkep {#full-menu-page}
 
 Kaca husus anu nembongkeun ménu lengkep anjeun:
 
@@ -102,7 +102,7 @@ Kaca husus anu nembongkeun ménu lengkep anjeun:
 - Tata perenah ramah-citak
 - Desain responsif-mobile
 
-### Widget Ménu
+### Widget Ménu {#menu-widget}
 
 Selapkeun bagian ménu dina kaca séjén:
 
@@ -111,7 +111,7 @@ Selapkeun bagian ménu dina kaca séjén:
 - Ménu inuman dina kaca bar
 - Pintonan dessert dina footer
 
-### PDF Ménu
+### PDF Ménu {#menu-pdf}
 
 Hasilkeun ménu PDF anu bisa diundeur:
 
@@ -120,9 +120,9 @@ Hasilkeun ménu PDF anu bisa diundeur:
 - Ngawengku gambar jeung pedaran
 - Gampang dibagikeun jeung dikirim ku surel
 
-## Inpormasi Dietary jeung Allergén
+## Inpormasi Dietary jeung Allergén {#dietary-and-allergen-information}
 
-### Atribut Dietary
+### Atribut Dietary {#dietary-attributes}
 
 Tandaan item kalayan inpormasi dietary:
 
@@ -134,7 +134,7 @@ Tandaan item kalayan inpormasi dietary:
 - **Low-Carb** — karbohidrat dikurangan
 - **High-Protein** — beunghar protéin
 
-### Perhatosan Allergén
+### Perhatosan Allergén {#allergen-warnings}
 
 Lebetkeun allergén umum:
 
@@ -147,9 +147,9 @@ Lebetkeun allergén umum:
 - **Gluten** — gandum jeung séréal anu ngandung gluten
 - **Wijen** — siki jeung minyak wijen
 
-## Pangokolaan Ménu
+## Pangokolaan Ménu {#menu-management}
 
-### Ngapdet Harga
+### Ngapdet Harga {#updating-prices}
 
 Gampang ngapdet harga ménu:
 
@@ -159,7 +159,7 @@ Gampang ngapdet harga ménu:
 4. Simpen parobahan
 5. Parobahan langsung némbongan dina situs anjeun
 
-### Nambihan Item Musiman
+### Nambihan Item Musiman {#adding-seasonal-items}
 
 Jieun variasi ménu musiman:
 
@@ -169,7 +169,7 @@ Jieun variasi ménu musiman:
 4. Jadwalkeun tanggal kasadiaan
 5. Sacara otomatis tampilkeun salila usum
 
-### Ngatur Spésial
+### Ngatur Spésial {#managing-specials}
 
 Tampilkeun spésial sapopoé atawa mingguan:
 
@@ -179,7 +179,7 @@ Tampilkeun spésial sapopoé atawa mingguan:
 4. Apdet sapopoé atawa mingguan
 5. Arsipkeun spésial lami
 
-## Integrasi jeung Theme Builder
+## Integrasi jeung Theme Builder {#integration-with-theme-builder}
 
 Nalika ngagunakeun Theme Builder pikeun situs hospitality:
 
@@ -189,9 +189,9 @@ Nalika ngagunakeun Theme Builder pikeun situs hospitality:
 4. **Optimasi mobile** — ménu tampil éndah dina telepon
 5. **Optimasi SEO** — ménu ramah mesin paluruh
 
-## Prakték Pangsaéna
+## Prakték Pangsaéna {#best-practices}
 
-### Desain Ménu
+### Desain Ménu {#menu-design}
 
 - **Organisasi écés** — struktur kategori anu logis
 - **Pedaran gampang dibaca** — ngahudang napsu jeung informatif
@@ -199,7 +199,7 @@ Nalika ngagunakeun Theme Builder pikeun situs hospitality:
 - **Poto profésional** — gambar kadaharan kualitas luhur
 - **Rohangan kosong** — ulah ngajadikeun kaca teuing pinuh
 
-### Eusi
+### Eusi {#content}
 
 - **Pedaran akurat** — jelaskeun item sacara akurat
 - **Sorot spésial** — jadikeun spésial katingali menonjol
@@ -207,7 +207,7 @@ Nalika ngagunakeun Theme Builder pikeun situs hospitality:
 - **Apdet rutin** — jaga harga jeung item tetep panganyarna
 - **Paké basa ngahudang napsu** — jieun item kadéngé ngeunah
 
-### Aksesibilitas
+### Aksesibilitas {#accessibility}
 
 - **Font gampang dibaca** — paké typeface anu écés jeung kabaca
 - **Kontras cukup** — pastikeun téks kabaca
@@ -215,9 +215,9 @@ Nalika ngagunakeun Theme Builder pikeun situs hospitality:
 - **Perhatosan allergén** — tampilkeun allergén sacara nonjol
 - **Ramah-mobile** — uji dina sadaya alat
 
-## Conto
+## Conto {#examples}
 
-### Struktur Ménu Réstoran
+### Struktur Ménu Réstoran {#restaurant-menu-structure}
 
 ```
 Sangu Bubuka
@@ -241,7 +241,7 @@ Pangamis
 └── Pilihan Gelato
 ```
 
-### Struktur Menu Kafé
+### Struktur Menu Kafé {#cafe-menu-structure}
 
 ```
 Kopi
@@ -260,7 +260,7 @@ Sandwich
 └── Wrap Vegetarian
 ```
 
-## Fitur Patali
+## Fitur Patali {#related-features}
 
 - [Jieun Menu](../abilities/create-menu.md) — jieun menu navigasi
 - [Arah Desain](./design-direction.md) — saluyukeun desain situs anjeun

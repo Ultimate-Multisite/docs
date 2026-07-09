@@ -3,13 +3,13 @@ title: Installera Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installera Ultimate Multisite
+# Installera Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Den här guiden förutsätter att du redan har WordPress Multisite installerat och konfigurerat. Om du vill veta hur, kolla in den här guiden [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/) från WP Beginner.
 :::
 
-## Installera plugin-programmet
+## Installera plugin-programmet {#installing-the-plugin}
 
 Ultimate Multisite finns tillgängligt gratis på [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Efter aktivering kommer du automatiskt att omdirigeras till installationsguiden.
 
 ![Plugin-program aktiverat och omdirigerad till guiden](/img/installation/plugin-activated.png)
 
-## Installationsguide
+## Installationsguide {#setup-wizard}
 
 Installationsguiden guidar dig genom konfigurationen av Ultimate Multisite på cirka 10 minuter.
 
-### Välkommen
+### Välkommen {#welcome}
 
 Klicka på **Kom igång** för att börja.
 
 ![Välkomstskärm för installationsguiden](/img/installation/wizard-welcome.png)
 
-### Förhandskontroller före installation
+### Förhandskontroller före installation {#pre-install-checks}
 
 Det här steget kontrollerar din systeminformation och WordPress-installation för att säkerställa att den uppfyller Ultimate Multisites krav. Om allt ser bra ut, klicka på **Gå till nästa steg**.
 
@@ -51,31 +51,31 @@ Om Ultimate Multisite har installerats men **ännu inte aktiverats i nätverket*
 Genom att klicka på **Aktivera i nätverket** aktiveras plugin-programmet automatiskt i hela ditt multisite-nätverk. När det är aktiverat fortsätter guiden normalt till installationssteget. Du behöver inte lämna guiden för att åtgärda aktiveringstillståndet.
 :::
 
-### Installation
+### Installation {#installation}
 
 Installationsprogrammet skapar de nödvändiga databastabellerna och installerar filen `sunrise.php` som Ultimate Multisite behöver för att fungera. Klicka på **Installera** för att fortsätta.
 
 ![Installationssteget som visar databastabeller och sunrise.php](/img/installation/wizard-installation.png)
 
-### Ditt företag
+### Ditt företag {#your-company}
 
 Fyll i din företagsinformation och ange din standardvaluta. Den här informationen kommer att användas i hela din WaaS-plattform. Klicka på **Fortsätt** när du är klar.
 
 ![Konfigurationssteget för ditt företag](/img/installation/wizard-your-company.png)
 
-### Standardinnehåll
+### Standardinnehåll {#default-content}
 
 Detta steg låter dig installera fördefinierade mallar, produkter och annat startinnehåll. Det här är ett bra sätt att bekanta sig med Ultimate Multisites funktioner. Klicka på **Installera** för att lägga till standardinnehållet eller hoppa över det här steget om du föredrar att börja från grunden.
 
 ![Steg för installation av standardinnehåll](/img/installation/wizard-default-content.png)
 
-### Rekommenderade plugin-program
+### Rekommenderade plugin-program {#recommended-plugins}
 
 Installera valfritt rekommenderade tilläggsplugin-program. Klicka på **Installera** för att lägga till dem eller hoppa över för att fortsätta.
 
 ![Steg med rekommenderade plugin-program](/img/installation/wizard-recommended-plugins.png)
 
-### Klart!
+### Klart! {#ready}
 
 Det är allt! Din Ultimate Multisite-installation är klar. Du kan nu börja bygga din webbplats som en tjänst från **Nätverksadministratörens instrumentpanel**.
 

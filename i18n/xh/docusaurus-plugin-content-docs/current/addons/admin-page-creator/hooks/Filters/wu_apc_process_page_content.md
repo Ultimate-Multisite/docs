@@ -4,11 +4,11 @@ title: Isihluzi - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Vumela abaphuhlisi ukuba batshintshe umxholo wokugqibela
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Vumela abaphuhlisi ukuba batshintshe umxholo wokugqibela
 | $to_replace | `array` | Uluhlu oluqulethe izinto zokubamba indawo ezigciniweyo. |
 | $placeholder_count | `int` | Inani lezinto zokubamba indawo ezifunyenweyo. |
 
-### Ukusukela
+### Ukusukela {#since}
 
 - 1.4.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) kumgca 46
 
 
-## Ibuyisela
+## Ibuyisela {#returns}
 Umxholo emva kokulungiswa.

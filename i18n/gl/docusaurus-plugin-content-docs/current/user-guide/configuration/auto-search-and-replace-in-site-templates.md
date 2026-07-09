@@ -3,7 +3,7 @@ title: Búsqueda y reemplazo automático en plantillas de sitio
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search e Substitución en Plantillas del Sitio (v2)
+# Auto Search e Substitución en Plantillas del Sitio (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Este tutorial requiere WP UItimo versión 2.x.**_
 
@@ -17,7 +17,7 @@ O seu cliente poderá então preencher esse campo durante o registo.
 
 O Ultimate Multisite substituirá então os espaços reservados pelos dados fornecidos pelo cliente automaticamente.
 
-## **Resolvendo o problema da "plantilla cheia de espaços reservados"**
+## **Resolvendo o problema da "plantilla cheia de espaços reservados"** {#solving-the-template-full-of-placeholders-problem}
 
 Tudo isso é ótimo, mas encontramos um problema feio: agora as nossas plantillas de site - que os nossos clientes podem visitar - estão cheias de espaços reservados feios que não dizem muito.
 

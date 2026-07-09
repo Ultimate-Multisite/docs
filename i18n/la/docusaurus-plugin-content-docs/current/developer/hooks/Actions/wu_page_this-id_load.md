@@ -4,11 +4,11 @@ title: 'Actio - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Sinite cultoribus additamentorum uncos additos paginis nostris adiungere.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Sinite cultoribus additamentorum uncos additos paginis nostris adiungere.
 | $page_hook | `string` | Uncus paginae huius paginae. |
 | $admin_page | `self` | Instantia paginae. |
 
-### Ex
+### Ex {#since}
 
 - 1.8.2
 - 2.0.4: Tertium parametrum additum: instantia paginae.
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) linea 332

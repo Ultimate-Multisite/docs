@@ -4,11 +4,11 @@ title: Filtro - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filtro: wu_country_get_states
+# Filtro: wu_country_get_states {#filter-wucountrygetstates}
 
 Restituisce l'elenco degli stati per questo paese.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -16,14 +16,14 @@ Restituisce l'elenco degli stati per questo paese.
 | $country_code | `string` | Codice ISO a due lettere per il paese. |
 | $current_country | `\WP_Ultimo\Country\Country` | Istanza della classe corrente. |
 
-### Da
+### Da {#since}
 
 - 2.0.11
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) alla riga 86
 
-## Restituisce
+## Restituisce {#returns}
 
 L'elenco filtrato degli stati.

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Die Ultimate AI Connector for WebLLM bring AI-inferensie direk in die browser na jou WordPress multisite-netwerk. Dit laat groot taalmodelle (LLM's) heeltemal in die browser loop deur WebLLM en die MLC-enjin te gebruik — geen API-sleutels, geen eksterne oproepe, en geen data verlaat die gebruiker se toestel nie.
 
-## Sleutelkenmerke
+## Sleutelkenmerke {#key-features}
 
 - **Inferensie in die browser**: LLM loop plaaslik in die besoeker se browser via WebLLM/MLC — geen server-GPU vereis nie
 - **Vloeiende chat-widget**: Ingelogde gebruikers kan die browser-side LLM direk vanaf die front-end aanstuur
@@ -22,28 +22,28 @@ Die Ultimate AI Connector for WebLLM bring AI-inferensie direk in die browser na
 - **IndexedDB cache**: Modelgewig-downloads oorleef CDN-herroepinge wat die standaard Cache API-pad breek
 - **wpai filter-integrasie**: Haak in die `wpai_preferred_text_models` filter sodat die AI Experiments-funksie na die browser-enjin gerouteer word wanneer dit gekonfigureer is
 
-## Vereistes
+## Vereistes {#requirements}
 
 - WordPress 5.3 of hoër
 - PHP 7.4 of hoër
 - Ultimate Multisite plugin (aktief)
 - 'n Browser met WebGPU-ondersteuning (Chrome 113+, Edge 113+, of Firefox Nightly met WebGPU geaktiveer)
 
-## Instalering
+## Instalering {#installation}
 
 1. Laai die addon-lêre op na jou `/wp-content/plugins/` gids.
 2. Aktiveer die plugin deur die 'Plugins'-menu in WordPress.
 3. Navigeer na **Ultimate Multisite → AI Connector** om die addon te konfigureer.
 
-## Vloeiende Chat-Widget
+## Vloeiende Chat-Widget {#floating-chat-widget}
 
 Die vloeiende chat-widget laat enige ingelogde gebruiker toe om met die browser-side LLM te interaksieer direk vanaf jou front-end, sonder om die bladsy wat hulle op is, te verlaat.
 
-### Wat Dit Doen
+### Wat Dit Doen {#what-it-does}
 
 Wanneer dit geaktiveer word, verskyn 'n chat-ikoon in die hoek van elke front-end bladsy vir ingelogde gebruikers. Om op die ikoon te klik, maak 'n chat-paneel oop waar die gebruiker prompts kan tik en antwoorde kan ontvang van die plaaslik loop WebLLM-model. Aangesien die model heeltemal in die browser loop, is die antwoorde privaat en behels geen enige server-kant verwerking nie.
 
-### Admin-Balk Statusaanwysing
+### Admin-Balk Statusaanwysing {#admin-bar-status-indicator}
 
 Die WordPress admin-balk sluit 'n statusaanwysing in wat die huidige toestand van die WebLLM-enjin toon:
 
@@ -56,7 +56,7 @@ Die WordPress admin-balk sluit 'n statusaanwysing in wat die huidige toestand va
 
 Die aanwysing word in real-time opgedateer sonder dat 'n bladsyherlaai vereis word.
 
-### Hoe om die Widget te Aktiveer of Deaktiveer
+### Hoe om die Widget te Aktiveer of Deaktiveer {#how-to-enable-or-disable-the-widget}
 
 1. Gaan na **Ultimate Multisite → AI Connector** in die netwerk-admin.
 2. Vind die **Connector** paneel.
@@ -65,17 +65,17 @@ Die aanwysing word in real-time opgedateer sonder dat 'n bladsyherlaai vereis wo
 
 Die widget kan ook per-site geaktiveer of gedeaktiveer word vanaf die site se eie admin as die netwerkbeheerder daardie vermoë gegee het.
 
-## Widget-instellings
+## Widget-instellings {#widget-settings}
 
 Die Connector-paneel in **Ultimate Multisite → AI Connector** bevat die volgende instellings vir die vloeiende chat-widget:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 Skakel die chat-widget vir die hele netwerk aan of af. Wanneer dit gedeaktiveer word, verskyn die widget nie op enige front-end bladsy nie, ongeag die gebruiker se rol.
 
 **Standaard:** Af
 
-### Auto-Prompt Gedrag
+### Auto-Prompt Gedrag {#auto-prompt-behaviour}
 
 Beheer of die chat-widget outomaties 'n prompt stuur wanneer 'n gebruiker dit oopmaak.
 
@@ -93,7 +93,7 @@ Wanneer dit op **Custom prompt** gestel word, verskyn 'n bykomende teksveld waar
 
 **Standaard:** Af
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 Weergawe 1.1.0 stel 'n SharedWorker runtime bekend vir die MLC-enjin. Voorheen het elke browser-tab wat WebLLM gebruik, sy eie model-instans gelaai, wat gekonkurreer het om GPU-geheue en prestasieprobleme veroorsaak het op toestelle met beperkte VRAM.
 
@@ -105,29 +105,29 @@ Met die SharedWorker runtime funksioneer een tab as die enjin-werder. Alle ander
 
 Die SharedWorker is deurskynlik vir gebruikers. Die admin-balk statusaanwysing weerspieël altyd die toestand van die gedeelde enjin, nie die individuele tab nie.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Die addon installeer 'n `apiFetch` middleware wat WordPress REST API-versoeke onderskep wat die AI Client SDK-patroon pas. In plaas daarvan om 'n loopback HTTP-versoek na die bediener te maak, word hierdie versoeke direk na die plaaslike WebLLM-broker gerouteer wat in die SharedWorker loop.
 
 Dit beteken dat plugins en temas wat die standaard WordPress `apiFetch` API gebruik om AI-eindpunte aan te roep, outomaties sal baat by die browser-side model wanneer dit beskikbaar is, sonder dat enige kodeveranderinge benodig word.
 
-## Hooks en Filters
+## Hooks en Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — Registreer die WebLLM browser-enjin as 'n voorkeur teksmodel. Die addon haak outomaties in hierdie filter wanneer die enjin gekonfigureer en beskikbaar is.
 - `ultimate_webllm_widget_enabled` — Oorskry die widget-geaktiveerde status vir 'n spesifieke gebruiker of konteks. Gee `true` of `false` terug.
 - `ultimate_webllm_auto_prompt` — Modifiseer die outo-prompt teks voordat dit na die widget gestuur word. Ontvang die prompt-string en die huidige `WP_Post` objek.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Die chat-widget verskyn nie
+### Die chat-widget verskyn nie {#the-chat-widget-does-not-appear}
 
 - Bevestig dat die gebruiker ingelog is — die widget word slegs vir geauthentiseerde gebruikers getoon.
 - Kontroleer of **Enable floating chat widget** in die Connector-paneel opgeskakel is.
 - Verifieer dat die gebruiker se browser WebGPU ondersteun (kyk na Vereistes hierbo).
 
-### Die admin-balk aanwysing wys "Error"
+### Die admin-balk aanwysing wys "Error" {#the-admin-bar-indicator-shows-error}
 
 Maak die browser-ontwikkelaarskonsola oop (F12) en kyk na WebLLM-verwante foute. Algemene oorsake:
 
@@ -135,10 +135,10 @@ Maak die browser-ontwikkelaarskonsola oop (F12) en kyk na WebLLM-verwante foute.
 - Modelgewig-aflaai misluk — kyk na netwerkverbinding en probeer om die IndexedDB-cache in die browserontwikkelaarhulplewenare te skoon te maak (Application → IndexedDB).
 - 'n Browser-uitbreiding blokkeer die SharedWorker.
 
-### Modelgewigte laai elke keer af
+### Modelgewigte laai elke keer af {#model-weights-download-every-time}
 
 Die addon gebruik IndexedDB as die cache-backend om te verseker dat modelgewigte oorleef CDN-herroepinge. As gewigte by elke besoek herlaai word, kyk of IndexedDB nie deur 'n browser-privaatinstellings of uitbreiding skoongemaak word nie.
 
-## Changelog
+## Changelog {#changelog}
 
 Sien [Changelog](./changelog) vir die volledige weergawegeskiedenis.

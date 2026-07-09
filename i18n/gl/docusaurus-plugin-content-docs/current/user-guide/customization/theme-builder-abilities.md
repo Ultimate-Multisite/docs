@@ -3,18 +3,18 @@ title: Capacidades do Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacidades do Theme Builder: Scaffold e Activar Temas de Bloco
+# Capacidades do Theme Builder: Scaffold e Activar Temas de Bloco {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 O Superdav AI Agent v1.12.0 introduce duas capacidades potentes que te permitem gerar e implantar themes de bloco personalizados directamente a partir da interface de chat.
 
-## Visión Geral
+## Visión Geral {#overview}
 
 As capacidades **scaffold-block-theme** e **activate-theme** permitem aos agentes:
 - Gerar themes de bloco completos e prontos para produção com base nas tuas especificações
 - Ativar temas no teu site automaticamente sem intervenção manual
 - Criar identidades visuais coesas através de decisões de design guiadas
 
-## Scaffold Theme de Bloco
+## Scaffold Theme de Bloco {#scaffold-block-theme}
 
 A capacidade **scaffold-block-theme** gera um novo theme de bloco WordPress com uma estrutura completa, incluindo:
 
@@ -23,7 +23,7 @@ A capacidade **scaffold-block-theme** gera um novo theme de bloco WordPress com 
 - Estilos e variações de blocos personalizados
 - Metadados do tema e declarações de suporte
 
-### Como Invocar
+### Como Invocar {#how-to-invoke}
 
 Na tua conversa com o Superdav AI Agent, podes pedir a geração de temas:
 
@@ -38,7 +38,7 @@ O agente fará o seguinte:
 3. Criar todos os ficheiros necessários do theme
 4. Preparar o theme para a activación
 
-### Saída Esperada
+### Saída Esperada {#expected-output}
 
 Quando a capacidade se executa com sucesso, verás:
 
@@ -56,11 +56,11 @@ Exemplo de saída:
   Status: Ready to activate
 ```
 
-## Activar Tema
+## Activar Tema {#activate-theme}
 
 A capacidade **activate-theme** muda o seu sitio para un tema de bloco recién criado ou existente.
 
-### Como Invocarlo
+### Como Invocarlo {#how-to-invoke-1}
 
 Depois de criar (scaffold) un tema, podes activalo inmediatamente:
 
@@ -74,7 +74,7 @@ Ou activa cualquier tema existente:
 "Mudar ao tema Twentytwentyfour"
 ```
 
-### Resultado Esperado
+### Resultado Esperado {#expected-output-1}
 
 Quando a activación é moi moi:
 
@@ -92,7 +92,7 @@ Exemplo de resultado:
   Nota: Verifica a tua página inicial para confirmar o layout
 ```
 
-## Fluxo de Trabajo: Criar e Activar (Scaffold and Activate)
+## Fluxo de Trabajo: Criar e Activar (Scaffold and Activate) {#workflow-scaffold-and-activate}
 
 Un fluxo típico combina ambas as capacidades:
 
@@ -102,7 +102,7 @@ Un fluxo típico combina ambas as capacidades:
 4. **Activar**: "Activa o tema agora"
 5. **Verificar**: Visita o teu sitio para confirmar que o novo design está vivo
 
-## Tokens de Diseño y Personalización (Design Tokens and Customization)
+## Tokens de Diseño y Personalización (Design Tokens and Customization) {#design-tokens-and-customization}
 
 Os temas criados com scaffold utilizan os tokens de diseño do WordPress (via `theme.json`) para:
 
@@ -114,14 +114,14 @@ Os temas criados com scaffold utilizan os tokens de diseño do WordPress (via `t
 
 Estes tokens están centralizados en `theme.json`, facilitando a súa adaptación de todo o teu sistema de diseño a partir dun único ficheiro.
 
-## Limitaciones y Notas
+## Limitaciones y Notas {#limitations-and-notes}
 
 - Os temas son escoitados en `/wp-content/themes/` e deben seguir as convencións de nomeación do WordPress
 - A activación requiere os permisos adecuados no seu sitio WordPress
 - O código PHP personalizado nos temas é mínimo; use plugins para funcionalidades complexas
 - Os temas de bloco funcionan mellor con WordPress 5.9 e posteriores
 
-## Solución de problemas (Troubleshooting)
+## Solución de problemas (Troubleshooting) {#troubleshooting}
 
 **O tema non aparece después do escoito**
 - Verifique que o directorio do tema existe e ten os permisos correctos
@@ -138,7 +138,7 @@ Estes tokens están centralizados en `theme.json`, facilitando a súa adaptació
 - Limpe calquera plugin de cache
 - Verifique que a súa versión de WordPress suporta os tokens que está utilizando
 
-## Próximos pasos (Next Steps)
+## Próximos pasos (Next Steps) {#next-steps}
 
 Después de activar o seu tema, poderá:
 - Usar a **habilidade Estética do Sistema de Diseño** para refinar tipografía, colores e espaçamento

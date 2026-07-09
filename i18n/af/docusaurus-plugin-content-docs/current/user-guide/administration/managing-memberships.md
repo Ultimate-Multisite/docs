@@ -3,7 +3,7 @@ title: Bestuur van Lidmaatskap
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Bestuur van Lidmaatskapte
+# Bestuur van Lidmaatskapte {#managing-memberships}
 
 In Ultimate Multisite kan jy lidmaatskappe bestuur en toegang tot al die abonnements op jou netwerk kry. Jy kan abonnementsbesonderhede hersien en redigeer, soos planne en produkte, die aantal webwerwe, faktuurbedrag en frekwensie, betalingsgeskiedenis en tydstempels.
 

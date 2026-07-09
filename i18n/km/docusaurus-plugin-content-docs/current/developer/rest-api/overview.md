@@ -3,28 +3,28 @@ title: ទិដ្ឋភាពទូទៅនៃ REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# ឯកសារយោង REST API
+# ឯកសារយោង REST API {#rest-api-reference}
 
-## ការកំណត់រចនាសម្ព័ន្ធមូលដ្ឋាន
+## ការកំណត់រចនាសម្ព័ន្ធមូលដ្ឋាន {#base-configuration}
 
 **URL មូលដ្ឋាន:** `{site_url}/wp-json/wu/v2/`
 **ការផ្ទៀងផ្ទាត់អត្តសញ្ញាណ:** API Key និង Secret (HTTP Basic Auth ឬ URL Parameters)
 
-## ការផ្ទៀងផ្ទាត់អត្តសញ្ញាណ
+## ការផ្ទៀងផ្ទាត់អត្តសញ្ញាណ {#authentication}
 
-### បើក API
+### បើក API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### ទទួលព័ត៌មានសម្គាល់ API
+### ទទួលព័ត៌មានសម្គាល់ API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### វិធីសាស្ត្រផ្ទៀងផ្ទាត់អត្តសញ្ញាណ
+### វិធីសាស្ត្រផ្ទៀងផ្ទាត់អត្តសញ្ញាណ {#authentication-methods}
 
 **HTTP Basic Auth (បានណែនាំ):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoint ស្នូល
+## Endpoint ស្នូល {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **ផ្លូវមូលដ្ឋាន:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **ផ្លូវមូលដ្ឋាន:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **ផ្លូវមូលដ្ឋាន:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **ផ្លូវមូលដ្ឋាន:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **ផ្លូវមូលដ្ឋាន:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **ផ្លូវមូលដ្ឋាន:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint ចុះឈ្មោះ
+## Endpoint ចុះឈ្មោះ {#registration-endpoint}
 
 Endpoint `/register` ផ្តល់លំហូរ checkout/ចុះឈ្មោះពេញលេញ៖
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint សម្រាប់ Tenant ឯករាជ្យ
+## Endpoint សម្រាប់ Tenant ឯករាជ្យ {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 បន្ថែមការគាំទ្រ REST សម្រាប់ tenant ឯករាជ្យ ដល់ការរួមបញ្ចូលដែលផ្តល់ រៀបចំពិនិត្យ ឬផ្ទៀងផ្ទាត់ tenant ដាច់ដោយឡែក។
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 ចាត់ទុក `ready: false` ជាឧបសគ្គមុនបើកដំណើរការ។ ពិនិត្យព័ត៌មានលម្អិតនៃការផ្ទៀងផ្ទាត់ កែបញ្ហា database host binding, queue, user provisioning ឬ routing រួចសាកល្បងផ្ទៀងផ្ទាត់ម្តងទៀត។
 
-## ការឆ្លើយតបកំហុស
+## ការឆ្លើយតបកំហុស {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## ការបែងចែកទំព័រ និងការច្រោះ
+## ការបែងចែកទំព័រ និងការច្រោះ {#pagination-and-filtering}
 
 **Query Parameters:**
 ```http

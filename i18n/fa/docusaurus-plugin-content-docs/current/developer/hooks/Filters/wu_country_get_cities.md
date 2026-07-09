@@ -4,11 +4,11 @@ title: فیلتر - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# فیلتر: wu_country_get_cities
+# فیلتر: wu_country_get_cities {#filter-wucountrygetcities}
 
 لیست شهرهای یک استان در یک کشور را برمی‌گرداند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | کد ISO دو حرفی برای استان. |
 | $current_country | `\WP_Ultimo\Country\Country` | نمونه‌ای از کلاس فعلی. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.11
-### منبع
+### منبع {#source}
 
 در [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) در خط ۱۴۶ تعریف شده است.
 
 
-## مقدار بازگشتی
+## مقدار بازگشتی {#returns}
 لیست فیلتر شده استان‌ها.

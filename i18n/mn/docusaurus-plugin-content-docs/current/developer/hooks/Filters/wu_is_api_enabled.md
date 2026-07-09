@@ -4,16 +4,16 @@ title: Шүүлтүүр - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Шүүлтүүр: wu_is_api_enabled
+# Шүүлтүүр: wu_is_api_enabled {#filter-wuisapienabled}
 
 Plugin хөгжүүлэгчдэд API-д зориулан тодорхой төлөвийг албадан тохируулах боломж олгоно.
 
-### Хойш
+### Хойш {#since}
 
 - 1.7.4
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/class-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-api.php#L435)-д 435-р мөрөнд тодорхойлсон
 
 
-## Буцаана
+## Буцаана {#returns}

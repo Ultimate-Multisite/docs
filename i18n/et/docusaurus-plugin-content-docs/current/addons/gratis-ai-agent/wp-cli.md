@@ -3,11 +3,11 @@ title: WP-CLI viide
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI viide
+# WP-CLI viide {#wp-cli-reference}
 
 Gratis AI Agent sisaldab käsuperekonda `wp gratis-ai-agent` agendi jõudluse võrdlustestimiseks, võimekuste haldamiseks ja agendi oleku pärimiseks käsurealt. Kõik käsud nõuavad WP-CLI versiooni 2.0 või uuemat.
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 WP-CLI käsud registreeritakse automaatselt, kui plugin on aktiivne. Kontrolli käsuga:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Käivitab Agent Capabilities võrdlustestide komplekti — kogumi keerukaid, mitmesammulisi viipasid, mis kasutavad kogu võimekuste ulatust. Kasuta seda mudeli jõudluse hindamiseks, AI pakkujate võrdlemiseks või võimekuste pakkide valideerimiseks enne tootmiskeskkonda juurutamist.
 
-### Ülevaade
+### Ülevaade {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Valikud
+### Valikud {#options}
 
 | Valik | Kirjeldus |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Väljundvorming: `table` (vaikimisi), `json`, `csv` |
 | `--save` | Salvesta võrdlustesti tulemused andmebaasi ajalooliseks võrdluseks |
 
-### Näited
+### Näited {#examples}
 
 Käivita kogu võrdlustestide komplekt praeguse pakkuja ja mudeliga:
 
@@ -57,7 +57,7 @@ Käivita konkreetse mudeli vastu ja salvesta tulemused:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Väljund
+### Väljund {#output}
 
 Võrdlustest väljastab iga küsimuse kohta ühe rea järgmiste veergudega:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Võrdlustesti küsimused
+### Võrdlustesti küsimused {#benchmark-questions}
 
 Vaikekomplekt sisaldab:
 
@@ -95,11 +95,11 @@ Lisaküsimusi saab registreerida filtri `gratis_ai_agent_benchmark_questions` ka
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Haldab paigaldatud võimekusi ja võimekuste pakke.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Loetleb kõik registreeritud võimekused, nende allika (tuum või pakk) ja praeguse oleku.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Laadib registrist alla ja aktiveerib võimekuste paki.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Keelab konkreetse võimekuse ilma pakki eemaldamata. Kasulik agendi ulatuse piiramiseks konkreetsel saidil.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Lubab uuesti varem keelatud võimekuse.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Kuvab praeguse agendi konfiguratsiooni ja ühenduvuse oleku.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Kuvab viimase aja agendi tegevuse silumislogist.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Lähtestab agendi oleku: tühjendab sisestatud CSS-i, eemaldab agendi registreeritud CPT-d ja taksonoomiad, lähtestab globaalsed stiilid ning tühjendab agendi valikute vahemälu. Ei eemalda pistikprogrammi ega selle seadeid.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Väljumiskoodid
+## Väljumiskoodid {#exit-codes}
 
 Kõik käsud väljuvad õnnestumise korral koodiga `0`. Nullist erinevad väljumiskoodid:
 

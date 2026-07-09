@@ -3,13 +3,13 @@ title: Nish veb-sayt biznesini yarating
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite bilan tor yo‘nalishdagi veb-sayt biznesini quring
+# Ultimate Multisite bilan tor yo‘nalishdagi veb-sayt biznesini quring {#build-a-niche-website-business-with-ultimate-multisite}
 
 Veb-sayt sotishga urinadigan ko‘pchilik narx bo‘yicha Wix, Squarespace va minglab frilanserlar bilan raqobat qiladi. Ular yutqazadi. G‘olib bo‘ladiganlar esa aniq auditoriyani tanlaydi, shu auditoriyaga mos yechim yaratadi va yetkazib beradigan qiymati uchun haq oladi.
 
 Bu kurs sizga Ultimate Multisite yordamida aynan shuni qanday qilishni o‘rgatadi.
 
-## Nima qurasiz
+## Nima qurasiz {#what-you-will-build}
 
 Bu kurs davomida siz **FitSite** deb nomlangan haqiqiy, ishlaydigan tarmoq qurasiz -- fitness studiyalari, shaxsiy trenerlar va sport zali egalari uchun maxsus yaratilgan veb-sayt platformasi.
 
@@ -23,7 +23,7 @@ Yakuniy darsga kelib, FitSite quyidagilarga ega to‘liq tor yo‘nalish platfor
 
 Siz bosqichma-bosqich birga bajarasiz va oxirida sizda ham ishlaydigan platforma, ham tanlagan istalgan tor yo‘nalish uchun bu jarayonni takrorlash bilimi bo‘ladi.
 
-## Nega fitness studiyalari?
+## Nega fitness studiyalari? {#why-fitness-studios}
 
 Bizga hamma kuzata oladigan aniq misol kerak edi. Fitness studiyalari mos keladi, chunki:
 
@@ -34,7 +34,7 @@ Bizga hamma kuzata oladigan aniq misol kerak edi. Fitness studiyalari mos keladi
 
 FitSite qurish orqali o‘rgangan hamma narsangiz tanlagan istalgan tor yo‘nalishingizga bevosita qo‘llanadi: restoranlar, ko‘chmas mulk agentlari, yuridik firmalar, cherkovlar, hunarmand pudratchilar yoki boshqa har qanday vertikal.
 
-## Kurs tuzilishi
+## Kurs tuzilishi {#course-structure}
 
 Har bir dars bitta tushunchani tanishtiradi, uning nima uchun muhimligini tushuntiradi va FitSite tarmog‘ida uni joriy etish bo‘yicha sizni bosqichma-bosqich olib boradi. Har bir dars oldingisiga tayanadi.
 
@@ -55,7 +55,7 @@ Har bir dars bitta tushunchani tanishtiradi, uning nima uchun muhimligini tushun
 | [13. Kengayish](lesson-13-growth) | Ilk mijozlardan haqiqiy biznesgacha o‘sish | FitSite o‘sish va avtomatlashtirish strategiyasi |
 | [14. Keyin nima bo‘ladi](lesson-14-whats-next) | Yondosh tor yo‘nalishlar va yangi imkoniyatlarga kengayish | FitSite’dan keyingi yo‘l xaritangiz |
 
-## Talablar
+## Talablar {#prerequisites}
 
 - WordPress Multisite o‘rnatilishi (yoki uni sozlashga tayyorlik)
 - Faol Ultimate Multisite litsenziyasi
@@ -63,6 +63,6 @@ Har bir dars bitta tushunchani tanishtiradi, uning nima uchun muhimligini tushun
 
 Kod yozish talab qilinmaydi. Agar siz ilgari Ultimate Multisite ishlatmagan bo‘lsangiz ham, bu muammo emas -- 3-dars yangi o‘rnatishdan boshlanadi.
 
-## Tayyormisiz?
+## Tayyormisiz? {#ready}
 
 [1-dars: Nega tor yo‘nalish yutadi](lesson-1-why-niche) bilan boshlang.

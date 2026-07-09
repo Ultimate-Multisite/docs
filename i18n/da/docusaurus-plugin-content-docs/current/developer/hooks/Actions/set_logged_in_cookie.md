@@ -4,11 +4,11 @@ title: Handling - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Handling: set_logged_in_cookie
+# Handling: set_logged_in_cookie {#action-setloggedincookie}
 
 Udløses umiddelbart før godkendelses-cookien for indloggede sættes.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Udløses umiddelbart før godkendelses-cookien for indloggede sættes.
 | $scheme | `string` | Godkendelsesskema. Standard 'logged_in'. |
 | $token | `string` | Brugerens sessionstoken, der skal bruges til denne cookie. |
 
-### Siden
+### Siden {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) på linje 141

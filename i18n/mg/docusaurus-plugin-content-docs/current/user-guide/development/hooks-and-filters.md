@@ -3,7 +3,7 @@ title: Hook sy Filtra
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks sy Filters
+# Ultimate Multisite Hooks sy Filters {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite dia feno asa sy fanontaniana momba ny database izany. Manana hooks sy filters ianao izay ahafahanao manova na mampiditra code vaovao amin'ny asan'ny function efa misy.
 

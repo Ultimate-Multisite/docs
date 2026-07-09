@@ -3,7 +3,7 @@ title: Ikhasi le-Account Leklayenti
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ikhasi le-Account Leklayenti Lakho (v2)
+# Ikhasi le-Account Leklayenti Lakho (v2) {#your-clients-account-page-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite version 2.x.**_
 
@@ -11,7 +11,7 @@ Lapho amakhasimende ebhalisela iplani kunethiwekhi yakho, athola ukufinyelela ku
 
 Kulesi sifundo, sizokuqondisa ekhasini le-account lekhasimende futhi uzobona lokho amakhasimende akho angakubona futhi akwenze ngaphakathi kwalo.
 
-## Ikhasi le-Account
+## Ikhasi le-Account {#the-account-page}
 
 Ikhasi le-account lifinyeleleka ngokuchofoza ku-**Account** ngaphakathi kwe-dashboard yekhasimende lakho.
 
@@ -27,7 +27,7 @@ Ngemva kokuba ikhasimende lichofoze kukho, lizobona ukubuka konke kobulungu balo
 
 Bangakwazi futhi ukushintsha ubulungu bube kwenye iplani, noma bathenge elinye iphakheji noma isevisi oyinikezayo. Ake sibheke isigaba ngasinye ngokwehlukana.
 
-### Ukubuka Konke Kobulungu Bakho:
+### Ukubuka Konke Kobulungu Bakho: {#your-membership-overview}
 
 Ibhulokhi yokuqala ngaphansi nje kwegama lewebhusayithi yamakhasimende akho ibonisa ukubuka konke kweplani yawo yamanje kanye nezinsizakalo/amaphakheji athengwe nayo. Ibhulokhi iphinde ibonise inombolo yobulungu, inani lokuqala elikhokhelwe yona, ukuthi iplani nanoma iyiphi isevisi/iphakheji kubiza malini nokuthi bakhokhiswe kangaki ngalobu bulungu. Bangabona futhi ukuthi ubulungu **Buyasebenza** , **Buphelelwe Isikhathi** noma **Bukhanseliwe**.
 
@@ -43,7 +43,7 @@ Manje, uma amakhasimende akho ekhetha ukuthenga amaphakheji noma izinsizakalo za
 
 Qaphela ukuthi amakhodi amakhuphoni awakwazi ukungezwa kuleli khasi lokushintsha ubulungu. Uma ikhasimende lisebenzise ikhodi yekhuphoni ekuthengeni kokuqala kobulungu, ikhodi izosebenza nakulobu bulungu obusha.
 
-### Ukubuyekeza Ikheli Lokukhokhisa:
+### Ukubuyekeza Ikheli Lokukhokhisa: {#updating-the-billing-address}
 
 Ekhasini le-account, amakhasimende akho angabuyekeza futhi ikheli lawo lokukhokhisa. Adinga nje ukuchofoza ku-**Buyekeza** eduze kwe-_Ikheli Lokukhokhisa_.
 
@@ -53,7 +53,7 @@ Iwindi elisha lizovela ekhasimendeni lakho. Konke okudingeka likwenze ukugcwalis
 
 ![Ifomu lokubuyekeza ikheli lokukhokhisa](/img/account-page/billing-address-form.png)
 
-### Ukushintsha Ithempulethi Yesayithi:
+### Ukushintsha Ithempulethi Yesayithi: {#changing-the-site-template}
 
 Ukuze uvumele amakhasimende akho ukuthi ashintshe amathempulethi amasayithi awo, kudingeka uye ku-**Ultimate Multisite > Izilungiselelo > Amasayithi** bese uvula inketho ethi **Vumela Ukushintsha Ithempulethi**.
 
@@ -81,7 +81,7 @@ Ngemva kokuvula isiqinisekiso nokuchofoza ku-**Qalisa Ukushintsha** , ithempulet
 
 Amakhasimende angasebenzisa futhi **Reset current template** kuleli phaneli lapho edinga ukusetha kabusha isayithi libuyele kuthempulethi elabelwe njengamanje. Njengokushintshela kwenye ithempulethi, ukusetha kabusha ithempulethi kungabhala phezu kokuqukethwe kwesayithi, ngakho amakhasimende kufanele akuqinisekise kuphela lapho eqonda isenzo sokusetha kabusha.
 
-### Ukwengeza Ama-domain Enziwe Ngokwezifiso:
+### Ukwengeza Ama-domain Enziwe Ngokwezifiso: {#adding-custom-domains}
 
 Amakhasimende akho azophinde abe nenketho yokwengeza i-domain eyenziwe ngokwezifiso yalolu hlelo ekhasini lawo le-akhawunti. Ukuvumela amakhasimende akho asebenzise ama-domain enziwe ngokwezifiso, iya ku-**Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Ngemva kokuchofoza ku-**Next Step** , amakhasimende akho angangeza igama le-doma
 
 Ngemva kokuchofoza ku-**Add Domain** , i-domain izongezwa ku-akhawunti yekhasimende lakho. Konke okudingeka bakwenze manje ukushintsha amarekhodi e-DNS ale domain eyenziwe ngokwezifiso kumregistrari wabo we-domain.
 
-### Ukushintsha Iphasiwedi:
+### Ukushintsha Iphasiwedi: {#changing-password}
 
 Ngaphakathi kwe-dashboard ye-akhawunti, amakhasimende akho angashintsha futhi iphasiwedi yawo ngokuchofoza ku-**Change Password**.
 
@@ -125,7 +125,7 @@ Lokhu kuzobonisa iwindi elisha lapho amakhasimende akho ezodinga ukugcwalisa iph
 
 ![Ifomu lokushintsha iphasiwedi elinezinkambu zephasiwedi yamanje nentsha](/img/account-page/change-password-form.png)
 
-### Indawo Eyingozi:
+### Indawo Eyingozi: {#danger-zone}
 
 Sinezinketho ezimbili futhi eziboniswa engxenyeni ethi **Danger Zone**: **Delete Site** kanye ne-**Delete Account**. Zombili zikwingxenye ye-Danger Zone ngoba lezi zenzo ezimbili azikwazi ukubuyiselwa emuva. Uma amakhasimende akho esusa iwebhusayithi yawo noma i-akhawunti yawo, ngeke akwazi ukuzibuyisela.
 

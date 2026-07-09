@@ -3,15 +3,15 @@ title: هماهنگی سازنده سایت نسخه ۲
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (که در Gratis AI Agent v1.4.0 معرفی شد) موتور قدرتمندی است که فرآیند ساخت وب‌سایت چند مرحله‌ای را ممکن می‌سازد. وقتی از ایجنت بخواهید که "یک وب‌سایت رستوران بسازد" یا "یک پورتفولیو با بلاگ ایجاد کند"، این هماهنگ‌کننده (Orchestrator) آن هدف کلی را به یک **برنامه** ساختاریافته تقسیم می‌کند، پلاگین‌های مورد نیاز برای انجام آن را کشف می‌کند، هر مرحله را به ترتیب اجرا می‌کند، پیشرفت را پیگیری می‌نماید و در صورت بروز خطاها، به صورت خودکار بازیابی می‌کند.
 
 ---
 
-## نحوه کارکرد
+## نحوه کارکرد {#how-it-works}
 
-### ۱. تولید برنامه (Plan Generation)
+### ۱. تولید برنامه (Plan Generation) {#1-plan-generation}
 
 هنگامی که ایجنت دستور ساخت وب‌سایت دریافت می‌کند، با فراخوانی قابلیت `create_site_plan` یک **برنامه سایت** با فرمت JSON تولید می‌کند. این برنامه موارد زیر را توصیف می‌کند:
 
@@ -61,7 +61,7 @@ Site Builder Orchestration v2 (که در Gratis AI Agent v1.4.0 معرفی شد)
 }
 ```
 
-### ۲. کشف پلاگین (Plugin Discovery)
+### ۲. کشف پلاگین (Plugin Discovery) {#2-plugin-discovery}
 
 قبل از شروع اجرا، هماهنگ‌کننده `plugin_requirements` برنامه را اسکن کرده و بررسی می‌کند که کدام پلاگین‌ها از قبل فعال هستند. برای پلاگین‌های از قلم افتاده، این کارها را انجام می‌دهد:
 
@@ -71,7 +71,7 @@ Site Builder Orchestration v2 (که در Gratis AI Agent v1.4.0 معرفی شد)
 
 شکست در کشف پلاگین‌ها باعث توقف کار نمی‌شود — هماهنگ‌کننده مراحل تحت تأثیر را به صورت `skipped` (رد شده) علامت‌گذاری کرده و با ادامه برنامه پیش می‌رود.
 
-### ۳. اجرای برنامه (Plan Execution)
+### ۳. اجرای برنامه (Plan Execution) {#3-plan-execution}
 
 هماهنگ‌کننده با فراخوانی `execute_site_plan` و دادن شناسه برنامه، شروع به اجرا می‌کند. اجرا به صورت فاز به فاز و مرحله به مرحله پیش می‌رود:
 
@@ -79,7 +79,7 @@ Site Builder Orchestration v2 (که در Gratis AI Agent v1.4.0 معرفی شد)
 - **مراحل موازی (Parallel steps)**: مراحلی که در یک فاز قرار دارند و وابستگی متقابلی ندارند، در صورتی که پرچم `parallel` تنظیم شده باشد، به طور همزمان ارسال می‌شوند.
 - **مهلت زمانی مرحله (Step timeout)**: هر مرحله دارای مهلت زمانی جداگانه‌ای است (پیش‌فرض: تنظیم `Ability Timeout`). مرحله‌ای که زمان آن تمام شود، `failed` (ناموفق) علامت‌گذاری شده و برنامه با مرحله بعدی ادامه می‌یابد.
 
-### ۴. پیگیری پیشرفت (Progress Tracking)
+### ۴. پیگیری پیشرفت (Progress Tracking) {#4-progress-tracking}
 
 برای بررسی وضعیت اجرا، در هر زمانی می‌توانید `get_plan_progress` را فراخوانی کنید:
 
@@ -104,7 +104,7 @@ Site Builder Orchestration v2 (که در Gratis AI Agent v1.4.0 معرفی شد)
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### ۵. بازیابی خطا (Error Recovery)
+### ۵. بازیابی خطا (Error Recovery) {#5-error-recovery}
 
 هنگامی که یک مرحله با شکست مواجه می‌شود، هماهنگ‌کننده به دنبال یک مرحله **برگشت (fallback)** تعریف شده در برنامه می‌گردد:
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## قابلیت‌های برنامه سایت (Site Plan Abilities)
+## قابلیت‌های برنامه سایت (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 یک برنامه سایت ساختاریافته را از یک هدف توصیفی زبان طبیعی تولید می‌کند.
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 اجرای برنامه سایت تولید شده قبلی را آغاز می‌کند.
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 وضعیت اجرای فعلی یک برنامه سایت را برمی‌گرداند.
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 یک مرحله ناموفق را به صورت دستی حل کرده و اجرای برنامه را از مرحله بعدی از سر می‌گیرد. از این قابلیت زمانی استفاده کنید که بازیابی خودکار امکان‌پذیر نبوده و شما نیاز به مداخله داشته باشید.
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## مقایسه v1 و v2
+## مقایسه v1 و v2 {#comparing-v1-and-v2}
 
 | ویژگی | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## دستورات برنامه WP-CLI
+## دستورات برنامه WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 یک برنامه سایت از یک توصیف هدف ایجاد می‌کند.
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 یک برنامه تولید شده قبلی را اجرا می‌کند.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 پیشرفت فعلی یک برنامه در حال اجرا یا تکمیل شده را نشان می‌دهد.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 تمام برنامه‌های سایت (در انتظار، در حال اجرا و تکمیل شده) را لیست می‌کند.
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 یک برنامه ناموفق را به حالت `pending` بازنشانی می‌کند تا بتوان آن را از ابتدا دوباره اجرا کرد.
 

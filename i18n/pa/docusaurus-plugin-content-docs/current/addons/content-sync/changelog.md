@@ -3,9 +3,9 @@ title: ਕੰਟੈਂਟ ਸਿੰਕ ਚੇਂਜਲੌਗ
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync Changelog
+# Content Sync Changelog {#content-sync-changelog}
 
-### Version 1.1.0 - Released on 2025-12-31
+### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * ਨਵਾਂ: ਸਾਰੇ ਪੋਸਟ ਟਾਈਪਸ (ਪੋਸਟਸ, ਪੇਜਸ, ਕਸਟਮ ਪੋਸਟ ਟਾਈਪਸ) ਨੂੰ ਸਿੰਕ ਕਰਨ ਦਾ ਸਹਾਰਾ
 * ਨਵਾਂ: ਕੰਟੈਂਟ ਚੁਣਨ ਵਾਲੇ ਕਦਮ ਵਿੱਚ ਪੋਸਟ ਟਾਈਪ ਫਿਲਟਰਿੰਗ
 * ਨਵਾਂ: ਸਰੋਤ ਸਾਈਟ ਚੁਣਨ ਵਾਲਾ ਕਦਮ - ਸਿਰਫ਼ ਮੁੱਖ ਸਾਈਟ ਤੋਂ ਨਹੀਂ, ਕਿਸੇ ਵੀ ਸਾਈਟ ਤੋਂ ਸਿੰਕ ਕਰਨਾ
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * ਬਦਲਿਆ: "Select Templates" ਕਦਮ ਦਾ ਨਾਮ ਬਦਲ ਕੇ "Select Data" ਕਰ ਦਿੱਤਾ ਗਿਆ
 * ਸੁਧਾਰਿਆ: Elementor-specific ਕੋਡ ਹੁਣ ਸਿਰਫ਼ elementor_library ਪੋਸਟ ਟਾਈਪ ਲਈ ਚੱਲਦਾ ਹੈ
 
-### Version 1.0.0 - Released on 2025-12-19
+### Version 1.0.0 - Released on 2025-12-19 {#version-100---released-on-2025-12-19}
 * ਪਹਿਲੀ ਜਾਰੀ ਕਰਨਾ
 * ਟੈਂਪਲੇਟ ਅਤੇ ਸਾਈਟ ਚੁਣਨ ਲਈ ਕਈ-ਕਦਮਾਂ ਵਾਲਾ ਵਿਜ਼ਾਰਡ
 * ਰੀਅਲ-ਟਾਈਮ ਪ੍ਰਗਤੀ ਫੀਡਬੈਕ ਨਾਲ ਬੈਚ ਪ੍ਰੋਸੈਸਿੰਗ

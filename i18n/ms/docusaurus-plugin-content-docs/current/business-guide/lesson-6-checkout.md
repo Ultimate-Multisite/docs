@@ -3,15 +3,15 @@ title: 'Pelajaran 6: Pengalaman Pendaftaran'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Pelajaran 6: Pengalaman Pendaftaran
+# Pelajaran 6: Pengalaman Pendaftaran {#lesson-6-the-signup-experience}
 
 Proses pembayaran adalah titik di mana minat bertukar menjadi pendapatan. Proses pendaftaran yang mengelirukan atau terlalu umum akan menyebabkan kehilangan pelanggan. Alur yang khusus untuk niche tertentu, yang menggunakan bahasa mereka dan terasa mudah, akan meningkatkan kadar penukaran mereka.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah mempunyai templat dan pelan yang dikonfigurasi. Kini, kita akan membina pengalaman pendaftaran dan pembayaran yang akan mengubah pemilik studio kecergasan menjadi pelanggan berbayar.
 
-## Memahami Alur Pendaftaran
+## Memahami Alur Pendaftaran {#understanding-the-registration-flow}
 
 Borang pembayaran Ultimate Multisite adalah borang multi-langkah yang boleh disesuaikan sepenuhnya. Untuk FitSite, kita mahukan alur yang:
 
@@ -21,11 +21,11 @@ Borang pembayaran Ultimate Multisite adalah borang multi-langkah yang boleh dise
 
 Lihat [Alur Pendaftaran](/user-guide/configuration/the-registration-flow) untuk rujukan teknikal penuh.
 
-## Mereka Bentuk Pembayaran FitSite
+## Mereka Bentuk Pembayaran FitSite {#designing-the-fitsite-checkout}
 
 Navigasi ke **Ultimate Multisite > Checkout Forms** dan cipta borang baharu.
 
-### Langkah 1: Pemilihan Pelan
+### Langkah 1: Pemilihan Pelan {#step-1-plan-selection}
 
 Perkara pertama yang dilihat oleh pemilik studio kecergasan mestilah pelan-pelan tersebut, yang dipersembahkan dalam istilah yang mereka fahami.
 
@@ -37,7 +37,7 @@ Perkara pertama yang dilihat oleh pemilik studio kecergasan mestilah pelan-pelan
 "Storan 1 GB" tidak bermakna apa-apa kepada pemilik gim. "Semua yang anda perlukan untuk laman web studio profesional" bermakna segalanya. Tulis penerangan pelan dalam bahasa pelanggan anda.
 :::
 
-### Langkah 2: Pemilihan Templat
+### Langkah 2: Pemilihan Templat {#step-2-template-selection}
 
 Selepas memilih pelan, pelanggan akan memilih templat permulaan mereka.
 
@@ -45,7 +45,7 @@ Selepas memilih pelan, pelanggan akan memilih templat permulaan mereka.
 - Templat yang tersedia akan ditapis mengikut pelan yang mereka pilih (dikonfigurasi dalam Pelajaran 5)
 - Setiap templat harus mempunyai imej pratonton yang menunjukkan reka bentuk khusus kecergasan
 
-### Langkah 3: Penciptaan Akaun
+### Langkah 3: Penciptaan Akaun {#step-3-account-creation}
 
 Pastikan ini ringkas. Hanya kumpul:
 
@@ -55,27 +55,27 @@ Pastikan ini ringkas. Hanya kumpul:
 
 Jangan minta maklumat yang anda tidak perlukan semasa pendaftaran. Setiap medan tambahan akan mengurangkan kadar penukaran.
 
-### Langkah 4: Persediaan Laman Web
+### Langkah 4: Persediaan Laman Web {#step-4-site-setup}
 
 - **Site title**: Isi secara automatik daripada nama studio yang dimasukkan dalam Langkah 3
 - **Site URL**: Jana secara automatik daripada nama studio (cth., `ironworks.fitsite.com`)
 
-### Langkah 5: Pembayaran
+### Langkah 5: Pembayaran {#step-5-payment}
 
 - Tambah medan **Payment**
 - Konfigurasikan *payment gateway* anda ([Stripe](/user-guide/payment-gateways/stripe) disyorkan untuk bil langganan)
 - Jika anda mencipta *order bumps* dalam Pelajaran 5, tambahkan medan **Order Bump** sebelum langkah pembayaran
 
-### Langkah 6: Pengesahan
+### Langkah 6: Pengesahan {#step-6-confirmation}
 
 - Sesuaikan mesej pengesahan dengan bahasa khusus kecergasan
 - Contoh: "Laman web studio kecergasan anda sedang dicipta. Anda akan dialihkan ke laman web baharu anda dalam beberapa saat."
 
-## Menambah Toggle Pemilihan Tempoh
+## Menambah Toggle Pemilihan Tempoh {#adding-a-period-selection-toggle}
 
 Jika anda menetapkan variasi harga dalam pelan anda (bulanan vs. tahunan), tambahkan medan **Period Selection** pada borang pembayaran supaya pelanggan boleh menukar antara tempoh bil. Lihat [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) untuk arahan.
 
-## Mengkonfigurasi Pembayaran
+## Mengkonfigurasi Pembayaran {#configuring-payment}
 
 Jika anda belum menetapkan *payment gateway*:
 
@@ -85,7 +85,7 @@ Jika anda belum menetapkan *payment gateway*:
 
 Lihat [Getting Paid](/user-guide/payment-gateways/getting-paid) untuk butiran tentang bagaimana pembayaran masuk ke akaun anda.
 
-## Menguji Alur
+## Menguji Alur {#testing-the-flow}
 
 Sebelum meneruskan, lengkapkan ujian pendaftaran penuh:
 
@@ -105,7 +105,7 @@ Periksa sama ada:
 - [ ] Pelanggan mendarat di laman web yang berfungsi dengan templat yang dipilih
 - [ ] E-mel pengesahan menggunakan bahasa khusus kecergasan
 
-## Rangkaian FitSite Setakat Ini
+## Rangkaian FitSite Setakat Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Sedia untuk penjenamaan (pelajaran seterusnya)
 ```
 
-## Apa Yang Kita Bina Dalam Pelajaran Ini
+## Apa Yang Kita Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Borang pembayaran multi-langkah** yang disesuaikan untuk pemilik studio kecergasan
 - **Bahasa khusus niche** di seluruh alur pendaftaran

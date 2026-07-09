@@ -4,11 +4,11 @@ title: Filtru - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtru: secure_logged_in_cookie
+# Filtru: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtrează dacă cookie-ul de autentificare ar trebui să fie trimis doar prin HTTPS.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrează dacă cookie-ul de autentificare ar trebui să fie trimis doar prin H
 | $user_id | `int` | ID-ul utilizatorului. |
 | $secure | `bool` | Indică dacă cookie-ul de autentificare ar trebui să fie trimis doar prin HTTPS. |
 
-### De la
+### De la {#since}
 
 - 3.1.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) la linia 91

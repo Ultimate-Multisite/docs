@@ -3,7 +3,7 @@ title: Domen sotuvchisi o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller o‘zgarishlar jurnali
+# Domain Seller o‘zgarishlar jurnali {#domain-seller-changelog}
 
 Versiya 1.3.0 - 2026-06-02 da chiqarilgan
 - Yangi: HostAfrica reseller balansi juda kamayib ketganda network-admin ogohlantirishi qo‘shildi
@@ -134,20 +134,20 @@ Versiya 1.0.0 - 2025-09-28 da chiqarilgan
 * **Tuzatildi:** Barcha eskirgan v1 kodi v2 standartlariga yangilandi
 * **Olib tashlandi:** Eski v1 mosligi (buzuvchi o‘zgarish)
 
-### Oldingi versiyalar (v1 Legacy)
+### Oldingi versiyalar (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Versiya 0.0.3 - 20/08/2019
+### Versiya 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Tuzatildi: Groundhogg CRM bilan nomoslik
 * Eslatma: Bu v1 bilan mos keladigan oxirgi reliz edi
 
-### Versiya 0.0.2 - 07/12/2018
+### Versiya 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Tuzatildi: License Key maydoni olib tashlandi
 * Tuzatildi: Feature plugin faol bo‘lganda reja tablari yo‘qligi
 * Yaxshilandi: Ro‘yxatdan o‘tish maydoniga o‘tkazib yuborish tugmasi qo‘shildi
 
-### Versiya 0.0.1 - Dastlabki reliz
+### Versiya 0.0.1 - Dastlabki reliz {#version-001---initial-release}
 
 * WP Ultimo v1 uchun asosiy OpenSRS integratsiyasi
 * Oddiy domen qidiruvi va ro‘yxatdan o‘tkazish

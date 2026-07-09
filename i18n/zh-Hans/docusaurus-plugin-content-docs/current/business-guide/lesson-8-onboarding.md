@@ -3,15 +3,15 @@ title: 第八课：客户入驻
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# 第 8 课：客户入驻流程
+# 第 8 课：客户入驻流程 {#lesson-8-customer-onboarding}
 
 让客户注册只是成功的一半。如果他们登录后感到不知所措，然后就再也不回来了，你就失去了他们。本课旨在设计一套体验流程，将一个新注册用户转化为一个活跃、投入的客户。
 
-## 我们上次停在哪里
+## 我们上次停在哪里 {#where-we-left-off}
 
 FitSite 已经完成了品牌化，并且拥有了一个可用的结账流程。现在，我们的重点是关注健身房业主在完成注册并首次登录到他们的新网站后，会经历什么。
 
-## 为什么入驻流程很重要
+## 为什么入驻流程很重要 {#why-onboarding-matters}
 
 注册后的前 30 分钟决定了客户是留下来还是流失。一位健身房业主如果：
 
@@ -21,9 +21,9 @@ FitSite 已经完成了品牌化，并且拥有了一个可用的结账流程。
 
 您的利基市场模板（第 4 课）解决了第一点。本课解决的就是第二点。
 
-## 首次登录体验
+## 首次登录体验 {#the-first-login-experience}
 
-### 欢迎控制面板小组件 (Welcome Dashboard Widget)
+### 欢迎控制面板小组件 (Welcome Dashboard Widget) {#welcome-dashboard-widget}
 
 创建一个自定义的控制面板小组件，用于迎接新客户并引导他们完成设置。这个小组件应该在他们首次登录时非常醒目。
 
@@ -37,7 +37,7 @@ FitSite 已经完成了品牌化，并且拥有了一个可用的结账流程。
 
 每个步骤都直接链接到相关的页面或设置。无需在菜单中四处寻找。
 
-### 简化控制面板
+### 简化控制面板 {#simplify-the-dashboard}
 
 新客户不需要看到每一个 WordPress 菜单项。可以考虑：
 
@@ -47,29 +47,29 @@ FitSite 已经完成了品牌化，并且拥有了一个可用的结账流程。
 
 [Plugin & Theme Manager](/addons/plugin-and-theme-manager) 这个插件和主题管理器插件可以帮助控制客户能看到什么。
 
-## 欢迎邮件序列 (Welcome Email Sequence)
+## 欢迎邮件序列 (Welcome Email Sequence) {#welcome-email-sequence}
 
 一封欢迎邮件是不够的。您需要设置一个序列，引导客户度过他们的第一周：
 
-### 邮件 1：欢迎（注册后立即发送）
+### 邮件 1：欢迎（注册后立即发送） {#email-1-welcome-immediately-after-signup}
 
 - 主题：“欢迎使用 FitSite —— 您的工作室网站已上线”
 - 内容：登录链接、快速上手步骤、帮助资源链接
 - 语气：兴奋、鼓励、与健身相关的
 
-### 邮件 2：快速上手（第 1 天）
+### 邮件 2：快速上手（第 1 天） {#email-2-quick-wins-day-1}
 
 - 主题：“在您的 FitSite 上首先需要做的 3 件事”
 - 内容：添加您的 Logo、更新首页主图、添加课程表
 - 包含截图，明确指出点击的位置
 
-### 邮件 3：打造专属风格（第 3 天）
+### 邮件 3：打造专属风格（第 3 天） {#email-3-make-it-yours-day-3}
 
 - 主题：“让您的健身网站脱颖而出”
 - 内容：自定义颜色、添加教练照片、撰写工作室故事
 - 链接到平台上的优秀健身网站示例
 
-### 邮件 4：正式上线（第 7 天）
+### 邮件 4：正式上线（第 7 天） {#email-4-go-live-day-7}
 
 - 主题：“准备好将您的 FitSite 与世界分享了吗？”
 - 内容：分享前需要核对的清单、如何连接自定义域名（如果使用 Growth/Pro 套餐）、社交分享技巧
@@ -78,11 +78,11 @@ FitSite 已经完成了品牌化，并且拥有了一个可用的结账流程。
 使用 [Webhooks](/user-guide/integrations/webhooks) 或 [Zapier](/user-guide/integrations/zapier) 通过您的邮件营销平台触发这些邮件。这样可以为您提供更精细的时间控制，并允许您跟踪用户参与度。
 :::
 
-## 帮助资源
+## 帮助资源 {#help-resources}
 
 创建针对利基市场的帮助内容，回答健身房业主真正会问的问题：
 
-### 知识库文章 (Knowledge Base Articles)
+### 知识库文章 (Knowledge Base Articles) {#knowledge-base-articles}
 
 - “如何更新您的课程表”
 - “添加和编辑教练资料”
@@ -92,7 +92,7 @@ FitSite 已经完成了品牌化，并且拥有了一个可用的结账流程。
 
 为非技术用户撰写这些内容。使用截图。避免使用 WordPress 术语。
 
-### 视频演示 (Video Walkthroughs)
+### 视频演示 (Video Walkthroughs) {#video-walkthroughs}
 
 简短的（2-3 分钟）屏幕录制，展示以下内容：
 
@@ -103,7 +103,7 @@ FitSite 已经完成了品牌化，并且拥有了一个可用的结账流程。
 
 这些不需要是制作精良的成品。清晰、有帮助、且与利基市场相关才是最重要的。
 
-## 账户页面 (The Account Page)
+## 账户页面 (The Account Page) {#the-account-page}
 
 Ultimate Multisite 包含一个面向客户的 [Account Page](/user-guide/client-management/account-page)，客户可以在此管理他们的订阅。请自定义此页面以：
 
@@ -112,7 +112,7 @@ Ultimate Multisite 包含一个面向客户的 [Account Page](/user-guide/client
 - 提供账单历史记录和发票下载
 - 链接到帮助资源
 
-## 衡量入驻成功率
+## 衡量入驻成功率 {#measuring-onboarding-success}
 
 跟踪这些指标，以了解您的入驻流程是否有效：
 
@@ -121,7 +121,7 @@ Ultimate Multisite 包含一个面向客户的 [Account Page](/user-guide/client
 - **新客户支持工单量 (Support tickets from new customers)**：高数量意味着您的入驻流程存在漏洞
 - **试用转付费转化率 (Trial-to-paid conversion)**：如果您提供试用，多少比例的客户完成了付费转化？
 
-## FitSite 网络目前已构建的内容
+## FitSite 网络目前已构建的内容 {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── 准备进行定价策略 (下一课)
 ```
 
-## 本课构建的内容
+## 本课构建的内容 {#what-we-built-this-lesson}
 
 - **带有快速上手小组件的引导式首次登录体验**
 - **专注于健身网站管理任务的简化控制面板**

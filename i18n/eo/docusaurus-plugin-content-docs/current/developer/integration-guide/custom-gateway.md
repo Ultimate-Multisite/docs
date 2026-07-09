@@ -3,11 +3,11 @@ title: Disvolvado de laŭmenda pagpordego
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Propra pagopordega disvolvado
+# Propra pagopordega disvolvado {#custom-gateway-development}
 
 Vi povas krei proprajn pagopordegojn per etendo de la klaso `Base_Gateway`.
 
-## Pagopordega klaso
+## Pagopordega klaso {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registri la pagopordegon
+## Registri la pagopordegon {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ĉefaj metodoj
+## Ĉefaj metodoj {#key-methods}
 
 | Metodo | Celo |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Pritrakti repagajn petojn |
 | `get_payment_methods()` | Redoni konservitajn pagmetodojn por kliento |
 
-## Renovigaj akreditaĵoj por ripetiĝantaj membrecoj
+## Renovigaj akreditaĵoj por ripetiĝantaj membrecoj {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 permesas al pagopordegaj integriĝoj raporti ĉu ripetiĝanta membreco havas reuzeblan renovigan akreditaĵon antaŭ ol `auto_renew` estas konservita. Hoku `wu_membership_has_renewal_credential` kaj redonu:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Forigu la markilon pri mankanta akreditaĵo kiel parton de la sukcesa re-rajtiga fluo de via pagopordego post kiam nova reuzebla akreditaĵo estas konservita.
 
-## Konsiloj
+## Konsiloj {#tips}
 
 - Ĉiam redonu `WP_Error` ĉe malsukceso por ke Ultimate Multisite povu pritrakti erarmontradon
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Uzu `wu_log_add()` por pagopordeg-specifa protokolado
 
-## Kapabloj de AI-konektila provizanto
+## Kapabloj de AI-konektila provizanto {#ai-connector-provider-capabilities}
 
 Propraj integriĝoj kiuj vokas operaciojn subtenatajn de AI-konektiloj devas kongrui kun la subtenata OAuth-provizantaro enkondukita kun AI Provider for Anthropic Max v1.3.0:
 

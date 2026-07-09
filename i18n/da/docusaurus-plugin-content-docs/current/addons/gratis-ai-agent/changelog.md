@@ -3,11 +3,11 @@ title: Ændringslog
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Ændringslog
+# Ændringslog {#changelog}
 
-## 1.9.0 — Udgivet den 2026-04-28
+## 1.9.0 — Udgivet den 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nyt
+### Nyt {#new}
 
 - **`create_contact_form`-funktion** — opretter en kontaktformular ved hjælp af det aktive formular-plugin (Contact Form 7, WPForms, Fluent Forms eller Gravity Forms) og returnerer en shortcode, der er klar til at blive indlejret i ethvert indlæg eller på enhver side.
 - **`set_featured_image`-funktion** — tildeler et udvalgt billede til et indlæg eller en side fra et eksisterende vedhæftnings-ID i mediebiblioteket eller en ekstern URL; importerer automatisk billedet, når en URL angives.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Gendan seneste session** — chatpanelet genindlæser nu automatisk den seneste samtale ved sideindlæsning og ved åbning af widgetten, så konteksten aldrig går tabt på tværs af sidenavigationer.
 - **Plugin-handlingslinks** — hurtiglinks til indstillinger og funktionsregisteret vises nu på WordPress-skærmen **Plugins → Installerede plugins** under plugin-beskrivelsen.
 
-### Forbedret
+### Forbedret {#improved}
 
 - **Gentagelse for billedkilde** — agenten prøver nu alle konfigurerede gratis billedkilder igen, før den falder tilbage til et AI-genereret billede ved downloadfejl.
 - **Panel med modeloplysninger** — altid synligt i chat-headeren; skjules ikke længere efter den første besked.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Redesign af chat-widget** — samlet AI-ikon erstatter den tidligere brugerdefinerede avatar; konsistent med det indbyggede agentsystem.
 - **URL-linkificering** — URL'er, der vises i systembeskeder og fejlbeskedbobler, gengives nu som klikbare links.
 
-### Rettet
+### Rettet {#fixed}
 
 - **Funktionsopdagelighed** — korrigerede beskrivelser, systemprompt-referencer og namespace-tilpasning, så alle funktioner vises pålideligt i agentens værktøjsliste.
 - **Provider-cache** — providers caches nu site-wide via en versionstæller, hvilket forhindrer problemer med forældede providers på multisite-netværk.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Udgivet den 2026-04-09
+## 1.4.0 — Udgivet den 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nyt
+### Nyt {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — kører Agent Capabilities v1 benchmark suite fra kommandolinjen til CI-pipelines og arbejdsgange for modelevaluering. Understøtter kørsler pr. spørgsmål, tilsidesættelser af provider/model samt JSON/CSV-output.
 - **Agent Capabilities v1 benchmark suite** — et struktureret sæt af komplekse, flertrins-prompts, der afprøver hele evnefladen, med scoring og rapportering af tokens/varighed.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Benchmarkspørgsmål for restaurantwebsted** (`q-restaurant-website`) — end-to-end-test, der dækker CPT-registrering, design system, navigation og plugin-opdagelse.
 - **AI provider connector-plugins** føjet til WordPress Playground-blueprints for hurtigere opsætning af lokal udvikling.
 
-### Forbedret
+### Forbedret {#improved-1}
 
 - README opdateret med dokumentation for AI provider connector og opsætningsinstruktioner.
 
-### Rettet
+### Rettet {#fixed-1}
 
 - 25 PHPUnit-testfejl på `main`-branch løst.
 - GitHub releases-URL-format i `blueprint.json` rettet.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Tidligere release notes vedligeholdes i plugin-repositoriet._

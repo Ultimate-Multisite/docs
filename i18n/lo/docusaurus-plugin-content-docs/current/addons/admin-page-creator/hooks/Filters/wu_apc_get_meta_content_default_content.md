@@ -4,11 +4,11 @@ title: ຕົວກອງ - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# ຕົວກອງ: wu_apc_get_meta_content_default_content
+# ຕົວກອງ: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາກອງຄ່າເລີ່ມຕົ້ນ
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | ປະເພດຂອງເມຕາດາຕາທີ່ຈະດຶງມາ. |
 | $meta_key | `string` | ຊື່ຂອງຟິລເມຕາ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 1.4.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) ທີ່ແຖວ 68
 
 
-## ຄ່າທີ່ສົ່ງກັບ
+## ຄ່າທີ່ສົ່ງກັບ {#returns}
 ຄ່າເລີ່ມຕົ້ນໃໝ່.

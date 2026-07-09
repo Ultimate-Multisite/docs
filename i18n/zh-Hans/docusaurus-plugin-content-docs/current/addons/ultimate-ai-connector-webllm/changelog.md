@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM 更新日志
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM 更新日志
+# Ultimate AI Connector for WebLLM 更新日志 {#ultimate-ai-connector-for-webllm-changelog}
 
-## Version 1.1.0 — 发布于 2026-04-09
+## Version 1.1.0 — 发布于 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * **新增：** 带有管理栏状态指示器的浮动聊天小部件 — 任何登录用户现在可以直接从前端向浏览器侧的 LLM 发出提示。
 * **新增：** SharedWorker 运行时 — MLC 引擎现在运行在 SharedWorker 中，因此多个标签页可以共享一个 GPU 会话，而不是互相争抢。
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * **修复：** 将 WebLLM 挂接到 wpai_preferred_text_models 过滤器，确保当配置了模型时，AI Experiments 功能能够路由到浏览器引擎。
 * **改进：** 在端到端测试中发现并修复了缓存清除（Cache-busting）、内容标准化和硬件引用相关的错误。
 
-## Version 1.0.0 — 初始发布
+## Version 1.0.0 — 初始发布 {#version-100--initial-release}

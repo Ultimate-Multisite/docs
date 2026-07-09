@@ -3,25 +3,25 @@ title: CyberPanel መዋሃድ
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# የCyberPanel ውህደት
+# የCyberPanel ውህደት {#cyberpanel-integration}
 
 ይህ መመሪያ በUltimate Multisite የCyberPanel ውህደት እንዴት ማዋቀር እንደሚቻል ያብራራል፤ ይህም በኔትዎርክዎ ውስጥ ያሉ የዶሜን ካርታዎች በCyberPanel ውስጥ እንደ ቨርቹዋል ሆስት በራስ-ሰር እንዲጨመሩ (እና እንዲወገዱ)፣ እንዲሁም በLet's Encrypt አማካይነት አማራጭ የauto-SSL አገልግሎት እንዲሰጥ ያደርጋል።
 
-## ምን ያደርጋል
+## ምን ያደርጋል {#what-it-does}
 
 - አንድ ዶሜን በUltimate Multisite ሲካረታ፣ ውህደቱ የዚያን ዶሜን ቨርቹዋል ሆስት ለመፍጠር የCyberPanel APIን ይጠራል።
 - የዶሜን ካርታ ሲወገድ፣ ውህደቱ ተዛማጅ የቨርቹዋል ሆስትን ለማጥፋት APIን ይጠራል።
 - auto-SSL ሲበራ፣ ውህደቱ ቨርቹዋል ሆስቱ ከተፈጠረ በኋላ ወዲያውኑ የLet's Encrypt ሰርተፍኬት እንዲሰጥ ያደርጋል።
 - በተጨማሪም፣ በDomain Mapping settings ውስጥ ባለው "Auto-create www subdomain" ቅንብር መሰረት `www.` አሊያስን በቅደም ተከተል ይጨምራል/ይወገዳል።
 
-## ቅድመ ሁኔታዎች
+## ቅድመ ሁኔታዎች {#prerequisites}
 
 - የሚሰራ የCyberPanel instance (v2.3 ወይም ከዚያ በላይ ይመከራል) እና ከWordPress serverዎ ሊደርስበት የሚችል መሆን አለበት።
 - የWordPress network rootዎን ቀድሞ የሚያገለግል የCyberPanel ውስጥ ያለ existing website ሊኖርዎት ይገባል። ውህደቱ አዳዲስ ቨርቹዋል ሆስቶችን ወደዚህ server ይያያዛል።
 - የCyberPanel API መዳረሻ መብራት መሆን አለበት። ማረጋገጫው የሚጠቀመው በCyberPanel admin username እና passwordዎ ነው።
 - auto-SSL ትክክለኛ ሰርተፍኬት ሊሰጥበት የሚችል ከሆነ፣ የካርታ የተደረጉ ዶሜኖች DNS recordsዎ ቀድሞ ወደ የserverዎ IP address መ 指ት አለባቸው።
 
-## የሚያስፈልጉ ነገሮች
+## የሚያስፈልጉ ነገሮች {#requirements}
 
 የሚከተሉት ቋሚ ተለዋዋጮች (constants) በ`wp-config.php` ፋይልዎ ውስጥ መገለጽ አለባቸው፦
 
@@ -40,15 +40,15 @@ define('WU_CYBERPANEL_PHP_VERSION', 'PHP 8.2');  // Default: PHP 8.2
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com'); // ለSSL ሰርተፍኬት ግንኙነት የሚያገለግል
 ```
 
-## የማዋቀር መመሪያዎች
+## የማዋቀር መመሪያዎች {#setup-instructions}
 
-### 1. የCyberPanel APIን ማብራት
+### 1. የCyberPanel APIን ማብራት {#1-enable-the-cyberpanel-api}
 
 1. እንደ አስተዳዳሪ ወደ CyberPanel dashboardዎ ይግቡ።
 2. ወደ **Security** > **SSL** ይሂዱ እና SSL በCyberPanel interface ራሱ ንቁ መሆኑን ያረጋግጡ (ለsecure API calls አስፈላጊ ነው)።
 3. የCyberPanel API በነባሪነት በ`https://your-server-ip:8090/api/` ላይ ይገኛል። ለማብራት ተጨማሪ እርምጃዎች አያስፈልጉም — ለአስተዳዳሪ ተጠቃሚዎች በነባሪነት ክፍት ነው።
 
-### 2. ቋሚ ተለዋዋጮችን በwp-config.php ላይ መጨመር
+### 2. ቋሚ ተለዋዋጮችን በwp-config.php ላይ መጨመር {#2-add-constants-to-wp-configphp}
 
 የሚከተሉትን ቋሚ ተለዋዋጮች በ`wp-config.php` ፋይልዎ ውስጥ ከ`/* That's all, stop editing! */` መስመር በፊት ይጨምሩ፦
 
@@ -66,7 +66,7 @@ define('WU_CYBERPANEL_AUTO_SSL', true);
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 ```
 
-### 3. ውህደቱን ማብራት
+### 3. ውህደቱን ማብራት {#3-enable-the-integration}
 
 1. በWordPress network adminዎ ውስጥ፣ ወደ **Ultimate Multisite** > **Settings** ይሂዱ።
 2. ወደ **Domain Mapping** ታብ ይጓዙ።
@@ -74,7 +74,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 4. የ**CyberPanel** ውህደትን ያብሩ።
 5. **Save Changes** የሚለውን ይጫኑ።
 
-### 4. ግንኙነትን ማረጋገጥ
+### 4. ግንኙነትን ማረጋገጥ {#4-verify-connectivity}
 
 በsettings wizard ውስጥ ባለው built-in connection test ይጠቀሙ፦
 
@@ -82,9 +82,9 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 2. **Test Connection** የሚለውን ይጫኑ።
 3. ስኬት መልዕክት (success message) የሚያረጋግጠው ፕልጊኑ ወደ CyberPanel API መድረስ እና በትክክል መታረም (authenticate) እንደሚችል ነው።
 
-## እንዴት ይሰራል
+## እንዴት ይሰራል {#how-it-works}
 
-### የዶሜን ካርታ (Domain Mapping)
+### የዶሜን ካርታ (Domain Mapping) {#domain-mapping}
 
 አንድ ዶሜን በUltimate Multisite ሲካረታ፦
 
@@ -93,7 +93,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 3. የዶክመንት ሥር (document root) ወደ የWordPress network root directoryዎ እንዲጠቁም ተደርጓል።
 4. የዶሜን ካርታ ሲወገድ፣ ውህደቱ የቨርቹዋል ሆስቱን ለማጽዳት `/api/deleteWebsite`ን ይጠራል።
 
-### auto-SSL
+### auto-SSL {#auto-ssl}
 
 `WU_CYBERPANEL_AUTO_SSL` እውነት (true) ከሆነ፦
 
@@ -103,11 +103,11 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 
 > **ጠቃሚ ማሳሰቢያ:** Let's Encrypt ዶሜኑን ማረጋገጥ (validate) ከቻለ በፊት DNS ሙሉ በሙሉ ወደ የserverዎ IP address መሰራጨት አለበት (fully propagated)። ካርታ ከተደረገ በኋላ ወዲያውኑ የSSL መስጠት ካልተሳካ፣ ለDNS ስርጭት ይጠብቁ እና በCyberPanel dashboard ውስጥ በ**SSL** > **Manage SSL** ስር SSLን እንደገና ይጀምሩ።
 
-### www Subdomain
+### www Subdomain {#www-subdomain}
 
 በDomain Mapping settingsዎ ውስጥ **Auto-create www subdomain** ከተበራረገ፣ ውህደቱ ለ`www.<domain>` ቨርቹዋል ሆስት አሊያስ ይፈጥራል፣ እና auto-SSL በርቶ ከሆነ፣ አፖክስ (apex) እና www ሁለቱንም ስሪቶች የሚሸፍን ሰርተፍኬት ይሰጣል።
 
-### የኢሜይል አቅጣጫ ሰጪዎች (Email Forwarders)
+### የኢሜይል አቅጣጫ ሰጪዎች (Email Forwarders) {#email-forwarders}
 
 [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) addon ሲንቀሳቀስ፣ CyberPanel ደንበኛ የኢሜይል አቅጣጫ ሰጪዎችን (email forwarders) መስጠት ይችላል። አቅጣጫ ሰጪዎች መልዕክቶችን ሙሉ የሜይል ሳጥን ሳይፈጥሩ ከአንድ የዶሜን አድራሻ ወደ ሌላ የኢንቦክስ ይመራሉ። ይህ ለ`info@customer-domain.test` ወይም `support@customer-domain.test` ባሉ አሊያስዎች ጠቃሚ ነው።
 
@@ -120,7 +120,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 
 የአቅጣጫ ሰጪ መፍጠር ካልተሳካ፣ በመጀመሪያ የUltimate Multisite activity logsን ይፈትሹ፣ ከዚያም በCyberPanel ውስጥ የምንጩ ዶሜን መኖሩን እና የAPI ተጠቃሚው የኢሜይል አስተዳደር ስልጣን እንዳለው ያረጋግጡ።
 
-## የቅንብር ማጣቀሻ (Configuration Reference)
+## የቅንብር ማጣቀሻ (Configuration Reference) {#configuration-reference}
 
 | Constant | አስፈላጊ ነው? | Default | መግለጫ |
 |---|---|---|---|
@@ -132,7 +132,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 | `WU_CYBERPANEL_PHP_VERSION` | አይ | `PHP 8.2` | ለአዳዲስ ቨርቹዋል ሆስቶች የPHP version (በCyberPanel ውስጥ በተጫነው version መመሳሰል አለበት) |
 | `WU_CYBERPANEL_EMAIL` | አይ | — | ለSSL ሰርተፍኬት ምዝገባ የሚያገለግል የእውቂያ ኢሜይል |
 
-## አስፈላጊ ማሳሰቢያዎች
+## አስፈላጊ ማሳሰቢያዎች {#important-notes}
 
 - የCyberPanel API የsession-based token authenticationን ይጠቀማል። ውህደቱ በየAPI ጥሪው የtoken አግኝተኝነትን በራስ-ሰር ይይዛል።
 - የCyberPanel admin accountዎ ድረ-ገጾችን ለመፍጠር እና ለማጥፋት ስልጣን ሊኖረው ይገባል።
@@ -140,33 +140,33 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 - ውህደቱ የDNS recordsን አያስተዳድርም። በUltimate Multisite ውስጥ ዶሜኑን ካርታ ከማድረግዎ በፊት የዶሜን DNS ወደ የserverዎ IP address መ 指ት አለበት።
 - OpenLiteSpeed (OLS) የሚጠቀሙ ከሆነ፣ ከቨርቹዋል ሆስት ለውጦች በኋላ የgraceful restart በራስ-ሰር ይከሰታል። በእጅ ጣልቃ መግባት አያስፈልግም።
 
-## ችግር መፍታት (Troubleshooting)
+## ችግር መፍታት (Troubleshooting) {#troubleshooting}
 
-### API Connection Refused
+### API Connection Refused {#api-connection-refused}
 
 - የserverዎ ፋየርዎል በport `8090` ክፍት መሆኑን ያረጋግጡ።
 - የ`WU_CYBERPANEL_HOST` ዋጋ ትክክለኛውን protocol (`https://`) እና port ይይዘዋል ማረጋገጥ።
 - የCyberPanel SSL ሰርተፍኬትዎ ትክክለኛ መሆኑን ያረጋግጡ፤ self-signed certificates የTLS verification failures ሊያስከትሉ ይችላሉ። `WU_CYBERPANEL_VERIFY_SSL`ን ወደ `false` ማስቀመጥ የሚገባው በታመኑ private network environments ብቻ ነው።
 
-### Authentication Errors
+### Authentication Errors {#authentication-errors}
 
 - የ`WU_CYBERPANEL_USERNAME` እና `WU_CYBERPANEL_PASSWORD` ትክክለኛ መሆናቸውን በCyberPanel ውስጥ በቀጥታ በመግባት ያረጋግጡ።
 - CyberPanel በተደጋጋሚ የውድቀት የመግቢያ ሙከራዎች በኋላ አካውንቶችን ይዘጋል። መቆለፊያዎች ከተከሰቱ በCyberPanel ውስጥ **Security** > **Brute Force Monitor** ላይ ይፈትሹ።
 
-### Domain Not Created
+### Domain Not Created {#domain-not-created}
 
 - የUltimate Multisite activity log (**Ultimate Multisite** > **Activity Logs**) ውስጥ የAPI error messages ይፈትሹ።
 - በ`WU_CYBERPANEL_PACKAGE` ውስጥ የተገለጸው package በCyberPanel ውስጥ መኖሩን ያረጋግጡ (**Packages** > **List Packages** )።
 - ዶሜኑ ቀድሞ በCyberPanel ውስጥ እንደ website መመዝገቡን አረጋግጡ — የduplicate website መፍጠር ስህተት ይመልሳል።
 
-### SSL Certificate Not Issued
+### SSL Certificate Not Issued {#ssl-certificate-not-issued}
 
 - DNS ሙሉ በሙሉ ስርጭት እንደተደረገ ያረጋግጡ: `dig +short your-domain.com` የserverዎ IP መመለስ አለበት።
 - Let's Encrypt የrate limits ያስቀምጣል። በአንድ ዶሜን ላይ ብዙ ሰርተፍኬቶችን በቅርቡ ከሰጡ፣ ከመሞከርዎ በፊት ይጠብቁ።
 - የሰርተፍኬት መስጠት ስህተቶች ዝርዝር ለማየት በ**Logs** > **Error Logs** ስር የCyberPanel SSL logsን ይፈትሹ።
 - እንደ አማራጭ፣ SSLን በCyberPanel በራስ-ሰር መስጠት ይችላሉ፦ **SSL** > **Manage SSL** > ዶሜኑን ይምረጡ > **Issue SSL**።
 
-## ማጣቀሻዎች (References)
+## ማጣቀሻዎች (References) {#references}
 
 - CyberPanel API Documentation: https://docs.cyberpanel.net/docs/category/api
 - CyberPanel SSL Management: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

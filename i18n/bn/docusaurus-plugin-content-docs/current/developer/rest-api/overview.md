@@ -3,28 +3,28 @@ title: REST API সংক্ষিপ্ত বিবরণ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API রেফারেন্স
+# REST API রেফারেন্স {#rest-api-reference}
 
-## বেস কনফিগারেশন
+## বেস কনফিগারেশন {#base-configuration}
 
 **বেস URL:** `{site_url}/wp-json/wu/v2/`
 **প্রমাণীকরণ:** API Key ও Secret (HTTP Basic Auth বা URL প্যারামিটার)
 
-## প্রমাণীকরণ
+## প্রমাণীকরণ {#authentication}
 
-### API সক্রিয় করুন
+### API সক্রিয় করুন {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ক্রেডেনশিয়াল নিন
+### API ক্রেডেনশিয়াল নিন {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### প্রমাণীকরণ পদ্ধতি
+### প্রমাণীকরণ পদ্ধতি {#authentication-methods}
 
 **HTTP Basic Auth (প্রস্তাবিত):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## মূল এন্ডপয়েন্ট
+## মূল এন্ডপয়েন্ট {#core-endpoints}
 
-### 1. গ্রাহক API
+### 1. গ্রাহক API {#1-customers-api}
 
 **বেস রুট:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. সাইট API
+### 2. সাইট API {#2-sites-api}
 
 **বেস রুট:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. সদস্যতা API
+### 3. সদস্যতা API {#3-memberships-api}
 
 **বেস রুট:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. পণ্য API
+### 4. পণ্য API {#4-products-api}
 
 **বেস রুট:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. পেমেন্ট API
+### 5. পেমেন্ট API {#5-payments-api}
 
 **বেস রুট:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ডোমেইন API
+### 6. ডোমেইন API {#6-domains-api}
 
 **বেস রুট:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## নিবন্ধন এন্ডপয়েন্ট
+## নিবন্ধন এন্ডপয়েন্ট {#registration-endpoint}
 
 `/register` এন্ডপয়েন্ট একটি পূর্ণাঙ্গ চেকআউট/নিবন্ধন প্রবাহ দেয়:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## স্বাধীন টেন্যান্ট এন্ডপয়েন্ট
+## স্বাধীন টেন্যান্ট এন্ডপয়েন্ট {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 এমন ইন্টিগ্রেশনের জন্য স্বাধীন টেন্যান্ট REST কভারেজ যোগ করে, যেগুলো বিচ্ছিন্ন টেন্যান্ট প্রভিশন, পরিদর্শন বা যাচাই করে।
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false`-কে লঞ্চের আগের বাধা হিসেবে ধরুন। যাচাইকরণের বিস্তারিত দেখুন, ডাটাবেস হোস্ট বাইন্ডিং, কিউ, ব্যবহারকারী প্রভিশনিং বা রাউটিং সমস্যা ঠিক করুন, তারপর আবার যাচাই করুন।
 
-## ত্রুটি প্রতিক্রিয়া
+## ত্রুটি প্রতিক্রিয়া {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## পেজিনেশন ও ফিল্টারিং
+## পেজিনেশন ও ফিল্টারিং {#pagination-and-filtering}
 
 **কোয়েরি প্যারামিটার:**
 ```http

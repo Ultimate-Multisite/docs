@@ -3,7 +3,7 @@ title: Ushughulikiaji wa Kodi
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ushughulikiaji wa Kodi
+# Ushughulikiaji wa Kodi {#tax-handling}
 
 Ultimate Multisite ina moduli ya ukusanyaji kodi iliyojengwa ndani ya plugin yetu kuu, kwa hivyo ikiwa unahitaji kukusanya kodi za mauzo kwenye mipango, vifurushi na huduma zako, unaweza kufanya hivyo kwa urahisi bila kulazimika kusakinisha nyongeza zozote.
 
@@ -11,7 +11,7 @@ Kwa kampuni zilizoko Ulaya, tunatoa **nyongeza** inayoongeza zana na vipengele i
 
 Ultimate Multisite haiwasilishi wala hailipi kodi kwa niaba yako kwa serikali; sisi hukusaidia tu kukusanya kodi zinazofaa wakati wa muamala. **Bado utahitaji kulipa kodi mwenyewe.**
 
-## Kuwasha Ukusanyaji wa Kodi
+## Kuwasha Ukusanyaji wa Kodi {#enabling-tax-collection}
 
 Ukusanyaji wa kodi haujawashwa kwa chaguo-msingi. Ili kuuwasha, unahitaji kwenda kwenye **Ultimate Multisite > Mipangilio > Kodi** na kubadilisha ili kuwasha mpangilio wa Washa Kodi.
 
@@ -25,7 +25,7 @@ Unaweza pia kuona mipangilio ya kodi kwa bidhaa binafsi:
 
 ![Mipangilio ya kodi kwa bidhaa](/img/config/settings-taxes.png)
 
-### Kodi haijajumuishwa dhidi ya Kodi imejumuishwa
+### Kodi haijajumuishwa dhidi ya Kodi imejumuishwa {#tax-excluded-vs-tax-included}
 
 Kwa chaguo-msingi, bei zote za bidhaa zako hazijumuishi kodi, ikimaanisha kwamba kodi **hazijajumuishwa** kwenye bei ya bidhaa. Tukiamua kwamba mteja anapaswa kulipa kodi kwa ununuzi fulani, tutaongeza kodi **juu ya** jumla ndogo.
 
@@ -37,7 +37,7 @@ Usisahau **kuhifadhi** mabadiliko uliyofanya.
 
 ###
 
-## Kuunda Viwango vya Kodi
+## Kuunda Viwango vya Kodi {#creating-tax-rates}
 
 Baada ya kuwasha Ukusanyaji wa Kodi, utahitaji kuunda viwango vya kodi kwa maeneo mahususi kwa kutumia kihariri chetu cha viwango vya kodi.
 
@@ -51,7 +51,7 @@ Kwenye ukurasa wa kihariri cha viwango vya kodi, unaweza kuongeza Viwango vipya 
 
 Utahitaji kuipa kila kiwango cha kodi **kichwa** (kinachotumika kwenye ankara). Kisha unaweza kuchagua **nchi** (inahitajika), **jimbo,** na **jiji** (vyote viwili ni vya hiari) ambako kodi hii itatozwa. Mwisho, ongeza **kiwango cha kodi kwa asilimia**.
 
-### Kategoria za Kodi
+### Kategoria za Kodi {#tax-categories}
 
 Unaweza pia kuunda Kategoria kadhaa za Kodi, ili kuongeza viwango tofauti vya kodi kwa aina tofauti za bidhaa.
 
@@ -73,7 +73,7 @@ Unaweza kuweka kategoria ya kodi kwa bidhaa mahususi kwa kwenda kwenye **ukurasa
 
 Kwenye skrini hiyo hiyo, unaweza kuzima kigeuzi cha **Je, Inatozwa Kodi?** ili kuijulisha Ultimate Multisite kwamba haipaswi kukusanya kodi kwenye bidhaa hiyo fulani.
 
-## Usaidizi wa VAT ya Ulaya
+## Usaidizi wa VAT ya Ulaya {#european-vat-support}
 
 Kama ilivyotajwa awali, tuna nyongeza inayopatikana kwa wateja katika EU ambao wana mahitaji ya ziada kutokana na kanuni za VAT za Ulaya.
 
@@ -101,7 +101,7 @@ Ukirudi kwenye **kichupo cha Mipangilio ya Kodi** , utaona chaguo jipya linapati
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Kuvuta Viwango vya Kodi vya VAT
+### Kuvuta Viwango vya Kodi vya VAT {#pulling-on-vat-tax-rates}
 
 Mojawapo ya zana ambazo muunganisho wetu huongeza ni uwezo wa kupakia viwango vya kodi kwa nchi wanachama wa EU. Hilo linaweza kufanywa kwa kutembelea ukurasa wa kihariri cha viwango vya kodi baada ya kuwasha usaidizi wa VAT ya EU.
 
@@ -111,7 +111,7 @@ Chini ya ukurasa, utaona chaguo za kuvuta VAT. Kuchagua aina ya kiwango na kubof
 
 Unaweza pia kuhariri thamani baada ya kuzivuta. Ili kufanya hivyo, hariri tu mstari wa jedwali unaohitaji na ubofye ili kuhifadhi thamani mpya.
 
-### Uthibitishaji wa VAT
+### Uthibitishaji wa VAT {#vat-validation}
 
 Wakati usaidizi wa VAT umewezeshwa, Ultimate Multisite itaongeza sehemu ya ziada kwenye fomu ya checkout, chini ya sehemu ya anwani ya bili. Sehemu hiyo itaonekana tu kwa wateja walioko katika EU.
 

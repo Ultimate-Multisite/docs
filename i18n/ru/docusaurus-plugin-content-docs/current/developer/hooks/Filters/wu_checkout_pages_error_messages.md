@@ -4,22 +4,22 @@ title: Фильтр - wu_checkout_pages_error_messages
 sidebar_label: wu_checkout_pages_error_messages
 _i18n_hash: 513f1f012abbaedc950e0d12f4fc01f4
 ---
-# Фильтр: wu_checkout_pages_error_messages
+# Фильтр: wu_checkout_pages_error_messages {#filter-wucheckoutpageserrormessages}
 
 Фильтруйте сообщения об ошибках.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $messages | `array` | Сообщения об ошибках. |
 
-### С версии
+### С версии {#since}
 
 - 2.1.1
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/checkout/class-checkout-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout-pages.php#L218) на строке 218
 
-## Возвращает
+## Возвращает {#returns}

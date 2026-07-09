@@ -3,7 +3,7 @@ title: Registro delle modifiche di Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Registro modifiche Captcha
+# Registro modifiche Captcha {#captcha-changelog}
 
 Versione: 1.5.0 - Rilasciata il 2026-05-22
 * Nuovo: Limitatore di frequenza hard-stop — conta ogni GET e POST sulle superfici protette da captcha (wp-login / registrazione / password dimenticata / commenti, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) e risponde con HTTP 429, un header `Retry-After` e una sospensione tarpit randomizzata (1–5s, con limite rigido a 15s).

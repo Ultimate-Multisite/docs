@@ -3,13 +3,13 @@ title: Дастури ҳамгироӣ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Роҳнамои ҳамгироӣ
+# Роҳнамои ҳамгироӣ {#integration-guide}
 
 Ин роҳнамо намунаҳои маъмули ҳамгироӣ бо Ultimate Multisite-ро дар бар мегирад, аз ҷумла пайвастшавӣ ба хизматрасониҳои беруна, сохтани дарвозаҳои пардохти фармоишӣ ва коркарди webhooks.
 
 Барои инфрасохтори tenant ҷудогона, барои роҳнамоӣ оид ба оғози tenant мустақил, санҷиши муҳоҷират, SSO ва teardown ба [Ҳамгироии Multi-Tenancy](./multi-tenancy) нигаред.
 
-## Ҳамгироии CRM
+## Ҳамгироии CRM {#crm-integration}
 
 Маълумоти муштариро ҳангоми сабтиноми муштариёни нав ба CRM-и худ ҳамоҳанг созед:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Ҳамгироии таҳлил
+## Ҳамгироии таҳлил {#analytics-integration}
 
 Рӯйдодҳои асосии тиҷоратиро дар тамоми давраи ҳаёти муштарӣ пайгирӣ кунед:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Қадамҳои баъдӣ
+## Қадамҳои баъдӣ {#next-steps}
 
 - [Таҳияи Custom Gateway](./custom-gateway) — Дарвозаи пардохти худро созед
 - [Коркарди Webhook](./webhooks) — Endpoint-ҳои webhook-и фармоишӣ эҷод кунед

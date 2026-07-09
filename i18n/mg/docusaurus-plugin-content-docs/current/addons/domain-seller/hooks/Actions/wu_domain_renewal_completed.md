@@ -4,11 +4,11 @@ title: Hetsika - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Action: wu_domain_renewal_completed
+# Action: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Mipoitra rehefa nohavaozina soa aman-tsara ny domain iray.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Anarana | Karazana | Famaritana |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Mipoitra rehefa nohavaozina soa aman-tsara ny domain iray.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadata momba ny fanavaozana (domain_name, years, customer_id, sns.). |
 | $result | `array&lt;string,mixed&gt;` | Array vokatra manta naverin’ny registrar, ahitana ny expiry_date vaovao. |
 
-### Hatramin'ny
+### Hatramin'ny {#since}
 
 - 2.0.0
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) amin'ny andalana 594

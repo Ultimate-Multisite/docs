@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Ang Site Builder Orchestration v2 (na ipinakilala sa Gratis AI Agent v1.4.0) ay ang makina na nagpapagana sa paggawa ng website na may maraming hakbang. Kapag hiniling mo sa agent na "gumawa ng website para sa restaurant" o "gumawa ng portfolio na may blog," hahatiin ng orchestrator ang pangkalahatang layunin na iyon sa isang nakabalangkas na **plano** (plan), matutukoy ang mga plugin na kailangan para matupad ito, isasagawa ang bawat hakbang nang sunud-sunod, susubaybayan ang progreso, at makakabawi mula sa mga error nang awtomatiko.
 
 ---
 
-## Paano Ito Gumagana
+## Paano Ito Gumagana {#how-it-works}
 
-### 1. Pagbuo ng Plano (Plan Generation)
+### 1. Pagbuo ng Plano (Plan Generation) {#1-plan-generation}
 
 Kapag nakatanggap ang agent ng utos na gumawa ng site, tatawag ito sa `create_site_plan` ability upang makabuo ng isang JSON na **site plan**. Inilalarawan ng plano ang mga sumusunod:
 
@@ -61,7 +61,7 @@ Kapag nakatanggap ang agent ng utos na gumawa ng site, tatawag ito sa `create_si
 }
 ```
 
-### 2. Pagtuklas ng Plugin (Plugin Discovery)
+### 2. Pagtuklas ng Plugin (Plugin Discovery) {#2-plugin-discovery}
 
 Bago magsimula ang pagpapatupad, susuriin ng orchestrator ang `plugin_requirements` ng plano at titingnan kung aling mga plugin ang aktibo na. Para sa mga nawawalang plugin, ito ang gagawin nito:
 
@@ -71,7 +71,7 @@ Bago magsimula ang pagpapatupad, susuriin ng orchestrator ang `plugin_requiremen
 
 Ang pagkabigo sa pagtuklas ng plugin ay hindi kritikal — ituturing ng orchestrator ang mga apektadong hakbang bilang `skipped` at magpapatuloy sa natitirang plano.
 
-### 3. Pagpapatupad ng Plano (Plan Execution)
+### 3. Pagpapatupad ng Plano (Plan Execution) {#3-plan-execution}
 
 Tatawag ang orchestrator sa `execute_site_plan` gamit ang plan ID. Ang pagpapatupad ay magpapatuloy phase-by-phase, hakbang-sa-hakbang:
 
@@ -79,7 +79,7 @@ Tatawag ang orchestrator sa `execute_site_plan` gamit ang plan ID. Ang pagpapatu
 - **Parallel steps** — ang mga hakbang sa loob ng iisang phase na walang pagkakadepende sa isa't isa ay ipapadala nang sabay-sabay kapag naka-set ang `parallel` flag.
 - **Step timeout** — ang bawat hakbang ay may sariling timeout (default: ang `Ability Timeout` setting). Ang hakbang na nag-timeout ay ituturing na `failed` at magpapatuloy ang plano.
 
-### 4. Pagsubaybay sa Pag-unlad (Progress Tracking)
+### 4. Pagsubaybay sa Pag-unlad (Progress Tracking) {#4-progress-tracking}
 
 Tumawag ng `get_plan_progress` anumang oras para tingnan ang status ng pagpapatupad:
 
@@ -104,7 +104,7 @@ Maaaring subaybayan ng mga gumagamit ng WP-CLI ang progreso gamit ang:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Pagbawi sa Error (Error Recovery)
+### 5. Pagbawi sa Error (Error Recovery) {#5-error-recovery}
 
 Kapag nag-fail ang isang hakbang, susuriin ng orchestrator kung may **fallback** step na tinukoy sa plano:
 
@@ -115,9 +115,9 @@ Iuulat ng agent ang lahat ng pagkabigo sa huling summary ng plano at maaaring ma
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Gumagawa ng nakabalangkas na site plan mula sa isang natural language goal description.
 
@@ -134,7 +134,7 @@ Gumagawa ng nakabalangkas na site plan mula sa isang natural language goal descr
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Nagsisimula ng pagpapatupad ng isang naunang nabuong site plan.
 
@@ -150,7 +150,7 @@ Nagsisimula ng pagpapatupad ng isang naunang nabuong site plan.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Ibinabalik ang kasalukuyang status ng pagpapatupad ng isang site plan.
 
@@ -164,7 +164,7 @@ Ibinabalik ang kasalukuyang status ng pagpapatupad ng isang site plan.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Manu-manong inaayos ang isang nag-fail na hakbang at ipinagpapatuloy ang pagpapatupad ng plano mula sa susunod na hakbang. Gamitin ito kapag hindi posible ang awtomatikong pagbawi at gusto mong makialam.
 
@@ -180,7 +180,7 @@ Manu-manong inaayos ang isang nag-fail na hakbang at ipinagpapatuloy ang pagpapa
 
 ---
 
-## Paghahambing ng v1 at v2
+## Paghahambing ng v1 at v2 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Manu-manong inaayos ang isang nag-fail na hakbang at ipinagpapatuloy ang pagpapa
 
 ---
 
-## WP-CLI Plan Commands
+## WP-CLI Plan Commands {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Gumagawa ng site plan mula sa isang goal description.
 
@@ -205,7 +205,7 @@ Gumagawa ng site plan mula sa isang goal description.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Nagpapatupad ng isang naunang nabuong plan.
 
@@ -213,7 +213,7 @@ Nagpapatupad ng isang naunang nabuong plan.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Nagpapakita ng kasalukuyang progreso para sa isang nagpapatakbo o natapos na plan.
 
@@ -221,7 +221,7 @@ Nagpapakita ng kasalukuyang progreso para sa isang nagpapatakbo o natapos na pla
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Naglilista ng lahat ng site plan (pending, in-progress, at completed).
 
@@ -229,7 +229,7 @@ Naglilista ng lahat ng site plan (pending, in-progress, at completed).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Ibinabalik sa `pending` ang isang nag-fail na plan para ma-re-execute mula sa simula.
 

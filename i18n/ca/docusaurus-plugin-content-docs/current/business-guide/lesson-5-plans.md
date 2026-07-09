@@ -3,15 +3,15 @@ title: 'Liçona 5: Dissenyar els teus plans'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Aula 5: Disseny dels teus plans
+# Aula 5: Disseny dels teus plans {#lesson-5-designing-your-plans}
 
 Els teus nivells de plans no són només nivells de preu; són un reflex de com operen realment els teus clients de niș. En aquesta aula, dissenyaràs nivells de producte que es puguin adaptar a les necessitats reals de les empreses de fitness en diferents etapes.
 
-## On acab vam
+## On acab vam {#where-we-left-off}
 
 FitSite té tres templates preparats (Studio Essential, Gym Pro, Fitness Chain). Ara creem els plans que determinen a què tenen accés els clients i què haurà de pagar.
 
-## Pensar en segments de clients
+## Pensar en segments de clients {#thinking-in-customer-segments}
 
 L'error que la majoria de la gent fa és dissenyar plans basats en funcions tècniques (emmagatzematge, banda passava, nombre de pàgines). Els teus clients de niș no pensen en aquests termes. Un propietari de gimnàsio pensa en el que necessita per gestionar el seu negoci.
 
@@ -25,11 +25,11 @@ Per als estudis de fitness, hi ha tres segments naturals:
 
 Els teus plans han de corresponre a aquests segments, no a feines arbitraries de funcions.
 
-## Creació dels plans FitSite
+## Creació dels plans FitSite {#creating-the-fitsite-plans}
 
 Navega a **Ultimate Multisite > Products > Add Product** per a cada plan.
 
-### Plan 1: FitSite Starter -- $49/mes
+### Plan 1: FitSite Starter -- $49/mes {#plan-1-fitsite-starter----49month}
 
 **Objectiu**: Entrenadors sol·licituds i petits estudis
 
@@ -59,7 +59,7 @@ Navega a **Ultimate Multisite > Products > Add Product** per a cada plan.
 - El teu tema seleccionat: Force Activate
 - Tots els altres temes: Hidden
 
-### Plan 2: FitSite Growth -- $99/mes
+### Plan 2: FitSite Growth -- $99/mes {#plan-2-fitsite-growth----99month}
 
 **Objectiu**: Gimnàsios establerts d'una sola ubicació
 
@@ -85,7 +85,7 @@ Navega a **Ultimate Multisite > Products > Add Product** per a cada plan.
 - Grup de plans: FitSite Plans
 - Ordre de producte: 2
 
-### Plan 3: FitSite Pro -- $199/mes
+### Plan 3: FitSite Pro -- $199/mes {#plan-3-fitsite-pro----199month}
 
 **Objectiu**: Cires de fitness amb múltiples ubicacions
 
@@ -109,7 +109,7 @@ Navega a **Ultimate Multisite > Products > Add Product** per a cada plan.
 - Grup de plans: FitSite Plans
 - Ordre de producte: 3
 
-## Configuració del grup de plans
+## Configuració del grup de plans {#setting-up-the-plan-group}
 
 El grup de plans assegura que els clients només puguin actualitzar o degradar dins de la família de plans FitSite. A la pestanya **Up & Downgrades** de cada plan:
 
@@ -118,7 +118,7 @@ El grup de plans assegura que els clients només puguin actualitzar o degradar d
 
 Això crea una ruta d'actualització clara: Starter → Growth → Pro.
 
-## Afegir *Order Bumps*
+## Afegir *Order Bumps* {#adding-order-bumps}
 
 Els *order bumps* són productes addicionals que es ofereixen durant el pagament. Per FitSite, considera:
 
@@ -128,7 +128,7 @@ Els *order bumps* són productes addicionals que es ofereixen durant el pagament
 
 Crea aquests com productes de tipus **Package** a Ultimate Multisite i associa-los als plans corresponents.
 
-## Per què funciona aquesta estructura
+## Per què funciona aquesta estructura {#why-this-structure-works}
 
 - **Starter** elimina barreres d'entrada: preu baix, oferta simple, posa els entrenadors en línia ràpidament.
 - **Growth** afegeix les funcions que els gimnàsios de fet demanen: reserva, galeries, dominis personalitzats.
@@ -136,7 +136,7 @@ Crea aquests com productes de tipus **Package** a Ultimate Multisite i associa-l
 - **Order bumps** permeten als clients personalitzar sense complicar els plans principals.
 - **Ruta d'actualització clara** significa que els clients creixen amb tu en lloc de marxar.
 
-## La xarxa FitSite fins ara
+## La xarxa FitSite fins ara {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## El que vam construir en aquesta aula
+## El que vam construir en aquesta aula {#what-we-built-this-lesson}
 
 - **Tres nivells de plans** associats a segments reals de negocis de fitness.
 - **Control de funcions** utilitzant els controls de plugins i templates d'Ultimate Multisite.

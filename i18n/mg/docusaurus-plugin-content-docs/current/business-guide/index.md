@@ -3,13 +3,13 @@ title: Manangana orinasa tranonkala ho an'ny sehatra manokana
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Manangana Orinasa Tranonkala Niche amin'ny Ultimate Multisite
+# Manangana Orinasa Tranonkala Niche amin'ny Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Ny ankamaroan'ny olona miezaka mivarotra tranonkala dia mifaninana amin'ny vidiny amin'i Wix, Squarespace, ary freelancer an'arivony. Resy izy ireo. Ireo mandresy kosa mifidy mpihaino manokana, manangana vahaolana namboarina ho an'io mpihaino io, ary mampandoa vola araka ny sanda atolony.
 
 Ity fampianarana ity dia mampianatra anao ny fomba hanaovana izany marina amin'ny fampiasana Ultimate Multisite.
 
-## Izay Haorinao
+## Izay Haorinao {#what-you-will-build}
 
 Mandritra ity fampianarana ity dia hanangana tambajotra tena izy sy miasa antsoina hoe **FitSite** ianao -- sehatra tranonkala namboarina manokana ho an'ny studio fitness, mpanazatra manokana, ary tompon'ny gym.
 
@@ -23,7 +23,7 @@ Amin'ny lesona farany, FitSite dia ho sehatra niche feno miaraka amin'ny:
 
 Hanaraka tsikelikely ianao, ary amin'ny farany dia hanana sehatra miasa sy fahalalana hamerenana ilay dingana ho an'izay niche fidinao.
 
-## Nahoana no Studio Fitness?
+## Nahoana no Studio Fitness? {#why-fitness-studios}
 
 Nila ohatra mivaingana azon'ny rehetra arahina izahay. Mety ny studio fitness satria:
 
@@ -34,7 +34,7 @@ Nila ohatra mivaingana azon'ny rehetra arahina izahay. Mety ny studio fitness sa
 
 Izay rehetra ianaranao amin'ny fananganana FitSite dia mihatra mivantana amin'izay niche fidinao: trano fisakafoanana, masoivohon'ny fananan-tany, biraon'ny mpisolovava, fiangonana, mpandraharaha asa tanana, na sehatra mitsangana hafa.
 
-## Firafitry ny Fampianarana
+## Firafitry ny Fampianarana {#course-structure}
 
 Ny lesona tsirairay dia mampiditra hevitra iray, manazava ny antony maha-zava-dehibe azy, ary mitarika anao amin'ny fampiharana azy ao amin'ny tambajotra FitSite. Ny lesona tsirairay dia miorina amin'ilay teo aloha.
 
@@ -55,7 +55,7 @@ Ny lesona tsirairay dia mampiditra hevitra iray, manazava ny antony maha-zava-de
 | [13. Fampitomboana](lesson-13-growth) | Fitomboana avy amin'ny mpanjifa voalohany ho orinasa tena izy | Paikady fitomboana sy automation FitSite |
 | [14. Inona no Manaraka](lesson-14-whats-next) | Fanitarana amin'ny niche mifanila sy fahafahana vaovao | Ny roadmap-nao aorian'ny FitSite |
 
-## Zavatra Ilaina Mialoha
+## Zavatra Ilaina Mialoha {#prerequisites}
 
 - Fametrahana WordPress Multisite (na fahavononana hametraka iray)
 - Lisansa Ultimate Multisite mavitrika
@@ -63,6 +63,6 @@ Ny lesona tsirairay dia mampiditra hevitra iray, manazava ny antony maha-zava-de
 
 Tsy ilaina ny coding. Raha mbola tsy nampiasa Ultimate Multisite mihitsy ianao taloha, tsy maninona izany -- manomboka amin'ny fametrahana vaovao ny Lesona 3.
 
-## Vonona?
+## Vonona? {#ready}
 
 Atombohy amin'ny [Lesona 1: Nahoana no Mandresy ny Niche](lesson-1-why-niche).

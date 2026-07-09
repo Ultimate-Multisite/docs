@@ -3,7 +3,7 @@ title: Kunden-Account-Seite
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Die Account-Seite deines Kunden (v2)
+# Die Account-Seite deines Kunden (v2) {#your-clients-account-page-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
@@ -11,7 +11,7 @@ Wenn Kunden in deinem Netzwerk einen Tarif abonnieren, erhalten sie Zugriff auf 
 
 In diesem Tutorial führen wir dich durch die Account-Seite des Kunden, und du siehst, was deine Kunden darin sehen und tun können.
 
-## Die Account-Seite
+## Die Account-Seite {#the-account-page}
 
 Die Account-Seite ist zugänglich, indem du im Dashboard deines Kunden auf **Account** klickst.
 
@@ -27,7 +27,7 @@ Nachdem ein Kunde darauf geklickt hat, sieht er eine Übersicht über seine Mitg
 
 Er kann die Mitgliedschaft auch auf einen anderen Tarif ändern oder ein anderes Paket oder einen anderen Service kaufen, den du anbietest. Sehen wir uns jeden Abschnitt separat an.
 
-### Übersicht deiner Mitgliedschaft:
+### Übersicht deiner Mitgliedschaft: {#your-membership-overview}
 
 Der erste Block direkt unter dem Website-Namen deiner Kunden zeigt eine Übersicht ihres aktuellen Tarifs und der Services/Pakete, die damit gekauft wurden. Der Block zeigt außerdem die Mitgliedschaftsnummer, den dafür ursprünglich gezahlten Betrag, wie viel der Tarif und jeder Service/jedes Paket kostet und wie oft ihnen diese Mitgliedschaft in Rechnung gestellt wurde. Sie können auch sehen, ob die Mitgliedschaft **Aktiv**, **Abgelaufen** oder **Gekündigt** ist.
 
@@ -43,7 +43,7 @@ Wenn deine Kunden nun Pakete oder Services für diese aktuelle Mitgliedschaft ka
 
 Beachte, dass Gutscheincodes auf dieser Seite zum Ändern der Mitgliedschaft nicht hinzugefügt werden können. Wenn der Kunde beim ersten Kauf der Mitgliedschaft einen Gutscheincode verwendet hat, gilt der Code auch für diese neue Mitgliedschaft.
 
-### Aktualisieren der Rechnungsadresse:
+### Aktualisieren der Rechnungsadresse: {#updating-the-billing-address}
 
 Auf der Account-Seite können deine Kunden auch ihre Rechnungsadresse aktualisieren. Sie müssen nur neben _Rechnungsadresse_ auf **Aktualisieren** klicken.
 
@@ -53,7 +53,7 @@ Ein neues Fenster wird deinem Kunden angezeigt. Er muss lediglich die neue Adres
 
 ![Formular zum Aktualisieren der Rechnungsadresse](/img/account-page/billing-address-form.png)
 
-### Ändern der Website-Vorlage:
+### Ändern der Website-Vorlage: {#changing-the-site-template}
 
 Um deinen Kunden zu erlauben, ihre Website-Vorlagen zu ändern, musst du zu **Ultimate Multisite > Einstellungen > Websites** gehen und die Option **Vorlagenwechsel erlauben** aktivieren.
 
@@ -81,7 +81,7 @@ Nachdem sie die Bestätigung aktiviert und auf **Wechsel verarbeiten** geklickt 
 
 Kunden können in diesem Panel auch **Reset current template** verwenden, wenn sie die Website auf das aktuell zugewiesene Template zurücksetzen müssen. Wie beim Wechsel zu einem anderen Template kann das Zurücksetzen eines Templates Website-Inhalte überschreiben. Daher sollten Kunden dies nur bestätigen, wenn sie die Zurücksetzungsaktion verstehen.
 
-### Benutzerdefinierte Domains hinzufügen:
+### Benutzerdefinierte Domains hinzufügen: {#adding-custom-domains}
 
 Ihre Kunden haben außerdem die Möglichkeit, auf ihrer Account-Seite eine benutzerdefinierte Domain für diesen Plan hinzuzufügen. Damit Ihre Kunden benutzerdefinierte Domains verwenden können, gehen Sie zu **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Nach dem Klick auf **Next Step** können Ihre Kunden ihren benutzerdefinierten D
 
 Nach dem Klick auf **Add Domain** wird die Domain dem Account Ihres Kunden hinzugefügt. Alles, was sie jetzt noch tun müssen, ist, die DNS-Einträge dieser benutzerdefinierten Domain bei ihrem Domain-Registrar zu ändern.
 
-### Passwort ändern:
+### Passwort ändern: {#changing-password}
 
 Im Account-Dashboard können Ihre Kunden außerdem ihr Passwort ändern, indem sie auf **Change Password** klicken.
 
@@ -125,7 +125,7 @@ Dadurch wird ein neues Fenster angezeigt, in dem Ihre Kunden ihr aktuelles Passw
 
 ![Formular zum Ändern des Passworts mit Feldern für aktuelles und neues Passwort](/img/account-page/change-password-form.png)
 
-### Danger Zone:
+### Danger Zone: {#danger-zone}
 
 Wir haben außerdem zwei Optionen, die im Bereich **Danger Zone** angezeigt werden: **Delete Site** und **Delete Account**. Beide befinden sich im Bereich Danger Zone, weil diese beiden Aktionen unumkehrbar sind. Wenn Ihre Kunden ihre Website oder ihren Account löschen, können sie diese nicht wiederherstellen.
 

@@ -3,9 +3,9 @@ title: Migrálás a V1-ről
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Átállás az 1.x verzióról
+# Átállás az 1.x verzióról {#migrating-from-v1}
 
-## Az Ultimate Multisite az eredeti 1.x verziócsaládról átállt a 2.x verziócsaládra.
+## Az Ultimate Multisite az eredeti 1.x verziócsaládról átállt a 2.x verziócsaládra. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Az Ultimate Multisite 2.0 és újabb verziói a kódbázis teljes újraírását jelentik, ami azt jelenti, hogy nagyon kevés közös elem van a régi és az új verzió között. Emiatt az 1.x verzióról a 2.x verzióra való frissítéskor az adatokat át kell alakítani egy olyan formátumra, amelyet az új verziók értelmezni tudnak.
 
@@ -15,7 +15,7 @@ Ebben a leckében bemutatjuk, hogyan működik a migráló, mit tegyél hiba ese
 
 _**FONTOS: Mielőtt elkezdenéd a frissítést az 1.x verzióról a 2.0 verzióra, mindenképpen készíts biztonsági mentést a webhelyed adatbázisáról.**_
 
-## Első lépések
+## Első lépések {#first-steps}
 
 Az első lépés a bővítmény .zip fájljának letöltése és a 2.0 verzió telepítése a hálózati admin vezérlőpulton.
 
@@ -51,7 +51,7 @@ A licenc aktiválása után a következő oldalon az **Install** gombra kattintv
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Most jön az átállás
+## Most jön az átállás {#now-the-migration}
 
 A migrálónak van egy beépített biztonsági funkciója, amely átvizsgálja a teljes multisite-ot, hogy megbizonyosodjon arról, hogy az összes Ultimate Multisite adatod problémamentesen átállítható. Kattints a **Run Check** gombra a folyamat elindításához.
 
@@ -59,13 +59,13 @@ A migrálónak van egy beépített biztonsági funkciója, amely átvizsgálja a
 
 Az ellenőrzés futtatása után két lehetséges eredmény van: **hibával** vagy **hiba nélkül**.
 
-### Hibával
+### Hibával {#with-error}
 
 Ha hibaüzenetet kapsz, fel kell venned a kapcsolatot az ügyfélszolgálatunkkal, hogy segítsenek a hiba kijavításában. Amikor jegyet nyitsz, mindenképpen **mellékeld a hibanaplót**. Letöltheted a naplót, vagy kattinthatsz a „contact our support team" linkre. Ez megnyitja a súgó widgetet az oldal jobb oldalán, ahol a mezők már előre ki vannak töltve, és a leírás alatt megtalálhatók a hibanaplók.
 
 _**Mivel a rendszer hibát talált, nem tudsz továbblépni a 2.0 verzióra való átállással. Visszaállhatsz az 1.x verzióra, hogy a hálózatod tovább működjön, amíg a hibát ki nem javítják.**_
 
-### Hiba nélkül
+### Hiba nélkül {#without-error}
 
 Ha a rendszer nem talál hibát, egy sikeres üzenetet látsz, és az oldal alján megjelenik egy **Migrate** gomb, amellyel folytathatod az átállást. Ezen az oldalon emlékeztetünk, hogy a továbblépés előtt készíts biztonsági mentést az adatbázisodról, amit erősen ajánlunk. Ha már van biztonsági mentésed, kattints a **Migrate** gombra.
 

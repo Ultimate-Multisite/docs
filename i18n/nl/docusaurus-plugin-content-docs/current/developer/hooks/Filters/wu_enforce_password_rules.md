@@ -4,13 +4,13 @@ title: Filter - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Filter of extra wachtwoordregels moeten worden afgedwongen.
 
 When true, enforces minimum length and character requirements. Automatically enabled for "Super Strong" setting or when Defender Pro's Strong Password feature is active.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -18,10 +18,10 @@ When true, enforces minimum length and character requirements. Automatically ena
 | $strength_setting | `string` | De admin instelling waarde. |
 | $defender_active | `bool` | Of Defender Pro Strong Password actief is. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.4.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) at line 531

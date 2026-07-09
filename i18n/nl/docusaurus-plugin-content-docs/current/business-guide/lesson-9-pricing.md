@@ -3,17 +3,17 @@ title: 'Les 9: Prijzen voor Winst'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Les 9: Prijsbepaling voor Winst
+# Les 9: Prijsbepaling voor Winst {#lesson-9-pricing-for-profit}
 
 In Les 5 hebben we de initiële prijzen voor de FitSite-abonnementen vastgesteld. Nu verfijnen we de prijsstrategie met technieken die de omzet verhogen, upgrades stimuleren en churn (verloop) verminderen.
 
-## Waar We Gebleven Zijn
+## Waar We Gebleven Zijn {#where-we-left-off}
 
 FitSite heeft abonnementen, templates, checkout, branding en onboarding gereed. De initiële prijzen waren $49/$99/$199 per maand. Nu laten we die prijzen harder werken.
 
-## Prijsprincipes voor Niche Platforms
+## Prijsprincipes voor Niche Platforms {#pricing-principles-for-niche-platforms}
 
-### Prijs op Basis van Waarde, Niet van Kosten
+### Prijs op Basis van Waarde, Niet van Kosten {#price-on-value-not-cost}
 
 Uw hostingkosten kunnen $5-$15 per klantwebsite bedragen. Dat betekent echter niet dat uw prijs $20 moet zijn. U verkoopt geen hosting. U verkoopt:
 
@@ -24,7 +24,7 @@ Uw hostingkosten kunnen $5-$15 per klantwebsite bedragen. Dat betekent echter ni
 
 Prijs op basis van de waarde die u levert, niet op basis van de kosten om het te leveren.
 
-### Veranker Je aan Alternatieven
+### Veranker Je aan Alternatieven {#anchor-to-alternatives}
 
 Wanneer een eigenaar van een fitnessstudio FitSite evalueert, vergelijkt deze het met:
 
@@ -34,7 +34,7 @@ Wanneer een eigenaar van een fitnessstudio FitSite evalueert, vergelijkt deze he
 
 Met $49-$199/maand is FitSite goedkoper dan een ontwikkelaar, capabeler dan algemene builders, en oneindig beter dan geen website.
 
-## Het Implementeren van Prijsvariaties
+## Het Implementeren van Prijsvariaties {#implementing-price-variations}
 
 Jaarlijkse prijzen moedigen toewijding aan en verminderen churn. Navigeer naar de tab **Price Variations** van elk abonnement en voeg jaarlijkse opties toe:
 
@@ -46,12 +46,12 @@ Jaarlijkse prijzen moedigen toewijding aan en verminderen churn. Navigeer naar d
 
 Voeg een veld **Period Selection** toe aan uw checkout-formulier, zodat klanten kunnen schakelen tussen maandelijkse en jaarlijkse facturering. Zie [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Waarom Jaarlijkse Prijzen Werken
+### Waarom Jaarlijkse Prijzen Werken {#why-annual-pricing-works}
 
 - **Voor u**: Directe cashflow, lagere churn (klanten die jaarlijks betalen, hebben minder snel de neiging om halverwege te annuleren)
 - **Voor hen**: Echte besparingen, voorspelbaarheid van het budget
 
-## Setup Fees
+## Setup Fees {#setup-fees}
 
 Overweeg een eenmalige setup fee voor abonnementen die hands-on configuratie vereisen:
 
@@ -61,7 +61,7 @@ Overweeg een eenmalige setup fee voor abonnementen die hands-on configuratie ver
 
 Configureer setup fees op de prijssectie van elk abonnement. Zie [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) voor details.
 
-## Proefperiodes
+## Proefperiodes {#trial-periods}
 
 Het aanbieden van een proefperiode vermindert de opmaakdrempel, maar brengt het risico van non-conversie met zich mee. Voor FitSite:
 
@@ -70,11 +70,11 @@ Het aanbieden van een proefperiode vermindert de opmaakdrempel, maar brengt het 
 
 Configureer de proefperiode op de prijssectie van het Starter-abonnement door de toggle **Offer Trial** in te schakelen en de duur in te stellen op 7 dagen.
 
-### Proefperiodes Laten Converteren
+### Proefperiodes Laten Converteren {#making-trials-convert}
 
 Een proefperiode werkt alleen als de klant waarde ervaart gedurende de proefperiode. Uw onboarding-reeks (Les 8) is hier cruciaal voor – de welkomstmails moeten getimed zijn om betrokkenheid te stimuleren binnen de 7 dagen.
 
-## Kortingscodes
+## Kortingscodes {#discount-codes}
 
 Maak strategische kortingscodes voor specifieke doeleinden:
 
@@ -88,7 +88,7 @@ Navigeer naar **Ultimate Multisite > Discount Codes** om deze te maken. Zie [Cre
 Kortingen moeten strategische hulpmiddelen zijn, geen permanente voorzieningen. Als iedereen een korting krijgt, is het dan geen korting – het is uw werkelijke prijs. Gebruik ze voor specifieke campagnes, verwijzingen en tijdelijke promoties.
 :::
 
-## Belastingafhandeling
+## Belastingafhandeling {#tax-handling}
 
 Als u opereert in een jurisdictie die belastinginning vereist:
 
@@ -98,7 +98,7 @@ Als u opereert in een jurisdictie die belastinginning vereist:
 
 Zie [Tax Handling](/user-guide/payment-gateways/tax-handling) voor gedetailleerde configuratie. Als u klanten internationaal bedient, overweeg dan de [VAT addon](/addons/vat) voor EU-naleving.
 
-## Uw Prijzen Herzien
+## Uw Prijzen Herzien {#reviewing-your-pricing}
 
 Nadat u gelanceerd heeft, herzie de prijzen dan elk kwartaal. Kijk naar:
 
@@ -107,7 +107,7 @@ Nadat u gelanceerd heeft, herzie de prijzen dan elk kwartaal. Kijk naar:
 - **Churn per abonnement**: Als jaarlijkse klanten minder churnen, duw dan harder op jaarlijkse prijzen
 - **Concurrentieprijzen**: Wat vragen alternatieven? Zijn wij correct gepositioneerd?
 
-## Het FitSite Netwerk Tot Nu Toe
+## Het FitSite Netwerk Tot Nu Toe {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Klaar voor lancering (volgende les)
 ```
 
-## Wat We Deze Les Hebben Gebouwd
+## Wat We Deze Les Hebben Gebouwd {#what-we-built-this-lesson}
 
 - **Jaarlijkse prijzen** met 20% korting om toewijding te stimuleren
 - **Setup fees** op hogere niveaus om de onboarding-inspanning te dekken

@@ -3,9 +3,9 @@ title: Qo‘shimcha ishlab chiqishni boshlash
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Qo‘shimcha ishlab chiqish
+# Qo‘shimcha ishlab chiqish {#addon-development}
 
-## Qo‘shimcha tuzilmasi
+## Qo‘shimcha tuzilmasi {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Asosiy qo‘shimcha fayli shabloni
+## Asosiy qo‘shimcha fayli shabloni {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Maxsus model namunasi
+## Maxsus model namunasi {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Boshqaruv sahifasi integratsiyasi
+## Boshqaruv sahifasi integratsiyasi {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addon’ingizni sinash
+## Addon’ingizni sinash {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 kengaytirish nuqtalari
+## v2.13.0 kengaytirish nuqtalari {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 suveren tenant’lar, checkout domenlari yoki host-provider DNS avtomatlashtiruvi bilan integratsiyalashadigan addon’lar uchun foydali bo‘lgan bir nechta kengaytirish nuqtalarini qo‘shadi.
 
-### SSO va asosiy sayt boshqaruv URL’lari
+### SSO va asosiy sayt boshqaruv URL’lari {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-form asosiy domenlari
+### Checkout-form asosiy domenlari {#checkout-form-base-domains}
 
 Addon’ingiz har bir sayt uchun alohida maxsus mapping’lar o‘rniga checkout-form **Sayt URL** domenlari kabi ishlashi kerak bo‘lgan qo‘shimcha umumiy asosiy domenlarni taqdim etsa, `wu_checkout_form_base_domains` dan foydalaning:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite bu host’larni normallashtiradi va ular uchun avtomatik har bir saytga oid mapped-domain yozuvlarini o‘tkazib yuboradi.
 
-### Avtomatik domen yozuvi yaratish
+### Avtomatik domen yozuvi yaratish {#automatic-domain-record-creation}
 
 Addon’ingiz yangi yaratilgan sayt uchun avtomatik domen yozuvi yaratishni to‘xtatishi yoki kechiktirishi kerak bo‘lganda `wu_should_create_domain_record_for_site` dan foydalaning:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` ni tinglaydigan host-provider integratsiyalari saytlar yaratilganda provider tomonidagi DNS yozuvlarini yaratishi mumkin. Agar bu action uchun hech qanday integratsiya ro‘yxatdan o‘tkazilmagan bo‘lsa, Ultimate Multisite bo‘sh fon vazifasini o‘tkazib yuboradi.
 
-## Keyingi qadamlar
+## Keyingi qadamlar {#next-steps}
 
 - Mavjud action va filter’lar uchun [Hooks ma’lumotnomasi](/developer/hooks) ni ko‘rib chiqing
 - API integratsiyasi uchun [REST API umumiy ko‘rinishi](/developer/rest-api/overview) ni tekshiring

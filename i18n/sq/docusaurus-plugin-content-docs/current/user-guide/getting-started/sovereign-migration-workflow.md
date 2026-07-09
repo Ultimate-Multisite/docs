@@ -3,11 +3,11 @@ title: Përqendrimi i migrimit Sovran
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Proces Migrimi Sovran
+# Proces Migrimi Sovran {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 shtoi dyporta gate të verifikimit të migrimit për lëvizjen e një subsite standard në infrastrukturën e qytetarit sovræn.
 
-## Para se të filloni
+## Para se të filloni {#before-you-start}
 
 Sigurohuni se keni:
 
@@ -17,7 +17,7 @@ Sigurohuni se keni:
 - Bashkimin e hostit të bazës së të dhënave që përputhet me mjedisin destinacion.
 - Qasjen për të ekzekutuar komandat WP-CLI për rrjetin.
 
-## Proces i rekomanduar
+## Proces i rekomanduar {#recommended-workflow}
 
 1. Përgatisni bazën e të dhënave dhe sistemin e skurtës (filesystem) të qytetarit destinacion.
 2. Regjistroni ose përditësoni cilësimet e izolimit të qytetarit (tenant isolation settings).
@@ -28,7 +28,7 @@ Sigurohuni se keni:
 7. Vizitoni qytetarin me SSO.
 8. Ndryshoni DNS ose rrugën (routing) vetëm pasi verifikimi të kalojë.
 
-## Gate-t e verifikimit
+## Gate-t e verifikimit {#verification-gates}
 
 Procesi i verifikimit kontrollon migrimin nga disa kënde:
 
@@ -40,6 +40,6 @@ Procesi i verifikimit kontrollon migrimin nga disa kënde:
 
 Trajtur dështimet e verifikimit si pengesa para se lëshimin në prodhim (pre-launch blockers). Riparroni problemin e raportuar të bazës së të dhënave, përdoruesit, kuerit ose rrugimit, pastaj ekzekutoni verifikimin përsëri para se ta ekspozoni qytetarin ndaj klientëve.
 
-## Vizita e parë në prodhim
+## Vizita e parë në prodhim {#first-production-visit}
 
 Pas kur verifikimi kalon, përdorni **Visit (SSO)** nga ekranin menaxhimi i sitit për vizitën administrative të parë. Kjo konfirmojnë rrugimin e qytetarit, trajtimin e tokenit SSO, pinimin e origjinës (origin pinning) dhe providherimin e përdoruesve në anën e qytetarit në një hap kontrolluar.

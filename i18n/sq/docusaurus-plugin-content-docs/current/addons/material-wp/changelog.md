@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve i Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Regjistri i ndryshimeve të Material WP
+# Regjistri i ndryshimeve të Material WP {#material-wp-changelog}
 
 Version 1.1.15 - 01/26/2026
 * Përmirësuar: Stili dhe formatimi i kodit;

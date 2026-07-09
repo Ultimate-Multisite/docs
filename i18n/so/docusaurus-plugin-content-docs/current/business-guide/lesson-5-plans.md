@@ -3,15 +3,15 @@ title: 'Casharka 5: Naqshadaynta Qorshayaashaaga'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Casharka 5: Naqshadaynta Qorshayaashaada
+# Casharka 5: Naqshadaynta Qorshayaashaada {#lesson-5-designing-your-plans}
 
 Heerarka qorshayaashaadu ma aha kaliya heerar qiimeyn -- waa muujin sida macaamiishaada suuq-gaarka ahi dhab ahaan u shaqeeyaan. Casharkan waxaad ku naqshadayn doontaa heerar alaab oo la jaanqaadaya baahiyaha dhabta ah ee ganacsiyada jirdhiska ee marxalado kala duwan ku jira.
 
-## Halkii Aan Ku Joognay
+## Halkii Aan Ku Joognay {#where-we-left-off}
 
 FitSite wuxuu diyaar u leeyahay saddex template (Studio Essential, Gym Pro, Fitness Chain). Hadda waxaan abuureynaa qorshayaasha go'aamiya waxa macaamiishu heli karaan iyo waxa ay bixinayaan.
 
-## Ka Fikiridda Qaybaha Macaamiisha
+## Ka Fikiridda Qaybaha Macaamiisha {#thinking-in-customer-segments}
 
 Khaladka dadka badankoodu sameeyaan waa inay qorshayaasha ku naqshadeeyaan astaamo farsamo (kaydinta, bandwidth, tirada bogagga). Macaamiishaada suuq-gaarka ahi sidaas uma fikiraan. Milkiilaha gym-ku wuxuu ka fikiraa waxa uu u baahan yahay si uu ganacsigiisa u maamulo.
 
@@ -25,11 +25,11 @@ Studio-yada jirdhiska, saddex qaybood oo dabiici ah ayaa jira:
 
 Qorshayaashaadu waa inay la jaanqaadaan qaybahan, ma aha xirmooyin astaamo oo iska samaysan.
 
-## Abuuridda Qorshayaasha FitSite
+## Abuuridda Qorshayaasha FitSite {#creating-the-fitsite-plans}
 
 U gudub **Ultimate Multisite > Alaabooyin > Ku Dar Alaab** qorshe kasta.
 
-### Qorshe 1: FitSite Starter -- $49/bishii
+### Qorshe 1: FitSite Starter -- $49/bishii {#plan-1-fitsite-starter----49month}
 
 **Bartilmaameed**: Tababarayaal kali ah iyo studio-yo yaryar
 
@@ -59,7 +59,7 @@ U gudub **Ultimate Multisite > Alaabooyin > Ku Dar Alaab** qorshe kasta.
 - Theme-kaaga la doortay: Si Qasab ah u Daar
 - Dhammaan themes kale: Qarsoon
 
-### Qorshe 2: FitSite Growth -- $99/bishii
+### Qorshe 2: FitSite Growth -- $99/bishii {#plan-2-fitsite-growth----99month}
 
 **Bartilmaameed**: Gym-yo dhisan oo hal goob leh
 
@@ -85,7 +85,7 @@ U gudub **Ultimate Multisite > Alaabooyin > Ku Dar Alaab** qorshe kasta.
 - Kooxda qorshaha: FitSite Plans
 - Kala-horreynta alaabta: 2
 
-### Qorshe 3: FitSite Pro -- $199/bishii
+### Qorshe 3: FitSite Pro -- $199/bishii {#plan-3-fitsite-pro----199month}
 
 **Bartilmaameed**: Silsilado jirdhis oo goobo badan leh
 
@@ -109,7 +109,7 @@ U gudub **Ultimate Multisite > Alaabooyin > Ku Dar Alaab** qorshe kasta.
 - Kooxda qorshaha: FitSite Plans
 - Kala-horreynta alaabta: 3
 
-## Dejinta Kooxda Qorshaha
+## Dejinta Kooxda Qorshaha {#setting-up-the-plan-group}
 
 Kooxda qorshuhu waxay xaqiijisaa in macaamiishu kaliya kor u qaadi karaan ama hoos u dhigi karaan gudaha qoyska qorshayaasha FitSite. Tabka **Kor-u-qaadista & Hoos-u-dhigidda** ee qorshe kasta:
 
@@ -118,7 +118,7 @@ Kooxda qorshuhu waxay xaqiijisaa in macaamiishu kaliya kor u qaadi karaan ama ho
 
 Tani waxay abuurtaa waddo kor-u-qaadis cad: Starter → Growth → Pro.
 
-## Ku Daridda Kordhinnada Dalabka
+## Ku Daridda Kordhinnada Dalabka {#adding-order-bumps}
 
 Kordhinnada dalabku waa alaabooyin dheeraad ah oo la bixiyo inta lagu jiro bixinta. FitSite ahaan, tixgeli:
 
@@ -128,7 +128,7 @@ Kordhinnada dalabku waa alaabooyin dheeraad ah oo la bixiyo inta lagu jiro bixin
 
 Kuwan u abuur sida alaabooyin nooca **Xirmo** ah gudaha Ultimate Multisite oo ku xidh qorshayaasha khuseeya.
 
-## Sababta Qaab-dhismeedkani U Shaqeeyo
+## Sababta Qaab-dhismeedkani U Shaqeeyo {#why-this-structure-works}
 
 - **Starter** wuxuu meesha ka saaraa caqabadaha gelitaanka -- qiime hoose, dalab fudud, tababarayaasha si dhakhso ah online u geliya
 - **Growth** wuxuu ku daraa astaamaha gym-yadu dhab ahaantii codsadaan -- ballansasho, galleries, domains gaar ah
@@ -136,7 +136,7 @@ Kuwan u abuur sida alaabooyin nooca **Xirmo** ah gudaha Ultimate Multisite oo ku
 - **Kordhinnada dalabka** waxay macaamiisha u oggolaadaan inay habeeyaan iyaga oo aan adkayn qorshayaasha asaasiga ah
 - **Waddo kor-u-qaadis cad** waxay ka dhigan tahay in macaamiishu kula koraan halkii ay kaa tegi lahaayeen
 
-## Shabakadda FitSite Ilaa Hadda
+## Shabakadda FitSite Ilaa Hadda {#the-fitsite-network-so-far}
 
 ```
 Shabakadda FitSite
@@ -152,7 +152,7 @@ Shabakadda FitSite
 └── Diyaar u ah habeynta bixinta (casharka xiga)
 ```
 
-## Waxa Aan Ku Dhisnay Casharkan
+## Waxa Aan Ku Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Saddex heer qorshe** oo la jaanqaadaya qaybaha dhabta ah ee ganacsiyada jirdhiska
 - **Xakamaynta astaamaha** iyadoo la adeegsanayo kontaroollada kordhinta iyo template-ka ee Ultimate Multisite

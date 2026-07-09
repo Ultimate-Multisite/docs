@@ -3,7 +3,7 @@ title: Catatan Perubahan Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Catatan Perubahan Captcha
+# Catatan Perubahan Captcha {#captcha-changelog}
 
 Versi: 1.5.0 - Dirilis pada 2026-05-22
 * Baru: Pembatas laju (rate limiter) hard-stop — menghitung setiap GET dan POST pada permukaan yang dilindungi captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) dan membalas dengan HTTP 429, header `Retry-After`, dan tidur tarpit yang diacak (1–5 detik, maksimal 15 detik).

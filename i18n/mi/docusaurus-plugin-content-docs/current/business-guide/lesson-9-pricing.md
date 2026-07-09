@@ -3,17 +3,17 @@ title: 'Akoranga 9: Te whakatau utu kia whai hua'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Akoranga 9: Te Whakarite Utu mō te Hua
+# Akoranga 9: Te Whakarite Utu mō te Hua {#lesson-9-pricing-for-profit}
 
 I te Akoranga 5 i whakaritea e tātou ngā utu tuatahi mō ngā mahere FitSite. Inaianei ka whakapai ake tātou i te rautaki utu mā ngā tikanga e whakapiki ana i te whiwhinga moni, e akiaki ana i ngā whakahōunga, ā, e whakaiti ana i te whakakore kiritaki.
 
-## Te Wāhi i Mutu Ai Tātou
+## Te Wāhi i Mutu Ai Tātou {#where-we-left-off}
 
 Kua takoto kē ngā mahere, ngā tātauira, te tukanga utu, te waitohu, me te whakaurunga mō FitSite. Ko te utu tuatahi ko $49/$99/$199 ia marama. Inaianei ka whakapakari ake tātou i taua utu kia whai hua ake.
 
-## Ngā Mātāpono Utu mō ngā Pūhara Motuhake
+## Ngā Mātāpono Utu mō ngā Pūhara Motuhake {#pricing-principles-for-niche-platforms}
 
-### Whakaritea te Utu ki te Uara, Ehara ki te Utu Whakapau
+### Whakaritea te Utu ki te Uara, Ehara ki te Utu Whakapau {#price-on-value-not-cost}
 
 Tērā pea ko ō utu hosting he $5-$15 mō ia pae kiritaki. Ehara tēnei i te kī me $20 tō utu. Ehara koe i te hoko hosting. Kei te hoko koe i:
 
@@ -24,7 +24,7 @@ Tērā pea ko ō utu hosting he $5-$15 mō ia pae kiritaki. Ehara tēnei i te k�
 
 Whakaritea te utu i runga i te uara ka tukuna e koe, kaua i runga i te utu ki te tuku.
 
-### Herea ki ngā Kōwhiringa kē
+### Herea ki ngā Kōwhiringa kē {#anchor-to-alternatives}
 
 Ina aromatawai tētahi rangatira studio hākinakina i a FitSite, ka whakataurite ia ki:
 
@@ -34,7 +34,7 @@ Ina aromatawai tētahi rangatira studio hākinakina i a FitSite, ka whakataurite
 
 I te $49-$199/marama, he iti ake te utu o FitSite i tētahi kaiwhakawhanake, he kaha ake i ngā kaihanga whānui, ā, he tino pai ake i te kore paetukutuku.
 
-## Te Whakatutuki i ngā Rerekētanga Utu
+## Te Whakatutuki i ngā Rerekētanga Utu {#implementing-price-variations}
 
 Ka akiaki te utu ā-tau i te ū ki te ratonga, ā, ka whakaiti i te whakakore kiritaki. Haere ki te ripa **Ngā Rerekētanga Utu** o ia mahere, ā, tāpirihia ngā kōwhiringa ā-tau:
 
@@ -46,12 +46,12 @@ Ka akiaki te utu ā-tau i te ū ki te ratonga, ā, ka whakaiti i te whakakore ki
 
 Tāpirihia tētahi āpure **Kōwhiringa Wā** ki tō puka utu kia taea ai e ngā kiritaki te whakawhiti i waenga i te nama ā-marama me te nama ā-tau. Tirohia [Ngā Puka Utu](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### He Aha e Whai Hua Ai te Utu Ā-tau
+### He Aha e Whai Hua Ai te Utu Ā-tau {#why-annual-pricing-works}
 
 - **Mōu**: He moni i mua, he iti ake te whakakore kiritaki (he iti ake te tūponotanga ka whakakore ngā kiritaki e utu ā-tau ana i waenganui o te wā)
 - **Mō rātou**: He penapena tūturu, he mārama ki te pūtea
 
-## Ngā Utu Whakarite
+## Ngā Utu Whakarite {#setup-fees}
 
 Whakaarohia tētahi utu whakarite kotahi anake mō ngā mahere e whai ana i te whirihoranga ā-ringa:
 
@@ -61,7 +61,7 @@ Whakaarohia tētahi utu whakarite kotahi anake mō ngā mahere e whai ana i te w
 
 Whirihorahia ngā utu whakarite ki te wāhanga utu o ia mahere. Tirohia [Te Waihanga i Tō Hua Ohaurunga Tuatahi](/user-guide/configuration/creating-your-first-subscription-product) mō ngā taipitopito.
 
-## Ngā Wā Whakamātau
+## Ngā Wā Whakamātau {#trial-periods}
 
 Ko te tuku whakamātau ka whakaiti i te uaua o te rēhita, engari ka whakauru hoki i te mōrea kāore e tahuri hei kaiutu. Mō FitSite:
 
@@ -70,11 +70,11 @@ Ko te tuku whakamātau ka whakaiti i te uaua o te rēhita, engari ka whakauru ho
 
 Whirihorahia te whakamātau ki te wāhanga utu o te mahere Starter mā te whakahohe i te takahuri **Tuku Whakamātau**, ā, whakaritea te roanga ki te 7 rā.
 
-### Te Whakahuri i ngā Whakamātau hei Kaiutu
+### Te Whakahuri i ngā Whakamātau hei Kaiutu {#making-trials-convert}
 
 Ka whai hua noa te whakamātau mēnā ka rongo te kiritaki i te uara i roto i te wā whakamātau. He mea tino nui tō raupapa whakaurunga (Akoranga 8) i konei -- me whakarite ngā īmēra pōwhiri kia akiaki i te whai wāhi mai i roto i te matapihi 7 rā.
 
-## Ngā Waehere Whakahekenga
+## Ngā Waehere Whakahekenga {#discount-codes}
 
 Waihangatia ngā waehere whakahekenga rautaki mō ngā kaupapa motuhake:
 
@@ -88,7 +88,7 @@ Haere ki **Ultimate Multisite > Ngā Waehere Whakahekenga** ki te waihanga i ēn
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Te Whakahaere Tāke
+## Te Whakahaere Tāke {#tax-handling}
 
 Mēnā e whakahaere ana koe i tētahi mana ā-ture e hiahiatia ana te kohikohi tāke:
 
@@ -98,7 +98,7 @@ Mēnā e whakahaere ana koe i tētahi mana ā-ture e hiahiatia ana te kohikohi t
 
 Tirohia [Te Whakahaere Tāke](/user-guide/payment-gateways/tax-handling) mō te whirihoranga taipitopito. Mēnā e tuku ratonga ana koe ki ngā kiritaki o te ao, whakaarohia te [VAT addon](/addons/vat) mō te ū ki ngā ture EU.
 
-## Te Arotake i Tō Utu
+## Te Arotake i Tō Utu {#reviewing-your-pricing}
 
 Whai muri i te whakarewatanga, hoki anō ki te arotake i te utu ia hauwhā. Tirohia:
 
@@ -107,7 +107,7 @@ Whai muri i te whakarewatanga, hoki anō ki te arotake i te utu ia hauwhā. Tiro
 - **Te whakakore kiritaki mā ia mahere**: Mēnā he iti ake te whakakore a ngā kiritaki ā-tau, kaha ake te whakatairanga i te utu ā-tau
 - **Ngā utu a ngā kaiwhakataetae**: He aha ngā utu a ngā kōwhiringa kē? Kei te tika tō tūnga?
 
-## Te Whatunga FitSite Tae Mai ki Nāianei
+## Te Whatunga FitSite Tae Mai ki Nāianei {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Ngā Mea i Hangaia e Tātou i Tēnei Akoranga
+## Ngā Mea i Hangaia e Tātou i Tēnei Akoranga {#what-we-built-this-lesson}
 
 - **Utu ā-tau** me te hekenga utu 20% hei akiaki i te ūmanga
 - **Ngā utu whakarite** i ngā taumata teitei ake hei kapi i te mahi whakauru

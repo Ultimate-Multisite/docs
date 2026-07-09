@@ -3,18 +3,18 @@ title: Cloudways-integratie
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways-integratie
+# Cloudways-integratie {#cloudways-integration}
 
-## Overzicht
+## Overzicht {#overview}
 Cloudways is een beheerd cloudhostingplatform waarmee je WordPress-sites kunt implementeren bij verschillende cloudproviders zoals DigitalOcean, AWS, Google Cloud en meer. Deze integratie maakt automatische domeinsynchronisatie en beheer van SSL-certificaten mogelijk tussen Ultimate Multisite en Cloudways.
 
-## Functies
+## Functies {#features}
 - Automatische domeinsynchronisatie
 - Beheer van SSL-certificaten
 - Ondersteuning voor extra domeinen
 - DNS-validatie voor SSL-certificaten
 
-## Vereisten
+## Vereisten {#requirements}
 De volgende constanten moeten worden gedefinieerd in je `wp-config.php`-bestand:
 
 ```php
@@ -30,16 +30,16 @@ Optioneel kun je ook definiëren:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Installatie-instructies
+## Installatie-instructies {#setup-instructions}
 
-### 1. Haal je Cloudways API-inloggegevens op
+### 1. Haal je Cloudways API-inloggegevens op {#1-get-your-cloudways-api-credentials}
 
 1. Log in op je Cloudways Dashboard
 2. Ga naar "Account" > "API-sleutels"
 3. Genereer een API-sleutel als je er nog geen hebt
 4. Kopieer je e-mailadres en API-sleutel
 
-### 2. Haal je server- en applicatie-ID's op
+### 2. Haal je server- en applicatie-ID's op {#2-get-your-server-and-application-ids}
 
 1. Ga in je Cloudways Dashboard naar "Servers"
 2. Selecteer de server waarop je WordPress-multisite wordt gehost
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Ga naar "Applicaties" en selecteer je WordPress-applicatie
 5. De app-ID is zichtbaar in de URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Voeg constanten toe aan wp-config.php
+### 3. Voeg constanten toe aan wp-config.php {#3-add-constants-to-wp-configphp}
 
 Voeg de volgende constanten toe aan je `wp-config.php`-bestand:
 
@@ -70,7 +70,7 @@ Voeg **geen** `*.your-network.com` (of enig subdomeinpatroon van je eigen netwer
 hieronder voor waarom dit voorkomt dat SSL-certificaten per tenant worden uitgegeven.
 :::
 
-### 4. Schakel de integratie in
+### 4. Schakel de integratie in {#4-enable-the-integration}
 
 1. Ga in je WordPress-beheer naar Ultimate Multisite > Instellingen
 2. Navigeer naar het tabblad "Domeinkoppeling"
@@ -78,9 +78,9 @@ hieronder voor waarom dit voorkomt dat SSL-certificaten per tenant worden uitgeg
 4. Schakel de Cloudways-integratie in
 5. Klik op "Wijzigingen opslaan"
 
-## Hoe het werkt
+## Hoe het werkt {#how-it-works}
 
-### Domeinsynchronisatie
+### Domeinsynchronisatie {#domain-syncing}
 
 Wanneer een domein wordt gekoppeld in Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Wanneer een domein wordt gekoppeld in Ultimate Multisite:
 
 Opmerking: De Cloudways API vereist dat elke keer de volledige lijst met domeinen wordt verzonden, niet alleen het toevoegen of verwijderen van afzonderlijke domeinen.
 
-### Beheer van SSL-certificaten
+### Beheer van SSL-certificaten {#ssl-certificate-management}
 
 Nadat domeinen zijn gesynchroniseerd:
 
@@ -106,7 +106,7 @@ integratie geïnstalleerd. Om een wildcardcertificaat op Cloudways te gebruiken,
 handmatig moeten installeren, maar dit blokkeert de uitgifte van Let's Encrypt per domein voor gekoppelde aangepaste domeinen
 (zie de valkuil hieronder).
 
-## Extra domeinen
+## Extra domeinen {#extra-domains}
 
 De constante `WU_CLOUDWAYS_EXTRA_DOMAINS` stelt je in staat aanvullende **externe**
 domeinen op te geven die altijd op de aliassenlijst van de Cloudways-applicatie moeten blijven staan. Gebruik deze voor:
@@ -117,7 +117,7 @@ domeinen op te geven die altijd op de aliassenlijst van de Cloudways-applicatie 
 Gebruik deze constante **niet** voor de subdomein-wildcard van je eigen netwerk
 (bijv. `*.your-network.com`). Zie de valkuil met wildcard-SSL hieronder.
 
-## Belangrijk — valkuil met wildcard-SSL
+## Belangrijk — valkuil met wildcard-SSL {#important--wildcard-ssl-pitfall}
 
 Een veelgemaakte fout bij het volgen van de standaardinstallatie van Cloudways is het toevoegen van een wildcard zoals
 `*.your-network.com` aan `WU_CLOUDWAYS_EXTRA_DOMAINS`, of het handmatig installeren van een Cloudways
@@ -128,7 +128,7 @@ aangepaste domeinen per tenant die Ultimate Multisite koppelt.** Cloudways verva
 SSL-certificaat op de applicatie, en een reeds bestaand wildcardcertificaat op
 de applicatie blokkeert de uitgifte van Let's Encrypt per domein waarop de integratie vertrouwt.
 
-### Aanbevolen Cloudways SSL-installatie voor een Ultimate Multisite-netwerk
+### Aanbevolen Cloudways SSL-installatie voor een Ultimate Multisite-netwerk {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Installeer in het tabblad **SSL-certificaat** van de Cloudways-applicatie een **standaard
    Let's Encrypt-certificaat** dat alleen `your-network.com` en `www.your-network.com` dekt
@@ -146,20 +146,20 @@ certificaat uit voor alleen het hoofdnetwerkdomein, en verwijder alle wildcard-i
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Activeer daarna opnieuw een domeinkoppeling (of wacht op de volgende)
 en de integratie zal opnieuw certificaten per domein gaan uitgeven.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### API-verbindingsproblemen
+### API-verbindingsproblemen {#api-connection-issues}
 - Controleer of je e-mailadres en API-sleutel correct zijn
 - Controleer of je server- en applicatie-ID's correct zijn
 - Zorg ervoor dat je Cloudways Account de benodigde rechten heeft
 
-### SSL-certificaatproblemen
+### SSL-certificaatproblemen {#ssl-certificate-issues}
 - Cloudways vereist dat domeinen geldige DNS-records hebben die naar je server verwijzen voordat SSL-certificaten worden uitgegeven
 - De integratie valideert DNS-records voordat SSL-certificaten worden aangevraagd
 - Als SSL-certificaten niet worden uitgegeven, controleer dan of je domeinen correct naar het IP-adres van je server verwijzen
 - **Aangepaste domeinen per tenant blijven zonder SSL hangen?** Controleer het SSL Certificate-tabblad van de Cloudways-applicatie. Als een wildcardcertificaat (handmatig geïnstalleerd, of dekkend voor `*.your-network.com`) actief is, zal Cloudways geen Let's Encrypt-certificaten uitgeven voor individueel gekoppelde aangepaste domeinen. Vervang het door een standaard Let's Encrypt-certificaat dat alleen het hoofdnetwerkdomein dekt (`your-network.com`, `www.your-network.com`) en verwijder alle wildcard-items uit `WU_CLOUDWAYS_EXTRA_DOMAINS`. Activeer daarna opnieuw een domeinkoppeling (of wacht op de volgende) en de integratie zal certificaten per domein aanvragen.
 
-### Domein niet toegevoegd
+### Domein niet toegevoegd {#domain-not-added}
 - Controleer de Ultimate Multisite-logs op eventuele foutmeldingen
 - Controleer of het domein niet al aan Cloudways is toegevoegd
 - Zorg ervoor dat je Cloudways-plan het aantal domeinen ondersteunt dat je toevoegt

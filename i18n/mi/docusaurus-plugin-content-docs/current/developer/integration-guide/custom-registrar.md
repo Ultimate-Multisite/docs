@@ -3,13 +3,13 @@ title: Te Hanga i tētahi Tuituitanga Kairēhita Ritenga
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Te Hanga i tētahi Whakaurunga Registrar Ritenga
+# Te Hanga i tētahi Whakaurunga Registrar Ritenga {#building-a-custom-registrar-integration}
 
 Ka whakamahi te Domain Seller addon i tētahi tauira **Integration Registry**. He akomanga PHP ia registrar e whakatinana ana i `Domain_Selling_Capability`, ā, ka rēhita i a ia anō mā te action hook `wu_domain_seller_register_capabilities`.
 
 E whakaatu ana tēnei aratohu me pēhea te hono mai i tētahi registrar ritenga.
 
-## Te atanga
+## Te atanga {#the-interface}
 
 Me whakatinana tō akomanga i `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability`, ā, me whakawhānui i `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Ngā aratuka kōwhiringa
+### Ngā aratuka kōwhiringa {#optional-methods}
 
 Whakatinanatia ēnei kia whakatuwhera i ngā āhuatanga tāpiri. Ka rapu te addon i te tautoko mā `method_exists()`:
 
@@ -81,7 +81,7 @@ Whakatinanatia ēnei kia whakatuwhera i ngā āhuatanga tāpiri. Ka rapu te addo
 | `get_epp_code(string $domain_name): array` | Whakawhiti rohe (puta atu) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Whakawhiti rohe (kuhu mai) |
 
-### Tikanga uara whakahoki
+### Tikanga uara whakahoki {#return-value-convention}
 
 Ka whakahoki ngā aratuka katoa i tētahi array me tētahi kī `success` hei mea iti rawa:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Te rēhita i tō āheinga
+## Te rēhita i tō āheinga {#registering-your-capability}
 
 Rēhitatia tō akomanga mā te action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Ko te tohenga tuatahi ki `add_capability()` ko te **ID kaiwhakarato** — he slu
 
 ---
 
-## Te tāpiri āpure taipitopito tuakiri ki te ruānuku
+## Te tāpiri āpure taipitopito tuakiri ki te ruānuku {#adding-credential-fields-to-the-wizard}
 
 Kia āhei ai ngā kaiwhakahaere ki te tāuru taipitopito tuakiri mā te ruānuku tatūnga, rēhitatia tō whakaurunga:
 
@@ -137,7 +137,7 @@ Ka penapenatia ngā taipitopito tuakiri hei kōwhiringa whatunga mā te whakamah
 
 ---
 
-## Ngā hook mō ngā mahi whai muri i te rēhitatanga
+## Ngā hook mō ngā mahi whai muri i te rēhitatanga {#hooks-for-post-registration-actions}
 
 Whakamahia ēnei action hei whakaoho i ngā webhook, te whakarato, ngā whakamōhiotanga, ngā whakahōu CRM rānei:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Rangitaki
+## Rangitaki {#logging}
 
 Tuhia ki tō hongere rangitaki motuhake ki te kaiwhakarato mā te whakamahi i `wu_log_add()`:
 

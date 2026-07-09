@@ -3,9 +3,9 @@ title: Ярашлы endpointлар өчен Ultimate AI Connector үзгәреш
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for яраклы endpointлар үзгәрешләр журналы
+# Ultimate AI Connector for яраклы endpointлар үзгәрешләр журналы {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Версия 2.0.0 — 2026-04-24 көнне чыгарылды
+## Версия 2.0.0 — 2026-04-24 көнне чыгарылды {#version-200--released-on-2026-04-24}
 
 * Яңа: Күп-provider ярдәме — берничә AI endpoint көйләгез һәм сорауларны providerлар арасында автоматик fallback белән юнәлтегез.
 * Төзәтү: Һәр provider өчен дөрес provider IDлары, теркәү URLлары һәм HTTP filter чикләнүе белән күп-provider SDK интеграциясе.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Төзәтү: Һәр бит йөкләнгәндә эшли торган блоклаучы HTTP соравы бетерелде.
 * Яхшыртылды: GitHub Actions эш процесслары Node.js 24кә яңартылды.
 
-## Версия 1.0.0 — Беренче чыгарылыш
+## Версия 1.0.0 — Беренче чыгарылыш {#version-100--initial-release}

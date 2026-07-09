@@ -3,9 +3,9 @@ title: Urutonde rw’impinduka rwa Ultimate AI Connector ku mpera zihujwe
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints Changelog
+# Ultimate AI Connector for Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Verisiyo 2.0.0 — Yasohotse ku wa 2026-04-24
+## Verisiyo 2.0.0 — Yasohotse ku wa 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Gishya: Gushyigikira abatanga serivisi benshi — tunganya AI endpoints nyinshi kandi wohereze ubusabe ukoresheje automatic fallback hagati y’abatanga serivisi.
 * Gukosora: Multi-provider SDK integration ifite provider IDs nyazo, registration URLs, na HTTP filter scoping kuri buri mutanga serivisi.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Gukosora: Yakuyeho HTTP request yabuzaga imikorere yatangiraga kuri buri page load.
 * Byanonosowe: GitHub Actions workflows zavuguruwe zijyanwa kuri Node.js 24.
 
-## Verisiyo 1.0.0 — Isohoka rya Mbere
+## Verisiyo 1.0.0 — Isohoka rya Mbere {#version-100--initial-release}

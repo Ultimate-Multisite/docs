@@ -4,19 +4,19 @@ title: عمل - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Action: wu_centered_content
+# Action: wu_centered_content {#action-wucenteredcontent}
 
 پلاگ ان بنانے والوں کو سینٹر میں موجود کالم کے اندر اضافی مواد شامل کرنے کی اجازت دیتا ہے۔
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page | `object` | پیج کا ایک نمونہ (Page instance). |
 
-### Since
+### Since {#since}
 
 - 2.1.0
-### Source
+### Source {#source}
 
 [`views/admin/register-domain-centered.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/views/admin/register-domain-centered.php#L141) میں لائن 141 پر بیان کیا گیا ہے۔

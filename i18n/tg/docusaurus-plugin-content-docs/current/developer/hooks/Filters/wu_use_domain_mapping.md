@@ -4,13 +4,13 @@ title: Филтр - wu_use_domain_mapping
 sidebar_label: wu_use_domain_mapping
 _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 ---
-# Филтр: wu_use_domain_mapping
+# Филтр: wu_use_domain_mapping {#filter-wuusedomainmapping}
 
 Муайян кунед, ки оё харитасозӣ бояд истифода шавад
 
 Одатан, шумо мехоҳед иҷозат диҳед, ки танҳо харитасозиҳои фаъол истифода шаванд. Аммо, агар шумо хоҳед мантиқи пешрафтатарро истифода баред, ё иҷозат диҳед, ки доменҳои ғайрифаъол низ харитасозӣ шаванд, танҳо дар ин ҷо филтр кунед.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -18,6 +18,6 @@ _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 | $mapping | `\Domain` | Харитасозие, ки мо онро месанҷем |
 | $domain | `string` |  |
 
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/class-domain-mapping.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-domain-mapping.php#L391) дар сатри 391 муайян шудааст

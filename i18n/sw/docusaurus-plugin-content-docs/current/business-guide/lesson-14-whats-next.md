@@ -3,15 +3,15 @@ title: 'Somada 14: Nini kitafuata'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Somo la 14: Nini Kinakuja Baadaye
+# Somo la 14: Nini Kinakuja Baadaye {#lesson-14-what-comes-next}
 
 Umejenga jukwaa la tovuti la niche tangu mwanzo. FitSite limeanza kufanya kazi, likitumiwa na studio za mazoezi, na linazalisha mapato yanayojirudia. Somo hili la mwisho linatazama wapi pa kwenda kutoka hapa.
 
-## Tulipoacha
+## Tulipoacha {#where-we-left-off}
 
 FitSite ni biashara inayofanya kazi na wateja, shughuli, na mwelekeo wa kukua. Sasa tunafikiria nini kitakuja.
 
-## Mtandao Kamili wa FitSite
+## Mtandao Kamili wa FitSite {#the-complete-fitsite-network}
 
 Hii hapa kila kitu tulichojenga katika masomo 14:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Chaguo la 1: Kuingia kwa Undani zaidi katika Niche Yako
+## Chaguo la 1: Kuingia kwa Undani zaidi katika Niche Yako {#option-1-go-deeper-in-your-niche}
 
 Kabla ya kupanuka kwenye niches mpya, zingatia kuingia kwa undani zaidi katika sekta ya mazoezi:
 
-### Sub-Niches (Niches Ndogo)
+### Sub-Niches (Niches Ndogo) {#sub-niches}
 
 - **Yoga studios** -- templates maalum zenye vipengele vya kutafakari, kurejea (retreat), na warsha
 - **CrossFit boxes** -- kufuatilia WOD, matokeo ya mashindano, vipengele vya jamii
@@ -59,7 +59,7 @@ Kabla ya kupanuka kwenye niches mpya, zingatia kuingia kwa undani zaidi katika s
 
 Kila sub-niche inaweza kuwa na templates zake na uwezekano wa kuwa na brand yake mwenyewe, zote zikiendeshwa kwenye mtandao mmoja wa Ultimate Multisite.
 
-### Vipengele vya Premium
+### Vipengele vya Premium {#premium-features}
 
 Jenga vipengele ambavyo studio za mazoezi zitatoa pesa ziada kwa ajili yake:
 
@@ -68,14 +68,14 @@ Jenga vipengele ambavyo studio za mazoezi zitatoa pesa ziada kwa ajili yake:
 - **Fitness blog templates** -- miundo ya maudhui iliyo tayari kwa uandishi wa maudhui ya fitness
 - **Social media integration** -- kuchapisha kiotomatiki ratiba za madarasa na masasisho
 
-### Kupanuka Kijiografia
+### Kupanuka Kijiografia {#geographic-expansion}
 
 Ikiwa ulianza katika eneo dogo, panuka hadi:
 
 - Miji mingine nchini kwako
 - Nchi zingine (tumia [localization features](/user-guide/localization/translating) za Ultimate Multisite kusaidia lugha nyingi)
 
-## Chaguo la 2: Kupanuka kwa Niches Jirani
+## Chaguo la 2: Kupanuka kwa Niches Jirani {#option-2-expand-to-adjacent-niches}
 
 Mchakato uliotumia kwa studio za mazoezi unafaa kwa niche yoyote. Niche yako ya pili ni rahisi kwa sababu tayari una:
 
@@ -83,7 +83,7 @@ Mchakato uliotumia kwa studio za mazoezi unafaa kwa niche yoyote. Niche yako ya 
 - Uzoefu wa uendeshaji
 - Mkakati uliothibitishwa (playbook)
 
-### Niches Jirani na Mazoezi
+### Niches Jirani na Mazoezi {#adjacent-niches-to-fitness}
 
 - **Wellness na spa** -- wataalamu wa massage, spa za siku, vituo vya ustawi
 - **Sports clubs** -- timu za michezo za amateur, ligi, clubs za burudani
@@ -91,7 +91,7 @@ Mchakato uliotumia kwa studio za mazoezi unafaa kwa niche yoyote. Niche yako ya 
 
 Hizi hughawazana na wateja wa mazoezi, kwa hivyo masoko na ushirikiano wako yanaweza kuendelea.
 
-### Niches Mpya Kabisa
+### Niches Mpya Kabisa {#completely-new-niches}
 
 Tumia mfumo kutoka Somo la 2 kutathmini niche yoyote:
 
@@ -108,7 +108,7 @@ Kila niche mpya inahitaji:
 
 Miundombinu ya jukwaa, bili, na michakato ya uendeshaji inabaki ile ile.
 
-## Chaguo la 3: Kujenga Jukwaa la Jukwaa
+## Chaguo la 3: Kujenga Jukwaa la Jukwaa {#option-3-build-a-platform-of-platforms}
 
 Kwa kiwango kikubwa, unaweza kuendesha brands nyingi za niches kwenye mtandao mmoja wa Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Kwa kiwango kikubwa, unaweza kuendesha brands nyingi za niches kwenye mtandao mm
 
 Kila brand ina templates, mipango, na masoko yake, lakini wanashiriki miundombinu, bili, na michakato ya uendeshaji. Hapa ndipo uchumi wa Ultimate Multisite unapo kuwa na nguvu — jukwaa moja, matawi mengi.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Kwa kutenganisha kabisa kati ya niches, zingatia [Multi-Network addon](/addons/multinetwork) ambayo inakuwezesha kuendesha mitandao mingi ya WordPress kutoka usakinishaji mmoja.
 
-## Chaguo la 4: Kuuza Biashara
+## Chaguo la 4: Kuuza Biashara {#option-4-sell-the-business}
 
 Jukwaa la tovuti la niche lenye mapato yanayojirudia, kiwango kidogo cha wateja kuondoka (churn), na nafasi ya soko inayoeleweka ni mali yenye thamani. Biashara za SaaS kwa kawaida huuzwa kwa 3-5x ya mapato ya mwaka.
 
@@ -134,7 +134,7 @@ FitSite na wateja 200 kwa ARPU ya $89:
 
 Hii si matokeo yaliyohakikishwa, lakini ni matokeo ya kweli kwa jukwaa la niche linaloendeshwa vizuri.
 
-## Ulichojifunza
+## Ulichojifunza {#what-you-have-learned}
 
 Kozi hii ilifundisha mchakato unaoweza kurudiwa:
 
@@ -150,7 +150,7 @@ Kozi hii ilifundisha mchakato unaoweza kurudiwa:
 
 Niche ndio mkakati. Jukwaa ndilo zana. Ultimate Multisite inafanya zana hiyo iwezekane. Ufahamu wako wa niche ndio unayomfanya kuwa na thamani.
 
-## Anza Kujenga
+## Anza Kujenga {#start-building}
 
 Ikiwa ufuata na FitSite, una jukwaa linalofanya kazi. Ikiwa umesoma hadi mwisho ili kupata niche yako mwenyewe, rudi kwenye [Somo la 2: Kuchagua Niche Yako](lesson-2-picking-your-niche) na anza mchakato kwa sekta uliyochagua.
 

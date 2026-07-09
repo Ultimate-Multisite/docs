@@ -3,7 +3,7 @@ title: Iwizadi Yokuseta i-Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Umncedisi Wokumisela i-Multisite
+# Umncedisi Wokumisela i-Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite iquka umncedisi owakhelweyo oguqula ngokuzenzekelayo ufakelo oluqhelekileyo lwe-WordPress lube yinethiwekhi ye-WordPress Multisite. Oku kuphelisa imfuneko yokuhlela ngesandla `wp-config.php` okanye ukuqhuba imiyalelo yedatabase.
 
@@ -11,13 +11,13 @@ Ultimate Multisite iquka umncedisi owakhelweyo oguqula ngokuzenzekelayo ufakelo 
 Ukuba ufakelo lwakho lwe-WordPress sele luqhuba njengenethiwekhi ye-Multisite, ungatsiba eli nyathelo ngokupheleleyo. Umncedisi uvela kuphela xa i-Multisite ingekavulwa.
 :::
 
-## Uvela Nini Umncedisi?
+## Uvela Nini Umncedisi? {#when-does-the-wizard-appear}
 
 Xa uvula Ultimate Multisite kufakelo oluqhelekileyo (olungeyo-Multisite) lwe-WordPress, iplugin iyabona ukuba i-Multisite ayivulwanga kwaye ikuthumele ngokuzenzekelayo kuMncedisi Wokumisela i-Multisite endaweni yomncedisi wokumisela oqhelekileyo.
 
 Unokuyifikelela ngqo ku-**WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Izinto Ezifunekayo Kwangaphambili
+## Izinto Ezifunekayo Kwangaphambili {#prerequisites}
 
 Phambi kokusebenzisa umncedisi, qinisekisa ukuba:
 
@@ -29,7 +29,7 @@ Phambi kokusebenzisa umncedisi, qinisekisa ukuba:
 Umncedisi ulungisa ifayile yakho ye-`wp-config.php` kwaye udala iitafile ezintsha zedatabase. Soloko udala i-backup ngaphambi kokuqhubeka.
 :::
 
-## Inyathelo 1: Wamkelekile
+## Inyathelo 1: Wamkelekile {#step-1-welcome}
 
 Isikrini sokuqala sichaza ukuba yintoni i-WordPress Multisite kwaye umncedisi uza kwenza ntoni:
 
@@ -42,11 +42,11 @@ Isikrini sokuqala sichaza ukuba yintoni i-WordPress Multisite kwaye umncedisi uz
 
 Cofa **Qhubeka** ukuze uqhubeke.
 
-## Inyathelo 2: Uqwalaselo Lwenethiwekhi
+## Inyathelo 2: Uqwalaselo Lwenethiwekhi {#step-2-network-configuration}
 
 Eli nyathelo likucela ukuba uqwalasele useto lwenethiwekhi yakho.
 
-### Ubume Besiza
+### Ubume Besiza {#site-structure}
 
 Khetha indlela iziza zenethiwekhi yakho eziya kuhlelwa ngayo:
 
@@ -57,11 +57,11 @@ Khetha indlela iziza zenethiwekhi yakho eziya kuhlelwa ngayo:
 Ukuba ukhetha ii-sub-domains, kuya kufuneka uqwalasele **wildcard DNS** kunye ne-**wildcard SSL certificate** yedomain yakho. Uninzi lwezibuki ze-WordPress ezilawulwayo zikuphatha oku ngokuzenzekelayo. Bona [Ultimate Multisite 101](./ultimate-multisite-101) ukuze ufumane uthelekiso oluneenkcukacha.
 :::
 
-### Isihloko Senethiwekhi
+### Isihloko Senethiwekhi {#network-title}
 
 Faka igama lenethiwekhi yakho. Oku kusetwa ngokuzenzekelayo kwisihloko sesiza sakho sangoku kudityaniswe u-"Network". Ungakutshintsha oku kamva kuseto lwenethiwekhi.
 
-### I-imeyile yoMlawuli Wenethiwekhi
+### I-imeyile yoMlawuli Wenethiwekhi {#network-admin-email}
 
 Idilesi ye-imeyile esetyenziselwa izaziso zolawulo lwenethiwekhi. Oku kusetwa ngokuzenzekelayo kwidilesi ye-imeyile yomsebenzisi wangoku.
 
@@ -69,7 +69,7 @@ Idilesi ye-imeyile esetyenziselwa izaziso zolawulo lwenethiwekhi. Oku kusetwa ng
 
 Emva kokugcwalisa amasimi, cofa **Qhubeka** ukuze uqhubeke.
 
-## Inyathelo 3: Ufakelo
+## Inyathelo 3: Ufakelo {#step-3-installation}
 
 Cofa iqhosha elithi **Faka** ukuze uqale. Umncedisi wenza amanyathelo amahlanu azenzekelayo ngokulandelelana, ngalinye libonisa inkqubela yalo ngexesha lokwenyani:
 
@@ -96,7 +96,7 @@ Nje ukuba onke amanyathelo agqitywe ngempumelelo, uza kubona imeko eluhlaza ethi
 
 Umncedisi uya kuthi emva koko aqhubeke ngokuzenzekelayo ukuya kwisikrini sokugqiba.
 
-## Inyathelo 4: Kugqityiwe
+## Inyathelo 4: Kugqityiwe {#step-4-complete}
 
 Nje ukuba ufakelo lugqityiwe, uza kubona umyalezo wempumelelo oqinisekisa ukuba i-WordPress Multisite ivuliwe.
 
@@ -108,7 +108,7 @@ Ngoku ungaqhubeka nomncedisi wokumisela we-Ultimate Multisite ukuze uqwalasele i
 Emva kokuba ufakelo lwe-multisite lugqityiwe, isikhangeli sakho siya kudluliselwa ngomlawuli wenethiwekhi osanda kuvulwa. Kusenokufuneka ungene kwakhona kuba ii-cookies zokuqinisekisa zihlaziywa ukuze zilungele imeko ye-multisite.
 :::
 
-## Enye Indlela Yokumisela Ngesandla
+## Enye Indlela Yokumisela Ngesandla {#manual-setup-fallback}
 
 Ukuba umncedisi akakwazi ukubhala kwifayile yakho ye-`wp-config.php` (ngenxa yeemvume zefayile okanye izithintelo zeseva), uya kubonisa ikhowudi kanye ekufuneka uyongeze ngesandla:
 
@@ -117,9 +117,9 @@ Ukuba umncedisi akakwazi ukubhala kwifayile yakho ye-`wp-config.php` (ngenxa yee
 
 Emva kokwenza utshintsho ngesandla, hlaziya iphepha kwaye umncedisi uya kubona ukuba i-multisite ngoku iyasebenza.
 
-## Ukulungisa Iingxaki
+## Ukulungisa Iingxaki {#troubleshooting}
 
-### Umncedisi uthi wp-config.php ayibhaleki
+### Umncedisi uthi wp-config.php ayibhaleki {#the-wizard-says-wp-configphp-is-not-writable}
 
 Inkqubo yeseva yakho yewebhu idinga imvume yokubhala kwifayile ye-`wp-config.php`. Ungakhetha:
 
@@ -127,7 +127,7 @@ Inkqubo yeseva yakho yewebhu idinga imvume yokubhala kwifayile ye-`wp-config.php
 - Ukusebenzisa imiyalelo yenye indlela yokumisela ngesandla enikezwe ngumncedisi
 - Ukucela uncedo kumboneleli wakho wokubuka
 
-### Iziza azifumaneki emva kokumisela (subdomains)
+### Iziza azifumaneki emva kokumisela (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Ukuba ukhethe ubume be-subdomain, kufuneka uqwalasele **wildcard DNS** yedomain yakho. Yongeza irekhodi le-DNS:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Buza kumniki wakho wokusingatha ukuba awuqinisekanga ukuba oku kuqwalaselwa njani.
 
-### Iingxaki zoqinisekiso emva kokuseta
+### Iingxaki zoqinisekiso emva kokuseta {#authentication-issues-after-setup}
 
 Ukuba ukhutshelwe ngaphandle okanye ufumana iimpazamo ze-cookie emva kokuseta i-multisite:
 
@@ -147,7 +147,7 @@ Ukuba ukhutshelwe ngaphandle okanye ufumana iimpazamo ze-cookie emva kokuseta i-
 2. Ngena kwakhona ku-`yourdomain.com/wp-login.php`
 3. Ukuba ingxaki iyaqhubeka, jonga ukuba i-`wp-config.php` yakho ayinayo i-`COOKIE_DOMAIN` ebekwe ku-`false` — le yingxaki eyaziwayo kufakelo lwe-multisite lwe-subdomain
 
-### Inyathelo lisilele ngexesha lofakelo
+### Inyathelo lisilele ngexesha lofakelo {#a-step-failed-during-installation}
 
 Ukuba elinye lamanyathelo ofakelo libonisa impazamo:
 

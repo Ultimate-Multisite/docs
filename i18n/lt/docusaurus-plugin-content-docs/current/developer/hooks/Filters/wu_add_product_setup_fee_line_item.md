@@ -4,11 +4,11 @@ title: Filtras - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filtras: wu_add_product_setup_fee_line_item
+# Filtras: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 Leisti kūrėjams atlikti pakeitimus diegimo mokesčio eilutės elemente.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Leisti kūrėjams atlikti pakeitimus diegimo mokesčio eilutės elemente.
 | $product | `\WP_Ultimo\Models\Product` | Produktas, susijęs su diegimo mokesčiu. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | Krepšelio objektas. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.1
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) 1790 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}

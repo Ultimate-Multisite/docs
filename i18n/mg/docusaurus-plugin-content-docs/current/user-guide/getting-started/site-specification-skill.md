@@ -3,11 +3,11 @@ title: Famaritana ny toerana fiasa
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Fahaizana famaritana ny toerana (Site Specification Skill)
+# Fahaizana famaritana ny toerana (Site Specification Skill) {#site-specification-skill}
 
 Ny **Fahaizana famaritana ny toerana (Site Specification skill)** dia fomba fandaminana voarafitra mba hanangonana ny tanjona an'ny tranonkala, ny olona ho iantsoina azy ary ny maha-izy azy amin'ny marika. Ity fampahalalana ity dia voatahiry ao amin'ny **site_brief** anao, izay ampiasain'ny agents (mpiasa) rehefa miara-miasa mba hanomezana fanampiana mitovy sy mahatakatra ny toe-javatra iantsoina.
 
-## Inona no Site Specification?
+## Inona no Site Specification? {#what-is-site-specification}
 
 Ny Site Specification dia dingana famaritana ireo zavatra maromaro:
 
@@ -19,9 +19,9 @@ Ny Site Specification dia dingana famaritana ireo zavatra maromaro:
 
 Ity famaritana ity dia lasa ny **site_brief** anao, izay fahatsiarovana maharitra ampiasain'ny agents mba hahatakatra ny toe-javatra iantsoina.
 
-## Nahoana no tokony hampiasa Site Specification?
+## Nahoana no tokony hampiasa Site Specification? {#why-use-site-specification}
 
-### Fandaminana mitovy amin'ny fotoana samihafa (Consistency Across Sessions)
+### Fandaminana mitovy amin'ny fotoana samihafa (Consistency Across Sessions) {#consistency-across-sessions}
 
 Raha tsy misy site_brief, dia mila mamerina manokana ny tanjon'ny tranonkalanao isaky ny manomboka session vaovao ianao. Amin'izany, dia hahatakatra avy hatrany ny agents:
 
@@ -30,7 +30,7 @@ Raha tsy misy site_brief, dia mila mamerina manokana ny tanjon'ny tranonkalanao 
 - Ny fandaminana ny votoatry ny tranonkalanao
 - Ireo tanjon'ny orinasa anao
 
-### Torohevitra tsara kokoa (Better Recommendations)
+### Torohevitra tsara kokoa (Better Recommendations) {#better-recommendations}
 
 Mampiasa ny site_brief iantsoina avy amin'ny agents mba:
 
@@ -39,17 +39,17 @@ Mampiasa ny site_brief iantsoina avy amin'ny agents mba:
 - Manolotra famolavolana (designs) mifanaraka amin'ny marika anao
 - Hialana amin'ny fanomezana fepetra tsy mifanaraka
 
-### Fandefasana haingana kokoa (Faster Onboarding)
+### Fandefasana haingana kokoa (Faster Onboarding) {#faster-onboarding}
 
 Afaka manome antsipiriany haingana ny agents vaovao (na ireo agents ao anaty session vaovao) amin'ny famakiana ny site_brief anao fa tsy mitady fanazavana.
 
-## Fanombohana Site Specification
+## Fanombohana Site Specification {#initiating-site-specification}
 
-### Mandritra ny Fampianarana Theme Builder (During Theme Builder Onboarding)
+### Mandritra ny Fampianarana Theme Builder (During Theme Builder Onboarding) {#during-theme-builder-onboarding}
 
 Ny fahaizana famaritana ny toerana dia manomboka ho azy mandritra ny **fomba fampianarana Theme Builder**. Ny agent Setup Assistant no manontany fanontaniana sy mamorona ny site_brief anao.
 
-### Fanombohana Manokana (Manual Initiation)
+### Fanombohana Manokana (Manual Initiation) {#manual-initiation}
 
 Afaka manomboka ny famaritana ny toerana misy anao amin'ny fotoana rehetra ianao:
 
@@ -63,9 +63,9 @@ na
 "Ampahafantaro ahy aho mba hamoronana famintinana ny toerana misy"
 ```
 
-## Ny Fomba Fanamarihana ny Toerana Misy (The Site Specification Process)
+## Ny Fomba Fanamarihana ny Toerana Misy (The Site Specification Process) {#the-site-specification-process}
 
-### Dingana 1: Tanjon'ny Toerana Misy (Site Purpose)
+### Dingana 1: Tanjon'ny Toerana Misy (Site Purpose) {#step-1-site-purpose}
 
 Ny agent dia manontany hoe:
 
@@ -81,7 +81,7 @@ Inona no tanjona fototra an'ity toerana misy ity?
 
 Afaka misafidy sokajy ianao na mamaritra ny tanjona anao manokana.
 
-### Dingana 2: Olona Ho An'ny Toerana Misy (Target Audience)
+### Dingana 2: Olona Ho An'ny Toerana Misy (Target Audience) {#step-2-target-audience}
 
 ```
 Iza no olon-kevitra fototra anao?
@@ -94,7 +94,7 @@ Iza no olon-kevitra fototra anao?
 Inona no tena ilainy azy ireo?
 ```
 
-### Dingana 3: Marika (Brand Identity)
+### Dingana 3: Marika (Brand Identity) {#step-3-brand-identity}
 
 ```
 Inona avy ny loko an'ny marika anao?
@@ -110,7 +110,7 @@ Ahoana no hamaritanao ny fomba fiteny an'ny marika anao?
 - Teplam-pahalalana / fahalalana (warm / friendly)
 ```
 
-### Dingana 4: Tanjona Ara-Bizines (Business Goals)
+### Dingana 4: Tanjona Ara-Bizines (Business Goals) {#step-4-business-goals}
 
 ```
 Inona no endrik'ny fahombiazana ho an'ity toerana misy ity?
@@ -129,7 +129,7 @@ Inona no ohatra lehibe anao?
 - hafa
 ```
 
-### Dingana 5: Firafitry ny Votoaty (Content Structure)
+### Dingana 5: Firafitry ny Votoaty (Content Structure) {#step-5-content-structure}
 
 ```
 Ahoana no fandrindran'ny votoatiny?
@@ -148,13 +148,13 @@ Inona avy ireo karazana votoaty ampiasainao?
 - hafa
 ```
 
-## Ny Memory an'ny site_brief anao
+## Ny Memory an'ny site_brief anao {#your-sitebrief-memory}
 
 Aorian'ny famaranana ny Site Specification, ny fampahalalana rehetra dia voatahiry ho **site_brief** ao amin'ny memory an'ny agent. Io dia fampahafantarana voarafitra ahitana:
 
-## Jerehana sy Fanava ny Site-brief anao
+## Jerehana sy Fanava ny Site-brief anao {#viewing-and-updating-your-sitebrief}
 
-### Jereo ny site-brief anao
+### Jereo ny site-brief anao {#view-your-sitebrief}
 
 Manao hoe:
 
@@ -170,7 +170,7 @@ na
 
 Ny agent dia haneho ny famaritana efa voarakitra.
 
-### Fanava ny site-brief anao
+### Fanava ny site-brief anao {#update-your-sitebrief}
 
 Raha miova ny fomba fiasan'ny site-ko, afaka manavao azy ianao:
 
@@ -186,9 +186,9 @@ na
 
 Izany dia hanindramina indray ny Site Specification skill miaraka amin'ny fampahalalana efa misy anao ho fanombohana.
 
-## Ahoana no Fampiasan'ny Agents ny site_brief
+## Ahoana no Fampiasan'ny Agents ny site_brief {#how-agents-use-sitebrief}
 
-### Torohevitra momba ny Design (Fandrafetana)
+### Torohevitra momba ny Design (Fandrafetana) {#design-recommendations}
 
 Rehefa mangataka fiovana eo amin'ny design ianao, dia manondro ny site-brief anao ny agent:
 
@@ -200,7 +200,7 @@ Hanao fandrafetana izay manasongadina ny aloha ny aloha ny sarinao
 sy ny soatoavina momba ny fomba fiasan-tany."
 ```
 
-### Torohevitra momba ny Fitondran-javatra (Features)
+### Torohevitra momba ny Fitondran-javatra (Features) {#feature-suggestions}
 
 Manolotra fitondran-javatra mifanaraka amin'ny tanjonao ny agent:
 
@@ -211,22 +211,22 @@ manoro hevitra aho: programa fankatia (loyalty program), famakafakana
 mpanjifa (customer reviews), newsletter an-tariby, ary fanomezana vokatra."
 ```
 
-### Fandaminana ny Firafitry ny Vokatra (Content Structure)
+### Fandaminana ny Firafitry ny Vokatra (Content Structure) {#content-structure}
 
 Manolotra fandaminana ny firafitry ny votoaty ny agent mifototra amin'ny firafitry ny site anao:
 
 Ahoana ny fomba tokony hifanaraka ny blogko?
 Mba satria mampiasa product catalog ianao miaraka amin'ny blog, dia manoro hevitra aho mba handamina ireo lahatsoratra araka ny karazana vokatra ary hamoronana 'styling guides' izay maneho vokatra maromaro miaraka.
 
-## Fomba fiasa tsara indrindra (Best Practices)
+## Fomba fiasa tsara indrindra (Best Practices) {#best-practices}
 
-### Atao mazava
+### Atao mazava {#be-specific}
 Ao an-tsainao fa tsy hoe "olona rehetra", dia famaritaho ny olona tena iantsoinao:
 
 - ✓ "Vavy eo anelanelan'ny 25 ka hatramin'ny 45 taona, tia akanjo maharitra (sustainable fashion)"
 - ✗ "Olona rehetra"
 
-### Atao fanavaozana tsy tapaka
+### Atao fanavaozana tsy tapaka {#update-regularly}
 Rehefa miova ny toerana misy anao, dia avereno manavao ny `site_brief` anao:
 
 - Rehefa miova ny olona iantsoinao
@@ -234,20 +234,20 @@ Rehefa miova ny toerana misy anao, dia avereno manavao ny `site_brief` anao:
 - Rehefa miova ny maha-izy anao (brand identity)
 - Rehefa miova ny tanjona ara-barotra anao
 
-### Ampiasao teny mitovy
+### Ampiasao teny mitovy {#use-consistent-terminology}
 Ampiasao ireo teny mitovy mandritra ny fotoana rehetra:
 
 - ✓ Lazao foana hoe "sustainable jewelry" (tsy hoe "eco-friendly jewelry" sy "green products")
 - ✓ Atao mitovy ny fomba fiteny iantsoana ny olona iantsoinao
 
-### Ampiana tontolo (Context)
+### Ampiana tontolo (Context) {#include-context}
 Omeo fanazavana izay manampy ny agent mba hahatakatra ny fanapahan-kevitrao:
 
 - "Mikendry antsika ireo matihanina izay manome lanja kokoa noho ny vidiny"
 - "Ny olona iantsoantsika dia mahay teknolojia ary miandry famolavolana maoderina"
 - "Izahay dia startup tsy manana vola be, ka mila vahaolana mora viditra isika"
 
-## Fifandraisana amin'ny Fampianarana Theme Builder (Theme Builder Onboarding)
+## Fifandraisana amin'ny Fampianarana Theme Builder (Theme Builder Onboarding) {#relationship-to-theme-builder-onboarding}
 
 Ny fahaizana Site Specification dia voafandrenina ao anatin'ny **onboarding flow** an'ny Theme Builder. Rehefa vita ny onboarding, dia ho voforona ho azy ny `site_brief` anao amin'ny fampahalalana omenao.
 
@@ -257,7 +257,7 @@ Afaka manao Site Specification amin'ny fomba tsy miankina ianao raha te-handray:
 - Fanavaozana ny `site brief` anao rehefa miova ny toerana misy anao
 - Famoronana famaritana antsipiriany alohan'ny manombohana Theme Builder
 
-## Fandresena olana (Troubleshooting)
+## Fandresena olana (Troubleshooting) {#troubleshooting}
 
 **Tsy ampiasaina ny site_brief-ko**
 - Fantaro fa afaka miditra amin'ny memory ny agent ve ianao
@@ -273,7 +273,7 @@ Afaka manao Site Specification amin'ny fomba tsy miankina ianao raha te-handray:
 - Manavao ny site_brief anao raha lany (outdated) izy
 - Manome fanazavana fanampiny ao anatin'ny fangatahanao
 
-## Dingana manaraka
+## Dingana manaraka {#next-steps}
 
 Aorian'ny famaritana ny Site Specification anao:
 

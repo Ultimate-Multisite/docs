@@ -3,7 +3,7 @@ title: Tohutoro Āheinga
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tohutoro Āheinga
+# Tohutoro Āheinga {#abilities-reference}
 
 Ko ngā āheinga ngā mahi ngota ka taea e Gratis AI Agent te karanga ki tō tāutanga WordPress. He class PHP kua rēhitatia ia āheinga, ā, ka whakaatu i tētahi aronuinga JSON — ka pānui te agent i tēnei aronuinga i te wā whakahaere kia mārama ai he aha ngā tawhā e hiahiatia ana, ā, he aha hoki tā te āheinga e whakahoki mai ai.
 
@@ -11,11 +11,11 @@ Ka tuhi tēnei whārangi i ngā āheinga katoa e tukuna ana me Gratis AI Agent v
 
 ---
 
-## Ngā Momo Whakairinga Ritenga
+## Ngā Momo Whakairinga Ritenga {#custom-post-types}
 
 Ka whakahaere ēnei āheinga i ngā momo whakairinga ritenga (CPTs) kua rēhitatia mā te agent. Ka tiakina tonutia ngā rēhitatanga ki te ripanga kōwhiringa WordPress kia ora tonu ahakoa ka whakawetohia, ka whakahohe anō hoki te plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Ka rēhita i tētahi momo whakairinga ritenga hou.
 
@@ -50,7 +50,7 @@ Ka rēhita i tētahi momo whakairinga ritenga hou.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Ka whakahoki i ngā momo whakairinga ritenga katoa kua rēhitatia e te agent.
 
@@ -73,7 +73,7 @@ Ka whakahoki i ngā momo whakairinga ritenga katoa kua rēhitatia e te agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Ka wetewete-rēhita i tētahi momo whakairinga ritenga i rēhitatia i mua e te agent. Ka noho tonu ngā whakairinga o taua momo ki te pātengi raraunga, engari kāore e wātea mā te momo whakairinga.
 
@@ -87,11 +87,11 @@ Ka wetewete-rēhita i tētahi momo whakairinga ritenga i rēhitatia i mua e te a
 
 ---
 
-## Ngā Taxonomy Ritenga
+## Ngā Taxonomy Ritenga {#custom-taxonomies}
 
 Ka whakahaere ēnei āheinga i ngā taxonomy ritenga. Pērā i ngā CPTs, ka tiakina tonutia ngā rēhitatanga taxonomy.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Ka rēhita i tētahi taxonomy ritenga hou.
 
@@ -123,7 +123,7 @@ Ka rēhita i tētahi taxonomy ritenga hou.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Ka whakahoki i ngā taxonomy ritenga katoa kua rēhitatia e te agent.
 
@@ -146,7 +146,7 @@ Ka whakahoki i ngā taxonomy ritenga katoa kua rēhitatia e te agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Ka wetewete-rēhita i tētahi taxonomy ritenga i rēhitatia i mua e te agent.
 
@@ -160,11 +160,11 @@ Ka wetewete-rēhita i tētahi taxonomy ritenga i rēhitatia i mua e te agent.
 
 ---
 
-## Pūnaha Hoahoa
+## Pūnaha Hoahoa {#design-system}
 
 Ka whakarerekē ngā āheinga pūnaha hoahoa i te whakaaturanga ā-ataata o te pae WordPress — mai i te CSS ritenga ki ngā tauira paraka me te waitohu pae.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Ka tāpiri i te CSS ki te `<head>` o te pae mā `wp_add_inline_style`. Ka rokirokitia te CSS ki te kōwhiringa `gratis_ai_agent_custom_css`, ā, ka unuhia mā i te rārangi ina tautuhia anō te āheinga.
 
@@ -190,7 +190,7 @@ Ka tāpiri i te CSS ki te `<head>` o te pae mā `wp_add_inline_style`. Ka rokiro
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Ka rēhita i tētahi tauira paraka whakamahi-anō ki te whare pukapuka tauira WordPress.
 
@@ -209,7 +209,7 @@ Ka rēhita i tētahi tauira paraka whakamahi-anō ki te whare pukapuka tauira Wo
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Ka whakarārangi i ngā tauira paraka katoa kua rēhitatia e te agent.
 
@@ -231,7 +231,7 @@ Ka whakarārangi i ngā tauira paraka katoa kua rēhitatia e te agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Ka tautuhi i te moko pae WordPress ki tētahi ID āpitihanga kua hoatu, ki tētahi URL atahanga mamao rānei. Ina tukuna he URL, ka tikiakehia te atahanga, ā, ka kawemai ki te Pātaka Pāpāho.
 
@@ -248,7 +248,7 @@ Me tuku tētahi o `attachment_id`, o `url` rānei.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Ka whakamahi i tētahi tatūkē tae/tuhi kua whakaingoatia ki te `theme.json` (ki `global-styles` rānei) o te kaupapa hohe. He paihere kua āta kōwhiria ngā tatūkē, e tiakina ana e te tīma Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Ka whakamahi i tētahi tatūkē tae/tuhi kua whakaingoatia ki te `theme.json` (k
 
 ---
 
-## Ngā Kāhua Ao
+## Ngā Kāhua Ao {#global-styles}
 
 Ka pānui, ka tuhi hoki ngā āheinga Kāhua Ao i ngā uara theme.json mā te WordPress Global Styles API, ka pā ki ngā poraka me ngā tātauira katoa puta noa i te pae.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Ka whakahoki i te whirihoranga kāhua ao o nāianei.
 
@@ -291,7 +291,7 @@ Ka whakahoki i te whirihoranga kāhua ao o nāianei.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Ka whakahou i tētahi, i ētahi uara rānei i te whirihoranga kāhua ao.
 
@@ -318,7 +318,7 @@ Ka whakahou i tētahi, i ētahi uara rānei i te whirihoranga kāhua ao.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Ka tautuhi anō i ngā huringa kāhua ao katoa i whakamahia e te agent, ka whakahoki i ngā taunoa o te kaupapa.
 
@@ -328,11 +328,11 @@ Ka tautuhi anō i ngā huringa kāhua ao katoa i whakamahia e te agent, ka whaka
 
 ---
 
-## Ngā Tahua Whakatere
+## Ngā Tahua Whakatere {#navigation-menus}
 
 Ka waihanga, ka whakahaere hoki ngā āheinga Tahua Whakatere i ngā tahua whakatere WordPress me ā rātou tūemi.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Ka waihanga i tētahi tahua whakatere WordPress hou.
 
@@ -347,7 +347,7 @@ Ka waihanga i tētahi tahua whakatere WordPress hou.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Ka whakaingoa anō i tētahi tahua, ka tautapa anō rānei ki tētahi tauwāhi kaupapa.
 
@@ -363,7 +363,7 @@ Ka whakaingoa anō i tētahi tahua, ka tautapa anō rānei ki tētahi tauwāhi k
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Ka tāpiri i tētahi tūemi ki tētahi tahua whakatere e tīariari ana.
 
@@ -383,7 +383,7 @@ Ka tāpiri i tētahi tūemi ki tētahi tahua whakatere e tīariari ana.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Ka tango i tētahi tūemi i tētahi tahua whakatere.
 
@@ -397,7 +397,7 @@ Ka tango i tētahi tūemi i tētahi tahua whakatere.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Ka whakarārangi i ngā tahua whakatere WordPress katoa, tae atu ki ō rātou tauwāhi kaupapa kua tautapatia.
 
@@ -420,11 +420,11 @@ Ka whakarārangi i ngā tahua whakatere WordPress katoa, tae atu ki ō rātou ta
 
 ---
 
-## Whakahaere Kōwhiringa
+## Whakahaere Kōwhiringa {#options-management}
 
 Ka pānui, ka tuhi hoki ngā āheinga Kōwhiringa i ngā kōwhiringa WordPress mā `get_option` / `update_option`. Ka ārai tētahi rārangi-aukati haumaru ā-roto i te whakarerekētanga ohorere o ngā tautuhinga tino hira.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Ka pānui i tētahi kōwhiringa WordPress.
 
@@ -440,7 +440,7 @@ Ka whakahoki hapa mēnā kei runga `option_name` i te rārangi-aukati haumaru.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Ka tuhi i tētahi kōwhiringa WordPress.
 
@@ -458,7 +458,7 @@ Whakahoki ai i tētahi hapa mēnā kei runga a `option_name` i te safety blockli
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Muku ai i tētahi kōwhiringa WordPress.
 
@@ -474,7 +474,7 @@ Whakahoki ai i tētahi hapa mēnā kei runga a `option_name` i te safety blockli
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Whakarārangi ai i ngā kōwhiringa WordPress e ōrite ana ki tētahi tauira.
 
@@ -498,11 +498,11 @@ Whakarārangi ai i ngā kōwhiringa WordPress e ōrite ana ki tētahi tauira.
 
 ---
 
-## Whakahaere Ihirangi
+## Whakahaere Ihirangi {#content-management}
 
 Ka waihanga, ka whakatika hoki ngā āheinga Whakahaere Ihirangi i ngā whakairinga me ngā whārangi WordPress. Ka whakahokia ngā ID whakairinga kia taea ai e ngā hipanga whai muri i roto i ngā mahere āheinga-maha te tohutoro ki te ihirangi kua waihangatia.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Waihanga ai i tētahi whakairinga WordPress hou, whārangi, tāurunga momo whakairinga ritenga rānei.
 
@@ -537,7 +537,7 @@ Waihanga ai i tētahi whakairinga WordPress hou, whārangi, tāurunga momo whaka
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Whakahōu ai i tētahi whakairinga, whārangi WordPress rānei e tīariari ana.
 
@@ -567,7 +567,7 @@ Whakahōu ai i tētahi whakairinga, whārangi WordPress rānei e tīariari ana.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Waihanga ai i ngā whakairinga maha i roto i te karanga āheinga kotahi, ka whakaiti i ngā haerenga hoki-mai i te wā e hanga ana i ngā pae, e kawemai nui ana rānei i te ihirangi. Ka waihangatia ngā whakairinga ā-raupapa; mēnā ka rahua tētahi, ka haere tonu ērā atu, ā, ka pūrongotia te rahunga ki te huinga hua.
 
@@ -619,7 +619,7 @@ Waihanga ai i ngā whakairinga maha i roto i te karanga āheinga kotahi, ka whak
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Tautapa ai i tētahi atahanga āhuatanga (karakōnui whakairinga) ki tētahi whakairinga, whārangi rānei e tīariari ana. Ka whakaae ki tētahi ID āpitihanga Media Library e tīariari ana, ki tētahi URL atahanga mamao rānei; ina tukuna he URL, ka tikiakehia, ka kawemai aunoatia te atahanga.
 
@@ -638,7 +638,7 @@ Me whakarato tētahi o `attachment_id`, `url` rānei.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Waihanga ai i tētahi puka whakapā mā te whakamahi i te plugin puka hohe (Contact Form 7, WPForms, Fluent Forms, Gravity Forms rānei, e ai ki te mea kua tāutatia). Whakahoki ai i tētahi shortcode ka taea te tāmau ki roto i tētahi whakairinga, whārangi rānei.
 
@@ -691,11 +691,11 @@ Waihanga ai i tētahi puka whakapā mā te whakamahi i te plugin puka hohe (Cont
 
 ---
 
-## Arotake Ataata
+## Arotake Ataata {#visual-review}
 
 Mā ngā āheinga Arotake Ataata e taea ai e te agent te hopu whakaahua mata o ngā whārangi ora me te tātari i aua mea, e whakaahei ana i te arotake hoahoa motuhake, ngā whakataurite i mua/i muri, me ngā arowhai hekenga ataata me te kore e hiahiatia tētahi browser extension.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Ka hopu i tētahi whakaahua mata o tētahi whārangi WordPress i tētahi URL kua tohua mā te whakamahi i tētahi pūtirotiro headless taha-tūmau. Ka tiakina te atahanga ki te Media Library, ā, ka whakahokia mai he URL CDN.
 
@@ -724,7 +724,7 @@ Ka hopu i tētahi whakaahua mata o tētahi whārangi WordPress i tētahi URL kua
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Ka tango i ngā whakaahua mata e rua, ā, ka whakahoki i tētahi kaute rerekētanga ataata me tētahi atahanga rerekētanga e miramira ana i ngā rohe kua panoni. He pai mō te whakaū i hua mai i tētahi panonitanga hoahoa te hua i tūmanakohia, mō te kite rānei i ngā hekenga kāore i whakaarohia.
 
@@ -754,7 +754,7 @@ Ko te `diff_score` o `0.0` te tikanga kāore he panonitanga kitea; ko `1.0` te t
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Ka hopu i tētahi whakaahua mata o tētahi whārangi, ā, ka tuku ki te tauira reo mō te tātari ataata. Ka whakahoki i tētahi aromatawai kua whakaraupapatia e kapi ana i te whakatakotoranga, te momotuhi, te whakamahinga tae, me ngā āwangawanga āheitanga.
 
@@ -785,11 +785,11 @@ Ka hopu i tētahi whakaahua mata o tētahi whārangi, ā, ka tuku ki te tauira r
 
 ---
 
-## Ngā Āheinga Ka Taea te Tāuta
+## Ngā Āheinga Ka Taea te Tāuta {#installable-abilities}
 
 Mā te Rēhita Āheinga Ka Taea te Tāuta koe e āhei ai ki te whakawhānui i te agent ki ngā mōkihi āheinga tāpiri e tohaina ana hei ngā plugin WordPress. Ka rēhita ia mōkihi i tētahi, neke atu rānei, āheinga mā te API āheinga paerewa.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Ka whakahoki i te rārangi o ngā mōkihi āheinga e wātea ana mō te tāutanga mai i te rēhita.
 
@@ -818,7 +818,7 @@ Ka whakahoki i te rārangi o ngā mōkihi āheinga e wātea ana mō te tāutanga
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Ka tikiake, ka whakahohe hoki i tētahi pōkai āheinga mai i te rēhita.
 
@@ -832,7 +832,7 @@ Ka tikiake, ka whakahohe hoki i tētahi pōkai āheinga mai i te rēhita.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Ka uiui i te rēhita āheinga kia kitea ai te mono-mai pai rawa mō tētahi take whakamahinga kua whakaahuatia, ā, mēnā e hiahiatia ana, ka tāuta.
 

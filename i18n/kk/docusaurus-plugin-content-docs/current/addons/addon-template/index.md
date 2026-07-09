@@ -3,25 +3,25 @@ title: Қосымша үлгісі
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Қосымша үлгісі
+# Қосымша үлгісі {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Талаптар
+## Талаптар {#requirements}
 
 - WordPress 5.3 немесе одан жоғары
 - PHP 7.4 немесе одан жоғары
 - Multisite Ultimate плагині (белсенді)
 
-## Орнату
+## Орнату {#installation}
 
 1. Қосымша файлдарын `/wp-content/plugins/` каталогыңызға жүктеңіз
 2. Плагинді WordPress ішіндегі 'Plugins' мәзірі арқылы белсендіріңіз
 3. Қосымша параметрлерін желі әкімшісінде баптаңыз
 
-## Әзірлеу
+## Әзірлеу {#development}
 
-### Баптау
+### Баптау {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Жоба құрылымы
+### Жоба құрылымы {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Кодты жаңғырту ережелері
 ```
 
-### Тестілеу
+### Тестілеу {#testing}
 
 Қосымша кешенді тестілеу фреймворкін қамтиды:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **Тест қамтуы**: Код қамтуын бақылауға бапталған
 - **Multisite тестілеу**: Тесттер multisite ортасында орындалады
 
-### Код стандарттары
+### Код стандарттары {#code-standards}
 
 - **WordPress кодтау стандарттары**: PHPCS арқылы міндеттеледі
 - **PHP 7.4+ үйлесімділігі**: Заманауи PHP мүмкіндіктеріне қолдау көрсетіледі
 - **Статикалық талдау**: Түрлерді тексеру үшін PHPStan интеграциясы
 - **Кодты жаңғырту**: PHP жаңартуларына арналған Rector ережелері
 
-### Құрастыру жүйесі
+### Құрастыру жүйесі {#build-system}
 
 - **Ресурстарды өңдеу**: CSS/JS файлдары үшін кішірейту
 - **Аударма**: POT файлын жасау
 - **Қаптау**: Таратуға арналған архив жасау
 - **Әзірлеу режимі**: Қателерді түзетуге арналған кішірейтілмеген ресурстар
 
-## Конфигурация
+## Конфигурация {#configuration}
 
 Қосымша желі әкімшісі интерфейсі арқылы қолжетімді әртүрлі конфигурация опцияларын қолдайды.
 
-## Hooks және Filters
+## Hooks және Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Қосымша инициализациясынан кейін іске қосылады
 - `ultimate-multisite-addon-template_loaded` - Барлық қосымша файлдары жүктелгеннен кейін іске қосылады
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Қосымша параметрлерін өзгерту
 - `ultimate-multisite-addon-template_enabled` - Қосымшаны қосу/өшіру күйін қайта анықтау
 
-## Лицензия
+## Лицензия {#license}
 
 Бұл қосымша GPL v3 немесе одан кейінгі нұсқа бойынша лицензияланған.
 
-## Қолдау
+## Қолдау {#support}
 
 Қолдау және құжаттама үшін [MultisiteUltimate.com](https://multisiteultimate.com) сайтына кіріңіз
-## Өзгерістер журналы
+## Өзгерістер журналы {#changelog}
 
 - Нұсқа 1.0.1 (2025-09-28): префиксті ultimate-multisite етіп қайта атау; text domain жаңарту; нұсқаны көтеру.
 

@@ -3,11 +3,11 @@ title: نموونەکانی کۆدی پێشکەوتوو
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# نموونە پێشکەوتووەکانی کۆد
+# نموونە پێشکەوتووەکانی کۆد {#advanced-code-examples}
 
 ئەم نموونانە شێوازە پێشکەوتووەکانی یەکخستنی Ultimate Multisite پیشان دەدەن.
 
-## بزوێنەری نرخی گۆڕاو
+## بزوێنەری نرخی گۆڕاو {#dynamic-pricing-engine}
 
 بزوێنەرێکی نرخدان لەسەر بنەمای یاساکان کە داشکاندنی قەبارە، دڵسۆزی، و وەرزی جێبەجێ دەکات:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## دابینکردنی پێشکەوتووی ماڵپەڕ
+## دابینکردنی پێشکەوتووی ماڵپەڕ {#advanced-site-provisioning}
 
 بە شێوەیەکی ئۆتۆماتیکی ماڵپەڕە نوێیەکان بە plugin، SSL، CDN، پاڵپشت، و چاودێری ڕێکبخە لەسەر بنەمای تایبەتمەندییەکانی پلان:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## سیستەمی سنووردارکردنی تایبەت
+## سیستەمی سنووردارکردنی تایبەت {#custom-limitations-system}
 
 سنووری سەرچاوەکان بە ئاگادارکردنەوەی بەکارهێنان شوێن بکە و جێبەجێی بکە:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## ژمێرەری ئەتۆمی BerlinDB بە `increment_item()`
+## ژمێرەری ئەتۆمی BerlinDB بە `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 میتۆدی `increment_item()`ی زیاد کرد بۆ پۆلی `Query`ی BerlinDB. بەکاری بهێنە بۆ ئەنجامدانی زیادکردنی سەلامەت و ئەتۆمی لەسەر ستوونە ژمارەییەکان بەبێ کێبڕکێی خوێندن-دەستکاریکردن-نووسین — بەسوودە بۆ ژمێرەرەکان، سنوورەکانی بەکارهێنان، و پشکنینەکانی سنووردارکردنی خێرایی کە لەژێر داواکارییە هاوکاتەکاندا کار دەکەن.
 
-### واژۆی میتۆد
+### واژۆی میتۆد {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 میتۆدی `increment_item()`ی زیاد کرد بۆ
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### بەکارهێنانی بنەڕەتی
+### بەکارهێنانی بنەڕەتی {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### شوێنکەوتنی بەکارهێنانی API بۆ هەر ئەندامێتییەک
+### شوێنکەوتنی بەکارهێنانی API بۆ هەر ئەندامێتییەک {#tracking-api-usage-per-membership}
 
 نەخشەیەکی کرداری بۆ جێبەجێکردنی سنوورەکانی خێرایی API بۆ هەر ئەندامێتییەک:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### بۆچی `increment_item()` نەک `update_item()`
+### بۆچی `increment_item()` نەک `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 ڕێگایەکی سادەی خوێندن-دەستکاریکردن-نووسین لەژێر داواکارییە هاوکاتەکاندا ناسەلامەتە:
 

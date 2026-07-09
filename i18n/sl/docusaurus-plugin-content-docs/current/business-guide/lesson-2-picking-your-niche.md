@@ -3,19 +3,19 @@ title: 'Lekcija 2: Izbira vaše niše'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lekcija 2: Izbira vaše niše
+# Lekcija 2: Izbira vaše niše {#lesson-2-picking-your-niche}
 
 V Lekciji 1 smo ugotovili, zakaj niša premaga generičnost. Zdaj morate izbrati svojo. Ta lekcija vam ponudi okvir za iskanje in potrjevanje niše, preden vložite čas v gradnjo zanjo.
 
-## Kje smo ostali
+## Kje smo ostali {#where-we-left-off}
 
 Opredelili smo koncept FitSite: platformo za spletna mesta za fitnes studie. Toda kako smo prišli prav do fitnes studiev? Ta lekcija vas vodi skozi postopek, da ga lahko uporabite za iskanje lastne niše.
 
-## Tri merila
+## Tri merila {#the-three-criteria}
 
 Dobra niša za platformo za spletna mesta izpolnjuje tri pogoje:
 
-### 1. Potrebujejo spletna mesta, vendar težko dobijo dobra
+### 1. Potrebujejo spletna mesta, vendar težko dobijo dobra {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Iščite panoge, kjer:
 
@@ -26,7 +26,7 @@ Iščite panoge, kjer:
 
 **Fitnes studii ustrezajo**: člani pričakujejo, da bodo na spletu našli urnike vadb, cene in rezervacije. Večina spletnih mest studiev je zastarela ali zgrajena na generičnih predlogah, ki ne služijo namenu.
 
-### 2. Podjetja si lahko privoščijo mesečno naročnino
+### 2. Podjetja si lahko privoščijo mesečno naročnino {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Vaše ciljne stranke morajo biti:
 
@@ -36,7 +36,7 @@ Vaše ciljne stranke morajo biti:
 
 **Fitnes studii ustrezajo**: že plačujejo programsko opremo za rezervacije, obdelavo plačil in marketinška orodja. Naročnina za spletno mesto je naraven dodatek.
 
-### 3. Med seboj se pogovarjajo
+### 3. Med seboj se pogovarjajo {#3-they-talk-to-each-other}
 
 Najboljše niše imajo:
 
@@ -46,9 +46,9 @@ Najboljše niše imajo:
 
 **Fitnes studii ustrezajo**: lastniki studiev obiskujejo dogodke fitnes panoge, sodelujejo v spletnih skupnostih in si pogosto delijo orodja ter storitve z vrstniki.
 
-## Kako najti kandidate za nišo
+## Kako najti kandidate za nišo {#how-to-find-niche-candidates}
 
-### Začnite s tem, kar poznate
+### Začnite s tem, kar poznate {#start-with-what-you-know}
 
 Vaše obstoječe izkušnje so prednost. Razmislite o:
 
@@ -56,7 +56,7 @@ Vaše obstoječe izkušnje so prednost. Razmislite o:
 - Hobijih ali zanimanjih, kjer razumete skupnost
 - Profesionalnih mrežah, ki jim že pripadate
 
-### Iščite signale bolečin
+### Iščite signale bolečin {#look-for-pain-signals}
 
 Poiščite dokaze, da se podjetja v niši spopadajo s spletnimi mesti:
 
@@ -65,7 +65,7 @@ Poiščite dokaze, da se podjetja v niši spopadajo s spletnimi mesti:
 - Oglejte si dejanska spletna mesta v niši -- ali je večina slabih?
 - Preverite, ali obstajajo konkurenti in kako dobro služijo trgu
 
-### Ocenite ekonomiko
+### Ocenite ekonomiko {#evaluate-the-economics}
 
 Za vsako kandidatno nišo ocenite:
 
@@ -73,11 +73,11 @@ Za vsako kandidatno nišo ocenite:
 - **Pripravljenost plačati**: Koliko trenutno porabijo za podobna orodja?
 - **Potencial življenjske vrednosti**: Ali so ta podjetja stabilna ali se hitro odjavljajo?
 
-## Potrjevanje vaše niše
+## Potrjevanje vaše niše {#validating-your-niche}
 
 Preden karkoli zgradite, potrdite povpraševanje:
 
-### Pogovorite se s potencialnimi strankami
+### Pogovorite se s potencialnimi strankami {#talk-to-potential-customers}
 
 Obrnite se na 10–15 lastnikov podjetij v svoji ciljni niši. Vprašajte:
 
@@ -88,17 +88,17 @@ Obrnite se na 10–15 lastnikov podjetij v svoji ciljni niši. Vprašajte:
 
 Še ne prodajate. Poslušate.
 
-### Preverite konkurenčno okolje
+### Preverite konkurenčno okolje {#check-competitor-landscape}
 
 - **Brez konkurentov**: Lahko pomeni, da ni povpraševanja, ali pa neizkoriščeno priložnost. Pogovori s strankami vam bodo povedali, za kaj gre.
 - **Nekaj konkurentov**: Dober znak. Potrjuje povpraševanje. Preučite, kaj delajo dobro in kje jim zmanjka.
 - **Veliko konkurentov**: Težje vstopiti, vendar še vedno mogoče, če se lahko jasno razlikujete.
 
-### Zgradite ciljno stran
+### Zgradite ciljno stran {#build-a-landing-page}
 
 Preden zgradite platformo, ustvarite preprosto ciljno stran, ki opiše vašo nišno rešitev, in zbirajte e-poštne prijave. Zaženite majhno količino ciljnega oglaševanja, da preizkusite zanimanje. Če se ljudje prijavijo, imate potrditev.
 
-## Uporaba tega pri FitSite
+## Uporaba tega pri FitSite {#applying-this-to-fitsite}
 
 Tako se je FitSite odrezal glede na merila:
 
@@ -112,7 +112,7 @@ Tako se je FitSite odrezal glede na merila:
 
 Potrditev je potrdila priložnost. Zdaj gradimo.
 
-## Ideje za niše, ki jih velja razmisliti
+## Ideje za niše, ki jih velja razmisliti {#niche-ideas-to-consider}
 
 Če fitnes ni vaš trg, so tukaj druge niše, ki izpolnjujejo merila:
 
@@ -127,7 +127,7 @@ Potrditev je potrdila priložnost. Zdaj gradimo.
 
 Vsaka od teh ima enake značilnosti: jasne potrebe po spletnih mestih, sposobnost plačila in priporočila znotraj skupnosti.
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Okvir za izbiro niše**: tri merila za oceno katere koli niše
 - **Metode potrjevanja**: pogovori s strankami, analiza konkurentov, testiranje ciljne strani

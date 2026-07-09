@@ -3,25 +3,25 @@ title: CyberPanel integrācija
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integrācija
+# CyberPanel Integrācija {#cyberpanel-integration}
 
 Šis ceļvedis iepina, kā konfigurēt Ultimate Multisite CyberPanel integrāciju, lai automātiski pievienotu (un atņemtu) mapeotus domēnus jūsu tīklā kā virtuālos hostus CyberPanel, ar iespējamo auto-SSL sniegšanu ar Let's Encrypt.
 
-## Kas tas dara
+## Kas tas dara {#what-it-does}
 
 - Kad domēnu mapejums tiek veikts Ultimate Multisite, integrācija izmanto CyberPanel API, lai izveidotu virtuālo hosti šai domēnai.
 - Kad domēna mapejums tiek atņemts, integrācija izmanto API, lai izslēgtu atbilstošo virtuālo hosti.
 - Ja auto-SSL ir ieslēgts, integrācija spēk vai certificate sniegšanu Let's Encrypt tieši pēc virtuālo hosta izveidošanas.
 - Iespējami pievieno/atņem `www.` aliasu atkarībā no jūsu "Auto-create www subdomain" iestatījuma Domānu Mapejumu iestatījumos.
 
-## Priekšpalikumi
+## Priekšpalikumi {#prerequisites}
 
 - Darboša CyberPanel instanca (ieteicams v2.3 vai jaunāka), kas pieejama no jūsu WordPress servera.
 - Ievadīts vietnes, kurā jau ir sniegts jūsu WordPress tīkla galvenais roots. Integrācija pievieno jaunas virtuālos hostus šim serveram.
 - CyberPanel API piekļuves atspējots. Autentifikācija izmanto jūsu CyberPanel admina lietotāja nosaukumu un paroli.
 - Jūsu DNS reģistri mapeotus domēnu ir jau jāuztver uz jūsu servera IP adresi, pirms auto-SSL var sniegt pareizu sertifikātu.
 
-## Prasības
+## Prasības {#requirements}
 
 Sejām konstanți jādefinē jūsu `wp-config.php` failā:
 

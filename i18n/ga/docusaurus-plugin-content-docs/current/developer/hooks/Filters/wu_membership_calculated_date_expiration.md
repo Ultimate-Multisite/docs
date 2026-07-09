@@ -4,11 +4,11 @@ title: Scagaire - wu_membership_calculated_date_expiration
 sidebar_label: wu_membership_calculated_date_expiration
 _i18n_hash: 92e1113e33a3b69e4fc3d07d6dcd8d69
 ---
-# Scagaire: wu_membership_calculated_date_expiration
+# Scagaire: wu_membership_calculated_date_expiration {#filter-wumembershipcalculateddateexpiration}
 
 Scagann sé an dáta éaga ríofa.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Scagann sé an dáta éaga ríofa.
 | $membership_id | `int` | ID na ballraíochta. |
 | $membership | `\WP_Ultimo\Models\Membership` | Oibiacht bhallraíochta. |
 
-### Ó
+### Ó {#since}
 
 - 2.0
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L1309) ag líne 1309

@@ -3,21 +3,21 @@ title: Ukusetha kanye Nokulungiselelwa Komhlinzeki
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Umthengisi Wesizinda: Ukusetha Nokumisa Umhlinzeki
+# Umthengisi Wesizinda: Ukusetha Nokumisa Umhlinzeki {#domain-seller-setup-and-provider-configuration}
 
 Isengezo se-Umthengisi Wesizinda siza newizadi yokusetha eqondisiwe ekuhambisa kuzo zonke izinyathelo ezidingekayo. Leli khasi lichaza ukugeleza kwewizadi nokuthi ungabamisa noma ubamise kabusha kanjani abahlinzeki kamuva.
 
-## Izimfuneko
+## Izimfuneko {#requirements}
 
 - **Multisite Ultimate** v2.4.12 noma ngaphezulu, yenziwe yasebenza kunethiwekhi
 - **PHP** 7.4+
 - Imininingwane ye-API okungenani yomregistrar oyedwa osekelwayo
 
-## Iwizadi yokusetha yokuqala
+## Iwizadi yokusetha yokuqala {#first-run-setup-wizard}
 
 Iwizadi yokusetha ivuleka ngokuzenzakalelayo okokuqala lapho wenza i-plugin isebenze kunethiwekhi. Iyatholakala futhi nganoma yisiphi isikhathi kusuka ku-**Umphathi Wenethiwekhi › Ultimate Multisite › Ukusetha Umthengisi Wesizinda**.
 
-### Isinyathelo 1 — Khetha umhlinzeki
+### Isinyathelo 1 — Khetha umhlinzeki {#step-1--choose-a-provider}
 
 Khetha umregistrar ofuna ukumxhuma. Izinketho ezisekelwayo:
 
@@ -33,7 +33,7 @@ Khetha umregistrar ofuna ukumxhuma. Izinketho ezisekelwayo:
 | NameSilo | Cha | Cha |
 | Enom | Yebo | Cha |
 
-### Isinyathelo 2 — Faka imininingwane yokungena
+### Isinyathelo 2 — Faka imininingwane yokungena {#step-2--enter-credentials}
 
 Umhlinzeki ngamunye unezinkambu ezihlukene zemininingwane yokungena:
 
@@ -57,17 +57,17 @@ Umhlinzeki ngamunye unezinkambu ezihlukene zemininingwane yokungena:
 
 Hlola **Imodi ye-sandbox** lapho itholakala khona ukuze uvivinye ngokumelene nendawo yokuhlola yomhlengzeki ngaphambi kokuya bukhoma.
 
-### Isinyathelo 3 — Hlola ukuxhumana
+### Isinyathelo 3 — Hlola ukuxhumana {#step-3--test-the-connection}
 
 Chofoza **Hlola Ukuxhumana**. Iwizadi ithumela ucingo lwe-API olulula ukuze iqinisekise imininingwane yokungena nokuxhumeka. Lungisa noma yiziphi izinkinga zemininingwane yokungena ngaphambi kokuqhubeka.
 
-### Isinyathelo 4 — Ngenisa ama-TLD
+### Isinyathelo 4 — Ngenisa ama-TLD {#step-4--import-tlds}
 
 Chofoza **Ngenisa ama-TLD** ukuze udonse wonke ama-TLD atholakalayo namanani e-wholesale kumhlinzeki oxhunyiwe. Lokhu kugcwalisa uhlu lwama-TLD olusetshenziswa imikhiqizo yezizinda. Ukungenisa kungathatha imizuzwana engu-30–60 kubahlinzeki abanamakhathalogi amakhulu ama-TLD.
 
 Ama-TLD aphinde avumelaniswe ngokuzenzakalelayo kanye ngosuku ngomsebenzi we-cron ohleliwe.
 
-### Isinyathelo 5 — Dala umkhiqizo wesizinda
+### Isinyathelo 5 — Dala umkhiqizo wesizinda {#step-5--create-a-domain-product}
 
 Iwizadi idala umkhiqizo wesizinda ozenzakalelayo obamba konke one-markup engu-10%. Ungahlela lo mkhiqizo ngokushesha noma weqe bese udala imikhiqizo mathupha ngaphansi kwe-**Ultimate Multisite › Imikhiqizo**.
 
@@ -75,7 +75,7 @@ Bheka [Imikhiqizo Yezizinda Namanani](./domain-products) ukuze uthole umhlahland
 
 ---
 
-## Ukumisa kabusha umhlinzeki
+## Ukumisa kabusha umhlinzeki {#reconfiguring-a-provider}
 
 Iya ku-**Umphathi Wenethiwekhi › Ultimate Multisite › Izilungiselelo › Umthengisi Wesizinda** (noma chofoza **Izilungiselelo** ohlwini lwama-plugin).
 
@@ -88,17 +88,17 @@ Ikhasi lezilungiselelo liqukethe:
 - **Phatha imikhiqizo yezizinda** — isixhumanisi esisheshayo ohlwini lweMikhiqizo
 - **Misa abahlinzeki** — kuvula iWizadi Yokuhlanganisa ukuze wengeze noma umise kabusha abahlinzeki
 
-### Ukwengeza umhlinzeki wesibili
+### Ukwengeza umhlinzeki wesibili {#adding-a-second-provider}
 
 Chofoza **Misa abahlinzeki** bese usebenzisa iwizadi futhi kumregistrar omusha. Ungaba nabahlinzeki abaningi abamiswe ngesikhathi esisodwa. Nikeza umkhiqizo wesizinda ngamunye kumhlinzeki othile, noma uwushiye kozenzakalelayo.
 
-### Ukuvumelanisa ama-TLD mathupha
+### Ukuvumelanisa ama-TLD mathupha {#syncing-tlds-manually}
 
 Ekhasini lezilungiselelo, chofoza **Vumelanisa ama-TLD** eduze kwanoma yimuphi umhlinzeki omisiwe ukuze udonse amanani akamuva. Lokhu kuyasiza ngemva kokuthi umhlinzeki ebuyekeze amanani e-wholesale noma engeze ama-TLD amasha.
 
 ---
 
-## Amalogi
+## Amalogi {#logs}
 
 Umhlinzeki ngamunye ubhala esiteshini sakhe selogi. Amalogi ayabonakala ngaphansi kwe-**Umphathi Wenethiwekhi › Ultimate Multisite › Amalogi**:
 
@@ -118,7 +118,7 @@ Umhlinzeki ngamunye ubhala esiteshini sakhe selogi. Amalogi ayabonakala ngaphans
 
 ---
 
-## Amanothi ngamakhono omhlinzeki
+## Amanothi ngamakhono omhlinzeki {#provider-capability-notes}
 
 Akuwona wonke ama-API ama-registrar aveza imisebenzi efanayo. Isengezo siveza imisebenzi engasekelwayo ngamaphutha acacile abhekiswe kumphathi esikhundleni sokwehluleka buthule.
 

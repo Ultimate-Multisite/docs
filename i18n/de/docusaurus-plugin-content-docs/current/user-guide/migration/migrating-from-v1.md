@@ -3,9 +3,9 @@ title: Migration von V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migration von V1
+# Migration von V1 {#migrating-from-v1}
 
-## Ultimate Multisite ist von seiner ursprünglichen 1.x-Release-Familie zur 2.x-Release-Familie gewechselt.
+## Ultimate Multisite ist von seiner ursprünglichen 1.x-Release-Familie zur 2.x-Release-Familie gewechselt. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite Version 2.0 und höher ist eine vollständige Neufassung der Codebasis, was bedeutet, dass zwischen der alten Version und der neuen nur sehr wenig gemeinsam ist. Aus diesem Grund müssen beim Upgrade von 1.x auf 2.x deine Daten in ein Format migriert werden, das die neuen Versionen verstehen können.
 
@@ -15,7 +15,7 @@ Diese Lektion behandelt, wie der Migrator funktioniert, was in Fehlerfällen zu 
 
 _**WICHTIG: Bevor du mit dem Upgrade von Version 1.x auf Version 2.0 beginnst, stelle bitte sicher, dass du ein Backup deiner Website-Datenbank erstellst**_
 
-## Erste Schritte
+## Erste Schritte {#first-steps}
 
 Der erste Schritt besteht darin, die Plugin-.zip-Datei herunterzuladen und Version 2.0 in deinem Netzwerk-Admin-Dashboard zu installieren.
 
@@ -51,7 +51,7 @@ Nach der Lizenzaktivierung kannst du die eigentliche Installation beginnen, inde
 
 <!-- Screenshot nicht verfügbar: Installationsseite mit Anzeige, was aktualisiert wird, und Installieren-Button -->
 
-## Jetzt die Migration
+## Jetzt die Migration {#now-the-migration}
 
 Der Migrator verfügt über eine integrierte Sicherheitsfunktion, bei der dein gesamtes Multisite überprüft wird, um sicherzustellen, dass alle deine Ultimate Multisite-Daten ohne Probleme migriert werden können. Klicke auf den Button **Prüfung ausführen**, um den Prozess zu starten.
 
@@ -59,13 +59,13 @@ Der Migrator verfügt über eine integrierte Sicherheitsfunktion, bei der dein g
 
 Nach dem Ausführen der Prüfung gibt es zwei Möglichkeiten: Das Ergebnis kann entweder **mit** einem Fehler oder **ohne Fehler** sein.
 
-### Mit Fehler
+### Mit Fehler {#with-error}
 
 Wenn du eine Fehlermeldung erhältst, musst du dich an unser Support-Team wenden, damit es dir bei der Behebung des Fehlers helfen kann. Stelle sicher, dass du **das Fehlerprotokoll bereitstellst**, wenn du ein Ticket erstellst. Du kannst das Protokoll herunterladen oder auf den Link klicken, der besagt, dass du unser Support-Team kontaktieren sollst. Dadurch wird das Hilfe-Widget auf der rechten Seite deiner Seite geöffnet, wobei die Felder bereits für dich vorausgefüllt sind und die Fehlerprotokolle in der Beschreibung enthalten.
 
 _**Da das System einen Fehler gefunden hat, kannst du nicht mit der Migration auf Version 2.0 fortfahren. Du kannst dann zu Version 1.x zurückkehren, um dein Netzwerk weiter auszuführen, bis der Fehler behoben ist.**_
 
-### Ohne Fehler
+### Ohne Fehler {#without-error}
 
 Wenn das System keinen Fehler findet, siehst du eine Erfolgsmeldung und unten einen **Migrieren**-Button, mit dem du mit der Migration fortfahren kannst. Auf dieser Seite wirst du daran erinnert, ein Backup deiner Datenbank zu erstellen, bevor du fortfährst, was wir dringend empfehlen. Klicke auf **Migrieren**, wenn du bereits ein Backup hast.
 

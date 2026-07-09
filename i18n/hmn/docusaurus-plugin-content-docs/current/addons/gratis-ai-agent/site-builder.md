@@ -3,15 +3,15 @@ title: Kev Tswj thiab Sib Koom Tus Tsim Vev Xaib v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (tau qhia hauv Gratis AI Agent v1.4.0) yog lub cav uas txhawb kev tsim website ntau-kauj ruam. Thaum koj hais kom agent "tsim ib lub website rau tsev noj mov" lossis "tsim ib qho portfolio nrog ib lub blog", tus orchestrator yuav muab lub hom phiaj loj ntawd faib ua ib **plan** uas muaj qauv, nrhiav cov plugins uas xav tau kom ua tau raws li ntawd, khiav txhua kauj ruam raws li txheej txheem, taug qab kev nce qib, thiab rov kho tau ntawm kev yuam kev nws tus kheej.
 
 ---
 
-## Nws Ua Haujlwm Li Cas
+## Nws Ua Haujlwm Li Cas {#how-it-works}
 
-### 1. Kev Tsim Plan
+### 1. Kev Tsim Plan {#1-plan-generation}
 
 Thaum agent tau txais ib qho lus qhia tsim site, nws hu rau lub peev xwm `create_site_plan` kom tsim tau ib JSON **site plan**. Lub plan piav qhia:
 
@@ -61,7 +61,7 @@ Thaum agent tau txais ib qho lus qhia tsim site, nws hu rau lub peev xwm `create
 }
 ```
 
-### 2. Kev Nrhiav Plugin
+### 2. Kev Nrhiav Plugin {#2-plugin-discovery}
 
 Ua ntej kev khiav pib, tus orchestrator tshuaj xyuas cov `plugin_requirements` hauv plan thiab kuaj seb cov plugins twg twb active lawm. Rau cov plugins uas ploj lawm, nws:
 
@@ -71,7 +71,7 @@ Ua ntej kev khiav pib, tus orchestrator tshuaj xyuas cov `plugin_requirements` h
 
 Kev nrhiav plugin uas ua tsis tiav tsis ua rau tag nrho txoj haujlwm tuag — tus orchestrator cim cov kauj ruam cuam tshuam ua `skipped` thiab txuas ntxiv nrog seem ntawm plan.
 
-### 3. Kev Khiav Plan
+### 3. Kev Khiav Plan {#3-plan-execution}
 
 Tus orchestrator hu `execute_site_plan` nrog plan ID. Kev khiav mus raws phase-rau-phase, kauj ruam-rau-kauj ruam:
 
@@ -79,7 +79,7 @@ Tus orchestrator hu `execute_site_plan` nrog plan ID. Kev khiav mus raws phase-r
 - **Parallel steps** — cov kauj ruam hauv tib phase uas tsis muaj kev vam khom sib txuas yuav raug xa khiav tib txhij thaum tus chij `parallel` raug teeb.
 - **Step timeout** — txhua kauj ruam muaj timeout riêng (default: qhov setting `Ability Timeout`). Ib kauj ruam uas dhau sijhawm yuav raug cim tias `failed` thiab plan txuas ntxiv.
 
-### 4. Kev Taug Qab Kev Nce Qib
+### 4. Kev Taug Qab Kev Nce Qib {#4-progress-tracking}
 
 Hu `get_plan_progress` thaum twg los tau kom kuaj qhov xwm txheej kev khiav:
 
@@ -104,7 +104,7 @@ Cov neeg siv WP-CLI tuaj yeem saib kev nce qib nrog:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Kev Rov Kho Kev Yuam Kev
+### 5. Kev Rov Kho Kev Yuam Kev {#5-error-recovery}
 
 Thaum ib kauj ruam ua tsis tiav, tus orchestrator kuaj seb puas muaj ib kauj ruam **fallback** uas tau txhais hauv plan:
 
@@ -115,9 +115,9 @@ Agent yuav qhia tag nrho cov kev ua tsis tiav hauv daim ntawv xaus plan kawg thi
 
 ---
 
-## Cov Peev Xwm Site Plan
+## Cov Peev Xwm Site Plan {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Tsim ib site plan uas muaj qauv los ntawm ib qho kev piav qhia hom phiaj ua lus ntuj.
 
@@ -134,7 +134,7 @@ Tsim ib site plan uas muaj qauv los ntawm ib qho kev piav qhia hom phiaj ua lus 
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Pib khiav ib site plan uas twb tau tsim ua ntej lawm.
 
@@ -150,7 +150,7 @@ Pib khiav ib site plan uas twb tau tsim ua ntej lawm.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Xa rov qab qhov execution status tam sim no ntawm ib lub site plan.
 
@@ -164,7 +164,7 @@ Xa rov qab qhov execution status tam sim no ntawm ib lub site plan.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Kho ib kauj ruam uas ua tsis tiav ntawm tes thiab rov pib plan execution ntawm kauj ruam tom ntej. Siv qhov no thaum kev rov kho cia li ua tsis tau thiab koj xav los cuam tshuam kho.
 
@@ -180,7 +180,7 @@ Kho ib kauj ruam uas ua tsis tiav ntawm tes thiab rov pib plan execution ntawm k
 
 ---
 
-## Muab v1 thiab v2 Los Sib Piv
+## Muab v1 thiab v2 Los Sib Piv {#comparing-v1-and-v2}
 
 | Qhov muaj peev xwm | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Kho ib kauj ruam uas ua tsis tiav ntawm tes thiab rov pib plan execution ntawm k
 
 ---
 
-## Cov Lus Txib WP-CLI Plan
+## Cov Lus Txib WP-CLI Plan {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Tsim ib lub site plan los ntawm ib nqe lus piav txog lub hom phiaj.
 
@@ -205,7 +205,7 @@ Tsim ib lub site plan los ntawm ib nqe lus piav txog lub hom phiaj.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Khiav ib lub plan uas twb tsim ua ntej lawm.
 
@@ -213,7 +213,7 @@ Khiav ib lub plan uas twb tsim ua ntej lawm.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Qhia progress tam sim no rau ib lub plan uas tab tom khiav lossis twb tiav lawm.
 
@@ -221,7 +221,7 @@ Qhia progress tam sim no rau ib lub plan uas tab tom khiav lossis twb tiav lawm.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Sau tag nrho cov site plan (tseem tos, tab tom khiav, thiab tiav lawm).
 
@@ -229,7 +229,7 @@ Sau tag nrho cov site plan (tseem tos, tab tom khiav, thiab tiav lawm).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Reset ib lub plan uas ua tsis tiav rau `pending` kom nws rov khiav tau ntawm qhov pib.
 

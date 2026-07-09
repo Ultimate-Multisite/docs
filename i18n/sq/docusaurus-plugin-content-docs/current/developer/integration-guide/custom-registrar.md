@@ -3,13 +3,13 @@ title: Ndërtimi i një integrimi të personalizuar me regjistruesin
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ndërtimi i një integrimi të personalizuar të regjistruesit
+# Ndërtimi i një integrimi të personalizuar të regjistruesit {#building-a-custom-registrar-integration}
 
 Shtesa Domain Seller përdor një model **Integration Registry**. Çdo regjistrues është një klasë PHP që implementon `Domain_Selling_Capability` dhe regjistrohet vetë përmes action hook `wu_domain_seller_register_capabilities`.
 
 Ky udhëzues tregon si të lidhni një regjistrues të personalizuar.
 
-## Ndërfaqja
+## Ndërfaqja {#the-interface}
 
 Klasa juaj duhet të implementojë `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` dhe të zgjerojë `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Metoda opsionale
+### Metoda opsionale {#optional-methods}
 
 Implementojini këto për të zhbllokuar veçori shtesë. Shtesa zbulon mbështetjen përmes `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementojini këto për të zhbllokuar veçori shtesë. Shtesa zbulon mbështe
 | `get_epp_code(string $domain_name): array` | Transferimin e domain-it (dalës) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transferimin e domain-it (hyrës) |
 
-### Konventa e vlerës së kthyer
+### Konventa e vlerës së kthyer {#return-value-convention}
 
 Të gjitha metodat kthejnë një array me të paktën një çelës `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Regjistrimi i capability-t tuaj
+## Regjistrimi i capability-t tuaj {#registering-your-capability}
 
 Regjistroni klasën tuaj duke përdorur action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argumenti i parë për `add_capability()` është **provider ID** — një slug 
 
 ---
 
-## Shtimi i fushave të kredencialeve në wizard
+## Shtimi i fushave të kredencialeve në wizard {#adding-credential-fields-to-the-wizard}
 
 Për t’u lejuar adminëve të fusin kredencialet përmes setup wizard, regjistroni integrimin tuaj:
 
@@ -137,7 +137,7 @@ Kredencialet ruhen si opsione rrjeti duke përdorur ID-të e fushave si çelësa
 
 ---
 
-## Hooks për veprimet pas regjistrimit
+## Hooks për veprimet pas regjistrimit {#hooks-for-post-registration-actions}
 
 Përdorni këto actions për të aktivizuar webhooks, provisioning, njoftime ose përditësime CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Regjistrimi i logjeve
+## Regjistrimi i logjeve {#logging}
 
 Shkruani në kanalin e logjeve specifik për ofruesin tuaj duke përdorur `wu_log_add()`:
 

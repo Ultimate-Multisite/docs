@@ -3,15 +3,15 @@ title: Gastronomie-Menüs
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastronomie-Karten
+# Gastronomie-Karten {#hospitality-menus}
 
 Die Funktion **Gastronomie-Karten** ermöglicht es Theme Builder, strukturierte Speise- und Getränkekarten direkt in Ihre WordPress-Seite zu generieren und einzubetten.
 
-## Überblick
+## Überblick {#overview}
 
 Mit Theme Builder können Sie nun professionelle, strukturierte Menüseiten für Gastronomiebetriebe erstellen – darunter Restaurants, Cafés, Bars und Catering-Dienste. Diese Menüs sind vollständig in das Design Ihrer Website integriert und können einfach aktualisiert und verwaltet werden.
 
-## Unterstützte Gastronomie-Typen
+## Unterstützte Gastronomie-Typen {#supported-hospitality-types}
 
 - **Restaurants** — Menüs für vollwertige Gastronomie
 - **Cafés** — Kaffee- und leichte Speisen-Menüs
@@ -21,9 +21,9 @@ Mit Theme Builder können Sie nun professionelle, strukturierte Menüseiten für
 - **Food Trucks** — Menüs für mobile Gastronomie
 - **Brauereien und Weingüter** — Getränke-Menüs mit Beschreibungen
 
-## Menüstruktur
+## Menüstruktur {#menu-structure}
 
-### Menü-Kategorien
+### Menü-Kategorien {#menu-categories}
 
 Menüs werden in Kategorien organisiert:
 
@@ -34,7 +34,7 @@ Menüs werden in Kategorien organisiert:
 - **Getränke** — Drinks (alkoholisch und nicht-alkoholisch)
 - **Spezialitäten** — Tages- oder saisonale Angebote
 
-### Menü-Artikel-Format
+### Menü-Artikel-Format {#menu-item-format}
 
 Jeder Menü-Artikel enthält:
 
@@ -49,7 +49,7 @@ Jeder Menü-Artikel enthält:
 }
 ```
 
-#### Artikel-Felder
+#### Artikel-Felder {#item-fields}
 
 | Feld | Typ | Beschreibung |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Jeder Menü-Artikel enthält:
 | `allergens` | array | Häufige Allergene (Nüsse, Schalentiere usw.) |
 | `availability` | string | Verfügbarkeit (Täglich, Saisonal usw.) |
 
-## Gastronomie-Menüs erstellen
+## Gastronomie-Menüs erstellen {#creating-hospitality-menus}
 
-### Schritt 1: Menüinformationen bereitstellen
+### Schritt 1: Menüinformationen bereitstellen {#step-1-provide-menu-information}
 
 Sagen Sie Theme Builder, worum es in Ihrem Menü geht:
 
@@ -71,7 +71,7 @@ Erstelle ein Restaurantmenü für mein italienisches Restaurant mit Vorspeisen,
 Pastagerichten, Hauptgerichten und Desserts. Füge Preise und Beschreibungen hinzu.
 ```
 
-### Schritt 2: Theme Builder generiert das Menü
+### Schritt 2: Theme Builder generiert das Menü {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formatiert Preise und Beschreibungen
 5. Fügt Ernährungs- und Allergeninformationen hinzu
 
-### Schritt 3: Überprüfen und anpassen
+### Schritt 3: Überprüfen und anpassen {#step-3-review-and-customize}
 
 Sie können:
 
@@ -91,9 +91,9 @@ Sie können:
 4. Beschreibungen und Ernährungsangaben aktualisieren
 5. Stil und Layout anpassen
 
-## Menü-Anzeigeoptionen
+## Menü-Anzeigeoptionen {#menu-display-options}
 
-### Vollständige Menüseite
+### Vollständige Menüseite {#full-menu-page}
 
 Eine dedizierte Seite, die Ihr komplettes Menü anzeigt:
 
@@ -102,7 +102,7 @@ Eine dedizierte Seite, die Ihr komplettes Menü anzeigt:
 - Für den Druck optimiertes Layout
 - Mobilgeräte-freundliches Design
 
-### Menü-Widget
+### Menü-Widget {#menu-widget}
 
 Betten Sie Menüabschnitte auf anderen Seiten ein:
 
@@ -111,7 +111,7 @@ Betten Sie Menüabschnitte auf anderen Seiten ein:
 - Getränke-Menü auf der Bar-Seite
 - Dessert-Präsentation im Footer
 
-### Menü-PDF
+### Menü-PDF {#menu-pdf}
 
 Generieren Sie ein herunterladbares PDF-Menü:
 
@@ -120,9 +120,9 @@ Generieren Sie ein herunterladbares PDF-Menü:
 - Enthält Bilder und Beschreibungen
 - Einfach zu teilen und per E-Mail zu versenden
 
-## Ernährungs- und Allergeninformationen
+## Ernährungs- und Allergeninformationen {#dietary-and-allergen-information}
 
-### Ernährungsmerkmale
+### Ernährungsmerkmale {#dietary-attributes}
 
 Markieren Sie Artikel mit Ernährungsangaben:
 
@@ -134,7 +134,7 @@ Markieren Sie Artikel mit Ernährungsangaben:
 - **Low-Carb** — reduziert Kohlenhydrate
 - **Proteinreich** — proteinhaltig
 
-### Allergen-Warnungen
+### Allergen-Warnungen {#allergen-warnings}
 
 Fügen Sie häufige Allergene hinzu:
 
@@ -147,9 +147,9 @@ Fügen Sie häufige Allergene hinzu:
 - **Gluten** — Weizen und glutenhaltiges Getreide
 - **Sesam** — Sesamsamen und Öl
 
-## Menüverwaltung
+## Menüverwaltung {#menu-management}
 
-### Preise aktualisieren
+### Preise aktualisieren {#updating-prices}
 
 Menüpreise einfach aktualisieren:
 
@@ -159,7 +159,7 @@ Menüpreise einfach aktualisieren:
 4. Änderungen speichern
 5. Die Änderungen erscheinen sofort auf Ihrer Website
 
-### Saisonale Artikel hinzufügen
+### Saisonale Artikel hinzufügen {#adding-seasonal-items}
 
 Saisonale Menüvariationen erstellen:
 
@@ -169,7 +169,7 @@ Saisonale Menüvariationen erstellen:
 4. Planen Sie die Verfügbarkeitsdaten
 5. Werden automatisch während der Saison angezeigt
 
-### Spezialitäten verwalten
+### Spezialitäten verwalten {#managing-specials}
 
 Tages- oder Wochenangebote anzeigen:
 
@@ -179,7 +179,7 @@ Tages- oder Wochenangebote anzeigen:
 4. Täglich oder wöchentlich aktualisieren
 5. Alte Spezialitäten archivieren
 
-## Integration mit Theme Builder
+## Integration mit Theme Builder {#integration-with-theme-builder}
 
 Wenn Sie Theme Builder für Gastronomie-Websites verwenden:
 
@@ -189,9 +189,9 @@ Wenn Sie Theme Builder für Gastronomie-Websites verwenden:
 4. **Mobile Optimierung** — die Menüs werden auf Handys schön angezeigt
 5. **SEO-Optimierung** — die Menüs sind für Suchmaschinen geeignet
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Menüdesign
+### Menüdesign {#menu-design}
 
 - **Klare Struktur** — logische Kategorienstruktur
 - **Lesbare Beschreibungen** — appetitanregend und informativ
@@ -199,7 +199,7 @@ Wenn Sie Theme Builder für Gastronomie-Websites verwenden:
 - **Professionelle Fotos** — hochwertige Lebensmittelbilder
 - **Weißraum** — die Seite nicht überladen
 
-### Inhalte
+### Inhalte {#content}
 
 - **Genaue Beschreibungen** — Artikel präzise beschreiben
 - **Spezialitäten hervorheben** — Angebote besonders sichtbar machen
@@ -207,7 +207,7 @@ Wenn Sie Theme Builder für Gastronomie-Websites verwenden:
 - **Regelmäßig aktualisieren** — Preise und Artikel aktuell halten
 - **Appetitanregende Sprache verwenden** — die Artikel köstlich klingen lassen
 
-### Barrierefreiheit
+### Barrierefreiheit {#accessibility}
 
 - **Lesbare Schriftarten** — klare, gut lesbare Schriftarten verwenden
 - **Ausreichender Kontrast** — sicherstellen, dass der Text gut lesbar ist
@@ -215,9 +215,9 @@ Wenn Sie Theme Builder für Gastronomie-Websites verwenden:
 - **Allergenwarnungen** — Allergene prominent anzeigen
 - **Mobilfreundlich** — auf allen Geräten testen
 
-## Beispiele
+## Beispiele {#examples}
 
-### Restaurant-Menü-Struktur
+### Restaurant-Menü-Struktur {#restaurant-menu-structure}
 
 ```
 Vorspeisen
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Café-Menü-Struktur
+### Café-Menü-Struktur {#cafe-menu-structure}
 
 ```
 Kaffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Verwandte Funktionen
+## Verwandte Funktionen {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — Navigationsmenüs erstellen
 - [Design Direction](./design-direction.md) — Das Design Ihrer Website anpassen

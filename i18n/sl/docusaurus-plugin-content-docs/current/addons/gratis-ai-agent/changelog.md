@@ -3,11 +3,11 @@ title: Dnevnik sprememb
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Dnevnik sprememb
+# Dnevnik sprememb {#changelog}
 
-## 1.9.0 — Izdano 2026-04-28
+## 1.9.0 — Izdano 2026-04-28 {#190--released-on-2026-04-28}
 
-### Novo
+### Novo {#new}
 
 - **Zmožnost `create_contact_form`** — ustvari kontaktni obrazec z uporabo aktivnega vtičnika za obrazce (Contact Form 7, WPForms, Fluent Forms ali Gravity Forms) in vrne shortcode, pripravljen za vdelavo v kateri koli prispevek ali stran.
 - **Zmožnost `set_featured_image`** — dodeli prikazno sliko prispevku ali strani iz obstoječega ID-ja priloge v Media Library ali oddaljenega URL-ja; samodejno uvozi sliko, ko je naveden URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Obnovitev zadnje seje** — plošča klepeta zdaj samodejno znova naloži najnovejši pogovor ob nalaganju strani in ob odprtju gradnika, zato se kontekst med navigacijo po straneh nikoli ne izgubi.
 - **Povezave dejanj vtičnika** — hitre povezave do Settings in registra zmožnosti se zdaj prikažejo na zaslonu WordPress **Plugins → Installed Plugins** pod opisom vtičnika.
 
-### Izboljšano
+### Izboljšano {#improved}
 
 - **Ponovni poskus vira slike** — agent zdaj znova poskusi vse konfigurirane brezplačne vire slik, preden se ob neuspelem prenosu vrne na sliko, ustvarjeno z AI.
 - **Plošča z informacijami o modelu** — vedno vidna v glavi klepeta; po prvem sporočilu ni več skrita.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Preoblikovanje gradnika klepeta** — poenotena ikona AI nadomešča prejšnji avatar po meri; skladno z vgrajenim sistemom agentov.
 - **Pretvorba URL-jev v povezave** — URL-ji, ki se pojavijo v sistemskih sporočilih in oblačkih sporočil o napakah, so zdaj prikazani kot klikljive povezave.
 
-### Popravljeno
+### Popravljeno {#fixed}
 
 - **Odkrivnost zmožnosti** — popravljeni opisi, sklici v sistemskem pozivu in uskladitev imenskega prostora, da se vse zmožnosti zanesljivo pojavijo na seznamu orodij agenta.
 - **Predpomnilnik ponudnikov** — ponudniki so zdaj predpomnjeni na ravni celotnega spletnega mesta prek števca različic, kar preprečuje težave z zastarelimi ponudniki v omrežjih multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Izdano 2026-04-09
+## 1.4.0 — Izdano 2026-04-09 {#140--released-on-2026-04-09}
 
-### Novo
+### Novo {#new-1}
 
 - **WP-CLI benchmark ukaz** (`wp gratis-ai-agent benchmark`) — zažene Agent Capabilities v1 benchmark suite iz ukazne vrstice za CI cevovode in poteke dela za vrednotenje modelov. Podpira zagone po posameznih vprašanjih, preglasitve ponudnika/modela ter izhod JSON/CSV.
 - **Agent Capabilities v1 benchmark suite** — strukturiran nabor kompleksnih večstopenjskih pozivov, ki preizkusijo celotno površino zmožnosti, z ocenjevanjem ter poročanjem o tokenih/trajanju.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Benchmark vprašanje za restavracijsko spletno mesto** (`q-restaurant-website`) — celovit test, ki zajema registracijo CPT, design system, navigacijo in odkrivanje pluginov.
 - **PluginI povezovalnikov ponudnikov AI** so dodani v WordPress Playground blueprinte za hitrejšo nastavitev lokalnega razvoja.
 
-### Izboljšano
+### Izboljšano {#improved-1}
 
 - README posodobljen z dokumentacijo povezovalnikov ponudnikov AI in navodili za nastavitev.
 
-### Popravljeno
+### Popravljeno {#fixed-1}
 
 - Odpravljenih 25 napak testov PHPUnit na veji `main`.
 - Popravljen format URL-ja izdaj GitHub v `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Prejšnje opombe ob izdaji se vzdržujejo v repozitoriju plugina._

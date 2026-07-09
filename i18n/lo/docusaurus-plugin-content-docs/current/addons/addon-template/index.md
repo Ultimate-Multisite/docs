@@ -3,25 +3,25 @@ title: ແມ່ແບບສ່ວນເສີມ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# ແມ່ແບບສ່ວນເສີມ
+# ແມ່ແບບສ່ວນເສີມ {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## ຂໍ້ກຳນົດ
+## ຂໍ້ກຳນົດ {#requirements}
 
 - WordPress 5.3 ຫຼືສູງກວ່າ
 - PHP 7.4 ຫຼືສູງກວ່າ
 - ປລັກອິນ Multisite Ultimate (ເປີດໃຊ້ງານ)
 
-## ການຕິດຕັ້ງ
+## ການຕິດຕັ້ງ {#installation}
 
 1. ອັບໂຫຼດໄຟລ໌ສ່ວນເສີມໄປຍັງໄດເຣັກທໍຣີ `/wp-content/plugins/` ຂອງທ່ານ
 2. ເປີດໃຊ້ງານປລັກອິນຜ່ານເມນູ 'ປລັກອິນ' ໃນ WordPress
 3. ກຳນົດຄ່າສ່ວນເສີມໃນຜູ້ດູແລເຄືອຂ່າຍ
 
-## ການພັດທະນາ
+## ການພັດທະນາ {#development}
 
-### ການຕັ້ງຄ່າ
+### ການຕັ້ງຄ່າ {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ໂຄງສ້າງໂຄງການ
+### ໂຄງສ້າງໂຄງການ {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # ກົດການປັບໂຄດໃຫ້ທັນສະໄໝ
 ```
 
-### ການທົດສອບ
+### ການທົດສອບ {#testing}
 
 ສ່ວນເສີມນີ້ມີເຟຣມເວີກການທົດສອບທີ່ຄົບຖ້ວນ:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **ຄວາມຄອບຄຸມການທົດສອບ**: ກຳນົດຄ່າເພື່ອຕິດຕາມຄວາມຄອບຄຸມໂຄດ
 - **ການທົດສອບ Multisite**: ການທົດສອບແລ່ນໃນສະພາບແວດລ້ອມ multisite
 
-### ມາດຕະຖານໂຄດ
+### ມາດຕະຖານໂຄດ {#code-standards}
 
 - **ມາດຕະຖານການຂຽນໂຄດ WordPress**: ບັງຄັບໃຊ້ຜ່ານ PHPCS
 - **ຄວາມເຂົ້າກັນໄດ້ກັບ PHP 7.4+**: ຮອງຮັບຄຸນສົມບັດ PHP ສະໄໝໃໝ່
 - **ການວິເຄາະສະແຕຕິກ**: ການລວມ PHPStan ສຳລັບການກວດປະເພດ
 - **ການປັບໂຄດໃຫ້ທັນສະໄໝ**: ກົດ Rector ສຳລັບການອັບເກຣດ PHP
 
-### ລະບົບບິວ
+### ລະບົບບິວ {#build-system}
 
 - **ການປະມວນຜົນຊັບພະຍາກອນ**: ການຫຍໍ້ຂະໜາດໄຟລ໌ CSS/JS
 - **ການແປພາສາ**: ການສ້າງໄຟລ໌ POT
 - **ການຈັດແພັກເກດ**: ການສ້າງອາຣ໌ຄາຍຟ໌ສຳລັບການແຈກຢາຍ
 - **ໂໝດພັດທະນາ**: ຊັບພະຍາກອນທີ່ບໍ່ຖືກຫຍໍ້ຂະໜາດສຳລັບການດີບັກ
 
-## ການກຳນົດຄ່າ
+## ການກຳນົດຄ່າ {#configuration}
 
 ສ່ວນເສີມຮອງຮັບຕົວເລືອກການກຳນົດຄ່າຫຼາຍຢ່າງທີ່ເຂົ້າເຖິງໄດ້ຜ່ານອິນເຕີເຟດຜູ້ດູແລເຄືອຂ່າຍ.
 
-## Hooks ແລະ Filters
+## Hooks ແລະ Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - ຖືກເອີ້ນຫຼັງຈາກການເລີ່ມຕົ້ນສ່ວນເສີມ
 - `ultimate-multisite-addon-template_loaded` - ຖືກເອີ້ນຫຼັງຈາກໄຟລ໌ສ່ວນເສີມທັງໝົດຖືກໂຫຼດແລ້ວ
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - ແກ້ໄຂການຕັ້ງຄ່າສ່ວນເສີມ
 - `ultimate-multisite-addon-template_enabled` - ຂຽນທັບສະຖານະເປີດ/ປິດການໃຊ້ງານສ່ວນເສີມ
 
-## ໃບອະນຸຍາດ
+## ໃບອະນຸຍາດ {#license}
 
 ສ່ວນເສີມນີ້ໄດ້ຮັບໃບອະນຸຍາດພາຍໃຕ້ GPL v3 ຫຼືໃໝ່ກວ່າ.
 
-## ການສະໜັບສະໜູນ
+## ການສະໜັບສະໜູນ {#support}
 
 ສຳລັບການສະໜັບສະໜູນແລະເອກະສານ, ເຂົ້າເບິ່ງ [MultisiteUltimate.com](https://multisiteultimate.com)
-## ບັນທຶກການປ່ຽນແປງ
+## ບັນທຶກການປ່ຽນແປງ {#changelog}
 
 - ເວີຊັນ 1.0.1 (2025-09-28): ປ່ຽນຊື່ຄຳນຳໜ້າເປັນ ultimate-multisite; ອັບເດດໂດເມນຂໍ້ຄວາມ; ເພີ່ມເວີຊັນ.
 

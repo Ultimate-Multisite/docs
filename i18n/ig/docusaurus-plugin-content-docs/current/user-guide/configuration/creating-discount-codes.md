@@ -3,13 +3,13 @@ title: Nkwado Kodide
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Tạo Mã Giảm Giá (v2)
+# Tạo Mã Giảm Giá (v2) {#creating-discount-codes-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
 Với Ultimate Multisite, bạn có thể tạo mã giảm giá để tặng khách hàng của mình các khoản chiết khấu cho gói đăng ký của họ. Và việc tạo chúng rất dễ!
 
-## Tạo và Chỉnh Sửa Mã Giảm Giá
+## Tạo và Chỉnh Sửa Mã Giảm Giá {#creating-and-editing-discount-codes}
 
 Để tạo hoặc chỉnh sửa một mã giảm giá, hãy vào **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Mã giảm giá bây giờ đã nằm trong danh sách của bạn và từ đó
 
 ###
 
-### Sử dụng Tham số URL:
+### Sử dụng Tham số URL: {#using-url-parameters}
 
 Nếu bạn muốn tùy chỉnh bảng giá của mình hoặc xây dựng một trang mã giảm giá đẹp cho website của bạn và muốn áp dụng mã giảm giá vào biểu mẫu thanh toán của bạn một cách tự động, bạn có thể làm điều này thông qua các tham số URL.
 

@@ -4,11 +4,11 @@ title: Filtro - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filtro: wu_country_get_administrative_division_name
+# Filtro: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Retorna o nome amigável das subdivisões administrativas do país.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Retorna o nome amigável das subdivisões administrativas do país.
 | $ucwords | `bool` | se colocamos as palavras em maiúsculas. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instância da classe atual. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.11
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) na linha 250
 
 
-## Retorna
+## Retorna {#returns}
 O nome da divisão modificado.

@@ -3,13 +3,13 @@ title: D'Discountcodes kreiere
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Rabattcodes erstelle (v2)
+# Rabattcodes erstelle (v2) {#creating-discount-codes-v2}
 
 _**WICHTIGE NOTIZ: Dëse Artikel bezieht sich uf Ultimate Multisite version 2.x.**_
 
 Mit Ultimate Multisite chönntet Dir Rabattcodes erstelle, um Iechte Kunde Rabatt uf Iechre Abonnements z'gä. Und d'Erstelllig ass eifach!
 
-## Rabattcodes erstelle und bearbeite
+## Rabattcodes erstelle und bearbeite {#creating-and-editing-discount-codes}
 
 Um en Rabattcode z'erstelle oder z'bearbeite, gaet an **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ De Coupon isch jetz uf din Liste und devo us chasch du druf klicke, um ihn **edi
 
 ###
 
-### Mit URL-Parameter:
+### Mit URL-Parameter: {#using-url-parameters}
 
 Wenn du dini Priisübersicht personalisiere wetsch oder en schöne Couponcode-Page für dini Website baue wetsch und dä Rabattcode automatisch uf dim Checkout-Form aawende wetsch, chasch du das über URL-Parameter mache.
 

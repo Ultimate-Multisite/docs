@@ -3,17 +3,17 @@ title: एडअन Sunrise फाइल लोडर
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# एडअन Sunrise फाइल लोडर
+# एडअन Sunrise फाइल लोडर {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 ले एडअनहरू र अनुकूलन MU-plugin एकीकरणहरूका लागि sunrise extension loader थप्छ, जसलाई उत्पन्न गरिएको `wp-content/sunrise.php` फाइल सम्पादन नगरी WordPress sunrise bootstrapping का क्रममा चल्न आवश्यक हुन्छ।
 
-## यसलाई कहिले प्रयोग गर्ने
+## यसलाई कहिले प्रयोग गर्ने {#when-to-use-it}
 
 तपाईंको एकीकरण नियमित प्लगइनहरू लोड हुनुअघि चल्नैपर्ने हुँदा, जस्तै अनुकूलन डोमेन राउटिङ, होस्ट-विशिष्ट अनुरोध व्यवस्थापन, वा प्रारम्भिक नेटवर्क bootstrap समायोजनहरूका लागि, sunrise extension प्रयोग गर्नुहोस्।
 
 सामान्य एकीकरणहरूका लागि, नियमित WordPress प्लगइनहरू, MU-plugins, र दस्तावेज गरिएको Ultimate Multisite hooks लाई प्राथमिकता दिनुहोस्। Sunrise कोड धेरै प्रारम्भिक रूपमा चल्छ र सानो, सावधान, र निर्भरता-रहित रहनुपर्छ।
 
-## फाइल नामकरण परम्परा
+## फाइल नामकरण परम्परा {#file-naming-convention}
 
 `ultimate-multisite-` बाट सुरु हुने नाम भएको एडअन निर्देशिकामा `sunrise.php` नामको PHP फाइल सिर्जना गर्नुहोस्:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 मिल्ने फाइलहरू एडअन path अनुसार वर्णानुक्रममा लोड गरिन्छन्।
 
-## फाइल कहाँ राख्ने
+## फाइल कहाँ राख्ने {#where-to-place-the-file}
 
 sunrise व्यवहारको स्वामित्व राख्ने एडअनको root निर्देशिकामा फाइल राख्नुहोस्:
 
@@ -45,7 +45,7 @@ wp-content/
 
 उत्पन्न गरिएको `wp-content/sunrise.php` फाइल प्रत्यक्ष रूपमा सम्पादन नगर्नुहोस्। लोडरले Ultimate Multisite ले स्थापना र अद्यावधिक गर्ने core sunrise फाइललाई fork नगरी अनुकूलन कोडलाई sunrise व्यवहार विस्तार गर्न दिन्छ।
 
-## उपलब्ध hooks र filters
+## उपलब्ध hooks र filters {#hooks-and-filters-available}
 
 एडअन sunrise फाइलहरू Ultimate Multisite domain mapping लोड भएपछि र WordPress ले `ms_loaded` चलाउनुअघि चल्छन्। यस बिन्दुमा sunrise फाइलले गर्न सक्छ:
 
@@ -58,7 +58,7 @@ Ultimate Multisite ले आफ्नो sunrise loader सकिएपछि `
 
 sunrise चरणमा पहिले नै लोड भएका functions मात्र call गर्नुहोस्। database-heavy काम, template rendering, HTTP requests, र सामान्य प्लगइन load order पूरा भएको मान्ने कोडबाट बच्नुहोस्।
 
-## न्यूनतम उदाहरण
+## न्यूनतम उदाहरण {#minimal-example}
 
 ```php
 <?php

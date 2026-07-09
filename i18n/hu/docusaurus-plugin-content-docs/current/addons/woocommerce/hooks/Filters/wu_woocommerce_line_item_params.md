@@ -4,11 +4,11 @@ title: Szűrő - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Szűrő: wu_woocommerce_line_item_params
+# Szűrő: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Szűrőzi a WooCommerce kosárban létrehozott sor elemekhez használt paramétereket, még mielőtt a vásárlót a WooCommerce checkout oldalra irányítja.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Szűrőzi a WooCommerce kosárban létrehozott sor elemekhez használt paraméte
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Az Ultimate Multisite sor elemi példány. |
 | $wc_product | `\WC_Product` | A WooCommerce termék. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Meghatározva a [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) fájlban, 662-sorban.
 
 
-## Returns
+## Returns {#returns}
 A módosított sor elemi paraméterek.

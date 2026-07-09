@@ -3,7 +3,7 @@ title: Kiel instali WordPress Multisite?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kiel mi instalas WordPress Multisite?
+# Kiel mi instalas WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite pervasivon viemo unu sistemos de sitos unigajne instalacio. Ĝi estas inkluziva funkcio, sed ĝi ne estas aktiva por default.
 
@@ -60,7 +60,7 @@ Kaj ĉi tiun kodon, ankaŭ donitan per WordPress, al viajo _**.htaccess**_ filon
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# aldonu finajn slajojn al /wp-admin
+# aldonu finajn slajojn al /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -92,9 +92,9 @@ Por krei substiton:
 
 Post plenumado de kampoj, kliku la butonon "Add site". Kiel la nova substito estas kreita, aliri ĝin kaj certigi, ke la substito funkcias.
 
-## Komuna Problemoj:
+## Komuna Problemoj: {#common-problems}
 
-### 1. Mi povas krei novajn sitojn, sed ili ne estas akcesaj.
+### 1. Mi povas krei novajn sitojn, sed ili ne estas akcesaj. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Se vi elektis subdomainojn, vi ankaŭ bezonas montri wildcard-subdomainojn por via multisite-reteco.
 

@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI 網站建構器
+# AI 網站建構器 {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## 必要條件
+## 必要條件 {#requirements}
 
 - WordPress 5.3 或更高版本
 - PHP 7.4 或更高版本
 - Multisite Ultimate 外掛 (需啟用)
 
-## 安裝
+## 安裝 {#installation}
 
 1. 將附加元件檔案上傳到您的 `/wp-content/plugins/` 目錄
 2. 透過 WordPress 的「外掛」選單啟用該外掛
 3. 在網路管理員介面中設定附加元件選項
 
-## 開發
+## 開發 {#development}
 
-### 設定
+### 設定 {#setup}
 
 ```bash
 # 安裝依賴套件
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### 專案結構
+### 專案結構 {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # 程式碼現代化規則
 ```
 
-### 測試
+### 測試 {#testing}
 
 此附加元件包含一個全面的測試框架：
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **測試覆蓋率 (Test Coverage)**：已設定追蹤程式碼覆蓋率
 - **多站點測試 (Multisite Testing)**：測試在多站點環境中執行
 
-### 程式碼標準
+### 程式碼標準 {#code-standards}
 
 - **WordPress 程式碼標準 (WordPress Coding Standards)**：透過 PHPCS 執行強制檢查
 - **PHP 7.4+ 相容性 (Compatibility)**：支援現代 PHP 功能
 - **靜態分析 (Static Analysis)**：整合 PHPStan 進行型別檢查
 - **程式碼現代化 (Code Modernization)**：使用 Rector 規則進行 PHP 升級
 
-### 建構系統
+### 建構系統 {#build-system}
 
 - **資源處理 (Asset Processing)**：對 CSS/JS 檔案進行最小化 (Minification)
 - **翻譯 (Translation)**：生成 POT 檔案
 - **打包 (Packaging)**：建立用於發佈的壓縮檔
 - **開發模式 (Development Mode)**：提供未最小化的資源，方便除錯
 
-## 設定
+## 設定 {#configuration}
 
 此附加元件支援多種設定選項，您可以在網路管理員介面中存取這些選項。
 
-## 鉤子與過濾器
+## 鉤子與過濾器 {#hooks-and-filters}
 
-### 動作 (Actions)
+### 動作 (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - 在附加元件初始化後觸發
 - `ultimate-multisite-ai-site-builder_loaded` - 在所有附加元件檔案載入後觸發
 
-### 過濾器 (Filters)
+### 過濾器 (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - 修改附加元件設定
 - `ultimate-multisite-ai-site-builder_enabled` - 覆寫附加元件的啟用/停用狀態
 
-## 授權
+## 授權 {#license}
 
 此附加元件根據 GPL v3 或更高版本授權。
 
-## 支援
+## 支援 {#support}
 
 如需支援和文件，請造訪 [MultisiteUltimate.com](https://multisiteultimate.com)
-## 更新日誌
+## 更新日誌 {#changelog}
 
 - Version 1.0.1 (2025-09-28)：將前綴名稱改為 ultimate-multisite；更新文字域；版本號提升。
 

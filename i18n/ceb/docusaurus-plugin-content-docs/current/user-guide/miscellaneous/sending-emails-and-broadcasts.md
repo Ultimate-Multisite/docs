@@ -3,13 +3,13 @@ title: Pagpadala og mga Email ug Broadcasts
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Pagpadala og mga Email ug Broadcast (v2)
+# Pagpadala og mga Email ug Broadcast (v2) {#sending-emails-and-broadcasts-v2}
 
 _**IMPORTANTE NGA PAHINUMDOM: Kini nga artikulo naghisgot sa Ultimate Multisite version 2.x.**_
 
 Ang Ultimate Multisite adunay feature nga motugot kanimo nga makigkomunikar sa imong mga customer pinaagi sa pagpadala og email ngadto sa gitarget nga user o grupo sa mga user ingon man sa pagpadala og mga pahibalo sa ilang admin dashboard aron mag-broadcast og mga anunsyo
 
-## Idugang ang admin notices sa dashboard sa imong mga customer gamit ang Broadcasts
+## Idugang ang admin notices sa dashboard sa imong mga customer gamit ang Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Gamit ang Ultimate Multisite broadcast feature, makadugang ka og **admin notices** sa subsite admin dashboard sa imong user.
 
@@ -51,7 +51,7 @@ Human nimo mahimo ang imong mensahe, mahimo nimong pinduton ang **Send** nga but
 
 Ug mao na kana. Ang admin notice kinahanglan dayong makita sa dashboard sa imong user.
 
-## Pagpadala og mga email sa imong mga customer
+## Pagpadala og mga email sa imong mga customer {#send-emails-to-your-customers}
 
 Gamit ang Ultimate Multisite broadcast feature, makapadala ka og email sa imong mga user. Aduna kay opsyon nga ipadala ang email ngadto lamang sa piho nga mga user o targeton ang piho nga grupo sa user base sa produkto o plan diin sila naka-subscribe.
 
@@ -81,11 +81,11 @@ Human nimo mahimo ang imong mensahe, mahimo nimong pinduton ang **Send** nga but
 
 Ug mao kana kadali ang pagpadala og email ngadto sa imong end-users gamit ang broadcast feature.
 
-## Mga system email
+## Mga system email {#system-emails}
 
 Ang mga system email sa Ultimate Multisite mao ang **awtomatikong mga pahibalo** nga gipadala sa system human sa piho nga mga aksyon sama sa registration, payment, domain mapping, ug uban pa. Kini nga mga email mahimong i-edit o usbon gikan sa Ultimate Multisite settings. Aduna usab kini feature nga motugot kanimo nga i-reset ug i-import ang kasamtangang settings gikan sa laing Ultimate Multisite installation.
 
-### Pag-reset ug Pag-import
+### Pag-reset ug Pag-import {#resetting--importing}
 
 Ang bag-ong mga Ultimate Multisite version, ingon man ang add-ons, mahimo ug mag-register og bag-ong mga email matag karon ug unya.
 
@@ -93,7 +93,7 @@ Aron malikayan ang mga conflict ug uban pang mga issue, **dili namo awtomatikong
 
 Apan, ang mga super admin ug agents makakaplag og paagi sa pag-import niining bag-ong gi-register nga mga email pinaagi sa importer tool. Kana nga proseso maghimo og bag-ong system email nga adunay content ug configuration sa bag-ong email template, nga motugot sa super admin sa paghimo sa bisan unsang mga modification nga ilang gusto o pagpabilin niini kung unsa na kini.
 
-#### Unsaon pag-import sa system emails
+#### Unsaon pag-import sa system emails {#how-to-import-system-emails}
 
 Adto sa imong Ultimate Multisite Settings page ug adto sa **Emails** nga tab.
 
@@ -111,7 +111,7 @@ Dayon, mahimo nimong i-toggle ang Import Emails options aron makita kung unsang 
 
 <!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
-#### Pag-reset sa mga System Emails
+#### Pag-reset sa mga System Emails {#reseting-system-emails}
 
 Usahay, imong mahibal-an nga ang mga kausaban nga imong gihimo sa usa ka gihatag nga email template dili na molihok para nimo ug gusto nimo kining i-reset balik sa ilang **default state**.
 

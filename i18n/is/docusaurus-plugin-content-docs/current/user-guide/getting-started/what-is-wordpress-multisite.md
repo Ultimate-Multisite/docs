@@ -3,7 +3,7 @@ title: Hva er WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Hva er WordPress Multisite?
+# Hva er WordPress Multisite? {#what-is-wordpress-multisite}
 
 Innan kjarninn í WordPress finnur þú eiginleika nefndu „Multisite“ sem spyrst upp að áttum til 2010 með formögnum WordPress 3.0. Ís sem þá hefur tekið fleiri uppáhald og breytingar til að innleiða nýja eiginleika og styrkja öryggisendur.
 
@@ -11,7 +11,7 @@ Innan kjarninn í WordPress finnur þú eiginleika nefndu „Multisite“ sem sp
 
 ##
 
-## Hva er nákvæmlega WordPress Multisite?
+## Hva er nákvæmlega WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite er eiginleiki í WordPress sem leyfir fleiri vísitalinn að deila einum innreiðingu af WordPress. Þegar multisite er aktivert, breytist upprunalegur WordPress vísitalinn til að þjónast það sem er alaug nefndu **netverk vísitalanna**.
 
@@ -23,7 +23,7 @@ Multisite er eiginleiki í WordPress sem leyfir fleiri vísitalinn að deila ein
 
 ##
 
-## Subdomain eða Subdirectory?
+## Subdomain eða Subdirectory? {#subdomain-or-subdirectory}
 
 Það eru tveir mögulegar háttar að framkvæma WordPress multisite – og þú þarft að velja einn þegar þú breytir regularinn WordPress innreiðingu í multisite innreiðingu:
 
@@ -49,7 +49,7 @@ Eitt af aðal því sem er áskorun á uppsetningu subdomain mode er SSL-þekkin
 
 Á hátt sem er í stað af subdirectory mode, eru subsíti á netinu sem byggist á subdomainum, sjónarstafan söktuna sem sér að skýrslum sem eru til á einum subsítanum ekki að hafa áhrif á SEO-virkni övrót subsíta.
 
-## Super Adminurinn
+## Super Adminurinn {#the-super-admin}
 
 Eitt-sítu WordPress uppsetningar leyfa þér að bæta við ólíkt fjölda notenda og gefa þeim ólíkja notendurhæfðir með ólíkum réttum.
 
@@ -63,7 +63,7 @@ Plugin og þema eru aðeins mögulega að installa eða uninstalla frá network 
 
 _Athugnota: eins sjá þú sér, að kalla fólk í netið þitt og gefa þeim super admin staðleika gerir þessar notendur fullan kontroll yfir netið þitt. Til dæmis geta öðrum super adminum sýnt þér fjölbreyttri aðgerðum, sem er virkilega eins og lokun þín út úr sínum eiga neti admin panel. Til að leyfa Ultimate Multisite viðskiptavinum að hafa nákvæma kontroll yfir hvað að öðrum super adminum geta gera, hefur við einn add-on sem heitir Support Agents. Þessi add-on leyfir þér að skapa enn eina skilgreindar notendur – agentar – með hanya þeim réttunum sem þeim deyja til að fullfða verkefni sína á netinu._
 
-## Hva er sama milli subsíða og hvað er ekki
+## Hva er sama milli subsíða og hvað er ekki {#what-is-shared-among-subsites-and-what-is-not}
 
 Eins við vorum nefndir áður, einn af lykilgildi WordPress multisite er það að allar subsíðir tengjast sama uppsetningu, kjarnafylkimli, themi, pluginir, WordPress core fylkimli osakan.
 
@@ -75,7 +75,7 @@ Eins við vorum nefndir áður, einn af lykilgildi WordPress multisite er það 
 
 \- Þeir sem mestar database tables eru sköpt fyrir hver subsídi, það þýðir að posts, comments, pages, settings og meira eru skilgreind á hver subsídi.
 
-## Notendastjórnun á WordPress Multisite
+## Notendastjórnun á WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Eitt finnleiki málsátt í WordPress multisite er notendastjórnun. WordPress notendatabellinn er einn af nokkrum sem er sama milli allra subsíða.
 
@@ -95,7 +95,7 @@ Eitt dag þarf John að kaupa nýja skoða og finnur perfekt skoða í Alice’s
 
 Þótt notkunarveitandi er sama fyrir alla notendur, geta subsíti-stjórnarstjórar eða superstjórninn viðbúa og fjarlægja notendur frá subsítum, og þeir hafa jafnvel annar notendurhættir á öllum subsítum.
 
-## Árangursgreiningar
+## Árangursgreiningar {#performance-considerations}
 
 WordPress multisite er alveg ótrúlega sterkur þegar kemur að því hversu mikið fjölskyldu staðnum það getist að stýra. Þetta getur testast með því að [WordPress.com](https://WordPress.com), Edublogs og Campuspress eru allir þjónustur sem nota multisite, og hver einn eigir þúsundir staðnum.
 

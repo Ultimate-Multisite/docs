@@ -3,13 +3,13 @@ title: Creu codau cadw |
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creu Codau Diskontau (v2)
+# Creu Codau Diskontau (v2) {#creating-discount-codes-v2}
 
 _**NOTI'RHYD: Mae'r ail ddefnyddiol hwn yn cyfeiriad i Ultimate Multisite versio 2.x.**_
 
  gyda Ultimate Multisite gallwch creu codau diskontau i rhoi diskontau i'ch clydefion ar eu cyflwyniadau (subscriptions). A chrefnu nhw yw'r ddefnyddiol!
 
-## Creu a Redig Codau Diskontau
+## Creu a Redig Codau Diskontau {#creating-and-editing-discount-codes}
 
 I creu neu redig codau diskontau, myndwch i **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Bydd y coupon ar eich llyfr a, o'r lle hwn, gallwch chi cliw i **edit neu ddifyn
 
 ###
 
-### Defnyddio paramau URL:
+### Defnyddio paramau URL: {#using-url-parameters}
 
 Os ydych chi eisiau gwneud newid ar gyfer eich tabliadau cyflogau neu ddatblygu dudalen cod cadarnhaeth dda ar gyfer eich gwefan ac os ydych chi eisiau cyflwyno cod cadarnhaeth i'ch ffurf cynllunio yn awtomatig, gallwch fynd hyn drwy paramau URL.
 

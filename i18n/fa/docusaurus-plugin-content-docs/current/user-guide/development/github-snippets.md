@@ -3,7 +3,7 @@ title: قطعه‌کدهای GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# نحوه استفاده از کدهای آماده Ultimate Multisite در مخزن GitHub
+# نحوه استفاده از کدهای آماده Ultimate Multisite در مخزن GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 در مخزن GitHub مجموعه‌ای از کدهای آماده وجود دارد که کاربران Ultimate Multisite اغلب به آن‌ها نیاز دارند. این کدها قابلیت‌های کوچکی را اضافه می‌کنند، مثلاً افزودن اسکریپت Google Analytics به صفحات ثبت‌نام یا پنهان کردن یک متاباکس از داشبورد مدیریت.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# نحوه افزودن کد به فایل functions.php قالب
+# نحوه افزودن کد به فایل functions.php قالب {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. وارد داشبورد مدیریت شبکه WordPress شوید و به مسیر Themes > Theme Editor بروید (تصویر زیر را ببینید).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# نحوه ایجاد Must-Use Plugins (mu-plugins)
+# نحوه ایجاد Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress قابلیتی دارد که به شما امکان می‌دهد کدهای سفارشی را به‌صورت "Must-Use Plugins" یا به اختصار "mu-plugins" بارگذاری کنید.
 

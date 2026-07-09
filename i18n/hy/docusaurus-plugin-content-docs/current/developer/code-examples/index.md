@@ -3,11 +3,11 @@ title: Ընդլայնված կոդի օրինակներ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ընդլայնված կոդի օրինակներ
+# Ընդլայնված կոդի օրինակներ {#advanced-code-examples}
 
 Այս օրինակները ցուցադրում են Ultimate Multisite-ի հետ ընդլայնված ինտեգրման ձևանմուշներ։
 
-## Դինամիկ գնագոյացման շարժիչ
+## Դինամիկ գնագոյացման շարժիչ {#dynamic-pricing-engine}
 
 Կանոնների վրա հիմնված գնագոյացման շարժիչ, որը կիրառում է ծավալային, հավատարմության և սեզոնային զեղչեր՝
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Ընդլայնված կայքերի տրամադրում
+## Ընդլայնված կայքերի տրամադրում {#advanced-site-provisioning}
 
 Ավտոմատ կազմաձևեք նոր կայքերը plugin-ներով, SSL-ով, CDN-ով, պահուստային պատճեններով և մոնիթորինգով՝ ըստ պլանի հնարավորությունների՝
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Անհատական սահմանափակումների համակարգ
+## Անհատական սահմանափակումների համակարգ {#custom-limitations-system}
 
 Հետևեք և պարտադրեք ռեսուրսների սահմանափակումները՝ օգտագործման նախազգուշացումներով՝
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB ատոմային հաշվիչ `increment_item()`-ով
+## BerlinDB ատոմային հաշվիչ `increment_item()`-ով {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1-ը BerlinDB `Query` class-ին ավելացրել է `increment_item()` method։ Օգտագործեք այն՝ թվային սյունակների վրա անվտանգ, ատոմային ավելացումներ կատարելու համար՝ առանց read-modify-write մրցակցային վիճակների — օգտակար է հաշվիչների, օգտագործման քվոտաների և rate-limiting ստուգումների համար, որոնք աշխատում են զուգահեռ հարցումների պայմաններում։
 
-### Method-ի ստորագրություն
+### Method-ի ստորագրություն {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1-ը BerlinDB `Query` class-ին ավելացրել է `
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Հիմնական օգտագործում
+### Հիմնական օգտագործում {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API-ի օգտագործման հետևում ըստ membership-ի
+### API-ի օգտագործման հետևում ըստ membership-ի {#tracking-api-usage-per-membership}
 
 Գործնական ձևանմուշ՝ յուրաքանչյուր membership-ի համար API rate limit-ներ կիրառելու նպատակով.
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Ինչու `increment_item()`՝ `update_item()`-ի փոխարեն
+### Ինչու `increment_item()`՝ `update_item()`-ի փոխարեն {#why-incrementitem-instead-of-updateitem}
 
 Պարզունակ read-modify-write մոտեցումը անվտանգ չէ զուգահեռ հարցումների պայմաններում.
 

@@ -4,11 +4,11 @@ title: Үйлдэл - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Үйлдэл: move_site
+# Үйлдэл: move_site {#action-movesite}
 
 Сайт шинэ сүлжээ рүү шилжсэний дараа ажиллана.
 
-## Параметрүүд
+## Параметрүүд {#parameters}
 
 | Нэр | Төрөл | Тайлбар |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 | $old_network_id | `int` | Тухайн сайтын анхны сүлжээний ID. |
 | $new_network_id | `int` | Сайт шилжсэн сүлжээний ID. |
 
-### Хувилбараас
+### Хувилбараас {#since}
 
 - 1.3.0
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) файлд 1587-р мөрөнд тодорхойлсон

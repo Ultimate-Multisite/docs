@@ -3,17 +3,17 @@ title: Ekspoort & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksporteer & Importeer
+# Eksporteer & Importeer {#export--import}
 
 Ultimate Multisite 2.9.0 voeg 'n **Eksporteer & Importeer**-hulpmiddel vir 'n enkele webwerf by onder **Tools > Export & Import**. Gebruik dit wanneer jy een WordPress-webwerf as 'n ZIP-lêer wil verpak, daardie ZIP wil herstel, of 'n webwerf tussen bietekompatibele Ultimate Multisite en enkele-webwerf WordPress-installasies wil skuif.
 
-## Vereiste toestemminge
+## Vereiste toestemminge {#required-permissions}
 
 Jy moet aanmeld as 'n administrateur wat toegang het tot die WordPress **Tools**-menu op die webwerf wat geëksporteer of geïmporteer word. Op 'n multisite-netwerk, gebruik 'n netwerkadministrateur-rekening wanneer jy subwerwe eksporteer of importeer vanaf netwerkvlak Ultimate Multisite-hulpmiddels.
 
 Eksport-ZIP-downloads word deur 'n geauthentiseerde aflaai-eindpunt bedien, so hou die admin-sessie aktief totdat die aflaai voltooi is en deel nie die gegenereerde aflaai-URL's openbaar nie.
 
-## Eksporteer 'n webwerf na 'n ZIP
+## Eksporteer 'n webwerf na 'n ZIP {#exporting-a-site-to-a-zip}
 
 1. Gaan na die WordPress-administrasie vir die webwerf wat jy wil kopieer, en navigeer na **Tools > Export & Import**.
 2. Maak die eksportarea oop en kies die webwerf wat jy wil verpak.
@@ -23,7 +23,7 @@ Eksport-ZIP-downloads word deur 'n geauthentiseerde aflaai-eindpunt bedien, so h
 
 Hou die ZIP op 'n veilige plek. Dit kan webwerfinhoud, instellings, mediabestelle en geselekteerde kode-assets bevat.
 
-## Wat die eksport insluit
+## Wat die eksport insluit {#what-the-export-includes}
 
 'n Eksport-ZIP kan insluit:
 
@@ -34,7 +34,7 @@ Hou die ZIP op 'n veilige plek. Dit kan webwerfinhoud, instellings, mediabestell
 
 Die presiese ZIP-grootte hang af van die hoeveelheid media, die geselekteerde plugins en themes, en die grootte van die webwerf se databasetafels.
 
-## Importeer 'n webwerf uit 'n ZIP
+## Importeer 'n webwerf uit 'n ZIP {#importing-a-site-from-a-zip}
 
 1. Gaan na **Tools > Export & Import** op die bestemming WordPress-webwerf.
 2. Maak die importarea oop en laai die ZIP op wat deur die Export & Import-hulpmiddel geskep is.
@@ -46,7 +46,7 @@ Die presiese ZIP-grootte hang af van die hoeveelheid media, die geselekteerde pl
 
 Op 'n enkele-webwerf WordPress-installasie vervang die import van 'n ZIP die huidige webwerf met die geïmporteerde webwerf. Maak 'n volledige backup van die teikenwebwerf voordat jy begin, en vermy om meervoudige imports vir dieselfde webwerf op dieselfde tyd te begin.
 
-## Beperkings en kompatibiliteitsnotas
+## Beperkings en kompatibiliteitsnotas {#limitations-and-compatibility-notes}
 
 - Baie groot uploads-direktories of mediabiblioteeke kan groot ZIP-lêers skep. Bevestig PHP-uploadsbeperkings, uitvoeringsbeperkings, skijfspasie, geheue en bedieners-timeout-instellings voordat jy groot webwerwe eksporteer of importeer.
 - Baie groot mediabiblioteeke mag gedurende 'n lae-verkeer wagteperiode verhuis moet word.

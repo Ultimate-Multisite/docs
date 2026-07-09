@@ -3,11 +3,11 @@ title: Ukukhenketha kwiPhaneli yoLawulo
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Ukukhenketha i-Admin Panel
+# Ukukhenketha i-Admin Panel {#touring-the-admin-panel}
 
 Ultimate Multisite ijolise ekubeni lula kwaye izicacisele kangangoko kunokwenzeka, kodwa ngesixhobo esinamandla kangaka kunokunceda ukuba nokhenketho olukhokelwayo. Masihambe kumaphepha e-admin ukuze sikuncede uzinze.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 I-Ultimate Multisite **Dashboard** ibonisa iingxelo ezisisiseko nohlalutyo kuquka ingeniso, imisebenzi yee-site, ukukhula kobulungu, amanani abatyeleli, kunye nedatha yejografi.
 
@@ -25,61 +25,61 @@ Nanku kwakhona umbono opheleleyo we-network dashboard:
 
 ![Network Dashboard iphepha elipheleleyo](/img/admin/network-dashboard-full-page.png)
 
-## Iifomu ze-Checkout
+## Iifomu ze-Checkout {#checkout-forms}
 
 **Iifomu ze-Checkout** zikunika ukuguquguquka kokudala amaphepha obhaliso alungiselelweyo. Unokwenza iifield ngokwezifiso, ufake iiklasi neescript ezilungiselelweyo, kwaye uthintele ukufikelela ngokusekelwe kwilizwe okanye indawo yomtyeleli.
 
 ![Uluhlu lweeFomu ze-Checkout](/img/admin/checkout-forms-list.png)
 
-## Iimveliso
+## Iimveliso {#products}
 
 Icandelo le-**Products** kulapho udala khona iiplan ezahlukeneyo, iipakethe, kunye neenkonzo ze-network yakho. Chaza amaxabiso, amaza okuhlawulisa, kunye nemida & quotas kwinqanaba lemveliso.
 
 ![Uluhlu lweeProducts](/img/admin/products-list.png)
 
-## Ubulungu
+## Ubulungu {#memberships}
 
 Iphepha le-**Memberships** libonisa zonke ii-subscription kwi-network yakho. Hlola kwaye uhlele iinkcukacha ze-subscription kuquka iiplan, iimveliso, izixa zokuhlawulisa namaza azo, imbali yeentlawulo, kunye nee-timestamp.
 
 ![Uluhlu lweMemberships](/img/admin/memberships-list.png)
 
-## Iintlawulo
+## Iintlawulo {#payments}
 
 Iphepha le-**Payments** libonelela ngombono okhawulezayo wembali yeentlawulo kuyo yonke i-network yakho, ngolwazi oluneenkcukacha lwentengiselwano kuquka iimveliso ezithile kunye nezixa.
 
 ![Uluhlu lweePayments](/img/admin/payments-list.png)
 
-## Abathengi
+## Abathengi {#customers}
 
 Iphepha le-**Customers** libonisa onke amalungu abhalisiweyo kwi-network yakho ngolwazi olusisiseko lomsebenzisi kuquka igama, idilesi ye-imeyile, ukungena kokugqibela, kunye nelinki ethi "switch to" yokungena kwi-subsite yabo.
 
 ![Uluhlu lweeCustomers](/img/admin/customers-list.png)
 
-## Ii-site
+## Ii-site {#sites}
 
 Iphepha le-**Sites** lidwelisa zonke ii-subsite kwi-network yakho kuquka ii-template ze-site kunye nee-site ezingabanini babathengi. Lawula ngokulula ii-domain ezimaphwe, imida & quotas, ii-plugin nee-theme, kunye neethumbnail ze-site.
 
 ![Uluhlu lweeSites](/img/admin/sites-list.png)
 
-## Ii-domain
+## Ii-domain {#domains}
 
 Iphepha le-**Domains** linikezelwe kwii-domain zesiko ezimaphwe kwii-subsite. Njenge-super admin, ungongeza ngesandla okanye umape amagama ee-domain zesiko kwaye ubone iirekhodi ze-DNS kunye neelog.
 
 ![Uluhlu lweeDomains](/img/admin/domains-list.png)
 
-## Iikhowudi zeSaphulelo
+## Iikhowudi zeSaphulelo {#discount-codes}
 
 **Iikhowudi zeSaphulelo** zikuvumela ukuba udale iikhowudi ze-coupon ukuze unike izaphulelo kubasebenzisi bakho bokugqibela. Chaza ixabiso lesaphulelo kwaye ujolise kubasebenzisi okanye kumaqela athile.
 
 ![Uluhlu lweeKhowudi zeSaphulelo](/img/admin/discount-codes-list.png)
 
-## Ii-Broadcasts
+## Ii-Broadcasts {#broadcasts}
 
 **Ii-Broadcasts** sisixhobo sokukhupha izibhengezo okanye ukuthumela imiyalezo yabucala kubasebenzisi bee-subsite zakho. Jolisisa kumaqela athile abasebenzisi ngokusekelwe kwi-plan okanye imveliso ababhalisele kuyo.
 
 ![Uluhlu lweeBroadcasts](/img/admin/broadcasts-list.png)
 
-## Iisetingi
+## Iisetingi {#settings}
 
 Iphepha le-**Settings** kulapho uqwalasela khona Ultimate Multisite — iisetingi zobhaliso, iintlawulo, API nee-webhook, ukumaphwa kwe-domain, kunye nezinye ii-integration.
 
@@ -109,13 +109,13 @@ Kwaye iphepha leesetingi zee-site:
 
 ![Settings zee-site iphepha elipheleleyo](/img/admin/settings-sites-full.png)
 
-## Iziganeko
+## Iziganeko {#events}
 
 Iphepha le-**Events** ligcina irekhodi lazo zonke iziganeko neelog kwi-network yakho. Lilandelela imisebenzi efana notshintsho lweplan, ubhaliso olutsha, kunye nezinye iintshukumo — kuluncedo ekubekeni iliso kwi-multisite yakho.
 
 ![Uluhlu lweeEvents](/img/admin/events-list.png)
 
-## Ii-Webhooks
+## Ii-Webhooks {#webhooks}
 
 **Ii-Webhooks** zikuvumela ukuba uhambise idatha kwenye i-application. Ziluncedo ekuthumeleni idatha ukusuka ku-Ultimate Multisite ukuya kumaqonga afana ne-Zapier.
 

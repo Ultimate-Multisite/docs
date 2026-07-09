@@ -3,17 +3,17 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 legger til en sunrise extension loader for add-ons og tilpassede MU-plugin-integrasjoner som må kjøre under WordPress sunrise bootstrapping uten at du trenger å redigere den genererte `wp-content/sunrise.php` filen.
 
-## Når du skal bruke det
+## Når du skal bruke det {#when-to-use-it}
 
 Bruk en sunrise extension når integrasjonen din må kjøre før vanlige plugins lastes inn. Dette gjelder for eksempel tilpasset domenerutting, håndtering av forespørsler spesifikke for verten, eller tidlige justeringer av nettverket.
 
 For vanlige integrasjoner, foretrekker vi vanlige WordPress plugins, MU-plugins og de dokumenterte Ultimate Multisite hooks. Sunrise-kode kjører veldig tidlig og bør derfor forbli liten, defensiv og uten avhengigheter.
 
-## Filnavnkonvensjon
+## Filnavnkonvensjon {#file-naming-convention}
 
 Opprett en PHP-fil kalt `sunrise.php` i en addon-mappe hvis navn starter med `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Filene som matcher lastes inn i alfabetisk rekkefølge basert på addon-stien.
 
-## Hvor du skal plassere filen
+## Hvor du skal plassere filen {#where-to-place-the-file}
 
 Plasser filen i rotmappen til addon-en som eier sunrise-atferden:
 
@@ -45,7 +45,7 @@ Skanningen løses relativt til `WP_CONTENT_DIR`, ikke den nåværende verdien av
 
 Ikke rediger den genererte `wp-content/sunrise.php` filen direkte. Loaderen lar deg utvide sunrise-atferden med tilpasset kode uten å måtte forke kjerne-sunrise-filen som Ultimate Multisite installerer og oppdaterer.
 
-## Tilgjengelige hooks og filters
+## Tilgjengelige hooks og filters {#hooks-and-filters-available}
 
 Addon sunrise-filer kjører etter at Ultimate Multisite domain mapping er lastet, og før WordPress utløser `ms_loaded`. På dette tidspunktet kan en sunrise-fil:
 
@@ -58,7 +58,7 @@ Ultimate Multisite utløser `wu_sunrise_loaded` etter at sunrise-loaderen er fer
 
 Kall kun funksjoner som allerede er lastet i sunrise-fasen. Unngå database-tungt arbeid, template rendering, HTTP-forespørsler og kode som antar at normal plugin-lastrekkefølge er fullført.
 
-## Minimalt eksempel
+## Minimalt eksempel {#minimal-example}
 
 ```php
 <?php

@@ -3,15 +3,15 @@ title: Palette-Kontrast validéieren
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palette-Kontrast validéieren
+# Palette-Kontrast validéieren {#validate-palette-contrast}
 
 D'Fäegkeet **Palette-Kontrast validéieren** iwwerpréift Faarfpuer an denger Design-Palette op WCAG (Web Content Accessibility Guidelines)-Konformitéit, ier se op däin theme ugewannt ginn.
 
-## Iwwersiicht
+## Iwwersiicht {#overview}
 
 Dës Fäegkeet suergt dofir, datt d'Faarfschema vun denger Säit Accessibilitéitsstandarden erfëllt, andeems Kontrastverhältnisser tëscht Text- an Hannergrondfaarwen validéiert ginn. Si hëlleft Faarfkombinatiounen ze vermeiden, déi fir Benotzer mat visuellen Aschränkunge schwéier ze liese kéinte sinn.
 
-## Input-Format
+## Input-Format {#input-format}
 
 D'Fäegkeet akzeptéiert eng Faarfpalette als Input:
 
@@ -35,7 +35,7 @@ D'Fäegkeet akzeptéiert eng Faarfpalette als Input:
 }
 ```
 
-### Parameteren
+### Parameteren {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ D'Fäegkeet akzeptéiert eng Faarfpalette als Input:
 | `wcag_level` | string | No | WCAG-Konformitéitsniveau: "A", "AA" (Standard), oder "AAA" |
 | `pairs_to_check` | array | No | Spezifesch Faarfpuer fir ze validéieren (z. B. `["primary-text", "background-text"]`) |
 
-## Iwwerpréift WCAG-Niveauen
+## Iwwerpréift WCAG-Niveauen {#wcag-levels-checked}
 
 D'Fäegkeet validéiert Kontrastverhältnisser no WCAG-Standarden:
 
@@ -56,7 +56,7 @@ D'Fäegkeet validéiert Kontrastverhältnisser no WCAG-Standarden:
 - **Normalen Text** — Text méi kleng wéi 18pt (oder 14pt fett)
 - **Groussen Text** — Text 18pt oder méi grouss (oder 14pt fett oder méi grouss)
 
-## Output-Schema
+## Output-Schema {#output-schema}
 
 D'Fäegkeet gëtt en detailléierte Validéierungsrapport zeréck:
 
@@ -95,7 +95,7 @@ D'Fäegkeet gëtt en detailléierte Validéierungsrapport zeréck:
 }
 ```
 
-### Output-Felder
+### Output-Felder {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ D'Fäegkeet gëtt en detailléierte Validéierungsrapport zeréck:
 | `status` | string | "pass" oder "fail" fir all Puer |
 | `recommendations` | array | Virschléi fir feelerschloend Puer ze verbesseren |
 
-## Benotzungsbeispill
+## Benotzungsbeispill {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ D'Fäegkeet validéiert all Faarfkombinatiounen a gëtt zeréck:
 - ✅ Hannergrond + Text: Verhältnis 12.1:1 (besteet WCAG AAA)
 - Am Ganzen: Konform mat WCAG AA
 
-## Integratioun mam Theme Builder
+## Integratioun mam Theme Builder {#integration-with-theme-builder}
 
 Wann s du d'Design-Richtungs-Auswiel vum Theme Builder benotz, mécht d'Fäegkeet Palette-Kontrast validéieren Folgendes:
 
@@ -129,7 +129,7 @@ Wann s du d'Design-Richtungs-Auswiel vum Theme Builder benotz, mécht d'Fäegkee
 4. Liwwert Recommandatioune fir net-konform Puer
 5. Verhënnert d'Uwendung vun net accessibelen Faarfschemen
 
-## Bescht Praktiken
+## Bescht Praktiken {#best-practices}
 
 - **Fänk mam AA-Niveau un** — WCAG AA ass de Standard fir déi meescht Websäiten
 - **Test virum Uwenden** — validéier deng Palette, ier s du dech op en Design festleees
@@ -137,7 +137,7 @@ Wann s du d'Design-Richtungs-Auswiel vum Theme Builder benotz, mécht d'Fäegkee
 - **Berécksiichteg Benotzerpreferenzen** — verschidde Benotzer kënnen zousätzlech Faarfsensibilitéit hunn
 - **Benotz Kontrastchecker** — kombinéier dës Fäegkeet mat Browser-Tools fir d'Verifikatioun
 
-## Feelerschloend Puer a Recommandatiounen
+## Feelerschloend Puer a Recommandatiounen {#failing-pairs-and-recommendations}
 
 Wann e Faarfpuer d'Validéierung net besteet, liwwert d'Fäegkeet Recommandatiounen:
 
@@ -155,7 +155,7 @@ Wann e Faarfpuer d'Validéierung net besteet, liwwert d'Fäegkeet Recommandatiou
 }
 ```
 
-## Verbonnen Fäegkeeten
+## Verbonnen Fäegkeeten {#related-abilities}
 
 - [Logo SVG generéieren](./generate-logo-svg.md) — Logoen mat denger validéierter Faarfpalette erstellen
 - [Menü erstellen](./create-menu.md) — Navigatioun mat accessibele Faarwen opbauen

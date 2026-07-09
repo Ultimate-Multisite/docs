@@ -3,11 +3,11 @@ title: Ijikwa Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ijikwa Webhook
+# Ijikwa Webhook {#webhook-handling}
 
 Mepụta ebe njedebe webhook ahaziri iche iji nata mmemme site na ọrụ mpụga ma mekọrịta data na Ultimate Multisite.
 
-## Ebe Njedebe Webhook Ahaziri Iche
+## Ebe Njedebe Webhook Ahaziri Iche {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Ihe Nchekwa A Ga-atụle
+## Ihe Nchekwa A Ga-atụle {#security-considerations}
 
 - Na-enyocha mbinye aka webhook mgbe niile site n'iji HMAC ma ọ bụ nzuzo e kesara
 - Jiri `permission_callback` na ụzọ REST gị — etinyela ya na `__return_true` na production

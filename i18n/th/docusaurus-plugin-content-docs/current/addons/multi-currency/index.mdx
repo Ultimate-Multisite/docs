@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency ช่วยให้เครือข่ายของคุณสามารถรับชำระเงินได้หลายสกุลเงิน ระบบจะทำการแปลงราคาโดยอัตโนมัติโดยใช้อัตราแลกเปลี่ยนแบบสดหรือแบบกำหนดเอง ช่วยให้คุณสามารถกำหนดราคาที่แน่นอนสำหรับสินค้าแต่ละชิ้นในทุกสกุลเงิน และยังสามารถตรวจจับสกุลเงินที่ลูกค้าต้องการได้จากตำแหน่งที่ตั้ง (geolocation) ของผู้เยี่ยมชม — ทั้งหมดนี้จัดการได้จากแดชบอร์ดผู้ดูแลระบบเพียงที่เดียว
 
-## Key Features
+## Key Features {#key-features}
 
 - **Automatic exchange rate conversion** — ราคาจะถูกแปลงจากสกุลเงินหลักของคุณโดยใช้อัตราที่ดึงมาจากผู้ให้บริการที่คุณเลือก
 - **Per-product pricing overrides** — กำหนดราคาเฉพาะสกุลเงินสำหรับสินค้าใด ๆ เพื่อข้ามการแปลงอัตโนมัติ
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency ช่วยให้เครือข่า
 - **Geolocation-based currency detection** — ตรวจจับสกุลเงินโดยอัตโนมัติให้ตรงกับประเทศของผู้เยี่ยมชม
 - **Admin dashboard** — จัดการสกุลเงิน อัตราแลกเปลี่ยน และการตั้งค่าผู้ให้บริการได้จากที่เดียว
 
-## Requirements
+## Requirements {#requirements}
 
 - Ultimate Multisite 2.0.0 หรือสูงกว่า
 - การติดตั้ง WordPress Multisite
 - PHP 7.4 หรือสูงกว่า
 
-## Installation
+## Installation {#installation}
 
 1. อัปโหลดไฟล์ปลั๊กอินไปยัง `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. เปิดใช้งานปลั๊กอินผ่านหน้า **Plugins** ใน WordPress (Network Activate)
 3. ไปที่ **Ultimate Multisite → Multi-Currency** เพื่อเปิดแดชบอร์ดผู้ดูแลระบบ
 4. เพิ่มสกุลเงินที่คุณต้องการรับ และกำหนดค่าผู้ให้บริการอัตราแลกเปลี่ยน
 
-## Configuration
+## Configuration {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 แดชบอร์ดผู้ดูแลระบบ Multi-Currency (**Ultimate Multisite → Multi-Currency**) เป็นศูนย์กลางในการ:
 
@@ -44,7 +44,7 @@ Ultimate Multisite: Multi-Currency ช่วยให้เครือข่า
 - ตรวจสอบอัตราปัจจุบันสำหรับสกุลเงินที่ใช้งานทั้งหมด
 - กำหนดอัตราด้วยตนเองเมื่อผู้ให้บริการอัตโนมัติไม่เหมาะสม
 
-### Exchange Rate Providers
+### Exchange Rate Providers {#exchange-rate-providers}
 
 | Provider | Description |
 |---|---|
@@ -55,7 +55,7 @@ Ultimate Multisite: Multi-Currency ช่วยให้เครือข่า
 
 เลือกผู้ให้บริการของคุณภายใต้ **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** สามารถรีเฟรชอัตราด้วยตนเองได้ตลอดเวลา หรือตั้งเวลาให้อัปเดตโดยอัตโนมัติ
 
-### Per-Product Pricing Overrides
+### Per-Product Pricing Overrides {#per-product-pricing-overrides}
 
 เมื่อการแปลงอัตโนมัติไม่แม่นยำพอ คุณสามารถกำหนดราคาที่แน่นอนสำหรับสกุลเงินเฉพาะบนสินค้าใด ๆ ได้:
 
@@ -66,7 +66,7 @@ Ultimate Multisite: Multi-Currency ช่วยให้เครือข่า
 
 สินค้าที่ไม่มีการกำหนดค่าทับ จะใช้ราคาที่แปลงมาจากสกุลเงินหลักของคุณ
 
-### Currency Selector Signup Field
+### Currency Selector Signup Field {#currency-selector-signup-field}
 
 สามารถเพิ่มช่องเลือกสกุลเงินในขั้นตอนการลงทะเบียน/ชำระเงินของคุณได้ เพื่อให้ลูกค้าเลือกสกุลเงินที่ต้องการตั้งแต่ขั้นตอนการลงทะเบียน:
 
@@ -76,7 +76,7 @@ Ultimate Multisite: Multi-Currency ช่วยให้เครือข่า
 
 สกุลเงินที่เลือกจะถูกบันทึกไว้กับการสมัครสมาชิกและใช้สำหรับการเรียกเก็บเงินครั้งต่อไปทั้งหมด
 
-### Geolocation-Based Currency Detection
+### Geolocation-Based Currency Detection {#geolocation-based-currency-detection}
 
 เมื่อเปิดใช้งานการตรวจจับตำแหน่งทางภูมิศาสตร์ ส่วนเสริมนี้จะจับคู่ประเทศของผู้เยี่ยมชมกับสกุลเงินและเลือกสกุลเงินนั้นไว้ล่วงหน้าในช่องเลือกสกุลเงิน หากต้องการเปิดใช้งาน:
 
@@ -86,27 +86,27 @@ Ultimate Multisite: Multi-Currency ช่วยให้เครือข่า
 
 หากไม่มีการจับคู่สำหรับประเทศของผู้เยี่ยมชม ระบบจะใช้สกุลเงินหลักของเครือข่ายเป็นค่าสำรอง
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#frequently-asked-questions}
 
-### What happens if an exchange rate provider is unavailable?
+### What happens if an exchange rate provider is unavailable? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 ส่วนเสริมจะใช้ค่าอัตราล่าสุดที่ดึงมาได้สำเร็จ หากไม่เคยมีการดึงอัตราเลย ระบบจะใช้ค่าอัตราด้วยตนเองที่คุณกำหนดค่าไว้ จึงแนะนำให้กำหนดค่าอัตราด้วยตนเองไว้เป็นมาตรการป้องกัน
 
-### Can I use different providers for different currencies?
+### Can I use different providers for different currencies? {#can-i-use-different-providers-for-different-currencies}
 
 ไม่ได้ — จะมีผู้ให้บริการเพียงรายเดียวที่ใช้งานสำหรับทุกสกุลเงิน หากคุณต้องการควบคุมอัตราแต่ละสกุลเงินอย่างเต็มที่ ให้ใช้ **Manual**
 
-### Does geolocation require a separate plugin?
+### Does geolocation require a separate plugin? {#does-geolocation-require-a-separate-plugin}
 
 ไม่จำเป็นต้องใช้ปลั๊กอิน geolocation ภายนอก ส่วนเสริมนี้ใช้การตรวจจับ IP-to-country ที่มีมาใน WordPress อยู่แล้ว หากต้องการความแม่นยำที่สูงขึ้น สามารถรวมบริการ geolocation เฉพาะทางผ่าน hook ตัวกรองที่ให้ไว้ได้
 
-### Are per-product overrides applied before or after tax?
+### Are per-product overrides applied before or after tax? {#are-per-product-overrides-applied-before-or-after-tax}
 
 การกำหนดค่าทับสำหรับสินค้าจะตั้งราคา **ก่อนหักภาษี** ในสกุลเงินเป้าหมาย ภาษีจะถูกคำนวณเพิ่มจากราคานั้นโดยใช้การตั้งค่าภาษีที่มีอยู่ของคุณ
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.0.0 — Released on 2026-04-02
+### Version 1.0.0 — Released on 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - New: รองรับหลายสกุลเงินพร้อมการแปลงอัตราแลกเปลี่ยนอัตโนมัติ
 - New: การกำหนดราคาเฉพาะสกุลเงินสำหรับสินค้าแต่ละชิ้น

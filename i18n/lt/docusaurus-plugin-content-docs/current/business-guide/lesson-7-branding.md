@@ -3,15 +3,15 @@ title: '7 pamoka: Pritaikymas sau'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 7 pamoka: Pritaikykite tai sau
+# 7 pamoka: Pritaikykite tai sau {#lesson-7-making-it-yours}
 
 Jūsų klientai niekada neturėtų jaustis taip, lyg naudotų „kažkokį WordPress plugin“. Jie turėtų jaustis naudojantys FitSite -- jų industrijai sukurtą platformą. Šioje pamokoje aptariamas prekės ženklo pritaikymas, white-label pritaikymas ir tai, kaip platformai suteikti produkto pojūtį.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite turi veikiantį checkout procesą, kuris fitneso studijų savininkus nuveda nuo plano pasirinkimo iki veikiančios svetainės. Dabar pasirūpinsime, kad visa patirtis atrodytų kaip vientisas, prekės ženklu pažymėtas produktas.
 
-## Jūsų platformos domenas
+## Jūsų platformos domenas {#your-platform-domain}
 
 Jūsų prekės ženklo pagrindas yra jūsų domenas. FitSite atveju:
 
@@ -19,7 +19,7 @@ Jūsų prekės ženklo pagrindas yra jūsų domenas. FitSite atveju:
 - **Klientų svetainės**: `studioname.fitsite.com` (subdomenai)
 - **Pasirinktiniai domenai**: Growth ir Pro planų klientai gali susieti savo domeną
 
-### Domeno nustatymas
+### Domeno nustatymas {#setting-up-your-domain}
 
 1. Užregistruokite savo platformos domeną
 2. Nukreipkite jį į savo prieglobos paslaugų teikėją
@@ -28,11 +28,11 @@ Jūsų prekės ženklo pagrindas yra jūsų domenas. FitSite atveju:
 
 Išsamias instrukcijas rasite [Kaip sukonfigūruoti domenų susiejimą](/user-guide/domain-mapping/how-to-configure-domain-mapping).
 
-## Admin patirties white-label pritaikymas
+## Admin patirties white-label pritaikymas {#white-labeling-the-admin-experience}
 
 Kai fitneso studijos savininkas prisijungia prie savo svetainės Dashboard, jis turėtų matyti jūsų prekės ženklą, o ne WordPress ar Ultimate Multisite prekės ženklą.
 
-### Pasirinktinis prisijungimo puslapis
+### Pasirinktinis prisijungimo puslapis {#custom-login-page}
 
 Pritaikykite WordPress prisijungimo puslapį, kad jame būtų rodoma:
 
@@ -40,7 +40,7 @@ Pritaikykite WordPress prisijungimo puslapį, kad jame būtų rodoma:
 - Fitnesui tinkami fono vaizdai
 - Jūsų prekės ženklo spalvos
 
-### Dashboard prekės ženklo pritaikymas
+### Dashboard prekės ženklo pritaikymas {#dashboard-branding}
 
 Naudokite [Admin Page Creator](/addons/admin-page-creator) priedą arba pasirinktinį CSS, kad:
 
@@ -48,7 +48,7 @@ Naudokite [Admin Page Creator](/addons/admin-page-creator) priedą arba pasirink
 - Pritaikytumėte administravimo spalvų schemą prie savo prekės ženklo
 - Pridėtumėte pasirinktinį Dashboard valdiklį su fitnesui skirtais greitaisiais saitais ir pagalbos ištekliais
 
-### Pasirinktiniai administravimo puslapiai
+### Pasirinktiniai administravimo puslapiai {#custom-admin-pages}
 
 Apsvarstykite galimybę sukurti pasirinktinius administravimo puslapius, kurie iškeltų aktualiausius veiksmus fitneso studijų savininkams:
 
@@ -58,11 +58,11 @@ Apsvarstykite galimybę sukurti pasirinktinius administravimo puslapius, kurie i
 
 Tai sumažina mokymosi kreivę, nes nišai aktualūs veiksmai pateikiami aiškiai ir matomai, o ne paslepiami standartiniame WordPress meniu.
 
-## Jūsų komunikacijos prekės ženklo pritaikymas
+## Jūsų komunikacijos prekės ženklo pritaikymas {#branding-your-communications}
 
 Kiekvienas el. laiškas, sąskaita faktūra ir pranešimas turėtų stiprinti jūsų prekės ženklą.
 
-### Sisteminiai el. laiškai
+### Sisteminiai el. laiškai {#system-emails}
 
 Eikite į **Ultimate Multisite > Settings > Emails** ir pritaikykite visus sisteminius el. laiškus:
 
@@ -79,7 +79,7 @@ Svarbiausi el. laiškai, kuriuos reikia pritaikyti:
 | Mokėjimo kvitas | „Mokėjimas gautas“ | „FitSite prenumeratos mokėjimas patvirtintas“ |
 | Bandomojo laikotarpio pabaiga | „Jūsų bandomasis laikotarpis netrukus baigsis“ | „Jūsų FitSite bandomasis laikotarpis baigsis po 3 dienų -- išlaikykite savo studijos svetainę veikiančią“ |
 
-### Sąskaitos faktūros
+### Sąskaitos faktūros {#invoices}
 
 Pritaikykite sąskaitų faktūrų šablonus naudodami:
 
@@ -87,7 +87,7 @@ Pritaikykite sąskaitų faktūrų šablonus naudodami:
 - Jūsų verslo duomenis
 - Fitnesui pritaikytus produktų pavadinimus (ne bendrinius planų ID)
 
-## Klientams skirta svetainė
+## Klientams skirta svetainė {#the-customer-facing-site}
 
 Jūsų pagrindiniam domenui (`fitsite.com`) reikia rinkodaros svetainės, kuri parduoda platformą. Tai atskira nuo Ultimate Multisite tinklo administravimo dalies -- tai viešas jūsų verslo veidas.
 
@@ -103,7 +103,7 @@ Svarbiausi puslapiai:
 Sukurkite savo rinkodaros svetainę kaip svetainę savo tinkle. Tai leidžia ją valdyti iš to paties Dashboard ir parodo jūsų pačių platformos galimybes.
 :::
 
-## Pasirinktinis domenas klientams
+## Pasirinktinis domenas klientams {#custom-domain-for-customers}
 
 Klientams, kurių planuose įtraukti pasirinktiniai domenai, aiškiai dokumentuokite procesą:
 
@@ -113,7 +113,7 @@ Klientams, kurių planuose įtraukti pasirinktiniai domenai, aiškiai dokumentuo
 
 Sukurkite pagalbos straipsnį arba žinių bazės įrašą būtent šiam procesui, parašytą netechniniams fitneso studijų savininkams.
 
-## FitSite tinklas iki šiol
+## FitSite tinklas iki šiol {#the-fitsite-network-so-far}
 
 ```
 FitSite tinklas
@@ -132,7 +132,7 @@ FitSite tinklas
 └── Paruošta onboarding procesui (kita pamoka)
 ```
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Platformos domenas ir DNS** sukonfigūruoti prekės ženklu pažymėtai patirčiai
 - **White-label administravimo dalis** su FitSite prekės ženklu visur

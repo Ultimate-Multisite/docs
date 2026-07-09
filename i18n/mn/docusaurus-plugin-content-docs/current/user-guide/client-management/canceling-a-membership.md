@@ -3,7 +3,7 @@ title: Гишүүнчлэлээ цуцлах
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Гишүүн байхыг цуцлах (v2)
+# Гишүүн байхыг цуцлах (v2) {#canceling-a-membership-v2}
 
 _**ЧАНЯА ТАЙЛБАР: Энэ нийтлэл Ultimate Multisite 2.x хувилбарыг хэрэглэдэг.**_
 

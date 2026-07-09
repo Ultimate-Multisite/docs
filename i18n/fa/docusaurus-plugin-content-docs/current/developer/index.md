@@ -3,11 +3,11 @@ title: مستندات توسعه‌دهنده
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# مستندات توسعه‌دهنده
+# مستندات توسعه‌دهنده {#developer-documentation}
 
 این راهنما تمام آنچه را که توسعه‌دهندگان برای ادغام، گسترش یا توسعه افزونه‌های جانبی (addon) برای Ultimate Multisite نیاز دارند، فراهم می‌کند. Ultimate Multisite یک شبکه WordPress Multisite را به یک پلتفرم وب‌سایت به عنوان سرویس (WaaS) تبدیل می‌کند.
 
-## چه مواردی در دسترس است
+## چه مواردی در دسترس است {#whats-available}
 
 - **[REST API](./rest-api/overview)** — عملیات کامل CRUD برای تمام موجودیت‌ها (مشتریان، سایت‌ها، عضویت‌ها، پرداخت‌ها، محصولات، دامنه‌ها) با احراز هویت کلید API
 - **[Hooks Reference](./hooks/guide)** — بیش از ۲۰۰ هوک اکشن (action hook) و بیش از ۲۸۰ هوک فیلتر (filter hook) برای رویدادهای چرخه عمر و سفارشی‌سازی
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Code Examples](./code-examples/)** — الگوهای پیشرفته برای قیمت‌گذاری پویا، تأمین منابع سایت، محدودیت‌های سفارشی و پردازش چند درگاه
 - **[Addon Development](./addon-development/getting-started)** — چارچوب ساختاریافته برای ساخت افزونه‌های جانبی
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 
 - نصب WordPress Multisite
 - PHP 7.4 یا بالاتر
 - فعال بودن افزونه Ultimate Multisite
 
-## نصب با Composer / Bedrock
+## نصب با Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite در [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) با نام `ultimate-multisite/ultimate-multisite` در دسترس است. این روش نصب، روش توصیه‌شده برای محیط‌های WordPress مبتنی بر [Bedrock](https://roots.io/bedrock/) و سایر محیط‌های مدیریت شده توسط Composer است.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## شروع سریع
+## شروع سریع {#quick-start}
 
-### استفاده از REST API
+### استفاده از REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### اتصال به رویدادها (Hooks)
+### اتصال به رویدادها (Hooks) {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### ساخت یک افزونه جانبی (Addon)
+### ساخت یک افزونه جانبی (Addon) {#build-an-addon}
 
 ```bash
 # تولید اسکلت افزونه جانبی از قالب

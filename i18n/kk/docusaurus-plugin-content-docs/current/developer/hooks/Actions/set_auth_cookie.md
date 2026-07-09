@@ -4,11 +4,11 @@ title: Әрекет - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Аутентификация cookie орнатылардың дәл алдында іске қосылады.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | Аутентификация схемасы. Мәндерге 'auth' немесе 'secure_auth' кіреді. |
 | $token | `string` | Осы cookie үшін пайдаланылатын пайдаланушының сеанс token. |
 
-### Шыққан нұсқасы
+### Шыққан нұсқасы {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Дереккөзі
+### Дереккөзі {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ішінде 124-жолда анықталған

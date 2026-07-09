@@ -3,19 +3,19 @@ title: 'Oppitunti 10: Julkaisupäivä'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Oppitunti 10: Julkaisupäivä
+# Oppitunti 10: Julkaisupäivä {#lesson-10-launch-day}
 
 Kaikki on rakennettu. Ennen kuin avaat ovet, tämä oppitunti käy läpi julkaisua edeltävän tarkistuslistan, jotta mikään ei ole rikki, puutu tai aiheuta noloa tilannetta.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSiteen on määritetty kaikki: mallit, paketit, maksuprosessi, brändäys, käyttöönotto ja hinnoittelu. Nyt varmistamme, että kaikki toimii, ja julkaisemme palvelun.
 
-## Julkaisua edeltävä tarkistuslista
+## Julkaisua edeltävä tarkistuslista {#pre-launch-checklist}
 
 Käy jokainen kohta läpi. Älä ohita mitään.
 
-### Alustan infrastruktuuri
+### Alustan infrastruktuuri {#platform-infrastructure}
 
 - [ ] Hosting on vakaa ja toimii hyvin kuormituksen alla
 - [ ] Wildcard SSL on aktiivinen ja kaikki aliverkkotunnukset toimivat HTTPS:n kautta
@@ -23,7 +23,7 @@ Käy jokainen kohta läpi. Älä ohita mitään.
 - [ ] Varmuuskopiot on määritetty ja testattu (palauta vähintään yksi varmistukseksi)
 - [ ] Valvonta on käytössä -- tiedät, jos alusta kaatuu
 
-### Mallit
+### Mallit {#templates}
 
 - [ ] Kaikki kolme mallia latautuvat oikein uusilla sivustoilla
 - [ ] Paikkamerkkisisältö on hyödyllistä eikä siinä ole kirjoitusvirheitä
@@ -32,7 +32,7 @@ Käy jokainen kohta läpi. Älä ohita mitään.
 - [ ] Sivun latausnopeus on hyväksyttävä (testaa työkalulla, kuten GTmetrix tai PageSpeed Insights)
 - [ ] Yhdessäkään mallissa ei ole rikkinäisiä linkkejä tai puuttuvia resursseja
 
-### Paket ja tuotteet
+### Paket ja tuotteet {#plans-and-products}
 
 - [ ] Kaikki kolme pakettia ovat aktiivisia ja näkyvissä
 - [ ] Pakettien kuvaukset ovat tarkkoja ja kohderyhmälle suunnattuja
@@ -42,7 +42,7 @@ Käy jokainen kohta läpi. Älä ohita mitään.
 - [ ] Lisätarjoukset näkyvät oikein maksuprosessin aikana
 - [ ] Lisäosa- ja teemarajoitukset pannaan oikein täytäntöön pakettikohtaisesti
 
-### Maksuprosessi
+### Maksuprosessi {#checkout-flow}
 
 - [ ] Tee täydellinen testirekisteröityminen jokaisella paketilla (käytä testimaksutilaa)
 - [ ] Mallin valinta näyttää oikeat mallit pakettikohtaisesti
@@ -52,7 +52,7 @@ Käy jokainen kohta läpi. Älä ohita mitään.
 - [ ] Asiakas voi kirjautua uuteen sivustoonsa välittömästi
 - [ ] Alennuskoodit toimivat oikein
 
-### Brändäys
+### Brändäys {#branding}
 
 - [ ] Kirjautumissivu näyttää FitSite-brändäyksen
 - [ ] Admin Dashboard näyttää FitSite-brändäyksen
@@ -60,7 +60,7 @@ Käy jokainen kohta läpi. Älä ohita mitään.
 - [ ] Laskut näkyvät oikein yrityksesi tiedoilla
 - [ ] Markkinointisivusto on julkaistu ja linkittää maksulomakkeeseen
 
-### Käyttöönotto
+### Käyttöönotto {#onboarding}
 
 - [ ] Pika-aloitus-widget näkyy uusien asiakkaiden Dashboardeissa
 - [ ] Kaikki Pika-aloitus-linkit osoittavat oikeille sivuille
@@ -68,7 +68,7 @@ Käy jokainen kohta läpi. Älä ohita mitään.
 - [ ] Tietopankkiartikkelit on julkaistu ja ne ovat käytettävissä
 - [ ] Account-sivu näyttää oikeat pakettitiedot ja päivitysvaihtoehdot
 
-### Juridiikka ja liiketoiminta
+### Juridiikka ja liiketoiminta {#legal-and-business}
 
 - [ ] Käyttöehdot on julkaistu ja linkitetty maksuprosessista
 - [ ] Tietosuojakäytäntö on julkaistu ja saatavilla
@@ -77,11 +77,11 @@ Käy jokainen kohta läpi. Älä ohita mitään.
 - [ ] Maksuyhdyskäytävä on live-tilassa (ei testitilassa)
 - [ ] Veroasetukset ovat oikeat lainkäyttöalueellesi
 
-## Pehmeä julkaisu vs. kova julkaisu
+## Pehmeä julkaisu vs. kova julkaisu {#soft-launch-vs-hard-launch}
 
 Harkitse kaksivaiheista julkaisua:
 
-### Vaihe 1: Pehmeä julkaisu
+### Vaihe 1: Pehmeä julkaisu {#phase-1-soft-launch}
 
 Kutsu 5–10 kuntosaliyrittäjää rekisteröitymään ennen julkista julkaisua. He ovat beta-asiakkaitasi. Tarjoa heille merkittävä alennus (50 % alennus koko eliniäksi tai 3 kuukautta ilmaiseksi) vastineeksi seuraavista:
 
@@ -91,7 +91,7 @@ Kutsu 5–10 kuntosaliyrittäjää rekisteröitymään ennen julkista julkaisua.
 
 Tämä antaa sinulle aitoa asiakaspalautetta ja live-sivustoja esiteltäväksi ennen kuin avaat palvelun yleisölle.
 
-### Vaihe 2: Julkinen julkaisu
+### Vaihe 2: Julkinen julkaisu {#phase-2-public-launch}
 
 Kun pehmeän julkaisun palaute on otettu huomioon:
 
@@ -100,7 +100,7 @@ Kun pehmeän julkaisun palaute on otettu huomioon:
 - Aloita asiakashankinta (Oppitunti 11)
 - Ilmoita asiasta relevanteilla kuntoilualan kanavilla
 
-## Julkaisupäivän toimet
+## Julkaisupäivän toimet {#launch-day-actions}
 
 Sinä päivänä, kun julkaiset palvelun yleisölle:
 
@@ -110,7 +110,7 @@ Sinä päivänä, kun julkaiset palvelun yleisölle:
 4. **Ole tavoitettavissa** -- ensimmäiset oikeat asiakkaasi saattavat tarvita apua, ja nopea vastaus rakentaa luottamusta
 5. **Juhlista lyhyesti** -- ja palaa sitten töihin
 
-## Mikä voi mennä pieleen
+## Mikä voi mennä pieleen {#what-can-go-wrong}
 
 Varaudu seuraaviin:
 
@@ -120,7 +120,7 @@ Varaudu seuraaviin:
 - **Suorituskyky kuormituksen alla**: Jos saat liikennepiikin, tiedä, miten skaalata hostingiasi
 - **Asiakkaiden hämmennys**: Pidä tietopankki ja tukikanavat valmiina
 
-## FitSite Network tähän mennessä
+## FitSite Network tähän mennessä {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Mitä rakensimme tässä oppitunnissa
+## Mitä rakensimme tässä oppitunnissa {#what-we-built-this-lesson}
 
 - **Kattava julkaisua edeltävä tarkistuslista**, joka kattaa infrastruktuurin, sisällön, maksut ja juridiikan
 - **Pehmeän julkaisun strategia**, jolla saat aitoa palautetta ennen julkista julkaisua

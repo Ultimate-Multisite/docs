@@ -3,15 +3,15 @@ title: 'Isifundo 7: Ukuyenza ibe yeyakho'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Isifundo 7: Ukwenza Ibe Yeyakho
+# Isifundo 7: Ukwenza Ibe Yeyakho {#lesson-7-making-it-yours}
 
 Abathengi bakho mabangaze bazive ngathi basebenzisa "iplagi ethile ye-WordPress." Kufuneka bazive ngathi basebenzisa i-FitSite -- iqonga elakhelwe ishishini labo. Esi sifundo sigubungela ukubeka uphawu, i-white-labeling, nokwenza iqonga livakale njengemveliso.
 
-## Apho Besiyeke Khona
+## Apho Besiyeke Khona {#where-we-left-off}
 
 I-FitSite inenkqubo yokuhlawula esebenzayo ethatha abanini beestudiyo zokuzilolonga ukusuka ekukhetheni isicwangciso ukuya kwisiza esiphilayo. Ngoku senza amava onke avakale njengemveliso edibeneyo, enophawu.
 
-## Idomeyini Yeqonga Lakho
+## Idomeyini Yeqonga Lakho {#your-platform-domain}
 
 Isiseko sophawu lwakho yidomeyini yakho. Kwi-FitSite:
 
@@ -19,7 +19,7 @@ Isiseko sophawu lwakho yidomeyini yakho. Kwi-FitSite:
 - **Iisayithi zabathengi**: `studioname.fitsite.com` (ii-subdomain)
 - **Iidomeyini ezilungiselelweyo**: Abathengi abakwiisicwangciso ze-Growth ne-Pro banokumatanisa idomeyini yabo
 
-### Ukuseta Idomeyini Yakho
+### Ukuseta Idomeyini Yakho {#setting-up-your-domain}
 
 1. Bhalisa idomeyini yeqonga lakho
 2. Yalathise kumboneleli wakho wokubamba
@@ -28,11 +28,11 @@ Isiseko sophawu lwakho yidomeyini yakho. Kwi-FitSite:
 
 Bona [Indlela Yokuqwalasela Ukumataniswa Kwedomeyini](/user-guide/domain-mapping/how-to-configure-domain-mapping) ukuze ufumane imiyalelo eneenkcukacha.
 
-## I-White-Labeling Yamava e-Admin
+## I-White-Labeling Yamava e-Admin {#white-labeling-the-admin-experience}
 
 Xa umnini westudiyo sokuzilolonga engena kwi-dashboard yesiza sakhe, kufuneka abone uphawu lwakho, hayi uphawu lwe-WordPress okanye lwe-Ultimate Multisite.
 
-### Iphepha Lokungena Elilungiselelweyo
+### Iphepha Lokungena Elilungiselelweyo {#custom-login-page}
 
 Lungiselela iphepha lokungena le-WordPress ukuze libonise:
 
@@ -40,7 +40,7 @@ Lungiselela iphepha lokungena le-WordPress ukuze libonise:
 - Imifanekiso yangasemva efanelekileyo kwezokuzilolonga
 - Imibala yophawu lwakho
 
-### Ukubeka Uphawu kwi-Dashboard
+### Ukubeka Uphawu kwi-Dashboard {#dashboard-branding}
 
 Sebenzisa i-addon ye-[Admin Page Creator](/addons/admin-page-creator) okanye i-CSS elungiselelweyo ukuze:
 
@@ -48,7 +48,7 @@ Sebenzisa i-addon ye-[Admin Page Creator](/addons/admin-page-creator) okanye i-C
 - Ulungise iskimu semibala ye-admin ukuze sihambelane nophawu lwakho
 - Wongeze iwijethi ye-dashboard elungiselelweyo enekhonkco ezikhawulezayo nezixhobo zoncedo ezijolise kwezokuzilolonga
 
-### Amaphepha e-Admin Alungiselelweyo
+### Amaphepha e-Admin Alungiselelweyo {#custom-admin-pages}
 
 Cinga ngokudala amaphepha e-admin alungiselelweyo abonisa ezona ntshukumo zibalulekileyo kubanini beestudiyo zokuzilolonga:
 
@@ -58,11 +58,11 @@ Cinga ngokudala amaphepha e-admin alungiselelweyo abonisa ezona ntshukumo zibalu
 
 Oku kunciphisa ubunzima bokufunda ngokubeka izenzo ezifanelekileyo kwicandelo lakho ngaphambili naphakathi endaweni yokuzifihla kwimenyu eqhelekileyo ye-WordPress.
 
-## Ukubeka Uphawu Kunxibelelwano Lwakho
+## Ukubeka Uphawu Kunxibelelwano Lwakho {#branding-your-communications}
 
 Yonke i-imeyile, i-invoyisi, nesaziso kufuneka zomeleze uphawu lwakho.
 
-### Ii-imeyile Zesistim
+### Ii-imeyile Zesistim {#system-emails}
 
 Yiya ku-**Ultimate Multisite > Settings > Emails** uze ulungise zonke ii-imeyile zesistim:
 
@@ -79,7 +79,7 @@ Ii-imeyile eziphambili zokuzilungiselela:
 | Irisithi yentlawulo | "Intlawulo ifunyenwe" | "Intlawulo yobhaliso lwe-FitSite iqinisekisiwe" |
 | Ukuphela kwesilingo | "Isilingo sakho siza kuphela kungekudala" | "Isilingo sakho se-FitSite siphela kwiintsuku ezi-3 -- gcina iwebhusayithi yestudiyo sakho iphila" |
 
-### Ii-invoyisi
+### Ii-invoyisi {#invoices}
 
 Lungiselela iitempleyithi ze-invoyisi ngezi zinto:
 
@@ -87,7 +87,7 @@ Lungiselela iitempleyithi ze-invoyisi ngezi zinto:
 - Iinkcukacha zeshishini lakho
 - Amagama eemveliso ajolise kwezokuzilolonga (hayi ii-ID zesicwangciso eziqhelekileyo)
 
-## Isiza Esijonge Kubathengi
+## Isiza Esijonge Kubathengi {#the-customer-facing-site}
 
 Idomeyini yakho engundoqo (`fitsite.com`) ifuna isiza sokuthengisa esithengisa iqonga. Oku kwahlukile kwi-admin yenethiwekhi ye-Ultimate Multisite -- bubuso boluntu beshishini lakho.
 
@@ -103,7 +103,7 @@ Amaphepha aphambili:
 Yila isiza sakho sokuthengisa njengesiza ngaphakathi kwenethiwekhi yakho. Oku kukuvumela ukuba usilawule kwi-dashboard enye kwaye kubonisa amandla eqonga lakho.
 :::
 
-## Idomeyini Elungiselelweyo Yabathengi
+## Idomeyini Elungiselelweyo Yabathengi {#custom-domain-for-customers}
 
 Kubathengi abakwizicwangciso eziquka iidomeyini ezilungiselelweyo, bhala inkqubo ngokucacileyo:
 
@@ -113,7 +113,7 @@ Kubathengi abakwizicwangciso eziquka iidomeyini ezilungiselelweyo, bhala inkqubo
 
 Yila inqaku loncedo okanye ingeniso kwisiseko solwazi ngokukodwa yale nkqubo, ebhalelwe abanini beestudiyo zokuzilolonga abangengabo oochwephesha bobugcisa.
 
-## Inethiwekhi ye-FitSite Ukuza Kuthi Ga Ngoku
+## Inethiwekhi ye-FitSite Ukuza Kuthi Ga Ngoku {#the-fitsite-network-so-far}
 
 ```
 Inethiwekhi ye-FitSite
@@ -132,7 +132,7 @@ Inethiwekhi ye-FitSite
 └── Ilungele inkqubo yokwamkelwa (isifundo esilandelayo)
 ```
 
-## Esikwakhileyo Kwesi Sifundo
+## Esikwakhileyo Kwesi Sifundo {#what-we-built-this-lesson}
 
 - **Idomeyini yeqonga kunye ne-DNS** ziqwalaselwe ukuze kubekho amava anophawu
 - **I-admin ene-white-label** enophawu lwe-FitSite kuyo yonke indawo

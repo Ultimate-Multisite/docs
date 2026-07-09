@@ -3,7 +3,7 @@ title: Ukufinyelela Ikhasi le-Account
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Ngingalifinyelela kanjani ikhasi lami le-Account okokuqala?
+# Ngingalifinyelela kanjani ikhasi lami le-Account okokuqala? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Siyakwamukela ku-Ultimate Multisite!
 

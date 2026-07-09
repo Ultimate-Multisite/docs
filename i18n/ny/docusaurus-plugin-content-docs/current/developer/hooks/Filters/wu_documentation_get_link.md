@@ -4,13 +4,13 @@ title: Sefa - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Fyuluta: wu_documentation_get_link
+# Fyuluta: wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 Lolani opanga mapulagini kusefa maulalo.
 
 Sindikuona bwino mmene zingathandizire, koma sikuvulaza kukhala nacho
 
-## Ma Parameter
+## Ma Parameter {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Sindikuona bwino mmene zingathandizire, koma sikuvulaza kukhala nacho
 | $slug | `string` | Slug yomwe yagwiritsidwa ntchito kupeza ulalo |
 | $default_link | `string` | Ulalo wokhazikika wolembetsedwa |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 1.7.0
-### Gwero
+### Gwero {#source}
 
 Yatanthauzidwa mu [`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) pa mzere 125

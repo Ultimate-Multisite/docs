@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# বহু-ভাড়াটীয়া ব্যৱস্থা
+# বহু-ভাড়াটীয়া ব্যৱস্থা {#multi-tenancy}
 
 কাৰ্যক্ষমতা আৰু সুৰক্ষাৰ বাবে উপ-ছাইটসমূহ ছাৰ্ভাৰ আৰু ডাটাবেছসমূহৰ মাজত বিতৰণ কৰক
 
-## Version 1.2.0 মুক্তিৰ মুখ্য দিশসমূহ
+## Version 1.2.0 মুক্তিৰ মুখ্য দিশসমূহ {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0-এ উৎপাদন বিচ্ছিন্নকৰণ কাৰ্যপ্ৰবাহৰ বাবে স্বায়ত্তশাসিত ভাড়াটীয়াৰ ভিত্তি যোগ কৰে:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0-এ উৎপাদন বিচ্ছিন্নকৰণ 
 
 [স্বায়ত্তশাসিত migration কাৰ্যপ্ৰবাহ](/user-guide/getting-started/sovereign-migration-workflow), [বহু-ভাড়াটীয়া বিচ্ছিন্নকৰণ](/user-guide/configuration/multi-tenancy-isolation), আৰু [স্বায়ত্তশাসিত ভাড়াটীয়া কাৰ্যকলাপ](/user-guide/administration/sovereign-tenant-operations)-ৰ বাবে ব্যৱহাৰকাৰী guideসমূহ চাওক।
 
-## প্ৰয়োজনীয়তা
+## প্ৰয়োজনীয়তা {#requirements}
 
 - WordPress 5.3 বা তাতকৈ উচ্চ
 - PHP 7.4 বা তাতকৈ উচ্চ
 - Multisite Ultimate প্লাগইন (সক্ৰিয়)
 
-## ইনষ্টলেচন
+## ইনষ্টলেচন {#installation}
 
 1. addon ফাইলসমূহ আপোনাৰ `/wp-content/plugins/` ডাইৰেক্টৰীত আপল'ড কৰক
 2. WordPress-ত 'Plugins' মেনুৰ জৰিয়তে প্লাগইন সক্ৰিয় কৰক
 3. নেটৱৰ্ক admin-ত addon ছেটিংছ কনফিগাৰ কৰক
 
-## বিকাশ
+## বিকাশ {#development}
 
-### ছেটআপ
+### ছেটআপ {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### প্ৰকল্পৰ গঠন
+### প্ৰকল্পৰ গঠন {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization নিয়মসমূহ
 ```
 
-### পৰীক্ষণ
+### পৰীক্ষণ {#testing}
 
 addon-টোত এটা বিস্তৃত পৰীক্ষণ framework অন্তৰ্ভুক্ত আছে:
 
@@ -93,54 +93,54 @@ addon-টোত এটা বিস্তৃত পৰীক্ষণ framework 
 - **Test Coverage**: code coverage অনুসৰণ কৰিবলৈ কনফিগাৰ কৰা হৈছে
 - **Multisite Testing**: testসমূহ multisite পৰিৱেশত চলে
 
-### Code Standards
+### Code Standards {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS-ৰ জৰিয়তে বলৱৎ কৰা হয়
 - **PHP 7.4+ Compatibility**: আধুনিক PHP বৈশিষ্ট্যসমূহ সমৰ্থিত
 - **Static Analysis**: type checking-ৰ বাবে PHPStan সংহতি
 - **Code Modernization**: PHP upgradeসমূহৰ বাবে Rector নিয়মসমূহ
 
-### Build System
+### Build System {#build-system}
 
 - **Asset Processing**: CSS/JS ফাইলসমূহৰ বাবে minification
 - **Translation**: POT ফাইল সৃষ্টি
 - **Packaging**: বিতৰণৰ বাবে archive সৃষ্টি
 - **Development Mode**: debugging-ৰ বাবে unminified assetসমূহ
 
-## কনফিগাৰেচন
+## কনফিগাৰেচন {#configuration}
 
 addon-এ নেটৱৰ্ক admin interface-ৰ জৰিয়তে প্ৰবেশযোগ্য বিভিন্ন কনফিগাৰেচন বিকল্প সমৰ্থন কৰে।
 
-### স্বায়ত্তশাসিত ভাড়াটীয়া কনফিগাৰেচন
+### স্বায়ত্তশাসিত ভাড়াটীয়া কনফিগাৰেচন {#sovereign-tenant-configuration}
 
 স্বায়ত্তশাসিত ভাড়াটীয়াৰ বাবে, traffic ভাড়াটীয়ালৈ route কৰাৰ আগতে ভাড়াটীয়া ডাটাবেছ, ফাইলছিষ্টেম root, ডাটাবেছ host binding, আৰু host ক্ষমতা কনফিগাৰ কৰক। ডাটাবেছ credentials, host binding, routing, বা ব্যৱহাৰকাৰী provisioning-ত প্ৰভাৱ পেলোৱা প্ৰতিটো পৰিৱৰ্তনৰ পাছত migration যাচাইকৰণ চলাওক।
 
 ভাড়াটীয়া runtime আৰু ডাটাবেছ grantসমূহে local socket বা একে-মেচিন access আশা কৰিলেহে `localhost` ব্যৱহাৰ কৰক। আপোনাৰ provider-এ কনফিগাৰ কৰা grant host সেইটোৱেই হ'লে `127.0.0.1` বা এটা service hostname ব্যৱহাৰ কৰক।
 
-### Hostinger ক্ষমতা
+### Hostinger ক্ষমতা {#hostinger-capability}
 
 Hostinger বহু-ভাড়াটীয়া ক্ষমতাই shared Hostinger integration token-ৰ সৈতে কাম কৰে। যাচাইকৰণৰ আগতে domain hPanel-ত উপস্থিত আছে, DNS-এ Hostinger account-লৈ point কৰে, আৰু ভাড়াটীয়া ডাটাবেছ ছেটিংছ hPanel-ৰ সৈতে মিলে বুলি নিশ্চিত কৰক।
 
-## Hook আৰু Filterসমূহ
+## Hook আৰু Filterসমূহ {#hooks-and-filters}
 
-### Actionসমূহ
+### Actionসমূহ {#actions}
 
 - `ultimate-multisite-addon-template_init` - addon initialization-ৰ পাছত চলোৱা হয়
 - `ultimate-multisite-addon-template_loaded` - সকলো addon ফাইল load হোৱাৰ পাছত চলোৱা হয়
 
-### Filterসমূহ
+### Filterসমূহ {#filters}
 
 - `ultimate-multisite-addon-template_settings` - addon ছেটিংছ সলনি কৰক
 - `ultimate-multisite-addon-template_enabled` - addon enable/disable স্থিতি override কৰক
 
-## লাইচেন্স
+## লাইচেন্স {#license}
 
 এই addon-টো GPL v3 বা তাৰ পাছৰ সংস্কৰণৰ অধীনত licensed।
 
-## সহায়তা
+## সহায়তা {#support}
 
 সহায়তা আৰু documentation-ৰ বাবে, [MultisiteUltimate.com](https://multisiteultimate.com) ভ্ৰমণ কৰক
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.2.0 (2026-06-03): অৱস্থাহীন ভাড়াটীয়া স্বয়ংক্ৰিয় লগইন, Hostinger বহু-ভাড়াটীয়া ক্ষমতা, প্ৰতিটো উপ-ছাইটভিত্তিক ডাটাবেছ আৰু ফাইলছিষ্টেম বিচ্ছিন্নকৰণ, স্বায়ত্তশাসিত migration যাচাইকৰণ gateসমূহ, ভাড়াটীয়া bootstrap/ডাটাবেছ writer উন্নতি, কনফিগাৰযোগ্য MySQL host binding, আৰু অধিক নিৰাপদ স্বায়ত্তশাসিত teardown যোগ কৰক।
 

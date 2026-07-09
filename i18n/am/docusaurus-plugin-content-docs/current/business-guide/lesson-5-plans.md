@@ -3,15 +3,15 @@ title: 'ትምህርት 5: የእቅዶችዎ ዲዛይን'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# ትምህርት 5፡ ዕቅዶችን መንደፍ
+# ትምህርት 5፡ ዕቅዶችን መንደፍ {#lesson-5-designing-your-plans}
 
 የእርስዎ ዕቅድ ደረጃዎች (plan tiers) የዋጋ ደረጃዎች ብቻ አይደሉም—እነሱ ልዩ የገበያ ደንበኞችዎ በእውነታው እንዴት እንደሚሰሩ የሚያንፀባርቁ ናቸው። በዚህ ትምህርት፣ በተለያዩ ደረጃዎች ባሉ የጤና ተቋማት (fitness businesses) እውነተኛ ፍላጎት ጋር የሚጣጣሙ የምርት ደረጃዎችን እንዴት እንደሚነድፉ ይማራሉ።
 
-## የት ቆምን ነበርን
+## የት ቆምን ነበርን {#where-we-left-off}
 
 FitSite ሶስት ዝግጁ የሆኑ አብነጣዎችን (Studio Essential, Gym Pro, Fitness Chain) አለው። አሁን ደግሞ ደንበኞች ምን መዳረሻ የሚያገኙበት እና ምን እንደሚከፍሉ የሚወስኑ ዕቅዶችን እንፈጥራለን።
 
-## በደንበኛ ክፍሎች ማሰብ
+## በደንበኛ ክፍሎች ማሰብ {#thinking-in-customer-segments}
 
 አብዛኛው ሰው የሚያደርገው ስህተት ዕቅዶችን በቴክኒካዊ ባህሪያት (ማከማቻ፣ ባንድዊድዝ፣ የገጽ ብዛት) ዙሪያ መቅረጽ ነው። የእርስዎ ልዩ የገበያ ደንበኞች በእነዚህ ቃላት አያስቡም። የአካል ብቃት ማዕከል ባለቤት የሚያስበው ንግዱን ለማስኬድ ምን እንደሚያስፈልገው ነው።
 
@@ -25,11 +25,11 @@ FitSite ሶስት ዝግጁ የሆኑ አብነጣዎችን (Studio Essential, G
 
 ዕቅዶችዎ በነባር ባህሪ ስብስቦች ላይ ሳይሆን፣ በእነዚህ ክፍሎች ላይ መመደብ አለባቸው።
 
-## የFitSite ዕቅዶችን መፍጠር
+## የFitSite ዕቅዶችን መፍጠር {#creating-the-fitsite-plans}
 
 ለእያንዳንዱ ዕቅድ ወደ **Ultimate Multisite > Products > Add Product** ይሂዱ።
 
-### ዕቅድ 1፡ FitSite Starter -- $49/ወር
+### ዕቅድ 1፡ FitSite Starter -- $49/ወር {#plan-1-fitsite-starter----49month}
 
 **ዒላማ**: ብቸኛ አሰልጣኞች እና ትናንሽ ስቱዲዮዎች
 
@@ -59,7 +59,7 @@ FitSite ሶስት ዝግጁ የሆኑ አብነጣዎችን (Studio Essential, G
 - የተመረጠው አርማዎ: ማስገደድ (Force Activate)
 - ሁሉም ሌሎች አርማዎች: ተደብቋል (Hidden)
 
-### ዕቅድ 2፡ FitSite Growth -- $99/ወር
+### ዕቅድ 2፡ FitSite Growth -- $99/ወር {#plan-2-fitsite-growth----99month}
 
 **ዒላማ**: የተቋቋሙ የአንድ ቦታ የአካል ብቃት ማዕከላት
 
@@ -85,7 +85,7 @@ FitSite ሶስት ዝግጁ የሆኑ አብነጣዎችን (Studio Essential, G
 - የዕቅድ ስብስብ (Plan group): FitSite Plans
 - የምርት ቅደም ተከተል (Product order): 2
 
-### ዕቅድ 3፡ FitSite Pro -- $199/ወር
+### ዕቅድ 3፡ FitSite Pro -- $199/ወር {#plan-3-fitsite-pro----199month}
 
 **ዒላማ**: ብዙ ቦታዎች ባላቸው የአካል ብቃት ሰንሰለቶች
 
@@ -109,7 +109,7 @@ FitSite ሶስት ዝግጁ የሆኑ አብነጣዎችን (Studio Essential, G
 - የዕቅድ ስብስብ (Plan group): FitSite Plans
 - የምርት ቅደም ተከተል (Product order): 3
 
-## የዕቅድ ስብስብን ማዘጋጀት
+## የዕቅድ ስብስብን ማዘጋጀት {#setting-up-the-plan-group}
 
 የዕቅድ ስብስብ (plan group) ደንበኞች በFitSite ዕቅድ ቤተሰብ ውስጥ ብቻ እንዲያሻሽሉ ወይም እንዲቀንሱ ያረጋግጣል። በእያንዳንዱ ዕቅድ **Up & Downgrades** ትር ላይ፡
 
@@ -118,7 +118,7 @@ FitSite ሶስት ዝግጁ የሆኑ አብነጣዎችን (Studio Essential, G
 
 ይህ ግልጽ የማሻሻያ መንገድ ይፈጥራል፡ Starter → Growth → Pro።
 
-## የትዕዛዝ ተጨማሪ ዕቃዎችን መጨመር (Order Bumps)
+## የትዕዛዝ ተጨማሪ ዕቃዎችን መጨመር (Order Bumps) {#adding-order-bumps}
 
 የትዕዛዝ ተጨማሪ ዕቃዎች (Order bumps) በቼክአውት ወቅት የሚቀርቡ ተጨማሪ ምርቶች ናቸው። ለFitSite፣ የሚከተሉትን ግምት ውስጥ ያስገቡ፡
 
@@ -128,7 +128,7 @@ FitSite ሶስት ዝግጁ የሆኑ አብነጣዎችን (Studio Essential, G
 
 እነዚህን በUltimate Multisite ውስጥ እንደ **Package** ዓይነት ምርቶች ይፍጠሯቸው እና ከሚመለከታቸው ዕቅዶች ጋር ያያይዙ።
 
-## ይህ አወቃቀር ለምን ይሰራል
+## ይህ አወቃቀር ለምን ይሰራል {#why-this-structure-works}
 
 - **Starter** የመግቢያ እንቅፋቶችን ያስወግዳል -- ዝቅተኛ ዋጋ፣ ቀላል አቅርቦት፣ አሰልጣኞችን በፍጥነት ኦንላይን ያደርጋል
 - **Growth** የአካል ብቃት ማዕከላት በእውነት የሚጠይቋቸውን ባህሪያት ይጨምራል -- ቦታ ማስያዣ፣ ጋለሪዎች፣ ብጁ ዶሜኖች
@@ -136,7 +136,7 @@ FitSite ሶስት ዝግጁ የሆኑ አብነጣዎችን (Studio Essential, G
 - **የትዕዛዝ ተጨማሪ ዕቃዎች** ደንበኞች ዋና ዕቅዶቹን ሳይወሳበስበው እንዲያበጁ ያስችላል
 - **ግልጽ የማሻሻያ መንገድ** ማለት ደንበኞች የሚሄዱበትን ሳይሆን ከእርስዎ ጋር እያደጉ መሄድ ማለት ነው።
 
-## የFitSite ኔትወርክ እስካሁን
+## የFitSite ኔትወርክ እስካሁን {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## በዚህ ትምህርት የሠራነው
+## በዚህ ትምህርት የሠራነው {#what-we-built-this-lesson}
 
 - በእውነተኛ የአካል ብቃት ንግድ ክፍሎች የተመደቡ **ሶስት የዕቅድ ደረጃዎች**
 - የUltimate Multisite ፕልግ እና አብነጣ ቁጥጥሮችን በመጠቀም **የባህሪ መቆለፊያ (Feature gating)**

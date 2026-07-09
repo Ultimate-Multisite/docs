@@ -3,17 +3,17 @@ title: 'Isifundo 9: Ukubeka amanani ukuze kube nenzuzo'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Isifundo 9: Ukubeka Amanani Enzuzo
+# Isifundo 9: Ukubeka Amanani Enzuzo {#lesson-9-pricing-for-profit}
 
 Esifundweni 5 sabeka amanani okuqala ezinhlelo ze-FitSite. Manje sithuthukisa isu lamanani ngamasu akhulisa imali engenayo, akhuthaza ukuthuthukela ezinhlelweni eziphezulu, futhi anciphise ukushiya kwamakhasimende.
 
-## Lapho Sigcine Khona
+## Lapho Sigcine Khona {#where-we-left-off}
 
 I-FitSite isinezinhlelo, izifanekiso, ukukhokha, ukubhrenda, nokuqalisa amakhasimende sekumi ngomumo. Amanani okuqala bekungu-$49/$99/$199 ngenyanga. Manje senza lawo manani asebenze kakhulu.
 
-## Izimiso Zokubeka Amanani Zamapulatifomu Aqondene Nomkhakha Othile
+## Izimiso Zokubeka Amanani Zamapulatifomu Aqondene Nomkhakha Othile {#pricing-principles-for-niche-platforms}
 
-### Beka Inani Ngokusekelwe Kuvelu, Hhayi Ezindlekweni
+### Beka Inani Ngokusekelwe Kuvelu, Hhayi Ezindlekweni {#price-on-value-not-cost}
 
 Izindleko zakho ze-hosting zingaba ngu-$5-$15 ngesayithi lekhasimende. Lokho akusho ukuthi inani lakho kufanele libe ngu-$20. Awuthengisi i-hosting. Uthengisa:
 
@@ -24,7 +24,7 @@ Izindleko zakho ze-hosting zingaba ngu-$5-$15 ngesayithi lekhasimende. Lokho aku
 
 Beka inani ngokusekelwe kuvelu oyilethayo, hhayi ezindlekweni zokuyiletha.
 
-### Qhathanisa Nezinye Izinketho
+### Qhathanisa Nezinye Izinketho {#anchor-to-alternatives}
 
 Lapho umnikazi westudiyo se-fitness ehlola i-FitSite, uyiqhathanisa nalokhu:
 
@@ -34,7 +34,7 @@ Lapho umnikazi westudiyo se-fitness ehlola i-FitSite, uyiqhathanisa nalokhu:
 
 Ku-$49-$199/ngenyanga, i-FitSite ishibhile kunomakhi wewebhu, inamandla amaningi kunama-builder ajwayelekile, futhi ingcono ngokungenamkhawulo kunokungabi nayo iwebhusayithi.
 
-## Ukusebenzisa Ukuhlukahluka Kwamanani
+## Ukusebenzisa Ukuhlukahluka Kwamanani {#implementing-price-variations}
 
 Amanani onyaka akhuthaza ukuzibophezela futhi anciphisa ukushiya kwamakhasimende. Zulazula uye kuthebhu ethi **Ukuhlukahluka Kwamanani** yohlelo ngalunye bese wengeza izinketho zonyaka:
 
@@ -46,12 +46,12 @@ Amanani onyaka akhuthaza ukuzibophezela futhi anciphisa ukushiya kwamakhasimende
 
 Engeza inkambu ethi **Ukukhetha Isikhathi** efomini lakho lokukhokha ukuze amakhasimende ashintshe phakathi kokukhokhiswa kwanyanga zonke nokonyaka. Bheka [Amafomu Okukhokha](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Kungani Amanani Onyaka Esebenza
+### Kungani Amanani Onyaka Esebenza {#why-annual-pricing-works}
 
 - **Kuwe**: Imali engena ekuqaleni, ukushiya kwamakhasimende okuphansi (amakhasimende akhokha ngonyaka mancane amathuba okuthi akhansele phakathi nesikhathi)
 - **Kubo**: Ukonga kwangempela, ukubikezeleka kwesabelomali
 
-## Izimali Zokuqalisa
+## Izimali Zokuqalisa {#setup-fees}
 
 Cabanga ngenkokhelo yokuqalisa yesikhathi esisodwa ezinhlelweni ezifaka ukumiswa okusizwa ngesandla:
 
@@ -61,7 +61,7 @@ Cabanga ngenkokhelo yokuqalisa yesikhathi esisodwa ezinhlelweni ezifaka ukumiswa
 
 Lungiselela izimali zokuqalisa esigabeni samanani sohlelo ngalunye. Bheka [Ukwakha Umkhiqizo Wakho Wokuqala Wokubhaliselwe](/user-guide/configuration/creating-your-first-subscription-product) ukuze uthole imininingwane.
 
-## Izikhathi Zokuzama
+## Izikhathi Zokuzama {#trial-periods}
 
 Ukunikeza isikhathi sokuzama kunciphisa ubunzima bokubhalisa kodwa kuletha ingozi yokungaguquki kube ukukhokha. Ku-FitSite:
 
@@ -70,11 +70,11 @@ Ukunikeza isikhathi sokuzama kunciphisa ubunzima bokubhalisa kodwa kuletha ingoz
 
 Lungiselela isivivinyo esigabeni samanani sohlelo lwe-Starter ngokunika amandla iswishi ethi **Nikeza Isivivinyo** bese usetha ubude besikhathi bube yizinsuku ezingu-7.
 
-### Ukwenza Izivivinyo Ziguquke Zibe Ukukhokha
+### Ukwenza Izivivinyo Ziguquke Zibe Ukukhokha {#making-trials-convert}
 
 Isivivinyo sisebenza kuphela uma ikhasimende lithola ivelu ngesikhathi sesivivinyo. Uchungechunge lwakho lokuqalisa amakhasimende (Isifundo 8) lubalulekile lapha -- ama-imeyili okwamukela kufanele ahlelelwe ukukhuthaza ukuzibandakanya ngaphakathi kwefasitela lezinsuku ezingu-7.
 
-## Amakhodi Esaphulelo
+## Amakhodi Esaphulelo {#discount-codes}
 
 Dala amakhodi esaphulelo ahlelekile ngezinhloso ezithile:
 
@@ -88,7 +88,7 @@ Zulazula uye ku-**Ultimate Multisite > Amakhodi Esaphulelo** ukuze ukudale lokhu
 Izaphulelo kufanele zibe amathuluzi esu, hhayi izinto ezihlala zikhona. Uma wonke umuntu ethola isaphulelo, akusona isaphulelo -- kuyinani lakho langempela. Zisebenzisele imikhankaso ethile, ukudluliselwa, namaphromoshini anesikhathi esinqunyiwe.
 :::
 
-## Ukuphathwa Kwentela
+## Ukuphathwa Kwentela {#tax-handling}
 
 Uma usebenza endaweni edinga ukuqoqwa kwentela:
 
@@ -98,7 +98,7 @@ Uma usebenza endaweni edinga ukuqoqwa kwentela:
 
 Bheka [Ukuphathwa Kwentela](/user-guide/payment-gateways/tax-handling) ukuze uthole ukumiswa okunemininingwane. Uma uhlinzeka amakhasimende emhlabeni wonke, cabanga nge-[VAT addon](/addons/vat) ukuze uhambisane nezidingo ze-EU.
 
-## Ukubuyekeza Amanani Akho
+## Ukubuyekeza Amanani Akho {#reviewing-your-pricing}
 
 Ngemva kokwethula, buyekeza amanani njalo ngekota. Bheka:
 
@@ -107,7 +107,7 @@ Ngemva kokwethula, buyekeza amanani njalo ngekota. Bheka:
 - **Ukushiya kwamakhasimende ngohlelo**: Uma amakhasimende onyaka eshiya kancane, phusha amanani onyaka kakhulu
 - **Amanani abancintisana nabo**: Ezinye izinketho zibiza malini? Ingabe uzibeke kahle emakethe?
 
-## Inethiwekhi ye-FitSite Kuze Kube Manje
+## Inethiwekhi ye-FitSite Kuze Kube Manje {#the-fitsite-network-so-far}
 
 ```
 Inethiwekhi ye-FitSite
@@ -132,7 +132,7 @@ Inethiwekhi ye-FitSite
 └── Sekulungele ukwethulwa (isifundo esilandelayo)
 ```
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Amanani onyaka** anesaphulelo esingu-20% ukukhuthaza ukuzibophezela
 - **Izimali zokuqalisa** kumazinga aphezulu ukuze kukhavwe umzamo wokuqalisa amakhasimende

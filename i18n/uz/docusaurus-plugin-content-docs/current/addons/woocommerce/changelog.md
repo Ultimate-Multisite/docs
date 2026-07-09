@@ -3,7 +3,7 @@ title: WooCommerce integratsiyasi o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce integratsiyasi o‘zgarishlar jurnali
+# WooCommerce integratsiyasi o‘zgarishlar jurnali {#woocommerce-integration-changelog}
 
 Versiya 2.2.0 - 2026-07-01 da chiqarildi
 * Yangi: Ultimate Multisite soliq summalari endi checkout paytida alohida WooCommerce to‘lov qatorlari sifatida ko‘rinadi, bu to‘lovdan oldin soliq jami summalarini aniqroq qiladi.

@@ -3,15 +3,15 @@ title: SVG ya logoyê çêbike
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG çêbike
+# Logo SVG çêbike {#generate-logo-svg}
 
 Karîna **Logo SVG çêbike** dihêle ku Theme Builder logo SVG-yên taybet rasterast di nav malpera te ya WordPress de çêbike û bi paqijkirina otomatîk a ewle ji bo namespace têxe hundir.
 
-## Têgihiştin
+## Têgihiştin {#overview}
 
 Ev karîn li gorî arasteya branding a malpera te û tercîhên sêwiranê logo-yên scalable vector graphics (SVG) çêdike. SVG-yên çêkirî bi awayekî otomatîk tên paqijkirin da ku ji bo bikaranînê di WordPress de ewle bin, di heman demê de yekparetiya dîtbarî biparêzin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Parametre | Cure | Pêwîst | Danasîn |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Ev karîn li gorî arasteya branding a malpera te û tercîhên sêwiranê logo-
 | `height` | number | Na | Bilindiya SVG bi pixelan (standard: 200) |
 | `include_text` | boolean | Na | Ma navê malperê wek nivîs di logo de were têxistin an na (standard: true) |
 
-## Forma derketinê
+## Forma derketinê {#output-format}
 
 Ev karîn stringek SVG bi vê avahiyê vedigerîne:
 
@@ -36,7 +36,7 @@ Ev karîn stringek SVG bi vê avahiyê vedigerîne:
 }
 ```
 
-## Tevgera paqijkirina SVG
+## Tevgera paqijkirina SVG {#svg-sanitisation-behaviour}
 
 SVG-yên çêkirî di bin paqijkirina otomatîk a ewle ji bo namespace re derbas dibin da ku:
 
@@ -48,7 +48,7 @@ SVG-yên çêkirî di bin paqijkirina otomatîk a ewle ji bo namespace re derbas
 
 Ev yek piştrast dike ku SVG ewle ye ku bêyî pêwîstiya paqijkirina zêde rasterast di WordPress de were têxistin.
 
-## Mînaka bikaranînê
+## Mînaka bikaranînê {#usage-example}
 
 **Daxwaz:**
 ```
@@ -62,7 +62,7 @@ Ev karîn logoyek SVG çêdike ku:
 - Li gorî prensîbên sêwirana modern diçe
 - Bi awayekî otomatîk tê paqijkirin û ji bo bikaranînê amade ye
 
-## Yekbûn bi Theme Builder re
+## Yekbûn bi Theme Builder re {#integration-with-theme-builder}
 
 Dema ku hilbijartina arasteya sêwiranê ya Theme Builder tê bikaranîn, karîna Logo SVG çêbike:
 
@@ -71,21 +71,21 @@ Dema ku hilbijartina arasteya sêwiranê ya Theme Builder tê bikaranîn, karîn
 3. Logo bi awayekî otomatîk dixe nav devera header/branding a malpera te
 4. SVG wek logoyek taybet di medya WordPress de tomar dike
 
-## Rêbazên herî baş
+## Rêbazên herî baş {#best-practices}
 
 - **Tercîhên şêwazê bi zelalî bide** — şêwaza sêwiranê ya ku dixwazî binivîse (modern, classic, playful, hwd.)
 - **Rengan diyar bike** — ji bo yekrengiyê rengên brand-a xwe têxe nav
 - **Nîşandanê test bike** — piştrast bike ku logo li ser mezinahiyên cihêreng ên ekranê rast tê nîşandan
 - **Zêdetir taybet bike** — amûrên taybetkirina logo ya WordPress bi kar bîne da ku mezinahî û cih bicîhkirinê rast bike
 
-## Sînordarî
+## Sînordarî {#limitations}
 
 - Logo-yên SVG wek grafîkên static tên çêkirin (ne animated)
 - Logo-yên aloz bi gelek hêmanan dibe ku pêdivî bi başkirina destan hebe
 - Fontên taybet nayên piştgirîkirin; nivîs fontên system bi kar tîne
 - Mezinahiyên pir mezin an pir biçûk dibe ku bandorê li kalîteyê bikin
 
-## Karînên têkildar
+## Karînên têkildar {#related-abilities}
 
 - [Kontrasta paletteyê piştrast bike](./validate-palette-contrast.md) — kontrasta rengan ji bo gihîştinbarî kontrol bike
 - [Menu çêbike](./create-menu.md) — ji bo malpera xwe menu-yên navigation çêbike

@@ -3,15 +3,15 @@ title: Orkestrasi Pembina Laman v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrasi Pembina Laman v2
+# Orkestrasi Pembina Laman v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (diperkenalkan dalam Gratis AI Agent v1.4.0) ialah enjin yang menggerakkan penciptaan laman web berbilang langkah. Apabila anda meminta ejen untuk "membina laman web restoran" atau "mencipta portfolio dengan blog," orkestrator akan memecahkan matlamat keseluruhan itu menjadi **pelan** yang berstruktur, menemui plugin yang diperlukan untuk melaksanakannya, melaksanakan setiap langkah secara berurutan, menjejaki kemajuan, dan memulihkan diri daripada ralat secara autonomi.
 
 ---
 
-## Cara Ia Berfungsi
+## Cara Ia Berfungsi {#how-it-works}
 
-### 1. Penjanaan Pelan (Plan Generation)
+### 1. Penjanaan Pelan (Plan Generation) {#1-plan-generation}
 
 Apabila ejen menerima arahan membina laman web, ia akan memanggil keupayaan `create_site_plan` untuk menghasilkan **pelan laman** dalam format JSON. Pelan ini menerangkan:
 
@@ -61,7 +61,7 @@ Apabila ejen menerima arahan membina laman web, ia akan memanggil keupayaan `cre
 }
 ```
 
-### 2. Penemuan Plugin (Plugin Discovery)
+### 2. Penemuan Plugin (Plugin Discovery) {#2-plugin-discovery}
 
 Sebelum pelaksanaan bermula, orkestrator akan mengimbas `plugin_requirements` pelan dan menyemak plugin mana yang sudah aktif. Untuk plugin yang hilang, ia akan:
 
@@ -71,7 +71,7 @@ Sebelum pelaksanaan bermula, orkestrator akan mengimbas `plugin_requirements` pe
 
 Kegagalan penemuan plugin tidak menyebabkan kegagalan total — orkestrator akan menandakan langkah yang terjejas sebagai `skipped` dan meneruskan dengan baki pelan.
 
-### 3. Pelaksanaan Pelan (Plan Execution)
+### 3. Pelaksanaan Pelan (Plan Execution) {#3-plan-execution}
 
 Orkestrator memanggil `execute_site_plan` dengan ID pelan. Pelaksanaan berjalan fasa demi fasa, langkah demi langkah:
 
@@ -79,7 +79,7 @@ Orkestrator memanggil `execute_site_plan` dengan ID pelan. Pelaksanaan berjalan 
 - **Langkah Selari (Parallel steps)** — langkah dalam fasa yang sama yang tiada kebergantungan antara satu sama lain akan dihantar secara serentak apabila bendera `parallel` ditetapkan.
 - **Had Masa Langkah (Step timeout)** — setiap langkah mempunyai had masa individu (lalai: tetapan `Ability Timeout`). Langkah yang tamat masa akan ditandakan sebagai `failed` dan pelan akan diteruskan.
 
-### 4. Penjejakan Kemajuan (Progress Tracking)
+### 4. Penjejakan Kemajuan (Progress Tracking) {#4-progress-tracking}
 
 Panggil `get_plan_progress` pada bila-bila masa untuk menyemak status pelaksanaan:
 
@@ -104,7 +104,7 @@ Pengguna WP-CLI boleh memantau kemajuan dengan:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Pemulihan Ralat (Error Recovery)
+### 5. Pemulihan Ralat (Error Recovery) {#5-error-recovery}
 
 Apabila satu langkah gagal, orkestrator akan menyemak untuk **pelan pemulihan (fallback)** yang ditakrifkan dalam pelan:
 
@@ -115,9 +115,9 @@ Ejen akan melaporkan semua kegagalan dalam ringkasan pelan akhir dan mungkin men
 
 ---
 
-## Keupayaan Pelan (Site Plan Abilities)
+## Keupayaan Pelan (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Menjana pelan laman berstruktur daripada penerangan matlamat bahasa semula jadi.
 
@@ -134,7 +134,7 @@ Menjana pelan laman berstruktur daripada penerangan matlamat bahasa semula jadi.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Memulakan pelaksanaan pelan laman yang telah dijana sebelum ini.
 
@@ -150,7 +150,7 @@ Memulakan pelaksanaan pelan laman yang telah dijana sebelum ini.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Mengembalikan status pelaksanaan semasa pelan laman.
 
@@ -164,7 +164,7 @@ Mengembalikan status pelaksanaan semasa pelan laman.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Menyelesaikan langkah yang gagal secara manual dan menyambung semula pelaksanaan pelan dari langkah seterusnya. Gunakan ini apabila pemulihan automatik tidak mungkin dilakukan dan anda ingin campur tangan.
 
@@ -180,7 +180,7 @@ Menyelesaikan langkah yang gagal secara manual dan menyambung semula pelaksanaan
 
 ---
 
-## Membandingkan v1 dan v2
+## Membandingkan v1 dan v2 {#comparing-v1-and-v2}
 
 | Ciri | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Menyelesaikan langkah yang gagal secara manual dan menyambung semula pelaksanaan
 
 ---
 
-## Perintah Pelan WP-CLI
+## Perintah Pelan WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Menjana pelan laman daripada penerangan matlamat.
 
@@ -205,7 +205,7 @@ Menjana pelan laman daripada penerangan matlamat.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Melaksanakan pelan yang telah dijana sebelum ini.
 
@@ -213,7 +213,7 @@ Melaksanakan pelan yang telah dijana sebelum ini.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Menunjukkan kemajuan semasa untuk pelan yang sedang atau telah selesai.
 
@@ -221,7 +221,7 @@ Menunjukkan kemajuan semasa untuk pelan yang sedang atau telah selesai.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 M menyenaraikan semua pelan laman (tertangguh, sedang berjalan, dan selesai).
 
@@ -229,7 +229,7 @@ M menyenaraikan semua pelan laman (tertangguh, sedang berjalan, dan selesai).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Menetapkan semula pelan yang gagal kepada `pending` supaya ia boleh dilaksanakan semula dari awal.
 

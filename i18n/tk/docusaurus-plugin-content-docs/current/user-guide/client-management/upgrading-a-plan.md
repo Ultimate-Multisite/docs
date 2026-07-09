@@ -3,7 +3,7 @@ title: Planı ýokarlandyrmak
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Planyňy Güncellendirmek (v2)
+# Planyňy Güncellendirmek (v2) {#upgrading-a-plan-v2}
 
 _**ÖNEMLİ HABER: Bu makale Ultimate Multisite 2.x versiyasyna aýdylýar.**_
 
@@ -41,7 +41,7 @@ Checkout tamamlanandan soň, täze produkt(lar) müşderi hasabyňyza goşuladyr
 
 ##
 
-## Upgrade we Downgrade Ýollary
+## Upgrade we Downgrade Ýollary {#upgrade-and-downgrade-paths}
 
 Her bir produkt üçin size **Up & Downgrades** tabyny taparsyňyz. Bu tabynyň ilkinji opsiyasynda **Plan Group** diýlip atlandyrylýan bir ulanylyş ýerine ýetirilir.
 

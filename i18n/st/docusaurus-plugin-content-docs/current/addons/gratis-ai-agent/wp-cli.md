@@ -3,11 +3,11 @@ title: Tšupiso ea WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Tshupiso ya WP-CLI
+# Tshupiso ya WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent e tlisa lelapa la taelo la `wp gratis-ai-agent` bakeng sa ho etsa benchmark ya agent, ho laola bokgoni, le ho botsa boemo ba agent ho tswa moleng wa ditaelo. Ditaelo tsohle di hloka WP-CLI 2.0 kapa ho feta.
 
-## Ho kenya
+## Ho kenya {#installation}
 
 Ditaelo tsa WP-CLI di ngodiswa ka boiketsetso ha plugin e sebetsa. Netefatsa ka:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 E tsamaisa sehlopha sa benchmark sa Bokgoni ba Agent — pokello ya dipotso tse rarahaneng, tsa mehato e mengata tse sebedisang bokgoni bohle bo fumanehang. Sebedisa sena ho lekola tshebetso ya model, ho bapisa bafani ba AI, kapa ho netefatsa diphuthelwana tsa bokgoni pele o di kenya tlhahisong.
 
-### Kakaretso
+### Kakaretso {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Dikgetho
+### Dikgetho {#options}
 
 | Kgetho | Tlhaloso |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Sebopeho sa tlhahiso: `table` (ya kamehla), `json`, `csv` |
 | `--save` | Boloka diphetho tsa benchmark ho database bakeng sa papiso ya nalane |
 
-### Mehlala
+### Mehlala {#examples}
 
 Matha sehlopha sohle sa benchmark ka mofani le model tsa hona jwale:
 
@@ -57,7 +57,7 @@ Matha kgahlanong le model e itseng mme o boloke diphetho:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Tlhahiso
+### Tlhahiso {#output}
 
 Benchmark e hlahisa mola o le mong bakeng sa potso ka nngwe ka dikholomo tse latelang:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Dipotso tsa Benchmark
+### Dipotso tsa Benchmark {#benchmark-questions}
 
 Sehlopha sa kamehla se kenyelletsa:
 
@@ -95,11 +95,11 @@ Dipotso tse eketsehileng di ka ngodiswa ka filtara ya `gratis_ai_agent_benchmark
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 E laola bokgoni bo kentsweng le diphuthelwana tsa bokgoni.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 E thathamisa bokgoni bohle bo ngodisitsweng, mohlodi wa bona (core kapa pack), le boemo ba bona ba hona jwale.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 E jarolla mme e kenya tshebetsong sephuthelwana sa bokgoni ho tswa registry.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 E thibela bokgoni bo itseng ntle le ho tlosa pack. E molemo bakeng sa ho lekanyetsa boholo ba tshebetso ya agent ho site e itseng.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 E bulela hape bokgoni bo neng bo thibetswe pejana.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 E bontsha tlhophiso ya agent ya hona jwale le boemo ba kgokahano.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 E bontsha mosebetsi wa moraorao wa agent ho tswa debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 E seta botjha boemo ba moemedi: e hlakola CSS e kentsoeng, e tlosa CPTs le taxonomies tse ngodisitsweng ke moemedi, e seta botjha ditaele tsa lefatshe lohle, mme e qhala polokelo ya nakoana ya dikgetho tsa moemedi. Ha e tlose keketso kapa disetting tsa yona.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Dikhoutu tsa ho tswa
+## Dikhoutu tsa ho tswa {#exit-codes}
 
 Ditaelo tsohle di tswa ka `0` ha di atlehile. Dikhoutu tsa ho tswa tseo e seng zero:
 

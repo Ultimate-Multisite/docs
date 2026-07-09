@@ -4,11 +4,11 @@ title: Filtrilo - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filtrilo: wu_username_from_email
+# Filtrilo: wu_username_from_email {#filter-wuusernamefromemail}
 
 Filtru novan klientan uzantnomon.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtru novan klientan uzantnomon.
 | $new_user_args | `array` | Tabelo de argumentoj de nova uzanto, eble inkluzive de antaŭnomoj kaj familinomoj. |
 | $suffix | `string` | Aldonu ĉenon al uzantnomo por fari ĝin unika. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) ĉe linio 516

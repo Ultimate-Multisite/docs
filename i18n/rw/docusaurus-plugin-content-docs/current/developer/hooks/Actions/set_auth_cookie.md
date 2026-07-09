@@ -4,11 +4,11 @@ title: Igikorwa - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Igikorwa: set_auth_cookie
+# Igikorwa: set_auth_cookie {#action-setauthcookie}
 
 Kibaho ako kanya mbere y’uko kuki y’iyemeza mwirondoro ishyirwaho.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Kibaho ako kanya mbere y’uko kuki y’iyemeza mwirondoro ishyirwaho.
 | $scheme | `string` | Uburyo bw’iyemeza mwirondoro. Indangagaciro zirimo 'auth' cyangwa 'secure_auth'. |
 | $token | `string` | Token y’umukoresha y’icyiciro ikoreshwa kuri iyi kuki. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Inkomoko
+### Inkomoko {#source}
 
 Bisobanuwe muri [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ku murongo wa 124

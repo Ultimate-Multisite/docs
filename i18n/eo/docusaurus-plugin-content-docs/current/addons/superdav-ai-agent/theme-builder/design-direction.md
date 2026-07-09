@@ -3,17 +3,17 @@ title: Dezajna direkto
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dezajna Direkto
+# Dezajna Direkto {#design-direction}
 
 La paŝo **Dezajna Direkto** permesas al vi revizii, rafini kaj finpretigi la vidan dezajnon de via theme antaŭ ol Theme Builder generas la kompletan theme.
 
-## Superrigardo
+## Superrigardo {#overview}
 
 Post kompletigo de la Malkovra Intervjuo, Theme Builder prezentas vian dezajnan direkton kun **antaŭvida bildigo por labortablo kaj poŝtelefono**. Tio permesas al vi vidi precize kiel via dezajno aspektos sur malsamaj aparatoj antaŭ ol vi devontiĝas al la theme.
 
-## Komponantoj de Dezajna Direkto
+## Komponantoj de Dezajna Direkto {#design-direction-components}
 
-### 1. Kolora Paletro
+### 1. Kolora Paletro {#1-color-palette}
 
 La kolorskemo de via theme, inkluzive de:
 
@@ -23,7 +23,7 @@ La kolorskemo de via theme, inkluzive de:
 - **Neŭtralaj koloroj** — grizoj kaj blankoj por fonoj kaj teksto
 - **Teksta koloro** — ĉefa tekstokoloro por legebleco
 
-### 2. Tipografio
+### 2. Tipografio {#2-typography}
 
 Tiparelektoj por:
 
@@ -33,14 +33,14 @@ Tiparelektoj por:
 - **Linialteco** — interspaco inter linioj por legebleco
 - **Tiparpezoj** — grasaj, regulaj kaj malpezaj variaĵoj
 
-### 3. Aranĝo kaj Interspacado
+### 3. Aranĝo kaj Interspacado {#3-layout-and-spacing}
 
 - **Uja larĝo** — maksimuma larĝo por enhavo
 - **Internaj kaj eksteraj marĝenoj** — interspaco ĉirkaŭ elementoj
 - **Kradsistemo** — kolumna aranĝo por respondema dezajno
 - **Komponenta interspacado** — distanco inter UI-elementoj
 
-### 4. Vidaj Elementoj
+### 4. Vidaj Elementoj {#4-visual-elements}
 
 - **Butonaj stiloj** — ĉefaj, duarangaj kaj triarangaj butonaj dezajnoj
 - **Kartaj dezajnoj** — aranĝoj por enhavoblokoj
@@ -48,9 +48,9 @@ Tiparelektoj por:
 - **Randoj kaj ombroj** — subtila vida profundo
 - **Ŝvebaj efikoj** — interaga statostilado
 
-## Antaŭvida Bildigo
+## Antaŭvida Bildigo {#preview-rendering}
 
-### Labortabla Antaŭvido
+### Labortabla Antaŭvido {#desktop-preview}
 
 La labortabla antaŭvido montras vian dezajnon je plena larĝo (tipe 1200px aŭ pli larĝa):
 
@@ -59,7 +59,7 @@ La labortabla antaŭvido montras vian dezajnon je plena larĝo (tipe 1200px aŭ 
 - Granda tipografio kaj interspacado
 - Ĉiuj vidaj elementoj je plena grandeco
 
-### Poŝtelefona Antaŭvido
+### Poŝtelefona Antaŭvido {#mobile-preview}
 
 La poŝtelefona antaŭvido montras vian dezajnon je poŝtelefona larĝo (tipe 375px):
 
@@ -68,7 +68,7 @@ La poŝtelefona antaŭvido montras vian dezajnon je poŝtelefona larĝo (tipe 37
 - Alĝustigita tipografio kaj interspacado
 - Tuŝ-amikecaj butongrandoj
 
-### Respondemaj Rompopunktoj
+### Respondemaj Rompopunktoj {#responsive-breakpoints}
 
 Theme Builder bildigas antaŭvidojn ĉe ĉi tiuj rompopunktoj:
 
@@ -79,9 +79,9 @@ Theme Builder bildigas antaŭvidojn ĉe ĉi tiuj rompopunktoj:
 | **Labortablo** | 1200px | Plenlarĝa labortablo |
 | **Granda Labortablo** | 1920px | Ultra-larĝa ekrano |
 
-## Rafini Vian Dezajnon
+## Rafini Vian Dezajnon {#refining-your-design}
 
-### Fari Alĝustigojn
+### Fari Alĝustigojn {#making-adjustments}
 
 Vi povas rafini vian dezajnan direkton per:
 
@@ -91,7 +91,7 @@ Vi povas rafini vian dezajnan direkton per:
 4. **Ĝisdatigi aranĝon** — ŝanĝu ujajn larĝojn kaj kradkolumnojn
 5. **Agordi elementojn** — modifu butonajn stilojn, kartajn dezajnojn, ktp.
 
-### Antaŭvidaj Ĝisdatigoj
+### Antaŭvidaj Ĝisdatigoj {#preview-updates}
 
 Ŝanĝoj speguliĝas en reala tempo:
 
@@ -100,7 +100,7 @@ Vi povas rafini vian dezajnan direkton per:
 - Ĉiuj respondemaj rompopunktoj estas ĝisdatigitaj
 - Vi povas ŝanĝi inter antaŭvidoj por kontroli ŝanĝojn
 
-### Kompara Vido
+### Kompara Vido {#comparison-view}
 
 Komparu vian dezajnan direkton kun:
 
@@ -108,7 +108,7 @@ Komparu vian dezajnan direkton kun:
 - **Konkurantaj dezajnoj** — komparu kun inspiraj sites
 - **Antaŭaj versioj** — revenigu pli fruajn dezajnajn direktojn
 
-## Aprobo de Dezajna Direkto
+## Aprobo de Dezajna Direkto {#design-direction-approval}
 
 Kiam vi estas kontenta pri via dezajno:
 
@@ -118,7 +118,7 @@ Kiam vi estas kontenta pri via dezajno:
 4. **Konfirmu aranĝon** — kontrolu interspacadon kaj vicigon
 5. **Aprobu dezajnon** — daŭrigu al theme-generado
 
-## Sekvaj Paŝoj
+## Sekvaj Paŝoj {#next-steps}
 
 Post aprobo de via dezajna direkto:
 
@@ -127,7 +127,7 @@ Post aprobo de via dezajna direkto:
 3. Vi povas plu agordi uzante la WordPress-agordilon
 4. Daŭrigu al [Gastigaj Menuoj](./hospitality-menus.md) aŭ aliaj funkcioj
 
-## Bonaj Praktikoj
+## Bonaj Praktikoj {#best-practices}
 
 - **Testu sur realaj aparatoj** — uzu realajn telefonojn kaj tabulkomputilojn se eblas
 - **Kontrolu legeblecon** — certigu ke teksto estas legebla ĉe ĉiuj grandoj
@@ -135,30 +135,30 @@ Post aprobo de via dezajna direkto:
 - **Konsideru rendimenton** — optimumigu bildojn kaj tiparojn por rapideco
 - **Planu por enhavo** — certigu ke aranĝo funkcias kun via reala enhavo
 
-## Problemsolvado
+## Problemsolvado {#troubleshooting}
 
-### Antaŭvido Ne Ĝisdatiĝas
+### Antaŭvido Ne Ĝisdatiĝas {#preview-not-updating}
 
 - Refreŝigu la paĝon
 - Malplenigu la retumilan kaŝmemoron
 - Provu malsaman retumilon
 - Kontrolu interretan konekton
 
-### Koloroj Aspektas Malsame
+### Koloroj Aspektas Malsame {#colors-look-different}
 
 - Kontrolu ekranajn koloragordojn
 - Provu sur malsamaj aparatoj
 - Kontrolu kolorkontraston per alireblecaj iloj
 - Konsideru simulilojn de kolorblindeco
 
-### Tipografiaj Problemoj
+### Tipografiaj Problemoj {#typography-issues}
 
 - Kontrolu ke tipardosieroj ŝargiĝas
 - Kontrolu tipargrandon ĉe malsamaj rompopunktoj
 - Testu kun reala enhavo
 - Konsideru linilongon por legebleco
 
-## Rilata Dokumentaro
+## Rilata Dokumentaro {#related-documentation}
 
 - [Malkovra Intervjuo](./discovery-interview.md) — kolektu dezajnajn informojn
 - [Gastigaj Menuoj](./hospitality-menus.md) — kreu strukturitajn menuopaĝojn

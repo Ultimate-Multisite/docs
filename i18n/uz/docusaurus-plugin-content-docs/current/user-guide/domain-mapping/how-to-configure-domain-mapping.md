@@ -3,17 +3,17 @@ title: Domen xaritalashni qanday sozlash mumkin
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domen xaritalashni qanday sozlash kerak (v2)
+# Domen xaritalashni qanday sozlash kerak (v2) {#how-to-configure-domain-mapping-v2}
 
 _**MUHIM ESLATMA: Ushbu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
 
 Premium tarmoqning eng kuchli xususiyatlaridan biri — mijozlarimizga o‘z saytlariga yuqori darajali domen ulash imkoniyatini berishdir. Axir, qaysi biri professionalroq ko‘rinadi: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) yoki [_**joesbikeshop.com**_](http://joesbikeshop.com)? Shu sababli Ultimate Multisite bu xususiyatni uchinchi tomon pluginlaridan foydalanish zaruratisiz, ichki tarzda taqdim etadi.
 
-## Domen xaritalash nima?
+## Domen xaritalash nima? {#whats-domain-mapping}
 
 Nomidan ko‘rinib turibdiki, domen xaritalash — Ultimate Multisite tomonidan taqdim etiladigan imkoniyat bo‘lib, maxsus domen uchun kelgan so‘rovni qabul qiladi va ushbu so‘rovni tarmoqdagi aynan shu domen ulangan mos saytga yo‘naltiradi.
 
-### Ultimate Multisite tarmog‘ingizda domen xaritalashni qanday sozlash kerak
+### Ultimate Multisite tarmog‘ingizda domen xaritalashni qanday sozlash kerak {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domen xaritalash ishlashi uchun siz tomondan ba’zi sozlashlar talab etiladi. Yaxshiyamki, Ultimate Multisite murakkab ishlarni siz uchun avtomatlashtiradi, shunda talablarni oson bajarishingiz mumkin.
 
@@ -45,7 +45,7 @@ Ammo tarmog‘ingizdagi quyi saytlardan biriga maxsus domenni xaritalashni boshl
 
 ###
 
-### Domen DNS sozlamalari to‘g‘ri sozlanganiga ishonch hosil qilish
+### Domen DNS sozlamalari to‘g‘ri sozlanganiga ishonch hosil qilish {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Xaritalash ishlashi uchun xaritalashni rejalashtirayotgan domeningiz tarmog‘ingizning IP manziliga yo‘naltirilganiga ishonch hosil qilishingiz kerak. E’tibor bering, sizga tarmoq IP manzili kerak — Ultimate Multisite o‘rnatilgan domenning IP manzili — xaritalamoqchi bo‘lgan maxsus domenning IP manzili emas. Muayyan domenning IP manzilini qidirish uchun, masalan, [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) saytiga kirishni tavsiya qilamiz.
 
@@ -55,7 +55,7 @@ Agar buni ishlatishda qiyinchilikka duch kelsangiz, **domen registratoringiz qo�
 
 Agar mijozlaringizga o‘z domenlarini xaritalashga ruxsat berishni rejalashtirsangiz, ular bu qismdagi ishni o‘zlari bajarishlari kerak bo‘ladi. Agar ular A Record yarata olmasa, ularni o‘z registratorining qo‘llab-quvvatlash tizimiga yo‘naltiring.
 
-### Maxsus domen nomini Super Admin sifatida xaritalash
+### Maxsus domen nomini Super Admin sifatida xaritalash {#mapping-custom-domain-name-as-super-admin}
 
 Tarmog‘ingizda super admin sifatida tizimga kirganingizda, **Ultimate Multisite > Domenlar** bo‘limiga o‘tib, maxsus domen nomlarini osongina qo‘shishingiz va boshqarishingiz mumkin.
 
@@ -93,7 +93,7 @@ Agar domain nomini bossangiz, uning ichida ayrim parametrlarni ko‘rishingiz mu
 
 **Is Secure?:** Ultimate Multisite domainni yoqishdan oldin unda SSL sertifikati bor-yo‘qligini tekshirsa ham, domainni SSL sertifikati bilan yoki usiz yuklashni qo‘lda tanlashingiz mumkin. E’tibor bering, agar website’da SSL sertifikati bo‘lmasa va siz uni SSL bilan majburan yuklashga urinsangiz, xatolar yuzaga kelishi mumkin.
 
-### Maxsus domain nomini Subsite foydalanuvchisi sifatida xaritalash
+### Maxsus domain nomini Subsite foydalanuvchisi sifatida xaritalash {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite administratorlari ham o‘z subsite admin dashboardidan maxsus domain nomlarini xaritalashi mumkin.
 
@@ -121,7 +121,7 @@ Keyin foydalanuvchi **Next Step** tugmasini bosib, maxsus domain nomini qo‘shi
 
 **Add Domain**ni bosish maxsus domainning DNS ma’lumotlarini tekshirish va olish jarayonini boshlaydi.
 
-### Domain sinxronlash haqida
+### Domain sinxronlash haqida {#about-domain-syncing}
 
 Domain sinxronlash — bu **domain mapping ishlashi uchun** Ultimate Multisite maxsus domain nomini hosting accountingizga add-on domain sifatida qo‘shadigan jarayon.
 

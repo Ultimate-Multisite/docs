@@ -4,11 +4,11 @@ title: Sefa - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Sefa: wu_country_get_administrative_division_name
+# Sefa: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Inodzosa zita rakanaka rezvikamu zveutongi hwenyika.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Inodzosa zita rakanaka rezvikamu zveutongi hwenyika.
 | $ucwords | `bool` | kana tichiisa mazwi mumavara makuru. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance yekirasi yazvino. |
 
-### Kubva
+### Kubva {#since}
 
 - 2.0.11
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) pamutsetse 250
 
 
-## Zvinodzosa
+## Zvinodzosa {#returns}
 Zita rechikamu rakagadziridzwa.

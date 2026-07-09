@@ -3,7 +3,7 @@ title: Rexistro de cambios de Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Rexistro de cambios de Mailchimp
+# Rexistro de cambios de Mailchimp {#mailchimp-changelog}
 
 Versión: 1.1.1 - Publicada o 2025-09-28
 

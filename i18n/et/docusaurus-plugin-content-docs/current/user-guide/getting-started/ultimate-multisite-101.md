@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite onab WordPress plugin võimaldab teil klientidele pakutada WaaS või Websites as a Service. Enne, kui me seda uurime ja teame, kuidas Ultimate Multisite teie liiketoimust ja klientidele aitab, peame saada põhjalikku algset teadmisi.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Me on enamik meil tuttavad standard WordPress installatsioonist. Või luute selle oma hoostavere kontrollplaani abil või, kui olete kurjatus, seadistage uue veebiserveri ja database, laadige core failid ja alustage installimise protsessi.
 
@@ -19,13 +19,13 @@ Omaduses WordPress pakub funktsiooni, mille nimi on lihtsalt ‘Multisite’, mi
 
 Lõpulemades võib WordPress multisite mõelda nagu see: Ülikool pakub ühe WordPress installatsiooni, kuid iga fakultet haldab oma WordPress side.
 
-### Võrk
+### Võrk {#the-network}
 
 WordPressi kontekstis multisite-võrk on selline, kus saab ühtest dashboardist hallata mitmeid alatesiteid. Kuigi multisite-võrku loomine erineb hoastajate vahel, lõplik tulemus on tavaliselt mõned lisid direktiive `wp-config.php` failis, et WordPress teadaaks, et see operatsioonivõrku režiimis.
 
 Multisite-võrku ja eraldi asitud WordPress-installaatsiooni vahel on mitu erinevust, mida me lühidalt käsitsemine oma.
 
-#### Subdomaain vs. Subdirektorium
+#### Subdomaain vs. Subdirektorium {#subdomain-vs-subdirectory}
 
 Üks kõige kiiremini teha vaja otsus on, kas multisite-installatsioon toimib `subdirectory` (subdirektorium) või `subdomain` (subdomaain) abil. Ultimate Multisite töötab mõlemaga samuti hästi, kuid konfiguratsioonide vahel on arhitektuuril mõned erinevused.
 
@@ -41,7 +41,7 @@ Subdomeenide konfiguratsioonil wildcard SSL-sertifikaadi kasutamine on üks kõi
 
 Kuigi on olemas teisi valikuid, need on sageli piiratud lahendusega ja kasutusealust ja nõuavad lisakogustust ja arvestamist sobisuse osas.
 
-#### Pluginid ja Teemad
+#### Pluginid ja Teemad {#plugins-and-themes}
 
 Mis WordPress annab ka võtab ära, vähemalt kliendi perspektiivis. Üksikuline WordPress-installatsioonil, kui veebilehtadministraator paigaldab halva pluginiga või ei hoida installatsiooni uuendatud, ainus levinud ja kahjustatud osaliku on ta ise. Kuid kui site administrator paigaldab halva pluginiga multisite-installatsioonil, siis kahjustatakse võrku kõikidele paigaldatud sildile.
 
@@ -49,7 +49,7 @@ Selle tõttu, kui konfiguratsioon on multisite WordPress'ina seadustatud, eemald
 
 Seltses osas vastutab võrkoadministrator selle eest, et asutada pluginid ja teema võrkule ja delegereerida lubande, et neid pluginid ja teema kasutada võrkuite sidetel. Site administratorid ei saa asutada pluginid ja teema ega külastada sellise pluginide ja teemad, mis pole neile omandatud nende site jaoks.
 
-#### Kasutajad ja administratorid
+#### Kasutajad ja administratorid {#users-and-administrators}
 
 WordPress Multisite'is on kõik võrkuid sidetud sama databasele ning seega on neid kasutajad, rollid ja võimalused samad. Parimelt mõelda on nii, et kõik kasutajad kuuluvad võrkuge, mitte mingile erispärasele sitele.
 
@@ -61,13 +61,13 @@ Uusalt kinnitades ebat kõnele edastatud väidet, kuigi kasutajakontid näivad o
 
 Kuigi ettevõtte süsteemides ei ole see võõriline konsept, kuid kasutajate registreimise ja autentimise ühtine allik on sageli keeruline mõista neile, kes on tutud eraldi asutatud WordPressi installatsioonidega, kus kasutaja administreerimine on mõnikord lihtsam.
 
-#### Media
+#### Media {#media}
 
 Kui võrku sidetel (WordPress Multisite) jagatakse ühtine database, siis säilitatakse mediafailide jaoks eraldi teeadused failisüsteemis.
 
 Standardne WordPress'i paikka (wp-content/uploads) jääb samana; kuid selle teadaus muutub reflectiks võrku sidet unikaalse ID kohta. Järgnevalt näidab võrku sidet mediafailid kui wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Me ole enne maininud, et _subdomain_ konfiguratsioon on eristatud eeliseid _subdirectory_ konfiguratsioonist ja siin on selle kohta: teeadused.
 
@@ -81,7 +81,7 @@ _Subdomain_ konfiguratsioonil see tegevus ei ole vajalik, kuna iga võrku site o
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Statilised lehed
+#### Statilised lehed {#static-pages}
 
 In _subdirectory_ konfiguratsioonides võib nimekonfliktide võimalus lahendada vastata ka staatikumistele lehtele, kuna pealplatil ja võrkulehtel on sama teel.
 
@@ -91,7 +91,7 @@ See vältida, WordPress pakub viisid, kuidas mõnda lehtnimeid must-listida, et 
 
 _Subdomain_ konfiguratsioonides on nimekonfliktide võimalusi vähendatud, kuna _subdomain_ on ainulaadne võrkulehtile ja ei ole mingi seos pealplatiga.
 
-### Registreerimine
+### Registreerimine {#registration}
 
 WordPress Multisite võrkuasetustes on saadaval mitu uut kasutaja registreimise valikku, mis võimaldab uus- ja olemasoleva kasutajatele lehtid luua.
 
@@ -109,7 +109,7 @@ Seliselt, kui kasutaja logib sisse, logib ta võrgu sisse ja lõpuks on logitud 
 
 Kui aga multisite'i mõeldud luonte ja eesmärgi oli pakutada erinevaid võrku site, millel ei ole vahelisu seoses, on lähes alati vajalik kasutada välise või lisaplainuse pluginade modifitseerimiseks kasutaja rollide.
 
-### Domeen ja SSL
+### Domeen ja SSL {#domain-and-ssl}
 
 Räägime WordPress Multisite installatsioonist, mis lähedalt meid vältib – Wordpress.com. See on kõige laiem näide WordPress multisite'ist ja demonstreerib selle laiaid võimet, mida saab kohandada ja vormida eesmärgi täitmiseks.
 
@@ -123,11 +123,11 @@ Verkkoadministratorille tämä tuo lisämonimutkaisuutta sekä domeenimenohjauks
 
 Tämä tarkoittaa sitä, että vaikka WordPress Multisite tarjoaa myös tapa mappata [www.anotherdomain.com](http://www.anotherdomain.com) 'site1':een, verkkoadministratorilla jää haaste ulkoisten DNS-tietojen hallinnan ja SSL-sertifikaattien toteuttamisen osalta.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Ymmärrettäessä erot yksittäisen WordPress-asennuksen ja Multisite-asennuksen välillä, tarkastellaanpa, miten Ultimate Multisite on paras väline verkkosivustojen palveluna (Website as a Service, WaaS) tarjoamiseen.
 
-### Johdanto
+### Johdanto {#introduction}
 
 Ultimate Multisite on Swiss Army Knife -tyyppinen työkalu sinulle, kun kyseessä on verkkosivuston palvelun (WaaS) luominen. Ajattele Wix.comia, Squarespacea ja WordPress.comia, ja mieti sitten oman palvelusi omistamista.
 
@@ -135,9 +135,9 @@ Taustalla Ultimate Multisite käyttää WordPress Multisite -järjestelmää, mu
 
 Seuraavissa osioissa tarkastellaan joitakin yleisiä käyttökohteita ja niihin liittyviä huomioita, jotka tarvitaan näiden tapauksien tukemiseen.
 
-### Käyttötapaukset
+### Käyttötapaukset {#use-cases}
 
-#### Tapaus 1: Toimisto/Agentti
+#### Tapaus 1: Toimisto/Agentti {#case-1-an-agency}
 
 Tyypillisesti toimiston ydinosa on verkkosivustojen suunnittelu, jossa on esimerkiksi niiden isännöinti tai markkinointi listattuna lisäpalveluina.
 
@@ -163,7 +163,7 @@ Temad pakuvad samasandnud funktsioone, mis võimaldab eriti teemad aktivere või
 
 Agentid saavad Ultimate Multisite abil rahuliku tunnetuse: see võimaldab neid teha seda, mida nad kõige paremini teevad – eriti veebileid disainida.
 
-#### Kasus 2: Niishusandja
+#### Kasus 2: Niishusandja {#case-2-niche-provider}
 
 On vana lause, mis ütleb: "tee üks asja ja tee see hästi". Paljud spetsialistide jaoks tähendab see üht operaatori või teenuse around ühe peamise idee loomist.
 
@@ -177,7 +177,7 @@ Niishise veebilete ja teenuste pakutjatele see annab ühtlaikul eeliseuse: võim
 
 Nõu alates needi sõltuvalt nõuandestest võib sobida nii _subdirectory_ kui ka _subdomain_ konfiguratsioon, mille korral arhitektuurivalik oleks lihtne SSL-tüüdor _subdirektoriumidele_ või laia SSL-tüüdor _subdomeenidele_.
 
-#### Järjelus 3: WordPress veebihosting
+#### Järjelus 3: WordPress veebihosting {#case-3-wordpress-web-hosting}
 
 WordPressi sissejuhatamise ja hoiania on mitu meetod, kuid harva on see nii lihtne kui lihtsalt pakkuda klientile valmis paigaldatud versioniga WordPress. See on seotud sellega, et vaja koos teha mitmeid otsuseid ja arvestusi, et pakkuda tähendust kvalifitseeritud teenust.
 
@@ -189,11 +189,11 @@ Arengutajatele, kes soovivad Ultimate Multisitega integreeruda, pakub lahendus k
 
 Välja poolt erinevate väljaspoolsete pluginate ja lisentluste sõltumata pakub Ultimate Multisite funktsioonide täisust ja võrdelise lahenduse Wixi, Squarespace'i, WordPress.comi ja teiste jaoks.
 
-### Arhitektuurilised arvestused
+### Arhitektuurilised arvestused {#architecture-considerations}
 
 Kuigi see ei ole põhjalik juhend, järgmised punktid võivad olla suunakeskkondiks Ultimate Multisite paigaldamise jaoks õigete tehnoloogiate valimiseks.
 
-#### Jaotatud vs. Esimlik hoiakirja
+#### Jaotatud vs. Esimlik hoiakirja {#shared-vs-dedicated-hosting}
 
 Lõiklikult mitte kõik hoostingukogud ei ole võrdsed, ja mõned kasutavad äärmiselt kõrge serverdensiteedi. Madalalt hinnatud tarbija pakutajad genereerivad sisse tulvaid maksude abil serverdensiteedi maksimise. Seega võib teie Ultimate Multisite installatsioon olla vaid üks mitmes hing ja samal serveril olevast sajast veebisajadest.
 
@@ -207,7 +207,7 @@ Ultimate Multisite on tunnetud sellega, et see töötab mitme head hoostaja pool
 
 Kõige soodustatud hoostajate nimekirja ja igaühingu täieliku seadistamise juhised leiate Compatible Providers dokumentatsioonist.
 
-#### Jõudluse arutused
+#### Jõudluse arutused {#performance-considerations}
 
 Ultimate Multisite ei ole aeglane rakendus, vaid see on imendavalt kiire. See toimib aga ainult nii hästi kui selle alusel olev rakendus ja infrastruktuur, ning saab kasutada ainult seda, mida see kätte saavad.
 
@@ -225,7 +225,7 @@ Selle tõttu kasutavad enamik võrkuadministratsioonid esile jääva (front-end)
 
 Ultimate Multisite sisaldab sofistikud Cloudflare add-on'i, mis võimaldab võrkuadministratsioonide asetada oma installiatse Cloudflare taha ja kasutada mitte ainult selle kehtivuse süsteemeid, vaid ka DNS-hostingu, SSL-tööcertificateid ja turvalisuse mehnemaid.
 
-#### Kogutused
+#### Kogutused {#backups}
 
 Võis küsimata 50 inimeselt nõu Ultimate Multisite kogutustega ja saada 50 erinevat vastuoluulist kogutuse strateegia kohta. Vastus on: see sõltub sellest, mida sa soovivad.
 
@@ -233,7 +233,7 @@ Mida ongevast probleem on, et tagasisidud on vajalikud varjupidandused ja see on
 
 See osaga jaoks siis arvestame, et varjupidandus on süsteemi oleku koondatud kopija selle hetke staatust, milles varjupidandus käivitati. Ühendades sõnastus: mida saavutamiseks ja mis on teie keskkonnale parim, sõltub see suuresti teie nõuete ja hoostavere võimele neid nõude täitmada. Kuid kõige enam arvestatud järjekordusest (parimest inimlikust kõige vähem inimlikku) pakuvad allpool esitatud valikud mõnda juhendamist.
 
-#### Snapshots (Kujundused)
+#### Snapshots (Kujundused) {#snapshots}
 
 Snapshots on varjupidanduste "kuldne lause", sest need on lihtsad, probleemivabaline (eski soovite taastada) ja lihtsalt toimivad. Neid nõuavad aga teie hoostavere poolt mõnda abi, ja see kasutatakse pääsutult ainult siis, kui teil on VPS (Virtual Private Server) või sarnane. Meie "Compatibel Provider" dokumentatsioonis esitatud mitu pроваidert pakub varjupidandusi, mida ei nõuda võrkorral lisaväälise intervektsiooni ega arvestamist.
 
@@ -241,7 +241,7 @@ Tradits var backupidil failide ja database, aga snapshot pakub kogu diski. See t
 
 Snapshotilt võib hoitja poolt välja võtta lisakulu, kuid see on kindlustuspool.
 
-#### Välised skriptid
+#### Välised skriptid {#external-scripts}
 
 WordPressi ja MySQL ressursside backupide jaoks on ilmselt palju välise skripte ja lahendusi, mis toimisid hästi Ultimate Multisite jaoks, kuna see WordPressi failisüsteemi ja database kasutav plugin on. Seega lahendus, mis backupi teeb WordPressi veebilehe jaoks, katab Ultimate Multisite'i vajadusi piideselt.
 
@@ -249,7 +249,7 @@ Me ei saa üht skripti teise üle soovita, kuid meie üldine nõuanne on teha mi
 
 Pärast seda tuleb märkida, et need skriptid käivit ajal suurendavad süsteemi koormust, mida tuleb arvestada.
 
-#### Pluginid
+#### Pluginid {#plugins}
 
 WordPressis on lähes ebameelne probleem, mida ei saa lahendada pluginiga, ja kui välise skriptide haldamine ei ole teie igas, siis võib plugin olla järgmine parim valik.
 
@@ -257,7 +257,7 @@ Varemõõtlikud (plugins) erinevad võimalustest ja funktsioonidest, kuid elasid
 
 Pluginil valides ettevaatuge, et see toetab multisite-režiimi (multisite aware). Selle toimimise luonnat tõttu võib tegeliku varbukki käivitamise ajal serveril hetke jaoks ületada koormust.
 
-#### Domeen ja SSL
+#### Domeen ja SSL {#domain-and-ssl-1}
 
 Domeenide kasutamist multisite _subdomain_ režiimisega on juba palju discusseeritud. Võimalik lahendus võrku administraatoritele on kasutada wildcard DNS-sisseandmeid (wildcard DNS entries).
 
@@ -281,7 +281,7 @@ Paljudeliselt kasutamiseks Cloudflare on lihtne valik. Klient peab lihtsalt oma 
 
 See allpool tuleb otsida alternatiivseid lahendusi, mis on põhjus sellele, et Ultimate Multisite soovitatakse Compatible Providersi nimekirja. See on seotud sellega, et DNS- ja SSL-seadistamise protsess võib olla keeruline. Kuid Ultimate Multisite'i integreerimise abil see keerukus on palju vähennatud ja protsess on automatiseeritud.
 
-#### Pluginid
+#### Pluginid {#plugins-1}
 
 On väga tõenäoline, et vajad lisaplakette klientidele või võrku sille funktsionaalsuse tagamiseks. Kas kõik pluginid töötavad WordPress Multisite'iga ja Ultimate Multisite'iga? See sõltub sellest, kas.
 

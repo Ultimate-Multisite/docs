@@ -3,13 +3,13 @@ title: Csomag visszaminősítése
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Csomag visszaminősítése (v2)
+# Csomag visszaminősítése (v2) {#downgrading-a-plan-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
 Egy csomag vagy előfizetés visszaminősítése gyakori művelet, amelyet az ügyfeleid elvégezhetnek, ha korlátozott a költségvetésük, vagy úgy döntöttek, hogy nem lesz szükségük sok erőforrásra az alwebhelyük futtatásához.
 
-## Hogyan lehet visszaminősíteni egy csomagot
+## Hogyan lehet visszaminősíteni egy csomagot {#how-to-downgrade-a-plan}
 
 Az ügyfeleid bármikor visszaminősíthetik a csomagjukat úgy, hogy bejelentkeznek az alwebhelyük admin dashboardjába, és az Account oldalukon a **Change** gombra kattintanak.
 
@@ -25,7 +25,7 @@ A folytatáshoz a felhasználónak csak a **Complete Checkout** gombra kell katt
 
 ![Account oldal függőben lévő tagságmódosítási bannerrel](/img/account-page/pending-change.png)
 
-### Mi történik, amikor egy felhasználó visszaminősíti a csomagját
+### Mi történik, amikor egy felhasználó visszaminősíti a csomagját {#what-happens-when-a-user-downgrades-their-plan}
 
 Fontos megjegyezni, hogy a csomag visszaminősítése nem módosítja a felhasználó alwebhelyének meglévő konfigurációját.
 
@@ -37,7 +37,7 @@ A csomagban beállított korlátot meghaladó bejegyzések esetén 3 különböz
 
 ![Network Admin Settings Sites oldal a post-limit-exceeded viselkedési opciókkal](/img/account-page/settings-sites-post-limit.png)
 
-### Mi történik a fizetéssel
+### Mi történik a fizetéssel {#what-happens-to-the-payment}
 
 A 2.0-s verzióban már nincs szükség semmilyen fizetési korrekcióra az időarányos elszámolás tekintetében.
 

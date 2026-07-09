@@ -3,11 +3,11 @@ title: Miðlar fyrir vísarformir á síti-byggingu
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformirnar byggjast
+# Kontaktformirnar byggjast {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 leggur við möguleika að skapa kontaktformir beint úr chat-skynjunni með Site Builder agentinni. Þetta gerir þér kleift að bæta fully vinnandi kontaktformum í hvaða síðu sem þú vilst án þess að koma út úr chatinu.
 
-## Áhersla
+## Áhersla {#overview}
 
 Möguleiki að skapa kontaktformir með Site Builder (`create_contact_form`) þekkir sjálft inn hvar þú hefur nýtt form plugin og skapar kontaktform fyrir notkun þess orðna möguleika. Stöðugt stöðuð form plugins eru:
 
@@ -18,7 +18,7 @@ Möguleiki að skapa kontaktformir með Site Builder (`create_contact_form`) þe
 
 Hjálparinn velur sjálf best tilstaða form plugin á síðunni þinni og skapar kontaktform sem er sérsniðið að þessum plugin.
 
-## Skapandi kontaktform
+## Skapandi kontaktform {#creating-a-contact-form}
 
 Til að skapa kontaktform með Site Builder:
 
@@ -34,7 +34,7 @@ Til að skapa kontaktform með Site Builder:
 
 4. Site Builder mun skapa kontaktforminn og svara með kortlið (shortcode) sem er klár til að innleiða.
 
-## Notkun á kortliði
+## Notkun á kortliði {#using-the-generated-shortcode}
 
 Eftir að Site Builder hafi skafið kontaktforminn, svara hann með kortliði (t.d., `[contact-form-7 id="123"]`). Þú getur:
 
@@ -45,11 +45,11 @@ Eftir að Site Builder hafi skafið kontaktforminn, svara hann með kortliði (t
 
 3. **Brug það í template** — Ef þú ert hönnuð með PHP, geturðu bætt kortkortinu við temaplað.
 
-## Innstillingar á tengslufjöldum (Contact Form)
+## Innstillingar á tengslufjöldum (Contact Form) {#customizing-the-contact-form}
 
 Eftir að Site Builder hefur skipt tengslufjöldum upp, geturðu það innreiðilefnið lengra breytt:
 
-### Gjennom chat-stöðuinn (Chat Interface)
+### Gjennom chat-stöðuinn (Chat Interface) {#via-the-chat-interface}
 
 Spyr Site Builder um að breyta fjöldanum:
 
@@ -57,7 +57,7 @@ Spyr Site Builder um að breyta fjöldanum:
 
 Site Builder mun breyta fjöldanum og svara með uppfærðum kortkortinu.
 
-### Gjennom stjórnarpól (Admin Interface) á fjöldun-þróunarþróunni þinni (Form Plugin)
+### Gjennom stjórnarpól (Admin Interface) á fjöldun-þróunarþróunni þinni (Form Plugin) {#via-the-form-plugins-admin-interface}
 
 Þú getur bráðinn breytt fjöldann beint í innstillingum fjöldun-þróunarþróunni þinni:
 
@@ -65,7 +65,7 @@ Site Builder mun breyta fjöldanum og svara með uppfærðum kortkortinu.
 2. Finndu fjöldann sem Site Builder hefur skipt upp.
 3. Breytingu fältin, valídanreglur og tölvupóstiöflustillingar eins og þú þarft.
 
-## Fjöldun-þróunarþróunir og samræmi (Compatibility)
+## Fjöldun-þróunarþróunir og samræmi (Compatibility) {#form-plugins-and-compatibility}
 
 Site Builder finnur sjálf hvaða fjöldun-þróunarþróun er sett upp á síðuna þinni og notar hana til að skipta tengslufjöldum upp. Ef fleiri fjöldun-þróunarþróunir eru sett upp, prioriserar Site Builder þær í þessu fyrirkomulagi:
 
@@ -76,7 +76,7 @@ Site Builder finnur sjálf hvaða fjöldun-þróunarþróun er sett upp á síð
 
 Ef enginn af þessum þróununum er sett upp, mun Site Builder ráða að setja upp einn áður en hann skiptir tengslufjöldum upp.
 
-## Tölvupóstiöflustillingar (Email Notifications)
+## Tölvupóstiöflustillingar (Email Notifications) {#email-notifications}
 
 Tengslufjöld sem Site Builder hefur skipt upp eru innstilla til að sendast tölvupóstiöflustillingar til síðustjórnans á síðuna af raunni. Þú getur breytt viðtaliöflustillingar og textaöflustillingar:
 
@@ -91,21 +91,21 @@ Fyrir nánari leiðbeiningar, skoða dokumentation fjöldun-þróunarþróunni �
 - [Tilkynningar í Fluent Forms](https://fluentforms.com/docs/)
 - [Tilkynningar í Gravity Forms](https://docs.gravityforms.com/)
 
-## Dæmi um notkun
+## Dæmi um notkun {#example-use-cases}
 
-### Einfaldur tilkynningarskjöðun
+### Einfaldur tilkynningarskjöðun {#simple-contact-form}
 
 > "Skapa einfalt tilkynningarskjöðun með fólksnafn, tölvuinn og texta."
 
-### Flurstegs skjöðun
+### Flurstegs skjöðun {#multi-step-form}
 
 > "Skapa tilkynningarskjöðun sem hefur fyrsta skrefið fyrir upplýsingar um tengilblöndun og sekunda skrefið fyrir textann og nauðsynlegri tengilblöndun."
 
-### Skjöðun með villandi logikku
+### Skjöðun með villandi logikku {#form-with-conditional-logic}
 
 > "Skapa tilkynningarskjöðun sem sýnir ólíka feldi eftir valum notandans í dropdowni."
 
-### Skjöðun með laðningu skjalas
+### Skjöðun með laðningu skjalas {#form-with-file-upload}
 
 > "Skapa tilkynningarskjöðun sem leyfir notendum að laða upp skjal eða viðbót."
 

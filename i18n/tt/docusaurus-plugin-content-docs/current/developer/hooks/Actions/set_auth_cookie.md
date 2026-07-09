@@ -4,11 +4,11 @@ title: Гамәл - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Гамәл: set_auth_cookie
+# Гамәл: set_auth_cookie {#action-setauthcookie}
 
 Аутентификация cookie урнаштырылыр алдыннан ук эшли.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | Аутентификация схемасы. Кыйммәтләргә 'auth' яки 'secure_auth' керә. |
 | $token | `string` | Бу cookie өчен кулланырга кулланучының сессия токены. |
 
-### Кайчаннан
+### Кайчаннан {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Чыганак
+### Чыганак {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) эчендә 124 нче юлда билгеләнгән

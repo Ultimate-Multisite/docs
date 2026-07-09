@@ -3,13 +3,13 @@ title: Hagaha Isdhexgalka
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Hagaha Isku-xirka
+# Hagaha Isku-xirka {#integration-guide}
 
 Hagahani wuxuu daboolayaa qaababka isku-xirka ee caamka ah ee Ultimate Multisite, oo ay ku jiraan ku xidhidda adeegyo dibadeed, dhisidda albaabbo lacag-bixin oo gaar ah, iyo maaraynta webhooks.
 
 Kaabayaasha tenant go'doonsan, eeg [Isku-xirka Multi-Tenancy](./multi-tenancy) si aad u hesho hagista sovereign tenant bootstrap, xaqiijinta migration, SSO, iyo teardown.
 
-## Isku-xirka CRM
+## Isku-xirka CRM {#crm-integration}
 
 Isku-dubbarid xogta macaamiisha CRM-kaaga marka macaamiil cusub is-diiwaangeliyaan:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Isku-xirka Analytics
+## Isku-xirka Analytics {#analytics-integration}
 
 La soco dhacdooyinka ganacsi ee muhiimka ah inta lagu jiro wareegga nolosha macaamilka:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Tallaabooyinka Xiga
+## Tallaabooyinka Xiga {#next-steps}
 
 - [Horumarinta Gateway Gaar ah](./custom-gateway) — Dhis payment gateway kuu gaar ah
 - [Maaraynta Webhook](./webhooks) — Abuur webhook endpoints gaar ah

@@ -3,11 +3,11 @@ title: Umakhi we-Plugin & Indawo yovavanyo
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Umakhi we-Plugin & Sandbox
+# Umakhi we-Plugin & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 yazisa **iNkqubo yoMmakhi we-Plugin & Sandbox**, evumela umncedisi we-AI ukuba enze, asebenzise, aze alawule ii-plugin ze-WordPress kwinethiwekhi yakho — konke oko kusenziwa kwindawo ekhuselekileyo, eyahluliweyo ye-sandbox.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Umakhi we-Plugin wenza ukuba umncedisi we-AI akwazi ukubhala ii-plugin ze-WordPress ezenzelwe wena ngokuphendula kwizicelo zolwimi lwendalo. Ii-plugin ezenziweyo ziyaqinisekiswa, zigcinwe, zize zenziwe zisebenze ngaphakathi komaleko we-sandbox ngaphambi kokuba zichaphazele ukusebenza kwesayithi ephilayo.
 
@@ -17,7 +17,7 @@ Iimeko zokusetyenziswa ziquka:
 - Ukwenza iiprototype zeempawu ezifuna ii-hook ze-WordPress okanye iintlobo zeeposti ezenzelwe wena.
 - Ukwenza izikripthi ezimfutshane zokuzenzekelayo kwimisebenzi yeqela.
 
-## Ukwenza i-Plugin nge-AI
+## Ukwenza i-Plugin nge-AI {#generating-a-plugin-via-ai}
 
 Ukwenza i-plugin, vula ujongano lwencoko lwe-Gratis AI Agent uze uchaze into oyifunayo. Umzekelo:
 
@@ -32,7 +32,7 @@ I-AI iya:
 
 Ungayiphucula iziphumo ngokulandela kuloo msonto wencoko mnye ngaphambi kokuyenza isebenze.
 
-## Ukwenza isebenze kwi-Sandbox
+## Ukwenza isebenze kwi-Sandbox {#sandbox-activation}
 
 Ukwenza i-plugin eyenziweyo isebenze kwi-sandbox kwahlukile ekuyenziseni kwinethiwekhi ephilayo. I-sandbox:
 
@@ -48,7 +48,7 @@ Ukwenza i-plugin isebenze kwi-sandbox, cofa iqhosha elithi **Yenza isebenze kwi-
 
 Umyalezo wesimo uqinisekisa ukuba ukwenza isebenze kuphumelele okanye kusilele. Xa kusilela, ilog yempazamo iboniswa kumsonto wencoko.
 
-## Ukulawula ii-Plugin ezenziweyo
+## Ukulawula ii-Plugin ezenziweyo {#managing-generated-plugins}
 
 Ii-plugin ezenziweyo zidweliswe ku-**Gratis AI Agent → Umakhi we-Plugin → Lawula ii-Plugin**. Kwesi sikrini unako:
 
@@ -64,7 +64,7 @@ Ii-plugin ezenziweyo zidweliswe ku-**Gratis AI Agent → Umakhi we-Plugin → La
 **Faka kwinethiwekhi** kuhambisa i-plugin eyenziweyo kwi-WordPress multisite yakho ephilayo. Phonononga ikhowudi ye-plugin ngaphambi kokuqhubeka. Gratis AI Agent iya kucela uqinisekiso ngaphambi kokugqiba ukufaka okuphilayo.
 :::
 
-## Ukufaka i-Plugin eyenziweyo kwiNethiwekhi
+## Ukufaka i-Plugin eyenziweyo kwiNethiwekhi {#installing-a-generated-plugin-on-the-network}
 
 Xa wanelisekile yi-plugin ekwi-sandbox, ungayifaka kwinethiwekhi ephilayo:
 
@@ -78,7 +78,7 @@ Kungenjalo, sebenzisa umyalelo we-slash kujongano lwencoko:
 /install-plugin <plugin-slug>
 ```
 
-## Uhlaziyo lwee-Plugin
+## Uhlaziyo lwee-Plugin {#plugin-updates}
 
 Ukuhlaziya i-plugin eyenziweyo, chaza utshintsho kumncedisi we-AI kwincoko entsha:
 
@@ -86,7 +86,7 @@ Ukuhlaziya i-plugin eyenziweyo, chaza utshintsho kumncedisi we-AI kwincoko entsh
 
 I-AI ivelisa inguqulelo entsha, ebonakala kwi-sandbox ecaleni kwenguqulelo yangoku. Uphonononga umahluko uze uqinisekise ngaphambi kokuba uhlaziyo lusetyenziswe.
 
-## Udibaniso lwe-HookScanner
+## Udibaniso lwe-HookScanner {#hookscanner-integration}
 
 Umakhi we-Plugin usebenzisa **HookScanner** edityanisiweyo ukuhlalutya ii-hook kunye neefilter ezibhaliswe yi-plugin nganye eyenziweyo. Imveliso ye-HookScanner iboniswa kwimpendulo yencoko kwaye iquka:
 
@@ -96,7 +96,7 @@ Umakhi we-Plugin usebenzisa **HookScanner** edityanisiweyo ukuhlalutya ii-hook k
 
 Oku kukunceda uqonde indlela i-plugin eziphatha ngayo ngaphambi kokuyenza isebenze.
 
-## Izinto zoKhuseleko ekufuneka ziqwalaselwe
+## Izinto zoKhuseleko ekufuneka ziqwalaselwe {#security-considerations}
 
 - Ii-plugin ezenziweyo zigcinwa ngokwahlukileyo kwii-plugin ezifakwe ngesandla kwaye azifikeleleki ngesikrini esiqhelekileyo solawulo lwee-plugin ze-WordPress de uzifake ngokucacileyo kwinethiwekhi.
 - I-sandbox isebenzisa ukuqinisekiswa kwendlela ukuthintela ukuhamba kwiifolda xa kubhalwa iifayile ze-plugin.

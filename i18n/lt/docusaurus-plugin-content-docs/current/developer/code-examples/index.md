@@ -3,11 +3,11 @@ title: Pažangūs kodo pavyzdžiai
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Išplėstiniai kodo pavyzdžiai
+# Išplėstiniai kodo pavyzdžiai {#advanced-code-examples}
 
 Šie pavyzdžiai demonstruoja išplėstinius integracijos modelius su Ultimate Multisite.
 
-## Dinaminės kainodaros variklis
+## Dinaminės kainodaros variklis {#dynamic-pricing-engine}
 
 Taisyklėmis pagrįstas kainodaros variklis, taikantis apimties, lojalumo ir sezonines nuolaidas:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Išplėstinis svetainių parengimas
+## Išplėstinis svetainių parengimas {#advanced-site-provisioning}
 
 Automatiškai konfigūruokite naujas svetaines su įskiepiais, SSL, CDN, atsarginėmis kopijomis ir stebėsena pagal plano funkcijas:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Pasirinktinių apribojimų sistema
+## Pasirinktinių apribojimų sistema {#custom-limitations-system}
 
 Sekite ir užtikrinkite išteklių limitus su naudojimo įspėjimais:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB atominis skaitiklis su `increment_item()`
+## BerlinDB atominis skaitiklis su `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 pridėjo `increment_item()` metodą prie BerlinDB `Query` klasės. Naudokite jį saugiems, atominiams skaitinių stulpelių didinimams atlikti be skaitymo–keitimo–rašymo lenktynių — naudinga skaitikliams, naudojimo kvotoms ir dažnio ribojimo patikroms, kurios vykdomos esant lygiagrečioms užklausoms.
 
-### Metodo signatūra
+### Metodo signatūra {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 pridėjo `increment_item()` metodą prie BerlinDB `Que
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Pagrindinis naudojimas
+### Pagrindinis naudojimas {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API naudojimo stebėjimas pagal narystę
+### API naudojimo stebėjimas pagal narystę {#tracking-api-usage-per-membership}
 
 Praktiškas modelis API dažnio ribojimams pagal narystę užtikrinti:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Kodėl `increment_item()`, o ne `update_item()`
+### Kodėl `increment_item()`, o ne `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Naivus skaitymo–keitimo–rašymo metodas yra nesaugus esant lygiagrečioms užklausoms:
 

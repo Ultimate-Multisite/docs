@@ -3,13 +3,13 @@ title: انضمام جي رهنمائي
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# انٽيگريشن رهنمائي
+# انٽيگريشن رهنمائي {#integration-guide}
 
 هي رهنمائي Ultimate Multisite سان عام انٽيگريشن نمونن کي ڍڪي ٿي، جنهن ۾ ٻاهرين خدمتن سان ڳنڍڻ، ڪسٽم ادائيگي gateways ٺاهڻ، ۽ webhooks سنڀالڻ شامل آهن.
 
 الڳ tenant انفراسٽرڪچر لاءِ، sovereign tenant bootstrap، migration verification، SSO، ۽ teardown رهنمائي لاءِ [Multi-Tenancy Integration](./multi-tenancy) ڏسو.
 
-## CRM انٽيگريشن
+## CRM انٽيگريشن {#crm-integration}
 
 جڏهن نوان گراهڪ سائن اپ ڪن ته گراهڪن جي ڊيٽا پنهنجي CRM سان sync ڪريو:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics انٽيگريشن
+## Analytics انٽيگريشن {#analytics-integration}
 
 گراهڪ جي lifecycle ۾ اهم ڪاروباري واقعن کي track ڪريو:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## ايندڙ قدم
+## ايندڙ قدم {#next-steps}
 
 - [ڪسٽم Gateway ڊولپمينٽ](./custom-gateway) — پنهنجو ادائيگي gateway ٺاهيو
 - [Webhook سنڀالڻ](./webhooks) — ڪسٽم webhook endpoints ٺاهيو

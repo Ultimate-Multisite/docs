@@ -4,11 +4,11 @@ title: ఫిల్టర్ - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 ఒక దేశంలోని ఒక రాష్ట్రానికి సంబంధించిన నగరాల జాబితాను తిరిగి ఇస్తుంది.
 
-## పారామీటర్లు
+## పారామీటర్లు {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | రాష్ట్రానికి సంబంధించిన రెండు అక్షరాల ISO కోడ్. |
 | $current_country | `\WP_Ultimo\Country\Country` | ప్రస్తుత క్లాస్ యొక్క ఉదాహరణ (Instance). |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 Defined in [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) at line 146
 
 
-## Returns
+## Returns {#returns}
 ఫిల్టర్ చేయబడిన రాష్ట్రాల జాబితా.

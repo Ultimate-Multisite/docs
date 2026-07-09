@@ -3,25 +3,25 @@ title: Shigarwar CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Shigarwarin CyberPanel Integration
+# Shigarwarin CyberPanel Integration {#cyberpanel-integration}
 
 Wannan hanyar da ke bayanin yadda za a tsara Ultimate Multisite CyberPanel integration don in domain-domain da aka haska a cikin shahararku su a ƙara (da kuma a cire) a matsayin virtual hosts a CyberPanel, tare da damar samar da auto-SSL ta Let's Encrypt.
 
-## Abin da Yana Yi
+## Abin da Yana Yi {#what-it-does}
 
 - Lokacin da aka haska domain a Ultimate Multisite, wannan integration tana kira CyberPanel API don ƙirƙirar wani virtual host don wannan domain ɗin.
 - Lokacin da aka cire haskar domain, wannan integration tana kira API don shigar da wancan virtual host da ya dace.
 - Lokacin da a sanya auto-SSL, wannan integration tana ƙarfafa samar da sertifika ta Let's Encrypt nan take bayan an ƙirƙirar virtual host ɗin.
 - A zaɓi yana ƙara/cire alias na `www.` dangane da tsarin "Auto-create www subdomain" a Settings na Domain Mapping.
 
-## Sharuwar Awarin (Prerequisites)
+## Sharuwar Awarin (Prerequisites) {#prerequisites}
 
 - Wani CyberPanel instance mai aiki (an ba da shawarar v2.3 ko kuma wani ya ƙarshe).
 - Wannan website da ya kasance a CyberPanel wanda ya bayar da tushen shahararku na WordPress. An haɗa sabbin virtual hosts ga wannan server ɗin ta integration.
 - A buɗe samun CyberPanel API. Bayan da labari (Authentication) ana amfani da sunan amiran admin da kalmar sirri a CyberPanel.
 - Siffar DNS na domain-domain da aka haska dole ne ta shiga IP ɗin server ɗinku kafin auto-SSL zai iya samar da sertifika mai kyau.
 
-## Sharuwa (Requirements)
+## Sharuwa (Requirements) {#requirements}
 
 Wannan ƙa'idodin dole ne su bayyana a cikin fayil ɗin `wp-config.php` ɗinka:
 

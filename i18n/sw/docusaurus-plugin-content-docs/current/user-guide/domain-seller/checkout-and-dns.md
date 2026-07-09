@@ -3,13 +3,13 @@ title: Sehemu ya Malipo na DNS ya Mteja
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Uwanja wa Malipo na Usimamizi wa DNS wa Wateja
+# Uwanja wa Malipo na Usimamizi wa DNS wa Wateja {#checkout-field-and-customer-dns-management}
 
-## Uwanja wa malipo wa Uteuzi wa Kikoa
+## Uwanja wa malipo wa Uteuzi wa Kikoa {#the-domain-selection-checkout-field}
 
 Uwanja wa **Uteuzi wa Kikoa** ni kipengele cha malipo kinachowapa wateja chaguo la jinsi ya kupata kikoa cha tovuti yao. Uongeze kwenye fomu yoyote ya malipo ili kuwezesha uuzaji wa vikoa.
 
-### Kuongeza uwanja kwenye fomu ya malipo
+### Kuongeza uwanja kwenye fomu ya malipo {#adding-the-field-to-a-checkout-form}
 
 1. Nenda kwenye **Msimamizi wa Mtandao › Ultimate Multisite › Fomu za Malipo**
 2. Fungua au unda fomu ya malipo
@@ -18,7 +18,7 @@ Uwanja wa **Uteuzi wa Kikoa** ni kipengele cha malipo kinachowapa wateja chaguo 
 5. Sanidi chaguo za uwanja (tazama hapa chini)
 6. Hifadhi fomu
 
-### Chaguo za uwanja
+### Chaguo za uwanja {#field-options}
 
 **Hali za kikoa** — Chagua vichupo ambavyo mteja ataona. Kila hali inaweza kuwezeshwa au kulemazwa kivyake:
 
@@ -32,7 +32,7 @@ Uwanja wa **Uteuzi wa Kikoa** ni kipengele cha malipo kinachowapa wateja chaguo 
 
 **Bidhaa ya kikoa** — Kwa hiari, weka uwanja huu ushikwe na bidhaa mahususi ya kikoa. Ikiwa haijawekwa, addon huchagua kiotomatiki bidhaa inayolingana kulingana na TLD ambayo mteja anatafuta.
 
-### Nyuga za mawasiliano ya msajili
+### Nyuga za mawasiliano ya msajili {#registrant-contact-fields}
 
 Mteja anapochagua kichupo cha **Sajili Kikoa Kipya**, fomu ya malipo huongeza nyuga za mawasiliano ya msajili ndani ya mstari:
 
@@ -43,11 +43,11 @@ Mteja anapochagua kichupo cha **Sajili Kikoa Kipya**, fomu ya malipo huongeza ny
 
 Hizi zinahitajika na wasajili wote na huthibitishwa kabla ya mwito wa API wa usajili kufanywa. Nambari za simu huumbizwa kiotomatiki kuwa muundo wa kimataifa wa `+CC.NNN` unaotarajiwa na wasajili.
 
-### URL ya tovuti inayozalishwa kiotomatiki
+### URL ya tovuti inayozalishwa kiotomatiki {#auto-generated-site-url}
 
 Mteja anaposajili au kuunganisha kikoa, uwanja wa URL ya tovuti hujazwa kiotomatiki kutoka kwenye kikoa kilichochaguliwa. Wateja hawahitaji kujaza uwanja tofauti wa URL.
 
-### Tabia ya utafutaji
+### Tabia ya utafutaji {#search-behaviour}
 
 - Upatikanaji wa kikoa hukaguliwa kwa wakati halisi kwa AJAX kadiri mteja anavyoandika
 - Mapendekezo mbadala ya TLD huonyeshwa wakati kikoa kinachopendelewa hakipatikani
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Usimamizi wa DNS wa wateja
+## Usimamizi wa DNS wa wateja {#customer-dns-management}
 
 Wateja wanaweza kudhibiti rekodi za DNS kwa vikoa vyao vilivyosajiliwa kutoka ukurasa wa **Akaunti Yangu**, chini ya ingizo la kikoa chao.
 
-### Aina za rekodi zinazotumika
+### Aina za rekodi zinazotumika {#supported-record-types}
 
 | Aina | Matumizi |
 |---|---|
@@ -91,11 +91,11 @@ Wateja wanaweza kudhibiti rekodi za DNS kwa vikoa vyao vilivyosajiliwa kutoka uk
 | **MX** | Weka seva ya ubadilishanaji wa barua |
 | **TXT** | Ongeza SPF, DMARC, uthibitishaji, au rekodi nyingine za maandishi |
 
-### Ni watoa huduma gani wanaounga mkono usimamizi wa DNS?
+### Ni watoa huduma gani wanaounga mkono usimamizi wa DNS? {#which-providers-support-dns-management}
 
 Usimamizi wa DNS (kuongeza, kuhariri, kufuta rekodi) unapatikana kwa **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, na **Openprovider**. Vikoa vya **Hostinger** vinaweza kusasisha nameservers kupitia Domain Seller; rekodi za DNS kwa vikoa vilivyohostiwa hudhibitiwa na muunganisho mkuu wa uunganishaji-vikoa wa Hostinger. Vikoa vya Namecheap, GoDaddy, na NameSilo huonyesha hali na taarifa za mwisho wa muda, lakini DNS lazima idhibitiwe moja kwa moja kwenye paneli ya udhibiti ya msajili.
 
-### Rekodi chaguomsingi za DNS
+### Rekodi chaguomsingi za DNS {#default-dns-records}
 
 Unaweza kusanidi rekodi chaguomsingi za DNS zinazotumika kiotomatiki kikoa kinaposajiliwa. Nenda kwenye **Mipangilio › Domain Seller › Rekodi Chaguomsingi za DNS**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Msimamizi: kutazama na kuhariri DNS
+### Msimamizi: kutazama na kuhariri DNS {#admin-viewing-and-editing-dns}
 
 Wasimamizi wa mtandao wanaweza kutazama na kuhariri rekodi za DNS kwa kikoa chochote cha mteja kutoka ukurasa wa kuhariri wa kikoa katika **Msimamizi wa Mtandao › Ultimate Multisite › Vikoa**.

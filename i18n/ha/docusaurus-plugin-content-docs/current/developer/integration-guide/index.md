@@ -3,13 +3,13 @@ title: Jagorar Haɗawa
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Jagorar Haɗawa
+# Jagorar Haɗawa {#integration-guide}
 
 Wannan jagora yana bayyana salon haɗawa na gama-gari da Ultimate Multisite, ciki har da haɗawa da sabis na waje, gina payment gateways na musamman, da sarrafa webhooks.
 
 Don keɓaɓɓen tsarin tenant, duba [Haɗawar Multi-Tenancy](./multi-tenancy) don jagorar sovereign tenant bootstrap, tabbatar da ƙaura, SSO, da teardown.
 
-## Haɗawar CRM
+## Haɗawar CRM {#crm-integration}
 
 Daidaita bayanan abokan ciniki zuwa CRM ɗinka lokacin da sababbin abokan ciniki suka yi rajista:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Haɗawar Nazari
+## Haɗawar Nazari {#analytics-integration}
 
 Bibiyi muhimman abubuwan kasuwanci a duk tsawon zagayen rayuwar abokin ciniki:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Matakai na Gaba
+## Matakai na Gaba {#next-steps}
 
 - [Haɓaka Custom Gateway](./custom-gateway) — Gina payment gateway ɗinka
 - [Sarrafa Webhook](./webhooks) — Ƙirƙiri webhook endpoints na musamman

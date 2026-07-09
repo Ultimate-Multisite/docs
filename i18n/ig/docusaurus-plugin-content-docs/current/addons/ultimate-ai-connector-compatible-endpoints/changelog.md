@@ -3,9 +3,9 @@ title: Njikọ AI Kachasị Mma maka Ebe Njedebe Dakọtara Ndekọ Mgbanwe
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector maka Endpoints Dakọtara Changelog
+# Ultimate AI Connector maka Endpoints Dakọtara Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — Ewepụtara na 2026-04-24
+## Version 2.0.0 — Ewepụtara na 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Ọhụrụ: Nkwado ọtụtụ provider — hazie ọtụtụ AI endpoints ma duzie arịrịọ site na fallback akpaka gafee providers.
 * Mmezi: Njikọ SDK nke ọtụtụ provider na provider IDs ziri ezi, registration URLs, na nhazi HTTP filter maka provider ọ bụla.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Mmezi: Wepụrụ arịrịọ HTTP na-egbochi ọrụ nke na-agba na ibu peeji ọ bụla.
 * Emelitere: Ebulitere workflows GitHub Actions gaa Node.js 24.
 
-## Version 1.0.0 — Mwepụta Mbụ
+## Version 1.0.0 — Mwepụta Mbụ {#version-100--initial-release}

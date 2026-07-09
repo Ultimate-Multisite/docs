@@ -3,13 +3,13 @@ title: Gukora Icyemezo Cyako Cy'ibanze
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Gukora Icyemezo Cyako Cy'Uruhuriro (v2)
+# Gukora Icyemezo Cyako Cy'Uruhuriro (v2) {#creating-your-first-subscription-product-v2}
 
 _**IKUNDI KUGUCUZE: Urugero uyu ari ukwiko kwisi Ultimate Multisite version 2.x. Uziyo ugiye n'version 1.x,**_ **__gukora uyu wese***_ **._
 
 Kugenzura ukugenzura uburyo bwa network yakwa no kumenya imbere imbere ubucuruzi bwawe ku bashobora bafite, ushobora kuba n'ubwoko bw'ibintu bwa subscription. Ugiye gutera ibintu byo gukora ibi? Ubwoko bw'ibintu w'ibyo mushobora kubona? Mu gihe cyacu, twagira uburyo bwawe bose bwo kumenya ibintu by'ibintu.
 
-## Ubwoko bw'Icyemezo (Product Type)
+## Ubwoko bw'Icyemezo (Product Type) {#product-type}
 
 N'Ultimate Multisite, ushobora gukoresha ibintu bibiri mu buryo bwa clienta wako: **plans** n'**add-ons (Order Bump)**. Add-ons mushobora guhindurwa mu byiciro bibiri: **packages** n'**services**. Twagira uburyo bwabo kandi twakwibona ibyo bifite.
 
@@ -19,7 +19,7 @@ N'Ultimate Multisite, ushobora gukoresha ibintu bibiri mu buryo bwa clienta wako
 
   * **Services:** Add-ons atari ibintu byogera imbere ubucuruzi bwa Ultimate Multisite. Ni ibintu byo gukora ku mukozi wako kandi yari yakwiye n'plan yashobanye. Urugero, umukoresha wako ashobora gukora plan igira site runaka cyangwa yari yakwiye gukora service ikomeye cyo kubyara uwo site.
 
-## Gukoma Icyemezo (Managing Products)
+## Gukoma Icyemezo (Managing Products) {#managing-products}
 
 Buriwe, uyu **Products** tab mu Ultimate Multisite **(Ultimate Multisite > Products)** mushobwa n'ubwoko bw'ibizigirwa (plans) mu gihe cyo gukoresha hosting w'umunsi.
 
@@ -29,7 +29,7 @@ Iki cyiciro kizabigize inama ku kumenya uburyo bwo gukoresha uburyo buhitamo mu 
 
 ![Products list page](/img/config/products-list.png)
 
-## Gufasha Ibibizigirwa (Adding Products)
+## Gufasha Ibibizigirwa (Adding Products) {#adding-products}
 
 Icyiza cyangwa ibyiza, plan, package, cyangwa ikintu runaka kumenya uburyo bwo gukora ibiri mu gihe cyo gushyira umuntu ku bijyanye n'ikintu runaka ni **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Icyemezo kishobora gukoresha ibiri mu gihe cyo gushyira umuntu ku bijyanye n'iki
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Uburyo Bwo Gukoresha (Description)
+### Uburyo Bwo Gukoresha (Description) {#description}
 
 Uburyo buhitamo ibyerekeye ubijyanye n'ikintu runaka bishobora gushyirwa binyuze mu gukoresha izina ry'ikintu runaka n'ubwoko bw'ibyo. Ibi byiza bikorwa mu gihe cyose aho umuntu ushaka kumenya ibyerekeye ikintu runaka, nk'uko mu gukora plan na amafaranga, inyandiko z'inshuro (invoices), uburyo bwo gutera ubwoko (upgrades), n'ibindi.
 
 ![Product description section](/img/config/product-description.png)
 
-### Uburyo Bwo Gukoresha Amafaranga (Pricing Type)
+### Uburyo Bwo Gukoresha Amafaranga (Pricing Type) {#pricing-type}
 
 Mu gihe kera mu cyemezo, amafaranga y'ibizigirwa bishobora gushyirwa.
 
@@ -53,7 +53,7 @@ Mu gihe kera mu cyemezo, amafaranga y'ibizigirwa bishobora gushyirwa.
 
 Ultimate Multisite ishyira uburyo buhitamo ibi byiza bikorwa mu gihe cyose. Uburyo **paid** (uhoze amafaranga) bishobora gushyira umuntu ku ngarwaho ibindi by'ibizigirwa n'uburyo bw'ibyo bishobora gukoreshwa.
 
-### Amafaranga (Pricing)
+### Amafaranga (Pricing) {#pricing}
 
 Uburyo buhitamo amafaranga bishobora gushyirwa mu gihe cyose uburyo bwo gukora ikintu runaka no gihe cyo gutera amafaranga.
 
@@ -61,7 +61,7 @@ Uburyo buhitamo amafaranga bishobora gushyirwa mu gihe cyose uburyo bwo gukora i
 
 dona uwo nkuru ya $29.99 n'ubwumvikana bwa 1 mwe, izakora ubwumvikana buro mu gihe cyo gukoresha. Uburyo bwa mbere, umuntu uzakora ubwumvikana buro ku gihe cyo gukoresha. Uburyo bwa mbere, umuntu uzakora ubwumvikana buro ku gihe cyo gukoresha.
 
-### Icyemezo cyo Ubwumvikana (Billing Cycles)
+### Icyemezo cyo Ubwumvikana (Billing Cycles) {#billing-cycles}
 
 Icyemezo cyo Ubwumvikana kigisha uburyo bw'ubwumvikana bwa mbere, kandi bikorwa mu buryo bwo kwiga ku by'ibanga cyangwa imyaka itarashobora gukoreshwa.
 
@@ -69,7 +69,7 @@ Icyemezo cyo Ubwumvikana kigisha uburyo bw'ubwumvikana bwa mbere, kandi bikorwa 
 
 Urugero, umuntu yashobora kugabanya ubwumvikana buro ku gihe cyo gukoresha mu mwe kandi uburyo bwa mbere bwa 12. Ibi bikora ko umuntu uzakora ubwumvikana buro ku mwe $29.99 ku gihe cyose cy'amavu y'imyaka itarashobora gukoreshwa mu myaka 12. Bindi, uburyo bwa mbere bwa 12 bishobora gutera ubwumvikana buro ku mwe $29.99 ku gihe cyose cy'amavu y'imyaka itarashobora gukoreshwa mu myaka 12 kandi bikorwa.
 
-### Icyemezo cyo Gukoresha (Trial Period)
+### Icyemezo cyo Gukoresha (Trial Period) {#trial-period}
 
 Gukoresha ubyumva bwa "offer trial" bikora umunyamakuru w'ubwumvikana kwibanda igihe cyo gukoresha ku kintu.
 
@@ -77,7 +77,7 @@ Gukoresha ubyumva bwa "offer trial" bikora umunyamakuru w'ubwumvikana kwibanda i
 
 Mu gihe cyo gukoresha, abantu bashobora gukoresha ibiri kandi batakora ubwumvikana dukoresha mu gihe cyose cy'amavu y'imyaka itarashobora gukoreshwa mu gihe cyo gukoresha.
 
-### Icyemezo cyo Gukorera (Setup Fee)
+### Icyemezo cyo Gukorera (Setup Fee) {#setup-fee}
 
 Ushobora kandi gukoresha ubwumvikana bwa "setup fee" ku gihe cyo gukoresha ku plan yawe.
 
@@ -85,7 +85,7 @@ Ushobora kandi gukoresha ubwumvikana bwa "setup fee" ku gihe cyo gukoresha ku pl
 
 Ibi rero, umunyamakuru w'ubwumvikana uzakora ubundi mu gihe cyo mbere (ku giti cyangwa ku gihe cyo gukoresha) (ku giti cyangwa ku gihe cyo gukoresha) kandi ubu ni igice cyo ubwumvikana w'uwo wumva wakoze mu gihe cyo gukoresha.
 
-### Icyemezo Cy'Ubwumvikana (Active)
+### Icyemezo Cy'Ubwumvikana (Active) {#active}
 
 Icyemezo cyo "active" kigisha uko ibiri bishobora gukoreshwa ku muntu w'ubwumvikana bwa mbere.
 
@@ -93,13 +93,13 @@ Icyemezo cyo "active" kigisha uko ibiri bishobora gukoreshwa ku muntu w'ubwumvik
 
 Nta hari uyu mwanya, niba hari abantu bafite ku muryango uyu, gukora toggle mu uko yashyize mu uko yashyize (disabled state) bituma muryango w'ibyo kumenya ko umuryango utagira ubushobozi bwo kuboneka mu gihe cy'ubwujere. **Abantu bafite ku muryango uyu bazuzuye** kugera ku gihe bafite uburyo bwo guhindura mu muryango w'ibyo, cyangwa bakagurwa mu muryango.
 
-### Icyemezo cy'Isaliro (Product Image)
+### Icyemezo cy'Isaliro (Product Image) {#product-image}
 
 Icyemezo cy'Isaliro (**Upload Image**) bituma umukozi w'uburenganzira (network administrator) yashobora gukoresha ibyo mu media library kugira ngo atangire cyangwa yagire isaliro ry'ibintu by'ibintu byo mu kintu.
 
 ![Product image section](/img/config/product-image.png)
 
-### Guhagarara (Delete)
+### Guhagarara (Delete) {#delete}
 
 Icyemezo cy'Ushobora Guhagarara (**Delete Product**) bituma umuryango w'ibyo guhagarara mu sistema. Biba biba bifite mu gihe uburyo bwo kuboneka mu muryango w'ibyo byashyize (published).
 
@@ -107,11 +107,11 @@ Icyemezo cy'Ushobora Guhagarara (**Delete Product**) bituma umuryango w'ibyo guh
 
 Mu buryo bukwiye ku gukora ibyo, umuryango w'ibyo utagira mu gihe cyo guhagarara mu trash. Bityo niba uhoze guhagarara, igikorwa cyo guhagarara si cyo gutera ku muryango.
 
-### Icyemezo cy'Icyemezo (Product Options)
+### Icyemezo cy'Icyemezo (Product Options) {#product-options}
 
 Niba umuryango w'ibintu by'ubwujere bwo mu kintu bishobora gushyirwa mu gihe, icyemezo cy'ibintu byo mu kintu bituma umukozi w'uburenganzira yashobora guhindura ibyo byo mu kintu.
 
-#### Icyemezo Cy'Uburyo (General)
+#### Icyemezo Cy'Uburyo (General) {#general}
 
 Icyemezo cy'Iburyo (**General**) bituma ibintu byo gushyirwa mu gihe bishobora gukoreshwa mu muryango w'ibintu byo mu kintu, ntabwo bifite mu gihe cyo kuboneka mu gihe cyo guhindura ibyo byo mu kintu by'ibintu byo mu kintu.
 
@@ -125,7 +125,7 @@ Icyemezo cy'Uburyo (Customer Role) bituma umuryango w'abantu bakoresha mu gihe u
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Kumenyi no Gukoresha n'Ukurusha (Up & Downgrades)
+#### Kumenyi no Gukoresha n'Ukurusha (Up & Downgrades) {#up--downgrades}
 
 Icyo ubutabashwa bishobora gukoresha n'ukoresha (upgrade and downgrade paths) byo mu kundenye umuntu muri uburenganzira bwe.
 
@@ -143,7 +143,7 @@ Kugenzura "plan group", uburyo bwo gukoresha ibi plan byose muri listi ya **plan
 
 Ultimate Multisite yitondera n'ubwoko bwo "order bump" (order bump feature) aho ibindi byiza bitandukanye byashobora gushyirwa kuri plan. Ibi bitangwa umuntu nk'ibindi byiza bigenzwa ku gihe cyo guhagarara cyangwa mu gihe cyinhinduro.
 
-#### Ubwoko bw'Icyemezo (Price Variations)
+#### Ubwoko bw'Icyemezo (Price Variations) {#price-variations}
 
 Urugero mu gihe cy'umwihariko, umunyarwanda w'ubwumvikane y'urwego rwa WordPress.
 
@@ -167,7 +167,7 @@ Urugero, niba duka imyera ya duka ku gihe cy'umwuka yari $29.99, ushobora gushyi
 Ubwoko bw'ibyo (price variations) bishobora guhindura uburyo bwo kwerekana imyera y'uburyo ku frontend checkout. Kugira ngo abakoresha bashobore gukoresha ibintu mu gihe cyose (monthly / annual), ushobora gushyira **Period Selection** ikoranabuhinduka mu form ya checkout yawe. Ubwumvikane uburyo bwo gukora iki, ugomba gusoma [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) kugira ngo ushije ibyo.
 :::
 
-#### Icyemezo (Taxes)
+#### Icyemezo (Taxes) {#taxes}
 
 Icyemezo cy'ibyo (Taxes) bishobora gukoresha ibyo mu gihe cyose byo kwerekana imyera ya cyerekeza ku gihe cyose **Ultimate Multisite > Settings > Taxes** kandi mu gihe cyose byo gukoresha ubwoko bw'ibyo (price variations) binyuze mu gihe cyose. Kugira ngo ushije ibi, ugomba gusoma uburyo bwo gukora iki mu gihe cyose **Ultimate Multisite: Settings**.
 
@@ -181,7 +181,7 @@ Iyo ubwoko bw'ubwoko (tax rate) bugaragazwa mu **Ultimate Multisite > Settings >
 
 Kugira ngo uburyo rwo product rikoho cy'ubwoko (taxable item), gukora **Is Taxable** toggle kugira ngo yari ikoreshwa kandi ugira ngo utandire ubwoko bw'ubwoko mu dropdown ya Tax Category.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Mu gihe cyiza, site templates ni WordPress websites zikurikiranwa (cloned) ku site ya umukoresha mu gihe cyo gushyiraho uburyo bwo kuboneka mu gihe cyo guhuza (subscription).
 
@@ -201,7 +201,7 @@ Nyuma, **C** **Choose Available Site Templates** bishobora guhindura (override) 
 
 Mu gihe cyiza, niba umunyamakuru w'ubwoko yashaka ko gukoresha template mu gihe cyo checkout, setting cyo ' _default_ ' kizaba kera. Mu gihe cyiza kandi kugira ngo utaboneho gukoresha template kandi uba umuntu ashobora gukoresha ibyo byo kwiga ku plan settings, uza kuba nziza ko ugize option ya ' _assign new template_ ' cyangwa ' _choose available site templates_ '.
 
-#### Sites (Icyemezo)
+#### Sites (Icyemezo) {#sites}
 
 Icyiciro cyo **Sites** ni igice cyo gukoresha ubwoko bwa Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Icyo setting kigaragaza indwo ya mbere y'ubwoko (maximum number of sites) uzi um
 
 Kugira ngo uboneho iki cyemezo, gizeye **limit sites** toggle kugira ngo yaba ari mu gihe cyiza kandi gizeye indwo ya mbere y'ubwoko (site allowance).
 
-#### Visits (Ubwumvikane)
+#### Visits (Ubwumvikane) {#visits}
 
 Icyiciro cyo **Visits** ni igice cyo gukoresha uburyo bwa Ultimate Multisite bw'ubwoko. Icyo setting kigaragaza uko umuntu w'ubwoko ashobora gufata no gukoresha abantu bashobora kuba bafite amakuru (unique visitors) kuwe.
 
@@ -223,7 +223,7 @@ Kugira ngo ushije uburyo bwa feature iryo, shyira **limit unique visits** cyangw
 
 Iyo limit iryo ikoreshwa, Ultimate Multisite izagira ubushobozi bwo guhagarara kwigisha site y'abakiriya bakoresha cyangwa igisubizo kugaragaza ko limit yashobye.
 
-#### Abakoresha (Users)
+#### Abakoresha (Users) {#users}
 
 Uburyo bw'Ultimate Multisite mu 'Users' bufasha umukono w'ubwoko gufasha gukora ibi ngingo ku ko hari uburyo bwo kugabanya indamiri ya abakoresha bashobora gukoresha no kubyara.
 
@@ -233,7 +233,7 @@ Kugira ngo ushije uburyo bwa limitation, shyira **limit user** toggle mu gihe cy
 
 Icyo cyo gukora kuri buri role wumwe washobora gufasha, shyira toggle yayo ishyiraho mu gihe cy'ibyo byiza kandi usobanura indamiri ya mbere (maximum upper limit) mu field igaragaza.
 
-#### Post Types
+#### Post Types {#post-types}
 
 Icyo cyo 'Post Types' kigaragaza umukono w'ubwoko gufasha gukora ibi ngingo ku ko hari uburyo bwo kubyara abantu bashobora gukoresha mu post types zikomeye muri WordPress.
 
@@ -245,7 +245,7 @@ Kugira ngo ushije uburyo bwa subsystem bwa limitation, shyira **limit post types
 
 Icyo, ku gihe, kugira umuntu wese uburyo bwo gukemura ibyo byiza mu rurimi rw'ubwumvikane.
 
-#### Disk Space (Urururo Rw'Ubwoko)
+#### Disk Space (Urururo Rw'Ubwoko) {#disk-space}
 
 Tabu ya **Disk Space** ituma abashobozi b'ubwoko bwawe bwo gukora umuntu wese uburyo bwo kwizera ubwoko bwawe bwawe.
 
@@ -257,13 +257,13 @@ Kugira ngo ushake gukora uburyo bwo kwizera ubwoko, wumva **limit disk size per 
 
 Kandi, ushaka gukora uburyo bwo kwizera uburyo bwawe bwawe mu **disk space allowance** uburyo bwo gukoresha megabytes (MB).
 
-#### Custom Domain (Urururo Rw'Ubwoko Bw'Umuryango)
+#### Custom Domain (Urururo Rw'Ubwoko Bw'Umuryango) {#custom-domain}
 
 Binyuze mu gihe cy'ubwoko (toggle), ushaka gukora uburyo bwo kwizera ibi byiza ku ruhande (custom domains) kuri iyo plan igomba.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes (Urururo Rw'Icyemezo)
+#### Themes (Urururo Rw'Icyemezo) {#themes}
 
 Tabu ya **Themes** mu gihe cyo gukora ibyo byiza ku product ituma umuntu wese uburyo bwo kwizera ibi byiza ku ruhande, kandi ushaka gukora uburyo bwo kwizera uburyo bwawe.
 
@@ -281,7 +281,7 @@ Uburyo bwa **behavior** buvura umuntu wese uburyo bwo gukora ibyo byiza mu gihe 
 
 Mu gihe **A** **vuba** n'ubwo, uburyo bwo theme ni mu gihe cyashobora kugabanyijwe umukoresha w'umuryango (customer) kugira ngo yisobanure mu buryo bw'ibyo. Mu gihe **Nta vuba**, ibyo byitera umukoresha w'umuryango ubushobozi bwo gukorera theme. Mu gihe **Gukora Gukora** (Force Activate), uburyo bwa "Force Activate" rishobora gutera ko theme yisobanura kandi yirashobora kugira umwanya mu gihe cyerekana ku site.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Nko mu gihe cy'Themes, Ultimate Multisite yishobora guhindurira umunyamakuru w'umuryango (network administrator) gukora ibyo plugin byitera umukoresha w'umuryango kugira ngo yisobanure kandi yirashobora kuba mu gihe cyo gukora site yashyirwe.
 
@@ -301,7 +301,7 @@ Icyo **Force Activate & Lock** ni ifite nko mu buryo bwa mbere, ariko yituma ubu
 
 Umuvugizi w'ubwoko bw'ubwoko (network administrator) yashobora gutera ku byo Force Activate & Lock n'Force Inactivate & Lock mu buryo bwa site templates. Iyo uziho, ibyo plugin cyangwa umenye bwa plugin mu templates bishobora guhindurwa n'ibyo setting bituma ari byo bikorwa.
 
-#### Guhindura Uburyo Bwa Gukomeza (Reset Limitations)
+#### Guhindura Uburyo Bwa Gukomeza (Reset Limitations) {#reset-limitations}
 
 Icyo tab ya **Reset Limitations** ituma uburyo bwose bwa mbere bwa product bishobora gushyirwa mu gihe cy'ibyo plugin cyangwa ibindi byo. Kugira ngo utone ibyo, ugomba gukora igikorwa cy'ubwoko **reset limitations**.
 
@@ -311,7 +311,7 @@ Kugira ngo utone ikoranabuhindura, ugomba gukoresha toggle ya **confirm reset** 
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Guhindura, Gukora Uburyo Bwa Product Cyangwa Gutera Ku Rugero
+## Guhindura, Gukora Uburyo Bwa Product Cyangwa Gutera Ku Rugero {#edit-duplicate-or-delete-product}
 
 Icyo product cy'ibindi byo bishobora guhindurwa, gukorwa rugero (duplicate) cyangwa gutera ku rugero (delete) bikora mu gihe **Ultimate Multisite > Products** kandi uziho ibyo product cy'ibindi byo.
 

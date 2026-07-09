@@ -3,7 +3,7 @@ title: Kugadzira PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Kuita Kutiwe (v2)
+# Kuita Kutiwe (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**CHINARI CHINARI: Iriro iri rinotokozero iri riri Ultimate Multisite v2.x.**_
 
@@ -13,13 +13,13 @@ Seunenge zvinhu zveStripe, PayPal inogona kuwanikwa zvakawanda kune zvinotevera 
 
 Ziva kuti unofanira kuva ne**PayPal Business account** kuti uone API credential inotorewa kune hunhu hwo hwakakosha kune hunhu hwo hwo.
 
-## Kuvaura PayPal munzira yako
+## Kuvaura PayPal munzira yako {#enabling-paypal-on-your-network}
 
 Kuti utangeiwe PayPal sehunhu rekuita payment panzira inenge yakaita mu network yako, ndichida kuti uende ku **Ultimate Multisite > Settings > Payments** tab uye upfungire (tick) box yakanaka nePayPal.
 
 ![Kuvaura PayPal munzira dzehunhu dzakaita](/img/config/settings-payment-gateways.png)
 
-## Kuita setup wizard inotevera
+## Kuita setup wizard inotevera {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 inopa setup wizard inotevera kune PayPal mu settings ya payment gateway. Apana utangeiwe PayPal, unenge uenda nemazwibu (wizard) munzira **Ultimate Multisite > Settings > Payments** kuti uve sei uchigadzirisa hunhu hwako uye kuti uve sei uchigona kuona zvinotorewa kune hunhu hwo hwakakosha panguva unoreva.
 
@@ -30,7 +30,7 @@ Wizard inogona kubatsira nzira dzehunhu dzimwe:
 
 Kana usina kuona OAuth option mu wizard, ndichikumbira ukumbire flow ya manual credential entry pano. Gateway inoreva necredentials dze PayPal Business API anogona kuenda nemazuva ano Ultimate Multisite 2.x.
 
-## Kuwana credentials dzapa PayPal API
+## Kuwana credentials dzapa PayPal API {#getting-the-paypal-api-credentials}
 
 Ngepa iwe wakaita PayPal yakaita gateway ye payment, unoda kuisa fields dze **Username** ya PayPal API, **Password** ya PayPal API uye **Signature** ya PayPal API.
 

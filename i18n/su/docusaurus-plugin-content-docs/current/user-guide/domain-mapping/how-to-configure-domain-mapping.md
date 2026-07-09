@@ -3,17 +3,17 @@ title: Kumaha Ngonpigurasikeun Pemetaan Domain
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kumaha Ngonpigurasikeun Pemetaan Domain (v2)
+# Kumaha Ngonpigurasikeun Pemetaan Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**CATETAN PENTING: Artikel ieu ngarujuk kana Ultimate Multisite vérsi 2.x.**_
 
 Salah sahiji fitur pangkuatna tina jaringan premium nyaéta kamampuhan pikeun nawarkeun ka klién urang kasempetan pikeun ngaitkeun domain tingkat luhur kana situs maranéhna. Barina ogé, mana nu katingalina leuwih profésional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) atawa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ku sabab éta Ultimate Multisite nawarkeun fitur éta sacara bawaan, tanpa kudu ngagunakeun plugin pihak katilu.
 
-## Naon ari pemetaan domain?
+## Naon ari pemetaan domain? {#whats-domain-mapping}
 
 Sakumaha ngaranna, pemetaan domain nyaéta kamampuhan anu ditawarkeun ku Ultimate Multisite pikeun narima pamundut pikeun domain custom sarta ngapetakeun pamundut éta ka situs anu saluyu dina jaringan anu geus dikaitkeun jeung domain husus éta.
 
-### Kumaha nyetél pemetaan domain dina Jaringan Ultimate Multisite anjeun
+### Kumaha nyetél pemetaan domain dina Jaringan Ultimate Multisite anjeun {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Pemetaan domain merlukeun sababaraha setélan ti pihak anjeun sangkan jalan. Untungna, Ultimate Multisite ngaotomatiskeun pagawéan beurat pikeun anjeun jadi anjeun bisa gampang nyumponan saratna.
 
@@ -45,7 +45,7 @@ Tapi saméméh anjeun ngamimitian ngapetakeun domain custom ka salah sahiji subs
 
 ###
 
-### Mastikeun setélan DNS domain geus dikonpigurasikeun kalayan bener
+### Mastikeun setélan DNS domain geus dikonpigurasikeun kalayan bener {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Supaya pemetaan bisa jalan, anjeun kudu mastikeun domain anu rék dipetakeun nujul ka alamat IP Jaringan anjeun. Catet yén anjeun peryogi alamat IP Jaringan - alamat IP tina domain tempat Ultimate Multisite dipasang - lain alamat IP tina domain custom anu rék anjeun petakeun. Pikeun néangan alamat IP tina domain husus, kami nyarankeun muka [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), contona.
 
@@ -55,7 +55,7 @@ Lamun anjeun manggihan kasulitan sangkan ieu jalan, **taroskeun ka dukungan regi
 
 Lamun anjeun ngarencanakeun ngidinan klién anjeun ngapetakeun domain sorangan, maranéhna kudu ngalakukeun pagawéan dina bagian ieu sorangan. Arahkeun maranéhna ka sistem dukungan registrar maranéhna lamun maranéhna teu bisa nyieun A Record.
 
-### Ngapetakeun ngaran domain custom salaku Super Admin
+### Ngapetakeun ngaran domain custom salaku Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Nalika anjeun asup salaku super admin dina jaringan anjeun, anjeun bisa gampang nambahkeun jeung ngatur ngaran domain custom ku muka **Ultimate Multisite > Domain**.
 
@@ -93,7 +93,7 @@ Lamun anjeun ngaklik ngaran domain, anjeun bakal bisa ningali sababaraha pilihan
 
 **Naha Aman?:** Sanajan Ultimate Multisite mariksa naha domain miboga sertipikat SSL atawa henteu saméméh ngaktipkeunana, anjeun bisa sacara manual milih pikeun ngamuat domain kalayan atawa tanpa sertipikat SSL. Catet yén lamun ramatloka henteu miboga sertipikat SSL sarta anjeun nyobian maksa ngamuatna kalayan SSL, éta bisa méré kasalahan.
 
-### Ngamapkeun ngaran domain custom salaku pamaké Subsite
+### Ngamapkeun ngaran domain custom salaku pamaké Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Administrator sub-situs ogé bisa ngamapkeun ngaran domain custom tina dashboard admin sub-situs maranéhna.
 
@@ -121,7 +121,7 @@ Pamaké teras bisa ngaklik **Léngkah Salajengna** sarta neruskeun pikeun nambah
 
 Klik **Tambah Domain** bakal ngamimitian prosés pikeun marios jeung nyokot inpormasi DNS tina domain custom.
 
-### Ngeunaan Sinkronisasi Domain
+### Ngeunaan Sinkronisasi Domain {#about-domain-syncing}
 
 Sinkronisasi Domain nyaéta prosés dimana Ultimate Multisite nambahkeun ngaran domain custom ka akun hosting anjeun salaku domain add-on **supaya pangamapan domain jalan**.
 

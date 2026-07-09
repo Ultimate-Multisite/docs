@@ -3,7 +3,7 @@ title: Tāne Whakaaro Pāpeha
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Pākehā Whakamahi (Admin Page Creator)
+# Pākehā Whakamahi (Admin Page Creator) {#admin-page-creator}
 
 Ko tēnei āhuatanga e whai ake ana i te addon **Admin Page Creator**.
 

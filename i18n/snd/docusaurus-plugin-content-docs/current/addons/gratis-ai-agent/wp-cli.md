@@ -3,11 +3,11 @@ title: WP-CLI حوالو
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI حوالو
+# WP-CLI حوالو {#wp-cli-reference}
 
 Gratis AI Agent حڪمي لڪير مان ايجنٽ جي benchmark ڪرڻ، صلاحيتون سنڀالڻ، ۽ ايجنٽ جي حالت پڇڻ لاءِ `wp gratis-ai-agent` حڪمن جو خاندان مهيا ڪري ٿو. سڀني حڪمن لاءِ WP-CLI 2.0 يا ان کان مٿي گهربل آهي.
 
-## انسٽاليشن
+## انسٽاليشن {#installation}
 
 WP-CLI حڪم plugin فعال هئڻ وقت پاڻمرادو رجسٽر ٿين ٿا. هن سان تصديق ڪريو:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agent Capabilities benchmark مجموعو هلائي ٿو — پيچيده، گهڻن مرحلن وارن prompts جو هڪ سيٽ، جيڪي مڪمل صلاحيتن جي سطح کي آزمائين ٿا. هن کي ماڊل جي ڪارڪردگي جانچڻ، AI فراهم ڪندڙن جو مقابلو ڪرڻ، يا production ڏانهن لاڳو ڪرڻ کان اڳ صلاحيت پيڪن جي تصديق ڪرڻ لاءِ استعمال ڪريو.
 
-### خلاصو
+### خلاصو {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### اختيار
+### اختيار {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | نڪتل صورت: `table` (default), `json`, `csv` |
 | `--save` | تاريخي مقابلي لاءِ benchmark نتيجا database ۾ محفوظ ڪري ٿو |
 
-### مثال
+### مثال {#examples}
 
 موجوده فراهم ڪندڙ ۽ ماڊل سان مڪمل benchmark مجموعو هلائو:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### نڪتل نتيجو
+### نڪتل نتيجو {#output}
 
 benchmark هر سوال لاءِ هيٺين ڪالمن سان هڪ قطار output ڪري ٿو:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark سوال
+### Benchmark سوال {#benchmark-questions}
 
 default مجموعي ۾ شامل آهي:
 
@@ -95,11 +95,11 @@ default مجموعي ۾ شامل آهي:
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 انسٽال ٿيل صلاحيتن ۽ صلاحيت پيڪن کي سنڀالي ٿو.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 سڀ رجسٽر ٿيل صلاحيتون، انهن جو ذريعو (core يا pack)، ۽ انهن جي موجوده حالت ڏيکاري ٿو.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 registry مان هڪ صلاحيت پيڪ download ڪري فعال ڪري ٿو.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 پيڪ کي هٽائڻ کان سواءِ هڪ مخصوص صلاحيت غيرفعال ڪري ٿو. ڪنهن ڏنل site تي ايجنٽ جي دائري کي محدود ڪرڻ لاءِ مفيد آهي.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 اڳ ۾ غيرفعال ڪيل صلاحيت کي ٻيهر فعال ڪري ٿو.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 موجوده ايجنٽ configuration ۽ connectivity حالت ڏيکاري ٿو.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 debug log مان تازيون ايجنٽ سرگرميون ڏيکاري ٿو.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 agent جي حالت ري سيٽ ڪري ٿو: داخل ڪيل CSS صاف ڪري ٿو، agent-رجسٽر ڪيل CPTs ۽ taxonomies هٽائي ٿو، عالمي انداز ري سيٽ ڪري ٿو، ۽ agent جي اختيارن جي cache خالي ڪري ٿو. plugin يا ان جون settings نه هٽائيندو.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## نڪرڻ جا ڪوڊ
+## نڪرڻ جا ڪوڊ {#exit-codes}
 
 سڀ commands ڪاميابي تي `0` سان exit ڪن ٿا. غير-صفر exit codes:
 

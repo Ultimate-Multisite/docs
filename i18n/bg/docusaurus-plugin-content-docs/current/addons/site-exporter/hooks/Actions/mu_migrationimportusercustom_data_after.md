@@ -4,20 +4,20 @@ title: Action - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Action: mu_migration/import/user/custom_data_after
+# Action: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
 
 Изпълнява се след експортирането на специалните данни на потребителя.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Описание |
 |------|------|-------------|
 | $user_data | `array` | Масивът с данните на потребителя. |
 | $user | `\WP_User` | Обектът на потребителя. |
 
-### От версия
+### От версия {#since}
 
 - 0.1.0
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) на линия 165

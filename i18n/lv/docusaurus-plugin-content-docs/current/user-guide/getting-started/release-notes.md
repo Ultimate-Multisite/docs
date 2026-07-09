@@ -3,9 +3,9 @@ title: Izlaiduma paziņojumi
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Izlaiduma paziņojumi
+# Izlaiduma paziņojumi {#release-notes}
 
-## Versija 2.13.0 — Izlaidums 2026.06.05
+## Versija 2.13.0 — Izlaidums 2026.06.05 {#version-2130--released-on-2026-06-05}
 
 - Jauns: Pievienots suverēno tenantu atbalstu klientu kontiem, kasina, fakturēšanai, vietnēm, faktūrām, šabloniem mainīšanai un domānu mapiņām, lai tenantu tīkli varētu novirkt klientus atpakaļ uz galveno vietni pārvaldījamajiem darbībām.
 - Jauns: Pievienots atjauninājumu autentikācijas (renewal-credential) pārbaudes funkcijas atkārtoto pieejamības iemaksājumiem, lai lietotāji varētu deaktivizēt automātiskās atjauninājumus, ja nav sastopīta saglabāta fakturēšanas satevums, abonentā vai vault tokena.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Korekcija: Abonentā atjauninājumi, izgaides parādīšana un maksājumu saņemšanas edge cases tagad izvairās no neatgriezeniskajām izgaidām, kļūdu vai nepieejami noteiktie maksājumi.
 - Uzlabojums: WordPress compatibilitā ir pārbaudīta līdz 7.0 versijai, produkcijas Vue atkarības tiek atkārtoti veidotas no npm avotiem, un Cypress galvenais paklūdis tagad veikskārto vairāk checkout, iestatījumu, SSO un gateway tokus.
 
-## Versija 2.12.0 — Izlaidums 2026-05-15
+## Versija 2.12.0 — Izlaidums 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Jauns: Pievienots Hostinger (hPanel) kā atbalstīta hosta sniedzēja ar domēnu mapi integrāciju.
 - Jauns: Site Exporter tagad apstrādā tīkla importu paku, lai nodrošinātu vienkāršu restorāciju visā tīklā vietnēm.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Korekcija: Site Exporter CLI tagad saglabā pareizu defaultu tīkla vietnes izvēli.
 - Uzlabojums: No paketes ietilpības tika noņemts wp-cli, kas samazina paketes lielumu.
 
-## Versija 2.11.0 — Izlaidums 2026-05-11
+## Versija 2.11.0 — Izlaidums 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Jauns: Site exporti tagad apkurp visus self-booting `index.php` failus, lai ZIP failu būtu iespējams instalēt jaunam hosta bez atsevišķas paketes instalācijas.
 - Jauns: Tīkla eksports ļauj administratoriem izveidot visas subvietas vienā arhivā no Site Export admin lapas.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Jauns: Uzvārdošanas formulāra redaktors brīdin, ja produktus pievienājam bez konfiguriētām nepieciešamajām laukiem.
 - Jauns: Import/Export iestatījumu posmā skaidri aprakstīts tās jomīgais un tieši saistīts ar Site Export rīku.
 
-## Versija 2.10.0 — Izlaidums 2026-05-05
+## Versija 2.10.0 — Izlaidums 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Jauns: Jaunais PayPal iestatīšanas wizard ar manuālo atkarību ievadīšanu un OAuth flagi, kas nodrošina vieglu portāla konfigurēšanu.
 - Jauns: Klientpalikaļa šablona mainīšana redizainēta ar pašreizējās shablona kartiņu, pastāvīgu gridu un **Atgriezt pašreizējā shablona** pogu.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kļūda: Filtrots SSO ceļš tiek ievērots visos iekāpšanās tokiem.
 - Kļūda: Tukšu vietnes identitātes opcijas saglabāti savkārtošanai.
 
-## Versija 2.9.0 — Izlaidums 2026-04-30
+## Versija 2.9.0 — Izlaidums 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Jauns: Pievienots vienasvietīgs vietnes izveide un importēšana sadaļā **Tools > Export & Import**.
 - Kļūda: ZIP failu izveide tagad tiek sniegta ar autentikētu lejupielādi.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kļūda: Tour ID normalizēti ar zīmējumiem (underscores) lietotāja iestatījumu sarakstā.
 - Uzlabots: Tagad tiek izmantota ZipArchive vietā Alchemy/Zippy labāka compatibilitātes dēļ.
 
-## Versija 2.8.0 — Izlaidums 2026-04-29
+## Versija 2.8.0 — Izlaidums 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Jauns: Iespējams ielikt Jumper toggleu, kas ir pievienots "Other Options" (Citi opcijas) saskrūves UI.
 - Jauns: Pievienota statusa stola checkout formām saraksta tabulā.

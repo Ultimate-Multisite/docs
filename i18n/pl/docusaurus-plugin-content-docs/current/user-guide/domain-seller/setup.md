@@ -3,21 +3,21 @@ title: Konfiguracja i ustawienia dostawcy
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: konfiguracja i konfiguracja dostawcy
+# Domain Seller: konfiguracja i konfiguracja dostawcy {#domain-seller-setup-and-provider-configuration}
 
 Dodatek Domain Seller zawiera prowadzony kreator konfiguracji, który przeprowadza Cię przez każdy wymagany krok. Ta strona omawia przebieg kreatora oraz sposób późniejszej konfiguracji lub ponownej konfiguracji dostawców.
 
-## Wymagania
+## Wymagania {#requirements}
 
 - **Multisite Ultimate** v2.4.12 lub nowszy, aktywowany w sieci
 - **PHP** 7.4+
 - Dane dostępowe API dla co najmniej jednego obsługiwanego rejestratora
 
-## Kreator pierwszej konfiguracji
+## Kreator pierwszej konfiguracji {#first-run-setup-wizard}
 
 Kreator konfiguracji uruchamia się automatycznie przy pierwszej aktywacji pluginu w sieci. Jest również dostępny w dowolnym momencie z poziomu **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Krok 1 — Wybierz dostawcę
+### Krok 1 — Wybierz dostawcę {#step-1--choose-a-provider}
 
 Wybierz rejestratora, którego chcesz połączyć. Obsługiwane opcje:
 
@@ -33,7 +33,7 @@ Wybierz rejestratora, którego chcesz połączyć. Obsługiwane opcje:
 | NameSilo | Nie | Nie |
 | Enom | Tak | Nie |
 
-### Krok 2 — Wprowadź dane dostępowe
+### Krok 2 — Wprowadź dane dostępowe {#step-2--enter-credentials}
 
 Każdy dostawca ma inne pola danych dostępowych:
 
@@ -57,17 +57,17 @@ Każdy dostawca ma inne pola danych dostępowych:
 
 Zaznacz **Tryb sandbox**, jeśli jest dostępny, aby przetestować środowisko testowe dostawcy przed uruchomieniem na żywo.
 
-### Krok 3 — Przetestuj połączenie
+### Krok 3 — Przetestuj połączenie {#step-3--test-the-connection}
 
 Kliknij **Test Connection**. Kreator wysyła lekkie wywołanie API, aby zweryfikować dane dostępowe i łączność. Napraw wszelkie problemy z danymi dostępowymi przed kontynuowaniem.
 
-### Krok 4 — Importuj TLD
+### Krok 4 — Importuj TLD {#step-4--import-tlds}
 
 Kliknij **Import TLDs**, aby pobrać wszystkie dostępne TLD i ceny hurtowe od połączonego dostawcy. Wypełnia to listę TLD używaną przez produkty domenowe. Import może potrwać 30–60 sekund w przypadku dostawców z dużymi katalogami TLD.
 
 TLD są również automatycznie ponownie synchronizowane raz dziennie za pomocą zaplanowanego zadania cron.
 
-### Krok 5 — Utwórz produkt domenowy
+### Krok 5 — Utwórz produkt domenowy {#step-5--create-a-domain-product}
 
 Kreator tworzy domyślny uniwersalny produkt domenowy z narzutem 10%. Możesz od razu edytować ten produkt albo pominąć ten krok i utworzyć produkty ręcznie w **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Zobacz [Produkty domenowe i ceny](./domain-products), aby uzyskać pełny przewo
 
 ---
 
-## Ponowna konfiguracja dostawcy
+## Ponowna konfiguracja dostawcy {#reconfiguring-a-provider}
 
 Przejdź do **Network Admin › Ultimate Multisite › Settings › Domain Seller** (lub kliknij **Settings** na liście pluginów).
 
@@ -88,17 +88,17 @@ Strona ustawień zawiera:
 - **Zarządzaj produktami domenowymi** — szybki link do listy Products
 - **Konfiguruj dostawców** — otwiera Integration Wizard, aby dodać lub ponownie skonfigurować dostawców
 
-### Dodawanie drugiego dostawcy
+### Dodawanie drugiego dostawcy {#adding-a-second-provider}
 
 Kliknij **Configure providers** i uruchom kreator ponownie dla nowego rejestratora. Możesz mieć wielu dostawców skonfigurowanych jednocześnie. Przypisz każdy produkt domenowy do konkretnego dostawcy albo pozostaw go przy domyślnym.
 
-### Ręczna synchronizacja TLD
+### Ręczna synchronizacja TLD {#syncing-tlds-manually}
 
 Na stronie ustawień kliknij **Sync TLDs** obok dowolnego skonfigurowanego dostawcy, aby pobrać najnowsze ceny. Jest to przydatne po tym, jak dostawca zaktualizuje ceny hurtowe lub doda nowe TLD.
 
 ---
 
-## Logi
+## Logi {#logs}
 
 Każdy dostawca zapisuje do własnego kanału logów. Logi można przeglądać w **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Każdy dostawca zapisuje do własnego kanału logów. Logi można przeglądać w
 
 ---
 
-## Uwagi dotyczące możliwości dostawców
+## Uwagi dotyczące możliwości dostawców {#provider-capability-notes}
 
 Nie każde API rejestratora udostępnia te same operacje. Dodatek pokazuje nieobsługiwane operacje za pomocą jasnych błędów widocznych dla administratora, zamiast kończyć się niepowodzeniem bez komunikatu.
 

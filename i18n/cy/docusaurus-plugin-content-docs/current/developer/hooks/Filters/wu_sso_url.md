@@ -4,13 +4,13 @@ title: Hidlydd - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Hidlydd: wu_sso_url
+# Hidlydd: wu_sso_url {#filter-wussourl}
 
 Yn hidlo URLs SSO a gynhyrchir cyn iddynt gael eu dychwelyd ar gyfer gweithredoedd cwsmeriaid traws-barth.
 
 Defnyddiwch yr hidlydd hwn pan fo angen i integreiddiad ychwanegu cyd-destun dibynadwy at ddolen SSO tenant sofran neu ddisodli URL y broker wrth gadw dilysiad token Ultimate Multisite.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Defnyddiwch yr hidlydd hwn pan fo angen i integreiddiad ychwanegu cyd-destun dib
 | $site_id | `int` | ID y safle targed ar gyfer yr ymweliad. |
 | $redirect_to | `string` | URL cyrchfan ar ôl dilysiad SSO llwyddiannus. |
 
-### Ers
+### Ers {#since}
 
 - 2.13.0
 
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Diffinnir yn `inc/sso/class-sso.php`.
 
 
-## Dychweliadau
+## Dychweliadau {#returns}
 
 URL SSO wedi'i hidlo.

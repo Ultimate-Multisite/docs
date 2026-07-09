@@ -3,13 +3,13 @@ title: Flūmen Registrātī
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Fluxus Registratus (v2)
+# Fluxus Registratus (v2) {#the-registration-flow-v2}
 
 _**NOTUM IMPORTANTEM: Hoc opus refertur ad Ultimate Multisite version 2.x.**_
 
 Utientes in diversis modis in network tuam se registrare possunt. Possunt formam registrationem tuam vel link partibilis ad plan pre-selectum uti. Hic tibi mostraremos quommodo clienti tui in network tuo se registrari possunt per vias disponibles et quid post hoc accipiat.
 
-## Utilizans Formam Registrationem:
+## Utilizans Formam Registrationem: {#using-the-registration-form}
 
 Hic est processus standard registrationis. Creas paginam registrationis cum **formam checkout** et hic erunt ubi tui clienti ad registrare in network tuum et subscribere ad plan irent. Possuit habere plures paginas registrationis, omnis cum formam registratione diversa si vis.
 
@@ -35,13 +35,13 @@ Si se han registrado en un plan de pago o si la verificación del correo electr�
 
 ![Sitio activado con enlace para iniciar sesión en el dashboard](/img/frontend/site-activated.png)
 
-## Uso de un Enlace Compartible:
+## Uso de un Enlace Compartible: {#using-a-shareable-link}
 
 El proceso de registrarse usando un enlace compartible es básicamente el mismo que el formulario de registro; la única diferencia es que al usar un enlace compartido, sus clientes pueden tener un producto o plantilla de sitio preseleccionado en el formulario de pago (consulte la sección Preseleccionar productos y plantillas mediante parámetros de URL) o quizás se les añada un código de cupón (consulte la sección Uso de Parámetros de URL).
 
 El proceso de registro será el mismo: deberán rellenar su nombre, nombre de usuario, dirección de correo electrónico, nombre del sitio web y título, etc... pero el plan o la plantilla del sitio ya estarán preseleccionados para ellos.
 
-### Registro Usando Pagos Manuales:
+### Registro Usando Pagos Manuales: {#registering-using-manual-payments}
 
 Si no desea usar PayPal, Stripe o ninguna otra pasarela de pago ofrecida por Ultimate Multisite o sus integraciones adicionales, puede utilizar pagos manuales para sus clientes. De esta manera, puede generar una factura para que la paguen en su procesador de pagos preferido después de registrarse en su red.
 

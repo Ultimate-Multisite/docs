@@ -3,31 +3,31 @@ title: Integrasi WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrasi WPMU DEV
+# Integrasi WPMU DEV {#wpmu-dev-integration}
 
-## Gambaran Keseluruhan
+## Gambaran Keseluruhan {#overview}
 WPMU DEV ialah platform WordPress yang menyeluruh, menawarkan hosting, plugin, dan pelbagai perkhidmatan untuk laman WordPress. Integrasi ini membolehkan penyegerakan domain secara automatik serta pengurusan sijil SSL antara Ultimate Multisite dan hosting WPMU DEV.
 
-## Ciri-ciri
+## Ciri-ciri {#features}
 - Penyegerakan domain secara automatik
 - Pengurusan sijil SSL
 - Percubaan pengesahan sijil SSL yang dilanjutkan
 
-## Keperluan
+## Keperluan {#requirements}
 Integrasi ini mengesan secara automatik jika anda menggunakan hosting WPMU DEV dan menggunakan API yang terbina dalam. Tiada konfigurasi tambahan diperlukan jika anda menggunakan hosting WPMU DEV.
 
 Integrasi ini menyemak kehadiran pemalar `WPMUDEV_HOSTING_SITE_ID`, yang ditakrifkan secara automatik apabila menggunakan hosting WPMU DEV.
 
-## Arahan Persediaan
+## Arahan Persediaan {#setup-instructions}
 
-### 1. Sahkan Hosting WPMU DEV
+### 1. Sahkan Hosting WPMU DEV {#1-verify-wpmu-dev-hosting}
 
 Jika anda menggunakan hosting WPMU DEV, pemalar yang diperlukan sepatutnya sudah ditakrifkan. Pastikan bahawa:
 
 1. Pemalar `WPMUDEV_HOSTING_SITE_ID` telah ditakrifkan dalam persekitaran anda
 2. Anda mempunyai keahlian WPMU DEV yang aktif dengan akses API
 
-### 2. Aktifkan Integrasi
+### 2. Aktifkan Integrasi {#2-enable-the-integration}
 
 1. Dalam admin WordPress anda, pergi ke Ultimate Multisite > Settings
 2. Navigasi ke tab "Domain Mapping"
@@ -35,9 +35,9 @@ Jika anda menggunakan hosting WPMU DEV, pemalar yang diperlukan sepatutnya sudah
 4. Aktifkan integrasi WPMU DEV
 5. Klik "Save Changes"
 
-## Cara Ia Berfungsi
+## Cara Ia Berfungsi {#how-it-works}
 
-### Penyegerakan Domain
+### Penyegerakan Domain {#domain-syncing}
 
 Apabila domain dipetakan dalam Ultimate Multisite:
 
@@ -45,33 +45,33 @@ Apabila domain dipetakan dalam Ultimate Multisite:
 2. Ia juga menambah versi www domain tersebut secara automatik
 3. WPMU DEV mengendalikan konfigurasi domain dan pengeluaran sijil SSL
 
-### Pengurusan Sijil SSL
+### Pengurusan Sijil SSL {#ssl-certificate-management}
 
 Integrasi ini dikonfigurasikan untuk meningkatkan bilangan percubaan pengesahan sijil SSL bagi hosting WPMU DEV, kerana ia mungkin mengambil sedikit masa untuk sijil SSL dikeluarkan dan dipasang. Secara lalai, ia akan mencuba sehingga 10 kali untuk pengesahan sijil SSL, berbanding 5 percubaan standard.
 
-## Nota Penting
+## Nota Penting {#important-notes}
 
-### Pembuangan Domain
+### Pembuangan Domain {#domain-removal}
 
 Pada masa ini, API WPMU DEV tidak menyediakan cara untuk membuang domain. Apabila pemetaan domain dibuang dalam Ultimate Multisite, domain tersebut akan kekal dalam akaun hosting WPMU DEV anda. Anda perlu membuangnya secara manual dari dashboard hosting WPMU DEV jika perlu.
 
-### Pengesahan API
+### Pengesahan API {#api-authentication}
 
 Integrasi ini menggunakan kunci API WPMU DEV yang disimpan dalam pangkalan data WordPress anda sebagai pilihan `wpmudev_apikey`. Ini ditetapkan secara automatik apabila anda menyambungkan laman anda ke WPMU DEV.
 
-## Penyelesaian Masalah
+## Penyelesaian Masalah {#troubleshooting}
 
-### Isu Sambungan API
+### Isu Sambungan API {#api-connection-issues}
 - Pastikan laman anda disambungkan dengan betul ke WPMU DEV
 - Semak bahawa pilihan `wpmudev_apikey` telah ditetapkan dalam pangkalan data WordPress anda
 - Pastikan keahlian WPMU DEV anda masih aktif
 
-### Isu Sijil SSL
+### Isu Sijil SSL {#ssl-certificate-issues}
 - WPMU DEV mungkin mengambil sedikit masa untuk mengeluarkan sijil SSL (biasanya 5-15 minit)
 - Integrasi ini dikonfigurasikan untuk menyemak sehingga 10 kali bagi sijil SSL
 - Jika sijil SSL masih tidak dikeluarkan selepas beberapa percubaan, hubungi sokongan WPMU DEV
 
-### Domain Tidak Ditambah
+### Domain Tidak Ditambah {#domain-not-added}
 - Semak log Ultimate Multisite untuk sebarang mesej ralat
 - Pastikan domain tersebut belum ditambah ke WPMU DEV
 - Pastikan pelan hosting WPMU DEV anda menyokong bilangan domain yang anda tambah

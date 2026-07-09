@@ -3,11 +3,11 @@ title: د هوکونو مرجع
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# د هوکونو ماخذ
+# د هوکونو ماخذ {#hooks-reference}
 
 په Ultimate Multisite کې د ټولو **59 کړنو** او **118 فلټرونو** لپاره په اتومات ډول جوړ شوي اسناد.
 
-## کړنې
+## کړنې {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — د تصدیق بیاګرځونې مخکې اجرا کېږي.
 - [set_auth_cookie](./Actions/set_auth_cookie) — د تصدیق cookie تر ټاکل کېدو سمدستي مخکې اجرا کېږي.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — وروسته له دې فعالېږي چې یو څیز ډیټابېس ته زیرمه شي.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin جوړوونکو ته اجازه ورکوي چې د خلاصولو بهیر ته کړنې ورزیاتې کړي.
 
-## چاڼګرونه
+## چاڼګرونه {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — د تصدیق کوکي د پای ته رسېدو مودې موده فلټر کوي.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — د تصدیق د بیا لېږد سکیم فلټر کوي.

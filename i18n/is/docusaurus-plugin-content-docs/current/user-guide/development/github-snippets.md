@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Hvernig notað til að nota Ultimate Multisite snippets í GitHub-tölvufærslunni okkar
+# Hvernig notað til að nota Ultimate Multisite snippets í GitHub-tölvufærslunni okkar {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Í GitHub-tölvufærslunni eru tilgjandi kóða sniðnir sem Ultimate Multisite notendur oft fært yfir, þegar þeir vilja bæta smá möguleika við, eins og að bæta Google Analytics skript á sign-up síðum eða hýða meta box frá admin dashboard.
 
@@ -19,7 +19,7 @@ Er 2 hátt fyrir þér að bæta kódinni við:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Hvernig nota sniðni á functions.php skriptinu þitt
+# Hvernig nota sniðni á functions.php skriptinu þitt {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Logga inn í WordPress Network admin dashboard og gae til Themes > Theme Editor (sjá mynd undir).
 
@@ -29,7 +29,7 @@ Er 2 hátt fyrir þér að bæta kódinni við:
 
 <!-- Mynd er ekki tilgjandi: WordPress Theme Editor sýnir að búa á functions.php file -->
 
-# Hvernig skapa Must-Use Plugins (mu-plugins)
+# Hvernig skapa Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress hefur möguleika sem leyfir þér að ladda sérstaklega sniðna möguleika nefndu "Must-Use Plugins", eða "mu-plugins" fyrir stund.
 

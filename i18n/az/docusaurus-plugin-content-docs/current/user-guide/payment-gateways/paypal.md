@@ -3,7 +3,7 @@ title: PayPal Qurmaq
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway-i Qurmaq (v2)
+# PayPal Gateway-i Qurmaq (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**MÜHİM QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
@@ -13,13 +13,13 @@ Stripe kimi, PayPal da onlayn ödənişlər üçün, xüsusilə WordPress saytla
 
 Qeyd edin ki, bu inteqrasiya üçün lazım olan API kimlik məlumatlarını əldə etmək üçün **PayPal Business hesabı** sahibi olmalısınız.
 
-## Şəbəkənizdə PayPal-ı aktivləşdirmək
+## Şəbəkənizdə PayPal-ı aktivləşdirmək {#enabling-paypal-on-your-network}
 
 PayPal-ı şəbəkənizdə mövcud bir ödəniş metodu kimi aktivləşdirmək üçün **Ultimate Multisite > Settings > Payments** bölməsinə keçin və PayPal yanındakı qutucuğu işarələyin.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Təlimatlı qurulma alətindən istifadə etmək
+## Təlimatlı qurulma alətindən istifadə etmək {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 ödəniş qapısı ayarları hissəsinə təlimatlı bir PayPal qurulma aləti əlavə edir. PayPal-ı aktivləşdirdiyiniz zaman, gateway-i necə bağlamaq istədiyinizi seçmək və yadda saxlamaqdan əvvəl hansı kimlik məlumatlarının hələ də lazım olduğunu təsdiqləmək üçün **Ultimate Multisite > Settings > Payments**-dəki alətdən istifadə edin.
 
@@ -30,7 +30,7 @@ Alət iki qurulma yolu dəstəkləyir:
 
 Əgər alətdə OAuth seçimi görmürsünüzsə, aşağıdakı əl ilə kimlik məlumatı daxiletmə prosesini tamamlayın. Gateway, əvvəlki Ultimate Multisite 2.x buraxılışlarındakı PayPal Business API kimlik məlumatları ilə işləyir.
 
-## PayPal API kimlik məlumatlarını almaq
+## PayPal API kimlik məlumatlarını almaq {#getting-the-paypal-api-credentials}
 
 PayPal ödəniş qapısı kimi aktivləşdirildikdən sonra, PayPal API **Username** , PayPal API **Password** və PayPal API **Signature** üçün sahələri doldurmanız lazım olacaq.
 

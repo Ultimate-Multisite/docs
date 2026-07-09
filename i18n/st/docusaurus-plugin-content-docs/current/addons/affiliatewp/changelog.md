@@ -3,7 +3,7 @@ title: AffiliateWP Lenane la liphetoho
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Nalane ea liphetoho ea AffiliateWP
+# Nalane ea liphetoho ea AffiliateWP {#affiliatewp-changelog}
 
 Mofuta: 2.0.1 - E lokollotsoe ka 2025-09-28
 

@@ -4,11 +4,11 @@ title: Parzûn - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands
+# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 sub_commands ji bo vê hebûnê çalak dibin diyar dike.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -16,9 +16,9 @@ sub_commands ji bo vê hebûnê çalak dibin diyar dike.
 | $command_base | `string` | Bingehê ku di command de rast piştî root tê bikaranîn. |
 | $this | `\Base_Manager` | Mînaka objeyê. |
 
-### Ji dema
+### Ji dema {#since}
 
 - 2.0.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) de li rêza 198 hatiye pênasekirin

@@ -4,11 +4,11 @@ title: 'Veiksmas - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 Suveikia po to, kai objektas išsaugomas duomenų bazėje.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Suveikia po to, kai objektas išsaugomas duomenų bazėje.
 | $this | `\Base_Model` | Objekto egzempliorius. |
 | $new | `bool` | True, jei objektas yra naujas. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.0
-### Šaltinis
+### Šaltinis {#source}
 
 - Apibrėžta [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) 624 eilutėje
 - Apibrėžta [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) 1754 eilutėje

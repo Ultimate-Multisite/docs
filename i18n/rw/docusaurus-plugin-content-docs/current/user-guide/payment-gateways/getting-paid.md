@@ -3,13 +3,13 @@ title: Kwishyurwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kwishyurwa (v2)
+# Kwishyurwa (v2) {#getting-paid-v2}
 
 _**ICYITONDERWA CY'INGENZI: Iyi ngingo ivuga kuri Ultimate Multisite verisiyo 2.x.**_
 
 Ultimate Multisite ifite sisitemu y'ubunyamuryango no kwishyuza yubatsemo. Kugira ngo sisitemu yacu yo kwishyuza ikore, twahujije uburyo bwo kwishyura bukoreshwa cyane mu bucuruzi bwo kuri internet. Uburyo bwo kwishyura busanzwe muri Ultimate Multisite ni _Stripe_ , _PayPal_ , na Kwishyura mu buryo bw'intoki. Ushobora kandi gukoresha _WooCommerce_ , _GoCardless_ na _Payfast_ kwakira ubwishyu ushyiraho add-ons zabigenewe.
 
-## Igenamiterere ry'ibanze
+## Igenamiterere ry'ibanze {#basic-settings}
 
 Ushobora kugena ubu buryo ubwo ari bwo bwose bwo kwishyura munsi y'igenamiterere ry'ubwishyu rya Ultimate Multisite. Ushobora kubibona ujya kuri **menu ya Ultimate Multisite > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Ibi birinda ko ubunyamuryango bugaragara nk'ubwivugurura mu buryo bwikora kandi 
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Aho wasanga gateways:
+## Aho wasanga gateways: {#where-to-find-the-gateways}
 
 Ushobora gutunganya gateways z'ubwishyu kuri iyo paji imwe ( **Ultimate Multisite > Settings > Payments**). Hasi gato ya **active payment gateways** , uzashobora kubona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ na _Manual_.
 
@@ -67,7 +67,7 @@ Dore kandi uko igenamiterere rya gateways z'ubwishyu rigaragara ryose:
 
 Noneho, niba ushaka gukoresha _WooCommerce_ , _GoCardless_ cyangwa _Payfast_ nka gateway yawe y'ubwishyu, uzakenera **gushyiraho no kugena add-ons zabyo**.
 
-### Uko washyiraho WooCommerce add-on:
+### Uko washyiraho WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Twumva ko _Stripe_ na _PayPal_ bitaboneka mu bihugu bimwe, ibyo bikagabanya cyangwa bikabangamira abakoresha Ultimate Multisite gukoresha plugin yacu neza. Ni yo mpamvu twakoze add-on yo guhuza _WooCommerce,_ ari yo plugin y'ubucuruzi bwo kuri internet ikunzwe cyane. Abatunganya porogaramu hirya no hino ku isi bakoze add-ons zo kuyihuza n'uburyo butandukanye bwo kwishyura. Twabyifashishije kugira ngo twagure gateways z'ubwishyu ushobora gukoresha hamwe na sisitemu yo kwishyuza ya Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Nyuma yo kuyikoresha, niba utarashyiramo kandi ngo ukoreshe plugin ya WooCommerc
 
 Kugira ngo usome ibindi ku nyongera ya WooCommerce Integration, **kanda hano**.
 
-### Uko washyiramo inyongera ya GoCardless:
+### Uko washyiramo inyongera ya GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Intambwe zo gushyiramo inyongera ya _GoCardless_ zisa cyane n’iz’inyongera ya _WooCommerce_. Nyamuneka jya ku rupapuro rw’inyongera maze uhitemo inyongera ya **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Iyo gushyiramo birangiye, uzoherezwa ku rupapuro rwa plugins. Aha, kanda gusa ku
 
 Kugira ngo umenye uko watangira gukoresha irembo rya _GoCardless_, **soma iyi nkuru**.
 
-### Uko washyiramo inyongera ya Payfast:
+### Uko washyiramo inyongera ya Payfast: {#how-to-install-the-payfast-add-on}
 
 Jya ku rupapuro rw’inyongera maze uhitemo inyongera ya **Ultimate Multisite: Payfast Gateway**.
 

@@ -3,7 +3,7 @@ title: Gudanar da Wurin
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# مدیریت سایت‌ها
+# مدیریت سایت‌ها {#managing-sites}
 
 سایت‌ها (یا زیرسایت‌ها) هسته کسب و کار WaaS شما هستند. Ultimate Multisite سه نوع سایت دارد:
 
@@ -11,13 +11,13 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 - **قالب‌های سایت** — سایت‌های از پیش تعریف شده‌ای که مشتریان می‌توانند آن‌ها را به عنوان نقطه شروع انتخاب کنند
 - **سایت اصلی** — شبکه اصلی شما
 
-## مشاهده سایت‌ها
+## مشاهده سایت‌ها {#viewing-sites}
 
 برای دیدن تمام زیرسایت‌های شبکه خود، به مسیر **Ultimate Multisite → Sites** بروید. هر سایت با نوعش مشخص می‌شود و می‌توانید آن را بر اساس همه سایت‌ها (All Sites)، مالک مشتری (Customer-Owned)، قالب‌ها (Templates) یا در انتظار (Pending) فیلتر کنید.
 
 ![صفحه لیست سایت‌ها](/img/admin/sites-list.png)
 
-## اضافه کردن یک سایت جدید
+## اضافه کردن یک سایت جدید {#adding-a-new-site}
 
 برای ایجاد یک سایت جدید، روی دکمه **Add Site** کلیک کنید. شما باید موارد زیر را ارائه دهید:
 
@@ -27,15 +27,15 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 
 گزینه **Copy Site** به شما اجازه می‌دهد یک سایت جدید را بر اساس یک قالب سایت موجود ایجاد کنید. وقتی فعال شود، می‌توانید انتخاب کنید که از کدام قالب به عنوان نقطه شروع استفاده کنید. مطمئن شوید که **Copy Media on Duplication** برای شامل فایل‌های رسانه‌ای باشد.
 
-## مدیریت یک سایت موجود
+## مدیریت یک سایت موجود {#managing-an-existing-site}
 
 برای باز کردن صفحه **Edit Site** روی هر سایتی روی **Manage** کلیک کنید. در اینجا موارد زیر را خواهید یافت:
 
-### اطلاعات پایه
+### اطلاعات پایه {#basic-information}
 
 نام سایت، نوع آن، شناسه سایت (Site ID) و توضیحات. همچنین دامنه نگاشت شده، عضویت مرتبط و حساب کاربری مشتری که مالک سایت است را مشاهده خواهید کرد.
 
-### گزینه‌های سایت
+### گزینه‌های سایت {#site-options}
 
 قابلیت‌ها و محدودیت‌های سایت را پیکربندی کنید:
 
@@ -47,7 +47,7 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 
 Akwai, a cikin gida da aka koya, wuraren yanar gizo suna bi ƙa'idar da aka sanya a matsayin yadda ake samun shiga (membership). Idan ka sanya ƙa'ida a matsayin wuri na site ɗin, wannan zai rage kafin ayyukan shiga.
 
-### Shigarwa (Associations)
+### Shigarwa (Associations) {#associations}
 
 Da ƙasa za ka samu bayani game da:
 
@@ -55,7 +55,7 @@ Da ƙasa za ka samu bayani game da:
 - **Membership** (shiga) da site yake bi a kansa
 - **Customer account** (kaunan abokin ciniki) da aka haɗa da site
 
-### Girar Wuri na Kananan Hanyar (Right Sidebar)
+### Girar Wuri na Kananan Hanyar (Right Sidebar) {#right-sidebar}
 
 A gefen yau da kullum, za ka iya:
 

@@ -3,11 +3,11 @@ title: Bestuur van Sisteem-E-posse
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Bestuur van Sisteem-E-posse
+# Bestuur van Sisteem-E-posse {#managing-system-emails}
 
 Ultimate Multisite stuur verskeie sisteme-e-posse vir gebeure soos registrasiebevestigings, betalingskwitansies en lidmaatskapswissigings. Jy kan hierdie e-pos-templates aanpas om by jou handelsmerk te pas.
 
-## Bekyk Sisteem-E-posse
+## Bekyk Sisteem-E-posse {#viewing-system-emails}
 
 Navigeer na **Ultimate Multisite → Settings** en klik op die **Emails** tab om e-pos-verwante instellings te sien.
 
@@ -21,7 +21,7 @@ Jy kan ook individuele e-pos-templates redigeer met behulp van die sisteme-e-pos
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Importeer Nuwe E-pos-Templates
+## Importeer Nuwe E-pos-Templates {#importing-new-email-templates}
 
 Nuwe Ultimate Multisite-weergawes en add-ons kan nuwe e-pos-templates registreer. Om konflik te voorkom, word nuwe templates nie outomaties bygevoeg nie — jy moet dit handmatig importeer.
 
@@ -32,7 +32,7 @@ Om nuwe e-pos-templates te importeer:
 3. Skakel die **Import Emails** opsie om beskikbare templates te sien
 4. Kies die templates wat jy wil importeer en bevestig
 
-## Herstel van E-pos-Templates
+## Herstel van E-pos-Templates {#resetting-email-templates}
 
 As jy 'n e-pos-template aangepas het en wil teruggaan na die standaardinhoud, het jy twee opsies:
 

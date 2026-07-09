@@ -4,11 +4,11 @@ title: Filtè - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filtre: wu_apc_get_meta
+# Filtre: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Pèmèt devlopè yo filtre valè final yo, epi ajoute nouvo ka pwosesis.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Non | Kalite | Deskripsyon |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Pèmèt devlopè yo filtre valè final yo, epi ajoute nouvo ka pwosesis.
 | $meta_type | `string` | Kalite done meta yo dwe rekipere. |
 | $meta_key | `string` | Non chan meta a. |
 
-### Depi
+### Depi {#since}
 
 - 1.4.0
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) nan liy 93
 
 
-## Retounen
+## Retounen {#returns}
 Nouvo valè default.

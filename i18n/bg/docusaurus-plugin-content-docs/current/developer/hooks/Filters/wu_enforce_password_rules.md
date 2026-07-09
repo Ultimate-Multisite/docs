@@ -4,13 +4,13 @@ title: Филтър - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Филтър, който определя дали да се прилагат допълнителни правила за пароли.
 
 Когато е `true`, прилага изисквания за минимална дължина и символи. Автоматично се активира за настройката "Super Strong" или когато функцията Strong Password на Defender Pro е активна.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 | $strength_setting | `string` | Стойността на настройката в админ панела. |
 | $defender_active | `bool` | Дали Strong Password на Defender Pro е активен. |
 
-### Since
+### Since {#since}
 
 - 2.4.0
-### Source
+### Source {#source}
 
 Defined in [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) at line 531

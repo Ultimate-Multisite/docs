@@ -3,13 +3,13 @@ title: Интеграцийн гарын авлага
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Интеграцийн гарын авлага
+# Интеграцийн гарын авлага {#integration-guide}
 
 Энэ гарын авлага нь Ultimate Multisite-тэй түгээмэл интеграцийн хэв маягуудыг хамарна, үүнд гадаад үйлчилгээнүүдтэй холбогдох, өөрийн төлбөрийн гарцууд бүтээх, мөн webhooks боловсруулах зэрэг орно.
 
 Тусгаарлагдсан түрээслэгчийн дэд бүтцийн хувьд sovereign tenant bootstrap, migration verification, SSO, болон teardown зааварчилгааг [Multi-Tenancy Integration](./multi-tenancy)-аас үзнэ үү.
 
-## CRM интеграци
+## CRM интеграци {#crm-integration}
 
 Шинэ хэрэглэгчид бүртгүүлэх үед харилцагчийн өгөгдлийг таны CRM рүү синк хийнэ үү:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Аналитикийн интеграци
+## Аналитикийн интеграци {#analytics-integration}
 
 Харилцагчийн амьдралын мөчлөгийн туршид бизнесийн гол үйл явдлуудыг хянаарай:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Дараагийн алхмууд
+## Дараагийн алхмууд {#next-steps}
 
 - [Custom Gateway Development](./custom-gateway) — Өөрийн төлбөрийн гарцыг бүтээгээрэй
 - [Webhook Handling](./webhooks) — Өөрийн webhook endpoint-уудыг үүсгээрэй

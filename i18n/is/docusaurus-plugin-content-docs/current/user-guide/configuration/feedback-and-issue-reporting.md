@@ -3,11 +3,11 @@ title: Til aðilfargildi og ávarðtölur
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Samræmi og Tilbylgdir við Klientum
+# Samræmi og Tilbylgdir við Klientum {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 hefur innbyggt kerfi fyrir tilbylgdir og tilbylgdir um það sem er ekki hlutverandi, sem leysir því að endvirkjafar geti merkt óhjákvæmilega svar og tilgreina vanda beint frá chat-menulinum. Þetta kerfi felur í sér stjórnun samþykki, sjálfskipta tilbylgdir kommando og AI-hjálpað sorteringu bak við skjalann.
 
-## Knúkur Ned (Thumbs-Down Button)
+## Knúkur Ned (Thumbs-Down Button) {#thumbs-down-button}
 
 Hvert sem texta sem AI-hjálparinn sender, sýnir **knúk ned** (👎) knapp. Þegar notandi klikkar á hana, getur hann merkt svar sem er óhjákvæmilega ekki hlutverandi eða óréttur.
 
@@ -15,7 +15,7 @@ Hvert sem texta sem AI-hjálparinn sender, sýnir **knúk ned** (👎) knapp. Þ
 - Þegar það klikkast á, opnast **Feedback Consent Modal**.
 - Tilbylgdin er tengd samræðarþráð og sérstaklega textanum.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Þegar notandi klikkar á knúk ned, sýnist einn samþykki modalur fyrir því að nýtt data sé send. Modalurinn:
 
@@ -26,13 +26,13 @@ Hvert sem texta sem AI-hjálparinn sender, sýnir **knúk ned** (👎) knapp. Þ
 
 Inga tilbylgdir eru rekinn eftir því sem notandi sjálfur bekreftar það.
 
-## Sjálfskipt Feedback Banner
+## Sjálfskipt Feedback Banner {#auto-prompt-feedback-banner}
 
 Í stuttu máli á síð endar samræðarinnar, getur hjálparinn sýna **sjálfskipt feedback banner** — ekki innrihaldsleg texta sem spyr um því hvort session var hlutverandi.
 
 Þessi banner sýnist sjálfskipt eftir lengd samræðarinnar og skilyrði á raunni. Hann tengist sama tilbylgdir ferli sem knúkur ned. Notendur geta skipti úr bannari án þess að gefa tilbylgdir.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Notendur geta hringt fram tilbylgdir ferli beint með því að skrifa `/report-issue` í inntakshlutinn fyrir chat. Þessi kommando:
 
@@ -42,7 +42,7 @@ Leitir að því að leita að auðveldlega viðbótshlut.
 
 `/report-issue` kommandoinn er til að nota í öllum samtalsformum (inline, floating widget, full-screen).
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 Tilgangurinn er sendur til AI triage lag sem:
 

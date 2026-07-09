@@ -3,11 +3,11 @@ title: Uendelezaji wa Lango Maalum
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Utengenezaji wa Gateway Maalum
+# Utengenezaji wa Gateway Maalum {#custom-gateway-development}
 
 Unaweza kuunda malango maalum ya malipo kwa kupanua darasa la `Base_Gateway`.
 
-## Darasa la Gateway
+## Darasa la Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Sajili Gateway
+## Sajili Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Mbinu Muhimu
+## Mbinu Muhimu {#key-methods}
 
 | Method | Kusudi |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Shughulikia maombi ya kurejesha pesa |
 | `get_payment_methods()` | Rudisha mbinu za malipo zilizohifadhiwa kwa mteja |
 
-## Vitambulisho vya kusasisha kwa memberships zinazojirudia
+## Vitambulisho vya kusasisha kwa memberships zinazojirudia {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 huruhusu miunganisho ya gateway kuripoti kama membership inayojirudia ina kitambulisho cha kusasisha kinachoweza kutumika tena kabla ya `auto_renew` kuhifadhiwa. Hook `wu_membership_has_renewal_credential` na urejeshe:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Ondoa alama ya kitambulisho kinachokosekana kama sehemu ya mtiririko uliofanikiwa wa gateway yako wa kuidhinisha upya baada ya kitambulisho kipya kinachoweza kutumika tena kuhifadhiwa.
 
-## Vidokezo
+## Vidokezo {#tips}
 
 - Daima rudisha `WP_Error` inapotokea hitilafu ili Ultimate Multisite iweze kushughulikia uonyeshaji wa makosa
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Tumia `wu_log_add()` kwa uwekaji kumbukumbu maalum wa gateway
 
-## Uwezo wa watoa huduma wa kiunganishi cha AI
+## Uwezo wa watoa huduma wa kiunganishi cha AI {#ai-connector-provider-capabilities}
 
 Miunganisho maalum inayopiga shughuli zinazoungwa mkono na kiunganishi cha AI inapaswa kuendana na seti ya watoa huduma wa OAuth inayotumika iliyoanzishwa na AI Provider for Anthropic Max v1.3.0:
 

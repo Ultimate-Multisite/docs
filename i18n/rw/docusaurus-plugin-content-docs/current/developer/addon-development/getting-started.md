@@ -3,9 +3,9 @@ title: Gutangira guteza imbere Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Guteza Imbere Inyongera
+# Guteza Imbere Inyongera {#addon-development}
 
-## Imiterere y’Inyongera
+## Imiterere y’Inyongera {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Inyandikorugero ya Dosiye Nyamukuru y’Inyongera
+## Inyandikorugero ya Dosiye Nyamukuru y’Inyongera {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Urugero rwa Model Yihariye
+## Urugero rwa Model Yihariye {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Guhuza Ipaji y’Ubuyobozi
+## Guhuza Ipaji y’Ubuyobozi {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Gusuzuma Addon yawe
+## Gusuzuma Addon yawe {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Ingingo zo kwagura za v2.13.0
+## Ingingo zo kwagura za v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 yongeramo ingingo nyinshi zo kwagura zifitiye akamaro addons zihuza na tenants bigenga, domains za checkout, cyangwa ihinduranya ryikora rya DNS ry’utanga ububiko.
 
-### SSO na URLs zo gucunga urubuga nyamukuru
+### SSO na URLs zo gucunga urubuga nyamukuru {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Domains shingiro za checkout-form
+### Domains shingiro za checkout-form {#checkout-form-base-domains}
 
 Koresha `wu_checkout_form_base_domains` igihe addon yawe itanga domains shingiro zisangiwe ziyongereye zigomba gukora nka domains za **Site URL** za checkout-form aho kuba custom mappings za buri rubuga:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite ishyira aba hosts ku murongo umwe kandi ikirengagiza records za mapped-domain zikorwa mu buryo bwikora kuri buri rubuga kuri zo.
 
-### Gukora domain-record mu buryo bwikora
+### Gukora domain-record mu buryo bwikora {#automatic-domain-record-creation}
 
 Koresha `wu_should_create_domain_record_for_site` igihe addon yawe ikeneye guhagarika cyangwa gusubika gukora domain-record mu buryo bwikora ku rubuga rushya rwakozwe:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Integrations z’abatanga ububiko zumva `wu_add_subdomain` zishobora gukora records za DNS ku ruhande rw’utanga serivisi igihe imbuga zakozwe. Niba nta integration yanditswe kuri icyo gikorwa, Ultimate Multisite isimbuka umurimo w’inyuma udafite ibirimo.
 
-## Intambwe Zikurikira
+## Intambwe Zikurikira {#next-steps}
 
 - Subiramo [Hooks Reference](/developer/hooks) kugira ngo urebe actions na filters bihari
 - Reba [Incamake ya REST API](/developer/rest-api/overview) kugira ngo uhuze API

@@ -3,11 +3,11 @@ title: Ubushobozi bwo Gucunga Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ubushobozi bwo Gucunga Imigereka
+# Ubushobozi bwo Gucunga Imigereka {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 izana **ubushobozi 7 bwo gucunga imigereka** umufasha wa AI ashobora gukoresha mu kiganiro. Ubu bushobozi butanga igenzura rishingiye kuri porogaramu ku migereka ya WordPress yashyizweho binyuze muri [Sisitemu yo Kubaka Imigereka na Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Incamake y'Ubushobozi
+## Incamake y'Ubushobozi {#abilities-overview}
 
 | Ubushobozi | Slug | Ibisobanuro |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 izana **ubushobozi 7 bwo gucunga imigereka** umufasha wa 
 | Shyiraho Umugereka | `install_plugin` | Ishyira umugereka wo muri sandbox mu bubiko bw'imigereka bwa WordPress bukora. |
 | Koresha Umugereka | `activate_plugin` | Ikoresha umugereka wo muri sandbox mu bidukikije bya sandbox bya wp-env. |
 
-## API yo Gushyiraho Umugereka
+## API yo Gushyiraho Umugereka {#plugin-installer-api}
 
 Ishyiraho ry'umugereka rikemura ibikorwa bya sisitemu y'amadosiye igihe hashyirwaho cyangwa hakurwaho imigereka. Imyitwarire y'ingenzi:
 
@@ -28,7 +28,7 @@ Ishyiraho ry'umugereka rikemura ibikorwa bya sisitemu y'amadosiye igihe hashyirw
 - **Kuvugurura**: Isimbuza amadosiye y'umugereka asanzwe. Ihagarika umugereka mbere yo kwandika kugira ngo hirindwe amakosa y'imiterere ituzuye.
 - **Gusiba hakoreshejwe slug**: Ishaka ububiko bw'umugereka hakoreshejwe slug, ikawuhagarika ku mbuga zose, hanyuma igakuraho ubwo bubiko.
 
-### Kwiyandikisha Handler Yihariye yo Gushyiraho
+### Kwiyandikisha Handler Yihariye yo Gushyiraho {#registering-a-custom-install-handler}
 
 Ushobora kwinjira mu ruzinduko rw'ishyiraho ukoresheje ibikorwa bya `gratis_ai_plugin_installer_before_install` na `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registry y'Ekosistemu
+## Registry y'Ekosistemu {#ecosystem-registry}
 
 Ubushobozi bwandikishwa binyuze muri **registry y'ekosistemu y'imigereka**. Registry ihuza slugs z'ubushobozi n'ibyiciro bya handler byabwo kandi ikabwereka dispatcher y'ibikoresho ya AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Ihuzabikorwa rya HookScanner
+## Ihuzabikorwa rya HookScanner {#hookscanner-integration}
 
 Ubushobozi bwa `create_plugin` na `update_plugin` buhita bukoresha **HookScanner** kuri code nshya yakozwe. HookScanner isubiza urutonde rwa WordPress action na filter hooks zanditswe n'umugereka.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner yirengagiza ububiko bwa `vendor/` na `node_modules/` mu buryo bwikora.
 
-## Imiterere y'Imirimo ya Async
+## Imiterere y'Imirimo ya Async {#async-job-architecture}
 
 Ibikorwa by'imigereka bifata igihe kirekire (gukora, gushyiraho) byoherezwa nka **imirimo ya async** ifite ikurikirana ry'iterambere ririho. Imigaragarire y'ibiganiro bya AI ibaza iterambere kenshi kandi ikohereza ivugururwa ry'imiterere ku mukoresha:
 

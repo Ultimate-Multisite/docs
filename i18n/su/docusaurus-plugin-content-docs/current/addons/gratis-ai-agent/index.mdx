@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent nyaéta asisten AI WordPress otonom anu bisa ngarencanakeun, ngawangun, jeung ngatur situs WordPress lengkep ngaliwatan paréntah basa alami. Ieu nyadiakeun sakumpulan **kamampuhan** anu terstruktur — tindakan misah anu bisa diuji jeung bisa dipaké ku agent — ngawengku sagala hal ti manajemén eusi nepi ka kustomisasi sistem desain. Vérsi 1.9.0 nambahkeun kamampuhan nyieun eusi, ulasan kaca visual ngaliwatan screenshot sisi klien, lima profil agent bawaan, jeung feature flags pikeun kontrol aksés jeung branding.
 
-## Fitur Utama
+## Fitur Utama {#key-features}
 
 - **Sistem kamampuhan** — katalog tindakan modular jeung bisa dimekarkeun anu bisa dipaké ku agent dina pamasangan WordPress anjeun
 - **Manajemén Eusi** — nyieun tulisan jeung kaca (kaasup netepkeun témplat kaca), nyieun sababaraha tulisan sakaligus dina hiji panggilan, netepkeun gambar unggulan, jeung ngawangun formulir kontak
@@ -28,21 +28,21 @@ Gratis AI Agent nyaéta asisten AI WordPress otonom anu bisa ngarencanakeun, nga
 - **Orkestrasi Site Builder v2** — rencana ngawangun situs sababaraha léngkah kalayan pamanggihan plugin, palacakan kamajuan, jeung pamulihan kasalahan
 - **Paréntah benchmark WP-CLI** — ngajalankeun suite benchmark kapabilitas agent tina command line pikeun CI jeung évaluasi modél
 
-## Sarat
+## Sarat {#requirements}
 
 - WordPress 6.0 atawa leuwih luhur
 - PHP 8.1 atawa leuwih luhur
 - WordPress Multisite (diaktipkeun jaringan) atawa pamasangan single-site
 - Plugin konektor panyadia AI anu aktip (Anthropic, OpenAI, atawa anu cocog)
 
-## Pamasangan
+## Pamasangan {#installation}
 
 1. Unggah file plugin ka `/wp-content/plugins/gratis-ai-agent`
 2. Aktipkeun plugin ngaliwatan layar **Plugins** dina WordPress
 3. Buka **Gratis AI Agent → Settings** jeung sambungkeun panyadia AI anjeun
 4. (Opsional) Kotéktak **Registri Kamampuhan** pikeun masang paket kamampuhan tambahan
 
-## Mimiti Gancang
+## Mimiti Gancang {#quick-start}
 
 Sanggeus diaktipkeun jeung disambungkeun ka panyadia AI, buka panel **Gratis AI Agent** dina sidebar admin WordPress. Ketik paréntah basa alami sarta agent bakal ngarencanakeun jeung ngalaksanakeun léngkah anu diperlukeun maké kamampuhan anu sadia.
 
@@ -60,7 +60,7 @@ Selapkeun palét warna modeu poék kana theme jeung setel warna primér jadi #1a
 Bangun ramatloka réstoran kalayan menu online, formulir booking, jeung kaca kontak.
 ```
 
-## Ringkesan Kamampuhan
+## Ringkesan Kamampuhan {#abilities-overview}
 
 Kamampuhan nyaéta tindakan atomik anu bisa dipigawé ku agent. Unggal kamampuhan nyaéta class PHP anu kadaptar anu nyadiakeun schema (parameter jeung tipe balik) anu dibaca ku agent nalika runtime. Kamampuhan dikelompokkeun kana widang fungsional:
 
@@ -79,7 +79,7 @@ Kamampuhan nyaéta tindakan atomik anu bisa dipigawé ku agent. Unggal kamampuha
 
 Tingali [Rujukan Kamampuhan](./abilities) pikeun dokuméntasi parameter lengkep jeung conto pamakéan.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent nyertakeun kulawarga paréntah `wp gratis-ai-agent` pikeun ngajalankeun benchmark jeung ngatur kamampuhan tina command line. Tingali [Rujukan WP-CLI](./wp-cli) pikeun daptar paréntah lengkep.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Sadaya setélan aya dina **Gratis AI Agent → Settings** di admin WordPress:
 
@@ -106,7 +106,7 @@ Sadaya setélan aya dina **Gratis AI Agent → Settings** di admin WordPress:
 | **Ability Timeout** | Detik maksimal hiji kamampuhan bisa dijalankeun (standar 30) |
 | **Debug Logging** | Catet panggilan kamampuhan jeung penalaran agent kana log debug WordPress |
 
-## Blocklist Kaamanan Manajemén Options
+## Blocklist Kaamanan Manajemén Options {#options-management-safety-blocklist}
 
 Kamampuhan Manajemén Options ngawengku blocklist bawaan anu nyegah agent maca atawa nulis options WordPress anu sénsitip. Blocklist standar ngawengku:
 
@@ -118,26 +118,26 @@ Kamampuhan Manajemén Options ngawengku blocklist bawaan anu nyegah agent maca a
 
 Éntri tambahan bisa ditambahkeun ngaliwatan filter `gratis_ai_agent_options_blocklist`.
 
-## Hooks jeung Filters
+## Hooks jeung Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — dijalankeun sanggeus hiji kamampuhan didaptarkeun, narima ngaran kelas kamampuhan
 - `gratis_ai_agent_plan_started` — dijalankeun nalika plan pangwangun situs mimiti dieksekusi
 - `gratis_ai_agent_plan_completed` — dijalankeun nalika plan réngsé kalayan hasil
 - `gratis_ai_agent_plan_failed` — dijalankeun nalika plan manggihan kasalahan anu teu bisa dipulihkeun
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — ngarobah daptar kamampuhan anu kadaptar saméméh agent ngamuatna
 - `gratis_ai_agent_options_blocklist` — ngalegaan atawa ngurangan blocklist kaamanan options
 - `gratis_ai_agent_benchmark_questions` — nambahkeun patarosan benchmark custom kana suite évaluasi
 - `gratis_ai_agent_plan_plugins` — ngarobah daptar panemuan plugin salila ngahasilkeun plan situs
 
-## Rojongan
+## Rojongan {#support}
 
 Pikeun rojongan, buka [ultimatemultisite.com](https://ultimatemultisite.com) atawa buka hiji issue dina repository plugin.
 
-## Changelog
+## Changelog {#changelog}
 
 Tingali [Changelog](./changelog) pikeun riwayat vérsi lengkep.

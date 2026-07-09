@@ -4,11 +4,11 @@ title: Sefa - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Sefa: wu_country_get_cities
+# Sefa: wu_country_get_cities {#filter-wucountrygetcities}
 
 Inodzosa rondedzero yemaguta edunhu munyika.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Inodzosa rondedzero yemaguta edunhu munyika.
 | $state_code | `string` | Kodhi yeISO yemavara maviri yedunhu. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance yekirasi yazvino. |
 
-### Kubva
+### Kubva {#since}
 
 - 2.0.11
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu[`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) pamutsetse 146
 
 
-## Zvinodzoka
+## Zvinodzoka {#returns}
 Rondedzero yakasefwa yematunhu.

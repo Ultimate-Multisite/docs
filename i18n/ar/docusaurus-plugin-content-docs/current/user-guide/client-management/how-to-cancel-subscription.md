@@ -3,7 +3,7 @@ title: كيفية إلغاء الاشتراك
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# كيف يمكنني إلغاء اشتراكي؟
+# كيف يمكنني إلغاء اشتراكي؟ {#how-can-i-cancel-my-subscription}
 
 إذا كان لديك ترخيص Ultimate Multisite، يمكنك إلغاء تجديده في أي وقت تريده. فقط اتبع الخطوات أدناه:
 

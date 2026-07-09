@@ -3,13 +3,13 @@ title: Rekisteröintivirta
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Rekisteröintoprosessi (v2)
+# Rekisteröintoprosessi (v2) {#the-registration-flow-v2}
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 
 Käyttäjät voivat rekisteröityä verkkoosi eri tavoilla. He voivat käyttää rekisteröintilomakettaasi tai jakamista linkkiä valitulle suunnitelmalle. Tässä selitämme, miten asiakkaat voivat rekisteröityä verkkoosi käytettävissä olevien polkujen avulla ja mitä heidän rekisteröityminen tapahtuu verkkoosi jälkeen.
 
-## Rekisteröintilomakkeen käyttö:
+## Rekisteröintilomakkeen käyttö: {#using-the-registration-form}
 
 Tämä on standardi rekisteröintiprosessi. Luo rekisteröintisivu, jossa on **checkout-lomake**, ja juuri sinne asiakkaat menevät rekisteröityäkseen verkkoosi ja tilatakseen suunnitelman. Voit luoda useita rekisteröintisivuja, joilla voi olla eri lomakkeet, jos haluat.
 
@@ -35,13 +35,13 @@ Jos he ovat rekisteröityneet maksulliseen suunnitelmaan tai sähköpostivahvist
 
 ![Sivusto aktivoitu sisäänkirjautumislinkillä hallintapaneeliin](/img/frontend/site-activated.png)
 
-## Jaaettavan linkin käyttö:
+## Jaaettavan linkin käyttö: {#using-a-shareable-link}
 
 Jaaettavan linkin avulla rekisteröityminen on periaatteessa sama kuin rekisteröitymislomake, ainoa ero on se, että jakamalla linkin asiakkaat voivat valita tuotteen tai verkkosivuston mallin etukäteen kassalla (katso osio Tuotteiden ja mallien esivalinta URL-parametrien avulla) tai ehkä lisätä alennuskoodia (katso osio URL-parametrien käyttö).
 
 Rekisteröitymisprosessi on sama: heidän täytyy täyttää nimi, käyttäjätunnus, sähköpostiosoite, verkkosivuston nimi ja otsikko jne... mutta suunnitelma tai sivustomalli on jo valittu heille etukäteen.
 
-### Manuaalisten maksujen käyttö:
+### Manuaalisten maksujen käyttö: {#registering-using-manual-payments}
 
 Jos et halua käyttää PayPalia, Stripea tai muuta maksupayrase, jota Ultimate Multisite tai sen lisäosat tarjoavat, voit käyttää manuaalisia maksuja asiakkaillesi. Tällä tavalla voit luoda heille laskunsa, jonka he voivat maksaa suosikkimaksutoverillasi heidän rekisteröityessään verkostossasi.
 

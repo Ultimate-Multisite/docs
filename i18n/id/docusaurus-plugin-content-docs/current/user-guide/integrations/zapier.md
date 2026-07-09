@@ -3,7 +3,7 @@ title: Integrasi Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Mengintegrasikan Ultimate Multisite dengan Zapier
+# Mengintegrasikan Ultimate Multisite dengan Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Dalam salah satu artikel, kami membahas [Webhooks](webhooks.md) dan bagaimana itu dapat digunakan untuk berintegrasi dengan aplikasi pihak ketiga.
 
@@ -15,7 +15,7 @@ Anda dapat membuat **Triggers** yang akan dijalankan saat event terjadi di jarin
 
 Hal ini dimungkinkan karena **trigger Ultimate Multisite Zapier** dan actions didukung oleh [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Cara memulai
+## Cara memulai {#how-to-start}
 
 Pertama, cari Ultimate Multisite di daftar aplikasi Zapier. Sebagai alternatif, Anda dapat mengeklik [tautan ini](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Pada field URL, masukkan URL lengkap jaringan Anda, termasuk protokol (HTTP atau
 
 Klik tombol **Yes, Continue** untuk melanjutkan ke langkah berikutnya. Jika semuanya berhasil, Anda akan disambut oleh Account baru Anda yang terhubung! Klik **Continue** untuk membuat trigger baru.
 
-## Cara membuat Trigger baru
+## Cara membuat Trigger baru {#how-to-create-a-new-trigger}
 
 Sekarang setelah Account Anda terhubung, Anda dapat melihat event yang tersedia. Mari pilih event **payment_received** untuk tutorial ini.
 
@@ -67,7 +67,7 @@ Pada tahap ini, Zapier akan menguji apakah Zap Anda dapat **mengambil payload sp
 
 Dalam tutorial kami, pengujian **berhasil diselesaikan** dan mengembalikan informasi contoh payload. Informasi contoh ini akan berguna untuk memandu kita saat membuat actions. Trigger Anda sekarang telah dibuat dan siap dihubungkan ke aplikasi lain.
 
-## Cara membuat Actions
+## Cara membuat Actions {#how-to-create-actions}
 
 Actions menggunakan informasi dari trigger lain untuk membuat entri baru di jaringan Anda.
 
@@ -79,7 +79,7 @@ Pada langkah berikutnya, Anda akan membuat autentikasi, seperti yang kita lakuka
 
 ![Memilih autentikasi untuk action Zapier](/img/admin/webhooks-list.png)
 
-### Menyiapkan Action
+### Menyiapkan Action {#setting-up-the-action}
 
 Ini adalah **langkah utama dari action** dan di sini semuanya sedikit berbeda. Informasi pertama yang akan Anda pilih adalah **Item**. Item adalah **model informasi** dari jaringan Anda seperti **Customers, Payments, Sites, Emails** dan lainnya.
 

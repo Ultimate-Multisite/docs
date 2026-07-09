@@ -3,17 +3,17 @@ title: Kaiuta Kōnae Whitinga o te Rā Tāpiritanga
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Kaituku Kōnae Sunrise Addon
+# Kaituku Kōnae Sunrise Addon {#addon-sunrise-file-loader}
 
 Ka tāpiri a Ultimate Multisite 2.8.0 i tētahi kaituku toronga sunrise mō ngā add-on me ngā whakaurunga MU-plugin ritenga me whakahaere i te wā o te tīmatanga sunrise o WordPress, me te kore e whakatika i te kōnae `wp-content/sunrise.php` kua hangaia.
 
-## Āhea whakamahia ai
+## Āhea whakamahia ai {#when-to-use-it}
 
 Whakamahia tētahi toronga sunrise ina me rere tō whakaurunga i mua i te utaina o ngā plugin auau, pērā i te ararere rohe ritenga, te whakahaere tono motuhake-ki-te-kaihautū, ngā whakatikatika tīmatanga whatunga tōmua rānei.
 
 Mō ngā whakaurunga noa, me mātua whakamahi i ngā plugin WordPress auau, ngā MU-plugin, me ngā hook Ultimate Multisite kua tuhia. Ka rere wawe rawa te waehere sunrise, ā, me noho iti, tūpato, kore-whirinaki hoki.
 
-## Tikanga whakaingoa kōnae
+## Tikanga whakaingoa kōnae {#file-naming-convention}
 
 Waihangatia tētahi kōnae PHP ko `sunrise.php` te ingoa ki roto i tētahi whaiaronga addon e tīmata ana tōna ingoa ki `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Ka utaina ngā kōnae ōrite i runga i te raupapa ā-āpū reta mā te ara addon.
 
-## Te wāhi hei whakatakoto i te kōnae
+## Te wāhi hei whakatakoto i te kōnae {#where-to-place-the-file}
 
 Whakatakotoria te kōnae ki te whaiaronga pūtake o te addon nōna te whanonga sunrise:
 
@@ -45,7 +45,7 @@ Ka whakatauria te matawai e hāngai ana ki `WP_CONTENT_DIR`, ehara i te uara o n
 
 Kaua e whakatika hāngai i te kōnae `wp-content/sunrise.php` kua hangaia. Mā te kaituku e āhei ai te waehere ritenga ki te whakawhānui i te whanonga sunrise me te kore e forking i te kōnae sunrise matua ka tāuta, ka whakahou hoki a Ultimate Multisite.
 
-## Ngā hook me ngā tātari e wātea ana
+## Ngā hook me ngā tātari e wātea ana {#hooks-and-filters-available}
 
 Ka rere ngā kōnae sunrise addon i muri i te utanga o te mahere rohe Ultimate Multisite, ā, i mua i te whakakānga a WordPress i `ms_loaded`. I tēnei wā ka taea e tētahi kōnae sunrise te:
 
@@ -58,7 +58,7 @@ Ka whakakā a Ultimate Multisite i `wu_sunrise_loaded` i muri i te otinga o tana
 
 Karangahia anake ngā function kua utaina kētia i te wāhanga sunrise. Kaua e mahi i ngā mahi taumaha-pātengi raraunga, te tāhuahua tātauira, ngā tono HTTP, me te waehere e whakapae ana kua oti kē te raupapa uta plugin noa.
 
-## Tauira iti rawa
+## Tauira iti rawa {#minimal-example}
 
 ```php
 <?php

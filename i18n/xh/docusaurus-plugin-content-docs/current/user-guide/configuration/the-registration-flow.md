@@ -3,13 +3,13 @@ title: Inkqubo yoBhaliso
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ukuhamba Kobhaliso (v2)
+# Ukuhamba Kobhaliso (v2) {#the-registration-flow-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite version 2.x.**_
 
 Abasebenzisi banokubhalisa ngeendlela ezahlukeneyo kwinethiwekhi yakho. Banokusebenzisa ifomu yakho yobhaliso okanye ikhonkco ekwabelwana ngalo kwisicwangciso esikhethwe kwangaphambili. Apha siza kukubonisa indlela abathengi bakho abanokubhalisa ngayo kwinethiwekhi yakho besebenzisa iindlela ezikhoyo nokuba kwenzeka ntoni emva kokuba bebhalisile kwinethiwekhi yakho.
 
-## Ukusebenzisa Ifomu Yobhaliso:
+## Ukusebenzisa Ifomu Yobhaliso: {#using-the-registration-form}
 
 Le yinkqubo yobhaliso eqhelekileyo. Udala iphepha lobhaliso eline-**ifomu ye-checkout** kwaye oku kuya kuba yindawo apho abathengi bakho baya kuya khona ukuze babhalise kwinethiwekhi yakho baze babhalisele isicwangciso. Ungaba namaphepha amaninzi obhaliso, ngalinye linefomu yobhaliso eyahlukileyo ukuba uyafuna.
 
@@ -35,13 +35,13 @@ Ukuba babhalise kwisicwangciso esihlawulelwayo okanye ukuqinisekiswa kwe-imeyile
 
 ![Isayithi ivuliwe inekhonkco lokungena kwi-dashboard](/img/frontend/site-activated.png)
 
-## Ukusebenzisa Ikhonkco Ekwabelwana Ngalo:
+## Ukusebenzisa Ikhonkco Ekwabelwana Ngalo: {#using-a-shareable-link}
 
 Inkqubo yokubhalisa usebenzisa ikhonkco ekwabelwana ngalo ifana ngokusisiseko nefomu yobhaliso, umahluko kuphela kukuba xa besebenzisa ikhonkco ekwabelwana ngalo, abathengi bakho banokuba nemveliso okanye itemplate yewebhusayithi ekhethwe kwangaphambili kwifomu ye-checkout (jonga icandelo elithi Ukukhetha iimveliso neetemplate kwangaphambili ngeeparameter ze-URL) okanye mhlawumbi ikhowudi yekhuphoni eyongeziweyo (jonga icandelo elithi Ukusebenzisa iiParameter ze-URL).
 
 Inkqubo yobhaliso iya kufana: kuya kufuneka bagcwalise igama labo, igama lomsebenzisi, idilesi ye-imeyile, igama lewebhusayithi nesihloko, njl... kodwa isicwangciso okanye itemplate yesayithi iya kuba sele ikhethwe kwangaphambili kubo.
 
-### Ukubhalisa Usebenzisa Iintlawulo Zezandla:
+### Ukubhalisa Usebenzisa Iintlawulo Zezandla: {#registering-using-manual-payments}
 
 Ukuba awufuni ukusebenzisa i-PayPal, Stripe okanye nayiphi na enye i-gateway yentlawulo enikelwa yi-Ultimate Multisite okanye ukudityaniswa kwayo kwe-add-on, ungasebenzisa iintlawulo zezandla kubathengi bakho. Ngale ndlela, unokubenzela i-invoice ukuze bayihlawule kwiprosesa yentlawulo oyikhethayo emva kokuba bebhalisile kwinethiwekhi yakho.
 

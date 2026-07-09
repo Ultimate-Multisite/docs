@@ -3,11 +3,11 @@ title: Horumarinta Gateway-ka La Habeeyey
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Horumarinta Albaabka Lacag-bixinta ee Gaarka ah
+# Horumarinta Albaabka Lacag-bixinta ee Gaarka ah {#custom-gateway-development}
 
 Waxaad abuuri kartaa albaabbo lacag-bixineed oo gaar ah adigoo ballaarinaya class-ka `Base_Gateway`.
 
-## Class-ka Gateway
+## Class-ka Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Diiwaangeli Gateway-ka
+## Diiwaangeli Gateway-ka {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Hababka Muhiimka ah
+## Hababka Muhiimka ah {#key-methods}
 
 | Hab | Ujeeddo |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Maaree codsiyada lacag-celinta |
 | `get_payment_methods()` | Soo celi hababka lacag-bixinta ee loo kaydiyay macmiil |
 
-## Aqoonsiyada cusboonaysiinta ee memberships soo-noqnoqda
+## Aqoonsiyada cusboonaysiinta ee memberships soo-noqnoqda {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 waxay u oggolaanaysaa isku-xirnaanta gateway inay soo sheegaan haddii membership soo-noqnoqda uu leeyahay aqoonsi cusboonaysiin dib loo isticmaali karo ka hor inta aan `auto_renew` la kaydin. Hook `wu_membership_has_renewal_credential` oo soo celi:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Nadiifi calaamadda aqoonsiga maqan iyadoo qayb ka ah socodka dib-u-oggolaanshaha guulaystay ee gateway-kaaga ka dib marka aqoonsi cusub oo dib loo isticmaali karo la kaydiyo.
 
-## Talooyin
+## Talooyin {#tips}
 
 - Had iyo jeer soo celi `WP_Error` marka fashil dhaco si Ultimate Multisite ay u maareyn karto muujinta qaladka
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Isticmaal `wu_log_add()` diiwaangelinta u gaar ah gateway
 
-## Awoodaha bixiyaha isku-xiraha AI
+## Awoodaha bixiyaha isku-xiraha AI {#ai-connector-provider-capabilities}
 
 Isku-xirnaanta gaarka ah ee waca hawlgallada ku tiirsan isku-xiraha AI waa inay la jaanqaadaan qaybta bixiyeyaasha OAuth ee la taageero ee lagu soo bandhigay AI Provider for Anthropic Max v1.3.0:
 

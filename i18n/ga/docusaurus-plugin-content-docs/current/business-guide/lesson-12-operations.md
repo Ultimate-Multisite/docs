@@ -3,17 +3,17 @@ title: 'Ceacht 12: An Gnó a Reáchtáil'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ceacht 12: An Gnó a Reáchtáil
+# Ceacht 12: An Gnó a Reáchtáil {#lesson-12-running-the-business}
 
 Ní tionscadal é ardán a chríochnaíonn tú -- is gnó é a reáchtálann tú. Clúdaíonn an ceacht seo na hoibríochtaí laethúla a bhaineann le FitSite a bhainistiú: tacaíocht, billeáil, cothabháil, agus custaiméirí a choinneáil sásta.
 
-## An Áit ar Fhágamar As
+## An Áit ar Fhágamar As {#where-we-left-off}
 
 Tá FitSite beo agus tá custaiméirí ag clárú. Anois ní mór duit an oibríocht a reáchtáil ar bhealach inbhuanaithe.
 
-## Oibríochtaí Laethúla
+## Oibríochtaí Laethúla {#daily-operations}
 
-### Monatóireacht
+### Monatóireacht {#monitoring}
 
 Seiceáil iad seo go laethúil (nó socraigh foláirimh):
 
@@ -22,7 +22,7 @@ Seiceáil iad seo go laethúil (nó socraigh foláirimh):
 - **Íocaíochtaí teipthe**: An bhfuil teipeanna íocaíochta ann a dteastaíonn aird uathu?
 - **Iarratais tacaíochta**: An bhfuil ceisteanna custaiméirí gan freagra?
 
-### Tacaíocht do Chustaiméirí
+### Tacaíocht do Chustaiméirí {#customer-support}
 
 Is buntáiste anseo é d’fhócas nideoige. Toisc gur stiúideonna aclaíochta iad do chustaiméirí go léir, feicfidh tú na ceisteanna céanna arís agus arís eile:
 
@@ -36,7 +36,7 @@ Is buntáiste anseo é d’fhócas nideoige. Toisc gur stiúideonna aclaíochta 
 
 Tóg do bhunachar eolais (a tosaíodh i gCeacht 8) timpeall ar na ceisteanna athfhillteacha seo. Is comhartha é gach ticéad tacaíochta a d’fhéadfadh a bheith ina alt bunachair eolais gur cheart an t-alt sin a scríobh.
 
-### Sraitheanna Tacaíochta
+### Sraitheanna Tacaíochta {#support-tiers}
 
 De réir mar a fhásann tú, struchtúraigh tacaíocht de réir plean:
 
@@ -48,9 +48,9 @@ De réir mar a fhásann tú, struchtúraigh tacaíocht de réir plean:
 
 Is féidir leis an [mbreiseán ticéid tacaíochta](/addons/support-tickets) cabhrú le hiarratais tacaíochta a bhainistiú laistigh den ardán.
 
-## Oibríochtaí Billeála
+## Oibríochtaí Billeála {#billing-operations}
 
-### Íocaíochtaí Athfhillteacha
+### Íocaíochtaí Athfhillteacha {#recurring-payments}
 
 Láimhseálann Ultimate Multisite billeáil athfhillteach go huathoibríoch trí do gheata íocaíochta. Is é do phost monatóireacht a dhéanamh ar:
 
@@ -58,7 +58,7 @@ Láimhseálann Ultimate Multisite billeáil athfhillteach go huathoibríoch trí
 - **Dunning**: Socraigh loighic atriail uathoibrithe trí do gheata íocaíochta (láimhseálann Stripe é seo go maith)
 - **Iarratais chealaithe**: Tuig cén fáth a bhfágann custaiméirí. Is aiseolas é gach cealú.
 
-### Ballraíochtaí a Bhainistiú
+### Ballraíochtaí a Bhainistiú {#managing-memberships}
 
 Téigh chuig **Ultimate Multisite > Ballraíochtaí** chun:
 
@@ -69,13 +69,13 @@ Téigh chuig **Ultimate Multisite > Ballraíochtaí** chun:
 
 Féach [Ballraíochtaí a Bhainistiú](/user-guide/administration/managing-memberships) don tagairt iomlán.
 
-### Sonrascú
+### Sonrascú {#invoicing}
 
 Cinntigh go ngintear sonraisc i gceart do gach íocaíocht. D’fhéadfadh go mbeadh sonraisc ag teastáil ó chustaiméirí le haghaidh tuairisciú costas gnó. Féach [Íocaíochtaí agus Sonraisc a Bhainistiú](/user-guide/administration/managing-payments-and-invoices).
 
-## Cothabháil an Ardáin
+## Cothabháil an Ardáin {#platform-maintenance}
 
-### Nuashonruithe WordPress agus Breiseán
+### Nuashonruithe WordPress agus Breiseán {#wordpress-and-plugin-updates}
 
 Mar riarthóir an líonra, tá tú freagrach as:
 
@@ -88,14 +88,14 @@ Mar riarthóir an líonra, tá tú freagrach as:
 Bíonn tionchar ag nuashonrú briste ar gach suíomh custaiméara ar do líonra. Tástáil nuashonruithe i gcónaí ar chóip stáitse de do líonra ar dtús.
 :::
 
-### Slándáil
+### Slándáil {#security}
 
 - Coinnigh gach bogearra cothrom le dáta
 - Úsáid pasfhocail láidre agus fíordheimhniú dhá fhachtóir do chuntais riarthóra
 - Déan monatóireacht ar ghníomhaíocht amhrasach
 - Bíodh plean agat d’eachtraí slándála
 
-### Feidhmíocht
+### Feidhmíocht {#performance}
 
 De réir mar a fhásann do líonra, déan monatóireacht ar:
 
@@ -105,9 +105,9 @@ De réir mar a fhásann do líonra, déan monatóireacht ar:
 
 Smaoinigh ar thaisceadh a chur i bhfeidhm (taisce leathanaigh, taisce réad) agus CDN mura bhfuil sé déanta agat cheana. Láimhseálann an [comhtháthú Cloudflare](/user-guide/host-integrations/cloudflare) cuid mhór de seo.
 
-## Bainistiú Shaolré an Chustaiméara
+## Bainistiú Shaolré an Chustaiméara {#customer-lifecycle-management}
 
-### Churn a Laghdú
+### Churn a Laghdú {#reducing-churn}
 
 Is é churn céatadán na gcustaiméirí a chealaíonn gach mí. Do ghnó síntiúis, tá churn a laghdú chomh tábhachtach le custaiméirí nua a fháil.
 
@@ -119,7 +119,7 @@ Is é churn céatadán na gcustaiméirí a chealaíonn gach mí. Do ghnó sínti
 - D’aimsigh siad rogha níos saoire → treisigh do luach nideoige
 - Dhún a ngnó → dosheachanta, ach rianaigh é seo ar leithligh
 
-### Uasghráduithe a Spreagadh
+### Uasghráduithe a Spreagadh {#encouraging-upgrades}
 
 Ba cheart custaiméirí ar Starter atá ag éirí leo a spreagadh chun uasghrádú:
 
@@ -127,7 +127,7 @@ Ba cheart custaiméirí ar Starter atá ag éirí leo a spreagadh chun uasghrád
 - Seol ríomhphoist spriocdhírithe a aibhsíonn gnéithe phlean Growth a rachadh chun tairbhe dóibh
 - Taispeáin an méid atá tógtha ag custaiméirí Growth/Pro
 
-### Feachtais Win-Back
+### Feachtais Win-Back {#win-back-campaigns}
 
 Nuair a chealaíonn custaiméir:
 
@@ -135,30 +135,30 @@ Nuair a chealaíonn custaiméir:
 2. Tabhair aghaidh ar a n-imní más féidir
 3. Tairg lascaine chun filleadh (30-60 lá tar éis cealaithe)
 
-## Gnáthaimh Sheachtainiúla agus Mhíosúla
+## Gnáthaimh Sheachtainiúla agus Mhíosúla {#weekly-and-monthly-routines}
 
-### Seachtainiúil
+### Seachtainiúil {#weekly}
 
 - Athbhreithnigh clárúcháin nua agus cealuithe
 - Freagair gach ticéad tacaíochta oscailte
 - Seiceáil feidhmíocht agus uptime an ardáin
 - Athbhreithnigh aon íocaíochtaí teipthe
 
-### Míosúil
+### Míosúil {#monthly}
 
 - Déan anailís ar phríomh-mhéadrachtaí (MRR, churn, custaiméirí nua, uasghráduithe)
 - Cuir nuashonruithe WordPress agus breiseán i bhfeidhm (tar éis tástála stáitse)
 - Athbhreithnigh agus nuashonraigh an bunachar eolais bunaithe ar phatrúin tacaíochta
 - Seol nuachtlitir nó nuashonrú chuig custaiméirí (gnéithe nua, leideanna, nuacht thionscal na haclaíochta)
 
-### Ráithiúil
+### Ráithiúil {#quarterly}
 
 - Athbhreithnigh praghsáil i gcomparáid le hiomaitheoirí agus aiseolas custaiméirí
 - Déan dearadh teimpléad a mheas -- an gá iad a athnuachan?
 - Measúnú a dhéanamh ar acmhainn óstála -- an gá duit scálú?
 - Athbhreithnigh agus feabhsaigh ionduchtú bunaithe ar shonraí gníomhachtaithe
 
-## An Méid a Thógamar sa Cheacht Seo
+## An Méid a Thógamar sa Cheacht Seo {#what-we-built-this-lesson}
 
 - **Gnáthaimh mhonatóireachta laethúla** le haghaidh uptime, clárúchán, íocaíochtaí, agus tacaíochta
 - **Struchtúr tacaíochta sraitheach** atá comhoiriúnaithe le leibhéil plan

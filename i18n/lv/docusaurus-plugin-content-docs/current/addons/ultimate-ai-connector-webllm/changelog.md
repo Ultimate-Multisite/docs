@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM izmaiņu žurnāls
+# Ultimate AI Connector for WebLLM izmaiņu žurnāls {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versija 1.1.0 — izlaista 2026-04-09
+## Versija 1.1.0 — izlaista 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Jauns: peldošs tērzēšanas logrīks ar admin-bar statusa indikatoru — jebkurš pieteicies lietotājs var uzdot vaicājumu pārlūka puses LLM tieši no priekšgala.
 * Jauns: SharedWorker izpildlaiks — MLC dzinis tagad darbojas SharedWorker, lai vairākas cilnes koplietotu vienu GPU sesiju, nevis savstarpēji par to cīnītos.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Labojums: pieslēgt WebLLM wpai_preferred_text_models filtram, lai AI Experiments funkcija maršrutētu uz pārlūka dzini, kad ir konfigurēts modelis.
 * Uzlabots: kešatmiņas apiešana, satura normalizācija un aparatūras atsauču labojumi, kas atklājās pilna cikla testēšanas laikā.
 
-## Versija 1.0.0 — sākotnējais laidiens
+## Versija 1.0.0 — sākotnējais laidiens {#version-100--initial-release}

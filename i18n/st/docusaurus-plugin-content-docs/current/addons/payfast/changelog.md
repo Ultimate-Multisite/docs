@@ -3,7 +3,7 @@ title: Lenane la liphetoho la PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Lenane la liphetoho la PayFast
+# Lenane la liphetoho la PayFast {#payfast-changelog}
 
 Version: 1.0.2 - E lokollotsoe ka 2025-09-28
 

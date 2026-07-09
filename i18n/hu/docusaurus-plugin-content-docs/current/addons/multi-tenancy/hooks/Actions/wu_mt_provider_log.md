@@ -4,11 +4,11 @@ title: Akció - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Action: wu_mt_provider_log
+# Action: wu_mt_provider_log {#action-wumtproviderlog}
 
 Elküldődik, amikor egy szolgáltató üzenetet naplózik.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Elküldődik, amikor egy szolgáltató üzenetet naplózik.
 | $level | `string` | A napló szintje. |
 | $context | `array` | További kontextus/adatok. |
 
-### Desde
+### Desde {#since}
 
 - 1.0.0
-### Forrás
+### Forrás {#source}
 
 Definálva a [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400) fájlban, 400-sorban.

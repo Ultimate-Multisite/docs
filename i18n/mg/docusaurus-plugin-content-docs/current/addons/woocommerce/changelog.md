@@ -3,7 +3,7 @@ title: Tantaran'ny fanovana amin'ny Fampidirana WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Firaketana fanovan'ny WooCommerce Integration
+# Firaketana fanovan'ny WooCommerce Integration {#woocommerce-integration-changelog}
 
 Version 2.2.0 - Navoaka tamin'ny 2026-07-01
 * Vaovao: Miseho ho andalana sarany WooCommerce misaraka amin'ny fandoavana izao ny sandan-ketran'ny Ultimate Multisite, ka mazava kokoa ny fitambaran-ketra alohan'ny fandoavana.

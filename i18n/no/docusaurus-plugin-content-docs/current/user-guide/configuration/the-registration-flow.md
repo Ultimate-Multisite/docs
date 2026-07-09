@@ -3,13 +3,13 @@ title: Registreringsflyten
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registreringsflyten (v2)
+# Registreringsflyten (v2) {#the-registration-flow-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
 Brukere kan registrere seg på ulike måter i nettverket ditt. De kan bruke registreringsskjemaet ditt eller en delbar lenke til et forhåndsvalgt abonnement. Her viser vi deg hvordan kundene dine kan registrere seg i nettverket ditt ved å bruke de tilgjengelige veiene, og hva som skjer etter at de registrerer seg i nettverket ditt.
 
-## Bruke registreringsskjemaet:
+## Bruke registreringsskjemaet: {#using-the-registration-form}
 
 Dette er standard registreringsprosess. Du oppretter en registreringsside med et **checkout-skjema**, og dette blir stedet kundene dine går til for å registrere seg i nettverket ditt og abonnere på et abonnement. Du kan ha flere registreringssider, hver med et annet registreringsskjema hvis du ønsker.
 
@@ -35,13 +35,13 @@ Hvis de har registrert seg på et betalt abonnement, eller e-postbekreftelse ikk
 
 ![Nettsted aktivert med lenke for å logge inn på Dashboard](/img/frontend/site-activated.png)
 
-## Bruke en delbar lenke:
+## Bruke en delbar lenke: {#using-a-shareable-link}
 
 Prosessen for registrering med en delbar lenke er i utgangspunktet den samme som registreringsskjemaet. Den eneste forskjellen er at med en delbar lenke kan kundene dine ha et produkt eller en nettstedsmal forhåndsvalgt i checkout-skjemaet (se delen om å forhåndsvelge produkter og maler via URL-parametere), eller kanskje en kupongkode lagt til (se delen om bruk av URL-parametere).
 
 Registreringsprosessen vil være den samme: de må fylle ut navn, brukernavn, e-postadresse, nettstedsnavn og tittel osv., men abonnementet eller nettstedsmalen vil allerede være forhåndsvalgt for dem.
 
-### Registrering med manuelle betalinger:
+### Registrering med manuelle betalinger: {#registering-using-manual-payments}
 
 Hvis du ikke vil bruke PayPal, Stripe eller noen annen betalingsløsning som tilbys av Ultimate Multisite eller integrasjonene i tilleggene, kan du bruke manuelle betalinger for kundene dine. På denne måten kan du generere en faktura som de kan betale hos din foretrukne betalingsbehandler etter at de registrerer seg i nettverket ditt.
 

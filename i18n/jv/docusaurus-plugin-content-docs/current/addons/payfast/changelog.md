@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Cathetan Owah-owahan PayFast
+# Cathetan Owah-owahan PayFast {#payfast-changelog}
 
 Versi: 1.0.2 - Dirilis ing 2025-09-28
 

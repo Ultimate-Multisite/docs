@@ -4,11 +4,11 @@ title: 'Амал - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Ба таҳиягарони plugin иҷозат медиҳад, ки ба саҳифаҳои мо hooks-и иловагӣ илова кунанд.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 | $page_hook | `string` | hook-и саҳифаи ин саҳифа. |
 | $admin_page | `self` | Намунаи саҳифа. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 1.8.2
 - 2.0.4: Параметри сеюм илова шуд: намунаи саҳифа.
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) дар сатри 332 муайян шудааст.

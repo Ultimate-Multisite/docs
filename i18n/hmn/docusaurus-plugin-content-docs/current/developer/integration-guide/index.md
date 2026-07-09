@@ -3,13 +3,13 @@ title: Phau Ntawv Qhia Kev Sib Txuas
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Phau Ntawv Qhia Kev Sib Txuas
+# Phau Ntawv Qhia Kev Sib Txuas {#integration-guide}
 
 Phau ntawv qhia no piav txog cov qauv kev sib txuas uas nquag siv nrog Ultimate Multisite, suav nrog kev txuas mus rau cov kev pabcuam sab nraud, tsim cov payment gateways kho raws xav tau, thiab tswj webhooks.
 
 Rau tenant infrastructure uas cais nyob ib leeg, saib [Multi-Tenancy Integration](./multi-tenancy) rau sovereign tenant bootstrap, kev txheeb xyuas migration, SSO, thiab kev qhia teardown.
 
-## Kev Sib Txuas CRM
+## Kev Sib Txuas CRM {#crm-integration}
 
 Sync cov ntaub ntawv customer mus rau koj CRM thaum muaj customers tshiab sau npe:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Kev Sib Txuas Analytics
+## Kev Sib Txuas Analytics {#analytics-integration}
 
 Taug qab cov business events tseem ceeb thoob plaws customer lifecycle:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Kauj Ruam Tom Ntej
+## Kauj Ruam Tom Ntej {#next-steps}
 
 - [Kev Tsim Custom Gateway](./custom-gateway) — Tsim koj tus kheej payment gateway
 - [Kev Tswj Webhook](./webhooks) — Tsim custom webhook endpoints

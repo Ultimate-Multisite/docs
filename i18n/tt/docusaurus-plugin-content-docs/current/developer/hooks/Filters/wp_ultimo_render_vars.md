@@ -4,11 +4,11 @@ title: Фильтр - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Фильтр: wp_ultimo_render_vars
+# Фильтр: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Плагин эшләүчеләренә күрсәтү контекстына глобаль рәвештә өстәмә үзгәреш өстәргә мөмкинлек бирә.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | Күрсәтеләчәк күренеш исеме. |
 | $default_view | `string` | fallback_view исеме |
 
-### Кайчаннан бирле
+### Кайчаннан бирле {#since}
 
 - 2.0.0
-### Чыганак
+### Чыганак {#source}
 
 [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) эчендә 31 нче юлда билгеләнгән
 
 
-## Кайтара
+## Кайтара {#returns}

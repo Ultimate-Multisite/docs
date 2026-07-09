@@ -3,11 +3,11 @@ title: Facultates administrationis pluginorum
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Facultates Administrationis Additamentorum
+# Facultates Administrationis Additamentorum {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 venit cum **7 facultatibus administrationis additamentorum** quas adiutor AI in colloquio invocare potest. Hae facultates regimen programmaticum praebent super additamenta WordPress instituta per [Systema Conditoris Additamentorum et Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Conspectus Facultatum
+## Conspectus Facultatum {#abilities-overview}
 
 | Facultas | Slug | Descriptio |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 venit cum **7 facultatibus administrationis additamentoru
 | Instrue Additamentum | `install_plugin` | Disponit additamentum sandbox ad directorium additamentorum WordPress vivum. |
 | Activa Additamentum | `activate_plugin` | Activat additamentum sandbox in ambitu sandbox wp-env. |
 
-## API Institutoris Additamentorum
+## API Institutoris Additamentorum {#plugin-installer-api}
 
 Institutor additamentorum operationes systematis fasciculorum tractat cum additamenta disponuntur aut removentur. Mores principales:
 
@@ -28,7 +28,7 @@ Institutor additamentorum operationes systematis fasciculorum tractat cum addita
 - **Renovatio**: Substituit fasciculos additamenti existentes. Additamentum ante scripturam deactivat, ut errores status partialis vitentur.
 - **Deletio per slug**: Directorium additamenti per slug invenit, per omnes situs deactivat, deinde directorium removet.
 
-### Registrare Gestorem Institutionis Consuetum
+### Registrare Gestorem Institutionis Consuetum {#registering-a-custom-install-handler}
 
 Potes in cyclum vitae institutionis inseri utens actionibus `gratis_ai_plugin_installer_before_install` et `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registrum Ecosystematis
+## Registrum Ecosystematis {#ecosystem-registry}
 
 Facultates per **registrum ecosystematis additamentorum** registrantur. Registrum slug facultatum ad classes gestorum earum refert et eas distributori instrumentorum agentis AI exponit.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integratio HookScanner
+## Integratio HookScanner {#hookscanner-integration}
 
 Facultates `create_plugin` et `update_plugin` automatice currunt **HookScanner** contra codicem nuper generatum. HookScanner reddit indicem actionum WordPress et hamorum filtrorum ab additamento registratorum.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner directoria `vendor/` et `node_modules/` automatice praeterit.
 
-## Architectura Operum Async
+## Architectura Operum Async {#async-job-architecture}
 
 Operationes additamentorum diuturnae (generare, instituere) mittuntur ut **opera async** cum vestigatione progressus viva. Interfacies colloquii AI progressum percontatur et renovationes status ad usorem flumine transmittit:
 

@@ -3,17 +3,17 @@ title: Treo Dearaidh
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Treo Dearaidh
+# Treo Dearaidh {#design-direction}
 
 Ligeann céim **Treo Dearaidh** duit dearadh amhairc do théama a athbhreithniú, a mhionchoigeartú, agus a thabhairt chun críche sula ngineann Theme Builder an téama iomlán.
 
-## Forbhreathnú
+## Forbhreathnú {#overview}
 
 Tar éis duit an tAgallamh Fionnachtana a chur i gcrích, cuireann Theme Builder do threo dearaidh i láthair le **léiriú réamhamhairc deisce agus soghluaiste**. Ligeann sé seo duit a fheiceáil go beacht conas a bheidh cuma do dhearaidh ar ghléasanna éagsúla sula ngeallann tú don téama.
 
-## Comhpháirteanna Treo Dearaidh
+## Comhpháirteanna Treo Dearaidh {#design-direction-components}
 
-### 1. Pailéad Dathanna
+### 1. Pailéad Dathanna {#1-color-palette}
 
 Scéim dathanna do théama, lena n-áirítear:
 
@@ -23,7 +23,7 @@ Scéim dathanna do théama, lena n-áirítear:
 - **Dathanna neodracha** — liathanna agus bána le haghaidh cúlraí agus téacs
 - **Dath téacs** — príomhdhath téacs ar mhaithe le hinléiteacht
 
-### 2. Clóghrafaíocht
+### 2. Clóghrafaíocht {#2-typography}
 
 Roghanna cló le haghaidh:
 
@@ -33,14 +33,14 @@ Roghanna cló le haghaidh:
 - **Airde líne** — spásáil idir línte ar mhaithe le hinléiteacht
 - **Meáchain cló** — leaganacha troma, rialta, agus éadroma
 
-### 3. Leagan Amach agus Spásáil
+### 3. Leagan Amach agus Spásáil {#3-layout-and-spacing}
 
 - **Leithead coimeádáin** — leithead uasta don ábhar
 - **Stuáil agus corrlaigh** — spásáil timpeall eilimintí
 - **Córas greille** — leagan amach colún le haghaidh dearadh freagrúil
 - **Spásáil comhpháirteanna** — fad idir eilimintí UI
 
-### 4. Eilimintí Amhairc
+### 4. Eilimintí Amhairc {#4-visual-elements}
 
 - **Stíleanna cnaipe** — dearaí cnaipe príomhúla, tánaisteacha, agus treasacha
 - **Dearaí cártaí** — leaganacha amach do bhlocanna ábhair
@@ -48,9 +48,9 @@ Roghanna cló le haghaidh:
 - **Teorainneacha agus scáthanna** — doimhneacht amhairc chaolchúiseach
 - **Éifeachtaí ainlithe** — stíliú staide idirghníomhaí
 
-## Léiriú Réamhamhairc
+## Léiriú Réamhamhairc {#preview-rendering}
 
-### Réamhamharc Deisce
+### Réamhamharc Deisce {#desktop-preview}
 
 Taispeánann an réamhamharc deisce do dhearadh ar leithead iomlán (1200px nó níos leithne de ghnáth):
 
@@ -59,7 +59,7 @@ Taispeánann an réamhamharc deisce do dhearadh ar leithead iomlán (1200px nó 
 - Clóghrafaíocht agus spásáil mhór
 - Gach eilimint amhairc ar mhéid iomlán
 
-### Réamhamharc Soghluaiste
+### Réamhamharc Soghluaiste {#mobile-preview}
 
 Taispeánann an réamhamharc soghluaiste do dhearadh ar leithead soghluaiste (375px de ghnáth):
 
@@ -68,7 +68,7 @@ Taispeánann an réamhamharc soghluaiste do dhearadh ar leithead soghluaiste (37
 - Clóghrafaíocht agus spásáil choigeartaithe
 - Méideanna cnaipe atá cairdiúil don teagmháil
 
-### Brisphointí Freagrúla
+### Brisphointí Freagrúla {#responsive-breakpoints}
 
 Rindreálann Theme Builder réamhamhairc ag na brisphointí seo:
 
@@ -79,9 +79,9 @@ Rindreálann Theme Builder réamhamhairc ag na brisphointí seo:
 | **Deasc** | 1200px | Deasc lánleithead |
 | **Deasc Mhór** | 1920px | Taispeáint ultra-leathan |
 
-## Do Dhearadh a Mhionchoigeartú
+## Do Dhearadh a Mhionchoigeartú {#refining-your-design}
 
-### Coigeartuithe a Dhéanamh
+### Coigeartuithe a Dhéanamh {#making-adjustments}
 
 Is féidir leat do threo dearaidh a mhionchoigeartú trí:
 
@@ -91,7 +91,7 @@ Is féidir leat do threo dearaidh a mhionchoigeartú trí:
 4. **Leagan amach a nuashonrú** — athraigh leithead coimeádáin agus colúin ghreille
 5. **Eilimintí a shaincheapadh** — modhnaigh stíleanna cnaipe, dearaí cártaí, srl.
 
-### Nuashonruithe Réamhamhairc
+### Nuashonruithe Réamhamhairc {#preview-updates}
 
 Léirítear athruithe i bhfíor-am:
 
@@ -100,7 +100,7 @@ Léirítear athruithe i bhfíor-am:
 - Nuashonraítear na brisphointí freagrúla go léir
 - Is féidir leat aistriú idir réamhamhairc chun athruithe a fhíorú
 
-### Amharc Comparáide
+### Amharc Comparáide {#comparison-view}
 
 Cuir do threo dearaidh i gcomparáid le:
 
@@ -108,7 +108,7 @@ Cuir do threo dearaidh i gcomparáid le:
 - **Dearaí iomaitheoirí** — déan comparáid le suíomhanna inspioráide
 - **Leaganacha roimhe seo** — fill ar threonna dearaidh níos luaithe
 
-## Faomhadh Treo Dearaidh
+## Faomhadh Treo Dearaidh {#design-direction-approval}
 
 Nuair atá tú sásta le do dhearadh:
 
@@ -118,7 +118,7 @@ Nuair atá tú sásta le do dhearadh:
 4. **Deimhnigh an leagan amach** — seiceáil spásáil agus ailíniú
 5. **Faomh an dearadh** — lean ar aghaidh go giniúint téama
 
-## Na Chéad Chéimeanna Eile
+## Na Chéad Chéimeanna Eile {#next-steps}
 
 Tar éis duit do threo dearaidh a fhaomhadh:
 
@@ -127,7 +127,7 @@ Tar éis duit do threo dearaidh a fhaomhadh:
 3. Is féidir leat tuilleadh saincheaptha a dhéanamh ag úsáid saincheapóra WordPress
 4. Lean ar aghaidh chuig [Roghchláir Fáilteachais](./hospitality-menus.md) nó gnéithe eile
 
-## Dea-Chleachtais
+## Dea-Chleachtais {#best-practices}
 
 - **Tástáil ar fhíorghléasanna** — bain úsáid as fóin agus táibléid iarbhír más féidir
 - **Seiceáil inléiteacht** — cinntigh go bhfuil an téacs inléite ag gach méid
@@ -135,30 +135,30 @@ Tar éis duit do threo dearaidh a fhaomhadh:
 - **Smaoinigh ar fheidhmíocht** — optamaigh íomhánna agus clónna ar mhaithe le luas
 - **Pleanáil don ábhar** — cinntigh go n-oibríonn an leagan amach le d’ábhar iarbhír
 
-## Fabhtcheartú
+## Fabhtcheartú {#troubleshooting}
 
-### Níl an Réamhamharc á Nuashonrú
+### Níl an Réamhamharc á Nuashonrú {#preview-not-updating}
 
 - Athnuaigh an leathanach
 - Glan taisce an bhrabhsálaí
 - Bain triail as brabhsálaí eile
 - Seiceáil an nasc idirlín
 
-### Tá Cuma Éagsúil ar Dhathanna
+### Tá Cuma Éagsúil ar Dhathanna {#colors-look-different}
 
 - Seiceáil socruithe dathanna an mhonatóra
 - Bain triail as ar ghléasanna éagsúla
 - Fíoraigh codarsnacht dathanna le huirlisí inrochtaineachta
 - Smaoinigh ar ionsamhlóirí daille dathanna
 
-### Fadhbanna Clóghrafaíochta
+### Fadhbanna Clóghrafaíochta {#typography-issues}
 
 - Fíoraigh go bhfuil comhaid chló á lódáil
 - Seiceáil méid cló ag brisphointí éagsúla
 - Tástáil le hábhar iarbhír
 - Smaoinigh ar fhad líne ar mhaithe le hinléiteacht
 
-## Doiciméadú Gaolmhar
+## Doiciméadú Gaolmhar {#related-documentation}
 
 - [Agallamh Fionnachtana](./discovery-interview.md) — bailigh faisnéis dearaidh
 - [Roghchláir Fáilteachais](./hospitality-menus.md) — cruthaigh leathanaigh roghchláir struchtúrtha

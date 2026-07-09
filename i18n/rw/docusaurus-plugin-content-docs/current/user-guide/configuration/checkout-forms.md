@@ -3,7 +3,7 @@ title: Urugero rw'Urugero rwa Gutera ku Ubwumvikane
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fomu za Checkout
+# Fomu za Checkout {#checkout-forms}
 
 Fomu za Checkout ni uwezekano rahisi na wenye kubadilika wa kujaribu mbinu tofauti wakati unajaribu kuhamasisha wateja wapya.
 
@@ -36,13 +36,13 @@ Gusobanzi, ushaka gukora cyangwa gukoresha amashobora (forms) ugiye gutangira, u
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Umuco w'Urugero rw'Urugero rwa Checkout Form
+#### Umuco w'Urugero rw'Urugero rwa Checkout Form {#checkout-form-editor-overview}
 
 Urugero rw'Urugero rwa checkout form rugira uburyo bwo gukora amashobora yawe y'ubwoko bwose. Icyo ni umuco w'uburyo bwo gukoresha:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Gukora Checkout Form
+### Gukora Checkout Form {#editing-a-checkout-form}
 
 Uba mushobora gukora amashobora ya checkout form mu byiciro bitandukanye. Mu gihe cyacu, twagira gukora amashobora y'ubwoko (registration form).
 
@@ -114,7 +114,7 @@ Kugera ku muryango wa shortcode (shortcode) w'umuhoraho, gukoresha uburyo bwo gu
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Uburyo bw'Icyemezo cy'Urufi (The Pricing Table Field)
+### Uburyo bw'Icyemezo cy'Urufi (The Pricing Table Field) {#the-pricing-table-field}
 
 Icyemezo cy'Pricing Table' kigisha ibintu byawe binyuze mu uhoraho rwo gukora umuhoraho kugira ngo abakoresha bashobore kubona ubushobozi bw'ibyo abakoresha bashobora gutera. Iyo utagira uburyo bwo gufata (edit) icyemezo cyangwa se, ushobora gukora ibintu byinshi:
 
@@ -132,17 +132,17 @@ Iki ni uburyo muho umuhoraho w'ibyo bishobora kubona ku rwego rwa mbere (fronten
 
 Iyo utagira ibintu byawe bashobora kubona mu Pricing Table mbere y'umuhoraho kugira ngo umuhoraho ufungura ibintu bikorwa ku gihe cyo gukemura ibyemezo by'umuhoraho bwo uko ibintu byashoboka gutera. Ufata uburyo bwo gufata (warning) kugira ngo utagire icyemezo cyangwa se, ugenda gukora ibintu byo kubyara mu gihe cyo gukoresha umuhoraho w'umuhoraho w'ibyo bishoboka gutera.
 
-### Kugera U Gutera Icyemezo cyo Gukoresha Period Selection Toggle
+### Kugera U Gutera Icyemezo cyo Gukoresha Period Selection Toggle {#adding-a-period-selection-toggle}
 
 Iyo wumva [Price Variations](creating-your-first-subscription-product#price-variations) ku nshingiro ry'ibintu byawe (urugero, uburyo bwo gukoresha imyaka n'imyaka y'amashuri), ushobora gushyira **Period Selection** cyangwa ishyirwaho mu gihe cyo gutera umukono w'ubwumvikane (checkout form). Icyemezo cyo gukoresha igice kishobora abakoresha bafite uburyo bw'ibyo baboneho kugira ngo bashobore guhindura imyaka y'ibyo baboneho, kandi ishyirwaho ry'ibintu byawe (pricing table) cyagira uburyo bwo gukunda mu gihe cyose.
 
-#### Icyemezo 1: Gukoresha Price Variations ku Bintu Byawe
+#### Icyemezo 1: Gukoresha Price Variations ku Bintu Byawe {#step-1-set-up-price-variations-on-your-products}
 
 Mbere yo gushyira Period Selection, ushobora kumenya ko ibintu byawe (products) yashobora gukoresha Price Variations. So mu **Ultimate Multisite > Products**, gukoresha uburyo bwo gukoresha umuntu w'ibintu byawe, kandi ugenda ku tab ya **Price Variations** kugira ngo ushyire imyaka y'ibyo baboneho (urugero, imyaka n'imyaka y'amashuri y'ubwumvikane).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Icyemezo 2: Gushyira Period Selection mu Checkout Form Yawe
+#### Icyemezo 2: Gushyira Period Selection mu Checkout Form Yawe {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. So mu **Ultimate Multisite > Checkout Forms** kandi gukoresha uburyo bwo gukoresha umuntu w'ibintu byawe (edit your checkout form).
 
@@ -165,13 +165,13 @@ Mbere yo gushyira Period Selection, ushobora kumenya ko ibintu byawe (products) 
 
 7. Click **Save Field**.
 
-#### Igice 3: Hagarweye Icyo Cyangwa Icyo Cyiza ku Rutonde Rwo Ubwujobozi (Pricing Table)
+#### Igice 3: Hagarweye Icyo Cyangwa Icyo Cyiza ku Rutonde Rwo Ubwujobozi (Pricing Table) {#step-3-position-the-field-above-the-pricing-table}
 
 Kugira ngo umuntu atangira neza, kugira ngo igice cyo Gukoresha Icyiciro cy'Period Selection kigire **mu gihe cyo gukoresha** Pricing Table, ugomba kwihangira. Ufite uburyo bwo gukora ibyo igice cyangwa ugaragaza mu form ya checkout editor. Ibi bikorwa kugira ngo abakoresha bashobore gukoresha umwujiza (billing period) mbere yemeza ubunyangamugayo bw'ibyo bishobora kuboneka.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Uburyo Bwo Gukorwa ku Frontend (Urugero Rw'Abakoresha)
+#### Uburyo Bwo Gukorwa ku Frontend (Urugero Rw'Abakoresha) {#how-it-works-on-the-frontend}
 
 Icyiza cyane, abakoresha bashobora kubona period selector mu gihe cyo gukoresha ubuzima bwo kwandikira kuri registration page yawe. Iyo bafite uburyo bwo gukoresha umwujiza (billing period) w'ibindi:
 
@@ -179,7 +179,7 @@ Icyiza cyane, abakoresha bashobora kubona period selector mu gihe cyo gukoresha 
   * Niba **Force Different Durations** itaboneka kuri Pricing Table, ibintu by'ibindi bishobora kuba bifite ubwujiza bw'umwujiza (variation) mu gihe cyo gukoresha umwujiza (period), ibyo byaba bifite uburyo bwo kuboneka.
   * Niba **Force Different Durations** itaboneka, ibintu byose bigaragara kandi ntabwo bifite ubwujiza bw'umwujiza (variation) mu gihe cyo gukoresha umwujiza (period), biboneka uburyo bwa mbere.
 
-#### Gukoresha Umwujiza (Billing Period) Mu URL
+#### Gukoresha Umwujiza (Billing Period) Mu URL {#pre-selecting-a-billing-period-via-url}
 
 Ufite uburyo bwo gukoresha ibintu by'ibindi kandi mu URL. Ultimate Multisite yishobora kubona uburyo bwo gukorera:
 
@@ -187,11 +187,11 @@ Ufite uburyo bwo gukoresha ibintu by'ibindi kandi mu URL. Ultimate Multisite yis
   * `/register/premium/12` — Ibi bikorwa kugira ngo umuntu atangire ibintu by'ibindi kandi n'umwujiza (duration) mu mwaka wa 12.
   * `/register/premium/1/year` — Ibi bikorwa kugira ngo umuntu atangire product na umwujiza (duration) w'umwaka 1.
 
-### Igice cyo Gukoresha Template (Template Selection Field)
+### Igice cyo Gukoresha Template (Template Selection Field) {#the-template-selection-field}
 
 Igice cyo **Template Selection** kigaragaza abakoresha bashobora gukoresha template ya site mu gihe cyo gukoresha ubuzima bwo kwandikira. Icyo cyangwa igice cyo gukoresha template cyari cyiza, cyaboneka mu gihe cyo gukoresha ubuzima bwo kwandikira (single step) n'ubuzima bwo gukoresha ubuzima bwo kwandikira (multi-step) byihangiraho mu Ultimate Multisite v2.6.1.
 
-#### Gukoresha Igice Cyangwa Gukorera Mu Gitonde
+#### Gukoresha Igice Cyangwa Gukorera Mu Gitonde {#adding-the-field-manually}
 
 (Urugero w'ibyo bishobora kuba bifite uburyo bwo gukorera igice cyo Template Selection)
 
@@ -204,11 +204,11 @@ Iyo wumva n'ubwujuzi w'ibanga (form) yashyirwe mbere ya v2.6.1, cyangwa yashyirw
    - **Label** — Ubutumwa rwa mbere abakoresha babona ku grid ya template (urugero: "Shyira uburyo bwo site").
    - **Required** — Icyemezo cy'uko abakoresha bashobora gukoresha template mbere y'uko bashobora kwiga.
 
-#### Uburyo bwo gukora iki
+#### Uburyo bwo gukora iki {#how-it-works}
 
 Iyo umukoresha atanga template mu gihe cyo gukora checkout, Ultimate Multisite igaragaza uburyo bw'ibintu byo gukoreshwa mu gihe cyo gutanga site yashya yawe. Icyemezo cyo template byarimo ku gukoreshwa bishobora ku gukoresha mu rurimi rw'Site Templates (Ultimate Multisite > Site Templates). Gusa template zishobora gukoreshwa n'abakoresha zishobora kubona hano.
 
-### Icyemezo cyo checkout-form base domains
+### Icyemezo cyo checkout-form base domains {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 igaragaza ibi byo gukoreshwa mu gihe cyo gutanga site **Site URL** cyangwa ibyo bishyirwe ku checkout form nk'ibanga ry'ubwoko bw'ubwoko (network base domains). Gukoresha uburyo bwo gukoresha ibi byo domain zishobora kubona iyo uvuga wifuza abakoresha bashobora gukora sites mu gihe cyo gutanga ibyo byo registration by'umuryango n'ibindi, nk'ibyo `example.com` kandi `sites.example.com`.
 
@@ -216,6 +216,6 @@ Icyemezo cyo checkout-form base domains sitari igaragaza uburyo bwo gukoresha do
 
 Gukoresha domain zishobora kubona mu gihe cyo gutanga site runaka, nk'ibyo `customer-example.com`. Gukoresha ibi byo checkout-form base domains sitari igaragaza host zishobora gukoreshwa mu gihe cyo gutanga sites nyinshi.
 
-#### Guhagarira ibi (Removing the field)
+#### Guhagarira ibi (Removing the field) {#removing-the-field}
 
 Ntabwo wumukoresha uburyo bwo gukoresha site templates (template), ushaka ugire umugambi wa "Template Selection" mu form yawe. Abantu bazakurikiza template yose itangwa mu gihe cy'Ultimate Multisite > Settings > Site Templates.

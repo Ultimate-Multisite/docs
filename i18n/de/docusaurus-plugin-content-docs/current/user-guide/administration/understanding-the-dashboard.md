@@ -3,31 +3,31 @@ title: Verstehen des Dashboards
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Verständnis des Ultimate Multisite-Dashboards
+# Verständnis des Ultimate Multisite-Dashboards {#understanding-the-ultimate-multisite-dashboard}
 
 Bevor wir uns in fortgeschrittene Konfigurationsoptionen und die betrieblichen Aspekte von Ultimate Multisite vertiefen, werfen wir einen Blick auf das Dashboard.
 
 Wie viele WordPress-Plugins erstellt Ultimate Multisite einen netzwerkweiten Menüeintrag mit dem Titel **Ultimate Multisite**, der mehrere Untermenüeinträge enthält.
 
-## Netzwerk-Dashboard-Widgets
+## Netzwerk-Dashboard-Widgets {#network-dashboard-widgets}
 
 Ultimate Multisite fügt dem netzwerkweiten Dashboard einige nützliche Widgets hinzu. Dieses Dashboard finden Sie, indem Sie zu **My Sites → Network Admin → Dashboard** navigieren. Die Widgets sollen einen einfachen Zugriff auf Informationen und gängige Operationen für den Netzwerkadministrator bieten.
 
 ![Netzwerk-Dashboard mit Ultimate Multisite-Widgets](/img/admin/network-dashboard-full.png)
 
-### Erste Schritte
+### Erste Schritte {#first-steps}
 
 ![Erste Schritte Widget](/img/admin/network-dashboard-first-steps.png)
 
 Dieses Widget erscheint bei einer frischen Installation von Ultimate Multisite und erinnert den Netzwerkadministrator daran, zusätzliche Aufgaben wie die Konfiguration einer Zahlungsmethode und die Erstellung eines Testkontos abzuschließen.
 
-### Zusammenfassung
+### Zusammenfassung {#summary}
 
 ![Zusammenfassung Widget](/img/admin/network-dashboard-summary.png)
 
 Das Zusammenfassung-Widget berichtet über die Anzahl der Anmeldungen und deren Umsatz für den Tag. Der MRR (Monatlich wiederkehrender Umsatz) gibt einen prognostizierten Gesamtwert über Kunden mit umsatzgenerierenden Mitgliedschaften an.
 
-### Aktivitätsstrom
+### Aktivitätsstrom {#activity-stream}
 
 ![Aktivitätsstrom Widget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Dieses Widget berichtet über Ereignisse in Ultimate Multisite. Ereignisse umfas
 
 Bitte beachten Sie den Abschnitt Ereignisse in der Dokumentation für eine detailliertere Beschreibung.
 
-### Gerade jetzt
+### Gerade jetzt {#right-now}
 
 ![Gerade jetzt Widget](/img/admin/network-dashboard-right-now.png)
 
 Dieses Hilfs-Widget zeigt eine kurze Zusammenfassung von Benutzern und Seiten im Netzwerk an. Praktische Shortcuts oben ermöglichen einen One-Click-Zugriff zum Erstellen neuer Seiten oder Benutzer.
 
-### Nachrichten und Diskussionen
+### Nachrichten und Diskussionen {#news-and-discussions}
 
 ![Nachrichten und Diskussionen Widget](/img/admin/network-dashboard-news.png)
 
 Dieses Widget ruft die neuesten Ultimate Multisite-Nachrichten ab und zeigt sie an. Behalten Sie dieses Widget im Auge, um Informationen zu Updates, kritischen Fehlern und Sicherheitsupdates zu erhalten.
 
-## Ultimate Multisite-Dashboard
+## Ultimate Multisite-Dashboard {#ultimate-multisite-dashboard}
 
 Während das netzwerkweite Dashboard ganzheitliche Informationen über das Netzwerk liefert, präsentiert das Ultimate Multisite-Dashboard (befindet sich auf der obersten Ebene des Ultimate Multisite-Menüs) Informationen zum Service.
 
 ![Ultimate Multisite-Dashboard](/img/admin/um-dashboard-top.png)
 
-### Monatliches wiederkehrendes Umsatzwachstum
+### Monatliches wiederkehrendes Umsatzwachstum {#monthly-recurring-revenue-growth}
 
 Das MRR (Monatlich wiederkehrender Umsatz)-Diagramm zeigt eine monatliche Aufschlüsselung des Umsatzes über einen 12‑monatigen Kalenderzeitraum.
 
@@ -61,7 +61,7 @@ Das MRR (Monatlich wiederkehrender Umsatz)-Diagramm zeigt eine monatliche Aufsch
 
 Neuer Umsatz wird in Blau angezeigt, während Kündigungen in Rot dargestellt werden.
 
-### Datumsbereich-Unterstützung
+### Datumsbereich-Unterstützung {#date-range-support}
 
 Je nach Anzahl der Kunden und Aktivitäten können die Statistiken überwältigend werden. Die im Dashboard integrierte Datumsbereich-Unterstützung ermöglicht es dem Netzwerkadministrator, sich ausschließlich auf die benötigten Informationen und Zeiträume zu konzentrieren.
 

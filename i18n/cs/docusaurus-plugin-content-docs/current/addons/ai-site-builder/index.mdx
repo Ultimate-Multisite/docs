@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Požadavky
+## Požadavky {#requirements}
 
 - WordPress 5.3 nebo vyšší
 - PHP 7.4 nebo vyšší
 - Multisite Ultimate plugin (aktivní)
 
-## Instalace
+## Instalace {#installation}
 
 1. Nahrání souborů addonu do adresáře `/wp-content/plugins/`
 2. Aktivujte plugin pomocí menu „Plugins“ v WordPressu
 3. Konfigurujte nastavení addonu v administraci sítě
 
-## Vývoj
+## Vývoj {#development}
 
-### Nastavení
+### Nastavení {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura projektu
+### Struktura projektu {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Pravidla modernizace kódu
 ```
 
-### Testování
+### Testování {#testing}
 
 Addon obsahuje komplexní rámec pro testování:
 
@@ -79,44 +79,44 @@ Addon obsahuje komplexní rámec pro testování:
 - **Test Coverage**: Konfigurováno pro sledování pokrytí kódu
 - **Multisite Testing**: Testy běží v prostředí Multisite
 
-### Standardy kódu
+### Standardy kódu {#code-standards}
 
 - **WordPress Coding Standards**: Udržováno pomocí PHPCS
 - **PHP 7.4+ Compatibility**: Podporuje moderní funkce PHP
 - **Static Analysis**: Integrace PHPStan pro kontrolu typů
 - **Code Modernization**: Pravidla Rectoru pro aktualizace PHP
 
-### Systém sestavení
+### Systém sestavení {#build-system}
 
 - **Asset Processing**: Minifikace souborů CSS/JS
 - **Translation**: Generování souborů POT
 - **Packaging**: Vytváření archivu pro distribuci
 - **Development Mode**: Neminifikované zdroje pro ladění
 
-## Konfigurace
+## Konfigurace {#configuration}
 
 Addon podporuje různé možnosti konfigurace, které jsou dostupné prostřednictvím rozhraní administrace sítě.
 
-## Hooks a filtry
+## Hooks a filtry {#hooks-and-filters}
 
-### Akce (Actions)
+### Akce (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Spustí se po inicializaci addonu
 - `ultimate-multisite-ai-site-builder_loaded` - Spustí se po načtení všech souborů addonu
 
-### Filtry (Filters)
+### Filtry (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Změna nastavení addonu
 - `ultimate-multisite-ai-site-builder_enabled` - Přepsání stavu povolení/zakázání addonu
 
-## Licence
+## Licence {#license}
 
 Tento addon je licencován pod GPL v3 nebo novější.
 
-## Podpora
+## Podpora {#support}
 
 Pro podporu a dokumentaci navštivte [MultisiteUltimate.com](https://multisiteultimate.com)
-## Seznam změn
+## Seznam změn {#changelog}
 
 - Verze 1.0.1 (2025-09-28): Překřejmenování prefixu na ultimate-multisite; aktualizace domény textu; zvýšení verze.
 

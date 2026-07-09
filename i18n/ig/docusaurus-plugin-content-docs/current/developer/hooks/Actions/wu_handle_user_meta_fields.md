@@ -4,11 +4,11 @@ title: Omume - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields
+# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Kwe ka ndị mmepe plugin chekwaa data meta onye ọrụ n'ụzọ dị iche iche ma ọ bụrụ na ha chọrọ.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Kwe ka ndị mmepe plugin chekwaa data meta onye ọrụ n'ụzọ dị iche ich
 | $customer | `\Customer` | Object onye ahịa Ultimate Multisite. |
 | $checkout | `\Checkout` | Klas checkout. |
 
-### Since
+### Since {#since}
 
 - 2.0.4
-### Source
+### Source {#source}
 
 A kọwara ya na [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) na ahịrị 1244

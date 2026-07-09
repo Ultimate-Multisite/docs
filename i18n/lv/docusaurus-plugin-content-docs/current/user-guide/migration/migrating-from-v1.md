@@ -3,9 +3,9 @@ title: Migrācija no V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Pārvietošanās no V1
+# Pārvietošanās no V1 {#migrating-from-v1}
 
-## Ultimate Multisite ir pāriet no savas oriģinālās 1.x izlaidumu sērijas uz 2.x izlaidumu sēriju.
+## Ultimate Multisite ir pāriet no savas oriģinālās 1.x izlaidumu sērijas uz 2.x izlaidumu sēriju. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versija 2.0 un jaunāka ir pilna koda pārrakstīšana, kas nozīmē, ka vecajā versijā un jaunkajā nav vēl daudz dalu kopīgs. Tā kā tas ir tāds skaijis ietekme, upgrade no 1.x uz 2.x veidā jūsu dati būs jāpārvieto formatā, ko var saprast jaunākās versijas.
 
@@ -15,7 +15,7 @@ Lūgums, Ultimate Multisite 2.0+ **dabā ir iekļauts migrator**, kas spēj atve
 
 _**SVARĪGI: Pirms sākat upgrade no versijas 1.x uz versiju 2.0 pārliecinājieties, ka jums ir izveidots vietnes datubāzes kopjums (backup)**_
 
-## Pirmais soļums
+## Pirmais soļums {#first-steps}
 
 Pirmais soļums ir lejupielādēt plugin .zip failu un instalēt versiju 2.0 savā tīkla administratora dashboardā.
 
@@ -49,19 +49,19 @@ Pēc tam, kad ievadīja kodu, nospirstiet **Saskaņoties un aktivizēt** (Agree 
 
 Licences aktivizācijas pēc tam var sākt patieku instalāciju, nospirstot **Instalēt** (Install) nākamajā lapā. Tas automātiski izveidzi nepieciešamos failus un datubāzi, kas ir nepieciešami versijai 2.0 darbīšanai.
 
-## Tagšana
+## Tagšana {#now-the-migration}
 
 Migratoram ir iekļauta drošības funkcija, kas pārbauda jūsu visus multisite, lai pārliecinātos, ka visi jūsu Ultimate Multisite dati var tikt tagāti bez jebkāda problēmas. Nospiediet pogu **Run Check**, lai sāktu procesu.
 
 Pēc pārbaudes veikšanas jums būs divas iespējas: rezultāts var būt gan **ar** kļūda, gan **bez** kļūdas.
 
-### Ar kļūdu
+### Ar kļūdu {#with-error}
 
 Ja saņem kļūdas ziņojumu, jums būs jāpaliek ar mūsu atbalsta komandai, lai viņi varētu jums palīdzēt labot kļūdu. Lūdzu, pārliecinieties, ka **pieejat kļūdas logu**, kad veicjat pieteikumu (ticket). Jūs varat lejupielādēt logu vai nospiediet saiti, kas norāda "sazināties ar mūsu atbalsta komandu". Tas atvērs palīdzības widgetu uz labās puses jūsu lapas, kuram jau ir iestatīti lauki, kas ietver kļūdas logus aprakstībā.
 
 _**Tā kā sistēma atradīja kļūdu, jūs nevarat turpināt tagšanu versijai 2.0. Tad jūs varat atgriezties uz versiju 1.x, lai turpinātu jūsu tīkla veikšanu līdz kļūda tiek labota.**_
 
-### Bez kļūdas
+### Bez kļūdas {#without-error}
 
 Ja sistēma neiztiek jebkāda kļūda, jūs redziet veiksmējuma ziņojumu un **Migrate** pogu zem apakšda, kas ļaus jums turpināt tagšanu. Šajā lapā jums tiks atcerēts veikt databāzes kopiju pirms turpināt, ko mēs ļoti ieteikām. Nospiediet **Migrate**, ja jums jau ir kopija.
 

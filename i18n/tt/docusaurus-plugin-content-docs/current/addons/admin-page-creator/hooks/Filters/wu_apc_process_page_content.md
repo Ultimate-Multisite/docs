@@ -4,11 +4,11 @@ title: Фильтр - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Фильтр: wu_apc_process_page_content
+# Фильтр: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Эшләүчеләргә соңгы эчтәлекне үзгәртергә мөмкинлек бирә
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Урынбасарларны үз эченә алган массив. |
 | $placeholder_count | `int` | Табылган урынбасарлар саны. |
 
-### Кертелгәннән бирле
+### Кертелгәннән бирле {#since}
 
 - 1.4.0
-### Чыганак
+### Чыганак {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) эчендә, 46 нчы юлда билгеләнгән
 
 
-## Кайтара
+## Кайтара {#returns}
 Үзгәртүдән соңгы эчтәлек.

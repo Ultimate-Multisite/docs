@@ -3,17 +3,17 @@ title: Mutakuri weFaira reSunrise Yekuwedzera
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 inowedzera sunrise extension loader yeadd-ons uye custom MU-plugin integrations dzinoda kumhanya panguva yeWordPress sunrise bootstrapping pasina kugadzirisa faira rakagadzirwa re`wp-content/sunrise.php`.
 
-## Rinofanira kushandiswa riini
+## Rinofanira kushandiswa riini {#when-to-use-it}
 
 Shandisa sunrise extension kana integration yako ichifanira kumhanya ma plugins enguva dzose asati atakurwa, sekuronga custom domain, kubata zvikumbiro zvinoenderana nehost, kana kugadzirisa kwekutanga kwe network bootstrap.
 
 Kune integrations dzenguva dzose, sarudza kushandisa WordPress plugins enguva dzose, MU-plugins, uye Ultimate Multisite hooks dzakanyorwa. Sunrise code inomhanya pakutanga zvikuru uye inofanira kuramba iri diki, yakangwarira, uye isina dependencies.
 
-## Maitiro ekutumidza faira
+## Maitiro ekutumidza faira {#file-naming-convention}
 
 Gadzira PHP faira rinonzi `sunrise.php` mudhairekitori readdon rine zita rinotanga ne`ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Mafaira anoenderana anotakurwa muhurongwa hwearufabheti maererano neaddon path.
 
-## Pekuisa faira
+## Pekuisa faira {#where-to-place-the-file}
 
 Isa faira mudhairekitori remudzi weaddon ine sunrise behaviour yacho:
 
@@ -45,7 +45,7 @@ Kuongorora kunogadziriswa zvichienderana ne`WP_CONTENT_DIR`, kwete kukosha kwazv
 
 Usagadzirisa faira rakagadzirwa re`wp-content/sunrise.php` zvakananga. Loader inoita kuti custom code iwedzere sunrise behaviour pasina kufork core sunrise file inoiswa nekuvandudzwa neUltimate Multisite.
 
-## Hooks nema filters aripo
+## Hooks nema filters aripo {#hooks-and-filters-available}
 
 Addon sunrise files dzinomhanya mushure mekunge Ultimate Multisite domain mapping yatakurwa uye WordPress isati yabatidza `ms_loaded`. Panguva iyi sunrise file inogona:
 
@@ -58,7 +58,7 @@ Ultimate Multisite inobatidza `wu_sunrise_loaded` mushure mekunge sunrise loader
 
 Dana chete functions dzakatotakurwa mu sunrise phase. Dzivisa basa rinorema re database, template rendering, HTTP requests, uye code inofungidzira kuti normal plugin load order yapera.
 
-## Muenzaniso mudiki
+## Muenzaniso mudiki {#minimal-example}
 
 ```php
 <?php

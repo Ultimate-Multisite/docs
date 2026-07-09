@@ -3,13 +3,13 @@ title: Paghimo og Pasadya nga Integrasyon sa Registrar
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Pagtukod og Custom nga Integrasyon sa Registrar
+# Pagtukod og Custom nga Integrasyon sa Registrar {#building-a-custom-registrar-integration}
 
 Ang Domain Seller addon naggamit og **Integration Registry** nga pattern. Ang matag registrar usa ka PHP class nga nag-implement sa `Domain_Selling_Capability` ug nagparehistro sa kaugalingon pinaagi sa `wu_domain_seller_register_capabilities` nga action hook.
 
 Kini nga giya nagpakita kung unsaon pagkonektar sa custom nga registrar.
 
-## Ang interface
+## Ang interface {#the-interface}
 
 Ang imong class kinahanglan nga mo-implement sa `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ug mo-extend sa `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Opsyonal nga mga method
+### Opsyonal nga mga method {#optional-methods}
 
 I-implement kini aron maablihan ang dugang nga mga feature. Ang addon makamatikod sa suporta pinaagi sa `method_exists()`:
 
@@ -81,7 +81,7 @@ I-implement kini aron maablihan ang dugang nga mga feature. Ang addon makamatiko
 | `get_epp_code(string $domain_name): array` | Pagbalhin sa domain (paingon sa gawas) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Pagbalhin sa domain (paingon sa sulod) |
 
-### Kombensyon sa return value
+### Kombensyon sa return value {#return-value-convention}
 
 Ang tanang method mobalik og array nga adunay labing menos usa ka `success` nga key:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Pagparehistro sa imong capability
+## Pagparehistro sa imong capability {#registering-your-capability}
 
 Iparehistro ang imong class gamit ang `wu_domain_seller_register_capabilities` nga action:
 
@@ -109,7 +109,7 @@ Ang unang argumento sa `add_capability()` mao ang **provider ID** — usa ka low
 
 ---
 
-## Pagdugang og credential fields sa wizard
+## Pagdugang og credential fields sa wizard {#adding-credential-fields-to-the-wizard}
 
 Aron tugotan ang mga admin nga mosulod og credentials pinaagi sa setup wizard, iparehistro ang imong integration:
 
@@ -137,7 +137,7 @@ Ang credentials gitipigan isip network options gamit ang field IDs isip mga key.
 
 ---
 
-## Mga hook para sa mga aksyon human sa pagparehistro
+## Mga hook para sa mga aksyon human sa pagparehistro {#hooks-for-post-registration-actions}
 
 Gamita kini nga mga aksyon aron mag-trigger og webhooks, provisioning, notifications, o CRM updates:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Pag-log
+## Pag-log {#logging}
 
 Pagsulat ngadto sa channel sa log nga espesipiko sa imong provider gamit ang `wu_log_add()`:
 

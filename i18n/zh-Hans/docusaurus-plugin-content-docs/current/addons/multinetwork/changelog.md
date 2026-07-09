@@ -3,9 +3,9 @@ title: 多网络更新日志
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network 更新日志
+# Multi-Network 更新日志 {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * 新增：网络模板预览器 — 购买前可通过实时面板浏览并预览网络模板。
 * 新增：结账时的网络模板选择器 — 客户可以在注册结账流程中选择网络模板。
 * 新增：跨网络 magic link SSO — 客户可以通过 magic-link 身份验证无缝访问子网络。
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * 修复：防止站点查询作用域中未定义的 `network_id` 键。
 * 修复：上下文切换前的网络权限检查可防止 `wpdb` 表属性错误。
 
-### 1.0.4
+### 1.0.4 {#104}
 * 修复：创建新网络。
 * 修复：渲染菜单。
 
-### 1.0.3
+### 1.0.3 {#103}
 * 已更新到 Plugin Update Checker v5
 * 添加了现代 WordPress plugin 头信息
 * 改进了与最新 WordPress 版本的兼容性
 
-### 1.0.2
+### 1.0.2 {#102}
 * 错误修复和性能改进
 * 增强了网络隔离
 
-### 1.0.0
+### 1.0.0 {#100}
 * 初始发布
 * 核心多网络功能
 * 与 Multisite Ultimate 集成

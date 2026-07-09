@@ -3,17 +3,17 @@ title: Llwythwr Ffeil Gwawr yr Ychwanegyn
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Llwythwr Ffeil Sunrise Addon
+# Llwythwr Ffeil Sunrise Addon {#addon-sunrise-file-loader}
 
 Mae Ultimate Multisite 2.8.0 yn ychwanegu llwythwr estyniad sunrise ar gyfer ychwanegion ac integreiddiadau MU-plugin personol sydd angen rhedeg yn ystod cychwyniad sunrise WordPress heb olygu’r ffeil `wp-content/sunrise.php` a gynhyrchir.
 
-## Pryd i’w ddefnyddio
+## Pryd i’w ddefnyddio {#when-to-use-it}
 
 Defnyddiwch estyniad sunrise pan fo’n rhaid i’ch integreiddiad redeg cyn i ategion rheolaidd gael eu llwytho, megis llwybro parthau personol, trin ceisiadau penodol i westeiwr, neu addasiadau cynnar i gychwyniad rhwydwaith.
 
 Ar gyfer integreiddiadau arferol, ffafriwch ategion WordPress rheolaidd, MU-plugins, a bachau Ultimate Multisite sydd wedi’u dogfennu. Mae cod sunrise yn rhedeg yn gynnar iawn a dylai aros yn fach, yn amddiffynnol, ac yn rhydd o ddibyniaethau.
 
-## Confensiwn enwi ffeiliau
+## Confensiwn enwi ffeiliau {#file-naming-convention}
 
 Crëwch ffeil PHP o’r enw `sunrise.php` mewn cyfeiriadur ychwanegyn y mae ei enw’n dechrau gyda `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Caiff ffeiliau sy’n cyfateb eu llwytho yn nhrefn yr wyddor yn ôl llwybr yr ychwanegyn.
 
-## Ble i osod y ffeil
+## Ble i osod y ffeil {#where-to-place-the-file}
 
 Rhowch y ffeil yng nghyfeiriadur gwraidd yr ychwanegyn sy’n berchen ar yr ymddygiad sunrise:
 
@@ -45,7 +45,7 @@ Caiff y sgan ei ddatrys yn gymharol â `WP_CONTENT_DIR`, nid gwerth cyfredol `WP
 
 Peidiwch â golygu’r ffeil `wp-content/sunrise.php` a gynhyrchir yn uniongyrchol. Mae’r llwythwr yn caniatáu i god personol ymestyn ymddygiad sunrise heb fforchio’r ffeil sunrise graidd y mae Ultimate Multisite yn ei gosod ac yn ei diweddaru.
 
-## Bachau a hidlyddion sydd ar gael
+## Bachau a hidlyddion sydd ar gael {#hooks-and-filters-available}
 
 Mae ffeiliau sunrise ychwanegion yn rhedeg ar ôl i fapio parthau Ultimate Multisite lwytho a chyn i WordPress danio `ms_loaded`. Ar y pwynt hwn gall ffeil sunrise:
 
@@ -58,7 +58,7 @@ Mae Ultimate Multisite yn tanio `wu_sunrise_loaded` ar ôl i’w lwythwr sunrise
 
 Galwch swyddogaethau sydd eisoes wedi’u llwytho yn y cyfnod sunrise yn unig. Osgowch waith trwm ar gronfeydd data, rendro templedi, ceisiadau HTTP, a chod sy’n tybio bod trefn lwytho ategion arferol wedi’i chwblhau.
 
-## Enghraifft leiaf
+## Enghraifft leiaf {#minimal-example}
 
 ```php
 <?php

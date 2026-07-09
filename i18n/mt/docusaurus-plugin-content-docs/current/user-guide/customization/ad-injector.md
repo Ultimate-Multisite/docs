@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Aċċettazzjoni ta Ads fuq la-network tieħedha b Ultimate Multisite: Ad Injector
+# Aċċettazzjoni ta Ads fuq la-network tieħedha b Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector huwa **add-on free** li jgħنك b xi strumenti biex tikkunsidi ads fuq il-plans tieħandhom mill-edit page tagħhom.
 
@@ -35,7 +35,7 @@ Tista' tikkunsidi ads flim header tal-Admin Pages għall-utenti ta dawk il-plan.
 
 _Mura għall-Admin Panel Ad Code option se tixtieq ads fuq l-back-end tal-utenti tiegħek._
 
-### Żgħar minn Ads
+### Żgħar minn Ads {#beyond-advertising}
 
 Tista' tikkunsidi ads b'Ultimate Multisite: Ad Injector biex toffri support għall-plans ta għ一级 (high-tier plans).
 

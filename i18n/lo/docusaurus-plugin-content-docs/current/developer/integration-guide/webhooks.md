@@ -3,11 +3,11 @@ title: ການຈັດການ Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# ການຈັດການ Webhook
+# ການຈັດການ Webhook {#webhook-handling}
 
 ສ້າງຈຸດຮັບ Webhook ແບບກຳນົດເອງ ເພື່ອຮັບເຫດການຈາກບໍລິການພາຍນອກ ແລະຊິງຄ໌ຂໍ້ມູນກັບ Ultimate Multisite.
 
-## ຈຸດຮັບ Webhook ແບບກຳນົດເອງ
+## ຈຸດຮັບ Webhook ແບບກຳນົດເອງ {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## ຂໍ້ພິຈາລະນາດ້ານຄວາມປອດໄພ
+## ຂໍ້ພິຈາລະນາດ້ານຄວາມປອດໄພ {#security-considerations}
 
 - ກວດຢືນຢັນລາຍເຊັນ Webhook ໂດຍໃຊ້ HMAC ຫຼືຄວາມລັບທີ່ໃຊ້ຮ່ວມກັນສະເໝີ
 - ໃຊ້ `permission_callback` ໃນເສັ້ນທາງ REST ຂອງທ່ານ — ຢ່າຕັ້ງເປັນ `__return_true` ໃນການໃຊ້ງານຈິງ

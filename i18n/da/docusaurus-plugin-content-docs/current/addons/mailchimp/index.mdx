@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: Mailchimp Integration
 
 Integrér dit Multisite Ultimate-netværk med din Mailchimp. Du kan linke bestemte abonnementer til Mailchimp-lister og automatisk tilføje abonnenter til disse lister ved tilmelding.
 
-## Installation
+## Installation {#installation}
 
 1. Upload 'ultimate-multisite-mailchimp' til mappen '/wp-content/plugins/'
 2. Aktivér plugin'et via menuen 'Plugins' i din WordPress Network Admin
 
-## Brugsvejledning
+## Brugsvejledning {#usage-guide}
 
 Synkronisering af abonnenters e-mailadresser med dine MailChimp-lister er virkelig nemt med vores Ultimate Multisite: MailChimp Integration Add-on. Denne vejledning hjælper dig med at få det hele sat op!
 
-## Sådan får du en API-nøgle
+## Sådan får du en API-nøgle {#getting-an-api-key}
 
 Før vi begynder at gennemgå de forskellige tilgængelige indstillinger, har vi brug for en MailChimp API-nøgle. Dette giver Ultimate Multisite mulighed for at kommunikere med MailChimp API'en for at hente lister, grupper og tilføje e-mailadresser til disse lister og grupper, når brugere tilmelder sig.
 
@@ -32,7 +32,7 @@ Følg denne vejledning for at få din egen MailChimp API-nøgle: [Om API-nøgler
 
 _Tilføj din MailChimp API-nøgle under_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
 
-## Integrationstilstand
+## Integrationstilstand {#integration-mode}
 
 MailChimp Integration Add-on tilbyder to “integrationstilstande”, hvilket betyder, at der er to forskellige måder, du kan bruge add-on'et til at synkronisere e-mailadresser på.
 
@@ -40,7 +40,7 @@ MailChimp Integration Add-on tilbyder to “integrationstilstande”, hvilket be
 
 _To integrationstilstande for større fleksibilitet!_
 
-### Tilstand 1: Flere lister
+### Tilstand 1: Flere lister {#mode-1-multiple-lists}
 
 Standardtilstanden bruger **Flere lister**. Denne tilstand giver dig mulighed for at vælge flere MailChimp-lister for hvert af abonnementerne. Dette er den bedste mulighed, hvis du segmenterer dine brugere i forskellige lister.
 
@@ -52,7 +52,7 @@ For at opnå det kan du bruge tilstanden Flere lister til at tilføje både list
 
 _Vælg standardlisterne for nye konti og for annullerede konti_
 
-### Tilstand 2: Enkelt liste + flere grupper
+### Tilstand 2: Enkelt liste + flere grupper {#mode-2-single-list--multiple-groups}
 
 MailChimp giver dig mulighed for at segmentere din liste i mindre grupper af brugere kaldet **Grupper**. Dette giver dig mere kontrol, da du kan sende en kampagne til en specifik undergruppe af dine abonnenter uden at skulle oprette flere kopier af den samme kampagne i MailChimp (hvilket gør det svært at analysere målingerne for den kampagne bagefter).
 
@@ -62,13 +62,13 @@ For eksempel kan du have en enkelt liste kaldet **Mine netværksabonnenter,** og
 
 _Vælg standardlisterne og -grupperne, hvis du bruger integrationstilstanden “enkelt liste + flere grupper”_
 
-## Standardlister og -grupper
+## Standardlister og -grupper {#default-lists-and-groups}
 
 Når du har valgt, hvilken integrationstilstand der giver mest mening for dit konkrete brugstilfælde, er det tid til at vælge standardlisterne (og grupperne, afhængigt af tilstanden). Standardlisten vil blive brugt, når et givent abonnement ikke har en specifik liste valgt.
 
 Du kan også vælge standardlisten for annullerede konti. Når en bruger opsiger sit abonnement og fjerner sin konto fra dit netværk, vil vedkommendes e-mailadresse blive flyttet til den liste, der er angivet for annullerede konti.
 
-## Aktivering af dobbelt abonnement
+## Aktivering af dobbelt abonnement {#enabling-double-subscription}
 
 På den samme indstillingsside vil du kunne aktivere **Dobbelt abonnement**. Denne mulighed vil tilføje brugeren til både den valgte standardliste OG den liste, der er valgt for den brugers abonnement. Hvis denne mulighed ikke er aktiveret, vil brugeren kun blive tilføjet til den liste, der er valgt for brugerens abonnement. Hvis ingen er angivet for det pågældende abonnement, vil brugeren blive tilføjet til den valgte standardliste.
 
@@ -76,7 +76,7 @@ På den samme indstillingsside vil du kunne aktivere **Dobbelt abonnement**. Den
 
 _Du kan få dine brugere tilmeldt både standardlisten og abonnementets liste ved tilmelding_
 
-## Valg af lister og grupper for hvert af abonnementerne
+## Valg af lister og grupper for hvert af abonnementerne {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Gå til dine **Abonnementer** og vælg det abonnement, du vil redigere. Bemærk, at der i meta-boksen **Avancerede indstillinger** vil være en ny fane kaldet MailChimp.
 

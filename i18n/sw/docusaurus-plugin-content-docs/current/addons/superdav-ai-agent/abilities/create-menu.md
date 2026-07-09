@@ -3,15 +3,15 @@ title: Tengeneza Menyu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Kuunda Menyu
+# Kuunda Menyu {#create-menu}
 
 Uwezo wa **Kuunda Menyu** unaunda menyu za uelekezaji za WordPress huku ukitoa uwezo wa kuweka viashiria vya uelekezaji tofauti na vichwa vya kurasa.
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Uwezo huu unapanua utendaji wa kawaida wa kuunda menyu kwa kuongeza uwezo wa kubainisha thamani ya `navigation_label`. Hii inakuwezesha kuunda menyu ambapo kiashiria kinachoonekana kwenye uelekezaji kinatofautiana na kichwa cha ukurasa, hivyo kutoa ushirikishaji zaidi katika muundo wa tovuti na uzoefu wa mtumiaji.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Uwezo huu unapanua utendaji wa kawaida wa kuunda menyu kwa kuongeza uwezo wa kub
 | `location` | string | No | Mahali pa menyu kwenye mada (Theme location) pa kuweka menyu hii, mfano: `primary` |
 | `navigation_label` | string | No | Kiashiria cha kuonyeshwa kwenye uelekezaji (kinatofautiana na kichwa cha ukurasa) |
 
-## Thamani Inayorejeshwa
+## Thamani Inayorejeshwa {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Uwezo huu unapanua utendaji wa kawaida wa kuunda menyu kwa kuongeza uwezo wa kub
 }
 ```
 
-## Kiashiria cha Uelekezaji dhidi ya Kichwa cha Ukurasa
+## Kiashiria cha Uelekezaji dhidi ya Kichwa cha Ukurasa {#navigation-label-vs-page-title}
 
 Thamani ya `navigation_label` inakuwezesha kutenganisha jina la ndani la menyu kutoka kwa kiashiria kinachoonyeshwa kwa watumiaji:
 
@@ -43,9 +43,9 @@ Hii ni muhimu wakati:
 - Unahitaji kusaidia lugha nyingi zenye urefu tofauti wa viashiria
 - Unajenga menyu kwa ajili ya maeneo au vikundi maalum vya watumiaji
 
-## Mifano ya Matumizi
+## Mifano ya Matumizi {#usage-examples}
 
-### Mfano 1: Menyu Rahisi na Kiashiria cha Uelekezaji
+### Mfano 1: Menyu Rahisi na Kiashiria cha Uelekezaji {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Create a primary navigation menu called "Main Navigation" with the navigation la
 }
 ```
 
-### Mfano 2: Menyu kwa Mahali Maalum la Mada
+### Mfano 2: Menyu kwa Mahali Maalum la Mada {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 }
 ```
 
-## Uunganishaji na Theme Builder
+## Uunganishaji na Theme Builder {#integration-with-theme-builder}
 
 Unapotumia Theme Builder, uwezo wa Kuunda Menyu:
 
@@ -89,13 +89,13 @@ Unapotumia Theme Builder, uwezo wa Kuunda Menyu:
 3. Huweka menyu kwenye maeneo sahihi ya mada
 4. Unasaidia kuongeza vitu vya menyu baada ya kuunda
 
-## Uwezo Zinazohusiana
+## Uwezo Zinazohusiana {#related-abilities}
 
 - **`add_menu_item`** — Ongeza vitu kwenye menyu iliyopo
 - **`update_menu`** — Badilisha jina la menyu au uipe kwenye eneo la mada
 - **`delete_menu`** — Ondoa menyu kutoka kwenye tovuti yako
 
-## Mazoea Bora
+## Mazoea Bora {#best-practices}
 
 - **Tumia viashiria vya uelekezaji wazi** — weka viashiria vifupi na vinavyoeleweka kwa watumiaji
 - **Linganisha maeneo ya mada** — weka menyu kwenye eneo sahihi la mada ili kuonyeshwa vizuri
@@ -103,14 +103,14 @@ Unapotumia Theme Builder, uwezo wa Kuunda Menyu:
 - **Jaribu uwezo wa kujibu (Responsiveness)** — angalia kwamba menyu zinaonekana vizuri kwenye vifaa vya simu
 - **Tumia viashiria tofauti kwa lugha tofauti** — tumia viashiria tofauti vya uelekezaji kwa matoleo tofauti ya lugha
 
-## Mapungufu
+## Mapungufu {#limitations}
 
 - Viashiria vya uelekezaji ni vya kuonyesha tu; `name` ya ndani bado inatumika kwa utambulisho wa WordPress
 - Usaidizi wa mada unabadilika; siyo mada zote zinazosaidia maeneo yote ya menyu
 - Vitu vya menyu lazima viongezwe kivyake baada ya kuunda menyu
 - Kubadilisha kiashiria cha uelekezaji kunahitaji kusasisha menyu
 
-## Uwezo Zinazohusiana
+## Uwezo Zinazohusiana {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — unda nembo kwa kichwa cha tovuti yako
 - [Validate Palette Contrast](./validate-palette-contrast.md) — hakikisha michanganuo ya rangi ni rahisi kuonekana

@@ -4,11 +4,11 @@ title: Filter - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filter: wu_post_count
+# Filter: wu_post_count {#filter-wupostcount}
 
 Võimaldab plugin arendajatel muuta koguarvu
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Võimaldab plugin arendajatel muuta koguarvu
 | $post_counts | `object` | WordPress objekt, mille tagastab wp_count_posts fn |
 | $post_type | `string` | Postituse tüübi slug |
 
-### Alates versioonist
+### Alates versioonist {#since}
 
 - 1.9.1
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) real 136
 
 
-## Tagastab
+## Tagastab {#returns}
 Uus koguarv

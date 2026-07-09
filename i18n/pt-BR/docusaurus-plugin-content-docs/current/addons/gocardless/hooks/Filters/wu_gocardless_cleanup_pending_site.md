@@ -4,13 +4,13 @@ title: Filtro - wu_gococardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gococardless_cleanup_pending_site
+# Filter: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 É acionado antes de excluir um site pendente órfão de uma assinatura GoCardless cancelada.
 
 Retorne `false` deste filtro para impedir a exclusão.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Retorne `false` deste filtro para impedir a exclusão.
 | $membership | `\WP_Ultimo\Models\Membership` | A assinatura cancelada. |
 | $old_status | `string` | O status antes do cancelamento. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) na linha 1086

@@ -3,11 +3,11 @@ title: ការគ្រប់គ្រង Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# ការដោះស្រាយ webhook
+# ការដោះស្រាយ webhook {#webhook-handling}
 
 បង្កើតចំណុចបញ្ចប់ webhook ផ្ទាល់ខ្លួន ដើម្បីទទួលព្រឹត្តិការណ៍ពីសេវាខាងក្រៅ និងធ្វើសមកាលកម្មទិន្នន័យជាមួយ Ultimate Multisite។
 
-## ចំណុចបញ្ចប់ webhook ផ្ទាល់ខ្លួន
+## ចំណុចបញ្ចប់ webhook ផ្ទាល់ខ្លួន {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## ចំណុចត្រូវពិចារណាផ្នែកសុវត្ថិភាព
+## ចំណុចត្រូវពិចារណាផ្នែកសុវត្ថិភាព {#security-considerations}
 
 - ផ្ទៀងផ្ទាត់ហត្ថលេខា webhook ជានិច្ច ដោយប្រើ HMAC ឬសម្ងាត់រួម
 - ប្រើ `permission_callback` លើ REST route របស់អ្នក — កុំកំណត់វាជា `__return_true` ក្នុងផលិតកម្ម

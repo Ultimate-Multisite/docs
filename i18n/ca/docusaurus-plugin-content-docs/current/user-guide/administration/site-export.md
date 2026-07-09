@@ -3,27 +3,27 @@ title: Exportació de site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportació de lloc
+# Exportació de lloc {#site-export}
 
 La pàgina d'administració **Exportació de lloc** permet als administradors de xarxa empaquetar un lloc, o tota la xarxa, en un arxiu de descàrrega per a migració, còpia de seguretat o transferència.
 
-## Exportar un lloc
+## Exportar un lloc {#exporting-one-site}
 
 Vageu a **Ultimate Multisite > Exportació de lloc** i seleccioneu **Generar nova Exportació de lloc**. Trieu el subloc que voleu exportar i després seleccioneu si l'arxiu ha de contenir les vàlides, els plugins i els temes.
 
 Quan l'exportació es completi, descarregueu el ZIP de la llista d'**Exportacions existents**. Els ZIP d'exportació ja inclouen un `index.php` d'autoinici i un `readme.txt`, de manera que l'arxiu es pot carregar en un allotjament nou i començar sense haver d'instal·lar abans un plugin d'importador separat.
 
-## Exportar tota la xarxa
+## Exportar tota la xarxa {#exporting-the-whole-network}
 
 Utilitzeu **Exportació de xarxa** a la pàgina d'Exportació de lloc quan necessiteu un únic arxiu que contingui tots els sublocs de la xarxa. Això és útil abans de migracions d'allotjament, simulacions de recuperació de desastres o reconstruccions de *staging* on cada subloc ha de viatjar junts.
 
 Com que una exportació de xarxa pot ser molt més gran que una exportació d'un únic lloc, executeu-la durant un període de baix trànsit i confirmeu que l'emmagatzematge objectiu té suficient espai de sobra per vàlides, plugins, temes i els arxius ZIP generats.
 
-### Paquets d'importació de xarxa
+### Paquets d'importació de xarxa {#network-import-bundles}
 
 A partir d'Ultimate Multisite 2.12.0, Site Exporter pot generar **paquets d'importació de xarxa** (network import bundles), arxius especialitzats dissenyats per a una restauració de llocs a nivell de xarxa simplificada. Un paquet d'importació de xarxa conté tots els fitxers i metadades necessàries per restaurar múltiples llocs en una nova instal·lació de xarxa.
 
-#### Generar un paquet d'importació de xarxa
+#### Generar un paquet d'importació de xarxa {#generating-a-network-import-bundle}
 
 1. Vageu a **Ultimate Multisite > Exportació de lloc**
 2. Cliqueu a **Generar nova Exportació de xarxa**
@@ -32,7 +32,7 @@ A partir d'Ultimate Multisite 2.12.0, Site Exporter pot generar **paquets d'impo
 5. Cliqueu a **Generar**
 6. Descarregueu el ZIP del paquet de la llista d'**Exportacions existents**
 
-#### Restaurar des d'un paquet d'importació de xarxa
+#### Restaurar des d'un paquet d'importació de xarxa {#restoring-from-a-network-import-bundle}
 
 Per restaurar llocs des d'un paquet d'importació de xarxa:
 
@@ -52,7 +52,7 @@ Els paquets d'importació de xarxa preserven:
 - Vàlides multimèdia (si s'inclouen al paquet)
 - Taules i dades personalitzades de la base de dades
 
-## Instal·lar un ZIP d'exportació d'autoinici
+## Instal·lar un ZIP d'exportació d'autoinici {#installing-a-self-booting-export-zip}
 
 Per restaurar un ZIP d'autoinici en un allotjament nou:
 

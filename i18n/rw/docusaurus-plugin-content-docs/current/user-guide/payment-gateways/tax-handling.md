@@ -3,7 +3,7 @@ title: Imicungire y’imisoro
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gucunga Imisoro
+# Gucunga Imisoro {#tax-handling}
 
 Ultimate Multisite ifite module yo gukusanya imisoro yubatswe muri plugin yacu y’ibanze, bityo niba ukeneye gukusanya imisoro ku byagurishijwe kuri gahunda, udupfuriko na serivisi zawe, ushobora kubikora byoroshye utiriwe ushyiraho add-ons.
 
@@ -11,7 +11,7 @@ Ku bigo biherereye i Burayi, dutanga **add-on** yongeramo ibikoresho n’ibirang
 
 Ultimate Multisite ntitanga cyangwa ngo yishyure imisoro mu izina ryawe kuri leta; tugufasha gusa gukusanya imisoro ikwiye igihe cy’igikorwa cyo kwishyura. **Uzakomeza gukenera kwishyura imisoro ku giti cyawe.**
 
-## Gufungura Ikusanyirizo ry’Imisoro
+## Gufungura Ikusanyirizo ry’Imisoro {#enabling-tax-collection}
 
 Gukusanya imisoro ntibiba bifunguye ku buryo busanzwe. Kugira ngo ubifungure, ugomba kujya kuri **Ultimate Multisite > Settings > Taxes** maze ugakanda uhindura kugira ngo ufungure igenamiterere rya Enable Taxes.
 
@@ -25,7 +25,7 @@ Ushobora kandi kureba igenamiterere ry’imisoro ku bicuruzwa byihariye:
 
 ![Igenamiterere ry’imisoro ku bicuruzwa](/img/config/settings-taxes.png)
 
-### Umusoro utarimo vs. umusoro urimo
+### Umusoro utarimo vs. umusoro urimo {#tax-excluded-vs-tax-included}
 
 Ku buryo busanzwe, ibiciro byose by’ibicuruzwa byawe ntibiba birimo umusoro, bivuze ko imisoro **itarimo** mu giciro cy’igicuruzwa. Nitumenya ko umukiriya agomba kwishyura imisoro ku kugura runaka, tuzongeraho imisoro **hejuru** y’igiteranyo gito.
 
@@ -37,7 +37,7 @@ Ntukibagirwe **kubika** impinduka wakoze.
 
 ###
 
-## Gukora Ibipimo by’Imisoro
+## Gukora Ibipimo by’Imisoro {#creating-tax-rates}
 
 Nyuma yo gufungura Ikusanyirizo ry’Imisoro, uzakenera gukora ibipimo by’imisoro ku hantu runaka ukoresheje muhinduzi w’ibipimo by’imisoro wacu.
 
@@ -51,7 +51,7 @@ Ku rupapuro rwa muhinduzi w’ibipimo by’imisoro, ushobora kongeramo Tax Rates
 
 Uzakenera guha buri gipimo cy’umusoro **umutwe** (ukoreshwa kuri fagitire). Hanyuma ushobora guhitamo **igihugu** (bisabwa), **leta,** n’**umujyi** (byombi si itegeko) aho uyu musoro uzishyurizwa. Hanyuma, ongeramo **igipimo cy’umusoro mu ijanisha**.
 
-### Ibyiciro by’Imisoro
+### Ibyiciro by’Imisoro {#tax-categories}
 
 Ushobora kandi gukora Tax Categories nyinshi, kugira ngo wongereho ibipimo by’imisoro bitandukanye ku moko atandukanye y’ibicuruzwa.
 
@@ -73,7 +73,7 @@ Ushobora gushyiraho icyiciro cy’umusoro ku gicuruzwa runaka ujya kuri **Produc
 
 Kuri iyo screen imwe, ushobora kuzimya akabuto ka **Is Taxable?** kugira ngo umenyeshe Ultimate Multisite ko itagomba gukusanya imisoro kuri icyo gicuruzwa runaka.
 
-## Gushyigikira VAT y’u Burayi
+## Gushyigikira VAT y’u Burayi {#european-vat-support}
 
 Nk’uko byavuzwe mbere, dufite add-on iboneka ku bakiriya bo muri EU bafite ibisabwa by’inyongera kubera amabwiriza ya VAT y’u Burayi.
 
@@ -101,7 +101,7 @@ Nusubira kuri **Tax Settings tab** , uzabona amahitamo mashya ahari. Kanda uhind
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Kuzana Ibipimo by’Imisoro ya VAT
+### Kuzana Ibipimo by’Imisoro ya VAT {#pulling-on-vat-tax-rates}
 
 Kimwe mu bikoresho integration yacu yongeramo ni ubushobozi bwo gupakira ibipimo by’imisoro ku bihugu bigize EU. Ibyo bishobora gukorwa usuye urupapuro rwa muhinduzi w’ibipimo by’imisoro nyuma yo gufungura gushyigikira EU VAT.
 
@@ -111,7 +111,7 @@ Hasi ku rupapuro, uzabona amahitamo yo kuzana VAT. Guhitamo ubwoko bw’igipimo 
 
 Ushobora kandi guhindura indangagaciro nyuma yo kuzizana. Kugira ngo ubikore, hindura gusa umurongo w’imbonerahamwe ukeneye maze ukande kubika indangagaciro nshya.
 
-### Kwemeza VAT
+### Kwemeza VAT {#vat-validation}
 
 Iyo gushyigikira VAT gufunguye, Ultimate Multisite izongeraho umwanya w’inyongera ku ifishi ya checkout, munsi y’umwanya wa aderesi yo kwishyuriraho. Uwo mwanya uzagaragara gusa ku bakiriya biherereye muri EU.
 

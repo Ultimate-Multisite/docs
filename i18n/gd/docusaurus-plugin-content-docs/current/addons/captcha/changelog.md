@@ -3,7 +3,7 @@ title: Captcha Loga nan atharraichean
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Loga-atharrachaidhean Captcha
+# Loga-atharrachaidhean Captcha {#captcha-changelog}
 
 Tionndadh: 1.5.0 - Air fhoillseachadh air 2026-05-22
 * Ùr: Cuingealaiche reata le stad chruaidh — cunntaidh e gach GET agus POST air uachdaran fo dhìon captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) agus freagraidh e le HTTP 429, bann-cinn `Retry-After`, agus cadal tarpit air thuaiream (1–5s, le crìoch chruaidh aig 15s).

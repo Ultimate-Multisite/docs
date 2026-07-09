@@ -3,9 +3,9 @@ title: Kelių tinklų pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Kelių tinklų pakeitimų žurnalas
+# Kelių tinklų pakeitimų žurnalas {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nauja: tinklo šablonų peržiūros įrankis — naršykite ir peržiūrėkite tinklo šablonus tiesioginiame skydelyje prieš pirkdami.
 * Nauja: tinklo šablono pasirinkiklis atsiskaitymo metu — klientai gali pasirinkti tinklo šabloną registracijos atsiskaitymo eigoje.
 * Nauja: kelių tinklų magic link SSO — klientai gali sklandžiai pasiekti potinklius naudodami magic-link autentifikavimą.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Pataisyta: apsauga nuo neapibrėžto `network_id` rakto svetainės užklausos taikymo srityje.
 * Pataisyta: tinklo leidimų patikra prieš perjungiant kontekstą apsaugo nuo `wpdb` lentelės savybių klaidų.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Pataisyta: naujo tinklo kūrimas.
 * Pataisyta: meniu atvaizdavimas.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Atnaujinta į Plugin Update Checker v5
 * Pridėtos modernios WordPress plugin antraštės
 * Pagerintas suderinamumas su naujausiomis WordPress versijomis
 
-### 1.0.2
+### 1.0.2 {#102}
 * Klaidų taisymai ir našumo patobulinimai
 * Pagerinta tinklo izoliacija
 
-### 1.0.0
+### 1.0.0 {#100}
 * Pradinis leidimas
 * Pagrindinė kelių tinklų funkcija
 * Integracija su Multisite Ultimate

@@ -4,22 +4,22 @@ title: מסנן - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# מסנן: wu_checkout_step_validation_submittable_field_types
+# מסנן: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
 
 מאפשר למפתחים לעקוף את הבדיקה אם שדה מסוגל להגשה אוטומטית.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | שם | סוג | תיאור |
 |------|------|-------------|
 | $submittable_field_types | `array` | רשימת סוגי השדות. |
 
-### מאז
+### מאז {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 מוגדר ב-[`inc/helpers/validation-rules/class-checkout-steps.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/validation-rules/class-checkout-steps.php#L92) בשורה 92
 
 
-## מחזיר
+## מחזיר {#returns}

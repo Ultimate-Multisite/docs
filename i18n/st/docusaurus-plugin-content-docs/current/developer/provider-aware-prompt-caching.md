@@ -3,11 +3,11 @@ title: Ho boloka Prompt ka Cache ho Hlokomelang Mofani
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Ho Boloka Prompt ka Cache ho Elang Hloko Provider
+# Ho Boloka Prompt ka Cache ho Elang Hloko Provider {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 e hlahisa **ho boloka prompt ka cache ho elang hloko provider**, ho ntlafatsang ditjeho tsa API le tieho ka ho boloka prompts ka cache ho pholletsa le providers ba fapaneng ba LLM. Provider ka nngwe e na le mekgwa le ditlhophiso tse fapaneng tsa caching.
 
-## Kakaretso
+## Kakaretso {#overview}
 
 Ho boloka prompt ka cache ho o dumella ho:
 
@@ -23,11 +23,11 @@ Providers ba fapaneng ba kenya caching tshebetsong ka ditsela tse fapaneng:
 - **OpenRouter**: Caching e ikgethileng ho provider
 - **Vertex Anthropic**: Ho boloka prompt ka cache ka taolo ya cache
 
-## Google Gemini: `cachedContents` API
+## Google Gemini: `cachedContents` API {#google-gemini-cachedcontents-api}
 
 Google Gemini e fana ka taolo e hlakileng ya cache ka `cachedContents` API.
 
-### Tlhophiso
+### Tlhophiso {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Ho Theha Prompt e Bolokilweng ka Cache
+### Ho Theha Prompt e Bolokilweng ka Cache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Ho Sebedisa Prompt e Bolokilweng ka Cache
+### Ho Sebedisa Prompt e Bolokilweng ka Cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Potoloho ya Bophelo ba Cache
+### Potoloho ya Bophelo ba Cache {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Mekgwa e Metle ka ho Fetisisa bakeng sa Gemini
+### Mekgwa e Metle ka ho Fetisisa bakeng sa Gemini {#best-practices-for-gemini}
 
 - **Beha TTL e loketseng**: Lekalekanya poloko ya ditjeho le ho tsofala ha cache
 - **Boloka system prompts ka cache**: Sebedisa system prompt e tshwanang hape dikopong tse fapaneng
 - **Lekola tshebediso ya cache**: Latela hore na ke di-cache dife tse sebediswang haholo
 - **Hlakola di-cache tse fedileng nako**: Hlakola di-cache tse sa sebedisweng nako le nako
 
-## Azure OpenAI: Ho Boloka Prompt ka Cache
+## Azure OpenAI: Ho Boloka Prompt ka Cache {#azure-openai-prompt-caching}
 
 Azure OpenAI e tshehetsa ho boloka prompt ka cache ka taolo ya TTL e iketsang.
 
-### Tlhophiso
+### Tlhophiso {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Ho Dumella Caching
+### Ho Dumella Caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Dihlooho tsa Cache
+### Dihlooho tsa Cache {#cache-headers}
 
 Azure OpenAI e sebedisa dihlooho tsa HTTP bakeng sa taolo ya cache:
 
@@ -152,7 +152,7 @@ Diboleng tse tshehetswang:
 - `no_cache`: O se ke wa boloka kopo ena ka cache
 - `no_store`: O se ke wa boloka ka cache mme o se ke wa sebedisa hape
 
-### Ho Lekola Tshebediso ya Cache
+### Ho Lekola Tshebediso ya Cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Mekgwa e Metle ka ho Fetisisa bakeng sa Azure OpenAI
+### Mekgwa e Metle ka ho Fetisisa bakeng sa Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Sebedisa prompts tse tsitsitseng**: Prompts tse tshwanang di una molemo ho caching
 - **Beha TTL e utlwahalang**: Lekalekanya ditjeho le botjha
 - **Lekola metrics tsa cache**: Latela ho thehwa ha cache kgahlanong le hits
 - **Kopanya dikopo tse tshwanang**: Hlophisa dikopo ka dihlopha ho eketsa cache hits
 
-## OpenRouter: Caching e Ikgethileng ho Provider
+## OpenRouter: Caching e Ikgethileng ho Provider {#openrouter-provider-specific-caching}
 
 OpenRouter e tshehetsa caching ka providers ba ka tlase (OpenAI, Anthropic, jj.).
 
-### Tlhophiso
+### Tlhophiso {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Ho Sebedisa OpenRouter Caching
+### Ho Sebedisa OpenRouter Caching {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Dikgetho tse Ikgethileng ho Provider
+### Dikgetho tse Ikgethileng ho Provider {#provider-specific-options}
 
 Providers ba fapaneng ba na le mekgwa e fapaneng ya caching:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Mekgwa e Metle ka ho Fetisisa bakeng sa OpenRouter
+### Mekgwa e Metle ka ho Fetisisa bakeng sa OpenRouter {#best-practices-for-openrouter}
 
 - **Tseba caching ya provider wa hao**: Provider ka nngwe e na le mekgwa e fapaneng
 - **Leka boitshwaro ba caching**: Netefatsa hore caching e sebetsa le provider eo o e kgethileng
 - **Lekola ditjeho**: Latela poloko e tswang ho caching
 - **Sebedisa models tse tsitsitseng**: Ho fetola models ho senya cache hits
 
-## Vertex Anthropic: Ho Boloka Prompt ka Cache ka Taolo ya Cache
+## Vertex Anthropic: Ho Boloka Prompt ka Cache ka Taolo ya Cache {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) e tshehetsa ho boloka prompt ka cache ka taolo e hlakileng ya cache.
 
-### Tlhophiso
+### Tlhophiso {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Ho Sebelisa Vertex Anthropic Caching
+### Ho Sebelisa Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Mefuta ea Taolo ea Cache
+### Mefuta ea Taolo ea Cache {#cache-control-types}
 
 - **ephemeral**: Cache bakeng sa nako ea kopo (ea kamehla)
 - **persistent**: Cache ho pholletsa le likopo tse ngata (haeba e tšehetsoa)
 
-### Ho Hlokomela Tšebeliso ea Cache
+### Ho Hlokomela Tšebeliso ea Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Mekhoa e Metle bakeng sa Vertex Anthropic
+### Mekhoa e Metle bakeng sa Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Sebelisa caching ea ephemeral**: E loketse caching ea seboka se le seng
 - **Beha max_tokens ka nepo**: Lekalekanya boholo ba cache le litšenyehelo
 - **Hlokomela metrics ea cache**: Latela katleho ea cache
 - **Lekola ka mosebetsi oa hau**: Netefatsa hore caching e tsoela nyeoe ea hau ea tšebeliso molemo
 
-## Leano la Caching Pakeng tsa Bafani
+## Leano la Caching Pakeng tsa Bafani {#cross-provider-caching-strategy}
 
-### Tlhophiso e Kopaneng
+### Tlhophiso e Kopaneng {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Ho Lemohwa ha Mofani
+### Ho Lemohwa ha Mofani {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Leano la Fallback
+### Leano la Fallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Ntlafatso ea Litšenyehelo
+## Ntlafatso ea Litšenyehelo {#cost-optimization}
 
-### Bala Poloko
+### Bala Poloko {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Malebela a Ntlafatso
+### Malebela a Ntlafatso {#optimization-tips}
 
 - **Cache system prompts tse kholo**: Poloko e kholo ka ho fetisisa ea litšenyehelo
 - **Sebelisa moelelo hape**: Cache litokomane tsa moelelo tse sebelisoang khafetsa
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Hlokomela katleho ea cache**: Latela poloko ea sebele
 - **Fetola TTL**: Lekalekanya litšenyehelo le bocha
 
-## Ho Rarolla Mathata
+## Ho Rarolla Mathata {#troubleshooting}
 
-### Cache ha e sebelisoe
+### Cache ha e sebelisoe {#cache-not-being-used}
 
 - Netefatsa hore caching e nolofalitsoe tlhophisong
 - Hlahloba hore prompts lia tšoana (caching e hloka ho tšoana ka ho feletseng)
 - Netefatsa hore cache ha e so fele
 - Hlahloba meeli ea cache e ikhethileng ho mofani
 
-### Ho theha cache hoa hloleha
+### Ho theha cache hoa hloleha {#cache-creation-failing}
 
 - Netefatsa hore boholo ba cache bo ka har’a meeli ea mofani
 - Hlahloba hore syntax ea taolo ea cache e nepahetse
 - Netefatsa hore mofani o tšehetsa caching bakeng sa model ea hau
 - Hlahloba litokomane tsa mofani bakeng sa meeli
 
-### Litšenyehelo tse sa lebelloang
+### Litšenyehelo tse sa lebelloang {#unexpected-costs}
 
 - Hlokomela ho thehoa ha cache ha ho bapisoa le tokens tsa ho bala cache
 - Netefatsa hore cache e hlile e sebelisoa
 - Hlahloba cache misses tse bakoang ke liphapang tsa prompt
 - Nahana ka ho fetola TTL kapa leano la cache
 
-## Papiso ea Bafani
+## Papiso ea Bafani {#provider-comparison}
 
 | Tšobotsi | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Phokotso ea litšenyehelo | 90% | 90% | E itšetlehile ka mofani | 90% |
 | Ho hlokomela | Ka botlalo | Ka metrics | Ho itšetlehile ka mofani | Ka usage |
 
-## Mehato e Latelang
+## Mehato e Latelang {#next-steps}
 
 1. **Khetha mofani oa hau**: Khetha ho latela litlhoko tsa hau
 2. **Hlophisa caching**: Beha caching e ikhethileng ho mofani

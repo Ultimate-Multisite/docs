@@ -4,11 +4,11 @@ title: Saringan - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Ngidini pangembang plugin nambah pamariksaan anyar kanggo netepake asil.
 
-## Parameter
+## Parameter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Ngidini pangembang plugin nambah pamariksaan anyar kanggo netepake asil.
 | $domain | `self` | Instance domain saiki. |
 | $domains_and_ips | `array` | Dhaptar domain lan IP sing ditemokake ing DNS lookup. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.4
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) ing baris 455
 
 
-## Ngasilake
+## Ngasilake {#returns}
 Apa DNS wis disetel kanthi bener utawa ora.

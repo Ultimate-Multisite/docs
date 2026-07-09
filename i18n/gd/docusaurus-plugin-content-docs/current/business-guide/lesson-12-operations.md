@@ -3,17 +3,17 @@ title: 'Leasan 12: A’ ruith a’ ghnìomhachais'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leasan 12: A’ Ruith a’ Ghnìomhachais
+# Leasan 12: A’ Ruith a’ Ghnìomhachais {#lesson-12-running-the-business}
 
 Chan e pròiseact a chuireas tu crìoch air a th’ ann an àrd-ùrlar -- ’s e gnìomhachas a ruitheas tu a th’ ann. Tha an leasan seo a’ còmhdach obair làitheil riaghlaidh FitSite: taic, bileachadh, cumail suas, agus cumail luchd-ceannach toilichte.
 
-## Far an do Stad Sinn
+## Far an do Stad Sinn {#where-we-left-off}
 
 Tha FitSite beò agus tha luchd-ceannach a’ clàradh. A-nis feumaidh tu an obair a ruith gu seasmhach.
 
-## Obair Làitheil
+## Obair Làitheil {#daily-operations}
 
-### Sgrùdadh
+### Sgrùdadh {#monitoring}
 
 Thoir sùil orra seo gach latha (no cuir rabhaidhean air dòigh):
 
@@ -22,7 +22,7 @@ Thoir sùil orra seo gach latha (no cuir rabhaidhean air dòigh):
 - **Pàighidhean a dh’fhàillig**: A bheil fàilligidhean pàighidh ann a dh’fheumas aire?
 - **Iarrtasan taice**: A bheil ceistean luchd-ceannach gun fhreagairt ann?
 
-### Taic Luchd-ceannach
+### Taic Luchd-ceannach {#customer-support}
 
 Tha d’ fhòcas air nìs na bhuannachd an seo. Leis gu bheil na luchd-ceannach agad uile nan stiùideothan fallaineachd, chì thu na h-aon cheistean a-rithist is a-rithist:
 
@@ -36,7 +36,7 @@ Tha d’ fhòcas air nìs na bhuannachd an seo. Leis gu bheil na luchd-ceannach 
 
 Tog do bhun-eòlais (a thòisich ann an Leasan 8) timcheall nan ceistean ath-chuairteach seo. Tha gach tiogaid taice a dh’fhaodadh a bhith air a bhith na artaigil bun-eòlais na chomharradh gum bu chòir dhut an t-artaigil sin a sgrìobhadh.
 
-### Ìrean Taice
+### Ìrean Taice {#support-tiers}
 
 Mar a dh’fhàsas tu, structaraich taic a rèir plan:
 
@@ -48,9 +48,9 @@ Mar a dh’fhàsas tu, structaraich taic a rèir plan:
 
 Faodaidh an [addon Tiogaidean Taice](/addons/support-tickets) cuideachadh le bhith a’ riaghladh iarrtasan taice taobh a-staigh an àrd-ùrlair.
 
-## Obair Bileachaidh
+## Obair Bileachaidh {#billing-operations}
 
-### Pàighidhean Ath-chuairteach
+### Pàighidhean Ath-chuairteach {#recurring-payments}
 
 Bidh Ultimate Multisite a’ làimhseachadh bileachadh ath-chuairteach gu fèin-obrachail tron gheata pàighidh agad. ’S e an obair agad fhèin sùil a chumail air:
 
@@ -58,7 +58,7 @@ Bidh Ultimate Multisite a’ làimhseachadh bileachadh ath-chuairteach gu fèin-
 - **Dunning**: Cuir loidsig ath-fheuchainn fèin-obrachail air dòigh tron gheata pàighidh agad (tha Stripe a’ làimhseachadh seo gu math)
 - **Iarrtasan cuir dheth**: Tuig carson a dh’fhàgas luchd-ceannach. ’S e fios-air-ais a th’ anns gach cuir dheth.
 
-### Riaghladh Memberships
+### Riaghladh Memberships {#managing-memberships}
 
 Seòl gu **Ultimate Multisite > Memberships** gus:
 
@@ -69,13 +69,13 @@ Seòl gu **Ultimate Multisite > Memberships** gus:
 
 Faic [Riaghladh Memberships](/user-guide/administration/managing-memberships) airson an iomraidh shlàn.
 
-### Fàirdealan
+### Fàirdealan {#invoicing}
 
 Dèan cinnteach gu bheil fàirdealan gan gineadh gu ceart airson gach pàigheadh. Dh’fhaodadh gum bi feum aig luchd-ceannach air fàirdealan airson aithris chosgaisean gnìomhachais. Faic [Riaghladh Phàighidhean is Fàirdealan](/user-guide/administration/managing-payments-and-invoices).
 
-## Cumail Suas an Àrd-ùrlair
+## Cumail Suas an Àrd-ùrlair {#platform-maintenance}
 
-### Ùrachaidhean WordPress agus Plugin
+### Ùrachaidhean WordPress agus Plugin {#wordpress-and-plugin-updates}
 
 Mar rianaire an lìonraidh, tha uallach ort airson:
 
@@ -88,14 +88,14 @@ Mar rianaire an lìonraidh, tha uallach ort airson:
 Bheir ùrachadh briste buaidh air gach làrach neach-ceannach air an lìonra agad. Dèan deuchainn air ùrachaidhean an-còmhnaidh air lethbhreac staging den lìonra agad an toiseach.
 :::
 
-### Tèarainteachd
+### Tèarainteachd {#security}
 
 - Cùm gach bathar-bog ùraichte
 - Cleachd faclan-faire làidir agus dearbhadh dà-fhactair airson Accountan rianaire
 - Cum sùil air gnìomhachd amharasach
 - Biodh plan agad airson tachartasan tèarainteachd
 
-### Coileanadh
+### Coileanadh {#performance}
 
 Mar a dh’fhàsas an lìonra agad, cum sùil air:
 
@@ -105,9 +105,9 @@ Mar a dh’fhàsas an lìonra agad, cum sùil air:
 
 Beachdaich air caching a chur an sàs (cache duilleige, cache nithean) agus CDN mura h-eil thu air sin a dhèanamh mu thràth. Bidh an [amalachadh Cloudflare](/user-guide/host-integrations/cloudflare) a’ làimhseachadh mòran dhen seo.
 
-## Riaghladh Cuairt-beatha Luchd-ceannach
+## Riaghladh Cuairt-beatha Luchd-ceannach {#customer-lifecycle-management}
 
-### Lùghdachadh Churn
+### Lùghdachadh Churn {#reducing-churn}
 
 ’S e churn an ceudad de luchd-ceannach a chuireas dheth gach mìos. Airson gnìomhachas subscription, tha lùghdachadh churn cho cudromach ri luchd-ceannach ùra fhaighinn.
 
@@ -119,7 +119,7 @@ Beachdaich air caching a chur an sàs (cache duilleige, cache nithean) agus CDN 
 - Lorg iad roghainn eile nas saoire → daingnich luach do nìs
 - Dhùin an gnìomhachas aca → do-sheachanta, ach cùm sùil air seo fa leth
 
-### Brosnachadh Àrdachaidhean
+### Brosnachadh Àrdachaidhean {#encouraging-upgrades}
 
 Bu chòir luchd-ceannach air Starter a tha a’ soirbheachadh a bhrosnachadh gus àrdachadh:
 
@@ -127,7 +127,7 @@ Bu chòir luchd-ceannach air Starter a tha a’ soirbheachadh a bhrosnachadh gus
 - Cuir puist-d chuimsichte a’ soilleireachadh feartan Growth plan a bhiodh feumail dhaibh
 - Seall na tha luchd-ceannach Growth/Pro air a thogail
 
-### Iomairtean Win-Back
+### Iomairtean Win-Back {#win-back-campaigns}
 
 Nuair a chuireas neach-ceannach dheth:
 
@@ -135,30 +135,30 @@ Nuair a chuireas neach-ceannach dheth:
 2. Dèilig ris an dragh aca ma ghabhas e dèanamh
 3. Tairg lasachadh airson tilleadh (30-60 latha às dèidh cuir dheth)
 
-## Ruitinnean Seachdaineil is Mìosail
+## Ruitinnean Seachdaineil is Mìosail {#weekly-and-monthly-routines}
 
-### Seachdaineil
+### Seachdaineil {#weekly}
 
 - Dèan lèirmheas air clàraidhean ùra agus cuir-dheth
 - Freagair gach tiogaid taice fhosgailte
 - Thoir sùil air coileanadh an àrd-ùrlair agus uptime
 - Dèan lèirmheas air pàighidhean sam bith a dh’fhàillig
 
-### Mìosail
+### Mìosail {#monthly}
 
 - Dèan anailis air prìomh mheatairean (MRR, churn, luchd-ceannach ùra, àrdachaidhean)
 - Cuir ùrachaidhean WordPress agus plugin an sàs (às dèidh deuchainn staging)
 - Dèan lèirmheas air agus ùraich am bun-eòlais stèidhichte air pàtrain taice
 - Cuir cuairt-litir no ùrachadh gu luchd-ceannach (feartan ùra, molaidhean, naidheachdan gnìomhachas fallaineachd)
 
-### Gach Cairteal
+### Gach Cairteal {#quarterly}
 
 - Dèan lèirmheas air prìsean an coimeas ri farpaisich agus fios-air-ais luchd-ceannach
 - Dèan measadh air dealbhaidhean teamplaid -- a bheil feum aca air ùrachadh?
 - Dèan measadh air comas hosting -- am feum thu sgèileadh?
 - Dèan lèirmheas air agus leasaich onboarding stèidhichte air dàta gnìomhachaidh
 
-## Na Thog Sinn san Leasan Seo
+## Na Thog Sinn san Leasan Seo {#what-we-built-this-lesson}
 
 - **Gnìomhan sgrùdaidh làitheil** airson uptime, clàraidhean, pàighidhean, agus taic
 - **Structar taice le ìrean** air a mhaidseadh ri ìrean plana

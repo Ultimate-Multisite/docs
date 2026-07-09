@@ -3,7 +3,7 @@ title: Administrare Situa |
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Gestionem Situum
+# Gestionem Situum {#managing-sites}
 
 I sita (vel subsita) sunt fundamentum negotii WaaS tuae. Ultimate Multisite habet 3 typus sitarum:
 
@@ -11,13 +11,13 @@ I sita (vel subsita) sunt fundamentum negotii WaaS tuae. Ultimate Multisite habe
 - **Template Sitarum** — Sitae predefinitas quas clienti eligere possunt ut punctum initium sint
 - **Sita Principalis** — Tua sita network primarium
 
-## Spectare Sitara
+## Spectare Sitara {#viewing-sites}
 
 Ad **Ultimate Multisite → Sites** naviga ut omnia subsita in network tuam vides. Omnis sita est annotatus per typum et filtere potes filtrare per Omnes Sitae, Proprietatis Clientis, Template, vel Pendentes.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Addere Novum Situm
+## Addere Novum Situm {#adding-a-new-site}
 
 Clicca in boton **Add Site** ut novum situm crees. Debes praebere:
 
@@ -27,15 +27,15 @@ Clicca in boton **Add Site** ut novum situm crees. Debes praebere:
 
 Opere **Copy Site** te permittit creandum novum situm in base sita template existere. Cum activum est, eligere potes quam template ut punctum initium usues. Assure te quod **Copy Media on Duplication** activum est ut media files includantur.
 
-## Gestionem Sitae Existertae
+## Gestionem Sitae Existertae {#managing-an-existing-site}
 
 Clicca in **Manage** in quoquam sita ut paginam **Edit Site** aperias. Hic invenies:
 
-### Informatio Basica
+### Informatio Basica {#basic-information}
 
 Nomen siti, typum, ID sitae et descriptionem. Etiam videbis dominum mappatum, membrorum associatum et numerum clientis qui sitam proprietatem habet.
 
-### Optiones Sitae
+### Optiones Sitae {#site-options}
 
 Configera potestates et limitas sitae:
 
@@ -47,7 +47,7 @@ Configera potestates et limitas sitae:
 
 Per default, ius sita sequuntur limites definitos ad nivelem membership. Ius limites in nivelo siti supervenient ad settum membership.
 
-### Associationes
+### Associationes {#associations}
 
 Sub optionibus sitis invenies information de:
 
@@ -55,7 +55,7 @@ Sub optionibus sitis invenies information de:
 - **Membership** sub quo situm est
 - **Account clientis** vinculatus cum sito
 
-### Barra Latérală Dreștină
+### Barra Latérală Dreștină {#right-sidebar}
 
 In parte dextra possis facere:
 

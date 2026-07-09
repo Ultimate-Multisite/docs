@@ -3,13 +3,13 @@ title: Құрылымдық дамуға көмек
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-дан арқылы жеке дамыту көмегін қалай алуға болады?
+# Codeable-дан арқылы жеке дамыту көмегін қалай алуға болады? {#how-to-get-custom-development-help-from-codeable}
 
 Кейде біздің желі ағындарын дәл қалағандай істеу үшін керемет өзгерістерді қажет етеміз. Егер сіз осыны іздесеңіз, біз [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) платформасын ұсынамыз. Бұл жерде Сіз Ultimate Multisite тәжірибесі бар тәжірибелі дамытушыларды таба аласыз.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) – бұл клиенттерді кәсіби WordPress фрилансер дамытушылармен қосатын платформа, олар кез келген көлемдегі жобаларға жұмыс істей алады. Олар сіздің ойлаған тапсырма үшін нақты білікті мамандармен сәйкес келуін қамтамасыз ететін мұқила өтініш процесіне ие.
 
-### Codeable-де жоба қалай жасау керек?
+### Codeable-де жоба қалай жасау керек? {#how-to-create-a-project-in-codeable}
 
 Ең алдымен, [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) сайтына кіріп, **Start a Project** (Жоба бастау) батырмасын басыңыз.
 

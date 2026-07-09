@@ -3,7 +3,7 @@ title: જાણીતી અસંગતતાઓ
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# અન્ય Plugins સાથે જાણીતી અસંગતતાઓ
+# અન્ય Plugins સાથે જાણીતી અસંગતતાઓ {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite ઇન્સ્ટોલ અને એક્ટિવેટ કર્યા પછી, અન્ય plugins સાથેની અસંગતતાઓને કારણે તમને સમસ્યાઓ આવી શકે છે.
 

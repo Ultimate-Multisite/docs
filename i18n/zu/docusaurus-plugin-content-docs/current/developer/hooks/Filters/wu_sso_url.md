@@ -4,13 +4,13 @@ title: Isihlungi - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Isihlungi: wu_sso_url
+# Isihlungi: wu_sso_url {#filter-wussourl}
 
 Sihluza ama-URL e-SSO akhiqiziwe ngaphambi kokuthi abuyiselwe ezenzweni zekhasimende ezinqamula izizinda.
 
 Sebenzisa lesi sihlungi lapho ukuhlanganiswa kudinga ukwengeza umongo othenjwayo kusixhumanisi se-SSO se-tenant ozimele noma kushintshe i-URL ye-broker kuyilapho kugcinwa ukuqinisekiswa kwe-token kwe-Ultimate Multisite.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Sebenzisa lesi sihlungi lapho ukuhlanganiswa kudinga ukwengeza umongo othenjwayo
 | $site_id | `int` | I-ID yesayithi okuhloswe ukuvakashelwa kuyo. |
 | $redirect_to | `string` | I-URL yendawo okuyiwa kuyo ngemva kokuqinisekiswa kwe-SSO okuphumelele. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.13.0
 
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-`inc/sso/class-sso.php`.
 
 
-## Okubuyiswayo
+## Okubuyiswayo {#returns}
 
 I-URL ye-SSO ehlungiwe.

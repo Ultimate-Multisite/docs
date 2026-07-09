@@ -3,11 +3,11 @@ title: Änderungsprotokoll
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Veröffentlicht am 2026-04-28
+## 1.9.0 — Veröffentlicht am 2026-04-28 {#190--released-on-2026-04-28}
 
-### Neu
+### Neu {#new}
 
 - **`create_contact_form` Ability** — erstellt ein Kontaktformular mithilfe des aktiven Formular-Plugins (Contact Form 7, WPForms, Fluent Forms oder Gravity Forms) und gibt einen Shortcode zurück, der in jedem Beitrag oder jeder Seite eingebettet werden kann.
 - **`set_featured_image` Ability** — weist einem Beitrag oder einer Seite ein Beziehungsbild (Featured Image) anhand einer bestehenden Media Library Attachment ID oder einer Remote-URL zu; importiert das Bild automatisch, wenn eine URL angegeben wird.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Letzte Sitzung wiederherstellen** — das Chat-Panel lädt nun bei Seitenaufruf und beim Öffnen des Widgets automatisch das letzte Gespräch, sodass der Kontext bei der Navigation zwischen Seiten nie verloren geht.
 - **Plugin-Aktionslinks** — schnelle Links zu Einstellungen und dem Abilities Registry erscheinen nun auf dem WordPress-Bildschirm **Plugins → Installierte Plugins** unterhalb der Plugin-Beschreibung.
 
-### Verbessert
+### Verbessert {#improved}
 
 - **Image Source Retry** — der Agent versucht nun alle konfigurierten kostenlosen Bildquellen erneut, bevor er bei einem Download-Fehler auf ein KI-generiertes Bild zurückgreift.
 - **Model Info Panel** — immer im Chat-Header sichtbar; wird nicht mehr nach der ersten Nachricht ausgeblendet.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat Widget Redesign** — ein vereinheitlichtes KI-Icon ersetzt das vorherige benutzerdefinierte Avatar; dies ist konsistent mit dem integrierten Agenten-System.
 - **URL Linkification** — URLs, die in Systemnachrichten und Fehler-Nachrichtenblasen erscheinen, werden nun als klickbare Links gerendert.
 
-### Behoben
+### Behoben {#fixed}
 
 - **Ability Discoverability** — Beschreibungen, System-Prompt-Referenzen und Namespace-Ausrichtungen korrigiert, sodass alle Abilities zuverlässig in der Tool-Liste des Agenten erscheinen.
 - **Providers Cache** — Provider werden nun site-weit über einen Versionszähler gecached, wodurch Probleme mit veralteten Providern in Multisite-Netzwerken verhindert werden.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Veröffentlicht am 2026-04-09
+## 1.4.0 — Veröffentlicht am 2026-04-09 {#140--released-on-2026-04-09}
 
-### Neu
+### Neu {#new-1}
 
 - **WP-CLI Benchmark Command** (`wp gratis-ai-agent benchmark`) — führt die Agent Capabilities v1 Benchmark Suite von der Kommandozeile aus für CI-Pipelines und Modell-Evaluierungs-Workflows. Unterstützt Durchläufe pro Frage, Provider-/Model-Überschreibungen und JSON-/CSV-Ausgabe.
 - **Agent Capabilities v1 Benchmark Suite** — ein strukturiertes Set komplexer, mehrstufiger Prompts, die die gesamte Ability-Oberfläche testen, inklusive Scoring und Token-/Dauer-Berichterstattung.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant Website Benchmark Question** (`q-restaurant-website`) — End-to-End-Test, der CPT-Registrierung, Design System, Navigation und Plugin-Entdeckung abdeckt.
 - **AI Provider Connector Plugins** wurden zu WordPress Playground Blueprints hinzugefügt, um eine schnellere lokale Entwicklungsumgebung zu gewährleisten.
 
-### Verbessert
+### Verbessert {#improved-1}
 
 - README aktualisiert mit Dokumentation und Einrichtungshinweisen für AI Provider Connector.
 
-### Behoben
+### Behoben {#fixed-1}
 
 - 25 PHPUnit Test-Fehler auf dem `main`-Branch behoben.
 - Das GitHub Releases URL-Format in `blueprint.json` korrigiert.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Ältere Release-Notizen finden Sie im Plugin-Repository._

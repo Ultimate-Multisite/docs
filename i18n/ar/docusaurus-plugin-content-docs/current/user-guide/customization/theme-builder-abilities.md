@@ -3,18 +3,18 @@ title: قدرات مُنشئ القوالب
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# إمكانيات مُنشئ القوالب: إنشاء وتفعيل قوالب الكتل (Block Themes)
+# إمكانيات مُنشئ القوالب: إنشاء وتفعيل قوالب الكتل (Block Themes) {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 تقدم Superdav AI Agent v1.12.0 إمكانيتين قويتين تسمحان لك بإنشاء ونشر قوالب كتل (block themes) مخصصة مباشرة من واجهة الدردشة.
 
-## نظرة عامة
+## نظرة عامة {#overview}
 
 تُمكّن إمكانيتا **scaffold-block-theme** و **activate-theme** الوكلاء (agents) من:
 - إنشاء قوالب كتل كاملة وجاهزة للإنتاج بناءً على مواصفاتك.
 - تفعيل القوالب تلقائيًا على موقعك دون تدخل يدوي.
 - بناء هويات بصرية متماسكة من خلال قرارات تصميم موجهة.
 
-## إنشاء الهيكل الأساسي لقالب الكتل (Scaffold Block Theme)
+## إنشاء الهيكل الأساسي لقالب الكتل (Scaffold Block Theme) {#scaffold-block-theme}
 
 تُنشئ إمكانية **scaffold-block-theme** قالب كتل WordPress جديد بهيكل كامل للقالب، بما في ذلك:
 
@@ -23,7 +23,7 @@ _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 - أنماط وتنوعات الكتل المخصصة.
 - بيانات وصف القالب ودعماته (Theme metadata and support declarations).
 
-### كيفية الاستدعاء
+### كيفية الاستدعاء {#how-to-invoke}
 
 في محادثتك مع Superdav AI Agent، يمكنك طلب إنشاء القالب:
 
@@ -38,7 +38,7 @@ sans-serif typography, and a professional layout"
 3. إنشاء جميع ملفات القالب الضرورية.
 4. تجهيز القالب للتفعيل.
 
-### المخرجات المتوقعة
+### المخرجات المتوقعة {#expected-output}
 
 عند تنفيذ الإمكانية بنجاح، سترى:
 
@@ -56,11 +56,11 @@ sans-serif typography, and a professional layout"
   Status: Ready to activate
 ```
 
-## تفعيل القالب (Activate Theme)
+## تفعيل القالب (Activate Theme) {#activate-theme}
 
 تُغيّر إمكانية **activate-theme** موقعك إلى قالب كتل تم إنشاؤه حديثًا أو قالب موجود بالفعل.
 
-### كيفية الاستدعاء
+### كيفية الاستدعاء {#how-to-invoke-1}
 
 بعد إنشاء الهيكل الأساسي للقالب، يمكنك تفعيله على الفور:
 
@@ -74,7 +74,7 @@ sans-serif typography, and a professional layout"
 "Switch to the Twentytwentyfour theme"
 ```
 
-### المخرجات المتوقعة
+### المخرجات المتوقعة {#expected-output-1}
 
 عند نجاح التفعيل:
 
@@ -92,7 +92,7 @@ sans-serif typography, and a professional layout"
   Note: Check your homepage to verify the layout
 ```
 
-## سير العمل: الإنشاء والتفعيل
+## سير العمل: الإنشاء والتفعيل {#workflow-scaffold-and-activate}
 
 يجمع سير العمل النموذجي بين الإمكانيتين:
 
@@ -102,7 +102,7 @@ sans-serif typography, and a professional layout"
 4. **التفعيل**: "Activate the theme now" (فعّل القالب الآن).
 5. **التحقق**: زيارة موقعك للتأكد من أن التصميم الجديد حي.
 
-## رموز التصميم والتخصيص (Design Tokens and Customization)
+## رموز التصميم والتخصيص (Design Tokens and Customization) {#design-tokens-and-customization}
 
 تستخدم القوالب التي يتم إنشاؤها رموز تصميم WordPress (عبر `theme.json`) لتحديد:
 
@@ -114,14 +114,14 @@ sans-serif typography, and a professional layout"
 
 تتم مركزة هذه الرموز في ملف `theme.json`، مما يسهل تعديل نظام التصميم بالكامل من ملف واحد.
 
-## القيود والملاحظات
+## القيود والملاحظات {#limitations-and-notes}
 
 - يتم إنشاء القوالب في المسار `/wp-content/themes/` ويجب أن تتبع اصطلاحات تسمية WordPress.
 - يتطلب التفعيل أذونات مناسبة على موقع WordPress الخاص بك.
 - الكود المخصص بلغة PHP في القوالب يكون بسيطًا؛ استخدم الإضافات (plugins) للوظائف المعقدة.
 - تعمل قوالب الكتل بشكل أفضل مع WordPress 5.9 والإصدارات الأحدث.
 
-## استكشاف الأخطاء وإصلاحها (Troubleshooting)
+## استكشاف الأخطاء وإصلاحها (Troubleshooting) {#troubleshooting}
 
 **القالب لا يظهر بعد الإنشاء الأساسي**
 - تحقق من وجود دليل القالب وأنه يمتلك الأذونات الصحيحة.
@@ -138,7 +138,7 @@ sans-serif typography, and a professional layout"
 - امسح أي إضافات للتخزين المؤقت (caching plugins).
 - تأكد من أن إصدار WordPress الخاص بك يدعم الرموز التي تستخدمها.
 
-## الخطوات التالية
+## الخطوات التالية {#next-steps}
 
 بعد تفعيل القالب، يمكنك:
 - استخدام مهارة **Design System Aesthetics** لتنقيح الطباعة والألوان والتباعد.

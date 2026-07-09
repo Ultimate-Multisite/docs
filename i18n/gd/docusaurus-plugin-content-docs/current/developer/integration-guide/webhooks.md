@@ -3,11 +3,11 @@ title: Làimhseachadh Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Làimhseachadh Webhook
+# Làimhseachadh Webhook {#webhook-handling}
 
 Cruthaich endpoints webhook gnàthaichte gus tachartasan fhaighinn bho sheirbheisean taobh a-muigh agus dàta a shioncronachadh le Ultimate Multisite.
 
-## Endpoint Webhook Gnàthaichte
+## Endpoint Webhook Gnàthaichte {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Beachdachaidhean Tèarainteachd
+## Beachdachaidhean Tèarainteachd {#security-considerations}
 
 - Dearbhaich ainmean-sgrìobhte webhook an-còmhnaidh le HMAC no dìomhaireachd cho-roinnte
 - Cleachd `permission_callback` air do shlighe REST — na suidhich gu `__return_true` e ann am production gu bràth

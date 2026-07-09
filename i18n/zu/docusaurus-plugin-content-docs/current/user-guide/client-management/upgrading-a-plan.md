@@ -3,7 +3,7 @@ title: Ukuthuthukisa uhlelo
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ukuthuthukisa Uhlelo (v2)
+# Ukuthuthukisa Uhlelo (v2) {#upgrading-a-plan-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite version 2.x.**_
 
@@ -41,7 +41,7 @@ Ngemva kokuba ukukhokha sekuqediwe, umkhiqizo/imikhiqizo emisha izongezwa ku-akh
 
 ##
 
-## Izindlela Zokuthuthukisa Nokwehlisa
+## Izindlela Zokuthuthukisa Nokwehlisa {#upgrade-and-downgrade-paths}
 
 Kumkhiqizo ngamunye wakho, uzoba nethebhu ethi **Up & Downgrades**. Inketho yokuqala kuleyo thebhu iyinkambu ebizwa ngokuthi **Plan Group**.
 

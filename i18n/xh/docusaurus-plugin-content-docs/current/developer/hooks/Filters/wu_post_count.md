@@ -4,11 +4,11 @@ title: Isihluzi - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filter: wu_post_count
+# Filter: wu_post_count {#filter-wupostcount}
 
 Vumela abaphuhlisi be-plugin ukuba batshintshe inani elipheleleyo
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Vumela abaphuhlisi be-plugin ukuba batshintshe inani elipheleleyo
 | $post_counts | `object` | Into ye-WordPress ebuyiswa yi-wp_count_posts fn |
 | $post_type | `string` | I-slug yohlobo lweposti |
 
-### Ukususela
+### Ukususela {#since}
 
 - 1.9.1
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-[`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) kumgca 136
 
 
-## Ibuyisa
+## Ibuyisa {#returns}
 Elitsha elipheleleyo

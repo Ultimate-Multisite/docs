@@ -3,7 +3,7 @@ title: Njikwa Ụtụ Isi
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Njikwa Ụtụ Isi
+# Njikwa Ụtụ Isi {#tax-handling}
 
 Ultimate Multisite nwere modul nchịkọta ụtụ isi etinyere n'ime plugin isi anyị, yabụ ọ bụrụ na ịchọrọ ịnakọta ụtụ ahịa na plan, ngwugwu na ọrụ gị, ị nwere ike ime ya n'ụzọ dị mfe na-enweghị itinye mgbakwunye ọ bụla.
 
@@ -11,7 +11,7 @@ Maka ụlọ ọrụ dị na Europe, anyị na-enye **mgbakwunye** nke na-agbakw
 
 Ultimate Multisite anaghị etinye akwụkwọ ma ọ bụ zipụ ụtụ isi n'aha gị nye gọọmentị; anyị na-enyere gị aka naanị ịnakọta ụtụ kwesịrị ekwesị n'oge azụmahịa ahụ. **Ị ka ga-ezipụ ụtụ isi n'onwe gị.**
 
-## Ịgbalite Nchịkọta Ụtụ Isi
+## Ịgbalite Nchịkọta Ụtụ Isi {#enabling-tax-collection}
 
 Nchịkọta ụtụ isi anaghị arụ ọrụ na ndabara. Iji mee ka ọ rụọ ọrụ, ị ga-aga na **Ultimate Multisite > Settings > Taxes** wee gbanwee ka ịgbalite ntọala Enable Taxes.
 
@@ -25,7 +25,7 @@ Nke a bụ nlele zuru ezu nke peeji ntọala ụtụ isi:
 
 ![Ntọala ụtụ isi maka ngwaahịa](/img/config/settings-taxes.png)
 
-### Ụtụ ewepụghị vs. Ụtụ etinyere
+### Ụtụ ewepụghị vs. Ụtụ etinyere {#tax-excluded-vs-tax-included}
 
 Na ndabara, ọnụahịa ngwaahịa gị niile bụ nke ewepụghị ụtụ isi, nke pụtara na ụtụ isi **adịghị etinye** na ọnụahịa ngwaahịa ahụ. Ọ bụrụ na anyị chọpụta na onye ahịa kwesịrị ịkwụ ụtụ isi na ịzụta enyere, anyị ga-agbakwunye ụtụ isi ahụ **n'elu** subtotal.
 
@@ -37,7 +37,7 @@ Echefula **ịchekwa** mgbanwe ị mere.
 
 ###
 
-## Ịmepụta Ọnụego Ụtụ Isi
+## Ịmepụta Ọnụego Ụtụ Isi {#creating-tax-rates}
 
 Mgbe ị gbanyere Nchịkọta Ụtụ Isi, ị ga-emepụta ọnụego ụtụ isi maka ebe ndị akọwapụtara site na iji editọ ọnụego ụtụ isi anyị.
 
@@ -51,7 +51,7 @@ Na peeji editọ ọnụego ụtụ isi, ị nwere ike ịgbakwunye Ọnụego �
 
 Ị ga-enye ọnụego ụtụ isi ọ bụla **aha** (a na-eji ya na invoices). Mgbe ahụ ị nwere ike ịhọrọ **mba** (achọrọ), **steeti,** na **obodo** (ha abụọ bụ nhọrọ) ebe a ga-akwụ ụtụ isi a. N'ikpeazụ, tinye **ọnụego ụtụ isi na pasent**.
 
-### Ụdị Ụtụ Isi
+### Ụdị Ụtụ Isi {#tax-categories}
 
 Ị nwekwara ike ịmepụta ọtụtụ Ụdị Ụtụ Isi, iji tinye ọnụego ụtụ isi dị iche iche maka ụdị ngwaahịa dị iche iche.
 
@@ -73,7 +73,7 @@ Iji chọgharịa n'etiti ụdị, pịa **Switch** wee họrọ ụdị ị ch�
 
 Na ihuenyo ahụ kwa, ị nwere ike gbanyụọ gbanwee **Is Taxable?** iji mee ka Ultimate Multisite mara na ọ gaghị anakọta ụtụ isi na ngwaahịa ahụ enyere.
 
-## Nkwado VAT Europe
+## Nkwado VAT Europe {#european-vat-support}
 
 Dị ka e kwuru na mbụ, anyị nwere mgbakwunye dị maka onye ahịa nọ na EU ndị nwere ihe achọrọ mgbakwunye n'ihi iwu European VAT.
 
@@ -101,7 +101,7 @@ Mgbe ahụ, gaa na **Network Admin > Plugins** wee mee ka mgbakwunye ahụ rụ�
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Ịdọrọ Ọnụego Ụtụ VAT
+### Ịdọrọ Ọnụego Ụtụ VAT {#pulling-on-vat-tax-rates}
 
 Otu n'ime ngwaọrụ nke njikọ anyị na-agbakwunye bụ ikike ibu ọnụego ụtụ isi maka mba so na EU. Enwere ike ime nke ahụ site n'ịga na peeji editọ ọnụego ụtụ isi mgbe emechara nkwado EU VAT.
 
@@ -111,7 +111,7 @@ N'ala peeji ahụ, ị ga-ahụ nhọrọ ịdọrọ VAT. Ịhọrọ ụdị �
 
 Ị nwekwara ike dezie ụkpụrụ ndị ahụ mgbe ịdọtara ha. Iji mee ya, dezie naanị ahịrị tebụl ịchọrọ wee pịa ka ịchekwa ụkpụrụ ọhụrụ ahụ.
 
-### Nkwado VAT
+### Nkwado VAT {#vat-validation}
 
 Mgbe agbanyere nkwado VAT, Ultimate Multisite ga-agbakwunye ogige mgbakwunye na fọm checkout, n'okpuru ogige adreesị billing. Ogige ahụ ga-apụta naanị maka ndị ahịa nọ na EU.
 

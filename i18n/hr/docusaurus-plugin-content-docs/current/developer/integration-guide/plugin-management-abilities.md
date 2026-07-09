@@ -3,11 +3,11 @@ title: Mogućnosti upravljanja dodacima
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Mogućnosti upravljanja dodacima
+# Mogućnosti upravljanja dodacima {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 isporučuje se sa **7 mogućnosti upravljanja dodacima** koje AI asistent može pozvati tijekom razgovora. Te mogućnosti pružaju programsku kontrolu nad WordPress dodacima instaliranima putem [Sustava za izradu dodataka i sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Pregled mogućnosti
+## Pregled mogućnosti {#abilities-overview}
 
 | Mogućnost | Slug | Opis |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 isporučuje se sa **7 mogućnosti upravljanja dodacima** 
 | Instaliraj dodatak | `install_plugin` | Postavlja sandbox dodatak u aktivni WordPress direktorij dodataka. |
 | Aktiviraj dodatak | `activate_plugin` | Aktivira sandbox dodatak u wp-env sandbox okruženju. |
 
-## API instalatera dodataka
+## API instalatera dodataka {#plugin-installer-api}
 
 Instalater dodataka obrađuje operacije datotečnog sustava pri postavljanju ili uklanjanju dodataka. Ključna ponašanja:
 
@@ -28,7 +28,7 @@ Instalater dodataka obrađuje operacije datotečnog sustava pri postavljanju ili
 - **Ažuriranje**: Zamjenjuje postojeće datoteke dodatka. Deaktivira dodatak prije pisanja kako bi se izbjegle pogreške djelomičnog stanja.
 - **Brisanje prema slugu**: Locira direktorij dodatka prema slugu, deaktivira ga na svim web-mjestima, zatim uklanja direktorij.
 
-### Registriranje prilagođenog rukovatelja instalacijom
+### Registriranje prilagođenog rukovatelja instalacijom {#registering-a-custom-install-handler}
 
 Možete se uključiti u životni ciklus instalacije pomoću akcija `gratis_ai_plugin_installer_before_install` i `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registar ekosustava
+## Registar ekosustava {#ecosystem-registry}
 
 Mogućnosti se registriraju putem **registra ekosustava dodataka**. Registar mapira slugove mogućnosti na njihove klase rukovatelja i izlaže ih dispečeru alata AI agenta.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integracija HookScanner
+## Integracija HookScanner {#hookscanner-integration}
 
 Mogućnosti `create_plugin` i `update_plugin` automatski pokreću **HookScanner** nad novogeneriranim kodom. HookScanner vraća popis WordPress action i filter hookova koje je dodatak registrirao.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner automatski preskače direktorije `vendor/` i `node_modules/`.
 
-## Arhitektura asinkronih poslova
+## Arhitektura asinkronih poslova {#async-job-architecture}
 
 Dugotrajne operacije dodataka (generiranje, instalacija) šalju se kao **asinkroni poslovi** s praćenjem napretka uživo. Sučelje AI chata ispituje napredak i korisniku struji ažuriranja statusa:
 

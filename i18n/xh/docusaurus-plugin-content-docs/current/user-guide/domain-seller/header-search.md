@@ -3,11 +3,11 @@ title: Ukukhangela iDomeyini kwiNtloko
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Uphendlo lwe-Domain ye-Header
+# Uphendlo lwe-Domain ye-Header {#header-domain-search}
 
 Sebenzisa olu seto xa ufuna ifom encinci ye-header eqalisa uphendlo lwe-domain, emva koko ivumele umthengi akhethe kwi-domain ezifumanekayo ngaphakathi kwe-Ultimate Multisite checkout.
 
-## Iimfuno
+## Iimfuno {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Sebenzisa olu seto xa ufuna ifom encinci ye-header eqalisa uphendlo lwe-domain, 
   - Ii-TLD ezixhaswayo ziqwalaselwe, umzekelo `com`, `net`, kunye `org`.
 - Ifom ye-checkout esebenzayo equlathe intsimi ye-**Domain Selection**.
 
-## Ifom ye-checkout
+## Ifom ye-checkout {#checkout-form}
 
 1. Yenza okanye uhlele ifom ye-checkout esetyenziswa liphepha lobhaliso.
 2. Yongeza iintsimi eziqhelekileyo ezifunekayo ze-checkout/account, kuquka **Username**. Ifom ye-checkout equlathe intsimi ye-domain kuphela iyaliwa luqinisekiso lwe-Ultimate Multisite.
@@ -30,7 +30,7 @@ Iphepha lobhaliso kufuneka libonise ifom ye-checkout, umzekelo:
 [wu_checkout slug="domain-form"]
 ```
 
-## Ifom ye-header
+## Ifom ye-header {#header-form}
 
 Yongeza ifom encinci ye-`GET` kwi-header yesayithi ethumela igama lophendlo elifakiweyo kwiphepha le-checkout njenge-`domain_name`:
 
@@ -44,7 +44,7 @@ Yongeza ifom encinci ye-`GET` kwi-header yesayithi ethumela igama lophendlo elif
 
 Musa ukukhetha kwangaphambili i-domain kwi-JavaScript ye-header eyenziwe ngokwesiko. I-header kufuneka idlulise kuphela igama lophendlo. Iskripthi se-Domain Seller checkout sifunda `?domain_name=example`, sigcwalise ibhokisi yophendlo ye-checkout, kwaye siqhube uphendlo lokufumaneka ukuze umthengi akhethe kwii-domain ezibuyisiweyo.
 
-## Indlela elindelekileyo yokuziphatha
+## Indlela elindelekileyo yokuziphatha {#expected-behaviour}
 
 Ukukhangela `example` kwi-header kufuneka kuvule:
 
@@ -61,7 +61,7 @@ I-checkout kufuneka emva koko ibonise iziphumo ezinokukhethwa ezifana nezi:
 
 Emva kokukhetha isiphumo esifumanekayo, isishwankathelo se-odolo kufuneka siquke imveliso yobhaliso lwe-domain kunye negama le-domain elikhethiweyo.
 
-## Uqinisekiso
+## Uqinisekiso {#verification}
 
 1. Vula iphepha lasekhaya.
 2. Khangela igama elingenanto yongeziweyo, umzekelo `example`.
@@ -71,7 +71,7 @@ Emva kokukhetha isiphumo esifumanekayo, isishwankathelo se-odolo kufuneka siquke
 6. Cofa **Select** kwi-domain efumanekayo.
 7. Qinisekisa ukuba isishwankathelo se-odolo siqulathe `Domain Registration - example.com` okanye i-domain ekhethiweyo.
 
-## Ukusombulula iingxaki
+## Ukusombulula iingxaki {#troubleshooting}
 
 - Ukuba akukho luhlu luvelayo, jonga ithebhu yenethiwekhi yesikhangeli ye-`admin-ajax.php?action=wu_domain_search` kwaye uqinisekise ukuba ibuyisa `domains` okanye `results` ezingengenanto.
 - Ukuba ifom ye-checkout iyasilela kuqinisekiso xa igcinwa, yongeza iintsimi ezifunekayo ze-account ezifana ne-**Username**.

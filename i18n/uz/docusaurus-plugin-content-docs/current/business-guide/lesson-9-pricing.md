@@ -3,17 +3,17 @@ title: '9-dars: Foyda uchun narx belgilash'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 9-dars: Foyda uchun narxlash
+# 9-dars: Foyda uchun narxlash {#lesson-9-pricing-for-profit}
 
 5-darsda FitSite tariflari uchun boshlang‘ich narxlarni belgilagan edik. Endi daromadni oshiradigan, yuqoriroq tariflarga o‘tishni rag‘batlantiradigan va churnni kamaytiradigan usullar bilan narxlash strategiyasini takomillashtiramiz.
 
-## Qayerda to‘xtagan edik
+## Qayerda to‘xtagan edik {#where-we-left-off}
 
 FitSite’da tariflar, shablonlar, checkout, brending va onboarding tayyor. Boshlang‘ich narxlash oyiga $49/$99/$199 edi. Endi bu narxlashni yanada samaraliroq qilamiz.
 
-## Niche platformalar uchun narxlash tamoyillari
+## Niche platformalar uchun narxlash tamoyillari {#pricing-principles-for-niche-platforms}
 
-### Xarajatga emas, qiymatga qarab narx belgilang
+### Xarajatga emas, qiymatga qarab narx belgilang {#price-on-value-not-cost}
 
 Hosting xarajatlaringiz har bir mijoz sayti uchun $5-$15 bo‘lishi mumkin. Bu narxingiz $20 bo‘lishi kerak degani emas. Siz hosting sotmayapsiz. Siz quyidagilarni sotyapsiz:
 
@@ -24,7 +24,7 @@ Hosting xarajatlaringiz har bir mijoz sayti uchun $5-$15 bo‘lishi mumkin. Bu n
 
 Narxni yetkazib berish xarajatiga emas, taqdim etayotgan qiymatingizga asoslang.
 
-### Muqobillarga bog‘lab ko‘rsating
+### Muqobillarga bog‘lab ko‘rsating {#anchor-to-alternatives}
 
 Fitness studiyasi egasi FitSite’ni baholaganda, uni quyidagilar bilan solishtiradi:
 
@@ -34,7 +34,7 @@ Fitness studiyasi egasi FitSite’ni baholaganda, uni quyidagilar bilan solishti
 
 Oyiga $49-$199 narxda FitSite dasturchidan arzonroq, umumiy builderlardan imkoniyatliroq va veb-sayt yo‘qligidan cheksiz darajada yaxshiroq.
 
-## Narx variantlarini joriy etish
+## Narx variantlarini joriy etish {#implementing-price-variations}
 
 Yillik narxlash majburiyatni rag‘batlantiradi va churnni kamaytiradi. Har bir tarifning **Price Variations** yorlig‘iga o‘ting va yillik variantlarni qo‘shing:
 
@@ -46,12 +46,12 @@ Yillik narxlash majburiyatni rag‘batlantiradi va churnni kamaytiradi. Har bir 
 
 Checkout shaklingizga **Period Selection** maydonini qo‘shing, shunda mijozlar oylik va yillik billing o‘rtasida almasha oladi. [Checkout shakllari](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) bo‘limiga qarang.
 
-### Nega yillik narxlash ishlaydi
+### Nega yillik narxlash ishlaydi {#why-annual-pricing-works}
 
 - **Siz uchun**: Oldindan pul oqimi, pastroq churn (yillik to‘laydigan mijozlar muddat o‘rtasida bekor qilish ehtimoli kamroq)
 - **Ular uchun**: Haqiqiy tejash, budjetni oldindan rejalash imkoniyati
 
-## Setup to‘lovlari
+## Setup to‘lovlari {#setup-fees}
 
 Qo‘lda sozlashni o‘z ichiga oladigan tariflar uchun bir martalik setup to‘lovini ko‘rib chiqing:
 
@@ -61,7 +61,7 @@ Qo‘lda sozlashni o‘z ichiga oladigan tariflar uchun bir martalik setup to‘
 
 Setup to‘lovlarini har bir tarifning narxlash bo‘limida sozlang. Tafsilotlar uchun [Birinchi subscription mahsulotingizni yaratish](/user-guide/configuration/creating-your-first-subscription-product) bo‘limiga qarang.
 
-## Sinov muddatlari
+## Sinov muddatlari {#trial-periods}
 
 Sinov taklif qilish ro‘yxatdan o‘tishdagi ishqalanishni kamaytiradi, lekin konversiya bo‘lmaslik xavfini keltiradi. FitSite uchun:
 
@@ -70,11 +70,11 @@ Sinov taklif qilish ro‘yxatdan o‘tishdagi ishqalanishni kamaytiradi, lekin k
 
 Starter tarifining narxlash bo‘limida **Offer Trial** tugmasini yoqib, davomiylikni 7 kun qilib belgilang.
 
-### Sinovlarni konversiyaga aylantirish
+### Sinovlarni konversiyaga aylantirish {#making-trials-convert}
 
 Sinov faqat mijoz sinov muddati davomida qiymatni his qilsa ishlaydi. Onboarding ketma-ketligingiz (8-dars) bu yerda juda muhim -- xush kelibsiz email’lari 7 kunlik oynada faollikni oshirishga mos vaqtda yuborilishi kerak.
 
-## Chegirma kodlari
+## Chegirma kodlari {#discount-codes}
 
 Muayyan maqsadlar uchun strategik chegirma kodlarini yarating:
 
@@ -88,7 +88,7 @@ Bularni yaratish uchun **Ultimate Multisite > Discount Codes** bo‘limiga o‘t
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Soliq bilan ishlash
+## Soliq bilan ishlash {#tax-handling}
 
 Agar soliq yig‘ishni talab qiladigan yurisdiksiyada faoliyat yuritsangiz:
 
@@ -98,7 +98,7 @@ Agar soliq yig‘ishni talab qiladigan yurisdiksiyada faoliyat yuritsangiz:
 
 Batafsil konfiguratsiya uchun [Soliq bilan ishlash](/user-guide/payment-gateways/tax-handling) bo‘limiga qarang. Agar mijozlarga xalqaro miqyosda xizmat ko‘rsatsangiz, YI talablariga muvofiqlik uchun [VAT addon](/addons/vat)ni ko‘rib chiqing.
 
-## Narxlashingizni ko‘rib chiqish
+## Narxlashingizni ko‘rib chiqish {#reviewing-your-pricing}
 
 Ishga tushirgandan so‘ng narxlashni har chorakda qayta ko‘rib chiqing. Quyidagilarga qarang:
 
@@ -107,7 +107,7 @@ Ishga tushirgandan so‘ng narxlashni har chorakda qayta ko‘rib chiqing. Quyid
 - **Tarif bo‘yicha churn**: Agar yillik mijozlar kamroq churn qilsa, yillik narxlashni kuchliroq targ‘ib qiling
 - **Raqobatchilar narxlari**: Muqobillar qancha olmoqda? Siz to‘g‘ri pozitsiyadasizmi?
 
-## Hozirgacha FitSite Network
+## Hozirgacha FitSite Network {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Bu darsda nimalar qurdik
+## Bu darsda nimalar qurdik {#what-we-built-this-lesson}
 
 - Majburiyatni rag‘batlantirish uchun 20% chegirma bilan **yillik narxlash**
 - Onboarding mehnatini qoplash uchun yuqoriroq darajalarda **setup fees**

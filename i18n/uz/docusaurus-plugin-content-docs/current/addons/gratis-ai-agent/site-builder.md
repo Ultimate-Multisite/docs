@@ -3,15 +3,15 @@ title: Sayt quruvchi orkestratsiyasi v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Sayt yaratish orkestratsiyasi v2
+# Sayt yaratish orkestratsiyasi v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0 da joriy qilingan) ko‘p bosqichli veb-sayt yaratishni ta’minlaydigan dvigateldir. Agentdan "restoran veb-saytini yaratish" yoki "blogli portfolio yaratish"ni so‘raganingizda, orkestrator bu yuqori darajadagi maqsadni tuzilgan **reja**ga ajratadi, uni bajarish uchun kerakli pluginlarni aniqlaydi, har bir qadamni ketma-ket bajaradi, jarayonni kuzatadi va xatolardan avtonom tiklanadi.
 
 ---
 
-## U qanday ishlaydi
+## U qanday ishlaydi {#how-it-works}
 
-### 1. Reja yaratish
+### 1. Reja yaratish {#1-plan-generation}
 
 Agent sayt yaratish bo‘yicha ko‘rsatma olganida, JSON **sayt rejasi**ni ishlab chiqish uchun `create_site_plan` qobiliyatini chaqiradi. Reja quyidagilarni tavsiflaydi:
 
@@ -61,7 +61,7 @@ Agent sayt yaratish bo‘yicha ko‘rsatma olganida, JSON **sayt rejasi**ni ishl
 }
 ```
 
-### 2. Pluginlarni aniqlash
+### 2. Pluginlarni aniqlash {#2-plugin-discovery}
 
 Bajarish boshlanishidan oldin orkestrator rejadagi `plugin_requirements`ni skanerdan o‘tkazadi va qaysi pluginlar allaqachon faol ekanini tekshiradi. Yetishmayotgan pluginlar uchun u:
 
@@ -71,7 +71,7 @@ Bajarish boshlanishidan oldin orkestrator rejadagi `plugin_requirements`ni skane
 
 Pluginlarni aniqlashdagi muvaffaqiyatsizliklar halokatli emas — orkestrator ta’sirlangan qadamlarni `skipped` deb belgilaydi va rejaning qolgan qismi bilan davom etadi.
 
-### 3. Rejani bajarish
+### 3. Rejani bajarish {#3-plan-execution}
 
 Orkestrator reja IDsi bilan `execute_site_plan`ni chaqiradi. Bajarish bosqichma-bosqich, qadam-baqadam davom etadi:
 
@@ -79,7 +79,7 @@ Orkestrator reja IDsi bilan `execute_site_plan`ni chaqiradi. Bajarish bosqichma-
 - **Parallel qadamlar** — bir xil bosqich ichida o‘zaro bog‘liqligi bo‘lmagan qadamlar `parallel` bayrog‘i o‘rnatilganda bir vaqtda yuboriladi.
 - **Qadam vaqti tugashi** — har bir qadam alohida vaqt chegarasiga ega (standart: `Ability Timeout` sozlamasi). Vaqti tugagan qadam `failed` deb belgilanadi va reja davom etadi.
 
-### 4. Jarayonni kuzatish
+### 4. Jarayonni kuzatish {#4-progress-tracking}
 
 Bajarilish holatini tekshirish uchun istalgan vaqtda `get_plan_progress`ni chaqiring:
 
@@ -104,7 +104,7 @@ WP-CLI foydalanuvchilari jarayonni quyidagicha kuzatishi mumkin:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Xatodan tiklanish
+### 5. Xatodan tiklanish {#5-error-recovery}
 
 Qadam muvaffaqiyatsiz bo‘lsa, orkestrator rejada belgilangan **zaxira** qadam bor-yo‘qligini tekshiradi:
 
@@ -115,9 +115,9 @@ Agent yakuniy reja xulosasida barcha muvaffaqiyatsizliklar haqida xabar beradi v
 
 ---
 
-## Sayt rejasi qobiliyatlari
+## Sayt rejasi qobiliyatlari {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Tabiiy tildagi maqsad tavsifidan tuzilgan sayt rejasini yaratadi.
 
@@ -134,7 +134,7 @@ Tabiiy tildagi maqsad tavsifidan tuzilgan sayt rejasini yaratadi.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Avval yaratilgan sayt rejasini bajarishni boshlaydi.
 
@@ -150,7 +150,7 @@ Avval yaratilgan sayt rejasini bajarishni boshlaydi.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Sayt rejasining joriy bajarilish holatini qaytaradi.
 
@@ -164,7 +164,7 @@ Sayt rejasining joriy bajarilish holatini qaytaradi.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Muvaffaqiyatsiz qadamni qo‘lda hal qiladi va reja bajarilishini keyingi qadamdan davom ettiradi. Avtomatik tiklash imkoni bo‘lmaganda va o‘zingiz aralashmoqchi bo‘lganingizda bundan foydalaning.
 
@@ -180,7 +180,7 @@ Muvaffaqiyatsiz qadamni qo‘lda hal qiladi va reja bajarilishini keyingi qadamd
 
 ---
 
-## v1 va v2 ni taqqoslash
+## v1 va v2 ni taqqoslash {#comparing-v1-and-v2}
 
 | Xususiyat | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Muvaffaqiyatsiz qadamni qo‘lda hal qiladi va reja bajarilishini keyingi qadamd
 
 ---
 
-## WP-CLI reja buyruqlari
+## WP-CLI reja buyruqlari {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Maqsad tavsifidan sayt rejasini yaratadi.
 
@@ -205,7 +205,7 @@ Maqsad tavsifidan sayt rejasini yaratadi.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Avval yaratilgan rejani bajaradi.
 
@@ -213,7 +213,7 @@ Avval yaratilgan rejani bajaradi.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Bajarilayotgan yoki yakunlangan reja uchun joriy jarayonni ko‘rsatadi.
 
@@ -221,7 +221,7 @@ Bajarilayotgan yoki yakunlangan reja uchun joriy jarayonni ko‘rsatadi.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Barcha sayt rejalarini (kutilayotgan, jarayondagi va yakunlangan) ro‘yxatlaydi.
 
@@ -229,7 +229,7 @@ Barcha sayt rejalarini (kutilayotgan, jarayondagi va yakunlangan) ro‘yxatlaydi
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Muvaffaqiyatsiz rejani `pending` holatiga qaytaradi, shunda uni boshidan qayta bajarish mumkin bo‘ladi.
 

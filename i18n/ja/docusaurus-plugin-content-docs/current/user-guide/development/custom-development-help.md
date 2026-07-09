@@ -3,13 +3,13 @@ title: カスタム開発のヘルプ
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable でカスタム開発の支援を受けるには？
+# Codeable でカスタム開発の支援を受けるには？ {#how-to-get-custom-development-help-from-codeable}
 
 ネットワークの流れを思いどおりにするために、優れたカスタマイズが本当に必要になることがあります。そうした支援をお探しなら、Ultimate Multisite の専門知識を持つ経験豊富な開発者を見つけられる [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) をおすすめします。
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) は、あらゆる規模のプロジェクトに対応できる、適格な WordPress フリーランス開発者と顧客をつなぐプラットフォームです。綿密な応募プロセスにより、依頼したい作業に特に適した専門家とマッチングされます。
 
-### Codeable でプロジェクトを作成するには？
+### Codeable でプロジェクトを作成するには？ {#how-to-create-a-project-in-codeable}
 
 まず、[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) にアクセスし、**プロジェクトを開始**ボタンをクリックします。
 

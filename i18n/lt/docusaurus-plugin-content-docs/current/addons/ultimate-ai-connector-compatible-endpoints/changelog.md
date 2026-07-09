@@ -3,9 +3,9 @@ title: Ultimate AI Connector for Compatible Endpoints pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector suderinamų Endpointų pakeitimų žurnalas
+# Ultimate AI Connector suderinamų Endpointų pakeitimų žurnalas {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Versija 2.0.0 — išleista 2026-04-24
+## Versija 2.0.0 — išleista 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Nauja: kelių tiekėjų palaikymas — konfigūruokite kelis AI endpointus ir nukreipkite užklausas su automatiniu atsarginiu perjungimu tarp tiekėjų.
 * Pataisyta: kelių tiekėjų SDK integracija su teisingais tiekėjų ID, registracijos URL ir HTTP filtrų aprėptimi kiekvienam tiekėjui.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Pataisyta: pašalinta blokuojanti HTTP užklausa, kuri buvo vykdoma kiekvieną kartą įkeliant puslapį.
 * Patobulinta: GitHub Actions darbo eigos atnaujintos į Node.js 24.
 
-## Versija 1.0.0 — pradinis leidimas
+## Versija 1.0.0 — pradinis leidimas {#version-100--initial-release}

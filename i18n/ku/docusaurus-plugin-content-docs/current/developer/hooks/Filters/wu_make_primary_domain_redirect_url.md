@@ -4,13 +4,13 @@ title: Parzûn - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Parzûn: wu_make_primary_domain_redirect_url
+# Parzûn: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 URL-ya vegerandinê piştî ku domain wekî sereke tê kirin parzûn dike.
 
 Destûr dide pêşdebirvanan ku cihê vegerandina bikarhêneran piştî ku domain bi serkeftî wekî sereke danîn, xweş bikin. Bi berdestî, an ber bi URL-ya heyî ya li ser malpera sereke ve vedigere, an jî ber bi URL-ya admin a malpera ku tê guherandin ve.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Destûr dide pêşdebirvanan ku cihê vegerandina bikarhêneran piştî ku domai
 | $domain | `\Domain` | Objeya domain-ê ku wekî sereke hat kirin. |
 | $old_primary_domains | `array` | Rêzeya ID-yên domain-ên ku berê sereke bûn. |
 
-### Ji guhertoya
+### Ji guhertoya {#since}
 
 - 2.0.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) li rêza 639 hatî pênasekirin
 
 
-## Vedigere
+## Vedigere {#returns}
 URL-ya vegerandinê ya parzûnkirî.

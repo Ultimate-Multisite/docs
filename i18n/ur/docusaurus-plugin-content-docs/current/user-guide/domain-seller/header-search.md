@@ -3,11 +3,11 @@ title: ہیڈر ڈومین کی تلاش
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# ہیڈر ڈومین تلاش
+# ہیڈر ڈومین تلاش {#header-domain-search}
 
 یہ سیٹ اپ اس وقت استعمال کریں جب آپ ایک چھوٹا ہیڈر فارم چاہتے ہوں جو ڈومین تلاش شروع کرے، پھر صارف کو Ultimate Multisite checkout کے اندر دستیاب ڈومینز میں سے انتخاب کرنے دے۔
 
-## تقاضے
+## تقاضے {#requirements}
 
 - Ultimate Multisite network-active۔
 - Multisite Ultimate Domain Seller network-active۔
@@ -16,7 +16,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
   - معاون TLDs ترتیب دیے گئے ہوں، مثلاً `com`، `net`، اور `org`۔
 - ایک درست checkout فارم جس میں **ڈومین انتخاب** فیلڈ شامل ہو۔
 
-## Checkout فارم
+## Checkout فارم {#checkout-form}
 
 1. رجسٹریشن صفحے کے لیے استعمال ہونے والا checkout فارم بنائیں یا ترمیم کریں۔
 2. عام مطلوبہ checkout/account فیلڈز شامل کریں، بشمول **Username**۔ صرف ڈومین فیلڈ پر مشتمل checkout فارم Ultimate Multisite توثیق کے ذریعے مسترد کر دیا جاتا ہے۔
@@ -30,7 +30,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 [wu_checkout slug="domain-form"]
 ```
 
-## ہیڈر فارم
+## ہیڈر فارم {#header-form}
 
 سائٹ ہیڈر میں ایک چھوٹا `GET` فارم شامل کریں جو داخل کیا گیا تلاش لفظ checkout صفحے کو `domain_name` کے طور پر بھیجے:
 
@@ -44,7 +44,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 
 کسٹم ہیڈر JavaScript میں ڈومین پہلے سے منتخب نہ کریں۔ ہیڈر کو صرف تلاش لفظ پاس کرنا چاہیے۔ Domain Seller checkout اسکرپٹ `?domain_name=example` پڑھتا ہے، checkout تلاش باکس بھرتا ہے، اور دستیابی کی تلاش چلاتا ہے تاکہ صارف واپس آئے ہوئے ڈومینز میں سے انتخاب کر سکے۔
 
-## متوقع طرزِ عمل
+## متوقع طرزِ عمل {#expected-behaviour}
 
 ہیڈر میں `example` تلاش کرنے سے یہ کھلنا چاہیے:
 
@@ -61,7 +61,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 
 دستیاب نتیجہ منتخب کرنے کے بعد، آرڈر خلاصے میں ڈومین رجسٹریشن پروڈکٹ اور منتخب ڈومین نام شامل ہونا چاہیے۔
 
-## تصدیق
+## تصدیق {#verification}
 
 1. ہوم صفحہ کھولیں۔
 2. ایک سادہ نام تلاش کریں، مثلاً `example`۔
@@ -71,7 +71,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 6. دستیاب ڈومین کے لیے **Select** پر کلک کریں۔
 7. تصدیق کریں کہ آرڈر خلاصے میں `Domain Registration - example.com` یا منتخب ڈومین موجود ہے۔
 
-## مسئلہ حل کرنا
+## مسئلہ حل کرنا {#troubleshooting}
 
 - اگر کوئی فہرست ظاہر نہ ہو، تو براؤزر نیٹ ورک ٹیب میں `admin-ajax.php?action=wu_domain_search` چیک کریں اور تصدیق کریں کہ یہ غیر خالی `domains` یا `results` واپس کرتا ہے۔
 - اگر checkout فارم محفوظ کرتے وقت توثیق میں ناکام ہو، تو مطلوبہ account فیلڈز جیسے **Username** شامل کریں۔

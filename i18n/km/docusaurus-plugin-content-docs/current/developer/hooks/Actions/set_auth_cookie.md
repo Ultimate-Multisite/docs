@@ -4,11 +4,11 @@ title: សកម្មភាព - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 ដំណើរការភ្លាមៗមុនពេល cookie ផ្ទៀងផ្ទាត់ត្រូវបានកំណត់។
 
-## ប៉ារ៉ាម៉ែត្រ
+## ប៉ារ៉ាម៉ែត្រ {#parameters}
 
 | ឈ្មោះ | ប្រភេទ | ការពិពណ៌នា |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | គ្រោងការណ៍ផ្ទៀងផ្ទាត់។ តម្លៃរួមមាន 'auth' ឬ 'secure_auth'។ |
 | $token | `string` | session token របស់អ្នកប្រើ ដើម្បីប្រើសម្រាប់ cookie នេះ។ |
 
-### ចាប់តាំងពី
+### ចាប់តាំងពី {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### ប្រភព
+### ប្រភព {#source}
 
 បានកំណត់ក្នុង [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) នៅបន្ទាត់ 124

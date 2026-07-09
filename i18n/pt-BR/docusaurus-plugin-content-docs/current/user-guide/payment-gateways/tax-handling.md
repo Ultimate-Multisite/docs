@@ -3,7 +3,7 @@ title: Tratamento de impostos
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tratamento de impostos
+# Tratamento de impostos {#tax-handling}
 
 Ultimate Multisite tem um módulo de coleta de impostos integrado ao nosso plugin principal, então, se você precisa coletar impostos sobre vendas em seus planos, pacotes e serviços, pode fazer isso facilmente sem recorrer à instalação de quaisquer complementos.
 
@@ -11,7 +11,7 @@ Para empresas localizadas na Europa, oferecemos um **complemento** que adiciona 
 
 Ultimate Multisite não declara nem repassa impostos ao governo em seu nome; nós simplesmente ajudamos você a coletar os impostos apropriados no momento da transação. **Você ainda precisará repassar os impostos por conta própria.**
 
-## Habilitando a coleta de impostos
+## Habilitando a coleta de impostos {#enabling-tax-collection}
 
 A coleta de impostos não é habilitada por padrão. Para habilitá-la, você precisa ir para **Ultimate Multisite > Configurações > Impostos** e alternar para habilitar a configuração Habilitar impostos.
 
@@ -25,7 +25,7 @@ Você também pode visualizar as configurações de impostos para produtos indiv
 
 ![Configurações de impostos para produtos](/img/config/settings-taxes.png)
 
-### Imposto excluído vs. imposto incluído
+### Imposto excluído vs. imposto incluído {#tax-excluded-vs-tax-included}
 
 Por padrão, todos os preços dos seus produtos são sem imposto, o que significa que os impostos **não estão incluídos** no preço do produto. Se determinarmos que um cliente deve pagar impostos em uma determinada compra, adicionaremos os impostos **sobre** o subtotal.
 
@@ -37,7 +37,7 @@ Não se esqueça de **salvar** as alterações que você fez.
 
 ###
 
-## Criando alíquotas de imposto
+## Criando alíquotas de imposto {#creating-tax-rates}
 
 Depois de habilitar a coleta de impostos, você precisará criar alíquotas de imposto para locais específicos usando nosso editor de alíquotas de imposto.
 
@@ -51,7 +51,7 @@ Na página do editor de alíquotas de imposto, você pode adicionar novas alíqu
 
 Você precisará dar a cada alíquota de imposto um **título** (usado em faturas). Depois, você pode escolher o **país** (obrigatório), o **estado,** e a **cidade** (ambos opcionais) onde esse imposto será cobrado. Por fim, adicione a **alíquota de imposto em porcentagem**.
 
-### Categorias de imposto
+### Categorias de imposto {#tax-categories}
 
 Você também pode criar várias categorias de imposto, para adicionar alíquotas diferentes para diferentes tipos de produtos.
 
@@ -73,7 +73,7 @@ Você pode definir a categoria de imposto para um produto específico indo para 
 
 Nessa mesma tela, você pode desativar a alternância **É tributável?** para informar ao Ultimate Multisite que ele não deve coletar impostos sobre esse produto específico.
 
-## Suporte a VAT europeu
+## Suporte a VAT europeu {#european-vat-support}
 
 Como mencionado antes, temos um complemento disponível para clientes na UE que têm requisitos adicionais devido às regulamentações europeias de VAT.
 
@@ -101,7 +101,7 @@ Se você voltar para a **aba Configurações de impostos** , verá novas opçõe
 
 <!-- Captura de tela indisponível: alternância Habilitar suporte a VAT nas configurações de impostos após a ativação do complemento -->
 
-### Importando alíquotas de imposto de VAT
+### Importando alíquotas de imposto de VAT {#pulling-on-vat-tax-rates}
 
 Uma das ferramentas que nossa integração adiciona é a capacidade de carregar as alíquotas de imposto para estados-membros da UE. Isso pode ser feito visitando a página do editor de alíquotas de imposto depois de habilitar o suporte a VAT da UE.
 
@@ -111,7 +111,7 @@ Na parte inferior da página, você verá as opções de importação de VAT. Se
 
 Você também pode editar os valores depois de importá-los. Para fazer isso, simplesmente edite a linha da tabela de que precisa e clique para salvar os novos valores.
 
-### Validação de VAT
+### Validação de VAT {#vat-validation}
 
 Quando o suporte a VAT estiver habilitado, Ultimate Multisite adicionará um campo adicional ao formulário de checkout, abaixo do campo de endereço de cobrança. O campo só aparecerá para clientes localizados na UE.
 

@@ -3,15 +3,15 @@ title: 'Ders 4: Niş Şablonları Oluşturma'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ders 4: Niş Şablonlar Oluşturma
+# Ders 4: Niş Şablonlar Oluşturma {#lesson-4-building-niche-templates}
 
 Şablonlar, niş değer teklifinizin temelini oluşturur. Kaydolup, zaten bir fitness web sitesi gibi görünen (ders programları, eğitmen profilleri ve doğru görsellerle) bir site gören bir stüdyo sahibi, boş bir tuvalle karşılaşan birine göre kalma olasılığı çok daha yüksektir.
 
-## Nerede Kalmıştık
+## Nerede Kalmıştık {#where-we-left-off}
 
 Ultimate Multisite'ı kurup yapılandırdığımız çalışan bir FitSite ağına sahibiz. Şimdi, FitSite'ı fitness işletmeleri için özel olarak tasarlanmış gibi hissettiren şablonları oluşturacağız.
 
-## Niş Şablonlar Neden Önemli?
+## Niş Şablonlar Neden Önemli? {#why-niche-templates-matter}
 
 Genel şablonlar, müşterilerinizin zor işi yapmasını gerektirir: hangi sayfalara ihtiyaç duyacaklarını, hangi içerik yapısının işe yaradığını ve sektörleri için nasıl görünmesi gerektiğini bulmak. Niş şablonlar bu sürtünmeyi ortadan kaldırır.
 
@@ -24,11 +24,11 @@ FitSite'a kaydolan bir fitness stüdyo sahibi şunları görmelidir:
 
 Onlar sadece detaylarını doldurur. Sıfırdan başlamazlar.
 
-## Şablonlarınızı Planlama
+## Şablonlarınızı Planlama {#planning-your-templates}
 
 Oluşturmadan önce, hangi şablonları sunacağınıza karar verin. FitSite için üç tane oluşturacağız:
 
-### Şablon 1: Stüdyo Temel (Studio Essential)
+### Şablon 1: Stüdyo Temel (Studio Essential) {#template-1-studio-essential}
 
 Küçük stüdyolar ve kişisel eğitmenler için.
 
@@ -39,7 +39,7 @@ Küçük stüdyolar ve kişisel eğitmenler için.
 - Konum haritası ve form içeren **İletişim** sayfası
 - Fitness'e uygun renk şemasıyla **temiz, modern bir tasarım**
 
-### Şablon 2: Spor Salonu Pro (Gym Pro)
+### Şablon 2: Spor Salonu Pro (Gym Pro) {#template-2-gym-pro}
 
 Daha fazla hizmet sunan köklü spor salonları için.
 
@@ -50,7 +50,7 @@ Daha fazla hizmet sunan köklü spor salonları için.
 - Ana sayfada **Müşteri Yorumları** bölümü
 - **Daha belirgin marka** seçenekleri
 
-### Şablon 3: Fitness Zinciri (Fitness Chain)
+### Şablon 3: Fitness Zinciri (Fitness Chain) {#template-3-fitness-chain}
 
 Birden fazla lokasyona sahip işletmeler için.
 
@@ -60,17 +60,17 @@ Birden fazla lokasyona sahip işletmeler için.
 - Lokasyona özel detaylarla **merkezi marka** yönetimi
 - Lokasyonlar genelinde **Personel dizini**
 
-## Bir Şablon Sitesi Oluşturma
+## Bir Şablon Sitesi Oluşturma {#building-a-template-site}
 
 Ultimate Multisite'da bir şablon, yeni müşteri sitelerinin görünmesini istediğiniz şekilde yapılandırılmış basit bir WordPress sitesidir. İşte nasıl oluşturulacağı:
 
-### Adım 1: Şablon Sitesini Oluşturma
+### Adım 1: Şablon Sitesini Oluşturma {#step-1-create-the-template-site}
 
 1. Ağ yöneticinizde **Siteler > Yeni Ekle** yolunu izleyin
 2. `template-studio-essential` adında bir site oluşturun
 3. Bu site, çalışan tuvaliniz olacaktır
 
-### Adım 2: Tema Kurulumu ve Yapılandırılması
+### Adım 2: Tema Kurulumu ve Yapılandırılması {#step-2-install-and-configure-the-theme}
 
 Şablon sitesi kontrol paneline geçin ve:
 
@@ -82,7 +82,7 @@ Ultimate Multisite'da bir şablon, yeni müşteri sitelerinin görünmesini iste
 Fitness için iyi görünmesi, ancak müşterilerinizin yönetemeyeceği kadar karmaşık olmaması esnek bir tema seçin. Astra, GeneratePress veya Kadence gibi temalar, hafif, özelleştirilebilir ve iyi desteklendiği için iyi çalışır.
 :::
 
-### Adım 3: Sayfaları Oluşturma
+### Adım 3: Sayfaları Oluşturma {#step-3-create-the-pages}
 
 Her sayfayı şunlarla oluşturun:
 
@@ -92,7 +92,7 @@ Her sayfayı şunlarla oluşturun:
 
 Mümkün olduğunca yer tutucu içeriği eğitici yapın. Genel doldurucu metin yerine, şu gibi içerikler yazın: "Burası, stüdyonuzun kısa bir açıklamasını ve onu özel yapan şeyleri belirtmek için yer tutucu. Eğitim felsefenizi, deneyim yıllarınızı veya müşterilerin ne bekleyebileceği hakkında bilgi verin."
 
-### Adım 4: Plugin Yapılandırması
+### Adım 4: Plugin Yapılandırması {#step-4-configure-plugins}
 
 Fitness stüdyolarının ihtiyaç duyduğu plugin'leri kurun ve etkinleştirin:
 
@@ -100,7 +100,7 @@ Fitness stüdyolarının ihtiyaç duyduğu plugin'leri kurun ve etkinleştirin:
 - Bir iletişim formu plugin'i
 - Bir SEO plugin'i (fitness ile ilgili varsayılan ayarları önceden yapılandırılmış)
 
-### Adım 5: Şablon Olarak İşaretleme
+### Adım 5: Şablon Olarak İşaretleme {#step-5-mark-as-template}
 
 1. **Ultimate Multisite > Siteler** yolunu izleyin
 2. Şablon sitesini düzenleyin
@@ -108,7 +108,7 @@ Fitness stüdyolarının ihtiyaç duyduğu plugin'leri kurun ve etkinleştirin:
 
 Bu süreci sunmak istediğiniz her şablon için tekrarlayın.
 
-## Şablon Kalite Kontrol Listesi
+## Şablon Kalite Kontrol Listesi {#template-quality-checklist}
 
 Bir şablonu kullanıma sunmadan önce şunları doğrulayın:
 
@@ -121,7 +121,7 @@ Bir şablonu kullanıma sunmadan önce şunları doğrulayın:
 - [ ] Bozuk bağlantı veya eksik varlık yok
 - [ ] Sayfa yükleme hızı kabul edilebilir
 
-## FitSite Ağı Şu Ana Kadar
+## FitSite Ağı Şu Ana Kadar {#the-fitsite-network-so-far}
 
 ```
 FitSite Ağı
@@ -136,7 +136,7 @@ FitSite Ağı
 └── Plan yapılandırmasına hazır (bir sonraki ders)
 ```
 
-## Bu Derste Neler Yaptık
+## Bu Derste Neler Yaptık {#what-we-built-this-lesson}
 
 - Farklı fitness işletme büyüklükleri için tasarlanmış **üç niş şablon**
 - Platformun özel olarak tasarlanmış gibi hissettiren **fitness'e uygun içerik ve görseller**

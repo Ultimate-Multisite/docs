@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM e tlisa ho etsa dikakanyo tsa AI ka kotloloho sebatling marangrang a hao a WordPress multisite. E tsamaisa mehlala e meholo ya puo ka botlalo sebatling e sebedisa WebLLM le enjine ya MLC — ha ho dinotlolo tsa API, ha ho mehala ya kantle, ha ho data e tswang sesebedisweng sa mosebedisi.
 
-## Dikarolo tsa Bohlokwa
+## Dikarolo tsa Bohlokwa {#key-features}
 
 - **Ho etsa dikakanyo ka lehlakoreng la sebatli**: LLM e sebetsa sebakeng sa lehae sebatling sa moeti ka WebLLM/MLC — ha ho hlokahale GPU ya seva
 - **Sesebediswa sa puisano se phaphametseng**: Basebedisi ba keneng ba ka botsa LLM ya lehlakore la sebatli ka kotloloho ho tswa karolong e ka pele
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM e tlisa ho etsa dikakanyo tsa AI ka kotloloho s
 - **Cache ya IndexedDB**: Dithollo tsa boima ba mohlala di pholoha diphetiso tsa CDN tse senyang tsela ya kamehla ya Cache API
 - **Kopanyo ya sefe sa wpai**: E hokahana le sefe sa `wpai_preferred_text_models` hore karolo ya AI Experiments e ise dikopo enjining ya sebatli ha e hlophisitswe
 
-## Ditlhoko
+## Ditlhoko {#requirements}
 
 - WordPress 5.3 kapa ho feta
 - PHP 7.4 kapa ho feta
 - Ultimate Multisite plugin (e sebetsa)
 - Sebatli se tshehetsang WebGPU (Chrome 113+, Edge 113+, kapa Firefox Nightly e nang le WebGPU e buletsweng)
 
-## Ho Kenya
+## Ho Kenya {#installation}
 
 1. Kenya difaele tsa tlatsetso foldareng ya hao ya `/wp-content/plugins/`
 2. Kenya plugin tshebetsong ka lenane la 'Ditlatsetso' ho WordPress
 3. Eya ho **Ultimate Multisite → AI Connector** ho hlophisa tlatsetso
 
-## Sesebediswa sa Puisano se Phaphametseng
+## Sesebediswa sa Puisano se Phaphametseng {#floating-chat-widget}
 
 Sesebediswa sa puisano se phaphametseng se dumella mosebedisi ofe kapa ofe ya keneng ho buisana le LLM ya lehlakore la sebatli ka kotloloho ho tswa karolong ya hao e ka pele, ntle le ho tloha leqepheng leo a leng ho lona.
 
-### Seo se se Etsang
+### Seo se se Etsang {#what-it-does}
 
 Ha se buletswe, letshwao la puisano le hlaha hukung ya leqephe le leng le le leng la karolo e ka pele bakeng sa basebedisi ba keneng. Ho tobetsa letshwao ho bula phanele ya puisano moo mosebedisi a ka ngolang dipotso mme a fumane dikarabo ho tswa mohlaleng wa WebLLM o sebetsang sebakeng sa lehae. Hobane mohlala o sebetsa ka botlalo sebatling, dikarabo ke tsa lekunutu mme ha di kenyeletse tshebetso efe kapa efe ya lehlakore la seva.
 
-### Sesupo sa Boemo Bareng ya Taolo
+### Sesupo sa Boemo Bareng ya Taolo {#admin-bar-status-indicator}
 
 Bare ya taolo ya WordPress e kenyelletsa sesupo sa boemo se bontshang boemo ba hona jwale ba enjine ya WebLLM:
 
@@ -56,7 +56,7 @@ Bare ya taolo ya WordPress e kenyelletsa sesupo sa boemo se bontshang boemo ba h
 
 Sesupo se ntjhafala ka nako ya nnete ntle le ho hloka hore leqephe le laelwe hape.
 
-### Mokgwa wa ho Bulela kapa ho Tima Sesebediswa
+### Mokgwa wa ho Bulela kapa ho Tima Sesebediswa {#how-to-enable-or-disable-the-widget}
 
 1. Eya ho **Ultimate Multisite → AI Connector** taolong ya marangrang
 2. Fumana phanele ya **Sehokedi**
@@ -65,17 +65,17 @@ Sesupo se ntjhafala ka nako ya nnete ntle le ho hloka hore leqephe le laelwe hap
 
 Sesebediswa se ka boela sa bulelwa kapa sa timelwa ka sebaka ka seng ho tswa taolong ya sebaka seo haeba motsamaisi wa marangrang a fane ka bokgoni boo.
 
-## Disetting tsa Sesebediswa
+## Disetting tsa Sesebediswa {#widget-settings}
 
 Phanele ya Sehokedi ho **Ultimate Multisite → AI Connector** e na le disetting tse latelang bakeng sa sesebediswa sa puisano se phaphametseng:
 
-### Bulela Sesebediswa sa Puisano se Phaphametseng
+### Bulela Sesebediswa sa Puisano se Phaphametseng {#enable-floating-chat-widget}
 
 E bulela kapa e tima sesebediswa sa puisano bakeng sa marangrang ohle. Ha se timilwe, sesebediswa ha se hlahe leqepheng lefe kapa lefe la karolo e ka pele, ho sa tsotellehe karolo ya mosebedisi.
 
 **Ya kamehla:** E timilwe
 
-### Boitshwaro ba Auto-Prompt
+### Boitshwaro ba Auto-Prompt {#auto-prompt-behaviour}
 
 E laola hore na sesebediswa sa puisano se romela prompt ka boiketsetso ha mosebedisi a se bula.
 
@@ -93,7 +93,7 @@ Ha e setilwe ho **Prompt e ikgethileng**, lebala le eketsehileng la mongolo le a
 
 **Ya kamehla:** E timilwe
 
-## Nako ya Tshebetso ya SharedWorker
+## Nako ya Tshebetso ya SharedWorker {#sharedworker-runtime}
 
 Mofuta wa 1.1.0 o hlahisa nako ya tshebetso ya SharedWorker bakeng sa enjine ya MLC. Pejana, thebo ka nngwe ya sebatli e neng e sebedisa WebLLM e ne e kenya mohlala wa yona, e qothisana lehlokoa bakeng sa memori ya GPU mme e baka mathata a tshebetso disebedisweng tse nang le VRAM e lekanyeditsweng.
 
@@ -105,29 +105,29 @@ Ka nako ya tshebetso ya SharedWorker, thebo e le nngwe e sebetsa e le moamohedi 
 
 SharedWorker e hlakile ho basebedisi. Sesupo sa boemo bareng ya taolo kamehla se bontsha boemo ba enjine e arolelwang, eseng thebo ka nngwe.
 
-## Middleware ya apiFetch
+## Middleware ya apiFetch {#apifetch-middleware}
 
 Tlatsetso e kenya middleware ya `apiFetch` e thibelang dikopo tsa WordPress REST API tse tshwantshang paterone ya AI Client SDK. Ho ena le ho etsa kopo ya HTTP ya loopback ho seva, dikopo tsena di iswa ka kotloloho ho broker ya lehae ya WebLLM e sebetsang ho SharedWorker.
 
 Sena se bolela hore ditlatsetso le meralo e sebedisang API e tlwaelehileng ya WordPress `apiFetch` ho bitsa di-endpoint tsa AI di tla rua molemo ka boiketsetso ho mohlaleng wa lehlakore la sebatli ha o fumaneha, ntle le hore ho hlokehe diphetoho tsa khoutu.
 
-## Dihoko le Disefe
+## Dihoko le Disefe {#hooks-and-filters}
 
-### Disefe
+### Disefe {#filters}
 
 - `wpai_preferred_text_models` — Ngodisa enjene ya sebatli ya WebLLM e le mmotlolo wa mongolo o ratwang. Katoloso e hokela ho filter ena ka bo yona ha enjene e hlophisitswe mme e fumaneha.
 - `ultimate_webllm_widget_enabled` — Fetola boemo ba ho nolofatswa ha widget bakeng sa mosebedisi kapa tikoloho e itseng. Kgutlisa `true` kapa `false`.
 - `ultimate_webllm_auto_prompt` — Fetola mongolo wa auto-prompt pele o romelwa ho widget. E amohela kgwele ya prompt le ntho ya hajwale ya `WP_Post`.
 
-## Ho rarolla mathata
+## Ho rarolla mathata {#troubleshooting}
 
-### Widget ya puisano ha e hlahe
+### Widget ya puisano ha e hlahe {#the-chat-widget-does-not-appear}
 
 - Netefatsa hore mosebedisi o kene — widget e bontshwa feela ho basebedisi ba netefaditsweng
 - Hlahloba hore **Nolofatsa widget ya puisano e phaphametseng** e buletswe phaneleng ya Connector
 - Netefatsa hore sebatli sa mosebedisi se tshehetsa WebGPU (sheba Ditlhoko ka hodimo)
 
-### Sesupo sa admin-bar se bontsha "Phoso"
+### Sesupo sa admin-bar se bontsha "Phoso" {#the-admin-bar-indicator-shows-error}
 
 Bula console ya moqapi ya sebatli (F12) mme o batle diphoso tse amanang le WebLLM. Mabaka a tlwaelehileng:
 
@@ -135,10 +135,10 @@ Bula console ya moqapi ya sebatli (F12) mme o batle diphoso tse amanang le WebLL
 - Ho jarolla boima ba mmotlolo ho hlolehile — hlahloba kgokahano ya marangrang mme o leke ho hlakola cache ya IndexedDB dithulusing tsa moqapi tsa sebatli (Application → IndexedDB)
 - Katoloso ya sebatli e thibela SharedWorker
 
-### Boima ba mmotlolo bo jarollwa nako le nako
+### Boima ba mmotlolo bo jarollwa nako le nako {#model-weights-download-every-time}
 
 Katoloso e sebedisa IndexedDB e le backend ya cache ho netefatsa hore boima ba mmotlolo bo pholoha diphetisetso tsa CDN. Haeba boima bo jarollwa hape ketelong e nngwe le e nngwe, hlahloba hore IndexedDB ha e hlakolwe ke tlhophiso ya lekunutu ya sebatli kapa katoloso.
 
-## Lenane la diphetoho
+## Lenane la diphetoho {#changelog}
 
 Sheba [Lenane la diphetoho](./changelog) bakeng sa histori e felletseng ya mefuta.

@@ -3,11 +3,11 @@ title: Resum del Panell de Control
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Panell de Control General
+# Panell de Control General {#dashboard-overview}
 
 Ultimate Multisite té un **Panell de Control** dedicat dins del menú Ultimate Multisite, i també afegeix *widgets* al Panell de Control de la Xarxa (Network Dashboard). Aquest article cobreix el que veureu en ambdós llocs.
 
-## El Panell de Control de la Xarxa (Network Dashboard)
+## El Panell de Control de la Xarxa (Network Dashboard) {#the-network-dashboard}
 
 Ultimate Multisite injecciona *widgets* útils al panell de control de nivell de xarxa que es troba en **Meus Llocs → Administració de la Xarxa → Panell de Control**.
 
@@ -35,7 +35,7 @@ Aquí teniu el que proporciona cada *widget*:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## El Panell de Control d'Ultimate Multisite
+## El Panell de Control d'Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Mentre el panell de control de la xarxa presenta informació global sobre la xarxa, el panell de control d'Ultimate Multisite (a l'alt nivell del menú Ultimate Multisite) presenta informació sobre el servei.
 

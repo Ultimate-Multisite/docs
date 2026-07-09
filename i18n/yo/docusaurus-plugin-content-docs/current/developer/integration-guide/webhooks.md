@@ -3,11 +3,11 @@ title: Ìṣàkóso Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ìmúlò Webhook
+# Ìmúlò Webhook {#webhook-handling}
 
 Dá àwọn ibi-opin webhook àdáni láti gba àwọn ìṣẹ̀lẹ̀ láti àwọn iṣẹ́ òde àti láti mú dátà bá Ultimate Multisite mu.
 
-## Ibi-opin Webhook Àdáni
+## Ibi-opin Webhook Àdáni {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Àwọn Ohun Tó Yẹ Kí A Rò Nípa Ààbò
+## Àwọn Ohun Tó Yẹ Kí A Rò Nípa Ààbò {#security-considerations}
 
 - Máa ṣàyẹ̀wò àwọn ìbuwọ̀lé webhook nígbà gbogbo ní lílo HMAC tàbí aṣírí tí a pín
 - Lo `permission_callback` lórí ọ̀nà REST rẹ — má ṣe ṣètò rẹ sí `__return_true` nínú production

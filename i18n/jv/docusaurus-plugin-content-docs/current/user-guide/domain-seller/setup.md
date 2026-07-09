@@ -3,21 +3,21 @@ title: Penyiapan dan Konfigurasi Penyedia
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Penjual Domain: Pengaturan dan Konfigurasi Penyedia
+# Penjual Domain: Pengaturan dan Konfigurasi Penyedia {#domain-seller-setup-and-provider-configuration}
 
 Addon Domain Seller dikirim dengan panduan pengaturan yang akan memandu Anda melalui setiap langkah yang diperlukan. Halaman ini membahas alur wizard tersebut dan cara mengkonfigurasi atau mengkonfigurasi ulang penyedia setelahnya.
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 - **Multisite Ultimate** v2.4.12 atau lebih tinggi, diaktifkan jaringan
 - **PHP** 7.4+
 - Kredensial API untuk setidaknya satu registrar yang didukung
 
-## Wizard pengaturan pertama
+## Wizard pengaturan pertama {#first-run-setup-wizard}
 
 Wizard pengaturan akan otomatis berjalan saat Anda mengaktifkan plugin untuk pertama kalinya melalui jaringan. Ini juga bisa diakses kapan saja dari **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Langkah 1 — Pilih penyedia
+### Langkah 1 — Pilih penyedia {#step-1--choose-a-provider}
 
 Pilih registrar yang ingin Anda hubungkan. Pilihan yang didukung:
 
@@ -33,7 +33,7 @@ Pilih registrar yang ingin Anda hubungkan. Pilihan yang didukung:
 | NameSilo | Tidak | Tidak |
 | Enom | Ya | Tidak |
 
-### Langkah 2 — Masukkan kredensial
+### Langkah 2 — Masukkan kredensial {#step-2--enter-credentials}
 
 Setiap penyedia punya kolom kredensial yang berbeda:
 
@@ -57,17 +57,17 @@ Setiap penyedia punya kolom kredensial yang berbeda:
 
 Cek **mode Sandbox** jika tersedia untuk menguji coba ke lingkungan tes penyedia sebelum mulai dipakai sungguhan.
 
-### Langkah 3 — Uji koneksi
+### Langkah 3 — Uji koneksi {#step-3--test-the-connection}
 
 Klik **Test Connection**. Wizard akan mengirimkan panggilan API ringan untuk memverifikasi kredensial dan konektivitas. Perbaiki masalah kredensial apa pun sebelum lanjut.
 
-### Langkah 4 — Impor TLDs
+### Langkah 4 — Impor TLDs {#step-4--import-tlds}
 
 Klik **Import TLDs** untuk menarik semua TLD yang tersedia dan harga grosir dari penyedia yang terhubung. Ini akan mengisi daftar TLD yang dipakai oleh produk domain. Proses impor mungkin butuh waktu 30–60 detik untuk penyedia dengan katalog TLD yang besar.
 
 TLDs juga akan disinkronkan ulang otomatis sekali sehari melalui jadwal cron job.
 
-### Langkah 5 — Buat produk domain
+### Langkah 5 — Buat produk domain {#step-5--create-a-domain-product}
 
 Wizard akan membuat produk domain *catch-all* (produk penampung) secara default dengan markup 10%. Anda bisa langsung mengedit produk ini atau lewati dan buat produk secara manual di bawah **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Lihat [Domain Products and Pricing](./domain-products) untuk panduan konfigurasi
 
 ---
 
-## Mengkonfigurasi ulang penyedia
+## Mengkonfigurasi ulang penyedia {#reconfiguring-a-provider}
 
 Buka **Network Admin › Ultimate Multisite › Settings › Domain Seller** (atau klik **Settings** di daftar plugin).
 
@@ -89,17 +89,17 @@ Halaman pengaturan ini berisi:
 - **Kelola produk domain** — tautan cepat ke daftar Produk
 - **Konfigurasi penyedia** — membuka Integration Wizard untuk menambah atau mengatur ulang penyedia
 
-### Menambahkan penyedia kedua
+### Menambahkan penyedia kedua {#adding-a-second-provider}
 
 Klik **Configure providers** dan jalankan wizard lagi untuk registrar yang baru. Kamu bisa punya beberapa penyedia yang dikonfigurasi sekaligus. Tetapkan setiap produk domain ke penyedia tertentu, atau biarkan pada default saja.
 
-### Menyinkronkan TLD secara manual
+### Menyinkronkan TLD secara manual {#syncing-tlds-manually}
 
 Di halaman pengaturan, klik **Sync TLDs** di sebelah penyedia yang sudah dikonfigurasi untuk mengambil harga terbaru. Ini berguna setelah suatu penyedia memperbarui harga grosir atau menambahkan TLD baru.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Setiap penyedia akan menulis ke saluran lognya sendiri. Log bisa dilihat di bawah **Network Admin › Ultimate Multisite › Logs**:
 
@@ -119,7 +119,7 @@ Setiap penyedia akan menulis ke saluran lognya sendiri. Log bisa dilihat di bawa
 
 ---
 
-## Catatan kemampuan penyedia (Provider capability notes)
+## Catatan kemampuan penyedia (Provider capability notes) {#provider-capability-notes}
 
 Ora kabeh API registrar nggampangake operasi sing padha. Addon iki nuduhake operasi sing ora didukung kanthi error sing jelas kanggo admin, dudu mung gagal tanpa kabar.
 

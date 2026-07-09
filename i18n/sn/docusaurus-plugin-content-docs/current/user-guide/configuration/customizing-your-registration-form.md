@@ -3,13 +3,13 @@ title: Kugadzirisa Fomu Rako reKunyoresa
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kugadzirisa Registration Form yako
+# Kugadzirisa Registration Form yako {#customizing-your-registration-form}
 
 Kuti network yako itaridzike yakasiyana nemamwe maSaaS ese akavakirwa paWordPress platform, Ultimate Multisite inokubvumira kugadzirisa mapeji ako ekunyoresa nekupinda uchishandisa chimiro chedu che **Checkout Forms**.
 
 Kunyangwe ari nzira iri nyore uye inoshanduka yekuedza nzira dzakasiyana kana uchiedza kushandura vatengi vatsva, anonyanya kushandiswa kugadzira mafomu ekunyoresa akagadzirirwa munhu. Chinyorwa ichi chine chinangwa chekukuratidza kuti ungazviita sei.
 
-## Mapeji ekupinda nekunyoresa:
+## Mapeji ekupinda nekunyoresa: {#login-and-registration-pages}
 
 Paunoisa Ultimate Multisite, inogadzira otomatiki mapeji ekupinda nekunyoresa akagadzirirwa pawebsite yako huru. Unogona kuchinja mapeji aya ekutanga chero nguva nekuenda pasi pepeji rako re **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Zvino, ngationei dzimwe sarudzo dzichiri kukosha kumaitiro ekupinda nekunyoresa.
 
 Uye ndizvo zvese sarudzo dzine chekuita nekupinda nekunyoresa dzaunogona kugadzirisa! Usakanganwa kuchengetedza zvirongwa zvako mushure mekupedza kuzvigadzirisa.
 
-## Kushandisa mafomu akawanda ekunyoresa:
+## Kushandisa mafomu akawanda ekunyoresa: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 inopa mupepeti wecheckout form unokubvumira kugadzira mafomu akawanda sezvaunoda, ane fields dzakasiyana, zvigadzirwa zviri kupihwa, nezvimwe.
 
@@ -69,7 +69,7 @@ Neimwe nzira, unogona kugadzirisa kana kudzokorora mafomu aunotova nawo nekudzva
 
 Kana ukasarudza nhanho imwe kana nhanho dzakawanda, checkout form inenge yatotangwa iine nhanho dzakakosha kuti ishande. Zvadaro, kana uchida, unogona kuwedzera dzimwe nhanho kwairi.
 
-### Kugadzirisa Checkout Form:
+### Kugadzirisa Checkout Form: {#editing-a-checkout-form}
 
 Sezvatambotaura, unogona kugadzira checkout forms dzezvinangwa zvakasiyana. Mumuenzaniso uyu tichashanda pafomu rekunyoresa.
 
@@ -131,11 +131,11 @@ Kuti uwane shortcode yefomu rako dzvanya pa **Gadzira Shortcode** uye kopa mhedz
 
 _**Cherechedzo:** Uchafanira kuwedzera shortcode iyi kupeji rako rekunyoresa kuitira kuti fomu rekubhadhara iri riwedzerwe kwariri._
 
-## Kusarudza kare zvigadzirwa nematemplate kuburikidza nema parameter eURL:
+## Kusarudza kare zvigadzirwa nematemplate kuburikidza nema parameter eURL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Kana uchida kugadzira matafura emitengo akagadziridzwa ezvigadzirwa zvako uye kusarudza kare pafomu rekubhadhara chigadzirwa kana template inosarudzwa nemutengi wako kubva patafura yako yemitengo kana peji rematemplate, unogona kushandisa ma parameter eURL pane izvi.
 
-### **Kune maplans:**
+### **Kune maplans:** {#for-plans}
 
 Enda ku **Ultimate Multisite > Products > Sarudza plan**. Unofanira kuona bhatani re **Dzvanya kuti ukopere Link Inogoverwa** pamusoro pepeji. Iyi ndiyo link yaunogona kushandisa kusarudza kare plan iyi chaiyo pafomu rako rekubhadhara.
 
@@ -143,7 +143,7 @@ Enda ku **Ultimate Multisite > Products > Sarudza plan**. Unofanira kuona bhatan
 
 Cherechedza kuti link iyi inogoverwa inoshanda chete ku **Plans**. Haugoni kushandisa ma link anogoverwa kumapakeji kana masevhisi.
 
-### Kune matemplate:
+### Kune matemplate: {#for-templates}
 
 Kana uchida kusarudza kare matemplate esaiti pafomu rako rekubhadhara, unogona kushandisa parameter: **?template_id=X** paURL yepeji rako rekunyoresa. "X" inofanira kutsiviwa ne **nhamba yeID yetemplate yesaiti**. Kuti uwane nhamba iyi, enda ku **Ultimate Multisite > Sites**.
 

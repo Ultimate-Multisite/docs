@@ -3,9 +3,9 @@ title: Bilješke o izdanju
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Bilješke o izdanju
+# Bilješke o izdanju {#release-notes}
 
-## Verzija 2.13.0 — Objavljeno 2026-06-05
+## Verzija 2.13.0 — Objavljeno 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Novo: Dodana je podrška za sovereign-tenant za tokove korisničkog accounta, checkouta, naplate, stranice, fakture, prebacivanja templatea i mapiranja domena kako bi tenant mreže mogle usmjeriti korisnike nazad na glavnu stranicu za upravljane radnje.
 - Novo: Dodane su provjere vjerodajnica za obnovu za ponavljajuća članstva kako bi gatewayi mogli onemogućiti automatsku obnovu kada nedostaje sačuvani ugovor o naplati, pretplata ili vault token.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ispravka: Rubni slučajevi obnova članstva, prikaza isteka i naplate plaćanja sada izbjegavaju trenutne isteke, rušenja ili propuštena obavezna plaćanja.
 - Poboljšano: WordPress kompatibilnost je testirana do verzije 7.0, produkcijski Vue asseti su ponovo izgrađeni iz npm izvora, a Cypress end-to-end pokrivenost sada testira više checkout, setup, SSO i gateway tokova.
 
-## Verzija 2.12.0 — Objavljeno 2026-05-15
+## Verzija 2.12.0 — Objavljeno 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Novo: Dodan je Hostinger (hPanel) kao podržani host provider s integracijom mapiranja domena
 - Novo: Site Exporter sada obrađuje pakete za mrežni uvoz radi pojednostavljene obnove stranica na nivou cijele mreže
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ispravka: Site Exporter CLI sada čuva ispravan izbor zadane mrežne stranice
 - Poboljšano: Uklonjen je uključeni wp-cli iz paketa plugina, čime je smanjena veličina plugina
 
-## Verzija 2.11.0 — Objavljeno 2026-05-11
+## Verzija 2.11.0 — Objavljeno 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Novo: Izvozi stranica sada uključuju self-booting `index.php` tako da se ZIP može instalirati na svjež host bez zasebne instalacije plugina.
 - Novo: Mrežni izvoz omogućava administratorima da izvezu sve podstranice u jednoj arhivi sa stranice za administraciju Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Novo: Editor checkout forme upozorava kada se proizvod doda bez konfigurisanog obaveznog polja.
 - Novo: Kartica postavki Import/Export sada jasno opisuje svoj opseg i direktno povezuje na alat Site Export.
 
-## Verzija 2.10.0 — Objavljeno 2026-05-05
+## Verzija 2.10.0 — Objavljeno 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Novo: PayPal vođeni setup wizard za ručni unos vjerodajnica s OAuth flag gateom za besprijekornu konfiguraciju gatewaya.
 - Novo: Korisnički panel za prebacivanje templatea redizajniran je s karticom trenutnog templatea, trajnom mrežom i dugmetom **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ispravka: Filtrirana SSO putanja poštuje se u svim tokovima prijave.
 - Ispravka: Prazne opcije identiteta stranice čuvaju se pri spremanju.
 
-## Verzija 2.9.0 — Objavljeno 2026-04-30
+## Verzija 2.9.0 — Objavljeno 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Novo: Izvoz i uvoz jedne stranice dodani su pod **Alati > Izvoz i uvoz**.
 - Ispravka: Export ZIP fajlovi sada se isporučuju preko autentificiranog endpointa za preuzimanje.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Ispravka: Tour ID-jevi normalizirani su na donje crte u ključevima korisničkih postavki.
 - Poboljšano: ZipArchive se sada koristi umjesto Alchemy/Zippy za bolju kompatibilnost.
 
-## Verzija 2.8.0 — Objavljeno 2026-04-29
+## Verzija 2.8.0 — Objavljeno 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Novo: Prekidač Enable Jumper dodan u korisničko sučelje postavki Other Options.
 - Novo: Kolona statusa dodana u tabelu liste obrazaca za checkout.

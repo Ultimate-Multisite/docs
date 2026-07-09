@@ -3,13 +3,13 @@ title: Kutumiza Maimelo ndi Mauthenga Ofalitsidwa
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Kutumiza Maimelo ndi Zofalitsa (v2)
+# Kutumiza Maimelo ndi Zofalitsa (v2) {#sending-emails-and-broadcasts-v2}
 
 _**CHENJEZO LOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite mtundu wa 2.x.**_
 
 Ultimate Multisite imabwera ndi chinthu chomwe chidzakulolani kulankhulana ndi makasitomala anu potumiza imelo kwa wogwiritsa ntchito wolunjika kapena gulu la ogwiritsa ntchito komanso kutumiza zidziwitso pa Dashboard yawo ya admin kuti mufalitse zilengezo
 
-## Onjezani zidziwitso za admin ku Dashboard ya makasitomala anu ndi Zofalitsa
+## Onjezani zidziwitso za admin ku Dashboard ya makasitomala anu ndi Zofalitsa {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Pogwiritsa ntchito chinthu cha kufalitsa cha Ultimate Multisite, mutha kuwonjezera **zidziwitso za admin** ku Dashboard ya admin ya subsite ya wogwiritsa ntchito.
 
@@ -51,7 +51,7 @@ Mukapanga uthenga wanu, mutha kukanikiza batani la **Tumizani**.
 
 Ndipo ndi zimenezo. Chidziwitso cha admin chiyenera kuwonekera nthawi yomweyo pa Dashboard ya wogwiritsa ntchito wanu.
 
-## Tumizani maimelo kwa makasitomala anu
+## Tumizani maimelo kwa makasitomala anu {#send-emails-to-your-customers}
 
 Pogwiritsa ntchito chinthu cha kufalitsa cha Ultimate Multisite, mutha kutumiza imelo kwa ogwiritsa ntchito anu. Muli ndi njira yotumizira imelo kokha kwa ogwiritsa ntchito ena kapena kulunjika gulu lina la ogwiritsa ntchito kutengera chinthu kapena pulani yomwe alembetsa pansi pake.
 
@@ -81,11 +81,11 @@ Mukapanga uthenga wanu, mutha kukanikiza batani la **Tumizani**.
 
 Ndipo umu ndi momwe zilili zosavuta kutumiza imelo kwa ogwiritsa ntchito anu omaliza pogwiritsa ntchito chinthu cha kufalitsa.
 
-## Maimelo a dongosolo
+## Maimelo a dongosolo {#system-emails}
 
 Maimelo a dongosolo mu Ultimate Multisite ndi **zidziwitso zokha** zomwe zimatumizidwa ndi dongosolo pambuyo pa zochita zina monga kulembetsa, kulipira, kulumikiza domain, ndi zina zotero. Maimelo awa akhoza kusinthidwa kuchokera ku zokonda za Ultimate Multisite. Imabweranso ndi chinthu chomwe chidzakulolani kubwezeretsa ndi kuitanitsa zokonda zomwe zilipo kuchokera ku kukhazikitsa kwina kwa Ultimate Multisite.
 
-### Kubwezeretsa & Kuitanitsa
+### Kubwezeretsa & Kuitanitsa {#resetting--importing}
 
 Mitundu yatsopano ya Ultimate Multisite, komanso zowonjezera, ingathe ndipo idzalembetsa maimelo atsopano nthawi ndi nthawi.
 
@@ -93,7 +93,7 @@ Kuti tipewe mikangano ndi mavuto ena, **sitidzawonjezera ma template atsopano a 
 
 Komabe, ma super admin ndi ma agent angathe kuitanitsa maimelo omwe alembetsedwa kumenewa kudzera pa chida choitanitsira. Njirayi idzapanga imelo yatsopano ya dongosolo yokhala ndi zomwe zili ndi masanjidwe a template yatsopano ya imelo, kulola super admin kupanga zosintha zilizonse zomwe akufuna kapena kuzisunga monga zilili.
 
-#### Momwe mungaitanitsire maimelo a dongosolo
+#### Momwe mungaitanitsire maimelo a dongosolo {#how-to-import-system-emails}
 
 Pitani ku tsamba lanu la Zokonda za Ultimate Multisite ndipo pitani ku tabu ya **Maimelo**.
 
@@ -111,7 +111,7 @@ Kenako, mutha kusintha njira za Kuitanitsa Maimelo kuti muwone maimelo a dongoso
 
 <!-- Chithunzi sichikupezeka: zenera la Reset ndi Import lokhala ndi zosankha za Import Emails zotsegulidwa -->
 
-#### Kubwezeretsa Maimelo a System
+#### Kubwezeretsa Maimelo a System {#reseting-system-emails}
 
 Nthawi zina, mudzazindikira kuti zosintha zomwe munapanga pa template ya imelo inayake sizikukuthandizaninso ndipo mungafune kuyibwezeretsa ku **mkhalidwe wake woyambirira**.
 

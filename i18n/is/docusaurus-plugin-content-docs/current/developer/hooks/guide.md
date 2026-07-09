@@ -3,15 +3,15 @@ title: Leiðarvísir um notkun króka
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Leiðarvísir um notkun hooks
+# Leiðarvísir um notkun hooks {#hooks-usage-guide}
 
 Ultimate Multisite býður upp á 200+ action hooks og 280+ filter hooks. Þessi síða fjallar um algengustu hooks með hagnýtum dæmum. Fyrir fullkomna sjálfvirkt útbúna tilvísun skaltu skoða hinar síðurnar í þessum hluta.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Lífsferill viðskiptavinar
+### Lífsferill viðskiptavinar {#customer-lifecycle}
 
-#### Eftir stofnun viðskiptavinar
+#### Eftir stofnun viðskiptavinar {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Breyting á stöðu viðskiptavinar
+#### Breyting á stöðu viðskiptavinar {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks fyrir vefsvæði
+### Hooks fyrir vefsvæði {#site-hooks}
 
-#### Eftir að vefsvæði er birt
+#### Eftir að vefsvæði er birt {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Fyrir beitingu sniðmáts
+#### Fyrir beitingu sniðmáts {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership hooks
+### Membership hooks {#membership-hooks}
 
-#### Stöðubreytingar
+#### Stöðubreytingar {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Payment hooks
+### Payment hooks {#payment-hooks}
 
-#### Greiðsla lokið / mistókst
+#### Greiðsla lokið / mistókst {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout hooks
+### Checkout hooks {#checkout-hooks}
 
-#### Fyrir úrvinnslu / eftir lok
+#### Fyrir úrvinnslu / eftir lok {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain hooks
+### Domain hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Verðlagningarsíur
+### Verðlagningarsíur {#pricing-filters}
 
-#### Heildarupphæð körfu
+#### Heildarupphæð körfu {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Skatthlutföll
+#### Skatthlutföll {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Sniðmátssíur
+### Sniðmátssíur {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Takmarkanasíur
+### Takmarkanasíur {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway filters
+### Gateway filters {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout form reitir
+### Checkout form reitir {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Efni tölvupósts
+### Efni tölvupósts {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

@@ -3,15 +3,15 @@ title: 'Chidzidzo 11: Kuwana Vatengi'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Chidzidzo 11: Kuwana Vatengi
+# Chidzidzo 11: Kuwana Vatengi {#lesson-11-finding-customers}
 
 Chikuva chikuru chisina vatengi ingori hobi. Chidzidzo ichi chinovhara nzira dzekuwana vatengi mu niche vertical -- mazano anoshanda chaizvo nokuti wakatarisa paindasitiri imwe chete.
 
-## Patakagumira
+## Patakagumira {#where-we-left-off}
 
 FitSite yava live. Iye zvino tinoda kuti varidzi ve fitness studio vaiwane uye vanyorese.
 
-## Nei Kuwana Vatengi mu Niche Kwakasiyana
+## Nei Kuwana Vatengi mu Niche Kwakasiyana {#why-niche-acquisition-is-different}
 
 Paunotengesera munhu wese, unokwikwidzana kuti uonekwe mumusika une ruzha. Paunotengesera niche, une zvakanakira:
 
@@ -19,17 +19,17 @@ Paunotengesera munhu wese, unokwikwidzana kuti uonekwe mumusika une ruzha. Pauno
 - **Mharidzo yako inobata pakarepo** -- "mawebsite e fitness studios" inomisa muridzi we gym pakati peku-scroll
 - **Referrals dzinowedzerana** -- varidzi ve fitness studio vanoziva vamwe varidzi ve fitness studio
 
-## Nzira 1: Kusvika Zvakananga
+## Nzira 1: Kusvika Zvakananga {#channel-1-direct-outreach}
 
 Nzira inokurumidza kuenda kuvatengi vako vekutanga ndeyekusvika kwakananga, kwemunhu pachake.
 
-### Tsvaga Vanotarisirwa Kuva Vatengi
+### Tsvaga Vanotarisirwa Kuva Vatengi {#find-prospects}
 
 - Tsvaga paGoogle Maps fitness studios, gyms, uye personal trainers munharaunda yako
 - Shanyira mawebsite avo aripo (kana kunyora kuti havana)
 - Unganidza ruzivo rwekubata kubva kumaGoogle Business profiles avo kana social media
 
-### Ongorora Mamiriro Avo Aripo
+### Ongorora Mamiriro Avo Aripo {#evaluate-their-current-situation}
 
 Kune mumwe nemumwe anotarisirwa kuva mutengi, nyora:
 
@@ -37,7 +37,7 @@ Kune mumwe nemumwe anotarisirwa kuva mutengi, nyora:
 - **Website yakaipa**: Anotarisirwa kuva mutengi akasimba -- varatidze kuti sarudzo iri nani inotaridzika sei
 - **Website yakanaka**: Anotarisirwa kuva mutengi asina kusimba -- vakatogadzirisa dambudziko iri
 
-### Bata Navo
+### Bata Navo {#make-contact}
 
 Tumira email kana meseji yakagadzirirwa munhu iyeye:
 
@@ -48,7 +48,7 @@ Tumira email kana meseji yakagadzirirwa munhu iyeye:
 
 Usatumira maemail akawanda asingasarudzirwi munhu. Kusvika kwakagadzirirwa vanhu 20 vakatsvakisiswa zvakanaka kuchashanda kupfuura kutumira meseji yakajairika kuvanhu 2,000.
 
-## Nzira 2: Niche Communities
+## Nzira 2: Niche Communities {#channel-2-niche-communities}
 
 Varidzi ve fitness studio vanoungana munzvimbo dzakatarwa online:
 
@@ -57,7 +57,7 @@ Varidzi ve fitness studio vanoungana munzvimbo dzakatarwa online:
 - **Industry forums** uye discussion boards
 - **LinkedIn groups** dze fitness professionals
 
-### Maitiro Ekutora Chikamu
+### Maitiro Ekutora Chikamu {#how-to-participate}
 
 Usapinda wobva wangotanga kushambadzira product yako. Panzvimbo pezvo:
 
@@ -66,7 +66,7 @@ Usapinda wobva wangotanga kushambadzira product yako. Panzvimbo pezvo:
 3. **Govera pazvinenge zvakakodzera** -- kana mumwe munhu abvunza nezvemawebsite, govera chikuva chako zvakasikwa
 4. **Gadzira content inobatsira** -- nyora posts pamusoro pe "chii chinoita kuti website ye fitness studio ive yakanaka" zvinotungamira zvakasikwa kuchikuva chako
 
-## Nzira 3: Content Marketing
+## Nzira 3: Content Marketing {#channel-3-content-marketing}
 
 Gadzira content inotsvakwa nevaridzi ve fitness studio:
 
@@ -77,7 +77,7 @@ Gadzira content inotsvakwa nevaridzi ve fitness studio:
 
 Shambadza izvi paFitSite marketing blog yako. Nekufamba kwenguva, content iyi inokwira muma search engines uye inounza organic traffic kubva kuvanhu vari kutsvaga zvine simba zvaunopa.
 
-## Nzira 4: Partnerships
+## Nzira 4: Partnerships {#channel-4-partnerships}
 
 Batana nemabhizinesi anotoshandira fitness studios:
 
@@ -88,7 +88,7 @@ Batana nemabhizinesi anotoshandira fitness studios:
 
 Ipa referral commissions kana reciprocal promotion. [AffiliateWP addon](/addons/affiliatewp) inogona kukubatsira kumisa referral program yepamutemo.
 
-## Nzira 5: Industry Events
+## Nzira 5: Industry Events {#channel-5-industry-events}
 
 Zviitiko zve fitness industry zvinokuisa pamberi pezana nemazana evatengi vangangoitika:
 
@@ -99,7 +99,7 @@ Zviitiko zve fitness industry zvinokuisa pamberi pezana nemazana evatengi vangan
 
 Haudi bhajeti hombe. Kunyange kuenda semupindi uye kuita hurukuro pamusoro pezvaunoita kunogona kugadzira leads.
 
-## Nzira 6: Showcase Sites
+## Nzira 6: Showcase Sites {#channel-6-showcase-sites}
 
 Kushambadzira kwako kwakanakisisa ndiko masite evatengi vako varipo. Nemvumo:
 
@@ -108,7 +108,7 @@ Kushambadzira kwako kwakanakisisa ndiko masite evatengi vako varipo. Nemvumo:
 - Kumbira vatengi vakagutsikana kuti vakupe testimonials
 - Kurudzira vatengi kuti vataure FitSite kana vabvunzwa nezvewebsite yavo
 
-## Kumisa Referral Program
+## Kumisa Referral Program {#setting-up-a-referral-program}
 
 Kukurudzirwa nemuromo ndiyo nzira yako ine simba zvikuru mu niche. Iite yepamutemo:
 
@@ -116,7 +116,7 @@ Kukurudzirwa nemuromo ndiyo nzira yako ine simba zvikuru mu niche. Iite yepamute
 2. Ipa vatengi varipo mubayiro we referrals (mwedzi mumwe free, account credit, nezvimwe)
 3. Ita kuti zvive nyore -- vape referral link nemeseji iri nyore yavanogona kutumira mberi
 
-## Kutevera Zvinoshanda
+## Kutevera Zvinoshanda {#tracking-what-works}
 
 Panzira imwe neimwe, tevera:
 
@@ -126,7 +126,7 @@ Panzira imwe neimwe, tevera:
 
 Wedzera simba panzira dzinoshanda. Cheka nzira dzisingashandi.
 
-## Zvinotarisirwa Zvine Musoro
+## Zvinotarisirwa Zvine Musoro {#realistic-expectations}
 
 - **Mwedzi 1-3**: vatengi 5-20, vakawanda kubva pakusvika kwakananga uye communities
 - **Mwedzi 4-6**: vatengi 20-50, content marketing inotanga kubatsira
@@ -134,7 +134,7 @@ Wedzera simba panzira dzinoshanda. Cheka nzira dzisingashandi.
 
 Manhamba aya anosiyana, asi pattern yacho yakafanana: vatengi vekutanga vanobva mukuedza kwakananga, vatengi vanouya gare gare vanobva pamigumisiro inoungana ye content, referrals, uye mukurumbira.
 
-## Zvatakavaka muChidzidzo Ichi
+## Zvatakavaka muChidzidzo Ichi {#what-we-built-this-lesson}
 
 - **Nzira nhanhatu dzekuwana vatengi** dzakagadzirirwa niche yefitness
 - **Maitiro ekusvika kuvatengi zvakananga** ekuwana vatengi vekutanga

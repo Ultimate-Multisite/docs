@@ -3,11 +3,11 @@ title: Webhook apdorojimas
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook apdorojimas
+# Webhook apdorojimas {#webhook-handling}
 
 Sukurkite pasirinktinius webhook galinius taškus, kad gautumėte įvykius iš išorinių paslaugų ir sinchronizuotumėte duomenis su Ultimate Multisite.
 
-## Pasirinktinis webhook galinis taškas
+## Pasirinktinis webhook galinis taškas {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Saugumo aspektai
+## Saugumo aspektai {#security-considerations}
 
 - Visada tikrinkite webhook parašus naudodami HMAC arba bendrinamą paslaptį
 - Savo REST maršrute naudokite `permission_callback` — niekada nenustatykite jo į `__return_true` gamybinėje aplinkoje

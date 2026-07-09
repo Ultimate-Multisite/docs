@@ -3,7 +3,7 @@ title: Hooks နှင့် Filters
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks နှင့် filters များ
+# Ultimate Multisite Hooks နှင့် filters များ {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite သည် functions များနှင့် database queries များစွာဖြင့် တည်ဆောက်ထားပါသည်။ ရှိပြီးသား functions များကို ပြင်ဆင်ရန် သို့မဟုတ် code အသစ်များ ထည့်သွင်းရန် hooks နှင့် filters များ ပါဝင်ပါသည်။
 

@@ -10,7 +10,7 @@ Determine whether a mapping should be used
 
 Typically, you'll want to only allow active mappings to be used. However, if you want to use more advanced logic, or allow non-active domains to be mapped too, simply filter here.
 
-## Parameters
+## Parameters {#filter-wuusedomainmapping}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,6 +18,6 @@ Typically, you'll want to only allow active mappings to be used. However, if you
 | $mapping | `\Domain` | Mapping that we're inspecting |
 | $domain | `string` |  |
 
-### Source
+### Source {#parameters}
 
 Defined in [`inc/class-domain-mapping.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-domain-mapping.php#L391) at line 391

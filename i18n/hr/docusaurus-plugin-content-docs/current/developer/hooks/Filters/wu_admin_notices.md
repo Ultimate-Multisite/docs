@@ -4,11 +4,11 @@ title: Filtar - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filtar: wu_admin_notices
+# Filtar: wu_admin_notices {#filter-wuadminnotices}
 
 Omogućuje developerima filtriranje admin obavijesti koje dodaje Ultimate Multisite.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Tip | Opis |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Omogućuje developerima filtriranje admin obavijesti koje dodaje Ultimate Multis
 | $filter | `string` | Jesu li obavijesti koje se mogu odbaciti filtrirane. |
 | $dismissed_messages | `array` | Popis ključeva odbačenih obavijesti. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) u retku 121
 
 
-## Vraća
+## Vraća {#returns}

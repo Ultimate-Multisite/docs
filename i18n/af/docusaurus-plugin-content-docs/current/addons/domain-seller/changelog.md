@@ -3,7 +3,7 @@ title: Domeinverkoper-veranderingslogboek
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller-veranderingslog
+# Domain Seller-veranderingslog {#domain-seller-changelog}
 
 Weergawe 1.3.0 - Vrygestel op 2026-06-02
 - Nuut: Het ’n network-admin-waarskuwing bygevoeg wanneer HostAfrica-herverkoperbalans te laag raak
@@ -136,20 +136,20 @@ Weergawe 1.0.0 - Vrygestel op 2025-09-28
 * **Reggemaak:** Alle verouderde v1-kode opgedateer na v2-standaarde
 * **Verwyder:** Verouderde v1-versoenbaarheid (brekende verandering)
 
-### Vorige Weergawes (v1 Legacy)
+### Vorige Weergawes (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Weergawe 0.0.3 - 20/08/2019
+### Weergawe 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Reggemaak: Onversoenbaarheid met Groundhogg CRM
 * Nota: Dit was die laaste v1-versoenbare vrystelling
 
-### Weergawe 0.0.2 - 07/12/2018
+### Weergawe 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Reggemaak: Die License Key-veld verwyder
 * Reggemaak: Plan-oortjies ontbreek wanneer die funksie-plugin aktief is
 * Verbeter: ’n Oorslaan-knoppie by die registrasieveld gevoeg
 
-### Weergawe 0.0.1 - Aanvanklike Vrystelling
+### Weergawe 0.0.1 - Aanvanklike Vrystelling {#version-001---initial-release}
 
 * Basiese OpenSRS-integrasie vir WP Ultimo v1
 * Eenvoudige domeinsoektog en registrasie

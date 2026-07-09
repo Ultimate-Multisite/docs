@@ -3,15 +3,15 @@ title: 'Leciono 4: Konstruado de niĉaj ŝablonoj'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leciono 4: Konstrui Niĉajn Ŝablonojn
+# Leciono 4: Konstrui Niĉajn Ŝablonojn {#lesson-4-building-niche-templates}
 
 Ŝablonoj estas la kerno de via niĉa valorpropono. Posedanto de taŭgeca studio, kiu registriĝas kaj vidas retejon kiu jam aspektas kiel taŭgeca retejo -- kun klas-horaroj, trejnistaj profiloj, kaj la ĝusta bildaro -- multe pli verŝajne restos ol iu, kiu vidas malplenan kanvason.
 
-## Kie Ni Ĉesis
+## Kie Ni Ĉesis {#where-we-left-off}
 
 Ni havas funkciantan FitSite-reton kun Ultimate Multisite instalita kaj agordita. Nun ni konstruas la ŝablonojn, kiuj igas FitSite sentiĝi speciale kreita por taŭgecaj entreprenoj.
 
-## Kial Niĉaj Ŝablonoj Gravas
+## Kial Niĉaj Ŝablonoj Gravas {#why-niche-templates-matter}
 
 Ĝeneralaj ŝablonoj devigas viajn klientojn fari la malfacilan laboron: eltrovi kiajn paĝojn ili bezonas, kia enhavstrukturo funkcias, kaj kiel fari ĝin aspekti ĝuste por ilia industrio. Niĉaj ŝablonoj forigas tiun frotadon.
 
@@ -24,11 +24,11 @@ Posedanto de taŭgeca studio, kiu registriĝas al FitSite, devus vidi:
 
 Ili plenigas siajn detalojn. Ili ne komencas de nulo.
 
-## Plani Viajn Ŝablonojn
+## Plani Viajn Ŝablonojn {#planning-your-templates}
 
 Antaŭ ol konstrui, decidu kiujn ŝablonojn proponi. Por FitSite, ni kreos tri:
 
-### Ŝablono 1: Studio Essential
+### Ŝablono 1: Studio Essential {#template-1-studio-essential}
 
 Por malgrandaj studioj kaj personaj trejnistoj.
 
@@ -39,7 +39,7 @@ Por malgrandaj studioj kaj personaj trejnistoj.
 - **Kontakto** paĝo kun loka mapo kaj formularo
 - **Pura, moderna dezajno** kun taŭgece taŭga kolorskemo
 
-### Ŝablono 2: Gym Pro
+### Ŝablono 2: Gym Pro {#template-2-gym-pro}
 
 Por establitaj gimnastikejoj kun pli da servoj.
 
@@ -50,7 +50,7 @@ Por establitaj gimnastikejoj kun pli da servoj.
 - **Atestoj** sekcio sur la ĉefpaĝo
 - **Pli elstaraj markigo** opcioj
 
-### Ŝablono 3: Fitness Chain
+### Ŝablono 3: Fitness Chain {#template-3-fitness-chain}
 
 Por plurlokaj operacioj.
 
@@ -60,17 +60,17 @@ Por plurlokaj operacioj.
 - **Centralizita markigo** kun lokspecifaj detaloj
 - **Personara dosierujo** trans lokoj
 
-## Konstrui Ŝablonan Retejon
+## Konstrui Ŝablonan Retejon {#building-a-template-site}
 
 En Ultimate Multisite, ŝablono estas simple WordPress-retejo agordita laŭ la maniero, kiel vi volas ke novaj klientaj retejoj aspektu. Jen kiel krei unu:
 
-### Paŝo 1: Krei la Ŝablonan Retejon
+### Paŝo 1: Krei la Ŝablonan Retejon {#step-1-create-the-template-site}
 
 1. Iru al **Retejoj > Aldoni Novan** en via reta administrilo
 2. Kreu retejon nomitan `template-studio-essential`
 3. Ĉi tiu retejo fariĝas via laborkanvason
 
-### Paŝo 2: Instali kaj Agordi la Theme
+### Paŝo 2: Instali kaj Agordi la Theme {#step-2-install-and-configure-the-theme}
 
 Ŝanĝu al la Dashboard de la ŝablona retejo kaj:
 
@@ -82,7 +82,7 @@ En Ultimate Multisite, ŝablono estas simple WordPress-retejo agordita laŭ la m
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Paŝo 3: Krei la Paĝojn
+### Paŝo 3: Krei la Paĝojn {#step-3-create-the-pages}
 
 Konstruu ĉiun paĝon kun:
 
@@ -92,7 +92,7 @@ Konstruu ĉiun paĝon kun:
 
 Faru la anstataŭigan enhavon instrua kiam eblas. Anstataŭ ĝenerala pleniga teksto, skribu enhavon kiel: "Anstataŭigu ĉi tion per mallonga priskribo de via studio kaj kio igas ĝin speciala. Menciu vian trejnan filozofion, jarojn da sperto, aŭ kion klientoj povas atendi."
 
-### Paŝo 4: Agordi Plugins
+### Paŝo 4: Agordi Plugins {#step-4-configure-plugins}
 
 Instalu kaj aktivigu plugins kiujn taŭgecaj studioj bezonas:
 
@@ -100,7 +100,7 @@ Instalu kaj aktivigu plugins kiujn taŭgecaj studioj bezonas:
 - Kontaktformulara plugin
 - SEO plugin (antaŭagordita kun taŭgece rilataj defaŭltoj)
 
-### Paŝo 5: Marki kiel Ŝablonon
+### Paŝo 5: Marki kiel Ŝablonon {#step-5-mark-as-template}
 
 1. Iru al **Ultimate Multisite > Retejoj**
 2. Redaktu la ŝablonan retejon
@@ -108,7 +108,7 @@ Instalu kaj aktivigu plugins kiujn taŭgecaj studioj bezonas:
 
 Ripetu ĉi tiun procezon por ĉiu ŝablono, kiun vi volas proponi.
 
-## Kontrollisto pri Ŝablona Kvalito
+## Kontrollisto pri Ŝablona Kvalito {#template-quality-checklist}
 
 Antaŭ ol disponigi ŝablonon, kontrolu:
 
@@ -121,7 +121,7 @@ Antaŭ ol disponigi ŝablonon, kontrolu:
 - [ ] Neniuj rompitaj ligiloj aŭ mankantaj havaĵoj
 - [ ] Paĝŝarga rapideco estas akceptebla
 
-## La FitSite-Reto Ĝis Nun
+## La FitSite-Reto Ĝis Nun {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Kion Ni Konstruis en Ĉi Tiu Leciono
+## Kion Ni Konstruis en Ĉi Tiu Leciono {#what-we-built-this-lesson}
 
 - **Tri niĉspecifajn ŝablonojn** dezajnitajn por malsamaj grandecoj de taŭgecaj entreprenoj
 - **Taŭgece taŭgan enhavon kaj bildaron** kiuj igas la platformon sentiĝi speciale kreita

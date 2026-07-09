@@ -3,15 +3,15 @@ title: আতিথ্য মেনুকা
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# আতিথেয়তা মেনু
+# আতিথেয়তা মেনু {#hospitality-menus}
 
 **Hospitality Menus** বৈশিষ্ট্যটোৱে Theme Builder लाई আপোনাৰ WordPress সাইটত structured food and beverage menu pages জেনারেট আৰু embed কৰিবলৈ অনুমতি দিয়ে।
 
-## Overview
+## Overview {#overview}
 
 Theme Builder এতিয়া ৰেষ্টুৰেন্ট, কেফে, বাৰ আৰু কেটৰিং সেৱাৰ দৰে আতিথেয়তা ব্যৱসায়ৰ বাবে professional, structured menu pages সৃষ্টি কৰিব পাৰে। এই মেনুসমূহ আপোনাৰ সাইটৰ ডিজাইনৰ সৈতে সম্পূৰ্ণৰূপে সংহতিকৰণ কৰা হয় আৰু ইয়াক সহজে আপডেট কৰিব আৰু ব্যৱস্থাপনা কৰিব পাৰি।
 
-## Supported Hospitality Types
+## Supported Hospitality Types {#supported-hospitality-types}
 
 - **Restaurants** — সম্পূৰ্ণ সেৱাৰ ভোজনৰ মেনু
 - **Cafes** — কফি আৰু হালকা খাদ্যৰ মেনু
@@ -21,9 +21,9 @@ Theme Builder এতিয়া ৰেষ্টুৰেন্ট, কেফে
 - **Food Trucks** — mobile food service মেনু
 - **Breweries and Wineries** — বৰ্ণনা সহ পানীয় মেনু
 
-## Menu Structure
+## Menu Structure {#menu-structure}
 
-### Menu Categories
+### Menu Categories {#menu-categories}
 
 মেনুসমূহ categoria ত ভাগ কৰা হয়:
 
@@ -34,7 +34,7 @@ Theme Builder এতিয়া ৰেষ্টুৰেন্ট, কেফে
 - **Beverages** — পানীয় (অல்கোহলিক আৰু অ-অல்கোহলিক)
 - **Specials** — দৈনিক বা ঋতুভিত্তিক বিশেষ পদ
 
-### Menu Item Format
+### Menu Item Format {#menu-item-format}
 
 প্ৰতিটো মেনু আইটেমৰ সৈতে তলৰ তথ্যসমূহ থাকে:
 
@@ -49,7 +49,7 @@ Theme Builder এতিয়া ৰেষ্টুৰেন্ট, কেফে
 }
 ```
 
-#### Item Fields
+#### Item Fields {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Theme Builder এতিয়া ৰেষ্টুৰেন্ট, কেফে
 | `allergens` | array | সাধাৰণ সংবেদনশীল উপাদান (Nuts, Shellfish, ইত্যাদি) |
 | `availability` | string | ক'ত উপলব্ধ (Daily, Seasonal, ইত্যাদি) |
 
-## Creating Hospitality Menus
+## Creating Hospitality Menus {#creating-hospitality-menus}
 
-### Step 1: Provide Menu Information
+### Step 1: Provide Menu Information {#step-1-provide-menu-information}
 
 Theme Builder लाई আপোনাৰ মেনুৰ বিষয়ে কওক:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Step 2: Theme Builder Generates Menu
+### Step 2: Theme Builder Generates Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. মূল্য আৰু বৰ্ণনাৰ বিন্যাস কৰে
 5. খাদ্যৰ বৈশিষ্ট্য আৰু সংবেদনশীল উপাদানৰ তথ্য যোগ কৰে
 
-### Step 3: Review and Customize
+### Step 3: Review and Customize {#step-3-review-and-customize}
 
 আপুনি কৰিব পাৰে:
 
@@ -91,9 +91,9 @@ Theme Builder:
 4. বৰ্ণনা আৰু খাদ্যৰ তথ্য আপডেট কৰিব পাৰে
 5. styling আৰু layout adjust কৰিব পাৰে
 
-## Menu Display Options
+## Menu Display Options {#menu-display-options}
 
-### Full Menu Page
+### Full Menu Page {#full-menu-page}
 
 আপোনাৰ সম্পূৰ্ণ মেনু প্ৰদৰ্শন কৰা এটা নিবেদিত পৃষ্ঠা:
 
@@ -102,7 +102,7 @@ Theme Builder:
 - প্ৰিন্ট-প্ৰীতি উপযোগী layout
 - mobile-responsive design
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 অন্যান্য পৃষ্ঠাৰ ওপৰত মেনু অংশসমূহ embed কৰক:
 
@@ -111,7 +111,7 @@ Theme Builder:
 - bar page ত beverage menu
 - footer ত dessert showcase
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 ডাউনলোড কৰিব পৰা এটা PDF মেনু জেনারেট কৰক:
 
@@ -120,9 +120,9 @@ Theme Builder:
 - ছবি আৰু বৰ্ণনা অন্তৰ্ভুক্ত
 - সহজে share আৰু email কৰিব পৰা
 
-## Dietary and Allergen Information
+## Dietary and Allergen Information {#dietary-and-allergen-information}
 
-### Dietary Attributes
+### Dietary Attributes {#dietary-attributes}
 
 খাদ্যৰ তথ্যৰে আইটেমসমূহ চিহ্নিত কৰক:
 
@@ -134,7 +134,7 @@ Theme Builder:
 - **Low-Carb** — কম Carbohydrates
 - **High-Protein** — প্ৰোটিন-সমৃদ্ধ
 
-### Allergen Warnings
+### Allergen Warnings {#allergen-warnings}
 
 সাধাৰণ সংবেদনশীল উপাদানসমূহ অন্তৰ্ভুক্ত কৰক:
 
@@ -147,9 +147,9 @@ Theme Builder:
 - **Gluten** — গাহৰি আৰু গ্লুটেন-সහথী শস্য
 - **Sesame** — তিলৰ বীজ আৰু তেল
 
-## Menu Management
+## Menu Management {#menu-management}
 
-### Updating Prices
+### Updating Prices {#updating-prices}
 
 সহজভাৱে মেনুৰ মূল্য আপডেট কৰক:
 
@@ -159,7 +159,7 @@ Theme Builder:
 4. পৰিৱৰ্তন সেভ কৰক
 5. পৰিৱৰ্তন তৎক্ষণাত আপোনাৰ সাইটত দেখিবলৈ পোৱা যাব
 
-### Adding Seasonal Items
+### Adding Seasonal Items {#adding-seasonal-items}
 
 ঋতুভিত্তিক মেনুৰ ভিন্নতা সৃষ্টি কৰক:
 
@@ -169,7 +169,7 @@ Theme Builder:
 4. উপলব্ধতাৰ তাৰিখ নিৰ্ধাৰণ কৰক
 5. ঋতুৰ সময়ত স্বয়ংক্রিয়ভাৱে প্ৰদৰ্শন কৰা হ'ব
 
-### Managing Specials
+### Managing Specials {#managing-specials}
 
 দৈনিক বা সাপ্তাহিক বিশেষ পদ প্ৰদৰ্শন কৰক:
 
@@ -179,7 +179,7 @@ Theme Builder:
 4. দৈনিক বা সাপ্তাহিক আপডেট কৰক
 5. পুৰণি specials archive কৰক
 
-## Integration with Theme Builder
+## Integration with Theme Builder {#integration-with-theme-builder}
 
 Hospitality সাইটৰ বাবে Theme Builder ব্যৱহাৰ কৰোঁতে:
 
@@ -189,9 +189,9 @@ Hospitality সাইটৰ বাবে Theme Builder ব্যৱহাৰ ক
 4. **Mobile optimization** — ফোনত মেনুসমূহ ধুনীয়াকৈ প্ৰদৰ্শন কৰে
 5. **SEO optimization** — মেনুসমূহ search-engine friendly হয়
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Menu Design
+### Menu Design {#menu-design}
 
 - **Clear organization** — যুক্তিযুক্ত categoria গঠন
 - **Readable descriptions** — ভোজনৰ বাবে লোভনীয় আৰু তথ্যসমৃদ্ধ
@@ -199,7 +199,7 @@ Hospitality সাইটৰ বাবে Theme Builder ব্যৱহাৰ ক
 - **Professional photos** — উচ্চ-মানৰ খাদ্য ছবি
 - **Whitespace** — পৃষ্ঠাখন বেছি ভিৰ নকৰিব
 
-### Content
+### Content {#content}
 
 - **Accurate descriptions** — আইটেমসমূহ সঠিকভাৱে বৰ্ণনা কৰক
 - **Highlight specials** — বিশেষ পদসমূহক গুৰুত্বপূৰ্ণ বনাওক
@@ -207,7 +207,7 @@ Hospitality সাইটৰ বাবে Theme Builder ব্যৱহাৰ ক
 - **Update regularly** — মূল্য আৰু আইটেমসমূহ সতেজ ৰাখক
 - **Use appetizing language** — আইটেমসমূহক সুস্বাদু বুলি বৰ্ণনা কৰক
 
-### Accessibility
+### Accessibility {#accessibility}
 
 - **Readable fonts** — স্পষ্ট, পঠনযোগ্য typefaces ব্যৱহাৰ কৰক
 - **Sufficient contrast** — নিশ্চিত কৰক যে পাঠ্য পঢ়িবলৈ সুবিধা হয়
@@ -215,9 +215,9 @@ Hospitality সাইটৰ বাবে Theme Builder ব্যৱহাৰ ক
 - **Allergen warnings** — সংবেদনশীল উপাদানসমূহ প্ৰকটভাৱে প্ৰদৰ্শন কৰক
 - **Mobile-friendly** — সকলো ডিভাইচত পৰীক্ষা কৰক
 
-## Examples
+## Examples {#examples}
 
-### Restaurant Menu Structure
+### Restaurant Menu Structure {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Cafe Menu Structure
+### Cafe Menu Structure {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Related Features
+## Related Features {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — navigation menus সৃষ্টি কৰক
 - [Design Direction](./design-direction.md) — আপোনাৰ সাইটৰ ডিজাইন কাস্টমাইজ কৰক

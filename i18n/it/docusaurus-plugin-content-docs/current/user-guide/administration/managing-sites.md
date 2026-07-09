@@ -3,7 +3,7 @@ title: Gestione dei siti
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Gestione dei siti
+# Gestione dei siti {#managing-sites}
 
 I siti (o sottositi) sono il cuore del tuo business WaaS. Ultimate Multisite ha 3 tipi di siti:
 
@@ -11,13 +11,13 @@ I siti (o sottositi) sono il cuore del tuo business WaaS. Ultimate Multisite ha 
 - **Modelli di sito** — Siti predefiniti che i clienti possono selezionare come punto di partenza
 - **Sito principale** — Il tuo sito principale di rete
 
-## Visualizzazione dei siti
+## Visualizzazione dei siti {#viewing-sites}
 
 Naviga su **Ultimate Multisite → Sites** per vedere tutti i sottositi nella tua rete. Ogni sito è etichettato per tipo e puoi filtrare per Tutti i siti, Di proprietà del cliente, Modelli, o In attesa.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Aggiunta di un nuovo sito
+## Aggiunta di un nuovo sito {#adding-a-new-site}
 
 Fai clic sul pulsante **Aggiungi sito** per creare un nuovo sito. Dovrai fornire:
 
@@ -27,15 +27,15 @@ Fai clic sul pulsante **Aggiungi sito** per creare un nuovo sito. Dovrai fornire
 
 L'opzione **Copia sito** ti consente di creare un nuovo sito basato su un modello di sito esistente. Quando è abilitata, puoi selezionare quale modello utilizzare come punto di partenza. Assicurati che **Copia media sulla duplicazione** sia abilitata per includere i file multimediali.
 
-## Gestione di un sito esistente
+## Gestione di un sito esistente {#managing-an-existing-site}
 
 Fai clic su **Gestisci** su qualsiasi sito per aprire la pagina **Modifica sito**. Qui troverai:
 
-### Informazioni di base
+### Informazioni di base {#basic-information}
 
 Il nome del sito, il tipo, l'ID del sito e la descrizione. Vedrai anche il dominio mappato, l'abbonamento associato e l'account cliente che possiede il sito.
 
-### Opzioni del sito
+### Opzioni del sito {#site-options}
 
 Configura le capacità e i limiti del sito:
 
@@ -47,7 +47,7 @@ Configura le capacità e i limiti del sito:
 
 Per impostazione predefinita, i siti seguono i limiti impostati a livello di abbonamento. Impostare limiti a livello di sito sovrascriverà le impostazioni dell'abbonamento.
 
-### Associazioni
+### Associazioni {#associations}
 
 Sotto le opzioni del sito troverai informazioni su:
 
@@ -55,7 +55,7 @@ Sotto le opzioni del sito troverai informazioni su:
 - **Abbonamento** a cui il sito è associato
 - **Account cliente** collegato al sito
 
-### Barra laterale destra
+### Barra laterale destra {#right-sidebar}
 
 Sul lato destro puoi:
 

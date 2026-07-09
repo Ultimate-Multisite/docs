@@ -4,11 +4,11 @@ title: Filtru - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filtru: wu_membership_renewal_expiration_date
+# Filtru: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Jiffiltra d-data ta' skadenza kkalkulata li g침andha ti치i stabbilita wara t-ti치did.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Jiffiltra d-data ta' skadenza kkalkulata li g침andha ti치i stabbilita wara t-ti�
 | $membership_id | `int` | L-ID tas-s침ubija. |
 | $membership | `\Membership` | O치치ett tas-s침ubija. |
 
-### Minn
+### Minn {#since}
 
 - 2.0.0
-### Sors
+### Sors {#source}
 
 Definit fi [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) fil-linja 2192

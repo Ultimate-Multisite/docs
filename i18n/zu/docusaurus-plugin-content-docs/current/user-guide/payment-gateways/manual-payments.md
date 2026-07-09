@@ -3,13 +3,13 @@ title: Ukusetha Izinkokhelo Mathupha
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ukusetha Izinkokhelo Ezenziwa Ngesandla (v2)
+# Ukusetha Izinkokhelo Ezenziwa Ngesandla (v2) {#setting-up-manual-payments-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite inguqulo 2.x.**_
 
 Izinkokhelo ezenziwa ngesandla ziyindlela yokukunikeza ezinye izindlela zokukhokha uma **Stripe** noma **PayPal** ingatholakali kubasebenzisi bakho. Kungaba ukudlulisa imali ngocingo noma ebhange, noma enye indlela yokukhokha etholakala kubasebenzisi bakho endaweni yabo.
 
-## Indlela yokunika amandla Izinkokhelo Ezenziwa Ngesandla
+## Indlela yokunika amandla Izinkokhelo Ezenziwa Ngesandla {#how-to-enable-manual-payments}
 
 Ukusetha inkokhelo eyenziwa ngesandla kulula kakhulu. Udinga nje ukuyinika amandla ngaphansi kwamasango okukhokha bese ufaka imiyalelo enemininingwane yokuthi umsebenzisi kufanele ayithumele kanjani inkokhelo.
 
@@ -31,7 +31,7 @@ Futhi bazothola nomlayezo ekhasini lakho le-**Thank You** elinemiyalelo yakho yo
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Ukuqinisekisa izinkokhelo ezenziwa ngesandla
+## Ukuqinisekisa izinkokhelo ezenziwa ngesandla {#confirming-manual-payments}
 
 Ukuze uqinisekise inkokhelo eyenziwa ngesandla, iya kumenyu ye-**Payments** kubha engakwesokunxele. Lapho ungabona zonke izinkokhelo kunethiwekhi yakho nemininingwane yazo, kuhlanganise ne-**status** yazo. Inkokhelo eyenziwa ngesandla izohlala ine-**Pending** status kuze kube yilapho uyishintsha ngesandla.
 

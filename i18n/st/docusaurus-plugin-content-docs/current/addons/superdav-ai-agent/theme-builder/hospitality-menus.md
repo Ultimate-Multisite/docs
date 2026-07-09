@@ -3,15 +3,15 @@ title: Dimenu tsa Kamohelo
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Dimenu tsa Hospitality
+# Dimenu tsa Hospitality {#hospitality-menus}
 
 Sebopeho sa **Hospitality Menus** se dumella Theme Builder ho hlahisa le ho kenya maqephe a dimenu tsa dijo le dino tse hlophisitsweng ka kotloloho kahara sebaka sa hao sa WordPress.
 
-## Kakaretso
+## Kakaretso {#overview}
 
 Theme Builder jwale e ka bopa maqephe a dimenu a profeshenale, a hlophisitsweng bakeng sa dikgwebo tsa kamohelo tse kenyeletsang direschorente, dikhefi, dibara, le ditshebeletso tsa catering. Dimenu tsena di kopantswe ka botlalo le moralo wa sebaka sa hao mme di ka ntlafatswa le ho laolwa ha bonolo.
 
-## Mefuta ya Hospitality e Tshehetswang
+## Mefuta ya Hospitality e Tshehetswang {#supported-hospitality-types}
 
 - **Direschorente** — dimenu tsa dijo tsa tshebeletso e felletseng
 - **Dikhefi** — dimenu tsa kofi le dijo tse bobebe
@@ -21,9 +21,9 @@ Theme Builder jwale e ka bopa maqephe a dimenu a profeshenale, a hlophisitsweng 
 - **Food Trucks** — dimenu tsa tshebeletso ya dijo e tsamayang
 - **Breweries le Wineries** — dimenu tsa dino tse nang le ditlhaloso
 
-## Sebopeho sa Menu
+## Sebopeho sa Menu {#menu-structure}
 
-### Dihlopha tsa Menu
+### Dihlopha tsa Menu {#menu-categories}
 
 Dimenu di hlophiswa ka dihlopha:
 
@@ -34,7 +34,7 @@ Dimenu di hlophiswa ka dihlopha:
 - **Dino** — dino (tse nang le tai le tse se nang tai)
 - **Tse Ikgethileng** — tse ikgethileng tsa letsatsi le letsatsi kapa tsa sehla
 
-### Sebopeho sa Ntho ya Menu
+### Sebopeho sa Ntho ya Menu {#menu-item-format}
 
 Ntho ka nngwe ya menu e kenyeletsa:
 
@@ -49,7 +49,7 @@ Ntho ka nngwe ya menu e kenyeletsa:
 }
 ```
 
-#### Dikgoro tsa Ntho
+#### Dikgoro tsa Ntho {#item-fields}
 
 | Kgoro | Mofuta | Tlhaloso |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Ntho ka nngwe ya menu e kenyeletsa:
 | `allergens` | array | Dintho tse tlwaelehileng tse bakang allergy (Manate, Shellfish, jj.) |
 | `availability` | string | Ha e fumaneha (Letsatsi le letsatsi, Ka sehla, jj.) |
 
-## Ho Bopa Dimenu tsa Hospitality
+## Ho Bopa Dimenu tsa Hospitality {#creating-hospitality-menus}
 
-### Mohato wa 1: Fana ka Tlhahisoleseding ya Menu
+### Mohato wa 1: Fana ka Tlhahisoleseding ya Menu {#step-1-provide-menu-information}
 
 Bolella Theme Builder ka menu ya hao:
 
@@ -71,7 +71,7 @@ Bopa menu ya reschorente bakeng sa reschorente ya ka ya Italy e nang le dijo tse
 dijana tsa pasta, dikhoso tse kgolo, le dijo tse monate. Kenyeletsa ditheko le ditlhaloso.
 ```
 
-### Mohato wa 2: Theme Builder e Hlahisa Menu
+### Mohato wa 2: Theme Builder e Hlahisa Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. E fomata ditheko le ditlhaloso
 5. E eketsa tlhahisoleseding ya dijo le ya dintho tse bakang allergy
 
-### Mohato wa 3: Lekola mme o Iketsetse
+### Mohato wa 3: Lekola mme o Iketsetse {#step-3-review-and-customize}
 
 O ka:
 
@@ -91,9 +91,9 @@ O ka:
 4. Ntlafatsa ditlhaloso le tlhahisoleseding ya dijo
 5. Fetola setaele le peakanyo
 
-## Dikgetho tsa Pontsho ya Menu
+## Dikgetho tsa Pontsho ya Menu {#menu-display-options}
 
-### Leqephe le Feletseng la Menu
+### Leqephe le Feletseng la Menu {#full-menu-page}
 
 Leqephe le inehetseng le bontshang menu ya hao e felletseng:
 
@@ -102,7 +102,7 @@ Leqephe le inehetseng le bontshang menu ya hao e felletseng:
 - Peakanyo e loketseng ho hatiswa
 - Moralo o arabelang disebedisweng tsa mobile
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Kenya dikarolo tsa menu maqepheng a mang:
 
@@ -111,7 +111,7 @@ Kenya dikarolo tsa menu maqepheng a mang:
 - Menu ya dino leqepheng la bara
 - Pontsho ya dijo tse monate footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Hlahisa menu ya PDF e ka jarollwang:
 
@@ -120,9 +120,9 @@ Hlahisa menu ya PDF e ka jarollwang:
 - E kenyeletsa ditshwantsho le ditlhaloso
 - Ho bonolo ho e arolelana le ho e romela ka email
 
-## Tlhahisoleseding ya Dijo le Dintho tse Bakang Allergy
+## Tlhahisoleseding ya Dijo le Dintho tse Bakang Allergy {#dietary-and-allergen-information}
 
-### Dintlha tsa Dijo
+### Dintlha tsa Dijo {#dietary-attributes}
 
 Tshwaya dintho ka tlhahisoleseding ya dijo:
 
@@ -134,7 +134,7 @@ Tshwaya dintho ka tlhahisoleseding ya dijo:
 - **Low-Carb** — dikarbohaedreite tse fokoditsweng
 - **High-Protein** — e nang le proteine e ngata
 
-### Ditemoso tsa Allergen
+### Ditemoso tsa Allergen {#allergen-warnings}
 
 Kenyeletsa dintho tse tlwaelehileng tse bakang allergy:
 
@@ -147,9 +147,9 @@ Kenyeletsa dintho tse tlwaelehileng tse bakang allergy:
 - **Gluten** — koro le dithollo tse nang le gluten
 - **Sesame** — peo ya sesame le oli
 
-## Taolo ya Menu
+## Taolo ya Menu {#menu-management}
 
-### Ho Ntlafatsa Ditheko
+### Ho Ntlafatsa Ditheko {#updating-prices}
 
 Ntlafatsa ditheko tsa menu ha bonolo:
 
@@ -159,7 +159,7 @@ Ntlafatsa ditheko tsa menu ha bonolo:
 4. Boloka diphetoho
 5. Diphetoho di hlaha hanghang sebakeng sa hao
 
-### Ho Eketsa Dintho tsa Sehla
+### Ho Eketsa Dintho tsa Sehla {#adding-seasonal-items}
 
 Bopa diphetolelo tsa menu tsa sehla:
 
@@ -169,7 +169,7 @@ Bopa diphetolelo tsa menu tsa sehla:
 4. Rala matsatsi a phumaneho
 5. Di bontshwa ka boiketsetso nakong ya sehla
 
-### Ho Laola Tse Ikgethileng
+### Ho Laola Tse Ikgethileng {#managing-specials}
 
 Bontsha tse ikgethileng tsa letsatsi le letsatsi kapa tsa beke le beke:
 
@@ -179,7 +179,7 @@ Bontsha tse ikgethileng tsa letsatsi le letsatsi kapa tsa beke le beke:
 4. Ntlafatsa letsatsi le letsatsi kapa beke le beke
 5. Boloka tse ikgethileng tsa kgale polokelong
 
-## Kopanyo le Theme Builder
+## Kopanyo le Theme Builder {#integration-with-theme-builder}
 
 Ha o sebedisa Theme Builder bakeng sa dibaka tsa hospitality:
 
@@ -189,9 +189,9 @@ Ha o sebedisa Theme Builder bakeng sa dibaka tsa hospitality:
 4. **Ntlafatso ya mobile** — dimenu di bontsha hantle haholo difonong
 5. **Ntlafatso ya SEO** — dimenu di loketse dienjine tsa patlo
 
-## Mekgwa e Molemo ka ho Fetisisa
+## Mekgwa e Molemo ka ho Fetisisa {#best-practices}
 
-### Moralo wa Menu
+### Moralo wa Menu {#menu-design}
 
 - **Tlhophiso e hlakileng** — sebopeho sa dihlopha se utlwahalang
 - **Ditlhaloso tse balehang** — tse hohelang takatso ya dijo le tse fanang ka lesedi
@@ -199,7 +199,7 @@ Ha o sebedisa Theme Builder bakeng sa dibaka tsa hospitality:
 - **Ditshwantsho tsa profeshenale** — ditshwantsho tsa dijo tsa boleng bo hodimo
 - **Sebaka se se nang mongolo** — o se ke wa petetsanya leqephe
 
-### Dikahare
+### Dikahare {#content}
 
 - **Ditlhaloso tse nepahetseng** — hlalosa dintho ka nepo
 - **Totobatsa tse ikgethileng** — etsa hore tse ikgethileng di hlahelle
@@ -207,7 +207,7 @@ Ha o sebedisa Theme Builder bakeng sa dibaka tsa hospitality:
 - **Ntlafatsa kgafetsa** — boloka ditheko le dintho di le nakong
 - **Sebedisa puo e tsosang takatso ya dijo** — etsa hore dintho di utlwahale di le monate
 
-### Phihlelleho
+### Phihlelleho {#accessibility}
 
 - **Mefuta ya mongolo e balehang** — sebedisa mefuta ya mongolo e hlakileng, e balehang
 - **Phapang e lekaneng** — netefatsa hore mongolo wa baleha
@@ -215,9 +215,9 @@ Ha o sebedisa Theme Builder bakeng sa dibaka tsa hospitality:
 - **Ditemoso tsa allergen** — bontsha allergens ka ho hlahella
 - **E loketse mobile** — leka disebedisweng tsohle
 
-## Mehlala
+## Mehlala {#examples}
 
-### Sebopeho sa Menu ya Reschorente
+### Sebopeho sa Menu ya Reschorente {#restaurant-menu-structure}
 
 ```
 Dijana tsa ho qala
@@ -241,7 +241,7 @@ Dijo tse tswekere
 └── Kgetho ya Gelato
 ```
 
-### Sebopeho sa Menu ya Khefi
+### Sebopeho sa Menu ya Khefi {#cafe-menu-structure}
 
 ```
 Kofi
@@ -260,7 +260,7 @@ Disementjhisi
 └── Vegetarian Wrap
 ```
 
-## Dikarolo tse Amanang
+## Dikarolo tse Amanang {#related-features}
 
 - [Bopa Menu](../abilities/create-menu.md) — bopa dimenu tsa ho tsamaya
 - [Tataiso ya Moralo](./design-direction.md) — iketsetse moralo wa sebaka sa hao sa webo

@@ -3,11 +3,11 @@ title: Ҳуҷҷатгузории таҳиягарон
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Ҳуҷҷатгузории таҳиягарон
+# Ҳуҷҷатгузории таҳиягарон {#developer-documentation}
 
 Ин роҳнамо ба таҳиягарон ҳама чизеро медиҳад, ки барои ҳамгироӣ бо Ultimate Multisite, васеъ кардани он ё таҳияи иловаҳо барои он лозим аст. Ultimate Multisite шабакаи WordPress Multisite-ро ба платформаи Вебсайт-ҳамчун-хидмат (WaaS) табдил медиҳад.
 
-## Чӣ дастрас аст
+## Чӣ дастрас аст {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Амалиётҳои пурраи CRUD барои ҳамаи мавҷудиятҳо (муштариён, сайтҳо, узвиятҳо, пардохтҳо, маҳсулот, доменҳо) бо аутентификатсияи калиди API
 - **[Маълумотномаи Hooks](./hooks/guide)** — Зиёда аз 200 action hook ва зиёда аз 280 filter hook барои рӯйдодҳои давраи ҳаёт ва фармоишгарсозӣ
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Намунаҳои код](./code-examples/)** — Намунаҳои пешрафта барои нархгузории динамикӣ, омодасозии сайт, маҳдудиятҳои фармоишӣ ва коркарди чанддарвозагӣ
 - **[Таҳияи илова](./addon-development/getting-started)** — Чаҳорчӯби сохторёфта барои сохтани плагинҳои иловагӣ
 
-## Талабот
+## Талабот {#requirements}
 
 - Насби WordPress Multisite
 - PHP 7.4 ё болотар
 - Плагини Ultimate Multisite фаъол карда шудааст
 
-## Насби Composer / Bedrock
+## Насби Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite дар [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) ҳамчун `ultimate-multisite/ultimate-multisite` дастрас аст. Ин усули тавсияшудаи насб барои танзимоти WordPress дар асоси [Bedrock](https://roots.io/bedrock/) ва муҳитҳои дигаре мебошад, ки бо Composer идора мешаванд.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Оғози зуд
+## Оғози зуд {#quick-start}
 
-### REST API-ро истифода баред
+### REST API-ро истифода баред {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Ба рӯйдодҳо пайваст шавед
+### Ба рӯйдодҳо пайваст шавед {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Илова созед
+### Илова созед {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

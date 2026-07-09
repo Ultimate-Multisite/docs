@@ -3,15 +3,15 @@ title: Mga Menu ng Hospitality
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality Menus
+# Hospitality Menus {#hospitality-menus}
 
 Ang feature na **Hospitality Menus** ay nagpapahintulot sa Theme Builder na bumuo at mag-embed ng nakaayos na mga pahina ng menu ng pagkain at inumin nang direkta sa iyong WordPress site.
 
-## Pangkalahatang-ideya
+## Pangkalahatang-ideya {#overview}
 
 Maaari na ngayong gumawa ang Theme Builder ng propesyonal at nakaayos na mga pahina ng menu para sa mga negosyo sa hospitality kabilang ang mga restaurant, cafe, bar, at catering services. Ang mga menu na ito ay ganap na integrated sa disenyo ng iyong site at madaling ma-update at mapamahalaan.
 
-## Mga Sinusuportahang Uri ng Hospitality
+## Mga Sinusuportahang Uri ng Hospitality {#supported-hospitality-types}
 
 - **Mga Restaurant** — mga menu para sa full-service na kainan
 - **Mga Cafe** — mga menu para sa kape at magagaan na pagkain
@@ -21,9 +21,9 @@ Maaari na ngayong gumawa ang Theme Builder ng propesyonal at nakaayos na mga pah
 - **Mga Food Truck** — mga menu para sa mobile food service
 - **Mga Brewery at Winery** — mga menu ng inumin na may mga paglalarawan
 
-## Istruktura ng Menu
+## Istruktura ng Menu {#menu-structure}
 
-### Mga Kategorya ng Menu
+### Mga Kategorya ng Menu {#menu-categories}
 
 Ang mga menu ay nakaayos sa mga kategorya:
 
@@ -34,7 +34,7 @@ Ang mga menu ay nakaayos sa mga kategorya:
 - **Mga Inumin** — mga inumin (may alak at walang alak)
 - **Mga Special** — pang-araw-araw o pana-panahong special
 
-### Format ng Item sa Menu
+### Format ng Item sa Menu {#menu-item-format}
 
 Kasama sa bawat item sa menu ang:
 
@@ -49,7 +49,7 @@ Kasama sa bawat item sa menu ang:
 }
 ```
 
-#### Mga Field ng Item
+#### Mga Field ng Item {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Kasama sa bawat item sa menu ang:
 | `allergens` | array | Mga karaniwang allergen (Nuts, Shellfish, atbp.) |
 | `availability` | string | Kung kailan available (Araw-araw, Pana-panahon, atbp.) |
 
-## Paggawa ng Hospitality Menus
+## Paggawa ng Hospitality Menus {#creating-hospitality-menus}
 
-### Hakbang 1: Magbigay ng Impormasyon ng Menu
+### Hakbang 1: Magbigay ng Impormasyon ng Menu {#step-1-provide-menu-information}
 
 Sabihin sa Theme Builder ang tungkol sa iyong menu:
 
@@ -71,7 +71,7 @@ Gumawa ng restaurant menu para sa aking Italian restaurant na may mga appetizer,
 mga pasta dish, pangunahing putahe, at dessert. Isama ang mga presyo at paglalarawan.
 ```
 
-### Hakbang 2: Binubuo ng Theme Builder ang Menu
+### Hakbang 2: Binubuo ng Theme Builder ang Menu {#step-2-theme-builder-generates-menu}
 
 Ang Theme Builder ay:
 
@@ -81,7 +81,7 @@ Ang Theme Builder ay:
 4. Ifo-format ang mga presyo at paglalarawan
 5. Nagdaragdag ng impormasyong pandiyeta at allergen
 
-### Hakbang 3: Suriin at I-customize
+### Hakbang 3: Suriin at I-customize {#step-3-review-and-customize}
 
 Maaari mong:
 
@@ -91,9 +91,9 @@ Maaari mong:
 4. I-update ang mga paglalarawan at impormasyong pandiyeta
 5. Ayusin ang styling at layout
 
-## Mga Opsyon sa Pagpapakita ng Menu
+## Mga Opsyon sa Pagpapakita ng Menu {#menu-display-options}
 
-### Buong Pahina ng Menu
+### Buong Pahina ng Menu {#full-menu-page}
 
 Isang nakalaang pahina na nagpapakita ng iyong kumpletong menu:
 
@@ -102,7 +102,7 @@ Isang nakalaang pahina na nagpapakita ng iyong kumpletong menu:
 - Layout na angkop sa pag-print
 - Disenyong mobile-responsive
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Mag-embed ng mga seksyon ng menu sa ibang mga pahina:
 
@@ -111,7 +111,7 @@ Mag-embed ng mga seksyon ng menu sa ibang mga pahina:
 - Menu ng inumin sa pahina ng bar
 - Showcase ng dessert sa footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Bumuo ng nada-download na PDF menu:
 
@@ -120,9 +120,9 @@ Bumuo ng nada-download na PDF menu:
 - May kasamang mga larawan at paglalarawan
 - Madaling ibahagi at i-email
 
-## Impormasyong Pandiyeta at Allergen
+## Impormasyong Pandiyeta at Allergen {#dietary-and-allergen-information}
 
-### Mga Katangiang Pandiyeta
+### Mga Katangiang Pandiyeta {#dietary-attributes}
 
 Markahan ang mga item ng impormasyong pandiyeta:
 
@@ -134,7 +134,7 @@ Markahan ang mga item ng impormasyong pandiyeta:
 - **Low-Carb** — binawasang carbohydrates
 - **High-Protein** — mayaman sa protina
 
-### Mga Babala sa Allergen
+### Mga Babala sa Allergen {#allergen-warnings}
 
 Isama ang mga karaniwang allergen:
 
@@ -147,9 +147,9 @@ Isama ang mga karaniwang allergen:
 - **Gluten** — trigo at mga butil na may gluten
 - **Sesame** — sesame seeds at langis
 
-## Pamamahala ng Menu
+## Pamamahala ng Menu {#menu-management}
 
-### Pag-update ng Mga Presyo
+### Pag-update ng Mga Presyo {#updating-prices}
 
 Madaling i-update ang mga presyo sa menu:
 
@@ -159,7 +159,7 @@ Madaling i-update ang mga presyo sa menu:
 4. I-save ang mga pagbabago
 5. Agad na lalabas ang mga pagbabago sa iyong site
 
-### Pagdaragdag ng Mga Pana-panahong Item
+### Pagdaragdag ng Mga Pana-panahong Item {#adding-seasonal-items}
 
 Gumawa ng mga pana-panahong variation ng menu:
 
@@ -169,7 +169,7 @@ Gumawa ng mga pana-panahong variation ng menu:
 4. I-schedule ang mga petsa ng availability
 5. Awtomatikong ipakita sa panahon ng season
 
-### Pamamahala ng Mga Special
+### Pamamahala ng Mga Special {#managing-specials}
 
 Magpakita ng pang-araw-araw o lingguhang special:
 
@@ -179,7 +179,7 @@ Magpakita ng pang-araw-araw o lingguhang special:
 4. I-update araw-araw o lingguhan
 5. I-archive ang mga lumang special
 
-## Integrasyon sa Theme Builder
+## Integrasyon sa Theme Builder {#integration-with-theme-builder}
 
 Kapag ginagamit ang Theme Builder para sa mga hospitality site:
 
@@ -189,9 +189,9 @@ Kapag ginagamit ang Theme Builder para sa mga hospitality site:
 4. **Mobile optimization** — maganda ang pagpapakita ng mga menu sa mga telepono
 5. **SEO optimization** — search-engine friendly ang mga menu
 
-## Pinakamahuhusay na Kasanayan
+## Pinakamahuhusay na Kasanayan {#best-practices}
 
-### Disenyo ng Menu
+### Disenyo ng Menu {#menu-design}
 
 - **Malinaw na pagkakaayos** — lohikal na istruktura ng kategorya
 - **Nababasang mga paglalarawan** — katakam-takam at nagbibigay-impormasyon
@@ -199,7 +199,7 @@ Kapag ginagamit ang Theme Builder para sa mga hospitality site:
 - **Propesyonal na mga larawan** — mataas na kalidad na mga larawan ng pagkain
 - **Whitespace** — huwag siksikan ang pahina
 
-### Nilalaman
+### Nilalaman {#content}
 
 - **Tumpak na mga paglalarawan** — ilarawan nang tumpak ang mga item
 - **I-highlight ang mga special** — gawing kapansin-pansin ang mga special
@@ -207,7 +207,7 @@ Kapag ginagamit ang Theme Builder para sa mga hospitality site:
 - **Regular na mag-update** — panatilihing napapanahon ang mga presyo at item
 - **Gumamit ng katakam-takam na wika** — gawing masarap pakinggan ang mga item
 
-### Accessibility
+### Accessibility {#accessibility}
 
 - **Nababasang mga font** — gumamit ng malinaw at madaling basahing typeface
 - **Sapat na contrast** — tiyaking nababasa ang teksto
@@ -215,9 +215,9 @@ Kapag ginagamit ang Theme Builder para sa mga hospitality site:
 - **Mga babala sa allergen** — kitang-kitang ipakita ang mga allergen
 - **Mobile-friendly** — subukan sa lahat ng device
 
-## Mga Halimbawa
+## Mga Halimbawa {#examples}
 
-### Istruktura ng Restaurant Menu
+### Istruktura ng Restaurant Menu {#restaurant-menu-structure}
 
 ```
 Mga Pampagana
@@ -241,7 +241,7 @@ Mga Panghimagas
 └── Gelato Selection
 ```
 
-### Estruktura ng Menu ng Cafe
+### Estruktura ng Menu ng Cafe {#cafe-menu-structure}
 
 ```
 Kape
@@ -260,7 +260,7 @@ Mga Sandwich
 └── Vegetarian Wrap
 ```
 
-## Mga Kaugnay na Feature
+## Mga Kaugnay na Feature {#related-features}
 
 - [Gumawa ng Menu](../abilities/create-menu.md) — gumawa ng mga menu ng nabigasyon
 - [Direksyon ng Disenyo](./design-direction.md) — i-customize ang disenyo ng iyong website

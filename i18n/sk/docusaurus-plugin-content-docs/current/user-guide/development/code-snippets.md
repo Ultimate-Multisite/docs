@@ -3,7 +3,7 @@ title: Kódové fragmenty
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kód fragmenty pre v2
+# Kód fragmenty pre v2 {#code-snippets-for-v2}
 
 V podstate sa kód fragmenty pre **WordPress** používa na vykonávanie určitých akcí, ktoré by inak mohli vyžadovať samostatný menší plugin. Takýkoli kód fragmenty sa umiestňuje do jedného z základných súborov WordPressu alebo témy (obvykle do súboru functions.php vašej témy) alebo sa môže použiť ako MU plugin.
 
@@ -15,7 +15,7 @@ V tomto článku vám ukážeme tri kód fragmenty, ktoré môžete použiť s *
 
   * [**Vyriešenie problémov s CORS pri Font-Icons v mapovaných doménach**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Zmena polohy položky menu Účet
+## Zmena polohy položky menu Účet {#changing-the-position-of-the-account-menu-item}
 
 Aby ste zmenili polohu položky menu Účet na dashboarde vášho klienta, stačte pridať tento kód fragment do súboru functions.php aktívnej témy vašej hlavnej stránky. Môžete tiež vložiť kód fragment v jeden z vašich mu-pluginov alebo prispôsobený plugin.
 
@@ -43,20 +43,20 @@ Dôležité je si, že používatelia môžu byť predplatneni len na **Plan**, 
 
 ![Zoznam produktov s ID plánov](/img/admin/products-list.png)
 
-## Riešenie problémov s CORS pri fontoch Font-Icons v mapovaných doménach
-## Riešenie problémov s CORS pri fontoch Font-Icons v mapovaných doménach
+## Riešenie problémov s CORS pri fontoch Font-Icons v mapovaných doménach {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Riešenie problémov s CORS pri fontoch Font-Icons v mapovaných doménach {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Po mapovaní domény na poddoménu môžete zistiť, že stránka má problémy s načítavaním vlastných fontov. Toto je spôsobené blokovaním preprezeného pôvodu (cross-origin block) v nastaveniach vášho servera.
 
 Keďže sú súbory fontov tém neredeyse vždy načítaní priamo z CSS, náš plugin mapovania domén nevie URL adresy prepísať na použitie mapovanej domény namiesto pôvodnej, takže aby ste tento problém vyriešili, budete musieť upraviť svoje nastavenia serverových súborov.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Do do v svojom .htaccess sú pridať:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Do do svojom server konfiguračnom súbore (miesto sa v závislosti od servera líši) pridať:
 

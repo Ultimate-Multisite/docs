@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite qo‘shimchalari
+# Ultimate Multisite qo‘shimchalari {#ultimate-multisite-addons}
 
 Qo‘shimchalar Ultimate Multisite’ni qo‘shimcha funksiyalar va integratsiyalar bilan kengaytiradi. Aksariyat qo‘shimchalar pullik va ularni [ultimatemultisite.com](https://ultimatemultisite.com) saytidan xarid qilish mumkin.
 
-## O‘rnatish
+## O‘rnatish {#installation}
 
 Qo‘shimchalarni ikki usulda o‘rnatish mumkin:
 
 1. **Qo‘shimcha sahifasi orqali** -- WordPress admin panelida saytingizning qo‘shimchalarni boshqarish sahifasiga o‘ting
 2. **Qo‘lda yuklab olish** -- [accountingizdan](https://ultimatemultisite.com/my-account/downloads/) yuklab oling va Plaginlar > Yangisini qo‘shish orqali yuklang
 
-## Mavjud qo‘shimchalar
+## Mavjud qo‘shimchalar {#available-addons}
 
 | Qo‘shimcha | Tavsif |
 |-------|-------------|

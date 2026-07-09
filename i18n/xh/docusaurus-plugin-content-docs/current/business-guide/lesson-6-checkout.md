@@ -3,15 +3,15 @@ title: 'Isifundo 6: Amava okubhalisa'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Isifundo 6: Amava Okubhalisa
+# Isifundo 6: Amava Okubhalisa {#lesson-6-the-signup-experience}
 
 Inkqubo yokuhlawula kulapho umdla uba yingeniso. Inkqubo yokubhalisa edidayo okanye eqhelekileyo ilahlekelwa ngabathengi. Inkqubo ejoliswe kwi-niche ethile, ethetha ngolwimi lwabo kwaye ivakale ilula, iyabaguqula babe ngabathengi.
 
-## Apho Besishiye Khona
+## Apho Besishiye Khona {#where-we-left-off}
 
 FitSite ineetemplate nezicwangciso ezilungiselelweyo. Ngoku sakha amava okubhalisa nokuhlawula aguqula abanini beestudiyo zokuzilolonga babe ngabathengi abahlawulayo.
 
-## Ukuqonda Inkqubo Yokubhalisa
+## Ukuqonda Inkqubo Yokubhalisa {#understanding-the-registration-flow}
 
 Iifom zokuhlawula ze-Ultimate Multisite ziifom zamanyathelo amaninzi ezinokulungiswa ngokupheleleyo. Kwi-FitSite, sifuna inkqubo ethi:
 
@@ -21,11 +21,11 @@ Iifom zokuhlawula ze-Ultimate Multisite ziifom zamanyathelo amaninzi ezinokulung
 
 Jonga [Inkqubo Yokubhalisa](/user-guide/configuration/the-registration-flow) ukuze ufumane ireferensi epheleleyo yobugcisa.
 
-## Ukuyila Intlawulo ye-FitSite
+## Ukuyila Intlawulo ye-FitSite {#designing-the-fitsite-checkout}
 
 Yiya ku-**Ultimate Multisite > Checkout Forms** uze wenze ifom entsha.
 
-### Inyathelo 1: Ukukhetha Isicwangciso
+### Inyathelo 1: Ukukhetha Isicwangciso {#step-1-plan-selection}
 
 Into yokuqala umnini westudiyo sokuzilolonga ayibonayo kufuneka ibe zizicwangciso, ziboniswe ngamabinzana abawaqondayo.
 
@@ -37,7 +37,7 @@ Into yokuqala umnini westudiyo sokuzilolonga ayibonayo kufuneka ibe zizicwangcis
 "1 GB storage" ayithethi nto kumnini wejimu. "Yonke into oyifunayo kwisiza sobuchwephesha sestudiyo" ithetha yonke into. Bhala iinkcazelo zezicwangciso ngolwimi lomthengi wakho.
 :::
 
-### Inyathelo 2: Ukukhetha Itemplate
+### Inyathelo 2: Ukukhetha Itemplate {#step-2-template-selection}
 
 Emva kokukhetha isicwangciso, umthengi ukhetha itemplate yakhe yokuqalisa.
 
@@ -45,7 +45,7 @@ Emva kokukhetha isicwangciso, umthengi ukhetha itemplate yakhe yokuqalisa.
 - Iitemplate ezikhoyo zihluziwe ngokwesicwangciso asikhethileyo (silungiselelwe kwiSifundo 5)
 - Itemplate nganye kufuneka ibe nomfanekiso wokujonga kwangaphambili obonisa uyilo olujoliswe kwezokuzilolonga
 
-### Inyathelo 3: Ukwenza i-Account
+### Inyathelo 3: Ukwenza i-Account {#step-3-account-creation}
 
 Gcina oku kuncinci. Qokelela kuphela:
 
@@ -55,27 +55,27 @@ Gcina oku kuncinci. Qokelela kuphela:
 
 Musa ukucela ulwazi ongadingi kulo xa kubhaliswa. Ifield nganye eyongezelelweyo inciphisa ukuguqulwa kwabathengi.
 
-### Inyathelo 4: Ukulungisa Isiza
+### Inyathelo 4: Ukulungisa Isiza {#step-4-site-setup}
 
 - **Isihloko sesiza**: Gcwalisa kwangaphambili usebenzisa igama lestudiyo elifakwe kwiNyathelo 3
 - **I-URL yesiza**: Yivelise ngokuzenzekelayo usebenzisa igama lestudiyo (umz., `ironworks.fitsite.com`)
 
-### Inyathelo 5: Intlawulo
+### Inyathelo 5: Intlawulo {#step-5-payment}
 
 - Yongeza ifield ye-**Payment**
 - Lungiselela isango lakho lentlawulo ([Stripe](/user-guide/payment-gateways/stripe) iyacetyiswa kwintlawulo yemirhumo eqhubekayo)
 - Ukuba wenze ii-order bumps kwiSifundo 5, yongeza ifield ye-**Order Bump** phambi kwenyathelo lentlawulo
 
-### Inyathelo 6: Isiqinisekiso
+### Inyathelo 6: Isiqinisekiso {#step-6-confirmation}
 
 - Lungisa umyalezo wesiqinisekiso ngolwimi olujoliswe kwezokuzilolonga
 - Umzekelo: "Isiza sestudiyo sakho sokuzilolonga siyadalwa. Uya kuthunyelwa kwisiza sakho esitsha kwimizuzwana embalwa."
 
-## Ukongeza Iswitshi Yokukhetha Ixesha
+## Ukongeza Iswitshi Yokukhetha Ixesha {#adding-a-period-selection-toggle}
 
 Ukuba usete umahluko wamaxabiso kwizicwangciso zakho (ngenyanga vs. ngonyaka), yongeza ifield ye-**Period Selection** kwifom yokuhlawula ukuze abathengi bakwazi ukutshintsha phakathi kwamaxesha okuhlawuliswa. Jonga [Iifom Zokuhlawula](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) ukuze ufumane imiyalelo.
 
-## Ukulungiselela Intlawulo
+## Ukulungiselela Intlawulo {#configuring-payment}
 
 Ukuba awukaseti isango lentlawulo:
 
@@ -85,7 +85,7 @@ Ukuba awukaseti isango lentlawulo:
 
 Jonga [Ukuhlawulwa](/user-guide/payment-gateways/getting-paid) ukuze ufumane iinkcukacha ngendlela iintlawulo ezihamba ngayo ukuya kwi-akhawunti yakho.
 
-## Ukuvavanya Inkqubo
+## Ukuvavanya Inkqubo {#testing-the-flow}
 
 Phambi kokuba uqhubeke, gqibezela uvavanyo olupheleleyo lokubhalisa:
 
@@ -105,7 +105,7 @@ Jonga ukuba:
 - [ ] Umthengi ufika kwisiza esisebenzayo esinetemplate ekhethiweyo
 - [ ] Ii-imeyile zesiqinisekiso zisebenzisa ulwimi olujoliswe kwezokuzilolonga
 
-## Inethiwekhi ye-FitSite Ukuza Kuthi Ga Ngoku
+## Inethiwekhi ye-FitSite Ukuza Kuthi Ga Ngoku {#the-fitsite-network-so-far}
 
 ```
 Inethiwekhi ye-FitSite
@@ -123,7 +123,7 @@ Inethiwekhi ye-FitSite
 └── Ilungele ukubrandwa (isifundo esilandelayo)
 ```
 
-## Esikwakhileyo Kwesi Sifundo
+## Esikwakhileyo Kwesi Sifundo {#what-we-built-this-lesson}
 
 - **Ifom yokuhlawula yamanyathelo amaninzi** elungiselelwe abanini beestudiyo zokuzilolonga
 - **Ulwimi olujoliswe kwi-niche** kuyo yonke inkqubo yokubhalisa

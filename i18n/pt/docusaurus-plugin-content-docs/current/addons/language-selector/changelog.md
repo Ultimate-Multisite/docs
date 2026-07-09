@@ -3,7 +3,7 @@ title: Registo de alterações do Seletor de Idioma
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Registo de alterações do seletor de idioma
+# Registo de alterações do seletor de idioma {#language-selector-changelog}
 
 Versão: 1.1.3 - Lançada em 2026-05-05
 * Correção: As variáveis de entrada são agora sanitizadas e os nomes de hooks personalizados foram prefixados para evitar conflitos com plugins de terceiros

@@ -3,11 +3,11 @@ title: Spesifikasi Situs Keterampilan
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Keterampilan Spesifikasi Situs
+# Keterampilan Spesifikasi Situs {#site-specification-skill}
 
 **Keterampilan Spesifikasi Situs (Site Specification skill)** iku cara terstruktur kanggo nangkep tujuan situsmu, audiensmu, lan identitas brand-mu. Informasi iki disimpen ing memori **site_brief**-mu, sing diacu dening agen saben sesi supaya bisa menehi bantuan sing konsisten lan ngerti konteks.
 
-## Apa Iku Site Specification?
+## Apa Iku Site Specification? {#what-is-site-specification}
 
 Site Specification iku proses nulis dokumen babagan:
 
@@ -19,9 +19,9 @@ Site Specification iku proses nulis dokumen babagan:
 
 Spesifikasi iki bakal dadi **site_brief**-mu, memori sing tetep ana sing digunakake agen kanggo ngerti konteks situsmu.
 
-## Kenapa Nganggo Site Specification?
+## Kenapa Nganggo Site Specification? {#why-use-site-specification}
 
-### Konsisten Antar Sesi
+### Konsisten Antar Sesi {#consistency-across-sessions}
 
 Tanpa site_brief, kowe kudu nerangake tujuan situsmu saben wiwitan sesi anyar. Kanthi duwe site_brief, agen langsung ngerti:
 
@@ -30,7 +30,7 @@ Tanpa site_brief, kowe kudu nerangake tujuan situsmu saben wiwitan sesi anyar. K
 - Struktur kontenmu
 - Tujuan bisnis-mu
 
-### Rekomendasi sing Luwih Apik
+### Rekomendasi sing Luwih Apik {#better-recommendations}
 
 Agen nggunakake site_brief-mu kanggo:
 
@@ -39,17 +39,17 @@ Agen nggunakake site_brief-mu kanggo:
 - Nguwuh desain sing konsisten karo brand-mu
 - Ngindari ngusul fitur sing ora cocok
 
-### Onboarding Luwih Cepet
+### Onboarding Luwih Cepet {#faster-onboarding}
 
 Agen anyar (utawa agen ing sesi anyar) bisa cepet mangerti kanthi maca site_brief-mu tinimbang nanya pitakon panjelas.
 
-## Nggawiti Site Specification
+## Nggawiti Site Specification {#initiating-site-specification}
 
-### Nalika Onboarding Theme Builder
+### Nalika Onboarding Theme Builder {#during-theme-builder-onboarding}
 
 Keterampilan Site Specification otomatis diwiwiti nalika **alur onboarding Theme Builder**. Agen Setup Assistant bakal nanyani pitakon lan mbangun site_brief-mu.
 
-### Inisiasi Manual
+### Inisiasi Manual {#manual-initiation}
 
 Sampe Spesifikasi Situs bisa dimulai kapan saja:
 
@@ -63,9 +63,9 @@ atau
 "Bantu saya membuat ringkasan situs (site brief)"
 ```
 
-## Proses Spesifikasi Situs
+## Proses Spesifikasi Situs {#the-site-specification-process}
 
-### Langkah 1: Tujuan Situs
+### Langkah 1: Tujuan Situs {#step-1-site-purpose}
 
 Agen akan bertanya:
 
@@ -81,7 +81,7 @@ Apa tujuan utama situs Anda?
 
 Anda bisa memilih kategori atau jelaskan tujuan Anda sendiri.
 
-### Langkah 2: Target Audiens
+### Langkah 2: Target Audiens {#step-2-target-audience}
 
 ```
 Siapa audiens utama Anda?
@@ -94,7 +94,7 @@ Siapa audiens utama Anda?
 Apa kebutuhan utama mereka?
 ```
 
-### Langkah 3: Identitas Merek (Brand Identity)
+### Langkah 3: Identitas Merek (Brand Identity) {#step-3-brand-identity}
 
 ```
 Apa warna merek Anda?
@@ -110,7 +110,7 @@ Bagaimana Anda mendeskripsikan nada merek Anda?
 - Hangat / ramah
 ```
 
-### Langkah 4: Tujuan Bisnis (Business Goals)
+### Langkah 4: Tujuan Bisnis (Business Goals) {#step-4-business-goals}
 
 ```
 Seperti apa kesuksesan bagi situs Anda?
@@ -129,7 +129,7 @@ Apa metrik utama Anda?
 - Lainnya
 ```
 
-### Langkah 5: Struktur Konten
+### Langkah 5: Struktur Konten {#step-5-content-structure}
 
 ```
 Bagaimana konten Anda diorganisir?
@@ -148,13 +148,13 @@ Jenis konten apa yang Anda gunakan?
 - Lainnya
 ```
 
-## Memori site_brief Anda
+## Memori site_brief Anda {#your-sitebrief-memory}
 
 Setelah menyelesaikan Spesifikasi Situs, informasi Anda akan disimpan sebagai **site_brief** di memori agen Anda. Ini adalah catatan terstruktur yang berisi:
 
-## Melihat dan Memperbarui site_brief Anda
+## Melihat dan Memperbarui site_brief Anda {#viewing-and-updating-your-sitebrief}
 
-### Lihat site_brief Anda
+### Lihat site_brief Anda {#view-your-sitebrief}
 
 Tanya agen ini:
 
@@ -170,7 +170,7 @@ atau
 
 Agen akan menampilkan spesifikasi yang sudah disimpan.
 
-### Perbarui site_brief Anda
+### Perbarui site_brief Anda {#update-your-sitebrief}
 
 Kalau situs kamu berkembang, kamu bisa memperbaruinya:
 
@@ -186,9 +186,9 @@ atau
 
 Ini akan menjalankan kembali skill Site Specification dengan informasi yang sudah ada sebagai titik awal.
 
-## Bagaimana Agen Menggunakan site_brief
+## Bagaimana Agen Menggunakan site_brief {#how-agents-use-sitebrief}
 
-### Rekomendasi Desain
+### Rekomendasi Desain {#design-recommendations}
 
 Saat kamu minta perubahan desain, agen akan merujuk ke site_brief kamu:
 
@@ -197,7 +197,7 @@ Kamu: "Rancang ulang halaman utama saya"
 Agen: "Berdasarkan site brief Anda, Anda menargetkan wanita usia 25-45 tahun dengan nada yang hangat dan artisanal. Saya akan membuat desain yang menekankan perhiasan buatan tangan dan nilai keberlanjutan Anda."
 ```
 
-### Saran Fitur
+### Saran Fitur {#feature-suggestions}
 
 Agen akan menyarankan fitur yang sesuai dengan tujuan kamu:
 
@@ -206,23 +206,23 @@ Kamu: "Fitur apa yang harus saya tambahkan?"
 Agen: "Untuk toko e-commerce yang fokus pada loyalitas pelanggan, saya sarankan: program loyalitas, ulasan pelanggan, buletin email, dan rekomendasi produk."
 ```
 
-### Struktur Konten
+### Struktur Konten {#content-structure}
 
 Agen akan mengusulkan pengaturan konten berdasarkan struktur kamu:
 
 Anda: "Gimana ya cara saya ngatur blog saya?"
 Agen: "Karena Anda pakai product catalog dengan blog, saya sarankan untuk mengelompokkan postingan berdasarkan kategori produk dan membuat 'panduan gaya' yang menampilkan beberapa produk sekaligus."
 
-## Praktik Terbaik (Best Practices)
+## Praktik Terbaik (Best Practices) {#best-practices}
 
-### Jadi Spesifik
+### Jadi Spesifik {#be-specific}
 
 Daripada bilang "audiens umum", jelaskan audiens Anda yang sebenarnya:
 
 - ✓ "Wanita usia 25-45 tahun, tertarik pada fashion berkelanjutan"
 - ✗ "Semua orang"
 
-### Perbarui Secara Rutin
+### Perbarui Secara Rutin {#update-regularly}
 
 Seiring situs Anda berkembang, perbarui `site_brief` Anda:
 
@@ -231,14 +231,14 @@ Seiring situs Anda berkembang, perbarui `site_brief` Anda:
 - Saat identitas merek Anda berubah
 - Saat tujuan bisnis Anda bergeser
 
-### Gunakan Istilah yang Konsisten
+### Gunakan Istilah yang Konsisten {#use-consistent-terminology}
 
 Gunakan istilah yang sama di semua sesi:
 
 - ✓ Selalu sebut "perhiasan berkelanjutan" (bukan "perhiasan ramah lingkungan" dan "produk hijau")
 - ✓ Selalu merujuk audiens Anda dengan cara yang sama
 
-### Sertakan Konteks
+### Sertakan Konteks {#include-context}
 
 Berikan latar belakang yang membantu agen memahami keputusan Anda:
 
@@ -246,7 +246,7 @@ Berikan latar belakang yang membantu agen memahami keputusan Anda:
 - "Audiens kita melek teknologi dan mengharapkan desain modern"
 - "Kita adalah startup yang modalnya terbatas, jadi kita butuh solusi yang hemat biaya"
 
-## Hubungan dengan Onboarding Theme Builder
+## Hubungan dengan Onboarding Theme Builder {#relationship-to-theme-builder-onboarding}
 
 Skill Site Specification digabung ke dalam **alur onboarding Theme Builder**. Ketika Anda menyelesaikan onboarding, `site_brief` Anda akan otomatis dibuat dengan informasi yang sudah Anda berikan.
 
@@ -256,7 +256,7 @@ Anda juga bisa menjalankan Site Specification secara mandiri kalau Anda mau:
 - Memperbarui site brief Anda seiring situs Anda berkembang
 - Membuat spesifikasi detail sebelum memulai Theme Builder
 
-## Pemecahan Masalah (Troubleshooting)
+## Pemecahan Masalah (Troubleshooting) {#troubleshooting}
 
 **site_brief saya tidak terpakai**
 - Pastikan agen punya akses ke memori (`memory`)
@@ -272,7 +272,7 @@ Anda juga bisa menjalankan Site Specification secara mandiri kalau Anda mau:
 - Perbarui site\_brief kamu kalau sudah kedaluwarsa
 - Beri konteks tambahan dalam permintaanmu
 
-## Langkah Selanjutnya
+## Langkah Selanjutnya {#next-steps}
 
 Setelah kamu menentukan spesifikasi situsnya:
 

@@ -4,11 +4,11 @@ title: Chiito - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Chiito: wu_membership_post_renew
+# Chiito: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Inotangwa mushure mekuvandudzwa kweunhengo.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Inotangwa mushure mekuvandudzwa kweunhengo.
 | $membership_id | `int` | ID yeunhengo. |
 | $membership | `\Membership` | Chinhu cheunhengo. |
 
-### Kubvira
+### Kubvira {#since}
 
 - 2.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) pamutsara 2235

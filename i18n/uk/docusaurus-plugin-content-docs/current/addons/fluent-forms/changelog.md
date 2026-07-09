@@ -3,7 +3,7 @@ title: Fluent Forms Журнал змін
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Журнал змін Fluent Forms
+# Журнал змін Fluent Forms {#fluent-forms-changelog}
 
 Версія: 2.0.1 — Випущено 2025-09-28
 

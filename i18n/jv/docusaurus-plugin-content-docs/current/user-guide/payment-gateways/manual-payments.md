@@ -3,13 +3,13 @@ title: Ngatur Pembayaran Manual
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ngatur Pembayaran Manual (v2)
+# Ngatur Pembayaran Manual (v2) {#setting-up-manual-payments-v2}
 
 _**CATETHAN WIGATI: Artikel iki ngrujuk marang Ultimate Multisite versi 2.x.**_
 
 Pembayaran manual iku cara supaya sampeyan bisa nawakake cara pembayaran liyane yen **Stripe** utawa **PayPal** ora kasedhiya kanggo pangguna sampeyan. Iki bisa awujud transfer kawat utawa transfer bank utawa cara pembayaran liyane sing kasedhiya sacara lokal kanggo pangguna sampeyan.
 
-## Carane ngaktifake Pembayaran Manual
+## Carane ngaktifake Pembayaran Manual {#how-to-enable-manual-payments}
 
 Ngatur pembayaran manual iku gampang banget. Sampeyan mung perlu ngaktifake ing sangisore gateway pembayaran lan nglebokake pandhuan rinci babagan carane pangguna kudu ngirim pembayaran.
 
@@ -31,7 +31,7 @@ Lan dheweke uga bakal nampa pesen ing kaca **Matur Nuwun** sampeyan karo pandhua
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Ngonfirmasi pembayaran manual
+## Ngonfirmasi pembayaran manual {#confirming-manual-payments}
 
 Kanggo ngonfirmasi pembayaran manual, bukak menu **Pembayaran** ing bilah kiwa. Ing kana sampeyan bisa ndeleng kabeh pembayaran ing jaringan sampeyan lan rinciane, kalebu **status**-e. Pembayaran manual mesthi bakal duwe status **Ngenteni** nganti sampeyan ngganti kanthi manual.
 

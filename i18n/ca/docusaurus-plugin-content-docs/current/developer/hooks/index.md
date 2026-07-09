@@ -3,11 +3,11 @@ title: Referència de hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referència de hooks
+# Referència de hooks {#hooks-reference}
 
 Documentació generada automàticament per a totes les **59 accions** i els **118 filtres** a Ultimate Multisite.
 
-## Accions
+## Accions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — S'activa abans de la redirecció d'autenticació.
 - [set_auth_cookie](./Actions/set_auth_cookie) — S'activa immediatament abans que s'estableixi la galeta d'autenticació.
@@ -70,7 +70,7 @@ Documentació generada automàticament per a totes les **59 accions** i els **11
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — S'activa després que un objecte s'emmagatzemi a la base de dades.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permet als desenvolupadors de plugins afegir accions al procés de desbloqueig.
 
-## Filtres
+## Filtres {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtra la durada del període de caducitat de la galeta d’autenticació.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtra l’esquema de redirecció d’autenticació.

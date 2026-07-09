@@ -3,19 +3,19 @@ title: Stripe-ı Qurmaq
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway-i Qurmaq (v2)
+# Stripe Gateway-i Qurmaq (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**MÜHİM QEYD: Bu məqalə Ultimate Multisite-in 2.x versiyasına aiddir.**_
 
 Ödəniş ayarları səhifəmizdə dörd ödəniş metodunu aktivləşdirə bilərsiniz: Stripe, Stripe Checkout, PayPal və Əl ilə (Manual). Bu məqalədə isə **Stripe** ilə necə inteqrasiya olunacağını görəcəyik.
 
-## Stripe-i Aktivləşdirmək
+## Stripe-i Aktivləşdirmək {#enabling-stripe}
 
 Networkinizdə mövcud ödəniş qapısı kimi Stripe-i aktivləşdirmək üçün **Ultimate Multisite > Settings > Payments** yoluna gedin və "Active Payment Gateways" (Aktiv Ödəniş Qapıları) bölməsindəki **Stripe** və ya **Stripe Checkout** yanındakı toggle düyməsini işarələyin.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Bu metod ödəniş zamanı kredit kartı nömrəsini daxil etmək üçün bir sahə göstərəcək.
 
@@ -47,7 +47,7 @@ Ya **Test Data** (istehsal saytınızda inteqrasiyanın işlədiyini yoxlamaq ü
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Stripe Webhook Qurulması
+## Stripe Webhook Qurulması {#setting-up-stripe-webhook}
 
 Stripe, **Stripe hesabınızda** hər hansı bir hadisə baş verdikdə Ultimate Multisite-ə bildiriş göndərən webhook hadisələri göndərir.
 

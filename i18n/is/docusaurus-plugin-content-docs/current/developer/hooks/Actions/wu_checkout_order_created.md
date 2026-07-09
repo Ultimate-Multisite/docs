@@ -4,13 +4,13 @@ title: Aðgerð - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Aðgerð: wu_checkout_order_created
+# Aðgerð: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 Keyrist eftir að checkout-pöntunin hefur verið sett að fullu saman.
 
 Viðbætur geta notað þetta til að búa til aukaaðild fyrir vörur með sjálfstæðum innheimtulotum.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Heiti | Tegund | Lýsing |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Viðbætur geta notað þetta til að búa til aukaaðild fyrir vörur með sjá
 | $membership | `\WP_Ultimo\Models\Membership` | Aðalaðildin. |
 | $payment | `\WP_Ultimo\Models\Payment` | Greiðslan. |
 
-### Frá útgáfu
+### Frá útgáfu {#since}
 
 - 2.5.0
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) í línu 891

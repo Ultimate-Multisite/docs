@@ -3,7 +3,7 @@ title: WooCommerce एकत्रीकरण बदलनोंद
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration बदलनोंद
+# WooCommerce Integration बदलनोंद {#woocommerce-integration-changelog}
 
 आवृत्ती 2.2.0 - 2026-07-01 रोजी प्रकाशित
 * नवीन: Ultimate Multisite कर रकमा आता चेकआउटवेळी स्वतंत्र WooCommerce शुल्क ओळी म्हणून दिसतात, त्यामुळे पेमेंटपूर्वी करांची एकूण रक्कम अधिक स्पष्ट होते.

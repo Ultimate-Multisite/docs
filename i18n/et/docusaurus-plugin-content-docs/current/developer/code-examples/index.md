@@ -3,11 +3,11 @@ title: Täiustatud koodinäited
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Täiustatud koodinäited
+# Täiustatud koodinäited {#advanced-code-examples}
 
 Need näited demonstreerivad täiustatud integratsioonimustreid Ultimate Multisite’iga.
 
-## Dünaamiline hinnastamismootor
+## Dünaamiline hinnastamismootor {#dynamic-pricing-engine}
 
 Reeglipõhine hinnastamismootor, mis rakendab mahu-, lojaalsus- ja hooajalisi allahindlusi:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Täiustatud saidi ettevalmistamine
+## Täiustatud saidi ettevalmistamine {#advanced-site-provisioning}
 
 Seadista uued saidid automaatselt pluginatega, SSL-iga, CDN-iga, varukoopiatega ja jälgimisega vastavalt paketi funktsioonidele:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Kohandatud piirangute süsteem
+## Kohandatud piirangute süsteem {#custom-limitations-system}
 
 Jälgi ja jõusta ressursipiiranguid kasutushoiatusi kasutades:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB atomaarne loendur koos `increment_item()`-iga
+## BerlinDB atomaarne loendur koos `increment_item()`-iga {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 lisas BerlinDB `Query` klassile meetodi `increment_item()`. Kasuta seda turvaliste, atomaarsete suurendamiste tegemiseks arvulistes veergudes ilma read-modify-write võidujooksudeta — kasulik loendurite, kasutuskvootide ja päringusageduse piiramise kontrollide jaoks, mis töötavad samaaegsete päringute korral.
 
-### Meetodi signatuur
+### Meetodi signatuur {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 lisas BerlinDB `Query` klassile meetodi `increment_ite
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Põhikasutus
+### Põhikasutus {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API kasutuse jälgimine iga liikmesuse kohta
+### API kasutuse jälgimine iga liikmesuse kohta {#tracking-api-usage-per-membership}
 
 Praktiline muster liikmesusepõhiste API päringusageduse piirangute jõustamiseks:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Miks kasutada `increment_item()` meetodi `update_item()` asemel
+### Miks kasutada `increment_item()` meetodi `update_item()` asemel {#why-incrementitem-instead-of-updateitem}
 
 Naiivne read-modify-write lähenemine ei ole samaaegsete päringute korral turvaline:
 

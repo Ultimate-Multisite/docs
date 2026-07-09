@@ -3,7 +3,7 @@ title: 멤버십 관리
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# 멤버십 관리
+# 멤버십 관리 {#managing-memberships}
 
 Ultimate Multisite에서는 멤버십을 관리하고 네트워크의 모든 구독에 접근할 수 있습니다. 플랜과 제품, 사이트 수, 청구 금액과 주기, 결제 내역, 타임스탬프 같은 구독 세부 정보를 검토하고 편집하세요.
 

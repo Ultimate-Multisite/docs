@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Tutor LMS-നെ മൾട്ടിസൈറ്റ് (multisite) എൻവയോൺമെന്റുകളിൽ പ്രവർത്തിപ്പിക്കാനുള്ള ചില മാറ്റങ്ങൾ (compatibility fixes) കൂട്ടിച്ചേർക്കുന്ന ഒരു WordPress plugin ആണിത്.
 
-## Description
+## Description {#description}
 
 WordPress മൾട്ടിസൈറ്റ് നെറ്റ്‌വർക്കുകളിൽ Tutor LMS പ്രവർത്തിപ്പിക്കാൻ ആവശ്യമായ പ്രധാനപ്പെട്ട ചില മാറ്റങ്ങൾ ഈ plugin നൽകുന്നു. യൂസർ എൻറോൾമെന്റ്, ഇൻസ്ട്രക്ടർ മാനേജ്‌മെന്റ്, കോഴ്സ് പരിമിതികൾ, മറ്റ് മൾട്ടിസൈറ്റ് പ്രത്യേക പ്രവർത്തനങ്ങൾ എന്നിവ ഇത് കൈകാര്യം ചെയ്യുന്നു.
 
-## Features
+## Features {#features}
 
 - **Database Table Management**: മൾട്ടിസൈറ്റ് ഫോറിൻ കീ പരിമിതികൾ കാരണം ഉണ്ടാകാൻ സാധ്യതയുള്ള, എന്നാൽ നഷ്ടപ്പെട്ട Tutor LMS ടേബിളുകൾ ഇത് സ്വയമേവ കണ്ടെത്തി സൃഷ്ടിക്കുന്നു.
 - **Multisite User Enrollment**: നെറ്റ്‌വർക്കിലെ വിവിധ സൈറ്റുകളിലുടനീളം യൂസർ എൻറോൾമെന്റ് കൈകാര്യം ചെയ്യുന്നതിനായി കസ്റ്റം AJAX ഹാൻഡ്ലറുകൾ.
@@ -24,7 +24,7 @@ WordPress മൾട്ടിസൈറ്റ് നെറ്റ്‌വർക്
 - **Custom Admin Views**: മൾട്ടിസൈറ്റ്-അവബോധമുള്ള ഇൻസ്ട്രക്ടർ ലിസ്റ്റ്, മാനേജ്‌മെന്റ് ഇന്റർഫേസ്.
 - **Admin Tools**: നെറ്റ്‌വർക്ക്, സൈറ്റ് അഡ്മിനിസ്ട്രേറ്റർമാർക്കുള്ള ഡാറ്റാബേസ് മാനേജ്‌മെന്റ് ഇന്റർഫേസ്.
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ WordPress മൾട്ടിസൈറ്റ് നെറ്റ്‌വർക്
 - WordPress Multisite ഇൻസ്റ്റാളേഷൻ
 - Ultimate Multisite plugin (കോഴ്സ് പരിമിതി പ്രവർത്തനങ്ങൾക്കായി)
 
-## Installation
+## Installation {#installation}
 
 1. plugin ഫയലുകൾ `/wp-content/plugins/tutor-multisite-compatibility/` എന്നതിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക.
 2. Tutor LMS ഇൻസ്റ്റാൾ ചെയ്ത് ആക്ടിവേറ്റ് ചെയ്തിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക.
 3. WordPress-ലെ 'Plugins' മെനു വഴി plugin ആക്ടിവേറ്റ് ചെയ്യുക.
 4. ഈ plugin Tutor LMS-മായി ഓട്ടോമാറ്റിക്കായി സംയോജിക്കപ്പെടും.
 
-## File Structure
+## File Structure {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Functionality Moved from MU Plugin
+## Functionality Moved from MU Plugin {#functionality-moved-from-mu-plugin}
 
 നേരത്തെ `wp-content/mu-plugins/daves.php` എന്ന ഫയലിൽ ഉണ്ടായിരുന്ന ചില പ്രവർത്തനങ്ങൾ ഈ plugin-ൽ ഉൾപ്പെടുത്തിയിരിക്കുന്നു:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - മൾട്ടിസൈറ്റ് യൂസർ എൻറോൾമെന്റ് കൈകാര്യം ചെയ്യൽ
 - കോഴ്സ് പ്രോഡക്റ്റ് ID പ്രദർശിപ്പിക്കൽ
 
-## Database Management
+## Database Management {#database-management}
 
-### The Problem
+### The Problem {#the-problem}
 
 WordPress മൾട്ടിസൈറ്റ് എൻവയോൺമെന്റുകളിൽ, യൂസർ ടേബിളുമായി (users table) ഫോറിൻ കീ പരിമിതികൾ ഉള്ള ടേബിളുകൾ സൃഷ്ടിക്കാൻ Tutor LMS പരാജയപ്പെടാറുണ്ട്. ഇതിനുള്ള കാരണം ഇതാണ്:
 
@@ -81,7 +81,7 @@ WordPress മൾട്ടിസൈറ്റ് എൻവയോൺമെന്റ
 - ഫോറിൻ കീകൾ `wp_2_users` നെ റഫർ ചെയ്യുന്നു (എന്നാൽ ഇത് നിലവിലില്ല).
 - യഥാർത്ഥ യൂസർ ടേബിൾ `wp_users` ആണ് (ഇത് നെറ്റ്‌വർക്കിലുടനീളം പങ്കിട്ടതാണ്).
 
-### The Solution
+### The Solution {#the-solution}
 
 ഈ plugin ഓട്ടോമാറ്റിക്കായി ചെയ്യുന്നത്:
 
@@ -92,13 +92,13 @@ WordPress മൾട്ടിസൈറ്റ് എൻവയോൺമെന്റ
    - നെറ്റ്‌വർക്കിൽ പുതിയ സൈറ്റ് സൃഷ്ടിക്കൽ
    - അഡ്മിൻ ഇന്റർഫേസ് വഴി മാനുവൽ ടേബിൾ പരിശോധിക്കൽ
 
-### Affected Tables
+### Affected Tables {#affected-tables}
 
 - `tutor_coupon_usages` - യൂസർ ടേബിളിലേക്കുള്ള ഫോറിൻ കീ ഉൾക്കൊള്ളുന്നു
 - `tutor_carts` - യൂസർ ടേബിളിലേക്കുള്ള ഫോറിൻ കീ ഉൾക്കൊള്ളുന്നു
 - `tutor_notification_preferences` - യൂസർ ടേബിളിലേക്കുള്ള ഫോറിൻ കീ ഉള്ള TutorPro ടേബിൾ
 
-### Admin Interface
+### Admin Interface {#admin-interface}
 
 ഡാറ്റാബേസ് മാനേജ്‌മെന്റ് ടൂളുകൾ ഇവിടെ ലഭ്യമാണ്:
 
@@ -111,6 +111,6 @@ WordPress മൾട്ടിസൈറ്റ് എൻവയോൺമെന്റ
 - ഡാറ്റാബേസ് കോൺഫിഗറേഷൻ പരിശോധിക്കാൻ കഴിയും.
 - വിശദമായ സ്റ്റാറ്റസ് വിവരങ്ങൾ കാണാൻ കഴിയും.
 
-## Support
+## Support {#support}
 
 ഈ plugin പ്രത്യേകമായി KursoPro പ്ലാറ്റ്‌ഫോമിനുവേണ്ടിയാണ് രൂപകൽപ്പന ചെയ്തിരിക്കുന്നത്. സാങ്കേതിക പിന്തുണയ്ക്കായി, ഡെവലപ്‌മെന്റ് ടീമിനെ ബന്ധപ്പെടുക.

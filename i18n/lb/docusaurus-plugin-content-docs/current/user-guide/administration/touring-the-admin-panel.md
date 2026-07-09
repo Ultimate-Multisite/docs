@@ -3,11 +3,11 @@ title: D'Administrationspanel durfend
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Durch d'Admin-Panel laufe
+# Durch d'Admin-Panel laufe {#touring-the-admin-panel}
 
 Ultimate Multisite strebt es a soifach und erklärend wie möglich ah, aber mit so ere mächtige Tool chan er au en geführte Tour helfe. Mir laufe dur d'Admin-Seiten, um dir z'helfe, dich zurechtzfinde.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 S'Ultimate Multisite **Dashboard** zeigt grundlegendi Berichte und Analysen ah, wie zum Biispil Iikomme, Site-Aktivitäte, Mitgliedschaftswachstum, Besucherzähler und geografischi Date.
 
@@ -25,61 +25,61 @@ Hier isch au en ganz Überblick vom Netzwerk-Dashboard:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Checkout Forms {#checkout-forms}
 
 **Checkout Forms** gebet dir d'Flexibilität, eigeti Registrierigs-Seiten z'erstelle. Du chasch Felder personalisiere, eigeti Classes und Scripts iifüge und de Zuegang basierend uf em Land oder Standort vom Bsuecher beschränke.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Products
+## Products {#products}
 
 D'**Products**-Sektion isch de Ort, wo du verschiedeni Plän, Pakete und Service für dini Netzwerk erstellsch. Definiere Priise, Abrechnigsfrequenze und Limits & Quoten uf Produkt-Ebene.
 
 ![Products list](/img/admin/products-list.png)
 
-## Memberships
+## Memberships {#memberships}
 
 D'**Memberships**-Seite zeigt alli Abos in dim Netzwerk ah. Überprüef und bearbeite d'Abo-Details, inklusiv Plän, Produkte, Abrechnigsbeträg und Frequenze, Zahlungsverlauf und Zeitstempel.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Payments
+## Payments {#payments}
 
 D'Pagamenten-Seite biedt e schnellen Überblick über d'Zahlungsverlauf in ganz Ihrem Netzwerk, mit detaillierte Transaktionsinformatione inklusive spezifische Produkt und Beträge.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Kunde
+## Kunde {#customers}
 
 D'Kunde-Seite zeigt alli Mitglieder a, wo in Ihrem Netzwerk registriert sind, mit grundlegende Benutzerinformationen wie Name, E-Mail-Adresse, letscht Login und eme "wechseln zu"-Link zum iilogge gehn uf ihre Unterseite.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Sites
+## Sites {#sites}
 
 D'Sites-Seite listet alli Unterseiten in Ihrem Netzwerk uuf, inklusive Seitentemplates und Kunde-eigendi Site. Verwalte eifach mappti Domäne, Limite & Quoten, Plugins und Themes sowie Site-Vorschaubilder.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domains
+## Domains {#domains}
 
 D'Domains-Seite isch für benutzerdefinierti Domains reserviert, wo mit Unterseiten mappt sind. Als Super Admin chönne Sie manuell benutzerdefinierti Domain-Namen hinzufüge oder mappä und DNS-Record sowie Logs aaluege.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Rabattcodes
+## Rabattcodes {#discount-codes}
 
 **Rabattcodes** erlauben Ihne, Coupon-Codes z'erstelle, um Ihre Endbenutzer Rabatte z'biete. Spezifiziere de Rabattwert und zielet uf spezifischi Benutzer oder Gruppe ab.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Broadcasts {#broadcasts}
 
 **Broadcasts** isch es Tool, um Ankündige uszuschicke oder privati Nachrichte a d'Benutzer vo Ihrer Unterseite z'schicke. Ziel spezifischi Benutzergruppe basierend uf em Plan oder Produkt, wo sie abonniert sind.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Einstellungen
+## Einstellungen {#settings}
 
 D'Einstellungen-Seite isch de Ort, wo Sie Ultimate Multisite konfiguriere — Registrierigs-Einstellungen, Zahlige, API und Webhooks, Domain-Mapping und anderi Integratione.
 
@@ -110,13 +110,13 @@ And the sites settings page:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Events
+## Events {#events}
 
 The **Events** page keeps a record of all events and logs in your network. It tracks activities like plan changes, signups, and other movements — useful for monitoring your multisite.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#webhooks}
 
 **Webhooks** allow you to deliver data to another application. Useful for sending data from Ultimate Multisite to platforms like Zapier.
 

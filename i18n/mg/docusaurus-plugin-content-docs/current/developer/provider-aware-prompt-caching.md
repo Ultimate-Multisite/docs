@@ -3,11 +3,11 @@ title: Fitahirizana Cache Prompt Mahafantatra ny Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Caching ny Prompt Mahafantatra Provider
+# Caching ny Prompt Mahafantatra Provider {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 dia mampiditra **caching ny prompt mahafantatra provider**, izay manatsara ny vidin’ny API sy ny latency amin’ny alalan’ny caching ny prompts manerana ireo provider LLM samihafa. Samy manana mekanisma sy fikirakirana caching samihafa ny provider tsirairay.
 
-## Topimaso
+## Topimaso {#overview}
 
 Ny caching ny prompt dia mamela anao:
 
@@ -23,11 +23,11 @@ Samy hafa ny fomba anatanterahan’ny provider samihafa ny caching:
 - **OpenRouter**: Caching manokana arakaraka ny provider
 - **Vertex Anthropic**: Caching ny prompt miaraka amin’ny fanaraha-maso cache
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini dia manome fitantanana cache mazava amin’ny alalan’ny `cachedContents` API.
 
-### Fikirakirana
+### Fikirakirana {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Famoronana Prompt Voatahiry anaty Cache
+### Famoronana Prompt Voatahiry anaty Cache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Fampiasana Prompt Voatahiry anaty Cache
+### Fampiasana Prompt Voatahiry anaty Cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Tsingerim-piainan’ny Cache
+### Tsingerim-piainan’ny Cache {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Fomba Fanao Tsara Indrindra ho an’ny Gemini
+### Fomba Fanao Tsara Indrindra ho an’ny Gemini {#best-practices-for-gemini}
 
 - **Mametraha TTL mety**: Ampifandanjao ny fitsitsiana vola sy ny fahalasanan’ny cache
 - **Ataovy cache ny system prompts**: Ampiasao indray ilay system prompt mitovy manerana ny fangatahana
 - **Araho maso ny fampiasana cache**: Araho hoe iza amin’ireo cache no ampiasaina indrindra
 - **Diovy ireo cache lany daty**: Fafao tsindraindray ireo cache tsy ampiasaina
 
-## Azure OpenAI: Caching ny Prompt
+## Azure OpenAI: Caching ny Prompt {#azure-openai-prompt-caching}
 
 Azure OpenAI dia manohana caching ny prompt miaraka amin’ny fitantanana TTL mandeha ho azy.
 
-### Fikirakirana
+### Fikirakirana {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Fampandehanana ny Caching
+### Fampandehanana ny Caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Lohateny Cache
+### Lohateny Cache {#cache-headers}
 
 Azure OpenAI dia mampiasa lohateny HTTP ho an’ny fanaraha-maso cache:
 
@@ -152,7 +152,7 @@ Sanda tohanana:
 - `no_cache`: Aza atao cache ity fangatahana ity
 - `no_store`: Aza atao cache ary aza ampiasaina indray
 
-### Fanaraha-maso ny Fampiasana Cache
+### Fanaraha-maso ny Fampiasana Cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Fomba Fanao Tsara Indrindra ho an’ny Azure OpenAI
+### Fomba Fanao Tsara Indrindra ho an’ny Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Mampiasà prompts tsy miovaova**: Mahazo tombony amin’ny caching ny prompts mitovy tanteraka
 - **Mametraha TTL antonony**: Ampifandanjao ny vidiny sy ny maha-vaovao
 - **Araho maso ny metrika cache**: Araho ny famoronana cache raha oharina amin’ny hits
 - **Ataovy andiany ireo fangatahana mitovy**: Vondroy ny fangatahana mba hampitomboana ny cache hits
 
-## OpenRouter: Caching Manokana arakaraka ny Provider
+## OpenRouter: Caching Manokana arakaraka ny Provider {#openrouter-provider-specific-caching}
 
 OpenRouter dia manohana caching amin’ny alalan’ireo provider fototra (OpenAI, Anthropic, sns.).
 
-### Fikirakirana
+### Fikirakirana {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Fampiasana Caching OpenRouter
+### Fampiasana Caching OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Safidy Manokana arakaraka ny Provider
+### Safidy Manokana arakaraka ny Provider {#provider-specific-options}
 
 Samy manana mekanisma caching samihafa ny provider samihafa:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Fomba Fanao Tsara Indrindra ho an’ny OpenRouter
+### Fomba Fanao Tsara Indrindra ho an’ny OpenRouter {#best-practices-for-openrouter}
 
 - **Fantaro ny caching an’ny provider-nao**: Samy manana mekanisma samihafa ny provider tsirairay
 - **Andramo ny fitondran-tenan’ny caching**: Hamarino fa mandeha amin’ilay provider nofidinao ny caching
 - **Araho maso ny vola lany**: Araho ny fitsitsiana azo avy amin’ny caching
 - **Mampiasà models tsy miovaova**: Manapaka ny cache hits ny fifindrana models
 
-## Vertex Anthropic: Caching ny Prompt miaraka amin’ny Fanaraha-maso Cache
+## Vertex Anthropic: Caching ny Prompt miaraka amin’ny Fanaraha-maso Cache {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) dia manohana caching ny prompt miaraka amin’ny fanaraha-maso cache mazava.
 
-### Fikirakirana
+### Fikirakirana {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Fampiasana Vertex Anthropic Caching
+### Fampiasana Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Karazana Cache Control
+### Karazana Cache Control {#cache-control-types}
 
 - **ephemeral**: Cache mandritra ny fangatahana (default)
 - **persistent**: Cache manerana fangatahana maro (raha tohanana)
 
-### Fanaraha-maso ny Fampiasana Cache
+### Fanaraha-maso ny Fampiasana Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Fomba Fanao Tsara Indrindra ho an'ny Vertex Anthropic
+### Fomba Fanao Tsara Indrindra ho an'ny Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Mampiasà caching ephemeral**: Tsara ho an'ny caching amin'ny session tokana
 - **Apetraka araka ny tokony ho izy ny max_tokens**: Ampifandanjana ny haben'ny cache sy ny vidiny
 - **Araho maso ny metrika cache**: Araho ny fahombiazan'ny cache
 - **Andramo amin'ny enta-miasanao**: Hamarino fa mahasoa ny tranga fampiasanao ny caching
 
-## Paikady Caching Miampita Mpanome Tolotra
+## Paikady Caching Miampita Mpanome Tolotra {#cross-provider-caching-strategy}
 
-### Fanamboarana Mitambatra
+### Fanamboarana Mitambatra {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Famantarana Mpanome Tolotra
+### Famantarana Mpanome Tolotra {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Paikady Fallback
+### Paikady Fallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Fanatsarana Vidiny
+## Fanatsarana Vidiny {#cost-optimization}
 
-### Kajio ny Fitsitsiana
+### Kajio ny Fitsitsiana {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Torohevitra Fanatsarana
+### Torohevitra Fanatsarana {#optimization-tips}
 
 - **Cache prompts rafitra lehibe**: Fitsitsiana vidiny lehibe indrindra
 - **Ampiasao indray ny context**: Cache antontan-taratasy context ampiasaina matetika
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Araho maso ny fahombiazan'ny cache**: Araho ny fitsitsiana tena izy
 - **Ahitsio ny TTL**: Ampifandanjana ny vidiny sy ny havaozina
 
-## Famahana Olana
+## Famahana Olana {#troubleshooting}
 
-### Tsy ampiasaina ny cache
+### Tsy ampiasaina ny cache {#cache-not-being-used}
 
 - Hamarino fa alefa ao amin'ny fanamboarana ny caching
 - Jereo fa mitovy tanteraka ny prompts (mitaky fitoviana tanteraka ny caching)
 - Hamarino fa tsy lany daty ny cache
 - Jereo ny fetran'ny cache manokana ho an'ny mpanome tolotra
 
-### Tsy mahomby ny famoronana cache
+### Tsy mahomby ny famoronana cache {#cache-creation-failing}
 
 - Hamarino fa ao anatin'ny fetran'ny mpanome tolotra ny haben'ny cache
 - Jereo fa marina ny syntax cache control
 - Ataovy azo antoka fa manohana caching ho an'ny model-nao ny mpanome tolotra
 - Avereno jerena ny documentation an'ny mpanome tolotra momba ny fetra
 
-### Vidiny tsy nampoizina
+### Vidiny tsy nampoizina {#unexpected-costs}
 
 - Araho maso ny famoronana cache raha oharina amin'ny tokens vakina avy amin'ny cache
 - Hamarino fa tena ampiasaina ny cache
 - Jereo raha misy cache misses noho ny fiovaovan'ny prompt
 - Diniho ny fanitsiana ny TTL na ny paikady cache
 
-## Fampitahana Mpanome Tolotra
+## Fampitahana Mpanome Tolotra {#provider-comparison}
 
 | Endri-javatra | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Fampihenana vidiny | 90% | 90% | Miankina amin'ny mpanome tolotra | 90% |
 | Fanaraha-maso | Amin'ny antsipiriany | Amin'ny alalan'ny metrics | Miankina amin'ny mpanome tolotra | Amin'ny alalan'ny usage |
 
-## Dingana Manaraka
+## Dingana Manaraka {#next-steps}
 
 1. **Safidio ny mpanome tolotrao**: Safidio araka ny filanao
 2. **Amboary ny caching**: Apetraho ny caching manokana ho an'ny mpanome tolotra

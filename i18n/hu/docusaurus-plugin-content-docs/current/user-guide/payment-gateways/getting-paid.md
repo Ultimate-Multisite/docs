@@ -3,13 +3,13 @@ title: Kifizetések fogadása
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kifizetések fogadása (v2)
+# Kifizetések fogadása (v2) {#getting-paid-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
 Az Ultimate Multisite beépített tagsági és számlázási rendszerrel rendelkezik. Ahhoz, hogy a számlázási rendszerünk működjön, integráltuk az e-kereskedelemben használt leggyakoribb fizetési átjárókat. Az Ultimate Multisite alapértelmezett fizetési átjárói a _Stripe_ , a _PayPal_ és a kézi fizetés. A _WooCommerce_ , _GoCardless_ és _Payfast_ használatával is fogadhatsz fizetéseket a megfelelő kiegészítőik telepítésével.
 
-## Alapbeállítások
+## Alapbeállítások {#basic-settings}
 
 Ezeket a fizetési átjárókat az Ultimate Multisite fizetési beállításai alatt konfigurálhatod. Ezt itt találod: **Ultimate Multisite menü > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Ez megakadályozza, hogy egy tagság úgy tűnjön, mintha automatikusan megúju
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Hol találhatók az átjárók:
+## Hol találhatók az átjárók: {#where-to-find-the-gateways}
 
 A fizetési átjárókat ugyanazon az oldalon állíthatod be ( **Ultimate Multisite > Settings > Payments**). Közvetlenül az **aktív fizetési átjárók** alatt a következőket láthatod: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ és _Manual_.
 
@@ -67,7 +67,7 @@ Megtekintheted és szerkesztheted a fizetési adatokat:
 
 Ha most a _WooCommerce_ , _GoCardless_ vagy _Payfast_ szolgáltatást szeretnéd fizetési átjáróként használni, akkor **telepítened és konfigurálnod kell a kiegészítőiket**.
 
-### A WooCommerce kiegészítő telepítése:
+### A WooCommerce kiegészítő telepítése: {#how-to-install-the-woocommerce-add-on}
 
 Tisztában vagyunk vele, hogy a _Stripe_ és a _PayPal_ bizonyos országokban nem érhetők el, ami korlátozza vagy akadályozza az Ultimate Multisite felhasználóit abban, hogy hatékonyan használják a pluginunkat. Ezért létrehoztunk egy kiegészítőt a _WooCommerce_ integrálásához, amely egy nagyon népszerű e-kereskedelmi plugin. A fejlesztők világszerte kiegészítőket hoztak létre különböző fizetési átjárók integrálására hozzá. Ezt kihasználva kibővítettük az Ultimate Multisite számlázási rendszerrel használható fizetési átjárók körét.
 
@@ -95,7 +95,7 @@ Az aktiválás után, ha még nincs telepítve és aktiválva a WooCommerce plug
 
 Ha többet szeretnél olvasni a WooCommerce Integration kiegészítőről, **kattints ide**.
 
-### A GoCardless kiegészítő telepítése:
+### A GoCardless kiegészítő telepítése: {#how-to-install-the-gocardless-add-on}
 
 A _GoCardless_ kiegészítő telepítésének lépései nagyjából megegyeznek a _WooCommerce_ kiegészítőével. Kérjük, menj a kiegészítők oldalára, és válaszd ki a **Ultimate Multisite: GoCardless Gateway** kiegészítőt.
 
@@ -111,7 +111,7 @@ A telepítés befejezése után átirányítunk a pluginok oldalára. Itt csak k
 
 Ha meg szeretnéd tudni, hogyan kezdhetsz hozzá a _GoCardless_ gateway használatához, **olvasd el ezt a cikket**.
 
-### A Payfast kiegészítő telepítése:
+### A Payfast kiegészítő telepítése: {#how-to-install-the-payfast-add-on}
 
 Menj a kiegészítők oldalára, és válaszd ki a **Ultimate Multisite: Payfast Gateway** kiegészítőt.
 

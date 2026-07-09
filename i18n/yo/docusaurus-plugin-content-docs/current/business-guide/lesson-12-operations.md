@@ -3,17 +3,17 @@ title: 'Ẹ̀kọ́ 12: Ṣíṣàkóso Ìṣòwò náà'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ẹ̀kọ́ 12: Ṣíṣe Ìṣòwò Náà
+# Ẹ̀kọ́ 12: Ṣíṣe Ìṣòwò Náà {#lesson-12-running-the-business}
 
 Pẹpẹ kì í ṣe iṣẹ́ akanṣe tí o parí -- ó jẹ́ ìṣòwò tí o ń ṣe. Ẹ̀kọ́ yìí ṣàlàyé àwọn iṣẹ́ ojoojúmọ́ ti ṣíṣàkóso FitSite: ìrànwọ́, ìsanwó, ìtọ́jú, àti mímú àwọn oníbàárà dùn.
 
-## Ibi Tí A Dúró Sí
+## Ibi Tí A Dúró Sí {#where-we-left-off}
 
 FitSite ti wà lórí ayélujára, àwọn oníbàárà sì ń forúkọ sílẹ̀. Ní báyìí o ní láti ṣíṣe iṣẹ́ náà ní ọ̀nà tí yóò lè tẹ̀síwájú.
 
-## Àwọn Iṣẹ́ Ojoojúmọ́
+## Àwọn Iṣẹ́ Ojoojúmọ́ {#daily-operations}
 
-### Ìbójútó
+### Ìbójútó {#monitoring}
 
 Ṣàyẹ̀wò àwọn wọ̀nyí lojoojúmọ́ (tàbí ṣètò ìkìlọ̀):
 
@@ -22,7 +22,7 @@ FitSite ti wà lórí ayélujára, àwọn oníbàárà sì ń forúkọ sílẹ
 - **Ìsanwó tó kùnà**: Ṣé àwọn ìkùnà ìsanwó wà tí ó nílò àkíyèsí?
 - **Ìbéèrè ìrànwọ́**: Ṣé àwọn ìbéèrè oníbàárà wà tí kò tíì ní ìdáhùn?
 
-### Ìrànwọ́ Oníbàárà
+### Ìrànwọ́ Oníbàárà {#customer-support}
 
 Ìdojúkọ rẹ sí àgbègbè pàtó jẹ́ àǹfààní níbí. Nítorí gbogbo àwọn oníbàárà rẹ jẹ́ ilé eré-idárayá, wàá máa rí àwọn ìbéèrè kan náà léraléra:
 
@@ -36,7 +36,7 @@ FitSite ti wà lórí ayélujára, àwọn oníbàárà sì ń forúkọ sílẹ
 
 Kọ ibi ìmọ̀ rẹ (tí a bẹ̀rẹ̀ ní Ẹ̀kọ́ 8) yí àwọn ìbéèrè tó ń tún ṣẹlẹ̀ wọ̀nyí ká. Gbogbo tikẹ́ẹ̀tì ìrànwọ́ tí ó lè ti jẹ́ àpilẹ̀kọ ibi ìmọ̀ jẹ́ àmì pé kí o kọ àpilẹ̀kọ yẹn.
 
-### Àwọn Ìpele Ìrànwọ́
+### Àwọn Ìpele Ìrànwọ́ {#support-tiers}
 
 Bí o ṣe ń dàgbà, ṣètò ìrànwọ́ gẹ́gẹ́ bí ètò:
 
@@ -48,9 +48,9 @@ Bí o ṣe ń dàgbà, ṣètò ìrànwọ́ gẹ́gẹ́ bí ètò:
 
 [àfikún Tikẹ́ẹ̀tì Ìrànwọ́](/addons/support-tickets) lè ràn wá lọ́wọ́ láti ṣàkóso àwọn ìbéèrè ìrànwọ́ nínú pẹpẹ náà.
 
-## Àwọn Iṣẹ́ Ìsanwó
+## Àwọn Iṣẹ́ Ìsanwó {#billing-operations}
 
-### Àwọn Ìsanwó Tó Ń Tún Ṣẹlẹ̀
+### Àwọn Ìsanwó Tó Ń Tún Ṣẹlẹ̀ {#recurring-payments}
 
 Ultimate Multisite ń ṣàkóso ìsanwó tó ń tún ṣẹlẹ̀ láìfọwọ́sí nípasẹ̀ payment gateway rẹ. Iṣẹ́ rẹ ni láti bójú tó:
 
@@ -58,7 +58,7 @@ Ultimate Multisite ń ṣàkóso ìsanwó tó ń tún ṣẹlẹ̀ láìfọwọ
 - **Dunning**: Ṣètò ọgbọ́n ìgbìmọ̀ ìsanwó túnṣe láìfọwọ́sí nípasẹ̀ payment gateway rẹ (Stripe ń ṣe èyí dáadáa)
 - **Ìbéèrè fífi fagi lé**: Lóye ìdí tí àwọn oníbàárà fi ń lọ. Gbogbo fífi fagi lé jẹ́ ìfèsì.
 
-### Ṣíṣàkóso Àwọn Memberships
+### Ṣíṣàkóso Àwọn Memberships {#managing-memberships}
 
 Lọ sí **Ultimate Multisite > Memberships** láti:
 
@@ -69,13 +69,13 @@ Lọ sí **Ultimate Multisite > Memberships** láti:
 
 Wo [Ṣíṣàkóso Àwọn Memberships](/user-guide/administration/managing-memberships) fún ìtọ́kasí kíkún.
 
-### Ìwé Ìdíyelé
+### Ìwé Ìdíyelé {#invoicing}
 
 Rí i dájú pé a ń dá àwọn ìwé ìdíyelé jáde dáadáa fún gbogbo ìsanwó. Àwọn oníbàárà lè nílò ìwé ìdíyelé fún ìròyìn ináwó ìṣòwò. Wo [Ṣíṣàkóso Àwọn Ìsanwó àti Ìwé Ìdíyelé](/user-guide/administration/managing-payments-and-invoices).
 
-## Ìtọ́jú Pẹpẹ
+## Ìtọ́jú Pẹpẹ {#platform-maintenance}
 
-### Àwọn Ìmúdójúìwọ̀n WordPress àti Àfikún
+### Àwọn Ìmúdójúìwọ̀n WordPress àti Àfikún {#wordpress-and-plugin-updates}
 
 Gẹ́gẹ́ bí alábòójútó nẹ́tíwọ́ọ̀kì, ìwọ ló ní ojúṣe fún:
 
@@ -88,14 +88,14 @@ Gẹ́gẹ́ bí alábòójútó nẹ́tíwọ́ọ̀kì, ìwọ ló ní ojúṣ
 Ìmúdójúìwọ̀n tó bàjẹ́ kan gbogbo ojúlé oníbàárà lórí nẹ́tíwọ́ọ̀kì rẹ. Máa dán àwọn ìmúdójúìwọ̀n wò lórí ẹ̀dà ìdánwò ti nẹ́tíwọ́ọ̀kì rẹ kọ́kọ́ nígbà gbogbo.
 :::
 
-### Ààbò
+### Ààbò {#security}
 
 - Jẹ́ kí gbogbo software wà ní imúdójúìwọ̀n tuntun
 - Lo àwọn ọ̀rọ̀ aṣínà tó lágbára àti ìfọwọ́sí àfọwọ́kọ-méjì fún àwọn Account alábòójútó
 - Bójú tó ìṣe tí ó dà bí ohun ìfura
 - Ní ètò fún àwọn ìṣẹ̀lẹ̀ ààbò
 
-### Ìṣiṣẹ́
+### Ìṣiṣẹ́ {#performance}
 
 Bí nẹ́tíwọ́ọ̀kì rẹ ṣe ń dàgbà, bójú tó:
 
@@ -105,9 +105,9 @@ Bí nẹ́tíwọ́ọ̀kì rẹ ṣe ń dàgbà, bójú tó:
 
 Ròyìn fífi caching (page cache, object cache) àti CDN sílẹ̀ bí o kò bá tíì ṣe bẹ́ẹ̀. [Ìṣepọ̀ Cloudflare](/user-guide/host-integrations/cloudflare) ń ṣàkóso ọ̀pọ̀ èyí.
 
-## Ṣíṣàkóso Ìgbésíayé Oníbàárà
+## Ṣíṣàkóso Ìgbésíayé Oníbàárà {#customer-lifecycle-management}
 
-### Dídín Churn Kù
+### Dídín Churn Kù {#reducing-churn}
 
 Churn ni ìpín ọgọ́rùn-ún àwọn oníbàárà tí wọ́n fagi lé ní oṣù kọ̀ọ̀kan. Fún ìṣòwò subscription, dídín churn kù ṣe pàtàkì bí gbígba àwọn oníbàárà tuntun.
 
@@ -119,7 +119,7 @@ Churn ni ìpín ọgọ́rùn-ún àwọn oníbàárà tí wọ́n fagi lé ní 
 - Wọn rí aṣàyàn míràn tó din owó kù → fi iye àgbègbè pàtó rẹ hàn gbangba
 - Ìṣòwò wọn ti pa → kò ṣeé yẹra fún, ṣùgbọ́n tọpinpin èyí lọ́tọ̀
 
-### Fífún Àwọn Ìgbésókè Ní Ìwúrí
+### Fífún Àwọn Ìgbésókè Ní Ìwúrí {#encouraging-upgrades}
 
 Ó yẹ kí a fún àwọn oníbàárà lórí Starter tí wọ́n ń ṣàṣeyọrí ní ìwúrí láti ṣe ìgbésókè:
 
@@ -127,7 +127,7 @@ Churn ni ìpín ọgọ́rùn-ún àwọn oníbàárà tí wọ́n fagi lé ní 
 - Fi email tí a dojúkọ ránṣẹ́ tó ń ṣàfihàn àwọn features ètò Growth tí wọ́n lè jèrè nínú rẹ
 - Ṣàfihàn ohun tí àwọn oníbàárà Growth/Pro ti kọ́
 
-### Àwọn Ìpolongo Ìpadàbọ̀
+### Àwọn Ìpolongo Ìpadàbọ̀ {#win-back-campaigns}
 
 Nígbà tí oníbàárà bá fagi lé:
 
@@ -135,30 +135,30 @@ Nígbà tí oníbàárà bá fagi lé:
 2. Dáhùn sí ìṣòro wọn bí ó bá ṣeé ṣe
 3. Fún wọn ní ẹdinwo láti padà (ọjọ́ 30-60 lẹ́yìn fífi fagi lé)
 
-## Àwọn Ìlànà Ọ̀sọ̀ọ̀sẹ̀ àti Oṣooṣù
+## Àwọn Ìlànà Ọ̀sọ̀ọ̀sẹ̀ àti Oṣooṣù {#weekly-and-monthly-routines}
 
-### Ọ̀sọ̀ọ̀sẹ̀
+### Ọ̀sọ̀ọ̀sẹ̀ {#weekly}
 
 - Ṣàtúnyẹ̀wò àwọn ìforúkọsílẹ̀ tuntun àti fífi fagi lé
 - Dáhùn sí gbogbo tikẹ́ẹ̀tì ìrànwọ́ tí ó ṣí
 - Ṣàyẹ̀wò ìṣiṣẹ́ pẹpẹ àti uptime
 - Ṣàtúnyẹ̀wò ìsanwó èyíkéyìí tó kùnà
 
-### Oṣooṣù
+### Oṣooṣù {#monthly}
 
 - Ṣàlàyé àwọn òṣùwọ̀n pàtàkì (MRR, churn, àwọn oníbàárà tuntun, àwọn ìgbésókè)
 - Fi àwọn ìmúdójúìwọ̀n WordPress àti àfikún sílẹ̀ (lẹ́yìn ìdánwò staging)
 - Ṣàtúnyẹ̀wò kí o sì ṣe ìmúdójúìwọ̀n ibi ìmọ̀ dá lórí àwọn àpẹẹrẹ ìrànwọ́
 - Fi newsletter tàbí ìmúdójúìwọ̀n ránṣẹ́ sí àwọn oníbàárà (àwọn features tuntun, ìmọ̀ràn, ìròyìn ilé-iṣẹ́ eré-idárayá)
 
-### Lẹẹ́kan Ní Oṣù Mẹ́ta
+### Lẹẹ́kan Ní Oṣù Mẹ́ta {#quarterly}
 
 - Ṣàtúnyẹ̀wò ìdíyelé pẹ̀lú àwọn olùdíje àti ìfèsì oníbàárà
 - Ṣàyẹ̀wò àwọn àwòrán àwòṣe -- ṣé wọ́n nílò ìtúnṣe tuntun?
 - Ṣàyẹ̀wò agbára hosting -- ṣé o nílò láti gòkè sí i?
 - Ṣàtúnyẹ̀wò kí o sì mú ìbẹ̀rẹ̀ lílò sunwọ̀n sí i dá lórí data activation
 
-## Ohun Tí A Kọ́ Ní Ẹ̀kọ́ Yìí
+## Ohun Tí A Kọ́ Ní Ẹ̀kọ́ Yìí {#what-we-built-this-lesson}
 
 - **Àwọn ìlànà ìbójútó ojoojúmọ́** fún uptime, ìforúkọsílẹ̀, ìsanwó, àti ìrànwọ́
 - **Ètò ìrànwọ́ alápìnlẹ̀** tí ó bá àwọn ìpele ètò mu

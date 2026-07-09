@@ -3,7 +3,7 @@ title: Loga Athruithe GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Loga Athruithe GoCardless
+# Loga Athruithe GoCardless {#gocardless-changelog}
 
 Leagan: 1.0.3 - Eisithe ar 2026-05-05
 * Ceartú: Glantar suíomhanna ar feitheamh dílleachtacha anois nuair a chuirtear ballraíocht GoCardless ar ceal agus í i staid ar feitheamh nó ar fionraí

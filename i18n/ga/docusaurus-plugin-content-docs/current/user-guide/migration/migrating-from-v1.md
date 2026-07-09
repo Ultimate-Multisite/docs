@@ -3,9 +3,9 @@ title: Migré ó V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migréid ó V1
+# Migréid ó V1 {#migrating-from-v1}
 
-## Tá Ultimate Multisite shonadh ó fáil ar an fáil 1.x a bhfáine 2.x.
+## Tá Ultimate Multisite shonadh ó fáil ar an fáil 1.x a bhfáine 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Is é Ultimate Multisite 2.0 agus níos lár, réimseán leathúil (complete rewrite) de bhfáine codebase, rud a bheith go mbeolaí go léir idir an fáil uile agus an nua. Mar é sin, nuair a bhíonn tú ag iarraidh a chur ar aghaidh ó 1.x go 2.x, caithfidh do chuid data a bheith migréid (migrated) go format atá an nua réimseáin ag fháil.
 
@@ -15,7 +15,7 @@ Céadfaidh an leas seo a chur in iúl conas a ardúíonn an migrator, cad a bhei
 
 _**IMPORTANT: Beidh tú ag ardú ó fáil 1.x go fáil 2.0, le ghnáthach, caithfidh tú a bheith cinnte go bhfuil duine (backup) ar do database an site.**_
 
-## Ar đầustáidí
+## Ar đầustáidí {#first-steps}
 
 An chéad chuid éisteachta is é: dlúint an zip file de bhplugin agus ardúsa fáil 2.0 ar do dashboard admin na h-nós.
 
@@ -47,19 +47,19 @@ An t-amach seo is é a chur ar fáil leat chun cur chuid lúchán lisens (licens
 
 Tar éis an cur ábraint do lúchán lisens, beidh tú ag iarraidh cur ábraint an cur síosán le cur ábraint **Install** ar an amach seo. Beidh sé ag cur tú go dtí na fáilí a ginearálta is iad ag cur síosán 2.0 a bheith ag eolais agus a thabhairt.
 
-## Anois, an t-amach ar chruinne
+## Anois, an t-amach ar chruinne {#now-the-migration}
 
 Tá cur chuige (migrator) le feidhm sé a bhí ag an t-amach, a bhfuil fáil ar chuid deacair a bheith agat chun a bheith cinnte go bhfuil gach data Ultimate Multisite agat ag éirí a bheith ag teacht. Cliom ar an nútair **Run Check** chun an chéad chéim a dhéanamh.
 
 Ar ngo d'fhéadfadh tú do chuid deacair a bheith le poistéad **le** éirí, nó **le** éirí ná.
 
-### Le Éirí
+### Le Éirí {#with-error}
 
 Má thabhairt an t-amach ag éirí, leat labhairt le spás cúrama (support team) atá ag an chéile chun cabhrú leat iad a fháil ar an éirí. Déan cinnte go bhfuil tú **ag cur log éirí** nuair a chur in áit (ticket). Is féidir leat an log a shlónadh nó is féidir leat cliath ar an link atá ag cur isteach "contact our support team". Beidh sé ag luga an widget cúrama ar an chuid faoi chéile, ag cur iarrachtaí ar fáil chun na log éirí a bheith ag cur in áit sa chláir.
 
 _**Mar go bhfuil an t-amach ag iarraidh éirí, ní féidir leat a bheith ag teacht ar aghaidh le teacht 2.0. Is féidir leat ansin a gcurt ar chéad 1.x chun cur an t-amach agat ar chuid deacair go dtí a fháil ar an éirí.**_
 
-### Le Éirí Ná
+### Le Éirí Ná {#without-error}
 
 Má níl aon éirí ag an t-amach, beidh tú le poistéad saolais agus nútair **Migrate** ar an chuid faoi chéile a bheith agat chun teacht ar aghaidh le teacht. Ar an cur chuige seo, beidh tú ag cur isteach ar fáil do chuid deacair a bheith le poistéad (backup) ar an bhfáth agus is féidir leat teacht ar aghaidh ar an chéad chéim, a bhfuil sé ag cur iarrachtaí ar fáil. Cliom ar **Migrate** má tá tú an t-amach agat.
 

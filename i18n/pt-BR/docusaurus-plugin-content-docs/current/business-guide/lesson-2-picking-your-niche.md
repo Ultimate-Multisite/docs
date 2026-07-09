@@ -3,19 +3,19 @@ title: 'Lição 2: Escolhendo Seu Nicho'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lição 2: Escolhendo Seu Nicho
+# Lição 2: Escolhendo Seu Nicho {#lesson-2-picking-your-niche}
 
 Na Lição 1, estabelecemos por que nicho é melhor do que ser genérico. Agora, você precisa escolher o seu. Esta lição fornece uma estrutura para encontrar e validar um nicho antes de investir tempo construindo para ele.
 
-## Onde Paramos
+## Onde Paramos {#where-we-left-off}
 
 Definimos o conceito FitSite: uma plataforma de site para estúdios de fitness. Mas como chegamos especificamente aos estúdios de fitness? Esta lição detalha o processo para que você possa aplicá-lo e encontrar o seu próprio nicho.
 
-## Os Três Critérios
+## Os Três Critérios {#the-three-criteria}
 
 Um bom nicho para uma plataforma de site deve atender a três condições:
 
-### 1. Eles Precisam de Sites, Mas Têm Dificuldade em Conseguir Bons
+### 1. Eles Precisam de Sites, Mas Têm Dificuldade em Conseguir Bons {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Procure por setores onde:
 
@@ -26,7 +26,7 @@ Procure por setores onde:
 
 **Estúdios de fitness se encaixam**: os membros esperam encontrar horários de aulas, preços e reservas online. A maioria dos sites de estúdios está desatualizada ou construída em modelos genéricos que não servem ao propósito.
 
-### 2. Os Negócios Podem Pagar uma Assinatura Mensal
+### 2. Os Negócios Podem Pagar uma Assinatura Mensal {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Seus clientes-alvo precisam ser:
 
@@ -36,7 +36,7 @@ Seus clientes-alvo precisam ser:
 
 **Estúdios de fitness se encaixam**: eles já pagam por softwares de reserva, processamento de pagamentos e ferramentas de marketing. Uma assinatura de site é uma adição natural.
 
-### 3. Eles Interagem Entre Si
+### 3. Eles Interagem Entre Si {#3-they-talk-to-each-other}
 
 Os melhores nichos têm:
 
@@ -46,9 +46,9 @@ Os melhores nichos têm:
 
 **Estúdios de fitness se encaixam**: os proprietários de estúdios comparecem a eventos da indústria fitness, participam de comunidades online e frequentemente compartilham ferramentas e serviços com colegas.
 
-## Como Encontrar Candidatos a Nichos
+## Como Encontrar Candidatos a Nichos {#how-to-find-niche-candidates}
 
-### Comece pelo Que Você Sabe
+### Comece pelo Que Você Sabe {#start-with-what-you-know}
 
 Sua experiência atual é uma vantagem. Considere:
 
@@ -56,7 +56,7 @@ Sua experiência atual é uma vantagem. Considere:
 - Hobbies ou interesses onde você entende a comunidade
 - Redes profissionais às quais você já pertence
 
-### Procure por Sinais de Dor
+### Procure por Sinais de Dor {#look-for-pain-signals}
 
 Pesquise evidências de que os negócios em um nicho têm dificuldades com sites:
 
@@ -65,7 +65,7 @@ Pesquise evidências de que os negócios em um nicho têm dificuldades com sites
 - Observe os sites reais do nicho — a maioria é ruim?
 - Verifique se existem concorrentes e quão bem eles atendem ao mercado
 
-### Avalie a Economia
+### Avalie a Economia {#evaluate-the-economics}
 
 Para cada nicho candidato, estime:
 
@@ -73,11 +73,11 @@ Para cada nicho candidato, estime:
 - **Disposição para pagar**: Quanto eles gastam atualmente em ferramentas semelhantes?
 - **Potencial de valor vitalício**: Esses negócios são estáveis ou tendem a desistir rapidamente?
 
-## Validando Seu Nicho
+## Validando Seu Nicho {#validating-your-niche}
 
 Antes de construir qualquer coisa, valide a demanda:
 
-### Converse com Potenciais Clientes
+### Converse com Potenciais Clientes {#talk-to-potential-customers}
 
 Entre em contato com 10 a 15 proprietários de negócios em seu nicho-alvo. Pergunte:
 
@@ -88,17 +88,17 @@ Entre em contato com 10 a 15 proprietários de negócios em seu nicho-alvo. Perg
 
 Você ainda não está vendendo. Você está ouvindo.
 
-### Analise o Cenário Competitivo
+### Analise o Cenário Competitivo {#check-competitor-landscape}
 
 - **Sem concorrentes**: Pode significar falta de demanda, ou pode significar uma oportunidade inexplorada. As conversas com os clientes dirão qual é.
 - **Poucos concorrentes**: Bom sinal. Valida a demanda. Estude o que eles fazem bem e onde eles falham.
 - **Muitos concorrentes**: Mais difícil de entrar, mas ainda possível se você conseguir se diferenciar claramente.
 
-### Crie uma Landing Page
+### Crie uma Landing Page {#build-a-landing-page}
 
 Antes de construir a plataforma, crie uma landing page simples que descreva sua solução de nicho e colete inscrições por e-mail. Execute um pequeno anúncio segmentado para testar o interesse. Se as pessoas se inscreverem, você tem validação.
 
-## Aplicando Isso ao FitSite
+## Aplicando Isso ao FitSite {#applying-this-to-fitsite}
 
 Veja como o FitSite se saiu em relação aos critérios:
 
@@ -112,7 +112,7 @@ Veja como o FitSite se saiu em relação aos critérios:
 
 A validação confirmou a oportunidade. Agora, construímos.
 
-## Ideias de Nichos para Considerar
+## Ideias de Nichos para Considerar {#niche-ideas-to-consider}
 
 Se fitness não é o seu mercado, aqui estão outros nichos que atendem aos critérios:
 
@@ -127,7 +127,7 @@ Se fitness não é o seu mercado, aqui estão outros nichos que atendem aos crit
 
 Cada um desses tem as mesmas características: necessidades de site claras, capacidade de pagamento e boca a boca da comunidade.
 
-## O Que Construímos Nesta Lição
+## O Que Construímos Nesta Lição {#what-we-built-this-lesson}
 
 - **Uma estrutura de seleção de nicho**: três critérios para avaliar qualquer nicho
 - **Métodos de validação**: conversas com clientes, análise de concorrentes, testes de landing page

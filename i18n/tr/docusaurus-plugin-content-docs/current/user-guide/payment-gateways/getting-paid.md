@@ -3,13 +3,13 @@ title: Ödeme Alma
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ödeme Alma (v2)
+# Ödeme Alma (v2) {#getting-paid-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x için geçerlidir.**_
 
 Ultimate Multisite yerleşik bir üyelik ve faturalandırma sistemine sahiptir. Faturalandırma sistemimizin çalışması için e-ticarette kullanılan en yaygın ödeme ağ geçitlerini entegre ettik. Ultimate Multisite içindeki varsayılan ödeme ağ geçitleri _Stripe_ , _PayPal_ ve Manuel Ödeme’dir. Ayrıca ilgili add-on’larını kurarak ödeme almak için _WooCommerce_ , _GoCardless_ ve _Payfast_ de kullanabilirsiniz.
 
-## Temel Ayarlar
+## Temel Ayarlar {#basic-settings}
 
 Bu ödeme ağ geçitlerinden herhangi birini Ultimate Multisite ödeme ayarları altında yapılandırabilirsiniz. Bunu **Ultimate Multisite menüsü > Settings > Payments** bölümüne giderek bulabilirsiniz.
 
@@ -39,7 +39,7 @@ Bu, gateway yalnızca tek seferlik ödemeleri tahsil edebildiğinde bir üyeliğ
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Ağ geçitleri nerede bulunur:
+## Ağ geçitleri nerede bulunur: {#where-to-find-the-gateways}
 
 Ödeme ağ geçitlerini aynı sayfada kurabilirsiniz ( **Ultimate Multisite > Settings > Payments**). **etkin ödeme ağ geçitleri** bölümünün hemen altında şunları görebilirsiniz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ve _Manual_.
 
@@ -67,7 +67,7 @@ Her ödeme ağ geçidi için, kurulum adımlarında size rehberlik edecek özel 
 
 Şimdi, ödeme ağ geçidiniz olarak _WooCommerce_ , _GoCardless_ veya _Payfast_ kullanmak istiyorsanız, **bunların add-on’larını kurmanız ve yapılandırmanız** gerekir.
 
-### WooCommerce add-on nasıl kurulur:
+### WooCommerce add-on nasıl kurulur: {#how-to-install-the-woocommerce-add-on}
 
 _Stripe_ ve _PayPal_ bazı ülkelerde mevcut olmadığını, bunun da Ultimate Multisite kullanıcılarının plugin’imizi etkili şekilde kullanmasını sınırladığını veya engellediğini anlıyoruz. Bu yüzden çok popüler bir e-ticaret plugin’i olan _WooCommerce,_ ile entegrasyon için bir add-on oluşturduk. Dünyanın dört bir yanındaki geliştiriciler, farklı ödeme ağ geçitlerini buna entegre etmek için add-on’lar oluşturdu. Ultimate Multisite faturalandırma sistemiyle kullanabileceğiniz ödeme ağ geçitlerini genişletmek için bundan yararlandık.
 
@@ -95,7 +95,7 @@ Etkinleştirdikten sonra, web sitenizde WooCommerce plugin hâlâ kurulu ve etki
 
 WooCommerce Integration eklentisi hakkında daha fazla okumak için **buraya tıklayın**.
 
-### GoCardless eklentisi nasıl kurulur:
+### GoCardless eklentisi nasıl kurulur: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ eklentisini kurma adımları, _WooCommerce_ eklentisiyle büyük ölçüde aynıdır. Lütfen eklentiler sayfasına gidin ve **Ultimate Multisite: GoCardless Gateway** eklentisini seçin.
 
@@ -111,7 +111,7 @@ Kurulum tamamlandıktan sonra pluginler sayfasına yönlendirileceksiniz. Burada
 
 _GoCardless_ gateway ile nasıl başlayacağınızı öğrenmek için **bu makaleyi okuyun**.
 
-### Payfast eklentisi nasıl kurulur:
+### Payfast eklentisi nasıl kurulur: {#how-to-install-the-payfast-add-on}
 
 Eklentiler sayfasına gidin ve **Ultimate Multisite: Payfast Gateway** eklentisini seçin.
 

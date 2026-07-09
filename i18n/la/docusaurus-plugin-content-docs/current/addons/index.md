@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Additamenta Ultimate Multisite
+# Additamenta Ultimate Multisite {#ultimate-multisite-addons}
 
 Additamenta Ultimate Multisite facultatibus et integrationibus additis amplificant. Plurima additamenta pretio constant et emi possunt ex [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Installatio
+## Installatio {#installation}
 
 Additamenta duobus modis institui possunt:
 
 1. **Per Paginam Additamentorum** -- Perge ad paginam administrationis additamentorum siti tui in administratorio WordPress
 2. **Manualis Exoneratio** -- Exonera ex [ratione tua](https://ultimatemultisite.com/my-account/downloads/) et per Plugin > Novum Adde onerato
 
-## Additamenta Praesto
+## Additamenta Praesto {#available-addons}
 
 | Additamentum | Descriptio |
 |-------|-------------|

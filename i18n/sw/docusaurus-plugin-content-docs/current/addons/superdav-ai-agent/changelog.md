@@ -3,11 +3,11 @@ title: Kumbukumbu ya mabadiliko
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Kumbukumbu ya mabadiliko
+# Kumbukumbu ya mabadiliko {#changelog}
 
-## 1.18.0 — Ilitolewa tarehe 2026-06-29
+## 1.18.0 — Ilitolewa tarehe 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Mpya
+### Mpya {#new}
 
 - **Zana za Google Calendar** — soma kalenda na matukio yaliyosanidiwa kwa otomatiki zinazozingatia ratiba
 - **Ulinganishaji wa mawasiliano na visaidizi vya wahudhuriaji** — linganisha washiriki wa kalenda na watumiaji wa tovuti na mawasiliano
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Mtoa huduma wa TextBee SMS** — tuma arifa za ujumbe wa maandishi zilizosanidiwa kupitia TextBee
 - **Kifurushi cha mshirika cha Advanced** — ongeza zana za trusted-developer filesystem, database, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, na benchmark zinazosambazwa kando na toleo la WordPress.org
 
-### Imeboreshwa
+### Imeboreshwa {#improved}
 
 - **Usanidi wa huduma inayosimamiwa ya Superdav** — ongeza endpoint za huduma iliyopangishwa na utoaji wa muunganisho otomatiki kwa tovuti zinazotumika
 - **Ufungashaji wa toleo** — jenga core na ZIP za Advanced tofauti, chapisha zote mbili kwenye GitHub, na tuma kifurushi cha core pekee kwa WordPress.org
 
-### Imerekebishwa
+### Imerekebishwa {#fixed}
 
 - **Utegemezi wa maombi ya AI** — boresha uteuzi wa modeli, muda wa juu wa maombi, modeli chaguomsingi ya usanidi, ushughulikiaji wa maandishi ya hoja, na mwongozo wa kujaribu tena kwa miito batili ya zana
 - **Uimarishaji wa kalenda na vikumbusho** — imarisha tokeni za Google Calendar na uondoaji wa rudufu za vikumbusho
 - **Uanzishaji na urejeleaji wa idhini** — rekebisha uzinduzi wa uanzishaji wa frontend na urejeleaji wa uwezo uliothibitishwa
 - **Masuala ya ukaguzi wa ufungashaji wa WordPress.org** — shughulikia maoni ya ukaguzi wa ufungashaji kwa toleo la core
 
-## 1.16.0 — Ilitolewa tarehe 2026-05-20
+## 1.16.0 — Ilitolewa tarehe 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Mpya
+### Mpya {#new-1}
 
 - **Uwezo wa Generate Logo SVG** — Theme Builder sasa inaweza kutengeneza na kupachika SVG za nembo maalum zenye usafishaji salama kwa namespace
 - **Upakiaji wa picha katika mahojiano ya ugunduzi** — mahojiano ya ugunduzi ya Theme Builder sasa yanajumuisha hatua ya kupakia picha kwa muktadha tajiri zaidi wa muundo
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Kigezo cha lebo ya urambazaji** — uwezo wa Create Menu sasa unaunga mkono `navigation_label` tofauti iliyotenganishwa na kichwa cha ukurasa
 - **Upatikanaji wa zana ya Kiwango cha 1** — sd-ai-agent/site-scrape sasa ni zana ya Kiwango cha 1 inayopatikana kwa chaguomsingi katika Theme Builder
 
-### Imerekebishwa
+### Imerekebishwa {#fixed-1}
 
 - **Cache ya AI Client** — sasa inaungwa mkono na transients kwa udumishaji wa kuvuka maombi, ikizuia upotevu wa data kwenye majukumu ya agent yanayoendeshwa kwa muda mrefu
 - **Viungo vya vitendo vya safu ya plugin** — vimesahihishwa na kubadilishwa majina kwa uwazi
 
-## 1.10.0 — Ilitolewa tarehe 2026-05-05
+## 1.10.0 — Ilitolewa tarehe 2026-05-05 {#1100--released-on-2026-05-05}
 
-### Mpya
+### Mpya {#new-2}
 
 - **Utafutaji wa intaneti wa Tavily** — ongeza Tavily kama mtoa huduma wa utafutaji kwa matokeo tajiri zaidi ya utafutaji wa intaneti pamoja na Brave Search
 - **Ujuzi uliojengewa ndani unaotambua mandhari** — miongozo ya ujuzi ya Block Themes, Classic Themes, Kadence Blocks, na Kadence Theme sasa inasafirishwa pamoja na plugin
 - **Uwezo wa fomu ya mawasiliano ya kijenzi cha tovuti** — ongeza fomu ya mawasiliano kwenye ukurasa wowote moja kwa moja kutoka kiolesura cha gumzo
 
-### Imeboreshwa
+### Imeboreshwa {#improved-1}
 
 - **Ujumuishaji wa WooCommerce umefanyiwa refactor** — sasa hutumia API asili za WooCommerce kwa utegemezi na upatanifu bora
 - **Orodha ya watoa huduma hujisasisha kiotomatiki** — wakati plugin yoyote inapowashwa au kuzimwa
 
-### Imerekebishwa
+### Imerekebishwa {#fixed-2}
 
 - **Uwezo wa navigate-to** — imerekebisha mzunguko usioisha wa kupakia upya kwenye baadhi ya kurasa za msimamizi
 - **Uwezo wa list-posts** — sasa hutatua kwa usahihi majina ya kategoria na tagi kuwa slugs

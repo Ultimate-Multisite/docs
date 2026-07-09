@@ -3,11 +3,11 @@ title: WP-CLI Verwysing
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Verwysing
+# WP-CLI Verwysing {#wp-cli-reference}
 
 Gratis AI Agent skep 'n `wp gratis-ai-agent` kommando-familie vir die benchmark van die agent, die bestuur van vermoëns, en die navraag van die agent se status vanaf die kommando-lyn. Alle kommando's vereis WP-CLI 2.0 of hoër.
 
-## Instalering
+## Instalering {#installation}
 
 Die WP-CLI kommando's word outomaties geregistreer wanneer die plugin aktief is. Verifieer met:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Voer die Agent Capabilities benchmark suite uit — 'n stel komplekse, meer-stappe prompts wat die volle vermoë-omvang toets. Gebruik dit om modelprestasie te evalueer, AI-verskaffers te vergelyk, of vermoë-pakkette te valideer voordat jy dit in produksie implementeer.
 
-### Sinopsis
+### Sinopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Opsies
+### Opsies {#options}
 
 | Opsie | Beskrywing |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Uitvoerformaat: `table` (standaard), `json`, `csv` |
 | `--save` | Stoor die benchmark-resultate in die database vir historiese vergelyking |
 
-### Voorbeelde
+### Voorbeelde {#examples}
 
 Voer die volledige benchmark suite uit met die huidige verskaffer en model:
 
@@ -57,7 +57,7 @@ Voer uit teen 'n spesifieke model en stoor resultate:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Uitvoer
+### Uitvoer {#output}
 
 Die benchmark voer een ry per vraag uit met die volgende kolomme:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Pas 'n donker tema-preset toe           100    apply_th
 ...
 ```
 
-### Benchmark Vrae
+### Benchmark Vrae {#benchmark-questions}
 
 Die standaard suite sluit in:
 
@@ -95,11 +95,11 @@ Bykomende vrae kan via die `gratis_ai_agent_benchmark_questions` filter geregist
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Bestuur geïnstalleerde vermoëns en vermoë-pakkette.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Lys al geregistreerde vermoëns, hul bron (kern of pakket), en hul huidige status.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Laai en aktiveer 'n vermoë-pakket uit die register.
 
@@ -151,7 +151,7 @@ Sukses: Gratis-ai-agent-woocommerce geïnstalleer. Het 3 vermoëns bygevoeg: cre
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Deaktiveer 'n spesifieke vermoëns sonder om die pakket te verwyder. Dit is nuttig vir die beperking van die agent se omvang op 'n gegewe webwerf.
 
@@ -168,7 +168,7 @@ Sukses: Vermoëns 'delete_post_type' gedeaktiveer.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Aktiveer 'n voorheen gedeaktiveerde vermoëns.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Toon die huidige agent-konfigurasie en konektiwiteitsstatus.
 
@@ -200,7 +200,7 @@ Opsies Blokkering: 18 items
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Toon onlangse agent-aktiwiteite uit die debug-log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Reset agent-toestand: maak ingespuuite CSS skoon, verwyder agent-geregistreerde CPT's en taksonomieë, reset globale style, en maak die agent se opsies-cache leeg. Verwyder nie die plugin of sy instellings nie.
 
@@ -241,7 +241,7 @@ Sukses: Agent-toestand gereseteer. Skoon: 2 posgipes, 1 taksonomie, aangepaste C
 
 ---
 
-## Uitgangskodes
+## Uitgangskodes {#exit-codes}
 
 Alle kommando's verlaat `0` by sukses. Nie-nul uitgangskodes:
 

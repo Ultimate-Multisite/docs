@@ -3,17 +3,17 @@ title: Momwe Mungakhazikitsire Kulumikiza Madomaini
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Momwe Mungakonzekere Kulumikiza Domain (v2)
+# Momwe Mungakonzekere Kulumikiza Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**CHIDZIWITSO CHOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite mtundu wa 2.x.**_
 
 Chimodzi mwa zinthu zamphamvu kwambiri pa netiweki yapamwamba ndi kuthekera kopatsa makasitomala athu mwayi wolumikiza domain ya pamwamba ku ma site awo. Pomaliza, ndi iti yomwe imawoneka yaukadaulo kwambiri: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) kapena [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ndi chifukwa chake Ultimate Multisite imapereka mbali imeneyo yomangidwamo, popanda kufunikira kogwiritsa ntchito ma plugin a chipani chachitatu.
 
-## Kodi kulumikiza domain ndi chiyani?
+## Kodi kulumikiza domain ndi chiyani? {#whats-domain-mapping}
 
 Monga dzinalo likusonyezera, kulumikiza domain ndi kuthekera komwe Ultimate Multisite imapereka kolandira pempho la domain yapadera ndikulumikiza pempholo ku site yoyenera mu netiweki yomwe ili ndi domain imeneyo yolumikizidwa.
 
-### Momwe mungakhazikitsire kulumikiza domain pa Netiweki yanu ya Ultimate Multisite
+### Momwe mungakhazikitsire kulumikiza domain pa Netiweki yanu ya Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Kulumikiza domain kumafuna kukonzekera kwina kwa inu kuti kugwire ntchito. Mwamwayi, Ultimate Multisite imachita yokha ntchito yovuta kwa inu kuti muthe kukwaniritsa zofunikira mosavuta.
 
@@ -45,7 +45,7 @@ Koma musanayambe kulumikiza domain yapadera ku imodzi mwa ma subsite mu netiweki
 
 ###
 
-### Kuonetsetsa kuti makonzedwe a DNS a domain akonzedwa moyenera
+### Kuonetsetsa kuti makonzedwe a DNS a domain akonzedwa moyenera {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Kuti kulumikiza kugwire ntchito, muyenera kuonetsetsa kuti domain yomwe mukukonzekera kulumikiza ikuloza ku IP address ya Netiweki yanu. Dziwani kuti mukufunika IP address ya Netiweki - IP address ya domain komwe Ultimate Multisite yayikidwa - osati IP address ya domain yapadera yomwe mukufuna kulumikiza. Kuti mufufuze IP address ya domain inayake, tikupangira kupita ku [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), mwachitsanzo.
 
@@ -55,7 +55,7 @@ Ngati mukupeza vuto kuti izi zigwire ntchito, **lumikizanani ndi chithandizo cha
 
 Ngati mukukonzekera kulola makasitomala anu kulumikiza ma domain awo okha, adzayenera kuchita ntchito ya gawo ili okha. Awalozereni ku dongosolo la chithandizo la wolembetsa wawo ngati apeza kuti sangathe kupanga A Record.
 
-### Kulumikiza dzina la domain yapadera monga Super Admin
+### Kulumikiza dzina la domain yapadera monga Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Mukalowa monga super admin pa netiweki yanu, mukhoza kuwonjezera ndi kuwongolera mosavuta mayina a ma domain apadera popita pansi pa **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Ngati mudina pa dzina la domain, mudzatha kuona zosankha zina mkati mwake. Tiyen
 
 **Ndi Yotetezeka?:** Ngakhale Ultimate Multisite imayang'ana ngati domain ili ndi satifiketi ya SSL kapena ayi isanayiyambitse, mutha kusankha pamanja kuti mutsegule domain ndi kapena popanda satifiketi ya SSL. Dziwani kuti ngati website ilibe satifiketi ya SSL ndipo muyesa kuyikakamiza kutseguka ndi SSL, ingakupatseni zolakwika.
 
-### Kulumikiza dzina la custom domain ngati wogwiritsa ntchito Subsite
+### Kulumikiza dzina la custom domain ngati wogwiritsa ntchito Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Oyang'anira ma subsite angathenso kulumikiza mayina a custom domain kuchokera pa dashboard ya admin ya subsite yawo.
 
@@ -121,7 +121,7 @@ Kenako wogwiritsa ntchito akhoza kudina **Gawo Lotsatira** ndikupitiriza kuwonje
 
 Kudina **Onjezani Domain** kudzayambitsa njira yotsimikizira ndi kutenga zambiri za DNS za custom domain.
 
-### Za Kulunzanitsa Domain
+### Za Kulunzanitsa Domain {#about-domain-syncing}
 
 Kulunzanitsa Domain ndi njira imene Ultimate Multisite imawonjezera dzina la custom domain ku account yanu ya hosting ngati domain yowonjezera **kuti kulumikiza domain kugwire ntchito**.
 

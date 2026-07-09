@@ -3,7 +3,7 @@ title: Ngatur Keanggotaan
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Ngatur Keanggotaan (Managing Memberships)
+# Ngatur Keanggotaan (Managing Memberships) {#managing-memberships}
 
 Di Ultimate Multisite, anjeun bisa ngatur keanggotaan jeung akseskeun sagala langganan di jaringan anjeun. Tinjau jeung edit detail langganan saperti rencana (plans) jeung produk (products), jumlah situs, jumlah tagihan jeung frekuensi, riwayat pembayaran, sarta stempel waktu (timestamps).
 

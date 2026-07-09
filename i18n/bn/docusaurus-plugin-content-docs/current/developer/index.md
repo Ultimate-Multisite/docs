@@ -3,11 +3,11 @@ title: ডেভেলপার ডকুমেন্টেশন
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ডেভেলপার ডকুমেন্টেশন
+# ডেভেলপার ডকুমেন্টেশন {#developer-documentation}
 
 এই গাইডটি Ultimate Multisite-এর সাথে ইন্টিগ্রেট করতে, এক্সটেন্ড করতে বা এর জন্য অ্যাডন তৈরি করতে ডেভেলপারদের জন্য প্রয়োজনীয় সবকিছু সরবরাহ করে। Ultimate Multisite একটি WordPress Multisite নেটওয়ার্ককে একটি ওয়েবসাইট-হিস-এ-সার্ভিস (WaaS) প্ল্যাটফর্মে রূপান্তরিত করে।
 
-## কী কী উপলব্ধ
+## কী কী উপলব্ধ {#whats-available}
 
 - **[REST API](./rest-api/overview)** — সমস্ত এনটিটি (গ্রাহক, সাইট, মেম্বারশিপ, পেমেন্ট, পণ্য, ডোমেইন) এর জন্য সম্পূর্ণ CRUD অপারেশন, API কী অথেন্টিকেশন সহ।
 - **[Hooks Reference](./hooks/guide)** — লাইফসাইকেল ইভেন্ট এবং কাস্টমাইজেশনের জন্য ২০০+ অ্যাকশন হুক এবং ২৮০+ ফিল্টার হুক।
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Code Examples](./code-examples/)** — ডাইনামিক প্রাইসিং, সাইট প্রভিশনিং, কাস্টম লিমিটেশন এবং মাল্টি-গেটওয়ে প্রসেসিং-এর জন্য অ্যাডভান্সড প্যাটার্ন।
 - **[Addon Development](./addon-development/getting-started)** — অ্যাডন প্লাগইন তৈরির জন্য একটি কাঠামোবদ্ধ ফ্রেমওয়ার্ক।
 
-## প্রয়োজনীয়তা
+## প্রয়োজনীয়তা {#requirements}
 
 - WordPress Multisite ইনস্টলেশন
 - PHP 7.4 বা তার বেশি
 - Ultimate Multisite প্লাগইন সক্রিয় করা
 
-## Composer / Bedrock ইনস্টলেশন
+## Composer / Bedrock ইনস্টলেশন {#composer--bedrock-installation}
 
 Ultimate Multisite [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite)-এ `ultimate-multisite/ultimate-multisite` হিসাবে উপলব্ধ। Bedrock-ভিত্তিক WordPress সেটআপ এবং অন্যান্য Composer-managed এনভায়রনমেন্টের জন্য এটিই প্রস্তাবিত ইনস্টলেশন পদ্ধতি।
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## দ্রুত শুরু
+## দ্রুত শুরু {#quick-start}
 
-### REST API ব্যবহার করুন
+### REST API ব্যবহার করুন {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### ইভেন্টে হুক করুন
+### ইভেন্টে হুক করুন {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### একটি অ্যাডন তৈরি করুন
+### একটি অ্যাডন তৈরি করুন {#build-an-addon}
 
 ```bash
 # টেমপ্লেট থেকে অ্যাডন স্কাফল্ড তৈরি করুন

@@ -3,11 +3,11 @@ title: Fanondroana Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Torolàlana momba ny Hooks
+# Torolàlana momba ny Hooks {#hooks-reference}
 
 Antontan-taratasy novokarina ho azy ho an'ny **hetsika 59** sy **sivana 118** rehetra ao amin'ny Ultimate Multisite.
 
-## Hetsika
+## Hetsika {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Mitranga alohan’ny redirect fanamarinana.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Mitranga avy hatrany alohan’ny hametrahana ny cookie fanamarinana.
@@ -70,7 +70,7 @@ Antontan-taratasy novokarina ho azy ho an'ny **hetsika 59** sy **sivana 118** re
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Mandeha rehefa voatahiry ao amin'ny database ny object iray.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Mamela ny plugin developers hanampy actions amin'ny dingan'ny fanokafana hidy.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Manivana ny faharetan'ny fe-potoana fahataperan'ny cookie fanamarinana.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Manivana ny tetika redirect fanamarinana.

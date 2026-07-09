@@ -3,11 +3,11 @@ title: Wakiillo ku-dhex-jira
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents-ka Ku-dhex-jira
+# Agents-ka Ku-dhex-jira {#built-in-agents}
 
 Gratis AI Agent v1.9.0 wuxuu la yimaadaa shan agents oo ku-dhex-jira, mid kasta waxaa horay loogu habeeyey qalab diiradda saaraya, system prompt la habeeyey, iyo talooyin bilow ah oo ku habboon hawlaha caadiga ah ee aaggaas. U kala wareegidda agents-ku waxay beddeshaa waxa assistant-ku samayn karo iyo sida uu uga jawaabo — adigoon wax configuration ah samayn. Superdav AI Agent v1.18.0 wuxuu workflows-kan ku dari karaa qalabyo schedule-aware ah, diiwaannada xusuusinta, approval gates, iyo ogeysiisyada SMS marka integrations-ka la xiriira la habeeyo.
 
-## Waa Maxay Agent?
+## Waa Maxay Agent? {#what-is-an-agent}
 
 Agent kasta waa profile configuration oo magac leh kaas oo isku dara:
 
@@ -15,7 +15,7 @@ Agent kasta waa profile configuration oo magac leh kaas oo isku dara:
 - **System prompt** — tilmaamo dejinaya codka agent-ka, mudnaanta, iyo xaddidaadaha
 - **Talooyin** — prompts hore loo qoray oo lagu muujiyo interface-ka chat-ka si ay kaaga caawiyaan inaad si degdeg ah u bilowdo
 
-## Gelitaanka Xulashada Agent-ka
+## Gelitaanka Xulashada Agent-ka {#accessing-the-agent-picker}
 
 1. Fur panel-ka **Gratis AI Agent** ee WordPress admin sidebar.
 2. Guji **agent icon** ee geeska bidix-sare ee chat header-ka (icon-ku wuu is beddelaa si uu u muujiyo agent-ka firfircoon).
@@ -24,9 +24,9 @@ Agent kasta waa profile configuration oo magac leh kaas oo isku dara:
 
 Waxaad sidoo kale u kala wareegi kartaa agents inta wada-sheekaysigu socdo — system prompt-ka agent-ka cusub wuxuu dhaqan galaa laga bilaabo farriinta xigta.
 
-## Shanta Agents ee Ku-dhex-jira
+## Shanta Agents ee Ku-dhex-jira {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Diiradda:** Abuurista iyo tafatirka posts, pages, iyo contact forms.
 
@@ -47,7 +47,7 @@ Waxaad sidoo kale u kala wareegi kartaa agents inta wada-sheekaysigu socdo — s
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Diiradda:** Abuurista website dhammeystiran laga bilaabo hal prompt.
 
@@ -70,7 +70,7 @@ Waxaad sidoo kale u kala wareegi kartaa agents inta wada-sheekaysigu socdo — s
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Diiradda:** Habaynta muuqaalka — midabyo, typography, CSS, iyo block patterns.
 
@@ -87,7 +87,7 @@ Waxaad sidoo kale u kala wareegi kartaa agents inta wada-sheekaysigu socdo — s
 - *Ka qaad screenshot homepage-ka oo ii sheeg waxa aad hagaajin lahayd.*
 - *Abuur hero block pattern dib loo isticmaali karo oo leh full-width background image iyo heading dhexda la dhigay.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Diiradda:** Helidda, rakibidda, iyo maaraynta WordPress plugins.
 
@@ -105,7 +105,7 @@ Waxaad sidoo kale u kala wareegi kartaa agents inta wada-sheekaysigu socdo — s
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Diiradda:** Ka jawaabista su'aalaha ku saabsan nuxurka site-ka, settings, iyo WordPress configuration.
 
@@ -124,7 +124,7 @@ Waxaad sidoo kale u kala wareegi kartaa agents inta wada-sheekaysigu socdo — s
 
 ---
 
-## Isku-xidhyada Otomaatiga Superdav
+## Isku-xidhyada Otomaatiga Superdav {#superdav-automation-integrations}
 
 Marka isku-xidhyada Superdav AI Agent v1.18.0 la habeeyo, wakiillada ku dhex-jira waxay ka qayb qaadan karaan habraacyo otomaatig ah oo ka ammaan badan kana warqaba jadwalka:
 
@@ -138,11 +138,11 @@ Habraaca lagu taliyay: weydii wakiilka inuu diyaariyo farriinta ama falka, dib u
 
 ---
 
-## Habeynta Wakiillada
+## Habeynta Wakiillada {#customising-agents}
 
 Wakiil kasta oo ku dhex-jira waa la ballaarin karaa ama lagu beddeli karaa iyadoo la adeegsanayo filter-ka `gratis_ai_agent_agents`.
 
-### Ku daridda system prompt gaar ah wakiil jira
+### Ku daridda system prompt gaar ah wakiil jira {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Diiwaangelinta wakiil cusub
+### Diiwaangelinta wakiil cusub {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Wakiilka cusub wuxuu ka muuqdaa Xulashada Wakiilka isla marka filter-ku socdo kadib.
 
-### Ka saaridda wakiil ku dhex-jira
+### Ka saaridda wakiil ku dhex-jira {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

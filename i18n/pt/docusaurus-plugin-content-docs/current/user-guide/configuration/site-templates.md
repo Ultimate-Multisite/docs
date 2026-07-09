@@ -3,13 +3,13 @@ title: Modelos de Site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Modelos de Site (v2)
+# Modelos de Site (v2) {#site-templates-v2}
 
 _**NOTA: Este artigo refere-se à versão 2.x do Ultimate Multisite. Se você estiver usando a versão 1.x,** _ **consulte este artigo.**_
 
 Nosso objetivo ao criar uma rede premium com o Ultimate Multisite é automatizar o máximo de processos possível, dando aos nossos clientes flexibilidade e diferentes opções para escolher ao criar seus sites. Uma maneira fácil de alcançar esse equilíbrio é usar o recurso Modelos de Site (Site Templates) do Ultimate Multisite.
 
-## O que é um Modelo de Site?
+## O que é um Modelo de Site? {#what-is-a-site-template}
 
 Como o nome sugere, um Modelo de Site é um site base (boilerplate) que pode ser usado como modelo ao criar novos sites na sua rede.
 
@@ -17,7 +17,7 @@ Isso significa que você pode criar um site base, ativar diferentes plugins, def
 
 Parece ótimo, mas como eu crio um novo modelo de site? É tão simples quanto pode ser.
 
-## Criando e Editando um novo Modelo de Site
+## Criando e Editando um novo Modelo de Site {#creating-and-editing-a-new-site-template}
 
 Os Modelos de Site são apenas sites normais na sua rede. Para criar um novo modelo, você pode simplesmente ir em **Network Admin > Ultimate Multisite > Sites > Add Site**.
 
@@ -35,7 +35,7 @@ Na parte inferior do formulário, você verá um interruptor **Copiar Site** (Co
 
 ![modal de adição de modelo de site com o seletor copiar site](/img/config/site-templates-list.png)
 
-### Personalizando o conteúdo de um Modelo de Site
+### Personalizando o conteúdo de um Modelo de Site {#customizing-the-contents-of-a-site-template}
 
 Para personalizar seu modelo de site, basta navegar até o painel dele e fazer as alterações que você precisa. Você pode criar novos posts, páginas, ativar plugins e mudar o tema ativo. Você pode até ir ao Customizer e alterar todos os tipos de opções de personalização.
 
@@ -43,11 +43,11 @@ Para personalizar seu modelo de site, basta navegar até o painel dele e fazer a
 
 Todos esses dados serão copiados quando um cliente criar um novo site baseado nesse Modelo de Site.
 
-### Opções Avançadas
+### Opções Avançadas {#advanced-options}
 
 Se você sabe fazer algum código personalizado, pode usar nossa API de Busca e Substituição (Search and Replace API) para substituir automaticamente informações no novo site após a criação dele. Isso é útil para coisas como trocar nomes de empresas em uma página Sobre, mudar o e-mail de contato na página de Contato, etc.
 
-### Usando Modelos de Site
+### Usando Modelos de Site {#using-site-templates}
 
 Ok, então você criou vários Modelos de Site com diferentes designs, temas e configurações. Como torná-los úteis na sua rede agora?
 
@@ -59,7 +59,7 @@ Basicamente, existem duas abordagens que você pode usar agora (não ao mesmo te
 
   * Permitir que seus clientes escolham os modelos de site por conta própria durante o cadastro.
 
-#### Modo 1: Atribuir Modelo de Site
+#### Modo 1: Atribuir Modelo de Site {#mode-1-assign-site-template}
 
 Neste modo, seus clientes não poderão escolher um template ao criar uma conta, mas sim você definirá qual template deve ser usado em cada um dos seus Planos.
 
@@ -71,7 +71,7 @@ Isso o levará para a página **Edit Product** (Editar Produto). Na seção **Pr
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Modo 2: Escolher Template de Site Disponível
+#### Modo 2: Escolher Template de Site Disponível {#mode-2-choose-available-site-template}
 
 Neste modo, você dará uma escolha aos seus clientes durante o processo de inscrição. Eles poderão selecionar entre os diferentes templates de site que você definiu nas configurações do produto. Você tem a opção de limitar os templates de site que eles podem escolher sob o produto selecionado. Isso permitirá que você tenha conjuntos diferentes de templates de site sob cada produto, o que é ideal para destacar diferentes funções e recursos em um produto com preço mais alto.
 
@@ -79,7 +79,7 @@ Na página **Editar Produto**. Na seção **Opções do Produto**, encontre a ab
 
 ![Escolha os modelos de site disponíveis com opções de comportamento](/img/config/product-site-templates.png)
 
-### Modo Padrão: Seleção do modelo de site no formulário de Checkout
+### Modo Padrão: Seleção do modelo de site no formulário de Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Se você deseja que todos os seus modelos de site estejam disponíveis durante o registro, ou talvez não prefira fazer o trabalho extra de atribuir ou especificar modelos de site em cada produto que você criar. Então você pode simplesmente definir a seleção do modelo de site na sua **Formulário de Checkout**. Para fazer isso, vá para **Ultimate Multisite > Formulários de Checkout** e clique em **Editar** sob o formulário que deseja configurar.
 
@@ -93,29 +93,29 @@ No frontend, os clientes veem o seletor de modelos durante o checkout e podem es
 
 ![Seletor de modelo de frontend durante o registro](/img/config/frontend-template-chooser.png)
 
-### Opções de Modelo de Site
+### Opções de Modelo de Site {#site-template-options}
 
 Existem outras funções de modelos de site disponíveis que você pode ativar ou desativar nas configurações do Ultimate Multisite.
 
 ![Opções de modelo de site nas configurações do Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Permitir Troca de Modelos
+#### Permitir Troca de Modelos {#allow-template-switching}
 
 Ativar esta opção permitirá que seus clientes troquem o modelo escolhido durante o processo de inscrição após a criação da conta e do site. Isso é útil do ponto de vista do cliente, pois permite que eles reselecionem um modelo se descobrirem mais tarde que a escolha original não era a melhor para suas necessidades específicas.
 
-#### Permitir que os Usuários usem seu Site como modelos
+#### Permitir que os Usuários usem seu Site como modelos {#allow-users-to-use-their-site-as-templates}
 
 Como os usuários dos subsites gastam tempo construindo e projetando seus próprios sites, eles podem querer cloná-lo e usá-lo como um dos modelos de site disponíveis ao criar outro subsite na sua rede. Esta opção permitirá que eles façam isso.
 
-#### Copiar Mídia na Duplicação do Modelo
+#### Copiar Mídia na Duplicação do Modelo {#copy-media-on-template-duplication}
 
 Marcar esta opção copiará a mídia carregada no site modelo para o site recém-criado. Isso pode ser sobrescrito em cada um dos planos.
 
-#### **Impedir que Motores de Busca indexem Modelos de Site**
+#### **Impedir que Motores de Busca indexem Modelos de Site** {#prevent-search-engines-from-indexing-site-templates}
 
 Os modelos de site, conforme discutido neste artigo, são estruturas básicas (boilerplate), mas ainda fazem parte da sua rede, o que significa que eles continuam disponíveis para os motores de busca encontrarem. Esta opção permitirá que você oculte os modelos de site para que os motores de busca possam indexá-los.
 
-## Pré-preenchimento de Modelos de Site com pesquisa e substituição automática
+## Pré-preenchimento de Modelos de Site com pesquisa e substituição automática {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Uma das funcionalidades mais poderosas do Ultimate Multisite é a capacidade de adicionar texto, cores e campos selecionáveis ao formulário de registro. Depois que capturamos esses dados, podemos usá-los para preencher o conteúdo em certas partes do template do site selecionado. Então, quando o novo site for publicado, o Ultimate Multisite substituirá os espaços reservados pelas informações reais inseridas durante o registro.
 
@@ -135,7 +135,7 @@ O Ultimate Multisite substituirá os placeholders pelas informações fornecidas
 
 ![Placeholders substituídos pelos dados do cliente no site](/img/config/site-templates-list.png)
 
-### Resolvendo o problema de "template cheio de placeholders"
+### Resolvendo o problema de "template cheio de placeholders" {#solving-the-template-full-of-placeholders-problem}
 
 Tudo isso é ótimo, mas encontramos um problema feio: agora nossos templates de site - que podem ser visitados pelos nossos clientes - estão cheios de placeholders feios que não dizem muito.
 

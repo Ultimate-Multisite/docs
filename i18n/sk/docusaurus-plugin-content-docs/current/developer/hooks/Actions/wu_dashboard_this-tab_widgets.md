@@ -4,11 +4,11 @@ title: 'Akcia - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 Umožňuje vývojárom pluginov pridávať widgety do panela Network Dashboard.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Umožňuje vývojárom pluginov pridávať widgety do panela Network Dashboard.
 | $screen | `\WP_Screen` | Objekt obrazovky. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Inštancia admin stránky Ultimate Multisite. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) na riadku 214

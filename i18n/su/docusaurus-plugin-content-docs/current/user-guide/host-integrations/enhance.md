@@ -3,33 +3,33 @@ title: Ngaraksa Integrasi Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Tingkatkan Integrasi Control Panel
+# Tingkatkan Integrasi Control Panel {#enhance-control-panel-integration}
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 Enhance téh mangrupakeun control panel modérn anu méré kamampuhan otomatisasi je ngatur hosting anu kuat. Integrasi ieu ngabantu sinkronisasi domain otomatis je ngaturan sertifikat SSL antara Ultimate Multisite je Enhance Control Panel.
 
 **Diskusi Terkait:** Tingali [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) pikeun tips komunitas je informasi tambahan.
 
-## Fitur
+## Fitur {#features}
 - Sinkronisasi domain otomatis nalika domain di-map dina Ultimate Multisite
 - Penyediaan sertifikat SSL otomatis via LetsEncrypt nalika DNS resolve
 - Dukungan subdomain pikeun jaringan anu jalan dina mode subdomain
 - Penghapusan domain nalika pemetaan dihapus
 - Uji koneksi pikeun ngabuktian kredensial API
 
-## Persyaratan
+## Persyaratan {#requirements}
 
-### Persyaratan Sistem
+### Persyaratan Sistem {#system-requirements}
 - Enhance Control Panel geus dipasang je gampang diakses
 - Instalasi WordPress Multisite di-host dina atawa terhubung ka server Enhance
 - Apache web server (Enhance ayeuna dukung konfigurasi Apache; LiteSpeed Enterprise aya kalayan harga leuwih murah)
 
-### Akses API
+### Akses API {#api-access}
 Anjeun kudu boga akses administrator ka Enhance Control Panel pikeun ngabentuk API tokens.
 
-## Ngajak Kredensial API Anjeun
+## Ngajak Kredensial API Anjeun {#getting-your-api-credentials}
 
-### 1. Buat API Token
+### 1. Buat API Token {#1-create-an-api-token}
 
 1. Login ka Enhance Control Panel anjeun salaku administrator
 2. Klik **Settings** dina menu navigasi
@@ -44,7 +44,7 @@ Anjeun kudu boga akses administrator ka Enhance Control Panel pikeun ngabentuk A
 
 Sanggeupna samémutan, **Access Token** je **Organization ID** bakal dipajang. **Simpan ini segera** karena token ngan ukur bakal ditunjukin sekali.
 
-### 2. Dapatkan Organization ID Anda
+### 2. Dapatkan Organization ID Anda {#2-get-your-organization-id}
 
 Organization ID bakal dipajang di halaman Access Tokens dina kotak informasi warna biru anu ngabedah "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Anjeun ogé bisa manggihan Organization ID pelanggan ku cara:
 2. Klik **Manage customer** pikeun pelanggan anu dipikahoyong
 3. Tingali URL - Organization ID téh nyaéta aksara alfanumerik sanggeus `/customers/`
 
-### 3. Dapatkan Server ID Anda
+### 3. Dapatkan Server ID Anda {#3-get-your-server-id}
 
 Supaya manggihan Server ID anjeun (dipersangkeun kanggo operasi domain):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID ngikut format UUID: `00000000-0000-0000-0000-000000000000`
 
-### 4. Dapatkan API URL Anda
+### 4. Dapatkan API URL Anda {#4-get-your-api-url}
 
 API URL anjeun nyaéta URL Enhance Control Panel anjeun anu ditambihan `/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Ngagunake ngan domain tanpa `/api/`
 - Ngagunake HTTP alih ka HTTPS (HTTPS dipersangkeun pikeun keamanan)
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
-### Konstanta Wajib
+### Konstanta Wajib {#required-constants}
 
 Tambah konstanta ieu kana file `wp-config.php` anjeun:
 
@@ -95,7 +95,7 @@ define('WU_ENHANCE_API_TOKEN', 'token-anda-di-sini');
 define('WU_ENHANCE_API_URL', 'https://panel-enhance-anda.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'uuid-server-anda-di-sini');
 
-### Setup Lewat Integration Wizard
+### Setup Lewat Integration Wizard {#setup-via-integration-wizard}
 
 1. Di admin WordPress kamu, buka **Ultimate Multisite** > **Settings**
 2. Pindah ke tab **Integrations**
@@ -110,17 +110,17 @@ Kamu bisa pilih mau:
 - Biarin wizard langsung masukan konstanta ke file `wp-config.php` kamu secara otomatis
 - Salin definisi konstanta terus tambahin manual
 
-## Konfigurasi WordPress Tambahan
+## Konfigurasi WordPress Tambahan {#additional-wordpress-configuration}
 
 Berdasarkan masukan komunitas ([Diskusi #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), mungkin kamu perlu ngatur pengaturan tambahan ini:
 
-### Konfigurasi .htaccess
+### Konfigurasi .htaccess {#htaccess-configuration}
 
 Muncul masalah sama pemetaan domain?
 1. Hapus file `.htaccess` Enhance yang asli
 2. Ganti dengan file `.htaccess` Multisite WordPress standar
 
-### Konstanta Cookie
+### Konstanta Cookie {#cookie-constants}
 
 Tambahkan konstanta ini ke `wp-config.php` biar penanganan cookie di domain yang dipetakan jadi benar:
 
@@ -130,9 +130,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Gimana Cara Kerjanya
+## Gimana Cara Kerjanya {#how-it-works}
 
-### Saat Domain Dipetakan
+### Saat Domain Dipetakan {#when-a-domain-is-mapped}
 
 1. Pengguna memetakan domain kustom di Ultimate Multisite (atau situs baru dibuat dalam mode subdomain)
 2. Integrasi mengirimkan permintaan POST ke API Enhance: `/servers/{server_id}/domains`
@@ -140,14 +140,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Ketika DNS mengarah ke server Anda, Enhance secara otomatis menyediakan sertifikat SSL melalui LetsEncrypt
 5. Domain menjadi aktif dengan HTTPS
 
-### Saat Domain Dihapus
+### Saat Domain Dihapus {#when-a-domain-is-removed}
 
 1. Pemetaan domain dihapus di Ultimate Multisite
 2. Integrasi menanyakan ke Enhance untuk mencari ID domain tersebut
 3. Permintaan DELETE dikirim ke: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance menghapus domain dari konfigurasi server Anda
 
-### Pemeriksaan DNS dan SSL
+### Pemeriksaan DNS dan SSL {#dns-and-ssl-checking}
 
 Ultimate Multisite sudah punya fitur cek DNS dan SSL bawaan:
 - Anda bisa atur interval pengecekan di **Domain Mapping Settings** (default: 300 detik/5 menit)
@@ -155,9 +155,9 @@ Ultimate Multisite sudah punya fitur cek DNS dan SSL bawaan:
 - Keabsahan sertifikat SSL dicek otomatis
 - Enhance menangani penyediaan SSL secara otomatis, jadi konfigurasi SSL manual tidak perlu dilakukan
 
-## Memverifikasi Pengaturan
+## Memverifikasi Pengaturan {#verifying-setup}
 
-### Uji Koneksi
+### Uji Koneksi {#test-the-connection}
 
 1. Di Wizard Integrasi, gunakan langkah **Test Connection**
 2. Plugin akan mencoba mendaftar domain di server Anda
@@ -167,7 +167,7 @@ Ultimate Multisite sudah punya fitur cek DNS dan SSL bawaan:
    - Server ID valid
    - Izin sudah diatur dengan benar
 
-### Setelah Memetakan Domain
+### Setelah Memetakan Domain {#after-mapping-a-domain}
 
 1. Petakan domain uji di Ultimate Multisite
 2. Cek log Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -176,9 +176,9 @@ Ultimate Multisite sudah punya fitur cek DNS dan SSL bawaan:
    - Domain baru seharusnya muncul di daftar
 4. Setelah DNS menyebar, pastikan SSL sudah disediakan secara otomatis
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Masalah Koneksi API
+### Masalah Koneksi API {#api-connection-issues}
 
 **Error: "Failed to connect to Enhance API"** (Gagal terhubung ke API Enhance)
 - Cek apakah `WU_ENHANCE_API_URL` diakhiri dengan `/api/`
@@ -196,7 +196,7 @@ Ultimate Multisite sudah punya fitur cek DNS dan SSL bawaan:
 - Pastikan ID Server itu format UUID yang valid
 - Konfirmasi apakah server tersebut sudah ada di panel Enhance kamu
 
-### Domain Belum Ditambahkan
+### Domain Belum Ditambahkan {#domain-not-added}
 
 **Cek log:**
 1. Buka **Ultimate Multisite** > **Logs**
@@ -209,7 +209,7 @@ Ultimate Multisite sudah punya fitur cek DNS dan SSL bawaan:
 - Izin API kurang (pastikan token punya peran System Administrator)
 - ID Server tidak cocok dengan server yang sebenarnya di Enhance
 
-### Masalah Sertifikat SSL
+### Masalah Sertifikat SSL {#ssl-certificate-issues}
 
 **SSL belum terpasang:**
 - Cek apakah DNS mengarah ke alamat IP server kamu
@@ -223,7 +223,7 @@ Ultimate Multisite sudah punya fitur cek DNS dan SSL bawaan:
 2. Cari domain kamu dan cek status SSL-nya
 3. Kamu bisa memicu pemasangan SSL secara manual jika diperlukan
 
-### Interval Cek DNS
+### Interval Cek DNS {#dns-check-interval}
 
 Lamun domain atawa sertifikat SSL lila pisan aktifna:
 1. Pindah ka **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -231,7 +231,7 @@ Lamun domain atawa sertifikat SSL lila pisan aktifna:
 3. Ubah ti nilai default 300 detik jadi nilai leuwih leutik (minimum: 10 detik)
 4. **Catetan:** Interval leutik hartina pengecekan leuwih sering tapi beban serverna bisa naék
 
-### Error Otentikasi
+### Error Otentikasi {#authentication-errors}
 
 **Error HTTP 401/403:**
 - Buat deui API token anjeun di Enhance
@@ -239,7 +239,7 @@ Lamun domain atawa sertifikat SSL lila pisan aktifna:
 - Cek yén tokenna teu kadaluwarsa
 - Pastike anjeun ngagunake Organization ID anu bener (sanajan biasana mah teu dipiharep dina URL)
 
-### Analisis Log
+### Analisis Log {#log-analysis}
 
 Aktifkeun logging anu detail:
 ```php
@@ -253,15 +253,15 @@ Terus cek log di:
 - WordPress debug log: `wp-content/debug.log`
 - Enhance panel logs: Aya di antarmuka admin Enhance
 
-## Referensi API
+## Referensi API {#api-reference}
 
-### Otentikasi
+### Otentikasi {#authentication}
 Sakabéh permintaan API ngagunake otentikasi Bearer token:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Endpoint Umum anu Dipaké
+### Endpoint Umum anu Dipaké {#common-endpoints-used}
 
 **Daftar Server:**
 ```
@@ -284,30 +284,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Dokumentasi API Lengkep
+### Dokumentasi API Lengkep {#full-api-documentation}
 Dokumentasi API lengkap: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Prakték Pangwangunan (Best Practices)
+## Prakték Pangwangunan (Best Practices) {#best-practices}
 
-### Keamanan (Security)
+### Keamanan (Security) {#security}
 - **Jangan pernah simpan API tokens di versi kontrol (version control)**
 - Simpan token di `wp-config.php` yang harus dikecualikan dari Git
 - Gunakan token dengan izin yang sesuai (System Administrator untuk integrasi penuh)
 - Atur tanggal kedaluwarsa token untuk lingkungan produksi
 - Putar ulang token secara berkala
 
-### Performa (Performance)
+### Performa (Performance) {#performance}
 - Gunakan interval pengecekan DNS default (300 detik) untuk menghindari panggilan API yang berlebihan
 - Pantau sumber daya server Enhance saat menjalankan operasi domain skala besar
 - Pertimbangkan untuk menyebar penambahan domain jika memetakan banyak domain sekaligus
 
-### Pemantauan (Monitoring)
+### Pemantauan (Monitoring) {#monitoring}
 - Periksa log Ultimate Multisite secara rutin untuk kesalahan integrasi
 - Siapkan pemantauan untuk penambahan domain yang gagal
 - Verifikasi bahwa sertifikat SSL terpasang dengan benar
 - Awasi kapasitas server Enhance dan batas domain
 
-## Sumber Daya Tambahan (Additional Resources)
+## Sumber Daya Tambahan (Additional Resources) {#additional-resources}
 
 - **Dokumentasi Resmi Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Dokumentasi API Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -315,7 +315,7 @@ Dokumentasi API lengkap: [https://apidocs.enhance.com](https://apidocs.enhance.c
 - **Diskusi GitHub:** [Issue #265 - Tips Integrasi Enhance](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Panduan Pemetaan Domain Ultimate Multisite:** Lihat halaman wiki "Cara Mengkonfigurasi Pemetaan Domain v2"
 
-## Dukungan (Support)
+## Dukungan (Support) {#support}
 
 Jika Anda menemui masalah:
 1. Periksa bagian Troubleshooting di atas
@@ -324,7 +324,7 @@ Jika Anda menemui masalah:
 4. Hubungi dukungan Enhance untuk masalah spesifik panel
 5. Buat diskusi baru dengan log kesalahan yang detail untuk bantuan komunitas
 
-## Catatan (Notes)
+## Catatan (Notes) {#notes}
 
 - Integrasi ieu ngan ukur ngurus alias domain; Fitur Enhance ngatur SSL otomatis.
 - Integrasi ieu bisa ngadukung pemetaan domain kustom je situs berbasis subdomain.

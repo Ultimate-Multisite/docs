@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Kuona Webhooks (v2)
+# Kuona Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**CHINDIRA: Ndinoda kunyira kuti iye ndiri munhu anogona kuita zvinhu zvinokosha.**_
 
@@ -11,7 +11,7 @@ _**CHINDIRA: Ndinoda kunyira kuti iye ndiri munhu anogona kuita zvinhu zvinokosh
 
 Izviro zvinokwanisa kuti uone kuti unenge uchida kugadzirisa (integrate) kana kupasa data yakatika kubva kune Ultimate Multisite kune CRM kana system inotra mazuva onozuva, panguva dzose zvinhu dzinotevera. Zvinhu zvakasiyana, sei, unoda kuita kuti uropedzi (mailing list) uoneita nguva yakakura kana munhu wese anokwanisa kubva kune akaunti yakare.
 
-## Sei kuita webhook
+## Sei kuita webhook {#how-to-create-a-webhook}
 
 Kuti utore webhook, enda ku dashboard yezvinhu zvinogona kuita (network admin dashboard). Chibvumirano **Ultimate Multisite > Webhooks > Add New Webhook.**
 

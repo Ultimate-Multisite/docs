@@ -4,11 +4,11 @@ title: 'Aðgerð - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Leyfa viðbótaforriturum að bæta við viðbótarkrókum á síðurnar okkar.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Leyfa viðbótaforriturum að bæta við viðbótarkrókum á síðurnar okkar.
 | $page_hook | `string` | Síðukrókur þessarar síðu. |
 | $admin_page | `self` | Síðutilvikið. |
 
-### Frá útgáfu
+### Frá útgáfu {#since}
 
 - 1.8.2
 - 2.0.4: Bætti við þriðju færibreytunni: síðutilvikinu.
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) í línu 332

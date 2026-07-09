@@ -3,13 +3,13 @@ title: Hướng dẫn tích hợp
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Hướng dẫn tích hợp
+# Hướng dẫn tích hợp {#integration-guide}
 
 Hướng dẫn này bao gồm các mẫu tích hợp phổ biến với Ultimate Multisite, bao gồm kết nối với các dịch vụ bên ngoài, xây dựng cổng thanh toán tùy chỉnh và xử lý webhooks.
 
 Đối với hạ tầng tenant biệt lập, xem [Tích hợp Multi-Tenancy](./multi-tenancy) để biết hướng dẫn bootstrap tenant có chủ quyền, xác minh migration, SSO và teardown.
 
-## Tích hợp CRM
+## Tích hợp CRM {#crm-integration}
 
 Đồng bộ dữ liệu khách hàng vào CRM của bạn khi khách hàng mới đăng ký:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Tích hợp Analytics
+## Tích hợp Analytics {#analytics-integration}
 
 Theo dõi các sự kiện kinh doanh quan trọng trong suốt vòng đời khách hàng:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Các bước tiếp theo
+## Các bước tiếp theo {#next-steps}
 
 - [Phát triển Custom Gateway](./custom-gateway) — Xây dựng cổng thanh toán của riêng bạn
 - [Xử lý Webhook](./webhooks) — Tạo các endpoint webhook tùy chỉnh

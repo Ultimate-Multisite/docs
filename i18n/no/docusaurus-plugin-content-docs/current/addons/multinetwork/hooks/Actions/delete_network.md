@@ -4,19 +4,19 @@ title: Handling - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Action: delete_network
+# Action: delete_network {#action-deletenetwork}
 
 Utløses etter at et nettverk er slettet.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
 | $network | `\WP_Network` | Det slettede nettverks-objektet. |
 
-### Siden
+### Siden {#since}
 
 - 1.3.0
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1494) på linje 1494

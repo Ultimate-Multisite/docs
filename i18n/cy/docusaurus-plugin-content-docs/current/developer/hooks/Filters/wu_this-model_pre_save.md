@@ -4,11 +4,11 @@ title: 'Hidlydd - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# Filter: wu_\{$this->model\}_pre_save
+# Filter: wu_\{$this->model\}_pre_save {#filter-wuthis-modelpresave}
 
 Yn hidlo data'r gwrthrych cyn iddo gael ei storio yn y gronfa ddata.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yn hidlo data'r gwrthrych cyn iddo gael ei storio yn y gronfa ddata.
 | $data_unserialized | `array` | Data'r gwrthrych a fydd yn cael ei storio. |
 | $this | `\Base_Model` | Enghraifft y gwrthrych. |
 
-### Ers
+### Ers {#since}
 
 - 2.0.0
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Wedi'i ddiffinio yn [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L570) ar linell 570

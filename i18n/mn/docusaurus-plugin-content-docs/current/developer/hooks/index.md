@@ -3,11 +3,11 @@ title: Hooks-ийн лавлагаа
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook-уудын лавлах
+# Hook-уудын лавлах {#hooks-reference}
 
 Ultimate Multisite дахь бүх **59 үйлдэл** болон **118 шүүлтүүр**-ийн автоматаар үүсгэсэн баримтжуулалт.
 
-## Үйлдлүүд
+## Үйлдлүүд {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Баталгаажуулалтын дахин чиглүүлэлтээс өмнө ажиллана.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Баталгаажуулалтын cookie тохируулагдахаас шууд өмнө ажиллана.
@@ -70,7 +70,7 @@ Ultimate Multisite дахь бүх **59 үйлдэл** болон **118 шүүл
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Объект database-д хадгалагдсаны дараа ажиллана.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin хөгжүүлэгчдэд түгжээг тайлах үйл явцад actions нэмэх боломж олгоно.
 
-## Шүүлтүүрүүд
+## Шүүлтүүрүүд {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Баталгаажуулалтын cookie дуусах хугацааны үргэлжлэх хугацааг шүүнэ.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Баталгаажуулалтын чиглүүлэлтийн схемийг шүүнэ.

@@ -4,19 +4,19 @@ title: Action - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Action: wu_domain_ses_verified
+# Action: wu_domain_ses_verified {#action-wudomainsesverified}
 
 Εκτελείται όταν το SES επιβεβαιώνει ότι ένα domain έχει επαληθευτεί με DKIM.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Όνομα | Τύπος | Περιγραφή |
 |------|------|-------------|
 | $domain | `\WP_Ultimo\Models\Domain` | Το αντικείμενο του domain. |
 
-### Από την έκδοση
+### Από την έκδοση {#since}
 
 - 2.2.0
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L480) στην γραμμή 480

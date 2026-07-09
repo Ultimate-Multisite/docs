@@ -3,17 +3,17 @@ title: Goşmaça Sunrise faýl ýükleýjisi
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Goşmaça Sunrise faýl ýükleýjisi
+# Goşmaça Sunrise faýl ýükleýjisi {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0, döredilen `wp-content/sunrise.php` faýlyny redaktirlemezden WordPress sunrise başlangyç ýüklenişi wagtynda işlemeli goşmaçalar we ýörite MU-plugin integrasiýalary üçin sunrise giňeltme ýükleýjisini goşýar.
 
-## Haçan ulanmaly
+## Haçan ulanmaly {#when-to-use-it}
 
 Integrasiýaňyz adaty plaginler ýüklenmezinden öň işlemeli bolsa, meselem ýörite domen ugrukdyrmasy, hosta mahsus soraglary işlemek ýa-da irki tor başlangyç ýükleniş sazlamalary üçin sunrise giňeltmesini ulanyň.
 
 Adaty integrasiýalar üçin adaty WordPress plaginlerini, MU-plugin-leri we resminamalaşdyrylan Ultimate Multisite hook-laryny ileri tutuň. Sunrise kody örän ir işleýär we kiçi, goragly hem-de baglylyksyz bolmaly.
 
-## Faýl atlandyryş düzgüni
+## Faýl atlandyryş düzgüni {#file-naming-convention}
 
 Ady `ultimate-multisite-` bilen başlanýan goşmaça katalogynda `sunrise.php` atly PHP faýly dörediň:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Gabat gelýän faýllar goşmaça ýolunyň elipbiý tertibinde ýüklenýär.
 
-## Faýly nirede ýerleşdirmeli
+## Faýly nirede ýerleşdirmeli {#where-to-place-the-file}
 
 Faýly sunrise özüni alyp barşyna eýe bolan goşmaçanyň kök katalogynda ýerleşdiriň:
 
@@ -45,7 +45,7 @@ Gözden geçiriş `WP_PLUGIN_DIR`-iň häzirki bahasyna däl-de, `WP_CONTENT_DIR
 
 Döredilen `wp-content/sunrise.php` faýlyny göni redaktirlemäň. Ýükleýji ýörite koda Ultimate Multisite gurýan we täzeläp durýan esasy sunrise faýlyny şahalamazdan sunrise özüni alyp barşyny giňeltmäge mümkinçilik berýär.
 
-## Elýeterli hook-lar we filter-ler
+## Elýeterli hook-lar we filter-ler {#hooks-and-filters-available}
 
 Goşmaça sunrise faýllary Ultimate Multisite domen baglanyşygy ýüklenenden soň we WordPress `ms_loaded` işledilmezinden öň işleýär. Bu pursatda sunrise faýly şulary edip biler:
 
@@ -58,7 +58,7 @@ Ultimate Multisite öz sunrise ýükleýjisi tamamlanandan soň `wu_sunrise_load
 
 Diňe sunrise tapgyrynda eýýäm ýüklenen funksiýalary çagyryň. Maglumat bazasyna agyr düşýän işlerden, şablon renderlemekden, HTTP soraglaryndan we adaty plagin ýükleniş tertibiniň tamamlanandygyny çaklaýan koddan gaça duruň.
 
-## Minimal mysal
+## Minimal mysal {#minimal-example}
 
 ```php
 <?php

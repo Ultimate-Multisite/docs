@@ -3,35 +3,35 @@ title: Wawancara Papanggihan
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Wawancara Panalungtikan
+# Wawancara Panalungtikan {#discovery-interview}
 
 **Wawancara Panalungtikan** nyaéta léngkah munggaran dina prosés desain Theme Builder. Ieu ngumpulkeun inpormasi ngeunaan situs, bisnis, jeung karesep desain anjeun pikeun nyieun theme anu dipersonalisasi.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Wawancara Panalungtikan nungtun anjeun ngaliwatan runtuyan patarosan pikeun ngartos brand, audién sasaran, jeung tujuan desain anjeun. Dina versi 1.16.0, wawancara ayeuna ngawengku **léngkah unggah poto** anu ngamungkinkeun anjeun nyadiakeun inspirasi visual pikeun desain anjeun.
 
-## Léngkah Wawancara
+## Léngkah Wawancara {#interview-steps}
 
-### 1. Inpormasi Bisnis
+### 1. Inpormasi Bisnis {#1-business-information}
 
 - Ngaran situs jeung tagline
 - Jenis bisnis atawa industri
 - Tujuan bisnis utama
 - Pedaran audién sasaran
 
-### 2. Karesep Desain
+### 2. Karesep Desain {#2-design-preferences}
 
 - Skéma warna anu dipikaresep
 - Gaya desain (modern, klasik, minimalis, playful, jsb.)
 - Situs wéb atawa brand inspirasi
 - Unsur desain anu wajib aya
 
-### 3. Unggah Poto (Anyar dina v1.16.0)
+### 3. Unggah Poto (Anyar dina v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Unggah hiji atawa leuwih poto pikeun mangaruhan arah desain:
 
-#### Format anu Ditarima
+#### Format anu Ditarima {#accepted-formats}
 
 | Format | Extension | Rincian |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Unggah hiji atawa leuwih poto pikeun mangaruhan arah desain:
 | **WebP** | `.webp` | Format modern, ukuran file leuwih leutik |
 | **GIF** | `.gif` | Gambar statis wungkul (tanpa animasi) |
 
-#### Sarat File
+#### Sarat File {#file-requirements}
 
 - **Ukuran file maksimum:** 10 MB
 - **Diménsi minimum:** 400 × 300 piksel
 - **Diménsi anu disarankeun:** 1200 × 800 piksel atawa leuwih gedé
 - **Rasio aspek:** Rasio naon waé ditarima
 
-#### Kumaha Poto Mangaruhan Arah Desain
+#### Kumaha Poto Mangaruhan Arah Desain {#how-photos-influence-design-direction}
 
 Poto anu anjeun unggah ngabantu Theme Builder ngartos:
 
@@ -57,21 +57,21 @@ Poto anu anjeun unggah ngabantu Theme Builder ngartos:
 - **Unsur desain** — pola, tékstur, jeung gaya komposisi
 - **Inspirasi tipografi** — gaya font anu ngalengkepan theme visual
 
-### 4. Struktur Eusi
+### 4. Struktur Eusi {#4-content-structure}
 
 - Kaca utama anu diperlukeun (Home, About, Services, Contact, jsb.)
 - Bagian blog atawa warta diperlukeun
 - Fungsionalitas e-commerce diperlukeun
 - Fitur husus atawa integrasi
 
-### 5. Tinjauan jeung Konfirmasi
+### 5. Tinjauan jeung Konfirmasi {#5-review-and-confirmation}
 
 - Ringkesan sadaya inpormasi anu disadiakeun
 - Konfirmasi saméméh ngahasilkeun desain dimimitian
 
-## Prakték Pangalusna Unggah Poto
+## Prakték Pangalusna Unggah Poto {#photo-upload-best-practices}
 
-### Naon anu Kudu Diunggah
+### Naon anu Kudu Diunggah {#what-to-upload}
 
 - **Inspirasi brand** — logo, conto warna, atawa pituduh brand
 - **Situs pesaing** — screenshot situs anu anjeun pikaresep
@@ -80,7 +80,7 @@ Poto anu anjeun unggah ngabantu Theme Builder ngartos:
 - **Poto tim atawa kantor** — pikeun branding pribadi atawa profésional
 - **Gambar gaya hirup** — ngagambarkeun audién sasaran anjeun
 
-### Naon anu Kudu Dihindari
+### Naon anu Kudu Dihindari {#what-to-avoid}
 
 - **Gambar kualitas handap** — poto burem atawa katingali kotak-kotak
 - **Gambar teu patali** — poto anu henteu ngagambarkeun brand anjeun
@@ -88,7 +88,7 @@ Poto anu anjeun unggah ngabantu Theme Builder ngartos:
 - **Bahan boga hak cipta** — pastikeun anjeun boga hak pikeun ngagunakeun gambar éta
 - **GIF animasi** — ngan gambar statis anu diprosés
 
-### Tips pikeun Hasil Pangalusna
+### Tips pikeun Hasil Pangalusna {#tips-for-best-results}
 
 1. **Unggah 2-3 gambar** — sababaraha gambar nyadiakeun kontéks anu leuwih hadé
 2. **Paké poto kualitas luhur** — gambar anu jelas jeung caang hadé pisan
@@ -96,7 +96,7 @@ Poto anu anjeun unggah ngabantu Theme Builder ngartos:
 4. **Pasihan kontéks** — jelaskeun sakeudeung naha anjeun milih unggal gambar
 5. **Janten spésifik** — lamun anjeun resep kana unsur tinangtu, tunjukkeun éta
 
-## Kaluaran Arah Desain
+## Kaluaran Arah Desain {#design-direction-output}
 
 Sanggeus Wawancara Panalungtikan, Theme Builder ngahasilkeun:
 
@@ -106,7 +106,7 @@ Sanggeus Wawancara Panalungtikan, Theme Builder ngahasilkeun:
 - **Unsur visual** — ikon, pola, jeung unsur hiasan
 - **Mood board** — gambaran visual tina arah desain
 
-## Léngkah Salajengna
+## Léngkah Salajengna {#next-steps}
 
 Sanggeus ngaréngsékeun Wawancara Panalungtikan:
 
@@ -115,7 +115,7 @@ Sanggeus ngaréngsékeun Wawancara Panalungtikan:
 3. Teraskeun ka léngkah [Arah Desain](./design-direction.md)
 4. Theme Builder nyieun theme kustom anjeun
 
-## Dokuméntasi Patali
+## Dokuméntasi Patali {#related-documentation}
 
 - [Arah Desain](./design-direction.md) — tinjau jeung sampurnakeun desain anjeun
 - [Menu Hospitality](./hospitality-menus.md) — jieun kaca ménu anu terstruktur

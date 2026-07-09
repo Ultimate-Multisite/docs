@@ -4,11 +4,11 @@ title: Saringan - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Saringan: wu_post_count
+# Saringan: wu_post_count {#filter-wupostcount}
 
 Ngidinan pamekar plugin pikeun ngarobah jumlah total
 
-## Parameter
+## Parameter {#parameters}
 
 | Ngaran | Tipe | Pedaran |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Ngidinan pamekar plugin pikeun ngarobah jumlah total
 | $post_counts | `object` | Objék WordPress anu dibalikeun ku fn wp_count_posts |
 | $post_type | `string` | Slug tipe post |
 
-### Ti saprak
+### Ti saprak {#since}
 
 - 1.9.1
-### Sumber
+### Sumber {#source}
 
 Ditetepkeun dina [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) dina baris 136
 
 
-## Mulangkeun
+## Mulangkeun {#returns}
 Total anyar

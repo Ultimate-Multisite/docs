@@ -3,7 +3,7 @@ title: Справочник на способности
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Справочник на способности
+# Справочник на способности {#abilities-reference}
 
 Способностите са атомарните действия, които Gratis AI Agent може да изпълнява в вашата инсталация на WordPress. Всяка способност е регистриран PHP клас, който излага JSON схема — агентът четенето тази схема по време на работа за да разбере какви параметри са необходими и какво връща способността.
 
@@ -11,11 +11,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Custom Post Types (Потребителски типове съдържание)
+## Custom Post Types (Потребителски типове съдържание) {#custom-post-types}
 
 Тези способности управляват потребителските типове съдържание (CPT), регистрирани чрез агента. Регистрациите се запазват в таблицата за опции на WordPress, така че остават дори след деактивиране и реактивиране на плагината.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Регистрира нов потребителски тип съдържание.
 
@@ -50,7 +50,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Връща всички нестандартни типове пост, регистрирани от агента.
 
@@ -71,7 +71,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 }
 ```
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Премахва кастомния тип пост, който е бил регистриран от агента. Съществуващите постове от този тип остават в база данни, но вече не са достъпни чрез неговия тип пост.
 
@@ -85,11 +85,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Кастомни таксономии (Custom Taxonomies)
+## Кастомни таксономии (Custom Taxonomies) {#custom-taxonomies}
 
 Тези функции управляват кастомните таксономии. Подобно на CPT-тата, регистрирането на таксономии се запазва в базата данни.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Регистрира нова кастомна таксономия.
 
@@ -119,7 +119,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 **Връщане** `{ "success": true, "slug": "project-category" }`
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Връща всички кастомни таксономии, регистрирани от агента.
 
@@ -142,7 +142,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Деактивира (премахва регистрацията) кастомна таксономия, която е била регистрирана от агента.
 
@@ -156,11 +156,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Design System
+## Design System {#design-system}
 
 Способностите за Design System променят визуалното представяне на сайта – от кастомния CSS до блокови шаблони и логото на сайта.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Добавя CSS към `<head>` на сайта чрез функцията `wp_add_inline_style`. CSS се съхранява в опцията `gratis_ai_agent_custom_css` и се изтрива чисто, когато способността бъде рестартирана.
 
@@ -186,7 +186,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Регистрира повторно използваем блок шаблон в библиотеката на шаблони на WordPress.
 
@@ -205,7 +205,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Извежда всички блок шаблони, регистрирани от агента.
 
@@ -227,7 +227,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Поставя логото на сайта на WordPress, използвайки даден ID на прикрепено изображение или отдалечен URL към изображение. Когато се предостави URL, изображението се сваля и импортира в Библиотеката на медии (Media Library).
 
@@ -244,7 +244,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Прилага преглед (preset) с име към настройките за цвят/типографика в `theme.json` (или `global-styles`) на активната тема. Прегледите са пакети, поддържани от екипа на Gratis AI Agent.
 
@@ -269,11 +269,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Global Styles (Глобални стилове)
+## Global Styles (Глобални стилове) {#global-styles}
 
 Способностите за Глобални стилове четят и записват стойности в `theme.json` чрез WordPress Global Styles API, което влияе на всички блокове и шаблони по цял сайт.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Връща текущата конфигурация на глобалните стилове.
 
@@ -287,7 +287,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Актуализира една или повече стойности в конфигурацията на общите стилове.
 
@@ -314,7 +314,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Среща всички промени в общите стилове, приложени от агента, като възстановява стандартните настройки на тема.
 
@@ -324,11 +324,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Навигационни менюта (Navigation Menus)
+## Навигационни менюта (Navigation Menus) {#navigation-menus}
 
 Способностите за Навигационни Меню създават и управляват менютата за навигация в WordPress и техните елементи.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Създава ново меню за навигация в WordPress.
 
@@ -341,7 +341,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 **Връща** `{ "success": true, "menu_id": 7 }`
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Преименува менюто или го преназначава на локация в тема.
 
@@ -357,7 +357,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Добавя елемент в съществува меню за навигация.
 
@@ -377,7 +377,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Премахва елемент от меню за навигация.
 
@@ -391,7 +391,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Извежда всички навигационни менюта в WordPress, включително им назначените локации в тема.
 
@@ -399,11 +399,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 **Връщане**
 
-## Управление опциите (Options Management)
+## Управление опциите (Options Management) {#options-management}
 
 Способността за четене и запис на WordPress опциите се извършва чрез функциите `get_option` / `update_option`. Вграденият механизъм за безопасност предотвратява случайно промяната на критични настройки.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Чете една WordPress опция.
 
@@ -419,7 +419,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Записва WordPress опция.
 
@@ -437,7 +437,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Изтрива WordPress опция.
 
@@ -451,7 +451,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 **Връщане** `{ "success": true, "option_name": "my_custom_option" }`
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Списва опции от WordPress, които съвпадат с определен шаблон.
 
@@ -475,11 +475,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Управление на съдържанието (Content Management)
+## Управление на съдържанието (Content Management) {#content-management}
 
 Способностите за управление на съдържанието създават и редактират публикации и страници в WordPress. Се извлича ID-тата на публикациите, за да могат следващите стъпки в плановете с множество способности да се отнасят до създадения контент.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Създава нова публикация, страница или запис за произволен тип пост (custom post type).
 
@@ -514,7 +514,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Актуализира съществуващ WordPress пост или страница.
 
@@ -544,7 +544,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Създава множество постове в един извикване на способността, което намалява броя на заявките при изграждане на сайта или масово импортиране на съдържание. Постовете се създават последователно; ако един от тях не успее, другите продължават и неуспеха се докладва в масива с резултати.
 

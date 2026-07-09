@@ -3,15 +3,15 @@ title: Gune-eraikitzailearen orkestrazioa v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0-n sartua) urrats anitzeko webgune-sorkuntza bultzatzen duen motorra da. Agenteari "jatetxe-webgune bat eraiki" edo "sortu bloga duen portfolio bat" eskatzen diozunean, orkestratzaileak goi-mailako helburu hori **plan** egituratu batean zatitzen du, hura betetzeko behar diren pluginak aurkitzen ditu, urrats bakoitza sekuentzian exekutatzen du, aurrerapena jarraitzen du, eta erroreetatik autonomoki berreskuratzen da.
 
 ---
 
-## Nola funtzionatzen duen
+## Nola funtzionatzen duen {#how-it-works}
 
-### 1. Planaren sorrera
+### 1. Planaren sorrera {#1-plan-generation}
 
 Agenteak gunea eraikitzeko jarraibide bat jasotzen duenean, `create_site_plan` gaitasuna deitzen du JSON **gune-plana** sortzeko. Planak hau deskribatzen du:
 
@@ -61,7 +61,7 @@ Agenteak gunea eraikitzeko jarraibide bat jasotzen duenean, `create_site_plan` g
 }
 ```
 
-### 2. Pluginen aurkikuntza
+### 2. Pluginen aurkikuntza {#2-plugin-discovery}
 
 Exekuzioa hasi aurretik, orkestratzaileak planaren `plugin_requirements` eskaneatzen ditu eta zein plugin dagoen dagoeneko aktibo egiaztatzen du. Falta diren pluginetarako, hau egiten du:
 
@@ -71,7 +71,7 @@ Exekuzioa hasi aurretik, orkestratzaileak planaren `plugin_requirements` eskanea
 
 Pluginen aurkikuntzako hutsegiteak ez dira hilgarriak — orkestratzaileak eragindako urratsak `skipped` gisa markatzen ditu eta planaren gainerakoarekin jarraitzen du.
 
-### 3. Planaren exekuzioa
+### 3. Planaren exekuzioa {#3-plan-execution}
 
 Orkestratzaileak `execute_site_plan` deitzen du planaren IDarekin. Exekuzioa fasez fase, urratsez urrats doa:
 
@@ -79,7 +79,7 @@ Orkestratzaileak `execute_site_plan` deitzen du planaren IDarekin. Exekuzioa fas
 - **Urrats paraleloak** — fase bereko urratsak, elkarren arteko mendekotasunik ez badute, aldi berean bidaltzen dira `parallel` bandera ezarrita dagoenean.
 - **Urratsaren denbora-muga** — urrats bakoitzak denbora-muga indibiduala du (lehenetsia: `Ability Timeout` ezarpena). Denbora-muga gainditzen duen urratsa `failed` gisa markatzen da eta planak jarraitzen du.
 
-### 4. Aurrerapenaren jarraipena
+### 4. Aurrerapenaren jarraipena {#4-progress-tracking}
 
 Deitu `get_plan_progress` edozein unetan exekuzio-egoera egiaztatzeko:
 
@@ -104,7 +104,7 @@ WP-CLI erabiltzaileek aurrerapena monitoriza dezakete honekin:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Erroreetatik berreskuratzea
+### 5. Erroreetatik berreskuratzea {#5-error-recovery}
 
 Urrats batek huts egiten duenean, orkestratzaileak planean definitutako **ordezko** urratsik dagoen egiaztatzen du:
 
@@ -115,9 +115,9 @@ Agenteak azken plan-laburpenean hutsegite guztiak jakinarazten ditu, eta berresk
 
 ---
 
-## Gune-planaren gaitasunak
+## Gune-planaren gaitasunak {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Gune-plan egituratu bat sortzen du hizkuntza naturaleko helburu-deskribapen batetik.
 
@@ -134,7 +134,7 @@ Gune-plan egituratu bat sortzen du hizkuntza naturaleko helburu-deskribapen bate
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Aurrez sortutako gune-plan bat exekutatzen hasten da.
 
@@ -150,7 +150,7 @@ Aurrez sortutako gune-plan bat exekutatzen hasten da.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Gune-plan baten uneko exekuzio-egoera itzultzen du.
 
@@ -164,7 +164,7 @@ Gune-plan baten uneko exekuzio-egoera itzultzen du.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Huts egindako urrats bat eskuz konpontzen du eta planaren exekuzioa hurrengo urratsetik berrekiten du. Erabili hau berreskuratze automatikoa posible izan ez denean eta esku hartu nahi duzunean.
 
@@ -180,7 +180,7 @@ Huts egindako urrats bat eskuz konpontzen du eta planaren exekuzioa hurrengo urr
 
 ---
 
-## v1 eta v2 alderatzea
+## v1 eta v2 alderatzea {#comparing-v1-and-v2}
 
 | Ezaugarria | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Huts egindako urrats bat eskuz konpontzen du eta planaren exekuzioa hurrengo urr
 
 ---
 
-## WP-CLI planaren komandoak
+## WP-CLI planaren komandoak {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Helburuaren deskribapen batetik gune-plan bat sortzen du.
 
@@ -205,7 +205,7 @@ Helburuaren deskribapen batetik gune-plan bat sortzen du.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Aurrez sortutako plan bat exekutatzen du.
 
@@ -213,7 +213,7 @@ Aurrez sortutako plan bat exekutatzen du.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Exekutatzen ari den edo osatutako plan baten uneko aurrerapena erakusten du.
 
@@ -221,7 +221,7 @@ Exekutatzen ari den edo osatutako plan baten uneko aurrerapena erakusten du.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Gune-plan guztiak zerrendatzen ditu (zain, abian eta osatuta).
 
@@ -229,7 +229,7 @@ Gune-plan guztiak zerrendatzen ditu (zain, abian eta osatuta).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Huts egindako plan bat `pending` egoerara berrezartzen du, hasieratik berriro exekutatu ahal izateko.
 

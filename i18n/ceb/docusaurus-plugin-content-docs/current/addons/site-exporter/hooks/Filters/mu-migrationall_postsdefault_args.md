@@ -4,23 +4,23 @@ title: Salain - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Pagsala: mu-migration/all_posts/default_args
+# Pagsala: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
 
 Gisala ang default args para sa pag-query sa mga paskil sa all_posts nga pamaagi.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Uri | Deskripsyon |
 |------|------|-------------|
 | $default_args | `array` | Ang default args array. |
 
-### Sukad
+### Sukad {#since}
 
 - 0.2.0
-### Gigikanan
+### Gigikanan {#source}
 
 Gihubit sa [`inc/mu-migration/includes/commands/class-mu-migration-base.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-base.php#L70) sa linya 70
 
 
-## Mga Ibalik
+## Mga Ibalik {#returns}
 Default args array.

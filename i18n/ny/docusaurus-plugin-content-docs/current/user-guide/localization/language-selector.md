@@ -3,7 +3,7 @@ title: Mofunso wopolo
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Mfundo Wopolo wa Lugha (Language Selector)
+# Mfundo Wopolo wa Lugha (Language Selector) {#language-selector}
 
 Mfundo wopolo wamfundo uliupatsa ndi addon ya **Language Selector**.
 

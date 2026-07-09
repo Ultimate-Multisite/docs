@@ -4,13 +4,13 @@ title: Isihluzi - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Isihluzi: wu_documentation_get_link
+# Isihluzi: wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 Vumela abaphuhlisi be-plugin bahluze amakhonkco.
 
 Andiqinisekanga ukuba oko kungaluncedo njani, kodwa akonakalisi ukuba nako
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Andiqinisekanga ukuba oko kungaluncedo njani, kodwa akonakalisi ukuba nako
 | $slug | `string` | I-slug esetyenziselwa ukufumana ikhonkco |
 | $default_link | `string` | Ikhonkco elingagqibekanga elibhalisiweyo |
 
-### Ukusukela
+### Ukusukela {#since}
 
 - 1.7.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-[`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) kumgca 125

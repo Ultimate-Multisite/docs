@@ -3,11 +3,11 @@ title: Mga Built-in nga Ahente
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Built-in nga mga Agent
+# Built-in nga mga Agent {#built-in-agents}
 
 Gratis AI Agent v1.9.0 nagdala og lima ka built-in nga mga agent, nga matag usa daan nang gi-configure uban sa usa ka naka-focus nga hugpong sa mga tools, usa ka gipahiangay nga system prompt, ug mga starter suggestion nga gitugma sa kasagarang mga buluhaton nianang dapita. Ang pagbalhin-balhin tali sa mga agent mag-usab sa unsay mahimo sa assistant ug kung giunsa kini motubag — nga walay bisan unsang configuration gikan nimo. Superdav AI Agent v1.18.0 makadugang og mga tool nga schedule-aware, mga reminder record, approval gates, ug SMS notifications niining mga workflow kung na-configure ang may kalabotang mga integration.
 
-## Unsa ang Agent?
+## Unsa ang Agent? {#what-is-an-agent}
 
 Ang matag agent usa ka ginganlang configuration profile nga naghiusa sa:
 
@@ -15,7 +15,7 @@ Ang matag agent usa ka ginganlang configuration profile nga naghiusa sa:
 - **System prompt** — mga instruksyon nga nagtakda sa tono, mga prayoridad, ug mga limitasyon sa agent
 - **Mga sugyot** — daan nang gisulat nga mga prompt nga gipakita sa chat interface aron matabangan ka nga makasugod dayon
 
-## Pag-access sa Agent Picker
+## Pag-access sa Agent Picker {#accessing-the-agent-picker}
 
 1. Ablihi ang **Gratis AI Agent** nga panel sa WordPress admin sidebar.
 2. I-klik ang **agent icon** sa ibabaw nga wala nga bahin sa chat header (ang icon mausab aron ipakita ang aktibong agent).
@@ -24,9 +24,9 @@ Ang matag agent usa ka ginganlang configuration profile nga naghiusa sa:
 
 Makabalhin ka usab og mga agent sa tunga-tunga sa panag-istorya — ang system prompt sa bag-ong agent mosugod og epekto gikan sa sunod nga mensahe.
 
-## Ang Lima ka Built-in nga mga Agent
+## Ang Lima ka Built-in nga mga Agent {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Pokus:** Paghimo ug pag-edit og mga post, mga page, ug mga contact form.
 
@@ -47,7 +47,7 @@ Makabalhin ka usab og mga agent sa tunga-tunga sa panag-istorya — ang system p
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Pokus:** End-to-end nga paghimo og website gikan sa usa ka prompt.
 
@@ -70,7 +70,7 @@ Makabalhin ka usab og mga agent sa tunga-tunga sa panag-istorya — ang system p
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Pokus:** Visual customisation — mga kolor, typography, CSS, ug block patterns.
 
@@ -87,7 +87,7 @@ Makabalhin ka usab og mga agent sa tunga-tunga sa panag-istorya — ang system p
 - *Kuhaa ang screenshot sa homepage ug sultihi ko kon unsay imong pauswagon.*
 - *Paghimo og reusable nga hero block pattern nga adunay full-width background image ug centred heading.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Pokus:** Pagdiskobre, pag-install, ug pagdumala sa WordPress plugins.
 
@@ -105,7 +105,7 @@ Makabalhin ka usab og mga agent sa tunga-tunga sa panag-istorya — ang system p
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Pokus:** Pagtubag sa mga pangutana mahitungod sa site content, settings, ug WordPress configuration.
 
@@ -124,7 +124,7 @@ Makabalhin ka usab og mga agent sa tunga-tunga sa panag-istorya — ang system p
 
 ---
 
-## Mga Integrasyon sa Superdav Automation
+## Mga Integrasyon sa Superdav Automation {#superdav-automation-integrations}
 
 Kung gi-configure ang mga integrasyon sa Superdav AI Agent v1.18.0, ang built-in nga mga agent mahimong moapil sa mas luwas nga schedule-aware automation workflows:
 
@@ -138,11 +138,11 @@ Girekomenda nga workflow: hangyoa ang agent nga andamon ang mensahe o aksyon, re
 
 ---
 
-## Pag-customize sa mga Agent
+## Pag-customize sa mga Agent {#customising-agents}
 
 Ang matag built-in nga agent mahimong mapalapdan o mapulihan pinaagi sa `gratis_ai_agent_agents` filter.
 
-### Pagdugang og custom nga system prompt sa kasamtangang agent
+### Pagdugang og custom nga system prompt sa kasamtangang agent {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Pag-register og bag-ong agent
+### Pag-register og bag-ong agent {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Ang bag-ong agent makita dayon sa Tigpili sa Agent pagkahuman modagan ang filter.
 
-### Pagtangtang sa built-in nga agent
+### Pagtangtang sa built-in nga agent {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

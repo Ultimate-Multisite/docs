@@ -3,17 +3,17 @@ title: Jinsi ya Kusanidi Ulinganishaji wa Vikoa
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Jinsi ya Kusanidi Uwekaji Ramani wa Kikoa (v2)
+# Jinsi ya Kusanidi Uwekaji Ramani wa Kikoa (v2) {#how-to-configure-domain-mapping-v2}
 
 _**KUMBUKA MUHIMU: Makala haya yanahusu Ultimate Multisite toleo la 2.x.**_
 
 Moja ya vipengele vyenye nguvu zaidi vya mtandao wa premium ni uwezo wa kuwapa wateja wetu nafasi ya kuambatisha kikoa cha kiwango cha juu kwenye tovuti zao. Hatimaye, ni ipi inaonekana ya kitaalamu zaidi: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) au [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ndiyo maana Ultimate Multisite hutoa kipengele hicho kikiwa kimejengwa ndani, bila haja ya kutumia plugin za wahusika wengine.
 
-## Uwekaji ramani wa kikoa ni nini?
+## Uwekaji ramani wa kikoa ni nini? {#whats-domain-mapping}
 
 Kama jina linavyopendekeza, uwekaji ramani wa kikoa ni uwezo unaotolewa na Ultimate Multisite wa kupokea ombi la kikoa maalum na kulinganisha ombi hilo na tovuti inayolingana kwenye mtandao ambayo kikoa hicho mahususi kimeambatishwa.
 
-### Jinsi ya kusanidi uwekaji ramani wa kikoa kwenye Mtandao wako wa Ultimate Multisite
+### Jinsi ya kusanidi uwekaji ramani wa kikoa kwenye Mtandao wako wa Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Uwekaji ramani wa kikoa unahitaji usanidi fulani upande wako ili ufanye kazi. Kwa bahati nzuri, Ultimate Multisite hujiendesha kiotomatiki kufanya kazi ngumu kwa ajili yako ili uweze kutimiza mahitaji kwa urahisi.
 
@@ -45,7 +45,7 @@ Lakini kabla ya kuanza kuweka ramani ya kikoa maalum kwenye mojawapo ya tovuti-t
 
 ###
 
-### Kuhakikisha mipangilio ya DNS ya kikoa imesanidiwa vizuri
+### Kuhakikisha mipangilio ya DNS ya kikoa imesanidiwa vizuri {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Ili uwekaji ramani ufanye kazi, unahitaji kuhakikisha kuwa kikoa unachopanga kuweka ramani kinaelekeza kwenye anwani ya IP ya Mtandao wako. Kumbuka kuwa unahitaji anwani ya IP ya Mtandao - anwani ya IP ya kikoa ambako Ultimate Multisite imesakinishwa - si anwani ya IP ya kikoa maalum unachotaka kuweka ramani. Ili kutafuta anwani ya IP ya kikoa mahususi, tunapendekeza uende [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), kwa mfano.
 
@@ -55,7 +55,7 @@ Ukijikuta unapata shida kufanya hili lifanye kazi, **wasiliana na usaidizi wa ms
 
 Ikiwa unapanga kuwaruhusu wateja wako kuweka ramani ya vikoa vyao wenyewe, watalazimika kufanya kazi ya sehemu hii wao wenyewe. Waelekeze kwenye mfumo wa usaidizi wa msajili wao ikiwa watashindwa kuunda A Record.
 
-### Kuweka ramani ya jina la kikoa maalum kama Msimamizi Mkuu
+### Kuweka ramani ya jina la kikoa maalum kama Msimamizi Mkuu {#mapping-custom-domain-name-as-super-admin}
 
 Ukiwa umeingia kama msimamizi mkuu kwenye mtandao wako, unaweza kuongeza na kudhibiti majina ya vikoa maalum kwa urahisi kwa kwenda chini ya **Ultimate Multisite > Vikoa**.
 
@@ -93,7 +93,7 @@ Ukibofya jina la kikoa, utaweza kuona baadhi ya chaguo ndani yake. Hebu tuzianga
 
 **Je, ni Salama?:** Ingawa Ultimate Multisite hukagua kama kikoa kina cheti cha SSL au la kabla ya kukiwezesha, unaweza kuchagua mwenyewe kupakia kikoa kwa cheti cha SSL au bila cheti cha SSL. Kumbuka kwamba ikiwa tovuti haina cheti cha SSL na ujaribu kulazimisha kuipakia kwa SSL, inaweza kukupa hitilafu.
 
-### Kuunganisha jina maalum la kikoa kama mtumiaji wa tovuti ndogo
+### Kuunganisha jina maalum la kikoa kama mtumiaji wa tovuti ndogo {#mapping-custom-domain-name-as-subsite-user}
 
 Wasimamizi wa tovuti ndogo pia wanaweza kuunganisha majina maalum ya vikoa kutoka kwenye dashibodi ya usimamizi ya tovuti yao ndogo.
 
@@ -121,7 +121,7 @@ Kisha mtumiaji anaweza kubofya **Hatua Inayofuata** na kuendelea kuongeza jina m
 
 Kubofya **Ongeza Kikoa** kutaanza mchakato wa kuthibitisha na kuchukua taarifa za DNS za kikoa maalum.
 
-### Kuhusu Usawazishaji wa Kikoa
+### Kuhusu Usawazishaji wa Kikoa {#about-domain-syncing}
 
 Usawazishaji wa Kikoa ni mchakato ambapo Ultimate Multisite huongeza jina maalum la kikoa kwenye hosting account yako kama kikoa cha nyongeza **ili uunganishaji wa kikoa ufanye kazi**.
 

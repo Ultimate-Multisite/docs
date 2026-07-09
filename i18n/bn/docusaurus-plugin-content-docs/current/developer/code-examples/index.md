@@ -3,11 +3,11 @@ title: উন্নত কোড উদাহরণ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# উন্নত কোড উদাহরণ
+# উন্নত কোড উদাহরণ {#advanced-code-examples}
 
 এই উদাহরণগুলি Ultimate Multisite-এর সাথে উন্নত ইন্টিগ্রেশন প্যাটার্নগুলি প্রদর্শন করে।
 
-## ডাইনামিক প্রাইসিং ইঞ্জিন
+## ডাইনামিক প্রাইসিং ইঞ্জিন {#dynamic-pricing-engine}
 
 একটি রুলস-ভিত্তিক প্রাইসিং ইঞ্জিন যা ভলিউম, লয়্যালটি এবং সিজনাল ডিসকাউন্ট প্রয়োগ করে:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## উন্নত সাইট প্রোভিশনিং
+## উন্নত সাইট প্রোভিশনিং {#advanced-site-provisioning}
 
 প্ল্যান ফিচারের ভিত্তিতে প্লাগইন, SSL, CDN, ব্যাকআপ এবং মনিটরিং ব্যবহার করে নতুন সাইটগুলি স্বয়ংক্রিয়ভাবে কনফিগার করুন:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## কাস্টম লিমিটেশন সিস্টেম
+## কাস্টম লিমিটেশন সিস্টেম {#custom-limitations-system}
 
 ব্যবহারের সতর্কতা সহ রিসোর্স লিমিট ট্র্যাক করুন এবং প্রয়োগ করুন:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter with `increment_item()`
+## BerlinDB Atomic Counter with `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1-এ BerlinDB `Query` ক্লাসে একটি `increment_item()` মেথড যোগ করা হয়েছে। এটি ব্যবহার করুন যাতে আপনি নিরাপদে, অ্যাটমিকভাবে (atomic) সংখ্যাসূচক কলামগুলিতে বৃদ্ধি করতে পারেন, যা রিড-মডিফাই-রাইট রেস (read-modify-write races) এড়াতে সাহায্য করে — এটি কাউন্টার, ব্যবহার কোটা এবং কনকারেন্ট রিকোয়েস্টের অধীনে চলমান রেট-লিমিটিং চেকের জন্য খুব উপযোগী।
 
-### মেথড সিগনেচার
+### মেথড সিগনেচার {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1-এ BerlinDB `Query` ক্লাসে একটি `
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### মৌলিক ব্যবহার
+### মৌলিক ব্যবহার {#basic-usage}
 
 ```php
 // মেম্বারশিপ আইডি ৪২-এর জন্য `api_calls` কলামে ১ যোগ করুন।
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### মেম্বারশিপ অনুযায়ী API ব্যবহার ট্র্যাক করা
+### মেম্বারশিপ অনুযায়ী API ব্যবহার ট্র্যাক করা {#tracking-api-usage-per-membership}
 
 মেম্বারশিপ-ভিত্তিক API রেট লিমিট প্রয়োগ করার একটি ব্যবহারিক প্যাটার্ন:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### `update_item()` এর পরিবর্তে `increment_item()` কেন?
+### `update_item()` এর পরিবর্তে `increment_item()` কেন? {#why-incrementitem-instead-of-updateitem}
 
 একটি সাধারণ রিড-মডিফাই-রাইট পদ্ধতি কনকারেন্ট রিকোয়েস্টের অধীনে অনিরাপদ:
 

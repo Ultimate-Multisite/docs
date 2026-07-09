@@ -3,7 +3,7 @@ title: AffiliateWP Üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP üýtgeşmeler taryhy
+# AffiliateWP üýtgeşmeler taryhy {#affiliatewp-changelog}
 
 Wersiýa: 2.0.1 - 2025-09-28 senesinde çykaryldy
 

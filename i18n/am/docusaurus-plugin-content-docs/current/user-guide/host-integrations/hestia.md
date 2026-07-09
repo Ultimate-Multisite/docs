@@ -3,28 +3,28 @@ title: Hestia Control Panel ውህደት
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# የHestia Control Panel ውህደት
+# የHestia Control Panel ውህደት {#hestia-control-panel-integration}
 
 ይህ መመሪያ በUltimate Multisite ውስጥ ካሉ የዶሜን ኔትወርክ (mapped domains) ዶሜኖች በHestia ውስጥ እንደ Web Domain Aliases በራስ-ሰር እንዴት እንደሚጨመሩ (እና እንደሚወገዱ) የHestia ውህደትን (integration) እንዴት ማዋቀር እንደሚቻል ያብራራል።
 
 - የHestia CLI ማጣቀሻ፡ `v-add-web-domain-alias` / `v-delete-web-domain-alias`
 - ኦፊሴላዊ REST API ሰነድ፡ https://hestiacp.com/docs/server-administration/rest-api.html
 
-## ምን ያደርጋል
+## ምን ያደርጋል {#what-it-does}
 - በUltimate Multisite ውስጥ አንድ ዶሜን ሲመዘገብ፣ ውህደቱ የሚከተለውን ለማስኬድ የHestia APIን ይጠራዋል፦
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - የዶሜን መመዝገቢያ ሲወገድ ደግሞ የሚከተለውን ያከናውናል፦
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - በተጨማሪም፣ በDomain Mapping settings ውስጥ ባለው “Auto-create www subdomain” ቅንብር ላይ በመመስረት `www.` aliasን በቅንጅት ሊጨምር ወይም ሊያስወግድ ይችላል።
 
-## ቅድመ ሁኔታዎች
+## ቅድመ ሁኔታዎች {#prerequisites}
 - ቀድሞውንም ወደ WordPress installationዎ የሚያመላክት የHestia Web Domain መኖር አለበት። ውህደቱ aliases የሚለጥፈው በዚህ መሰረታዊ ዶሜን ላይ ነው።
 - የHestia API መዳረሻ መብ开ል አለበት። በይለፍ ቃል (password) ወይም በAPI hash/token ሊመዘገቡ ይችላሉ።
 
 የAPI መዳረሻን እና የማረጋገጫ ዝርዝሮችን ለማወቅ የHestia REST API ሰነዶችን ይመልከቱ፦
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## ማዋቀር (Wizard → Integrations → Hestia)
+## ማዋቀር (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 የሚከተሉትን እሴቶች ያቅርቡ፦
 
 - `WU_HESTIA_API_URL` (አስፈላጊ)
@@ -42,16 +42,16 @@ https://hestiacp.com/docs/server-administration/rest-api.html
 
 እነዚህን ቋሚ እሴቶች (constants) ወደ `wp-config.php` እንዲያስገቡ በwizard ውስጥ እንዲያደርጉት ወይም በእጅ እንዲገልጹት ይችላሉ።
 
-## Setupን ማረጋገጥ
+## Setupን ማረጋገጥ {#verifying-setup}
 - በwizard “Testing” ደረጃ፣ plugin በAPI በኩል `v-list-web-domains <WU_HESTIA_ACCOUNT> json` ይጠራል። ስኬታማ ምላሽ ግንኙነትን እና ማረጋገጫን ያረጋግጣል።
 - ዶሜን ካስመዘገቡ በኋላ፣ በHestia ውስጥ ይፈትሹ፦ Web > መሰረታዊው ዶሜን > Aliases። አዲሱ alias መጨመሩን ማየት አለብዎት።
 
-## ማስታወሻዎች እና ምክሮች
+## ማስታወሻዎች እና ምክሮች {#notes--tips}
 - `WU_HESTIA_WEB_DOMAIN` ቀድሞ መኖሩን እና በ`WU_HESTIA_ACCOUNT` ባለቤት መሆኑን ያረጋግጡ።
 - SSL የሚያስፈልግ ከሆነ፣ ሰርተፊኬቶችን በHestia ውስጥ ያስተዳድሩ። ይህ ውህደት በአሁኑ ጊዜ aliasesን ብቻ ነው የሚያስተናግደው።
 - pluginዎ በDomain Mapping “www subdomain” ቅንብርዎ ላይ በመመስረት `www.<domain>` ሊጨምር ወይም ሊያስወግድ ይችላል።
 
-## የAPI ጥሪ ምሳሌ (cURL)
+## የAPI ጥሪ ምሳሌ (cURL) {#example-api-call-curl}
 ከዚህ በታች ያለው ምሳሌ (በየአካባቢዎ እንዲስተካከል) ነው። ትክክለኛ መለኪያዎች (parameters) ለማግኘት ኦፊሴላዊውን ሰነድ ይመልከቱ።
 
 ```
@@ -70,11 +70,11 @@ cmd=v-add-web-domain-alias
 
 ለመሰረዝ (delete) ደግሞ `cmd=v-delete-web-domain-alias` እና ተመሳሳይ arguments ይጠቀሙ።
 
-## ችግር መፍታት
+## ችግር መፍታት {#troubleshooting}
 - ከAPI የመጣ HTTP ስህተት፡ `WU_HESTIA_API_URL` መድረስ መቻሉን እና `/api` መያዝ መቻሉን ያረጋግጡ።
 - የማረጋገጫ ስህተቶች (Auth errors)፡ `WU_HESTIA_API_USER` እና ከ`WU_HESTIA_API_PASSWORD` ወይም `WU_HESTIA_API_HASH` አንዱ መሆኑን ያረጋግጡ።
 - በሎጎች ውስጥ “Missing account/base domain”፡ `WU_HESTIA_ACCOUNT` እና `WU_HESTIA_WEB_DOMAIN` በHestia ውስጥ ተቀምጠው እና ትክክል መሆናቸውን ያረጋግጡ።
 
-## ማጣቀሻዎች
+## ማጣቀሻዎች {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Hestia CLI Reference (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

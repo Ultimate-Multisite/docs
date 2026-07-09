@@ -3,7 +3,7 @@ title: سجل التغييرات Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp سجل التغييرات
+# Mailchimp سجل التغييرات {#mailchimp-changelog}
 
 الإصدار: 1.1.1 - تم الإصدار في 2025-09-28
 

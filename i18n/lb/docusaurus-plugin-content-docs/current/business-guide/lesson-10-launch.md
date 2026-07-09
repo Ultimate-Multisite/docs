@@ -3,19 +3,19 @@ title: 'Lektioun 10: Startdag'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lektioun 10: Startdag
+# Lektioun 10: Startdag {#lesson-10-launch-day}
 
 Alles ass opgebaut. Ier Dir d'Dieren opmaacht, féiert dës Lektioun Iech duerch d'Pre-Launch-Checklëscht, fir sécherzestellen, datt näischt futti, feelend oder peinlech ass.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 FitSite huet Schablounen, Pläng, Checkout, Branding, Onboarding a Präisser komplett konfiguréiert. Elo iwwerpréiwe mir, datt alles funktionéiert, a mir ginn live.
 
-## Pre-Launch-Checklëscht
+## Pre-Launch-Checklëscht {#pre-launch-checklist}
 
 Schafft all Punkt duerch. Loosst näischt aus.
 
-### Plattform-Infrastruktur
+### Plattform-Infrastruktur {#platform-infrastructure}
 
 - [ ] Hosting ass stabil a funktionéiert gutt ënner Laascht
 - [ ] Wildcard SSL ass aktiv an all Subdomainen lafen iwwer HTTPS
@@ -23,7 +23,7 @@ Schafft all Punkt duerch. Loosst näischt aus.
 - [ ] Backups si konfiguréiert a getest (restauréiert op d'mannst een, fir et ze verifizéieren)
 - [ ] Monitoring ass ageriicht -- Dir wësst, wann d'Plattform ausfält
 
-### Schablounen
+### Schablounen {#templates}
 
 - [ ] All dräi Schabloune lueden korrekt op neie Websäiten
 - [ ] Placeholder-Inhalt ass hëllefräich a fräi vu Schreiffeeler
@@ -32,7 +32,7 @@ Schafft all Punkt duerch. Loosst näischt aus.
 - [ ] D'Luetgeschwindegkeet vun de Säiten ass akzeptabel (test mat engem Tool wéi GTmetrix oder PageSpeed Insights)
 - [ ] Keng futtis Linken oder feelend Assets op iergendenger Schabloun
 
-### Pläng a Produkter
+### Pläng a Produkter {#plans-and-products}
 
 - [ ] All dräi Pläng sinn aktiv a siichtbar
 - [ ] Plangbeschreiwunge si korrekt an nischenspezifesch
@@ -42,7 +42,7 @@ Schafft all Punkt duerch. Loosst näischt aus.
 - [ ] Zousazofferen erschéngen korrekt wärend dem Checkout
 - [ ] Plugin- an Theme-Limitatioune ginn pro Plang korrekt duerchgesat
 
-### Checkout-Oflaf
+### Checkout-Oflaf {#checkout-flow}
 
 - [ ] Maacht eng komplett Test-Umeldung op all Plang (benotzt Test-Bezuelmodus)
 - [ ] Schablounenauswiel weist déi korrekt Schabloune pro Plang
@@ -52,7 +52,7 @@ Schafft all Punkt duerch. Loosst näischt aus.
 - [ ] Client kann sech direkt op senger neier Websäit umellen
 - [ ] Remisecoden funktionéiere korrekt
 
-### Branding
+### Branding {#branding}
 
 - [ ] Login-Säit weist FitSite-Branding
 - [ ] Admin-Dashboard weist FitSite-Branding
@@ -60,7 +60,7 @@ Schafft all Punkt duerch. Loosst näischt aus.
 - [ ] Rechnunge ginn korrekt mat Äre Geschäftsdonnéeën ugewisen
 - [ ] Marketing-Websäit ass live a verlinkt op de Checkout-Formulaire
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Quick Start-Widget erschéngt op neie Client-Dashboards
 - [ ] All Quick Start-Linke weisen op déi korrekt Säiten
@@ -68,7 +68,7 @@ Schafft all Punkt duerch. Loosst näischt aus.
 - [ ] Wëssensbasis-Artikele si publizéiert an zougänglech
 - [ ] Account-Säit weist korrekt Planginformatiounen an Upgrade-Optiounen
 
-### Juristesch a Geschäftlech
+### Juristesch a Geschäftlech {#legal-and-business}
 
 - [ ] Notzungsbedéngunge si publizéiert a vum Checkout aus verlinkt
 - [ ] Dateschutzrichtlinn ass publizéiert an zougänglech
@@ -77,11 +77,11 @@ Schafft all Punkt duerch. Loosst näischt aus.
 - [ ] Bezuel-Gateway ass am Live-Modus (net am Testmodus)
 - [ ] Steierkonfiguratioun ass korrekt fir Är Juridictioun
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Betruecht e Start an zwou Phasen:
 
-### Phas 1: Soft Launch
+### Phas 1: Soft Launch {#phase-1-soft-launch}
 
 Invitéiert 5-10 Besëtzer vu Fitnessstudioen, sech virum ëffentleche Start unzemellen. Dat sinn Är Beta-Clienten. Bitt hinnen eng däitlech Remise un (50% Remise fir ëmmer, oder 3 Méint gratis) am Austausch fir:
 
@@ -91,7 +91,7 @@ Invitéiert 5-10 Besëtzer vu Fitnessstudioen, sech virum ëffentleche Start unz
 
 Dat gëtt Iech echte Client-Feedback a live Websäiten, déi Dir weise kënnt, ier Dir fir d'Ëffentlechkeet opmaacht.
 
-### Phas 2: Ëffentleche Start
+### Phas 2: Ëffentleche Start {#phase-2-public-launch}
 
 Soubal de Feedback vum Soft Launch agebaut ass:
 
@@ -100,7 +100,7 @@ Soubal de Feedback vum Soft Launch agebaut ass:
 - Fänkt mat Clientëgewënnung un (Lektioun 11)
 - Kënnegt et op relevante Kanäl aus der Fitnessbranche un
 
-## Aktiounen um Startdag
+## Aktiounen um Startdag {#launch-day-actions}
 
 Den Dag, wou Dir ëffentlech gitt:
 
@@ -110,7 +110,7 @@ Den Dag, wou Dir ëffentlech gitt:
 4. **Disponibel sinn** -- Är éischt echt Clientë kënnen Hëllef brauchen, a séier Äntwerte bauen Vertrauen op
 5. **Kuerz feieren** -- an da nees un d'Aarbecht goen
 
-## Wat ka schifgoen
+## Wat ka schifgoen {#what-can-go-wrong}
 
 Sidd virbereet op:
 
@@ -120,7 +120,7 @@ Sidd virbereet op:
 - **Leeschtung ënner Laascht**: Wann Dir e Traffic-Spike kritt, wësst, wéi Dir Ären Hosting skaléiert
 - **Clienteverwirrung**: Hutt Är Wëssensbasis an Support-Kanäl prett
 
-## De FitSite Network bis elo
+## De FitSite Network bis elo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Wat mir an dëser Lektioun gebaut hunn
+## Wat mir an dëser Lektioun gebaut hunn {#what-we-built-this-lesson}
 
 - **Eng ëmfaassend Pre-Launch-Checklëscht**, déi Infrastruktur, Inhalt, Bezuelungen a Juristesch ofdeckt
 - **Eng Soft-Launch-Strategie**, fir echte Feedback ze kréien, ier Dir ëffentlech gitt

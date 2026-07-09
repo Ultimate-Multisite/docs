@@ -4,11 +4,11 @@ title: Φίλτρο - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Φίλτρο: wu_apc_process_page_content
+# Φίλτρο: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Επιτρέπει στους developers να τροποποιήσουν το τελικό περιεχόμενο.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Όνομα | Τύπος | Περιγραφή |
 |------|------|-------------|
@@ -17,12 +17,12 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Πίστα (Array) που περιέχει τα placeholders. |
 | $placeholder_count | `int` | Αριθμός των εντοπισμένων placeholders. |
 
-### Από
+### Από {#since}
 
 - 1.4.0
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) στην γραμμή 46
 
-## Επιστρέφει
+## Επιστρέφει {#returns}
 Το περιεχόμενο μετά τη τροποποίηση.

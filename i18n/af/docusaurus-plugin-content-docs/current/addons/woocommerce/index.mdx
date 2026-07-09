@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce-integrasie
+# WooCommerce-integrasie {#woocommerce-integration}
 
 Die WooCommerce-integrasie werk op ’n baie soortgelyke manier as ons Handmatige Gateway. Dit bied baie buigsaamheid aan jou gebruikers, deur hulle toe te laat om enige van die betaalvorms te kies wat op jou WooCommerce-installasie beskikbaar is. En dit is eenvoudig: sodra die gebruiker se faktureringstydperk eindig, word die gebruikerintekening op wag geplaas. Terselfdertyd sal ’n bestelling op die WooCommerce-installasie van die netwerk se hoofwerf geskep word. Die gebruiker ontvang dan ’n faktuur in hul e-pos, met ’n skakel om die betaling te doen. Sodra die betaling ontvang is, word die intekening hernu.
 
-## Kenmerke
+## Kenmerke {#features}
 
 - Maklike integrasie tussen Ultimate Multisite en WooCommerce
 - Verskeie betaalmetodes beskikbaar
 - Geoutomatiseerde herhalende fakturering met die gebundelde intekeninge-kern, met opsionele WooCommerce Subscriptions-pluginverbeterings
 - Afrekeningstotale sluit Ultimate Multisite-belastings as afsonderlike, nie-belasbare WooCommerce-fooilyne in sodat kliënte belastingbedrae voor betaling kan hersien
 
-## Dokumentasie
+## Dokumentasie {#documentation}
 
 **Stel Die WooCommerce-integrasie Op**
 
 **Brei jou Betaalopsies uit met Ultimate Multisite: WooCommerce-integrasie**
 
-## Installasie
+## Installasie {#installation}
 
 1. Laai 'ultimate-multisite-woocommerce' op na die '/wp-content/plugins/'-gids
 2. Aktiveer die inprop deur die 'Plugins'-kieslys in WordPress
 3. Volg die stap-vir-stap Wizard om die inprop op te stel
 
-## Gebruiksgids
+## Gebruiksgids {#usage-guide}
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
@@ -40,7 +40,7 @@ Ons verstaan dat _Stripe_ en _PayPal_ nie in sommige lande beskikbaar is nie, wa
 
 _WooCommerce_ is ’n baie gewilde eCommerce-inprop. Ontwikkelaars regoor die wêreld het byvoegings geskep om verskillende betaalgateways daarmee te integreer. Ons het hiervan gebruik gemaak om die betaalgateways wat jy in die Ultimate Multisite-faktureringstelsel kan gebruik, uit te brei.
 
-## Stel Dit Op
+## Stel Dit Op {#setting-it-up}
 
 Eerstens moet jy die WooCommerce Integration-byvoeging installeer, wat **gratis is vir gelisensieerde gebruikers**. Om dit te installeer, klik op Ultimate Multisite op jou superadmin-Dashboard en kies **Byvoegings**.
 
@@ -68,11 +68,11 @@ Sodra dit geïnstalleer is, sal jy ’n bykomende opsie onder die Ultimate Multi
 
 Jy kan ’n paar basiese instellings opstel, soos die vertoonnaam wat aan die voorkant sal verskyn en instruksies om jou gebruikers deur hul afrekeningvloei te lei. Daarna kan jy na jou **hoofwerf se _WooCommerce_-instellings** gaan om die betaalgateway wat jy verkies om te gebruik, te aktiveer en op te stel.
 
-### Afrekening-belastingfooilyne
+### Afrekening-belastingfooilyne {#checkout-tax-fee-lines}
 
 Wanneer ’n Ultimate Multisite-afrekening belastings insluit, voeg die integrasie elke Ultimate Multisite-belastingbedrag by WooCommerce-afrekening as ’n afsonderlike, nie-belasbare fooilyn. Dit hou die belastingtotaal sigbaar voor betaling, terwyl dit keer dat WooCommerce die belastingfooi weer belas.
 
-## Hoe om die betaling te bestuur
+## Hoe om die betaling te bestuur {#how-to-manage-the-payment}
 
 Die WooCommerce-integrasie werk op ’n baie soortgelyke manier as ons **Handmatige Gateway**. Die nadeel is dat elke betaling handmatig aan die einde van die faktureringstydperk betaal moet word. Hier is hoe die vloei werk:
 
@@ -82,13 +82,13 @@ Die WooCommerce-integrasie werk op ’n baie soortgelyke manier as ons **Handmat
 
   * Sodra die betaling ontvang is, word die lidmaatskap **hernu** , die betaling word op Ultimate Multisite aangeteken en die bestelling word as voltooi gestel.
 
-### ’n Paar Belangrike Notas:
+### ’n Paar Belangrike Notas: {#some-important-notes}
 
   * Die verstekfunksionaliteit van Ultimate Multisite werk steeds met hierdie integrasievorm. Byvoorbeeld, **terugbetalings uitreik** vanaf die **Intekeningbestuur**-skerm sal met WooCommerce kommunikeer om die terugbetaling met die gekose betaalvorm uit te reik.
 
   * Ultimate Multisite: WooCommerce Integration maak staat op WP-Cron om te werk. Dit werk meestal baie goed, maar as die werf min verkeer het, word die cron nie aangespoor om vir geskeduleerde gebeure te kyk nie en word die gebeurtenis gemis, wat uitvoeringsvertragings kan veroorsaak.
 
-## WooCommerce Subscriptions-plugin
+## WooCommerce Subscriptions-plugin {#woocommerce-subscriptions-plugin}
 
 Om elke maand handmatig ’n betaling te begin, is nie ideaal vir eindgebruikers nie omdat intekeninge verwag word om outomaties elke faktureringsiklus te herhaal. Die WooCommerce Integration-byvoeging bundel nou die kernintekeningkode, sodat herhalende produkte altyd intekeninge vir herhalende fakturering gebruik.
 
@@ -100,7 +100,7 @@ En dit is al. Jou eindgebruikers hoef nie meer handmatig ’n betaling aan die e
 
 Benewens dat ’n bestelling op jou hoofwerf onder _WooCommerce_ geskep word, sal dit ook ’n intekening vir elke Account skep.
 
-### Gedrag vir opskorting by mislukte hernuwing
+### Gedrag vir opskorting by mislukte hernuwing {#failed-renewal-suspension-behavior}
 
 By verstek bly lidmaatskappe aktief terwyl WooCommerce Subscriptions sy herprobeerskedule vir mislukte betalings verwerk. Dit behou die normale WooCommerce Subscriptions-grasievenster sodat ’n herstelde hernuwing die intekening en lidmaatskap weer kan sinkroniseer sonder om toegang voortydig te onderbreek.
 

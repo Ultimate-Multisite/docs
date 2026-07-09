@@ -3,15 +3,15 @@ title: Jana Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Jana Logo SVG
+# Jana Logo SVG {#generate-logo-svg}
 
 Keupayaan **Generate Logo SVG** membolehkan Theme Builder mencipta dan menyematkan logo SVG tersuai terus ke laman WordPress anda dengan sanitasi automatik yang selamat ruang nama.
 
-## Gambaran Keseluruhan
+## Gambaran Keseluruhan {#overview}
 
 Keupayaan ini menjana logo grafik vektor skalabel (SVG) berdasarkan hala tuju jenama dan pilihan reka bentuk tapak anda. SVG yang dijana akan disanitasi secara automatik untuk memastikan ia selamat digunakan dalam WordPress sambil mengekalkan integriti visual.
 
-## Parameter
+## Parameter {#parameters}
 
 | Parameter | Jenis | Wajib | Penerangan |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Keupayaan ini menjana logo grafik vektor skalabel (SVG) berdasarkan hala tuju je
 | `height` | number | Tidak | Tinggi SVG dalam piksel (lalai: 200) |
 | `include_text` | boolean | Tidak | Sama ada untuk memasukkan nama tapak sebagai teks dalam logo (lalai: true) |
 
-## Format Output
+## Format Output {#output-format}
 
 Keupayaan ini mengembalikan rentetan SVG dengan struktur berikut:
 
@@ -36,7 +36,7 @@ Keupayaan ini mengembalikan rentetan SVG dengan struktur berikut:
 }
 ```
 
-## Tingkah Laku Sanitasi SVG
+## Tingkah Laku Sanitasi SVG {#svg-sanitisation-behaviour}
 
 SVG yang dijana akan menjalani sanitasi automatik yang selamat ruang nama untuk:
 
@@ -48,7 +48,7 @@ SVG yang dijana akan menjalani sanitasi automatik yang selamat ruang nama untuk:
 
 Ini memastikan SVG selamat untuk disematkan terus dalam WordPress tanpa memerlukan sanitasi tambahan.
 
-## Contoh Penggunaan
+## Contoh Penggunaan {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Keupayaan ini mencipta logo SVG yang:
 - Mengikut prinsip reka bentuk moden
 - Disanitasi secara automatik dan sedia untuk digunakan
 
-## Integrasi dengan Theme Builder
+## Integrasi dengan Theme Builder {#integration-with-theme-builder}
 
 Apabila menggunakan pemilihan arah reka bentuk Theme Builder, keupayaan Generate Logo SVG:
 
@@ -71,21 +71,21 @@ Apabila menggunakan pemilihan arah reka bentuk Theme Builder, keupayaan Generate
 3. Menyematkan logo secara automatik ke kawasan header/jenama tapak anda
 4. Menyimpan SVG sebagai logo tersuai dalam media WordPress
 
-## Amalan Terbaik
+## Amalan Terbaik {#best-practices}
 
 - **Berikan pilihan gaya yang jelas** — terangkan gaya reka bentuk yang anda mahukan (moden, klasik, ceria, dsb.)
 - **Nyatakan warna** — sertakan warna jenama anda untuk konsistensi
 - **Uji paparan** — sahkan logo dipaparkan dengan betul merentasi pelbagai saiz skrin
 - **Sesuaikan lagi** — gunakan alat penyesuaian logo WordPress untuk melaraskan saiz dan penempatan
 
-## Batasan
+## Batasan {#limitations}
 
 - Logo SVG dijana sebagai grafik statik (bukan animasi)
 - Logo kompleks dengan banyak elemen mungkin memerlukan penambahbaikan manual
 - Fon tersuai tidak disokong; teks menggunakan fon sistem
 - Dimensi yang terlalu besar atau terlalu kecil mungkin menjejaskan kualiti
 
-## Keupayaan Berkaitan
+## Keupayaan Berkaitan {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — semak kontras warna untuk kebolehaksesan
 - [Create Menu](./create-menu.md) — cipta menu navigasi untuk tapak anda

@@ -4,13 +4,13 @@ title: Filtre - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Filter whether to enforce additional password rules.
 
 When true, enforces minimum length and character requirements. Automatically enabled for "Super Strong" setting or when Defender Pro's Strong Password feature is active.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,10 +18,10 @@ When true, enforces minimum length and character requirements. Automatically ena
 | $strength_setting | `string` | La valeur de réglage d'administration. |
 | $defender_active | `bool` | Si le mot de passe fort de Defender Pro est actif. |
 
-### Since
+### Since {#since}
 
 - 2.4.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) à la ligne 531

@@ -3,18 +3,18 @@ title: क्लाउडवेys एकीकरण
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# क्लाउडवेज़ एकीकरण (Cloudways Integration)
+# क्लाउडवेज़ एकीकरण (Cloudways Integration) {#cloudways-integration}
 
-## अवलोकन (Overview)
+## अवलोकन (Overview) {#overview}
 क्लाउडवेज़ एक व्यवस्थापकीय क्लाउड होस्टिङ प्लेटफर्म हो जसले तपाईंलाई डिजिटल ओशन, AWS, गुगल क्लाउड जस्ता विभिन्न क्लाउड प्रदायकहरूमा वर्डप्रेस साइटहरू डिप्लोय गर्न अनुमति दिन्छ। यो एकीकरणले अल्टीमेट मल्टिसिट (Ultimate Multisite) र क्लाउडवेज़ बीच स्वचालित डोमेन सिङ्किङ र SSL प्रमाणपत्र व्यवस्थापन सक्षम गर्दछ।
 
-## सुविधाहरू (Features)
+## सुविधाहरू (Features) {#features}
 - स्वचालित डोमेन सिङ्किङ
 - SSL प्रमाणपत्र व्यवस्थापन
 - अतिरिक्त डोमेनहरूको समर्थन
 - SSL प्रमाणपत्रहरूको लागि DNS प्रमाणीकरण
 
-## आवश्यकताहरू (Requirements)
+## आवश्यकताहरू (Requirements) {#requirements}
 तपाईंको `wp-config.php` फाइलमा निम्न स्थिरांकहरू (constants) परिभाषित गर्नुपर्छ:
 
 ```php
@@ -30,16 +30,16 @@ define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## सेटअप निर्देशनहरू (Setup Instructions)
+## सेटअप निर्देशनहरू (Setup Instructions) {#setup-instructions}
 
-### १. आफ्नो क्लाउडवेज़ API प्रमाणहरू प्राप्त गर्नुहोस् (Get Your Cloudways API Credentials)
+### १. आफ्नो क्लाउडवेज़ API प्रमाणहरू प्राप्त गर्नुहोस् (Get Your Cloudways API Credentials) {#1-get-your-cloudways-api-credentials}
 
 १. आफ्नो क्लाउडवेज़ ड्यासबोर्डमा लग इन गर्नुहोस्।
 २. "Account" > "API Keys" मा जानुहोस्।
 ३. यदि तपाईंसँग पहिले नै कुनै API key छैन भने एक API key उत्पन्न गर्नुहोस्।
 ४. आफ्नो ईमेल र API key कपि गर्नुहोस्।
 
-### २. आफ्नो सर्भर र एप्लिकेशन ID प्राप्त गर्नुहोस् (Get Your Server and Application IDs)
+### २. आफ्नो सर्भर र एप्लिकेशन ID प्राप्त गर्नुहोस् (Get Your Server and Application IDs) {#2-get-your-server-and-application-ids}
 
 १. आफ्नो क्लाउडवेज़ ड्यासबोर्डमा, "Servers" मा जानुहोस्।
 २. जहाँ तपाईंको वर्डप्रेस मल्टिसिट होस्ट गरिएको छ त्यो सर्भर चयन गर्नुहोस्।
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ४. "Applications" मा जानुहोस् र आफ्नो वर्डप्रेस एप्लिकेशन चयन गर्नुहोस्।
 ५. App ID URL मा देखिन्छ: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### ३. wp-config.php मा स्थिरांकहरू थप्नुहोस् (Add Constants to wp-config.php)
+### ३. wp-config.php मा स्थिरांकहरू थप्नुहोस् (Add Constants to wp-config.php) {#3-add-constants-to-wp-configphp}
 
 निम्न स्थिरांकहरू आफ्नो `wp-config.php` फाइलमा थप्नुहोस्:
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 `WU_CLOUDWAYS_EXTRA_DOMAINS` में `*.your-network.com` (या आपके स्वयं के नेटवर्क के किसी भी सबडोमेन पैटर्न) को **न** जोड़ें। इसके लिए नीचे [महत्वपूर्ण — वाइल्डकार्ड SSL समस्या](#important--wildcard-ssl-pitfall) देखें कि यह प्रति-टेनेन्ट SSL प्रमाणपत्र जारी होने से क्यों रोकता है।
 :::
 
-### 4. इंटीग्रेशन सक्षम करें
+### 4. इंटीग्रेशन सक्षम करें {#4-enable-the-integration}
 
 1. अपने WordPress एडमिन में, Ultimate Multisite > Settings पर जाएं
 2. "Domain Mapping" टैब पर जाएं
@@ -76,9 +76,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Cloudways इंटीग्रेशन को सक्षम (Enable) करें
 5. "Save Changes" पर क्लिक करें
 
-## यह कैसे काम करता है
+## यह कैसे काम करता है {#how-it-works}
 
-### डोमेन सिंकिंग
+### डोमेन सिंकिंग {#domain-syncing}
 
 जब Ultimate Multisite में कोई डोमेन मैप किया जाता है:
 
@@ -89,7 +89,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 
 ध्यान दें: Cloudways API को हर बार केवल व्यक्तिगत डोमेन जोड़ने या हटाने के बजाय सभी डोमेन की पूरी सूची भेजने की आवश्यकता होती है।
 
-### SSL प्रमाणपत्र प्रबंधन
+### SSL प्रमाणपत्र प्रबंधन {#ssl-certificate-management}
 
 डोमेन सिंक होने के बाद:
 
@@ -99,7 +99,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 
 इन्टिग्रेशनले सधैँ क्लाउडवेysबाट **मानक** (वाइल्डकार्ड नभएको) Let's Encrypt प्रमाणपत्रहरू अनुरोध गर्छ। यदि `WU_CLOUDWAYS_EXTRA_DOMAINS` मा वाइल्डकार्ड प्याटर्न दिइएको छ भने, SSL अनुरोध गर्नुअघि सुरुको `*.` हटाएर त्यो वाइल्डकार्ड कहिल्यै पनि यो इन्टिग्रेशनद्वारा इन्स्टल हुँदैन। क्लाउडवेysमा वाइल्डकार्ड प्रमाणपत्र प्रयोग गर्न तपाईंले त्यसलाई आफैँ इन्स्टल गर्नुपर्ने हुन्छ, तर यसो गर्दा नक्सा गरिएका कस्टम डोमेनहरूका लागि प्रति-डोमेन Let's Encrypt जारी गर्ने प्रक्रिया अवरुद्ध हुन्छ (तलको जोखिम हेर्नुहोस्)।
 
-## अतिरिक्त डोमेनहरू (Extra Domains)
+## अतिरिक्त डोमेनहरू (Extra Domains) {#extra-domains}
 
 `WU_CLOUDWAYS_EXTRA_DOMAINS` कन्स्ट्यान्टले तपाईंलाई थप **बाह्य** डोमेनहरू निर्दिष्ट गर्न अनुमति दिन्छ जुन क्लाउडवेys एपको अलिअस् (aliases) सूचीमा सधैँ राख्नुपर्छ। यसको प्रयोग निम्नका लागि गर्नुहोस्:
 
@@ -108,13 +108,13 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 
 तपाईंको आफ्नै नेटवर्कको सबडोमेन वाइल्डकार्ड (जस्तै: `*.your-network.com`) को लागि यो कन्स्ट्यान्ट प्रयोग नगर्नुहोस्। तलको वाइल्डकार्ड SSL जोखिम हेर्नुहोस्।
 
-## महत्त्वपूर्ण — वाइल्डकार्ड SSL जोखिम
+## महत्त्वपूर्ण — वाइल्डकार्ड SSL जोखिम {#important--wildcard-ssl-pitfall}
 
 Cloudways को डिफलट सेटअप पछ्याउँदा हुने एउटा सामान्य गल्ती भनेको `WU_CLOUDWAYS_EXTRA_DOMAINS` मा `*.your-network.com` जस्तो वाइल्डकार्ड थप्नु वा त्यस वाइल्डकार्डको लागि Cloudways वाइल्डकार्ड SSL प्रमाणपत्र आफैँ इन्स्टल गर्नु हो।
 
 **यदि तपाईंले यसो गर्नुभयो भने, Ultimate Multisite ले नक्सा गर्ने प्रति-टेनन्ट कस्टम डोमेनहरूको लागि Let's Encrypt प्रमाणपत्र जारी गर्न Cloudways अस्वीकार गर्छ। क्लाउडवेysले एपमा सक्रिय SSL प्रमाणपत्रलाई हरेक पटक बदल्छ, र एपमा पहिले नै रहेको वाइल्डकार्ड प्रमाणपत्रले इन्टिग्रेशनले भर पर्नुपर्ने प्रति-डोमेन Let's Encrypt जारी गर्ने प्रक्रियालाई अवरुद्ध गर्छ।**
 
-### Ultimate Multisite नेटवर्कको लागि सिफारिस गरिएका Cloudways SSL सेटअप
+### Ultimate Multisite नेटवर्कको लागि सिफारिस गरिएका Cloudways SSL सेटअप {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 १. क्लाउडवेज़ (Cloudways) एपको **SSL Certificate** ट्याबमा, केवल `your-network.com` र `www.your-network.com` लाई समेट्ने एउटा **standard Let's Encrypt certificate** इन्स्टल गर्नुहोस् — वाइल्डकार्ड (wildcard) चाहिँ नराख्नुहोस्।
 २. `WU_CLOUDWAYS_EXTRA_DOMAINS` मा `*.your-network.com` (वा तपाईंको नेटवर्कको कुनै पनि सबडोमेन प्याटर्न) राख्नु हुँदैन। त्यो कन्स्टेन्टलाई **बाह्य** डोमेनका लागि मात्र सुरक्षित राख्नुहोस्।
@@ -122,20 +122,20 @@ Cloudways को डिफलट सेटअप पछ्याउँदा ह
 
 यदि तपाईंको टेनेन्टहरूको कस्टम डोमेनमा SSL अड्किएको छ भने, Cloudways SSL ट्याब जाँच गर्नुहोस्। यदि त्यहाँ वाइल्डकार्ड certificate सक्रिय छ भने, त्यसलाई हटाउनुहोस्, मुख्य नेटवर्क डोमेनका लागि standard Let's Encrypt certificate पुनः जारी गर्नुहोस्, र `WU_CLOUDWAYS_EXTRA_DOMAINS` बाट कुनै पनि वाइल्डकार्ड प्रविष्टि हटाउनुहोस्। त्यसपछि डोमेन मैपिंग ट्रिगर गर्नुहोस् (वा अर्कोको लागि पर्खनुहोस्) र integration फेरि प्रति-डोमेन certificate जारी गर्न सुरु गर्नेछ।
 
-## समस्या समाधान (Troubleshooting)
+## समस्या समाधान (Troubleshooting) {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 - तपाईंको ईमेल र API key सही छन् कि छैनन्, त्यो जाँच गर्नुहोस्।
 - तपाईंको सर्भर र application ID सही छन् कि छैनन्, त्यो जाँच गर्नुहोस्।
 - सुनिश्चित गर्नुहोस् कि तपाईंको Cloudways accountमा आवश्यक अनुमतिहरू छन्।
 
-### SSL Certificate समस्याहरू
+### SSL Certificate समस्याहरू {#ssl-certificate-issues}
 - SSL प्रमाणपत्र जारी गर्नुअघि, क्लाउडवेysले डोमेनहरूमा तपाईंको सर्भरमा सिधै इंगित गर्ने वैध DNS रेकर्डहरू हुनुपन्छ।
 - यो इन्टिग्रेशनले SSL प्रमाणपत्र अनुरोध गर्नुअघि DNS रेकर्डहरू जाँच गर्छ।
 - यदि SSL प्रमाणपत्र जारी गरिएका छैनन् भने, आफ्नो डोमेनहरू तपाईंको सर्भरको IP ठेगानामा सही रूपमा इंगित छन् कि छैनन् भनी जाँच गर्नुहोस्।
 - **SSL बिना Per-tenant कस्टम डोमेन अड्किएको छ?** Cloudways एपको SSL Certificate ट्याब हेर्नुहोस्। यदि कुनै वाइल्डकार्ड प्रमाणपत्र (हावामान रूपमा इन्स्टल गरिएको, वा `*.your-network.com` लाई समेट्ने) सक्रिय छ भने, Cloudways ले व्यक्तिगत रूपमा नक्सा गरिएका कस्टम डोमेनहरूका लागि Let's Encrypt प्रमाणपत्र जारी गर्दैन। यसलाई मुख्य नेटवर्क डोमेन (`your-network.com`, `www.your-network.com`) मात्र समेट्ने मानक Let's Encrypt प्रमाणपत्रले प्रतिस्थापन गर्नुहोस् र `WU_CLOUDWAYS_EXTRA_DOMAINS` बाट कुनै पनि वाइल्डकार्ड प्रविष्टि हटाउनुहोस्। त्यसपछि डोमेन मैपिंग पुनः ट्रिगर गर्नुहोस् (वा अर्कोको लागि पर्खनुहोस्) र इन्टिग्रेशनले प्रति-डोमेन प्रमाणपत्रहरू अनुरोध गर्नेछ।
 
-### डोमेन थपिएको छैन
+### डोमेन थपिएको छैन {#domain-not-added}
 - कुनै त्रुटि सन्देशका लागि Ultimate Multisite लगहरू जाँच गर्नुहोस्।
 - डोमेन पहिले नै Cloudways मा थपिएको छ कि छैन भनेर प्रमाणित गर्नुहोस्।
 - तपाईंले थप्दै गरेको डोमेनको संख्या तपाईंको Cloudways प्लानले समर्थन गर्छ वा गर्दैन, त्यो सुनिश्चित गर्नुहोस्।

@@ -3,9 +3,9 @@ title: Multi-netwerk-veranderingslog
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network-veranderingslogboek
+# Multi-Network-veranderingslogboek {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nuut: Netwerk-sjabloonvoorskouer — blaai deur en voorskou netwerk-sjablone met ’n lewendige paneel voordat jy aankoop.
 * Nuut: Netwerk-sjabloonkieser by checkout — kliënte kan ’n netwerk-sjabloon tydens die signup-checkout-vloei kies.
 * Nuut: Kruisnetwerk-magic link SSO — kliënte kan naatloos toegang tot sub-netwerke kry via magic-link-verifikasie.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Regstelling: Waak teen ongedefinieerde `network_id`-sleutel in werfnavraag-omvang.
 * Regstelling: Netwerktoestemmingskontrole voor kontekswisseling voorkom `wpdb`-tabel-eienskapfoute.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Regstelling: Skep nuwe netwerk.
 * Regstelling: Weergawe van spyskaarte.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Opgedateer na Plugin Update Checker v5
 * Moderne WordPress plugin-koppe bygevoeg
 * Verbeterde versoenbaarheid met die nuutste WordPress-weergawes
 
-### 1.0.2
+### 1.0.2 {#102}
 * Foutregstellings en prestasieverbeterings
 * Verbeterde netwerkisolasie
 
-### 1.0.0
+### 1.0.0 {#100}
 * Aanvanklike vrystelling
 * Kern-multinetwerk-funksionaliteit
 * Integrasie met Multisite Ultimate

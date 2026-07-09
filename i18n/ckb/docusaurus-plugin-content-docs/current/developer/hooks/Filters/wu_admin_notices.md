@@ -4,11 +4,11 @@ title: فلتەر - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# فلتەر: wu_admin_notices
+# فلتەر: wu_admin_notices {#filter-wuadminnotices}
 
 ڕێگە بە پەرەپێدەران بدە بۆ فلتەرکردنی ئاگادارکردنەوەکانی بەڕێوەبەرایەتی کە لەلایەن Ultimate Multisite زیادکراون.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | ئەگەر ئاگادارکردنەوە لابردنەکان فلتەرکرابنەوە. |
 | $dismissed_messages | `array` | لیستی کلیلەکانی ئاگادارکردنەوە لابراوەکان. |
 
-### لە وەشانی
+### لە وەشانی {#since}
 
 - 2.0.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) لە هێڵی 121
 
 
-## گەڕاندنەوەکان
+## گەڕاندنەوەکان {#returns}

@@ -3,18 +3,18 @@ title: Integrasi Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrasi Cloudways
+# Integrasi Cloudways {#cloudways-integration}
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 Cloudways téh platform hosting cloud yang dikelola, di mana kamu bisa milih tempat buat situs WordPress di berbagai penyedia cloud saperti DigitalOcean, AWS, Google Cloud, jeung liyane. Integrasi ieu ngajadikeun sinkronisasi domain otomatis jeung manajemen sertifikat SSL antara Ultimate Multisite jeung Cloudways.
 
-## Fitur
+## Fitur {#features}
 - Sinkronisasi domain otomatis
 - Manajemen sertifikat SSL
 - Dukungan untuk domain tambahan (extra domains)
 - Validasi DNS pikeun sertifikat SSL
 
-## Persyaratan
+## Persyaratan {#requirements}
 Konstanta di handap kudu didefinisikeun dina file `wp-config.php` kamu:
 
 ```php
@@ -30,16 +30,16 @@ Secara pilihan, kamu ogé bisa mendefinisikeun:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'daftar_domain_dipisah_kuoma_koma');
 ```
 
-## Instruksi Setup
+## Instruksi Setup {#setup-instructions}
 
-### 1. Ambil Kredensial API Cloudways Kamu
+### 1. Ambil Kredensial API Cloudways Kamu {#1-get-your-cloudways-api-credentials}
 
 1. Login ka dashboard Cloudways kamu
 2. Pindah ka "Account" > "API Keys"
 3. Bikin API key lamun kamana teu boga
 4. Salin email jeung API key kamu
 
-### 2. Ambil ID Server jeung Aplikasi Kamu
+### 2. Ambil ID Server jeung Aplikasi Kamu {#2-get-your-server-and-application-ids}
 
 1. Dina dashboard Cloudways, pindah ka "Servers"
 2. Pilih server di mana multisite WordPress kamu dipasang
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'daftar_domain_dipisah_kuoma_koma');
 4. Pindah ka "Applications" jeung pilih aplikasi WordPress kamu
 5. ID Aplikasi bisa dilihat dina URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Tambah Konstanta di wp-config.php
+### 3. Tambah Konstanta di wp-config.php {#3-add-constants-to-wp-configphp}
 
 Tambahkan konstanta handap kana file `wp-config.php` kamu:
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 **Tong** nambahan `*.your-network.com` (atawa pola subdomain jaringan anjeun sorangan) ka `WU_CLOUDWAYS_EXTRA_DOMAINS`. Tingali [Penting — jebakan SSL wildcard](#important--wildcard-ssl-pitfall) di handapna pikeun sabab naon hal ieu ngalangann sertifikat SSL per-tenant ti kapanggih.
 :::
 
-### 4. Aktifkeun Integrasi
+### 4. Aktifkeun Integrasi {#4-enable-the-integration}
 
 1. Di admin WordPress anjeun, ka Ultimate Multisite > Settings indit.
 2. Indit ka tab "Domain Mapping".
@@ -76,9 +76,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Aktifkeun integrasi Cloudways.
 5. Klik "Save Changes".
 
-## Kumaha Cara Naonna
+## Kumaha Cara Naonna {#how-it-works}
 
-### Domain Syncing (Sinkronisasi Domain)
+### Domain Syncing (Sinkronisasi Domain) {#domain-syncing}
 
 Lamun hiji domain di-map dina Ultimate Multisite:
 
@@ -89,7 +89,7 @@ Lamun hiji domain di-map dina Ultimate Multisite:
 
 Catatan: API Cloudways mbutuh ngirimkeun daftar domain anu lengkap unggal kali, lain ngan ukur nambahan atawa ngahapus domain perorangan.
 
-### SSL Certificate Management (Manajemen Sertifikat SSL)
+### SSL Certificate Management (Manajemen Sertifikat SSL) {#ssl-certificate-management}
 
 Sanggeus domain disinkronisasi:
 
@@ -99,7 +99,7 @@ Sanggeus domain disinkronisasi:
 
 Integrasi téh sok minta sertifikat Let's Encrypt **standar** (non-wildcard) ti Cloudways. Lamun aya pola wildcard dina `WU_CLOUDWAYS_EXTRA_DOMAINS`, tanda `*.` di awal bakal dileupas samémé permintaan SSL — wildcard éta teu pernah dipasang ku integrasi ieu. Pikeun ngagunake sertifikat wildcard di Cloudways, anjeun kudu pasangna sacara manual, tapi lamun kitu bakal ngalibur (block) penerbitan Let's Encrypt per-domain pikeun domain kustom anu mapana (lihat jebakan di handap).
 
-## Domain Ekstra
+## Domain Ekstra {#extra-domains}
 
 Konstanta `WU_CLOUDWAYS_EXTRA_DOMAINS` ngajak anjeun pikeun nulis domain **eksternal** tambahan anu kudu salawasna aya dina daftar alias aplikasi Cloudways. Gunake éta pikeun:
 
@@ -108,13 +108,13 @@ Konstanta `WU_CLOUDWAYS_EXTRA_DOMAINS` ngajak anjeun pikeun nulis domain **ekste
 
 **Ulah** ngagunake konstanta ieu pikeun subdomain wildcard jaringan sorangan anjeun (misalnya, `*.your-network.com`). Lihat jebakan SSL wildcard di handap.
 
-## Penting — Jebakan SSL Wildcard
+## Penting — Jebakan SSL Wildcard {#important--wildcard-ssl-pitfall}
 
 Salah hiji kalepatan umum lamun ngikut pengaturan default Cloudways nyaéta nambahan wildcard saperti `*.your-network.com` ka `WU_CLOUDWAYS_EXTRA_DOMAINS`, atawa pasang sertifikat SSL wildcard Cloudways sacara manual pikeun wildcard éta.
 
 **Lamun anjeun ngalakukeun éta, Cloudways bakal nolak pikeun méré sertifikat Let's Encrypt pikeun domain kustom per-tenant anu dipetakan ku Ultimate Multisite.** Cloudways ganti sertifikat SSL aktif dina aplikasi unggal kali, sarta sertifikat wildcard anu geus aya dina aplikasi bakal ngalibur penerbitan Let's Encrypt per-domain anu dikénéh diandelkeun ku integrasi ieu.
 
-### Pengaturan SSL Cloudways anu Dikawasa pikeun jaringan Ultimate Multisite
+### Pengaturan SSL Cloudways anu Dikawasa pikeun jaringan Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Di tab **SSL Certificate** aplikasi Cloudways, pasang sertifikat Let's Encrypt standar yang cuma mencakup `your-network.com` dan `www.your-network.com` — **bukan** wildcard.
 2. Jangan masukkan `*.your-network.com` (atau pola subdomain jaringan Anda sendiri) di `WU_CLOUDWAYS_EXTRA_DOMAINS`. Simpan konstanta itu khusus untuk domain **eksternal** saja.
@@ -122,20 +122,20 @@ Salah hiji kalepatan umum lamun ngikut pengaturan default Cloudways nyaéta namb
 
 Jika domain kustom penyewa Anda macet tanpa SSL, periksa tab SSL Cloudways. Jika sertifikat wildcard aktif di sana, hapus, terbitkan ulang sertifikat Let's Encrypt standar hanya untuk domain jaringan utama, dan hapus entri wildcard apa pun dari `WU_CLOUDWAYS_EXTRA_DOMAINS`. Kemudian picu pemetaan domain lagi (atau tunggu yang berikutnya) dan integrasi akan mulai menerbitkan sertifikat per domain lagi.
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
-### Masalah Koneksi API
+### Masalah Koneksi API {#api-connection-issues}
 - Pastikan email dan API key Anda sudah benar
 - Periksa apakah ID server dan aplikasi Anda sudah benar
 - Pastikan akun Cloudways Anda memiliki izin yang diperlukan
 
-### Masalah Sertifikat SSL
+### Masalah Sertifikat SSL {#ssl-certificate-issues}
 - Cloudways mewajibkan domain punya catatan DNS yang valid menunjuk ke server kamu sebelum mengeluarkan sertifikat SSL.
 - Integrasi ini bakal ngecek catatan DNS samém banget samémnya sae sebelum minta sertifikat SSL.
 - Lamun sertifikat SSL teu dikeluarkeun, cek deui yén domain kamu bener-bener nunjuk ka alamat IP server kamu.
 - **Domain kustom per tenant teu bisa dipasang SSL?** Cek tab Sertifikat SSL di aplikasi Cloudways. Lamun ada sertifikat wildcard (dipasang manual, atawa ngawengku `*.your-network.com`) anu aktif, Cloudways moal ngaluarkeun sertifikat Let's Encrypt pikeun domain kustom nu dipetkeun hiji-hiji. Ganti éta ku sertifikat Let's Encrypt standar nu ngan ukur ngawengku domain utama jaringan (`your-network.com`, `www.your-network.com`) jeung hapus naon waé entri wildcard tina `WU_CLOUDWAYS_EXTRA_DOMAINS`. Terus pancing deui pemetaan domain (atawa tunggu anu salajengna) sarta integrasi bakal minta sertifikat per-domain.
 
-### Domain Teu Ditambah
+### Domain Teu Ditambah {#domain-not-added}
 - Cek log Ultimate Multisite pikeun aya pesan error naon waé.
 - Pastike yén domain éta teu geus ditambihan di Cloudways.
 - Pastike paket Cloudways kamu ngahargaan jumlah domain anu keur ditambihan.

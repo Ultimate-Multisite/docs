@@ -3,7 +3,7 @@ title: GoCardless बदलावों का रिकॉर्ड
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless चेंजलॉग
+# GoCardless चेंजलॉग {#gocardless-changelog}
 
 Version: 1.0.3 - जारी किया गया 2026-05-05
 * सुधार: अब जब GoCardless सदस्यता को लंबित (pending) या रोक (on-hold) स्थिति में रद्द किया जाता है, तो अनाथ (orphaned) लंबित साइटों को साफ़ कर दिया जाता है।

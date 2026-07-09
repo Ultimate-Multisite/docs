@@ -3,11 +3,11 @@ title: Parametrlər üzrə arayış
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Ayarlar arayışı
+# Ayarlar arayışı {#settings-reference}
 
 Bu səhifə Ultimate Multisite-də gündəlik idarəetməyə təsir edən ayarları və son davranış dəyişikliklərini izləyir.
 
-## Digər seçimlər
+## Digər seçimlər {#other-options}
 
 **Digər seçimlər** sahəsi **Ultimate Multisite > Ayarlar > Giriş və qeydiyyat** altında görünür.
 
@@ -15,23 +15,23 @@ Bu səhifə Ultimate Multisite-də gündəlik idarəetməyə təsir edən ayarla
 |---|---|
 | **Jumper-i aktivləşdir** | Admin sahəsində Jumper sürətli naviqasiya alətini göstərir. Ondan birbaşa Ultimate Multisite ekranlarına, şəbəkə obyektlərinə və dəstəklənən admin təyinatlarına keçmək üçün istifadə edin. Bu qısayolun görünməsini istəmirsinizsə, onu deaktiv edin. |
 
-## Xəta hesabatı və telemetriya
+## Xəta hesabatı və telemetriya {#error-reporting-and-telemetry}
 
 Əvvəlki xəta hesabatına qoşulma ayarı ayarlar səhifəsindən silinib. Anonim telemetriya deaktivdir və onu aktivləşdirmək üçün heç bir UI açarı yoxdur.
 
 Ayarlar səhifəsi üçün daxili runbook-lar və ya ekran görüntüləri saxlayırsınızsa, köhnə xəta hesabatına qoşulma sahəsinə istinadları silin ki, administratorlar artıq mövcud olmayan ayarı axtarmasınlar.
 
-## Import/Export ayarları
+## Import/Export ayarları {#importexport-settings}
 
 **Import/Export** ayarları tabı hansı ayarları idarə etdiyini təsvir edir və sayt və şəbəkə arxivləri üçün birbaşa **Ultimate Multisite > Site Export** bölməsinə keçid verir. Import/export konfiqurasiyası üçün ayarlar tabından istifadə edin, tək saytlı export/import iş axını üçün **Alətlər > Export & Import** bölməsindən istifadə edin və tam Network Export arxivi lazım olduqda Site Export alətindən istifadə edin.
 
-## Domain Seller HostAfrica balans xəbərdarlığı
+## Domain Seller HostAfrica balans xəbərdarlığı {#domain-seller-hostafrica-balance-warning}
 
 Domain Seller addon-u HostAfrica-ya qoşulduqda, şəbəkə administratorları reseller hesab balansı etibarlı domen qeydiyyatı və ya yenilənmə emalı üçün çox aşağı olduqda bağlana bilən aşağı balans xəbərdarlığı görürlər.
 
 Bu bildirişi əməliyyat xəbərdarlığı kimi qəbul edin: daha çox ödənişli domen qeydiyyatını qəbul etməzdən əvvəl HostAfrica reseller balansını artırın, sonra qeydiyyatların və yenilənmələrin normal davam edə bildiyini təsdiqləmək üçün Domain Seller ayarlarına və ya domen monitorinqi ekranına qayıdın.
 
-## AI provider konnektor ayarları
+## AI provider konnektor ayarları {#ai-provider-connector-settings}
 
 AI provider konnektor ayarları indi yalnız dəstəklənən OAuth Account hovuzlarını göstərir:
 

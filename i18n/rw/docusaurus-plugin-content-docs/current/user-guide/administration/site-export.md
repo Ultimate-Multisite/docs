@@ -3,17 +3,17 @@ title: Gukoresha uburyo bwo gukoresha umuryango w'ubwoko bw'ubwoko
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Export Y'Urururo (Site Export)
+# Export Y'Urururo (Site Export) {#site-export}
 
 Icyo **Site Export** admin page yitangira abanyamwuga b'uburyo bwo gukoresha uburyo bw'ubwujyanye n'uburyo bwo gutanga umwe site, cyangwa uburyo bwose bw'ubwoko (network), kugira ngo utangire mu buryo bwo gukoresha ibyo byo gutunganya (migration), gufata (backup), cyangwa gukora ibindi.
 
-## Gutanga umwe site
+## Gutanga umwe site {#exporting-one-site}
 
 Gukoresha **Ultimate Multisite > Site Export** kandi ugira uburyo bwo gukora **Generate new Site Export**. Urahindura umwe subsite wumva gukoresha, mbere yitangira kumenya niba uvirimo (archive) byashobora gutanga uploads, plugins, no themes.
 
 Icyiza cyane iyo utanga yisobanuye, ugenda mu **Existing Exports** kandi utangira gukoresha ZIP. Izi ZIP zishobora gutanga `index.php` yizera ku muryango (self-booting) n'umugande w'ubwoko (`readme.txt`), kugira ngo uvirimo byashobora gufata ku host yashya kandi utangire gukoresha nta kumenya plugin ya gutanga ishyirwaho mbere.
 
-## Gutanga uburyo bwose bw'ubwoko (whole network)
+## Gutanga uburyo bwose bw'ubwoko (whole network) {#exporting-the-whole-network}
 
 Gukoresha **Network Export** kuri Site Export page iyo ukeneye umwe uvirimo wumva gukoresha uburyo bwo gutanga ibyo byose by'ubwoko mu muryango. Ibi bituma byiza mbere yitangira kumenya niba hari uvirimo (archive) cyose ku subsites mu muryango. Icyo cyari cyiza iyo hari uburyo bwo gukoresha ibyo byose by'ubwoko byashobora kuba byinshi cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane
 
@@ -24,7 +24,7 @@ Gukoresha **Network Export** kuri Site Export page iyo ukeneye umwe uvirimo wumv
 5. Click **Generate** (Kwibuka **Gukora**)
 6. Download the bundle ZIP from the **Existing Exports** list (Downloada bundle ZIP ku gice cy'uburyo bw'uko ibyo bishobora guhindurwa)
 
-#### Gukoresha mu gihe cyo gutera ku Network Import Bundle
+#### Gukoresha mu gihe cyo gutera ku Network Import Bundle {#network-import-bundles}
 
 Kugira ngo utereye siti zitera ku network import bundle:
 
@@ -43,7 +43,7 @@ Network import bundles bishobora guhindura:
 - Icyemezo cyo gukoresha ibintu (Media uploads) (niba bishobora guhindurwa mu bundle)
 - Icyemezo cyo database n'ubwoko bw'ibyo bikoreshwa
 
-## Gukoresha ZIP rya export ryihagarira mu gihe cyo gutera ku self-booting
+## Gukoresha ZIP rya export ryihagarira mu gihe cyo gutera ku self-booting {#generating-a-network-import-bundle}
 
 Kugira ngo utereye ZIP rya self-booting ku host w'umunsi w'ubusite:
 

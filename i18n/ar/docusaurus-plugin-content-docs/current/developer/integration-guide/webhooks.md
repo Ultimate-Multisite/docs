@@ -3,11 +3,11 @@ title: معالجة الويب هوك
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# معالجة الويب هوك
+# معالجة الويب هوك {#webhook-handling}
 
 إنشاء نقاط نهاية ويب هوك مخصصة لاستقبال الأحداث من الخدمات الخارجية ومزامنة البيانات مع Ultimate Multisite.
 
-## نقطة نهاية ويب هوك مخصصة
+## نقطة نهاية ويب هوك مخصصة {#custom-webhook-endpoint}
 
 ```php
 // تسجيل نقطة نهاية للويب هوك
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## اعتبارات الأمان
+## اعتبارات الأمان {#security-considerations}
 
 - تحقق دائمًا من توقيعات الويب هوك باستخدام HMAC أو سر مشترك
 - استخدم `permission_callback` في مسار REST الخاص بك — لا تقم بتعيينه إلى `__return_true` في الإنتاج

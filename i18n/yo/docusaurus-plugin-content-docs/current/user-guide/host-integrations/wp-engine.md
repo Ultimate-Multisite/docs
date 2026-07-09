@@ -3,17 +3,17 @@ title: Ìṣepọ̀ WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Ìṣepọ̀ WP Engine
+# Ìṣepọ̀ WP Engine {#wp-engine-integration}
 
-## Àkótán
+## Àkótán {#overview}
 WP Engine jẹ́ pẹpẹ ìgbàlejò WordPress tí a ń ṣàkóso, tó ní ìpele gíga, tó ń pèsè iṣẹ́ tó dára jù, ààbò, àti agbára láti gbooro fún àwọn ojúlé WordPress. Ìṣepọ̀ yìí ń jẹ́ kí ìmúdọ́gba domeni láìfọwọ́ṣe wà láàárín Ultimate Multisite àti WP Engine.
 
-## Àwọn Ẹ̀yà
+## Àwọn Ẹ̀yà {#features}
 - Ìmúdọ́gba domeni láìfọwọ́ṣe
 - Àtìlẹ́yìn subdomain fún àwọn fifi sori ẹrọ multisite
 - Ìṣepọ̀ aláìsí ìdènà pẹ̀lú àwọn eto WP Engine tó wà tẹ́lẹ̀
 
-## Àwọn Ohun Tí A Nílò
+## Àwọn Ohun Tí A Nílò {#requirements}
 Ìṣepọ̀ náà máa ń ṣàwárí láìfọwọ́ṣe bóyá o ń gbàlejò lórí WP Engine, ó sì máa ń lo WP Engine API tó wà nínú rẹ̀. Kò sí àtòjọ míì tí a nílò bí àfikún WP Engine bá ṣiṣẹ́, tí a sì ti ṣàtòjọ rẹ̀ dáadáa.
 
 Síbẹ̀, bí o bá nílò láti ṣàtòjọ ìṣepọ̀ náà pẹ̀lú ọwọ́, o lè ṣàlàyé ọ̀kan nínú àwọn constant wọ̀nyí nínú fáìlì `wp-config.php` rẹ:
@@ -24,16 +24,16 @@ define('WPE_APIKEY', 'your_api_key'); // Preferred method
 define('WPE_API', 'your_api_key'); // Alternative method
 ```
 
-## Àwọn Ìtọ́nisọ́nà Ìṣètò
+## Àwọn Ìtọ́nisọ́nà Ìṣètò {#setup-instructions}
 
-### 1. Ṣàyẹ̀wò Àfikún WP Engine
+### 1. Ṣàyẹ̀wò Àfikún WP Engine {#1-verify-wp-engine-plugin}
 
 Bí o bá ń gbàlejò lórí WP Engine, àfikún WP Engine yẹ kí ó ti fi sori ẹrọ, kí ó sì ti ṣiṣẹ́. Ṣàyẹ̀wò pé:
 
 1. Àfikún WP Engine ń ṣiṣẹ́
 2. Fáìlì `wp-content/mu-plugins/wpengine-common/class-wpeapi.php` wà
 
-### 2. Mú Ìṣepọ̀ Náà Ṣiṣẹ́
+### 2. Mú Ìṣepọ̀ Náà Ṣiṣẹ́ {#2-enable-the-integration}
 
 1. Nínú alákóso WordPress rẹ, lọ sí Ultimate Multisite > Settings
 2. Lọ sí taabu "Ìtọ́ka Domeni"
@@ -41,9 +41,9 @@ Bí o bá ń gbàlejò lórí WP Engine, àfikún WP Engine yẹ kí ó ti fi so
 4. Mú ìṣepọ̀ WP Engine ṣiṣẹ́
 5. Tẹ "Fi Àwọn Àyípadà Pamọ́"
 
-## Bí Ó Ṣe Ń Ṣiṣẹ́
+## Bí Ó Ṣe Ń Ṣiṣẹ́ {#how-it-works}
 
-### Ìmúdọ́gba Domeni
+### Ìmúdọ́gba Domeni {#domain-syncing}
 
 Nígbà tí a bá tọ́ka domeni kan nínú Ultimate Multisite:
 
@@ -51,7 +51,7 @@ Nígbà tí a bá tọ́ka domeni kan nínú Ultimate Multisite:
 2. WP Engine ń ṣàkóso àtòjọ domeni àti fífi ìwé-ẹ̀rí SSL jáde
 3. Nígbà tí a bá yọ ìtọ́ka domeni kan kúrò, ìṣepọ̀ náà yóò yọ domeni náà kúrò nínú WP Engine
 
-### Àtìlẹ́yìn Subdomain
+### Àtìlẹ́yìn Subdomain {#subdomain-support}
 
 Fún àwọn fifi sori ẹrọ multisite subdomain:
 
@@ -59,28 +59,28 @@ Fún àwọn fifi sori ẹrọ multisite subdomain:
 2. WP Engine ń ṣàkóso àtòjọ subdomain náà
 3. Nígbà tí a bá pa ojúlé kan rẹ́, ìṣepọ̀ náà yóò yọ subdomain náà kúrò nínú WP Engine
 
-## Àwọn Àkíyèsí Pàtàkì
+## Àwọn Àkíyèsí Pàtàkì {#important-notes}
 
-### Àwọn Domeni Wildcard
+### Àwọn Domeni Wildcard {#wildcard-domains}
 
 Fún àwọn fifi sori ẹrọ multisite subdomain, a dábàá pé kí o kàn sí àtìlẹ́yìn WP Engine láti béèrè àtòjọ domeni wildcard kan. Èyí ń jẹ́ kí gbogbo àwọn subdomain ṣiṣẹ́ láìfọwọ́ṣe láìní láti fi ọkọọkan wọn kún un lọ́tọ̀ọ̀tọ̀.
 
-### Àwọn Ìwé-ẹ̀rí SSL
+### Àwọn Ìwé-ẹ̀rí SSL {#ssl-certificates}
 
 WP Engine máa ń ṣàkóso fífi ìwé-ẹ̀rí SSL jáde àti ìsọ̀tunṣe rẹ̀ láìfọwọ́ṣe fún gbogbo àwọn domeni tí a fi kún un nípasẹ̀ ìṣepọ̀ yìí. Kò sí àtòjọ míì tí a nílò.
 
-## Yíyanjú Ìṣòro
+## Yíyanjú Ìṣòro {#troubleshooting}
 
-### Àwọn Ìṣòro Ìsopọ̀ API
+### Àwọn Ìṣòro Ìsopọ̀ API {#api-connection-issues}
 - Ṣàyẹ̀wò pé àfikún WP Engine ń ṣiṣẹ́, àti pé a ti ṣàtòjọ rẹ̀ dáadáa
 - Bí o bá ti ṣàlàyé kọ́kọ́rọ́ API pẹ̀lú ọwọ́, ṣàyẹ̀wò pé ó tọ́
 - Kàn sí àtìlẹ́yìn WP Engine bí o bá ní ìṣòro pẹ̀lú API
 
-### A Kò Fi Domeni Kún Un
+### A Kò Fi Domeni Kún Un {#domain-not-added}
 - Ṣàyẹ̀wò àwọn àkọsílẹ̀ Ultimate Multisite fún àwọn ìfiránṣẹ́ àṣìṣe
 - Ṣàyẹ̀wò pé a kò tíì ti fi domeni náà kún WP Engine tẹ́lẹ̀
 - Rí i dájú pé plan WP Engine rẹ ń ṣàtìlẹ́yìn fún iye àwọn domeni tí o ń fi kún un
 
-### Àwọn Ìṣòro Subdomain
+### Àwọn Ìṣòro Subdomain {#subdomain-issues}
 - Bí àwọn subdomain kò bá ṣiṣẹ́, kàn sí àtìlẹ́yìn WP Engine láti béèrè àtòjọ domeni wildcard kan
 - Ṣàyẹ̀wò pé àwọn ètò DNS rẹ ni a ti ṣàtòjọ dáadáa fún domeni àkọ́kọ́ àti àwọn subdomain

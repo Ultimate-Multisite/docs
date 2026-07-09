@@ -3,7 +3,7 @@ title: 客户网站
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# 你客户的网站 (v2)
+# 你客户的网站 (v2) {#your-clients-websites-v2}
 
 在你的网络上注册后，你的客户可以访问他们的 Dashboard。
 

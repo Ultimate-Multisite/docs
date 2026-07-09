@@ -3,9 +3,9 @@ title: Mabwera a mapulogolo
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Kufunso za Ufumbula (Release Notes)
+# Kufunso za Ufumbula (Release Notes) {#release-notes}
 
-## Visi 2.13.0 — Kilipululika kuwa ndi 2026-06-05
+## Visi 2.13.0 — Kilipululika kuwa ndi 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Mapya: Kuti chinyamata: Tsimikiza kuwona kwa sovereign-tenant pa akaunti ya mteja, checkout, billing, site, invoice, kubadilisha template, na mapingo ya domain kuti tenant networks ziwatokeledwe wamteja kuwoleka kwenye site kuu kwa vitendo vilivyosimamiwa.
 - Mapya: Tsimikiza ukaguzi wa credentials za urefu (renewal-credential checks) kwa usajili unaorudia ili gateways ziweze kuzima auto-renewal wakati hakuna makubaliano ya billing, subscription, au vault token iliyohifadhiwa.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kurekebisha: Matatizo yanayotokea kwenye matengenezo ya usajili (Membership renewals), kuonyesha muda wa kuisha, na kukusanya malipo hazitazidi kwa muda haraka, kuvunjika, au kupuuza malipo yaliyohitajika.
 - Kuboreshwa: Ulinganifu wa WordPress umejaribiwa hadi 7.0, vitu vya production Vue vinarejeshwa upya kutoka kwenye npm sources, na Cypress end-to-end coverage sasa inafanya majaribio zaidi ya checkout, setup, SSO, na gateway flows.
 
-## Version 2.12.0 — Kufutuliza ku 2026-05-15
+## Version 2.12.0 — Kufutuliza ku 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Mpingo: Tiliye kulemba Hostinger (hPanel) monga wopangula wosangalala ndi mapulogalamu ndi kupanga dzina za zinthu (domain mapping integration).
 - Mpingo: Site Exporter ikuti imapereka bundles za m'moyo wa mitengo ya mawu (network import bundles) kuti mupereke kukhazikitsa m'moyo wosangalala wosangalala.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kufikira: Site Exporter CLI ikuti imapereka mwayi wopangula wosangalala wosangalala wosangalala.
 - Kusonyeza: Tiliye kupanga wp-cli ku m'moyo wa mapulogalamu, kukhazikitsa kusintha kwa mapulogalamu osakhale.
 
-## Version 2.11.0 — Kufutuliza ku 2026-05-11
+## Version 2.11.0 — Kufutuliza ku 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Mpingo: Site exports ikuti imapereka index.php yomwe imaperekera m'moyo wosangalala, chidziwika kuti ZIP yomwe ndi liyenera likupangidwa pa host osakhale monga mapulogalamu osakhale.
 - Mpingo: Network export imapereka administrators kuti apereke subsites onse m'archive imodzi kuchokera pa admin page ya Site Export.
@@ -50,7 +50,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kukulitsa: SSO path yomwe imachitidwa filter imachitidwa mwayi woperekera mwayi woperekera wosaukira.
 - Kukulitsa: Blank site identity options zimachitidwa mwayi woperekera pamene imachitidwa save.
 
-## Version 2.9.0 — Imaliza pa 2026-04-30
+## Version 2.9.0 — Imaliza pa 2026-04-30 {#version-2100--released-on-2026-05-05}
 
 - Mapya: Export ndipo import ya single-site imaperekedwa m'Tools > Export & Import.
 - Kukulitsa: ZIP files za export zimachitidwa mwayi woperekera download endpoint yomwe imayenera.
@@ -64,7 +64,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kukulitsa: Tour IDs zimachitidwa underscores m'user settings keys.
 - Kusonyeza: ZipArchive imachitidwa mwayi woperekera Alchemy/Zippy kuti mwayi woperekera woyenera.
 
-## Version 2.8.0 — Imaliza pa 2026-04-29
+## Version 2.8.0 — Imaliza pa 2026-04-29 {#version-290--released-on-2026-04-30}
 
 - Mapya: Kufuna Jumper toggle kuliye kuwera mu settings UI ya Other Options.
 - Mapya: Koloni column kuliye kuwera mu checkout forms list table.

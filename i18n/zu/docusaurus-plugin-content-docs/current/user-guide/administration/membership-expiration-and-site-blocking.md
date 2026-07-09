@@ -3,11 +3,11 @@ title: Ukuphelelwa Yisikhathi Kobulungu Nokuvinjwa Kwesayithi
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ukuphelelwa Isikhathi Kobulungu Nokuvinjwa Kwe-site
+# Ukuphelelwa Isikhathi Kobulungu Nokuvinjwa Kwe-site {#membership-expiration-and-site-blocking}
 
 Lo mhlahlandlela uchaza ukuthi Ultimate Multisite ikusingatha kanjani ukuphelelwa isikhathi kobulungu, ukuphela kwezikhathi zokuzama, nokuvinjwa kwe-site ye-frontend. Uhlanganisa umjikelezo wempilo wobulungu kusukela kokusebenzayo kuya kokuphelelwe isikhathi, izilungiselelo ezilawula ukuthi ama-site ayavinjwa yini, nokuthi yini okufanele uyihlole lapho ama-site esalokhu efinyeleleka ngemva kokuphelelwa isikhathi kobulungu.
 
-## Umjikelezo Wempilo Wesimo Sobulungu
+## Umjikelezo Wempilo Wesimo Sobulungu {#membership-status-lifecycle}
 
 Bonke ubulungu ku-Ultimate Multisite bunesinye sezimo ezilandelayo:
 
@@ -24,7 +24,7 @@ Ubulungu bamahhala abuphelelwa isikhathi ngokuzenzakalelayo. Ultimate Multisite 
 | **Kuphelelwe isikhathi** | Kudlule usuku lokuphelelwa isikhathi nesikhathi somusa ngaphandle kokuvuselelwa |
 | **Kukhanseliwe** | Kukhanselwe ngokusobala yikhasimende noma umlawuli |
 
-### Indlela Ubulungu Obushintshela Ngayo Ekuphelelweni Isikhathi
+### Indlela Ubulungu Obushintshela Ngayo Ekuphelelweni Isikhathi {#how-memberships-transition-to-expired}
 
 Ultimate Multisite isebenzisa ukuhlola kwangemuva **njalo ngehora** okubheka ubulungu okufanele bumakwe njengobuphelelwe isikhathi. Lokhu kuhlola kusebenzisa [Action Scheduler](https://actionscheduler.org/) (hhayi i-WP-Cron ngokuqondile) futhi kusebenza njengesenzo esihleliwe se-`wu_membership_check`.
 
@@ -34,7 +34,7 @@ Ukuhlola kokuphelelwa isikhathi kunesikhathi somusa **esakhelwe ngaphakathi sezi
 Isikhathi somusa sokuphelelwa isikhathi sezinsuku ezi-3 sihlukile kusilungiselelo se-Frontend Block Grace Period esichazwe ngezansi. Isikhathi somusa sokuphelelwa isikhathi silawula ukuthi **isimo sishintsha nini** sisuke kokusebenzayo/okumiswe okwesikhashana siye kokuphelelwe isikhathi. Isikhathi somusa sokuvimba i-frontend silawula ukuthi **i-site ivinjwa nini** ngemva kokuthi isimo sesishintshile.
 :::
 
-#### Ubulungu Obuzivuselelayo vs. Ubulungu Obungazivuseleli
+#### Ubulungu Obuzivuselelayo vs. Ubulungu Obungazivuseleli {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Lo mehluko ubalulekile ekuqondeni ukuziphatha kokuphelelwa isikhathi:
 
@@ -42,7 +42,7 @@ Lo mehluko ubalulekile ekuqondeni ukuziphatha kokuphelelwa isikhathi:
 
 - **Ubulungu obuzivuselelayo** (`auto_renew = true`): Ukuhlola kokuphelelwa isikhathi kwe-cron **kubweqa ngokuphelele**. I-payment gateway (Stripe, PayPal, njll.) kulindeleke ukuthi yazise Ultimate Multisite ngama-webhook lapho subscription yehluleka noma ikhanselwa. Uma i-webhook ingatholakalanga -- ngenxa ye-endpoint elungiselelwe kabi, ukuphazamiseka kwe-gateway, noma subscription ekhanselwe ngaphandle kohlelo -- ubulungu bungase buhlale `active` unomphela ngisho nangemva kokudlula kosuku lokuphelelwa isikhathi.
 
-### Indlela Izikhathi Zokuzama Eziphela Ngayo
+### Indlela Izikhathi Zokuzama Eziphela Ngayo {#how-trials-end}
 
 Lapho isikhathi sokuzama sobulungu obusesikhathini sokuzama siphela, uhlelo:
 
@@ -52,11 +52,11 @@ Lapho isikhathi sokuzama sobulungu obusesikhathini sokuzama siphela, uhlelo:
 
 Le nqubo isebenza kuhlelo olufanayo lwehora njengokuhlola okuvamile kokuphelelwa isikhathi, kodwa **kuphela kubulungu obungazivuseleli**. Ezikhathini zokuzama ezizivuselelayo, i-payment gateway iphatha ukushintsha kusukela esikhathini sokuzama kuya ku-subscription ekhokhelwayo.
 
-## Vimba Ukufinyelela kwe-Frontend
+## Vimba Ukufinyelela kwe-Frontend {#block-frontend-access}
 
 Ngokuzenzakalelayo, lapho ubulungu buphelelwa isikhathi noma bumiswa okwesikhashana, **kukhawulelwa kuphela i-dashboard ye-wp-admin**. I-frontend yomphakathi ye-site ihlala ifinyeleleka ezivakashini. Ukuze futhi uvimbe ukufinyelela komphakathi, kufanele unike amandla isilungiselelo se-**Block Frontend Access**.
 
-### Ukulungiselela Isilungiselelo
+### Ukulungiselela Isilungiselelo {#configuring-the-setting}
 
 Yiya ku-**Ultimate Multisite > Settings > Memberships** bese unika amandla i-**Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Izilungiselelo ezintathu ezihlobene zilawula lokhu kuziphatha:
 | **Frontend Block Grace Period** | Inani lezinsuku zokulinda ngemva kokuthi ubulungu bungasasebenzi ngaphambi kokuvimba. Setha ku-`0` ukuze uvimbe ngokushesha. | 0 |
 | **Frontend Block Page** | Ikhasi ku-site enkulu okuzodluliselwa kulo izivakashi lapho i-site ivinjiwe. Uma lingasethiwe, izivakashi zibona umlayezo ojwayelekile othi "Site not available". | Akukho |
 
-### Lokho Izivakashi Ezikubonayo Lapho I-site Ivinjiwe
+### Lokho Izivakashi Ezikubonayo Lapho I-site Ivinjiwe {#what-visitors-see-when-a-site-is-blocked}
 
 Lapho ukufinyelela kwe-frontend kuvinjiwe, izivakashi ze-site zizokwenza okukodwa kwalokhu:
 
@@ -83,7 +83,7 @@ Lapho ukufinyelela kwe-frontend kuvinjiwe, izivakashi ze-site zizokwenza okukodw
 
 Abalawuli be-site basengangena -- ikhasi lokungena alikaze livinjwe.
 
-### Yini Evinjwayo Futhi Nini
+### Yini Evinjwayo Futhi Nini {#what-gets-blocked-and-when}
 
 Ukuziphatha kokuvimba kuncike esimweni sobulungu:
 
@@ -104,21 +104,21 @@ Ngisho noma isikhathi sokuzama sesiphelile, ubulungu obunesimo se-`trialing` **a
 Ubulungu obukhanseliwe buhlale buvinjwa uma usuku lokuphelelwa isikhathi seludlulile, kungakhathaliseki ukuthi i-Block Frontend Access inikwe amandla yini. I-Frontend Block Grace Period **ayisebenzi** kubulungu obukhanseliwe.
 :::
 
-## Ukuxazulula Izinkinga: Ama-site Asalokhu Efinyeleleka Ngemva Kokuphelelwa Isikhathi
+## Ukuxazulula Izinkinga: Ama-site Asalokhu Efinyeleleka Ngemva Kokuphelelwa Isikhathi {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Uma ama-site esalokhu efinyeleleka emphakathini ngemva kokuphelelwa isikhathi kobulungu, dlula kulezi zivivinyo ngokulandelana:
 
-### 1. Qinisekisa Ukuthi Isilungiselelo se-Block Frontend Access Sinikwe Amandla
+### 1. Qinisekisa Ukuthi Isilungiselelo se-Block Frontend Access Sinikwe Amandla {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Yiya ku-**Ultimate Multisite > Settings > Memberships** bese uqinisekisa ukuthi i-toggle ye-**Block Frontend Access** ivuliwe. Lesi silungiselelo **sivaliwe ngokuzenzakalelayo**, okusho ukuthi kuphela i-wp-admin ekhawulelwayo lapho ubulungu bungasasebenzi.
 
-### 2. Hlola I-Frontend Block Grace Period
+### 2. Hlola I-Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 Ekhasini elifanayo lezilungiselelo, hlola inani le-**Frontend Block Grace Period**. Uma lokhu kusethwe ezinsukwini ezi-7, isibonelo, i-frontend ngeke ivinjwe kuze kudlule izinsuku ezi-7 ngemva kosuku lokuphelelwa isikhathi kobulungu -- ngisho noma isimo sobulungu sesivele siyi-`expired`.
 
 Setha lokhu ku-`0` uma ufuna ukuvinjwa ngokushesha ngemva kokuthi ubulungu bungasasebenzi.
 
-### 3. Qinisekisa Ukuthi Isimo Sobulungu Sishintshile Ngempela
+### 3. Qinisekisa Ukuthi Isimo Sobulungu Sishintshile Ngempela {#3-confirm-the-membership-status-has-actually-changed}
 
 Yiya ku-**Ultimate Multisite > Memberships** bese uhlola isimo sobulungu obuthintekile. Uma sisabonisa `active` nakuba usuku lokuphelelwa isikhathi seludlulile, ukushintsha kwesimo akwenzekanga. Izimbangela ezivamile:
 
@@ -126,7 +126,7 @@ Yiya ku-**Ultimate Multisite > Memberships** bese uhlola isimo sobulungu obuthin
 
 - **Umsebenzi we-cron awukasebenzi**: Bheka isinyathelo esilandelayo.
 
-### 4. Qinisekisa Ukuthi I-Action Scheduler Iyasebenza
+### 4. Qinisekisa Ukuthi I-Action Scheduler Iyasebenza {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite isebenzisa i-Action Scheduler emisebenzini yayo ye-cron. Yiya ku-**Tools > Scheduled Actions** kumlawuli wenethiwekhi bese ubheka:
 
@@ -148,7 +148,7 @@ Ukuze uqinisekise ukusebenza okuthembekile kwe-cron, setha umsebenzi we-cron woh
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Hlola Izinkinga ze-Gateway Webhook (Ubulungu Obuzivuselelayo)
+### 5. Hlola Izinkinga ze-Gateway Webhook (Ubulungu Obuzivuselelayo) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Uma ubulungu buzivuselela futhi i-gateway subscription ikhanseliwe noma yehlulekile, kodwa Ultimate Multisite isabonisa ukuthi buyi-`active`:
 
@@ -157,7 +157,7 @@ Uma ubulungu buzivuselela futhi i-gateway subscription ikhanseliwe noma yehlulek
 
 Uma i-gateway ibonisa ukuthi i-subscription ikhanseliwe kodwa Ultimate Multisite ingakubonisi, isaziso se-webhook cishe silahlekile. Ungashintsha ngesandla isimo sobulungu ku-**Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Hlola Isikhathi Somusa Sokuphelelwa Isikhathi (Izinga le-Cron)
+### 6. Hlola Isikhathi Somusa Sokuphelelwa Isikhathi (Izinga le-Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Ukuhlola kwe-cron kunesikhathi sako somusa (okuzenzakalelayo: izinsuku ezi-3) ngaphambi kokumaka ubulungu njengobuphelelwe isikhathi. Lokhu kwehlukile esikhathini somusa sokuvimba i-frontend. Isikhathi esiphelele ngaphambi kokuthi i-site ivinjwe singaba:
 
@@ -165,7 +165,7 @@ Ukuhlola kwe-cron kunesikhathi sako somusa (okuzenzakalelayo: izinsuku ezi-3) ng
 
 Isibonelo, ngezilungiselelo ezizenzakalelayo nesikhathi somusa se-frontend sezinsuku ezi-7, kungathatha kuze kufike ezinsukwini ezi-10 ngemva kwe-`date_expiration` ngaphambi kokuthi i-site ivinjwe ngempela.
 
-### 7. Phelelisa Isikhathi Sobulungu Ngesandla
+### 7. Phelelisa Isikhathi Sobulungu Ngesandla {#7-manually-expire-a-membership}
 
 Uma udinga ukuvimba i-site ngokushesha ngaphandle kokulinda umjikelezo we-cron, ungashintsha ngesandla isimo sobulungu:
 
@@ -176,7 +176,7 @@ Uma udinga ukuvimba i-site ngokushesha ngaphandle kokulinda umjikelezo we-cron, 
 
 Ukuvinjwa kwe-frontend kuzoqala ukusebenza ekulayishweni kwekhasi okulandelayo (kuncike ku-Frontend Block Grace Period kubulungu obuphelelwe isikhathi, noma ngokushesha kubulungu obukhanseliwe).
 
-## Isifinyezo
+## Isifinyezo {#summary}
 
 Umugqa wesikhathi ogcwele kusukela ngosuku lokuphelelwa isikhathi kuya ekuvinjweni kwe-site:
 
@@ -208,7 +208,7 @@ Kubulungu obukhanseliwe, indlela imfishane:
   Site frontend is blocked immediately
 ```
 
-## Ireferensi Yonjiniyela
+## Ireferensi Yonjiniyela {#developer-reference}
 
 Ama-hook nama-filter alandelayo akuvumela ukuthi wenze ngendlela oyifisayo ukuziphatha kokuphelelwa isikhathi nokuvimba:
 

@@ -3,9 +3,9 @@ title: Sisu sünkroonimise muudatuste logi
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync muudatuste logi
+# Content Sync muudatuste logi {#content-sync-changelog}
 
-### Versioon 1.1.0 - välja antud 2025-12-31
+### Versioon 1.1.0 - välja antud 2025-12-31 {#version-110---released-on-2025-12-31}
 * Uus: kõigi postitusetüüpide sünkroonimise tugi (postitused, lehed, kohandatud postitusetüübid)
 * Uus: postitusetüübi filtreerimine sisu valimise sammus
 * Uus: lähte saidi valimise samm - sünkrooni mis tahes saidilt, mitte ainult põhisaidilt
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Muudetud: samm "Select Templates" nimetati ümber "Select Data"-ks
 * Täiustatud: Elementor-spetsiifiline kood käivitub nüüd ainult elementor_library postitusetüübi puhul
 
-### Versioon 1.0.0 - välja antud 2025-12-19
+### Versioon 1.0.0 - välja antud 2025-12-19 {#version-100---released-on-2025-12-19}
 * Esmane väljalase
 * Mitmesammuline viisard malli ja saidi valimiseks
 * Pakktöötlus reaalajas edenemise tagasisidega

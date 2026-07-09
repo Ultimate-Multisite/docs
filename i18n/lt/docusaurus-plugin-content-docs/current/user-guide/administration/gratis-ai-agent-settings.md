@@ -3,16 +3,16 @@ title: Gratis AI Agent nustatymai
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent nustatymai
+# Gratis AI Agent nustatymai {#gratis-ai-agent-settings}
 
 **Settings → Advanced** ekranas Gratis AI Agent suteikia administratoriaus lygio konfigūraciją backend integracijoms. Šiame puslapyje dokumentuojamas feedback persiuntimas, paieškos teikėjo raktai, valdomos Superdav paslaugos sąranka, Google Calendar valdikliai, TextBee SMS nustatymai ir viso tinklo funkcijų vėliavėlės.
 
-## Prieiga prie nustatymų
+## Prieiga prie nustatymų {#accessing-settings}
 
 1. WordPress administravimo srityje eikite į **Gratis AI Agent → Settings**.
 2. Spustelėkite skirtuką **Advanced**.
 
-## Feedback endpoint konfigūracija
+## Feedback endpoint konfigūracija {#feedback-endpoint-configuration}
 
 Feedback endpoint gauna POST užklausas iš AI agento, kai naudotojas pateikia feedback per nykščio žemyn mygtuką, automatinio raginimo reklamjuostę arba `/report-issue` komandą.
 
@@ -21,7 +21,7 @@ Feedback endpoint gauna POST užklausas iš AI agento, kai naudotojas pateikia f
 | **Feedback Endpoint URL** | URL, kuris gauna feedback pateikimus kaip HTTP POST užklausas su JSON turiniu. |
 | **Feedback API Key** | bearer token, siunčiamas kiekvienos feedback užklausos `Authorization` header. Palikite tuščią, jei jūsų endpoint nereikalauja autentifikavimo. |
 
-### Tikėtinas JSON payload
+### Tikėtinas JSON payload {#expected-json-payload}
 
 Jūsų feedback endpoint turi priimti JSON turinį bent su šiais laukais:
 
@@ -36,7 +36,7 @@ Jūsų feedback endpoint turi priimti JSON turinį bent su šiais laukais:
 
 Payload gali būti papildomų laukų, priklausomai nuo pokalbio konteksto.
 
-### `triage_category` reikšmės
+### `triage_category` reikšmės {#triagecategory-values}
 
 AI rūšiavimo sluoksnis priskiria vieną iš šių reikšmių `triage_category` prieš persiųsdamas payload:
 
@@ -47,7 +47,7 @@ AI rūšiavimo sluoksnis priskiria vieną iš šių reikšmių `triage_category`
 | `inappropriate_content` | Atsakyme buvo turinio, kurio nereikėtų rodyti naudotojams. |
 | `other` | Feedback neatitiko žinomos kategorijos. |
 
-### Autentifikavimas
+### Autentifikavimas {#authentication}
 
 Jei jūsų endpoint reikalauja autentifikavimo, nustatykite **Feedback API Key** lauką į savo bearer token. Agentas siunčia:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Jei **Feedback API Key** laukas tuščias, `Authorization` header nesiunčiamas.
 
-### Feedback rinkimo išjungimas
+### Feedback rinkimo išjungimas {#disabling-feedback-collection}
 
 Palikite tiek **Feedback Endpoint URL**, tiek **Feedback API Key** laukus tuščius. Nykščio žemyn mygtukas ir feedback UI naudotojams lieka matomi, bet pateikimai nepersiunčiami jokiai išorinei paslaugai.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Taip pat **Advanced** skirtuke **Brave Search API Key** laukas įjungia [interneto paieškos](../configuration/internet-search) galimybę.
 
@@ -73,7 +73,7 @@ Lauko etiketėje yra spustelėjama nuoroda į Brave Search API registracijos pus
 
 Žr. [Interneto paieška](../configuration/internet-search) galutinių naudotojų dokumentacijai apie šią funkciją.
 
-## Valdoma Superdav paslauga
+## Valdoma Superdav paslauga {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 prideda valdomus Superdav paslaugos endpoint ir automatinį ryšio parengimą palaikomoms svetainėms. Naudokite šiuos valdiklius, kai jūsų svetainė turėtų jungtis prie hostingo teikėjo, o ne prie rankiniu būdu sukonfigūruoto paslaugos endpoint.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 prideda valdomus Superdav paslaugos endpoint ir automa
 
 Po parengimo išsaugokite nustatymus ir patikrinkite ryšio būseną prieš pasikliaudami valdomos paslaugos darbo eigomis. Jei parengimas nepavyksta, peržiūrėkite rodomas pakartotinio bandymo gaires ir patvirtinkite, kad svetainė turi leidimą naudoti hostingo teikėją.
 
-## Google Calendar konfigūracija
+## Google Calendar konfigūracija {#google-calendar-configuration}
 
 Kai įjungtos Superdav AI Agent v1.18.0 kalendoriaus funkcijos, agentas gali skaityti sukonfigūruotus kalendorius ir įvykių informaciją. Kalendoriaus įrankiai orientuoti į skaitymą ir naudingi tvarkaraštį įvertinantiems priminimams, dalyvių tolesniems veiksmams ir kontaktų atitikimui.
 
@@ -97,7 +97,7 @@ Kai įjungtos Superdav AI Agent v1.18.0 kalendoriaus funkcijos, agentas gali ska
 
 Laikykite kalendoriaus prisijungimo duomenis apribotus tik tais kalendoriais, kurių agentui reikia. Prisijunkite iš naujo arba pakeiskite prisijungimo duomenis, jei būsena nurodo pasibaigusį token.
 
-## TextBee SMS pranešimai
+## TextBee SMS pranešimai {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 prideda TextBee kaip SMS teikėją sukonfigūruotoms pranešimų darbo eigoms. SMS pranešimai turėtų būti derinami su žmogaus patvirtinimo vartais jautrioms arba naudotojams skirtoms žinutėms.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 prideda TextBee kaip SMS teikėją sukonfigūruotoms p
 
 Siųskite bandomąją žinutę tik administratoriui priklausančiu numeriu, tada patvirtinkite patvirtinimo vartų veikimą prieš įjungdami suplanuotus arba dalyviams skirtus priminimus.
 
-## Funkcijų vėliavėlės
+## Funkcijų vėliavėlės {#feature-flags}
 
 Taip pat pristatytas v1.9.0, **Settings → Feature Flags** skirtukas suteikia perjungiklius pasirenkamai funkcionalumui. Kiekviena vėliavėlė yra įjungta arba išjungta visame tinkle; šiuo metu nėra atskiros svetainės lygio perrašymo.
 
-### Prieiga prie funkcijų vėliavėlių
+### Prieiga prie funkcijų vėliavėlių {#accessing-feature-flags}
 
 1. WordPress administravimo srityje eikite į **Gratis AI Agent → Settings**.
 2. Spustelėkite skirtuką **Feature Flags**.
 
-### Prieigos valdymo vėliavėlės
+### Prieigos valdymo vėliavėlės {#access-control-flags}
 
 | Žyma | Numatytoji reikšmė | Aprašymas |
 |---|---|---|
@@ -127,7 +127,7 @@ Taip pat pristatytas v1.9.0, **Settings → Feature Flags** skirtukas suteikia p
 | **Leisti Subscriber prieigą** | Išjungta | Įjungus naudotojai su `subscriber` role gali naudoti pokalbio sąsają, bet yra apriboti tik skaitymo galimybėmis (be įrašų kūrimo ar nustatymų keitimo). |
 | **Išjungti ne nariams** | Išjungta | Integruojama su Ultimate Multisite narystės būsena. Įjungus pokalbis paslepiamas svetainėse, kurios neturi aktyvios narystės. |
 
-### Prekės ženklo žymos
+### Prekės ženklo žymos {#branding-flags}
 
 | Žyma | Numatytoji reikšmė | Aprašymas |
 |---|---|---|
@@ -136,7 +136,7 @@ Taip pat pristatytas v1.9.0, **Settings → Feature Flags** skirtukas suteikia p
 | **Slėpti agento parinkiklį** | Išjungta | Įjungus naudotojai negali perjungti tarp penkių įtaisytųjų agentų. Dabartinis agentas fiksuojamas pagal tai, kas sukonfigūruota kaip numatytoji reikšmė skiltyje Settings → General. |
 | **Naudoti svetainės piktogramą kaip pokalbio avatarą** | Išjungta | Pakeičia numatytąją AI piktogramą pokalbio valdiklio antraštėje WordPress svetainės piktograma (nustatoma skiltyje Appearance → Customize → Site Identity). |
 
-### Automatizavimo saugos žymos
+### Automatizavimo saugos žymos {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 įveda žmogaus patvirtinimo vartus ir priminimų įrašus saugesniems automatizavimo paleidimams. Šie valdikliai gali būti rodomi funkcijų žymose arba išplėstiniuose automatizavimo nustatymuose, priklausomai nuo įdiegto paketo.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 įveda žmogaus patvirtinimo vartus ir priminimų įra
 | **Įjungti kalendoriaus įrankius** | Išjungta, kol sukonfigūruota | Leidžia agentui skaityti sukonfigūruotus Google kalendorius ir įvykius. |
 | **Įjungti SMS pranešimus** | Išjungta, kol sukonfigūruota | Leidžia patvirtintoms darbo eigoms siųsti TextBee SMS pranešimus po to, kai kredencialai išsaugomi. |
 
-### Pakeitimų taikymas
+### Pakeitimų taikymas {#applying-changes}
 
 Spustelėkite **Save Settings** perjungę bet kurią žymą. Pakeitimai įsigalioja iš karto — nereikia nei išvalyti talpyklos, nei iš naujo aktyvuoti plugin.

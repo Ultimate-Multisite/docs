@@ -3,15 +3,15 @@ title: 'Lehena-lehenak: Deskabidearen er Bilbao'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lehen 6: Esperientziaren Registrazioa
+# Lehen 6: Esperientziaren Registrazioa {#lesson-6-the-signup-experience}
 
 Checkout flow-na da hori interesak merkatu gain dira. Prosesua irritatu edo generikoa izan bada, kliuntzak haserazten dira. Niche-ko garrantzi eta horiek batzuk ezagutzen dituzten erantzunak ematen flujo batek konvertizio egiten du.
 
-## Naurri Onde Zuztuta Itzuten Dugu
+## Naurri Onde Zuztuta Itzuten Dugu {#where-we-left-off}
 
 FitSite-ek template eta planak konfiguratuta dira. Arriba, fitness studio nagusiak merkatuen iragailuak bilatzen diren zahliduen bizitoriak ematen registration eta checkout esperientziaren konstruzioa egin dugu.
 
-## Registrazio Flujoaren Erraztasuna
+## Registrazio Flujoaren Erraztasuna {#understanding-the-registration-flow}
 
 Ultimate Multisite-n checkout formak multi-étape (nurtura) forma bat da, guztiz konfiguratzen dituz. FitSite-ko kasuan, flujo batekin irakurri dugu:
 
@@ -21,11 +21,11 @@ Ultimate Multisite-n checkout formak multi-étape (nurtura) forma bat da, guztiz
 
 Erabiltzen dituz [The Registration Flow](/user-guide/configuration/the-registration-flow) edozein tekniko referentziaren beste parteak.
 
-## FitSite Checkout Designa
+## FitSite Checkout Designa {#designing-the-fitsite-checkout}
 
 **Ultimate Multisite > Checkout Forms** funtziokoan jarraitu eta formua berri bat sortu duzu.
 
-### Irrenditua 1: Planak Alegatu
+### Irrenditua 1: Planak Alegatu {#step-1-plan-selection}
 
 Fitness studio nagusiari lehenik ikusten beharko luke planak, horiek bere erantzunak ematen denean.
 
@@ -37,7 +37,7 @@ Fitness studio nagusiari lehenik ikusten beharko luke planak, horiek bere erantz
 "1 GB storage" (1 GB almacenazioa) gym nagusiari ez du beste garrantziaren. "Professional studio website-eko beharrezkoa diren guztia" da guztia. Plan deskribizi kliuntzakaren lenglekin jakinarazituta ematen ditu.
 :::
 
-### Irrenda 2: Selektua Moduleta (Template)
+### Irrenda 2: Selektua Moduleta (Template) {#step-2-template-selection}
 
 Plan bat aukeratara, erabiltzaileak moduleta (template) gertatzen dute.
 
@@ -45,7 +45,7 @@ Plan bat aukeratara, erabiltzaileak moduleta (template) gertatzen dute.
 - Arrako moduleta plan bat aukeratara filtratzen dira (Lehen Itzuli 5-ean konfiguratutakoa).
 - Moduleta guztiek fitness-eko diseinua erakusten duen previsualizazio imagen bat hartzen duzu.
 
-### Irrenda 3: Kontua("$Account Creation")
+### Irrenda 3: Kontua("$Account Creation") {#step-3-account-creation}
 
 Hau minimala izan behar da. Hau lekuak aurkitu:
 
@@ -55,27 +55,27 @@ Hau minimala izan behar da. Hau lekuak aurkitu:
 
 Signup-era behar ez duten informazioak ez gautu. Erroren leku guztiek konversioak murriztatzen dute.
 
-### Irrenda 4: Lehen Orokorra("$Site Setup")
+### Irrenda 4: Lehen Orokorra("$Site Setup") {#step-4-site-setup}
 
 - **Lehen Titulu** (Site title): Irrenda 3-an ematen studioaren irudiaren bat pre-rellatzea.
 - **Lehen URL** (Site URL): Studioaren irudiari lotuta auto-generatu (adibidez, `ironworks.fitsite.com`).
 
-### Irrenda 5: Pagamendu("$Payment")
+### Irrenda 5: Pagamendu("$Payment") {#step-5-payment}
 
 - **Pagamendu** (Payment) leku bat gehitu.
 - Pagamendu bideak konfiguratatu (subscription billing-eko irudien bitartean [Stripe](/user-guide/payment-gateways/stripe) erabiltzea ematen da).
 - Irrenda 5-ean order bumpak (order bumps) sortu duzu, pagamendu lekuaren aurrera **Order Bump** leku bat gehitu.
 
-### Irrenda 6: Bote("$Confirmation")
+### Irrenda 6: Bote("$Confirmation") {#step-6-confirmation}
 
 - Confirmazio meilearen testuaren fitness-eko hizkuntza erabiliz personalizatu.
 - Adibidez: "Studio fitness-ko webstea sortzen da. Ezkerren segundea berri web lailariak aurrera irekitu dira."
 
-## Bote Moduleta Irrendatzea (Adding a Period Selection Toggle)
+## Bote Moduleta Irrendatzea (Adding a Period Selection Toggle) {#adding-a-period-selection-toggle}
 
 Planak leen price variationak (mensual vs. anual) planetan, **Period Selection** field bat checkout forman gehitu, eta klientek iraupener periodetan ireki dezaten. Erregistroak [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) anpasatu da.
 
-## Pagamenduak konfiguratzea
+## Pagamenduak konfiguratzea {#configuring-payment}
 
 Pagamendu portal bat ez duzu:
 
@@ -85,7 +85,7 @@ Pagamendu portal bat ez duzu:
 
 Pagamenduak zure kontuan nola iristen diote zorten, [Getting Paid](/user-guide/payment-gateways/getting-paid) lueraan eratu.
 
-## Flowaren testea
+## Flowaren testea {#testing-the-flow}
 
 Aurrera jarraitzea baino lehen, testarekin signup batez amaitu:
 
@@ -121,7 +121,7 @@ FitSite Network
 │   └── Fitness-spedifik konfirmazioa
 └── Branding-eriketa (iraki eta lehena)
 
-## Zer egin dugu hori lehenaren
+## Zer egin dugu hori lehenaren {#the-fitsite-network-so-far}
 
 - **Checkout form bat zein-etapen** fitness studio nagusiak jasotzeko diseinatuta
 - **Niche-spedifik hizkuntza** signup prozesu guztian

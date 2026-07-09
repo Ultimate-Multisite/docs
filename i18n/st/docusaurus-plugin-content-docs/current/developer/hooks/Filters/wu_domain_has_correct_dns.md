@@ -4,11 +4,11 @@ title: Sefe - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Dumella baqapi ba plugin ho eketsa ditlhahlobo tse ntjha e le hore ba hlalose diphetho.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Dumella baqapi ba plugin ho eketsa ditlhahlobo tse ntjha e le hore ba hlalose di
 | $domain | `self` | Ketsahalo ya domain ya hajwale. |
 | $domains_and_ips | `array` | Lenane la domains le di-IP tse fumanweng phuputsong ya DNS. |
 
-### Ho tloha ka
+### Ho tloha ka {#since}
 
 - 2.0.4
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) moleng wa 455
 
 
-## Dipusetso
+## Dipusetso {#returns}
 Hore na DNS e hlophisitswe ka nepo kapa tjhe.

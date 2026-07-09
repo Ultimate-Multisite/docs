@@ -3,13 +3,13 @@ title: Registro delle modifiche dei ticket di supporto
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Registro delle modifiche dei ticket di supporto
+# Registro delle modifiche dei ticket di supporto {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Migliorato: Rimossa la directory vendor/ dal tracciamento Git (già coperta da .gitignore), riducendo le dimensioni del repository
 * Migliorato: Testato fino a WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Correzione: Accetta valori nulli nei setter del modello di ticket annullabili
 * Correzione: Archivia tutti i ticket in tabelle globali a livello di rete per un corretto supporto multisite
 * Correzione: Nasconde i campi dello staff e corregge il reindirizzamento a pagina vuota nel modulo cliente per nuovo ticket
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Migliorato: Carica condizionalmente gli asset frontend solo sulle pagine dei ticket di supporto
 * Migliorato: Salta l'autoloader del plugin quando l'autoloader root di Bedrock ha già caricato le dipendenze
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Aggiunto: Funzionalità completa di visualizzazione dei ticket per admin e frontend
 * Aggiunto: Handler AJAX per l'invio delle risposte ai ticket
 * Aggiunto: Supporto per la funzionalità di risposta ai ticket con corretta gestione del modulo
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Migliorato: Struttura del database con classi di query e schema corrette per risposte e allegati
 * Migliorato: Migrazione a proprietà reali invece di attributi per i modelli di ticket
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Aggiornato: Rinominato il prefisso in ultimate-multisite per coerenza
 * Aggiornato: Standardizzazione del dominio di testo
 * Corretto: Correzioni di bug minori e miglioramenti
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Rilascio iniziale
 * Sistema completo di gestione dei ticket
 * Controllo degli accessi multilivello

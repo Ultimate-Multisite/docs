@@ -3,17 +3,17 @@ title: Cara Mengkonfigurasi Pemetaan Domain
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Cara Mengkonfigurasi Pemetaan Domain (v2)
+# Cara Mengkonfigurasi Pemetaan Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
 Salah satu ciri paling berkuasa bagi rangkaian premium ialah keupayaan untuk menawarkan pelanggan kita peluang melampirkan domain peringkat atas pada tapak mereka. Lagipun, yang mana kelihatan lebih profesional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) atau [_**joesbikeshop.com**_](http://joesbikeshop.com)? Itulah sebabnya Ultimate Multisite menawarkan ciri itu secara terbina dalam, tanpa perlu menggunakan plugin pihak ketiga.
 
-## Apakah pemetaan domain?
+## Apakah pemetaan domain? {#whats-domain-mapping}
 
 Seperti namanya, pemetaan domain ialah keupayaan yang ditawarkan oleh Ultimate Multisite untuk menerima permintaan bagi domain tersuai dan memetakan permintaan itu kepada tapak yang sepadan dalam rangkaian dengan domain khusus itu dilampirkan.
 
-### Cara menyediakan pemetaan domain pada Rangkaian Ultimate Multisite anda
+### Cara menyediakan pemetaan domain pada Rangkaian Ultimate Multisite anda {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Pemetaan domain memerlukan sedikit persediaan daripada pihak anda untuk berfungsi. Syukurlah, Ultimate Multisite mengautomatikkan kerja sukar untuk anda supaya anda boleh memenuhi keperluan dengan mudah.
 
@@ -45,7 +45,7 @@ Tetapi sebelum anda mula memetakan domain tersuai kepada salah satu subtapak dal
 
 ###
 
-### Memastikan tetapan DNS domain dikonfigurasikan dengan betul
+### Memastikan tetapan DNS domain dikonfigurasikan dengan betul {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Untuk pemetaan berfungsi, anda perlu memastikan domain yang anda rancang untuk petakan menghala ke alamat IP Rangkaian anda. Perhatikan bahawa anda memerlukan alamat IP Rangkaian - alamat IP domain tempat Ultimate Multisite dipasang - bukan alamat IP domain tersuai yang anda mahu petakan. Untuk mencari alamat IP bagi domain tertentu, kami mencadangkan pergi ke [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), sebagai contoh.
 
@@ -55,7 +55,7 @@ Jika anda menghadapi kesukaran untuk membuat ini berfungsi, **hubungi sokongan p
 
 Jika anda merancang untuk membenarkan pelanggan anda memetakan domain mereka sendiri, mereka perlu melakukan kerja pada bahagian ini sendiri. Arahkan mereka kepada sistem sokongan pendaftar mereka jika mereka tidak dapat mencipta A Record.
 
-### Memetakan nama domain tersuai sebagai Super Admin
+### Memetakan nama domain tersuai sebagai Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Apabila anda log masuk sebagai super admin pada rangkaian anda, anda boleh menambah dan mengurus nama domain tersuai dengan mudah dengan pergi ke bawah **Ultimate Multisite > Domain**.
 
@@ -93,7 +93,7 @@ Jika anda mengklik pada nama domain, anda akan dapat melihat beberapa pilihan di
 
 **Is Secure?:** Walaupun Ultimate Multisite menyemak sama ada domain mempunyai sijil SSL atau tidak sebelum mengaktifkannya, anda boleh memilih secara manual untuk memuatkan domain dengan atau tanpa sijil SSL. Harap maklum bahawa jika laman web tidak mempunyai sijil SSL dan anda cuba memaksanya dimuatkan dengan SSL, ia mungkin memberikan ralat kepada anda.
 
-### Memetakan nama domain tersuai sebagai pengguna Subsite
+### Memetakan nama domain tersuai sebagai pengguna Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Pentadbir subsite juga boleh memetakan nama domain tersuai daripada dashboard pentadbir subsite mereka.
 
@@ -121,7 +121,7 @@ Pengguna kemudian boleh mengklik **Next Step** dan meneruskan untuk menambah nam
 
 Klik **Add Domain** akan memulakan proses mengesahkan dan mendapatkan maklumat DNS bagi domain tersuai.
 
-### Tentang Penyegerakan Domain
+### Tentang Penyegerakan Domain {#about-domain-syncing}
 
 Penyegerakan Domain ialah proses di mana Ultimate Multisite menambah nama domain tersuai kepada akaun hosting anda sebagai domain add-on **supaya domain mapping berfungsi**.
 

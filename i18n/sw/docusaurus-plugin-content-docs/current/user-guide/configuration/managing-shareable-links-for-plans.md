@@ -3,7 +3,7 @@ title: Kusimamia Viungo vya Kushiriki kwa Mipango
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Kusimamia Viungo vya Kushiriki kwa Mipango
+# Kusimamia Viungo vya Kushiriki kwa Mipango {#managing-shareable-links-for-plans}
 
 Ultimate Multisite inakupa chaguo la kushiriki viungo vya mipango moja kwa moja na wateja wako. Ili kufanya hivi, nenda kwenye ukurasa wowote wa kuhariri mpango wako na ubofye kitufe cha _Click to copy the Shareable Link_.
 

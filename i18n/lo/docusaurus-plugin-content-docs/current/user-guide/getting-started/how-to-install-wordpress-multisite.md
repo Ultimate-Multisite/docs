@@ -3,7 +3,7 @@ title: ວິທີຕິດຕັ້ງ WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# ວິທີການຕິດຕັ້ງ WordPress Multisite?
+# ວິທີການຕິດຕັ້ງ WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ຊ່ວຍໃຫ້ທ່ານມີເວັບໄຊທ໌ຫຼາຍແຫ່ງຢູ່ໃນການຕິດຕັ້ງດຽວ. ນີ້ແມ່ນຟີເຈີທີ່ມີມາແລ້ວ, ແຕ່ໂດຍປົກກະຕິມັນຈະບໍ່ເປີດໃຊ້ງານຢູ່.
 
@@ -57,7 +57,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# เพิ่มเครื่องหมายทับท้ายให้กับ /wp-admin
+# เพิ่มเครื่องหมายทับท้ายให้กับ /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -93,9 +93,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 ຫຼັງຈາກຕື່ມຂໍ້ມູນແລ້ວ, ກົດປຸ່ມ "Add site". ເມື່ອສ້າງ subsite ໃໝ່ສໍາເລັດແລ້ວ, ໃຫ້ເຂົ້າໄປເບິ່ງມັນເພື່ອຢືນຢັນວ່າ subsite ນັ້ນເຮັດວຽກໄດ້.
 
-## ปัญหาທົ່ວໄປ:
+## ปัญหาທົ່ວໄປ: {#common-problems}
 
-### 1. ຂ້ອຍສາມາດສ້າງ site ໃໝ່ໄດ້ ແຕ່ບໍ່ສາມາດເຂົ້າເຖິງໄດ້.
+### 1. ຂ້ອຍສາມາດສ້າງ site ໃໝ່ໄດ້ ແຕ່ບໍ່ສາມາດເຂົ້າເຖິງໄດ້. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 ຖ້າເຈົ້າເລືອກໃຊ້ subdomain, ເຈົ້າກໍຕ້ອງຕັ້ງຄ່າ wildcard subdomains ສຳລັບ network multisite ຂອງເຈົ້າດ້ວຍ.
 

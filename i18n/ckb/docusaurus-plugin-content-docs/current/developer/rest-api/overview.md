@@ -3,28 +3,28 @@ title: پوختەی REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# پەڕاویزی REST API
+# پەڕاویزی REST API {#rest-api-reference}
 
-## ڕێکخستنی بنەڕەتی
+## ڕێکخستنی بنەڕەتی {#base-configuration}
 
 **URLی بنەڕەت:** `{site_url}/wp-json/wu/v2/`
 **ڕەسەنایەتی:** کلیلی API و نهێنی (HTTP Basic Auth یان پارامیتەرەکانی URL)
 
-## ڕەسەنایەتی
+## ڕەسەنایەتی {#authentication}
 
-### چالاککردنی API
+### چالاککردنی API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### وەرگرتنی بڕوانامەکانی API
+### وەرگرتنی بڕوانامەکانی API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### شێوازەکانی ڕەسەنایەتی
+### شێوازەکانی ڕەسەنایەتی {#authentication-methods}
 
 **HTTP Basic Auth (پێشنیارکراو):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## خاڵە کۆتاییە سەرەکییەکان
+## خاڵە کۆتاییە سەرەکییەکان {#core-endpoints}
 
-### 1. APIی کڕیاران
+### 1. APIی کڕیاران {#1-customers-api}
 
 **ڕێڕەوی بنەڕەت:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. APIی ماڵپەڕەکان
+### 2. APIی ماڵپەڕەکان {#2-sites-api}
 
 **ڕێڕەوی بنەڕەت:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. APIی ئەندامێتییەکان
+### 3. APIی ئەندامێتییەکان {#3-memberships-api}
 
 **ڕێڕەوی بنەڕەت:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. APIی بەرهەمەکان
+### 4. APIی بەرهەمەکان {#4-products-api}
 
 **ڕێڕەوی بنەڕەت:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. APIی پارەدانەکان
+### 5. APIی پارەدانەکان {#5-payments-api}
 
 **ڕێڕەوی بنەڕەت:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. APIی دۆمەینەکان
+### 6. APIی دۆمەینەکان {#6-domains-api}
 
 **ڕێڕەوی بنەڕەت:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## خاڵی کۆتایی تۆمارکردن
+## خاڵی کۆتایی تۆمارکردن {#registration-endpoint}
 
 خاڵی کۆتایی `/register` پرۆسەیەکی تەواوی checkout/تۆمارکردن دابین دەکات:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## خاڵە کۆتاییەکانی کرێچی سەربەخۆ
+## خاڵە کۆتاییەکانی کرێچی سەربەخۆ {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 داپۆشینی RESTی کرێچی سەربەخۆ زیاد دەکات بۆ ئەو یەکخستنەوانەی کە کرێچییە دابڕاوەکان دابین دەکەن، پشکنینیان دەکەن، یان پشتڕاستیان دەکەنەوە.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` وەک ڕێگرێکی پێش-دەستپێکردن مامەڵە بکە. وردەکارییەکانی پشتڕاستکردنەوە بپشکنە، بەستنی خانەخوێی بنکەدراوە، ڕیز، دابینکردنی بەکارهێنەر، یان کێشەی ڕێگەدان چاک بکە، پاشان دووبارە پشتڕاستکردنەوە تاقی بکەوە.
 
-## وەڵامەکانی هەڵە
+## وەڵامەکانی هەڵە {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## لاپەڕەکردن و پاڵاوتن
+## لاپەڕەکردن و پاڵاوتن {#pagination-and-filtering}
 
 **پارامیتەرەکانی پرسیار:**
 ```http

@@ -3,11 +3,11 @@ title: Baemeli ba hahelletsoeng ka hare
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents tse Ahiloeng ka Hare
+# Agents tse Ahiloeng ka Hare {#built-in-agents}
 
 Gratis AI Agent v1.9.0 e tla le agents tse hlano tse ahiloeng ka hare, e nngwe le e nngwe e se e hlophisitswe esale pele ka sete e shebaneng ya disebediswa, system prompt e ikgethileng, le ditlhahiso tsa qalo tse tsamaellanang le mesebetsi e tlwaelehileng sebakeng seo. Ho fetola agents ho fetola seo mothusi a ka se etsang le kamoo a arabelang kateng — ntle le tlhophiso efe kapa efe ka lehlakoreng la hao. Superdav AI Agent v1.18.0 e ka eketsa disebediswa tse elang hloko kemiso, direkoto tsa dikgopotso, dikgoro tsa tumello, le ditsebiso tsa SMS ho mekgatlo ena ya mosebetsi ha dikopanyo tse amanang le tsona di hlophisitswe.
 
-## Agent ke Eng?
+## Agent ke Eng? {#what-is-an-agent}
 
 Agent ka nngwe ke profaele ya tlhophiso e nang le lebitso e kopanyang:
 
@@ -15,7 +15,7 @@ Agent ka nngwe ke profaele ya tlhophiso e nang le lebitso e kopanyang:
 - **System prompt** — ditaelo tse behang modumo, dintho tse tlang pele, le meedi ya agent
 - **Ditlhahiso** — diprompt tse ngotsweng esale pele tse bontshwang sebopehong sa puisano ho o thusa ho qala kapele
 
-## Ho Fihlella Agent Picker
+## Ho Fihlella Agent Picker {#accessing-the-agent-picker}
 
 1. Bula phanele ya **Gratis AI Agent** ka sidebar ya taolo ya WordPress.
 2. Tobetsa **letshwao la agent** hodimo ka ho le letshehadi la hlooho ya puisano (letshwao le a fetoha ho bontsha agent e sebetsang).
@@ -24,9 +24,9 @@ Agent ka nngwe ke profaele ya tlhophiso e nang le lebitso e kopanyang:
 
 Hape o ka fetola agents bohareng ba moqoqo — system prompt ya agent e ntjha e qala ho sebetsa molaetseng o latelang.
 
-## Agents tse Hlano tse Ahiloeng ka Hare
+## Agents tse Hlano tse Ahiloeng ka Hare {#the-five-built-in-agents}
 
-### Mongodi wa Dikahare
+### Mongodi wa Dikahare {#content-writer}
 
 **Tsepamiso:** Ho bopa le ho hlophisa diposo, maqephe, le diforomo tsa kgokahano.
 
@@ -47,7 +47,7 @@ Hape o ka fetola agents bohareng ba moqoqo — system prompt ya agent e ntjha e 
 
 ---
 
-### Moahi wa Site
+### Moahi wa Site {#site-builder}
 
 **Tsepamiso:** Ho bopa webosaete ho tloha qalong ho isa qetellong ho tswa ho prompt e le nngwe.
 
@@ -70,7 +70,7 @@ Hape o ka fetola agents bohareng ba moqoqo — system prompt ya agent e ntjha e 
 
 ---
 
-### Studio ya Moralo
+### Studio ya Moralo {#design-studio}
 
 **Tsepamiso:** Tlwaelanyo ya pono — mebala, typography, CSS, le dipaterone tsa diboloko.
 
@@ -87,7 +87,7 @@ Hape o ka fetola agents bohareng ba moqoqo — system prompt ya agent e ntjha e 
 - *Nka screenshot ya homepage mme o mpolelle seo o ka se ntlafatsang.*
 - *Bopa paterone ya block ya hero e ka sebediswang hape e nang le setshwantsho sa bokamorao se pharalletseng ka bophara bohle le sehlooho se bohareng.*
 
-### Motsamaisi wa Plugin
+### Motsamaisi wa Plugin {#plugin-manager}
 
 **Tsepamiso:** Ho sibolla, ho kenya, le ho laola plugins tsa WordPress.
 
@@ -105,7 +105,7 @@ Hape o ka fetola agents bohareng ba moqoqo — system prompt ya agent e ntjha e 
 
 ---
 
-### Mothusi wa Tshehetso
+### Mothusi wa Tshehetso {#support-assistant}
 
 **Tsepamiso:** Ho araba dipotso ka dikahare tsa site, di-setting, le tlhophiso ya WordPress.
 
@@ -124,7 +124,7 @@ Hape o ka fetola agents bohareng ba moqoqo — system prompt ya agent e ntjha e 
 
 ---
 
-## Dikopanyo tsa Boiketsiso ba Superdav
+## Dikopanyo tsa Boiketsiso ba Superdav {#superdav-automation-integrations}
 
 Ha dikopanyo tsa Superdav AI Agent v1.18.0 di hlophisitswe, baemedi ba ahilweng kahare ba ka nka karolo ditsamaisong tsa mosebetsi tsa boiketsiso tse bolokehileng tse elang kemiso hloko:
 
@@ -138,11 +138,11 @@ Tsamaiso ya mosebetsi e kgothaletswang: kopa moemedi ho lokisa molaetsa kapa ket
 
 ---
 
-## Ho Ikgethela Baemedi
+## Ho Ikgethela Baemedi {#customising-agents}
 
 Moemedi e mong le e mong ya ahilweng kahare a ka atoloswa kapa a nkelwa sebaka ka filter ya `gratis_ai_agent_agents`.
 
-### Ho kenya taelo ya tsamaiso e ikgethileng ho moemedi ya seng a le teng
+### Ho kenya taelo ya tsamaiso e ikgethileng ho moemedi ya seng a le teng {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Ho ngodisa moemedi e motjha
+### Ho ngodisa moemedi e motjha {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Moemedi e motjha o hlaha ho Se-kgethi sa Moemedi hanghang ka mora hore filter e sebetse.
 
-### Ho tlosa moemedi ya ahilweng kahare
+### Ho tlosa moemedi ya ahilweng kahare {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

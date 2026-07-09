@@ -4,11 +4,11 @@ title: Akció - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog
+# Action: add_user_to_blog {#action-addusertoblog}
 
 Akkor fut ki, amikor egy felhasználót egy oldalhoz adnak.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -19,6 +19,6 @@ Akkor fut ki, amikor egy felhasználót egy oldalhoz adnak.
 ###óta
 
 - MU: MU
-### Forrás
+### Forrás {#since}
 
 - Meghatározva [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) fájlban, 174-sorban

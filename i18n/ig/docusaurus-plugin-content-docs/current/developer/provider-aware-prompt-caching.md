@@ -3,11 +3,11 @@ title: Ịchekwa prompt na cache nke na-amata onye na-eweta ọrụ
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt Caching nke Na-amata Provider
+# Prompt Caching nke Na-amata Provider {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 na-ewebata **prompt caching nke na-amata provider**, nke na-eme ka ụgwọ API na latency ka mma site n’ịchekwa prompts gafee providers LLM dị iche iche. Provider ọ bụla nwere usoro caching na nhazi dị iche iche.
 
-## Nchịkọta
+## Nchịkọta {#overview}
 
 Prompt caching na-enye gị ohere:
 
@@ -23,11 +23,11 @@ Providers dị iche iche na-etinye caching n’ọrụ n’ụzọ dị iche:
 - **OpenRouter**: Caching pụrụ iche maka provider
 - **Vertex Anthropic**: Prompt caching nwere cache control
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini na-enye njikwa cache doro anya site na `cachedContents` API.
 
-### Nhazi
+### Nhazi {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Ịmepụta Prompt Echekwara na Cache
+### Ịmepụta Prompt Echekwara na Cache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Iji Prompt Echekwara na Cache
+### Iji Prompt Echekwara na Cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache Lifecycle
+### Cache Lifecycle {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Omume Kachasị Mma maka Gemini
+### Omume Kachasị Mma maka Gemini {#best-practices-for-gemini}
 
 - **Tọọ TTL kwesịrị ekwesị**: Hazie n’etiti ịchekwa ụgwọ na ịka nká nke cache
 - **Chekwaa system prompts na cache**: Jiri otu system prompt ọzọ gafee arịrịọ
 - **Nyochaa ojiji cache**: Soro caches a na-eji nke ukwuu
 - **Hichapụ caches gwụchara oge**: Hichapụ caches anaghị eji eme ihe kwa oge
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI na-akwado prompt caching nwere njikwa TTL akpaka.
 
-### Nhazi
+### Nhazi {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Ime ka Caching rụọ ọrụ
+### Ime ka Caching rụọ ọrụ {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Headers
+### Cache Headers {#cache-headers}
 
 Azure OpenAI na-eji HTTP headers maka cache control:
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: Echekwala arịrịọ a na cache
 - `no_store`: Echekwala na cache ma ejikwala ọzọ
 
-### Nyochaa Ojiji Cache
+### Nyochaa Ojiji Cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Omume Kachasị Mma maka Azure OpenAI
+### Omume Kachasị Mma maka Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Jiri prompts na-agbanwebeghị**: Prompts yiri otu na-erite uru na caching
 - **Tọọ TTL ezi uche dị na ya**: Hazie n’etiti ụgwọ na ịdị ọhụrụ
 - **Nyochaa metrics cache**: Soro imepụta cache megide hits
 - **Kpokọta arịrịọ yiri ibe ha**: Kpọkọta arịrịọ iji mee ka cache hits baa ụba
 
-## OpenRouter: Caching Pụrụ Iche maka Provider
+## OpenRouter: Caching Pụrụ Iche maka Provider {#openrouter-provider-specific-caching}
 
 OpenRouter na-akwado caching site na providers dị n’okpuru (OpenAI, Anthropic, wdg.).
 
-### Nhazi
+### Nhazi {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Iji OpenRouter Caching
+### Iji OpenRouter Caching {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Nhọrọ Pụrụ Iche maka Provider
+### Nhọrọ Pụrụ Iche maka Provider {#provider-specific-options}
 
 Providers dị iche iche nwere usoro caching dị iche:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Omume Kachasị Mma maka OpenRouter
+### Omume Kachasị Mma maka OpenRouter {#best-practices-for-openrouter}
 
 - **Mara caching nke provider gị**: Provider ọ bụla nwere usoro dị iche
 - **Nwale omume caching**: Nyochaa na caching na-arụ ọrụ na provider ị họọrọ
 - **Nyochaa ụgwọ**: Soro ego echekwara site na caching
 - **Jiri models na-agbanwebeghị**: Ịgbanwe models na-emebi cache hits
 
-## Vertex Anthropic: Prompt Caching nwere Cache Control
+## Vertex Anthropic: Prompt Caching nwere Cache Control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) na-akwado prompt caching nwere cache control doro anya.
 
-### Nhazi
+### Nhazi {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Iji Vertex Anthropic Caching
+### Iji Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Ụdị Cache Control
+### Ụdị Cache Control {#cache-control-types}
 
 - **ephemeral**: Cache maka oge arịrịọ ahụ na-adị (ndabara)
 - **persistent**: Cache gafee ọtụtụ arịrịọ (ma ọ bụrụ na a na-akwado ya)
 
-### Nlekọta Ojiji Cache
+### Nlekọta Ojiji Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Omume Kachasị Mma maka Vertex Anthropic
+### Omume Kachasị Mma maka Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Jiri ephemeral caching**: Ọ dị mma maka caching nke otu nnọkọ
 - **Tọọ max_tokens nke ọma**: Mee nha cache na ọnụ ahịa kwekọọ
 - **Nyochaa cache metrics**: Soro ịdị irè cache
 - **Nwale na ibu ọrụ gị**: Kwenye na caching bara uru maka ọnọdụ ojiji gị
 
-## Atụmatụ Caching Gafee Provider
+## Atụmatụ Caching Gafee Provider {#cross-provider-caching-strategy}
 
-### Nhazi Jikọrọ Ọnụ
+### Nhazi Jikọrọ Ọnụ {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Nchọpụta Provider
+### Nchọpụta Provider {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Atụmatụ Fallback
+### Atụmatụ Fallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Ibelata Ọnụ Ahịa
+## Ibelata Ọnụ Ahịa {#cost-optimization}
 
-### Gbakọọ Nchekwa Ego
+### Gbakọọ Nchekwa Ego {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Ndụmọdụ Optimization
+### Ndụmọdụ Optimization {#optimization-tips}
 
 - **Cache nnukwu system prompts**: Nchekwa ego kachasị ukwuu
 - **Jigharịa context**: Cache akwụkwọ context a na-ejikarị
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Nyochaa ịdị irè cache**: Soro ezigbo ego echekwara
 - **Gbanwee TTL**: Mee ọnụ ahịa na ịdị ọhụrụ kwekọọ
 
-## Ịchọpụta na idozi nsogbu
+## Ịchọpụta na idozi nsogbu {#troubleshooting}
 
-### A naghị eji cache eme ihe
+### A naghị eji cache eme ihe {#cache-not-being-used}
 
 - Kwenye na enyere caching aka na nhazi
 - Lelee na prompts bụ otu kpọmkwem (caching chọrọ nkwekọrịta zuru ezu)
 - Kwenye na cache agafeghị oge
 - Lelee oke cache pụrụ iche nke provider
 
-### Ịmepụta cache na-ada
+### Ịmepụta cache na-ada {#cache-creation-failing}
 
 - Kwenye na nha cache dị n’ime oke provider
 - Lelee na syntax cache control ziri ezi
 - Gbaa mbọ hụ na provider na-akwado caching maka model gị
 - Nyochaa documentation provider maka mmachi
 
-### Ọnụ ahịa a na-atụghị anya ya
+### Ọnụ ahịa a na-atụghị anya ya {#unexpected-costs}
 
 - Nyochaa imepụta cache megide tokens a na-agụ site na cache
 - Kwenye na a na-eji cache n’ezie
 - Lelee cache misses n’ihi mgbanwe prompt
 - Tụlee ịgbanwe TTL ma ọ bụ atụmatụ cache
 
-## Ntụnyere Provider
+## Ntụnyere Provider {#provider-comparison}
 
 | Njirimara | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Mbelata ọnụ ahịa | 90% | 90% | Dabere na provider | 90% |
 | Nlekọta | Zuru ezu | Site na metrics | Dabere na provider | Site na usage |
 
-## Nzọụkwụ Ndị Ọzọ
+## Nzọụkwụ Ndị Ọzọ {#next-steps}
 
 1. **Họrọ provider gị**: Họrọ dabere na mkpa gị
 2. **Hazie caching**: Hazie caching pụrụ iche maka provider

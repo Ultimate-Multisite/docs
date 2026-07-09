@@ -4,11 +4,11 @@ title: Filtre - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filtre: wu_admin_notices
+# Filtre: wu_admin_notices {#filter-wuadminnotices}
 
 Permet als desenvolupadors filtrar els avisos d'administració afegits per Ultimate Multisite.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tip | Descripció |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Permet als desenvolupadors filtrar els avisos d'administració afegits per Ultim
 | $filter | `string` | Si els avisos eliminables han estat filtrats. |
 | $dismissed_messages | `array` | Llista de les claures dels avisos eliminats. |
 
-### Des de
+### Des de {#since}
 
 - 2.0.0
-### Font
+### Font {#source}
 
 Definït en [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) a la línia 121
 
 
-## Retorns
+## Retorns {#returns}

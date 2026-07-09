@@ -3,13 +3,13 @@ title: Mavhiki ekugadzirwa
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Mhando Yechinjisa (v2)
+# Mhando Yechinjisa (v2) {#the-registration-flow-v2}
 
 _**CHINTO CHINTO: Iriye iyi inyandiro iriri iUltimate Multisite v2.x.**_
 
 Vakuru vanogona kudzinjisa mune nzvimbo dzakawanda dako. Vanogona kuita zvinhu neform yechinjiso yako kana link inoshandiswa kuti vashandise plan yakasiitirwa. Mutauro wese unonyira sei vakuru vanogone kudzinjisa munzvimbo yako nekuti zvichiri kuitika panguva yaingine uye zvakaitika panguva yaingine.
 
-## Kuti Usanidzidze neform yechinjiso:
+## Kuti Usanidzidze neform yechinjiso: {#using-the-registration-form}
 
 Iyi nzira yakakwana yekutanga. Unokwanisa kuita page yekuchinjisa (registration page) inozivikanwa ne**checkout form**, uye iyi ndiyo inozvakanisa vakuru vachiri kuitika munzvimbo yako nekuti vanoreva plan. Unogona kuva nepage dzakuchinjiso dzakawanda, zvichine form dzakuchinjiso dzakasiitirwa dzinotsanana kana unoda.
 
@@ -35,13 +35,13 @@ Kana vachiregistra munzira yakashandiswa (paid plan) kana kana verification ya e
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Kutora Link Inotsigirwa (Using a Shareable Link):
+## Kutora Link Inotsigirwa (Using a Shareable Link): {#using-a-shareable-link}
 
 Kugadzira registration nekuita zvakanaka nelink inotsigirwa kunoita zvinhu zvakasiyi nemafomu yekugadzira, asi chine chinhu chinotevera: nekuti kuita registration nelink inotsigirwa, vanhu vavo vanogona kuva na product kana template ya website yakasikwa muna checkout form (shandisa section Pre-selecting products and templates via URL parameters) kana kuti kuita coupon code yakanaka (shandisa section Using URL Parameters).
 
 Kugadzira registration kunoita zvinhu zvakasiyi: vanofanira kuisa zvinoda vavo, username, email address, website name uye title, nendiri... asi plan kana template ya site itarisikwa muna kuti vavo.
 
-### Kutora Registration Nezvinhu Zvakanaka (Registering Using Manual Payments):
+### Kutora Registration Nezvinhu Zvakanaka (Registering Using Manual Payments): {#registering-using-manual-payments}
 
 Kana haunoda kushandisa PayPal, Stripe kana nzira yanyanya dzinogona kuita payment dzine Ultimate Multisite kana add-on integrations dzake, unogona kushandisa manual payments kune vanhu vavo. Izvi zvinoita kuti uone invoice (fatura) kune vavo kuti vashandise kupasa munzira yenyu yekuti vashandise payment processor yakasiyana.
 

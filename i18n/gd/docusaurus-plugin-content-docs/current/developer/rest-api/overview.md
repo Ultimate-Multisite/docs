@@ -3,28 +3,28 @@ title: Sealladh farsaing air REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Iomradh REST API
+# Iomradh REST API {#rest-api-reference}
 
-## Rèiteachadh Bunaiteach
+## Rèiteachadh Bunaiteach {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Dearbhadh:** Iuchair API & Secret (HTTP Basic Auth no Paramadairean URL)
 
-## Dearbhadh
+## Dearbhadh {#authentication}
 
-### Cuir API an comas
+### Cuir API an comas {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Faigh teisteanasan API
+### Faigh teisteanasan API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Dòighean dearbhaidh
+### Dòighean dearbhaidh {#authentication-methods}
 
 **HTTP Basic Auth (Air a mholadh):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Prìomh phuingean-crìche
+## Prìomh phuingean-crìche {#core-endpoints}
 
-### 1. API luchd-ceannach
+### 1. API luchd-ceannach {#1-customers-api}
 
 **Slighe bhunaiteach:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API làraichean
+### 2. API làraichean {#2-sites-api}
 
 **Slighe bhunaiteach:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API ballrachdan
+### 3. API ballrachdan {#3-memberships-api}
 
 **Slighe bhunaiteach:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API batharan
+### 4. API batharan {#4-products-api}
 
 **Slighe bhunaiteach:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API pàighidhean
+### 5. API pàighidhean {#5-payments-api}
 
 **Slighe bhunaiteach:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API àrainnean
+### 6. API àrainnean {#6-domains-api}
 
 **Slighe bhunaiteach:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Puing-crìche clàraidh
+## Puing-crìche clàraidh {#registration-endpoint}
 
 Tha am puing-crìche `/register` a’ toirt seachad sruth checkout/clàraidh coileanta:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Puingean-crìche luchd-màil uachdaranach
+## Puingean-crìche luchd-màil uachdaranach {#sovereign-tenant-endpoints}
 
 Bidh Ultimate Multisite: Multi-Tenancy 1.2.0 a’ cur còmhdach REST luchd-màil uachdaranach ris airson amalachadh a bhios a’ solarachadh, a’ sgrùdadh, no a’ dearbhadh luchd-màil iomallach.
 
@@ -242,7 +242,7 @@ Tha freagairtean àbhaisteach inbhe imrich a’ gabhail a-steach:
 
 Làimhsich `ready: false` mar bhacadh ro-chur-air-bhog. Thoir sùil air mion-fhiosrachadh an dearbhaidh, càraich ceangal host an stòr-dàta, a’ chiudha, solarachadh luchd-cleachdaidh, no duilgheadas sligheachaidh, agus an uair sin feuch dearbhadh a-rithist.
 
-## Freagairtean mearachd
+## Freagairtean mearachd {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Làimhsich `ready: false` mar bhacadh ro-chur-air-bhog. Thoir sùil air mion-fhi
 }
 ```
 
-## Duilleagachadh agus sìoladh
+## Duilleagachadh agus sìoladh {#pagination-and-filtering}
 
 **Paramadairean ceiste:**
 ```http

@@ -3,17 +3,17 @@ title: RunCloud-integraatio
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud -Integraatio
+# RunCloud -Integraatio {#runcloud-integration}
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 RunCloud on pilvipohjainen palvelinhallintalaitteisto, joka mahdollistaa verkkosovellusten helpon käyttöönoton ja hallinnan omilla pilvipalvelimillasi. Tämä integraatio mahdollistaa automaattisen domeen synkronoinnin ja SSL-sertifikaattien hallinnan Ultimate Multisiten ja RunCloud välillä.
 
-## Ominaisuudet
+## Ominaisuudet {#features}
 - Automaattinen domeen synkronointi
 - SSL-sertifikaattien hallinta
 - Domeenin poisto, kun mappaukset poistetaan
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 Seuraavat vakioiden on määritettävä tiedostoosi `wp-config.php`:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Asetusohjeet
+## Asetusohjeet {#setup-instructions}
 
-### 1. Hae RunCloud API-tunnisteesi
+### 1. Hae RunCloud API-tunnisteesi {#1-get-your-runcloud-api-credentials}
 
 1. Kirjaudu sisään RunCloud-hallintapaneeliin.
 2. Mene "User Profile" (klikkaa profiilikuvaa oikeassa yläkulmassa).
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Klikkaa "Generate API Keyä", jos sinulla ei ole jo sitä.
 5. Kopioi API-tunniste ja API-salaisuus.
 
-### 2. Hae palvelin- ja sovellus-IDsi
+### 2. Hae palvelin- ja sovellus-IDsi {#2-get-your-server-and-app-ids}
 
 1. RunCloud-hallintapaneelissa mene "Servers" (Palvelimet) -osioon.
 2. Valitse palvelin, johon WordPress multisite on asennettu.
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Mene "Web Applications" (Verkkosovellukset) -osioon ja valitse WordPress-sovellus.
 5. Sovellus-ID näkyy URL-osoitteessa: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Lisää vakioita wp-config.php:ään
+### 3. Lisää vakioita wp-config.php:ään {#3-add-constants-to-wp-configphp}
 
 Lisää seuraavat vakioiden määritelmät tiedostoosi `wp-config.php`:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Aktivoi integraatio
+### 4. Aktivoi integraatio {#4-enable-the-integration}
 
 1. WordPressin hallivasi (admin) siirry Ultimate Multisite > Settings -Asetukset
 2. Siirry "Domain Mapping" -välilehdelle
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Aktivoi RunCloud-integraatio
 5. Napsauta "Save Changes" (Tallenna muutokset)
 
-## Miten se toimii
+## Miten se toimii {#how-it-works}
 
 Kun domeeni mappataan Ultimate Multisiteissa:
 
@@ -70,19 +70,19 @@ Kun domeeni mappataan Ultimate Multisiteissa:
 
 Subdomäärien asennusten kohdalla integraatio hoitaa automaattisesti subdomeinien luomisen RunCloudissa, kun uusia sivustoja lisätään verkkoosi.
 
-## Ongelmanratkaisu
+## Ongelmanratkaisu {#troubleshooting}
 
-### API-yhteyden ongelmat
+### API-yhteyden ongelmat {#api-connection-issues}
 - Tarkista, ovatko API-tiedot oikein
 - Varmista, että palvelimen ja sovelluksen ID:t ovat oikein
 - Varmista, että RunCloud-tililläsi on tarvittavat oikeudet
 
-### SSL-sertifikaatin ongelmat
+### SSL-sertifikaatin ongelmat {#ssl-certificate-issues}
 - RunCloud saattaa kestää jonkin aikaa SSL-sertifikaattien myöntämiseen
 - Tarkista, että domeenisi osoittavat oikein palvelimesi IP-osoitteeseen
 - Tarkista RunCloudin SSL-asetukset sovellukselle
 
-### Domeenia ei lisätty
+### Domeenia ei lisätty {#domain-not-added}
 - Tarkista Ultimate Multisite -logit mahdollisten virheilmoitusten löytämiseksi
 - Varmista, että domeeni ei ole jo lisätty RunCloudiin
 - Varmista, että RunCloud-tilaasi tukee useita domeeneja

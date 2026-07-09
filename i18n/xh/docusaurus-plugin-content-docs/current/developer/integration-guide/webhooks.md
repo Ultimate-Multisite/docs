@@ -3,11 +3,11 @@ title: Ukuphathwa kwe-Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ukuphathwa kwee-webhook
+# Ukuphathwa kwee-webhook {#webhook-handling}
 
 Yenza iziphelo ze-webhook ezenzelwe wena ukuze ufumane iziganeko ezivela kwiinkonzo zangaphandle uze ungqamanise idatha ne-Ultimate Multisite.
 
-## Isiphelo se-Webhook Esenzelwe Wena
+## Isiphelo se-Webhook Esenzelwe Wena {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Iingqwalasela Zokhuseleko
+## Iingqwalasela Zokhuseleko {#security-considerations}
 
 - Soloko uqinisekisa iisiginitsha ze-webhook usebenzisa i-HMAC okanye imfihlo ekwabelwana ngayo
 - Sebenzisa i-`permission_callback` kwindlela yakho ye-REST — ungaze uyimise ku-`__return_true` kwimveliso

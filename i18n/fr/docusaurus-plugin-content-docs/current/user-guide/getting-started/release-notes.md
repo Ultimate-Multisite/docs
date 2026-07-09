@@ -3,9 +3,9 @@ title: Notes de version
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Notes de version
+# Notes de version {#release-notes}
 
-## Version 2.13.0 — Publiée le 2026-06-05
+## Version 2.13.0 — Publiée le 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nouveau : Ajout de la prise en charge des locataires souverains pour les flux de Account client, de paiement, de facturation, de site, de facture, de changement de modèle et de mappage de domaine, afin que les réseaux de locataires puissent rediriger les clients vers le site principal pour les actions gérées.
 - Nouveau : Ajout de vérifications des identifiants de renouvellement pour les abonnements récurrents, afin que les passerelles puissent désactiver le renouvellement automatique lorsqu’un accord de facturation enregistré, un abonnement ou un jeton de coffre-fort est manquant.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correctif : Les cas limites liés aux renouvellements d’abonnements, à l’affichage de l’expiration et à la collecte des paiements évitent désormais les expirations immédiates, les plantages ou les paiements obligatoires manqués.
 - Amélioré : La compatibilité WordPress est testée jusqu’à la version 7.0, les ressources Vue de production sont reconstruites depuis les sources npm, et la couverture de bout en bout Cypress exerce désormais davantage de flux de paiement, de configuration, de SSO et de passerelle.
 
-## Version 2.12.0 — Publiée le 2026-05-15
+## Version 2.12.0 — Publiée le 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nouveau : Ajout de Hostinger (hPanel) comme fournisseur d’hébergement pris en charge avec intégration du mappage de domaine
 - Nouveau : Site Exporter gère désormais les lots d’importation réseau pour une restauration rationalisée des sites à l’échelle du réseau
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correctif : La CLI de Site Exporter conserve désormais la sélection correcte du site réseau par défaut
 - Amélioré : Suppression de wp-cli inclus du paquet du plugin, réduisant la taille du plugin
 
-## Version 2.11.0 — Publiée le 2026-05-11
+## Version 2.11.0 — Publiée le 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nouveau : Les exportations de site incluent désormais un `index.php` auto-amorçable afin que le ZIP puisse être installé sur un nouvel hébergeur sans installation séparée de plugin.
 - Nouveau : L’exportation réseau permet aux administrateurs d’exporter tous les sous-sites dans une seule archive depuis la page d’administration Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nouveau : L’éditeur de formulaire de paiement avertit lorsqu’un produit est ajouté sans champ obligatoire configuré.
 - Nouveau : L’onglet des réglages d’importation/exportation décrit désormais clairement sa portée et renvoie directement vers l’outil Site Export.
 
-## Version 2.10.0 — Publiée le 2026-05-05
+## Version 2.10.0 — Publiée le 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nouveau : Assistant de configuration guidée PayPal pour la saisie manuelle des identifiants avec indicateur OAuth pour une configuration transparente de la passerelle.
 - Nouveau : Panneau client de changement de modèle repensé avec carte du modèle actuel, grille persistante et bouton **Réinitialiser le modèle actuel**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correctif : Le chemin SSO filtré est respecté dans tous les flux de connexion.
 - Correctif : Les options d’identité de site vides sont conservées lors de l’enregistrement.
 
-## Version 2.9.0 — Publiée le 2026-04-30
+## Version 2.9.0 — Publiée le 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nouveau : Exportation et importation de site unique ajoutées sous **Outils > Exportation et importation**.
 - Correctif : Les fichiers ZIP d’exportation sont désormais servis via un endpoint de téléchargement authentifié.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correctif : Les ID de visite guidée sont normalisés avec des underscores dans les clés de réglages utilisateur.
 - Amélioré : ZipArchive est désormais utilisé à la place d’Alchemy/Zippy pour une meilleure compatibilité.
 
-## Version 2.8.0 — Publiée le 2026-04-29
+## Version 2.8.0 — Publiée le 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nouveau : bouton d’activation Enable Jumper ajouté à l’interface utilisateur des paramètres Other Options.
 - Nouveau : colonne de statut ajoutée au tableau de liste des formulaires de paiement.

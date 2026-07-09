@@ -4,11 +4,11 @@ title: Филтр - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Давомнокии давраи анҷоми муҳлати cookie-и тасдиқи ҳувиятро филтр мекунад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 | $user_id | `int` | ID-и корбар. |
 | $remember | `bool` | Оё воридшавии корбар дар хотир нигоҳ дошта шавад. Пешфарз false. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 2.8.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) дар сатри 52 муайян шудааст

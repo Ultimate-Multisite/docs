@@ -4,11 +4,11 @@ title: Nzacha - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Na-enyocha ma a ga-etinye ụgwọ ndebanye ma ọ bụ na a gaghị etinye ya.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Na-enyocha ma a ga-etinye ụgwọ ndebanye ma ọ bụ na a gaghị etinye ya.
 | $product | `object` | Ihe object nke ọkwa ịbụ onye otu. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Ihe object nke ndebanye. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 3.1
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) na ahịrị 1769

@@ -3,7 +3,7 @@ title: GoCardless Istoric de schimbări
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Jurnal de modificări GoCardless
+# Jurnal de modificări GoCardless {#gocardless-changelog}
 
 Versiune: 1.0.3 - Lansat pe 2026-05-05
 * Corecție: Siturile în așteptare orfane sunt acum curățate atunci când un abonament GoCardless este anulat în timp ce se află în stare de așteptare sau suspendată

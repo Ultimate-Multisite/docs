@@ -3,17 +3,17 @@ title: Indlela Yokulungiselela Ukumataniswa Kwesizinda
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Indlela Yokumisa Ukumataniswa Kwe-domain (v2)
+# Indlela Yokumisa Ukumataniswa Kwe-domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite inguqulo 2.x.**_
 
 Esinye sezici ezinamandla kakhulu zenethiwekhi ye-premium yikhono lokunikeza amaklayenti ethu ithuba lokunamathisela i-domain yezinga eliphezulu kumasayithi awo. Phela, yikuphi okubukeka kunobungcweti kakhulu: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) noma [_**joesbikeshop.com**_](http://joesbikeshop.com)? Yingakho i-Ultimate Multisite inikeza leso sici esakhelwe ngaphakathi, ngaphandle kwesidingo sokusebenzisa ama-plugin enkampani yangaphandle.
 
-## Kuyini ukumataniswa kwe-domain?
+## Kuyini ukumataniswa kwe-domain? {#whats-domain-mapping}
 
 Njengoba igama liphakamisa, ukumataniswa kwe-domain yikhono elinikezwa yi-Ultimate Multisite lokwamukela isicelo se-domain eyenziwe ngokwezifiso bese limatanisa leso sicelo nesayithi elifanele kunethiwekhi elinale domain ethile enamathiselwe.
 
-### Indlela yokusetha ukumataniswa kwe-domain ku-Ultimate Multisite Network yakho
+### Indlela yokusetha ukumataniswa kwe-domain ku-Ultimate Multisite Network yakho {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Ukumataniswa kwe-domain kudinga ukusetha okuthile ngakuwena ukuze kusebenze. Ngenhlanhla, i-Ultimate Multisite izenzakalela umsebenzi onzima kuwe ukuze ukwazi ukuhlangabezana nezidingo kalula.
 
@@ -45,7 +45,7 @@ Kodwa ngaphambi kokuthi uqale ukumatanisa i-domain eyenziwe ngokwezifiso kwenye 
 
 ###
 
-### Ukuqinisekisa ukuthi izilungiselelo ze-DNS ze-domain zimiswe kahle
+### Ukuqinisekisa ukuthi izilungiselelo ze-DNS ze-domain zimiswe kahle {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Ukuze ukumatanisa kusebenze, kudingeka uqinisekise ukuthi i-domain ohlela ukuyimatanisa ikhomba ekhelini le-IP leNethiwekhi yakho. Qaphela ukuthi udinga ikheli le-IP leNethiwekhi - ikheli le-IP le-domain lapho i-Ultimate Multisite ifakiwe khona - hhayi ikheli le-IP le-domain eyenziwe ngokwezifiso ofuna ukuyimatanisa. Ukusesha ikheli le-IP le-domain ethile, siphakamisa ukuya ku-[Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), ngokwesibonelo.
 
@@ -55,7 +55,7 @@ Uma uzithola unenkinga yokwenza lokhu kusebenze, **xhumana nokusekelwa kombhalis
 
 Uma uhlela ukuvumela amaklayenti akho ukuthi amatanise ama-domain awo ngokwawo, kuzodingeka enze umsebenzi kule ngxenye ngokwawo. Wakhombe ohlelweni lokusekelwa lombhalisi wawo uma ezithola engakwazi ukudala i-A Record.
 
-### Ukumatanisa igama le-domain eyenziwe ngokwezifiso njengo-Super Admin
+### Ukumatanisa igama le-domain eyenziwe ngokwezifiso njengo-Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Uma ungene ngemvume njengo-super admin kunethiwekhi yakho, ungakwazi ukwengeza nokuphatha kalula amagama ama-domain enziwe ngokwezifiso ngokuya ngaphansi kokuthi **Ultimate Multisite > Ama-domain**.
 
@@ -93,7 +93,7 @@ Uma uchofoza egameni le-domain, uzokwazi ukubona ezinye izinketho ngaphakathi ku
 
 **Ingabe Ivikelekile?:** Nakuba Ultimate Multisite ihlola ukuthi i-domain inesitifiketi se-SSL noma cha ngaphambi kokuyinika amandla, ungakhetha mathupha ukulayisha i-domain ngesitifiketi se-SSL noma ngaphandle kwaso. Qaphela ukuthi uma iwebhusayithi ingenayo isitifiketi se-SSL futhi uzama ukuyiphoqa ukuthi ilayishe nge-SSL, ingase ikunikeze amaphutha.
 
-### Ukuxhumanisa igama le-domain elenziwe ngokwezifiso njengomsebenzisi we-Subsite
+### Ukuxhumanisa igama le-domain elenziwe ngokwezifiso njengomsebenzisi we-Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Abaphathi be-Subsite nabo bangaxhumanisa amagama ama-domain enziwe ngokwezifiso kusuka ku-Dashboard yokuphatha ye-subsite yabo.
 
@@ -121,7 +121,7 @@ Umsebenzisi angachofoza ku-**Isinyathelo Esilandelayo** bese eqhubeka nokwengeza
 
 Ukuchofoza ku-**Engeza i-Domain** kuzoqala inqubo yokuqinisekisa nokulanda ulwazi lwe-DNS lwe-domain eyenziwe ngokwezifiso.
 
-### Mayelana Nokuvumelanisa i-Domain
+### Mayelana Nokuvumelanisa i-Domain {#about-domain-syncing}
 
 Ukuvumelanisa i-Domain kuyinqubo lapho Ultimate Multisite yengeza khona igama le-domain elenziwe ngokwezifiso ku-akhawunti yakho yokusingatha njenge-domain eyengeziwe **ukuze ukuxhumanisa i-domain kusebenze**.
 

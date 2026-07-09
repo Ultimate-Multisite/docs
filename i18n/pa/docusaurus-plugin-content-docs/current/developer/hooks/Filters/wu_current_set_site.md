@@ -4,23 +4,23 @@ title: ਫਿਲਟਰ - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Filter: wu_current_set_site
+# Filter: wu_current_set_site {#filter-wucurrentsetsite}
 
 Developers ਨੂੰ ਡਿਫਾਲਟ ਵਿਵਹਾਰ ਨੂੰ ਬਦਲਣ ਅਤੇ ਮੌਜੂਦਾ ਸਾਈਟ ਨੂੰ ਵੱਖਰੇ ਤਰੀਕੇ ਨਾਲ ਸੈੱਟ ਕਰਨ ਦੀ ਇਜਮਤ ਕਰਨ ਦੇ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $site | `\WP_Ultimo\Models\Site` | ਉਹ ਮੌਜੂਦਾ ਸਾਈਟ ਜਿਸਨੂੰ ਸੈੱਟ ਕਰਨਾ ਹੈ। |
 | $ | `self` | ਮੌਜੂਦਾ class ਦਾ instance। |
 
-### Since
+### Since {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L331) ਵਿੱਚ ਲਾਈਨ 331 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਹੈ।
 
 
-## Returns
+## Returns {#returns}

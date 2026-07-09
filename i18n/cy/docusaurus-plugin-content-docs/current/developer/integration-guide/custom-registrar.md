@@ -3,13 +3,13 @@ title: Adeiladu Integreiddiad Cofrestrydd Wedi'i Deilwra
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Adeiladu Integreiddiad Cofrestrydd Personol
+# Adeiladu Integreiddiad Cofrestrydd Personol {#building-a-custom-registrar-integration}
 
 Mae addon Domain Seller yn defnyddio patrwm **Integration Registry**. Mae pob cofrestrydd yn ddosbarth PHP sy’n gweithredu `Domain_Selling_Capability` ac yn cofrestru ei hun drwy’r bachyn gweithredu `wu_domain_seller_register_capabilities`.
 
 Mae’r canllaw hwn yn dangos sut i gysylltu cofrestrydd personol.
 
-## Y rhyngwyneb
+## Y rhyngwyneb {#the-interface}
 
 Rhaid i’ch dosbarth weithredu `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ac ymestyn `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Dulliau dewisol
+### Dulliau dewisol {#optional-methods}
 
 Gweithredwch y rhain i ddatgloi nodweddion ychwanegol. Mae’r addon yn canfod cymorth drwy `method_exists()`:
 
@@ -81,7 +81,7 @@ Gweithredwch y rhain i ddatgloi nodweddion ychwanegol. Mae’r addon yn canfod c
 | `get_epp_code(string $domain_name): array` | Trosglwyddo parth (allanol) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Trosglwyddo parth (mewnol) |
 
-### Confensiwn gwerth dychwelyd
+### Confensiwn gwerth dychwelyd {#return-value-convention}
 
 Mae pob dull yn dychwelyd arae gydag allwedd `success` o leiaf:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Cofrestru eich gallu
+## Cofrestru eich gallu {#registering-your-capability}
 
 Cofrestrwch eich dosbarth gan ddefnyddio’r weithred `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Y ddadl gyntaf i `add_capability()` yw’r **ID darparwr** — slug llythrennau 
 
 ---
 
-## Ychwanegu meysydd manylion mewngofnodi at y dewin
+## Ychwanegu meysydd manylion mewngofnodi at y dewin {#adding-credential-fields-to-the-wizard}
 
 I ganiatáu i weinyddwyr nodi manylion mewngofnodi drwy’r dewin gosod, cofrestrwch eich integreiddiad:
 
@@ -137,7 +137,7 @@ Cedwir manylion mewngofnodi fel opsiynau rhwydwaith gan ddefnyddio IDau’r meys
 
 ---
 
-## Bachau ar gyfer gweithredoedd ôl-gofrestru
+## Bachau ar gyfer gweithredoedd ôl-gofrestru {#hooks-for-post-registration-actions}
 
 Defnyddiwch y gweithredoedd hyn i sbarduno webhooks, provisioning, hysbysiadau, neu ddiweddariadau CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logio
+## Logio {#logging}
 
 Ysgrifennwch i'ch sianel logio sy'n benodol i'r darparwr gan ddefnyddio `wu_log_add()`:
 

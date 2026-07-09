@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Is Ultimate Multisite un plugin de WordPress a fáilte duit a bheith ag cur isteach WaaS (Websites as a Service) nó Websites do chuidiúite. Le linn an t-am chun a bheith ag iarraidh a bheith ag éifeachtach ar an gúram agus ar na chuidiúite, bíonn caomhadhnéis atá ag cur isteach a bheith ag fáilte agam.
 
-## An WordPress Multisite
+## An WordPress Multisite {#the-wordpress-multisite}
 
 Is éastáil linn go bhfuilimid ag iarraidh a bheith ag éifeachtach le an càiinn WordPress a bhaineann leis an t-am. Tá sé ar fáil ó chuid de chuidaitheoir seo nó, mar chuid de chuidiúite, a chur ar fáil seirbhís web agus database nua, a dhéanamh ar na fáil.
 
@@ -19,7 +19,7 @@ Intat, is féidir a bheith ag féachaint ar WordPress multisite mar sin: Tá sé
 
 Anois an t-aistíocht seo a bhfaidh mé é a chruinneadh go léir: leat a bheith ag iarraidh a fheiceáil cumhachtaireachtaí bunaithe a bhaineann leis an t-aistíocht, nílchún in dúnachtaí Ultimate Multisite ach ag iarraidh a bheith ag an comhrá ar fáil ar fáil i gcónaí WordPress.
 
-### An Cnotaí (The Network)
+### An Cnotaí (The Network) {#the-network}
 
 Agairm go léir ar WordPress, is é an t-aistíocht multisite curtha leat a bheith ag cur chuimhne ar chuid subsites a bhaineann leis an deabhálacha cánach. Mar mar a bhíonn an t-aistíocht multisite ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil ag cur chuimhne ar fáil
 
@@ -31,7 +31,7 @@ Ag cur isteach subdomain, is é úsáid cert wildcard SSL de bhfáth an t-amach 
 
 Mar é sin, tá cumhacht eile ag cur isteach, ach is é seo go comair le haghaidh scopi agus úsáid, rud é seo a bhíonn go comair le haghaidh curte foirneamh agus cur isteach ar an t-amach.
 
-#### Plugins agus Themes
+#### Plugins agus Themes {#subdomain-vs-subdirectory}
 
 Is é sin a bhíonn WordPress ag iarraidh a thóg, ag cur isteach go comair le haghaidh chuid is gcurtha. Ag cur isteach WordPress beag ar chuid is éiteann, má iontaíonn an stiúradh an t-amach plugin an-chomhthach nó níl a bheith ag cur isteach a bhí ar fáil, tá an t-amach agus an t-amach seo an t-amach. Mar sin féin, má iontaíonn an stiúradh an t-amach plugin an-chomhthach ar curte multisite, beidh an t-amach deadaí ar chuid cadaite ar chuid each síos a bhí ag cur isteach i ngrú.
 
@@ -39,7 +39,7 @@ Ar chun an t-amhasan seo, nuair a bhíonn WordPress as multisite a chur ar fáil
 
 Go háirithe, tá an administratorí network tráchta ar cur isteach pluginí agus themes i bhfáineadh an network agus áirítear an fhioscaíocht ar chuid dearschaidtear a bheith ag cur isteach na pluginí agus themes i fháineadh site. Níl an t-amhasan administratorí site ag cur isteach pluginí nó themes nó ag cur féachaint ar pluginí agus themes a bhaineann leis an site a bhaineann leat.
 
-#### Users and Administrators (Uisgeoirí agus Administratorí)
+#### Users and Administrators (Uisgeoirí agus Administratorí) {#plugins-and-themes}
 
 Agus i WordPress Multisite, tá an dbhaine-chúram (database) a bheith ag sinte an gcuid siteanna, mar is é sin, tá na uisgeoirí, rôláir agus fhioscaíocht a bhaineann leat. Is é an chuid is fearr a bheith ag cur ar an chéad a bheith ag cur isteach: go bhfuil gach uisgeoir ag teachtar i ngníomhaíocht (member) ar an network agus ní ag teachtar i site a shonraithe.
 
@@ -51,13 +51,13 @@ Ag réiteach an stóras seo, mar gheall ar na contaí uisgeoirí a bhaineann lea
 
 MarN-né, marn-né, níl é an t-aistriú seo sa chuid faoi chuid raonanna enterprise, ach tá sé seo go leor duine a bhíonn ag iarraidh an t-aistriú seo a bheith go maith, go háirithe do dhuit a bhfuil an WordPress iadachaithe ar fáil.
 
-#### Media
+#### Media {#users-and-administrators}
 
 Agus faoi chuid sitianna neteacha a shonnadh deabhálacha adatascaithe ag an WordPress Multisite, téann siad ag cur cur síos (paths) pearsanta ar an fháil-sistim (filesystem) do chuid fáil.
 
 Tá an áit chuẩnaite ar an WordPress (wp-content/uploads) ag dul ar aghaidh; mar sin féin, tá an cur síos seo atá athraithe a bheith ag teacht chun an chuid ID unig ar an sitián neteacha a chur in iúl. Mar sin, a bheith media do chuid sitián neteacha ag teacht mar wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#media}
 
 Ag cur méid ansin, tá caipíocht pearsanta (subdomain) ná caipíocht subdireactoireachta (subdirectory), agus seo an t-aistriú: paths.
 
@@ -71,7 +71,7 @@ Ag cur subdomain, níl an cur síos seo ag teacht ar fáil toiscint, mar tá mé
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#permalinks}
 
 Ag cur iarracht _subdirectory_ an t-aithreachais, is féidir leis an teachtaireacht de chuid a osgaite (static pages) a bheith ag cur isteach éifeachtach mar an site ríomhach agus na siteanna netwricala ag cur an amas ar an amasta.
 
@@ -81,7 +81,7 @@ Leat a bheith ag cur éileamh ar seo, provideann WordPress cur isteach a fháil 
 
 Ag cur _subdomain_ ar an teachtaireacht, is féidir leis an subdomaín a gléamh an t-amhas a osgaite mar sé éadach do chuid site netwricala agus níl ag cur aon cheangail leat leat an amasta ríomhacha.
 
-### Registration (An curthaí)
+### Registration (An curthaí) {#static-pages}
 
 Intat na hiontaí netwricala de WordPress Multisite, tá curthaí nua ar fáil chun úsáidóra nua agus uisceúla a chur i gcás siti nua.
 
@@ -99,7 +99,7 @@ Ar an chuid seo, nuair a bhíonn an úsáid ag logáil in, tá tú ag logáil in
 
 Mar sin féin, má bhí an tairbhíocht a bhí ag cur isteach agus ag déanamh ar an t-aithneacht seo ar fáil ar chuid siti ngrúpaí atá gan aon ríomhphostais le chéile, is é seo an t-amhráid is mó a bheith ag cur isteach go dtí an t-aithneacht, beidh pluginí eile nó tábhachtais eile ag cur isteach chun rôláin úsáideora a chruthú.
 
-### Domain agus SSL
+### Domain agus SSL {#registration}
 
 Léimeann láithreach ar an t-aithneacht WordPress Multisite atá ag iarraidh an áit a bheith ar an gcur ar an t-aithneacht – Wordpress.com. Is é seo an ardán is mór a bhaineann le WordPress Multisite agus tá sé ag déanamh cinnte de na cúilteacha mór a bheith ag cur isteach agus ag cur áthas ar fáil chun an t-amhráid a dhéanamh.
 
@@ -113,11 +113,11 @@ In WordPress Multisite, tá feidhm sé a dhéanamh ar fáil do chuid siti neteac
 
 Ag cur isteach in áit sin, mar a bhfaigheann WordPress Multisite fáil ar chuid leathra a bheith ag cur isteach [www.anotherdomain.com](http://www.anotherdomain.com) ar ‘site1’, tá an athbhreithneoir neteacha ag cur isteach an chuid leathra DNS agus an cur isteach SSL certificates ar an chuid oiriúil (externally).
 
-## Ultimate Multisite
+## Ultimate Multisite {#domain-and-ssl}
 
 Le linn gur chéileanna a bheith ag iarraidh a bheith ag fáil ar an t-aonlaíocht WordPress stand-alone agus Multisite, léimeannán láithreach conas a bhíonn Ultimate Multisite ag cur isteach mar an chuid leathra is fearr do cur isteach Websites as a Service (WaaS).
 
-### Introduction
+### Introduction {#ultimate-multisite}
 
 Is é Ultimate Multisite an chuid leathra ar fáil agat nuair a bhíonn tú ag cur isteach Website as a Service (WaaS). Déan cinnte go bhfuil Wix.com, Squarespace, WordPress.com agus ansin is é an t-oileán a bheith agat ar chuid oiriúil.
 
@@ -125,9 +125,9 @@ Ar an bhfionn, úsáideann Ultimate Multisite WordPress Multisite ach ag cur ist
 
 Ag cur isteach iad in seachtainn seo, déanannáimid an t-aonlaíocht Multisite a bhíonn ag cur isteach agus na cúilteanna a bhaineann leis sin a bheith ar fáil chun sincurt a chur ar fáil.
 
-### Use Cases
+### Use Cases {#introduction}
 
-#### Case 1: An Agency
+#### Case 1: An Agency {#use-cases}
 
 Ar tí, tá na cúilteanna bunaithe de chuid leathra an t-aonlaíochta (agency) ag cur isteach design siti leis an bhfáthnaí mar chuid hosting nó marketing a bheith ag cur isteach mar uirlis eile.
 
@@ -147,7 +147,7 @@ Tais chuid ar Themes curraithe fáilte, a fhojlúiríonn siad ar fáil iad a chu
 
 Béalfaidh na ginearálta a bheith ag Ultimate Multisite leis an t-amhrán, a fáilte le caillte a dhéanamh a bhfeicfidh siad - design sitií web uachtaracha.
 
-#### Cas 2: Cothromach Provider
+#### Cas 2: Cothromach Provider {#case-1-an-agency}
 
 Tá amhrán uigeach atá a bheith ag "dúno éad agus dúno éad go maith". Do ardaitheoirí seo, curtha ceann chuid ar chuid táirge nó ardán.
 
@@ -161,7 +161,7 @@ Do ardaitheoir ar chuid siti agus seirbhísí cothromacha seo, curtha sé ag cur
 
 Agus na ríomhpháirtí ar fáil, má tá an t-aisríocht ag cur áirítear, is féidir leat a bheith ag úsáid cur síos _subdirectory_ nó _subdomain_. Ag an cheann, beidh an chuntasctha ar an bhfhoghlaim seo ag cur isteach ar chuntasctha SSL simple do _subdirectories_ nó ar chuntasctha wildcard do _subdomains_.
 
-#### Cas 3: Bhothbháiste WordPress
+#### Cas 3: Bhothbháiste WordPress {#case-2-niche-provider}
 
 Tá cur ann go leor fáilí chun siti WordPress, ach níl aon rud an-chiontach mar a chur i bhfeidm spás web do chuid istireacha le cur síos WordPress ar fáil. Is é seo mar tá cur deimhne agus cur áirítear ag cur i bhfeidm leat chun cur síos bunúsach a chur ar fáil.
 
@@ -171,11 +171,11 @@ Tá go leimneán mór de dhíolraí a bhaineann leis an t-aisríocht a siti, a c
 
 Ní mór go leimneán fáilte ar pluginí agus lisíanna eile, provideann Ultimate Multisite cur síos le fáil agus a bheith ag cur áirítear leis an t-aisríocht Wix, Squarespace, WordPress.com agus eile.
 
-### Cur Síos Ar Chuntasctha
+### Cur Síos Ar Chuntasctha {#case-3-wordpress-web-hosting}
 
 Níl sé cur síos curteach, ach is féidir leis na sonraí seo a bheith mar chuid cur síos chun an t-aisríocht ceart a chur ar fáil leat chun siti Ultimate Multisite a chur ar fáil.
 
-#### Bhothbháiste agus Fhothbháiste (Shared vs. Dedicated Hosting)
+#### Bhothbháiste agus Fhothbháiste (Shared vs. Dedicated Hosting) {#architecture-considerations}
 
 Nóta, níl aon chuid de hosting providers éasca leat, agus tá cumhachtach na hiontaí ardchúrsa. Is é an t-amach ar fáil do chuid Ultimate Multisite ag bheith ag cur isteach ag bhfostálaí cinnte ar an amach.
 
@@ -191,7 +191,7 @@ Tá Ultimate Multisite ag cur iarracht le cumhacht na hiontaí ardchúrsa agus t
 
 Leat an liosta d'fhéanteach agus an cur chuimhneacháin de bhfostálaí chun cinn ar chuid, leagan na siti seo a bheith ag iarraidh a chomhcheangail leis an t-amach, leagan na siti SEO agus bounce rates ard, is é an t-amach a chur ar fáil.
 
-#### Cuidis Fhuinnimh
+#### Cuidis Fhuinnimh {#shared-vs-dedicated-hosting}
 
 Níl Ultimate Multisite ag cur isteach ag cur iarracht, ach tá sé ag cur isteach go maith. Mar sin féin, níl sé ag cur isteach mar mhaith mar an ardán a bhíonn ag cur isteach agus is féidir leis cur isteach chomharthaí atá ar fáil ag cur isteach.
 
@@ -207,7 +207,7 @@ Is féidir leat an t-aonach seo a chur i bhfeic ag cur isteach ar chuid an serve
 
 Mar sin féin, úsáideann méidí níos mó deatachais netwrí (network administrators) soluoliaí caching front-end agus cainneadh curte (CDN) chun na ríaghlaim áitine a fáilte. Tá an t-aonach seo ag fáilte na ríaghlaim seo agus na fáilí a chur ar fáil prima an server a bheith ag teacht ar aghaidh, rud é a chiallaíonn go bhfuil roinnt réimhse a chur in áit chun cur isteach, tá sé ag déanamh cinnte de lagairte, tá sé ag cur isteach SSL certificates agus meicí séurtiú.
 
-#### Backups
+#### Backups {#performance-considerations}
 
 Is féidir leat a gnuanc an 50 duine ar chuid ar fáil ar backups agus a fháil 50 cheangail éifeachtaithe ar strategaí backups. An caip ag cur isteach, ag teacht ar aghaidh.
 
@@ -217,7 +217,7 @@ Ar fáil anseo, leat a bheith ag cur chuimhneachán (backup) mar cur chuimhneach
 
 Le chéile mar ábhar seo, beidh an t-áirítear a bheith ag cur chuimhneacháin agus conas a bheith go maith paraísearáin (environment) ar fáil ag cur chuimhneacháin ag díriú ar do chuid riachtanais agus ar chuid a bheith ag an bhfírinne cur chuimhneachán a bheith ag tairiscint leis sin. Mar sin féin, i ardán is dearmad go leat, bi an oileúin seo a chur chun cinn mar options a bhíonn ag cur chuimhneacháin ar chuid dearmad.
 
-#### Snapshots (Cur Chuimhneacháin)
+#### Snapshots (Cur Chuimhneacháin) {#backups}
 
 Is é snapshots na "silver bullets" do cur chuimhneacháin mar séanacha, mar is féidir iad a bheith go leata, gan fáil an-táthas, agus 'cén fáth a bhíonn siad ag eoladh' (just work). Mar sin féin, níl é ag iarraidh cur chuid cúram ó do chuid a bheith ag cur chuimhneachán, agus is é seo ag cur fáil ar VPS (Virtual Private Server) nó chuid eile. Tá cur fáil beagán ag cur fáil leat dearmad agus ag cur fáil go háirithe má tá VPS nó chuid eile agat. Tá cur fáil caillte a chur leis an t-áirítear a bheith ag cur chuimhneacháin ar chuid dearmad, gan aon cheannas nó cur fáil leat. Tá cur fáil beagán ag cur fáil leat dearmad agus ag cur fáil go háirithe má tá VPS nó chuid eile agat.
 
@@ -227,7 +227,7 @@ Agus an tairbheintí tradionálacha a thugann cur isteach ar na fáil agus ar na
 
 Leat éigin is féidir leis an gcuid costais a chomhcheangail le cur fáil (hosting provider), ach is é seo spás an t-amach ar an gort.
 
-#### Scripts Eile a Bhfáiste
+#### Scripts Eile a Bhfáiste {#snapshots}
 
 Tá rud éigin ag cur isteach de script eile agus de soluinaí eile chun WordPress agus MySQL resources a cur fáil, agus beidh sinaithe go maith le Ultimate Multisite mar plugin WordPress a úsáideann an fáil féin agus an databasa. Mar sin, solas a chur ar fáil na site-aiche ag cur fáil ag cur isteach na raonachtachtaí de Ultimate Multisite.
 
@@ -235,7 +235,7 @@ Níl aon script a bheith níos fearr ná eile a chur ar fáil, ach is é an ard�
 
 Is féidir a bheith ag cur isteach na script seo, ach is é an chéad a bheith a bheith ar an gcaidreamh, a bheidh ag cur isteach leat an chuid féin ag cur isteach na raonachtachtaí agus an fhaoladh a bhaint as an t-snapshot.
 
-#### Plugins
+#### Plugins {#external-scripts}
 
 Níl aon rud éigin i WordPress a bheith níl féidir a chur ar fáil le plugin, agus má níl an t-amach le cur fáil script eile duit, is féidir leis an plugin a bheith an ardánú is fearr.
 
@@ -243,7 +243,7 @@ Nuair le caillteada pluginí, mar a bhfáid an t-amhasgartha agus na feicíocht,
 
 Nuair a bhféadta do plugin, cuir go léir a bheith ag fáil ar multisite aware. Mar é an t-amhasgartha a bheith ag iarraidh, traonadh téacs (load) tạmlaidh leat a bheith ag fáil ar an server go dtí an chéad a bhaint sonraí a deánta.
 
-#### Domain agus SSL
+#### Domain agus SSL {#plugins}
 
 Tá go leimne a dhéanamh ar na námha domaina i multisite _subdomain_ mode. Is é soluinn chomh shaoilte do chuid admin network administrators a bheith ag úsáid ar an t-amhasgartha DNS wildcard entries.
 
@@ -265,7 +265,7 @@ Do ardán, le cabhrúcháin Cloudflare é oiriún ró-chiontúil. Ba cheart an c
 
 Anseo anois, caithfidh tú go leor soluina eile a chomhfaidh tú, is é sin a bhfuil an Ultimate Multisite ag cur isteach liosta de Solúin Comhghníomhaithe (Compatible Providers). Is é sin mar an t-aistriú DNS agus SSL leatúint eolaíocht fada. Mar sin féin, le curteáil an Ultimate Multisite le na soláthanna seo, tá an chuid ardánais go léir méadú an teachtaireacht agus is é sin ag cur isteach an t-aistriú.
 
-#### Plugins
+#### Plugins {#domain-and-ssl-1}
 
 Is é an t-aistriú go leor go bhfuil tú ag iarraidh plugin eile a chur ar fáil do do chustaiméirí nó siti. An bhfuil gach plugin ag eolais le WordPress Multisite agus Ultimate Multisite? Tá sé ag déanamh cinnte.
 

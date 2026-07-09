@@ -3,11 +3,11 @@ title: Referans Anviwònman
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referans Settings
+# Referans Settings {#settings-reference}
 
 Paj sa a swiv settings ki afekte administrasyon chak jou ak chanjman resan nan konpòtman nan Ultimate Multisite.
 
-## Lòt Opsyon
+## Lòt Opsyon {#other-options}
 
 Zòn **Lòt Opsyon** an parèt anba **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Zòn **Lòt Opsyon** an parèt anba **Ultimate Multisite > Settings > Login & Re
 |---|---|
 | **Aktive Jumper** | Montre zouti navigasyon rapid Jumper nan zòn admin nan. Sèvi avè l pou ale dirèkteman nan ekran Ultimate Multisite, objè rezo yo, ak destinasyon admin ki sipòte yo. Dezaktive l si ou pa vle rakousi sa a vizib. |
 
-## Rapò erè ak telemetry
+## Rapò erè ak telemetry {#error-reporting-and-telemetry}
 
 Ansyen setting opt-in pou rapò erè a te retire nan paj settings la. Telemetry anonim dezaktive epi pa gen okenn bouton UI pou aktive li.
 
 Si ou kenbe runbooks entèn oswa kaptire ekran pou paj settings la, retire referans ak ansyen field opt-in pou rapò erè a pou administratè yo pa chèche yon setting ki pa la ankò.
 
-## Settings Import/Export
+## Settings Import/Export {#importexport-settings}
 
 Onglè settings **Import/Export** la dekri ki settings li kontwole epi li lyen dirèkteman ak **Ultimate Multisite > Site Export** pou achiv sit ak rezo. Sèvi ak onglè settings la pou konfigirasyon import/export, sèvi ak **Tools > Export & Import** pou workflow ekspòtasyon/enpòtasyon yon sèl sit la, epi sèvi ak zouti Site Export la lè ou bezwen yon achiv Network Export konplè.
 
-## Avètisman balans Domain Seller HostAfrica
+## Avètisman balans Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Lè addon Domain Seller la konekte ak HostAfrica, administratè rezo yo kounye a wè yon avètisman balans ba yo ka fèmen lè balans account revandè a twò ba pou pwosesis enskripsyon oswa renouvèlman domèn fèt seryezman.
 
 Trete avi sa a kòm yon avètisman operasyonèl: ajoute lajan sou balans revandè HostAfrica a anvan ou aksepte plis enskripsyon domèn peye, apre sa retounen nan settings Domain Seller yo oswa ekran siveyans domèn nan pou konfime enskripsyon ak renouvèlman yo ka kontinye nòmalman.
 
-## Settings konektè founisè AI
+## Settings konektè founisè AI {#ai-provider-connector-settings}
 
 Settings konektè founisè AI yo kounye a ekspoze sèlman pisin account OAuth ki sipòte yo:
 

@@ -3,7 +3,7 @@ title: GoCardless Tantaran'ny fanovana
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Tantaran'ny fanovana GoCardless
+# Tantaran'ny fanovana GoCardless {#gocardless-changelog}
 
 Dikan-teny: 1.0.3 - Navoaka tamin'ny 2026-05-05
 * Fanamboarana: Voafafa ankehitriny ireo sites miandry tavela rehefa foanana ny membership GoCardless raha mbola ao amin'ny toe-javatra miandry na on-hold

@@ -4,25 +4,25 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Amaxwebhu e-Ultimate Multisite
+# Amaxwebhu e-Ultimate Multisite {#ultimate-multisite-documentation}
 
 Wamkelekile kumaxwebhu e-Ultimate Multisite. Ultimate Multisite iguqula WordPress Multisite ibe liqonga elipheleleyo leWebhusayithi njengeNkonzo (WaaS).
 
-## Amacandelo Amaxwebhu
+## Amacandelo Amaxwebhu {#documentation-sections}
 
-### [Isikhokelo soMsebenzisi](/user-guide/getting-started/ultimate-multisite-101)
+### [Isikhokelo soMsebenzisi](/user-guide/getting-started/ultimate-multisite-101) {#user-guide}
 
 Yonke into oyidingayo ukuseta, ukuqwalasela, nokulawula iqonga lakho le-WaaS. Iquka ukufakela, amasango entlawulo, ukudibanisa i-domain, ulawulo lwabathengi, nokunye.
 
-### [Amaxwebhu abaPhuhlisi](/developer/hooks)
+### [Amaxwebhu abaPhuhlisi](/developer/hooks) {#developer-documentation}
 
 Isalathiso sobugcisa sabaphuhlisi abakha phezu kwe-Ultimate Multisite. Siquka isalathiso see-hooks, amaxwebhu e-REST API, kunye nezikhokelo zophuhliso lwezongezo.
 
-### [Izongezo](/addons)
+### [Izongezo](/addons) {#addons}
 
 Amaxwebhu ezongezo ezihlawulelwayo ezandisa Ultimate Multisite ngeempawu ezongezelelweyo ezifana nokudityaniswa kwe-WooCommerce, uhlalutyo, ukuthengiswa kwe-domain, nokunye.
 
-## Ukufumana Uncedo
+## Ukufumana Uncedo {#getting-help}
 
 - [Iingxoxo ze-GitHub](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) -- Buza imibuzo kwaye wabelane ngezimvo
 - [Imiba ye-GitHub](https://github.com/Ultimate-Multisite/ultimate-multisite/issues) -- Xela iimpazamo

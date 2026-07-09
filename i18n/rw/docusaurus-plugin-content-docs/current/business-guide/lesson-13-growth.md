@@ -3,19 +3,19 @@ title: 'Isomo rya 13: Kwaguka'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Isomo rya 13: Kwagura Ubushobozi
+# Isomo rya 13: Kwagura Ubushobozi {#lesson-13-scaling-up}
 
 Ufite urubuga rukora rufite abakiriya bishyura. Iri somo risobanura uko wakura ukava ku bikorwa bito ukagera ku bucuruzi burambye -- kwagura ibikorwa remezo, gukora ibikorwa mu buryo bwikora, no kongera amafaranga ava kuri buri mukiriya.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 FitSite iri gukora, abakiriya bari kwiyandikisha, kandi uri gukurikirana ibikorwa bya buri munsi. Ubu twibanda ku gukura.
 
-## Menya Imibare Yawe
+## Menya Imibare Yawe {#know-your-numbers}
 
 Mbere yo kwagura, banza usobanukirwe aho uhagaze:
 
-### Ibipimo by'Ingenzi
+### Ibipimo by'Ingenzi {#key-metrics}
 
 - **MRR (Amafaranga yinjira buri kwezi asubiramo)**: Amafaranga yose yinjira buri kwezi ava ku kwiyandikisha
 - **Umubare w'abakiriya**: Abiyandikishije bose bakora
@@ -24,7 +24,7 @@ Mbere yo kwagura, banza usobanukirwe aho uhagaze:
 - **LTV (Agaciro k'umukiriya mu gihe cyose amara)**: Impuzandengo y'amafaranga ava ku mukiriya mu gihe cyose amara yiyandikishije
 - **CAC (Ikiguzi cyo kubona umukiriya)**: Impuzandengo y'ikiguzi cyo kubona umukiriya umwe
 
-### Urugero: FitSite ifite Abakiriya 50
+### Urugero: FitSite ifite Abakiriya 50 {#example-fitsite-at-50-customers}
 
 | Igipimo | Agaciro |
 |--------|-------|
@@ -36,9 +36,9 @@ Mbere yo kwagura, banza usobanukirwe aho uhagaze:
 
 Iyi mibare ikubwira icyo ugomba kwibandaho. Guhagarika biri hejuru? Kosora kugumana abakiriya. ARPU iri hasi? Shyira imbaraga mu kuzamura plan. CAC iri hejuru? Tunganya imiyoboro yo kubona abakiriya.
 
-## Kwagura Ibikorwa Remezo
+## Kwagura Ibikorwa Remezo {#scaling-infrastructure}
 
-### Igihe cyo Kwagura
+### Igihe cyo Kwagura {#when-to-scale}
 
 Gura ubushobozi bwa hosting igihe:
 
@@ -47,7 +47,7 @@ Gura ubushobozi bwa hosting igihe:
 - Uri kwegera imbuga zikora 100+
 - Ibibazo by'abakiriya ku muvuduko byiyongera
 
-### Uko Wakwagura
+### Uko Wakwagura {#how-to-scale}
 
 - **Kwagura mu bunini**: Kuzamura ukajya kuri server nini kurushaho (CPU na RAM byinshi)
 - **Inzego za caching**: Ongeramo Redis/Memcached kuri object caching, page caching ku bikubiyemo bidahinduka
@@ -55,7 +55,7 @@ Gura ubushobozi bwa hosting igihe:
 - **Gutunganya database**: Uko network ikura, database queries zigenda zitinda. Tunganya tables, ongeramo indexes, tekereza kuri server ya database yihariye.
 - **Gutandukanya inshingano**: Himurira ububiko bwa media kuri object storage (ihuye na S3), ohereza email kuri serivisi ya email y'ubucuruzi
 
-### Kwimura Hosting
+### Kwimura Hosting {#hosting-migration}
 
 Niba host ukoresha ubu itagishoboye kwaguka, tegura kwimuka:
 
@@ -65,11 +65,11 @@ Niba host ukoresha ubu itagishoboye kwaguka, tegura kwimuka:
 4. Vugurura DNS mbere y'igihe ukoresheje TTL nto
 5. Menya neza ko byose bikora nyuma yo kwimuka
 
-## Gukora Ibikorwa mu Buryo Bwikora
+## Gukora Ibikorwa mu Buryo Bwikora {#automating-operations}
 
 Uko ukura, ibikorwa bikorerwa intoki biba inzitizi. Kora mu buryo bwikora ibyo ushoboye:
 
-### Webhooks na Zapier
+### Webhooks na Zapier {#webhooks-and-zapier}
 
 Koresha [Webhooks](/user-guide/integrations/webhooks) cyangwa [Zapier](/user-guide/integrations/zapier) kugira ngo ukore mu buryo bwikora:
 
@@ -78,7 +78,7 @@ Koresha [Webhooks](/user-guide/integrations/webhooks) cyangwa [Zapier](/user-gui
 - **Kunanirwa kwishyura** → kumenyesha mu gikoresho cyawe cyo kugenzura
 - **Kuzamura plan** → email yo kubashimira irimo umurongo ngenderwaho w'ibiranga bishya
 
-### Email Zikora mu Buryo Bwikora
+### Email Zikora mu Buryo Bwikora {#email-automation}
 
 Va kuri email zoherezwa intoki ujye ku ruhererekane rukora mu buryo bwikora:
 
@@ -87,30 +87,30 @@ Va kuri email zoherezwa intoki ujye ku ruhererekane rukora mu buryo bwikora:
 - Ubutumwa busaba kuzamura plan igihe abakiriya begereye imipaka ya plan
 - Kwibutsa kuvugurura ku biyandikishije buri mwaka
 
-### Gukora Support mu Buryo Bwikora
+### Gukora Support mu Buryo Bwikora {#support-automation}
 
 - **Ibisubizo biteguye** ku bibazo bikunze kubazwa
 - **Ibisubizo byikora** byemeza ko tickets za support zakiriwe
 - **Inama ziva muri knowledge base** igihe abakiriya bohereje tickets zihuye n'inyandiko zisanzwe
 
-## Kongera Amafaranga Yinjira
+## Kongera Amafaranga Yinjira {#increasing-revenue}
 
 Gukura si ukugira abakiriya benshi gusa. Ni no kongera amafaranga ava kuri buri mukiriya.
 
-### Kugurisha Ibindi ku Bakiriya Basanzwe
+### Kugurisha Ibindi ku Bakiriya Basanzwe {#upselling-existing-customers}
 
 - **Kuzamura plan**: Kampanye zigamije abakiriya ba Starter zibereka ibiranga Growth/Pro
 - **Ibyongerwaho ku oda**: Menyekanisha products z'inyongera ku bakiriya basanzwe ukoresheje email
 - **Guhindura ku mwaka**: Ha abakiriya bishyura buri kwezi igabanyirizwa kugira ngo bimukire ku kwishyura buri mwaka
 
-### Inkomoko Nshya z'Amafaranga
+### Inkomoko Nshya z'Amafaranga {#new-revenue-streams}
 
 - **Gushyiriraho umukiriya byose**: Saba igiciro kiri hejuru kugira ngo ushyireho kandi utunganye site y'umukiriya ku bwe
 - **Serivisi za design zihariye**: Tanga akazi ka design gakorewe umukiriya ku buryo bwihariye hejuru ya template
 - **Amahugurwa**: Ubugendane bwishyurwa umuntu ku wundi ku bakiriya bashaka ubufasha bwa hafi
 - **Plugins za premium**: Tanga plugins za premium zihariye ku niche nk'inyongera zishyurwa (urugero, widget yo kubooking amasomo ya fitness)
 
-### Kuzamura Ibiciro
+### Kuzamura Ibiciro {#raising-prices}
 
 Uko platform yawe ikura kandi ikongera agaciro:
 
@@ -118,7 +118,7 @@ Uko platform yawe ikura kandi ikongera agaciro:
 - Zamura ibiciro ku biyandikisha bashya
 - Sobanura izamuka ukoresheje ibiranga bishya n'ibyagezweho
 
-## Kubaka Ikipe
+## Kubaka Ikipe {#building-a-team}
 
 Hari igihe udashobora gukora byose wenyine. Abakozi ba mbere bakunze gukenerwa:
 
@@ -128,7 +128,7 @@ Hari igihe udashobora gukora byose wenyine. Abakozi ba mbere bakunze gukenerwa:
 
 Ntukeneye abakozi bahoraho. Contractors na freelancers bakora neza ku bucuruzi bwa platform.
 
-## Intego z'Iterambere
+## Intego z'Iterambere {#growth-milestones}
 
 | Intego | MRR igereranyijwe | Icyo kwibandaho |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Ntukeneye abakozi bahoraho. Contractors na freelancers bakora neza ku bucuruzi b
 | abakiriya 250-500 | $25,000-$50,000 | Kubaka ikipe, inkomoko nshya z'amafaranga, ibiranga premium |
 | abakiriya 500+ | $50,000+ | Gukura kwa platform, niches zegeranye, amahirwe yo kugurisha ubucuruzi |
 
-## Ibyo Twubatse muri Iri Somo
+## Ibyo Twubatse muri Iri Somo {#what-we-built-this-lesson}
 
 - **Uburyo bwo gupima** kugira ngo usobanukirwe ubuzima bw'ubucuruzi
 - **Plan yo kwagura ibikorwa remezo** yo kuva ku mbuga za mirongo ukagera ku magana

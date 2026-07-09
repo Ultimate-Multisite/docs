@@ -3,13 +3,13 @@ title: Instalando o Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalando o Ultimate Multisite
+# Instalando o Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Este tutorial assume que você já tem o WordPress Multisite instalado e configurado. Para aprender como, consulte [este tutorial](https://www.wpbeginner.com/glossary/multisite/) do WP Beginner.
 :::
 
-## Instalando o Plugin
+## Instalando o Plugin {#installing-the-plugin}
 
 O Ultimate Multisite está disponível gratuitamente em [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Após a ativação, você será redirecionado automaticamente para o Assistente 
 
 ![Plugin ativado e redirecionado para o assistente](/img/installation/plugin-activated.png)
 
-## Assistente de Configuração
+## Assistente de Configuração {#setup-wizard}
 
 O Assistente de Configuração irá guiá-lo na configuração do Ultimate Multisite em cerca de 10 minutos.
 
-### Bem-vindo
+### Bem-vindo {#welcome}
 
 Clique em **Começar** para iniciar.
 
 ![Tela de boas-vindas do Assistente de Configuração](/img/installation/wizard-welcome.png)
 
-### Verificações Pré-Instalação
+### Verificações Pré-Instalação {#pre-install-checks}
 
 Esta etapa verifica as informações do seu sistema e a instalação do WordPress para garantir que ela atenda aos requisitos do Ultimate Multisite. Se tudo estiver correto, clique em **Ir para a Próxima Etapa**.
 
@@ -51,31 +51,31 @@ Se o Ultimate Multisite foi instalado, mas **ainda não foi ativado na rede** �
 Clicar em **Ativar na Rede** ativa o plugin em toda a sua rede multisite automaticamente. Após a ativação, o assistente continua normalmente para a etapa de instalação. Você não precisa sair do assistente para corrigir o estado de ativação.
 :::
 
-### Instalação
+### Instalação {#installation}
 
 O instalador criará as tabelas de banco de dados necessárias e instalará o arquivo `sunrise.php` que o Ultimate Multisite precisa para funcionar. Clique em **Instalar** para prosseguir.
 
 ![Etapa de instalação mostrando as tabelas do banco de dados e o sunrise.php](/img/installation/wizard-installation.png)
 
-### Sua Empresa
+### Sua Empresa {#your-company}
 
 Preencha as informações da sua empresa e defina a moeda padrão. Essas informações serão usadas em toda a sua plataforma WaaS. Clique em **Continuar** quando terminar.
 
 ![Etapa de configuração "Sua Empresa"](/img/installation/wizard-your-company.png)
 
-### Conteúdo Padrão
+### Conteúdo Padrão {#default-content}
 
 Esta etapa permite instalar modelos predefinidos, produtos e outros conteúdos iniciais. Esta é uma ótima maneira de se familiarizar com os recursos do Ultimate Multisite. Clique em **Instalar** para adicionar o conteúdo padrão ou ignore esta etapa se preferir começar do zero.
 
 ![Etapa de instalação de conteúdo padrão](/img/installation/wizard-default-content.png)
 
-### Plugins Recomendados
+### Plugins Recomendados {#recommended-plugins}
 
 Opcionalmente, instale plugins complementares recomendados. Clique em **Instalar** para adicioná-los ou pule para continuar.
 
 ![Etapa de plugins recomendados](/img/installation/wizard-recommended-plugins.png)
 
-### Pronto!
+### Pronto! {#ready}
 
 É isso! Sua instalação do Ultimate Multisite está completa. Agora você pode começar a construir sua plataforma Website as a Service a partir do **Painel de Administração da Rede**.
 

@@ -3,7 +3,7 @@ title: Theme PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# ការកែសម្រួល Admin Panel របស់អ្នកជាមួយ PRO Theme
+# ការកែសម្រួល Admin Panel របស់អ្នកជាមួយ PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 ពេលខ្លះនៅពេលធ្វើការងារសម្រាប់អតិថិជន យើងត្រូវការផ្តល់បទពិសោធន៍ផ្ទាល់ខ្លួន (custom experience) នៅក្នុងផ្ទាំងគ្រប់គ្រង (admin dashboard) របស់ WordPress។ ប្រសិនបើអ្នកកំពុងស្វែងរករូបរាង និងអារម្មណ៍កាន់តែប្រកបវិជ្ជាជីវៈ PRO Theme អាចជួយអ្នកបាន។
 

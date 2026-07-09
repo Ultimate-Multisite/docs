@@ -3,7 +3,7 @@ title: Aufrufen der Account-Seite
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Wie kann ich zum ersten Mal auf meine Account-Seite zugreifen?
+# Wie kann ich zum ersten Mal auf meine Account-Seite zugreifen? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Willkommen bei Ultimate Multisite!
 

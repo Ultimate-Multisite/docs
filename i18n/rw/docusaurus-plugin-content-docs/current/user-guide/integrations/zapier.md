@@ -3,7 +3,7 @@ title: Urugero rwa Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Gutang Ultimate Multisite na Zapier
+# Gutang Ultimate Multisite na Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Mu gihe mu ndaga kuri article runaka, twabwiye ku [Webhooks](webhooks.md) kandi uko bisobanura uburyo bwo gukoresha uburyo bwa webhooks kugira ngo utangire ubushobozi n'ibindi by'umuryango (3rd party applications).
 
@@ -15,7 +15,7 @@ Ushobora gukora **Triggers** (Icyemezo) cyangwa uburyo bwo gukora ibyo (Actions)
 
 Icyo gikora ariko hari uburyo bwo gukora iki kuko **Ultimate Multisite Zapier's triggers** n'actions zikoreshwa uburyo bwa [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Uburyo bwo kwiga
+## Uburyo bwo kwiga {#how-to-start}
 
 Gukoresha uburyo bwo gushyira ngo utangire ni ukuri:
 1. Gukoresha Ultimate Multisite mu list ya apps ya Zapier. Cyangwa, ushobora gukora [iki link](https://zapier.com/apps/wp-ultimo/integrations).
@@ -50,7 +50,7 @@ Ku field ya URL, gukoresha URL yose ya network yawe, ukwibanda uburyo bwo kumeny
 
 Gukora **Yes, Continue** kugira ngo utangire mu gihe cy'ibindi byo. Niba byose bishobora gukora, uza kubarwaho n'account yawe yashyiramo! Gukora **Continue** kugira ngo utageze ku gihe cy'ubushobozi runaka.
 
-## Uburyo bwo gukora Trigger shya hundo
+## Uburyo bwo gukora Trigger shya hundo {#how-to-create-a-new-trigger}
 
 Ubu n'uko account yawe yashyiramo, uza kumenya ibyo byose byashoboye kubaho. Turemeze **payment_received** event ku gihe cy'ibindi byo mu tutorial iyi.
 
@@ -66,7 +66,7 @@ Mu gihe cy'ibyo, Zapier izakora test kugira ngo yisobanure niba uwezi wakozeho g
 
 Mu ntangiramo mu tutorial yawe, uyu test **wakoze neza n'ubwumvikane** kandi wamutera ibyo byo mu payload. Icyo cyo mu payload cyo mu mwanya cyo gukora ibikorwa cyangwa "actions" cyo mu gihe cyo gukora ibikorwa cyangwa "actions". Umu trigger wawe ugiye kuboneka kandi wumutse kugabanyiriza n'ibindi by'ubwoko.
 
-## Uburyo bwo gukora Actions (Actions)
+## Uburyo bwo gukora Actions (Actions) {#how-to-create-actions}
 
 Actions zishobora gukoresha amakuru y'ibindi triggers kugira ngo zikoreshe ibyo mu rwego rwawe kugira ngo zikoreshe ibintu bishya mu network yawe.
 
@@ -78,7 +78,7 @@ Mu gihe cy'ibindi, uza gukora authentication yawe, nk'uko twagiranye mu **How to
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Gukora Action (Setting up the Action)
+### Gukora Action (Setting up the Action) {#setting-up-the-action}
 
 Iki ni **igice cy'ingenzi cy'action** kandi hano ibintu byiza bitandukanye. Icyo cyo mbere uza gushyira ni **Item**. Item ni **model y'amakuru** yawe mu network, nk'uko bishobora kuba ari **Customers (Abakoresha), Payments (Icyemezo), Sites (Abaraka), Emails**, n'ibindi.
 

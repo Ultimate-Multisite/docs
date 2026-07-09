@@ -3,15 +3,15 @@ title: Ustvari logotip SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Ustvari SVG logotipa
+# Ustvari SVG logotipa {#generate-logo-svg}
 
 Zmožnost **Ustvari SVG logotipa** omogoča Theme Builderju, da ustvari in vgradi prilagojene SVG-je logotipov neposredno v vaše WordPress spletno mesto z avtomatsko sanitizacijo, varno za imenske prostore.
 
-## Pregled
+## Pregled {#overview}
 
 Ta zmožnost ustvari skalabilno vektorsko grafiko (SVG) logotipov na podlagi usmeritve blagovne znamke vašega spletnega mesta in oblikovalskih preferenc. Ustvarjeni SVG-ji se avtomatsko sanitizirajo, da so varni za uporabo v WordPressu, hkrati pa ohranijo vizualno celovitost.
 
-## Parametri
+## Parametri {#parameters}
 
 | Parameter | Vrsta | Obvezno | Opis |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Ta zmožnost ustvari skalabilno vektorsko grafiko (SVG) logotipov na podlagi usm
 | `height` | number | Ne | Višina SVG v slikovnih pikah (privzeto: 200) |
 | `include_text` | boolean | Ne | Ali naj se ime spletnega mesta vključi kot besedilo v logotip (privzeto: true) |
 
-## Oblika izhoda
+## Oblika izhoda {#output-format}
 
 Zmožnost vrne niz SVG z naslednjo strukturo:
 
@@ -36,7 +36,7 @@ Zmožnost vrne niz SVG z naslednjo strukturo:
 }
 ```
 
-## Vedenje sanitizacije SVG
+## Vedenje sanitizacije SVG {#svg-sanitisation-behaviour}
 
 Ustvarjeni SVG-ji so podvrženi avtomatski sanitizaciji, varni za imenske prostore, da:
 
@@ -48,7 +48,7 @@ Ustvarjeni SVG-ji so podvrženi avtomatski sanitizaciji, varni za imenske prosto
 
 To zagotavlja, da je SVG varen za neposredno vgradnjo v WordPress brez potrebe po dodatni sanitizaciji.
 
-## Primer uporabe
+## Primer uporabe {#usage-example}
 
 **Poziv:**
 ```
@@ -62,7 +62,7 @@ Zmožnost ustvari SVG logotip, ki:
 - Sledi sodobnim oblikovalskim načelom
 - Je avtomatsko sanitiziran in pripravljen za uporabo
 
-## Integracija s Theme Builder
+## Integracija s Theme Builder {#integration-with-theme-builder}
 
 Pri uporabi izbire oblikovalske usmeritve v Theme Builderju zmožnost Ustvari SVG logotipa:
 
@@ -71,21 +71,21 @@ Pri uporabi izbire oblikovalske usmeritve v Theme Builderju zmožnost Ustvari SV
 3. Avtomatsko vgradi logotip v glavo/območje blagovne znamke vašega spletnega mesta
 4. Shrani SVG kot prilagojen logotip v WordPress predstavnost
 
-## Najboljše prakse
+## Najboljše prakse {#best-practices}
 
 - **Podajte jasne slogovne preference** — opišite oblikovalski slog, ki ga želite (sodoben, klasičen, igriv itd.)
 - **Določite barve** — vključite barve svoje blagovne znamke za doslednost
 - **Preizkusite upodabljanje** — preverite, ali se logotip pravilno prikazuje pri različnih velikostih zaslona
 - **Dodatno prilagodite** — uporabite WordPressova orodja za prilagajanje logotipa, da prilagodite velikost in postavitev
 
-## Omejitve
+## Omejitve {#limitations}
 
 - SVG logotipi so ustvarjeni kot statična grafika (ne animirana)
 - Kompleksni logotipi z veliko elementi lahko zahtevajo ročno izpopolnitev
 - Pisave po meri niso podprte; besedilo uporablja sistemske pisave
 - Zelo velike ali zelo majhne dimenzije lahko vplivajo na kakovost
 
-## Sorodne zmožnosti
+## Sorodne zmožnosti {#related-abilities}
 
 - [Preveri kontrast palete](./validate-palette-contrast.md) — preveri barvni kontrast za dostopnost
 - [Ustvari meni](./create-menu.md) — ustvari navigacijske menije za vaše spletno mesto

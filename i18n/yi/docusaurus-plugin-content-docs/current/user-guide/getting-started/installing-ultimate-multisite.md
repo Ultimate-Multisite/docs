@@ -3,13 +3,13 @@ title: אינסטאַלירן Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# אינסטאַלירן Ultimate Multisite
+# אינסטאַלירן Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 דער טוטאָריאַל נעמט אָן אַז איר האָט שוין WordPress Multisite אינסטאַלירט און קאָנפֿיגורירט. כּדי זיך צו לערנען ווי אַזוי, קוקט אָן [דעם טוטאָריאַל](https://www.wpbeginner.com/glossary/multisite/) פֿון WP Beginner.
 :::
 
-## אינסטאַלירן דעם Plugin
+## אינסטאַלירן דעם Plugin {#installing-the-plugin}
 
 Ultimate Multisite איז בנימצא אומזיסט אויף [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Ultimate Multisite איז בנימצא אומזיסט אויף [WordPress.org](h
 
 ![Plugin אַקטיווירט און ווײַטערגעפֿירט צום וויזערד](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Setup Wizard {#setup-wizard}
 
 דער Setup Wizard וועט אייך דורכפֿירן דורך קאָנפֿיגורירן Ultimate Multisite אין בערך 10 מינוט.
 
-### ברוכים הבאים
+### ברוכים הבאים {#welcome}
 
 גיט אַ קליק אויף **Get Started** כּדי אָנהייבן.
 
 ![Setup Wizard באַגריסונג־עקראן](/img/installation/wizard-welcome.png)
 
-### פֿאַר־אינסטאַלירונג קאָנטראָלן
+### פֿאַר־אינסטאַלירונג קאָנטראָלן {#pre-install-checks}
 
 דער שריט קאָנטראָלירט אייער סיסטעם־אינפֿאָרמאַציע און WordPress אינסטאַלירונג כּדי זיכער מאַכן אַז זי דערפֿילט די פֿאָדערונגען פֿון Ultimate Multisite. אויב אַלץ זעט אויס גוט, גיט אַ קליק אויף **Go to the Next Step**.
 
@@ -51,31 +51,31 @@ Ultimate Multisite איז בנימצא אומזיסט אויף [WordPress.org](h
 קליקן **Network Activate** אַקטיווירט אויטאָמאַטיש דעם plugin איבער אייער גאַנצן multisite נעץ־ווערק. אַמאָל אַקטיווירט, גייט דער וויזערד ווײַטער נאָרמאַל צום אינסטאַלירונג־שריט. איר דאַרפֿט נישט פֿאַרלאָזן דעם וויזערד כּדי צו פֿאַרריכטן דעם אַקטיווירונג־צושטאַנד.
 :::
 
-### אינסטאַלירונג
+### אינסטאַלירונג {#installation}
 
 דער אינסטאַלירער וועט שאַפֿן די נויטיקע דאַטאַבאַזע־טאַבעלעס און אינסטאַלירן די `sunrise.php` טעקע וואָס Ultimate Multisite דאַרף כּדי צו פֿונקציאָנירן. גיט אַ קליק אויף **Install** כּדי ווײַטערצוגיין.
 
 ![אינסטאַלירונג־שריט וואָס ווײַזט דאַטאַבאַזע־טאַבעלעס און sunrise.php](/img/installation/wizard-installation.png)
 
-### אייער פֿירמע
+### אייער פֿירמע {#your-company}
 
 פֿילט אַרײַן אייער פֿירמע־אינפֿאָרמאַציע און שטעלט אײַן אייער פֿעליקייט־וואַלוטע. די אינפֿאָרמאַציע וועט גענוצט ווערן איבער אייער WaaS פּלאַטפֿאָרמע. גיט אַ קליק אויף **Continue** ווען איר זײַט פֿאַרטיק.
 
 ![אייער פֿירמע קאָנפֿיגוראַציע־שריט](/img/installation/wizard-your-company.png)
 
-### פֿעליקייט־אינהאַלט
+### פֿעליקייט־אינהאַלט {#default-content}
 
 דער שריט לאָזט אייך אינסטאַלירן פֿאָרויס־דעפֿינירטע שאַבלאָנען, פּראָדוקטן, און אַנדער אָנהייב־אינהאַלט. דאָס איז אַ גרויסער אופֿן זיך באַקענען מיט די פֿעיִקייטן פֿון Ultimate Multisite. גיט אַ קליק אויף **Install** כּדי צוצולייגן דעם פֿעליקייט־אינהאַלט, אָדער איבערהיפּט דעם שריט אויב איר ווילט בעסער אָנהייבן פֿון גאָרנישט.
 
 ![פֿעליקייט־אינהאַלט אינסטאַלירונג־שריט](/img/installation/wizard-default-content.png)
 
-### רעקאָמענדירטע Plugins
+### רעקאָמענדירטע Plugins {#recommended-plugins}
 
 אויב איר ווילט, אינסטאַלירט רעקאָמענדירטע באַגלייטער־plugins. גיט אַ קליק אויף **Install** כּדי זיי צוצולייגן, אָדער איבערהיפּט כּדי ווײַטערצוגיין.
 
 ![רעקאָמענדירטע plugins שריט](/img/installation/wizard-recommended-plugins.png)
 
-### גרייט!
+### גרייט! {#ready}
 
 דאָס איז עס! אייער Ultimate Multisite אינסטאַלירונג איז פֿאַרענדיקט. איר קענט איצט אָנהייבן בויען אייער Website as a Service פּלאַטפֿאָרמע פֿון דעם **Network Admin Dashboard**.
 

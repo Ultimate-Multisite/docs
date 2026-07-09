@@ -3,13 +3,13 @@ title: Kukwera Kodesa za Kufunsa
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kukhala Codes (v2)
+# Kukhala Codes (v2) {#creating-discount-codes-v2}
 
 _**CHONGO CHONGO: Izi zikufi ya Ultimate Multisite version 2.x.**_
 
 Na Ultimate Multisite, muli ndi ulemu woshipatsa clients wanu discounts pa subscriptions zanu. Kodi kukhala kwake kukhala chifupi!
 
-## Kukhala na Kulemba/Kupanga Codes (Discount Codes)
+## Kukhala na Kulemba/Kupanga Codes (Discount Codes) {#creating-and-editing-discount-codes}
 
 Kuti upange kapena kukonza code ya discount, ndi lankanso **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Coupon iwo ikuti ndi lisonkhani lanu ndipo, kuchokera ku m'malo imeneyi, muli nd
 
 ###
 
-### Kukhala ndi URL Parameters:
+### Kukhala ndi URL Parameters: {#using-url-parameters}
 
 Ngati mukuwoneza kuti muli ndi kusintha zinthu za kupewa (pricing tables) kapena mukuwoneza ndalama yomwe yenera kwa kupanga udindo wogulitsa (coupon code page) kwa website yanu ndipo mukuwoneza kuti muperekeze coupon code kwa checkout form yanu m'malo, muli ndi ulemu wosonyeza m'URL parameters.
 

@@ -3,9 +3,9 @@ title: Tantaran'ny fanovana ny fampifanarahana votoaty
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Changelog Content Sync
+# Changelog Content Sync {#content-sync-changelog}
 
-### Version 1.1.0 - Navoaka tamin'ny 2025-12-31
+### Version 1.1.0 - Navoaka tamin'ny 2025-12-31 {#version-110---released-on-2025-12-31}
 * Vaovao: Fanohanana ny fampifanarahana ny karazana lahatsoratra rehetra (lahatsoratra, pejy, karazana lahatsoratra namboarina)
 * Vaovao: Fanivanana karazana lahatsoratra amin'ny dingana fisafidianana votoaty
 * Vaovao: Dingana fisafidianana site loharano - ampifanaraho avy amin'izay site rehetra, fa tsy ny site lehibe ihany
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Novaina: Dingana "Select Templates" novaina anarana ho "Select Data"
 * Nohatsaraina: Kaody manokana ho an'ny Elementor izao dia mandeha ho an'ny karazana lahatsoratra elementor_library ihany
 
-### Version 1.0.0 - Navoaka tamin'ny 2025-12-19
+### Version 1.0.0 - Navoaka tamin'ny 2025-12-19 {#version-100---released-on-2025-12-19}
 * Famoahana voalohany
 * Mpitarika dingana maro ho an'ny fisafidianana môdely sy site
 * Fanodinana andiany miaraka amin'ny feedback fandrosoana amin'ny fotoana tena izy

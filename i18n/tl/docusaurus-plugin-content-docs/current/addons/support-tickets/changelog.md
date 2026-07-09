@@ -3,13 +3,13 @@ title: Tala ng Pagbabago ng Mga Ticket ng Suporta
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Tala ng Pagbabago ng Mga Ticket ng Suporta
+# Tala ng Pagbabago ng Mga Ticket ng Suporta {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Pinahusay: Inalis ang direktoryong vendor/ mula sa pagsubaybay ng Git (sakop na ng .gitignore), na nagpapababa sa laki ng repository
 * Pinahusay: Nasubukan hanggang WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Naayos: Tanggapin ang mga null na halaga sa mga nullable na setter ng modelo ng ticket
 * Naayos: Itago ang lahat ng ticket sa mga global na talahanayan sa buong network para sa tamang suporta sa multisite
 * Naayos: Itago ang mga field ng staff at ayusin ang pag-redirect sa blankong pahina sa form ng bagong ticket ng customer
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Pinahusay: Kondisyonal na i-load ang mga frontend asset lamang sa mga pahina ng support ticket
 * Pinahusay: Laktawan ang autoloader ng plugin kapag na-load na ng root autoloader ng Bedrock ang mga dependency
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Idinagdag: Buong functionality sa pagtingin ng ticket para sa admin at frontend
 * Idinagdag: AJAX handler para sa mga pagsusumite ng reply sa ticket
 * Idinagdag: Suporta para sa functionality ng reply sa ticket na may wastong paghawak ng form
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Pinahusay: Estruktura ng database na may wastong query at mga schema class para sa mga tugon at kalakip
 * Pinahusay: Paglipat sa tunay na mga property sa halip na mga attribute para sa mga modelo ng ticket
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Na-update: Pinalitan ang pangalan ng prefix sa ultimate-multisite para sa pagkakapare-pareho
 * Na-update: Standardisasyon ng text domain
 * Naayos: Maliliit na pag-aayos ng bug at mga pagpapahusay
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Paunang release
 * Kumpletong sistema ng pamamahala ng ticket
 * Multi-level na kontrol sa access

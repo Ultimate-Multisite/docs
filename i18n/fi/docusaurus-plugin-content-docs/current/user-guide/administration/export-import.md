@@ -3,17 +3,17 @@ title: Vienti ja tuonti
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Tiedoston vienti ja vienti
+# Tiedoston vienti ja vienti {#export--import}
 
 Ultimate Multisite 2.9.0 tuo uuden yksittäisen sivuston **Export & Import** -työkalun kohtaan **Tools > Export & Import**. Käytä sitä, kun tarvitset yhtä WordPress-sivustoa ZIP-tiedostona pakkaamaan, palauttaaksesi kyseisen ZIP-tiedoston tai siirtää sivustoa yhteensopivissa Ultimate Multisite- ja yksittäisissä WordPress-asennuksissa.
 
-## Tarvittavat oikeudet
+## Tarvittavat oikeudet {#required-permissions}
 
 Sinun on oltava kirjautuneena sisään ylläpitäjänä, jolla on pääsy WordPressin **Tools** -valikkoon siinä sivustossa, jota vienti tai vienti suoritetaan. Multisite-verkossa käytä verkko-yläpitäjän tiliä, kun vienti tai vienti suoritetaan verkko-tason Ultimate Multisite -työkaluista aliasennuksista.
 
 Export ZIP -lataukset tarjotaan tunnistautuneen latauskohteen kautta, joten pidä yllä ylläpitäjän istuntoa, kunnes lataus on valmis, ja älä jaa luotettuja latauslinkkejä julkisesti.
 
-## Sivuston vienti ZIP-tiedostoon
+## Sivuston vienti ZIP-tiedostoon {#exporting-a-site-to-a-zip}
 
 1. Siirry haluamasi sivuston WordPress-adminissa kohtaan **Tools > Export & Import**.
 2. Avaa vientialue ja valitse sivu, jonka haluat pakata.
@@ -23,7 +23,7 @@ Export ZIP -lataukset tarjotaan tunnistautuneen latauskohteen kautta, joten pid�
 
 Pidä ZIP-tiedosto turvallisessa paikassa. Se voi sisältää sivuston sisällön, asetukset, mediatiedostot ja valitut koodiautomaattiset resurssit.
 
-## Mitä vienti sisältää
+## Mitä vienti sisältää {#what-the-export-includes}
 
 Vienti ZIP -tiedosto voi sisältää:
 
@@ -34,7 +34,7 @@ Vienti ZIP -tiedosto voi sisältää:
 
 Tarkka ZIP-tiedosto koko riippuu mediatietojen määrästä, valituista plugin- ja teemojen koosta sekä sivuston tietokantataulujen kokoon.
 
-## Sivuston tuominen ZIP-tiedostona
+## Sivuston tuominen ZIP-tiedostona {#importing-a-site-from-a-zip}
 
 1. Mene kohdesivuston WordPress-sivulla **Tools > Export & Import** -valikkoon.
 2. Avaa tuontialue ja lataa Export & Import -työkalulla luotu ZIP-tiedosto.
@@ -46,7 +46,7 @@ Tarkka ZIP-tiedosto koko riippuu mediatietojen määrästä, valituista plugin- 
 
 Yksittäisessä WordPress-asennuksessa ZIP-tiedoston tuominen korvaa nykyisen sivuston tuotetulla sivustolla. Tee täydellinen varmuuskopio kohdesivustosta ennen aloittamista ja vältä useiden samanaikaisien tuontien aloittamista samalle sivustolle.
 
-## Rajoitukset ja yhteensopivuushuomautuksia
+## Rajoitukset ja yhteensopivuushuomautuksia {#limitations-and-compatibility-notes}
 
 Erittäin suuret lataussuuntaiset kansiot tai media-kirjastot voivat tuottaa suuria ZIP-tiedostoja. Varmista PHP:n latausrajoitukset, suoritusaikarat, tallennustila, muisti ja palvelimen timeout-asetukset ennen suurten sivustojen vientiä tai tuontia.
 Erittäin suuret media-kirjastot saattavat tarvita siirtoa vähäkäyttöisen ylläpitoikkunan aikana.

@@ -4,11 +4,11 @@ title: Filtrační funkce - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Umožňuje vývojářům upravit finální obsah stránky.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Umožňuje vývojářům upravit finální obsah stránky.
 | $to_replace | `array` | Pole obsahující nahrazovací texty. |
 | $placeholder_count | `int` | Počet nalezených nahrazovacích textů. |
 
-### Od
+### Od {#since}
 
 - 1.4.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) na řádku 46
 
 
-## Vrací
+## Vrací {#returns}
 Obsah po úpravě.

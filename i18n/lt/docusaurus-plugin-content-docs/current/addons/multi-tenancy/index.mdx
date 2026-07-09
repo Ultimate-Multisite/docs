@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Paskirstykite posvetaines tarp serverių ir duomenų bazių našumui ir saugumui užtikrinti
 
-## 1.2.0 versijos leidimo svarbiausi akcentai
+## 1.2.0 versijos leidimo svarbiausi akcentai {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 prideda suverenių nuomininkų pagrindą gamybinės aplinkos izoliavimo darbo eigoms:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 prideda suverenių nuomininkų pagrindą gamybinės aplinkos
 
 Žr. naudotojo vadovus: [suverenios migracijos darbo eiga](/user-guide/getting-started/sovereign-migration-workflow), [kelių nuomininkų izoliacija](/user-guide/configuration/multi-tenancy-isolation) ir [suverenių nuomininkų operacijos](/user-guide/administration/sovereign-tenant-operations).
 
-## Reikalavimai
+## Reikalavimai {#requirements}
 
 - WordPress 5.3 arba naujesnė
 - PHP 7.4 arba naujesnė
 - Multisite Ultimate įskiepis (aktyvus)
 
-## Diegimas
+## Diegimas {#installation}
 
 1. Įkelkite priedo failus į savo `/wp-content/plugins/` katalogą
 2. Aktyvuokite įskiepį per WordPress meniu „Plugins“
 3. Sukonfigūruokite priedo nustatymus tinklo administravimo sąsajoje
 
-## Kūrimas
+## Kūrimas {#development}
 
-### Sąranka
+### Sąranka {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projekto struktūra
+### Projekto struktūra {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testavimas
+### Testavimas {#testing}
 
 Priede yra išsami testavimo sistema:
 
@@ -93,54 +93,54 @@ Priede yra išsami testavimo sistema:
 - **Testų aprėptis**: Sukonfigūruota stebėti kodo aprėptį
 - **Multisite testavimas**: Testai vykdomi multisite aplinkoje
 
-### Kodo standartai
+### Kodo standartai {#code-standards}
 
 - **WordPress kodo standartai**: Užtikrinami naudojant PHPCS
 - **PHP 7.4+ suderinamumas**: Palaikomos modernios PHP funkcijos
 - **Statinė analizė**: PHPStan integracija tipų tikrinimui
 - **Kodo modernizavimas**: Rector taisyklės PHP atnaujinimams
 
-### Surinkimo sistema
+### Surinkimo sistema {#build-system}
 
 - **Išteklių apdorojimas**: CSS/JS failų sumažinimas
 - **Vertimas**: POT failo generavimas
 - **Pakavimas**: Archyvo kūrimas platinimui
 - **Kūrimo režimas**: Nesumažinti ištekliai derinimui
 
-## Konfigūracija
+## Konfigūracija {#configuration}
 
 Priedas palaiko įvairias konfigūracijos parinktis, pasiekiamas per tinklo administravimo sąsają.
 
-### Suverenaus nuomininko konfigūracija
+### Suverenaus nuomininko konfigūracija {#sovereign-tenant-configuration}
 
 Suvereniems nuomininkams sukonfigūruokite nuomininko duomenų bazę, failų sistemos šaknį, duomenų bazės prieglobos susiejimą ir prieglobos galimybę prieš nukreipdami srautą į nuomininką. Paleiskite migracijos patikrą po kiekvieno pakeitimo, kuris paveikia duomenų bazės prisijungimo duomenis, prieglobos susiejimą, maršrutizavimą arba naudotojų parengimą.
 
 Naudokite `localhost` tik tada, kai nuomininko vykdymo aplinka ir duomenų bazės leidimai tikisi vietinio lizdo arba tos pačios mašinos prieigos. Naudokite `127.0.0.1` arba paslaugos prieglobos vardą, kai tai yra jūsų teikėjo sukonfigūruotas leidimų prieglobos adresas.
 
-### Hostinger galimybė
+### Hostinger galimybė {#hostinger-capability}
 
 Hostinger kelių nuomininkų galimybė veikia su bendrinamu Hostinger integracijos tokenu. Prieš patikrą įsitikinkite, kad domenas yra hPanel, DNS nukreiptas į Hostinger paskyrą, o nuomininko duomenų bazės nustatymai atitinka hPanel.
 
-## Kabliai ir filtrai
+## Kabliai ir filtrai {#hooks-and-filters}
 
-### Veiksmai
+### Veiksmai {#actions}
 
 - `ultimate-multisite-addon-template_init` - Suaktyvinama po priedo inicializavimo
 - `ultimate-multisite-addon-template_loaded` - Suaktyvinama, kai įkeliami visi priedo failai
 
-### Filtrai
+### Filtrai {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Keisti priedo nustatymus
 - `ultimate-multisite-addon-template_enabled` - Perrašyti priedo įjungimo / išjungimo būseną
 
-## Licencija
+## Licencija {#license}
 
 Šis priedas licencijuojamas pagal GPL v3 arba vėlesnę versiją.
 
-## Palaikymas
+## Palaikymas {#support}
 
 Dėl palaikymo ir dokumentacijos apsilankykite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Pakeitimų žurnalas
+## Pakeitimų žurnalas {#changelog}
 
 - Versija 1.2.0 (2026-06-03): pridėtas būsenos nesaugantis nuomininko automatinis prisijungimas, Hostinger kelių nuomininkų galimybė, kiekvienos posvetainės duomenų bazės ir failų sistemos izoliacija, suverenios migracijos patikros vartai, nuomininko paleidimo / duomenų bazės rašymo modulio patobulinimai, konfigūruojamas MySQL prieglobos susiejimas ir saugesnis suverenios aplinkos pašalinimas.
 

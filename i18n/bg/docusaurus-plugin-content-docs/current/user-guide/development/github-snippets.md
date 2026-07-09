@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Как да използвате Ultimate Multisite фрагментите от нашия GitHub репозиториум
+# Как да използвате Ultimate Multisite фрагментите от нашия GitHub репозиториум {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 В GitHub репозиториума има налични код фрагменти, които често се изискват от потребителите на Ultimate Multisite, които искат да добавят малки функционалности, като например добавяне на скрипт за Google Analytics на страниците за регистрация или скриване на мета поле от admin dashboard.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# Как да добавите фрагмента в файла functions.php на вашата тема.
+# Как да добавите фрагмента в файла functions.php на вашата тема. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Влезте в admin dashboard на вашата WordPress Network и отидете в Themes > Theme Editor (Вижте екранален запис по-долу).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Как да създадете Must-Use Plugins (mu-plugins)
+# Как да създадете Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress има функция, която ви позволява да зареждате персонализирана функционалност, наречена "Must-Use Plugins" или съкратено "mu-plugins".
 

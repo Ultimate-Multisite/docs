@@ -3,25 +3,25 @@ title: Itemplate Yesongezo
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Itemplate yeSongezo
+# Itemplate yeSongezo {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Iimfuno
+## Iimfuno {#requirements}
 
 - WordPress 5.3 okanye ngaphezulu
 - PHP 7.4 okanye ngaphezulu
 - iplagin ye-Multisite Ultimate (iyasebenza)
 
-## Ufakelo
+## Ufakelo {#installation}
 
 1. Layisha iifayile zesongezo kulawulo lwakho lwe-`/wp-content/plugins/`
 2. Vula iplagin nge menyu ethi 'Plugins' kwi-WordPress
 3. Qwalasela iisetingi zesongezo kulawulo lomlawuli wenethiwekhi
 
-## Uphuhliso
+## Uphuhliso {#development}
 
-### Ukuseta
+### Ukuseta {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Ulwakhiwo lweProjekthi
+### Ulwakhiwo lweProjekthi {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Imithetho yokuhlaziya ikhowudi
 ```
 
-### Ukuvavanya
+### Ukuvavanya {#testing}
 
 Isongezo siquka isakhelo sovavanyo esibanzi:
 
@@ -75,44 +75,44 @@ Isongezo siquka isakhelo sovavanyo esibanzi:
 - **Ubungakanani boVavanyo**: Buqwalaselwe ukulandelela ubungakanani bokugutyungelwa kwekhowudi
 - **Uvavanyo lwe-Multisite**: Iimvavanyo ziqhutywa kwindawo ye-multisite
 
-### Imigangatho yeKhowudi
+### Imigangatho yeKhowudi {#code-standards}
 
 - **Imigangatho yokuKhowuda ye-WordPress**: Inyanzeliswa nge-PHPCS
 - **Ukuhambelana ne-PHP 7.4+**: Iimpawu zanamhlanje ze-PHP ziyaxhaswa
 - **Uhlalutyo Olungatshintshiyo**: Umdibaniso we-PHPStan wokujonga uhlobo
 - **Ukuhlaziywa kweKhowudi**: Imithetho ye-Rector yohlaziyo lwe-PHP
 
-### Inkqubo yoKwakha
+### Inkqubo yoKwakha {#build-system}
 
 - **Ukulungiswa kwee-Asethi**: Ukunciphisa iifayile ze-CSS/JS
 - **Uguqulelo**: Ukuveliswa kwefayile ye-POT
 - **Ukupakisha**: Ukwenziwa kwe-archive yokusasazwa
 - **Imo yoPhuhliso**: Ii-asethi ezingancitshiswanga zokulungisa iimpazamo
 
-## Uqwalaselo
+## Uqwalaselo {#configuration}
 
 Isongezo sixhasa iinketho zoqwalaselo ezahlukeneyo ezifikeleleka nge-interface yomlawuli wenethiwekhi.
 
-## Iihuku nezihluzi
+## Iihuku nezihluzi {#hooks-and-filters}
 
-### Iintshukumo
+### Iintshukumo {#actions}
 
 - `ultimate-multisite-addon-template_init` - Iqalwa emva kokuqaliswa kwesongezo
 - `ultimate-multisite-addon-template_loaded` - Iqalwa emva kokuba zonke iifayile zesongezo zilayishiwe
 
-### Izihluzi
+### Izihluzi {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Guqula iisetingi zesongezo
 - `ultimate-multisite-addon-template_enabled` - Gqitha isimo sokuvula/ukuvala isongezo
 
-## Ilayisensi
+## Ilayisensi {#license}
 
 Esi songezo sinelayisensi phantsi kwe-GPL v3 okanye kamva.
 
-## Inkxaso
+## Inkxaso {#support}
 
 Ngenkxaso namaxwebhu, ndwendwela [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ingxelo yotshintsho
+## Ingxelo yotshintsho {#changelog}
 
 - Inguqulelo 1.0.1 (2025-09-28): tshintsha igama le-prefix libe yi-ultimate-multisite; hlaziya text domain; nyusa inguqulelo.
 

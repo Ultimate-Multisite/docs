@@ -4,11 +4,11 @@ title: 'Salaan - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Gi-filter ang data meta sa dili pa kini i-serialize aron itipig sa database.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Type | Deskripsyon |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gi-filter ang data meta sa dili pa kini i-serialize aron itipig sa database.
 | $data_unserialized | `array` | Ang data sa object nga itipig. |
 | $this | `\Base_Model` | Ang instance sa object. |
 
-### Sukad
+### Sukad {#since}
 
 - 2.0.0
-### Tinubdan
+### Tinubdan {#source}
 
 Gihubit sa [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) sa linya 534

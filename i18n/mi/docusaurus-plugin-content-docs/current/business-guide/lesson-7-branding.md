@@ -3,15 +3,15 @@ title: 'Akoranga 7: Te Hanga kia Māu Ake'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Akoranga 7: Kia Riro Māu
+# Akoranga 7: Kia Riro Māu {#lesson-7-making-it-yours}
 
 Kaua rawa ō kiritaki e whakaaro kei te whakamahi rātou i "tētahi WordPress mono tāpiri." Me whakaaro kē rātou kei te whakamahi rātou i FitSite -- he tūāpapa i hangaia mō tō rātou ahumahi. Ka kapi i tēnei akoranga te waitohutanga, te white-labeling, me te whakakite i te tūāpapa hei hua.
 
-## Te Wāhi i Mutu Ai Tātou
+## Te Wāhi i Mutu Ai Tātou {#where-we-left-off}
 
 Kei a FitSite tētahi rerenga utu e mahi ana, e kawe ana i ngā rangatira taiwhanga whakapakari tinana mai i te kōwhiringa mahere ki tētahi pae ora. Inaianei ka whakakitea te wheako katoa hei hua kotahi, kua waitohungia, kua tuituia.
 
-## Tō Rohe Tūāpapa
+## Tō Rohe Tūāpapa {#your-platform-domain}
 
 Ko te tūāpapa o tō waitohu ko tō rohe. Mō FitSite:
 
@@ -19,7 +19,7 @@ Ko te tūāpapa o tō waitohu ko tō rohe. Mō FitSite:
 - **Ngā pae kiritaki**: `studioname.fitsite.com` (ngā rohe-iti)
 - **Ngā rohe ritenga**: Ka taea e ngā kiritaki kei ngā mahere Growth me Pro te mahere i tō rātou ake rohe
 
-### Te Whakarite i Tō Rohe
+### Te Whakarite i Tō Rohe {#setting-up-your-domain}
 
 1. Rēhitahia tō rohe tūāpapa
 2. Tohua atu ki tō kaiwhakarato manaaki
@@ -28,11 +28,11 @@ Ko te tūāpapa o tō waitohu ko tō rohe. Mō FitSite:
 
 Tirohia [Me Pēhea te Whirihora i te Mahere Rohe](/user-guide/domain-mapping/how-to-configure-domain-mapping) mō ngā tohutohu taipitopito.
 
-## Te White-Labeling i te Wheako Whakahaere
+## Te White-Labeling i te Wheako Whakahaere {#white-labeling-the-admin-experience}
 
 Ina takiuru tētahi rangatira taiwhanga whakapakari tinana ki tōna Dashboard pae, me kite ia i tō waitohu, kaua ko te waitohu WordPress, Ultimate Multisite rānei.
 
-### Whārangi Takiuru Ritenga
+### Whārangi Takiuru Ritenga {#custom-login-page}
 
 Whakaritea te whārangi takiuru WordPress kia whakaatu i:
 
@@ -40,7 +40,7 @@ Whakaritea te whārangi takiuru WordPress kia whakaatu i:
 - Ngā whakaahua papamuri e hāngai ana ki te whakapakari tinana
 - Ō tae waitohu
 
-### Waitohutanga Dashboard
+### Waitohutanga Dashboard {#dashboard-branding}
 
 Whakamahia te tāpiri [Kaihanga Whārangi Whakahaere](/addons/admin-page-creator), te CSS ritenga rānei, hei:
 
@@ -48,7 +48,7 @@ Whakamahia te tāpiri [Kaihanga Whārangi Whakahaere](/addons/admin-page-creator
 - Whakarite i te kaupapa tae whakahaere kia ōrite ki tō waitohu
 - Tāpiri i tētahi widget Dashboard ritenga me ngā hononga tere me ngā rauemi āwhina e hāngai ana ki te whakapakari tinana
 
-### Ngā Whārangi Whakahaere Ritenga
+### Ngā Whārangi Whakahaere Ritenga {#custom-admin-pages}
 
 Whakaarohia te waihanga whārangi whakahaere ritenga e whakaatu ana i ngā mahi tino hāngai ki ngā rangatira taiwhanga whakapakari tinana:
 
@@ -58,11 +58,11 @@ Whakaarohia te waihanga whārangi whakahaere ritenga e whakaatu ana i ngā mahi 
 
 Ka whakaiti tēnei i te pikinga ako mā te whakatakoto i ngā mahi e hāngai ana ki te wāhanga ki mua tonu, ki waenganui tonu, kaua e huna ki te tahua WordPress paerewa.
 
-## Te Waitohu i Āu Whakawhitiwhiti
+## Te Waitohu i Āu Whakawhitiwhiti {#branding-your-communications}
 
 Me whakapakari ia īmēra, ia nama utu, ia whakamōhiotanga i tō waitohu.
 
-### Ngā Īmēra Pūnaha
+### Ngā Īmēra Pūnaha {#system-emails}
 
 Whakatere ki **Ultimate Multisite > Settings > Emails** ka whakarite i ngā īmēra pūnaha katoa:
 
@@ -79,7 +79,7 @@ Ngā īmēra matua hei whakarite:
 | Rihīti utu | "Kua whiwhi utu" | "Kua whakaūngia te utu ohaurunga FitSite" |
 | Mutunga whakamātau | "Ka mutu tō whakamātau ākuanei" | "Ka mutu tō whakamātau FitSite ā ngā rā e 3 -- kia ora tonu te paetukutuku o tō taiwhanga" |
 
-### Ngā Nama Utu
+### Ngā Nama Utu {#invoices}
 
 Whakaritea ngā tātauira nama utu me:
 
@@ -87,7 +87,7 @@ Whakaritea ngā tātauira nama utu me:
 - Ngā taipitopito o tō pakihi
 - Ngā ingoa hua e hāngai ana ki te whakapakari tinana (kaua ko ngā ID mahere whānui)
 
-## Te Pae Ka Kitea e te Kiritaki
+## Te Pae Ka Kitea e te Kiritaki {#the-customer-facing-site}
 
 Me whai tō rohe matua (`fitsite.com`) i tētahi pae whakatairanga e hoko ana i te tūāpapa. He mea motuhake tēnei i te kaiwhakahaere whatunga Ultimate Multisite -- koia te kanohi tūmatanui o tō pakihi.
 
@@ -103,7 +103,7 @@ Ngā whārangi matua:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Rohe Ritenga mō Ngā Kiritaki
+## Rohe Ritenga mō Ngā Kiritaki {#custom-domain-for-customers}
 
 Mō ngā kiritaki kei ngā mahere e whai ana i ngā rohe ritenga, tuhia kia mārama te tukanga:
 
@@ -113,7 +113,7 @@ Mō ngā kiritaki kei ngā mahere e whai ana i ngā rohe ritenga, tuhia kia mār
 
 Waihangatia tētahi tuhinga āwhina, tētahi tāurunga pūtake mātauranga rānei mō tēnei tukanga, kua tuhia mō ngā rangatira taiwhanga whakapakari tinana kāore i te mātanga hangarau.
 
-## Te Whatunga FitSite Tae Noa Ki Tēnei Wā
+## Te Whatunga FitSite Tae Noa Ki Tēnei Wā {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Ngā Mea i Hangaia e Tātou i Tēnei Akoranga
+## Ngā Mea i Hangaia e Tātou i Tēnei Akoranga {#what-we-built-this-lesson}
 
 - Kua whirihorahia te **rohe tūāpapa me te DNS** mō tētahi wheako kua waitohungia
 - **Kaiwhakahaere white-labeled** me te waitohutanga FitSite puta noa

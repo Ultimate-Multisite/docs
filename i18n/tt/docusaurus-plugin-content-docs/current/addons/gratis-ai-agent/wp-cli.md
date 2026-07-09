@@ -3,11 +3,11 @@ title: WP-CLI белешмәсе
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI белешмәсе
+# WP-CLI белешмәсе {#wp-cli-reference}
 
 Gratis AI Agent агентны бәяләү, мөмкинлекләр белән идарә итү һәм боерык юлыннан агент халәтен сорау өчен `wp gratis-ai-agent` боерыклар гаиләсен үз эченә ала. Барлык боерыклар WP-CLI 2.0 яки югарырак версиясен таләп итә.
 
-## Урнаштыру
+## Урнаштыру {#installation}
 
 WP-CLI боерыклары plugin актив булганда автоматик рәвештә теркәлә. Тикшерү өчен:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agent Capabilities бәяләү җыелмасын эшләтә — тулы мөмкинлек өслеген сынаучы катлаулы, күп адымлы сораулар җыелмасы. Моны модель җитештерүчәнлеген бәяләү, AI тәэмин итүчеләрен чагыштыру яки production мохитенә чыгару алдыннан мөмкинлек җыелмаларын тикшерү өчен кулланыгыз.
 
-### Синопсис
+### Синопсис {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Көйләнмәләр
+### Көйләнмәләр {#options}
 
 | Көйләнмә | Тасвирлама |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Чыгару форматы: `table` (килешү буенча), `json`, `csv` |
 | `--save` | Тарихи чагыштыру өчен бәяләү нәтиҗәләрен мәгълүмат базасына саклау |
 
-### Мисаллар
+### Мисаллар {#examples}
 
 Хәзерге тәэмин итүче һәм модель белән тулы бәяләү җыелмасын эшләтү:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Чыгыш
+### Чыгыш {#output}
 
 Бәяләү һәр сорау өчен түбәндәге баганалар белән бер юл чыгара:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Бәяләү сораулары
+### Бәяләү сораулары {#benchmark-questions}
 
 Килешү буенча җыелма түбәндәгеләрне үз эченә ала:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Урнаштырылган мөмкинлекләр һәм мөмкинлек җыелмалары белән идарә итә.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Барлык теркәлгән мөмкинлекләрне, аларның чыганагын (төп яки җыелма) һәм хәзерге халәтен күрсәтә.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Реестрдан мөмкинлек җыелмасын йөкләп ала һәм активлаштыра.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Җыелманы бетермичә, аерым мөмкинлекне сүндерә. Бирелгән сайтта агентның эш даирәсен чикләү өчен файдалы.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Элегрәк сүндерелгән мөмкинлекне яңадан кабыза.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Хәзерге агент конфигурациясен һәм тоташу халәтен күрсәтә.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Debug журналыннан соңгы агент эшчәнлеген күрсәтә.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Agent халәтен яңадан урнаштыра: кертелгән CSSны чистарта, agent теркәгән CPTларны һәм таксономияләрне бетерә, глобаль стильләрне яңадан урнаштыра һәм agent параметрлары кэшын бушата. Плагинны яки аның көйләнмәләрен бетерми.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Чыгу кодлары
+## Чыгу кодлары {#exit-codes}
 
 Барлык командалар уңышлы тәмамланганда `0` белән чыга. Нульдән аерылган чыгу кодлары:
 

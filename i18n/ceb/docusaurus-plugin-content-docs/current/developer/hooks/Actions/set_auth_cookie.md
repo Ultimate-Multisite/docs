@@ -4,11 +4,11 @@ title: Aksyon - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Aksyon: set_auth_cookie
+# Aksyon: set_auth_cookie {#action-setauthcookie}
 
 Mo-trigger dayon sa dili pa i-set ang authentication cookie.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Type | Deskripsyon |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Mo-trigger dayon sa dili pa i-set ang authentication cookie.
 | $scheme | `string` | Authentication scheme. Ang mga bili naglakip sa 'auth' o 'secure_auth'. |
 | $token | `string` | Session token sa user nga gamiton para niini nga cookie. |
 
-### Sukad
+### Sukad {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Tinubdan
+### Tinubdan {#source}
 
 Gidefine sa [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) sa linya 124

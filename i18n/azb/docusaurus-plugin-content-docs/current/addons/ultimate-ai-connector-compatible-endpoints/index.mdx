@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints, OpenAI uyumlu yapay zeka sağlayıcı API'lerini WordPress multisite ağınızla entegre eder. Birden fazla AI sağlayıcısı yapılandırın — her birinin kendi endpoint URL'si, API anahtarı ve varsayılan modeli olsun — ve bir sağlayıcı kullanılamadığında otomatik geri dönüş (fallback) ile istekleri yönlendirin.
 
-## Temel Özellikler
+## Temel Özellikler {#key-features}
 
 - **Çoklu sağlayıcı desteği**: Her biri kendi endpoint URL'si, API anahtarı ve varsayılan modeli olan birden fazla AI sağlayıcı kartı ekleyin.
 - **Sürükle-Bırak Sıralama**: Sağlanan her karttaki tutma kolunu (grip handle) kullanarak sağlayıcıları öncelik sırasına göre düzenleyin; istekler sağlayıcıları bu sırayla kullanır.
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints, OpenAI uyumlu yapay zeka sağlay
 - **Eklemede Otomatik Genişleme**: Yeni sağlayıcı kartları otomatik olarak genişler, böylece detayları hemen doldurabilirsiniz.
 - **Script Cache Busting**: Sağlayıcı scriptleri, en son sürümün yüklendiğinden emin olmak için eklenti güncellendiğinde cache-busting yapılır.
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 - WordPress 5.3 veya üzeri
 - PHP 7.4 veya üzeri
 - Ultimate Multisite eklentisi (aktif)
 - Bir OpenAI uyumlu API endpoint'i (kendi barındırdığınız veya üçüncü taraf)
 
-## Kurulum
+## Kurulum {#installation}
 
 1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin.
 2. WordPress'te 'Plugins' menüsünden eklentiyi etkinleştirin.
 3. Eklentiyi yapılandırmak için **Ultimate Multisite → AI Connector** yolunu izleyin.
 
-## Yapılandırma
+## Yapılandırma {#configuration}
 
-### Çoklu Sağlayıcı Kurulumu
+### Çoklu Sağlayıcı Kurulumu {#multi-provider-setup}
 
 Yapılandırma ekranı, her kartın bir AI sağlayıcısını temsil ettiği kart tabanlı bir düzen kullanır. İhtiyacınız kadar sağlayıcı ekleyebilirsiniz.
 
-#### Bir Sağlayıcı Ekleme
+#### Bir Sağlayıcı Ekleme {#adding-a-provider}
 
 1. Ağ yöneticisinde **Ultimate Multisite → AI Connector** sayfasına gidin.
 2. **Add Provider**'a tıklayın.
@@ -52,15 +52,15 @@ Yapılandırma ekranı, her kartın bir AI sağlayıcısını temsil ettiği kar
    - **Default Model** — Bu sağlayıcı için varsayılan olarak kullanılacak model tanımlayıcısı (örneğin, `gpt-4o`, `mistral-small`).
 5. **Save Settings**'e tıklayın.
 
-#### Bir Sağlayıcı Kaldırma
+#### Bir Sağlayıcı Kaldırma {#removing-a-provider}
 
 Bir sağlayıcı kartındaki **Remove** düğmesine tıklayarak onu silebilirsiniz. Değişikliği uygulamak için ayarları kaydedin.
 
-#### Sağlayıcıları Yeniden Sıralama
+#### Sağlayıcıları Yeniden Sıralama {#reordering-providers}
 
 Herhangi bir sağlayıcı kartının sol tarafındaki tutma simgesini (⣿) sürükleyerek yeniden sıralayabilirsiniz. Sıralama, geri dönüş önceliğini belirler: istekler ilk sağlayıcıya gönderilir ve bir istek başarısız olursa sonraki sağlayıcılara geri döner.
 
-### Geri Dönüş (Fallback) Yönlendirme
+### Geri Dönüş (Fallback) Yönlendirme {#fallback-routing}
 
 Birincil sağlayıcıya yapılan bir istek zaman aşımı, hız limiti veya hizmet kesintisi nedeniyle başarısız olursa, konektör otomatik olarak listedeki bir sonraki sağlayıcıyla yeniden dener. Bu, bir sağlayıcı başarılı olana veya tüm sağlayıcılar denenene kadar listede devam eder.
 
@@ -72,7 +72,7 @@ Birincil sağlayıcıya yapılan bir istek zaman aşımı, hız limiti veya hizm
 
 Geri dönüş, çağıran eklenti veya tema için şeffaftır — kaç sağlayıcı denenmiş olursa olsun, başarılı bir yanıt veya nihai bir hata alırlar.
 
-### Sağlayıcı Yapılandırma Referansı
+### Sağlayıcı Yapılandırma Referansı {#provider-configuration-reference}
 
 | Alan | Gerekli | Açıklama |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Geri dönüş, çağıran eklenti veya tema için şeffaftır — kaç sağlayı
 | API Key | Evet | Bu sağlayıcı için kimlik doğrulama anahtarı |
 | Default Model | Evet | İstekte model belirtilmediğinde kullanılan model tanımlayıcısı |
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### Hiçbir sağlayıcı listelenmiyor
+### Hiçbir sağlayıcı listelenmiyor {#no-providers-are-listed}
 
 Kaydetme işleminden sonra sağlayıcı listesi boşsa, lütfen şunları kontrol edin:
 
@@ -91,21 +91,21 @@ Kaydetme işleminden sonra sağlayıcı listesi boşsa, lütfen şunları kontro
 - Tarayıcınızın ayarlar sayfasının kaydedilmesini engellemediğinden emin olun (JavaScript hataları için tarayıcı konsolunu kontrol edin).
 - Eklentinin aktif olduğundan ve ağ yöneticisi ekranında olduğunuzdan emin olun.
 
-### Tüm sağlayıcılarda istekler başarısız oluyor
+### Tüm sağlayıcılarda istekler başarısız oluyor {#requests-are-failing-for-all-providers}
 
 - Her sağlayıcının endpoint URL'sinin sunucunuzdan (yalnızca tarayıcınızdan değil) erişilebilir olduğunu doğrulayın.
 - Her API anahtarının geçerli olduğundan ve süresinin dolmadığından emin olun.
 - Sağlayıcının dashboard'undaki hız limiti ve kota durumunu gözden geçirin.
 - Konektörden ayrıntılı hata mesajları yakalamak için WordPress debug logging'i (`WP_DEBUG_LOG`) etkinleştirin.
 
-### Bir sağlayıcı geri dönüş için kullanılmıyor
+### Bir sağlayıcı geri dönüş için kullanılmıyor {#a-provider-is-not-being-used-for-fallback}
 
 Sürükle-Bırak Sıralama, geri dönüş sırasını değiştirir. Geri dönüş istekleri almasını beklediğiniz sağlayıcının listede doğru konumlandırıldığından ve endpoint URL'si ile API anahtarının doğru olduğundan emin olun.
 
-### Yeni sağlayıcı kartı otomatik olarak genişlemiyor
+### Yeni sağlayıcı kartı otomatik olarak genişlemiyor {#new-provider-card-does-not-expand-automatically}
 
 Otomatik genişleme, tarayıcınızda JavaScript'in etkin olmasını gerektirir. Kart tıklayınca genişlemiyorsa, tarayıcı konsolunda hata olup olmadığını kontrol edin. Kart içeriği, otomatik genişleme tetiklenmese bile her zaman kart başlığına tıklayarak erişilebilir durumdadır.
 
-## Changelog
+## Changelog {#changelog}
 
 Tüm sürüm geçmişi için [Changelog](./changelog)'a bakın.

@@ -4,11 +4,11 @@ title: Филтр - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Филтр: wp_ultimo_site_exporter_get_option
+# Филтр: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Қимати slugfied-и имконоти шабакаро бармегардонад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | Номи имкон. |
 | $default | `mixed` | Қимати пешфарз. |
 
-### Аз версия
+### Аз версия {#since}
 
 - 1.9.6
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) дар сатри 126 таъриф шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}
 Қимати slugfield-и имконоти шабака.

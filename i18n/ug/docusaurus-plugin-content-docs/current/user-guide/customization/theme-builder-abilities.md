@@ -3,18 +3,18 @@ title: Tema Builder Qobiliyatları
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# قالب ساز قابلیت‌ها: ساخت و فعال کردن قالب بلوک
+# قالب ساز قابلیت‌ها: ساخت و فعال کردن قالب بلوک {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 دو تا قدرتمند قابلیت اضافه eder, bu sayede sohbet arayüzünden doğrudan özel blok temalar oluşturabilir ve yayınlayabilirsiniz.
 
-## Genel Bakış
+## Genel Bakış {#overview}
 
 **scaffold-block-theme** ve **activate-theme** yetenekleri ajanların şunları yapmasını sağlar:
 - Belirttiğiniz özelliklere dayanarak eksiksiz, üretim için hazır blok temaları oluşturmak
 - Manuel müdahale olmadan sitenizde temaları otomatik olarak etkinleştirmek
 - Rehberli tasarım kararları yoluyla uyumlu görsel kimlikler yaratmak
 
-## Blok Teması Oluşturma (Scaffold Block Theme)
+## Blok Teması Oluşturma (Scaffold Block Theme) {#scaffold-block-theme}
 
 **scaffold-block-theme** yeteneği, eksiksiz bir tema yapısı içeren yeni bir WordPress blok teması oluşturur. Bu yapı şunları içerir:
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0 دو تا قدرتمند قابلیت اضافه eder,
 - Özel blok stilleri ve varyasyonları
 - Tema meta verileri ve destek bildirimleri
 
-### Nasıl Çağrılır (How to Invoke)
+### Nasıl Çağrılır (How to Invoke) {#how-to-invoke}
 
 Superdav AI Agent ile sohbetinizde tema oluşturma isteğinde bulunabilirsiniz:
 
@@ -37,7 +37,7 @@ Ajan şunları yapacaktır:
 3. Gerekli tüm tema dosyalarını hazırlar
 4. Temayı etkinleştirmeye hazır hale getirir
 
-### Beklenen Çıktı (Expected Output)
+### Beklenen Çıktı (Expected Output) {#expected-output}
 
 Yetenek başarıyla çalıştığında şunları görürsünüz:
 
@@ -55,11 +55,11 @@ Yetenek başarıyla çalıştığında şunları görürsünüz:
   Durum: Etkinleştirmeye hazır
 ```
 
-## Temayı Etkinleştirme (Activate Theme)
+## Temayı Etkinleştirme (Activate Theme) {#activate-theme}
 
 **activate-theme** qabiliyyeti sitenizi yeni oluşturulmuş veya mevcut bir blok temaya keçirmek üçündür.
 
-### Nasıl Çalıştırılır
+### Nasıl Çalıştırılır {#how-to-invoke-1}
 
 Bir tema oluşturduktan sonra onu hemen etkinleştirebilirsiniz:
 
@@ -73,7 +73,7 @@ Veya herhangi bir mevcut temayı etkinleştirmek için:
 "Twentytwentyfour temasına geç"
 ```
 
-### Beklenen Çıktı
+### Beklenen Çıktı {#expected-output-1}
 
 Etkinleştirme başarılı olduğunda:
 
@@ -91,7 +91,7 @@ Etkinleştirme başarılı olduğunda:
   Not: Düzeni doğrulamak için ana sayfanızı kontrol edin
 ```
 
-## İş Akışı: Oluşturma ve Etkinleştirme (Scaffold and Activate)
+## İş Akışı: Oluşturma ve Etkinleştirme (Scaffold and Activate) {#workflow-scaffold-and-activate}
 
 Tipik bir iş akışı her iki yeteneği de birleştirir:
 
@@ -101,7 +101,7 @@ Tipik bir iş akışı her iki yeteneği de birleştirir:
 4. **Etkinleştirme**: "Temayı şimdi etkinleştir"
 5. **Doğrulama**: Yeni tasarımın canlı olup olmadığını kontrol etmek için sitenizi ziyaret edin
 
-## Tasarım Jetonları (Design Tokens) ve Özelleştirme
+## Tasarım Jetonları (Design Tokens) ve Özelleştirme {#design-tokens-and-customization}
 
 Oluşturulan temalar, WordPress tasarım jetonlarını (`theme.json` aracılığıyla) şunlar için kullanır:
 
@@ -113,7 +113,7 @@ Oluşturulan temalar, WordPress tasarım jetonlarını (`theme.json` aracılığ
 
 Bu jetonlar `theme.json` içinde merkezi olarak tutulur, bu da tüm tasarım sisteminizi tek bir dosyadan ayarlamayı kolaylaştırır.
 
-## Sınırlamalar ve Notlar
+## Sınırlamalar ve Notlar {#limitations-and-notes}
 
 - Themes `/wp-content/themes/` دایرکتوريشدا و باید وردپرس نام‌گذاری قوانین را رعایت کند
 - فعال‌سازی برای سایت وردپرسی شما مناسب دسترسی (permissions) نیاز دارد
@@ -121,7 +121,7 @@ Bu jetonlar `theme.json` içinde merkezi olarak tutulur, bu da tüm tasarım sis
 در قالب‌ها (themes) کد PHP سفارشی خیلی کم استفاده کنید؛ پیچیده کارها برای پلاگین‌ها بهتر است.
 قالب‌های بلوکی (Block themes) بهترین عملکرد را با وردپرس نسخه ۵.۹ و بالاتر دارند.
 
-## عیب‌یابی (Troubleshooting)
+## عیب‌یابی (Troubleshooting) {#troubleshooting}
 
 **بعد از اسکالف کردن قالب نمایش داده نمی‌شود**
 - مطمئن شوید که پوشه قالب وجود دارد و دسترسی‌های مناسب آن تنظیم شده است.
@@ -138,7 +138,7 @@ Bu jetonlar `theme.json` içinde merkezi olarak tutulur, bu da tüm tasarım sis
 - هر افزونه کش (caching plugins) را پاک کنید.
 - مطمئن شوید نسخه وردپرس شما از توکن‌هایی که استفاده می‌کنید پشتیبانی می‌کند.
 
-## گام‌های بعدی (Next Steps)
+## گام‌های بعدی (Next Steps) {#next-steps}
 
 بعد از فعال کردن قالب خود، می‌توانید کارهای زیر را انجام دهید:
 - از مهارت **Design System Aesthetics** برای تنظیم دقیق تایپوگرافی (typography)، رنگ‌ها و فاصله (spacing) استفاده کنید.

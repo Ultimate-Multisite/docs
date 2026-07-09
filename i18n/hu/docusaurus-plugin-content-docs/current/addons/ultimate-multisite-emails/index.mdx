@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-mailek
+# E-mailek {#emails}
 
 Az Ultimate Multisite: Emails addon lehetővé teszi a hálózattulajdonosoknak, hogy ügyfél e-mail-fiókokat hozzanak létre és kezeljenek a site-ok és tagságok mellett. Az 1.1.0-s verzió ügyféloldali e-mail-fiók-kezelést, webmail egyszeri bejelentkezést, CyberPanel továbbító támogatást és checkout közbeni létrehozási fejlesztéseket ad hozzá.
 
-## Fő funkciók
+## Fő funkciók {#key-features}
 
 * **Ügyfél e-mail-fiók widget**: Az ügyfelek létrehozhatják és kezelhetik postafiókjaikat a fiókoldalukról, miután aktív e-mail-tagsággal rendelkeznek.
 * **Webmail SSO és magic linkek**: Az ügyfelek közvetlenül megnyithatják a webmailt a fiókoldalról egykattintásos hitelesítéssel, ha a szolgáltató támogatja.
@@ -20,14 +20,14 @@ Az Ultimate Multisite: Emails addon lehetővé teszi a hálózattulajdonosoknak,
 * **CyberPanel továbbítók**: A CyberPanel-alapú hálózatok e-mail-továbbítókat hozhatnak létre és kezelhetnek az e-mail-szolgáltatási folyamat részeként.
 * **Szolgáltatófüggő beállítások**: A beállítások oldala az aktív, konfigurált integrációkra szűri a szolgáltatókat, így az adminisztrátorok csak használható opciókat látnak.
 
-## Követelmények
+## Követelmények {#requirements}
 
 * Ultimate Multisite 2.0.0 vagy újabb
 * WordPress Multisite telepítés
 * Legalább egy konfigurált e-mail-szolgáltató integráció
 * Szolgáltatói API hitelesítő adatok jogosultsággal postafiókok létrehozására, jelszavak módosítására és webmail-hozzáférési linkek kiadására, ahol ez támogatott
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltsd fel a plugin fájlokat ide: `/wp-content/plugins/ultimate-multisite-emails`.
 2. Aktiváld hálózati szinten az addont a WordPress hálózati admin **Plugins** részében.
@@ -35,7 +35,7 @@ Az Ultimate Multisite: Emails addon lehetővé teszi a hálózattulajdonosoknak,
 4. Engedélyezd azokat az e-mail-szolgáltatói integrációkat, amelyeket szeretnél, hogy az ügyfelek használjanak.
 5. Mentsd a beállításokat, majd teszteld a fióklétrehozást egy nem éles ügyféllel vagy staging site-tal.
 
-## Hogyan működik az e-mail-értékesítési folyamat
+## Hogyan működik az e-mail-értékesítési folyamat {#how-the-email-seller-flow-works}
 
 Az e-mail-értékesítésnek két külön rétege van:
 
@@ -53,7 +53,7 @@ Ez azt jelenti, hogy egy normál ügyfélfolyamat a következő:
 5. Az **E-mail-fiókok** panel megjelenik ehhez az aktív e-mail-tagsághoz.
 6. Az ügyfél rákattint a **Fiók létrehozása** gombra, megadja a helyi részt, például `info`, beállít egy jelszót, és az addon létrehozza az `info@their-domain.com` címet a konfigurált szolgáltatónál.
 
-## E-mail-termék konfigurálása
+## E-mail-termék konfigurálása {#configure-an-email-product}
 
 Hozz létre egy e-mail-terméket minden olyan e-mail-csomaghoz, amelyet értékesíteni vagy ajándékba adni szeretnél. Ha még új számodra a termékbeállítás, kezdd a [Az első előfizetéses termék létrehozása](../../user-guide/configuration/creating-your-first-subscription-product) útmutatóval, majd térj vissza ide az e-mail-specifikus beállításokhoz.
 
@@ -67,7 +67,7 @@ Hozz létre egy e-mail-terméket minden olyan e-mail-csomaghoz, amelyet értéke
 
 Csak azok a szolgáltatók jelennek meg a szolgáltatóválasztóban, amelyek engedélyezve vannak és teljesen konfigurálva vannak az **Integrations** oldalon. Ha a választó üres, először konfiguráld és teszteld a szolgáltatót.
 
-## E-mail hozzáadása a checkouthoz
+## E-mail hozzáadása a checkouthoz {#add-email-to-checkout}
 
 Az e-mail-termékeket általában kiegészítőként kínálják egy site-csomaghoz. Az általános checkout-szerkesztő munkafolyamathoz lásd: [Checkout űrlapok](../../user-guide/configuration/checkout-forms).
 
@@ -79,7 +79,7 @@ Az e-mail-termékeket általában kiegészítőként kínálják egy site-csomag
 
 Az e-mail-domain az ügyfél site-domainjéből származik. Az ügyfelek nem adják meg az e-mail-domaint az e-mail-termék lépésben.
 
-## Ügyfélfiók e-mail-kezelése
+## Ügyfélfiók e-mail-kezelése {#customer-account-email-management}
 
 Az 1.1.0-s verzió e-mail-kezelő widgetet ad az ügyfél fiókoldalához. Akkor használd, ha azt szeretnéd, hogy az ügyfelek önkiszolgáló módon hozzanak létre és tartsanak karban postafiókokat a saját site-jaikhoz.
 
@@ -94,7 +94,7 @@ A widget az Ultimate Multisite fiókoldali currents rendszerét használja, így
 
 Ha az ügyfél nem látja az email panelt, ellenőrizd, hogy van-e **aktív Email product membership**-je, hogy a membership hozzá van-e kapcsolva egy webhely domainhez, és hogy a product rendelkezik-e konfigurált providerrel.
 
-## Ingyenes email csomag adása ügyfélnek
+## Ingyenes email csomag adása ügyfélnek {#giving-a-customer-a-free-email-plan}
 
 Ha díj felszámítása nélkül szeretnél emailt adni egy ügyfélnek, először add meg az **email entitlement**-et, majd hozd létre a mailboxt, vagy engedd, hogy az ügyfél hozza létre.
 
@@ -106,7 +106,7 @@ Ajánlott lehetőségek:
 
 Ha azt szeretnéd, hogy az ügyfél saját maga kezelje a mailboxt a fiókoldalról, győződj meg róla, hogy aktív email membershipje van a domainhez. Egy manuálisan létrehozott provider mailbox létezhet ilyen membership nélkül is, de előfordulhat, hogy az ügyfél nem látja hozzá az önkiszolgáló email panelt.
 
-## Admin által létrehozott fiókok és „Nincs rendelési szám”
+## Admin által létrehozott fiókok és „Nincs rendelési szám” {#admin-created-accounts-and-no-order-number}
 
 Az **Email Accounts** admin oldal provider mailboxt hoz létre vagy szerkeszt. Nem ez az első lépés egy email csomag értékesítéséhez vagy megadásához.
 
@@ -122,7 +122,7 @@ Ehelyett használd ezt a műveleti sorrendet:
 
 Ha csak egy provider mailboxt kell létrehoznod az ügyfél számára, és nincs szükséged önkiszolgáló fiókoldali kezelésre, az admin által létrehozott fiók elég lehet. Ha azt szeretnéd, hogy az ügyfél lássa és kezelje az Ultimate Multisite-ben, hozd létre az email membershipet is.
 
-## Webmail SSO és Magic-Link bejelentkezés
+## Webmail SSO és Magic-Link bejelentkezés {#webmail-sso-and-magic-link-login}
 
 A Webmail SSO közvetlen **Open webmail** műveletet ad az ügyfeleknek a fiókoldalról. Ha az aktív provider támogatja, az addon egy rövid élettartamú hozzáférési URL-t kér, és átirányítja az ügyfelet a webmailbe anélkül, hogy a mailbox hitelesítő adatainak másolását kérné tőle.
 
@@ -134,7 +134,7 @@ A providerek viselkedése eltérhet:
 
 Csak olyan providereknél engedélyezd a webmail hozzáférést, ahol konfiguráltad a szükséges API hitelesítő adatokat. Ha a művelet hiányzik egy providernél, először ellenőrizd, hogy a provider aktív, konfigurált, és támogatja a webmail bejelentkezési linkeket.
 
-## Checkout provisioning
+## Checkout provisioning {#checkout-provisioning}
 
 Az addon a checkout során végzi el az email **membership context** provisioningjét. Rögzíti a providert, az account limitet, a kvótát és a webhely domaint, hogy az ügyfelek a vásárlás után saját mailbox neveket hozhassanak létre a fiókoldalról.
 
@@ -148,15 +148,15 @@ Ajánlott bevezetés:
 
 Ha a provisioning sikertelen, az ügyfélfiók és a membership továbbra is létezhet, miközben az email membership vagy a provider mailbox adminisztrátori utánkövetést igényel. Újrapróbálkozás előtt ellenőrizd az Ultimate Multisite aktivitási naplóit és a provider naplóit.
 
-## CyberPanel email átirányítók
+## CyberPanel email átirányítók {#cyberpanel-email-forwarders}
 
 CyberPanel-alapú hálózatoknál az 1.1.0 verzió email forwarder támogatást ad hozzá. Használj forwardereket, amikor az ügyfeleknek olyan címekre van szükségük, mint az `info@customer-domain.test`, amelyek a leveleket egy másik inboxba irányítják át teljes mailbox létrehozása nélkül.
 
 Mielőtt forwardereket kínálnál, ellenőrizd, hogy a CyberPanel integráció konfigurálva van és elérhető. A szükséges host, username, password és package konstansokhoz lásd a [CyberPanel integráció](../../user-guide/administration/cyberpanel-integration) útmutatót.
 
-## Változásnapló
+## Változásnapló {#changelog}
 
-### 1.1.0 verzió - Kiadva: 2026-05-05
+### 1.1.0 verzió - Kiadva: 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Új: Webmail SSO és magic-link bejelentkezés — az ügyfelek egykattintásos hitelesítéssel közvetlenül az Accountjukból érhetik el a webmailt.
 * Új: Jelszómódosítási funkció került az e-mail fiókkezelő widgetbe.
@@ -170,28 +170,28 @@ Mielőtt forwardereket kínálnál, ellenőrizd, hogy a CyberPanel integráció 
 * Javítás: A kérésenkénti log spam eltávolítva az Email_Account_Manager inicializálásából.
 * Továbbfejlesztve: A Settings oldal most szűr, hogy csak az aktív és konfigurált e-mail szolgáltatókat jelenítse meg.
 
-## Gyakran ismételt kérdések
+## Gyakran ismételt kérdések {#frequently-asked-questions}
 
-### Létrehozhatnak az ügyfelek saját e-mail fiókokat?
+### Létrehozhatnak az ügyfelek saját e-mail fiókokat? {#can-customers-create-their-own-email-accounts}
 
 Igen. Ha az ügyfélnek van aktív e-mail tagsága egy domainhez, és a termék engedélyezi a további fiókokat, az ügyfelek az Account oldalról hozhatják létre és kezelhetik saját postafiókjaikat.
 
-### Minden szolgáltató támogatja a webmail SSO-t?
+### Minden szolgáltató támogatja a webmail SSO-t? {#does-every-provider-support-webmail-sso}
 
 Nem. Az SSO és a magic-link támogatás az aktív e-mail szolgáltatótól függ. Azok a szolgáltatók, amelyek nem rendelkeznek hozzáférési-link API-val, továbbra is támogathatják a postafiók-létrehozást és a jelszómódosításokat.
 
-### Az adminisztrátorok létrehozhatnak e-mail fiókokat az ügyfeleknek?
+### Az adminisztrátorok létrehozhatnak e-mail fiókokat az ügyfeleknek? {#can-administrators-create-email-accounts-for-customers}
 
 Igen. Az adminisztrátorok az admin felületről hozhatnak létre e-mail fiókokat, beleértve a kezdeti jelszó beállítását a fiók létrehozásakor. Az ügyfél önkiszolgáló kezeléséhez arról is győződj meg, hogy az ügyfélnek van aktív e-mail tagsága a domainhez.
 
-### Adhatok ingyen e-mail fiókot?
+### Adhatok ingyen e-mail fiókot? {#can-i-give-an-email-account-away-for-free}
 
 Igen. Hozz létre egy ingyenes/nulla árú Email terméket, és add hozzá aktív tagságként az ügyfélhez, vagy hagyd, hogy az ügyfél 100%-os kedvezménnyel fejezze be a checkoutot. Miután az e-mail tagság létezik, az ügyfél vagy egy adminisztrátor létrehozhatja a tényleges postafiókot.
 
-### Miért kér rendelési számot egy e-mail fiók hozzárendelése?
+### Miért kér rendelési számot egy e-mail fiók hozzárendelése? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 A Membership mező egy meglévő Ultimate Multisite tagságot keres a hivatkozási/rendelési száma alapján. Ha az ügyfél nem vásárolt e-mail terméket, és manuálisan sem hoztál létre e-mail tagságot, nincs hozzárendelhető e-mail tagság/rendelés. Először hozd létre az e-mail tagságot, majd hozd létre vagy rendeld hozzá a postafiókot.
 
-### A továbbítók ugyanazok, mint a postafiókok?
+### A továbbítók ugyanazok, mint a postafiókok? {#are-forwarders-the-same-as-mailboxes}
 
 Nem. A postafiók tárolja a leveleket, és bejelentkezési hitelesítő adatokkal rendelkezik. A továbbító egy másik címre irányítja át a leveleket, és nem biztosít külön beérkező levelek mappát.

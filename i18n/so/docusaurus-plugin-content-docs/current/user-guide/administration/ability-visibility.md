@@ -3,11 +3,11 @@ title: Awoodda Muujinta
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Muujinta Aragtida (Ability Visibility)
+# Muujinta Aragtida (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 waxay soo bandhigaysaa mareegga **Muujinta Awoodda (Ability Visibility)** kaas oo maamulaya waxa ay meelay u soo bandhiga awood kasta. Tani waxay u oggolaanaysaa maamulayaasha inay si fiican u hagaajiyaan noocyada awoodda ee agent-ka laga heli karo REST APIs, MCP servers, WooCommerce integrations, iyo interface kale oo la mid ah.
 
-## Waa maxay Muujinta Awoodda (Ability Visibility)?
+## Waa maxay Muujinta Awoodda (Ability Visibility)? {#what-is-ability-visibility}
 
 Muujinta Awoodda waa nidaam oggolaansho (permission system) kaas oo maamulaya:
 
@@ -18,9 +18,9 @@ Muujinta Awoodda waa nidaam oggolaansho (permission system) kaas oo maamulaya:
 
 Awood kasta wuxuu leeyahay heer muujinta oo go'aamiya meesha uu kuugu heli karo dhammaan meelaha kala duwan.
 
-## Heerarka Muujinta (Visibility Levels)
+## Heerarka Muujinta (Visibility Levels) {#visibility-levels}
 
-### Guud (Public)
+### Guud (Public) {#public}
 
 **Awoodda guud** waxay ku heli karaan dhammaan meelaha:
 
@@ -32,7 +32,7 @@ Awood kasta wuxuu leeyahay heer muujinta oo go'aamiya meesha uu kuugu heli karo 
 
 Tusaale: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Gudaha (Internal)
+### Gudaha (Internal) {#internal}
 
 **Awoodda gudaha** waxay ku heli karaan oo kaliya warshadaha WordPress-kaaga:
 
@@ -43,7 +43,7 @@ Tusaale: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Tusaale: `manage-settings`, `view-analytics`, `export-data`
 
-### Shaqeynta Wasaareed (Partner)
+### Shaqeynta Wasaareed (Partner) {#partner}
 
 **Awoodda shaqeynta wasaareed** waxay ku heli karaan kuwa la liisay (whitelisted partners):
 
@@ -54,7 +54,7 @@ Tusaale: `manage-settings`, `view-analytics`, `export-data`
 
 Tusaale: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Dibadda (Disabled)
+### Dibadda (Disabled) {#disabled}
 
 **Awoodda dibadda ah** ma heli karaan meel kasta:
 
@@ -65,15 +65,15 @@ Tusaale: `bulk-import-users`, `modify-billing`, `access-analytics`
 
 
 
-## Maareyntaanka Aragtida Maareynta
+## Maareyntaanka Aragtida Maareynta {#managing-ability-visibility}
 
-### Isticmaalka Dejinta Aragtida (Ability Visibility Settings)
+### Isticmaalka Dejinta Aragtida (Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. Tag **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Guji tab-ka **Abilities** (Awooddaaha)
 3. Waxaad arki doontid liis oo ah dhammaan awoodaha la soo dejiyay iyo heerarka ay u muuqdaan
 
-### Aragtida Faahfaahinta Awooddaaha
+### Aragtida Faahfaahinta Awooddaaha {#viewing-ability-details}
 
 Guuji awood kasta si aad u aragto:
 
@@ -84,7 +84,7 @@ Guuji awood kasta si aad u aragto:
 - **Last updated** (Marka la cusboonaysiiyay): Marka la beddelay aragtida ugu dambeeyay
 - **Status** (Xaaladda): Ma la aqoonsan yahay mise aan la kala saarin
 
-### Beddelidda Heerarka Aragtida
+### Beddelidda Heerarka Aragtida {#changing-visibility-levels}
 
 Si aad u beddesho aragtida awood:
 
@@ -102,7 +102,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Hawlaha Weyn (Bulk Operations)
+### Hawlaha Weyn (Bulk Operations) {#bulk-operations}
 
 Si aad u beddesho aragtida awood badan oo isku ah:
 
@@ -110,11 +110,11 @@ Si aad u beddesho aragtida awood badan oo isku ah:
 2. Dooro heer aragti cusub oo ka soo qaado dropdown-ka hawsha weyn (bulk action)
 3. Guji **Apply** (Applies)
 
-## Liiska Partner-kaashka (Partner Allow-List)
+## Liiska Partner-kaashka (Partner Allow-List) {#partner-allow-list}
 
 **partner allow-list** wuxuu maareeyaa cidda u heli karto awoodaha heerka Partner-kaashka ah.
 
-### Ku Daridda Partner-kaashka
+### Ku Daridda Partner-kaashka {#adding-partners}
 
 1. Tag **Superdav AI Agent** → **Settings** → **Partners**
 2. Guji **Add Partner** (Ku dar partner)
@@ -122,7 +122,7 @@ Si aad u beddesho aragtida awood badan oo isku ah:
 4. Waxaad dooran kartaa inaad ku darno magaca iyo sharraxaadda partner-kaashka
 5. Guji **Save** (Kaydi)
 
-### U Qeexidda Awoodaha Partner-kaashka ah ee Partner-kaashka
+### U Qeexidda Awoodaha Partner-kaashka ah ee Partner-kaashka {#assigning-abilities-to-partners}
 
 Marka aad u daray partner:
 
@@ -132,7 +132,7 @@ Marka aad u daray partner:
 4. Qaybta "Partner allow-list" ee, hub qoraalka (boxes) kuwa partner-ka ah ee loo baahan yahay inay helaan fursad.
 5. Guji **Save** (Kaydi).
 
-### Xiridda Fursadda Partner-ka Ah
+### Xiridda Fursadda Partner-ka Ah {#revoking-partner-access}
 
 Si aad u ka saarto isticmaalka partner-ka:
 
@@ -142,11 +142,11 @@ Si aad u ka saarto isticmaalka partner-ka:
 
 Partner-ku si degdeg ah wuxuu ka baqayaa isticmaalka awooddaas.
 
-## Abilities-ka Aan La Qaybaysan
+## Abilities-ka Aan La Qaybaysan {#unclassified-abilities}
 
 Marka aad ku rakibto awood saddexaad oo Superdav AI Agent uusan aqoon u lahayn, waxay lagu calaamaysaa **Unclassified** (Aan La Qaybaysan).
 
-### Ogeysiis Maamulaha ee Abilities-ka Aan La Qaybaysan
+### Ogeysiis Maamulaha ee Abilities-ka Aan La Qaybaysan {#admin-notice-for-unclassified-abilities}
 
 Waxaad arki doontaa ogeysiis maamul ah:
 
@@ -163,7 +163,7 @@ Fadlan dib u eeg oo kala saar.
 [Review Abilities] [Dismiss]
 ```
 
-### Dib U Eegista Abilities-ka Aan La Qaybaysan
+### Dib U Eegista Abilities-ka Aan La Qaybaysan {#reviewing-unclassified-abilities}
 
 1. Guji **Review Abilities** (Dib U Eegista Abilities) ee ogeysiga.
 2. Marka aad dib u eegto awood kasta oo aan la qaybaysan, waxaad arki doontaa:
@@ -180,7 +180,7 @@ Fadlan dib u eeg oo kala saar.
 
 4. Guji **Classify** (Kala saar) si aad u kaydiso go'aankaaga.
 
-### Maxaa Loo Kala Saara Abilities-ka Aan La Qaybaysan?
+### Maxaa Loo Kala Saara Abilities-ka Aan La Qaybaysan? {#why-classify-unclassified-abilities}
 
 Kala saarka abilities-ka:
 
@@ -191,9 +191,9 @@ Kala saarka abilities-ka:
 
 ---
 
-## ئاسانلو لەسەر ڕووبارە جیاوازەکاندا بینراوێنان
+## ئاسانلو لەسەر ڕووبارە جیاوازەکاندا بینراوێنان {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **توانایی جیهانی (Public abilities)** دەکرێت بە ڕێگەی REST endpointsەوە بەکاربهێنرێت:
 
@@ -205,7 +205,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **توانایە ناوخۆیی و هاوبەشیکراوەکان (Internal and Partner abilities)** بە ڕێگەی REST APIیەوە بەکارنەهێنرێت.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **توانای جیهانی (Public abilities)** دەکرێت بە ڕێگەی MCP بەکاربهێنرێت:
 
@@ -221,7 +221,7 @@ Available abilities:
 
 **توانایەکانی هاوبەشیکراوەکان (Partner abilities)** تەنها بە کارگێڕی هاوبەشیکراوەکانی دەکرێت بەکاربهێنرێت.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **توانایە جیهانییەکان (Public abilities)** پەیوەست بە WooCommerce دەکرێن:
 
@@ -231,7 +231,7 @@ Available abilities:
 
 **توانایە ناوخۆییەکان (Internal abilities)** بۆ WooCommerce نیشان دەدرێن.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **هەموو تواناکان** (جیهانی، ناوخۆیی، هاوبەشیکراوەکانی) لە چاتدا بەکارنەهێنرێت، بەپێی ڕێزمانی بەکارهێنەر:
 
@@ -239,34 +239,34 @@ Available abilities:
 - بەکارهێنەرانی ئاسایی تەنها توانای جیهانییان دەبینن
 - هاوبەشیکراوان (ئەگەر لیست بکرێن) توانای جیهانی و توانای هاوبەشیکراوەکان دەبینن
 
-## باشترین شێوازی پاراستبوون لەسەر بنەمای ئاسانترین تایبەتمەندییەکان
+## باشترین شێوازی پاراستبوون لەسەر بنەمای ئاسانترین تایبەتمەندییەکان {#security-best-practices}
 
-### بنەمای کەمترین ئەوەی پێویستە (Principle of Least Privilege)
+### بنەمای کەمترین ئەوەی پێویستە (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - تواناکان بە ئەو ڕێگەیەک دیاری بکە کە زیاتردا کراوە و 여هودا بتوانن بەکاربهێنرێت
 - بۆ کارە هەستیارەکان، لەسەر توانای هاوبەشیکراوەکانی بەکاربێنە
 - تواناکان کە بەکارنەهێنیت ناتوانن بەکاربهێنە
 
-### پشکنینەکانی ڕێکخستراو (Regular Audits)
+### پشکنینەکانی ڕێکخستراو (Regular Audits) {#regular-audits}
 
 - هەموو مانگێک بینینی بینراوێنان
 - بۆ تواناکانی ناڕێکخراو یان نەدۆزراوەکان بگەڕێ
 - دەستکاریی دەستگەیشتن لەلایەن هاوبەشیکراوەکانی بەکارنەهێنرێت
 
-### تۆمارکردن و چاودێری (Logging and Monitoring)
+### تۆمارکردن و چاودێری (Logging and Monitoring) {#logging-and-monitoring}
 
 - چ ئەو تواناکانەی زیاتر بەکارهاتوون دیاری بکە
 - شێوازی دەستگەیشتنی هاوبەشیکراوان لەسەر ڕێنمایی بکە
 - ئاگادار بێت ئەگەر بەکارھێنانی نایارێکی توانایەک
 
-### تواناکانی سێیەم (Third-Party Abilities)
+### تواناکانی سێیەم (Third-Party Abilities) {#third-party-abilities}
 
 - پێش چالاککردن، تواناکانی سێیەم فێر بکە
 - بە شێوەیەکی ڕوون و دیار بۆیان پۆلێن بکە
 - لەگەڵ توانای ناوخۆیی یان هاوبەشیکراوەکانی دەست پێ بکە
 - تەنها دوای چاککردنەوە (Vetting) بۆ جیهانی بکەرەوە
 
-## Wax-dhaafidda (Troubleshooting)
+## Wax-dhaafidda (Troubleshooting) {#troubleshooting}
 
 **Awoodda (Ability) ma aanay ku muuqanaya liiska**
 - Hubi in awooddu la soo dejiyay oo ay socoto (active).
@@ -289,7 +289,7 @@ Available abilities:
 - Hubi in kala saaristaada ay la kaydsay.
 - Hubi in plugin-ka bixiyay awoodda uu yahay mid cusub (up to date).
 
-## Ku guurista Mode-ka Qadiimiga ah (Migration from Legacy Mode)
+## Ku guurista Mode-ka Qadiimiga ah (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Haddii aad ka qaadaysid nooc hore oo Superdav AI Agent:
 
@@ -299,7 +299,7 @@ Haddii aad ka qaadaysid nooc hore oo Superdav AI Agent:
 
 Waxaad ka heli kartaa faahfaahin dheeraad ah ku saabsan ku guurista Mode-ka Qalabka Saddexaad (**Third-Party Mode Migration**) si aad u ogaato sida loo guuro isku-dhafka API-ga Awoodda (Abilities API).
 
-## Tallaabooyinka Xiga (Next Steps)
+## Tallaabooyinka Xiga (Next Steps) {#next-steps}
 
 Marka aad dejisay aragti awoodda:
 

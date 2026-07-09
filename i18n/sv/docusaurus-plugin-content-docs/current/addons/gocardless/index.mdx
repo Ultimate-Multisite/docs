@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Ultimate Multisite: GoCardless Betalning
 
 Låt dina kunder betala medlemskap och produkter för Ultimate Multisite med direktdebet (Direct Debit) via GoCardless!
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp 'ultimate-multisite-gocardless' till katalogen '/wp-content/plugins/'
 2. Aktivera pluginet via menyn 'Plugins' i WordPress
 3. Följ guiden steg för steg för att ställa in pluginet
 
-## Användningsguide
+## Användningsguide {#usage-guide}
 
 _GoCardless_ är en betalningsgateway som finns i **Europa och Storbritannien** och som möjliggör betalningar med **direktdebet (Direct Debit)**.
 
@@ -29,7 +29,7 @@ Den här guiden går igenom hur du ställer in _GoCardless_ för att börja ta e
 
 _**Observera: GoCardless fungerar endast med följande valutor:**_ **EUR, GBP, AUD, SEK och DKK.**
 
-## Installera tillägget
+## Installera tillägget {#installing-the-add-on}
 
 Först måste du installera GoCardless-tillägget för Ultimate Multisite. Du kan göra det genom att gå till **Ultimate Multisite > Inställningar > Add-ons (i sidomenyn)**. Och sedan välja GoCardless-tillägget från listan.
 
@@ -37,7 +37,7 @@ När tillägget är installerat och aktiverat, gå till **Ultimate Multisite > I
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Hämta ett Access Token
+## Hämta ett Access Token {#getting-an-access-token}
 
 Skapa ett konto på _GoCardless_ (eller på _GoCardless_-sandbox, om du vill **testa det först**, vilket rekommenderas). Logga sedan in och navigera till menyalternativet **Developers**.
 
@@ -61,7 +61,7 @@ Se till att du klistrar in det i det högra fältet. Om det är ett **live token
 
 Det var allt för det första steget. Nästa steg är att ställa in en webhook-lyssnare.
 
-## Ställa in Webhook-lyssnaren
+## Ställa in Webhook-lyssnaren {#setting-up-the-webhook-listener}
 
 När det gäller prenumerationer måste Ultimate Multisite få veta om ändringar i prenumerationsstatus, nya betalningar och liknande saker.
 

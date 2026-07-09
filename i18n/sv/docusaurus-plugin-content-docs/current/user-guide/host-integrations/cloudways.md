@@ -3,18 +3,18 @@ title: Cloudways-integration
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways-integration
+# Cloudways-integration {#cloudways-integration}
 
-## Översikt
+## Översikt {#overview}
 Cloudways är en hanterad molnhostingplattform som låter dig distribuera WordPress-webbplatser hos olika molnleverantörer som DigitalOcean, AWS, Google Cloud med flera. Den här integrationen möjliggör automatisk domänsynkronisering och hantering av SSL-certifikat mellan Ultimate Multisite och Cloudways.
 
-## Funktioner
+## Funktioner {#features}
 - Automatisk domänsynkronisering
 - Hantering av SSL-certifikat
 - Stöd för extra domäner
 - DNS-validering för SSL-certifikat
 
-## Krav
+## Krav {#requirements}
 Följande konstanter måste definieras i din `wp-config.php`-fil:
 
 ```php
@@ -30,16 +30,16 @@ Valfritt kan du också definiera:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Installationsanvisningar
+## Installationsanvisningar {#setup-instructions}
 
-### 1. Hämta dina Cloudways API-uppgifter
+### 1. Hämta dina Cloudways API-uppgifter {#1-get-your-cloudways-api-credentials}
 
 1. Logga in på din Cloudways Dashboard
 2. Gå till "Account" > "API-nycklar"
 3. Generera en API-nyckel om du inte redan har en
 4. Kopiera din e-postadress och API-nyckel
 
-### 2. Hämta dina server- och applikations-ID:n
+### 2. Hämta dina server- och applikations-ID:n {#2-get-your-server-and-application-ids}
 
 1. I din Cloudways Dashboard, gå till "Servrar"
 2. Välj servern där din WordPress multisite finns
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Gå till "Applikationer" och välj din WordPress-applikation
 5. App-ID:t syns i URL:en: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Lägg till konstanter i wp-config.php
+### 3. Lägg till konstanter i wp-config.php {#3-add-constants-to-wp-configphp}
 
 Lägg till följande konstanter i din `wp-config.php`-fil:
 
@@ -70,7 +70,7 @@ Lägg **inte** till `*.your-network.com` (eller något subdomänmönster för di
 nedan för varför detta förhindrar att SSL-certifikat per kund utfärdas.
 :::
 
-### 4. Aktivera integrationen
+### 4. Aktivera integrationen {#4-enable-the-integration}
 
 1. I din WordPress-admin, gå till Ultimate Multisite > Inställningar
 2. Navigera till fliken "Domänmappning"
@@ -78,9 +78,9 @@ nedan för varför detta förhindrar att SSL-certifikat per kund utfärdas.
 4. Aktivera Cloudways-integrationen
 5. Klicka på "Spara ändringar"
 
-## Så fungerar det
+## Så fungerar det {#how-it-works}
 
-### Domänsynkronisering
+### Domänsynkronisering {#domain-syncing}
 
 När en domän mappas i Ultimate Multisite:
 
@@ -91,7 +91,7 @@ När en domän mappas i Ultimate Multisite:
 
 Obs: Cloudways API kräver att den kompletta listan över domäner skickas varje gång, inte bara att enskilda domäner läggs till eller tas bort.
 
-### Hantering av SSL-certifikat
+### Hantering av SSL-certifikat {#ssl-certificate-management}
 
 Efter att domäner har synkroniserats:
 
@@ -106,7 +106,7 @@ integrationen. För att använda ett wildcard-certifikat på Cloudways måste du
 manuellt, men att göra det blockerar utfärdande av Let's Encrypt per domän för mappade anpassade domäner
 (se fallgropen nedan).
 
-## Extra domäner
+## Extra domäner {#extra-domains}
 
 Konstanten `WU_CLOUDWAYS_EXTRA_DOMAINS` låter dig ange ytterligare **externa**
 domäner som alltid ska hållas kvar på Cloudways-applikationens aliaslista. Använd den för:
@@ -117,7 +117,7 @@ domäner som alltid ska hållas kvar på Cloudways-applikationens aliaslista. An
 Använd **inte** den här konstanten för ditt eget nätverks subdomän-wildcard
 (t.ex. `*.your-network.com`). Se fallgropen med wildcard-SSL nedan.
 
-## Viktigt — fallgrop med wildcard-SSL
+## Viktigt — fallgrop med wildcard-SSL {#important--wildcard-ssl-pitfall}
 
 Ett vanligt misstag när man följer Cloudways standardkonfiguration är att lägga till ett wildcard som
 `*.your-network.com` i `WU_CLOUDWAYS_EXTRA_DOMAINS`, eller att manuellt installera ett Cloudways
@@ -128,7 +128,7 @@ anpassade domäner per kund som Ultimate Multisite mappar.** Cloudways ersätter
 SSL-certifikatet på applikationen varje gång, och ett befintligt wildcard-certifikat på
 applikationen blockerar det utfärdande av Let's Encrypt per domän som integrationen är beroende av.
 
-### Rekommenderad Cloudways SSL-konfiguration för ett Ultimate Multisite-nätverk
+### Rekommenderad Cloudways SSL-konfiguration för ett Ultimate Multisite-nätverk {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. I Cloudways-applikationens flik **SSL-certifikat**, installera ett **standard
    Let's Encrypt-certifikat** som endast omfattar `your-network.com` och `www.your-network.com`
@@ -146,20 +146,20 @@ på nytt endast för huvudnätverksdomänen och ta bort eventuella wildcard-post
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Utlös sedan en domänmappning igen (eller vänta på nästa)
 så börjar integrationen utfärda certifikat per domän igen.
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
-### Problem med API-anslutning
+### Problem med API-anslutning {#api-connection-issues}
 - Kontrollera att din e-postadress och API key är korrekta
 - Kontrollera att dina server- och applikations-ID:n är korrekta
 - Säkerställ att ditt Cloudways-konto har de nödvändiga behörigheterna
 
-### Problem med SSL-certifikat
+### Problem med SSL-certifikat {#ssl-certificate-issues}
 - Cloudways kräver att domäner har giltiga DNS-poster som pekar på din server innan SSL-certifikat utfärdas
 - Integrationen validerar DNS-poster innan SSL-certifikat begärs
 - Om SSL-certifikat inte utfärdas, kontrollera att dina domäner pekar korrekt på din servers IP-adress
 - **Anpassade domäner per kund har fastnat utan SSL?** Kontrollera Cloudways-applikationens SSL Certificate-flik. Om ett wildcard-certifikat (manuellt installerat, eller som täcker `*.your-network.com`) är aktivt, kommer Cloudways inte att utfärda Let's Encrypt-certifikat för individuellt mappade anpassade domäner. Ersätt det med ett standard Let's Encrypt-certifikat som endast täcker huvudnätverksdomänen (`your-network.com`, `www.your-network.com`) och ta bort eventuella wildcard-poster från `WU_CLOUDWAYS_EXTRA_DOMAINS`. Utlös sedan en domänmappning igen (eller vänta på nästa) så kommer integrationen att begära certifikat per domän.
 
-### Domän har inte lagts till
+### Domän har inte lagts till {#domain-not-added}
 - Kontrollera Ultimate Multisite-loggarna efter eventuella felmeddelanden
 - Kontrollera att domänen inte redan har lagts till i Cloudways
 - Säkerställ att din Cloudways-plan stöder antalet domäner du lägger till

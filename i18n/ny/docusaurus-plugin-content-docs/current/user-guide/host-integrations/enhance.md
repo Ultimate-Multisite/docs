@@ -64,32 +64,32 @@ title: >-
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kufuna Kufunsa Control Panel
+# Kufuna Kufunsa Control Panel {#enhance-control-panel-integration}
 
-## Mwayi (Overview)
+## Mwayi (Overview) {#overview}
 Enhance ndi control panel yomodate yomwe imapereka ulemu wopereka hosting automation ndi kuwunika. Izi zinthu zimapereka kukhazikitsa m'mwayi wosonyeza domain ndi kusunga SSL certificate m'mwayi wopereka kwa Ultimate Multisite ndi Enhance Control Panel.
 
 **Kufotokozera Kofunsa:** Onani [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) kuti mwayi wosamwamba womukulu (community tips) ndi mavuto ena.
 
-## Zomwe Zili
+## Zomwe Zili {#features}
 - Kukhazikitsa domain kwa m'mwayi poyenera m'Ultimate Multisite
 - Kusunga SSL certificate kwa m'mwayi monga LetsEncrypt pamene DNS imapereka
 - Kusungira subdomain kwa zinthu zomwe zimapereka m'subdomain mode
 - Kukhazikitsa domain pamene mappings zimaperekedwa
 - Kuthandiza kukhazikitsa m'mwayi kuti muwone kudziwa API credentials
 
-## Zomwe Zilimo (Requirements)
+## Zomwe Zilimo (Requirements) {#requirements}
 
-### Zomwe Zili za M'mwayi (System Requirements)
+### Zomwe Zili za M'mwayi (System Requirements) {#system-requirements}
 - Enhance Control Panel imapereka ndimene imaperekedwa
 - WordPress Multisite imapereka pamene imapereka m'server ya Enhance kapena imapereka poyenera nayo
 
-### Kukhazikitsa API Access
+### Kukhazikitsa API Access {#api-access}
 Mukuphunzira kuti muli ndi ulemu wopereka (administrator access) kwa Enhance Control Panel kuti mupereke API tokens.
 
-## Kuperekera API Credentials Yanu
+## Kuperekera API Credentials Yanu {#getting-your-api-credentials}
 
-### 1. Kukhazikitsa API Token
+### 1. Kukhazikitsa API Token {#1-create-an-api-token}
 
 1. Kodi muli ndi ulemu wopereka (administrator) m'Enhance Control Panel?
 2. Onani **Settings** m'navigation menu.
@@ -104,7 +104,7 @@ Mukuphunzira kuti muli ndi ulemu wopereka (administrator access) kwa Enhance Con
 
 Pambere pa muli, **Access Token** na **Organization ID** pa utendeka. **Sazakani ngati muli monga momwe**, chifukwa token si utendeka pafupi.
 
-### 2. Get Your Organization ID
+### 2. Get Your Organization ID {#2-get-your-organization-id}
 
 Organization ID utendeka pa Access Tokens page m'mbo wopambwa (blue information box) wopambwa "Org ID: {your_id}".
 
@@ -115,7 +115,7 @@ Muli monga customer Organization ID m'mbo wopambwa:
 2. Kufuna **Manage customer** kwa customer wopambwa
 3. Muli monga URL - Organization ID ndi ma-alphanumeric characters pamwamba na `/customers/`
 
-### 3. Get Your Server ID
+### 3. Get Your Server ID {#3-get-your-server-id}
 
 Kuti mutendeka Server ID (muli monga momwezi wokonzekera domain):
 
@@ -132,7 +132,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID utendeka UUID format: `00000000-0000-0000-0000-000000000000`
 
-### 4. Get Your API URL
+### 4. Get Your API URL {#4-get-your-api-url}
 
 API URL ya wanu ndi URL ya Enhance Control Panel yanu yomwezi ndi `/api/` yopambwa:
 
@@ -144,9 +144,9 @@ https://your-enhance-panel.com/api/
 - Kutsatira domain pafupi pamwamba na `/api/`
 - Kutsatira HTTP pamwamba na HTTPS (HTTPS ndi yopambwa kuti muli wopambwa)
 
-## Configuration
+## Configuration {#configuration}
 
-### Required Constants
+### Required Constants {#required-constants}
 
 Tsimikani constants zimene zifunika mu file wanu `wp-config.php`:
 
@@ -156,7 +156,7 @@ define('WU_ENHANCE_API_TOKEN', 'your-bearer-token-here');
 define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 
-### Kufunga kwa Kutumia Integration Wizard
+### Kufunga kwa Kutumia Integration Wizard {#setup-via-integration-wizard}
 
 1. Mu admin ya WordPress, ndiupira **Ultimate Multisite** > **Settings**
 2. Uenda ku tab ya **Integrations**
@@ -171,17 +171,17 @@ Umaweza kuchagua:
 - Kuacha wizard uingize constants hizo moja kwa moja kwenye faili yako ya `wp-config.php`
 - Kunakili maelezo ya constants na kuziongeza mwenyewe
 
-## Usimbizo wa WordPress Unaongeza
+## Usimbizo wa WordPress Unaongeza {#additional-wordpress-configuration}
 
 Kupitia maoni kutoka kwa jamii ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), unaweza kuhitaji kufanya hizi mipangilio ya ziada:
 
-### Usimbizo wa .htaccess
+### Usimbizo wa .htaccess {#htaccess-configuration}
 
 Kama unapata matatizo na jinsi domain inavyounganishwa (domain mapping):
 1. Futa faili asili la Enhance `.htaccess`
 2. Badilisha kwa faili la standard WordPress Multisite `.htaccess`
 
-### Constants za Cookie
+### Constants za Cookie {#cookie-constants}
 
 Ongeza constants hizi kwenye `wp-config.php` ili kuhakikisha cookie zinashughulikiwa vizuri katika domains zilizounganishwa:
 
@@ -191,9 +191,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Jinsi Inavyofanya Kazi
+## Jinsi Inavyofanya Kazi {#how-it-works}
 
-### Wakati Domain Inapounganishwa (When a Domain is Mapped)
+### Wakati Domain Inapounganishwa (When a Domain is Mapped) {#when-a-domain-is-mapped}
 
 1. Muli wosombedi (user) amap custom domain m'Ultimate Multisite (opereka site lili ndi subdomain).
 2. Integration imapeto POST request ku Enhance API: `/servers/{server_id}/domains`
@@ -201,14 +201,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Pamene DNS imapita ku server yanu, Enhance imapanga SSL certificate m'LetsEncrypt kwawo
 5. Domain imapereka ndi HTTPS
 
-### Pamene Domain Imalimbidwa (When a Domain is Removed)
+### Pamene Domain Imalimbidwa (When a Domain is Removed) {#when-a-domain-is-removed}
 
 1. Mapeto domain mapping m'Ultimate Multisite
 2. Integration imapanga Enhance kuti ipe ID ya domain
 3. DELETE request imapeto ku: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance imalimbidwa domain ku server configuration yanu
 
-### Kufotokozera DNS ndi SSL Checking (DNS and SSL Checking)
+### Kufotokozera DNS ndi SSL Checking (DNS and SSL Checking) {#dns-and-ssl-checking}
 
 Ultimate Multisite imapereka zinthu zomwe zimapereka kuti muli woyamba DNS ndi SSL checking:
 - Muli ndi ulemu wopereka check interval m'**Domain Mapping Settings** (mwachidule: 300 seconds/5 minutes)
@@ -216,9 +216,9 @@ Ultimate Multisite imapereka zinthu zomwe zimapereka kuti muli woyamba DNS ndi S
 - Validity ya SSL certificate imapereka m'mwayi
 - Enhance imalimbidwa SSL automatically, chifukwa chiyenera kukonza SSL manually si yofunikira
 
-## Kufotokozera Setup (Verifying Setup)
+## Kufotokozera Setup (Verifying Setup) {#verifying-setup}
 
-### Kufotokozera Connection (Test the Connection)
+### Kufotokozera Connection (Test the Connection) {#test-the-connection}
 
 1. M'Integration Wizard, gulu step ya **Test Connection**
 2. Plugin imapanga kuti imapereka list ya domains ku server yanu
@@ -228,7 +228,7 @@ Ultimate Multisite imapereka zinthu zomwe zimapereka kuti muli woyamba DNS ndi S
    - Server ID ndi lili lolimba
    - Permissions zimapereka bwino
 
-### Pamene Muli Wopereka Domain (After Mapping a Domain)
+### Pamene Muli Wopereka Domain (After Mapping a Domain) {#after-mapping-a-domain}
 
 1. Mapeto test domain m'Ultimate Multisite
 2. Kufotokozera logs ya Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -238,9 +238,9 @@ Ultimate Multisite imapereka zinthu zomwe zimapereka kuti muli woyamba DNS ndi S
 
 Once DNS imapita, ufotokozera SSL imapereka m'mwayi
 
-## Kufunsa (Troubleshooting)
+## Kufunsa (Troubleshooting) {#troubleshooting}
 
-### Matenda a API Connection Issues
+### Matenda a API Connection Issues {#api-connection-issues}
 
 **Error: "Failed to connect to Enhance API"**
 - Tsintha `WU_ENHANCE_API_URL` kuphunzitsa `/api/` ku mutengo.
@@ -258,7 +258,7 @@ Once DNS imapita, ufotokozera SSL imapereka m'mwayi
 - Tsintha kuti Server ID ndi mu format wopereka UUID.
 - Tsintha kuti server imakwanira kuwepo m'Enhance panel yanu.
 
-### Domain Siyaperekedwa (Domain Not Added)
+### Domain Siyaperekedwa (Domain Not Added) {#domain-not-added}
 
 **Tsintha logs:**
 1. Tsintha ku **Ultimate Multisite** > **Logs**
@@ -271,7 +271,7 @@ Once DNS imapita, ufotokozera SSL imapereka m'mwayi
 - Kusakwaniridwa kwa API (tsintha kuti token ndi System Administrator role).
 - Server ID si yomwe yomonera m'Enhance.
 
-### Matenda a SSL Certificate Issues
+### Matenda a SSL Certificate Issues {#ssl-certificate-issues}
 
 **SSL siyaperekedwa:**
 - Tsintha kuti DNS imapereka ku IP ya server yanu.
@@ -285,7 +285,7 @@ Once DNS imapita, ufotokozera SSL imapereka m'mwayi
 2. Tsintha ndalama yanu ndipo tsintha status ya SSL yake.
 3. Mumakwanira kukhudza kuperekedwa kwa SSL ngati mukuwoneka.
 
-### DNS Check Interval
+### DNS Check Interval {#dns-check-interval}
 
 Mifondi ya domain au sertifikati za SSL zikachaka muda mrefu kuwasha:
 1. Nenda kwenye **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -293,7 +293,7 @@ Mifondi ya domain au sertifikati za SSL zikachaka muda mrefu kuwasha:
 3. Badilisha kutoka kiwango cha default cha sekunde 300 hadi thamani ndogo (chini zaidi: sekunde 10)
 4. **Kumbuka:** Vipimo vidogo vitapokea ukaguzi mara nyingi zaidi lakini vitakuwa na mzigo mkubwa kwenye server
 
-### Makosa ya Uthibitisho (Authentication Errors)
+### Makosa ya Uthibitisho (Authentication Errors) {#authentication-errors}
 
 **Makosa ya HTTP 401/403:**
 - Rudisha token yako ya API katika Enhance
@@ -301,7 +301,7 @@ Mifondi ya domain au sertifikati za SSL zikachaka muda mrefu kuwasha:
 - Angalia kwamba token haijakwisha muda wake
 - Hakikisha unatumia Organization ID sahihi (ingawa kwa kawaida haihitajiki kwenye URL)
 
-### Uchambuzi wa Log
+### Uchambuzi wa Log {#log-analysis}
 
 Washa logging ya kina:
 ```php
@@ -315,15 +315,15 @@ Kisha angalia logs hapa:
 - WordPress debug log: `wp-content/debug.log`
 - Enhance panel logs: Inapatikana kwenye kiolesura cha admin la Enhance
 
-## Marejeo ya API (API Reference)
+## Marejeo ya API (API Reference) {#api-reference}
 
-### Uthibitisho (Authentication)
+### Uthibitisho (Authentication) {#authentication}
 Maombi yote ya API hutumia uthibitisho wa Bearer token:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Endpoints Zinazotumika Mara kwa Mara
+### Endpoints Zinazotumika Mara kwa Mara {#common-endpoints-used}
 
 **Ondoa Servers:**
 ```
@@ -346,30 +346,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Documentation Kamili ya API
+### Documentation Kamili ya API {#full-api-documentation}
 Documentation kamili ya API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Mbinu Bora (Best Practices)
+## Mbinu Bora (Best Practices) {#best-practices}
 
-### Security
+### Security {#security}
 - **Pangakira koma kule API tokens mu version control**
 - Store tokens m' `wp-config.php` kovu kovu, kovu kovu kovu Git
 - Use tokens ndi mavuto omwe ali ndi ulemu (System Administrator kuti muli ndi kugwirizana kwa mpaka)
 - Set expiry dates za tokens zokhudza environments zomwe zimapangidwa
 - Rotate tokens m'maka
 
-### Performance
+### Performance {#performance}
 - Use default DNS check interval (300 seconds) kuti muwone kupitiliza pa API calls
 - Monitor resources za server ya Enhance pamene mukugwiritsa ntchito operations za domain zosiyanasiyana kwambiri
 - Consider staggering domain additions ngati muli ndi ku mapangidwa kwa domain zingapo m'maka
 
-### Monitoring
+### Monitoring {#monitoring}
 - Check logs za Ultimate Multisite m'maka kuti muwone mavuto a integration
 - Set up monitoring pamene domain zikuyenera kupangidwa (failed domain additions)
 - Verify SSL certificates kuti zimapangidwa bwino
 - Keep eye pa capacity ya server ya Enhance ndi mapangidwa za domain
 
-## Additional Resources
+## Additional Resources {#additional-resources}
 
 - **Enhance Official Documentation:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Documentation:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -377,7 +377,7 @@ Documentation kamili ya API: [https://apidocs.enhance.com](https://apidocs.enhan
 - **GitHub Discussion:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Domain Mapping Guide:** Onani wiki page "How to Configure Domain Mapping v2"
 
-## Support
+## Support {#support}
 
 Ngati muli ndi mavuto:
 1. Check Troubleshooting section pamwamba
@@ -386,7 +386,7 @@ Ngati muli ndi mavuto:
 4. Contact Enhance support kuti muli ndi mavuto omwe ali ndi panel
 5. Create discussion yanu yanu yomwe ndi error logs zosiyanasiyana kuti muli ndi chithandizo cha community
 
-## Notes
+## Notes {#notes}
 
 - Iziwoni, ijiwera imwezi ya domain aliases kale; Enhance imapereka SSL kwa motorero.
 - Iziwera imwezi ya integration imapereka mapeto omwezi (custom domain mappings) ndi sites zomwe zili m'subdomain.

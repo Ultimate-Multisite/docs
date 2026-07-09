@@ -3,17 +3,17 @@ title: 'Lição 9: Preços para o Lucro'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lição 9: Preços para Lucro
+# Lição 9: Preços para Lucro {#lesson-9-pricing-for-profit}
 
 Na Lição 5, definimos os preços iniciais para os planos FitSite. Agora refinamos a estratégia de preços com técnicas que aumentam a receita, incentivam upgrades e reduzem o churn.
 
-## Onde Ficámos
+## Onde Ficámos {#where-we-left-off}
 
 FitSite tem planos, modelos, checkout, branding e onboarding implementados. O preço inicial era $49/$99/$199 por mês. Agora fazemos esse preço trabalhar mais.
 
-## Princípios de Preços para Plataformas de Nicho
+## Princípios de Preços para Plataformas de Nicho {#pricing-principles-for-niche-platforms}
 
-### Defina o Preço com Base no Valor, Não no Custo
+### Defina o Preço com Base no Valor, Não no Custo {#price-on-value-not-cost}
 
 Os seus custos de alojamento podem ser $5-$15 por site de cliente. Isso não significa que o seu preço deva ser $20. Não está a vender alojamento. Está a vender:
 
@@ -24,7 +24,7 @@ Os seus custos de alojamento podem ser $5-$15 por site de cliente. Isso não sig
 
 Defina o preço com base no valor que entrega, não no custo de o entregar.
 
-### Ancore em Alternativas
+### Ancore em Alternativas {#anchor-to-alternatives}
 
 Quando o proprietário de um estúdio de fitness avalia o FitSite, compara-o com:
 
@@ -34,7 +34,7 @@ Quando o proprietário de um estúdio de fitness avalia o FitSite, compara-o com
 
 A $49-$199/mês, FitSite é mais barato do que um programador, mais capaz do que construtores genéricos e infinitamente melhor do que não ter site.
 
-## Implementar Variações de Preço
+## Implementar Variações de Preço {#implementing-price-variations}
 
 O preço anual incentiva o compromisso e reduz o churn. Navegue até ao separador **Price Variations** de cada plano e adicione opções anuais:
 
@@ -46,12 +46,12 @@ O preço anual incentiva o compromisso e reduz o churn. Navegue até ao separado
 
 Adicione um campo **Period Selection** ao seu formulário de checkout para que os clientes possam alternar entre faturação mensal e anual. Consulte [Formulários de Checkout](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Porque o Preço Anual Funciona
+### Porque o Preço Anual Funciona {#why-annual-pricing-works}
 
 - **Para si**: Dinheiro adiantado, menor churn (clientes que pagam anualmente têm menor probabilidade de cancelar a meio do período)
 - **Para eles**: Poupanças reais, previsibilidade orçamental
 
-## Taxas de Configuração
+## Taxas de Configuração {#setup-fees}
 
 Considere uma taxa de configuração única para planos que incluem configuração assistida:
 
@@ -61,7 +61,7 @@ Considere uma taxa de configuração única para planos que incluem configuraç�
 
 Configure as taxas de configuração na secção de preços de cada plano. Consulte [Criar o Seu Primeiro Produto de Subscrição](/user-guide/configuration/creating-your-first-subscription-product) para mais detalhes.
 
-## Períodos de Teste
+## Períodos de Teste {#trial-periods}
 
 Oferecer um teste reduz o atrito no registo, mas introduz o risco de não conversão. Para FitSite:
 
@@ -70,11 +70,11 @@ Oferecer um teste reduz o atrito no registo, mas introduz o risco de não conver
 
 Configure o teste na secção de preços do plano Starter, ativando o alternador **Offer Trial** e definindo a duração para 7 dias.
 
-### Fazer com que os Testes Convertam
+### Fazer com que os Testes Convertam {#making-trials-convert}
 
 Um teste só funciona se o cliente experienciar valor durante o período de teste. A sua sequência de onboarding (Lição 8) é crítica aqui -- os emails de boas-vindas devem ser programados para impulsionar o envolvimento dentro da janela de 7 dias.
 
-## Códigos de Desconto
+## Códigos de Desconto {#discount-codes}
 
 Crie códigos de desconto estratégicos para objetivos específicos:
 
@@ -88,7 +88,7 @@ Navegue até **Ultimate Multisite > Discount Codes** para os criar. Consulte [Cr
 Os descontos devem ser ferramentas estratégicas, não elementos permanentes. Se todos recebem um desconto, não é um desconto -- é o seu preço real. Use-os para campanhas específicas, recomendações e promoções por tempo limitado.
 :::
 
-## Gestão de Impostos
+## Gestão de Impostos {#tax-handling}
 
 Se opera numa jurisdição que exige cobrança de impostos:
 
@@ -98,7 +98,7 @@ Se opera numa jurisdição que exige cobrança de impostos:
 
 Consulte [Gestão de Impostos](/user-guide/payment-gateways/tax-handling) para configuração detalhada. Se serve clientes internacionalmente, considere o [addon de IVA](/addons/vat) para conformidade na UE.
 
-## Rever os Seus Preços
+## Rever os Seus Preços {#reviewing-your-pricing}
 
 Após o lançamento, reveja os preços trimestralmente. Analise:
 
@@ -107,7 +107,7 @@ Após o lançamento, reveja os preços trimestralmente. Analise:
 - **Churn por plano**: Se clientes anuais fazem menos churn, promova mais o preço anual
 - **Preços da concorrência**: Quanto cobram as alternativas? Está posicionado corretamente?
 
-## A Rede FitSite Até Agora
+## A Rede FitSite Até Agora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## O Que Criámos Nesta Lição
+## O Que Criámos Nesta Lição {#what-we-built-this-lesson}
 
 - **Preços anuais** com 20% de desconto para incentivar o compromisso
 - **Taxas de configuração** nos escalões superiores para cobrir o esforço de integração

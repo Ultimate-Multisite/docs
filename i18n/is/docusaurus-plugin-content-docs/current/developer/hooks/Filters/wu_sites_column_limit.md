@@ -4,10 +4,10 @@ title: Sía - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Sía: wu_sites_column_limit
+# Sía: wu_sites_column_limit {#filter-wusitescolumnlimit}
 
 Sía til að breyta gildinu fyrir get pluginssites inni í netinu.
 
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/admin/class-network-usage-columns.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin/class-network-usage-columns.php#L77) í línu 77

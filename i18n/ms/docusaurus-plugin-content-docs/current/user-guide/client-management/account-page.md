@@ -3,7 +3,7 @@ title: Halaman Account Klien
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Halaman Account Pelanggan Anda (v2)
+# Halaman Account Pelanggan Anda (v2) {#your-clients-account-page-v2}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
@@ -11,7 +11,7 @@ Apabila pelanggan melanggan sesuatu plan pada rangkaian anda, mereka mendapat ak
 
 Dalam tutorial ini, kami akan membimbing anda melalui halaman Account pelanggan dan anda akan melihat apa yang pelanggan anda boleh lihat dan lakukan di dalamnya.
 
-## Halaman Account
+## Halaman Account {#the-account-page}
 
 Halaman Account boleh diakses dengan mengklik **Account** di dalam Dashboard pelanggan anda.
 
@@ -27,7 +27,7 @@ Selepas pelanggan mengklik padanya, mereka akan melihat gambaran keseluruhan kea
 
 Mereka juga boleh menukar keahlian kepada plan lain, atau membeli pakej atau perkhidmatan lain yang anda tawarkan. Mari kita lihat setiap bahagian secara berasingan.
 
-### Gambaran Keseluruhan Keahlian Anda:
+### Gambaran Keseluruhan Keahlian Anda: {#your-membership-overview}
 
 Blok pertama betul-betul di bawah nama laman web pelanggan anda menunjukkan gambaran keseluruhan plan semasa mereka dan perkhidmatan/pakej yang dibeli bersamanya. Blok ini juga menunjukkan nombor keahlian, jumlah awal yang dibayar untuknya, berapa kos plan dan sebarang perkhidmatan/pakej serta berapa kali mereka dibilkan untuk keahlian ini. Mereka juga boleh melihat sama ada keahlian itu **Aktif** , **Tamat Tempoh** atau **Dibatalkan**.
 
@@ -43,7 +43,7 @@ Kini, jika pelanggan anda memilih untuk membeli pakej atau perkhidmatan untuk ke
 
 Ambil perhatian bahawa kod kupon tidak boleh ditambahkan pada halaman perubahan keahlian ini. Jika pelanggan menggunakan kod kupon pada pembelian keahlian pertama, kod itu juga akan digunakan pada keahlian baharu ini.
 
-### Mengemas Kini Alamat Pengebilan:
+### Mengemas Kini Alamat Pengebilan: {#updating-the-billing-address}
 
 Pada halaman Account, pelanggan anda juga boleh mengemas kini alamat pengebilan mereka. Mereka hanya perlu mengklik **Kemas Kini** di sebelah _Alamat Pengebilan_.
 
@@ -53,7 +53,7 @@ Tetingkap baharu akan muncul kepada pelanggan anda. Apa yang perlu mereka lakuka
 
 ![Borang kemas kini alamat pengebilan](/img/account-page/billing-address-form.png)
 
-### Menukar Templat Tapak:
+### Menukar Templat Tapak: {#changing-the-site-template}
 
 Untuk membenarkan pelanggan anda menukar templat tapak mereka, anda perlu pergi ke **Ultimate Multisite > Tetapan > Tapak** dan menghidupkan pilihan **Benarkan Penukaran Templat**.
 
@@ -81,7 +81,7 @@ Selepas menghidupkan pengesahan dan mengklik **Proses Penukaran** , templat tapa
 
 Pelanggan juga boleh menggunakan **Reset current template** daripada panel ini apabila mereka perlu menetapkan semula tapak kembali kepada templat yang sedang ditetapkan. Seperti menukar kepada templat lain, menetapkan semula templat boleh menimpa kandungan tapak, jadi pelanggan hanya patut mengesahkannya apabila mereka memahami tindakan tetapan semula tersebut.
 
-### Menambah Domain Tersuai:
+### Menambah Domain Tersuai: {#adding-custom-domains}
 
 Pelanggan anda juga akan mempunyai pilihan untuk menambah domain tersuai bagi pelan ini pada halaman account mereka. Untuk membenarkan pelanggan anda menggunakan domain tersuai, pergi ke **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Selepas mengklik **Next Step** , pelanggan anda boleh menambah nama domain tersu
 
 Selepas mengklik **Add Domain** , domain tersebut akan ditambah ke account pelanggan anda. Apa yang perlu mereka lakukan sekarang ialah menukar rekod DNS domain tersuai ini pada pendaftar domain mereka.
 
-### Menukar Kata Laluan:
+### Menukar Kata Laluan: {#changing-password}
 
 Di dalam dashboard account, pelanggan anda juga boleh menukar kata laluan mereka dengan mengklik **Change Password**.
 
@@ -125,7 +125,7 @@ Ini akan memaparkan tetingkap baharu di mana pelanggan anda perlu mengisi kata l
 
 ![Borang tukar kata laluan dengan medan kata laluan semasa dan baharu](/img/account-page/change-password-form.png)
 
-### Zon Bahaya:
+### Zon Bahaya: {#danger-zone}
 
 Kami juga mempunyai dua pilihan yang dipaparkan pada bahagian **Danger Zone**: **Delete Site** dan **Delete Account**. Kedua-duanya berada pada bahagian Danger Zone kerana kedua-dua tindakan ini tidak boleh dibatalkan. Jika pelanggan anda memadamkan laman web atau account mereka, mereka tidak boleh memulihkannya semula.
 

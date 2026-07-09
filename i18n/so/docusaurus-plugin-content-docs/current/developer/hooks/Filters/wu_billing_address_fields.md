@@ -4,23 +4,23 @@ title: Shaandheeye - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Shaandheeye: wu_billing_address_fields
+# Shaandheeye: wu_billing_address_fields {#filter-wubillingaddressfields}
 
 U oggolow horumariyeyaasha plugin inay shaandheeyaan beeraha cinwaanka billing.
 
-## Halbeegyada
+## Halbeegyada {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
 | $fields | `array` | Array-ga Billing Address. |
 | $zip_only | `bool` | Haddii aan u baahan nahay oo keliya zip iyo waddan. |
 
-### Laga bilaabo
+### Laga bilaabo {#since}
 
 - 2.0.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/objects/class-billing-address.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/objects/class-billing-address.php#L348) safka 348
 
 
-## Soo-celinta
+## Soo-celinta {#returns}

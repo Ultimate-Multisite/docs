@@ -3,7 +3,7 @@ title: Referensi Kemampuan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referensi Abilities
+# Referensi Abilities {#abilities-reference}
 
 Abilities adalah aksi atomik yang dapat dipanggil oleh Gratis AI Agent pada instalasi WordPress Anda. Setiap ability adalah class PHP terdaftar yang mengekspos skema JSON — agent membaca skema ini saat runtime untuk memahami parameter apa yang diperlukan dan apa yang dikembalikan oleh ability tersebut.
 
@@ -11,11 +11,11 @@ Halaman ini mendokumentasikan semua abilities yang disertakan dengan Gratis AI A
 
 ---
 
-## Jenis Post Kustom
+## Jenis Post Kustom {#custom-post-types}
 
 Abilities ini mengelola jenis post kustom (CPT) yang didaftarkan melalui agent. Pendaftaran disimpan ke tabel opsi WordPress sehingga tetap bertahan setelah plugin dinonaktifkan dan diaktifkan kembali.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Mendaftarkan jenis post kustom baru.
 
@@ -50,7 +50,7 @@ Mendaftarkan jenis post kustom baru.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Mengembalikan semua jenis post kustom yang didaftarkan oleh agent.
 
@@ -73,7 +73,7 @@ Mengembalikan semua jenis post kustom yang didaftarkan oleh agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Membatalkan pendaftaran jenis post kustom yang sebelumnya didaftarkan oleh agent. Post yang sudah ada dari jenis tersebut tetap berada di database tetapi tidak lagi dapat diakses melalui jenis post tersebut.
 
@@ -87,11 +87,11 @@ Membatalkan pendaftaran jenis post kustom yang sebelumnya didaftarkan oleh agent
 
 ---
 
-## Taksonomi Kustom
+## Taksonomi Kustom {#custom-taxonomies}
 
 Abilities ini mengelola taksonomi kustom. Seperti CPT, pendaftaran taksonomi disimpan secara persisten.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Mendaftarkan taksonomi kustom baru.
 
@@ -123,7 +123,7 @@ Mendaftarkan taksonomi kustom baru.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Mengembalikan semua taksonomi kustom yang didaftarkan oleh agent.
 
@@ -146,7 +146,7 @@ Mengembalikan semua taksonomi kustom yang didaftarkan oleh agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Membatalkan pendaftaran taksonomi kustom yang sebelumnya didaftarkan oleh agent.
 
@@ -160,11 +160,11 @@ Membatalkan pendaftaran taksonomi kustom yang sebelumnya didaftarkan oleh agent.
 
 ---
 
-## Sistem Desain
+## Sistem Desain {#design-system}
 
 Abilities sistem desain memodifikasi tampilan visual situs WordPress — dari CSS kustom hingga pola blok dan logo situs.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Menambahkan CSS ke `<head>` situs melalui `wp_add_inline_style`. CSS disimpan dalam opsi `gratis_ai_agent_custom_css` dan di-dequeue dengan bersih saat ability direset.
 
@@ -190,7 +190,7 @@ Menambahkan CSS ke `<head>` situs melalui `wp_add_inline_style`. CSS disimpan da
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Mendaftarkan pola blok yang dapat digunakan kembali di pustaka pola WordPress.
 
@@ -209,7 +209,7 @@ Mendaftarkan pola blok yang dapat digunakan kembali di pustaka pola WordPress.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Mencantumkan semua pola blok yang didaftarkan oleh agent.
 
@@ -231,7 +231,7 @@ Mencantumkan semua pola blok yang didaftarkan oleh agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Mengatur logo situs WordPress ke ID lampiran tertentu atau URL gambar jarak jauh. Ketika URL diberikan, gambar diunduh dan diimpor ke Media Library.
 
@@ -248,7 +248,7 @@ Salah satu dari `attachment_id` atau `url` harus diberikan.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Menerapkan preset warna/tipografi bernama ke `theme.json` (atau `global-styles`) milik tema aktif. Preset adalah paket terkurasi yang dikelola oleh tim Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Menerapkan preset warna/tipografi bernama ke `theme.json` (atau `global-styles`)
 
 ---
 
-## Gaya Global
+## Gaya Global {#global-styles}
 
 Kemampuan Gaya Global membaca dan menulis nilai theme.json melalui API Gaya Global WordPress, memengaruhi semua blok dan templat di seluruh situs.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Mengembalikan konfigurasi gaya global saat ini.
 
@@ -291,7 +291,7 @@ Mengembalikan konfigurasi gaya global saat ini.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Memperbarui satu atau lebih nilai dalam konfigurasi gaya global.
 
@@ -318,7 +318,7 @@ Memperbarui satu atau lebih nilai dalam konfigurasi gaya global.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Mengatur ulang semua perubahan gaya global yang diterapkan agen, memulihkan default tema.
 
@@ -328,11 +328,11 @@ Mengatur ulang semua perubahan gaya global yang diterapkan agen, memulihkan defa
 
 ---
 
-## Menu Navigasi
+## Menu Navigasi {#navigation-menus}
 
 Kemampuan Menu Navigasi membuat dan mengelola menu navigasi WordPress beserta itemnya.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Membuat menu navigasi WordPress baru.
 
@@ -347,7 +347,7 @@ Membuat menu navigasi WordPress baru.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Mengganti nama menu atau menetapkannya kembali ke lokasi tema.
 
@@ -363,7 +363,7 @@ Mengganti nama menu atau menetapkannya kembali ke lokasi tema.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Menambahkan item ke menu navigasi yang sudah ada.
 
@@ -383,7 +383,7 @@ Menambahkan item ke menu navigasi yang sudah ada.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Menghapus item dari menu navigasi.
 
@@ -397,7 +397,7 @@ Menghapus item dari menu navigasi.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Mencantumkan semua menu navigasi WordPress, termasuk lokasi tema yang ditetapkan.
 
@@ -420,11 +420,11 @@ Mencantumkan semua menu navigasi WordPress, termasuk lokasi tema yang ditetapkan
 
 ---
 
-## Manajemen Opsi
+## Manajemen Opsi {#options-management}
 
 Kemampuan Opsi membaca dan menulis opsi WordPress melalui `get_option` / `update_option`. Daftar blokir keamanan bawaan mencegah modifikasi tidak disengaja pada pengaturan kritis.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Membaca opsi WordPress.
 
@@ -440,7 +440,7 @@ Mengembalikan kesalahan jika `option_name` ada dalam daftar blokir keamanan.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Menulis opsi WordPress.
 
@@ -458,7 +458,7 @@ Mengembalikan error jika `option_name` ada dalam safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Menghapus sebuah opsi WordPress.
 
@@ -474,7 +474,7 @@ Mengembalikan error jika `option_name` ada dalam safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Mencantumkan opsi WordPress yang cocok dengan pola.
 
@@ -498,11 +498,11 @@ Mencantumkan opsi WordPress yang cocok dengan pola.
 
 ---
 
-## Manajemen Konten
+## Manajemen Konten {#content-management}
 
 Kemampuan Manajemen Konten membuat dan mengedit postingan serta halaman WordPress. ID postingan dikembalikan sehingga langkah berikutnya dalam rencana multi-kemampuan dapat merujuk konten yang dibuat.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Membuat postingan WordPress baru, halaman, atau entri tipe postingan kustom.
 
@@ -537,7 +537,7 @@ Membuat postingan WordPress baru, halaman, atau entri tipe postingan kustom.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Memperbarui postingan atau halaman WordPress yang sudah ada.
 
@@ -567,7 +567,7 @@ Memperbarui postingan atau halaman WordPress yang sudah ada.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Membuat beberapa postingan dalam satu pemanggilan kemampuan, mengurangi perjalanan bolak-balik selama pembuatan situs atau impor konten massal. Postingan dibuat secara berurutan; jika salah satu gagal, yang lain tetap dilanjutkan dan kegagalan dilaporkan dalam array hasil.
 
@@ -619,7 +619,7 @@ Membuat beberapa postingan dalam satu pemanggilan kemampuan, mengurangi perjalan
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Menetapkan gambar unggulan (thumbnail postingan) ke postingan atau halaman yang sudah ada. Menerima ID lampiran Media Library yang sudah ada atau URL gambar jarak jauh; ketika URL diberikan, gambar diunduh dan diimpor secara otomatis.
 
@@ -638,7 +638,7 @@ Salah satu dari `attachment_id` atau `url` harus disediakan.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Membuat formulir kontak menggunakan plugin formulir aktif (Contact Form 7, WPForms, Fluent Forms, atau Gravity Forms, tergantung yang terinstal). Mengembalikan shortcode yang dapat disematkan di postingan atau halaman apa pun.
 
@@ -691,11 +691,11 @@ Membuat formulir kontak menggunakan plugin formulir aktif (Contact Form 7, WPFor
 
 ---
 
-## Tinjauan Visual
+## Tinjauan Visual {#visual-review}
 
 Kemampuan Tinjauan Visual memungkinkan agen mengambil tangkapan layar halaman live dan menganalisisnya, memungkinkan tinjauan desain otonom, perbandingan sebelum/sesudah, dan pemeriksaan regresi visual tanpa memerlukan ekstensi browser apa pun.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Mengambil tangkapan layar halaman WordPress pada URL tertentu menggunakan browser headless sisi server. Gambar disimpan ke Media Library dan URL CDN dikembalikan.
 
@@ -724,7 +724,7 @@ Mengambil tangkapan layar halaman WordPress pada URL tertentu menggunakan browse
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Mengambil dua tangkapan layar dan mengembalikan skor diff visual plus gambar diff yang menyorot area yang berubah. Berguna untuk mengonfirmasi bahwa perubahan desain menghasilkan hasil yang diharapkan atau untuk mendeteksi regresi yang tidak disengaja.
 
@@ -754,7 +754,7 @@ Mengambil dua tangkapan layar dan mengembalikan skor diff visual plus gambar dif
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Mengambil tangkapan layar halaman dan mengirimkannya ke model bahasa untuk analisis visual. Mengembalikan penilaian terstruktur yang mencakup tata letak, tipografi, penggunaan warna, dan masalah aksesibilitas.
 
@@ -785,11 +785,11 @@ Mengambil tangkapan layar halaman dan mengirimkannya ke model bahasa untuk anali
 
 ---
 
-## Kemampuan yang Dapat Diinstal
+## Kemampuan yang Dapat Diinstal {#installable-abilities}
 
 Registry Kemampuan yang Dapat Diinstal memungkinkan Anda memperluas agen dengan paket kemampuan tambahan yang didistribusikan sebagai plugin WordPress. Setiap paket mendaftarkan satu atau beberapa kemampuan menggunakan API kemampuan standar.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Mengembalikan katalog paket kemampuan yang tersedia untuk instalasi dari registry.
 
@@ -818,7 +818,7 @@ Mengembalikan katalog paket kemampuan yang tersedia untuk instalasi dari registr
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Mengunduh dan mengaktifkan paket ability dari registry.
 
@@ -832,7 +832,7 @@ Mengunduh dan mengaktifkan paket ability dari registry.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Mengkueri registry ability untuk menemukan plugin terbaik bagi kasus penggunaan yang dijelaskan dan, secara opsional, menginstalnya.
 

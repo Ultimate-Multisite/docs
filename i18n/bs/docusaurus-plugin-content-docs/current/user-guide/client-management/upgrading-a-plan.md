@@ -3,7 +3,7 @@ title: Nadogradnja plana
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Nadogradnja plana (v2)
+# Nadogradnja plana (v2) {#upgrading-a-plan-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
@@ -41,7 +41,7 @@ Nakon što se proces plaćanja završi, novi proizvod(i) bit će dodati na raču
 
 ##
 
-## Nadogradnja i ponizanje (Upgrade and Downgrade Paths)
+## Nadogradnja i ponizanje (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Na svakom vašem proizvodu, bit će vam dostupna kartica **Up & Downgrades**. Prva opcija na toj kartici je polje nazvano **Plan Group**.
 

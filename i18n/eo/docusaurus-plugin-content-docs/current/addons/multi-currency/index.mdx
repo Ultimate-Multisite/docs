@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency ebligas al via reto akcepti pagojn en pluraj valutoj. Ĝi aŭtomate konvertas prezojn uzante vivajn aŭ manajn kurzojn, permesas al vi agordi precizajn po-produktajn prezojn por ajna valuto, kaj detektas la preferatan valuton de ĉiu vizitanto per geolokigo — ĉio administrata el unu sola administra Dashboard.
 
-## Ĉefaj Trajtoj
+## Ĉefaj Trajtoj {#key-features}
 
 - **Aŭtomata kurzokonverto** — prezoj estas konvertataj el via baza valuto uzante kurzojn prenitajn de via elektita provizanto
 - **Po-produktaj prezaj superregoj** — agordu precizajn valut-specifajn prezojn por ajna produkto por preteriri aŭtomatan konverton
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency ebligas al via reto akcepti pagojn en pluraj 
 - **Geolokiga valuta detekto** — aŭtomate antaŭelektas la valuton kiu kongruas kun la lando de la vizitanto
 - **Administra Dashboard** — administru aktivajn valutojn, kurzojn, kaj provizantajn agordojn el unu loko
 
-## Postuloj
+## Postuloj {#requirements}
 
 - Ultimate Multisite 2.0.0 aŭ pli nova
 - WordPress Multisite-instalaĵo
 - PHP 7.4 aŭ pli nova
 
-## Instalado
+## Instalado {#installation}
 
 1. Alŝutu la kromprogramajn dosierojn al `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktivigu la kromprogramon per la ekrano **Kromprogramoj** en WordPress (Rete Aktivigi)
 3. Iru al **Ultimate Multisite → Multi-Currency** por malfermi la administran Dashboard
 4. Aldonu la valutojn kiujn vi volas akcepti kaj agordu vian kurzan provizanton
 
-## Agordo
+## Agordo {#configuration}
 
-### Administra Dashboard
+### Administra Dashboard {#admin-dashboard}
 
 La administra Dashboard de Multi-Currency (**Ultimate Multisite → Multi-Currency**) estas la centra loko por:
 
@@ -44,7 +44,7 @@ La administra Dashboard de Multi-Currency (**Ultimate Multisite → Multi-Curren
 - Revizii aktualajn kurzojn por ĉiuj aktivaj valutoj
 - Agordi manajn kurzojn kiam aŭtomataj provizantoj ne taŭgas
 
-### Kurzaj Provizantoj
+### Kurzaj Provizantoj {#exchange-rate-providers}
 
 | Provizanto | Priskribo |
 |---|---|
@@ -55,7 +55,7 @@ La administra Dashboard de Multi-Currency (**Ultimate Multisite → Multi-Curren
 
 Elektu vian provizanton sub **Ultimate Multisite → Multi-Currency → Agordoj → Kurza Provizanto**. Kurzoj povas esti refreŝigitaj permane iam ajn aŭ planitaj por aŭtomate ĝisdatigiĝi.
 
-### Po-Produktaj Prezaj Superregoj
+### Po-Produktaj Prezaj Superregoj {#per-product-pricing-overrides}
 
 Kiam aŭtomata konverto ne estas sufiĉe preciza, vi povas agordi precizan prezon por specifa valuto ĉe ajna produkto:
 
@@ -66,7 +66,7 @@ Kiam aŭtomata konverto ne estas sufiĉe preciza, vi povas agordi precizan prezo
 
 Produktoj sen superrego uzas la konvertitan prezon el via baza valuto.
 
-### Valuta Elektila Kampo por Registriĝo
+### Valuta Elektila Kampo por Registriĝo {#currency-selector-signup-field}
 
 La valuta elektila kampo povas esti aldonita al via registriĝa/pagfina fluo por ke klientoj elektu sian preferatan valuton dum registriĝo:
 
@@ -76,7 +76,7 @@ La valuta elektila kampo povas esti aldonita al via registriĝa/pagfina fluo por
 
 La elektita valuto estas konservata kun la abono kaj uzata por ĉiu posta fakturado.
 
-### Geolokiga Valuta Detekto
+### Geolokiga Valuta Detekto {#geolocation-based-currency-detection}
 
 Kiam geolokiga detekto estas ebligita, la aldonaĵo mapas la landon de la vizitanto al valuto kaj antaŭelektas ĝin en la valuta elektila kampo. Por ebligi:
 
@@ -86,27 +86,27 @@ Kiam geolokiga detekto estas ebligita, la aldonaĵo mapas la landon de la vizita
 
 Se neniu mapado ekzistas por la lando de vizitanto, la baza valuto de la reto estas uzata kiel rezerva opcio.
 
-## Oftaj Demandoj
+## Oftaj Demandoj {#frequently-asked-questions}
 
-### Kio okazas se kurza provizanto ne disponeblas?
+### Kio okazas se kurza provizanto ne disponeblas? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 La aldonaĵo revenas al la lastaj sukcese prenitaj kurzoj. Se neniuj kurzoj iam estis prenitaj, ĝi revenas al la manaj kurzoj kiujn vi agordis. Oni rekomendas agordi manajn kurzojn kiel sekurecan reton.
 
-### Ĉu mi povas uzi malsamajn provizantojn por malsamaj valutoj?
+### Ĉu mi povas uzi malsamajn provizantojn por malsamaj valutoj? {#can-i-use-different-providers-for-different-currencies}
 
 Ne — unu provizanto estas aktiva samtempe por ĉiuj valutoj. Uzu **Mana** se vi bezonas plenan kontrolon super individuaj kurzoj.
 
-### Ĉu geolokigo postulas apartan kromprogramon?
+### Ĉu geolokigo postulas apartan kromprogramon? {#does-geolocation-require-a-separate-plugin}
 
 Neniu ekstera geolokiga kromprogramo estas postulata. La aldonaĵo uzas la enkonstruitan IP-al-landa detekton de WordPress. Por pli alta precizeco, dediĉita geolokiga servo povas esti integrita per la provizitaj filtrilaj hokoj.
 
-### Ĉu po-produktaj superregoj aplikiĝas antaŭ aŭ post imposto?
+### Ĉu po-produktaj superregoj aplikiĝas antaŭ aŭ post imposto? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Po-produktaj superregoj agordas la antaŭimpostan prezon en la cela valuto. Imposto estas kalkulata aldone al la superrega prezo uzante vian ekzistantan impostan agordon.
 
-## Ŝanĝprotokolo
+## Ŝanĝprotokolo {#changelog}
 
-### Versio 1.0.0 — Eldonita je 2026-04-02
+### Versio 1.0.0 — Eldonita je 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nova: Plurvaluta subteno kun aŭtomata kurzokonverto
 - Nova: Po-produktaj prezaj superregoj por precizaj valut-specifaj prezoj

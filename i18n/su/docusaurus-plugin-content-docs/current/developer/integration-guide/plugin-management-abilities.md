@@ -3,11 +3,11 @@ title: Kamampuhan Ngatur Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kamampuh Ngatur Plugin
+# Kamampuh Ngatur Plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 hadir jeung **7 kamampuh ngatur plugin** anu bisa dipaké ku AI assistant salila paguneman. Kamampuh ieu nyadiakeun kadali programatik kana plugin WordPress anu dipasang ngaliwatan [Sistem Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Ringkesan Kamampuh
+## Ringkesan Kamampuh {#abilities-overview}
 
 | Kamampuh | Slug | Pedaran |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 hadir jeung **7 kamampuh ngatur plugin** anu bisa dipaké
 | Pasang Plugin | `install_plugin` | Masang plugin sandboxed kana diréktori plugin WordPress live. |
 | Aktipkeun Plugin | `activate_plugin` | Ngaktipkeun plugin sandboxed dina lingkungan sandbox wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Installer plugin ngatur operasi sistem file nalika masang atawa mupus plugin. Paripolah utama:
 
@@ -28,7 +28,7 @@ Installer plugin ngatur operasi sistem file nalika masang atawa mupus plugin. Pa
 - **Apdet**: Ngaganti file plugin anu geus aya. Ngadinonaktipkeun plugin saméméh nulis pikeun nyingkahan kasalahan kaayaan parsial.
 - **Pupus dumasar slug**: Manggihan diréktori plugin dumasar slug, ngadinonaktipkeun dina sakabéh situs, tuluy mupus diréktorina.
 
-### Ngadaptarkeun Handler Pamasangan Kustom
+### Ngadaptarkeun Handler Pamasangan Kustom {#registering-a-custom-install-handler}
 
 Anjeun bisa hook kana lifecycle pamasangan maké aksi `gratis_ai_plugin_installer_before_install` jeung `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 Kamampuh didaptarkeun ngaliwatan **registry ékosistem plugin**. Registry nyambungkeun slug kamampuh ka kelas handler-na sarta muka éta ka dispatcher tool AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integrasi HookScanner
+## Integrasi HookScanner {#hookscanner-integration}
 
 Kamampuh `create_plugin` jeung `update_plugin` sacara otomatis ngajalankeun **HookScanner** kana code anu kakara dihasilkeun. HookScanner mulangkeun daptar hook action jeung filter WordPress anu didaptarkeun ku plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner sacara otomatis ngalangkungan diréktori `vendor/` jeung `node_modules/`.
 
-## Arsitéktur Job Async
+## Arsitéktur Job Async {#async-job-architecture}
 
 Operasi plugin anu lila jalan (generate, install) dikirim salaku **job async** jeung palacak kamajuan live. Antarmuka obrolan AI nge-poll kamajuan sarta ngalirkeun apdet status ka pamaké:
 

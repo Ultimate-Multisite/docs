@@ -3,13 +3,13 @@ title: Multi-tenancy Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Multi-Tenancy Hostinger
+# Multi-Tenancy Hostinger {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ajoute une capacité de multi-tenancy Hostinger, permettant aux domaines hébergés de participer à la fourniture de tenants souverains en même temps que l'intégration existante de mappage de domaine Hostinger.
 
 Utilisez cette fonctionnalité lorsque les domaines des tenants et l'infrastructure tenant isolée sont gérés via hPanel Hostinger.
 
-## Notes de configuration
+## Notes de configuration {#setup-notes}
 
 1. Configurez l'intégration principale Hostinger sous **Ultimate Multisite > Settings > Host Integrations**.
 2. Confirmez que le jeton API Hostinger peut gérer le domaine ou sous-domaine cible.
@@ -19,14 +19,14 @@ Utilisez cette fonctionnalité lorsque les domaines des tenants et l'infrastruct
 
 La capacité Hostinger utilise la connexion Hostinger partagée pour les opérations côté hôte. Le DNS doit toujours pointer vers le compte Hostinger correct, et les limites du compte hPanel s'appliquent toujours.
 
-## Changements spécifiques à la fonctionnalité
+## Changements spécifiques à la fonctionnalité {#capability-specific-changes}
 
 - Les tenants souverains peuvent être créés avec des opérations de domaine conscientes de l'hôte.
 - Les chaînes d'hôtes de base de données sur la même machine sont normalisées avant la vérification de l'octroi.
 - Les tenants gérés par Hostinger doivent utiliser la valeur de l'hôte de la base de données affichée dans hPanel, à moins que le runtime WordPress ne nécessite une surcharge locale.
 - Les visites SSO dépendent de la résolution du domaine du tenant vers le tenant hébergé par Hostinger.
 
-## Dépannage des tenants Hostinger
+## Dépannage des tenants Hostinger {#troubleshooting-hostinger-tenants}
 
 - Si l'installation d'un tenant échoue, vérifiez que le domaine est déjà attaché au compte Hostinger.
 - Si la vérification de la base de données échoue, comparez le nom d'utilisateur de la base de données du tenant, le nom de la base de données et le lien d'hôte avec hPanel.

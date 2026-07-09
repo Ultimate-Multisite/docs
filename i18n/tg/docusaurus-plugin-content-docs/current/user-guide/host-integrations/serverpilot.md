@@ -3,17 +3,17 @@ title: Интегратсияи ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Интеграция с ServerPilot
+# Интеграция с ServerPilot {#serverpilot-integration}
 
-## Обзор
+## Обзор {#overview}
 ServerPilot — это облачный сервис для хостинга сайтов на WordPress и других PHP-сайтов на серверах DigitalOcean, Amazon, Google или любом другом провайдере серверов. Эта интеграция позволяет автоматически синхронизировать домены и управлять SSL-сертификатами между Ultimate Multisite и ServerPilot.
 
-## Возможности
+## Возможности {#features}
 - Автоматическая синхронизация доменов
 - Управление SSL-сертификатами с помощью Let's Encrypt
 - Автоматическое продление SSL
 
-## Требования
+## Требования {#requirements}
 Следующие константы должны быть определены в вашем файле `wp-config.php`:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## Инструкции по настройке
+## Инструкции по настройке {#setup-instructions}
 
-### 1. Получите учетные данные API ServerPilot
+### 1. Получите учетные данные API ServerPilot {#1-get-your-serverpilot-api-credentials}
 
 1. Войдите в панель управления ServerPilot.
 2. Перейдите в раздел "Account" (Учетная запись) > "API".
 3. Создайте новый ключ API, если у вас его еще нет.
 4. Скопируйте свой Client ID и API Key.
 
-### 2. Получите App ID
+### 2. Получите App ID {#2-get-your-app-id}
 
 1. В панели управления ServerPilot перейдите в раздел "Apps" (Приложения).
 2. Выберите приложение, где размещен ваш мультисайт WordPress.
 3. App ID виден в URL: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Добавьте константы в wp-config.php
+### 3. Добавьте константы в wp-config.php {#3-add-constants-to-wp-configphp}
 
 Добавьте следующие константы в ваш файл `wp-config.php`:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. Включите интеграцию
+### 4. Включите интеграцию {#4-enable-the-integration}
 
 1. В админке WordPress перейдите в Ultimate Multisite > Settings (Настройки).
 2. Перейдите на вкладку "Domain Mapping" (Сопоставление доменов).
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. Включите интеграцию ServerPilot.
 5. Нажмите "Save Changes" (Сохранить изменения).
 
-## Как это работает
+## Как это работает {#how-it-works}
 
-### Синхронизация доменов
+### Синхронизация доменов {#domain-syncing}
 
 Когда домен сопоставляется в Ultimate Multisite:
 
@@ -66,7 +66,7 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ۳. Он рӯйхати навшударо тавассути API ба ServerPilot фиристод.
 ۴. ServerPilot рӯйхати доменҳоро барои додани шумо интихоб мекунад.
 
-### Идоракунии Сартифактори SSL (SSL Certificate Management)
+### Идоракунии Сартифактори SSL (SSL Certificate Management) {#ssl-certificate-management}
 
 Баъди синхронизат кардани доменҳо:
 
@@ -74,27 +74,27 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ۲. ServerPilot бо истифода аз Let's Encrypt сартифактори SSL-ро медиҳад ва инстара мекард.
 ۳. ServerPilot инчунин таҷдиди автоматики сартифакторҳои SSL-ро идора мекунад.
 
-## Тасдиқи Сартифактори SSL (SSL Certificate Verification)
+## Тасдиқи Сартифактори SSL (SSL Certificate Verification) {#ssl-certificate-verification}
 
 Интеграция барои афзоиши шумораи кӯшишҳои тасдиқи сартифактори SSL барои ServerPilot мукамдел шудааст, зеро метавонад чунин вақт бигирад ки ServerPilot сартифакторҳои SSL-ро медиҳад ва инстара мекунад. Дар ҳолати восита, он то 5 маротиба кӯшиш мекунад, аммо ин метавонад бо истифода аз filters тағйир дода шавад.
 
-## Ҳалли мушкилот (Troubleshooting)
+## Ҳалли мушкилот (Troubleshooting) {#troubleshooting}
 
-### Мушкилоти пайвастагии API (API Connection Issues)
+### Мушкилоти пайвастагии API (API Connection Issues) {#api-connection-issues}
 - Барои тасдиқи дурустии Client ID ва API Key худро санҷед.
 - Таъкид кунед, ки App ID-и шумо дуруст аст.
 - Ишмоли онро таъмин кунед, ки ҳисоби ServerPilot-и шумо иҷозатҳои зарурӣ дорад.
 
-### Мушкилоти сартифактори SSL (SSL Certificate Issues)
+### Мушкилоти сартифактори SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 - ServerPilot талаб мекунад, ки доменҳо пеш аз медиҳани сартифакторҳои SSL, қайдҳои DNS соҳиби валифӣ ба сервери шуморо нишон диҳанд.
 - Агар сартифакторҳои SSL медиҳил нашаванд, тасдиқ кунед, ки доменҳои шумо дуруст ба IP-и сервери шумо нишон дода шудаанд.
 - Он метавонад чунин вақт бигирад ки ServerPilot сартифакторҳои SSL-ро медиҳад ва инстара мекунад (одатан 5-15 дақиқа).
 
-### Домен илова нашудааст (Domain Not Added)
+### Домен илова нашудааст (Domain Not Added) {#domain-not-added}
 - Логҳои Ultimate Multisite-ро барои ҳар як нотикони мушкилот санҷед.
 - Тасдиқ кунед, ки домен ба ServerPilot андешавӣ набошад.
 - Ишмоли онро таъмин кунед, ки сарфари (plan) ServerPilot шумораи доменҳоеро, ки медонед илова мекунед, дастгирӣ мекунад.
 
-### Ҳаттои Намудани Домен (Domain Removal)
+### Ҳаттои Намудани Домен (Domain Removal) {#domain-removal}
 - Ҳолатнокӣ, API-и ServerPilot роҳ дода наметавонад доменҳои алоҳидаро бартарӣ кунад.
 - Вақте ки пайварии домен дар Ultimate Multisite аз ҳисоб бартарӣ карда мешавад, ин интегратсия рӯйхати доменҳоро дар ServerPilot нав мекунад ва домени аз он рӯйхат бартарӣ карда мешавад.

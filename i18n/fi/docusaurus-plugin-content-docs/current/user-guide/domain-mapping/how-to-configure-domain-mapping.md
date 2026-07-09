@@ -3,17 +3,17 @@ title: Verkkotunnusten kartoituksen määrittäminen
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kuinka määrittää verkkotunnusten ohjaus (v2)
+# Kuinka määrittää verkkotunnusten ohjaus (v2) {#how-to-configure-domain-mapping-v2}
 
 _**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -versiota 2.x.**_
 
 Yksi premium-verkon tehokkaimmista ominaisuuksista on mahdollisuus tarjota asiakkaillemme tilaisuus liittää ylimmän tason verkkotunnus sivustoihinsa. Kumpi loppujen lopuksi näyttää ammattimaisemmalta: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) vai [_**joesbikeshop.com**_](http://joesbikeshop.com)? Siksi Ultimate Multisite tarjoaa tämän ominaisuuden sisäänrakennettuna ilman tarvetta käyttää kolmannen osapuolen plugineja.
 
-## Mitä verkkotunnusten ohjaus on?
+## Mitä verkkotunnusten ohjaus on? {#whats-domain-mapping}
 
 Kuten nimi kertoo, verkkotunnusten ohjaus on Ultimate Multisite -palvelun tarjoama mahdollisuus vastaanottaa mukautettua verkkotunnusta koskeva pyyntö ja ohjata kyseinen pyyntö verkon vastaavaan sivustoon, johon kyseinen verkkotunnus on liitetty.
 
-### Kuinka määrittää verkkotunnusten ohjaus Ultimate Multisite -verkossasi
+### Kuinka määrittää verkkotunnusten ohjaus Ultimate Multisite -verkossasi {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Verkkotunnusten ohjaus vaatii hieman määrittämistä toimiakseen. Onneksi Ultimate Multisite automatisoi raskaan työn puolestasi, jotta voit täyttää vaatimukset helposti.
 
@@ -45,7 +45,7 @@ Mutta ennen kuin aloitat mukautetun verkkotunnuksen ohjaamisen johonkin verkossa
 
 ###
 
-### Varmista, että verkkotunnuksen DNS-asetukset on määritetty oikein
+### Varmista, että verkkotunnuksen DNS-asetukset on määritetty oikein {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Jotta ohjaus toimisi, sinun täytyy varmistaa, että verkkotunnus, jonka aiot ohjata, osoittaa verkkosi IP-osoitteeseen. Huomaa, että tarvitset verkon IP-osoitteen – sen verkkotunnuksen IP-osoitteen, johon Ultimate Multisite on asennettu – et sen mukautetun verkkotunnuksen IP-osoitetta, jonka haluat ohjata. Tietyn verkkotunnuksen IP-osoitteen etsimiseen suosittelemme esimerkiksi [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html)-palvelua.
 
@@ -55,7 +55,7 @@ Jos sinulla on vaikeuksia saada tämä toimimaan, **ota yhteyttä verkkotunnusre
 
 Jos aiot sallia asiakkaidesi ohjata omia verkkotunnuksiaan, heidän täytyy tehdä tämä osa itse. Ohjaa heidät rekisteröijänsä tukijärjestelmän puoleen, jos he eivät pysty luomaan A-tietuetta.
 
-### Mukautetun verkkotunnuksen ohjaaminen Super Adminina
+### Mukautetun verkkotunnuksen ohjaaminen Super Adminina {#mapping-custom-domain-name-as-super-admin}
 
 Kun olet kirjautunut sisään verkkoosi super adminina, voit helposti lisätä ja hallita mukautettuja verkkotunnuksia siirtymällä kohtaan **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Jos napsautat domainin nimeä, näet sen sisällä joitakin asetuksia. Katsotaan
 
 **Is Secure?:** Vaikka Ultimate Multisite tarkistaa, onko domainilla SSL-sertifikaatti vai ei ennen sen käyttöönottoa, voit valita manuaalisesti, ladataanko domain SSL-sertifikaatin kanssa vai ilman. Huomaa, että jos verkkosivustolla ei ole SSL-sertifikaattia ja yrität pakottaa sen latautumaan SSL:llä, se voi aiheuttaa virheitä.
 
-### Mukautetun domain-nimen mapittaminen Subsite-käyttäjänä
+### Mukautetun domain-nimen mapittaminen Subsite-käyttäjänä {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite-ylläpitäjät voivat myös mapittaa mukautettuja domain-nimiä oman subsitensa admin dashboardista.
 
@@ -121,7 +121,7 @@ Käyttäjä voi sitten napsauttaa **Next Step** ja jatkaa mukautetun domain-nime
 
 **Add Domain** -painikkeen napsauttaminen käynnistää mukautetun domainin DNS-tietojen vahvistamisen ja hakemisen.
 
-### Tietoa domainien synkronoinnista
+### Tietoa domainien synkronoinnista {#about-domain-syncing}
 
 Domainien synkronointi on prosessi, jossa Ultimate Multisite lisää mukautetun domain-nimen hosting-tilillesi lisädomainina, **jotta domain mapping toimii**.
 

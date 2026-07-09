@@ -4,11 +4,11 @@ title: 'Nzacha - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# Filter: wu_\{$this->model\}_pre_save
+# Filter: wu_\{$this->model\}_pre_save {#filter-wuthis-modelpresave}
 
 Na-enyocha data nke ihe ahụ tupu echekwaa ya n’ime nchekwa data.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Na-enyocha data nke ihe ahụ tupu echekwaa ya n’ime nchekwa data.
 | $data_unserialized | `array` | Data nke ihe ahụ a ga-echekwa. |
 | $this | `\Base_Model` | Instance nke ihe ahụ. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 2.0.0
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L570) n’ahịrị 570

@@ -3,7 +3,7 @@ title: Fragmenta codicis
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Fragmenta de cod pentru v2
+# Fragmenta de cod pentru v2 {#code-snippets-for-v2}
 
 În esență, fragmentele de cod pentru **WordPress** se folosesc pentru a realiza anumite acțiuni care altfel ar putea necesita un plugin dedicat mai mic. Aceste fragmente de cod sunt plasate în unul dintre fișierele de bază WordPress sau tema ta (de obicei, fișierul functions.php al temei tale) sau pot fi folosite ca un MU plugin.
 
@@ -15,7 +15,7 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**Corectarea problemelor CORS cu Font-Icons în domenii mapate**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Modificarea poziției elementului de meniu Cont
+## Modificarea poziției elementului de meniu Cont {#changing-the-position-of-the-account-menu-item}
 
 Pentru a schimba poziția elementului de meniu Cont pe Dashboard-ul clientului tău, pur și simplu adaugă fragmentele de cod următoare în fișierul functions.php al temei principale a site-ului tău active. Poți pune fragmentele de cod în interiorul unui MU plugin sau al unui plugin personal.
 
@@ -37,20 +37,20 @@ Nota quod utentes solum in **Plan** subscribi possunt, non in Package vel Servic
 
 ![Lista Productuum ostendens plan IDs](/img/admin/products-list.png)
 
-## Rectificatio problematicarum CORS cum Font-Icons in domibus mappatis
-## Rectificatio problematicarum CORS cum Font-Icons in domibus mappatis
+## Rectificatio problematicarum CORS cum Font-Icons in domibus mappatis {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Rectificatio problematicarum CORS cum Font-Icons in domibus mappatis {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Postquam domenum ad sub-site mappas, potes invenire quod situs in difficoltate est ladenis fontium customium. Hoc causatum est bloc by cross-origin in parametris serveris tuis.
 
 Quia file fontium quasi semper directum ex CSS loquuntur, plugin mappae domini nostrum non potest redigere URLs ut usum domenii mappati in lugarine originale, ita ut problematicam rectificare necesse tibi est modificare files configuration serveris tuorum.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 In tu archivo .htaccess, añade esto:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 En tu archivo de configuración del servidor (la ubicación varía de servidor a servidor), añade esto:
 

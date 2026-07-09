@@ -3,7 +3,7 @@ title: Hook me ngā fīhi i te fīhi
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Whakawāhi me Filter o Ultimate Multisite
+# Whakawāhi me Filter o Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 He whakamahinga nui o Ultimate Multisite he tino nui te whānau o ngā funksiyana me ngā pūtaiao database (database queries). He hook me filter ana ahau ki te tino whakaaahi atu ki te whakawhiti, te whakarere, akorua kōrero hou ki ngā funksiyana eke ana.
 

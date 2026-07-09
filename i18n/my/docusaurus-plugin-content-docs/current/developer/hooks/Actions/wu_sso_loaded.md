@@ -4,21 +4,21 @@ title: Action - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Action: wu_sso_loaded
+# Action: wu_sso_loaded {#action-wussoloaded}
 
 လိုအပ်ပါက plugin developer များအနေဖြင့် အပိုဆောင်း hook များကို ထည့်သွင်းနိုင်စေရန်။
 
 SSO သည် sunrise တွင် လုပ်ဆောင်ရသည့် အရာဖြစ်သောကြောင့် ၎င်းကို init အထိ နောက်ကျစေရန် လိုအပ်ပါသည်။
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $sso | `self` | SSO class ကို။ |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/sso/class-sso.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-sso.php#L285) at line 285

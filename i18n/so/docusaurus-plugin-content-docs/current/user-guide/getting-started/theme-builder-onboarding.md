@@ -3,11 +3,11 @@ title: Habka bilaabidda Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Habaynta-sareedka Theme Builder
+# Habaynta-sareedka Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 wuxuu soo bandhigayaa **habaynta-sareedka Theme Builder** oo kaa caawin doona inaad samayso theme gaar ah (custom block theme) inta aad ku bilaabaysid. Tani waxay beddeshaa habka hore ee Site Builder mode, iyadoo la isticmaalayo hab ka fudud oo ay ka caawiyaan agent-ka.
 
-## Maxay tahay Habaynta-sareedka Theme Builder?
+## Maxay tahay Habaynta-sareedka Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Habaynta-sareedka Theme Builder waa wizard (habka tilmaamada) isku-dhaf ah oo aad isticmaalayso si uu:
 
@@ -18,9 +18,9 @@ Habaynta-sareedka Theme Builder waa wizard (habka tilmaamada) isku-dhaf ah oo aa
 
 Habayntaasi waxay la shaqaysaa **Setup Assistant agent**, kaas oo weydiinaya su'aalo faahfaahsan isagoo qayb ka dhigaya theme-kaaga si tartiib tartiib ah.
 
-## Bilowga Habaynta-sareedka Theme Builder
+## Bilowga Habaynta-sareedka Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Wax-ii Koowaad (First-Run Setup)
+### Wax-ii Koowaad (First-Run Setup) {#first-run-setup}
 
 Marka aad markii ugu horreysay ku bilaabato Superdav AI Agent oo ku socda WordPress cusub, waxaad arki doontaa:
 
@@ -35,7 +35,7 @@ Maxaad rabtaa inaad qabato?
 
 Doorashada **"Samayso theme gaar ah"** si aad u galto habaynta-sareedka Theme Builder.
 
-### Furitaanka gacanta (Manual Activation)
+### Furitaanka gacanta (Manual Activation) {#manual-activation}
 
 Waxaad sidoo kale bilaabi kartaa habaynta-sareedka Theme Builder wakhti kasta adigoo codsiya:
 
@@ -49,9 +49,9 @@ ama
 "Help me create a custom theme"
 ```
 
-## Tallaabooyinka Habaynta
+## Tallaabooyinka Habaynta {#the-onboarding-steps}
 
-### Tallaabada 1: Doortid Mode-ka (Mode Selection)
+### Tallaabada 1: Doortid Mode-ka (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent wuxuu weydiinayaa doorashada aad rabto:
 
@@ -63,7 +63,7 @@ Sidee doonaysaa inaad samayso theme-kaaga?
 
 **Guided mode** waa mid la talinaya dadka badankood; agent-ku wuxuu bixiyaa talooyin naqshadaynta iyadoo ku salaysan warshadaha iyo hadafkaaga.
 
-### Tallaabada 2: Qoraalka Website-ka (Site Specification)
+### Tallaabada 2: Qoraalka Website-ka (Site Specification) {#step-2-site-specification}
 
 Waxaa lagu weydiin doonaa website-kaaga:
 
@@ -74,7 +74,7 @@ Waxaa lagu weydiin doonaa website-kaaga:
 
 Macluumaadan waxaa lagu kaydyaa xusuustaada **site_brief**, taasoo agabtii la tixgelin doonaa casharrada dambe.
 
-### Tallaabada 3: Go'aaminta Nidaamka Naqshadaynta (Design System Decisions)
+### Tallaabada 3: Go'aaminta Nidaamka Naqshadaynta (Design System Decisions) {#step-3-design-system-decisions}
 
 Agabtii waxay ku hagaysaa doorashada design token-yadaas:
 
@@ -83,7 +83,7 @@ Agabtii waxay ku hagaysaa doorashada design token-yadaas:
 - **Dhaqdhaqaaqa (Spacing)**: Qaabka muuqaalka ee yar, caadiga ah, ama ballaaran
 - **Udhacdo (Motion)**: Animations iyo isbeddellada (haddii aad rabto)
 
-### Tallaabada 4: Soo-dhigista Theme-ka (Theme Generation)
+### Tallaabada 4: Soo-dhigista Theme-ka (Theme Generation) {#step-4-theme-generation}
 
 Agabtii Sameynta Setup Assistant waxay kuu samaynaysaa theme-kaaga gaarka ah iyadoo la isticmaalayo:
 
@@ -92,7 +92,7 @@ Agabtii Sameynta Setup Assistant waxay kuu samaynaysaa theme-kaaga gaarka ah iya
 - Qaab-dhismeedka block-yada gaarka ah ee la jaanqaadaya nidaamka naqshadayntaada
 - Metadata-da theme-ka iyo doorkii taageerada WordPress
 
-### Tallaabada 5: Furitaanka iyo Xaqiijinta (Activation and Verification)
+### Tallaabada 5: Furitaanka iyo Xaqiijinta (Activation and Verification) {#step-5-activation-and-verification}
 
 Theme-ku si toos ah ayaa loo furayaa, waxaad arki doontaa:
 
@@ -107,7 +107,7 @@ Theme-ku si toos ah ayaa loo furayaa, waxaad arki doontaa:
 
 Markaas waxaad booqan kartaa website-kaaga si aad u hubiso in theme-ku si sax ah u muuqdo.
 
-## Qaybta Gaarka Website-ka iyo Xusuusta site_brief (Site Specification and site_brief Memory)
+## Qaybta Gaarka Website-ka iyo Xusuusta site_brief (Site Specification and site_brief Memory) {#site-specification-and-sitebrief-memory}
 
 Intii la bilaabayo, agabtii waxay qaatay sharraxaadda website-kaaga oo ay ku jirto qaybta xusuusta **site_brief**. Tani waxaa ka mid ah:
 
@@ -117,11 +117,11 @@ Intii la bilaabayo, agabtii waxay qaatay sharraxaadda website-kaaga oo ay ku jir
 - Doorashooyinka naqshadaynta
 - Qaababka macluumaadka (Content structure)
 
-### Maxay U Muhiim Tahay site_brief?
+### Maxay U Muhiim Tahay site_brief? {#why-sitebrief-matters}
 
 Casharrada dambe, agabtii waxay isticmaali doontaa **site_brief**-kaaga si ay:
 
-### Xogidda Site-Brief-kaaga
+### Xogidda Site-Brief-kaaga {#viewing-your-sitebrief}
 
 Waxaad weydiin kartaa agabtii (agent) sidan:
 
@@ -137,11 +137,11 @@ ama
 
 Agabku wuxuu soo bandhigi doonaa macluumaadka aad kaydsay ee qorshaha website-kaaga.
 
-## Wax Ka Beddelidda Marka La Soo Dhaqdo (Onboarding)
+## Wax Ka Beddelidda Marka La Soo Dhaqdo (Onboarding) {#customizing-after-onboarding}
 
 Marka la dhammeeyo waxbarashada Theme Builder, waxaad samayn kartaa:
 
-### Isticmaalka Xirfadda Design System Aesthetics Skill
+### Isticmaalka Xirfadda Design System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Codsi hagaajin muuqaal ah:
 
@@ -157,7 +157,7 @@ ama
 
 **Design System Aesthetics skill** wuxuu ku hagayaa hagaajinta muuqaalka aad u baahan tahay.
 
-### Wax Ka Beddelidda theme.json Si Toos ah
+### Wax Ka Beddelidda theme.json Si Toos ah {#edit-themejson-directly}
 
 Kuwa isticmaalka ugu horreeya, waxaad wax ka beddeli kartaa `/wp-content/themes/[theme-name]/theme.json` si aad u hagaajiso:
 
@@ -166,7 +166,7 @@ Kuwa isticmaalka ugu horreeya, waxaad wax ka beddeli kartaa `/wp-content/themes/
 - Spacing values (Qiimaha meelaha u dhexeeya waxyaabaha)
 - Border and shadow definitions (Qeexidda xad-dhaafka iyo hoos-dhigista)
 
-### Abuurista Template-yada Block-ga Gaarka ah
+### Abuurista Template-yada Block-ga Gaarka ah {#create-custom-block-templates}
 
 Isticmaal editorka block-ga WordPress si aad u samayso template-yo gaar ah:
 
@@ -175,7 +175,7 @@ Isticmaal editorka block-ga WordPress si aad u samayso template-yo gaar ah:
 - Bogga alaabta (Product pages)
 - Foomamka la xiriirka (Contact forms)
 
-## Isbarbardhig: Qoyska Dambe vs. Cusub
+## Isbarbardhig: Qoyska Dambe vs. Cusub {#comparison-old-vs-new-onboarding}
 
 | Wax | Site Builder (Qoyska Dambe) | Theme Builder (Cusub) |
 |---|---|---|
@@ -185,7 +185,7 @@ Isticmaal editorka block-ga WordPress si aad u samayso template-yo gaar ah:
 | Isticmaalka (Flexibility) | Doorashooyin la qeexay | Wax la beddeli karo |
 | Cusboonaysiinta Mustaqbalka | Ma la xiriirin | Lagu kaydsan yahay site_brief-ka |
 
-## Xallinta Dhibaatooyinka (Troubleshooting)
+## Xallinta Dhibaatooyinka (Troubleshooting) {#troubleshooting}
 
 **Waxbarashada Onboarding-ku ma dhammaan:**
 - Dib u bilaab waxbarashada: "Start the Theme Builder onboarding"
@@ -202,7 +202,7 @@ Isticmaal editorka block-ga WordPress si aad u samayso template-yo gaar ah:
 - Weydii agabtii "regenerate the theme with [specific changes]" (la dib u abuuro theme-ka iyadoo la beddelay waxyaabaha gaarka ah).
 - Waxaad si toos ah u wax ka beddeli kartaa file-ka `theme.json` si aad si sax ah u maamushid.
 
-## Tallaabooyinka Xiga
+## Tallaabooyinka Xiga {#next-steps}
 
 Marka aad dhammaystirto barashada Theme Builder:
 

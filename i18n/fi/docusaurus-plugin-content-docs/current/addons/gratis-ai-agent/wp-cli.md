@@ -3,11 +3,11 @@ title: WP-CLI-viite
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI-viite
+# WP-CLI-viite {#wp-cli-reference}
 
 Gratis AI Agent sisältää `wp gratis-ai-agent` -komentoperheen agentin suorituskykytestaukseen, kyvykkyyksien hallintaan ja agentin tilan kyselyyn komentoriviltä. Kaikki komennot edellyttävät WP-CLI:n versiota 2.0 tai uudempaa.
 
-## Asennus
+## Asennus {#installation}
 
 WP-CLI-komennot rekisteröidään automaattisesti, kun plugin on aktiivinen. Varmista komennolla:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Suorittaa Agent Capabilities -suorituskykytestikokonaisuuden — joukon monimutkaisia, monivaiheisia kehotteita, jotka käyttävät koko kyvykkyyspintaa. Käytä tätä mallin suorituskyvyn arviointiin, AI-palveluntarjoajien vertailuun tai kyvykkyyspakettien validointiin ennen tuotantoon käyttöönottoa.
 
-### Tiivistelmä
+### Tiivistelmä {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Asetukset
+### Asetukset {#options}
 
 | Asetus | Kuvaus |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Tulostusmuoto: `table` (oletus), `json`, `csv` |
 | `--save` | Tallenna suorituskykytestin tulokset tietokantaan historiallista vertailua varten |
 
-### Esimerkit
+### Esimerkit {#examples}
 
 Suorita koko suorituskykytestikokonaisuus nykyisellä palveluntarjoajalla ja mallilla:
 
@@ -57,7 +57,7 @@ Suorita tietyllä mallilla ja tallenna tulokset:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Tulostus
+### Tulostus {#output}
 
 Suorituskykytesti tulostaa yhden rivin kutakin kysymystä kohden seuraavilla sarakkeilla:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Ota tumma theme-esiasetus käyttöön  100      apply_t
 ...
 ```
 
-### Suorituskykytestikysymykset
+### Suorituskykytestikysymykset {#benchmark-questions}
 
 Oletuskokonaisuus sisältää:
 
@@ -95,11 +95,11 @@ Lisäkysymyksiä voi rekisteröidä `gratis_ai_agent_benchmark_questions`-suodat
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Hallitsee asennettuja kyvykkyyksiä ja kyvykkyyspaketteja.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Luettelee kaikki rekisteröidyt kyvykkyydet, niiden lähteen (ydin tai paketti) ja nykyisen tilan.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     aktiivinen
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Lataa ja aktivoi kyvykkyyspaketin rekisteristä.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Poistaa tietyn kyvykkyyden käytöstä poistamatta pakettia. Hyödyllinen agentin toiminta-alan rajoittamiseen tietyllä sivustolla.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Ottaa aiemmin käytöstä poistetun kyvykkyyden uudelleen käyttöön.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Näyttää nykyisen agentin määrityksen ja yhteystilan.
 
@@ -200,7 +200,7 @@ Asetusten estolista: 18 merkintää
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Näyttää viimeaikaisen agenttitoiminnan debug-lokista.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Nollaa agentin tilan: tyhjentää lisätyn CSS:n, poistaa agentin rekisteröimät CPT:t ja taksonomiat, nollaa globaalit tyylit ja tyhjentää agentin asetusten välimuistin. Ei poista pluginia tai sen asetuksia.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Poistumiskoodit
+## Poistumiskoodit {#exit-codes}
 
 Kaikki komennot palauttavat `0` onnistuessaan. Nollasta poikkeavat poistumiskoodit:
 

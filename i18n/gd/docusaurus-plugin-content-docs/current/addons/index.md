@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Tuilleadain Ultimate Multisite
+# Tuilleadain Ultimate Multisite {#ultimate-multisite-addons}
 
 Leudaichidh tuilleadain Ultimate Multisite le feartan agus amalachaidhean a bharrachd. Tha a’ mhòr-chuid de thuilleadain pàighte agus faodar an ceannach bho [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Stàladh
+## Stàladh {#installation}
 
 Faodar tuilleadain a stàladh ann an dà dhòigh:
 
 1. **Tron duilleag tuilleadain** -- Seòl gu duilleag stiùireadh thuilleadain an làraich agad ann an rianachd WordPress
 2. **Luchdadh a-nuas le làimh** -- Luchdaich a-nuas bho [do Account](https://ultimatemultisite.com/my-account/downloads/) agus luchdaich suas tro Plugins > Cuir fear ùr ris
 
-## Tuilleadain a tha rim faighinn
+## Tuilleadain a tha rim faighinn {#available-addons}
 
 | Tuilleadan | Tuairisgeul |
 |-------|-------------|

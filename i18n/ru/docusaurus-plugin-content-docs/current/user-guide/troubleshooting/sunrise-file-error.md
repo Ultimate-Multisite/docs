@@ -3,7 +3,7 @@ title: Ошибка файла Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Ошибка при установке файла Sunrise
+# Ошибка при установке файла Sunrise {#error-installing-the-sunrise-file}
 
 Файл sunrise.php — это специальный файл, который WordPress ищет во время своей загрузки. Чтобы WordPress мог обнаружить файл sunrise.php, он должен находиться внутри **папки wp-content**.
 

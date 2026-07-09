@@ -4,21 +4,21 @@ title: فلتر - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# المرشح: secure_auth_cookie
+# المرشح: secure_auth_cookie {#filter-secureauthcookie}
 
 تصفية ما إذا كان يجب إرسال ملف تعريف الارتباط المصادقة فقط عبر HTTPS.
 
-## المعلمات
+## المعلمات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
 | $secure | `bool` | ما إذا كان يجب إرسال ملف تعريف الارتباط فقط عبر HTTPS. |
 | $user_id | `int` | معرف المستخدم. |
 
-### منذ
+### منذ {#since}
 
 - 3.1.0
 
-### المصدر
+### المصدر {#source}
 
 تم تعريفه في [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) في السطر 80

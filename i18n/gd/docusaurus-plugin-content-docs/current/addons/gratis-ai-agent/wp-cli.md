@@ -3,11 +3,11 @@ title: Iomradh WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Iomradh WP-CLI
+# Iomradh WP-CLI {#wp-cli-reference}
 
 Tha Gratis AI Agent a’ lìbhrigeadh teaghlach òrduighean `wp gratis-ai-agent` airson tomhas-coileanaidh an agent, stiùireadh chomasan, agus ceasnachadh inbhe an agent bhon loidhne-àithne. Feumaidh gach òrdugh WP-CLI 2.0 no nas àirde.
 
-## Stàladh
+## Stàladh {#installation}
 
 Tha na h-òrduighean WP-CLI air an clàradh gu fèin-obrachail nuair a tha am plugin gnìomhach. Dearbhaich le:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Ruithidh seo seata tomhas-coileanaidh Chomasan an Agent — seata de bhrosnachaidhean iom-fhillte, ioma-cheumach a chuireas an làn raon chomasan gu feum. Cleachd seo gus coileanadh modail a mheasadh, solaraichean AI a choimeas, no pacaidean chomasan a dhearbhadh mus tèid an cur gu cinneasachadh.
 
-### Geàrr-iomradh
+### Geàrr-iomradh {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Roghainnean
+### Roghainnean {#options}
 
 | Roghainn | Tuairisgeul |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Fòrmat toraidh: `table` (bunaiteach), `json`, `csv` |
 | `--save` | Sàbhail toraidhean an tomhais-choileanaidh dhan stòr-dàta airson coimeas eachdraidheil |
 
-### Eisimpleirean
+### Eisimpleirean {#examples}
 
 Ruith an seata tomhais-choileanaidh slàn leis an t-solaraiche agus am modail làithreach:
 
@@ -57,7 +57,7 @@ Ruith an aghaidh modail sònraichte agus sàbhail toraidhean:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Toradh
+### Toradh {#output}
 
 Cuiridh an tomhas-coileanaidh a-mach aon ràgh gach ceist leis na colbhan a leanas:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Ceistean Tomhais-choileanaidh
+### Ceistean Tomhais-choileanaidh {#benchmark-questions}
 
 Tha an seata bunaiteach a’ gabhail a-steach:
 
@@ -95,11 +95,11 @@ Faodar ceistean a bharrachd a chlàradh tron chriathrag `gratis_ai_agent_benchma
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Stiùirichidh seo comasan agus pacaidean chomasan a chaidh a stàladh.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Liostaichidh seo a h-uile comas clàraichte, an tùs aca (cridhe no pasgan), agus an inbhe làithreach aca.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Luchdaichidh seo a-nuas agus cuiridh e an gnìomh pasgan chomasan bhon chlàr-lann.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Cuiridh seo comas sònraichte à comas gun am pasgan a thoirt air falbh. Feumail airson raon-gnìomha an agent a chuingealachadh air làrach shònraichte.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Cuiridh seo comas a chaidh a chur à comas roimhe an gnìomh a-rithist.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Seallaidh seo rèiteachadh làithreach an agent agus inbhe a’ cheangail.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Seallaidh seo gnìomhachd o chionn ghoirid an agent bhon log dì-bhugachaidh.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Ath-shuidhich staid an agent: glanaidh e CSS a chaidh a chur a-steach, bheir e air falbh CPTs agus taxonomies a chlàraich an agent, ath-shuidhichidh e stoidhlichean cruinneil, agus falamhaichidh e tasgadan roghainnean an agent. Cha toir e air falbh am plugin no na roghainnean aige.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Còdan Fàgail
+## Còdan Fàgail {#exit-codes}
 
 Fàgaidh gach àithne le `0` ma shoirbhicheas i. Còdan fàgail neo-neoni:
 

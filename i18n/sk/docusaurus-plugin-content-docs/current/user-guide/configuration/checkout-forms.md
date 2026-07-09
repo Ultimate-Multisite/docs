@@ -3,7 +3,7 @@ title: Formuláre na pokladni
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulá na pokladni (Checkout Forms)
+# Formulá na pokladni (Checkout Forms) {#checkout-forms}
 
 Formulá na pokladni sú jednoduchý a flexibilný spôsob, ako experimentovať s rôznymi prístupmi pri konverzi nových zákazníkov.
 
@@ -36,13 +36,13 @@ Alternatívne môžete upraviť alebo duplikovať formuláre, ktoré už máte, 
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Prehľad redaktóra formulára platby (Checkout Form Editor Overview)
+#### Prehľad redaktóra formulára platby (Checkout Form Editor Overview) {#checkout-form-editor-overview}
 
 Redaktor formulára platby poskytuje komplexný rozhrňanie na vytváranie vašich registračných formulárov. Tu je prehľad rozvrhania redaktóra:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Upravovanie formulára platby (Editing a Checkout Form)
+### Upravovanie formulára platby (Editing a Checkout Form) {#editing-a-checkout-form}
 
 Môžete vytvárať formuláre platby na rôzne účely. V tomto príklade sa budeme pýtať si registračný formulár.
 
@@ -112,7 +112,7 @@ Aby ste získali šortkód vášho formulára, kliknite na "Generate Shortcode" 
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Pole Tabulky cien
+### Pole Tabulky cien {#the-pricing-table-field}
 
 Pole **Pricing Table** (Tabuľka cien) zobrazuje vaše produkty na formulári objednávky, aby si zákazníci mohli vybrať plán. Keď tento pole upravujete, môžete skonfigurovať niekoľko možností:
 
@@ -130,17 +130,17 @@ Tu je, ako sa tabuľka cien zobrazuje na formulári registráции v prednej č
 
 Ak pridalte produkt do Tabulky cien pred tým, ako formulár obsahuje pole potrebné na dokončenie objednávkového toku toho produktu, editor zobrazí upozornenie. Použite toto upozornenie, aby ste pridal chýbajúce povinné pole pred publikovaním alebo uložením zmien pre živý formulár registráции.
 
-### Pridanie prepínaču výberu obdobia
+### Pridanie prepínaču výberu obdobia {#adding-a-period-selection-toggle}
 
 Ak ste skonfigurovali [Price Variations](creating-your-first-subscription-product#price-variations) na svojich produktoch (napr. mesačné a ročné ceny), môžete pridať pole **Výber obdobia** do vášho formulára pokladne. Toto pole zobrazuje prepínač, ktorý umožňuje zákazníkom premieniť sa medzi fakturačnými obdobiami, a tabuľka cien sa dynamicky aktualizuje v reálnom čase.
 
-#### Krok 1: Nastavenie variant cien na vašich produktoch
+#### Krok 1: Nastavenie variant cien na vašich produktoch {#step-1-set-up-price-variations-on-your-products}
 
 Pred pridaním pola Výber obdobia si uistite sa, že máte skonfigurované varianty cien na svojich produktoch. Prejdite do **Ultimate Multisite > Products**, upravte produkt a prejdite na záložku **Price Variations**, aby ste pridali alternatívne fakturačné obdobia (napr. Ročné za zľavo).
 
 ![Tab Price Variations na produkte](/img/config/product-price-variations-tab.png)
 
-#### Krok 2: Pridanie pola Výber obdobia do vášho formulára pokladne
+#### Krok 2: Pridanie pola Výber obdobia do vášho formulára pokladne {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Prejdite do **Ultimate Multisite > Checkout Forms** a upravte svojý formulár pokladne.
 
@@ -163,13 +163,13 @@ Pred pridaním pola Výber obdobia si uistite sa, že máte skonfigurované vari
 
 7. Kliknite na **Save Field**.
 
-#### Krok 3: Položte pole nad tabulkou cien
+#### Krok 3: Položte pole nad tabulkou cien {#step-3-position-the-field-above-the-pricing-table}
 
 Pre najlepšiu užívateľskú skúsenosť je uistite sa, že pole Výber obdobia (Period Selection) bude vidieť **pred** tabulkou cien v vašom kroku pokladne. Môžete pole posúdiť a zmeniť jeho poriadok v redaktore formulára pokladne. Takto si zákazníci najprv vyberú obdobie fakturácie a potom uvidia ceny pre to obdobie.
 
 ![Redaktor formulára pokladne zobrazujúci poriadok polí](/img/config/checkout-form-editor-with-fields.png)
 
-#### Ako to funguje na prednej strane (Frontend)
+#### Ako to funguje na prednej strane (Frontend) {#how-it-works-on-the-frontend}
 
 Po skonfigurovaní budú zákazníci, ktorí navštívajú vašu registračnú stránku, vidieť selektor obdobia nad tabulkou cien. Keď kliknu na iné fakturačné obdobie:
 
@@ -177,7 +177,7 @@ Po skonfigurovaní budú zákazníci, ktorí navštívajú vašu registračnú s
   * Ak je **Force Different Durations** vypnuté v poli Tabulka cien, produkty bez variácie ceny pre vybrané obdobie budú skryté.
   * Ak je **Force Different Durations** zapnuté, všetky produkty zostávajú viditeľné aj ak nemajú variáciu pre vybrané obdobie (zobrazia si svoju štandardnú cenu).
 
-#### Predvolba fakturačného obdobia cez URL
+#### Predvolba fakturačného obdobia cez URL {#pre-selecting-a-billing-period-via-url}
 
 Môžete tiež predvoliť produkt a fakturačné obdobie pomocou URL. Ultimate Multisite podporuje tieto vzory URL:
 
@@ -185,11 +185,11 @@ Môžete tiež predvoliť produkt a fakturačné obdobie pomocou URL. Ultimate M
   * `/register/premium/12` — Predvoľuje produkt a 12-mesačnú dobu platnosti
   * `/register/premium/1/year` — Predvoľuje produkt s 1-ročnou dobou platnosti
 
-### Pole výberu šablóny (Template Selection Field)
+### Pole výberu šablóny (Template Selection Field) {#the-template-selection-field}
 
 Pole **Výberu šablóny** umožňuje zákazníkom vybrať si šablónu webovej stránky počas pokladne. Toto pole je v Ultimate Multisite v verzií v2.6.1 štandardne zahrnuté ako v jednom kroku (single step) aj v multi-step formulároch pokladne.
 
-#### Pridanie pola manuálne
+#### Pridanie pola manuálne {#adding-the-field-manually}
 
 Ak ste vôbec s formulom vytvoreným predเวอร์zi v2.6.1 alebo začatým z prázdneho šablóny:
 
@@ -200,11 +200,11 @@ Ak ste vôbec s formulom vytvoreným predเวอร์zi v2.6.1 alebo začatý
    - **Label** — Nadpis, ktorý vidia zákazníci nad siatovou sietičnou sietičkou (napr. „Vyber sietovú sietičnú sietičku“).
    - **Required** — Čoľko je povinné, aby zákazníci vybrali šablónu pred pokračovaním.
 
-#### Ako to funguje
+#### Ako to funguje {#how-it-works}
 
 Keď zákazník vyberie šablónu počas objednávky, Ultimate Multisite ju bude používať pri vytváraní ich novej sietičky. Šablóny, ktoré sa zobrazujú, pochádzajú z vašej zoznamu **Site Templates** (**Ultimate Multisite > Site Templates**). Zobrazia sa tu len šablóny označené ako dostupné pre zákazníkov.
 
-### Základné domény formulára na objednávku (Checkout-form base domains)
+### Základné domény formulára na objednávku (Checkout-form base domains) {#checkout-form-base-domains}
 
 Ultimate Multisite vเวอร์zi 2.13.0 považuje domény nastavené v poloch **Site URL** formulára na objednávku za sietičnú základnú doménu (network base domain). Použite nastavenia dostupných domén pre pole, ak chcete, aby zákazníci vytvárali sietičky pod jednou alebo viac zdieľanými registračnými domenami, ako napríklad `example.com` a `sites.example.com`.
 
@@ -212,6 +212,6 @@ Zdieľané základné domény formulára na objednávku sa ne považujú za mapo
 
 Zdieľajte prispôsobené domény pre sietičky jednotlivých zákazníkov, ako napríklad `customer-example.com`. Zdieľajte základné domény formulára na objednávku pre zdieľané registračnú sietičnú sietičky, ktoré môžu používať mnoho sietičiek.
 
-#### Odstránenie pola
+#### Odstránenie pola {#removing-the-field}
 
 Ak si ne ponúka webové šablóny, odstráňte pole Výber šablóny z vášho formulára. Klienti sa potom dostanú k tomu šablónu, ktorý je nastavený ako štandard v **Ultimate Multisite > Settings > Site Templates**.

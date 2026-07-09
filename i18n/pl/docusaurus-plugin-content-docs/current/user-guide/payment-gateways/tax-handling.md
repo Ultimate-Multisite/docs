@@ -3,7 +3,7 @@ title: Obsługa podatków
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Obsługa podatków
+# Obsługa podatków {#tax-handling}
 
 Ultimate Multisite ma moduł pobierania podatków wbudowany w nasz główny plugin, więc jeśli musisz pobierać podatki od sprzedaży w swoich planach, pakietach i usługach, możesz to łatwo zrobić bez konieczności instalowania jakichkolwiek dodatków.
 
@@ -11,7 +11,7 @@ Dla firm zlokalizowanych w Europie oferujemy **dodatek**, który dodaje narzędz
 
 Ultimate Multisite nie składa deklaracji ani nie odprowadza podatków w Twoim imieniu do urzędu; po prostu pomagamy Ci pobrać odpowiednie podatki w momencie transakcji. **Nadal musisz odprowadzać podatki samodzielnie.**
 
-## Włączanie pobierania podatków
+## Włączanie pobierania podatków {#enabling-tax-collection}
 
 Pobieranie podatków nie jest domyślnie włączone. Aby je włączyć, musisz przejść do **Ultimate Multisite > Ustawienia > Podatki** i przełączyć ustawienie Włącz podatki.
 
@@ -25,7 +25,7 @@ Możesz także wyświetlić ustawienia podatków dla poszczególnych produktów:
 
 ![Ustawienia podatków dla produktów](/img/config/settings-taxes.png)
 
-### Podatek wykluczony vs. podatek wliczony
+### Podatek wykluczony vs. podatek wliczony {#tax-excluded-vs-tax-included}
 
 Domyślnie wszystkie ceny Twoich produktów nie zawierają podatku, co oznacza, że podatki **nie są wliczone** w cenę produktu. Jeśli ustalimy, że klient powinien zapłacić podatki od danego zakupu, dodamy podatki **ponad** sumę częściową.
 
@@ -37,7 +37,7 @@ Nie zapomnij **zapisać** wprowadzonych zmian.
 
 ###
 
-## Tworzenie stawek podatkowych
+## Tworzenie stawek podatkowych {#creating-tax-rates}
 
 Po włączeniu pobierania podatków musisz utworzyć stawki podatkowe dla określonych lokalizacji za pomocą naszego edytora stawek podatkowych.
 
@@ -51,7 +51,7 @@ Na stronie edytora stawek podatkowych możesz dodać nowe stawki podatkowe, klik
 
 Musisz nadać każdej stawce podatkowej **tytuł** (używany na fakturach). Następnie możesz wybrać **kraj** (wymagany), **stan/województwo** i **miasto** (oba opcjonalne), w których ten podatek będzie naliczany. Na koniec dodaj **stawkę podatku w procentach**.
 
-### Kategorie podatkowe
+### Kategorie podatkowe {#tax-categories}
 
 Możesz także utworzyć wiele kategorii podatkowych, aby dodać różne stawki podatkowe dla różnych rodzajów produktów.
 
@@ -73,7 +73,7 @@ Możesz ustawić kategorię podatkową dla konkretnego produktu, przechodząc do
 
 Na tym samym ekranie możesz wyłączyć przełącznik **Czy podlega opodatkowaniu?**, aby poinformować Ultimate Multisite, że nie powinien pobierać podatków od danego produktu.
 
-## Wsparcie dla europejskiego VAT
+## Wsparcie dla europejskiego VAT {#european-vat-support}
 
 Jak wspomniano wcześniej, mamy dostępny dodatek dla klientów w UE, którzy mają dodatkowe wymagania wynikające z europejskich przepisów VAT.
 
@@ -101,7 +101,7 @@ Jeśli wrócisz do **karty Ustawienia podatków**, zobaczysz dostępne nowe opcj
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Pobieranie stawek podatku VAT
+### Pobieranie stawek podatku VAT {#pulling-on-vat-tax-rates}
 
 Jednym z narzędzi dodawanych przez naszą integrację jest możliwość ładowania stawek podatkowych dla państw członkowskich UE. Można to zrobić, odwiedzając stronę edytora stawek podatkowych po włączeniu wsparcia VAT UE.
 
@@ -111,7 +111,7 @@ Na dole strony zobaczysz opcje pobierania VAT. Wybranie typu stawki i kliknięci
 
 Możesz także edytować wartości po ich pobraniu. Aby to zrobić, po prostu edytuj potrzebny wiersz tabeli i kliknij, aby zapisać nowe wartości.
 
-### Weryfikacja VAT
+### Weryfikacja VAT {#vat-validation}
 
 Gdy wsparcie VAT jest włączone, Ultimate Multisite doda dodatkowe pole do formularza płatności, poniżej pola adresu rozliczeniowego. Pole pojawi się tylko dla klientów zlokalizowanych w UE.
 

@@ -3,13 +3,13 @@ title: Ịnata ụgwọ
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ịnata Ụgwọ (v2)
+# Ịnata Ụgwọ (v2) {#getting-paid-v2}
 
 _**IHE NDỊ DỊ MKPA: Edemede a na-ekwu maka Ultimate Multisite ụdị 2.x.**_
 
 Ultimate Multisite nwere sistemụ otu na ịkwụ ụgwọ e wuru n’ime ya. Ka sistemụ ịkwụ ụgwọ anyị wee rụọ ọrụ, anyị etinyela ụzọ nnata ụgwọ ndị a na-ejikarị eme ihe na e-commerce. Ụzọ nnata ụgwọ ndabara na Ultimate Multisite bụ _Stripe_ , _PayPal_ , na Ịkwụ Ụgwọ Aka. Ị nwekwara ike iji _WooCommerce_ , _GoCardless_ na _Payfast_ nata ụgwọ site n’ịwụnye add-ons nke ha.
 
-## Ntọala Ndị Bụ Isi
+## Ntọala Ndị Bụ Isi {#basic-settings}
 
 Ị nwere ike ịhazi nke ọ bụla n’ime ụzọ nnata ụgwọ ndị a n’okpuru ntọala ịkwụ ụgwọ Ultimate Multisite. Ị nwere ike ịchọta ya site n’ịga na **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Nke a na-egbochi membership ka ọ ghara iyi ka ọ na-emegharị onwe ya mgbe g
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Ebe ịchọta gateways:
+## Ebe ịchọta gateways: {#where-to-find-the-gateways}
 
 Ị nwere ike ịhazi ụzọ nnata ụgwọ na otu peeji ahụ ( **Ultimate Multisite > Settings > Payments**). N’okpuru **active payment gateways** ozugbo, ị ga-enwe ike ịhụ: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ na _Manual_.
 
@@ -67,7 +67,7 @@ Nke a bụkwa nlele zuru ezu nke ntọala ụzọ nnata ụgwọ:
 
 Ugbu a, ọ bụrụ na ịchọrọ iji _WooCommerce_ , _GoCardless_ ma ọ bụ _Payfast_ dị ka ụzọ nnata ụgwọ gị, ị ga-achọ **ịwụnye ma hazie add-ons ha**.
 
-### Otu esi etinye WooCommerce add-on:
+### Otu esi etinye WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Anyị ghọtara na _Stripe_ na _PayPal_ adịghị na ụfọdụ mba, nke na-egbochi ma ọ bụ na-akpaghasị ndị ọrụ Ultimate Multisite iji plugin anyị nke ọma. Ya mere, anyị kere add-on iji jikọta _WooCommerce,_ nke bụ plugin e-commerce a ma ama nke ukwuu. Ndị mmepe gburugburu ụwa kere add-ons iji jikọta ụzọ nnata ụgwọ dị iche iche na ya. Anyị jiri ohere a gbasaa ụzọ nnata ụgwọ ị nwere ike iji na sistemụ ịkwụ ụgwọ Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Mgbe ịmechara ya ka ọ rụọ ọrụ, ọ bụrụ na ị ka etinyebeghị 
 
 Iji gụọkwuo gbasara mgbakwunye WooCommerce Integration, **pịa ebe a**.
 
-### Otu esi wụnye mgbakwunye GoCardless:
+### Otu esi wụnye mgbakwunye GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Nzọụkwụ iji wụnye mgbakwunye _GoCardless_ fọrọ nke nta ka ọ bụrụ otu ihe ahụ dị ka mgbakwunye _WooCommerce_. Biko gaa na peeji mgbakwunye ma họrọ mgbakwunye **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Mgbe echichi ahụ mechara, a ga-ebugharị gị gaa na peeji mgbakwunye. N'ebe 
 
 Iji mụta otú e si amalite iji gateway _GoCardless_, **gụọ edemede a**.
 
-### Otu esi wụnye mgbakwunye Payfast:
+### Otu esi wụnye mgbakwunye Payfast: {#how-to-install-the-payfast-add-on}
 
 Gaa na peeji mgbakwunye ma họrọ mgbakwunye **Ultimate Multisite: Payfast Gateway**.
 

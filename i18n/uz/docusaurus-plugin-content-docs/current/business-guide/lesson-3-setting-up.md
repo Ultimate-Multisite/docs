@@ -3,32 +3,32 @@ title: '3-dars: Tarmog‘ingizni sozlash'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# 3-dars: Tarmog‘ingizni sozlash
+# 3-dars: Tarmog‘ingizni sozlash {#lesson-3-setting-up-your-network}
 
 Qurish vaqti keldi. Bu darsda siz Ultimate Multisite’ni o‘rnatasiz va FitSite tarmog‘ining poydevorini sozlaysiz. Bu yerdagi har bir qaror fitness yo‘nalishini hisobga olgan holda qabul qilinadi.
 
-## Qayerda to‘xtagan edik
+## Qayerda to‘xtagan edik {#where-we-left-off}
 
 Biz yo‘nalishimiz sifatida fitness studiyalarini tanladik va imkoniyatni tasdiqladik. Endi bu g‘oyani ishlaydigan platformaga aylantiramiz.
 
-## Hosting tanlash
+## Hosting tanlash {#choosing-your-hosting}
 
 Yo‘nalishga ixtisoslashgan platforma uchun hosting tanlovi bitta website’ga qaraganda muhimroq. Siz bitta site’ni joylashtirmayapsiz -- siz o‘nlab yoki yuzlab site’larga o‘sadigan tarmoqni joylashtiryapsiz.
 
-### Nimalarga e’tibor berish kerak
+### Nimalarga e’tibor berish kerak {#what-to-look-for}
 
 - **WordPress Multisite qo‘llab-quvvatlashi**: Hamma hostlar multisite’ni yaxshi boshqara olmaydi
 - **Wildcard SSL**: Subdomain asosidagi tarmoqlar uchun zarur
 - **Kengaytiriladigan resurslar**: Migratsiyasiz o‘sish uchun joy kerak
 - **Ultimate Multisite integratsiyasi**: Avtomatlashtirilgan domain mapping va SSL sezilarli operatsion mehnatni tejaydi
 
-### Tavsiya etilgan yondashuv
+### Tavsiya etilgan yondashuv {#recommended-approach}
 
 [Mos provayderlar](/user-guide/host-integrations/closte) ro‘yxatidan host tanlang. Ular Ultimate Multisite bilan sinovdan o‘tgan va domain mapping hamda SSL avtomatlashtirish uchun kerakli integratsiyalarni taqdim etadi.
 
 FitSite uchun biz subdomain konfiguratsiyasidan foydalanamiz. Bu mijoz site’lari o‘z domain’ini ixtiyoriy ravishda ulashdan oldin dastlab `studioname.fitsite.com` ko‘rinishida paydo bo‘lishini anglatadi.
 
-## WordPress Multisite’ni o‘rnatish
+## WordPress Multisite’ni o‘rnatish {#installing-wordpress-multisite}
 
 Agar sizda hali WordPress Multisite o‘rnatilmagan bo‘lsa:
 
@@ -40,7 +40,7 @@ Agar sizda hali WordPress Multisite o‘rnatilmagan bo‘lsa:
 Subdomainlar har bir mijoz site’iga path (`fitsite.com/studio`) o‘rniga o‘zining alohida manzilini (`studio.fitsite.com`) beradi. Bu mijozlaringiz uchun professionalroq ko‘rinadi va permalink ziddiyatlarining oldini oladi. Batafsil taqqoslash uchun [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) ga qarang.
 :::
 
-## Ultimate Multisite’ni o‘rnatish
+## Ultimate Multisite’ni o‘rnatish {#installing-ultimate-multisite}
 
 Quyidagilar uchun [Ultimate Multisite’ni o‘rnatish](/user-guide/getting-started/installing-ultimate-multisite) qo‘llanmasiga amal qiling:
 
@@ -53,11 +53,11 @@ Sozlash ustasi davomida FitSite yo‘nalishini yodda tuting:
 - **Kompaniya nomi**: "FitSite" (yoki tanlagan brend nomingiz)
 - **Kompaniya logotipi**: Brend logotipingizni yuklang -- bu invoice’lar va email’larda ko‘rinadi
 
-## Fitness yo‘nalishi uchun sozlash
+## Fitness yo‘nalishi uchun sozlash {#configuring-for-the-fitness-niche}
 
 Ultimate Multisite o‘rnatilgach, quyidagi yo‘nalishga xos konfiguratsiya tanlovlarini qiling:
 
-### Umumiy sozlamalar
+### Umumiy sozlamalar {#general-settings}
 
 **Ultimate Multisite > Sozlamalar** bo‘limiga o‘ting va sozlang:
 
@@ -65,7 +65,7 @@ Ultimate Multisite o‘rnatilgach, quyidagi yo‘nalishga xos konfiguratsiya tan
 - **Standart rol**: Administrator -- fitness studiya egalari o‘z site kontenti ustidan to‘liq nazoratga muhtoj
 - **Ro‘yxatdan o‘tish**: Studiya egalari o‘zlari ro‘yxatdan o‘ta olishi uchun foydalanuvchi ro‘yxatdan o‘tishini yoqing
 
-### Email konfiguratsiyasi
+### Email konfiguratsiyasi {#email-configuration}
 
 Tizim email’laringiz yo‘nalishingiz tilida gapirishi kerak. **Ultimate Multisite > Sozlamalar > Email’lar** bo‘limiga o‘ting va moslashtiring:
 
@@ -75,7 +75,7 @@ Tizim email’laringiz yo‘nalishingiz tilida gapirishi kerak. **Ultimate Multi
 
 Bularni 8-darsda (Mijozlarni moslashtirish) yanada takomillashtiramiz, ammo hozirdanoq ohangni belgilash hatto dastlabki test ro‘yxatdan o‘tishlari ham yo‘nalishga xos tuyulishini ta’minlaydi.
 
-### Domain konfiguratsiyasi
+### Domain konfiguratsiyasi {#domain-configuration}
 
 Agar mos hosting provayderidan foydalanayotgan bo‘lsangiz, domain mapping’ni hozir sozlang:
 
@@ -85,7 +85,7 @@ Agar mos hosting provayderidan foydalanayotgan bo‘lsangiz, domain mapping’ni
 
 Bu keyingi darsda template’lar va test site’larini yaratishni boshlaganimizda hamma narsa boshidan oxirigacha ishlashini ta’minlaydi.
 
-## Hozirgacha FitSite tarmog‘i
+## Hozirgacha FitSite tarmog‘i {#the-fitsite-network-so-far}
 
 Bu dars oxirida sizda quyidagilar bo‘ladi:
 
@@ -99,7 +99,7 @@ FitSite tarmog‘i
 └── Site template’lari uchun tayyor (keyingi dars)
 ```
 
-## Bu darsda nimalar qurdik
+## Bu darsda nimalar qurdik {#what-we-built-this-lesson}
 
 - Subdomain rejimida **ishlaydigan WordPress Multisite** o‘rnatmasi
 - FitSite brendingi bilan **Ultimate Multisite o‘rnatildi** va sozlandi

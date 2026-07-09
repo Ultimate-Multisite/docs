@@ -3,11 +3,11 @@ title: بلٹ اِن ایجنٹس
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# بلٹ اِن Agents
+# بلٹ اِن Agents {#built-in-agents}
 
 Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے، ہر ایک کو ایک مرکوز tools کے مجموعے، ایک مخصوص system prompt، اور اس شعبے کے عام کاموں سے مطابقت رکھنے والی ابتدائی تجاویز کے ساتھ پہلے سے configure کیا گیا ہے۔ agents کے درمیان تبدیل کرنے سے یہ بدل جاتا ہے کہ assistant کیا کر سکتا ہے اور کیسے جواب دیتا ہے — آپ کی طرف سے کسی configuration کے بغیر۔ Superdav AI Agent v1.18.0 ان workflows میں schedule-aware tools، reminder records، approval gates، اور SMS notifications شامل کر سکتا ہے جب متعلقہ integrations configure ہوں۔
 
-## Agent کیا ہے؟
+## Agent کیا ہے؟ {#what-is-an-agent}
 
 ہر agent ایک نامزد configuration profile ہے جو یہ چیزیں یکجا کرتا ہے:
 
@@ -15,7 +15,7 @@ Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے،
 - **System prompt** — ہدایات جو agent کا لہجہ، ترجیحات، اور پابندیاں متعین کرتی ہیں
 - **Suggestions** — chat interface میں دکھائے جانے والے پہلے سے لکھے prompts تاکہ آپ جلدی شروع کر سکیں
 
-## Agent Picker تک رسائی
+## Agent Picker تک رسائی {#accessing-the-agent-picker}
 
 1. WordPress admin sidebar میں **Gratis AI Agent** panel کھولیں۔
 2. chat header کے اوپر بائیں طرف **agent icon** پر کلک کریں (icon active agent کی عکاسی کے لیے بدلتا ہے)۔
@@ -24,9 +24,9 @@ Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے،
 
 آپ گفتگو کے دوران بھی agents بدل سکتے ہیں — نئے agent کا system prompt اگلے message سے مؤثر ہو جاتا ہے۔
 
-## پانچ بلٹ اِن Agents
+## پانچ بلٹ اِن Agents {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **توجہ:** posts، pages، اور contact forms بنانا اور edit کرنا۔
 
@@ -47,7 +47,7 @@ Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے،
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **توجہ:** ایک ہی prompt سے end-to-end website بنانا۔
 
@@ -70,7 +70,7 @@ Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے،
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **توجہ:** بصری customisation — colours، typography، CSS، اور block patterns۔
 
@@ -87,7 +87,7 @@ Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے،
 - *homepage کا screenshot لیں اور مجھے بتائیں کہ آپ کیا بہتر کریں گے۔*
 - *full-width background image اور centred heading کے ساتھ reusable hero block pattern بنائیں۔*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **توجہ:** WordPress plugins دریافت کرنا، install کرنا، اور manage کرنا۔
 
@@ -105,7 +105,7 @@ Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے،
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **توجہ:** site content، settings، اور WordPress configuration کے بارے میں سوالات کے جواب دینا۔
 
@@ -124,7 +124,7 @@ Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے،
 
 ---
 
-## Superdav Automation Integrations
+## Superdav Automation Integrations {#superdav-automation-integrations}
 
 جب Superdav AI Agent v1.18.0 integrations configured ہوں، built-in agents زیادہ محفوظ schedule-aware automation workflows میں حصہ لے سکتے ہیں:
 
@@ -138,11 +138,11 @@ Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے،
 
 ---
 
-## Agents کو حسبِ ضرورت بنانا
+## Agents کو حسبِ ضرورت بنانا {#customising-agents}
 
 ہر built-in agent کو `gratis_ai_agent_agents` filter کے ذریعے extend یا replace کیا جا سکتا ہے۔
 
-### موجودہ agent میں custom system prompt شامل کرنا
+### موجودہ agent میں custom system prompt شامل کرنا {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### نیا agent register کرنا
+### نیا agent register کرنا {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 نیا agent filter چلنے کے فوراً بعد Agent Picker میں ظاہر ہوتا ہے۔
 
-### built-in agent کو remove کرنا
+### built-in agent کو remove کرنا {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

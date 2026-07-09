@@ -4,19 +4,19 @@ title: Gníomh - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Gníomh: wu_template_previewer
+# Gníomh: wu_template_previewer {#action-wutemplatepreviewer}
 
 Ritheann sé nuair atáthar laistigh de chomhthéacs réamhamharcóra an teimpléid.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
 | $template_previewer | `self` | Ásc den aicme reatha. |
 
-### Ó
+### Ó {#since}
 
 - 2.0.4
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) ag líne 86

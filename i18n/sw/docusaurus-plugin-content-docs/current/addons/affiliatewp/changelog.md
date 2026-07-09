@@ -3,7 +3,7 @@ title: AffiliateWP Historia ya Mabadiliko
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Historia ya Mabadiliko za AffiliateWP
+# Historia ya Mabadiliko za AffiliateWP {#affiliatewp-changelog}
 
 Toleo: 2.0.1 - Ili kutolewa tarehe 2025-09-28
 

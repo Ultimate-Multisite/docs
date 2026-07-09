@@ -4,11 +4,11 @@ title: Aktioun - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Gëtt direkt ausgeléist, ier den Authentifikatiouns-Cookie gesat gëtt.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Gëtt direkt ausgeléist, ier den Authentifikatiouns-Cookie gesat gëtt.
 | $scheme | `string` | Authentifikatiounsschema. Wäerter enthalen 'auth' oder 'secure_auth'. |
 | $token | `string` | Sessiounstoken vum User, dee fir dëse Cookie benotzt gëtt. |
 
-### Zanter
+### Zanter {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) op der Linn 124

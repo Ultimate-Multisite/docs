@@ -4,11 +4,11 @@ title: عمل - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# عمل: wu_handle_customer_meta_fields
+# عمل: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 پلگ اِن ڊولپرن کي اجازت ڏيو ته جيڪڏهن کين ضرورت هجي ته ميٽا ڊيٽا مختلف طريقن سان محفوظ ڪن.
 
-## پيراميٽر
+## پيراميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: a93030d6a7965ebed83579b198381fa8
 | $customer | `\Customer` | Ultimate Multisite گراهڪ آبجيڪٽ. |
 | $checkout | `\Checkout` | چيڪ آئوٽ ڪلاس. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.0.0
-### ذريعو
+### ذريعو {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) ۾ لڪير 1211 تي بيان ٿيل آهي.

@@ -3,13 +3,13 @@ title: Resevwa peman
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Resevwa Peman (v2)
+# Resevwa Peman (v2) {#getting-paid-v2}
 
 _**NÒT ENPÒTAN: Atik sa a fè referans ak Ultimate Multisite vèsyon 2.x.**_
 
 Ultimate Multisite gen yon sistèm manm ak faktirasyon entegre. Pou sistèm faktirasyon nou an fonksyone, nou entegre passerelles peman ki pi komen yo itilize nan e-commerce. Passerelles peman pa defo nan Ultimate Multisite se _Stripe_ , _PayPal_ , ak Manual Payment. Ou kapab itilize tou _WooCommerce_ , _GoCardless_ ak _Payfast_ pou resevwa peman lè w enstale add-ons respektif yo.
 
-## Paramèt Debaz
+## Paramèt Debaz {#basic-settings}
 
 Ou kapab konfigire nenpòt nan passerelles peman sa yo anba paramèt peman Ultimate Multisite. Ou ka jwenn li lè w ale nan **meni Ultimate Multisite > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Sa anpeche yon manm parèt tankou l ap renouvle otomatikman lè passerelle la ka
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Ki kote pou jwenn passerelles yo:
+## Ki kote pou jwenn passerelles yo: {#where-to-find-the-gateways}
 
 Ou kapab mete passerelles peman yo kanpe sou menm paj la ( **Ultimate Multisite > Settings > Payments**). Jis anba **passerelles peman aktif** , ou pral kapab wè: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ak _Manual_.
 
@@ -67,7 +67,7 @@ Men tou yon vi konplè sou paramèt passerelles peman yo:
 
 Kounye a, si ou vle itilize _WooCommerce_ , _GoCardless_ oswa _Payfast_ kòm passerelle peman ou, w ap bezwen **enstale epi konfigire add-ons yo**.
 
-### Ki jan pou enstale add-on WooCommerce la:
+### Ki jan pou enstale add-on WooCommerce la: {#how-to-install-the-woocommerce-add-on}
 
 Nou konprann _Stripe_ ak _PayPal_ pa disponib nan kèk peyi, sa ki limite oswa anpeche itilizatè Ultimate Multisite yo itilize plugin nou an efektivman. Se poutèt sa nou te kreye yon add-on pou entegre _WooCommerce,_ ki se yon plugin e-commerce trè popilè. Devlopè toupatou nan mond lan te kreye add-ons pou entegre diferan passerelles peman ladan l. Nou te pwofite sa pou elaji passerelles peman ou kapab itilize ak sistèm faktirasyon Ultimate Multisite la.
 
@@ -95,7 +95,7 @@ Apre ou fin aktive li, si ou toujou pa gen ekstansyon WooCommerce la enstale ak 
 
 Pou li plis sou add-on WooCommerce Integration la, **klike isit la**.
 
-### Kijan pou enstale add-on GoCardless la:
+### Kijan pou enstale add-on GoCardless la: {#how-to-install-the-gocardless-add-on}
 
 Etap pou enstale add-on _GoCardless_ la prèske menm ak add-on _WooCommerce_ la. Tanpri ale sou paj add-on yo epi chwazi add-on **Ultimate Multisite: GoCardless Gateway** la.
 
@@ -111,7 +111,7 @@ Apre enstalasyon an fini, yo pral redirije w sou paj ekstansyon yo. Isit la, jis
 
 Pou aprann kijan pou kòmanse ak passerelle _GoCardless_ la, **li atik sa a**.
 
-### Kijan pou enstale add-on Payfast la:
+### Kijan pou enstale add-on Payfast la: {#how-to-install-the-payfast-add-on}
 
 Ale sou paj add-on yo epi chwazi add-on **Ultimate Multisite: Payfast Gateway** la.
 

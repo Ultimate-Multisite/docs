@@ -4,11 +4,11 @@ title: ফিল্টার - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filter: wu_rest_get_items
+# Filter: wu_rest_get_items {#filter-wurestgetitems}
 
 এই ফিল্টারটি নির্ধারণ করে যে অনুরোধটি চালিয়ে যাওয়া অনুমোদিত কিনা।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 | $rest_base | `array` | এনটিটি স্ল্যাগ। |
 | $this | `\Base_Manager` | অবজেক্ট ইনস্ট্যান্স। |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336)-এ লাইন ৩৩৬-এ সংজ্ঞায়িত।

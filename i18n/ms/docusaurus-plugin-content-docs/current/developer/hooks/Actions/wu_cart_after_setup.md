@@ -4,19 +4,19 @@ title: Tindakan - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Action: wu_cart_after_setup
+# Action: wu_cart_after_setup {#action-wucartaftersetup}
 
 Membenarkan pembangun membuat perubahan tambahan pada objek checkout.
 
-## Parameter
+## Parameter {#parameters}
 
 | Nama | Jenis | Penerangan |
 |------|------|-------------|
 | $this | `` | \WP_Ultimo\Checkout\Cart Objek troli. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Didefinisikan dalam [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L388) pada baris 388

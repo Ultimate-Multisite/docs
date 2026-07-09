@@ -3,18 +3,18 @@ title: Cloudflare એકીકરણ
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare એકીકરણ
+# Cloudflare એકીકરણ {#cloudflare-integration}
 
-## અવલોકન
+## અવલોકન {#overview}
 Cloudflare એક અગ્રણી સામગ્રી વિતરણ નેટવર્ક (CDN) અને સુરક્ષા પ્રદાતા છે, જે વેબસાઇટોને સુરક્ષિત અને ઝડપી બનાવવામાં મદદ કરે છે. આ એકીકરણ Ultimate Multisite અને Cloudflare વચ્ચે સ્વચાલિત ડોમેન વ્યવસ્થાપન સક્ષમ કરે છે, ખાસ કરીને સબડોમેન multisite સ્થાપનો માટે.
 
-## સુવિધાઓ
+## સુવિધાઓ {#features}
 - Cloudflare માં સ્વચાલિત સબડોમેન બનાવટ
 - પ્રોક્સી કરેલા સબડોમેન સપોર્ટ
 - DNS રેકોર્ડ વ્યવસ્થાપન
 - Ultimate Multisite એડમિનમાં સુધારેલ DNS રેકોર્ડ પ્રદર્શન
 
-## આવશ્યકતાઓ
+## આવશ્યકતાઓ {#requirements}
 તમારી `wp-config.php` ફાઇલમાં નીચેના constants વ્યાખ્યાયિત હોવા જોઈએ:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## સેટઅપ સૂચનાઓ
+## સેટઅપ સૂચનાઓ {#setup-instructions}
 
-### 1. તમારી Cloudflare API Key મેળવો
+### 1. તમારી Cloudflare API Key મેળવો {#1-get-your-cloudflare-api-key}
 
 1. તમારા Cloudflare dashboard માં લૉગ ઇન કરો
 2. "My Profile" પર જાઓ (ઉપર-જમણા ખૂણામાં તમારા ઇમેઇલ પર ક્લિક કરો)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. તમારો API token કૉપી કરો
 
-### 2. તમારો Zone ID મેળવો
+### 2. તમારો Zone ID મેળવો {#2-get-your-zone-id}
 
 1. તમારા Cloudflare dashboard માં, તમે ઉપયોગ કરવા માંગો છો તે ડોમેન પસંદ કરો
 2. Zone ID "Overview" ટેબમાં, જમણી સાઇડબારમાં "API" હેઠળ દેખાય છે
 3. Zone ID કૉપી કરો
 
-### 3. wp-config.php માં Constants ઉમેરો
+### 3. wp-config.php માં Constants ઉમેરો {#3-add-constants-to-wp-configphp}
 
 તમારી `wp-config.php` ફાઇલમાં નીચેના constants ઉમેરો:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. એકીકરણ સક્ષમ કરો
+### 4. એકીકરણ સક્ષમ કરો {#4-enable-the-integration}
 
 1. તમારા WordPress એડમિનમાં, Ultimate Multisite > Settings પર જાઓ
 2. "Domain Mapping" ટેબ પર નેવિગેટ કરો
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Cloudflare એકીકરણ સક્ષમ કરો
 5. "Save Changes" ક્લિક કરો
 
-## તે કેવી રીતે કામ કરે છે
+## તે કેવી રીતે કામ કરે છે {#how-it-works}
 
-### સબડોમેન વ્યવસ્થાપન
+### સબડોમેન વ્યવસ્થાપન {#subdomain-management}
 
 જ્યારે સબડોમેન multisite સ્થાપનમાં નવી સાઇટ બનાવવામાં આવે છે:
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. સબડોમેન ડિફૉલ્ટ રીતે Cloudflare મારફતે પ્રોક્સી થવા માટે કન્ફિગર થાય છે (આ filters વડે બદલી શકાય છે)
 3. જ્યારે સાઇટ કાઢી નાખવામાં આવે છે, ત્યારે એકીકરણ Cloudflare માંથી સબડોમેન દૂર કરશે
 
-### DNS રેકોર્ડ પ્રદર્શન
+### DNS રેકોર્ડ પ્રદર્શન {#dns-record-display}
 
 એકીકરણ Ultimate Multisite એડમિનમાં DNS રેકોર્ડ પ્રદર્શનને આ રીતે સુધારે છે:
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. રેકોર્ડ્સ પ્રોક્સી કરેલા છે કે નહીં તે દર્શાવવું
 3. DNS રેકોર્ડ્સ વિશે વધારાની માહિતી બતાવવી
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (અગાઉ "Cloudflare for SaaS" કહેવાતું) એ Cloudflare ની એક સુવિધા છે, જે તમારા ગ્રાહકોને તમારા multisite નેટવર્ક પર SSL સાથે તેમના પોતાના ડોમેનનો ઉપયોગ કરવાની મંજૂરી આપે છે. Cloudflare નો ઉપયોગ કરતા ડોમેન-મેપ્ડ multisite સ્થાપનો માટે આ ભલામણ કરાયેલ અભિગમ છે, કારણ કે Cloudflare દરેક કસ્ટમ ડોમેન માટે SSL પ્રમાણપત્ર જારીકરણ અને નવીકરણ આપમેળે સંચાલિત કરે છે.
 
-### તે પ્રમાણભૂત Cloudflare એકીકરણથી કેવી રીતે જુદું છે
+### તે પ્રમાણભૂત Cloudflare એકીકરણથી કેવી રીતે જુદું છે {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | પ્રમાણભૂત એકીકરણ | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **માટે શ્રેષ્ઠ** | સબડોમેન multisite | ડોમેન-મેપ્ડ multisite |
 | **SSL** | અલગથી સંભાળવામાં આવે છે | Cloudflare દ્વારા આપમેળે સંચાલિત |
 
-### Cloudflare Custom Hostnames સેટ અપ કરવું
+### Cloudflare Custom Hostnames સેટ અપ કરવું {#setting-up-cloudflare-custom-hostnames}
 
 1. તમારા Cloudflare dashboard માં, તમારા મુખ્ય ડોમેન માટેનો zone ખોલો.
 2. **SSL/TLS > Custom Hostnames** પર જાઓ.
@@ -101,23 +101,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 Ultimate Multisite v2.6.1 મુજબ, તમામ plugin settings અને labels માં આ સુવિધાને **Cloudflare Custom Hostnames** તરીકે ઓળખવામાં આવે છે. અગાઉના સંસ્કરણોમાં "Cloudflare for SaaS" નામનો ઉપયોગ થતો હતો, જે મૂળભૂત Cloudflare ઉત્પાદનનું નામ છે.
 :::
 
-## મહત્વપૂર્ણ નોંધો
+## મહત્વપૂર્ણ નોંધો {#important-notes}
 
 Cloudflare ના તાજેતરના અપડેટ્સ મુજબ, wildcard proxying હવે તમામ ગ્રાહકો માટે ઉપલબ્ધ છે. તેનો અર્થ એ છે કે પ્રમાણભૂત Cloudflare DNS એકીકરણ સબડોમેન multisite સ્થાપનો માટે પહેલાં જેટલું મહત્વપૂર્ણ નથી, કારણ કે તમે Cloudflare માં સરળતાથી wildcard DNS રેકોર્ડ સેટ અપ કરી શકો છો.
 
-## સમસ્યાનિવારણ
+## સમસ્યાનિવારણ {#troubleshooting}
 
-### API કનેક્શન સમસ્યાઓ
+### API કનેક્શન સમસ્યાઓ {#api-connection-issues}
 - ચકાસો કે તમારો API token સાચો છે અને જરૂરી પરવાનગીઓ ધરાવે છે
 - તપાસો કે તમારો Zone ID સાચો છે
 - ખાતરી કરો કે તમારા Cloudflare account પાસે જરૂરી પરવાનગીઓ છે
 
-### સબડોમેન ઉમેરાયો નથી
+### સબડોમેન ઉમેરાયો નથી {#subdomain-not-added}
 - કોઈપણ ભૂલ સંદેશાઓ માટે Ultimate Multisite logs તપાસો
 - ચકાસો કે સબડોમેન પહેલેથી જ Cloudflare માં ઉમેરાયેલો નથી
 - ખાતરી કરો કે તમારો Cloudflare plan તમે બનાવી રહ્યા છો તે DNS રેકોર્ડ્સની સંખ્યાને સપોર્ટ કરે છે
 
-### પ્રોક્સીંગ સમસ્યાઓ
+### પ્રોક્સીંગ સમસ્યાઓ {#proxying-issues}
 - જો તમે સબડોમેન પ્રોક્સી ન થાય એવું ઇચ્છો છો, તો તમે `wu_cloudflare_should_proxy` filter નો ઉપયોગ કરી શકો છો
 - પ્રોક્સી કરવામાં આવે ત્યારે કેટલીક સુવિધાઓ યોગ્ય રીતે કામ ન કરી શકે (દા.ત., ચોક્કસ WordPress એડમિન functions)
 - એડમિન પેજ માટે cache બાયપાસ કરવા Cloudflare ના Page Rules નો ઉપયોગ કરવાનો વિચાર કરો

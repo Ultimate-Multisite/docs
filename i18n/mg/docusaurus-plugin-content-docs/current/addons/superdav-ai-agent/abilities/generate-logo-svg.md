@@ -3,15 +3,15 @@ title: Mamorona sary famantarana SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Mamorona Logo SVG
+# Mamorona Logo SVG {#generate-logo-svg}
 
 Ny fahaiza-manao **Generate Logo SVG** dia mamela ny Theme Builder hamorona sy hampiditra logo SVG manokana mivantana ao amin’ny site WordPress-nao miaraka amin’ny fanadiovana mandeha ho azy azo antoka amin’ny namespace.
 
-## Topimaso
+## Topimaso {#overview}
 
 Ity fahaiza-manao ity dia mamorona logo scalable vector graphics (SVG) mifototra amin’ny tari-dalan’ny marika sy ny safidinao amin’ny famolavolana ho an’ny site-nao. Diovina ho azy ireo SVG voaforona mba hiantohana fa azo antoka ampiasaina ao amin’ny WordPress izy ireo sady mitazona ny fahamendrehan’ny endrika hita maso.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Ity fahaiza-manao ity dia mamorona logo scalable vector graphics (SVG) mifototra
 | `height` | number | Tsia | Haavon’ny SVG amin’ny piksel (sanda default: 200) |
 | `include_text` | boolean | Tsia | Na hampiditra ny anaran’ny site ho lahatsoratra ao amin’ny logo na tsia (sanda default: true) |
 
-## Endrika Fivoahana
+## Endrika Fivoahana {#output-format}
 
 Ny fahaiza-manao dia mamerina tady SVG manana ity rafitra manaraka ity:
 
@@ -36,7 +36,7 @@ Ny fahaiza-manao dia mamerina tady SVG manana ity rafitra manaraka ity:
 }
 ```
 
-## Fitondran-tenan’ny Fanadiovana SVG
+## Fitondran-tenan’ny Fanadiovana SVG {#svg-sanitisation-behaviour}
 
 Ireo SVG voaforona dia mandalo fanadiovana mandeha ho azy azo antoka amin’ny namespace mba:
 
@@ -48,7 +48,7 @@ Ireo SVG voaforona dia mandalo fanadiovana mandeha ho azy azo antoka amin’ny n
 
 Izany dia miantoka fa azo antoka ampidirina mivantana ao amin’ny WordPress ny SVG nefa tsy mila fanadiovana fanampiny.
 
-## Ohatra Fampiasana
+## Ohatra Fampiasana {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Ny fahaiza-manao dia mamorona logo SVG izay:
 - Manaraka fitsipika famolavolana maoderina
 - Voadio ho azy ary vonona hampiasaina
 
-## Fampidirana amin’ny Theme Builder
+## Fampidirana amin’ny Theme Builder {#integration-with-theme-builder}
 
 Rehefa mampiasa ny fifantenana tari-dalan’ny famolavolana ao amin’ny Theme Builder, ny fahaiza-manao Generate Logo SVG dia:
 
@@ -71,21 +71,21 @@ Rehefa mampiasa ny fifantenana tari-dalan’ny famolavolana ao amin’ny Theme B
 3. Mampiditra ho azy ny logo ao amin’ny faritra header/marika an’ny site-nao
 4. Mitahiry ny SVG ho logo manokana ao amin’ny haino aman-jery WordPress
 
-## Fomba Fanao Tsara Indrindra
+## Fomba Fanao Tsara Indrindra {#best-practices}
 
 - **Omeo mazava ny safidin’ny fomba** — farito ny fomba famolavolana tianao (maoderina, klasika, milalao, sns.)
 - **Farito ny loko** — ampidiro ny lokon’ny marikao mba hitoviana
 - **Andramo ny fisehoana** — hamarino fa miseho tsara amin’ny haben-efijery samihafa ny logo
 - **Amboary bebe kokoa** — ampiasao ny fitaovana fanamboarana logo an’ny WordPress hanitsiana ny habe sy ny fametrahana
 
-## Fetra
+## Fetra {#limitations}
 
 - Ny logo SVG dia foronina ho sary static (tsy misy animation)
 - Ny logo sarotra misy singa maro dia mety mila fanatsarana tanana
 - Tsy tohanana ny endritsoratra manokana; mampiasa endritsoratra an’ny rafitra ny lahatsoratra
 - Ny refy tena lehibe na tena kely dia mety hisy fiantraikany amin’ny kalitao
 
-## Fahaiza-manao Mifandraika
+## Fahaiza-manao Mifandraika {#related-abilities}
 
 - [Hamarino ny Fifanoheran’ny Paleta](./validate-palette-contrast.md) — zahao ny fifanoheran’ny loko ho an’ny fahafahana miditra
 - [Mamorona Menu](./create-menu.md) — mamorona menus fitetezana ho an’ny site-nao

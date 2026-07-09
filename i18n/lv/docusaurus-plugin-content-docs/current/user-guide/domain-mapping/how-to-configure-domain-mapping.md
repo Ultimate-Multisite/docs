@@ -3,17 +3,17 @@ title: Kā konfigurēt domēnu kartēšanu
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kā konfigurēt domēna kartēšanu (v2)
+# Kā konfigurēt domēna kartēšanu (v2) {#how-to-configure-domain-mapping-v2}
 
 _**SVARĪGA PIEZĪME: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
 Viena no jaudīgākajām premium tīkla funkcijām ir iespēja piedāvāt mūsu klientiem piesaistīt augstākā līmeņa domēnu savām vietnēm. Galu galā, kas izskatās profesionālāk: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) vai [_**joesbikeshop.com**_](http://joesbikeshop.com)? Tieši tāpēc Ultimate Multisite piedāvā šo funkciju iebūvētu, bez nepieciešamības izmantot trešo pušu pluginus.
 
-## Kas ir domēna kartēšana?
+## Kas ir domēna kartēšana? {#whats-domain-mapping}
 
 Kā norāda nosaukums, domēna kartēšana ir Ultimate Multisite piedāvātā iespēja pieņemt pieprasījumu par pielāgotu domēnu un kartēt šo pieprasījumu uz atbilstošo vietni tīklā, kurai šis konkrētais domēns ir piesaistīts.
 
-### Kā iestatīt domēna kartēšanu jūsu Ultimate Multisite tīklā
+### Kā iestatīt domēna kartēšanu jūsu Ultimate Multisite tīklā {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Lai domēna kartēšana darbotos, jums būs jāveic daži iestatījumi. Par laimi, Ultimate Multisite automatizē sarežģīto darbu jūsu vietā, lai jūs varētu viegli izpildīt prasības.
 
@@ -45,7 +45,7 @@ Taču, pirms sākat kartēt pielāgoto domēnu uz vienu no apakšvietnēm savā 
 
 ###
 
-### Pārliecinieties, ka domēna DNS iestatījumi ir pareizi konfigurēti
+### Pārliecinieties, ka domēna DNS iestatījumi ir pareizi konfigurēti {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Lai kartēšana darbotos, jums jāpārliecinās, ka domēns, kuru plānojat kartēt, norāda uz jūsu tīkla IP adresi. Ņemiet vērā, ka jums ir nepieciešama tīkla IP adrese — tā domēna IP adrese, kurā ir instalēts Ultimate Multisite — nevis tā pielāgotā domēna IP adrese, kuru vēlaties kartēt. Lai meklētu konkrēta domēna IP adresi, mēs iesakām, piemēram, doties uz [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Ja jums rodas grūtības panākt, lai tas darbotos, **sazinieties ar sava domēn
 
 Ja plānojat ļaut saviem klientiem kartēt viņu pašu domēnus, viņiem šajā daļā darbs būs jāveic pašiem. Norādiet viņiem uz viņu reģistratora atbalsta sistēmu, ja viņi paši nespēj izveidot A Record.
 
-### Pielāgota domēna nosaukuma kartēšana kā Super Admin
+### Pielāgota domēna nosaukuma kartēšana kā Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Kad esat pierakstījies kā super administrators savā tīklā, varat viegli pievienot un pārvaldīt pielāgotus domēna nosaukumus, dodoties uz **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Ja noklikšķināsiet uz domēna nosaukuma, varēsiet tajā redzēt dažas opcij
 
 **Is Secure?:** Lai gan Ultimate Multisite pirms domēna iespējošanas pārbauda, vai domēnam ir SSL sertifikāts, varat manuāli izvēlēties ielādēt domēnu ar SSL sertifikātu vai bez tā. Ņemiet vērā: ja tīmekļa vietnei nav SSL sertifikāta un mēģināt piespiedu kārtā to ielādēt ar SSL, tas var izraisīt kļūdas.
 
-### Pielāgota domēna nosaukuma piesaistīšana kā apakšvietnes lietotājam
+### Pielāgota domēna nosaukuma piesaistīšana kā apakšvietnes lietotājam {#mapping-custom-domain-name-as-subsite-user}
 
 Apakšvietņu administratori var arī piesaistīt pielāgotus domēna nosaukumus no savas apakšvietnes administratora Dashboard.
 
@@ -121,7 +121,7 @@ Pēc tam lietotājs var noklikšķināt uz **Next Step** un turpināt pievienot 
 
 Noklikšķinot uz **Add Domain**, tiks sākts pielāgotā domēna DNS informācijas pārbaudes un izgūšanas process.
 
-### Par domēnu sinhronizāciju
+### Par domēnu sinhronizāciju {#about-domain-syncing}
 
 Domēnu sinhronizācija ir process, kurā Ultimate Multisite pievieno pielāgoto domēna nosaukumu jūsu hosting kontam kā add-on domēnu, **lai domēna piesaiste darbotos**.
 

@@ -3,13 +3,13 @@ title: בניית אינטגרציה של רשם מותאם אישית
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# בניית אינטגרציה של רשם דומיינים מותאם אישית
+# בניית אינטגרציה של רשם דומיינים מותאם אישית {#building-a-custom-registrar-integration}
 
 התוסף Domain Seller משתמש בדפוס **Integration Registry** (מנגנון רישום אינטגרציות). כל רשם (registrar) הוא מחלקת PHP שמיישמת את הממשק `Domain_Selling_Capability` ורושמת את עצמה דרך ה-action hook `wu_domain_seller_register_capabilities`.
 
 מדריך זה מראה כיצד לחבר רשם דומיינים מותאם אישית.
 
-## הממשק (The interface)
+## הממשק (The interface) {#the-interface}
 
 המחלקה שלך חייבת ליישם את `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ולרכוב על `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### שיטות אופציונליות
+### שיטות אופציונליות {#optional-methods}
 
 יישום שיטות אלו משחרר תכונות נוספות. התוסף מזהה תמיכה באמצעות `method_exists()`:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | העברת דומיין (יציאה) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | העברת דומיין (כניסה) |
 
-### קונבנציית ערך ההחזרה
+### קונבנציית ערך ההחזרה {#return-value-convention}
 
 כל השיטות מחזירות מערך (array) עם לפחות מפתח `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'שגיאה קריאה לבני אדם'
 
 ---
 
-## רישום היכולת שלך
+## רישום היכולת שלך {#registering-your-capability}
 
 רשום את המחלקה שלך באמצעות ה-action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## הוספת שדות אימות למעגל ההגדרה (Wizard)
+## הוספת שדות אימות למעגל ההגדרה (Wizard) {#adding-credential-fields-to-the-wizard}
 
 כדי לאפשר למנהלים להזין פרטי אימות דרך מעגל ההגדרה, רשום את האינטגרציה שלך:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## Hooks עבור פעולות לאחר רישום
+## Hooks עבור פעולות לאחר רישום {#hooks-for-post-registration-actions}
 
 השתמש ב-actions אלו כדי להפעיל Webhooks, Provisioning, התראות או עדכוני CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## רישום לוגים (Logging)
+## רישום לוגים (Logging) {#logging}
 
 כתוב לצינור הלוגים הספציפי לספק שלך באמצעות `wu_log_add()`:
 

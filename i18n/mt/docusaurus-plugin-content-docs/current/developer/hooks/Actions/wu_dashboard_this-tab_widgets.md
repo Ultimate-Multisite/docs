@@ -4,11 +4,11 @@ title: 'Azzjoni - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 Ħalli lill-iżviluppaturi tal-estensjonijiet iżidu widgets mal-Panew tan-Network Dashboard.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 375d02727169a29da6237374f0ad979a
 | $screen | `\WP_Screen` | L-oġġett tal-iskrin. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Istanza tal-paġna tal-amministrazzjoni ta' Ultimate Multisite. |
 
-### Minn
+### Minn {#since}
 
 - 2.0.0
-### Sors
+### Sors {#source}
 
 Iddefinit fi [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) fil-linja 214

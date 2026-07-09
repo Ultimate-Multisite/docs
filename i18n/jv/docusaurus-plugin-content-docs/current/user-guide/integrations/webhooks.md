@@ -3,7 +3,7 @@ title: Webhook
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Pandangan Pertama Mengenai Webhooks (v2)
+# Pandangan Pertama Mengenai Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**PERHATIAN: Perlu diingat bahwa fitur atau artikel ini ditujukan untuk pengguna tingkat lanjut.**_
 
@@ -11,7 +11,7 @@ _**PERHATIAN: Perlu diingat bahwa fitur atau artikel ini ditujukan untuk penggun
 
 Ini berguna kalau kamu perlu integrasi atau kirim data tertentu dari Ultimate Multisite ke CRM atau sistem lain setiap kali ada kejadian yang dipicu. Contohnya, kamu perlu kirim nama dan alamat email pengguna ke daftar surat (mailing list) setiap kali akun pengguna baru dibuat.
 
-## Cara membuat webhook
+## Cara membuat webhook {#how-to-create-a-webhook}
 
 Untuk membuat webhook, buka *network admin dashboard* kamu. Klik **Ultimate Multisite > Webhooks > Add New Webhook.**
 

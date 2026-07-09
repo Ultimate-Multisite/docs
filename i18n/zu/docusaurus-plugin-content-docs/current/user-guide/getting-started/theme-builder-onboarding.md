@@ -3,11 +3,11 @@ title: Ukugeleza Kokuqalisa kwe-Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Ukugeleza Kokwamukeliswa kwe-Theme Builder
+# Ukugeleza Kokwamukeliswa kwe-Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 yethula ukugeleza okuqondisiwe **kokwamukeliswa kwe-Theme Builder** okukusiza ukuthi udale theme yangokwezifiso yamabhulokhi ngesikhathi sokusetha kwakho kokuqala. Lokhu kuthatha indawo yemodi endala ye-Site Builder ngendlela eguquguqukayo kakhudlwana, esizwa yi-agent.
 
-## Kuyini Ukugeleza Kokwamukeliswa kwe-Theme Builder?
+## Kuyini Ukugeleza Kokwamukeliswa kwe-Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Ukugeleza kokwamukeliswa kwe-Theme Builder kuyiwizadi yokusetha esebenzisanayo ethi:
 
@@ -18,9 +18,9 @@ Ukugeleza kokwamukeliswa kwe-Theme Builder kuyiwizadi yokusetha esebenzisanayo e
 
 Ukugeleza kunikwa amandla yi-**Setup Assistant agent**, ebuza imibuzo ecacisayo futhi yakhe theme yakho kancane kancane.
 
-## Ukuqala Ukwamukeliswa kwe-Theme Builder
+## Ukuqala Ukwamukeliswa kwe-Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Ukusetha Kokusebenza Kokuqala
+### Ukusetha Kokusebenza Kokuqala {#first-run-setup}
 
 Lapho uqala ukwethula Superdav AI Agent ekufakweni okusha kwe-WordPress, uzobona:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Khetha **"Build a custom theme"** ukuze ungene ekugelezeni kokwamukeliswa kwe-Theme Builder.
 
-### Ukwenza Kusebenze Mathupha
+### Ukwenza Kusebenze Mathupha {#manual-activation}
 
 Ungaqala futhi ukwamukeliswa kwe-Theme Builder noma nini ngokucela:
 
@@ -49,9 +49,9 @@ noma
 "Help me create a custom theme"
 ```
 
-## Izinyathelo Zokwamukeliswa
+## Izinyathelo Zokwamukeliswa {#the-onboarding-steps}
 
-### Isinyathelo 1: Ukukhetha Imodi
+### Isinyathelo 1: Ukukhetha Imodi {#step-1-mode-selection}
 
 I-Setup Assistant agent ibuza mayelana nokuncamelayo kwakho:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Imodi eqondisiwe** iyanconywa kubasebenzisi abaningi; i-agent yenza izincomo zokuklama ngokusekelwe embonini nasezinhlosweni zakho.
 
-### Isinyathelo 2: Ukucaciswa Kwesayithi
+### Isinyathelo 2: Ukucaciswa Kwesayithi {#step-2-site-specification}
 
 Uzobuzwa mayelana nesayithi lakho:
 
@@ -74,7 +74,7 @@ Uzobuzwa mayelana nesayithi lakho:
 
 Lolu lwazi lugcinwa kumemori yakho ye-**site_brief**, ama-agent ayibhekisela kuyo kumaseshini azayo.
 
-### Isinyathelo 3: Izinqumo Zohlelo Lokuklama
+### Isinyathelo 3: Izinqumo Zohlelo Lokuklama {#step-3-design-system-decisions}
 
 I-agent ikuqondisa ekukhetheni ama-design token:
 
@@ -83,7 +83,7 @@ I-agent ikuqondisa ekukhetheni ama-design token:
 - **Izikhala**: Ama-layout aminyene, avamile, noma abanzi
 - **Ukunyakaza**: Ama-animation nama-transition (uma kufiswa)
 
-### Isinyathelo 4: Ukukhiqizwa kwe-Theme
+### Isinyathelo 4: Ukukhiqizwa kwe-Theme {#step-4-theme-generation}
 
 I-Setup Assistant agent yakha uhlaka lwe-theme yakho yangokwezifiso yamabhulokhi ngo:
 
@@ -92,7 +92,7 @@ I-Setup Assistant agent yakha uhlaka lwe-theme yakho yangokwezifiso yamabhulokhi
 - Izitayela zamabhulokhi zangokwezifiso ezihambisana nohlelo lwakho lokuklama
 - Imininingwane ye-theme nezimemezelo zosekelo lwe-WordPress
 
-### Isinyathelo 5: Ukwenza Kusebenze Nokuqinisekisa
+### Isinyathelo 5: Ukwenza Kusebenze Nokuqinisekisa {#step-5-activation-and-verification}
 
 I-theme yenziwa isebenze ngokuzenzakalelayo, futhi uzobona:
 
@@ -107,7 +107,7 @@ I-theme yenziwa isebenze ngokuzenzakalelayo, futhi uzobona:
 
 Ungabe usuvakashela isayithi lakho ukuze uqinisekise ukuthi theme ibonakala kahle.
 
-## Ukucaciswa Kwesayithi Nememori ye-site_brief
+## Ukucaciswa Kwesayithi Nememori ye-site_brief {#site-specification-and-sitebrief-memory}
 
 Ngesikhathi sokwamukeliswa, i-agent iqopha ukucaciswa kwesayithi lakho esigabeni sememori se-**site_brief**. Lokhu kufaka:
 
@@ -117,7 +117,7 @@ Ngesikhathi sokwamukeliswa, i-agent iqopha ukucaciswa kwesayithi lakho esigabeni
 - Okuncamelayo kokuklama
 - Isakhiwo sokuqukethwe
 
-### Kungani site_brief Ibalulekile
+### Kungani site_brief Ibalulekile {#why-sitebrief-matters}
 
 Kumaseshini azayo, ama-agent abhekisela ku-site_brief yakho ukuze:
 
@@ -126,7 +126,7 @@ Kumaseshini azayo, ama-agent abhekisela ku-site_brief yakho ukuze:
 - Anikeze izincomo eziqonda umongo
 - Agweme ukuphinda imibuzo yokusetha
 
-### Ukubuka I-site_brief Yakho
+### Ukubuka I-site_brief Yakho {#viewing-your-sitebrief}
 
 Ungabuza i-agent:
 
@@ -142,11 +142,11 @@ noma
 
 I-agent izobonisa ukucaciswa kwesayithi lakho okugcinwe.
 
-## Ukwenza Ngokwezifiso Ngemva Kokwamukeliswa
+## Ukwenza Ngokwezifiso Ngemva Kokwamukeliswa {#customizing-after-onboarding}
 
 Ngemva kokuba ukwamukeliswa kwe-Theme Builder kuqediwe, ungakwazi:
 
-### Sebenzisa Ikhono le-Design System Aesthetics
+### Sebenzisa Ikhono le-Design System Aesthetics {#use-the-design-system-aesthetics-skill}
 
 Cela ukucwenga komklamo:
 
@@ -162,7 +162,7 @@ noma
 
 **Ikhono le-Design System Aesthetics** likuqondisa ezibuyekezweni zokuklama eziqondiwe.
 
-### Hlela theme.json Ngokuqondile
+### Hlela theme.json Ngokuqondile {#edit-themejson-directly}
 
 Kubasebenzisi abathuthukile, hlela `/wp-content/themes/[theme-name]/theme.json` ukuze ulungise:
 
@@ -171,7 +171,7 @@ Kubasebenzisi abathuthukile, hlela `/wp-content/themes/[theme-name]/theme.json` 
 - Amanani ezikhala
 - Izincazelo zemingcele nezithunzi
 
-### Dala Ama-template Amabhulokhi Angokwezifiso
+### Dala Ama-template Amabhulokhi Angokwezifiso {#create-custom-block-templates}
 
 Sebenzisa umhleli wamabhulokhi we-WordPress ukuze udale ama-template angokwezifiso we:
 
@@ -180,7 +180,7 @@ Sebenzisa umhleli wamabhulokhi we-WordPress ukuze udale ama-template angokwezifi
 - Amakhasi emikhiqizo
 - Amafomu okuxhumana
 
-## Ukuqhathanisa: Ukwamukeliswa Okudala vs. Okusha
+## Ukuqhathanisa: Ukwamukeliswa Okudala vs. Okusha {#comparison-old-vs-new-onboarding}
 
 | Isici | Site Builder (Endala) | Theme Builder (Entsha) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Sebenzisa umhleli wamabhulokhi we-WordPress ukuze udale ama-template angokwezifi
 | Ukuguquguquka | Izinketho ezingaguquki | Kungenziwa ngokwezifiso |
 | Izibuyekezo zesikhathi esizayo | Akubhekiselwa kukho | Kugcinwe ku-site_brief |
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
 **Ukugeleza kokwamukeliswa akuqedanga**
 - Qala kabusha ukugeleza: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Sebenzisa umhleli wamabhulokhi we-WordPress ukuze udale ama-template angokwezifi
 - Cela i-agent ukuthi "regenerate the theme with [specific changes]"
 - Hlela theme.json ngokuqondile ukuze ulawule ngokunembile
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 Ngemva kokuqeda ukwamukeliswa kwe-Theme Builder:
 

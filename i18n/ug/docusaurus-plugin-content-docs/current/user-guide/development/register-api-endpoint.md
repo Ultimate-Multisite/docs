@@ -3,7 +3,7 @@ title: API uç noktasını kaydet
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite سجل API конектир
+# Ultimate Multisite سجل API конектир {#the-ultimate-multisite-register-api-endpoint}
 
 Bu dərslikdə siz Ultimate Multisite /register API конеktörünü necə istifadə edib, şəbəkənizdə yeni bir müştəri üçün tam giriş prosesini necə yaratacağınızı və bunu Zapier ilə necə etə biləcəyinizi öyrənəcəksiniz.
 
@@ -27,11 +27,11 @@ Mana API sozlamalari sahifasining to'liq ko'rinishi:
 
 **Enable API** (API ni faollashtirish) ni tanlang va o'zingizning API ma'lumotlaringizni (credentials) olib oling.
 
-## Endpoint body parametrlari
+## Endpoint body parametrlari {#endpoint-body-parameters}
 
 Endpoint-e göndermemiz gereken asosan kerakli ma'lumotlarning qisqacha ko'rinishini ko'rib chiqamiz. Ushbu maqolaning oxirida siz butun chaqiruvni topasiz.
 
-### Миջбүр (Customer)
+### Миջбүр (Customer) {#customer}
 
 Бу процесда İstifadəçi ва Ultimate Multisite Буйручуни ясаш учун зарур бўлган маълумотлар шу ерда берилган:
 
@@ -41,25 +41,25 @@ Endpoint-e göndermemiz gereken asosan kerakli ma'lumotlarning qisqacha ko'rinis
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Üyeliq (Membership)**
+### **Üyeliq (Membership)** {#membership}
 
 Bu obyekt ichinde bizga faqat Üyelik Holati (Membership Status) kerak.
 
 "membership" { "status" : "string", // birincha "pending", "active", "trialing", "expired", "on-hold", "canceled" }
 
-### **Mahsulotlar (Products)**
+### **Mahsulotlar (Products)** {#products}
 
 منتجە تۆڕinizden 1 və ya daha çox məhsul ID-lərindən oluşan bir massiv (array) verilir. Diqqət edin, bu endpoint məhsul yaratmaz. Məhsul yaratma endpointi haqqında daha yaxşı başa düşmək üçün Ultimate Multisite sənədlərinə baxın.
 
 **"products" : [1,2],**
 
-### Төлтирме (Payment)
+### Төлтирме (Payment) {#payment}
 
 Membership (Уضوлик) kabi, biz faqat holatını bilishimiz kifaye.
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" }**,
 
-### Sayt (Site)
+### Sayt (Site) {#site}
 
 جس تالماقني سۆزنى قاپاڭ باشлаۇش ئۈچۈرۈش ئۈچۈن، ئۇنىڭدىكى وئب-سایتىن ئىچىدىكى URL ۋە سىزنىڭ تالماقنى (Title) ҳам Site ob'ektى ئىچیدا са츨امىز.
 
@@ -67,13 +67,13 @@ Membership (Уضوлик) kabi, biz faqat holatını bilishimiz kifaye.
 
 سجل (register) эндпоинтидан олиш янги яратилган аъзо маълумотлари билан массив (array) кўринишида келиб тушади.
 
-## Zapier-да ҳаракат (action) яратиш
+## Zapier-да ҳаракат (action) яратиш {#creating-an-action-in-zapier}
 
 Bu yangi va yanada mustahkam hisob yaratish nuqtasini kiritgan bilan, siz Zapierda yangi bir harakatdan foydalanish imkoniyatiga ega bo'lasiz.
 
 Zapierning yangi versiyasi taklif qiladigan barcha narsalardan qanday foydalanish va zavqlanishni bilasizmi? Mana yerda ko'proq o'rganing. (link?)
 
-### Action yaratish
+### Action yaratish {#creating-an-action}
 
 Bu yerda WordPress'te bir "action" (hareket) qanday yaratilacağını tushuntiraman. Bu, siz saytingizdə müəyyən bir hadis baş verdikdə avtomatik olaraq baş verəcək bir əməliyyat deməkdir. Məsələn, bir istifadəçi form doldurduqda və ya bir səhifə yükləndikdə nə etmək istədiyinizi proqramlaşdırmaq olar.
 
@@ -138,7 +138,7 @@ Bu misalda biz faqat saytning foydalanıcı adı (username), e-posta adresi (ema
 
 ياڭ жаңы Zap-ınızı سېنىڭ، ئۇنىڭ муваффақиятли تاتق قىلىش كېرەك. ھەر қандай хато يرتса، барча талаبلارني текشاڭ ва ئۇلار тўғри يۈрдەنيلادۇми, текشاڭ. Кўп маълумат بارлиги сабабли، баъزماملاлар ئاغلىقدا قىلىپ كۆرمەڭ.
 
-### Тام مالدى (Complete endpoint parameters)
+### Тام مالدى (Complete endpoint parameters) {#complete-endpoint-parameters}
 
 هەر تامانî çağrı və göndərilə bilən sahələr haqqında bütün imkanlar aşağıdadır.
 

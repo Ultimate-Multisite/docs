@@ -3,7 +3,7 @@ title: Formulaires de paiement
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulaires de checkout
+# Formulaires de checkout {#checkout-forms}
 
 Les formulaires de checkout sont un moyen simple et flexible d’expérimenter différentes approches lorsque vous essayez de convertir de nouveaux clients.
 
@@ -36,13 +36,13 @@ Vous pouvez également modifier ou dupliquer les formulaires que vous avez déj�
 
 ![Actions au survol du formulaire de paiement](/img/config/checkout-form-hover-actions.png)
 
-#### Vue d’ensemble de l’éditeur de formulaire de paiement
+#### Vue d’ensemble de l’éditeur de formulaire de paiement {#checkout-form-editor-overview}
 
 L’éditeur de formulaire de paiement fournit une interface complète pour créer vos formulaires d’inscription. Voici une vue d’ensemble de la mise en page de l’éditeur :
 
 ![Vue d’ensemble de l’éditeur de formulaire de paiement](/img/config/checkout-form-editor-overview.png)
 
-### Modifier un formulaire de paiement
+### Modifier un formulaire de paiement {#editing-a-checkout-form}
 
 Vous pouvez créer des formulaires de paiement pour différents objectifs. Dans cet exemple, nous travaillerons sur un formulaire d’inscription.
 
@@ -112,7 +112,7 @@ Pour obtenir le shortcode de votre formulaire, cliquez sur Generate Shortcode et
 
 ![Bouton Enregistrer avec shortcode](/img/config/checkout-form-save.png)
 
-### Le champ Tableau des tarifs
+### Le champ Tableau des tarifs {#the-pricing-table-field}
 
 Le champ **Tableau des tarifs** affiche vos produits sur le formulaire de checkout afin que les clients puissent choisir une offre. Lorsque vous modifiez ce champ, vous pouvez configurer plusieurs options :
 
@@ -130,17 +130,17 @@ Voici comment le tableau des tarifs apparaît sur le formulaire d’inscription 
 
 Si vous ajoutez un produit au Tableau des tarifs avant que le formulaire n’inclue les champs requis pour terminer le flux de checkout de ce produit, l’éditeur affiche désormais un avertissement. Utilisez cet avertissement pour ajouter le champ obligatoire manquant avant de publier ou d’enregistrer les modifications d’un formulaire d’inscription en ligne.
 
-### Ajouter un bouton de sélection de période
+### Ajouter un bouton de sélection de période {#adding-a-period-selection-toggle}
 
 Si vous avez configuré des [variations de prix](creating-your-first-subscription-product#price-variations) sur vos produits (par exemple, une tarification mensuelle et annuelle), vous pouvez ajouter un champ **Period Selection** à votre formulaire de checkout. Ce champ affiche un bouton de bascule qui permet aux clients de passer d’une période de facturation à une autre, et le tableau des prix se met à jour dynamiquement en temps réel.
 
-#### Étape 1 : configurer les variations de prix sur vos produits
+#### Étape 1 : configurer les variations de prix sur vos produits {#step-1-set-up-price-variations-on-your-products}
 
 Avant d’ajouter le champ Period Selection, assurez-vous que vos produits ont des variations de prix configurées. Allez dans **Ultimate Multisite > Products**, modifiez un produit, puis accédez à l’onglet **Price Variations** pour ajouter d’autres périodes de facturation (par exemple, annuelle avec un prix réduit).
 
 ![Onglet Price Variations sur un produit](/img/config/product-price-variations-tab.png)
 
-#### Étape 2 : ajouter le champ Period Selection à votre formulaire de checkout
+#### Étape 2 : ajouter le champ Period Selection à votre formulaire de checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Allez dans **Ultimate Multisite > Checkout Forms** et modifiez votre formulaire de checkout.
 
@@ -163,13 +163,13 @@ Avant d’ajouter le champ Period Selection, assurez-vous que vos produits ont d
 
 7. Cliquez sur **Enregistrer le champ**.
 
-#### Étape 3 : Positionner le champ au-dessus du tableau des prix
+#### Étape 3 : Positionner le champ au-dessus du tableau des prix {#step-3-position-the-field-above-the-pricing-table}
 
 Pour une meilleure expérience utilisateur, assurez-vous que le champ de sélection de période apparaît **avant** le champ du tableau des prix dans votre étape de checkout. Vous pouvez faire glisser les champs pour les réordonner dans l’éditeur de formulaire de checkout. Ainsi, les clients choisissent d’abord une période de facturation, puis voient les prix correspondant à cette période.
 
 ![Éditeur de formulaire de checkout affichant l’ordre des champs](/img/config/checkout-form-editor-with-fields.png)
 
-#### Fonctionnement sur le frontend
+#### Fonctionnement sur le frontend {#how-it-works-on-the-frontend}
 
 Une fois la configuration terminée, les clients qui visitent votre page d’inscription verront le sélecteur de période au-dessus du tableau des prix. Lorsqu’ils cliquent sur une autre période de facturation :
 
@@ -177,7 +177,7 @@ Une fois la configuration terminée, les clients qui visitent votre page d’ins
   * Si **Forcer des durées différentes** est désactivé sur le champ du tableau des prix, les produits sans variation de prix pour la période sélectionnée seront masqués.
   * Si **Forcer des durées différentes** est activé, tous les produits restent visibles même s’ils n’ont pas de variation pour la période sélectionnée (ils afficheront leur prix par défaut).
 
-#### Présélectionner une période de facturation via l’URL
+#### Présélectionner une période de facturation via l’URL {#pre-selecting-a-billing-period-via-url}
 
 Vous pouvez également présélectionner un produit et une période de facturation via l’URL. Ultimate Multisite prend en charge ces modèles d’URL :
 
@@ -185,11 +185,11 @@ Vous pouvez également présélectionner un produit et une période de facturati
   * `/register/premium/12` — Présélectionne le produit et une durée de 12 mois
   * `/register/premium/1/year` — Présélectionne le produit avec une durée de 1 an
 
-### Le champ de sélection de modèle
+### Le champ de sélection de modèle {#the-template-selection-field}
 
 Le champ **Sélection de modèle** permet aux clients de choisir un modèle de site pendant le paiement. Il est désormais inclus par défaut dans les modèles de formulaires de paiement **en une seule étape** et **en plusieurs étapes** ajoutés dans Ultimate Multisite v2.6.1.
 
-#### Ajouter le champ manuellement
+#### Ajouter le champ manuellement {#adding-the-field-manually}
 
 Si vous travaillez avec un formulaire créé avant la v2.6.1, ou parti d’un modèle vierge :
 
@@ -200,11 +200,11 @@ Si vous travaillez avec un formulaire créé avant la v2.6.1, ou parti d’un mo
    - **Libellé** — Le titre que les clients voient au-dessus de la grille de modèles (par ex. « Choisissez un modèle de site »).
    - **Obligatoire** — Indique si les clients doivent sélectionner un modèle avant de continuer.
 
-#### Fonctionnement
+#### Fonctionnement {#how-it-works}
 
 Lorsqu’un client choisit un modèle pendant le paiement, Ultimate Multisite l’utilise lors du provisionnement de son nouveau site. Les modèles affichés proviennent de votre liste **Modèles de site** (**Ultimate Multisite > Modèles de site**). Seuls les modèles marqués comme disponibles pour les clients apparaissent ici.
 
-### Domaines de base des formulaires de paiement
+### Domaines de base des formulaires de paiement {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 traite les domaines configurés dans les champs **Site URL** du formulaire de paiement comme des domaines de base du réseau. Utilisez les paramètres de domaine disponible du champ lorsque vous souhaitez que les clients créent des sites sous un ou plusieurs domaines d’inscription partagés, tels que `example.com` et `sites.example.com`.
 
@@ -212,6 +212,6 @@ Les domaines de base partagés du formulaire de paiement ne sont pas traités co
 
 Réservez les domaines personnalisés aux hôtes mappés propres à chaque client, tels que `customer-example.com`. Réservez les domaines de base du formulaire de paiement aux hôtes d’inscription partagés que de nombreux sites peuvent utiliser.
 
-#### Suppression du champ
+#### Suppression du champ {#removing-the-field}
 
 Si vous ne proposez pas de modèles de site, supprimez le champ Template Selection de votre formulaire. Les clients recevront alors le modèle par défaut configuré sous **Ultimate Multisite > Settings > Site Templates**.

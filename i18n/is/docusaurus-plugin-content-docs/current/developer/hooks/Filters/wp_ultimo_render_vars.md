@@ -4,11 +4,11 @@ title: Sía - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Sía: wp_ultimo_render_vars
+# Sía: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Leyfir plugin-hönnuðum að bæta aukabreytu við render-samhengið á heimsvísu.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Heiti | Tegund | Lýsing |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Leyfir plugin-hönnuðum að bæta aukabreytu við render-samhengið á heimsví
 | $view | `string` | Heiti yfirlitsins sem á að rendera. |
 | $default_view | `string` | Heiti fallback_view |
 
-### Frá útgáfu
+### Frá útgáfu {#since}
 
 - 2.0.0
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) í línu 31
 
 
-## Skilar
+## Skilar {#returns}

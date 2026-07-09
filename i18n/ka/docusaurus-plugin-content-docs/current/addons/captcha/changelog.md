@@ -3,7 +3,7 @@ title: Captcha-ს ცვლილებების ჟურნალი
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha-ის ცვლილებების ჟურნალი
+# Captcha-ის ცვლილებების ჟურნალი {#captcha-changelog}
 
 Version: 1.5.0 - გამოშვებულია 2026-05-22
 * ახალი: მკაცრი rate limiter — ითვლის ყოველ GET-სა და POST-ს captcha-ით დაცულ ზედაპირებზე (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) და პასუხობს HTTP 429-ით, `Retry-After` header-ით და შემთხვევითად განსაზღვრული tarpit დაყოვნებით (1–5 წმ, მკაცრი ზედა ზღვარი 15 წმ).

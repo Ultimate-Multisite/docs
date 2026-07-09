@@ -3,11 +3,11 @@ title: Persyaratan
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Persyaratan Ultimate Multisite
+# Persyaratan Ultimate Multisite {#ultimate-multisite-requirements}
 
 Hal pertama yang mungkin kamu tanyakan sebelum beli Ultimate Multisite adalah apa saja syarat untuk menjalankan plugin kita. Untungnya, cuma ada beberapa persyaratan dasar untuk menjalankan Ultimate Multisite: **nama domain**, penyedia hosting yang bagus, dan instalasi WordPress **Multisite**. Itu saja yang perlu kamu punya!
 
-## Nama Domain
+## Nama Domain {#domain-name}
 
 Pertama, mari kita bahas soal nama domain.
 
@@ -17,7 +17,7 @@ Plugin kita menyediakan layanan langganan, pengumpulan pembayaran, formulir chec
 
 Ceruk pasar apa pun yang kamu pilih bisa dikelola menggunakan plugin kita selama kamu menjual website sebagai layanan! Pastikan kamu memilih nama domain yang sesuai dengan rencana bisnis kamu.
 
-## Penyedia Hosting
+## Penyedia Hosting {#hosting-provider}
 
 Setelah kamu punya nama domain yang menarik dan mewakili ceruk pasar serta bisnis kamu, kamu perlu memilih perusahaan hosting web yang bagus untuk menampung jaringanmu dengan Ultimate Multisite. Ada beberapa pilihan bagus di pasaran. Beberapa penyedia hosting cocok dengan Ultimate Multisite, yang mungkin jadi faktor penentu tergantung apa yang sedang kamu rencanakan untuk dibangun.
 
@@ -25,7 +25,7 @@ Ultimate Multisite bisa jalan di semua penyedia hosting. Bedanya cuma beberapa p
 
 Soal spesifikasi server, nggak ada rumus pasti karena itu tergantung fitur dan fungsi yang mau kamu tawarkan serta ukuran jaringan kamu. Shared hosting bisa jadi awal yang bagus, tapi begitu jaringannya mulai nambah besar, kemungkinan besar kamu bakal butuh dedicated VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Sekarang, mari kita bahas sedikit tentang instalasi WordPress Multisite.
 

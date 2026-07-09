@@ -3,7 +3,7 @@ title: Daftarkan Endpoint API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint Ultimate Multisite Register API
+# Endpoint Ultimate Multisite Register API {#the-ultimate-multisite-register-api-endpoint}
 
 Dalam tutorial ini, Anda akan mempelajari cara menggunakan endpoint Ultimate Multisite /register API untuk membuat seluruh proses onboarding bagi pelanggan baru di jaringan Anda dan cara melakukannya dengan Zapier.
 
@@ -29,11 +29,11 @@ Pilih **Enable API** dan dapatkan kredensial API Anda.
 
 Sekarang, mari jelajahi endpoint tersebut lalu buat tindakan pendaftaran di Zapier.
 
-## Parameter body endpoint
+## Parameter body endpoint {#endpoint-body-parameters}
 
 Mari lihat gambaran umum informasi minimum yang perlu kita kirim ke endpoint. Di akhir artikel ini, Anda akan menemukan pemanggilan lengkapnya.
 
-### Customer
+### Customer {#customer}
 
 Ini adalah informasi yang diperlukan untuk proses pembuatan User dan Ultimate Multisite Customer:
 
@@ -43,25 +43,25 @@ Anda dapat mengirim ID pelanggan yang dibuat di jaringan Anda. Jika tidak dikiri
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Satu-satunya informasi yang kita perlukan di dalam objek ini adalah Membership Status.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produk**
+### **Produk** {#products}
 
 Produk diberikan sebagai array dengan 1 atau lebih ID produk dari jaringan Anda. Perhatikan, endpoint ini tidak membuat produk. Periksa dokumentasi Ultimate Multisite untuk lebih memahami endpoint pembuatan produk.
 
 **"products" : [1,2],**
 
-### Pembayaran
+### Pembayaran {#payment}
 
 Seperti pada Membership, kita hanya memerlukan status.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Situs
+### Situs {#site}
 
 Dan untuk menutup body, kita memerlukan URL dan Judul situs, keduanya di dalam objek Site.
 
@@ -69,13 +69,13 @@ Dan untuk menutup body, kita memerlukan URL dan Judul situs, keduanya di dalam o
 
 Pengembalian dari endpoint register akan berupa array dengan informasi membership yang baru dibuat.
 
-## Membuat tindakan di Zapier
+## Membuat tindakan di Zapier {#creating-an-action-in-zapier}
 
 Dengan diperkenalkannya endpoint pembuatan Account yang baru dan lebih tangguh ini, Anda juga akan mengakses tindakan baru di Zapier.
 
 Apakah Anda tahu cara menggunakan dan menikmati semua yang ditawarkan versi baru Zapier? Pelajari lebih lanjut di sini. (tautan?)
 
-### Membuat tindakan
+### Membuat tindakan {#creating-an-action}
 
 Untuk mengilustrasikan dengan lebih baik cara menggunakan endpoint pendaftaran dengan Zapier, mari buat integrasi dengan Google Forms. Setiap kali formulir ini diisi dan informasinya disimpan di lembar jawaban formulir, membership baru akan dibuat di jaringan Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Dengan informasi yang sudah disiapkan, lanjutkan ke pengujian akhir. Pada layar 
 
 Uji Zap baru Anda dan seharusnya selesai dengan sukses. Jika terjadi kesalahan, periksa semua field dan apakah field tersebut dikirim dengan benar. Karena ada banyak informasi, beberapa hal bisa terlewat.
 
-### Parameter endpoint lengkap
+### Parameter endpoint lengkap {#complete-endpoint-parameters}
 
 Berikut adalah pemanggilan lengkap dan semua kemungkinan field yang dapat dikirim.
 

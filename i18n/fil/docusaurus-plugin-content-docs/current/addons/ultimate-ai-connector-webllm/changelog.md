@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector para sa WebLLM Changelog
+# Ultimate AI Connector para sa WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Version 1.1.0 — Inilabas noong 2026-04-09
+## Version 1.1.0 — Inilabas noong 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * New: Floating chat widget na may status indicator sa admin-bar — ang sinumang naka-login ay maaaring mag-prompt sa browser-side LLM nang direkta mula sa front end.
 * New: SharedWorker runtime — ang MLC engine ay tumatakbo na ngayon sa SharedWorker para magbahagi ng iisang GPU session ang maraming tabs sa halip na mag-agawan.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Fix: In-hook ang WebLLM sa wpai_preferred_text_models filter para ang AI Experiments feature ay mag-route sa browser engine kapag may model na naka-configure.
 * Improved: Naayos ang cache-busting, content normalisation, at hardware-reference fixes na natukoy sa end-to-end testing.
 
-## Version 1.0.0 — Unang Paglabas
+## Version 1.0.0 — Unang Paglabas {#version-100--initial-release}

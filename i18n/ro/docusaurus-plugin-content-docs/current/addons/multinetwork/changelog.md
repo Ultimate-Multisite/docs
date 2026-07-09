@@ -3,9 +3,9 @@ title: Jurnal de Modificări Multi-Rețea
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Istoric de versiuni Multi-Network
+# Istoric de versiuni Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nou: Vizualizator de template-uri de rețea — puteți naviga și pre-vizualiza template-urile de rețea cu un panou live înainte de achiziție.
 * Nou: Selector de template-uri de rețea la checkout — clienții pot selecta un template de rețea în timpul procesului de înscriere (checkout).
 * Nou: SSO (Single Sign-On) cu magic link între rețele — clienții pot accesa sub-rețele fără probleme prin autentificarea cu magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Corecție: Adăugat un gard (guard) împotriva cheii `network_id` nedefinite în scopul interogării site-ului.
 * Corecție: Verificarea permisiunilor de rețea înainte de schimbarea contextului previne erorile de proprietate ale tabelei `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Corecție: Crearea unei noi rețele.
 * Corecție: Afișarea meniurilor.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Actualizat la Plugin Update Checker v5
 * Adăugate anteturi moderne pentru plugin-uri WordPress
 * Îmbunătățită compatibilitatea cu cele mai recente versiuni WordPress
 
-### 1.0.2
+### 1.0.2 {#102}
 * Corecții de bug-uri și îmbunătățiri de performanță
 * Izolare îmbunătățită a rețelei
 
-### 1.0.0
+### 1.0.0 {#100}
 * Lansare inițială
 * Funcționalitatea de bază multi-network
 * Integrare cu Multisite Ultimate

@@ -3,13 +3,13 @@ title: Ukuthumela ii-imeyile kunye nosasazo
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ukuthumela ii-Emails kunye nee-Broadcasts (v2)
+# Ukuthumela ii-Emails kunye nee-Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite iza nophawu oluza kukuvumela ukuba unxibelelane nabathengi bakho ngokuthumela i-email kumsebenzisi ojoliswe kuye okanye kwiqela labasebenzisi, kwakunye nokuthumela izaziso kwi-admin dashboard yabo ukuze usasaze izibhengezo
 
-## Yongeza izaziso ze-admin kwi-dashboard yabathengi bakho ngee-Broadcasts
+## Yongeza izaziso ze-admin kwi-dashboard yabathengi bakho ngee-Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Usebenzisa uphawu lwe-broadcast lwe-Ultimate Multisite, ungongeza **izaziso ze-admin** kwi-subsite admin dashboard yomsebenzisi wakho.
 
@@ -51,7 +51,7 @@ Emva kokudala umyalezo wakho, ungacofa iqhosha elithi **Thumela**.
 
 Yiloo nto ke. Isaziso se-admin kufuneka sibonakale ngoko nangoko kwi-dashboard yomsebenzisi wakho.
 
-## Thumela ii-emails kubathengi bakho
+## Thumela ii-emails kubathengi bakho {#send-emails-to-your-customers}
 
 Usebenzisa uphawu lwe-broadcast lwe-Ultimate Multisite, ungathumela i-email kubasebenzisi bakho. Unokhetho lokuthumela i-email kuphela kubasebenzisi abathile okanye ukujolisa kwiqela elithile labasebenzisi ngokusekelwe kwimveliso okanye isicwangciso ababhalise phantsi kwaso.
 
@@ -81,11 +81,11 @@ Emva kokudala umyalezo wakho, ungacofa iqhosha elithi **Thumela**.
 
 Yiloo ndlela kulula ngayo ukuthumela i-email kubasebenzisi bakho bokugqibela usebenzisa uphawu lwe-broadcast.
 
-## Ii-emails zenkqubo
+## Ii-emails zenkqubo {#system-emails}
 
 Ii-emails zenkqubo kwi-Ultimate Multisite zezo **zaziso ezizenzekelayo** ezithunyelwa yinkqubo emva kwezenzo ezithile ezifana nobhaliso, intlawulo, ukuma kwedomain, njalo njalo. Ezi emails zinokuhlelwa okanye zitshintshwe kwiisethingi ze-Ultimate Multisite. Ikwaza nophawu oluza kukuvumela ukuba usete ngokutsha kwaye ungenise iisethingi ezikhoyo ukusuka kolunye ufakelo lwe-Ultimate Multisite.
 
-### Ukuseta ngokutsha & Ukungenisa
+### Ukuseta ngokutsha & Ukungenisa {#resetting--importing}
 
 Iinguqulelo ezintsha ze-Ultimate Multisite, kwakunye nee-add-ons, zinako kwaye ziya kubhalisa ii-emails ezintsha ngamaxesha athile.
 
@@ -93,7 +93,7 @@ Ukuthintela ungquzulwano kunye neminye imiba, **asiyi kongeza ii-template ezints
 
 Nangona kunjalo, ii-super admins kunye nee-agents zinokungenisa ezi emails zisandula ukubhaliswa ngesixhobo sokungenisa. Loo nkqubo iza kudala i-email entsha yenkqubo enomxholo kunye noqwalaselo lwe-template entsha ye-email, ivumele i-super admin ukuba yenze naluphi na utshintsho elufunayo okanye izigcine zinjalo.
 
-#### Indlela yokungenisa ii-emails zenkqubo
+#### Indlela yokungenisa ii-emails zenkqubo {#how-to-import-system-emails}
 
 Yiya kwiphepha lakho lee-Settings ze-Ultimate Multisite uze uye kwi-tab ethi **Emails**.
 
@@ -111,7 +111,7 @@ Emva koko, ungatshintsha uvule okanye uvale iinketho ze-Import Emails ukuze ubon
 
 <!-- Umfanekiso-skrini awufumaneki: imodal ethi Seta kwakhona uze ungenise eneenketho zokungenisa ii-imeyile ezandisiweyo -->
 
-#### Ukuseta kwakhona ii-imeyile zenkqubo
+#### Ukuseta kwakhona ii-imeyile zenkqubo {#reseting-system-emails}
 
 Ngamanye amaxesha, uya kuqaphela ukuba utshintsho olwenzileyo kwitemplate ethile ye-imeyile alusakusebenzeli, kwaye ungathanda ukuyiseta kwakhona ibuyele **kwimeko yayo engagqibekanga**.
 

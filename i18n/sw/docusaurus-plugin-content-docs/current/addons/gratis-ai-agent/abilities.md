@@ -3,7 +3,7 @@ title: Rejeleo la Uwezo
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Rejea ya Uwezo
+# Rejea ya Uwezo {#abilities-reference}
 
 Uwezo ni vitendo vya msingi ambavyo Gratis AI Agent inaweza kuitisha kwenye usakinishaji wako wa WordPress. Kila uwezo ni PHP class iliyosajiliwa inayofichua JSON schema — agent husoma schema hii wakati wa utekelezaji ili kuelewa ni parameters gani zinahitajika na uwezo unarudisha nini.
 
@@ -11,11 +11,11 @@ Ukurasa huu unaorodhesha uwezo wote unaokuja na Gratis AI Agent v1.9.0.
 
 ---
 
-## Aina Maalum za Chapisho
+## Aina Maalum za Chapisho {#custom-post-types}
 
 Uwezo huu unasimamia aina maalum za chapisho (CPTs) zilizosajiliwa kupitia agent. Usajili huhifadhiwa kwenye jedwali la chaguo la WordPress ili udumu baada ya plugin kuzimwa na kuwashwa tena.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Husajili aina mpya maalum ya chapisho.
 
@@ -50,7 +50,7 @@ Husajili aina mpya maalum ya chapisho.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Hurejesha aina zote maalum za chapisho zilizosajiliwa na agent.
 
@@ -73,7 +73,7 @@ Hurejesha aina zote maalum za chapisho zilizosajiliwa na agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Huondoa usajili wa aina maalum ya chapisho iliyosajiliwa awali na agent. Machapisho yaliyopo ya aina hiyo hubaki kwenye database lakini hayawezi tena kufikiwa kupitia aina ya chapisho.
 
@@ -87,11 +87,11 @@ Huondoa usajili wa aina maalum ya chapisho iliyosajiliwa awali na agent. Machapi
 
 ---
 
-## Taxonomies Maalum
+## Taxonomies Maalum {#custom-taxonomies}
 
 Uwezo huu unasimamia taxonomies maalum. Kama CPTs, usajili wa taxonomy huhifadhiwa.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Husajili taxonomy mpya maalum.
 
@@ -123,7 +123,7 @@ Husajili taxonomy mpya maalum.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Hurejesha taxonomies zote maalum zilizosajiliwa na agent.
 
@@ -146,7 +146,7 @@ Hurejesha taxonomies zote maalum zilizosajiliwa na agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Huondoa usajili wa taxonomy maalum iliyosajiliwa awali na agent.
 
@@ -160,11 +160,11 @@ Huondoa usajili wa taxonomy maalum iliyosajiliwa awali na agent.
 
 ---
 
-## Mfumo wa Muundo
+## Mfumo wa Muundo {#design-system}
 
 Uwezo wa mfumo wa muundo hubadilisha mwonekano wa kuona wa tovuti ya WordPress — kuanzia CSS maalum hadi patterns za block na nembo ya tovuti.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Huongeza CSS kwenye `<head>` ya tovuti kupitia `wp_add_inline_style`. CSS huhifadhiwa katika chaguo la `gratis_ai_agent_custom_css` na huondolewa kwenye foleni kwa usafi uwezo unapowekwa upya.
 
@@ -190,7 +190,7 @@ Huongeza CSS kwenye `<head>` ya tovuti kupitia `wp_add_inline_style`. CSS huhifa
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Husajili pattern ya block inayoweza kutumika tena katika maktaba ya patterns ya WordPress.
 
@@ -209,7 +209,7 @@ Husajili pattern ya block inayoweza kutumika tena katika maktaba ya patterns ya 
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Huorodhesha patterns zote za block zilizosajiliwa na agent.
 
@@ -231,7 +231,7 @@ Huorodhesha patterns zote za block zilizosajiliwa na agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Huweka nembo ya tovuti ya WordPress kwa attachment ID iliyotolewa au URL ya picha ya mbali. URL ikitolewa, picha hupakuliwa na kuingizwa kwenye Media Library.
 
@@ -248,7 +248,7 @@ Moja kati ya `attachment_id` au `url` lazima itolewe.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Hutumia mpangilio uliotayarishwa wenye jina wa rangi/tipografia kwenye `theme.json` ya theme inayotumika (au `global-styles`). Mipangilio iliyotayarishwa ni vifurushi vilivyoratibiwa vinavyodumishwa na timu ya Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Hutumia mpangilio uliotayarishwa wenye jina wa rangi/tipografia kwenye `theme.js
 
 ---
 
-## Mitindo ya Jumla
+## Mitindo ya Jumla {#global-styles}
 
 Uwezo wa Mitindo ya Jumla husoma na kuandika thamani za theme.json kupitia WordPress Global Styles API, ukiathiri blocks na templates zote katika tovuti nzima.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Hurejesha usanidi wa sasa wa mitindo ya jumla.
 
@@ -291,7 +291,7 @@ Hurejesha usanidi wa sasa wa mitindo ya jumla.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Husasisha thamani moja au zaidi katika usanidi wa mitindo ya jumla.
 
@@ -318,7 +318,7 @@ Husasisha thamani moja au zaidi katika usanidi wa mitindo ya jumla.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Huweka upya mabadiliko yote ya mitindo ya jumla yaliyotumiwa na agent, ikirejesha chaguo-msingi za theme.
 
@@ -328,11 +328,11 @@ Huweka upya mabadiliko yote ya mitindo ya jumla yaliyotumiwa na agent, ikirejesh
 
 ---
 
-## Menyu za Urambazaji
+## Menyu za Urambazaji {#navigation-menus}
 
 Uwezo wa Menyu za Urambazaji huunda na kudhibiti menyu za urambazaji za WordPress na vipengee vyake.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Huunda menyu mpya ya urambazaji ya WordPress.
 
@@ -347,7 +347,7 @@ Huunda menyu mpya ya urambazaji ya WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Hubadilisha jina la menyu au kuikabidhi upya kwenye eneo la theme.
 
@@ -363,7 +363,7 @@ Hubadilisha jina la menyu au kuikabidhi upya kwenye eneo la theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Huongeza kipengee kwenye menyu iliyopo ya urambazaji.
 
@@ -383,7 +383,7 @@ Huongeza kipengee kwenye menyu iliyopo ya urambazaji.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Huondoa kipengee kutoka kwenye menyu ya urambazaji.
 
@@ -397,7 +397,7 @@ Huondoa kipengee kutoka kwenye menyu ya urambazaji.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Huorodhesha menyu zote za urambazaji za WordPress, ikijumuisha maeneo ya theme yaliyokabidhiwa.
 
@@ -420,11 +420,11 @@ Huorodhesha menyu zote za urambazaji za WordPress, ikijumuisha maeneo ya theme y
 
 ---
 
-## Usimamizi wa Chaguo
+## Usimamizi wa Chaguo {#options-management}
 
 Uwezo wa Chaguo husoma na kuandika chaguo za WordPress kupitia `get_option` / `update_option`. Orodha ya ndani ya kuzuia kwa usalama huzuia urekebishaji wa bahati mbaya wa mipangilio muhimu.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Husoma chaguo la WordPress.
 
@@ -440,7 +440,7 @@ Hurejesha hitilafu ikiwa `option_name` iko kwenye orodha ya kuzuia kwa usalama.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Huandika chaguo la WordPress.
 
@@ -458,7 +458,7 @@ Hurejesha hitilafu ikiwa `option_name` iko kwenye safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Hufuta chaguo la WordPress.
 
@@ -474,7 +474,7 @@ Hurejesha hitilafu ikiwa `option_name` iko kwenye safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Huorodhesha machaguo ya WordPress yanayolingana na muundo.
 
@@ -498,11 +498,11 @@ Huorodhesha machaguo ya WordPress yanayolingana na muundo.
 
 ---
 
-## Usimamizi wa Maudhui
+## Usimamizi wa Maudhui {#content-management}
 
 Uwezo wa Usimamizi wa Maudhui huunda na kuhariri machapisho na kurasa za WordPress. ID za machapisho hurejeshwa ili hatua zinazofuata katika mipango yenye uwezo mwingi ziweze kurejelea maudhui yaliyoundwa.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Huunda chapisho jipya la WordPress, ukurasa, au ingizo la aina maalum ya chapisho.
 
@@ -537,7 +537,7 @@ Huunda chapisho jipya la WordPress, ukurasa, au ingizo la aina maalum ya chapish
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Husasisha chapisho au ukurasa uliopo wa WordPress.
 
@@ -567,7 +567,7 @@ Husasisha chapisho au ukurasa uliopo wa WordPress.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Huunda machapisho mengi katika mwito mmoja wa uwezo, ikipunguza safari za kwenda na kurudi wakati wa ujenzi wa site au uingizaji wa maudhui kwa wingi. Machapisho huundwa kwa mfuatano; ikiwa moja litashindwa, mengine huendelea na kushindwa huko huripotiwa kwenye array ya matokeo.
 
@@ -619,7 +619,7 @@ Huunda machapisho mengi katika mwito mmoja wa uwezo, ikipunguza safari za kwenda
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Hugawa picha kuu (kijipicha cha chapisho) kwa chapisho au ukurasa uliopo. Hukubali ID ya kiambatisho kilichopo cha Media Library au URL ya picha ya mbali; URL ikitolewa, picha hupakuliwa na kuingizwa kiotomatiki.
 
@@ -638,7 +638,7 @@ Moja kati ya `attachment_id` au `url` lazima itolewe.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Huunda fomu ya mawasiliano kwa kutumia plugin amilifu ya fomu (Contact Form 7, WPForms, Fluent Forms, au Gravity Forms, kutegemea ni ipi iliyosakinishwa). Hurejesha shortcode inayoweza kupachikwa kwenye chapisho au ukurasa wowote.
 
@@ -691,11 +691,11 @@ Huunda fomu ya mawasiliano kwa kutumia plugin amilifu ya fomu (Contact Form 7, W
 
 ---
 
-## Ukaguzi wa Mwonekano
+## Ukaguzi wa Mwonekano {#visual-review}
 
 Uwezo wa Ukaguzi wa Mwonekano humruhusu agent kunasa picha za skrini za kurasa za moja kwa moja na kuzichambua, ukiwezesha ukaguzi huru wa muundo, ulinganisho wa kabla/baada, na ukaguzi wa urudufu wa mwonekano bila kuhitaji kiendelezi chochote cha kivinjari.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Hunasa picha ya skrini ya ukurasa wa WordPress katika URL uliyopewa kwa kutumia kivinjari kisicho na kiolesura kinachoendeshwa upande wa seva. Picha huhifadhiwa kwenye Maktaba ya Midia na URL ya CDN hurejeshwa.
 
@@ -724,7 +724,7 @@ Hunasa picha ya skrini ya ukurasa wa WordPress katika URL uliyopewa kwa kutumia 
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Huchukua picha mbili za skrini na kurejesha alama ya tofauti ya mwonekano pamoja na picha ya tofauti inayoangazia maeneo yaliyobadilika. Ni muhimu kwa kuthibitisha kwamba badiliko la muundo limetoa matokeo yaliyotarajiwa au kwa kugundua urudufu usiotarajiwa.
 
@@ -754,7 +754,7 @@ Huchukua picha mbili za skrini na kurejesha alama ya tofauti ya mwonekano pamoja
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Hunasa picha ya skrini ya ukurasa na kuituma kwa modeli ya lugha kwa uchambuzi wa mwonekano. Hurejesha tathmini iliyopangwa inayoshughulikia mpangilio, taipografia, matumizi ya rangi, na masuala ya ufikivu.
 
@@ -785,11 +785,11 @@ Hunasa picha ya skrini ya ukurasa na kuituma kwa modeli ya lugha kwa uchambuzi w
 
 ---
 
-## Uwezo Unaoweza Kusakinishwa
+## Uwezo Unaoweza Kusakinishwa {#installable-abilities}
 
 Rejesta ya Uwezo Unaoweza Kusakinishwa hukuruhusu kupanua agent kwa vifurushi vya ziada vya uwezo vinavyosambazwa kama plugins za WordPress. Kila kifurushi husajili uwezo mmoja au zaidi kwa kutumia API ya kawaida ya uwezo.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Hurejesha katalogi ya vifurushi vya uwezo vinavyopatikana kwa usakinishaji kutoka kwenye rejesta.
 
@@ -818,7 +818,7 @@ Hurejesha katalogi ya vifurushi vya uwezo vinavyopatikana kwa usakinishaji kutok
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Hupakua na kuamilisha kifurushi cha uwezo kutoka kwenye sajili.
 
@@ -832,7 +832,7 @@ Hupakua na kuamilisha kifurushi cha uwezo kutoka kwenye sajili.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Huuliza sajili ya uwezo ili kupata programu-jalizi bora kwa matumizi yaliyofafanuliwa na, kwa hiari, huisakinisha.
 

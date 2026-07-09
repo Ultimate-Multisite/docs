@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: integracija Mailchimp
 
 Integrirajte svoje omrežje Multisite Ultimate z Mailchimp. Določene pakete lahko povežete s seznami Mailchimp in ob prijavi samodejno dodate naročnike na te sezname.
 
-## Namestitev
+## Namestitev {#installation}
 
 1. Naložite 'ultimate-multisite-mailchimp' v imenik '/wp-content/plugins/'
 2. Aktivirajte plugin prek menija 'Vtičniki' v svojem WordPress Network Admin
 
-## Vodnik za uporabo
+## Vodnik za uporabo {#usage-guide}
 
 Sinhronizacija e-poštnih naslovov naročnikov z vašimi seznami MailChimp je z našim dodatkom Ultimate Multisite: MailChimp Integration zelo preprosta. Namen tega vodiča je, da vam pomaga vse nastaviti!
 
-## Pridobitev API ključa
+## Pridobitev API ključa {#getting-an-api-key}
 
 Preden začnemo z različnimi razpoložljivimi nastavitvami, potrebujemo MailChimp API ključ. To bo Ultimate Multisite omogočilo komunikacijo z MailChimp API za pridobivanje seznamov, skupin in dodajanje e-poštnih naslovov na te sezname in v te skupine, ko se uporabniki prijavijo.
 
@@ -32,7 +32,7 @@ Sledite temu vodiču, da pridobite svoj MailChimp API ključ: [O API ključih | 
 
 _Dodajte svoj MailChimp API ključ v_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
 
-## Način integracije
+## Način integracije {#integration-mode}
 
 Dodatek MailChimp Integration ponuja dva »načina integracije«, kar pomeni, da lahko dodatek za sinhronizacijo e-poštnih naslovov uporabljate na dva različna načina.
 
@@ -40,7 +40,7 @@ Dodatek MailChimp Integration ponuja dva »načina integracije«, kar pomeni, da
 
 _Dva načina integracije za večjo prilagodljivost!_
 
-### Način 1: več seznamov
+### Način 1: več seznamov {#mode-1-multiple-lists}
 
 Privzeti način uporablja **več seznamov**. Ta način vam omogoča, da za vsak paket izberete več seznamov MailChimp. To je najboljša možnost, če svoje uporabnike segmentirate v različne sezname.
 
@@ -52,7 +52,7 @@ Da to dosežete, lahko uporabite način več seznamov in dodate oba seznama **Ne
 
 _Izberite privzete sezname za nove accounte in za preklicane accounte_
 
-### Način 2: en seznam + več skupin
+### Način 2: en seznam + več skupin {#mode-2-single-list--multiple-groups}
 
 MailChimp vam omogoča, da svoj seznam segmentirate v manjše skupine uporabnikov, imenovane **skupine**. To vam omogoča več nadzora, saj lahko kampanjo pošljete določeni podmnožici svojih naročnikov, ne da bi morali v MailChimp ustvariti več kopij iste kampanje (kar pozneje oteži analizo metrik te kampanje).
 
@@ -62,13 +62,13 @@ Na primer, lahko imate en seznam z imenom **My Network Subscribers,** in znotraj
 
 _Izberite privzete sezname in skupine, če uporabljate način integracije »en seznam + več skupin«_
 
-## Privzeti seznami in skupine
+## Privzeti seznami in skupine {#default-lists-and-groups}
 
 Ko izberete, kateri način integracije je za vaš konkreten primer uporabe najbolj smiseln, je čas, da izberete privzete sezname (in skupine, odvisno od načina). Privzeti seznam bo uporabljen, ko določen paket nima izbranega posebnega seznama.
 
 Izberete lahko tudi privzeti seznam za preklicane accounte. Kadar koli uporabnik prekine svojo naročnino in odstrani svoj account iz vašega omrežja, bo njegov e-poštni naslov premaknjen na seznam, nastavljen za preklicane accounte.
 
-## Omogočanje dvojne naročnine
+## Omogočanje dvojne naročnine {#enabling-double-subscription}
 
 Na isti strani z nastavitvami boste lahko omogočili **dvojno naročnino**. Ta možnost bo uporabnika dodala tako na izbrani privzeti seznam KOT na seznam, izbran za paket tega uporabnika. Če ta možnost ni omogočena, bo uporabnik dodan samo na seznam, izbran za uporabnikov paket. Če za ta določeni paket ni nastavljen noben seznam, bo uporabnik dodan na izbrani privzeti seznam.
 
@@ -76,7 +76,7 @@ Na isti strani z nastavitvami boste lahko omogočili **dvojno naročnino**. Ta m
 
 _Uporabniki so lahko ob prijavi naročeni tako na privzeti seznam kot na seznam paketa_
 
-## Izbiranje seznamov in skupin za vsak paket
+## Izbiranje seznamov in skupin za vsak paket {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Pojdite na svoje **pakete** in izberite paket, ki ga želite urediti. Upoštevajte, da bo v meta-okvirju **Napredne možnosti** na voljo nov zavihek z imenom MailChimp.
 

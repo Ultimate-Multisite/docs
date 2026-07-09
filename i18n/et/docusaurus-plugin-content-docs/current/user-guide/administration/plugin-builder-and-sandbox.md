@@ -3,11 +3,11 @@ title: Plugi ehitija ja sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 sisse esileb **Plugin Builder & Sandbox System**, mis võimaldab AI assistentile WordPress pluginid luua, aktiveerida ja hallata oma võrku pluginid – kõik turvalise, eraldatud sandboxi keskkonna abil.
 
-## Üldine ülevaade
+## Üldine ülevaade {#overview}
 
 Plugin Builder võimaldab AI assistentit laussida loodud WordPress pluginid vastavalt loomulasteelnele küsimustele. Loodud pluginid valideeruvad, salvestatakse ja aktiveeruvad sandboxi kerki all enne kui nad mõjutavad elujahtluse funktsioone.
 
@@ -17,7 +17,7 @@ Kasutusteemaid on:
 - Funktsioonide prototüütimine, mis nõuavad WordPress hookide või kujutatud sisu tüüpi (custom post types).
 - Lühikese automaatsusskriptide luomine partioperaatsioonide jaoks.
 
-## Plugin loomine AI abil
+## Plugin loomine AI abil {#generating-a-plugin-via-ai}
 
 Plugin loomiseks avage Gratis AI Agent chatipea ja kirjeldage, mida te vajate. Näiteks:
 
@@ -32,7 +32,7 @@ AI:
 
 Võite tulemust täpustada samas kesksekonnas jätkamise abil aktiveerimise enne aktiivamist.
 
-## Sandboxi aktiveerimine
+## Sandboxi aktiveerimine {#sandbox-activation}
 
 Loodud pluginide aktiveerimine sandboxis on erinev elujahtluse võrku aktiveerimast. Sandbox:
 

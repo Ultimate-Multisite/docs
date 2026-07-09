@@ -3,17 +3,17 @@ title: Indlela yokuqwalasela ukumephwa kwedomeyini
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Indlela yokuQwalasela ukuMapishwa kweeDomeyini (v2)
+# Indlela yokuQwalasela ukuMapishwa kweeDomeyini (v2) {#how-to-configure-domain-mapping-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite uguqulelo 2.x.**_
 
 Enye yezona mpawu zinamandla zenethiwekhi ye-premium kukukwazi ukunika abathengi bethu ithuba lokuncamathisela idomeyini yenqanaba eliphezulu kwiisayithi zabo. Ekugqibeleni, yeyiphi ebonakala inobungcali ngakumbi: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) okanye [_**joesbikeshop.com**_](http://joesbikeshop.com)? Yiyo loo nto Ultimate Multisite inikezela olo phawu lufakwe ngaphakathi, ngaphandle kwesidingo sokusebenzisa ii-plugin zomntu wesithathu.
 
-## Yintoni ukumapishwa kweedomeyini?
+## Yintoni ukumapishwa kweedomeyini? {#whats-domain-mapping}
 
 Njengoko igama lisitsho, ukumapishwa kweedomeyini kukukwazi okunikelwa yi-Ultimate Multisite ukwamkela isicelo sedomeyini yesiko kwaye imatanise eso sicelo nesayithi ehambelanayo kwinethiwekhi enaloo domeyini incamathiselweyo.
 
-### Indlela yokuseta ukumapishwa kweedomeyini kwiNethiwekhi yakho ye-Ultimate Multisite
+### Indlela yokuseta ukumapishwa kweedomeyini kwiNethiwekhi yakho ye-Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Ukumapishwa kweedomeyini kufuna ukuseta okuthile kwicala lakho ukuze kusebenze. Ngethamsanqa, Ultimate Multisite iyawenza ngokuzenzekelayo umsebenzi onzima ukuze ukwazi ukuhlangabezana neemfuno ngokulula.
 
@@ -45,7 +45,7 @@ Kodwa ngaphambi kokuba uqalise ukumapisha idomeyini yesiko kwenye yeesabhsayithi
 
 ###
 
-### Ukuqinisekisa ukuba iisetingi ze-DNS zedomeyini ziqwalaselwe ngokuchanekileyo
+### Ukuqinisekisa ukuba iisetingi ze-DNS zedomeyini ziqwalaselwe ngokuchanekileyo {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Ukuze ukumapisha kusebenze, kufuneka uqinisekise ukuba idomeyini oceba ukuyimapisha ikhomba kwidilesi ye-IP yeNethiwekhi yakho. Qaphela ukuba ufuna idilesi ye-IP yeNethiwekhi - idilesi ye-IP yedomeyini apho Ultimate Multisite ifakwe khona - hayi idilesi ye-IP yedomeyini yesiko ofuna ukuyimapisha. Ukukhangela idilesi ye-IP yedomeyini ethile, sicebisa ukuya ku-[Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), umzekelo.
 
@@ -55,7 +55,7 @@ Ukuba uzifumana unengxaki yokwenza oku kusebenze, **qhagamshelana nenkxaso yombh
 
 Ukuba uceba ukuvumela abathengi bakho ukuba bamapishe ezabo iidomeyini, kuya kufuneka benze umsebenzi kule nxalenye ngokwabo. Bakhokelele kwinkqubo yenkxaso yombhalisi wabo ukuba bazifumana bengakwazi ukwenza i-A Record.
 
-### Ukumapisha igama ledomeyini yesiko njenge-Super Admin
+### Ukumapisha igama ledomeyini yesiko njenge-Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Xa ungene njenge-super admin kwinethiwekhi yakho, unokongeza kwaye ulawule amagama eedomeyini zesiko ngokulula ngokuya phantsi kwe-**Ultimate Multisite > Iidomeyini**.
 
@@ -93,7 +93,7 @@ Ukuba ucofa kwigama ledomeyini, uya kukwazi ukubona ezinye iinketho ngaphakathi 
 
 **Ikhuselekile?:** Nangona Ultimate Multisite ijonga ukuba idomeyini inesatifikethi se-SSL okanye ayinaso ngaphambi kokuyivumela, ungakhetha ngesandla ukulayisha idomeyini ngesatifikethi se-SSL okanye ngaphandle kwaso. Qaphela ukuba ukuba iwebhusayithi ayinasatifikethi se-SSL kwaye uzama ukuyinyanzela ukuba ilayishe nge-SSL, inokukunika iimpazamo.
 
-### Ukumefisha igama ledomeyini elilungiselelweyo njengomsebenzisi wendawo engaphantsi
+### Ukumefisha igama ledomeyini elilungiselelweyo njengomsebenzisi wendawo engaphantsi {#mapping-custom-domain-name-as-subsite-user}
 
 Abalawuli beendawo ezingaphantsi banokumefisha amagama eedomeyini alungiselelweyo ukusuka kwi-dashboard yolawulo lwendawo yabo engaphantsi.
 
@@ -121,7 +121,7 @@ Umsebenzisi angacofa emva koko **Inyathelo Elilandelayo** aze aqhubeke nokongeza
 
 Ukucofa ku-**Yongeza iDomeyini** kuya kuqalisa inkqubo yokuqinisekisa nokuzisa ulwazi lwe-DNS lwedomeyini elilungiselelweyo.
 
-### Malunga nokuNgqamanisa iiDomeyini
+### Malunga nokuNgqamanisa iiDomeyini {#about-domain-syncing}
 
 UkuNgqamanisa iiDomeyini yinkqubo apho Ultimate Multisite yongeza igama ledomeyini elilungiselelweyo kwi-akhawunti yakho yokusingatha njengedomeyini eyongeziweyo **ukuze i-domain mapping isebenze**.
 

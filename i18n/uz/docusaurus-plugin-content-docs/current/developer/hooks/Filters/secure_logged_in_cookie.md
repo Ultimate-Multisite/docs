@@ -4,11 +4,11 @@ title: Filtr - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtr: secure_logged_in_cookie
+# Filtr: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Tizimga kirgan cookie faqat HTTPS orqali yuborilishi kerakmi-yo‘qligini filtrlaydi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Tizimga kirgan cookie faqat HTTPS orqali yuborilishi kerakmi-yo‘qligini filtrl
 | $user_id | `int` | Foydalanuvchi IDsi. |
 | $secure | `bool` | Auth cookie faqat HTTPS orqali yuborilishi kerakmi-yo‘qligi. |
 
-### Beri
+### Beri {#since}
 
 - 3.1.0
-### Manba
+### Manba {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) faylida 91-qatorda aniqlangan

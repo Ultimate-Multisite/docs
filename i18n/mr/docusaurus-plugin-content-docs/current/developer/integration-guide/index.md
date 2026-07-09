@@ -3,13 +3,13 @@ title: एकत्रीकरण मार्गदर्शक
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# इंटिग्रेशन मार्गदर्शक
+# इंटिग्रेशन मार्गदर्शक {#integration-guide}
 
 या मार्गदर्शकात Ultimate Multisite सोबतचे सामान्य इंटिग्रेशन नमुने समाविष्ट आहेत, ज्यामध्ये बाह्य सेवांशी कनेक्ट करणे, सानुकूल पेमेंट गेटवे तयार करणे आणि webhooks हाताळणे यांचा समावेश आहे.
 
 अलग tenant इन्फ्रास्ट्रक्चरसाठी, सार्वभौम tenant बूटस्ट्रॅप, स्थलांतर पडताळणी, SSO आणि टिअरडाउन मार्गदर्शनासाठी [Multi-Tenancy Integration](./multi-tenancy) पहा.
 
-## CRM इंटिग्रेशन
+## CRM इंटिग्रेशन {#crm-integration}
 
 नवीन ग्राहक साइन अप करतात तेव्हा ग्राहक डेटा तुमच्या CRM शी सिंक करा:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics इंटिग्रेशन
+## Analytics इंटिग्रेशन {#analytics-integration}
 
 ग्राहक जीवनचक्रभर प्रमुख व्यवसाय घटना ट्रॅक करा:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## पुढील पायऱ्या
+## पुढील पायऱ्या {#next-steps}
 
 - [Custom Gateway Development](./custom-gateway) — तुमचा स्वतःचा पेमेंट गेटवे तयार करा
 - [Webhook Handling](./webhooks) — सानुकूल webhook endpoints तयार करा

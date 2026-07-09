@@ -3,15 +3,15 @@ title: Búa til SVG-lógó
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Búa til Logo SVG
+# Búa til Logo SVG {#generate-logo-svg}
 
 Getan **Generate Logo SVG** gerir Theme Builder kleift að búa til og fella sérsniðin logo SVG beint inn á WordPress vefinn þinn með sjálfvirkri hreinsun sem er örugg gagnvart nafnrýmum.
 
-## Yfirlit
+## Yfirlit {#overview}
 
 Þessi geta býr til skalanleg vektorgrafík (SVG) fyrir logo út frá vörumerkjastefnu og hönnunaróskum vefsins þíns. SVG-in sem eru búin til eru sjálfkrafa hreinsuð til að tryggja að þau séu örugg til notkunar í WordPress, án þess að skerða sjónræna heild.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Getan **Generate Logo SVG** gerir Theme Builder kleift að búa til og fella sé
 | `height` | number | No | SVG-hæð í pixlum (sjálfgefið: 200) |
 | `include_text` | boolean | No | Hvort eigi að hafa nafn vefsins sem texta í logo-inu (sjálfgefið: true) |
 
-## Úttakssnið
+## Úttakssnið {#output-format}
 
 Getan skilar SVG-streng með eftirfarandi uppbyggingu:
 
@@ -36,7 +36,7 @@ Getan skilar SVG-streng með eftirfarandi uppbyggingu:
 }
 ```
 
-## Hegðun SVG-hreinsunar
+## Hegðun SVG-hreinsunar {#svg-sanitisation-behaviour}
 
 SVG-in sem eru búin til fara í gegnum sjálfvirka hreinsun sem er örugg gagnvart nafnrýmum til að:
 
@@ -48,7 +48,7 @@ SVG-in sem eru búin til fara í gegnum sjálfvirka hreinsun sem er örugg gagnv
 
 Þetta tryggir að SVG sé öruggt að fella beint inn í WordPress án þess að krefjast viðbótarhreinsunar.
 
-## Notkunardæmi
+## Notkunardæmi {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Getan býr til SVG-logo sem:
 - Fylgir nútímalegum hönnunarreglum
 - Er sjálfkrafa hreinsað og tilbúið til notkunar
 
-## Samþætting við Theme Builder
+## Samþætting við Theme Builder {#integration-with-theme-builder}
 
 Þegar val á hönnunarstefnu í Theme Builder er notað, gerir Generate Logo SVG-getan eftirfarandi:
 
@@ -71,21 +71,21 @@ Getan býr til SVG-logo sem:
 3. Fellir logo-ið sjálfkrafa inn í haus-/vörumerkjasvæði vefsins þíns
 4. Geymir SVG sem sérsniðið logo í WordPress miðlum
 
-## Bestu starfsvenjur
+## Bestu starfsvenjur {#best-practices}
 
 - **Gefðu skýrar stílóskir** — lýstu hönnunarstílnum sem þú vilt (nútímalegur, klassískur, leikandi o.s.frv.)
 - **Tilgreindu liti** — láttu vörumerkjalitina þína fylgja með til að tryggja samræmi
 - **Prófaðu birtingu** — staðfestu að logo-ið birtist rétt á mismunandi skjástærðum
 - **Sérsníddu frekar** — notaðu logo-sérsniðstól WordPress til að stilla stærð og staðsetningu
 
-## Takmarkanir
+## Takmarkanir {#limitations}
 
 - SVG-logo eru búin til sem kyrrstæð grafík (ekki hreyfimyndir)
 - Flókin logo með mörgum einingum gætu krafist handvirkrar fínstillingar
 - Sérsniðin letur eru ekki studd; texti notar kerfisletur
 - Mjög stórar eða mjög litlar stærðir geta haft áhrif á gæði
 
-## Tengdar getu
+## Tengdar getu {#related-abilities}
 
 - [Staðfesta andstæðu litapallettu](./validate-palette-contrast.md) — athuga litaskil með tilliti til aðgengis
 - [Búa til valmynd](./create-menu.md) — búa til leiðsagnarvalmyndir fyrir vefinn þinn

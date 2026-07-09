@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 L'Ultimate AI Connector for WebLLM porta la inferència d'IA nativa del navegador a la teva xarxa multisite de WordPress. Executa models de llenguatge gran (LLM) completament al navegador utilitzant WebLLM i el motor MLC, sense necessitat de clau API, sense trucades externes i sense que dades deixin el dispositiu de l'usuari.
 
-## Funcionalitats Clau
+## Funcionalitats Clau {#key-features}
 
 - **Inferència al navegador**: L'LLM s'executa localment al navegador del visitant mitjançant WebLLM/MLC — no és necessari GPU de servidor
 - **Widget de xat flotant**: Els usuaris connectats poden donar *prompts* a l'LLM del navegador directament des del *front end*
@@ -22,28 +22,28 @@ L'Ultimate AI Connector for WebLLM porta la inferència d'IA nativa del navegado
 - **Cache IndexedDB**: Les descàrretes de pes de model sobreviuen a les redireccions CDN que estan afectant a la ruta predeterminada de l'API de Cache
 - **Integració wpai filter**: S'engancha al filtre `wpai_preferred_text_models` perquè la funcionalitat AI Experiments encamini cap al motor del navegador quan està configurat
 
-## Requisits
+## Requisits {#requirements}
 
 - WordPress 5.3 o més recent
 - PHP 7.4 o més recent
 - Plugin Ultimate Multisite (activat)
 - Un navegador amb suport de WebGPU (Chrome 113+, Edge 113+, o Firefox Nightly amb WebGPU habilitat)
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Carrega els fitxers de l'addon al teu directori `/wp-content/plugins/`
 2. Activa el plugin des del menú 'Plugins' de WordPress
 3. Navega a **Ultimate Multisite → AI Connector** per configurar l'addon
 
-## Widget de Xat Flotant
+## Widget de Xat Flotant {#floating-chat-widget}
 
 El widget de xat flotant permet a qualsevol usuari connectat interactuar amb l'LLM del navegador directament des del teu *front end*, sense haver de deixar la pàgina on es troba.
 
-### Què fa
+### Què fa {#what-it-does}
 
 Quan està activat, apareix un ícone de xat a l'esquina de cada pàgina de *front end* per als usuaris connectats. Fegir l'ícone abre una panella de xat on l'usuari pot escriure *prompts* i rebre respostes del model WebLLM que s'executa localment. Com que el model s'executa completament al navegador, les respostes són privades i no impliquen cap processament a nivell de servidor.
 
-### Indicador d'estat a la barra d'administració
+### Indicador d'estat a la barra d'administració {#admin-bar-status-indicator}
 
 La barra d'administració de WordPress inclou un indicador d'estat que mostra l'estat actual del motor WebLLM:
 
@@ -56,7 +56,7 @@ La barra d'administració de WordPress inclou un indicador d'estat que mostra l'
 
 L'indicador s'actualitza en temps real sense necessitat de recarregar la pàgina.
 
-### Com activar o desactivar el widget
+### Com activar o desactivar el widget {#how-to-enable-or-disable-the-widget}
 
 1. Veu a **Ultimate Multisite → AI Connector** a l'administració de la xarxa
 2. Troba el panell **Connector**
@@ -65,17 +65,17 @@ L'indicador s'actualitza en temps real sense necessitat de recarregar la pàgina
 
 El widget també es pot activar o desactivar per site de l'administració del propi site, si l'administrador de la xarxa ho ha permès.
 
-## Configuració del Widget
+## Configuració del Widget {#widget-settings}
 
 El panell Connector en **Ultimate Multisite → AI Connector** conté les siguientes configuracions per al widget de xat flotant:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 Activa o desactiva el widget de xat per a tota la xarxa. Quan està desactivat, el widget no apareix en cap pàgina de *front end*, independentment del rol de l'usuari.
 
 **Default:** Off
 
-### Auto-Prompt Behaviour
+### Auto-Prompt Behaviour {#auto-prompt-behaviour}
 
 Contreles si el widget de xat envia automàticament un *prompt* quan un usuari l'obre.
 
@@ -93,7 +93,7 @@ Quan està configurat com a **Custom prompt**, apareix un camp de text addiciona
 
 **Default:** Disabled
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 La versió 1.1.0 introdueix un *SharedWorker runtime* per al motor MLC. Anteriorment, cada pestanya del navegador que utilitzava WebLLM carregava la seva pròpia instància del model, competint per la memòria de GPU i causant problemes de rendiment en dispositius amb VRAM limitada.
 
@@ -105,29 +105,29 @@ Amb el *SharedWorker runtime*, una pestanya actua com a l'host del motor. Totes 
 
 El *SharedWorker* és transparent per als usuaris. L'indicador d'estat de la barra d'administració sempre reflecteja l'estat del motor compartit, no el de la pestanya individual.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 L'addon instal·la un *middleware* `apiFetch` que intercepta les sol·licituds REST API de WordPress que coincideixen amb el patró de l'AI Client SDK. En lloc de fer una sol·licitud HTTP de *loopback* al servidor, aquestes sol·licituds són encaminades directament al *broker* local de WebLLM que s'executa al *SharedWorker*.
 
 Això significa que els plugins i els temes que utilitzen l'API estàndard `apiFetch` de WordPress per anar a fer crides a *endpoints* d'IA rebran automàticament els beneficis del model al navegador quan està disponible, sense necessitat de canvis de codi.
 
-## Hooks i Filtres
+## Hooks i Filtres {#hooks-and-filters}
 
-### Filtres
+### Filtres {#filters}
 
 - `wpai_preferred_text_models` — Registra el motor de navegador WebLLM com a model de text preferit. L'addon s'engancha a aquest filtre automàticament quan el motor està configurat i disponible.
 - `ultimate_webllm_widget_enabled` — Sobrescreu l'estat de habilitació del widget per a un usuari o context específic. Has de retornar `true` o `false`.
 - `ultimate_webllm_auto_prompt` — Modifica el text de l'*auto-prompt* abans que s'enviï al widget. Reull la cadena del *prompt* i l'objecte `WP_Post` actual.
 
-## Solucionar Problemes
+## Solucionar Problemes {#troubleshooting}
 
-### El widget de xat no apareix
+### El widget de xat no apareix {#the-chat-widget-does-not-appear}
 
 - Confirma que l'usuari està connectat — el widget només es mostra a usuaris autenticats
 - Comprova que **Enable floating chat widget** estigui activat al panell Connector
 - Verifica que el navegador de l'usuari suporti WebGPU (veure Requisits)
 
-### L'indicador de la barra d'administració mostra "Error"
+### L'indicador de la barra d'administració mostra "Error" {#the-admin-bar-indicator-shows-error}
 
 Obre la consola de desenvolupador del navegador (F12) i busca errors relacionats amb WebLLM. Causes comunes:
 
@@ -135,10 +135,10 @@ Obre la consola de desenvolupador del navegador (F12) i busca errors relacionats
 - Fallida la descàrrega dels pes del model — comprova la connectivitat de la xarxa i intenta netejar la cache d'IndexedDB a les eines de desenvolupador del navegador (Application → IndexedDB)
 - Una extensió del navegador està bloquejant el SharedWorker
 
-### Els pes del model es descarrega cada vegada
+### Els pes del model es descarrega cada vegada {#model-weights-download-every-time}
 
 L'addon utilitza IndexedDB com a *backend* de cache per assegurar que els pes del model sobreviuen a les redireccions CDN. Si els pes es descarrega de nou a cada visita, comprova que IndexedDB no està sent netejat per una configuració de privacitat del navegador o una extensió.
 
-## Changelog
+## Changelog {#changelog}
 
 Veure [Changelog](./changelog) per a la història completa de versions.

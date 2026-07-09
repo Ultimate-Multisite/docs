@@ -3,17 +3,17 @@ title: Directio designationis
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Directio Design
+# Directio Design {#design-direction}
 
 Gradus **Design Direction** sinit te recensere, expolire, et perficere visivum design thematis tui antequam Theme Builder thema completum generet.
 
-## Conspectus
+## Conspectus {#overview}
 
 Postquam Discovery Interview completum est, Theme Builder directionem design tui exhibet cum **praevisione reddita pro desktop et mobili**. Hoc sinit te exacte videre quomodo design tuum in diversis machinis appariturum sit antequam themati te committas.
 
-## Componentes Directionis Design
+## Componentes Directionis Design {#design-direction-components}
 
-### 1. Colorum Tabula
+### 1. Colorum Tabula {#1-color-palette}
 
 Schema colorum thematis tui, inter quae:
 
@@ -23,7 +23,7 @@ Schema colorum thematis tui, inter quae:
 - **Colores neutri** — cinerei et albi pro fundis et textu
 - **Color textus** — color primarius textus ad legibilitatem
 
-### 2. Typographia
+### 2. Typographia {#2-typography}
 
 Selectiones fontium pro:
 
@@ -33,14 +33,14 @@ Selectiones fontium pro:
 - **Altitudo lineae** — intervallum inter lineas ad legibilitatem
 - **Pondera fontium** — variationes crassae, ordinariae, et leves
 
-### 3. Dispositio et Spatia
+### 3. Dispositio et Spatia {#3-layout-and-spacing}
 
 - **Latitudo continentis** — maxima latitudo pro contentu
 - **Padding et margines** — spatia circum elementa
 - **Systema retis** — dispositio columnarum pro design responsivo
 - **Spatium componentium** — distantia inter elementa UI
 
-### 4. Elementa Visiva
+### 4. Elementa Visiva {#4-visual-elements}
 
 - **Stili globulorum** — design globulorum primariorum, secundariorum, et tertiariorum
 - **Design chartarum** — dispositiones pro caudicibus contenti
@@ -48,9 +48,9 @@ Selectiones fontium pro:
 - **Fines et umbrae** — subtilis profunditas visiva
 - **Effectus hover** — stylatio status interactiva
 
-## Praevisio Reddendi
+## Praevisio Reddendi {#preview-rendering}
 
-### Praevisio Desktop
+### Praevisio Desktop {#desktop-preview}
 
 Praevisio desktop ostendit design tuum plena latitudine (plerumque 1200px aut latius):
 
@@ -59,7 +59,7 @@ Praevisio desktop ostendit design tuum plena latitudine (plerumque 1200px aut la
 - Typographia et spatia magna
 - Omnia elementa visiva plena magnitudine
 
-### Praevisio Mobilis
+### Praevisio Mobilis {#mobile-preview}
 
 Praevisio mobilis ostendit design tuum latitudine mobili (plerumque 375px):
 
@@ -68,7 +68,7 @@ Praevisio mobilis ostendit design tuum latitudine mobili (plerumque 375px):
 - Typographia et spatia accommodata
 - Magnitudines globulorum tactui aptae
 
-### Puncta Fracturae Responsiva
+### Puncta Fracturae Responsiva {#responsive-breakpoints}
 
 Theme Builder praevisiones reddit ad haec puncta fracturae:
 
@@ -79,9 +79,9 @@ Theme Builder praevisiones reddit ad haec puncta fracturae:
 | **Desktop** | 1200px | Desktop plena latitudine |
 | **Large Desktop** | 1920px | Ostensio ultra-lata |
 
-## Design Tuum Expolire
+## Design Tuum Expolire {#refining-your-design}
 
-### Accommodationes Facere
+### Accommodationes Facere {#making-adjustments}
 
 Potes directionem design tui expolire per:
 
@@ -91,7 +91,7 @@ Potes directionem design tui expolire per:
 4. **Dispositionem renovare** — muta latitudines continentium et columnas retis
 5. **Elementa customizare** — modifica stilos globulorum, design chartarum, etc.
 
-### Renovationes Praevisionis
+### Renovationes Praevisionis {#preview-updates}
 
 Mutationes tempore reali reflectuntur:
 
@@ -100,7 +100,7 @@ Mutationes tempore reali reflectuntur:
 - Omnia puncta fracturae responsiva renovantur
 - Potes inter praevisiones commutare ut mutationes verifies
 
-### Visus Comparativus
+### Visus Comparativus {#comparison-view}
 
 Compara directionem design tui cum:
 
@@ -108,7 +108,7 @@ Compara directionem design tui cum:
 - **Design competitorum** — compara cum sitibus inspirationis
 - **Versiones priores** — revertere ad directiones design anteriores
 
-## Approbatio Directionis Design
+## Approbatio Directionis Design {#design-direction-approval}
 
 Cum design tuo contentus es:
 
@@ -118,7 +118,7 @@ Cum design tuo contentus es:
 4. **Dispositionem confirma** — inspice spatia et alignment
 5. **Design approba** — procede ad generationem thematis
 
-## Proximi Gradus
+## Proximi Gradus {#next-steps}
 
 Post approbatam directionem design tui:
 
@@ -127,7 +127,7 @@ Post approbatam directionem design tui:
 3. Potes ulterius customizare utens WordPress customizer
 4. Procede ad [Menus Hospitalitatis](./hospitality-menus.md) aut alias functiones
 
-## Optimae Consuetudines
+## Optimae Consuetudines {#best-practices}
 
 - **Proba in machinis realibus** — utere telephonis et tabulis actualibus si fieri potest
 - **Legibilitatem inspice** — cura textum in omnibus magnitudinibus legibilem esse
@@ -135,30 +135,30 @@ Post approbatam directionem design tui:
 - **Efficientiam considera** — imagines et fontes ad celeritatem optimiza
 - **Pro contentu consilium para** — cura dispositionem cum contentu actuali tuo operari
 
-## Solutio Problematum
+## Solutio Problematum {#troubleshooting}
 
-### Praevisio Non Renovatur
+### Praevisio Non Renovatur {#preview-not-updating}
 
 - Paginam refice
 - Caches navigatoris purga
 - Alium navigatorem tenta
 - Conexionem interretialem inspice
 
-### Colores Diversi Videntur
+### Colores Diversi Videntur {#colors-look-different}
 
 - Inspice configurationes colorum monitoris
 - Tenta in diversis machinis
 - Verifica contrastum colorum instrumentis accessibilitatis
 - Considera simulatores caecitatis colorum
 
-### Quaestiones Typographiae
+### Quaestiones Typographiae {#typography-issues}
 
 - Verifica fasciculos fontium onerari
 - Inspice magnitudinem fontis ad diversa puncta fracturae
 - Proba cum contentu actuali
 - Considera longitudinem lineae ad legibilitatem
 
-## Documentatio Conexa
+## Documentatio Conexa {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — collige informationem design
 - [Menus Hospitalitatis](./hospitality-menus.md) — crea paginas menu structas

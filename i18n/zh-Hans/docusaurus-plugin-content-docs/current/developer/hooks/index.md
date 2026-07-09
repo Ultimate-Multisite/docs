@@ -3,11 +3,11 @@ title: 钩子参考
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# 钩子参考
+# 钩子参考 {#hooks-reference}
 
 Ultimate Multisite 中所有 **59 个动作** 和 **118 个过滤器** 的自动生成文档。
 
-## 动作
+## 动作 {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — 在身份验证重定向之前触发。
 - [set_auth_cookie](./Actions/set_auth_cookie) — 在设置身份验证 cookie 之前立即触发。
@@ -70,7 +70,7 @@ Ultimate Multisite 中所有 **59 个动作** 和 **118 个过滤器** 的自动
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — 在 object 存储到数据库后触发。
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — 允许 plugin 开发者向解锁过程添加 actions。
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — 筛选身份验证 cookie 过期周期的持续时间。
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — 筛选身份验证重定向方案。

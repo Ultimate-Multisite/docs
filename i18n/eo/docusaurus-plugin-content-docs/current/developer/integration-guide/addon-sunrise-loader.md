@@ -3,17 +3,17 @@ title: Ŝargilo de Sunrise-dosiero por aldonaĵo
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Aldonaĵa Sunrise-dosierŝargilo
+# Aldonaĵa Sunrise-dosierŝargilo {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 aldonas sunrise-etendaĵan ŝargilon por aldonaĵoj kaj propraj MU-plugin integriĝoj, kiuj devas ruliĝi dum WordPress sunrise-praŝargado sen redakti la generitan dosieron `wp-content/sunrise.php`.
 
-## Kiam uzi ĝin
+## Kiam uzi ĝin {#when-to-use-it}
 
 Uzu sunrise-etendaĵon kiam via integriĝo devas ruliĝi antaŭ ol ordinaraj kromprogramoj estas ŝargitaj, kiel propra domajna vojigo, gastigantospecifa pritraktado de petoj, aŭ fruaj retaj praŝargaj ĝustigoj.
 
 Por normalaj integriĝoj, preferu ordinarajn WordPress kromprogramojn, MU-plugin-ojn, kaj la dokumentitajn Ultimate Multisite hokojn. Sunrise-kodo ruliĝas tre frue kaj devus resti malgranda, defensiva, kaj sendependa de dependecoj.
 
-## Dosiernoma konvencio
+## Dosiernoma konvencio {#file-naming-convention}
 
 Kreu PHP-dosieron nomitan `sunrise.php` en aldonaĵa dosierujo kies nomo komenciĝas per `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Kongruaj dosieroj estas ŝargitaj laŭ alfabeta ordo laŭ aldonaĵa vojo.
 
-## Kie meti la dosieron
+## Kie meti la dosieron {#where-to-place-the-file}
 
 Metu la dosieron en la radikan dosierujon de la aldonaĵo, kiu posedas la sunrise-konduton:
 
@@ -45,7 +45,7 @@ La skanado estas solvita relative al `WP_CONTENT_DIR`, ne al la aktuala valoro d
 
 Ne redaktu la generitan dosieron `wp-content/sunrise.php` rekte. La ŝargilo permesas al propra kodo etendi sunrise-konduton sen forki la kernan sunrise-dosieron, kiun Ultimate Multisite instalas kaj ĝisdatigas.
 
-## Disponeblaj hokoj kaj filtriloj
+## Disponeblaj hokoj kaj filtriloj {#hooks-and-filters-available}
 
 Aldonaĵaj sunrise-dosieroj ruliĝas post kiam Ultimate Multisite domajna mapado ŝargiĝis kaj antaŭ ol WordPress ekigas `ms_loaded`. Je ĉi tiu punkto sunrise-dosiero povas:
 
@@ -58,7 +58,7 @@ Ultimate Multisite ekigas `wu_sunrise_loaded` post kiam ĝia sunrise-ŝargilo fi
 
 Voku nur funkciojn, kiuj jam estas ŝargitaj en la sunrise-fazo. Evitu datumbaz-pezan laboron, ŝablonan bildigon, HTTP-petojn, kaj kodon, kiu supozas ke normala kromprograma ŝargordo finiĝis.
 
-## Minimuma ekzemplo
+## Minimuma ekzemplo {#minimal-example}
 
 ```php
 <?php

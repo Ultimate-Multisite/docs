@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Çoklu Para Birimi" />
 
-# Çoklu Para Birimi
+# Çoklu Para Birimi {#multi-currency}
 
 Ultimate Multisite: Multi-Currency, ağınızın birden fazla para biriminde ödeme kabul etmesini sağlar. Canlı veya manuel döviz kurları kullanarak fiyatları otomatik olarak dönüştürür, herhangi bir ürün için istediğiniz para biriminde tam fiyat belirlemenize olanak tanır ve coğrafi konum (geolocation) yoluyla her ziyaretçinin tercih ettiği para birimini tespit eder — tüm bunlar tek bir yönetici kontrol panelinden yönetilir.
 
-## Temel Özellikler
+## Temel Özellikler {#key-features}
 
 - **Otomatik döviz kuru dönüşümü** — Fiyatlar, seçtiğiniz sağlayıcıdan çekilen kurlar kullanılarak temel para biriminizden dönüştürülür.
 - **Ürüne özel fiyat belirlemeleri** — Otomatik dönüşümü atlamak için herhangi bir ürüne para birimine özel tam fiyatlar belirleyebilirsiniz.
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency, ağınızın birden fazla para biriminde öd
 - **Coğrafi konuma dayalı para birimi tespiti** — Ziyaretçinin ülkesine uygun para birimini otomatik olarak önceden seçer.
 - **Yönetici kontrol paneli** — Aktif para birimlerini, döviz kurlarını ve sağlayıcı ayarlarını tek bir yerden yönetin.
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 - Ultimate Multisite 2.0.0 veya üzeri
 - WordPress Multisite kurulumu
 - PHP 7.4 veya üzeri
 
-## Kurulum
+## Kurulum {#installation}
 
 1. Eklenti dosyalarını `/wp-content/plugins/ultimate-multisite-multi-currency` konumuna yükleyin.
 2. Eklentiyi WordPress'te **Eklentiler** ekranından etkinleştirin (Ağda Etkinleştir).
 3. Yönetici kontrol paneline ulaşmak için **Ultimate Multisite → Multi-Currency** yolunu izleyin.
 4. Kabul etmek istediğiniz para birimlerini ekleyin ve döviz kuru sağlayıcınızı yapılandırın.
 
-## Yapılandırma
+## Yapılandırma {#configuration}
 
-### Yönetici Kontrol Paneli
+### Yönetici Kontrol Paneli {#admin-dashboard}
 
 Multi-Currency yönetici kontrol paneli (**Ultimate Multisite → Multi-Currency**), aşağıdaki işlemleri yapabileceğiniz merkezi yerdir:
 
@@ -44,7 +44,7 @@ Multi-Currency yönetici kontrol paneli (**Ultimate Multisite → Multi-Currency
 - Tüm aktif para birimlerinin güncel kurlarını gözden geçirme.
 - Otomatik sağlayıcılar uygun olmadığında manuel kurlar belirleme.
 
-### Döviz Kuru Sağlayıcıları
+### Döviz Kuru Sağlayıcıları {#exchange-rate-providers}
 
 | Sağlayıcı | Açıklama |
 |---|---|
@@ -55,7 +55,7 @@ Multi-Currency yönetici kontrol paneli (**Ultimate Multisite → Multi-Currency
 
 Sağlayıcınızı **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** altından seçin. Kurlar istediğiniz zaman manuel olarak veya otomatik güncellenmesi için zamanlanarak yenilenebilir.
 
-### Ürüne Özel Fiyat Belirlemeleri
+### Ürüne Özel Fiyat Belirlemeleri {#per-product-pricing-overrides}
 
 Otomatik dönüşüm yeterince hassas olmadığında, herhangi bir ürün için belirli bir para biriminde tam bir fiyat belirleyebilirsiniz:
 
@@ -66,7 +66,7 @@ Otomatik dönüşüm yeterince hassas olmadığında, herhangi bir ürün için 
 
 Üzerine yazma yapılmayan ürünler, temel para biriminizden dönüştürülmüş fiyatı kullanır.
 
-### Para Birimi Seçici Kayıt Alanı
+### Para Birimi Seçici Kayıt Alanı {#currency-selector-signup-field}
 
 Para birimi seçici alanı, müşterilerin kayıt sırasında tercih ettikleri para birimini seçmelerini sağlamak için kayıt/ödeme akışınıza eklenebilir:
 
@@ -76,7 +76,7 @@ Para birimi seçici alanı, müşterilerin kayıt sırasında tercih ettikleri p
 
 Seçilen para birimi abonelikle birlikte saklanır ve tüm sonraki faturalandırmalarda kullanılır.
 
-### Coğrafi Konuma Dayalı Para Birimi Tespiti
+### Coğrafi Konuma Dayalı Para Birimi Tespiti {#geolocation-based-currency-detection}
 
 Coğrafi konum tespiti etkinleştirildiğinde, eklenti ziyaretçinin ülkesini bir para birimine eşleştirir ve bunu para birimi seçici alanında önceden seçer. Etkinleştirmek için:
 
@@ -86,27 +86,27 @@ Coğrafi konum tespiti etkinleştirildiğinde, eklenti ziyaretçinin ülkesini b
 
 Bir ziyaretçinin ülkesi için eşleştirme yoksa, ağın temel para birimi yedek olarak kullanılır.
 
-## Sıkça Sorulan Sorular
+## Sıkça Sorulan Sorular {#frequently-asked-questions}
 
-### Bir döviz kuru sağlayıcısı kullanılamazsa ne olur?
+### Bir döviz kuru sağlayıcısı kullanılamazsa ne olur? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Eklenti, en son başarılı bir şekilde çekilen kurlara geri döner. Hiçbir kur çekilmemişse, yapılandırdığınız manuel kurlara geri döner. Güvenlik ağı olarak manuel kurları yapılandırmanız önerilir.
 
-### Farklı para birimleri için farklı sağlayıcılar kullanabilir miyim?
+### Farklı para birimleri için farklı sağlayıcılar kullanabilir miyim? {#can-i-use-different-providers-for-different-currencies}
 
 Hayır — tüm para birimleri için tek bir sağlayıcı aktif olur. Bireysel kurlar üzerinde tam kontrol istiyorsanız **Manuel** kullanın.
 
-### Coğrafi konum ayrı bir eklenti gerektirir mi?
+### Coğrafi konum ayrı bir eklenti gerektirir mi? {#does-geolocation-require-a-separate-plugin}
 
 Harici bir coğrafi konum eklentisi gerekmez. Eklenti, WordPress'in yerleşik IP'den ülkeye tespit özelliğini kullanır. Daha yüksek doğruluk için, sağlanan filtre hook'ları aracılığıyla özel bir coğrafi konum hizmeti entegre edilebilir.
 
-### Ürüne özel fiyat belirlemeleri vergi öncesi mi yoksa sonrası mı uygulanır?
+### Ürüne özel fiyat belirlemeleri vergi öncesi mi yoksa sonrası mı uygulanır? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Ürüne özel belirlemeler, hedef para biriminde vergi öncesi fiyatı belirler. Vergi, mevcut vergi yapılandırmanızı kullanarak belirleme fiyatı üzerine hesaplanır.
 
-## Değişiklik Günlüğü
+## Değişiklik Günlüğü {#changelog}
 
-### Sürüm 1.0.0 — Yayınlanma Tarihi 2026-04-02
+### Sürüm 1.0.0 — Yayınlanma Tarihi 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Yeni: Otomatik döviz kuru dönüşümü ile çoklu para birimi desteği.
 - Yeni: Tam para birimi özel fiyatları için ürüne özel fiyat belirlemeleri.

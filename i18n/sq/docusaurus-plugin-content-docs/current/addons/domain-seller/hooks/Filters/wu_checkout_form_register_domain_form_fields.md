@@ -4,23 +4,23 @@ title: Filtër - wu_checkout_form_register_domain_form_fields
 sidebar_label: wu_checkout_form_register_domain_form_fields
 _i18n_hash: 6d1f2eeb3abc57d82e1b8e4b949501c3
 ---
-# Filtër: wu_checkout_form_register_domain_form_fields
+# Filtër: wu_checkout_form_register_domain_form_fields {#filter-wucheckoutformregisterdomainformfields}
 
 Filtron fushat e formularit të checkout për regjistrimin e domain-it.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Lloji | Përshkrimi |
 |------|------|-------------|
 | $steps | `array` | Hapat e formularit. |
 | $membership | `\WP_Ultimo\Models\Membership` | Anëtarësimi aktual. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.1.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L431) në rreshtin 431
 
 
-## Kthen
+## Kthen {#returns}

@@ -3,7 +3,7 @@ title: Menaxhimi i Linkeve të Ndarë për Plane
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Menaxhimi i Linkeve të Ndarshueshme për Plane
+# Menaxhimi i Linkeve të Ndarshueshme për Plane {#managing-shareable-links-for-plans}
 
 Ultimate Multisite ju ofron opsionin t'i ndaqni direkt linket e planit klientëve tuaj. Për të bërë këtë, shkoni në çdo një nga faqet e redaktimit të planeve tuaja dhe klikoni butonin _Click to copy the Shareable Link_.
 

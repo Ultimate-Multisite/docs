@@ -4,11 +4,11 @@ title: مەشغۇلات - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 كىرىپ بولغان دەلىللەش cookie سى تەڭشىلىشتىن دەل بۇرۇن ئىجرا بولىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | دەلىللەش لايىھىسى. كۆڭۈلدىكى قىممىتى 'logged_in'. |
 | $token | `string` | بۇ cookie ئۈچۈن ئىشلىتىلىدىغان ئىشلەتكۈچىنىڭ session token ى. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### مەنبە
+### مەنبە {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) دا 141-قۇردا بەلگىلەنگەن.

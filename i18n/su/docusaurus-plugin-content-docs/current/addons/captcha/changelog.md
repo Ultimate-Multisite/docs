@@ -3,7 +3,7 @@ title: Catetan Parobahan Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Log Parobahan Captcha
+# Log Parobahan Captcha {#captcha-changelog}
 
 Vérsi: 1.5.0 - Dirilis dina 2026-05-22
 * Anyar: Hard-stop rate limiter — ngitung unggal GET jeung POST dina permukaan nu ditangtayungan captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) sarta ngabales ku HTTP 429, hiji header `Retry-After`, jeung tarpit sleep acak (1–5d, dibatesan teuas di 15d).

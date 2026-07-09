@@ -3,7 +3,7 @@ title: Integrace Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrace Ultimate Multisite se Zapier
+# Integrace Ultimate Multisite se Zapier {#integrating-ultimate-multisite-with-zapier}
 
 V jednom z článků jsme probírali [Webhooks](webhooks.md) a jak je lze použít k integraci s aplikacemi třetích stran.
 
@@ -15,7 +15,7 @@ Můžete vytvářet **Triggers**, které se spustí, když ve vaší síti nasta
 
 To je možné, protože **triggers Ultimate Multisite Zapier** a actions jsou poháněny [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Jak začít
+## Jak začít {#how-to-start}
 
 Nejprve vyhledejte Ultimate Multisite v seznamu aplikací Zapier. Případně můžete kliknout na [tento odkaz](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Do pole URL vložte úplnou URL své sítě včetně protokolu (HTTP nebo HTTPS)
 
 Klikněte na tlačítko **Yes, Continue** a přejděte k dalšímu kroku. Pokud vše proběhne správně, měl by vás přivítat váš nový připojený account! Klikněte na **Continue** pro vytvoření nového triggeru.
 
-## Jak vytvořit nový Trigger
+## Jak vytvořit nový Trigger {#how-to-create-a-new-trigger}
 
 Nyní, když je váš account připojen, můžete vidět dostupné události. Pro tento tutoriál zvolme událost **payment_received**.
 
@@ -67,7 +67,7 @@ V této fázi Zapier otestuje, zda váš Zap dokáže **načíst konkrétní pay
 
 V našem tutoriálu byl test **úspěšně dokončen** a vrátil ukázkové informace payloadu. Tyto ukázkové informace budou užitečné jako vodítko při vytváření actions. Váš trigger je nyní vytvořen a připraven k propojení s dalšími aplikacemi.
 
-## Jak vytvořit Actions
+## Jak vytvořit Actions {#how-to-create-actions}
 
 Actions používají informace z jiných triggers k vytváření nových záznamů ve vaší síti.
 
@@ -79,7 +79,7 @@ V dalším kroku buď vytvoříte své ověření, stejně jako jsme to udělali
 
 ![Výběr ověření pro action Zapier](/img/admin/webhooks-list.png)
 
-### Nastavení Action
+### Nastavení Action {#setting-up-the-action}
 
 Toto je **hlavní krok action** a zde jsou věci trochu jiné. První informace, kterou vyberete, je **Item**. Item je **informační model** vaší sítě, například **Customers, Payments, Sites, Emails** a další.
 

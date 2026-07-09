@@ -4,11 +4,11 @@ title: การกระทำ - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Action: wu_page_load
+# Action: wu_page_load {#action-wupageload}
 
 อนุญาตให้ผู้พัฒนาปลั๊กอินสามารถเพิ่ม hook พิเศษในหน้าของเราได้
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 | $page_hook | `string` | Hook ของหน้าเพจนี้ |
 | $admin_page | `self` | อินสแตนซ์ของหน้าเพจ |
 
-### Since
+### Since {#since}
 
 - 1.8.2
 - 2.0.4: เพิ่มพารามิเตอร์ตัวที่สาม: อินสแตนซ์ของหน้าเพจ
-### Source
+### Source {#source}
 
 กำหนดไว้ใน [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L318) บรรทัดที่ 318

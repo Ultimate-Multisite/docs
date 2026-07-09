@@ -4,19 +4,19 @@ title: მოქმედება - wu_domain_seller_register_integrations
 sidebar_label: wu_domain_seller_register_integrations
 _i18n_hash: 0ff64d6bf533363a12a35eb9e28c9883
 ---
-# Action: wu_domain_seller_register_integrations
+# Action: wu_domain_seller_register_integrations {#action-wudomainsellerregisterintegrations}
 
 სხვა plugins-ს აძლევს დამატებითი დომენის გამყიდველის ინტეგრაციების რეგისტრაციის საშუალებას.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
 | $registry | `\WP_Ultimo\Integrations\Integration_Registry` | ინტეგრაციების რეესტრი. |
 
-### დან
+### დან {#since}
 
 - 2.1.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L293) ფაილში, 293-ე ხაზზე.

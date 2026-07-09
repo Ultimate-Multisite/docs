@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite téh teh plugin WordPress Multisite anu ngajanin anjeun pikeun nawarke WaaS atawa Website as a Service ka pelanggan. Saméméh urang dugi ka diajar kumaha Ultimate Multisite bisa ngabantosan bisnis je pelanggan di dinya, aya sababaraha pangaweruh dasar anu kudu urang piboga.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Paling loba ti urang mah kenal instalasi WordPress standar. Anjeun bisa nyiptake éta téh lewat control panel penyedia hosting anjeun atawa, pikeun nu wani, ngatur server web je database anyar, ngunduh file inti je mimiti proses instalasi.
 
@@ -21,13 +21,13 @@ Intina, WordPress multisite bisa dipikir saperti kieu: Universitas ngajaga hiji 
 
 Hayu urangkeun katerangan ieu ku cara ngulik sababaraha istilah dasar anu aya di Ultimate Multisite ogé dina dokumentasi WordPress.
 
-### Jaringan (The Network)
+### Jaringan (The Network) {#the-network}
 
 Dina konteks WordPress, jaringan multisite téh nyaéta tempat di mana sababaraha subsite bisa dikelola tina hiji dashboard tunggal. Sanajan cara nyiptake jaringan multisite béda antara penyedia hosting, hasil akhirunana biasana ngan ukur aya sababaraha arahan tambahan dina file `wp-config.php` pikeun ngabéjaan WordPress yén éta keur ngoperasike mode anu spesifik ieu.
 
 Ada sababaraha béda nu jelas antara jaringan multisite jeung instalasi WordPress tunggal (stand-alone) anu bakal urang bahas sacara singget.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#subdomain-vs-subdirectory}
 
 Salah sahiji keputusan pangpentingna anu kudu anjeun jieun nyaéta naha instalasi multisite téh bakal ngagunake _subdirectories_ atawa _subdomains_. Ultimate Multisite bisa maké duana, tapi aya sababaraha béda arsitektur antara dua konfigurasi éta.
 
@@ -43,7 +43,7 @@ Nah, di konfigurasi _subdomain_, pake wildcard SSL certificate itu salah satu pi
 
 Meskipun ada pilihan lain, biasanya itu lingkup dan aplikasinya terbatas, terus butuh konfigurasi tambahan sama pertimbangan soal kecocokannya.
 
-#### Plugin dan Tema
+#### Plugin dan Tema {#plugins-and-themes}
 
 Apa yang WordPress kasih, dia juga ambil, setidaknya dari sudut pandang pelanggan. Kalau instalasi WordPress mandiri (stand-alone) dan admin situs malah pasang plugin jelek atau lupa update instalasinya, satu-satunya korban dan kerugiannya cuma dirinya sendiri. Tapi kalau admin situs pasang plugin jelek di instalasi multisite, itu bikin setiap situs yang ada di jaringan jadi korban.
 
@@ -51,7 +51,7 @@ Alai sababna, lamun diatur salaku multisite WordPress, fitur pikeun admin situs 
 
 Dina titik ieu, admin jaringan bertanggung jawab pikeun nginstal plugin je tema ka jaringan sarta mendelekeun izin sangkan bisa maké plugin je tema éta pikeun situs-situs jaringan. Admin situs teu bisa nginstal plugin je tema atawa ngagunake plugin je tema nu teu ditugaskeun ka situs maranéhna.
 
-#### Pengguna je Administrator
+#### Pengguna je Administrator {#users-and-administrators}
 
 Dina WordPress Multisite, sadaya situs jaringan miboga database anu sarua sarta ku kituna miboga pengguna, peran, je kapabilitas anu sarua. Cara panghadéna pikeun ngaregepkeun éta nyaéta sadaya pengguna mangrupa anggota jaringan lain, lain ngan ukur milik hiji situs.
 
@@ -63,13 +63,13 @@ Ngulang deui pernyataan di luhur, sanajan akun pengguna katingali patali je situ
 
 Sanajan sanésna konsep asing dina sistem perusahaan, sumber pendaftaran je otentikasi pengguna tunggal ieu sok hésé dipahami ku jalma anu biasa ngagunake instalasi WordPress mandiri di mana administrasi pengguna rada gampang.
 
-#### Media
+#### Media {#media}
 
 Di mana situs jaringan berbagi database tunggal dina WordPress Multisite, maranéhna ngajaga jalur (path) anu béda dina filesystem pikeun file media.
 
 Lokasi standar WordPress (wp-content/uploads) tetep aya; ngan jalanna diubah sangkan ngagambarkeun ID unik situs jaringan éta. Akibatna file media pikeun situs jaringan bakal muncul salaku wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Kami geus disebutkeun saméméh yén aya kauntungan anu béda antara konfigurasi _subdomain_ je _subdirectory_, sareng ieu dia: jalanna (paths).
 
@@ -83,7 +83,7 @@ Dina konfigurasi _subdomain_, tindakan ieu teu perlu sabab unggal situs jaringan
 
 <!-- Screenshot teu aya: pengaturan permalink WordPress pikeun konfigurasi subdomain -->
 
-#### Halaman Statis
+#### Halaman Statis {#static-pages}
 
 Di konfigurasi _subdirectory_ potensi bentrokan nama bisa nyebar sampai ke halaman statis sebagai situs utama dan situs jaringan berbagi path yang sama.
 
@@ -93,7 +93,7 @@ Supaya ini nggak terjadi, WordPress sediakan cara buat memblokir beberapa nama s
 
 Di konfigurasi _subdomain_ kemungkinan bentrokan nama bisa diatasi karena _subdomain_ itu unik buat situs jaringan dan nggak ada hubungannya sama situs utama.
 
-### Registrasi
+### Registrasi {#registration}
 
 Di pengaturan jaringan WordPress Multisite, ada beberapa pilihan registrasi pengguna baru yang tersedia, memungkinkan pengguna baru dan lama untuk membuat situs.
 
@@ -111,7 +111,7 @@ Ka titik éta, nalika hiji user login, manéhna login ka jaringan jeung intina o
 
 Nanging, lamun tujuan jeur multisite éta nyaéta nawarkeun situs-situs jaringan anu teu aya hubunganana, biasana butuh plugin luar atawa tambahan pikeun ngatur peran user.
 
-### Domain je SSL
+### Domain je SSL {#domain-and-ssl}
 
 Hayu urang ngobrolkeun instalasi WordPress Multisite anu hampir teu diperhatikeun - Wordpress.com. Ieu mangrupa conto multisite WordPress anu paling gedé jeung nunjukkeun kemampuan gedéna pikeun disesuaikan jeung dibentuk pikeun tujuan tertentu.
 
@@ -125,11 +125,11 @@ Kanggo administrator jaringan, ieu mangrupa lapisan kerumitan tambahan boh dina 
 
 Sampurasna, sanajan WordPress Multisite ngajadikeun [www.anotherdomain.com](http://www.anotherdomain.com) bisa dipetkeun ka ‘site1’, administrator jaringan tetep kudu ngurus DNS di luar sarta ngalaksanakeun implementasi sertifikat SSL.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Lamun perbedaan antara instalasi WordPress tunggal jeung Multisite dipahami, hayu urang tingali kumaha Ultimate Multisite jadi senjata pamungkas pikeun nyadiakeun Website as a Service (WaaS).
 
-### Pendahuluan
+### Pendahuluan {#introduction}
 
 Ultimate Multisite téh mangrupa pisau Swiss-mu nalika ngadamel Website as a Service (WaaS). Anggap waé Wix.com, Squarespace, WordPress.com jeung teras mikiran ngabogaan layanan sorangan.
 
@@ -137,9 +137,9 @@ Di balik layar, Ultimate Multisite ngagunake WordPress Multisite tapi dilakukeun
 
 Dina bagian-bagian salajengna urang bakal tingali sababaraha kasus panganggo umum jeung pertimbangan anu dipiharep keur ngadukung kasus-kasus éta.
 
-### Kasus Panganggo
+### Kasus Panganggo {#use-cases}
 
-#### Kasus 1: Agensi
+#### Kasus 1: Agensi {#case-1-an-agency}
 
 Biasana, kaparigelan inti hiji agensi nyaéta desain website kalawan aspek saperti hosting atawa marketingna jadi layanan tambahan.
 
@@ -165,7 +165,7 @@ Tema-tema (themes) ngajukeun fungsi anu sarua, ngidinan sababaraha tema dipilih 
 
 Agensi bakal tenang makanya ngagunake Ultimate Multisite, ngidinan maranéhna bisa ngalakukeun hal anu paling dipikaresepna - mendesain situs web anu luar biasa.
 
-#### Kasus 2: Penyedia Niche (Niche Provider)
+#### Kasus 2: Penyedia Niche (Niche Provider) {#case-2-niche-provider}
 
 Ada paribasa baheula anu bilang, “laku hiji hal jeung laksanakeun kalawan saé”. Pikeun seueur spesialis, éta hartina nyiptake produk atawa jasa diwarungkeun kana hiji ide utama.
 
@@ -179,7 +179,7 @@ Pikeun penyedia situs je jasa niche, ieu ngahasilkeun keuntungan anu teu aya tan
 
 Ngarengan na paménta, konfigurasi _subdirectory_ atawa _subdomain_ bisa cocog, dina kasus éta pilihan arsitektur téh bakal jadi antara sertifikat SSL sederhana pikeun _subdirectory_ atawa sertifikat SSL wildcard pikeun _subdomain_.
 
-#### Kasus 3: Web Hosting WordPress
+#### Kasus 3: Web Hosting WordPress {#case-3-wordpress-web-hosting}
 
 Ada loba cara pikeun ngahosting situs WordPress, tapi jarang pisan gampang saperti nyediakeun ruang web ka pelanggan je versi WordPress anu geus dipasang. Ieu sabab aya sababaraha keputusan je pertimbangan anu kudu digabung pikeun nyayogikeun layanan anu bermakna.
 
@@ -191,11 +191,11 @@ Kanggo *developer* anu hayang integrasi je Ultimate Multisite, solusi ieu ogé n
 
 Tanpa gumantung kana loba plugin je lisensi eksternal, Ultimate Multisite nyayogikeun solusi anu kaya fitur je sebanding je Wix, Squarespace, WordPress.com, je nu séjénna.
 
-### Pertimbangan Arsitektur
+### Pertimbangan Arsitektur {#architecture-considerations}
 
 Sanajan lain panduan anu komprehensif, hal-hal di handap kudu jadi panuntun pikeun milih téknologi anu bener pikeun ngadukung instalasi Ultimate Multisite.
 
-#### Hosting Bersama vs. Khusus (Shared vs. Dedicated Hosting)
+#### Hosting Bersama vs. Khusus (Shared vs. Dedicated Hosting) {#shared-vs-dedicated-hosting}
 
 Sayang, teu sadayana penyedia hosting téh sarua, jeunjeun aya nu ngalakukeun praktik server anu kacida padetna. Penyedia jasa nu murah biasana ngahasilkeun duit ku cara maksimalkeun kepadatan server. Jadi, instalasi Ultimate Multisite anjeun mungkin ngan ukur salah sahiji tina ratusan situs di server anu sarua.
 
@@ -207,7 +207,7 @@ Ultimate Multisite kasohor bisa gawé bareng jeung sababaraha penyedia hosting a
 
 Kanggo daftar penyedia anu kompatibel sarta panduan panglenggoh kanggo unggal salah sahiji, mangga cek dokumentasi Compatible Providers.
 
-#### Pertimbangan Kinerja (*Performance Considerations*)
+#### Pertimbangan Kinerja (*Performance Considerations*) {#performance-considerations}
 
 Ultimate Multisite téh aplikasi nu teu lambat, tapi leuwih ti éta, anjeunna kacida gancangna. Nanging, anjeunna ngan ukur sahadéan jeung kualitas aplikasi jeung infrastruktur di handapna sarta ngan bisa manfaatan naon waé anu dipikawanoh ku anjeunna.
 
@@ -225,7 +225,7 @@ Ku sabab kitu, loba admin jaringan ngagunake solusi front-end caching jeung cont
 
 Ultimate Multisite ngandung add-on Cloudflare anu canggih anu ngidinake admin jaringan pikeun ngajadikeun instalasi maranéhna di balik Cloudflare jeung ngagunakeun moal ukur kapabilitas cachingna tapi ogé DNS hosting, sertifikat SSL, sarta mekanisme keamanan.
 
-#### Backup
+#### Backup {#backups}
 
 Anjeun bisa nanya ka 50 jalma ngeunaan *backup* jeung meunang 50 pamikiran béda ngeunaan strategi *backup*. Jawabanana mah, éta gumantung kana kaayaan.
 
@@ -235,7 +235,7 @@ Kanggo bagian ieu urang sepakat yén *backup* téh nyaéta salinan keadaan siste
 
 Ku pangaweruh ieu, jawaban ngeunaan kumaha cara ngahontal *backup* je naon anu panghadéna pikeun lingkungan anjeun bakal gumantung kana paménta anjeun je kamampuhan penyedia *hosting* pikeun ngalaksanakeun paménta éta. Nanging, tina urutan paling opinionated nepi ka leuwih teu opinionated, pilihan di handap biasana bakal méré panduan.
 
-#### Snapshots
+#### Snapshots {#snapshots}
 
 *Snapshot* téh mangrupa solusi anu paling gampang keur *backup* sabab gampang, teu rumit (sampeuh anjeun hayang ngabalikeun), je 'langsung jalan'. Nanging, éta butuh bantuan ti penyedia anjeun je utamana ngan berlaku lamun anjeun boga VPS (*Virtual Private Server*) atawa anu sarupa. Sababaraha penyedia nu aya dina dokumentasi ‘Compatible Providers’ urang nawiskeun *backup* anu teu merlukeun intervensi atawa pamikiran tambahan ti administrator jaringan.
 
@@ -243,7 +243,7 @@ Di mana backup tradisional menargetkan file dan database, snapshot menargetkan s
 
 Snapshot mungkin menarik biaya tambahan dari penyedia hosting tetapi ini adalah asuransi terhadap kecelakaan.
 
-#### Skrip Eksternal
+#### Skrip Eksternal {#external-scripts}
 
 Sepertinya tidak ada kekurangan skrip eksternal dan solusi untuk mencadangkan sumber daya WordPress dan MySQL, dan ini akan berfungsi dengan baik untuk Ultimate Multisite karena itu adalah plugin WordPress yang menggunakan sistem file dan database WordPress. Jadi, solusi yang mencadangkan situs WordPress akan memenuhi kebutuhan Ultimate Multisite.
 
@@ -251,7 +251,7 @@ Kami tidak bisa merekomendasikan satu skrip di atas yang lain tetapi saran umum 
 
 Perlu diperhatikan bahwa skrip-skrip ini, saat berjalan, akan meningkatkan beban sistem yang harus diperhitungkan.
 
-#### Plugin
+#### Plugin {#plugins}
 
 Hampir tidak ada masalah di WordPress yang tidak bisa diselesaikan dengan plugin dan jika mengelola skrip eksternal bukan keahlian Anda, mungkin plugin adalah pilihan terbaik berikutnya.
 
@@ -259,7 +259,7 @@ Sanajan plugin-plugin téh bédana dina pilihan je fitur, tapi intina mah sarua 
 
 Lamana milih plugin, ulah poho-poho ngabales yén éta bisa ngarti multisite. Kusabab sifat kerjanya nalika backup keur jalan, anjeun bakal némbongkeun beban sementara dina server nepi ka prosesna réngsé.
 
-#### Domain je SSL
+#### Domain je SSL {#domain-and-ssl-1}
 
 Loba pisan anu geus dibahas ngeunaan domain dina mode _subdomain_ multisite. Solusi hampir umum pikeun administrator jaringan nyaéta ngagunake wildcard DNS entry.
 
@@ -283,7 +283,7 @@ Bagi banyak orang, pakai Cloudflare itu gampang. Pelanggan cuma perlu taruh doma
 
 Di luar itu, solusi alternatif perlu dicari, makanya Ultimate Multisite merekomendasikan daftar Penyedia yang Kompatibel (Compatible Providers). Ini karena proses mengatur DNS dan SSL bisa jadi proses yang lumayan susah. Tapi, dengan integrasi Ultimate Multisite ke penyedia-penyedia ini, kerumitan jadi jauh berkurang dan prosedurnya otomatis.
 
-#### Plugin
+#### Plugin {#plugins-1}
 
 Kemungkinan besar Anda akan butuh plugin tambahan untuk memberikan fungsi ke pelanggan atau situs jaringan Anda. Apakah semua plugin bekerja dengan WordPress Multisite dan Ultimate Multisite? Nah, itu tergantung.
 

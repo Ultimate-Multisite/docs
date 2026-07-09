@@ -3,7 +3,7 @@ title: Журнал змін Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Журнал змін Mailchimp
+# Журнал змін Mailchimp {#mailchimp-changelog}
 
 Версія: 1.1.1 - Випущено 2025-09-28
 

@@ -3,7 +3,7 @@ title: Tugiagentide muudatuste logi
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# Tugiteenuse agentide muudatuste logi
+# Tugiteenuse agentide muudatuste logi {#support-agents-changelog}
 
 Versioon: 1.0.14 - Välja antud 2026-05-05
 * Parandus: lisatud Requires Plugins päis korrektseks WordPress plugina sõltuvuse deklareerimiseks

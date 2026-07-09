@@ -3,15 +3,15 @@ title: '6 pamoka: Registracijos patirtis'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# 6 pamoka: registracijos patirtis
+# 6 pamoka: registracijos patirtis {#lesson-6-the-signup-experience}
 
 Atsiskaitymo eiga yra vieta, kur susidomėjimas tampa pajamomis. Painus arba bendrinis registracijos procesas praranda klientus. Nišai pritaikyta eiga, kalbanti jų kalba ir atrodanti be pastangų, juos konvertuoja.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite turi sukonfigūruotus šablonus ir planus. Dabar kuriame registracijos ir atsiskaitymo patirtį, kuri fitneso studijų savininkus paverčia mokančiais klientais.
 
-## Registracijos eigos supratimas
+## Registracijos eigos supratimas {#understanding-the-registration-flow}
 
 Ultimate Multisite atsiskaitymo formos yra visiškai pritaikomos kelių žingsnių formos. FitSite norime eigos, kuri:
 
@@ -21,11 +21,11 @@ Ultimate Multisite atsiskaitymo formos yra visiškai pritaikomos kelių žingsni
 
 Visą techninę informaciją rasite [Registracijos eiga](/user-guide/configuration/the-registration-flow).
 
-## FitSite atsiskaitymo kūrimas
+## FitSite atsiskaitymo kūrimas {#designing-the-fitsite-checkout}
 
 Eikite į **Ultimate Multisite > Atsiskaitymo formos** ir sukurkite naują formą.
 
-### 1 žingsnis: plano pasirinkimas
+### 1 žingsnis: plano pasirinkimas {#step-1-plan-selection}
 
 Pirmas dalykas, kurį mato fitneso studijos savininkas, turėtų būti planai, pateikti jam suprantamais terminais.
 
@@ -37,7 +37,7 @@ Pirmas dalykas, kurį mato fitneso studijos savininkas, turėtų būti planai, p
 „1 GB saugyklos“ sporto salės savininkui nieko nereiškia. „Viskas, ko reikia profesionaliai studijos svetainei“ reiškia viską. Rašykite planų aprašymus savo kliento kalba.
 :::
 
-### 2 žingsnis: šablono pasirinkimas
+### 2 žingsnis: šablono pasirinkimas {#step-2-template-selection}
 
 Pasirinkęs planą, klientas išsirenka pradinį šabloną.
 
@@ -45,7 +45,7 @@ Pasirinkęs planą, klientas išsirenka pradinį šabloną.
 - Galimi šablonai filtruojami pagal pasirinktą planą (sukonfigūruota 5 pamokoje)
 - Kiekvienas šablonas turėtų turėti peržiūros paveikslėlį, rodantį fitnesui pritaikytą dizainą
 
-### 3 žingsnis: Account kūrimas
+### 3 žingsnis: Account kūrimas {#step-3-account-creation}
 
 Laikykite tai minimaliai. Rinkite tik:
 
@@ -55,27 +55,27 @@ Laikykite tai minimaliai. Rinkite tik:
 
 Registracijos metu neprašykite informacijos, kurios jums nereikia. Kiekvienas papildomas laukas mažina konversijas.
 
-### 4 žingsnis: svetainės nustatymas
+### 4 žingsnis: svetainės nustatymas {#step-4-site-setup}
 
 - **Svetainės pavadinimas**: iš anksto užpildykite iš studijos pavadinimo, įvesto 3 žingsnyje
 - **Svetainės URL**: automatiškai sugeneruokite iš studijos pavadinimo (pvz., `ironworks.fitsite.com`)
 
-### 5 žingsnis: mokėjimas
+### 5 žingsnis: mokėjimas {#step-5-payment}
 
 - Pridėkite **mokėjimo** lauką
 - Sukonfigūruokite mokėjimo šliuzą ([Stripe](/user-guide/payment-gateways/stripe) rekomenduojamas prenumeratų atsiskaitymui)
 - Jei 5 pamokoje sukūrėte užsakymo papildymų, prieš mokėjimo žingsnį pridėkite **užsakymo papildymo** lauką
 
-### 6 žingsnis: patvirtinimas
+### 6 žingsnis: patvirtinimas {#step-6-confirmation}
 
 - Pritaikykite patvirtinimo pranešimą naudodami fitnesui būdingą kalbą
 - Pavyzdys: „Jūsų fitneso studijos svetainė kuriama. Po kelių sekundžių būsite nukreipti į savo naują svetainę.“
 
-## Laikotarpio pasirinkimo perjungiklio pridėjimas
+## Laikotarpio pasirinkimo perjungiklio pridėjimas {#adding-a-period-selection-toggle}
 
 Jei savo planuose nustatėte kainų variantus (mėnesinį ir metinį), į atsiskaitymo formą pridėkite **laikotarpio pasirinkimo** lauką, kad klientai galėtų perjungti atsiskaitymo laikotarpius. Instrukcijas rasite [Atsiskaitymo formos](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-## Mokėjimo konfigūravimas
+## Mokėjimo konfigūravimas {#configuring-payment}
 
 Jei dar nesukonfigūravote mokėjimo šliuzo:
 
@@ -85,7 +85,7 @@ Jei dar nesukonfigūravote mokėjimo šliuzo:
 
 Daugiau informacijos apie tai, kaip mokėjimai patenka į jūsų Account, rasite [Kaip gauti mokėjimus](/user-guide/payment-gateways/getting-paid).
 
-## Eigos testavimas
+## Eigos testavimas {#testing-the-flow}
 
 Prieš tęsdami, atlikite pilną bandomąją registraciją:
 
@@ -105,7 +105,7 @@ Patikrinkite, ar:
 - [ ] Klientas patenka į veikiančią svetainę su pasirinktu šablonu
 - [ ] Patvirtinimo el. laiškai naudoja fitnesui būdingą kalbą
 
-## FitSite tinklas iki šiol
+## FitSite tinklas iki šiol {#the-fitsite-network-so-far}
 
 ```
 FitSite tinklas
@@ -123,7 +123,7 @@ FitSite tinklas
 └── Paruošta prekės ženklui (kita pamoka)
 ```
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Kelių žingsnių atsiskaitymo formą**, pritaikytą fitneso studijų savininkams
 - **Nišai pritaikytą kalbą** visoje registracijos eigoje

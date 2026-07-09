@@ -3,7 +3,7 @@ title: Elirenotoj
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Versi 2.13.0 — Elire la 5-a de Junon 2026
+# Versi 2.13.0 — Elire la 5-a de Junon 2026 {#release-notes}
 
 - Nova: Aggiunti suporto per tenant sovrèni (sovereign-tenant) por la conta del cliente, il checkout, la fatturazione, il sito, lo scambio di template e la mappatura dei domini, così le reti dei tenant possono indirizzare i clienti indietro al sito principale per azioni gestite.
 - Nova: Aggiunti controlli di credenziali per il rinnovo delle abbonamenti ricorrenti, in modo che i gateway possano disabilitare il rinnovo automatico quando manca un accordo di fatturazione salvato, un abbonamento o un token vault.
@@ -17,7 +17,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correzione: I casi limite relativi ai rinnovi delle abbonamenti, alla visualizzazione delle scadenze e alla raccolta dei pagamenti evitano ora esaurimenti immediati, crash o mancati pagamenti richiesti.
 - Migliorato: La compatibilità con WordPress è testata fino alla versione 7.0, gli asset Vue di produzione vengono ricostruiti dalle fonti npm e la copertura end-to-end di Cypress esegue ora più flussi di checkout, setup, SSO e gateway.
 
-## Versio 2.12.0 — Liberata la 15-v-05-2026
+## Versio 2.12.0 — Liberata la 15-v-05-2026 {#version-2130--released-on-2026-06-05}
 
 - Nova: Hostinger (hPanel) agitat kiel suportita hosto providanto, kun akompanita domeno mappado integracioj
 - Nova: Site Exporter nun maneble nunc import bundles de retojn por simpligita restoracion de site-monda
@@ -28,7 +28,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Selektado de imago en wizard de setup nun aktualizas korrekt la bazan de datum data model
 - Fix: Site Exporter CLI nun konservas la korrekta default selekto de retojn sito
 
-## Versio 2.11.0 — Liberata la 11-v-05-2026
+## Versio 2.11.0 — Liberata la 11-v-05-2026 {#version-2120--released-on-2026-05-15}
 
 - Nova: Site exportoj nunc bundles self-bootan `index.php`, tiel ZIP posible instali sur nova hosto sen aparte plugin instalo
 - Nova: Retoj exportas permetas administratorojn exporti ĉiuj subsitejn en unu arkivo de la adminpaja Site Export
@@ -36,7 +36,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nova: Redaktoro de formuloj checkout aviras, kiam produkto aldonas sen konfigura requira kampo
 - Nova: Tabo de ŝanĝoj Import/Export nun klarigas sian rangon kaj linkas direkte al la Site Export tool
 
-## Versio 2.10.0 — Liberata la 05-v-05-2026
+## Versio 2.10.0 — Liberata la 05-v-05-2026 {#version-2110--released-on-2026-05-11}
 
 - Nova: PayPal gvidita setup wizard por manula kredentialen inputo kun OAuth flag gate por konfiguraciu de gateway senplu.
 - Nova: Template switch pane kliento redizajnu per la card current-template, grid persistanta kaj butono **Reset current template**.
@@ -49,7 +49,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Filtra SSO parto respektita sur ĉiuj login flujos.
 - Fix: Vakva sita identeco opcio konservita pri salvado.
 
-## Versio 2.9.0 — Eliretiĝita en 2026-04-30
+## Versio 2.9.0 — Eliretiĝita en 2026-04-30 {#version-2100--released-on-2026-05-05}
 
 - Nova: Exportado kaj importado de unua sita aldatita sub **Tools > Export & Import**.
 - Fix: ZIP filoj exporti nun servita per autentikita download endpointo.
@@ -63,7 +63,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Tour IDs normaligita al underscore en user settings chajnoj.
 - Plibritita: ZipArchive nun uzita en loko de Alchemy/Zippy por pli bona kompatibiliteto.
 
-## Versio 2.8.0 — Eliretiĝita en 2026-04-29
+## Versio 2.8.0 — Eliretiĝita en 2026-04-29 {#version-290--released-on-2026-04-30}
 
 - Nova: Aktive Jumper toggle ajoutata al UI de parametrat "Other Options".
 - Nova: Kolonuma status shtu data list table de formoj checkout agdat.

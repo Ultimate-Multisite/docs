@@ -4,11 +4,11 @@ title: 'Tace - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# Filter: wu_\{$this->model\}_pre_save
+# Filter: wu_\{$this->model\}_pre_save {#filter-wuthis-modelpresave}
 
 Yana tace bayanan abu kafin a adana su cikin database.
 
-## Parameters
+## Parameters {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yana tace bayanan abu kafin a adana su cikin database.
 | $data_unserialized | `array` | Bayanan abu da za a adana. |
 | $this | `\Base_Model` | Instance na abin. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 An ayyana a cikin [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L570) a layi na 570

@@ -3,7 +3,7 @@ title: Theme PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Gwahanu'r Panel Administracion gyda PRO Theme
+# Gwahanu'r Panel Administracion gyda PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Yn aml pan fyddwch yn gwneud gwaith i cyddeistrywyr, mae angen i chi rhoi ddefnyddio gyflwyniad cyfathrebuol yn y dashboard WordPress o'ch cyddeistrywyr. Os ydych chi'n chwilio am ffurf a chwarae mwy proffesiynol, gall PRO Theme helpu chi.
 

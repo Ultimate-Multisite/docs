@@ -4,11 +4,11 @@ title: ການດຳເນີນການ - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# ການກະທຳ: wu_membership_post_renew
+# ການກະທຳ: wu_membership_post_renew {#action-wumembershippostrenew}
 
 ເຮັດວຽກຫຼັງຈາກການຕໍ່ອາຍຸສະມາຊິກ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 | $membership_id | `int` | ID ຂອງສະມາຊິກ. |
 | $membership | `\Membership` | ວັດຖຸສະມາຊິກ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) ທີ່ແຖວ 2235

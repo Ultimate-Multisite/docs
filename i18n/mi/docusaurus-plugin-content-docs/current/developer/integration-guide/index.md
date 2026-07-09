@@ -3,13 +3,13 @@ title: Aratohu Tuitui
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Aratohu Whakaurunga
+# Aratohu Whakaurunga {#integration-guide}
 
 Ka kapi i tēnei aratohu ngā tauira whakaurunga noa ki Ultimate Multisite, tae atu ki te tūhono ki ngā ratonga o waho, te hanga i ngā kuwaha utu ritenga, me te whakahaere i ngā webhooks.
 
 Mō te hanganga kairēti taratahi, tirohia [Whakaurunga Kairēti-maha](./multi-tenancy) mō te aratohu whakaoho kairēti mana motuhake, manatoko hekenga, SSO, me te wetewete.
 
-## Whakaurunga CRM
+## Whakaurunga CRM {#crm-integration}
 
 Tukutahitia ngā raraunga kiritaki ki tō CRM ina rēhita mai ngā kiritaki hou:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Whakaurunga Tātaritanga
+## Whakaurunga Tātaritanga {#analytics-integration}
 
 Aroturukihia ngā takahanga pakihi matua puta noa i te huringa-ora kiritaki:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Ngā Mahi ka Whai
+## Ngā Mahi ka Whai {#next-steps}
 
 - [Whanaketanga Kuwaha Ritenga](./custom-gateway) — Hangaia tō ake kuwaha utu
 - [Whakahaere Webhook](./webhooks) — Waihangatia ngā pito-mutunga webhook ritenga

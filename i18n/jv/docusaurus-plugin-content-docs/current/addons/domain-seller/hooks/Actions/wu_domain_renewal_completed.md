@@ -4,11 +4,11 @@ title: Tindakan - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Aksi: wu_domain_renewal_completed
+# Aksi: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Mlaku sawisé domain kasil dianyari.
 
-## Parameter
+## Parameter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Mlaku sawisé domain kasil dianyari.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadata panganyaran (domain_name, years, customer_id, lsp.). |
 | $result | `array&lt;string,mixed&gt;` | Larik asil mentah sing dibalekaké déning registrar kalebu expiry_date anyar. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) ing baris 594

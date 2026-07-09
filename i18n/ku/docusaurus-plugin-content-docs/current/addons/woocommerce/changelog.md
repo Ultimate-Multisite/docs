@@ -3,7 +3,7 @@ title: Têketina Guherandinan a Yekbûna WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Tomara Guhertinên WooCommerce Integration
+# Tomara Guhertinên WooCommerce Integration {#woocommerce-integration-changelog}
 
 Guherto 2.2.0 - Di 2026-07-01 de hat weşandin
 * Nû: Meblağên baca Ultimate Multisite êdî di dema checkout de wek rêzikên xercê yên cuda yên WooCommerce xuya dibin, berî dayînê tevahiyên bacê zelaltir dikin.

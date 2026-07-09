@@ -3,13 +3,13 @@ title: Regisztrációs űrlapod testreszabása
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# A regisztrációs űrlap testreszabása
+# A regisztrációs űrlap testreszabása {#customizing-your-registration-form}
 
 Ahhoz, hogy a hálózatod egyedinek tűnjön a WordPress platformra épülő összes többi SaaS-hoz képest, az Ultimate Multisite lehetővé teszi a regisztrációs és bejelentkezési oldalaid testreszabását a **Checkout Forms** funkcióval.
 
 Bár ezek egyszerű és rugalmas módot kínálnak különböző megközelítések kipróbálására új ügyfelek konvertálásakor, többnyire személyre szabott regisztrációs űrlapok létrehozására használják őket. Ez a cikk azt mutatja be, hogyan teheted ezt meg.
 
-## Bejelentkezési és regisztrációs oldalak:
+## Bejelentkezési és regisztrációs oldalak: {#login-and-registration-pages}
 
 Az Ultimate Multisite telepítésekor automatikusan létrehoz egyedi bejelentkezési és regisztrációs oldalakat a fő webhelyeden. Ezeket az alapértelmezett oldalakat bármikor módosíthatod az **Ultimate Multisite > Settings > Login & Registration** oldalon.
 
@@ -45,7 +45,7 @@ Most nézzünk meg további beállításokat, amelyek továbbra is relevánsak a
 
 És ennyi az összes bejelentkezéshez és regisztrációhoz kapcsolódó beállítás, amelyet testre szabhatsz! Ne felejtsd el menteni a beállításaidat, miután befejezted a szerkesztésüket.
 
-## Több regisztrációs űrlap használata:
+## Több regisztrációs űrlap használata: {#using-multiple-registration-forms}
 
 Az Ultimate Multisite 2.0 checkout form szerkesztőt kínál, amely lehetővé teszi, hogy annyi űrlapot hozz létre, amennyit szeretnél, különböző mezőkkel, kínált termékekkel stb.
 
@@ -69,7 +69,7 @@ Alternatívaként szerkesztheted vagy duplikálhatod a már meglévő űrlapokat
 
 Ha az egylépéses vagy a többlépéses lehetőséget választod, a checkout form már előre fel lesz töltve a működéséhez szükséges alapvető lépésekkel. Ezután, ha szeretnéd, további lépéseket adhatsz hozzá.
 
-### Checkout Form szerkesztése:
+### Checkout Form szerkesztése: {#editing-a-checkout-form}
 
 Ahogy korábban említettük, különböző célokra hozhatsz létre checkout formokat. Ebben a példában egy regisztrációs űrlapon fogunk dolgozni.
 
@@ -131,11 +131,11 @@ Az űrlapod shortcode-jának lekéréséhez kattints a **Generate Shortcode** go
 
 _**Megjegyzés:** Ezt a shortcode-ot hozzá kell adnod a regisztrációs oldaladhoz ahhoz, hogy ez a pénztári űrlap hozzá legyen adva._
 
-## Termékek és sablonok előzetes kiválasztása URL-paraméterekkel:
+## Termékek és sablonok előzetes kiválasztása URL-paraméterekkel: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ha testreszabott árképzési táblázatokat szeretnél létrehozni a termékeidhez, és a pénztári űrlapon előre ki szeretnéd választani azt a terméket vagy sablont, amelyet az ügyfeled az árképzési táblázatodról vagy a sablonok oldaláról választ, ehhez URL-paramétereket használhatsz.
 
-### **Csomagokhoz:**
+### **Csomagokhoz:** {#for-plans}
 
 Lépj az **Ultimate Multisite > Products > Select a plan** oldalra. Az oldal tetején látnod kell a **Click to copy Shareable Link** gombot. Ez az a hivatkozás, amellyel előre kiválaszthatod ezt a konkrét csomagot a pénztári űrlapodon.
 
@@ -143,7 +143,7 @@ Lépj az **Ultimate Multisite > Products > Select a plan** oldalra. Az oldal tet
 
 Vedd figyelembe, hogy ez a megosztható hivatkozás csak a **Plans** esetében érvényes. Nem használhatsz megosztható hivatkozásokat csomagokhoz vagy szolgáltatásokhoz.
 
-### Sablonokhoz:
+### Sablonokhoz: {#for-templates}
 
 Ha előre ki szeretnél választani webhelysablonokat a pénztári űrlapodon, használhatod a következő paramétert: **?template_id=X** a regisztrációs oldalad URL-jében. Az „X”-et a **webhelysablon ID-számával** kell helyettesíteni. Ennek a számnak a megszerzéséhez lépj az **Ultimate Multisite > Sites** oldalra.
 

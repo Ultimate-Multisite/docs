@@ -3,7 +3,7 @@ title: Isifaki Sezikhangiso
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ukubeka izikhangiso kunethiwekhi yakho nge-Ultimate Multisite: Ad Injector
+# Ukubeka izikhangiso kunethiwekhi yakho nge-Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector iyi-**add-on yamahhala** ekunika amathuluzi okubeka izikhangiso ezinhlelweni zakho ngqo ekhasini lazo lokuhlela.
 
@@ -35,7 +35,7 @@ Ungakwazi futhi ukufaka izikhangiso ku-header yamakhasi e-Admin Pages kubasebenz
 
 _Iya kunketho ethi Admin Panel Ad Code uma ufuna ukubonisa izikhangiso ku-back-end yomsebenzisi wakho_
 
-### Ngale Kokukhangisa
+### Ngale Kokukhangisa {#beyond-advertising}
 
 Ungasebenzisa futhi i-Ultimate Multisite: Ad Injector ukunikeza ukwesekwa ezinhlelweni ezisezingeni eliphezulu.
 

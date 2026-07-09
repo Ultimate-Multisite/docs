@@ -3,11 +3,11 @@ title: Galluoedd Rheoli Ategion
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Galluoedd Rheoli Plugin
+# Galluoedd Rheoli Plugin {#plugin-management-abilities}
 
 Mae Gratis AI Agent v1.5.0 yn dod â **7 gallu rheoli plugin** y gall y cynorthwyydd AI eu galw yn ystod sgwrs. Mae’r galluoedd hyn yn darparu rheolaeth raglennol dros plugins WordPress sydd wedi’u gosod drwy’r [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Trosolwg o’r Galluoedd
+## Trosolwg o’r Galluoedd {#abilities-overview}
 
 | Gallu | Slug | Disgrifiad |
 |---|---|---|
@@ -19,7 +19,7 @@ Mae Gratis AI Agent v1.5.0 yn dod â **7 gallu rheoli plugin** y gall y cynorthw
 | Gosod Plugin | `install_plugin` | Yn defnyddio plugin sandboxed i gyfeiriadur plugin byw WordPress. |
 | Actifadu Plugin | `activate_plugin` | Yn actifadu plugin sandboxed yn amgylchedd sandbox wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Mae’r gosodwr plugin yn trin gweithrediadau’r system ffeiliau wrth ddefnyddio neu dynnu plugins. Ymddygiadau allweddol:
 
@@ -28,7 +28,7 @@ Mae’r gosodwr plugin yn trin gweithrediadau’r system ffeiliau wrth ddefnyddi
 - **Diweddaru**: Yn disodli ffeiliau plugin presennol. Yn dadactifadu’r plugin cyn ysgrifennu er mwyn osgoi gwallau cyflwr rhannol.
 - **Dileu yn ôl slug**: Yn lleoli cyfeiriadur y plugin yn ôl slug, yn dadactifadu ar draws pob safle, ac yna’n tynnu’r cyfeiriadur.
 
-### Cofrestru Triniwr Gosod Personol
+### Cofrestru Triniwr Gosod Personol {#registering-a-custom-install-handler}
 
 Gallwch fachu i gylchred oes y gosodiad gan ddefnyddio’r gweithredoedd `gratis_ai_plugin_installer_before_install` a `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Cofrestrfa Ecosystem
+## Cofrestrfa Ecosystem {#ecosystem-registry}
 
 Caiff galluoedd eu cofrestru drwy’r **gofrestrfa ecosystem plugin**. Mae’r gofrestrfa yn mapio slugs galluoedd i’w dosbarthiadau triniwr ac yn eu hamlygu i ddosbarthwr offer yr asiant AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integreiddio HookScanner
+## Integreiddio HookScanner {#hookscanner-integration}
 
 Mae’r galluoedd `create_plugin` a `update_plugin` yn rhedeg **HookScanner** yn awtomatig yn erbyn cod sydd newydd ei gynhyrchu. Mae HookScanner yn dychwelyd rhestr o fachau gweithredu a hidlo WordPress sydd wedi’u cofrestru gan y plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 Mae HookScanner yn hepgor cyfeiriaduron `vendor/` a `node_modules/` yn awtomatig.
 
-## Pensaernïaeth Swyddi Async
+## Pensaernïaeth Swyddi Async {#async-job-architecture}
 
 Anfonir gweithrediadau plugin hir eu hoes (cynhyrchu, gosod) fel **swyddi async** gyda thracio cynnydd byw. Mae rhyngwyneb sgwrs AI yn holi am gynnydd ac yn ffrydio diweddariadau statws i’r defnyddiwr:
 

@@ -3,11 +3,11 @@ title: Zvinyorwa zveVagadziri
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Zvinyorwa zveVagadziri
+# Zvinyorwa zveVagadziri {#developer-documentation}
 
 Gwaro iri rinopa vagadziri zvese zvinodiwa kuti vabatanidze ne, vawedzere, kana kugadzira maaddon eUltimate Multisite. Ultimate Multisite inoshandura network yeWordPress Multisite kuva puratifomu yeWebsite-as-a-Service (WaaS).
 
-## Zviripo
+## Zviripo {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Mabasa akazara eCRUD ezvinhu zvese (vatengi, masaiti, membership, kubhadhara, zvigadzirwa, madomain) nekusimbiswa kweAPI key
 - **[Chirevo cheHooks](./hooks/guide)** — 200+ action hooks uye 280+ filter hooks yezviitiko zvelifecycle nekugadzirisa
@@ -15,13 +15,13 @@ Gwaro iri rinopa vagadziri zvese zvinodiwa kuti vabatanidze ne, vawedzere, kana 
 - **[Mienzaniso yeCode](./code-examples/)** — Mapatani epamusoro emitengo inochinja, kugadzirwa kwesaiti, custom limitations, uye kugadzirisa multi-gateway
 - **[Kugadzira Addon](./addon-development/getting-started)** — Framework yakarongeka yekuvaka maaddon plugins
 
-## Zvinodiwa
+## Zvinodiwa {#requirements}
 
 - Kuiswa kweWordPress Multisite
 - PHP 7.4 kana yepamusoro
 - Ultimate Multisite plugin yakabatidzwa
 
-## Kuiswa kweComposer / Bedrock
+## Kuiswa kweComposer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite inowanikwa pa[Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) se`ultimate-multisite/ultimate-multisite`. Iyi ndiyo nzira inokurudzirwa yekuisa yeWordPress setups dzakavakirwa pa[Bedrock](https://roots.io/bedrock/) uye dzimwe nharaunda dzinotungamirirwa neComposer.
 
@@ -45,15 +45,15 @@ Kana, kana uri kurodha plugin se must-use plugin kuburikidza neautoloader yeBedr
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Kutanga Nekukurumidza
+## Kutanga Nekukurumidza {#quick-start}
 
-### Shandisa REST API
+### Shandisa REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Batanidza muZviitiko
+### Batanidza muZviitiko {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Vaka Addon
+### Vaka Addon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

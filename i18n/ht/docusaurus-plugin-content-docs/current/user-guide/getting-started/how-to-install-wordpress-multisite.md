@@ -3,7 +3,7 @@ title: Kijan pou Enstale WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kijan mwen mete WordPress Multisite?
+# Kijan mwen mete WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite pèmèt ou gen yon rezo sit sou yon sèl enstalasyon. Sa se yon fonksyon ki vini ak li, men li pa aktif de fèt.
 
@@ -61,7 +61,7 @@ E kòd sa a, ki bay pa WordPress la, nan fichye _**.htaccess**_ ou an :
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# ajoute yon slash final pou /wp-admin
+# ajoute yon slash final pou /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Pou kreye yon subsite:
 
 Malgre ranpli tout fòm yo, klike sou bouton "Add site". Lè nou kreye nouvo subsite a, ale epi aksè li pou w asire ke subsite a fonksyone byen.
 
-## Pwoblèm komen:
+## Pwoblèm komen: {#common-problems}
 
-### 1. Mwen ka kreye nouvo sit men yo pa rive jwenn yo.
+### 1. Mwen ka kreye nouvo sit men yo pa rive jwenn yo. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Si ou te chwazi subdomain, ou bezwen tou mete wildcard subdomains pou rezo multisite ou an.
 

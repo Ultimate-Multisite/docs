@@ -4,11 +4,11 @@ title: Hohenga - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Mahi: set_auth_cookie
+# Mahi: set_auth_cookie {#action-setauthcookie}
 
 Ka whakaoho tonu i mua i te tautuhinga o te pihikete whakamotuhēhē.
 
-## Ngā Tawhā
+## Ngā Tawhā {#parameters}
 
 | Ingoa | Momo | Whakaahuatanga |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Ka whakaoho tonu i mua i te tautuhinga o te pihikete whakamotuhēhē.
 | $scheme | `string` | Aronui whakamotuhēhē. Kei roto i ngā uara ko 'auth', ko 'secure_auth' rānei. |
 | $token | `string` | Token wātū a te kaiwhakamahi hei whakamahi mō tēnei pihikete. |
 
-### Mai i
+### Mai i {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia ki [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) i te rārangi 124

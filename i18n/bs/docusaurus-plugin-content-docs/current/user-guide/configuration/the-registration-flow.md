@@ -3,13 +3,13 @@ title: Tok registracije
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Proces Registracije (v2)
+# Proces Registracije (v2) {#the-registration-flow-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
 Korisnici mogu se registrovati na vašu mrežu na različite načine. Mogu koristiti vaš obrazac za registraciju ili dijeli link do unapred odabranog plana. Ovde ćemo vam pokazati kako vaši kupci mogu da se registruju na vašoj mreži koristeći dostupne puteve i šta se dešava nakon što se registruju.
 
-## Korištenje Obrazca za Registraciju:
+## Korištenje Obrazca za Registraciju: {#using-the-registration-form}
 
 Ovo je standardni proces registracije. Kreirate stranicu za registraciju sa **obrazcem za plaćanje** (checkout form), i to je mjesto gdje će vaši kupci otići da se registruju na vašoj mreži i pretplate na neki plan. Ako želite, možete imati više stranica za registraciju, svaka sa drugačijim obrazcem za registraciju.
 
@@ -35,13 +35,13 @@ Ako su se registrirali za plaćeni plan ili verifikacija e-mail adrese nije obav
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Korištenje Dijelivog Linka:
+## Korištenje Dijelivog Linka: {#using-a-shareable-link}
 
 Proces registracije korištenjem dijeli linka je u osnovi isti kao i sa obrazcem za registraciju; jedina razlika je u tome što, koristeći dijeli link, vaši kupci mogu imati proizvod ili šablon sajta preselektovan na obrazcu za plaćanje (pogledajte sekciju Pre-selecting products and templates via URL parameters) ili možda dodati kod popusta (pogledajte sekciju Using URL Parameters).
 
 Proces registracije će biti isti: morat će popuniti ime, korisničko ime, e-mail adresu, naziv sajta, naslov, itd... ali plan ili šablon sajta će im već biti preselektovan.
 
-### Registracija Korištenjem Ručnih Plaćanja:
+### Registracija Korištenjem Ručnih Plaćanja: {#registering-using-manual-payments}
 
 Ako ne želite da koristite PayPal, Stripe ili bilo koju drugu plaćanja gateway koju nudi Ultimate Multisite ili njegove add-on integracije, možete koristiti ručna plaćanja za svoje kupce. Na ovaj način, možete generisati fakturu za njih da plate na vašem preferiranom procesu plaćanja nakon što se registruju na vašoj mreži.
 

@@ -3,7 +3,7 @@ title: Actualizarea unui plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Actualizarea unui plan (v2)
+# Actualizarea unui plan (v2) {#upgrading-a-plan-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
@@ -41,7 +41,7 @@ După finalizarea checkout-ului, noul/noile produs(e) vor fi adăugate în contu
 
 ##
 
-## Căi de upgrade și downgrade
+## Căi de upgrade și downgrade {#upgrade-and-downgrade-paths}
 
 Pe fiecare dintre produsele tale, vei avea o filă **Up & Downgrades**. Prima opțiune din acea filă este un câmp numit **Plan Group**.
 

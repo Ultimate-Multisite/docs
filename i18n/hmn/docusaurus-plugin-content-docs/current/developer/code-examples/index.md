@@ -3,11 +3,11 @@ title: Cov piv txwv code qib siab
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Cov Piv Txwv Code Qib Siab
+# Cov Piv Txwv Code Qib Siab {#advanced-code-examples}
 
 Cov piv txwv no qhia cov qauv kev sib xyaw qib siab nrog Ultimate Multisite.
 
-## Dynamic Pricing Engine
+## Dynamic Pricing Engine {#dynamic-pricing-engine}
 
 Ib pricing engine raws cai uas siv kev txo nqi raws ntim, kev ncaj ncees, thiab caij nyoog:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Advanced Site Provisioning
+## Advanced Site Provisioning {#advanced-site-provisioning}
 
 Kho cov site tshiab cia li nrog plugins, SSL, CDN, backups, thiab kev saib xyuas raws li cov yam ntxwv ntawm plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Custom Limitations System
+## Custom Limitations System {#custom-limitations-system}
 
 Taug qab thiab tswj cov kev txwv peev txheej nrog lus ceeb toom txog kev siv:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter nrog `increment_item()`
+## BerlinDB Atomic Counter nrog `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 tau ntxiv ib txoj kev `increment_item()` rau BerlinDB `Query` class. Siv nws los ua cov kev nce tus lej kom nyab xeeb thiab atomic rau cov column uas yog lej yam tsis muaj kev sib tw read-modify-write — pab tau rau cov counter, usage quota, thiab cov rate-limiting check uas khiav thaum muaj ntau qhov request tib lub sijhawm.
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 tau ntxiv ib txoj kev `increment_item()` rau BerlinDB 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Kev siv yooj yim
+### Kev siv yooj yim {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Taug qab API usage rau ib membership
+### Taug qab API usage rau ib membership {#tracking-api-usage-per-membership}
 
 Ib qho qauv siv tau tiag rau kev tswj API rate limit raws membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Vim li cas siv `increment_item()` es tsis yog `update_item()`
+### Vim li cas siv `increment_item()` es tsis yog `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Txoj kev read-modify-write yooj yim xwb tsis nyab xeeb thaum muaj ntau qhov request tib lub sijhawm:
 

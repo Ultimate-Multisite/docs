@@ -3,11 +3,11 @@ title: Kancalar Referansı
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook Referansı
+# Hook Referansı {#hooks-reference}
 
 Ultimate Multisite içindeki tüm **59 action** ve **118 filter** için otomatik oluşturulmuş dokümantasyon.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Kimlik doğrulama yönlendirmesinden önce çalışır.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Kimlik doğrulama çerezi ayarlanmadan hemen önce çalışır.
@@ -70,7 +70,7 @@ Ultimate Multisite içindeki tüm **59 action** ve **118 filter** için otomatik
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Bir nesne veritabanına kaydedildikten sonra çalışır.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Plugin geliştiricilerinin kilit açma sürecine action’lar eklemesine izin ver.
 
-## Filtreler
+## Filtreler {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Kimlik doğrulama cookie süresinin dolma dönemi uzunluğunu filtreler.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Kimlik doğrulama yönlendirme şemasını filtreler.

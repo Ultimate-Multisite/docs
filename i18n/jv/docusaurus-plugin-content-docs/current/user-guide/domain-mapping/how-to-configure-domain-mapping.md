@@ -3,17 +3,17 @@ title: Carane Ngonfigurasi Pemetaan Domain
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Cara Ngatur Pemetaan Domain (v2)
+# Cara Ngatur Pemetaan Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**CATETAN PENTING: Artikel iki ngrujuk marang Ultimate Multisite versi 2.x.**_
 
 Salah siji fitur paling kuat saka jaringan premium yaiku kemampuan kanggo menehi klien kesempatan masang domain tingkat paling dhuwur menyang situsé. Pungkasane, endi sing katon luwih profesional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) utawa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Mula Ultimate Multisite nawakake fitur kuwi sing wis kalebu, tanpa perlu nggunakake plugin pihak katelu.
 
-## Apa iku pemetaan domain?
+## Apa iku pemetaan domain? {#whats-domain-mapping}
 
 Kaya sing diandharake jenenge, pemetaan domain yaiku kemampuan sing ditawakake Ultimate Multisite kanggo nampa panjaluk kanggo domain kustom lan memetakake panjaluk kasebut menyang situs sing cocog ing jaringan sing dipasangi domain tartamtu kuwi.
 
-### Cara nyiyapake pemetaan domain ing Jaringan Ultimate Multisite sampeyan
+### Cara nyiyapake pemetaan domain ing Jaringan Ultimate Multisite sampeyan {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Pemetaan domain mbutuhake sawetara panyiyapan saka pihak sampeyan supaya bisa mlaku. Untunge, Ultimate Multisite ngotomatisasi pakaryan sing abot kanggo sampeyan supaya sampeyan bisa gampang nyukupi syarat-syarate.
 
@@ -45,7 +45,7 @@ Nanging sadurunge sampeyan miwiti memetakake domain kustom menyang salah siji su
 
 ###
 
-### Mesthekake setelan DNS domain wis dikonfigurasi kanthi bener
+### Mesthekake setelan DNS domain wis dikonfigurasi kanthi bener {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Supaya pemetaan bisa mlaku, sampeyan kudu mesthekake domain sing arep dipetakake nuding menyang alamat IP Jaringan sampeyan. Elinga yen sampeyan butuh alamat IP Jaringan - alamat IP saka domain panggonan Ultimate Multisite diinstal - dudu alamat IP saka domain kustom sing pengin dipetakake. Kanggo nggoleki alamat IP saka domain tartamtu, disaranake menyang [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), contone.
 
@@ -55,7 +55,7 @@ Yen sampeyan nemoni kangelan supaya iki bisa mlaku, **hubungi dhukungan registra
 
 Yen sampeyan ngrancang ngidini klien sampeyan memetakake domainé dhewe, dheweke kudu nindakake pakaryan ing bagean iki dhewe. Arahake dheweke menyang sistem dhukungan registrare yen dheweke ora bisa nggawe A Record.
 
-### Memetakake jeneng domain kustom minangka Super Admin
+### Memetakake jeneng domain kustom minangka Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Nalika sampeyan wis mlebu minangka super admin ing jaringan sampeyan, sampeyan bisa kanthi gampang nambah lan ngatur jeneng domain kustom kanthi pindhah menyang **Ultimate Multisite > Domain**.
 
@@ -93,7 +93,7 @@ Yen sampeyan ngeklik jeneng domain, sampeyan bakal bisa ndeleng sawetara opsi in
 
 **Is Secure?:** Sanajan Ultimate Multisite mriksa apa domain nduwé sertifikat SSL utawa ora sadurunge ngaktifake, sampeyan bisa milih kanthi manual kanggo ngemot domain nganggo utawa tanpa sertifikat SSL. Elinga yen website ora nduwé sertifikat SSL lan sampeyan nyoba maksa ngemot nganggo SSL, iki bisa nyebabaké galat.
 
-### Mapping jeneng domain kustom minangka pangguna Subsite
+### Mapping jeneng domain kustom minangka pangguna Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Administrator subsite uga bisa map jeneng domain kustom saka dashboard admin subsite.
 
@@ -121,7 +121,7 @@ Banjur pangguna bisa ngeklik **Next Step** lan nerusake nambah jeneng domain kus
 
 Klik **Add Domain** bakal miwiti proses verifikasi lan njupuk informasi DNS saka domain kustom.
 
-### Babagan Domain Syncing
+### Babagan Domain Syncing {#about-domain-syncing}
 
 Domain Syncing yaiku proses nalika Ultimate Multisite nambah jeneng domain kustom menyang akun hosting sampeyan minangka domain add-on **supaya domain mapping bisa mlaku**.
 

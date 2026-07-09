@@ -3,13 +3,13 @@ title: Modely an-tserasatra
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**FANAM-PA: Io ity ny dika an'ny Ultimate Multisite v2.x ity. Raha mampiasa v1.x ianao, dia jereo ity lahatsoratra ity.**_
 
 Ny tanjontsika rehefa mamorona tambajotra manokana (premium network) amin'ny alalan'ny Ultimate Multisite dia ny hampandehanana azy an-tsokosoko indrindra ary hanome fahafahana sy safidy samihafa ny mpanjifa mba hisafidianana rehefa mamorona ireo tranonkala (websites) iainany. Ny fomba tsotra iray hahatratrarana fifandanjana izany dia ny mampiasa ny fahaizana Site Templates an'ny Ultimate Multisite.
 
-## Inona no Site Template?
+## Inona no Site Template? {#what-is-a-site-template}
 
 Araka ny anarany, ny Site Template dia tranonkala fototra (boilerplate site) azo ampiasaina ho fototra rehefa mamorona tranonkala vaovao ao amin'ny tambajotranareo.
 
@@ -17,7 +17,7 @@ Midika izany fa afaka mamorona tranonkala fototra ianao, manao activation ireo p
 
 Mampanantena izany, saingy ahoana no famoronana Site Template vaovao? Tsotra indrindra izany.
 
-## Famoronana sy Fanovana Site Template Vaovao
+## Famoronana sy Fanovana Site Template Vaovao {#creating-and-editing-a-new-site-template}
 
 Ny Site Templates dia tranonkala ara-dalàna (normal sites) ao amin'ny tambajotranareo. Mba hamoronana template vaovao, afaka mandeha fotsiny ianao any **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Forman'ny lany ambany amin'ilay fomba fanovana site template dia hahita ny toggl
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Fanovana ny votoatin'ny Site Template
+### Fanovana ny votoatin'ny Site Template {#customizing-the-contents-of-a-site-template}
 
 Mba hanovana ny site template anao, dia mandeha fotsiny any amin'ilay dashboard panel ary ataovy ireo fanovana ilainao. Afaka mamorona lahatsoratra vaovao, pejy, manome asa (plugins), ary manova ny theme ianao. Afaka mandeha hatrany any amin'ny Customizer koa ianao ary manova karazana fomba maro samihafa.
 
@@ -43,11 +43,11 @@ Mba hanovana ny site template anao, dia mandeha fotsiny any amin'ilay dashboard 
 
 Ny angona rehetra ireo dia ho kopina rehefa mamorona site vaovao miorina amin'io Site Template io ny mpanjifa.
 
-### Safidy Avam-pato (Advanced Options)
+### Safidy Avam-pato (Advanced Options) {#advanced-options}
 
 Raha mahay kely momba ny famoronana code manokana ianao, afaka mampiasa ny Search and Replace API anay ianao mba hanovana ho azy ireo ny fampahalalana eo amin'ny site vaovao aorian'ny famoronana azy. Tena ilaina izany ho zavatra toy ny fanovana ny anaran'ny orinasa eo amin'ny pejy About, na ny adiresy email contact eo amin'ny pejy Contact, sns.
 
-### Fampiasana Site Templates
+### Fampiasana Site Templates {#using-site-templates}
 
 Eny tokoa, namorona Site Template maro samihafa ianao izay manana endrika, theme ary setings hafa. Ahoana no fomba hanavanana azy ireo ho ilaina amin'ny tambajotra anao izany?
 
@@ -59,7 +59,7 @@ Amin'ny fototra, misy fomba roa azonao ampiasaina ankehitriny (tsy miaraka):
 
   * Avelanao ny mpanjifanao hanafidy ny site template ho azy ireo mandritra ny fandraisana anjara (sign-up).
 
-#### Fomba 1: Fametrahana Site Template
+#### Fomba 1: Fametrahana Site Template {#mode-1-assign-site-template}
 
 Amin'ity ity fomba, tsy ho afaka misafidy template (modely) ny mpanjifa rehefa mamorona kaonty izy ireo, fa ianao no hanamarina izay template tokony hampiasaina amin'ny Plan tsirairay anareo.
 
@@ -71,7 +71,7 @@ Izany dia hitondra anao any amin'ny pejy **Edit Product**. Eo ambanin'ny fizaran
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: Mifidy Site Template Azo Atao
+#### Mode 2: Mifidy Site Template Azo Atao {#mode-2-choose-available-site-template}
 
 Amin'ity fomba ity, dia hanome safidy ny mpanjifanao mandritra ny dingana famoronana kaonty izany. Afaka misafidy avy amin'ireo site templates samihafa iainy izay mamaritra anareo eo ambanin'ny fandrindrana vokatra (product settings). Manana safidy ianao mba hampitomboana ny site template azo safidina azy ireo ao anatin'ilay vokatra voafidy. Izany dia ahafahanao manana set hafa amin'ireo site templates isaky ny vokatra, izay tena mety ho fomba hanasongadina ny asan'ny fiasa sy ny fahaizana samihafa ho an'ny vokatra misy vidiny avo kokoa.
 
@@ -79,7 +79,7 @@ Amin'ny pejy **Edit Product** dia eo ambanin ny faritany **Product Options**, di
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Modely Azo Antoka: Safidy site template eo amin'ny Checkout form
+### Modely Azo Antoka: Safidy site template eo amin'ny Checkout form {#default-mode-site-template-selection-on-the-checkout-form}
 
 Raha tianao ny site templates rehetra ho azo ampiasaina mandritra ny fametrahana (registration), na raha tsy tiako ny fanaovana asa fanampiny amin'ny fametrahana na fanazavana ireo site templates eo ambanin'ny vokatra tsirairay ataonao, dia afaka mametraka ny safidy site template ao anatin'ilay **Checkout Form** ianao. Mba hanaovana izany, mandehana any amin'i **Ultimate Multisite > Checkout Forms** ary tsindrio **Edit** eo ambanin'ilay form tianao hifehezina.
 
@@ -93,29 +93,29 @@ Eo amin'ny lafiny (frontend), dia hitsoy ny mpividy ilay template chooser mandri
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Safatry ny Modely an'ny Tranon'ny Tranokala (Site Template Options)
+### Safatry ny Modely an'ny Tranon'ny Tranokala (Site Template Options) {#site-template-options}
 
 Misy fiasa modely tranokala hafa azo atao aminao izay azonao ataovy azo atao na avela ho tsy azo atao ao amin'ny fametrahana Ultimate Multisite.
 
 ![Safatry ny Modely an'ny Tranokala ao amin'ny setron'ny Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Avelao ny Fanovana Modely (Allow Template Switching)
+#### Avelao ny Fanovana Modely (Allow Template Switching) {#allow-template-switching}
 
 Ny fanononana ity safidy ity dia ahafahanao mamela ny mpanjifa manova modely izay safidiny mandritra ny dingana fametrahana aorian'ny famoronana ny kaonty sy ny tranokala. Tena ilaina izany ho an'ny mpanjifa satria ahafahany misafidy indray modely raha vao mahita fa tsy dia mety amin'ny zavatra ilainy tamin'ny voalohany no safidiny.
 
-#### Avelao ny Mpampiasa hampiasa ny Tranokala ho Modely (Allow Users to use their Site as templates)
+#### Avelao ny Mpampiasa hampiasa ny Tranokala ho Modely (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Satria ny mpampiasa ao anatin'ny subsite dia mandany fotoana manamboatra sy mamolavola ny tranokala nataony, mety te hamerina azy izy mba hamoronana modely iray amin'ireo modely azo ampiasaina rehefa mamorona subsite hafa eo amin'ny tambajy anao. Ity safidy ity dia ahafahany mahatratra izany.
 
-#### Apetraka ny Fampahafantarana (Copy Media on Template Duplication)
+#### Apetraka ny Fampahafantarana (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Ny fanamarinana ity safidy ity dia hanakarana ireo zavatra voaferana tamin'ny tranokala modely ho an'ny tranokala vaovao noforonina. Afaka ovaina izany amin'ny drafitra tsirairay.
 
-#### **Arovy ny Fikarohana (Prevent Search Engines from indexing Site Templates)**
+#### **Arovy ny Fikarohana (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Ny tranokala modely izay nolazainy tamin'ity lahatsoratra ity dia toy ny "boilerplate" (modely fototra) fa mbola anisan'ny tambajy anareo izany, izay midika fa azo atao ho azo avy amin'ny fikarohana ny tranokala modely. Ity safidy ity dia ahafahanao manafatra ireo tranokala modely mba hahafahan'ny fikarohana (search engines) mandefa azy ireo amin'ny fikarohana.
 
-## Famoronana Modely Tranokala mialoha amin'ny auto search-and-replace
+## Famoronana Modely Tranokala mialoha amin'ny auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Ny iray amin'irefa matanjaka indrindra ao amin'ny Ultimate Multisite dia ny fahaizana manampy lahatsoratra, loko ary safidy champs (fields) an-tsokosoko eo amin'ny forms famarihana (registration form). Raha efa azo ireo angona ireo isika, dia afaka mampiasa azy ho fanampiana ny votoaty ao amin'ny faritra sasany amin'ny site template izay voafidy. Rehefa vita ny famoahana ny site vaovao, dia hanoloana ireo toerana misy placeholder (fanamarihana) an'ny Ultimate Multisite ireo amin'ny tena fampahalalana nampidirina nandritra ny famarihana.
 
@@ -135,7 +135,7 @@ Dia hanoloana ireo placeholder amin'ny angona omen'ny mpanjifa ho azy ny Ultimat
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Famahana ny olana hoe "template feno placeholder"
+### Famahana ny olana hoe "template feno placeholder" {#solving-the-template-full-of-placeholders-problem}
 
 Izany rehetra izany dia tsara, fa misy olana ratsy isika: ankehitriny ireo template an'ny site izay azo atao ho an'ny mpanjifanao dia feno placeholders ratsy izay tsy manome zavatra maro.
 

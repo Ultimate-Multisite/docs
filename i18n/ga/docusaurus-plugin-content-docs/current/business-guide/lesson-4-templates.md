@@ -3,15 +3,15 @@ title: 'Ceacht 4: Teimpléid Nideoige a Thógáil'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ceacht 4: Teimpléid Nideoige a Thógáil
+# Ceacht 4: Teimpléid Nideoige a Thógáil {#lesson-4-building-niche-templates}
 
 Is iad teimpléid croílár do thairiscint luacha nideoige. Tá úinéir stiúideo aclaíochta a chláraíonn agus a fheiceann suíomh a bhfuil cuma shuímh gréasáin aclaíochta air cheana féin -- le sceidil ranganna, próifílí traenálaithe, agus an íomháineachas ceart -- i bhfad níos dóchúla fanacht ná duine a fheiceann canbhás bán.
 
-## An Áit ar Stopamar
+## An Áit ar Stopamar {#where-we-left-off}
 
 Tá líonra FitSite oibre againn agus Ultimate Multisite suiteáilte agus cumraithe. Anois tógaimid na teimpléid a chuireann ar FitSite mothú mar rud atá tógtha go sonrach do ghnólachtaí aclaíochta.
 
-## Cén Fáth a bhfuil Teimpléid Nideoige Tábhachtach
+## Cén Fáth a bhfuil Teimpléid Nideoige Tábhachtach {#why-niche-templates-matter}
 
 Cuireann teimpléid ghinearálta iallach ar do chustaiméirí an obair chrua a dhéanamh: a dhéanamh amach cé na leathanaigh atá de dhíth orthu, cén struchtúr ábhair a oibríonn, agus conas é a chur ag breathnú ceart dá dtionscal. Cuireann teimpléid nideoige deireadh leis an bhfrithchuimilt sin.
 
@@ -24,11 +24,11 @@ Ba cheart d’úinéir stiúideo aclaíochta a chláraíonn le FitSite na rudaí
 
 Líonann siad isteach a gcuid sonraí. Ní thosaíonn siad ón tús.
 
-## Do Theimpléid a Phleanáil
+## Do Theimpléid a Phleanáil {#planning-your-templates}
 
 Sula dtosaíonn tú ag tógáil, cinntigh cé na teimpléid atá le tairiscint agat. Do FitSite, cruthóimid trí cinn:
 
-### Teimpléad 1: Studio Essential
+### Teimpléad 1: Studio Essential {#template-1-studio-essential}
 
 Do stiúideonna beaga agus do thraenálaithe pearsanta.
 
@@ -39,7 +39,7 @@ Do stiúideonna beaga agus do thraenálaithe pearsanta.
 - Leathanach **Teagmhála** le léarscáil suímh agus foirm
 - **Dearadh glan, nua-aimseartha** le scéim dathanna oiriúnach don aclaíocht
 
-### Teimpléad 2: Gym Pro
+### Teimpléad 2: Gym Pro {#template-2-gym-pro}
 
 Do ghiomnáisí seanbhunaithe le níos mó seirbhísí.
 
@@ -50,7 +50,7 @@ Do ghiomnáisí seanbhunaithe le níos mó seirbhísí.
 - Rannán **Teistiméireachtaí** ar an leathanach baile
 - Roghanna **brandála níos feiceálaí**
 
-### Teimpléad 3: Fitness Chain
+### Teimpléad 3: Fitness Chain {#template-3-fitness-chain}
 
 D’oibríochtaí il-láthair.
 
@@ -60,17 +60,17 @@ D’oibríochtaí il-láthair.
 - **Brandáil lárnaithe** le sonraí a bhaineann go sonrach le gach láthair
 - **Eolaire foirne** thar láithreacha
 
-## Suíomh Teimpléid a Thógáil
+## Suíomh Teimpléid a Thógáil {#building-a-template-site}
 
 In Ultimate Multisite, níl i dteimpléad ach suíomh WordPress cumraithe ar an mbealach ar mhaith leat go mbeadh cuma ar shuíomhanna nua custaiméirí. Seo mar a chruthaítear ceann:
 
-### Céim 1: Cruthaigh an Suíomh Teimpléid
+### Céim 1: Cruthaigh an Suíomh Teimpléid {#step-1-create-the-template-site}
 
 1. Téigh chuig **Suíomhanna > Cuir Nua Leis** i do riarthóir líonra
 2. Cruthaigh suíomh darb ainm `template-studio-essential`
 3. Is é an suíomh seo do chanbhás oibre
 
-### Céim 2: Suiteáil agus Cumraigh an Téama
+### Céim 2: Suiteáil agus Cumraigh an Téama {#step-2-install-and-configure-the-theme}
 
 Athraigh go Dashboard an tsuímh teimpléid agus:
 
@@ -82,7 +82,7 @@ Athraigh go Dashboard an tsuímh teimpléid agus:
 Roghnaigh téama atá sách solúbtha chun cuma mhaith a bheith air don aclaíocht ach nach bhfuil chomh casta sin nach féidir le do chustaiméirí é a bhainistiú. Oibríonn téamaí cosúil le Astra, GeneratePress, nó Kadence go maith toisc go bhfuil siad éadrom, inoiriúnaithe, agus tacaithe go maith.
 :::
 
-### Céim 3: Cruthaigh na Leathanaigh
+### Céim 3: Cruthaigh na Leathanaigh {#step-3-create-the-pages}
 
 Tóg amach gach leathanach le:
 
@@ -92,7 +92,7 @@ Tóg amach gach leathanach le:
 
 Déan an t-ábhar sealbháin teagascach nuair is féidir. In ionad téacs líonta ginearálta, scríobh ábhar mar: "Cuir cur síos gairid ar do stiúideo agus ar an rud a dhéanann speisialta é in áit seo. Luaigh do fhealsúnacht oiliúna, blianta taithí, nó an méid ar féidir le cliaint a bheith ag súil leis."
 
-### Céim 4: Cumraigh Plugins
+### Céim 4: Cumraigh Plugins {#step-4-configure-plugins}
 
 Suiteáil agus gníomhachtaigh plugins atá de dhíth ar stiúideonna aclaíochta:
 
@@ -100,7 +100,7 @@ Suiteáil agus gníomhachtaigh plugins atá de dhíth ar stiúideonna aclaíocht
 - Plugin foirme teagmhála
 - Plugin SEO (réamhchumraithe le réamhshocruithe a bhaineann leis an aclaíocht)
 
-### Céim 5: Marcáil mar Theimpléad
+### Céim 5: Marcáil mar Theimpléad {#step-5-mark-as-template}
 
 1. Téigh chuig **Ultimate Multisite > Suíomhanna**
 2. Cuir an suíomh teimpléid in eagar
@@ -108,7 +108,7 @@ Suiteáil agus gníomhachtaigh plugins atá de dhíth ar stiúideonna aclaíocht
 
 Déan an próiseas seo arís do gach teimpléad is mian leat a thairiscint.
 
-## Seicliosta Cáilíochta Teimpléid
+## Seicliosta Cáilíochta Teimpléid {#template-quality-checklist}
 
 Sula gcuireann tú teimpléad ar fáil, deimhnigh:
 
@@ -121,7 +121,7 @@ Sula gcuireann tú teimpléad ar fáil, deimhnigh:
 - [ ] Níl aon naisc bhriste ná sócmhainní ar iarraidh
 - [ ] Tá luas lódála leathanach inghlactha
 
-## Líonra FitSite Go dtí Seo
+## Líonra FitSite Go dtí Seo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## An Rud a Thógamar sa Cheacht Seo
+## An Rud a Thógamar sa Cheacht Seo {#what-we-built-this-lesson}
 
 - **Trí theimpléad shonracha don nideoig** deartha do mhéideanna éagsúla gnólachtaí aclaíochta
 - **Ábhar agus íomháineachas oiriúnach don aclaíocht** a chuireann ar an ardán mothú mar rud atá tógtha go sonrach don chuspóir

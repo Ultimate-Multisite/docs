@@ -3,32 +3,32 @@ title: 'Aralin 3: Pag-aayos ng Iyong Network'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesson 3: Pag-set Up ng Iyong Network
+# Lesson 3: Pag-set Up ng Iyong Network {#lesson-3-setting-up-your-network}
 
 Oras na para magtayo. Sa araling ito, i-iinstall natin ang Ultimate Multisite at i-ko-configure ang pundasyon ng FitSite network. Ang bawat desisyon dito ay isinasaalang-alang ang fitness niche.
 
-## Saan Tayo Tumigil
+## Saan Tayo Tumigil {#where-we-left-off}
 
 Pinili natin ang mga fitness studio bilang ating niche at napatunayan natin ang pagkakataon. Ngayon, gagawin nating gumaganang platform ang ideyang iyon.
 
-## Pagpili ng Hosting
+## Pagpili ng Hosting {#choosing-your-hosting}
 
 Mas mahalaga ang pagpili mo ng hosting para sa isang niche platform kaysa sa isang website lang. Hindi ka nagho-host ng isang site—nagho-host ka ng isang network na lalaki hanggang sa dose-dosenang o daan-daang sites.
 
-### Ano ang Dapat Hanapin
+### Ano ang Dapat Hanapin {#what-to-look-for}
 
 - **WordPress Multisite support**: Hindi lahat ng host ay mahusay sa multisite
 - **Wildcard SSL**: Mahalaga ito para sa mga network na gumagamit ng subdomain
 - **Scalable resources**: Kailangan mo ng espasyo para lumaki nang hindi na kailangang mag-migrate
 - **Ultimate Multisite integration**: Ang awtomatikong pag-map ng domain at SSL ay nakakatipid ng malaking effort sa operasyon
 
-### Inirerekomendang Paraan
+### Inirerekomendang Paraan {#recommended-approach}
 
 Pumili ng host mula sa listahan ng [Compatible Providers](/user-guide/host-integrations/closte). Nasubukan na ang mga ito kasama ang Ultimate Multisite at nagbibigay sila ng mga integrasyon na kailangan mo para sa domain mapping at SSL automation.
 
 Para sa FitSite, gagamit tayo ng subdomain configuration. Ibig sabihin, ang mga site ng customer ay magsisimula na magpakita bilang `studioname.fitsite.com` bago nila opsyonal na i-map ang sarili nilang domain.
 
-## Pag-install ng WordPress Multisite
+## Pag-install ng WordPress Multisite {#installing-wordpress-multisite}
 
 Kung wala ka pang WordPress Multisite installation:
 
@@ -40,7 +40,7 @@ Kung wala ka pang WordPress Multisite installation:
 Ang mga subdomain ay nagbibigay sa bawat site ng customer ng sarili nitong natatanging address (`studio.fitsite.com`) sa halip na isang path (`fitsite.com/studio`). Mas propesyonal ito para sa iyong mga customer at iniiwasan nito ang mga conflict sa permalink. Tingnan ang [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) para sa detalyadong paghahambing.
 :::
 
-## Pag-install ng Ultimate Multisite
+## Pag-install ng Ultimate Multisite {#installing-ultimate-multisite}
 
 Sundin ang [Installing Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) guide para:
 
@@ -53,11 +53,11 @@ Habang ginagawa ang setup wizard, tandaan ang FitSite niche:
 - **Company name**: "FitSite" (o ang napili mong brand name)
 - **Company logo**: I-upload ang logo ng brand mo -- ito ay lalabas sa mga invoice at email
 
-## Pag-configure para sa Fitness Niche
+## Pag-configure para sa Fitness Niche {#configuring-for-the-fitness-niche}
 
 Sa pagka-install ng Ultimate Multisite, gawin ang mga sumusunod na niche-specific configuration choices:
 
-### General Settings
+### General Settings {#general-settings}
 
 Pumunta sa **Ultimate Multisite > Settings** at i-configure ang:
 
@@ -65,7 +65,7 @@ Pumunta sa **Ultimate Multisite > Settings** at i-configure ang:
 - **Default role**: Administrator -- kailangan ng mga may-ari ng fitness studio ang buong kontrol sa nilalaman ng kanilang site
 - **Registration**: I-enable ang user registration para makapag-sign up ang mga may-ari ng studio
 
-### Email Configuration
+### Email Configuration {#email-configuration}
 
 Ang mga system email mo ay dapat nagsasalita ng wika ng iyong niche. Pumunta sa **Ultimate Multisite > Settings > Emails** at i-customize ang:
 
@@ -75,7 +75,7 @@ Ang mga system email mo ay dapat nagsasalita ng wika ng iyong niche. Pumunta sa 
 
 Pagpapahusay pa natin ito sa Lesson 8 (Customer Onboarding), ngunit ang pagtatakda ng tono ngayon ay nagsisiguro na kahit ang mga maagang test sign-up ay pakiramdam na niche-specific.
 
-### Domain Configuration
+### Domain Configuration {#domain-configuration}
 
 Kung gumagamit ng compatible hosting provider, i-configure na ang domain mapping:
 
@@ -85,7 +85,7 @@ Kung gumagamit ng compatible hosting provider, i-configure na ang domain mapping
 
 Tinitiyak nito na kapag nagsimula na tayong gumawa ng mga template at test sites sa susunod na lesson, lahat ay gumagana mula simula hanggang katapusan.
 
-## Ang FitSite Network Hanggang Ngayon
+## Ang FitSite Network Hanggang Ngayon {#the-fitsite-network-so-far}
 
 Sa pagtatapos ng araling ito, ito ang meron ka:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Ready for site templates (next lesson)
 ```
 
-## Ano ang Binuo Natin sa Araling Ito
+## Ano ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Isang gumaganang WordPress Multisite** installation sa subdomain mode
 - **Ultimate Multisite na naka-install** at naka-configure na may FitSite branding

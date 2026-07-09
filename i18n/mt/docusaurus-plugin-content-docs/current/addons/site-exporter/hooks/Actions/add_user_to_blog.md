@@ -4,11 +4,11 @@ title: Azzjoni - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog
+# Action: add_user_to_blog {#action-addusertoblog}
 
 Jiskatta minnufih wara li utent jiżdied ma' sit.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Jiskatta minnufih wara li utent jiżdied ma' sit.
 | $role | `string` | Rwol tal-utent. |
 | $blog_id | `int` | ID tal-blog. |
 
-### Minn
+### Minn {#since}
 
 - MU: MU
-### Sors
+### Sors {#source}
 
 Iddefinit f'[`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) fil-linja 174

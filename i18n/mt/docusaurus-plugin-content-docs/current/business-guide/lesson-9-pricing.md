@@ -3,17 +3,17 @@ title: 'Lezzjoni 9: Ipprezzar għall-Qligħ'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lezzjoni 9: Ipprezzar għall-Profitt
+# Lezzjoni 9: Ipprezzar għall-Profitt {#lesson-9-pricing-for-profit}
 
 Fil-Lezzjoni 5 stabbilixxejna l-prezzijiet inizjali għall-pjanijiet ta’ FitSite. Issa nirfinaw l-istrateġija tal-ipprezzar b’tekniki li jżidu d-dħul, jinkoraġġixxu titjib għal pjanijiet ogħla, u jnaqqsu t-telf tal-klijenti.
 
-## Fejn Ħallejna
+## Fejn Ħallejna {#where-we-left-off}
 
 FitSite għandu pjanijiet, mudelli, proċess tal-ħlas, branding, u onboarding lesti. L-ipprezzar inizjali kien $49/$99/$199 fix-xahar. Issa nagħmlu dak l-ipprezzar jaħdem aktar.
 
-## Prinċipji tal-Ipprezzar għal Pjattaformi Niċċa
+## Prinċipji tal-Ipprezzar għal Pjattaformi Niċċa {#pricing-principles-for-niche-platforms}
 
-### Ipprezza Skont il-Valur, Mhux l-Ispiża
+### Ipprezza Skont il-Valur, Mhux l-Ispiża {#price-on-value-not-cost}
 
 L-ispejjeż tal-hosting tiegħek jistgħu jkunu $5-$15 għal kull sit ta’ klijent. Dan ma jfissirx li l-prezz tiegħek għandu jkun $20. M’intix tbigħ hosting. Qed tbigħ:
 
@@ -24,7 +24,7 @@ L-ispejjeż tal-hosting tiegħek jistgħu jkunu $5-$15 għal kull sit ta’ klij
 
 Ipprezza abbażi tal-valur li twassal, mhux l-ispiża biex twasslu.
 
-### Orbot ma’ Alternattivi
+### Orbot ma’ Alternattivi {#anchor-to-alternatives}
 
 Meta sid ta’ studio tal-fitness jevalwa FitSite, iqabblu ma’:
 
@@ -34,7 +34,7 @@ Meta sid ta’ studio tal-fitness jevalwa FitSite, iqabblu ma’:
 
 Bi $49-$199/xahar, FitSite huwa orħos minn żviluppatur, aktar kapaċi minn bennejja ġeneriċi, u infinitament aħjar minn sit web ineżistenti.
 
-## Implimentazzjoni ta’ Varjazzjonijiet fil-Prezz
+## Implimentazzjoni ta’ Varjazzjonijiet fil-Prezz {#implementing-price-variations}
 
 L-ipprezzar annwali jinkoraġġixxi impenn u jnaqqas it-telf tal-klijenti. Mur fit-tab **Varjazzjonijiet tal-Prezz** ta’ kull pjan u żid għażliet annwali:
 
@@ -46,12 +46,12 @@ L-ipprezzar annwali jinkoraġġixxi impenn u jnaqqas it-telf tal-klijenti. Mur f
 
 Żid field ta’ **Għażla tal-Perjodu** mal-formola tal-ħlas tiegħek sabiex il-klijenti jkunu jistgħu jaqilbu bejn ħlas fix-xahar u ħlas annwali. Ara [Formoli tal-Ħlas](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Għaliex Jaħdem l-Ipprezzar Annwali
+### Għaliex Jaħdem l-Ipprezzar Annwali {#why-annual-pricing-works}
 
 - **Għalik**: Flus bil-quddiem, telf tal-klijenti aktar baxx (klijenti li jħallsu annwalment huma inqas probabbli li jikkanċellaw f’nofs it-terminu)
 - **Għalihom**: Tfaddil reali, prevedibbiltà fil-baġit
 
-## Tariffi ta’ Setup
+## Tariffi ta’ Setup {#setup-fees}
 
 Ikkunsidra tariffa ta’ setup ta’ darba għal pjanijiet li jinkludu konfigurazzjoni prattika:
 
@@ -61,7 +61,7 @@ Ikkunsidra tariffa ta’ setup ta’ darba għal pjanijiet li jinkludu konfigura
 
 Ikkonfigura t-tariffi ta’ setup fit-taqsima tal-ipprezzar ta’ kull pjan. Ara [Il-Ħolqien tal-Ewwel Prodott ta’ Abbonament Tiegħek](/user-guide/configuration/creating-your-first-subscription-product) għad-dettalji.
 
-## Perjodi ta’ Prova
+## Perjodi ta’ Prova {#trial-periods}
 
 Li toffri prova jnaqqas il-frizzjoni fir-reġistrazzjoni iżda jintroduċi r-riskju li ma jkunx hemm konverżjoni. Għal FitSite:
 
@@ -70,11 +70,11 @@ Li toffri prova jnaqqas il-frizzjoni fir-reġistrazzjoni iżda jintroduċi r-ris
 
 Ikkonfigura l-prova fit-taqsima tal-ipprezzar tal-pjan Starter billi tattiva t-toggle **Offri Prova** u tissettja t-tul għal 7 ijiem.
 
-### Kif Tagħmel il-Provi Jikkonvertu
+### Kif Tagħmel il-Provi Jikkonvertu {#making-trials-convert}
 
 Prova taħdem biss jekk il-klijent jesperjenza valur matul il-perjodu tal-prova. Is-sekwenza tal-onboarding tiegħek (Lezzjoni 8) hija kritika hawnhekk -- l-emails ta’ merħba għandhom jiġu skedati biex imexxu l-involviment fi ħdan it-tieqa ta’ 7 ijiem.
 
-## Kodiċijiet ta’ Skont
+## Kodiċijiet ta’ Skont {#discount-codes}
 
 Oħloq kodiċijiet ta’ skont strateġiċi għal skopijiet speċifiċi:
 
@@ -88,7 +88,7 @@ Mur għal **Ultimate Multisite > Kodiċijiet ta’ Skont** biex toħloqhom. Ara 
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Ġestjoni tat-Taxxa
+## Ġestjoni tat-Taxxa {#tax-handling}
 
 Jekk topera f’ġurisdizzjoni li teħtieġ il-ġbir tat-taxxa:
 
@@ -98,7 +98,7 @@ Jekk topera f’ġurisdizzjoni li teħtieġ il-ġbir tat-taxxa:
 
 Ara [Ġestjoni tat-Taxxa](/user-guide/payment-gateways/tax-handling) għal konfigurazzjoni dettaljata. Jekk taqdi klijenti internazzjonalment, ikkunsidra l-[addon tal-VAT](/addons/vat) għall-konformità fl-UE.
 
-## Reviżjoni tal-Ipprezzar Tiegħek
+## Reviżjoni tal-Ipprezzar Tiegħek {#reviewing-your-pricing}
 
 Wara t-tnedija, irrevedi l-ipprezzar kull tliet xhur. Ħares lejn:
 
@@ -107,7 +107,7 @@ Wara t-tnedija, irrevedi l-ipprezzar kull tliet xhur. Ħares lejn:
 - **Telf tal-klijenti skont il-pjan**: Jekk klijenti annwali jikkanċellaw inqas, imbotta l-ipprezzar annwali aktar
 - **Ipprezzar tal-kompetituri**: Kemm qed jitolbu l-alternattivi? Int pożizzjonat b’mod korrett?
 
-## In-Network ta’ FitSite S’Issa
+## In-Network ta’ FitSite S’Issa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## X'Bnejna f'Din il-Lezzjoni
+## X'Bnejna f'Din il-Lezzjoni {#what-we-built-this-lesson}
 
 - **Ipprezzar annwali** bi skont ta' 20% biex ninkoraġġixxu l-impenn
 - **Ħlasijiet tas-setup** fuq livelli ogħla biex ikopru l-isforz tal-onboarding

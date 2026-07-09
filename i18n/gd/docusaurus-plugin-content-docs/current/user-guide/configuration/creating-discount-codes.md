@@ -3,13 +3,13 @@ title: Creachadh codal dìonais
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creachadh Codean Discount (v2)
+# Creachadh Codean Discount (v2) {#creating-discount-codes-v2}
 
 _**NOTE CRÍTICA: An tairgse seo a' tuairt an Ultimate Multisite version 2.x.**_
 
 Le Ultimate Multisite, thuar thuinn eadar-fhaighinn codean discount airson ùidhinean do chliachanna agad air iadairtean. Agus a' creachadh gu eil eanach!
 
-## Creachadh agus Athrachadh Codean Discount
+## Creachadh agus Athrachadh Codean Discount {#creating-and-editing-discount-codes}
 
  airson a' creachadh no athrachadh codean discount, thànaidh **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Tha an t-airm a' chluainteach air a' chluainteach agus, frumadh seo, is e a' chl
 
 ###
 
-### A' chluainteachadh URL parameters:
+### A' chluainteachadh URL parameters: {#using-url-parameters}
 
 Mar a tha thu a' chluainteach a' chluainteach a' chluainteach air a' chluainteachd agad a' chluainteach a' chluainteach, agus faic thu a' chluainteach a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a' chluainteachd a
 

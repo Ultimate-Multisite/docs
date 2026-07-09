@@ -3,11 +3,11 @@ title: Süsteemi e-postide haldamine
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Süsteemailide seadistamine
+# Süsteemailide seadistamine {#managing-system-emails}
 
 Ultimate Multisite lähetab erineva süsteememailid sündmustel nagu registreerimise kinnitused, maksukinnitused ja liitmise muutused. Saate neid e-posti mallid oma brändile vastavalt kohandada.
 
-## Süsteememailide vaatamise
+## Süsteememailide vaatamise {#viewing-system-emails}
 
 Minema **Ultimate Multisite → Settings** ja klõpsama **Emails** tabiga näha e-postiga seotud seadistused.
 
@@ -21,7 +21,7 @@ Saate ka muuta üksiklikke e-posti malle süsteememailredaktoril:
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Uute e-posti mallide impoortimine
+## Uute e-posti mallide impoortimine {#importing-new-email-templates}
 
 Uued Ultimate Multisite versioonid ja lisad võivad registreerida uusi e-posti malle. Konfliktide vältimiseks uusi malle ei lisa ette automaatselt – tuleb neid impoortida manuaalselt.
 

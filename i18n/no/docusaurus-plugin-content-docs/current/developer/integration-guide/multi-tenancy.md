@@ -3,11 +3,11 @@ title: Integrasjon med flerleietakerarkitektur
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy-integrasjon
+# Multi-Tenancy-integrasjon {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 endrer flere integrasjonskontaktpunkter for suverene leietakere, migreringsverifisering og automatisering av leietakerlivssyklus.
 
-## Oppstartsflyt for leietaker
+## Oppstartsflyt for leietaker {#tenant-bootstrap-flow}
 
 Integrasjoner som oppretter eller endrer leietakere, bør følge denne rekkefølgen:
 
@@ -20,13 +20,13 @@ Integrasjoner som oppretter eller endrer leietakere, bør følge denne rekkeføl
 
 Ikke anta at en suveren leietaker kan gjenbruke nettverkets databasetilkobling. Bruk leietakerregisteret og skriverabstraksjonene som tilbys av tillegget.
 
-## SSO- og REST-hooks
+## SSO- og REST-hooks {#sso-and-rest-hooks}
 
 Tilstandsløs automatisk innlogging for leietakere bruker kortlivede tokens med et formålskrav, JTI-beskyttelse mot gjenbruk, en utløpsgrense og opprinnelseslåsing. Integrasjoner som legger til innloggingsknapper eller lenker for fjernadministrasjon, bør generere leietakerbesøk gjennom den støttede SSO-flyten i stedet for å konstruere innloggings-URL-er for leietakere direkte.
 
 API-revisjonshendelser på nettverkssiden og daglige sammendrag er tilgjengelige for suverene leietakergatewayer. Bruk disse loggene ved feilsøking av eksterne systemer som kaller endepunkter for leietakerlivssyklus.
 
-## URL-er for suverene kundehandlinger
+## URL-er for suverene kundehandlinger {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 ruter kundehandlinger for suverene leietakere tilbake til hovednettstedet for konto-, kasse-, fakturering-, faktura-, nettsted-, malbytte- og domenekartleggingsflyter. Integrasjoner som gjengir administrasjonslenker på leietakersiden, bør peke disse handlingene til hovednettstedets kundepanel og inkludere et validert returmål når brukeren skal kunne navigere tilbake til leietakeren etter å ha fullført handlingen.
 
@@ -40,7 +40,7 @@ Den genererte URL-en kan fortsatt filtreres gjennom `wu_sso_url`, som mottar SSO
 
 Ikke dupliser tilstand for medlemskap, faktura, faktureringsadresse, mal eller domeneadministrasjon inne i den suverene leietakeren. Behandle leietakerens Dashboard som startpunktet og hovednettstedets kundepanel som autoritativ kilde for administrerte handlinger.
 
-## Migreringsverifisering
+## Migreringsverifisering {#migration-verification}
 
 Etter at en migrering eller livssyklusintegrasjon endrer leietakerdata, kjør verifiseringsportene:
 
@@ -49,10 +49,10 @@ Etter at en migrering eller livssyklusintegrasjon endrer leietakerdata, kjør ve
 
 Integrasjoner bør behandle mislykket verifisering som en distribusjonsblokkering og unngå å merke en leietaker som live før feilen er løst.
 
-## Sletting av leietaker
+## Sletting av leietaker {#tenant-deletion}
 
 Sletteflyter bør kalle tilleggets nedbyggingssti slik at leietakerens databaselegitimasjon blir ryddet opp. Eksterne integrasjoner kan fjerne leverandørressurser etter at nedbyggingen er fullført, men bør ikke slette vertdatabaser eller mapper mens verifisering eller asynkrone push-jobber fortsatt kjører.
 
-## Utdatert databaseruter
+## Utdatert databaseruter {#deprecated-database-router}
 
 Den eldre `Database_Router` er erstattet av en deprecation-stubb. Nye integrasjoner bør finne leietakere gjennom de gjeldende API-ene for nettstedruter og leietakerregister i stedet for å avhenge av den gamle ruterklassen.

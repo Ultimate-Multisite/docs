@@ -3,11 +3,11 @@ title: Multitenancy izolazioa
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isolation
+# Multi-Tenancy Isolation {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suporta izolazio per baza datumeania eta sistemak (database and filesystem isolation) subsite-ei artean, denbora edo erabilera nagusi batzuk (sovereign tenants) irudien bitarte. Horrek tenant datuak eskaintzen duela, baina sistema-nivelaren provisionamendua, fakturazioa eta administrazioa ontzen duela.
 
-## Estrategia izolazioa
+## Estrategia izolazioa {#isolation-strategy}
 
 Datumeania espezializatutako izolazioa (sovereign isolation) erabilizten dituztezu horretarako kliuntzak, datu-eraketa handiagoa behar dituztenak, sistemak eskaintzen duen filesystem-a eskaintzeko, edo host boundary bat eskaintzeko.
 
@@ -18,7 +18,7 @@ Mundia espezializatutako tenant-ek (sovereign tenants) lehiak:
 - Tenant registry entry bat, zein sitea database-re, root path-ra, hostname-ra eta izolazio modelera erakitzen duela.
 - Tenant-a "live" (erabilera) irizten aurretik migrazio bidezko bidearen (migration verification) rezultatu bat.
 
-## Database host binding
+## Database host binding {#database-host-binding}
 
 Version 1.2.0-ek hasieran jakinarazitako soilako makina-gaindian (same-machine) host binding-en erabilera aldatzen du den sovereign installak dira. `localhost` garrantzitsuak jatorri batzuk (Bedrock, FrankenPHP eta containerized WordPress instalazioak) irudien hasterri eta permi-tzen dituzteko, MySQL-ek gertatzen duen host string-arekin erabilera eta permi-tzen bidearen normalizatu dira.
 
@@ -31,11 +31,11 @@ Sovereign tenant bat konfiguratzen duenean:
 
 Iruditzak lehiak ez duela informazioa ematen, tenant DB user-ek ematutako permi-tzenak host binding-arekin erakutuz erakunde. `user@localhost`-eko ematuta duen erabiltzaileak `user@127.0.0.1` edo `user@%`-rekin ezberdina da.
 
-## Filesystem root
+## Filesystem root {#filesystem-root}
 
 Zeta irkiarra (tenant root) da ez duña izan behar da estabilizatu, gurean jarraitu eta despliegamentuetan. Ez dago erreguntzak edo testuak erabiltzea. Bedrock-estilo instalazioetako kasuetan, konprimatu daiteke hain atalari (tenant root) WordPress web root-eko dela, ez berria proiektu root-eko dela, gaurki konprimatu behar da.
 
-## Provisioaren jarraitu dira
+## Provisioaren jarraitu dira {#provisioning-order}
 
 Hobitzen irriberri erreguntzak (sovereign tenants) besteak jartzeko, hategi hau:
 
@@ -49,7 +49,7 @@ Hobitzen irriberri erreguntzak (sovereign tenants) besteak jartzeko, hategi hau:
 
 Hau jarraitu dira, datu-erailua, erabiltzaileak eta sistema-datu-lehiak prest egonbeira izan baino irudinetas ez dagoen irreguntzak (tenants) trafiku hartzen aurretik.
 
-## Irriberri klientziaren jatorpen jarraitu dira
+## Irriberri klientziaren jatorpen jarraitu dira {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0, irriberri moduko (sovereign mode) aktiboa jakin duen bitartean, klientziaren jatorpen jarduerak (customer management actions) main site-an jarraitzen ditu. Irreguntza bat ere erregulatu WordPress instalazioa bezala jarraitu dezake, baina datu-erabiltzailei edo irudinetas arkitzen datu-erabiltzailei dependentzen jarduerak (network billing, membership edo shared account data) jarduera horiek ez du beharrezkoa main site-an itxarri, irriberri runtime-aren beldur jarduera amaitu eta jarduera nahi du.
 

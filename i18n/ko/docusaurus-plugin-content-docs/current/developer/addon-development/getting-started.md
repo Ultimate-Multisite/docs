@@ -3,9 +3,9 @@ title: Addon 개발 시작하기
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# 애드온 개발
+# 애드온 개발 {#addon-development}
 
-## 애드온 구조
+## 애드온 구조 {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # 템플릿 파일
 ```
 
-## 기본 애드온 파일 템플릿
+## 기본 애드온 파일 템플릿 {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## 사용자 정의 모델 예시
+## 사용자 정의 모델 예시 {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## 관리자 페이지 통합
+## 관리자 페이지 통합 {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addon 테스트하기
+## Addon 테스트하기 {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 확장 지점
+## v2.13.0 확장 지점 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0은 주권형 테넌트, checkout 도메인 또는 호스트 제공업체 DNS 자동화와 통합되는 addon에 유용한 여러 확장 지점을 추가합니다.
 
-### SSO 및 main-site 관리 URL
+### SSO 및 main-site 관리 URL {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### checkout-form 기본 도메인
+### checkout-form 기본 도메인 {#checkout-form-base-domains}
 
 addon이 사이트별 사용자 지정 매핑 대신 checkout-form **Site URL** 도메인처럼 동작해야 하는 추가 공유 기본 도메인을 제공할 때 `wu_checkout_form_base_domains`를 사용하세요.
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite는 이러한 호스트를 정규화하고, 해당 호스트에 대한 자동 사이트별 매핑 도메인 레코드를 건너뜁니다.
 
-### 자동 도메인 레코드 생성
+### 자동 도메인 레코드 생성 {#automatic-domain-record-creation}
 
 addon이 새로 생성된 사이트에 대한 자동 도메인 레코드 생성을 억제하거나 지연해야 할 때 `wu_should_create_domain_record_for_site`를 사용하세요.
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain`을 수신하는 호스트 제공업체 통합은 사이트가 생성될 때 제공업체 측 DNS 레코드를 생성할 수 있습니다. 해당 작업에 등록된 통합이 없으면 Ultimate Multisite는 빈 백그라운드 작업을 건너뜁니다.
 
-## 다음 단계
+## 다음 단계 {#next-steps}
 
 - 사용 가능한 액션과 필터는 [Hooks Reference](/developer/hooks)를 검토하세요
 - API 통합은 [REST API Overview](/developer/rest-api/overview)를 확인하세요

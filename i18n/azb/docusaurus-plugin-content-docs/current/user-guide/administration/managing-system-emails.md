@@ -3,11 +3,11 @@ title: System Email Management
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistem E-poçtlarını İdarə Etmək
+# Sistem E-poçtlarını İdarə Etmək {#managing-system-emails}
 
 Ultimate Multisite, qeydiyyat təsdiqləmələri, ödəniş qəbzi və üzvlük dəyişiklikləri kimi hadisələr üçün müxtəlif sistem e-poçtları göndərir. Bu e-poçt şablonlarını öz brendinizə uyğunlaşdırmaq üçün onları fərdiləşdirə bilərsiniz.
 
-## Sistem E-poçtlarını Görüntüləmək
+## Sistem E-poçtlarını Görüntüləmək {#viewing-system-emails}
 
 E-poçtla bağlı ayarları görmək üçün **Ultimate Multisite → Settings** səhifəsinə keçin və **Emails** tabına klikləyin.
 
@@ -21,7 +21,7 @@ Həmçinin, fərdi e-poçt şablonlarını sistem e-poçt redaktoru vasitəsilə
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Yeni E-poçt Şablonları İdxal Etmək
+## Yeni E-poçt Şablonları İdxal Etmək {#importing-new-email-templates}
 
 Yeni Ultimate Multisite versiyaları və add-onlar yeni e-poçt şablonları qeyd edə bilər. Qarşıdurmaları (konfliktləri) aradan qaldırmaq üçün yeni şablonlar avtomatik əlavə edilmir — onları əl ilə idxal etməlisiniz.
 
@@ -32,7 +32,7 @@ Yeni e-poçt şablonlarını idxal etmək üçün:
 3. Mövcud şablonları görmək üçün **Import Emails** seçiminə keçidin (toggle edin)
 4. İdxal etmək istədiyiniz şablonları seçin və təsdiqləyin
 
-## E-poçt Şablonlarını Sıfırlamaq
+## E-poçt Şablonlarını Sıfırlamaq {#resetting-email-templates}
 
 Əgər bir e-poçt şablonunu fərdiləşdirmişsinizsə və default (ilkin) məzmundan geri dönmək istəyirsinizsə, iki seçiminiz var:
 

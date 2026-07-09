@@ -3,13 +3,13 @@ title: Caawimaad Horumar Gaar ah
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Sidaa Lagu Soo Helid Caawimaad Horumar Ah Gaar ah oo Ka Shaqeeya Codeable?
+# Sidaa Lagu Soo Helid Caawimaad Horumar Ah Gaar ah oo Ka Shaqeeya Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Mararka qaarkood, si aan u samayno hababka shirkadda (network flows) sida aan doonayno si sax ah, waxaan u baahanahay hagaajin gaar ah. Haddii aad tan raadinayso, waxaan ku talinaynaa [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), meel ay ka heli karto horumarsan oo leh aqoon ballaaran oo ku saabsan Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) waa platformka isku xirta macaamiisha iyo developer-ka WordPress ee aqoonta lahayd, kuwaasoo awood u leh inay ka shaqeeyaan mashaariic kasta oo cabbir ah. Waxay leeyihiin hab codsi si taxadar leh oo ay hubiyaan in aad la isku xirto khabiirro gaar ah oo ku aqoon leh hawsha aad rabto inaad qabato.
 
-### Sida Loo Sameeyo Mashruuc (Project) Codeable-ka?
+### Sida Loo Sameeyo Mashruuc (Project) Codeable-ka? {#how-to-create-a-project-in-codeable}
 
 Marka hore, tag [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) oo riix badhanka **Start a Project** (Bilow Mashruuc).
 

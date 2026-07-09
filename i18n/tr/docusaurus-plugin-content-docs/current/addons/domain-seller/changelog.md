@@ -3,7 +3,7 @@ title: Alan Adı Satıcısı Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Değişiklik Günlüğü
+# Domain Seller Değişiklik Günlüğü {#domain-seller-changelog}
 
 Sürüm 1.3.0 - 2026-06-02 tarihinde yayınlandı
 - Yeni: HostAfrica reseller bakiyesi çok düştüğünde network-admin uyarısı eklendi
@@ -134,20 +134,20 @@ Sürüm 1.0.0 - 2025-09-28 tarihinde yayınlandı
 * **Düzeltildi:** Kullanımdan kaldırılmış tüm v1 kodları v2 standartlarına güncellendi
 * **Kaldırıldı:** Eski v1 uyumluluğu (uyumluluğu bozan değişiklik)
 
-### Önceki Sürümler (v1 Eski)
+### Önceki Sürümler (v1 Eski) {#previous-versions-v1-legacy}
 
-### Sürüm 0.0.3 - 20/08/2019
+### Sürüm 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Düzeltildi: Groundhogg CRM ile uyumsuzluk
 * Not: Bu, v1 uyumlu son sürümdü
 
-### Sürüm 0.0.2 - 07/12/2018
+### Sürüm 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Düzeltildi: License Key alanı kaldırıldı
 * Düzeltildi: Özellik plugin’i etkinken plan sekmeleri eksikti
 * İyileştirildi: Kayıt alanına atla düğmesi eklendi
 
-### Sürüm 0.0.1 - İlk Sürüm
+### Sürüm 0.0.1 - İlk Sürüm {#version-001---initial-release}
 
 * WP Ultimo v1 için temel OpenSRS entegrasyonu
 * Basit alan adı arama ve kayıt

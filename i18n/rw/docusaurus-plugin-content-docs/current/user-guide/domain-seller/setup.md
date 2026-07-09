@@ -3,21 +3,21 @@ title: Gukoresha no Gukoresha Umuhoodwa n'Umuhoodwa w'Ubutabera
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Mwanditsi wa Domain: Urugero n'Urugero mu gukoresha Provider
+# Mwanditsi wa Domain: Urugero n'Urugero mu gukoresha Provider {#domain-seller-setup-and-provider-configuration}
 
 Addon ya Domain Seller itangira na uburyo bwo gutanga (guided setup wizard) witeguye ukugera ku buryo bwose bwo kubyara. Iyi rubuga ririmo ibyo mu buryo bwo gukora iyo wizard, no uko ugomba guhindura cyangwa gukoresha provider nyuma.
 
-## Amakuru (Requirements)
+## Amakuru (Requirements) {#requirements}
 
 - **Multisite Ultimate** v2.4.12 cyangwa uburyo bwizera, wariwe mu rwego rwa network
 - **PHP** 7.4+
 - Icyemezo cy'API credentials ku gihe cyiza cyangwa cyose cyo registrar yashobora gukoreshwa
 
-## Uburyo bwo gutanga (First-run setup wizard)
+## Uburyo bwo gutanga (First-run setup wizard) {#first-run-setup-wizard}
 
 Iyi wizard itangira yo gukora iyo mbere ugiye gukoresha plugin. Iyo, ifite ubushobozi mu gihe cyose ku **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Igice 1 — Gukoresha provider
+### Igice 1 — Gukoresha provider {#step-1--choose-a-provider}
 
 Gukoresha registrar wumva wumva kugira ngo ubanze. Uburyo bwo gukoresha:
 
@@ -33,7 +33,7 @@ Gukoresha registrar wumva wumva kugira ngo ubanze. Uburyo bwo gukoresha:
 | NameSilo | No | No |
 | Enom | Yes | No |
 
-### Igice 2 — Gukoresha cyemezo (Enter credentials)
+### Igice 2 — Gukoresha cyemezo (Enter credentials) {#step-2--enter-credentials}
 
 Icyemezo cy'API cyangwa ibindi byiza bishobora kuba bifite uburyo bw'ubwoko mu gihe cyose:
 
@@ -55,17 +55,17 @@ Icyemezo cy'API cyangwa ibindi byiza bishobora kuba bifite uburyo bw'ubwoko mu g
 
 Gukoresha **Sandbox mode** aho uzi, kugira ngo wanyize ibyo bishobora gukoreshwa mu gihe cy'ubwujisoro (test environment) mbere y'uko ubushobozi bukurwa.
 
-### Icyemezo 3 — Gukora umwujiza (Test the connection)
+### Icyemezo 3 — Gukora umwujiza (Test the connection) {#step-3--test-the-connection}
 
 Gukoresha **Test Connection**. Umuhitwa utuma API call ugiye gukoreshwa mu gihe cyo gutera umwujiza w'uburyo bwo kumenya amakuru n'ubushobozi. Kugira ngo ushyire ibyo byishobora kuba byari yibonye, ushyira ibyo byari yibonye mbere yuko ukarinda.
 
-### Icyemezo 4 — Gukoresha TLDs (Import TLDs)
+### Icyemezo 4 — Gukoresha TLDs (Import TLDs) {#step-4--import-tlds}
 
 Gukoresha **Import TLDs** kugira ngo utera ubwo bose bishobora kuba byari yibonye n'uburyo bw'uburyo bwo gukoresha imyungano ya ubwujisoro (TLDs) na uburyo bwo gukoresha ubushobozi mu gihe cyo gutera umwujiza. Ibi bituma igice cy'imyungano y'ubwujisoro (TLD list) ishyirwa mu gihe cyo gukora ibintu bikoreshwa mu domain products. Gukoresha uburyo bwo gukoresha imyungano byashobora kugarura 30–60 segiyo ku gihe cyo abanyamukoresha bafite imyungano itonderaga.
 
 Imyungano y'ubwujisoro (TLDs) bituma bikorwa mu gihe cyo gukoreshwa mu gihe cyo gutera umwujiza, ibyo byituma kugarura buri gihe cyo kuva ku gihe cyo kuboneka.
 
-### Icyemezo 5 — Gukora domain product (Create a domain product)
+### Icyemezo 5 — Gukora domain product (Create a domain product) {#step-5--create-a-domain-product}
 
 Umuhitwa utuma uburyo bwo gukoresha domain w'ubwujisoro (catch-all domain product) mu gihe cyo gutera umwujiza, kandi uboneka n'uburyo bw'uburyo bwo kugarura 10%. Uzi gukora ibi byo mu gihe cyo gutera umwujiza cyangwa uburyo bwo gukoresha imyitwarire (skip) kandi ukora ibyo mu gihe cyo gukoreshwa **Ultimate Multisite › Products**.
 
@@ -73,7 +73,7 @@ Bona [Domain Products and Pricing](./domain-products) kugira ngo ushyire ibyo by
 
 ---
 
-## Gukora uburyo bwo gukoresha umwujiza (Reconfiguring a provider)
+## Gukora uburyo bwo gukoresha umwujiza (Reconfiguring a provider) {#reconfiguring-a-provider}
 
 Gukoresha **Network Admin › Ultimate Multisite › Settings › Domain Seller** (cyangwa gukoresha **Settings** mu gihe cyo kubona imyitwarire).
 
@@ -85,17 +85,17 @@ Icyemezo cy'uburyo bwo gukoresha kigira ibi:
 - **Icyemezo cyo gukoresha availability cache** — igihe cyo gukoresha uburyo bwo gukoresha availability n'ibyo byiza mu gihe umuntu yashaka; ibyo bikomeye byerekana ibyo byihutirwa cyane
 - **Gukoresha domain products** — urugero rishobora kugera ku gukoresha Products list
 
-### Gufasha ubutshe runaka (Adding a second provider)
+### Gufasha ubutshe runaka (Adding a second provider) {#adding-a-second-provider}
 
 Koresha **Configure providers** kandi ugira umuntu w'uburyo bwo gukoresha cyangwa uburyo bwo kubyara mu gihe cyose. Ufite ubutshe bwa mbere n'ibindi byiza kugira mu gihe cyose. Gukoresha domain product cyangwa se yaba kuri default.
 
-### Gufasha TLDs mu buryo bw'umwihariko (Syncing TLDs manually)
+### Gufasha TLDs mu buryo bw'umwihariko (Syncing TLDs manually) {#syncing-tlds-manually}
 
 Mu settings page, koresha **Sync TLDs** ku gukoresha ubutshe runaka (configured provider) kugira ngo wumva ibyo byiza cyane. Ibi bikomeye cyane iyo ubutshe runaka bishobora gufasha ubushobozi bw'uburyo bwo gukoresha wholesale pricing cyangwa gufasha TLDs zishya.
 
 ---
 
-## Logs (Icyemezo)
+## Logs (Icyemezo) {#logs}
 
 Ubutshe runaka buri bwo gukoresha ubutshe bwawe bishobora gukoresha log channel y'ibyo byiza. Icyemezo byerekana ku **Network Admin › Ultimate Multisite › Logs**:
 
@@ -115,7 +115,7 @@ Ubutshe runaka buri bwo gukoresha ubutshe bwawe bishobora gukoresha log channel 
 
 ---
 
-## Icyemezo ry'uburyo bwo gukoresha (Provider capability notes)
+## Icyemezo ry'uburyo bwo gukoresha (Provider capability notes) {#provider-capability-notes}
 
 Nta API y'ingenzi ituma uburyo bwose bwo gukora ibyo. Addon (plugin) yituma ibyo byo bitewe n'ibyo ntibyo byumva mu buryo bwo kwandikira (admin-facing errors) kandi bituma ubwoba bwawe bukoresha cyangwa butera umuntu ku masezerano.
 

@@ -4,11 +4,11 @@ title: Action - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Action: wu_membership_post_renew
+# Action: wu_membership_post_renew {#action-wumembershippostrenew}
 
 จะทำงานหลังจากที่มีการต่ออายุสมาชิก
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 | $membership_id | `int` | ID ของสมาชิก |
 | $membership | `\Membership` | อ็อบเจกต์ของสมาชิก |
 
-### Since
+### Since {#since}
 
 - 2.0
-### Source
+### Source {#source}
 
 กำหนดไว้ใน [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) บรรทัดที่ 2235

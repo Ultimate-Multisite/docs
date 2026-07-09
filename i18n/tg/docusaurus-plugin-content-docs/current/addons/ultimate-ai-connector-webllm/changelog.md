@@ -3,9 +3,9 @@ title: Ultimate AI Connector барои WebLLM Тағйиротнома
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector барои WebLLM Changelog
+# Ultimate AI Connector барои WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Версияи 1.1.0 — Нашр шуд дар 2026-04-09
+## Версияи 1.1.0 — Нашр шуд дар 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Нав: Виҷети шинокунандаи чат бо нишондиҳандаи ҳолати admin-bar — ҳар корбари воридшуда метавонад аз қисми пеши сомона бевосита ба LLM-и тарафи браузер prompt диҳад.
 * Нав: Муҳити иҷрои SharedWorker — муҳаррики MLC акнун дар SharedWorker кор мекунад, то якчанд ҷадвал ба ҷойи рақобат барои он як сессияи GPU-ро муштарак истифода баранд.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Ислоҳ: WebLLM ба филтри wpai_preferred_text_models пайваст карда шуд, то хусусияти AI Experiments ҳангоми танзим шудани модел ба муҳаррики браузер равона шавад.
 * Беҳтар шуд: Cache-busting, меъёрсозии мундариҷа ва ислоҳҳои истиноди сахтафзор, ки ҳангоми санҷиши end-to-end ошкор шуданд.
 
-## Версияи 1.0.0 — Нашри аввал
+## Версияи 1.0.0 — Нашри аввал {#version-100--initial-release}

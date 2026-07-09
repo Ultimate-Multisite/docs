@@ -4,10 +4,10 @@ title: Aksi - wu_flush_known_caches
 sidebar_label: wu_flush_known_caches
 _i18n_hash: bfe84286e3bd8d31846f6800c0954148
 ---
-# Aksi: wu_flush_known_caches
+# Aksi: wu_flush_known_caches {#action-wuflushknowncaches}
 
 Hook kanggo reresik tambahan
 
-### Sumber
+### Sumber {#source}
 
 Ditentokaké ing [`inc/managers/class-cache-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-cache-manager.php#L49) ing baris 49

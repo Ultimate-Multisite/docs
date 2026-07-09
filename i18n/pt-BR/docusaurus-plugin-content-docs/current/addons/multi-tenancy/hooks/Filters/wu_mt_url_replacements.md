@@ -4,11 +4,11 @@ title: Filtro - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Filtro: wu_mt_url_replacements
+# Filtro: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 Filter URL replacement pairs.
 
-## Parameters
+## Parameters {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filter URL replacement pairs.
 | $new_url | `string` | URL nova. |
 | $blog_id | `int` | ID do blog. |
 
-### Desde
+### Desde {#since}
 
 - 1.0.0
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) na linha 151

@@ -3,11 +3,11 @@ title: Whakawhanaketanga Kuwaha Ritenga
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Whakawhanake Kuaha Ritenga
+# Whakawhanake Kuaha Ritenga {#custom-gateway-development}
 
 Ka taea e koe te waihanga kuaha utu ritenga mā te whakawhānui i te akomanga `Base_Gateway`.
 
-## Akomanga Kuaha
+## Akomanga Kuaha {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Rēhita i te Kuaha
+## Rēhita i te Kuaha {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ngā Tikanga Matua
+## Ngā Tikanga Matua {#key-methods}
 
 | Method | Kaupapa |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Whakahaere i ngā tono whakahoki moni |
 | `get_payment_methods()` | Whakahoki i ngā tikanga utu kua tiakina mō tētahi kiritaki |
 
-## Ngā taunakitanga whakahou mō ngā mematanga auau
+## Ngā taunakitanga whakahou mō ngā mematanga auau {#renewal-credentials-for-recurring-memberships}
 
 Ka āhei a Ultimate Multisite v2.13.0 i ngā whakakotahitanga kuaha ki te pūrongo mēnā he taunakitanga whakahou ka taea te whakamahi anō tō tētahi mematanga auau i mua i te ūnga o `auto_renew`. Honoa `wu_membership_has_renewal_credential` ka whakahoki:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Ūkuia te tohu taunakitanga-ngaro hei wāhanga o te rere whakamana-anō angitu a tō kuaha i muri i te rokiroki o tētahi taunakitanga hou ka taea te whakamahi anō.
 
-## Ngā Tohu Āwhina
+## Ngā Tohu Āwhina {#tips}
 
 - Whakahokia i ngā wā katoa te `WP_Error` ina rahua, kia taea ai e Ultimate Multisite te whakahaere i te whakaaturanga hapa
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Whakamahia `wu_log_add()` mō te takiuru tauwhāiti-ki-te-kuaha
 
-## Ngā āheinga kaiwhakarato tūhono AI
+## Ngā āheinga kaiwhakarato tūhono AI {#ai-connector-provider-capabilities}
 
 Me whakahāngai ngā whakakotahitanga ritenga e karanga ana i ngā mahinga e tautokona ana e te tūhono AI ki te huinga kaiwhakarato OAuth tautokona i whakaurua me AI Provider for Anthropic Max v1.3.0:
 

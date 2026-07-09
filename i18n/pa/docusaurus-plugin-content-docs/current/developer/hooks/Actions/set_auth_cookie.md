@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 ਇਸਨੂੰ ਪ੍ਰਮਾਣਿਕਤਾ ਕੁਕੀ (authentication cookie) ਸੈੱਟ ਹੋਣ ਤੋਂ ਤੁਰੰਤ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | ਵਰਣਨ |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | ਪ੍ਰਮਾਣਿਕਤਾ ਸਕੀਮ। ਮੁੱਲਾਂ ਵਿੱਚ 'auth' ਜਾਂ 'secure_auth' ਸ਼ਾਮਲ ਹਨ। |
 | $token | `string` | ਇਸ ਕੁਕੀ ਲਈ ਵਰਤਣ ਲਈ ਯੂਜ਼ਰ ਦਾ ਸੈਸ਼ਨ ਟੋਕਨ। |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> ਪੈਰਾਮੀਟਰ ਜੋੜਿਆ ਗਿਆ ਸੀ।
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ਵਿੱਚ ਲਾਈਨ 124 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।

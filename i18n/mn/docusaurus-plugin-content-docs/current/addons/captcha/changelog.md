@@ -3,7 +3,7 @@ title: Captcha өөрчлөлтийн бүртгэл
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha өөрчлөлтийн бүртгэл
+# Captcha өөрчлөлтийн бүртгэл {#captcha-changelog}
 
 Хувилбар: 1.5.0 - 2026-05-22-нд гарсан
 * Шинэ: Хатуу зогсоолтой давтамж хязгаарлагч — captcha-аар хамгаалагдсан талбарууд дээрх GET болон POST бүрийг тоолно (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) бөгөөд HTTP 429, `Retry-After` header, мөн санамсаргүй tarpit хүлээлтээр (1–5 секунд, хатуу дээд хязгаар 15 секунд) хариулна.

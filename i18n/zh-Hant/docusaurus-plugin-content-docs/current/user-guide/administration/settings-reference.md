@@ -3,11 +3,11 @@ title: 設定參考
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# 設定參考
+# 設定參考 {#settings-reference}
 
 此頁面追蹤會影響 Ultimate Multisite 日常管理與近期行為變更的設定。
 
-## 其他選項
+## 其他選項 {#other-options}
 
 **其他選項**區域顯示於 **Ultimate Multisite > Settings > Login & Registration** 下方。
 
@@ -15,23 +15,23 @@ _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 |---|---|
 | **啟用 Jumper** | 在管理區域顯示 Jumper 快速導覽工具。使用它可直接跳至 Ultimate Multisite 畫面、網路物件及支援的管理目的地。若不想顯示此捷徑，請將其停用。 |
 
-## 錯誤回報與遙測
+## 錯誤回報與遙測 {#error-reporting-and-telemetry}
 
 先前的錯誤回報選擇加入設定已從設定頁面移除。匿名遙測已停用，且沒有可啟用它的 UI 切換開關。
 
 如果你維護設定頁面的內部操作手冊或螢幕截圖，請移除對舊錯誤回報選擇加入欄位的引用，讓管理員不會尋找已不再存在的設定。
 
-## 匯入／匯出設定
+## 匯入／匯出設定 {#importexport-settings}
 
 **匯入／匯出**設定分頁會說明其控制哪些設定，並直接連結至 **Ultimate Multisite > Site Export** 以取得網站與網路封存。使用設定分頁進行匯入／匯出設定，使用 **Tools > Export & Import** 進行單一網站匯出／匯入工作流程，並在需要完整 Network Export 封存時使用 Site Export 工具。
 
-## Domain Seller HostAfrica 餘額警告
+## Domain Seller HostAfrica 餘額警告 {#domain-seller-hostafrica-balance-warning}
 
 當 Domain Seller addon 連線至 HostAfrica 時，網路管理員現在會在經銷商 Account 餘額過低、無法可靠處理網域註冊或續約時，看到可關閉的餘額不足警告。
 
 請將此通知視為營運警告：在接受更多付費網域註冊之前，先為 HostAfrica 經銷商餘額儲值，然後返回 Domain Seller 設定或網域監控畫面，確認註冊與續約可以正常繼續。
 
-## AI 供應商連接器設定
+## AI 供應商連接器設定 {#ai-provider-connector-settings}
 
 AI 供應商連接器設定現在只公開支援的 OAuth Account 池：
 

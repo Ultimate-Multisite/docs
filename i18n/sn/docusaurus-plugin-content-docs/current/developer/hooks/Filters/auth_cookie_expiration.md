@@ -4,11 +4,11 @@ title: Sefa - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Sefa: auth_cookie_expiration
+# Sefa: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Inosefa nguva yenguva yekupera kwecookie yekusimbisa.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Inosefa nguva yenguva yekupera kwecookie yekusimbisa.
 | $user_id | `int` | ID yemushandisi. |
 | $remember | `bool` | Kana kupinda kwemushandisi kuchifanira kurangarirwa. Default false. |
 
-### Kubvira
+### Kubvira {#since}
 
 - 2.8.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) pamutsetse 52

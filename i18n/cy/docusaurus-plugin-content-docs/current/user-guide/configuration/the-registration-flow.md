@@ -3,13 +3,13 @@ title: Y Ffylchion Cyflwyniad
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Y Ffylgyrchu (v2)
+# Y Ffylgyrchu (v2) {#the-registration-flow-v2}
 
 _**NOTIADOLIA CRYTÔ: Mae'r ail nghydig hwn yn cyfeiriad i Ultimate Multisite versio 2.x.**_
 
 Gall y bywogion dysgu mewn rhywfaint o ffordd ar gyfer eich rheiniant. Gallu eu defnyddio eich ffurflen ffylgyrchu neu linc arosol i un plan wedi'i dechrau cyntaf. Yn yr adran hwn byddom ni ddweud wrth chi sut gall y gallwyr eich rhannu ar gyfer y rheiniant eich network yn defnyddio'r fforddion sydd ar gael a beth sydd yn digwydd ar ôl eu fylgyrchu ar gyfer y rheiniant.
 
-## Defnyddio'r Ffurflen Ffylgyrchu:
+## Defnyddio'r Ffurflen Ffylgyrchu: {#using-the-registration-form}
 
 Mae hyn yn gyfnod fylgyrchu standard. Mae'ch ddefnyddio'r ffurflen fylgyrchu gyda **checkout form** a fydd hyn yw lle bydd y gallwyr eich rhannu i defnyddio ar gyfer y rheiniant eich network a chynllunio un plan. Gallwch gael pethau fylgyrchu amserol, gyda phfurflen fylgyrchu gwahanol ar gyfer pob un os i eisiau.
 
@@ -35,13 +35,13 @@ Os roedd nhw wedi gyfeirio ar ffurf plan cyfaedig neu nid yw cyfathoghio'r enell
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Defnyddio Linc Cyfathoghio:
+## Defnyddio Linc Cyfathoghio: {#using-a-shareable-link}
 
 Mae'r proses o gyfeiriad gan ddefnyddio linc cyfathoghio yn gymharu'n debyg â ffurflen gyfeiriad, ond y gwahaniaeth unig yw bod eich cleientau yn gallu gael prodde neu model wefan wedi'i ddefnyddio ar y ffurflen chefnogaeth ar y chefnogaeth (gwylch i'r sefyllfa Pre-selecting products and templates via URL parameters) neu edrych fel codwedd coupon a ddefnyddio (gwylch i'r sefyllfa Using URL Parameters).
 
 Bydd y proses gyfeiriad yn unig: bydd angen eu cyflwyno enw, enw defnyddiwr, enell, enw wefan a teitl, neu bethau sydd arall... ond bydd y plan neu model wefan wedi'i ddefnyddio i'u gael.
 
-### Gyfeirio Trwy Płatheir Manwl:
+### Gyfeirio Trwy Płatheir Manwl: {#registering-using-manual-payments}
 
 Os ydych chi nid yn gallu defnyddio PayPal, Stripe neu unrhyw gyfathoghio'r peiriant a cael ei offerwyd gan Ultimate Multisite neu ei chyddeallion ychwanegol, gallwch ddefnyddio płatheir manwl ar gyfer eich cleientau. Yn y ffordd hwn, gallwch gyflwyno ffurflen i'u gael eu cyfathoghio ar y peiriant a fydd yn cael ei ddefnyddio ganrhaol ar eich rheini ar ôl eu gyfeirio ar eich rheini.
 

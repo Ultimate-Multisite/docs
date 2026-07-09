@@ -3,11 +3,11 @@ title: Integration af multi-tenancy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy-integration
+# Multi-Tenancy-integration {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ændrer flere integrationskontaktpunkter for suveræne tenants, migreringsverificering og automatisering af tenant-livscyklus.
 
-## Tenant-bootstrap-flow
+## Tenant-bootstrap-flow {#tenant-bootstrap-flow}
 
 Integrationer, der opretter eller ændrer tenants, bør følge denne rækkefølge:
 
@@ -20,13 +20,13 @@ Integrationer, der opretter eller ændrer tenants, bør følge denne rækkefølg
 
 Antag ikke, at en suveræn tenant kan genbruge netværkets databaseforbindelse. Brug tenant-registeret og writer-abstraktionerne, som leveres af tilføjelsen.
 
-## SSO- og REST-hooks
+## SSO- og REST-hooks {#sso-and-rest-hooks}
 
 Stateless tenant-autologin bruger kortlivede tokens med et purpose claim, JTI-replaybeskyttelse, en udløbsmaksimumgrænse og origin-pinning. Integrationer, der tilføjer login-knapper eller links til fjernadministration, bør generere tenant-besøg via det understøttede SSO-flow i stedet for at konstruere tenant-login-URL'er direkte.
 
 API-revisionshændelser på netværkssiden og daglige oversigter er tilgængelige for suveræne tenant-gateways. Brug disse logs ved fejlfinding af eksterne systemer, der kalder endpoints for tenant-livscyklus.
 
-## Handlings-URL'er for suveræne kunder
+## Handlings-URL'er for suveræne kunder {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 router kundehandlinger for suveræne tenants tilbage til hovedsiden for flows til Account, checkout, fakturering, faktura, side, skabelonskift og domænemapping. Integrationer, der viser administrationslinks på tenant-siden, bør pege disse handlinger mod kundepanelet på hovedsiden og inkludere et valideret returneringsmål, når brugeren skal kunne navigere tilbage til tenant efter at have fuldført handlingen.
 
@@ -40,7 +40,7 @@ Den genererede URL kan fortsat filtreres via `wu_sso_url`, som modtager SSO-URL'
 
 Dupliker ikke medlemskab, faktura, faktureringsadresse, skabelon eller domæneadministrationstilstand inde i den suveræne tenant. Betragt tenant-dashboardet som launcheren og kundepanelet på hovedsiden som system of record for administrerede handlinger.
 
-## Migreringsverificering
+## Migreringsverificering {#migration-verification}
 
 Når en migrering eller livscyklusintegration ændrer tenant-data, skal verificeringsgates køres:
 
@@ -49,10 +49,10 @@ Når en migrering eller livscyklusintegration ændrer tenant-data, skal verifice
 
 Integrationer bør behandle mislykket verificering som en deployment-blokering og undgå at markere en tenant som live, indtil fejlen er løst.
 
-## Sletning af tenant
+## Sletning af tenant {#tenant-deletion}
 
 Sletningsflows bør kalde tilføjelsens teardown-sti, så tenant-databaselegitimationsoplysninger ryddes op. Eksterne integrationer kan fjerne udbyderressourcer, efter teardown er lykkedes, men bør ikke slette host-databaser eller mapper, mens verificering eller asynkrone push-jobs stadig kører.
 
-## Forældet databaserouter
+## Forældet databaserouter {#deprecated-database-router}
 
 Den ældre `Database_Router` er blevet erstattet af en deprecation-stub. Nye integrationer bør finde tenants via de aktuelle site-router- og tenant-register-API'er i stedet for at afhænge af den gamle router-klasse.

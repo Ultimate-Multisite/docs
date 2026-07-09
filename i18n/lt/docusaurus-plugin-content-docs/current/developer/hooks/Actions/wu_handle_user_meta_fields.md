@@ -4,11 +4,11 @@ title: Veiksmas - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields
+# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Leidžia plugin kūrėjams išsaugoti naudotojo meta duomenis skirtingais būdais, jei jiems to reikia.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Leidžia plugin kūrėjams išsaugoti naudotojo meta duomenis skirtingais būdai
 | $customer | `\Customer` | Ultimate Multisite kliento objektas. |
 | $checkout | `\Checkout` | Atsiskaitymo klasė. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.4
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) 1244 eilutėje

@@ -3,11 +3,11 @@ title: Rapu Rohe Pane
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Rapu Rohe Pane
+# Rapu Rohe Pane {#header-domain-search}
 
 Whakamahia tēnei whakaritenga ina hiahia koe ki tētahi puka pane iti e tīmata ana i te rapu rohe, kātahi ka tuku i te kiritaki kia kōwhiri i ngā rohe e wātea ana i roto i te takiutu Ultimate Multisite.
 
-## Ngā whakaritenga
+## Ngā whakaritenga {#requirements}
 
 - Ultimate Multisite kua whakahohehia ki te whatunga.
 - Multisite Ultimate Domain Seller kua whakahohehia ki te whatunga.
@@ -16,7 +16,7 @@ Whakamahia tēnei whakaritenga ina hiahia koe ki tētahi puka pane iti e tīmata
   - Ngā TLD e tautokona ana kua whirihorahia, hei tauira `com`, `net`, me `org`.
 - Tētahi puka takiutu whaimana kei roto te āpure **Kōwhiringa Rohe**.
 
-## Puka takiutu
+## Puka takiutu {#checkout-form}
 
 1. Waihangatia, whakatikaina rānei te puka takiutu e whakamahia ana e te whārangi rēhitatanga.
 2. Tāpirihia ngā āpure takiutu/pūkete e hiahiatia ana, tae atu ki **Ingoa kaiwhakamahi**. Ka whakakāhoretia e te manatoko Ultimate Multisite tētahi puka takiutu kei roto ko te āpure rohe anake.
@@ -30,7 +30,7 @@ Me whakaatu e te whārangi rēhitatanga te puka takiutu, hei tauira:
 [wu_checkout slug="domain-form"]
 ```
 
-## Puka pane
+## Puka pane {#header-form}
 
 Tāpirihia tētahi puka `GET` iti ki te pane pae e tuku ana i te kupu rapu kua tāurutia ki te whārangi takiutu hei `domain_name`:
 
@@ -44,7 +44,7 @@ Tāpirihia tētahi puka `GET` iti ki te pane pae e tuku ana i te kupu rapu kua t
 
 Kaua e kōwhiri tōmua i tētahi rohe ki te JavaScript pane ritenga. Me tuku noa e te pane te kupu rapu. Ka pānui te hōtuhi takiutu Domain Seller i `?domain_name=example`, ka whakakī i te pouaka rapu takiutu, ā, ka whakahaere i te rapu wāteatanga kia taea e te kiritaki te kōwhiri i ngā rohe kua whakahokia mai.
 
-## Whanonga e tūmanakohia ana
+## Whanonga e tūmanakohia ana {#expected-behaviour}
 
 Mā te rapu i `example` i te pane e whakatuwhera:
 
@@ -61,7 +61,7 @@ Kātahi me whakaatu e te takiutu ngā hua ka taea te kōwhiri, pēnei i:
 
 Whai muri i te kōwhiri i tētahi hua e wātea ana, me whakauru te whakarāpopototanga ota i te hua rēhita rohe me te ingoa rohe kua kōwhiria.
 
-## Manatokonga
+## Manatokonga {#verification}
 
 1. Whakatuwheratia te whārangi kāinga.
 2. Rapua tētahi ingoa kau, hei tauira `example`.
@@ -71,7 +71,7 @@ Whai muri i te kōwhiri i tētahi hua e wātea ana, me whakauru te whakarāpopot
 6. Pāwhiritia **Kōwhiri** mō tētahi rohe e wātea ana.
 7. Whakaūngia kei roto i te whakarāpopototanga ota ko `Domain Registration - example.com`, ko te rohe kua kōwhiria rānei.
 
-## Raparongoā
+## Raparongoā {#troubleshooting}
 
 - Ki te kore he rārangi e puta, tirohia te ripa whatunga pūtirotiro mō `admin-ajax.php?action=wu_domain_search`, ā, whakaūngia ka whakahoki mai i ngā `domains`, i ngā `results` rānei kāore i te putu.
 - Ki te rahua te manatoko o te puka takiutu i te wā e tiaki ana, tāpirihia ngā āpure pūkete e hiahiatia ana pērā i **Ingoa kaiwhakamahi**.

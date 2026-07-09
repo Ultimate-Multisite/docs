@@ -4,11 +4,11 @@ title: පෙරහන - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 slugfied ජාල විකල්ප අගය ආපසු ලබා දෙයි.
 
-## පරාමිතීන්
+## පරාමිතීන් {#parameters}
 
 | නම | වර්ගය | විස්තරය |
 |------|------|-------------|
@@ -16,13 +16,13 @@ slugfied ජාල විකල්ප අගය ආපසු ලබා දෙය
 | $option_name | `string` | විකල්ප නාමය. |
 | $default | `mixed` | පෙරනිමි අගය. |
 
-### සිට
+### සිට {#since}
 
 - 1.0.0
-### මූලාශ්‍රය
+### මූලාශ්‍රය {#source}
 
 126 වන පේළියේ [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) තුළ නිර්වචනය කර ඇත
 
 
-## ආපසු ලබාදීම
+## ආපසු ලබාදීම {#returns}
 slugfield ජාල විකල්ප අගය.

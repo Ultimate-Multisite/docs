@@ -3,9 +3,9 @@ title: Multi-hálózatos változtathatatoló lista
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network Kiadásló Napló
+# Multi-Network Kiadásló Napló {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Új: Hálózat sablon előnézője — vásárlás előtt böngészhet és előnézheti a hálózat sablonokat egy élő panelen.
 * Új: Hálózat sablon választó a fizetési folyamatban — az ügyfelek a regisztrációs fizetési folyamat során kiválaszthatnak egy hálózat sablont.
 * Új: Hálózat-közötti mágikus link SSO — az ügyfelek zökkenőmentesen férhetnek hozzá a külső hálózatokhoz a mágikus link hitelesítéssel.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Javítás: Megvédi a site query scope-ban az undefined `network_id` kulcsát.
 * Javítás: A hálózat jogosultsági ellenőrzés a kontextusváltás előtt megakadályozza a `wpdb` táblakülönbségi hibaüzeneteket.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Javítás: Új hálózat létrehozása.
 * Javítás: Menüek megjelenítése.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Frissítve a Plugin Update Checker v5-re
 * Hozzáadva modern WordPress plugin fejléceket
 * Javítottuk a kompatibilitást az utolsó WordPress verziókkal
 
-### 1.0.2
+### 1.0.2 {#102}
 * Hibajavítások és teljesítményjavítások
 * Javítottuk a hálózat izolációt
 
-### 1.0.0
+### 1.0.0 {#100}
 * Első kiadás
 * Core multi-network funkciók
 * Integráció a Multisite Ultimate-lel

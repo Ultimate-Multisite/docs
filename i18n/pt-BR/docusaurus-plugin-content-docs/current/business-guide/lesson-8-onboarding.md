@@ -3,15 +3,15 @@ title: 'Lição 8: Onboarding de Clientes'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lição 8: Integração do Cliente (Onboarding)
+# Lição 8: Integração do Cliente (Onboarding) {#lesson-8-customer-onboarding}
 
 Conseguir que um cliente se cadastre é apenas metade do trabalho. Se ele fizer login, se sentir sobrecarregado e nunca mais voltar, você o perdeu. Esta lição desenha a experiência que transforma um novo cadastro em um cliente ativo e engajado.
 
-## Onde Paramos
+## Onde Paramos {#where-we-left-off}
 
 O FitSite está totalmente personalizado com um fluxo de checkout funcional. Agora, vamos focar no que acontece depois que o dono de um estúdio de fitness completa o cadastro e acessa o novo site pela primeira vez.
 
-## Por Que o Onboarding é Importante
+## Por Que o Onboarding é Importante {#why-onboarding-matters}
 
 Os primeiros 30 minutos após o cadastro determinam se o cliente vai ficar ou se vai desistir (churn). Um dono de estúdio de fitness que:
 
@@ -21,9 +21,9 @@ Os primeiros 30 minutos após o cadastro determinam se o cliente vai ficar ou se
 
 Os seus templates de nicho (Lição 4) cuidam do primeiro ponto. Esta lição cuida do segundo.
 
-## A Experiência do Primeiro Login
+## A Experiência do Primeiro Login {#the-first-login-experience}
 
-### Widget de Dashboard de Boas-Vindas
+### Widget de Dashboard de Boas-Vindas {#welcome-dashboard-widget}
 
 Crie um widget de dashboard personalizado que receba os novos clientes e os guie durante a configuração. Isso deve aparecer de forma proeminente quando eles fizerem o primeiro login.
 
@@ -37,7 +37,7 @@ Crie um widget de dashboard personalizado que receba os novos clientes e os guie
 
 Cada passo deve linkar diretamente para a página ou configuração relevante. Sem precisar vasculhar menus.
 
-### Simplifique o Dashboard
+### Simplifique o Dashboard {#simplify-the-dashboard}
 
 Os novos clientes não precisam ver todos os itens de menu do WordPress. Considere:
 
@@ -47,29 +47,29 @@ Os novos clientes não precisam ver todos os itens de menu do WordPress. Conside
 
 O addon [Plugin & Theme Manager](/addons/plugin-and-theme-manager) pode ajudar a controlar o que os clientes veem.
 
-## Sequência de E-mail de Boas-Vindas
+## Sequência de E-mail de Boas-Vindas {#welcome-email-sequence}
 
 Um único e-mail de boas-vindas não é suficiente. Configure uma sequência que guie os clientes durante a primeira semana:
 
-### E-mail 1: Boas-Vindas (Imediatamente após o cadastro)
+### E-mail 1: Boas-Vindas (Imediatamente após o cadastro) {#email-1-welcome-immediately-after-signup}
 
 - Assunto: "Bem-vindo ao FitSite — o site do seu estúdio está no ar"
 - Conteúdo: Link de login, passos de início rápido, link para recursos de ajuda
 - Tom: Animado, encorajador, específico para fitness
 
-### E-mail 2: Primeiras Vitórias (Dia 1)
+### E-mail 2: Primeiras Vitórias (Dia 1) {#email-2-quick-wins-day-1}
 
 - Assunto: "3 coisas para fazer primeiro no seu FitSite"
 - Conteúdo: Adicionar seu logo, atualizar a imagem principal da página inicial, adicionar sua grade de aulas
 - Inclua capturas de tela mostrando exatamente onde clicar
 
-### E-mail 3: Deixe Com a Sua Cara (Dia 3)
+### E-mail 3: Deixe Com a Sua Cara (Dia 3) {#email-3-make-it-yours-day-3}
 
 - Assunto: "Destaque o seu site de fitness"
 - Conteúdo: Personalizar cores, adicionar fotos de instrutores, escrever a história do seu estúdio
 - Link para exemplos de ótimos sites de fitness na plataforma
 
-### E-mail 4: Lançamento (Dia 7)
+### E-mail 4: Lançamento (Dia 7) {#email-4-go-live-day-7}
 
 - Assunto: "Pronto para compartilhar seu FitSite com o mundo?"
 - Conteúdo: Checklist do que verificar antes de compartilhar, como conectar um domínio personalizado (se estiver em Growth/Pro), dicas de compartilhamento em redes sociais
@@ -78,11 +78,11 @@ Um único e-mail de boas-vindas não é suficiente. Configure uma sequência que
 Use [Webhooks](/user-guide/integrations/webhooks) ou [Zapier](/user-guide/integrations/zapier) para acionar esses e-mails através da sua plataforma de marketing por e-mail. Isso lhe dá mais controle sobre o tempo e permite que você acompanhe o engajamento.
 :::
 
-## Recursos de Ajuda
+## Recursos de Ajuda {#help-resources}
 
 Crie conteúdo de ajuda específico para o nicho que responda às perguntas que os donos de estúdios de fitness realmente fazem:
 
-### Artigos da Base de Conhecimento
+### Artigos da Base de Conhecimento {#knowledge-base-articles}
 
 - "Como atualizar sua grade de aulas"
 - "Adicionar e editar perfis de instrutores"
@@ -92,7 +92,7 @@ Crie conteúdo de ajuda específico para o nicho que responda às perguntas que 
 
 Escreva estes artigos para usuários não técnicos. Use capturas de tela. Evite jargões do WordPress.
 
-### Tutoriais em Vídeo
+### Tutoriais em Vídeo {#video-walkthroughs}
 
 Gravações de tela curtas (2-3 minutos) mostrando:
 
@@ -103,7 +103,7 @@ Gravações de tela curtas (2-3 minutos) mostrando:
 
 Estes não precisam ser produções polidas. O que importa é ser claro, útil e específico para o nicho.
 
-## A Página da Conta
+## A Página da Conta {#the-account-page}
 
 Ultimate Multisite inclui uma [Account Page] voltada para o cliente onde ele gerencia a assinatura. Personalize-a para:
 
@@ -112,7 +112,7 @@ Ultimate Multisite inclui uma [Account Page] voltada para o cliente onde ele ger
 - Fornecer histórico de cobrança e downloads de faturas
 - Linkar para recursos de ajuda
 
-## Medindo o Sucesso do Onboarding
+## Medindo o Sucesso do Onboarding {#measuring-onboarding-success}
 
 Acompanhe estes indicadores para saber se o seu processo de onboarding está funcionando:
 
@@ -121,7 +121,7 @@ Acompanhe estes indicadores para saber se o seu processo de onboarding está fun
 - **Tickets de suporte de novos clientes**: Um volume alto significa que o seu onboarding tem falhas
 - **Conversão de teste para pago**: Se você oferece testes, qual porcentagem converte?
 
-## O FitSite Network Até Agora
+## O FitSite Network Até Agora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Pronto para estratégia de preços (próxima lição)
 ```
 
-## O Que Construímos Nesta Lição
+## O Que Construímos Nesta Lição {#what-we-built-this-lesson}
 
 - **Uma experiência guiada de primeiro login** com um widget Quick Start
 - **Um dashboard simplificado** focado em tarefas de gestão de sites de fitness

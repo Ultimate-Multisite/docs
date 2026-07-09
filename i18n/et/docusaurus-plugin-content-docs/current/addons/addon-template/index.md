@@ -3,25 +3,25 @@ title: Lisandmooduli mall
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Lisamooduli mall
+# Lisamooduli mall {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Nõuded
+## Nõuded {#requirements}
 
 - WordPress 5.3 või uuem
 - PHP 7.4 või uuem
 - Multisite Ultimate plugin (aktiivne)
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 1. Laadi lisamooduli failid üles oma `/wp-content/plugins/` kataloogi
 2. Aktiveeri plugin WordPressi menüü „Pluginad” kaudu
 3. Seadista lisamooduli sätted võrgu administraatori vaates
 
-## Arendus
+## Arendus {#development}
 
-### Seadistamine
+### Seadistamine {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projekti struktuur
+### Projekti struktuur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Koodi moderniseerimise reeglid
 ```
 
-### Testimine
+### Testimine {#testing}
 
 Lisamoodul sisaldab terviklikku testimisraamistikku:
 
@@ -75,44 +75,44 @@ Lisamoodul sisaldab terviklikku testimisraamistikku:
 - **Testikattuvus**: Seadistatud koodikattuvuse jälgimiseks
 - **Multisite’i testimine**: Testid käivitatakse multisite-keskkonnas
 
-### Koodistandardid
+### Koodistandardid {#code-standards}
 
 - **WordPressi koodistandardid**: Jõustatakse PHPCS-i kaudu
 - **PHP 7.4+ ühilduvus**: Toetatud on kaasaegsed PHP funktsioonid
 - **Staatiline analüüs**: PHPStan integratsioon tüübikontrolliks
 - **Koodi moderniseerimine**: Rectori reeglid PHP uuenduste jaoks
 
-### Ehitussüsteem
+### Ehitussüsteem {#build-system}
 
 - **Ressursside töötlemine**: CSS/JS failide minimeerimine
 - **Tõlkimine**: POT-faili genereerimine
 - **Pakendamine**: Arhiivi loomine levitamiseks
 - **Arendusrežiim**: Minimeerimata ressursid silumiseks
 
-## Konfiguratsioon
+## Konfiguratsioon {#configuration}
 
 Lisamoodul toetab mitmesuguseid konfiguratsioonivalikuid, millele pääseb ligi võrgu administraatori liidese kaudu.
 
-## Hookid ja filtrid
+## Hookid ja filtrid {#hooks-and-filters}
 
-### Toimingud
+### Toimingud {#actions}
 
 - `ultimate-multisite-addon-template_init` - Käivitatakse pärast lisamooduli initsialiseerimist
 - `ultimate-multisite-addon-template_loaded` - Käivitatakse pärast kõigi lisamooduli failide laadimist
 
-### Filtrid
+### Filtrid {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Muuda lisamooduli sätteid
 - `ultimate-multisite-addon-template_enabled` - Kirjuta üle lisamooduli lubamise/keelamise olek
 
-## Litsents
+## Litsents {#license}
 
 See lisamoodul on litsentsitud GPL v3 või uuema litsentsi alusel.
 
-## Tugi
+## Tugi {#support}
 
 Toe ja dokumentatsiooni jaoks külasta [MultisiteUltimate.com](https://multisiteultimate.com)
-## Muudatuste logi
+## Muudatuste logi {#changelog}
 
 - Versioon 1.0.1 (2025-09-28): nimeta prefiks ümber väärtuseks ultimate-multisite; uuenda tekstidoomenit; tõsta versiooni.
 

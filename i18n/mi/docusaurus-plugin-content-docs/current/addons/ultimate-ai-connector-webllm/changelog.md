@@ -3,9 +3,9 @@ title: Rangitaki huringa o te Tūhono AI Tino mō WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector mō WebLLM Rangitaki Panonitanga
+# Ultimate AI Connector mō WebLLM Rangitaki Panonitanga {#ultimate-ai-connector-for-webllm-changelog}
 
-## Putanga 1.1.0 — I tukuna i te 2026-04-09
+## Putanga 1.1.0 — I tukuna i te 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Hou: He widget kōrerorero mānu me te tohu tūnga admin-bar — ka taea e tētahi kaiwhakamahi kua takiuru te tono tika ki te LLM taha-pūtirotiro mai i te pito mua.
 * Hou: SharedWorker runtime — ināianei ka rere te pūkaha MLC i roto i tētahi SharedWorker kia tiritiri ai ngā ripa maha i tētahi wātū GPU kotahi, kaua e tauwhāinga mōna.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Whakatika: Honoa a WebLLM ki te tātari wpai_preferred_text_models kia aratakina ai te āhuatanga AI Experiments ki te pūkaha pūtirotiro ina kua whirihoratia tētahi tauira.
 * Kua whakapai ake: Ngā whakatikatika cache-busting, content normalisation, me te tohutoro-pūmārō i puta ake i te whakamātautau pito-ki-te-pito.
 
-## Putanga 1.0.0 — Tukunga Tuatahi
+## Putanga 1.0.0 — Tukunga Tuatahi {#version-100--initial-release}

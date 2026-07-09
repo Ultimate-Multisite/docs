@@ -3,11 +3,11 @@ title: Pluginate haldamise võimalused
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Lisamoodulite haldamise võimed
+# Lisamoodulite haldamise võimed {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 sisaldab **7 lisamoodulite haldamise võimet**, mida AI-assistent saab vestluse ajal kasutada. Need võimed pakuvad programmilist juhtimist WordPressi lisamoodulite üle, mis on installitud [lisamoodulite koostaja ja liivakasti süsteemi](../../user-guide/administration/plugin-builder-and-sandbox) kaudu.
 
-## Võimete ülevaade
+## Võimete ülevaade {#abilities-overview}
 
 | Võime | Slug | Kirjeldus |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 sisaldab **7 lisamoodulite haldamise võimet**, mida AI-a
 | Installi lisamoodul | `install_plugin` | Juurutab liivakastis oleva lisamooduli aktiivsesse WordPressi lisamoodulite kataloogi. |
 | Aktiveeri lisamoodul | `activate_plugin` | Aktiveerib liivakastis oleva lisamooduli wp-env liivakastikeskkonnas. |
 
-## Lisamooduli installija API
+## Lisamooduli installija API {#plugin-installer-api}
 
 Lisamooduli installija haldab failisüsteemi toiminguid lisamoodulite juurutamisel või eemaldamisel. Peamised käitumisviisid:
 
@@ -28,7 +28,7 @@ Lisamooduli installija haldab failisüsteemi toiminguid lisamoodulite juurutamis
 - **Uuendamine**: Asendab olemasolevad lisamooduli failid. Deaktiveerib lisamooduli enne kirjutamist, et vältida osalise oleku vigu.
 - **Kustutamine slug'i järgi**: Leiab lisamooduli kataloogi slug'i järgi, deaktiveerib selle kõigil saitidel ja seejärel eemaldab kataloogi.
 
-### Kohandatud installikäsitleja registreerimine
+### Kohandatud installikäsitleja registreerimine {#registering-a-custom-install-handler}
 
 Saad installi elutsüklisse haakuda, kasutades toiminguid `gratis_ai_plugin_installer_before_install` ja `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ökosüsteemi register
+## Ökosüsteemi register {#ecosystem-registry}
 
 Võimed registreeritakse **lisamoodulite ökosüsteemi registri** kaudu. Register seob võimete slug'id nende käsitlejaklassidega ja teeb need kättesaadavaks AI agenti tööriistade jaoturile.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanneri integratsioon
+## HookScanneri integratsioon {#hookscanner-integration}
 
 Võimed `create_plugin` ja `update_plugin` käivitavad automaatselt **HookScanneri** vastloodud koodi vastu. HookScanner tagastab loendi WordPressi action- ja filter-hook'idest, mille lisamoodul registreeris.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner jätab kataloogid `vendor/` ja `node_modules/` automaatselt vahele.
 
-## Asünkroonsete tööde arhitektuur
+## Asünkroonsete tööde arhitektuur {#async-job-architecture}
 
 Pika kestusega lisamooduli toimingud (genereerimine, installimine) saadetakse välja **asünkroonsete töödena** koos reaalajas edenemise jälgimisega. AI vestlusliides küsib edenemist ja voogedastab olekuuuendused kasutajale:
 

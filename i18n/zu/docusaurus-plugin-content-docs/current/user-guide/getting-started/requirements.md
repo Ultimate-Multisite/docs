@@ -3,11 +3,11 @@ title: Izimfuneko
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Izimfuneko ze-Ultimate Multisite
+# Izimfuneko ze-Ultimate Multisite {#ultimate-multisite-requirements}
 
 Into yokuqala ongase uzibuze yona ngaphambi kokuthenga i-Ultimate Multisite ukuthi yiziphi izimfuneko zokuqalisa i-plugin yethu. Nokho, ngenhlanhla, kunezimfuneko ezimbalwa kuphela eziyisisekelo zokuqalisa i-Ultimate Multisite: **igama lesizinda** , **umhlinzeki wokusingatha** omuhle kanye nokufakwa kwe-WordPress **Multisite**. Yilokho kuphela okudingayo!
 
-## Igama Lesizinda
+## Igama Lesizinda {#domain-name}
 
 Okokuqala, ake sikhulume ngegama lesizinda.
 
@@ -17,7 +17,7 @@ I-plugin yethu inikeza izinsizakalo zokubhaliselwe, ukuqoqwa kwezinkokhelo, amaf
 
 Noma iyiphi indawo oyikhethayo ingaphathwa kusetshenziswa i-plugin yethu inqobo nje uma uthengisa amawebhusayithi njengesevisi! Qiniseka ukuthi ukhetha igama lesizinda elihambisana nohlelo lwakho lwebhizinisi.
 
-## Umhlinzeki Wokusingatha
+## Umhlinzeki Wokusingatha {#hosting-provider}
 
 Manje njengoba usunegama lesizinda elihehayo elimele indawo yakho nebhizinisi lakho, uzodinga ukukhetha inkampani enhle yokusingatha iwebhu ukuze isingathe inethiwekhi yakho nge-Ultimate Multisite. Kukhona izinketho ezinhle emakethe. Abanye abahlinzeki bokusingatha bahlanganiswa kahle ne-Ultimate Multisite, okungaba yisici esinqumayo kuye ngokuthi yini ohlela ukuyakha.
 
@@ -25,7 +25,7 @@ I-Ultimate Multisite kufanele isebenze kunoma yimuphi umhlinzeki wokusingatha. U
 
 Mayelana nemininingwane yeseva, ayikho ifomula ethile njengoba kuzoncika ezicini nasemisebenzini ozoyinikeza kanye nosayizi wenethiwekhi yakho. Ukusingatha okwabiwayo kungaba ukuqala okuhle, kodwa lapho nje inethiwekhi yakho iqala ukukhula, cishe uzodinga i-VPS ezinikele.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Manje, ake sikhulume kancane ngokufakwa kwe-WordPress Multisite.
 

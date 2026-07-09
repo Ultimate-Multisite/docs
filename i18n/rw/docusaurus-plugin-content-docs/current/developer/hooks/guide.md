@@ -3,15 +3,15 @@ title: Amabwiriza yo gukoresha Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Imfashanyigisho yo Gukoresha Hooks
+# Imfashanyigisho yo Gukoresha Hooks {#hooks-usage-guide}
 
 Ultimate Multisite itanga action hooks zirenga 200 na filter hooks zirenga 280. Uru rupapuro rusobanura hooks zikoreshwa cyane hamwe n’ingero zifatika. Ku rutonde rwuzuye rwakozwe mu buryo bwikora, reba izindi paji ziri muri iki gice.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Ubuzima bw’Umukiriya
+### Ubuzima bw’Umukiriya {#customer-lifecycle}
 
-#### Nyuma yo Gukora Umukiriya
+#### Nyuma yo Gukora Umukiriya {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Guhindura Imiterere y’Umukiriya
+#### Guhindura Imiterere y’Umukiriya {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks z’Urubuga
+### Hooks z’Urubuga {#site-hooks}
 
-#### Nyuma y’uko Urubuga Rutangajwe
+#### Nyuma y’uko Urubuga Rutangajwe {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Mbere yo Gushyiraho Template
+#### Mbere yo Gushyiraho Template {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooks z’Ubusabane
+### Hooks z’Ubusabane {#membership-hooks}
 
-#### Kwimuka kw’Imiterere
+#### Kwimuka kw’Imiterere {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooks zo Kwishyura
+### Hooks zo Kwishyura {#payment-hooks}
 
-#### Kwishyura Byarangiye / Byanze
+#### Kwishyura Byarangiye / Byanze {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooks za Checkout
+### Hooks za Checkout {#checkout-hooks}
 
-#### Mbere yo Gutunganya / Nyuma yo Kurangiza
+#### Mbere yo Gutunganya / Nyuma yo Kurangiza {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooks za Domain
+### Hooks za Domain {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Filters z’Ibiciro
+### Filters z’Ibiciro {#pricing-filters}
 
-#### Igiteranyo cya Cart
+#### Igiteranyo cya Cart {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Ibipimo by’Imisoro
+#### Ibipimo by’Imisoro {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Filters za Template
+### Filters za Template {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Filters z’Imipaka
+### Filters z’Imipaka {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Filters za Gateway
+### Filters za Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Imyanya y’Ifishi ya Checkout
+### Imyanya y’Ifishi ya Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Ibirimo bya Email
+### Ibirimo bya Email {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

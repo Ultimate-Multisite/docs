@@ -4,13 +4,13 @@ title: Omume - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Action: wp_ultimo_vat_deactivation
+# Action: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
 
 Kwe ka akụkụ ndị ọzọ nke plugin tinye usoro ha maka deactivation
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 1.9.6
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-vat/blob/main/inc/class-hooks.php#L101) na ahịrị 101

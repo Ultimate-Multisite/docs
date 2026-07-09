@@ -3,11 +3,11 @@ title: Visibilità delle capacità
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibilità delle Abilità
+# Visibilità delle Abilità {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introduce i controlli di **Visibilità delle Abilità** (Ability Visibility) che regolano quali ambienti espongono ciascuna abilità. Questo permette agli amministratori di definire con precisione quali capacità dell'agente sono disponibili tramite REST API, server MCP, integrazioni WooCommerce e altre interfacce.
 
-## Cos'è la Visibilità delle Abilità?
+## Cos'è la Visibilità delle Abilità? {#what-is-ability-visibility}
 
 La Visibilità delle Abilità è un sistema di permessi che controlla:
 
@@ -18,9 +18,9 @@ La Visibilità delle Abilità è un sistema di permessi che controlla:
 
 Ogni abilità ha un livello di visibilità che ne determina la disponibilità in diversi ambienti.
 
-## Livelli di Visibilità
+## Livelli di Visibilità {#visibility-levels}
 
-### Pubblica (Public)
+### Pubblica (Public) {#public}
 
 Le **abilità pubbliche** sono disponibili ovunque:
 
@@ -32,7 +32,7 @@ Le **abilità pubbliche** sono disponibili ovunque:
 
 Esempio: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interna (Internal)
+### Interna (Internal) {#internal}
 
 Le **abilità interne** sono disponibili solo all'interno della tua installazione WordPress:
 
@@ -43,7 +43,7 @@ Le **abilità interne** sono disponibili solo all'interno della tua installazion
 
 Esempio: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner
+### Partner {#partner}
 
 Le **abilità partner** sono disponibili solo per i partner inseriti nella lista consentiti:
 
@@ -54,7 +54,7 @@ Le **abilità partner** sono disponibili solo per i partner inseriti nella lista
 
 Esempio: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabilitata (Disabled)
+### Disabilitata (Disabled) {#disabled}
 
 Le **abilità disabilitate** non sono disponibili da nessuna parte:
 
@@ -63,15 +63,15 @@ Le **abilità disabilitate** non sono disponibili da nessuna parte:
 - Non sono disponibili nei pannelli di amministrazione
 - Utile per abilità deprecate o sperimentali
 
-## Gestione della Visibilità delle Abilità
+## Gestione della Visibilità delle Abilità {#managing-ability-visibility}
 
-### Accesso alle Impostazioni di Visibilità delle Abilità
+### Accesso alle Impostazioni di Visibilità delle Abilità {#accessing-ability-visibility-settings}
 
 1. Vai su **Amministrazione WordPress** → **Superdav AI Agent** → **Impostazioni**
 2. Clicca sulla scheda **Abilità** (Abilities)
 3. Vedrai un elenco di tutte le abilità installate con i rispettivi livelli di visibilità
 
-### Visualizzazione dei Dettagli dell'Abilità
+### Visualizzazione dei Dettagli dell'Abilità {#viewing-ability-details}
 
 Clicca su un'abilità per vedere:
 
@@ -82,7 +82,7 @@ Clicca su un'abilità per vedere:
 - **Ultimo aggiornamento**: Quando è stata modificata l'ultima volta la visibilità
 - **Stato**: Riconosciuta o Non classificata
 
-### Modifica dei Livelli di Visibilità
+### Modifica dei Livelli di Visibilità {#changing-visibility-levels}
 
 Per cambiare la visibilità di un'abilità:
 
@@ -100,7 +100,7 @@ Cambiare in: Partner
 Lista consentiti dei partner: partner-123, partner-456
 ```
 
-### Operazioni di Gruppo
+### Operazioni di Gruppo {#bulk-operations}
 
 Per cambiare la visibilità di più abilità:
 
@@ -108,11 +108,11 @@ Per cambiare la visibilità di più abilità:
 2. Seleziona un nuovo livello di visibilità dal menu a discesa delle azioni di gruppo
 3. Clicca su **Applica**
 
-## Lista Consentiti dei Partner
+## Lista Consentiti dei Partner {#partner-allow-list}
 
 La **lista consentiti dei partner** controlla quali partner esterni possono accedere alle abilità di livello Partner.
 
-### Aggiungere Partner
+### Aggiungere Partner {#adding-partners}
 
 1. Vai su **Superdav AI Agent** → **Impostazioni** → **Partner**
 2. Clicca su **Aggiungi Partner**
@@ -120,7 +120,7 @@ La **lista consentiti dei partner** controlla quali partner esterni possono acce
 4. Opzionalmente aggiungi un nome e una descrizione del partner
 5. Clicca su **Salva**
 
-### Assegnare Abilità ai Partner
+### Assegnare Abilità ai Partner {#assigning-abilities-to-partners}
 
 Dopo aver aggiunto un partner:
 
@@ -130,7 +130,7 @@ Dopo aver aggiunto un partner:
 4. Nella sezione "Lista consentiti dei partner", spunta le caselle per i partner che dovrebbero avere accesso
 5. Clicca su **Salva**
 
-### Revocare l'Accesso del Partner
+### Revocare l'Accesso del Partner {#revoking-partner-access}
 
 Per rimuovere l'accesso di un partner:
 
@@ -140,11 +140,11 @@ Per rimuovere l'accesso di un partner:
 
 Il partner perderà immediatamente l'accesso a quell'abilità.
 
-## Abilità Non Classificate
+## Abilità Non Classificate {#unclassified-abilities}
 
 Quando installi un'abilità di terze parti che Superdav AI Agent non riconosce, viene contrassegnata come **Non classificata** (Unclassified).
 
-### Avviso Amministratore per Abilità Non Classificate
+### Avviso Amministratore per Abilità Non Classificate {#admin-notice-for-unclassified-abilities}
 
 Vedrai un avviso amministratore:
 
@@ -161,7 +161,7 @@ Si prega di rivederle e classificarle.
 [Rivedi Abilità] [Ignora]
 ```
 
-### Revisione delle Abilità Non Classificate
+### Revisione delle Abilità Non Classificate {#reviewing-unclassified-abilities}
 
 1. Clicca su **Rivedi Abilità** (Review Abilities) nell'avviso
 2. Per ogni abilità non classificata, vedrai:
@@ -178,7 +178,7 @@ Si prega di rivederle e classificarle.
 
 4. Clicca su **Classifica** (Classify) per salvare la tua decisione
 
-### Perché Classificare le Abilità Non Classificate?
+### Perché Classificare le Abilità Non Classificate? {#why-classify-unclassified-abilities}
 
 Classificare le abilità:
 
@@ -187,9 +187,9 @@ Classificare le abilità:
 - **Abilita funzionalità**: Una volta classificate, le abilità diventano disponibili
 - **Documenta le decisioni**: Le tue scelte vengono registrate a scopo di audit
 
-## Visibilità in Diversi Ambienti
+## Visibilità in Diversi Ambienti {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 Le **abilità pubbliche** sono disponibili tramite endpoint REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 Le **abilità interne e partner** non sono disponibili tramite REST API.
 
-### Server MCP
+### Server MCP {#mcp-servers}
 
 Le **abilità pubbliche** sono disponibili tramite MCP:
 
@@ -217,7 +217,7 @@ Le **abilità interne** non sono esposte tramite MCP.
 
 Le **abilità partner** sono disponibili solo con credenziali di partner.
 
-### Integrazione WooCommerce
+### Integrazione WooCommerce {#woocommerce-integration}
 
 Le **abilità pubbliche** relative a WooCommerce sono disponibili:
 
@@ -227,7 +227,7 @@ Le **abilità pubbliche** relative a WooCommerce sono disponibili:
 
 Le **abilità interne** non sono esposte a WooCommerce.
 
-### Interfaccia Chat
+### Interfaccia Chat {#chat-interface}
 
 **Tutte le abilità** (Pubbliche, Interne, Partner) sono disponibili in chat, a seconda dei permessi dell'utente:
 
@@ -235,34 +235,34 @@ Le **abilità interne** non sono esposte a WooCommerce.
 - Gli utenti normali vedono solo le abilità Pubbliche
 - I partner vedono abilità Pubbliche + Partner (se inseriti nella lista consentiti)
 
-## Best Practice di Sicurezza
+## Best Practice di Sicurezza {#security-best-practices}
 
-### Principio del Minimo Privilegio
+### Principio del Minimo Privilegio {#principle-of-least-privilege}
 
 - Imposta le abilità con la visibilità più restrittiva che ne permetta comunque l'uso
 - Usa la visibilità Partner per operazioni sensibili
 - Disabilita le abilità che non usi
 
-### Audit Regolari
+### Audit Regolari {#regular-audits}
 
 - Rivedi la visibilità delle abilità mensilmente
 - Controlla la presenza di abilità non classificate
 - Rimuovi l'accesso per i partner inutilizzati
 
-### Logging e Monitoraggio
+### Logging e Monitoraggio {#logging-and-monitoring}
 
 - Monitora quali abilità vengono utilizzate di più
 - Traccia i modelli di accesso dei partner
 - Ricevi avvisi su utilizzi anomali delle abilità
 
-### Abilità di Terze Parti
+### Abilità di Terze Parti {#third-party-abilities}
 
 - Rivedi le abilità di terze parti prima di attivarle
 - Classificale esplicitamente
 - Inizia con visibilità Interna o Partner
 - Promuovi a Pubblica solo dopo un'accurata verifica
 
-## Risoluzione dei Problemi
+## Risoluzione dei Problemi {#troubleshooting}
 
 **Un'abilità non appare nell'elenco**
 - Verifica che l'abilità sia installata e attiva
@@ -285,7 +285,7 @@ Le **abilità interne** non sono esposte a WooCommerce.
 - Controlla che la tua classificazione sia stata salvata
 - Verifica che il plugin che fornisce l'abilità sia aggiornato
 
-## Migrazione dalla Modalità Legacy
+## Migrazione dalla Modalità Legacy {#migration-from-legacy-mode}
 
 Se stai aggiornando da una versione precedente di Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Se stai aggiornando da una versione precedente di Superdav AI Agent:
 
 Consulta **Migrazione Modalità Terze Parti** per maggiori dettagli sulla transizione all'integrazione nativa Abilities API.
 
-## Prossimi Passi
+## Prossimi Passi {#next-steps}
 
 Dopo aver configurato la visibilità delle abilità:
 

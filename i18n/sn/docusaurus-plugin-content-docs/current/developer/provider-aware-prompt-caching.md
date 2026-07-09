@@ -3,11 +3,11 @@ title: Kuchengetwa kwePrompt Kunoenderana neMupi
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt Caching Inoziva Provider
+# Prompt Caching Inoziva Provider {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 inounza **provider-aware prompt caching**, iyo inogadzirisa mutengo weAPI nekumhanya nekuchengetedza maprompt pakati peLLM providers vakasiyana. Provider mumwe nemumwe ane nzira nemagadzirirwo akasiyana e caching.
 
-## Pfupiso
+## Pfupiso {#overview}
 
 Prompt caching inokubvumira kuti:
 
@@ -23,11 +23,11 @@ Providers vakasiyana vanoita caching nenzira dzakasiyana:
 - **OpenRouter**: Caching yakanangana neprovider
 - **Vertex Anthropic**: Prompt caching ine cache control
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini inopa kutungamirira cache zvakajeka kuburikidza ne `cachedContents` API.
 
-### Magadzirirwo
+### Magadzirirwo {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Kugadzira Prompt Yakachengetedzwa muCache
+### Kugadzira Prompt Yakachengetedzwa muCache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Kushandisa Prompt Yakachengetedzwa muCache
+### Kushandisa Prompt Yakachengetedzwa muCache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache Lifecycle
+### Cache Lifecycle {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Maitiro Akanakisisa eGemini
+### Maitiro Akanakisisa eGemini {#best-practices-for-gemini}
 
 - **Isa TTL yakakodzera**: Enzanisa kuchengetedza mutengo ne cache staleness
 - **Chengetedza system prompts mu cache**: Shandisazve system prompt imwe chete pazvikumbiro
 - **Tarisa mashandisirwo e cache**: Tevera kuti ma cache api anoshandiswa zvakanyanya
 - **Bvisa ma cache akapera nguva**: Nguva nenguva bvisa ma cache asingachashandiswi
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI inotsigira prompt caching ine kutungamirirwa kweTTL otomatiki.
 
-### Magadzirirwo
+### Magadzirirwo {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Kugonesa Caching
+### Kugonesa Caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Headers
+### Cache Headers {#cache-headers}
 
 Azure OpenAI inoshandisa HTTP headers pakutonga cache:
 
@@ -152,7 +152,7 @@ Mivalue inotsigirwa:
 - `no_cache`: Usachengetedze chikumbiro ichi mu cache
 - `no_store`: Usachengetedze mu cache uye usashandisazve
 
-### Kuongorora Mashandisirwo eCache
+### Kuongorora Mashandisirwo eCache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Maitiro Akanakisisa eAzure OpenAI
+### Maitiro Akanakisisa eAzure OpenAI {#best-practices-for-azure-openai}
 
 - **Shandisa maprompt anoenderana**: Maprompt akafanana anobatsirwa ne caching
 - **Isa TTL ine mwero**: Enzanisa mutengo nekutsva
 - **Tarisa cache metrics**: Tevera kugadzirwa kwe cache zvichienzaniswa ne hits
 - **Unganidza zvikumbiro zvakafanana**: Ronga zvikumbiro pamwe chete kuti uwedzere cache hits
 
-## OpenRouter: Caching Yakanangana neProvider
+## OpenRouter: Caching Yakanangana neProvider {#openrouter-provider-specific-caching}
 
 OpenRouter inotsigira caching kuburikidza neproviders vari pasi payo (OpenAI, Anthropic, nezvimwe).
 
-### Magadzirirwo
+### Magadzirirwo {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Kushandisa OpenRouter Caching
+### Kushandisa OpenRouter Caching {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Sarudzo Dzakanangana neProvider
+### Sarudzo Dzakanangana neProvider {#provider-specific-options}
 
 Providers vakasiyana vane nzira dzakasiyana dze caching:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Maitiro Akanakisisa eOpenRouter
+### Maitiro Akanakisisa eOpenRouter {#best-practices-for-openrouter}
 
 - **Ziva caching yeprovider wako**: Provider mumwe nemumwe ane nzira dzakasiyana
 - **Edza maitiro e caching**: Simbisa kuti caching inoshanda neprovider wawasarudza
 - **Tarisa mitengo**: Tevera kuchengetedza kunobva ku caching
 - **Shandisa models dzinoenderana**: Kuchinja models kunoputsa cache hits
 
-## Vertex Anthropic: Prompt Caching ine Cache Control
+## Vertex Anthropic: Prompt Caching ine Cache Control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) inotsigira prompt caching ine cache control yakajeka.
 
-### Magadzirirwo
+### Magadzirirwo {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Kushandisa Vertex Anthropic Caching
+### Kushandisa Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Mhando dzeCache Control
+### Mhando dzeCache Control {#cache-control-types}
 
 - **ephemeral**: Cache kwenguva yechikumbiro (default)
 - **persistent**: Cache muzvikumbiro zvakawanda (kana zvichitsigirwa)
 
-### Kuongorora Kushandiswa kweCache
+### Kuongorora Kushandiswa kweCache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Maitiro Akanakisisa eVertex Anthropic
+### Maitiro Akanakisisa eVertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Shandisa ephemeral caching**: Zvakanaka pakucaching kwechikamu chimwe chete
 - **Seta max_tokens zvakakodzera**: Enzanisa saizi yeCache nemutengo
 - **Ongorora cache metrics**: Tevera kushanda kwecache
 - **Edza nebasa rako**: Simbisa kuti caching inobatsira mashandisirwo ako
 
-## Zano reCaching Rinoyambuka Vapi
+## Zano reCaching Rinoyambuka Vapi {#cross-provider-caching-strategy}
 
-### Kugadziriswa Kwakabatana
+### Kugadziriswa Kwakabatana {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Kuziva Mupi
+### Kuziva Mupi {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Zano reFallback
+### Zano reFallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kuderedza Mutengo
+## Kuderedza Mutengo {#cost-optimization}
 
-### Verenga Kuchengetedza Mari
+### Verenga Kuchengetedza Mari {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Mazano Ekugadzirisa
+### Mazano Ekugadzirisa {#optimization-tips}
 
 - **Cache masystem prompts makuru**: Kuchengetedza mari kukuru
 - **Shandisazve context**: Cache magwaro econtext anoshandiswa kazhinji
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Ongorora kushanda kwecache**: Tevera mari chaiyo yachengetedzwa
 - **Gadzirisa TTL**: Enzanisa mutengo nekutsva kwezviri muCache
 
-## Kugadzirisa Matambudziko
+## Kugadzirisa Matambudziko {#troubleshooting}
 
-### Cache haisi kushandiswa
+### Cache haisi kushandiswa {#cache-not-being-used}
 
 - Simbisa kuti caching yakagoneswa mukugadziriswa
 - Tarisa kuti maprompts akafanana (caching inoda kufanana chaiko)
 - Simbisa kuti cache haisati yapera nguva
 - Tarisa miganho yeCache inoenderana nemupi
 
-### Kugadzirwa kweCache kuri kutadza
+### Kugadzirwa kweCache kuri kutadza {#cache-creation-failing}
 
 - Simbisa kuti saizi yeCache iri mukati memiganho yemupi
 - Tarisa kuti syntax yeCache control yakarurama
 - Ita shuwa kuti mupi anotsigira caching yemodel yako
 - Wongorora magwaro emupi kuti uone miganho
 
-### Mitengo isingatarisirwi
+### Mitengo isingatarisirwi {#unexpected-costs}
 
 - Ongorora kugadzirwa kweCache uchienzanisa necache read tokens
 - Simbisa kuti cache iri kunyatsoshandiswa
 - Tarisa cache misses dzinokonzerwa nekusiyana kwemaprompts
 - Funga kugadzirisa TTL kana zano reCache
 
-## Kuenzanisa Vapi
+## Kuenzanisa Vapi {#provider-comparison}
 
 | Chinhu | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Kuderedzwa kwemutengo | 90% | 90% | Zvinoenderana nemupi | 90% |
 | Kuongorora | Kwakadzama | Kuburikidza nemametrics | Zvinoenderana nemupi | Kuburikidza nekushandiswa |
 
-## Matanho Anotevera
+## Matanho Anotevera {#next-steps}
 
 1. **Sarudza mupi wako**: Sarudza zvichienderana nezvaunoda
 2. **Gadzirisa caching**: Gadzira caching inoenderana nemupi

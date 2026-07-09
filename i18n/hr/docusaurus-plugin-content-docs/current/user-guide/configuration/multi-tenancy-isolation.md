@@ -3,11 +3,11 @@ title: Izolacija za više najmirenja
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolacija u više najma (Multi-Tenancy Isolation)
+# Izolacija u više najma (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 podržava izolaciju baze podataka i datoteka po podsajtu za suverene najmehne (tenants). Ovo osigurava da se podaci najmena drže odvojeni, dok se zadržavaju mrežna podešavanja, fakturiranje i administracija na nivou mreže.
 
-## Strategija izolacije
+## Strategija izolacije {#isolation-strategy}
 
 Koristite suverenu izolaciju za klijente koji zahtijevaju jaču separaciju podataka, posvećeno skladištenje datoteka ili zasebnu granicu hosta.
 
@@ -18,7 +18,7 @@ Svaki suveren najem treba imati:
 - Unos u registar najema koji mapira sajt na njegovu bazu podataka, korijen putanja, ime hosta i model izolacije.
 - Rezultat provjere migracije prije nego što se najem smatra aktivnim.
 
-## Povezivanje hosta baze podataka (Database host binding)
+## Povezivanje hosta baze podataka (Database host binding) {#database-host-binding}
 
 Verzija 1.2.0 mijenja podrazumijevano ponašanje povezivanja hosta na istoj mašini za suverene instalacije. Vrijednosti na istoj mašini, kao što je `localhost`, normalizirane tako da Bedrock, FrankenPHP i containerizirani WordPress instalacije mogu dodijeliti i provjeriti dozvole prema stringu hosta koji MySQL zapravo vidi.
 
@@ -31,11 +31,11 @@ Prilikom konfiguriranja suverenog najema:
 
 Ako provjera prijavljuje neuspjeve u dodjeli, uporedite dozvole korisnika baze podataka najema s podešenim povezivanjem hosta. Korisnik dodijeljen za `user@localhost` je drugačiji od `user@127.0.0.1` ili `user@%`.
 
-## Korijen sustava datoteka (Filesystem root)
+## Korijen sustava datoteka (Filesystem root) {#filesystem-root}
 
 Korenski korijen (tenant root) treba biti stabilan pri ponovnom pokretanju i deployu. Izbjegavajte privremene putanje za mountove. Za instalacije u stilu Bedrocka, provjerite da li se tenant root usmjeruje na WordPress web root koji očekuje bootstrap tenancy-ja, a ne samo na projekt root.
 
-## Redoslijed provizije (Provisioning order)
+## Redoslijed provizije (Provisioning order) {#provisioning-order}
 
 Za nove suverene tenanate koristite ovaj redoslijed:
 
@@ -49,7 +49,7 @@ Za nove suverene tenanate koristite ovaj redoslijed:
 
 Ovaj redoslijed sprečava da se tenanti koji su djelomično izolirani primaju promet prije nego što je baza podataka, korisnici i sustavna datoteka spremni.
 
-## Tokovi upravljanja suverenim klijentima (Sovereign customer management flows)
+## Tokovi upravljanja suverenim klijentima (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 zadržava akcije upravljanja klijentima na glavnoj lokaciji kada je aktiviran suvereni način rada (sovereign mode). Tenant se može i dalje pokrenuti kao izolirana WordPress instalacija, ali akcije koje su usmjerene prema klijentu i ovisne o mrežnom obračunu, članstvu ili podacima zajedničkog računa trebaju vratiti klijenta na glavnu lokaciju umjesto pokušavanja dovršiti akciju unutar runtime-a tenanta.
 

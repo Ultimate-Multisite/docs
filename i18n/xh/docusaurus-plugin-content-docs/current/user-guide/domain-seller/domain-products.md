@@ -3,11 +3,11 @@ title: Iimveliso zeedomeyini namaxabiso
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Iimveliso ze-domain namaxabiso
+# Iimveliso ze-domain namaxabiso {#domain-products-and-pricing}
 
 Iimveliso ze-domain yindlela olawula ngayo amaxabiso, ii-TLD, ubumfihlo be-WHOIS, nokukhetha umboneleli. Imveliso nganye ye-domain yimveliso eqhelekileyo ye-Multisite Ultimate enethebhu eyongezelelweyo ethi **Iisetingi ze-domain**.
 
-## Ukudala imveliso ye-domain
+## Ukudala imveliso ye-domain {#creating-a-domain-product}
 
 1. Yiya ku-**Network Admin › Ultimate Multisite › Iimveliso**
 2. Cofa **Yongeza Entsha**
@@ -17,13 +17,13 @@ Iimveliso ze-domain yindlela olawula ngayo amaxabiso, ii-TLD, ubumfihlo be-WHOIS
 
 Iimveliso ze-domain zivela nebheji emfusa ethi **Domain** kuluhlu lweemveliso kwaye zinokuhluzwa kusetyenziswa ithebhu ethi **Iimveliso ze-domain**.
 
-## Ithebhu yeesetingi ze-domain
+## Ithebhu yeesetingi ze-domain {#domain-settings-tab}
 
-### Umboneleli
+### Umboneleli {#provider}
 
 Khetha ukuba nguwuphi umregistrar ophatha ubhaliso lwale mveliso. Iseta ngokuzenzekelayo kumboneleli wehlabathi **Umboneleli ongagqibekanga** osetwe kwiisetingi ze-Domain Seller.
 
-### Ii-TLD ezixhaswayo
+### Ii-TLD ezixhaswayo {#supported-tlds}
 
 Yishiye ingenanto ukuze udale **imveliso ebamba konke** esebenza kuzo zonke ii-TLD ezingahambelaniyo nenye imveliso.
 
@@ -31,7 +31,7 @@ Faka uluhlu lwee-TLD ezahlulwe ngeekoma (umz., `.com, .net, .org`) ukuze udale *
 
 **Indlela ukuhambelana kwemveliso okusebenza ngayo:** Xa umthengi ekhangela i-domain, i-addon ikhetha eyona mveliso ihambelana ngokuthe ngqo. Imveliso ene-`.com` kuluhlu lwayo lwee-TLD inikwa kuqala kunemveliso ebamba konke. Ukuba akukho mveliso ethile ye-TLD ehambelanayo, kusetyenziswa ebamba konke. Ukuba akukho zimveliso zikhoyo, ukukhangela i-domain akuboniswa.
 
-### Uhlobo lokunyusa ixabiso
+### Uhlobo lokunyusa ixabiso {#markup-type}
 
 Iimowudi ezintathu zilawula indlela ixabiso lakho lentengiso libalwa ngayo ukusuka kwindleko yehowuliseyili:
 
@@ -41,11 +41,11 @@ Iimowudi ezintathu zilawula indlela ixabiso lakho lentengiso libalwa ngayo ukusu
 | **Ukunyusa okusisigxina** | Yongeza isixa seedola esisigxina. Ukunyuswa kwe-$5 kwi-domain eyi-$10 kunika $15. |
 | **Ixabiso elisisigxina** | Ayihoyi kwaphela indleko yehowuliseyili. Ihlala ihlawulisa isixa osifakayo. |
 
-### Amaxabiso okuqala
+### Amaxabiso okuqala {#introductory-pricing}
 
 Vula ukuze unikezele ngexabiso elithotyiweyo lonyaka wokuqala. Seta **Ixabiso lokuqala** elahlukileyo (ixabiso lonyaka woku-1) ecaleni kwe-**Ixabiso lokuhlaziya** eliqhelekileyo (unyaka wesi-2 nangaphezulu). Umthengi ubona omabini amaxabiso eboniswe ngexesha lokugqiba intlawulo ukuze azi into aza kuyilindela xa kuhlaziywa.
 
-### Ubumfihlo be-WHOIS
+### Ubumfihlo be-WHOIS {#whois-privacy}
 
 Ilawula ukuba ukhuseleko lobumfihlo be-WHOIS luyanikezelwa na kwii-domain ezibhaliswe ngale mveliso.
 
@@ -59,7 +59,7 @@ Kwi-Namecheap, ubumfihlo be-WHOIS busebenzisa i-WhoisGuard (isoloko isimahla). K
 
 ---
 
-## Ukungenisa nokulungelelanisa ii-TLD
+## Ukungenisa nokulungelelanisa ii-TLD {#tld-import-and-sync}
 
 Iimveliso ze-domain zibonisa amaxabiso ehlelo lehowuliseyili ngexesha langempela athathwe kumboneleli oqhagamshelweyo. Ukuze oku kusebenze, ii-TLD kufuneka zingeniswe.
 
@@ -70,7 +70,7 @@ Emva kokulungelelanisa, yiya kwithebhu yeeSethingi ze-Domain kuyo nayiphi na imv
 
 ---
 
-## Ukuhlaziya ngokuzenzekelayo
+## Ukuhlaziya ngokuzenzekelayo {#auto-renewal}
 
 Ukuhlaziywa kwee-domain kunxulunyaniswe nemo yobulungu bomthengi:
 
@@ -90,7 +90,7 @@ Ii-ID zeethempleyithi ze-imeyile zeziganeko zomjikelo wobomi be-domain:
 
 ---
 
-## Admin: Ubhaliso lwe-domain ngesandla
+## Admin: Ubhaliso lwe-domain ngesandla {#admin-manual-domain-registration}
 
 Ukubhalisa i-domain egameni lomthengi ngaphandle kokuba adlule ekugqibeni intlawulo:
 

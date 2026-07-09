@@ -3,11 +3,11 @@ title: Dəyişikliklər siyahısı
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Dəyişikliklər siyahısı
+# Dəyişikliklər siyahısı {#changelog}
 
-## 1.9.0 — 2026-04-28 tarixində buraxıldı
+## 1.9.0 — 2026-04-28 tarixində buraxıldı {#190--released-on-2026-04-28}
 
-### Yeni
+### Yeni {#new}
 
 - **`create_contact_form` qabiliyyəti** — aktiv form plugin-indən (Contact Form 7, WPForms, Fluent Forms və ya Gravity Forms) istifadə edərək bir əlaqə forması yaradır və istənilən post və ya səhifəyə yerləşdirilə bilən bir shortcode qaytarır.
 - **`set_featured_image` qabiliyyəti** — mövcud Media Library attachment ID-sindən və ya uzaq bir URL-dən bir post və ya səhifəyə xüsusi şəkil təyin edir; URL verildikdə şəkli avtomatik yükləyir.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Son sessiyanı bərpa et** — Chat paneli indi səhifə yükləndikdə və widget açıldıqda ən son söhbəti avtomatik yükləyir, beləliklə kontekst səhifə naviqasiyaları arasında itmir.
 - **Plugin action links** — Settings və Abilities Registry-yə qısa keçidlər indi WordPress **Plugins → Installed Plugins** ekranında plugin təsvirinin altında görünür.
 
-### Yaxşılaşdırılan
+### Yaxşılaşdırılan {#improved}
 
 - **Şəkil mənbəsinin yenidən cəhd edilməsi** — agent indi yükləmə zamanı uğursuzluq yaşanarsa, konfiqurasiya edilmiş bütün pulsuz şəkil mənbələrini yenidən cəhd edir, sonra isə AI-generasiyalı şəkilə keçir.
 - **Model info paneli** — chat başlığında həmişə görünür; artıq ilk mesajdan sonra gizlənmir.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redizaynı** — unifikasiya edilmiş AI ikonu əvvəlki fərdiləşdirilmiş avatarın yerini alır; bu da daxili agent sisteminə uyğundur.
 - **URL linkification** — Sistem mesajlarında və error message bubble-larında görünən URL-lər indi kliklənə bilən linklər kimi göstərilir.
 
-### Düzəlişlər
+### Düzəlişlər {#fixed}
 
 - **Ability tapılma qabiliyyəti** — Təsvirlər, sistem prompt istinadları və namespace hizalanması düzəldildi, beləliklə bütün qabiliyyətlər agentin vasitə siyahısında etibarlı şəkildə görünür.
 - **Providers cache** — Providers indi multisite şəbəkələrində köhnəlmiş provider problemlərini aradan qaldırmaq üçün versiya sayğacı vasitəsilə sayt-yayına cache edilir.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — 2026-04-09 tarixində buraxıldı
+## 1.4.0 — 2026-04-09 tarixində buraxıldı {#140--released-on-2026-04-09}
 
-### Yeni
+### Yeni {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI pipeline-ları və model qiymətləndirmə iş axınları üçün komanda xəttindən Agent Capabilities v1 benchmark suite-ni işlədir. Hər sual üçün işlətmə, provider/model üstünlüyü və JSON/CSV çıxışı dəstəkləyir.
 - **Agent Capabilities v1 benchmark suite** — Tam qabiliyyət səthini yoxlayan, qiymətləndirmə və token/müddət hesabatı verən, mürəkkəb, çoxaddımlı prompt-lardan ibarət strukturlaşdırılmış bir dəst.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT qeydiyyatı, dizayn sistemi, navigasiya və plugin tapılmasını əhatə edən ucu-ucu test.
 - **AI provider connector plugins** daha sürətli yerli inkişaf qurulması üçün WordPress Playground blueprint-larına əlavə edildi.
 
-### Yaxşılaşdırılan
+### Yaxşılaşdırılan {#improved-1}
 
 - README, AI provider connector sənədləşməsi və qurulma təlimatları ilə yeniləndi.
 
-### Düzəlişlər
+### Düzəlişlər {#fixed-1}
 
 - `main` branch-də 25 PHPUnit test uğursuzluğu aradan qaldırıldı.
 - `blueprint.json` faylında GitHub releases URL formatı düzəldildi.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Əvvəlki buraxılış qeydləri plugin repozitoriyasında saxlanılır._

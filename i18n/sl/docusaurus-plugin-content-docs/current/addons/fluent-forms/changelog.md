@@ -3,7 +3,7 @@ title: Dnevnik sprememb Fluent Forms
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms dnevnik sprememb
+# Fluent Forms dnevnik sprememb {#fluent-forms-changelog}
 
 Različica: 2.0.1 - Izdano 2025-09-28
 

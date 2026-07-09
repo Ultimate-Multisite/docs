@@ -3,13 +3,13 @@ title: Ukwenza ngokwezifiso ifomu yakho yobhaliso
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ukwenza iRegistration Form yakho ibe yeyakho
+# Ukwenza iRegistration Form yakho ibe yeyakho {#customizing-your-registration-form}
 
 Ukuze wenze inethiwekhi yakho ibonakale yahlukile kuzo zonke ezinye ii-SaaS ezakhiwe kwiqonga le-WordPress, Ultimate Multisite ikuvumela ukuba wenze amaphepha akho okubhalisa nawokungena abe ngawe usebenzisa uphawu lwethu lwe-**Checkout Forms**.
 
 Nangona ziyindlela elula neguquguqukayo yokuzama iindlela ezahlukeneyo xa uzama ukuguqula abathengi abatsha, zisetyenziswa kakhulu ukwenza iifom zokubhalisa ezenzelwe umntu. Eli nqaku lijolise ekukuboniseni indlela onokuyenza ngayo.
 
-## Amaphepha okungena nawokubhalisa:
+## Amaphepha okungena nawokubhalisa: {#login-and-registration-pages}
 
 Xa kufakwa Ultimate Multisite, yenza ngokuzenzekelayo amaphepha okungena nawokubhalisa enziwe ngokwezifiso kwisiza sakho esiphambili. Ungawatshintsha la maphepha angagqibekanga nanini na ngokuya kwiphepha lakho le-**Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Ngoku, masibone ezinye iinketho ezisabalulekileyo kwinkqubo yokungena nokubhalis
 
 Kwaye zizizo zonke iinketho ezinxulumene nokungena nokubhalisa onokuzilungisa ngokwezifiso! Ungalibali ukugcina iisethingi zakho emva kokugqiba ukuzihlela.
 
-## Ukusebenzisa iifom zobhaliso ezininzi:
+## Ukusebenzisa iifom zobhaliso ezininzi: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 inika umhleli we-checkout form okuvumela ukuba wenze iifom ezininzi kangangoko ufuna, ezinamabala ahlukeneyo, iimveliso ezikhoyo, njalo njalo.
 
@@ -69,7 +69,7 @@ Kungenjalo, ungahlela okanye uphinde wenze ikopi yeefom osele unazo ngokucofa ii
 
 Ukuba ukhetha inyathelo elinye okanye amanyathelo amaninzi, i-checkout form iya kube sele igcwaliswe kwangaphambili ngamanyathelo asisiseko ukuze isebenze. Emva koko, ukuba uyafuna, ungongeza amanyathelo ongezelelweyo kuyo.
 
-### Ukuhlela i-Checkout Form:
+### Ukuhlela i-Checkout Form: {#editing-a-checkout-form}
 
 Njengoko besitshilo ngaphambili, ungadala ii-checkout forms ngeenjongo ezahlukeneyo. Kulo mzekelo siza kusebenza kwifom yobhaliso.
 
@@ -131,11 +131,11 @@ Ukufumana i-shortcode yefomu yakho cofa ku-**Yenza i-Shortcode** uze ukope isiph
 
 _**Qaphela:** Kuya kufuneka wongeze le shortcode kwiphepha lakho lobhaliso ukuze le fomu yokuhlawula yongezwe kulo._
 
-## Ukukhetha kwangaphambili iimveliso neetemplate ngeeparamitha ze-URL:
+## Ukukhetha kwangaphambili iimveliso neetemplate ngeeparamitha ze-URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ukuba ufuna ukwenza iitheyibhile zamaxabiso ezilungiselelwe iimveliso zakho kwaye ukhethe kwangaphambili kwifomu yokuhlawula imveliso okanye itemplate ekhethwa ngumthengi wakho kwitheyibhile yakho yamaxabiso okanye kwiphepha leetemplate, ungasebenzisa iiparamitha ze-URL ukwenza oku.
 
-### **Ngezicwangciso:**
+### **Ngezicwangciso:** {#for-plans}
 
 Yiya ku-**Ultimate Multisite > Iimveliso > Khetha isicwangciso**. Kufuneka ubone iqhosha le-**Cofa ukukopa iLinki eKwabelwana ngayo** phezulu ephepheni. Le ylinki onokuyisebenzisa ukukhetha kwangaphambili esi sicwangciso sithile kwifomu yakho yokuhlawula.
 
@@ -143,7 +143,7 @@ Yiya ku-**Ultimate Multisite > Iimveliso > Khetha isicwangciso**. Kufuneka ubone
 
 Qaphela ukuba le linki ekwabelwana ngayo isebenza kuphela kwi-**Zicwangciso**. Awunakusebenzisa iilinki ekwabelwana ngazo kwiipakethe okanye kwiinkonzo.
 
-### Ngeetemplate:
+### Ngeetemplate: {#for-templates}
 
 Ukuba ufuna ukukhetha kwangaphambili iitemplate zesayithi kwifomu yakho yokuhlawula, ungasebenzisa iparamitha: **?template_id=X** kwi-URL yephepha lakho lobhaliso. U-"X" kufuneka atshintshwe **yinombolo ye-ID yetemplate yesayithi**. Ukufumana le nombolo, yiya ku-**Ultimate Multisite > Iisayithi**.
 

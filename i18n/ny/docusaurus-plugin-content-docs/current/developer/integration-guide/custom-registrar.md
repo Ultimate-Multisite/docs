@@ -3,13 +3,13 @@ title: Kupanga Kuphatikiza kwa Registrar Wapadera
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kumanga Custom Registrar Integration
+# Kumanga Custom Registrar Integration {#building-a-custom-registrar-integration}
 
 Addon ya Domain Seller imagwiritsa ntchito njira ya **Integration Registry**. Registrar aliyense ndi class ya PHP yomwe imakhazikitsa `Domain_Selling_Capability` ndipo imadzilembetsa yokha kudzera mu action hook ya `wu_domain_seller_register_capabilities`.
 
 Kalozerayu akuwonetsa momwe mungalumikizire custom registrar.
 
-## Interface
+## Interface {#the-interface}
 
 Class yanu iyenera kukhazikitsa `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ndi kukulitsa `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Njira zosankha
+### Njira zosankha {#optional-methods}
 
 Khazikitsani izi kuti mutsegule mawonekedwe owonjezera. Addon imazindikira chithandizo kudzera pa `method_exists()`:
 
@@ -81,7 +81,7 @@ Khazikitsani izi kuti mutsegule mawonekedwe owonjezera. Addon imazindikira chith
 | `get_epp_code(string $domain_name): array` | Kusamutsa domain (kutuluka) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Kusamutsa domain (kulowa) |
 
-### Mwambo wa mtengo wobwezedwa
+### Mwambo wa mtengo wobwezedwa {#return-value-convention}
 
 Njira zonse zimabweza array yokhala osachepera kiyi ya `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Kulembetsa capability yanu
+## Kulembetsa capability yanu {#registering-your-capability}
 
 Lembetsani class yanu pogwiritsa ntchito action ya `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argument yoyamba ku `add_capability()` ndi **provider ID** — slug ya zilembo z
 
 ---
 
-## Kuwonjezera minda ya zitsimikizo ku wizard
+## Kuwonjezera minda ya zitsimikizo ku wizard {#adding-credential-fields-to-the-wizard}
 
 Kuti mulole ma admin alowe zitsimikizo kudzera mu setup wizard, lembetsani integration yanu:
 
@@ -137,7 +137,7 @@ Zitsimikizo zimasungidwa ngati network options pogwiritsa ntchito ma ID a field 
 
 ---
 
-## Ma hook a zochita za pambuyo pa kulembetsa
+## Ma hook a zochita za pambuyo pa kulembetsa {#hooks-for-post-registration-actions}
 
 Gwiritsani ntchito ma action awa kuyambitsa ma webhook, provisioning, zidziwitso, kapena zosintha za CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Kusunga malogi
+## Kusunga malogi {#logging}
 
 Lembani ku njira ya logi ya wopereka wanu pogwiritsa ntchito `wu_log_add()`:
 

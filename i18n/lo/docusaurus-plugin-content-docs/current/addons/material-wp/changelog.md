@@ -3,7 +3,7 @@ title: Material WP ບັນທຶກການປ່ຽນແປງ
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# ບັນທຶກການປ່ຽນແປງ Material WP
+# ບັນທຶກການປ່ຽນແປງ Material WP {#material-wp-changelog}
 
 ເວີຊັນ 1.1.15 - 01/26/2026
 * ປັບປຸງ: ຮູບແບບໂຄດ ແລະ ການຈັດຮູບແບບ;

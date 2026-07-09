@@ -3,17 +3,17 @@ title: Design-Ausrichtung
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design-Richtung
+# Design-Richtung {#design-direction}
 
 De Schrëtt **Design-Richtung** erlaabt Iech, de visuellen Design vun Ärem Theme ze iwwerpréiwen, ze verfeineren an ofzeschléissen, ier Theme Builder de komplette Theme generéiert.
 
-## Iwwersiicht
+## Iwwersiicht {#overview}
 
 Nodeems den Discovery Interview ofgeschloss ass, presentéiert Theme Builder Är Design-Richtung mat **Preview-Rendering fir Desktop a Mobil**. Dat erlaabt Iech genee ze gesinn, wéi Ären Design op verschiddenen Apparater ausgesäit, ier Dir Iech op de Theme festleet.
 
-## Komponente vun der Design-Richtung
+## Komponente vun der Design-Richtung {#design-direction-components}
 
-### 1. Faarfpalette
+### 1. Faarfpalette {#1-color-palette}
 
 D'Faarfschema vun Ärem Theme, dorënner:
 
@@ -23,7 +23,7 @@ D'Faarfschema vun Ärem Theme, dorënner:
 - **Neutral Faarwen** — Gro- a Wäisstéin fir Hannergrënn an Text
 - **Textfaarf** — primär Textfaarf fir Liesbarkeet
 
-### 2. Typografie
+### 2. Typografie {#2-typography}
 
 Schrëftauswiel fir:
 
@@ -33,14 +33,14 @@ Schrëftauswiel fir:
 - **Zeilenhéicht** — Ofstand tëscht Zeilen fir Liesbarkeet
 - **Schrëftgewiichter** — fett, normal a liicht Variatiounen
 
-### 3. Layout an Ofstänn
+### 3. Layout an Ofstänn {#3-layout-and-spacing}
 
 - **Container-Breet** — maximal Breet fir Inhalt
 - **Padding a Margen** — Ofstand ronderëm Elementer
 - **Grid-System** — Spaltelayout fir responsiven Design
 - **Komponenten-Ofstand** — Distanz tëscht UI-Elementer
 
-### 4. Visuell Elementer
+### 4. Visuell Elementer {#4-visual-elements}
 
 - **Knäppercher-Stiler** — primär, sekundär an tertiär Knäppercher-Designen
 - **Kaarten-Designen** — Layouten fir Inhaltsbléck
@@ -48,9 +48,9 @@ Schrëftauswiel fir:
 - **Ränner a Schieter** — subtil visuell Déift
 - **Hover-Effekter** — Styling fir interaktiv Zoustänn
 
-## Preview-Rendering
+## Preview-Rendering {#preview-rendering}
 
-### Desktop-Preview
+### Desktop-Preview {#desktop-preview}
 
 D'Desktop-Preview weist Ären Design a voller Breet (typescherweis 1200px oder méi breet):
 
@@ -59,7 +59,7 @@ D'Desktop-Preview weist Ären Design a voller Breet (typescherweis 1200px oder m
 - Grouss Typografie an Ofstänn
 - All visuell Elementer a voller Gréisst
 
-### Mobil-Preview
+### Mobil-Preview {#mobile-preview}
 
 D'Mobil-Preview weist Ären Design bei mobiller Breet (typescherweis 375px):
 
@@ -68,7 +68,7 @@ D'Mobil-Preview weist Ären Design bei mobiller Breet (typescherweis 375px):
 - Upasst Typografie an Ofstänn
 - Touch-frëndlech Knäppercher-Gréissten
 
-### Responsiv Breakpoints
+### Responsiv Breakpoints {#responsive-breakpoints}
 
 Theme Builder rendert Previewen op dëse Breakpoints:
 
@@ -79,9 +79,9 @@ Theme Builder rendert Previewen op dëse Breakpoints:
 | **Desktop** | 1200px | Desktop a voller Breet |
 | **Grousse Desktop** | 1920px | Ultra-breeten Display |
 
-## Ären Design verfeineren
+## Ären Design verfeineren {#refining-your-design}
 
-### Upassunge maachen
+### Upassunge maachen {#making-adjustments}
 
 Dir kënnt Är Design-Richtung verfeineren, andeems Dir:
 
@@ -91,7 +91,7 @@ Dir kënnt Är Design-Richtung verfeineren, andeems Dir:
 4. **Layout aktualiséiert** — Container-Breeden a Grid-Spalten ännert
 5. **Elementer personaliséiert** — Knäppercher-Stiler, Kaarten-Designen, asw. modifizéiert
 
-### Preview-Aktualiséierungen
+### Preview-Aktualiséierungen {#preview-updates}
 
 Ännerunge ginn an Echtzäit gewisen:
 
@@ -100,7 +100,7 @@ Dir kënnt Är Design-Richtung verfeineren, andeems Dir:
 - All responsiv Breakpoints ginn aktualiséiert
 - Dir kënnt tëscht Previewe wiesselen, fir Ännerungen ze iwwerpréiwen
 
-### Verglachsiicht
+### Verglachsiicht {#comparison-view}
 
 Vergläicht Är Design-Richtung mat:
 
@@ -108,7 +108,7 @@ Vergläicht Är Design-Richtung mat:
 - **Konkurrenten-Designen** — vergläicht mat Inspiratiouns-Siten
 - **Virege Versiounen** — zréckgoen op fréier Design-Richtungen
 
-## Geneemegung vun der Design-Richtung
+## Geneemegung vun der Design-Richtung {#design-direction-approval}
 
 Wann Dir mat Ärem Design zefridde sidd:
 
@@ -118,7 +118,7 @@ Wann Dir mat Ärem Design zefridde sidd:
 4. **Layout confirméieren** — Ofstänn an Ausriichtung iwwerpréiwen
 5. **Design geneemegen** — mat der Theme-Generéierung virufueren
 
-## Nächst Schrëtt
+## Nächst Schrëtt {#next-steps}
 
 Nodeems Dir Är Design-Richtung geneemegt hutt:
 
@@ -127,7 +127,7 @@ Nodeems Dir Är Design-Richtung geneemegt hutt:
 3. Dir kënnt weider mam WordPress-Customizer personaliséieren
 4. Fuert weider mat [Hospitality-Menüen](./hospitality-menus.md) oder anere Funktiounen
 
-## Bescht Praktiken
+## Bescht Praktiken {#best-practices}
 
 - **Op reellen Apparater testen** — benotzt tatsächlech Telefonen an Tabletten, wann méiglech
 - **Liesbarkeet iwwerpréiwen** — sécherstellen, datt Text bei alle Gréisste liesbar ass
@@ -135,30 +135,30 @@ Nodeems Dir Är Design-Richtung geneemegt hutt:
 - **Performance berücksichtegen** — Biller a Schrëfte fir Vitess optimiséieren
 - **Fir Inhalt plangen** — sécherstellen, datt de Layout mat Ärem tatsächlechen Inhalt funktionéiert
 
-## Problemléisung
+## Problemléisung {#troubleshooting}
 
-### Preview aktualiséiert sech net
+### Preview aktualiséiert sech net {#preview-not-updating}
 
 - Säit nei lueden
 - Browser-Cache läschen
 - En anere Browser probéieren
 - Internetverbindung iwwerpréiwen
 
-### Faarwen gesinn anescht aus
+### Faarwen gesinn anescht aus {#colors-look-different}
 
 - Monitor-Faarfastellungen iwwerpréiwen
 - Op verschiddenen Apparater probéieren
 - Faarfkontrast mat Accessibilitéits-Tools iwwerpréiwen
 - Faarfblannheets-Simulatoren berücksichtegen
 
-### Typografie-Problemer
+### Typografie-Problemer {#typography-issues}
 
 - Iwwerpréiwen, ob Schrëftdateie geluede ginn
 - Schrëftgréisst bei verschiddene Breakpoints iwwerpréiwen
 - Mat tatsächlechem Inhalt testen
 - Zeilelängt fir Liesbarkeet berücksichtegen
 
-## Zesummenhängend Dokumentatioun
+## Zesummenhängend Dokumentatioun {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — Designinformatiounen sammelen
 - [Hospitality-Menüen](./hospitality-menus.md) — strukturéiert Menüsäiten erstellen

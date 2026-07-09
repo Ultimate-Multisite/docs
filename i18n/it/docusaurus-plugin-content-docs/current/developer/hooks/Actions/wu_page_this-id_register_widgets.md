@@ -8,7 +8,7 @@ Si attiva dopo che i widget sono stati registrati per questa pagina.
 
 La porzione dinamica del nome del hook, `$this->id`, si riferisce all'id della pagina.
 
-## Parameters
+## Parameters {#action-wupagethis-idregisterwidgets}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ La porzione dinamica del nome del hook, `$this->id`, si riferisce all'id della p
 | $page_hook | `string` | Il hook della pagina. |
 | $page | `object` | L'oggetto della pagina. |
 
-### Since
+### Since {#parameters}
 
 - 2.4.10
 
-### Source
+### Source {#since}
 
 Defined in [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L755) at line 755

@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Umuhura ku Webhooks (v2)
+# Umuhura ku Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**UMUTWE: Uruko cyangwa ubutumwa bwawe rwa hari ku bakoresha ubwujumbura bw'ubwoko bw'ibyo bishobora gukora (advanced users).**_
 
@@ -11,7 +11,7 @@ U **webhook** ni uburyo ushobora umuntu cyangwa software nk'Ultimate Multisite k
 
 Iki ni ikintu gikomeye niba wumva ubushobozi bwo gukoresha (integrate) cyangwa gufasha ibindi by'ubwoko bw'ibyo bishobora gukora ku Ultimate Multisite, kugira ngo ufungura data mu gihe cyiza ku CRM cyangwa mu gihe cyo kubyara ibindi. Urugero, ushobora gutuma izina ry'umuntu n'email yayo ku mailing list mu gihe cyose umuntu w'ibanire yashyirwaho.
 
-## Uburyo bwo gukora webhook
+## Uburyo bwo gukora webhook {#how-to-create-a-webhook}
 
 Kugira webhook, gukora mu dashboard yawe ya network admin. Gukoresha **Ultimate Multisite > Webhooks > Add New Webhook.**
 

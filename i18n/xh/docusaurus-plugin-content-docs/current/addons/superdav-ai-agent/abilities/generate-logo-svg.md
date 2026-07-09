@@ -3,15 +3,15 @@ title: Yenza i-Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Yenza i-Logo SVG
+# Yenza i-Logo SVG {#generate-logo-svg}
 
 Isakhono se-**Generate Logo SVG** sivumela i-Theme Builder ukuba yenze kwaye ifake ii-logo SVG ezenzelwe wena ngqo kwi-WordPress site yakho ngokucocwa okuzenzekelayo okukhuselekileyo kwi-namespace.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Esi sakhono senza ii-logo ze-scalable vector graphics (SVG) ezisekelwe kwicala le-branding le-site yakho nakwizinto ozikhethayo kuyilo. Ii-SVG ezenziweyo zicocwa ngokuzenzekelayo ukuqinisekisa ukuba zikhuselekile ukusetyenziswa kwi-WordPress ngelixa zigcina umgangatho wembonakalo.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Esi sakhono senza ii-logo ze-scalable vector graphics (SVG) ezisekelwe kwicala l
 | `height` | number | No | Ubude be-SVG ngeepikseli (okusisiseko: 200) |
 | `include_text` | boolean | No | Nokuba kufakwe igama le-site njengombhalo kwi-logo (okusisiseko: true) |
 
-## Ifomathi Yesiphumo
+## Ifomathi Yesiphumo {#output-format}
 
 Esi sakhono sibuyisa umtya we-SVG onesakhiwo esilandelayo:
 
@@ -36,7 +36,7 @@ Esi sakhono sibuyisa umtya we-SVG onesakhiwo esilandelayo:
 }
 ```
 
-## Ukuziphatha Kokucoca i-SVG
+## Ukuziphatha Kokucoca i-SVG {#svg-sanitisation-behaviour}
 
 Ii-SVG ezenziweyo zidlula ekucocweni okuzenzekelayo okukhuselekileyo kwi-namespace ukuze:
 
@@ -48,7 +48,7 @@ Ii-SVG ezenziweyo zidlula ekucocweni okuzenzekelayo okukhuselekileyo kwi-namespa
 
 Oku kuqinisekisa ukuba i-SVG ikhuselekile ukuyifaka ngqo kwi-WordPress ngaphandle kokufuna ukucocwa okongezelelweyo.
 
-## Umzekelo Wokusetyenziswa
+## Umzekelo Wokusetyenziswa {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Esi sakhono senza i-logo ye-SVG ethi:
 - Ilandele imigaqo yoyilo lwangoku
 - Icocwe ngokuzenzekelayo kwaye ilungele ukusetyenziswa
 
-## Ukudityaniswa ne-Theme Builder
+## Ukudityaniswa ne-Theme Builder {#integration-with-theme-builder}
 
 Xa usebenzisa ukhetho lwecala loyilo lwe-Theme Builder, isakhono se-Generate Logo SVG:
 
@@ -71,21 +71,21 @@ Xa usebenzisa ukhetho lwecala loyilo lwe-Theme Builder, isakhono se-Generate Log
 3. Sifaka ngokuzenzekelayo i-logo kwindawo ye-header/branding ye-site yakho
 4. Sigcina i-SVG njenge-logo eyenzelwe wena kwi-WordPress media
 
-## Ezona Ndlela Zilungileyo
+## Ezona Ndlela Zilungileyo {#best-practices}
 
 - **Nika izinto ozikhethayo zesimbo ezicacileyo** — chaza isimbo soyilo olufunayo (modern, classic, playful, njl.)
 - **Chaza imibala** — faka imibala ye-brand yakho ukuze kubekho ukuhambelana
 - **Vavanya ukuboniswa** — qinisekisa ukuba i-logo ibonakala ngokuchanekileyo kubungakanani obahlukeneyo besikrini
 - **Yenze ngakumbi ngokwezifiso** — sebenzisa izixhobo ze-WordPress zokwenza i-logo ngokwezifiso ukuze uhlengahlengise ubungakanani nendawo
 
-## Imida
+## Imida {#limitations}
 
 - Ii-logo ze-SVG zenziwa njengemizobo engashukumiyo (engengomfanekiso oshukumayo)
 - Ii-logo ezintsonkothileyo ezinezinto ezininzi zingafuna ukulungiswa ngesandla
 - Iifonti ezenzelwe wena azixhaswa; umbhalo usebenzisa iifonti zenkqubo
 - Imilinganiselo emikhulu kakhulu okanye emincinci kakhulu inokuchaphazela umgangatho
 
-## Izakhono Ezihambelanayo
+## Izakhono Ezihambelanayo {#related-abilities}
 
 - [Qinisekisa Umahluko Wephalethi](./validate-palette-contrast.md) — jonga umahluko wemibala ukuze kufikeleleke
 - [Yenza iMenyu](./create-menu.md) — yenza iimenyu zokuhamba ze-site yakho

@@ -4,13 +4,13 @@ title: 'Үйлдэл - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Action: wu_page_\{$this->id\}_register_widgets
+# Action: wu_page_\{$this->id\}_register_widgets {#action-wupagethis-idregisterwidgets}
 
 Энэ хуудсанд зориулсан виджетүүд бүртгэгдсэний дараа ажиллана.
 
 The dynamic portion of the hook name, `$this-&gt;id`, refers to the page id.
 
-## Параметрүүд
+## Параметрүүд {#parameters}
 
 | Нэр | Төрөл | Тайлбар |
 |------|------|-------------|
@@ -18,9 +18,9 @@ The dynamic portion of the hook name, `$this-&gt;id`, refers to the page id.
 | $page_hook | `string` | Хуудасны hook. |
 | $page | `object` | Хуудасны объект. |
 
-### Хувилбараас
+### Хувилбараас {#since}
 
 - 2.4.10
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L755)-д 755-р мөрөнд тодорхойлсон

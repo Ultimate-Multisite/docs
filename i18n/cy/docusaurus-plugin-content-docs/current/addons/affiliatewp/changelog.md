@@ -3,7 +3,7 @@ title: Changelog AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Changelog AffiliateWP
+# Changelog AffiliateWP {#affiliatewp-changelog}
 
 Versiwn: 2.0.1 - Rheoliwyd ar gyfer 28-09-2025
 

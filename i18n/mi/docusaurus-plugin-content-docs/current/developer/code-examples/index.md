@@ -3,11 +3,11 @@ title: Ngā Tauira Waehere Matatau
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ngā Tauira Waehere Arā Atu Anō
+# Ngā Tauira Waehere Arā Atu Anō {#advanced-code-examples}
 
 E whakaatu ana ēnei tauira i ngā tauira whakauru arā atu anō ki Ultimate Multisite.
 
-## Pūkaha Utu Hihiri
+## Pūkaha Utu Hihiri {#dynamic-pricing-engine}
 
 He pūkaha utu e hāngai ana ki ngā ture, e whakamahi ana i ngā hekenga utu mō te rahinga, te ūmanga kiritaki, me ngā kaupeka:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Whakarato Pae Arā Atu Anō
+## Whakarato Pae Arā Atu Anō {#advanced-site-provisioning}
 
 Whirihora aunoatia ngā pae hou me ngā monomai, SSL, CDN, ngā tārua, me te aroturuki e hāngai ana ki ngā āhuatanga mahere:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Pūnaha Here Whakaritea
+## Pūnaha Here Whakaritea {#custom-limitations-system}
 
 Aroturuki me te whakakaha i ngā here rauemi me ngā whakatūpato whakamahinga:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Kaitatau Ngota BerlinDB me `increment_item()`
+## Kaitatau Ngota BerlinDB me `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 I tāpiri a Ultimate Multisite v2.6.1 i tētahi tikanga `increment_item()` ki te akomanga BerlinDB `Query`. Whakamahia hei whakahaere i ngā whakapikinga haumaru, ngota hoki ki ngā tīwae tau, me te kore whakataetae pānui-whakarerekē-tuhi — he whaihua mō ngā kaitatau, ngā rohenga whakamahinga, me ngā arowhai whakatepe auau e rere ana i raro i ngā tono tukutahi.
 
-### Waitohu tikanga
+### Waitohu tikanga {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ I tāpiri a Ultimate Multisite v2.6.1 i tētahi tikanga `increment_item()` ki te
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Whakamahinga taketake
+### Whakamahinga taketake {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Aroturuki i te whakamahinga API mō ia mematanga
+### Aroturuki i te whakamahinga API mō ia mematanga {#tracking-api-usage-per-membership}
 
 He tauira whaihua mō te whakaū i ngā tepe auau API mō ia mematanga:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### He aha ai ko `increment_item()` kaua ko `update_item()`
+### He aha ai ko `increment_item()` kaua ko `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Kāore i te haumaru tētahi aronga pānui-whakarerekē-tuhi māmā i raro i ngā tono tukutahi:
 

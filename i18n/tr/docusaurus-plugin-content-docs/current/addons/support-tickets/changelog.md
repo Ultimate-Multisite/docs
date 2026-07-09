@@ -3,13 +3,13 @@ title: Destek Bileti Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Destek Bileti Değişiklik Günlüğü
+# Destek Bileti Değişiklik Günlüğü {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * İyileştirildi: vendor/ dizini Git takibinden çıkarıldı (zaten .gitignore tarafından kapsanıyor), bu da depo boyutunu küçülttü.
 * İyileştirildi: WordPress 7.0'a kadar test edildi.
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Düzeltildi: Boş (null) değerleri, boş geçilebilir bilet modeli ayarlayıcılarda kabul etme.
 * Düzeltildi: Doğru çoklu site desteği için tüm biletler global ağ çapında tablolarda saklanıyor.
 * Düzeltildi: Personel alanları gizlendi ve müşteri yeni bilet formunda boş sayfa yönlendirmesi düzeltildi.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * İyileştirildi: Ön yüz varlıkları, yalnızca destek bileti sayfalarında koşullu olarak yüklenecek şekilde ayarlandı.
 * İyileştirildi: Bedrock kök otomatik yükleyicisi zaten bağımlılıkları yüklemişse, eklenti otomatik yükleyicisi atlandı.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Eklendi: Yönetici ve ön yüz için tam bilet görüntüleme işlevi.
 * Eklendi: Bilet yanıt gönderimleri için AJAX işleyicisi.
 * Eklendi: Doğru form işleme ile bilet yanıt işlevi desteği.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * İyileştirildi: Yanıtlar ve ekler için uygun sorgu ve şema sınıflarına sahip veritabanı yapısı.
 * İyileştirildi: Bilet modelleri için nitelikler yerine gerçek özelliklere geçiş yapıldı.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Güncellendi: Tutarlılık için öneki ultimate-multisite olarak yeniden adlandırıldı.
 * Güncellendi: Metin alanı standartlaştırıldı.
 * Düzeltildi: Küçük hata düzeltmeleri ve iyileştirmeler.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * İlk sürüm
 * Tam bilet yönetim sistemi
 * Çok seviyeli erişim kontrolü

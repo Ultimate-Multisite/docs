@@ -3,7 +3,7 @@ title: Što je WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Što je WordPress Multisite?
+# Što je WordPress Multisite? {#what-is-wordpress-multisite}
 
 Unutar svog jezgra, WordPress nudi značajku pod nazivom „Multisite” koja se uzima za početak 2010. s lansiranjem WordPressa 3.0. Od tada je dobio niz revizija namijenjenih dodavanju novih značajki i poboljšanju sigurnosti.
 
@@ -11,7 +11,7 @@ U suštini, WordPress multisite se može zamisliti ovako: Univerzitet održava j
 
 ##
 
-## Što je to točno WordPress Multisite?
+## Što je to točno WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite je značajka WordPress-a koja omogućuje više web stranica (sajtova) da dijele jednu instalaciju WordPressa. Kada se aktivira multisite, originalni WordPress sajt se pretvara u podršku onome što se obično naziva **mreža sajtova**.
 
@@ -23,7 +23,7 @@ Ova činjenica je jedna od glavnih prednosti multisite, jer vam omogućuje da po
 
 ##
 
-## Poddomena ili poddirektorijum?
+## Poddomena ili poddirektorijum? {#subdomain-or-subdirectory}
 
 Postoje dva načina rada WordPress multisite – i morate odabrati jedan kada pretvarate svoju običnu instalaciju WordPressa u multisite instalaciju:
 
@@ -49,7 +49,7 @@ Jedna od glavnih poteškoća pri postavljanju načina rada s poddomenima (subdom
 
 U suprotnosti s načinom rada poddirektorijskog (subdirectory mode), podstranice na mreži baziranoj na poddomenu smatraju ih pretraživači zasebnim webovima, što znači da sadržaj prisutan na jednoj podstranici nikako ne utječe na SEO performanse drugih podstranica.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Jednostavne instalacije WordPressa s jednom stranicom omogućuju vam dodavanje neograničenog broja korisnika i dodjeljivanje tim korisnicima različitih uloga s različitim dozvolama.
 
@@ -63,7 +63,7 @@ Pluginove i teme mogu instalirati ili deinstalirati samo super admini putem netw
 
 _Napomena: kao što možete vidjeti, pozivanjem nekoga u vašu mrežu i dodjeljanjem mu statusa super admina daje tom korisniku potpunu kontrolu nad vašom mrežom. Kao primjer, drugi super admini mogu čak ukloniti vam status super admina, čime vas efektivno isključuju iz administracijskog panela vaše vlastite mreže. Kako bismo omogućili Ultimate Multisite klijentima granularnu kontrolu nad onim što dodatni super admini mogu raditi, imamo dodatak pod nazivom Support Agents. Ovaj dodatak vam omogućuje da kreirate još jednu vrstu korisnika – agenta – s dozvolama koje su mu potrebne samo za obavljanje zadataka na mreži._
 
-## Što je zajedničko među subsitima i što nije
+## Što je zajedničko među subsitima i što nije {#what-is-shared-among-subsites-and-what-is-not}
 
 Kao što smo ranije spomenuli, jedna od ključnih prednosti WordPress multisite je to da svi subsiti dijele iste konfiguracije, jezgre datoteke (core files), teme, pluginove, jezgru WordPressa itd.
 
@@ -73,7 +73,7 @@ Međutim, postoje elementi koji su dobro ograničeni na osnovu svakog subsite-a.
 - Svaki subsite ima svoj posvećeni admin panel i može aktivirati ili deaktivirati pluginove ili teme osim ako nisu aktivni u mreži od strane super admina.
 - Većina tablica baze podataka kreirana je za svaki subsite, što znači da su postovi, komentari, stranice, postavke i još mnogo toga ograničeni na svaki subsite.
 
-## Upravljanje korisnicima na WordPress Multisiteu
+## Upravljanje korisnicima na WordPress Multisiteu {#user-management-on-wordpress-multisite}
 
 Jedan delikatni aspekt upravljanja korisnicima na WordPress multisiteu je upravljanje korisnicima. Tablica korisnika WordPressa je jedna od malo tablica koja se dijeli među svim subsitima.
 
@@ -97,7 +97,7 @@ _Napomena: Razumijemo koliko to može biti loše ovisno o vašem slučaju koriš
 
 Iako je korisni tabelu zajednički, subsite administratori ili super administrator mogu dodavati i uklanjati korisnike s subsitova, te im se mogu dodijeliti različite uloge na različitim subsitovima.
 
-## Razmatranja o performansi
+## Razmatranja o performansi {#performance-considerations}
 
 WordPress multisite je zaista moćan kada je riječ o broju web stranica koje može podržati. To možete testirati činjenicom da su [WordPress.com](https://WordPress.com), Edublogs i Campuspress svi usluge zasnovane na multisite, a svaki od njih hosta tisuće stranica.
 

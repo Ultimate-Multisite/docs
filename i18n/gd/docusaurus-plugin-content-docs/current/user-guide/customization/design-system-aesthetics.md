@@ -3,11 +3,11 @@ title: Aistriobh aistriobh deasctha
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skill a' Chàirbeadh System Design Aesthetics
+# Skill a' Chàirbeadh System Design Aesthetics {#design-system-aesthetics-skill}
 
 Tha **Skill a' Chàirbeadh System Design Aesthetics** (Design System Aesthetics skill) guileachd le fhaighinn a tha a' chlàradh airson a' chàirbeadh sgrùdachadh a' chàirbeadh do chàrr. Tha e a' toirt a chàirbeadh a' chàirbeadh a' chàrr air a' chàirbeadh a' chàrr a tha a' chlàradh, gu sònraichte, faighinn a' chàirbeadh do typography, colf, spàis, agus motion tokens a tha a' chàirbeadh a' chàrr.
 
-## Cò a tha Design System Aesthetics?
+## Cò a tha Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Tha Design System Aesthetics a' chlàradh strìdheach gu sònraichte a tha a' chlàradh:
 
@@ -20,9 +20,9 @@ Tha Design System Aesthetics a' chlàradh strìdheach gu sònraichte a tha a' ch
 
 Tha e chlàradh seo a' chàirbeadh anns an `theme.json` a tha a' chàrr, a' tòiseachadh system sgrùdachadh a' chàrr a tha a' chlàradh.
 
-## Cò a tha Design System Aesthetics a' chàirbeadh?
+## Cò a tha Design System Aesthetics a' chàirbeadh? {#why-use-design-system-aesthetics}
 
-### Chàirbeadh (Consistency)
+### Chàirbeadh (Consistency) {#consistency}
 
 Tha design system a' chlàradh:
 
@@ -31,7 +31,7 @@ Tha design system a' chlàradh:
 - Spàis a tha a' chàirbeadh a' chàrr
 - Animations a tha a' chlàradh
 
-### Eifeacht (Efficiency)
+### Eifeacht (Efficiency) {#efficiency}
 
 Mar a tha e a' chlàradh, a' chàrr a' chàirbeadh design gu sònraichte:
 
@@ -39,7 +39,7 @@ Mar a tha e a' chlàradh, a' chàrr a' chàirbeadh design gu sònraichte:
 - A' chàirbeadh a' chàrr air a' chàrr
 - A' chlàradh gu sònraichte a' chàrr a' chàrr a' chàrr a' chàrr
 
-### Flegasachd (Flexibility)
+### Flegasachd (Flexibility) {#flexibility}
 
 Is e a tha thu a' chàirbeadh:
 
@@ -47,9 +47,9 @@ Is e a tha thu a' chàirbeadh:
 - A' chlàradh le fhaighinn aesthetics fadaiche
 - A th' ann a' chàirbeadh brand consistency air a' chàrr a tha a' chlàradh
 
-## A' Chàirbeadh Design System Aesthetics Skill?
+## A' Chàirbeadh Design System Aesthetics Skill? {#triggering-the-design-system-aesthetics-skill}
 
-### Chàirbeadh Manichileach (Manual Activation)
+### Chàirbeadh Manichileach (Manual Activation) {#manual-activation}
 
 Is e a tha thu a' chàirbeadh an skill gu sònraichte:
 
@@ -69,7 +69,7 @@ an ath-bhlaidhe:
 "Guide me through design system decisions"
 ```
 
-### Chàirbeadh Aithrisge (Automatic Suggestions)
+### Chàirbeadh Aithrisge (Automatic Suggestions) {#automatic-suggestions}
 
 Leog nach eil e a' chlàradh a' chàrr gu sònraichte air a tha thu a' chàirbeadh:
 
@@ -80,9 +80,9 @@ Leog nach eil e a' chlàradh a' chàrr gu sònraichte air a tha thu a' chàirbea
 
 
 
-## Proses Aistheas Sisteam
+## Proses Aistheas Sisteam {#the-design-system-aesthetics-process}
 
-### Step 1: Typografia
+### Step 1: Typografia {#step-1-typography}
 
 An agent a' chruinn a bhith agad faic na ealaian fònt sinne:
 
@@ -118,7 +118,7 @@ An agent thaind an tairgseann:
 - **Scale fòdhbhaidh**: Scale fòdhbhaidh (regular, medium, bold, etc.).
 - **Linnteachd lìnne**: Spàis a' creachd air linntean airson sinn a' chluinn.
 
-### Step 2: Palette Columhach
+### Step 2: Palette Columhach {#step-2-color-palette}
 
 ```
 Gair mbeidh sinn ealaian columhach agad.
@@ -148,7 +148,7 @@ An agent thaind ealaian latha a thainn:
 - Columhan sinnseacha (sgaidh, earros, earrach).
 - Stàtanna hover agus active.
 
-### Step 3: Spàis
+### Step 3: Spàis {#step-3-spacing}
 
 (Seo an tairgseann a tha thu a' chluinn)
 
@@ -170,7 +170,7 @@ Leid an agent a definid tokenan de spàisge:
 - Scala: xs, sm, md, lg, xl, 2xl
 - Valued specifich airson padding, margin, gap
 
-### Step 4: Borders agus Shadowan
+### Step 4: Borders agus Shadowan {#step-4-borders-and-shadows}
 
 ```
 Fòcas is fhaighinn a tha air a bhith agad:
@@ -193,7 +193,7 @@ Leid an agent a creach:
 - Tokenan de shadowan airson leòradhan (elevation levels)
 - Tokenan de width an t-uisge (Border width tokens)
 
-### Step 5: Motion agus Animationan
+### Step 5: Motion agus Animationan {#step-5-motion-and-animation}
 
 ```
 Ciamar thu eolfaidh an site gu sgaidh nuair a tha eigeantach?
@@ -215,9 +215,9 @@ Leid an agent a definid:
 - Easing functions (ease-in, ease-out, ease-in-out)
 - Animation keyframes airson teicneachdan a tha a' chiallach
 
-## Ailinn Design System Aesthetics
+## Ailinn Design System Aesthetics {#applying-design-system-aesthetics}
 
-### Automatic Application
+### Automatic Application {#automatic-application}
 
 An uair a tholadh thu an fòcas, leid an agent:
 
@@ -226,13 +226,13 @@ An uair a tholadh thu an fòcas, leid an agent:
 3. Regenerates block styles airson a' chleachdadh nàchda a tha a' chiallach
 4. Activates an theme a' chiallach a' thabhairt
 
-### Manual Application
+### Manual Application {#manual-application}
 
 Is e gu sònraichte thu a h-uileidheach a' chiallach:
 
-## Aimsinnadh a Chàirbhinnadh Ri Maistair Design (Viewing Your Design System)
+## Aimsinnadh a Chàirbhinnadh Ri Maistair Design (Viewing Your Design System) {#viewing-your-design-system}
 
-### Gnìomh an t-Agent (Ask the Agent)
+### Gnìomh an t-Agent (Ask the Agent) {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -244,13 +244,13 @@ mar a' chlàradh a tha a' chlàradh, a chlàradh, a chlàradh, a chlàradh.
 
 a thàidich a' chlàradh a tha a' chlàradh, a chlàradh, a chlàradh, a chlàradh.
 
-### Aimsinnadh theme.json (View theme.json)
+### Aimsinnadh theme.json (View theme.json) {#view-themejson}
 
 Gabh air `/wp-content/themes/[theme-name]/theme.json` a' chlàradh mewn sealladh text airson faigh a' chlàradh a tha a' chlàradh.
 
-## Athachadh Aimsinnadh Design (Updating Your Design System)
+## Athachadh Aimsinnadh Design (Updating Your Design System) {#updating-your-design-system}
 
-### Athachadh Fàilte (Quick Updates)
+### Athachadh Fàilte (Quick Updates) {#quick-updates}
 
 Gabh air an t-Agent a' chlàradh am fhaighinn:
 
@@ -264,7 +264,7 @@ mar a' chlàradh a tha a' chlàradh, a chlàradh, a chlàradh.
 
 a thàidich a' chlàradh a tha a' chlàradh, a chlàradh, a chlàradh.
 
-### Athachadh Fhuair (Full Redesign)
+### Athachadh Fhuair (Full Redesign) {#full-redesign}
 
 Ath-ghinneann an t-skill Design System Aesthetics:
 
@@ -276,15 +276,15 @@ a thàidich a' chlàradh a tha a' chlàradh, a chlàradh, a chlàradh.
 
 a thàidich a' chlàradh a tha a' chlàradh, a chlàradh, a chlàradh.
 
-## Athachadh Aimsinnadh Design (Design System Best Practices)
+## Athachadh Aimsinnadh Design (Design System Best Practices) {#partial-updates}
 
-### Coimhearsnachd (Consistency)
+### Coimhearsnachd (Consistency) {#design-system-best-practices}
 
 - Usga am fhaighinn air an t-token air a' chlàradh.
 - Na tha thu a' chlàradh a tha a' chlàradh.
 - Usga an t-token air a' chlàradh gu leathan ann an t-fhaighinn, a chanachdaidhean a tha a' chlàradh.
 
-### Nàimeachadh (Naming)
+### Nàimeachadh (Naming) {#consistency-1}
 
 Usga nàimean clàrach agus seòl:
 
@@ -294,7 +294,7 @@ Usga nàimean clàrach agus seòl:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalability (Scalability)
+### Scalability (Scalability) {#naming}
 
 Design an system for scaling up:
 
@@ -302,7 +302,7 @@ Design an system for scaling up:
 - Create scales (xs, sm, md, lg, xl) instead of random numbers
 - Plan for things you might need later
 
-### Documentation
+### Documentation {#scalability}
 
 Document the design system ye have:
 
@@ -310,9 +310,9 @@ Document the design system ye have:
 - When tae use each token
 - What happens when there are exceptions and tricky bits
 
-## Common Design System Patterns
+## Common Design System Patterns {#documentation}
 
-### Modern Minimalist
+### Modern Minimalist {#common-design-system-patterns}
 
 - Sans-serif typography (Inter, Helvetica)
 - A small colour set (2-3 colours)
@@ -320,7 +320,7 @@ Document the design system ye have:
 - Light shadows
 - Smooth, quick animations
 
-### Warm and Friendly
+### Warm and Friendly {#modern-minimalist}
 
 - A mix o' serif and sans-serif fonts
 - A warm colour scheme (oranges, warm grays)
@@ -328,7 +328,7 @@ Document the design system ye have:
 - Soft shadows
 - Playful animations
 
-### Professional Corporate
+### Professional Corporate {#warm-and-friendly}
 
 - Clean sans-serif (Roboto, Open Sans)
 - A neutral palette with one accent colour
@@ -336,7 +336,7 @@ Document the design system ye have:
 - Very little shadow
 - Subtle transitions
 
-### Creative and Bold
+### Creative and Bold {#professional-corporate}
 
 - Fonts that stand out
 - A strong colour set
@@ -344,7 +344,7 @@ Document the design system ye have:
 - Strong shadows
 - Animations ye can really see
 
-## Troubleshooting
+## Troubleshooting {#creative-and-bold}
 
 **My design system changes ain't showin'**
 - Clear yer browser cache
@@ -362,7 +362,7 @@ Document the design system ye have:
 - Manually edit theme.json tae the old values
 - Run the skill again with different choices
 
-## Next Steps
+## Next Steps {#troubleshooting}
 
 After ye've set up yer design system:
 

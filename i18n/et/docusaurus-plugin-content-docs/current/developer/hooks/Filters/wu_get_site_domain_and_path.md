@@ -4,26 +4,26 @@ title: Filter - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# Filter: wu_get_site_domain_and_path
+# Filter: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
 
 Võimaldab arendajatel domeeni/tee paare muuta.
 
 See võib olla kasulik mitmel eesmärgil, näiteks mingisuguse staging-lahenduse, erinevate serverite jne rakendamiseks.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
 | $d | `object` | Praegune objekt, mis sisaldab domeeni ja tee võtmeid. |
 | $path_or_subdomain | `string` | Algne tee/alamdomeen, mis edastati funktsioonile. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/functions/site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/site.php#L235) real 235
 
 
-## Tagastab
+## Tagastab {#returns}
 Objekti, mis sisaldab domeeni ja tee võtmeid.

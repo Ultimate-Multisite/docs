@@ -3,7 +3,7 @@ title: PayFast փոփոխությունների մատյան
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast փոփոխությունների մատյան
+# PayFast փոփոխությունների մատյան {#payfast-changelog}
 
 Տարբերակ՝ 1.0.2 - Թողարկվել է 2025-09-28
 

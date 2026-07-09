@@ -3,11 +3,11 @@ title: Kupanga Chipata Chosinthidwa Mwamakonda
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Kupanga Gateway Yachikhalidwe
+# Kupanga Gateway Yachikhalidwe {#custom-gateway-development}
 
 Mutha kupanga ma gateway olipirira achikhalidwe powonjezera kalasi ya `Base_Gateway`.
 
-## Kalasi ya Gateway
+## Kalasi ya Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Lembetsani Gateway
+## Lembetsani Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Njira Zofunika
+## Njira Zofunika {#key-methods}
 
 | Method | Cholinga |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Kusamalira zopempha zobweza ndalama |
 | `get_payment_methods()` | Kubwezera njira zolipirira zosungidwa za kasitomala |
 
-## Zizindikiro zobwezeretsanso za ma membership obwerezabwereza
+## Zizindikiro zobwezeretsanso za ma membership obwerezabwereza {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 imalola ma integration a gateway kufotokoza ngati membership yobwerezabwereza ili ndi chizindikiro chobwezeretsanso chomwe chingagwiritsidwenso ntchito musanasunge `auto_renew`. Lumikizani `wu_membership_has_renewal_credential` ndipo mubweze:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Chotsani chizindikiro cha credential yosowa ngati gawo la njira yanu ya gateway yobwezeretsanso chilolezo yopambana pambuyo posunga credential yatsopano yomwe ingagwiritsidwenso ntchito.
 
-## Malangizo
+## Malangizo {#tips}
 
 - Nthawi zonse bweretsani `WP_Error` pakalephera kuti Ultimate Multisite izitha kusamalira kuwonetsa zolakwika
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gwiritsani ntchito `wu_log_add()` pa kulemba ma log okhudza gateway yokha
 
-## Kuthekera kwa opereka AI connector
+## Kuthekera kwa opereka AI connector {#ai-connector-provider-capabilities}
 
 Ma integration achikhalidwe omwe amayitana ntchito zothandizidwa ndi AI connector ayenera kugwirizana ndi gulu la provider la OAuth lomwe linayambitsidwa ndi AI Provider for Anthropic Max v1.3.0:
 

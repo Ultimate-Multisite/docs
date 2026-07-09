@@ -3,15 +3,15 @@ title: Orkestrasi Pangwangun Situs v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrasi Pangwangun Situs v2
+# Orkestrasi Pangwangun Situs v2 {#site-builder-orchestration-v2}
 
 Orkestrasi Pangwangun Situs v2 (diwanohkeun dina Gratis AI Agent v1.4.0) nyaéta mesin anu ngagerakkeun nyieun website multi-léngkah. Nalika anjeun ménta agent pikeun "ngawangun website réstoran" atawa "nyieun portofolio jeung blog", orchestrator ngabagi tujuan tingkat luhur éta jadi **rencana** anu terstruktur, manggihan plugin anu diperlukeun pikeun ngalaksanakeunana, ngajalankeun unggal léngkah sacara runtuyan, ngalacak kamajuan, sarta cageur tina kasalahan sacara mandiri.
 
 ---
 
-## Kumaha Gawéna
+## Kumaha Gawéna {#how-it-works}
 
-### 1. Nyieun Rencana
+### 1. Nyieun Rencana {#1-plan-generation}
 
 Nalika agent narima paréntah ngawangun situs, éta nyauran kamampuhan `create_site_plan` pikeun ngahasilkeun **rencana situs** JSON. Rencana ngajelaskeun:
 
@@ -61,7 +61,7 @@ Nalika agent narima paréntah ngawangun situs, éta nyauran kamampuhan `create_s
 }
 ```
 
-### 2. Manggihkeun Plugin
+### 2. Manggihkeun Plugin {#2-plugin-discovery}
 
 Saméméh palaksanaan dimimitian, orchestrator nyeken `plugin_requirements` dina rencana jeung mariksa plugin mana anu geus aktip. Pikeun plugin anu leungit, éta:
 
@@ -71,7 +71,7 @@ Saméméh palaksanaan dimimitian, orchestrator nyeken `plugin_requirements` dina
 
 Kagagalan manggihkeun plugin henteu fatal — orchestrator nandaan léngkah anu kapangaruhan salaku `skipped` sarta neruskeun kana sésa rencana.
 
-### 3. Palaksanaan Rencana
+### 3. Palaksanaan Rencana {#3-plan-execution}
 
 Orchestrator nyauran `execute_site_plan` kalayan ID rencana. Palaksanaan lumangsung fase-demi-fase, léngkah-demi-léngkah:
 
@@ -79,7 +79,7 @@ Orchestrator nyauran `execute_site_plan` kalayan ID rencana. Palaksanaan lumangs
 - **Léngkah paralel** — léngkah dina fase anu sarua anu teu boga katergantungan silih antara léngkah dikirim sacara babarengan nalika flag `parallel` disetél.
 - **Timeout léngkah** — unggal léngkah boga timeout sorangan (standar: setélan `Ability Timeout`). Léngkah anu timed-out ditandaan `failed` sarta rencana neruskeun.
 
-### 4. Ngalacak Kamajuan
+### 4. Ngalacak Kamajuan {#4-progress-tracking}
 
 Sauran `get_plan_progress` iraha waé pikeun mariksa status palaksanaan:
 
@@ -104,7 +104,7 @@ Pamaké WP-CLI bisa ngawas kamajuan kalayan:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Pamulihan Kasalahan
+### 5. Pamulihan Kasalahan {#5-error-recovery}
 
 Nalika hiji léngkah gagal, orchestrator mariksa naha aya léngkah **fallback** anu ditetepkeun dina rencana:
 
@@ -115,9 +115,9 @@ Agent ngalaporkeun sakabéh kagagalan dina ringkesan rencana ahir sarta bisa nya
 
 ---
 
-## Kamampuhan Rencana Situs
+## Kamampuhan Rencana Situs {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Ngahasilkeun rencana situs terstruktur tina pedaran tujuan dina basa alami.
 
@@ -134,7 +134,7 @@ Ngahasilkeun rencana situs terstruktur tina pedaran tujuan dina basa alami.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Ngamimitian ngajalankeun rencana situs anu geus dihasilkeun saméméhna.
 
@@ -150,7 +150,7 @@ Ngamimitian ngajalankeun rencana situs anu geus dihasilkeun saméméhna.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Ngabalikeun status palaksanaan ayeuna tina plan situs.
 
@@ -164,7 +164,7 @@ Ngabalikeun status palaksanaan ayeuna tina plan situs.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ngabéréskeun sacara manual léngkah anu gagal sarta neruskeun palaksanaan plan ti léngkah salajengna. Paké ieu nalika pamulihan otomatis teu mungkin sarta anjeun rék campur tangan.
 
@@ -180,7 +180,7 @@ Ngabéréskeun sacara manual léngkah anu gagal sarta neruskeun palaksanaan plan
 
 ---
 
-## Ngabandingkeun v1 jeung v2
+## Ngabandingkeun v1 jeung v2 {#comparing-v1-and-v2}
 
 | Fitur | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Ngabéréskeun sacara manual léngkah anu gagal sarta neruskeun palaksanaan plan
 
 ---
 
-## Paréntah Plan WP-CLI
+## Paréntah Plan WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Ngahasilkeun plan situs tina pedaran tujuan.
 
@@ -205,7 +205,7 @@ Ngahasilkeun plan situs tina pedaran tujuan.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Ngalaksanakeun plan anu geus dihasilkeun saméméhna.
 
@@ -213,7 +213,7 @@ Ngalaksanakeun plan anu geus dihasilkeun saméméhna.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Mintonkeun kamajuan ayeuna pikeun plan anu keur dijalankeun atawa geus réngsé.
 
@@ -221,7 +221,7 @@ Mintonkeun kamajuan ayeuna pikeun plan anu keur dijalankeun atawa geus réngsé.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Mintonkeun daptar sakabéh plan situs (nungguan, keur diprosés, jeung geus réngsé).
 
@@ -229,7 +229,7 @@ Mintonkeun daptar sakabéh plan situs (nungguan, keur diprosés, jeung geus rén
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Ngareset plan anu gagal jadi `pending` sangkan bisa dijalankeun deui ti mimiti.
 

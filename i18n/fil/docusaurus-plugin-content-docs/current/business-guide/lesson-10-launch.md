@@ -3,19 +3,19 @@ title: 'Aralin 10: Araw ng Paglulunsad'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day
+# Lesson 10: Launch Day {#lesson-10-launch-day}
 
 Kumpleto na ang lahat. Bago mo buksan ang mga pinto, ang lesson na ito ay magdadala sa iyo sa pre-launch checklist para masigurong walang sira, nawawala, o nakakahiya.
 
-## Where We Left Off
+## Where We Left Off {#where-we-left-off}
 
 Ang FitSite ay may mga templates, plans, checkout, branding, onboarding, at pricing na naka-configure na. Ngayon, i-ve-verify natin na gumagana ang lahat at handa na tayong mag-live.
 
-## Pre-Launch Checklist
+## Pre-Launch Checklist {#pre-launch-checklist}
 
 Dumaan sa bawat item. Huwag na huwag mong lalaktawan.
 
-### Platform Infrastructure
+### Platform Infrastructure {#platform-infrastructure}
 
 - [ ] Stable at gumagana nang maayos ang hosting kahit mataas ang load
 - [ ] Aktibo ang Wildcard SSL at lahat ng subdomains ay gumagamit ng HTTPS
@@ -23,7 +23,7 @@ Dumaan sa bawat item. Huwag na huwag mong lalaktawan.
 - [ ] Naka-configure at na-test ang backups (mag-restore ng isa para ma-verify)
 - [ ] May monitoring system -- alam mo kung bumagsak ang platform
 
-### Templates
+### Templates {#templates}
 
 - [ ] Lahat ng tatlong templates ay naglo-load nang tama sa mga bagong site
 - [ ] Ang placeholder content ay nakakatulong at walang typo
@@ -32,7 +32,7 @@ Dumaan sa bawat item. Huwag na huwag mong lalaktawan.
 - [ ] Katanggap-tanggap ang page load speed (subukan gamit ang tool tulad ng GTmetrix o PageSpeed Insights)
 - [ ] Walang broken links o nawawalang assets sa anumang template
 
-### Plans and Products
+### Plans and Products {#plans-and-products}
 
 - [ ] Aktibo at nakikita ang tatlong plans
 - [ ] Ang mga description ng plan ay tama at specific sa niche
@@ -42,7 +42,7 @@ Dumaan sa bawat item. Huwag na huwag mong lalaktawan.
 - [ ] Ang order bumps ay lumalabas nang tama sa checkout
 - [ ] Ang limitasyon ng plugin at theme ay naipapatupad nang tama bawat plan
 
-### Checkout Flow
+### Checkout Flow {#checkout-flow}
 
 - [ ] Kumpletuhin ang isang full test signup sa bawat plan (gumamit ng test payment mode)
 - [ ] Ang template selection ay nagpapakita ng tamang templates bawat plan
@@ -52,7 +52,7 @@ Dumaan sa bawat item. Huwag na huwag mong lalaktawan.
 - [ ] Agad na makaka-log in ang customer sa kanilang bagong site
 - [ ] Gumagana nang tama ang discount codes
 
-### Branding
+### Branding {#branding}
 
 - [ ] Ang login page ay nagpapakita ng FitSite branding
 - [ ] Ang admin dashboard ay nagpapakita ng FitSite branding
@@ -60,7 +60,7 @@ Dumaan sa bawat item. Huwag na huwag mong lalaktawan.
 - [ ] Ang mga invoice ay nagpapakita nang tama kasama ang detalye ng iyong negosyo
 - [ ] Ang marketing site ay live at nagli-link sa checkout form
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Ang Quick Start widget ay lumalabas sa mga dashboard ng bagong customer
 - [ ] Ang lahat ng Quick Start links ay tumuturo sa tamang pages
@@ -68,7 +68,7 @@ Dumaan sa bawat item. Huwag na huwag mong lalaktawan.
 - [ ] Ang mga knowledge base articles ay na-publish at accessible
 - [ ] Ang account page ay nagpapakita ng tamang plan information at upgrade options
 
-### Legal and Business
+### Legal and Business {#legal-and-business}
 
 - [ ] Ang Terms of service ay na-publish at naka-link mula sa checkout
 - [ ] Ang Privacy policy ay na-publish at accessible
@@ -77,11 +77,11 @@ Dumaan sa bawat item. Huwag na huwag mong lalaktawan.
 - [ ] Ang payment gateway ay nasa live mode (hindi test mode)
 - [ ] Tama ang tax configuration para sa iyong jurisdiction
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Isaalang-alang ang isang two-phase launch:
 
-### Phase 1: Soft Launch
+### Phase 1: Soft Launch {#phase-1-soft-launch}
 
 Imbitahan ang 5-10 fitness studio owners na mag-sign up bago ang public launch. Sila ang iyong mga beta customers. Bigyan sila ng malaking discount (50% off for life, o 3 months free) kapalit ng:
 
@@ -91,7 +91,7 @@ Imbitahan ang 5-10 fitness studio owners na mag-sign up bago ang public launch. 
 
 Nagbibigay ito sa iyo ng totoong feedback mula sa customer at live sites na maipapakita bago mo buksan sa publiko.
 
-### Phase 2: Public Launch
+### Phase 2: Public Launch {#phase-2-public-launch}
 
 Kapag naisama na ang feedback mula sa soft launch:
 
@@ -100,7 +100,7 @@ Kapag naisama na ang feedback mula sa soft launch:
 - Magsimula sa customer acquisition (Lesson 11)
 - Mag-announce sa mga relevant fitness industry channels
 
-## Launch Day Actions
+## Launch Day Actions {#launch-day-actions}
 
 Sa araw na magiging public ka:
 
@@ -110,7 +110,7 @@ Sa araw na magiging public ka:
 4. **Maging available** -- baka kailanganin ng tulong ang iyong mga unang tunay na customer, at ang mabilis na pagtugon ay nagbuo ng tiwala
 5. **Magdiwang nang saglit** -- pagkatapos ay bumalik sa trabaho
 
-## What Can Go Wrong
+## What Can Go Wrong {#what-can-go-wrong}
 
 Maghanda para sa:
 
@@ -120,7 +120,7 @@ Maghanda para sa:
 - **Performance under load**: Kung magkakaroon ka ng biglaang pagdami ng traffic, alamin kung paano i-scale ang iyong hosting
 - **Customer confusion**: Maghanda ng iyong knowledge base at support channels
 
-## The FitSite Network So Far
+## The FitSite Network So Far {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## What We Built This Lesson
+## What We Built This Lesson {#what-we-built-this-lesson}
 
 - **Isang komprehensibong pre-launch checklist** na sumasaklaw sa infrastructure, content, payments, at legal
 - **Isang soft launch strategy** para makakuha ng totoong feedback bago maging public

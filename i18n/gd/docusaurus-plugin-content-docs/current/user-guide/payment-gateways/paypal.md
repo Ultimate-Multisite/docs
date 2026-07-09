@@ -3,7 +3,7 @@ title: A' chlàradh PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# A' Chlàradhach an Gathairt a'n PayPal (v2)
+# A' Chlàradhach an Gathairt a'n PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTE CRUCIAL: Tha an article seo fhaighinn air Ultimate Multisite version 2.x.**_
 
@@ -16,7 +16,7 @@ Mar a tha's a' chlàradh a'n Stripe, tha PayPal a' chàir a'chòmhnaidh a' chài
 
 Chan eil thu a' faic an option OAuth anns an seòl, tosaich an amadh cridheann manual a' chlàradh a' chlàradh a' chlàradh a' chlàradh. Bidh an gateway a' obrachadh gu am beag cridheann PayPal Business API a tha ann an t-seòlaichean Ultimate Multisite 2.x a' chlàradh.
 
-## A bhith a' faighinn cridheann PayPal API
+## A bhith a' faighinn cridheann PayPal API {#enabling-paypal-on-your-network}
 
 Chan eil thu a' faighinn na fhaighinnachanna airson **Username API** a' chlàradh, **Password API** a' chlàradh, agus **Signature API** a' chlàradh gu bheil PayPal ann an t-seòlaichean.
 

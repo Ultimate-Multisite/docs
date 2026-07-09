@@ -3,7 +3,7 @@ title: Kódrészletek
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kódrészletek a v2-höz
+# Kódrészletek a v2-höz {#code-snippets-for-v2}
 
 A **WordPress** kódrészletei alapvetően olyan műveletek végrehajtására szolgálnak, amelyekhez egyébként egy kisebb, dedikált bővítményre lenne szükség. Az ilyen kódrészleteket a WordPress egyik alapfájljába vagy sablonfájljába helyezzük el (általában a sablon functions.php fájljába), de használhatók MU pluginként is.
 
@@ -15,13 +15,13 @@ Ebben a cikkben három olyan kódrészletet mutatunk be, amelyek az **Ultimate M
 
   * [**CORS-problémák megoldása betűikonoknál leképezett domainek esetén**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## A Fiók menüpont pozíciójának módosítása
+## A Fiók menüpont pozíciójának módosítása {#changing-the-position-of-the-account-menu-item}
 
 A Fiók menüpont pozíciójának módosításához az ügyfeled Vezérlőpultján egyszerűen add hozzá az alábbi kódrészletet a fő oldalad aktív sablonjának functions.php fájljához. A kódrészletet elhelyezheted valamelyik mu-plugin vagy egyedi plugin fájlban is.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Módosítsd ezt az értéket a menü kívánt pozíciójának beállításához.
 
-## Hogyan ellenőrizd, hogy a felhasználó adott csomaghoz tartozik-e és/vagy aktív előfizetéssel rendelkezik-e
+## Hogyan ellenőrizd, hogy a felhasználó adott csomaghoz tartozik-e és/vagy aktív előfizetéssel rendelkezik-e {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Hálózati adminisztrátorként szükséged lehet olyan egyedi függvények létrehozására, amelyek alapvető műveleteket hajtanak végre, vagy szolgáltatásokat/funkciókat tesznek elérhetővé az előfizetők vagy végfelhasználók egy kiválasztott csoportja számára az előfizetésük állapota és a választott csomag alapján.
 
@@ -47,8 +47,8 @@ Fontos tudni, hogy a felhasználók csak **Csomagra** fizethetnek elő, Package-
 
 ![Terméklista a csomag azonosítókkal](/img/admin/products-list.png)
 
-## CORS-problémák megoldása betűikonoknál leképezett domainek esetén
-## CORS-problémák megoldása betűikonoknál leképezett domainek esetén
+## CORS-problémák megoldása betűikonoknál leképezett domainek esetén {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## CORS-problémák megoldása betűikonoknál leképezett domainek esetén {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Egy domain aloldalhoz való leképezése után előfordulhat, hogy az oldal nem tudja betölteni az egyedi betűtípusokat. Ezt a szerver beállításaiban lévő cross-origin blokkolás okozza.
 
@@ -56,13 +56,13 @@ Mivel a betűtípus-fájlok szinte mindig közvetlenül a CSS-ből töltődnek b
 
 Az alábbiakban találod az Apache és NGINX szerverekhez szükséges kódrészleteket. Ezek a módosítások a szerver konfigurációs fájlok (.htaccess fájlok és NGINX config fájlok) haladó szintű ismeretét igénylik. Ha nem érzed magabiztosnak magad ezeknek a módosításoknak az elvégzésében, küldd el ezt az oldalt a tárhelyszolgáltatód ügyfélszolgálatának, amikor segítséget kérsz.
 
-### Apache
+### Apache {#apache}
 
 A .htaccess fájlodba add hozzá:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 A szerver konfigurációs fájlodban (a helye szerverenként változó) add hozzá:
 

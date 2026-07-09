@@ -3,13 +3,13 @@ title: Manuaalisten maksujen määrittäminen
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuaalisten maksujen määrittäminen (v2)
+# Manuaalisten maksujen määrittäminen (v2) {#setting-up-manual-payments-v2}
 
 _**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -version 2.x käyttöä.**_
 
 Manuaaliset maksut ovat tapa tarjota muita maksutapoja, jos **Stripe** tai **PayPal** ei ole käyttäjiesi saatavilla. Se voi olla tilisiirto tai pankkisiirto tai mikä tahansa muu maksutapa, joka on paikallisesti käyttäjiesi saatavilla.
 
-## Manuaalisten maksujen käyttöönotto
+## Manuaalisten maksujen käyttöönotto {#how-to-enable-manual-payments}
 
 Manuaalisen maksun määrittäminen on erittäin helppoa. Sinun tarvitsee vain ottaa se käyttöön maksuyhdyskäytävien kohdalla ja lisätä yksityiskohtaiset ohjeet siitä, miten käyttäjän tulee lähettää maksu.
 
@@ -31,7 +31,7 @@ He saavat myös viestin **Kiitos**-sivullasi maksuohjeidesi kanssa.
 
 <!-- Kuvakaappaus ei saatavilla: Kiitos-sivu, joka näyttää maksuohjeet checkoutin jälkeen -->
 
-## Manuaalisten maksujen vahvistaminen
+## Manuaalisten maksujen vahvistaminen {#confirming-manual-payments}
 
 Vahvistaaksesi manuaalisen maksun siirry vasemman palkin **Maksut**-valikkoon. Siellä näet kaikki verkostosi maksut ja niiden tiedot, mukaan lukien niiden **tilan**. Manuaalisella maksulla on aina **Odottaa**-tila, kunnes muutat sen manuaalisesti.
 

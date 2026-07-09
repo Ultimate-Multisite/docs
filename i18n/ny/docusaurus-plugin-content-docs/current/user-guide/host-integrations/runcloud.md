@@ -3,17 +3,17 @@ title: Kukonza RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration
+# RunCloud Integration {#runcloud-integration}
 
-## Kufunso (Overview)
+## Kufunso (Overview) {#overview}
 RunCloud ndi platform yomwe imapulogera pa cloud yomwe imaphatikiza kuti mupulogera ndi kupanga ndi kuwunika web applications pa server zanu za cloud. Izi imaphatikiza kupangira domain kwa m'maka (automatic domain syncing) ndi upatanirano wa SSL certificate pakati pa Ultimate Multisite ndi RunCloud.
 
-## Mafunso (Features)
+## Mafunso (Features) {#features}
 - Kupulogera domain kwa m'maka (Automatic domain syncing)
 - Upatanirano wa SSL certificate (SSL certificate management)
 - Kupanga domain pamene mappings aphedwa (Domain removal when mappings are deleted)
 
-## Zomwe Zikufunika (Requirements)
+## Zomwe Zikufunika (Requirements) {#requirements}
 Zimeno zolemba (constants) zimene zikuyenera kudziwika m'moyo wanu wa `wp-config.php`:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Zifukwa za Kufotokozera (Setup Instructions)
+## Zifukwa za Kufotokozera (Setup Instructions) {#setup-instructions}
 
-### 1. Pange Credentials za RunCloud API Yanu
+### 1. Pange Credentials za RunCloud API Yanu {#1-get-your-runcloud-api-credentials}
 
 1. Phokera m'dashboard ya RunCloud yanu
 2. Phokera ku "User Profile" (phokera poyamba ndi pikhulupiriro lanu m'maka pa m'maka wopambuyo)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Kosele "Generate API Key" ngati simukuti muli ndiwo
 5. Kopitira API Key yanu ndi API Secret
 
-### 2. Pange Server and App IDs Yanu
+### 2. Pange Server and App IDs Yanu {#2-get-your-server-and-app-ids}
 
 1. M'dashboard ya RunCloud yanu, phokera ku "Servers"
 2. Kosele server yomwe imapulogera WordPress multisite yanu
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Phokera ku "Web Applications" ndipo kosele application ya WordPress yanu
 5. App ID limaphatikizidwa m'URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Pange Constants mu wp-config.php
+### 3. Pange Constants mu wp-config.php {#3-add-constants-to-wp-configphp}
 
 Pange zimene zolemba (constants) ku file yanu ya `wp-config.php`:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Onesha Integration (Enable the Integration)
+### 4. Onesha Integration (Enable the Integration) {#4-enable-the-integration}
 
 1. Muwera m'admin ya WordPress, ndi penda Ultimate Multisite > Settings
 2. Ndilankhula ku tab ya "Domain Mapping" (Kupanga Mwayi wa Domain)
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Onesha RunCloud integration
 5. Kufuna "Save Changes" (Kugwira Mwayi)
 
-## Kodi Imene? (How It Works)
+## Kodi Imene? (How It Works) {#how-it-works}
 
 Pamene mwayi wamapanga (mapped) mu Ultimate Multisite:
 
@@ -70,7 +70,7 @@ Pamene mwayi wamapanga (mapped) mu Ultimate Multisite:
 
 Pamene mwayi wamapanga (subdomain installations), integration imapanga mwayi wanu mu RunCloud pamene mwayi wamene (new sites) umapangidwa mu network yanu.
 
-## Kukhala Mwayi (Troubleshooting)
+## Kukhala Mwayi (Troubleshooting) {#troubleshooting}
 
-### Masomo a API Connection
+### Masomo a API Connection {#api-connection-issues}
 - Onesha kuti credentials ya API yanu ndi yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe y

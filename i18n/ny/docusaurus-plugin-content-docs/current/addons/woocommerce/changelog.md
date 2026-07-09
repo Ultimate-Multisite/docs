@@ -3,7 +3,7 @@ title: Mbiri ya Zosintha za Kuphatikiza kwa WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Mbiri ya Zosintha za WooCommerce Integration
+# Mbiri ya Zosintha za WooCommerce Integration {#woocommerce-integration-changelog}
 
 Mtundu 2.2.0 - Watulutsidwa pa 2026-07-01
 * Chatsopano: Ndalama za msonkho za Ultimate Multisite tsopano zimaoneka ngati mizere yosiyana ya chindapusa cha WooCommerce pa checkout, zomwe zimapangitsa chiwerengero chonse cha msonkho kukhala chomveka bwino musanalipire.

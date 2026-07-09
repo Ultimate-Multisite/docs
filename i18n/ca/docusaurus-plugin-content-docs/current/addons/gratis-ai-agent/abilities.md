@@ -3,7 +3,7 @@ title: Riferimenti delle capacità
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referència d'abilitats
+# Referència d'abilitats {#abilities-reference}
 
 Les habilitats són les accions atòmiques que l'Agent AI Gratis pot invocat en la teva instal·lació de WordPress. Cada habilitat és una classe PHP registrada que exposa un esquema JSON —l'agent lee aquest esquema al temps d'execució per entendre quins paràmetres són necessaris i què retorna la habilitat.
 
@@ -11,11 +11,11 @@ Aquesta pàgina documenta totes les habilitats que es envien amb Gratis AI Agent
 
 ---
 
-## Tipos de Publicació Personalitzats (Custom Post Types)
+## Tipos de Publicació Personalitzats (Custom Post Types) {#custom-post-types}
 
 Aquestes habilitats gestionen els tipus de publicació personalitzats (CPT) registrats a través de l'agent. Les registres es mantenen persistides en la taula d'opcions de WordPress, així com sobre la desactivació i reactivació del plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registra un nou tipus de publicació personalitzat.
 
@@ -50,7 +50,7 @@ Registra un nou tipus de publicació personalitzat.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Retorna tots els tipus de publicació personalitzats registrats per l'agent.
 
@@ -73,7 +73,7 @@ Retorna tots els tipus de publicació personalitzats registrats per l'agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Desregistra un tipus de publicació personalitzat que va ser registrat anteriorment per l'agent. Els posts existents d'aquest tipus es mantenen en la base de dades, però ja no són accessibles mitjançant el tipus de publicació.
 
@@ -87,21 +87,21 @@ Desregistra un tipus de publicació personalitzat que va ser registrat anteriorm
 
 ---
 
-## Taxonomies Personalitzades (Custom Taxonomies)
+## Taxonomies Personalitzades (Custom Taxonomies) {#custom-taxonomies}
 
 Aquestes habilitats gestionen les taxonomies personalitzades. Com els CPTs, les registres de taxonomies es mantenen persistides.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registra una nova taxonomia personalitzada.
 
 **Paràmetres**
 
-## Design System
+## Design System {#listtaxonomies}
 
 Les capacités du système de conception modifient la présentation visuelle du site WordPress — du CSS personnalisé aux modèles de blocs et au logo du site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#deletetaxonomy}
 
 Ajoute du CSS dans la balise `<head>` du site via `wp_add_inline_style`. Le CSS est stocké dans l'option `gratis_ai_agent_custom_css` et est retiré proprement lorsque cette capacité est réinitialisée.
 
@@ -127,7 +127,7 @@ Ajoute du CSS dans la balise `<head>` du site via `wp_add_inline_style`. Le CSS 
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#design-system}
 
 Enregistre un modèle de bloc réutilisable dans la bibliothèque de modèles WordPress.
 
@@ -146,7 +146,7 @@ Enregistre un modèle de bloc réutilisable dans la bibliothèque de modèles Wo
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#injectcustomcss}
 
 Llista tots els patterns de blocs registrats pel agent.
 
@@ -168,7 +168,7 @@ Llista tots els patterns de blocs registrats pel agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#addblockpattern}
 
 Establix el logo del site de WordPress a un ID d'attachment o a una URL d'imatge remota. Quan es proporciona una URL, l'imatge es descàrrega i s'importa a la Biblioteca de Mèdia.
 
@@ -185,7 +185,7 @@ Cal proporcionar un dels dos, l'ID d'attachment o la URL.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#listblockpatterns}
 
 Applica un preset de color/tipografia només al `theme.json` (o `global-styles`) del tema actiu. Els presets són paquetes curats mantenits pel equip d'agents AI Gratis.
 
@@ -210,11 +210,11 @@ Applica un preset de color/tipografia només al `theme.json` (o `global-styles`)
 
 ---
 
-## Estils Globals
+## Estils Globals {#setsitelogo}
 
 Les habilitats d'Estils Globals la lectura i escrit dels valors de `theme.json` a través de l'API Global Styles de WordPress, afectant tots els blocs i templates del site.
 
-### `get_global_styles`
+### `get_global_styles` {#applythemejsonpreset}
 
 Retorna la configuració actual dels estils globals.
 
@@ -228,9 +228,9 @@ Retorna la configuració actual dels estils globals.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#global-styles}
 
-### `reset_global_styles`
+### `reset_global_styles` {#getglobalstyles}
 
 Desactiva tots els canvis de estil global aplicats per l'agent, restaurant les configuracions predefinides del tema.
 
@@ -240,11 +240,11 @@ Desactiva tots els canvis de estil global aplicats per l'agent, restaurant les c
 
 ---
 
-## Menús de Navegació
+## Menús de Navegació {#setglobalstyles}
 
 Les habilitats de Menú de Navegació permeten crear i gestionar els menús de navigació de WordPress i els seus elements.
 
-### `create_menu`
+### `create_menu` {#resetglobalstyles}
 
 Crea un nou menú de navigació de WordPress.
 
@@ -259,7 +259,7 @@ Crea un nou menú de navigació de WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#navigation-menus}
 
 Canvia el nom d'un menú o reassigna-lo a una ubicació del tema.
 
@@ -275,7 +275,7 @@ Canvia el nom d'un menú o reassigna-lo a una ubicació del tema.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#createmenu}
 
 Afegeix un element a un menú de navigació existent.
 
@@ -295,7 +295,7 @@ Afegeix un element a un menú de navigació existent.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#updatemenu}
 
 Elimina un element d'un menú de navigació.
 
@@ -309,7 +309,7 @@ Elimina un element d'un menú de navigació.
 
 ---
 
-### `list_menus`
+### `list_menus` {#addmenuitem}
 
 Llista tots els menús de navigació de WordPress, incloent les seves ubicacions del tema assignades.
 
@@ -332,11 +332,11 @@ Llista tots els menús de navigació de WordPress, incloent les seves ubicacions
 
 ---
 
-## Gestió d'Opcions
+## Gestió d'Opcions {#removemenuitem}
 
 Les habilitats d'Opcions permeten llegir i escriure les opcions de WordPress mitjançant `get_option` / `update_option`. Una llista de seguretat integrada impedeix la modificació accidental de configuracions crítiques.
 
-### `get_option`
+### `get_option` {#listmenus}
 
 Llegeix una opció de WordPress.
 
@@ -352,7 +352,7 @@ Retorna un error si `option_name` està en la llista de bloqueig de seguretat.
 
 ---
 
-### `set_option`
+### `set_option` {#options-management}
 
 Escriu una opció de WordPress.
 
@@ -370,7 +370,7 @@ Retorna un error si `option_name` està en la llista de bloqueig de seguretat.
 
 ---
 
-### `delete_option`
+### `delete_option` {#getoption}
 
 Elimina una opció de WordPress.
 
@@ -386,7 +386,7 @@ Retorna un error si `option_name` està en la llista de bloqueig de seguretat.
 
 ---
 
-### `list_options`
+### `list_options` {#setoption}
 
 Llista les opcions de WordPress que coincideixen amb un patró.
 
@@ -410,11 +410,11 @@ Llista les opcions de WordPress que coincideixen amb un patró.
 
 ---
 
-## Gestió de Contenu (Content Management)
+## Gestió de Contenu (Content Management) {#deleteoption}
 
 Les habilitats de Gestió de Contenu creen i editen posts i pàgines de WordPress. S'retornen els IDs dels posts per poder fer referència al contingut creat en passos posteriors dins dels plans de múltiples habilitats.
 
-### `create_post`
+### `create_post` {#listoptions}
 
 Crea un nou post, pàgina o entrada de tipus de post personalitzat de WordPress.
 
@@ -435,7 +435,7 @@ Crea un nou post, pàgina o entrada de tipus de post personalitzat de WordPress.
 
 **Exemple**
 
-### `update_post`
+### `update_post` {#content-management}
 
 Actualitza un post o pàgina de WordPress que ja existeix.
 
@@ -465,7 +465,7 @@ Actualitza un post o pàgina de WordPress que ja existeix.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#createpost}
 
 Crea múltiples posts en una sola llamada a la funció, reduint els envials (round-trips) durant les construccions del site o l'import de contingut en massa. Els posts es creen en seqüència; si un falla, els altres continuaran i el fracàs es reportarà en l'array de resultats.
 
@@ -517,7 +517,7 @@ Crea múltiples posts en una sola llamada a la funció, reduint els envials (rou
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#updatepost}
 
 Assigna una imatge destacada (thumbnail del post) a un post o pàgina que ja existeix. Accepta un ID d'adjunt de la Media Library existente o una URL d'imatge remota; quan es proporciona una URL, l'imatge es descàrrega i s'importa automàticament.
 
@@ -536,7 +536,7 @@ Cal ser obligatori proporcionar `attachment_id` o `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#batchcreateposts}
 
 Crea un formulari de contact utilitzant el plugin de formulari actiu (Contact Form 7, WPForms, Fluent Forms o Gravity Forms, segons quin estigui instal·lat). Retorna un shortcode que es pot incorporar en qualsevol publicació o pàgina.
 
@@ -589,13 +589,13 @@ Crea un formulari de contact utilitzant el plugin de formulari actiu (Contact Fo
 
 ---
 
-## Revisió Visual
+## Revisió Visual {#setfeaturedimage}
 
 Les habilitats de Revisió Visual permeten a l'agent capturar captures d'esdevenços (screenshots) de pàgines en directe i analitzar-les, possibilitant la revisió de disseny autònoma, comparacions abans/després i verificacions de regressió visual sense necessitar cap extensió del navegador.
 
-### `capture_screenshot`
+### `capture_screenshot` {#createcontactform}
 
-### `compare_screenshots`
+### `compare_screenshots` {#visual-review}
 
 Toma dos capturades de pantalla i retorna una puntuació de diferència visual més una imatge que resalta les zones canviades. És molt útil per confirmar que un canvi de disseny ha produït el resultat esperat o per detectar regressions no desitjades.
 
@@ -625,7 +625,7 @@ Una `diff_score` de `0.0` significa que no hi ha canvi visible; `1.0` significa 
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#capturescreenshot}
 
 Captura una captura de pantalla d'una pàgina i la envia al model de llenguatge per a l'anàlisi visual. Retorna una tasació estructurada que cobreix el disseny, la tipografia, l'ús del color i les preocupacions d'accessibilitat.
 
@@ -639,11 +639,11 @@ Captura una captura de pantalla d'una pàgina i la envia al model de llenguatge 
 
 **Retorna**
 
-## Capacitats Instal·laborables
+## Capacitats Instal·laborables {#comparescreenshots}
 
 El Registre de Capacitats Instal·laborables (Installable Abilities Registry) t'permís ampliar l'agent amb pacs de capacitats distribuïdos com plugins de WordPress. Cada pack registra una o més capacitats utilitzant l'API estàndard de habilitats.
 
-### `list_available_abilities`
+### `list_available_abilities` {#reviewpagedesign}
 
 Retorna el catalog de pacs de capacitats disponibles per instal·lar des del registre.
 
@@ -672,7 +672,7 @@ Retorna el catalog de pacs de capacitats disponibles per instal·lar des del reg
 
 ---
 
-### `install_ability`
+### `install_ability` {#installable-abilities}
 
 Descarrega i activa un pack de capacitats des del registre.
 
@@ -686,7 +686,7 @@ Descarrega i activa un pack de capacitats des del registre.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#listavailableabilities}
 
 Consulta el registre de capacitats per trobar el millor plugin per a un cas d'ús descrit i, opcionalment, l'installa.
 

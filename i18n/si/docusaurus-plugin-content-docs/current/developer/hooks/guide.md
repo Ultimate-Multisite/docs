@@ -3,15 +3,15 @@ title: Hooks භාවිත මාර්ගෝපදේශය
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks භාවිත මාර්ගෝපදේශය
+# Hooks භාවිත මාර්ගෝපදේශය {#hooks-usage-guide}
 
 Ultimate Multisite මඟින් action hooks 200+ක් සහ filter hooks 280+ක් සපයයි. මෙම පිටුව ප්‍රායෝගික උදාහරණ සමඟ වැඩිපුරම භාවිත වන hooks ආවරණය කරයි. සම්පූර්ණ ස්වයංක්‍රීයව ජනනය කළ යොමුවක් සඳහා, මෙම කොටසේ අනෙකුත් පිටු පිරික්සන්න.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### ගනුදෙනුකරුගේ ජීවනචක්‍රය
+### ගනුදෙනුකරුගේ ජීවනචක්‍රය {#customer-lifecycle}
 
-#### ගනුදෙනුකරු නිර්මාණයෙන් පසු
+#### ගනුදෙනුකරු නිර්මාණයෙන් පසු {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### ගනුදෙනුකරු තත්ත්ව වෙනස
+#### ගනුදෙනුකරු තත්ත්ව වෙනස {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### අඩවි Hooks
+### අඩවි Hooks {#site-hooks}
 
-#### අඩවිය ප්‍රකාශයට පත් කළ පසු
+#### අඩවිය ප්‍රකාශයට පත් කළ පසු {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### ආකෘතිය යෙදීමට පෙර
+#### ආකෘතිය යෙදීමට පෙර {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### සාමාජිකත්ව Hooks
+### සාමාජිකත්ව Hooks {#membership-hooks}
 
-#### තත්ත්ව මාරුවීම්
+#### තත්ත්ව මාරුවීම් {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### ගෙවීම් Hooks
+### ගෙවීම් Hooks {#payment-hooks}
 
-#### ගෙවීම සම්පූර්ණ වීම / අසාර්ථක වීම
+#### ගෙවීම සම්පූර්ණ වීම / අසාර්ථක වීම {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### සැකසීමට පෙර / සම්පූර්ණ වූ පසු
+#### සැකසීමට පෙර / සම්පූර්ණ වූ පසු {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### වසම් Hooks
+### වසම් Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### මිලකරණ Filters
+### මිලකරණ Filters {#pricing-filters}
 
-#### කරත්ත එකතුව
+#### කරත්ත එකතුව {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### බදු අනුපාත
+#### බදු අනුපාත {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### ආකෘති Filters
+### ආකෘති Filters {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### සීමා Filters
+### සීමා Filters {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway Filters
+### Gateway Filters {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout පෝරම ක්ෂේත්‍ර
+### Checkout පෝරම ක්ෂේත්‍ර {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### ඊමේල් අන්තර්ගතය
+### ඊමේල් අන්තර්ගතය {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 આ એક્શન લોગ-ઇન ઓથેન્ટિકેશન કૂકી સેટ થતાની બરાબર પહેલા ચાલે છે.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | ઓથેન્ટિકેશન સ્કીમ. ડિફોલ્ટ 'logged_in'. |
 | $token | `string` | આ કૂકી માટે ઉપયોગમાં લેવા માટે યુઝરનો સેશન ટોકન. |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> પેરામીટર ઉમેરવામાં આવ્યું.
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) માં લાઇન 141 પર વ્યાખ્યાયિત.

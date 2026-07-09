@@ -3,15 +3,15 @@ title: 'Lezione 8: Onboarding del cliente'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lezione 8: Onboarding del Cliente
+# Lezione 8: Onboarding del Cliente {#lesson-8-customer-onboarding}
 
 Far iscrivere un cliente è solo metà del lavoro. Se accede, si sente sopraffatto e non torna più, l'hai perso. Questa lezione ti guiderà nella creazione dell'esperienza che trasforma una nuova iscrizione in un cliente attivo e coinvolto.
 
-## Dove ci eravamo lasciati
+## Dove ci eravamo lasciati {#where-we-left-off}
 
 FitSite è completamente personalizzato e dispone di un flusso di checkout funzionante. Ora ci concentriamo su cosa succede dopo che il proprietario di uno studio di fitness completa l'iscrizione e atterra sul suo nuovo sito per la prima volta.
 
-## Perché è importante l'onboarding
+## Perché è importante l'onboarding {#why-onboarding-matters}
 
 I primi 30 minuti dopo l'iscrizione determinano se un cliente rimane o se abbandona il servizio. Un proprietario di studio di fitness che:
 
@@ -21,9 +21,9 @@ I primi 30 minuti dopo l'iscrizione determinano se un cliente rimane o se abband
 
 I tuoi template di nicchia (Lezione 4) gestiscono il primo punto. Questa lezione gestisce il secondo.
 
-## L'esperienza del primo accesso
+## L'esperienza del primo accesso {#the-first-login-experience}
 
-### Widget Dashboard di Benvenuto
+### Widget Dashboard di Benvenuto {#welcome-dashboard-widget}
 
 Crea un widget dashboard personalizzato che saluti i nuovi clienti e li guidi nella configurazione. Questo dovrebbe apparire in modo prominente quando accedono per la prima volta.
 
@@ -37,7 +37,7 @@ Crea un widget dashboard personalizzato che saluti i nuovi clienti e li guidi ne
 
 Ogni passaggio linka direttamente alla pagina o all'impostazione pertinente. Niente ricerche nei menu.
 
-### Semplificare il Dashboard
+### Semplificare il Dashboard {#simplify-the-dashboard}
 
 I nuovi clienti non devono vedere ogni elemento del menu di WordPress. Considera di:
 
@@ -47,29 +47,29 @@ I nuovi clienti non devono vedere ogni elemento del menu di WordPress. Considera
 
 L'addon [Plugin & Theme Manager](/addons/plugin-and-theme-manager) può aiutare a controllare ciò che vedono i clienti.
 
-## Sequenza di email di benvenuto
+## Sequenza di email di benvenuto {#welcome-email-sequence}
 
 Un'unica email di benvenuto non è sufficiente. Imposta una sequenza che guidi i clienti durante la prima settimana:
 
-### Email 1: Benvenuto (Immediatamente dopo l'iscrizione)
+### Email 1: Benvenuto (Immediatamente dopo l'iscrizione) {#email-1-welcome-immediately-after-signup}
 
 - Oggetto: "Benvenuto in FitSite -- il sito web del tuo studio è attivo"
 - Contenuto: Link di accesso, passaggi di avvio rapido, link alle risorse di aiuto
 - Tono: Entusiasta, incoraggiante, specifico per il fitness
 
-### Email 2: Prime Vittorie (Giorno 1)
+### Email 2: Prime Vittorie (Giorno 1) {#email-2-quick-wins-day-1}
 
 - Oggetto: "3 cose da fare per prime sul tuo FitSite"
 - Contenuto: Aggiungi il tuo logo, aggiorna l'immagine hero della homepage, aggiungi il programma di lezioni
 - Includi screenshot che mostrano esattamente dove cliccare
 
-### Email 3: Rendilo tuo (Giorno 3)
+### Email 3: Rendilo tuo (Giorno 3) {#email-3-make-it-yours-day-3}
 
 - Oggetto: "Rendi unico il tuo sito di fitness"
 - Contenuto: Personalizza i colori, aggiungi foto degli istruttori, scrivi la storia del tuo studio
 - Link ad esempi di ottimi siti di fitness sulla piattaforma
 
-### Email 4: Vai online (Giorno 7)
+### Email 4: Vai online (Giorno 7) {#email-4-go-live-day-7}
 
 - Oggetto: "Pronto per condividere il tuo FitSite con il mondo?"
 - Contenuto: Checklist di ciò che verificare prima di condividere, come collegare un dominio personalizzato (se si è su Growth/Pro), consigli per la condivisione sui social
@@ -78,11 +78,11 @@ Un'unica email di benvenuto non è sufficiente. Imposta una sequenza che guidi i
 Usa [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/integrations/zapier) per attivare queste email tramite la tua piattaforma di email marketing. Questo ti dà più controllo sui tempi e ti permette di tracciare il coinvolgimento.
 :::
 
-## Risorse di aiuto
+## Risorse di aiuto {#help-resources}
 
 Crea contenuti di aiuto specifici per la nicchia che rispondano alle domande che i proprietari di studi di fitness fanno realmente:
 
-### Articoli della Knowledge Base
+### Articoli della Knowledge Base {#knowledge-base-articles}
 
 - "Come aggiornare il programma di lezioni"
 - "Aggiungere e modificare i profili degli istruttori"
@@ -92,7 +92,7 @@ Crea contenuti di aiuto specifici per la nicchia che rispondano alle domande che
 
 Scrivili per utenti non tecnici. Usa screenshot. Evita il gergo di WordPress.
 
-### Video Tutorial
+### Video Tutorial {#video-walkthroughs}
 
 Registrazioni dello schermo brevi (2-3 minuti) che mostrano:
 
@@ -103,7 +103,7 @@ Registrazioni dello schermo brevi (2-3 minuti) che mostrano:
 
 Non devono essere produzioni patinate. Ciò che conta è che siano chiari, utili e specifici per la nicchia.
 
-## La Pagina Account
+## La Pagina Account {#the-account-page}
 
 Ultimate Multisite include una [Pagina Account](/user-guide/client-management/account-page) visibile al cliente dove i clienti gestiscono il loro abbonamento. Personalizzala per:
 
@@ -112,7 +112,7 @@ Ultimate Multisite include una [Pagina Account](/user-guide/client-management/ac
 - Fornire la cronologia delle fatture e il download delle ricevute
 - Linkare alle risorse di aiuto
 
-## Misurare il successo dell'onboarding
+## Misurare il successo dell'onboarding {#measuring-onboarding-success}
 
 Traccia questi indicatori per sapere se il tuo onboarding sta funzionando:
 
@@ -121,7 +121,7 @@ Traccia questi indicatori per sapere se il tuo onboarding sta funzionando:
 - **Ticket di supporto dai nuovi clienti**: Un volume elevato significa che il tuo onboarding ha lacune
 - **Conversione da prova a pagante**: Se offri prove gratuite, quale percentuale converte?
 
-## La Rete FitSite finora
+## La Rete FitSite finora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Pronto per la strategia di prezzi (prossima lezione)
 ```
 
-## Cosa abbiamo costruito in questa lezione
+## Cosa abbiamo costruito in questa lezione {#what-we-built-this-lesson}
 
 - **Un'esperienza di primo accesso guidata** con un widget Quick Start
 - **Un dashboard semplificato** focalizzato sui compiti di gestione del sito di fitness

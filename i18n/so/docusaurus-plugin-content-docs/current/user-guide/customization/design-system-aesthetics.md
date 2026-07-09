@@ -3,11 +3,11 @@ title: Xirfadka Naqshadaynta Nidaamka
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# مهارة جمالیات Design System
+# مهارة جمالیات Design System {#design-system-aesthetics-skill}
 
 **مهارة جمالیات Design System (Design System Aesthetics)** هي طريقة موجهة لتنقيح الهوية البصرية لموقعك. تساعدك هذه المهارة في اتخاذ قرارات متناسقة حول الخطوط، الألوان، المسافات، ورموز الحركة (motion tokens) التي تحدد نظام التصميم الخاص بك.
 
-## ما هي جماليات Design System؟
+## ما هي جماليات Design System؟ {#what-is-design-system-aesthetics}
 
 جماليات Design System هي مهارة منظمة تغطي:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 تُسجل هذه القرارات في ملف `theme.json` الخاص بقالبك، مما يخلق نظامًا بصريًا متماسكًا.
 
-## لماذا نستخدم جماليات Design System؟
+## لماذا نستخدم جماليات Design System؟ {#why-use-design-system-aesthetics}
 
-### الاتساق (Consistency)
+### الاتساق (Consistency) {#consistency}
 
 نظام التصميم يضمن:
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - اتباع المسافات نمط يمكن التنبؤ به
 - أن تبدو الرسوم المتحركة موحدة
 
-### الكفاءة (Efficiency)
+### الكفاءة (Efficiency) {#efficiency}
 
 بدلاً من اتخاذ قرارات التصميم صفحة بصفحة، أنت:
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - تطبقها في كل مكان
 - تحدثها عالميًا عن طريق تغيير قيمة واحدة
 
-### المرونة (Flexibility)
+### المرونة (Flexibility) {#flexibility}
 
 يمكنك:
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - التجريب مع جماليات مختلفة
 - الحفاظ على اتساق العلامة التجارية أثناء التطور
 
-## تفعيل مهارة جماليات Design System
+## تفعيل مهارة جماليات Design System {#triggering-the-design-system-aesthetics-skill}
 
-### التفعيل اليدوي (Manual Activation)
+### التفعيل اليدوي (Manual Activation) {#manual-activation}
 
 يمكنك بدء المهارة في أي وقت:
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Guide me through design system decisions"
 ```
 
-### الاقتراحات التلقائية (Automatic Suggestions)
+### الاقتراحات التلقائية (Automatic Suggestions) {#automatic-suggestions}
 
 قد يقترح الوكلاء استخدام المهارة عندما:
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - تريد تحسين الاتساق البصري
 - تستعد لإطلاق موقعك
 
-## Habbooyga Naqshadaynta Design Systemka
+## Habbooyga Naqshadaynta Design Systemka {#the-design-system-aesthetics-process}
 
-### Tallaabada 1: Qoraalka (Typography)
+### Tallaabada 1: Qoraalka (Typography) {#step-1-typography}
 
 Agent-ku wuxuu ku weydiinayaa doorashada font-kaaga:
 
@@ -110,7 +110,7 @@ Markaas agent-ku wuxuu qeexayaa:
 - **Qaabka xoogga (Weight scale)**: Xoogga font-ka (caadi ah, dhexe, xoog badan, iwm.).
 - **Tirada xarunta (Line height)**: Meelka u dhexeeya xarfurada si loo fududeeyo akhristaha.
 
-### Tallaabada 2: Midabada (Color Palette)
+### Tallaabada 2: Midabada (Color Palette) {#step-2-color-palette}
 
 ```
 Aan dejino midabada aad dooratay.
@@ -140,7 +140,7 @@ Agent-ku abuuraa qaabka oo ay ku jirto:
 - Midabada macnaha leh (guusha, digni, qalad).
 - Xaaladaha hoos u dhaca (hover) iyo xaaladaha firfircoon (active states).
 
-### Tallaabada 3: Meelka U Dhexeeya Qoraalka (Spacing)
+### Tallaabada 3: Meelka U Dhexeeya Qoraalka (Spacing) {#step-3-spacing}
 
 Баartee intaabka aad rabto?
 
@@ -160,7 +160,7 @@ Agent-ku wuxuu qeexaa tokens-ka meelaha (spacing tokens):
 - Scale: xs, sm, md, lg, xl, 2xl
 - Qiyam gaar ah oo loogu talagalay padding, margin, iyo gap
 
-### Tallaabada 4aad: Borders iyo Shadows
+### Tallaabada 4aad: Borders iyo Shadows {#step-4-borders-and-shadows}
 
 ```
 Qoto dheerka muuqaalka iyo qeexidda (Visual depth and definition):
@@ -183,7 +183,7 @@ Agent-ku wuxuu abuuraa:
 - Shadow tokens si loo qeexo heerarka kororka (elevation levels)
 - Border width tokens
 
-### Tallaabada 5aad: Motion iyo Animation
+### Tallaabada 5aad: Motion iyo Animation {#step-5-motion-and-animation}
 
 ```
 Sidee ayuu website-kaaga dareemi doonaa marka uu la shaqaynayo?
@@ -205,9 +205,9 @@ Agent-ku wuxuu qeexaa:
 - Easing functions (ease-in, ease-out, ease-in-out)
 - Animation keyframes si loo sameeyo isbeddellada caadiga ah ee isticmaalka
 
-## Isticmaalka Aesthetics Design Systemka
+## Isticmaalka Aesthetics Design Systemka {#applying-design-system-aesthetics}
 
-### Adeegsiga tooska ah (Automatic Application)
+### Adeegsiga tooska ah (Automatic Application) {#automatic-application}
 
 Marka aad dhammaystirto bixinta halkan, agent-ku:
 
@@ -216,7 +216,7 @@ Marka aad dhammaystirto bixinta halkan, agent-ku:
 3. Waxay dib u abuureysaa styles-ka block-ga si ay la jaanqaadaan nidaamka cusub
 4. Waxay fulisaa theme-ka oo la cusboonaysiiyay
 
-### Adeegsiga gacanta (Manual Application)
+### Adeegsiga gacanta (Manual Application) {#manual-application}
 
 Waxaad sidoo kale wax ka beddeli kartaa `theme.json` si toos ah:
 
@@ -255,9 +255,9 @@ Waxaad sidoo kale wax ka beddeli kartaa `theme.json` si toos ah:
 }
 ```
 
-## Aragtaynta Nidaamka Naqshintaada (Viewing Your Design System)
+## Aragtaynta Nidaamka Naqshintaada (Viewing Your Design System) {#viewing-your-design-system}
 
-### Weydii Agent-ka
+### Weydii Agent-ka {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -271,13 +271,13 @@ ama
 
 Agent-ku wuxuu kuu soo bandhigi doonaa qaab-dhismeedka qoraalkaaga (typography), midabada, meelaha la saaro (spacing), iyo tokenyada kale.
 
-### Arag theme.json
+### Arag theme.json {#view-themejson}
 
 Fadlan fur `/wp-content/themes/[theme-name]/theme.json` faylka ku editor text ah si aad u aragso qoraalka asalka ahaa ee token-yada.
 
-## Cusboonaysiinta Nidaamka Naqshintaada (Updating Your Design System)
+## Cusboonaysiinta Nidaamka Naqshintaada (Updating Your Design System) {#updating-your-design-system}
 
-### Cusboonaysiin Degdeg Ah
+### Cusboonaysiin Degdeg Ah {#quick-updates}
 
 Weydii agent-ka isbeddellada gaarka ah:
 
@@ -297,7 +297,7 @@ ama
 "Change the heading font to a serif"
 ```
 
-### Naqshinta Dhammaystiran (Full Redesign)
+### Naqshinta Dhammaystiran (Full Redesign) {#full-redesign}
 
 Mar kale fuli habka Design System Aesthetics:
 
@@ -307,7 +307,7 @@ Mar kale fuli habka Design System Aesthetics:
 
 Tani wuxuu ku hagayaa dhammaan go'aankaaga mar kale, iyadoo la bilaabayo qiimaha aad haysato hadda.
 
-### Cusboonaysiin Dhufan (Partial Updates)
+### Cusboonaysiin Dhufan (Partial Updates) {#partial-updates}
 
 Waxaad cusboonaysi kartaa dhinacyada gaarka ah:
 
@@ -315,15 +315,15 @@ Waxaad cusboonaysi kartaa dhinacyada gaarka ah:
 "Just update the color palette, keep everything else"
 ```
 
-## Hababka Wanaagsan ee Nidaamka Naqshintaada (Design System Best Practices)
+## Hababka Wanaagsan ee Nidaamka Naqshintaada (Design System Best Practices) {#design-system-best-practices}
 
-### Is-dhaafsiinta (Consistency)
+### Is-dhaafsiinta (Consistency) {#consistency-1}
 
 - Isticmaal token-yada isku mid ah dhammaan meelaha.
 - Ha abuuri midab ama cabbirro gaar ah oo kaliya.
 - Adeegso token-yada halkii aad si toos ah u qorto qiimaha.
 
-### Magaca (Naming)
+### Magaca (Naming) {#naming}
 
 Isticmaal magacyo cad oo macno leh:
 
@@ -333,7 +333,7 @@ Isticmaal magacyo cad oo macno leh:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Wax-soo-saarka (Scalability)
+### Wax-soo-saarka (Scalability) {#scalability}
 
 نظامك وردو (WordPress) oo weyn la sii kordhin karo:
 
@@ -341,7 +341,7 @@ Isticmaal magacyo cad oo macno leh:
 - Sameec (xs, sm, md, lg, xl) abuuro halkii qiimo aan la qorsayn.
 - Qorshe waxyaabaha mustaqbalka ah ee la soo darayo.
 
-### Dukumeentigu
+### Dukumeentigu {#documentation}
 
 Dukumeenti nidaamka design-kaaga:
 
@@ -349,9 +349,9 @@ Dukumeenti nidaamka design-kaaga:
 - Goorma ayaad isticmaali doontid token kasta?
 - Waxyaabaha ka baxsan iyo xaaladaha adag (edge cases).
 
-## Qaababka Design System-ka Caadi ah
+## Qaababka Design System-ka Caadi ah {#common-design-system-patterns}
 
-### Minimalist Modern (Wada fudud)
+### Minimalist Modern (Wada fudud) {#modern-minimalist}
 
 - Qoraal aan lahayn qof (Sans-serif) (Inter, Helvetica)
 - Midabada xaddidan (2-3 midab)
@@ -359,7 +359,7 @@ Dukumeenti nidaamka design-kaaga:
 - Hoos u dhac yar yar oo hoos u dhaca (Subtle shadows)
 - Animacyo fudud oo degdeg ah
 
-### Diirran iyo Saaxiibbo leh (Warm and Friendly)
+### Diirran iyo Saaxiibbo leh (Warm and Friendly) {#warm-and-friendly}
 
 - Isku dhafka serif iyo sans-serif
 - Midabada diirran (orange, grays la dåsini ah)
@@ -367,7 +367,7 @@ Dukumeenti nidaamka design-kaaga:
 - Hoos u dhac yar oo qosol leh (Soft shadows)
 - Animacyo ciyaaraya
 
-### Ganacsi Caadi ah (Professional Corporate)
+### Ganacsi Caadi ah (Professional Corporate) {#professional-corporate}
 
 - Sans-serif nadiif ah (Roboto, Open Sans)
 - Midabada dhexdhexaadka ah oo lahayd midab xooggan (accent color)
@@ -375,7 +375,7 @@ Dukumeenti nidaamka design-kaaga:
 - Hoos u dhac yar oo aan muuqder ahayn (Minimal shadows)
 - Isbeddellada fudud
 
-### Abuuraysan iyo Xooggan (Creative and Bold)
+### Abuuraysan iyo Xooggan (Creative and Bold) {#creative-and-bold}
 
 - Qoraal gaar ah oo soo jiidasho leh (Distinctive typography)
 - Midabada xooggan (Bold color palette)
@@ -383,7 +383,7 @@ Dukumeenti nidaamka design-kaaga:
 - Hoos u dhac xooggan
 - Animacyo la arki karo
 
-## Wax Karka (Troubleshooting)
+## Wax Karka (Troubleshooting) {#troubleshooting}
 
 **Isbeddellada design-kaaga ma muuqdaan**
 - Nadaafso cache-ka browser-kaaga.
@@ -401,7 +401,7 @@ Dukumeenti nidaamka design-kaaga:
 - Wax ka beddel theme.json si aad u hesho qiimaha hore.
 - Dib u socod (Re-run) skill-ka adiga oo doorasho kale samaynaya.
 
-## Tallaabooyinka Xiga ah
+## Tallaabooyinka Xiga ah {#next-steps}
 
 Marka aad qorsheysay design system-kaaga:
 

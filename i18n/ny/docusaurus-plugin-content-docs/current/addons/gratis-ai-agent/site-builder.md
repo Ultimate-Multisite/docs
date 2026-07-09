@@ -3,15 +3,15 @@ title: Kugwirizanitsa kwa Womanga Tsamba v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Kuwongolera kwa Womanga Tsamba v2
+# Kuwongolera kwa Womanga Tsamba v2 {#site-builder-orchestration-v2}
 
 Kuwongolera kwa Womanga Tsamba v2 (koyambitsidwa mu Gratis AI Agent v1.4.0) ndi injini yomwe imayendetsa kupanga mawebusayiti a magawo angapo. Mukapempha agent kuti "apange webusayiti ya malo odyera" kapena "apange portfolio yokhala ndi blog", orchestrator imagawa cholinga chachikulu chimenecho kukhala **dongosolo** lokhazikika, imapeza ma plugin ofunikira kuti akwaniritse, imachita sitepe iliyonse motsatizana, imatsatira kupita patsogolo, ndipo imadzichiritsa yokha ku zolakwika.
 
 ---
 
-## Mmene Zimagwirira Ntchito
+## Mmene Zimagwirira Ntchito {#how-it-works}
 
-### 1. Kupanga Dongosolo
+### 1. Kupanga Dongosolo {#1-plan-generation}
 
 Agent ikalandira malangizo omanga tsamba, imayitana luso la `create_site_plan` kuti ipange **dongosolo la tsamba** la JSON. Dongosololi limafotokoza:
 
@@ -61,7 +61,7 @@ Agent ikalandira malangizo omanga tsamba, imayitana luso la `create_site_plan` k
 }
 ```
 
-### 2. Kupeza Plugin
+### 2. Kupeza Plugin {#2-plugin-discovery}
 
 Kuchita kusanayambe, orchestrator imasanthula `plugin_requirements` ya dongosololo ndikuwona ma plugin omwe akugwira kale ntchito. Kwa ma plugin omwe akusowa, imachita izi:
 
@@ -71,7 +71,7 @@ Kuchita kusanayambe, orchestrator imasanthula `plugin_requirements` ya dongosolo
 
 Kulephera kupeza plugin sikupha dongosolo — orchestrator imalemba masitepe okhudzidwawo ngati `skipped` ndipo imapitiriza ndi gawo lotsala la dongosololo.
 
-### 3. Kuchita Dongosolo
+### 3. Kuchita Dongosolo {#3-plan-execution}
 
 Orchestrator imayitana `execute_site_plan` ndi ID ya dongosolo. Kuchita kumapitirira gawo ndi gawo, sitepe ndi sitepe:
 
@@ -79,7 +79,7 @@ Orchestrator imayitana `execute_site_plan` ndi ID ya dongosolo. Kuchita kumapiti
 - **Masitepe ofanana nthawi imodzi** — masitepe mkati mwa gawo lomwelo omwe alibe kudalirana amatumizidwa nthawi imodzi pamene chizindikiro cha `parallel` chakhazikitsidwa.
 - **Nthawi yomalira ya sitepe** — sitepe iliyonse ili ndi nthawi yake yomalira (yokhazikika: zokonda za `Ability Timeout`). Sitepe yomwe yatha nthawi imalembedwa kuti `failed` ndipo dongosolo limapitiriza.
 
-### 4. Kutsatira Kupita Patsogolo
+### 4. Kutsatira Kupita Patsogolo {#4-progress-tracking}
 
 Yitanani `get_plan_progress` nthawi iliyonse kuti muwone momwe kuchita kulili:
 
@@ -104,7 +104,7 @@ Ogwiritsa ntchito WP-CLI angathe kuyang'anira kupita patsogolo ndi:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Kuchira ku Zolakwika
+### 5. Kuchira ku Zolakwika {#5-error-recovery}
 
 Sitepe ikalephera, orchestrator imayang'ana sitepe ya **fallback** yofotokozedwa mu dongosolo:
 
@@ -115,9 +115,9 @@ Agent imanena zolephera zonse mu chidule chomaliza cha dongosolo ndipo ingaperek
 
 ---
 
-## Maluso a Dongosolo la Tsamba
+## Maluso a Dongosolo la Tsamba {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Imapanga dongosolo la tsamba lokhazikika kuchokera ku kufotokoza cholinga m'chinenero chachibadwa.
 
@@ -134,7 +134,7 @@ Imapanga dongosolo la tsamba lokhazikika kuchokera ku kufotokoza cholinga m'chin
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Imayamba kuchita dongosolo la tsamba lomwe linapangidwa kale.
 
@@ -150,7 +150,7 @@ Imayamba kuchita dongosolo la tsamba lomwe linapangidwa kale.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Imabweza momwe kuyendetsa dongosolo la tsamba kulili panopa.
 
@@ -164,7 +164,7 @@ Imabweza momwe kuyendetsa dongosolo la tsamba kulili panopa.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Imathetsa pamanja sitepe yomwe yalephera ndipo imayambitsanso kuyendetsa dongosolo kuchokera pa sitepe yotsatira. Gwiritsani ntchito izi pamene kubwezeretsa kokha sikunatheke ndipo mukufuna kulowererapo.
 
@@ -180,7 +180,7 @@ Imathetsa pamanja sitepe yomwe yalephera ndipo imayambitsanso kuyendetsa dongoso
 
 ---
 
-## Kuyerekezera v1 ndi v2
+## Kuyerekezera v1 ndi v2 {#comparing-v1-and-v2}
 
 | Mbali | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Imathetsa pamanja sitepe yomwe yalephera ndipo imayambitsanso kuyendetsa dongoso
 
 ---
 
-## Malamulo a Dongosolo a WP-CLI
+## Malamulo a Dongosolo a WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Imapanga dongosolo la tsamba kuchokera ku kufotokozera kwa cholinga.
 
@@ -205,7 +205,7 @@ Imapanga dongosolo la tsamba kuchokera ku kufotokozera kwa cholinga.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Imayendetsa dongosolo lomwe linapangidwa kale.
 
@@ -213,7 +213,7 @@ Imayendetsa dongosolo lomwe linapangidwa kale.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Imawonetsa kupita patsogolo kwaposachedwa kwa dongosolo lomwe likuyendetsedwa kapena lomalizidwa.
 
@@ -221,7 +221,7 @@ Imawonetsa kupita patsogolo kwaposachedwa kwa dongosolo lomwe likuyendetsedwa ka
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Imalemba madongosolo onse a tsamba (oyembekezera, omwe akuyenda, ndi omalizidwa).
 
@@ -229,7 +229,7 @@ Imalemba madongosolo onse a tsamba (oyembekezera, omwe akuyenda, ndi omalizidwa)
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Imabwezeretsa dongosolo lomwe lalephera kukhala `pending` kuti lithe kuyendetsedwanso kuchokera pachiyambi.
 

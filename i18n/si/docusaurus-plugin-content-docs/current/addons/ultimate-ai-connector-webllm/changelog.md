@@ -3,9 +3,9 @@ title: WebLLM සඳහා Ultimate AI Connector වෙනස්කම් සට
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# WebLLM සඳහා Ultimate AI Connector වෙනස්කම් ලේඛනය
+# WebLLM සඳහා Ultimate AI Connector වෙනස්කම් ලේඛනය {#ultimate-ai-connector-for-webllm-changelog}
 
-## අනුවාදය 1.1.0 — 2026-04-09 දින නිකුත් කරන ලදී
+## අනුවාදය 1.1.0 — 2026-04-09 දින නිකුත් කරන ලදී {#version-110--released-on-2026-04-09}
 
 * නව: admin-bar තත්ත්ව දර්ශකයක් සහිත පාවෙන සංවාද widget — ලොග් වී ඇති ඕනෑම පරිශීලකයෙකුට ඉදිරි අග්‍රයෙන් සෘජුවම browser-side LLM වෙත prompt කළ හැක.
 * නව: SharedWorker ධාවන පරිසරය — MLC engine දැන් SharedWorker එකක ධාවනය වන නිසා tabs කිහිපයක් එකිනෙකට තරඟ කිරීම වෙනුවට එක් GPU සැසියක් බෙදා ගනී.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * නිවැරදි කිරීම: model එකක් වින්‍යාස කර ඇති විට AI Experiments විශේෂාංගය browser engine වෙත යොමු වන පරිදි WebLLM wpai_preferred_text_models filter එකට සම්බන්ධ කිරීම.
 * වැඩිදියුණු කරන ලදී: අවසානයෙන් අවසානයට පරීක්ෂණ අතරතුර මතු වූ cache-busting, content normalisation, සහ hardware-reference නිවැරදි කිරීම්.
 
-## අනුවාදය 1.0.0 — ආරම්භක නිකුතුව
+## අනුවාදය 1.0.0 — ආරම්භක නිකුතුව {#version-100--initial-release}

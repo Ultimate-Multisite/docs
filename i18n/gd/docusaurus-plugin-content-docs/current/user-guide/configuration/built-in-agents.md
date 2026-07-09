@@ -3,11 +3,11 @@ title: Àidseantan togte a-steach
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Àidseantan togte a-steach
+# Àidseantan togte a-steach {#built-in-agents}
 
 Thig Gratis AI Agent v1.9.0 le còig àidseantan togte a-steach, gach fear ro-rèitichte le seata innealan le fòcas, system prompt sònraichte, agus molaidhean tòiseachaidh a tha freagarrach do ghnìomhan cumanta san raon sin. Nuair a dh'atharraicheas tu eadar àidseantan, atharraichidh sin na as urrainn don neach-cuideachaidh a dhèanamh agus mar a fhreagras e — gun rèiteachadh sam bith air do thaobh. Faodaidh Superdav AI Agent v1.18.0 innealan mothachail air clàr-ama, clàran cuimhneachaidh, geataichean aonta, agus brathan SMS a chur ris na sruthan-obrach seo nuair a tha na h-amalachaidh co-cheangailte air an rèiteachadh.
 
-## Dè th' ann an àidseant?
+## Dè th' ann an àidseant? {#what-is-an-agent}
 
 'S e pròifil rèiteachaidh ainmichte a th' anns gach àidseant a chuireas còmhla:
 
@@ -15,7 +15,7 @@ Thig Gratis AI Agent v1.9.0 le còig àidseantan togte a-steach, gach fear ro-r�
 - **System prompt** — stiùiridhean a shuidhicheas tòna, prìomhachasan, agus cuingeachaidhean an àidseint
 - **Molaidhean** — prompts ro-sgrìobhte a tha air an sealltainn san eadar-aghaidh cabadaich gus do chuideachadh tòiseachadh gu luath
 
-## A' faighinn cothrom air Taghadair nan Àidseantan
+## A' faighinn cothrom air Taghadair nan Àidseantan {#accessing-the-agent-picker}
 
 1. Fosgail pannal **Gratis AI Agent** ann am bàr-taoibh rianachd WordPress.
 2. Briog air **ìomhaigheag an àidseint** aig barr-clì bann-cinn na cabadaich (atharraichidh an ìomhaigheag gus an t-àidseant gnìomhach a nochdadh).
@@ -24,9 +24,9 @@ Thig Gratis AI Agent v1.9.0 le còig àidseantan togte a-steach, gach fear ro-r�
 
 Faodaidh tu cuideachd àidseantan atharrachadh ann am meadhan còmhraidh — bidh system prompt an àidseint ùir èifeachdach bhon ath theachdaireachd.
 
-## Na Còig Àidseantan Togte a-steach
+## Na Còig Àidseantan Togte a-steach {#the-five-built-in-agents}
 
-### Sgrìobhadair Susbaint
+### Sgrìobhadair Susbaint {#content-writer}
 
 **Fòcas:** Cruthachadh agus deasachadh phuist, duilleagan, agus foirmean-conaltraidh.
 
@@ -47,7 +47,7 @@ Faodaidh tu cuideachd àidseantan atharrachadh ann am meadhan còmhraidh — bid
 
 ---
 
-### Togail Làraich
+### Togail Làraich {#site-builder}
 
 **Fòcas:** Cruthachadh làrach-lìn bho cheann gu ceann bho aon prompt.
 
@@ -70,7 +70,7 @@ Faodaidh tu cuideachd àidseantan atharrachadh ann am meadhan còmhraidh — bid
 
 ---
 
-### Stiùidio Dealbhaidh
+### Stiùidio Dealbhaidh {#design-studio}
 
 **Fòcas:** Gnàthachadh lèirsinneach — dathan, clò-ghnàth, CSS, agus pàtrain bhlocaichean.
 
@@ -87,7 +87,7 @@ Faodaidh tu cuideachd àidseantan atharrachadh ann am meadhan còmhraidh — bid
 - *Tog glacadh-sgrìn den duilleag-dhachaigh agus innis dhomh dè a leasaicheadh tu.*
 - *Cruthaich pàtran bloca hero ath-chleachdte le ìomhaigh cùlaibh làn-leud agus ceann-teacsa sa mheadhan.*
 
-### Manaidsear Plugin
+### Manaidsear Plugin {#plugin-manager}
 
 **Fòcas:** Lorg, stàladh, agus stiùireadh plugins WordPress.
 
@@ -105,7 +105,7 @@ Faodaidh tu cuideachd àidseantan atharrachadh ann am meadhan còmhraidh — bid
 
 ---
 
-### Neach-cuideachaidh Taic
+### Neach-cuideachaidh Taic {#support-assistant}
 
 **Fòcas:** A' freagairt cheistean mu shusbaint làraich, roghainnean, agus rèiteachadh WordPress.
 
@@ -124,7 +124,7 @@ Faodaidh tu cuideachd àidseantan atharrachadh ann am meadhan còmhraidh — bid
 
 ---
 
-## Amalachadh Fèin-obrachais Superdav
+## Amalachadh Fèin-obrachais Superdav {#superdav-automation-integrations}
 
 Nuair a tha amalachadh Superdav AI Agent v1.18.0 air a rèiteachadh, faodaidh riochdairean togte-a-steach pàirt a ghabhail ann an sruthan-obrach fèin-obrachais nas sàbhailte a tha mothachail air clàr-ama:
 
@@ -138,11 +138,11 @@ Sruth-obrach a thathar a’ moladh: iarr air an riochdaire an teachdaireachd no 
 
 ---
 
-## Gnàthachadh Riochdairean
+## Gnàthachadh Riochdairean {#customising-agents}
 
 Faodar gach riochdaire togte-a-steach a leudachadh no a chur na àite tron chriathrag `gratis_ai_agent_agents`.
 
-### A’ cur brosnachadh siostaim gnàthaichte ri riochdaire a tha ann mu thràth
+### A’ cur brosnachadh siostaim gnàthaichte ri riochdaire a tha ann mu thràth {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### A’ clàradh riochdaire ùr
+### A’ clàradh riochdaire ùr {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Nochdaidh an riochdaire ùr anns an Taghadair Riochdairean sa bhad às dèidh don chriathrag ruith.
 
-### A’ toirt air falbh riochdaire togte-a-steach
+### A’ toirt air falbh riochdaire togte-a-steach {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

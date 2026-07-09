@@ -3,7 +3,7 @@ title: Skattehantering
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Skattehantering
+# Skattehantering {#tax-handling}
 
 Ultimate Multisite har en modul för skatteuppbörd inbyggd i vårt kärnplugin, så om du behöver ta ut försäljningsskatt på dina planer, paket och tjänster kan du enkelt göra det utan att behöva installera några add-ons.
 
@@ -11,7 +11,7 @@ För företag som är baserade i Europa erbjuder vi ett **add-on** som lägger t
 
 Ultimate Multisite deklarerar eller betalar inte in skatter till myndigheter för din räkning; vi hjälper dig helt enkelt att ta ut rätt skatter vid tidpunkten för transaktionen. **Du behöver fortfarande betala in skatterna själv.**
 
-## Aktivera skatteuppbörd
+## Aktivera skatteuppbörd {#enabling-tax-collection}
 
 Skatteuppbörd är inte aktiverad som standard. För att aktivera den behöver du gå till **Ultimate Multisite > Settings > Taxes** och slå på inställningen Enable Taxes.
 
@@ -25,7 +25,7 @@ Du kan också visa skatteinställningarna för enskilda produkter:
 
 ![Skatteinställningar för produkter](/img/config/settings-taxes.png)
 
-### Skatt exkluderad vs. skatt inkluderad
+### Skatt exkluderad vs. skatt inkluderad {#tax-excluded-vs-tax-included}
 
 Som standard är alla dina produktpriser exklusive skatt, vilket betyder att skatter **inte ingår** i produktens pris. Om vi avgör att en kund ska betala skatt på ett visst köp lägger vi till skatterna **ovanpå** delsumman.
 
@@ -37,7 +37,7 @@ Glöm inte att **spara** ändringarna du har gjort.
 
 ###
 
-## Skapa skattesatser
+## Skapa skattesatser {#creating-tax-rates}
 
 När du har aktiverat skatteuppbörd behöver du skapa skattesatser för specifika platser med vår redigerare för skattesatser.
 
@@ -51,7 +51,7 @@ På sidan för redigering av skattesatser kan du lägga till nya skattesatser ge
 
 Du behöver ge varje skattesats en **titel** (används på fakturor). Sedan kan du välja **land** (obligatoriskt), **delstat/region** och **stad** (båda valfria) där denna skatt ska debiteras. Lägg slutligen till **skattesatsen i procent**.
 
-### Skattekategorier
+### Skattekategorier {#tax-categories}
 
 Du kan också skapa flera skattekategorier för att lägga till olika skattesatser för olika typer av produkter.
 
@@ -73,7 +73,7 @@ Du kan ange skattekategorin för en viss produkt genom att gå till **Product ed
 
 På samma skärm kan du stänga av växlaren **Is Taxable?** för att låta Ultimate Multisite veta att det inte ska ta ut skatt på den aktuella produkten.
 
-## Stöd för europeisk VAT
+## Stöd för europeisk VAT {#european-vat-support}
 
 Som nämnts tidigare har vi ett add-on tillgängligt för kunder i EU som har ytterligare krav på grund av europeiska VAT-regler.
 
@@ -101,7 +101,7 @@ Om du går tillbaka till **Tax Settings tab** ser du nya alternativ tillgänglig
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Hämta VAT-skattesatser
+### Hämta VAT-skattesatser {#pulling-on-vat-tax-rates}
 
 Ett av verktygen som vår integration lägger till är möjligheten att läsa in skattesatserna för EU:s medlemsstater. Det kan göras genom att besöka sidan för redigering av skattesatser efter att EU VAT-stöd har aktiverats.
 
@@ -111,7 +111,7 @@ Längst ned på sidan ser du alternativen för att hämta VAT. Om du väljer en 
 
 Du kan också redigera värdena efter att ha hämtat dem. För att göra det redigerar du helt enkelt den tabellrad du behöver och klickar för att spara de nya värdena.
 
-### VAT-validering
+### VAT-validering {#vat-validation}
 
 När VAT-stöd är aktiverat lägger Ultimate Multisite till ett extra fält i checkout-formuläret, nedanför faktureringsadressfältet. Fältet visas bara för kunder som befinner sig i EU.
 

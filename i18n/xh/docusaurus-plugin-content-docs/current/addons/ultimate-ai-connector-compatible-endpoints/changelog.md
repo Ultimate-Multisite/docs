@@ -3,9 +3,9 @@ title: Ingxelo yotshintsho ye-Ultimate AI Connector yeziphelo ezihambelanayo
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector yeZziphelo Ezihambelanayo Changelog
+# Ultimate AI Connector yeZziphelo Ezihambelanayo Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — Ikhutshwe nge-2026-04-24
+## Version 2.0.0 — Ikhutshwe nge-2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Entsha: Inkxaso yababoneleli abaninzi — qwalasela iziphelo ze-AI ezininzi uze uthumele izicelo ngokubuyela ngokuzenzekelayo phakathi kwababoneleli.
 * Lungiso: Udibaniso lwe-SDK lwababoneleli abaninzi olunee-ID zomboneleli ezichanekileyo, ii-URL zobhaliso, kunye nokumiselwa komda kwesihluzo se-HTTP kumboneleli ngamnye.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Lungiso: Isicelo se-HTTP esivimbayo esasiqalisa kulo lonke ulayisho lwephepha sisusiwe.
 * Kuphuculwe: Iinkqubo zomsebenzi ze-GitHub Actions zinyuselwe kwi-Node.js 24.
 
-## Version 1.0.0 — Ukukhutshwa Kokuqala
+## Version 1.0.0 — Ukukhutshwa Kokuqala {#version-100--initial-release}

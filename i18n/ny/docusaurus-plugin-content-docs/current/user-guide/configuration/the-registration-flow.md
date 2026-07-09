@@ -3,13 +3,13 @@ title: Mwayi wa Kufotokozera
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Mwaya wa Kufotokozera (v2)
+# Mwaya wa Kufotokozera (v2) {#the-registration-flow-v2}
 
 _**KUFOTOKOZERA KUKUNDULIRA: Iye nkhani iyi ikufotokozera Ultimate Multisite version 2.x.**_
 
 Mwayi angayesetsa mwayi wanu m'mwayi wanu. Angathe kuteteza fomu ya kufotokozera yanu kapena link yomwe mungafotokozere plan iliyonkhulupirira. Pamene, tikufotokozera kuti mwayi wanji angafotokozera m'mwayi wanu monga mwayi wanu ndi njira zomwe zili pansi ndipo zomwe zimayambira pamba ndi momwe zimayambira pamba m'mwayi wanu.
 
-## Kufotokozera kwa Fomu ya Kufotokozera:
+## Kufotokozera kwa Fomu ya Kufotokozera: {#using-the-registration-form}
 
 Iyi ndi njira yomwe imayambira. Mumapanga ndauji ya kufotokozera ndi **checkout form** ndipo ndi pano zomwe mwayi wanji adzakhala kuti afotokozere m'mwayi wanu ndi kupanga plan. Mungathe kuteteza ndauji zambiri, zomwe zina ndi fomu ya kufotokozera yomwe ndi yomwe.
 
@@ -35,13 +35,13 @@ Ikiwa wamejiandikisha kwa mpango wa kulipia au uthibitishaji wa email hauhitajik
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Kutumia Link Inayoweza Kushirikiwe (Using a Shareable Link):
+## Kutumia Link Inayoweza Kushirikiwe (Using a Shareable Link): {#using-a-shareable-link}
 
 Mchakato wa kujisajili kwa kutumia link inayoweza kushirikiwa ni sawa na fomu ya kujisajili, tofauti pekee ni kwamba kwa kutumia link hiyo, wateja wako wanaweza kuwa na template au bidhaa fulani iliyochaguliwa tayari kwenye fomu ya malipo (angalia sehemu Pre-selecting products and templates via URL parameters) au labda kuongeza kodi ya punguzo (coupon code) (angalia sehemu Using URL Parameters).
 
 Mchakato wa kujisajili utakuwa sawa: watahitaji kujaza jina lao, jina la mtumiaji (username), anwani ya email, jina la website na kichwa chake, n.k... lakini mpango au template ya tovuti itakuwa imechaguliwa tayari kwa ajili yao.
 
-### Kujisajili Kwa Malipo ya Manwani (Registering Using Manual Payments):
+### Kujisajili Kwa Malipo ya Manwani (Registering Using Manual Payments): {#registering-using-manual-payments}
 
 Ikiwa hutaki kutumia PayPal, Stripe au njia nyingine yoyote ya malipo inayotolewa na Ultimate Multisite au vifaa vyake vya ziada (add-on integrations), unaweza kutumia malipo ya manwani kwa wateja wako. Hii inamfanya uweze kuunda risiti (invoice) kwa ajili yao kulipa kwenye kiwanda chako cha malipo unachokipenda baada ya kujisajili kwenye mtandao wako.
 

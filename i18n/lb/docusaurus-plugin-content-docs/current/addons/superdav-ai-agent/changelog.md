@@ -3,11 +3,11 @@ title: Ännerungsprotokoll
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Ännerungsprotokoll
+# Ännerungsprotokoll {#changelog}
 
-## 1.18.0 — Verëffentlecht den 2026-06-29
+## 1.18.0 — Verëffentlecht den 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Nei
+### Nei {#new}
 
 - **Google Calendar-Wierkzäicher** — konfiguréiert Kalenneren an Evenementer fir plangbewosst Automatiséierunge liesen
 - **Kontakt-Zouuerdnung an Helfer fir Participanten** — Kalennerparticipante mat Benotzer vun der Websäit a Kontakter ofgläichen
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **TextBee SMS-Ubidder** — konfiguréiert SMS-Notifikatiounen iwwer TextBee schécken
 - **Fortgeschratte Begleetpak** — vertrauenswierdeg-Entwéckler-Dateisystem-, Datebank-, WP-CLI-, REST-Dispatcher-, Erweiderungs-Builder-, Git-Snapshot-, Benotzerverwaltungs- a Benchmark-Wierkzäicher dobäisetzen, déi separat vum WordPress.org-Build verdeelt ginn
 
-### Verbessert
+### Verbessert {#improved}
 
 - **Ariichtung vum verwaltete Superdav-Service** — gehost Service-Endpunkten an automatesch Verbindungsbereitstellung fir ënnerstëtzt Websäiten dobäisetzen
 - **Verëffentlechungsverpakung** — getrennte Kär- an Advanced-ZIPs bauen, allebéid op GitHub publizéieren an nëmmen de Kärpak u WordPress.org schécken
 
-### Behuewen
+### Behuewen {#fixed}
 
 - **Zouverlässegkeet vun AI-Ufroen** — Modell-Auswiel, Ufro-Timeouten, Standard-Ariichtungsmodell, Ëmgang mat Begrënnungstext an Uleedung fir Nei-Versich bei ongëltege Wierkzäich-Uriff verbesseren
 - **Häertung vu Kalenner an Erënnerungen** — Google Calendar-Token an Erënnerungs-Deduplicatioun stäerken
 - **Onboarding an Geneemegungs-Fortféierungen** — Frontend-Onboarding-Starten a confirméiert Fäegkeets-Fortféierunge fixéieren
 - **WordPress.org-Verpakungs-Iwwerpréiwungsproblemer** — Feedback aus der Verpakungs-Iwwerpréiwung fir d'Kärverëffentlechung ugoen
 
-## 1.16.0 — Verëffentlecht den 2026-05-20
+## 1.16.0 — Verëffentlecht den 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Nei
+### Nei {#new-1}
 
 - **Generate Logo SVG-Fäegkeet** — Theme Builder kann elo personaliséiert Logo-SVGen mat namespace-sécherer Sanitiséierung generéieren an abetten
 - **Foto-Eroplueden am Entdeckungsinterview** — Theme Builder-Entdeckungsinterview enthält elo e Foto-Eroplueden-Schrëtt fir méi räichen Design-Kontext
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Navigatiounslabel-Parameter** — Create Menu-Fäegkeet ënnerstëtzt elo en eegestännegen `navigation_label`, getrennt vum Säitentitel
 - **Disponibilitéit vu Niveau-1-Wierkzäicher** — sd-ai-agent/site-scrape ass elo e Niveau-1-Wierkzäich, dat standardméisseg am Theme Builder disponibel ass
 
-### Behuewen
+### Behuewen {#fixed-1}
 
 - **AI Client-Cache** — gëtt elo duerch Transienten ënnerstëtzt fir Bestännegkeet iwwer Ufroen ewech, wat Dateverloscht bei laang lafenden Agent-Aufgabe verhënnert
 - **Aktiounslinken an Erweiderungsreien** — korrigéiert an ëmbenannt fir méi Kloerheet
 
-## 1.10.0 — Verëffentlecht den 2026-05-05
+## 1.10.0 — Verëffentlecht den 2026-05-05 {#1100--released-on-2026-05-05}
 
-### Nei
+### Nei {#new-2}
 
 - **Tavily-Internetsich** — Tavily als Sich-Ubidder dobäisetzen, fir méi räich Internetsichresultater nieft Brave Search
 - **Theme-bewosst agebaute Fäegkeeten** — Fäegkeetsguiden fir Block-Themes, Classic-Themes, Kadence Blocks a Kadence Theme ginn elo mat der Erweiderung matgeliwwert
 - **Kontaktformular-Fäegkeet fir Websäite-Builder** — e Kontaktformular direkt aus der Chat-Uewerfläch op all Säit dobäisetzen
 
-### Verbessert
+### Verbessert {#improved-1}
 
 - **WooCommerce-Integratioun refaktoriséiert** — benotzt elo natierlech WooCommerce-APIs fir besser Zouverlässegkeet a Kompatibilitéit
 - **Ubidderlëscht aktualiséiert sech automatesch** — wann eng Erweiderung aktivéiert oder deaktivéiert gëtt
 
-### Behuewen
+### Behuewen {#fixed-2}
 
 - **navigate-to-Fäegkeet** — onendlech Nei-Lued-Schläif op e puer Admin-Säite fixéiert
 - **list-posts-Fäegkeet** — léist elo Kategorie- an Tag-Nimm korrekt a Slugs op

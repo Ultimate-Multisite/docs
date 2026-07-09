@@ -4,11 +4,11 @@ title: Fyuluta - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Fyuluta: wu_pre_save_settings
+# Fyuluta: wu_pre_save_settings {#filter-wupresavesettings}
 
 Lolani opanga kuti afyulute zokonda musanasunge ndi Ultimate Multisite.
 
-## Magawo
+## Magawo {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Lolani opanga kuti afyulute zokonda musanasunge ndi Ultimate Multisite.
 | $settings_to_save | `array` | Zokonda zatsopano zowonjezera. |
 | $saved_settings | `array` | Zokonda zapano zomwe zasungidwa. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.18
-### Gwero
+### Gwero {#source}
 
 Zafotokozedwa mu [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) pa mzere 296

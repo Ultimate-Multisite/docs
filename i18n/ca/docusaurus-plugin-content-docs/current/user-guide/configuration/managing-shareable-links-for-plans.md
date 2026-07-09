@@ -3,7 +3,7 @@ title: Gestionar enllaços compartitius per a plans
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Gestió de enllaços compartibles per plans
+# Gestió de enllaços compartibles per plans {#managing-shareable-links-for-plans}
 
 Ultimate Multisite et ofereix la opció de compartir enllaços de plans directament amb els vostres clients. Per fer-ho, aneu a qualsevol pàgina d'edició dels vostres plans i cliqueu el botó _Click to copy the Shareable Link_.
 

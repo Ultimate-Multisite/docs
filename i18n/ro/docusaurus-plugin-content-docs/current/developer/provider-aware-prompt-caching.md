@@ -3,11 +3,11 @@ title: Cachingul de Prompt Conștient de Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cachează Prompt-urile Conștient de Furnizor
+# Cachează Prompt-urile Conștient de Furnizor {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 introduce **cachearea prompt-urilor conștientă de furnizor**, care optimizează costurile API-ului și latența prin stocarea prompt-urilor în cache pe mai mulți furnizori LLM. Fiecare furnizor are mecanisme și configurații diferite de cache.
 
-## Prezentare Generală
+## Prezentare Generală {#overview}
 
 Cachearea prompt-urilor vă permite să:
 
@@ -23,11 +23,11 @@ Diferiți furnizori implementează cachearea în mod diferit:
 - **OpenRouter**: Cacheare specifică furnizorului
 - **Vertex Anthropic**: Cachearea prompt-urilor cu control de cache
 
-## Google Gemini: API-ul cachedContents
+## Google Gemini: API-ul cachedContents {#google-gemini-cachedcontents-api}
 
 Google Gemini oferă gestionarea explicită a cache-ului prin API-ul `cachedContents`.
 
-### Configurare
+### Configurare {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Crearea unui Prompt Cacheat
+### Crearea unui Prompt Cacheat {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returnează: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Utilizarea unui Prompt Cacheat
+### Utilizarea unui Prompt Cacheat {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Ciclul de Viață al Cache-ului
+### Ciclul de Viață al Cache-ului {#cache-lifecycle}
 
 ```php
 // Listează conținuturile cacheate
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Cele mai bune practici pentru Gemini
+### Cele mai bune practici pentru Gemini {#best-practices-for-gemini}
 
 - **Setați un TTL adecvat**: Echilibrați economiile de cost față de învechirea cache-ului
 - **Cacheați prompt-urile de sistem**: Reutilizați același prompt de sistem în mai multe cereri
 - **Monitorizați utilizarea cache-ului**: Urmăriți ce cache-uri sunt folosite cel mai des
 - **Curățați cache-urile expirate**: Ștergeți periodic cache-urile nefolosite
 
-## Azure OpenAI: Cachearea Prompt-urilor
+## Azure OpenAI: Cachearea Prompt-urilor {#azure-openai-prompt-caching}
 
 Azure OpenAI suportă cachearea prompt-urilor cu gestionare automată a TTL-ului.
 
-### Configurare
+### Configurare {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Activarea Cache-ului
+### Activarea Cache-ului {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Headere de Cache
+### Headere de Cache {#cache-headers}
 
 Azure OpenAI folosește headere HTTP pentru controlul cache-ului:
 
@@ -152,7 +152,7 @@ Valorile suportate:
 - `no_cache`: Nu cachează această cerere
 - `no_store`: Nu cachează și nu reutilizează
 
-### Monitorizarea Utilizării Cache-ului
+### Monitorizarea Utilizării Cache-ului {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Creare cache: $cache_tokens token-uri\n";
 echo "Răscoturi cache: $cache_hits token-uri\n";
 ```
 
-### Cele mai bune practici pentru Azure OpenAI
+### Cele mai bune practici pentru Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Folosiți prompt-uri consistente**: Prompt-urile identice beneficiază de cacheare
 - **Setați un TTL rezonabil**: Echilibrați costurile față de proaspătătatea datelor
 - **Monitorizați metricile cache-ului**: Urmăriți crearea față de răscoturile cache-ului
 - **Bandați cererile similare**: Grupați cererile pentru a maximiza răscoturile cache-ului
 
-## OpenRouter: Cacheare Specifică Furnizorului
+## OpenRouter: Cacheare Specifică Furnizorului {#openrouter-provider-specific-caching}
 
 OpenRouter suportă cachearea prin furnizorii subiacenti (OpenAI, Anthropic etc.).
 
-### Configurare
+### Configurare {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Utilizarea Cache-ului OpenRouter
+### Utilizarea Cache-ului OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Opțiuni Specifice Furnizorului
+### Opțiuni Specifice Furnizorului {#provider-specific-options}
 
 Diferiți furnizori au mecanisme de cache diferite:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Cele mai bune practici pentru OpenRouter
+### Cele mai bune practici pentru OpenRouter {#best-practices-for-openrouter}
 
 - **Cunoașteți cache-ul furnizorului**: Fiecare furnizor are mecanisme diferite
 - **Testați comportamentul cache-ului**: Verificați că cachearea funcționează cu furnizorul ales
 - **Monitorizați costurile**: Urmăriți economiile obținute prin cacheare
 - **Folosiți modele consistente**: Schimbarea modelelor rupe răscoturile cache-ului
 
-## Vertex Anthropic: Cachearea Prompt-urilor cu Control de Cache
+## Vertex Anthropic: Cachearea Prompt-urilor cu Control de Cache {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) suportă cachearea prompt-urilor cu control explicit de cache.
 
-### Configurare
+### Configurare {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Utilizarea Cache-ului Vertex Anthropic
+### Utilizarea Cache-ului Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Tipuri de Control de Cache
+### Tipuri de Control de Cache {#cache-control-types}
 
 - **ephemeral**: Cachează pentru durata cererii (implicit)
 - **persistent**: Cachează pe mai multe cereri (dacă este suportat)
 
-### Monitorizarea Utilizării Cache-ului
+### Monitorizarea Utilizării Cache-ului {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache creat: $cache_created token-uri\n";
 echo "Cache citit: $cache_read token-uri\n";
 ```
 
-### Cele mai bune practici pentru Vertex Anthropic
+### Cele mai bune practici pentru Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Folosiți cache-ul efemer**: Bun pentru cachearea sesiunilor unice
 - **Setați max_tokens adecvat**: Echilibrați dimensiunea cache-ului față de cost
 - **Monitorizați metricile cache-ului**: Urmăriți eficiența cache-ului
 - **Testați cu sarcina de lucru**: Verificați dacă cachearea vă beneficiează în cazul de utilizare
 
-## Strategia de Cacheare Cross-Provider
+## Strategia de Cacheare Cross-Provider {#cross-provider-caching-strategy}
 
-### Configurare Unificată
+### Configurare Unificată {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Detectarea Furnizorului
+### Detectarea Furnizorului {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Folosește configurația de cache specifică furnizorului
 ```
 
-### Strategia de Fallback
+### Strategia de Fallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Optimizarea Costurilor
+## Optimizarea Costurilor {#cost-optimization}
 
-### Calcularea Economiilor
+### Calcularea Economiilor {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Economii estimate: \$$savings\n";
 ```
 
-### Sfaturi de Optimizare
+### Sfaturi de Optimizare {#optimization-tips}
 
 - **Cacheați prompt-urile mari de sistem**: Cele mai mari economii de cost
 - **Reutilizați contextul**: Cacheați documentele de context frecvent folosite
@@ -395,30 +395,30 @@ echo "Economii estimate: \$$savings\n";
 - **Monitorizați eficiența cache-ului**: Urmăriți economiile reale
 - **Ajustați TTL**: Echilibrați costurile față de proaspătatea datelor
 
-## Depanșare
+## Depanșare {#troubleshooting}
 
-### Cache-ul nu este folosit
+### Cache-ul nu este folosit {#cache-not-being-used}
 
 - Verificați dacă cachearea este activată în configurare
 - Asigurați-vă că prompt-urile sunt identice (cachearea necesită o potrivire exactă)
 - Verificați dacă cache-ul nu a expirat
 - Verificați limitele cache-ului specifice furnizorului
 
-### Eșecul creării cache-ului
+### Eșecul creării cache-ului {#cache-creation-failing}
 
 - Verificați dacă dimensiunea cache-ului este în limitele furnizorului
 - Asigurați-vă că sintaxa `cache_control` este corectă
 - Asigurați-vă că furnizorul suportă cachearea pentru modelul dvs.
 - Revizuiți documentația furnizorului pentru limitări
 
-### Costuri neașteptate
+### Costuri neașteptate {#unexpected-costs}
 
 - Monitorizați token-urile de creare și citire a cache-ului
 - Verificați dacă cache-ul este folosit efectiv
 - Verificați dacă există rată de eșec a cache-ului din cauza variațiilor prompt-urilor
 - Luați în considerare ajustarea TTL-ului sau a strategiei de cacheare
 
-## Comparativ Furnizori
+## Comparativ Furnizori {#provider-comparison}
 
 | Funcționalitate | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Economii estimate: \$$savings\n";
 | Reducere cost | 90% | 90% | Depinde de furnizor | 90% |
 | Monitorizare | Detaliat | Prin metrici | Depinde de furnizor | Prin utilizare |
 
-## Pași Următori
+## Pași Următori {#next-steps}
 
 1. **Alegeți furnizorul**: Selectați în funcție de nevoile dvs.
 2. **Configurați cachearea**: Setați cachearea specifică furnizorului

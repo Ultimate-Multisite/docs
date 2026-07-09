@@ -4,13 +4,13 @@ title: Filter - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Filtreeri, kas jõustada täiendavaid paroolireegleid.
 
 Kui true, jõustab minimaalse pikkuse ja tähemärkide nõuded. Lubatakse automaatselt sätte "Super Strong" puhul või kui Defender Pro Strong Password funktsioon on aktiivne.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Kui true, jõustab minimaalse pikkuse ja tähemärkide nõuded. Lubatakse automa
 | $strength_setting | `string` | Administraatori sätte väärtus. |
 | $defender_active | `bool` | Kas Defender Pro Strong Password on aktiivne. |
 
-### Alates
+### Alates {#since}
 
 - 2.4.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) real 531

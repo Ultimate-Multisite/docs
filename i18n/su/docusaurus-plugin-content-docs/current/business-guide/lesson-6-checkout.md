@@ -3,15 +3,15 @@ title: 'Pangajaran 6: Pangalaman Signup'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Pangajaran 6: Pangalaman Pendaptaran
+# Pangajaran 6: Pangalaman Pendaptaran {#lesson-6-the-signup-experience}
 
 Alur pameseran nyaéta tempat minat robah jadi panghasilan. Prosés pendaptaran anu ngabingungkeun atawa umum teuing bakal kaleungitan palanggan. Alur anu husus pikeun nis anu nyarita ku basa maranéhna jeung karasa gampang bakal ngarobah maranéhna jadi palanggan.
 
-## Tempat Urang Eureun
+## Tempat Urang Eureun {#where-we-left-off}
 
 FitSite geus boga témplat jeung paket anu dikonfigurasi. Ayeuna urang ngawangun pangalaman pendaptaran jeung pameseran anu ngarobah nu boga studio kabugaran jadi palanggan anu mayar.
 
-## Ngartos Alur Pendaptaran
+## Ngartos Alur Pendaptaran {#understanding-the-registration-flow}
 
 Formulir pameseran Ultimate Multisite nyaéta formulir sababaraha léngkah anu bisa disaluyukeun pinuh. Pikeun FitSite, urang hoyong alur anu:
 
@@ -21,11 +21,11 @@ Formulir pameseran Ultimate Multisite nyaéta formulir sababaraha léngkah anu b
 
 Tingali [Alur Pendaptaran](/user-guide/configuration/the-registration-flow) pikeun rujukan téknis lengkep.
 
-## Ngarancang Pameseran FitSite
+## Ngarancang Pameseran FitSite {#designing-the-fitsite-checkout}
 
 Buka **Ultimate Multisite > Formulir Pameseran** jeung jieun formulir anyar.
 
-### Léngkah 1: Milih Paket
+### Léngkah 1: Milih Paket {#step-1-plan-selection}
 
 Hal kahiji anu kudu katingali ku nu boga studio kabugaran nyaéta paket, dipidangkeun ku istilah anu maranéhna ngarti.
 
@@ -37,7 +37,7 @@ Hal kahiji anu kudu katingali ku nu boga studio kabugaran nyaéta paket, dipidan
 "1 GB storage" means nothing to a gym owner. "Everything you need for a professional studio website" means everything. Write plan descriptions in your customer's language.
 :::
 
-### Léngkah 2: Milih Témplat
+### Léngkah 2: Milih Témplat {#step-2-template-selection}
 
 Sanggeus milih paket, palanggan milih témplat awalna.
 
@@ -45,7 +45,7 @@ Sanggeus milih paket, palanggan milih témplat awalna.
 - Témplat anu sadia disaring dumasar kana paket anu dipilih (dikonfigurasi dina Pangajaran 5)
 - Unggal témplat kudu boga gambar sawangan anu nembongkeun desain husus kabugaran
 
-### Léngkah 3: Nyieun Account
+### Léngkah 3: Nyieun Account {#step-3-account-creation}
 
 Tetepkeun minimal. Kumpulkeun ngan ukur:
 
@@ -55,27 +55,27 @@ Tetepkeun minimal. Kumpulkeun ngan ukur:
 
 Ulah ménta inpormasi anu henteu diperlukeun dina waktu pendaptaran. Unggal widang tambahan ngurangan konvérsi.
 
-### Léngkah 4: Nyetél Situs
+### Léngkah 4: Nyetél Situs {#step-4-site-setup}
 
 - **Judul situs**: Eusian saméméhna tina ngaran studio anu diasupkeun dina Léngkah 3
 - **URL situs**: Hasilkeun otomatis tina ngaran studio (contona, `ironworks.fitsite.com`)
 
-### Léngkah 5: Pamayaran
+### Léngkah 5: Pamayaran {#step-5-payment}
 
 - Tambahkeun widang **Pamayaran**
 - Konpigurasikeun gerbang pamayaran anjeun ([Stripe](/user-guide/payment-gateways/stripe) disarankeun pikeun tagihan langganan)
 - Lamun anjeun nyieun tambahan pesenan dina Pangajaran 5, tambahkeun widang **Tambahan Pesenan** saméméh léngkah pamayaran
 
-### Léngkah 6: Konfirmasi
+### Léngkah 6: Konfirmasi {#step-6-confirmation}
 
 - Saluyukeun pesen konfirmasi ku basa husus kabugaran
 - Conto: "Situs wéb studio kabugaran anjeun keur dijieun. Anjeun bakal dialihkeun ka situs anyar anjeun dina sababaraha detik."
 
-## Nambahkeun Tombol Pilihan Periode
+## Nambahkeun Tombol Pilihan Periode {#adding-a-period-selection-toggle}
 
 Lamun anjeun nyetél variasi harga dina paket anjeun (bulanan vs. taunan), tambahkeun widang **Pilihan Periode** kana formulir pameseran sangkan palanggan bisa ngalih antara periode tagihan. Tingali [Formulir Pameseran](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) pikeun parentah.
 
-## Ngonpigurasikeun Pamayaran
+## Ngonpigurasikeun Pamayaran {#configuring-payment}
 
 Lamun anjeun can nyetél gerbang pamayaran:
 
@@ -85,7 +85,7 @@ Lamun anjeun can nyetél gerbang pamayaran:
 
 Tingali [Narima Pamayaran](/user-guide/payment-gateways/getting-paid) pikeun rinci ngeunaan kumaha pamayaran ngalir ka Account anjeun.
 
-## Nguji Alur
+## Nguji Alur {#testing-the-flow}
 
 Saméméh neraskeun, réngsékeun pendaptaran tés lengkep:
 
@@ -105,7 +105,7 @@ Pariksa yén:
 - [ ] Palanggan nepi ka situs anu jalan jeung témplat anu dipilih
 - [ ] Email konfirmasi maké basa husus kabugaran
 
-## Jaringan FitSite Nepi ka Ayeuna
+## Jaringan FitSite Nepi ka Ayeuna {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Anu Urang Bangun dina Pangajaran Ieu
+## Anu Urang Bangun dina Pangajaran Ieu {#what-we-built-this-lesson}
 
 - **Formulir pameseran sababaraha léngkah** anu disaluyukeun pikeun nu boga studio kabugaran
 - **Basa husus pikeun nis** sapanjang alur pendaptaran

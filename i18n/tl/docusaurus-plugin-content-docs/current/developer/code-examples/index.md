@@ -3,11 +3,11 @@ title: Mga Advanced na Halimbawa ng Code
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mga Advanced na Halimbawa ng Code
+# Mga Advanced na Halimbawa ng Code {#advanced-code-examples}
 
 Ipinapakita ng mga halimbawang ito ang mga advanced na pattern ng integrasyon sa Ultimate Multisite.
 
-## Dynamic na Pricing Engine
+## Dynamic na Pricing Engine {#dynamic-pricing-engine}
 
 Isang rules-based na pricing engine na naglalapat ng mga diskwento batay sa volume, loyalty, at season:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Advanced na Paglalaan ng Site
+## Advanced na Paglalaan ng Site {#advanced-site-provisioning}
 
 Awtomatikong i-configure ang mga bagong site gamit ang mga plugin, SSL, CDN, backup, at monitoring batay sa mga feature ng plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Custom na Sistema ng mga Limitasyon
+## Custom na Sistema ng mga Limitasyon {#custom-limitations-system}
 
 Subaybayan at ipatupad ang mga limitasyon sa resource gamit ang mga babala sa paggamit:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter gamit ang `increment_item()`
+## BerlinDB Atomic Counter gamit ang `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Nagdagdag ang Ultimate Multisite v2.6.1 ng `increment_item()` method sa BerlinDB `Query` class. Gamitin ito para magsagawa ng ligtas at atomic na mga pagdaragdag sa mga numeric column nang walang read-modify-write races — kapaki-pakinabang para sa mga counter, usage quota, at rate-limiting check na tumatakbo sa ilalim ng magkakasabay na request.
 
-### Lagda ng method
+### Lagda ng method {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Nagdagdag ang Ultimate Multisite v2.6.1 ng `increment_item()` method sa BerlinDB
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Pangunahing paggamit
+### Pangunahing paggamit {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Pagsubaybay sa paggamit ng API kada membership
+### Pagsubaybay sa paggamit ng API kada membership {#tracking-api-usage-per-membership}
 
 Isang praktikal na pattern para ipatupad ang mga API rate limit kada membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Bakit `increment_item()` sa halip na `update_item()`
+### Bakit `increment_item()` sa halip na `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Ang simpleng read-modify-write approach ay hindi ligtas sa ilalim ng magkakasabay na request:
 

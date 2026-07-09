@@ -4,11 +4,11 @@ title: Filtre - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filtre: wu_country_get_administrative_division_name
+# Filtre: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Retorna el nom bonic de les subdivisions administratives del país.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Retorna el nom bonic de les subdivisions administratives del país.
 | $ucwords | `bool` | si posem les paraules en majúscules. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instància de la classe actual. |
 
-### Des de
+### Des de {#since}
 
 - 2.0.11
-### Font
+### Font {#source}
 
 Definit a [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) a la línia 250
 
 
-## Retorna
+## Retorna {#returns}
 El nom de la divisió modificat.

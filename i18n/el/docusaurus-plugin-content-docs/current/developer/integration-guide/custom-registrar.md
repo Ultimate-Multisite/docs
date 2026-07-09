@@ -3,13 +3,13 @@ title: Ανάπτυξη Προσαρμοσμένης Ενσωμάτωσης Εγ
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Δημιουργία Ενσωμάτωσης Προσαρμοσμένου Registrar
+# Δημιουργία Ενσωμάτωσης Προσαρμοσμένου Registrar {#building-a-custom-registrar-integration}
 
 Το Addon Domain Seller χρησιμοποιεί ένα μοτίβο που ονομάζεται **Integration Registry**. Κάθε registrar είναι μια κλάση PHP που υλοποιεί το `Domain_Selling_Capability` και καταγράφεται μέσω του action hook `wu_domain_seller_register_capabilities`.
 
 Αυτό το εγχειρίδιο δείχνει πώς να συνδέσετε έναν προσαρμοσμένο registrar.
 
-## Η διεπαφή (The interface)
+## Η διεπαφή (The interface) {#the-interface}
 
 Η κλάση σας πρέπει να υλοποιεί το `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` και να κληρονομεί από το `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Προαιρετικές μεθόδους
+### Προαιρετικές μεθόδους {#optional-methods}
 
 Υλοποιήστε αυτές τις μεθόδους για να ξεκλειδώσετε επιπλέον λειτουργίες. Το addon ανιχνεύει την υποστήριξη μέσω του `method_exists()`:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Μεταβίβαση domain (εξόδου) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Μεταβίβαση domain (εισόδου) |
 
-### Συνθήκη επιστροφής τιμής
+### Συνθήκη επιστροφής τιμής {#return-value-convention}
 
 Όλες οι μεθόδους επιστρέφουν ένα array με τουλάχιστον το κλειδί `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Καταχώριση της ικανότητάς σας (Registering your capability)
+## Καταχώριση της ικανότητάς σας (Registering your capability) {#registering-your-capability}
 
 Καταχωρήστε την κλάση σας χρησιμοποιώντας το action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Προσθήκη πεδίων στο Wizard των στοιχείων σύνδεσης
+## Προσθήκη πεδίων στο Wizard των στοιχείων σύνδεσης {#adding-credential-fields-to-the-wizard}
 
 Για να επιτρέψετε στους διαχειριστές να εισάγουν τα στοιχεία σύνδεσης μέσω του setup wizard, καταχωρήστε την ενσωμάτωσή σας:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## Hooks για ενέργειες μετά την καταχώριση (Post-registration actions)
+## Hooks για ενέργειες μετά την καταχώριση (Post-registration actions) {#hooks-for-post-registration-actions}
 
 Χρησιμοποιήστε αυτούς τους actions για να ενεργοποιήσετε webhooks, provisioning, ειδοποιήσεις ή ενημερώσεις CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Καταγραφή (Logging)
+## Καταγραφή (Logging) {#logging}
 
 Γράψτε στο κανάλι καταγραφής ειδικό για τον πάροχο σας χρησιμοποιώντας το `wu_log_add()`:
 

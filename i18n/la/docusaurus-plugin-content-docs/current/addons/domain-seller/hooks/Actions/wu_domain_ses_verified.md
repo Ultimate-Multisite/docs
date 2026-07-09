@@ -4,19 +4,19 @@ title: Actio - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Actio: wu_domain_ses_verified
+# Actio: wu_domain_ses_verified {#action-wudomainsesverified}
 
 Fit cum SES confirmat dominium DKIM-verificatum esse.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
 | $domain | `\WP_Ultimo\Models\Domain` | Obiectum dominii. |
 
-### Ex
+### Ex {#since}
 
 - 2.2.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L480) in linea 480

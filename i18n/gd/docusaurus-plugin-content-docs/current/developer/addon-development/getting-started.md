@@ -3,9 +3,9 @@ title: A’ tòiseachadh air leasachadh leasachan
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Leasachadh Tuilleadain
+# Leasachadh Tuilleadain {#addon-development}
 
-## Structar an Tuilleadain
+## Structar an Tuilleadain {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Teamplaid Prìomh Fhaidhle an Tuilleadain
+## Teamplaid Prìomh Fhaidhle an Tuilleadain {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Eisimpleir de Mhodail Gnàthaichte
+## Eisimpleir de Mhodail Gnàthaichte {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Amalachadh Duilleag Rianachd
+## Amalachadh Duilleag Rianachd {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## A’ dèanamh deuchainn air an Addon agad
+## A’ dèanamh deuchainn air an Addon agad {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Puingean-leudachaidh v2.13.0
+## Puingean-leudachaidh v2.13.0 {#v2130-extension-points}
 
 Tha Ultimate Multisite v2.13.0 a’ cur grunn phuingean-leudachaidh ris a tha feumail do addons a tha ag amalachadh ri tenantan uachdaranach, àrainnean checkout, no fèin-obrachadh DNS solaraiche-aoigheachd.
 
-### SSO agus URLan stiùiridh na prìomh-làraich
+### SSO agus URLan stiùiridh na prìomh-làraich {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Àrainnean-bunaiteach foirm checkout
+### Àrainnean-bunaiteach foirm checkout {#checkout-form-base-domains}
 
 Cleachd `wu_checkout_form_base_domains` nuair a bhios an addon agad a’ toirt seachad àrainnean-bunaiteach co-roinnte a bharrachd a bu chòir giùlan mar àrainnean **URL Làraich** foirm checkout seach mapaidhean gnàthaichte gach làraich:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Bidh Ultimate Multisite a’ gnàthachadh nan hosts seo agus a’ leum seachad air clàran àrainn-mhapaichte fèin-obrachail gach làraich dhaibh.
 
-### Cruthachadh fèin-obrachail chlàran-àrainn
+### Cruthachadh fèin-obrachail chlàran-àrainn {#automatic-domain-record-creation}
 
 Cleachd `wu_should_create_domain_record_for_site` nuair a dh’fheumas an addon agad cruthachadh fèin-obrachail chlàran-àrainn airson làrach ùr-chruthaichte a chumail fodha no a chur dheth gu nas anmoiche:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Faodaidh amalachaidhean solaraiche-aoigheachd a bhios ag èisteachd ri `wu_add_subdomain` clàran DNS taobh an t-solaraiche a chruthachadh nuair a thèid làraich a chruthachadh. Mura h-eil amalachadh sam bith clàraichte airson na gnìomh sin, leumaidh Ultimate Multisite seachad air an obair chùlaibh fhalamh.
 
-## Na h-Ath Cheumannan
+## Na h-Ath Cheumannan {#next-steps}
 
 - Lèirmheas air an [Iomradh Hooks](/developer/hooks) airson gnìomhan is criathragan a tha rim faighinn
 - Thoir sùil air an [Ro-shealladh REST API](/developer/rest-api/overview) airson amalachadh API

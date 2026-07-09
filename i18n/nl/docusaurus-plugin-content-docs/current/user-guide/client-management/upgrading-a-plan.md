@@ -3,7 +3,7 @@ title: Een abonnement upgraden
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Een abonnement upgraden (v2)
+# Een abonnement upgraden (v2) {#upgrading-a-plan-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
@@ -41,7 +41,7 @@ Nadat de checkout is voltooid, worden de nieuwe product(en) toegevoegd aan het A
 
 ##
 
-## Upgrade- en downgradepaden
+## Upgrade- en downgradepaden {#upgrade-and-downgrade-paths}
 
 Op elk van je producten heb je een tabblad **Up & Downgrades**. De eerste optie op dat tabblad is een veld met de naam **Plan Group**.
 

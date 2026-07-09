@@ -4,11 +4,11 @@ title: Filtras - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtras: wu_woocommerce_line_item_params
+# Filtras: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Filtruoja parametrus, naudojamus kuriant eilutės elementus WooCommerce Cart, prieš nukreipiant klientą į WooCommerce checkout.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Filtruoja parametrus, naudojamus kuriant eilutės elementus WooCommerce Cart, pr
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Ultimate Multisite eilutės elemento egzempliorius. |
 | $wc_product | `\WC_Product` | WooCommerce produktas. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) 662 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}
 Pakeistus eilutės elemento parametrus.

@@ -3,7 +3,7 @@ title: Registro delle modifiche dell'integrazione WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Registro delle modifiche dell’integrazione WooCommerce
+# Registro delle modifiche dell’integrazione WooCommerce {#woocommerce-integration-changelog}
 
 Versione 2.2.0 - Rilasciata il 2026-07-01
 * Nuovo: gli importi delle imposte di Ultimate Multisite ora appaiono come righe di commissione WooCommerce separate al checkout, rendendo i totali delle imposte più chiari prima del pagamento.

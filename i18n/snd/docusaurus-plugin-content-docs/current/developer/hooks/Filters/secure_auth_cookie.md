@@ -4,20 +4,20 @@ title: فلٽر - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# فلٽر: secure_auth_cookie
+# فلٽر: secure_auth_cookie {#filter-secureauthcookie}
 
 فلٽر ڪري ٿو ته auth cookie رڳو HTTPS تي موڪلي وڃي يا نه.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
 | $secure | `bool` | ڇا cookie رڳو HTTPS تي موڪلي وڃي. |
 | $user_id | `int` | استعمال ڪندڙ ID. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 3.1.0
-### ذريعو
+### ذريعو {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) ۾ لڪير 80 تي بيان ڪيل.

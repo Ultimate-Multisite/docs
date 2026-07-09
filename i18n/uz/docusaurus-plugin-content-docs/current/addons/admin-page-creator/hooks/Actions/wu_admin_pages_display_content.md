@@ -4,19 +4,19 @@ title: Harakat - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Amal: wu_admin_pages_display_content
+# Amal: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
 
 Maxsus tahrirchi kontentlarini ko‘rsatish.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nom | Tur | Tavsif |
 |------|------|-------------|
 | $ | `\WU_Admin_Page` | Admin sahifa obyekti |
 
-### Joriy etilgan versiya
+### Joriy etilgan versiya {#since}
 
 - 1.0.1
-### Manba
+### Manba {#source}
 
 [`views/template/page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/template/page.php#L53) faylida 53-qatorda aniqlangan

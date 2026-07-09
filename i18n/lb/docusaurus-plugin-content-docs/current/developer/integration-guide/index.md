@@ -3,13 +3,13 @@ title: Integratiounsuleedung
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integratiounsguide
+# Integratiounsguide {#integration-guide}
 
 Dëse Guide deckt heefeg Integratiounsmustere mat Ultimate Multisite of, inklusiv d'Verbanne mat externe Servicer, d'Opbaue vu personaliséierte Bezuel-Gateways an d'Ëmgoe mat Webhooks.
 
 Fir isoléiert Tenant-Infrastruktur, kuckt [Multi-Tenancy-Integratioun](./multi-tenancy) fir Uleedung iwwer souveränen Tenant-Bootstrap, Migratiounsverifikatioun, SSO an Ofbau.
 
-## CRM-Integratioun
+## CRM-Integratioun {#crm-integration}
 
 Synchroniséiert Clientsdaten mat Ärem CRM, wann nei Clienten sech umellen:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics-Integratioun
+## Analytics-Integratioun {#analytics-integration}
 
 Verfollegt wichteg Geschäftsevenementer iwwer de ganze Client-Liewenszyklus:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Nächst Schrëtt
+## Nächst Schrëtt {#next-steps}
 
 - [Entwécklung vun engem personaliséierte Gateway](./custom-gateway) — Baut Ären eegene Bezuel-Gateway
 - [Ëmgang mat Webhooks](./webhooks) — Erstellt personaliséiert Webhook-Endpunkten

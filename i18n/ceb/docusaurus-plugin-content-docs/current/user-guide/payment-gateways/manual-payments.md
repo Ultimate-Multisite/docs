@@ -3,13 +3,13 @@ title: Pag-set up sa Manwal nga mga Bayad
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Pag-set Up sa Manual Payments (v2)
+# Pag-set Up sa Manual Payments (v2) {#setting-up-manual-payments-v2}
 
 _**IMPORTANT NOTE: Kini nga artikulo nagtumong sa Ultimate Multisite version 2.x.**_
 
 Ang Manual payments usa ka paagi aron makatanyag ka og ubang mga pamaagi sa pagbayad kung ang **Stripe** o **PayPal** dili magamit para sa imong mga user. Mahimo kini nga wire o bank transfer o bisan unsang ubang pamaagi sa pagbayad nga magamit sa imong mga user sa lokal.
 
-## Unsaon pag-enable sa Manual Payments
+## Unsaon pag-enable sa Manual Payments {#how-to-enable-manual-payments}
 
 Ang pag-set up sa manual payment sayon kaayo. Kinahanglan ra nimo kining i-enable ubos sa payment gateways ug ibutang ang detalyadong mga instruksyon kung unsaon sa user pagpadala sa bayad.
 
@@ -31,7 +31,7 @@ Ug makadawat usab sila og mensahe sa imong **Thank You** page uban sa imong mga 
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Pagkumpirma sa manual payments
+## Pagkumpirma sa manual payments {#confirming-manual-payments}
 
 Aron makumpirma ang manual payment, adto sa **Payments** menu sa wala nga bar. Didto makita nimo ang tanang mga bayad sa imong network ug ang ilang mga detalye, lakip ang ilang **status**. Ang manual payment kanunay nga adunay **Pending** status hangtod nga imo kining usbon sa kamut.
 

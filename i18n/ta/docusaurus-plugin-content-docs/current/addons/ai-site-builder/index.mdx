@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## தேவையானவை (Requirements)
+## தேவையானவை (Requirements) {#requirements}
 
 - WordPress 5.3 அல்லது அதற்கு மேல்
 - PHP 7.4 அல்லது அதற்கு மேல்
 - Multisite Ultimate plugin (செயல்படுத்தப்பட்ட நிலையில்)
 
-## நிறுவுதல் (Installation)
+## நிறுவுதல் (Installation) {#installation}
 
 1. ஆட்-ஆன் கோப்புகளை உங்கள் `/wp-content/plugins/` கோப்பகத்தில் பதிவேற்றவும்
 2. WordPress-ல் உள்ள 'Plugins' மெனு மூலம் பிளகினை செயல்படுத்துங்கள்
 3. நெட்வொர்க் நிர்வாகத்தில் (network admin) ஆட்-ஆன் அமைப்புகளை உள்ளமைக்கவும்
 
-## மேம்பாடு (Development)
+## மேம்பாடு (Development) {#development}
 
-### அமைவு (Setup)
+### அமைவு (Setup) {#setup}
 
 ```bash
 # சார்புகளை (dependencies) நிறுவவும்
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### திட்ட அமைப்பு (Project Structure)
+### திட்ட அமைப்பு (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### சோதனை செய்தல் (Testing)
+### சோதனை செய்தல் (Testing) {#testing}
 
 இந்த ஆட்-ஆன் ஒரு விரிவான சோதனை கட்டமைப்பைக் கொண்டுள்ளது:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Test Coverage**: குறியீட்டு கவரேஜை (code coverage) கண்காணிக்க அமைக்கப்பட்டுள்ளது
 - **Multisite Testing**: பல-சைட் சூழலில் (multisite environment) சோதனைகள் இயக்கப்படும்
 
-### குறியீட்டு தரநிலைகள் (Code Standards)
+### குறியீட்டு தரநிலைகள் (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS மூலம் செயல்படுத்தப்படுகிறது
 - **PHP 7.4+ Compatibility**: நவீன PHP அம்சங்கள் ஆதரிக்கப்படுகின்றன
 - **Static Analysis**: வகைச் சரிபார்ப்புக்கு (type checking) PHPStan ஒருங்கிணைப்பு
 - **Code Modernization**: PHP மேம்படுத்தல்களுக்கான Rector விதிகள்
 
-### உருவாக்க அமைப்பு (Build System)
+### உருவாக்க அமைப்பு (Build System) {#build-system}
 
 - **Asset Processing**: CSS/JS கோப்புகளுக்கான சுருக்குதல் (Minification)
 - **Translation**: POT கோப்பு உருவாக்கம்
 - **Packaging**: விநியோகத்திற்காக ஆர்கைவ் உருவாக்கம்
 - **Development Mode**: பிழைத்திருத்தத்திற்காக (debugging) சுருக்குதல் செய்யப்படாத சொத்துக்கள் (Unminified assets)
 
-## உள்ளமைவு (Configuration)
+## உள்ளமைவு (Configuration) {#configuration}
 
 இந்த ஆட்-ஆன், நெட்வொர்க் நிர்வாக இடைமுகம் (network admin interface) மூலம் அணுகக்கூடிய பல்வேறு உள்ளமைவு விருப்பங்களை ஆதரிக்கிறது.
 
-## ஹூக்குகள் மற்றும் ஃபில்டர்கள் (Hooks and Filters)
+## ஹூக்குகள் மற்றும் ஃபில்டர்கள் (Hooks and Filters) {#hooks-and-filters}
 
-### செயல்பாடுகள் (Actions)
+### செயல்பாடுகள் (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - ஆட்-ஆன் துவக்கப்பட்ட பிறகு இயக்கப்படும்
 - `ultimate-multisite-ai-site-builder_loaded` - அனைத்து ஆட்-ஆன் கோப்புகளும் ஏற்றப்பட்ட பிறகு இயக்கப்படும்
 
-### ஃபில்டர்கள் (Filters)
+### ஃபில்டர்கள் (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - ஆட்-ஆன் அமைப்புகளை மாற்றியமைக்க
 - `ultimate-multisite-ai-site-builder_enabled` - ஆட்-ஆன் இயக்க/முடக்க நிலையை மாற்றியமைக்க
 
-## உரிமம் (License)
+## உரிமம் (License) {#license}
 
 இந்த ஆட்-ஆன் GPL v3 அல்லது அதற்குப் பிந்தைய உரிமத்தின் கீழ் உரிமம் பெற்றுள்ளது.
 
-## ஆதரவு (Support)
+## ஆதரவு (Support) {#support}
 
 ஆதரவு மற்றும் ஆவணங்களுக்காக, [MultisiteUltimate.com](https://multisiteultimate.com) ஐப் பார்க்கவும்.
-## மாற்றங்கள் (Changelog)
+## மாற்றங்கள் (Changelog) {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix-ஐ ultimate-multisite என்று பெயர் மாற்றம்; text domain-ஐ புதுப்பித்தல்; version அதிகரிப்பு.
 

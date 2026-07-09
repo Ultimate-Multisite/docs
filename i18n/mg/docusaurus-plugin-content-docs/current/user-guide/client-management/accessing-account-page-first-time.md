@@ -3,7 +3,7 @@ title: Fidirana amin'ny Pejy Kaonty
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Ahoana no afaka miditra amin'ny pejy kaontinao ho an'ny voalohany?
+# Ahoana no afaka miditra amin'ny pejy kaontinao ho an'ny voalohany? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Faly anareo ao amin'Ultimate Multisite!
 

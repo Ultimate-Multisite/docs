@@ -3,13 +3,13 @@ title: Przewodnik po integracji
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Przewodnik integracji
+# Przewodnik integracji {#integration-guide}
 
 Ten przewodnik omawia typowe wzorce integracji z Ultimate Multisite, w tym łączenie z usługami zewnętrznymi, tworzenie niestandardowych bramek płatności i obsługę webhooków.
 
 W przypadku izolowanej infrastruktury tenantów zobacz [Integracja Multi-Tenancy](./multi-tenancy), aby uzyskać wskazówki dotyczące uruchamiania suwerennego tenanta, weryfikacji migracji, SSO i likwidacji.
 
-## Integracja z CRM
+## Integracja z CRM {#crm-integration}
 
 Synchronizuj dane klientów ze swoim CRM, gdy rejestrują się nowi klienci:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integracja z Analytics
+## Integracja z Analytics {#analytics-integration}
 
 Śledź kluczowe zdarzenia biznesowe w całym cyklu życia klienta:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Następne kroki
+## Następne kroki {#next-steps}
 
 - [Tworzenie niestandardowej bramki](./custom-gateway) — Zbuduj własną bramkę płatności
 - [Obsługa webhooków](./webhooks) — Utwórz niestandardowe endpointy webhooków

@@ -3,11 +3,11 @@ title: Fitantanana Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Fitantanana Webhook
+# Fitantanana Webhook {#webhook-handling}
 
 Mamoròna endpoint webhook namboarina manokana handraisana hetsika avy amin’ny tolotra ivelany sy hampifanarahana angona amin’ny Ultimate Multisite.
 
-## Endpoint Webhook Namboarina Manokana
+## Endpoint Webhook Namboarina Manokana {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Hevitra Momba ny Fiarovana
+## Hevitra Momba ny Fiarovana {#security-considerations}
 
 - Hamarino foana ny sonia webhook amin’ny fampiasana HMAC na tsiambaratelo iombonana
 - Mampiasà `permission_callback` amin’ny lalana REST-nao — aza apetraka ho `__return_true` mihitsy izany amin’ny tontolo famokarana

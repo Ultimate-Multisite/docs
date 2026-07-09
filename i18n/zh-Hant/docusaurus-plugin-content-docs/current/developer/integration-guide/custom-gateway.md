@@ -3,11 +3,11 @@ title: 自訂閘道開發
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# 自訂 Gateway 開發
+# 自訂 Gateway 開發 {#custom-gateway-development}
 
 你可以透過擴充 `Base_Gateway` 類別來建立自訂付款 gateway。
 
-## Gateway 類別
+## Gateway 類別 {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## 註冊 Gateway
+## 註冊 Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## 主要方法
+## 主要方法 {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | 處理退款請求 |
 | `get_payment_methods()` | 回傳客戶已儲存的付款方式 |
 
-## 定期 membership 的續訂憑證
+## 定期 membership 的續訂憑證 {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 允許 gateway 整合在 `auto_renew` 被保存之前，回報定期 membership 是否具有可重複使用的續訂憑證。Hook `wu_membership_has_renewal_credential` 並回傳：
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 在儲存新的可重複使用憑證後，請將清除缺失憑證標記作為你的 gateway 成功重新授權流程的一部分。
 
-## 提示
+## 提示 {#tips}
 
 - 失敗時一律回傳 `WP_Error`，讓 Ultimate Multisite 能處理錯誤顯示
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - 使用 `wu_log_add()` 進行 gateway 專用記錄
 
-## AI connector provider 功能
+## AI connector provider 功能 {#ai-connector-provider-capabilities}
 
 呼叫 AI connector 支援作業的自訂整合，應與 AI Provider for Anthropic Max v1.3.0 引入的受支援 OAuth provider 集合保持一致：
 

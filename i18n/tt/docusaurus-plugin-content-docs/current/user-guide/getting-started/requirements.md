@@ -3,11 +3,11 @@ title: Талаптар
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Gereklilikleri
+# Ultimate Multisite Gereklilikleri {#ultimate-multisite-requirements}
 
 Ultimate Multisite'ı satın almadan önce kendinize sormanız gereken ilk şey, eklentimizi çalıştırmak için ne gibi gereksinimler olduğu olabilir. Neyse ki, Ultimate Multisite'ı çalıştırmak için sadece birkaç temel gereksinim var: bir **alan adı**, iyi bir **barındırma sağlayıcısı** ve bir WordPress **Multisite** kurulumu. İşte ihtiyacınız olan hepsi bu!
 
-## Alan Adı
+## Alan Adı {#domain-name}
 
 Öncelikle alan adından bahsedelim.
 
@@ -17,7 +17,7 @@ Eklentimiz abonelik hizmetleri, ödeme toplama, ödeme formları, indirim kuponl
 
 Hangi nişi seçerseniz seçin, eğer web sitelerini hizmet olarak satıyorsanız eklentimizle yönetebilirsiniz! İş planınıza uygun bir alan adı seçtiğinizden emin olun.
 
-## Barındırma Sağlayıcısı
+## Barındırma Sağlayıcısı {#hosting-provider}
 
 Artık nişinizi ve işinizi temsil eden ilgi çekici bir alan adınız olduğuna göre, ağınızı Ultimate Multisite ile barındırmak için iyi bir web hosting şirketi seçmeniz gerekecek. Piyasada bazı iyi seçenekler var. Bazı barındırma sağlayıcıları Ultimate Multisite ile iyi entegre olur ki bu da ne inşa etmeyi planladığınıza bağlı olarak belirleyici bir faktör olabilir.
 
@@ -25,7 +25,7 @@ Ultimate Multisite hər hansı hosting provayderinde işləy bilmelidir. Yeganə
 
 Server spesifikasiyalarına gəldikdə, xüsusi bir düstur yoxdur, çünki bu sizin təklif etdiyiniz funksiyalar və şəbəkənizin ölçüsünə bağlı olacaq. Paylaşımlı hosting yaxşı başlanğıc ola bilər, lakin şəbəkəniz böyüməyə başladığı anlarda ehtiyacınız çox gümanlı olaraq dedikodlu VPS (dedicated VPS) almağa düşəcək.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 İndi isə bir WordPress Multisite quraşdırılması haqqında biraz danışaq.
 

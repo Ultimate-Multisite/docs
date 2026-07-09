@@ -3,7 +3,7 @@ title: Registreer API-eindpunt
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Die Ultimate Multisite Register API-eindpunt
+# Die Ultimate Multisite Register API-eindpunt {#the-ultimate-multisite-register-api-endpoint}
 
 In hierdie tutorie sal u leer hoe om die Ultimate Multisite /register API-eindpunt te gebruik om die hele aanmeldingsproses vir 'n nuwe kliënt in u netwerk te skep, en hoe om dit te doen met Zapier.
 
@@ -29,11 +29,11 @@ Kies **Enable API** en kry u API-kredensiele.
 
 Kom nou, kom ons verken die eindpunt en skep dan 'n registrasieaksie in Zapier.
 
-## Eindpunt-liggaamparameters
+## Eindpunt-liggaamparameters {#endpoint-body-parameters}
 
 Kom ons kyk na 'n oorsig van die minimuminligting wat ons na die eindpunt moet stuur. Aan die einde van hierdie artikel vind u die volledige oproep.
 
-### Customer
+### Customer {#customer}
 
 Dit is die inligting wat nodig is vir die proses van die skep van die Gebruiker en die Ultimate Multisite Kliënt:
 
@@ -43,25 +43,25 @@ Dit is moontlik om die kliënt-ID wat in u netwerk geskep is, te stuur. Indien n
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Die enigste inligting wat ons binne hierdie objek benodig, is die Lidmaatskapstatus.
 
 "membership" { "status" : "string", // een van "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Produkte word gegee as 'n array met 1 of meer produk-ID's van u netwerk. Let op, hierdie eindpunt skep nie produkte nie. Raadpleeg Ultimate Multisite se dokumentasie om die produk-skep-eindpunt beter te verstaan.
 
 **"products" : [1,2],**
 
-### Betaling
+### Betaling {#payment}
 
 Soos met Lidmaatskap, benodig ons net die status.
 
 **"payment" { "status" : "string", // een van "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 En om die liggaam te sluit, benodig ons die webwerf se URL en Titel, albei binne die Site-objek.
 
@@ -69,13 +69,13 @@ En om die liggaam te sluit, benodig ons die webwerf se URL en Titel, albei binne
 
 Die terugvoer van die register-eindpunt sal 'n array wees met die nuut geskepde lidmaatskapinligting.
 
-## 'n Aksie in Zapier Skep
+## 'n Aksie in Zapier Skep {#creating-an-action-in-zapier}
 
 Met die bekendstelling van hierdie nuwe en meer robuuste rekening-skep-eindpunt, sal u ook 'n nuwe aksie in Zapier sien.
 
 Weet u hoe om en om alles te geniet wat die nuwe weergawe van Zapier bied? Leer meer hier. (link?)
 
-### 'n Aksie Skep
+### 'n Aksie Skep {#creating-an-action}
 
 Om beter te illustreer hoe om die registrasie-eindpunt met Zapier te gebruik, kom ons skep 'n integrasie met Google Forms. Elke keer as hierdie form ingevul word en die inligting in die form se antwoordblad gestoor word, sal 'n nuwe lidmaatskap in die Ultimate Multisite netwerk geskep word.
 
@@ -105,7 +105,7 @@ Met die inligting opgestel, gaan voort na die finale toets. Op die laaste skerm 
 
 Toets u nuwe Zap en dit behoort suksesvol te voltooi. Indien enige fout voorkom, kyk al die velde na en of hulle korrek gestuur word. Aangesien daar baie inligting is, kan sommige dinge onopgemerk bly.
 
-### Volledige eindpuntparameters
+### Volledige eindpuntparameters {#complete-endpoint-parameters}
 
 Hier is die volledige oproep en al die moontlikhede van velde wat gestuur kan word.
 

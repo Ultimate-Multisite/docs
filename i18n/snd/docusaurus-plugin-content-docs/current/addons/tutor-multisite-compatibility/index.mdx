@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 هڪ WordPress پلگ اِن جيڪو multisite ماحولن ۾ Tutor LMS لاءِ compatibility درستگيون شامل ڪري ٿو.
 
-## وضاحت
+## وضاحت {#description}
 
 هي پلگ اِن WordPress multisite نيٽ ورڪن تي Tutor LMS هلائڻ لاءِ ضروري compatibility درستگيون فراهم ڪري ٿو. اهو صارف enrollment، instructor انتظام، ڪورس حدون، ۽ ٻيون multisite-مخصوص functionality سنڀالي ٿو.
 
-## خاصيتون
+## خاصيتون {#features}
 
 - **Database ٽيبل انتظام**: پاڻمرادو گم ٿيل Tutor LMS ٽيبلز کي سڃاڻي ۽ ٺاهي ٿو جيڪي multisite foreign key پابندين سبب ناڪام ٿين ٿيون
 - **Multisite صارف Enrollment**: نيٽ ورڪ سائيٽن ۾ صارف enrollment سنڀالڻ لاءِ custom AJAX handlers
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **Custom ايڊمن Views**: multisite-aware instructor فهرست ۽ انتظام interface
 - **ايڊمن اوزار**: نيٽ ورڪ ۽ سائيٽ administrators لاءِ database انتظام interface
 
-## گهرجون
+## گهرجون {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - WordPress Multisite installation
 - Ultimate Multisite پلگ اِن (ڪورس حدن جي functionality لاءِ)
 
-## انسٽاليشن
+## انسٽاليشن {#installation}
 
 1. پلگ اِن فائلون `/wp-content/plugins/tutor-multisite-compatibility/` تي upload ڪريو
 2. پڪ ڪريو ته Tutor LMS installed ۽ activated آهي
 3. WordPress ۾ 'Plugins' menu ذريعي پلگ اِن activate ڪريو
 4. پلگ اِن پاڻمرادو Tutor LMS سان integrate ٿيندو
 
-## فائل جوڙجڪ
+## فائل جوڙجڪ {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## MU plugin مان منتقل ڪيل Functionality
+## MU plugin مان منتقل ڪيل Functionality {#functionality-moved-from-mu-plugin}
 
 هي پلگ اِن اها functionality رکي ٿو جيڪا اڳ ۾ `wp-content/mu-plugins/daves.php` ۾ هئي:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - Multisite صارف enrollment سنڀالڻ
 - ڪورس product ID display
 
-## Database انتظام
+## Database انتظام {#database-management}
 
-### مسئلو
+### مسئلو {#the-problem}
 
 WordPress multisite ماحولن ۾، users ٽيبل ڏانهن foreign key پابندين وارن ٽيبلز لاءِ Tutor LMS ٽيبل ٺاهڻ ناڪام ٿئي ٿو. اهو ان ڪري ٿئي ٿو ڇاڪاڻ ته:
 
@@ -81,7 +81,7 @@ WordPress multisite ماحولن ۾، users ٽيبل ڏانهن foreign key پا
 - Foreign keys `wp_2_users` ڏانهن reference ڪن ٿيون (جيڪو موجود ناهي)
 - اصل users ٽيبل `wp_users` آهي (نيٽ ورڪ ۾ shared)
 
-### حل
+### حل {#the-solution}
 
 هي پلگ اِن پاڻمرادو:
 
@@ -92,13 +92,13 @@ WordPress multisite ماحولن ۾، users ٽيبل ڏانهن foreign key پا
    - نيٽ ورڪ ۾ نئين سائيٽ ٺاهڻ
    - ايڊمن interface ذريعي manual ٽيبل checking
 
-### متاثر ٿيل ٽيبلز
+### متاثر ٿيل ٽيبلز {#affected-tables}
 
 - `tutor_coupon_usages` - users ٽيبل ڏانهن foreign key رکي ٿو
 - `tutor_carts` - users ٽيبل ڏانهن foreign key رکي ٿو
 - `tutor_notification_preferences` - users ٽيبل ڏانهن foreign key سان TutorPro ٽيبل
 
-### ايڊمن Interface
+### ايڊمن Interface {#admin-interface}
 
 Database انتظام اوزارن تائين رسائي هتي حاصل ڪريو:
 
@@ -111,6 +111,6 @@ Interface توهان کي اجازت ڏئي ٿو ته:
 - database configuration check ڪريو
 - تفصيلي status معلومات ڏسو
 
-## Support
+## Support {#support}
 
 هي پلگ اِن خاص طور تي KursoPro platform لاءِ designed آهي. Technical support لاءِ، development team سان رابطو ڪريو.

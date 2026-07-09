@@ -3,13 +3,13 @@ title: 集成指南
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# 集成指南
+# 集成指南 {#integration-guide}
 
 本指南涵盖与 Ultimate Multisite 的常见集成模式，包括连接到外部服务、构建自定义支付网关，以及处理 webhooks。
 
 对于隔离的租户基础设施，请参阅 [Multi-Tenancy 集成](./multi-tenancy)，了解主权租户启动、迁移验证、SSO 和拆除指导。
 
-## CRM 集成
+## CRM 集成 {#crm-integration}
 
 当新客户注册时，将客户数据同步到你的 CRM：
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics 集成
+## Analytics 集成 {#analytics-integration}
 
 跟踪整个客户生命周期中的关键业务事件：
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## 下一步
+## 下一步 {#next-steps}
 
 - [自定义网关开发](./custom-gateway) — 构建你自己的支付网关
 - [Webhook 处理](./webhooks) — 创建自定义 webhook endpoints

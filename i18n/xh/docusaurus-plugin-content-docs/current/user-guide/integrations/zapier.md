@@ -3,7 +3,7 @@ title: Udibaniso lwe-Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ukudibanisa Ultimate Multisite ne Zapier
+# Ukudibanisa Ultimate Multisite ne Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Kwelinye lamanqaku, sixoxe nge [Webhooks](webhooks.md) nendlela enokusetyenziswa ngayo ukudibanisa nezicelo zamaqela esithathu.
 
@@ -15,7 +15,7 @@ Unokudala **Triggers** eziza kuqalisa xa iziganeko zisenzeka kwinethiwekhi yakho
 
 Oku kuyenzeka kuba **ii-trigger ze-Ultimate Multisite Zapier** kunye ne-actions zixhaswa yi [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Uqala njani
+## Uqala njani {#how-to-start}
 
 Okokuqala, khangela Ultimate Multisite kuluhlu lwe-app lwe-Zapier. Kungenjalo, unokucofa [eli khonkco](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Kumhlaba we-URL, faka i-URL epheleleyo yenethiwekhi yakho, kuquka iprothokholi (
 
 Cofa iqhosha **Yes, Continue** ukuze uye kwinyathelo elilandelayo. Ukuba yonke into isebenza kakuhle, kufuneka wamkelwe yi-account yakho entsha eqhagamshelweyo! Cofa **Continue** ukuze udale i-trigger entsha.
 
-## Uyidala njani i-Trigger entsha
+## Uyidala njani i-Trigger entsha {#how-to-create-a-new-trigger}
 
 Ngoku ekubeni i-account yakho iqhagamshelwe, ungabona iziganeko ezikhoyo. Masikhethe isiganeko **payment_received** kwesi sifundo.
 
@@ -67,7 +67,7 @@ Kwesi sigaba, Zapier iza kuvavanya ukuba i-Zap yakho ingakwazi **ukuzisa i-paylo
 
 Kwisifundo sethu uvavanyo **lugqitywe ngempumelelo** kwaye lubuyise ulwazi lomzekelo we-payload. Olu lwazi lomzekelo luya kuba luncedo ukusikhokela ngelixa sidala actions. I-trigger yakho ngoku idaliwe kwaye ilungele ukudityaniswa kwezinye izicelo.
 
-## Uyidala njani i-Actions
+## Uyidala njani i-Actions {#how-to-create-actions}
 
 Actions zisebenzisa ulwazi oluvela kwezinye ii-trigger ukudala amangeniso amatsha kwinethiwekhi yakho.
 
@@ -79,7 +79,7 @@ Kwinqanaba elilandelayo uza kudala uqinisekiso lwakho, kanye njengoko senzile ku
 
 ![Ukukhetha uqinisekiso lwe-action ye-Zapier](/img/admin/webhooks-list.png)
 
-### Ukuseta i-Action
+### Ukuseta i-Action {#setting-up-the-action}
 
 Eli **linyathelo eliphambili le-action** kwaye apha izinto zahluke kancinci. Ulwazi lokuqala oza kulukhetha yi **Item**. Item yi **modeli yolwazi** yenethiwekhi yakho efana no **Customers, Payments, Sites, Emails** nabanye.
 

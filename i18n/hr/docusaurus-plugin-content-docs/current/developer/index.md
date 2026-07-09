@@ -3,11 +3,11 @@ title: Dokumentacija za developere
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentacija za developere
+# Dokumentacija za developere {#developer-documentation}
 
 Ovaj vodič developerima pruža sve što je potrebno za integraciju s Ultimate Multisite, njegovo proširenje ili razvoj addona za njega. Ultimate Multisite pretvara WordPress Multisite mrežu u Website-as-a-Service (WaaS) platformu.
 
-## Što je dostupno
+## Što je dostupno {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Potpune CRUD operacije za sve entitete (kupce, web-mjesta, članstva, plaćanja, proizvode, domene) s autentifikacijom putem API ključa
 - **[Referenca za hooks](./hooks/guide)** — 200+ action hooks i 280+ filter hooks za događaje životnog ciklusa i prilagodbu
@@ -15,13 +15,13 @@ Ovaj vodič developerima pruža sve što je potrebno za integraciju s Ultimate M
 - **[Primjeri koda](./code-examples/)** — Napredni obrasci za dinamičko određivanje cijena, provisioniranje web-mjesta, prilagođena ograničenja i obradu s više pristupnika
 - **[Razvoj addona](./addon-development/getting-started)** — Strukturirani okvir za izgradnju addon pluginova
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - WordPress Multisite instalacija
 - PHP 7.4 ili noviji
 - Ultimate Multisite plugin aktiviran
 
-## Composer / Bedrock instalacija
+## Composer / Bedrock instalacija {#composer--bedrock-installation}
 
 Ultimate Multisite dostupan je na [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) kao `ultimate-multisite/ultimate-multisite`. Ovo je preporučena metoda instalacije za WordPress postavke temeljene na [Bedrock](https://roots.io/bedrock/) i druga okruženja kojima upravlja Composer.
 
@@ -45,15 +45,15 @@ Ili, ako učitavate plugin kao must-use plugin putem Bedrockova autoloadera, upo
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Brzi početak
+## Brzi početak {#quick-start}
 
-### Koristite REST API
+### Koristite REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Spojite se na događaje
+### Spojite se na događaje {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Izgradite addon
+### Izgradite addon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

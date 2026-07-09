@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# A Prime Vista fu Webhooks (v2)
+# A Prime Vista fu Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**ATTENZIONE: Nota li li sta questa funzione o l-artikolu għall-utenti ewliem.*_
 
@@ -11,7 +11,7 @@ Il-**webhook** huwa mod biex app jew software kif Ultimate Multisite jgħaddi in
 
 Dan huwa benefattxu biex għandek bżonn integrà o tgħallis dati speċifi min Ultimate Multisite għal CRM jew sistema oħra ma' ogni avveniment jipprovdi. Biex t-tħejjja, għall-um huma tfarri l-istmewla u l-indirizz email għall-lista ta mailing kbira ma' ogni creatur tal-kont njan.
 
-## Come tgħmli webhook
+## Come tgħmli webhook {#how-to-create-a-webhook}
 
 Biex tgħmli webhook, tqgli għad dashboard tal-network admin tiegħek. Ikli fuq **Ultimate Multisite > Webhooks > Add New Webhook.**
 

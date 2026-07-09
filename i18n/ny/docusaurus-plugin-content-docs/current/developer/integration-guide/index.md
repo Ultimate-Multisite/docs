@@ -3,13 +3,13 @@ title: Kalozera wa Kuphatikiza
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Kalozera wa Kuphatikiza
+# Kalozera wa Kuphatikiza {#integration-guide}
 
 Kalozerayu akufotokoza njira zofala zophatikizira ndi Ultimate Multisite, kuphatikizapo kulumikiza ku mautumiki akunja, kupanga ma payment gateway anu, ndi kusamalira ma webhook.
 
 Pa zomangamanga za tenant wodzipatula, onani [Kuphatikiza kwa Multi-Tenancy](./multi-tenancy) kuti mupeze malangizo a sovereign tenant bootstrap, kutsimikizira migration, SSO, ndi teardown.
 
-## Kuphatikiza kwa CRM
+## Kuphatikiza kwa CRM {#crm-integration}
 
 Gwirizanitsani deta ya makasitomala ku CRM yanu makasitomala atsopano akalembetsa:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Kuphatikiza kwa Analytics
+## Kuphatikiza kwa Analytics {#analytics-integration}
 
 Tsatirani zochitika zazikulu za bizinesi pa moyo wonse wa kasitomala:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Masitepe Otsatira
+## Masitepe Otsatira {#next-steps}
 
 - [Kupanga Custom Gateway](./custom-gateway) — Pangani payment gateway yanu
 - [Kusamalira ma Webhook](./webhooks) — Pangani ma endpoint a webhook anu

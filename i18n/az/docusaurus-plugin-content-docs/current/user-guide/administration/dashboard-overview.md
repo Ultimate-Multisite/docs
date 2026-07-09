@@ -3,11 +3,11 @@ title: Dashboard Baxışı
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Baxışı
+# Dashboard Baxışı {#dashboard-overview}
 
 Ultimate Multisite, Ultimate Multisite menyusunda xüsusi bir **Dashboard** (Nəzarət Paneli) təqdim edir və həm də Network Dashboard-a widgetlər əlavə edir. Bu məqalədə hər iki yerdə nə ilə qarşılaşacağınızı izah edirik.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite, **My Sites → Network Admin → Dashboard** yerində tapılan şəbəkə səviyyəli dashboard-a faydalı widgetlər əlavə edir.
 
@@ -35,7 +35,7 @@ Hər bir widgetin nə təqdim etdiyini aşağıda göstəririk:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Şəbəkə dashboard-u şəbəkə haqqında ümumi məlumat təqdim edərkən, Ultimate Multisite dashboard-u (Ultimate Multisite menyusunun yuxarı səviyyəsində) xidmət haqqında məlumat təqdim edir.
 

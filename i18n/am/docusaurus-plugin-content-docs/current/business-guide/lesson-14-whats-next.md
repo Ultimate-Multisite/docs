@@ -3,15 +3,15 @@ title: ትምህርት 14፡ ቀጣዩ ምን?
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# ትምህርት 14፡ ምን ቀጥሎ ይመጣል
+# ትምህርት 14፡ ምን ቀጥሎ ይመጣል {#lesson-14-what-comes-next}
 
 ከመ нуля የተገነባ ልዩ የድረ-ገጽ መድረክ (niche website platform) ፈጥረዋል። FitSite በሥራ ላይ ሲሆን፣ የአካል ብቃት ስቱዲዮዎችን እያገለገለ እና ተደጋጋሚ ገቢ እያመነ። ይህ የመጨረሻ ትምህርት ከዚህ በኋላ ወደ የት መሄድ እንዳለብን ይመልከታል።
 
-## የቆምነውበት ቦታ
+## የቆምነውበት ቦታ {#where-we-left-off}
 
 FitSite ደንበኞች፣ ሥራዎች እና የእድገት አቅጣጫ ያለው እየሰሩ ያለ ንግድ ነው። አሁን ቀጣዩ ምን እንደሆነ እንያስባለን።
 
-## ሙሉ የFitSite ኔትወርክ
+## ሙሉ የFitSite ኔትወርክ {#the-complete-fitsite-network}
 
 በ14 ትምህርቶች ውስጥ የገነባናቸውን ሁሉ እዚህ አቅርበናል፦
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## አማራጭ 1፡ በልዩው ክፍልዎ ውስጥ ጥልቀት ይስጡ
+## አማራጭ 1፡ በልዩው ክፍልዎ ውስጥ ጥልቀት ይስጡ {#option-1-go-deeper-in-your-niche}
 
 ወደ አዳዲስ ልዩ ክፍሎች (niches) ከመስፋትዎ በፊት፣ በአካል ብቃት (fitness) ውስጥ ጥልቀት ውስጥ መግባት ላይ ያስቡ፦
 
-### ንዑስ-ልዩ ክፍሎች (Sub-Niches)
+### ንዑስ-ልዩ ክፍሎች (Sub-Niches) {#sub-niches}
 
 - **የዮጋ ስቱዲዮዎች** -- ለmeditation፣ ለretreat እና ለworkshop ባህሪያት የተዘጋጁ ልዩ ቴምፕሌቶች
 - **የCrossFit ሳጥኖች** -- WOD መከታተያ፣ የውድድር ውጤቶች፣ የማህበረሰብ ባህሪያት
@@ -59,7 +59,7 @@ FitSite Network (Complete)
 
 እያንዳንዱ ንዑስ-ክፍል የራሱ ቴምፕሌቶች ሊኖረው ይችላል፣ እና በተመሳሳይ Ultimate Multisite ኔትትወርክ ላይ ሊሰራ የሚችል የራሱ ብራንድ ሊኖረው ይችላል።
 
-### የፕሪሚየም ባህሪያት (Premium Features)
+### የፕሪሚየም ባህሪያት (Premium Features) {#premium-features}
 
 የአካል ብቃት ስቱዲዮዎች ተጨማሪ ክፍያ የሚከፍሉባቸውን ባህሪያት ይገንቡ፦
 
@@ -68,14 +68,14 @@ FitSite Network (Complete)
 - **የአካል ብቃት ብሎግ ቴምፕሌቶች** -- ለየአካል ብቃት ይዘት ግብይት (content marketing) አስቀድሞ የተገነቡ የይዘት መዋቅሮች
 - **የማህበራዊ ሚዲያ ውህደት (Social media integration)** -- የክፍል መርሃግብሮችን እና ዝማኔዎችን በራስ-ሰር መለጠፍ
 
-### በጂኦግራፊያዊ ስፋት ማስፋት
+### በጂኦግራፊያዊ ስፋት ማስፋት {#geographic-expansion}
 
 በአካባቢው (locally) ከጀመሩ፣ ወደሚከተሉት ያሰፉ፦
 
 - በሀገርዎ ውስጥ ያሉ ሌሎች ከተሞች
 - ሌሎች አገሮች (ባለብዙ ቋንቋዎችን ለመደገፍ የUltimate Multisiteን [የአካባቢ አቀማመጥ ባህሪያት](/user-guide/localization/translating) ይጠቀሙ)
 
-## አማራጭ 2፡ ወደ ተያያዥ ልዩ ክፍሎች ማስፋት
+## አማራጭ 2፡ ወደ ተያያዥ ልዩ ክፍሎች ማስፋት {#option-2-expand-to-adjacent-niches}
 
 ለአካል ብቃት ስቱዲዮዎች የሰሩት ሂደት ለማንኛውም ልዩ ክፍል ይሰራል። ሁለተኛው ልዩ ክፍልዎ ቀላል ነው ምክንያቱም ቀድም ስለያዙት ነገር አለ፦
 
@@ -83,7 +83,7 @@ FitSite Network (Complete)
 - የአሠራር ልምድ (operational experience)
 - የተረጋገጠ የሥራ መመሪያ (proven playbook)
 
-### ለአካል ብቃት ተያያዥ ልዩ ክፍሎች
+### ለአካል ብቃት ተያያዥ ልዩ ክፍሎች {#adjacent-niches-to-fitness}
 
 - **ጤና እና ስፓ (Wellness and spa)** -- የልብ ስርጭት ባለሙያዎች፣ የዕለት ስፓዎች፣ የጤና ማዕከላት
 - **የስፖርት ክለቦች (Sports clubs)** -- የአማተር የስፖርት ቡድኖች፣ ሊጎች፣ የመዝናኛ ክለቦች
@@ -91,7 +91,7 @@ FitSite Network (Complete)
 
 እነዚህ ከአካል ብቃት ጋር የደንበኛ መደራረብ ስላላቸው፣ የግብይት እና የሽርክና ስራዎ ሊተላለፍ ይችላል።
 
-### ሙሉ በሙሉ አዲስ ልዩ ክፍሎች
+### ሙሉ በሙሉ አዲስ ልዩ ክፍሎች {#completely-new-niches}
 
 በትምህርት 2 ላይ ካለው ማዕቀፍ (framework) በመጠቀም ማንኛውንም ልዩ ክፍል ለመገምገም ይጠቀሙ፦
 
@@ -108,7 +108,7 @@ FitSite Network (Complete)
 
 የመድረክ መሠረተ ልማት፣ ክፍያ እና የአሠራር ሂደቶች ግን ተመሳሳይ ናቸው።
 
-## አማራጭ 3፡ የመድረኮች መድረክ መገንባት
+## አማራጭ 3፡ የመድረኮች መድረክ መገንባት {#option-3-build-a-platform-of-platforms}
 
 በስፋት ደረጃ (at scale)፣ በአንድ Ultimate Multisite ኔትወርክ ላይ በርካታ ልዩ የብራንድ ስምዎችን ማስኬድ ይችላሉ፦
 
@@ -118,11 +118,11 @@ FitSite Network (Complete)
 
 እያንዳንዱ ብራንድ የራሱ ቴምፕሌቶች፣ ዕቅዶች እና ግብይት አለው፣ ነገር ግን መሠረተ ልማት፣ ክፍያ እና የአሠራር ሂደቶችን ይጋራሉ። የUltimate Multisite ኢኮኖሚክስ እዚህ ነው ኃይለኛ የሚሆነው — አንድ መድረክ፣ ብዙ ዘርፎች።
 
-### ባለብዙ ኔትወርክ (Multi-Network)
+### ባለብዙ ኔትወርክ (Multi-Network) {#multi-network}
 
 በልዩ ክፍሎች መካከል ሙሉ መለያየት (complete separation) ከፈለጉ፣ ከአንድ ተከላ (single installation) ብዙ WordPress ኔትወርኮችን የሚያስኬድ [Multi-Network addon](/addons/multinetwork) ላይ ያስቡ።
 
-## አማራጭ 4፡ ንግዱን መሸጥ
+## አማራጭ 4፡ ንግዱን መሸጥ {#option-4-sell-the-business}
 
 ተደጋጋሚ ገቢ፣ ዝቅተኛ የደንበኛ መውጣት (low churn) እና ግልጽ የገበያ ቦታ ያለው ልዩ የድረ-ገጽ መድረክ ዋጋ ያለው ንብረት ነው። SaaS ንግዶች በአጠቃላይ ከዓመታዊ ገቢቸው 3-5 እጥፍ ይሸጣሉ።
 
@@ -134,7 +134,7 @@ FitSite Network (Complete)
 
 ይህ የተረጋገጠ ውጤት ባይሆንም፣ በደንብ በተሠራ ልዩ መድረክ ላይ ሊገኝ የሚችል እውነታዊ ውጤት ነው።
 
-## ምን ተምረዋል
+## ምን ተምረዋል {#what-you-have-learned}
 
 ይህ ኮርስ ሊደገም የሚችል ሂደት አስተምሮዎታል፦
 
@@ -150,8 +150,8 @@ FitSite Network (Complete)
 
 ልዩ ክፍሉ ስትራቴጂው ነው። መድረኩ ደግሞ መሣሪያው ነው። Ultimate Multisite መሣሪያውን Possible ያደርገዋል። የልዩ ክፍሉን ግንዛቤዎ እሱን ዋጋ ያለው ያደርገዋል።
 
-## መገንባቱ ይጀምሩ
+## መገንባቱ ይጀምሩ {#start-building}
 
-ከFitSite ጋር ተከታትለው ከሆነ፣ እየሰሩ ያለ መድረክ አለዎት። የራሳችሁን ልዩ ክፍል ለማግኘት እስከመጨረሻው ካነበቡ፣ ወደ [ትምህርት 2፡ ልዩ ክፍልዎን መምረጥ](/lesson-2-picking-your-niche) ይመልሱ እና ለመረጡት ዘርፍ ሂደቱን ይጀምሩ።
+ከFitSite ጋር ተከታትለው ከሆነ፣ እየሰሩ ያለ መድረክ አለዎት። የራሳችሁን ልዩ ክፍል ለማግኘት እስከመጨረሻው ካነበቡ፣ ወደ [ትምህርት 2፡ ልዩ ክፍልዎን መምረጥ](lesson-2-picking-your-niche) ይመልሱ እና ለመረጡት ዘርፍ ሂደቱን ይጀምሩ።
 
 ለመጀመር ምርጥ ጊዜ ትላንት ነበር። ሁለተኛ ምርጥ ጊዜ ደግሞ አሁን ነው።

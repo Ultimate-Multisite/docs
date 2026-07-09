@@ -3,7 +3,7 @@ title: Multisite-oppsettsveiviser
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Veiviser for oppsett av Multisite
+# Veiviser for oppsett av Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite inkluderer en innebygd veiviser som automatisk konverterer en standard WordPress-installasjon til et WordPress Multisite-nettverk. Dette gjør at du slipper å redigere `wp-config.php` manuelt eller kjøre databasekommandoer.
 
@@ -11,13 +11,13 @@ Ultimate Multisite inkluderer en innebygd veiviser som automatisk konverterer en
 Hvis WordPress-installasjonen din allerede kjører som et Multisite-nettverk, kan du hoppe over dette steget. Veiviseren vises kun når Multisite ikke er aktivert.
 :::
 
-## Når vises veiviseren?
+## Når vises veiviseren? {#when-does-the-wizard-appear}
 
 Når du aktiverer Ultimate Multisite på en standard WordPress-installasjon (uten Multisite), oppdager utvidelsen at Multisite ikke er aktivert og omdirigerer deg automatisk til veiviseren for Multisite-oppsett i stedet for den vanlige oppsettsveiviseren.
 
 Du kan også gå direkte til **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Forutsetninger
+## Forutsetninger {#prerequisites}
 
 Før du kjører veiviseren, må du sørge for at:
 
@@ -29,7 +29,7 @@ Før du kjører veiviseren, må du sørge for at:
 Veiviseren endrer `wp-config.php`-filen din og oppretter nye databasetabeller. Ta alltid en sikkerhetskopi før du fortsetter.
 :::
 
-## Steg 1: Velkommen
+## Steg 1: Velkommen {#step-1-welcome}
 
 Den første skjermen forklarer hva WordPress Multisite er og hva veiviseren vil gjøre:
 
@@ -42,11 +42,11 @@ Den første skjermen forklarer hva WordPress Multisite er og hva veiviseren vil 
 
 Klikk **Fortsett** for å gå videre.
 
-## Steg 2: Nettverkskonfigurasjon
+## Steg 2: Nettverkskonfigurasjon {#step-2-network-configuration}
 
 I dette steget konfigurerer du nettverksinnstillingene dine.
 
-### Nettstedsstruktur
+### Nettstedsstruktur {#site-structure}
 
 Velg hvordan nettstedene i nettverket ditt skal organiseres:
 
@@ -57,11 +57,11 @@ Velg hvordan nettstedene i nettverket ditt skal organiseres:
 Hvis du velger underdomener, må du konfigurere **wildcard DNS** og et **wildcard SSL-sertifikat** for domenet ditt. De fleste administrerte WordPress-verter håndterer dette automatisk. Se [Ultimate Multisite 101](./ultimate-multisite-101) for en detaljert sammenligning.
 :::
 
-### Nettverkstittel
+### Nettverkstittel {#network-title}
 
 Skriv inn et navn for nettverket ditt. Dette settes som standard til gjeldende nettstedstittel med «Network» lagt til. Du kan endre dette senere i nettverksinnstillingene.
 
-### E-post for nettverksadministrator
+### E-post for nettverksadministrator {#network-admin-email}
 
 E-postadressen som brukes for nettverksadministrasjonsvarsler. Denne settes som standard til e-postadressen til den nåværende brukeren.
 
@@ -69,7 +69,7 @@ E-postadressen som brukes for nettverksadministrasjonsvarsler. Denne settes som 
 
 Når du har fylt inn feltene, klikker du **Fortsett** for å gå videre.
 
-## Steg 3: Installasjon
+## Steg 3: Installasjon {#step-3-installation}
 
 Klikk på **Installer**-knappen for å starte. Veiviseren utfører fem automatiserte steg i rekkefølge, og hvert steg viser fremdriften i sanntid:
 
@@ -96,7 +96,7 @@ Når alle steg er fullført, vil du se en grønn «Fullført!»-status for hvert
 
 Veiviseren vil deretter automatisk gå videre til fullføringsskjermen.
 
-## Steg 4: Fullført
+## Steg 4: Fullført {#step-4-complete}
 
 Når installasjonen er fullført, vil du se en suksessmelding som bekrefter at WordPress Multisite er aktivert.
 
@@ -108,7 +108,7 @@ Du kan nå fortsette med Ultimate Multisite-oppsettsveiviseren for å konfigurer
 Etter at multisite-installasjonen er fullført, vil nettleseren din omdirigere gjennom den nylig aktiverte nettverksadministrasjonen. Du må kanskje logge inn på nytt siden autentiseringsinformasjonskapslene oppdateres for multisite-miljøet.
 :::
 
-## Manuelt oppsett som alternativ
+## Manuelt oppsett som alternativ {#manual-setup-fallback}
 
 Hvis veiviseren ikke kan skrive til `wp-config.php`-filen din (på grunn av filtillatelser eller serverbegrensninger), vil den vise den nøyaktige koden du må legge til manuelt:
 
@@ -117,9 +117,9 @@ Hvis veiviseren ikke kan skrive til `wp-config.php`-filen din (på grunn av filt
 
 Etter at du har gjort de manuelle endringene, oppdaterer du siden, og veiviseren vil oppdage at multisite nå er aktivt.
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### Veiviseren sier at wp-config.php ikke er skrivbar
+### Veiviseren sier at wp-config.php ikke er skrivbar {#the-wizard-says-wp-configphp-is-not-writable}
 
 Webserverprosessen trenger skrivetilgang til `wp-config.php`-filen. Du kan enten:
 
@@ -127,7 +127,7 @@ Webserverprosessen trenger skrivetilgang til `wp-config.php`-filen. Du kan enten
 - Bruke instruksjonene for manuelt oppsett som veiviseren viser
 - Be hostingleverandøren din om hjelp
 
-### Nettsteder er ikke tilgjengelige etter oppsett (underdomener)
+### Nettsteder er ikke tilgjengelige etter oppsett (underdomener) {#sites-are-not-accessible-after-setup-subdomains}
 
 Hvis du valgte underdomenestruktur, må du konfigurere **wildcard DNS** for domenet ditt. Legg til en DNS-post:
 
@@ -139,7 +139,7 @@ Verdi: [din server-IP]
 
 Sjekk med hostingleverandøren din hvis du er usikker på hvordan du konfigurerer dette.
 
-### Autentiseringsproblemer etter oppsett
+### Autentiseringsproblemer etter oppsett {#authentication-issues-after-setup}
 
 Hvis du blir logget ut eller opplever feil med informasjonskapsler etter multisite-oppsettet:
 
@@ -147,7 +147,7 @@ Hvis du blir logget ut eller opplever feil med informasjonskapsler etter multisi
 2. Logg inn igjen på `dittdomene.no/wp-login.php`
 3. Hvis problemet vedvarer, sjekk at `wp-config.php` ikke har `COOKIE_DOMAIN` satt til `false` — dette er et kjent problem på underdomene-multisite-installasjoner
 
-### Et steg feilet under installasjonen
+### Et steg feilet under installasjonen {#a-step-failed-during-installation}
 
 Hvis ett av installasjonstegene viser en feil:
 

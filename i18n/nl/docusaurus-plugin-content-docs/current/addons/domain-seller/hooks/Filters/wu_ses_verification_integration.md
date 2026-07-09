@@ -4,7 +4,7 @@ title: Filter - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filter: wu_ses_verification_integration
+# Filter: wu_ses_verification_integration {#filter-wusesverificationintegration}
 
 Filter: laat andere code het SES-integratieobject verstrekken.
 
@@ -13,15 +13,15 @@ Het geretourneerde object moet de volgende methoden implementeren:
 - `check_domain_verification(string $domain): array{verified: bool}\|WP_Error`
 - `delete_identity(string $domain): true\|WP_Error`
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $integration | `object\|null` | Het SES-integratieobject, of null. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.2.0
-### Bron
+### Bron {#source}
 
 Geïndefinieerd in [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L731) op regel 731

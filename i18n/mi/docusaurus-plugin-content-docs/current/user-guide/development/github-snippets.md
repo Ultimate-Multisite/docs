@@ -3,7 +3,7 @@ title: Kōrero GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# He aha te whakamahi o ngā snippets Ultimate Multisite i tō repository GitHub
+# He aha te whakamahi o ngā snippets Ultimate Multisite i tō repository GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 He snippet (code) mō te pūtaiao e tino whai te whakamahi e ngā mea e whai i Ultimate Multisite, ko te mea he tino whai te hiahia i te whakamahi i āhuatanga iti, ahau e whakaatu ana i te mea he te whakamahi o script Google Analytics ki ngā puta mai (sign-up pages) me te whakaatu i te meta box (meta box) mō te admin dashboard.
 
@@ -19,7 +19,7 @@ He wahi rua mo te whakamahi i tēnei code:
 
   2. Must-Use Plugins (mu-plugins)
 
-# He aha te whakamahi i te snippet ki te file functions.php o tō theme.
+# He aha te whakamahi i te snippet ki te file functions.php o tō theme. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Whakawhiti atu ki te admin dashboard o tō WordPress Network me wahi Themes > Theme Editor (Mā te whakaahua i runga i).
 
@@ -29,7 +29,7 @@ He wahi rua mo te whakamahi i tēnei code:
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# He aha te whakamahi o Must-Use Plugins (mu-plugins)
+# He aha te whakamahi o Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 He āhuatanga o WordPress e hiahia ana ki a koe kia whakauru āhuatanga mō te tino whai, ko "Must-Use Plugins", ahau e whakatō i te ingoa "mu-plugins" he mea nui.
 

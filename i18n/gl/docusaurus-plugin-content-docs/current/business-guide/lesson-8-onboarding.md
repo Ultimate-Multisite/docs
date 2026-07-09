@@ -3,15 +3,15 @@ title: 'Lección 8: Incorporación de clientes'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lección 8: Incorporación de clientes
+# Lección 8: Incorporación de clientes {#lesson-8-customer-onboarding}
 
 Conseguir que un cliente se rexistre é só a metade do traballo. Se inicia sesión, se sente desbordado e nunca volve, perdíchelo. Esta lección deseña a experiencia que converte un novo rexistro nun cliente activo e implicado.
 
-## Onde o deixamos
+## Onde o deixamos {#where-we-left-off}
 
 FitSite está completamente adaptado á marca cun fluxo de compra funcional. Agora centrámonos no que ocorre despois de que o propietario dun estudo de fitness complete o rexistro e chegue ao seu novo sitio por primeira vez.
 
-## Por que importa a incorporación
+## Por que importa a incorporación {#why-onboarding-matters}
 
 Os primeiros 30 minutos despois do rexistro determinan se un cliente queda ou abandona. Un propietario dun estudo de fitness que:
 
@@ -21,9 +21,9 @@ Os primeiros 30 minutos despois do rexistro determinan se un cliente queda ou ab
 
 Os teus modelos de nicho (Lección 4) xestionan o primeiro punto. Esta lección xestiona o segundo.
 
-## A experiencia do primeiro inicio de sesión
+## A experiencia do primeiro inicio de sesión {#the-first-login-experience}
 
-### Widget Dashboard de benvida
+### Widget Dashboard de benvida {#welcome-dashboard-widget}
 
 Crea un widget Dashboard personalizado que saude os novos clientes e os guíe pola configuración. Isto debería aparecer de forma destacada cando inicien sesión por primeira vez.
 
@@ -37,7 +37,7 @@ Crea un widget Dashboard personalizado que saude os novos clientes e os guíe po
 
 Cada paso enlaza directamente coa páxina ou axuste relevante. Sen ter que buscar polos menús.
 
-### Simplifica o Dashboard
+### Simplifica o Dashboard {#simplify-the-dashboard}
 
 Os novos clientes non necesitan ver todos os elementos do menú de WordPress. Considera:
 
@@ -47,29 +47,29 @@ Os novos clientes non necesitan ver todos os elementos do menú de WordPress. Co
 
 O addon [Plugin & Theme Manager](/addons/plugin-and-theme-manager) pode axudar a controlar o que ven os clientes.
 
-## Secuencia de correos electrónicos de benvida
+## Secuencia de correos electrónicos de benvida {#welcome-email-sequence}
 
 Un único correo electrónico de benvida non é suficiente. Configura unha secuencia que guíe os clientes durante a súa primeira semana:
 
-### Correo electrónico 1: Benvida (inmediatamente despois do rexistro)
+### Correo electrónico 1: Benvida (inmediatamente despois do rexistro) {#email-1-welcome-immediately-after-signup}
 
 - Asunto: "Benvido a FitSite -- a web do teu estudo xa está activa"
 - Contido: ligazón de inicio de sesión, pasos de inicio rápido, ligazón a recursos de axuda
 - Ton: entusiasta, alentador, específico de fitness
 
-### Correo electrónico 2: Logros rápidos (Día 1)
+### Correo electrónico 2: Logros rápidos (Día 1) {#email-2-quick-wins-day-1}
 
 - Asunto: "3 cousas que facer primeiro no teu FitSite"
 - Contido: engade o teu logotipo, actualiza a imaxe principal da páxina de inicio, engade o teu horario de clases
 - Inclúe capturas de pantalla que mostren exactamente onde facer clic
 
-### Correo electrónico 3: Faino teu (Día 3)
+### Correo electrónico 3: Faino teu (Día 3) {#email-3-make-it-yours-day-3}
 
 - Asunto: "Fai que o teu sitio de fitness destaque"
 - Contido: personaliza as cores, engade fotos dos adestradores, escribe a historia do teu estudo
 - Ligazón a exemplos de grandes sitios de fitness na plataforma
 
-### Correo electrónico 4: Poñelo en marcha (Día 7)
+### Correo electrónico 4: Poñelo en marcha (Día 7) {#email-4-go-live-day-7}
 
 - Asunto: "Listo para compartir o teu FitSite co mundo?"
 - Contido: lista de comprobación do que verificar antes de compartilo, como conectar un dominio personalizado (se está en Growth/Pro), consellos para compartir en redes sociais
@@ -78,11 +78,11 @@ Un único correo electrónico de benvida non é suficiente. Configura unha secue
 Usa [Webhooks](/user-guide/integrations/webhooks) ou [Zapier](/user-guide/integrations/zapier) para activar estes correos electrónicos a través da túa plataforma de marketing por correo electrónico. Isto dáche máis control sobre os tempos e permíteche facer seguimento da interacción.
 :::
 
-## Recursos de axuda
+## Recursos de axuda {#help-resources}
 
 Crea contido de axuda específico do nicho que responda ás preguntas que realmente fan os propietarios de estudos de fitness:
 
-### Artigos da base de coñecemento
+### Artigos da base de coñecemento {#knowledge-base-articles}
 
 - "Como actualizar o teu horario de clases"
 - "Engadir e editar perfís de adestradores"
@@ -92,7 +92,7 @@ Crea contido de axuda específico do nicho que responda ás preguntas que realme
 
 Escríbeos para usuarios non técnicos. Usa capturas de pantalla. Evita a xerga de WordPress.
 
-### Vídeos guiados
+### Vídeos guiados {#video-walkthroughs}
 
 Gravacións de pantalla curtas (2-3 minutos) que mostren:
 
@@ -103,7 +103,7 @@ Gravacións de pantalla curtas (2-3 minutos) que mostren:
 
 Non teñen que ser producións pulidas. O que importa é que sexan claros, útiles e específicos do nicho.
 
-## A páxina Account
+## A páxina Account {#the-account-page}
 
 Ultimate Multisite inclúe unha [páxina Account](/user-guide/client-management/account-page) orientada ao cliente onde os clientes xestionan a súa subscrición. Personalízaa para:
 
@@ -112,7 +112,7 @@ Ultimate Multisite inclúe unha [páxina Account](/user-guide/client-management/
 - Proporcionar historial de facturación e descargas de facturas
 - Ligar a recursos de axuda
 
-## Medir o éxito da incorporación
+## Medir o éxito da incorporación {#measuring-onboarding-success}
 
 Fai seguimento destes indicadores para saber se a túa incorporación está funcionando:
 
@@ -121,7 +121,7 @@ Fai seguimento destes indicadores para saber se a túa incorporación está func
 - **Tickets de soporte de novos clientes**: Un volume alto significa que a túa incorporación ten lagoas
 - **Conversión de proba a pago**: Se ofreces probas, que porcentaxe converte?
 
-## A rede FitSite ata agora
+## A rede FitSite ata agora {#the-fitsite-network-so-far}
 
 ```
 Rede FitSite
@@ -142,7 +142,7 @@ Rede FitSite
 └── Listo para a estratexia de prezos (seguinte lección)
 ```
 
-## O que construímos nesta lección
+## O que construímos nesta lección {#what-we-built-this-lesson}
 
 - **Unha experiencia guiada de primeiro inicio de sesión** cun widget de inicio rápido
 - **Un Dashboard simplificado** centrado en tarefas de xestión de sitios de fitness

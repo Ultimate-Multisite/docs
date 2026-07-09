@@ -3,11 +3,11 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisiten kääntäminen
+# Ultimate Multisiten kääntäminen {#translating-ultimate-multisite}
 
 Ultimate Multisite on kehitetty englanniksi, mutta plugin on täysin käännettävä ja me tervetulleet aktiivisesti käännöksien panoksia.
 
-## Ydinplugin-käännöksiä
+## Ydinplugin-käännöksiä {#core-plugin-translations}
 
 Ydin Ultimate Multisite -plugin käännetään virallisella **WordPress.org kääntämisialustalla**:
 
@@ -24,7 +24,7 @@ Tämä on standardi WordPress -yhteisön käännössystem. Kun käännökset saa
 
 Jos haluat tulla käännöseditoriksi kielesi puolesta (kykenee hyväksymään käännökset), ota yhteyttä [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) -kanavalla.
 
-## Lisäosien kääntäminen
+## Lisäosien kääntäminen {#addon-translations}
 
 Lisäosat käännetään erikseen seuraamalla:
 
@@ -32,11 +32,11 @@ Lisäosat käännetään erikseen seuraamalla:
 
 Lisäosien käännökset ovat tällä hetkellä tekoälyn tuottamia lähtökohtia. Ne kattavat kaikki tuetut kielet, mutta niissä voi olla epäluonnollisia lauserakenteita tai virheitä. Me tervetulleet ihmiskäännössiirtoihin tarkastelemaan ja ehdottamaan parannuksia tekeäkseen niistä luontevampia ja tarkempia.
 
-## Paikalliset käännökset
+## Paikalliset käännökset {#local-translations}
 
 Jos haluat luoda käännöksiä paikallisesti omalle projektillesi sen sijaan, että osallistuisit ylävirtaan (upstream), sinulla on kaksi vaihtoehtoa:
 
-### Poeditin käyttö
+### Poeditin käyttö {#using-poedit}
 
 Voit käyttää työpöytäsovellusta **[Poedit](https://poedit.net)** `.pot`-tiedoston käännökseen:
 
@@ -46,6 +46,6 @@ Voit käyttää työpöytäsovellusta **[Poedit](https://poedit.net)** `.pot`-ti
 4. Tallenna -- Poedit luo `.po`- ja `.mo`-tiedostot
 5. Aseta tuotetiedostot `lang`-kansioon
 
-### Loco Translate
+### Loco Translate {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress -lisäosa antaa sinulle mahdollisuuden käännettä suoraan hallintapaneelista ilman erillisiä työkaluja. Se hoitaa käännöstoprosessin ja luo sekä käännöstopisteet että kootut tiedostot puolestasi.

@@ -3,7 +3,7 @@ title: Gestión de Sitios
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Gestionando Sitios
+# Gestionando Sitios {#managing-sites}
 
 Los sitios (o subsitios) son el núcleo de tu negocio WaaS. Ultimate Multisite tiene 3 tipos de sitios:
 
@@ -11,13 +11,13 @@ Los sitios (o subsitios) son el núcleo de tu negocio WaaS. Ultimate Multisite t
 - **Site Templates** — Sitios predefinidos que los clientes pueden seleccionar como punto de partida
 - **Main Site** — Tu sitio principal de la red
 
-## Visualizando Sitios
+## Visualizando Sitios {#viewing-sites}
 
 Navega a **Ultimate Multisite → Sites** para ver todos los subsitios en tu red. Cada sitio está etiquetado por tipo y puedes filtrar por All Sites, Customer-Owned, Templates, o Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Añadiendo un Nuevo Sitio
+## Añadiendo un Nuevo Sitio {#adding-a-new-site}
 
 Haz clic en el botón **Add Site** para crear un nuevo sitio. Necesitarás proporcionar:
 
@@ -27,15 +27,15 @@ Haz clic en el botón **Add Site** para crear un nuevo sitio. Necesitarás propo
 
 La opción **Copy Site** te permite crear un nuevo sitio basado en una plantilla de sitio existente. Cuando está habilitada, puedes seleccionar qué plantilla usar como punto de partida. Asegúrate de que **Copy Media on Duplication** esté habilitada para incluir archivos multimedia.
 
-## Gestionando un Sitio Existente
+## Gestionando un Sitio Existente {#managing-an-existing-site}
 
 Haz clic en **Manage** en cualquier sitio para abrir la página **Edit Site**. Aquí encontrarás:
 
-### Información Básica
+### Información Básica {#basic-information}
 
 El nombre del sitio, tipo, ID del sitio y descripción. También verás el dominio mapeado, la membresía asociada y la cuenta de cliente que posee el sitio.
 
-### Opciones del Sitio
+### Opciones del Sitio {#site-options}
 
 Configura las capacidades y límites del sitio:
 
@@ -47,7 +47,7 @@ Configura las capacidades y límites del sitio:
 
 Por defecto, los sitios siguen los límites establecidos a nivel de membresía. Establecer límites a nivel de sitio anulará la configuración de la membresía.
 
-### Asociaciones
+### Asociaciones {#associations}
 
 Debajo de las opciones del sitio encontrarás información sobre:
 
@@ -55,7 +55,7 @@ Debajo de las opciones del sitio encontrarás información sobre:
 - **Membership** bajo la cual se encuentra el sitio
 - **Customer account** vinculado al sitio
 
-### Barra Lateral Derecha
+### Barra Lateral Derecha {#right-sidebar}
 
 En el lado derecho puedes:
 

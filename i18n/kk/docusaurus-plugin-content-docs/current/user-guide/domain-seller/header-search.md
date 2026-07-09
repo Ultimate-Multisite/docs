@@ -3,11 +3,11 @@ title: Тақырыптағы доменді іздеу
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search
+# Header Domain Search {#header-domain-search}
 
 Бұл баптауды домен іздеуді бастайтын шағын header формасы қажет болғанда пайдаланыңыз; содан кейін клиент Ultimate Multisite checkout ішінде қолжетімді домендерден таңдай алады.
 
-## Талаптар
+## Талаптар {#requirements}
 
 - Ultimate Multisite желіде белсенді.
 - Multisite Ultimate Domain Seller желіде белсенді.
@@ -16,7 +16,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
   - Қолдау көрсетілетін TLD-лер бапталған, мысалы `com`, `net` және `org`.
 - **Domain Selection** өрісі бар жарамды checkout формасы.
 
-## Checkout формасы
+## Checkout формасы {#checkout-form}
 
 1. Тіркеу беті пайдаланатын checkout формасын жасаңыз немесе өңдеңіз.
 2. Қалыпты міндетті checkout/account өрістерін, соның ішінде **Username** өрісін қосыңыз. Тек домен өрісінен тұратын checkout формасын Ultimate Multisite тексеруі қабылдамайды.
@@ -30,7 +30,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 [wu_checkout slug="domain-form"]
 ```
 
-## Header формасы
+## Header формасы {#header-form}
 
 Сайт header-іне енгізілген іздеу сөзін checkout бетіне `domain_name` ретінде жіберетін шағын `GET` формасын қосыңыз:
 
@@ -44,7 +44,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 
 Пайдаланушы header JavaScript ішінде доменді алдын ала таңдамаңыз. Header тек іздеу сөзін ғана жіберуі керек. Domain Seller checkout скрипті `?domain_name=example` мәнін оқиды, checkout іздеу жолағын толтырады және қолжетімділікті іздеуді іске қосады, сонда клиент қайтарылған домендерден таңдай алады.
 
-## Күтілетін әрекет
+## Күтілетін әрекет {#expected-behaviour}
 
 Header ішінде `example` іздеу мынаны ашуы керек:
 
@@ -61,7 +61,7 @@ Header ішінде `example` іздеу мынаны ашуы керек:
 
 Қолжетімді нәтижені таңдағаннан кейін, тапсырыс қорытындысында домен тіркеу өнімі және таңдалған домен аты болуы керек.
 
-## Тексеру
+## Тексеру {#verification}
 
 1. Басты бетті ашыңыз.
 2. Жалаң атты іздеңіз, мысалы `example`.
@@ -71,7 +71,7 @@ Header ішінде `example` іздеу мынаны ашуы керек:
 6. Қолжетімді домен үшін **Select** түймесін басыңыз.
 7. Тапсырыс қорытындысында `Domain Registration - example.com` немесе таңдалған домен бар екенін растаңыз.
 
-## Ақауларды жою
+## Ақауларды жою {#troubleshooting}
 
 - Егер тізім пайда болмаса, браузердің network қойындысында `admin-ajax.php?action=wu_domain_search` бар-жоғын тексеріп, оның бос емес `domains` немесе `results` қайтаратынын растаңыз.
 - Егер checkout формасы сақтау кезінде тексеруден өтпесе, **Username** сияқты міндетті account өрістерін қосыңыз.

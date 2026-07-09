@@ -3,13 +3,13 @@ title: Integrationsleitfaden
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrationsleitfaden
+# Integrationsleitfaden {#integration-guide}
 
 Dieser Leitfaden behandelt gängige Integrationsmuster mit Ultimate Multisite, einschließlich der Anbindung an externe Dienste, der Erstellung eigener Zahlungsgateways und der Verarbeitung von Webhooks.
 
 Für isolierte Mandanteninfrastruktur siehe [Multi-Tenancy-Integration](./multi-tenancy) für Anleitungen zu souveränem Mandanten-Bootstrap, Migrationsverifizierung, SSO und Teardown.
 
-## CRM-Integration
+## CRM-Integration {#crm-integration}
 
 Synchronisiere Kundendaten mit deinem CRM, wenn sich neue Kunden registrieren:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics-Integration
+## Analytics-Integration {#analytics-integration}
 
 Verfolge wichtige Geschäftsereignisse über den gesamten Kundenlebenszyklus hinweg:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
 - [Entwicklung eines eigenen Gateways](./custom-gateway) — Erstelle dein eigenes Zahlungsgateway
 - [Webhook-Verarbeitung](./webhooks) — Erstelle eigene Webhook-Endpunkte

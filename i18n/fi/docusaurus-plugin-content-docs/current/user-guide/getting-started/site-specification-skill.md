@@ -3,11 +3,11 @@ title: Sivuston määrittelytaito
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sivustiedon taito
+# Sivustiedon taito {#site-specification-skill}
 
 **Sivustiedon taito** on rakennettu lähestymistapa sivustosi tavoitteiden, yleisön ja bränditunnisteen tallentamiseen. Tämä tieto tallennetaan **site_brief** -muistiisi, jota agentit viittaavat eri istunnoissa tarjotakseen johdonmukaista, kontekstia ymmärtävää apua.
 
-## Mitä sivustiedon taito on?
+## Mitä sivustiedon taito on? {#what-is-site-specification}
 
 Sivustiedon taito on prosessi, jossa dokumentoidaan:
 
@@ -19,9 +19,9 @@ Sivustiedon taito on prosessi, jossa dokumentoidaan:
 
 Tämä tiedosto muuttuu sinun **site_brief** -muistiksi, pysyvänä muistina, jota agentit käyttävät ymmärtääksessään sivustosi kontekstia.
 
-## Miksi käyttää sivustiedon taitoa?
+## Miksi käyttää sivustiedon taitoa? {#why-use-site-specification}
 
-### Yhtenäisyys istuntojen välillä
+### Yhtenäisyys istuntojen välillä {#consistency-across-sessions}
 
 Ilman site_briefiä sinun pitäisi selittää sivustosi tarkoitusta uudelleen joka kerta, kun aloitat uuden istunnon. Sen avulla agentit ymmärtävät heti:
 
@@ -30,7 +30,7 @@ Ilman site_briefiä sinun pitäisi selittää sivustosi tarkoitusta uudelleen jo
 - Sisällön rakenne
 - Liiketoimintatavoitteesi
 
-### Paremmat suositukset
+### Paremmat suositukset {#better-recommendations}
 
 Agentit käyttävät site_briefiä seuraavasti:
 
@@ -39,17 +39,17 @@ Agentit käyttävät site_briefiä seuraavasti:
 - Ehdottaa suunnittelua, joka on johdonmukaista brändisi kanssa
 - Välttää epäsoveltuvien ominaisuuksien ehdottamisen
 
-### Nopeampi aloitus
+### Nopeampi aloitus {#faster-onboarding}
 
 Uudet agentit (tai uuden istunnon agentit) voivat nopeasti päästä alkuun lukemalla site_briefiä sen sijaan, että he kysyisivät selventäviä kysymyksiä.
 
-## Sivustiedon taiton käynnistäminen
+## Sivustiedon taiton käynnistäminen {#initiating-site-specification}
 
-### Teeman rakentamisen aikana (Theme Builder Onboarding)
+### Teeman rakentamisen aikana (Theme Builder Onboarding) {#during-theme-builder-onboarding}
 
 Sivustiedon taito käynnistyy automaattisesti **Theme Builder onboarding flow** -prosessin aikana. Setup Assistant agenti kysyy kysymyksiä ja rakentaa sinun site_briefisi.
 
-### Manuaalinen käynnistäminen
+### Manuaalinen käynnistäminen {#manual-initiation}
 
 Voit aloittaa sivuston määrittelyn milloin tahansa:
 
@@ -63,9 +63,9 @@ tai
 "Auta minua luomaan sivuston tiivistelmän"
 ```
 
-## Sivuston määrittelyprosessi
+## Sivuston määrittelyprosessi {#the-site-specification-process}
 
-### Vaihe 1: Sivuston tarkoitus
+### Vaihe 1: Sivuston tarkoitus {#step-1-site-purpose}
 
 Agentti kysyy:
 
@@ -81,7 +81,7 @@ Mikä on sivustosi pääasiallinen tarkoitus?
 
 Voit valita luokan tai kuvailla omaa tarkoitustasi.
 
-### Vaihe 2: Kohdeyleisö
+### Vaihe 2: Kohdeyleisö {#step-2-target-audience}
 
 ```
 Kuka on sinun ensisijainen kohdeyleisösi?
@@ -94,7 +94,7 @@ Kuka on sinun ensisijainen kohdeyleisösi?
 Mitä he tarvitsevat pääasiassa?
 ```
 
-### Vaihe 3: Brändiidentiteetti
+### Vaihe 3: Brändiidentiteetti {#step-3-brand-identity}
 
 ```
 Millaiset ovat brändisi värit?
@@ -110,7 +110,7 @@ Miten kuvaalisit brändisi sävyn?
 - Lämmin / ystävällinen
 ```
 
-### Vaihe 4: Liiketoimintatavoitteet
+### Vaihe 4: Liiketoimintatavoitteet {#step-4-business-goals}
 
 ```
 Miltä menestys näyttää sivustollasi?
@@ -129,7 +129,7 @@ Mikä on ensisijainen mittari?
 - Muut
 ```
 
-### Vaihe 5: Sisällön rakenne
+### Vaihe 5: Sisällön rakenne {#step-5-content-structure}
 
 ```
 Miten sisällösi on järjestetty?
@@ -148,13 +148,13 @@ Minkälaisia sisällön tyyppejä käytät?
 - Muut
 ```
 
-## Sivuston tiivistelmäsi muisti (**site_brief Memory**)
+## Sivuston tiivistelmäsi muisti (**site_brief Memory**) {#your-sitebrief-memory}
 
 Sivuston määrittelyn jälkeen tiedot tallennetaan **site_brief** -nimellä agentin muistiin. Tämä on rakennettu tallenne, joka sisältää:
 
-## Sivustiedot ja päivitykset
+## Sivustiedot ja päivitykset {#viewing-and-updating-your-sitebrief}
 
-### Katso sivustiedotietosi (site_brief)
+### Katso sivustiedotietosi (site_brief) {#view-your-sitebrief}
 
 Kysy agentilta:
 
@@ -170,7 +170,7 @@ tai
 
 Agent näyttää tallennetut tiedotietosi.
 
-### Päivitä sivustiedotietosi (site_brief)
+### Päivitä sivustiedotietosi (site_brief) {#update-your-sitebrief}
 
 Jos sivustosi kehittyy, voit päivittää sitä:
 
@@ -186,9 +186,9 @@ tai
 
 Tämä käynnistää uudelleen Site Specification -taidon olemassa olevalla tiedolla lähtökohtana.
 
-## Miten agentit käyttävät sivustiedotietoa (site_brief)
+## Miten agentit käyttävät sivustiedotietoa (site_brief) {#how-agents-use-sitebrief}
 
-### Suunnittelun suositukset
+### Suunnittelun suositukset {#design-recommendations}
 
 Kun pyydät suunnittelun muutoksia, agentit viittaavat sivustiedotietoihisi:
 
@@ -199,7 +199,7 @@ ja sinulla on lämmin, käsityötaiteellinen sävy. Luon suunnittelun, joka koro
 käsityökoruja ja kestävällisiä arvoja."
 ```
 
-### Ominaisuuden ehdotukset
+### Ominaisuuden ehdotukset {#feature-suggestions}
 
 Agentit ehdottavat ominaisuuksia, jotka vastaavat tavoitteitasi:
 
@@ -210,22 +210,22 @@ sitoutumispohjaista ohjelmaa (loyalty program), asiakasarvosteluja, sähköposti
 uutiskirjeen ja tuotteiden suosituksia."
 ```
 
-### Sisällön rakenne
+### Sisällön rakenne {#content-structure}
 
 Agentit ehdottavat sisällön järjestelyjä rakenteesi perusteella:
 
 Miten kannan blogia järjestää?
 Vastaus: Koska käytät tuotekatalogia ja blogia, ehdotan postauksia järjestellä tuotekategorioiden mukaan ja luoda 'tyyliopastoa', jossa esitellään useita tuotteita yhdessä.
 
-## Parhaat käytännöt
+## Parhaat käytännöt {#best-practices}
 
-### Ole tarkka
+### Ole tarkka {#be-specific}
 Sen sijaan, että käytät yleistä termiä "yleisö", kuvaile todellista kohdeasiasi:
 
 - ✓ "Naiset 25–45-vuotiaat, jotka ovat kiinnostuneita kestävän muodin kanssa"
 - ✗ "Kaikki"
 
-### Päivitä säännöllisesti
+### Päivitä säännöllisesti {#update-regularly}
 Kun sivustosi kehittyy, päivitä site_briefiäsi:
 
 - Kun siirryt uuteen yleisöön
@@ -233,20 +233,20 @@ Kun sivustosi kehittyy, päivitä site_briefiäsi:
 - Kun brändisi identiteetti muuttuu
 - Kun liiketoimintatavoitteesi muuttuvat
 
-### Käytä johdonmukaista terminologiaa
+### Käytä johdonmukaista terminologiaa {#use-consistent-terminology}
 Käytä samoja termejä kaikissa tiloissa:
 
 - ✓ Sano aina "kestävää korua" (ei "ekologisia koruja" ja "vihreitä tuotteita")
 - ✓ Viittaa yleisöön johdonmukaisesti samalla tavalla
 
-### Sisällytä kontekstia
+### Sisällytä kontekstia {#include-context}
 Anna taustatietoja, jotka auttavat agenttia ymmärtämään päätöksesi:
 
 - "Kohdistamme ammattilaisiin, jotka arvostavat laatua hintaan nähden"
 - "Yleisömeistä on teknisesti taitavia ja odottavat modernia suunnittelua"
 - "Olemme startupi, jolla ei ole rahoitusta, joten tarvitsemme kustannustehviä ratkaisuja"
 
-## Suhtautuminen Theme Builder -onboardingiin
+## Suhtautuminen Theme Builder -onboardingiin {#relationship-to-theme-builder-onboarding}
 
 Site Specification -taito on integroitu **Theme Builder -onboarding-virtaan**. Kun suoritat onboardingin, site_briefisi luodaan automaattisesti antamiesi tietojen perusteella.
 
@@ -256,7 +256,7 @@ Voit myös ajaa Site Specificationia itsenäisesti, jos haluat:
 - Päivittää site_briefiäsi sivustosi kehittyessä
 - Luoda yksityiskohtaisen spesifikaation ennen Theme Builder -alkamista
 
-## Ongelmanratkaisu
+## Ongelmanratkaisu {#troubleshooting}
 
 **Site_briefini ei ole käytössä**
 - Varmista, että agentilla on pääsy muistiin
@@ -272,7 +272,7 @@ Voit myös ajaa Site Specificationia itsenäisesti, jos haluat:
 - Päivitä site\_briefiäsi, jos se on vanhentunut
 - Tarjoa lisäkohinaa pyyntöihisi
 
-## Seuraavat askeleet
+## Seuraavat askeleet {#next-steps}
 
 Sivustokuvailun määritellysen jälkeen:
 

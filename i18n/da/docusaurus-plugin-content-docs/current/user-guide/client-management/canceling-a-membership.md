@@ -3,7 +3,7 @@ title: Afmelding af medlemskab
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Afmelding af et medlemskab (v2)
+# Afmelding af et medlemskab (v2) {#canceling-a-membership-v2}
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 

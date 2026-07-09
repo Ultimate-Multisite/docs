@@ -3,11 +3,11 @@ title: WP-CLI Phau ntawv siv
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference
+# WP-CLI Reference {#wp-cli-reference}
 
 Gratis AI Agent xa nrog ib pab command `wp gratis-ai-agent` rau kev ntsuas agent, tswj abilities, thiab nug agent status ntawm command line. Txhua command yuav tsum muaj WP-CLI 2.0 lossis siab dua.
 
-## Kev nruab
+## Kev nruab {#installation}
 
 Cov WP-CLI commands raug sau npe cia li thaum plugin qhib lawm. Xyuas nrog:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Khiav pab benchmark rau Agent Capabilities — yog ib pawg prompts nyuaj, muaj ntau kauj ruam uas sim tag nrho thaj tsam abilities. Siv qhov no los ntsuas model performance, piv AI providers, lossis xyuas ability packs ua ntej muab tso rau production.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Options
+### Options {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Hom output: `table` (default), `json`, `csv` |
 | `--save` | Khaws benchmark results rau hauv database rau kev piv yav dhau los |
 
-### Piv txwv
+### Piv txwv {#examples}
 
 Khiav full benchmark suite nrog provider thiab model tam sim no:
 
@@ -57,7 +57,7 @@ Khiav rau ib model tshwj xeeb thiab khaws results:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 Benchmark tso tawm ib kab rau ib lo lus nug nrog cov columns hauv qab no:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Cov Lus Nug Benchmark
+### Cov Lus Nug Benchmark {#benchmark-questions}
 
 Default suite muaj xws li:
 
@@ -95,11 +95,11 @@ Cov lus nug ntxiv tuaj yeem sau npe tau ntawm filter `gratis_ai_agent_benchmark_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Tswj abilities thiab ability packs uas twb nruab lawm.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Teev tag nrho abilities uas tau sau npe, lawv qhov chaw los (core lossis pack), thiab lawv status tam sim no.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Rub tawm thiab qhib ib ability pack los ntawm registry.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Tua ib ability tshwj xeeb yam tsis tshem pack tawm. Zoo siv rau kev txwv agent qhov scope ntawm ib lub site twg.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Qhib dua ib ability uas twb tau tua ua ntej lawm.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Qhia agent configuration tam sim no thiab connectivity status.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Qhia agent activity tsis ntev los no ntawm debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Reset agent state: tshem injected CSS, tshem CPTs thiab taxonomies uas agent sau npe, reset global styles, thiab muab agent's options cache khoob. Tsis tshem plugin lossis nws cov settings.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 Txhua commands tawm `0` thaum ua tiav. Exit codes uas tsis yog zero:
 

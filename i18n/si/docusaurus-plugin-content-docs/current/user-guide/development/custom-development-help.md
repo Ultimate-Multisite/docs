@@ -3,13 +3,13 @@ title: අභිරුචි සංවර්ධන සහාය
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable වෙතින් කස්ටම් සංවර්ධන සහාය ලබා ගන්නේ කෙසේද?
+# Codeable වෙතින් කස්ටම් සංවර්ධන සහාය ලබා ගන්නේ කෙසේද? {#how-to-get-custom-development-help-from-codeable}
 
 සමහර වෙලාවට, අපේ ජාල ප්‍රවාහයන් හරියටම අප කැමති ආකාරයට වෙනස් කිරීමට අපට විශිෂ්ට අනුවර්තනයන් අවශ්‍ය විය හැකියි. ඔබට එය සොයන්නේ නම්, Ultimate Multisite පිළිබඳ විශේෂඥ සංවර්ධකයින් සිටින තැනක් වන [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) අපි නිර්දේශ කරමු.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) යනු පාරිභෝගිකයින් සහ සුදුසුකම් ලත් WordPress ෆ්‍රීලන්ස් සංවර්ධකයින් සම්බන්ධ කරන වේදිකාවකි. ඔවුන් ඕනෑම ප්‍රමාණයේ ව්‍යාපෘති සඳහා වැඩ කිරීමට හැකියාව ඇත. ඔබ සිතන කාර්යයට විශේෂයෙන් සුදුසුකම් ඇති විශේෂඥයින් සමඟ ඔබට ගැලපෙන බව සහතික කිරීම සඳහා ඔවුන් ඉතා විමසිලිමත් අයදුම් කිරීමේ ක්‍රියාවලියක් ඇත.
 
-### Codeable හි ව්‍යාපෘතියක් නිර්මාණය කරන්නේ කෙසේද?
+### Codeable හි ව්‍යාපෘතියක් නිර්මාණය කරන්නේ කෙසේද? {#how-to-create-a-project-in-codeable}
 
 මුලින්ම, [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) වෙත ගොස් **Start a Project** බොත්තම ක්ලික් කරන්න.
 

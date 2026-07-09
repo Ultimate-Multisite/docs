@@ -3,9 +3,9 @@ title: Začínáme s vývojem doplňků
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Vývoj Addon
+# Vývoj Addon {#addon-development}
 
-## Struktura Addon
+## Struktura Addon {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Šablona hlavního souboru Addon
+## Šablona hlavního souboru Addon {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Příklad vlastního modelu
+## Příklad vlastního modelu {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrace administrační stránky
+## Integrace administrační stránky {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Testování vašeho addonu
+## Testování vašeho addonu {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Rozšiřující body v2.13.0
+## Rozšiřující body v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 přidává několik rozšiřujících bodů, které jsou užitečné pro addony integrující se se suverénními tenanty, doménami checkoutu nebo DNS automatizací poskytovatele hostingu.
 
-### URL pro SSO a správu hlavního webu
+### URL pro SSO a správu hlavního webu {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Základní domény formuláře checkoutu
+### Základní domény formuláře checkoutu {#checkout-form-base-domains}
 
 Použijte `wu_checkout_form_base_domains`, když váš addon poskytuje další sdílené základní domény, které by se měly chovat jako domény **URL webu** ve formuláři checkoutu namísto vlastních mapování pro jednotlivé weby:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite tyto hostitele normalizuje a přeskočí pro ně automatické záznamy mapovaných domén pro jednotlivé weby.
 
-### Automatické vytváření doménových záznamů
+### Automatické vytváření doménových záznamů {#automatic-domain-record-creation}
 
 Použijte `wu_should_create_domain_record_for_site`, když váš addon potřebuje potlačit nebo odložit automatické vytvoření doménového záznamu pro nově vytvořený web:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Integrace poskytovatelů hostingu, které naslouchají na `wu_add_subdomain`, mohou při vytváření webů vytvářet DNS záznamy na straně poskytovatele. Pokud pro tuto akci není registrována žádná integrace, Ultimate Multisite přeskočí prázdnou úlohu na pozadí.
 
-## Další kroky
+## Další kroky {#next-steps}
 
 - Projděte si [Referenci hooků](/developer/hooks) s dostupnými akcemi a filtry
 - Podívejte se na [Přehled REST API](/developer/rest-api/overview) pro integraci API

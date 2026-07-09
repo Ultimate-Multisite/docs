@@ -4,24 +4,24 @@ title: Filter - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Filter: wu_checkout_field_types
+# Filter: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
 
 Ons API's om nuwe veldtipe by te voeg, skakel hier in.
 
 Moet nie hierdie filter direk gebruik nie. Gebruik die `wu_register_field_type()` funksie in plaas.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
 | $field_types | `array` | |
 
-### Sedert
+### Sedert {#since}
 
 - 2.0.0
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/managers/class-signup-fields-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-signup-fields-manager.php#L92) op lyn 92
 
 
-## Gee Terug
+## Gee Terug {#returns}

@@ -3,33 +3,33 @@ title: Integração Aprimorada do Painel de Controle
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Control Panel Integration
+# Enhance Control Panel Integration {#enhance-control-panel-integration}
 
-## Overview
+## Overview {#overview}
 Enhance é um painel de controle moderno que oferece automação de hospedagem e recursos de gerenciamento poderosos. Esta integração permite sincronização automática de domínios e gerenciamento de certificados SSL entre Ultimate Multisite e Enhance Control Panel.
 
 **Discussão Relacionada:** Veja [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) para dicas da comunidade e informações adicionais.
 
-## Features
+## Features {#features}
 - Sincronização automática de domínios quando domínios são mapeados no Ultimate Multisite
 - Provisionamento automático de certificado SSL via LetsEncrypt quando o DNS resolve
 - Suporte a subdomínios para redes em modo subdomínio
 - Remoção de domínio quando os mapeamentos são excluídos
 - Teste de conexão para verificar credenciais da API
 
-## Requirements
+## Requirements {#requirements}
 
-### System Requirements
+### System Requirements {#system-requirements}
 - Enhance Control Panel instalado e acessível
 - Instalação WordPress Multisite hospedada em ou conectada a um servidor Enhance
 - Servidor web Apache (Enhance atualmente suporta configurações Apache; LiteSpeed Enterprise está disponível a custo reduzido)
 
-### API Access
+### API Access {#api-access}
 Você deve ter acesso de administrador ao Enhance Control Panel para criar tokens de API.
 
-## Getting Your API Credentials
+## Getting Your API Credentials {#getting-your-api-credentials}
 
-### 1. Create an API Token
+### 1. Create an API Token {#1-create-an-api-token}
 
 1. Faça login no seu Enhance Control Panel como administrador
 2. Clique em **Settings** no menu de navegação
@@ -44,7 +44,7 @@ Você deve ter acesso de administrador ao Enhance Control Panel para criar token
 
 Após a criação, seu **Access Token** e **Organization ID** serão exibidos. **Salve-os imediatamente** pois o token só será exibido uma vez.
 
-### 2. Get Your Organization ID
+### 2. Get Your Organization ID {#2-get-your-organization-id}
 
 O Organization ID é exibido na página Access Tokens em uma caixa de informação azul rotulada "Org ID: {your_id}".  
 O Organization ID é um UUID formatado como: `d8554b6d-5d0d-6719-009b-fec1189aa8f3`.  
@@ -53,7 +53,7 @@ Você também pode encontrar o Organization ID de um cliente por:
 2. Clique em **Manage customer** para o cliente relevante
 3. Observe a URL - o Organization ID são os caracteres alfanuméricos após `/customers/`
 
-### 3. Get Your Server ID
+### 3. Get Your Server ID {#3-get-your-server-id}
 
 Para encontrar seu Server ID (necessário para operações de domínio):
 1. No Enhance Control Panel, navegue até **Servers**
@@ -69,7 +69,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 O Server ID segue o formato UUID: `00000000-0000-0000-0000-000000000000`.
 
-### 4. Get Your API URL
+### 4. Get Your API URL {#4-get-your-api-url}
 
 Sua API URL é a URL do seu Enhance Control Panel com `/api/` anexado:
 
@@ -81,9 +81,9 @@ https://your-enhance-panel.com/api/
 - Usar apenas o domínio sem `/api/`
 - Usar HTTP em vez de HTTPS (HTTPS é obrigatório por segurança)
 
-## Configuration
+## Configuration {#configuration}
 
-### Required Constants
+### Required Constants {#required-constants}
 
 Adicione as seguintes constantes ao seu arquivo `wp-config.php`:
 
@@ -94,7 +94,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Setup via Integration Wizard
+### Setup via Integration Wizard {#setup-via-integration-wizard}
 
 1. No seu admin WordPress, vá para **Ultimate Multisite** > **Settings**
 2. Navegue até a aba **Integrations**
@@ -108,17 +108,17 @@ Você pode escolher:
 - Deixar o assistente injetar as constantes no seu arquivo `wp-config.php` automaticamente
 - Copiar as definições de constantes e adicioná-las manualmente
 
-## Additional WordPress Configuration
+## Additional WordPress Configuration {#additional-wordpress-configuration}
 
 Com base no feedback da comunidade ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), você pode precisar configurar as seguintes configurações adicionais:
 
-### .htaccess Configuration
+### .htaccess Configuration {#htaccess-configuration}
 
 Se você encontrar problemas com mapeamento de domínio:
 1. Exclua o arquivo `.htaccess` original do Enhance
 2. Substitua-o pelo arquivo `.htaccess` padrão do WordPress Multisite
 
-### Cookie Constants
+### Cookie Constants {#cookie-constants}
 
 Adicione essas constantes ao `wp-config.php` para garantir o tratamento adequado de cookies em domínios mapeados:
 
@@ -128,9 +128,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## How It Works
+## How It Works {#how-it-works}
 
-### When a Domain is Mapped
+### When a Domain is Mapped {#when-a-domain-is-mapped}
 
 1. Um usuário mapeia um domínio personalizado no Ultimate Multisite (ou um novo site é criado em modo subdomínio)
 2. A integração envia uma solicitação POST para a API do Enhance: `/servers/{server_id}/domains`
@@ -138,14 +138,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Quando o DNS resolve para o seu servidor, o Enhance provisiona automaticamente um certificado SSL via LetsEncrypt
 5. O domínio torna-se ativo com HTTPS
 
-### When a Domain is Removed
+### When a Domain is Removed {#when-a-domain-is-removed}
 
 1. Um mapeamento de domínio é excluído no Ultimate Multisite
 2. A integração consulta o Enhance para encontrar o ID do domínio
 3. Uma solicitação DELETE é enviada para: `/servers/{server_id}/domains/{domain_id}`
 4. O Enhance remove o domínio da configuração do seu servidor
 
-### DNS and SSL Checking
+### DNS and SSL Checking {#dns-and-ssl-checking}
 
 Ultimate Multisite inclui verificação de DNS e SSL embutida:
 - Você pode configurar o intervalo de verificação nas **Domain Mapping Settings** (padrão: 300 segundos/5 minutos)
@@ -153,9 +153,9 @@ Ultimate Multisite inclui verificação de DNS e SSL embutida:
 - A validade do certificado SSL é verificada automaticamente
 - O Enhance lida com provisionamento de SSL automaticamente, então a configuração manual de SSL não é necessária
 
-## Verifying Setup
+## Verifying Setup {#verifying-setup}
 
-### Test the Connection
+### Test the Connection {#test-the-connection}
 
 1. No Assistente de Integração, use a etapa **Test Connection**
 2. O plugin tentará listar domínios no seu servidor
@@ -165,7 +165,7 @@ Ultimate Multisite inclui verificação de DNS e SSL embutida:
    - O Server ID é válido
    - As permissões estão configuradas corretamente
 
-### After Mapping a Domain
+### After Mapping a Domain {#after-mapping-a-domain}
 
 1. Mapeie um domínio de teste no Ultimate Multisite
 2. Verifique os logs do Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -174,9 +174,9 @@ Ultimate Multisite inclui verificação de DNS e SSL embutida:
    - O novo domínio deve aparecer na lista
 4. Quando a propagação do DNS ocorrer, verifique se o SSL é provisionado automaticamente
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 
 **Erro: "Falha ao conectar à Enhance API"**
 - Verifique se `WU_ENHANCE_API_URL` inclui `/api/` no final
@@ -194,7 +194,7 @@ Ultimate Multisite inclui verificação de DNS e SSL embutida:
 - Certifique-se de que o Server ID é um formato UUID válido
 - Confirme que o servidor existe no seu painel Enhance
 
-### Domain Not Added
+### Domain Not Added {#domain-not-added}
 
 **Verifique os logs:**
 1. Vá para **Ultimate Multisite** > **Logs**
@@ -207,7 +207,7 @@ Ultimate Multisite inclui verificação de DNS e SSL embutida:
 - Permissões de API insuficientes (certifique-se de que o token tem a função System Administrator)
 - O Server ID não corresponde ao servidor real no Enhance
 
-### SSL Certificate Issues
+### SSL Certificate Issues {#ssl-certificate-issues}
 
 **SSL não provisionado:**
 - Verifique se o DNS aponta para o endereço IP do seu servidor
@@ -221,7 +221,7 @@ Ultimate Multisite inclui verificação de DNS e SSL embutida:
 2. Encontre seu domínio e verifique seu status de SSL
 3. Você pode acionar manualmente o provisionamento de SSL se necessário
 
-### DNS Check Interval
+### DNS Check Interval {#dns-check-interval}
 
 Se domínios ou certificados SSL estiverem demorando demais:
 1. Vá para **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -230,7 +230,7 @@ Se domínios ou certificados SSL estiverem demorando demais:
 4. **Nota:**
    - Intervalos menores significam verificações mais frequentes, mas maior carga
 
-### Authentication Errors
+### Authentication Errors {#authentication-errors}
 
 **Erros HTTP 401/403:**
 - Regenerar seu token de API no Enhance
@@ -238,7 +238,7 @@ Se domínios ou certificados SSL estiverem demorando demais:
 - Verifique se o token não expirou
 - Certifique-se de que está usando o ID de organização correto (embora normalmente não seja necessário no URL)
 
-### Log Analysis
+### Log Analysis {#log-analysis}
 
 Ativar log detalhado:
 
@@ -253,9 +253,9 @@ Em seguida, verifique os logs em:
 - WordPress debug log: `wp-content/debug.log`
 - Enhance panel logs: Disponível em interface administrativa do Enhance
 
-## API Reference
+## API Reference {#api-reference}
 
-### Authentication
+### Authentication {#authentication}
 
 Todas as requisições de API usam autenticação Bearer token:
 
@@ -263,7 +263,7 @@ Todas as requisições de API usam autenticação Bearer token:
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Common Endpoints Used
+### Common Endpoints Used {#common-endpoints-used}
 
 **List Servers:**
 
@@ -290,13 +290,13 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Full API Documentation
+### Full API Documentation {#full-api-documentation}
 
 Documentação completa da API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Security
+### Security {#security}
 
 - **Nunca comprometa tokens de API no controle de versão**
 - Armazene tokens em `wp-config.php`, que deve ser excluído do Git
@@ -304,20 +304,20 @@ Documentação completa da API: [https://apidocs.enhance.com](https://apidocs.en
 - Defina datas de expiração de token para ambientes de produção
 - Rotacione tokens periodicamente
 
-### Performance
+### Performance {#performance}
 
 - Use o intervalo padrão de verificação de DNS (300 segundos) para evitar chamadas excessivas de API
 - Monitore os recursos do servidor Enhance ao executar operações de domínio em larga escala
 - Considere distribuir adições de domínio se mapear muitos domínios de uma vez
 
-### Monitoring
+### Monitoring {#monitoring}
 
 - Verifique regularmente os logs do Ultimate Multisite em busca de erros de integração
 - Configure monitoramento para adições de domínio falhadas
 - Verifique se os certificados SSL estão sendo provisionados corretamente
 - Fique de olho na capacidade do servidor Enhance e nos limites de domínio
 
-## Additional Resources
+## Additional Resources {#additional-resources}
 
 - **Enhance Official Documentation:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Documentation:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -325,7 +325,7 @@ Documentação completa da API: [https://apidocs.enhance.com](https://apidocs.en
 - **GitHub Discussion:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Domain Mapping Guide:** Veja a página wiki "How to Configure Domain Mapping v2"
 
-## Support
+## Support {#support}
 
 Se você encontrar problemas:
 1. Verifique a seção de Solução de Problemas acima
@@ -334,7 +334,7 @@ Se você encontrar problemas:
 4. Entre em contato com o suporte Enhance para questões específicas do painel
 5. Crie uma nova discussão com logs de erro detalhados para assistência da comunidade
 
-## Notes
+## Notes {#notes}
 
 - Esta integração lida apenas com aliases de domínio; o Enhance gerencia SSL automaticamente
 - A integração suporta tanto mapeamentos de domínio personalizados quanto sites baseados em subdomínio

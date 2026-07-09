@@ -4,11 +4,11 @@ title: פעולה - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# פעולה: wu_domain_registration_failed
+# פעולה: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 מופעל לאחר שניסיון רישום דומיין נכשל.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | שם | סוג | תיאור |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 | $registration_data | `array&lt;string,mixed&gt;` | מטא-דאטה של הרישום, כולל סטטוס=נכשל ומסר שגיאה. |
 | $error_message | `string` | הודעת שגיאה קריאה לבני אדם מהרשם. |
 
-### מאז
+### מאז {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 מוגדר ב[`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) בשורה 1250

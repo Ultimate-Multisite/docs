@@ -3,7 +3,7 @@ title: Mga Porma sa Pagbayad
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Ang Checkout Forms usa ka dali ug flexible nga paagi para mag-eksperimento sa lain-laing pamaagi kung nagtinguha kang makakuha og bag-ong mga kustomer.
 
@@ -36,13 +36,13 @@ Alternatibo, pwede pud nimo i-edit o kopyahon ang mga form nga naa na nimo pinaa
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Overview sa Checkout Form Editor
+#### Overview sa Checkout Form Editor {#checkout-form-editor-overview}
 
 Ang checkout form editor naghatag og usa ka kompleto nga interface para maghimo sa imong registration forms. Ania ang overview sa layout sa editor:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Pag-edit sa Checkout Form
+### Pag-edit sa Checkout Form {#editing-a-checkout-form}
 
 Pwede kang maghimo og checkout forms para sa lain-laing katuyoan. Sa panigunting nga example, magtrabaho kita sa usa ka registration form.
 
@@ -112,7 +112,7 @@ Para makuha ang shortcode ng iyong form, i-click lang ang Generate Shortcode at 
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Ang Field na Pricing Table
+### Ang Field na Pricing Table {#the-pricing-table-field}
 
 Ang field na **Pricing Table** ay nagpapakita ng iyong mga produkto sa checkout form para pwedeng pumili ang mga customer ng plano. Kapag binago mo ito, pwede kang mag-configure ng ilang options:
 
@@ -130,17 +130,17 @@ Narito kung paano lumalabas ang pricing table sa frontend registration form:
 
 Kung magdagdag ka ng produkto sa Pricing Table bago isama ng form ang mga fields na kailangan para matapos ang checkout flow ng produktong iyon, may babala na lalabas sa editor. Gamitin mo ang babala na iyon para idagdag ang kulang na required field bago mag-publish o mag-save ng mga pagbabago para sa isang live registration form.
 
-### Pagdugang sa Period Selection Toggle
+### Pagdugang sa Period Selection Toggle {#adding-a-period-selection-toggle}
 
 Kung nag-configure ka na og [Price Variations](creating-your-first-subscription-product#price-variations) sa imong mga produkto (pananglitan, monthly ug annual pricing), pwede kang magdugang og **Period Selection** field sa imong checkout form. Kini nga field nagpakita og toggle nga nagtugot sa mga customer nga mag-switch tali sa billing periods, ug ang pricing table kay mo-update dayon samtang naglihok sila.
 
-#### Lakang 1: I-set Up ang Price Variations sa Imong Mga Produkto
+#### Lakang 1: I-set Up ang Price Variations sa Imong Mga Produkto {#step-1-set-up-price-variations-on-your-products}
 
 Sa dili pa magdugang og Period Selection field, siguruha lang nga ang imong mga produkto naa na og price variations nga naka-configure. Adto sa **Ultimate Multisite > Products**, i-edit ang usa ka product, ug adto sa tab nga **Price Variations** para magdugang og lain nga billing periods (pananglitan: Annual sa discounted nga presyo).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Lakang 2: Dugangi ang Period Selection Field sa Imong Checkout Form
+#### Lakang 2: Dugangi ang Period Selection Field sa Imong Checkout Form {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Adto sa **Ultimate Multisite > Checkout Forms** ug i-edit ang imong checkout form.
 
@@ -163,13 +163,13 @@ Sa dili pa magdugang og Period Selection field, siguruha lang nga ang imong mga 
 
 7. I-click ang **Save Field**.
 
-#### Step 3: Iposisyon ang Field Ibabaw ng Pricing Table
+#### Step 3: Iposisyon ang Field Ibabaw ng Pricing Table {#step-3-position-the-field-above-the-pricing-table}
 
 Para sa pinakamagandang karanasan ng user, siguraduha nga nga ang Period Selection field makita **una** sa Pricing Table field sa inyong checkout step. Mahimo ninyong i-drag ang mga fields para ma-reorder kini sa checkout form editor. Sa paagi ani, una magpili ang mga customer og billing period ug unya makakita sila sa mga presyo para sa period nga gipili nila.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Unsaon Kini Paglihok sa Frontend
+#### Unsaon Kini Paglihok sa Frontend {#how-it-works-on-the-frontend}
 
 Pagkahuman ma-configure, ang mga customer nga moadto sa inyong registration page makakita sa period selector ibabaw sa pricing table. Kung sila mag-click og lain nga billing period:
 
@@ -177,7 +177,7 @@ Pagkahuman ma-configure, ang mga customer nga moadto sa inyong registration page
   * Kung ang **Force Different Durations** wala gi-disable sa Pricing Table field, ang mga produkto nga walay variation sa presyo para sa gipiling period mahimong itago.
   * Kung ang **Force Different Durations** gi-enable, tanan nga mga produkto magpabilin nga makita bisan og wala silay variation para sa gipiling period (ipakita nila ang ilang default nga presyo).
 
-#### Pre-selecting og Billing Period pinaagi sa URL
+#### Pre-selecting og Billing Period pinaagi sa URL {#pre-selecting-a-billing-period-via-url}
 
 Mahimo pud ninyong pre-select ang usa ka product ug billing period pinaagi sa URL. Ang Ultimate Multisite nagsuporta niining mga pattern sa URL:
 
@@ -185,11 +185,11 @@ Mahimo pud ninyong pre-select ang usa ka product ug billing period pinaagi sa UR
   * `/register/premium/12` — Mag-pre-select sa product ug 12-month duration
   * `/register/premium/1/year` — Mag-pre-select sa product nga adunay 1-year duration
 
-### Ang Template Selection Field
+### Ang Template Selection Field {#the-template-selection-field}
 
 Ang **Template Selection** field nagtugot sa mga customer nga magpili og site template samtang nag-checkout. Kini na karon gi-include sa default sa **single step** ug **multi-step** checkout form templates nga gitudlo sa Ultimate Multisite v2.6.1.
 
-#### Pagdugang sa field pinaagi sa manual
+#### Pagdugang sa field pinaagi sa manual {#adding-the-field-manually}
 
 
 
@@ -202,11 +202,11 @@ Kung nagtrabaho ka sa usa ka form nga gihimo pa sa v2.6.1 o nagsugod gikan sa bl
    - **Label** — Ang heading nga makita sa mga customer ibabaw sa template grid (pananglitan, "Pili og site template").
    - **Required** — Kung kinahanglan ba nga magpili ang mga customer og template sa dili pa sila magpadayon.
 
-#### Unsaon kini pagtrabaho
+#### Unsaon kini pagtrabaho {#how-it-works}
 
 Kung mopili ang usa ka customer og template inig checkout, gamiton kini sa Ultimate Multisite kung i-provision nila ang ilang bag-ong site. Ang mga template nga gipakita nagagikan sa imong listahan sa **Site Templates** (**Ultimate Multisite > Site Templates**). Ang mga template nga gihubad isip available sa mga customer lang ang modapadulong dinhi.
 
-### Checkout-form base domains
+### Checkout-form base domains {#checkout-form-base-domains}
 
 Ang Ultimate Multisite v2.13.0 nagtratar sa mga domain nga nakakompyut ang checkout form **Site URL** fields isip network base domains. Gamita ang settings sa available-domain sa field kung gusto nimo nga maghimo og mga site ang mga customer ubos sa usa o labaw pa nga shared registration domains, sama sa `example.com` ug `sites.example.com`.
 
@@ -214,7 +214,7 @@ Ang shared checkout-form base domains dili itraktar isip per-site custom domain 
 
 Pabilin og custom domains alang sa per-customer mapped hosts, sama sa `customer-example.com`. Pabilin og checkout-form base domains alang sa shared registration hosts nga mahimong gamiton sa daghang sites.
 
-#### Pagkuha sa field
+#### Pagkuha sa field {#removing-the-field}
 
 (Note: Ang orihinal nga teksto nagtapos dinhi, busa kini ang hubad.)
 

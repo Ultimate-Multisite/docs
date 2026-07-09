@@ -4,11 +4,11 @@ title: Hidlydd - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Hidlydd: wu_generated_username_from_email
+# Hidlydd: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Hidlo enw defnyddiwr cwsmer wedi’i gynhyrchu.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Hidlo enw defnyddiwr cwsmer wedi’i gynhyrchu.
 | $new_user_args | `array` | Arae o args defnyddiwr newydd, efallai’n cynnwys enwau cyntaf ac olaf. |
 | $suffix | `string` | Atodi llinyn at enw defnyddiwr i’w wneud yn unigryw. |
 
-### Ers
+### Ers {#since}
 
 - 3.7.0
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Wedi’i ddiffinio yn [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) ar linell 488

@@ -4,22 +4,22 @@ title: کړنه - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# کړنه: wu_membership_post_cancel
+# کړنه: wu_membership_post_cancel {#action-wumembershippostcancel}
 
 وروسته له دې فعالېږي چې غړیتوب لغوه شي.
 
 دا د لغوه کولو برېښنالیک فعالوي.
 
-## پارامېټرونه
+## پارامېټرونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
 | $membership_id | `int` | د غړیتوب ID. |
 | $membership | `\WP_Ultimo\Models\Membership` | د غړیتوب شی. |
 
-### له نسخې راهیسې
+### له نسخې راهیسې {#since}
 
 - 2.0
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2290) کې په 2290 کرښه تعریف شوی.

@@ -4,13 +4,13 @@ title: ఫిల్టర్ - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Filter: wu_search_models_functions
+# Filter: wu_search_models_functions {#filter-wusearchmodelsfunctions}
 
 ప్లగిన్ డెవలపర్‌లు మరిన్ని సెర్చ్ మోడల్ ఫంక్షన్లను జోడించడానికి ఇది అనుమతిస్తుంది.
 
-### ఎప్పటి నుండి
+### ఎప్పటి నుండి {#since}
 
 - 2.0.0
-### మూలం
+### మూలం {#source}
 
 ఇది [`inc/class-ajax.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-ajax.php#L244) లో 244వ లైన్‌లో నిర్వచించబడింది.

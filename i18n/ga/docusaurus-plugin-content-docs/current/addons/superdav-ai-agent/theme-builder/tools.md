@@ -3,17 +3,17 @@ title: Uirlisí agus Cumraíocht
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Uirlisí agus Cumraíocht
+# Uirlisí agus Cumraíocht {#tools-and-configuration}
 
 Úsáideann Theme Builder tacar uirlisí chun do shuíomh WordPress a anailísiú, a dhearadh, agus a thógáil. I leagan 1.16.0, **sd-ai-agent/site-scrape is now a Tier 1 tool**, rud a fhágann go bhfuil sé ar fáil de réir réamhshocraithe in Theme Builder. Tugann Superdav AI Agent v1.18.0 isteach freisin pacáiste compánach Advanced a dháiltear ar leithligh le haghaidh sreafaí oibre forbróra iontaofa; níl na huirlisí sin mar chuid de phacáiste lárnach WordPress.org agus ní mór iad a shuiteáil agus a údarú ar leithligh.
 
-## Uirlisí atá ar Fáil
+## Uirlisí atá ar Fáil {#available-tools}
 
-### Uirlisí Tier 1 (Ar Fáil i gCónaí)
+### Uirlisí Tier 1 (Ar Fáil i gCónaí) {#tier-1-tools-always-available}
 
 Tá uirlisí Tier 1 ar fáil de réir réamhshocraithe in Theme Builder gan aon chumraíocht bhreise.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Cuspóir:** Suíomhanna gréasáin atá ann cheana a anailísiú chun inspioráid dearaidh, struchtúr ábhair, agus feidhmiúlacht a bhaint amach.
 
@@ -51,11 +51,11 @@ Déan anailís ar dhearadh example.com agus úsáid é mar inspioráid do mo shu
 - D’fhéadfadh anailís theoranta a bheith ar shuíomhanna a bhfuil go leor JavaScript iontu
 - D’fhéadfadh sé níos faide a ghlacadh suíomhanna móra a anailísiú
 
-### Uirlisí Tier 2 (Roghnach)
+### Uirlisí Tier 2 (Roghnach) {#tier-2-tools-optional}
 
 Tá uirlisí Tier 2 ar fáil nuair a chumasaítear go sainráite iad i socruithe Theme Builder.
 
-#### Ard-Anailísíocht
+#### Ard-Anailísíocht {#advanced-analytics}
 
 Soláthraíonn sí méadrachtaí feidhmíochta mionsonraithe:
 
@@ -65,7 +65,7 @@ Soláthraíonn sí méadrachtaí feidhmíochta mionsonraithe:
 - Scór inrochtaineachta
 - Scór dea-chleachtas
 
-#### Barrfheabhsóir Ábhair
+#### Barrfheabhsóir Ábhair {#content-optimizer}
 
 Déanann sé anailís agus molann sé feabhsuithe do:
 
@@ -75,11 +75,11 @@ Déanann sé anailís agus molann sé feabhsuithe do:
 - Struchtúr ábhair
 - Suíomh glao chun gnímh
 
-### Uirlisí Tier 3 (Premium)
+### Uirlisí Tier 3 (Premium) {#tier-3-tools-premium}
 
 Teastaíonn cumraíocht bhreise nó gnéithe premium ó uirlisí Tier 3.
 
-#### Gineadóir Ábhair AI
+#### Gineadóir Ábhair AI {#ai-content-generator}
 
 Gineann sé ábhar do:
 
@@ -89,7 +89,7 @@ Gineann sé ábhar do:
 - Meta descriptions
 - Cóip ghlao chun gnímh
 
-#### Arduirlisí Dearaidh
+#### Arduirlisí Dearaidh {#advanced-design-tools}
 
 Soláthraíonn siad ardchumais dearaidh:
 
@@ -99,7 +99,7 @@ Soláthraíonn siad ardchumais dearaidh:
 - Ardteoiric dathanna
 - Barrfheabhsú clóghrafaíochta
 
-### Arduirlisí Compánacha (Pacáiste ar Leith)
+### Arduirlisí Compánacha (Pacáiste ar Leith) {#advanced-companion-tools-separate-package}
 
 Dáiltear an pacáiste compánach Advanced ar leithligh ón eisiúint lárnach Superdav AI Agent. Tá sé beartaithe do thimpeallachtaí forbróra agus úinéara suímh iontaofa ina gceadaíonn riarthóirí go sainráite don agent uirlisiú ardtionchair a úsáid.
 
@@ -116,9 +116,9 @@ Is féidir le cumais chompánacha Advanced a bheith san áireamh:
 
 Ná doiciméadaigh iad seo mar uirlisí Theme Builder atá ar fáil go ginearálta do gach suiteáil. Níl siad ar fáil ach amháin nuair atá an pacáiste compánach Advanced suiteáilte, cumasaithe, agus srianta do riarthóirí iontaofa.
 
-## Cumraíocht Uirlisí
+## Cumraíocht Uirlisí {#tool-configuration}
 
-### Uirlisí a Chumasú
+### Uirlisí a Chumasú {#enabling-tools}
 
 Chun uirlisí breise a chumasú in Theme Builder:
 
@@ -127,7 +127,7 @@ Chun uirlisí breise a chumasú in Theme Builder:
 3. Cuir uirlisí ar siúl/as de réir mar is gá
 4. Sábháil socruithe
 
-### Ceadanna Uirlisí
+### Ceadanna Uirlisí {#tool-permissions}
 
 Teastaíonn ceadanna ó roinnt uirlisí:
 
@@ -137,7 +137,7 @@ Teastaíonn ceadanna ó roinnt uirlisí:
 - **Ardghnéithe** — d’fhéadfadh síntiús premium a bheith ag teastáil
 - **Arduirlisí compánacha** — teastaíonn an pacáiste Advanced a dháiltear ar leithligh agus muinín shainráite riarthóra
 
-### API Keys agus Dintiúir
+### API Keys agus Dintiúir {#api-keys-and-credentials}
 
 Cumraigh API keys d’uirlisí a dteastaíonn siad uathu:
 
@@ -146,13 +146,13 @@ Cumraigh API keys d’uirlisí a dteastaíonn siad uathu:
 3. Tástáil nasc
 4. Sábháil go slán
 
-### An Pacáiste Compánach Advanced a Shuiteáil
+### An Pacáiste Compánach Advanced a Shuiteáil {#installing-the-advanced-companion-package}
 
 Eisítear an pacáiste compánach Advanced ar leithligh ón ZIP lárnach WordPress.org. Suiteáil é amháin ó chainéal dáilte oifigiúil an tionscadail don eisiúint, ansin cuir srian ar rochtain do riarthóirí iontaofa. Athbhreithnigh geataí faofa daonna agus iompar seatanna git sula gcumasaíonn tú uirlisí córais comhad, bunachair sonraí, WP-CLI, seoltóra REST, tógálaí plugin, bainistíochta úsáideoirí, nó tagarmharcála ar shuíomh táirgthe.
 
-## sd-ai-agent/site-scrape a Úsáid
+## sd-ai-agent/site-scrape a Úsáid {#using-sd-ai-agentsite-scrape}
 
-### Úsáid Bhunúsach
+### Úsáid Bhunúsach {#basic-usage}
 
 Iarr ar Theme Builder suíomh gréasáin a anailísiú:
 
@@ -161,7 +161,7 @@ Déan anailís ar dhearadh shuíomh m’iomaitheora ag competitor.com
 agus mol feabhsuithe dearaidh do mo shuíomh.
 ```
 
-### Anailís Shonrach
+### Anailís Shonrach {#specific-analysis}
 
 Iarr cineálacha sonracha anailíse:
 
@@ -179,7 +179,7 @@ Seiceáil freagrúlacht mhóibíleach example.com agus cinntigh go bhfuil mo shu
 chomh freagrúil céanna.
 ```
 
-### Anailís Chomparáide
+### Anailís Chomparáide {#comparison-analysis}
 
 Déan comparáid idir suíomhanna iolracha:
 
@@ -188,22 +188,22 @@ Déan comparáid idir dearaí site1.com agus site2.com agus cruthaigh dearadh
 a chomhcheanglaíonn na heilimintí is fearr den dá cheann.
 ```
 
-## Teorainneacha agus Breithnithe Uirlisí
+## Teorainneacha agus Breithnithe Uirlisí {#tool-limitations-and-considerations}
 
-### Teorannú Ráta
+### Teorannú Ráta {#rate-limiting}
 
 - Tá teorainn ráta ar scríobadh chun ró-ualach freastalaí a chosc
 - D’fhéadfaí iarratais iolracha chuig an suíomh céanna a mhoilliú
 - D’fhéadfadh suíomhanna móra níos mó ama a thógáil le hanailísiú
 
-### Cruinneas Ábhair
+### Cruinneas Ábhair {#content-accuracy}
 
 - B’fhéidir nach ngabhfar ábhar dinimiciúil go hiomlán
 - D’fhéadfadh ábhar rindreáilte le JavaScript a bheith neamhiomlán
 - B’fhéidir nach léireofar sonraí fíor-ama
 - D’fhéadfadh roinnt ábhair a bheith taobh thiar de bhallaí íocaíochta
 
-### Breithnithe Dlíthiúla agus Eiticiúla
+### Breithnithe Dlíthiúla agus Eiticiúla {#legal-and-ethical-considerations}
 
 - Tabhair meas ar robots.txt agus ar bheartais an tsuímh
 - Ná scríob ábhar faoi chóipcheart lena atáirgeadh
@@ -211,16 +211,16 @@ a chomhcheanglaíonn na heilimintí is fearr den dá cheann.
 - Deimhnigh go bhfuil cearta agat an t-ábhar eastósctha a úsáid
 - Lean téarmaí seirbhíse na suíomhanna a ndearnadh anailís orthu
 
-### Tionchar ar Fheidhmíocht
+### Tionchar ar Fheidhmíocht {#performance-impact}
 
 - D’fhéadfadh scríobadh suíomhanna móra am a thógáil
 - D’fhéadfadh scríobaí comhuaineacha iolracha a bheith níos moille
 - Bíonn tionchar ag nascacht líonra ar luas
 - D’fhéadfadh níos mó próiseála a bheith ag teastáil ó thacair mhóra sonraí
 
-## Dea-Chleachtais
+## Dea-Chleachtais {#best-practices}
 
-### Anailís Suímh a Úsáid
+### Anailís Suímh a Úsáid {#using-site-analysis}
 
 1. **Déan anailís ar shuíomhanna iolracha** — bailigh inspioráid ó roinnt foinsí
 2. **Dírigh ar struchtúr** — foghlaim patrúin leagain amach agus eagraíochta
@@ -228,7 +228,7 @@ a chomhcheanglaíonn na heilimintí is fearr den dá cheann.
 4. **Déan staidéar ar chlóghrafaíocht** — aithin teaglamaí clónna a thaitníonn leat
 5. **Athbhreithnigh nascleanúint** — tuig eagrú roghchláir
 
-### Scríobadh Eiticiúil
+### Scríobadh Eiticiúil {#ethical-scraping}
 
 1. **Tabhair meas ar robots.txt** — lean treoirlínte an tsuímh
 2. **Ná cóipeáil ábhar** — úsáid an anailís mar inspioráid amháin
@@ -236,7 +236,7 @@ a chomhcheanglaíonn na heilimintí is fearr den dá cheann.
 4. **Luaigh foinsí** — tabhair creidiúint d’fhoinsí inspioráide
 5. **Lean téarmaí** — cloí le téarmaí seirbhíse an tsuímh
 
-### Éifeachtacht na hUirlise a Uasmhéadú
+### Éifeachtacht na hUirlise a Uasmhéadú {#maximizing-tool-effectiveness}
 
 1. **Bí sonrach** — iarr cineálacha sonracha anailíse
 2. **Cuir comhthéacs ar fáil** — mínigh cuspóir do shuímh
@@ -244,9 +244,9 @@ a chomhcheanglaíonn na heilimintí is fearr den dá cheann.
 4. **Déan atriall** — mionchoigeartaigh bunaithe ar thorthaí
 5. **Comhcheangail uirlisí** — úsáid uirlisí iolracha le haghaidh anailíse cuimsithí
 
-## Fabhtcheartú
+## Fabhtcheartú {#troubleshooting}
 
-### Ní Scríobfaidh an Suíomh
+### Ní Scríobfaidh an Suíomh {#site-wont-scrape}
 
 - Seiceáil an bhfuil an suíomh inrochtana go poiblí
 - Deimhnigh go gceadaíonn robots.txt scríobadh
@@ -254,7 +254,7 @@ a chomhcheanglaíonn na heilimintí is fearr den dá cheann.
 - Seiceáil an nasc idirlín
 - Déan teagmháil le tacaíocht má leanann an fhadhb ar aghaidh
 
-### Anailís Neamhiomlán
+### Anailís Neamhiomlán {#incomplete-analysis}
 
 - D’fhéadfadh ábhar dinimiciúil a bheith ag an suíomh
 - B’fhéidir nach mbeidh JavaScript rindreáilte go hiomlán
@@ -262,7 +262,7 @@ a chomhcheanglaíonn na heilimintí is fearr den dá cheann.
 - Bain triail as leathanaigh shonracha a anailísiú ina ionad
 - Iarr cineálacha sonracha anailíse
 
-### Feidhmíocht Mhall
+### Feidhmíocht Mhall {#slow-performance}
 
 - Tógann suíomhanna móra níos mó ama le hanailísiú
 - Bíonn scríobaí comhuaineacha iolracha níos moille
@@ -270,7 +270,7 @@ a chomhcheanglaíonn na heilimintí is fearr den dá cheann.
 - Bain triail as le linn uaireanta nach bhfuil buaicéileamh ann
 - Déan anailís ar rannáin níos lú ar dtús
 
-## Doiciméadú Gaolmhar
+## Doiciméadú Gaolmhar {#related-documentation}
 
 - [Agallamh Fionnachtana](./discovery-interview.md) — bailigh faisnéis dearaidh
 - [Treo Dearaidh](./design-direction.md) — mionchoigeartaigh do dhearadh

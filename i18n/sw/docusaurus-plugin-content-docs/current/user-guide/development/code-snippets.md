@@ -3,7 +3,7 @@ title: Vijisehemu vya Msimbo
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Vipande vya Msimbo kwa v2
+# Vipande vya Msimbo kwa v2 {#code-snippets-for-v2}
 
 Kimsingi, vipande vya msimbo kwa **WordPress** hutumiwa kufanya vitendo fulani ambavyo vingeweza kuhitaji plugin ndogo maalum. Vipande hivyo vya msimbo huwekwa kwenye moja ya faili za msingi za WordPress au faili za theme (kwa kawaida faili ya functions.php ya theme yako) au vinaweza kutumika kama MU plugin.
 
@@ -15,13 +15,13 @@ Katika makala hii tutakuonyesha vipande vitatu vya msimbo ambavyo vinaweza kutum
 
   * [**Kurekebisha matatizo ya CORS na Font-Icons kwenye domains zilizounganishwa**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Kubadilisha nafasi ya kipengee cha menyu ya Akaunti
+## Kubadilisha nafasi ya kipengee cha menyu ya Akaunti {#changing-the-position-of-the-account-menu-item}
 
 Kubadilisha nafasi ya kipengee cha menyu ya Akaunti kwenye Dashboard ya mteja wako, ongeza tu kipande cha msimbo kifuatacho kwenye functions.php ya theme inayotumika kwenye tovuti yako kuu. Unaweza pia kuweka kipande hicho ndani ya moja ya mu-plugins au plugins zako za kawaida.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Badilisha thamani hii kuweka menyu katika nafasi unayoitaka.
 
-## Jinsi ya kuangalia kama mtumiaji yuko chini ya mpango fulani na/au ana usajili unaofanya kazi
+## Jinsi ya kuangalia kama mtumiaji yuko chini ya mpango fulani na/au ana usajili unaofanya kazi {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Kama msimamizi wa mtandao, huenda ukahitaji kuunda functions za kawaida ambazo zitafanya vitendo vya msingi au kufanya huduma/kipengele kipatikane kwa kundi maalum la wanachama au watumiaji wa mwisho, kulingana na hali ya usajili wao na mpango wanaojisajili chini yake.
 
@@ -47,8 +47,8 @@ Kumbuka kwamba watumiaji wanaweza kusajiliwa tu kwa **Plan** , si Package au Ser
 
 ![Orodha ya bidhaa inayoonyesha Plan IDs](/img/admin/products-list.png)
 
-## Kurekebisha matatizo ya CORS na Font-Icons kwenye domains zilizounganishwa
-## Kurekebisha matatizo ya CORS na Font-Icons kwenye domains zilizounganishwa
+## Kurekebisha matatizo ya CORS na Font-Icons kwenye domains zilizounganishwa {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Kurekebisha matatizo ya CORS na Font-Icons kwenye domains zilizounganishwa {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Baada ya kuunganisha domain kwenye tovuti ndogo unaweza kugundua kuwa tovuti ina matatizo ya kupakia fonti za kawaida. Hii inasababishwa na kuzuiwa kwa cross-origin kwenye mipangilio ya seva yako.
 
@@ -56,13 +56,13 @@ Kwa kuwa faili za fonti karibu kila wakati hupakiwa moja kwa moja kutoka CSS, pl
 
 Hapa chini kuna vipande vya msimbo vya kurekebisha tatizo kwa Apache na NGINX. Mabadiliko haya yanahitaji ujuzi wa kina wa faili za usanidi wa seva (faili za .htaccess na faili za usanidi wa NGINX). Ikiwa hujisikii vizuri kufanya mabadiliko hayo mwenyewe, tuma ukurasa huu kwa wakala wa msaada wa mtoaji wako wa hosting unapohitaji usaidizi.
 
-### Apache
+### Apache {#apache}
 
 Kwenye faili yako ya .htaccess, ongeza:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 Kwenye faili ya usanidi wa seva yako (mahali panatofautiana kutoka seva hadi seva), ongeza:
 

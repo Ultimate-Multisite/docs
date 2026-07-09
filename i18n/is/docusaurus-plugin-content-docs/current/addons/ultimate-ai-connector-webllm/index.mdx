@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM færir AI-ályktun beint í vafra yfir á WordPress multisite-netið þitt. Það keyrir stór mállíkön alfarið í vafranum með WebLLM og MLC-vélinni — engir API-lyklar, engin ytri köll, engin gögn fara úr tæki notandans.
 
-## Helstu eiginleikar
+## Helstu eiginleikar {#key-features}
 
 - **Ályktun í vafra**: LLM keyrir staðbundið í vafra gestsins í gegnum WebLLM/MLC — engin GPU á þjóni nauðsynleg
 - **Fljótandi spjallgræja**: Innskráðir notendur geta sent kveikjur beint til LLM í vafranum úr framendanum
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM færir AI-ályktun beint í vafra yfir á WordP
 - **IndexedDB-skyndiminni**: Niðurhal á líkanaþyngdum lifir af CDN-endurbeiningar sem rjúfa sjálfgefnu Cache API-slóðina
 - **wpai-síusamþætting**: Tengist við `wpai_preferred_text_models`-síuna svo AI Experiments-eiginleikinn beini í vafravélina þegar það er stillt
 
-## Kröfur
+## Kröfur {#requirements}
 
 - WordPress 5.3 eða nýrra
 - PHP 7.4 eða nýrra
 - Ultimate Multisite plugin (virkt)
 - Vafri með WebGPU-stuðningi (Chrome 113+, Edge 113+ eða Firefox Nightly með WebGPU virkt)
 
-## Uppsetning
+## Uppsetning {#installation}
 
 1. Hladdu addon-skránum upp í `/wp-content/plugins/`-möppuna þína
 2. Virkjaðu plugin í gegnum valmyndina 'Plugins' í WordPress
 3. Farðu í **Ultimate Multisite → AI Connector** til að stilla addon-ið
 
-## Fljótandi spjallgræja
+## Fljótandi spjallgræja {#floating-chat-widget}
 
 Fljótandi spjallgræjan gerir öllum innskráðum notendum kleift að eiga samskipti við LLM í vafranum beint úr framendanum þínum, án þess að yfirgefa síðuna sem þeir eru á.
 
-### Hvað hún gerir
+### Hvað hún gerir {#what-it-does}
 
 Þegar hún er virk birtist spjalltákn í horni hverrar framendasíðu fyrir innskráða notendur. Þegar smellt er á táknið opnast spjallborð þar sem notandinn getur slegið inn kveikjur og fengið svör frá WebLLM-líkaninu sem keyrir staðbundið. Þar sem líkanið keyrir alfarið í vafranum eru svörin einkarekin og fela ekki í sér neina vinnslu á þjónshlið.
 
-### Stöðuvísir í stjórnendastiku
+### Stöðuvísir í stjórnendastiku {#admin-bar-status-indicator}
 
 WordPress-stjórnendastikan inniheldur stöðuvísi sem sýnir núverandi stöðu WebLLM-vélarinnar:
 
@@ -56,7 +56,7 @@ WordPress-stjórnendastikan inniheldur stöðuvísi sem sýnir núverandi stöð
 
 Vísirinn uppfærist í rauntíma án þess að endurhleðsla síðu sé nauðsynleg.
 
-### Hvernig á að virkja eða slökkva á græjunni
+### Hvernig á að virkja eða slökkva á græjunni {#how-to-enable-or-disable-the-widget}
 
 1. Farðu í **Ultimate Multisite → AI Connector** í netstjórnanda
 2. Finndu **Connector**-borðið
@@ -65,17 +65,17 @@ Vísirinn uppfærist í rauntíma án þess að endurhleðsla síðu sé nauðsy
 
 Einnig er hægt að virkja eða slökkva á græjunni fyrir hvert vefsvæði úr eigin stjórnanda vefsvæðisins ef netstjórnandinn hefur veitt þá heimild.
 
-## Stillingar græju
+## Stillingar græju {#widget-settings}
 
 Connector-borðið í **Ultimate Multisite → AI Connector** inniheldur eftirfarandi stillingar fyrir fljótandi spjallgræjuna:
 
-### Virkja fljótandi spjallgræju
+### Virkja fljótandi spjallgræju {#enable-floating-chat-widget}
 
 Kveikir eða slekkur á spjallgræjunni fyrir allt netið. Þegar slökkt er á henni birtist græjan ekki á neinni framendasíðu, óháð hlutverki notanda.
 
 **Sjálfgefið:** Slökkt
 
-### Sjálfvirk kveikjuhegðun
+### Sjálfvirk kveikjuhegðun {#auto-prompt-behaviour}
 
 Stýrir því hvort spjallgræjan sendi sjálfkrafa kveikju þegar notandi opnar hana.
 
@@ -93,7 +93,7 @@ Stýrir því hvort spjallgræjan sendi sjálfkrafa kveikju þegar notandi opnar
 
 **Sjálfgefið:** Óvirkt
 
-## SharedWorker-keyrsluumhverfi
+## SharedWorker-keyrsluumhverfi {#sharedworker-runtime}
 
 Útgáfa 1.1.0 kynnir SharedWorker-keyrsluumhverfi fyrir MLC-vélina. Áður hlóð hver vafraflipi sem notaði WebLLM sitt eigið tilvik af líkaninu, keppti um GPU-minni og olli afkastavandamálum á tækjum með takmarkað VRAM.
 
@@ -105,29 +105,29 @@ Með SharedWorker-keyrsluumhverfinu virkar einn flipi sem hýsill vélarinnar. A
 
 SharedWorker er gagnsær fyrir notendur. Stöðuvísirinn í stjórnendastikunni endurspeglar alltaf stöðu sameiginlegu vélarinnar, ekki einstaklingsflipans.
 
-## apiFetch-millibúnaður
+## apiFetch-millibúnaður {#apifetch-middleware}
 
 Addon-ið setur upp `apiFetch`-millibúnað sem hlerar WordPress REST API-beiðnir sem passa við AI Client SDK-mynstrið. Í stað þess að gera HTTP-beiðni til baka á þjóninn er þessum beiðnum beint beint til staðbundins WebLLM-miðlara sem keyrir í SharedWorker.
 
 Þetta þýðir að plugins og themes sem nota staðlaða WordPress `apiFetch` API til að kalla á AI-endapunkta munu sjálfkrafa njóta góðs af líkaninu í vafranum þegar það er tiltækt, án þess að kóðabreytingar séu nauðsynlegar.
 
-## Hooks og síur
+## Hooks og síur {#hooks-and-filters}
 
-### Síur
+### Síur {#filters}
 
 - `wpai_preferred_text_models` — Skráir WebLLM-vafravélina sem valið textalíkan. Viðbótin tengist þessum filter sjálfkrafa þegar vélin er stillt og tiltæk.
 - `ultimate_webllm_widget_enabled` — Hnekkir virkjunarstöðu græjunnar fyrir tiltekinn notanda eða samhengi. Skilaðu `true` eða `false`.
 - `ultimate_webllm_auto_prompt` — Breytir sjálfvirka prompt-textanum áður en hann er sendur í græjuna. Tekur við prompt-strengnum og núverandi `WP_Post`-hlut.
 
-## Úrræðaleit
+## Úrræðaleit {#troubleshooting}
 
-### Spjallgræjan birtist ekki
+### Spjallgræjan birtist ekki {#the-chat-widget-does-not-appear}
 
 - Staðfestu að notandinn sé skráður inn — græjan er aðeins sýnd auðkenndum notendum
 - Athugaðu að **Virkja fljótandi spjallgræju** sé kveikt á í Connector-spjaldinu
 - Staðfestu að vafri notandans styðji WebGPU (sjá Kröfur hér að ofan)
 
-### Vísirinn á admin-stikunni sýnir „Villa“
+### Vísirinn á admin-stikunni sýnir „Villa“ {#the-admin-bar-indicator-shows-error}
 
 Opnaðu þróunarconsole vafrans (F12) og leitaðu að villum sem tengjast WebLLM. Algengar orsakir:
 
@@ -135,10 +135,10 @@ Opnaðu þróunarconsole vafrans (F12) og leitaðu að villum sem tengjast WebLL
 - Niðurhal á model weights mistókst — athugaðu nettengingu og prófaðu að hreinsa IndexedDB-skyndiminnið í þróunarverkfærum vafrans (Application → IndexedDB)
 - Vafraviðbót er að loka á SharedWorker
 
-### Model weights hlaðast niður í hvert skipti
+### Model weights hlaðast niður í hvert skipti {#model-weights-download-every-time}
 
 Viðbótin notar IndexedDB sem skyndiminnisbakenda til að tryggja að model weights varðveitist þrátt fyrir CDN-endurbeiningar. Ef weights eru sótt aftur í hverri heimsókn skaltu athuga að IndexedDB sé ekki hreinsað vegna persónuverndarstillingar í vafra eða vafraviðbótar.
 
-## Breytingaskrá
+## Breytingaskrá {#changelog}
 
 Sjá [Breytingaskrá](./changelog) fyrir heildarsögu útgáfa.

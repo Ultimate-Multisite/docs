@@ -3,17 +3,17 @@ title: Luchdaichear Faidhle Sunrise an Tuilleadain
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Luchdaiche Faidhle Addon Sunrise
+# Luchdaiche Faidhle Addon Sunrise {#addon-sunrise-file-loader}
 
 Tha Ultimate Multisite 2.8.0 a’ cur luchdaiche leudachaidh sunrise ris airson add-ons agus amalachaidhean MU-plugin gnàthaichte a dh’fheumas ruith rè tòiseachadh sunrise WordPress gun am faidhle `wp-content/sunrise.php` a chaidh a ghineadh a dheasachadh.
 
-## Cuin a chleachdas tu e
+## Cuin a chleachdas tu e {#when-to-use-it}
 
 Cleachd leudachadh sunrise nuair a dh’fheumas an t-amalachadh agad ruith mus tèid plugins àbhaisteach a luchdadh, leithid sligheachadh àrainnean gnàthaichte, làimhseachadh iarrtasan sònraichte do dh’òstair, no atharrachaidhean tràtha air tòiseachadh lìonra.
 
 Airson amalachaidhean àbhaisteach, b’ fheàrr leat plugins WordPress àbhaisteach, MU-plugins, agus na dubhain Ultimate Multisite clàraichte. Bidh còd sunrise a’ ruith glè thràth agus bu chòir dha fuireach beag, dìonach, agus saor bho eisimeileachdan.
 
-## Co-ghnàthachadh ainmeachadh fhaidhlichean
+## Co-ghnàthachadh ainmeachadh fhaidhlichean {#file-naming-convention}
 
 Cruthaich faidhle PHP leis an ainm `sunrise.php` ann an eòlaire addon aig a bheil ainm a’ tòiseachadh le `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Tha faidhlichean a tha a’ maidseadh air an luchdadh ann an òrdugh na h-aibidil a rèir slighe an addon.
 
-## Far an cuir thu am faidhle
+## Far an cuir thu am faidhle {#where-to-place-the-file}
 
 Cuir am faidhle ann am prìomh-eòlaire an addon leis a bheil an giùlan sunrise:
 
@@ -45,7 +45,7 @@ Tha an sgan air fhuasgladh an coimeas ri `WP_CONTENT_DIR`, chan ann ri luach là
 
 Na deasaich am faidhle `wp-content/sunrise.php` a chaidh a ghineadh gu dìreach. Leigidh an luchdaiche le còd gnàthaichte giùlan sunrise a leudachadh gun am faidhle sunrise bunaiteach a stàlaicheas agus a dh’ùraicheas Ultimate Multisite a sgaradh.
 
-## Dubhain agus criathragan rim faighinn
+## Dubhain agus criathragan rim faighinn {#hooks-and-filters-available}
 
 Bidh faidhlichean sunrise addon a’ ruith às dèidh do mhapadh àrainn Ultimate Multisite luchdadh agus mus loisg WordPress `ms_loaded`. Aig an ìre seo, faodaidh faidhle sunrise:
 
@@ -58,7 +58,7 @@ Bidh Ultimate Multisite a’ losgadh `wu_sunrise_loaded` às dèidh don luchdaic
 
 Na gairm ach gnìomhan a tha air an luchdadh mu thràth anns an ìre sunrise. Seachain obair throm air stòr-dàta, renderadh theamplaidean, iarrtasan HTTP, agus còd a tha a’ gabhail ris gu bheil òrdugh luchdadh plugin àbhaisteach air crìochnachadh.
 
-## Eisimpleir as lugha
+## Eisimpleir as lugha {#minimal-example}
 
 ```php
 <?php

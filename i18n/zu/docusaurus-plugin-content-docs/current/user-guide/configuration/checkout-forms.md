@@ -3,7 +3,7 @@ title: Amafomu Okukhokha
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Amafomu Okukhokha
+# Amafomu Okukhokha {#checkout-forms}
 
 Amafomu Okukhokha ayindlela elula futhi eguquguqukayo yokuzama izindlela ezahlukene lapho uzama ukuguqula amakhasimende amasha.
 
@@ -36,13 +36,13 @@ Kungenjalo, ungahlela noma uphinde wenze ikhophi yamafomu osuvele unawo ngokucho
 
 ![Izenzo zefomu lokukhokha lapho uhambisa igundane phezu kwalo](/img/config/checkout-form-hover-actions.png)
 
-#### Ukubuka Konke Kwesihleli seFomu Lokukhokha
+#### Ukubuka Konke Kwesihleli seFomu Lokukhokha {#checkout-form-editor-overview}
 
 Isihleli sefomu lokukhokha sinikeza isixhumi esibonakalayo esiphelele sokwakha amafomu akho okubhalisa. Nakhu ukubuka konke kokwakheka kwesihleli:
 
 ![Ukubuka konke kwesihleli seFomu Lokukhokha](/img/config/checkout-form-editor-overview.png)
 
-### Ukuhlela Ifomu Lokukhokha
+### Ukuhlela Ifomu Lokukhokha {#editing-a-checkout-form}
 
 Ungakha amafomu okukhokha ngezinhloso ezahlukene. Kulesi sibonelo sizosebenza ngefomu lokubhalisa.
 
@@ -112,7 +112,7 @@ Ukuze uthole i-shortcode yefomu lakho chofoza okuthi Khiqiza I-shortcode bese uk
 
 ![Inkinobho yokugcina ene-shortcode](/img/config/checkout-form-save.png)
 
-### Inkambu yeThebula Lamanani
+### Inkambu yeThebula Lamanani {#the-pricing-table-field}
 
 Inkambu ethi **Ithebula Lamanani** ibonisa imikhiqizo yakho efomini lokukhokha ukuze amakhasimende akhethe uhlelo. Lapho uhlela le nkambu, ungalungiselela izinketho eziningana:
 
@@ -130,17 +130,17 @@ Nansi indlela ithebula lamanani elivela ngayo efomini lokubhalisa le-frontend:
 
 Uma wengeza umkhiqizo kuThebula Lamanani ngaphambi kokuthi ifomu lifake izinkambu ezidingekayo ukuqedela ukugeleza kwe-checkout kwalowo mkhiqizo, umhleli manje ubonisa isexwayiso. Sebenzisa isexwayiso ukwengeza inkambu edingekayo engekho ngaphambi kokushicilela noma ukulondoloza izinguquko zefomu lokubhalisa elibukhoma.
 
-### Ukwengeza Iswishi Yokukhetha Isikhathi
+### Ukwengeza Iswishi Yokukhetha Isikhathi {#adding-a-period-selection-toggle}
 
 Uma ulungiselele [Izinguqulo Zentengo](creating-your-first-subscription-product#price-variations) emikhiqizweni yakho (isb. amanani enyanga nonyaka), ungangeza inkambu **Yokukhetha Isikhathi** efomini lakho le-checkout. Le nkambu ibonisa iswishi evumela amakhasimende ukuthi ashintshe phakathi kwezikhathi zokukhokhisa, futhi ithebula lamanani libuyekezwa ngokuguquguqukayo ngesikhathi sangempela.
 
-#### Isinyathelo 1: Setha Izinguqulo Zentengo Emikhiqizweni Yakho
+#### Isinyathelo 1: Setha Izinguqulo Zentengo Emikhiqizweni Yakho {#step-1-set-up-price-variations-on-your-products}
 
 Ngaphambi kokwengeza inkambu Yokukhetha Isikhathi, qiniseka ukuthi imikhiqizo yakho inezinguqulo zentengo ezilungisiwe. Iya ku-**Ultimate Multisite > Imikhiqizo**, hlela umkhiqizo, bese uya kuthebhu ethi **Izinguqulo Zentengo** ukuze wengeze ezinye izikhathi zokukhokhisa (isb. Okwaminyaka yonke ngentengo eyehlisiwe).
 
 ![Ithebhu Yezinguqulo Zentengo kumkhiqizo](/img/config/product-price-variations-tab.png)
 
-#### Isinyathelo 2: Engeza Inkambu Yokukhetha Isikhathi Efomini Lakho le-Checkout
+#### Isinyathelo 2: Engeza Inkambu Yokukhetha Isikhathi Efomini Lakho le-Checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Iya ku-**Ultimate Multisite > Amafomu e-Checkout** bese uhlela ifomu lakho le-checkout.
 
@@ -163,13 +163,13 @@ Ngaphambi kokwengeza inkambu Yokukhetha Isikhathi, qiniseka ukuthi imikhiqizo ya
 
 7. Chofoza **Londoloza Inkambu**.
 
-#### Isinyathelo 3: Beka Inkambu Ngaphezulu Kwethebula Lamanani
+#### Isinyathelo 3: Beka Inkambu Ngaphezulu Kwethebula Lamanani {#step-3-position-the-field-above-the-pricing-table}
 
 Ukuze umsebenzisi abe nolwazi olungcono kakhulu, qiniseka ukuthi inkambu Yokukhetha Isikhathi ivela **ngaphambi** kwenkambu Yethebula Lamanani esinyathelweni sakho se-checkout. Ungahudula izinkambu ukuze uzihlele kabusha kumhleli wefomu le-checkout. Ngale ndlela, amakhasimende aqala ngokukhetha isikhathi sokukhokhisa bese ebona amanani alesosikhathi.
 
 ![Umhleli wefomu le-checkout obonisa ukulandelana kwezinkambu](/img/config/checkout-form-editor-with-fields.png)
 
-#### Kusebenza Kanjani ku-Frontend
+#### Kusebenza Kanjani ku-Frontend {#how-it-works-on-the-frontend}
 
 Uma sekulungisiwe, amakhasimende avakashela ikhasi lakho lokubhalisa azobona isikhethi sesikhathi ngaphezulu kwethebula lamanani. Uma echofoza isikhathi sokukhokhisa esihlukile:
 
@@ -177,7 +177,7 @@ Uma sekulungisiwe, amakhasimende avakashela ikhasi lakho lokubhalisa azobona isi
   * Uma **Phoqa Izikhathi Ezihlukile** kukhutshaziwe enkambini Yethebula Lamanani, imikhiqizo engenanguqulo yentengo yesikhathi esikhethiwe izofihlwa.
   * Uma **Phoqa Izikhathi Ezihlukile** kunikwe amandla, yonke imikhiqizo ihlala ibonakala ngisho noma ingenanguqulo yesikhathi esikhethiwe (izobonisa intengo yayo ezenzakalelayo).
 
-#### Ukukhetha Kusengaphambili Isikhathi Sokukhokhisa nge-URL
+#### Ukukhetha Kusengaphambili Isikhathi Sokukhokhisa nge-URL {#pre-selecting-a-billing-period-via-url}
 
 Ungaphinde ukhethe kusengaphambili umkhiqizo nesikhathi sokukhokhisa nge-URL. Ultimate Multisite isekela lawa maphethini e-URL:
 
@@ -185,11 +185,11 @@ Ungaphinde ukhethe kusengaphambili umkhiqizo nesikhathi sokukhokhisa nge-URL. Ul
   * `/register/premium/12` — Ikhetha kusengaphambili umkhiqizo nobude besikhathi bezinyanga eziyi-12
   * `/register/premium/1/year` — Ikhetha kusengaphambili umkhiqizo onobude besikhathi bonyaka o-1
 
-### Inkambu Yokukhetha Isifanekiso
+### Inkambu Yokukhetha Isifanekiso {#the-template-selection-field}
 
 Inkambu **Yokukhetha Isifanekiso** ivumela amakhasimende ukuthi akhethe isifanekiso sesayithi ngesikhathi se-checkout. Manje ifakiwe ngokuzenzakalelayo kuzifanekiso zefomu le-checkout **zesinyathelo esisodwa** kanye **nezinyathelo eziningi** ezengezwe ku-Ultimate Multisite v2.6.1.
 
-#### Ukwengeza inkambu mathupha
+#### Ukwengeza inkambu mathupha {#adding-the-field-manually}
 
 Uma usebenza ngefomu eladalwa ngaphambi kwe-v2.6.1, noma eliqale kusifanekiso esingenalutho:
 
@@ -200,11 +200,11 @@ Uma usebenza ngefomu eladalwa ngaphambi kwe-v2.6.1, noma eliqale kusifanekiso es
    - **Ilebula** — Isihloko amakhasimende asibona ngaphezulu kwegridi yezifanekiso (isb. "Khetha isifanekiso sesayithi").
    - **Kuyadingeka** — Ukuthi amakhasimende kufanele yini akhethe isifanekiso ngaphambi kokuqhubeka.
 
-#### Kusebenza kanjani
+#### Kusebenza kanjani {#how-it-works}
 
 Lapho ikhasimende likhetha isifanekiso ngesikhathi se-checkout, Ultimate Multisite isisebenzisa lapho ihlinzeka ngesayithi labo elisha. Izifanekiso eziboniswayo zivela ohlwini lwakho lwe-**Izifanekiso Zesayithi** (**Ultimate Multisite > Izifanekiso Zesayithi**). Izifanekiso ezimakwe njengezitholakala kumakhasimende kuphela ezivela lapha.
 
-### Izizinda eziyisisekelo zefomu le-checkout
+### Izizinda eziyisisekelo zefomu le-checkout {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 iphatha izizinda ezilungiselelwe ezinkambini **ze-URL Yesayithi** zefomu le-checkout njengezizinda eziyisisekelo zenethiwekhi. Sebenzisa izilungiselelo zezizinda ezitholakalayo zenkambu lapho ufuna amakhasimende adale amasayithi ngaphansi kwesizinda sokubhalisa esabiwe esisodwa noma ezingaphezu kwesisodwa, njenge-`example.com` ne-`sites.example.com`.
 
@@ -212,6 +212,6 @@ Ama-domain ayisisekelo e-checkout-form okwabelwana ngawo awathathwa njengokumata
 
 Gcina ama-domain wangokwezifiso ama-host amatanisiwe ekhasimende ngalinye, njenge-`customer-example.com`. Gcina ama-domain ayisisekelo e-checkout-form njengama-host okubhalisa okwabelwana ngawo amasayithi amaningi angawasebenzisa.
 
-#### Ukususa inkambu
+#### Ukususa inkambu {#removing-the-field}
 
 Uma unganikezi izifanekiso zesayithi, susa inkambu ethi Template Selection efomini lakho. Amakhasimende azobe esethola noma yisiphi isifanekiso esizenzakalelayo esilungiselelwe ngaphansi kokuthi **Ultimate Multisite > Settings > Site Templates**.

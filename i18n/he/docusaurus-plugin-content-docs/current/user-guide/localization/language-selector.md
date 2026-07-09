@@ -3,7 +3,7 @@ title: בורר שפה
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# בורר שפות
+# בורר שפות {#language-selector}
 
 תכונה זו מסופקת על ידי התוסף **Language Selector**.
 

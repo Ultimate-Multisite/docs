@@ -3,13 +3,13 @@ title: Opsætning af manuelle betalinger
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Opsætning af manuelle betalinger (v2)
+# Opsætning af manuelle betalinger (v2) {#setting-up-manual-payments-v2}
 
 _**VIGTIG BEMÆRKNING: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
 Manuelle betalinger er en måde, hvorpå du kan tilbyde andre betalingsmetoder, hvis **Stripe** eller **PayPal** ikke er tilgængelige for dine brugere. Det kan være en bankoverførsel eller en anden betalingsmetode, der er tilgængelig lokalt for dine brugere.
 
-## Sådan aktiverer du manuelle betalinger
+## Sådan aktiverer du manuelle betalinger {#how-to-enable-manual-payments}
 
 Opsætning af manuel betaling er meget nemt. Du skal blot aktivere det under betalingsgateways og indtaste detaljerede instruktioner om, hvordan brugeren skal sende betalingen.
 
@@ -31,7 +31,7 @@ Og de vil også modtage en besked på din **Thank You**-side med dine betalingsi
 
 <!-- Skærmbillede ikke tilgængeligt: Thank You-side, der viser betalingsinstruktioner efter checkout -->
 
-## Bekræftelse af manuelle betalinger
+## Bekræftelse af manuelle betalinger {#confirming-manual-payments}
 
 For at bekræfte en manuel betaling skal du gå til menuen **Payments** i venstre bjælke. Der kan du se alle betalingerne på dit netværk og deres detaljer, herunder deres **status**. En manuel betaling vil altid have statussen **Pending**, indtil du manuelt ændrer den.
 

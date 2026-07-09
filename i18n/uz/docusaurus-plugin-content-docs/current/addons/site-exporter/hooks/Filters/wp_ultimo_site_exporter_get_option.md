@@ -4,11 +4,11 @@ title: Filtr - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filtr: wp_ultimo_site_exporter_get_option
+# Filtr: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Sluglangan tarmoq opsiyasi qiymatini qaytaradi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Sluglangan tarmoq opsiyasi qiymatini qaytaradi.
 | $option_name | `string` | Opsiya nomi. |
 | $default | `mixed` | Standart qiymat. |
 
-### Dan beri
+### Dan beri {#since}
 
 - 1.9.6
-### Manba
+### Manba {#source}
 
 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) faylida 126-qatorda aniqlangan
 
 
-## Qaytaradi
+## Qaytaradi {#returns}
 Slugfield tarmoq opsiyasi qiymati.

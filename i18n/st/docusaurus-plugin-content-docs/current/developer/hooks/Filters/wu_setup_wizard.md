@@ -4,11 +4,11 @@ title: Sefe - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Sefe: wu_setup_wizard
+# Sefe: wu_setup_wizard {#filter-wusetupwizard}
 
 Lumella baqapi ho eketsa mehato e meng ya wizard ya ho seta.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Lumella baqapi ho eketsa mehato e meng ya wizard ya ho seta.
 | $is_migration | `bool` | Hore na sena ke phalliso kapa tjhe. |
 | $wizard | `object` | Mohlala wa hajoale. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.0.0
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) moleng wa 525
 
 
-## E kgutlisa
+## E kgutlisa {#returns}

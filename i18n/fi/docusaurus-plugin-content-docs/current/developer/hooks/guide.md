@@ -3,15 +3,15 @@ title: Hookien käyttöopas
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks-käyttöopas
+# Hooks-käyttöopas {#hooks-usage-guide}
 
 Ultimate Multisite tarjoaa yli 200 action hookia ja yli 280 filter hookia. Tämä sivu käsittelee yleisimmin käytettyjä hookeja käytännön esimerkkien avulla. Täydellisen automaattisesti luodun viitteen löydät selaamalla tämän osion muita sivuja.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Asiakkaan elinkaari
+### Asiakkaan elinkaari {#customer-lifecycle}
 
-#### Asiakkaan luonnin jälkeen
+#### Asiakkaan luonnin jälkeen {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Asiakkaan tilan muutos
+#### Asiakkaan tilan muutos {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Sivuston hookit
+### Sivuston hookit {#site-hooks}
 
-#### Sivuston julkaisun jälkeen
+#### Sivuston julkaisun jälkeen {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Ennen mallipohjan käyttöönottoa
+#### Ennen mallipohjan käyttöönottoa {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Jäsenyyden hookit
+### Jäsenyyden hookit {#membership-hooks}
 
-#### Tilan siirtymät
+#### Tilan siirtymät {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Maksun hookit
+### Maksun hookit {#payment-hooks}
 
-#### Maksu suoritettu / epäonnistunut
+#### Maksu suoritettu / epäonnistunut {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout-hookit
+### Checkout-hookit {#checkout-hooks}
 
-#### Ennen käsittelyä / valmistumisen jälkeen
+#### Ennen käsittelyä / valmistumisen jälkeen {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain-hookit
+### Domain-hookit {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Hinnoittelun suodattimet
+### Hinnoittelun suodattimet {#pricing-filters}
 
-#### Ostoskorin kokonaissumma
+#### Ostoskorin kokonaissumma {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Verokannat
+#### Verokannat {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Mallipohjan suodattimet
+### Mallipohjan suodattimet {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Rajoitusten suodattimet
+### Rajoitusten suodattimet {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway-suodattimet
+### Gateway-suodattimet {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout-lomakkeen kentät
+### Checkout-lomakkeen kentät {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Sähköpostin sisältö
+### Sähköpostin sisältö {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

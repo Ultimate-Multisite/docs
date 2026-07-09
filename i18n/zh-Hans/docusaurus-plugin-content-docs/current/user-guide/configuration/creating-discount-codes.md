@@ -3,13 +3,13 @@ title: 创建折扣码
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# 创建折扣代码 (v2)
+# 创建折扣代码 (v2) {#creating-discount-codes-v2}
 
 _**重要说明：本文适用于 Ultimate Multisite 版本 2.x。**_
 
 使用 Ultimate Multisite，你可以创建折扣代码，为你的客户的订阅提供折扣。而且创建起来很简单！
 
-## 创建和编辑折扣代码
+## 创建和编辑折扣代码 {#creating-and-editing-discount-codes}
 
 要创建或编辑折扣代码，请前往 **Ultimate Multisite > Discount Codes**。
 
@@ -87,7 +87,7 @@ _**重要说明：本文适用于 Ultimate Multisite 版本 2.x。**_
 
 ###
 
-### 使用 URL 参数：
+### 使用 URL 参数： {#using-url-parameters}
 
 如果你想自定义定价表，或为你的网站构建一个漂亮的优惠券代码页面，并希望自动将折扣代码应用到你的结账表单，你可以通过 URL 参数来实现。
 

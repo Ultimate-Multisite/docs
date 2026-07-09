@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Kompatibiliti Tutor Multisite
+# Kompatibiliti Tutor Multisite {#tutor-multisite-compatibility}
 
 Plugin WordPress yang menyediakan pembaikan kompatibiliti untuk Tutor LMS dalam persekitaran multisite.
 
-## Penerangan
+## Penerangan {#description}
 
 Plugin ini menyediakan pembaikan kompatibiliti penting untuk menjalankan Tutor LMS pada rangkaian WordPress multisite. Ia menguruskan pendaftaran pengguna, pengurusan pengajar, had kursus, dan fungsi khusus multisite yang lain.
 
-## Ciri-ciri
+## Ciri-ciri {#features}
 
 - **Pengurusan Jadual Pangkalan Data**: Mengesan dan mencipta secara automatik jadual Tutor LMS yang hilang yang gagal kerana kekangan kunci asing multisite
 - **Pendaftaran Pengguna Multisite**: Pengendali AJAX tersuai untuk menguruskan pendaftaran pengguna merentasi tapak rangkaian
@@ -24,7 +24,7 @@ Plugin ini menyediakan pembaikan kompatibiliti penting untuk menjalankan Tutor L
 - **Paparan Pentadbir Tersuai**: Antaramuka senarai dan pengurusan pengajar yang sedar multisite
 - **Alat Pentadbir**: Antaramuka pengurusan pangkalan data untuk pentadbir rangkaian dan tapak
 
-## Keperluan
+## Keperluan {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Plugin ini menyediakan pembaikan kompatibiliti penting untuk menjalankan Tutor L
 - Pemasangan WordPress Multisite
 - Plugin Ultimate Multisite (untuk fungsi had kursus)
 
-## Pemasangan
+## Pemasangan {#installation}
 
 1. Muat naik fail plugin ke `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Pastikan Tutor LMS telah dipasang dan diaktifkan
 3. Aktifkan plugin melalui menu 'Plugins' dalam WordPress
 4. Plugin akan berintegrasi secara automatik dengan Tutor LMS
 
-## Struktur Fail
+## Struktur Fail {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Fungsi yang Dipindahkan dari Plugin MU
+## Fungsi yang Dipindahkan dari Plugin MU {#functionality-moved-from-mu-plugin}
 
 Plugin ini mengandungi fungsi yang sebelum ini berada di `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Plugin ini mengandungi fungsi yang sebelum ini berada di `wp-content/mu-plugins/
 - Pengendalian pendaftaran pengguna multisite
 - Paparan ID produk kursus
 
-## Pengurusan Pangkalan Data
+## Pengurusan Pangkalan Data {#database-management}
 
-### Masalah
+### Masalah {#the-problem}
 
 Dalam persekitaran WordPress multisite, penciptaan jadual Tutor LMS gagal untuk jadual dengan kekangan kunci asing kepada jadual pengguna. Ini berlaku kerana:
 
@@ -81,7 +81,7 @@ Dalam persekitaran WordPress multisite, penciptaan jadual Tutor LMS gagal untuk 
 - Kunci asing merujuk kepada `wp_2_users` (yang tidak wujud)
 - Jadual pengguna sebenar ialah `wp_users` (dikongsi merentasi rangkaian)
 
-### Penyelesaian
+### Penyelesaian {#the-solution}
 
 Plugin ini secara automatik:
 
@@ -92,13 +92,13 @@ Plugin ini secara automatik:
    - Penciptaan tapak baharu dalam rangkaian
    - Pemeriksaan jadual manual melalui antaramuka pentadbir
 
-### Jadual Terjejas
+### Jadual Terjejas {#affected-tables}
 
 - `tutor_coupon_usages` - Mengandungi kunci asing kepada jadual pengguna
 - `tutor_carts` - Mengandungi kunci asing kepada jadual pengguna
 - `tutor_notification_preferences` - Jadual TutorPro dengan kunci asing kepada jadual pengguna
 
-### Antaramuka Pentadbir
+### Antaramuka Pentadbir {#admin-interface}
 
 Akses alat pengurusan pangkalan data di:
 
@@ -111,6 +111,6 @@ Antaramuka ini membolehkan anda untuk:
 - Menyemak konfigurasi pangkalan data
 - Melihat maklumat status terperinci
 
-## Sokongan
+## Sokongan {#support}
 
 Plugin ini direka khas untuk platform KursoPro. Untuk sokongan teknikal, sila hubungi pasukan pembangunan.

@@ -3,7 +3,7 @@ title: Cholozera cha Maluso
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Buku la Abilities
+# Buku la Abilities {#abilities-reference}
 
 Abilities ndi zochita zazing'ono zomwe Gratis AI Agent ingayitanitse pa WordPress installation yanu. Ability iliyonse ndi PHP class yolembetsedwa yomwe imatulutsa JSON schema — agent imawerenga schema iyi pa runtime kuti imvetse parameter zofunika ndi zomwe ability imabweza.
 
@@ -11,11 +11,11 @@ Tsambali limalemba abilities zonse zomwe zikubwera ndi Gratis AI Agent v1.9.0.
 
 ---
 
-## Mitundu ya Zolemba Zosinthidwa
+## Mitundu ya Zolemba Zosinthidwa {#custom-post-types}
 
 Abilities izi zimayang'anira mitundu ya zolemba zosinthidwa (CPTs) zolembetsedwa kudzera mwa agent. Zolembetsa zimasungidwa mu tebulo la WordPress options kotero zimakhalabe ngakhale plugin itayimitsidwa ndi kuyambitsidwanso.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Imalembetsa mtundu watsopano wa cholemba chosinthidwa.
 
@@ -50,7 +50,7 @@ Imalembetsa mtundu watsopano wa cholemba chosinthidwa.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Imabweza mitundu yonse ya zolemba zosinthidwa yolembetsedwa ndi agent.
 
@@ -73,7 +73,7 @@ Imabweza mitundu yonse ya zolemba zosinthidwa yolembetsedwa ndi agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Imachotsa kulembetsa kwa mtundu wa cholemba chosinthidwa womwe unalembetsedwa kale ndi agent. Zolemba zomwe zilipo za mtundu umenewo zimakhalabe mu database koma sizipezekanso kudzera mwa mtundu wa cholemba.
 
@@ -87,11 +87,11 @@ Imachotsa kulembetsa kwa mtundu wa cholemba chosinthidwa womwe unalembetsedwa ka
 
 ---
 
-## Ma Taxonomy Osinthidwa
+## Ma Taxonomy Osinthidwa {#custom-taxonomies}
 
 Abilities izi zimayang'anira ma taxonomy osinthidwa. Monga CPTs, zolembetsa za taxonomy zimasungidwa.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Imalembetsa taxonomy yatsopano yosinthidwa.
 
@@ -123,7 +123,7 @@ Imalembetsa taxonomy yatsopano yosinthidwa.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Imabweza ma taxonomy onse osinthidwa olembetsedwa ndi agent.
 
@@ -146,7 +146,7 @@ Imabweza ma taxonomy onse osinthidwa olembetsedwa ndi agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Imachotsa kulembetsa kwa taxonomy yosinthidwa yomwe inalembetsedwa kale ndi agent.
 
@@ -160,11 +160,11 @@ Imachotsa kulembetsa kwa taxonomy yosinthidwa yomwe inalembetsedwa kale ndi agen
 
 ---
 
-## Dongosolo la Kapangidwe
+## Dongosolo la Kapangidwe {#design-system}
 
 Abilities za dongosolo la kapangidwe zimasintha mawonekedwe owoneka a WordPress site — kuyambira custom CSS mpaka block patterns ndi logo ya site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Imawonjezera CSS ku `<head>` ya site kudzera mwa `wp_add_inline_style`. CSS imasungidwa mu option ya `gratis_ai_agent_custom_css` ndipo imachotsedwa bwino pamzere ikakhazikitsidwanso ability.
 
@@ -190,7 +190,7 @@ Imawonjezera CSS ku `<head>` ya site kudzera mwa `wp_add_inline_style`. CSS imas
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Imalembetsa block pattern yogwiritsidwanso ntchito mu laibulale ya WordPress pattern.
 
@@ -209,7 +209,7 @@ Imalembetsa block pattern yogwiritsidwanso ntchito mu laibulale ya WordPress pat
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Imalemba block patterns zonse zolembetsedwa ndi agent.
 
@@ -231,7 +231,7 @@ Imalemba block patterns zonse zolembetsedwa ndi agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Imayika logo ya tsamba la WordPress kukhala ID ya attachment yomwe yaperekedwa kapena URL ya chithunzi chakutali. URL ikaperekedwa, chithunzicho chimatsitsidwa ndi kulowetsedwa mu Media Library.
 
@@ -248,7 +248,7 @@ Chimodzi mwa `attachment_id` kapena `url` chiyenera kuperekedwa.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Imagwiritsa ntchito preset ya mitundu/typography yomwe yatchulidwa pa `theme.json` (kapena `global-styles`) ya theme yogwira ntchito. Ma preset ndi magulu osankhidwa omwe amasamalidwa ndi gulu la Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Imagwiritsa ntchito preset ya mitundu/typography yomwe yatchulidwa pa `theme.jso
 
 ---
 
-## Masitayilo a Global
+## Masitayilo a Global {#global-styles}
 
 Kuthekera kwa Masitayilo a Global kumawerenga ndi kulemba ma value a theme.json kudzera mu WordPress Global Styles API, kukhudza ma block onse ndi ma template pa tsamba lonse.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Imabwezera kasinthidwe kamakono ka masitayilo a global.
 
@@ -291,7 +291,7 @@ Imabwezera kasinthidwe kamakono ka masitayilo a global.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Imasintha value imodzi kapena zingapo mu kasinthidwe ka masitayilo a global.
 
@@ -318,7 +318,7 @@ Imasintha value imodzi kapena zingapo mu kasinthidwe ka masitayilo a global.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Imakhazikitsanso zosintha zonse za masitayilo a global zomwe agent adagwiritsa ntchito, kubwezeretsa ma default a theme.
 
@@ -328,11 +328,11 @@ Imakhazikitsanso zosintha zonse za masitayilo a global zomwe agent adagwiritsa n
 
 ---
 
-## Ma Menu a Navigation
+## Ma Menu a Navigation {#navigation-menus}
 
 Kuthekera kwa Navigation Menu kumapanga ndi kusamalira ma menu a WordPress nav ndi zinthu zake.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Imapanga menu yatsopano ya WordPress navigation.
 
@@ -347,7 +347,7 @@ Imapanga menu yatsopano ya WordPress navigation.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Imasintha dzina la menu kapena kuipatsanso malo a theme.
 
@@ -363,7 +363,7 @@ Imasintha dzina la menu kapena kuipatsanso malo a theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Imawonjezera chinthu ku menu ya navigation yomwe ilipo.
 
@@ -383,7 +383,7 @@ Imawonjezera chinthu ku menu ya navigation yomwe ilipo.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Imachotsa chinthu mu menu ya navigation.
 
@@ -397,7 +397,7 @@ Imachotsa chinthu mu menu ya navigation.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Imalemba ma menu onse a WordPress navigation, kuphatikizapo malo awo a theme omwe apatsidwa.
 
@@ -420,11 +420,11 @@ Imalemba ma menu onse a WordPress navigation, kuphatikizapo malo awo a theme omw
 
 ---
 
-## Kasamalidwe ka Options
+## Kasamalidwe ka Options {#options-management}
 
 Kuthekera kwa Options kumawerenga ndi kulemba ma options a WordPress kudzera mu `get_option` / `update_option`. Blocklist yachitetezo yomangidwa mkati imalepheretsa kusintha mwangozi kwa makonzedwe ofunika kwambiri.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Imawerenga option ya WordPress.
 
@@ -440,7 +440,7 @@ Imabwezera cholakwika ngati `option_name` ili pa blocklist yachitetezo.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Imalemba option ya WordPress.
 
@@ -458,7 +458,7 @@ Imabwezera cholakwika ngati `option_name` ili pa safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Imachotsa option ya WordPress.
 
@@ -474,7 +474,7 @@ Imabwezera cholakwika ngati `option_name` ili pa safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Imalemba options za WordPress zomwe zikufanana ndi pattern.
 
@@ -498,11 +498,11 @@ Imalemba options za WordPress zomwe zikufanana ndi pattern.
 
 ---
 
-## Kasamalidwe ka Zokhutira
+## Kasamalidwe ka Zokhutira {#content-management}
 
 Maluso a Kasamalidwe ka Zokhutira amapanga ndi kusintha posts ndi masamba a WordPress. Ma ID a post amabweretsedwa kuti masitepe otsatira mu mapulani a maluso ambiri athe kutchula zokhutira zomwe zapangidwa.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Imapanga post yatsopano ya WordPress, tsamba, kapena cholowa cha mtundu wa post wosinthidwa mwamakonda.
 
@@ -537,7 +537,7 @@ Imapanga post yatsopano ya WordPress, tsamba, kapena cholowa cha mtundu wa post 
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Imasintha post kapena tsamba la WordPress lomwe lilipo kale.
 
@@ -567,7 +567,7 @@ Imasintha post kapena tsamba la WordPress lomwe lilipo kale.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Imapanga posts angapo mu kuyitana kumodzi kwa luso, kuchepetsa maulendo obwerera-bwerera panthawi yomanga site kapena kulowetsa zokhutira zambiri. Posts amapangidwa motsatizana; ngati imodzi yalephera, ena amapitiriza ndipo kulepherako kumafotokozedwa mu array ya zotsatira.
 
@@ -619,7 +619,7 @@ Imapanga posts angapo mu kuyitana kumodzi kwa luso, kuchepetsa maulendo obwerera
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Imapatsa chithunzi chosankhidwa (thumbnail ya post) ku post kapena tsamba lomwe lilipo kale. Imavomereza ID ya attachment yomwe ilipo kale mu Media Library kapena URL ya chithunzi chakutali; ngati URL yaperekedwa, chithunzicho chimatsitsidwa ndikulowetsedwa zokha.
 
@@ -638,7 +638,7 @@ Chimodzi mwa `attachment_id` kapena `url` chiyenera kuperekedwa.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Imapanga fomu yolumikizirana pogwiritsa ntchito plugin ya fomu yomwe ikugwira ntchito (Contact Form 7, WPForms, Fluent Forms, kapena Gravity Forms, kutengera yomwe yaikidwa). Imabwezera shortcode yomwe ingayikidwe mu post kapena tsamba lililonse.
 
@@ -691,11 +691,11 @@ Imapanga fomu yolumikizirana pogwiritsa ntchito plugin ya fomu yomwe ikugwira nt
 
 ---
 
-## Kuwunika Kowoneka
+## Kuwunika Kowoneka {#visual-review}
 
 Kuthekera kwa Kuwunika Kowoneka kumalola wothandizira kujambula zithunzi za masamba amoyo ndi kuzisanthula, zomwe zimathandiza kuwunika kapangidwe modziyimira pawokha, kuyerekezera pamaso/pambuyo, ndi macheke a kusintha kowoneka popanda kufuna chowonjezera chilichonse cha msakatuli.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Imajambula chithunzi cha tsamba la WordPress pa URL yoperekedwa pogwiritsa ntchito msakatuli wopanda mutu wa mbali ya seva. Chithunzicho chimasungidwa ku Laibulale ya Media ndipo CDN URL imabwezedwa.
 
@@ -724,7 +724,7 @@ Imajambula chithunzi cha tsamba la WordPress pa URL yoperekedwa pogwiritsa ntchi
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Imatenga zithunzi ziwiri ndipo imabweza mphambu ya kusiyana kowoneka kuphatikizapo chithunzi cha kusiyana chomwe chikuwonetsa madera omwe asintha. Ndi chothandiza potsimikizira kuti kusintha kwa kapangidwe kwatulutsa zotsatira zomwe zinkayembekezeredwa kapena pozindikira kubwerera m'mbuyo kosayembekezereka.
 
@@ -754,7 +754,7 @@ Imatenga zithunzi ziwiri ndipo imabweza mphambu ya kusiyana kowoneka kuphatikiza
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Imajambula chithunzi cha tsamba ndipo imachitumiza ku language model kuti chisanthulidwe mowoneka. Imabweza kuwunika kokonzedwa komwe kumaphimba layout, typography, kagwiritsidwe ka mitundu, ndi nkhawa za accessibility.
 
@@ -785,11 +785,11 @@ Imajambula chithunzi cha tsamba ndipo imachitumiza ku language model kuti chisan
 
 ---
 
-## Kuthekera Koyikika
+## Kuthekera Koyikika {#installable-abilities}
 
 Registry ya Kuthekera Koyikika imakulolani kukulitsa wothandizira ndi mapaketi owonjezera a kuthekera omwe amagawidwa ngati mapulagini a WordPress. Paketi iliyonse imalembetsa kuthekera kumodzi kapena koposerapo pogwiritsa ntchito API yokhazikika ya kuthekera.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Imabweza kalozera wa mapaketi a kuthekera omwe alipo kuti ayikidwe kuchokera mu registry.
 
@@ -818,7 +818,7 @@ Imabweza kalozera wa mapaketi a kuthekera omwe alipo kuti ayikidwe kuchokera mu 
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Imatsitsa ndi kuyambitsa paketi ya maluso kuchokera m'kaundula.
 
@@ -832,7 +832,7 @@ Imatsitsa ndi kuyambitsa paketi ya maluso kuchokera m'kaundula.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Imafunsa kaundula wa maluso kuti ipeze pulagini yabwino kwambiri pa kagwiritsidwe ntchito kofotokozedwa ndipo, ngati mukufuna, imayiyika.
 

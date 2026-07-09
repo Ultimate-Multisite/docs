@@ -3,13 +3,13 @@ title: Manuale integrationis
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Dux Integrationis
+# Dux Integrationis {#integration-guide}
 
 Hic dux modos communes integrationis cum Ultimate Multisite complectitur, inter quos sunt coniungere ad officia externa, aedificare portas solutionum proprias, et tractare webhooks.
 
 Pro infrastructura tenentis segregata, vide [Integratio Multi-Tenancy](./multi-tenancy) ad bootstrap tenentis sui iuris, verificationem migrationis, SSO, et consilium dissolutionis.
 
-## Integratio CRM
+## Integratio CRM {#crm-integration}
 
 Synchroniza data clientium cum CRM tuo cum novi clientes inscribuntur:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integratio Analytics
+## Integratio Analytics {#analytics-integration}
 
 Observa eventus negotii claves per totum cyclum vitae clientis:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Gradus Sequentes
+## Gradus Sequentes {#next-steps}
 
 - [Evolutio Portae Propriae](./custom-gateway) — Aedifica portam solutionis tuam
 - [Tractatio Webhook](./webhooks) — Crea endpoints webhook proprios

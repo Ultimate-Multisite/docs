@@ -3,7 +3,7 @@ title: Captcha endringslogg
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Endringslogg
+# Captcha Endringslogg {#captcha-changelog}
 
 Versjon: 1.5.0 - Utgitt 2026-05-22
 * Nytt: Hard-stopp ratebegrenser — teller alle GET- og POST-forespørsler på captcha-beskyttede sider (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) og svarer med HTTP 429, et `Retry-After`-header, og en tilfeldig tarpit-pause (1–5 sekunder, med et hardt tak på 15 sekunder).

@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Ενέργεια: set_auth_cookie
+# Ενέργεια: set_auth_cookie {#action-setauthcookie}
 
 Εκτελείται αμέσως πριν από τη ρύθμιση του cookie αυθεντικοποίησης.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Name | Type | Περιγραφή |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | Σχήμα αυθεντικοποίησης. Οι τιμές περιλαμβάνουν 'auth' ή 'secure_auth'. |
 | $token | `string` | Το session token του χρήστη που θα χρησιμοποιηθεί για αυτό το cookie. |
 
-### Από
+### Από {#since}
 
 - 2.5.0
 - 4.9.0: Προστέθηκε η παράμετρος <code>$token</code>.
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) στην γραμμή 124

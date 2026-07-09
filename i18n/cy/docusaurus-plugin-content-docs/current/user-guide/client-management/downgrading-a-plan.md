@@ -3,13 +3,13 @@ title: Gofio'r Plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Downgrading un plan (v2)
+# Downgrading un plan (v2) {#downgrading-a-plan-v2}
 
 _**NOTYNWID: Mae'r ail ddefnyddiol hwn yn cyfeiriad i Ultimate Multisite ffurf 2.x.**_
 
 Mae gwahanu neu ddefnyddio plan neu chwarae yn gweithredol ystodol sydd â'u cyddeeirion gallai wneud os oes gennych buddsodau hanfodol neu os wedi penderfynu nad angen nhw llawer resurs i gyflwyno eu subsite.
 
-## Sut i gwahanu plan
+## Sut i gwahanu plan {#how-to-downgrade-a-plan}
 
 Gall eich cyddeeirion gwahanu eu plan unrhyw amser gan ddefnyddio'r dashboard admin y subsite eu a chwarae **Change** (Gwahanu) o hyd i'r peidiad eu cyfrifau.
 
@@ -25,7 +25,7 @@ I ddeall y borthwr angen gwahanu yw clisiad y boten **Complete Checkout** (Cyflw
 
 ![Peidiad peidiad gan dangos newid yn cael ei chwarae](/img/account-page/pending-change.png)
 
-### Beth sydd wedi digwydd pan mae unig yn gwahanu eu plan
+### Beth sydd wedi digwydd pan mae unig yn gwahanu eu plan {#what-happens-when-a-user-downgrades-their-plan}
 
 Mae'n bwysig nodi bod gwahanu'r plan nid yn newid y cyfrifau sydd ar gael yn y subsite ystodol.
 
@@ -37,7 +37,7 @@ Ar gyfer y postau sydd yn dros y cyflenau wedi'u setio ar y plan, mae gennych ch
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Beth sydd â'r pwylliant
+### Beth sydd â'r pwylliant {#what-happens-to-the-payment}
 
 Yn fersiwn 2.0, nid yw'n angen unrhyw adeiladu ar y pwylliant yn ystod proration.
 

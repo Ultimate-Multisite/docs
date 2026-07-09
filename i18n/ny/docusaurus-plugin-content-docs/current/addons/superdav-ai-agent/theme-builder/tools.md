@@ -3,17 +3,17 @@ title: Zida ndi Masinthidwe
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Zida ndi Kasinthidwe
+# Zida ndi Kasinthidwe {#tools-and-configuration}
 
 Theme Builder imagwiritsa ntchito zida zingapo kusanthula, kupanga kapangidwe, ndi kumanga site yanu ya WordPress. Mu mtundu wa 1.16.0, **sd-ai-agent/site-scrape tsopano ndi chida cha Gawo 1**, zomwe zimachititsa kuti chipezeke mwachisawawa mu Theme Builder. Superdav AI Agent v1.18.0 imayambitsanso phukusi lapamwamba lothandizira lomwe limagawidwa padera la mayendedwe a ntchito a opanga odalirika; zida zimenezo si gawo la phukusi loyambira la WordPress.org ndipo ziyenera kukhazikitsidwa ndi kuvomerezedwa padera.
 
-## Zida Zomwe Zilipo
+## Zida Zomwe Zilipo {#available-tools}
 
-### Zida za Gawo 1 (Zimapezeka Nthawi Zonse)
+### Zida za Gawo 1 (Zimapezeka Nthawi Zonse) {#tier-1-tools-always-available}
 
 Zida za Gawo 1 zimapezeka mwachisawawa mu Theme Builder popanda kasinthidwe kena kalikonse.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Cholinga:** Kusanthula mawebusayiti omwe alipo kuti mutenge kudzoza kwa kapangidwe, dongosolo la zomwe zili, ndi magwiridwe antchito.
 
@@ -51,11 +51,11 @@ Santhulani kapangidwe ka example.com ndipo mugwiritse ntchito ngati kudzoza kwa 
 - Ma site okhala ndi JavaScript yambiri angakhale ndi kusanthula kochepa
 - Ma site akulu angatenge nthawi yaitali kusanthula
 
-### Zida za Gawo 2 (Zosankha)
+### Zida za Gawo 2 (Zosankha) {#tier-2-tools-optional}
 
 Zida za Gawo 2 zimapezeka zikayatsidwa mwachindunji mu zoikamo za Theme Builder.
 
-#### Analytics Yapamwamba
+#### Analytics Yapamwamba {#advanced-analytics}
 
 Imapereka miyeso yatsatanetsatane ya magwiridwe:
 
@@ -65,7 +65,7 @@ Imapereka miyeso yatsatanetsatane ya magwiridwe:
 - Chiwerengero cha kupezeka kwa onse
 - Chiwerengero cha machitidwe abwino kwambiri
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
 Imasanthula ndi kupereka malingaliro okonza pa:
 
@@ -75,11 +75,11 @@ Imasanthula ndi kupereka malingaliro okonza pa:
 - Dongosolo la zomwe zili
 - Kuyika kwa call-to-action
 
-### Zida za Gawo 3 (Premium)
+### Zida za Gawo 3 (Premium) {#tier-3-tools-premium}
 
 Zida za Gawo 3 zimafuna kasinthidwe kena kapena ma feature a premium.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Imapanga zomwe zili za:
 
@@ -89,7 +89,7 @@ Imapanga zomwe zili za:
 - Mafotokozedwe a meta
 - Zolemba za call-to-action
 
-#### Zida Zapamwamba za Kapangidwe
+#### Zida Zapamwamba za Kapangidwe {#advanced-design-tools}
 
 Imapereka luso lapamwamba la kapangidwe:
 
@@ -99,7 +99,7 @@ Imapereka luso lapamwamba la kapangidwe:
 - Theory yapamwamba ya mitundu
 - Kukonza typography
 
-### Zida Zothandizira Zapamwamba (Phukusi Lapadera)
+### Zida Zothandizira Zapamwamba (Phukusi Lapadera) {#advanced-companion-tools-separate-package}
 
 Phukusi lothandizira lapamwamba limagawidwa padera kuchokera ku kutulutsidwa koyambira kwa Superdav AI Agent. Lalinganizidwa kwa malo a opanga odalirika ndi eni-site komwe administrators amalola mwachindunji agent kugwiritsa ntchito zida zokhala ndi mphamvu zazikulu.
 
@@ -116,9 +116,9 @@ Luso la phukusi lothandizira lapamwamba lingaphatikizepo:
 
 Musazilembere ngati zida za Theme Builder zomwe zimapezeka kwa aliyense pa kukhazikitsa kulikonse. Zimapezeka kokha pamene phukusi lothandizira lapamwamba layikidwa, layatsidwa, ndi kuchepetsedwa kwa administrators odalirika.
 
-## Kasinthidwe ka Zida
+## Kasinthidwe ka Zida {#tool-configuration}
 
-### Kuyatsa Zida
+### Kuyatsa Zida {#enabling-tools}
 
 Kuti muyatse zida zina mu Theme Builder:
 
@@ -127,7 +127,7 @@ Kuti muyatse zida zina mu Theme Builder:
 3. Yatsani kapena zimitsani zida ngati pakufunika
 4. Sungani zoikamo
 
-### Zilolezo za Zida
+### Zilolezo za Zida {#tool-permissions}
 
 Zida zina zimafuna zilolezo:
 
@@ -137,7 +137,7 @@ Zida zina zimafuna zilolezo:
 - **Ma feature apamwamba** — angafune premium subscription
 - **Zida zothandizira zapamwamba** — zimafuna phukusi lapamwamba logawidwa padera ndi chidaliro chomveka cha administrator
 
-### API Keys ndi Zizindikiro
+### API Keys ndi Zizindikiro {#api-keys-and-credentials}
 
 Konzani API keys za zida zomwe zimazifuna:
 
@@ -146,13 +146,13 @@ Konzani API keys za zida zomwe zimazifuna:
 3. Yesani kulumikizana
 4. Sungani motetezeka
 
-### Kuyika Phukusi Lothandizira Lapamwamba
+### Kuyika Phukusi Lothandizira Lapamwamba {#installing-the-advanced-companion-package}
 
 Phukusi lothandizira lapamwamba limatulutsidwa padera kuchokera ku ZIP yoyambira ya WordPress.org. Liyikeni kokha kuchokera ku njira yovomerezeka yogawa ya project pa kutulutsidwa kumeneko, kenako chepetsani mwayi wofikira kwa administrators odalirika. Unikaninso ma gate a kuvomereza kwa munthu ndi khalidwe la git snapshot musanayitse zida za filesystem, database, WP-CLI, REST dispatcher, plugin builder, user-management, kapena benchmark pa site ya production.
 
-## Kugwiritsa Ntchito sd-ai-agent/site-scrape
+## Kugwiritsa Ntchito sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Kagwiritsidwe Ntchito Koyambira
+### Kagwiritsidwe Ntchito Koyambira {#basic-usage}
 
 Funsani Theme Builder kuti isanthule webusayiti:
 
@@ -161,7 +161,7 @@ Santhulani kapangidwe ka site ya mpikisano wanga pa competitor.com
 ndipo perekani malingaliro okonza kapangidwe ka site yanga.
 ```
 
-### Kusanthula Kwapadera
+### Kusanthula Kwapadera {#specific-analysis}
 
 Pemphani mitundu yapadera ya kusanthula:
 
@@ -179,7 +179,7 @@ Yang'anani kuyankha bwino kwa example.com pa mafoni ndipo onetsetsani kuti site 
 ikuyankhanso chimodzimodzi.
 ```
 
-### Kusanthula Koyerekezera
+### Kusanthula Koyerekezera {#comparison-analysis}
 
 Yerekezani ma site angapo:
 
@@ -188,22 +188,22 @@ Yerekezani mapangidwe a site1.com ndi site2.com ndipo pangani kapangidwe
 komwe kamaphatikiza zinthu zabwino kwambiri za onse awiri.
 ```
 
-## Malire a Zida ndi Zoyenera Kuganizira
+## Malire a Zida ndi Zoyenera Kuganizira {#tool-limitations-and-considerations}
 
-### Kuchepetsa Mlingo
+### Kuchepetsa Mlingo {#rate-limiting}
 
 - Kukolola deta kuli ndi malire a kuchuluka kuti seva isadzaze kwambiri
 - Zopempha zingapo ku tsamba lomwelo zingachedwetsedwe
 - Masamba akuluakulu angatenge nthawi yaitali kuti awunikidwe
 
-### Kulondola kwa Zomwe Zili Mkati
+### Kulondola kwa Zomwe Zili Mkati {#content-accuracy}
 
 - Zomwe zimasintha nthawi zonse sizingagwidwe zonse
 - Zomwe zimapangidwa ndi JavaScript zingakhale zosakwanira
 - Deta ya nthawi yeniyeni singasonyezedwe
 - Zina mwa zomwe zili mkati zingakhale kumbuyo kwa paywalls
 
-### Zoganizira za Malamulo ndi Makhalidwe Abwino
+### Zoganizira za Malamulo ndi Makhalidwe Abwino {#legal-and-ethical-considerations}
 
 - Lemekezani robots.txt ndi malamulo a tsamba
 - Musakolole zomwe zili ndi ufulu wa eni ake kuti muzibwerezenso
@@ -211,16 +211,16 @@ komwe kamaphatikiza zinthu zabwino kwambiri za onse awiri.
 - Tsimikizirani kuti muli ndi ufulu wogwiritsa ntchito zomwe zatengedwa
 - Tsatirani mfundo za ntchito za masamba omwe asanthulidwa
 
-### Zotsatira pa Magwiridwe Antchito
+### Zotsatira pa Magwiridwe Antchito {#performance-impact}
 
 - Kukolola deta ku masamba akuluakulu kungatenge nthawi
 - Kukolola kangapo nthawi imodzi kungakhale kochedwa
 - Kulumikizana kwa netiweki kumakhudza liwiro
 - Magulu akuluakulu a deta angafune kukonza kochuluka
 
-## Njira Zabwino
+## Njira Zabwino {#best-practices}
 
-### Kugwiritsa Ntchito Kusanthula Tsamba
+### Kugwiritsa Ntchito Kusanthula Tsamba {#using-site-analysis}
 
 1. **Sankhani masamba angapo** — sonkhanitsani chilimbikitso kuchokera ku magwero angapo
 2. **Yang'anani pa kapangidwe** — phunzirani mawonekedwe ndi njira zokonzera zinthu
@@ -228,7 +228,7 @@ komwe kamaphatikiza zinthu zabwino kwambiri za onse awiri.
 4. **Phunzirani typography** — pezani kuphatikizana kwa mafonti komwe mumakonda
 5. **Unikani kuyenda** — mvetsetsani momwe menyu amakonzedwera
 
-### Kukolola Deta Mwachikhalidwe Chabwino
+### Kukolola Deta Mwachikhalidwe Chabwino {#ethical-scraping}
 
 1. **Lemekezani robots.txt** — tsatirani malangizo a tsamba
 2. **Musakopere zomwe zili mkati** — gwiritsani ntchito kusanthula kuti mupeze chilimbikitso chokha
@@ -236,7 +236,7 @@ komwe kamaphatikiza zinthu zabwino kwambiri za onse awiri.
 4. **Tchulani magwero** — perekani ulemu kwa magwero a chilimbikitso
 5. **Tsatirani mfundo** — tsatirani mfundo za ntchito za tsamba
 
-### Kukulitsa Mphamvu ya Chida
+### Kukulitsa Mphamvu ya Chida {#maximizing-tool-effectiveness}
 
 1. **Khalani enieni** — pemphani mitundu yeniyeni ya kusanthula
 2. **Perekani nkhani yake** — fotokozani cholinga cha tsamba lanu
@@ -244,9 +244,9 @@ komwe kamaphatikiza zinthu zabwino kwambiri za onse awiri.
 4. **Bwerezani ndi kukonza** — konzani potengera zotsatira
 5. **Phatikizani zida** — gwiritsani ntchito zida zingapo kuti musanthule mozama
 
-## Kuthetsa Mavuto
+## Kuthetsa Mavuto {#troubleshooting}
 
-### Tsamba Silingakololeke
+### Tsamba Silingakololeke {#site-wont-scrape}
 
 - Yang'anani ngati tsamba likupezeka kwa anthu onse
 - Tsimikizirani kuti robots.txt imalola kukolola deta
@@ -254,7 +254,7 @@ komwe kamaphatikiza zinthu zabwino kwambiri za onse awiri.
 - Yang'anani kulumikizana kwa intaneti
 - Lumikizanani ndi thandizo ngati vuto likupitirirabe
 
-### Kusanthula Kosakwanira
+### Kusanthula Kosakwanira {#incomplete-analysis}
 
 - Tsamba lingakhale ndi zomwe zimasintha nthawi zonse
 - JavaScript singakhale itawonetsedwa mokwanira
@@ -262,7 +262,7 @@ komwe kamaphatikiza zinthu zabwino kwambiri za onse awiri.
 - Yesani kusanthula masamba enieni m'malo mwake
 - Pemphani mitundu yeniyeni ya kusanthula
 
-### Magwiridwe Antchito Ochedwa
+### Magwiridwe Antchito Ochedwa {#slow-performance}
 
 - Masamba akuluakulu amatenga nthawi yaitali kuti awunikidwe
 - Kukolola kangapo nthawi imodzi kumakhala kochedwa
@@ -270,7 +270,7 @@ komwe kamaphatikiza zinthu zabwino kwambiri za onse awiri.
 - Yesani pa nthawi yomwe anthu sagwiritsa ntchito kwambiri
 - Santhulani magawo ang'onoang'ono kaye
 
-## Zolemba Zogwirizana
+## Zolemba Zogwirizana {#related-documentation}
 
 - [Mafunso Ozindikira](./discovery-interview.md) — sonkhanitsani zambiri za kapangidwe
 - [Njira ya Kapangidwe](./design-direction.md) — konzani kapangidwe kanu

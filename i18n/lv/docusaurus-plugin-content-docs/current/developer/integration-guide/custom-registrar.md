@@ -3,13 +3,13 @@ title: Pielāgotas reģistratora integrācijas izveide
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Pielāgotas reģistratora integrācijas izveide
+# Pielāgotas reģistratora integrācijas izveide {#building-a-custom-registrar-integration}
 
 Domain Seller addon izmanto **Integration Registry** modeli. Katrs reģistrators ir PHP klase, kas implementē `Domain_Selling_Capability` un reģistrē sevi, izmantojot `wu_domain_seller_register_capabilities` action hook.
 
 Šajā ceļvedī parādīts, kā pieslēgt pielāgotu reģistratoru.
 
-## Interfeiss
+## Interfeiss {#the-interface}
 
 Jūsu klasei jāimplementē `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` un jāpaplašina `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Izvēles metodes
+### Izvēles metodes {#optional-methods}
 
 Implementējiet tās, lai atbloķētu papildu funkcijas. Addon nosaka atbalstu, izmantojot `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementējiet tās, lai atbloķētu papildu funkcijas. Addon nosaka atbalstu, 
 | `get_epp_code(string $domain_name): array` | Domēna pārcelšana (izejošā) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domēna pārcelšana (ienākošā) |
 
-### Atgrieztās vērtības konvencija
+### Atgrieztās vērtības konvencija {#return-value-convention}
 
 Visas metodes atgriež masīvu, kurā vismaz ir `success` atslēga:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Jūsu capability reģistrēšana
+## Jūsu capability reģistrēšana {#registering-your-capability}
 
 Reģistrējiet savu klasi, izmantojot `wu_domain_seller_register_capabilities` action:
 
@@ -109,7 +109,7 @@ Pirmais `add_capability()` arguments ir **provider ID** — mazajiem burtiem rak
 
 ---
 
-## Akreditācijas datu lauku pievienošana vednim
+## Akreditācijas datu lauku pievienošana vednim {#adding-credential-fields-to-the-wizard}
 
 Lai ļautu administratoriem ievadīt akreditācijas datus, izmantojot iestatīšanas vedni, reģistrējiet savu integrāciju:
 
@@ -137,7 +137,7 @@ Akreditācijas dati tiek glabāti kā tīkla opcijas, izmantojot lauku ID kā at
 
 ---
 
-## Hooki darbībām pēc reģistrācijas
+## Hooki darbībām pēc reģistrācijas {#hooks-for-post-registration-actions}
 
 Izmantojiet šīs darbības, lai aktivizētu webhookus, provisioningu, paziņojumus vai CRM atjauninājumus:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Žurnālfiksēšana
+## Žurnālfiksēšana {#logging}
 
 Rakstiet savā pakalpojumu sniedzējam specifiskajā žurnāla kanālā, izmantojot `wu_log_add()`:
 

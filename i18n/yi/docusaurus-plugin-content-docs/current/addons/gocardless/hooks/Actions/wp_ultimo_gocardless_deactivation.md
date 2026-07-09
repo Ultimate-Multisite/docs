@@ -4,13 +4,13 @@ title: אַקציע - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Action: wp_ultimo_gocardless_deactivation
+# Action: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
 
 לאָזט אַנדערע טיילן פונעם פּלאַגין צוהענגען זייערע רוטינען פֿאַר דעאַקטיוואַציע
 
-### זינט
+### זינט {#since}
 
 - 1.9.6
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/class-hooks.php#L101) אויף שורה 101

@@ -3,7 +3,7 @@ title: よくある質問
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# よくある質問
+# よくある質問 {#frequently-asked-questions}
 
 サポート依頼でよく寄せられる **よくある質問** をまとめました。
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Berbilang Penyewa
+# Berbilang Penyewa {#multi-tenancy}
 
 Agihkan sublaman merentas pelayan dan pangkalan data untuk prestasi dan keselamatan
 
-## Sorotan keluaran versi 1.2.0
+## Sorotan keluaran versi 1.2.0 {#version-120-release-highlights}
 
 Berbilang Penyewa 1.2.0 menambah asas penyewa berdaulat untuk aliran kerja pengasingan produksi:
 
@@ -25,21 +25,21 @@ Berbilang Penyewa 1.2.0 menambah asas penyewa berdaulat untuk aliran kerja penga
 
 Lihat panduan pengguna untuk [aliran kerja migrasi berdaulat](/user-guide/getting-started/sovereign-migration-workflow), [pengasingan berbilang penyewa](/user-guide/configuration/multi-tenancy-isolation), dan [operasi penyewa berdaulat](/user-guide/administration/sovereign-tenant-operations).
 
-## Keperluan
+## Keperluan {#requirements}
 
 - WordPress 5.3 atau lebih tinggi
 - PHP 7.4 atau lebih tinggi
 - pemalam Multisite Ultimate (aktif)
 
-## Pemasangan
+## Pemasangan {#installation}
 
 1. Muat naik fail tambahan ke direktori `/wp-content/plugins/` anda
 2. Aktifkan pemalam melalui menu 'Pemalam' dalam WordPress
 3. Konfigurasikan tetapan tambahan dalam pentadbir rangkaian
 
-## Pembangunan
+## Pembangunan {#development}
 
-### Persediaan
+### Persediaan {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktur Projek
+### Struktur Projek {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Peraturan pemodenan kod
 ```
 
-### Pengujian
+### Pengujian {#testing}
 
 Tambahan ini merangkumi rangka kerja pengujian yang menyeluruh:
 
@@ -93,54 +93,54 @@ Tambahan ini merangkumi rangka kerja pengujian yang menyeluruh:
 - **Liputan Ujian**: Dikonfigurasikan untuk menjejak liputan kod
 - **Pengujian Multisite**: Ujian dijalankan dalam persekitaran multisite
 
-### Piawaian Kod
+### Piawaian Kod {#code-standards}
 
 - **Piawaian Pengekodan WordPress**: Dikuatkuasakan melalui PHPCS
 - **Keserasian PHP 7.4+**: Ciri PHP moden disokong
 - **Analisis Statik**: Penyepaduan PHPStan untuk semakan jenis
 - **Pemodenan Kod**: Peraturan Rector untuk peningkatan PHP
 
-### Sistem Binaan
+### Sistem Binaan {#build-system}
 
 - **Pemprosesan Aset**: Pengecilan untuk fail CSS/JS
 - **Terjemahan**: Penjanaan fail POT
 - **Pembungkusan**: Penciptaan arkib untuk pengedaran
 - **Mod Pembangunan**: Aset tidak dikecilkan untuk penyahpepijatan
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Tambahan ini menyokong pelbagai pilihan konfigurasi yang boleh diakses melalui antara muka pentadbir rangkaian.
 
-### Konfigurasi penyewa berdaulat
+### Konfigurasi penyewa berdaulat {#sovereign-tenant-configuration}
 
 Untuk penyewa berdaulat, konfigurasikan pangkalan data penyewa, akar sistem fail, pengikatan hos pangkalan data, dan keupayaan hos sebelum menghalakan trafik kepada penyewa. Jalankan pengesahan migrasi selepas setiap perubahan yang menjejaskan kelayakan pangkalan data, pengikatan hos, penghalaan, atau peruntukan pengguna.
 
 Gunakan `localhost` hanya apabila masa jalan penyewa dan geran pangkalan data menjangkakan akses soket setempat atau mesin yang sama. Gunakan `127.0.0.1` atau nama hos perkhidmatan apabila itu ialah hos geran yang dikonfigurasikan oleh penyedia anda.
 
-### Keupayaan Hostinger
+### Keupayaan Hostinger {#hostinger-capability}
 
 Keupayaan berbilang penyewa Hostinger berfungsi dengan token penyepaduan Hostinger yang dikongsi. Sahkan domain hadir dalam hPanel, DNS menunjuk kepada Account Hostinger, dan tetapan pangkalan data penyewa sepadan dengan hPanel sebelum pengesahan.
 
-## Hook dan Penapis
+## Hook dan Penapis {#hooks-and-filters}
 
-### Tindakan
+### Tindakan {#actions}
 
 - `ultimate-multisite-addon-template_init` - Dicetuskan selepas pemulaan tambahan
 - `ultimate-multisite-addon-template_loaded` - Dicetuskan selepas semua fail tambahan dimuatkan
 
-### Penapis
+### Penapis {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ubah suai tetapan tambahan
 - `ultimate-multisite-addon-template_enabled` - Pintas status dayakan/nyahdayakan tambahan
 
-## Lesen
+## Lesen {#license}
 
 Tambahan ini dilesenkan di bawah GPL v3 atau kemudian.
 
-## Sokongan
+## Sokongan {#support}
 
 Untuk sokongan dan dokumentasi, lawati [MultisiteUltimate.com](https://multisiteultimate.com)
-## Log Perubahan
+## Log Perubahan {#changelog}
 
 - Versi 1.2.0 (2026-06-03): tambah autologin penyewa tanpa keadaan, keupayaan berbilang penyewa Hostinger, pengasingan pangkalan data dan sistem fail mengikut sublaman, pintu pengesahan migrasi berdaulat, penambahbaikan bootstrap penyewa/penulis pangkalan data, pengikatan hos MySQL yang boleh dikonfigurasi, dan pembongkaran berdaulat yang lebih selamat.
 

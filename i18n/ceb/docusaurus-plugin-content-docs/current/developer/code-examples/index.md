@@ -3,11 +3,11 @@ title: Mga Advanced nga mga Pananglitan sa Code
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mga Advanced nga Sample sa Code
+# Mga Advanced nga Sample sa Code {#advanced-code-examples}
 
 Kini mga example para ipakita ang advanced nga mga pattern sa pag-integrate uban sa Ultimate Multisite.
 
-## Dynamic Pricing Engine
+## Dynamic Pricing Engine {#dynamic-pricing-engine}
 
 Isang rules-based pricing engine nga nagapaggamit og volume (daghan), loyalty (pagka-loyal), ug seasonal discounts:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Advanced Site Provisioning
+## Advanced Site Provisioning {#advanced-site-provisioning}
 
 Automomatikong i-configure ang bag-ong mga site uban sa mga plugin, SSL, CDN, backups, ug monitoring base sa mga feature sa inyong plano:
 
@@ -189,7 +189,7 @@ class Advanced_Site_Provisioner {
 
 new Advanced_Site_Provisioner();
 
-## Custom Limitations System
+## Custom Limitations System {#custom-limitations-system}
 
 Subayhi ug ipatuman ang mga limitasyon sa resources uban ang mga warning base sa paggamit:
 
@@ -271,11 +271,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter gamit ang `increment_item()`
+## BerlinDB Atomic Counter gamit ang `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ang Ultimate Multisite v2.6.1 nagdaghi og usa ka method nga gitawag og `increment_item()` sa BerlinDB `Query` class. Gamita kini para maghimo og luwas ug atomic increments sa mga numeric column nga walay problema sa "read-modify-write races" — maayo ni para sa counters, usage quotas, ug rate-limiting checks nga nagpadayon ubos sa concurrent requests.
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -290,7 +290,7 @@ Ang Ultimate Multisite v2.6.1 nagdaghi og usa ka method nga gitawag og `incremen
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Basic usage
+### Basic usage {#basic-usage}
 
 ```php
 // Dugang og 1 sa column nga `api_calls` para sa membership ID 42.
@@ -304,7 +304,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Tracking API usage per membership
+### Tracking API usage per membership {#tracking-api-usage-per-membership}
 
 Usa ka praktikal nga pama para ipatuman ang per-membership API rate limits:
 
@@ -352,7 +352,7 @@ class Membership_API_Limiter {
 
 new Membership_API_Limiter();
 
-### Ngano `increment_item()` imbes nga `update_item()`
+### Ngano `increment_item()` imbes nga `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Ang usa ka basta-basta nga approach sa pagbasa-pag-usab-pagsulat (read-modify-write) dili luwas kung adunay daghang requests nga nagtrabaho sa samang higayon:
 

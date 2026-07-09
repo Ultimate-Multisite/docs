@@ -3,11 +3,11 @@ title: Àkópọ̀ Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Akopọ Dashboard
+# Akopọ Dashboard {#dashboard-overview}
 
 Ultimate Multisite ní **Dashboard** tirẹ̀ lábẹ́ akojọ Ultimate Multisite, ó sì tún ń fi àwọn widgets kún Network Dashboard. Àpilẹ̀kọ yìí ṣàlàyé ohun tí ìwọ yóò rí ní ibi méjèèjì.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite ń fi àwọn widgets tó wúlò sínú dashboard ìpele nẹ́tíwọ́ọ̀kì tí ó wà ní **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Ultimate Multisite ń fi àwọn widgets tó wúlò sínú dashboard ìpele nẹ
 
 ![Widget Ìròyìn](/img/admin/network-dashboard-news.png)
 
-## Dashboard Ultimate Multisite
+## Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Nígbà tí network dashboard ń ṣàfihàn ìmọ̀ àpapọ̀ nípa nẹ́tíwọ́ọ̀kì, Dashboard Ultimate Multisite (ní ìpele òkè ti akojọ Ultimate Multisite) ń ṣàfihàn ìmọ̀ nípa iṣẹ́ náà.
 

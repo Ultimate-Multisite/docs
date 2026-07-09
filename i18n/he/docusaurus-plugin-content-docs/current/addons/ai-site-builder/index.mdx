@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# בונה אתרים מבוסס AI
+# בונה אתרים מבוסס AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## דרישות קדם
+## דרישות קדם {#requirements}
 
 - WordPress 5.3 ומעלה
 - PHP 7.4 ומעלה
 - תוסף Multisite Ultimate (פעיל)
 
-## התקנה
+## התקנה {#installation}
 
 1. העלה את קבצי התוסף לתיקייה `/wp-content/plugins/`
 2. הפעל את התוסף דרך תפריט 'Plugins' ב-WordPress
 3. הגדר את הגדרות התוסף במנהל הרשת (network admin)
 
-## פיתוח
+## פיתוח {#development}
 
-### הגדרה
+### הגדרה {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### מבנה הפרויקט
+### מבנה הפרויקט {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### בדיקות
+### בדיקות {#testing}
 
 התוסף כולל מסגרת בדיקות מקיפה:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **כיסוי בדיקות (Test Coverage)**: מוגדר למעקב אחר כיסוי הקוד
 - **בדיקות רשת מרובת אתרים (Multisite Testing)**: הבדיקות רצות בסביבת Multisite
 
-### תקני קוד
+### תקני קוד {#code-standards}
 
 - **WordPress Coding Standards**: אוכפים באמצעות PHPCS
 - **תאימות ל-PHP 7.4+**: נתמכות תכונות PHP מודרניות
 - **ניתוח סטטי (Static Analysis)**: שילוב PHPStan לבדיקת סוגי נתונים
 - **מודרניזציה של קוד (Code Modernization)**: כללי Rector לשדרוגי PHP
 
-### מערכת בנייה (Build System)
+### מערכת בנייה (Build System) {#build-system}
 
 - **עיבוד נכסים (Asset Processing)**: מיניפיקציה לקבצי CSS/JS
 - **תרגום (Translation)**: יצירת קובצי POT
 - **אריזה (Packaging)**: יצירת ארכיון להפצה
 - **מצב פיתוח (Development Mode)**: נכסים לא ממוזערים (unminified) לצורך דיבוג
 
-## תצורה
+## תצורה {#configuration}
 
 התוסף תומך באפשרויות תצורה שונות הנגישות דרך ממשק מנהל הרשת.
 
-## Hooks ופילטרים
+## Hooks ופילטרים {#hooks-and-filters}
 
-### פעולות (Actions)
+### פעולות (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - מופעל לאחר אתחול התוסף
 - `ultimate-multisite-ai-site-builder_loaded` - מופעל לאחר טעינת כל קבצי התוסף
 
-### פילטרים (Filters)
+### פילטרים (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - שינוי הגדרות התוסף
 - `ultimate-multisite-ai-site-builder_enabled` - דריסה של סטטוס ההפעלה/כיבוי של התוסף
 
-## רישיון
+## רישיון {#license}
 
 התוסף הזה מורשה תחת GPL v3 או גרסה מאוחרת יותר.
 
-## תמיכה
+## תמיכה {#support}
 
 לתמיכה ותיעוד, בקר ב-[MultisiteUltimate.com](https://multisiteultimate.com)
-## יומן שינויים
+## יומן שינויים {#changelog}
 
 - Version 1.0.1 (2025-09-28): rename prefix to ultimate-multisite; update text domain; version bump.
 

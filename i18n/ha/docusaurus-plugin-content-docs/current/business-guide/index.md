@@ -3,13 +3,13 @@ title: Gina Kasuwancin Gidan Yanar Gizo na Takamaiman Fanni
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Gina Kasuwancin Gidan Yanar Gizo na Musamman da Ultimate Multisite
+# Gina Kasuwancin Gidan Yanar Gizo na Musamman da Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Yawancin mutanen da suke ƙoƙarin sayar da gidajen yanar gizo suna fafatawa kan farashi da Wix, Squarespace, da dubban freelancers. Suna yin asara. Waɗanda suke cin nasara suna zaɓar takamaiman masu sauraro, su gina mafita da aka daidaita da waɗannan masu sauraro, kuma su karɓi kuɗi bisa darajar da suke bayarwa.
 
 Wannan darasin yana koya maka yadda za ka yi hakan daidai ta amfani da Ultimate Multisite.
 
-## Abin da Za Ka Gina
+## Abin da Za Ka Gina {#what-you-will-build}
 
 A duk tsawon wannan darasi za ka gina ainihin cibiyar sadarwa mai aiki da ake kira **FitSite** -- dandalin gidan yanar gizo da aka gina musamman don studios na motsa jiki, masu horarwa na sirri, da masu gym.
 
@@ -23,7 +23,7 @@ A darasi na ƙarshe, FitSite zai zama cikakken dandali na musamman tare da:
 
 Za ka bi mataki-mataki, kuma a ƙarshe za ka sami duka dandali mai aiki da kuma ilimin maimaita wannan tsari ga kowace niche da ka zaɓa.
 
-## Me Ya Sa Fitness Studios?
+## Me Ya Sa Fitness Studios? {#why-fitness-studios}
 
 Mun buƙaci misali na zahiri da kowa zai iya bi. Fitness studios suna aiki saboda:
 
@@ -34,7 +34,7 @@ Mun buƙaci misali na zahiri da kowa zai iya bi. Fitness studios suna aiki sabod
 
 Duk abin da ka koya wajen gina FitSite yana aiki kai tsaye ga kowace niche da ka zaɓa: gidajen abinci, dillalan gidaje, kamfanonin lauya, coci-coci, masu aikin kwangila na sana’a, ko kowace vertical.
 
-## Tsarin Darasi
+## Tsarin Darasi {#course-structure}
 
 Kowane darasi yana gabatar da ra’ayi guda, yana bayyana dalilin da ya sa yake da muhimmanci, kuma yana bi da kai wajen aiwatar da shi a cibiyar sadarwar FitSite. Kowane darasi yana ginuwa kan na baya.
 
@@ -55,7 +55,7 @@ Kowane darasi yana gabatar da ra’ayi guda, yana bayyana dalilin da ya sa yake 
 | [13. Faɗaɗawa](lesson-13-growth) | Girma daga abokan ciniki na farko zuwa ainihin kasuwanci | Dabarun girma da automation na FitSite |
 | [14. Me Ke Biyo Baya](lesson-14-whats-next) | Faɗaɗa zuwa niches na kusa da sabbin dama | Taswirar hanyarka bayan FitSite |
 
-## Abubuwan da Ake Bukata Kafin Farawa
+## Abubuwan da Ake Bukata Kafin Farawa {#prerequisites}
 
 - Shigarwar WordPress Multisite (ko shirye-shiryen saita ɗaya)
 - Lasisin Ultimate Multisite mai aiki
@@ -63,6 +63,6 @@ Kowane darasi yana gabatar da ra’ayi guda, yana bayyana dalilin da ya sa yake 
 
 Ba a buƙatar coding. Idan ba ka taɓa amfani da Ultimate Multisite ba, ba matsala -- Darasi na 3 yana farawa daga sabon install.
 
-## A Shirye?
+## A Shirye? {#ready}
 
 Fara da [Darasi na 1: Me Ya Sa Niche Ke Nasara](lesson-1-why-niche).

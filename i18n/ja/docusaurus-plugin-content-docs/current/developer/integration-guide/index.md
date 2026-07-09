@@ -3,13 +3,13 @@ title: 統合ガイド
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# 統合ガイド
+# 統合ガイド {#integration-guide}
 
 このガイドでは、外部サービスへの接続、カスタム決済ゲートウェイの構築、webhook の処理など、Ultimate Multisite との一般的な統合パターンを扱います。
 
 分離されたテナント基盤については、主権型テナントの初期構築、移行検証、SSO、破棄の手順を説明する [Multi-Tenancy Integration](./multi-tenancy) を参照してください。
 
-## CRM 統合
+## CRM 統合 {#crm-integration}
 
 新しい顧客が登録したときに、顧客データを CRM に同期します。
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics 統合
+## Analytics 統合 {#analytics-integration}
 
 顧客ライフサイクル全体で重要なビジネスイベントを追跡します。
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## 次のステップ
+## 次のステップ {#next-steps}
 
 - [カスタムゲートウェイ開発](./custom-gateway) — 独自の決済ゲートウェイを構築する
 - [webhook の処理](./webhooks) — カスタム webhook エンドポイントを作成する

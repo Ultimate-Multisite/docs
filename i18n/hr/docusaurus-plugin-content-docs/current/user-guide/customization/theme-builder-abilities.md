@@ -3,18 +3,18 @@ title: Sposobnosti Theme Buildera
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Sposobnosti Theme Buildera: Scaffold i Aktivacija Block Tema
+# Sposobnosti Theme Buildera: Scaffold i Aktivacija Block Tema {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 uvodi dvije moćne sposobnosti koje vam omogućuju da direktno iz chat sučelja generirate i implementirate prilagođene block teme.
 
-## Pregled
+## Pregled {#overview}
 
 Sposobnosti **scaffold-block-theme** i **activate-theme** omogućuju agentima da:
 - Generiraju kompletnu, spremnu za produkciju block teme na temelju vaših specifikacija
 - Automatski aktiviraju teme na vašem sajtu bez ručnog intervencije
 - Stvaraju koherentna vizualna identiteta kroz usmjerena odluka o dizajnu
 
-## Scaffold Block Theme (Scaffoldiranje Block Teme)
+## Scaffold Block Theme (Scaffoldiranje Block Teme) {#scaffold-block-theme}
 
 Sposobnost **scaffold-block-theme** generira novu WordPress block temu s kompletnom strukturalnom komponentom, uključujući:
 
@@ -23,7 +23,7 @@ Sposobnost **scaffold-block-theme** generira novu WordPress block temu s komplet
 - Prilagođene stilove i varijacije blokova
 - Metapodatke teme i deklaracije podrške
 
-### Kako pozvati (Uvjetovati)
+### Kako pozvati (Uvjetovati) {#how-to-invoke}
 
 U vašoj chatu s Superdav AI Agentom, možete tražiti generiranje teme:
 
@@ -38,7 +38,7 @@ Agent će:
 3. Kreirati sve potrebne datoteke za temu
 4. Pripremiti temu za aktivaciju
 
-### Očekivani rezultat
+### Očekivani rezultat {#expected-output}
 
 Kada se sposobnost uspješno izvrši, vidjet ćete:
 
@@ -56,11 +56,11 @@ Primjer izlaza:
   Status: Spreman za aktivaciju
 ```
 
-## Activate Theme (Aktivacija Teme)
+## Activate Theme (Aktivacija Teme) {#activate-theme}
 
 Sposob na aktiviranje teme omogućuje prebacivanje vašeg sajta na novonascenu ili postojeću blok temu koju ste upravo kreirali.
 
-### Kako pozvati (aktivirati)
+### Kako pozvati (aktivirati) {#how-to-invoke-1}
 
 Nakon što ste osnuiu temu, možete odmah početi s njom:
 
@@ -74,7 +74,7 @@ Ili aktivirajte bilo koju postojeću temu:
 "Prebaci se na Twentytwentyfour temu"
 ```
 
-### Očekivani rezultat
+### Očekivani rezultat {#expected-output-1}
 
 Kada aktivacija uspije:
 

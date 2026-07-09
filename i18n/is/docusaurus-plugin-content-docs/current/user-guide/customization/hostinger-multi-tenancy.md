@@ -3,13 +3,13 @@ title: Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 íðurkennaðar Hostinger multi-tenancy möguleika, sem gerir því að hostaðir domænir geta teilast sjálfstæðum leitum (tenant provisioning) á sama tíma sem núverandi viðbótun fyrir domén-mappingu Hostinger.
 
 Notið þennan möguleika þegar leitandi domænir og sjálfstæð leitandi innri kerfi eru stýrt með Hostinger hPanel.
 
-## Notat til uppsetningar
+## Notat til uppsetningar {#setup-notes}
 
 1. Stillingi kjarna Hostinger viðbótunar undir **Ultimate Multisite > Settings > Host Integrations**.
 2. Staða þess að Hostinger API token geti stýrt lánandi domæni eða subdomain.
@@ -19,14 +19,14 @@ Notið þennan möguleika þegar leitandi domænir og sjálfstæð leitandi innr
 
 Hostinger möguleiki notar sama Hostinger tengingu fyrir verkefni á host-síðuna. DNS þarf enn að stýra til rétta Hostinger reikning, og takmarkanir hPanel reiknings eru framkvæmdar.
 
-## Breytileikur skipti í möguleika
+## Breytileikur skipti í möguleika {#capability-specific-changes}
 
 - Sjálfstæð leitandi geta verið sköpt með domén-áhrifum sem eru kjarnafærðar (host-aware).
 - Samsamaþættir stafræn steypum fyrir host-stringur á sama kerfi er normlaga áður en leiðarstefna er staðfest.
 - Leitandi sem er stýrt af Hostinger þarf að nota database host gildi sýnt í hPanel, nema WordPress runtime krefte lokala úverðunar (override).
 - SSO leikningar byggja á því að leitandi domén geti leiða til Hostinger-hostaða leitandans.
 
-## Feilfellingar fyrir Hostinger leitandi
+## Feilfellingar fyrir Hostinger leitandi {#troubleshooting-hostinger-tenants}
 
 - Ef install leitandi missar, staðfestu að domæni sé ekki eingöngu viðbótt til Hostinger reiknings.
 - Ef staðfesting databaseins missar, samanbeita notendann DBs, nafn DBs og host binding með hPanel.

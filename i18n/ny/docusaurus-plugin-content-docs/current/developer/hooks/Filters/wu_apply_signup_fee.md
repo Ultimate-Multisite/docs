@@ -4,11 +4,11 @@ title: Fyuluta - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Fyuluta: wu_apply_signup_fee
+# Fyuluta: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Imasefa ngati signup fee iyenera kugwiritsidwa ntchito kapena ayi.
 
-## Magawo
+## Magawo {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Imasefa ngati signup fee iyenera kugwiritsidwa ntchito kapena ayi.
 | $product | `object` | Chinthu cha mulingo wa umembala. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Chinthu cha kulembetsa. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 3.1
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) pa mzere 1769

@@ -3,13 +3,13 @@ title: Personalizarea formularului dvs. de înregistrare
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizarea formularului de înregistrare
+# Personalizarea formularului de înregistrare {#customizing-your-registration-form}
 
 Pentru ca rețeaua ta să arate unic față de toate celelalte SaaS construite pe platforma WordPress, Ultimate Multisite îți permite să personalizezi paginile de înregistrare și autentificare cu funcționalitatea noastră **Formulare de checkout**.
 
 Deși acestea sunt o modalitate ușoară și flexibilă de a experimenta cu abordări diferite atunci când încerci să convertești clienți noi, sunt folosite în principal pentru a crea formulare de înregistrare personalizate. Acest articol își propune să îți arate cum poți face acest lucru.
 
-## Pagini de autentificare și înregistrare:
+## Pagini de autentificare și înregistrare: {#login-and-registration-pages}
 
 La instalarea Ultimate Multisite, acesta creează automat pagini personalizate de autentificare și înregistrare pe site-ul principal. Poți schimba oricând aceste pagini implicite accesând pagina **Ultimate Multisite > Setări > Autentificare și înregistrare**.
 
@@ -45,7 +45,7 @@ Acum, să vedem alte opțiuni care sunt încă relevante pentru procesul de aute
 
 Și acestea sunt toate opțiunile legate de autentificare și înregistrare pe care le poți personaliza! Nu uita să îți salvezi setările după ce termini de editat.
 
-## Folosirea mai multor formulare de înregistrare:
+## Folosirea mai multor formulare de înregistrare: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 oferă un editor de formulare de checkout care îți permite să creezi câte formulare dorești, cu câmpuri diferite, produse oferite etc.
 
@@ -69,7 +69,7 @@ Alternativ, poți edita sau duplica formularele pe care le ai deja făcând clic
 
 Dacă selectezi un singur pas sau mai mulți pași, formularul de checkout va fi deja precompletat cu pașii de bază necesari pentru a funcționa. Apoi, dacă vrei, poți adăuga pași suplimentari.
 
-### Editarea unui formular de checkout:
+### Editarea unui formular de checkout: {#editing-a-checkout-form}
 
 Așa cum am menționat înainte, poți crea formulare de checkout pentru scopuri diferite. În acest exemplu vom lucra la un formular de înregistrare.
 
@@ -131,11 +131,11 @@ Pentru a obține shortcode-ul formularului, fă clic pe **Generează shortcode**
 
 _**Notă:** Va trebui să adaugi acest shortcode pe pagina ta de înregistrare pentru ca acest formular de checkout să fie adăugat pe ea._
 
-## Preselectarea produselor și șabloanelor prin parametri URL:
+## Preselectarea produselor și șabloanelor prin parametri URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Dacă vrei să creezi tabele de prețuri personalizate pentru produsele tale și să preselectezi în formularul de checkout produsul sau șablonul pe care clientul tău îl alege din tabelul tău de prețuri sau din pagina de șabloane, poți folosi parametri URL pentru aceasta.
 
-### **Pentru planuri:**
+### **Pentru planuri:** {#for-plans}
 
 Mergi la **Ultimate Multisite > Produse > Selectează un plan**. Ar trebui să vezi butonul **Fă clic pentru a copia linkul partajabil** în partea de sus a paginii. Acesta este linkul pe care îl poți folosi pentru a preselecta acest plan specific în formularul tău de checkout.
 
@@ -143,7 +143,7 @@ Mergi la **Ultimate Multisite > Produse > Selectează un plan**. Ar trebui să v
 
 Reține că acest link partajabil este valid doar pentru **Planuri**. Nu poți folosi linkuri partajabile pentru pachete sau servicii.
 
-### Pentru șabloane:
+### Pentru șabloane: {#for-templates}
 
 Dacă vrei să preselectezi șabloane de site în formularul tău de checkout, poți folosi parametrul: **?template_id=X** în URL-ul paginii tale de înregistrare. „X” trebuie înlocuit cu **numărul ID al șablonului de site**. Pentru a obține acest număr, mergi la **Ultimate Multisite > Site-uri**.
 

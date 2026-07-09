@@ -3,17 +3,17 @@ title: Cerca a Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Cerca a Internet
+# Cerca a Internet {#internet-search}
 
 Gratis AI Agent v1.5.0 afegeix una capacitat de **Cerca a Internet** que permet a l'assistència AI recuperar informació actual de la web durant una conversa. Això està alimentat per [Brave Search API](https://brave.com/search/api/) o la [Tavily API](https://tavily.com/).
 
-## Com funciona
+## Com funciona {#how-it-works}
 
 Quan la cerca a internet està activada, l'assistència pot consultar automàticament el proveïdor de cerca configurat quan detecta que una pregunta requereix informació actual o externa — per exemple, notícies recents, preus en temps real o documentació que pot haver canviat des de la data de tancament de l'entrenament del model.
 
 Els resultats es recuperen en temps real i es canvien al context de l'assistència abans que aquesta generi una resposta. L'assistència indica quan ha utilitzat resultats de cerca per respondre a una pregunta.
 
-## Activar la cerca a Internet
+## Activar la cerca a Internet {#enabling-internet-search}
 
 La cerca a internet requereix una clau API (API key) del proveïdor de cerca que hagis triat. Per configurar-ho:
 
@@ -24,35 +24,35 @@ La cerca a internet requereix una clau API (API key) del proveïdor de cerca que
 
 Una vegada que la clau s'ha guardat, la capacitat de cerca a Internet està automàticament disponible per l'assistència.
 
-## Brave Search
+## Brave Search {#brave-search}
 
-### Obtenció d'una clau API de Brave Search
+### Obtenció d'una clau API de Brave Search {#obtaining-a-brave-search-api-key}
 
 1. Visita la [pàgina de Brave Search API](https://brave.com/search/api/).
 2. Registra't per un pla. Hi ha un nivell gratuït amb un límit de sol·licituds mensual.
 3. Copia la teva clau API del *dashboard* de desenvolupador de Brave Search.
 4. Pasta-la al camp **Brave Search API Key** a les configuracions de Gratis AI Agent.
 
-### Límites d'ús
+### Límites d'ús {#usage-limits}
 
 L'ús es factura per Brave Search basat en el nombre de consultes realitzades. Cada resposta de l'AI que trigui una cerca compteix com una consulta. Monitoritza el teu ús al [dashboard de desenvolupador de Brave Search](https://brave.com/search/api/) per evitar càrrejos inesperats.
 
-## Tavily
+## Tavily {#tavily}
 
 Superdav AI Agent v1.10.0 afegeix **Tavily** com a proveïdor alternatiu de cerca a internet, oferint resultats de cerca més ricus i capacitats avançades de recerca.
 
-### Obtenció d'una clau API de Tavily
+### Obtenció d'una clau API de Tavily {#obtaining-a-tavily-api-key}
 
 1. Visita la [pàgina de Tavily API](https://tavily.com/).
 2. Registra't per un compte. Hi ha un nivell gratuït amb un límit de sol·licituds mensual.
 3. Copia la teva clau API del *dashboard* de Tavily.
 4. Pasta-la al camp **Tavily API Key** a les configuracions de Gratis AI Agent.
 
-### Límites d'ús
+### Límites d'ús {#usage-limits-1}
 
 L'ús es factura per Tavily basat en el nombre de cranes API (API calls) realitzats. Cada resposta de l'AI que trigui una cerca compteix com una crana. Monitoritza el teu ús al [dashboard de Tavily](https://tavily.com/) per evitar càrrejos inesperats.
 
-## Desactivar la cerca a Internet
+## Desactivar la cerca a Internet {#disabling-internet-search}
 
 Elimina la clau API del camp del proveïdor de cerca actiu i guarda. La capacitat de cerca a Internet ja no s'oferirà a l'assistència.
 

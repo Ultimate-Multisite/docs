@@ -3,15 +3,15 @@ title: Netefatsa Konterase ea Phalete
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Netefatsa Phapang ya Palette
+# Netefatsa Phapang ya Palette {#validate-palette-contrast}
 
 Bokgoni ba **Validate Palette Contrast** bo lekola dipara tsa mebala ho palette ya moralo wa hao bakeng sa ho ikamahanya le WCAG (Web Content Accessibility Guidelines) pele bo di sebedisa ho theme ya hao.
 
-## Kakaretso
+## Kakaretso {#overview}
 
 Bokgoni bona bo netefatsa hore leano la mebala la sebaka sa hao le fihlela maemo a phihlello ka ho netefatsa dikarolelano tsa phapang pakeng tsa mongolo le mebala ya bokamorao. Bo thusa ho thibela metswako ya mebala e ka bang thata ho balwa ke basebedisi ba nang le mathata a pono.
 
-## Sebopeho sa Kenyo
+## Sebopeho sa Kenyo {#input-format}
 
 Bokgoni bo amohela palette ya mebala e le kenyo:
 
@@ -35,7 +35,7 @@ Bokgoni bo amohela palette ya mebala e le kenyo:
 }
 ```
 
-### Dipharamitha
+### Dipharamitha {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Bokgoni bo amohela palette ya mebala e le kenyo:
 | `wcag_level` | string | No | Boemo ba ho ikamahanya le WCAG: "A", "AA" (ya kamehla), kapa "AAA" |
 | `pairs_to_check` | array | No | Dipara tse itseng tsa mebala tse lokelang ho netefatswa (mohl., `["primary-text", "background-text"]`) |
 
-## Maemo a WCAG a Lekolwang
+## Maemo a WCAG a Lekolwang {#wcag-levels-checked}
 
 Bokgoni bo netefatsa dikarolelano tsa phapang ho ya ka maemo a WCAG:
 
@@ -56,7 +56,7 @@ Bokgoni bo netefatsa dikarolelano tsa phapang ho ya ka maemo a WCAG:
 - **Mongolo o Tlwaelehileng** — mongolo o monyane ho feta 18pt (kapa 14pt o motenya)
 - **Mongolo o Moholo** — mongolo wa 18pt kapa ho feta (kapa 14pt o motenya kapa ho feta)
 
-## Schema ya Sephetho
+## Schema ya Sephetho {#output-schema}
 
 Bokgoni bo kgutlisa tlaleho e qaqileng ya netefatso:
 
@@ -95,7 +95,7 @@ Bokgoni bo kgutlisa tlaleho e qaqileng ya netefatso:
 }
 ```
 
-### Masimo a Sephetho
+### Masimo a Sephetho {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Bokgoni bo kgutlisa tlaleho e qaqileng ya netefatso:
 | `status` | string | "pass" kapa "fail" bakeng sa para ka nngwe |
 | `recommendations` | array | Ditlhahiso tsa ho ntlafatsa dipara tse hlolehang |
 
-## Mohlala wa Tshebediso
+## Mohlala wa Tshebediso {#usage-example}
 
 **Tshusumetso:**
 ```
@@ -119,7 +119,7 @@ Bokgoni bo netefatsa metswako yohle ya mebala mme bo kgutlisa:
 - ✅ Bokamorao + Mongolo: karolelano ya 12.1:1 (e feta WCAG AAA)
 - Ka kakaretso: E ikamahanya le WCAG AA
 
-## Kopanyo le Theme Builder
+## Kopanyo le Theme Builder {#integration-with-theme-builder}
 
 Ha o sebedisa kgetho ya tataiso ya moralo ya Theme Builder, bokgoni ba Validate Palette Contrast bo:
 
@@ -129,7 +129,7 @@ Ha o sebedisa kgetho ya tataiso ya moralo ya Theme Builder, bokgoni ba Validate 
 4. Fana ka ditlhahiso bakeng sa dipara tse sa ikamahanyeng
 5. Thibela ho sebedisa meralo ya mebala e sa fihlelleheng
 
-## Mekgwa e Metle
+## Mekgwa e Metle {#best-practices}
 
 - **Qala ka boemo ba AA** — WCAG AA ke tekanyetso bakeng sa diwebosaete tse ngata
 - **Leka pele o sebedisa** — netefatsa palette ya hao pele o itlama ho moralo
@@ -137,7 +137,7 @@ Ha o sebedisa kgetho ya tataiso ya moralo ya Theme Builder, bokgoni ba Validate 
 - **Nahana ka dikgetho tsa basebedisi** — basebedisi ba bang ba ka ba le kutlo e eketsehileng ya mebala
 - **Sebedisa disebediswa tsa ho lekola phapang** — kopanya bokgoni bona le disebediswa tsa sebatli bakeng sa netefatso
 
-## Dipara tse Hlolehang le Ditlhahiso
+## Dipara tse Hlolehang le Ditlhahiso {#failing-pairs-and-recommendations}
 
 Haeba para ya mebala e hloleha netefatso, bokgoni bo fana ka ditlhahiso:
 
@@ -155,7 +155,7 @@ Haeba para ya mebala e hloleha netefatso, bokgoni bo fana ka ditlhahiso:
 }
 ```
 
-## Bokgoni bo Amanang
+## Bokgoni bo Amanang {#related-abilities}
 
 - [Hlahisa Logo SVG](./generate-logo-svg.md) — bopa dilogo ka palette ya hao ya mebala e netefaditsweng
 - [Bopa Menu](./create-menu.md) — haha tsamaiso ya ho tsamaya ka mebala e fihlellehang

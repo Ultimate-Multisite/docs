@@ -3,15 +3,15 @@ title: Průvodce použitím hooků
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Průvodce použitím hooků
+# Průvodce použitím hooků {#hooks-usage-guide}
 
 Ultimate Multisite poskytuje více než 200 akčních hooků a více než 280 filtračních hooků. Tato stránka pokrývá nejpoužívanější hooky s praktickými příklady. Pro kompletní automaticky vygenerovaný seznam se podívejte na ostatní stránky v této sekci.
 
-## Akční hooky (Action Hooks)
+## Akční hooky (Action Hooks) {#action-hooks}
 
-### Životní cyklus zákazníka
+### Životní cyklus zákazníka {#customer-lifecycle}
 
-#### Po vytvoření zákazníka
+#### Po vytvoření zákazníka {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Změna stavu zákazníka
+#### Změna stavu zákazníka {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooky pro stránky (Site Hooks)
+### Hooky pro stránky (Site Hooks) {#site-hooks}
 
-#### Po publikaci stránky
+#### Po publikaci stránky {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Před aplikací šablony
+#### Před aplikací šablony {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooky pro členství (Membership Hooks)
+### Hooky pro členství (Membership Hooks) {#membership-hooks}
 
-#### Přechody stavů
+#### Přechody stavů {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooky pro platby (Payment Hooks)
+### Hooky pro platby (Payment Hooks) {#payment-hooks}
 
-#### Úspěšná / Selhání platby
+#### Úspěšná / Selhání platby {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooky pro pokladnu (Checkout Hooks)
+### Hooky pro pokladnu (Checkout Hooks) {#checkout-hooks}
 
-#### Před zpracováním / Po dokončení
+#### Před zpracováním / Po dokončení {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooky pro domény (Domain Hooks)
+### Hooky pro domény (Domain Hooks) {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filtrační hooky (Filter Hooks)
+## Filtrační hooky (Filter Hooks) {#filter-hooks}
 
-### Filtry cenotvorby (Pricing Filters)
+### Filtry cenotvorby (Pricing Filters) {#pricing-filters}
 
-#### Celkový součet košíku (Cart Total)
+#### Celkový součet košíku (Cart Total) {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Danní sazby (Tax Rates)
+#### Danní sazby (Tax Rates) {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Filtry šablon (Template Filters)
+### Filtry šablon (Template Filters) {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Filtry omezení (Limitation Filters)
+### Filtry omezení (Limitation Filters) {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Filtry brány (Gateway Filters)
+### Filtry brány (Gateway Filters) {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Pole formuláře pokladny (Checkout Form Fields)
+### Pole formuláře pokladny (Checkout Form Fields) {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Obsah e-mailu (Email Content)
+### Obsah e-mailu (Email Content) {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

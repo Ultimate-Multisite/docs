@@ -3,7 +3,7 @@ title: Jinsi ya Kusanikisha WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Jinsi ya Kusanidi WordPress Multisite?
+# Jinsi ya Kusanidi WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite inakuwezesha kuwa na mtandao wa tovuti kwenye usanidi mmoja. Hii ni kipengele kilichojengwa ndani, lakini hakijawashwa kwa chaguo-msingi.
 
@@ -61,7 +61,7 @@ Na msimbo huu, pia uliotolewa na WordPress, kwenye faili yako ya _**.htaccess**_
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Ili kuunda subsite:
 
 Baada ya kujaza sehemu, bofya kitufe cha "Add site". Subsite mpya ikiundwa, endelea na kuifikia ili kuhakikisha kuwa subsite inafanya kazi.
 
-## Matatizo ya Kawaida:
+## Matatizo ya Kawaida: {#common-problems}
 
-### 1\. Ninaweza kuunda tovuti mpya lakini hazipatikani.
+### 1\. Ninaweza kuunda tovuti mpya lakini hazipatikani. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ukichagua subdomains, unahitaji pia kusanidi wildcard subdomains kwa mtandao wako wa multisite.
 

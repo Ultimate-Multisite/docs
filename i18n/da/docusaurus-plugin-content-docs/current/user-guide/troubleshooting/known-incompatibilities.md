@@ -3,7 +3,7 @@ title: Kendte uforeneligheder
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Kendte uforeneligheder med andre Plugins
+# Kendte uforeneligheder med andre Plugins {#known-incompatibilities-with-other-plugins}
 
 Efter installation og aktivering af Ultimate Multisite kan du støde på problemer grundet uafhjælpelige uforeneligheder med andre plugins.
 

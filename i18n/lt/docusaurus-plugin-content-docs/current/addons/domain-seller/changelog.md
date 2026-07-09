@@ -3,7 +3,7 @@ title: Domenų pardavėjo pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domenų pardavėjo pakeitimų žurnalas
+# Domenų pardavėjo pakeitimų žurnalas {#domain-seller-changelog}
 
 Versija 1.3.0 - Išleista 2026-06-02
 - Nauja: Pridėtas network-admin įspėjimas, kai HostAfrica perpardavėjo likutis tampa per mažas
@@ -134,20 +134,20 @@ Versija 1.0.0 - Išleista 2025-09-28
 * **Ištaisyta:** Visas pasenęs v1 kodas atnaujintas pagal v2 standartus
 * **Pašalinta:** Senasis v1 suderinamumas (nesuderinamas pakeitimas)
 
-### Ankstesnės versijos (v1 Legacy)
+### Ankstesnės versijos (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Versija 0.0.3 - 20/08/2019
+### Versija 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Ištaisyta: Nesuderinamumas su Groundhogg CRM
 * Pastaba: Tai buvo paskutinė su v1 suderinama laida
 
-### Versija 0.0.2 - 07/12/2018
+### Versija 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Ištaisyta: Pašalintas License Key laukas
 * Ištaisyta: Trūksta plano skirtukų, kai funkcijos plugin yra aktyvus
 * Patobulinta: Registracijos lauke pridėtas praleidimo mygtukas
 
-### Versija 0.0.1 - Pradinė laida
+### Versija 0.0.1 - Pradinė laida {#version-001---initial-release}
 
 * Bazinė OpenSRS integracija WP Ultimo v1
 * Paprasta domeno paieška ir registracija

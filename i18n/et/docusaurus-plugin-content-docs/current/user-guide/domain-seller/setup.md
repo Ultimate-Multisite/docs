@@ -3,21 +3,21 @@ title: Seadistamine ja pakkuja konfiguratsioon
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domen müüja: Seadistamine ja teenuse konfiguratsioonid
+# Domen müüja: Seadistamine ja teenuse konfiguratsioonid {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller lisamoodul on kaasas suunatud seadistamise juhend, mis juhendab teid iga vajaliku sammu läbiva. See leht käsitleb juhendi voolu ning seda, kuidas pärast seda konfigurida või uuesti konfigurida teenusepanna (provider).
 
-## nõuded
+## nõuded {#requirements}
 
 - **Multisite Ultimate** versioon 2.4.12 või hiljem, võrku aktiveeritud
 - **PHP** 7.4+
 - API-kõstused vähemalt ühe toetatud registri jaoks
 
-## Esimene käivitamise seadistamise juhend
+## Esimene käivitamise seadistamise juhend {#first-run-setup-wizard}
 
 Seadistamise juhend käivitub automaatselt esimest korda, kui aktiveerite lisamoodula võrku. See on ka saadaval igal ajal **Network Admin › Ultimate Multisite › Domain Seller Setup** menüüpunktist.
 
-### Samm 1 — Valige teenusepanna (provider)
+### Samm 1 — Valige teenusepanna (provider) {#step-1--choose-a-provider}
 
 Valige registri, mida soovite ühendada. Toetatud valikud:
 
@@ -33,7 +33,7 @@ Valige registri, mida soovite ühendada. Toetatud valikud:
 | NameSilo | Ei | Ei |
 | Enom | Jah | Ei |
 
-### Samm 2 — Sisestage võtmeandmed
+### Samm 2 — Sisestage võtmeandmed {#step-2--enter-credentials}
 
 Iga teenusepanna on erinevad võtmeandmete väljad:
 
@@ -57,17 +57,17 @@ Iga teenusepanna on erinevad võtmeandmete väljad:
 
 Kontrollige **Sandbox mode**, kui see saadaval on, et testida teenuse testimise keskkonnas enne lõplikku käivitamist.
 
-### Samuti 3 – Kontrolli ühendust
+### Samuti 3 – Kontrolli ühendust {#step-3--test-the-connection}
 
 Klõpsake **Test Connection**. Wizard lähevad kerge API-kutsuga kinnitama andmeid ja ühendust. Paranda kõik credential probleemid enne jätkamist.
 
-### Samuti 4 – TLD-de importimine
+### Samuti 4 – TLD-de importimine {#step-4--import-tlds}
 
 Klõpsake **Import TLDs**, et veendada kõigist saadaval olevat TLD-de ja suurte pakkumise hinnadest seotud teenuse poolt. See täiustab domeenide toodud kasutamata TLD-nimetusega nimekirja. Import võib requireerida 30–60 sekundi suurt TLD-katalogidega teenuste jaoks.
 
 TLD-id synkronitakse automaatselt iga päev ühtlustatud cron jobi abil.
 
-### Samuti 5 – Domeenide toote loomine
+### Samuti 5 – Domeenide toote loomine {#step-5--create-a-domain-product}
 
 Wizard luub poolt oletuse domeenide toote, millele on lisatud 10% hinnakujundus. Saate seda toodet kohe muuta või jätta see ja luua toote manuaalselt **Ultimate Multisite › Products** all.
 
@@ -75,7 +75,7 @@ Vaadake [Domain Products and Pricing](domain-products) selle kohta täieliku too
 
 ---
 
-## Teenuse uudelleenkonfiguratsioon
+## Teenuse uudelleenkonfiguratsioon {#reconfiguring-a-provider}
 
 Minema **Network Admin › Ultimate Multisite › Settings › Domain Seller** (või klõpsake **Settings** pluginide nimekirjas).
 
@@ -87,17 +87,17 @@ Seadistuslehel on:
 - **Käsilikuvuse kaudu cache'i kestus** — kui pika aega hoida käsilikuvuse ja hinnakujutamise tulemisi; väiksemad väärtused on täpsemad, kuid suurendavad API-kutseid
 - **Domeenide tootete haldamine** — kiire link Tootete nendel listile
 
-### Teise tarjendaja lisamine
+### Teise tarjendaja lisamine {#adding-a-second-provider}
 
 Klõpsake **Configure providers** ja kä jätke wizard uuesti uusle registri. Saate konfigurida samal ajal mitmeid tarjendajaid. Assignige iga domeenide toote konkreetsele tarjendajale või jätke seda oletustena.
 
-### TLD-id manuaalselt synkronimine
+### TLD-id manuaalselt synkronimine {#syncing-tlds-manually}
 
 Sätted lehel klõpsake **Sync TLDs** konfiguratsiooniga tarjendaja kõrval, et tõmmata uusim hinnakujutamine. See on kasulik pärast seda, kui tarjendaja uuendab suurte pakkumiste hinate või lisab uusi TLD-id.
 
 ---
 
-## Logid
+## Logid {#logs}
 
 Iga tarjendaja kirjeldab oma logi kanalile. Logid on nähtavad **Network Admin › Ultimate Multisite › Logs** all:
 
@@ -117,7 +117,7 @@ Iga tarjendaja kirjeldab oma logi kanalile. Logid on nähtavad **Network Admin �
 
 ---
 
-## Pärandi võimaluste joonised
+## Pärandi võimaluste joonised {#provider-capability-notes}
 
 Ei ole kõikide registratorite API-id eksponeerivad sama operatsioonid. Addon näitab tuetamata operatsioonid selge administratiivse süsteeni vigaid, mitte lihtsalt vaikselt ebaõnnestumiseega.
 

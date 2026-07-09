@@ -3,11 +3,11 @@ title: Keterampilan Estetika Sistem Desain
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Keterampilan Estetika Design System
+# Keterampilan Estetika Design System {#design-system-aesthetics-skill}
 
 **Keterampilan Estetika Design System** iku cara pandang terarah kanggo ngresiki identitas visual situsmu. Iki mbantu sampeyan nggawe keputusan sing konsisten babagan tipografi, warna, jarak (spacing), lan *motion tokens* sing ndadekake desain sistemmu dadi siji.
 
-## Apa kuwi Design System Aesthetics?
+## Apa kuwi Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics iku keterampilan terstruktur sing ngliputi:
 
@@ -20,9 +20,9 @@ Design System Aesthetics iku keterampilan terstruktur sing ngliputi:
 
 Keputusan-keputusan iki direkam ing file `theme.json` tema sampeyan, nggawe sistem visual sing padu.
 
-## Kenapa Nganggo Design System Aesthetics?
+## Kenapa Nganggo Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Konsistensi
+### Konsistensi {#consistency}
 
 Sistem desain njamin:
 
@@ -31,7 +31,7 @@ Sistem desain njamin:
 - Jarak (spacing) manut pola sing bisa diprediksi
 - Animasi krasa nyatu (*unified*)
 
-### Efisiensi
+### Efisiensi {#efficiency}
 
 Tinimbang nggawe keputusan desain siji-siji per halaman, sampeyan:
 
@@ -39,7 +39,7 @@ Tinimbang nggawe keputusan desain siji-siji per halaman, sampeyan:
 - Nerapake ing saben papan
 - Ngupdate sacara global kanthi ngowahi siji nilai
 
-### Fleksibilitas
+### Fleksibilitas {#flexibility}
 
 Sampeyan bisa:
 
@@ -47,9 +47,9 @@ Sampeyan bisa:
 - Eksperimen karo estetika sing beda
 - Njaga konsistensi merek nalika terus berkembang
 
-## Memicu Keterampilan Design System Aesthetics
+## Memicu Keterampilan Design System Aesthetics {#triggering-the-design-system-aesthetics-skill}
 
-### Aktivasi Manual
+### Aktivasi Manual {#manual-activation}
 
 Sampeyan bisa miwiti keterampilan iki kapan wae:
 
@@ -69,7 +69,7 @@ utawa
 "Pandu saya nggawe keputusan design system"
 ```
 
-### Saran Otomatis
+### Saran Otomatis {#automatic-suggestions}
 
 Agen bisa ngajak nggunakake keterampilan iki nalika sampeyan:
 
@@ -78,9 +78,9 @@ Agen bisa ngajak nggunakake keterampilan iki nalika sampeyan:
 - Pengin ningkatake konsistensi visual
 - Lagi nyiapake peluncuran situsmu
 
-## Proses Estetika Design System
+## Proses Estetika Design System {#the-design-system-aesthetics-process}
 
-### Langkah 1: Tipografi
+### Langkah 1: Tipografi {#step-1-typography}
 
 Agen bakal nanya soal pilihan font sampeyan:
 
@@ -110,7 +110,7 @@ Terus agen bakal mendefinisikan:
 - **Skala Ketebalan (Weight scale)**: Ketebalan font (reguler, medium, bold, lsp.)
 - **Jarak Baris (Line height)**: Jarak antar baris kanggo keterbacaan
 
-### Langkah 2: Palet Warna
+### Langkah 2: Palet Warna {#step-2-color-palette}
 
 ```
 Yuk, kita tentukan palet warna.
@@ -158,7 +158,7 @@ Agen iki ngapungake token jarak (spacing tokens):
 - Skala: xs, sm, md, lg, xl, 2xl
 - Nilai spesifik kanggo padding, margin, gap
 
-### Langkah 4: Border lan Bayangan (Borders and Shadows)
+### Langkah 4: Border lan Bayangan (Borders and Shadows) {#step-3-spacing}
 
 ```
 Kedalaman visual lan wujud:
@@ -181,7 +181,7 @@ Agen iki bakal nggawe:
 - Shadow tokens kanggo tingkat ketinggian (elevation levels)
 - Border width tokens
 
-### Langkah 5: Gerakan lan Animasi (Motion and Animation)
+### Langkah 5: Gerakan lan Animasi (Motion and Animation) {#step-4-borders-and-shadows}
 
 ```
 Kepiye rasane website sampeyan nalika interaktif?
@@ -203,9 +203,9 @@ Agen iki bakal ngapungake:
 - Fungsi easing (ease-in, ease-out, ease-in-out)
 - Keyframes animasi kanggo interaksi umum
 
-## Nggo Nerapake Estetika Design System
+## Nggo Nerapake Estetika Design System {#step-5-motion-and-animation}
 
-### Penerapan Otomatis (Automatic Application)
+### Penerapan Otomatis (Automatic Application) {#applying-design-system-aesthetics}
 
 Sawise sampeyan ngrampungake skill iki, agen bakal:
 
@@ -214,7 +214,7 @@ Sawise sampeyan ngrampungake skill iki, agen bakal:
 3. Ngregenerasi gaya blok supaya cocok karo sistem anyar
 4. Aktifake tema sing wis diupdate
 
-### Penerapan Manual (Manual Application)
+### Penerapan Manual (Manual Application) {#automatic-application}
 
 Sampeyan uga bisa ngedit `theme.json` langsung:
 
@@ -253,9 +253,9 @@ Sampeyan uga bisa ngedit `theme.json` langsung:
 }
 ```
 
-## Ndelengake Sistem Desainmu (Viewing Your Design System)
+## Ndelengake Sistem Desainmu (Viewing Your Design System) {#manual-application}
 
-### Takon Agen (Ask the Agent)
+### Takon Agen (Ask the Agent) {#viewing-your-design-system}
 
 ```
 "Tunjukkan sistem desainku"
@@ -269,13 +269,13 @@ utawa
 
 Agen bakal nampilake tipografi, warna, jarak antar elemen (spacing), lan token liyane.
 
-### Tonton theme.json
+### Tonton theme.json {#ask-the-agent}
 
 Buka `/wp-content/themes/[theme-name]/theme.json` ing editor teks kanggo ndelok definisi token asli.
 
-## Ngupdate Sistem Desainmu (Updating Your Design System)
+## Ngupdate Sistem Desainmu (Updating Your Design System) {#view-themejson}
 
-### Update Cepet (Quick Updates)
+### Update Cepet (Quick Updates) {#updating-your-design-system}
 
 Takon agen kanggo owah-owahan tartamtu:
 
@@ -295,7 +295,7 @@ utawa
 "Ganti font judul dadi serif"
 ```
 
-### Desain Ulang Lengkap (Full Redesign)
+### Desain Ulang Lengkap (Full Redesign) {#quick-updates}
 
 Lakoni maneh skill Design System Aesthetics:
 
@@ -305,7 +305,7 @@ Lakoni maneh skill Design System Aesthetics:
 
 Iki bakal nuntun sampeyan ngliwati kabeh keputusan maneh, wiwit saka nilai saiki.
 
-### Update Parsial (Partial Updates)
+### Update Parsial (Partial Updates) {#full-redesign}
 
 Update aspek tartamtu wae:
 
@@ -313,15 +313,15 @@ Update aspek tartamtu wae:
 "Cukup update palet warna, sisane tetep kaya ngono"
 ```
 
-## Praktik Desain Sistem Terbaik (Design System Best Practices)
+## Praktik Desain Sistem Terbaik (Design System Best Practices) {#partial-updates}
 
-### Konsistensi (Consistency)
+### Konsistensi (Consistency) {#design-system-best-practices}
 
 - Gunakake token sing padha ing saben papan.
 - Aja nggawe warna utawa ukuran sing mung digawe sekali.
 - Referensake token tinimbang langsung nulis nilaine.
 
-### Penamaan (Naming)
+### Penamaan (Naming) {#consistency-1}
 
 Gunakake jeneng sing jelas lan gampang dingerteni:
 
@@ -331,7 +331,7 @@ Gunakake jeneng sing jelas lan gampang dingerteni:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalabilitas (Scalability)
+### Skalabilitas (Scalability) {#naming}
 
 Rancang sistemmu agar bisa berkembang (scale):
 
@@ -339,15 +339,15 @@ Rancang sistemmu agar bisa berkembang (scale):
 - Buat skala (xs, sm, md, lg, xl) daripada nilai acak
 - Rencanakan untuk penambahan di masa depan
 
-### Dokumentasikan desain sistemmu:
+### Dokumentasikan desain sistemmu: {#scalability}
 
 - Kenapa kamu memilih warna tertentu
 - Kapan menggunakan setiap token
 - Pengecualian dan kasus sulit (edge cases)
 
-## Pola Desain Sistem Umum
+## Pola Desain Sistem Umum {#documentation}
 
-### Modern Minimalis
+### Modern Minimalis {#common-design-system-patterns}
 
 - Tipografi tanpa kait (Sans-serif) (Inter, Helvetica)
 - Palet warna terbatas (2-3 warna)
@@ -355,7 +355,7 @@ Rancang sistemmu agar bisa berkembang (scale):
 - Bayangan yang halus (subtle shadows)
 - Animasi yang mulus dan cepat
 
-### Hangat dan Ramah
+### Hangat dan Ramah {#modern-minimalist}
 
 - Campuran serif dan sans-serif
 - Palet warna hangat (oranye, abu-abu hangat)
@@ -363,7 +363,7 @@ Rancang sistemmu agar bisa berkembang (scale):
 - Bayangan yang lembut (soft shadows)
 - Animasi yang ceria (playful animations)
 
-### Profesional Korporat
+### Profesional Korporat {#warm-and-friendly}
 
 - Sans-serif yang bersih (Roboto, Open Sans)
 - Palet netral dengan warna aksen
@@ -371,7 +371,7 @@ Rancang sistemmu agar bisa berkembang (scale):
 - Bayangan minimalis
 - Transisi yang halus (subtle transitions)
 
-### Kreatif dan Berani
+### Kreatif dan Berani {#professional-corporate}
 
 - Tipografi yang khas (distinctive typography)
 - Palet warna yang berani (bold color palette)
@@ -379,7 +379,7 @@ Rancang sistemmu agar bisa berkembang (scale):
 - Bayangan yang kuat (strong shadows)
 - Animasi yang mencolok (noticeable animations)
 
-## Pemecahan Masalah (Troubleshooting)
+## Pemecahan Masalah (Troubleshooting) {#creative-and-bold}
 
 **Perubahan desain sistemku tidak muncul**
 - Bersihkan cache browser kamu
@@ -397,7 +397,7 @@ Rancang sistemmu agar bisa berkembang (scale):
 - Edit manual theme.json ke nilai sebelumnya
 - Jalankan lagi skill dengan pilihan yang berbeda
 
-## Langkah Selanjutnya
+## Langkah Selanjutnya {#troubleshooting}
 
 Setelah mendefinisikan desain sistemmu:
 

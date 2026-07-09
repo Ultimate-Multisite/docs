@@ -3,13 +3,13 @@ title: Konstruado de Propra Registristo-Integriĝo
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Konstruado de Propra Registrar-Integriĝo
+# Konstruado de Propra Registrar-Integriĝo {#building-a-custom-registrar-integration}
 
 La Domain Seller aldonaĵo uzas ŝablonon de **Integration Registry**. Ĉiu registrar estas PHP-klaso kiu efektivigas `Domain_Selling_Capability` kaj registras sin per la ago-hoko `wu_domain_seller_register_capabilities`.
 
 Ĉi tiu gvidilo montras kiel konekti propran registrar.
 
-## La interfaco
+## La interfaco {#the-interface}
 
 Via klaso devas efektivigi `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` kaj etendi `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Nedevigaj metodoj
+### Nedevigaj metodoj {#optional-methods}
 
 Efektivigu ĉi tiujn por malŝlosi pliajn funkciojn. La aldonaĵo detektas subtenon per `method_exists()`:
 
@@ -81,7 +81,7 @@ Efektivigu ĉi tiujn por malŝlosi pliajn funkciojn. La aldonaĵo detektas subte
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### Konvencio pri revenvaloro
+### Konvencio pri revenvaloro {#return-value-convention}
 
 Ĉiuj metodoj revenigas tabelon kun minimume ŝlosilo `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Registrado de via kapablo
+## Registrado de via kapablo {#registering-your-capability}
 
 Registru vian klason uzante la agon `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ La unua argumento al `add_capability()` estas la **provider ID** — minusklula 
 
 ---
 
-## Aldono de akreditilaj kampoj al la asistanto
+## Aldono de akreditilaj kampoj al la asistanto {#adding-credential-fields-to-the-wizard}
 
 Por permesi al administrantoj enigi akreditilojn per la agorda asistanto, registru vian integriĝon:
 
@@ -137,7 +137,7 @@ Akreditiloj estas konservataj kiel retaj opcioj uzante la kampajn ID-ojn kiel ŝ
 
 ---
 
-## Hok
+## Hok {#hooks-for-post-registration-actions}
 oj por post-registradaj agoj
 
 Uzu ĉi tiujn agojn por ekigi webhooks, proviziadon, sciigojn, aŭ CRM-ĝisdatigojn:
@@ -178,7 +178,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Protokolado
+## Protokolado {#logging}
 
 Skribu al via provizanto-specifa protokola kanalo uzante `wu_log_add()`:
 

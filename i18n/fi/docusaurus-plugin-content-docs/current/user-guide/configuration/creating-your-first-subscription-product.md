@@ -3,13 +3,13 @@ title: Ensimmäisen tilauskohtaisen tuotteen luominen
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ensimmäisen tilauskohteen luominen (v2)
+# Ensimmäisen tilauskohteen luominen (v2) {#creating-your-first-subscription-product-v2}
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli on tarkoitettu vain Ultimate Multisite -versio 2.x käyttäjille. Jos käytät versiota 1.x,**_ **katso tätä artikkelia.**
 
 Verkoston käynnistämiseksi ja palveluiden myymisen potentiaalisille käyttäjille aloittamiseksi sinun on oltava erilaisia tilausvaihtoehtoja. Miten luot nämä tuotteet? Millaisia tuotekategorioita voit tarjota? Tässä artikkelissa käsimme läpi kaikki, mitä sinun tulee tietää tuotteista.
 
-## Tuotetyyppi
+## Tuotetyyppi {#product-type}
 
 Ultimate Multisite -palvelussa voit tarjota asiakkailillesi kaksi tuotekategoriaa: **suunnitelmia (plans)** ja **lisäosia (add-ons) (Order Bump)**. Lisäosat voidaan jakaa kahteen tyyppiin: **paketteihin (packages)** ja **palveluihin (services)**. Näemme niiden erot ja erityispiirteet seuraavaksi.
 
@@ -19,7 +19,7 @@ Ultimate Multisite -palvelussa voit tarjota asiakkailillesi kaksi tuotekategoria
 
   * **Palvelut (Services)**: lisäosia, jotka eivät muuta Ultimate Multisite -palvelun toiminnallisuutta. Ne ovat tehtäviä, joita toteutat asiakkaasi nimissä suunnitelman lisäksi ostetun palvelun mukaisesti. Esimerkiksi asiakas saattaa ostaa suunnitelman, joka sallii yhden sivuston, ja maksaa myös lisapalvelusta, joka tekee tämän sivuston suunnittelun.
 
-## Tuotteiden hallinta
+## Tuotteiden hallinta {#managing-products}
 
 Monille monille Ultimate Multisite - (Ultimate Multisite > Products) -välilehti voidaan verrata perinteiseen isännöintiympäristön suunnitelmiin.
 
@@ -29,7 +29,7 @@ Tämä osio auttaa sinua ymmärtämään Ultimate Multisiten tähän olennaiseen
 
 ![Products list page](/img/config/products-list.png)
 
-## Tuotteiden lisääminen
+## Tuotteiden lisääminen {#adding-products}
 
 Mitä se sitten suunnitelma, paketti tai palvelu, joka aloittaa uuden kohteen määrittelyn, sitä käytät **Ultimate Multisite > Products > Add Product** -valikkoa.
 
@@ -39,13 +39,13 @@ Käyttöliittymässä on kaksi pääosiota. Vasemmalla on useita välilehtiä, j
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Kuvaus
+### Kuvaus {#description}
 
 Perustietoja tuotteesta voidaan määrittää antamalla tuotenimi ja kuvaus. Nämä tunnisteet näytetään missä tahansa, jossa tuotetiedot ovat tarpeen, kuten suunnitelmien ja hinnoittelun valinnassa, laskuissa, päivityksissä jne.
 
 ![Product description section](/img/config/product-description.png)
 
-### Hinnoittelutyyppi
+### Hinnoittelutyyppi {#pricing-type}
 
 Käyttöliittymän oikealla puolella perushinta voidaan määrittää.
 
@@ -53,7 +53,7 @@ Käyttöliittymän oikealla puolella perushinta voidaan määrittää.
 
 Ultimate Multisite tukee kolmea eri hinnoittelutyyppiä. **Paid** (maksullinen) -vaihtoehto pyytää verkkoadministratorilta tietoa tuotteen hinnasta ja laskutusajankohdasta.
 
-### Hinnasto
+### Hinnasto {#pricing}
 
 Hinnan komponentti määrittelee perushinnan ja laskutusvälin.
 
@@ -61,7 +61,7 @@ Hinnan komponentti määrittelee perushinnan ja laskutusvälin.
 
 täten esimerkiksi hinta 29,99 dollaria asetuksella 1 kuukaudeksi laskutetaan 29,99 dollaria joka kuukausi. Samoin hinta 89,97 dollaria asetuksella 3 kuukaudeksi laskutetaan kyseinen summa joka neljännesvuosittain.
 
-### Laskutuspyörteet (Billing Cycles)
+### Laskutuspyörteet (Billing Cycles) {#billing-cycles}
 
 Laskutuspyörteiden osio kertoo mainitun laskutusvälissä toistuvuusajasta ja ymmärretään yleensä sopimusten tai kiinteiden aikataulujen valossa.
 
@@ -69,7 +69,7 @@ Laskutuspyörteiden osio kertoo mainitun laskutusvälissä toistuvuusajasta ja y
 
 Esimerkiksi tuotteen hinta 29,99 dollaria välillä 1 kuukausi ja 12 laskutuspyörtettä tarkoittaa, että tuotteesta maksetaan 29,99 dollaria kuukaudessa seuraavien 12 kuukauden ajan. Toisin sanoen tällainen asetuksella luodaan kiinteä hinta-aika 29,99 dollaria kuukaudessa 12 kuukaudelle ja laskutus lakkaa sen jälkeen.
 
-### Kokeilujakso (Trial Period)
+### Kokeilujakso (Trial Period) {#trial-period}
 
 Offer trial -kytkimen käyttäminen mahdollistaa verkkoadministratorin määrittämisen tuotteelle kokeilujakson.
 
@@ -77,7 +77,7 @@ Offer trial -kytkimen käyttäminen mahdollistaa verkkoadministratorin määritt
 
 Kokeilujakson aikana asiakkaat voivat käyttää tuotetta ilman maksua, kunnes kokeilujakso on päättynyt.
 
-### Asetusmaksu (Setup Fee)
+### Asetusmaksu (Setup Fee) {#setup-fee}
 
 Voit myös soveltaa asetusmaksun omalle suunnitelmallesi.
 
@@ -85,7 +85,7 @@ Voit myös soveltaa asetusmaksun omalle suunnitelmallesi.
 
 Tämä tarkoittaa, että asiakas maksaa lisäsumman ensimmäisellä maksullaan (lisäksi hinnan suunnitelmaan) sen mukaan, mitä olet määritellyt tällä osiolla oleva maksu.
 
-### Aktiivinen (Active)
+### Aktiivinen (Active) {#active}
 
 Aktiivinen -kytkin määrittää tehokkaasti, onko tuote saatavilla asiakkaille uusille rekisteröitymislomakkeille.
 
@@ -93,13 +93,13 @@ Aktiivinen -kytkin määrittää tehokkaasti, onko tuote saatavilla asiakkaille 
 
 Jos tällä suunnitelmalla on olemassa olevia asiakkaita kytkimen poistaminen pois käytöstä estää sen automaattisen poistamisen tulevista rekisteröinnistä. **Olemassa olevat asiakkaat suunnitelmallasi jatkavat laskutusta** kunnes he siirretään uuteen suunnitteluun tai poistetaan suunnitelmasta.
 
-### Tuotekuva
+### Tuotekuva {#product-image}
 
 **Upload Image** -painike antaa verkko-administratorille mahdollisuuden käyttää mediaa kirjastoa valitakseen tai lataakseen tuotekuvan.
 
 ![Product image section](/img/config/product-image.png)
 
-### Poista
+### Poista {#delete}
 
 **Delete Product** -painike poistaa tuotteen järjestelmästä. Se ilmestyy vasta, kun tuote on julkaistu.
 
@@ -107,11 +107,11 @@ Jos tällä suunnitelmalla on olemassa olevia asiakkaita kytkimen poistaminen po
 
 Muut poistoista eroaa tästä siinä, että tuote ei sijoitu mihinkään roskakoriin. Siksi kerran poistettu toiminto on peruuttamaton.
 
-### Tuotteen vaihtoehdot
+### Tuotteen vaihtoehdot {#product-options}
 
 Kun perusluokan tuotetiedot on määritetty, tuotteen vaihtoehdot auttavat verkko-administratoria määrittämään tuotteen erityisiä ominaisuuksia tarkemmin.
 
-#### Yleinen
+#### Yleinen {#general}
 
 **General** -välilehti määrittelee yleiset ominaisuudet tuotteelle, jotka eivät koske muita tuotteeseen liittyviä välilehtiä.
 
@@ -125,7 +125,7 @@ Ultimate Multisite tukee useita tuotetyyppejä, kuten Plan (Suunnitelma), Packag
 
 ![Asiakkaan rooliasetukset](/img/config/product-customer-role-settings.png)
 
-#### Ylös- ja alaspäivitykset (Up & Downgrades)
+#### Ylös- ja alaspäivitykset (Up & Downgrades) {#up--downgrades}
 
 Tämä välilehti kertoo, mitkä ylös- ja alaspäivityspolut ovat saatavilla asiakkaalle hänen tietyssä tasossaan.
 
@@ -143,7 +143,7 @@ Suunnitelmaliikkeen määritteleminen tapahtuu valitsemalla yhteensopivia suunni
 
 Ultimate Multisite sisältää myös **order bump** -ominaisuuden, jolla sopivasti voidaan lisätä tuotteita ja palveluita suunnitelmiin. Nämä tarjotaan asiakkaalle lisänäytteinä, joita voi lisätä maksullessa tai päivityksen aikana.
 
-#### Hinnan vaihtelut (Price Variations)
+#### Hinnan vaihtelut (Price Variations) {#price-variations}
 
 Hintaeroinnit antavat verkon ylläpitäjän määrittää vaihtoehtoisia hinnoittelutasoja eri kestoihin nähden. Tämä asetuksella on mahdollista tarjota sama tuote kuukausittaisina, neljännesvuotisina, vuosina tai minkä tahansa muun laskutusjakson mukaan. Esimerkiksi voit asettaa tuotteen hintaan 29,99 dollaria/kk ja tarjota alennuksen vuositilaukselle 249,99 dollaria/vuosi.
 
@@ -165,9 +165,9 @@ Esimerkiksi, jos perustuotteen hinta on 29,99 dollaria kuukaudessa, voit lisät�
 Hintaeroinnit yksinään eivät lisää kytkintä tai vaihtoehtoa kassalle. Jotta asiakkaat voivat vaihtaa laskutusjaksoja (esim. Kuukausittainen / Vuotuinen), sinun on lisättävä **Period Selection** -kenttä kassaportaasi. Katso [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) saadaksesi vaiheittaiset ohjeet.
 :::
 
-#### Verot
+#### Verot {#taxes}
 
-**Taxes** (Verot) -välilehti vastaa verotusasetuksia, jotka on määritelty **Ultimate Multisite > Settings > Taxes** -osiossa ja tarkemmin määritellyt veroprosentit. Jotta voit aktivoida verot ja määrittää sovellettavat veroprosentit, katso dokumentaatiota [Ultimate Multisite: Settings](ultimate-multisite-settings).
+**Taxes** (Verot) -välilehti vastaa verotusasetuksia, jotka on määritelty **Ultimate Multisite > Settings > Taxes** -osiossa ja tarkemmin määritellyt veroprosentit. Jotta voit aktivoida verot ja määrittää sovellettavat veroprosentit, katso dokumentaatiota **Ultimate Multisite: Settings**.
 
 ![Taxes tab](/img/config/product-taxes.png)
 
@@ -179,7 +179,7 @@ Kun veroprosentti on määritetty **Ultimate Multisite > Settings > Manage Tax R
 
 Jotta osoitat tuotteen olevan verovelvollinen, aseta **Is Taxable** -kytkin aktiiviseksi ja valitse sovellettava veroprosentti Tax Category -pudotusvalikosta.
 
-#### Sivustomallit (Site Templates)
+#### Sivustomallit (Site Templates) {#site-templates}
 
 Yksinkertaisesti sanottuna sivustomallit ovat täydellisiä WordPress-sivustoja, jotka kopioidaan asiakkaan sivustolle heidän tilaushetkellään.
 
@@ -201,7 +201,7 @@ Viimeiseksi **C**hoose Available Site Templates`-asetus ylivaltaa kassavaiheen m
 
 Lopulta, jos verkkohallitsija haluaa mallivalinnan tapahtuvaksi kassavaiheissa, ' _default_ '-asetus riittää. Vaihtoehtoisesti poistaaksesi ja lukitaksesi mallivalinnan sekä delegoidaksesi valinnan suunnitelmaasetuksiin voit käyttää ' _assign new template_ ' tai ' _choose available site templates_ '-vaihtoehtoja.
 
-#### Sites
+#### Sites {#sites}
 
 **Sites**-välilehti on osa Ultimate Multisite'n rajoitusten toiminnallisuutta.
 
@@ -211,7 +211,7 @@ Tämä asetuksen määrittää maksimimäärän sivustoja, joita asiakas voi luo
 
 Rajoituksia aktivoimiseksi aseta **limit sites** -kytkin aktiiviseen tilaan ja määritä maksimimäärä sivustoista **site allowance** -kenttään.
 
-#### Visits
+#### Visits {#visits}
 
 **Visits**-välilehti on osa Ultimate Multisite'n rajoitusjärjestelmää. Tämä asetuksen avulla voidaan laskea ja sen jälkeen rajoittaa yksilöllisten vierailijoiden määrää asiakkaan sivustolle.
 
@@ -223,7 +223,7 @@ Tämän ominaisuuden käytettäväksi aseta **limit unique visits** -kytkin akti
 
 Kun tämä rajoitus on saavutettu, Ultimate Multisite lopettaa asiakkaan sivuston palvelemisen sen sijaan, että se näyttäisi viestin rajojen ylittäneestä tilanteesta.
 
-#### Käyttäjät
+#### Käyttäjät {#users}
 
 Ultimate Multisiten 'Users' -rajoitukset antavat verkko-yläpitäjälle mahdollisuuden asettaa rajoituksia käyttäjien määrään, jotka voidaan luoda ja määrittää rooleihin.
 
@@ -233,7 +233,7 @@ Rajoitusten ominaisuuksien aktivoimiseksi aseta **limit user** -kytkin aktiivise
 
 Jokaisen rajoitettavan roolin kohdalla aseta kytkin sen viereen aktiiviseksi ja määrittele maksimirajoitus asianmukaisessa kentässä.
 
-#### Post-tyypit
+#### Post-tyypit {#post-types}
 
 **Post Types** -välilehti antaa verkko-yläpitäjälle mahdollisuuden asettaa yksityiskohtaisia rajoituksia WordPressin laajaan post-tyyppien joukkoon.
 
@@ -245,7 +245,7 @@ Tämän rajoitusalustan aktivoimiseksi aseta **limit post types** -kytkin aktiiv
 
 Seuraavaksi jokaiselle posttyyppille, jolle haluat rajoittaa sisällön määrää, kytke se päälle liukulla oikealle ja määritä maksimiarvo asianomaisessa kentässä.
 
-#### Levydiskkapas
+#### Levydiskkapas {#disk-space}
 **Disk Space** -välilehti antaa verkon ylläpitäjille mahdollisuuden rajoittaa asiakkaiden kuluttamaan tilaa.
 
 ![Disk Space tab](/img/config/product-disk-space.png)
@@ -256,12 +256,12 @@ Levyn käytön rajoittamisen aktivoimiseksi aseta **limit disk size per site** -
 
 Seuraavaksi määritä maksimiarvo megatavussa kenttään **disk space allowance**.
 
-#### Custom Domain (Mukautettu verkkotunnus)
+#### Custom Domain (Mukautettu verkkotunnus) {#custom-domain}
 Kytkemällä tämän vaihtoehdon voit sallia mukautettujen verkkotunnusten käyttö nimenomaan tälle suunnitelmalle.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes (Teemat)
+#### Themes (Teemat) {#themes}
 **Themes** -välilehti tuoteasetuksissa antaa verkko-yllläpitäjälle mahdollisuuden tehdä teemat saataville asiakkaiden valitsemiseen ja valinnaisesti pakottaa teeman tila.
 
 ![Themes tab](/img/config/product-themes.png)
@@ -278,7 +278,7 @@ _**Huomautus: Jotta teemoja voidaan tarjota asiakkaille, ne on oltava verkko-yll
 
 Saat ini teemä on saatavilla asiakkaalle itsensä aktivoimiseksi. Sen sijaan **Ei Saatavilla** -tilassa poistetaan asiakkaalta mahdollisuus aktivoimaan teema. Viimeisenä vaihtoehtona, **Pakota Aktivaatio** -vaihtoehto pakottaa teeman valinnan ja aktivoimisen siten asettaen sen oletukseksi sivuston luomisen yhteydessä.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Samankaltaisesti Teemojen välilehden tavoin Ultimate Multisite antaa verkkoadministratorille määrittää pluginien näkyvyyden asiakkaille sekä niiden tilan uuden sivuston luomisessa.
 
@@ -298,7 +298,7 @@ Asetus **Force Activate & Lock** -asetus on samalla tavalla toimii, mutta estä�
 
 Verkkoadministrator voisi harkita Force Activate & Lock ja Force Inactivate & Lock -asetuksia yhdessä sivuston mallipohjien kanssa pluginina, ja nämä asetukset voivat vaikuttaa mallipohjissa oleviin pluginin tiloihin, jos niitä valitaan.
 
-#### Asetusten nollausrajoitukset
+#### Asetusten nollausrajoitukset {#reset-limitations}
 
 **Reset Limitations** -välilehti nollaa kaikki tuotteeseen määritetyt räätälöidyt rajoitukset. Rajoitusten nollaamiseksi napsauta **reset limitations** -painiketta.
 
@@ -308,7 +308,7 @@ Toiminnon vahvistamiseksi liukua **confirm reset** -kytkimen aktiiviseen tilaan 
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Tuotteen muokkaaminen, kopioiminen tai poistaminen
+## Tuotteen muokkaaminen, kopioiminen tai poistaminen {#edit-duplicate-or-delete-product}
 
 Olemassa olevia tuotteita voi muokata, kopioida tai poistaa siirtyäkseen **Ultimate Multisite > Products** -valikkoon ja viet sen olemassa olevaa tuotenimeä hiiren osoittimella.
 

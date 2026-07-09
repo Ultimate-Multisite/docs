@@ -4,11 +4,11 @@ title: कार्य - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# कार्य: wu_membership_post_renew
+# कार्य: wu_membership_post_renew {#action-wumembershippostrenew}
 
 सदस्यता नवीकरणपछि ट्रिगर हुन्छ।
 
-## प्यारामिटरहरू
+## प्यारामिटरहरू {#parameters}
 
 | नाम | प्रकार | विवरण |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 | $membership_id | `int` | सदस्यताको ID। |
 | $membership | `\Membership` | सदस्यता वस्तु। |
 
-### देखि
+### देखि {#since}
 
 - 2.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) मा लाइन 2235 मा परिभाषित गरिएको छ।

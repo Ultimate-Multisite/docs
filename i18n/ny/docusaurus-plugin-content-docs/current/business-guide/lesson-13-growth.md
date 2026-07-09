@@ -3,19 +3,19 @@ title: 'Phunziro 13: Kukulitsa'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Phunziro 13: Kukulitsa
+# Phunziro 13: Kukulitsa {#lesson-13-scaling-up}
 
 Muli ndi nsanja yomwe ikugwira ntchito yokhala ndi makasitomala olipira. Phunziro ili likufotokoza mmene mungakulire kuchokera ku ntchito yaying'ono kupita ku bizinesi yokhazikika -- kukulitsa maziko a ukadaulo, kupanga ntchito zokha, ndi kuwonjezera ndalama pa kasitomala aliyense.
 
-## Kumene Tinathera
+## Kumene Tinathera {#where-we-left-off}
 
 FitSite ili pa intaneti, makasitomala akulembetsa, ndipo mukuyendetsa ntchito za tsiku ndi tsiku. Tsopano tikuyang'ana pa kukula.
 
-## Dziwani Manambala Anu
+## Dziwani Manambala Anu {#know-your-numbers}
 
 Musanakulitse, mvetsetsani komwe muli:
 
-### Miyezo Yofunika
+### Miyezo Yofunika {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Ndalama zonse za mwezi ndi mwezi zochokera ku zolembetsa
 - **Chiwerengero cha makasitomala**: Olembetsa onse ogwira ntchito
@@ -24,7 +24,7 @@ Musanakulitse, mvetsetsani komwe muli:
 - **LTV (Lifetime Value)**: Ndalama zapakati pa kasitomala pa nthawi yonse ya kulembetsa kwake
 - **CAC (Customer Acquisition Cost)**: Mtengo wapakati wopeza kasitomala m'modzi
 
-### Chitsanzo: FitSite pa Makasitomala 50
+### Chitsanzo: FitSite pa Makasitomala 50 {#example-fitsite-at-50-customers}
 
 | Muyeso | Mtengo |
 |--------|-------|
@@ -36,9 +36,9 @@ Musanakulitse, mvetsetsani komwe muli:
 
 Manambalawa amakuwuzani zomwe muyenera kuyang'ana. Kusiya kwakukulu? Konzani kusunga makasitomala. ARPU yotsika? Limbikitsani kukwezedwa. CAC yayikulu? Konzani njira zopezera makasitomala.
 
-## Kukulitsa Maziko a Ukadaulo
+## Kukulitsa Maziko a Ukadaulo {#scaling-infrastructure}
 
-### Nthawi Yokulitsa
+### Nthawi Yokulitsa {#when-to-scale}
 
 Kulitsa hosting pamene:
 
@@ -47,7 +47,7 @@ Kulitsa hosting pamene:
 - Mukuyandikira masite 100+ ogwira ntchito
 - Madandaulo a makasitomala okhudza liwiro akuwonjezeka
 
-### Mmene Mungakulitsire
+### Mmene Mungakulitsire {#how-to-scale}
 
 - **Kukulitsa molunjika**: Kwezani ku server yayikulu (CPU yambiri, RAM)
 - **Magawo a caching**: Onjezani Redis/Memcached ya object caching, page caching ya static content
@@ -55,7 +55,7 @@ Kulitsa hosting pamene:
 - **Kukonza database**: Pamene network ikukula, database queries zimachedwa. Konzani tables, onjezani indexes, ganizirani za database server yodzipereka.
 - **Lekanitsani ntchito**: Sunthani media storage kupita ku object storage (yogwirizana ndi S3), tumizani email ku transactional email service
 
-### Kusamukira Hosting
+### Kusamukira Hosting {#hosting-migration}
 
 Ngati host wanu wapano sangathe kukulanso, konzekerani kusamuka:
 
@@ -65,11 +65,11 @@ Ngati host wanu wapano sangathe kukulanso, konzekerani kusamuka:
 4. Sinthani DNS ndi TTL yochepa kwambiri pasadakhale
 5. Tsimikizirani kuti zonse zikugwira ntchito pambuyo pa kusamuka
 
-## Kupanga Ntchito Kukhala Zokha
+## Kupanga Ntchito Kukhala Zokha {#automating-operations}
 
 Pamene mukukula, njira zamanja zimakhala zotsekereza. Pangani zokha zomwe mungathe:
 
-### Webhooks ndi Zapier
+### Webhooks ndi Zapier {#webhooks-and-zapier}
 
 Gwiritsani ntchito [Webhooks](/user-guide/integrations/webhooks) kapena [Zapier](/user-guide/integrations/zapier) kupanga zokha:
 
@@ -78,7 +78,7 @@ Gwiritsani ntchito [Webhooks](/user-guide/integrations/webhooks) kapena [Zapier]
 - **Kulephera kwa malipiro** → chenjezo mu chida chanu chowunikira
 - **Kukweza plan** → email ya zikomo yokhala ndi kalozera wa mbali zatsopano
 
-### Kupanga Maimelo Kukhala Okha
+### Kupanga Maimelo Kukhala Okha {#email-automation}
 
 Sunthani kuchokera ku maimelo amanja kupita ku ma sequence okha:
 
@@ -87,30 +87,30 @@ Sunthani kuchokera ku maimelo amanja kupita ku ma sequence okha:
 - Zikumbutso zokweza pamene makasitomala akuyandikira malire a plan
 - Zikumbutso za renewal kwa olembetsa apachaka
 
-### Kupanga Support Kukhala Yokha
+### Kupanga Support Kukhala Yokha {#support-automation}
 
 - **Mayankho okonzeka** a mafunso wamba
 - **Mayankho okha** ovomereza kulandira ma support tickets
 - **Malingaliro a knowledge base** pamene makasitomala atumiza tickets ofanana ndi zolemba zomwe zilipo
 
-## Kuwonjezera Ndalama
+## Kuwonjezera Ndalama {#increasing-revenue}
 
 Kukula sikungokhudza makasitomala ambiri. Kukhudzanso ndalama zambiri pa kasitomala aliyense.
 
-### Kugulitsa Zowonjezera kwa Makasitomala Alipo
+### Kugulitsa Zowonjezera kwa Makasitomala Alipo {#upselling-existing-customers}
 
 - **Kukweza plan**: Makampeni olunjika omwe amasonyeza mbali za Growth/Pro kwa makasitomala a Starter
 - **Zowonjezera pa oda**: Limbikitsani zinthu zowonjezera kwa makasitomala omwe alipo kudzera pa email
 - **Kusinthira ku pachaka**: Perekani kuchotsera kwa makasitomala a mwezi kuti asinthe kupita ku kulipira pachaka
 
-### Njira Zatsopano za Ndalama
+### Njira Zatsopano za Ndalama {#new-revenue-streams}
 
 - **Kukonzera inu**: Lipiritsani premium kuti mukonzere ndi kusintha site ya kasitomala m'malo mwawo
 - **Ntchito za kapangidwe ka mwambo**: Perekani ntchito ya kapangidwe kapadera pamwamba pa template
 - **Maphunziro**: Ma walkthrough a payekha olipidwa kwa makasitomala omwe akufuna thandizo la manja
 - **Mapulagini a premium**: Perekani mapulagini a premium okhudzana ndi niche ngati zowonjezera zolipidwa (mwachitsanzo, widget yosungitsa makalasi a fitness)
 
-### Kukweza Mitengo
+### Kukweza Mitengo {#raising-prices}
 
 Pamene nsanja yanu ikukhwima ndi kuwonjezera phindu:
 
@@ -118,7 +118,7 @@ Pamene nsanja yanu ikukhwima ndi kuwonjezera phindu:
 - Kwezani mitengo kwa olembetsa atsopano
 - Fotokozani kuwonjezeka ndi mbali zatsopano ndi zosintha
 
-## Kumanga Gulu
+## Kumanga Gulu {#building-a-team}
 
 Nthawi ina, simungathe kuchita chilichonse nokha. Anthu oyamba kulemba ntchito nthawi zambiri:
 
@@ -128,7 +128,7 @@ Nthawi ina, simungathe kuchita chilichonse nokha. Anthu oyamba kulemba ntchito n
 
 Simukufuna antchito okhazikika. Contractors ndi freelancers amagwira ntchito bwino pa bizinesi ya nsanja.
 
-## Zizindikiro za Kukula
+## Zizindikiro za Kukula {#growth-milestones}
 
 | Chizindikiro | MRR Yapafupi | Cholinga |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Simukufuna antchito okhazikika. Contractors ndi freelancers amagwira ntchito bwi
 | Makasitomala 250-500 | $25,000-$50,000 | Kumanga gulu, njira zatsopano za ndalama, mbali za premium |
 | Makasitomala 500+ | $50,000+ | Kukhwima kwa nsanja, niches zoyandikana, mwayi wotuluka |
 
-## Zomwe Tamanga mu Phunziro Ili
+## Zomwe Tamanga mu Phunziro Ili {#what-we-built-this-lesson}
 
 - **Framework ya metrics** yomvetsetsa thanzi la bizinesi
 - **Plan yokulitsa maziko a ukadaulo** yokulira kuchokera ku masite ambiri ang'onoang'ono kupita ku mazana a masite

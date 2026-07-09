@@ -4,11 +4,11 @@ title: فلټر - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# چاڼګر: wu_return_url
+# چاڼګر: wu_return_url {#filter-wureturnurl}
 
 پرمخ‌وړونکو ته اجازه ورکوي چې د پېر بشپړولو له بهیرونو وروسته کارېدونکی د دروازې د راستنېدو URL بدل کړي.
 
-## پارامترونه
+## پارامترونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
@@ -17,12 +17,12 @@ _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 | $payment | `\WP_Ultimo\Models\Payment` | د Ultimate Multisite د تادیې نمونه. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | د Ultimate Multisite اوسنی د کراچۍ امر. |
 
-### له نسخې راهیسې
+### له نسخې راهیسې {#since}
 
 - 2.0.20
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) کې په 683 کرښه کې تعریف شوی
 
 
-## راګرځېدنې
+## راګرځېدنې {#returns}

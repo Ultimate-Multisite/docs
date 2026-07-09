@@ -3,11 +3,11 @@ title: Scoil an-dhéanamh ar aistriúin na h-aon-chomhairle
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Fíneadh Skill Design System Aesthetics
+# Fíneadh Skill Design System Aesthetics {#design-system-aesthetics-skill}
 
 Is **Fíneadh Skill Design System Aesthetics** cur chuig an t-amhrán a chur ar fáil chun do chuid deashcaíocht site a fheabhsú. Tá sé ag cur chun cinn túidh ar chuid cúrama ar fáil faoi chuid téacs, colur, spás agus tokenacha motion a bhfaidh siad a dhéanamh ar chuid deashcaíocht system atá agat.
 
-## Cad é Design System Aesthetics?
+## Cad é Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Is Design System Aesthetics skill struchtúrtha a bhfuil sé ag cur chun cinn ar:
 
@@ -20,9 +20,9 @@ Is Design System Aesthetics skill struchtúrtha a bhfuil sé ag cur chun cinn ar
 
 Tá na cúrama seo a bhaint amach i do `theme.json` dearcais, ag cur cúram deashcaíocht chomhúil ar fáil.
 
-## Cad a bheith ag éile Design System Aesthetics?
+## Cad a bheith ag éile Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Cúram
+### Cúram {#consistency}
 
 Taispeán design system a thaispeann:
 
@@ -31,7 +31,7 @@ Taispeán design system a thaispeann:
 - Tá spás a bhaint amach ar fáil ar chuid pattern
 - Tá animationacha ag teacht ar chuid cúram
 
-### Eifeachtas
+### Eifeachtas {#efficiency}
 
 An t-amhrán a dhéanamh ar chuid page ar chuid deashcaíocht, tú:
 
@@ -39,7 +39,7 @@ An t-amhrán a dhéanamh ar chuid page ar chuid deashcaíocht, tú:
 - Áirbhriú iad ar fáil ar fhisc
 - Athchunnamh go láidir ag athrú adhrán amháin
 
-### Flexibilidade
+### Flexibilidade {#flexibility}
 
 Is féidir leat:
 
@@ -47,9 +47,9 @@ Is féidir leat:
 - Teacht ar chuid deashcaíocht eile
 - Déan cúram branda a bheith chomhúil ag teacht ar fáil mar thuairim
 
-## Cad a bheith ag cur chun cinn Design System Aesthetics Skill?
+## Cad a bheith ag cur chun cinn Design System Aesthetics Skill? {#triggering-the-design-system-aesthetics-skill}
 
-### Actáir Manual
+### Actáir Manual {#manual-activation}
 
 Is féidir leat an skill atá ag dul ar aghaidh ag aon am:
 
@@ -69,7 +69,7 @@ mar nó
 "Guide me through design system decisions"
 ```
 
-### Sugstions Authiomaithe
+### Sugstions Authiomaithe {#automatic-suggestions}
 
 Le linn lá má tá tú ag:
 
@@ -80,9 +80,9 @@ Le linn lá má tá tú ag:
 
 is féidir leat ag an t-amhrán a thaispeáin go bhfuil sé ag teacht ar aghaidh ag úsáid an skill.
 
-## Anailís na Fócas Áisiú
+## Anailís na Fócas Áisiú {#the-design-system-aesthetics-process}
 
-### Step 1: Typografaíocht
+### Step 1: Typografaíocht {#step-1-typography}
 
 Nfháil an agent ar chuid fáilteacht agat ar do chohraitheacht:
 
@@ -112,7 +112,7 @@ Ansin a chur in uradh:
 - **Scale chuid:** Scale chuid (regular, medium, bold, etc.).
 - **Line height:** Spás ar chuid leat chun fáilteacht a bheith ag teacht.
 
-### Step 2: Palat de Colur
+### Step 2: Palat de Colur {#step-2-color-palette}
 
 ```
 Lón é do palat de colur a chur in uradh.
@@ -142,7 +142,7 @@ Ansin a chur in uradh palat leat go léiríonn sé:
 - Colur semantic (suasach, athbhreithniú, éiríse).
 - Státa hover agus active.
 
-### Step 3: Spásanna
+### Step 3: Spásanna {#step-3-spacing}
 
 Cénn mé chomh mór spás a bhfuil tú ag iarraidh?
 
@@ -162,7 +162,7 @@ Tá an agent ag déanamh cinnte deatóg spáiste (spacing tokens):
 - Scale: xs, sm, md, lg, xl, 2xl
 - Spásanna mhaith chun padding, margin, gap a chur i bhfeidhm
 
-### Step 4: Borders agus Sháileanna (Shadows)
+### Step 4: Borders agus Sháileanna (Shadows) {#step-4-borders-and-shadows}
 
 ```
 Déithíocht chuid agus deimhneacht:
@@ -185,7 +185,7 @@ Tá an agent ag déanamh:
 - Tokens sháileán do leagan tábhachta (elevation levels)
 - Tokens width ar chuid
 
-### Step 5: Motion agus Animation
+### Step 5: Motion agus Animation {#step-5-motion-and-animation}
 
 ```
 Conas thuig an site a bheith ag iarraidh gointinn?
@@ -207,9 +207,9 @@ Tá an agent ag déanamh:
 - Functions easing (ease-in, ease-out, ease-in-out)
 - Keyframes animationa ar chuid éifeachtach
 
-## Áirítear na Aistriú Design System
+## Áirítear na Aistriú Design System {#applying-design-system-aesthetics}
 
-### Áirítear Authiúil (Automatic Application)
+### Áirítear Authiúil (Automatic Application) {#automatic-application}
 
 Tar comhthais an skill, níl an agent:
 
@@ -218,7 +218,7 @@ Tar comhthais an skill, níl an agent:
 3. Athchun style blockaí chun a bheith ag cur i gceart leis an nua system
 4. A chruinneadh an theme athrúlaite
 
-### Áirítear Múir (Manual Application)
+### Áirítear Múir (Manual Application) {#manual-application}
 
 Is féidir leat hefyd a athrú `theme.json` go díreach:
 
@@ -257,9 +257,9 @@ Is féidir leat hefyd a athrú `theme.json` go díreach:
 }
 ```
 
-## Kéideadh Do Chuidistéar Tine Design System
+## Kéideadh Do Chuidistéar Tine Design System {#viewing-your-design-system}
 
-### Cuir le Agent (Ask the Agent)
+### Cuir le Agent (Ask the Agent) {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ nó
 
 Beidh an agent a chur i ardán tairgse, colachtaí, spás agus eile.
 
-### Fhéach ar theme.json (View theme.json)
+### Fhéach ar theme.json (View theme.json) {#view-themejson}
 
 Lán `/wp-content/themes/[theme-name]/theme.json` i bhfíneadh le curteoir text chun an dathanna ríomhacha a fheiceáil.
 
-## Athchunmhainn Tine Design System (Updating Your Design System)
+## Athchunmhainn Tine Design System (Updating Your Design System) {#updating-your-design-system}
 
-### Athchunmhainn Árraigh (Quick Updates)
+### Athchunmhainn Árraigh (Quick Updates) {#quick-updates}
 
 Cuir le ardán tairgse ar thaisceanna mheánach:
 
@@ -299,7 +299,7 @@ nó
 "Change the heading font to a serif"
 ```
 
-### Athchunmhainn Goile (Full Redesign)
+### Athchunmhainn Goile (Full Redesign) {#full-redesign}
 
 Athchunmhainn an skill Design System Aesthetics:
 
@@ -309,7 +309,7 @@ Athchunmhainn an skill Design System Aesthetics:
 
 Is é seo ag cur leat ar chuid deicimní go léir, ag dul chun cinn ag an t-aistriú a bhfíneadh, ag dul chun cinn ag t-aistriú a bhfíneadh.
 
-### Athchunmhainn Tairgse (Partial Updates)
+### Athchunmhainn Tairgse (Partial Updates) {#partial-updates}
 
 Athchunmhainn chuid spásach:
 
@@ -317,15 +317,15 @@ Athchunmhainn chuid spásach:
 "Just update the color palette, keep everything else"
 ```
 
-## Bealach Mhaith do Design System (Design System Best Practices)
+## Bealach Mhaith do Design System (Design System Best Practices) {#design-system-best-practices}
 
-### Cúramh (Consistency)
+### Cúramh (Consistency) {#consistency-1}
 
 - Use an tairgse amach i gcónaí
 - Ná déan colachtaí nó cothromacha a bhaineann leat
 - Déan ar tairgse go bhfuil siad ag cur isteach chuid atá ar chuid fáil.
 
-### Oileadh (Naming)
+### Oileadh (Naming) {#naming}
 
 Use léine, semantic names:
 
@@ -335,7 +335,7 @@ Use léine, semantic names:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalability (Scalability)
+### Scalability (Scalability) {#scalability}
 
 Design an systeem at scale:
 
@@ -343,7 +343,7 @@ Design an systeem at scale:
 - Creach scáileanna (xs, sm, md, lg, xl) instead of chuidéadach chuidéadacha
 - Plan éiríseacht chun curthaí níos leathanach
 
-### Documentation
+### Documentation {#documentation}
 
 Dúlamhaigh an systéim deasctha:
 
@@ -351,9 +351,9 @@ Dúlamhaigh an systéim deasctha:
 - Conas a bheith ag úsáid cadacháin (token) chéad
 - Éisteachtacha agus casaí éifeachtach
 
-## Cuidéadacha deasctha common
+## Cuidéadacha deasctha common {#common-design-system-patterns}
 
-### Modern Minimalist
+### Modern Minimalist {#modern-minimalist}
 
 - Typógraf sans-serif (Inter, Helvetica)
 - Colúir colúir líne (2-3 colúir)
@@ -361,7 +361,7 @@ Dúlamhaigh an systéim deasctha:
 - Sháileanna beag
 - Aonáisiúna mhaith agus leathúil
 
-### Warm and Friendly
+### Warm and Friendly {#warm-and-friendly}
 
 - Chuidí de serif agus sans-serif
 - Colúir colúir áitreach (orange, gráta áitreach)
@@ -369,7 +369,7 @@ Dúlamhaigh an systéim deasctha:
 - Sháileanna beag
 - Aonáisiúna spraoiúil
 
-### Professional Corporate
+### Professional Corporate {#professional-corporate}
 
 - Sans-serif clean (Roboto, Open Sans)
 - Colúir nua le colúir a bhaint as
@@ -377,7 +377,7 @@ Dúlamhaigh an systéim deasctha:
 - Sháileanna beag go léir
 - Aonáisiúna beag
 
-### Creative and Bold
+### Creative and Bold {#creative-and-bold}
 
 - Typógraf chuidéadach
 - Colúir colúir spraoiúil
@@ -385,7 +385,7 @@ Dúlamhaigh an systéim deasctha:
 - Sháileanna stróga
 - Aonáisiúna a bheith ag teacht
 
-## Treoíocht (Troubleshooting)
+## Treoíocht (Troubleshooting) {#troubleshooting}
 
 **Ndiúlaim na méidí deasctha agam níl ag tairt**
 - Glacadh an cache do chuid féin
@@ -403,7 +403,7 @@ Dúlamhaigh an systéim deasctha:
 - Edit manualmente an theme.json le chuid chuidéadacha a bhí ag obair
 - Ríomh séilíocht leis an chuid féin le chuid chuidéadacha eile
 
-## Taisceanna (Next Steps)
+## Taisceanna (Next Steps) {#next-steps}
 
 Tar éis tríúchláir do chuid deasctha:
 

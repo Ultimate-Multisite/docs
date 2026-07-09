@@ -3,13 +3,13 @@ title: Qeydiyyat formanızı fərdiləşdirmək
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Qeydiyyat Formanızı fərdiləşdirmək
+# Qeydiyyat Formanızı fərdiləşdirmək {#customizing-your-registration-form}
 
 WordPress platformasında qurulmuş digər bütün SaaS-lardan şəbəkənizin unikal görünməsi üçün Ultimate Multisite sizə **Checkout Forms** xüsusiyyəti ilə qeydiyyat və giriş səhifələrinizi fərdiləşdirməyə imkan verir.
 
 Onlar yeni müştəriləri cəlb etməyə çalışarkən fərqli yanaşmaları sınaqdan keçirmək üçün asan və çevik üsul olsa da, əsasən fərdiləşdirilmiş qeydiyyat formaları yaratmaq üçün istifadə olunur. Bu məqalənin məqsədi bunu necə edə biləcəyinizi göstərməkdir.
 
-## Giriş və qeydiyyat səhifələri:
+## Giriş və qeydiyyat səhifələri: {#login-and-registration-pages}
 
 Ultimate Multisite quraşdırıldıqda, əsas saytınızda avtomatik olaraq fərdi giriş və qeydiyyat səhifələri yaradır. Bu standart səhifələri istənilən vaxt **Ultimate Multisite > Settings > Login & Registration** səhifənizə keçərək dəyişə bilərsiniz.
 
@@ -45,7 +45,7 @@ Giriş və qeydiyyat ayarları səhifəsinin tam görünüşü budur:
 
 Giriş və qeydiyyatla bağlı fərdiləşdirə biləcəyiniz bütün seçimlər bunlardır! Redaktəni bitirdikdən sonra ayarlarınızı yadda saxlamağı unutmayın.
 
-## Çoxsaylı qeydiyyat formalarından istifadə:
+## Çoxsaylı qeydiyyat formalarından istifadə: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 sizə istədiyiniz qədər forma yaratmağa imkan verən, fərqli sahələr, təklifdə olan məhsullar və s. ilə checkout form redaktoru təqdim edir.
 
@@ -69,7 +69,7 @@ Alternativ olaraq, artıq sahib olduğunuz formaları adının altındakı seçi
 
 Tək addım və ya çoxaddımlı seçsəniz, checkout form işləməsi üçün əsas addımlarla əvvəlcədən doldurulmuş olacaq. Sonra istəsəniz, ona əlavə addımlar əlavə edə bilərsiniz.
 
-### Checkout Formunu redaktə etmək:
+### Checkout Formunu redaktə etmək: {#editing-a-checkout-form}
 
 Daha əvvəl qeyd etdiyimiz kimi, müxtəlif məqsədlər üçün checkout formaları yarada bilərsiniz. Bu nümunədə qeydiyyat forması üzərində işləyəcəyik.
 
@@ -131,11 +131,11 @@ Formunuzun shortcode-unu əldə etmək üçün **Shortcode Yarat** üzərinə kl
 
 _**Qeyd:** Bu checkout formun ona əlavə edilməsi üçün bu shortcode-u qeydiyyat səhifənizə əlavə etməlisiniz._
 
-## URL parametrləri vasitəsilə məhsulların və şablonların əvvəlcədən seçilməsi:
+## URL parametrləri vasitəsilə məhsulların və şablonların əvvəlcədən seçilməsi: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Məhsullarınız üçün fərdiləşdirilmiş qiymət cədvəlləri yaratmaq və müştərinizin qiymət cədvəlinizdən və ya şablonlar səhifənizdən seçdiyi məhsulu və ya şablonu checkout formda əvvəlcədən seçmək istəyirsinizsə, bunun üçün URL parametrlərindən istifadə edə bilərsiniz.
 
-### **Planlar üçün:**
+### **Planlar üçün:** {#for-plans}
 
 **Ultimate Multisite > Məhsullar > Plan seçin** bölməsinə keçin. Səhifənin yuxarısında **Paylaşıla bilən Linki kopyalamaq üçün klikləyin** düyməsini görməlisiniz. Bu, checkout formunuzda bu konkret planı əvvəlcədən seçmək üçün istifadə edə biləcəyiniz linkdir.
 
@@ -143,7 +143,7 @@ Məhsullarınız üçün fərdiləşdirilmiş qiymət cədvəlləri yaratmaq və
 
 Nəzərə alın ki, bu paylaşıla bilən link yalnız **Planlar** üçün keçərlidir. Paketlər və ya xidmətlər üçün paylaşıla bilən linklərdən istifadə edə bilməzsiniz.
 
-### Şablonlar üçün:
+### Şablonlar üçün: {#for-templates}
 
 Checkout formunuzda sayt şablonlarını əvvəlcədən seçmək istəyirsinizsə, qeydiyyat səhifənizin URL-ində bu parametrdən istifadə edə bilərsiniz: **?template_id=X**. "X" **sayt şablonu ID nömrəsi** ilə əvəz edilməlidir. Bu nömrəni əldə etmək üçün **Ultimate Multisite > Saytlar** bölməsinə keçin.
 

@@ -3,7 +3,7 @@ title: Registrar endpoint de API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# El punto de conexión de la API Register de Ultimate Multisite
+# El punto de conexión de la API Register de Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 En este tutorial, aprenderás cómo usar el punto de conexión de la API /register de Ultimate Multisite para crear todo el proceso de incorporación de un nuevo cliente en tu red y cómo hacerlo con Zapier.
 
@@ -29,11 +29,11 @@ Selecciona **Enable API** y obtén tus credenciales de API.
 
 Ahora, exploremos el punto de conexión y luego creemos una acción de registro en Zapier.
 
-## Parámetros del cuerpo del punto de conexión
+## Parámetros del cuerpo del punto de conexión {#endpoint-body-parameters}
 
 Veamos una descripción general de la información mínima que necesitamos enviar al punto de conexión. Al final de este artículo, encontrarás la llamada completa.
 
-### Cliente
+### Cliente {#customer}
 
 Esta es la información necesaria para el proceso de creación del Usuario y del Cliente de Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Es posible enviar el ID de cliente creado en tu red. Si no se envía, la informa
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membresía**
+### **Membresía** {#membership}
 
 La única información que necesitamos dentro de este objeto es el Estado de la Membresía.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Productos**
+### **Productos** {#products}
 
 Los productos se proporcionan como un array con 1 o más ID de producto de tu red. Ten cuidado: este punto de conexión no crea productos. Consulta la documentación de Ultimate Multisite para comprender mejor el punto de conexión de creación de productos.
 
 **"products" : [1,2],**
 
-### Pago
+### Pago {#payment}
 
 Al igual que con la Membresía, solo necesitamos el estado.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Sitio
+### Sitio {#site}
 
 Y para cerrar el cuerpo necesitamos la URL y el Título del sitio, ambos dentro del objeto Sitio.
 
@@ -69,13 +69,13 @@ Y para cerrar el cuerpo necesitamos la URL y el Título del sitio, ambos dentro 
 
 La respuesta del punto de conexión de registro será un array con la información de la membresía recién creada.
 
-## Crear una acción en Zapier
+## Crear una acción en Zapier {#creating-an-action-in-zapier}
 
 Con la introducción de este nuevo y más robusto punto de conexión de creación de cuentas, también accederás a una nueva acción en Zapier.
 
 ¿Sabes cómo usar y aprovechar todo lo que ofrece la nueva versión de Zapier? Obtén más información aquí. (¿enlace?)
 
-### Crear una acción
+### Crear una acción {#creating-an-action}
 
 Para ilustrar mejor cómo usar el punto de conexión de registro con Zapier, creemos una integración con Google Forms. Cada vez que se complete este formulario y la información se guarde en la hoja de respuestas del formulario, se creará una nueva membresía en la red de Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Con la información configurada, continúa con la prueba final. En la última pa
 
 Prueba tu nuevo Zap y debería completarse correctamente. Si ocurre algún error, revisa todos los campos y si se están enviando correctamente. Como hay mucha información, algunas cosas pueden pasar desapercibidas.
 
-### Parámetros completos del punto de conexión
+### Parámetros completos del punto de conexión {#complete-endpoint-parameters}
 
 Aquí está la llamada completa y todas las posibilidades de campos que se pueden enviar.
 

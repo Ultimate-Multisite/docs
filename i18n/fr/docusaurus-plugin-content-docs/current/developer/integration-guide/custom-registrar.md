@@ -3,13 +3,13 @@ title: Construire une intégration de registraire personnalisée
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Créer une intégration de registrar personnalisé
+# Créer une intégration de registrar personnalisé {#building-a-custom-registrar-integration}
 
 L'addon Domain Seller utilise un modèle appelé **Registre d'intégrations** (Integration Registry). Chaque registrar est une classe PHP qui implémente `Domain_Selling_Capability` et s'enregistre via le hook d'action `wu_domain_seller_register_capabilities`.
 
 Ce guide vous montre comment intégrer un registrar personnalisé.
 
-## L'interface
+## L'interface {#the-interface}
 
 Votre classe doit implémenter `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` et étendre `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Méthodes optionnelles
+### Méthodes optionnelles {#optional-methods}
 
 Implémentez ces méthodes pour débloquer des fonctionnalités supplémentaires. L'addon détecte le support via `method_exists()` :
 
@@ -81,7 +81,7 @@ Implémentez ces méthodes pour débloquer des fonctionnalités supplémentaires
 | `get_epp_code(string $domain_name): array` | Transfert de domaine (sortant) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transfert de domaine (entrant) |
 
-### Convention de valeur de retour
+### Convention de valeur de retour {#return-value-convention}
 
 Toutes les méthodes doivent retourner un tableau contenant au minimum la clé `success` :
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Erreur lisible par l\'homme'];
 
 ---
 
-## Enregistrer votre capacité
+## Enregistrer votre capacité {#registering-your-capability}
 
 Enregistrez votre classe en utilisant l'action `wu_domain_seller_register_capabilities` :
 
@@ -109,7 +109,7 @@ Le premier argument de `add_capability()` est l'**ID du fournisseur** (provider 
 
 ---
 
-## Ajouter des champs d'identifiants au wizard
+## Ajouter des champs d'identifiants au wizard {#adding-credential-fields-to-the-wizard}
 
 Pour permettre aux administrateurs de saisir des identifiants via le wizard de configuration, enregistrez votre intégration :
 
@@ -137,7 +137,7 @@ Les identifiants sont stockés comme des options de réseau en utilisant les IDs
 
 ---
 
-## Hooks pour les actions post-enregistrement
+## Hooks pour les actions post-enregistrement {#hooks-for-post-registration-actions}
 
 Utilisez ces actions pour déclencher des webhooks, des provisions, des notifications ou des mises à jour CRM :
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Journalisation (Logging)
+## Journalisation (Logging) {#logging}
 
 Écrivez dans votre canal de logs spécifique au fournisseur en utilisant `wu_log_add()` :
 

@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# অ্যাকশন: set_logged_in_cookie
+# অ্যাকশন: set_logged_in_cookie {#action-setloggedincookie}
 
 এই অ্যাকশনটি লগইন করা প্রমাণীকরণ কুকি সেট করার ঠিক আগে ট্রিগার হয়।
 
-## প্যারামিটারসমূহ
+## প্যারামিটারসমূহ {#parameters}
 
 | Name | Type | বিবরণ |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | প্রমাণীকরণ স্কিম। ডিফল্ট 'logged_in'। |
 | $token | `string` | এই কুকির জন্য ব্যবহারকারীর সেশন টোকেন। |
 
-### শুরু
+### শুরু {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> প্যারামিটারটি যোগ করা হয়েছে।
-### উৎস
+### উৎস {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141)-এ লাইন ১৪১-এ সংজ্ঞায়িত করা হয়েছে।

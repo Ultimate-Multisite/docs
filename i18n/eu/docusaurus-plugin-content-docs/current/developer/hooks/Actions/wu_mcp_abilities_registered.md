@@ -4,11 +4,11 @@ title: Ekintza - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered
+# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Entitate baterako MCP abilities erregistratu ondoren abiarazten da.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Entitate baterako MCP abilities erregistratu ondoren abiarazten da.
 | $model_name | `string` | Model izena. |
 | $this | `object` | Kudeatzailearen instantzia. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.5.0
-### Iturburua
+### Iturburua {#source}
 
 [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) fitxategian definitua, 171. lerroan.

@@ -3,21 +3,21 @@ title: Installatie en providerconfiguratie
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: installatie en providerconfiguratie
+# Domain Seller: installatie en providerconfiguratie {#domain-seller-setup-and-provider-configuration}
 
 De Domain Seller addon wordt geleverd met een begeleide installatiewizard die je door elke vereiste stap leidt. Deze pagina behandelt de wizard-flow en hoe je providers daarna configureert of opnieuw configureert.
 
-## Vereisten
+## Vereisten {#requirements}
 
 - **Multisite Ultimate** v2.4.12 of hoger, netwerk-geactiveerd
 - **PHP** 7.4+
 - API-inloggegevens voor ten minste één ondersteunde registrar
 
-## Installatiewizard bij eerste gebruik
+## Installatiewizard bij eerste gebruik {#first-run-setup-wizard}
 
 De installatiewizard start automatisch de eerste keer dat je de plugin netwerk-activeert. Deze is ook op elk moment beschikbaar via **Netwerkbeheer › Ultimate Multisite › Domain Seller Setup**.
 
-### Stap 1 — Kies een provider
+### Stap 1 — Kies een provider {#step-1--choose-a-provider}
 
 Selecteer de registrar waarmee je verbinding wilt maken. Ondersteunde opties:
 
@@ -33,7 +33,7 @@ Selecteer de registrar waarmee je verbinding wilt maken. Ondersteunde opties:
 | NameSilo | Nee | Nee |
 | Enom | Ja | Nee |
 
-### Stap 2 — Voer inloggegevens in
+### Stap 2 — Voer inloggegevens in {#step-2--enter-credentials}
 
 Elke provider heeft verschillende velden voor inloggegevens:
 
@@ -57,17 +57,17 @@ Elke provider heeft verschillende velden voor inloggegevens:
 
 Vink **Sandbox mode** aan waar beschikbaar om te testen met de testomgeving van de provider voordat je live gaat.
 
-### Stap 3 — Test de verbinding
+### Stap 3 — Test de verbinding {#step-3--test-the-connection}
 
 Klik op **Test Connection**. De wizard stuurt een lichte API-aanroep om inloggegevens en connectiviteit te verifiëren. Los eventuele problemen met inloggegevens op voordat je doorgaat.
 
-### Stap 4 — Importeer TLD's
+### Stap 4 — Importeer TLD's {#step-4--import-tlds}
 
 Klik op **Import TLDs** om alle beschikbare TLD's en groothandelsprijzen van de verbonden provider op te halen. Dit vult de TLD-lijst die door domeinproducten wordt gebruikt. De import kan 30–60 seconden duren voor providers met grote TLD-catalogi.
 
 TLD's worden ook automatisch eenmaal per dag opnieuw gesynchroniseerd via een geplande cron-taak.
 
-### Stap 5 — Maak een domeinproduct aan
+### Stap 5 — Maak een domeinproduct aan {#step-5--create-a-domain-product}
 
 De wizard maakt een standaard catch-all domeinproduct aan met een opslag van 10%. Je kunt dit product direct bewerken of overslaan en producten handmatig aanmaken onder **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Zie [Domeinproducten en prijzen](./domain-products) voor de volledige configurat
 
 ---
 
-## Een provider opnieuw configureren
+## Een provider opnieuw configureren {#reconfiguring-a-provider}
 
 Ga naar **Netwerkbeheer › Ultimate Multisite › Settings › Domain Seller** (of klik op **Settings** in de pluginlijst).
 
@@ -88,17 +88,17 @@ De instellingenpagina bevat:
 - **Domeinproducten beheren** — snelle link naar de Products-lijst
 - **Providers configureren** — opent de Integration Wizard om providers toe te voegen of opnieuw te configureren
 
-### Een tweede provider toevoegen
+### Een tweede provider toevoegen {#adding-a-second-provider}
 
 Klik op **Configure providers** en voer de wizard opnieuw uit voor de nieuwe registrar. Je kunt meerdere providers tegelijk geconfigureerd hebben. Wijs elk domeinproduct toe aan een specifieke provider, of laat het op de standaard staan.
 
-### TLD's handmatig synchroniseren
+### TLD's handmatig synchroniseren {#syncing-tlds-manually}
 
 Klik op de instellingenpagina op **Sync TLDs** naast een geconfigureerde provider om de nieuwste prijzen op te halen. Dit is nuttig nadat een provider groothandelsprijzen bijwerkt of nieuwe TLD's toevoegt.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Elke provider schrijft naar zijn eigen logkanaal. Logs zijn te bekijken onder **Netwerkbeheer › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Elke provider schrijft naar zijn eigen logkanaal. Logs zijn te bekijken onder **
 
 ---
 
-## Opmerkingen over providermogelijkheden
+## Opmerkingen over providermogelijkheden {#provider-capability-notes}
 
 Niet elke registrar-API biedt dezelfde bewerkingen. De addon toont niet-ondersteunde bewerkingen met duidelijke fouten voor beheerders in plaats van stil te falen.
 

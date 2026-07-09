@@ -3,7 +3,7 @@ title: સભ્યપદ રદ કરવું
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membership રદ કરવું (v2)
+# Membership રદ કરવું (v2) {#canceling-a-membership-v2}
 
 _**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite સંસ્કરણ 2.x વિશે છે.**_
 

@@ -3,15 +3,15 @@ title: Pārbaudīt paletes kontrastu
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validēt paletes kontrastu
+# Validēt paletes kontrastu {#validate-palette-contrast}
 
 Spēja **Validate Palette Contrast** pārbauda krāsu pārus jūsu dizaina paletē attiecībā uz WCAG (Web Content Accessibility Guidelines) atbilstību, pirms tos piemēro jūsu theme.
 
-## Pārskats
+## Pārskats {#overview}
 
 Šī spēja nodrošina, ka jūsu site krāsu shēma atbilst pieejamības standartiem, validējot kontrasta attiecības starp teksta un fona krāsām. Tā palīdz novērst krāsu kombinācijas, kuras lietotājiem ar redzes traucējumiem varētu būt grūti salasīt.
 
-## Ievades formāts
+## Ievades formāts {#input-format}
 
 Spēja kā ievadi pieņem krāsu paleti:
 
@@ -35,7 +35,7 @@ Spēja kā ievadi pieņem krāsu paleti:
 }
 ```
 
-### Parametri
+### Parametri {#parameters}
 
 | Parametrs | Tips | Obligāts | Apraksts |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Spēja kā ievadi pieņem krāsu paleti:
 | `wcag_level` | string | Nē | WCAG atbilstības līmenis: "A", "AA" (noklusējums) vai "AAA" |
 | `pairs_to_check` | array | Nē | Konkrēti validējamie krāsu pāri (piem., `["primary-text", "background-text"]`) |
 
-## Pārbaudītie WCAG līmeņi
+## Pārbaudītie WCAG līmeņi {#wcag-levels-checked}
 
 Spēja validē kontrasta attiecības atbilstoši WCAG standartiem:
 
@@ -56,7 +56,7 @@ Spēja validē kontrasta attiecības atbilstoši WCAG standartiem:
 - **Parasts teksts** — teksts, kas ir mazāks par 18pt (vai 14pt treknrakstā)
 - **Liels teksts** — teksts 18pt vai lielāks (vai 14pt treknrakstā vai lielāks)
 
-## Izvades shēma
+## Izvades shēma {#output-schema}
 
 Spēja atgriež detalizētu validācijas pārskatu:
 
@@ -95,7 +95,7 @@ Spēja atgriež detalizētu validācijas pārskatu:
 }
 ```
 
-### Izvades lauki
+### Izvades lauki {#output-fields}
 
 | Lauks | Tips | Apraksts |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Spēja atgriež detalizētu validācijas pārskatu:
 | `status` | string | "pass" vai "fail" katram pārim |
 | `recommendations` | array | Ieteikumi neveiksmīgo pāru uzlabošanai |
 
-## Lietošanas piemērs
+## Lietošanas piemērs {#usage-example}
 
 **Uzvedne:**
 ```
@@ -119,7 +119,7 @@ Spēja validē visas krāsu kombinācijas un atgriež:
 - ✅ Fons + teksts: attiecība 12.1:1 (atbilst WCAG AAA)
 - Kopumā: atbilst WCAG AA
 
-## Integrācija ar Theme Builder
+## Integrācija ar Theme Builder {#integration-with-theme-builder}
 
 Izmantojot Theme Builder dizaina virziena izvēli, Validate Palette Contrast spēja:
 
@@ -129,7 +129,7 @@ Izmantojot Theme Builder dizaina virziena izvēli, Validate Palette Contrast sp�
 4. Sniedz ieteikumus neatbilstošiem pāriem
 5. Novērš nepieejamu krāsu shēmu piemērošanu
 
-## Labākā prakse
+## Labākā prakse {#best-practices}
 
 - **Sāciet ar AA līmeni** — WCAG AA ir standarts lielākajai daļai tīmekļa vietņu
 - **Testējiet pirms piemērošanas** — validējiet savu paleti, pirms apstiprināt dizainu
@@ -137,7 +137,7 @@ Izmantojot Theme Builder dizaina virziena izvēli, Validate Palette Contrast sp�
 - **Ņemiet vērā lietotāju preferences** — dažiem lietotājiem var būt papildu jutība pret krāsām
 - **Izmantojiet kontrasta pārbaudītājus** — apvienojiet šo spēju ar pārlūka rīkiem verifikācijai
 
-## Neveiksmīgi pāri un ieteikumi
+## Neveiksmīgi pāri un ieteikumi {#failing-pairs-and-recommendations}
 
 Ja krāsu pāris neiztur validāciju, spēja sniedz ieteikumus:
 
@@ -155,7 +155,7 @@ Ja krāsu pāris neiztur validāciju, spēja sniedz ieteikumus:
 }
 ```
 
-## Saistītās spējas
+## Saistītās spējas {#related-abilities}
 
 - [Ģenerēt Logo SVG](./generate-logo-svg.md) — izveidojiet logotipus ar savu validēto krāsu paleti
 - [Izveidot izvēlni](./create-menu.md) — veidojiet navigāciju ar pieejamām krāsām

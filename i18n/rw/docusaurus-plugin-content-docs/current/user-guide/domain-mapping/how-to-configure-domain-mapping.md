@@ -3,17 +3,17 @@ title: Uko washyiraho Domain Mapping
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Uko Wagena Domain Mapping (v2)
+# Uko Wagena Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
 
 _**ICYITONDERWA CY’INGENZI: Iyi ngingo ivuga kuri Ultimate Multisite verisiyo 2.x.**_
 
 Kimwe mu biranga bikomeye cyane network yo ku rwego rwo hejuru ni ubushobozi bwo guha abakiriya bacu amahirwe yo komeka domain yo ku rwego rwo hejuru ku mbuga zabo. None se, ni iki kigaragara nk’icy’umwuga kurushaho: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) cyangwa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ni yo mpamvu Ultimate Multisite itanga icyo kiranga kirimo imbere, bitagusabye gukoresha plugins z’abandi bantu.
 
-## Domain mapping ni iki?
+## Domain mapping ni iki? {#whats-domain-mapping}
 
 Nk’uko izina ribivuga, domain mapping ni ubushobozi butangwa na Ultimate Multisite bwo kwakira icyifuzo cya domain yihariye no guhuza icyo cyifuzo n’urubuga rubihuye muri network, rufite iyo domain yihariye yometseho.
 
-### Uko washyiraho domain mapping kuri Network yawe ya Ultimate Multisite
+### Uko washyiraho domain mapping kuri Network yawe ya Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domain mapping isaba ko ugira ibyo ushyiraho kugira ngo ikore. Igishimishije, Ultimate Multisite igukorera imirimo ikomeye mu buryo bwikora kugira ngo ubashe kuzuza ibisabwa byoroshye.
 
@@ -45,7 +45,7 @@ Ariko mbere yo gutangira guhuza domain yihariye na kimwe mu mbuga nto zo muri ne
 
 ###
 
-### Kwemeza ko DNS settings za domain zagenwe neza
+### Kwemeza ko DNS settings za domain zagenwe neza {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Kugira ngo guhuza bikore, ukeneye kumenya neza ko domain uteganya guhuza yerekeza kuri IP address ya Network yawe. Menya ko ukeneye Network IP address - IP address ya domain aho Ultimate Multisite yinjijwe - si IP address ya domain yihariye ushaka guhuza. Kugira ngo ushake IP address ya domain runaka, turasaba kujya kuri [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), urugero.
 
@@ -55,7 +55,7 @@ Nusanga ufite ikibazo cyo gutuma ibi bikora, **hamagara ubufasha bw’umwandikis
 
 Niba uteganya kwemerera abakiriya bawe guhuza domains zabo bwite, bazagomba gukora umurimo wo kuri iki gice ubwabo. Berekeze kuri sisitemu y’ubufasha y’umwandikishaji wabo niba basanze badashoboye gukora A Record.
 
-### Guhuza izina rya domain yihariye nka Super Admin
+### Guhuza izina rya domain yihariye nka Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Iyo winjiye nka super admin kuri network yawe, ushobora kongera no gucunga amazina ya domains zihariye byoroshye ujya munsi ya **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Nukanda ku izina rya domain, uzashobora kubona amahitamo amwe n’amwe imbere ya
 
 **Is Secure?:** Nubwo Ultimate Multisite igenzura niba domain ifite SSL certificate cyangwa itayifite mbere yo kuyikoresha, ushobora guhitamo intoki gufungura domain ifite cyangwa idafite SSL certificate. Menya ko niba website idafite SSL certificate kandi ukagerageza kuyihatira gufunguka ukoresheje SSL, ishobora kuguha amakosa.
 
-### Guhuza izina rya custom domain nka Subsite user
+### Guhuza izina rya custom domain nka Subsite user {#mapping-custom-domain-name-as-subsite-user}
 
 Abayobozi ba subsite na bo bashobora guhuza amazina ya custom domain bavuye muri admin dashboard ya subsite yabo.
 
@@ -121,7 +121,7 @@ User ashobora noneho gukanda **Next Step** agakomeza kongeramo izina rya custom 
 
 Gukanda kuri **Add Domain** bizatangiza uburyo bwo kugenzura no kuzana amakuru ya DNS ya custom domain.
 
-### Ibyerekeye Domain Syncing
+### Ibyerekeye Domain Syncing {#about-domain-syncing}
 
 Domain Syncing ni uburyo Ultimate Multisite yongeramo izina rya custom domain muri hosting account yawe nka add-on domain **kugira ngo domain mapping ikore**.
 

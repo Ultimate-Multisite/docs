@@ -3,17 +3,17 @@ title: cPanel-integraatio
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel-integraatio
+# cPanel-integraatio {#cpanel-integration}
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 cPanel on yksi suosituimmista verkkohostauksen hallintapaneeleista, jota monilla jaettujen sekä omistettujen hostattorien käytössä on. Tämä integraatio mahdollistaa automaattisen domeenin synkronoinnin Ultimate Multisiten ja cPanel välillä, jonka avulla voit lisätä domeenialueita ja alavalikoita cPanel-tilillesi automaattisesti.
 
-## Ominaisuudet
+## Ominaisuudet {#features}
 - Automatiivinen addon domain -luonti cPanelissa
 - Automatiivinen subdomain -luonti cPanelissa (subdomain multisite -asennuksia varten)
 - Domeenin poisto, kun mappaukset poistetaan
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 Seuraavat vakioiden on määritettävä tiedostoosi `wp-config.php`:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Oletusarvo on 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Oletusarvo on /public_html
 ```
 
-## Asetusohjeet
+## Asetusohjeet {#setup-instructions}
 
-### 1. Hae cPanel-tunnisteesi
+### 1. Hae cPanel-tunnisteesi {#1-get-your-cpanel-credentials}
 
 1. Hanki cPanel-käyttäjätunnukset ja -salasanat hostattoristasi
 2. Määrittele cPanel-hostisi (yleensä `cpanel.yourdomain.com` tai `yourdomain.com:2083`)
 
-### 2. Lisää vakioita wp-config.php:ään
+### 2. Lisää vakioita wp-config.php:ään {#2-add-constants-to-wp-configphp}
 
 Lisää seuraavat vakioiden tiedostoon `wp-config.php`:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Muuta, jos cPanel käyttää eri porttia
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Muuta, jos dokumentin juurihakemisto on erilainen
 ```
 
-### 3. Aktivoi integraatio
+### 3. Aktivoi integraatio {#3-enable-the-integration}
 
 1. WordPress yönetici panelinde, Ultimate Multisite > Ayarlar'a gidin
 2. "Domain Mapping" (Alan Eşleme) sekmesine gidin
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Muuta, jos dokumentin juurihake
 4. cPanel entegrasyonunu etkinleştirin
 5. "Save Changes" (Değişiklikleri Kaydet) butonuna tıklayın
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
-### Eklenti Alan Adları (Addon Domains)
+### Eklenti Alan Adları (Addon Domains) {#addon-domains}
 
 Ultimate Multisite'ta bir alan adı eşlendiğinde:
 
@@ -71,7 +71,7 @@ Ultimate Multisite'ta bir alan adı eşlendiğinde:
 2. Alan adı, kök dizininize işaret edecek şekilde yapılandırılır
 3. Bir alan adı eşlemesi kaldırıldığında, entegrasyon bu alan adını cPanel'den kaldırır
 
-### Alt Alan Adları (Subdomains)
+### Alt Alan Adları (Subdomains) {#subdomains}
 
 Alt alan adı çoklu site kurulumları için yeni bir site oluşturulduğunda:
 
@@ -79,27 +79,27 @@ Alt alan adı çoklu site kurulumları için yeni bir site oluşturulduğunda:
 2. Alt alanı eklemek için cPanel'in API'sine bir istek gönderir
 3. Alt alan adı, kök dizininize işaret edecek şekilde yapılandırılır
 
-## Önemli Notlar
+## Önemli Notlar {#important-notes}
 
 - Entegrasyon, cPanel hesabınızla iletişim kurmak için cPanel'in API2'sini kullanır
 - cPanel hesabınızın eklentili alan adları ve alt alan adları ekleme yetkilerine sahip olması gerekir
 - Bazı hosting sağlayıcıları oluşturabileceğiniz eklentili alan adı veya alt alan adı sayısını sınırlayabilir
 - Entegrasyon DNS yapılandırmasını yönetmez; alan adlarını hala sunucunuzun IP adresine yönlendirmeniz gerekir
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### API Bağlantı Sorunları
+### API Bağlantı Sorunları {#api-connection-issues}
 - cPanel kullanıcı adınız ve şifrenizin doğru olduğundan emin olun
 - cPanel ana bilgisayarınızın doğru ve erişilebilir olduğunu kontrol edin
 - cPanel hesabınızın gerekli izinlere sahip olduğundan emin olun
 - Ana bilgisayar için tam URL'yi kullanmayı deneyin (örneğin, `https://cpanel.yourdomain.com`)
 
-### Alan Adı Eklenmedi
+### Alan Adı Eklenmedi {#domain-not-added}
 - Herhangi bir hata mesajı olup olmadığını kontrol etmek için Ultimate Multisite kayıtlarını kontrol edin
 - Alan adının cPanel'e zaten eklenmediğinden emin olun
 - cPanel hesabınızın eklentili alan adları veya alt alan adları için sınırına ulaşmadığından emin olun
 
-### SSL-vahvistusongelmat
+### SSL-vahvistusongelmat {#ssl-certificate-issues}
 - Integrointi ei käsittele SSL-vahvistusten myöntämistä.
 - Sinun on käytettävä cPanelin SSL/TLS -työkaluja tai AutoSSL-ominaisuutta domainojesi SSL-vahvistusten myöntämiseen.
 - Vaihtoehtoisesti voit käyttää palvelua kuten Let's Encryptin kanssa cPanelin AutoSSLia.

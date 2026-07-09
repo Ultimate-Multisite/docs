@@ -3,9 +3,9 @@ title: Ödeme we faturasyny dolandyrmak
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödemeler we Fatura İşlerini Yönetmek
+# Ödemeler we Fatura İşlerini Yönetmek {#managing-payments-and-invoices}
 
-## Ödeme Ayarları
+## Ödeme Ayarları {#payment-settings}
 
 Ödeme almaya başlamazdan önce, ödeme ile ilgili ayarları yapılandırmalısınız. **Ultimate Multisite → Settings** menüsüne gidin ve **Payment** sekmesine tıklayın.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Genel Ödeme Seçenekleri
+### Genel Ödeme Seçenekleri {#general-payment-options}
 
 Genel ayarlarda şunları yapılandırabilirsiniz:
 
@@ -24,7 +24,7 @@ Genel ayarlarda şunları yapılandırabilirsiniz:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Ödeme Ağ Geçitleri
+### Ödeme Ağ Geçitleri {#payment-gateways}
 
 Ultimate Multisite bir nekäden ödeme portalyny (payment gateway) diklatyp bilýär. Her birini Ödeme sozlamalary (Payment settings) tabidan işe basyp we özüne laýyk görnüşde dürýän bilersiňiz.
 
@@ -40,11 +40,11 @@ Her bir portal özi sozlamalary bölümine eýe bolup, API açarlaryny we beýle
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode (Test modu)
+### Sandbox Mode (Test modu) {#sandbox-mode}
 
 Öz ödeme integrasiýany gerçe tölegden önce synaplamak üçin **Sandbox Mode**ny işe basyp bilersiňiz. Sandbox modu işleýärken, hiç hili gerçe töleg edilmez.
 
-## Ödemeleri görkezmek
+## Ödemeleri görkezmek {#viewing-payments}
 
 Ultimate Multisite-de käbir ulgama ýa-da ulgam üçin ähli işlemleri görmegi üçin **Payments** (Tozatlar) sagatyna geçiň we ulgamyň siziň ulgamanyz boýundaki ähli işlemleri görä bilersiňiz.
 
@@ -54,7 +54,7 @@ Sizi öňe çykarylan hasaplanmalara (completed, pending, failed, refunded) gör
 
 Hasaplamaya basyp, onuň ähli maglumatlaryny görmegi bilerisiz; bu maglumatlar içinde zatlary (line items), bagly üje (membership), müşderi maglumatlary we ödeme portalynyň (payment gateway) maglumatlary bar bolup bilýär.
 
-## Invoices (Hasaplamalar)
+## Invoices (Hasaplamalar) {#invoices}
 
 Ultimate Multisite hasaplanmalar üçin awtomatiki hasaplamalary döredip biler. Hasaplama şablonuny we sany formatyny Ödeme (Payment) sapatlaryndan özüňiz üýtgedip bilersiňiz.
 

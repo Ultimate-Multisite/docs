@@ -3,11 +3,11 @@ title: Nangani Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Penanganan Webhook
+# Penanganan Webhook {#webhook-handling}
 
 Gawe endpoint webhook kustom kanggo nampa kedadeyan saka layanan njaba lan nyelarasake data karo Ultimate Multisite.
 
-## Endpoint Webhook Kustom
+## Endpoint Webhook Kustom {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Pertimbangan Keamanan
+## Pertimbangan Keamanan {#security-considerations}
 
 - Tansah verifikasi tandha tangan webhook nganggo HMAC utawa rahasia bareng
 - Gunakake `permission_callback` ing rute REST sampeyan — aja tau disetel dadi `__return_true` ing produksi

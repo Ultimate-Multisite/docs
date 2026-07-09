@@ -3,13 +3,13 @@ title: Ro'yxatdan o'tish jarayoni
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ro'yxatdan O'tish Jarayoni (v2)
+# Ro'yxatdan O'tish Jarayoni (v2) {#the-registration-flow-v2}
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 
 Foydalanuvchilar tarmoqqa turli usullardan ro'yxatdan olinishi mumkin. Ular sizning ro'yxatdan olinish shaklingizdan yoki oldindan tanlangan reja uchun ulashiladigan linkdan foydalanishlari mumkin. Bu yerda biz sizga mijozlaringiz tarmoqqa qanday ro'yxatdan olinishi va ular ro'yxatdan o'tganidan keyin nima sodir bo'lishini mavjud yo'llar va ro'yxatdan o'tish jarayonida ko'rsatamiz.
 
-## Ro'yxatdan O'tish Shaklini Foydalanish:
+## Ro'yxatdan O'tish Shaklini Foydalanish: {#using-the-registration-form}
 
 Bu standart ro'yxatdan olinish jarayonidir. Siz **checkout formasi** bilan ro'yxatdan olinish sahifasini yaratasiz va mijozlaringiz tarmoqqa ro'yxatdan o'tishi va reja uchun obuna bo'lishlari shu yerda sodir bo'ladi. Ixtiyoriy bo'lsangiz, har biriga turli ro'yxatdan olinish shakllari bilan ko'p ro'yxatdan olinish sahifasi bo'lishi mumkin.
 
@@ -35,13 +35,13 @@ Agar ular to'langan reja (paid plan) bilan ro'yxatdan bersa yoki sizning tarmoqn
 
 ![Dashboard'ga kirish uchun link bilan sayt faollashdi](/img/frontend/site-activated.png)
 
-## Baham ko'rinadigan linkdan foydalanish:
+## Baham ko'rinadigan linkdan foydalanish: {#using-a-shareable-link}
 
 Baham ko'rinadigan link orqali ro'yxatdan o'tish jarayoni asosan ro'yxatdan o'tish shakli bilan bir xil, faqat baham ko'rinadigan linkdan foydalanganda mijozlaringiz to'lov shaklidagi veb-sayt yoki shablonni tayyor tanlashlari mumkin (URL parametrlari orqali mahsulotlar va shablonlarni oldindan tanlash haqida bo'limga qarang) yoki hatto kupon kodi qo'shish mumkin (URL parametrlari dan foydalanish haqida bo'limga qarang).
 
 Ro'yxatdan o'tish jarayoni bir xil bo'ladi: ular ismini, foydalanuvchi nomini, elektron pochta manzilini, veb-sayt nomini va sarlavhasi kabi narsalarni to'ldirishi kerak... lekin reja yoki sayt shablonidan ular uchun oldindan tanlangan bo'ladi.
 
-### Qo'lda to'lovlar orqali ro'yxatdan o'tish:
+### Qo'lda to'lovlar orqali ro'yxatdan o'tish: {#registering-using-manual-payments}
 
 Agar siz Ultimate Multisite yoki uning qo'shimcha integratsiyalarida taklif etilgan PayPal, Stripe yoki boshqa har qanday to'lov eshigidan foydalanishni istamasangiz, mijozlaringiz uchun qo'lda to'lovlardan foydalanishingiz mumkin. Bu yechim orqali ular tarmoqningizda ro'yxatdan o'tganlaridan so'ng ularga hisob-xarji (invoice) yaratib, siz afzal ko'rgan to'lov protsessori orqali to'lashlari uchun tayyorlashingiz mumkin.
 

@@ -3,18 +3,18 @@ title: Amakhono e-Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Amakhono e-Theme Builder: Yakha Uhlaka Futhi Usebenzise Ama-Block Themes
+# Amakhono e-Theme Builder: Yakha Uhlaka Futhi Usebenzise Ama-Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 yethula amakhono amabili anamandla akuvumela ukuthi ukhiqize futhi uthumele ama-block themes enziwe ngokwezifiso ngqo kusuka kusixhumi sengxoxo.
 
-## Ukubuka konke
+## Ukubuka konke {#overview}
 
 Amakhono e-**scaffold-block-theme** kanye ne-**activate-theme** avumela ama-agent ukuthi:
 - Akhiqize ama-block themes aphelele, alungele ukukhiqiza, asekelwe ezicacisweni zakho
 - Asebenzise ngokuzenzakalela amatimu kusayithi lakho ngaphandle kokungenelela ngesandla
 - Adale ubuwena bokubukeka obuhambisanayo ngezinqumo zokuklama eziqondisiwe
 
-## Yakha Uhlaka lwe-Block Theme
+## Yakha Uhlaka lwe-Block Theme {#scaffold-block-theme}
 
 Ikhono le-**scaffold-block-theme** likhiqiza itimu entsha ye-WordPress block enesakhiwo setimu esiphelele, okuhlanganisa:
 
@@ -23,7 +23,7 @@ Ikhono le-**scaffold-block-theme** likhiqiza itimu entsha ye-WordPress block ene
 - Izitayela ze-block ezenziwe ngokwezifiso nokwahlukahluka
 - Imethadatha yetimu nezimemezelo zokusekela
 
-### Indlela Yokukubiza
+### Indlela Yokukubiza {#how-to-invoke}
 
 Engxoxweni yakho ne-Superdav AI Agent, ungacela ukukhiqizwa kwetimu:
 
@@ -38,7 +38,7 @@ I-agent izo:
 3. Idale wonke amafayela etimu adingekayo
 4. Ilungiselele itimu ukuthi isetshenziswe
 
-### Okulindelekile Ekuphumeni
+### Okulindelekile Ekuphumeni {#expected-output}
 
 Lapho ikhono lisebenza ngempumelelo, uzobona:
 
@@ -56,11 +56,11 @@ Isibonelo sokuphumayo:
   Isimo: Ilungele ukusetshenziswa
 ```
 
-## Sebenzisa Itimu
+## Sebenzisa Itimu {#activate-theme}
 
 Ikhono le-**activate-theme** lishintsha isayithi lakho liye ku-block theme esanda kwakhelwa uhlaka noma ekhona kakade.
 
-### Indlela Yokukubiza
+### Indlela Yokukubiza {#how-to-invoke-1}
 
 Ngemva kokwakha uhlaka lwetimu, ungayisebenzisa ngokushesha:
 
@@ -74,7 +74,7 @@ Noma sebenzisa noma iyiphi itimu ekhona kakade:
 "Shintshela kutimu ye-Twentytwentyfour"
 ```
 
-### Okulindelekile Ekuphumeni
+### Okulindelekile Ekuphumeni {#expected-output-1}
 
 Lapho ukusetshenziswa kuphumelela:
 
@@ -92,7 +92,7 @@ Isibonelo sokuphumayo:
   Inothi: Hlola ikhasi lakho lasekhaya ukuze uqinisekise isakhiwo
 ```
 
-## Ukugeleza komsebenzi: Yakha Uhlaka Futhi Usebenzise
+## Ukugeleza komsebenzi: Yakha Uhlaka Futhi Usebenzise {#workflow-scaffold-and-activate}
 
 Ukugeleza komsebenzi okuvamile kuhlanganisa womabili amakhono:
 
@@ -102,7 +102,7 @@ Ukugeleza komsebenzi okuvamile kuhlanganisa womabili amakhono:
 4. **Sebenzisa**: "Sebenzisa itimu manje"
 5. **Qinisekisa**: Vakashela isayithi lakho ukuze uqinisekise ukuthi umklamo omusha uyasebenza
 
-## Ama-Design Tokens Nokwenza Ngokwezifiso
+## Ama-Design Tokens Nokwenza Ngokwezifiso {#design-tokens-and-customization}
 
 Amatimu akhelwe uhlaka asebenzisa ama-design tokens e-WordPress (nge-`theme.json`) ukuze:
 
@@ -114,14 +114,14 @@ Amatimu akhelwe uhlaka asebenzisa ama-design tokens e-WordPress (nge-`theme.json
 
 Lawa ma-tokens agcinwe endaweni eyodwa ku-`theme.json`, okwenza kube lula ukulungisa lonke uhlelo lwakho lokuklama kusuka efayeleni elilodwa.
 
-## Imikhawulo Namanothi
+## Imikhawulo Namanothi {#limitations-and-notes}
 
 - Amatimu akhelwa uhlaka ku-`/wp-content/themes/` futhi kufanele alandele imithetho yokuqamba ye-WordPress
 - Ukusetshenziswa kudinga izimvume ezifanele kusayithi lakho le-WordPress
 - Ikhodi ye-PHP eyenziwe ngokwezifiso kumatimu incane; sebenzisa ama-plugin emisebenzi eyinkimbinkimbi
 - Ama-block themes asebenza kangcono nge-WordPress 5.9 nangemva kwayo
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
 **Itimu ayiveli ngemva kokwakha uhlaka**
 - Qinisekisa ukuthi ifolda yetimu ikhona futhi inezimvume ezifanele
@@ -138,7 +138,7 @@ Lawa ma-tokens agcinwe endaweni eyodwa ku-`theme.json`, okwenza kube lula ukulun
 - Sula noma yimaphi ama-caching plugins
 - Hlola ukuthi inguqulo yakho ye-WordPress isekela ama-tokens owasebenzisayo
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 Ngemva kokusebenzisa itimu yakho, unga:
 - Sebenzisa ikhono le-**Design System Aesthetics skill** ukuze uthuthukise i-typography, imibala, nezikhala

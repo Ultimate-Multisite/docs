@@ -4,11 +4,11 @@ title: Chiito - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Chiito: wu_handle_customer_meta_fields
+# Chiito: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Bvumira vagadziri vezviwedzerwa kuchengetedza meta data nenzira dzakasiyana kana vachida.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Bvumira vagadziri vezviwedzerwa kuchengetedza meta data nenzira dzakasiyana kana
 | $customer | `\Customer` | Chinhu chemutengi cheUltimate Multisite. |
 | $checkout | `\Checkout` | Kirasi yekubhadhara. |
 
-### Kubva
+### Kubva {#since}
 
 - 2.0.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu[`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) pamutsara 1211

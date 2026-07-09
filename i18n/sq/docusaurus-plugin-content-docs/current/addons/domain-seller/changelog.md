@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve i shitësit të domenit
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Regjistri i ndryshimeve i Domain Seller
+# Regjistri i ndryshimeve i Domain Seller {#domain-seller-changelog}
 
 Version 1.3.0 - Lëshuar më 2026-06-02
 - E re: U shtua një paralajmërim për network-admin kur bilanci i rishitësit HostAfrica bëhet shumë i ulët
@@ -134,20 +134,20 @@ Versioni 1.0.0 - Lëshuar më 2025-09-28
 * **E rregulluar:** I gjithë kodi i amortizuar v1 u përditësua sipas standardeve v2
 * **E hequr:** Përputhshmëria legacy v1 (ndryshim që prish përputhshmërinë)
 
-### Versionet e mëparshme (v1 Legacy)
+### Versionet e mëparshme (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Versioni 0.0.3 - 20/08/2019
+### Versioni 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * U rregullua: Papajtueshmëri me Groundhogg CRM
 * Shënim: Ky ishte lëshimi i fundit i përputhshëm me v1
 
-### Versioni 0.0.2 - 07/12/2018
+### Versioni 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * U rregullua: U hoq fusha License Key
 * U rregullua: Skedat e planit mungonin kur plugin-i i veçorisë është aktiv
 * U përmirësua: U shtua një buton kapërcimi në fushën e regjistrimit
 
-### Versioni 0.0.1 - Lëshimi fillestar
+### Versioni 0.0.1 - Lëshimi fillestar {#version-001---initial-release}
 
 * Integrim bazë OpenSRS për WP Ultimo v1
 * Kërkim dhe regjistrim i thjeshtë domeni

@@ -3,28 +3,28 @@ title: סקירת REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# מדריך REST API
+# מדריך REST API {#rest-api-reference}
 
-## תצורת בסיס
+## תצורת בסיס {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **אימות:** מפתח API וסוד (HTTP Basic Auth או פרמטרים ב-URL)
 
-## אימות
+## אימות {#authentication}
 
-### הפעלת API
+### הפעלת API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### קבלת פרטי גישה ל-API
+### קבלת פרטי גישה ל-API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### שיטות אימות
+### שיטות אימות {#authentication-methods}
 
 **HTTP Basic Auth (מומלץ):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## נקודות קצה מרכזיות
+## נקודות קצה מרכזיות {#core-endpoints}
 
-### 1. API לקוחות
+### 1. API לקוחות {#1-customers-api}
 
 **נתיב בסיס:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API אתרים
+### 2. API אתרים {#2-sites-api}
 
 **נתיב בסיס:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API חברויות
+### 3. API חברויות {#3-memberships-api}
 
 **נתיב בסיס:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API מוצרים
+### 4. API מוצרים {#4-products-api}
 
 **נתיב בסיס:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API תשלומים
+### 5. API תשלומים {#5-payments-api}
 
 **נתיב בסיס:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API דומיינים
+### 6. API דומיינים {#6-domains-api}
 
 **נתיב בסיס:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## נקודת קצה להרשמה
+## נקודת קצה להרשמה {#registration-endpoint}
 
 נקודת הקצה `/register` מספקת תהליך תשלום/הרשמה מלא:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## נקודות קצה לדיירים ריבוניים
+## נקודות קצה לדיירים ריבוניים {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 מוסיף כיסוי REST לדיירים ריבוניים עבור אינטגרציות שמקצות, בודקות או מאמתות דיירים מבודדים.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 התייחסו אל `ready: false` כחסם טרום-השקה. בדקו את פרטי האימות, תקנו את קישור מארח מסד הנתונים, התור, הקצאת המשתמשים או בעיית הניתוב, ואז נסו שוב את האימות.
 
-## תגובות שגיאה
+## תגובות שגיאה {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## עימוד וסינון
+## עימוד וסינון {#pagination-and-filtering}
 
 **פרמטרי שאילתה:**
 ```http

@@ -4,11 +4,11 @@ title: Filtras - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filtras: wu_country_get_cities
+# Filtras: wu_country_get_cities {#filter-wucountrygetcities}
 
 Grąžina šalies valstijos miestų sąrašą.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Grąžina šalies valstijos miestų sąrašą.
 | $state_code | `string` | Dviejų raidžių valstijos ISO kodas. |
 | $current_country | `\WP_Ultimo\Country\Country` | Dabartinės klasės egzempliorius. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.11
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) 146 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}
 Filtruotą valstijų sąrašą.

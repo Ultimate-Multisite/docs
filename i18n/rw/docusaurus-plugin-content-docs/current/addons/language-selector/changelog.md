@@ -3,7 +3,7 @@ title: Amateka y’impinduka za Muhitamo ururimi
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Urutonde rw'impinduka rwa Language Selector
+# Urutonde rw'impinduka rwa Language Selector {#language-selector-changelog}
 
 Verisiyo: 1.1.3 - Yasohotse ku wa 2026-05-05
 * Gukosora: Impinduragaciro z'ibyinjizwa ubu zirasukurwa kandi amazina ya hook yihariye yashyizweho imbanzirizamazina kugira ngo hirindwe kugongana n'amacomeka y'abandi

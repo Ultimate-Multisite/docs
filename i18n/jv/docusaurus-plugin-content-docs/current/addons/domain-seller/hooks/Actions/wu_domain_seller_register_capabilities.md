@@ -4,19 +4,19 @@ title: Aksi - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
 _i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Action: wu_domain_seller_register_capabilities
+# Action: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
 
 Ngidini plugin liyane kanggo ndhaptar kapabilitas dodolan domain tambahan.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $registry | `\WP_Ultimo\Integrations\Integration_Registry` | Registry integrasi. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.1.0
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L320) ing larik 320

@@ -4,11 +4,11 @@ title: Filtr - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Filtr: wu_mt_url_replacements
+# Filtr: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 URL almashtirish juftliklarini filtrlaydi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ URL almashtirish juftliklarini filtrlaydi.
 | $new_url | `string` | Yangi URL. |
 | $blog_id | `int` | Blog ID. |
 
-### Dan boshlab
+### Dan boshlab {#since}
 
 - 1.0.0
-### Manba
+### Manba {#source}
 
 [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) faylida 151-qatorda aniqlangan.

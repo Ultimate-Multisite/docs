@@ -4,13 +4,13 @@ title: فلٹر - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Filter: wu_documentation_get_link
+# Filter: wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 پلگ ان ڈویلپرز کو لنکس کو فلٹر کرنے کی اجازت دیتا ہے۔
 
 مجھے یقین نہیں کہ یہ کس طرح مفید ہو سکتا ہے، لیکن اسے رکھنا نقصان دہ نہیں ہے۔
 
-## پیرامیٹرز
+## پیرامیٹرز {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 | $slug | `string` | وہ سلگ جو لنک حاصل کرنے کے لیے استعمال ہوتا ہے |
 | $default_link | `string` | رجسٹر کیا گیا ڈیفالٹ لنک |
 
-### Since
+### Since {#since}
 
 - 1.7.0
-### Source
+### Source {#source}
 
 [`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) میں لائن 125 پر ڈیفائن کیا گیا

@@ -3,7 +3,7 @@ title: Material WP වෙනස්කම් සටහන
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP වෙනස්කම් ලොගය
+# Material WP වෙනස්කම් ලොගය {#material-wp-changelog}
 
 අනුවාදය 1.1.15 - 01/26/2026
 * වැඩිදියුණු කළා: කේත ශෛලිය සහ ආකෘතිකරණය;

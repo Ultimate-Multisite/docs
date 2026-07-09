@@ -3,7 +3,7 @@ title: Menyediakan PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Menyediakan PayPal Gateway (v2)
+# Menyediakan PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
@@ -13,13 +13,13 @@ Sama seperti Stripe, PayPal digunakan secara meluas untuk pembayaran dalam talia
 
 Perhatikan bahawa anda perlu mempunyai **Account PayPal Business** untuk mendapatkan kelayakan API yang diperlukan untuk integrasi ini.
 
-## Mengaktifkan PayPal pada rangkaian anda
+## Mengaktifkan PayPal pada rangkaian anda {#enabling-paypal-on-your-network}
 
 Untuk mengaktifkan PayPal sebagai kaedah pembayaran yang tersedia pada rangkaian anda, pergi ke tab **Ultimate Multisite > Settings > Payments** dan tandakan kotak di sebelah PayPal.
 
 ![Mengaktifkan PayPal dalam payment gateway aktif](/img/config/settings-payment-gateways.png)
 
-## Menggunakan wizard persediaan berpandu
+## Menggunakan wizard persediaan berpandu {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 menambah wizard persediaan PayPal berpandu pada tetapan payment gateway. Selepas anda mengaktifkan PayPal, gunakan wizard pada **Ultimate Multisite > Settings > Payments** untuk memilih cara anda mahu menyambungkan gateway dan mengesahkan kelayakan mana yang masih diperlukan sebelum menyimpan.
 
@@ -30,7 +30,7 @@ Wizard menyokong dua laluan persediaan:
 
 Jika anda tidak melihat pilihan OAuth dalam wizard, lengkapkan aliran kemasukan kelayakan manual di bawah. Gateway berfungsi dengan kelayakan API PayPal Business yang sama seperti keluaran Ultimate Multisite 2.x sebelumnya.
 
-## Mendapatkan kelayakan API PayPal
+## Mendapatkan kelayakan API PayPal {#getting-the-paypal-api-credentials}
 
 Setelah PayPal diaktifkan sebagai payment gateway, anda perlu mengisi medan untuk PayPal API **Username** , PayPal API **Password** dan PayPal API **Signature**.
 

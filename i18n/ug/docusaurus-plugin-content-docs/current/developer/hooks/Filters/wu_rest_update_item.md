@@ -4,11 +4,11 @@ title: سۈزگۈچ - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# سۈزگۈچ: wu_rest_update_item
+# سۈزگۈچ: wu_rest_update_item {#filter-wurestupdateitem}
 
 ئىلتىماسنى داۋاملاشتۇرۇشقا رۇخسەت قىلىنامدۇ يوق، شۇنى سۈزۈپ بېرىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | ئىسمى | تۈرى | چۈشەندۈرۈش |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 46a659e3004edbe285434103f81bd733
 | $rest_base | `array` | گەۋدە slugى. |
 | $this | `\Base_Manager` | ئوبيېكت instanceى. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 2.0.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) دا 414-قۇردا ئېنىقلانغان.

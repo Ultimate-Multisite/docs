@@ -3,15 +3,15 @@ title: 'Leçon 6 : L''expérience d''inscription'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Leçon 6 : L'expérience d'inscription
+# Leçon 6 : L'expérience d'inscription {#lesson-6-the-signup-experience}
 
 Le processus de paiement est là où l'intérêt se transforme en revenus. Un processus d'inscription confus ou générique fait fuir les clients. Un flux spécifique à une niche qui parle leur langage et qui semble facile de bout en bout les convertit.
 
-## Où nous nous étions arrêtés
+## Où nous nous étions arrêtés {#where-we-left-off}
 
 FitSite dispose de modèles et de plans configurés. Maintenant, nous allons construire l'expérience d'inscription et de paiement qui transforme les propriétaires de studios de fitness en clients payants.
 
-## Comprendre le flux d'inscription
+## Comprendre le flux d'inscription {#understanding-the-registration-flow}
 
 Les formulaires de paiement d'Ultimate Multisite sont des formulaires multi-étapes entièrement personnalisables. Pour FitSite, nous voulons un flux qui :
 
@@ -21,11 +21,11 @@ Les formulaires de paiement d'Ultimate Multisite sont des formulaires multi-éta
 
 Consultez [Le flux d'inscription](/user-guide/configuration/the-registration-flow) pour la référence technique complète.
 
-## Concevoir le paiement FitSite
+## Concevoir le paiement FitSite {#designing-the-fitsite-checkout}
 
 Accédez à **Ultimate Multisite > Checkout Forms** et créez un nouveau formulaire.
 
-### Étape 1 : Sélection du plan
+### Étape 1 : Sélection du plan {#step-1-plan-selection}
 
 La première chose qu'un propriétaire de studio de fitness doit voir, ce sont les plans, présentés dans des termes qu'il comprend.
 
@@ -37,7 +37,7 @@ La première chose qu'un propriétaire de studio de fitness doit voir, ce sont l
 « 1 Go de stockage » ne signifie rien pour un propriétaire de gym. « Tout ce dont vous avez besoin pour un site web de studio professionnel » signifie tout. Rédigez les descriptions de plan dans le langage de votre client.
 :::
 
-### Étape 2 : Sélection du modèle
+### Étape 2 : Sélection du modèle {#step-2-template-selection}
 
 Après avoir choisi un plan, le client sélectionne son modèle de départ.
 
@@ -45,7 +45,7 @@ Après avoir choisi un plan, le client sélectionne son modèle de départ.
 - Les modèles disponibles sont filtrés par le plan qu'ils ont sélectionné (configuré à la Leçon 5)
 - Chaque modèle doit avoir une image de prévisualisation montrant un design spécifique au fitness
 
-### Étape 3 : Création de compte
+### Étape 3 : Création de compte {#step-3-account-creation}
 
 Gardez cela minimal. Ne collectez que :
 
@@ -55,27 +55,27 @@ Gardez cela minimal. Ne collectez que :
 
 Ne demandez pas d'informations dont vous n'avez pas besoin lors de l'inscription. Chaque champ supplémentaire réduit le taux de conversion.
 
-### Étape 4 : Configuration du site
+### Étape 4 : Configuration du site {#step-4-site-setup}
 
 - **Site title** (Titre du site) : Pré-rempli à partir du nom du studio saisi à l'Étape 3
 - **Site URL** : Généré automatiquement à partir du nom du studio (ex. : `ironworks.fitsite.com`)
 
-### Étape 5 : Paiement
+### Étape 5 : Paiement {#step-5-payment}
 
 - Ajoutez le champ **Payment** (Paiement)
 - Configurez votre passerelle de paiement ([Stripe](/user-guide/payment-gateways/stripe) est recommandé pour la facturation par abonnement)
 - Si vous avez créé des *order bumps* (compléments de commande) à la Leçon 5, ajoutez un champ **Order Bump** avant l'étape de paiement
 
-### Étape 6 : Confirmation
+### Étape 6 : Confirmation {#step-6-confirmation}
 
 - Personnalisez le message de confirmation avec un langage spécifique au fitness
 - Exemple : « Le site web de votre studio de fitness est en cours de création. Vous serez redirigé vers votre nouveau site dans quelques secondes. »
 
-## Ajouter un interrupteur de sélection de période
+## Ajouter un interrupteur de sélection de période {#adding-a-period-selection-toggle}
 
 Si vous avez configuré des variations de prix dans vos plans (mensuel vs. annuel), ajoutez un champ **Period Selection** (Sélection de période) au formulaire de paiement afin que les clients puissent basculer entre les périodes de facturation. Consultez [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) pour les instructions.
 
-## Configuration du paiement
+## Configuration du paiement {#configuring-payment}
 
 Si vous n'avez pas encore configuré de passerelle de paiement :
 
@@ -85,7 +85,7 @@ Si vous n'avez pas encore configuré de passerelle de paiement :
 
 Consultez [Getting Paid](/user-guide/payment-gateways/getting-paid) pour plus de détails sur le fonctionnement des paiements vers votre compte.
 
-## Tester le flux
+## Tester le flux {#testing-the-flow}
 
 Avant de continuer, effectuez une inscription de test complète :
 
@@ -105,7 +105,7 @@ Vérifiez que :
 - [ ] Le client atterrit sur un site fonctionnel avec le modèle sélectionné
 - [ ] Les e-mails de confirmation utilisent un langage spécifique au fitness
 
-## Le réseau FitSite jusqu'à présent
+## Le réseau FitSite jusqu'à présent {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Prêt pour le branding (prochaine leçon)
 ```
 
-## Ce que nous avons construit dans cette leçon
+## Ce que nous avons construit dans cette leçon {#what-we-built-this-lesson}
 
 - **Un formulaire de paiement multi-étapes** adapté aux propriétaires de studios de fitness
 - **Un langage spécifique à la niche** tout au long du processus d'inscription

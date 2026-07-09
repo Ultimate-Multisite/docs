@@ -4,11 +4,11 @@ title: عمل - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# Action: wu_pending_network_published
+# Action: wu_pending_network_published {#action-wupendingnetworkpublished}
 
 این اکشن پس از اینکه یک شبکه در حالت معلق (pending) منتشر شد، فعال می‌شود.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -16,6 +16,6 @@ _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 | $membership | `\WP_Ultimo\Models\Membership` | عضویت. |
 | $pending_network | `array` | داده‌های اصلی شبکه معلق. |
 
-### منبع
+### منبع {#source}
 
 در [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1815) در خط ۱۸۱۵ تعریف شده است.

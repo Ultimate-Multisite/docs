@@ -3,7 +3,7 @@ title: Captcha өзгөртүүлөр журналы
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha өзгөрүүлөр журналы
+# Captcha өзгөрүүлөр журналы {#captcha-changelog}
 
 Версия: 1.5.0 - 2026-05-22 күнү чыгарылды
 * Жаңы: Катуу токтотуучу ылдамдык чектегич — captcha менен корголгон беттердеги ар бир GET жана POST сурамын санайт (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) жана HTTP 429, `Retry-After` header, ошондой эле кокустукталган tarpit кечигүүсү (1–5с, катуу чеги 15с) менен жооп берет.

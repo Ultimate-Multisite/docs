@@ -4,22 +4,22 @@ title: მოქმედება - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# მოქმედება: wu_membership_post_cancel
+# მოქმედება: wu_membership_post_cancel {#action-wumembershippostcancel}
 
 ამოქმედდება წევრობის გაუქმების შემდეგ.
 
 ეს ამოქმედებს გაუქმების ელწერილს.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
 | $membership_id | `int` | წევრობის ID. |
 | $membership | `\WP_Ultimo\Models\Membership` | წევრობის ობიექტი. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2290)-ში, 2290-ე ხაზზე

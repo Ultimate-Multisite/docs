@@ -4,23 +4,23 @@ title: Фильтр - wu_checkout_form_register_domain_form_fields
 sidebar_label: wu_checkout_form_register_domain_form_fields
 _i18n_hash: 6d1f2eeb3abc57d82e1b8e4b949501c3
 ---
-# Фильтр: wu_checkout_form_register_domain_form_fields
+# Фильтр: wu_checkout_form_register_domain_form_fields {#filter-wucheckoutformregisterdomainformfields}
 
 Фильтрует поля формы регистрации домена при оформлении заказа.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $steps | `array` | Шаги формы. |
 | $membership | `\WP_Ultimo\Models\Membership` | Текущая членская запись. |
 
-### Начиная с
+### Начиная с {#since}
 
 - 2.1.0
-### Источник
+### Источник {#source}
 
 Определен в [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L431) в строке 431
 
 
-## Возвращает
+## Возвращает {#returns}

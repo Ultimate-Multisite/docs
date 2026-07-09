@@ -3,11 +3,11 @@ title: التحقق من الترحيل السيادي
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# التحقق من ترحيل السيادة (Sovereign Migration Verification)
+# التحقق من ترحيل السيادة (Sovereign Migration Verification) {#sovereign-migration-verification}
 
 تتضمن Ultimate Multisite الإصدار 1.2.0 أوامر تحقق عبر WP-CLI لترحيلات المستأجرين السياديين (sovereign tenant migrations). استخدم هذه الأوامر عندما لا يتصرف ترحيل مستأجر، أو زيارة SSO، أو تثبيت معزول كما هو متوقع.
 
-## الأوامر التي يجب تشغيلها
+## الأوامر التي يجب تشغيلها {#commands-to-run}
 
 قم بتشغيل التحقق من تثبيت ووردبريس على الشبكة:
 
@@ -18,28 +18,28 @@ wp tenant verify-sovereign-push --site=<site-id>
 
 استخدم معرف الموقع (site ID) للمستأجر الذي تقوم بترحيله. الأمر الأول يتحقق من أن المستأجر لم يعد يعتمد على بيانات الشبكة القديمة (legacy network-side data). أما الأمر الثاني فيتحقق مما إذا كانت مهام الدفع السيادي (sovereign push jobs) يمكن معالجتها وتفريغها بنجاح.
 
-## الأخطاء الشائعة
+## الأخطاء الشائعة {#common-failures}
 
-### لا تتطابق صلاحيات قاعدة البيانات مع المضيف (Database grants do not match the host)
+### لا تتطابق صلاحيات قاعدة البيانات مع المضيف (Database grants do not match the host) {#database-grants-do-not-match-the-host}
 
 إذا أبلغ التحقق عن فشل في الصلاحيات أو المستخدم الكاتب (writer-user)، تحقق من مضيف قاعدة البيانات المُعد. `localhost`، و`127.0.0.1`، واسم خدمة الحاوية (container service name) هي مضيفات MySQL مختلفة للصلاحيات. قم بتحديث ربط المضيف للمستأجر أو صلاحيات قاعدة البيانات، ثم أعد تشغيل التحقق.
 
-### لا يمكن لـ Bedrock أو التثبيت المحلي الاتصال (Bedrock or local installs cannot connect)
+### لا يمكن لـ Bedrock أو التثبيت المحلي الاتصال (Bedrock or local installs cannot connect) {#bedrock-or-local-installs-cannot-connect}
 
 قد يبلغ Bedrock والتثبيت عبر المقبس المحلي (local socket installs) عن قاعدة البيانات بأنها `localhost` بينما يتصل وقت التشغيل (runtime) عبر عنوان مُطَبَّع (normalized address). الإصدار 1.2.0 يقوم بتوحيد سلاسل المضيف على نفس الجهاز، ولكن قد تتعارض تجاوزات المضيف المخصصة مع صلاحيات قاعدة البيانات.
 
-### قائمة انتظار الدفع غير المتزامنة لا تتفريغ (Async push queue does not drain)
+### قائمة انتظار الدفع غير المتزامنة لا تتفريغ (Async push queue does not drain) {#async-push-queue-does-not-drain}
 
 إذا لم تنتهِ عملية `verify-sovereign-push`، تحقق من Action Scheduler أو مُشغل المهام غير المتزامن المُعد. قم بتصفية المهام الفاشلة فقط بعد التأكد من أنها آمنة لإعادة المحاولة أو التخلص منها.
 
-### عدد مستخدمي المستأجر خاطئ (Tenant user count is wrong)
+### عدد مستخدمي المستأجر خاطئ (Tenant user count is wrong) {#tenant-user-count-is-wrong}
 
 يجب أن يقوم الترحيل بتوفير المستخدمين للمستأجر السيادي. إذا كان المستخدم المتوقع للتثبيت مفقودًا، أعد تشغيل خطوة توفير المستخدم قبل إعادة محاولة SSO.
 
-### تم رفض زيارة SSO (SSO visit is rejected)
+### تم رفض زيارة SSO (SSO visit is rejected) {#sso-visit-is-rejected}
 
 يتطلب تسجيل الدخول التلقائي للمستأجر عديم الحالة (Stateless tenant autologin) أن تتطابق النطاقات الخاصة بالمستأجر، ورقم PIN الأصلي (origin pin)، والغرض من الرمز المميز (token purpose)، والرقم العشوائي (nonce)، وتاريخ الانتهاء. تأكد من صحة عنوان URL الخاص بالمستأجر وأن عملية تسجيل الدخول تتم بعد فترة وجيزة من إنشاء زيارة SSO.
 
-## متى يجب المحاولة مرة أخرى
+## متى يجب المحاولة مرة أخرى {#when-to-retry}
 
 أعد التحقق بعد كل تغيير في البنية التحتية. لا تقم بتحويل حركة المرور إلى الإنتاج، أو حذف البيانات المصدر، أو إزالة بيانات الاعتماد الخاصة بالترحيل حتى تنجح جميع عمليات التحقق.

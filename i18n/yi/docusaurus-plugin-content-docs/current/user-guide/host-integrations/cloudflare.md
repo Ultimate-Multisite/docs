@@ -3,18 +3,18 @@ title: Cloudflare אינטעגראַציע
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare אינטעגראַציע
+# Cloudflare אינטעגראַציע {#cloudflare-integration}
 
-## איבערבליק
+## איבערבליק {#overview}
 Cloudflare איז אַ פֿירנדיקער נעצווערק פֿאַר אינהאַלט־צושטעלונג (CDN) און זיכערהייט־צושטעלער וואָס העלפֿט באַשיצן און פֿאַרגיכערן וועבזײַטן. די אינטעגראַציע דערמעגלעכט אויטאָמאַטישע דאָמיין־פֿאַרוואַלטונג צווישן Ultimate Multisite און Cloudflare, באַזונדערס פֿאַר סאָבדאָמיין־Multisite־אינסטאַלאַציעס.
 
-## פֿעיִקייטן
+## פֿעיִקייטן {#features}
 - אויטאָמאַטישע שאַפֿונג פֿון סאָבדאָמיינס אין Cloudflare
 - שטיצע פֿאַר פּראָקסירטע סאָבדאָמיינס
 - DNS רעקאָרד־פֿאַרוואַלטונג
 - פֿאַרבעסערטע DNS רעקאָרד־ווײַזונג אין דעם Ultimate Multisite אַדמין
 
-## פֿאָדערונגען
+## פֿאָדערונגען {#requirements}
 די ווײַטערדיקע קאָנסטאַנטן מוזן זײַן דעפֿינירט אין אײַער `wp-config.php` טעקע:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## אויפֿשטעל־אינסטרוקציעס
+## אויפֿשטעל־אינסטרוקציעס {#setup-instructions}
 
-### 1. באַקומען אײַער Cloudflare API שליסל
+### 1. באַקומען אײַער Cloudflare API שליסל {#1-get-your-cloudflare-api-key}
 
 1. לאָגט זיך אַרײַן אין אײַער Cloudflare Dashboard
 2. גייט צו "מײַן פּראָפֿיל" (קליקט אויף אײַער בליצפּאָסט אין דעם אויבערשטן רעכטן ווינקל)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. קאָפּירט אײַער API טאָקען
 
-### 2. באַקומען אײַער Zone ID
+### 2. באַקומען אײַער Zone ID {#2-get-your-zone-id}
 
 1. אין אײַער Cloudflare Dashboard, קלײַבט אויס דעם דאָמיין וואָס איר ווילט ניצן
 2. דער Zone ID איז זעבאַר אין דעם "איבערבליק" קוויטל, אין דער רעכטער זײַט־שפּאַלטע אונטער "API"
 3. קאָפּירט דעם Zone ID
 
-### 3. צולייגן קאָנסטאַנטן צו wp-config.php
+### 3. צולייגן קאָנסטאַנטן צו wp-config.php {#3-add-constants-to-wp-configphp}
 
 לייגט צו די ווײַטערדיקע קאָנסטאַנטן צו אײַער `wp-config.php` טעקע:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. אַקטיווירן די אינטעגראַציע
+### 4. אַקטיווירן די אינטעגראַציע {#4-enable-the-integration}
 
 1. אין אײַער WordPress אַדמין, גייט צו Ultimate Multisite > Settings
 2. נאַוויגירט צום "Domain Mapping" קוויטל
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. אַקטיווירט די Cloudflare אינטעגראַציע
 5. קליקט "Save Changes"
 
-## ווי עס אַרבעט
+## ווי עס אַרבעט {#how-it-works}
 
-### סאָבדאָמיין־פֿאַרוואַלטונג
+### סאָבדאָמיין־פֿאַרוואַלטונג {#subdomain-management}
 
 ווען אַ נײַע וועבזײַט ווערט געשאַפֿן אין אַ סאָבדאָמיין־Multisite־אינסטאַלאַציע:
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. דער סאָבדאָמיין ווערט קאָנפֿיגורירט צו ווערן פּראָקסירט דורך Cloudflare לויטן סטאַנדאַרט (דאָס קען מען טוישן מיט פֿילטערס)
 3. ווען אַ וועבזײַט ווערט אויסגעמעקט, וועט די אינטעגראַציע אַוועקנעמען דעם סאָבדאָמיין פֿון Cloudflare
 
-### DNS רעקאָרד־ווײַזונג
+### DNS רעקאָרד־ווײַזונג {#dns-record-display}
 
 די אינטעגראַציע פֿאַרבעסערט די DNS רעקאָרד־ווײַזונג אין דעם Ultimate Multisite אַדמין דורך:
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. ווײַזן צי רעקאָרדס זײַנען פּראָקסירט צי נישט
 3. ווײַזן צוגעגעבענע אינפֿאָרמאַציע וועגן די DNS רעקאָרדס
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (פֿריִער גערופֿן "Cloudflare for SaaS") איז אַ Cloudflare פֿעיִקייט וואָס דערלויבט אײַערע קונים צו ניצן זייערע אייגענע דאָמיינס מיט SSL אויף אײַער Multisite נעצווערק. דאָס איז דער רעקאָמענדירטער צוגאַנג פֿאַר דאָמיין־געמאַפּטע Multisite־אינסטאַלאַציעס וואָס ניצן Cloudflare, ווײַל Cloudflare פֿאַרוואַלטעט אויטאָמאַטיש דאָס אַרויסגעבן און באַנײַען פֿון SSL סערטיפֿיקאַטן פֿאַר יעדן אייגענעם דאָמיין.
 
-### ווי עס אונטערשיידט זיך פֿון דער סטאַנדאַרטער Cloudflare אינטעגראַציע
+### ווי עס אונטערשיידט זיך פֿון דער סטאַנדאַרטער Cloudflare אינטעגראַציע {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | סטאַנדאַרטע אינטעגראַציע | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **בעסטער פֿאַר** | סאָבדאָמיין־Multisite | דאָמיין־געמאַפּטע Multisite |
 | **SSL** | באַהאַנדלט באַזונדער | אויטאָמאַטיש פֿאַרוואַלטעט דורך Cloudflare |
 
-### אויפֿשטעלן Cloudflare Custom Hostnames
+### אויפֿשטעלן Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. אין אײַער Cloudflare Dashboard, עפֿנט די זאָנע פֿאַר אײַער הויפּט־דאָמיין.
 2. גייט צו **SSL/TLS > Custom Hostnames**.
@@ -101,23 +101,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 זינט Ultimate Multisite v2.6.1, ווערט די פֿעיִקייט אָנגערופֿן **Cloudflare Custom Hostnames** אין אַלע plugin־אײַנשטעלונגען און שילדן. פֿריִערדיקע ווערסיעס האָבן געניצט דעם נאָמען "Cloudflare for SaaS", וואָס איז דער אונטערליגנדער Cloudflare פּראָדוקט־נאָמען.
 :::
 
-## וויכטיקע באַמערקונגען
+## וויכטיקע באַמערקונגען {#important-notes}
 
 זינט Cloudflare'ס לעצטע דערהײַנטיקונגען, איז wildcard־פּראָקסירן איצט פֿאַראַן פֿאַר אַלע קונים. דאָס מיינט אַז די סטאַנדאַרטע Cloudflare DNS אינטעגראַציע איז ווייניקער קריטיש פֿאַר סאָבדאָמיין־Multisite־אינסטאַלאַציעס ווי זי איז געווען פֿריִער, ווײַל איר קענט פּשוט אויפֿשטעלן אַ wildcard DNS רעקאָרד אין Cloudflare.
 
-## פּראָבלעמען־לייזונג
+## פּראָבלעמען־לייזונג {#troubleshooting}
 
-### API פֿאַרבינדונג־פּראָבלעמען
+### API פֿאַרבינדונג־פּראָבלעמען {#api-connection-issues}
 - באַשטעטיקט אַז אײַער API טאָקען איז ריכטיק און האָט די נייטיקע דערלויבענישן
 - קאָנטראָלירט אַז אײַער Zone ID איז ריכטיק
 - פֿאַרזיכערט אַז אײַער Cloudflare Account האָט די נייטיקע דערלויבענישן
 
-### סאָבדאָמיין נישט צוגעגעבן
+### סאָבדאָמיין נישט צוגעגעבן {#subdomain-not-added}
 - קאָנטראָלירט די Ultimate Multisite לאָגס פֿאַר סיי וועלכע פֿעלער־מעלדונגען
 - באַשטעטיקט אַז דער סאָבדאָמיין איז נאָך נישט צוגעגעבן צו Cloudflare
 - פֿאַרזיכערט אַז אײַער Cloudflare פּלאַן שטיצט די צאָל DNS רעקאָרדס וואָס איר שאַפֿט
 
-### פּראָקסירן־פּראָבלעמען
+### פּראָקסירן־פּראָבלעמען {#proxying-issues}
 - אויב איר ווילט נישט אַז סאָבדאָמיינס זאָלן ווערן פּראָקסירט, קענט איר ניצן דעם `wu_cloudflare_should_proxy` פֿילטער
 - עטלעכע פֿעיִקייטן קענען נישט אַרבעטן ריכטיק ווען זיי ווערן פּראָקסירט (למשל, געוויסע WordPress אַדמין־פֿונקציעס)
 - באַטראַכט ניצן Cloudflare'ס Page Rules כּדי איבערצוגיין דעם קעש פֿאַר אַדמין־זײַטן

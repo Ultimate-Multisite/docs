@@ -3,11 +3,11 @@ title: Kupanga Email za M'ndindo
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Kufunira Emails za System
+# Kufunira Emails za System {#managing-system-emails}
 
 Ultimate Multisite yafaka email zambiri za system kwa mambo kama vile kuthibitisha usajili, kupokea risiti za malipo, na kubadilisha uwezo wa kuungana (membership). Mumwezi kutiwusa email templates kuti zifanane ndi brand yanu.
 
-## Kufuna Email za System
+## Kufuna Email za System {#viewing-system-emails}
 
 Tiyendera **Ultimate Multisite → Settings** ndipo mupanga tab ya **Emails** kuti muone settings zomwe zimakhudzidwa ndi email.
 
@@ -21,7 +21,7 @@ Mungathe kudzipereka (edit) templates zina za email monga momwe muli ndi editor 
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Kufotokozera Templates Zina za Email Zina
+## Kufotokozera Templates Zina za Email Zina {#importing-new-email-templates}
 
 Ngakhale Ultimate Multisite yomwe ndi zinthu zina (add-ons) zingathe kukhala ndi templates zina za email zifotokozedwa kwambiri. Kuti mupitire mavuto, templates zina zikuti zikuyenda zikuphunzira zikuyendera — musayendera zikuti zikuyenda zikuyendera—mukuwoneza zikuti muli ndi kuyendera kwawo.
 
@@ -32,7 +32,7 @@ Kuti mupitire templates zina za email zina:
 3. Pambani (toggle) option ya **Import Emails** kuti muone templates zomwe zikuti zili pansi.
 4. Koselekani templates zomwe mukuona kuti mupitire ndipo mupereke chonde.
 
-## Kusintha Templates za Email
+## Kusintha Templates za Email {#resetting-email-templates}
 
 Ngati mumapereka (customize) template ya email ndipo mukufuna kukhazikitsa ku chinthu chomwe chimakhala kwawo (default content), muli ndi mavuto matu:
 

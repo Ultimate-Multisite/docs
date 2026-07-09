@@ -3,13 +3,13 @@ title: Ukuhlawulwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ukuhlawulwa (v2)
+# Ukuhlawulwa (v2) {#getting-paid-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite inguqulelo 2.x.**_
 
 Ultimate Multisite inenkqubo eyakhelwe ngaphakathi yobulungu kunye nokubiza iintlawulo. Ukuze inkqubo yethu yokubiza iintlawulo isebenze, sidibanise amasango entlawulo aqhelekileyo asetyenziswa kurhwebo lwe-intanethi. Amasango entlawulo angagqibekanga kwi-Ultimate Multisite zezi _Stripe_ , _PayPal_ , kunye neNtlawulo Yesandla. Ungasebenzisa kwakhona _WooCommerce_ , _GoCardless_ kunye _Payfast_ ukufumana iintlawulo ngokufakela izongezo zazo ezifanelekileyo.
 
-## Izicwangciso Ezisisiseko
+## Izicwangciso Ezisisiseko {#basic-settings}
 
 Ungaqwalasela naliphi na kula masango entlawulo phantsi kwezicwangciso zentlawulo ze-Ultimate Multisite. Ungayifumana ngokuya ku-**Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Oku kuthintela ubulungu ekubonakaleni ngathi buya kuzivuselela ngokuzenzekelayo 
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Apho ungafumana khona amasango:
+## Apho ungafumana khona amasango: {#where-to-find-the-gateways}
 
 Ungaseta amasango entlawulo kwiphepha elifanayo ( **Ultimate Multisite > Settings > Payments**). Kanye ngezantsi kwe-**active payment gateways** , uya kukwazi ukubona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ kunye _Manual_.
 
@@ -67,7 +67,7 @@ Nantsi kwakhona imbono epheleleyo yezicwangciso zamasango entlawulo:
 
 Ngoku, ukuba ufuna ukusebenzisa _WooCommerce_ , _GoCardless_ okanye _Payfast_ njengesango lakho lentlawulo, kuya kufuneka **ufakele kwaye uqwalasele izongezo zazo**.
 
-### Indlela yokufakela isongezo se-WooCommerce:
+### Indlela yokufakela isongezo se-WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Siyaqonda ukuba _Stripe_ kunye _PayPal_ azifumaneki kwamanye amazwe, nto leyo ethintela okanye ephazamisa abasebenzisi be-Ultimate Multisite ekusebenziseni i-plugin yethu ngokusebenzayo. Ngoko senze isongezo sokudibanisa _WooCommerce,_ eyi-plugin yorhwebo lwe-intanethi ethandwa kakhulu. Abaphuhlisi kwihlabathi lonke benze izongezo zokudibanisa amasango entlawulo ahlukeneyo kuyo. Sisebenzise eli thuba ukwandisa amasango entlawulo onokuwasebenzisa nenkqubo yokubiza iintlawulo ye-Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Emva kokusenza sisebenze, ukuba awukabinayo i-plugin ye-WooCommerce efakiweyo kw
 
 Ukufunda ngakumbi ngesongezo se-WooCommerce Integration, **cofa apha**.
 
-### Indlela yokufaka isongezo se-GoCardless:
+### Indlela yokufaka isongezo se-GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Amanyathelo okufaka isongezo se-_GoCardless_ ayafana kakhulu nawesongezo se-_WooCommerce_. Nceda uye kwiphepha lezongezo uze ukhethe isongezo se-**Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Emva kokuba ukufakwa kugqityiwe, uya kuthunyelwa kwiphepha lee-plugin. Apha, cof
 
 Ukuze ufunde indlela yokuqalisa ngesango le-_GoCardless_, **funda eli nqaku**.
 
-### Indlela yokufaka isongezo se-Payfast:
+### Indlela yokufaka isongezo se-Payfast: {#how-to-install-the-payfast-add-on}
 
 Yiya kwiphepha lezongezo uze ukhethe isongezo se-**Ultimate Multisite: Payfast Gateway**.
 

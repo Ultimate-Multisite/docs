@@ -3,11 +3,11 @@ title: Ukubonakala Kwekhono
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ukubonakala Kwamakhono
+# Ukubonakala Kwamakhono {#ability-visibility}
 
 Superdav AI Agent v1.12.0 yethula izilawuli ze-**Ukubonakala Kwamakhono** ezilawula ukuthi yimaphi ama-surface aveza ikhono ngalinye. Lokhu kuvumela abaphathi ukuthi balungise ngokunembile ukuthi yimaphi amakhono e-agent atholakala ngama-REST APIs, amaseva e-MCP, ukuhlanganiswa kwe-WooCommerce, nezinye izixhumi.
 
-## Kuyini Ukubonakala Kwamakhono?
+## Kuyini Ukubonakala Kwamakhono? {#what-is-ability-visibility}
 
 Ukubonakala Kwamakhono uhlelo lwezimvume olulawula:
 
@@ -18,9 +18,9 @@ Ukubonakala Kwamakhono uhlelo lwezimvume olulawula:
 
 Ikhono ngalinye liphethe izinga lokubonakala elinquma ukutholakala kwalo kuma-surface ahlukahlukene.
 
-## Amazinga Okubonakala
+## Amazinga Okubonakala {#visibility-levels}
 
-### Esidlangalaleni
+### Esidlangalaleni {#public}
 
 **Amakhono asesidlangalaleni** atholakala yonke indawo:
 
@@ -32,7 +32,7 @@ Ikhono ngalinye liphethe izinga lokubonakala elinquma ukutholakala kwalo kuma-su
 
 Isibonelo: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Kwangaphakathi
+### Kwangaphakathi {#internal}
 
 **Amakhono angaphakathi** atholakala kuphela ngaphakathi kokufakwa kwakho kwe-WordPress:
 
@@ -43,7 +43,7 @@ Isibonelo: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Isibonelo: `manage-settings`, `view-analytics`, `export-data`
 
-### Uzakwethu
+### Uzakwethu {#partner}
 
 **Amakhono ozakwethu** atholakala kuphela kozakwethu abasohlwini oluvunyelwe:
 
@@ -54,7 +54,7 @@ Isibonelo: `manage-settings`, `view-analytics`, `export-data`
 
 Isibonelo: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Kukhutshaziwe
+### Kukhutshaziwe {#disabled}
 
 **Amakhono akhutshaziwe** awatholakali ndawo:
 
@@ -63,15 +63,15 @@ Isibonelo: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Awatholakali kumaphaneli okuphatha
 - Awusizo kumakhono aphelelwe isikhathi noma okuhlola
 
-## Ukuphatha Ukubonakala Kwamakhono
+## Ukuphatha Ukubonakala Kwamakhono {#managing-ability-visibility}
 
-### Ukufinyelela Izilungiselelo Zokubonakala Kwamakhono
+### Ukufinyelela Izilungiselelo Zokubonakala Kwamakhono {#accessing-ability-visibility-settings}
 
 1. Iya ku-**WordPress Admin** → **Superdav AI Agent** → **Izilungiselelo**
 2. Chofoza ithebhu ethi **Amakhono**
 3. Uzobona uhlu lwawo wonke amakhono afakiwe namazinga awo okubonakala
 
-### Ukubuka Imininingwane Yekhono
+### Ukubuka Imininingwane Yekhono {#viewing-ability-details}
 
 Chofoza kunoma yiliphi ikhono ukuze ubone:
 
@@ -82,7 +82,7 @@ Chofoza kunoma yiliphi ikhono ukuze ubone:
 - **Kugcine ukubuyekezwa**: Nini lapho ukubonakala kwagcina ukushintshwa khona
 - **Isimo**: Kuyaziwa noma Akuhlukanisiwe
 
-### Ukushintsha Amazinga Okubonakala
+### Ukushintsha Amazinga Okubonakala {#changing-visibility-levels}
 
 Ukuze ushintshe ukubonakala kwekhono:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Imisebenzi Yenqwaba
+### Imisebenzi Yenqwaba {#bulk-operations}
 
 Ukuze ushintshe ukubonakala kwamakhono amaningi:
 
@@ -108,11 +108,11 @@ Ukuze ushintshe ukubonakala kwamakhono amaningi:
 2. Khetha izinga elisha lokubonakala ku-dropdown yesenzo senqwaba
 3. Chofoza **Sebenzisa**
 
-## Uhlu Oluvunyelwe Lozakwethu
+## Uhlu Oluvunyelwe Lozakwethu {#partner-allow-list}
 
 **Uhlu oluvunyelwe lozakwethu** lulawula ukuthi yibaphi ozakwethu bangaphandle abangafinyelela amakhono ezinga lozakwethu.
 
-### Ukwengeza Ozakwethu
+### Ukwengeza Ozakwethu {#adding-partners}
 
 1. Iya ku-**Superdav AI Agent** → **Izilungiselelo** → **Ozakwethu**
 2. Chofoza **Engeza Uzakwethu**
@@ -120,7 +120,7 @@ Ukuze ushintshe ukubonakala kwamakhono amaningi:
 4. Ngokuzithandela engeza igama nencazelo yozakwethu
 5. Chofoza **Londoloza**
 
-### Ukwabela Ozakwethu Amakhono
+### Ukwabela Ozakwethu Amakhono {#assigning-abilities-to-partners}
 
 Ngemva kokwengeza uzakwethu:
 
@@ -130,7 +130,7 @@ Ngemva kokwengeza uzakwethu:
 4. Esigabeni esithi "Uhlu oluvunyelwe lozakwethu", maka amabhokisi ozakwethu okufanele babe nokufinyelela
 5. Chofoza **Londoloza**
 
-### Ukuhoxisa Ukufinyelela Kozakwethu
+### Ukuhoxisa Ukufinyelela Kozakwethu {#revoking-partner-access}
 
 Ukuze ususe ukufinyelela kozakwethu:
 
@@ -140,11 +140,11 @@ Ukuze ususe ukufinyelela kozakwethu:
 
 Uzakwethu uzolahlekelwa ukufinyelela kulelo khono ngokushesha.
 
-## Amakhono Angahlukanisiwe
+## Amakhono Angahlukanisiwe {#unclassified-abilities}
 
 Uma ufaka ikhono lomuntu wesithathu i-Superdav AI Agent engalazi, limakwa njenge-**Lingahlukanisiwe**.
 
-### Isaziso Somphathi Samakhono Angahlukanisiwe
+### Isaziso Somphathi Samakhono Angahlukanisiwe {#admin-notice-for-unclassified-abilities}
 
 Uzobona isaziso somphathi:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Ukubuyekeza Amakhono Angahlukanisiwe
+### Ukubuyekeza Amakhono Angahlukanisiwe {#reviewing-unclassified-abilities}
 
 1. Chofoza **Buyekeza Amakhono** esazisweni
 2. Ngekhono ngalinye elingahlukanisiwe, uzobona:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Chofoza **Hlela isigaba** ukuze ulondoloze isinqumo sakho
 
-### Kungani Uhlukanisa Amakhono Angahlukanisiwe?
+### Kungani Uhlukanisa Amakhono Angahlukanisiwe? {#why-classify-unclassified-abilities}
 
 Ukuhlukanisa amakhono:
 
@@ -187,9 +187,9 @@ Ukuhlukanisa amakhono:
 - **Kuvumela izici**: Uma selihlukanisiwe, ikhono liyatholakala
 - **Kubhala izinqumo**: Okukhethayo kugcinwa kumalogi ngezinhloso zokuhlola
 
-## Ukubonakala Kuma-surface Ahlukahlukene
+## Ukubonakala Kuma-surface Ahlukahlukene {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Amakhono asesidlangalaleni** atholakala ngama-endpoint e-REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Amakhono angaphakathi nawozakwethu** awatholakali nge-REST API.
 
-### Amaseva e-MCP
+### Amaseva e-MCP {#mcp-servers}
 
 **Amakhono asesidlangalaleni** atholakala nge-MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Amakhono ozakwethu** atholakala kuphela ngemininingwane yokuqinisekisa yozakwethu.
 
-### Ukuhlanganiswa kwe-WooCommerce
+### Ukuhlanganiswa kwe-WooCommerce {#woocommerce-integration}
 
 **Amakhono asesidlangalaleni** ahlobene ne-WooCommerce ayatholakala:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Amakhono angaphakathi** awavezwa ku-WooCommerce.
 
-### Isixhumi Sengxoxo
+### Isixhumi Sengxoxo {#chat-interface}
 
 **Wonke amakhono** (Esidlangalaleni, Kwangaphakathi, Uzakwethu) ayatholakala engxoxweni, kuye ngezimvume zomsebenzisi:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Abasebenzisi abavamile babona amakhono asesidlangalaleni kuphela
 - Ozakwethu babona amakhono asesidlangalaleni + amakhono ozakwethu (uma besohlwini oluvunyelwe)
 
-## Imikhuba Engcono Kakhulu Yokuvikeleka
+## Imikhuba Engcono Kakhulu Yokuvikeleka {#security-best-practices}
 
-### Umgomo Welungelo Elincane Kakhulu
+### Umgomo Welungelo Elincane Kakhulu {#principle-of-least-privilege}
 
 - Setha amakhono ekubonakaleni okuqinile kakhulu okusavumela ukusetshenziswa kwawo
 - Sebenzisa ukubonakala kozakwethu emisebenzini ebucayi
 - Khubaza amakhono ongawasebenzisi
 
-### Ukuhlola Okuvamile
+### Ukuhlola Okuvamile {#regular-audits}
 
 - Buyekeza ukubonakala kwamakhono nyanga zonke
 - Hlola amakhono angahlukanisiwe
 - Susa ukufinyelela kozakwethu abangasetshenziswa
 
-### Ukuloga Nokuqapha
+### Ukuloga Nokuqapha {#logging-and-monitoring}
 
 - Qapha ukuthi yimaphi amakhono asetshenziswa kakhulu
 - Landelela amaphethini okufinyelela kozakwethu
 - Xwayisa ngokusetshenziswa kwekhono okungajwayelekile
 
-### Amakhono Omuntu Wesithathu
+### Amakhono Omuntu Wesithathu {#third-party-abilities}
 
 - Buyekeza amakhono abantu besithathu ngaphambi kokuwanika amandla
 - Wahlukanise ngokucacile
 - Qala ngokubonakala kwangaphakathi noma kozakwethu
 - Wenyusele Esidlangalaleni kuphela ngemva kokuhlolwa
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
 **Ikhono aliveli ohlwini**
 - Qinisekisa ukuthi ikhono lifakiwe futhi liyasebenza
@@ -285,7 +285,7 @@ Available abilities:
 - Hlola ukuthi ukuhlukanisa kwakho kulondoloziwe
 - Qinisekisa ukuthi i-plugin enikeza ikhono isesikhathini
 
-## Ukuthutha Kusuka Kumodi Yefa
+## Ukuthutha Kusuka Kumodi Yefa {#migration-from-legacy-mode}
 
 Uma uthuthukisa usuka enguqulweni endala ye-Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Uma uthuthukisa usuka enguqulweni endala ye-Superdav AI Agent:
 
 Bona **Ukuthutha Kwemodi Yomuntu Wesithathu** ukuze uthole imininingwane eyengeziwe ngokudlulela ekuhlanganisweni kwendabuko kwe-Abilities API.
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 Ngemva kokumisa ukubonakala kwamakhono:
 

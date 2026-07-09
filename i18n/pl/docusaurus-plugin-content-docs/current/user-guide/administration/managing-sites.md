@@ -3,7 +3,7 @@ title: Zarządzanie stronami
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Zarządzanie stronami
+# Zarządzanie stronami {#managing-sites}
 
 Strony (lub podstrony) to fundament Twojego biznesu WaaS. Ultimate Multisite obsługuje 3 typy stron:
 
@@ -11,13 +11,13 @@ Strony (lub podstrony) to fundament Twojego biznesu WaaS. Ultimate Multisite obs
 - **Szablony stron** — Gotowe strony, które klienci mogą wybrać jako punkt wyjścia
 - **Strona główna** — Główna strona Twojej sieci
 
-## Przeglądanie stron
+## Przeglądanie stron {#viewing-sites}
 
 Przejdź do **Ultimate Multisite → Sites**, aby zobaczyć wszystkie podstrony w sieci. Każda strona jest oznaczona typem, a dostępne filtry to: Wszystkie strony, Strony klientów, Szablony i Oczekujące.
 
 ![Lista stron](/img/admin/sites-list.png)
 
-## Dodawanie nowej strony
+## Dodawanie nowej strony {#adding-a-new-site}
 
 Kliknij przycisk **Add Site**, aby utworzyć nową stronę. Musisz podać:
 
@@ -27,15 +27,15 @@ Kliknij przycisk **Add Site**, aby utworzyć nową stronę. Musisz podać:
 
 Opcja **Copy Site** pozwala utworzyć nową stronę na podstawie istniejącego szablonu. Po jej włączeniu możesz wybrać szablon, który posłuży jako punkt wyjścia. Upewnij się, że opcja **Copy Media on Duplication** jest włączona, jeśli chcesz skopiować również pliki multimedialne.
 
-## Zarządzanie istniejącą stroną
+## Zarządzanie istniejącą stroną {#managing-an-existing-site}
 
 Kliknij **Manage** przy dowolnej stronie, aby otworzyć stronę **Edit Site**. Znajdziesz tam:
 
-### Podstawowe informacje
+### Podstawowe informacje {#basic-information}
 
 Nazwa strony, typ, identyfikator strony oraz opis. Zobaczysz też przypisaną domenę, powiązane członkostwo i konto klienta, do którego należy strona.
 
-### Opcje strony
+### Opcje strony {#site-options}
 
 Tutaj konfigurujesz możliwości i limity strony:
 
@@ -47,7 +47,7 @@ Tutaj konfigurujesz możliwości i limity strony:
 
 Domyślnie strony korzystają z limitów ustawionych na poziomie członkostwa. Ustawienie limitów na poziomie strony nadpisuje ustawienia członkostwa.
 
-### Powiązania
+### Powiązania {#associations}
 
 Poniżej opcji strony znajdziesz informacje o:
 
@@ -55,7 +55,7 @@ Poniżej opcji strony znajdziesz informacje o:
 - **Członkostwie**, do którego należy strona
 - **Koncie klienta** przypisanym do strony
 
-### Prawy panel boczny
+### Prawy panel boczny {#right-sidebar}
 
 Po prawej stronie możesz:
 

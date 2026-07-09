@@ -3,13 +3,13 @@ title: Kohereza imeyili n’ubutumwa rusange
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Kohereza Emails na Broadcasts (v2)
+# Kohereza Emails na Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**ICYITONDERWA CY’INGENZI: Iyi ngingo ireba Ultimate Multisite verisiyo 2.x.**_
 
 Ultimate Multisite izana uburyo buzagufasha kuvugana n’abakiriya bawe wohereza email ku mukoresha ugenewe cyangwa itsinda ry’abakoresha, ndetse no kohereza amatangazo kuri admin dashboard yabo kugira ngo utangaze amakuru
 
-## Ongeraho admin notices kuri dashboard y’abakiriya bawe ukoresheje Broadcasts
+## Ongeraho admin notices kuri dashboard y’abakiriya bawe ukoresheje Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ukoresheje uburyo bwa broadcast bwa Ultimate Multisite, ushobora kongeraho **admin notices** kuri subsite admin dashboard y’umukoresha wawe.
 
@@ -51,7 +51,7 @@ Nyuma yo gukora ubutumwa bwawe, ushobora noneho gukanda buto ya **Send**.
 
 Kandi birarangiye. Admin notice igomba guhita igaragara kuri dashboard y’umukoresha wawe.
 
-## Ohereza emails ku bakiriya bawe
+## Ohereza emails ku bakiriya bawe {#send-emails-to-your-customers}
 
 Ukoresheje uburyo bwa broadcast bwa Ultimate Multisite, ushobora kohereza email ku bakoresha bawe. Ufite ihitamo ryo kohereza email gusa ku bakoresha runaka cyangwa kugena itsinda ry’abakoresha rishingiye kuri product cyangwa plan biyandikishijeho.
 
@@ -81,11 +81,11 @@ Nyuma yo gukora ubutumwa bwawe, ushobora gukanda buto ya **Send**.
 
 Kandi uko ni ko byoroshye kohereza email ku bakoresha bawe ba nyuma ukoresheje uburyo bwa broadcast.
 
-## Emails za sisitemu
+## Emails za sisitemu {#system-emails}
 
 Emails za sisitemu muri Ultimate Multisite ni za **automatic notifications** zoherezwa na sisitemu nyuma y’ibikorwa runaka nko kwiyandikisha, kwishyura, guhuza domain, n’ibindi. Izi emails zishobora guhindurwa cyangwa kuvugururwa uhereye muri settings za Ultimate Multisite. Izana kandi uburyo buzagufasha gusubiza ku ishusho ya mbere no kuzana settings zisanzwe zivuye mu rindi iyinjizwamo rya Ultimate Multisite.
 
-### Gusubiza ku ntangiriro & Kuzana
+### Gusubiza ku ntangiriro & Kuzana {#resetting--importing}
 
 Verisiyo nshya za Ultimate Multisite, kimwe na add-ons, zishobora kandi zizajya zongeramo emails nshya rimwe na rimwe.
 
@@ -93,7 +93,7 @@ Kugira ngo wirinde amakimbirane n’ibindi bibazo, **ntituzongera email template
 
 Icyakora, super admins n’agents bashobora kuzana izi emails zimaze kwandikwa vuba binyuze ku gikoresho cya importer. Iyo nzira izakora system email nshya ifite ibirimo n’igenamiterere rya email template nshya, igafasha super admin gukora impinduka zose ashaka cyangwa kuzireka uko zimeze.
 
-#### Uko wazana system emails
+#### Uko wazana system emails {#how-to-import-system-emails}
 
 Jya kuri paji ya Ultimate Multisite Settings yawe maze ujye kuri tab ya **Emails**.
 
@@ -111,7 +111,7 @@ Hanyuma, ushobora gufungura cyangwa gufunga amahitamo ya Import Emails kugira ng
 
 <!-- Ishusho ntiboneka: modal ya Reset and Import ifite amahitamo ya Import Emails yaguwe -->
 
-#### Gusubiza System Emails uko byahoze
+#### Gusubiza System Emails uko byahoze {#reseting-system-emails}
 
 Hari igihe uzasanga impinduka wakoze kuri email template runaka zitakigukorera neza, maze ukifuza kuyisubiza ku **miterere yayo isanzwe**.
 

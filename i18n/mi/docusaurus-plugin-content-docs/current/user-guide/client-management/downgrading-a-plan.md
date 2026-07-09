@@ -3,13 +3,13 @@ title: Whakawhanaungatanga i te Whakamutunga o te Rōpū
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Whakamutunga i te plan (v2)
+# Whakamutunga i te plan (v2) {#downgrading-a-plan-v2}
 
 _**Tohito WAIPA: Ko tēnei tikanga he tino whakamahinga mō Ultimate Multisite v2.x.**_
 
 He mea e taea ai ngā wāhi whai mo te whakatū i te plan peke, he mea e pēnei ana ki te tino whakahou (downgrade) he tino whakatau ngā wāhi whai mo te whakatū i te plan peke, ko mōna whānau he nui rawa i ngā rātou manawa hei whakahaere i te subsite.
 
-## He aha te mea e taea ai ki te whakamutunga i te plan
+## He aha te mea e taea ai ki te whakamutunga i te plan {#how-to-downgrade-a-plan}
 
 He mea e taea ana i ngā wāhi whai mo te whakamutunga i te plan, ko i roto i te wā e tino mārama (logging in) ki te admin dashboard o te subsite, he pūmau **Change** (Chang) i runga i te puta mai o te manawa.
 
@@ -25,7 +25,7 @@ Mō te whakatika i tēnei mea, he tino whakamutunga ana te user ki te puta mai o
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### He aha te mea e titiro ai i te user i te whakamutunga i te plan
+### He aha te mea e titiro ai i te user i te whakamutunga i te plan {#what-happens-when-a-user-downgrades-their-plan}
 
 He tino mōhio ana, he nui te whakahou (downgrading) i te plan, he ka whakawhiti i te configuration e hoki mai i te user o te subsite.
 
@@ -37,7 +37,7 @@ Mō ngā posts (pango) e whai anaha (exceed) i te limit e puta mai i te plan, he
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### He aha te hua mō te payment (whakamutunga)
+### He aha te hua mō te payment (whakamutunga) {#what-happens-to-the-payment}
 
 I version 2.0, he tino whai anaha ana i ngā whakaritanga (adjustments) mō te proration (whakawhanaungatanga o te billing).
 

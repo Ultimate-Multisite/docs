@@ -4,11 +4,11 @@ title: Çalakî - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Çalakî: add_user_to_blog
+# Çalakî: add_user_to_blog {#action-addusertoblog}
 
 Dema bikarhênerek li malperekê tê zêdekirin, tavilê tê xebitandin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Daxuyanî |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Dema bikarhênerek li malperekê tê zêdekirin, tavilê tê xebitandin.
 | $role | `string` | Rola bikarhênerê. |
 | $blog_id | `int` | ID ya blogê. |
 
-### Ji vir ve
+### Ji vir ve {#since}
 
 - MU: MU
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) de li rêza 174 hatiye pênasekirin.

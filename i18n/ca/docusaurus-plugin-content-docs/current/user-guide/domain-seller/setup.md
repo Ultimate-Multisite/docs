@@ -3,21 +3,21 @@ title: Instal·lació i configuració del proveïdor
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: configuració inicial i configuració de proveïdors
+# Domain Seller: configuració inicial i configuració de proveïdors {#domain-seller-setup-and-provider-configuration}
 
 L'addon Domain Seller inclou un assistent de configuració inicial guiat que et porta per cada pas necessari. Aquesta pàgina cobreix el flux de l'assistent i com configurar o reconfigurar proveïdors posteriorment.
 
-## Requisits
+## Requisits {#requirements}
 
 - **Multisite Ultimate** v2.4.12 o superior, activat a la xarxa
 - **PHP** 7.4+
 - Credencials d'API per a almenys un registrador compatible
 
-## Assistent de configuració inicial de primera execució
+## Assistent de configuració inicial de primera execució {#first-run-setup-wizard}
 
 L'assistent de configuració inicial s'inicia automàticament la primera vegada que actives el plugin a la xarxa. També està disponible en qualsevol moment des de **Network Admin › Ultimate Multisite › Configuració de Domain Seller**.
 
-### Pas 1 — Tria un proveïdor
+### Pas 1 — Tria un proveïdor {#step-1--choose-a-provider}
 
 Selecciona el registrador que vols connectar. Opcions compatibles:
 
@@ -33,7 +33,7 @@ Selecciona el registrador que vols connectar. Opcions compatibles:
 | NameSilo | No | No |
 | Enom | Sí | No |
 
-### Pas 2 — Introdueix les credencials
+### Pas 2 — Introdueix les credencials {#step-2--enter-credentials}
 
 Cada proveïdor té camps de credencials diferents:
 
@@ -57,17 +57,17 @@ Cada proveïdor té camps de credencials diferents:
 
 Marca **Mode sandbox** quan estigui disponible per provar-ho amb l'entorn de proves del proveïdor abans de passar a producció.
 
-### Pas 3 — Prova la connexió
+### Pas 3 — Prova la connexió {#step-3--test-the-connection}
 
 Fes clic a **Prova la connexió**. L'assistent envia una crida lleugera a l'API per verificar les credencials i la connectivitat. Corregeix qualsevol problema de credencials abans de continuar.
 
-### Pas 4 — Importa TLDs
+### Pas 4 — Importa TLDs {#step-4--import-tlds}
 
 Fes clic a **Importa TLDs** per obtenir tots els TLDs disponibles i els preus majoristes del proveïdor connectat. Això omple la llista de TLDs utilitzada pels productes de domini. La importació pot trigar entre 30 i 60 segons per als proveïdors amb catàlegs de TLDs grans.
 
 Els TLDs també es tornen a sincronitzar automàticament un cop al dia mitjançant una tasca cron programada.
 
-### Pas 5 — Crea un producte de domini
+### Pas 5 — Crea un producte de domini {#step-5--create-a-domain-product}
 
 L'assistent crea un producte de domini predeterminat genèric amb un marge del 10%. Pots editar aquest producte immediatament o ometre-ho i crear productes manualment a **Ultimate Multisite › Productes**.
 
@@ -75,7 +75,7 @@ Consulta [Productes de domini i preus](./domain-products) per veure la guia comp
 
 ---
 
-## Reconfiguració d'un proveïdor
+## Reconfiguració d'un proveïdor {#reconfiguring-a-provider}
 
 Ves a **Network Admin › Ultimate Multisite › Configuració › Domain Seller** (o fes clic a **Configuració** a la llista de plugins).
 
@@ -88,17 +88,17 @@ La pàgina de configuració conté:
 - **Gestiona els productes de domini** — enllaç ràpid a la llista de productes
 - **Configura proveïdors** — obre l'assistent d'integració per afegir o reconfigurar proveïdors
 
-### Afegir un segon proveïdor
+### Afegir un segon proveïdor {#adding-a-second-provider}
 
 Fes clic a **Configura proveïdors** i executa l'assistent de nou per al nou registrador. Pots tenir diversos proveïdors configurats simultàniament. Assigna cada producte de domini a un proveïdor específic, o deixa'l al predeterminat.
 
-### Sincronització manual de TLDs
+### Sincronització manual de TLDs {#syncing-tlds-manually}
 
 A la pàgina de configuració, fes clic a **Sincronitza TLDs** al costat de qualsevol proveïdor configurat per obtenir els preus més recents. Això és útil després que un proveïdor actualitzi els preus majoristes o afegeixi nous TLDs.
 
 ---
 
-## Registres
+## Registres {#logs}
 
 Cada proveïdor escriu al seu propi canal de registre. Els registres es poden veure a **Network Admin › Ultimate Multisite › Registres**:
 
@@ -118,7 +118,7 @@ Cada proveïdor escriu al seu propi canal de registre. Els registres es poden ve
 
 ---
 
-## Notes sobre les capacitats dels proveïdors
+## Notes sobre les capacitats dels proveïdors {#provider-capability-notes}
 
 No totes les APIs de registradors exposen les mateixes operacions. L'addon mostra les operacions no compatibles amb errors clars orientats als administradors en lloc de fallar silenciosament.
 

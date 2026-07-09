@@ -3,17 +3,17 @@ title: Conas Mapáil Fearainn a Chumrú
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Conas Mapáil Fearainn a Chumrú (v2)
+# Conas Mapáil Fearainn a Chumrú (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do leagan 2.x de Ultimate Multisite.**_
 
 Ceann de na gnéithe is cumhachtaí de líonra préimhe ná an cumas deis a thabhairt dár gcliaint fearann barrleibhéil a cheangal lena suíomhanna. Tar éis an tsaoil, cé acu a bhfuil cuma níos gairmiúla air: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) nó [_**joesbikeshop.com**_](http://joesbikeshop.com)? Sin é an fáth a dtugann Ultimate Multisite an ghné sin ionsuite, gan gá le plugins tríú páirtí a úsáid.
 
-## Cad is mapáil fearainn ann?
+## Cad is mapáil fearainn ann? {#whats-domain-mapping}
 
 Mar a thugann an t-ainm le fios, is éard atá i mapáil fearainn ná an cumas a chuireann Ultimate Multisite ar fáil iarratas ar fhearann saincheaptha a ghlacadh agus an t-iarratas sin a mhapáil chuig an suíomh comhfhreagrach sa líonra a bhfuil an fearann áirithe sin ceangailte leis.
 
-### Conas mapáil fearainn a shocrú ar do Líonra Ultimate Multisite
+### Conas mapáil fearainn a shocrú ar do Líonra Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Éilíonn mapáil fearainn roinnt socraithe ar do thaobhsa chun oibriú. Ar ámharaí an tsaoil, uathoibríonn Ultimate Multisite an obair chrua duit ionas gur féidir leat na riachtanais a chomhlíonadh go héasca.
 
@@ -45,7 +45,7 @@ Ach sula dtosaíonn tú ag mapáil an fhearainn shaincheaptha chuig ceann de na 
 
 ###
 
-### A chinntiú go bhfuil socruithe DNS an fhearainn cumraithe i gceart
+### A chinntiú go bhfuil socruithe DNS an fhearainn cumraithe i gceart {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Chun go n-oibreoidh mapáil, ní mór duit a chinntiú go bhfuil an fearann atá beartaithe agat a mhapáil ag díriú ar sheoladh IP do Líonra. Tabhair faoi deara go bhfuil seoladh IP an Líonra ag teastáil uait - seoladh IP an fhearainn ina bhfuil Ultimate Multisite suiteáilte - ní seoladh IP an fhearainn shaincheaptha is mian leat a mhapáil. Chun seoladh IP fearainn ar leith a chuardach, molaimid dul chuig [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), mar shampla.
 
@@ -55,7 +55,7 @@ Má bhíonn deacracht agat é seo a chur ag obair, **déan teagmháil le tacaío
 
 Má tá sé beartaithe agat ligean do do chliaint a bhfearainn féin a mhapáil, beidh orthu an obair ar an gcuid seo a dhéanamh iad féin. Treoraigh iad i dtreo chóras tacaíochta a gcláraitheora mura mbíonn siad in ann an A Record a chruthú.
 
-### Ainm fearainn shaincheaptha a mhapáil mar Super Admin
+### Ainm fearainn shaincheaptha a mhapáil mar Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Nuair atá tú logáilte isteach mar super admin ar do líonra, is féidir leat ainmneacha fearainn shaincheaptha a chur leis agus a bhainistiú go héasca trí dhul faoi **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Má chliceálann tú ar ainm an fhearainn, beidh tú in ann roinnt roghanna a fh
 
 **An bhfuil sé Slán?:** Cé go seiceálann Ultimate Multisite an bhfuil teastas SSL ag an bhfearann nó nach bhfuil sula gcumasaíonn sé é, is féidir leat a roghnú de láimh an fearann a luchtú le teastas SSL nó gan teastas SSL. Tabhair faoi deara mura bhfuil teastas SSL ag an suíomh gréasáin agus má dhéanann tú iarracht iallach a chur air luchtú le SSL, d’fhéadfadh sé earráidí a thabhairt duit.
 
-### Ainm fearainn saincheaptha a mhapáil mar úsáideoir Foshuímh
+### Ainm fearainn saincheaptha a mhapáil mar úsáideoir Foshuímh {#mapping-custom-domain-name-as-subsite-user}
 
 Is féidir le riarthóirí foshuímh ainmneacha fearainn saincheaptha a mhapáil óna Dashboard riaracháin foshuímh freisin.
 
@@ -121,7 +121,7 @@ Is féidir leis an úsáideoir ansin **An Chéad Chéim Eile** a chliceáil agus
 
 Má chliceálann tú **Cuir Fearann Leis**, cuirfear tús leis an bpróiseas chun faisnéis DNS an fhearainn shaincheaptha a fhíorú agus a fháil.
 
-### Maidir le Sioncronú Fearainn
+### Maidir le Sioncronú Fearainn {#about-domain-syncing}
 
 Is próiseas é Sioncronú Fearainn ina gcuireann Ultimate Multisite an t-ainm fearainn saincheaptha le do chuntas óstála mar fhearann breise **ionas go n-oibreoidh an mhapáil fearainn**.
 

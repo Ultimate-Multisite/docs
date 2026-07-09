@@ -3,17 +3,17 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 afegeix un carregador (loader) d'extensió sunrise per als add-ons i les integracions MU-plugin personalitzades que necessiten executar-se durant el *bootstrapping* de WordPress sunrise sense modificar el fitxer `wp-content/sunrise.php` generat.
 
-## Quan utilitzar-lo
+## Quan utilitzar-lo {#when-to-use-it}
 
 Utilitza una extensió sunrise quan la teva integració ha de funcionar abans que es carreguin els plugins regulars, com ara el *routing* de domini personalitzat, el tractament de sol·licitades específiques de l'host, o ajustaments precoces del *network bootstrap*.
 
 Per a les integracions normals, prefereix els plugins regulars de WordPress, els MU-plugins i els *hooks* documentats d'Ultimate Multisite. El codi sunrise s'executa molt aviat i ha de ser petit, defensiu i sense dependències.
 
-## Convenció de nom de fitxer
+## Convenció de nom de fitxer {#file-naming-convention}
 
 Crea un fitxer PHP anomenat `sunrise.php` en un directori d'add-on que comenci per `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Els fitxers que coincideixen es carreguen en ordre alfabètic segons la ruta de l'add-on.
 
-## On col·locar el fitxer
+## On col·locar el fitxer {#where-to-place-the-file}
 
 Col·loca el fitxer a la carpeta principal de l'add-on que té el comportament sunrise:
 
@@ -45,7 +45,7 @@ L'escaneig es resol relativament a `WP_CONTENT_DIR`, no al valor actual de `WP_P
 
 No edites directament el fitxer `wp-content/sunrise.php` generat. El carregador permet que el codi personalitzat extengui el comportament sunrise sense crear una derivació (forking) del fitxer core sunrise que Ultimate Multisite instal·la i actualitza.
 
-## Hooks i filtres disponibles
+## Hooks i filtres disponibles {#hooks-and-filters-available}
 
 Els fitxers sunrise d'add-on s'executen després que la assignació de domini d'Ultimate Multisite ha carregat i abans que WordPress emeti `ms_loaded`. En aquest punt, un fitxer sunrise pot:
 
@@ -58,7 +58,7 @@ Ultimate Multisite emet `wu_sunrise_loaded` després que el seu carregador sunri
 
 Només crida funcions que ja estan carregades durant la fase sunrise. Evita el treball pesadament dependent de la base de dades, el renderitzat de *templates*, les sol·licitades HTTP i el codi que pressuposa que ha acabat el carregament normal de plugins.
 
-## Exemple mínim
+## Exemple mínim {#minimal-example}
 
 ```php
 <?php

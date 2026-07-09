@@ -3,7 +3,7 @@ title: GitHub Снипетои
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Како да користите филтри (snippets) на Ultimate Multisite во нашиот GitHub репозиториум
+# Како да користите филтри (snippets) на Ultimate Multisite во нашиот GitHub репозиториум {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Во GitHub репозиториумот има готови код филтри (code snippets) што често се бараат од корисниците на Ultimate Multisite кои сакаат да додадат мали функционалности, како на пример да вметнат скрипт за Google Analytics на страници за регистрација или да го скријат мета боксот од административната табла.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins).
 
-# Како да додадете филтри (snippet) во функцијата `functions.php` на вашата тема.
+# Како да додадете филтри (snippet) во функцијата `functions.php` на вашата тема. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Влезте во административната табла на вашата WordPress Network и отидете на Themes > Theme Editor (Вие можете да го видите сликата подолу).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Слика не е достапна: WordPress Theme Editor покажува уредување на `functions.php` -->
 
-# Како да создадете Must-Use Plugins (mu-plugins)
+# Како да создадете Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress има функција која ви овозможува да вчите кастом функционалност наречена "Must-Use Plugins", или кратко "mu-plugins".
 

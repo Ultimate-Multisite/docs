@@ -3,9 +3,9 @@ title: Rondedzero yeShanduko dzeManetiweki Akawanda
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Chinyorwa cheShanduko cheMulti-Network
+# Chinyorwa cheShanduko cheMulti-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Chitsva: Muoni wepreview yema template enetiweki — bhurawuza uye ona preview yema template enetiweki nepaneli mhenyu usati watenga.
 * Chitsva: Sarudzi yema template enetiweki pakubhadhara — vatengi vanogona kusarudza template yenetiweki panguva yekuyerera kwekunyoresa nekubhadhara.
 * Chitsva: Cross-network magic link SSO — vatengi vanogona kupinda mumasub-networks zviri nyore vachishandisa kusimbisa kuzivikanwa kwe magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Kugadzirisa: Dzivirira kiyi ye `network_id` isina kutsanangurwa muscope yemubvunzo wesaiti.
 * Kugadzirisa: Kuongorora mvumo yenetiweki kusati kwachinjwa context kunodzivirira zvikanganiso zveproperty yetafura ye `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Kugadzirisa: Kugadzira netiweki Itsva.
 * Kugadzirisa: Kuratidza maMenu.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Yakagadziridzwa kuPlugin Update Checker v5
 * Yakawedzerwa maheader echizvino-zvino eWordPress chokuwedzera
 * Yakavandudzwa kuenderana neshanduro dzazvino dzeWordPress
 
-### 1.0.2
+### 1.0.2 {#102}
 * Kugadziriswa kwezvikanganiso nekuvandudzwa kwekushanda
 * Kuwedzerwa kwekuparadzaniswa kwenetiweki
 
-### 1.0.0
+### 1.0.0 {#100}
 * Kuburitswa kwekutanga
 * Kushanda kwepakati kwe multinetwork
 * Kubatanidzwa neMultisite Ultimate

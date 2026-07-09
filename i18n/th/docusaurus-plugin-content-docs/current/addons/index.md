@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons ช่วยเพิ่มฟีเจอร์และการเชื่อมต่อต่างๆ ให้กับ Ultimate Multisite ส่วนใหญ่ของ Addons เหล่านี้เป็นแบบเสียเงิน และสามารถซื้อได้จาก [ultimatemultisite.com](https://ultimatemultisite.com)
 
-## Installation
+## Installation {#installation}
 
 คุณสามารถติดตั้ง Addons ได้ 2 วิธี:
 
 1. **ผ่านหน้า Addon** — ไปที่หน้าจัดการ Addon ของเว็บไซต์คุณในส่วน Admin ของ WordPress
 2. **ดาวน์โหลดด้วยตนเอง** — ดาวน์โหลดจาก [บัญชีของคุณ](https://ultimatemultisite.com/my-account/downloads/) แล้วอัปโหลดผ่าน Plugins > Add New
 
-## Available Addons
+## Available Addons {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

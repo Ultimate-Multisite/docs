@@ -3,11 +3,11 @@ title: Systeem-e-mails beheren
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Systeem-e-mails beheren
+# Systeem-e-mails beheren {#managing-system-emails}
 
 Ultimate Multisite stuurt verschillende systeem-e-mails voor gebeurtenissen zoals aanmeldbevestigingen, betalingsbewijzen en wijzigingen in lidmaatschappen. Je kunt deze e-mailtemplates aanpassen aan je merk.
 
-## Systeem-e-mails bekijken
+## Systeem-e-mails bekijken {#viewing-system-emails}
 
 Ga naar **Ultimate Multisite → Settings** en klik op het tabblad **Emails** om e-mailgerelateerde instellingen te bekijken.
 
@@ -21,7 +21,7 @@ Je kunt ook afzonderlijke e-mailtemplates bewerken met de systeem-e-maileditor:
 
 ![Systeem-e-maileditor](/img/admin/system-email-editor.png)
 
-## Nieuwe e-mailtemplates importeren
+## Nieuwe e-mailtemplates importeren {#importing-new-email-templates}
 
 Nieuwe versies en add-ons van Ultimate Multisite kunnen nieuwe e-mailtemplates registreren. Om conflicten te voorkomen, worden nieuwe templates niet automatisch toegevoegd — je moet ze handmatig importeren.
 
@@ -32,7 +32,7 @@ Om nieuwe e-mailtemplates te importeren:
 3. Schakel de optie **Import Emails** in om beschikbare templates te zien
 4. Selecteer de templates die je wilt importeren en bevestig
 
-## E-mailtemplates resetten
+## E-mailtemplates resetten {#resetting-email-templates}
 
 Als je een e-mailtemplate hebt aangepast en wilt terugzetten naar de standaardinhoud, heb je twee opties:
 

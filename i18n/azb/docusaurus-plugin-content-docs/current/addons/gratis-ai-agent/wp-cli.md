@@ -3,11 +3,11 @@ title: WP-CLI Reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Referansı
+# WP-CLI Referansı {#wp-cli-reference}
 
 Gratis AI Agent, ajanı test etmek, yetenekleri yönetmek ve komut satırından ajanın durumunu sorgulamak için `wp gratis-ai-agent` komut ailesini kullanır. Tüm komutlar WP-CLI 2.0 veya daha yüksek sürüm gerektirir.
 
-## Kurulum
+## Kurulum {#installation}
 
 Eklenti aktif olduğunda WP-CLI komutları otomatik olarak kaydedilir. Kontrol etmek için şunu kullanın:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Ajan Yetenekleri (Agent Capabilities) test paketini çalıştırır. Bu paket, ajanın tüm yeteneklerini zorlayan karmaşık, çok adımlı komutlardan oluşur. Bu komutu, model performansını değerlendirmek, farklı yapay zeka sağlayıcılarını karşılaştırmak veya üretime geçirmeden önce yetenek paketlerini doğrulamak için kullanın.
 
-### Özet
+### Özet {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Seçenekler
+### Seçenekler {#options}
 
 | Seçenek | Açıklama |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Çıktı formatı: `table` (varsayılan), `json`, `csv`. |
 | `--save` | Test sonuçlarını geçmiş karşılaştırma için veritabanına kaydeder. |
 
-### Örnekler
+### Örnekler {#examples}
 
 Mevcut sağlayıcı ve model ile tüm test paketini çalıştırın:
 
@@ -57,7 +57,7 @@ Belirli bir modelde çalıştırın ve sonuçları kaydedin:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Çıktı
+### Çıktı {#output}
 
 Test, aşağıdaki sütunlara sahip, her soru için bir satır çıktısı verir:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Koyu tema ön ayarı uygula           100    apply_them
 ...
 ```
 
-### Test Soruları
+### Test Soruları {#benchmark-questions}
 
 Varsayılan paket şunları içerir:
 
@@ -95,11 +95,11 @@ Ek sorular, `gratis_ai_agent_benchmark_questions` filtresi üzerinden kaydedileb
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Kurulu yetenekleri ve yetenek paketlerini yönetir.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Tüm kayıtlı yetenekleri, kaynaklarını (çekirdek veya paket) ve mevcut durumlarını listeler.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Kayıtlı bir yetenek paketini indirir ve etkinleştirir.
 
@@ -151,7 +151,7 @@ Başarılı: gratis-ai-agent-woocommerce kuruldu. 3 yetenek eklendi: create_prod
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Belirli bir yeteneği, paketi kaldırmadan devre dışı bırakır. Bu, ajanın belirli bir sitedeki kapsamını kısıtlamak için kullanışlıdır.
 
@@ -168,7 +168,7 @@ Başarılı: 'delete_post_type' yeteneği devre dışı bırakıldı.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Daha önce devre dışı bırakılmış bir yeteneği yeniden etkinleştirir.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Mevcut ajan yapılandırmasını ve bağlantı durumunu gösterir.
 
@@ -200,7 +200,7 @@ Seçenekler Kara Listesi: 18 giriş
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Hata ayıklama günlüğünden son ajan etkinliklerini gösterir.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Ajan durumunu sıfırlar: enjekte edilen CSS'yi temizler, ajan tarafından kaydedilen CPT'leri ve taksonomileri kaldırır, global stilleri sıfırlar ve ajanın seçenekler önbelleğini boşaltır. Eklentiyi veya ayarlarını kaldırmaz.
 
@@ -241,7 +241,7 @@ Başarılı: Ajan durumu sıfırlandı. Temizlenenler: 2 post tipi, 1 taksonomi,
 
 ---
 
-## Çıkış Kodları
+## Çıkış Kodları {#exit-codes}
 
 Tüm komutlar başarılı olduğunda `0` ile çıkar. Sıfır olmayan çıkış kodları:
 

@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Inyongera za Ultimate Multisite
+# Inyongera za Ultimate Multisite {#ultimate-multisite-addons}
 
 Inyongera zongerera Ultimate Multisite imikorere n'ubwuzuzanye. Inyongera nyinshi zirishyurwa kandi zishobora kugurwa kuri [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Kwinjiza
+## Kwinjiza {#installation}
 
 Inyongera zishobora kwinjizwa mu buryo bubiri:
 
 1. **Binyuze ku rupapuro rw'inyongera** -- Jya ku rupapuro rwo gucunga inyongera z'urubuga rwawe muri admin ya WordPress
 2. **Gukuramo intoki** -- Kuramo muri [Account yawe](https://ultimatemultisite.com/my-account/downloads/) maze ushyireho unyuze muri Plugins > Add New
 
-## Inyongera ziboneka
+## Inyongera ziboneka {#available-addons}
 
 | Inyongera | Ibisobanuro |
 |-------|-------------|

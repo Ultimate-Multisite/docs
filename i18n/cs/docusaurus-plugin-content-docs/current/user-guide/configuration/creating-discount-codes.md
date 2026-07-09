@@ -3,13 +3,13 @@ title: Vytváření slevových kódů
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Vytváření slevových kódů (v2)
+# Vytváření slevových kódů (v2) {#creating-discount-codes-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
 S Ultimate Multisite můžete vytvářet slevové kódy, abyste svým klientům poskytli slevy na jejich předplatná. A jejich vytvoření je snadné!
 
-## Vytváření a úprava slevových kódů
+## Vytváření a úprava slevových kódů {#creating-and-editing-discount-codes}
 
 Chcete-li vytvořit nebo upravit slevový kód, přejděte na **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kupon je nyní ve vašem seznamu a odtud můžete kliknout na **upravit nebo sma
 
 ###
 
-### Použití parametrů URL:
+### Použití parametrů URL: {#using-url-parameters}
 
 Pokud chcete přizpůsobit své cenové tabulky nebo vytvořit pěknou stránku s kuponovým kódem pro svůj web a chcete slevový kód automaticky použít ve formuláři checkout, můžete to udělat pomocí parametrů URL.
 

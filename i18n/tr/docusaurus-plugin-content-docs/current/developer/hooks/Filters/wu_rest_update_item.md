@@ -4,11 +4,11 @@ title: Filtre - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filtre: wu_rest_update_item
+# Filtre: wu_rest_update_item {#filter-wurestupdateitem}
 
 İsteğin devam edip edemeyeceğini filtreler.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 46a659e3004edbe285434103f81bd733
 | $rest_base | `array` | Varlık slug'ı. |
 | $this | `\Base_Manager` | Nesne örneği. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) dosyasının 414. satırında tanımlanmıştır.

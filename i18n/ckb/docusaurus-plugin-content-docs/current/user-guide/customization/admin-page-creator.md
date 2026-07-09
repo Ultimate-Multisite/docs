@@ -3,7 +3,7 @@ title: سەرچاوەر بۆ دروستکردنی پەیجی ئیدارە
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# دروستکردنی پەیج ئیدارە (Admin Page Creator)
+# دروستکردنی پەیج ئیدارە (Admin Page Creator) {#admin-page-creator}
 
 ئەم تایبەتمەندییە لەلایەن ئەپڵۆگینەکەوەی **Admin Page Creator** پێشکەش دەکرێت.
 

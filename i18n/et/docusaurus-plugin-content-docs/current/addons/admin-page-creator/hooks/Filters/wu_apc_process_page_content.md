@@ -4,11 +4,11 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Võimaldab arendajatel lõplikku sisu muuta
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Võimaldab arendajatel lõplikku sisu muuta
 | $to_replace | `array` | Massiiv, mis sisaldab kohatäiteid. |
 | $placeholder_count | `int` | Leitud kohatäidete arv. |
 
-### Alates
+### Alates {#since}
 
 - 1.4.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) real 46
 
 
-## Tagastab
+## Tagastab {#returns}
 Sisu pärast muutmist.

@@ -3,7 +3,7 @@ title: Գրանցել API ծայրակետը
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API endpoint
+# The Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 Այս տուտիում դուք կսովորեք, թե ինչպես օգտագործել Ultimate Multisite /register API ծայրակետը՝ ձեր ցանցի նոր հաճախորդի համար ամբողջ ներառման գործընթացը ստեղծելու համար և դա անել Zapier-ով։
 
@@ -29,11 +29,11 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 Այժմ եկեք ուսումնասիրենք ծայրակետը և այնուհետև Zapier-ում ստեղծենք գրանցման գործողություն (registration action)։
 
-## Endpoint body parameters
+## Endpoint body parameters {#endpoint-body-parameters}
 
 Եկեք տեսանելի դարձնենք մինիմալ տեղեկատվության ամփոփումը, որը պետք է ուղարկենք ծայրակետին։ Այս հոդվածի վերջում կտեսնեք ամբողջական կանչը (call-ը)։
 
-### Customer
+### Customer {#customer}
 
 Սա տեղեկատվությունն է, որը անհրաժեշտ է User-ը և Ultimate Multisite-ի Հաճախորդին ստեղծելու գործընթացի համար.
 
@@ -43,25 +43,25 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Մասնակցություն (Membership)**
+### **Մասնակցություն (Membership)** {#membership}
 
 Այս օբյեկտում մեզ միայն Մասնակցության կարգավիճակն է անհրաժեշտ։
 
 "membership" { "status" : "string", // մեկը «pending», «active», «trialing», «expired», «on-hold», «canceled» է },
 
-### **Ապրանքներ (Products)**
+### **Ապրանքներ (Products)** {#products}
 
 Ապրանքներին տրվում է զանգված՝ ձեր ցանցի մեկ կամ մի քանի արտադրանքի ID-ներով։ զգուշացեք, որ այս endpoint-ը արտադրանք չի ստեղծում։ Ավելի լավ հասկանալու համար ստեղծման endpoint-ի մասին ստուգեք Ultimate Multisite-ի համապատասխան փաստաթղթերը։
 
 **"products" : [1,2],**
 
-### **Վճարում (Payment)**
+### **Վճարում (Payment)** {#payment}
 
 Ինչպես Մասնակցության դեպքում, մեզ միայն կարգավիճակն է անհրաժեշտ։
 
 **"payment" { "status" : "string", // մեկը «pending», «completed», «refunded», «partially-refunded», «partially-paid», «failed», «canceled» է },**
 
-### **Կայք (Site)**
+### **Կայք (Site)** {#site}
 
 Եվ որպեսզի ավարտենք, մեզ անհրաժեշտ է կայքի URL-ը և վերնագիրը՝ երկուսն էլ Site օբյեկտի ներսում։
 
@@ -69,13 +69,13 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 `register` endpoint-ի արդյունքը կլինի զանգված՝ նոր ստեղծված մասնակցության տեղեկություններով։
 
-## Գործողություն ստեղծել Zapier-ում (Creating an action in Zapier)
+## Գործողություն ստեղծել Zapier-ում (Creating an action in Zapier) {#creating-an-action-in-zapier}
 
 Այս նոր և ավելի ամուր հաշվի ստեղծման endpoint-ի ներդրման հետ դուք կստանաք Zapier-ում նոր գործողություն։
 
 Ինչո՞ւ ճանաչում եք, թե ինչպես օգտագործել և հավատալ այն ամենին, ինչ առաջարկում է Zapier-ի նոր տարբերակը։ Ավելի ուսումնասիրեք այստեղ։ (link?)
 
-### Գործողություն ստեղծել
+### Գործողություն ստեղծել {#creating-an-action}
 
 Google Forms-ի հետ Zapier-ը կապելու համար՝ գրանցման ինտերֆեյսի օգտագործումը ավելի լավ պատկերացնելու համար, ստեղծենք Google Forms-ի հետ ինտեգրացիա։ Ամեն անգամ, երբ այս ձևանման բազան լրացվում է և տվյալները պահվում են ձևանման պատասխանների թերթում, Ultimate Multisite ցանցում կստեղծվի նոր անդամակցություն։
 
@@ -105,7 +105,7 @@ Google Forms-ում ստեղծեք մի ձևանման բազա՝ մինիմալ
 
 Թեսեք ձեր նոր Zap-ը և այն պետք է հաջողությամբ ավարտվի։ Եթե որևէ սխալ առաջանայում է, ստուգեք բոլոր դաշտերը և համոզվեք, որ դրանք ուղարկվում են ճիշտ։ Քանի որ շատ տեղեկություն կա, որոշ բան կարող է անտեսվել։
 
-### Ամբողջ endpoint-ի պարամետրերը
+### Ամբողջ endpoint-ի պարամետրերը {#complete-endpoint-parameters}
 
 Ահա ամբողջ կանչը և դաշտերի բոլոր հնարավորությունները, որոնք կարող են ուղարկվել։
 

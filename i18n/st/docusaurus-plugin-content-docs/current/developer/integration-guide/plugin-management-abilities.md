@@ -3,11 +3,11 @@ title: Bokhoni ba Tsamaiso ea Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Bokgoni ba Taolo ya Dikatoloso
+# Bokgoni ba Taolo ya Dikatoloso {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 e tla le **bokgoni ba 7 ba taolo ya dikatoloso** boo mothusi wa AI a ka bo bitsang nakong ya puisano. Bokgoni bona bo fana ka taolo ya mananeo hodima dikatoloso tsa WordPress tse kentsweng ka [Sistimi ya Sehahi sa Dikatoloso le Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Kakaretso ya Bokgoni
+## Kakaretso ya Bokgoni {#abilities-overview}
 
 | Bokgoni | Slug | Tlhaloso |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 e tla le **bokgoni ba 7 ba taolo ya dikatoloso** boo moth
 | Kenya Katoloso | `install_plugin` | E romela katoloso e ka sandbox bukeng ya dikatoloso ya WordPress e phelang. |
 | Kenya Tshebetsong Katoloso | `activate_plugin` | E kenya tshebetsong katoloso e ka sandbox tikolohong ya wp-env sandbox. |
 
-## API ya Sehlomamisi sa Dikatoloso
+## API ya Sehlomamisi sa Dikatoloso {#plugin-installer-api}
 
 Sehlomamisi sa dikatoloso se sebetsana le ditshebetso tsa sistimi ya difaele ha ho romelwa kapa ho tloswa dikatoloso. Mekgwa ya bohlokwa:
 
@@ -28,7 +28,7 @@ Sehlomamisi sa dikatoloso se sebetsana le ditshebetso tsa sistimi ya difaele ha 
 - **Ntjhafatso**: E nkela difaele tse teng tsa katoloso sebaka. E tima katoloso pele e ngola ho qoba diphoso tsa boemo bo sa fellang.
 - **Hlakola ka slug**: E fumana buka ya katoloso ka slug, e tima katoloso dibakeng tsohle tsa marang-rang, ebe e tlosa buka.
 
-### Ho Ngodisa Setsamaisi sa ho Kenya se Ikgethileng
+### Ho Ngodisa Setsamaisi sa ho Kenya se Ikgethileng {#registering-a-custom-install-handler}
 
 O ka hokela potolohong ya bophelo ya ho kenya o sebedisa diketso tsa `gratis_ai_plugin_installer_before_install` le `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Rejistara ya Tikoloho ya Dikatoloso
+## Rejistara ya Tikoloho ya Dikatoloso {#ecosystem-registry}
 
 Bokgoni bo ngodiswa ka **rejistara ya tikoloho ya dikatoloso**. Rejistara e hokahanya di-slug tsa bokgoni le diklase tsa batsamaisi ba tsona mme e di pepesetsa moromelli wa disebediswa wa agent ya AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Kopanyo ya HookScanner
+## Kopanyo ya HookScanner {#hookscanner-integration}
 
 Bokgoni ba `create_plugin` le `update_plugin` bo tsamaisa **HookScanner** ka bo bona kgahlanong le khoutu e sa tswa hlahiswa. HookScanner e kgutlisa lenane la di-hook tsa ketso le sefene tsa WordPress tse ngodisitsweng ke katoloso.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner e tlola dibuka tsa `vendor/` le `node_modules/` ka bo yona.
 
-## Sebopeho sa Mesebetsi ya Async
+## Sebopeho sa Mesebetsi ya Async {#async-job-architecture}
 
 Ditshebetso tsa dikatoloso tse nkang nako e telele (hlahisa, kenya) di romelwa e le **mesebetsi ya async** e nang le ho sala morao tswelopele ka nako ya nnete. Sehokelo sa puisano sa AI se botsa kgafetsa bakeng sa tswelopele mme se phallela dintjhafatso tsa boemo ho mosebedisi:
 

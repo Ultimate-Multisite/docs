@@ -3,13 +3,13 @@ title: Enviar correos electrónicos y difusiones
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviar emails y Broadcasts (v2)
+# Enviar emails y Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
 Ultimate Multisite incluye una función que te permitirá comunicarte con tus clientes enviando un email a un usuario específico o a un grupo de usuarios, así como enviando avisos en su Dashboard de administración para difundir anuncios
 
-## Añade avisos de administración al Dashboard de tus clientes con Broadcasts
+## Añade avisos de administración al Dashboard de tus clientes con Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Usando la función de broadcast de Ultimate Multisite, puedes añadir **avisos de administración** al Dashboard de administración del subsitio de tu usuario.
 
@@ -51,7 +51,7 @@ Después de crear tu mensaje, puedes pulsar el botón **Send**.
 
 Y eso es todo. El aviso de administración debería mostrarse inmediatamente en el Dashboard de tu usuario.
 
-## Enviar emails a tus clientes
+## Enviar emails a tus clientes {#send-emails-to-your-customers}
 
 Usando la función de broadcast de Ultimate Multisite, puedes enviar un email a tus usuarios. Tienes la opción de enviar el email solo a usuarios específicos o dirigirte a un grupo de usuarios específico según el producto o plan al que estén suscritos.
 
@@ -81,11 +81,11 @@ Después de crear tu mensaje, puedes pulsar el botón **Send**.
 
 Y así de fácil es enviar un email a tus usuarios finales usando la función de broadcast.
 
-## Emails del sistema
+## Emails del sistema {#system-emails}
 
 Los emails del sistema en Ultimate Multisite son aquellas **notificaciones automáticas** enviadas por el sistema después de ciertas acciones, como registro, pago, asignación de dominio, etc. Estos emails se pueden editar o modificar desde la configuración de Ultimate Multisite. También incluye una función que te permitirá restablecer e importar configuraciones existentes desde otra instalación de Ultimate Multisite.
 
-### Restablecimiento e importación
+### Restablecimiento e importación {#resetting--importing}
 
 Las nuevas versiones de Ultimate Multisite, así como los add-ons, pueden registrar y registrarán nuevos emails de vez en cuando.
 
@@ -93,7 +93,7 @@ Para evitar conflictos y otros problemas, **no añadiremos automáticamente las 
 
 Sin embargo, los superadministradores y agentes pueden importar estos emails recién registrados mediante la herramienta de importación. Ese proceso creará un nuevo email del sistema con el contenido y la configuración de la nueva plantilla de email, permitiendo al superadministrador realizar cualquier modificación que desee o mantenerlos tal cual.
 
-#### Cómo importar emails del sistema
+#### Cómo importar emails del sistema {#how-to-import-system-emails}
 
 Ve a tu página de configuración de Ultimate Multisite y dirígete a la pestaña **Emails**.
 
@@ -111,7 +111,7 @@ Luego, puedes alternar las opciones de Import Emails para ver qué emails del si
 
 <!-- Captura de pantalla no disponible: modal Reset and Import con las opciones de Import Emails expandidas -->
 
-#### Restablecimiento de correos electrónicos del sistema
+#### Restablecimiento de correos electrónicos del sistema {#reseting-system-emails}
 
 En otras ocasiones, te darás cuenta de que los cambios que hiciste en una plantilla de correo electrónico determinada ya no te funcionan y querrás restablecerla a su **estado predeterminado**.
 

@@ -3,11 +3,11 @@ title: Kutsvaga Domain yeMusoro
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Kutsvaga Domain muHeader
+# Kutsvaga Domain muHeader {#header-domain-search}
 
 Shandisa setup iyi kana uchida fomu diki reheader rinotanga kutsvaga domain, wobva warega mutengi asarudze kubva kuma domain aripo mukubhadhara kweUltimate Multisite.
 
-## Zvinodiwa
+## Zvinodiwa {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Shandisa setup iyi kana uchida fomu diki reheader rinotanga kutsvaga domain, wob
   - TLDs dzinotsigirwa dzakagadziriswa, semuenzaniso `com`, `net`, uye `org`.
 - Fomu rekubhadhara rinoshanda rine field ye **Sarudzo yeDomain**.
 
-## Fomu rekubhadhara
+## Fomu rekubhadhara {#checkout-form}
 
 1. Gadzira kana gadzirisa fomu rekubhadhara rinoshandiswa nepeji rekonyoresa.
 2. Wedzera mafield akajairika anodiwa ekubhadhara/account, kusanganisira **Zita remushandisi**. Fomu rekubhadhara rine field yedomain chete rinorambwa nekuongorora kweUltimate Multisite.
@@ -30,7 +30,7 @@ Peji rekonyoresa rinofanira kuratidza fomu rekubhadhara, semuenzaniso:
 [wu_checkout slug="domain-form"]
 ```
 
-## Fomu reheader
+## Fomu reheader {#header-form}
 
 Wedzera fomu diki re `GET` muheader yesaiti rinotumira izwi rekutsvaga rakaiswa kupeji rekubhadhara se `domain_name`:
 
@@ -44,7 +44,7 @@ Wedzera fomu diki re `GET` muheader yesaiti rinotumira izwi rekutsvaga rakaiswa 
 
 Usafano sarudza domain muJavaScript yeheader yakagadzirwa. Header inofanira kungopfuudza izwi rekutsvaga. Script yekubhadhara yeDomain Seller inoverenga `?domain_name=example`, yozadza bhokisi rekutsvaga rekubhadhara, uye yomanyisa kutsvaga kuwanikwa kuitira kuti mutengi asarudze kubva kuma domain adzoserwa.
 
-## Maitiro anotarisirwa
+## Maitiro anotarisirwa {#expected-behaviour}
 
 Kutsvaga `example` muheader kunofanira kuvhura:
 
@@ -61,7 +61,7 @@ Kubhadhara kunofanira kubva kwaratidza mhedzisiro inosarudzika yakaita se:
 
 Mushure mekusarudza mhedzisiro iripo, pfupiso yeodha inofanira kusanganisira chigadzirwa chekonyoresa domain uye zita redomain rakasarudzwa.
 
-## Kuongorora
+## Kuongorora {#verification}
 
 1. Vhura peji rekumba.
 2. Tsvaga zita risina zvimwe, semuenzaniso `example`.
@@ -71,7 +71,7 @@ Mushure mekusarudza mhedzisiro iripo, pfupiso yeodha inofanira kusanganisira chi
 6. Dzvanya **Sarudza** kudomain iripo.
 7. Simbisa kuti pfupiso yeodha ine `Domain Registration - example.com` kana domain yakasarudzwa.
 
-## Kugadzirisa matambudziko
+## Kugadzirisa matambudziko {#troubleshooting}
 
 - Kana pasina rondedzero yaoneka, tarisa browser network tab ye `admin-ajax.php?action=wu_domain_search` uye simbisa kuti inodzorera `domains` kana `results` dzisina chinhu.
 - Kana fomu rekubhadhara rikatadza validation parinenge richichengetwa, wedzera mafield eaccount anodiwa akadai se **Zita remushandisi**.

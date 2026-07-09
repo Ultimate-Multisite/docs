@@ -3,11 +3,11 @@ title: 提供商感知提示缓存
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# 提供商感知提示词缓存
+# 提供商感知提示词缓存 {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 引入了**提供商感知提示词缓存**（provider-aware prompt caching）功能。该功能通过跨不同 LLM 提供商缓存提示词，从而优化 API 成本和延迟。每个提供商都有不同的缓存机制和配置。
 
-## 概述
+## 概述 {#overview}
 
 提示词缓存允许您：
 
@@ -23,11 +23,11 @@ Superdav AI Agent v1.12.0 引入了**提供商感知提示词缓存**（provider
 - **OpenRouter**: 提供商特定的缓存
 - **Vertex Anthropic**: 带缓存控制的提示词缓存
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini 通过 `cachedContents` API 提供显式的缓存管理。
 
-### 配置
+### 配置 {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### 创建缓存提示词
+### 创建缓存提示词 {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### 使用缓存提示词
+### 使用缓存提示词 {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### 缓存生命周期
+### 缓存生命周期 {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini 的最佳实践
+### Gemini 的最佳实践 {#best-practices-for-gemini}
 
 - **设置合适的 TTL**: 平衡成本节约与缓存过时程度
 - **缓存系统提示词**: 在多个请求中重复使用相同的系统提示词
 - **监控缓存使用情况**: 跟踪哪些缓存使用频率最高
 - **清理过期的缓存**: 定期删除未使用的缓存
 
-## Azure OpenAI: 提示词缓存
+## Azure OpenAI: 提示词缓存 {#azure-openai-prompt-caching}
 
 Azure OpenAI 支持带自动 TTL 管理的提示词缓存。
 
-### 配置
+### 配置 {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### 启用缓存
+### 启用缓存 {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### 缓存头
+### 缓存头 {#cache-headers}
 
 Azure OpenAI 使用 HTTP 头进行缓存控制：
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: 不缓存此请求
 - `no_store`: 不缓存且不重用
 
-### 监控缓存使用情况
+### 监控缓存使用情况 {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Azure OpenAI 的最佳实践
+### Azure OpenAI 的最佳实践 {#best-practices-for-azure-openai}
 
 - **使用一致的提示词**: 相同的提示词能从缓存中受益
 - **设置合理的 TTL**: 平衡成本与新鲜度
 - **监控缓存指标**: 跟踪缓存创建量与命中量
 - **批量处理相似请求**: 将请求分组以最大化缓存命中率
 
-## OpenRouter: 提供商特定缓存
+## OpenRouter: 提供商特定缓存 {#openrouter-provider-specific-caching}
 
 OpenRouter 通过底层提供商（OpenAI、Anthropic 等）支持缓存。
 
-### 配置
+### 配置 {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### 使用 OpenRouter 缓存
+### 使用 OpenRouter 缓存 {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### 提供商特定选项
+### 提供商特定选项 {#provider-specific-options}
 
 不同的提供商有不同的缓存机制：
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter 的最佳实践
+### OpenRouter 的最佳实践 {#best-practices-for-openrouter}
 
 - **了解提供商的缓存机制**: 每个提供商的机制都不同
 - **测试缓存行为**: 验证缓存是否能与您选择的提供商一起工作
 - **监控成本**: 跟踪缓存带来的节省
 - **使用一致的模型**: 切换模型会中断缓存命中
 
-## Vertex Anthropic: 带缓存控制的提示词缓存
+## Vertex Anthropic: 带缓存控制的提示词缓存 {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) 支持带显式缓存控制的提示词缓存。
 
-### 配置
+### 配置 {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### 使用 Vertex Anthropic 缓存
+### 使用 Vertex Anthropic 缓存 {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### 缓存控制类型
+### 缓存控制类型 {#cache-control-types}
 
 - **ephemeral**: 仅在请求期间缓存（默认）
 - **persistent**: 跨多个请求缓存（如果支持）
 
-### 监控缓存使用情况
+### 监控缓存使用情况 {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic 的最佳实践
+### Vertex Anthropic 的最佳实践 {#best-practices-for-vertex-anthropic}
 
 - **使用临时缓存 (ephemeral)**: 适用于单次会话缓存
 - **合理设置 max_tokens**: 平衡缓存大小与成本
 - **监控缓存指标**: 跟踪缓存的有效性
 - **使用您的工作负载进行测试**: 验证缓存是否能为您的用例带来益处
 
-## 跨提供商缓存策略
+## 跨提供商缓存策略 {#cross-provider-caching-strategy}
 
-### 统一配置
+### 统一配置 {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### 提供商检测
+### 提供商检测 {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### 故障转移策略
+### 故障转移策略 {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## 成本优化
+## 成本优化 {#cost-optimization}
 
-### 计算节省额
+### 计算节省额 {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### 优化技巧
+### 优化技巧 {#optimization-tips}
 
 - **缓存大型系统提示词**: 节省成本最大的部分
 - **重用上下文**: 缓存经常使用的上下文文档
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **监控缓存有效性**: 跟踪实际节省的成本
 - **调整 TTL**: 平衡成本与新鲜度
 
-## 故障排除
+## 故障排除 {#troubleshooting}
 
-### 缓存未生效
+### 缓存未生效 {#cache-not-being-used}
 
 - 确认配置中已启用缓存
 - 检查提示词是否完全一致（缓存要求完全匹配）
 - 验证缓存是否已过期
 - 检查提供商特定的缓存限制
 
-### 缓存创建失败
+### 缓存创建失败 {#cache-creation-failing}
 
 - 确认缓存大小是否在提供商限制内
 - 检查缓存控制语法是否正确
 - 确保提供商支持您的模型进行缓存
 - 查阅提供商文档了解限制
 
-### 意外成本
+### 意外成本 {#unexpected-costs}
 
 - 监控缓存创建量与缓存读取量
 - 验证缓存是否确实在使用
 - 检查由于提示词变化导致的缓存未命中
 - 考虑调整 TTL 或缓存策略
 
-## 提供商对比
+## 提供商对比 {#provider-comparison}
 
 | Feature | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Cost reduction | 90% | 90% | Provider-dependent | 90% |
 | Monitoring | Detailed | Via metrics | Provider-dependent | Via usage |
 
-## 下一步
+## 下一步 {#next-steps}
 
 1. **选择提供商**: 根据您的需求选择
 2. **配置缓存**: 设置提供商特定的缓存

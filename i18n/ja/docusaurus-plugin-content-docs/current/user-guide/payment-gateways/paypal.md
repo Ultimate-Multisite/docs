@@ -3,7 +3,7 @@ title: PayPal の設定
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal ゲートウェイの設定（v2）
+# PayPal ゲートウェイの設定（v2） {#setting-up-the-paypal-gateway-v2}
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
@@ -13,13 +13,13 @@ Stripe と同様に、PayPal はオンライン決済で広く使われており
 
 この連携に必要な API 認証情報を取得するには、**PayPal Business account** が必要です。
 
-## ネットワークで PayPal を有効化する
+## ネットワークで PayPal を有効化する {#enabling-paypal-on-your-network}
 
 ネットワークで利用可能な支払い方法として PayPal を有効化するには、**Ultimate Multisite > Settings > Payments** タブに移動し、PayPal の横にあるチェックボックスをオンにします。
 
 ![有効な支払いゲートウェイで PayPal を有効化](/img/config/settings-payment-gateways.png)
 
-## ガイド付きセットアップウィザードを使用する
+## ガイド付きセットアップウィザードを使用する {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 では、支払いゲートウェイ設定にガイド付き PayPal セットアップウィザードが追加されました。PayPal を有効化した後、**Ultimate Multisite > Settings > Payments** のウィザードを使用して、ゲートウェイの接続方法を選択し、保存前にまだ必要な認証情報を確認します。
 
@@ -30,7 +30,7 @@ Ultimate Multisite 2.10.0 では、支払いゲートウェイ設定にガイド
 
 ウィザードに OAuth オプションが表示されない場合は、以下の手動での認証情報入力フローを完了してください。ゲートウェイは、以前の Ultimate Multisite 2.x リリースと同じ PayPal Business API 認証情報で動作します。
 
-## PayPal API 認証情報を取得する
+## PayPal API 認証情報を取得する {#getting-the-paypal-api-credentials}
 
 PayPal を支払いゲートウェイとして有効化したら、PayPal API **Username**、PayPal API **Password**、PayPal API **Signature** の各フィールドに入力する必要があります。
 

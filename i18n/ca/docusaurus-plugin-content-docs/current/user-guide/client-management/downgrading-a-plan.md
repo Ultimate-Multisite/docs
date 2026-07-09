@@ -3,13 +3,13 @@ title: Desbaixar un pla
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Reduinar un pla (v2)
+# Reduinar un pla (v2) {#downgrading-a-plan-v2}
 
 _**NOTA IMPORTANT: Aquest article es refereix a la versió 2.x d'Ultimate Multisite.**_
 
 Reduinar un pla o subscripció és una acció comuna que els vostres clients poden realitzar si tenen un pressupost limitat o si han decidit que no necessitaran molts recursos per gestionar el seu subsite.
 
-## Com reduir un pla
+## Com reduir un pla {#how-to-downgrade-a-plan}
 
 Els vostres clients poden reduir el seu pla en qualsevol moment accedint al *dashboard* d'administració del seu subsite i fent clic a **Change** (Canviar) a la pàgina de la seva compte.
 
@@ -25,7 +25,7 @@ Per continuar, l'usuari només ha de fer clic al botó **Complete Checkout**. Ai
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Què passa quan un usuari redueix el seu pla
+### Què passa quan un usuari redueix el seu pla {#what-happens-when-a-user-downgrades-their-plan}
 
 És important notar que reduir el pla no altera la configuració existent del subsite de l'usuari.
 
@@ -37,7 +37,7 @@ Per a les publicacions que excedeixen el límit establert al pla, teniu 3 opcion
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Què passa amb el pagament
+### Què passa amb el pagament {#what-happens-to-the-payment}
 
 A la versió 2.0, ja no cal fer cap ajustament al pagament en termes de prorrateo.
 

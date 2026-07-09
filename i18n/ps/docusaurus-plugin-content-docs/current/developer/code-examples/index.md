@@ -3,11 +3,11 @@ title: پرمختللي کوډ بېلګې
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# پرمختللي Code بېلګې
+# پرمختللي Code بېلګې {#advanced-code-examples}
 
 دا بېلګې له Ultimate Multisite سره د پرمختللو ادغام بڼې ښيي.
 
-## خوځنده بیه‌ټاکنې انجن
+## خوځنده بیه‌ټاکنې انجن {#dynamic-pricing-engine}
 
 د قاعدو پر بنسټ د بیه‌ټاکنې انجن چې د حجم، وفادارۍ، او موسمي تخفیفونه پلي کوي:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## پرمختللی سایټ برابرول
+## پرمختللی سایټ برابرول {#advanced-site-provisioning}
 
 نوي سایټونه د پلان د ځانګړنو پر بنسټ له pluginونو، SSL، CDN، backups، او څارنې سره په اوتومات ډول تنظیم کړئ:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## د محدودیتونو دودیز سیستم
+## د محدودیتونو دودیز سیستم {#custom-limitations-system}
 
 د سرچینو محدودیتونه د کارونې له خبرداریو سره تعقیب او پلي کړئ:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## د BerlinDB اټومي شمېرونکی له `increment_item()` سره
+## د BerlinDB اټومي شمېرونکی له `increment_item()` سره {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 د BerlinDB `Query` کلاس ته د `increment_item()` مېتود ورزیات کړ. دا وکاروئ څو پر عددي ستنو خوندي، اټومي زیاتونې د read-modify-write له سیالیو پرته ترسره کړئ — د هغو شمېرونکو، د کارونې کوټو، او rate-limiting کتنو لپاره ګټور دی چې د هممهالو غوښتنو لاندې چلېږي.
 
-### د مېتود لاسلیک
+### د مېتود لاسلیک {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 د BerlinDB `Query` کلاس ته د `increment_item()
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### بنسټیزه کارونه
+### بنسټیزه کارونه {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### د هر غړیتوب لپاره د API کارونې څارنه
+### د هر غړیتوب لپاره د API کارونې څارنه {#tracking-api-usage-per-membership}
 
 د هر غړیتوب API rate limits پلي کولو لپاره یو عملي بڼه:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### ولې `increment_item()` د `update_item()` پر ځای
+### ولې `increment_item()` د `update_item()` پر ځای {#why-incrementitem-instead-of-updateitem}
 
 یو ساده read-modify-write چلند د هممهالو غوښتنو لاندې خوندي نه دی:
 

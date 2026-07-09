@@ -3,17 +3,17 @@ title: Otu esi ahazi Njikọ Ngalaba
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Otu esi ahazi Ijikọ Ngalaba (v2)
+# Otu esi ahazi Ijikọ Ngalaba (v2) {#how-to-configure-domain-mapping-v2}
 
 _**IHE NDỊ DỊ MKPA: Edemede a na-ezo aka na Ultimate Multisite ụdị 2.x.**_
 
 Otu n’ime njirimara kachasị ike nke netwọkụ premium bụ ikike inye ndị ahịa anyị ohere ijikọ ngalaba dị n’ọkwa elu na saịtị ha. N’ikpeazụ, nke na-adị ka nke ọkachamara karịa: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ma ọ bụ [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ọ bụ ya mere Ultimate Multisite ji enye njirimara ahụ n’ime ya, na-enweghị mkpa iji ngwa mgbakwunye ndị ọzọ.
 
-## Gịnị bụ ijikọ ngalaba?
+## Gịnị bụ ijikọ ngalaba? {#whats-domain-mapping}
 
 Dị ka aha ahụ na-egosi, ijikọ ngalaba bụ ikike Ultimate Multisite na-enye iji nata arịrịọ maka ngalaba omenala ma jikọọ arịrịọ ahụ na saịtị kwekọrọ na netwọkụ ahụ nke ejikọtara ngalaba ahụ pụrụ iche na ya.
 
-### Otu esi ahazi ijikọ ngalaba na Ultimate Multisite Network gị
+### Otu esi ahazi ijikọ ngalaba na Ultimate Multisite Network gị {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Ijikọ ngalaba chọrọ ụfọdụ nhazi n’aka gị ka ọ rụọ ọrụ. Ọ dabara nke ọma, Ultimate Multisite na-eme ka ọrụ siri ike bụrụ akpaaka maka gị ka ị nwee ike izute ihe achọrọ n’ụzọ dị mfe.
 
@@ -45,7 +45,7 @@ Mana tupu ịmalite ijikọ ngalaba omenala na otu n’ime subsites dị na netw
 
 ###
 
-### Ijide n’aka na ntọala DNS nke ngalaba ahazirila nke ọma
+### Ijide n’aka na ntọala DNS nke ngalaba ahazirila nke ọma {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Ka ijikọ rụọ ọrụ, ị ga-ejide n’aka na ngalaba ị na-eme atụmatụ ijikọ na-atụ aka na adreesị IP nke Network gị. Rịba ama na ịchọrọ adreesị IP nke Network - adreesị IP nke ngalaba ebe etinyere Ultimate Multisite - ọ bụghị adreesị IP nke ngalaba omenala ịchọrọ ijikọ. Iji chọọ adreesị IP nke ngalaba pụrụ iche, anyị na-atụ aro ịga na [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), dịka ọmụmaatụ.
 
@@ -55,7 +55,7 @@ Iji jikọọ ngalaba ahụ nke ọma, ị ga-agbakwunye **A RECORD** na nhazi *
 
 Ọ bụrụ na ị na-eme atụmatụ ikwe ka ndị ahịa gị jikọọ ngalaba nke ha, ha ga-eme ọrụ dị n’akụkụ a n’onwe ha. Duga ha gaa na usoro nkwado nke onye na-edebanye ha ma ọ bụrụ na ha hụta na ha enweghị ike ịmepụta A Record.
 
-### Ijikọ aha ngalaba omenala dịka Super Admin
+### Ijikọ aha ngalaba omenala dịka Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Mgbe ị banyere dịka super admin na netwọkụ gị, ị nwere ike ịgbakwunye ma jikwaa aha ngalaba omenala n’ụzọ dị mfe site n’ịga n’okpuru **Ultimate Multisite > Ngalaba**.
 
@@ -93,7 +93,7 @@ Mgbe customer debanyere domain ọhụrụ site na Domain Seller v1.3.0 ma ọ b
 
 **Is Secure?:** Ọ bụ ezie na Ultimate Multisite na-elele ma domain ahụ nwere SSL certificate ma ọ bụ na ọ nweghị tupu o mee ka ọ rụọ ọrụ, ị nwere ike iji aka họrọ ka a load domain ahụ na SSL certificate ma ọ bụ na-enweghị ya. Rịba ama na ọ bụrụ na website ahụ enweghị SSL certificate ma ị nwaa ịmanye ya ka ọ load na SSL, ọ nwere ike inye gị errors.
 
-### Ime mapping aha custom domain dịka onye ọrụ Subsite
+### Ime mapping aha custom domain dịka onye ọrụ Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite administrators nwekwara ike ime mapping aha custom domain site na admin dashboard nke subsite ha.
 
@@ -121,7 +121,7 @@ Onye ọrụ ahụ nwere ike pịa **Next Step** wee gaa n’ihu tinye aha custo
 
 Ịpị **Add Domain** ga-amalite usoro nyocha na ịweta ozi DNS nke custom domain ahụ.
 
-### Banyere Domain Syncing
+### Banyere Domain Syncing {#about-domain-syncing}
 
 Domain Syncing bụ usoro ebe Ultimate Multisite na-agbakwunye aha custom domain na hosting account gị dịka add-on domain **ka domain mapping wee rụọ ọrụ**.
 

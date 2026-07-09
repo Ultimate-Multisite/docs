@@ -4,20 +4,20 @@ title: Filtrs - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filtrs: secure_auth_cookie
+# Filtrs: secure_auth_cookie {#filter-secureauthcookie}
 
 Filtrē, vai autentifikācijas sīkfailu drīkst sūtīt tikai caur HTTPS.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
 | $secure | `bool` | Vai sīkfailu drīkst sūtīt tikai caur HTTPS. |
 | $user_id | `int` | Lietotāja ID. |
 
-### Kopš
+### Kopš {#since}
 
 - 3.1.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) 80. rindā

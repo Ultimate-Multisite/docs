@@ -3,13 +3,13 @@ title: Keɓance Fom ɗin Rajistarka
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Keɓance fom ɗin Rajistarka
+# Keɓance fom ɗin Rajistarka {#customizing-your-registration-form}
 
 Don sa hanyar sadarwarka ta zama ta musamman daga duk sauran SaaS da aka gina a kan dandamalin WordPress, Ultimate Multisite yana ba ka damar keɓance shafukan rajista da shiga ta amfani da fasalinmu na **Checkout Forms**.
 
 Ko da yake hanya ce mai sauƙi da sassauƙa don gwada hanyoyi daban-daban yayin ƙoƙarin jawo sababbin abokan ciniki, galibi ana amfani da su ne don ƙirƙirar fom ɗin rajista na musamman. Wannan labarin yana nufin nuna maka yadda za ka iya yin hakan.
 
-## Shafukan shiga da rajista:
+## Shafukan shiga da rajista: {#login-and-registration-pages}
 
 Bayan shigar da Ultimate Multisite, yana ƙirƙirar shafukan shiga da rajista na musamman ta atomatik a babban shafinka. Za ka iya canza waɗannan tsoffin shafuka a kowane lokaci ta zuwa shafin **Ultimate Multisite > Settings > Login & Registration** naka.
 
@@ -45,7 +45,7 @@ Yanzu, bari mu ga wasu zaɓuɓɓuka da har yanzu suke da alaƙa da tsarin shiga 
 
 Kuma waɗannan su ne duk zaɓuɓɓukan da suka shafi shiga da rajista da za ka iya keɓancewa! Kada ka manta ka adana saitunanka bayan ka gama gyara su.
 
-## Amfani da fom ɗin rajista da yawa:
+## Amfani da fom ɗin rajista da yawa: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 yana ba da editan fom ɗin checkout wanda ke ba ka damar ƙirƙirar fom da yawa yadda kake so, da filaye daban-daban, samfuran da ake bayarwa, da sauransu.
 
@@ -69,7 +69,7 @@ A madadin haka, za ka iya gyara ko kwafi fom ɗin da kake da su ta danna zaɓuɓ
 
 Idan ka zaɓi mataki guda ko matakai da yawa, fom ɗin checkout zai riga ya kasance an cika shi da muhimman matakai domin ya yi aiki. Sannan, idan kana so, za ka iya ƙara masa ƙarin matakai.
 
-### Gyara Checkout Form:
+### Gyara Checkout Form: {#editing-a-checkout-form}
 
 Kamar yadda muka ambata a baya, za ka iya ƙirƙirar fom ɗin checkout don manufofi daban-daban. A wannan misali za mu yi aiki a kan fom ɗin rajista.
 
@@ -131,11 +131,11 @@ Don samun shortcode na fom ɗinka danna **Samar da Shortcode** kuma kwafi sakama
 
 _**Lura:** Za ka buƙaci ƙara wannan shortcode zuwa shafin rajistarka domin a ƙara wannan fom ɗin kammala saye a kansa._
 
-## Zaɓar kayayyaki da samfura tun da fari ta hanyar sigogin URL:
+## Zaɓar kayayyaki da samfura tun da fari ta hanyar sigogin URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Idan kana son ƙirƙirar teburin farashi na musamman don kayayyakinka kuma ka zaɓi a gaba a kan fom ɗin kammala saye kayan ko samfurin da kwastomanka ya zaɓa daga teburin farashinka ko shafin samfura, za ka iya amfani da sigogin URL don wannan.
 
-### **Don tsare-tsare:**
+### **Don tsare-tsare:** {#for-plans}
 
 Je zuwa **Ultimate Multisite > Kayayyaki > Zaɓi tsari**. Ya kamata ka ga maɓallin **Danna don kwafa Haɗin da Za a Iya Rabawa** a saman shafin. Wannan shi ne haɗin da za ka iya amfani da shi don zaɓar wannan takamaiman tsari a gaba a kan fom ɗin kammala sayenka.
 
@@ -143,7 +143,7 @@ Je zuwa **Ultimate Multisite > Kayayyaki > Zaɓi tsari**. Ya kamata ka ga maɓal
 
 Ka lura cewa wannan haɗin da za a iya rabawa yana aiki ne kawai ga **Tsare-tsare**. Ba za ka iya amfani da haɗin da za a iya rabawa don fakitoci ko ayyuka ba.
 
-### Don samfura:
+### Don samfura: {#for-templates}
 
 Idan kana son zaɓar samfuran shafi a gaba a kan fom ɗin kammala sayenka, za ka iya amfani da sigar: **?template_id=X** a kan URL na shafin rajistarka. Ana buƙatar maye gurbin "X" da **lambar ID ta samfurin shafi**. Don samun wannan lamba, je zuwa **Ultimate Multisite > Shafuka**.
 

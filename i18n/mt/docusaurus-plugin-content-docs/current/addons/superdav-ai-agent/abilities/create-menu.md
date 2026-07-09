@@ -3,15 +3,15 @@ title: Oħloq Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Oħloq Menu
+# Oħloq Menu {#create-menu}
 
 Il-kapaċità **Oħloq Menu** toħloq menus ta’ navigazzjoni ta’ WordPress b’appoġġ għal tikketti ta’ navigazzjoni distinti separati mit-titli tal-paġni.
 
-## Ħarsa Ġenerali
+## Ħarsa Ġenerali {#overview}
 
 Din il-kapaċità testendi l-funzjonalità standard tal-ħolqien ta’ menu bil-possibbiltà li tispeċifika parametru `navigation_label`. Dan jippermettilek toħloq menus fejn it-tikketta murija fin-navigazzjoni tkun differenti mit-titlu tal-paġna, u b’hekk tipprovdi aktar flessibbiltà fl-istruttura tas-sit u fl-esperjenza tal-utent.
 
-## Parametri
+## Parametri {#parameters}
 
 | Parametru | Tip | Meħtieġ | Deskrizzjoni |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Din il-kapaċità testendi l-funzjonalità standard tal-ħolqien ta’ menu bil-
 | `location` | string | Le | Post fit-theme li dan il-menu għandu jiġi assenjat lilu, eż. `primary` |
 | `navigation_label` | string | Le | Tikketta li tintwera fin-navigazzjoni (distinta mit-titlu tal-paġna) |
 
-## Valur Ritornat
+## Valur Ritornat {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Din il-kapaċità testendi l-funzjonalità standard tal-ħolqien ta’ menu bil-
 }
 ```
 
-## Tikketta tan-Navigazzjoni vs Titlu tal-Paġna
+## Tikketta tan-Navigazzjoni vs Titlu tal-Paġna {#navigation-label-vs-page-title}
 
 Il-parametru `navigation_label` jippermettilek tissepara l-isem intern tal-menu mit-tikketta murija lill-utenti:
 
@@ -43,9 +43,9 @@ Dan huwa utli meta:
 - Għandek bżonn tappoġġja diversi lingwi b’tulijiet differenti ta’ tikketti
 - Qed tibni menus għal reġjuni speċifiċi jew gruppi ta’ utenti
 
-## Eżempji ta’ Użu
+## Eżempji ta’ Użu {#usage-examples}
 
-### Eżempju 1: Menu Sempliċi b’Tikketta tan-Navigazzjoni
+### Eżempju 1: Menu Sempliċi b’Tikketta tan-Navigazzjoni {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Oħloq menu ta’ navigazzjoni primarja msejjaħ "Main Navigation" bit-tikketta 
 }
 ```
 
-### Eżempju 2: Menu għal Post Speċifiku fit-Theme
+### Eżempju 2: Menu għal Post Speċifiku fit-Theme {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Oħloq menu fil-footer msejjaħ "Footer Links" bit-tikketta tan-navigazzjoni "Qu
 }
 ```
 
-## Integrazzjoni ma’ Theme Builder
+## Integrazzjoni ma’ Theme Builder {#integration-with-theme-builder}
 
 Meta tuża Theme Builder, il-kapaċità Oħloq Menu:
 
@@ -89,13 +89,13 @@ Meta tuża Theme Builder, il-kapaċità Oħloq Menu:
 3. Tassenja menus lill-postijiet korretti tat-theme
 4. Tappoġġja ż-żieda ta’ oġġetti tal-menu wara l-ħolqien
 
-## Kapaċitajiet Relatati
+## Kapaċitajiet Relatati {#related-abilities}
 
 - **`add_menu_item`** — Żid oġġetti ma’ menu eżistenti
 - **`update_menu`** — Ibdel l-isem ta’ menu jew assenjah mill-ġdid lil post fit-theme
 - **`delete_menu`** — Neħħi menu mis-sit tiegħek
 
-## L-Aħjar Prattiki
+## L-Aħjar Prattiki {#best-practices}
 
 - **Uża tikketti tan-navigazzjoni ċari** — żomm it-tikketti konċiżi u deskrittivi għall-utenti
 - **Qabbel il-postijiet tat-theme** — assenja menus lill-post korrett tat-theme għal wirja xierqa
@@ -103,14 +103,14 @@ Meta tuża Theme Builder, il-kapaċità Oħloq Menu:
 - **Ittestja r-responsività** — ivverifika li l-menus jintwerew korrettament fuq apparati mobbli
 - **Lokalizza t-tikketti** — uża tikketti tan-navigazzjoni differenti għal verżjonijiet lingwistiċi differenti
 
-## Limitazzjonijiet
+## Limitazzjonijiet {#limitations}
 
 - It-tikketti tan-navigazzjoni huma biss għall-wiri; l-`name` intern xorta jintuża għall-identifikazzjoni ta’ WordPress
 - L-appoġġ tat-theme jvarja; mhux it-themes kollha jappoġġjaw il-postijiet kollha tal-menu
 - L-oġġetti tal-menu jridu jiżdiedu separatament wara l-ħolqien tal-menu
 - Il-bidla ta’ tikketta tan-navigazzjoni teħtieġ aġġornament tal-menu
 
-## Kapaċitajiet Relatati
+## Kapaċitajiet Relatati {#related-abilities-1}
 
 - [Iġġenera Logo SVG](./generate-logo-svg.md) — oħloq logos għall-header tas-sit tiegħek
 - [Ivvalida l-Kuntrast tal-Palette](./validate-palette-contrast.md) — żgura skemi ta’ kuluri aċċessibbli

@@ -3,35 +3,35 @@ title: Upptäcktsintervju
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Upptäcktsintervju
+# Upptäcktsintervju {#discovery-interview}
 
 **Upptäcktintervjun** är det första steget i Theme Builders designprocess. Den samlar in information om din webbplats, ditt företag och dina designpreferenser för att skapa ett personligt tema.
 
-## Översikt
+## Översikt {#overview}
 
 Upptäcktintervjun guidar dig genom en serie frågor för att förstå ditt varumärke, din målgrupp och dina designmål. I version 1.16.0 inkluderar intervjun nu ett steg för **fotouppladdning**, vilket låter dig tillhandahålla visuella inspirationer för din design.
 
-## Intervjueteg
+## Intervjueteg {#interview-steps}
 
-### 1. Företagsinformation
+### 1. Företagsinformation {#1-business-information}
 
 - Webbplatsnamn och slogan
 - Företagstyp eller bransch
 - Primära affärsmål
 - Beskrivning av målgruppen
 
-### 2. Designpreferenser
+### 2. Designpreferenser {#2-design-preferences}
 
 - Föredragen färgpalett
 - Designstil (modern, klassisk, minimalistisk, lekfull, etc.)
 - Inspirationswebbplatser eller varumärken
 - Nödvändiga designelement
 
-### 3. Fotouppladdning (Ny i v1.16.0)
+### 3. Fotouppladdning (Ny i v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Ladda upp ett eller flera foton för att påverka designriktningen:
 
-#### Accepterade format
+#### Accepterade format {#accepted-formats}
 
 | Format | Extension | Detaljer |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Ladda upp ett eller flera foton för att påverka designriktningen:
 | **WebP** | `.webp` | Modernt format, mindre filstorlek |
 | **GIF** | `.gif` | Endast statiska bilder (ingen animation) |
 
-#### Filkrav
+#### Filkrav {#file-requirements}
 
 - **Maximal filstorlek:** 10 MB
 - **Minimimått:** 400 × 300 pixlar
 - **Rekommenderade mått:** 1200 × 800 pixlar eller större
 - **Sidoförhållande:** Alla förhållanden är acceptabla
 
-#### Hur foton påverkar designriktningen
+#### Hur foton påverkar designriktningen {#how-photos-influence-design-direction}
 
 Foton du laddar upp hjälper Theme Builder att förstå:
 
@@ -57,21 +57,21 @@ Foton du laddar upp hjälper Theme Builder att förstå:
 - **Designelement** — mönster, texturer och kompositionella stilar
 - **Typografisk inspiration** — typsnittsstilar som kompletterar den visuella temat
 
-### 4. Innehållsstruktur
+### 4. Innehållsstruktur {#4-content-structure}
 
 - Huvudsidor som behövs (Hem, Om oss, Tjänster, Kontakt, etc.)
 - Krävs blogg- eller nyhetssektion
 - Krävs e-handelssfunktionalitet
 - Särskilda funktioner eller integrationer
 
-### 5. Granskning och bekräftelse
+### 5. Granskning och bekräftelse {#5-review-and-confirmation}
 
 - Sammanfattning av all tillhandahållen information
 - Bekräftelse innan designgenereringen påbörjas
 
-## Bästa praxis för fotouppladdning
+## Bästa praxis för fotouppladdning {#photo-upload-best-practices}
 
-### Vad du ska ladda upp
+### Vad du ska ladda upp {#what-to-upload}
 
 - **Varumärkesinspiration** — logotyper, färgprover eller varumärkesriktlinjer
 - **Konkurrentwebbplatser** — skärmdumpar av webbplatser du beundrar
@@ -80,7 +80,7 @@ Foton du laddar upp hjälper Theme Builder att förstå:
 - **Team- eller kontorsbilder** — för personligt eller professionellt varumärke
 - **Livsstilsbilder** — som representerar din målgrupp
 
-### Vad du ska undvika
+### Vad du ska undvika {#what-to-avoid}
 
 - **Lågkvalitativa bilder** — suddiga eller pixliga foton
 - **Orelaterade bilder** — foton som inte representerar ditt varumärke
@@ -88,7 +88,7 @@ Foton du laddar upp hjälper Theme Builder att förstå:
 - **Upphovsrättsskyddat material** — se till att du har rättigheter att använda bilderna
 - **Animerade GIF:er** — endast statiska bilder bearbetas
 
-### Tips för bästa resultat
+### Tips för bästa resultat {#tips-for-best-results}
 
 1. **Ladda upp 2–3 bilder** — flera bilder ger bättre kontext
 2. **Använd högkvalitativa foton** — tydliga, välbelysta bilder fungerar bäst
@@ -96,7 +96,7 @@ Foton du laddar upp hjälper Theme Builder att förstå:
 4. **Ge kontext** — beskriv kort varför du valde varje bild
 5. **Var specifik** — om du gillar ett särskilt element, peka ut det
 
-## Designriktningsutdata
+## Designriktningsutdata {#design-direction-output}
 
 Efter Upptäcktsintervjun genererar Theme Builder:
 
@@ -106,7 +106,7 @@ Efter Upptäcktsintervjun genererar Theme Builder:
 - **Visuella element** — ikoner, mönster och dekorativa element
 - **Moodboard** — visuell representation av designriktningen
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 Efter att du har slutfört Upptäcktsintervjun:
 
@@ -115,7 +115,7 @@ Efter att du har slutfört Upptäcktsintervjun:
 3. Gå vidare till steget [Design Direction](./design-direction.md)
 4. Theme Builder skapar ditt anpassade tema
 
-## Relaterad dokumentation
+## Relaterad dokumentation {#related-documentation}
 
 - [Design Direction](./design-direction.md) — granska och förfina din design
 - [Hospitality Menus](./hospitality-menus.md) — skapa strukturerade menysidor

@@ -3,11 +3,11 @@ title: Exemple Avansate de Cod
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Exemple Avansate de Cod
+# Exemple Avansate de Cod {#advanced-code-examples}
 
 Aceste exemple demonstrează modele avansate de integrare cu Ultimate Multisite.
 
-## Motor de Prețuri Dinamic
+## Motor de Prețuri Dinamic {#dynamic-pricing-engine}
 
 Un motor de prețuri bazat pe reguli care aplică reduceri pentru volum, loialitate și sezon.
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Provisionare Avansată a Site-urilor
+## Provisionare Avansată a Site-urilor {#advanced-site-provisioning}
 
 Configurează automat site-uri noi cu plugin-uri, SSL, CDN, backup-uri și monitorizare, în funcție de caracteristicile planului:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistem de Limitările Personalizate
+## Sistem de Limitările Personalizate {#custom-limitations-system}
 
 Urmărește și aplică limitele de resurse, afișând avertismente de utilizare:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Counter Atomic cu BerlinDB și `increment_item()`
+## Counter Atomic cu BerlinDB și `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 a adăugat metoda `increment_item()` clasei `Query` din BerlinDB. Folosește această metodă pentru a realiza incrementări sigure și atomice pe coloanele numerice, fără riscul de condiție de cursă (read-modify-write races) — util pentru contoare, cote de utilizare și verificări de limitare a ratei care rulează în cereri concurente.
 
-### Semnătura metodei
+### Semnătura metodei {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 a adăugat metoda `increment_item()` clasei `Query` di
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Utilizare de bază
+### Utilizare de bază {#basic-usage}
 
 ```php
 // Adaugă 1 la coloana `api_calls` pentru membruștea cu ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Urmărirea utilizării API pe membruștea
+### Urmărirea utilizării API pe membruștea {#tracking-api-usage-per-membership}
 
 Un model practic pentru aplicarea limitelor de rată ale API-ului pe membruștea:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### De ce `increment_item()` în loc de `update_item()`
+### De ce `increment_item()` în loc de `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 O abordare naivă de tip citire-modificare-scriere (read-modify-write) nu este sigură în cereri concurente:
 

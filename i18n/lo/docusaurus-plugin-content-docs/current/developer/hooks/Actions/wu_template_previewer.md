@@ -4,19 +4,19 @@ title: ການກະທຳ - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# ການກະທຳ: wu_template_previewer
+# ການກະທຳ: wu_template_previewer {#action-wutemplatepreviewer}
 
 ເຮັດວຽກເມື່ອຢູ່ພາຍໃນບໍລິບົດຕົວຢ່າງເທມເພລດ.
 
-## ພາລາມິເຕີ
+## ພາລາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
 | $template_previewer | `self` | ອິນສະແຕນຂອງຄລາສປັດຈຸບັນ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.4
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໃນ [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) ທີ່ແຖວ 86

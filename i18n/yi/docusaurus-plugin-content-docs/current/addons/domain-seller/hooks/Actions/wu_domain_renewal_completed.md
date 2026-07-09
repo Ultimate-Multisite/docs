@@ -4,11 +4,11 @@ title: אַקציע - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# אַקציע: wu_domain_renewal_completed
+# אַקציע: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 ווערט אויסגעלאָזט נאָך דעם ווי אַ דאָמיין איז הצלחהדיק באנייט געוואָרן.
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 | $renewal_data | `array&lt;string,mixed&gt;` | באַנײַונג־מעטאַדאַטן (domain_name, years, customer_id, אאַז״וו). |
 | $result | `array&lt;string,mixed&gt;` | רויע רעזולטאַט־array צוריקגעגעבן דורך דעם רעגיסטראַטאָר, אַרײַנגערעכנט די נײַע expiry_date. |
 
-### זינט
+### זינט {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) אויף שורה 594

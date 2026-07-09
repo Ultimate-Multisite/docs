@@ -3,11 +3,11 @@ title: Imizekelo yeKhowudi ePhambili
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Imizekelo yeKhowudi ePhambili
+# Imizekelo yeKhowudi ePhambili {#advanced-code-examples}
 
 Le mizekelo ibonisa iipateni eziphambili zokudibanisa ne-Ultimate Multisite.
 
-## Injini yamaxabiso eguqukayo
+## Injini yamaxabiso eguqukayo {#dynamic-pricing-engine}
 
 Injini yamaxabiso esekelwe kwimithetho esebenzisa izaphulelo zobuninzi, zokunyaniseka, nezexesha lonyaka:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Ukulungiselela iisayithi okuPhambili
+## Ukulungiselela iisayithi okuPhambili {#advanced-site-provisioning}
 
 Qwalasela ngokuzenzekelayo iisayithi ezintsha ngee-plugins, SSL, CDN, ii-backups, kunye nokubeka iliso ngokusekelwe kwiimpawu zeplan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Inkqubo yeMida eYenzelwe wena
+## Inkqubo yeMida eYenzelwe wena {#custom-limitations-system}
 
 Landela kwaye unyanzelise imida yezixhobo kunye nezilumkiso zokusetyenziswa:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## I-BerlinDB Atomic Counter ene-`increment_item()`
+## I-BerlinDB Atomic Counter ene-`increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 yongeze indlela ye-`increment_item()` kwiklasi ye-BerlinDB `Query`. Yisebenzise ukwenza ukunyuswa okukhuselekileyo, kwe-atomic kwiikholamu zamanani ngaphandle kwemidyarho ye-read-modify-write — iluncedo kwizibali, ii-quota zokusetyenziswa, kunye nokuhlolwa kwe-rate-limiting okusebenza phantsi kwezicelo ezihambelanayo.
 
-### Utyikityo lwendlela
+### Utyikityo lwendlela {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 yongeze indlela ye-`increment_item()` kwiklasi ye-Berl
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Ukusetyenziswa okusisiseko
+### Ukusetyenziswa okusisiseko {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Ukulandela ukusetyenziswa kwe-API ngobulungu ngalunye
+### Ukulandela ukusetyenziswa kwe-API ngobulungu ngalunye {#tracking-api-usage-per-membership}
 
 Ipateni esebenzayo yokunyanzelisa imida ye-API rate ngokobulungu ngalunye:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Kutheni `increment_item()` endaweni ye-`update_item()`
+### Kutheni `increment_item()` endaweni ye-`update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Indlela elula ye-read-modify-write ayikhuselekanga phantsi kwezicelo ezihambelanayo:
 

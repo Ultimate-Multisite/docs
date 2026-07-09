@@ -4,11 +4,11 @@ title: Filter - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filter: wu_rest_get_item
+# Filter: wu_rest_get_item {#filter-wurestgetitem}
 
 Filtrira, ali je dovoljeno nadaljevati z zahtevo ali ne.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrira, ali je dovoljeno nadaljevati z zahtevo ali ne.
 | $rest_base | `array` | Slug entitete. |
 | $this | `\Base_Manager` | Primerek objekta. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.0
-### Vir
+### Vir {#source}
 
 Definirano v [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) v vrstici 388

@@ -3,11 +3,11 @@ title: Domino produktai ir kainos
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domenų produktai ir kaina
+# Domenų produktai ir kaina {#domain-products-and-pricing}
 
 Domenų produktai yra tai, kaip jūs kontrolijuใจate kainą, TLD (Top-Level Domain), WHOIS privumą ir tiekėjo pasirinkimą. Kiekvienas domenų produktas yra standartinis Ultimate Multisite produktas su papildomu **Domain Settings** (Domenos nustatymai) pakuotė.
 
-## Domeno produkto kūrimas
+## Domeno produkto kūrimas {#creating-a-domain-product}
 
 1. Eikite į **Network Admin › Ultimate Multisite › Products**.
 2. Spauskite **Add New** (Pridėti naują).
@@ -17,13 +17,13 @@ Domenų produktai yra tai, kaip jūs kontrolijuใจate kainą, TLD (Top-Level 
 
 Domenos produktai pasirodo su purva **Domain** (Domeno) žymėte sąraše ir gali būti filtruojami naudojant **Domain Products** (Domenų produktai) pakuotę.
 
-## Domain settings pakuotė
+## Domain settings pakuotė {#domain-settings-tab}
 
-### Tiekėjas (Provider)
+### Tiekėjas (Provider) {#provider}
 
 Pasirinkite, kuris registratorius atsakingas už šio produkto registracijos procesą. Pagal baseiama globaliai nustatytam **Default provider** (Pagrindinis tiekėjas) Domain Seller nustatyjimu.
 
-### Patikslinti TLDs (Supported TLDs)
+### Patikslinti TLDs (Supported TLDs) {#supported-tlds}
 
 Palikykite laukelį tuščia, jei norite sukurti **catch-all product** (apimaicinį produktą), kuris tinka visoms TLDs, kurios nėra atitinkamos kitam produktui.
 
@@ -31,7 +31,7 @@ Palikykite laukelį tuščia, jei norite sukurti **catch-all product** (apimaici
 
 **Kaip veikia produktų atitinkimas:** Kai klientas ieško domeno, papildomas pasirinkęs tinkamiausią atitinkamą produktą. Produktas su `.com` TLD sąrašu prioritetu yra didesnis nei apimaicinio produkto. Jei nėra nurodytų specifinio TLD produkto, naudojamas apimaicinysis. Jei nepasirinkta jokios produktų, domeno ieškojimas nebus rodomas.
 
-### Markavimo tipas (Markup type)
+### Markavimo tipas (Markup type) {#markup-type}
 
 Tris režimai kontroliuoja, kaip jūsų pardavimų kaina skaičiuojama iš didelės tiekimo kainos:
 
@@ -41,11 +41,11 @@ Tris režimai kontroliuoja, kaip jūsų pardavimų kaina skaičiuojama iš didel
 | **Fixed markup** (Kiekis markavimo) | Prideda fiksuotą doliojį sumą. $5 markavimo didelė į $10 domeną bus $15. |
 | **Fixed price** (Fiksuota kaina) | Šaliai ignoruoja didelės tiekimo kainos. Tai visada skaičiuojama jūsų įvestas suma. |
 
-### Įvadinio laisvoskaina (Introductory pricing)
+### Įvadinio laisvoskaina (Introductory pricing) {#introductory-pricing}
 
 Užvalykite pasiūlyti nuolaidytą pirmo meto kainą. Nustatykite atskirta **Pradžia kainą** (pirmo metų kainą) šalia įprastos **Atnaujinimo kainos** (2-metų ir daugiau) kainos. Klientas matys ambasame ambasdžyje, kad sukurta tikėtina ateityje atnaujinimas.
 
-### WHOIS privumas
+### WHOIS privumas {#whois-privacy}
 
 Kontroliuja, ar siūlomas WHOIS privumo apsauga domenams, registruoti per šį produktą.
 
@@ -59,7 +59,7 @@ Namecheap naudoja WhoisGuard (visada nemokama) WHOIS privumui. OpenSRS naudoja O
 
 ---
 
-## TLD importas ir sinigracija
+## TLD importas ir sinigracija {#tld-import-and-sync}
 
 Domeno produktai rodo realios dideliai kainas, kurias įsigijami su sujungtu tiekėju. Kad tai veiktų, reikia įvesti TLDs (Top-Level Domains).
 
@@ -70,7 +70,7 @@ Po sinigracijos, eikite į bet domenų produkto „Domain Settings“ puslapį i
 
 ---
 
-## Automatinis atnaujinimas
+## Automatinis atnaujinimas {#auto-renewal}
 
 Domeno atnaujinimai susiję su klientų narys statusu:
 
@@ -90,7 +90,7 @@ El. laiškų šablonų ID domenų saugumo įvykiams:
 
 ---
 
-## Administracija: Manuelis domeno registravimas
+## Administracija: Manuelis domeno registravimas {#admin-manual-domain-registration}
 
 Jei norite registruoti domeną už klientą, nevedant jį per procesą atnaujinimo (checkout):
 

@@ -3,7 +3,7 @@ title: Yadda Ake Warware Samun Samun
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Zabi zanin da aboni na?
+# Zabi zanin da aboni na? {#how-can-i-cancel-my-subscription}
 
 Idan kana da Ultimate Multisite license, za ka iya daina sake mayar da shi kowane lokaci da kake so. Kawai bi matakan da ke ƙasa:
 

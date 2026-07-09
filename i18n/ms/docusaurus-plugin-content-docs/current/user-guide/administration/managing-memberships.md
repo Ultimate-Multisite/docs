@@ -3,7 +3,7 @@ title: Mengurus Keahlian
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Mengurus Memberships
+# Mengurus Memberships {#managing-memberships}
 
 Dalam Ultimate Multisite, anda boleh mengurus memberships dan mengakses semua subscriptions pada rangkaian anda. Semak dan edit butiran subscription seperti plan dan produk, bilangan site, amaun dan kekerapan bil, sejarah pembayaran, serta cap masa.
 

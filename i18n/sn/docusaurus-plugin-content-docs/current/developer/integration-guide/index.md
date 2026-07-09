@@ -3,13 +3,13 @@ title: Nhungamiro yekubatanidza
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gwaro Rekubatanidza
+# Gwaro Rekubatanidza {#integration-guide}
 
 Gwaro iri rinofukidza maitiro akajairika ekubatanidza neUltimate Multisite, kusanganisira kubatanidza kumasevhisi ekunze, kuvaka payment gateways dzakagadziridzwa, uye kubata webhooks.
 
 Kune zvivakwa zve tenant zvakaparadzaniswa, ona [Kubatanidza Multi-Tenancy](./multi-tenancy) kuti uwane nhungamiro ye sovereign tenant bootstrap, kuongorora migration, SSO, uye teardown.
 
-## Kubatanidza CRM
+## Kubatanidza CRM {#crm-integration}
 
 Sync data revatengi kuCRM yako kana vatengi vatsva vanyoresa:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Kubatanidza Analytics
+## Kubatanidza Analytics {#analytics-integration}
 
 Tevedzera zviitiko zvakakosha zvebhizinesi mukati me customer lifecycle:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Matanho Anotevera
+## Matanho Anotevera {#next-steps}
 
 - [Kuvandudza Custom Gateway](./custom-gateway) — Vaka payment gateway yako
 - [Kubata Webhook](./webhooks) — Gadzira webhook endpoints dzakagadziridzwa

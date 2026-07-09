@@ -4,19 +4,19 @@ title: Filtër - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Filtër: wu_mt_syncable_user_meta_keys
+# Filtër: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
 
 Filtron listën e çelësave meta të përdoruesit që duhet të sinkronizohen me nyjet e largëta.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Tipi | Përshkrimi |
 |------|------|-------------|
 | $syncable_keys | `array` | Çelësat meta të parazgjedhur për t’u sinkronizuar. |
 
-### Që nga
+### Që nga {#since}
 
 - 1.0.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/users/class-network-user-sync.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/users/class-network-user-sync.php#L296) në rreshtin 296

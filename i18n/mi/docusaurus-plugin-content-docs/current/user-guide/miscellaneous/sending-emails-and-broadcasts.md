@@ -3,13 +3,13 @@ title: Te tuku īmēra me ngā pāhotanga
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Te Tuku Īmēra me ngā Pāhotanga (v2)
+# Te Tuku Īmēra me ngā Pāhotanga (v2) {#sending-emails-and-broadcasts-v2}
 
 _**TUHIPOKA NUI: E kōrero ana tēnei tuhinga mō Ultimate Multisite putanga 2.x.**_
 
 Kei a Ultimate Multisite tētahi āhuatanga e āhei ai koe ki te whakawhiti kōrero ki ō kiritaki mā te tuku īmēra ki tētahi kaiwhakamahi kua ūngia, ki tētahi rōpū kaiwhakamahi rānei, me te tuku pānui ki tō rātou Dashboard kaiwhakahaere hei pāho i ngā whakamōhiotanga
 
-## Tāpirihia ngā pānui kaiwhakahaere ki te Dashboard o ō kiritaki mā ngā Pāhotanga
+## Tāpirihia ngā pānui kaiwhakahaere ki te Dashboard o ō kiritaki mā ngā Pāhotanga {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Mā te whakamahi i te āhuatanga pāhotanga o Ultimate Multisite, ka taea e koe te tāpiri **pānui kaiwhakahaere** ki te Dashboard kaiwhakahaere pae-iti a tō kaiwhakamahi.
 
@@ -51,7 +51,7 @@ Whai muri i te waihanga i tō karere, ka taea e koe te pēhi i te pātene **Tuku
 
 Ā, koirā. Me puta tonu te pānui kaiwhakahaere ki te Dashboard a tō kaiwhakamahi.
 
-## Tukuna he īmēra ki ō kiritaki
+## Tukuna he īmēra ki ō kiritaki {#send-emails-to-your-customers}
 
 Mā te whakamahi i te āhuatanga pāhotanga o Ultimate Multisite, ka taea e koe te tuku īmēra ki ō kaiwhakamahi. Kei a koe te kōwhiringa ki te tuku i te īmēra ki ngā kaiwhakamahi motuhake anake, ki te ūnga rānei i tētahi rōpū kaiwhakamahi motuhake e hāngai ana ki te hua, mahere rānei kua ohauru rātou i raro iho.
 
@@ -81,11 +81,11 @@ Whai muri i te waihanga i tō karere, ka taea e koe te pēhi i te pātene **Tuku
 
 Ā, koirā te māmā o te tuku īmēra ki ō kaiwhakamahi whakamutunga mā te whakamahi i te āhuatanga pāhotanga.
 
-## Īmēra pūnaha
+## Īmēra pūnaha {#system-emails}
 
 Ko ngā īmēra pūnaha i Ultimate Multisite ko aua **whakamōhiotanga aunoa** ka tukuna e te pūnaha whai muri i ētahi mahi pērā i te rēhitatanga, te utu, te mahere rohe, me ērā atu. Ka taea ēnei īmēra te whakatika, te whakarerekē rānei mai i ngā tautuhinga Ultimate Multisite. Kei roto hoki tētahi āhuatanga e āhei ai koe ki te tautuhi anō me te kawemai i ngā tautuhinga o nāianei mai i tētahi atu tāutanga Ultimate Multisite.
 
-### Tautuhi Anō me te Kawemai
+### Tautuhi Anō me te Kawemai {#resetting--importing}
 
 Ka taea, ā, ka rēhita ngā putanga Ultimate Multisite hou, me ngā tāpiritanga hoki, i ngā īmēra hou i ia wā, i ia wā.
 
@@ -93,7 +93,7 @@ Hei ārai i ngā papā me ētahi atu raruraru, **kāore mātou e tāpiri aunoa i
 
 Heoi anō, ka taea e ngā kaiwhakahaere matua me ngā agent te kawemai i ēnei īmēra kua rēhitatia hou mā te taputapu kawemai. Mā taua tukanga e waihanga tētahi īmēra pūnaha hou me te ihirangi me te whirihoranga o te tātauira īmēra hou, e āhei ai te kaiwhakahaere matua ki te whakarerekē i ngā mea e hiahia ana ia, ki te pupuri rānei i aua mea kia pērā tonu.
 
-#### Me pēhea te kawemai i ngā īmēra pūnaha
+#### Me pēhea te kawemai i ngā īmēra pūnaha {#how-to-import-system-emails}
 
 Haere ki tō whārangi Tautuhinga Ultimate Multisite, ā, anga atu ki te ripa **Īmēra**.
 
@@ -111,7 +111,7 @@ Kātahi, ka taea e koe te takahuri i ngā kōwhiringa Kawemai Īmēra kia kite a
 
 <!-- Kāore te whakaahua mata i te wātea: te matapihi Reset me te Kawemai me ngā kōwhiringa Kawemai Īmēra kua whakawhānuitia -->
 
-#### Te Tautuhi Anō i ngā Īmēra Pūnaha
+#### Te Tautuhi Anō i ngā Īmēra Pūnaha {#reseting-system-emails}
 
 I ētahi wā anō, ka mōhio koe kāore ngā panonitanga i mahia e koe ki tētahi tauira īmēra e hāngai ana ki a koe ināianei, ā, e hiahia ana koe ki te tautuhi anō ki tōna **āhua taunoa**.
 

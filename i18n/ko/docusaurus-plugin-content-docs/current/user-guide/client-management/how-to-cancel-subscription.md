@@ -3,7 +3,7 @@ title: 구독을 취소하는 방법
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# 내 subscription을 어떻게 취소할 수 있나요?
+# 내 subscription을 어떻게 취소할 수 있나요? {#how-can-i-cancel-my-subscription}
 
 Ultimate Multisite license가 있는 경우, 원할 때 언제든지 갱신을 취소할 수 있습니다. 아래 단계를 따라 하세요:
 

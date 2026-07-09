@@ -4,11 +4,11 @@ title: Radnja - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Pokreće se nakon neuspjelog pokušaja registracije domene.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Pokreće se nakon neuspjelog pokušaja registracije domene.
 | $registration_data | `array&lt;string,mixed&gt;` | Metapodaci registracije, uključujući status=failed i error_message. |
 | $error_message | `string` | Čitljiva poruka o pogrešci od registrara. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) na retku 1250

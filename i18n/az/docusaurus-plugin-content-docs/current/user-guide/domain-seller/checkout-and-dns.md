@@ -3,13 +3,13 @@ title: Sifariş rəsmiləşdirmə sahəsi və Müştəri DNS-i
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Ödəniş sahəsi və müştəri DNS idarəetməsi
+# Ödəniş sahəsi və müştəri DNS idarəetməsi {#checkout-field-and-customer-dns-management}
 
-## Domen seçimi ödəniş sahəsi
+## Domen seçimi ödəniş sahəsi {#the-domain-selection-checkout-field}
 
 **Domen seçimi** sahəsi müştərilərə saytlarının domenini necə əldə edəcəklərini seçmək imkanı verən ödəniş elementidir. Domen satışını aktivləşdirmək üçün onu istənilən ödəniş formasına əlavə edin.
 
-### Sahəni ödəniş formasına əlavə etmək
+### Sahəni ödəniş formasına əlavə etmək {#adding-the-field-to-a-checkout-form}
 
 1. **Şəbəkə Admini › Ultimate Multisite › Ödəniş Formaları** bölməsinə keçin
 2. Ödəniş formasını açın və ya yaradın
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Sahə seçimlərini konfiqurasiya edin (aşağıya baxın)
 6. Formanı yadda saxlayın
 
-### Sahə seçimləri
+### Sahə seçimləri {#field-options}
 
 **Domen rejimləri** — Müştərinin hansı tabları görəcəyini seçin. Hər rejim müstəqil şəkildə aktiv və ya deaktiv edilə bilər:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domen məhsulu** — İstəyə bağlı olaraq bu sahəni konkret domen məhsuluna bağlayın. Təyin edilməyibsə, addon müştərinin axtardığı TLD əsasında uyğun məhsulu avtomatik seçir.
 
-### Qeydiyyatçı əlaqə sahələri
+### Qeydiyyatçı əlaqə sahələri {#registrant-contact-fields}
 
 Müştəri **Yeni domen qeydiyyatdan keçir** tabını seçdikdə, ödəniş forması qeydiyyatçı əlaqə sahələrini eyni sətirdə əlavə edir:
 
@@ -43,11 +43,11 @@ Müştəri **Yeni domen qeydiyyatdan keçir** tabını seçdikdə, ödəniş for
 
 Bunlar bütün qeydiyyatçılar tərəfindən tələb olunur və qeydiyyat API çağırışı edilməzdən əvvəl yoxlanılır. Telefon nömrələri qeydiyyatçıların gözlədiyi `+CC.NNN` beynəlxalq formatına avtomatik formatlanır.
 
-### Avtomatik yaradılan sayt URL-i
+### Avtomatik yaradılan sayt URL-i {#auto-generated-site-url}
 
 Müştəri domeni qeydiyyatdan keçirdikdə və ya xəritələndirdikdə, sayt URL sahəsi seçilmiş domen əsasında avtomatik doldurulur. Müştərilərin ayrıca URL sahəsini doldurmasına ehtiyac yoxdur.
 
-### Axtarış davranışı
+### Axtarış davranışı {#search-behaviour}
 
 - Domen əlçatanlığı müştəri yazdıqca AJAX ilə real vaxtda yoxlanılır
 - Üstün tutulan domen əlçatan olmadıqda alternativ TLD təklifləri göstərilir
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Müştəri DNS idarəetməsi
+## Müştəri DNS idarəetməsi {#customer-dns-management}
 
 Müştərilər qeydiyyatdan keçirdikləri domenlər üçün DNS qeydlərini **My Account** səhifəsindən, domenlərinin qeydi altında idarə edə bilərlər.
 
-### Dəstəklənən qeyd növləri
+### Dəstəklənən qeyd növləri {#supported-record-types}
 
 | Növ | İstifadə |
 |---|---|
@@ -91,11 +91,11 @@ Müştərilər qeydiyyatdan keçirdikləri domenlər üçün DNS qeydlərini **M
 | **MX** | Poçt mübadiləsi serverini təyin edir |
 | **TXT** | SPF, DMARC, doğrulama və ya digər mətn qeydləri əlavə edir |
 
-### Hansı provayderlər DNS idarəetməsini dəstəkləyir?
+### Hansı provayderlər DNS idarəetməsini dəstəkləyir? {#which-providers-support-dns-management}
 
 DNS idarəetməsi (qeydləri əlavə etmək, redaktə etmək, silmək) **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** və **Openprovider** ilə əlçatandır. **Hostinger** domenləri Domain Seller vasitəsilə nameserver-ləri yeniləyə bilər; hostinq edilən domenlər üçün DNS qeydləri əsas Hostinger domen xəritələndirmə inteqrasiyası tərəfindən idarə olunur. Namecheap, GoDaddy və NameSilo domenləri status və bitmə tarixi məlumatlarını göstərir, lakin DNS birbaşa qeydiyyatçının idarə panelində idarə edilməlidir.
 
-### Standart DNS qeydləri
+### Standart DNS qeydləri {#default-dns-records}
 
 Domen qeydiyyatdan keçirildikdə avtomatik tətbiq olunan standart DNS qeydlərini konfiqurasiya edə bilərsiniz. **Parametrlər › Domain Seller › Standart DNS qeydləri** bölməsinə keçin.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS-ə baxmaq və redaktə etmək
+### Admin: DNS-ə baxmaq və redaktə etmək {#admin-viewing-and-editing-dns}
 
 Şəbəkə adminləri istənilən müştəri domeni üçün DNS qeydlərinə **Şəbəkə Admini › Ultimate Multisite › Domenlər** bölməsində domenin redaktə səhifəsindən baxa və onları redaktə edə bilərlər.

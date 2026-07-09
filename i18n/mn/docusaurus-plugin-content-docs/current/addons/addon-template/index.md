@@ -3,25 +3,25 @@ title: Нэмэлтийн загвар
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Нэмэлтийн загвар
+# Нэмэлтийн загвар {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Шаардлагууд
+## Шаардлагууд {#requirements}
 
 - WordPress 5.3 эсвэл түүнээс дээш
 - PHP 7.4 эсвэл түүнээс дээш
 - Multisite Ultimate plugin (идэвхтэй)
 
-## Суулгалт
+## Суулгалт {#installation}
 
 1. Нэмэлтийн файлуудыг таны `/wp-content/plugins/` лавлах руу байршуулна
 2. WordPress доторх 'Нэмэлтүүд' цэсээр plugin-ийг идэвхжүүлнэ
 3. Сүлжээний админаас нэмэлтийн тохиргоог тохируулна
 
-## Хөгжүүлэлт
+## Хөгжүүлэлт {#development}
 
-### Тохируулга
+### Тохируулга {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Төслийн бүтэц
+### Төслийн бүтэц {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Код орчин үеийн болгох дүрмүүд
 ```
 
-### Туршилт
+### Туршилт {#testing}
 
 Нэмэлт нь иж бүрэн туршилтын framework агуулна:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **Тестийн хамрах хүрээ**: Кодын хамрах хүрээг хянахаар тохируулсан
 - **Multisite туршилт**: Тестүүд multisite орчинд ажиллана
 
-### Кодын стандартууд
+### Кодын стандартууд {#code-standards}
 
 - **WordPress код бичих стандартууд**: PHPCS-ээр хэрэгжүүлнэ
 - **PHP 7.4+ нийцтэй байдал**: Орчин үеийн PHP боломжуудыг дэмжинэ
 - **Статик шинжилгээ**: Төрлийн шалгалтад зориулсан PHPStan интеграц
 - **Код орчин үеийн болгох**: PHP шинэчлэлтэд зориулсан Rector дүрмүүд
 
-### Build систем
+### Build систем {#build-system}
 
 - **Хөрөнгө боловсруулах**: CSS/JS файлуудад зориулсан жижигрүүлэлт
 - **Орчуулга**: POT файл үүсгэх
 - **Багцлалт**: Түгээлтэд зориулсан архив үүсгэх
 - **Хөгжүүлэлтийн горим**: Алдаа засахад зориулсан жижигрүүлээгүй хөрөнгүүд
 
-## Тохиргоо
+## Тохиргоо {#configuration}
 
 Нэмэлт нь сүлжээний админ интерфейсээр хандах боломжтой төрөл бүрийн тохиргооны сонголтуудыг дэмжинэ.
 
-## Hooks болон Filters
+## Hooks болон Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Нэмэлт эхлүүлсний дараа ажиллана
 - `ultimate-multisite-addon-template_loaded` - Нэмэлтийн бүх файлууд ачаалагдсаны дараа ажиллана
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Нэмэлтийн тохиргоог өөрчлөх
 - `ultimate-multisite-addon-template_enabled` - Нэмэлтийг идэвхжүүлэх/идэвхгүй болгох төлөвийг override хийх
 
-## Лиценз
+## Лиценз {#license}
 
 Энэ нэмэлт нь GPL v3 эсвэл түүнээс хойших хувилбарын лицензтэй.
 
-## Дэмжлэг
+## Дэмжлэг {#support}
 
 Дэмжлэг болон баримт бичгийн хувьд [MultisiteUltimate.com](https://multisiteultimate.com)-д зочилно уу
-## Өөрчлөлтийн бүртгэл
+## Өөрчлөлтийн бүртгэл {#changelog}
 
 - Хувилбар 1.0.1 (2025-09-28): prefix-ийг ultimate-multisite болгон өөрчлөв; text domain шинэчилсэн; хувилбар нэмэгдүүлсэн.
 

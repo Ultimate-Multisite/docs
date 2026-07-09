@@ -3,7 +3,7 @@ title: Snippets GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Ahoana ny fampiasana Ultimate Multisite snippets ao amin'ny GitHub repository anay
+# Ahoana ny fampiasana Ultimate Multisite snippets ao amin'ny GitHub repository anay {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Misy code snippets azo alaina ao amin'ny GitHub repository izay tena tadiavina matetika avy amin'ireo mpampiasa Ultimate Multisite izay te-hiresaka asa kely toy ny famafana script Google Analytics amin'ny pejy fandraisana (sign-up pages) na ny fanakiana meta box avy ao amin'ny admin dashboard.
 
@@ -19,7 +19,7 @@ Misy fomba 2 ahafahanao manampy ny code:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Ahoana no fanampiana ny snippet ao amin'ny fichier functions.php an'ny theme-nao.
+# Ahoana no fanampiana ny snippet ao amin'ny fichier functions.php an'ny theme-nao. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Midira ao amin'ny WordPress Network admin dashboard anao ary mandehana any Themes > Theme Editor (Jereo ny sary eto ambany).
 
@@ -29,7 +29,7 @@ Misy fomba 2 ahafahanao manampy ny code:
 
 <!-- Sary tsy azo jerena: WordPress Theme Editor mampiseho ny fanovana ny fichier functions.php -->
 
-# Ahoana no famoronana Must-Use Plugins (mu-plugins)
+# Ahoana no famoronana Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 Misy fahaiza-manao ao amin'ny WordPress ahafahanao mitondra asa manokana antsoina hoe "Must-Use Plugins", na "mu-plugins" raha fohy ny anarana.
 

@@ -3,11 +3,11 @@ title: Sistem elektron xatlarni boshqarish
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Система Электрон मेलларини Удириш
+# Система Электрон मेलларини Удириш {#managing-system-emails}
 
 Ultimate Multisite sizga ro'yxatdan o'tish tasdiqlari, to'lov qabul qilganlik uchun rasmiy xat va a'zo bo'lish holatlari kabi voqealar uchun turli tizim elektron xatlarini yuboradi. Bu shablonlarni o'zingizning brendingizga moslash uchun sozlash imkoniyatiga ega bo'lasiz.
 
-## Tizim Elektron Xatlari Ko'rish
+## Tizim Elektron Xatlari Ko'rish {#viewing-system-emails}
 
 **Ultimate Multisite → Settings** ga o'ting va **Emails** (Elektron xatlar) yorlig'idan bittaga bosing, bu sizga elektron xat bilan bog'liq sozlamalarni ko'rsatadi.
 
@@ -21,7 +21,7 @@ Shuningdek, tizim elektron xatlari redaktori yordamida individual shablonlarni t
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Yangi Elektron Xat Shablonlarini Import Qilish
+## Yangi Elektron Xat Shablonlarini Import Qilish {#importing-new-email-templates}
 
 Ultimate Multisite ning yangi versiyalari va qo'shimchalari yangi elektron shablonlarni ro'yxatdan o'tishi mumkin. Konfliktlarni oldini olish uchun yangi shablonlar avtomatik qo'shilmaydi — ularni siz qo'lda import qilishingiz kerak bo'ladi.
 
@@ -32,7 +32,7 @@ Yangi elektron shablonlarni import qilish uchun:
 3. Mavjud shablonlarni ko'rish uchun **Import Emails** opsiyasini yoqing (toggle qiling)
 4. Import qilmoqchi bo'lgan shablonlarni tanlang va tasdiqlang
 
-## Elektron Shablonlarni Qayta Sozlash (Resetting Email Templates)
+## Elektron Shablonlarni Qayta Sozlash (Resetting Email Templates) {#resetting-email-templates}
 
 Agar siz elektron shablonni o'zgartirgan bo'lsangiz va default kontentga qaytmoqchi bo'lsangiz, sizda ikkita variant bor:
 

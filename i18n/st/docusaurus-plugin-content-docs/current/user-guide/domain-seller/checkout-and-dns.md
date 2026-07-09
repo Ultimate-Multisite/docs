@@ -3,13 +3,13 @@ title: Tlhahlobo le Mopuo wa Leano la Morero
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field le DNS ya Mopuo a Morero BaMopuo
+# Checkout Field le DNS ya Mopuo a Morero BaMopuo {#checkout-field-and-customer-dns-management}
 
-## Le field la Domain Selection
+## Le field la Domain Selection {#the-domain-selection-checkout-field}
 
 Le **Domain Selection** field ke sebope la checkout e sebope sebope sa ba mofuo a morero ba domain ya site. A re sebope ka form ya checkout a goba ka morero ba domain.
 
-### Go bone le field ya checkout form
+### Go bone le field ya checkout form {#adding-the-field-to-a-checkout-form}
 
 1. La **Network Admin › Ultimate Multisite › Checkout Forms** go.
 2. Open kapa ya checkout form, ke fela kapa ya tsena.
@@ -18,7 +18,7 @@ Le **Domain Selection** field ke sebope la checkout e sebope sebope sa ba mofuo 
 5. Configure le options ya field (tsena below).
 6. Save le form.
 
-### Options ya field
+### Options ya field {#field-options}
 
 **Domain modes** — Choose ka tabs a reba mofuo. Ka mode e ka baetsope kapa ka baetsope ka tsena.
 
@@ -32,7 +32,7 @@ Le **Domain Selection** field ke sebope la checkout e sebope sebope sa ba mofuo 
 
 **Domain product** — Ka tsena, o ka ba etsope le field ya tsena le product ya domain e ntlha. Fa o se setse, addon e tla baetsoa product ya tsena e fetang ka TLD (Top-Level Domain) mofuo o batla.
 
-### Fields ya contact ya registrant
+### Fields ya contact ya registrant {#registrant-contact-fields}
 
 Fa mofuo a ba etsope tab ya **Register New Domain**, checkout form e tla baetsoa fields ya contact ya registrant leba:
 
@@ -43,11 +43,11 @@ Fa mofuo a ba etsope tab ya **Register New Domain**, checkout form e tla baetsoa
 
 Lezi tse di hlophisoho tse hlokang ke boithuti bohle ba registrars le ba thapelo ka fa API ya registration e tla fana. Numera tsa phone di fetokwa go tlhahiswe ka format ya tsantsa `+CC.NNN` e e mongolo e e tlhagiso ea registrars.
 
-### Auto-generated site URL (URL ya site e hlalosang)
+### Auto-generated site URL (URL ya site e hlalosang) {#auto-generated-site-url}
 
 Ha moruti a fana ka le mapo a domain, sehlopha sa URL sa site se tla tsamaiswa ho fetola ho tsoalo la domain o o tsoalo. Moruti ha hloka ho raba sehlopha sehlopha sa URL sehlopha sehlopha sehlopha.
 
-### Search behaviour (Ho ba le leboha la ho hlalosa)
+### Search behaviour (Ho ba le leboha la ho hlalosa) {#search-behaviour}
 
 - Ho tsamaisa ho ba le leboha la domain ho fana ka real-time ho AJAX ha moruti a dirang fa o fetola
 - Boitshwaro ba TLD (Top-Level Domain) bo fana ka ho bonahala ha domain o o tsoalo ha o na le.
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Customer DNS management (Ho tsamaea ho ba le leboha la DNS)
+## Customer DNS management (Ho tsamaea ho ba le leboha la DNS) {#customer-dns-management}
 
 Moruti ba ka ba le leboha la DNS tsa domain ea bona ha ba le **My Account** page, ka morero ea entry ya domain ea bona.
 
-### Supported record types (Tse tsela tse hlokang)
+### Supported record types (Tse tsela tse hlokang) {#supported-record-types}
 
 | Type | Use (Ho sebelisa) |
 |---|---|
@@ -91,11 +91,11 @@ Moruti ba ka ba le leboha la DNS tsa domain ea bona ha ba le **My Account** page
 | **MX** | Ho setsoa mail exchange server |
 | **TXT** | Ho nthela SPF, DMARC, verification, kapa tse ling tsa text records |
 
-### Which providers support DNS management? (Boithuti ba ba thapelo ea ho tsamaea ho DNS?)
+### Which providers support DNS management? (Boithuti ba ba thapelo ea ho tsamaea ho DNS?) {#which-providers-support-dns-management}
 
 Bokotseletso (DNS) management (goela, hloboho, le tshepelo tsa record) ke lebetsa le fetogile ho ba le **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, le **Openprovider**. Domanai ea **Hostinger** e ka fetola leena nameservers ka hare ho Seller ea Domain; records ea DNS ea domanai ea ho hlokomelisa haholo (hosted domains) e fana ka ho tsamaisa ka integration ea core ea Hostinger. Domanai ea Namecheap, GoDaddy, le NameSilo e bontša litlhahlo tsa tshepelo le tshepelo ea ho fihla (expiry), empa DNS e hloka ho ba fetolwa ka hare ka panel ea control ya registrar.
 
-### Records ea DNS ea default
+### Records ea DNS ea default {#default-dns-records}
 
 U ka setso records ea DNS ea default tse a tla tsamaisa ka ho hlokompha ha domain e fetola. Ho fana ka **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: ho bona le ho fetola DNS
+### Admin: ho bona le ho fetola DNS {#admin-viewing-and-editing-dns}
 
 Admins ea network e ka bona le ho fetola records ea DNS ea domanai ea morao ka domain e fetileng ka panel ea **Network Admin › Ultimate Multisite › Domains**.

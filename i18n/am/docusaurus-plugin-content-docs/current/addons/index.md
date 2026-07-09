@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# አልቲሜት መልቲሳይት Addons
+# አልቲሜት መልቲሳይት Addons {#ultimate-multisite-addons}
 
 Addons የUltimate Multisiteን አቅም በተጨማሪ ባህሪያት እና ውህደቶች ያሰፋሉ። አብዛኛዎቹ Addons ክፍያ የሚጠይቁ ሲሆን ከ[ultimatemultisite.com](https://ultimatemultisite.com) ሊገዙ ይችላሉ።
 
-## መጫን (Installation)
+## መጫን (Installation) {#installation}
 
 Addons በሁለት መንገዶች ሊጫኑ ይችላሉ፦
 
 1. **በAddon ገጽ በኩል** — በWordPress admin ውስጥ የድረ-ገጽ Addon አስተዳደር ገጽ ላይ ይሂዱ።
 2. **በእጅ ማውረድ (Manual Download)** — ከ[የእርስዎ አካውንት](https://ultimatemultisite.com/my-account/downloads/) ያውርዱ እና በPlugins > Add New በኩል ይጫኑ።
 
-## ያሉ Addonsዎች
+## ያሉ Addonsዎች {#available-addons}
 
 | Addon | መግለጫ |
 |-------|-------------|

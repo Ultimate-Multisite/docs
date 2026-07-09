@@ -3,7 +3,7 @@ title: Ṣíṣàkóso Àwọn ìjápọ̀ Tí a Lè Pín fún Àwọn Ètò
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Ṣíṣàkóso Àwọn Ọ̀nà àsopọ̀ Tí a Lè Pín fún Àwọn Plan
+# Ṣíṣàkóso Àwọn Ọ̀nà àsopọ̀ Tí a Lè Pín fún Àwọn Plan {#managing-shareable-links-for-plans}
 
 Ultimate Multisite fún ọ ní aṣayan láti pín àwọn ọ̀nà àsopọ̀ plan taara pẹ̀lú àwọn oníbàárà rẹ. Láti ṣe èyí, lọ sí èyíkéyìí nínú àwọn ojú-ewé àtúnṣe plan rẹ kí o sì tẹ bọ́tìnì _Tẹ̀ láti da Shareable Link kọ_.
 

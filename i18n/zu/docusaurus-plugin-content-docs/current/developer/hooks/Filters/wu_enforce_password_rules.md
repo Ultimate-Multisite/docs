@@ -4,13 +4,13 @@ title: Isihlungi - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Hlunga ukuthi kuphoqelelwe yini imithetho eyengeziwe yephasiwedi.
 
 Uma kuyi-true, iphoqelela ubude obuncane nezimfuneko zezinhlamvu. Ivulwa ngokuzenzakalelayo kusethingi ethi "Super Strong" noma lapho isici se-Strong Password se-Defender Pro sisebenza.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Uma kuyi-true, iphoqelela ubude obuncane nezimfuneko zezinhlamvu. Ivulwa ngokuze
 | $strength_setting | `string` | Inani lesethingi lomlawuli. |
 | $defender_active | `bool` | Ukuthi i-Defender Pro Strong Password iyasebenza yini. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.4.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) emgqeni 531

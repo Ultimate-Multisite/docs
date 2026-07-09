@@ -3,13 +3,13 @@ title: Migration till tredjepartsläge
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migration till Third-Party Mode
+# Migration till Third-Party Mode {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 ändrar hur tredjepartskapaciteter hanteras. **Third-party mode är nu standardinställningen (auto)**, vilket möjliggör inbyggd integration med WordPress Abilities API på WordPress 7.0+ utan manuell konfiguration.
 
-## Vad har ändrats?
+## Vad har ändrats? {#what-changed}
 
-### Innan v1.12.0
+### Innan v1.12.0 {#before-v1120}
 
 Tredjepartskapaciteter krävde manuell konfiguration:
 
@@ -18,7 +18,7 @@ Tredjepartskapaciteter krävde manuell konfiguration:
 - Integration med WordPress Abilities API var valfri
 - Legacy mode var standardinställningen
 
-### Efter v1.12.0
+### Efter v1.12.0 {#after-v1120}
 
 Tredjepartskapaciteter fungerar automatiskt:
 
@@ -27,13 +27,13 @@ Tredjepartskapaciteter fungerar automatiskt:
 - Ingen manuell konfiguration behövs på WordPress 7.0+
 - Legacy mode finns fortfarande tillgängligt för äldre WordPress-versioner
 
-## Vem påverkas?
+## Vem påverkas? {#who-is-affected}
 
-### Nya installationer (WordPress 7.0+)
+### Nya installationer (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Inga åtgärder krävs.** Third-party mode ställs automatiskt in på "auto", och kapaciteterna fungerar direkt ur lådan.
 
-### Befintliga installationer
+### Befintliga installationer {#existing-installations}
 
 **Dina inställningar sparas.** Om du använde:
 
@@ -41,7 +41,7 @@ Tredjepartskapaciteter fungerar automatiskt:
 - **Manuell third-party mode**: Du förblir i manuellt läge (ingen förändring)
 - **Auto mode**: Du fortsätter med auto mode (ingen förändring)
 
-### WordPress-versioner före 7.0
+### WordPress-versioner före 7.0 {#wordpress-versions-before-70}
 
 **Legacy mode är fortfarande tillgängligt.** Om du kör WordPress 6.x eller äldre:
 
@@ -49,9 +49,9 @@ Tredjepartskapaciteter fungerar automatiskt:
 - Du kan manuellt aktivera third-party mode om du önskar
 - Uppgradera till WordPress 7.0+ för att använda det inbyggda Abilities API
 
-## Förstå lägena
+## Förstå lägena {#understanding-the-modes}
 
-### Auto Mode (Ny standard)
+### Auto Mode (Ny standard) {#auto-mode-new-default}
 
 **Auto mode** använder inbyggd integration med WordPress Abilities API:
 
@@ -62,7 +62,7 @@ Tredjepartskapaciteter fungerar automatiskt:
 
 **När ska man använda det**: WordPress 7.0+ med tredjepartskapaciteter
 
-### Manual Mode
+### Manual Mode {#manual-mode}
 
 **Manual mode** kräver explicit konfiguration:
 
@@ -73,7 +73,7 @@ Tredjepartskapaciteter fungerar automatiskt:
 
 **När ska man använda det**: Testning, selektiv kapacitetsladdning eller anpassade konfigurationer
 
-### Legacy Mode
+### Legacy Mode {#legacy-mode}
 
 **Legacy mode** använder det gamla tredjepartskapacitetssystemet:
 
@@ -84,24 +84,24 @@ Tredjepartskapaciteter fungerar automatiskt:
 
 **När ska man använda det**: WordPress 6.x eller äldre, eller när du behöver legacy-kompatibilitet
 
-## Kontrollera ditt nuvarande läge
+## Kontrollera ditt nuvarande läge {#checking-your-current-mode}
 
-### Via Admin Panel
+### Via Admin Panel {#via-admin-panel}
 
 1. Gå till **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Leta efter inställningen **Third-Party Mode**
 3. Du ser ditt nuvarande läge och alternativ för att ändra det
 
-### Via Code
+### Via Code {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', eller 'legacy'
 ```
 
-## Ändra ditt läge
+## Ändra ditt läge {#changing-your-mode}
 
-### Växla till Auto Mode
+### Växla till Auto Mode {#switch-to-auto-mode}
 
 Om du kör WordPress 7.0+ och vill använda auto mode:
 
@@ -112,7 +112,7 @@ Om du kör WordPress 7.0+ och vill använda auto mode:
 
 Superdav AI Agent kommer automatiskt att upptäcka och registrera tredjepartskapaciteter.
 
-### Växla till Manual Mode
+### Växla till Manual Mode {#switch-to-manual-mode}
 
 Om du vill styra manuellt vilka kapaciteter som laddas:
 
@@ -122,7 +122,7 @@ Om du vill styra manuellt vilka kapaciteter som laddas:
 4. Klicka på **Save**
 5. Redigera din konfigurationsfil för att specificera vilka kapaciteter som ska laddas
 
-### Växla till Legacy Mode
+### Växla till Legacy Mode {#switch-to-legacy-mode}
 
 Om du behöver legacy-kompatibilitet:
 
@@ -131,9 +131,9 @@ Om du behöver legacy-kompatibilitet:
 3. Välj **Legacy**
 4. Klicka på **Save**
 
-## Fördelar med Auto Mode
+## Fördelar med Auto Mode {#benefits-of-auto-mode}
 
-### Automatisk upptäckt
+### Automatisk upptäckt {#automatic-discovery}
 
 Kapaciteter upptäcks automatiskt från:
 
@@ -144,7 +144,7 @@ Kapaciteter upptäcks automatiskt från:
 
 Ingen manuell registrering behövs.
 
-### Inbyggd integration
+### Inbyggd integration {#native-integration}
 
 Kapaciteterna integreras med WordPress Abilities API:
 
@@ -153,67 +153,67 @@ Kapaciteterna integreras med WordPress Abilities API:
 - Kompatibelt med andra plugins som använder Abilities API
 - Framtidssäkrat när WordPress utvecklas
 
-### Förenklad hantering
+### Förenklad hantering {#simplified-management}
 
 - Inga konfigurationsfiler att redigera
 - Ingen manuell kapacitetsregistrering
 - Ability Visibility-kontroller fungerar automatiskt
 - Admin notices varnar dig för oklassificerade kapaciteter
 
-### Bättre prestanda
+### Bättre prestanda {#better-performance}
 
 - Kapaciteterna cachas
 - Laddas vid behov (lazy-loaded)
 - Optimerat för WordPress 7.0+
 
-## Migrationsväg
+## Migrationsväg {#migration-path}
 
-### Om du kör WordPress 6.x
+### Om du kör WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Uppgradera till WordPress 7.0+** (när det är redo)
 2. **Uppdatera Superdav AI Agent** till v1.12.0+
 3. **Ändra third-party mode till Auto** (valfritt; legacy mode fungerar fortfarande)
 4. **Granska kapacitetsvisibiliteten** för att säkerställa korrekt åtkomstkontroll
 
-### Om du kör WordPress 7.0+
+### Om du kör WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Uppdatera Superdav AI Agent** till v1.12.0+
 2. **Verifiera att third-party mode är inställt på Auto** (det bör vara standard)
 3. **Granska kapacitetsvisibiliteten** för att säkerställa korrekt åtkomstkontroll
 4. **Testa tredjepartskapaciteterna** för att bekräfta att de fungerar
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
-### Kapaciteterna laddas inte i auto mode
+### Kapaciteterna laddas inte i auto mode {#abilities-arent-loading-in-auto-mode}
 
 - Verifiera att du kör WordPress 7.0+
 - Kontrollera att third-party mode är inställt på "Auto"
 - Verifiera att pluginet som tillhandahåller kapaciteten är aktivt
 - Kontrollera WordPress felloggar efter registreringsfel
 
-### Jag vill behålla legacy mode
+### Jag vill behålla legacy mode {#i-want-to-keep-legacy-mode}
 
 - Gå till **Settings** → **Third-Party Mode**
 - Välj **Legacy**
 - Klicka på **Save**
 - Legacy mode kommer att fortsätta fungera
 
-### Mina anpassade kapaciteter visas inte
+### Mina anpassade kapaciteter visas inte {#my-custom-abilities-arent-showing}
 
 - Verifiera att de är registrerade via WordPress hooks
 - Kontrollera att de implementerar Abilities API korrekt
 - Granska WordPress felloggar
 - Använd admin-sidan **Ability Visibility** för att se alla registrerade kapaciteter
 
-### Jag får meddelanden om "oklassificerad kapacitet"
+### Jag får meddelanden om "oklassificerad kapacitet" {#im-getting-unclassified-ability-notices}
 
 - Detta är normalt för nya tredjepartskapaciteter
 - Granska och klassificera dem i admin-meddelandet
 - Se **Ability Visibility** för detaljer om klassificering
 
-## Bakåtkompatibilitet
+## Bakåtkompatibilitet {#backward-compatibility}
 
-### Befintliga konfigurationer
+### Befintliga konfigurationer {#existing-configurations}
 
 Om du har befintliga tredjepartskapacitetskonfigurationer:
 
@@ -223,33 +223,33 @@ Om du har befintliga tredjepartskapacitetskonfigurationer:
 
 För att behålla din anpassade konfiguration, stanna i Manual eller Legacy mode.
 
-### Avvecklingstidslinje
+### Avvecklingstidslinje {#deprecation-timeline}
 
 - **v1.12.0**: Legacy och Manual modes stöds fortfarande fullt ut
 - **v1.13.0+**: Legacy mode kan visa avvecklingsmeddelanden
 - **v2.0.0**: Legacy mode kan tas bort (TBD)
 
-## Bästa praxis
+## Bästa praxis {#best-practices}
 
-### För nya installationer
+### För nya installationer {#for-new-installations}
 
 - Använd Auto mode (det är standard)
 - Låt Superdav AI Agent upptäcka kapaciteterna automatiskt
 - Använd Ability Visibility för att styra åtkomsten
 
-### För befintliga installationer
+### För befintliga installationer {#for-existing-installations}
 
 - Uppgradera till WordPress 7.0+ när det är möjligt
 - Växla till Auto mode för förenklad hantering
 - Granska och klassificera kapaciteterna med Ability Visibility
 
-### För anpassade kapaciteter
+### För anpassade kapaciteter {#for-custom-abilities}
 
 - Registrera kapaciteter via WordPress hooks (Abilities API)
 - Undvik anpassade kapacitetsregister
 - Testa på WordPress 7.0+ med Auto mode
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 1. **Kontrollera din WordPress-version**: Verifiera att du kör 7.0+ för Auto mode
 2. **Granska ditt third-party mode**: Gå till Settings och kontrollera ditt nuvarande läge
@@ -257,7 +257,7 @@ För att behålla din anpassade konfiguration, stanna i Manual eller Legacy mode
 4. **Klassificera kapaciteter**: Granska och klassificera alla oklassificerade kapaciteter
 5. **Testa**: Verifiera att dina tredjepartskapaciteter fungerar korrekt
 
-## Relaterade ämnen
+## Relaterade ämnen {#related-topics}
 
 - **Ability Visibility**: Styr vilka kapaciteter som exponeras var
 - **WordPress Abilities API**: Lär dig om inbyggd WordPress-kapacitetsregistrering

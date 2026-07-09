@@ -3,7 +3,7 @@ title: Questions fréquemment posées
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Questions fréquentes
+# Questions fréquentes {#frequently-asked-questions}
 
 Voici quelques **questions fréquentes** qui reviennent souvent lors des demandes de support.
 

@@ -3,17 +3,17 @@ title: Piranti lan Konfigurasi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Piranti lan Konfigurasi
+# Piranti lan Konfigurasi {#tools-and-configuration}
 
 Theme Builder nggunakake sakumpulan piranti kanggo nganalisis, ngrancang, lan mbangun situs WordPress panjenengan. Ing versi 1.16.0, **sd-ai-agent/site-scrape saiki dadi piranti Tier 1**, saéngga kasedhiya kanthi gawan ing Theme Builder. Superdav AI Agent v1.18.0 uga ngenalaké paket pendamping Advanced sing disebaraké kanthi kapisah kanggo alur kerja pangembang sing dipercaya; piranti-piranti kuwi dudu bagéan saka paket inti WordPress.org lan kudu diinstal sarta diwènèhi wewenang kanthi kapisah.
 
-## Piranti sing Kasedhiya
+## Piranti sing Kasedhiya {#available-tools}
 
-### Piranti Tier 1 (Tansah Kasedhiya)
+### Piranti Tier 1 (Tansah Kasedhiya) {#tier-1-tools-always-available}
 
 Piranti Tier 1 kasedhiya kanthi gawan ing Theme Builder tanpa konfigurasi tambahan.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Tujuan:** Nganalisis situs web sing wis ana kanggo njupuk inspirasi desain, struktur konten, lan fungsionalitas.
 
@@ -51,11 +51,11 @@ Analisis desain example.com lan gunakna minangka inspirasi kanggo situsku.
 - Situs sing abot JavaScript bisa nduwèni analisis winates
 - Situs gedhé bisa butuh wektu luwih suwé kanggo dianalisis
 
-### Piranti Tier 2 (Opsional)
+### Piranti Tier 2 (Opsional) {#tier-2-tools-optional}
 
 Piranti Tier 2 kasedhiya nalika diaktifaké kanthi tegas ing setelan Theme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
 Nyedhiyakake metrik performa rinci:
 
@@ -65,7 +65,7 @@ Nyedhiyakake metrik performa rinci:
 - Skor aksesibilitas
 - Skor praktik paling apik
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
 Nganalisis lan nyaranaké panyempurnaan kanggo:
 
@@ -75,11 +75,11 @@ Nganalisis lan nyaranaké panyempurnaan kanggo:
 - Struktur konten
 - Panggonan ajakan tumindak
 
-### Piranti Tier 3 (Premium)
+### Piranti Tier 3 (Premium) {#tier-3-tools-premium}
 
 Piranti Tier 3 mbutuhake konfigurasi tambahan utawa fitur premium.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Ngasilaké konten kanggo:
 
@@ -89,7 +89,7 @@ Ngasilaké konten kanggo:
 - Katrangan meta
 - Salinan ajakan tumindak
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
 Nyedhiyakake kapabilitas desain lanjut:
 
@@ -99,7 +99,7 @@ Nyedhiyakake kapabilitas desain lanjut:
 - Teori warna lanjut
 - Optimasi tipografi
 
-### Piranti Pendamping Advanced (Paket Kapisah)
+### Piranti Pendamping Advanced (Paket Kapisah) {#advanced-companion-tools-separate-package}
 
 Paket pendamping Advanced disebaraké kanthi kapisah saka rilis inti Superdav AI Agent. Iki ditujokaké kanggo lingkungan pangembang lan pamilik situs sing dipercaya, ing ngendi administrator kanthi tegas ngidini agen nggunakake piranti kanthi dampak gedhé.
 
@@ -116,9 +116,9 @@ Kapabilitas pendamping Advanced bisa kalebu:
 
 Aja ndokumentasèkaké iki minangka piranti Theme Builder sing kasedhiya umum kanggo saben instalasi. Piranti iki mung kasedhiya nalika paket pendamping Advanced wis diinstal, diaktifaké, lan diwatesi kanggo administrator sing dipercaya.
 
-## Konfigurasi Piranti
+## Konfigurasi Piranti {#tool-configuration}
 
-### Ngaktifaké Piranti
+### Ngaktifaké Piranti {#enabling-tools}
 
 Kanggo ngaktifaké piranti tambahan ing Theme Builder:
 
@@ -127,7 +127,7 @@ Kanggo ngaktifaké piranti tambahan ing Theme Builder:
 3. Toggle piranti urip/mati miturut kabutuhan
 4. Simpen setelan
 
-### Idin Piranti
+### Idin Piranti {#tool-permissions}
 
 Sawetara piranti mbutuhake idin:
 
@@ -137,7 +137,7 @@ Sawetara piranti mbutuhake idin:
 - **Fitur lanjut** — bisa mbutuhake langganan premium
 - **Piranti pendamping Advanced** — mbutuhake paket Advanced sing disebaraké kanthi kapisah lan kapercayan administrator kanthi tegas
 
-### API Keys lan Kredensial
+### API Keys lan Kredensial {#api-keys-and-credentials}
 
 Konfigurasi API keys kanggo piranti sing mbutuhake:
 
@@ -146,13 +146,13 @@ Konfigurasi API keys kanggo piranti sing mbutuhake:
 3. Tes sambungan
 4. Simpen kanthi aman
 
-### Nginstal Paket Pendamping Advanced
+### Nginstal Paket Pendamping Advanced {#installing-the-advanced-companion-package}
 
 Paket pendamping Advanced dirilis kanthi kapisah saka ZIP inti WordPress.org. Instal mung saka kanal distribusi proyek resmi kanggo rilis kasebut, banjur watesi akses kanggo administrator sing dipercaya. Tinjau gerbang persetujuan manungsa lan prilaku snapshot git sadurungé ngaktifaké piranti sistem berkas, database, WP-CLI, dispatcher REST, panggawe tambahan, manajemen pangguna, utawa benchmark ing situs produksi.
 
-## Nggunakake sd-ai-agent/site-scrape
+## Nggunakake sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Panggunaan Dhasar
+### Panggunaan Dhasar {#basic-usage}
 
 Jaluk Theme Builder kanggo nganalisis situs web:
 
@@ -161,7 +161,7 @@ Analisis desain situs pesaingku ing competitor.com
 lan saranaké panyempurnaan desain kanggo situsku.
 ```
 
-### Analisis Tertentu
+### Analisis Tertentu {#specific-analysis}
 
 Nyuwun jinis analisis tartamtu:
 
@@ -179,7 +179,7 @@ Priksa responsivitas seluler example.com lan pesthèkaké situsku
 padha responsifé.
 ```
 
-### Analisis Perbandingan
+### Analisis Perbandingan {#comparison-analysis}
 
 Bandhingaké pirang-pirang situs:
 
@@ -188,22 +188,22 @@ Bandhingaké desain site1.com lan site2.com banjur gawé desain
 sing nggabungaké unsur paling apik saka kalorone.
 ```
 
-## Watesan lan Pertimbangan Piranti
+## Watesan lan Pertimbangan Piranti {#tool-limitations-and-considerations}
 
-### Watesan Laju
+### Watesan Laju {#rate-limiting}
 
 - Scraping diwatesi tingkaté kanggo nyegah server kakehan beban
 - Pirang-pirang panjaluk menyang situs sing padha bisa diwatesi
 - Situs gedhé bisa mbutuhake wektu luwih suwé kanggo dianalisis
 
-### Akurasi Konten
+### Akurasi Konten {#content-accuracy}
 
 - Konten dinamis bisa uga ora kacandhak kanthi pepak
 - Konten sing dirender nganggo JavaScript bisa uga ora pepak
 - Data wektu nyata bisa uga ora kagambar
 - Sawetara konten bisa uga ana ing mburi paywall
 
-### Pertimbangan Hukum lan Etika
+### Pertimbangan Hukum lan Etika {#legal-and-ethical-considerations}
 
 - Ajèni robots.txt lan kabijakan situs
 - Aja scrape konten sing duwe hak cipta kanggo direproduksi
@@ -211,16 +211,16 @@ sing nggabungaké unsur paling apik saka kalorone.
 - Verifikasi manawa sampeyan duwe hak kanggo nggunakake konten sing diekstrak
 - Tindakake syarat layanan saka situs sing dianalisis
 
-### Pengaruh Kinerja
+### Pengaruh Kinerja {#performance-impact}
 
 - Scraping situs gedhé bisa mbutuhake wektu
 - Pirang-pirang scrape bebarengan bisa luwih alon
 - Sambungan jaringan mengaruhi kacepetan
 - Dataset gedhé bisa mbutuhake pangolahan luwih akèh
 
-## Praktik Paling Apik
+## Praktik Paling Apik {#best-practices}
 
-### Nggunakake Analisis Situs
+### Nggunakake Analisis Situs {#using-site-analysis}
 
 1. **Analisis pirang-pirang situs** — kumpulna inspirasi saka sawetara sumber
 2. **Fokus marang struktur** — sinaua pola tata letak lan organisasi
@@ -228,7 +228,7 @@ sing nggabungaké unsur paling apik saka kalorone.
 4. **Sinau tipografi** — temtokna kombinasi font sing sampeyan senengi
 5. **Tinjau navigasi** — mangertèni organisasi menu
 
-### Scraping sing Etis
+### Scraping sing Etis {#ethical-scraping}
 
 1. **Ajèni robots.txt** — tindakake pandhuan situs
 2. **Aja nyalin konten** — gunakna analisis mung kanggo inspirasi
@@ -236,7 +236,7 @@ sing nggabungaké unsur paling apik saka kalorone.
 4. **Sebutna sumber** — wènèhana kredit marang sumber inspirasi
 5. **Tindakake syarat** — patuh marang syarat layanan situs
 
-### Ngoptimalake Efektivitas Piranti
+### Ngoptimalake Efektivitas Piranti {#maximizing-tool-effectiveness}
 
 1. **Cetha lan rinci** — jaluk jinis analisis tartamtu
 2. **Wènèhana konteks** — terangna tujuan situs sampeyan
@@ -244,9 +244,9 @@ sing nggabungaké unsur paling apik saka kalorone.
 4. **Iterasi** — sempurnakna adhedhasar asil
 5. **Gabungna piranti** — gunakna pirang-pirang piranti kanggo analisis sing komprehensif
 
-## Ngatasi Masalah
+## Ngatasi Masalah {#troubleshooting}
 
-### Situs Ora Bisa Di-scrape
+### Situs Ora Bisa Di-scrape {#site-wont-scrape}
 
 - Priksa manawa situs bisa diakses umum
 - Verifikasi robots.txt ngidini scraping
@@ -254,7 +254,7 @@ sing nggabungaké unsur paling apik saka kalorone.
 - Priksa sambungan internet
 - Hubungi dhukungan yen masalah isih ana
 
-### Analisis Ora Pepak
+### Analisis Ora Pepak {#incomplete-analysis}
 
 - Situs bisa uga duwe konten dinamis
 - JavaScript bisa uga ora dirender kanthi pepak
@@ -262,7 +262,7 @@ sing nggabungaké unsur paling apik saka kalorone.
 - Coba analisis kaca tartamtu wae
 - Jaluk jinis analisis tartamtu
 
-### Kinerja Alon
+### Kinerja Alon {#slow-performance}
 
 - Situs gedhé mbutuhake wektu luwih suwé kanggo dianalisis
 - Pirang-pirang scrape bebarengan luwih alon
@@ -270,7 +270,7 @@ sing nggabungaké unsur paling apik saka kalorone.
 - Coba nalika jam ora rame
 - Analisis bagean sing luwih cilik dhisik
 
-## Dokumentasi Gegandhengan
+## Dokumentasi Gegandhengan {#related-documentation}
 
 - [Wawancara Panemuan](./discovery-interview.md) — nglumpukake informasi desain
 - [Arah Desain](./design-direction.md) — nyempurnakake desain sampeyan

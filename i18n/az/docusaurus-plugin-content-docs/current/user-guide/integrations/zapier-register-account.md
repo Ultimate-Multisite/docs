@@ -3,7 +3,7 @@ title: Zapier vasitəsilə Account qeydiyyatdan keçirin
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Hadisə: Zapier vasitəsilə Account qeydiyyatı
+# Hadisə: Zapier vasitəsilə Account qeydiyyatı {#event-register-an-account-via-zapier}
 
 [Ultimate Multisite-i Zapier ilə inteqrasiya etmək](zapier.md) məqaləsində trigger-lər və hadisələr əsasında Ultimate Multisite daxilində müxtəlif əməliyyatları yerinə yetirmək üçün Zapier-dən necə istifadə etməyi müzakirə etdik. Bu məqalədə 3-cü tərəf tətbiqlərini necə inteqrasiya edə biləcəyinizi göstərəcəyik. Məlumat mənbəyi kimi Google Sheets-dən istifadə edəcəyik və Account qeydiyyatı üçün məlumatı Ultimate Multisite-ə göndərəcəyik.
 

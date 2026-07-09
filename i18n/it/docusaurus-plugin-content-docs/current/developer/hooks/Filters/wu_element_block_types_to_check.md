@@ -4,16 +4,16 @@ title: Filtro - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Filtro: wu_element_block_types_to_check
+# Filtro: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
 
 Potremmo dover aggiungere blocchi aggiuntivi in seguito.
 
-### Dalla versione
+### Dalla versione {#since}
 
 - 2.0.0
-### Sorgente
+### Sorgente {#source}
 
 Definito in [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L300) alla riga 300
 
 
-## Restituisce
+## Restituisce {#returns}

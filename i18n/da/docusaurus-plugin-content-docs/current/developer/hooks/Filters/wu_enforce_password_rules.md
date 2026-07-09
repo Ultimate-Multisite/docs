@@ -4,13 +4,13 @@ title: Filter - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Filtrer, om yderligere adgangskoderegler skal håndhæves.
 
 Når true, håndhæves krav til minimumslængde og tegn. Aktiveres automatisk for indstillingen "Super Strong", eller når Defender Pros Strong Password-funktion er aktiv.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Når true, håndhæves krav til minimumslængde og tegn. Aktiveres automatisk fo
 | $strength_setting | `string` | Værdien af administratorindstillingen. |
 | $defender_active | `bool` | Om Defender Pro Strong Password er aktiv. |
 
-### Siden
+### Siden {#since}
 
 - 2.4.0
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) på linje 531

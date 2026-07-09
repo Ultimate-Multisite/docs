@@ -3,7 +3,7 @@ title: Ṣíṣe ìgbésókè Ètò kan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ìgbésókè Eto kan (v2)
+# Ìgbésókè Eto kan (v2) {#upgrading-a-plan-v2}
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 
@@ -41,7 +41,7 @@ Lẹ́yìn tí ìsanwó bá parí, a ó fi ọjà tuntun náà/àwọn ọjà tu
 
 ##
 
-## Àwọn Ọ̀nà Ìgbésókè àti Ìsọdipalẹ̀
+## Àwọn Ọ̀nà Ìgbésókè àti Ìsọdipalẹ̀ {#upgrade-and-downgrade-paths}
 
 Lórí ọ̀kọ̀ọ̀kan àwọn ọjà rẹ, ìwọ yóò ní táàbù **Ìgbésókè & Ìsọdipalẹ̀**. Àṣàyàn àkọ́kọ́ lórí táàbù yẹn ni pápá kan tí a ń pè ní **Ẹgbẹ́ Eto**.
 

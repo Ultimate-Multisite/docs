@@ -4,19 +4,19 @@ title: Filtar - wp_should_rescue_orphaned_sites
 sidebar_label: wp_should_rescue_orphaned_sites
 _i18n_hash: 81974ce2b5c3b74096701e83fb0ffff2
 ---
-# Filtar: wp_should_rescue_orphaned_sites
+# Filtar: wp_should_rescue_orphaned_sites {#filter-wpshouldrescueorphanedsites}
 
 Filtrira trebaju li se osirotjela web-mjesta spasiti.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Tip | Opis |
 |------|------|-------------|
 | $should | `bool` | Treba li spasiti osirotjela web-mjesta. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L637) na retku 637

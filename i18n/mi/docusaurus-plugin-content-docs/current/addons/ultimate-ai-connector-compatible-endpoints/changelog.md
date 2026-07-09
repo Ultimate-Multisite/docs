@@ -3,9 +3,9 @@ title: Tūhono AI Ultimate mō ngā Pito Mutunga Hototahi Rārangi Panonitanga
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector mō Compatible Endpoints Rangitaki Panonitanga
+# Ultimate AI Connector mō Compatible Endpoints Rangitaki Panonitanga {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Putanga 2.0.0 — I tukuna i te 2026-04-24
+## Putanga 2.0.0 — I tukuna i te 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Hou: Tautoko kaiwhakarato-maha — whirihorahia ngā AI endpoints maha, ā, aratakina ngā tono me te hokinga aunoa puta noa i ngā kaiwhakarato.
 * Whakatika: Whakaurunga SDK kaiwhakarato-maha me ngā ID kaiwhakarato tika, ngā URL rēhitatanga, me te whakawhāiti tātari HTTP mō ia kaiwhakarato.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Whakatika: I whakakorea te tono HTTP ārahi i rere i ia utanga whārangi.
 * Kua whakapai ake: Kua whakahōungia ngā rerengamahi GitHub Actions ki Node.js 24.
 
-## Putanga 1.0.0 — Tukunga Tuatahi
+## Putanga 1.0.0 — Tukunga Tuatahi {#version-100--initial-release}

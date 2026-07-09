@@ -3,13 +3,13 @@ title: Устаноўка плагіна Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Устаноўка Ultimate Multisite
+# Устаноўка Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Гэты падручнік мяркуе, што ў вас ужо устаноўлены і наладжаны WordPress Multisite. Каб даведацца, як гэта зрабіць, азнаёмцеся з [гэтым кіраўніцтвам](https://www.wpbeginner.com/glossary/multisite/) ад WP Beginner.
 :::
 
-## Устаноўка плагіна
+## Устаноўка плагіна {#installing-the-plugin}
 
 Ultimate Multisite даступны бясплатна на [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Ultimate Multisite даступны бясплатна на [WordPress.org](http
 
 ![Плагін актываваны і пераадрасаваны ў майстар налад](/img/installation/plugin-activated.png)
 
-## Майстар налад (Setup Wizard)
+## Майстар налад (Setup Wizard) {#setup-wizard}
 
 Майстар налад дапаможа вам наладзіць Ultimate Multisite прыблізна за 10 хвілін.
 
-### Вітаем
+### Вітаем {#welcome}
 
 Націсніце **Get Started**, каб пачаць.
 
 ![Вітальная старонка майстра налад](/img/installation/wizard-welcome.png)
 
-### Папярэднія праверкі (Pre-install Checks)
+### Папярэднія праверкі (Pre-install Checks) {#pre-install-checks}
 
 Гэты крок правярае інфармацыю аб вашай сістэме і ўстаноўцы WordPress, каб пераканацца, што яна адпавядае патрабаванням Ultimate Multisite. Калі ўсё добра, націсніце **Go to the Next Step**.
 
@@ -51,31 +51,31 @@ Ultimate Multisite даступны бясплатна на [WordPress.org](http
 Націскаючы **Network Activate**, вы аўтаматычна актывуеце плагін ва ўсёй вашай сетцы. Пасля актывацыі майстар налад будзе працягваць работу звычайна да кроку ўстаноўкі. Вам не трэба пакідаць майстар налад, каб вырашыць праблему з актывацыяй.
 :::
 
-### Устаноўка (Installation)
+### Устаноўка (Installation) {#installation}
 
 Усталёўшчык створыць неабходныя табліцы базы дадзеных і ўсталюе файл `sunrise.php`, які патрэбны для працы Ultimate Multisite. Націсніце **Install**, каб працягнуць.
 
 ![Крок устаноўкі, які паказвае табліцы базы дадзеных і файл sunrise.php](/img/installation/wizard-installation.png)
 
-### Ваша кампанія (Your Company)
+### Ваша кампанія (Your Company) {#your-company}
 
 Запоўніце інфармацыю аб вашай кампаніі і ўкажыце валюту па змаўчанні. Гэтая інфармацыя будзе выкарыстоўвацца ва ўсёй вашай WaaS-платформе. Націсніце **Continue**, калі скончыце.
 
 ![Крок налады "Ваша кампанія"](/img/installation/wizard-your-company.png)
 
-### Змястоў па змаўчанні (Default Content)
+### Змястоў па змаўчанні (Default Content) {#default-content}
 
 Гэты крок дазваляе ўсталяваць зададзеныя шаблоны, прадукты і іншы стартавы кантэнт. Гэта выдатны спосаб азнаёміцца ​​з функцыямі Ultimate Multisite. Націсніце **Install**, каб дадаць змястоў па змаўчанні, або прапусціце гэты крок, калі аддаеце перавагу пачынаць з нуля.
 
 ![Крок устаноўкі зместу па змаўчанні](/img/installation/wizard-default-content.png)
 
-### Рэкамендаваныя плагіны (Recommended Plugins)
+### Рэкамендаваныя плагіны (Recommended Plugins) {#recommended-plugins}
 
 Пры неабходнасці ўсталюйце рэкамендаваныя дадатковыя плагіны. Націсніце **Install**, каб дадаць іх, або прапусціце, каб працягнуць.
 
 ![Крок з рэкамендаванымі плагінамі](/img/installation/wizard-recommended-plugins.png)
 
-### Гатова! (Ready!)
+### Гатова! (Ready!) {#ready}
 
 Вось і ўсё! Устаноўка Ultimate Multisite завершана. Цяпер вы можаце пачаць ствараць сваю платформу Website as a Service з **Network Admin Dashboard**.
 

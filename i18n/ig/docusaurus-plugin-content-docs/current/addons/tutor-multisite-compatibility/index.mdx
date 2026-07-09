@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Ngwa mgbakwunye WordPress nke na-agbakwunye ndozi ndakọrịta maka Tutor LMS n'ime gburugburu multisite.
 
-## Nkọwa
+## Nkọwa {#description}
 
 Ngwa mgbakwunye a na-enye ndozi ndakọrịta dị mkpa maka ịrụ Tutor LMS na netwọkụ multisite WordPress. Ọ na-elekọta idebanye ndị ọrụ, njikwa ndị nkuzi, mmachi nkuzi, na arụmọrụ ndị ọzọ pụrụ iche maka multisite.
 
-## Njirimara
+## Njirimara {#features}
 
 - **Njikwa Tebụl Ebe Nchekwa Data**: Na-achọpụta ma mepụta tebụl Tutor LMS ndị na-efu efu n'akpaghị aka, ndị dara n'ihi mmachi foreign key nke multisite
 - **Ndebanye Onye Ọrụ Multisite**: Ndị njikwa AJAX ahaziri ahazi maka ijikwa ndebanye ndị ọrụ n'ofe saịtị netwọkụ
@@ -24,7 +24,7 @@ Ngwa mgbakwunye a na-enye ndozi ndakọrịta dị mkpa maka ịrụ Tutor LMS n
 - **Nlele Admin Ahaziri Ahazi**: Ndepụta ndị nkuzi na interface njikwa nke maara multisite
 - **Ngwaọrụ Admin**: Interface njikwa ebe nchekwa data maka ndị nchịkwa netwọkụ na saịtị
 
-## Ihe A Chọrọ
+## Ihe A Chọrọ {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Ngwa mgbakwunye a na-enye ndozi ndakọrịta dị mkpa maka ịrụ Tutor LMS n
 - Ntinye WordPress Multisite
 - Ngwa mgbakwunye Ultimate Multisite (maka arụmọrụ mmachi nkuzi)
 
-## Ntinye
+## Ntinye {#installation}
 
 1. Bulite faịlụ ngwa mgbakwunye ahụ na `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Gbaa mbọ hụ na etinyere ma mee ka Tutor LMS rụọ ọrụ
 3. Mee ka ngwa mgbakwunye ahụ rụọ ọrụ site na menu 'Plugins' na WordPress
 4. Ngwa mgbakwunye ahụ ga-ejikọta na Tutor LMS n'akpaghị aka
 
-## Nhazi Faịlụ
+## Nhazi Faịlụ {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Arụmọrụ Ebugara Site na MU Plugin
+## Arụmọrụ Ebugara Site na MU Plugin {#functionality-moved-from-mu-plugin}
 
 Ngwa mgbakwunye a nwere arụmọrụ nke dịbu na `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Ngwa mgbakwunye a nwere arụmọrụ nke dịbu na `wp-content/mu-plugins/daves
 - Ijikwa ndebanye onye ọrụ multisite
 - Ngosipụta ID ngwaahịa nkuzi
 
-## Njikwa Ebe Nchekwa Data
+## Njikwa Ebe Nchekwa Data {#database-management}
 
-### Nsogbu Ahụ
+### Nsogbu Ahụ {#the-problem}
 
 N'ime gburugburu multisite WordPress, imepụta tebụl Tutor LMS na-ada maka tebụl nwere mmachi foreign key na tebụl ndị ọrụ. Nke a na-eme n'ihi na:
 
@@ -81,7 +81,7 @@ N'ime gburugburu multisite WordPress, imepụta tebụl Tutor LMS na-ada maka te
 - Foreign keys na-ezo aka na `wp_2_users` (nke na-adịghị adị)
 - Tebụl ndị ọrụ n'ezie bụ `wp_users` (a na-ekekọrịta ya n'ofe netwọkụ)
 
-### Ngwọta Ahụ
+### Ngwọta Ahụ {#the-solution}
 
 Ngwa mgbakwunye a na-eme ihe ndị a n'akpaghị aka:
 
@@ -92,13 +92,13 @@ Ngwa mgbakwunye a na-eme ihe ndị a n'akpaghị aka:
    - Imepụta saịtị ọhụrụ na netwọkụ
    - Nlele tebụl aka site na interface admin
 
-### Tebụl Ndị Metụtara
+### Tebụl Ndị Metụtara {#affected-tables}
 
 - `tutor_coupon_usages` - Nwere foreign key gaa na tebụl ndị ọrụ
 - `tutor_carts` - Nwere foreign key gaa na tebụl ndị ọrụ
 - `tutor_notification_preferences` - Tebụl TutorPro nwere foreign key gaa na tebụl ndị ọrụ
 
-### Interface Admin
+### Interface Admin {#admin-interface}
 
 Nweta ngwaọrụ njikwa ebe nchekwa data na:
 
@@ -111,6 +111,6 @@ Interface ahụ na-enye gị ohere:
 - Lelee nhazi ebe nchekwa data
 - Lelee ozi ọnọdụ zuru ezu
 
-## Nkwado
+## Nkwado {#support}
 
 E mere ngwa mgbakwunye a kpọmkwem maka ikpo okwu KursoPro. Maka nkwado teknụzụ, kpọtụrụ ndị otu mmepe.

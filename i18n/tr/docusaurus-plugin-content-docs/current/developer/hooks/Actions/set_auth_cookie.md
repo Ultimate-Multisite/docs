@@ -4,11 +4,11 @@ title: Eylem - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Kimlik doğrulama çerezi ayarlanmadan hemen önce tetiklenir.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Adı | Tür | Açıklama |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Kimlik doğrulama çerezi ayarlanmadan hemen önce tetiklenir.
 | $scheme | `string` | Kimlik doğrulama şeması. Değerleri 'auth' veya 'secure_auth' olabilir. |
 | $token | `string` | Bu çerez için kullanılacak kullanıcının oturum token'ı. |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> parametresi eklendi.
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) dosyasında 124. satırda tanımlanmıştır.

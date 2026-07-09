@@ -4,11 +4,11 @@ title: Shaandheeye - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Filter: wu_generated_username_from_email
+# Filter: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Filter username-ka macmiilka la abuuray.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filter username-ka macmiilka la abuuray.
 | $new_user_args | `array` | Array args-ka isticmaalaha cusub ah, laga yaabo inay ku jiraan magacyada hore iyo dambe. |
 | $suffix | `string` | Ku dar string username-ka si looga dhigo mid gaar ah. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 3.7.0
-### Source
+### Source {#source}
 
 Waxaa lagu qeexay [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) safka 488

@@ -3,11 +3,11 @@ title: Àwọn Ọjà Dóméènì àti Ìdíyelé
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Ọjà Domain àti Ìdíyelé
+# Ọjà Domain àti Ìdíyelé {#domain-products-and-pricing}
 
 Ọjà domain ni bí o ṣe ń ṣàkóso ìdíyelé, TLDs, àṣírí WHOIS, àti yíyan olupese. Ọjà domain kọọkan jẹ́ ọjà Multisite Ultimate boṣewa pẹ̀lú taabu **Ètò Domain** àfikún.
 
-## Ṣíṣẹ̀dá ọjà domain
+## Ṣíṣẹ̀dá ọjà domain {#creating-a-domain-product}
 
 1. Lọ sí **Network Admin › Ultimate Multisite › Ọjà**
 2. Tẹ **Ṣàfikún Tuntun**
@@ -17,13 +17,13 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 Ọjà domain máa ń hàn pẹ̀lú àmì **Domain** aláwọ̀ púpù ní inú àtòjọ ọjà, a sì lè yọ wọn jáde nípa lílo taabu **Ọjà Domain**.
 
-## Taabu ètò domain
+## Taabu ètò domain {#domain-settings-tab}
 
-### Olupese
+### Olupese {#provider}
 
 Yan registrar tí yóò bójú tó ìforúkọsílẹ̀ fún ọjà yìí. Aiyipada ni **Olupese aiyipada** àgbáyé tí a ṣètò nínú ètò Domain Seller.
 
-### TLDs tí a ṣe àtìlẹ́yìn fún
+### TLDs tí a ṣe àtìlẹ́yìn fún {#supported-tlds}
 
 Fi sílẹ̀ ní òfo láti dá **ọjà tó mú gbogbo rẹ̀** ṣẹ̀, èyí tí yóò kan gbogbo TLDs tí ọjà míì kò bá mu.
 
@@ -31,7 +31,7 @@ Tẹ àtòjọ TLDs tí a fi kómà yà (fún àpẹẹrẹ, `.com, .net, .org`)
 
 **Bí ìbámu ọjà ṣe ń ṣiṣẹ́:** Nígbà tí oníbàárà bá wá domain kan, addon yóò yan ọjà tó bá a mu jù lọ. Ọjà kan tó ní `.com` nínú àtòjọ TLD rẹ̀ ní àkọ́kọ́ ju ọjà tó mú gbogbo rẹ̀ lọ. Tí kò bá sí ọjà pàtó fún TLD tó bá a mu, a ó lo ọjà tó mú gbogbo rẹ̀. Tí kò bá sí ọjà kankan, ìwá domain kò ní hàn.
 
-### Irú àfikún èrè
+### Irú àfikún èrè {#markup-type}
 
 Ọ̀nà mẹ́ta ló ń ṣàkóso bí a ṣe ń ṣe ìṣirò iye owó títà rẹ láti inú iye owó osunwon:
 
@@ -41,11 +41,11 @@ Tẹ àtòjọ TLDs tí a fi kómà yà (fún àpẹẹrẹ, `.com, .net, .org`)
 | **Àfikún èrè títọ́** | Ṣàfikún iye dọ́là títọ́ kan. Àfikún èrè $5 lórí domain $10 máa jẹ́ $15. |
 | **Iye owó títọ́** | Kò ka iye owó osunwon rárá. Ó máa ń gba iye tí o tẹ sílẹ̀ nígbà gbogbo. |
 
-### Ìdíyelé ìbẹ̀rẹ̀
+### Ìdíyelé ìbẹ̀rẹ̀ {#introductory-pricing}
 
 Mú un ṣiṣẹ́ láti fúnni ní iye owó ọdún àkọ́kọ́ tó ní ẹdinwo. Ṣètò **Iye owó ìbẹ̀rẹ̀** lọ́tọ̀ (iye owó ọdún 1) lẹ́gbẹ̀ẹ́ **Iye owó ìtúnṣe** déédéé (ọdún 2+). Oníbàárà yóò rí iye owó méjèèjì tí a fi hàn nígbà checkout kí wọ́n lè mọ ohun tí wọ́n máa retí nígbà ìtúnṣe.
 
-### Àṣírí WHOIS
+### Àṣírí WHOIS {#whois-privacy}
 
 Ó ń ṣàkóso bóyá a ó fúnni ní ààbò àṣírí WHOIS fún domains tí a forúkọ sílẹ̀ nípasẹ̀ ọjà yìí.
 
@@ -59,7 +59,7 @@ Fún Namecheap, àṣírí WHOIS ń lo WhoisGuard (ọ̀fẹ́ nígbà gbogbo). 
 
 ---
 
-## Gbigbewọlé àti ìmúdọ́gba TLD
+## Gbigbewọlé àti ìmúdọ́gba TLD {#tld-import-and-sync}
 
 Ọjà domain ń fi ìdíyelé osunwon àkókò-gidi hàn tí a mú wá láti ọdọ olupese tí a so pọ̀. Kí èyí lè ṣiṣẹ́, a gbọ́dọ̀ gbé TLDs wọlé.
 
@@ -70,7 +70,7 @@ Lẹ́yìn ìmúdọ́gba, lọ sí taabu Ètò Domain ti ọjà domain èyíké
 
 ---
 
-## Ìtúnṣe laifọwọyi
+## Ìtúnṣe laifọwọyi {#auto-renewal}
 
 Àwọn ìtúnṣe domain so mọ́ ipò membership oníbàárà:
 
@@ -90,7 +90,7 @@ Lẹ́yìn ìmúdọ́gba, lọ sí taabu Ètò Domain ti ọjà domain èyíké
 
 ---
 
-## Admin: Ìforúkọsílẹ̀ domain ọwọ́
+## Admin: Ìforúkọsílẹ̀ domain ọwọ́ {#admin-manual-domain-registration}
 
 Láti forúkọ domain kan sílẹ̀ ní orúkọ oníbàárà láì jẹ́ kí wọ́n gba checkout kọjá:
 

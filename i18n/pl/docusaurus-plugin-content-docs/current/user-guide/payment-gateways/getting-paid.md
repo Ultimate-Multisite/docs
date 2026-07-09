@@ -3,13 +3,13 @@ title: Otrzymywanie płatności
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Otrzymywanie płatności (v2)
+# Otrzymywanie płatności (v2) {#getting-paid-v2}
 
 _**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 
 Ultimate Multisite ma wbudowany system członkostwa i rozliczeń. Aby nasz system rozliczeń działał, zintegrowaliśmy najpopularniejsze bramki płatności używane w e-commerce. Domyślne bramki płatności w Ultimate Multisite to _Stripe_ , _PayPal_ oraz płatność ręczna. Możesz także używać _WooCommerce_ , _GoCardless_ i _Payfast_ do otrzymywania płatności, instalując odpowiednie add-ons.
 
-## Podstawowe ustawienia
+## Podstawowe ustawienia {#basic-settings}
 
 Możesz skonfigurować dowolną z tych bramek płatności w ustawieniach płatności Ultimate Multisite. Znajdziesz je, przechodząc do **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Zapobiega to sytuacji, w której członkostwo wygląda na odnawiane automatyczni
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Gdzie znaleźć bramki:
+## Gdzie znaleźć bramki: {#where-to-find-the-gateways}
 
 Możesz skonfigurować bramki płatności na tej samej stronie ( **Ultimate Multisite > Settings > Payments**). Tuż pod **aktywnymi bramkami płatności** zobaczysz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ i _Manual_.
 
@@ -67,7 +67,7 @@ Oto także pełny widok ustawień bramek płatności:
 
 Teraz, jeśli chcesz używać _WooCommerce_ , _GoCardless_ lub _Payfast_ jako swojej bramki płatności, musisz **zainstalować i skonfigurować ich add-ons**.
 
-### Jak zainstalować add-on WooCommerce:
+### Jak zainstalować add-on WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Rozumiemy, że _Stripe_ i _PayPal_ nie są dostępne w niektórych krajach, co ogranicza lub utrudnia użytkownikom Ultimate Multisite skuteczne korzystanie z naszego pluginu. Dlatego stworzyliśmy add-on integrujący _WooCommerce,_ który jest bardzo popularnym pluginem e-commerce. Programiści na całym świecie stworzyli add-ons integrujące z nim różne bramki płatności. Wykorzystaliśmy to, aby rozszerzyć bramki płatności, których możesz używać z systemem rozliczeń Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Po jego włączeniu, jeśli nadal nie masz zainstalowanej i włączonej wtyczki 
 
 Aby przeczytać więcej o dodatku WooCommerce Integration, **kliknij tutaj**.
 
-### Jak zainstalować dodatek GoCardless:
+### Jak zainstalować dodatek GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Kroki instalacji dodatku _GoCardless_ są prawie takie same jak w przypadku dodatku _WooCommerce_. Przejdź na stronę dodatków i wybierz dodatek **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Po zakończeniu instalacji nastąpi przekierowanie na stronę wtyczek. Tutaj po 
 
 Aby dowiedzieć się, jak rozpocząć korzystanie z bramki _GoCardless_, **przeczytaj ten artykuł**.
 
-### Jak zainstalować dodatek Payfast:
+### Jak zainstalować dodatek Payfast: {#how-to-install-the-payfast-add-on}
 
 Przejdź na stronę dodatków i wybierz dodatek **Ultimate Multisite: Payfast Gateway**.
 

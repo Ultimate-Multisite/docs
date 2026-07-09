@@ -4,11 +4,11 @@ title: Iragazkia - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Iragazkia: wu_rest_get_items
+# Iragazkia: wu_rest_get_items {#filter-wurestgetitems}
 
 Eskaerarekin jarraitzea baimentzen den ala ez iragazten du.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Eskaerarekin jarraitzea baimentzen den ala ez iragazten du.
 | $rest_base | `array` | Entitatearen slug-a. |
 | $this | `\Base_Manager` | Objektuaren instantzia. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.0.0
-### Iturburua
+### Iturburua {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) fitxategian definitua, 336. lerroan.

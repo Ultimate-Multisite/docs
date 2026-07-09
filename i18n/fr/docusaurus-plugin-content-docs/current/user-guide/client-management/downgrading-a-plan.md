@@ -3,13 +3,13 @@ title: Passer à un forfait inférieur
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Rétrograder un plan (v2)
+# Rétrograder un plan (v2) {#downgrading-a-plan-v2}
 
 _**NOTE IMPORTANTE : cet article fait référence à Ultimate Multisite version 2.x.**_
 
 Rétrograder un plan ou un abonnement est une action courante que vos clients peuvent effectuer s’ils ont un budget limité ou s’ils ont décidé qu’ils n’auront pas besoin de beaucoup de ressources pour faire fonctionner leur sous-site.
 
-## Comment rétrograder un plan
+## Comment rétrograder un plan {#how-to-downgrade-a-plan}
 
 Vos clients peuvent rétrograder leur plan à tout moment en se connectant au tableau de bord d’administration de leur sous-site et en cliquant sur **Modifier** sous leur page Account.
 
@@ -25,7 +25,7 @@ Pour continuer, l’utilisateur doit simplement cliquer sur le bouton **Terminer
 
 ![Page Account affichant la bannière de modification d’abonnement en attente](/img/account-page/pending-change.png)
 
-### Que se passe-t-il lorsqu’un utilisateur rétrograde son plan
+### Que se passe-t-il lorsqu’un utilisateur rétrograde son plan {#what-happens-when-a-user-downgrades-their-plan}
 
 Il est important de noter que la rétrogradation du plan ne modifie pas la configuration existante dans le sous-site de l’utilisateur.
 
@@ -37,7 +37,7 @@ Pour les publications dépassant la limite définie dans le plan, vous avez 3 op
 
 ![Page Sites des réglages Network Admin affichant les options de comportement en cas de dépassement de la limite de publications](/img/account-page/settings-sites-post-limit.png)
 
-### Que se passe-t-il pour le paiement
+### Que se passe-t-il pour le paiement {#what-happens-to-the-payment}
 
 Dans la version 2.0, cela ne nécessite plus aucun ajustement du paiement en termes de prorata.
 

@@ -3,19 +3,19 @@ title: Stripe-ի կարգավորումներ
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway-ի Կարգավորում (v2)
+# Stripe Gateway-ի Կարգավորում (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ԿԱՐԵՎՈՐ ՆՇՈՒՄ. Այս հոդվածը վերաբերում է Ultimate Multisite-ի 2.x տարբերակին։**_
 
 Դուք կարող եք գործարկել մինչև չորս վճարման մեթոդներ՝ մեր վճարումների կարգավորումների էջում. Stripe, Stripe Checkout, PayPal և Մանրամասն (Manual)։ Այս հոդվածում կտեսնենք, թե ինչպես ինտեգրել **Stripe**-ի հետ։
 
-## Stripe-ի Գործարկումը
+## Stripe-ի Գործարկումը {#enabling-stripe}
 
 Որպեսզի Stripe-ը դառնա որպես հասանելի վճարման գեյթเวย์ ձեր ցանցում, մուտք գործեք **Ultimate Multisite > Settings > Payments** և նշեք przeSWITCH-ը «Active Payment Gateways» բաժնի կողքին՝ **Stripe** կամ **Stripe Checkout**-ի համար։
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Այս մեթոդը կցուցադրի դաշտ՝ քարտի համարը մուտքագրելու համար վճարումների ժամանակ։
 
@@ -25,7 +25,7 @@ _**ԿԱՐԵՎՈՐ ՆՇՈՒՄ. Այս հոդվածը վերաբերում է Ulti
 
 ![Stripe Checkout redirect page during checkout](/img/config/settings-payment-gateways.png)
 
-### Ձեր Stripe API բանալիները ստանալը
+### Ձեր Stripe API բանալիները ստանալը {#setting-up-stripe-webhook}
 
 Երբ Stripe-ը գործարկված է որպես վճարման գեյթเวย์, անհրաժեշտ կլինեք լրացնել **Stripe Publishable Key** և **Stripe Secret Key** դաշտերը։ Դուք կարող եք սա ստանալ՝ մուտք գործելով ձեր Stripe հաշվի մեջ։
 

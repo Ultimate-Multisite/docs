@@ -3,13 +3,13 @@ title: Izveidojiet nišas tīmekļvietņu biznesu
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Veidojiet nišas tīmekļa vietņu biznesu ar Ultimate Multisite
+# Veidojiet nišas tīmekļa vietņu biznesu ar Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Lielākā daļa cilvēku, kas mēģina pārdot tīmekļa vietnes, konkurē cenā ar Wix, Squarespace un tūkstošiem ārštata speciālistu. Viņi zaudē. Tie, kas uzvar, izvēlas konkrētu auditoriju, izveido šai auditorijai pielāgotu risinājumu un iekasē maksu par vērtību, ko piegādā.
 
 Šis kurss iemācīs jums darīt tieši to, izmantojot Ultimate Multisite.
 
-## Ko jūs izveidosiet
+## Ko jūs izveidosiet {#what-you-will-build}
 
 Šī kursa laikā jūs izveidosiet īstu, strādājošu tīklu ar nosaukumu **FitSite** -- tīmekļa vietņu platformu, kas veidota īpaši fitnesa studijām, personīgajiem treneriem un sporta zāļu īpašniekiem.
 
@@ -23,7 +23,7 @@ Līdz pēdējai nodarbībai FitSite būs pilnīga nišas platforma ar:
 
 Jūs sekosiet līdzi soli pa solim, un beigās jums būs gan strādājoša platforma, gan zināšanas, lai atkārtotu šo procesu jebkurai izvēlētajai nišai.
 
-## Kāpēc fitnesa studijas?
+## Kāpēc fitnesa studijas? {#why-fitness-studios}
 
 Mums bija vajadzīgs konkrēts piemērs, kam ikviens var sekot līdzi. Fitnesa studijas ir piemērotas, jo:
 
@@ -34,7 +34,7 @@ Mums bija vajadzīgs konkrēts piemērs, kam ikviens var sekot līdzi. Fitnesa s
 
 Viss, ko apgūsiet, veidojot FitSite, ir tieši piemērojams jebkurai jūsu izvēlētajai nišai: restorāniem, nekustamā īpašuma aģentiem, juridiskajiem birojiem, baznīcām, amatniecības un būvniecības pakalpojumu sniedzējiem vai jebkurai citai vertikālei.
 
-## Kursa struktūra
+## Kursa struktūra {#course-structure}
 
 Katra nodarbība ievieš vienu konceptu, izskaidro, kāpēc tas ir svarīgs, un soli pa solim parāda, kā to ieviest FitSite tīklā. Katra nodarbība balstās uz iepriekšējo.
 
@@ -55,7 +55,7 @@ Katra nodarbība ievieš vienu konceptu, izskaidro, kāpēc tas ir svarīgs, un 
 | [13. Mērogošana](lesson-13-growth) | Izaugsme no pirmajiem klientiem līdz īstam biznesam | FitSite izaugsmes un automatizācijas stratēģija |
 | [14. Kas tālāk](lesson-14-whats-next) | Paplašināšanās uz blakus nišām un jaunām iespējām | Jūsu ceļvedis pēc FitSite |
 
-## Priekšnosacījumi
+## Priekšnosacījumi {#prerequisites}
 
 - WordPress Multisite instalācija (vai gatavība to izveidot)
 - Aktīva Ultimate Multisite licence
@@ -63,6 +63,6 @@ Katra nodarbība ievieš vienu konceptu, izskaidro, kāpēc tas ir svarīgs, un 
 
 Programmēšana nav nepieciešama. Ja nekad iepriekš neesat lietojis Ultimate Multisite, tas ir pilnīgi labi -- 3. nodarbība sākas no svaigas instalācijas.
 
-## Gatavi?
+## Gatavi? {#ready}
 
 Sāciet ar [1. nodarbību: Kāpēc niša uzvar](lesson-1-why-niche).

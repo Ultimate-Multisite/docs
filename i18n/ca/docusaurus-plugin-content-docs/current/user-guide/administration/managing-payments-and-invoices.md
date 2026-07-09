@@ -3,9 +3,9 @@ title: Gestió de Pagaments i Factures
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gestion de Pagaments i Factures
+# Gestion de Pagaments i Factures {#managing-payments-and-invoices}
 
-## Configuració de Pagaments
+## Configuració de Pagaments {#payment-settings}
 
 Abans de començar a rebre pagaments, hauràs de configurar les configuracions relacionades amb pagaments. Navega a **Ultimate Multisite → Settings** i fes clic a la pestanya **Payment**.
 
@@ -15,7 +15,7 @@ Aquí teniu una vista completa de la pàgina de configuració de pagaments:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Opcions Generals de Pagament
+### Opcions Generals de Pagament {#general-payment-options}
 
 A la configuració general pots configurar:
 
@@ -24,7 +24,7 @@ A la configuració general pots configurar:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Passarelles de Pagament (Payment Gateways)
+### Passarelles de Pagament (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite suporta múltiples passarelles de pagament. Pots habilitar i configurar cadascuna des de la pestanya de configuració de Pagaments.
 
@@ -40,11 +40,11 @@ Cada passarela té la seva pròpia secció de configuració on has de introduir 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Mode Sandbox
+### Mode Sandbox {#sandbox-mode}
 
 Pots activar el **Sandbox Mode** per provar la teva integració de pagaments abans de passar a l'operatiu. Quan el mode sandbox està actiu, no es realitzaran càrrejos reals.
 
-## Veure Pagaments
+## Veure Pagaments {#viewing-payments}
 
 Navega a la pàgina de **Payments** dins de Ultimate Multisite per veure totes les transaccions de la teva xarxa.
 
@@ -54,7 +54,7 @@ Pots filtrar els pagaments per estat (completat, pendents, fallit, reemborsat) i
 
 Fes clic a un pagament per veure els seus detalls complets, incloent els articles de la llista, la membresia associada, la informació del client i les dades de la passarela de pagament.
 
-## Factures (Invoices)
+## Factures (Invoices) {#invoices}
 
 Ultimate Multisite pot generar factures de manera automàtica per pagaments. Pots personalitzar la plantilla de factures i el format de numeració des de la configuració de Pagaments.
 

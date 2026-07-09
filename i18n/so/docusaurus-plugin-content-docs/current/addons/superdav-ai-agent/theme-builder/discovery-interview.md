@@ -3,35 +3,35 @@ title: Wareysi Ogaansho
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Wareysiga Ogaanshaha
+# Wareysiga Ogaanshaha {#discovery-interview}
 
 **Wareysiga Ogaanshaha** waa tallaabada koowaad ee habka naqshadaynta Theme Builder. Wuxuu ururiyaa macluumaad ku saabsan boggaaga, ganacsigaaga, iyo doorbidyada naqshadaynta si loo abuuro theme kuu gaar ah.
 
-## Dulmar
+## Dulmar {#overview}
 
 Wareysiga Ogaanshaha wuxuu kugu hagaa taxane su'aalo ah si loo fahmo summaddaada, dhagaystayaasha aad beegsanayso, iyo yoolalka naqshadaynta. Nooca 1.16.0, wareysigu hadda wuxuu ku jiraa **tallaabo sawir gelin** oo kuu oggolaanaysa inaad bixiso dhiirrigelin muuqaal ah oo loogu talagalay naqshaddaada.
 
-## Tallaabooyinka Wareysiga
+## Tallaabooyinka Wareysiga {#interview-steps}
 
-### 1. Macluumaadka Ganacsiga
+### 1. Macluumaadka Ganacsiga {#1-business-information}
 
 - Magaca bogga iyo oraahda gaaban
 - Nooca ganacsiga ama warshadda
 - Yoolalka ganacsiga ee ugu waaweyn
 - Sharaxaadda dhagaystayaasha la beegsanayo
 
-### 2. Doorbidyada Naqshadaynta
+### 2. Doorbidyada Naqshadaynta {#2-design-preferences}
 
 - Habka midabbada ee la doorbido
 - Qaabka naqshadaynta (casri, caadi, fududayn, ciyaar leh, iwm.)
 - Mareegaha ama summadaha dhiirrigelinta ah
 - Walxaha naqshadaynta ee lama huraanka ah
 
-### 3. Sawir Gelin (Cusub v1.16.0)
+### 3. Sawir Gelin (Cusub v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Geli hal ama ka badan sawirro si ay u saameeyaan jihada naqshadaynta:
 
-#### Qaababka La Aqbalo
+#### Qaababka La Aqbalo {#accepted-formats}
 
 | Qaab | Kordhin | Faahfaahin |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Geli hal ama ka badan sawirro si ay u saameeyaan jihada naqshadaynta:
 | **WebP** | `.webp` | Qaab casri ah, cabbir fayl oo ka yar |
 | **GIF** | `.gif` | Sawirro taagan oo keliya (dhaqdhaqaaq ma jiro) |
 
-#### Shuruudaha Faylka
+#### Shuruudaha Faylka {#file-requirements}
 
 - **Cabbirka faylka ugu badan:** 10 MB
 - **Cabbirrada ugu yar:** 400 × 300 pixels
 - **Cabbirrada lagu taliyay:** 1200 × 800 pixels ama ka weyn
 - **Saamiga dhinacyada:** Saami kasta waa la aqbali karaa
 
-#### Sida Sawirradu u Saameeyaan Jihada Naqshadaynta
+#### Sida Sawirradu u Saameeyaan Jihada Naqshadaynta {#how-photos-influence-design-direction}
 
 Sawirrada aad geliso waxay ka caawiyaan Theme Builder inuu fahmo:
 
@@ -57,21 +57,21 @@ Sawirrada aad geliso waxay ka caawiyaan Theme Builder inuu fahmo:
 - **Walxaha naqshadaynta** — qaabab, textures, iyo qaababka isku-dhiska
 - **Dhiirrigelinta typography** — qaababka font-ka ee dhammaystira theme-ka muuqaalka ah
 
-### 4. Qaab-dhismeedka Nuxurka
+### 4. Qaab-dhismeedka Nuxurka {#4-content-structure}
 
 - Bogagga waaweyn ee loo baahan yahay (Guri, Ku Saabsan, Adeegyo, Xiriir, iwm.)
 - Qayb blog ama warar oo loo baahan yahay
 - Shaqaynta e-commerce oo loo baahan yahay
 - Astaamo gaar ah ama isku-darrooyin
 
-### 5. Dib-u-eegis iyo Xaqiijin
+### 5. Dib-u-eegis iyo Xaqiijin {#5-review-and-confirmation}
 
 - Soo koobid dhammaan macluumaadka la bixiyay
 - Xaqiijin ka hor inta aan abuurista naqshaddu bilaaban
 
-## Hababka Ugu Wanaagsan ee Sawir Gelinta
+## Hababka Ugu Wanaagsan ee Sawir Gelinta {#photo-upload-best-practices}
 
-### Waxa La Gelinayo
+### Waxa La Gelinayo {#what-to-upload}
 
 - **Dhiirrigelinta summadda** — logos, muunado midab, ama tilmaamaha summadda
 - **Bogagga tartamayaasha** — sawir-qaadyo bogag aad jeceshahay
@@ -80,7 +80,7 @@ Sawirrada aad geliso waxay ka caawiyaan Theme Builder inuu fahmo:
 - **Sawirrada kooxda ama xafiiska** — loogu talagalay sumadayn shakhsi ama xirfadeed
 - **Sawirro qaab-nololeed** — matalaya dhagaystayaasha aad beegsanayso
 
-### Waxa Laga Fogaado
+### Waxa Laga Fogaado {#what-to-avoid}
 
 - **Sawirro tayo hoose leh** — sawirro qasan ama pixels muuqda leh
 - **Sawirro aan la xiriirin** — sawirro aan matalin summaddaada
@@ -88,7 +88,7 @@ Sawirrada aad geliso waxay ka caawiyaan Theme Builder inuu fahmo:
 - **Qalab xuquuq-daabacaad leh** — hubi inaad leedahay xuquuqda isticmaalka sawirrada
 - **GIFs dhaqdhaqaaq leh** — sawirro taagan oo keliya ayaa la farsameeyaa
 
-### Talooyin Natiijooyinka Ugu Fiican
+### Talooyin Natiijooyinka Ugu Fiican {#tips-for-best-results}
 
 1. **Geli 2-3 sawir** — sawirro badan waxay bixiyaan macne ka fiican
 2. **Adeegso sawirro tayo sare leh** — sawirro cad oo si fiican u iftiimay ayaa ugu shaqeeya
@@ -96,7 +96,7 @@ Sawirrada aad geliso waxay ka caawiyaan Theme Builder inuu fahmo:
 4. **Bixi macne** — si kooban u sharax sababta aad u dooratay sawir kasta
 5. **Noqo mid gaar ah** — haddii aad jeceshahay walax gaar ah, tilmaam
 
-## Wax-soo-saarka Jihada Naqshadaynta
+## Wax-soo-saarka Jihada Naqshadaynta {#design-direction-output}
 
 Kadib Wareysiga Ogaanshaha, Theme Builder wuxuu abuuraa:
 
@@ -106,7 +106,7 @@ Kadib Wareysiga Ogaanshaha, Theme Builder wuxuu abuuraa:
 - **Walxaha muuqaalka** — icons, qaabab, iyo walxo qurxin
 - **Mood board** — matalaad muuqaal ah oo jihada naqshadaynta ah
 
-## Tallaabooyinka Xiga
+## Tallaabooyinka Xiga {#next-steps}
 
 Kadib markaad dhammaystirto Wareysiga Ogaanshaha:
 
@@ -115,7 +115,7 @@ Kadib markaad dhammaystirto Wareysiga Ogaanshaha:
 3. U gudub tallaabada [Jihada Naqshadaynta](./design-direction.md)
 4. Theme Builder wuxuu abuuraa theme-kaaga gaarka ah
 
-## Dukumentiyada La Xiriira
+## Dukumentiyada La Xiriira {#related-documentation}
 
 - [Jihada Naqshadaynta](./design-direction.md) — dib u eeg oo sifee naqshaddaada
 - [Liisaska Martigelinta](./hospitality-menus.md) — abuuro bogag liis cunto oo qaabaysan

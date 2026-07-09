@@ -3,13 +3,13 @@ title: Personigo de via registriĝa formularo
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Agordi vian Registriĝan Formularon
+# Agordi vian Registriĝan Formularon {#customizing-your-registration-form}
 
 Por ke via reto aspektu unika kompare kun ĉiuj aliaj SaaS konstruitaj sur WordPress platformo, Ultimate Multisite permesas al vi agordi viajn registriĝajn kaj ensalutajn paĝojn per nia funkcio **Checkout Forms**.
 
 Kvankam ili estas facila kaj fleksebla maniero eksperimenti per malsamaj aliroj kiam oni provas konverti novajn klientojn, ili estas plejparte uzataj por krei personecigitajn registriĝajn formularojn. Ĉi tiu artikolo celas montri al vi kiel vi povas fari tion.
 
-## Ensalutaj kaj registriĝaj paĝoj:
+## Ensalutaj kaj registriĝaj paĝoj: {#login-and-registration-pages}
 
 Post instalado de Ultimate Multisite, ĝi aŭtomate kreas proprajn ensalutajn kaj registriĝajn paĝojn en via ĉefa retejo. Vi povas ŝanĝi ĉi tiujn defaŭltajn paĝojn iam ajn irante al via paĝo **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Nun, ni vidu aliajn opciojn, kiuj ankoraŭ rilatas al la ensaluta kaj registriĝ
 
 Kaj jen ĉiuj opcioj rilataj al ensaluto kaj registriĝo, kiujn vi povas agordi! Ne forgesu konservi viajn agordojn post kiam vi finos redakti ilin.
 
-## Uzado de pluraj registriĝaj formularoj:
+## Uzado de pluraj registriĝaj formularoj: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 ofertas checkout-formularan redaktilon, kiu permesas al vi krei tiom da formularoj kiom vi volas, kun malsamaj kampoj, ofertataj produktoj, ktp.
 
@@ -69,7 +69,7 @@ Alternative, vi povas redakti aŭ duobligi la formularojn, kiujn vi jam havas, a
 
 Se vi elektas unuopan paŝon aŭ plurpaŝan, la checkout-formularo jam estos antaŭplenigita per la bazaj paŝoj por ke ĝi funkciu. Poste, se vi volas, vi povas aldoni kromajn paŝojn al ĝi.
 
-### Redakti Checkout Form:
+### Redakti Checkout Form: {#editing-a-checkout-form}
 
 Kiel ni menciis antaŭe, vi povas krei checkout-formularojn por malsamaj celoj. En ĉi tiu ekzemplo ni laboros pri registriĝa formularo.
 
@@ -131,11 +131,11 @@ Por akiri la shortcode de via formularo, klaku al **Generi Shortcode** kaj kopiu
 
 _**Noto:** Vi devos aldoni ĉi tiun shortcode al via registriĝa paĝo por ke ĉi tiu pagformularo estu aldonita al ĝi._
 
-## Antaŭelekti produktojn kaj ŝablonojn per URL-parametroj:
+## Antaŭelekti produktojn kaj ŝablonojn per URL-parametroj: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Se vi volas krei personecigitajn preztabelojn por viaj produktoj kaj antaŭelekti en la pagformularo la produkton aŭ ŝablonon, kiun via kliento elektas el via preztabelo aŭ ŝablonpaĝo, vi povas uzi URL-parametrojn por tio.
 
-### **Por planoj:**
+### **Por planoj:** {#for-plans}
 
 Iru al **Ultimate Multisite > Produktoj > Elektu planon**. Vi devus vidi la butonon **Klaku por kopii Kundivideblan Ligilon** ĉe la supro de la paĝo. Ĉi tiu estas la ligilo, kiun vi povas uzi por antaŭelekti ĉi tiun specifan planon en via pagformularo.
 
@@ -143,7 +143,7 @@ Iru al **Ultimate Multisite > Produktoj > Elektu planon**. Vi devus vidi la buto
 
 Rimarku, ke ĉi tiu kundividebla ligilo validas nur por **Planoj**. Vi ne povas uzi kundivideblajn ligilojn por pakaĵoj aŭ servoj.
 
-### Por ŝablonoj:
+### Por ŝablonoj: {#for-templates}
 
 Se vi volas antaŭelekti retejajn ŝablonojn en via pagformularo, vi povas uzi la parametron: **?template_id=X** en la URL de via registriĝa paĝo. La "X" devas esti anstataŭigita per la **ID-numero de la reteja ŝablono**. Por akiri ĉi tiun numeron, iru al **Ultimate Multisite > Retejoj**.
 

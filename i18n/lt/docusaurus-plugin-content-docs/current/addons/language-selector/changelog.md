@@ -3,7 +3,7 @@ title: Kalbos parinkiklio pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Kalbos parinkiklio pakeitimų žurnalas
+# Kalbos parinkiklio pakeitimų žurnalas {#language-selector-changelog}
 
 Versija: 1.1.3 - Išleista 2026-05-05
 * Pataisa: įvesties kintamieji dabar išvalomi, o pasirinktinių hook pavadinimai papildomi prefiksu, kad būtų išvengta konfliktų su trečiųjų šalių įskiepiais

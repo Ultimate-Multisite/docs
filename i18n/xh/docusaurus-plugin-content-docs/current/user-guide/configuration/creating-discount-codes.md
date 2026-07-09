@@ -3,13 +3,13 @@ title: Ukwenza iikhowudi zesaphulelo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ukudala iiKhowudi zeZaphulelo (v2)
+# Ukudala iiKhowudi zeZaphulelo (v2) {#creating-discount-codes-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa kwi-Ultimate Multisite inguqulelo 2.x.**_
 
 Nge-Ultimate Multisite ungadala iikhowudi zezaphulelo ukuze unike abathengi bakho izaphulelo kwizirhumo zabo. Kwaye ukuzidala kulula!
 
-## Ukudala nokuHlela iiKhowudi zeZaphulelo
+## Ukudala nokuHlela iiKhowudi zeZaphulelo {#creating-and-editing-discount-codes}
 
 Ukudala okanye ukuhlela ikhowudi yesaphulelo, yiya ku-**Ultimate Multisite > Iikhowudi zeZaphulelo**.
 
@@ -87,7 +87,7 @@ Ikhuphoni ngoku ikuluhlu lwakho kwaye, ukusuka apho, ungacofa ukuze **uyihlele o
 
 ###
 
-### Ukusebenzisa iiParamitha ze-URL:
+### Ukusebenzisa iiParamitha ze-URL: {#using-url-parameters}
 
 Ukuba ufuna ukwenza iitheyibhile zakho zamaxabiso zihambelane neemfuno zakho okanye wakhe iphepha elihle lekhowudi yekhuphoni lewebhusayithi yakho kwaye ufuna ukusebenzisa ikhowudi yesaphulelo kwifom yakho yokuhlawula ngokuzenzekelayo, ungakwenza oku ngeeparamitha ze-URL.
 

@@ -3,15 +3,15 @@ title: Aratohu Whakamahi Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Aratohu Whakamahi Hooks
+# Aratohu Whakamahi Hooks {#hooks-usage-guide}
 
 E whakarato ana a Ultimate Multisite i te 200+ action hooks me te 280+ filter hooks. Ka kapi i tēnei whārangi ngā hook e whakamahia nuitia ana, me ngā tauira whaihua. Mō tētahi tohutoro katoa kua hanga-aunoa, tirohia ērā atu whārangi i tēnei wāhanga.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Huringa-oranga Kiritaki
+### Huringa-oranga Kiritaki {#customer-lifecycle}
 
-#### Whai muri i te Waihangatanga Kiritaki
+#### Whai muri i te Waihangatanga Kiritaki {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Panonitanga Tūnga Kiritaki
+#### Panonitanga Tūnga Kiritaki {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Ngā Hook Pae
+### Ngā Hook Pae {#site-hooks}
 
-#### Whai muri i te Whakaputanga Pae
+#### Whai muri i te Whakaputanga Pae {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### I Mua i te Hoatunga Tauira
+#### I Mua i te Hoatunga Tauira {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Ngā Hook Mema
+### Ngā Hook Mema {#membership-hooks}
 
-#### Ngā Whakawhitinga Tūnga
+#### Ngā Whakawhitinga Tūnga {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Ngā Hook Utu
+### Ngā Hook Utu {#payment-hooks}
 
-#### Kua Oti / Kua Rahua te Utu
+#### Kua Oti / Kua Rahua te Utu {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Ngā Hook Whakaoti Hoko
+### Ngā Hook Whakaoti Hoko {#checkout-hooks}
 
-#### I Mua i te Tukatuka / Whai muri i te Otinga
+#### I Mua i te Tukatuka / Whai muri i te Otinga {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Ngā Hook Rohe
+### Ngā Hook Rohe {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Ngā Tātari Utu
+### Ngā Tātari Utu {#pricing-filters}
 
-#### Tapeke Kete
+#### Tapeke Kete {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Ngā Reiti Tāke
+#### Ngā Reiti Tāke {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Ngā Tātari Tauira
+### Ngā Tātari Tauira {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Ngā Tātari Herenga
+### Ngā Tātari Herenga {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Ngā Tātari Kuwaha
+### Ngā Tātari Kuwaha {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Ngā Āpure Puka Whakaoti Hoko
+### Ngā Āpure Puka Whakaoti Hoko {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Ihirangi Īmēra
+### Ihirangi Īmēra {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

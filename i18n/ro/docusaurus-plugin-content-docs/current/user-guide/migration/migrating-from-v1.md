@@ -3,9 +3,9 @@ title: Migrarea de la V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrarea de la V1
+# Migrarea de la V1 {#migrating-from-v1}
 
-## Ultimate Multisite a trecut de la seria de versiuni 1.x la seria de versiuni 2.x.
+## Ultimate Multisite a trecut de la seria de versiuni 1.x la seria de versiuni 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versiunea 2.0 și versiunile ulterioare reprezintă o rescriere completă a codului, ceea ce înseamnă că există foarte puține elemente comune între versiunea veche și cea nouă. Din acest motiv, când faci upgrade de la 1.x la 2.x, datele tale vor trebui migrate într-un format pe care noile versiuni îl pot înțelege.
 
@@ -15,7 +15,7 @@ Această lecție acoperă modul în care funcționează instrumentul de migrare,
 
 _**IMPORTANT: Înainte de a începe upgrade-ul de la versiunea 1.x la versiunea 2.0, asigură-te că ai creat o copie de rezervă a bazei de date a site-ului tău**_
 
-## Primii pași
+## Primii pași {#first-steps}
 
 Primul pas este să descarci fișierul .zip al plugin-ului și să instalezi versiunea 2.0 în panoul de administrare al rețelei.
 
@@ -51,7 +51,7 @@ După activarea licenței, poți începe instalarea propriu-zisă dând click pe
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Acum, migrarea
+## Acum, migrarea {#now-the-migration}
 
 Instrumentul de migrare are o funcție de siguranță integrată care va verifica întregul tău multisite pentru a se asigura că toate datele Ultimate Multisite pot fi migrate fără probleme. Dă click pe butonul **Run Check** pentru a începe procesul.
 
@@ -59,13 +59,13 @@ Instrumentul de migrare are o funcție de siguranță integrată care va verific
 
 După rularea verificării, există două posibilități: rezultatul poate fi fie **cu** eroare, fie **fără eroare**.
 
-### Cu eroare
+### Cu eroare {#with-error}
 
 Dacă primești un mesaj de eroare, va trebui să contactezi echipa noastră de suport pentru a te ajuta să rezolvi eroarea. Asigură-te că **furnizezi jurnalul de erori** când creezi un tichet. Poți descărca jurnalul sau poți da click pe linkul care spune „contactează echipa noastră de suport". Aceasta va deschide widget-ul de ajutor în partea dreaptă a paginii tale, cu câmpurile pre-completate pentru tine, inclusiv jurnalele de erori în secțiunea de descriere.
 
 _**Deoarece sistemul a găsit o eroare, nu vei putea continua migrarea la versiunea 2.0. Poți reveni la versiunea 1.x pentru a continua să rulezi rețeaua până când eroarea este remediată.**_
 
-### Fără eroare
+### Fără eroare {#without-error}
 
 Dacă sistemul nu găsește nicio eroare, vei vedea un mesaj de succes și un buton **Migrate** în partea de jos care îți va permite să continui cu migrarea. Pe această pagină, ți se va reaminti să creezi o copie de rezervă a bazei de date înainte de a continua, lucru pe care îl recomandăm cu tărie. Apasă **Migrate** dacă ai deja o copie de rezervă.
 

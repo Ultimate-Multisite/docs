@@ -3,7 +3,7 @@ title: ບັນທຶກການປ່ຽນແປງ Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# ບັນທຶກການປ່ຽນແປງ Captcha
+# ບັນທຶກການປ່ຽນແປງ Captcha {#captcha-changelog}
 
 ເວີຊັນ: 1.5.0 - ປ່ອຍໃຊ້ໃນ 2026-05-22
 * ໃໝ່: ຕົວຈຳກັດອັດຕາແບບຢຸດເດັດຂາດ — ນັບທຸກ GET ແລະ POST ໃນພື້ນທີ່ທີ່ປ້ອງກັນດ້ວຍ captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ແລະຕອບກັບດ້ວຍ HTTP 429, `Retry-After` header, ແລະການໜ່ວງ tarpit ແບບສຸ່ມ (1–5 ວິນາທີ, ຈຳກັດສູງສຸດເດັດຂາດທີ່ 15 ວິນາທີ).

@@ -3,13 +3,13 @@ title: Integratiegids
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integratiegids
+# Integratiegids {#integration-guide}
 
 Deze gids behandelt veelvoorkomende integratiepatronen met Ultimate Multisite, waaronder het verbinden met externe diensten, het bouwen van aangepaste payment gateways en het afhandelen van webhooks.
 
 Voor geïsoleerde tenant-infrastructuur, zie [Multi-Tenancy-integratie](./multi-tenancy) voor soevereine tenant-bootstrap, migratieverificatie, SSO en richtlijnen voor teardown.
 
-## CRM-integratie
+## CRM-integratie {#crm-integration}
 
 Synchroniseer klantgegevens met je CRM wanneer nieuwe klanten zich aanmelden:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics-integratie
+## Analytics-integratie {#analytics-integration}
 
 Volg belangrijke bedrijfsgebeurtenissen gedurende de klantlevenscyclus:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Volgende stappen
+## Volgende stappen {#next-steps}
 
 - [Ontwikkeling van aangepaste gateway](./custom-gateway) — Bouw je eigen payment gateway
 - [Webhook-afhandeling](./webhooks) — Maak aangepaste webhook-endpoints

@@ -4,11 +4,11 @@ title: 'Tindakan - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Ngidini pangembang plugin nambah hook tambahan menyang kaca-kaca kita.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Ngidini pangembang plugin nambah hook tambahan menyang kaca-kaca kita.
 | $page_hook | `string` | Hook kaca saka kaca iki. |
 | $admin_page | `self` | Instans kaca. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 1.8.2
 - 2.0.4: Nambah paramèter katelu: instans kaca.
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) ing baris 332

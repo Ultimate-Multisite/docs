@@ -4,11 +4,11 @@ title: Parzûn - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Dîroka qedandinê ya hesabkirî filter dike da ku piştî nûkirinê were danîn.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Dîroka qedandinê ya hesabkirî filter dike da ku piştî nûkirinê were danî
 | $membership_id | `int` | ID ya endametiyê. |
 | $membership | `\Membership` | Objeya endametiyê. |
 
-### Ji dema
+### Ji dema {#since}
 
 - 2.0.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) de li rêza 2192 hate pênasekirin.

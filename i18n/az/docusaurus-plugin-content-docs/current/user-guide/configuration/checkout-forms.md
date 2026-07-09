@@ -3,7 +3,7 @@ title: Ödəniş formaları
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Ödəniş formaları
+# Ödəniş formaları {#checkout-forms}
 
 Ödəniş formaları yeni müştəriləri çevirməyə çalışarkən müxtəlif yanaşmaları sınaqdan keçirmək üçün asan və çevik üsuldur.
 
@@ -36,13 +36,13 @@ Alternativ olaraq, adının altındakı seçimlərə klikləyərək artıq mövc
 
 ![Ödəniş formasında üzərinə gətirmə əməliyyatları](/img/config/checkout-form-hover-actions.png)
 
-#### Ödəniş forması redaktoruna baxış
+#### Ödəniş forması redaktoruna baxış {#checkout-form-editor-overview}
 
 Ödəniş forması redaktoru qeydiyyat formalarınızı qurmaq üçün hərtərəfli interfeys təqdim edir. Redaktor düzəninə ümumi baxış belədir:
 
 ![Ödəniş forması redaktoruna baxış](/img/config/checkout-form-editor-overview.png)
 
-### Ödəniş formasının redaktə edilməsi
+### Ödəniş formasının redaktə edilməsi {#editing-a-checkout-form}
 
 Müxtəlif məqsədlər üçün ödəniş formaları yarada bilərsiniz. Bu nümunədə qeydiyyat forması üzərində işləyəcəyik.
 
@@ -112,7 +112,7 @@ Formanızın shortcode-unu əldə etmək üçün Generate Shortcode düyməsinə
 
 ![Shortcode ilə yadda saxla düyməsi](/img/config/checkout-form-save.png)
 
-### Pricing Table sahəsi
+### Pricing Table sahəsi {#the-pricing-table-field}
 
 **Pricing Table** sahəsi məhsullarınızı ödəniş formasında göstərir ki, müştərilər plan seçə bilsinlər. Bu sahəni redaktə edərkən bir neçə seçimi konfiqurasiya edə bilərsiniz:
 
@@ -130,17 +130,17 @@ Pricing table-ın frontend qeydiyyat formasında necə göründüyü belədir:
 
 Formaya həmin məhsulun checkout axınını tamamlamaq üçün tələb olunan sahələr daxil edilməmişdən əvvəl Pricing Table-a məhsul əlavə etsəniz, redaktor indi xəbərdarlıq göstərir. Canlı qeydiyyat formasını dərc etməzdən və ya dəyişiklikləri yadda saxlamazdan əvvəl çatışmayan tələb olunan sahəni əlavə etmək üçün xəbərdarlıqdan istifadə edin.
 
-### Dövr Seçimi Keçidi Əlavə Etmək
+### Dövr Seçimi Keçidi Əlavə Etmək {#adding-a-period-selection-toggle}
 
 Məhsullarınızda [Qiymət Variasiyalarını](creating-your-first-subscription-product#price-variations) konfiqurasiya etmisinizsə (məsələn, aylıq və illik qiymətləndirmə), checkout formanıza **Dövr Seçimi** sahəsi əlavə edə bilərsiniz. Bu sahə müştərilərə hesablaşma dövrləri arasında keçid etməyə imkan verən keçid göstərir və qiymət cədvəli real vaxtda dinamik olaraq yenilənir.
 
-#### Addım 1: Məhsullarınızda Qiymət Variasiyalarını Quraşdırın
+#### Addım 1: Məhsullarınızda Qiymət Variasiyalarını Quraşdırın {#step-1-set-up-price-variations-on-your-products}
 
 Dövr Seçimi sahəsini əlavə etməzdən əvvəl məhsullarınızda qiymət variasiyalarının konfiqurasiya edildiyinə əmin olun. **Ultimate Multisite > Products** bölməsinə gedin, bir məhsulu redaktə edin və alternativ hesablaşma dövrləri əlavə etmək üçün **Price Variations** vərəqəsinə keçin (məsələn, endirimli qiymətlə İllik).
 
 ![Məhsulda Price Variations vərəqəsi](/img/config/product-price-variations-tab.png)
 
-#### Addım 2: Checkout Formanıza Dövr Seçimi Sahəsini Əlavə Edin
+#### Addım 2: Checkout Formanıza Dövr Seçimi Sahəsini Əlavə Edin {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. **Ultimate Multisite > Checkout Forms** bölməsinə gedin və checkout formanızı redaktə edin.
 
@@ -163,13 +163,13 @@ Dövr Seçimi sahəsini əlavə etməzdən əvvəl məhsullarınızda qiymət va
 
 7. **Save Field** üzərinə klikləyin.
 
-#### Addım 3: Sahəni Qiymət Cədvəlinin Üstündə Yerləşdirin
+#### Addım 3: Sahəni Qiymət Cədvəlinin Üstündə Yerləşdirin {#step-3-position-the-field-above-the-pricing-table}
 
 Ən yaxşı istifadəçi təcrübəsi üçün Dövr Seçimi sahəsinin checkout addımınızda Pricing Table sahəsindən **əvvəl** göründüyünə əmin olun. Checkout forma redaktorunda sahələri sürükləyərək onların sırasını dəyişə bilərsiniz. Beləliklə, müştərilər əvvəlcə hesablaşma dövrünü seçir, sonra isə həmin dövr üçün qiymətləri görürlər.
 
 ![Sahə sırasını göstərən checkout forma redaktoru](/img/config/checkout-form-editor-with-fields.png)
 
-#### Frontend-də Necə İşləyir
+#### Frontend-də Necə İşləyir {#how-it-works-on-the-frontend}
 
 Konfiqurasiya edildikdən sonra qeydiyyat səhifənizə gələn müştərilər qiymət cədvəlinin üstündə dövr seçicisini görəcəklər. Onlar fərqli hesablaşma dövrünə kliklədikdə:
 
@@ -177,7 +177,7 @@ Konfiqurasiya edildikdən sonra qeydiyyat səhifənizə gələn müştərilər q
   * Pricing Table sahəsində **Fərqli Müddətləri Məcbur Et** deaktivdirsə, seçilmiş dövr üçün qiymət variasiyası olmayan məhsullar gizlədiləcək.
   * **Fərqli Müddətləri Məcbur Et** aktivdirsə, seçilmiş dövr üçün variasiyası olmasa belə bütün məhsullar görünən qalır (onlar öz standart qiymətini göstərəcək).
 
-#### URL vasitəsilə Hesablaşma Dövrünü Əvvəlcədən Seçmək
+#### URL vasitəsilə Hesablaşma Dövrünü Əvvəlcədən Seçmək {#pre-selecting-a-billing-period-via-url}
 
 URL vasitəsilə məhsulu və hesablaşma dövrünü də əvvəlcədən seçə bilərsiniz. Ultimate Multisite bu URL nümunələrini dəstəkləyir:
 
@@ -185,11 +185,11 @@ URL vasitəsilə məhsulu və hesablaşma dövrünü də əvvəlcədən seçə b
   * `/register/premium/12` — Məhsulu və 12 aylıq müddəti əvvəlcədən seçir
   * `/register/premium/1/year` — Məhsulu 1 illik müddətlə əvvəlcədən seçir
 
-### Şablon Seçimi Sahəsi
+### Şablon Seçimi Sahəsi {#the-template-selection-field}
 
 **Şablon Seçimi** sahəsi müştərilərə checkout zamanı sayt şablonu seçməyə imkan verir. O, indi Ultimate Multisite v2.6.1-də əlavə edilmiş **tək addımlı** və **çox addımlı** checkout forma şablonlarına standart olaraq daxildir.
 
-#### Sahəni əl ilə əlavə etmək
+#### Sahəni əl ilə əlavə etmək {#adding-the-field-manually}
 
 v2.6.1-dən əvvəl yaradılmış forma ilə işləyirsinizsə və ya boş şablondan başlamısınızsa:
 
@@ -200,11 +200,11 @@ v2.6.1-dən əvvəl yaradılmış forma ilə işləyirsinizsə və ya boş şabl
    - **Etiket** — Müştərilərin şablon torunun üstündə gördüyü başlıq (məsələn, "Sayt şablonu seçin").
    - **Tələb olunur** — Davam etməzdən əvvəl müştərilərin şablon seçməsinin məcburi olub-olmaması.
 
-#### Necə işləyir
+#### Necə işləyir {#how-it-works}
 
 Müştəri checkout zamanı şablon seçdikdə, Ultimate Multisite onların yeni saytını hazırlayarkən ondan istifadə edir. Göstərilən şablonlar **Site Templates** siyahınızdan gəlir (**Ultimate Multisite > Site Templates**). Burada yalnız müştərilər üçün əlçatan kimi işarələnmiş şablonlar görünür.
 
-### Checkout formasının baza domenləri
+### Checkout formasının baza domenləri {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 checkout forması **Site URL** sahələrində konfiqurasiya edilmiş domenləri şəbəkə baza domenləri kimi qəbul edir. Müştərilərin `example.com` və `sites.example.com` kimi bir və ya daha çox ortaq qeydiyyat domeni altında saytlar yaratmasını istədikdə sahənin mövcud domen parametrlərindən istifadə edin.
 
@@ -212,6 +212,6 @@ Paylaşılan checkout-form baza domenləri hər sayt üçün xüsusi domen xəri
 
 Xüsusi domenləri `customer-example.com` kimi hər müştəri üçün xəritələnmiş hostlar üçün saxlayın. Checkout-form baza domenlərini bir çox saytın istifadə edə biləcəyi paylaşılan qeydiyyat hostları üçün saxlayın.
 
-#### Sahənin silinməsi
+#### Sahənin silinməsi {#removing-the-field}
 
 Sayt şablonları təklif etmirsinizsə, formanızdan Şablon Seçimi sahəsini silin. Müştərilər bundan sonra **Ultimate Multisite > Settings > Site Templates** altında konfiqurasiya edilmiş standart şablonu alacaqlar.

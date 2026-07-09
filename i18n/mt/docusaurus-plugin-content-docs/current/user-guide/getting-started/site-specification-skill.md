@@ -3,11 +3,11 @@ title: Spessifika tal-sit Kskills
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Skill di Specificazzjoni tal-Site
+# Skill di Specificazzjoni tal-Site {#site-specification-skill}
 
 Il-**Skill di Specificazzjoni tal-Site** huwa approċċ strutturat biex tikkapsoli l-objettivi tal-site tiegħek, l-audience (l-publiku) u l-identità tal-brand. Dan informazzjoni hija magħal **site_brief** memory tiegħek, li l-agentijiet jreferwih b'mod konsistenti u b'aħjar kontekstu b'traxxen sessjonijiet.
 
-## X'ja qed l-Site Specification?
+## X'ja qed l-Site Specification? {#what-is-site-specification}
 
 Il-Site Specification huwa proċess ta dokumentazzjoni tal:
 
@@ -19,9 +19,9 @@ Il-Site Specification huwa proċess ta dokumentazzjoni tal:
 
 Dan spesifikazzjoni tikkawwi biex tikkawwi l-**site_brief** tiegħek, memory persistenti li l-agentijiet jikelmu biex jifhmu l-kontekstu tal-site tiegħek.
 
-## Perché użaw Site Specification?
+## Perché użaw Site Specification? {#why-use-site-specification}
 
-### Konsistenza b'traxxen sessjonijiet
+### Konsistenza b'traxxen sessjonijiet {#consistency-across-sessions}
 
 B'assenza ta site_brief, terġa tista' tipprova l-objettivi tal-site tiegħek malajr meta tibda sessioni ġdissewn. Ma għandekx dan, l-agentijiet jifhmu mument li:
 
@@ -30,7 +30,7 @@ B'assenza ta site_brief, terġa tista' tipprova l-objettivi tal-site tiegħek ma
 - Struttura l-kontenut tiegħek
 - L-objettivi tal-biznes tiegħek
 
-### Rekommandazzjonijiet moħti
+### Rekommandazzjonijiet moħti {#better-recommendations}
 
 L-agentijiet jikelmu biex:
 
@@ -39,17 +39,17 @@ L-agentijiet jikelmu biex:
 - Jiproponu disjaini konsistenti mal-brand tiegħek
 - Jevitu min propost funzjonijiet li ma jkollhomx konformità
 
-### Onboarding aktar veloċi
+### Onboarding aktar veloċi {#faster-onboarding}
 
 L-agentijiet jiddefini (new agents) (jew l-agentijiet f sessjonijiet ġdissewn) jistintu malajr biex jikkonplu l-site_brief tiegħek invece tal-istiskarja suġestiji tajjeb.
 
-## Inizjjarja Site Specification
+## Inizjjarja Site Specification {#initiating-site-specification}
 
-### Durante l-Onboarding tal-Theme Builder
+### Durante l-Onboarding tal-Theme Builder {#during-theme-builder-onboarding}
 
 Il-Skill di Specificazzjoni tal-Site jinizjata awtomatikament durante l-**Theme Builder onboarding flow**. L-agent Setup Assistant jista' tixtellija suġestiji u tikkapsola l-site_brief tiegħek.
 
-### Inizjjarja manuell
+### Inizjjarja manuell {#manual-initiation}
 
 Tista' possi ti inizializza l-Site Specification quddiemma:
 
@@ -63,9 +63,9 @@ o
 "Help me create a site brief"
 ```
 
-## Il Processu tal-Site Specification
+## Il Processu tal-Site Specification {#the-site-specification-process}
 
-### Epilogu 1: L-Scopi tal-Site (Site Purpose)
+### Epilogu 1: L-Scopi tal-Site (Site Purpose) {#step-1-site-purpose}
 
 L-agent titpessela:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 Tista' puoi selezxi una categoria o descrivi l-scop tal-site tieħed.
 
-### Epilogu 2: L-Pubbliku Target (Target Audience)
+### Epilogu 2: L-Pubbliku Target (Target Audience) {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -96,7 +96,7 @@ What are their main needs?
 
 X'għandhom bżonnijiet primari?
 
-### Epilogu 3: L-Identità tal-Brand (Brand Identity)
+### Epilogu 3: L-Identità tal-Brand (Brand Identity) {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -114,7 +114,7 @@ How would you describe your brand tone?
 
 Come tista' tdescritti l-tono tal-brand tiegħek?
 
-### Epilogu 4: L-Oqod tal-Bizness (Business Goals)
+### Epilogu 4: L-Oqod tal-Bizness (Business Goals) {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -135,7 +135,7 @@ What's your primary metric?
 
 X'għandu l-metru primarju tiegħek?
 
-### Epilogu 5: Struttura tal-Kontenut (Content Structure)
+### Epilogu 5: Struttura tal-Kontenut (Content Structure) {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -156,13 +156,13 @@ What content types do you use?
 
 X'typijiet tal-kontenut li tista' użaw?
 
-## L-Memory tal-site_brief tiegħek
+## L-Memory tal-site_brief tiegħek {#your-sitebrief-memory}
 
 Wara li tiġi kumplita l-Site Specification, informazzjoni tiegħek titlobbija bħala **site_brief** f'l-memory tal-agent tiegħek. Dan huwa rekord strutturat li jinkludi:
 
-## Visualizzazzjoni u Aġġiorar tal-site_brief tiegħek
+## Visualizzazzjoni u Aġġiorar tal-site_brief tiegħek {#viewing-and-updating-your-sitebrief}
 
-### Visiżja tal-site_brief tiegħek
+### Visiżja tal-site_brief tiegħek {#view-your-sitebrief}
 
 Itlaq għall-agent:
 
@@ -178,7 +178,7 @@ jew
 
 L-agent se tiffaċċja skettrizzjoni li għad-dħandalt.
 
-### Aġġiorja l-site_brief tiegħek
+### Aġġiorja l-site_brief tiegħek {#update-your-sitebrief}
 
 Jekk is-siti tiegħek jidħol u jikmal, puoi tgħajjerhu:
 
@@ -194,9 +194,9 @@ jew
 
 Dan se jiġi riapplikat is-Skill tal-Site Specification b informazzjoni li għad-dħandalt bħala punkt oħra biex jmur.
 
-## Come l-Agenti użaw l-site_brief
+## Come l-Agenti użaw l-site_brief {#how-agents-use-sitebrief}
 
-### Rekommandazzjonijiet ta' Disjin
+### Rekommandazzjonijiet ta' Disjin {#design-recommendations}
 
 Meta tistaqsi għal bidżiżi ta' disjin, l-agentu jreferi l-site_brief tiegħek:
 
@@ -207,7 +207,7 @@ enni ton warm u artigianali. Inqasija disjin li tiffoka fuq
 l-jewellery handmade tiegħek u l-valuri sostenibbli."
 ```
 
-### Suggerimenti ta' Funzjonijiet (Features)
+### Suggerimenti ta' Funzjonijiet (Features) {#feature-suggestions}
 
 L-agentu jipproponi funzjonijiet allieħa mal-għanijiet tiegħek:
 
@@ -218,22 +218,22 @@ innejjemma: programmu ta' loyalty, review tal-klijenti, newsletter ta' e-mail,
 u rrakkomandazzjonijiet ta' prodotti."
 ```
 
-### Struttura tal-Kontenut
+### Struttura tal-Kontenut {#content-structure}
 
 L-agentu jipproponi l-organizzazzjoni tal-kontenut bbażat fuq is-struttura tiegħek:
 
 You: "Comeqt kif organizzaw blog?"
 Agent: "Għalfor li tista'x it-product catalog ma jista' blog, innejj anqassix postijiet b'kategorija tal-prodotti u nistabbil 'styling guides' li jkun juri prodotti multipli flimkien."
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Sejjeb Biex Tkun Spesifik
+### Sejjeb Biex Tkun Spesifik {#be-specific}
 Bxejn "audience generali", iscritti l-audience tiegħek effettiva:
 
 - ✓ "Inħasijiet 25-45enni, interessati fil-fashion sostenibbli"
 - ✗ "Kulundu"
 
-### Iżżerzu Regolari
+### Iżżerzu Regolari {#update-regularly}
 Mentre siti tivolvix, aggiorna is-site_brief tiegħek:
 
 - Meta tiġi pivot għal audience ġdid
@@ -241,20 +241,20 @@ Mentre siti tivolvix, aggiorna is-site_brief tiegħek:
 - Meta l-identità tal-brand tiegħek tistabbilixxi
 - Meta l-oġġetti tal-bisnis tiegħek jidħlu
 
-### Uża Termini Konsistenti
+### Uża Termini Konsistenti {#use-consistent-terminology}
 Uża isiemx isiemx fil-sessioni:
 
 - ✓ Qol "sustainable jewelry" (ma qol "eco-friendly jewelry" u "green products")
 - ✓ Iżżerzu l-audience flimkien b'mod identiku
 
-### Inkludi Kontekst
+### Inkludi Kontekst {#include-context}
 Forri informazzjoni li tgħin il-agent jiftaħ f-decisionijiet tiegħek:
 
 - "Niddaq fuq professionisti li jvalwaw l-qualità aktar min is-prezz"
 - "L-audience tagħna hija tech-savvy u aspettuna design modern"
 - "Niddaq biex nistartu come startup b'cost effettivi, għoli għall-soluzzjonijiet"
 
-## Relazzjoni mal-Onboarding tal-Theme Builder
+## Relazzjoni mal-Onboarding tal-Theme Builder {#relationship-to-theme-builder-onboarding}
 
 Il-skill ta Site Specification huwa integrat f'**Theme Builder onboarding flow**. Meta tgħmli l-onboarding, is-site_brief tiegħek jitcrea awtomatikament mal-informazzjoni li qolti.
 
@@ -264,7 +264,7 @@ Tista' tqed is-Site Specification b'mod indipendenti jekk għandek bidd:
 - Aggiorna is-site brief tiegħek meta siti tivolvix
 - Tcrea specification dettaljata qabel ma tibda Theme Builder
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Is-site_brief tiegħi ma jgħinux**
 - Konferma li l-agent għandu access għall-memory
@@ -280,7 +280,7 @@ Tista' tqed is-Site Specification b'mod indipendenti jekk għandek bidd:
 - Iġbed aġġorni l-site\_brief tiegħek se huwa outdated (mghinnu)
 - Fornis kontekstu aggiem fil-istriek tiegħek
 
-## Prossi Xtanu
+## Prossi Xtanu {#next-steps}
 
 Wara li tdefinix it-specifikazzjoni tal-site tiegħek:
 

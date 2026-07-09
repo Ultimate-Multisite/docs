@@ -3,7 +3,7 @@ title: Klantwebsites
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# De websites van je klant (v2)
+# De websites van je klant (v2) {#your-clients-websites-v2}
 
 Na registratie op je netwerk kunnen je klanten toegang krijgen tot hun Dashboard.
 

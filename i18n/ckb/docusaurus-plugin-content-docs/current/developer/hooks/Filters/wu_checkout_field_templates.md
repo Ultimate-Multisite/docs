@@ -4,24 +4,24 @@ title: فلتەر - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# پاڵێوەر: wu_checkout_field_templates
+# پاڵێوەر: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
 
 API ـەکانمان بۆ زیادکردنی داڕێژەی خانەی نوێ لێرەوە دەبەسترێن.
 
 ئەم پاڵێوەرە ڕاستەوخۆ بەکارمەهێنە. لەبری ئەوە فەنکشنی wu_register_field_template() بەکاربهێنە.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
 | $field_templates | `array` |  |
 
-### لە وەشانی
+### لە وەشانی {#since}
 
 - 2.0.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/managers/class-field-templates-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-field-templates-manager.php#L162) لە هێڵی 162
 
 
-## گەڕانەوەکان
+## گەڕانەوەکان {#returns}

@@ -3,15 +3,15 @@ title: Gadzira Menyu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Gadzira Menyu
+# Gadzira Menyu {#create-menu}
 
 Kugona kwe **Gadzira Menyu** kunogadzira menyu dzekufambisa dzeWordPress dzine rutsigiro rwemazita ekufambisa akasiyana nemisoro yemapeji.
 
-## Pfupiso
+## Pfupiso {#overview}
 
 Kugona uku kunowedzera mashandiro akajairika ekugadzira menyu nekugona kutsanangura parameter ye `navigation_label`. Izvi zvinokutendera kugadzira menyu uko zita rinoratidzwa mukufambisa rakasiyana nemusoro wepeji, zvichipa kusanduka kukuru muchimiro chesaiti uye ruzivo rwemushandisi.
 
-## Maparameter
+## Maparameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Kugona uku kunowedzera mashandiro akajairika ekugadzira menyu nekugona kutsanang
 | `location` | string | No | Nzvimbo ye theme yekupa menyu iyi, semuenzaniso `primary` |
 | `navigation_label` | string | No | Zita rinoratidzwa mukufambisa (rakasiyana nemusoro wepeji) |
 
-## Kukosha Kunodzoserwa
+## Kukosha Kunodzoserwa {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Kugona uku kunowedzera mashandiro akajairika ekugadzira menyu nekugona kutsanang
 }
 ```
 
-## Zita Rekufambisa vs Musoro Wepeji
+## Zita Rekufambisa vs Musoro Wepeji {#navigation-label-vs-page-title}
 
 Parameter ye `navigation_label` inokutendera kupatsanura zita remenyu remukati kubva pazita rinoratidzwa kuvashandisi:
 
@@ -43,9 +43,9 @@ Izvi zvinobatsira kana:
 - Uchida kutsigira mitauro yakawanda ine kureba kwemazita kwakasiyana
 - Uri kuvaka menyu dzematunhu chaiwo kana mapoka evashandisi
 
-## Mienzaniso Yekushandisa
+## Mienzaniso Yekushandisa {#usage-examples}
 
-### Muenzaniso 1: Menyu Yakapusa ine Zita Rekufambisa
+### Muenzaniso 1: Menyu Yakapusa ine Zita Rekufambisa {#example-1-simple-menu-with-navigation-label}
 
 **Chikumbiro:**
 ```
@@ -62,7 +62,7 @@ Gadzira primary navigation menu inonzi "Main Navigation" ine navigation label "M
 }
 ```
 
-### Muenzaniso 2: Menyu yeNzvimbo yeTheme Yakati
+### Muenzaniso 2: Menyu yeNzvimbo yeTheme Yakati {#example-2-menu-for-specific-theme-location}
 
 **Chikumbiro:**
 ```
@@ -80,7 +80,7 @@ Gadzira footer menu inonzi "Footer Links" ine navigation label "Quick Links" woi
 }
 ```
 
-## Kubatanidzwa neTheme Builder
+## Kubatanidzwa neTheme Builder {#integration-with-theme-builder}
 
 Paunenge uchishandisa Theme Builder, kugona kweGadzira Menyu:
 
@@ -89,13 +89,13 @@ Paunenge uchishandisa Theme Builder, kugona kweGadzira Menyu:
 3. Kunopa menyu kunzvimbo dze theme dzakarurama
 4. Kunotsigira kuwedzera zvinhu zvemumenyu mushure mekugadzirwa
 
-## Kugona Kwakabatana
+## Kugona Kwakabatana {#related-abilities}
 
 - **`add_menu_item`** — Wedzera zvinhu kumenyu iripo
 - **`update_menu`** — Tumidza menyu zita patsva kana kuipa zvakare kunzvimbo ye theme
 - **`delete_menu`** — Bvisa menyu kubva pasaiti yako
 
-## Maitiro Akanakisisa
+## Maitiro Akanakisisa {#best-practices}
 
 - **Shandisa mazita ekufambisa akajeka** — chengeta mazita ari mapfupi uye achitsanangura kuvashandisi
 - **Fananidza nzvimbo dze theme** — ipa menyu kunzvimbo ye theme yakarurama kuti iratidzwe zvakanaka
@@ -103,14 +103,14 @@ Paunenge uchishandisa Theme Builder, kugona kweGadzira Menyu:
 - **Edza kupindura kwezviratidziro** — simbisa kuti menyu dzinoratidzwa zvakanaka pamidziyo yenhare
 - **Shandura mazita zvinoenderana nemutauro** — shandisa mazita ekufambisa akasiyana kune mavhezheni emitauro akasiyana
 
-## Zvipingamupinyi
+## Zvipingamupinyi {#limitations}
 
 - Mazita ekufambisa ndeekuratidza chete; `name` yemukati ichiri kushandiswa pakuzivikanwa neWordPress
 - Rutsigiro rwe theme runosiyana; haasi ma theme ese anotsigira nzvimbo dzese dzemenyu
 - Zvinhu zvemumenyu zvinofanira kuwedzerwa zvakasiyana mushure mekugadzirwa kwemenyu
 - Kuchinja zita rekufambisa kunoda kugadzirisa menyu
 
-## Kugona Kwakabatana
+## Kugona Kwakabatana {#related-abilities-1}
 
 - [Gadzira Logo SVG](./generate-logo-svg.md) — gadzira logo yemusoro wesaiti yako
 - [Simbisa Musiyano wePalette](./validate-palette-contrast.md) — iva nechokwadi chezvirongwa zvemavara zvinowanikwa nyore

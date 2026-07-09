@@ -4,11 +4,11 @@ title: Фильтр - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Фильтр: wu_country_get_cities
+# Фильтр: wu_country_get_cities {#filter-wucountrygetcities}
 
 Илдәге штат өчен шәһәрләр исемлеген кайтара.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | Штат өчен ике хәрефле ISO коды. |
 | $current_country | `\WP_Ultimo\Country\Country` | Агымдагы класс үрнәге. |
 
-### Кайчаннан
+### Кайчаннан {#since}
 
 - 2.0.11
-### Чыганак
+### Чыганак {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) эчендә, 146 нчы юлда билгеләнгән
 
 
-## Кайтара
+## Кайтара {#returns}
 Штатларның сөзелгән исемлеге.

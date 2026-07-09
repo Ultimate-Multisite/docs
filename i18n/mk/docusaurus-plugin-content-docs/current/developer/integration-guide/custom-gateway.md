@@ -3,11 +3,11 @@ title: Развој на прилагоден Gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Развој на приспособен Gateway
+# Развој на приспособен Gateway {#custom-gateway-development}
 
 Можете да креирате приспособени платежни gateway-и со проширување на класата `Base_Gateway`.
 
-## Gateway класа
+## Gateway класа {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Регистрирајте го Gateway
+## Регистрирајте го Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Клучни методи
+## Клучни методи {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Обработува барања за рефундирање |
 | `get_payment_methods()` | Враќа зачувани начини на плаќање за клиент |
 
-## Ингеренции за обновување за повторливи членства
+## Ингеренции за обновување за повторливи членства {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 им овозможува на gateway интеграциите да пријават дали повторливо членство има повторно употреблива ингеренција за обновување пред `auto_renew` да се зачува. Закачете `wu_membership_has_renewal_credential` и вратете:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Исчистете ја ознаката за недостасувачка ингеренција како дел од успешниот тек за повторна авторизација на вашиот gateway откако ќе се складира нова повторно употреблива ингеренција.
 
-## Совети
+## Совети {#tips}
 
 - Секогаш враќајте `WP_Error` при неуспех за Ultimate Multisite да може да се справи со прикажувањето грешки
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Користете `wu_log_add()` за логирање специфично за gateway
 
-## Можности на AI connector provider
+## Можности на AI connector provider {#ai-connector-provider-capabilities}
 
 Приспособените интеграции што повикуваат операции поддржани од AI connector треба да се усогласат со поддржаниот сет на OAuth provider-и воведен со AI Provider for Anthropic Max v1.3.0:
 

@@ -4,19 +4,19 @@ title: Фильтр - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Фильтр: wu_captcha_whitelisted
+# Фильтр: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
 
 Агымдагы кулланучы/сорау ак исемлеккә кертелергә тиешме-юкмы икәнен фильтрлый.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
 | $whitelisted | `bool` | Капчаны тикшерүне үткәреп җибәрергәме-юкмы. |
 
-### Версиядән башлап
+### Версиядән башлап {#since}
 
 - 1.2.0
-### Чыганак
+### Чыганак {#source}
 
 [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L71) эчендә 71 нче юлда билгеләнгән.

@@ -3,7 +3,7 @@ title: Kykyjen viiteopas
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Kykyjen viite
+# Kykyjen viite {#abilities-reference}
 
 Kyvyt ovat atomisia toimintoja, joita Gratis AI Agent voi kutsua WordPress-asennuksessasi. Jokainen kyky on rekisteröity PHP-luokka, joka tarjoaa JSON-skeeman — agentti lukee tämän skeeman ajon aikana ymmärtääkseen, mitä parametreja tarvitaan ja mitä kyky palauttaa.
 
@@ -11,11 +11,11 @@ Tämä sivu dokumentoi kaikki Gratis AI Agent v1.9.0:n mukana toimitettavat kyvy
 
 ---
 
-## Mukautetut artikkelityypit
+## Mukautetut artikkelityypit {#custom-post-types}
 
 Nämä kyvyt hallitsevat mukautettuja artikkelityyppejä (CPT), jotka on rekisteröity agentin kautta. Rekisteröinnit tallennetaan WordPressin options-tauluun, joten ne säilyvät pluginin deaktivoinnin ja uudelleenaktivoinnin yli.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Rekisteröi uuden mukautetun artikkelityypin.
 
@@ -50,7 +50,7 @@ Rekisteröi uuden mukautetun artikkelityypin.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Palauttaa kaikki agentin rekisteröimät mukautetut artikkelityypit.
 
@@ -73,7 +73,7 @@ Palauttaa kaikki agentin rekisteröimät mukautetut artikkelityypit.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Poistaa aiemmin agentin rekisteröimän mukautetun artikkelityypin rekisteröinnin. Tämän tyypin olemassa olevat artikkelit säilyvät tietokannassa, mutta niihin ei enää pääse käsiksi artikkelityypin kautta.
 
@@ -87,11 +87,11 @@ Poistaa aiemmin agentin rekisteröimän mukautetun artikkelityypin rekisteröinn
 
 ---
 
-## Mukautetut taksonomiat
+## Mukautetut taksonomiat {#custom-taxonomies}
 
 Nämä kyvyt hallitsevat mukautettuja taksonomioita. CPT:iden tavoin taksonomioiden rekisteröinnit tallennetaan pysyvästi.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Rekisteröi uuden mukautetun taksonomian.
 
@@ -123,7 +123,7 @@ Rekisteröi uuden mukautetun taksonomian.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Palauttaa kaikki agentin rekisteröimät mukautetut taksonomiat.
 
@@ -146,7 +146,7 @@ Palauttaa kaikki agentin rekisteröimät mukautetut taksonomiat.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Poistaa aiemmin agentin rekisteröimän mukautetun taksonomian rekisteröinnin.
 
@@ -160,11 +160,11 @@ Poistaa aiemmin agentin rekisteröimän mukautetun taksonomian rekisteröinnin.
 
 ---
 
-## Design System
+## Design System {#design-system}
 
 Design system -kyvyt muokkaavat WordPress-sivuston visuaalista esitystä — mukautetusta CSS:stä lohkomalleihin ja sivuston logoon.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Lisää CSS:ää sivuston `<head>`-osioon `wp_add_inline_style`-toiminnon kautta. CSS tallennetaan `gratis_ai_agent_custom_css`-asetukseen ja poistetaan jonosta siististi, kun kyky nollataan.
 
@@ -190,7 +190,7 @@ Lisää CSS:ää sivuston `<head>`-osioon `wp_add_inline_style`-toiminnon kautta
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Rekisteröi uudelleenkäytettävän lohkomallin WordPressin mallikirjastoon.
 
@@ -209,7 +209,7 @@ Rekisteröi uudelleenkäytettävän lohkomallin WordPressin mallikirjastoon.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Listaa kaikki agentin rekisteröimät lohkomallit.
 
@@ -231,7 +231,7 @@ Listaa kaikki agentin rekisteröimät lohkomallit.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Asettaa WordPress-sivuston logoksi annetun liitteen ID:n tai etäkuvan URL:n. Kun URL annetaan, kuva ladataan ja tuodaan Media Libraryyn.
 
@@ -248,7 +248,7 @@ Jompikumpi arvoista `attachment_id` tai `url` on annettava.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Ottaa käyttöön nimetyn väri-/typografiaesiasetuksen aktiivisen teeman `theme.json`-tiedostossa (tai `global-styles`-määrityksissä). Esiasetukset ovat Gratis AI Agent -tiimin ylläpitämiä kuratoituja paketteja.
 
@@ -273,11 +273,11 @@ Ottaa käyttöön nimetyn väri-/typografiaesiasetuksen aktiivisen teeman `theme
 
 ---
 
-## Globaalit tyylit
+## Globaalit tyylit {#global-styles}
 
 Globaalien tyylien kyvykkyydet lukevat ja kirjoittavat theme.json-arvoja WordPress Global Styles API:n kautta, vaikuttaen kaikkiin lohkoihin ja sivustonlaajuisesti malleihin.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Palauttaa nykyisen globaalien tyylien määrityksen.
 
@@ -291,7 +291,7 @@ Palauttaa nykyisen globaalien tyylien määrityksen.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Päivittää yhden tai useamman arvon globaalien tyylien määrityksessä.
 
@@ -318,7 +318,7 @@ Päivittää yhden tai useamman arvon globaalien tyylien määrityksessä.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Nollaa kaikki agentin käyttöön ottamat globaalien tyylien muutokset ja palauttaa teeman oletukset.
 
@@ -328,11 +328,11 @@ Nollaa kaikki agentin käyttöön ottamat globaalien tyylien muutokset ja palaut
 
 ---
 
-## Navigointivalikot
+## Navigointivalikot {#navigation-menus}
 
 Navigointivalikkojen kyvykkyydet luovat ja hallitsevat WordPress-navigointivalikoita ja niiden kohteita.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Luo uuden WordPress-navigointivalikon.
 
@@ -347,7 +347,7 @@ Luo uuden WordPress-navigointivalikon.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Nimeää valikon uudelleen tai liittää sen uudelleen teeman sijaintiin.
 
@@ -363,7 +363,7 @@ Nimeää valikon uudelleen tai liittää sen uudelleen teeman sijaintiin.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Lisää kohteen olemassa olevaan navigointivalikkoon.
 
@@ -383,7 +383,7 @@ Lisää kohteen olemassa olevaan navigointivalikkoon.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Poistaa kohteen navigointivalikosta.
 
@@ -397,7 +397,7 @@ Poistaa kohteen navigointivalikosta.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Listaa kaikki WordPress-navigointivalikot, mukaan lukien niille liitetyt teeman sijainnit.
 
@@ -420,11 +420,11 @@ Listaa kaikki WordPress-navigointivalikot, mukaan lukien niille liitetyt teeman 
 
 ---
 
-## Asetusten hallinta
+## Asetusten hallinta {#options-management}
 
 Asetusten kyvykkyydet lukevat ja kirjoittavat WordPress-asetuksia `get_option` / `update_option` -toimintojen kautta. Sisäänrakennettu turvallisuusestolista estää kriittisten asetusten tahattoman muokkaamisen.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Lukee WordPress-asetuksen.
 
@@ -440,7 +440,7 @@ Palauttaa virheen, jos `option_name` on turvallisuusestolistalla.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Kirjoittaa WordPress-asetuksen.
 
@@ -458,7 +458,7 @@ Palauttaa virheen, jos `option_name` on turvallisuuden estolistalla.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Poistaa WordPress-asetuksen.
 
@@ -474,7 +474,7 @@ Palauttaa virheen, jos `option_name` on turvallisuuden estolistalla.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Listaa WordPress-asetukset, jotka vastaavat mallia.
 
@@ -498,11 +498,11 @@ Listaa WordPress-asetukset, jotka vastaavat mallia.
 
 ---
 
-## Sisällönhallinta
+## Sisällönhallinta {#content-management}
 
 Sisällönhallinnan ominaisuudet luovat ja muokkaavat WordPress-artikkeleita ja -sivuja. Artikkelien ID:t palautetaan, jotta monivaiheisten suunnitelmien myöhemmät vaiheet voivat viitata luotuun sisältöön.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Luo uuden WordPress-artikkelin, sivun tai mukautetun sisältötyypin merkinnän.
 
@@ -537,7 +537,7 @@ Luo uuden WordPress-artikkelin, sivun tai mukautetun sisältötyypin merkinnän.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Päivittää olemassa olevan WordPress-artikkelin tai -sivun.
 
@@ -567,7 +567,7 @@ Päivittää olemassa olevan WordPress-artikkelin tai -sivun.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Luo useita artikkeleita yhdellä ominaisuuskutsulla, mikä vähentää edestakaisia pyyntöjä site-rakennusten tai sisällön massatuonnin aikana. Artikkelit luodaan järjestyksessä; jos yksi epäonnistuu, muut jatkavat ja epäonnistuminen raportoidaan tulostaulukossa.
 
@@ -619,7 +619,7 @@ Luo useita artikkeleita yhdellä ominaisuuskutsulla, mikä vähentää edestakai
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Määrittää artikkelille tai sivulle artikkelikuvan (artikkelin pikkukuvan). Hyväksyy olemassa olevan Media Library -liitteen ID:n tai etäkuvan URL-osoitteen; kun URL annetaan, kuva ladataan ja tuodaan automaattisesti.
 
@@ -638,7 +638,7 @@ Jompikumpi arvoista `attachment_id` tai `url` on annettava.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Luo yhteydenottolomakkeen aktiivisella lomake-pluginilla (Contact Form 7, WPForms, Fluent Forms tai Gravity Forms sen mukaan, mikä on asennettu). Palauttaa shortcode-koodin, joka voidaan upottaa mihin tahansa artikkeliin tai sivuun.
 
@@ -691,11 +691,11 @@ Luo yhteydenottolomakkeen aktiivisella lomake-pluginilla (Contact Form 7, WPForm
 
 ---
 
-## Visuaalinen tarkistus
+## Visuaalinen tarkistus {#visual-review}
 
 Visuaalisen tarkistuksen kyvyt antavat agentin ottaa kuvakaappauksia julkaistuista sivuista ja analysoida niitä, mikä mahdollistaa autonomisen suunnittelutarkistuksen, ennen/jälkeen-vertailut ja visuaaliset regressiotarkistukset ilman selainlaajennusta.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Ottaa kuvakaappauksen WordPress-sivusta annetussa URL-osoitteessa käyttäen palvelinpuolen headless-selainta. Kuva tallennetaan Mediakirjastoon ja CDN-URL palautetaan.
 
@@ -724,7 +724,7 @@ Ottaa kuvakaappauksen WordPress-sivusta annetussa URL-osoitteessa käyttäen pal
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Ottaa kaksi kuvakaappausta ja palauttaa visuaalisen eroarvon sekä erokuvan, jossa muuttuneet alueet on korostettu. Hyödyllinen sen vahvistamiseen, että suunnittelumuutos tuotti odotetun tuloksen, tai tahattomien regressioiden havaitsemiseen.
 
@@ -754,7 +754,7 @@ Ottaa kaksi kuvakaappausta ja palauttaa visuaalisen eroarvon sekä erokuvan, jos
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Ottaa sivusta kuvakaappauksen ja lähettää sen kielimallille visuaalista analyysiä varten. Palauttaa jäsennellyn arvioinnin, joka kattaa asettelun, typografian, värien käytön ja saavutettavuuteen liittyvät huolenaiheet.
 
@@ -785,11 +785,11 @@ Ottaa sivusta kuvakaappauksen ja lähettää sen kielimallille visuaalista analy
 
 ---
 
-## Asennettavat kyvyt
+## Asennettavat kyvyt {#installable-abilities}
 
 Asennettavien kykyjen rekisteri antaa sinun laajentaa agenttia lisäkykypaketeilla, joita jaellaan WordPress-lisäosina. Jokainen paketti rekisteröi yhden tai useamman kyvyn käyttäen vakiomuotoista kyky-API:a.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Palauttaa rekisteristä asennettavissa olevien kykypakettien katalogin.
 
@@ -818,7 +818,7 @@ Palauttaa rekisteristä asennettavissa olevien kykypakettien katalogin.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Lataa ja aktivoi kykypaketin rekisteristä.
 
@@ -832,7 +832,7 @@ Lataa ja aktivoi kykypaketin rekisteristä.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Kysyy kykypakettien rekisteristä parhaan pluginin kuvattuun käyttötapaukseen ja haluttaessa asentaa sen.
 

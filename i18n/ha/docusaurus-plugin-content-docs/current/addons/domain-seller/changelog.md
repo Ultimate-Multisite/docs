@@ -3,7 +3,7 @@ title: Tarihin Canje-canje na Mai Sayar da Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Rajistar Canje-canje na Domain Seller
+# Rajistar Canje-canje na Domain Seller {#domain-seller-changelog}
 
 Version 1.3.0 - An fitar a 2026-06-02
 - Sabo: An ƙara gargaɗin network-admin lokacin da ma’aunin kuɗin HostAfrica reseller ya yi ƙasa sosai
@@ -134,20 +134,20 @@ Version 1.0.0 - An saki a 2025-09-28
 * **An gyara:** Duk tsohon code na v1 da aka daina amfani da shi an sabunta shi zuwa ƙa'idodin v2
 * **An cire:** Daidaituwar v1 ta gado (canji mai karya aiki)
 
-### Sigogin da Suka Gabata (v1 Legacy)
+### Sigogin da Suka Gabata (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * An gyara: Rashin daidaituwa da Groundhogg CRM
 * Lura: Wannan shi ne sakin ƙarshe da ya dace da v1
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * An gyara: An cire filin License Key
 * An gyara: Tabs na shiri sun ɓace lokacin da feature plugin yake aiki
 * An inganta: An ƙara maɓallin tsallakewa a filin rajista
 
-### Version 0.0.1 - Sakin Farko
+### Version 0.0.1 - Sakin Farko {#version-001---initial-release}
 
 * Haɗin OpenSRS na asali don WP Ultimo v1
 * Sauƙin binciken domain da rajista

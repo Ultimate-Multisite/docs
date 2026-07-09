@@ -4,20 +4,20 @@ title: Acción - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Acción: wu_magic_link_login
+# Acción: wu_magic_link_login {#action-wumagiclinklogin}
 
 Execútase despois de que un usuario inicie sesión mediante magic link.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
 | $user_id | `int` | O ID do usuario. |
 | $site_id | `int` | O ID do sitio. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L240) na liña 240

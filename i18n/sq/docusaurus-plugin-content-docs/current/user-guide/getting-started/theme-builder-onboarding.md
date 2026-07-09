@@ -3,11 +3,11 @@ title: Fluksi i onboarding-it për Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Proces i Udhëtimi në Theme Builder
+# Proces i Udhëtimi në Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 prezanton një **proces udhëtimi të themeluar për Theme Builder** që ju ndihmon të krijoni një temë bloku të personalizuar gjatë konfigurimit fillestar. Kjo zëvendëson modin e mëparshëm Site Builder me një qasje më fleksibël dhe mbështetur nga agenti.
 
-## Çfarë është Procesi i Udhëtimit në Theme Builder?
+## Çfarë është Procesi i Udhëtimit në Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Procesi i udhëtimit në Theme Builder është një wizard konfigurimi interaktiv që:
 
@@ -18,9 +18,9 @@ Procesi i udhëtimit në Theme Builder është një wizard konfigurimi interakti
 
 Procesi varet nga **agentu i Asistentit të Konfigurimit (Setup Assistant)**, i cili pyet pyetje qartësuese dhe ndërton temën tuaj hapi pas hapi.
 
-## Fillimi i Procesit të Udhëtimit në Theme Builder
+## Fillimi i Procesit të Udhëtimit në Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Konfigurimi Fillestar (First-Run Setup)
+### Konfigurimi Fillestar (First-Run Setup) {#first-run-setup}
 
 Kur fillon Superdav AI Agent për herë të parë në një instalim të ri WordPress, do të shihni:
 
@@ -35,7 +35,7 @@ Mirëseja te Superdav AI Agent!
 
 Zgjidhni **"Krijoni një temë të personalizuar"** për të hyrë në procesin e udhëtimit në Theme Builder.
 
-### Aktivimi Manual
+### Aktivimi Manual {#manual-activation}
 
 Ju mund të filloni procesin e udhëtimit në Theme Builder edhe në çdo kohë duke kërkuar:
 
@@ -49,9 +49,9 @@ ose
 "Help me create a custom theme"
 ```
 
-## Hapat e Udhëtimit
+## Hapat e Udhëtimit {#the-onboarding-steps}
 
-### Hapi 1: Zgjidhja e Modit (Mode Selection)
+### Hapi 1: Zgjidhja e Modit (Mode Selection) {#step-1-mode-selection}
 
 Agenti i Asistentit të Konfigurimit pyet për preferencën tuaj:
 
@@ -63,7 +63,7 @@ Si dëshironi të ndërtoni temën tuaj?
 
 **Modi udhëqur** rekomandohet për shumic të përdoruesve; agenti bën sugjerime dizajni bazuar në industrinë dhe qëllimet tuaja.
 
-### Hapi 2: Specifikimi i Faqes (Site Specification)
+### Hapi 2: Specifikimi i Faqes (Site Specification) {#step-2-site-specification}
 
 Ju do të kërkohet informacion rreth faqes suaj:
 
@@ -74,7 +74,7 @@ Ju do të kërkohet informacion rreth faqes suaj:
 
 Kjo informacion ruhet në kujtesën tuaj të **site_brief**, ku agjentët e referojnë në sesione të ardhshme.
 
-### Hapi 3: Vendimet e Sistemit Dizajni (Design System)
+### Hapi 3: Vendimet e Sistemit Dizajni (Design System) {#step-3-design-system-decisions}
 
 Agjenti ju udhëheq përmes zgjedhjeve të design token-eve:
 
@@ -83,7 +83,7 @@ Agjenti ju udhëheq përmes zgjedhjeve të design token-eve:
 - **Ndarrjet (Spacing)**: Dizajne kompakte, normale ose me hapësirë të gjatë
 - **Lëvizja (Motion)**: Animacione dhe tranzicionet (nëse dëshironi)
 
-### Hapi 4: Generimi i Temës (Theme Generation)
+### Hapi 4: Generimi i Temës (Theme Generation) {#step-4-theme-generation}
 
 Agjenti i Ndihmës së Konfigurimit (Setup Assistant) ju ndërton temën tuaj me:
 
@@ -92,7 +92,7 @@ Agjenti i Ndihmës së Konfigurimit (Setup Assistant) ju ndërton temën tuaj me
 - Stile specifike të blloqeve që përputen me sistemin tuaj të dizajnit
 - Metadatan e temës dhe deklarime se mbështet WordPress
 
-### Hapi 5: Aktivizimi dhe Verifikimi
+### Hapi 5: Aktivizimi dhe Verifikimi {#step-5-activation-and-verification}
 
 Tema aktivizohet automatikisht, dhe ju do të shihni këtë:
 
@@ -107,7 +107,7 @@ Tema aktivizohet automatikisht, dhe ju do të shihni këtë:
 
 Marrim atëherë mund të vizitoni faqen tuaj për të verifikuar që tema po shfaqet si duhet.
 
-## Specifikimet e Faqes dhe Kujtesa site_brief
+## Specifikimet e Faqes dhe Kujtesa site_brief {#site-specification-and-sitebrief-memory}
 
 Gjatë procesit fillestar (onboarding), agjenti mbledh specifikimet e faqes tuaj në një kategori të kujtesës **site_brief**. Kjo përfshin:
 
@@ -117,11 +117,11 @@ Gjatë procesit fillestar (onboarding), agjenti mbledh specifikimet e faqes tuaj
 - Preferencat dizajni
 - Strukturën e përmbajtjes
 
-### Pse site_brief është i rëndësishëm
+### Pse site_brief është i rëndësishëm {#why-sitebrief-matters}
 
 Në sesione të ardhshme, agjentët e referojnë në **site_brief** tuaj për:
 
-### Aplikimi i faqes su sitin tuaj
+### Aplikimi i faqes su sitin tuaj {#viewing-your-sitebrief}
 
 Mund të kërkosh nga agjenti:
 
@@ -137,11 +137,11 @@ ose
 
 Agjenti do t'të shfaq specifikimin e ruajtur të faqes suaj.
 
-## Personalizim Pas Përfaqes (Onboarding)
+## Personalizim Pas Përfaqes (Onboarding) {#customizing-after-onboarding}
 
 Pas përfundimit të përfaqes Theme Builder, mund të bësh:
 
-### Përdor Aftësinë e aftësisë së Dizajn Sistemit Estetik
+### Përdor Aftësinë e aftësisë së Dizajn Sistemit Estetik {#use-the-design-system-aesthetics-skill}
 
 Kërko ndryshime dizajni:
 
@@ -157,7 +157,7 @@ ose
 
 **Aftësia e estetikës së Dizajn Sistemit** të udhëheq në përditësime specifike dizajni.
 
-### Redigjo theme.json Direkt
+### Redigjo theme.json Direkt {#edit-themejson-directly}
 
 Për përdoruesit me aftësi më të larta, redigjoni `/wp-content/themes/[theme-name]/theme.json` për të rregulluar:
 
@@ -166,7 +166,7 @@ Për përdoruesit me aftësi më të larta, redigjoni `/wp-content/themes/[theme
 - Spacing values (vlerat e hapësirës)
 - Border and shadow definitions (përkufizimet e kufijve dhe hapi i ngjyrave)
 
-### Krijoni Template të Butiksh Custom
+### Krijoni Template të Butiksh Custom {#create-custom-block-templates}
 
 Përdorni redaktorin e blokut WordPress për të krijuar template të veçantë për:
 
@@ -175,7 +175,7 @@ Përdorni redaktorin e blokut WordPress për të krijuar template të veçantë 
 - Faqet e produktit (Product pages)
 - Formularët e kontaktit (Contact forms)
 
-## Krahasim: I Vjetër vs. I Ri Përfaqe
+## Krahasim: I Vjetër vs. I Ri Përfaqe {#comparison-old-vs-new-onboarding}
 
 | Karakteristika | Site Builder (I vjetër) | Theme Builder (I ri) |
 |---|---|---|
@@ -185,7 +185,7 @@ Përdorni redaktorin e blokut WordPress për të krijuar template të veçantë 
 | Fleksibiliteti | Opsione fikse | I përshtatshëm për modifikim |
 | Përditësime e ardhshme | Nuk referohen | Ruhen në site_brief |
 
-## Zgjidhja e Problemeve (Troubleshooting)
+## Zgjidhja e Problemeve (Troubleshooting) {#troubleshooting}
 
 **Përfaqja nuk u mbarua**
 - Rinisni procesin: "Start the Theme Builder onboarding"
@@ -202,7 +202,7 @@ Përdorni redaktorin e blokut WordPress për të krijuar template të veçantë 
 - Kërko nga agjenti që të "regjeneroj tema me [ndryshime specifike]" (regenerate the theme with [specific changes])
 - Redigoni direkt file `theme.json` për kontroll të saktë
 
-## Hapat e Ardhshëm
+## Hapat e Ardhshëm {#next-steps}
 
 Pas përfundimit të onboarding-ut të Theme Builder:
 

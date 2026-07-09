@@ -3,11 +3,11 @@ title: Tractatio Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Tractatio
+# Webhook Tractatio {#webhook-handling}
 
 Crea proprios webhook terminos ut eventa a servitiis externis accipias et data cum Ultimate Multisite synchronizes.
 
-## Proprius Webhook Terminus
+## Proprius Webhook Terminus {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Considerationes Securitatis
+## Considerationes Securitatis {#security-considerations}
 
 - Semper verifica subscriptiones webhook utens HMAC aut secreto communi
 - Utere `permission_callback` in tua REST via — numquam eam ad `__return_true` in productione constitue

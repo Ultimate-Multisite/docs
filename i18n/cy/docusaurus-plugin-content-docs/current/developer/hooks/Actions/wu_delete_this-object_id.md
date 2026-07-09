@@ -4,13 +4,13 @@ title: 'Gweithred - wu_delete_{$this->object_id}'
 sidebar_label: 'wu_delete_{$this->object_id}'
 _i18n_hash: 8525ca1e747ac6a29314c90b0a52b3bb
 ---
-# Action: wu_delete_\{$this->object_id\}
+# Action: wu_delete_\{$this->object_id\} {#action-wudeletethis-objectid}
 
 Caniatáu i ddatblygwyr ategion ychwanegu gweithredoedd at y broses ddileu
 
-### Ers
+### Ers {#since}
 
 - 1.8.2
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Wedi'i ddiffinio yn [`inc/admin-pages/class-edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-edit-admin-page.php#L251) ar linell 251

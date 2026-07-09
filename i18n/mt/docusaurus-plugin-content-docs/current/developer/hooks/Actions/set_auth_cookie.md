@@ -4,11 +4,11 @@ title: Azzjoni - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Azzjoni: set_auth_cookie
+# Azzjoni: set_auth_cookie {#action-setauthcookie}
 
 Tiskatta immedjatament qabel ma tiġi ssettjata l-cookie tal-awtentikazzjoni.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Tiskatta immedjatament qabel ma tiġi ssettjata l-cookie tal-awtentikazzjoni.
 | $scheme | `string` | Skema ta' awtentikazzjoni. Il-valuri jinkludu 'auth' jew 'secure_auth'. |
 | $token | `string` | Token tas-sessjoni tal-utent biex jintuża għal din il-cookie. |
 
-### Minn
+### Minn {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Sors
+### Sors {#source}
 
 Definit f'[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) fil-linja 124

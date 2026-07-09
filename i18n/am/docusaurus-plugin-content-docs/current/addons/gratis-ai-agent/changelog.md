@@ -3,11 +3,11 @@ title: የለውጥ ታሪክ
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# የለውጥ መዝገብ
+# የለውጥ መዝገብ {#changelog}
 
-## 1.9.0 — የተለቀቀበት ቀን 2026-04-28
+## 1.9.0 — የተለቀቀበት ቀን 2026-04-28 {#190--released-on-2026-04-28}
 
-### አዲስ
+### አዲስ {#new}
 
 - **`create_contact_form` አቅም** — በንቁ የፎርም ፕልጊን (Contact Form 7, WPForms, Fluent Forms, ወይም Gravity Forms) በመጠቀም የእውቂያ ፎርም ይፈጥራል፣ እና በማንኛውም ፖስት ወይም ገጽ ውስጥ ለማስገባት ዝግጁ የሆነ shortcode ይመልሳል።
 - **`set_featured_image` አቅም** — ከሚገኝ የမီዲያ ቤተመጽሐፍት attachment ID ወይም የርቀት URL በመጠቀም ለፖስት ወይም ለገጽ ዋና ምስል (featured image) ይመድባል። URL ሲሰጥ ምስሉን በራስ-ሰር ያስገባል።
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **የመጨረሻ ክፍለ ጊዜን መልሶ ማግኘት (Restore last session)** — የቻት ፓነሉ አሁን በገጹ መጫን ጊዜ እና በዊጄት መከፈት ጊዜ በጣም የቅርብ ጊዜውን ውይይት በራስ-ሰር ይከፍታል፣ ስለዚህ በገጽ ሽግግር ጊዜ አውዱ (context) አይጠፋም።
 - **የፕልጊን የድርጊት ሊንኮች (Plugin action links)** — ወደ ቅንብሮች (Settings) እና ወደ Abilities Registry የሚወስዱ ፈጣን ሊንኮች አሁን በWordPress **Plugins → Installed Plugins** ስክሪን ላይ፣ ከፕልጊኑ መግለጫ በታች ይታያሉ።
 
-### የተሻሻሉ
+### የተሻሻሉ {#improved}
 
 - **የምስል ምንጭ እንደገና መሞከር (Image source retry)** — ወኪሉ አሁን የነጻ ምስል ምንጮችን ሁሉ ይሞክራል፣ ከዚያም በስረታው (download failure) ላይ AI-የተፈጠረ ምስል ላይ መመለስ ይችላል።
 - **የሞዴል መረጃ ፓነል (Model info panel)** — በቻት ሄደር ውስጥ ሁልጊዜ ይታያል፤ ከየመጀመሪያው መልእክት በኋላ አይደበቅም።
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **የቻት ዊጄት እንደገና ዲዛይን (Chat widget redesign)** — አንድ ወጥ AI አዶ ቀደም ያለውን የተበጀ አቫታር ይተካዋል፤ ይህም ከየተገነባው የወኪል ስርዓት ጋር የተጣጣመ ነው።
 - **የURL ሊንክ ማድረግ (URL linkification)** — በስርዓት መልእክቶች እና በስህተት መልእክት አረፋዎች ውስጥ የሚታዩ URLዎች አሁን እንደ ተጫን ሊንኮች (clickable links) ይታያሉ።
 
-### የተስተካከሉ
+### የተስተካከሉ {#fixed}
 
 - **የአቅም መገኘት (Ability discoverability)** — ሁሉም አቅሞች በወኪሉ የመሳሪያ ዝርዝር ውስጥ በታማኝነት እንዲታዩ ለማድረግ መግለጫዎች፣ የሲስተም ፕሮምፕት ማጣቀሻዎች እና የnamespace አሰላለፍ ተስተካክለዋል።
 - **የአቅራቢዎች ካሽ (Providers cache)** — አቅራቢዎች አሁን በቨርዥን 카운ተር አማካኝነት በጠቅላላው የጣቢያ ደረጃ በካሽ ተቀምጠዋል፣ ይህም በmultisite ኔትወርኮች ላይ የቆየ አቅራቢ (stale-provider) ችግሮችን ይከላከላል።
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — የተለቀቀበት ቀን 2026-04-09
+## 1.4.0 — የተለቀቀበት ቀን 2026-04-09 {#140--released-on-2026-04-09}
 
-### አዲስ
+### አዲስ {#new-1}
 
 - **WP-CLI የbenchmark ትዕዛዝ** (`wp gratis-ai-agent benchmark`) — ለCI পাইፕላይን እና ለሞዴል ግምገማ የስራ ፍሰቶች (workflows) ከኮማንድ መስመር የAgent Capabilities v1 benchmark suite ያካሂዳል። ለእያንዳንዱ ጥያቄ መሮጥ፣ የአቅራቢ/ሞዴል መተካት (overrides) እና JSON/CSV ውጤት ይደግፋል።
 - **የAgent Capabilities v1 benchmark suite** — ሙሉ የአቅም ወለልን (full ability surface) የሚያሰልጥን፣ ውጤት እና የቶከን/የቆይታ ጊዜ ሪፖርት የሚያደርግ የተዋቀረ ስብስብ የብዙ-ደረጃ ፕሮምፕቶች።
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **የሬስቶራንት ድረ-ገጽ የbenchmark ጥያቄ** (`q-restaurant-website`) — CPT ምዝገባን፣ የንድፍ ስርዓትን፣ ማሰላለሻን እና የፕልጊን ግኝትን የሚሸፍን የend-to-end ፈተና።
 - **የAI አቅራቢ ማገናኛ ፕልጊኖች (AI provider connector plugins)** ለፈጣን የአካባቢ ልማት ስብስብ (local development setup) ወደ WordPress Playground blueprints ተጨምረዋል።
 
-### የተሻሻሉ
+### የተሻሻሉ {#improved-1}
 
 - README በAI አቅራቢ ማገናኛ ሰነድ እና የማስጫ ስልጠናዎች ተዘምሯል።
 
-### የተስተካከሉ
+### የተስተካከሉ {#fixed-1}
 
 - በ`main` ቅርንጫፍ ላይ 25 የPHPUnit የፈተና ውድቀቶች ተፈውሰዋል።
 - በ`blueprint.json` ውስጥ ያለው የGitHub releases URL ቅርጸት ተስተካክሏል።
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _የቀድሞው የለውጥ መዝገብ በፕልጊኑ መዝገብ ውስጥ ተጠብቋል።_

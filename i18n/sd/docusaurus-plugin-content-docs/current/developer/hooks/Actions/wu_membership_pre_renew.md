@@ -4,11 +4,11 @@ title: عمل - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# عمل: wu_membership_pre_renew
+# عمل: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 رڪنيت جي تجديد کان اڳ ٽرگر ٿئي ٿو.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 | $membership_id | `int` | رڪنيت جو ID. |
 | $membership | `\Membership` | رڪنيت جو آبجيڪٽ. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.0
-### ماخذ
+### ماخذ {#source}
 
 [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) ۾ لائين 2204 تي بيان ٿيل.

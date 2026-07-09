@@ -3,7 +3,7 @@ title: Mailchimp වෙනස්කම් සටහන
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp වෙනස්කම් සටහන
+# Mailchimp වෙනස්කම් සටහන {#mailchimp-changelog}
 
 අනුවාදය: 1.1.1 - 2025-09-28 දින නිකුත් කරන ලදී
 

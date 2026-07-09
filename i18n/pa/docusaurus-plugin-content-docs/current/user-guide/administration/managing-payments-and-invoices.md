@@ -3,9 +3,9 @@ title: ਭੁਗਤਾਨਾਂ ਅਤੇ ਇਨਵਾਇਸਾਂ ਦਾ ਪ੍
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# ਭੁਗਤਾਨਾਂ ਅਤੇ ਚਲਾਨਾਂ ਦਾ ਪ੍ਰਬੰਧਨ
+# ਭੁਗਤਾਨਾਂ ਅਤੇ ਚਲਾਨਾਂ ਦਾ ਪ੍ਰਬੰਧਨ {#managing-payments-and-invoices}
 
-## ਭੁਗਤਾਨ ਸੈਟਿੰਗਾਂ
+## ਭੁਗਤਾਨ ਸੈਟਿੰਗਾਂ {#payment-settings}
 
 ਭੁਗਤਾਨ ਪ੍ਰਾਪਤ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, ਤੁਹਾਨੂੰ ਭੁਗਤਾਨ-ਸੰਬੰਧੀ ਸੈਟਿੰਗਾਂ ਕੌਂਫਿਗਰ ਕਰਨੀਆਂ ਪੈਣਗੀਆਂ। **Ultimate Multisite → Settings** ਤੇ ਜਾਓ ਅਤੇ **Payment** ਟੈਬ 'ਤੇ ਕਲਿੱਕ ਕਰੋ।
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![ਭੁਗਤਾਨ ਸੈਟਿੰਗਾਂ ਪੂਰਾ ਪੰਨਾ](/img/admin/settings-payments-full.png)
 
-### ਆਮ ਭੁਗਤਾਨ ਵਿਕਲਪ
+### ਆਮ ਭੁਗਤਾਨ ਵਿਕਲਪ {#general-payment-options}
 
 ਆਮ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਤੁਸੀਂ ਕੌਂਫਿਗਰ ਕਰ ਸਕਦੇ ਹੋ:
 
@@ -24,7 +24,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![ਭੁਗਤਾਨ ਗੇਟਵੇ ਸੈਟਿੰਗਾਂ](/img/admin/settings-payments-options.png)
 
-### ਭੁਗਤਾਨ ਗੇਟਵੇ
+### ਭੁਗਤਾਨ ਗੇਟਵੇ {#payment-gateways}
 
 Ultimate Multisite ਕਈ ਭੁਗਤਾਨ ਗੇਟਵੇਜ਼ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ। ਤੁਸੀਂ Payment ਸੈਟਿੰਗਾਂ ਟੈਬ ਤੋਂ ਹਰ ਇੱਕ ਨੂੰ ਸਮਰੱਥ ਅਤੇ ਕੌਂਫਿਗਰ ਕਰ ਸਕਦੇ ਹੋ।
 
@@ -40,11 +40,11 @@ Ultimate Multisite ਕਈ ਭੁਗਤਾਨ ਗੇਟਵੇਜ਼ ਦਾ ਸਮ
 
 ![ਵਾਧੂ ਗੇਟਵੇ ਸੈਟਿੰਗਾਂ](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 ਤੁਸੀਂ ਲਾਈਵ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੇ ਭੁਗਤਾਨ ਇਕੀਕਰਨ ਦੀ ਜਾਂਚ ਕਰਨ ਲਈ **Sandbox Mode** ਸਮਰੱਥ ਕਰ ਸਕਦੇ ਹੋ। ਜਦੋਂ sandbox mode ਸਰਗਰਮ ਹੁੰਦਾ ਹੈ, ਕੋਈ ਅਸਲ ਚਾਰਜ ਨਹੀਂ ਲਗਾਏ ਜਾਣਗੇ।
 
-## ਭੁਗਤਾਨ ਵੇਖਣਾ
+## ਭੁਗਤਾਨ ਵੇਖਣਾ {#viewing-payments}
 
 ਆਪਣੇ ਨੈੱਟਵਰਕ ਵਿੱਚ ਸਾਰੇ ਲੈਣ-ਦੇਣ ਵੇਖਣ ਲਈ Ultimate Multisite ਹੇਠਾਂ **Payments** ਪੰਨੇ 'ਤੇ ਜਾਓ।
 
@@ -54,7 +54,7 @@ Ultimate Multisite ਕਈ ਭੁਗਤਾਨ ਗੇਟਵੇਜ਼ ਦਾ ਸਮ
 
 ਭੁਗਤਾਨ ਦੀਆਂ ਪੂਰੀਆਂ ਜਾਣਕਾਰੀਆਂ ਵੇਖਣ ਲਈ ਉਸ 'ਤੇ ਕਲਿੱਕ ਕਰੋ, ਜਿਸ ਵਿੱਚ ਲਾਈਨ ਆਈਟਮਾਂ, ਸੰਬੰਧਿਤ ਮੈਂਬਰਸ਼ਿਪ, ਗਾਹਕ ਜਾਣਕਾਰੀ ਅਤੇ ਭੁਗਤਾਨ ਗੇਟਵੇ ਡਾਟਾ ਸ਼ਾਮਲ ਹਨ।
 
-## ਚਲਾਨ
+## ਚਲਾਨ {#invoices}
 
 Ultimate Multisite ਭੁਗਤਾਨਾਂ ਲਈ ਆਪਣੇ ਆਪ ਚਲਾਨ ਤਿਆਰ ਕਰ ਸਕਦਾ ਹੈ। ਤੁਸੀਂ Payment ਸੈਟਿੰਗਾਂ ਤੋਂ ਚਲਾਨ ਟੈਮਪਲੇਟ ਅਤੇ ਨੰਬਰਿੰਗ ਫਾਰਮੈਟ ਨੂੰ ਅਨੁਕੂਲਿਤ ਕਰ ਸਕਦੇ ਹੋ।
 

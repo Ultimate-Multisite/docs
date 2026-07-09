@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Reteja Konstruilo
+# AI Reteja Konstruilo {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Postuloj
+## Postuloj {#requirements}
 
 - WordPress 5.3 aŭ pli alta
 - PHP 7.4 aŭ pli alta
 - Multisite Ultimate kromprogramo (aktiva)
 
-## Instalado
+## Instalado {#installation}
 
 1. Alŝutu la aldonaĵajn dosierojn al via dosierujo `/wp-content/plugins/`
 2. Aktivigu la kromprogramon per la menuo 'Plugins' en WordPress
 3. Agordu la aldonaĵajn agordojn en la reta administrado
 
-## Evoluigado
+## Evoluigado {#development}
 
-### Agordo
+### Agordo {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projekta Strukturo
+### Projekta Strukturo {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Kodmodernigaj reguloj
 ```
 
-### Testado
+### Testado {#testing}
 
 La aldonaĵo inkluzivas ampleksan testan kadron:
 
@@ -79,44 +79,44 @@ La aldonaĵo inkluzivas ampleksan testan kadron:
 - **Testa Kovrado**: Agordita por spuri kodan kovradon
 - **Multisite Testado**: Testoj ruliĝas en multisite medio
 
-### Kodnormoj
+### Kodnormoj {#code-standards}
 
 - **WordPress Kodnormoj**: Devigataj per PHPCS
 - **PHP 7.4+ Kongrueco**: Modernaj PHP funkcioj subtenataj
 - **Statika Analizo**: PHPStan integriĝo por tipkontrolado
 - **Koda Modernigo**: Rector reguloj por PHP ĝisdatigoj
 
-### Konstrusistemo
+### Konstrusistemo {#build-system}
 
 - **Aktivaĵa Prilaborado**: Malgrandigo por CSS/JS dosieroj
 - **Traduko**: POT dosiera generado
 - **Pakado**: Arkiva kreado por distribuo
 - **Evoluiga Reĝimo**: Nemalgrandigitaj aktivaĵoj por sencimigo
 
-## Agordo
+## Agordo {#configuration}
 
 La aldonaĵo subtenas diversajn agordajn opciojn alireblajn per la reta administra interfaco.
 
-## Hokoj kaj Filtriloj
+## Hokoj kaj Filtriloj {#hooks-and-filters}
 
-### Agoj
+### Agoj {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Ekigita post aldonaĵa inicialigo
 - `ultimate-multisite-ai-site-builder_loaded` - Ekigita post kiam ĉiuj aldonaĵaj dosieroj estas ŝargitaj
 
-### Filtriloj
+### Filtriloj {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modifi aldonaĵajn agordojn
 - `ultimate-multisite-ai-site-builder_enabled` - Anstataŭigi aldonaĵan aktivigan/malaktivigan staton
 
-## Permesilo
+## Permesilo {#license}
 
 Ĉi tiu aldonaĵo estas licencita laŭ GPL v3 aŭ posta.
 
-## Subteno
+## Subteno {#support}
 
 Por subteno kaj dokumentado, vizitu [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ŝanĝprotokolo
+## Ŝanĝprotokolo {#changelog}
 
 - Versio 1.0.1 (2025-09-28): alinomi prefikson al ultimate-multisite; ĝisdatigi tekstdomajnon; versiopliigo.
 

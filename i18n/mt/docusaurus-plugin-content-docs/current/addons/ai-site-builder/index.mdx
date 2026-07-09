@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Bennej ta' Siti bl-AI
+# Bennej ta' Siti bl-AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Rekwiżiti
+## Rekwiżiti {#requirements}
 
 - WordPress 5.3 jew ogħla
 - PHP 7.4 jew ogħla
 - plugin Multisite Ultimate (attiv)
 
-## Installazzjoni
+## Installazzjoni {#installation}
 
 1. Tella' l-fajls tal-addon fid-direttorju tiegħek `/wp-content/plugins/`
 2. Attiva l-plugin permezz tal-menu 'Plugins' f'WordPress
 3. Ikkonfigura s-settings tal-addon fl-amministratur tan-network
 
-## Żvilupp
+## Żvilupp {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struttura tal-Proġett
+### Struttura tal-Proġett {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Regoli għall-immodernizzar tal-code
 ```
 
-### Ittestjar
+### Ittestjar {#testing}
 
 L-addon jinkludi qafas komprensiv għall-ittestjar:
 
@@ -79,44 +79,44 @@ L-addon jinkludi qafas komprensiv għall-ittestjar:
 - **Kopertura tat-Testijiet**: Ikkonfigurata biex issegwi l-kopertura tal-code
 - **Ittestjar Multisite**: It-testijiet jitħaddmu f'ambjent multisite
 
-### Standards tal-Code
+### Standards tal-Code {#code-standards}
 
 - **Standards tal-Coding ta' WordPress**: Infurzati permezz ta' PHPCS
 - **Kompatibbiltà ma' PHP 7.4+**: Karatteristiċi moderni ta' PHP appoġġjati
 - **Analiżi Statika**: Integrazzjoni ta' PHPStan għall-iċċekkjar tat-tipi
 - **Immodernizzar tal-Code**: Regoli ta' Rector għal aġġornamenti ta' PHP
 
-### Sistema tal-Build
+### Sistema tal-Build {#build-system}
 
 - **Ipproċessar tal-Assets**: Minifikazzjoni għal fajls CSS/JS
 - **Traduzzjoni**: Ġenerazzjoni tal-fajl POT
 - **Ippakkjar**: Ħolqien ta' arkivju għad-distribuzzjoni
 - **Modalità ta' Żvilupp**: Assets mhux minifikati għad-debugging
 
-## Konfigurazzjoni
+## Konfigurazzjoni {#configuration}
 
 L-addon jappoġġja diversi għażliet ta' konfigurazzjoni aċċessibbli permezz tal-interface tal-amministratur tan-network.
 
-## Hooks u Filters
+## Hooks u Filters {#hooks-and-filters}
 
-### Azzjonijiet
+### Azzjonijiet {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Jitħaddem wara l-inizjalizzazzjoni tal-addon
 - `ultimate-multisite-ai-site-builder_loaded` - Jitħaddem wara li l-fajls kollha tal-addon jitgħabbew
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Immodifika s-settings tal-addon
 - `ultimate-multisite-ai-site-builder_enabled` - Aqbeż l-istatus ta' attivazzjoni/diżattivazzjoni tal-addon
 
-## Liċenzja
+## Liċenzja {#license}
 
 Dan l-addon huwa liċenzjat taħt il-GPL v3 jew aktar tard.
 
-## Appoġġ
+## Appoġġ {#support}
 
 Għal appoġġ u dokumentazzjoni, żur [MultisiteUltimate.com](https://multisiteultimate.com)
-## Reġistru tal-Bidliet
+## Reġistru tal-Bidliet {#changelog}
 
 - Verżjoni 1.0.1 (2025-09-28): biddel il-prefix għal ultimate-multisite; aġġorna t-text domain; żieda fil-verżjoni.
 

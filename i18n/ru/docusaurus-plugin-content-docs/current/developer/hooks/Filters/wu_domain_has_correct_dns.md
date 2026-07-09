@@ -4,11 +4,11 @@ title: Фильтр - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Фильтр: wu_domain_has_correct_dns
+# Фильтр: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Позволяет разработчикам плагинов добавлять новые проверки для определения результатов.
 
-## Parameters
+## Parameters {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 | $domain | `self` | текущий экземпляр домена. |
 | $domains_and_ips | `array` | список доменов и IP, найденных при поиске DNS. |
 
-### Since
+### Since {#since}
 
 - 2.0.4
 
-### Source
+### Source {#source}
 
 Определено в [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) на строке 455
 
-## Returns
+## Returns {#returns}
 
 Если DNS настроен правильно или нет.

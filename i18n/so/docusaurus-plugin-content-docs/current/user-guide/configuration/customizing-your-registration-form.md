@@ -3,13 +3,13 @@ title: Habeynta Foomkaaga Diiwaangelinta
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Habaynta Foomkaaga Diiwaangelinta
+# Habaynta Foomkaaga Diiwaangelinta {#customizing-your-registration-form}
 
 Si shabakaddaadu uga muuqato mid gaar ah marka loo eego dhammaan SaaS-yada kale ee lagu dhisay WordPress platform, Ultimate Multisite wuxuu kuu oggolaanayaa inaad habayso bogaggaaga diiwaangelinta iyo gelitaanka adigoo adeegsanaya astaantayada **Checkout Forms**.
 
 In kasta oo ay yihiin hab fudud oo dabacsan oo lagu tijaabiyo habab kala duwan marka la isku dayayo in macaamiil cusub loo beddelo, badanaa waxaa loo adeegsadaa abuurista foomam diiwaangelin oo shaqsiyaysan. Maqaalkani wuxuu ujeedkiisu yahay inuu ku tuso sida aad taas u samayn karto.
 
-## Bogagga gelitaanka iyo diiwaangelinta:
+## Bogagga gelitaanka iyo diiwaangelinta: {#login-and-registration-pages}
 
 Marka Ultimate Multisite la rakibo, wuxuu si otomaatig ah uga abuuraa bogag gelitaan iyo diiwaangelin oo la habeeyey goobtaada ugu weyn. Waxaad beddeli kartaa bogaggan caadiga ah wakhti kasta adigoo tagaya boggaaga **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Hadda, aan aragno ikhtiyaarro kale oo weli khuseeya habka gelitaanka iyo diiwaan
 
 Taasina waa dhammaan ikhtiyaarrada la xiriira gelitaanka iyo diiwaangelinta ee aad habayn karto! Ha ilaawin inaad kaydiso dejimahaaga markaad dhamayso tafatirkooda.
 
-## Isticmaalka foomam diiwaangelin oo badan:
+## Isticmaalka foomam diiwaangelin oo badan: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 wuxuu bixiyaa tafatire foom checkout ah oo kuu oggolaanaya inaad abuurto foomam intaad rabto, oo leh beerro kala duwan, badeecado la soo bandhigay, iwm.
 
@@ -69,7 +69,7 @@ Haddii kale, waxaad tafatiri kartaa ama nuqul ka samayn kartaa foomamka aad hore
 
 Haddii aad doorato hal tallaabo ama tallaabooyin badan, foomka checkout hore ayaa loogu buuxin doonaa tallaabooyinka aasaasiga ah ee uu ku shaqaynayo. Kadib, haddii aad rabto, waxaad ku dari kartaa tallaabooyin dheeraad ah.
 
-### Tafatirka Checkout Form:
+### Tafatirka Checkout Form: {#editing-a-checkout-form}
 
 Sida aan hore u sheegnay, waxaad abuuri kartaa foomam checkout ujeeddooyin kala duwan. Tusaalahan waxaan ka shaqayn doonaa foom diiwaangelin.
 
@@ -131,11 +131,11 @@ Si aad u hesho shortcode-ka foomkaaga guji **Abuur Shortcode** oo koobi garee na
 
 _**Ogow:** Waxaad u baahan doontaa inaad shortcode-kan ku darto boggaaga diiwaangelinta si foomkan lacag-bixinta loogu daro._
 
-## Hore u xulashada badeecadaha iyo qaab-dhismeedyada adigoo adeegsanaya URL parameters:
+## Hore u xulashada badeecadaha iyo qaab-dhismeedyada adigoo adeegsanaya URL parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Haddii aad rabto inaad u abuurto jadwallo qiimeyn oo la habeeyey badeecadahaaga oo aad hore ugu xulato foomka lacag-bixinta badeecadda ama qaab-dhismeedka uu macmiilkaagu ka doorto jadwalkaaga qiimeynta ama bogga qaab-dhismeedyada, waxaad taas u isticmaali kartaa URL parameters.
 
-### **Qorshayaasha:**
+### **Qorshayaasha:** {#for-plans}
 
 Tag **Ultimate Multisite > Badeecado > Dooro qorshe**. Waa inaad aragtaa badhanka **Guji si aad u koobiyeeso Link la wadaagi karo** ee ku yaal dusha bogga. Kani waa link-ga aad u isticmaali karto inaad hore ugu xulato qorshahan gaarka ah foomkaaga lacag-bixinta.
 
@@ -143,7 +143,7 @@ Tag **Ultimate Multisite > Badeecado > Dooro qorshe**. Waa inaad aragtaa badhank
 
 Ogow in link-gan la wadaagi karo uu kaliya ansax u yahay **Qorshayaasha**. Ma isticmaali kartid link-yada la wadaagi karo xirmooyinka ama adeegyada.
 
-### Qaab-dhismeedyada:
+### Qaab-dhismeedyada: {#for-templates}
 
 Haddii aad rabto inaad hore ugu xulato qaab-dhismeedyada site-ka foomkaaga lacag-bixinta, waxaad isticmaali kartaa parameter-ka: **?template_id=X** ee URL-ka boggaaga diiwaangelinta. "X" waa in lagu beddelaa **lambarka ID-ga qaab-dhismeedka site-ka**. Si aad u hesho lambarkan, tag **Ultimate Multisite > Site-yada**.
 

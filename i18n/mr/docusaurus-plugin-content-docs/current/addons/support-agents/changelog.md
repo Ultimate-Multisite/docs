@@ -3,7 +3,7 @@ title: सपोर्ट एजंट्स बदल नोंदी
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# सपोर्ट एजंट्स चेंजलॉग
+# सपोर्ट एजंट्स चेंजलॉग {#support-agents-changelog}
 
 Version: 1.0.14 - Released on 2026-05-05
 * सुधारणा: योग्य WordPress प्लगइन अवलंबित्व (dependency) घोषित करण्यासाठी 'Requires Plugins' हे हेडर जोडले.

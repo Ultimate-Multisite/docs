@@ -3,11 +3,11 @@ title: Feedback i informes d'incidentes de clients
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback i Reportatge de Problemes de l'Usuari
+# Feedback i Reportatge de Problemes de l'Usuari {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 incorpora un sistema intern de feedback i reportatge de problemes que permet als usuaris finals marcar respostes que no són útils i reportar problemes directament des de l'interfecció de xat. Aquest sistema inclou la gestió del consentiment, un comodín de reportatge automatitzat i un triatge assistit per IA a la capa *backend*.
 
-## Botó de Dits Abaix
+## Botó de Dits Abaix {#thumbs-down-button}
 
 Cada missatge enviat pel assistent d'IA mostra un botó de **dits abaix** (👎). Quan un usuari hi fa clic, pot marcar una resposta com a no útil o incorrecta.
 
@@ -15,7 +15,7 @@ Cada missatge enviat pel assistent d'IA mostra un botó de **dits abaix** (👎)
 - Fegir-hi clic s'obre el **Modal de Consentiment de Feedback**.
 - El feedback es relaciona amb el fil de conversa i el missatge específic.
 
-## Modal de Consentiment de Feedback
+## Modal de Consentiment de Feedback {#feedback-consent-modal}
 
 Quan un usuari fa clic al botó de dits abaix, apareix un modal de consentiment abans de enviar qualsevol dades. El modal:
 
@@ -26,13 +26,13 @@ Quan un usuari fa clic al botó de dits abaix, apareix un modal de consentiment 
 
 No es registra cap feedback fins que l'usuari ho confirma explícitament.
 
-## Banner de Feedback d'Auto-Prompt
+## Banner de Feedback d'Auto-Prompt {#auto-prompt-feedback-banner}
 
 A la finalització d'una conversa, l'assistent pot mostrar un **banner de feedback d'auto-prompt** — un missatge no intrusiu que pregunta si la sessió va ser útil.
 
 Aquest banner apareix automàticament basat en la longitud i els heurístiques de resultat de la conversa. Enllaça al mateix flux de feedback que el botó de dits abaix. Els usuaris poden tancar el banner sense proporcionar feedback.
 
-## Comandament Slash /report-issue
+## Comandament Slash /report-issue {#report-issue-slash-command}
 
 Els usuaris poden activar el flux de feedback directament escrivint `/report-issue` a la caixa d'entrada del xat. Aquest comodín:
 
@@ -42,7 +42,7 @@ Els usuaris poden activar el flux de feedback directament escrivint `/report-iss
 
 El comodín `/report-issue` està disponible en tots els modes de xat (inline, widget flotant, pantalla completa).
 
-## Triage Assistit per IA
+## Triage Assistit per IA {#ai-assisted-triage}
 
 El feedback enviat es dirigeix a una capa de triatge d'IA que:
 

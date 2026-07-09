@@ -3,9 +3,9 @@ title: Komenci kun disvolvado de aldonaĵoj
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Aldonaĵo-disvolvado
+# Aldonaĵo-disvolvado {#addon-development}
 
-## Strukturo de aldonaĵo
+## Strukturo de aldonaĵo {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Ĉablono de ĉefa dosiero de aldonaĵo
+## Ĉablono de ĉefa dosiero de aldonaĵo {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Ekzemplo de propra modelo
+## Ekzemplo de propra modelo {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrado de administra paĝo
+## Integrado de administra paĝo {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Testado de Via Addon
+## Testado de Via Addon {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## etendopunktoj de v2.13.0
+## etendopunktoj de v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 aldonas plurajn etendopunktojn, kiuj utilas por addons kiuj integriĝas kun suverenaj luantoj, checkout domajnoj, aŭ DNS-aŭtomatigo de gastiganta provizanto.
 
-### SSO kaj administraj URL-oj de ĉefa retejo
+### SSO kaj administraj URL-oj de ĉefa retejo {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Bazaj domajnoj de checkout-formularo
+### Bazaj domajnoj de checkout-formularo {#checkout-form-base-domains}
 
 Uzu `wu_checkout_form_base_domains` kiam via addon provizas aldonajn komunajn bazajn domajnojn, kiuj devus konduti kiel checkout-formularaj **Site URL** domajnoj anstataŭ laŭretejaj propraj mapoj:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite normaligas ĉi tiujn gastigantojn kaj preterlasas aŭtomatajn laŭretejajn mapit-domajnajn registrojn por ili.
 
-### Aŭtomata kreado de domajnaj registroj
+### Aŭtomata kreado de domajnaj registroj {#automatic-domain-record-creation}
 
 Uzu `wu_should_create_domain_record_for_site` kiam via addon bezonas subpremi aŭ prokrasti aŭtomatan kreadon de domajna registro por nove kreita retejo:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Integriĝoj de gastiganta provizanto, kiuj aŭskultas `wu_add_subdomain`, povas krei DNS-registrojn ĉe la provizanto kiam retejoj estas kreitaj. Se neniu integriĝo estas registrita por tiu ago, Ultimate Multisite preterlasas la malplenan fonan taskon.
 
-## Sekvaj Paŝoj
+## Sekvaj Paŝoj {#next-steps}
 
 - Reviziu la [Referencon pri Hooks](/developer/hooks) por disponeblaj agoj kaj filtriloj
 - Kontrolu la [Superrigardon de REST API](/developer/rest-api/overview) por API-integriĝo

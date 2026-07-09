@@ -3,21 +3,21 @@ title: Installation et configuration du fournisseur
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vendeur de domaines : configuration et configuration des fournisseurs
+# Vendeur de domaines : configuration et configuration des fournisseurs {#domain-seller-setup-and-provider-configuration}
 
 Le module complémentaire Vendeur de domaines est fourni avec un assistant de configuration guidé qui vous accompagne à chaque étape requise. Cette page couvre le déroulement de l’assistant et la manière de configurer ou de reconfigurer les fournisseurs par la suite.
 
-## Exigences
+## Exigences {#requirements}
 
 - **Multisite Ultimate** v2.4.12 ou supérieure, activé sur le réseau
 - **PHP** 7.4+
 - Identifiants API pour au moins un bureau d’enregistrement pris en charge
 
-## Assistant de configuration au premier lancement
+## Assistant de configuration au premier lancement {#first-run-setup-wizard}
 
 L’assistant de configuration se lance automatiquement la première fois que vous activez le plugin sur le réseau. Il est également disponible à tout moment depuis **Administration réseau › Ultimate Multisite › Configuration du Vendeur de domaines**.
 
-### Étape 1 — Choisir un fournisseur
+### Étape 1 — Choisir un fournisseur {#step-1--choose-a-provider}
 
 Sélectionnez le bureau d’enregistrement que vous souhaitez connecter. Options prises en charge :
 
@@ -33,7 +33,7 @@ Sélectionnez le bureau d’enregistrement que vous souhaitez connecter. Options
 | NameSilo | Non | Non |
 | Enom | Oui | Non |
 
-### Étape 2 — Saisir les identifiants
+### Étape 2 — Saisir les identifiants {#step-2--enter-credentials}
 
 Chaque fournisseur possède des champs d’identifiants différents :
 
@@ -57,17 +57,17 @@ Chaque fournisseur possède des champs d’identifiants différents :
 
 Cochez **Mode sandbox** lorsque disponible afin de tester avec l’environnement de test du fournisseur avant de passer en production.
 
-### Étape 3 — Tester la connexion
+### Étape 3 — Tester la connexion {#step-3--test-the-connection}
 
 Cliquez sur **Tester la connexion**. L’assistant envoie un appel API léger pour vérifier les identifiants et la connectivité. Corrigez tout problème d’identifiants avant de continuer.
 
-### Étape 4 — Importer les TLD
+### Étape 4 — Importer les TLD {#step-4--import-tlds}
 
 Cliquez sur **Importer les TLD** pour récupérer tous les TLD disponibles et les tarifs de gros depuis le fournisseur connecté. Cela renseigne la liste des TLD utilisée par les produits de domaine. L’import peut prendre 30 à 60 secondes pour les fournisseurs disposant de grands catalogues de TLD.
 
 Les TLD sont également resynchronisés automatiquement une fois par jour via une tâche cron planifiée.
 
-### Étape 5 — Créer un produit de domaine
+### Étape 5 — Créer un produit de domaine {#step-5--create-a-domain-product}
 
 L’assistant crée un produit de domaine fourre-tout par défaut avec une marge de 10 %. Vous pouvez modifier ce produit immédiatement ou passer cette étape et créer des produits manuellement sous **Ultimate Multisite › Produits**.
 
@@ -75,7 +75,7 @@ Consultez [Produits de domaine et tarification](./domain-products) pour le guide
 
 ---
 
-## Reconfigurer un fournisseur
+## Reconfigurer un fournisseur {#reconfiguring-a-provider}
 
 Accédez à **Administration réseau › Ultimate Multisite › Réglages › Vendeur de domaines** (ou cliquez sur **Réglages** dans la liste des plugins).
 
@@ -88,17 +88,17 @@ La page de réglages contient :
 - **Gérer les produits de domaine** — lien rapide vers la liste des produits
 - **Configurer les fournisseurs** — ouvre l’assistant d’intégration pour ajouter ou reconfigurer des fournisseurs
 
-### Ajouter un deuxième fournisseur
+### Ajouter un deuxième fournisseur {#adding-a-second-provider}
 
 Cliquez sur **Configurer les fournisseurs** et exécutez de nouveau l’assistant pour le nouveau bureau d’enregistrement. Vous pouvez avoir plusieurs fournisseurs configurés simultanément. Assignez chaque produit de domaine à un fournisseur spécifique, ou laissez-le sur la valeur par défaut.
 
-### Synchroniser les TLD manuellement
+### Synchroniser les TLD manuellement {#syncing-tlds-manually}
 
 Dans la page de réglages, cliquez sur **Synchroniser les TLD** à côté de tout fournisseur configuré pour récupérer les derniers tarifs. C’est utile après qu’un fournisseur met à jour ses tarifs de gros ou ajoute de nouveaux TLD.
 
 ---
 
-## Journaux
+## Journaux {#logs}
 
 Chaque fournisseur écrit dans son propre canal de journal. Les journaux sont consultables sous **Administration réseau › Ultimate Multisite › Journaux** :
 
@@ -118,7 +118,7 @@ Chaque fournisseur écrit dans son propre canal de journal. Les journaux sont co
 
 ---
 
-## Notes sur les capacités des fournisseurs
+## Notes sur les capacités des fournisseurs {#provider-capability-notes}
 
 Toutes les API de bureaux d’enregistrement n’exposent pas les mêmes opérations. Le module complémentaire affiche les opérations non prises en charge avec des erreurs claires destinées à l’administrateur, au lieu d’échouer silencieusement.
 

@@ -4,17 +4,17 @@ title: Süzgüç - wu_cart_get_total
 sidebar_label: wu_cart_get_total
 _i18n_hash: 72d9429a9eaa08472baafef395dd7138
 ---
-# Filter: wu_cart_get_total
+# Filter: wu_cart_get_total {#filter-wucartgettotal}
 
 "başlangyç mukdar" jemi üçin filter.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Ady | Görnüşi | Beýany |
 |------|------|-------------|
 | $total | `float` | Şu gün tölenmeli umumy mukdar. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Sebet obýekti. |
 
-### Çeşme
+### Çeşme {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L2141) içinde 2141-nji setirde kesgitlenen

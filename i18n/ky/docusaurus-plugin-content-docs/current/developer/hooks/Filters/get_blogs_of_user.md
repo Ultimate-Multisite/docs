@@ -4,13 +4,13 @@ title: Фильтр - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filter: get_blogs_of_user
+# Filter: get_blogs_of_user {#filter-getblogsofuser}
 
 Керек болуп калсын деп, бул жерде баштапкы WP Filter кайталанат.
 
 Колдонуучу таандык болгон сайттардын тизмесин чыпкалайт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 | $user_id | `int` | Колдонуучунун ID'си. |
 | $all | `bool` | Кайтарылган сайттар массиви бардык сайттарды, анын ичинде 'deleted', 'archived' же 'spam' деп белгиленгендерди да камтышы керекпи. Баштапкы мааниси false. |
 
-### Баштап
+### Баштап {#since}
 
 - 2.0.11
-### Булак
+### Булак {#source}
 
 [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851) ичинде 851-сапта аныкталган.

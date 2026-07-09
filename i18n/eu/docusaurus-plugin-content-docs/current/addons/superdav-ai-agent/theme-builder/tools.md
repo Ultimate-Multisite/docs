@@ -3,17 +3,17 @@ title: Tresnak eta konfigurazioa
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Tresnak eta konfigurazioa
+# Tresnak eta konfigurazioa {#tools-and-configuration}
 
 Theme Builder-ek tresna multzo bat erabiltzen du zure WordPress gunea aztertzeko, diseinatzeko eta eraikitzeko. 1.16.0 bertsioan, **sd-ai-agent/site-scrape orain 1. mailako tresna da**, eta, beraz, lehenespenez eskuragarri dago Theme Builder-en. Superdav AI Agent v1.18.0-k, halaber, bereizita banatutako Advanced laguntzaile pakete bat aurkezten du garatzaile fidagarrien lan-fluxuetarako; tresna horiek ez dira WordPress.org nukleo paketearen parte, eta bereiz instalatu eta baimendu behar dira.
 
-## Eskuragarri dauden tresnak
+## Eskuragarri dauden tresnak {#available-tools}
 
-### 1. mailako tresnak (beti eskuragarri)
+### 1. mailako tresnak (beti eskuragarri) {#tier-1-tools-always-available}
 
 1. mailako tresnak lehenespenez eskuragarri daude Theme Builder-en, konfigurazio gehigarririk gabe.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Helburua:** Dauden webguneak aztertzea, diseinu-inspirazioa, edukiaren egitura eta funtzionalitatea ateratzeko.
 
@@ -51,11 +51,11 @@ Aztertu example.com-en diseinua eta erabili inspirazio gisa nire gunerako.
 - JavaScript asko duten guneek analisi mugatua izan dezakete
 - Gune handiak aztertzeko denbora gehiago behar izan daiteke
 
-### 2. mailako tresnak (aukerakoak)
+### 2. mailako tresnak (aukerakoak) {#tier-2-tools-optional}
 
 2. mailako tresnak eskuragarri daude Theme Builder ezarpenetan esplizituki gaitzen direnean.
 
-#### Analitika aurreratua
+#### Analitika aurreratua {#advanced-analytics}
 
 Errendimendu-metrika xeheak ematen ditu:
 
@@ -65,7 +65,7 @@ Errendimendu-metrika xeheak ematen ditu:
 - Irisgarritasun puntuazioa
 - Jardunbide egokien puntuazioa
 
-#### Edukiaren optimizatzailea
+#### Edukiaren optimizatzailea {#content-optimizer}
 
 Honetarako hobekuntzak aztertzen eta iradokitzen ditu:
 
@@ -75,11 +75,11 @@ Honetarako hobekuntzak aztertzen eta iradokitzen ditu:
 - Edukiaren egitura
 - Ekintzarako deien kokapena
 
-### 3. mailako tresnak (Premium)
+### 3. mailako tresnak (Premium) {#tier-3-tools-premium}
 
 3. mailako tresnek konfigurazio gehigarria edo premium ezaugarriak behar dituzte.
 
-#### AI eduki-sortzailea
+#### AI eduki-sortzailea {#ai-content-generator}
 
 Honetarako edukia sortzen du:
 
@@ -89,7 +89,7 @@ Honetarako edukia sortzen du:
 - Meta deskribapenak
 - Ekintzarako deien testua
 
-#### Diseinu-tresna aurreratuak
+#### Diseinu-tresna aurreratuak {#advanced-design-tools}
 
 Diseinu-gaitasun aurreratuak ematen ditu:
 
@@ -99,7 +99,7 @@ Diseinu-gaitasun aurreratuak ematen ditu:
 - Kolore-teoria aurreratua
 - Tipografiaren optimizazioa
 
-### Advanced laguntzaile tresnak (pakete bereizia)
+### Advanced laguntzaile tresnak (pakete bereizia) {#advanced-companion-tools-separate-package}
 
 Advanced laguntzaile paketea Superdav AI Agent-en nukleo argitalpenetik bereizita banatzen da. Administratzaileek agenteari eragin handiko tresneria erabiltzeko baimena esplizituki ematen dioten garatzaile eta gune-jabe fidagarrien inguruneetarako dago pentsatuta.
 
@@ -116,9 +116,9 @@ Advanced laguntzailearen gaitasunen artean honako hauek egon daitezke:
 
 Ez dokumentatu hauek instalazio guztietarako orokorrean eskuragarri dauden Theme Builder tresna gisa. Advanced laguntzaile paketea instalatuta, gaituta eta administratzaile fidagarrietara mugatuta dagoenean bakarrik daude eskuragarri.
 
-## Tresnen konfigurazioa
+## Tresnen konfigurazioa {#tool-configuration}
 
-### Tresnak gaitzea
+### Tresnak gaitzea {#enabling-tools}
 
 Theme Builder-en tresna gehigarriak gaitzeko:
 
@@ -127,7 +127,7 @@ Theme Builder-en tresna gehigarriak gaitzeko:
 3. Aktibatu/desaktibatu tresnak behar den moduan
 4. Gorde ezarpenak
 
-### Tresnen baimenak
+### Tresnen baimenak {#tool-permissions}
 
 Tresna batzuek baimenak behar dituzte:
 
@@ -137,7 +137,7 @@ Tresna batzuek baimenak behar dituzte:
 - **Ezaugarri aurreratuak** — baliteke premium harpidetza behar izatea
 - **Advanced laguntzaile tresnak** — bereizita banatutako Advanced paketea eta administratzailearen konfiantza esplizitua behar dituzte
 
-### API gakoak eta kredentzialak
+### API gakoak eta kredentzialak {#api-keys-and-credentials}
 
 Konfiguratu API gakoak behar dituzten tresnetarako:
 
@@ -146,13 +146,13 @@ Konfiguratu API gakoak behar dituzten tresnetarako:
 3. Probatu konexioa
 4. Gorde modu seguruan
 
-### Advanced laguntzaile paketea instalatzea
+### Advanced laguntzaile paketea instalatzea {#installing-the-advanced-companion-package}
 
 Advanced laguntzaile paketea WordPress.org nukleo ZIPetik bereizita argitaratzen da. Instalatu soilik argitalpenerako proiektuaren banaketa-kanal ofizialetik, eta gero mugatu sarbidea administratzaile fidagarrietara. Berrikusi giza onarpen-ateak eta git argazkien portaera, produkzio-gune batean fitxategi-sistema, datu-basea, WP-CLI, REST bidaltzailea, plugin eraikitzailea, erabiltzaile-kudeaketa edo benchmark tresnak gaitu aurretik.
 
-## sd-ai-agent/site-scrape erabiltzea
+## sd-ai-agent/site-scrape erabiltzea {#using-sd-ai-agentsite-scrape}
 
-### Oinarrizko erabilera
+### Oinarrizko erabilera {#basic-usage}
 
 Eskatu Theme Builder-i webgune bat aztertzeko:
 
@@ -161,7 +161,7 @@ Aztertu nire lehiakidearen gunearen diseinua competitor.com helbidean
 eta iradoki diseinu-hobekuntzak nire gunerako.
 ```
 
-### Analisi espezifikoa
+### Analisi espezifikoa {#specific-analysis}
 
 Eskatu analisi mota zehatzak:
 
@@ -179,7 +179,7 @@ Egiaztatu example.com-en mugikorretarako egokitasuna eta ziurtatu nire gunea
 berdin egokigarria dela.
 ```
 
-### Konparazio-analisia
+### Konparazio-analisia {#comparison-analysis}
 
 Konparatu hainbat gune:
 
@@ -188,22 +188,22 @@ Konparatu site1.com eta site2.com-en diseinuak eta sortu diseinu bat
 bien elementurik onenak uztartzen dituena.
 ```
 
-## Tresnen mugak eta kontuan hartzekoak
+## Tresnen mugak eta kontuan hartzekoak {#tool-limitations-and-considerations}
 
-### Tasa-mugatzea
+### Tasa-mugatzea {#rate-limiting}
 
 - Scraping-a tasa-mugatua dago zerbitzariaren gainkarga saihesteko
 - Gune berera egindako eskaera anitz moteldu daitezke
 - Gune handiak aztertzeko denbora gehiago behar izan dezakete
 
-### Edukiaren zehaztasuna
+### Edukiaren zehaztasuna {#content-accuracy}
 
 - Eduki dinamikoa agian ez da guztiz jasoko
 - JavaScript bidez errendatutako edukia osatu gabe egon daiteke
 - Denbora errealeko datuak agian ez dira islatuko
 - Eduki batzuk paywall-en atzean egon daitezke
 
-### Legezko eta etika-kontuak
+### Legezko eta etika-kontuak {#legal-and-ethical-considerations}
 
 - Errespetatu robots.txt eta gunearen politikak
 - Ez erauzi copyright bidez babestutako edukia erreproduzitzeko
@@ -211,16 +211,16 @@ bien elementurik onenak uztartzen dituena.
 - Egiaztatu erauzitako edukia erabiltzeko eskubideak dituzula
 - Bete aztertutako guneen zerbitzu-baldintzak
 
-### Errendimenduan eragina
+### Errendimenduan eragina {#performance-impact}
 
 - Gune handien scraping-ak denbora har dezake
 - Aldi bereko scraping anitz motelagoak izan daitezke
 - Sare-konektibitateak abiaduran eragiten du
 - Datu multzo handiek prozesamendu gehiago eska dezakete
 
-## Jardunbide egokiak
+## Jardunbide egokiak {#best-practices}
 
-### Gunearen analisia erabiltzea
+### Gunearen analisia erabiltzea {#using-site-analysis}
 
 1. **Aztertu gune anitz** — bildu inspirazioa hainbat iturritatik
 2. **Jarri arreta egituran** — ikasi diseinu eta antolaketa ereduak
@@ -228,7 +228,7 @@ bien elementurik onenak uztartzen dituena.
 4. **Aztertu tipografia** — identifikatu gustuko dituzun letra-tipo konbinazioak
 5. **Berrikusi nabigazioa** — ulertu menuen antolaketa
 
-### Scraping etikoa
+### Scraping etikoa {#ethical-scraping}
 
 1. **Errespetatu robots.txt** — jarraitu gunearen jarraibideak
 2. **Ez kopiatu edukia** — erabili analisia inspiraziorako soilik
@@ -236,7 +236,7 @@ bien elementurik onenak uztartzen dituena.
 4. **Aitortu iturriak** — eman kreditu inspirazio-iturriei
 5. **Bete baldintzak** — bete gunearen zerbitzu-baldintzak
 
-### Tresnaren eraginkortasuna maximizatzea
+### Tresnaren eraginkortasuna maximizatzea {#maximizing-tool-effectiveness}
 
 1. **Izan zehatza** — eskatu analisi mota zehatzak
 2. **Eman testuingurua** — azaldu zure gunearen helburua
@@ -244,9 +244,9 @@ bien elementurik onenak uztartzen dituena.
 4. **Iteratu** — findu emaitzen arabera
 5. **Konbinatu tresnak** — erabili hainbat tresna analisi osoa egiteko
 
-## Arazoak konpontzea
+## Arazoak konpontzea {#troubleshooting}
 
-### Gunea ezin da erauzi
+### Gunea ezin da erauzi {#site-wont-scrape}
 
 - Egiaztatu gunea publikoki eskuragarri dagoen
 - Egiaztatu robots.txt-ek scraping-a baimentzen duen
@@ -254,7 +254,7 @@ bien elementurik onenak uztartzen dituena.
 - Egiaztatu interneteko konexioa
 - Jarri harremanetan laguntzarekin arazoak jarraitzen badu
 
-### Analisi osatu gabea
+### Analisi osatu gabea {#incomplete-analysis}
 
 - Guneak eduki dinamikoa izan dezake
 - JavaScript agian ez da guztiz errendatuko
@@ -262,7 +262,7 @@ bien elementurik onenak uztartzen dituena.
 - Saiatu orri zehatzak aztertzen
 - Eskatu analisi mota zehatzak
 
-### Errendimendu motela
+### Errendimendu motela {#slow-performance}
 
 - Gune handiak aztertzeko denbora gehiago behar da
 - Aldi bereko scraping anitz motelagoak dira
@@ -270,7 +270,7 @@ bien elementurik onenak uztartzen dituena.
 - Saiatu puntako orduetatik kanpo
 - Aztertu atal txikiagoak lehenik
 
-## Lotutako dokumentazioa
+## Lotutako dokumentazioa {#related-documentation}
 
 - [Aurkikuntza-elkarrizketa](./discovery-interview.md) — bildu diseinu-informazioa
 - [Diseinuaren norabidea](./design-direction.md) — findu zure diseinua

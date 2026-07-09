@@ -3,11 +3,11 @@ title: परिवर्तन अभिलेख
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# परिवर्तन लग
+# परिवर्तन लग {#changelog}
 
-## 1.9.0 — 2026-04-28 मा जारी गरिएको
+## 1.9.0 — 2026-04-28 मा जारी गरिएको {#190--released-on-2026-04-28}
 
-### नयाँ
+### नयाँ {#new}
 
 - **`create_contact_form` क्षमता** — सक्रिय फारम plugin (Contact Form 7, WPForms, Fluent Forms, वा Gravity Forms) प्रयोग गरेर सम्पर्क फारम सिर्जना गर्छ र कुनै पनि पोस्ट वा पृष्ठमा एम्बेड गर्न तयार shortcode फर्काउँछ।
 - **`set_featured_image` क्षमता** — विद्यमान Media Library attachment ID वा टाढाको URL बाट पोस्ट वा पृष्ठमा featured image तोक्छ; URL प्रदान गर्दा छवि स्वचालित रूपमा आयात गर्छ।
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **अन्तिम सत्र पुनर्स्थापना** — च्याट प्यानलले अब पृष्ठ लोड हुँदा र widget खुल्दा सबैभन्दा पछिल्लो कुराकानी स्वचालित रूपमा पुनः लोड गर्छ, त्यसैले पृष्ठ नेभिगेसनहरूमा सन्दर्भ कहिल्यै हराउँदैन।
 - **Plugin कार्य लिङ्कहरू** — Settings र Abilities Registry का द्रुत लिङ्कहरू अब WordPress **Plugins → Installed Plugins** स्क्रिनमा plugin विवरणमुनि देखा पर्छन्।
 
-### सुधारिएको
+### सुधारिएको {#improved}
 
 - **छवि स्रोत पुनःप्रयास** — एजेन्टले अब डाउनलोड असफल हुँदा AI-निर्मित छविमा fallback गर्नु अघि सबै कन्फिगर गरिएका निःशुल्क छवि स्रोतहरू पुनः प्रयास गर्छ।
 - **मोडेल जानकारी प्यानल** — च्याट हेडरमा सधैं देखिने; पहिलो सन्देशपछि अब लुकेको हुँदैन।
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **च्याट widget पुनः डिजाइन** — अघिल्लो custom avatar लाई unified AI icon ले प्रतिस्थापन गर्छ; built-in agent प्रणालीसँग सुसंगत।
 - **URL linkification** — system messages र error message bubbles मा देखिने URLs अब क्लिक गर्न मिल्ने लिङ्कका रूपमा render हुन्छन्।
 
-### समाधान गरिएको
+### समाधान गरिएको {#fixed}
 
 - **क्षमता खोजयोग्यता** — सबै क्षमताहरू एजेन्टको tool list मा भरपर्दो रूपमा देखिऊन् भनेर विवरणहरू, system prompt references, र namespace alignment सच्याइयो।
 - **Providers cache** — providers अब version counter मार्फत site-wide cache गरिन्छन्, जसले multisite networks मा stale-provider समस्याहरू रोक्छ।
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — 2026-04-09 मा जारी गरिएको
+## 1.4.0 — 2026-04-09 मा जारी गरिएको {#140--released-on-2026-04-09}
 
-### नयाँ
+### नयाँ {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI पाइपलाइनहरू र मोडेल मूल्याङ्कन कार्यप्रवाहहरूका लागि command line बाट Agent Capabilities v1 benchmark suite चलाउँछ। प्रति-प्रश्न चलाउन, provider/model override, र JSON/CSV आउटपुट समर्थन गर्छ।
 - **Agent Capabilities v1 benchmark suite** — स्कोरिङ र token/अवधि रिपोर्टिङसहित, पूर्ण क्षमता सतह परीक्षण गर्ने जटिल, बहु-चरण prompt हरूको संरचित सेट।
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT दर्ता, design system, navigation, र plugin खोज समेट्ने end-to-end परीक्षण।
 - **AI provider connector plugins** छिटो स्थानीय विकास setup का लागि WordPress Playground blueprint हरूमा थपियो।
 
-### सुधारिएको
+### सुधारिएको {#improved-1}
 
 - README AI provider connector दस्तावेजीकरण र setup निर्देशनहरूसहित अद्यावधिक गरियो।
 
-### समाधान गरिएको
+### समाधान गरिएको {#fixed-1}
 
 - `main` branch मा 25 PHPUnit परीक्षण असफलताहरू समाधान गरियो।
 - `blueprint.json` मा GitHub releases URL ढाँचा सुधारियो।
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _अघिल्ला release notes plugin repository मा कायम राखिएका छन्।_

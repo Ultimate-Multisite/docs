@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons Ultimate Multisite мүмкіндіктерін қосымша функциялармен және интеграциялармен кеңейтеді. Addons көпшілігі ақылы және оларды [ultimatemultisite.com](https://ultimatemultisite.com) сайтынан сатып алуға болады.
 
-## Орнату
+## Орнату {#installation}
 
 Addons екі жолмен орнатуға болады:
 
 1. **Addon беті арқылы** -- WordPress әкімшілік бөліміндегі сайтыңыздың addon басқару бетіне өтіңіз
 2. **Қолмен жүктеп алу** -- [Accountыңыздан](https://ultimatemultisite.com/my-account/downloads/) жүктеп алып, Plugins > Add New арқылы жүктеңіз
 
-## Қолжетімді Addons
+## Қолжетімді Addons {#available-addons}
 
 | Addon | Сипаттама |
 |-------|-------------|

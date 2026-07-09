@@ -3,11 +3,11 @@ title: Разработка пользовательского шлюза
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Разработка пользовательского шлюза
+# Разработка пользовательского шлюза {#custom-gateway-development}
 
 Вы можете создавать пользовательские платежные шлюзы, расширяя класс `Base_Gateway`.
 
-## Класс шлюза
+## Класс шлюза {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Регистрация шлюза
+## Регистрация шлюза {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ключевые методы
+## Ключевые методы {#key-methods}
 
 | Метод | Назначение |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Обрабатывает запросы на возврат средств |
 | `get_payment_methods()` | Возвращает сохраненные способы оплаты для клиента |
 
-## Учетные данные продления для регулярных memberships
+## Учетные данные продления для регулярных memberships {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 позволяет интеграциям шлюзов сообщать, есть ли у регулярного membership повторно используемые учетные данные продления, до сохранения `auto_renew`. Подключите `wu_membership_has_renewal_credential` и верните:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Очистите маркер отсутствующих учетных данных в рамках успешного процесса повторной авторизации вашего шлюза после сохранения новых повторно используемых учетных данных.
 
-## Советы
+## Советы {#tips}
 
 - Всегда возвращайте `WP_Error` при сбое, чтобы Ultimate Multisite мог обработать отображение ошибки
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Используйте `wu_log_add()` для ведения журналов, специфичных для шлюза
 
-## Возможности провайдера AI connector
+## Возможности провайдера AI connector {#ai-connector-provider-capabilities}
 
 Пользовательские интеграции, которые вызывают операции на базе AI connector, должны соответствовать поддерживаемому набору OAuth-провайдеров, представленному в AI Provider for Anthropic Max v1.3.0:
 

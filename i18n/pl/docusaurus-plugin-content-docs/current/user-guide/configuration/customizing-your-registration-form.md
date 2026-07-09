@@ -3,13 +3,13 @@ title: Dostosowywanie formularza rejestracyjnego
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Dostosowywanie formularza rejestracji
+# Dostosowywanie formularza rejestracji {#customizing-your-registration-form}
 
 Aby Twoja sieć wyróżniała się spośród wszystkich innych SaaS zbudowanych na platformie WordPress, Ultimate Multisite pozwala dostosować strony rejestracji i logowania za pomocą naszej funkcji **Checkout Forms**.
 
 Chociaż są one łatwym i elastycznym sposobem na eksperymentowanie z różnymi podejściami podczas prób konwersji nowych klientów, najczęściej używa się ich do tworzenia spersonalizowanych formularzy rejestracji. Ten artykuł ma pokazać, jak możesz to zrobić.
 
-## Strony logowania i rejestracji:
+## Strony logowania i rejestracji: {#login-and-registration-pages}
 
 Po instalacji Ultimate Multisite automatycznie tworzy niestandardowe strony logowania i rejestracji w Twojej głównej witrynie. Możesz zmienić te domyślne strony w dowolnym momencie, przechodząc do strony **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Teraz zobaczmy inne opcje, które nadal są istotne dla procesu logowania i reje
 
 I to wszystkie opcje związane z logowaniem i rejestracją, które możesz dostosować! Nie zapomnij zapisać ustawień po zakończeniu ich edycji.
 
-## Korzystanie z wielu formularzy rejestracji:
+## Korzystanie z wielu formularzy rejestracji: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 oferuje edytor formularzy checkout, który pozwala tworzyć tyle formularzy, ile chcesz, z różnymi polami, oferowanymi produktami itd.
 
@@ -69,7 +69,7 @@ Alternatywnie możesz edytować lub duplikować formularze, które już masz, kl
 
 Jeśli wybierzesz jednoetapowy lub wieloetapowy, formularz checkout będzie już wstępnie wypełniony podstawowymi krokami potrzebnymi do działania. Następnie, jeśli chcesz, możesz dodać do niego dodatkowe kroki.
 
-### Edycja Checkout Form:
+### Edycja Checkout Form: {#editing-a-checkout-form}
 
 Jak wspomnieliśmy wcześniej, możesz tworzyć formularze checkout do różnych celów. W tym przykładzie będziemy pracować nad formularzem rejestracji.
 
@@ -131,11 +131,11 @@ Aby uzyskać shortcode formularza, kliknij **Wygeneruj shortcode** i skopiuj wyn
 
 _**Uwaga:** Musisz dodać ten shortcode do swojej strony rejestracji, aby ten formularz finalizacji zakupu został do niej dodany._
 
-## Wstępne wybieranie produktów i szablonów za pomocą parametrów URL:
+## Wstępne wybieranie produktów i szablonów za pomocą parametrów URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Jeśli chcesz tworzyć niestandardowe tabele cen dla swoich produktów i wstępnie wybierać w formularzu finalizacji zakupu produkt lub szablon, który klient wybiera z tabeli cen lub strony szablonów, możesz użyć do tego parametrów URL.
 
-### **Dla planów:**
+### **Dla planów:** {#for-plans}
 
 Przejdź do **Ultimate Multisite > Produkty > Wybierz plan**. U góry strony powinien być widoczny przycisk **Kliknij, aby skopiować link do udostępnienia**. To jest link, którego możesz użyć, aby wstępnie wybrać ten konkretny plan w formularzu finalizacji zakupu.
 
@@ -143,7 +143,7 @@ Przejdź do **Ultimate Multisite > Produkty > Wybierz plan**. U góry strony pow
 
 Pamiętaj, że ten link do udostępnienia jest ważny tylko dla **Planów**. Nie możesz używać linków do udostępnienia dla pakietów ani usług.
 
-### Dla szablonów:
+### Dla szablonów: {#for-templates}
 
 Jeśli chcesz wstępnie wybrać szablony witryn w formularzu finalizacji zakupu, możesz użyć parametru: **?template_id=X** w URL strony rejestracji. „X” trzeba zastąpić **numerem ID szablonu witryny**. Aby uzyskać ten numer, przejdź do **Ultimate Multisite > Witryny**.
 

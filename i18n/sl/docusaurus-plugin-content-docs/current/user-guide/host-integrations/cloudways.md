@@ -3,18 +3,18 @@ title: Integracija z Cloudwaysom
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integracija z Cloudways
+# Integracija z Cloudways {#cloudways-integration}
 
-## Pregled
+## Pregled {#overview}
 Cloudways je upravljana platforma za hostiranje v oblaku, ki vam omogoča, da na različnih cloud ponudavah kot so DigitalOcean, AWS, Google Cloud in še veliko drugih, namestite WordPress spletne strani. Ta integracija omogoča avtomatizirano sinhronizacijo domen in upravljanje SSL sertifikatov med Ultimate Multisite in Cloudways.
 
-## Funkcionalnosti
+## Funkcionalnosti {#features}
 - Avtomatizirana sinhronizacija domena
 - Upravljanje SSL sertifikatov
 - Podpora za dodatne domene
 - Validacija DNS-a za SSL sertifikate
 
-## Zahtevi
+## Zahtevi {#requirements}
 Slede konstante morate definirati v svojem datoteki `wp-config.php`:
 
 ```php
@@ -30,22 +30,22 @@ Opcionalno lahko definirate tudi:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'izvajajo,razdeljeno, seznam, domenov');
 ```
 
-## Navodila za nastavitve
+## Navodila za nastavitve {#setup-instructions}
 
-### 1. Dobite svoje Cloudways API podatke
+### 1. Dobite svoje Cloudways API podatke {#1-get-your-cloudways-api-credentials}
 1. Pri logovanju na svoj Cloudways dashboard
 2. Pojdite na "Account" > "API Keys" (Račun > API ključi)
 3. Generirajte API ključ, če ga še ni
 4. Kopirajte svojo pošto in API ključ
 
-### 2. Dobite svoje ID serverja in aplikacije
+### 2. Dobite svoje ID serverja in aplikacije {#2-get-your-server-and-application-ids}
 1. Na svojem Cloudways dashboardu pojadite na "Servers" (Serveri)
 2. Izberite server kjer je hostirana vaša WordPress multisite
 3. Server ID je vidno v URL-ju: `https://platform.cloudways.com/server/{SERVER_ID}`
 4. Pojdite na "Applications" (Aplikacije) in izberite svojo WordPress aplikacijo
 5. App ID je vidno v URL-ju: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Dodajte konstante v wp-config.php
+### 3. Dodajte konstante v wp-config.php {#3-add-constants-to-wp-configphp}
 Dodajte slede konstante v datoteko `wp-config.php`:
 
 ```php
@@ -67,7 +67,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 nizje, da bi razumeli zakaj to onemogoča izdajanje SSL sertifikatov za vsako najemnico.
 :::
 
-### 4. Omogočite integracijo
+### 4. Omogočite integracijo {#4-enable-the-integration}
 
 1. V admin panel WordPressa, idi na Ultimate Multisite > Settings (Nastavitve)
 2. Pređi na tab "Domain Mapping" (Mapiranje domen)
@@ -75,9 +75,9 @@ nizje, da bi razumeli zakaj to onemogoča izdajanje SSL sertifikatov za vsako na
 4. Omogoči integracijo Cloudways
 5. Klikni na "Save Changes" (Shrani spremembe)
 
-## Kako to deluje
+## Kako to deluje {#how-it-works}
 
-### Sinkronizacija domen
+### Sinkronizacija domen {#domain-syncing}
 
 Ko je domena mapirana v Ultimate Multisite:
 
@@ -88,7 +88,7 @@ Ko je domena mapirana v Ultimate Multisite:
 
 Opomba: API Cloudways zahteva, da se pošlje popoln seznam domen vsak razpoložljiv čas, ne le dodajanje ali odstranjevanje pojedinačnih domen.
 
-### Upravljanje SSL sertifikatov
+### Upravljanje SSL sertifikatov {#ssl-certificate-management}
 
 Po sinkronizaciji domen:
 
@@ -98,7 +98,7 @@ Po sinkronizaciji domen:
 
 Integracija vedno zahteva **standardne** (newildcard) Let's Encrypt sertifikate iz Cloudways. Če v `WU_CLOUDWAYS_EXTRA_DOMAINS` navedete wildcard vzorec, se pred SSL zahtevo odstrani pred začetnim `*.`. Wildcard sam ni nikoli instaliran s to integracijo. Za uporabo certificate z wildcard na Cloudways bi morali biti sami in ga je to blokira izdajo Let's Encrypt za določene domene (pogledajte zapletje spodaj).
 
-## Dodatne domene
+## Dodatne domene {#extra-domains}
 
 Konstanta `WU_CLOUDWAYS_EXTRA_DOMAINS` vam omogoča, da navedete dodatne **zunanje** domene, ki morajo biti vedno na seznamu aliasov aplikacije Cloudways. Uporabite jo za:
 
@@ -107,13 +107,13 @@ Konstanta `WU_CLOUDWAYS_EXTRA_DOMAINS` vam omogoča, da navedete dodatne **zunan
 
 **Ne uporabljajte** to konstanto za wildcard poddomene vaše lastne mreže (npr. `*.your-network.com`). Pogledajte zapletje z wildcard SSL spodaj.
 
-## Pomembno — Zapletje z wildcard SSL
+## Pomembno — Zapletje z wildcard SSL {#important--wildcard-ssl-pitfall}
 
 Pogosta napaka pri sleditvi standardnega postavitve Cloudways je dodajanje wildcarta, kot je `*.your-network.com`, v `WU_CLOUDWAYS_EXTRA_DOMAINS` ali ručna instalacija Cloudways certificate z wildcard za to wildcard.
 
 **Če to storite, Cloudways se zavrača izdaji Let's Encrypt certificate za domene, ki jih Ultimate Multisite mapira.** Cloudways nadomesti aktivni SSL certificate na aplikaciji vsakokrat in že obstoječi wildcard certificate na aplikaciji blokira izdajo Let's Encrypt za določeno domeno, ki jo integracija uporablja.
 
-### Priporočena konfiguracija SSL-a Cloudways za mrežo Ultimate Multisite
+### Priporočena konfiguracija SSL-a Cloudways za mrežo Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Na tabu **SSL Certificate** v aplikaciji Cloudways instalirajte **standardni Let's Encrypt certifikat**, ki pokriva le `your-network.com` in `www.your-network.com` — **ne** wildcard.
 2. Ne postavljate `*.your-network.com` (ali kakršno koli druge vzorce poddomena vaše mreže) v `WU_CLOUDWAYS_EXTRA_DOMAINS`. Ta konstanto rezervirajte le za **zunanja** domena.
@@ -121,20 +121,20 @@ Pogosta napaka pri sleditvi standardnega postavitve Cloudways je dodajanje wildc
 
 Če so prilagojene domene vaših najemateljev zamenjano brez SSL, preverite tabu Cloudways SSL. Če tam deluje wildcard certifikat, ga odstranite, izdanjo standardni Let's Encrypt certifikat le za glavno mrežo in odstranite vsake wildcard vnosov iz `WU_CLOUDWAYS_EXTRA_DOMAINS`. Nato ponovno sprostiti mapiranje domene (ali čakati na naslednje) in integracija začne ponovno izdajati certifikate za posamezne domene.
 
-## Reševanje težav
+## Reševanje težav {#troubleshooting}
 
-### Problemi z povezavo API
+### Problemi z povezavo API {#api-connection-issues}
 - Preverite da so vaša e-pošta in API ključ pravilni
 - Preverite, da sta vaše serverje in aplikacijska ID pravilna
 - Preverite, da ima vaš Cloudways račun potrebne dovoljenja
 
-### Problemi z SSL sertifikati
+### Problemi z SSL sertifikati {#ssl-certificate-issues}
 - Cloudways zahteva, da domene imajo validne DNS zapise, ki kažejo na vaš server, preden izda SSL sertifikate.
 - Integracija validira DNS zapise pred zahtevo za SSL sertifikate.
 - Če se SSL sertifikati ne izdajajo, preverite, ali so vaši domene pravilno usmerjeni na IP naslov vašega serverja.
 - **Per-tenant prilagojeni domene z blokiranjem brez SSL?** Preverite tab "SSL Certificate" v aplikaciji Cloudways. Če je aktiv sertifikat za wildcard (manoval name, ali ki pokriva `*.your-network.com`), Cloudways ne bo izdal Let's Encrypt sertifikatov za individualno mapirane prilagojene domene. Zamenjajte ga standardnim Let's Encrypt sertifikatom, ki pokrivajo le glavni omrežni domen (`your-network.com`, `www.your-network.com`) in odstranite vsake wildcard vnos iz `WU_CLOUDWAYS_EXTRA_DOMAINS`. Nato ponovno sprostiti mapiranje domene (ali čakajte na naslednje) in integracija bo zahtevala sertifikate za vsako domeno.
 
-### Domen ni dodan
+### Domen ni dodan {#domain-not-added}
 - Preverite logove Ultimate Multisite na kakršne koli napake.
 - Potrdite, da ni domen že dodan v Cloudways.
 - Upe asegurarse, da vaš Cloudways plan podpira število domen, ki ga dodajate.

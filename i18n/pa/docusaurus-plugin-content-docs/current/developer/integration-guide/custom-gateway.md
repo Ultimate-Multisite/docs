@@ -3,11 +3,11 @@ title: ਕਸਟਮ Gateway ਵਿਕਾਸ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ਕਸਟਮ ਗੇਟਵੇ ਵਿਕਾਸ
+# ਕਸਟਮ ਗੇਟਵੇ ਵਿਕਾਸ {#custom-gateway-development}
 
 ਤੁਸੀਂ `Base_Gateway` ਕਲਾਸ ਨੂੰ ਵਧਾ ਕੇ ਕਸਟਮ ਭੁਗਤਾਨ ਗੇਟਵੇ ਬਣਾ ਸਕਦੇ ਹੋ।
 
-## ਗੇਟਵੇ ਕਲਾਸ
+## ਗੇਟਵੇ ਕਲਾਸ {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## ਗੇਟਵੇ ਰਜਿਸਟਰ ਕਰੋ
+## ਗੇਟਵੇ ਰਜਿਸਟਰ ਕਰੋ {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## ਮੁੱਖ ਵਿਧੀਆਂ
+## ਮੁੱਖ ਵਿਧੀਆਂ {#key-methods}
 
 | ਵਿਧੀ | ਉਦੇਸ਼ |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | ਰਿਫੰਡ ਬੇਨਤੀਆਂ ਸੰਭਾਲੋ |
 | `get_payment_methods()` | ਗਾਹਕ ਲਈ ਸੰਭਾਲੀਆਂ ਭੁਗਤਾਨ ਵਿਧੀਆਂ ਵਾਪਸ ਕਰੋ |
 
-## ਦੁਹਰਾਈਆਂ ਜਾਣ ਵਾਲੀਆਂ ਮੈਂਬਰਸ਼ਿਪਾਂ ਲਈ ਨਵੀਨੀਕਰਨ ਪ੍ਰਮਾਣ-ਪੱਤਰ
+## ਦੁਹਰਾਈਆਂ ਜਾਣ ਵਾਲੀਆਂ ਮੈਂਬਰਸ਼ਿਪਾਂ ਲਈ ਨਵੀਨੀਕਰਨ ਪ੍ਰਮਾਣ-ਪੱਤਰ {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ਗੇਟਵੇ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਨੂੰ ਇਹ ਰਿਪੋਰਟ ਕਰਨ ਦਿੰਦਾ ਹੈ ਕਿ ਕੀ ਕਿਸੇ ਦੁਹਰਾਈ ਜਾਣ ਵਾਲੀ ਮੈਂਬਰਸ਼ਿਪ ਕੋਲ `auto_renew` ਨੂੰ ਸਥਾਈ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਮੁੜ ਵਰਤੋਂਯੋਗ ਨਵੀਨੀਕਰਨ ਪ੍ਰਮਾਣ-ਪੱਤਰ ਹੈ। `wu_membership_has_renewal_credential` ਨੂੰ ਹੁੱਕ ਕਰੋ ਅਤੇ ਵਾਪਸ ਕਰੋ:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 ਨਵਾਂ ਮੁੜ ਵਰਤੋਂਯੋਗ ਪ੍ਰਮਾਣ-ਪੱਤਰ ਸੰਭਾਲੇ ਜਾਣ ਤੋਂ ਬਾਅਦ, ਆਪਣੇ ਗੇਟਵੇ ਦੇ ਸਫਲ ਮੁੜ-ਅਧਿਕਾਰਕਰਨ ਪ੍ਰਵਾਹ ਦੇ ਹਿੱਸੇ ਵਜੋਂ ਗੁੰਮ-ਪ੍ਰਮਾਣ-ਪੱਤਰ ਚਿੰਨ੍ਹ ਸਾਫ਼ ਕਰੋ।
 
-## ਸੁਝਾਅ
+## ਸੁਝਾਅ {#tips}
 
 - ਅਸਫਲਤਾ ’ਤੇ ਹਮੇਸ਼ਾ `WP_Error` ਵਾਪਸ ਕਰੋ ਤਾਂ ਜੋ Ultimate Multisite ਤਰੁੱਟੀ ਦਿਖਾਵਟ ਸੰਭਾਲ ਸਕੇ
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - ਗੇਟਵੇ-ਖਾਸ ਲੌਗਿੰਗ ਲਈ `wu_log_add()` ਵਰਤੋ
 
-## AI ਕਨੈਕਟਰ ਪਰਦਾਤਾ ਸਮਰੱਥਾਵਾਂ
+## AI ਕਨੈਕਟਰ ਪਰਦਾਤਾ ਸਮਰੱਥਾਵਾਂ {#ai-connector-provider-capabilities}
 
 AI ਕਨੈਕਟਰ-ਸਹਾਇਤ ਕਾਰਵਾਈਆਂ ਨੂੰ ਕਾਲ ਕਰਨ ਵਾਲੀਆਂ ਕਸਟਮ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਨੂੰ AI Provider for Anthropic Max v1.3.0 ਨਾਲ ਪੇਸ਼ ਕੀਤੇ ਸਮਰਥਿਤ OAuth ਪਰਦਾਤਾ ਸੈੱਟ ਨਾਲ ਮਿਲਾਉਣਾ ਚਾਹੀਦਾ ਹੈ:
 

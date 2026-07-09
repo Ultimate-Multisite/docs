@@ -3,11 +3,11 @@ title: Konstruktor pluginů a sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 představuje **Plugin Builder & Sandbox System**, který umožňuje AI asistenta generovat, aktivovat a spravovat WordPress pluginy na vaší síti — vše v rámci bezpečného, izolovaného sandbox prostředí.
 
-## Přehled
+## Přehled {#overview}
 
 Plugin Builder umožňuje AI asistenta psát vlastní WordPress pluginy na základě přirozeně formulovaných požadavků. Vygenerované pluginy jsou ověřeny, uloženy a aktivovány uvnitř vrstvy sandbox, než kdy ovlivní funkčnost živého webu.
 
@@ -17,7 +17,7 @@ Použití zahrnuje:
 - Prototypování funkcí, které vyžadují WordPress hooks nebo vlastní typy příspěvků (custom post types).
 - Vytváření krátkodobých automatizačních skriptů pro dávkové operace.
 
-## Generování pluginu pomocí AI
+## Generování pluginu pomocí AI {#generating-a-plugin-via-ai}
 
 Pro vygenerování pluginu otevřete chatovací rozhraní Gratis AI Agent a popište, co potřebujete. Například:
 
@@ -32,7 +32,7 @@ AI provede následující kroky:
 
 Můžete vylepšit výsledek pokračováním v téže konverzaci před aktivací.
 
-## Aktivace v sandboxu
+## Aktivace v sandboxu {#sandbox-activation}
 
 Aktivace vygenerovaného pluginu v sandboxu je odlišná od jeho aktivace na živé síti. Sandbox:
 
@@ -48,7 +48,7 @@ Pro aktivaci pluginu v sandboxu klikněte na tlačítko **Activate in Sandbox** 
 
 Statusová zpráva potvrdí, zda byla aktivace úspěšná nebo neúspěšná. Při selhání je log chyb zobrazen v konverzaci.
 
-## Správa vygenerovaných pluginů
+## Správa vygenerovaných pluginů {#managing-generated-plugins}
 
 Vygenerované pluginy jsou uvedeny v sekci **Gratis AI Agent → Plugin Builder → Manage Plugins**. Z tohoto okna můžete:
 
@@ -64,7 +64,7 @@ Vygenerované pluginy jsou uvedeny v sekci **Gratis AI Agent → Plugin Builder 
 **Install on network** nasadí vygenerovaný plugin na vaši živou WordPress multisite. Před pokračováním si prohlédněte kód pluginu. Gratis AI Agent vás požádá o potvrzení před dokončením živé instalace.
 :::
 
-## Instalace vygenerovaného pluginu na síti
+## Instalace vygenerovaného pluginu na síti {#installing-a-generated-plugin-on-the-network}
 
 Pokud jste s pluginem v sandboxu spokojeni, můžete ho nainstalovat na živou síť:
 
@@ -78,7 +78,7 @@ Alternativně použijte příkaz vykřičníkem v chatovém rozhraní:
 /install-plugin <plugin-slug>
 ```
 
-## Aktualizace pluginů
+## Aktualizace pluginů {#plugin-updates}
 
 Pro aktualizaci vygenerovaného pluginu popište změnu AI asistenta v nové konverzaci:
 
@@ -86,7 +86,7 @@ Pro aktualizaci vygenerovaného pluginu popište změnu AI asistenta v nové kon
 
 AI vygeneruje novou verzi, která se objeví v sandboxu vedle aktuální verze. Vyhledáte rozdíly (diff) a potvrdíte, než bude aktualizace aplikována.
 
-## Integrace HookScanner
+## Integrace HookScanner {#hookscanner-integration}
 
 Plugin Builder používá integrovaný **HookScanner** k analýze hooků a filtrů registrovaných každým vygenerovaným pluginem. Výstup HookScanner je zobrazen v chatové odpovědi a zahrnuje:
 
@@ -96,7 +96,7 @@ Plugin Builder používá integrovaný **HookScanner** k analýze hooků a filtr
 
 To vám pomůže pochopit chování pluginu před jeho aktivací.
 
-## Bezpečnostní ohledu
+## Bezpečnostní ohledu {#security-considerations}
 
 - Vygenerované pluginy jsou uloženy zvlášť od ručně nainstalovaných pluginů a nejsou dostupné přes standardní panel správy pluginů WordPress, dokud je explicitně na síti nainstalujete.
 - Sandbox používá ověření cesty (path validation), aby zabránil procházení adresářů při zápisu souborů pluginu.

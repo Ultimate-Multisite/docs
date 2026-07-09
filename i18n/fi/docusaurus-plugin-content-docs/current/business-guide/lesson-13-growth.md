@@ -3,19 +3,19 @@ title: 'Oppitunti 13: Skaalaus ylöspäin'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Oppitunti 13: Skaalaaminen
+# Oppitunti 13: Skaalaaminen {#lesson-13-scaling-up}
 
 Sinulla on toimiva alusta ja maksavia asiakkaita. Tämä oppitunti käsittelee, miten kasvaa pienestä toiminnasta kestäväksi liiketoiminnaksi -- skaalaamalla infrastruktuuria, automatisoimalla toimintoja ja kasvattamalla asiakaskohtaista liikevaihtoa.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSite on julkaistu, asiakkaat rekisteröityvät, ja hoidat päivittäisiä toimintoja. Nyt keskitymme kasvuun.
 
-## Tunne lukusi
+## Tunne lukusi {#know-your-numbers}
 
 Ennen skaalaamista ymmärrä, missä tilanteessa olet:
 
-### Keskeiset mittarit
+### Keskeiset mittarit {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Kuukausittaisten tilausmaksujen kokonaisliikevaihto
 - **Asiakasmäärä**: Aktiivisten tilaajien kokonaismäärä
@@ -24,7 +24,7 @@ Ennen skaalaamista ymmärrä, missä tilanteessa olet:
 - **LTV (Lifetime Value)**: Keskimääräinen liikevaihto asiakkaalta koko tilauksen aikana
 - **CAC (Customer Acquisition Cost)**: Keskimääräinen kustannus yhden asiakkaan hankkimiseksi
 
-### Esimerkki: FitSite 50 asiakkaalla
+### Esimerkki: FitSite 50 asiakkaalla {#example-fitsite-at-50-customers}
 
 | Mittari | Arvo |
 |--------|-------|
@@ -36,9 +36,9 @@ Ennen skaalaamista ymmärrä, missä tilanteessa olet:
 
 Nämä luvut kertovat, mihin sinun kannattaa keskittyä. Korkea poistuma? Paranna asiakaspysyvyyttä. Matala ARPU? Edistä päivityksiä. Korkea CAC? Optimoi hankintakanavat.
 
-## Infrastruktuurin skaalaaminen
+## Infrastruktuurin skaalaaminen {#scaling-infrastructure}
 
-### Milloin skaalata
+### Milloin skaalata {#when-to-scale}
 
 Skaalaa hosting, kun:
 
@@ -47,7 +47,7 @@ Skaalaa hosting, kun:
 - Lähestyt yli 100 aktiivista sivustoa
 - Asiakasvalitukset nopeudesta lisääntyvät
 
-### Miten skaalata
+### Miten skaalata {#how-to-scale}
 
 - **Pystysuuntainen skaalaus**: Päivitä suurempaan palvelimeen (enemmän CPU:ta, RAM-muistia)
 - **Välimuistikerrokset**: Lisää Redis/Memcached objektivälimuistia varten, sivuvälimuisti staattiselle sisällölle
@@ -55,7 +55,7 @@ Skaalaa hosting, kun:
 - **Tietokannan optimointi**: Kun verkosto kasvaa, tietokantakyselyt hidastuvat. Optimoi taulut, lisää indeksit, harkitse erillistä tietokantapalvelinta.
 - **Erota vastuualueet**: Siirrä mediatallennus objektitallennukseen (S3-yhteensopiva), ulkoista sähköposti transaktionaaliseen sähköpostipalveluun
 
-### Hosting-siirto
+### Hosting-siirto {#hosting-migration}
 
 Jos nykyinen palveluntarjoajasi ei voi skaalata pidemmälle, suunnittele siirto:
 
@@ -65,11 +65,11 @@ Jos nykyinen palveluntarjoajasi ei voi skaalata pidemmälle, suunnittele siirto:
 4. Päivitä DNS mahdollisimman pienellä TTL:llä etukäteen
 5. Varmista, että kaikki toimii siirron jälkeen
 
-## Toimintojen automatisointi
+## Toimintojen automatisointi {#automating-operations}
 
 Kasvaessasi manuaalisista prosesseista tulee pullonkauloja. Automatisoi se, minkä voit:
 
-### Webhooks ja Zapier
+### Webhooks ja Zapier {#webhooks-and-zapier}
 
 Käytä [Webhooks](/user-guide/integrations/webhooks) tai [Zapier](/user-guide/integrations/zapier) automatisointiin:
 
@@ -78,7 +78,7 @@ Käytä [Webhooks](/user-guide/integrations/webhooks) tai [Zapier](/user-guide/i
 - **Maksuepäonnistumiset** → hälytys seurantatyökalussasi
 - **Suunnitelmapäivitykset** → onnitteluviesti sähköpostitse ja uuden ominaisuuden opas
 
-### Sähköpostiautomaatio
+### Sähköpostiautomaatio {#email-automation}
 
 Siirry manuaalisista sähköposteista automatisoituihin sarjoihin:
 
@@ -87,30 +87,30 @@ Siirry manuaalisista sähköposteista automatisoituihin sarjoihin:
 - Päivityskehotukset, kun asiakkaat lähestyvät suunnitelman rajoja
 - Uusimismuistutukset vuositilaajille
 
-### Tukiautomaatio
+### Tukiautomaatio {#support-automation}
 
 - **Valmiit vastaukset** yleisiin kysymyksiin
 - **Automaattiset vastaukset**, jotka vahvistavat tukipyyntöjen vastaanoton
 - **Tietopohjaehdotukset**, kun asiakkaat lähettävät tukipyyntöjä, jotka vastaavat olemassa olevia artikkeleita
 
-## Liikevaihdon kasvattaminen
+## Liikevaihdon kasvattaminen {#increasing-revenue}
 
 Kasvu ei tarkoita vain lisää asiakkaita. Se tarkoittaa myös enemmän liikevaihtoa asiakasta kohden.
 
-### Lisämyynti nykyisille asiakkaille
+### Lisämyynti nykyisille asiakkaille {#upselling-existing-customers}
 
 - **Suunnitelmapäivitykset**: Kohdennetut kampanjat, jotka esittelevät Growth/Pro-ominaisuuksia Starter-asiakkaille
 - **Lisämyynnit tilaukseen**: Mainosta lisätuotteita nykyisille asiakkaille sähköpostitse
 - **Vuosilaskutukseen siirtyminen**: Tarjoa kuukausiasiakkaille alennus siirtymisestä vuosilaskutukseen
 
-### Uudet liikevaihtovirrat
+### Uudet liikevaihtovirrat {#new-revenue-streams}
 
 - **Avaimet käteen -käyttöönotto**: Veloita lisähinta asiakkaan sivuston pystyttämisestä ja mukauttamisesta hänen puolestaan
 - **Räätälöidyt suunnittelupalvelut**: Tarjoa yksilöllistä suunnittelutyötä mallipohjan lisäksi
 - **Koulutussessiot**: Maksulliset henkilökohtaiset läpikäynnit asiakkaille, jotka haluavat käytännön apua
 - **Premium plugins**: Tarjoa niche-kohtaisia premium plugins maksullisina lisäosina (esim. fitness-tuntien varauswidget)
 
-### Hintojen nostaminen
+### Hintojen nostaminen {#raising-prices}
 
 Kun alustasi kypsyy ja tuottaa lisää arvoa:
 
@@ -118,7 +118,7 @@ Kun alustasi kypsyy ja tuottaa lisää arvoa:
 - Nosta hintoja uusille rekisteröityjille
 - Perustele korotukset uusilla ominaisuuksilla ja parannuksilla
 
-## Tiimin rakentaminen
+## Tiimin rakentaminen {#building-a-team}
 
 Jossain vaiheessa et voi tehdä kaikkea yksin. Yleisiä ensimmäisiä rekrytointeja:
 
@@ -128,7 +128,7 @@ Jossain vaiheessa et voi tehdä kaikkea yksin. Yleisiä ensimmäisiä rekrytoint
 
 Et tarvitse työntekijöitä. Urakoitsijat ja freelancerit toimivat hyvin alustaliiketoiminnassa.
 
-## Kasvun virstanpylväät
+## Kasvun virstanpylväät {#growth-milestones}
 
 | Virstanpylväs | Arvioitu MRR | Painopiste |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Et tarvitse työntekijöitä. Urakoitsijat ja freelancerit toimivat hyvin alusta
 | 250-500 asiakasta | $25,000-$50,000 | Tiimin rakentaminen, uudet liikevaihtovirrat, premium-ominaisuudet |
 | 500+ asiakasta | $50,000+ | Alustan kypsyys, viereiset nichet, mahdollinen exit |
 
-## Mitä rakensimme tässä oppitunnissa
+## Mitä rakensimme tässä oppitunnissa {#what-we-built-this-lesson}
 
 - **Mittarikehys** liiketoiminnan terveyden ymmärtämiseen
 - **Infrastruktuurin skaalaussuunnitelma** kasvamiseen kymmenistä satoihin sivustoihin

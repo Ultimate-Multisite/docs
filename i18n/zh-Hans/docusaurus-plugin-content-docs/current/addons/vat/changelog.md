@@ -3,7 +3,7 @@ title: VAT 更新日志
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT 更新日志
+# VAT 更新日志 {#vat-changelog}
 
 Version 1.0.7 - 发布于 2026-02-03
 

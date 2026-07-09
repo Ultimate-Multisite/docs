@@ -3,9 +3,9 @@ title: Mailster மாற்றப் பதிவேடு
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster மாற்றங்கள் பட்டியல் (Changelog)
+# Mailster மாற்றங்கள் பட்டியல் (Changelog) {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * முதல் வெளியீடு (Initial release)
 * பதிவு செய்தல் அல்லது பணம் செலுத்துதல் மூலம் தானியங்கி சந்தாதாரர் ஒத்திசைவு (Automatic subscriber sync on signup or payment)
 * தயாரிப்புக்கு-குறிப்பிட்ட பட்டியல் ஒதுக்கீடுகள் (Product-specific list assignments)

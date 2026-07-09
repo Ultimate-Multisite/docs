@@ -4,22 +4,22 @@ title: ფილტრი - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# ფილტრი: wu_is_mcp_enabled
+# ფილტრი: wu_is_mcp_enabled {#filter-wuismcpenabled}
 
 აძლევს plugin-ის დეველოპერებს საშუალებას, MCP ადაპტერისთვის იძულებით დააყენონ მოცემული მდგომარეობა.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
 | $enabled | `bool` | ჩართულია თუ არა MCP ადაპტერი. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.5.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L250)-ში, 250-ე ხაზზე
 
 
-## აბრუნებს
+## აბრუნებს {#returns}

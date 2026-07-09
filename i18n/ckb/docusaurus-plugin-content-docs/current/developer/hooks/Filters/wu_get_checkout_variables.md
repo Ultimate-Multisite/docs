@@ -4,26 +4,26 @@ title: پاڵێوەر - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# فلتەر: wu_get_checkout_variables
+# فلتەر: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
 
 ڕێگە بە گەشەپێدەرانی plugin دەدات پێش-دانراوەکانی پەڕەی checkout فلتەر بکەن.
 
 ئاگاداربە، کلیلە ونبووەکان دەتوانن checkout لە front-end بە تەواوی تێکبدەن.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
 | $variables | `array` | گۆڕاوە ناوخۆییکراوەکان. |
 | $checkout | `\Checkout` | پۆلی checkout. |
 
-### لە وەشانی
+### لە وەشانی {#since}
 
 - 2.0.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 لە [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1970) لە هێڵی 1970 پێناسەکراوە
 
 
-## دەگەڕێنێتەوە
+## دەگەڕێنێتەوە {#returns}
 ڕیزی نوێی گۆڕاوەکان.

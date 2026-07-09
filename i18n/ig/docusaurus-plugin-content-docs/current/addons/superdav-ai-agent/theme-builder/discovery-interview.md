@@ -3,35 +3,35 @@ title: Ajụjụ ọnụ nchọpụta
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Ajụjụ Ọnụ Nchọpụta
+# Ajụjụ Ọnụ Nchọpụta {#discovery-interview}
 
 **Ajụjụ Ọnụ Nchọpụta** bụ nzọụkwụ mbụ na usoro imepụta nke Theme Builder. Ọ na-anakọta ozi gbasara saịtị gị, azụmahịa gị, na mmasị imewe gị iji mepụta theme ahaziri maka gị.
 
-## Nchịkọta
+## Nchịkọta {#overview}
 
 Ajụjụ Ọnụ Nchọpụta na-eduzi gị site n’usoro ajụjụ iji ghọta brand gị, ndị ị na-achọ iru, na ebumnuche imewe gị. Na ụdị 1.16.0, ajụjụ ọnụ ahụ ugbu a gụnyere **nzọụkwụ ibugo foto** nke na-enye gị ohere ịnye mmụọ nsọ anya maka imewe gị.
 
-## Nzọụkwụ Ajụjụ Ọnụ
+## Nzọụkwụ Ajụjụ Ọnụ {#interview-steps}
 
-### 1. Ozi Azụmahịa
+### 1. Ozi Azụmahịa {#1-business-information}
 
 - Aha saịtị na tagline
 - Ụdị azụmahịa ma ọ bụ ụlọ ọrụ
 - Ebumnuche azụmahịa bụ isi
 - Nkọwa ndị ị na-achọ iru
 
-### 2. Mmasị Imewe
+### 2. Mmasị Imewe {#2-design-preferences}
 
 - Nhazi agba masịrị gị
 - Ụdị imewe (nke oge a, classic, minimalist, nke egwuregwu, wdg.)
 - Weebụsaịtị ma ọ bụ brand na-enye mmụọ nsọ
 - Ihe imewe ndị dị mkpa ịnwe
 
-### 3. Ibugo Foto (Ọhụrụ na v1.16.0)
+### 3. Ibugo Foto (Ọhụrụ na v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Bulite otu foto ma ọ bụ karịa iji metụta ụzọ imewe:
 
-#### Ụdị A Na-anabata
+#### Ụdị A Na-anabata {#accepted-formats}
 
 | Ụdị | Extension | Nkọwa |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Bulite otu foto ma ọ bụ karịa iji metụta ụzọ imewe:
 | **WebP** | `.webp` | Ụdị nke oge a, nha faịlụ pere mpe |
 | **GIF** | `.gif` | Naanị onyonyo kwụ ọtọ (enweghị animation) |
 
-#### Ihe Faịlụ Ga-emezu
+#### Ihe Faịlụ Ga-emezu {#file-requirements}
 
 - **Nha faịlụ kacha:** 10 MB
 - **Akụkụ kacha nta:** 400 × 300 pixels
 - **Akụkụ a na-atụ aro:** 1200 × 800 pixels ma ọ bụ karịa
 - **Oke akụkụ:** Oke ọ bụla dị mma
 
-#### Otu Foto Si Emetụta Ụzọ Imewe
+#### Otu Foto Si Emetụta Ụzọ Imewe {#how-photos-influence-design-direction}
 
 Foto ndị ị bulitere na-enyere Theme Builder aka ịghọta:
 
@@ -57,21 +57,21 @@ Foto ndị ị bulitere na-enyere Theme Builder aka ịghọta:
 - **Ihe imewe** — usoro, textures, na ụdị nhazi
 - **Mmụọ nsọ typography** — ụdị font ndị na-eme ka theme anya kwekọọ
 
-### 4. Ọdịdị Ọdịnaya
+### 4. Ọdịdị Ọdịnaya {#4-content-structure}
 
 - Peeji ndị bụ isi achọrọ (Home, About, Services, Contact, wdg.)
 - Achọrọ ngalaba blog ma ọ bụ akụkọ
 - Achọrọ arụmọrụ e-commerce
 - Njirimara pụrụ iche ma ọ bụ njikọta
 
-### 5. Nyochaa na Nkwenye
+### 5. Nyochaa na Nkwenye {#5-review-and-confirmation}
 
 - Nchịkọta ozi niile e nyere
 - Nkwenye tupu mmepụta imewe amalite
 
-## Omume Kachasị Mma Maka Ibugo Foto
+## Omume Kachasị Mma Maka Ibugo Foto {#photo-upload-best-practices}
 
-### Ihe Ị Ga-ebulite
+### Ihe Ị Ga-ebulite {#what-to-upload}
 
 - **Mmụọ nsọ brand** — logos, swatches agba, ma ọ bụ ntuziaka brand
 - **Saịtị ndị asọmpi** — screenshots nke saịtị ị na-enwe mmasị na ha
@@ -80,7 +80,7 @@ Foto ndị ị bulitere na-enyere Theme Builder aka ịghọta:
 - **Foto otu ma ọ bụ ọfịs** — maka branding onwe onye ma ọ bụ ọkachamara
 - **Onyonyo lifestyle** — na-anọchi anya ndị ị na-achọ iru
 
-### Ihe Ị Ga-ezere
+### Ihe Ị Ga-ezere {#what-to-avoid}
 
 - **Onyonyo ogo ala** — foto na-adịghị doo anya ma ọ bụ pixelated
 - **Onyonyo na-enweghị njikọ** — foto ndị anaghị anọchi anya brand gị
@@ -88,7 +88,7 @@ Foto ndị ị bulitere na-enyere Theme Builder aka ịghọta:
 - **Ihe nwere copyright** — hụ na ị nwere ikike iji onyonyo ndị ahụ
 - **Animated GIFs** — naanị onyonyo kwụ ọtọ ka a na-arụ ọrụ na ha
 
-### Ndụmọdụ Maka Nsonaazụ Kachasị Mma
+### Ndụmọdụ Maka Nsonaazụ Kachasị Mma {#tips-for-best-results}
 
 1. **Bulite onyonyo 2-3** — ọtụtụ onyonyo na-enye ọnọdụ ka mma
 2. **Jiri foto ogo elu** — onyonyo doro anya, nwere ọkụ ọma na-arụ ọrụ kacha mma
@@ -96,7 +96,7 @@ Foto ndị ị bulitere na-enyere Theme Builder aka ịghọta:
 4. **Nye ọnọdụ** — kọwaa nkenke ihe mere i ji họrọ onyonyo ọ bụla
 5. **Kwuo kpọmkwem** — ma ọ bụrụ na otu ihe masịrị gị, gosi ya
 
-## Nsonaazụ Ụzọ Imewe
+## Nsonaazụ Ụzọ Imewe {#design-direction-output}
 
 Mgbe Ajụjụ Ọnụ Nchọpụta gachara, Theme Builder na-emepụta:
 
@@ -106,7 +106,7 @@ Mgbe Ajụjụ Ọnụ Nchọpụta gachara, Theme Builder na-emepụta:
 - **Ihe anya** — icons, patterns, na ihe ịchọ mma
 - **Mood board** — nnọchi anya anya nke ụzọ imewe
 
-## Nzọụkwụ Na-esote
+## Nzọụkwụ Na-esote {#next-steps}
 
 Mgbe ị mechara Ajụjụ Ọnụ Nchọpụta:
 
@@ -115,7 +115,7 @@ Mgbe ị mechara Ajụjụ Ọnụ Nchọpụta:
 3. Gaa n’ihu na nzọụkwụ [Ụzọ Imewe](./design-direction.md)
 4. Theme Builder na-emepụta theme omenala gị
 
-## Akwụkwọ Njikọ
+## Akwụkwọ Njikọ {#related-documentation}
 
 - [Ụzọ Imewe](./design-direction.md) — nyochaa ma mee ka imewe gị ka mma
 - [Menus Maka Hospitality](./hospitality-menus.md) — mepụta peeji menu nwere nhazi

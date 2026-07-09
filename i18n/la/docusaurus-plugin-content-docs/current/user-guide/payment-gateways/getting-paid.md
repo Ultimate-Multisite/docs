@@ -3,13 +3,13 @@ title: Mercedem accipere
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Mercedem accipere (v2)
+# Mercedem accipere (v2) {#getting-paid-v2}
 
 _**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x refertur.**_
 
 Ultimate Multisite systema sodalitatis et rationum exigendarum inclusum habet. Ut systema nostrum rationum exigendarum fungatur, communissimas portas solutionum in commercio electronico adhibitas integravimus. Portae solutionum praedefinitae in Ultimate Multisite sunt _Stripe_ , _PayPal_ , et Solutio Manualis. Etiam _WooCommerce_ , _GoCardless_ et _Payfast_ uti potes ad solutiones accipiendas, eorum additamentis propriis institutis.
 
-## Optiones fundamentales
+## Optiones fundamentales {#basic-settings}
 
 Quamlibet harum portarum solutionum sub optionibus solutionum Ultimate Multisite configurare potes. Id invenire potes eundo ad **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Hoc prohibet ne sodalitas videatur automatice renovari cum porta tantum solution
 
 <!-- Imago tegumenti non praesto: campi numeri cautionis proximi et praefixi numeri cautionis ostensi cum Sequential Number eligitur -->
 
-## Ubi portae inveniantur:
+## Ubi portae inveniantur: {#where-to-find-the-gateways}
 
 Portas solutionum in eadem pagina instituere potes ( **Ultimate Multisite > Settings > Payments**). Statim infra **portas solutionum activas** , videre poteris: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ et _Manual_.
 
@@ -67,7 +67,7 @@ Ecce etiam plena conspectio optionum portarum solutionum:
 
 Nunc, si _WooCommerce_ , _GoCardless_ vel _Payfast_ uti vis ut porta solutionis tua, debebis **eorum additamenta instituere et configurare**.
 
-### Quomodo additamentum WooCommerce instituatur:
+### Quomodo additamentum WooCommerce instituatur: {#how-to-install-the-woocommerce-add-on}
 
 Intellegimus _Stripe_ et _PayPal_ in nonnullis terris praesto non esse, quod usores Ultimate Multisite impedit vel cohibet ne additamentum nostrum efficaciter utantur. Itaque additamentum creavimus ad _WooCommerce,_ integrandum, quod est additamentum commercii electronici valde populare. Programmatores per orbem terrarum additamenta creaverunt ad diversas portas solutionum cum eo integrandas. Hoc commodum adhibuimus ut portas solutionum, quibus uti potes cum systemate rationum exigendarum Ultimate Multisite, amplificaremus.
 
@@ -95,7 +95,7 @@ Postquam id activaveris, si adhuc modulum additivum WooCommerce in situ interret
 
 Ut plura de additamento WooCommerce Integration legas, **hic preme**.
 
-### Quomodo additamentum GoCardless instituatur:
+### Quomodo additamentum GoCardless instituatur: {#how-to-install-the-gocardless-add-on}
 
 Gradus ad additamentum _GoCardless_ instituendum fere iidem sunt ac additamenti _WooCommerce_. Quaeso vade ad paginam additamentorum et elige additamentum **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Postquam institutio perfecta est, ad paginam modulorum additivorum redirigeris. 
 
 Ut discas quomodo cum porta _GoCardless_ incipias, **hunc articulum lege**.
 
-### Quomodo additamentum Payfast instituatur:
+### Quomodo additamentum Payfast instituatur: {#how-to-install-the-payfast-add-on}
 
 Vade ad paginam additamentorum et elige additamentum **Ultimate Multisite: Payfast Gateway**.
 

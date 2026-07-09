@@ -4,20 +4,20 @@ title: Muyunguruzo - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Akayunguruzo: wu_password_require_uppercase
+# Akayunguruzo: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
 
 Akayunguruzo ko kumenya niba inyuguti nkuru zigomba gusabwa mu magambo y’ibanga.
 
-## Ibigenderwaho
+## Ibigenderwaho {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
 | $require | `bool` | Niba inyuguti nkuru zigomba gusabwa. Agaciro gasanzwe ni true igihe amategeko akurikizwa. |
 | $defender_active | `bool` | Niba Defender Pro Strong Password ikora. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.4.0
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L553) ku murongo wa 553

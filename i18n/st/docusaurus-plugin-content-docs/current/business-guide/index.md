@@ -3,13 +3,13 @@ title: Theha Khoebo ea Webosaete e Ikhethang
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Haha Khoebo ea Webosaete ea Niche ka Ultimate Multisite
+# Haha Khoebo ea Webosaete ea Niche ka Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Batho ba bangata ba lekang ho rekisa liwebosaete ba qothisana lehlokoa ka theko khahlanong le Wix, Squarespace, le basebetsi ba ikemetseng ba likete. Ba hloloa. Ba hlolang ke ba khethang bamameli ba itseng, ba haha tharollo e etselitsoeng bamameli bao, ’me ba lefisa boleng boo ba bo fanang.
 
 Thupelo ena e u ruta kamoo u ka etsang seo hantle ka ho sebelisa Ultimate Multisite.
 
-## Seo U Tla se Haha
+## Seo U Tla se Haha {#what-you-will-build}
 
 Nakong eohle ea thupelo ena u tla haha marang-rang a sebele, a sebetsang a bitsoang **FitSite** -- sethala sa webosaete se hahiloeng ka ho khetheha bakeng sa li-studio tsa boikoetliso, bakoetlisi ba motho ka mong, le beng ba dijimi.
 
@@ -23,7 +23,7 @@ Qetellong ea thuto ea ho qetela, FitSite e tla ba sethala se feletseng sa niche 
 
 U tla latela mohato ka mohato, ’me qetellong u tla ba le sethala se sebetsang hammoho le tsebo ea ho pheta tshebetso ena bakeng sa niche efe kapa efe eo u e khethang.
 
-## Hobaneng Li-Studio tsa Boikoetliso?
+## Hobaneng Li-Studio tsa Boikoetliso? {#why-fitness-studios}
 
 Re ne re hloka mohlala o tobileng oo mang kapa mang a ka o latelang. Li-studio tsa boikoetliso lia sebetsa hobane:
 
@@ -34,7 +34,7 @@ Re ne re hloka mohlala o tobileng oo mang kapa mang a ka o latelang. Li-studio t
 
 Ntho e ’ngoe le e ’ngoe eo u ithutang eona ha u haha FitSite e sebetsa ka kotloloho ho niche efe kapa efe eo u e khethang: lireschorente, baemeli ba matlo, lifeme tsa molao, dikereke, borakonteraka ba mesebetsi ea matsoho, kapa lekala lefe kapa lefe le leng.
 
-## Sebopeho sa Thupelo
+## Sebopeho sa Thupelo {#course-structure}
 
 Thuto ka ’ngoe e hlahisa mohopolo o le mong, e hlalosa hore na hobaneng o le bohlokoa, ’me e u tsamaisa ho o kenya tshebetsong marang-rang a FitSite. Thuto e ’ngoe le e ’ngoe e haha holim’a e fetileng.
 
@@ -55,7 +55,7 @@ Thuto ka ’ngoe e hlahisa mohopolo o le mong, e hlalosa hore na hobaneng o le b
 | [13. Ho Hola](lesson-13-growth) | Ho hola ho tloha ho bareki ba pele ho ea khoebong ea sebele | Leano la kgolo le automation la FitSite |
 | [14. Se Latelang](lesson-14-whats-next) | Ho atolosa ho li-niche tse haufi le menyetla e mecha | ’Mapa oa hao oa tsela ka nqane ho FitSite |
 
-## Ditlhokahalo tsa Pele
+## Ditlhokahalo tsa Pele {#prerequisites}
 
 - Kenyo ea WordPress Multisite (kapa boikemisetso ba ho e hloma)
 - Laesense e sebetsang ea Ultimate Multisite
@@ -63,6 +63,6 @@ Thuto ka ’ngoe e hlahisa mohopolo o le mong, e hlalosa hore na hobaneng o le b
 
 Ha ho hlokehe coding. Haeba ha o eso ka o sebelisa Ultimate Multisite pele, ho lokile -- Thuto ea 3 e qala ka kenyo e ncha.
 
-## U Loketse?
+## U Loketse? {#ready}
 
 Qala ka [Thuto ea 1: Hobaneng Niche e Hlola](lesson-1-why-niche).

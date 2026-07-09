@@ -3,7 +3,7 @@ title: Gestionarea abonamentelor
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gestionarea membership-urilor
+# Gestionarea membership-urilor {#managing-memberships}
 
 În Ultimate Multisite poți gestiona membership-urile și accesa toate subscription-urile din rețeaua ta. Revizuiește și editează detaliile subscription-urilor, cum ar fi planurile și produsele, numărul de site-uri, suma și frecvența facturării, istoricul plăților și marcajele temporale.
 

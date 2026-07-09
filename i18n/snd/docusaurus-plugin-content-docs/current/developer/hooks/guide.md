@@ -3,15 +3,15 @@ title: Hooks جي استعمال جي رهنمائي
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks استعمال جي رهنمائي
+# Hooks استعمال جي رهنمائي {#hooks-usage-guide}
 
 Ultimate Multisite 200+ action hooks ۽ 280+ filter hooks مهيا ڪري ٿو. هي صفحو عملي مثالن سان سڀ کان وڌيڪ استعمال ٿيندڙ hooks کي بيان ڪري ٿو. مڪمل خودڪار طور تي ٺهيل حوالي لاءِ، هن حصي جا ٻيا صفحا ڏسو.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### گراهڪ جي حياتي چڪر
+### گراهڪ جي حياتي چڪر {#customer-lifecycle}
 
-#### گراهڪ ٺهڻ کان پوءِ
+#### گراهڪ ٺهڻ کان پوءِ {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### گراهڪ جي حالت ۾ تبديلي
+#### گراهڪ جي حالت ۾ تبديلي {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### سائيٽ Hooks
+### سائيٽ Hooks {#site-hooks}
 
-#### سائيٽ شايع ٿيڻ کان پوءِ
+#### سائيٽ شايع ٿيڻ کان پوءِ {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### ٽيمپليٽ لاڳو ڪرڻ کان اڳ
+#### ٽيمپليٽ لاڳو ڪرڻ کان اڳ {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### رڪنيت Hooks
+### رڪنيت Hooks {#membership-hooks}
 
-#### حالت جون تبديليون
+#### حالت جون تبديليون {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### ادائيگي Hooks
+### ادائيگي Hooks {#payment-hooks}
 
-#### ادائيگي مڪمل / ناڪام
+#### ادائيگي مڪمل / ناڪام {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### پروسيسنگ کان اڳ / مڪمل ٿيڻ کان پوءِ
+#### پروسيسنگ کان اڳ / مڪمل ٿيڻ کان پوءِ {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### ڊومين Hooks
+### ڊومين Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### قيمت جا Filters
+### قيمت جا Filters {#pricing-filters}
 
-#### ڪارٽ جو ڪل
+#### ڪارٽ جو ڪل {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### ٽيڪس شرحون
+#### ٽيڪس شرحون {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### ٽيمپليٽ Filters
+### ٽيمپليٽ Filters {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### حدبندي Filters
+### حدبندي Filters {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway Filters
+### Gateway Filters {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout فارم جا خانا
+### Checkout فارم جا خانا {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Email مواد
+### Email مواد {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

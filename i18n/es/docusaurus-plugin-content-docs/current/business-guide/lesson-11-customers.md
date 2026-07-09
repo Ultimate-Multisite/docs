@@ -3,15 +3,15 @@ title: 'Lección 11: Encontrando Clientes'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lección 11: Cómo encontrar clientes
+# Lección 11: Cómo encontrar clientes {#lesson-11-finding-customers}
 
 Una gran plataforma sin clientes es solo un pasatiempo. Esta lección cubre cómo adquirir clientes en un nicho vertical: estrategias que funcionan específicamente porque te enfocas en una sola industria.
 
-## Dónde nos quedamos
+## Dónde nos quedamos {#where-we-left-off}
 
 FitSite ya está activo. Ahora necesitamos que los dueños de estudios de fitness lo encuentren y se registren.
 
-## Por qué la adquisición de nichos es diferente
+## Por qué la adquisición de nichos es diferente {#why-niche-acquisition-is-different}
 
 Cuando vendes a todo el mundo, compites por la atención en un mercado ruidoso. Cuando vendes a un nicho, tienes ventajas:
 
@@ -19,17 +19,17 @@ Cuando vendes a todo el mundo, compites por la atención en un mercado ruidoso. 
 - **Tu mensaje resuena inmediatamente** — "sitios web para estudios de fitness" detiene a un dueño de gimnasio en medio de la navegación
 - **Las referencias se multiplican** — los dueños de estudios de fitness conocen a otros dueños de estudios de fitness
 
-## Canal 1: Contacto directo
+## Canal 1: Contacto directo {#channel-1-direct-outreach}
 
 El camino más rápido hacia tus primeros clientes es el contacto directo y personal.
 
-### Encuentra prospectos
+### Encuentra prospectos {#find-prospects}
 
 - Busca en Google Maps estudios de fitness, gimnasios y entrenadores personales en tu área
 - Visita sus sitios web actuales (o anota que no tienen uno)
 - Recopila información de contacto de sus perfiles de Google Business o redes sociales
 
-### Evalúa su situación actual
+### Evalúa su situación actual {#evaluate-their-current-situation}
 
 Para cada prospecto, anota:
 
@@ -37,7 +37,7 @@ Para cada prospecto, anota:
 - **Sitio web deficiente**: Prospecto fuerte — muéstrales cómo se ve una mejor opción
 - **Sitio web bueno**: Prospecto débil — ya han resuelto este problema
 
-### Haz contacto
+### Haz contacto {#make-contact}
 
 Envía un correo electrónico o mensaje personalizado:
 
@@ -48,7 +48,7 @@ Envía un correo electrónico o mensaje personalizado:
 
 No envíes correos masivos. Un contacto personalizado con 20 prospectos bien investigados superará a un envío genérico a 2,000.
 
-## Canal 2: Comunidades de nicho
+## Canal 2: Comunidades de nicho {#channel-2-niche-communities}
 
 Los dueños de estudios de fitness se reúnen en lugares específicos en línea:
 
@@ -57,7 +57,7 @@ Los dueños de estudios de fitness se reúnen en lugares específicos en línea:
 - **Foros de la industria** y tablones de discusión
 - **Grupos de LinkedIn** para profesionales del fitness
 
-### Cómo participar
+### Cómo participar {#how-to-participate}
 
 No te unas y vendas tu producto inmediatamente. En su lugar:
 
@@ -66,7 +66,7 @@ No te unas y vendas tu producto inmediatamente. En su lugar:
 3. **Comparte cuando sea relevante** — cuando alguien pregunte por sitios web, comparte tu plataforma de forma natural
 4. **Crea contenido útil** — escribe publicaciones sobre "qué hace que un sitio web de estudio de fitness sea genial" que lleven naturalmente a tu plataforma
 
-## Canal 3: Marketing de contenidos
+## Canal 3: Marketing de contenidos {#channel-3-content-marketing}
 
 Crea contenido que los dueños de estudios de fitness busquen:
 
@@ -77,7 +77,7 @@ Crea contenido que los dueños de estudios de fitness busquen:
 
 Publica esto en el blog de marketing de FitSite. Con el tiempo, este contenido se posiciona en los motores de búsqueda y atrae tráfico orgánico de personas que buscan activamente lo que tú ofreces.
 
-## Canal 4: Alianzas estratégicas
+## Canal 4: Alianzas estratégicas {#channel-4-partnerships}
 
 Asóciate con negocios que ya atienden a estudios de fitness:
 
@@ -88,7 +88,7 @@ Asóciate con negocios que ya atienden a estudios de fitness:
 
 Ofrece comisiones de referencia o promoción recíproca. El [AffiliateWP addon](/addons/affiliatewp) puede ayudarte a configurar un programa de referidos formal.
 
-## Canal 5: Eventos de la industria
+## Canal 5: Eventos de la industria {#channel-5-industry-events}
 
 Los eventos de la industria del fitness te ponen frente a cientos de clientes potenciales:
 
@@ -99,7 +99,7 @@ Los eventos de la industria del fitness te ponen frente a cientos de clientes po
 
 No necesitas un gran presupuesto. Incluso asistir como participante y tener conversaciones sobre lo que haces puede generar clientes potenciales.
 
-## Canal 6: Sitios de muestra
+## Canal 6: Sitios de muestra {#channel-6-showcase-sites}
 
 Tu mejor marketing son los sitios de tus clientes actuales. Con permiso:
 
@@ -108,7 +108,7 @@ Tu mejor marketing son los sitios de tus clientes actuales. Con permiso:
 - Pide testimonios a clientes satisfechos
 - Anima a los clientes a mencionar FitSite cuando se les pregunte por su sitio web
 
-## Configurando un programa de referidos
+## Configurando un programa de referidos {#setting-up-a-referral-program}
 
 El boca a boca es tu canal más poderoso en un nicho. Formalízalo:
 
@@ -116,7 +116,7 @@ El boca a boca es tu canal más poderoso en un nicho. Formalízalo:
 2. Ofrece a los clientes existentes una recompensa por las referencias (un mes gratis, crédito en la cuenta, etc.)
 3. Facilítalo — dales un enlace de referencia y un mensaje simple que puedan reenviar
 
-## Rastrea lo que funciona
+## Rastrea lo que funciona {#tracking-what-works}
 
 Para cada canal, rastrea:
 
@@ -126,7 +126,7 @@ Para cada canal, rastrea:
 
 Apuesta más fuerte por los canales que funcionan. Elimina los que no.
 
-## Expectativas realistas
+## Expectativas realistas {#realistic-expectations}
 
 - **Mes 1-3**: 5-20 clientes, la mayoría provenientes del contacto directo y las comunidades
 - **Mes 4-6**: 20-50 clientes, el marketing de contenidos comienza a contribuir
@@ -134,7 +134,7 @@ Apuesta más fuerte por los canales que funcionan. Elimina los que no.
 
 Estos números varían, pero el patrón es consistente: los primeros clientes provienen del esfuerzo directo, los clientes posteriores provienen de los efectos acumulativos del contenido, las referencias y la reputación.
 
-## Lo que construimos en esta lección
+## Lo que construimos en esta lección {#what-we-built-this-lesson}
 
 - **Seis canales de adquisición** adaptados al nicho de fitness
 - **Un proceso de contacto directo** para conseguir los primeros clientes

@@ -3,15 +3,15 @@ title: رنگن جي پيليٽ جو ڪنٽراسٽ تصديق ڪريو
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palette Contrast جي تصديق ڪريو
+# Palette Contrast جي تصديق ڪريو {#validate-palette-contrast}
 
 **Validate Palette Contrast** صلاحيت توهان جي ڊيزائن palette ۾ رنگن جي جوڙن کي توهان جي theme تي لاڳو ڪرڻ کان اڳ WCAG (Web Content Accessibility Guidelines) جي پابندي لاءِ چيڪ ڪري ٿي.
 
-## جائزو
+## جائزو {#overview}
 
 هي صلاحيت يقيني بڻائي ٿي ته توهان جي سائيٽ جو رنگي خاڪو پهچ جي معيارن تي پورو لهي، متن ۽ پس منظر جي رنگن جي وچ ۾ contrast ratios جي تصديق ڪري. اها اهڙين رنگي ميلاپن کي روڪڻ ۾ مدد ڪري ٿي جيڪي بصري معذوري رکندڙ استعمال ڪندڙن لاءِ پڙهڻ ۾ ڏکيا ٿي سگهن ٿا.
 
-## انپٽ فارميٽ
+## انپٽ فارميٽ {#input-format}
 
 هي صلاحيت رنگن جي palette کي انپٽ طور قبول ڪري ٿي:
 
@@ -35,7 +35,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### پيراميٽر
+### پيراميٽر {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `wcag_level` | string | No | WCAG پابندي سطح: "A"، "AA" (ڊفالٽ)، يا "AAA" |
 | `pairs_to_check` | array | No | تصديق ڪرڻ لاءِ مخصوص رنگي جوڙا (مثال طور، `["primary-text", "background-text"]`) |
 
-## چيڪ ڪيل WCAG سطحون
+## چيڪ ڪيل WCAG سطحون {#wcag-levels-checked}
 
 هي صلاحيت WCAG معيارن موجب contrast ratios جي تصديق ڪري ٿي:
 
@@ -56,7 +56,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 - **عام متن** — 18pt کان ننڍو متن (يا 14pt bold)
 - **وڏو متن** — 18pt يا وڏو متن (يا 14pt bold يا وڏو)
 
-## آئوٽ پٽ اسڪيمه
+## آئوٽ پٽ اسڪيمه {#output-schema}
 
 هي صلاحيت تفصيلي تصديقي رپورٽ واپس ڪري ٿي:
 
@@ -95,7 +95,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### آئوٽ پٽ فيلڊز
+### آئوٽ پٽ فيلڊز {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `status` | string | هر جوڙي لاءِ "pass" يا "fail" |
 | `recommendations` | array | ناڪام ٿيندڙ جوڙن کي بهتر ڪرڻ لاءِ صلاحون |
 
-## استعمال جو مثال
+## استعمال جو مثال {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 - ✅ Background + Text: 12.1:1 ratio (WCAG AAA پاس ڪري ٿو)
 - مجموعي طور: WCAG AA سان پابند
 
-## Theme Builder سان انٽيگريشن
+## Theme Builder سان انٽيگريشن {#integration-with-theme-builder}
 
 Theme Builder جي ڊيزائن-رخ چونڊ استعمال ڪندي، Validate Palette Contrast صلاحيت:
 
@@ -129,7 +129,7 @@ Theme Builder جي ڊيزائن-رخ چونڊ استعمال ڪندي، Validate
 4. غير پابند جوڙن لاءِ صلاحون فراهم ڪري ٿي
 5. پهچ کان محروم رنگي خاڪن کي لاڳو ٿيڻ کان روڪي ٿي
 
-## بهترين طريقا
+## بهترين طريقا {#best-practices}
 
 - **AA سطح سان شروع ڪريو** — WCAG AA اڪثر ويب سائيٽن لاءِ معيار آهي
 - **لاڳو ڪرڻ کان اڳ ٽيسٽ ڪريو** — ڊيزائن تي پابند ٿيڻ کان اڳ پنهنجي palette جي تصديق ڪريو
@@ -137,7 +137,7 @@ Theme Builder جي ڊيزائن-رخ چونڊ استعمال ڪندي، Validate
 - **استعمال ڪندڙن جي ترجيحن کي ذهن ۾ رکو** — ڪجهه استعمال ڪندڙن کي اضافي رنگي حساسيت ٿي سگهي ٿي
 - **contrast checkers استعمال ڪريو** — تصديق لاءِ هن صلاحيت کي برائوزر اوزارن سان گڏ استعمال ڪريو
 
-## ناڪام جوڙا ۽ صلاحون
+## ناڪام جوڙا ۽ صلاحون {#failing-pairs-and-recommendations}
 
 جيڪڏهن ڪو رنگي جوڙو تصديق ۾ ناڪام ٿئي، ته هي صلاحيت صلاحون فراهم ڪري ٿي:
 
@@ -155,7 +155,7 @@ Theme Builder جي ڊيزائن-رخ چونڊ استعمال ڪندي، Validate
 }
 ```
 
-## لاڳاپيل صلاحيتون
+## لاڳاپيل صلاحيتون {#related-abilities}
 
 - [Logo SVG ٺاهيو](./generate-logo-svg.md) — پنهنجي تصديق ٿيل رنگن جي palette سان logos ٺاهيو
 - [Menu ٺاهيو](./create-menu.md) — پهچ لائق رنگن سان navigation ٺاهيو

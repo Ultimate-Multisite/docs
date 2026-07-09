@@ -3,9 +3,9 @@ title: Upravljanje plaćanjima i računima
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Upravljanje plaćanjima i računima
+# Upravljanje plaćanjima i računima {#managing-payments-and-invoices}
 
-## Postavke za plaćanja
+## Postavke za plaćanja {#payment-settings}
 
 Prije nego što počnete primati plaćanja, trebat će vam postaviti sve podatke vezane uz plaćanje. Idite na **Ultimate Multisite → Settings** i kliknite na karticu **Payment**.
 
@@ -15,7 +15,7 @@ Evo kompletnog pregleda stranice za postavke plaćanja:
 
 ![Plaćanje postavkama cijela stranice](/img/admin/settings-payments-full.png)
 
-### Opće opcije za plaćanja
+### Opće opcije za plaćanja {#general-payment-options}
 
 U općim postavkama možete konfigurirati:
 
@@ -24,7 +24,7 @@ U općim postavkama možete konfigurirati:
 
 ![Plaćanje gateway postavke](/img/admin/settings-payments-options.png)
 
-### Plaćanja gateway-ji
+### Plaćanja gateway-ji {#payment-gateways}
 
 Ultimate Multisite podržava više plaćanja gateway-ja. Možete omogućiti i konfigurirati svaki od njih s kartice za plaćanja.
 
@@ -40,11 +40,11 @@ Svaki gateway ima svoj odjeljak za konfiguraciju gdje unosite API ključe i drug
 
 ![Dodatne postavke gateway-a](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox način rada (Sandbox Mode)
+### Sandbox način rada (Sandbox Mode) {#sandbox-mode}
 
 Možete omogućiti **Sandbox Mode** kako biste testirali integraciju plaćanja prije nego što krenete u produkciju. Kada je sandbox mode aktivan, neće se vršiti nikakva stvarnih naplate.
 
-## Pregled plaćanja
+## Pregled plaćanja {#viewing-payments}
 
 Idite na stranicu **Payments** pod Ultimate Multisite da vidite sve transakcije kroz vašu mrežu.
 
@@ -54,7 +54,7 @@ Možete filtrirati plaćanja po statusu (završeno, u obradi, neuspješno, vrać
 
 Kliknite na plaćanje kako biste vidjeli sve detalje, uključujući stavke, povezane članstva, informacije o kupcu i podatke o platnom gatewayu.
 
-## Računi (Invoices)
+## Računi (Invoices) {#invoices}
 
 Ultimate Multisite može automatski generirati račune za plaćanja. Možete prilagoditi šablon računa i format brojanja izravno u postavkama plaćanja.
 

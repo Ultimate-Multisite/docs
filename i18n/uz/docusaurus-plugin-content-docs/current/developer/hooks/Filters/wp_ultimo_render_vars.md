@@ -4,11 +4,11 @@ title: Filtr - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filtr: wp_ultimo_render_vars
+# Filtr: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Plagin dasturchilariga global tarzda render kontekstiga qo‘shimcha o‘zgaruvchi qo‘shishga ruxsat beradi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Plagin dasturchilariga global tarzda render kontekstiga qo‘shimcha o‘zgaruvc
 | $view | `string` | Render qilinadigan ko‘rinish nomi. |
 | $default_view | `string` | fallback_view nomi |
 
-### Beri
+### Beri {#since}
 
 - 2.0.0
-### Manba
+### Manba {#source}
 
 [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) faylida 31-qatorda aniqlangan
 
 
-## Qaytaradi
+## Qaytaradi {#returns}

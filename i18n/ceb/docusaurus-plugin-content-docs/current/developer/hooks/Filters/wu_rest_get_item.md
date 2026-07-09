@@ -4,11 +4,11 @@ title: Salaan - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filter: wu_rest_get_item
+# Filter: wu_rest_get_item {#filter-wurestgetitem}
 
 Nag-filter kon gitugotan ba nga mopadayon sa hangyo o dili.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Type | Deskripsyon |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Nag-filter kon gitugotan ba nga mopadayon sa hangyo o dili.
 | $rest_base | `array` | Entity slug. |
 | $this | `\Base_Manager` | Ang instance sa object. |
 
-### Sukad
+### Sukad {#since}
 
 - 2.0.0
-### Tinubdan
+### Tinubdan {#source}
 
 Gidefine sa [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) sa linya 388

@@ -3,13 +3,13 @@ title: Sähköpostien ja joukkolähetysten lähettäminen
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Sähköpostien ja lähetysten lähettäminen (v2)
+# Sähköpostien ja lähetysten lähettäminen (v2) {#sending-emails-and-broadcasts-v2}
 
 _**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -versiota 2.x.**_
 
 Ultimate Multisite sisältää ominaisuuden, jonka avulla voit viestiä asiakkaidesi kanssa lähettämällä sähköpostin kohdennetulle käyttäjälle tai käyttäjäryhmälle sekä lähettää ilmoituksia heidän ylläpidon Dashboardiin tiedotteiden julkaisemiseksi
 
-## Lisää ylläpitoilmoituksia asiakkaidesi Dashboardiin Broadcasts-toiminnolla
+## Lisää ylläpitoilmoituksia asiakkaidesi Dashboardiin Broadcasts-toiminnolla {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ultimate Multisite -lähetysominaisuuden avulla voit lisätä **ylläpitoilmoituksia** käyttäjäsi alisivuston ylläpidon Dashboardiin.
 
@@ -51,7 +51,7 @@ Kun olet luonut viestisi, voit painaa **Send**-painiketta.
 
 Siinä kaikki. Ylläpitoilmoituksen pitäisi näkyä heti käyttäjäsi Dashboardissa.
 
-## Lähetä sähköposteja asiakkaillesi
+## Lähetä sähköposteja asiakkaillesi {#send-emails-to-your-customers}
 
 Ultimate Multisite -lähetysominaisuuden avulla voit lähettää sähköpostin käyttäjillesi. Voit lähettää sähköpostin vain tietyille käyttäjille tai kohdentaa tietyn käyttäjäryhmän sen tuotteen tai paketin perusteella, jonka alle he ovat tilanneet.
 
@@ -81,11 +81,11 @@ Kun olet luonut viestisi, voit painaa **Send**-painiketta.
 
 Ja näin helppoa on lähettää sähköpostia loppukäyttäjillesi lähetysominaisuuden avulla.
 
-## Järjestelmäsähköpostit
+## Järjestelmäsähköpostit {#system-emails}
 
 Ultimate Multisite -järjestelmäsähköpostit ovat niitä **automaattisia ilmoituksia**, jotka järjestelmä lähettää tiettyjen toimintojen, kuten rekisteröinnin, maksun, domain mappingin jne. jälkeen. Näitä sähköposteja voi muokata tai muuttaa Ultimate Multisite -asetuksista. Se sisältää myös ominaisuuden, jonka avulla voit nollata ja tuoda olemassa olevia asetuksia toisesta Ultimate Multisite -asennuksesta.
 
-### Nollaus ja tuonti
+### Nollaus ja tuonti {#resetting--importing}
 
 Uudet Ultimate Multisite -versiot sekä lisäosat voivat ja tulevat rekisteröimään uusia sähköposteja aika ajoin.
 
@@ -93,7 +93,7 @@ Ristiriitojen ja muiden ongelmien estämiseksi **emme lisää uusia sähköposti
 
 Super adminit ja agentit voivat kuitenkin tuoda nämä uudet rekisteröidyt sähköpostit tuontityökalun kautta. Tämä prosessi luo uuden järjestelmäsähköpostin uuden sähköpostipohjan sisällöllä ja määrityksillä, jolloin super admin voi tehdä haluamansa muutokset tai pitää ne sellaisinaan.
 
-#### Kuinka tuoda järjestelmäsähköposteja
+#### Kuinka tuoda järjestelmäsähköposteja {#how-to-import-system-emails}
 
 Siirry Ultimate Multisite Settings -sivulle ja mene **Emails**-välilehdelle.
 
@@ -111,7 +111,7 @@ Sen jälkeen voit ottaa Import Emails -asetukset käyttöön nähdäksesi, mitk�
 
 <!-- Kuvakaappaus ei saatavilla: Nollaa ja tuo -modaali, jossa Tuo sähköpostit -asetukset on laajennettu -->
 
-#### Järjestelmäsähköpostien nollaaminen
+#### Järjestelmäsähköpostien nollaaminen {#reseting-system-emails}
 
 Toisinaan huomaat, että tiettyyn sähköpostimalliin tekemäsi muutokset eivät enää toimi sinulle, ja haluat palauttaa sen **oletustilaan**.
 

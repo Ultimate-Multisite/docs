@@ -3,11 +3,11 @@ title: Ukuphelelwa kobulungu kunye nokuvalwa kwesayithi
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ukuphelelwa koBulungu nokuValwa kweSayithi
+# Ukuphelelwa koBulungu nokuValwa kweSayithi {#membership-expiration-and-site-blocking}
 
 Esi sikhokelo sichaza indlela Ultimate Multisite ephatha ngayo ukuphelelwa kobulungu, ukuphela kwezilingo, kunye nokuvalwa kwesayithi kwicala langaphambili. Sigubungela umjikelo wobomi bobulungu ukusuka ekubeni busebenzayo ukuya ekubeni buphelelwe, izicwangciso ezilawula ukuba iisayithi zivaliwe na, kunye noko makujongwe xa iisayithi zisafikeleleka emva kokuba ubulungu buphelelwe.
 
-## Umjikelo woBomi beMeko yoBulungu
+## Umjikelo woBomi beMeko yoBulungu {#membership-status-lifecycle}
 
 Bonke ubulungu kwi-Ultimate Multisite bunenye yezi meko zilandelayo:
 
@@ -24,7 +24,7 @@ Ubulungu basimahla abuphelelwa ngokuzenzekelayo. Ultimate Multisite ibuphatha nj
 | **Iphelelwe** | Idlulile kumhla wokuphelelwa kunye nexesha loxolelo ngaphandle kokuhlaziywa |
 | **Irhoxisiwe** | Irhoxiswe ngokucacileyo ngumthengi okanye ngumlawuli |
 
-### Indlela Ubulungu Obutshintshela Ngayo Ekuphelelweni
+### Indlela Ubulungu Obutshintshela Ngayo Ekuphelelweni {#how-memberships-transition-to-expired}
 
 Ultimate Multisite iqhuba uvavanyo lwasemva **rhoqo ngeyure** olujonga ubulungu obufanele ukuphawulwa njengobuphelelwe. Olu vavanyo lusebenzisa [Action Scheduler](https://actionscheduler.org/) (hayi i-WP-Cron ngqo) kwaye luqhutywa njengesenzo esicwangcisiweyo `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Uvavanyo lokuphelelwa lunexesha loxolelo **elakhelwe ngaphakathi leentsuku ezi-3
 Ixesha loxolelo lokuphelelwa leentsuku ezi-3 lahlukile kwisicwangciso seXesha loXolelo lokuVala iCala Langaphambili esichazwe ngezantsi. Ixesha loxolelo lokuphelelwa lilawula ukuba **imeko itshintsha nini** ukusuka ekusebenzeni/ekumisweni ukuya ekuphelelweni. Ixesha loxolelo lokuvala icala langaphambili lilawula ukuba **isayithi ivalwa nini** emva kokuba imeko sele itshintshile.
 :::
 
-#### Ubulungu obuziHlaziyayo ngokuZenzekelayo vs. obungaZiHlaziyiyo ngokuZenzekelayo
+#### Ubulungu obuziHlaziyayo ngokuZenzekelayo vs. obungaZiHlaziyiyo ngokuZenzekelayo {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Lo mahluko ubalulekile ekuqondeni indlela yokuphelelwa:
 
@@ -42,7 +42,7 @@ Lo mahluko ubalulekile ekuqondeni indlela yokuphelelwa:
 
 - **Ubulungu obuzihlaziyayo ngokuzenzekelayo** (`auto_renew = true`): Uvavanyo lokuphelelwa lwe-cron **luyabutsiba ngokupheleleyo obu bulungu**. Isango lentlawulo (Stripe, PayPal, njl.) lilindeleke ukuba lazise Ultimate Multisite ngee-webhook xa subscription isilela okanye irhoxisiwe. Ukuba i-webhook ayifunyenwanga -- ngenxa yendawo yesiphelo emiswe gwenxa, ukuphazamiseka kwesango, okanye subscription erhoxiswe ngaphandle kwenkqubo -- ubulungu bunokuhlala `active` ngonaphakade nangemva kokuba umhla wokuphelelwa udlulile.
 
-### Indlela Izilingo Eziphela Ngayo
+### Indlela Izilingo Eziphela Ngayo {#how-trials-end}
 
 Xa ixesha lesilingo lobulungu obukwisilingo liphela, inkqubo:
 
@@ -52,11 +52,11 @@ Xa ixesha lesilingo lobulungu obukwisilingo liphela, inkqubo:
 
 Le nkqubo iqhutywa kwishedyuli efanayo yeyure nganye njengovavanyo oluqhelekileyo lokuphelelwa, kodwa **kuphela kubulungu obungazihlaziyiyo ngokuzenzekelayo**. Kwizilingo ezizihlaziyayo ngokuzenzekelayo, isango lentlawulo liphatha utshintsho ukusuka kwisilingo ukuya kwi-subscription ehlawulwayo.
 
-## Vala uFikelelo lweCala Langaphambili
+## Vala uFikelelo lweCala Langaphambili {#block-frontend-access}
 
 Ngokungagqibekanga, xa ubulungu buphelelwa okanye bumiswa, **kuphela yi-wp-admin Dashboard ethintelwa**. Icala langaphambili likawonke-wonke lesayithi lihlala lifikeleleka kubatyeleli. Ukuze uvale nofikelelo lukawonke-wonke, kufuneka uvule isicwangciso se-**Vala uFikelelo lweCala Langaphambili**.
 
-### Ukumisela Isicwangciso
+### Ukumisela Isicwangciso {#configuring-the-setting}
 
 Yiya ku-**Ultimate Multisite > Settings > Memberships** uze uvule **Vala uFikelelo lweCala Langaphambili**.
 
@@ -74,7 +74,7 @@ Izicwangciso ezintathu ezinxulumene noko zilawula le ndlela yokuziphatha:
 | **Ixesha loXolelo lokuVala iCala Langaphambili** | Inani leentsuku zokulinda emva kokuba ubulungu bungasasebenzi phambi kokuvala. Seta ku-`0` ukuze uvale ngoko nangoko. | 0 |
 | **Iphepha lokuVala iCala Langaphambili** | Iphepha kwisithethi esiphambili lokuthumela abatyeleli kulo xa isayithi ivaliwe. Ukuba alisetwanga, abatyeleli babona umyalezo oqhelekileyo othi "Isayithi ayifumaneki". | Akukho |
 
-### Oko Abatyeleli Bakubonayo Xa iSayithi Ivaliwe
+### Oko Abatyeleli Bakubonayo Xa iSayithi Ivaliwe {#what-visitors-see-when-a-site-is-blocked}
 
 Xa ufikelelo lwecala langaphambili luvaliwe, abatyeleli besayithi baya kuthi mhlawumbi:
 
@@ -83,7 +83,7 @@ Xa ufikelelo lwecala langaphambili luvaliwe, abatyeleli besayithi baya kuthi mhl
 
 Abalawuli besayithi basenako ukungena -- iphepha lokungena alize livaliwe.
 
-### Oko Kuvalwayo Nexesha Lokuvalwa
+### Oko Kuvalwayo Nexesha Lokuvalwa {#what-gets-blocked-and-when}
 
 Indlela yokuvala ixhomekeke kwimeko yobulungu:
 
@@ -104,21 +104,21 @@ Nokuba ixesha lesilingo liphelile, ubulungu obunemo ethi `trialing` **abuyi** ku
 Ubulungu oburhoxisiweyo buhlala buvaliwe xa umhla wokuphelelwa lixesha sele udlulile, nokuba ukuVala ukufikelela kwi-Frontend kuvuliwe okanye akunjalo. Ixesha lobabalo lokuVala i-Frontend **alisebenzi** kubulungu oburhoxisiweyo.
 :::
 
-## Ukusombulula iingxaki: Iisayithi ezihlala zifikeleleka emva kokuphelelwa lixesha
+## Ukusombulula iingxaki: Iisayithi ezihlala zifikeleleka emva kokuphelelwa lixesha {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Ukuba iisayithi zihlala zifikeleleka kuluntu emva kokuba ubulungu buphelelwe lixesha, sebenzisa ezi ngqwalaselo ngokulandelelana:
 
-### 1. Qinisekisa ukuba isetingi yokuVala ukufikelela kwi-Frontend ivuliwe
+### 1. Qinisekisa ukuba isetingi yokuVala ukufikelela kwi-Frontend ivuliwe {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Yiya ku-**Ultimate Multisite > Iisetingi > Ubulungu** uze uqinisekise ukuba iswitshi ethi **Vala ukufikelela kwi-Frontend** ivuliwe. Le setingi **icinyiwe ngokungagqibekanga**, nto leyo ethetha ukuba yi-wp-admin kuphela ethintelwayo xa ubulungu bungasebenzi.
 
-### 2. Jonga iXesha lobabalo lokuVala i-Frontend
+### 2. Jonga iXesha lobabalo lokuVala i-Frontend {#2-check-the-frontend-block-grace-period}
 
 Kwiphepha elifanayo leesetingi, jonga ixabiso le-**Xesha lobabalo lokuVala i-Frontend**. Ukuba limiselwe kwiintsuku eziyi-7, umzekelo, i-frontend ayiyi kuvalwa de kudlule iintsuku eziyi-7 emva komhla wokuphelelwa lixesha kobulungu -- nokuba imeko yobulungu sele iyi-`expired`.
 
 Misela oku ku-`0` ukuba ufuna ukuvalwa kwangoko emva kokuba ubulungu bungasebenzi.
 
-### 3. Qinisekisa ukuba imeko yobulungu itshintshile ngokwenene
+### 3. Qinisekisa ukuba imeko yobulungu itshintshile ngokwenene {#3-confirm-the-membership-status-has-actually-changed}
 
 Yiya ku-**Ultimate Multisite > Ubulungu** uze ujonge imeko yobulungu obuchaphazelekayo. Ukuba isabonisa `active` nangona umhla wokuphelelwa lixesha sele udlulile, utshintsho lwemeko alukenzeki. Izizathu eziqhelekileyo:
 
@@ -126,7 +126,7 @@ Yiya ku-**Ultimate Multisite > Ubulungu** uze ujonge imeko yobulungu obuchaphaze
 
 - **Umsebenzi we-cron awukasebenzi**: Jonga inyathelo elilandelayo.
 
-### 4. Qinisekisa ukuba i-Action Scheduler iyasebenza
+### 4. Qinisekisa ukuba i-Action Scheduler iyasebenza {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite isebenzisa i-Action Scheduler kwimisebenzi yayo ye-cron. Yiya ku-**Izixhobo > Izenzo ezicwangcisiweyo** kulawulo lwenethiwekhi uze ukhangele:
 
@@ -148,7 +148,7 @@ Ukuqinisekisa ukusebenza okuthembekileyo kwe-cron, misela umsebenzi we-cron wenk
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Jonga iingxaki ze-webhook yesango (ubulungu obuzihlaziyayo)
+### 5. Jonga iingxaki ze-webhook yesango (ubulungu obuzihlaziyayo) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Ukuba ubulungu buzihlaziya ngokuzenzekelayo kwaye urhumo lwesango lurhoxisiwe okanye lusilele, kodwa Ultimate Multisite isalubonisa njenge-`active`:
 
@@ -157,7 +157,7 @@ Ukuba ubulungu buzihlaziya ngokuzenzekelayo kwaye urhumo lwesango lurhoxisiwe ok
 
 Ukuba isango libonisa urhumo njengolurhoxisiweyo kodwa Ultimate Multisite ayibonisi njalo, isaziso se-webhook kusenokwenzeka ukuba silahlekile. Ungatshintsha ngesandla imeko yobulungu ku-**Ultimate Multisite > Ubulungu > [Hlela ubulungu]**.
 
-### 6. Jonga iXesha lobabalo lokuphelelwa lixesha (inqanaba le-cron)
+### 6. Jonga iXesha lobabalo lokuphelelwa lixesha (inqanaba le-cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Ingqwalaselo ye-cron inexesha layo lobabalo (ukungagqibeki: iintsuku eziyi-3) ngaphambi kokumakisha ubulungu njengobuphelelwe lixesha. Oku kwahlukile kwixesha lobabalo lokuvala i-frontend. Ixesha lilonke ngaphambi kokuba isayithi ivalwe linokuba:
 
@@ -165,7 +165,7 @@ Ingqwalaselo ye-cron inexesha layo lobabalo (ukungagqibeki: iintsuku eziyi-3) ng
 
 Umzekelo, ngeesetingi ezingagqibekanga kunye nexesha lobabalo le-frontend leentsuku eziyi-7, kungathatha ukuya kuthi ga kwiintsuku eziyi-10 emva kwe-`date_expiration` ngaphambi kokuba isayithi ivalwe ngokwenene.
 
-### 7. Phelisa ubulungu ngesandla
+### 7. Phelisa ubulungu ngesandla {#7-manually-expire-a-membership}
 
 Ukuba kufuneka uvale isayithi kwangoko ngaphandle kokulinda umjikelo we-cron, ungatshintsha ngesandla imeko yobulungu:
 
@@ -176,7 +176,7 @@ Ukuba kufuneka uvale isayithi kwangoko ngaphandle kokulinda umjikelo we-cron, un
 
 Ukuvalwa kwe-frontend kuya kusebenza xa iphepha lilayishwa ngokulandelayo (kuxhomekeke kwiXesha lobabalo lokuVala i-Frontend kubulungu obuphelelwe lixesha, okanye kwangoko kubulungu oburhoxisiweyo).
 
-## Isishwankathelo
+## Isishwankathelo {#summary}
 
 Umgca wexesha opheleleyo ukusuka kumhla wokuphelelwa lixesha ukuya ekuvalweni kwesayithi:
 
@@ -208,7 +208,7 @@ Kubulungu oburhoxisiweyo, indlela imfutshane:
   Site frontend is blocked immediately
 ```
 
-## Isalathiso sabaphuhlisi
+## Isalathiso sabaphuhlisi {#developer-reference}
 
 Ezi hooks kunye neefilter zilandelayo zikuvumela ukuba wenze ngokwezifiso indlela yokuphelelwa lixesha kunye nokuvimba:
 

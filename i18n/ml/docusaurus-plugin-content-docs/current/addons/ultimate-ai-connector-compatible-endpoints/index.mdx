@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints നിങ്ങളുടെ WordPress multisite network-നെ OpenAI-compatible AI provider APIs-മായി സംയോജിപ്പിക്കുന്നു. ഒന്നിലധികം AI providers-കളെ കോൺഫിഗർ ചെയ്യുക — ഓരോന്നിനും അതിൻ്റേതായ endpoint URL, API key, default model എന്നിവ നൽകുക — കൂടാതെ ഒരു provider ലഭ്യമല്ലാത്തപ്പോൾ ഓട്ടോമാറ്റിക് fallback വഴി requests റൂട്ട് ചെയ്യുക.
 
-## പ്രധാന സവിശേഷതകൾ (Key Features)
+## പ്രധാന സവിശേഷതകൾ (Key Features) {#key-features}
 
 - **മൾട്ടി-പ്രൊവൈഡർ സപ്പോർട്ട് (Multi-provider support)**: ഓരോന്നിനും അതിൻ്റേതായ endpoint URL, API key, default model എന്നിവയോടെ ഒന്നിലധികം AI provider കാർഡുകൾ ചേർക്കാൻ കഴിയും.
 - **ഡ്രാഗ് ചെയ്ത് പുനഃക്രമീകരിക്കാം (Drag-to-reorder)**: ഓരോ കാർഡിലെയും പിടി (grip handle) ഉപയോഗിച്ച് priority അനുസരിച്ച് providers ക്രമീകരിക്കാം; requests ഈ ക്രമത്തിൽ ഉപയോഗിക്കും.
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints നിങ്ങളുടെ WordP
 - **കൂട്ടിച്ചേർക്കുമ്പോൾ ഓട്ടോ-വികസിപ്പിക്കൽ (Auto-expand on add)**: പുതിയ provider കാർഡുകൾ ഓട്ടോമാറ്റിക്കായി വികസിക്കുന്നതിനാൽ നിങ്ങൾക്ക് ഉടൻ തന്നെ വിശദാംശങ്ങൾ പൂരിപ്പിക്കാൻ കഴിയും.
 - **സ്ക്രിപ്റ്റ് കാഷ് ബസ്റ്റിംഗ് (Script cache busting)**: ഏറ്റവും പുതിയ പതിപ്പ് ലോഡ് ചെയ്യുന്നു എന്ന് ഉറപ്പാക്കാൻ, plugin അപ്ഡേറ്റ് ചെയ്യുമ്പോൾ provider scripts-ന് cache-busting നടക്കുന്നു.
 
-## ആവശ്യകതകൾ (Requirements)
+## ആവശ്യകതകൾ (Requirements) {#requirements}
 
 - WordPress 5.3 അല്ലെങ്കിൽ അതിലും ഉയർന്നത്
 - PHP 7.4 അല്ലെങ്കിൽ അതിലും ഉയർന്നത്
 - Ultimate Multisite plugin (active ആയിരിക്കണം)
 - ഒരു OpenAI-compatible API endpoint (സ്വയം ഹോസ്റ്റ് ചെയ്തതോ അല്ലെങ്കിൽ third-party-യുടെതോ)
 
-## ഇൻസ്റ്റാളേഷൻ (Installation)
+## ഇൻസ്റ്റാളേഷൻ (Installation) {#installation}
 
 1. addon ഫയലുകൾ നിങ്ങളുടെ `/wp-content/plugins/` ഡയറക്‌ടറിയിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക.
 2. WordPress-ലെ 'Plugins' മെനു വഴി plugin activate ചെയ്യുക.
 3. addon കോൺഫിഗർ ചെയ്യാൻ **Ultimate Multisite → AI Connector** എന്നതിലേക്ക് പോകുക.
 
-## കോൺഫിഗറേഷൻ (Configuration)
+## കോൺഫിഗറേഷൻ (Configuration) {#configuration}
 
-### മൾട്ടി-പ്രൊവൈഡർ സജ്ജീകരണം (Multi-Provider Setup)
+### മൾട്ടി-പ്രൊവൈഡർ സജ്ജീകരണം (Multi-Provider Setup) {#multi-provider-setup}
 
 കോൺഫിഗറേഷൻ സ്ക്രീനിൽ ഒരു കാർഡ് അടിസ്ഥാനമാക്കിയുള്ള ലേഔട്ടാണ് ഉപയോഗിച്ചിരിക്കുന്നത്. ഇവിടെ ഓരോ കാർഡും ഒരു AI provider-യെ പ്രതിനിധീകരിക്കുന്നു. നിങ്ങൾക്ക് ആവശ്യമുള്ളത്ര providers ചേർക്കാൻ കഴിയും.
 
-#### ഒരു Provider ചേർക്കൽ (Adding a Provider)
+#### ഒരു Provider ചേർക്കൽ (Adding a Provider) {#adding-a-provider}
 
 1. network admin-ൽ **Ultimate Multisite → AI Connector** ലേക്ക് പോകുക.
 2. **Add Provider** ക്ലിക്ക് ചെയ്യുക.
@@ -52,15 +52,15 @@ Ultimate AI Connector for Compatible Endpoints നിങ്ങളുടെ WordP
    - **Default Model** — ഈ provider-നായി default ആയി ഉപയോഗിക്കേണ്ട model identifier (ഉദാഹരണത്തിന്: `gpt-4o`, `mistral-small`)
 5. **Save Settings** ക്ലിക്ക് ചെയ്യുക.
 
-#### ഒരു Provider നീക്കം ചെയ്യൽ (Removing a Provider)
+#### ഒരു Provider നീക്കം ചെയ്യൽ (Removing a Provider) {#removing-a-provider}
 
 ഒരു provider കാർഡിലെയും **Remove** ബട്ടൺ ക്ലിക്ക് ചെയ്ത് അത് ഡിലീറ്റ് ചെയ്യുക. മാറ്റങ്ങൾ പ്രയോഗിക്കാൻ സെറ്റിംഗ്സ് സേവ് ചെയ്യുക.
 
-#### Providers പുനഃക്രമീകരിക്കൽ (Reordering Providers)
+#### Providers പുനഃക്രമീകരിക്കൽ (Reordering Providers) {#reordering-providers}
 
 ഏതെങ്കിലും provider കാർഡിൻ്റെ ഇടതുവശത്തുള്ള പിടി ഐക്കൺ (⣿) വലിച്ചിഴച്ച് (drag) ക്രമം മാറ്റുക. ഈ ക്രമമാണ് fallback priority തീരുമാനിക്കുന്നത്: requests ആദ്യത്തെ provider-ലേക്ക് അയക്കപ്പെടുകയും, ഒരു request പരാജയപ്പെട്ടാൽ അടുത്ത providers-ലേക്ക് fallback ചെയ്യുകയും ചെയ്യും.
 
-### Fallback റൂട്ടിംഗ് (Fallback Routing)
+### Fallback റൂട്ടിംഗ് (Fallback Routing) {#fallback-routing}
 
 പ്രാഥമിക provider-ലേക്ക് അയച്ച request ഒരു timeout, rate limit, അല്ലെങ്കിൽ service outage എന്നിവ കാരണം പരാജയപ്പെട്ടാൽ, കണക്റ്റർ ഓട്ടോമാറ്റിക്കായി ലിസ്റ്റിലെ അടുത്ത provider ഉപയോഗിച്ച് വീണ്ടും ശ്രമിക്കും. ഒരു provider വിജയിക്കുന്നത് വരെ അല്ലെങ്കിൽ എല്ലാ providers-ഉം പരീക്ഷിക്കപ്പെടുന്നതുവരെ ഇത് തുടരും.
 
@@ -72,7 +72,7 @@ Ultimate AI Connector for Compatible Endpoints നിങ്ങളുടെ WordP
 
 fallback എന്നത് calling plugin അല്ലെങ്കിൽ theme-ന് സുതാര്യമാണ് — എത്ര providers പരീക്ഷിച്ചാലും, ഒരു വിജയകരമായ response അല്ലെങ്കിൽ ഒരു final error മാത്രമേ അവർക്ക് ലഭിക്കൂ.
 
-### Provider കോൺഫിഗറേഷൻ റഫറൻസ് (Provider Configuration Reference)
+### Provider കോൺഫിഗറേഷൻ റഫറൻസ് (Provider Configuration Reference) {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ fallback എന്നത് calling plugin അല്ലെങ്കിൽ theme-
 | API Key | Yes | Authentication key for this provider |
 | Default Model | Yes | Model identifier used when no model is specified in the request |
 
-## ട്രബിൾഷൂട്ടിംഗ് (Troubleshooting)
+## ട്രബിൾഷൂട്ടിംഗ് (Troubleshooting) {#troubleshooting}
 
-### providers ഒന്നും ലിസ്റ്റ് ചെയ്തിട്ടില്ല (No providers are listed)
+### providers ഒന്നും ലിസ്റ്റ് ചെയ്തിട്ടില്ല (No providers are listed) {#no-providers-are-listed}
 
 സേവ് ചെയ്ത ശേഷം provider ലിസ്റ്റ് ശൂന്യമാണെങ്കിൽ, താഴെ പറയുന്ന കാര്യങ്ങൾ ഉറപ്പാക്കുക:
 
@@ -91,21 +91,21 @@ fallback എന്നത് calling plugin അല്ലെങ്കിൽ theme-
 - നിങ്ങളുടെ ബ്രൗസർ സെറ്റിംഗ്സ് പേജ് സേവ് ചെയ്യുന്നത് തടഞ്ഞില്ലെന്ന് (JavaScript errors-നായി ബ്രൗസർ console പരിശോധിക്കുക).
 - plugin active ആണെന്നും നിങ്ങൾ network admin സ്ക്രീനിലാണ്യെന്നും.
 
-### എല്ലാ providers-നും requests പരാജയപ്പെടുന്നു (Requests are failing for all providers)
+### എല്ലാ providers-നും requests പരാജയപ്പെടുന്നു (Requests are failing for all providers) {#requests-are-failing-for-all-providers}
 
 - ഓരോ provider-യുടെ endpoint URL നിങ്ങളുടെ സെർവറിൽ നിന്ന് (നിങ്ങളുടെ ബ്രൗസർ പോലെയല്ല) ലഭ്യമാണോ എന്ന് പരിശോധിക്കുക.
 - ഓരോ API key-യും സാധുതയുള്ളതും കാലഹരണപ്പെട്ടിട്ടില്ലെന്നും ഉറപ്പാക്കുക.
 - അവരുടെ dashboard-ൽ provider-യുടെ rate-limit, quota സ്റ്റാറ്റസ് എന്നിവ പരിശോധിക്കുക.
 - കണക്റ്ററിൽ നിന്നുള്ള വിശദമായ error സന്ദേശങ്ങൾ പിടിച്ചെടുക്കാൻ WordPress debug logging (`WP_DEBUG_LOG`) എനേബിൾ ചെയ്യുക.
 
-### fallback-നായി ഒരു provider ഉപയോഗിക്കുന്നില്ല (A provider is not being used for fallback)
+### fallback-നായി ഒരു provider ഉപയോഗിക്കുന്നില്ല (A provider is not being used for fallback) {#a-provider-is-not-being-used-for-fallback}
 
 Drag-to-reorder എന്നത് fallback ക്രമം മാറ്റുന്നു. fallback requests ലഭിക്കുമെന്ന് നിങ്ങൾ പ്രതീക്ഷിക്കുന്ന provider ലിസ്റ്റിൽ ശരിയായ സ്ഥാനത്താണെന്നും അതിൻ്റെ endpoint URL, API key എന്നിവ ശരിയാണെന്നും ഉറപ്പാക്കുക.
 
-### പുതിയ provider കാർഡ് ഓട്ടോമാറ്റിക്കായി വികസിക്കുന്നില്ല (New provider card does not expand automatically)
+### പുതിയ provider കാർഡ് ഓട്ടോമാറ്റിക്കായി വികസിക്കുന്നില്ല (New provider card does not expand automatically) {#new-provider-card-does-not-expand-automatically}
 
 Auto-expand പ്രവർത്തിക്കണമെങ്കിൽ നിങ്ങളുടെ ബ്രൗസറിൽ JavaScript എനേബിൾ ചെയ്തിരിക്കണം. കാർഡ് ക്ലിക്കുചെയ്യുമ്പോൾ വികസിക്കുന്നില്ലെങ്കിൽ, ബ്രൗസർ console-ൽ എന്തെങ്കിലും error ഉണ്ടോ എന്ന് പരിശോധിക്കുക. auto-expand ട്രിഗർ ചെയ്യാതിരിക്കുമ്പോൾ പോലും കാർഡ് ഹെഡർ ക്ലിക്കുചെയ്യുന്നതിലൂടെ കാർഡിൻ്റെ ഉള്ളടക്കം എപ്പോഴും ലഭ്യമാണ്.
 
-## Changelog
+## Changelog {#changelog}
 
 പൂർണ്ണമായ പതിപ്പ് ചരിത്രത്തിനായി [Changelog](./changelog) കാണുക.

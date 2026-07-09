@@ -4,11 +4,11 @@ title: Dejanje - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Sproži se tik preden je nastavljena avtentikacijska piškotek.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Sproži se tik preden je nastavljena avtentikacijska piškotek.
 | $scheme | `string` | Shema avtentikacije. Vrednosti vključujejo 'auth' ali 'secure_auth'. |
 | $token | `string` | Uporabnikov žeton seje, ki se uporabi za ta piškotek. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) v vrstici 124

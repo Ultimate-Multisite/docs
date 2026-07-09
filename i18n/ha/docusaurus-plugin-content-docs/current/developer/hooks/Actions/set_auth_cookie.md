@@ -4,11 +4,11 @@ title: Aiki - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Yana faruwa nan take kafin a saita cookie na tantancewa.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Yana faruwa nan take kafin a saita cookie na tantancewa.
 | $scheme | `string` | Tsarin tantancewa. Darajoji sun haɗa da 'auth' ko 'secure_auth'. |
 | $token | `string` | Token na zaman mai amfani da za a yi amfani da shi don wannan cookie. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Tushe
+### Tushe {#source}
 
 An bayyana a cikin [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) a layi na 124

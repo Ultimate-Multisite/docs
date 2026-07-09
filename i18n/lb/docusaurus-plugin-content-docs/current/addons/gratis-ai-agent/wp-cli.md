@@ -3,11 +3,11 @@ title: WP-CLI-Referenz
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Referenz
+# WP-CLI Referenz {#wp-cli-reference}
 
 Gratis AI Agent liwwert eng `wp gratis-ai-agent` Kommando-Famill fir den Agent ze benchmarken, Fäegkeeten ze verwalten an den Agent-Status vun der Kommandozeil ofzefroen. All Kommandoe verlaangen WP-CLI 2.0 oder méi héich.
 
-## Installatioun
+## Installatioun {#installation}
 
 D'WP-CLI-Kommandoe ginn automatesch registréiert, wann de Plugin aktiv ass. Iwwerpréif mat:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Féiert d'Agent-Capabilities-Benchmark-Suite aus — eng Rei vu komplexen, méistufege Prompten, déi déi komplett Fäegkeetsuewerfläch testen. Benotz dëst, fir d'Modellleeschtung ze bewäerten, AI-Provideren ze vergläichen oder Fäegkeets-Packen ze validéieren, ier se an d'Produktioun ausgerullt ginn.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Optiounen
+### Optiounen {#options}
 
 | Optioun | Beschreiwung |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Ausgabeformat: `table` (Standard), `json`, `csv` |
 | `--save` | D'Benchmark-Resultater an der Datebank späichere fir historesch Vergläicher |
 
-### Beispiller
+### Beispiller {#examples}
 
 Déi komplett Benchmark-Suite mam aktuelle Provider a Modell ausféieren:
 
@@ -57,7 +57,7 @@ Géint e spezifescht Modell ausféieren an d'Resultater späicheren:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Ausgab
+### Ausgab {#output}
 
 De Benchmark gëtt eng Zeil pro Fro mat de folgende Kolonnen aus:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark-Froen
+### Benchmark-Froen {#benchmark-questions}
 
 D'Standard-Suite enthält:
 
@@ -95,11 +95,11 @@ Zousätzlech Froe kënnen iwwer de `gratis_ai_agent_benchmark_questions`-Filter 
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Verwalt installéiert Fäegkeeten a Fäegkeets-Packen.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Lëscht all registréiert Fäegkeeten, hir Quell (Kär oder Pack) an hiren aktuelle Status op.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Luet e Fäegkeets-Pack aus dem Registry erof an aktivéiert en.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Desaktivéiert eng spezifesch Fäegkeet, ouni de Pack ze läschen. Praktesch, fir den Ëmfang vum Agent op enger bestëmmter Websäit anzeschränken.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Aktivéiert eng virdru desaktivéiert Fäegkeet erëm.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Weist déi aktuell Agent-Konfiguratioun an de Konnektivitéitsstatus.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Weist rezent Agent-Aktivitéit aus dem Debug-Log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Setzt den Agent-Zoustand zeréck: läscht injizéiert CSS, läscht vum Agent registréiert CPTen an Taxonomien, setzt global Stiler zeréck, a mécht den Optiouns-Cache vum Agent eidel. Entfernt de Plugin oder seng Astellungen net.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit-Coden
+## Exit-Coden {#exit-codes}
 
 All Kommandoen ginn `0` bei Erfolleg zeréck. Net-null Exit-Coden:
 

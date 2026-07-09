@@ -3,13 +3,13 @@ title: Die bou van 'n aangepaste registrator-integrasie
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Bou 'n Pasgemaakte Registrar-integrasie
+# Bou 'n Pasgemaakte Registrar-integrasie {#building-a-custom-registrar-integration}
 
 Die Domain Seller addon gebruik 'n **Integration Registry**-patroon. Elke registrar is 'n PHP-klas wat `Domain_Selling_Capability` implementeer en homself registreer via die `wu_domain_seller_register_capabilities` aksie-hook.
 
 Hierdie gids wys hoe om 'n pasgemaakte registrar aan te spak.
 
-## Die Interface
+## Die Interface {#the-interface}
 
 Jou klas moet `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` implementeer en `WP_Ultimo\Integrations\Base_Capability_Module` uitbrei.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Opsionele metodes
+### Opsionele metodes {#optional-methods}
 
 Implementeer hierdie om bykomende funksionaliteite oop te sluit. Die addon wyk ondersteuning op via `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementeer hierdie om bykomende funksionaliteite oop te sluit. Die addon wyk o
 | `get_epp_code(string $domain_name): array` | Domein-oordrag (uitgaande) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domein-oordrag (inkomend) |
 
-### Terugwaarde konvensie
+### Terugwaarde konvensie {#return-value-convention}
 
 Alle metodes keer 'n array terug met ten minste 'n `success`-sleutel:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Menslik-leesbare fout'];
 
 ---
 
-## Registreer jou funksionaliteit
+## Registreer jou funksionaliteit {#registering-your-capability}
 
 Registreer jou klas met die `wu_domain_seller_register_capabilities` aksie:
 
@@ -109,7 +109,7 @@ Die eerste argument vir `add_capability()` is die **provider ID** — 'n klein l
 
 ---
 
-## Byvoeg van wagselveld(e) aan die wizard
+## Byvoeg van wagselveld(e) aan die wizard {#adding-credential-fields-to-the-wizard}
 
 Om administrateurs toe te laat om wagsel deur die opstel-wizard in te voer, registreer jou integrasie:
 
@@ -137,7 +137,7 @@ Wagsels word gestoor as netwerkopsies met die veld-ID's as sleutels. Haal dit in
 
 ---
 
-## Hooks vir na-registrasie aksies
+## Hooks vir na-registrasie aksies {#hooks-for-post-registration-actions}
 
 Gebruik hierdie aksies om webhooks, voorsiening, kennisgewings of CRM-opdaterings te ontlok:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logboekregistrasie (Logging)
+## Logboekregistrasie (Logging) {#logging}
 
 Skryf na jou verskaffer-spesifieke logkanaal met `wu_log_add()`:
 

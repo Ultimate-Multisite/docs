@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# บันทึกการเปลี่ยนแปลงของ GoCardless
+# บันทึกการเปลี่ยนแปลงของ GoCardless {#gocardless-changelog}
 
 Version: 1.0.3 - เผยแพร่เมื่อ 2026-05-05
 * แก้ไข: ตอนนี้ระบบจะล้างข้อมูลเว็บไซต์ที่ค้างสถานะ (orphaned pending sites) โดยอัตโนมัติ เมื่อมีการยกเลิกสมาชิก GoCardless ในขณะที่สถานะยังเป็นรอการดำเนินการหรือระงับ

@@ -3,13 +3,13 @@ title: Eng personaliséiert Registrar-Integratioun opbauen
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Eng personaliséiert Registrar-Integratioun bauen
+# Eng personaliséiert Registrar-Integratioun bauen {#building-a-custom-registrar-integration}
 
 Den Domain Seller-Addon benotzt en **Integration Registry**-Muster. All Registrar ass eng PHP-Klass, déi `Domain_Selling_Capability` implementéiert a sech selwer iwwer den `wu_domain_seller_register_capabilities` Action Hook registréiert.
 
 Dëse Guide weist, wéi een e personaliséierte Registrar ubënnt.
 
-## D'Interface
+## D'Interface {#the-interface}
 
 Deng Klass muss `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` implementéieren an `WP_Ultimo\Integrations\Base_Capability_Module` erweideren.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Optional Methoden
+### Optional Methoden {#optional-methods}
 
 Implementéier dës, fir zousätzlech Funktiounen ze spären. Den Addon erkennt Ënnerstëtzung iwwer `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementéier dës, fir zousätzlech Funktiounen ze spären. Den Addon erkennt 
 | `get_epp_code(string $domain_name): array` | Domain-Iwwerdroung (erausgoend) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain-Iwwerdroung (erakommend) |
 
-### Konventioun fir de Réckgabewäert
+### Konventioun fir de Réckgabewäert {#return-value-convention}
 
 All Methode ginn en Array zréck mat op d'mannst engem `success`-Schlëssel:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Deng Capability registréieren
+## Deng Capability registréieren {#registering-your-capability}
 
 Registréier deng Klass mam `wu_domain_seller_register_capabilities` Action:
 
@@ -109,7 +109,7 @@ Dat éischt Argument fir `add_capability()` ass d'**Provider-ID** — e klenge S
 
 ---
 
-## Umeldedonnéeë-Felder an de Wizard bäifügen
+## Umeldedonnéeë-Felder an de Wizard bäifügen {#adding-credential-fields-to-the-wizard}
 
 Fir Adminnen Umeldedonnéeën iwwer de Setup-Wizard aginn ze loossen, registréier deng Integratioun:
 
@@ -137,7 +137,7 @@ Umeldedonnéeë ginn als Netzwierkoptioune gespäichert, mat de Feld-IDen als Sc
 
 ---
 
-## Hooks fir Aktiounen no der Registréierung
+## Hooks fir Aktiounen no der Registréierung {#hooks-for-post-registration-actions}
 
 Benotz dës Actionen, fir Webhooks, Bereetstellung, Notifikatiounen oder CRM-Aktualiséierungen auszeléisen:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Protokolléierung
+## Protokolléierung {#logging}
 
 Schreift an Äre provider-spezifesche Log-Channel mat `wu_log_add()`:
 

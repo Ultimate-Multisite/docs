@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Stöðvaðu botta. Verndaðu tekjur. Engin stillingavandræði.**
 
@@ -15,7 +15,7 @@ Rekurðu multisite-net með sérsniðnum lénum? Þú þekkir vandann: Google re
 
 **Ultimate Multisite: Captcha breytir öllu.**
 
-## Cap Captcha: sjálfhýst vernd sem virkar bara
+## Cap Captcha: sjálfhýst vernd sem virkar bara {#cap-captcha-self-hosted-protection-that-just-works}
 
 Nýi **Cap Captcha** veitandinn okkar gjörbreytir leiknum fyrir multisite-net:
 
@@ -25,7 +25,7 @@ Nýi **Cap Captcha** veitandinn okkar gjörbreytir leiknum fyrir multisite-net:
 * **Ósýnilegt Proof-of-Work** — Notendur leysa útreikningsþraut í bakgrunni. Engin smelli á brunahana, engin pirrandi myndanet.
 * **Létt** — Aðeins 20KB. Hægir ekki á checkoutinu þínu.
 
-## WooCommerce vernd gegn kortaprófun
+## WooCommerce vernd gegn kortaprófun {#woocommerce-card-testing-protection}
 
 Kortaprófunarárásir kosta söluaðila milljarða árlega. Svindlarar nota botta til að staðfesta stolin kreditkort í WooCommerce checkoutinu þínu—þú greiðir úrvinnslugjöldin, þeir fá gild kortanúmer.
 
@@ -35,7 +35,7 @@ Kortaprófunarárásir kosta söluaðila milljarða árlega. Svindlarar nota bot
 * **Samhæft við PayPal Payments** — Virkar hnökralaust með WooCommerce PayPal Payments
 * **Tölfræði í rauntíma** — Sjáðu nákvæmlega hversu margar árásir þú ert að stöðva
 
-## Þarftu enn Google reCAPTCHA eða hCaptcha?
+## Þarftu enn Google reCAPTCHA eða hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
 
 Við sjáum um það. Fullur stuðningur við:
 
@@ -47,14 +47,14 @@ Við sjáum um það. Fullur stuðningur við:
 
 Skiptu á milli veitenda hvenær sem er úr netstillingunum þínum.
 
-## Byggt fyrir skala
+## Byggt fyrir skala {#built-for-scale}
 
 * Stillingar fyrir allt netið með yfirskriftum fyrir hvern vef
 * Tölfræðimælaborð til að fylgjast með vernd
 * Stillanleg öryggisstig (Hratt, Miðlungs, Hámark)
 * Þróunarvænt með útvíkkanlegri veitendaarkitektúr
 
-## Uppsetning
+## Uppsetning {#installation}
 
 1. Hladdu `ultimate-multisite-captcha` upp í `/wp-content/plugins/` möppuna þína
 2. Virkjaðu plugin á netinu
@@ -64,37 +64,37 @@ Cap Captcha virkjast sjálfkrafa—engar stillingar til að stilla, engir API-ly
 
 **Valfrjálst:** Til að nota Google reCAPTCHA eða hCaptcha í staðinn skaltu fara í **Ultimate Multisite → Settings → Captcha** og velja þann veitanda sem þú vilt.
 
-## Algengar spurningar
+## Algengar spurningar {#frequently-asked-questions}
 
-## Þarf ég að stilla eitthvað?
+## Þarf ég að stilla eitthvað? {#do-i-need-to-configure-anything}
 
 Nei! Cap Captcha er virkt sjálfkrafa þegar þú virkjar viðbótina. Allt netið þitt er varið samstundis—engar stillingar til að stilla, engir API-lyklar til að slá inn.
 
-## Þarf ég API-lykla fyrir Cap Captcha?
+## Þarf ég API-lykla fyrir Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
 
 Nei. Cap Captcha er alveg sjálfhýst. Engir ytri reikningar, engin lénaskráning, engin stillingavandræði.
 
-## Mun þetta hægja á checkoutinu mínu?
+## Mun þetta hægja á checkoutinu mínu? {#will-this-slow-down-my-checkout}
 
 Cap Captcha er aðeins 20KB og keyrir proof-of-work áskoranir í bakgrunni. Viðskiptavinirnir þínir munu ekki taka eftir neinni töf.
 
-## Verndar þetta gegn kortaprófunarárásum?
+## Verndar þetta gegn kortaprófunarárásum? {#does-this-protect-against-card-testing-attacks}
 
 Já! Ólíkt hefðbundnum captcha sem vernda aðeins HTML-form, tengist WooCommerce-samþættingin okkar beint inn í Store API til að loka á bottaárásir á API-stigi—þar sem flestar kortaprófunarárásir eiga sér stað.
 
-## Get ég notað mismunandi captcha-veitendur á mismunandi vefjum?
+## Get ég notað mismunandi captcha-veitendur á mismunandi vefjum? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Captcha-veitandinn er stilltur fyrir allt netið, en þú getur aðlagað erfiðleikastillingar eftir þínum þörfum.
 
-## Er þetta GDPR-samhæft?
+## Er þetta GDPR-samhæft? {#is-this-gdpr-compliant}
 
 Cap Captcha er 100% sjálfhýst án þess að gögn séu send til ytri þjónusta. Fyrir Google reCAPTCHA og hCaptcha skaltu yfirfara viðeigandi persónuverndarstefnur þeirra.
 
-## Hraðatakmörkun
+## Hraðatakmörkun {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 kynnir harðan hraðatakmarkara sem verndar netið þitt gegn brute-force og kortaprófunarárásum.
 
-### Hvernig það virkar
+### Hvernig það virkar {#how-it-works}
 
 Hraðatakmarkarinn telur hverja GET- og POST-beiðni á captcha-vörðum flötum:
 
@@ -108,9 +108,9 @@ Hraðatakmarkarinn telur hverja GET- og POST-beiðni á captcha-vörðum flötum
 * **Retry-After** header sem gefur til kynna hvenær á að reyna aftur
 * **Slembin tarpit-bið** (1–5 sekúndur sjálfgefið, harðtakmörkuð við 15 sekúndur) til að hægja á árásaraðilum
 
-### Stillingar
+### Stillingar {#configuration}
 
-#### Tarpit-tímasetning
+#### Tarpit-tímasetning {#tarpit-timing}
 
 Stýrðu slembinni seinkun sem beitt er á hraðatakmarkaðar beiðnir:
 
@@ -119,9 +119,9 @@ Stýrðu slembinni seinkun sem beitt er á hraðatakmarkaðar beiðnir:
 
 Þessar stillingar eru tiltækar í **Ultimate Multisite → Settings → Captcha**.
 
-### Útvíkkanleiki
+### Útvíkkanleiki {#extensibility}
 
-#### IP-hvítlistusía
+#### IP-hvítlistusía {#ip-whitelist-filter}
 
 Undanskildu traust IP-svið frá hraðatakmörkun:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Aðgerð fyrir lokun
+#### Aðgerð fyrir lokun {#pre-block-action}
 
 Keyrðu sérsniðna rökvísi strax áður en hraðatakmörkunarlokun er send:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Greining á IP-tölu client og traustir proxy-þjónar
+## Greining á IP-tölu client og traustir proxy-þjónar {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 kynnir greiningu á IP-tölu client sem þolir fölsun. Aðferðin `Captcha_Core::get_client_ip()` er nú eini sannleiksgjafinn fyrir úthlutun IP-tölu gesta yfir:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 kynnir greiningu á IP-tölu client sem þoli
 * Captcha-veita `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * IP-hösh tölfræði
 
-### Traustlíkan
+### Traustlíkan {#trust-model}
 
 Viðbótin framfylgir ströngu stigveldi fyrir IP-traust:
 
@@ -166,9 +166,9 @@ Viðbótin framfylgir ströngu stigveldi fyrir IP-traust:
    - Beini jafninginn er í lista yfir treysta staðgengla sem stjórnandi hefur stillt
    - Hausinn er þáttaður frá hægri til vinstri, og sleppir treystum/Cloudflare milliliðum
 
-### Stillingar
+### Stillingar {#configuration-1}
 
-#### Traust á Cloudflare-haus
+#### Traust á Cloudflare-haus {#cloudflare-header-trust}
 
 Virkjaðu traust á `CF-Connecting-IP` haus Cloudflare:
 
@@ -178,7 +178,7 @@ Virkjaðu traust á `CF-Connecting-IP` haus Cloudflare:
   - CIDR-bil eru endurnýjuð vikulega í gegnum wp-cron
   - Innbyggða varaleiðin er notuð ef endurnýjun mistekst
 
-#### Stilling treystra staðgengla
+#### Stilling treystra staðgengla {#trusted-proxy-configuration}
 
 Skilgreindu framvarðarstaðgengla og álagsdreifara:
 
@@ -194,14 +194,14 @@ Skilgreindu framvarðarstaðgengla og álagsdreifara:
     198.51.100.50
     ```
 
-#### Sjálfvirk greining við fyrstu virkjun
+#### Sjálfvirk greining við fyrstu virkjun {#first-enable-auto-detection}
 
 Þegar þú virkjar takmörkun á beiðnihraða í fyrsta sinn greinir viðbótin líklega stöðu þína gagnvart Cloudflare og staðgenglum og birtir stjórnandatilkynningu með einum smelli: „Nota greindar stillingar“.
 
 * Viðbótin **yfirskrifar aldrei** vistuðu gildin þín
 * Ef síðari umferð bendir til þess að stillingarnar þínar passi ekki lengur við raunveruleikann (t.d. að Cloudflare hafi breytt CIDR-bilum), birtist ólokanleg misræmistilkynning með ráðlagðri uppfærslu
 
-### Hvers vegna þetta skiptir máli
+### Hvers vegna þetta skiptir máli {#why-this-matters}
 
 Strangt IP-traustlíkan lokar mikilvægri fölsunarleið: beinar beiðnir til upprunaþjóns með fölsuðum `CF-Connecting-IP` haus hefðu áður verið flokkaðar eftir fölsuðu IP-tölunni í stað raunverulega jafningjans. Þetta er sérstaklega mikilvægt fyrir:
 

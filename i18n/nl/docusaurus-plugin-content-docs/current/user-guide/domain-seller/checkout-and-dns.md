@@ -3,13 +3,13 @@ title: Afrekenveld en klant-DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout-veld en DNS-beheer voor klanten
+# Checkout-veld en DNS-beheer voor klanten {#checkout-field-and-customer-dns-management}
 
-## Het checkout-veld Domain Selection
+## Het checkout-veld Domain Selection {#the-domain-selection-checkout-field}
 
 Het veld **Domain Selection** is een checkout-element dat klanten een keuze geeft voor hoe ze het domein van hun site krijgen. Voeg het toe aan elk checkout-formulier om domeinverkoop mogelijk te maken.
 
-### Het veld toevoegen aan een checkout-formulier
+### Het veld toevoegen aan een checkout-formulier {#adding-the-field-to-a-checkout-form}
 
 1. Ga naar **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Open of maak een checkout-formulier
@@ -18,7 +18,7 @@ Het veld **Domain Selection** is een checkout-element dat klanten een keuze geef
 5. Configureer de veldopties (zie hieronder)
 6. Sla het formulier op
 
-### Veldopties
+### Veldopties {#field-options}
 
 **Domeinmodi** — Kies welke tabs de klant ziet. Elke modus kan onafhankelijk worden ingeschakeld of uitgeschakeld:
 
@@ -32,7 +32,7 @@ Het veld **Domain Selection** is een checkout-element dat klanten een keuze geef
 
 **Domeinproduct** — Koppel dit veld optioneel aan een specifiek domeinproduct. Als dit niet is ingesteld, selecteert de addon automatisch het overeenkomende product op basis van de TLD waarnaar de klant zoekt.
 
-### Contactvelden voor registrant
+### Contactvelden voor registrant {#registrant-contact-fields}
 
 Wanneer een klant de tab **Register New Domain** selecteert, voegt het checkout-formulier inline contactvelden voor de registrant toe:
 
@@ -43,11 +43,11 @@ Wanneer een klant de tab **Register New Domain** selecteert, voegt het checkout-
 
 Deze zijn vereist door alle registrars en worden gevalideerd voordat de registratie-API-aanroep wordt gedaan. Telefoonnummers worden automatisch geformatteerd naar het internationale formaat `+CC.NNN` dat registrars verwachten.
 
-### Automatisch gegenereerde site-URL
+### Automatisch gegenereerde site-URL {#auto-generated-site-url}
 
 Wanneer een klant een domein registreert of koppelt, wordt het site-URL-veld automatisch ingevuld met het gekozen domein. Klanten hoeven geen apart URL-veld in te vullen.
 
-### Zoekgedrag
+### Zoekgedrag {#search-behaviour}
 
 - Domeinbeschikbaarheid wordt in realtime met AJAX gecontroleerd terwijl de klant typt
 - Alternatieve TLD-suggesties worden getoond wanneer het gewenste domein niet beschikbaar is
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## DNS-beheer voor klanten
+## DNS-beheer voor klanten {#customer-dns-management}
 
 Klanten kunnen DNS-records voor hun geregistreerde domeinen beheren vanaf de pagina **My Account**, onder de vermelding van hun domein.
 
-### Ondersteunde recordtypen
+### Ondersteunde recordtypen {#supported-record-types}
 
 | Type | Gebruik |
 |---|---|
@@ -91,11 +91,11 @@ Klanten kunnen DNS-records voor hun geregistreerde domeinen beheren vanaf de pag
 | **MX** | Stel mail-exchange-server in |
 | **TXT** | Voeg SPF-, DMARC-, verificatie- of andere tekstrecords toe |
 
-### Welke providers ondersteunen DNS-beheer?
+### Welke providers ondersteunen DNS-beheer? {#which-providers-support-dns-management}
 
 DNS-beheer (records toevoegen, bewerken, verwijderen) is beschikbaar met **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** en **Openprovider**. **Hostinger**-domeinen kunnen nameservers bijwerken via Domain Seller; DNS-records voor gehoste domeinen worden beheerd door de core Hostinger domeinkoppeling-integratie. Namecheap-, GoDaddy- en NameSilo-domeinen tonen status- en vervalinformatie, maar DNS moet rechtstreeks in het configuratiescherm van de registrar worden beheerd.
 
-### Standaard DNS-records
+### Standaard DNS-records {#default-dns-records}
 
 Je kunt standaard DNS-records configureren die automatisch worden toegepast wanneer een domein wordt geregistreerd. Ga naar **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Beheerder: DNS bekijken en bewerken
+### Beheerder: DNS bekijken en bewerken {#admin-viewing-and-editing-dns}
 
 Netwerkbeheerders kunnen DNS-records voor elk klantdomein bekijken en bewerken vanaf de bewerkingspagina van het domein in **Network Admin › Ultimate Multisite › Domains**.

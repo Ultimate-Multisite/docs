@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Email
+# Email {#emails}
 
 Addon Ultimate Multisite: Emails cho phép chủ sở hữu mạng cấp phát và quản lý tài khoản email của khách hàng cùng với các trang và tư cách thành viên. Phiên bản 1.1.0 bổ sung quản lý tài khoản email dành cho khách hàng, đăng nhập một lần vào webmail, hỗ trợ trình chuyển tiếp CyberPanel và các cải tiến cấp phát tại thời điểm thanh toán.
 
-## Tính năng chính
+## Tính năng chính {#key-features}
 
 * **Tiện ích tài khoản email của khách hàng**: Khách hàng có thể tạo và quản lý hộp thư từ trang tài khoản của họ sau khi có tư cách thành viên email đang hoạt động.
 * **Webmail SSO và liên kết ma thuật**: Khách hàng có thể mở webmail trực tiếp từ trang tài khoản bằng xác thực một cú nhấp khi nhà cung cấp hỗ trợ.
@@ -20,14 +20,14 @@ Addon Ultimate Multisite: Emails cho phép chủ sở hữu mạng cấp phát v
 * **Trình chuyển tiếp CyberPanel**: Các mạng dùng CyberPanel có thể tạo và quản lý trình chuyển tiếp email như một phần của luồng dịch vụ email.
 * **Cài đặt nhận biết nhà cung cấp**: Trang cài đặt lọc nhà cung cấp theo các tích hợp đang hoạt động và đã cấu hình, để quản trị viên chỉ thấy các tùy chọn có thể sử dụng.
 
-## Yêu cầu
+## Yêu cầu {#requirements}
 
 * Ultimate Multisite 2.0.0 trở lên
 * Cài đặt WordPress Multisite
 * Ít nhất một tích hợp nhà cung cấp email đã được cấu hình
 * Thông tin xác thực API của nhà cung cấp có quyền tạo hộp thư, thay đổi mật khẩu và phát hành liên kết truy cập webmail khi được hỗ trợ
 
-## Cài đặt
+## Cài đặt {#installation}
 
 1. Tải các tệp plugin lên `/wp-content/plugins/ultimate-multisite-emails`.
 2. Kích hoạt addon trên toàn mạng từ **Plugins** trong khu vực quản trị mạng WordPress.
@@ -35,7 +35,7 @@ Addon Ultimate Multisite: Emails cho phép chủ sở hữu mạng cấp phát v
 4. Bật các tích hợp nhà cung cấp email mà bạn muốn khách hàng sử dụng.
 5. Lưu cài đặt, sau đó kiểm tra việc tạo tài khoản với một khách hàng không thuộc môi trường sản xuất hoặc trang staging.
 
-## Luồng bán Email hoạt động như thế nào
+## Luồng bán Email hoạt động như thế nào {#how-the-email-seller-flow-works}
 
 Việc bán email có hai lớp riêng biệt:
 
@@ -53,7 +53,7 @@ Trong quá trình thanh toán, addon tạo hoặc kích hoạt **tư cách thàn
 5. Bảng **Tài khoản Email** xuất hiện cho tư cách thành viên email đang hoạt động đó.
 6. Khách hàng nhấp **Tạo Account**, nhập phần cục bộ chẳng hạn như `info`, đặt mật khẩu và addon tạo `info@their-domain.com` tại nhà cung cấp đã cấu hình.
 
-## Cấu hình một sản phẩm Email
+## Cấu hình một sản phẩm Email {#configure-an-email-product}
 
 Tạo một sản phẩm email cho mỗi gói email mà bạn muốn bán hoặc tặng. Nếu bạn mới thiết lập sản phẩm, hãy bắt đầu với [Tạo sản phẩm đăng ký đầu tiên của bạn](../../user-guide/configuration/creating-your-first-subscription-product) rồi quay lại đây để xem các cài đặt dành riêng cho email.
 
@@ -67,7 +67,7 @@ Tạo một sản phẩm email cho mỗi gói email mà bạn muốn bán hoặc
 
 Chỉ các nhà cung cấp đã được bật và cấu hình đầy đủ trên trang **Integrations** mới xuất hiện trong bộ chọn nhà cung cấp. Nếu bộ chọn trống, hãy cấu hình và kiểm tra nhà cung cấp trước.
 
-## Thêm Email vào Thanh toán
+## Thêm Email vào Thanh toán {#add-email-to-checkout}
 
 Sản phẩm email thường được cung cấp như addon cho một gói trang. Xem [Biểu mẫu thanh toán](../../user-guide/configuration/checkout-forms) để biết quy trình tổng quát của trình chỉnh sửa thanh toán.
 
@@ -79,7 +79,7 @@ Sản phẩm email thường được cung cấp như addon cho một gói trang
 
 Tên miền email được lấy từ tên miền trang của khách hàng. Khách hàng không nhập tên miền email ở bước sản phẩm email.
 
-## Quản lý Email trong tài khoản khách hàng
+## Quản lý Email trong tài khoản khách hàng {#customer-account-email-management}
 
 Phiên bản 1.1.0 bổ sung tiện ích quản lý email vào trang tài khoản khách hàng. Sử dụng tiện ích này khi khách hàng nên tự phục vụ việc tạo và bảo trì hộp thư cho trang của riêng họ.
 
@@ -94,7 +94,7 @@ Tiện ích sử dụng hệ thống hiện tại trên trang tài khoản của
 
 Nếu khách hàng không thấy bảng email, hãy kiểm tra rằng họ có **active Email product membership**, membership đó đã được liên kết với một tên miền trang, và sản phẩm đã có provider được cấu hình.
 
-## Cấp cho Khách hàng một Gói Email Miễn phí
+## Cấp cho Khách hàng một Gói Email Miễn phí {#giving-a-customer-a-free-email-plan}
 
 Để cấp email cho khách hàng mà không tính phí, trước tiên hãy cấp **email entitlement**, sau đó tạo hoặc để khách hàng tạo hộp thư.
 
@@ -106,7 +106,7 @@ Các tùy chọn được khuyến nghị:
 
 Nếu bạn muốn khách hàng tự quản lý hộp thư từ trang tài khoản, hãy đảm bảo họ có email membership đang hoạt động cho tên miền. Một hộp thư provider được tạo thủ công mà không có membership đó vẫn có thể tồn tại, nhưng khách hàng có thể không thấy bảng email tự phục vụ cho hộp thư đó.
 
-## Tài khoản do Admin Tạo và "Không có Số Đơn hàng"
+## Tài khoản do Admin Tạo và "Không có Số Đơn hàng" {#admin-created-accounts-and-no-order-number}
 
 Trang quản trị **Email Accounts** tạo hoặc chỉnh sửa một hộp thư provider. Đây không phải là bước đầu tiên để bán hoặc cấp một gói email.
 
@@ -122,7 +122,7 @@ Thay vào đó, hãy dùng thứ tự thao tác này:
 
 Nếu bạn chỉ cần tạo một hộp thư provider cho khách hàng và không cần quản lý tự phục vụ trên trang tài khoản, tài khoản do admin tạo có thể là đủ. Nếu bạn muốn khách hàng thấy và quản lý nó trong Ultimate Multisite, hãy tạo cả email membership.
 
-## Webmail SSO và Đăng nhập bằng Magic-Link
+## Webmail SSO và Đăng nhập bằng Magic-Link {#webmail-sso-and-magic-link-login}
 
 Webmail SSO cung cấp cho khách hàng một hành động **Open webmail** trực tiếp từ trang tài khoản. Khi được provider đang hoạt động hỗ trợ, addon yêu cầu một URL truy cập ngắn hạn và chuyển hướng khách hàng vào webmail mà không yêu cầu họ sao chép thông tin đăng nhập hộp thư.
 
@@ -134,7 +134,7 @@ Hành vi của provider có thể khác nhau:
 
 Chỉ bật quyền truy cập webmail cho các provider mà bạn đã cấu hình thông tin xác thực API bắt buộc. Nếu hành động bị thiếu cho một provider, trước tiên hãy xác nhận provider đó đang hoạt động, đã được cấu hình, và hỗ trợ liên kết đăng nhập webmail.
 
-## Cấp phát khi Checkout
+## Cấp phát khi Checkout {#checkout-provisioning}
 
 Addon cấp phát **ngữ cảnh membership** email trong quá trình checkout. Nó ghi lại provider, giới hạn tài khoản, dung lượng, và tên miền trang để khách hàng có thể tạo tên hộp thư của riêng họ từ trang tài khoản sau khi mua.
 
@@ -148,15 +148,15 @@ Lộ trình triển khai được khuyến nghị:
 
 Nếu cấp phát thất bại, tài khoản khách hàng và membership vẫn có thể tồn tại trong khi email membership hoặc hộp thư provider cần quản trị viên theo dõi xử lý. Hãy kiểm tra nhật ký hoạt động Ultimate Multisite và nhật ký provider trước khi thử lại.
 
-## Bộ chuyển tiếp Email CyberPanel
+## Bộ chuyển tiếp Email CyberPanel {#cyberpanel-email-forwarders}
 
 Đối với các mạng được hỗ trợ bởi CyberPanel, phiên bản 1.1.0 bổ sung hỗ trợ bộ chuyển tiếp email. Dùng bộ chuyển tiếp khi khách hàng cần các địa chỉ như `info@customer-domain.test` để chuyển hướng thư đến một hộp thư đến khác mà không cần tạo hộp thư đầy đủ.
 
 Trước khi cung cấp bộ chuyển tiếp, hãy xác nhận rằng tích hợp CyberPanel đã được cấu hình và có thể truy cập. Xem hướng dẫn [Tích hợp CyberPanel](../../user-guide/administration/cyberpanel-integration) để biết host, username, password, và hằng số package bắt buộc.
 
-## Nhật ký thay đổi
+## Nhật ký thay đổi {#changelog}
 
-### Phiên bản 1.1.0 - Phát hành vào 2026-05-05
+### Phiên bản 1.1.0 - Phát hành vào 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Mới: Webmail SSO và đăng nhập bằng magic-link — khách hàng có thể truy cập webmail trực tiếp từ Account của họ với xác thực một lần nhấp.
 * Mới: Đã thêm chức năng đổi mật khẩu vào tiện ích quản lý tài khoản email.
@@ -170,28 +170,28 @@ Trước khi cung cấp bộ chuyển tiếp, hãy xác nhận rằng tích hợ
 * Sửa: Đã loại bỏ spam nhật ký theo từng yêu cầu khỏi quá trình khởi tạo Email_Account_Manager.
 * Cải thiện: Trang cài đặt hiện lọc để chỉ hiển thị các nhà cung cấp email đang hoạt động và đã được cấu hình.
 
-## Câu hỏi thường gặp
+## Câu hỏi thường gặp {#frequently-asked-questions}
 
-### Khách hàng có thể tự tạo tài khoản email của họ không?
+### Khách hàng có thể tự tạo tài khoản email của họ không? {#can-customers-create-their-own-email-accounts}
 
 Có. Khi khách hàng có một gói thành viên email đang hoạt động cho một tên miền và sản phẩm cho phép thêm tài khoản, khách hàng có thể tạo và quản lý hộp thư của riêng họ từ trang Account.
 
-### Mọi nhà cung cấp đều hỗ trợ webmail SSO không?
+### Mọi nhà cung cấp đều hỗ trợ webmail SSO không? {#does-every-provider-support-webmail-sso}
 
 Không. Hỗ trợ SSO và magic-link phụ thuộc vào nhà cung cấp email đang hoạt động. Các nhà cung cấp không có API liên kết truy cập vẫn có thể hỗ trợ tạo hộp thư và thay đổi mật khẩu.
 
-### Quản trị viên có thể tạo tài khoản email cho khách hàng không?
+### Quản trị viên có thể tạo tài khoản email cho khách hàng không? {#can-administrators-create-email-accounts-for-customers}
 
 Có. Quản trị viên có thể tạo tài khoản email từ giao diện quản trị, bao gồm đặt mật khẩu ban đầu khi tạo tài khoản. Đối với quản lý tự phục vụ của khách hàng, cũng hãy đảm bảo khách hàng có một gói thành viên email đang hoạt động cho tên miền.
 
-### Tôi có thể tặng miễn phí một tài khoản email không?
+### Tôi có thể tặng miễn phí một tài khoản email không? {#can-i-give-an-email-account-away-for-free}
 
 Có. Tạo một sản phẩm Email miễn phí/giá bằng không và thêm nó làm gói thành viên đang hoạt động cho khách hàng, hoặc để khách hàng hoàn tất thanh toán với mức giảm giá 100%. Sau khi gói thành viên email tồn tại, khách hàng hoặc quản trị viên có thể tạo hộp thư thực tế.
 
-### Tại sao việc gán tài khoản email lại yêu cầu số đơn hàng?
+### Tại sao việc gán tài khoản email lại yêu cầu số đơn hàng? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Trường Membership tra cứu một gói thành viên Ultimate Multisite hiện có theo số tham chiếu/đơn hàng của nó. Nếu khách hàng không mua sản phẩm email và bạn chưa tạo thủ công một gói thành viên email, sẽ không có gói thành viên/đơn hàng email nào để gán. Hãy tạo gói thành viên email trước, sau đó tạo hoặc gán hộp thư.
 
-### Trình chuyển tiếp có giống hộp thư không?
+### Trình chuyển tiếp có giống hộp thư không? {#are-forwarders-the-same-as-mailboxes}
 
 Không. Hộp thư lưu trữ thư và có thông tin đăng nhập. Trình chuyển tiếp chuyển hướng thư đến một địa chỉ khác và không cung cấp hộp thư đến riêng.

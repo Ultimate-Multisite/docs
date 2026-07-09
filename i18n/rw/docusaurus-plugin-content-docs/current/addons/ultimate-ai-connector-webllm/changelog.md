@@ -3,9 +3,9 @@ title: Urutonde rw’impinduka rwa Ultimate AI Connector ya WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Changelog
+# Ultimate AI Connector for WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Verisiyo 1.1.0 — Yasohotse ku wa 2026-04-09
+## Verisiyo 1.1.0 — Yasohotse ku wa 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Gishya: Akadirishya k'ikiganiro kareremba gafite ikimenyetso cy'imiterere cya admin-bar — umukoresha wese winjiye ashobora guha amabwiriza LLM yo ku ruhande rwa browser ako kanya avuye kuri front end.
 * Gishya: SharedWorker runtime — engine ya MLC ubu ikorera muri SharedWorker kugira ngo tabs nyinshi zisangire session imwe ya GPU aho kuyirwanira.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Gukosora: Guhuza WebLLM na filter ya wpai_preferred_text_models kugira ngo feature ya AI Experiments iyobore kuri engine ya browser igihe model yagenwe.
 * Byanonosowe: Gukemura cache-busting, kunoza content normalisation, n'ibikosorwa bya hardware-reference byagaragaye mu igerageza rya end-to-end.
 
-## Verisiyo 1.0.0 — Isohoka rya mbere
+## Verisiyo 1.0.0 — Isohoka rya mbere {#version-100--initial-release}

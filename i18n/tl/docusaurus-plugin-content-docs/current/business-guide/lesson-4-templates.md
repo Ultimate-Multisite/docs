@@ -3,15 +3,15 @@ title: 'Aralin 4: Pagbuo ng mga Template para sa Partikular na Larangan'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Aralin 4: Pagbuo ng mga Niche Template
+# Aralin 4: Pagbuo ng mga Niche Template {#lesson-4-building-niche-templates}
 
 Ang mga template ang pinakapuso ng iyong niche value proposition. Ang may-ari ng fitness studio na nag-sign up at nakakita ng site na mukhang fitness website na agad -- may mga iskedyul ng klase, profile ng trainer, at tamang imagery -- ay mas malamang na manatili kaysa sa makakakita ng blank canvas.
 
-## Saan Tayo Huminto
+## Saan Tayo Huminto {#where-we-left-off}
 
 Mayroon na tayong gumaganang FitSite network na may Ultimate Multisite na naka-install at naka-configure. Ngayon bubuuin natin ang mga template na magpaparamdam na ang FitSite ay sadyang ginawa para sa mga fitness business.
 
-## Bakit Mahalaga ang mga Niche Template
+## Bakit Mahalaga ang mga Niche Template {#why-niche-templates-matter}
 
 Pinipilit ng mga generic template ang iyong mga customer na gawin ang mahirap na trabaho: alamin kung anong mga pahina ang kailangan nila, anong istruktura ng content ang gumagana, at paano ito gawing tama ang hitsura para sa kanilang industriya. Tinatanggal ng mga niche template ang hadlang na iyon.
 
@@ -24,11 +24,11 @@ Dapat makita ng may-ari ng fitness studio na nag-sign up sa FitSite ang:
 
 Pinupunan nila ang kanilang mga detalye. Hindi sila nagsisimula mula sa wala.
 
-## Pagpaplano ng Iyong mga Template
+## Pagpaplano ng Iyong mga Template {#planning-your-templates}
 
 Bago bumuo, magpasya kung anong mga template ang iaalok. Para sa FitSite, gagawa tayo ng tatlo:
 
-### Template 1: Studio Essential
+### Template 1: Studio Essential {#template-1-studio-essential}
 
 Para sa maliliit na studio at personal trainer.
 
@@ -39,7 +39,7 @@ Para sa maliliit na studio at personal trainer.
 - Pahinang **Contact** na may mapa ng lokasyon at form
 - **Malinis at modernong design** na may color scheme na angkop sa fitness
 
-### Template 2: Gym Pro
+### Template 2: Gym Pro {#template-2-gym-pro}
 
 Para sa mga established gym na may mas maraming serbisyo.
 
@@ -50,7 +50,7 @@ Para sa mga established gym na may mas maraming serbisyo.
 - Seksyong **Testimonials** sa homepage
 - Mga opsyon para sa **mas kapansin-pansing branding**
 
-### Template 3: Fitness Chain
+### Template 3: Fitness Chain {#template-3-fitness-chain}
 
 Para sa mga operasyon na may maraming lokasyon.
 
@@ -60,17 +60,17 @@ Para sa mga operasyon na may maraming lokasyon.
 - **Sentralisadong branding** na may mga detalyeng partikular sa lokasyon
 - **Staff directory** sa iba’t ibang lokasyon
 
-## Pagbuo ng Template Site
+## Pagbuo ng Template Site {#building-a-template-site}
 
 Sa Ultimate Multisite, ang template ay simpleng isang WordPress site na naka-configure ayon sa gusto mong maging hitsura ng mga bagong site ng customer. Narito kung paano gumawa ng isa:
 
-### Hakbang 1: Gumawa ng Template Site
+### Hakbang 1: Gumawa ng Template Site {#step-1-create-the-template-site}
 
 1. Pumunta sa **Sites > Add New** sa iyong network admin
 2. Gumawa ng site na pinangalanang `template-studio-essential`
 3. Ang site na ito ang magiging working canvas mo
 
-### Hakbang 2: I-install at I-configure ang Theme
+### Hakbang 2: I-install at I-configure ang Theme {#step-2-install-and-configure-the-theme}
 
 Lumipat sa dashboard ng template site at:
 
@@ -82,7 +82,7 @@ Lumipat sa dashboard ng template site at:
 Pumili ng theme na sapat ang flexibility para magmukhang maganda para sa fitness ngunit hindi sobrang komplikado na hindi na ito kayang pamahalaan ng iyong mga customer. Maganda ang mga theme tulad ng Astra, GeneratePress, o Kadence dahil lightweight, customizable, at mahusay ang support ng mga ito.
 :::
 
-### Hakbang 3: Gumawa ng mga Pahina
+### Hakbang 3: Gumawa ng mga Pahina {#step-3-create-the-pages}
 
 Buuin ang bawat pahina gamit ang:
 
@@ -92,7 +92,7 @@ Buuin ang bawat pahina gamit ang:
 
 Gawing instructional ang placeholder content kung maaari. Sa halip na generic na filler text, magsulat ng content tulad ng: "Palitan ito ng maikling paglalarawan ng iyong studio at kung ano ang nagpap espesyal dito. Banggitin ang iyong training philosophy, mga taon ng karanasan, o kung ano ang maaaring asahan ng mga client."
 
-### Hakbang 4: I-configure ang mga Plugin
+### Hakbang 4: I-configure ang mga Plugin {#step-4-configure-plugins}
 
 I-install at i-activate ang mga plugin na kailangan ng mga fitness studio:
 
@@ -100,7 +100,7 @@ I-install at i-activate ang mga plugin na kailangan ng mga fitness studio:
 - Contact form plugin
 - SEO plugin (pre-configured na may mga default na may kaugnayan sa fitness)
 
-### Hakbang 5: Markahan Bilang Template
+### Hakbang 5: Markahan Bilang Template {#step-5-mark-as-template}
 
 1. Pumunta sa **Ultimate Multisite > Sites**
 2. I-edit ang template site
@@ -108,7 +108,7 @@ I-install at i-activate ang mga plugin na kailangan ng mga fitness studio:
 
 Ulitin ang prosesong ito para sa bawat template na gusto mong ialok.
 
-## Checklist ng Kalidad ng Template
+## Checklist ng Kalidad ng Template {#template-quality-checklist}
 
 Bago gawing available ang template, tiyakin na:
 
@@ -121,7 +121,7 @@ Bago gawing available ang template, tiyakin na:
 - [ ] Walang sirang link o nawawalang asset
 - [ ] Katanggap-tanggap ang bilis ng page load
 
-## Ang FitSite Network Sa Ngayon
+## Ang FitSite Network Sa Ngayon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Ang Binuo Natin sa Araling Ito
+## Ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Tatlong template na partikular sa niche** na dinisenyo para sa iba’t ibang laki ng fitness business
 - **Content at imagery na angkop sa fitness** na nagpaparamdam na ang platform ay sadyang ginawa para sa layunin nito

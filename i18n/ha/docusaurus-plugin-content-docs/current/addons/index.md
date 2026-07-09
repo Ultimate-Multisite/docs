@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ƙarin Fasali na Ultimate Multisite
+# Ƙarin Fasali na Ultimate Multisite {#ultimate-multisite-addons}
 
 Ƙarin fasali suna faɗaɗa Ultimate Multisite da ƙarin siffofi da haɗe-haɗe. Yawancin ƙarin fasali ana biyan su kuma ana iya saya daga [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Shigarwa
+## Shigarwa {#installation}
 
 Ana iya shigar da ƙarin fasali ta hanyoyi biyu:
 
 1. **Ta Shafin Ƙarin Fasali** -- Je zuwa shafin sarrafa ƙarin fasali na shafinku a cikin gudanarwar WordPress
 2. **Saukarwa da Hannu** -- Saukar daga [asusunku](https://ultimatemultisite.com/my-account/downloads/) sannan ku ɗora ta hanyar Filagins > Ƙara Sabo
 
-## Ƙarin Fasali da Ake Da Su
+## Ƙarin Fasali da Ake Da Su {#available-addons}
 
 | Ƙarin Fasali | Bayani |
 |-------|-------------|

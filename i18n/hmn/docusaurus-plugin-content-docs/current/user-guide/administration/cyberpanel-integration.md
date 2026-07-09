@@ -3,25 +3,25 @@ title: CyberPanel Integration
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration
+# CyberPanel Integration {#cyberpanel-integration}
 
 Khuas neeg tshawb thav tshawb hawm tshawb ua li cas. Kuv yuav tshawb txog ti kuv yuav tshawb qhia txog ti koj yuav tshawb qhia cas rau Ultimate Multisite CyberPanel integration, uas yuav tsim kom domain mapped hauv koj cov neeg chaw (network) yuav tsim kom tau hauv CyberPanel li virtual host autonoom (automatic) ( thiab txhua yam yuav tsim kom tso cai loss/tso cai tshiab), thiab muaj kev tsim SSL auto-provisioning los ntawm Let's Encrypt.
 
-## Qhov uas nws ua tau
+## Qhov uas nws ua tau {#what-it-does}
 
 - Tha domain hauv Ultimate Multisite, integration yuav raug tawm CyberPanel API rau tsim virtual host rau domain ntawd.
 - Tha koj tshawb qhia (mapping) domain tso cai loss/tso cai tshiab, integration yuav raug tawm API los tso cai thov virtual host uas hnyav.
 - Tha auto-SSL tau, integration yuav tsim SSL certificate los ntawm Let's Encrypt txhua yam hauv kauws li thaum virtual host tau tsim.
 - Tsis txhob tsim/tso cai alias `www.` lossis yog tsis tsim depending peb thiaj li cas koj ua "Auto-create www subdomain" setting hauv Domain Mapping settings.
 
-## Cov qhov uas yuav tsum tsim (Prerequisites)
+## Cov qhov uas yuav tsum tsim (Prerequisites) {#prerequisites}
 
 - CyberPanel instance los ntawm vajah (v2.3 lossis tshiab tshaj) uas koj WordPress server no raug tau thov tau.
 - Website muaj lom hauv CyberPanel uas raug tsim root network WordPress koj yeej. Integration yuav tsim virtual host tshiab rau server no.
 - CyberPanel API access tau. Authentication yog koj username thiab password ntawm CyberPanel admin.
 - Cov DNS records rau cov domain mapped yuav tsum raug tau thov tau rau IP address ntawm koj server hauv peb tsis muaj kev tsim SSL lossis tso cai certificate uas zoo.
 
-## Cov tso cai (Requirements)
+## Cov tso cai (Requirements) {#requirements}
 
 Cov constant sau no yuav tsum tsim hauv koj `wp-config.php` file:
 

@@ -3,11 +3,11 @@ title: Ho na le litlhahlo tsa ho tsamaea le lits'e mo le system emails
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ho Fana a Emails ea Setso
+# Ho Fana a Emails ea Setso {#managing-system-emails}
 
 Ultimate Multisite e fana le emails e fapaneng tsa setso ho taba joalo ka lipa la tsamaiso, litswalo tsa khotso (confirmations), le litšomo tsa tšepo (receipts) le liphletso tsa bohloko. U ka u rata ho fetola templates ea emails ho fetolela li-brand la hau.
 
-## Ho Hlalosa Emails ea Setso
+## Ho Hlalosa Emails ea Setso {#viewing-system-emails}
 
 Hloka **Ultimate Multisite → Settings** u leka ho fihla tab ea **Emails** ho bona sethelo sa emails.
 
@@ -21,7 +21,7 @@ U ka u fetola templates e kholo ea email ka ho sebelisa editor ea system email:
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Ho Ikhupha Templates e Ntlha ea Email
+## Ho Ikhupha Templates e Ntlha ea Email {#importing-new-email-templates}
 
 Lefo la Ultimate Multisite le versions tsotlhe le add-ons e ntlha e ka tšoa litlhaloso tse ntshwago tsa email. Ho go thusa ho se le liphatso (conflicts), litlhaloso tse ntlha li ka fana ka tsela ya mo thuto — o tshwanetse ho li importela manually.
 
@@ -32,7 +32,7 @@ Ho importela litlhaloso tse ntlha:
 3. Tshegela (Toggle) oona option ya **Import Emails** ho bona litlhaloso tse di fetileng
 4. Select litlhaloso tsa hau o batlang ho importela le re confirm
 
-## Ho Resetting Litlhaloso tsa Email
+## Ho Resetting Litlhaloso tsa Email {#resetting-email-templates}
 
 Ha u fetileng email template le o batla ho letha mo thuto (default content), o na le dikgomo tse duo:
 

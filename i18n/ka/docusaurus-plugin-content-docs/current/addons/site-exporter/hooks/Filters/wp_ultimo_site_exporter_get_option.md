@@ -4,11 +4,11 @@ title: ფილტრი - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# ფილტრი: wp_ultimo_site_exporter_get_option
+# ფილტრი: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 აბრუნებს slugfied ქსელის პარამეტრის მნიშვნელობას.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | პარამეტრის სახელი. |
 | $default | `mixed` | ნაგულისხმევი მნიშვნელობა. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 1.9.6
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126)-ში, ხაზზე 126
 
 
-## აბრუნებს
+## აბრუნებს {#returns}
 slugfield ქსელის პარამეტრის მნიშვნელობას.

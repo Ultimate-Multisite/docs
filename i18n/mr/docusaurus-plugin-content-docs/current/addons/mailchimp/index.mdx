@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: Mailchimp Integration
 
 तुमच्या Multisite Ultimate नेटवर्कला तुमच्या Mailchimp शी जोडा. तुम्ही विशिष्ट प्लॅन्स (plans) ला Mailchimp Lists शी लिंक करू शकता आणि साइनअप करताना आपोआप सबस्क्रायबर्स (subscribers) त्या लिस्टमध्ये जोडले जातील.
 
-## Installation
+## Installation {#installation}
 
 1. 'ultimate-multisite-mailchimp' हे फाइल '/wp-content/plugins/' डिरेक्टरीमध्ये अपलोड करा.
 2. तुमच्या WordPress Network Admin मधील 'Plugins' मेनूद्वारे प्लगइन ॲक्टिव्हेट करा.
 
-## Usage Guide
+## Usage Guide {#usage-guide}
 
 आमच्या Ultimate Multisite: MailChimp Integration Add-on वापरून सबस्क्रायबर्सचे ईमेल तुमच्या MailChimp लिस्ट्सशी सिंक (sync) करणे खूप सोपे आहे. हे ट्युटोरियल तुम्हाला सर्व काही सेट करण्यासाठी मदत करेल!
 
-## Getting an API key
+## Getting an API key {#getting-an-api-key}
 
 विविध सेटिंग्जमध्ये जाण्यापूर्वी, आम्हाला एक MailChimp API key लागेल. यामुळे Ultimate Multisite ला MailChimp API शी संवाद साधता येईल, जेणेकरून ते लिस्ट्स, ग्रुप्स (groups) मिळवू शकेल आणि वापरकर्ते साइनअप झाल्यावर ईमेल ॲड्रेस त्या लिस्ट्स आणि ग्रुप्समध्ये जोडू शकेल.
 
@@ -32,7 +32,7 @@ Multisite Ultimate: Mailchimp Integration
 
 _तुमचा MailChimp API key येथे जोडा_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
 
-## Integration Mode
+## Integration Mode {#integration-mode}
 
 MailChimp Integration add-on मध्ये दोन “integration modes” (एकात्रीकरण मोड) आहेत, म्हणजे ईमेल ॲड्रेस सिंक करण्यासाठी तुम्ही दोन वेगवेगळ्या प्रकारे add-on वापरू शकता.
 
@@ -40,7 +40,7 @@ MailChimp Integration add-on मध्ये दोन “integration modes” (
 
 _जास्त लवचिकतेसाठी दोन integration modes!_
 
-### Mode 1: Multiple Lists
+### Mode 1: Multiple Lists {#mode-1-multiple-lists}
 
 डिफॉल्ट मोड **Multiple Lists** चा वापर करतो. या मोडमुळे तुम्हाला प्रत्येक प्लॅनसाठी अनेक MailChimp लिस्ट्स निवडता येतील. जर तुम्ही तुमच्या वापरकर्त्यांना वेगवेगळ्या लिस्ट्समध्ये विभागले (segment) असेल, तर हा सर्वोत्तम पर्याय आहे.
 
@@ -52,7 +52,7 @@ _जास्त लवचिकतेसाठी दोन integration modes!_
 
 _नवीन खात्यांसाठी आणि रद्द केलेल्या खात्यांसाठी डिफॉल्ट लिस्ट्स निवडा_
 
-### Mode 2: Single List + Multiple Groups
+### Mode 2: Single List + Multiple Groups {#mode-2-single-list--multiple-groups}
 
 MailChimp तुम्हाला तुमच्या लिस्टला **Groups** नावाच्या लहान वापरकर्ता गटांमध्ये विभागण्याची (segment) सुविधा देते. यामुळे तुम्हाला अधिक नियंत्रण मिळते, कारण तुम्हाला एकाच वेळी अनेक वेळा (multiple copies) Campaign तयार करण्याची गरज पडत नाही (जे नंतर त्या Campaign च्या metrics चे विश्लेषण करणे कठीण बनवते).
 
@@ -62,13 +62,13 @@ MailChimp तुम्हाला तुमच्या लिस्टला *
 
 _जर तुम्ही “single list + multiple groups” integration mode वापरत असाल, तर डिफॉल्ट लिस्ट्स आणि ग्रुप्स निवडा_
 
-## Default Lists and Groups
+## Default Lists and Groups {#default-lists-and-groups}
 
 तुम्ही कोणत्या integration mode चा वापर करणे अधिक योग्य आहे हे निवडल्यानंतर, डिफॉल्ट लिस्ट्स (आणि मोडनुसार ग्रुप्स) निवडण्याची वेळ येते. जेव्हा एखाद्या प्लॅनसाठी विशिष्ट लिस्ट निवडलेली नसते, तेव्हा डिफॉल्ट लिस्टचा वापर केला जाईल.
 
 तुम्ही रद्द केलेल्या खात्यांसाठी (canceled accounts) देखील डिफॉल्ट लिस्ट निवडू शकता. जेव्हा एखादा वापरकर्ता त्याची सदस्यता समाप्त करतो आणि तुमचे नेटवर्कमधून त्याचे खाते काढून टाकतो, तेव्हा त्याचा ईमेल ॲड्रेस रद्द केलेल्या खात्यांसाठी सेट केलेल्या लिस्टमध्ये हलवला जाईल.
 
-## Enabling Double Subscription
+## Enabling Double Subscription {#enabling-double-subscription}
 
 त्याच सेटिंग्ज पेजवर, तुम्ही **Double Subscription** सक्षम करू शकता. हा पर्याय वापरकर्त्याला डिफॉल्ट लिस्टमध्ये आणि त्या वापरकर्त्याच्या प्लॅनसाठी निवडलेल्या लिस्टमध्ये दोन्ही ठिकाणी जोडी देईल. जर हा पर्याय सक्षम केला नसेल, तर वापरकर्त्याला फक्त त्या वापरकर्त्याच्या प्लॅनसाठी निवडलेल्या लिस्टमध्ये जोडले जाईल. जर त्या विशिष्ट प्लॅनसाठी काही सेट केले नसेल, तर वापरकर्त्याला निवडलेल्या डिफॉल्ट लिस्टमध्ये जोडले जाईल.
 
@@ -76,7 +76,7 @@ _जर तुम्ही “single list + multiple groups” integration mode 
 
 _साइनअप करताना तुमचे वापरकर्ते डिफॉल्ट लिस्ट आणि प्लॅनच्या लिस्ट या दोन्हीमध्ये सबस्क्राईब केलेले असू शकतात_
 
-## Selecting Lists and Groups for each of the Plans
+## Selecting Lists and Groups for each of the Plans {#selecting-lists-and-groups-for-each-of-the-plans}
 
 तुमच्या **Plans** वर जा आणि तुम्हाला एडिट करायचा असलेला प्लॅन निवडा. लक्षात घ्या की **Advanced Options** meta-box वर, MailChimp नावाचा एक नवीन टॅब उपलब्ध असेल.
 

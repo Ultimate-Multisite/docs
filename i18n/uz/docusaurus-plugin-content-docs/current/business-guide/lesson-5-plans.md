@@ -3,15 +3,15 @@ title: 'Dars 5: Rejalaringizni loyihalash'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 5-dars: Rejalaringizni loyihalash
+# 5-dars: Rejalaringizni loyihalash {#lesson-5-designing-your-plans}
 
 Reja darajalaringiz shunchaki narx pog'onalari emas -- ular tor yo'nalishdagi mijozlaringiz aslida qanday ishlashining aksidir. Bu darsda siz turli bosqichlardagi fitness bizneslarining haqiqiy ehtiyojlariga mos mahsulot darajalarini loyihalaysiz.
 
-## Qayerda to'xtagan edik
+## Qayerda to'xtagan edik {#where-we-left-off}
 
 FitSite’da uchta shablon tayyor (Studio Essential, Gym Pro, Fitness Chain). Endi mijozlar nimaga kirish olishini va qancha to'lashini belgilaydigan rejalarni yaratamiz.
 
-## Mijoz segmentlari haqida o'ylash
+## Mijoz segmentlari haqida o'ylash {#thinking-in-customer-segments}
 
 Ko'pchilik qiladigan xato -- rejalarni texnik xususiyatlar (saqlash joyi, o'tkazish kengligi, sahifalar soni) atrofida loyihalash. Tor yo'nalishdagi mijozlaringiz bunday tushunchalar bilan o'ylamaydi. Sportzal egasi biznesini yuritish uchun nimaga muhtojligini o'ylaydi.
 
@@ -25,11 +25,11 @@ Fitness studiyalari uchun uchta tabiiy segment mavjud:
 
 Rejalaringiz ixtiyoriy xususiyatlar to'plamlariga emas, shu segmentlarga mos kelishi kerak.
 
-## FitSite rejalarini yaratish
+## FitSite rejalarini yaratish {#creating-the-fitsite-plans}
 
 Har bir reja uchun **Ultimate Multisite > Mahsulotlar > Mahsulot qo'shish** bo'limiga o'ting.
 
-### 1-reja: FitSite Starter -- $49/oy
+### 1-reja: FitSite Starter -- $49/oy {#plan-1-fitsite-starter----49month}
 
 **Maqsadli auditoriya**: Yakka trenerlar va kichik studiyalar
 
@@ -59,7 +59,7 @@ Har bir reja uchun **Ultimate Multisite > Mahsulotlar > Mahsulot qo'shish** bo'l
 - Siz tanlagan theme: Majburiy faollashtirish
 - Boshqa barcha theme’lar: Yashirilgan
 
-### 2-reja: FitSite Growth -- $99/oy
+### 2-reja: FitSite Growth -- $99/oy {#plan-2-fitsite-growth----99month}
 
 **Maqsadli auditoriya**: Bitta joylashuvga ega shakllangan sportzallar
 
@@ -85,7 +85,7 @@ Har bir reja uchun **Ultimate Multisite > Mahsulotlar > Mahsulot qo'shish** bo'l
 - Reja guruhi: FitSite Plans
 - Mahsulot tartibi: 2
 
-### 3-reja: FitSite Pro -- $199/oy
+### 3-reja: FitSite Pro -- $199/oy {#plan-3-fitsite-pro----199month}
 
 **Maqsadli auditoriya**: Bir nechta joylashuvga ega fitness tarmoqlari
 
@@ -109,7 +109,7 @@ Har bir reja uchun **Ultimate Multisite > Mahsulotlar > Mahsulot qo'shish** bo'l
 - Reja guruhi: FitSite Plans
 - Mahsulot tartibi: 3
 
-## Reja guruhini sozlash
+## Reja guruhini sozlash {#setting-up-the-plan-group}
 
 Reja guruhi mijozlar faqat FitSite rejalari oilasi ichida yuqori yoki pastki rejaga o'ta olishini ta'minlaydi. Har bir rejaning **Yuqori va pastki rejaga o'tish** yorlig'ida:
 
@@ -118,7 +118,7 @@ Reja guruhi mijozlar faqat FitSite rejalari oilasi ichida yuqori yoki pastki rej
 
 Bu aniq yangilanish yo'lini yaratadi: Starter → Growth → Pro.
 
-## Buyurtma qo'shimchalarini qo'shish
+## Buyurtma qo'shimchalarini qo'shish {#adding-order-bumps}
 
 Buyurtma qo'shimchalari -- to'lovni rasmiylashtirish vaqtida taklif qilinadigan qo'shimcha mahsulotlar. FitSite uchun quyidagilarni ko'rib chiqing:
 
@@ -128,7 +128,7 @@ Buyurtma qo'shimchalari -- to'lovni rasmiylashtirish vaqtida taklif qilinadigan 
 
 Bularni Ultimate Multisite’da **Paket** turidagi mahsulotlar sifatida yarating va tegishli rejalar bilan bog'lang.
 
-## Nega bu tuzilma ishlaydi
+## Nega bu tuzilma ishlaydi {#why-this-structure-works}
 
 - **Starter** kirish to'siqlarini olib tashlaydi -- past narx, sodda taklif, trenerlarni tezda internetga olib chiqadi
 - **Growth** sportzallar haqiqatan so'raydigan xususiyatlarni qo'shadi -- band qilish, galereyalar, maxsus domenlar
@@ -136,7 +136,7 @@ Bularni Ultimate Multisite’da **Paket** turidagi mahsulotlar sifatida yarating
 - **Buyurtma qo'shimchalari** mijozlarga asosiy rejalarni murakkablashtirmasdan moslashtirish imkonini beradi
 - **Aniq yangilanish yo'li** mijozlar ketib qolish o'rniga siz bilan birga o'sishini anglatadi
 
-## Hozirgacha FitSite tarmog'i
+## Hozirgacha FitSite tarmog'i {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Bu darsda nimalarni qurdik
+## Bu darsda nimalarni qurdik {#what-we-built-this-lesson}
 
 - Haqiqiy fitness biznes segmentlariga moslangan **uchta reja darajasi**
 - Ultimate Multisite’ning plugin va shablon boshqaruvlari yordamida **xususiyatlarga kirishni cheklash**

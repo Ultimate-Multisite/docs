@@ -3,11 +3,11 @@ title: ප්‍රධාන දත්ත පුවරුව දළ විශ්
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# දත්ත පුවරුවේ දළ විශ්ලේෂණය (Dashboard Overview)
+# දත්ත පුවරුවේ දළ විශ්ලේෂණය (Dashboard Overview) {#dashboard-overview}
 
 Ultimate Multisite එකේ මෙනුව යට **Dashboard** එකක් තිබෙනවා, ඒ වගේම Network Dashboard එකට widgets ද එකතු කරනවා. මේ ලිපියෙන් දෙකෙහිම ඔබට මොනවද බලන්නේ කියලා අපි බලමු.
 
-## ජාල පුවරුව (The Network Dashboard)
+## ජාල පුවරුව (The Network Dashboard) {#the-network-dashboard}
 
 Ultimate Multisite එක මගින් **My Sites → Network Admin → Dashboard** යට සොයාගත හැකි ජාල මට්ටමේ දත්ත පුවරුවට ප්‍රයෝජනවත් widgets ද ඇතුළත් කරනවා.
 
@@ -35,7 +35,7 @@ Ultimate Multisite එක මගින් **My Sites → Network Admin → Dashb
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard එක (The Ultimate Multisite Dashboard)
+## Ultimate Multisite Dashboard එක (The Ultimate Multisite Dashboard) {#the-ultimate-multisite-dashboard}
 
 ජාල පුවරුව මගින් ජාලය පිළිබඳ සමස්ත තොරතුරු ඉදිරිපත් කරන අතර, Ultimate Multisite dashboard එක (Ultimate Multisite මෙනුවේ ඉහළම මට්ටමේ ඇති) එම සේවාව පිළිබඳ තොරතුරු ඉදිරිපත් කරයි.
 

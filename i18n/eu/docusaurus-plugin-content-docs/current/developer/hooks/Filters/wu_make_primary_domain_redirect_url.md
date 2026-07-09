@@ -4,13 +4,13 @@ title: Iragazkia - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Iragazkia: wu_make_primary_domain_redirect_url
+# Iragazkia: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Domeinu bat nagusi bihurtu ondoren birbideratze-URLa iragazten du.
 
 Garatzaileei aukera ematen die erabiltzaileak nora birbideratuko diren pertsonalizatzeko, domeinu bat nagusi gisa behar bezala ezarri ondoren. Lehenespenez, gune nagusiko uneko URLra birbideratzen du, edo aldatzen ari den gunearen admin URLra.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Garatzaileei aukera ematen die erabiltzaileak nora birbideratuko diren pertsonal
 | $domain | `\Domain` | Nagusi bihurtu den domeinu-objektua. |
 | $old_primary_domains | `array` | Lehenago nagusi ziren domeinuen IDen arraya. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.0.0
-### Iturburua
+### Iturburua {#source}
 
 [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) fitxategian definitua, 639. lerroan
 
 
-## Itzulketak
+## Itzulketak {#returns}
 Iragazitako birbideratze-URLa.

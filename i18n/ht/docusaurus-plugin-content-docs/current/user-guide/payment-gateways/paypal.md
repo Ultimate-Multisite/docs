@@ -3,7 +3,7 @@ title: Konfigire PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Konfigirasyon Gateway PayPal (v2)
+# Konfigirasyon Gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTE ENTRANTA: Sa tèks sa a ref refere a Ultimate Multisite v2.x.**_
 
@@ -13,13 +13,13 @@ Men jan Stripe, PayPal itilize anpil pou paman sou entènèt, sitou sou WordPres
 
 Note ke ou bezwen gen yon **kont Biznis PayPal** pou jwenn kredyans API ki nesesè pou entegrasyon sa a.
 
-## Aktive PayPal sou rezo ou an
+## Aktive PayPal sou rezo ou an {#enabling-paypal-on-your-network}
 
 Pou aktive PayPal kòm yon metò paman ki disponib sou rezo ou an, ale nan **Ultimate Multisite > Settings > Payments** tab la epi mete bouchon an bò kote PayPal la.
 
 ![Aktive PayPal nan gateway paman aktif](/img/config/settings-payment-gateways.png)
 
-## Itilize wizard konfigirasyon ki gide a
+## Itilize wizard konfigirasyon ki gide a {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 ajoute yon wizard konfigirasyon PayPal ki gide sou konfigirasyon gateway paman an. Apre ou aktive PayPal la, itilize wizard la sou **Ultimate Multisite > Settings > Payments** pou chwazi kijan ou vle konekte gateway la epi konfime ki kredyans yo toujou bezwen anvan ou kayann li.
 
@@ -30,7 +30,7 @@ Wizard la sipò de wout konfigirasyon:
 
 Si ou pa wè opsyon OAuth nan wizard la, fini pwosesis entri credential manman an anba la. Gateway la travay ak menm credentials PayPal Business API tankou vèsyon Ultimate Multisite 2.x ki te pase yo.
 
-## Jwenn kredensyal PayPal API
+## Jwenn kredensyal PayPal API {#getting-the-paypal-api-credentials}
 
 Yon fwa ou aktif PayPal kòm yon gateway paiement, ou pral bezwen ranpli champs pou **Username** API PayPal, **Password** API PayPal, ak **Signature** API PayPal.
 

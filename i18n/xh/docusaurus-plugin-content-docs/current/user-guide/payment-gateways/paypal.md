@@ -3,7 +3,7 @@ title: Ukuseta i-PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Ukuseta i-PayPal Gateway (v2)
+# Ukuseta i-PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa kwi-Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Njenge-Stripe, i-PayPal isetyenziswa kakhulu kwiintlawulo ze-intanethi, ngakumbi
 
 Qaphela ukuba kufuneka ube ne-**PayPal Business account** ukuze ufumane iinkcukacha ze-API ezifunekayo kolu dibaniso.
 
-## Ukuvula i-PayPal kwinethiwekhi yakho
+## Ukuvula i-PayPal kwinethiwekhi yakho {#enabling-paypal-on-your-network}
 
 Ukuvula i-PayPal njengendlela yentlawulo ekhoyo kwinethiwekhi yakho, yiya kwi-**Ultimate Multisite > Settings > Payments** tab uze ucofe ibhokisi esecaleni kwe-PayPal.
 
 ![Ukuvula i-PayPal kwii-gateway zentlawulo ezisebenzayo](/img/config/settings-payment-gateways.png)
 
-## Ukusebenzisa iwizard yokuseta ekhokelwayo
+## Ukusebenzisa iwizard yokuseta ekhokelwayo {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 yongeza iwizard yokuseta i-PayPal ekhokelwayo kwizicwangciso ze-payment gateway. Emva kokuba uvule i-PayPal, sebenzisa iwizard kwi-**Ultimate Multisite > Settings > Payments** ukukhetha indlela ofuna ukudibanisa ngayo i-gateway kwaye uqinisekise ukuba zeziphi iinkcukacha ezisafunekayo ngaphambi kokugcina.
 
@@ -30,7 +30,7 @@ Iwizard ixhasa iindlela ezimbini zokuseta:
 
 Ukuba awuboni ukhetho lwe-OAuth kwiwizard, gqibezela ukuhamba kokufaka iinkcukacha ngesandla ngezantsi. I-gateway isebenza ngeenkcukacha ezifanayo ze-PayPal Business API njengokukhutshwa kwangaphambili kwe-Ultimate Multisite 2.x.
 
-## Ukufumana iinkcukacha ze-PayPal API
+## Ukufumana iinkcukacha ze-PayPal API {#getting-the-paypal-api-credentials}
 
 Nje ukuba i-PayPal ivulwe njenge-payment gateway, kuya kufuneka ugcwalise iindawo ze-PayPal API **Username** , PayPal API **Password** kunye ne-PayPal API **Signature**.
 

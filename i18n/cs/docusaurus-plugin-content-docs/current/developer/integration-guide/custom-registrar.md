@@ -3,13 +3,13 @@ title: Vytváření vlastní integrace s registrarovým systémem
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Vytváření vlastní integrace pro registrátory
+# Vytváření vlastní integrace pro registrátory {#building-a-custom-registrar-integration}
 
 Addon Domain Seller používá vzor **Integration Registry**. Každý registrátor je třída PHP, která implementuje `Domain_Selling_Capability` a registruje se pomocí akčního hooku `wu_domain_seller_register_capabilities`.
 
 Tento průvodce ukazuje, jak připojit vlastní registrátor.
 
-## Interface
+## Interface {#the-interface}
 
 Vaše třída musí implementovat `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` a dědit se z `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Volitelné metody
+### Volitelné metody {#optional-methods}
 
 Implementujte je, abyste odemkli další funkce. Addon detekuje podporu pomocí `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementujte je, abyste odemkli další funkce. Addon detekuje podporu pomocí 
 | `get_epp_code(string $domain_name): array` | Přenos domény (odchozí) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Přenos domény (příchozí) |
 
-### Konvence návratní hodnoty
+### Konvence návratní hodnoty {#return-value-convention}
 
 Všechny metody vrací pole, které má minimálně klíč `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Textový popis chyby'];
 
 ---
 
-## Registrace vaší kapacity
+## Registrace vaší kapacity {#registering-your-capability}
 
 Zaregistrujte svou třídu pomocí akčního hooku `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ První argument pro `add_capability()` je **provider ID** — malá písmena slu
 
 ---
 
-## Přidání polí pro údaje (credentials) do průvodce
+## Přidání polí pro údaje (credentials) do průvodce {#adding-credential-fields-to-the-wizard}
 
 Pokud chcete, aby administrátoři zadávali údaje přes průvodce nastavení, zaregistrujte svou integraci:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## Hooks pro akce po registraci
+## Hooks pro akce po registraci {#hooks-for-post-registration-actions}
 
 Použijte tyto akce k spuštění webhooků, provisioningu, oznámení nebo aktualizací CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logování
+## Logování {#logging}
 
 Zapište do svého logovacího kanálu specifického pro poskytovatele pomocí `wu_log_add()`:
 

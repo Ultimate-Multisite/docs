@@ -3,11 +3,11 @@ title: Opskrif vir domeinsoektog
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search
+# Header Domain Search {#header-domain-search}
 
 Gebruik hierdie opstelling wanneer jy ’n klein kopvorm wil hê wat ’n domeinsoektog begin, en dan die kliënt uit beskikbare domeine binne die Ultimate Multisite-betaalproses laat kies.
 
-## Vereistes
+## Vereistes {#requirements}
 
 - Ultimate Multisite netwerk-aktief.
 - Multisite Ultimate Domain Seller netwerk-aktief.
@@ -16,7 +16,7 @@ Gebruik hierdie opstelling wanneer jy ’n klein kopvorm wil hê wat ’n domein
   - Ondersteunde TLDs gekonfigureer, byvoorbeeld `com`, `net`, en `org`.
 - ’n Geldige betaalvorm wat die **Domeinkeuse**-veld bevat.
 
-## Betaalvorm
+## Betaalvorm {#checkout-form}
 
 1. Skep of wysig die betaalvorm wat deur die registrasiebladsy gebruik word.
 2. Voeg die normale vereiste betaal-/Account-velde by, insluitend **Gebruikersnaam**. ’n Betaalvorm wat slegs die domeinveld bevat, word deur Ultimate Multisite-validering afgekeur.
@@ -30,7 +30,7 @@ Die registrasiebladsy behoort die betaalvorm te vertoon, byvoorbeeld:
 [wu_checkout slug="domain-form"]
 ```
 
-## Kopvorm
+## Kopvorm {#header-form}
 
 Voeg ’n klein `GET`-vorm in die site-kop by wat die ingevoerde soekterm as `domain_name` na die betaalbladsy stuur:
 
@@ -44,7 +44,7 @@ Voeg ’n klein `GET`-vorm in die site-kop by wat die ingevoerde soekterm as `do
 
 Moenie ’n domein vooraf kies in pasgemaakte kop-JavaScript nie. Die kop behoort slegs die soekterm deur te gee. Die Domain Seller-betaalskrip lees `?domain_name=example`, vul die betaalsoekkassie in, en voer die beskikbaarheidsoektog uit sodat die kliënt uit die teruggestuurde domeine kan kies.
 
-## Verwagte gedrag
+## Verwagte gedrag {#expected-behaviour}
 
 Om `example` in die kop te soek, behoort die volgende oop te maak:
 
@@ -61,7 +61,7 @@ Die betaalproses behoort dan kiesbare resultate te vertoon soos:
 
 Nadat ’n beskikbare resultaat gekies is, behoort die bestelopsomming die domeinregistrasieproduk en die gekose domeinnaam in te sluit.
 
-## Verifikasie
+## Verifikasie {#verification}
 
 1. Maak die tuisblad oop.
 2. Soek vir ’n kaal naam, byvoorbeeld `example`.
@@ -71,7 +71,7 @@ Nadat ’n beskikbare resultaat gekies is, behoort die bestelopsomming die domei
 6. Klik **Kies** vir ’n beskikbare domein.
 7. Bevestig die bestelopsomming bevat `Domain Registration - example.com` of die gekose domein.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
 - As geen lys verskyn nie, gaan die blaaier se netwerk-oortjie na vir `admin-ajax.php?action=wu_domain_search` en bevestig dat dit nie-leë `domains` of `results` terugstuur.
 - As die betaalvorm se validering misluk terwyl dit gestoor word, voeg die vereiste Account-velde soos **Gebruikersnaam** by.

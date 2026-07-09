@@ -3,11 +3,11 @@ title: Ngā Wāhi Whakamahi
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Mga Tūnga o Ultimate Multisite
+# Mga Tūnga o Ultimate Multisite {#ultimate-multisite-requirements}
 
 Kua te mea whakamua e koe i te whaina Ultimate Multisite he mea nui, ko te mea kua e whakaaro i te tūnga (requirements) ki te whakauru i tō plugin. Ahia, he tino āhua pēnei te tūnga mō te whakamahi Ultimate Multisite: he **domain name**, he **hosting provider** māhinaki, me heke WordPress **Multisite**. He mea katoa e tika ana!
 
-## Domain Name
+## Domain Name {#domain-name}
 
 Kia kaha ki te korero atu i te domain name.
 
@@ -17,7 +17,7 @@ Ko tō plugin e whai whakaaro ki ngā wāhi o te subscription, te whakatapu i ng
 
 He niche tuataua kua e whai i tō plugin he kaha ki te whakamaoritia ko e whakatere ahau ngā website ko mea he tino whakatau mai i tō plan o te mahi! Kia tiaki i te domain name kua e huna i tō plan o te mahi.
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 I te wā kua e pēnei te domain name kua e whakaatu i tō niche me tō mahi, ka taea e koe te whai i te company hosting (web hosting) māhinaki ki te host i tō network me Ultimate Multisite. He tino optiona mō te pako. He ngā hosting provider mō te pako, he mea e tika ana ahau i te mea kua e whakaaro mai i tō mahi.
 
@@ -25,7 +25,7 @@ Ka pai, e hoa! Te Ultimate Multisite e pēnei ana ki te mahi i ngā whipiti host
 
 I roto i te whakatipu o te server specifications, he kore formula tino tika. He rite ki te mea e taea ana koe, engari e rite ana ki te feti o ngā āhuatanga me ngā mahi e ka whero i te wāhi mo ngā user. He tino pai te whaiaro hosting (shared hosting) mō te whakatupu i roto i te mihi, engari i te wā e piki te network mo te user, he tino kite ana kei te hiahia koe ki te VPS (dedicated VPS).
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 I te wā, he tino pai tēnei te korero i te reo mō te installation o WordPress Multisite.
 

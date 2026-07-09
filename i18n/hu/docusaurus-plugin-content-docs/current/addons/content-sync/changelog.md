@@ -3,9 +3,9 @@ title: Tartalom Szinkronizációs Changelog
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Tartalom Szinkronizációs Naplója
+# Tartalom Szinkronizációs Naplója {#content-sync-changelog}
 
-### Version 1.1.0 - Kiadása 2025-12-31
+### Version 1.1.0 - Kiadása 2025-12-31 {#version-110---released-on-2025-12-31}
 * Új: Minden bejegyzéstípus szinkronizálásának támogatása (bejegyzések, oldalak, saját bejegyzéstípusok)
 * Új: Bejegyzéstípus szűrés a tartalom kiválasztási lépésben
 * Új: Forrásoldal kiválasztási lépés - szinkronizálás bármilyen oldaltól, nem csak az alapoldaltól
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Megváltozott: A "Select Templates" lépés neve "Select Data" lett
 * Javítás: Az Elementor-specifikus kód most csak az elementor_library bejegyzéstípusán fut
 
-### Version 1.0.0 - Kiadása 2025-12-19
+### Version 1.0.0 - Kiadása 2025-12-19 {#version-100---released-on-2025-12-19}
 * Első kiadás
 * Több lépéses folyamatvezérlő a sablon- és oldal kiválasztásához
 * Csoportos feldolgozás időreális haladás visszajelzésével

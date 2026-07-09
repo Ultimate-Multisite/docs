@@ -3,17 +3,17 @@ title: 'Somada ya 9: Kuweka Bei kwa Faida'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Somo la 9: Bei kwa Faida
+# Somo la 9: Bei kwa Faida {#lesson-9-pricing-for-profit}
 
 Katika Somo la 5, tuloweka bei za awali kwa mipango ya FitSite. Sasa tutarekebisha mkakati wa bei kwa kutumia mbinu zinazoongeza mapato, kuchochea kuboresha huduma (upgrades), na kupunguza wateja kuondoka (churn).
 
-## Tulipoacha
+## Tulipoacha {#where-we-left-off}
 
 FitSite sasa ina mipango, templates, sehemu ya malipo (checkout), branding, na usajili wa wateja (onboarding). Bei za awali zilikuwa $49/$99/$199 kwa mwezi. Sasa tunafanya bei hizo zifanye kazi kwa nguvu zaidi.
 
-## Kanuni za Bei kwa Platforms Maalum
+## Kanuni za Bei kwa Platforms Maalum {#pricing-principles-for-niche-platforms}
 
-### Bei kwa Thamani, Sio kwa Gharama
+### Bei kwa Thamani, Sio kwa Gharama {#price-on-value-not-cost}
 
 Gharama yako ya kuendesha tovuti (hosting) inaweza kuwa kati ya $5-$15 kwa kila tovuti ya mteja. Hilo halimaanishi kwamba bei yako inapaswa kuwa $20. Wewe haufiiuza hosting. Unauza:
 
@@ -24,7 +24,7 @@ Gharama yako ya kuendesha tovuti (hosting) inaweza kuwa kati ya $5-$15 kwa kila 
 
 Bei iwe kulingana na thamani unayotoa, sio gharama ya kutoa huduma hiyo.
 
-### Kulinganisha na Miradi Mbadala
+### Kulinganisha na Miradi Mbadala {#anchor-to-alternatives}
 
 Mwenye studio ya afya anapopima FitSite, analinganisha na:
 
@@ -34,7 +34,7 @@ Mwenye studio ya afya anapopima FitSite, analinganisha na:
 
 Kwa $49-$199/mwezi, FitSite ni nafuu kuliko mtaalamu, ina uwezo zaidi kuliko waendeshi tovuti za jumla, na ni bora zaidi kwa kiasi kikubwa kuliko kutokuwa na tovuti kabisa.
 
-## Kutekeleza Tofauti za Bei
+## Kutekeleza Tofauti za Bei {#implementing-price-variations}
 
 Bei za mwaka zinachochea kujitolea na kupunguza wateja kuondoka. Nenda kwenye tabo ya **Price Variations** ya kila mpango na uongeze chaguo za mwaka:
 
@@ -46,12 +46,12 @@ Bei za mwaka zinachochea kujitolea na kupunguza wateja kuondoka. Nenda kwenye ta
 
 Ongeza sehemu ya **Period Selection** kwenye fomu yako ya malipo ili wateja waweze kubadilisha kati ya malipo ya kila mwezi na ya mwaka. Tazama [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Kwa nini Bei za Mwaka Zifanya Kazi
+### Kwa nini Bei za Mwaka Zifanya Kazi {#why-annual-pricing-works}
 
 - **Kwako**: Fedha za awali, kupungua kwa wateja kuondoka (wateja wanaolipa kwa mwaka wana uwezekano mdogo wa kufuta katikati ya kipindi)
 - **Kwao**: Akiba halisi, uwezekano wa bajeti
 
-## Ada za Kukusanya (Setup Fees)
+## Ada za Kukusanya (Setup Fees) {#setup-fees}
 
 Zingatia ada ya mara moja ya kukusanya kwa mipango inayohusisha usanidi wa vitendo:
 
@@ -61,7 +61,7 @@ Zingatia ada ya mara moja ya kukusanya kwa mipango inayohusisha usanidi wa viten
 
 Saanisha ada za kukusanya kwenye sehemu ya bei ya kila mpango. Tazama [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) kwa maelezo zaidi.
 
-## Vipindi vya Majaribio (Trial Periods)
+## Vipindi vya Majaribio (Trial Periods) {#trial-periods}
 
 Kutoa jaribio hupunguza ugumu wa kujisajili lakini huleta hatari ya kutokubadilika kuwa mteja anayelipa. Kwa FitSite:
 
@@ -70,11 +70,11 @@ Kutoa jaribio hupunguza ugumu wa kujisajili lakini huleta hatari ya kutokubadili
 
 Saanisha jaribio kwenye sehemu ya bei ya mpango wa Starter kwa kuwezesha kitufe cha **Offer Trial** na kuweka muda ni siku 7.
 
-### Kuifanya Jaribio Liwe na Matokeo
+### Kuifanya Jaribio Liwe na Matokeo {#making-trials-convert}
 
 Jaribio linafanya kazi tu ikiwa mteja anahisi thamani wakati wa kipindi cha jaribio. Mzunguko wako wa usajili (onboarding sequence) (Somo la 8) ni muhimu hapa—barua za utangulizi zinapaswa kupangwa ili kuchochea ushiriki ndani ya kipindi cha siku 7.
 
-## Nambari za Punguzo (Discount Codes)
+## Nambari za Punguzo (Discount Codes) {#discount-codes}
 
 Unda nambari za punguzo za kimkakati kwa madhumuni maalum:
 
@@ -88,7 +88,7 @@ Nenda kwenye **Ultimate Multisite > Discount Codes** ili kuzibuni. Tazama [Creat
 Punguzo linapaswa kuwa zana za kimkakati, sio vifaa vya kudumu. Ikiwa kila mtu anapata punguzo, hilo sio punguzo—ni bei yako halisi. Tumia kwa kampeni maalum, marejeo, na matangazo yenye muda.
 :::
 
-## Kushughulikia Kodi (Tax Handling)
+## Kushughulikia Kodi (Tax Handling) {#tax-handling}
 
 Ikiwa unafanya kazi katika eneo linalohitaji kukusanya kodi:
 
@@ -98,7 +98,7 @@ Ikiwa unafanya kazi katika eneo linalohitaji kukusanya kodi:
 
 Tazama [Tax Handling](/user-guide/payment-gateways/tax-handling) kwa usanidi wa kina. Ikiwa unawasaidia wateja kimataifa, zingatia [VAT addon](/addons/vat) kwa kufuata kanuni za EU.
 
-## Kupitia Bei Yako
+## Kupitia Bei Yako {#reviewing-your-pricing}
 
 Baada ya kuanzisha, rudia kupitia bei kila robo mwaka. Angalia:
 
@@ -107,7 +107,7 @@ Baada ya kuanzisha, rudia kupitia bei kila robo mwaka. Angalia:
 - **Wateja kuondoka kwa mpango (Churn by plan)**: Ikiwa wateja wa mwaka wanaondoka kidogo, toa bei za mwaka kwa nguvu zaidi
 - **Bei za Washindani**: Nini wanachofanya mbadala? Je, umepanga vizuri?
 
-## Mtandao wa FitSite Hadi Sasa
+## Mtandao wa FitSite Hadi Sasa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Tayari kwa kuanzishwa (somo linalofuata)
 ```
 
-## Tulichojenga Somo Hili
+## Tulichojenga Somo Hili {#what-we-built-this-lesson}
 
 - **Bei za mwaka** na punguzo la 20% kuchochea kujitolea
 - **Ada za kukusanya** kwenye viwango vya juu kufidia juhudi za usajili

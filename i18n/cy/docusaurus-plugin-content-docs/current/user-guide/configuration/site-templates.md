@@ -3,13 +3,13 @@ title: Modelau y safonau
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Modelau Gweithiau (v2)
+# Modelau Gweithiau (v2) {#site-templates-v2}
 
 _**NOTIA: Mae'r ail nghydig hwn yn cyfeiriad i Ultimate Multisite fersiwn 2.x. Os ydych chi yn defnyddio fersiwn 1.x,**_ **gwneudwch yllori hwn.**_
 
 Mae'n ddefnyddiol i'r cwmni prenial gyda Ultimate Multisite i awtomatgyr ychwanegauol o phrosesau fel ychwanegu gwahaniaeth a chynlluniau am gyflwyno i'r cydweithwyr pan yn creu eu gwebitau. Mae'r ffordd einfail i ddod i hyn yw defnyddio feithrin Site Templates o Ultimate Multisite.
 
-## Beth yw Site Template?
+## Beth yw Site Template? {#what-is-a-site-template}
 
 Fel y mae'n cael ei henw, mae Site Template yn gwebit site sydd wedi'i chynllunio fel cyfrifol pan yn creu gwebitau newydd yn eich cydweith.
 
@@ -17,7 +17,7 @@ Mae hynny yn ei fod yn llwybr i chi creu gwebit base, gwneud pluginau yn weithre
 
 Mae hyn yn dangos iawn, ond sut i ffresgu site template newydd? Mae'n einfail fel y gallai fod.
 
-## Creu a Redig Site Template Newydd
+## Creu a Redig Site Template Newydd {#creating-and-editing-a-new-site-template}
 
 Mae Site Templates yn gwebitau normol ar eich cydweith. I creu template newydd gallwch eithaf i **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Ar ôl ymlaen o'r ffurf, byddwch yn gweld y tynnu **Copy Site**. Bydd hyn yn syl
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Gwarchod y cynnwys o Model Siat
+### Gwarchod y cynnwys o Model Siat {#customizing-the-contents-of-a-site-template}
 
 I weld eich model siat, teithio i'r panel eu dashboard a gwneud y newidiadau sydd yn hanfodol iddo. Gallwch ddatblygu postau newydd, peidiadau (pages), gael pluginau yn weithredol ac newid y theme sy'n weithredol. Gallwch hefyd mynd i'r Customizer a newid pob math o opsiynau gwarchod.
 
@@ -43,11 +43,11 @@ I weld eich model siat, teithio i'r panel eu dashboard a gwneud y newidiadau syd
 
 Bydd pob ddata hyn yn cael ei copio i mewn pan mae client yn creu siat newydd ar adalaith o'r Model Siat hwnnw.
 
-### Opsiynau Awdryddol (Advanced Options)
+### Opsiynau Awdryddol (Advanced Options) {#advanced-options}
 
 Os ydych chi'n gwybod eich ffordd gyda rhywfaint o codi custom, gallwch ddefnyddio API Search and Replace ein i newid yn awt y gairon ar y siat newydd ar ôl ei creu. Mae hyn yn ddefnyddiol ar gyfer pethau fel newid enw cwmni ar peidiad About, newid e-bostell cysyllti ar peidiad Contact, gan ychwanegol.
 
-### Defnyddio Model Siatiau (Using Site Templates)
+### Defnyddio Model Siatiau (Using Site Templates) {#using-site-templates}
 
 Alright, mae chi wedi creu rhywfaint o model siatiau gyda dyluniadau, themeau a setegau yn rhywfaint. Sut mae'r hyn yn eu gwneud yn ddefnyddiol ar eich cyd-fynd nawr?
 
@@ -58,7 +58,7 @@ Yn y cyflwr, mae gennych chi ddau ffordd allwch ddefnyddio nawr (nid yn symudol)
 
   * Gofyn i'ch clientau gw milltir y model siatiau yn eu gwneud yn eu cyflwyniad.
 
-#### Mod 1: Gyflwyno Model Siat (Assign Site Template)
+#### Mod 1: Gyflwyno Model Siat (Assign Site Template) {#mode-1-assign-site-template}
 
 Yn ffurf hwn, nid yn gallai eich cleientau dewis templat pan fyddant yn creu cyfrifol, ond yn lle hynny byddwch yn cyflwyno beth y templat sydd ei ddefnyddio ar y Planion eich.
 
@@ -70,7 +70,7 @@ Bydd hyn yn dod â'ch i'r lleoliad **Edit Product**. Yn y ddefnyddio sefyllfa **
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Ffurf 2: Dewis Templat Site Ar Gael
+#### Ffurf 2: Dewis Templat Site Ar Gael {#mode-2-choose-available-site-template}
 
 Yn ffurf hwn, byddwch yn rhoi ddefnyddio'r cleientau i dewis yn ystod y prosess creu cyfrifol. Bydd eu gallai dewis o'r templadau site gwahanol sydd eich ddefnyddio yn y setegau y produs. Mae chi'n cael opsiwn i hanfodoli y templad site a gallau nhw dewis ohono ar gyfer y produs wedi'i dewis. Bydd hyn yn rhoi'n gallu chi gael setiau templadau site gwahanol ar gyfer pob produs, sydd yn llawn i ddatblygu ffurfion ac ffeithiau gwahanol ar gyfer produs gyda chysgod uchel.
 
@@ -78,7 +78,7 @@ Ar ystod ar ymlaen ar ymlaen ar gwefan **Edit Product**. Dder y rheol **Product 
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Modus Defnyddiol: Dewis site template ar ffurf y Checkout
+### Modus Defnyddiol: Dewis site template ar ffurf y Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Os ydych chi eisiau fod pob un o'r site templates eich gael yn cael ei ddefnyddio yn ystod y cyfrifol, neu nad yw chi'n gosod angen gwaith addol i gyflwyno neu nodi site templates o dan pob produsg sydd yn creu. Tapwch yn unig i setio'r dewis site template o dan eich **Checkout Form**. I wneud hynny, mynd i **Ultimate Multisite > Checkout Forms** a clisi **Edit** o dan y ffurf sydd chi eisiau cyflwyno.
 
@@ -92,29 +92,29 @@ Ar y frontend, bydd y teimloedd yn gweld y dewis template yn ystod y cyfrifol ac
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opsiadau Model Si Lenydd
+### Opsiadau Model Si Lenydd {#site-template-options}
 
 Mae ychwanegau model si lenydd eraill ar gael yn ddefnyddi, ac gallwch chi gwneud eu cyflwyno neu ddefnyddio o fewnau Ultimate Multisite.
 
 ![Opsiadau model si lenydd mewn setynau Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Gofyn i'r Chwarae Modelu
+#### Gofyn i'r Chwarae Modelu {#allow-template-switching}
 
 Bydd ychwanegau hwn yn sylfaenu eich bod yn gallu'r cyddee chi'n gwneud i'ch clydefau troi'r model sy'n eu gw mill â'r proses cyflwyniad ar ôl cael y cyfrifol a'r si. Mae hyn yn ddefnyddiol o'r ochr y clydefwr gan ei gael ei chwarae eto os oes ganddyntai'r model gyntaf nid yw'n dda i'u angenau penodol ar ôl.
 
-#### Gofyn i'r Bwyliau Defnyddio eu Si fel Modelau
+#### Gofyn i'r Bwyliau Defnyddio eu Si fel Modelau {#allow-users-to-use-their-site-as-templates}
 
 Gan fod y bywogion o subsite yn gwneud a ddefnyddio amser i adeiladu a ddefnyddio eu si ei hun, gallent eu bod eisiau ei chloenio a ddefnyddio'n un o'r modelau si sydd ar gael pan mae'n cael cyfrifol newid subsite ar eich rheini. Bydd ychwanegau hwn yn sylfaenu eu bod yn gallu eu gwneud hyn.
 
-#### Cloeni Media ar Gyflymi Modelau Si
+#### Cloeni Media ar Gyflymi Modelau Si {#copy-media-on-template-duplication}
 
 Gan fod ychwanegau hwn yn cael eu gwylio, byddai'n chloeni'r media a ddefnyddiwyd ar y si model i'r si newydd a cael ei creu. Gall hyn cael ei gyflwyno ar un o'r planau.
 
-#### **Pretthyn Nuwchau Ar Gweithredwyr Si**
+#### **Pretthyn Nuwchau Ar Gweithredwyr Si** {#prevent-search-engines-from-indexing-site-templates}
 
 Mae modelau si fel y mae'n disgyblhau yn yr erthygl hwn, ond mae'n parth o'r rheini eich bod yn cael eu chwilio gan gweithredwyr. Bydd ychwanegau hwn yn gallu chi gwneud i'r modelau si ei gwneud yn gwahanol felly gallai gweithredwyr chwilio nhw.
 
-## Cyflwyniad Modelau Si gyda chwarae a cyfnewid awtomatig
+## Cyflwyniad Modelau Si gyda chwarae a cyfnewid awtomatig {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Mae un oethau mwyaf pwysig o Ultimate Multisite yw'r gallu ychwanegu text, colore a ffeiliau ar gyferfyniad form. Ar ôl iêm y data hwn, gallwn ei ddefnyddio i pre-pobylu'r cynnwys mewn rhai ardaloedd o'r template sydd wedi'i deilio. Yna, pan fydd y site newydd yn cael ei gyflwyno, bydd Ultimate Multisite yn gwahanu'r placeholderau gyda'r wybodaeth cywir a ddifynwyd yn ystod y ffurfiad.
 
@@ -134,7 +134,7 @@ Yna, bydd Ultimate Multisite yn gwahanu'r placeholderau gyda'r data a rhoi'n cae
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Cynllunio'r problem "template llawn o placeholderau"
+### Cynllunio'r problem "template llawn o placeholderau" {#solving-the-template-full-of-placeholders-problem}
 
 Mae pob hyn yn dda, ond mae ein yn cyflwyno problem anhygoel: mae ein templateau site - sydd wedi eu gallu weithio gan benwerthwr ein - yn llawn o placeholderau anhygoel sy'n dweud llawer.
 

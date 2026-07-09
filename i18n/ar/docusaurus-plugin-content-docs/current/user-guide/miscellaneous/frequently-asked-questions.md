@@ -3,7 +3,7 @@ title: الأسئلة المتداولة
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Frequently Asked Questions
+# Frequently Asked Questions {#frequently-asked-questions}
 
 Here are some **Frequently Asked Questions** that often come up during support requests.
 

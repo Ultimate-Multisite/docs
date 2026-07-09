@@ -3,11 +3,11 @@ title: WP-CLI анықтамалығы
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI анықтамалығы
+# WP-CLI анықтамалығы {#wp-cli-reference}
 
 Gratis AI Agent агентті бағалау, мүмкіндіктерді басқару және командалық жолдан агент күйін сұрау үшін `wp gratis-ai-agent` командалар тобымен жеткізіледі. Барлық командалар WP-CLI 2.0 немесе одан жоғары нұсқасын талап етеді.
 
-## Орнату
+## Орнату {#installation}
 
 WP-CLI командалары plugin белсенді болғанда автоматты түрде тіркеледі. Мыналармен тексеріңіз:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agent Capabilities benchmark жинағын іске қосады — толық мүмкіндік ауқымын тексеретін күрделі, көпқадамды prompt жиыны. Мұны model өнімділігін бағалау, AI провайдерлерін салыстыру немесе өндірістік ортаға енгізер алдында мүмкіндік пакеттерін тексеру үшін пайдаланыңыз.
 
-### Синопсис
+### Синопсис {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Опциялар
+### Опциялар {#options}
 
 | Option | Сипаттама |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Шығыс пішімі: `table` (әдепкі), `json`, `csv` |
 | `--save` | Тарихи салыстыру үшін benchmark нәтижелерін дерекқорға сақтау |
 
-### Мысалдар
+### Мысалдар {#examples}
 
 Ағымдағы провайдер және model арқылы толық benchmark жинағын іске қосу:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Шығыс
+### Шығыс {#output}
 
 Benchmark әр сұрақ үшін келесі бағандары бар бір жол шығарады:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark сұрақтары
+### Benchmark сұрақтары {#benchmark-questions}
 
 Әдепкі жинаққа мыналар кіреді:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Орнатылған мүмкіндіктер мен мүмкіндік пакеттерін басқарады.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Барлық тіркелген мүмкіндіктерді, олардың көзін (core немесе pack) және ағымдағы күйін тізімдейді.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Registry-ден мүмкіндік пакетін жүктеп алып, белсендіреді.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Пакетті жоймай, нақты мүмкіндікті өшіреді. Берілген site-та агенттің ауқымын шектеу үшін пайдалы.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Бұрын өшірілген мүмкіндікті қайта қосады.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Ағымдағы агент конфигурациясын және қосылым күйін көрсетеді.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Debug log ішіндегі соңғы агент әрекеттерін көрсетеді.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Агент күйін бастапқы қалпына келтіреді: енгізілген CSS-ті тазартады, агент тіркеген CPTs пен таксономияларды жояды, жаһандық стильдерді бастапқы қалпына келтіреді және агенттің опциялар кэшін босатады. Плагинді немесе оның параметрлерін жоймайды.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Шығу кодтары
+## Шығу кодтары {#exit-codes}
 
 Барлық пәрмендер сәтті орындалғанда `0` кодымен аяқталады. Нөлден өзгеше шығу кодтары:
 

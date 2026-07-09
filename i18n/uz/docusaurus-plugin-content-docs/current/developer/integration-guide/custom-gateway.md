@@ -3,11 +3,11 @@ title: Maxsus shlyuz ishlab chiqish
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Maxsus Gateway ishlab chiqish
+# Maxsus Gateway ishlab chiqish {#custom-gateway-development}
 
 `Base_Gateway` klassini kengaytirish orqali maxsus toʻlov gatewaylarini yaratishingiz mumkin.
 
-## Gateway klassi
+## Gateway klassi {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gatewayni roʻyxatdan oʻtkazish
+## Gatewayni roʻyxatdan oʻtkazish {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Asosiy metodlar
+## Asosiy metodlar {#key-methods}
 
 | Metod | Maqsad |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Qaytarib berish soʻrovlarini qayta ishlash |
 | `get_payment_methods()` | Mijoz uchun saqlangan toʻlov usullarini qaytarish |
 
-## Takroriy aʼzoliklar uchun yangilash hisob maʼlumotlari
+## Takroriy aʼzoliklar uchun yangilash hisob maʼlumotlari {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway integratsiyalariga `auto_renew` saqlanishidan oldin takroriy aʼzolikda qayta ishlatiladigan yangilash hisob maʼlumoti bor-yoʻqligini xabar qilish imkonini beradi. `wu_membership_has_renewal_credential` hookini ulang va quyidagilarni qaytaring:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Yangi qayta ishlatiladigan hisob maʼlumoti saqlangandan soʻng, gatewayingizning muvaffaqiyatli qayta avtorizatsiya jarayonining bir qismi sifatida yetishmayotgan hisob maʼlumoti belgisini tozalang.
 
-## Maslahatlar
+## Maslahatlar {#tips}
 
 - Muvaffaqiyatsizlikda har doim `WP_Error` qaytaring, shunda Ultimate Multisite xato koʻrinishini qayta ishlay oladi
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gatewayga xos jurnallash uchun `wu_log_add()` dan foydalaning
 
-## AI connector provider imkoniyatlari
+## AI connector provider imkoniyatlari {#ai-connector-provider-capabilities}
 
 AI connector asosidagi operatsiyalarni chaqiradigan maxsus integratsiyalar AI Provider for Anthropic Max v1.3.0 bilan joriy qilingan qoʻllab-quvvatlanadigan OAuth provider toʻplamiga mos boʻlishi kerak:
 

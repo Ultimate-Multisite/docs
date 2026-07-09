@@ -3,13 +3,13 @@ title: Dídín Ètò kan kù
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Bí a ṣe ń sọ plan kan di kekere (v2)
+# Bí a ṣe ń sọ plan kan di kekere (v2) {#downgrading-a-plan-v2}
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí ń tọ́ka sí Ultimate Multisite version 2.x.**_
 
 Sísọ plan tàbí subscription di kekere jẹ́ ìgbésẹ̀ tí ó wọ́pọ̀ tí àwọn client rẹ lè ṣe bí wọ́n bá ní ìnáwó tó lopin tàbí bí wọ́n bá pinnu pé wọn kò ní nílò ọ̀pọ̀ resources láti ṣiṣẹ́ subsite wọn.
 
-## Bí a ṣe ń sọ plan kan di kekere
+## Bí a ṣe ń sọ plan kan di kekere {#how-to-downgrade-a-plan}
 
 Àwọn client rẹ lè sọ plan wọn di kekere nígbàkigbà nípa wíwọlé sí admin dashboard subsite wọn àti títẹ **Change** lábẹ́ ojú-ewé account wọn.
 
@@ -25,7 +25,7 @@ Láti tẹ̀síwájú, user náà kan nílò láti tẹ bọ́tìnì **Complete 
 
 ![Ojú-ewé Account tó ń fi asia ìyípadà membership tó ń dúró hàn](/img/account-page/pending-change.png)
 
-### Ohun tó máa ṣẹlẹ̀ nígbà tí user kan bá sọ plan wọn di kekere
+### Ohun tó máa ṣẹlẹ̀ nígbà tí user kan bá sọ plan wọn di kekere {#what-happens-when-a-user-downgrades-their-plan}
 
 Ó ṣe pàtàkì láti ṣe àkíyèsí pé sísọ plan di kekere kì í yí configuration tó wà tẹ́lẹ̀ nínú subsite user náà padà.
 
@@ -37,7 +37,7 @@ Fún àwọn posts tó kọjá limit tí a ṣètò lórí plan náà, o ní àw
 
 ![Ojú-ewé Network Admin Settings Sites tó ń fi àwọn àṣàyàn ìhùwàsí post-limit-exceeded hàn](/img/account-page/settings-sites-post-limit.png)
 
-### Ohun tó máa ṣẹlẹ̀ sí payment
+### Ohun tó máa ṣẹlẹ̀ sí payment {#what-happens-to-the-payment}
 
 Nínú version 2.0, kò tún nílò àwọn àtúnṣe kankan lórí payment ní ti proration mọ́.
 

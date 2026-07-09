@@ -3,13 +3,13 @@ title: 建立折扣碼
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# 建立折扣代碼（v2）
+# 建立折扣代碼（v2） {#creating-discount-codes-v2}
 
 _**重要注意事項：本文適用於 Ultimate Multisite 版本 2.x。**_
 
 使用 Ultimate Multisite，你可以建立折扣代碼，為你的客戶提供訂閱折扣。而且建立起來很簡單！
 
-## 建立與編輯折扣代碼
+## 建立與編輯折扣代碼 {#creating-and-editing-discount-codes}
 
 若要建立或編輯折扣代碼，請前往 **Ultimate Multisite > 折扣代碼**。
 
@@ -87,7 +87,7 @@ _**重要注意事項：本文適用於 Ultimate Multisite 版本 2.x。**_
 
 ###
 
-### 使用 URL 參數：
+### 使用 URL 參數： {#using-url-parameters}
 
 如果你想自訂網站的價格表，或為你的網站建立漂亮的優惠券代碼頁面，並想自動將折扣代碼套用到結帳表單，可以透過 URL 參數完成。
 

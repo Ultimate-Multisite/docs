@@ -3,7 +3,7 @@ title: Wie kann ich ein Abonnement kündigen?
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Wie kann ich min Abonnement kündigen?
+# Wie kann ich min Abonnement kündigen? {#how-can-i-cancel-my-subscription}
 
 Wenn Sie e Ultimate Multisite Lizenz händ, chönntet Sie d'Erneuerung jederzeit kündige, wann Sie wend. Folg eifach de Schritt:
 

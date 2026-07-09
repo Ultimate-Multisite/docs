@@ -3,13 +3,13 @@ title: Dërgimi i emaileve dhe transmetimeve
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Dërgimi i emaileve dhe transmetimeve (v2)
+# Dërgimi i emaileve dhe transmetimeve (v2) {#sending-emails-and-broadcasts-v2}
 
 _**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 
 Ultimate Multisite vjen me një veçori që do t’ju lejojë të komunikoni me klientët tuaj duke dërguar një email te një përdorues i synuar ose te një grup përdoruesish, si edhe duke dërguar njoftime në dashboard-in e tyre të administrimit për të transmetuar lajmërime
 
-## Shtoni njoftime administrimi në dashboard-in e klientëve tuaj me Broadcasts
+## Shtoni njoftime administrimi në dashboard-in e klientëve tuaj me Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Duke përdorur veçorinë e transmetimit të Ultimate Multisite, mund të shtoni **njoftime administrimi** në dashboard-in e administrimit të subsajtit të përdoruesit tuaj.
 
@@ -51,7 +51,7 @@ Pasi të krijoni mesazhin tuaj, mund të shtypni butonin **Send**.
 
 Dhe kaq. Njoftimi i administrimit duhet të shfaqet menjëherë në dashboard-in e përdoruesit tuaj.
 
-## Dërgoni emaile klientëve tuaj
+## Dërgoni emaile klientëve tuaj {#send-emails-to-your-customers}
 
 Duke përdorur veçorinë e transmetimit të Ultimate Multisite, mund t’u dërgoni një email përdoruesve tuaj. Keni një opsion për ta dërguar emailin vetëm te përdorues specifikë ose për të synuar një grup specifik përdoruesish bazuar në produktin ose planin nën të cilin janë abonuar.
 
@@ -81,11 +81,11 @@ Pasi të krijoni mesazhin tuaj, mund të shtypni butonin **Send**.
 
 Dhe kaq e lehtë është të dërgoni një email te përdoruesit tuaj fundorë duke përdorur veçorinë e transmetimit.
 
-## Emailet e sistemit
+## Emailet e sistemit {#system-emails}
 
 Emailet e sistemit në Ultimate Multisite janë ato **njoftime automatike** që dërgohen nga sistemi pas veprimeve të caktuara si regjistrimi, pagesa, lidhja e domain-it, etj. Këto emaile mund të redaktohen ose modifikohen nga cilësimet e Ultimate Multisite. Ai vjen gjithashtu me një veçori që do t’ju lejojë të rivendosni dhe importoni cilësimet ekzistuese nga një instalim tjetër i Ultimate Multisite.
 
-### Rivendosja & Importimi
+### Rivendosja & Importimi {#resetting--importing}
 
 Versionet e reja të Ultimate Multisite, si edhe shtesat, mund të regjistrojnë dhe do të regjistrojnë emaile të reja herë pas here.
 
@@ -93,7 +93,7 @@ Për të parandaluar konflikte dhe probleme të tjera, **ne nuk do t’i shtojm�
 
 Megjithatë, super administratorët dhe agjentët mund t’i importojnë këto emaile të regjistruara rishtazi përmes mjetit të importuesit. Ky proces do të krijojë një email të ri sistemi me përmbajtjen dhe konfigurimin e modelit të ri të emailit, duke i lejuar super administratorit të bëjë çfarëdo modifikimesh që dëshiron ose t’i mbajë ashtu siç janë.
 
-#### Si të importoni emailet e sistemit
+#### Si të importoni emailet e sistemit {#how-to-import-system-emails}
 
 Shkoni te faqja juaj e Cilësimeve të Ultimate Multisite dhe kaloni te skeda **Emails**.
 
@@ -111,7 +111,7 @@ Pastaj, mund të aktivizoni ose çaktivizoni opsionet Import Emails për të par
 
 <!-- Screenshot unavailable: Modaliteti Reset and Import me opsionet Import Emails të zgjeruara -->
 
-#### Rivendosja e email-eve të sistemit
+#### Rivendosja e email-eve të sistemit {#reseting-system-emails}
 
 Herë të tjera, do të kuptoni se ndryshimet që keni bërë në një shabllon të caktuar email-i nuk po funksionojnë më për ju dhe dëshironi ta rivendosni në **gjendjen e tij të parazgjedhur**.
 

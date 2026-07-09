@@ -3,7 +3,7 @@ title: Ho tloha ba bohlokoa
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Ho Fana a Moreroa (Managing Customers)
+# Ho Fana a Moreroa (Managing Customers) {#managing-customers}
 
 Peje ya **Customers** (Moreroa) le bontsha lishomelelo la ba bangwe ba ba ntswetseng ba ba tsamaisang ka network ya hau. Peje e bontsha litlhahloho tsa boikotso jwa mofuta o o tshwanang, ka metsi ya email, tsela ya go tsamaya (last login), le sebope **switch to** se se bontsha hore u ka tsamaya ka user ya subsite ka ho ba site administrator.
 

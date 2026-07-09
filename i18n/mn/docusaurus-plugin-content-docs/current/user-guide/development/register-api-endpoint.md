@@ -3,7 +3,7 @@ title: API endpoint-ийг бүртгэх
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API endpoint
+# The Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 Энэхүү тусламжтай материалд та Ultimate Multisite /register API endpoint-ийг ашиглан өөрийн сүлжээнд шинэ хэрэглэгч бүрт оруулах бүх анхан шатны үйл явцыг яаж хийхийг, мөн Zapier-ээр хэрхэн хийхийг сурч үзэх болно.
 
@@ -29,11 +29,11 @@ API settings хуудсан бүр дэлгэрэнгүй үзүүлэлт:
 
 Одоо бид endpoint-ийг үзэж, дараа нь Zapier-д бүртгэл хийх үйлдлийг үүсгэе.
 
-## Endpoint body parameters
+## Endpoint body parameters {#endpoint-body-parameters}
 
 Endpoint руу илгээх шаардлагатай хамгийн бага мэдээллийн талаар ерөнхийдөө харъя. Энэ нийтлэл дууссаны дараа бид бүрэн дохиог үзэх болно.
 
-### Customer
+### Customer {#customer}
 
 Энэ нь Хэрэглэгч болон Ultimate Multisite-ийн Хэрэглэгчийг үүсгэх үйл явцад шаардлагатай мэдээлэл юм:
 
@@ -43,25 +43,25 @@ Endpoint руу илгээх шаардлагатай хамгийн бага м
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Гишүүнчлэл (Membership)**
+### **Гишүүнчлэл (Membership)** {#membership}
 
 Бидэнд энэ объект дотор зөвхөн Гишүүнчлэлийн Статус хэрэгтэй.
 
 "membership" { "status" : "string", // "pending", "active", "trialing", "expired", "on-hold", "canceled" - эдгээрээс аль нэгийг сонгоно }
 
-### **Бараа (Products)**
+### **Бараа (Products)** {#products}
 
 Бараануудад танай сүлжээний 1 ба түүнээс дээш бүтээгдэхүүний ID-ийн массив өгөгдөнө. Анхаарна уу, энэ endpoint нь бараа үүсгэхгүй. Бараа үүсгэх endpoint-ийг Ultimate Multisite-ын documentation-ыг үзээд илүү сайн ойлгоорой.
 
 **"products" : [1,2],**
 
-### **Төлбөр (Payment)**
+### **Төлбөр (Payment)** {#payment}
 
 Гишүүнчлэлийн шиг бидэнд зөвхөн статус хэрэгтэй.
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" - эдгээрээс аль нэгийг сонгоно }**
 
-### **Вэбсайт (Site)**
+### **Вэбсайт (Site)** {#site}
 
 Мөн доторх Site объектод вэбсайтын URL болон Нэр (Title)-ийг дуусгахын тулд хэрэгтэй.
 
@@ -69,13 +69,13 @@ Endpoint руу илгээх шаардлагатай хамгийн бага м
 
 Register endpoint-ээс буцаагдах үр дүн нь шинээр үүссэн гишүүнчлэлийн мэдээллийн массив байх болно.
 
-## Zapier-д үйлдлийг (action) үүсгэх
+## Zapier-д үйлдлийг (action) үүсгэх {#creating-an-action-in-zapier}
 
 Шинэ бөгөөд илүү хүчирхэг бүртгэл хийх endpoint-ийн нэвтрэлтээр та Zapier-д шинэ action-ыг ашиглаж эхлэх боломжтой болно.
 
 Zapier-ийн шинэ хувилбараар юу хийж, яаж ашиглах талаар мэдэх үү? Үүнийг энд уншиж үзээрэй. (link?)
 
-### Үйлдлийг үүсгэх
+### Үйлдлийг үүсгэх {#creating-an-action}
 
 Zapier-тэй registration endpoint-и хэрхэн ашиглахыг илүү сайн ойлгоход зориулж, бид Google Forms-той integration хийе. Энэ формоор мэдээлэл оруулахаа бүртэл, тухайн мэдээллийг form-ын хариулын хуудас (answer sheet)-т хадгаснаар Ultimate Multisite сүлжээнд шинэ гишүүнээр нэвтрэх үйл явц хийгдэнэ.
 
@@ -105,7 +105,7 @@ Ultimate Multisite app-ыг олж сонгоорой. Энэ төрлийн Zap
 
 Протестируйте свой новый Zap, и он должен завершиться успешно. Если произойдет какая-либо ошибка, проверьте все поля и убедитесь, что они отправляются правильно. Поскольку информации много, некоторые вещи могут незаметить.
 
-### Полные параметры конечной точки
+### Полные параметры конечной точки {#complete-endpoint-parameters}
 
 Вот полный вызов и все возможности полей, которые могут быть отправлены.
 

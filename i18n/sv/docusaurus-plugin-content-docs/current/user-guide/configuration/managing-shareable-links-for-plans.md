@@ -3,7 +3,7 @@ title: Hantera delbara länkar för planer
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Hantera delbara länkar för planer
+# Hantera delbara länkar för planer {#managing-shareable-links-for-plans}
 
 Ultimate Multisite ger dig möjlighet att dela planlänkar direkt med dina kunder. För att göra detta, gå till redigeringssidan för någon av dina planer och klicka på knappen _Klicka för att kopiera den delbara länken_.
 

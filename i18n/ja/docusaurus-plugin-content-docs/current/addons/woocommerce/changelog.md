@@ -3,7 +3,7 @@ title: WooCommerce 統合変更履歴
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce 連携変更履歴
+# WooCommerce 連携変更履歴 {#woocommerce-integration-changelog}
 
 バージョン 2.2.0 - 2026-07-01 リリース
 * 新規: Ultimate Multisite の税額が、チェックアウト時に個別の WooCommerce 手数料行として表示されるようになり、支払い前に税合計が分かりやすくなりました。

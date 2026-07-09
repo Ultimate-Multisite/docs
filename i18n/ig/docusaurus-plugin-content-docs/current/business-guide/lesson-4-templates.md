@@ -3,15 +3,15 @@ title: 'Ihe ọmụmụ 4: Iwulite ndebiri maka ngalaba pụrụ iche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ihe Ọmụmụ 4: Iwulite Template Niche
+# Ihe Ọmụmụ 4: Iwulite Template Niche {#lesson-4-building-niche-templates}
 
 Template bụ isi nke nkwupụta uru niche gị. Onye nwe studio mgbatị ahụ debanyere aha ma hụ saịtị nke dịlarị ka webụsaịtị mgbatị ahụ -- nwere usoro klas, profaịlụ ndị nkuzi, na onyonyo kwesịrị ekwesị -- nwere ike ịnọgide karịa onye hụrụ ebe efu.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 Anyị nwere network FitSite na-arụ ọrụ nke etinyere Ultimate Multisite ma hazie ya. Ugbu a anyị na-ewulite template ndị na-eme ka FitSite dị ka e wuru ya kpọmkwem maka azụmahịa mgbatị ahụ.
 
-## Ihe Mere Template Niche Ji Dị Mkpa
+## Ihe Mere Template Niche Ji Dị Mkpa {#why-niche-templates-matter}
 
 Template nkịtị na-amanye ndị ahịa gị ime ọrụ siri ike: ịchọpụta ibe ndị ha chọrọ, ụdị nhazi ọdịnaya na-arụ ọrụ, na otu esi mee ka ọ dị mma maka ụlọ ọrụ ha. Template niche na-ewepụ mgbochi ahụ.
 
@@ -24,11 +24,11 @@ Onye nwe studio mgbatị ahụ debanyere aha na FitSite kwesịrị ịhụ:
 
 Ha na-ejupụta nkọwa ha. Ha anaghị amalite site na mbido.
 
-## Ime Atụmatụ Template Gị
+## Ime Atụmatụ Template Gị {#planning-your-templates}
 
 Tupu iwulite, kpebie template ị ga-enye. Maka FitSite, anyị ga-emepụta atọ:
 
-### Template 1: Studio Essential
+### Template 1: Studio Essential {#template-1-studio-essential}
 
 Maka obere studio na ndị nkuzi onwe onye.
 
@@ -39,7 +39,7 @@ Maka obere studio na ndị nkuzi onwe onye.
 - Ibe **Contact** nwere maapụ ebe na fọm
 - **Nhazi dị ọcha, nke oge a** nwere atụmatụ agba kwesịrị ekwesị maka mgbatị ahụ
 
-### Template 2: Gym Pro
+### Template 2: Gym Pro {#template-2-gym-pro}
 
 Maka gym guzobegoro nke nwere ọrụ ndị ọzọ.
 
@@ -50,7 +50,7 @@ Maka gym guzobegoro nke nwere ọrụ ndị ọzọ.
 - Ngalaba **Testimonials** na homepage
 - Nhọrọ **branding pụtara ìhè karịa**
 
-### Template 3: Fitness Chain
+### Template 3: Fitness Chain {#template-3-fitness-chain}
 
 Maka ọrụ nwere ọtụtụ ebe.
 
@@ -60,17 +60,17 @@ Maka ọrụ nwere ọtụtụ ebe.
 - **Branding etinyere n'etiti** nwere nkọwa pụrụ iche maka ebe ọ bụla
 - **Ndepụta ndị ọrụ** gafee ebe dị iche iche
 
-## Iwulite Saịtị Template
+## Iwulite Saịtị Template {#building-a-template-site}
 
 Na Ultimate Multisite, template bụ naanị saịtị WordPress ahaziri dịka ịchọrọ ka saịtị ndị ahịa ọhụrụ dị. Nke a bụ otu esi emepụta otu:
 
-### Nzọụkwụ 1: Mepụta Saịtị Template
+### Nzọụkwụ 1: Mepụta Saịtị Template {#step-1-create-the-template-site}
 
 1. Gaa na **Sites > Add New** na admin network gị
 2. Mepụta saịtị akpọrọ `template-studio-essential`
 3. Saịtị a na-aghọ akwa ọrụ gị
 
-### Nzọụkwụ 2: Wụnye ma Hazie Theme
+### Nzọụkwụ 2: Wụnye ma Hazie Theme {#step-2-install-and-configure-the-theme}
 
 Gbanwee gaa na dashboard saịtị template ma:
 
@@ -82,7 +82,7 @@ Gbanwee gaa na dashboard saịtị template ma:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Nzọụkwụ 3: Mepụta Ibe Ndị Ahụ
+### Nzọụkwụ 3: Mepụta Ibe Ndị Ahụ {#step-3-create-the-pages}
 
 Wulite ibe ọ bụla nwere:
 
@@ -92,7 +92,7 @@ Wulite ibe ọ bụla nwere:
 
 Mee ka ọdịnaya placeholder bụrụ nke na-akụzi ebe o kwere omume. Kama ederede ndochi nkịtị, dee ọdịnaya dịka: "Dochie nke a na nkọwa dị mkpirikpi banyere studio gị na ihe na-eme ka ọ bụrụ pụrụ iche. Kwuo nkà ihe ọmụmụ ọzụzụ gị, afọ ahụmịhe, ma ọ bụ ihe ndị ahịa nwere ike ịtụ anya."
 
-### Nzọụkwụ 4: Hazie Plugins
+### Nzọụkwụ 4: Hazie Plugins {#step-4-configure-plugins}
 
 Wụnye ma mee ka plugins ndị studio mgbatị ahụ chọrọ rụọ ọrụ:
 
@@ -100,7 +100,7 @@ Wụnye ma mee ka plugins ndị studio mgbatị ahụ chọrọ rụọ ọrụ:
 - Plugin fọm kọntaktị
 - Plugin SEO (ahaziri tupu oge na ndabara metụtara mgbatị ahụ)
 
-### Nzọụkwụ 5: Kaa Ya Dịka Template
+### Nzọụkwụ 5: Kaa Ya Dịka Template {#step-5-mark-as-template}
 
 1. Gaa na **Ultimate Multisite > Sites**
 2. Dezie saịtị template ahụ
@@ -108,7 +108,7 @@ Wụnye ma mee ka plugins ndị studio mgbatị ahụ chọrọ rụọ ọrụ:
 
 Tinyegharịa usoro a maka template ọ bụla ịchọrọ inye.
 
-## Ndepụta Nlele Ogo Template
+## Ndepụta Nlele Ogo Template {#template-quality-checklist}
 
 Tupu ime ka template dị, nyochaa:
 
@@ -121,7 +121,7 @@ Tupu ime ka template dị, nyochaa:
 - [ ] Enweghị njikọ gbajiri agbaji ma ọ bụ assets furu efu
 - [ ] Ọsọ ibupụta ibe bụ nke a nabatara
 
-## Network FitSite Ruo Ugbu A
+## Network FitSite Ruo Ugbu A {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Ihe Anyị Wulitere na Ihe Ọmụmụ A
+## Ihe Anyị Wulitere na Ihe Ọmụmụ A {#what-we-built-this-lesson}
 
 - **Template atọ pụrụ iche maka niche** e mere maka nha azụmahịa mgbatị ahụ dị iche iche
 - **Ọdịnaya na onyonyo kwesịrị ekwesị maka mgbatị ahụ** nke na-eme ka platform dị ka e wuru ya kpọmkwem

@@ -3,7 +3,7 @@ title: Klaida su Sunrise File
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Klaida įdėdamas Sunrise failą
+# Klaida įdėdamas Sunrise failą {#error-installing-the-sunrise-file}
 
 `sunrise.php` failas yra specialusis failas, kurį WordPress ieško, kol jis inicijuojasi (bootstraps). Kad WordPress galėtų atpažinti `sunrise.php` failą, jis turi būti pateiktas **wp-content** kataloge.
 

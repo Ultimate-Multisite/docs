@@ -3,7 +3,7 @@ title: د سایت قالبونو کې خودکار търسنه او بدلول
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# سیت ٹیمپليټونو کې خودکار търسنه او بدلول (v2)
+# سیت ٹیمپليټونو کې خودکار търسنه او بدلول (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**دا تعلیمی راهندل د Ultimate Multisite نسخه ۲.x ته اړتیا لري.**_
 
@@ -17,7 +17,7 @@ Ultimate Multisite د ډیر قوي خوند څخه دی چې تاسو ته اج
 
 Ultimate Multisite بیا Placeholder (محلول ځایونه) له ورته کارمند طرفه ورکړل شوي معلومات سره خودکار بدلوي.
 
-## **"سیت چې placeholder لرو" problemet حل کول**
+## **"سیت چې placeholder لرو" problemet حل کول** {#solving-the-template-full-of-placeholders-problem}
 
 دا ټول ښه دی، خو موږ یو بد مشکله ته ورشي: اوس زموږ سیت ٹیمپليټونه - چې کارمænd (customers) یې راغلاست، Placeholder (محلول ځایونه) له بد شکل دي چې ډیر خبرې نه کوي.
 

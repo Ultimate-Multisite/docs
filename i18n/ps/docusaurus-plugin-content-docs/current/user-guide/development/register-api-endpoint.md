@@ -3,7 +3,7 @@ title: API Endpoint Register
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# دغlere Ultimate Multisite Register API endpoint
+# دغlere Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 په دې درس کې، تاسو زده کړئ چې څنګه Ultimate Multisite /register API endpoint کارولو لپاره هم لروپي (onboarding) پر یو نوی کلاینټ په خپل شبکه کې جوړ کړئ او څنګه دا کار له لارې د Zapier سره پیل کړئ.
 
@@ -29,11 +29,11 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 خاور، اوس اترای له endpoint سره탐کن و کارول او بیا په Zapier کې د ثبت کولو عمل (registration action) جوړ کړئ.
 
-## Endpoint body parameters
+## Endpoint body parameters {#endpoint-body-parameters}
 
 لکه چې موږ باید ورته لروپي ته ترې څه معلومات پامل ګرځو، دا یو پرورش دی. په دې مقاله پای کې، تاسو پوره پوښتنه پیدا کوئ.
 
-### Customer
+### Customer {#customer}
 
 دا هغه معلومات دي چې کارونکي (User) او Ultimate Multisite کلاینټ جوړولو پروسې لپاره اړین دي:
 
@@ -43,25 +43,25 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership** (عضویت)
+### **Membership** (عضویت) {#membership}
 
 موږ ته د دې شی کې یوازې Membership Status (عضویت کی وضعیت) معلومات دي.
 
 "membership" { "status" : "string", // یو له "pending" (پېژندل)، "active" (فعال)، "trialing" (د آزموینه)، "expired" (منقضی)، "on-hold" (په توګه منځ ته)، "canceled" (منغله) څخه یو },
 
-### **Products** (مجموعې مصنوعات)
+### **Products** (مجموعې مصنوعات) {#products}
 
 مصنوعاتانو ته د ستاسو شبکه څخه ۱ یا ډېر محصول IDहरूको آر得ی (array) ورکول کیږي. احتیاط وکړئ، دا endpoint مصنوعات نیسي نه جوړوي. د مصنوعات جوړولو endpoint په ښه پوهې کولو لپاره Ultimate Multisite-ৰ dokumentasjonen وګورئ.
 
 **"products" : [1,2],**
 
-### Payment (پایله)
+### Payment (پایله) {#payment}
 
 همانګه د Membership په څېر، موږ یوازې وضعیت ته اړتیا لرئ.
 
 **"payment" { "status" : "string", // یو له "pending" (پېژندل)، "completed" (تام پوره)، "refunded" (د بیا ورکړل شوی)، "partially-refunded" (په جزوي ډول بیا ورکړل شوی)، "partially-paid" (په جزوي ډول پیسې ورکړل شوي)، "failed" (مخلوف شو)، "canceled" (منغله) څخه یو },**
 
-### Site (مکان)
+### Site (مکان) {#site}
 
 او د بدن پای ته ورسولو لپاره موږ باید د سایت URL او Title هم په Site object کې ونه کړو.
 
@@ -69,13 +69,13 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 د register endpoint خوندل (return) یو آر得ی (array) به وي چې نوی جوړ شوی membership معلومات یې پکې وي.
 
-## Creating an action in Zapier (په Zapier کې عمل جوړول)
+## Creating an action in Zapier (په Zapier کې عمل جوړول) {#creating-an-action-in-zapier}
 
 د دې نوي او قوي حساب جوړولو endpoint په رادللو سره، تاسو د Zapier کې یو نوی عمل هم ترلاسه کوئ.
 
 ایا تاسو پوهیدئ چې څنګه د Zapierको نوي نسخه وړاندې کولو ټول امکانات کار کړئ او له لاسه ورکړئ؟ زیات معلومات ترلاسه کړئ دلته. (لینک؟)
 
-### Creating an action (عمل جوړول)
+### Creating an action (عمل جوړول) {#creating-an-action}
 
 د دې ښودل چې څنګه د registration endpoint له لارې له Zapier څخه کارولو سره، موږ یو integration (اتصال) په Google Forms جوړوي. هر وخت چې دا form پوره کیږي او معلومات په form کې د ځوابsheet کې محفوظ شي، نو Ultimate Multisite network کې یو نوی membership (عضویت) جوړیږي.
 
@@ -105,7 +105,7 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 د خپل نوی Zap آزموینه وکړئ او باید په بریالیت سره پای ته ورسیږي. که کوم خطا پیښیږي، ټول فیلدا وګورئ او وګورئ چې آیا دوی په سمه توګه پېښه کیږي. ځکه معلومات ډېر دي، ځینې شیان ښای شي چې ولګول نشي.
 
-### ټول endpoint پارامټرو
+### ټول endpoint پارامټرو {#complete-endpoint-parameters}
 
 دلته ټول کال او هغه فیلدونه چې پېښه کیری کولی شي.
 

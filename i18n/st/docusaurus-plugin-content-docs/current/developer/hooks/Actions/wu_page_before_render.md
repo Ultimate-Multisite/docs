@@ -4,20 +4,20 @@ title: Ketso - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Ketso: wu_page_before_render
+# Ketso: wu_page_before_render {#action-wupagebeforerender}
 
 Dumella bahlahisi ba ditlatsetso ho kenya dikahare tse ding pele re hatisa leqephe.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
 | $page_id | `string` | id ya leqephe lena. |
 | $page | `object` | object ya leqephe. |
 
-### Ho tloha ka
+### Ho tloha ka {#since}
 
 - 1.8.2
-### Mohloli
+### Mohloli {#source}
 
 E hlalositswe ho [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L388) moleng wa 388

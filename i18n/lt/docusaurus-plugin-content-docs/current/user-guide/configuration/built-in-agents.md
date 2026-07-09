@@ -3,11 +3,11 @@ title: Integruotieji agentai
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Integruoti Agentai
+# Integruoti Agentai {#built-in-agents}
 
 Gratis AI Agent v1.9.0 pateikiamas su penkiais integruotais agentais, kurių kiekvienas iš anksto sukonfigūruotas su tikslingu įrankių rinkiniu, pritaikytu sistemos raginimu ir pradiniais pasiūlymais, atitinkančiais įprastas tos srities užduotis. Perjungiant agentus keičiasi tai, ką asistentas gali daryti ir kaip jis atsako — be jokios konfigūracijos iš jūsų pusės. Superdav AI Agent v1.18.0 gali pridėti tvarkaraštį suvokiančius įrankius, priminimų įrašus, patvirtinimo vartus ir SMS pranešimus prie šių darbo eigų, kai susijusios integracijos yra sukonfigūruotos.
 
-## Kas yra agentas?
+## Kas yra agentas? {#what-is-an-agent}
 
 Kiekvienas agentas yra pavadintas konfigūracijos profilis, kuris sujungia:
 
@@ -15,7 +15,7 @@ Kiekvienas agentas yra pavadintas konfigūracijos profilis, kuris sujungia:
 - **Sistemos raginimas** — instrukcijos, nustatančios agento toną, prioritetus ir apribojimus
 - **Pasiūlymai** — iš anksto parašyti raginimai, rodomi pokalbio sąsajoje, kad padėtų greitai pradėti
 
-## Prieiga prie agento pasirinkiklio
+## Prieiga prie agento pasirinkiklio {#accessing-the-agent-picker}
 
 1. Atidarykite **Gratis AI Agent** skydelį WordPress administratoriaus šoninėje juostoje.
 2. Spustelėkite **agento piktogramą** pokalbio antraštės viršutiniame kairiajame kampe (piktograma keičiasi, kad atspindėtų aktyvų agentą).
@@ -24,9 +24,9 @@ Kiekvienas agentas yra pavadintas konfigūracijos profilis, kuris sujungia:
 
 Taip pat galite perjungti agentus pokalbio viduryje — naujojo agento sistemos raginimas įsigalioja nuo kitos žinutės.
 
-## Penki integruoti agentai
+## Penki integruoti agentai {#the-five-built-in-agents}
 
-### Turinio rašytojas
+### Turinio rašytojas {#content-writer}
 
 **Sritis:** Įrašų, puslapių ir kontaktinių formų kūrimas bei redagavimas.
 
@@ -47,7 +47,7 @@ Taip pat galite perjungti agentus pokalbio viduryje — naujojo agento sistemos 
 
 ---
 
-### Svetainės kūrėjas
+### Svetainės kūrėjas {#site-builder}
 
 **Sritis:** Svetainės kūrimas nuo pradžios iki pabaigos pagal vieną raginimą.
 
@@ -70,7 +70,7 @@ Taip pat galite perjungti agentus pokalbio viduryje — naujojo agento sistemos 
 
 ---
 
-### Dizaino studija
+### Dizaino studija {#design-studio}
 
 **Sritis:** Vizualinis pritaikymas — spalvos, tipografija, CSS ir blokų šablonai.
 
@@ -87,7 +87,7 @@ Taip pat galite perjungti agentus pokalbio viduryje — naujojo agento sistemos 
 - *Padaryk pagrindinio puslapio ekrano kopiją ir pasakyk, ką patobulintum.*
 - *Sukurk daugkartinio naudojimo hero bloko šabloną su viso pločio fono paveikslėliu ir centruota antrašte.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Sritis:** WordPress plugins atradimas, diegimas ir valdymas.
 
@@ -105,7 +105,7 @@ Taip pat galite perjungti agentus pokalbio viduryje — naujojo agento sistemos 
 
 ---
 
-### Pagalbos asistentas
+### Pagalbos asistentas {#support-assistant}
 
 **Sritis:** Atsakymai į klausimus apie svetainės turinį, nustatymus ir WordPress konfigūraciją.
 
@@ -124,7 +124,7 @@ Taip pat galite perjungti agentus pokalbio viduryje — naujojo agento sistemos 
 
 ---
 
-## Superdav automatizavimo integracijos
+## Superdav automatizavimo integracijos {#superdav-automation-integrations}
 
 Kai sukonfigūruotos Superdav AI Agent v1.18.0 integracijos, integruoti agentai gali dalyvauti saugesnėse, tvarkaraštį įvertinančiose automatizavimo darbo eigose:
 
@@ -138,11 +138,11 @@ Rekomenduojama darbo eiga: paprašykite agento parengti pranešimą arba veiksm�
 
 ---
 
-## Agentų pritaikymas
+## Agentų pritaikymas {#customising-agents}
 
 Kiekvieną integruotą agentą galima išplėsti arba pakeisti naudojant `gratis_ai_agent_agents` filtrą.
 
-### Pasirinktinio sistemos raginimo pridėjimas prie esamo agento
+### Pasirinktinio sistemos raginimo pridėjimas prie esamo agento {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Naujo agento registravimas
+### Naujo agento registravimas {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Naujasis agentas pasirodo agentų parinkiklyje iškart po to, kai paleidžiamas filtras.
 
-### Integruoto agento pašalinimas
+### Integruoto agento pašalinimas {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

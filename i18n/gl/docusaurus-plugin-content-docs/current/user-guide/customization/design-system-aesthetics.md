@@ -3,11 +3,11 @@ title: Estética do Sistema de Diseño Habilidade
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Habilidad de Estética do Sistema de Design
+# Habilidad de Estética do Sistema de Design {#design-system-aesthetics-skill}
 
 A **habilidade de estética do sistema de design** é unha forma guiada de refinar a identidade visual do seu sitio. Axuda a tomar decisións consistentes sobre tipografía, cor, espaciamento e tokens de movimiento que definen o seu sistema de design.
 
-## O que é a Estética do Sistema de Design?
+## O que é a Estética do Sistema de Design? {#what-is-design-system-aesthetics}
 
 A Estética do Sistema de Design é unha habilidad estructurada que cubre:
 
@@ -20,9 +20,9 @@ A Estética do Sistema de Design é unha habilidad estructurada que cubre:
 
 Estas decisións están capturadas no ficheiro `theme.json` do seu tema, creando un sistema visual coeso.
 
-## Por que usar a Estética do Sistema de Design?
+## Por que usar a Estética do Sistema de Design? {#why-use-design-system-aesthetics}
 
-### Consistencia
+### Consistencia {#consistency}
 
 Un sistema de design asegura:
 
@@ -31,7 +31,7 @@ Un sistema de design asegura:
 - Que o espaciamento siga un patrón predecible
 - Que as animacións se sintan unificadas
 
-### Eficiencia
+### Eficiencia {#efficiency}
 
 En lugar de tomar decisións de diseño página por página, tú:
 
@@ -39,7 +39,7 @@ En lugar de tomar decisións de diseño página por página, tú:
 - Aplícalos en todas partes
 - Actualizas globalmente cambiando un único valor
 
-### Flexibilidade
+### Flexibilidade {#flexibility}
 
 Podes:
 
@@ -47,9 +47,9 @@ Podes:
 - Experimentar con estéticas diferentes
 - Mantecer a consistencia da marca ao evoluir
 
-## Activación da Habilidad de Estética do Sistema de Design
+## Activación da Habilidad de Estética do Sistema de Design {#triggering-the-design-system-aesthetics-skill}
 
-### Activación Manual
+### Activación Manual {#manual-activation}
 
 Podes empezar a habilidad en cualquier momento:
 
@@ -69,7 +69,7 @@ ou
 "Guide me through design system decisions"
 ```
 
-### Sugerencias Automáticas
+### Sugerencias Automáticas {#automatic-suggestions}
 
 Os agentes poden sugerir o uso desta habilidad cuando tú:
 
@@ -78,9 +78,9 @@ Os agentes poden sugerir o uso desta habilidad cuando tú:
 - Que que mejorar a consistencia visual
 - Estás preparando o lanzamiento do teu sitio
 
-## O Proceso de Estética do Sistema de Diseño
+## O Proceso de Estética do Sistema de Diseño {#the-design-system-aesthetics-process}
 
-### Passo 1: Tipografia
+### Passo 1: Tipografia {#step-1-typography}
 
 O agente pergunta sobre as túas eleccións de fonte:
 
@@ -110,7 +110,7 @@ O agente define então:
 - **Escala de pesos (Weight scale)**: Pesos da fonte (regular, médio, negrito, etc.)
 - **Altura da linha (Line height)**: Espaçamento entre linhas para legibilidade
 
-### Passo 2: Paleta de Cores
+### Passo 2: Paleta de Cores {#step-2-color-palette}
 
 ```
 Vamos definir a tua paleta de cores.
@@ -158,7 +158,7 @@ O agente define os tokens de espaçamento:
 - Escala: xs, sm, md, lg, xl, 2xl
 - Valores específicos para padding, margin, gap
 
-### Passo 4: Bordes e Sombras
+### Passo 4: Bordes e Sombras {#step-3-spacing}
 
 ```
 Profundidade visual e definição:
@@ -181,7 +181,7 @@ O agente cria:
 - Tokens de sombra para níveis de elevação
 - Tokens de largura do borde
 
-### Passo 5: Movimento e Animação
+### Passo 5: Movimento e Animação {#step-4-borders-and-shadows}
 
 ```
 Como debe sentirse o seu sitio cuando é interativo?
@@ -203,9 +203,9 @@ O agente define:
 - Funções de easing (ease-in, ease-out, ease-in-out)
 - Keyframes de animación para interacciones comunes
 
-## Aplicar Estética do Design System
+## Aplicar Estética do Design System {#step-5-motion-and-animation}
 
-### Aplicación Automática
+### Aplicación Automática {#applying-design-system-aesthetics}
 
 Depois de completar a habilidad, o agente:
 
@@ -214,7 +214,7 @@ Depois de completar a habilidad, o agente:
 3. Regenera os estilos dos blocos para combinar co novo sistema
 4. Activa o tema actualizado
 
-### Aplicación Manual
+### Aplicación Manual {#automatic-application}
 
 Poderás editar o `theme.json` directamente:
 
@@ -253,9 +253,9 @@ Poderás editar o `theme.json` directamente:
 }
 ```
 
-## Vistando o Seu Sistema de Diseño
+## Vistando o Seu Sistema de Diseño {#manual-application}
 
-### Pregunte ao Agente
+### Pregunte ao Agente {#viewing-your-design-system}
 
 ```
 "Mostra-me o meu sistema de design"
@@ -269,13 +269,13 @@ ou
 
 O agente mostrará a súa tipografia, cores, espaçamento e outros tokens.
 
-### Vista theme.json
+### Vista theme.json {#ask-the-agent}
 
 Abra `/wp-content/themes/[theme-name]/theme.json` noutro editor de texto para ver as definición brutas dos tokens.
 
-## Actualizando o Seu Sistema de Diseño
+## Actualizando o Seu Sistema de Diseño {#view-themejson}
 
-### Actualizacións Rápidas
+### Actualizacións Rápidas {#updating-your-design-system}
 
 Pregunte ao agente por cambio específicos:
 
@@ -295,7 +295,7 @@ ou
 "Cambia a fonte dos títulos para uma serif"
 ```
 
-### Rediseño Completo
+### Rediseño Completo {#quick-updates}
 
 Vista de novo a habilidad Design System Aesthetics:
 
@@ -305,7 +305,7 @@ Vista de novo a habilidad Design System Aesthetics:
 
 Isto guiará por todas as decisións de novo, começando pelos valores actuais.
 
-### Actualizacións Parciais
+### Actualizacións Parciais {#full-redesign}
 
 Actualize aspectos específicos:
 
@@ -313,15 +313,15 @@ Actualize aspectos específicos:
 "Só actualiza a paleta de cores, mantén todo o resto"
 ```
 
-## Melhores Práticas do Sistema de Diseño
+## Melhores Práticas do Sistema de Diseño {#partial-updates}
 
-### Consistencia
+### Consistencia {#design-system-best-practices}
 
 - Usa os mesmos tokens en todas partes
 - Non crentes cores ou tamaños únicos
 - Referencia tokens en vez de codificar valores directamente
 
-### Nomeación
+### Nomeación {#consistency-1}
 
 Usa nomes claros e semânticos:
 
@@ -331,7 +331,7 @@ Usa nomes claros e semânticos:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Escalabilidade
+### Escalabilidade {#naming}
 
 Procura diseñar o teu sistema para escalar:
 
@@ -339,7 +339,7 @@ Procura diseñar o teu sistema para escalar:
 - Cria escalas (xs, sm, md, lg, xl) en vez de valores arbitrários
 - Planea para adições futuras
 
-### Documentación
+### Documentación {#scalability}
 
 Documenta o teu sistema de diseño:
 
@@ -347,9 +347,9 @@ Documenta o teu sistema de diseño:
 - Quando usar cada token
 - Excecións e casos límite
 
-## Padrón Comuns do Sistema de Diseño
+## Padrón Comuns do Sistema de Diseño {#documentation}
 
-### Minimalista Moderno
+### Minimalista Moderno {#common-design-system-patterns}
 
 - Tipografía sans-serif (Inter, Helvetica)
 - Paleta de cores limitada (2-3 colores)
@@ -357,7 +357,7 @@ Documenta o teu sistema de diseño:
 - Sombras sutiles
 - Animación suave e rápida
 
-### Cálido y Amigable
+### Cálido y Amigable {#modern-minimalist}
 
 - Mezcla de serif e sans-serif
 - Paleta de cores cálida (naranjas, grises quentes)
@@ -365,7 +365,7 @@ Documenta o teu sistema de diseño:
 - Sombras suaves
 - Animaciones juguetonas
 
-### Corporativo Profesional
+### Corporativo Profesional {#warm-and-friendly}
 
 - Sans-serif limpio (Roboto, Open Sans)
 - Paleta neutra con color de acento
@@ -373,7 +373,7 @@ Documenta o teu sistema de diseño:
 - Sombras mínimas
 - Transiciones sutiles
 
-### Creativo y Audaz
+### Creativo y Audaz {#professional-corporate}
 
 - Tipografía distintiva
 - Paleta de cores audaz
@@ -381,7 +381,7 @@ Documenta o teu sistema de diseño:
 - Sombras fuertes
 - Animaciones notables
 
-## Solución de Problemas
+## Solución de Problemas {#creative-and-bold}
 
 **As mis cambios no se ven**
 - Limpa o cache do navegador
@@ -399,7 +399,7 @@ Documenta o teu sistema de diseño:
 - Edita manualmente o theme.json para os valores anteriores
 - Runcí a habilidad con eleccións diferentes
 
-## Próximos Pasos
+## Próximos Pasos {#troubleshooting}
 
 Após definir o teu sistema de diseño:
 

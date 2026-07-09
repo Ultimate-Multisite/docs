@@ -4,11 +4,11 @@ title: Filter - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item
+# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 Filtruje, či je povolené pokračovať s požiadavkou alebo nie.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtruje, či je povolené pokračovať s požiadavkou alebo nie.
 | $rest_base | `array` | Slug entity. |
 | $this | `\Base_Manager` | Inštancia objektu. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) na riadku 440

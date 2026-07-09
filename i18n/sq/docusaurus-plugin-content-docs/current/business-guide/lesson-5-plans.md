@@ -3,15 +3,15 @@ title: 'Mësimi 5: Dizajnimi i planeve tuaja'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Mësimi 5: Dizajnimi i Planeve Tuaja
+# Mësimi 5: Dizajnimi i Planeve Tuaja {#lesson-5-designing-your-plans}
 
 Nivelet e planeve tuaja nuk janë thjesht nivele çmimesh -- ato janë pasqyrim i mënyrës se si klientët e niches suaj funksionojnë realisht. Në këtë mësim do të dizajnoni nivele produktesh që përputhen me nevojat reale të bizneseve të fitness në faza të ndryshme.
 
-## Ku e Lamë
+## Ku e Lamë {#where-we-left-off}
 
 FitSite ka tre template gati (Studio Essential, Gym Pro, Fitness Chain). Tani krijojmë planet që përcaktojnë se në çfarë marrin qasje klientët dhe sa paguajnë.
 
-## Të Menduarit në Segmente Klientësh
+## Të Menduarit në Segmente Klientësh {#thinking-in-customer-segments}
 
 Gabimi që bëjnë shumica e njerëzve është dizajnimi i planeve rreth veçorive teknike (hapësirë ruajtjeje, bandwidth, numër faqesh). Klientët e niches suaj nuk mendojnë me këto terma. Një pronar palestre mendon për atë që i nevojitet për të drejtuar biznesin e tij.
 
@@ -25,11 +25,11 @@ Për studiot e fitness, ekzistojnë tre segmente natyrore:
 
 Planet tuaja duhet të lidhen me këto segmente, jo me paketa veçorish arbitrare.
 
-## Krijimi i Planeve FitSite
+## Krijimi i Planeve FitSite {#creating-the-fitsite-plans}
 
 Navigoni te **Ultimate Multisite > Products > Add Product** për secilin plan.
 
-### Plani 1: FitSite Starter -- $49/muaj
+### Plani 1: FitSite Starter -- $49/muaj {#plan-1-fitsite-starter----49month}
 
 **Synimi**: Trajnerë solo dhe studio të vogla
 
@@ -59,7 +59,7 @@ Navigoni te **Ultimate Multisite > Products > Add Product** për secilin plan.
 - Theme i zgjedhur nga ju: Force Activate
 - Të gjitha themes e tjera: Të fshehura
 
-### Plani 2: FitSite Growth -- $99/muaj
+### Plani 2: FitSite Growth -- $99/muaj {#plan-2-fitsite-growth----99month}
 
 **Synimi**: Palestra të konsoliduara me një vendndodhje
 
@@ -85,7 +85,7 @@ Navigoni te **Ultimate Multisite > Products > Add Product** për secilin plan.
 - Grupi i planit: FitSite Plans
 - Renditja e produktit: 2
 
-### Plani 3: FitSite Pro -- $199/muaj
+### Plani 3: FitSite Pro -- $199/muaj {#plan-3-fitsite-pro----199month}
 
 **Synimi**: Zinxhirë fitness me shumë vendndodhje
 
@@ -109,7 +109,7 @@ Navigoni te **Ultimate Multisite > Products > Add Product** për secilin plan.
 - Grupi i planit: FitSite Plans
 - Renditja e produktit: 3
 
-## Konfigurimi i Grupit të Planeve
+## Konfigurimi i Grupit të Planeve {#setting-up-the-plan-group}
 
 Grupi i planeve siguron që klientët mund të bëjnë upgrade ose downgrade vetëm brenda familjes së planeve FitSite. Në skedën **Up & Downgrades** të secilit plan:
 
@@ -118,7 +118,7 @@ Grupi i planeve siguron që klientët mund të bëjnë upgrade ose downgrade vet
 
 Kjo krijon një rrugë të qartë upgrade: Starter → Growth → Pro.
 
-## Shtimi i Order Bumps
+## Shtimi i Order Bumps {#adding-order-bumps}
 
 Order bumps janë produkte shtesë të ofruara gjatë checkout. Për FitSite, konsideroni:
 
@@ -128,7 +128,7 @@ Order bumps janë produkte shtesë të ofruara gjatë checkout. Për FitSite, ko
 
 Krijojini këto si produkte të llojit **Package** në Ultimate Multisite dhe lidhini me planet përkatëse.
 
-## Pse Funksionon Kjo Strukturë
+## Pse Funksionon Kjo Strukturë {#why-this-structure-works}
 
 - **Starter** heq barrierat për hyrje -- çmim i ulët, ofertë e thjeshtë, i vendos trajnerët online shpejt
 - **Growth** shton veçoritë që palestrat kërkojnë realisht -- rezervim, galeri, domain-e të personalizuara
@@ -136,7 +136,7 @@ Krijojini këto si produkte të llojit **Package** në Ultimate Multisite dhe li
 - **Order bumps** i lejojnë klientët të personalizojnë pa ndërlikuar planet kryesore
 - **Rrugë e qartë upgrade** do të thotë që klientët rriten me ju në vend që të largohen
 
-## Rrjeti FitSite Deri Tani
+## Rrjeti FitSite Deri Tani {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Çfarë Ndërtuam në Këtë Mësim
+## Çfarë Ndërtuam në Këtë Mësim {#what-we-built-this-lesson}
 
 - **Tre nivele planesh** të lidhura me segmente reale biznesesh fitness
 - **Kufizim veçorish** duke përdorur kontrollet e plugin-eve dhe template-eve të Ultimate Multisite

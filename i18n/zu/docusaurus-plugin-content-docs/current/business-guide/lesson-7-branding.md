@@ -3,15 +3,15 @@ title: 'Isifundo 7: Ukwenza kube okwakho'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Isifundo 7: Ukwenza Kube Okwakho
+# Isifundo 7: Ukwenza Kube Okwakho {#lesson-7-making-it-yours}
 
 Amakhasimende akho akufanele nanini azizwe sengathi asebenzisa "isandiso esithile se-WordPress." Kufanele azizwe sengathi asebenzisa i-FitSite -- inkundla eyakhelwe imboni yawo. Lesi sifundo sihlanganisa ukufaka uphawu, ukwenza i-white-label, nokwenza inkundla izwakale njengomkhiqizo.
 
-## Lapho Sigcine Khona
+## Lapho Sigcine Khona {#where-we-left-off}
 
 I-FitSite inenqubo yokukhokha esebenzayo ethatha abanikazi bezitudiyo zokuzivocavoca kusukela ekukhetheni uhlelo iye kusayithi elibukhoma. Manje senza lonke ulwazi lomsebenzisi luzwakale njengomkhiqizo ohlangene, onophawu.
 
-## Isizinda Senkundla Yakho
+## Isizinda Senkundla Yakho {#your-platform-domain}
 
 Isisekelo sophawu lwakho yisizinda sakho. Ku-FitSite:
 
@@ -19,7 +19,7 @@ Isisekelo sophawu lwakho yisizinda sakho. Ku-FitSite:
 - **Amasayithi amakhasimende**: `studioname.fitsite.com` (ama-subdomain)
 - **Izizinda zangokwezifiso**: Amakhasimende asezinhlelweni ze-Growth ne-Pro angakwazi ukuxhumanisa isizinda sawo
 
-### Ukusetha Isizinda Sakho
+### Ukusetha Isizinda Sakho {#setting-up-your-domain}
 
 1. Bhalisa isizinda senkundla yakho
 2. Siqondise kumhlinzeki wakho wokusingatha
@@ -28,11 +28,11 @@ Isisekelo sophawu lwakho yisizinda sakho. Ku-FitSite:
 
 Bheka [Indlela Yokulungiselela Ukuxhumanisa Izizinda](/user-guide/domain-mapping/how-to-configure-domain-mapping) ukuze uthole imiyalelo enemininingwane.
 
-## Ukwenza I-White-Label Ulwazi Lwe-Admin
+## Ukwenza I-White-Label Ulwazi Lwe-Admin {#white-labeling-the-admin-experience}
 
 Lapho umnikazi westudiyo sokuzivocavoca engena ku-dashboard yesayithi lakhe, kufanele abone uphawu lwakho, hhayi uphawu lwe-WordPress noma lwe-Ultimate Multisite.
 
-### Ikhasi Lokungena Ngokwezifiso
+### Ikhasi Lokungena Ngokwezifiso {#custom-login-page}
 
 Yenza ngokwezifiso ikhasi lokungena le-WordPress ukuze libonise:
 
@@ -40,7 +40,7 @@ Yenza ngokwezifiso ikhasi lokungena le-WordPress ukuze libonise:
 - Izithombe zangemuva ezifanele ezokuzivocavoca
 - Imibala yophawu lwakho
 
-### Ukufaka Uphawu Ku-Dashboard
+### Ukufaka Uphawu Ku-Dashboard {#dashboard-branding}
 
 Sebenzisa i-addon ye-[Admin Page Creator](/addons/admin-page-creator) noma i-CSS yangokwezifiso ukuze:
 
@@ -48,7 +48,7 @@ Sebenzisa i-addon ye-[Admin Page Creator](/addons/admin-page-creator) noma i-CSS
 - Wenze ngokwezifiso uhlelo lwemibala ye-admin ukuze luhambisane nophawu lwakho
 - Wengeze i-widget ye-dashboard yangokwezifiso enezixhumanisi ezisheshayo eziqondene nokuzivocavoca nezinsiza zosizo
 
-### Amakhasi E-Admin Angokwezifiso
+### Amakhasi E-Admin Angokwezifiso {#custom-admin-pages}
 
 Cabanga ngokudala amakhasi e-admin angokwezifiso aveza izenzo ezibaluleke kakhulu kubanikazi bezitudiyo zokuzivocavoca:
 
@@ -58,11 +58,11 @@ Cabanga ngokudala amakhasi e-admin angokwezifiso aveza izenzo ezibaluleke kakhul
 
 Lokhu kunciphisa isikhathi sokufunda ngokubeka izenzo ezihlobene nomkhakha phambili naphakathi, esikhundleni sokuzifihla kumenyu ejwayelekile ye-WordPress.
 
-## Ukufaka Uphawu Ezokuxhumana Zakho
+## Ukufaka Uphawu Ezokuxhumana Zakho {#branding-your-communications}
 
 Yonke i-imeyili, i-invoyisi, nesaziso kufanele kuqinise uphawu lwakho.
 
-### Ama-imeyili Esistimu
+### Ama-imeyili Esistimu {#system-emails}
 
 Iya ku-**Ultimate Multisite > Settings > Emails** bese wenza ngokwezifiso wonke ama-imeyili esistimu:
 
@@ -79,7 +79,7 @@ Ama-imeyili abalulekile okufanele uwenze ngokwezifiso:
 | Irisidi yenkokhelo | "Inkokhelo yamukelwe" | "Inkokhelo yokubhalisa ye-FitSite iqinisekisiwe" |
 | Ukuphela kwesivivinyo | "Isivivinyo sakho sizophela maduze" | "Isivivinyo sakho se-FitSite siphela ezinsukwini ezi-3 -- gcina iwebhusayithi yesitudiyo sakho ibukhoma" |
 
-### Ama-invoyisi
+### Ama-invoyisi {#invoices}
 
 Yenza ngokwezifiso izifanekiso zama-invoyisi nge:
 
@@ -87,7 +87,7 @@ Yenza ngokwezifiso izifanekiso zama-invoyisi nge:
 - Imininingwane yebhizinisi lakho
 - Amagama emikhiqizo aqondene nokuzivocavoca (hhayi ama-ID ezinhlelo ajwayelekile)
 
-## Isayithi Elibhekene Nekhasimende
+## Isayithi Elibhekene Nekhasimende {#the-customer-facing-site}
 
 Isizinda sakho esiyinhloko (`fitsite.com`) sidinga isayithi lokumaketha elithengisa inkundla. Lokhu kuhlukile ku-admin yenethiwekhi ye-Ultimate Multisite -- kungubuso bomphakathi bebhizinisi lakho.
 
@@ -103,7 +103,7 @@ Amakhasi abalulekile:
 Dala isayithi lakho lokumaketha njengesayithi ngaphakathi kwenethiwekhi yakho. Lokhu kukuvumela ukuthi ulilawule kusuka ku-dashboard efanayo futhi kubonise amandla enkundla yakho uqobo.
 :::
 
-## Isizinda Sangokwezifiso Samakhasimende
+## Isizinda Sangokwezifiso Samakhasimende {#custom-domain-for-customers}
 
 Kumakhasimende asezinhlelweni ezifaka izizinda zangokwezifiso, bhala inqubo ngokucacile:
 
@@ -113,7 +113,7 @@ Kumakhasimende asezinhlelweni ezifaka izizinda zangokwezifiso, bhala inqubo ngok
 
 Dala i-athikili yosizo noma okufakiwe kusizindalwazi solwazi okukhethekile kule nqubo, okubhalelwe abanikazi bezitudiyo zokuzivocavoca abangewona ochwepheshe bezobuchwepheshe.
 
-## Inethiwekhi Ye-FitSite Kuze Kube Manje
+## Inethiwekhi Ye-FitSite Kuze Kube Manje {#the-fitsite-network-so-far}
 
 ```
 Inethiwekhi Ye-FitSite
@@ -132,7 +132,7 @@ Inethiwekhi Ye-FitSite
 └── Ilungele inqubo yokwamukelwa (isifundo esilandelayo)
 ```
 
-## Esikwakhe Kulesi Sifundo
+## Esikwakhe Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Isizinda senkundla ne-DNS** kulungiselelwe ulwazi olunophawu
 - **I-admin eyenziwe i-white-label** enophawu lwe-FitSite kuyo yonke indawo

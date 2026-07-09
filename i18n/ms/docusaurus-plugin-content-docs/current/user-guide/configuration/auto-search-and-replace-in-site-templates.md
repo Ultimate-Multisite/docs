@@ -3,7 +3,7 @@ title: Cari dan Ganti Automatik dalam Templat Laman
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Carian dan Penggantian Automatik dalam Templat Tapak (v2)
+# Carian dan Penggantian Automatik dalam Templat Tapak (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Tutorial ini memerlukan WP UItimo versi 2.x.**_
 
@@ -17,7 +17,7 @@ Pelanggan anda kemudian akan dapat mengisi medan itu semasa pendaftaran.
 
 Ultimate Multisite kemudian akan menggantikan placeholder dengan data yang diberikan oleh pelanggan secara automatik.
 
-## **Menyelesaikan masalah "templat penuh dengan placeholder"**
+## **Menyelesaikan masalah "templat penuh dengan placeholder"** {#solving-the-template-full-of-placeholders-problem}
 
 Semua itu bagus, tetapi kita memang menghadapi masalah yang tidak menarik: kini templat tapak kita - yang boleh dikunjungi oleh pelanggan kita - penuh dengan placeholder yang tidak banyak memberi maklumat.
 

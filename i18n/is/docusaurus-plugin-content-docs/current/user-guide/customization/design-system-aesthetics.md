@@ -3,11 +3,11 @@ title: Aðskipti á skönnunarstefnum í design system
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skilna í Design System Aesthetics
+# Skilna í Design System Aesthetics {#design-system-aesthetics-skill}
 
 **Design System Aesthetics skíl** er leið til að leda þig í að finna fram á síðu þinni viskja. Það hjálpar þér að taka eins og sameina ákvörðum um typografi, lög, fjarska og hreyfingstölur sem eru lykilatriði fyrir design system þitt.
 
-## Hvað er Design System Aesthetics?
+## Hvað er Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics er byggt skíl sem dektar:
 
@@ -20,9 +20,9 @@ Design System Aesthetics er byggt skíl sem dektar:
 
 Þessar ákvörð eru fanga í `theme.json` skjalinu þitt, sem skapar eins og sameina viskja.
 
-## Hva er góðan af því að nota Design System Aesthetics?
+## Hva er góðan af því að nota Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Einskildleiki
+### Einskildleiki {#consistency}
 
 Design system tryggir:
 
@@ -31,7 +31,7 @@ Design system tryggir:
 - Fjarska fylgir spáanlegum skipti
 - Áhuga hreyfingar finnast eins og einn
 
-### Efni
+### Efni {#efficiency}
 
 Í stað þess að taka designskipti í hverri síðu, gert þú:
 
@@ -39,7 +39,7 @@ Design system tryggir:
 - Notið þær har sem á síðunni
 - Uppfærð globalt með því að breyta einum gildi
 
-### Flegurleiki
+### Flegurleiki {#flexibility}
 
 Þú getur:
 
@@ -47,9 +47,9 @@ Design system tryggir:
 - Prófa yfir mörgu viskja
 - Haldið fram á merkiþjónustu en þú þróast
 
-## Hvernig starta Design System Aesthetics skíl?
+## Hvernig starta Design System Aesthetics skíl? {#triggering-the-design-system-aesthetics-skill}
 
-### Handamönnuð aktivering
+### Handamönnuð aktivering {#manual-activation}
 
 Þú getur byrjað skílin nánast hvaða tíma sem:
 
@@ -69,7 +69,7 @@ eða
 "Guide me through design system decisions"
 ```
 
-### Sjálfskynningarsögur
+### Sjálfskynningarsögur {#automatic-suggestions}
 
 Agentir gætu tillótið notkun skíls þegar þú:
 
@@ -78,9 +78,9 @@ Agentir gætu tillótið notkun skíls þegar þú:
 - Vildu að bæta viskja eins og á síðunni
 - Er íbúinn til að lánast síðuna þinni
 
-## Aðskipti á Design System Aðskiptum
+## Aðskipti á Design System Aðskiptum {#the-design-system-aesthetics-process}
 
-### Árangur 1: Typografi
+### Árangur 1: Typografi {#step-1-typography}
 
 Agentur spyrir um vala þín fonta:
 
@@ -110,7 +110,7 @@ Til texta í lykiltextum (body font):
 - **Viktstefna skála**: Fontviktir (regular, medium, bold, osakan)
 - **Linjastraumur**: Fjarlandi milli linja fyrir lesi
 
-### Árangur 2: Fargaflokkur
+### Árangur 2: Fargaflokkur {#step-2-color-palette}
 
 ```
 Látum okkur skilgreina fargaflokkinn þinn.
@@ -140,7 +140,7 @@ Agentur skapar fullan flokk sem fyllir:
 - Semantíska farga (suksess, varning, villna)
 - Tilstandar við hvíling og aktivt staða
 
-### Árangur 3: Fjarlandi
+### Árangur 3: Fjarlandi {#step-3-spacing}
 
 (Texturinn er ekki framfærður í textanum upphaflega.)
 
@@ -162,7 +162,7 @@ Hjálparstafurinn skilgreinir fjarska-tökunir (spacing tokens):
 - Skala: xs, sm, md, lg, xl, 2xl
 - Sérstakliðar gildi fyrir padding, margin, gap
 
-### Stig 4: Randir og Skuggar
+### Stig 4: Randir og Skuggar {#step-4-borders-and-shadows}
 
 ```
 Visuell djúpur og skilgreining:
@@ -185,7 +185,7 @@ Hjálparstafurinn skapar:
 - Shadow tokens fyrir hækkanlegni (elevation levels)
 - Border width tokens
 
-### Stig 5: Rörelse og Animasjon
+### Stig 5: Rörelse og Animasjon {#step-5-motion-and-animation}
 
 ```
 Hvernig vilt staðlið þitt finnast þegar það er viðeigandi?
@@ -207,9 +207,9 @@ Hjálparstafurinn skilgreinir:
 - Easing functionar (ease-in, ease-out, ease-in-out)
 - Keyframes á animasjonum fyrir almenna viðskipti
 
-## Ábyrgja Design System Aesthétíku
+## Ábyrgja Design System Aesthétíku {#applying-design-system-aesthetics}
 
-### Sjálfávöxtulagning
+### Sjálfávöxtulagning {#automatic-application}
 
 Eftir að þú hefur fullført ferlið, skapar hjálparstafurinn:
 
@@ -218,13 +218,13 @@ Eftir að þú hefur fullført ferlið, skapar hjálparstafurinn:
 3. Regenerering af block styles til að passa nýtt systeminu
 4. Ákvæmd uppfærðu þema
 
-### Handhönnuð ábyrgja
+### Handhönnuð ábyrgja {#manual-application}
 
 Þú getur einnig breytt `theme.json` beint:
 
-## Sjá sjáðu yfir design system þinn
+## Sjá sjáðu yfir design system þinn {#viewing-your-design-system}
 
-### Spyrðu að agenti
+### Spyrðu að agenti {#ask-the-agent}
 
 ```
 "Visu mér design system þinn"
@@ -238,13 +238,13 @@ eða
 
 Agentur mun sýna þitt typografi, lögna, fjarska og övrantar tokens.
 
-### Sjá theme.json
+### Sjá theme.json {#view-themejson}
 
 Opna `/wp-content/themes/[theme-name]/theme.json` í textorðsveit til að sjá raunverulega greiningu tokenum.
 
-## Uppdarbera design system þinn
+## Uppdarbera design system þinn {#updating-your-design-system}
 
-### Hringrásaruppdarferðir
+### Hringrásaruppdarferðir {#quick-updates}
 
 Spyrðu að agenti um sérstaka breytingar:
 
@@ -264,7 +264,7 @@ eða
 "Breytingu hringninga fontinn í serif"
 ```
 
-### Full breyting
+### Full breyting {#full-redesign}
 
 Kynna Design System Aesthetics skilyrðinguna aftur:
 
@@ -274,7 +274,7 @@ Kynna Design System Aesthetics skilyrðinguna aftur:
 
 Þetta mun leiða þig með allar ákvörðir aftur, byrjun með núverandi gildi.
 
-### Helgi breytingar
+### Helgi breytingar {#partial-updates}
 
 Uppdarbera sérstök hlutum:
 
@@ -282,15 +282,15 @@ Uppdarbera sérstök hlutum:
 "Breytingu bara lögna mörkarljósins, halda allt annað eins og er"
 ```
 
-## Bestu vísvaldröndir fyrir design system
+## Bestu vísvaldröndir fyrir design system {#design-system-best-practices}
 
-### Samræmi
+### Samræmi {#consistency-1}
 
 - Nota sama tokens í öllum staðum
 - Skapa ekki einangseta lögna eða gildi
 - Viða að nota tokens í stað þess sem er skrifað beint inn
 
-### Naming
+### Naming {#naming}
 
 Nota klár og semantiskar nafn:
 
@@ -300,7 +300,7 @@ Nota klár og semantiskar nafn:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skálability
+### Skálability {#scalability}
 
 Designð þitt kerfi til að vexa:
 
@@ -308,15 +308,15 @@ Designð þitt kerfi til að vexa:
 - Skapa skalor (xs, sm, md, lg, xl) í stað óbestimmta gildi
 - Planu fyrir framtíðar viðbót
 
-### Dokumenta designkerfi þitt:
+### Dokumenta designkerfi þitt: {#documentation}
 
 - Hvað ferðu með sérstök lögnum?
 - Hvort notaðu hverju token (lögnum)?
 - Átök og skýrskipti
 
-## Almenn kerfisþróunarforða (Design System Patterns)
+## Almenn kerfisþróunarforða (Design System Patterns) {#common-design-system-patterns}
 
-### Modern Minimalist
+### Modern Minimalist {#modern-minimalist}
 
 - Sans-serif texta (Inter, Helvetica)
 - Lítill láglaust fargaflokk (2-3 lögnum)
@@ -324,7 +324,7 @@ Designð þitt kerfi til að vexa:
 - Subtil skuggi (subtle shadows)
 - Glúmar, hraðar áhugaverðir hreyfingar
 
-### Warm and Friendly
+### Warm and Friendly {#warm-and-friendly}
 
 - Blandning af serif og sans-serif texta
 - Varms fargaflokkur (oranges, varma grátt)
@@ -332,7 +332,7 @@ Designð þitt kerfi til að vexa:
 - Ljósa skuggi
 - Leikandi hreyfingar
 
-### Professional Corporate
+### Professional Corporate {#professional-corporate}
 
 - Glín sans-serif texta (Roboto, Open Sans)
 - Nýtr fargaflokkur með áhugaflokki
@@ -340,7 +340,7 @@ Designð þitt kerfi til að vexa:
 - Minni skuggi
 - Subtil breytingar
 
-### Creative and Bold
+### Creative and Bold {#creative-and-bold}
 
 - Sérstök texta
 - Starkur fargaflokkur
@@ -348,7 +348,7 @@ Designð þitt kerfi til að vexa:
 - Starkar skuggi
 - Markmiðsleg hreyfingar
 
-## Feilfellingar (Troubleshooting)
+## Feilfellingar (Troubleshooting) {#troubleshooting}
 
 **Mín breytingar í designkerfi þinni sýna ekki**
 - Gláðu hreinsa brauzarminnið (clear your browser cache)
@@ -366,7 +366,7 @@ Designð þitt kerfi til að vexa:
 - Breytilega breytingar í theme.json til fyrri gildi
 - Kjarnafarið aftur með öllum breytingum
 
-## Næstu skref
+## Næstu skref {#next-steps}
 
 Eftir að hafa teikna kerfi þitt:
 

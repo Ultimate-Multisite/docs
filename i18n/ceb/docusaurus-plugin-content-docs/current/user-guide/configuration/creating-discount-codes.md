@@ -3,13 +3,13 @@ title: Pagmugna og mga Discount Code
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Paghimo og Discount Codes (v2)
+# Paghimo og Discount Codes (v2) {#creating-discount-codes-v2}
 
 _**MAHINUNGAN: Kini nga article nagrefer sa Ultimate Multisite version 2.x.**_
 
 Sa Ultimate Multisite, pwede kang maghimo og discount codes para hatagan ang imong mga kliyente og diskwento sa ilang subscriptions. Ug dali ra ni paghimo!
 
-## Paghimo ug Pag-edit sa Discount Codes
+## Paghimo ug Pag-edit sa Discount Codes {#creating-and-editing-discount-codes}
 
 Para makahimo o makapag-edit og discount code, pumunta sa **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Ang coupon karon anaa sa imong listahan ug, gikan diha, mahimo nimong i-click ar
 
 ###
 
-### Paggamit sa URL Parameters:
+### Paggamit sa URL Parameters: {#using-url-parameters}
 
 Kung gusto nimo usbon ang imong mga pricing table o maghimo og nindot nga coupon code page para sa imong website ug gusto nimong i-apply ang discount code sa imong checkout form awtomatiko, mahimo nimo kini pinaagi sa URL parameters.
 

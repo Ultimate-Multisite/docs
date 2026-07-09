@@ -3,11 +3,11 @@ title: Vještine s obzirom na temu
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Vještine s obzirom na temu
+# Vještine s obzirom na temu {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 dolazi s četiri nova ugrađena vještina koje se prilagođavaju vašem trenutnom WordPress temi. Ove vještine pružaju specijalizirano vođenje i mogućnosti prilagođene arhitekturi i značajkama vaše teme.
 
-## Šta su vještine s obzirom na temu?
+## Šta su vještine s obzirom na temu? {#what-are-theme-aware-skills}
 
 Vještine s obzirom na temu su unaprijed konfigurirane baze znanja i skupovi alata koje AI asistent automatski bira na temelju trenutno aktivne WordPress teme na vašem sajtu. Kada promijenite teme, dostupne vještine asistenta se ažuriraju automatski — bez potrebe za ručnom konfiguracijom.
 
@@ -18,9 +18,9 @@ Svaka vještina uključuje:
 - **Primjere prilagodbe** — kod fragmente i obrasci konfiguracije za uobičajene zadatke
 - **Najbolje prakse** — preporuke za arhitekturu teme i radni tok
 
-## Dostupne vještine s obzirom na temu
+## Dostupne vještine s obzirom na temu {#available-theme-aware-skills}
 
-### Teme sa blokovima (Block Themes)
+### Teme sa blokovima (Block Themes) {#block-themes}
 
 **Primjenjuje se na:** Teme koje koriste arhitekturu zasnovanu na blokovima WordPressa (Full Site Editing).
 
@@ -34,7 +34,7 @@ Vještina za Teme sa blokovima pruža vođenje o:
 
 **Automatski se aktivira kada:** Vaša aktivna tema je tema sa blokovima (podržava značajku `block-templates`).
 
-### Klasične teme (Classic Themes)
+### Klasične teme (Classic Themes) {#classic-themes}
 
 **Primjenjuje se na:** Tradicionalne WordPress teme koje koriste PHP šablone i klasični editor.
 
@@ -48,7 +48,7 @@ Razumijevanje hijerarhije tema i template tagova
 
 **Automatski se aktivira kada:** Vaša aktivna tema je klasična (ne blok teme).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Primjenjuje se na:** Site koji koriste plugin Kadence Blocks za napredno dizajn baziran na blokovima.
 
@@ -62,7 +62,7 @@ Vještina Kadence Blocks pruža smjernice o:
 
 **Automatski se aktivira kada:** Plugin Kadence Blocks je aktivan na vašem sajtu.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Primjenjuje se na:** Site koji koriste Kadence temu za dizajn baziran na blokovima i prilagođavanje.
 
@@ -76,15 +76,15 @@ Vještina Kadence Theme pruža smjernice o:
 
 **Automatski se aktivira kada:** Je li Kadence tema vaša aktivna tema.
 
-## Kako se biraju vještine
+## Kako se biraju vještine {#how-skills-are-selected}
 
 Asistent automatski prepoznaje vašu aktivnu temu i instalirane pluginove na svakoj poruci. Ako je dostupna vještina koja odgovara temi, ona se automatski učitava u kontekst asistenta. Ne morate ručno omogućavati ili mijenjati vještine.
 
-### Višestruke vještine
+### Višestruke vještine {#multiple-skills}
 
 Ako se više vještina primjenjuju na vašem sajtu (na primjer, ako imate aktivne i Kadence Blocks i Kadence Theme), asistent ima pristup svim primjenjivim vještinama i može se osloniti na smjernice iz svake od njih.
 
-### Promjena teme
+### Promjena teme {#switching-themes}
 
 Kada promijenite aktivnu temu, dostupne vještine asistenta se automatski ažuriraju u sljedećoj poruci. Na primjer:
 
@@ -92,11 +92,11 @@ Kada promijenite aktivnu temu, dostupne vještine asistenta se automatski ažuri
 2. Prebacite se na klasičnu temu.
 3. U sljedećoj poruci, vještina **Classic Themes** se automatski učita, a vještina **Block Themes** više nije dostupna.
 
-## Korištenje teme-osnovanih vještina (Theme-Aware Skills)
+## Korištenje teme-osnovanih vještina (Theme-Aware Skills) {#using-theme-aware-skills}
 
 Da biste iskoristili vještinu koja je osnovana na temi, jednostavno opišite što želite postići u chat sučelju. Asistent će automatski se osvrnuti na smjernice odgovarajuće vještine.
 
-### Primjeri upita (Prompts)
+### Primjeri upita (Prompts) {#example-prompts}
 
 **Za Block Themes:**
 > "Kreiraj sekciju za naslov s pozadinskom slikom i centriranim tekstom koristeći blokove."

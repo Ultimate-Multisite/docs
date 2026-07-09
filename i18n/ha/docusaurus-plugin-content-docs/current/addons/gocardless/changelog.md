@@ -3,7 +3,7 @@ title: GoCardless Tarihin canje-canje
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog
+# GoCardless Changelog {#gocardless-changelog}
 
 Siga: 1.0.3 - An sake shi a 2026-05-05
 * Gyara: Shafukan da ke jiran aiki amma suka zama marayu yanzu ana share su lokacin da aka soke membership na GoCardless yayin da yake cikin yanayin jira ko on-hold

@@ -3,11 +3,11 @@ title: Rendszer-e-mailek kezelése
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Rendszer e-mailek kezelése
+# Rendszer e-mailek kezelése {#managing-system-emails}
 
 Az Ultimate Multisite különféle rendszer e-maileket küld olyan eseményekhez, mint a regisztrációs visszaigazolások, fizetési nyugták és tagsági változások. Ezeket az e-mail sablonokat testre szabhatod, hogy illeszkedjenek a márkádhoz.
 
-## Rendszer e-mailek megtekintése
+## Rendszer e-mailek megtekintése {#viewing-system-emails}
 
 Navigálj az **Ultimate Multisite → Settings** menüpontra, és kattints az **Emails** fülre az e-mailekkel kapcsolatos beállítások megtekintéséhez.
 
@@ -21,7 +21,7 @@ Az egyes e-mail sablonokat a rendszer e-mail szerkesztővel is szerkesztheted:
 
 ![Rendszer e-mail szerkesztő](/img/admin/system-email-editor.png)
 
-## Új e-mail sablonok importálása
+## Új e-mail sablonok importálása {#importing-new-email-templates}
 
 Az új Ultimate Multisite verziók és kiegészítők új e-mail sablonokat regisztrálhatnak. Az ütközések elkerülése érdekében az új sablonok nem kerülnek automatikusan hozzáadásra — manuálisan kell importálnod őket.
 
@@ -32,7 +32,7 @@ Az új Ultimate Multisite verziók és kiegészítők új e-mail sablonokat regi
 3. Kapcsold be az **Import Emails** opciót az elérhető sablonok megtekintéséhez
 4. Válaszd ki az importálni kívánt sablonokat, és erősítsd meg
 
-## E-mail sablonok visszaállítása
+## E-mail sablonok visszaállítása {#resetting-email-templates}
 
 Ha testre szabtál egy e-mail sablont, és vissza szeretnél térni az alapértelmezett tartalomhoz, két lehetőséged van:
 

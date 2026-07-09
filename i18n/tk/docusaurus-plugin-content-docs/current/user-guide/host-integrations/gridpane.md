@@ -3,17 +3,17 @@ title: GridPane Integrasi
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Entegrasi
+# GridPane Entegrasi {#gridpane-integration}
 
-## Genel Bakış
+## Genel Bakış {#overview}
 GridPane, ciddi WordPress profesyonelleri için özel olarak hazırlanmış bir kontrol paneldir. Bu entegrasyon, Ultimate Multisite ile GridPane arasında otomatik alan adı senkronizasyonu ve SSL sertifikası yönetimini sağlar.
 
-## Özellikler
+## Özellikler {#features}
 - Otomatik alan adı senkronizasyonu
 - SSL sertifikası yönetimi
 - SUNRISE sabitinin otomatik yapılandırılması
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 Aşağıdaki sabitleri `wp-config.php` dosyanıza tanımlamanız gerekir:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'sizin_sunucu_idiniz');
 define('WU_GRIDPANE_APP_ID', 'sizin_site_idiniz');
 ```
 
-## Kurulum Talimatları
+## Kurulum Talimatları {#setup-instructions}
 
-### 1. GridPane API Kimlik Bilgilerinizi Alın
+### 1. GridPane API Kimlik Bilgilerinizi Alın {#1-get-your-gridpane-api-credentials}
 
 1. GridPane kontrol panelinize giriş yapın
 2. "Ayarlar" > "API" bölümüne gidin
 3. Eğer bir API anahtarınız yoksa oluşturun
 4. API anahtarınızı kopyalayın
 
-### 2. Sunucu ve Site Kimliklerinizi Alın
+### 2. Sunucu ve Site Kimliklerinizi Alın {#2-get-your-server-and-site-ids}
 
 1. GridPane kontrol panelinizde, "Sunucular"a gidin
 2. WordPress multisitenizin barındırıldığı sunucuyu seçin
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'sizin_site_idiniz');
 4. "Siteler"e gidin ve WordPress sitenizi seçin
 5. Site Kimliğini (URL'de veya site detayları sayfasında görünen) not edin
 
-### 3. wp-config.php'ye Sabitleri Ekleyin
+### 3. wp-config.php'ye Sabitleri Ekleyin {#3-add-constants-to-wp-configphp}
 
 Aşağıdaki sabitleri `wp-config.php` dosyanıza ekleyin:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'sizin_sunucu_idiniz');
 define('WU_GRIDPANE_APP_ID', 'sizin_site_idiniz');
 ```
 
-### 4. Entegrasyonu Etkinleştirin
+### 4. Entegrasyonu Etkinleştirin {#4-enable-the-integration}
 
 1. WordPress yönetim panelinde, Ultimate Multisite > Ayarlar'a gidin
 2. "Alan Adı Eşleştirmesi" (Domain Mapping) sekmesine gidin
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'sizin_site_idiniz');
 4. GridPane entegrasyonunu etkinleştirin
 5. "Değişiklikleri Kaydet" (Save Changes) butonuna tıklayın
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
 Ultimate Multisite'ta bir alan adı eşleştirildiğinde:
 
@@ -69,23 +69,23 @@ Ultimate Multisite'ta bir alan adı eşleştirildiğinde:
 
 Integrasi aynı zamanda `wp-config.php` dosyanızdaki SUNRISE sabitini de otomatik olarak halleder; bu da alan adı eşleştirmesinin düzgün çalışması için gereklidir.
 
-## SUNRISE Sabitini Yönetmek
+## SUNRISE Sabitini Yönetmek {#sunrise-constant-management}
 
 GridPane integrasiýasynyň ähli birikimli özelliği, GridPane-nyň öz alan adı eşleştirme ulgamynyň bilen çakmalary bolmamasyny üpjün etmek üçin `wp-config.php` dagi SUNRISE sabitini awtomatik redaktirlemekdir. Bu, her iki ulgamy hem sorunsuz birikip işleýärdi diýmekdir.
 
-## Sorunları Gözläp Çyrma (Troubleshooting)
+## Sorunları Gözläp Çyrma (Troubleshooting) {#troubleshooting}
 
-### API Bağlanma Masalalary
+### API Bağlanma Masalalary {#api-connection-issues}
 - API açaryňyz dogrydyr diýip barlap görüň.
 - Server we site ID-lerinizin dogrydyr diýip kontrol ediň.
 - Sizde GridPane hasaplanýan zerur resseller barada barlap görüň.
 
-### SSL Sertifikatasynyň Masalalary
+### SSL Sertifikatasynyň Masalalary {#ssl-certificate-issues}
 - GridPane SSL sertifikatlaşdyrmak üçin birnäçe wagt alyp biljekdir.
 - Alan adyňyz serveriň IP adresine dogry ýol berýändigini barlap görüň.
 - Sizde sitiniz üçin GridPane SSL tapgyrlaryny kontrol ediň.
 
-### Alan Ady Goşulmady
+### Alan Ady Goşulmady {#domain-not-added}
 - Hiç bir xatolik meselesi barada Ultimate Multisite loglarynda barlap görüň.
 - Alan adynyň hali GridPane'a goşulmagan bolsa diýip barlap görüň.
 - Alan adyňyz DNS resmilerini dogry görkezilendigini üpjün ediň.

@@ -3,11 +3,11 @@ title: Webhook جي سنڀال
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook سنڀالڻ
+# Webhook سنڀالڻ {#webhook-handling}
 
 ٻاهرين خدمتن کان واقعا حاصل ڪرڻ ۽ Ultimate Multisite سان ڊيٽا هم وقت ڪرڻ لاءِ حسب ضرورت webhook آخري نقطا ٺاهيو.
 
-## حسب ضرورت Webhook آخري نقطو
+## حسب ضرورت Webhook آخري نقطو {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## سيڪيورٽي بابت ويچار
+## سيڪيورٽي بابت ويچار {#security-considerations}
 
 - هميشه HMAC يا گڏيل راز استعمال ڪندي webhook دستخطن جي تصديق ڪريو
 - پنهنجي REST رستي تي `permission_callback` استعمال ڪريو — پيداوار ۾ ڪڏهن به ان کي `__return_true` تي مقرر نه ڪريو

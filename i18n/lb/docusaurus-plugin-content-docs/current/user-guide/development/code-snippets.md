@@ -3,7 +3,7 @@ title: Code-Schnipselchen
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets für v2
+# Code Snippets für v2 {#code-snippets-for-v2}
 
 Im Grunde werdet Code-Snippets für **WordPress** verwendet, um bestimmte Aktionen durchzuführen, die sonst ewig enge Plugins bräuchten. Solchi Code-Snippets platziere mer in einer der WordPress Core- oder Theme-Dateien (meistens in de functions.php vo dim Theme) oder sie chönne als MU Plugin brucht werde.
 
@@ -15,7 +15,7 @@ In däm Artikel zeiged mir drei Code-Snippets, wo mer mit **Ultimate Multisite v
 
   * [**Fixe CORS-Problem mit Font-Icons in mappte Domains**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Ändere d'Position vom Account-Menüitem
+## Ändere d'Position vom Account-Menüitem {#changing-the-position-of-the-account-menu-item}
 
 Um d'Position vom Account-Menüitem uf em Dashboard vo dim Kunde z'ändere, füeg eifach de folgendi Code-Snippet in d'functions.php vo dim Hauptsite-Theme ii. Du chönntsch de Snippet au i eis vo dine mu-Plugins oder Custom Plugins ilege.
 
@@ -37,8 +37,8 @@ Mer sölle bemerke, dass Benutzer nur uf en **Plan** abonniere chönd, aber nöd
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## CORS-Problem mit Font-Icons in mappte Domains behebe
-## CORS-Problem mit Font-Icons in mappte Domains behebe
+## CORS-Problem mit Font-Icons in mappte Domains behebe {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## CORS-Problem mit Font-Icons in mappte Domains behebe {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Nachdem Sie en Domain uf e Unterseite abgebunde händ, chönntet Sie feststelle, dass d'Site Problem het bim Ladä vo benutzerdefinierten Schrifte (custom fonts). Das wird dur e cross-origin block i de Server-Iistellige verursacht.
 
@@ -46,13 +46,13 @@ Will Font-Dateie fast immer direkt us CSS gelade wärde, cha üsi Domain-Mapping
 
 Hier sind d'Code-Snippets, um s'Problem für Apache und NGINX z'löse. Die Änderige bruche en fortgschritteni Kenntnis vo Serverkonfigurationsdateien (.htaccess-Dateien und NGINX-Konfigurationsdateien). Wenn Dir das selber mache mit de Änderige nöd bequem isch, schick die Siite an d'Support-Agent vo Dim Hosting-Provider, wenn Dir Hilf bruchsch.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 In Din .htaccess-Datei füegt Dir folgendes bi:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 In Din Serverkonfigurationsdatei (de Ort variiert vo Server zu Server), füegt Dir bi:
 

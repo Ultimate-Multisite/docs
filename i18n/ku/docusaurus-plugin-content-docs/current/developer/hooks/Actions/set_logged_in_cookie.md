@@ -4,11 +4,11 @@ title: Çalakî - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Çalakî: set_logged_in_cookie
+# Çalakî: set_logged_in_cookie {#action-setloggedincookie}
 
 Tavilê berî ku cookieya piştrastkirina têketî were danîn, tê xebitandin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Tavilê berî ku cookieya piştrastkirina têketî were danîn, tê xebitandin.
 | $scheme | `string` | Nexşeya piştrastkirinê. Standard 'logged_in'. |
 | $token | `string` | Tokena rûniştina bikarhêner ku ji bo vê cookieyê were bikaranîn. |
 
-### Ji
+### Ji {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) de li rêza 141 hatiye danasîn.

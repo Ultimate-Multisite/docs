@@ -3,9 +3,9 @@ title: Buraxılış qeydləri
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Buraxılış Qeydləri
+# Buraxılış Qeydləri {#release-notes}
 
-## Versiya 2.13.0 — 2026-06-05 tarixində buraxılıb
+## Versiya 2.13.0 — 2026-06-05 tarixində buraxılıb {#version-2130--released-on-2026-06-05}
 
 - Yeni: Müştəri Account-u, ödəniş, fakturalaşdırma, sayt, faktura, şablon dəyişdirmə və domen xəritələnməsi axınları üçün suveren-tenant dəstəyi əlavə edildi ki, tenant şəbəkələri idarə olunan əməliyyatlar üçün müştəriləri əsas sayta geri yönləndirə bilsin.
 - Yeni: Təkrarlanan üzvlüklər üçün yenilənmə-etimadnaməsi yoxlamaları əlavə edildi ki, saxlanılmış fakturalaşdırma razılaşması, abunəlik və ya vault token olmadıqda ödəniş keçidləri avtomatik yenilənməni söndürə bilsin.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzəliş: Üzvlük yenilənmələri, bitmə tarixi göstərilməsi və ödəniş toplama ilə bağlı kənar hallar artıq dərhal bitmələrin, çökmələrin və ya tələb olunan ödənişlərin qaçırılmasının qarşısını alır.
 - Təkmilləşdirildi: WordPress uyğunluğu 7.0-a qədər test edilib, istehsal Vue resursları npm mənbələrindən yenidən qurulub və Cypress end-to-end əhatəsi indi daha çox ödəniş, quraşdırma, SSO və ödəniş keçidi axınlarını yoxlayır.
 
-## Versiya 2.12.0 — 2026-05-15 tarixində buraxılıb
+## Versiya 2.12.0 — 2026-05-15 tarixində buraxılıb {#version-2120--released-on-2026-05-15}
 
 - Yeni: Hostinger (hPanel) domen xəritələnməsi inteqrasiyası ilə dəstəklənən host provayderi kimi əlavə edildi
 - Yeni: Sayt İxracçısı indi bütün şəbəkə üzrə sayt bərpasını sadələşdirmək üçün şəbəkə import paketlərini emal edir
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzəliş: Sayt İxracçısı CLI indi düzgün standart şəbəkə saytı seçimini qoruyur
 - Təkmilləşdirildi: Plugin paketindən daxil edilmiş wp-cli silindi, plugin ölçüsü azaldıldı
 
-## Versiya 2.11.0 — 2026-05-11 tarixində buraxılıb
+## Versiya 2.11.0 — 2026-05-11 tarixində buraxılıb {#version-2110--released-on-2026-05-11}
 
 - Yeni: Sayt ixracları indi öz-özünə başladılan `index.php` paketləyir ki, ZIP ayrıca plugin quraşdırılması olmadan təzə hostda quraşdırıla bilsin.
 - Yeni: Şəbəkə ixracı administratorlara Sayt İxracı admin səhifəsindən bütün alt saytları tək arxivdə ixrac etməyə imkan verir.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Yeni: Ödəniş forması redaktoru tələb olunan sahə konfiqurasiya edilmədən məhsul əlavə edildikdə xəbərdarlıq edir.
 - Yeni: Import/Export ayarları tabı indi öz əhatəsini aydın təsvir edir və birbaşa Sayt İxracı alətinə keçid verir.
 
-## Versiya 2.10.0 — 2026-05-05 tarixində buraxılıb
+## Versiya 2.10.0 — 2026-05-05 tarixində buraxılıb {#version-2100--released-on-2026-05-05}
 
 - Yeni: Problemsiz ödəniş keçidi konfiqurasiyası üçün OAuth flag gate ilə manual etimadnamə girişi üçün PayPal yönləndirilən quraşdırma sehrbazı.
 - Yeni: Şablon dəyişdirmə müştəri paneli cari-şablon kartı, davamlı grid və **Cari şablonu sıfırla** düyməsi ilə yenidən dizayn edildi.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzəliş: Filtrlənmiş SSO yolu bütün giriş axınlarında nəzərə alındı.
 - Düzəliş: Boş sayt kimliyi seçimləri saxlanarkən qorundu.
 
-## Versiya 2.9.0 — 2026-04-30 tarixində buraxılıb
+## Versiya 2.9.0 — 2026-04-30 tarixində buraxılıb {#version-290--released-on-2026-04-30}
 
 - Yeni: Tək-sayt ixracı və importu **Alətlər > İxrac və Import** altında əlavə edildi.
 - Düzəliş: İxrac ZIP faylları indi autentifikasiya edilmiş yükləmə endpoint-i vasitəsilə təqdim olunur.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzəliş: Tur ID-ləri istifadəçi ayarları açarlarında alt xətlərə normallaşdırıldı.
 - Təkmilləşdirildi: Daha yaxşı uyğunluq üçün Alchemy/Zippy əvəzinə ZipArchive istifadə olunur.
 
-## Versiya 2.8.0 — 2026-04-29
+## Versiya 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Yeni: Other Options tənzimləmələri UI-sinə Enable Jumper açarı əlavə edildi.
 - Yeni: Checkout formaları siyahısı cədvəlinə status sütunu əlavə edildi.

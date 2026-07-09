@@ -4,24 +4,24 @@ title: Scagaire - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Scagaire: wu_checkout_field_types
+# Scagaire: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
 
 Ceanglaíonn ár APIs chun cineálacha nua réimse a chur leis isteach anseo.
 
 Ná húsáid an scagaire seo go díreach. Úsáid an fheidhm wu_register_field_type() ina ionad.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
 | $field_types | `array` |  |
 
-### Ó
+### Ó {#since}
 
 - 2.0.0
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/managers/class-signup-fields-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-signup-fields-manager.php#L92) ag líne 92
 
 
-## Luachanna aisfhillte
+## Luachanna aisfhillte {#returns}

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent er en autonom WordPress AI-assistent som kan planlegge, bygge og administrere komplette WordPress-nettsteder kun basert på naturlig språkinstruksjoner. Den eksponerer et strukturert sett med **evner** — diskrete, testbare handlinger som agenten kan kalle — som dekker alt fra innholdshåndtering til tilpasning av designsystemet. Versjon 1.9.0 legger til evner for innholdsskaping, visuell sidegjennomgang via klient-side skjermbilder, fem innebygde agentprofiler og funksjonsflagg for tilgangskontroll og merkevarebygging.
 
-## Hovedfunksjoner
+## Hovedfunksjoner {#key-features}
 
 - **Evnesystem** — et modulært og utvidbart katalog over handlinger agenten kan utføre på WordPress-installasjonen din
 - **Innholdshåndtering** — opprett innlegg og sider (inkludert tildeling av side-maler), batch-opprett flere innlegg i ett kall, sett fremhevede bilder og bygg kontaktskjemaer
@@ -28,21 +28,21 @@ Gratis AI Agent er en autonom WordPress AI-assistent som kan planlegge, bygge og
 - **Site Builder Orchestration v2** — flertrinns plan for nettstedsbygging med plugin-oppdagelse, fremdriftssporing og feilgjenoppretting
 - **WP-CLI benchmark-kommando** — kjører agentens ytelsestest-suite fra kommandolinjen for CI og modellvurdering
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 6.0 eller høyere
 - PHP 8.1 eller høyere
 - WordPress Multisite (nettverksaktivert) eller enkeltstående installasjon
 - Et aktivt AI-leverandør-plugin (Anthropic, OpenAI eller kompatibelt)
 
-## Installasjon
+## Installasjon {#installation}
 
 1. Last opp plugin-filene til `/wp-content/plugins/gratis-ai-agent`
 2. Aktiver pluginet via **Plugins**-skjermen i WordPress
 3. Gå til **Gratis AI Agent → Settings** og koble til AI-leverandøren din
 4. (Valgfritt) Bla gjennom **Abilities Registry** for å installere ekstra evne-pakker
 
-## Rask start
+## Rask start {#quick-start}
 
 Når det er aktivert og koblet til en AI-leverandør, åpner du **Gratis AI Agent**-panelet i WordPress-admin-sidestolpen. Skriv inn en naturlig språkinstruksjon, og agenten vil planlegge og utføre de nødvendige trinnene ved hjelp av tilgjengelige evner.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## Oversikt over evner
+## Oversikt over evner {#abilities-overview}
 
 Evner er de atomiske handlingene agenten kan utføre. Hver evne er en registrert PHP-klasse som eksponerer et skjema (parametere og returtyper) som agenten leser under kjøretiden. Evnene er gruppert etter funksjonelle områder:
 
@@ -79,7 +79,7 @@ Evner er de atomiske handlingene agenten kan utføre. Hver evne er en registrert
 
 Se [Abilities Reference](./abilities) for full dokumentasjon av parametere og bruks eksempler.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent inkluderer en `wp gratis-ai-agent` kommando-familie for å kjøre ytelsestester og administrere evner fra kommandolinjen. Se [WP-CLI Reference](./wp-cli) for den fullstendige kommando-listen.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfigurasjon
+## Konfigurasjon {#configuration}
 
 Alle innstillingene finner du under **Gratis AI Agent → Settings** i WordPress-admin:
 
@@ -106,7 +106,7 @@ Alle innstillingene finner du under **Gratis AI Agent → Settings** i WordPress
 | **Ability Timeout** | Maksimalt antall sekunder en enkelt evne kan kjøre (standard 30) |
 | **Debug Logging** | Logger evne-kall og agentens resonnement til WordPress debug-loggen |
 
-## Sikkerhetsblokkliste for Options Management
+## Sikkerhetsblokkliste for Options Management {#options-management-safety-blocklist}
 
 Evne-håndteringen inkluderer en innebygd blokkliste som hindrer agenten i å lese eller skrive sensitive WordPress-innstillinger. Standard blokklisten dekker:
 
@@ -118,26 +118,26 @@ Evne-håndteringen inkluderer en innebygd blokkliste som hindrer agenten i å le
 
 Ytterligere oppføringer kan legges til via filteret `gratis_ai_agent_options_blocklist`.
 
-## Hooks og Filtre
+## Hooks og Filtre {#hooks-and-filters}
 
-### Handlinger (Actions)
+### Handlinger (Actions) {#actions}
 
 - `gratis_ai_agent_ability_registered` — utløses etter at en evne er registrert, mottar evne-klassenavnet
 - `gratis_ai_agent_plan_started` — utløses når en site builder-plan begynner å kjøre
 - `gratis_ai_agent_plan_completed` — utløses når en plan fullføres vellykket
 - `gratis_ai_agent_plan_failed` — utløses når en plan støter på en uopprettelig feil
 
-### Filtre (Filters)
+### Filtre (Filters) {#filters}
 
 - `gratis_ai_agent_abilities` — modifiserer den registrerte evnelisten før agenten laster den
 - `gratis_ai_agent_options_blocklist` — utvider eller reduserer sikkerhetsblokklisten for innstillinger
 - `gratis_ai_agent_benchmark_questions` — legger til tilpassede ytelsestest-spørsmål i evalueringssuiten
 - `gratis_ai_agent_plan_plugins` — modifiserer listen over plugins under generering av site-plan
 
-## Support
+## Support {#support}
 
 For support, besøk [ultimatemultisite.com](https://ultimatemultisite.com) eller åpne en issue i plugin-repositoryet.
 
-## Endringslogg (Changelog)
+## Endringslogg (Changelog) {#changelog}
 
 Se [Changelog](./changelog) for full versjonshistorikk.

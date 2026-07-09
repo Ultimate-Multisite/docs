@@ -3,11 +3,11 @@ title: Multi-tenancy isolering
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolering mellan olika hyresgäster (Multi-Tenancy Isolation)
+# Isolering mellan olika hyresgäster (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 stöder per-subsite databas- och filsystemisolering för suveräna hyresgäster. Detta håller kunddata separerad samtidigt som det bevarar nätverksnivåprovisionering, fakturering och administration.
 
-## Isoleringstrategi
+## Isoleringstrategi {#isolation-strategy}
 
 Använd suverän isolering för kunder som behöver starkare dat separators, dedikerad filsystemlagring eller en separat hostgräns.
 
@@ -18,7 +18,7 @@ Varje suverän hyresgäst ska ha:
 - En post i hyresgästregistret som kopplar ihop sajten med dess databas, rotväg, värdnamn och isoleringsmodell.
 - Ett migrationsverifieringsresultat innan hyresgästen anses vara live.
 
-## Bindning till databasvärden (Database host binding)
+## Bindning till databasvärden (Database host binding) {#database-host-binding}
 
 Version 1.2.0 ändrar det standardbeteendet för bindning till samma maskinshost vid suveräna installationer. Samma maskinens värden som `localhost` normaliseras så att Bedrock, FrankenPHP och containeriserade WordPress-installationer kan ge och verifiera behörigheter mot den hoststräng MySQL faktiskt ser.
 
@@ -31,11 +31,11 @@ När du konfigurerar en suverän hyresgäst:
 
 Om verifieringen rapporterar fel vid behörighetsgivning, jämför hyresgästens DB-användarbehörigheter med den konfigurerade bindningen till värden. En användare som ges behörighet för `user@localhost` är annorlunda än `user@127.0.0.1` eller `user@%`.
 
-## Rot för filsystemet (Filesystem root)
+## Rot för filsystemet (Filesystem root) {#filesystem-root}
 
 Huvudrotet för hyresgästen ska vara stabilt vid omstart och driftsättning. Undvik tillfälliga monteringsvägar (mount paths). För installationer i Bedrock-stil, bekräfta att huvudroten pekar på WordPress webroot som den tenant bootstrap förväntar sig, inte bara projektets rot.
 
-## Provisioneringsordning
+## Provisioneringsordning {#provisioning-order}
 
 För nya suveräna hyresgäster använd denna ordning:
 
@@ -49,7 +49,7 @@ För nya suveräna hyresgäster använd denna ordning:
 
 Denna ordning förhindrar att delvis isolerade hyresgäster får trafik innan databasförfattare, användare och filsystem är redo.
 
-## Flöden för hantering av suveräna kunder
+## Flöden för hantering av suveräna kunder {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 håller kundhanteringsåtgärder på huvudwebbplatsen när suverän läge är aktiverat. En hyresgäst kan fortfarande köras som en isolerad WordPress-installation, men kundvända åtgärder som beror på nätverksfakturering, medlemskap eller delade kontodata bör skicka tillbaka kunden till huvudwebbplatsen istället för att försöka slutföra åtgärden inuti hyresgästens runtime.
 

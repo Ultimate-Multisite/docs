@@ -4,19 +4,19 @@ title: فلٽر - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect
+# Filter: secure_auth_redirect {#filter-secureauthredirect}
 
 فلٽر ڪري ٿو ته محفوظ تصديق وارو ريڊائريڪٽ استعمال ڪرڻو آهي يا نه.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
 | $secure | `bool` | ڇا محفوظ تصديق وارو ريڊائريڪٽ استعمال ڪرڻو آهي. ڊفالٽ false. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 3.1.0
-### ماخذ
+### ماخذ {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L190) ۾ لائن 190 تي بيان ٿيل.

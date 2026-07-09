@@ -3,11 +3,11 @@ title: Pencarian Domain Header
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Pencarian Domain Header
+# Pencarian Domain Header {#header-domain-search}
 
 Gunakan pengaturan ini saat Anda menginginkan formulir header kecil yang memulai pencarian domain, lalu memungkinkan pelanggan memilih dari domain yang tersedia di dalam checkout Ultimate Multisite.
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 - Ultimate Multisite aktif-jaringan.
 - Multisite Ultimate Domain Seller aktif-jaringan.
@@ -16,7 +16,7 @@ Gunakan pengaturan ini saat Anda menginginkan formulir header kecil yang memulai
   - TLD yang didukung dikonfigurasi, misalnya `com`, `net`, dan `org`.
 - Formulir checkout valid yang berisi field **Pemilihan Domain**.
 
-## Formulir checkout
+## Formulir checkout {#checkout-form}
 
 1. Buat atau edit formulir checkout yang digunakan oleh halaman pendaftaran.
 2. Tambahkan field checkout/Account wajib yang normal, termasuk **Username**. Formulir checkout yang hanya berisi field domain ditolak oleh validasi Ultimate Multisite.
@@ -30,7 +30,7 @@ Halaman pendaftaran harus merender formulir checkout, misalnya:
 [wu_checkout slug="domain-form"]
 ```
 
-## Formulir header
+## Formulir header {#header-form}
 
 Tambahkan formulir `GET` kecil di header situs yang mengirim istilah pencarian yang dimasukkan ke halaman checkout sebagai `domain_name`:
 
@@ -44,7 +44,7 @@ Tambahkan formulir `GET` kecil di header situs yang mengirim istilah pencarian y
 
 Jangan memilih domain terlebih dahulu di JavaScript header kustom. Header hanya boleh meneruskan istilah pencarian. Skrip checkout Domain Seller membaca `?domain_name=example`, mengisi kotak pencarian checkout, dan menjalankan pencarian ketersediaan agar pelanggan dapat memilih dari domain yang dikembalikan.
 
-## Perilaku yang diharapkan
+## Perilaku yang diharapkan {#expected-behaviour}
 
 Mencari `example` di header harus membuka:
 
@@ -61,7 +61,7 @@ Checkout kemudian harus menampilkan hasil yang dapat dipilih seperti:
 
 Setelah memilih hasil yang tersedia, ringkasan pesanan harus mencakup produk pendaftaran domain dan nama domain yang dipilih.
 
-## Verifikasi
+## Verifikasi {#verification}
 
 1. Buka halaman beranda.
 2. Cari nama polos, misalnya `example`.
@@ -71,7 +71,7 @@ Setelah memilih hasil yang tersedia, ringkasan pesanan harus mencakup produk pen
 6. Klik **Pilih** untuk domain yang tersedia.
 7. Konfirmasi ringkasan pesanan berisi `Domain Registration - example.com` atau domain yang dipilih.
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
 - Jika tidak ada daftar yang muncul, periksa tab jaringan browser untuk `admin-ajax.php?action=wu_domain_search` dan konfirmasi itu mengembalikan `domains` atau `results` yang tidak kosong.
 - Jika formulir checkout gagal validasi saat menyimpan, tambahkan field Account wajib seperti **Username**.

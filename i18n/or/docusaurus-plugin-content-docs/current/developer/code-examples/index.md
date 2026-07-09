@@ -3,11 +3,11 @@ title: ଉନ୍ନତ କୋଡ୍ ଉଦାହରଣ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ଉନ୍ନତ Code ଉଦାହରଣ
+# ଉନ୍ନତ Code ଉଦାହରଣ {#advanced-code-examples}
 
 ଏହି ଉଦାହରଣଗୁଡ଼ିକ Ultimate Multisite ସହ ଉନ୍ନତ ଏକୀକରଣ ଢାଞ୍ଚା ଦେଖାଏ।
 
-## ଗତିଶୀଳ ମୂଲ୍ୟ ଇଞ୍ଜିନ୍
+## ଗତିଶୀଳ ମୂଲ୍ୟ ଇଞ୍ଜିନ୍ {#dynamic-pricing-engine}
 
 ନିୟମ-ଆଧାରିତ ମୂଲ୍ୟ ଇଞ୍ଜିନ୍, ଯାହା ପରିମାଣ, ନିଷ୍ଠା ଏବଂ ଋତୁକାଳୀନ ଛାଡ଼ ଲାଗୁ କରେ:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## ଉନ୍ନତ ସାଇଟ୍ ପ୍ରଦାନ
+## ଉନ୍ନତ ସାଇଟ୍ ପ୍ରଦାନ {#advanced-site-provisioning}
 
 ପ୍ଲାନ୍ ବୈଶିଷ୍ଟ୍ୟ ଆଧାରରେ ନୂଆ ସାଇଟ୍‌ଗୁଡ଼ିକୁ plugin, SSL, CDN, backup ଏବଂ monitoring ସହ ସ୍ୱୟଂଚାଳିତ ଭାବେ କନଫିଗର୍ କରନ୍ତୁ:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## କଷ୍ଟମ୍ ସୀମାବଦ୍ଧତା ସିଷ୍ଟମ୍
+## କଷ୍ଟମ୍ ସୀମାବଦ୍ଧତା ସିଷ୍ଟମ୍ {#custom-limitations-system}
 
 ବ୍ୟବହାର ସତର୍କବାଣୀ ସହ ସମ୍ପଦ ସୀମାଗୁଡ଼ିକୁ ଟ୍ରାକ୍ ଏବଂ ଲାଗୁ କରନ୍ତୁ:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB `increment_item()` ସହ ପରମାଣୁ କାଉଣ୍ଟର
+## BerlinDB `increment_item()` ସହ ପରମାଣୁ କାଉଣ୍ଟର {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 BerlinDB `Query` କ୍ଲାସ୍‌ରେ `increment_item()` ମେଥଡ୍ ଯୋଡ଼ିଛି। ପଢ଼ି-ସଂଶୋଧନ-ଲେଖିବା ରେସ୍‌ ବିନା ସଂଖ୍ୟାତ୍ମକ କଲମ୍‌ରେ ସୁରକ୍ଷିତ, ପରମାଣୁ ବୃଦ୍ଧି କରିବାକୁ ଏହା ବ୍ୟବହାର କରନ୍ତୁ — ଏହା ସମକାଳୀନ ଅନୁରୋଧ ଅଧୀନରେ ଚାଲୁଥିବା କାଉଣ୍ଟର, ବ୍ୟବହାର କୋଟା, ଏବଂ ହାର-ସୀମା ଯାଞ୍ଚ ପାଇଁ ଉପଯୋଗୀ।
 
-### ମେଥଡ୍ ସ୍ୱାକ୍ଷର
+### ମେଥଡ୍ ସ୍ୱାକ୍ଷର {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 BerlinDB `Query` କ୍ଲାସ୍‌ରେ `incremen
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### ମୂଳ ବ୍ୟବହାର
+### ମୂଳ ବ୍ୟବହାର {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### ପ୍ରତି ମେମ୍ବରଶିପ୍ API ବ୍ୟବହାର ଟ୍ରାକ୍ କରିବା
+### ପ୍ରତି ମେମ୍ବରଶିପ୍ API ବ୍ୟବହାର ଟ୍ରାକ୍ କରିବା {#tracking-api-usage-per-membership}
 
 ପ୍ରତି-ମେମ୍ବରଶିପ୍ API ହାର ସୀମା ବଳବତ୍ କରିବା ପାଇଁ ଏକ ବ୍ୟବହାରିକ ଢାଞ୍ଚା:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### `update_item()` ବଦଳରେ `increment_item()` କାହିଁକି
+### `update_item()` ବଦଳରେ `increment_item()` କାହିଁକି {#why-incrementitem-instead-of-updateitem}
 
 ସମକାଳୀନ ଅନୁରୋଧ ଅଧୀନରେ ସରଳ ପଢ଼ି-ସଂଶୋଧନ-ଲେଖିବା ପଦ୍ଧତି ଅସୁରକ୍ଷିତ:
 

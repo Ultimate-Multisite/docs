@@ -3,7 +3,7 @@ title: Curmhaíochta Siteacha
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Déanamh ar Siteacha
+# Déanamh ar Siteacha {#managing-sites}
 
 An Siteacha (nó subsiteacha) is an chuid atá ag cur áimneas ar athbhreúchán WaaS. Ag Ultimate Multisite tá 3 chuid siteach:
 
@@ -11,13 +11,13 @@ An Siteacha (nó subsiteacha) is an chuid atá ag cur áimneas ar athbhreúchán
 - **Site Templates** — Siteacha preagdaite a bhíonn custaimerí ag cur chun cinn mar spás atá ag dul ar aghaidh
 - **Main Site** — An siteach príomhshúil a bhfuil tú ag cur isteach
 
-## Glacadh Siteacha
+## Glacadh Siteacha {#viewing-sites}
 
 Go dtí **Ultimate Multisite → Sites** a ghlacadh chun an gcuid siteacha iad sinte ag iarraidh. Tá an siteach sinte le mheán ar chuid, agus is féidir leat a fháil ar chuid: All Sites (Céad sinte), Customer-Owned (Siteacha a bhaineann le custaimerí), Templates (Templates), nó Pending (Ag cur isteach).
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Adhún Adhrán Nua
+## Adhún Adhrán Nua {#adding-a-new-site}
 
 Cliceáil ar an nútair **Add Site** chun siteach nua a chur in áit. Beidh tú ag cur chuid:
 
@@ -27,15 +27,15 @@ Cliceáil ar an nútair **Add Site** chun siteach nua a chur in áit. Beidh tú 
 
 An option **Copy Site** leas féidir leat siteach nua a chur in áit ar athsiteach siteach cuimhneach. Nuair a bhíonn sé ag fáil, is féidir leat a chosaint an template atá ag cur chun cinn mar spás atá ag dul ar aghaidh. Déan cinnte go bhfuil **Copy Media on Duplication** ag fáil chun fháil ar na fáilí media.
 
-## Glacadh Siteach Atá Ag Cur Chun Cinn
+## Glacadh Siteach Atá Ag Cur Chun Cinn {#managing-an-existing-site}
 
 Cliceáil ar **Manage** ar aon siteach chun an cur **Edit Site** a chosaint. Anseo beidh tú ag fháil ar:
 
-### Innseán Information
+### Innseán Information {#basic-information}
 
 An ainm an siteach, an chuid sinte, an ID an siteach, agus an chur chun cinn. Beidh tú hefyd ag fheiceáil an domain atá ag cur isteach, an chuid membership a bhaineann leat, agus an account custaimer a bhfuil an siteach ag cur arsa.
 
-### Opciones Siteacha
+### Opciones Siteacha {#site-options}
 
 Chruí aite a chur in áit na cúilteacha agus na méid siteach:
 
@@ -49,7 +49,7 @@ Goile, an t-amhail, na siopaí a thugann ar fáil:
 
 Go dtí chuid, a bhfostacha a thugann ar fáil, a ardán a chur ar fáil ag an leasacht (membership level). Beidh cur chuimní ar fáil ar fáil ar an leasacht an t-amhail. Beidh cur chuimní ar fáil ar fáil ar an leasacht an t-amhail.
 
-### Cothromanna (Associations)
+### Cothromanna (Associations) {#associations}
 
 Leathanach a bhunaithe ar an t-amhail, beidh tú ag iarraidh fadaí ar fáil:
 
@@ -57,7 +57,7 @@ Leathanach a bhunaithe ar an t-amhail, beidh tú ag iarraidh fadaí ar fáil:
 - **An leasacht** a bhfuil an siopa iad aradh
 - **Account chustair** a chiallaíonn an siopa
 
-### Sidebar Rícht
+### Sidebar Rícht {#right-sidebar}
 
 Ar an chuid a dhá, beidh tú ag cur isteach:
 

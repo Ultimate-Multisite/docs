@@ -3,13 +3,13 @@ title: Palaikymo užklausų pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Pagalbos užklausų pakeitimų žurnalas
+# Pagalbos užklausų pakeitimų žurnalas {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Patobulinta: Pašalintas vendor/ katalogas iš Git sekimo (jau įtrauktas į .gitignore), sumažinant saugyklos dydį
 * Patobulinta: Išbandyta iki WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Pataisyta: Priimamos null reikšmės nullable užklausos modelio setteriuose
 * Pataisyta: Visos užklausos saugomos globaliose viso tinklo lentelėse, kad būtų užtikrintas tinkamas multisite palaikymas
 * Pataisyta: Paslėpti personalo laukai ir pataisytas nukreipimas į tuščią puslapį kliento naujos užklausos formoje
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Patobulinta: Frontend ištekliai sąlygiškai įkeliami tik pagalbos užklausų puslapiuose
 * Patobulinta: Praleidžiamas plugin autoloader, kai Bedrock šakninis autoloader jau įkėlė priklausomybes
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Pridėta: Visa užklausų peržiūros funkcija administratoriui ir frontend
 * Pridėta: AJAX tvarkytojas užklausų atsakymų pateikimui
 * Pridėta: Užklausų atsakymų funkcijos palaikymas su tinkamu formos apdorojimu
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Patobulinta: Duomenų bazės struktūra su tinkamomis užklausų ir schemų klasėmis atsakymams ir priedams
 * Patobulinta: Užklausų modeliuose pereita prie realių savybių vietoj atributų
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Atnaujinta: Prefiksas pervadintas į ultimate-multisite dėl nuoseklumo
 * Atnaujinta: Teksto domeno standartizavimas
 * Pataisyta: Smulkūs klaidų pataisymai ir patobulinimai
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Pradinis leidimas
 * Pilna užklausų valdymo sistema
 * Kelių lygių prieigos kontrolė

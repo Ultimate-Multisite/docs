@@ -4,11 +4,11 @@ title: Akcia - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Akcia: set_logged_in_cookie
+# Akcia: set_logged_in_cookie {#action-setloggedincookie}
 
 Spustí sa bezprostredne pred nastavením prihlasovacieho autentifikačného cookie.
 
-## Parametre
+## Parametre {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Spustí sa bezprostredne pred nastavením prihlasovacieho autentifikačného coo
 | $scheme | `string` | Schéma autentifikácie. Predvolené 'logged_in'. |
 | $token | `string` | Token relácie používateľa, ktorý sa má použiť pre tento cookie. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) na riadku 141

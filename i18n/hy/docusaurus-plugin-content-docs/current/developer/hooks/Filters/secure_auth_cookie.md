@@ -4,20 +4,20 @@ title: Զտիչ - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Ֆիլտր՝ secure_auth_cookie
+# Ֆիլտր՝ secure_auth_cookie {#filter-secureauthcookie}
 
 Ֆիլտրում է՝ արդյոք auth cookie-ն պետք է ուղարկվի միայն HTTPS-ով։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
 | $secure | `bool` | Արդյոք cookie-ն պետք է ուղարկվի միայն HTTPS-ով։ |
 | $user_id | `int` | Օգտատիրոջ ID։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 3.1.0
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80)-ում՝ 80-րդ տողում

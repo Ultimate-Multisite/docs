@@ -3,11 +3,11 @@ title: Ikhono lobuhle bohlelo lokuklama
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Ikhono Lobuhle Besistimu Yokudizayina
+# Ikhono Lobuhle Besistimu Yokudizayina {#design-system-aesthetics-skill}
 
 **Ikhono Lobuhle Besistimu Yokudizayina** liyindlela eqondisiwe yokucwenga ubuwena bokubukeka kwesayithi lakho. Likusiza ukwenza izinqumo ezingaguquguquki mayelana nokuhlelwa kombhalo, umbala, izikhala, namathokheni okunyakaza achaza isistimu yakho yokudizayina.
 
-## Buyini Ubuhle Besistimu Yokudizayina?
+## Buyini Ubuhle Besistimu Yokudizayina? {#what-is-design-system-aesthetics}
 
 Ubuhle Besistimu Yokudizayina buyikhono elihlelekile elihlanganisa:
 
@@ -20,9 +20,9 @@ Ubuhle Besistimu Yokudizayina buyikhono elihlelekile elihlanganisa:
 
 Lezi zinqumo zigcinwa efayeleni le-theme yakho elithi `theme.json`, kwakha isistimu yokubukeka ebumbene.
 
-## Kungani Usebenzise Ubuhle Besistimu Yokudizayina?
+## Kungani Usebenzise Ubuhle Besistimu Yokudizayina? {#why-use-design-system-aesthetics}
 
-### Ukungaguquguquki
+### Ukungaguquguquki {#consistency}
 
 Isistimu yokudizayina iqinisekisa ukuthi:
 
@@ -31,7 +31,7 @@ Isistimu yokudizayina iqinisekisa ukuthi:
 - Izikhala zilandela iphethini ebikezelekayo
 - Ama-animation azwakala ebumbene
 
-### Ukusebenza kahle
+### Ukusebenza kahle {#efficiency}
 
 Esikhundleni sokwenza izinqumo zokudizayina ikhasi ngekhasi, wena:
 
@@ -39,7 +39,7 @@ Esikhundleni sokwenza izinqumo zokudizayina ikhasi ngekhasi, wena:
 - Uwasebenzisa yonke indawo
 - Uvuselela emhlabeni wonke ngokushintsha inani elilodwa
 
-### Ukuguquguquka
+### Ukuguquguquka {#flexibility}
 
 Ungakwazi:
 
@@ -47,9 +47,9 @@ Ungakwazi:
 - Ukuzama izinhlobo ezahlukene zobuhle
 - Ukugcina ukungaguquguquki kwe-brand ngenkathi uthuthuka
 
-## Ukuqalisa Ikhono Lobuhle Besistimu Yokudizayina
+## Ukuqalisa Ikhono Lobuhle Besistimu Yokudizayina {#triggering-the-design-system-aesthetics-skill}
 
-### Ukuqalisa mathupha
+### Ukuqalisa mathupha {#manual-activation}
 
 Ungaqala ikhono nganoma yisiphi isikhathi:
 
@@ -69,7 +69,7 @@ noma
 "Ngiqondise ezinqumweni zesistimu yokudizayina"
 ```
 
-### Iziphakamiso ezizenzakalelayo
+### Iziphakamiso ezizenzakalelayo {#automatic-suggestions}
 
 Ama-agent angase aphakamise ukusebenzisa ikhono lapho wena:
 
@@ -78,9 +78,9 @@ Ama-agent angase aphakamise ukusebenzisa ikhono lapho wena:
 - Ufuna ukuthuthukisa ukungaguquguquki kokubukeka
 - Ulungiselela ukwethula isayithi yakho
 
-## Inqubo Yobuhle Besistimu Yokudizayina
+## Inqubo Yobuhle Besistimu Yokudizayina {#the-design-system-aesthetics-process}
 
-### Isinyathelo 1: Ukuhlelwa kombhalo
+### Isinyathelo 1: Ukuhlelwa kombhalo {#step-1-typography}
 
 I-agent ibuza mayelana nokukhetha kwakho amafonti:
 
@@ -110,7 +110,7 @@ I-agent bese ichaza:
 - **Isikali sobukhulu**: Ubukhulu bamafonti (regular, medium, bold, njll.)
 - **Ukuphakama komugqa**: Isikhala phakathi kwemigqa ukuze kufundeke kalula
 
-### Isinyathelo 2: Iphalethi Yemibala
+### Isinyathelo 2: Iphalethi Yemibala {#step-2-color-palette}
 
 ```
 Asichaze iphalethi yakho yemibala.
@@ -140,7 +140,7 @@ I-agent yakha iphalethi ephelele ehlanganisa:
 - Imibala enencazelo (impumelelo, isexwayiso, iphutha)
 - Izimo ze-hover nezisebenzayo
 
-### Isinyathelo 3: Izikhala
+### Isinyathelo 3: Izikhala {#step-3-spacing}
 
 ```
 Ufuna indawo yokuphefumula engakanani?
@@ -162,7 +162,7 @@ I-agent ichaza amathokheni ezikhala:
 - Isikali: xs, sm, md, lg, xl, 2xl
 - Amanani athile e-padding, margin, gap
 
-### Isinyathelo 4: Imingcele Nezithunzi
+### Isinyathelo 4: Imingcele Nezithunzi {#step-4-borders-and-shadows}
 
 ```
 Ukujula kokubukeka nokuchazwa:
@@ -185,7 +185,7 @@ I-agent yakha:
 - Amathokheni ezithunzi zamazinga okuphakama
 - Amathokheni obubanzi bomngcele
 
-### Isinyathelo 5: Ukunyakaza Ne-animation
+### Isinyathelo 5: Ukunyakaza Ne-animation {#step-5-motion-and-animation}
 
 ```
 Isayithi yakho kufanele izwakale kanjani lapho isebenzisana?
@@ -207,9 +207,9 @@ I-agent ichaza:
 - Imisebenzi yokuthambisa (ease-in, ease-out, ease-in-out)
 - Ama-keyframe e-animation okusebenzisana okuvamile
 
-## Ukusebenzisa Ubuhle Besistimu Yokudizayina
+## Ukusebenzisa Ubuhle Besistimu Yokudizayina {#applying-design-system-aesthetics}
 
-### Ukusetshenziswa Okuzenzakalelayo
+### Ukusetshenziswa Okuzenzakalelayo {#automatic-application}
 
 Ngemva kokuphothula ikhono, i-agent:
 
@@ -218,7 +218,7 @@ Ngemva kokuphothula ikhono, i-agent:
 3. Ikhiqiza kabusha izitayela zama-block ukuze zifane nesistimu entsha
 4. Iqalisa i-theme ebuyekeziwe
 
-### Ukusetshenziswa Mathupha
+### Ukusetshenziswa Mathupha {#manual-application}
 
 Ungahlela futhi `theme.json` ngokuqondile:
 
@@ -257,9 +257,9 @@ Ungahlela futhi `theme.json` ngokuqondile:
 }
 ```
 
-## Ukubuka Isistimu Yakho Yokudizayina
+## Ukubuka Isistimu Yakho Yokudizayina {#viewing-your-design-system}
 
-### Buza i-Agent
+### Buza i-Agent {#ask-the-agent}
 
 ```
 "Ngibonise isistimu yami yokudizayina"
@@ -273,13 +273,13 @@ noma
 
 I-agent izobonisa ukuhlelwa kombhalo kwakho, imibala, izikhala, namanye amathokheni.
 
-### Buka theme.json
+### Buka theme.json {#view-themejson}
 
 Vula `/wp-content/themes/[theme-name]/theme.json` kusihleli sombhalo ukuze ubone izincazelo ze-token ezingavuthiwe.
 
-## Ukubuyekeza Uhlelo Lwakho Lokuklama
+## Ukubuyekeza Uhlelo Lwakho Lokuklama {#updating-your-design-system}
 
-### Izibuyekezo Ezisheshayo
+### Izibuyekezo Ezisheshayo {#quick-updates}
 
 Cela i-agent izinguquko ezithile:
 
@@ -299,7 +299,7 @@ noma
 "Shintsha ifonti yesihloko ibe yi-serif"
 ```
 
-### Ukuklama Kabusha Okugcwele
+### Ukuklama Kabusha Okugcwele {#full-redesign}
 
 Qalisa futhi ikhono le-Design System Aesthetics:
 
@@ -309,7 +309,7 @@ Qalisa futhi ikhono le-Design System Aesthetics:
 
 Lokhu kuzokuqondisa kuzo zonke izinqumo futhi, kuqalwa ngamavelu akho amanje.
 
-### Izibuyekezo Eziyingxenye
+### Izibuyekezo Eziyingxenye {#partial-updates}
 
 Buyekeza izingxenye ezithile:
 
@@ -317,15 +317,15 @@ Buyekeza izingxenye ezithile:
 "Buyekeza kuphela iphalethi yemibala, ugcine konke okunye"
 ```
 
-## Izindlela Ezinhle Kakhulu Zohlelo Lokuklama
+## Izindlela Ezinhle Kakhulu Zohlelo Lokuklama {#design-system-best-practices}
 
-### Ukuvumelana
+### Ukuvumelana {#consistency-1}
 
 - Sebenzisa ama-token afanayo yonke indawo
 - Ungadali imibala noma osayizi abasetshenziswa kanye kuphela
 - Bhekisa kuma-token esikhundleni sokufaka amavelu ngokuqondile
 
-### Ukuqamba Amagama
+### Ukuqamba Amagama {#naming}
 
 Sebenzisa amagama acacile, anencazelo:
 
@@ -335,7 +335,7 @@ Sebenzisa amagama acacile, anencazelo:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Ukukwazi Ukukhula
+### Ukukwazi Ukukhula {#scalability}
 
 Klanyela uhlelo lwakho ukuthi lukwazi ukukhula:
 
@@ -343,7 +343,7 @@ Klanyela uhlelo lwakho ukuthi lukwazi ukukhula:
 - Dala izikali (xs, sm, md, lg, xl) esikhundleni samavelu angahleliwe
 - Hlela izengezo zesikhathi esizayo
 
-### Imibhalo
+### Imibhalo {#documentation}
 
 Bhala imibhalo yohlelo lwakho lokuklama:
 
@@ -351,9 +351,9 @@ Bhala imibhalo yohlelo lwakho lokuklama:
 - Lapho kufanele kusetshenziswe khona i-token ngayinye
 - Okuhlukile nezimo ezisemngceleni
 
-## Amaphethini Avamile Ohlelo Lokuklama
+## Amaphethini Avamile Ohlelo Lokuklama {#common-design-system-patterns}
 
-### Okwesimanje Okuncane
+### Okwesimanje Okuncane {#modern-minimalist}
 
 - I-typography ye-sans-serif (Inter, Helvetica)
 - Iphalethi yemibala elinganiselwe (imibala engu-2-3)
@@ -361,7 +361,7 @@ Bhala imibhalo yohlelo lwakho lokuklama:
 - Izithunzi ezithambile
 - Ama-animation abushelelezi, asheshayo
 
-### Okufudumele Nokunobungane
+### Okufudumele Nokunobungane {#warm-and-friendly}
 
 - Inhlanganisela ye-serif ne-sans-serif
 - Iphalethi yemibala efudumele (amawolintshi, okumpunga okufudumele)
@@ -369,7 +369,7 @@ Bhala imibhalo yohlelo lwakho lokuklama:
 - Izithunzi ezithambile
 - Ama-animation adlalayo
 
-### Okwenkampani Okusezingeni Lobungcweti
+### Okwenkampani Okusezingeni Lobungcweti {#professional-corporate}
 
 - I-sans-serif ehlanzekile (Roboto, Open Sans)
 - Iphalethi engathathi hlangothi enombala we-accent
@@ -377,7 +377,7 @@ Bhala imibhalo yohlelo lwakho lokuklama:
 - Izithunzi ezincane
 - Ukushintsha okuthambile
 
-### Okusungulayo Nokugqamile
+### Okusungulayo Nokugqamile {#creative-and-bold}
 
 - I-typography ehlukile
 - Iphalethi yemibala egqamile
@@ -385,7 +385,7 @@ Bhala imibhalo yohlelo lwakho lokuklama:
 - Izithunzi eziqinile
 - Ama-animation abonakalayo
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
 **Izinguquko zohlelo lwami lokuklama azibonakali**
 - Sula i-cache yesiphequluli sakho
@@ -403,7 +403,7 @@ Bhala imibhalo yohlelo lwakho lokuklama:
 - Hlela mathupha i-theme.json iye kumavelu angaphambilini
 - Qalisa futhi ikhono ngezinketho ezihlukile
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 Ngemva kokuchaza uhlelo lwakho lokuklama:
 

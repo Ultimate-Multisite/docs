@@ -3,13 +3,13 @@ title: Šablony webu
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Šablony webů (v2)
+# Šablony webů (v2) {#site-templates-v2}
 
 _**POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x. Pokud používáte verzi 1.x,**_ **podívejte se na tento článek** _**.**_
 
 Naším cílem při vytváření prémiové sítě s Ultimate Multisite je automatizovat co nejvíce procesů a zároveň dát našim klientům flexibilitu a různé možnosti, ze kterých si mohou vybírat při vytváření svých webů. Jedním snadným způsobem, jak této rovnováhy dosáhnout, je využít funkci šablon webů v Ultimate Multisite.
 
-## Co je šablona webu?
+## Co je šablona webu? {#what-is-a-site-template}
 
 Jak název napovídá, šablona webu je výchozí web, který lze použít jako základ při vytváření nových webů ve vaší síti.
 
@@ -17,7 +17,7 @@ To znamená, že můžete vytvořit základní web, aktivovat různé pluginy, n
 
 To zní skvěle, ale jak vytvořím novou šablonu webu? Je to tak jednoduché, jak jen může být.
 
-## Vytvoření a úprava nové šablony webu
+## Vytvoření a úprava nové šablony webu {#creating-and-editing-a-new-site-template}
 
 Šablony webů jsou jen běžné weby ve vaší síti. Chcete-li vytvořit novou šablonu, můžete jednoduše přejít na **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Ve spodní části formuláře si všimnete přepínače **Copy Site**. Ten vám
 
 ![Modální okno pro přidání šablony webu s přepínačem kopírování webu](/img/config/site-templates-list.png)
 
-### Přizpůsobení obsahu šablony webu
+### Přizpůsobení obsahu šablony webu {#customizing-the-contents-of-a-site-template}
 
 Chcete-li šablonu webu přizpůsobit, jednoduše přejděte na její panel Dashboard a proveďte potřebné změny. Můžete vytvářet nové příspěvky, stránky, aktivovat pluginy a změnit aktivní theme. Můžete dokonce přejít do Customizeru a měnit nejrůznější možnosti přizpůsobení.
 
@@ -43,11 +43,11 @@ Chcete-li šablonu webu přizpůsobit, jednoduše přejděte na její panel Dash
 
 Všechna tato data se zkopírují, když zákazník vytvoří nový web založený na této šabloně webu.
 
-### Pokročilé možnosti
+### Pokročilé možnosti {#advanced-options}
 
 Pokud se vyznáte ve vlastním kódování, můžete využít naše Search and Replace API k automatickému nahrazení informací na novém webu po jeho vytvoření. To je užitečné například pro nahrazení názvů společností na stránce O nás, nahrazení kontaktního e-mailu na stránce Kontakt atd.
 
-### Používání šablon webů
+### Používání šablon webů {#using-site-templates}
 
 Dobře, vytvořili jste tedy několik různých šablon webů s různými designy, themes a nastaveními. Jak je nyní ve své síti využít?
 
@@ -59,7 +59,7 @@ V zásadě existují dva přístupy, které nyní můžete použít (ne současn
 
   * Umožnit klientům, aby si během registrace vybrali šablony webů sami.
 
-#### Režim 1: Přiřadit šablonu webu
+#### Režim 1: Přiřadit šablonu webu {#mode-1-assign-site-template}
 
 V tomto režimu si vaši klienti nebudou moci vybrat šablonu při vytváření accountu; místo toho určíte, která šablona se má použít u každého z vašich plánů.
 
@@ -71,7 +71,7 @@ Tím se dostanete na stránku **Edit Product**. V části **Product Options** na
 
 ![Karta šablony webu produktu s možností přiřazení šablony webu](/img/config/product-site-templates.png)
 
-#### Režim 2: Vybrat dostupnou šablonu webu
+#### Režim 2: Vybrat dostupnou šablonu webu {#mode-2-choose-available-site-template}
 
 V tomto režimu dáte klientům možnost volby během procesu registrace. Budou si moci vybrat z různých šablon webů, které definujete v nastavení produktu. Máte možnost omezit šablony webů, ze kterých si mohou u vybraného produktu vybrat. To vám umožní mít pod každým produktem různé sady šablon webů, což je ideální pro zvýraznění různých funkcí a vlastností u produktu s vyšší cenou.
 
@@ -79,7 +79,7 @@ Na stránce **Edit Product**. V části **Product Options** najděte kartu **Sit
 
 ![Výběr dostupných šablon webů s možnostmi chování](/img/config/product-site-templates.png)
 
-### Výchozí režim: výběr šablony webu ve formuláři Checkout
+### Výchozí režim: výběr šablony webu ve formuláři Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Pokud chcete, aby byly během registrace dostupné všechny vaše šablony webů, nebo možná nechcete dělat práci navíc s přiřazováním či specifikováním šablon webů u každého vytvořeného produktu, můžete jednoduše nastavit výběr šablony webu ve svém **Checkout Form**. Chcete-li to udělat, přejděte na **Ultimate Multisite > Checkout Forms** a klikněte na **Edit** pod formulářem, který chcete nakonfigurovat.
 
@@ -93,29 +93,29 @@ Na frontendu zákazníci během checkoutu vidí výběr šablony a mohou si zvol
 
 ![Frontendový výběr šablony během registrace](/img/config/frontend-template-chooser.png)
 
-### Možnosti šablon webů
+### Možnosti šablon webů {#site-template-options}
 
 V nastavení Ultimate Multisite jsou k dispozici další funkce šablon webů, které můžete zapnout nebo vypnout.
 
 ![Možnosti šablon webů v nastavení Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Povolit přepínání šablon
+#### Povolit přepínání šablon {#allow-template-switching}
 
 Zapnutí této možnosti umožní vašim klientům po vytvoření účtu a webu změnit šablonu, kterou si vybrali během procesu registrace. To je užitečné z pohledu klienta, protože jim to umožní znovu vybrat šablonu, pokud později zjistí, že jejich původní volba nebyla pro jejich konkrétní potřeby nejlepší.
 
-#### Povolit uživatelům používat jejich web jako šablony
+#### Povolit uživatelům používat jejich web jako šablony {#allow-users-to-use-their-site-as-templates}
 
 Protože uživatelé podwebů strávili čas budováním a navrhováním vlastního webu, mohou ho chtít naklonovat a použít jako jednu ze šablon webů dostupných při vytváření dalšího podwebu ve vaší síti. Tato možnost jim to umožní.
 
-#### Kopírovat média při duplikaci šablony
+#### Kopírovat média při duplikaci šablony {#copy-media-on-template-duplication}
 
 Zaškrtnutí této možnosti zkopíruje média nahraná na web šablony do nově vytvořeného webu. Toto lze přepsat u každého z plánů.
 
-#### **Zabránit vyhledávačům v indexování šablon webů**
+#### **Zabránit vyhledávačům v indexování šablon webů** {#prevent-search-engines-from-indexing-site-templates}
 
 Šablony webů, jak je popsáno v tomto článku, jsou boilerplate, ale stále jsou součástí vaší sítě, což znamená, že jsou stále dostupné pro vyhledávače. Tato možnost vám umožní šablony webů skrýt, aby je vyhledávače mohly indexovat.
 
-## Předvyplnění šablon webů pomocí automatického hledání a nahrazování
+## Předvyplnění šablon webů pomocí automatického hledání a nahrazování {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Jednou z nejvýkonnějších funkcí Ultimate Multisite je možnost přidat do registračního formuláře libovolná textová, barevná a výběrová pole. Jakmile tato data zachytíme, můžeme je použít k předvyplnění obsahu v určitých částech vybrané šablony webu. Když je pak nový web publikován, Ultimate Multisite nahradí zástupné symboly skutečnými informacemi zadanými během registrace.
 
@@ -135,7 +135,7 @@ Ultimate Multisite pak automaticky nahradí zástupné symboly daty poskytnutým
 
 ![Zástupné symboly nahrazené zákaznickými daty na webu](/img/config/site-templates-list.png)
 
-### Řešení problému „šablona plná zástupných symbolů“
+### Řešení problému „šablona plná zástupných symbolů“ {#solving-the-template-full-of-placeholders-problem}
 
 To vše je skvělé, ale narážíme na nepříjemný problém: naše šablony webů – které mohou navštívit naši zákazníci – jsou nyní plné ošklivých zástupných symbolů, které toho moc neříkají.
 

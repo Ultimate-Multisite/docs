@@ -3,25 +3,25 @@ title: قالب الإضافة
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# قالب الإضافة
+# قالب الإضافة {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## المتطلبات
+## المتطلبات {#requirements}
 
 - WordPress 5.3 أو أعلى
 - PHP 7.4 أو أعلى
 - إضافة Multisite Ultimate (نشطة)
 
-## التثبيت
+## التثبيت {#installation}
 
 1. قم بتحميل ملفات الإضافة إلى دليل `/wp-content/plugins/` الخاص بك
 2. فعّل الإضافة من خلال قائمة 'الإضافات' في WordPress
 3. قم بتكوين إعدادات الإضافة في إدارة الشبكة
 
-## التطوير
+## التطوير {#development}
 
-### الإعداد
+### الإعداد {#setup}
 
 ```bash
 # تثبيت الاعتمادات
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### هيكل المشروع
+### هيكل المشروع {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # قواعد تحديث الكود
 ```
 
-### الاختبار
+### الاختبار {#testing}
 
 تشمل الإضافة إطار اختبار شامل:
 
@@ -75,45 +75,45 @@ ultimate-multisite-addon-template/
 - **تغطية الاختبار**: مُكوَّنة لتتبع تغطية الكود
 - **اختبار الشبكة المتعددة**: تُشغَّل الاختبارات في بيئة الشبكة المتعددة
 
-### معايير الكود
+### معايير الكود {#code-standards}
 
 - **معايير ترميز WordPress**: تُفرض عبر PHPCS
 - **التوافق مع PHP 7.4+**: ميزات PHP الحديثة مدعومة
 - **التحليل الثابت**: تكامل PHPStan لفحص الأنواع
 - **تحديث الكود**: قواعد Rector لترقيات PHP
 
-### نظام البناء
+### نظام البناء {#build-system}
 
 - **معالجة الأصول**: تصغير ملفات CSS/JS
 - **الترجمة**: إنشاء ملفات POT
 - **التغليف**: إنشاء أرشيف للتوزيع
 - **وضع التطوير**: أصول غير مصغرة للخطأ
 
-## التكوين
+## التكوين {#configuration}
 
 تدعم الإضافة خيارات تكوين مختلفة يمكن الوصول إليها عبر واجهة إدارة الشبكة.
 
-## الخطافات والمرشحات
+## الخطافات والمرشحات {#hooks-and-filters}
 
-### الإجراءات
+### الإجراءات {#actions}
 
 - `ultimate-multisite-addon-template_init` - يُطلق بعد تهيئة الإضافة
 - `ultimate-multisite-addon-template_loaded` - يُطلق بعد تحميل جميع ملفات الإضافة
 
-### المرشحات
+### المرشحات {#filters}
 
 - `ultimate-multisite-addon-template_settings` - تعديل إعدادات الإضافة
 - `ultimate-multisite-addon-template_enabled` - تجاوز …
 
-## الترخيص
+## الترخيص {#license}
 
 تمت ترخيص هذه الإضافة بموجب GPL v3 أو أحدث.
 
-## الدعم
+## الدعم {#support}
 
 للحصول على الدعم والوثائق .. [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## سجل التغييرات
+## سجل التغييرات {#changelog}
 
 - الإصدار 1.0.1 (2025-09-28): إعادة تسمية البادئة …
 - الإصدار (2025-09-28): إعادة تسمية البادئة …

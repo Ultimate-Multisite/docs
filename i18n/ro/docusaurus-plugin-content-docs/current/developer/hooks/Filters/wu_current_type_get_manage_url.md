@@ -4,11 +4,11 @@ title: 'Filter - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Permite dezvoltatorilor să modifice parametrii URL-ului de gestionare a site-ului.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Permite dezvoltatorilor să modifice parametrii URL-ului de gestionare a site-ul
 | $id | `int` | ID-ul site-ului. |
 | $site_hash | `string` | Hash-ul site-ului. |
 
-### De la
+### De la {#since}
 
 - 2.0.9
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) la linia 214
 
 
-## Returnează
+## Returnează {#returns}
 URL-ul de gestionare modificat.

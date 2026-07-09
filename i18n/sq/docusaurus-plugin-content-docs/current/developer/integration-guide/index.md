@@ -3,13 +3,13 @@ title: Udhëzuesi i integrimit
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Udhëzues Integrimi
+# Udhëzues Integrimi {#integration-guide}
 
 Ky udhëzues mbulon modelet e zakonshme të integrimit me Ultimate Multisite, duke përfshirë lidhjen me shërbime të jashtme, ndërtimin e portave të personalizuara të pagesave dhe trajtimin e webhooks.
 
 Për infrastrukturë të izoluar të qiramarrësve, shihni [Integrimi Multi-Tenancy](./multi-tenancy) për udhëzime mbi nisjen fillestare të qiramarrësit sovran, verifikimin e migrimit, SSO dhe çmontimin.
 
-## Integrimi me CRM
+## Integrimi me CRM {#crm-integration}
 
 Sinkronizoni të dhënat e klientëve me CRM-në tuaj kur klientë të rinj regjistrohen:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrimi i Analytics
+## Integrimi i Analytics {#analytics-integration}
 
 Gjurmoni ngjarjet kryesore të biznesit përgjatë ciklit jetësor të klientit:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Hapat e Mëtejshëm
+## Hapat e Mëtejshëm {#next-steps}
 
 - [Zhvillimi i Gateway të Personalizuar](./custom-gateway) — Ndërtoni portën tuaj të pagesave
 - [Trajtimi i Webhook](./webhooks) — Krijoni endpoint-e të personalizuara webhook

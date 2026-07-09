@@ -3,7 +3,7 @@ title: Community
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Så går du med i Ultimate Multisite Community
+# Så går du med i Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community är en plats där du kan komma i kontakt med andra Ultimate Multisite-användare och dela tips, erfarenheter och mycket mer. För att komma åt Ultimate Multisite Community, gå till https://community.ultimatemultisite.com/home.
 

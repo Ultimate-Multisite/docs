@@ -3,7 +3,7 @@ title: WooCommerce-integrationsändringslogg
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration ändringslogg
+# WooCommerce Integration ändringslogg {#woocommerce-integration-changelog}
 
 Version 2.2.0 - Släppt 2026-07-01
 * Nytt: Ultimate Multisite skattebelopp visas nu som separata WooCommerce avgiftsrader i checkout, vilket gör skattesummor tydligare före betalning.

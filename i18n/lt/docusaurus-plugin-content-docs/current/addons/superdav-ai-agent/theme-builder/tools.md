@@ -3,17 +3,17 @@ title: Įrankiai ir konfigūracija
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Įrankiai ir konfigūracija
+# Įrankiai ir konfigūracija {#tools-and-configuration}
 
 Theme Builder naudoja įrankių rinkinį jūsų WordPress svetainei analizuoti, projektuoti ir kurti. 1.16.0 versijoje **sd-ai-agent/site-scrape dabar yra 1 lygio įrankis**, todėl jis pagal numatytuosius nustatymus pasiekiamas Theme Builder. Superdav AI Agent v1.18.0 taip pat pristato atskirai platinamą Advanced papildomą paketą patikimoms kūrėjų darbo eigoms; šie įrankiai nėra WordPress.org pagrindinio paketo dalis ir turi būti įdiegti bei autorizuoti atskirai.
 
-## Pasiekiami įrankiai
+## Pasiekiami įrankiai {#available-tools}
 
-### 1 lygio įrankiai (visada pasiekiami)
+### 1 lygio įrankiai (visada pasiekiami) {#tier-1-tools-always-available}
 
 1 lygio įrankiai pagal numatytuosius nustatymus pasiekiami Theme Builder be jokios papildomos konfigūracijos.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Paskirtis:** Analizuoti esamas svetaines, kad būtų išgauta dizaino įkvėpimo, turinio struktūra ir funkcionalumas.
 
@@ -51,11 +51,11 @@ Išanalizuok example.com dizainą ir naudok jį kaip įkvėpimą mano svetainei.
 - Svetainėse, kuriose daug JavaScript, analizė gali būti ribota
 - Didelių svetainių analizė gali užtrukti ilgiau
 
-### 2 lygio įrankiai (pasirenkami)
+### 2 lygio įrankiai (pasirenkami) {#tier-2-tools-optional}
 
 2 lygio įrankiai pasiekiami, kai jie aiškiai įjungiami Theme Builder nustatymuose.
 
-#### Išplėstinė analitika
+#### Išplėstinė analitika {#advanced-analytics}
 
 Pateikia išsamius našumo rodiklius:
 
@@ -65,7 +65,7 @@ Pateikia išsamius našumo rodiklius:
 - Prieinamumo įvertinimą
 - Geriausios praktikos įvertinimą
 
-#### Turinio optimizatorius
+#### Turinio optimizatorius {#content-optimizer}
 
 Analizuoja ir siūlo patobulinimus:
 
@@ -75,11 +75,11 @@ Analizuoja ir siūlo patobulinimus:
 - Turinio struktūrai
 - Raginimo veikti vietai
 
-### 3 lygio įrankiai (Premium)
+### 3 lygio įrankiai (Premium) {#tier-3-tools-premium}
 
 3 lygio įrankiams reikia papildomos konfigūracijos arba premium funkcijų.
 
-#### AI turinio generatorius
+#### AI turinio generatorius {#ai-content-generator}
 
 Generuoja turinį:
 
@@ -89,7 +89,7 @@ Generuoja turinį:
 - Meta aprašymams
 - Raginimo veikti tekstui
 
-#### Išplėstiniai dizaino įrankiai
+#### Išplėstiniai dizaino įrankiai {#advanced-design-tools}
 
 Suteikia išplėstines dizaino galimybes:
 
@@ -99,7 +99,7 @@ Suteikia išplėstines dizaino galimybes:
 - Išplėstinę spalvų teoriją
 - Tipografijos optimizavimą
 
-### Advanced papildomi įrankiai (atskiras paketas)
+### Advanced papildomi įrankiai (atskiras paketas) {#advanced-companion-tools-separate-package}
 
 Advanced papildomas paketas platinamas atskirai nuo pagrindinio Superdav AI Agent leidimo. Jis skirtas patikimoms kūrėjų ir svetainių savininkų aplinkoms, kuriose administratoriai aiškiai leidžia agentui naudoti didelio poveikio įrankius.
 
@@ -116,9 +116,9 @@ Advanced papildomos galimybės gali apimti:
 
 Nedokumentuokite jų kaip bendrai pasiekiamų Theme Builder įrankių kiekviename diegime. Jie pasiekiami tik tada, kai Advanced papildomas paketas yra įdiegtas, įjungtas ir apribotas patikimiems administratoriams.
 
-## Įrankių konfigūracija
+## Įrankių konfigūracija {#tool-configuration}
 
-### Įrankių įjungimas
+### Įrankių įjungimas {#enabling-tools}
 
 Norėdami įjungti papildomus įrankius Theme Builder:
 
@@ -127,7 +127,7 @@ Norėdami įjungti papildomus įrankius Theme Builder:
 3. Įjunkite arba išjunkite įrankius pagal poreikį
 4. Išsaugokite nustatymus
 
-### Įrankių leidimai
+### Įrankių leidimai {#tool-permissions}
 
 Kai kuriems įrankiams reikia leidimų:
 
@@ -137,7 +137,7 @@ Kai kuriems įrankiams reikia leidimų:
 - **Išplėstinės funkcijos** — gali reikėti premium prenumeratos
 - **Advanced papildomi įrankiai** — reikalingas atskirai platinamas Advanced paketas ir aiškus administratoriaus pasitikėjimas
 
-### API raktai ir kredencialai
+### API raktai ir kredencialai {#api-keys-and-credentials}
 
 Sukonfigūruokite API raktus įrankiams, kuriems jų reikia:
 
@@ -146,13 +146,13 @@ Sukonfigūruokite API raktus įrankiams, kuriems jų reikia:
 3. Išbandykite ryšį
 4. Saugiai išsaugokite
 
-### Advanced papildomo paketo diegimas
+### Advanced papildomo paketo diegimas {#installing-the-advanced-companion-package}
 
 Advanced papildomas paketas išleidžiamas atskirai nuo WordPress.org pagrindinio ZIP. Įdiekite jį tik iš oficialaus projekto platinimo kanalo, skirto leidimui, tada apribokite prieigą patikimiems administratoriams. Prieš įjungdami failų sistemos, duomenų bazės, WP-CLI, REST dispečerio, papildinių kūrimo, naudotojų valdymo arba testavimo įrankius produkcinėje svetainėje, peržiūrėkite žmogaus patvirtinimo vartus ir git momentinių kopijų veikimą.
 
-## sd-ai-agent/site-scrape naudojimas
+## sd-ai-agent/site-scrape naudojimas {#using-sd-ai-agentsite-scrape}
 
-### Pagrindinis naudojimas
+### Pagrindinis naudojimas {#basic-usage}
 
 Paprašykite Theme Builder išanalizuoti svetainę:
 
@@ -161,7 +161,7 @@ Išanalizuok mano konkurento svetainės, esančios competitor.com, dizainą
 ir pasiūlyk dizaino patobulinimų mano svetainei.
 ```
 
-### Konkreti analizė
+### Konkreti analizė {#specific-analysis}
 
 Paprašykite konkrečių analizės tipų:
 
@@ -179,7 +179,7 @@ Patikrink example.com pritaikymą mobiliesiems ir užtikrink, kad mano svetainė
 būtų taip pat pritaikyta.
 ```
 
-### Palyginamoji analizė
+### Palyginamoji analizė {#comparison-analysis}
 
 Palyginkite kelias svetaines:
 
@@ -188,22 +188,22 @@ Palygink site1.com ir site2.com dizainus ir sukurk dizainą,
 kuris sujungia geriausius abiejų elementus.
 ```
 
-## Įrankių apribojimai ir svarstymai
+## Įrankių apribojimai ir svarstymai {#tool-limitations-and-considerations}
 
-### Užklausų ribojimas
+### Užklausų ribojimas {#rate-limiting}
 
 - Scraping greitis ribojamas, kad būtų išvengta serverio perkrovos
 - Kelių užklausų į tą pačią svetainę vykdymas gali būti pristabdytas
 - Didelėms svetainėms analizuoti gali prireikti daugiau laiko
 
-### Turinio tikslumas
+### Turinio tikslumas {#content-accuracy}
 
 - Dinaminis turinys gali būti užfiksuotas ne visiškai
 - JavaScript sugeneruotas turinys gali būti neišsamus
 - Realaus laiko duomenys gali būti neatspindėti
 - Dalis turinio gali būti už mokamos prieigos sienų
 
-### Teisiniai ir etiniai aspektai
+### Teisiniai ir etiniai aspektai {#legal-and-ethical-considerations}
 
 - Gerbkite robots.txt ir svetainės taisykles
 - Nekopijuokite autorių teisėmis saugomo turinio atkūrimui
@@ -211,16 +211,16 @@ kuris sujungia geriausius abiejų elementus.
 - Patikrinkite, ar turite teisę naudoti išgautą turinį
 - Laikykitės analizuojamų svetainių paslaugų teikimo sąlygų
 
-### Poveikis našumui
+### Poveikis našumui {#performance-impact}
 
 - Didelių svetainių scraping gali užtrukti
 - Keli vienu metu vykdomi scraping gali būti lėtesni
 - Tinklo ryšys daro įtaką greičiui
 - Dideliems duomenų rinkiniams gali reikėti daugiau apdorojimo
 
-## Geriausios praktikos
+## Geriausios praktikos {#best-practices}
 
-### Svetainės analizės naudojimas
+### Svetainės analizės naudojimas {#using-site-analysis}
 
 1. **Analizuokite kelias svetaines** — rinkite įkvėpimą iš kelių šaltinių
 2. **Sutelkite dėmesį į struktūrą** — mokykitės išdėstymo ir organizavimo šablonų
@@ -228,7 +228,7 @@ kuris sujungia geriausius abiejų elementus.
 4. **Studijuokite tipografiją** — nustatykite jums patinkančius šriftų derinius
 5. **Peržiūrėkite navigaciją** — supraskite meniu organizavimą
 
-### Etiškas scraping
+### Etiškas scraping {#ethical-scraping}
 
 1. **Gerbkite robots.txt** — laikykitės svetainės gairių
 2. **Nekopijuokite turinio** — analizę naudokite tik įkvėpimui
@@ -236,7 +236,7 @@ kuris sujungia geriausius abiejų elementus.
 4. **Nurodykite šaltinius** — paminėkite įkvėpimo šaltinius
 5. **Laikykitės sąlygų** — laikykitės svetainės paslaugų teikimo sąlygų
 
-### Įrankio efektyvumo didinimas
+### Įrankio efektyvumo didinimas {#maximizing-tool-effectiveness}
 
 1. **Būkite konkretūs** — prašykite konkrečių analizės tipų
 2. **Pateikite kontekstą** — paaiškinkite savo svetainės tikslą
@@ -244,9 +244,9 @@ kuris sujungia geriausius abiejų elementus.
 4. **Iteruokite** — tobulinkite pagal rezultatus
 5. **Derinkite įrankius** — naudokite kelis įrankius išsamiai analizei
 
-## Trikčių šalinimas
+## Trikčių šalinimas {#troubleshooting}
 
-### Svetainės nepavyksta nuskaityti naudojant scraping
+### Svetainės nepavyksta nuskaityti naudojant scraping {#site-wont-scrape}
 
 - Patikrinkite, ar svetainė viešai pasiekiama
 - Patikrinkite, ar robots.txt leidžia scraping
@@ -254,7 +254,7 @@ kuris sujungia geriausius abiejų elementus.
 - Patikrinkite interneto ryšį
 - Jei problema išlieka, susisiekite su palaikymo tarnyba
 
-### Neišsami analizė
+### Neišsami analizė {#incomplete-analysis}
 
 - Svetainėje gali būti dinaminio turinio
 - JavaScript gali būti nevisiškai sugeneruotas
@@ -262,7 +262,7 @@ kuris sujungia geriausius abiejų elementus.
 - Vietoj to pabandykite analizuoti konkrečius puslapius
 - Paprašykite konkrečių analizės tipų
 
-### Lėtas veikimas
+### Lėtas veikimas {#slow-performance}
 
 - Didelėms svetainėms analizuoti reikia daugiau laiko
 - Keli vienu metu vykdomi scraping yra lėtesni
@@ -270,7 +270,7 @@ kuris sujungia geriausius abiejų elementus.
 - Bandykite ne piko valandomis
 - Pirmiausia analizuokite mažesnes dalis
 
-## Susijusi dokumentacija
+## Susijusi dokumentacija {#related-documentation}
 
 - [Atradimo interviu](./discovery-interview.md) — surinkite dizaino informaciją
 - [Dizaino kryptis](./design-direction.md) — patobulinkite savo dizainą

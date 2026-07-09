@@ -3,15 +3,15 @@ title: 'Sapak 6: Hasaba ýazylmak tejribesi'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# 6-njy sapak: Hasaba ýazylmak tejribesi
+# 6-njy sapak: Hasaba ýazylmak tejribesi {#lesson-6-the-signup-experience}
 
 Checkout akymy gyzyklanmanyň girdejä öwrülýän ýeridir. Bulaşyk ýa-da umumy hasaba ýazylmak prosesi müşderileri ýitirýär. Olaryň dilinde gepleýän we kynçylyksyz duýulýan nişa mahsus akym bolsa olary müşderä öwürýär.
 
-## Nirede galypdyk
+## Nirede galypdyk {#where-we-left-off}
 
 FitSite-de şablonlar we meýilnamalar sazlandy. Indi biz fitness studiýa eýelerini töleýän müşderilere öwürýän hasaba alyş we checkout tejribesini gurýarys.
 
-## Hasaba alyş akymyna düşünmek
+## Hasaba alyş akymyna düşünmek {#understanding-the-registration-flow}
 
 Ultimate Multisite-iň checkout formalary doly sazlap bolýan köp ädimli formalardyr. FitSite üçin biz şeýle akym isleýäris:
 
@@ -21,11 +21,11 @@ Ultimate Multisite-iň checkout formalary doly sazlap bolýan köp ädimli forma
 
 Doly tehniki salgylanma üçin [Hasaba alyş akymy](/user-guide/configuration/the-registration-flow) sahypasyna serediň.
 
-## FitSite Checkout-yny taslamak
+## FitSite Checkout-yny taslamak {#designing-the-fitsite-checkout}
 
 **Ultimate Multisite > Checkout Forms** bölümine geçiň we täze forma dörediň.
 
-### 1-nji ädim: Meýilnama saýlamak
+### 1-nji ädim: Meýilnama saýlamak {#step-1-plan-selection}
 
 Fitness studiýa eýesiniň ilkinji görmeli zady, özüne düşnükli sözler bilen görkezilen meýilnamalar bolmaly.
 
@@ -37,7 +37,7 @@ Fitness studiýa eýesiniň ilkinji görmeli zady, özüne düşnükli sözler b
 "1 GB ammar" sport zaly eýesi üçin hiç zat aňlatmaýar. "Professional studiýa websaýty üçin size gerek zatlaryň hemmesi" bolsa hemme zady aňladýar. Meýilnama düşündirişlerini müşderiňiziň dilinde ýazyň.
 :::
 
-### 2-nji ädim: Şablon saýlamak
+### 2-nji ädim: Şablon saýlamak {#step-2-template-selection}
 
 Meýilnama saýlanyndan soň, müşderi başlangyç şablonyny saýlaýar.
 
@@ -45,7 +45,7 @@ Meýilnama saýlanyndan soň, müşderi başlangyç şablonyny saýlaýar.
 - Elýeterli şablonlar olaryň saýlan meýilnamasy boýunça süzülýär (5-nji sapakda sazlandy)
 - Her şablonda fitness-e mahsus dizaýny görkezýän öňünden syn şekili bolmaly
 
-### 3-nji ädim: Account döretmek
+### 3-nji ädim: Account döretmek {#step-3-account-creation}
 
 Muny mümkin boldugyça ýönekeý saklaň. Diňe şulary ýygnaň:
 
@@ -55,27 +55,27 @@ Muny mümkin boldugyça ýönekeý saklaň. Diňe şulary ýygnaň:
 
 Hasaba ýazylmakda zerur bolmadyk maglumatlary soramaň. Her goşmaça meýdança öwrülişikleri azaldýar.
 
-### 4-nji ädim: Saýt sazlamasy
+### 4-nji ädim: Saýt sazlamasy {#step-4-site-setup}
 
 - **Saýt ady**: 3-nji ädimde girizilen studiýa adyndan öňünden dolduryň
 - **Saýt URL-i**: Studiýa adyndan awtomatik dörediň (meselem, `ironworks.fitsite.com`)
 
-### 5-nji ädim: Töleg
+### 5-nji ädim: Töleg {#step-5-payment}
 
 - **Töleg** meýdançasyny goşuň
 - Töleg şlýuzyňyzy sazlaň (abuna tölegleri üçin [Stripe](/user-guide/payment-gateways/stripe) maslahat berilýär)
 - 5-nji sapakda goşmaça sargyt tekliplerini döreden bolsaňyz, töleg ädiminden öň **Goşmaça sargyt teklibi** meýdançasyny goşuň
 
-### 6-njy ädim: Tassyklama
+### 6-njy ädim: Tassyklama {#step-6-confirmation}
 
 - Tassyklama habaryny fitness-e mahsus dil bilen özleşdiriň
 - Mysal: "Fitness studiýa websaýtyňyz döredilýär. Birnäçe sekuntdan täze saýtyňyza ugrukdyrylarsyňyz."
 
-## Döwür saýlamak düwmesini goşmak
+## Döwür saýlamak düwmesini goşmak {#adding-a-period-selection-toggle}
 
 Meýilnamalaryňyzda baha wariantlaryny sazlan bolsaňyz (aýlyk we ýyllyk), müşderiler hasaplaşyk döwürleriniň arasynda geçip biler ýaly checkout formasyna **Döwür saýlamak** meýdançasyny goşuň. Görkezmeler üçin [Checkout formalary](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) sahypasyna serediň.
 
-## Tölegi sazlamak
+## Tölegi sazlamak {#configuring-payment}
 
 Eger töleg şlýuzyny entek sazlamadyk bolsaňyz:
 
@@ -85,7 +85,7 @@ Eger töleg şlýuzyny entek sazlamadyk bolsaňyz:
 
 Tölegleriň Account-yňyza nähili akýandygy barada jikme-jiklikler üçin [Töleg almak](/user-guide/payment-gateways/getting-paid) sahypasyna serediň.
 
-## Akymy synag etmek
+## Akymy synag etmek {#testing-the-flow}
 
 Dowam etmezden öň, doly synag hasaba ýazylmagyny tamamlaň:
 
@@ -105,7 +105,7 @@ Dowam etmezden öň, doly synag hasaba ýazylmagyny tamamlaň:
 - [ ] Müşderi saýlanan şablonly işleýän saýta düşýär
 - [ ] Tassyklama e-poçtalary fitness-e mahsus dili ulanýar
 
-## Häzire çenli FitSite ulgamy
+## Häzire çenli FitSite ulgamy {#the-fitsite-network-so-far}
 
 ```
 FitSite ulgamy
@@ -123,7 +123,7 @@ FitSite ulgamy
 └── Branding üçin taýýar (indiki sapak)
 ```
 
-## Bu sapakda näme gurduk
+## Bu sapakda näme gurduk {#what-we-built-this-lesson}
 
 - Fitness studiýa eýeleri üçin uýgunlaşdyrylan **köp ädimli checkout formasy**
 - Hasaba ýazylmak akymynyň dowamynda **nişa mahsus dil**

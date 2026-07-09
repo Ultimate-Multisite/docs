@@ -3,11 +3,11 @@ title: மாற்றப் பட்டியல்
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# மாற்றங்கள் பட்டியல்
+# மாற்றங்கள் பட்டியல் {#changelog}
 
-## 1.9.0 — வெளியிட்ட தேதி: 2026-04-28
+## 1.9.0 — வெளியிட்ட தேதி: 2026-04-28 {#190--released-on-2026-04-28}
 
-### புதிய அம்சங்கள் (New)
+### புதிய அம்சங்கள் (New) {#new}
 
 - **`create_contact_form` திறன்** — இது செயலில் உள்ள form plugin-ஐ (Contact Form 7, WPForms, Fluent Forms, அல்லது Gravity Forms) பயன்படுத்தி ஒரு தொடர்பு படிவத்தை (contact form) உருவாக்கும். மேலும், எந்தப் போஸ்ட் அல்லது பக்கத்திலும் உட்பொதிக்கத் தயாராக இருக்கும் ஒரு shortcode-ஐ இது திருப்பி அளிக்கும்.
 - **`set_featured_image` திறன்** — இது ஒரு போஸ்ட் அல்லது பக்கத்திற்கு ஏற்கனவே உள்ள Media Library attachment ID அல்லது ஒரு தொலைதூர URL இலிருந்து ஒரு சிறப்பம்சப் படத்தை (featured image) குறிப்பிடுகிறது. ஒரு URL வழங்கப்பட்டால், அது தானாகவே படத்தைப் பதிவேற்றும் (import) வேலையையும் செய்யும்.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **கடைசி அமர்வை மீட்டமைத்தல் (Restore last session)** — இப்போது chat panel, பக்கத்தை ஏற்றும்போதும் (page load) widget திறக்கும்போதும் தானாகவே சமீபத்திய உரையாடலை மீண்டும் ஏற்றுகிறது. இதனால் பக்கத்தை வேறு பக்கம் மாற்றுவதால் சூழல் (context) இழக்கப்படுவதில்லை.
 - **Plugin action links** — WordPress-இன் **Plugins → Installed Plugins** திரையில், plugin விளக்கத்தின் கீழே, Settings மற்றும் Abilities Registry-க்கான விரைவான இணைப்புகள் இப்போது தோன்றும்.
 
-### மேம்படுத்தப்பட்டது (Improved)
+### மேம்படுத்தப்பட்டது (Improved) {#improved}
 
 - **பட மூலத்தை மீண்டும் முயற்சித்தல் (Image source retry)** — பதிவிறக்க தோல்வியடைவதற்கு முன், முகவர் இப்போது கட்டமைக்கப்பட்ட அனைத்து இலவச பட மூலங்களையும் மீண்டும் முயற்சிக்கிறது. அதன் பிறகு, AI-உருவாக்கப்பட்ட படத்திற்கு fallback செய்யும்.
 - **Model info panel** — இது chat header-இல் எப்போதும் தெரியும்; முதல் செய்தியைப் பிறகும் மறைந்து போவதில்லை.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — ஒருங்கிணைக்கப்பட்ட AI ஐகான் முந்தைய தனிப்பயன் அவதாரத்தை (custom avatar) மாற்றியுள்ளது; இது உள்ளமைக்கப்பட்ட முகவர் அமைப்புடன் ஒத்துப்போகிறது.
 - **URL linkification** — system messages மற்றும் error message bubbles-இல் தோன்றும் URL-கள் இப்போது கிளிக் செய்யக்கூடிய இணைப்புகளாக (clickable links) காட்டப்படுகின்றன.
 
-### சரி செய்யப்பட்டது (Fixed)
+### சரி செய்யப்பட்டது (Fixed) {#fixed}
 
 - **Ability discoverability** — அனைத்து திறன்களும் (abilities) நம்பகமாக முகவரின் கருவிப் பட்டியலில் தோன்றுமாறு விளக்கங்கள், system prompt குறிப்புகள் மற்றும் namespace சீரமைப்பு ஆகியவை சரி செய்யப்பட்டுள்ளன.
 - **Providers cache** — multisite network-களில் காலாவதியான-provider சிக்கல்களைத் தடுக்க, providers இப்போது ஒரு version counter மூலம் site-wide cache செய்யப்படுகின்றன.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — வெளியிட்ட தேதி: 2026-04-09
+## 1.4.0 — வெளியிட்ட தேதி: 2026-04-09 {#140--released-on-2026-04-09}
 
-### புதிய அம்சங்கள் (New)
+### புதிய அம்சங்கள் (New) {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI pipelines மற்றும் model evaluation workflows-க்காக command line-இல் இருந்து Agent Capabilities v1 benchmark suite-ஐ இயக்குகிறது. இது ஒவ்வொரு கேள்விக்கும் தனித்தனியாக இயக்குதல், provider/model override, மற்றும் JSON/CSV வெளியீட்டை ஆதரிக்கிறது.
 - **Agent Capabilities v1 benchmark suite** — இது சிக்கலான, பல-படி prompt-களின் கட்டமைக்கப்பட்ட தொகுப்பு. இது முழு ability surface-ஐ சோதித்து, ஸ்கோரிங் மற்றும் token/duration அறிக்கையிடலை வழங்குகிறது.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT registration, design system, navigation, மற்றும் plugin discovery ஆகியவற்றை உள்ளடக்கிய end-to-end சோதனை.
 - **AI provider connector plugins** — விரைவான உள்ளூர் மேம்பாட்டு அமைப்புக்கு (local development setup) WordPress Playground blueprints-இல் சேர்க்கப்பட்டுள்ளது.
 
-### மேம்படுத்தப்பட்டது (Improved)
+### மேம்படுத்தப்பட்டது (Improved) {#improved-1}
 
 - README, AI provider connector ஆவணங்கள் மற்றும் setup வழிமுறைகளுடன் புதுப்பிக்கப்பட்டுள்ளது.
 
-### சரி செய்யப்பட்டது (Fixed)
+### சரி செய்யப்பட்டது (Fixed) {#fixed-1}
 
 - `main` branch-இல் உள்ள 25 PHPUnit test தோல்விகள் சரி செய்யப்பட்டன.
 - `blueprint.json`-இல் GitHub releases URL வடிவம் சரி செய்யப்பட்டது.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _முந்தைய வெளியீட்டு குறிப்புகள் (Prior release notes) plugin repository-இல் பராமரிக்கப்படுகின்றன._

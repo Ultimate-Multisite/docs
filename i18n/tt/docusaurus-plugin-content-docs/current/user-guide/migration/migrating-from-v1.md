@@ -3,9 +3,9 @@ title: V1-den köçürmek
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1-den geçmek (Migrasyon)
+# V1-den geçmek (Migrasyon) {#migrating-from-v1}
 
-## Ultimate Multisite orijinal 1.x sürüm ailesinden 2.x sürüm ailesine geçti.
+## Ultimate Multisite orijinal 1.x sürüm ailesinden 2.x sürüm ailesine geçti. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite sürüm 2.0 ve sonrası kod tabanının tamamen yeniden yazılması demektir, bu da eski versiyon ile yeni versiyon arasında çok az ortak nokta olduğu anlamına gelir. Bu nedenle, 1.x'ten 2.x'e yükseltme yaparken verilerinizin yeni versiyonların anlayabileceği bir formata taşınması gerekecek.
 
@@ -15,7 +15,7 @@ Bu ders, migratörün nasıl çalıştığını, başarısızlık durumlarında 
 
 _**ÖNEMLİ: 1.x sürümünden 2.0 sürüme yükseltmeye başlamadan önce lütfen sitenizin veritabanının yedeğini aldığınızdan emin olun**_
 
-## İlk adımlar
+## İlk adımlar {#first-steps}
 
 İlk adım, eklenti .zip dosyasını indirmek ve ağ yöneticisi panelinizde 2.0 sürümünü kurmaktır.
 
@@ -49,19 +49,19 @@ _**NOT:** Eğer Multisite'ınızda Ultimate Multisite 1.x kuruluysa, eklentiyi i
 
 После активации лицензии вы можете начать фактическую установку, нажав **Install** (Установить) на следующей странице. Это автоматически создаст необходимые файлы и базу данных, которые нужны для работы версии 2.0.
 
-## Теперь миграция
+## Теперь миграция {#now-the-migration}
 
 Мигратор имеет встроенную функцию безопасности, которая проверяет весь ваш мультисайт Ultimate Multisite, чтобы убедиться, что все ваши данные могут быть перенесены без каких-либо проблем. Нажмите кнопку **Run Check** (Запустить проверку), чтобы начать процесс.
 
 После запуска проверки у вас есть два варианта: результат может быть либо **с ошибкой**, либо **без ошибки**.
 
-### С ошибкой
+### С ошибкой {#with-error}
 
 Если вы получите сообщение об ошибке, вам нужно обратиться в нашу службу поддержки, чтобы они могли помочь вам исправить эту ошибку. Обязательно **предоставьте лог ошибки** при создании заявки (тикета). Вы можете скачать лог или нажать на ссылку «contact our support team» (связаться с нашей службой поддержки). Это откроет виджет помощи справа от вашей страницы, где поля будут заполнены для вас, включая логи ошибок в описании.
 
 _**Поскольку система нашла ошибку, вы не сможете продолжить миграцию до версии 2.0. Вы сможете откатиться к версии 1.x, чтобы возобновить работу вашей сети до исправления ошибки.**_
 
-### Без ошибки
+### Без ошибки {#without-error}
 
 Если система не находит ошибок, вы увидите сообщение об успехе и кнопку **Migrate** (Мигрировать) внизу, которая позволит вам продолжить миграцию. На этой странице вам напомнят создать резервную копию вашей базы данных перед дальнейшими действиями, что мы настоятельно рекомендуем. Нажмите **Migrate**, если у вас уже есть резервная копия.
 

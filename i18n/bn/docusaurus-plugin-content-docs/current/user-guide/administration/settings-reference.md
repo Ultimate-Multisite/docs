@@ -3,11 +3,11 @@ title: সেটিংসের রেফারেন্স
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings রেফারেন্স
+# Settings রেফারেন্স {#settings-reference}
 
 এই পৃষ্ঠাটি Ultimate Multisite-এ দৈনন্দিন প্রশাসনকে প্রভাবিত করে এমন settings এবং সাম্প্রতিক আচরণগত পরিবর্তনগুলো অনুসরণ করে।
 
-## অন্যান্য বিকল্প
+## অন্যান্য বিকল্প {#other-options}
 
 **Other Options** এলাকা **Ultimate Multisite > Settings > Login & Registration**-এর অধীনে দেখা যায়।
 
@@ -15,23 +15,23 @@ _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 |---|---|
 | **Enable Jumper** | admin এলাকায় Jumper দ্রুত navigation টুল দেখায়। Ultimate Multisite স্ক্রিন, network অবজেক্ট এবং সমর্থিত admin গন্তব্যে সরাসরি যেতে এটি ব্যবহার করুন। এই shortcut দৃশ্যমান রাখতে না চাইলে এটি নিষ্ক্রিয় করুন। |
 
-## ত্রুটি প্রতিবেদন এবং টেলিমেট্রি
+## ত্রুটি প্রতিবেদন এবং টেলিমেট্রি {#error-reporting-and-telemetry}
 
 আগের error-reporting opt-in setting settings পৃষ্ঠা থেকে সরানো হয়েছে। বেনামী টেলিমেট্রি নিষ্ক্রিয় এবং এটি সক্ষম করার জন্য কোনো UI toggle নেই।
 
 আপনি যদি settings পৃষ্ঠার জন্য internal runbook বা screenshot রক্ষণাবেক্ষণ করেন, তাহলে পুরোনো error-reporting opt-in field-এর reference সরিয়ে ফেলুন, যাতে administrator-রা আর নেই এমন কোনো setting খুঁজতে না যান।
 
-## Import/Export settings
+## Import/Export settings {#importexport-settings}
 
 **Import/Export** settings tab কোন settings নিয়ন্ত্রণ করে তা বর্ণনা করে এবং site ও network archive-এর জন্য সরাসরি **Ultimate Multisite > Site Export**-এ link করে। import/export configuration-এর জন্য settings tab ব্যবহার করুন, single-site export/import workflow-এর জন্য **Tools > Export & Import** ব্যবহার করুন, এবং পূর্ণ Network Export archive দরকার হলে Site Export tool ব্যবহার করুন।
 
-## Domain Seller HostAfrica balance warning
+## Domain Seller HostAfrica balance warning {#domain-seller-hostafrica-balance-warning}
 
 Domain Seller addon HostAfrica-এর সাথে সংযুক্ত থাকলে, reseller account balance নির্ভরযোগ্য domain registration বা renewal processing-এর জন্য খুব কম হলে network administrator-রা এখন dismissible balance-low warning দেখেন।
 
 এই notice-টিকে operational warning হিসেবে ধরুন: আরও paid domain registration গ্রহণ করার আগে HostAfrica reseller balance top up করুন, তারপর registration ও renewal স্বাভাবিকভাবে চালু থাকতে পারে কি না নিশ্চিত করতে Domain Seller settings বা domain-monitoring screen-এ ফিরে যান।
 
-## AI provider connector settings
+## AI provider connector settings {#ai-provider-connector-settings}
 
 AI provider connector settings এখন শুধু সমর্থিত OAuth account pool-গুলো প্রকাশ করে:
 

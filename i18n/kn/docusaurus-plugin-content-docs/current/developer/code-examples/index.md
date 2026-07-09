@@ -3,11 +3,11 @@ title: ಉನ್ನತ ಕೋಡ್ ಉದಾಹರಣೆಗಳು
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples
+# Advanced Code Examples {#advanced-code-examples}
 
 ಈ ಉದಾಹರಣೆಗಳು Ultimate Multisite ನೊಂದಿಗೆ ಅತ್ಯಾಧುನಿಕ (advanced) integration patterns ಅನ್ನು ಹೇಗೆ ಬಳಸಬೇಕೆಂದು ತೋರಿಸುತ್ತವೆ.
 
-## Dynamic Pricing Engine
+## Dynamic Pricing Engine {#dynamic-pricing-engine}
 
 ಇದು volume, loyalty, ಮತ್ತು seasonal discounts ಅನ್ನು ಅನ್ವಯಿಸುವ ಒಂದು rules-based pricing engine:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Advanced Site Provisioning
+## Advanced Site Provisioning {#advanced-site-provisioning}
 
 планದ ವೈಶಿಷ್ಟ್ಯಗಳ ಆಧಾರದ ಮೇಲೆ ಹೊಸ sites ಅನ್ನು plugins, SSL, CDN, backups, ಮತ್ತು monitoring ಮೂಲಕ ಸ್ವಯಂಚಾಲಿತವಾಗಿ configure ಮಾಡಲು:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Custom Limitations System
+## Custom Limitations System {#custom-limitations-system}
 
 usage warnings ಜೊತೆಗೆ resource limits ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಮತ್ತು ಜಾರಿಗೊಳಿಸಲು:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter with `increment_item()`
+## BerlinDB Atomic Counter with `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 ರಲ್ಲಿ BerlinDB `Query` class ಗೆ `increment_item()` ಎಂಬ ವಿಧಾನವನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ಇದನ್ನು ಬಳಸಿಕೊಂಡು, concurrent requests ಅಡಿಯಲ್ಲಿ ಓದು-ಸಂशोधನ-ಬರೆಯುವ (read-modify-write) race conditions ಇಲ್ಲದೆ, numeric columns ಮೇಲೆ ಸುರಕ್ಷಿತ, atomic increments ಮಾಡಲು ಸಾಧ್ಯ. ಇದು counters, usage quotas, ಮತ್ತು rate-limiting checks ಗಾಗಿ ತುಂಬಾ ಉಪಯುಕ್ತವಾಗಿದೆ.
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 ರಲ್ಲಿ BerlinDB `Query` class ಗೆ `increme
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Basic usage
+### Basic usage {#basic-usage}
 
 ```php
 // membership ID 42 ರ 'api_calls' column ಗೆ 1 ಸೇರಿಸಿ.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Tracking API usage per membership
+### Tracking API usage per membership {#tracking-api-usage-per-membership}
 
 ಪ್ರತಿ membership ಗಾಗಿ API rate limits ಅನ್ನು ಜಾರಿಗೊಳಿಸಲು ಒಂದು ಪ್ರಾಯೋಗಿಕ pattern:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Why `increment_item()` instead of `update_item()`
+### Why `increment_item()` instead of `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 ಒಂದು ಸರಳವಾದ read-modify-write ವಿಧಾನವು concurrent requests ಅಡಿಯಲ್ಲಿ ಸುರಕ್ಷಿತವಲ್ಲ:
 

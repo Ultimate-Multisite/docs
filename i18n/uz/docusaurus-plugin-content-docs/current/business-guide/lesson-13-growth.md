@@ -3,19 +3,19 @@ title: '13-dars: Kengaytirish'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# 13-dars: Kengaytirish
+# 13-dars: Kengaytirish {#lesson-13-scaling-up}
 
 Sizda to‘lovchi mijozlari bor ishlayotgan platforma mavjud. Bu dars kichik faoliyatdan barqaror biznesga o‘sishni — infratuzilmani kengaytirish, operatsiyalarni avtomatlashtirish va har bir mijozdan tushadigan daromadni oshirishni qamrab oladi.
 
-## Qayerda to‘xtagan edik
+## Qayerda to‘xtagan edik {#where-we-left-off}
 
 FitSite ishga tushgan, mijozlar ro‘yxatdan o‘tmoqda va siz kundalik operatsiyalarni yurityapsiz. Endi e’tiborni o‘sishga qaratamiz.
 
-## Raqamlaringizni biling
+## Raqamlaringizni biling {#know-your-numbers}
 
 Kengaytirishdan oldin, qayerda turganingizni tushuning:
 
-### Asosiy metrikalar
+### Asosiy metrikalar {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Jami oylik obuna daromadi
 - **Mijozlar soni**: Jami faol obunachilar
@@ -24,7 +24,7 @@ Kengaytirishdan oldin, qayerda turganingizni tushuning:
 - **LTV (Lifetime Value)**: Mijozning butun obunasi davomida o‘rtacha daromadi
 - **CAC (Customer Acquisition Cost)**: Bitta mijozni jalb qilishning o‘rtacha qiymati
 
-### Misol: 50 mijozli FitSite
+### Misol: 50 mijozli FitSite {#example-fitsite-at-50-customers}
 
 | Metrika | Qiymat |
 |--------|-------|
@@ -36,9 +36,9 @@ Kengaytirishdan oldin, qayerda turganingizni tushuning:
 
 Bu raqamlar nimaga e’tibor qaratish kerakligini aytadi. Ketish yuqorimi? Saqlab qolishni tuzating. ARPU pastmi? Yangilanishlarni ilgari suring. CAC yuqorimi? Jalb qilish kanallarini optimallashtiring.
 
-## Infratuzilmani kengaytirish
+## Infratuzilmani kengaytirish {#scaling-infrastructure}
 
-### Qachon kengaytirish kerak
+### Qachon kengaytirish kerak {#when-to-scale}
 
 Hostingni quyidagi holatlarda kengaytiring:
 
@@ -47,7 +47,7 @@ Hostingni quyidagi holatlarda kengaytiring:
 - Siz 100+ faol sitega yaqinlashayotgan bo‘lsangiz
 - Tezlik bo‘yicha mijoz shikoyatlari oshsa
 
-### Qanday kengaytirish kerak
+### Qanday kengaytirish kerak {#how-to-scale}
 
 - **Vertikal kengaytirish**: Kattaroq serverga o‘tish (ko‘proq CPU, RAM)
 - **Keshlash qatlamlari**: Obyekt keshlash uchun Redis/Memcached, statik kontent uchun sahifa keshlashni qo‘shing
@@ -55,7 +55,7 @@ Hostingni quyidagi holatlarda kengaytiring:
 - **Ma’lumotlar bazasini optimallashtirish**: Tarmoq o‘sgani sayin, ma’lumotlar bazasi so‘rovlari sekinlashadi. Jadvallarni optimallashtiring, indekslar qo‘shing, alohida ma’lumotlar bazasi serverini ko‘rib chiqing.
 - **Mas’uliyatlarni ajratish**: Media saqlashni obyekt saqlashga (S3-mos) ko‘chiring, emailni tranzaksion email xizmatiga yuklang
 
-### Hosting migratsiyasi
+### Hosting migratsiyasi {#hosting-migration}
 
 Agar joriy hostingingiz bundan ortiq kengaya olmasa, migratsiyani rejalashtiring:
 
@@ -65,11 +65,11 @@ Agar joriy hostingingiz bundan ortiq kengaya olmasa, migratsiyani rejalashtiring
 4. Oldindan minimal TTL bilan DNSni yangilang
 5. Migratsiyadan keyin hammasi ishlashini tekshiring
 
-## Operatsiyalarni avtomatlashtirish
+## Operatsiyalarni avtomatlashtirish {#automating-operations}
 
 O‘sib borganingiz sari, qo‘lda bajariladigan jarayonlar to‘siqqa aylanadi. Imkon qadar avtomatlashtiring:
 
-### Webhooklar va Zapier
+### Webhooklar va Zapier {#webhooks-and-zapier}
 
 Quyidagilarni avtomatlashtirish uchun [Webhooklar](/user-guide/integrations/webhooks) yoki [Zapier](/user-guide/integrations/zapier) dan foydalaning:
 
@@ -78,7 +78,7 @@ Quyidagilarni avtomatlashtirish uchun [Webhooklar](/user-guide/integrations/webh
 - **To‘lov muvaffaqiyatsizliklari** → monitoring vositangizda ogohlantirish
 - **Plan yangilanishlari** → yangi funksiya qo‘llanmasi bilan tabrik emaili
 
-### Email avtomatlashtirish
+### Email avtomatlashtirish {#email-automation}
 
 Qo‘lda yuboriladigan emaillardan avtomatlashtirilgan ketma-ketliklarga o‘ting:
 
@@ -87,30 +87,30 @@ Qo‘lda yuboriladigan emaillardan avtomatlashtirilgan ketma-ketliklarga o‘tin
 - Mijozlar plan chegaralariga yaqinlashganda yangilanish takliflari
 - Yillik obunachilar uchun yangilash eslatmalari
 
-### Qo‘llab-quvvatlashni avtomatlashtirish
+### Qo‘llab-quvvatlashni avtomatlashtirish {#support-automation}
 
 - Keng tarqalgan savollar uchun **tayyor javoblar**
 - Qo‘llab-quvvatlash ticketlari qabul qilinganini tasdiqlovchi **avtojavoblar**
 - Mijozlar mavjud maqolalarga mos ticketlar yuborganda **bilimlar bazasi takliflari**
 
-## Daromadni oshirish
+## Daromadni oshirish {#increasing-revenue}
 
 O‘sish faqat ko‘proq mijozlar haqida emas. Bu har bir mijozdan ko‘proq daromad olish haqida ham.
 
-### Mavjud mijozlarga qo‘shimcha sotish
+### Mavjud mijozlarga qo‘shimcha sotish {#upselling-existing-customers}
 
 - **Plan yangilanishlari**: Starter mijozlariga Growth/Pro funksiyalarini ko‘rsatadigan maqsadli kampaniyalar
 - **Buyurtma qo‘shimchalari**: Email orqali mavjud mijozlarga qo‘shimcha mahsulotlarni targ‘ib qiling
 - **Yillik o‘tish**: Oylik mijozlarga yillik billingga o‘tish uchun chegirma taklif qiling
 
-### Yangi daromad oqimlari
+### Yangi daromad oqimlari {#new-revenue-streams}
 
 - **Siz uchun tayyor sozlash**: Mijozning siteini ular uchun sozlash va moslashtirish evaziga premium haq oling
 - **Maxsus dizayn xizmatlari**: Shablon ustiga individual dizayn ishlarini taklif qiling
 - **Trening sessiyalari**: Amaliy yordam istagan mijozlar uchun pullik yakkama-yakka tanishtiruvlar
 - **Premium pluginlar**: Nishga xos premium pluginlarni pullik qo‘shimchalar sifatida taklif qiling (masalan, fitness darsi bron qilish widgeti)
 
-### Narxlarni oshirish
+### Narxlarni oshirish {#raising-prices}
 
 Platformangiz yetuklashib, qiymat qo‘shgani sari:
 
@@ -118,7 +118,7 @@ Platformangiz yetuklashib, qiymat qo‘shgani sari:
 - Yangi ro‘yxatdan o‘tishlar uchun narxlarni oshiring
 - Oshirishlarni yangi funksiyalar va yaxshilanishlar bilan asoslang
 
-## Jamoa tuzish
+## Jamoa tuzish {#building-a-team}
 
 Qaysidir payt hammasini yolg‘iz qila olmaysiz. Odatdagi birinchi yollovlar:
 
@@ -128,7 +128,7 @@ Qaysidir payt hammasini yolg‘iz qila olmaysiz. Odatdagi birinchi yollovlar:
 
 Sizga xodimlar shart emas. Platforma biznesi uchun pudratchilar va frilanserlar yaxshi ishlaydi.
 
-## O‘sish bosqichlari
+## O‘sish bosqichlari {#growth-milestones}
 
 | Bosqich | Taxminiy MRR | E’tibor |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Sizga xodimlar shart emas. Platforma biznesi uchun pudratchilar va frilanserlar 
 | 250-500 mijoz | $25,000-$50,000 | Jamoa tuzish, yangi daromad oqimlari, premium funksiyalar |
 | 500+ mijoz | $50,000+ | Platforma yetukligi, qo‘shni nishlar, potensial exit |
 
-## Bu darsda nimalarni qurdik
+## Bu darsda nimalarni qurdik {#what-we-built-this-lesson}
 
 - Biznes salomatligini tushunish uchun **metrikalar frameworki**
 - O‘nlab sitelardan yuzlab sitelarga o‘sish uchun **infratuzilmani kengaytirish rejasi**

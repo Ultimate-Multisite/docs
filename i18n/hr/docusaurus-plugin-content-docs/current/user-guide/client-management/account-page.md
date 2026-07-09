@@ -3,7 +3,7 @@ title: Stranica računa klijenta
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Stranica računa vašeg klijenta (v2)
+# Stranica računa vašeg klijenta (v2) {#your-clients-account-page-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
@@ -11,7 +11,7 @@ Kada kupci pretplate plan na vašoj mreži, dobivaju pristup web stranici i njen
 
 U ovom tutorijalu vodit ćemo vas kroz stranicu računa klijenta i vidjet ćete što vaši kupci mogu vidjeti i raditi unutar nje.
 
-## Stranica računa
+## Stranica računa {#the-account-page}
 
 Stranica računa se može pristupiti klikom na **Account** (Račun) unutar dashboarda vašeg klijenta.
 
@@ -27,7 +27,7 @@ Nakon što kupac klikne na tu opciju, vidjet će pregled svog članstva, adrese 
 
 Može promijeniti i članstvo na drugi plan, ili kupiti drugi paket ili uslugu koju nudi. Hajde da pogledamo svaki od dijelova pojedinačno.
 
-### Pregledak Vašeg članstva:
+### Pregledak Vašeg članstva: {#your-membership-overview}
 
 Prvi blok odmah ispod imena web stranice vaših kupaca prikazuje pregled trenutnog plana i usluga/paketa koje su se kupile s njim. Blok također prikazuje broj članstva, početnu uplatu za njega, koliko košta plan i bilo koji paket/usluga te koliko puta je obračunata naplata za to članstvo. Također mogu vidjeti je li članstvo **Aktivo**, **Istečeno** ili **Otkaženo**.
 
@@ -43,7 +43,7 @@ Sada, ako vaši kupci odluče kupiti pakete ili usluge za ovo trenutno članstvo
 
 Napomena: Kodu kupona ne možete dodati na stranici promjene članstva. Ako je kupac koristio kod kupona prilikom prve kupnje članstva, taj kod će također primijeniti na ovo novo članstvo.
 
-### Ažuriranje naplatne adrese:
+### Ažuriranje naplatne adrese: {#updating-the-billing-address}
 
 Na stranici računa, kupci mogu ažurirati i adresu za fakturiranje. Samo treba kliknuti na **Ažuriraj** pored _Billing Address_ (Adresa za fakturiranje).
 
@@ -53,7 +53,7 @@ Otvorit će se novo prozor za vašeg kupca. Sve što mu treba je popuniti novu a
 
 ![Obrazac za ažuriranje adrese za fakturiranje](/img/account-page/billing-address-form.png)
 
-### Promjena šablona stranice:
+### Promjena šablona stranice: {#changing-the-site-template}
 
 Da biste omogućili kupcima da mijenjaju teme stranica, trebate otići u **Ultimate Multisite > Settings > Sites** i uključiti opciju **Allow Template Switching** (Dozvoljavaj promjenu šablona).
 
@@ -81,7 +81,7 @@ Nakon što uključite potvrdu i kliknete na **Process Switch** (Usprijediti prom
 
 Kupci mogu također koristiti opciju **Reset current template** (Pristavi trenutni šablon) iz ovog panela kada im je potrebno vratiti web stranicu na trenutno dodijeljen šablon. Kao i pri prelasku na drugi šablon, resetiranje šablona može prebrisati sadržaj web stranice, tako da kupci bi trebali potvrditi to samo kada shvate rad akcije resetiranja.
 
-### Dodavanje prilagođenih domena:
+### Dodavanje prilagođenih domena: {#adding-custom-domains}
 
 Vaši klijenti također imaju opciju dodavanja prilagođenog domena za ovaj plan na stranici računa. Da biste omogućili vašim klijentima korištenje prilagođenih domena, idite na **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Nakon klikanja na **Sljedeći korak** (Next Step), vaši kupci mogu unijeti ime 
 
 Nakon klikanja na **Dodaj domen** (Add Domain), domen će se dodati računu vašeg kupca. Sve što im je sada potrebno je promijeniti DNS zapise za ovu vlastitu domenu kod njihovog registratora domena.
 
-### Promjena lozinke:
+### Promjena lozinke: {#changing-password}
 
 Unutar dashboard-a računa, vaši kupci takođe mogu promijeniti lozinku klikom na **Promijeni lozinku** (Change Password).
 
@@ -125,7 +125,7 @@ Ovo će prikazati novo prozor gdje će vaši kupci morati unijeti svoju trenutnu
 
 ![Obrazac za promjenu lozinke s poljima za trenutnu i novu lozinku](/img/account-page/change-password-form.png)
 
-### Zona opasnosti:
+### Zona opasnosti: {#danger-zone}
 
 Imamo također dvije opcije koje su prikazane u dijelu **Danger Zone**: **Obriši stranicu** (Delete Site) i **Obriši račun** (Delete Account). Obje su u Zoni opasnosti jer su ove dvije radnje neobratne. Ako vaši kupci obrišu svoju web stranicu ili svoj račun, ne mogu ih vratiti.
 

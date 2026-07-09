@@ -3,7 +3,7 @@ title: Hủy tư cách thành viên
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Hủy Membership (v2)
+# Hủy Membership (v2) {#canceling-a-membership-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

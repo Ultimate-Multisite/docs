@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons brei Ultimate Multisite uit met bykomende funksies en integrasies. Die meeste addons is betaal en kan by [ultimatemultisite.com](https://ultimatemultisite.com) gekoop word.
 
-## Installasie
+## Installasie {#installation}
 
 Addons kan op twee maniere geïnstalleer word:
 
 1. **Via die Addon-bladsy** -- Navigeer na jou site se addon-bestuurbladsy in die WordPress-admin
 2. **Handmatige aflaai** -- Laai af vanaf [jou Account](https://ultimatemultisite.com/my-account/downloads/) en laai op deur Plugins > Add New
 
-## Beskikbare Addons
+## Beskikbare Addons {#available-addons}
 
 | Addon | Beskrywing |
 |-------|-------------|

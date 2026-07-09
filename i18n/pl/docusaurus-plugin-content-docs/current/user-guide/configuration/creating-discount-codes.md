@@ -3,13 +3,13 @@ title: Tworzenie kodów rabatowych
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Tworzenie kodów rabatowych (v2)
+# Tworzenie kodów rabatowych (v2) {#creating-discount-codes-v2}
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
 Dzięki Ultimate Multisite możesz tworzyć kody rabatowe, aby dawać swoim klientom rabaty na ich subskrypcje. A ich tworzenie jest proste!
 
-## Tworzenie i edytowanie kodów rabatowych
+## Tworzenie i edytowanie kodów rabatowych {#creating-and-editing-discount-codes}
 
 Aby utworzyć lub edytować kod rabatowy, przejdź do **Ultimate Multisite > Kody rabatowe**.
 
@@ -87,7 +87,7 @@ Kupon jest teraz na Twojej liście i stamtąd możesz kliknąć, aby go **edytow
 
 ###
 
-### Używanie parametrów URL:
+### Używanie parametrów URL: {#using-url-parameters}
 
 Jeśli chcesz dostosować swoje tabele cenowe albo zbudować ładną stronę z kodem kuponu dla swojej witryny i chcesz automatycznie zastosować kod rabatowy do formularza realizacji zakupu, możesz to zrobić za pomocą parametrów URL.
 

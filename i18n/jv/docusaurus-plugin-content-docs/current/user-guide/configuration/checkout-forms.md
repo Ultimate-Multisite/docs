@@ -3,7 +3,7 @@ title: Form Checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulir Checkout
+# Formulir Checkout {#checkout-forms}
 
 Formulir Checkout iku cara sing gampang lan fleksibel kanggo nyoba pendekatan beda nalika arep ngubah pelanggan anyar dadi pembeli.
 
@@ -36,13 +36,13 @@ Alternatifé, sampeyan bisa ngedit utawa nggandheng form sing wis ana kanthi kli
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Gambaran Umum Editor Form Checkout
+#### Gambaran Umum Editor Form Checkout {#checkout-form-editor-overview}
 
 Editor form checkout menehi antarmuka lengkap kanggo nggawe form registrasi sampeyan. Iki gambaran umum tata letak editor:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Ngedit Form Checkout
+### Ngedit Form Checkout {#editing-a-checkout-form}
 
 Sampeyan bisa nggawe form checkout kanggo tujuan sing beda. Ing conto iki kita bakal nggarap form registrasi.
 
@@ -112,7 +112,7 @@ Kanggo nggolek shortcode formulirmu, klik Generate Shortcode lan salin hasil sin
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Field Tabel Harga (Pricing Table Field)
+### Field Tabel Harga (Pricing Table Field) {#the-pricing-table-field}
 
 Field **Pricing Table** nuduhake produkmu ing formulir checkout supaya pelanggan bisa milih paket. Nalika sampeyan ngedit field iki, sampeyan bisa ngatur sawetara pilihan:
 
@@ -130,17 +130,17 @@ Iki carane tabel harga katon ing formulir registrasi frontend:
 
 Yen sampeyan nambah produk menyang Pricing Table sadurunge formulir ngandhut field sing dibutuhake kanggo ngrampungake alur checkout produk kasebut, editor saiki bakal nuduhake peringatan. Gunakna peringatan kuwi kanggo nambah field wajib sing kurang sadurunge nge-publish utawa nyimpen perubahan kanggo formulir registrasi live.
 
-### Nambah Tombol Pilih Periode
+### Nambah Tombol Pilih Periode {#adding-a-period-selection-toggle}
 
 Yen sampeyan wis ngatur [Price Variations](creating-your-first-subscription-product#price-variations) ing produkmu (contone harga bulanan lan tahunan), sampeyan bisa nambah kolom **Period Selection** ing form checkout. Kolom iki nuduhake toggle sing ngidini pelanggan ganti antarane periode pembayaran, lan tabel harga bakal update dinamis sak wektu nyata.
 
-#### Langkah 1: Atur Price Variations Ing Produkmu
+#### Langkah 1: Atur Price Variations Ing Produkmu {#step-1-set-up-price-variations-on-your-products}
 
 Sadurunge nambah kolom Period Selection, pasthekna produkmu wis diatur variasi rega. Tindakake **Ultimate Multisite > Products**, edit sawijining produk, lan tindakake tab **Price Variations** kanggo nambah periode pembayaran alternatif (contone Tahunan kan rega diskon).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Langkah 2: Tambah Kolom Period Selection Ing Form Checkout Sampeyan
+#### Langkah 2: Tambah Kolom Period Selection Ing Form Checkout Sampeyan {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Tindakake **Ultimate Multisite > Checkout Forms** lan edit form checkout sampeyan.
 
@@ -163,13 +163,13 @@ Sadurunge nambah kolom Period Selection, pasthekna produkmu wis diatur variasi r
 
 7. Klik **Save Field**.
 
-#### Langkah 3: Posisikan Bidang di Atas Tabel Harga
+#### Langkah 3: Posisikan Bidang di Atas Tabel Harga {#step-3-position-the-field-above-the-pricing-table}
 
 Supaya pengalaman pengguna paling enak, pastikan bidang Pemilihan Periode (Period Selection) muncul **sebelum** tabel Harga (Pricing Table) di langkah checkout kamu. Kamu bisa menyeret (drag) bidang-bidang itu untuk mengubah urutannya di editor formulir checkout. Dengan begitu, pelanggan akan memilih periode penagihan dulu, baru kemudian melihat harga untuk periode tersebut.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Cara Kerjanya di Frontend
+#### Cara Kerjanya di Frontend {#how-it-works-on-the-frontend}
 
 Setelah dikonfigurasi, pelanggan yang mengunjungi halaman registrasi kamu akan melihat pemilih periode di atas tabel harga. Ketika mereka mengklik periode penagihan yang berbeda:
 
@@ -177,7 +177,7 @@ Setelah dikonfigurasi, pelanggan yang mengunjungi halaman registrasi kamu akan m
   * Jika **Force Different Durations** dinonaktifkan pada bidang Tabel Harga, produk tanpa variasi harga untuk periode yang dipilih akan disembunyikan.
   * Jika **Force Different Durations** diaktifkan, semua produk tetap terlihat meskipun tidak memiliki variasi untuk periode yang dipilih (mereka akan menampilkan harga defaultnya).
 
-#### Memilih Periode Penagihan Melalui URL
+#### Memilih Periode Penagihan Melalui URL {#pre-selecting-a-billing-period-via-url}
 
 Kamu juga bisa memilih produk dan periode penagihan sebelumnya melalui URL. Ultimate Multisite mendukung pola URL ini:
 
@@ -185,11 +185,11 @@ Kamu juga bisa memilih produk dan periode penagihan sebelumnya melalui URL. Ulti
   * `/register/premium/12` — Memilih produk dan durasi 12 bulan
   * `/register/premium/1/year` — Memilih produk dengan durasi 1 tahun
 
-### Bidang Pemilihan Template (Template Selection Field)
+### Bidang Pemilihan Template (Template Selection Field) {#the-template-selection-field}
 
 Bidang **Pemilihan Template** (Template Selection) memungkinkan pelanggan memilih template situs saat checkout. Sekarang, ini sudah termasuk secara otomatis di template formulir checkout **single step** dan **multi-step** yang ditambahkan di Ultimate Multisite v2.6.1.
 
-#### Menambahkan bidang secara manual
+#### Menambahkan bidang secara manual {#adding-the-field-manually}
 
 Yen sampeyan lagi nggarap form sing wis digawe sadurunge v2.6.1, utawa wiwit saka template kosong:
 
@@ -200,11 +200,11 @@ Yen sampeyan lagi nggarap form sing wis digawe sadurunge v2.6.1, utawa wiwit sak
    - **Label** — Judul sing diwenehi pelanggan ing dhuwur grid template (contone "Pilih template situs").
    - **Required** — Apa pelanggan kudu milih template sadurunge lanjut?
 
-#### Kepiye cara kerjane
+#### Kepiye cara kerjane {#how-it-works}
 
 Nalika pelanggan milih template nalika checkout, Ultimate Multisite bakal nggunakake template kuwi nalika ngasilake situs anyare. Template sing ditunjuka iku saka daftar **Site Templates**-mu (**Ultimate Multisite > Site Templates**). Aja mung template sing ditandai minangka tersedia kanggo pelanggan sing bakal muncul ing kene.
 
-### base domain checkout-form
+### base domain checkout-form {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 ngperlani domain sing dikonfigurasi ing field **Site URL** form checkout minangka network base domain. Gunakake pengaturan available-domain saka field kuwi nalika sampeyan arep pelanggan nggawe situs ing bawah satu utawa luwih base domain pendaftaran sing padha, contone `example.com` lan `sites.example.com`.
 
@@ -212,6 +212,6 @@ Base domain checkout-form sing padha iku ora diperlani minangka pemetaan domain 
 
 Jaga domain kustom kanggo host yang dipetakan per pelanggan, contone `customer-example.com`. Jaga base domain checkout form kanggo host pendaftaran bareng sing bisa digunakake akeh situs.
 
-#### Ngilangake field
+#### Ngilangake field {#removing-the-field}
 
 Yen sampeyan ora nawakake template situs, hapus kolom Pemilihan Template saka formulirmu. Pelanggan bakal nampa template *default* sing wis dikonfigurasi ing **Ultimate Multisite > Settings > Site Templates**.

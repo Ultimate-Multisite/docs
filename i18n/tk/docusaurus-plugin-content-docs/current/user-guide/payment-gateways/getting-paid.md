@@ -3,13 +3,13 @@ title: Töleg almak
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Töleg almak (v2)
+# Töleg almak (v2) {#getting-paid-v2}
 
 _**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 
 Ultimate Multisite içinde agzalyk we hasaplaşyk ulgamy bar. Hasaplaşyk ulgamymyzyň işlemegi üçin, e-commerce-de ulanylýan iň giň ýaýran töleg gateway-lerini birleşdirdik. Ultimate Multisite-de adaty töleg gateway-leri _Stripe_ , _PayPal_ , we El bilen tölegdir. Şeýle hem degişli add-onlaryny gurnap, tölegleri almak üçin _WooCommerce_ , _GoCardless_ we _Payfast_ ulanyp bilersiňiz.
 
-## Esasy sazlamalar
+## Esasy sazlamalar {#basic-settings}
 
 Bu töleg gateway-leriniň islendik birini Ultimate Multisite töleg sazlamalarynyň aşagynda sazlap bilersiňiz. Ony **Ultimate Multisite menu > Settings > Payments** boýunça girip tapyp bilersiňiz.
 
@@ -39,7 +39,7 @@ Bu, gateway diňe bir gezeklik tölegleri ýygnap bilýän wagty agzalygyň awto
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Gateway-leri nireden tapmaly:
+## Gateway-leri nireden tapmaly: {#where-to-find-the-gateways}
 
 Töleg gateway-lerini şol bir sahypada sazlap bilersiňiz ( **Ultimate Multisite > Settings > Payments**). **active payment gateways** -iň göni aşagynda şulary görüp bilersiňiz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ we _Manual_.
 
@@ -67,7 +67,7 @@ Ine, töleg redaktirleme sahypasynyň doly görnüşi:
 
 Indi, töleg gateway-iňiz hökmünde _WooCommerce_ , _GoCardless_ ýa-da _Payfast_ ulanmak isleseňiz, olaryň **add-onlaryny gurnap we sazlamaly** bolarsyňyz.
 
-### WooCommerce add-onyny nädip gurnamaly:
+### WooCommerce add-onyny nädip gurnamaly: {#how-to-install-the-woocommerce-add-on}
 
 _Stripe_ we _PayPal_ käbir ýurtlarda elýeterli däldigine düşünýäris; bu bolsa Ultimate Multisite ulanyjylarynyň pluginimizi netijeli ulanmagyny çäklendirýär ýa-da päsgel berýär. Şonuň üçin biz örän meşhur e-commerce plugini bolan _WooCommerce,_ bilen birleşmek üçin add-on döretdik. Dünýäniň dürli ýerindäki işläp düzüjiler oňa dürli töleg gateway-lerini birleşdirmek üçin add-onlar döretdiler. Biz Ultimate Multisite hasaplaşyk ulgamy bilen ulanyp biljek töleg gateway-leriňizi giňeltmek üçin mundan peýdalandyk.
 
@@ -95,7 +95,7 @@ Ony işjeňleşdireniňizden soň, eger websaýtyňyzda WooCommerce plugin heniz
 
 WooCommerce Integration goşmaça moduly barada has köp okamak üçin **şu ýere basyň**.
 
-### GoCardless goşmaça modulyny nädip gurnamaly:
+### GoCardless goşmaça modulyny nädip gurnamaly: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ goşmaça modulyny gurnamagyň ädimleri _WooCommerce_ goşmaça moduly bilen diýen ýaly birmeňzeş. Goşmaça modullar sahypasyna geçiň we **Ultimate Multisite: GoCardless Gateway** goşmaça modulyny saýlaň.
 
@@ -111,7 +111,7 @@ Gurnama tamamlanandan soň, siz pluginler sahypasyna ugrukdyrylarsyňyz. Bu ýer
 
 _GoCardless_ gateway bilen nähili başlamalydygyny öwrenmek üçin **şu makalany okaň**.
 
-### Payfast goşmaça modulyny nädip gurnamaly:
+### Payfast goşmaça modulyny nädip gurnamaly: {#how-to-install-the-payfast-add-on}
 
 Goşmaça modullar sahypasyna geçiň we **Ultimate Multisite: Payfast Gateway** goşmaça modulyny saýlaň.
 

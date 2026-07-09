@@ -3,17 +3,17 @@ title: Πρόσθετο Φορτωτής Αρχείων Sunrise
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Το Ultimate Multisite 2.8.0 προσθέτει έναν loader επέκτασης "sunrise" για add-ons και προσαρμοσμένες ενσωματώσεις MU-plugin που χρειάζονται να εκτελεστούν κατά τη διαδικασία bootstrap του WordPress (την αρχική φάση εκκίνησης) χωρίς να χρειάζεται να επεξεργαστείτε το αρχείο `wp-content/sunrise.php` που δημιουργείται.
 
-## Πότε να το χρησιμοποιήσετε
+## Πότε να το χρησιμοποιήσετε {#when-to-use-it}
 
 Χρησιμοποιήστε μια επέκταση sunrise όταν η ενσωμάτωσή σας πρέπει να εκτελεστεί πριν φορτωθούν τα κανονικά plugins, όπως η διαδρομή για προσαρμοσμένα domains, η διαχείριση αιτημάτων ειδικά για host, ή οι πρώιμες προσαρμογές του network bootstrap.
 
 Για τις κανονικές ενσωματώσεις, προτιμήστε τα κανονικά WordPress plugins, τα MU-plugins και τα τεκμηριωμένα hooks του Ultimate Multisite. Ο κώδικας sunrise εκτελείται πολύ νωρίς και πρέπει να παραμείνει μικρός, προληπτικός και χωρίς εξαρτήσεις.
 
-## Συνθήκη ονοματοδοσίας αρχείου
+## Συνθήκη ονοματοδοσίας αρχείου {#file-naming-convention}
 
 Δημιουργήστε ένα αρχείο PHP με το όνομα `sunrise.php` σε έναν κατάλογο add-on που το όνομά του αρχίζει με `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Τα αρχεία που ταιριάζουν φορτώνονται με αλφαβητική σειρά βάσει της διαδρομής του add-on.
 
-## Πού να τοποθετήσετε το αρχείο
+## Πού να τοποθετήσετε το αρχείο {#where-to-place-the-file}
 
 Τοποθετήστε το αρχείο στον ριζικό κατάλογο του add-on που είναι υπεύθυνο για τη συμπεριφορά sunrise:
 
@@ -45,7 +45,7 @@ wp-content/
 
 Μην επεξεργαστείτε απευθείας το αρχείο `wp-content/sunrise.php` που δημιουργείται. Ο loader επιτρέπει στον προσαρμοσμένο κώδικα να επεκτείνει τη συμπεριφορά sunrise χωρίς να δημιουργεί ένα fork του βασικού αρχείου sunrise που εγκαθιστά και ενημερώνει το Ultimate Multisite.
 
-## Διαθέσιμα hooks και filters
+## Διαθέσιμα hooks και filters {#hooks-and-filters-available}
 
 Τα αρχεία sunrise των add-ons εκτελούνται αφού φορτώσει το domain mapping του Ultimate Multisite και πριν εκπέμψει το WordPress το `ms_loaded`. Σε αυτό το σημείο, ένα αρχείο sunrise μπορεί να:
 
@@ -58,7 +58,7 @@ wp-content/
 
 Καλέστε μόνο συναρτήσεις που έχουν ήδη φορτωθεί στη φάση sunrise. Αποφύγετε εργασίες βαριές για τη βάση δεδομένων, rendering templates, HTTP requests και κώδικα που υποθέτει ότι έχει ολοκληρωθεί η κανονική σειρά φόρτωσης των plugins.
 
-## Ελάχιστο παράδειγμα
+## Ελάχιστο παράδειγμα {#minimal-example}
 
 ```php
 <?php

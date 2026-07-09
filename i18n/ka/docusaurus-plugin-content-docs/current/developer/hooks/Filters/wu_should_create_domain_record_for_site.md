@@ -4,28 +4,28 @@ title: ფილტრი - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# ფილტრი: wu_should_create_domain_record_for_site
+# ფილტრი: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
 
 ფილტრავს, უნდა შექმნას თუ არა Ultimate Multisite-მა დომენის ჩანაწერი ახლად შექმნილი საიტისთვის.
 
 გამოიყენეთ ეს ფილტრი დომენის ჩანაწერის ავტომატური შექმნის შესაჩერებლად ან გადასავადებლად იმ საიტებისთვის, რომლებიც იყენებენ გადახდის ფორმის გაზიარებულ საბაზისო დომენს, შიდა ჰოსტს ან დომენს, რომელსაც სხვა ინტეგრაცია ცალკე მართავს.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
 | $create | `bool` | უნდა შეიქმნას თუ არა დომენის ჩანაწერი. |
 | $site | `WP_Site` | ახლად შექმნილი საიტის ობიექტი. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.13.0
 
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია `inc/functions/domain.php`-ში.
 
 
-## აბრუნებს
+## აბრუნებს {#returns}
 
 Boolean, რომელიც მიუთითებს, უნდა შეიქმნას თუ არა დომენის ჩანაწერი.

@@ -3,7 +3,7 @@ title: Àkọọlẹ Àwọn Àyípadà Ètò Ìsanwó Gẹ́gẹ́ bí Ìlò
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ìwé àkọsílẹ̀ ìyípadà àwọn Plan Tí a Díwọ̀n
+# Ìwé àkọsílẹ̀ ìyípadà àwọn Plan Tí a Díwọ̀n {#metered-plans-changelog}
 
 Ẹ̀yà 1.1.0 - Tí a tu jáde ní 2026-05-05
 - Tuntun: ìsanwó AI token fún àwọn multisite subsite — tọ́pa kí o sì gba owó fún lílo AI token kọjá àwọn site oníbàárà pẹ̀lú àwọn iye owó fún token kọ̀ọ̀kan tí a lè ṣètò
@@ -14,17 +14,17 @@ _i18n_hash: ee036a85eb635b4b503c94798251e839
 - Àtúnṣe: A ti yanjú àwọn àṣìṣe tó lèwu àti àwọn ìṣòro ìbẹ̀rẹ̀-lẹ́ẹ̀mejì nígbà tí plugin bá ń kojú
 - Tí a mú dára síi: A fi script npm check-env kún un kí àwọn àyíká developer lè ṣètò ara wọn nígbà ìṣiṣẹ́ àkọ́kọ́
 
-### 1.0.3
+### 1.0.3 {#103}
 * Túnṣe sí Plugin Update Checker v5
 * Fi àwọn header WordPress plugin òde-òní kún un
 * Mú ìbámu pọ̀ síi pẹ̀lú àwọn ẹ̀yà WordPress tuntun jù lọ
 * Mú iṣẹ́ tọ́pinpin lílo pọ̀ síi
 
-### 1.0.2
+### 1.0.2 {#102}
 * Àwọn àtúnṣe àṣìṣe àti ìmúdára iṣẹ́
 * Ìjábọ̀ lílo tí a mú pọ̀ síi
 
-### 1.0.0
+### 1.0.0 {#100}
 * Ìtúsílẹ̀ àkọ́kọ́
 * Ìṣẹ́ pàtàkì fún ìsanwó tí a díwọ̀n
 * Tọ́pinpin lílo àti ìṣírò ìkọjá iye

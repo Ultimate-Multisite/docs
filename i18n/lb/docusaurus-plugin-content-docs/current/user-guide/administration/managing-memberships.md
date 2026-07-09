@@ -3,7 +3,7 @@ title: Verwaltung von Mitgliedschaften
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Mitgliederverwaltung
+# Mitgliederverwaltung {#managing-memberships}
 
 In Ultimate Multisite chönntet Sie d'Mitglieder und de Zuegang zu allne Abonnements in Ihrem Netzwerk verwalte. Überprüfe und bearbeite Abonnement-Details wie Pläne und Produkt, d'Anzahl vo de Sites, d'Abrechnigsbetrag und -frequenz, d'Zahlungsverlauf und d'Zeitstempel.
 

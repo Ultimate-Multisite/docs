@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Isongezo se-WordPress esongeza izilungiso zokuhambelana ze-Tutor LMS kwiimeko ze-multisite.
 
-## Inkcazelo
+## Inkcazelo {#description}
 
 Esi songezo sinika izilungiso ezibalulekileyo zokuhambelana ukuze kuqhutywe i-Tutor LMS kwiinethiwekhi ze-WordPress multisite. Siphatha ukubhaliswa kwabasebenzisi, ulawulo lwabahlohli, imida yeekhosi, kunye neminye imisebenzi ekhethekileyo ye-multisite.
 
-## Iimpawu
+## Iimpawu {#features}
 
 - **Ulawulo Lweetheyibhile Zesiseko Sedatha**: Sizifumanisa ngokuzenzekelayo size senze iitheyibhile ze-Tutor LMS ezingekhoyo ezisilelayo ngenxa yezithintelo zamaqhosha angaphandle kwi-multisite
 - **Ubhaliso Lwabasebenzisi be-Multisite**: Abaphathi be-AJAX abakhethekileyo bokulawula ukubhaliswa kwabasebenzisi kuzo zonke iisayithi zenethiwekhi
@@ -24,7 +24,7 @@ Esi songezo sinika izilungiso ezibalulekileyo zokuhambelana ukuze kuqhutywe i-Tu
 - **Iimbono Zomlawuli Ezilungiselelweyo**: Uluhlu lwabahlohli kunye nojongano lolawulo oluqaphela i-multisite
 - **Izixhobo Zomlawuli**: Ujongano lolawulo lwesiseko sedatha kubalawuli benethiwekhi kunye nabesayithi
 
-## Iimfuno
+## Iimfuno {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Esi songezo sinika izilungiso ezibalulekileyo zokuhambelana ukuze kuqhutywe i-Tu
 - Ufakelo lwe-WordPress Multisite
 - Isongezo se-Ultimate Multisite (somsebenzi wemida yeekhosi)
 
-## Ufakelo
+## Ufakelo {#installation}
 
 1. Layisha iifayile zesongezo ku-`/wp-content/plugins/tutor-multisite-compatibility/`
 2. Qinisekisa ukuba i-Tutor LMS ifakiwe kwaye yenziwe yasebenza
 3. Yenza isongezo sisebenze ngemenyu ethi 'Plugins' kwi-WordPress
 4. Isongezo siya kudityaniswa ngokuzenzekelayo ne-Tutor LMS
 
-## Ulwakhiwo Lweefayile
+## Ulwakhiwo Lweefayile {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Umsebenzi Osusiweyo Kwi-MU plugin
+## Umsebenzi Osusiweyo Kwi-MU plugin {#functionality-moved-from-mu-plugin}
 
 Esi songezo siqulethe umsebenzi owawukade uku-`wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Esi songezo siqulethe umsebenzi owawukade uku-`wp-content/mu-plugins/daves.php`:
 - Ukuphathwa kobhaliso lwabasebenzisi be-multisite
 - Ukuboniswa kwe-ID yemveliso yekhosi
 
-## Ulawulo Lwesiseko Sedatha
+## Ulawulo Lwesiseko Sedatha {#database-management}
 
-### Ingxaki
+### Ingxaki {#the-problem}
 
 Kwiimeko ze-WordPress multisite, ukudalwa kweetheyibhile ze-Tutor LMS kuyasilela kwiitheyibhile ezinezithintelo zamaqhosha angaphandle kwitheyibhile yabasebenzisi. Oku kwenzeka kuba:
 
@@ -81,7 +81,7 @@ Kwiimeko ze-WordPress multisite, ukudalwa kweetheyibhile ze-Tutor LMS kuyasilela
 - Amaqhosha angaphandle abhekisa ku-`wp_2_users` (engekhoyo)
 - Itheyibhile yokwenyani yabasebenzisi ngu-`wp_users` (ekwabelwana ngayo kuyo yonke inethiwekhi)
 
-### Isisombululo
+### Isisombululo {#the-solution}
 
 Esi songezo ngokuzenzekelayo:
 
@@ -92,13 +92,13 @@ Esi songezo ngokuzenzekelayo:
    - Ukudalwa kwesayithi entsha kwinethiwekhi
    - Ukujonga iitheyibhile ngesandla ngojongano lomlawuli
 
-### Iitheyibhile Ezichaphazelekayo
+### Iitheyibhile Ezichaphazelekayo {#affected-tables}
 
 - `tutor_coupon_usages` - Iqulethe iqhosha langaphandle kwitheyibhile yabasebenzisi
 - `tutor_carts` - Iqulethe iqhosha langaphandle kwitheyibhile yabasebenzisi
 - `tutor_notification_preferences` - Itheyibhile ye-TutorPro eneqhosha langaphandle kwitheyibhile yabasebenzisi
 
-### Ujongano Lomlawuli
+### Ujongano Lomlawuli {#admin-interface}
 
 Fikelela kwizixhobo zolawulo lwesiseko sedatha apha:
 
@@ -111,6 +111,6 @@ Ujongano lukuvumela ukuba:
 - Ujonge ubumbeko lwesiseko sedatha
 - Ujonge ulwazi oluneenkcukacha ngemeko
 
-## Inkxaso
+## Inkxaso {#support}
 
 Esi songezo senzelwe ngokukodwa iqonga le-KursoPro. Ngenkxaso yobugcisa, qhagamshelana neqela lophuhliso.

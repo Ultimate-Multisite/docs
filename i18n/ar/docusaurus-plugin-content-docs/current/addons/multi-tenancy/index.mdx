@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# تعدد المستأجرين
+# تعدد المستأجرين {#multi-tenancy}
 
 وزّع المواقع الفرعية عبر الخوادم وقواعد البيانات لتحسين الأداء والأمان
 
-## أبرز ما في إصدار 1.2.0
+## أبرز ما في إصدار 1.2.0 {#version-120-release-highlights}
 
 يضيف Multi-Tenancy 1.2.0 أساس المستأجر السيادي لتدفقات عمل العزل الإنتاجي:
 
@@ -25,21 +25,21 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 راجع أدلة المستخدم حول [تدفق عمل الهجرة السيادية](/user-guide/getting-started/sovereign-migration-workflow)، و[عزل تعدد المستأجرين](/user-guide/configuration/multi-tenancy-isolation)، و[عمليات المستأجر السيادي](/user-guide/administration/sovereign-tenant-operations).
 
-## المتطلبات
+## المتطلبات {#requirements}
 
 - WordPress 5.3 أو أعلى
 - PHP 7.4 أو أعلى
 - إضافة Multisite Ultimate (نشطة)
 
-## التثبيت
+## التثبيت {#installation}
 
 1. ارفع ملفات الإضافة إلى دليل `/wp-content/plugins/` لديك
 2. فعّل الإضافة من خلال قائمة 'Plugins' في WordPress
 3. اضبط إعدادات الإضافة في إدارة الشبكة
 
-## التطوير
+## التطوير {#development}
 
-### الإعداد
+### الإعداد {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### بنية المشروع
+### بنية المشروع {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # قواعد تحديث الكود
 ```
 
-### الاختبار
+### الاختبار {#testing}
 
 تتضمن الإضافة إطار اختبار شاملًا:
 
@@ -93,54 +93,54 @@ ultimate-multisite-addon-template/
 - **تغطية الاختبار**: مهيأة لتتبع تغطية الكود
 - **اختبار المواقع المتعددة**: تعمل الاختبارات في بيئة مواقع متعددة
 
-### معايير الكود
+### معايير الكود {#code-standards}
 
 - **معايير ترميز WordPress**: تُفرض عبر PHPCS
 - **توافق PHP 7.4+**: دعم ميزات PHP الحديثة
 - **التحليل الثابت**: تكامل PHPStan للتحقق من الأنواع
 - **تحديث الكود**: قواعد Rector لترقيات PHP
 
-### نظام البناء
+### نظام البناء {#build-system}
 
 - **معالجة الأصول**: تصغير ملفات CSS/JS
 - **الترجمة**: إنشاء ملف POT
 - **التغليف**: إنشاء أرشيف للتوزيع
 - **وضع التطوير**: أصول غير مصغّرة لتصحيح الأخطاء
 
-## التهيئة
+## التهيئة {#configuration}
 
 تدعم الإضافة خيارات تهيئة متنوعة يمكن الوصول إليها من خلال واجهة إدارة الشبكة.
 
-### تهيئة المستأجر السيادي
+### تهيئة المستأجر السيادي {#sovereign-tenant-configuration}
 
 بالنسبة إلى المستأجرين السياديين، اضبط قاعدة بيانات المستأجر، وجذر نظام الملفات، وربط مضيف قاعدة البيانات، وقدرة المضيف قبل توجيه الزيارات إلى المستأجر. شغّل تحقق الهجرة بعد كل تغيير يؤثر في بيانات اعتماد قاعدة البيانات، أو ربط المضيف، أو التوجيه، أو توفير المستخدمين.
 
 استخدم `localhost` فقط عندما يتوقع وقت تشغيل المستأجر ومنح قاعدة البيانات وصولًا عبر مقبس محلي أو على الجهاز نفسه. استخدم `127.0.0.1` أو اسم مضيف خدمة عندما يكون ذلك هو مضيف المنح الذي هيّأه مزودك.
 
-### قدرة Hostinger
+### قدرة Hostinger {#hostinger-capability}
 
 تعمل قدرة تعدد المستأجرين في Hostinger مع رمز تكامل Hostinger المشترك. تأكد من وجود النطاق في hPanel، وأن DNS يشير إلى حساب Hostinger، وأن إعدادات قاعدة بيانات المستأجر تطابق hPanel قبل التحقق.
 
-## الخطافات والمرشحات
+## الخطافات والمرشحات {#hooks-and-filters}
 
-### الإجراءات
+### الإجراءات {#actions}
 
 - `ultimate-multisite-addon-template_init` - يُشغَّل بعد تهيئة الإضافة
 - `ultimate-multisite-addon-template_loaded` - يُشغَّل بعد تحميل جميع ملفات الإضافة
 
-### المرشحات
+### المرشحات {#filters}
 
 - `ultimate-multisite-addon-template_settings` - تعديل إعدادات الإضافة
 - `ultimate-multisite-addon-template_enabled` - تجاوز حالة تفعيل/تعطيل الإضافة
 
-## الترخيص
+## الترخيص {#license}
 
 هذه الإضافة مرخصة بموجب GPL v3 أو أحدث.
 
-## الدعم
+## الدعم {#support}
 
 للحصول على الدعم والتوثيق، زر [MultisiteUltimate.com](https://multisiteultimate.com)
-## سجل التغييرات
+## سجل التغييرات {#changelog}
 
 - الإصدار 1.2.0 (2026-06-03): إضافة تسجيل دخول تلقائي للمستأجر بلا حالة، وقدرة تعدد المستأجرين في Hostinger، وعزل قاعدة البيانات ونظام الملفات لكل موقع فرعي، وبوابات تحقق الهجرة السيادية، وتحسينات تمهيد المستأجر/كاتب قاعدة البيانات، وربط مضيف MySQL قابل للتكوين، وإزالة سيادية أكثر أمانًا.
 

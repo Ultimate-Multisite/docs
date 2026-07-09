@@ -3,25 +3,25 @@ title: Teimpléad Breiseáin
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Teimpléad Breiseáin
+# Teimpléad Breiseáin {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Riachtanais
+## Riachtanais {#requirements}
 
 - WordPress 5.3 nó níos airde
 - PHP 7.4 nó níos airde
 - breiseán Multisite Ultimate (gníomhach)
 
-## Suiteáil
+## Suiteáil {#installation}
 
 1. Uaslódáil comhaid an bhreiseáin chuig do chomhadlann `/wp-content/plugins/`
 2. Gníomhachtaigh an breiseán tríd an roghchlár 'Breiseáin' in WordPress
 3. Cumraigh socruithe an bhreiseáin i riarachán an líonra
 
-## Forbairt
+## Forbairt {#development}
 
-### Socrú
+### Socrú {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struchtúr an Tionscadail
+### Struchtúr an Tionscadail {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Rialacha nua-aoisithe cód
 ```
 
-### Tástáil
+### Tástáil {#testing}
 
 Cuimsíonn an breiseán creat tástála cuimsitheach:
 
@@ -75,44 +75,44 @@ Cuimsíonn an breiseán creat tástála cuimsitheach:
 - **Clúdach Tástála**: Cumraithe chun clúdach cód a rianú
 - **Tástáil Multisite**: Ritheann tástálacha i dtimpeallacht multisite
 
-### Caighdeáin Kóid
+### Caighdeáin Kóid {#code-standards}
 
 - **Caighdeáin Chódaithe WordPress**: Curtha i bhfeidhm trí PHPCS
 - **Comhoiriúnacht PHP 7.4+**: Tacaítear le gnéithe nua-aimseartha PHP
 - **Anailís Statach**: Comhtháthú PHPStan le haghaidh seiceáil cineáil
 - **Nua-Aoisú Cód**: Rialacha Rector le haghaidh uasghráduithe PHP
 
-### Córas Tógála
+### Córas Tógála {#build-system}
 
 - **Próiseáil Sócmhainní**: Íoslaghdú do chomhaid CSS/JS
 - **Aistriúchán**: Giniúint comhaid POT
 - **Pacáistiú**: Cruthú cartlainne le dáileadh
 - **Mód Forbartha**: Sócmhainní neamh-íoslaghdaithe le haghaidh dífhabhtaithe
 
-## Cumraíocht
+## Cumraíocht {#configuration}
 
 Tacaíonn an breiseán le roghanna cumraíochta éagsúla atá inrochtana trí chomhéadan riarthóra an líonra.
 
-## Crúcaí agus Scagairí
+## Crúcaí agus Scagairí {#hooks-and-filters}
 
-### Gníomhartha
+### Gníomhartha {#actions}
 
 - `ultimate-multisite-addon-template_init` - Spreagtar é tar éis tosú an bhreiseáin
 - `ultimate-multisite-addon-template_loaded` - Spreagtar é tar éis gach comhad breiseáin a bheith luchtaithe
 
-### Scagairí
+### Scagairí {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Athraigh socruithe an bhreiseáin
 - `ultimate-multisite-addon-template_enabled` - Sáraigh stádas cumasaithe/díchumasaithe an bhreiseáin
 
-## Ceadúnas
+## Ceadúnas {#license}
 
 Tá an breiseán seo ceadúnaithe faoin GPL v3 nó níos déanaí.
 
-## Tacaíocht
+## Tacaíocht {#support}
 
 Le haghaidh tacaíochta agus doiciméadúcháin, tabhair cuairt ar [MultisiteUltimate.com](https://multisiteultimate.com)
-## Loga Athruithe
+## Loga Athruithe {#changelog}
 
 - Leagan 1.0.1 (2025-09-28): athainmnigh an réimír go ultimate-multisite; nuashonraigh an fearann téacs; ardú leagain.
 

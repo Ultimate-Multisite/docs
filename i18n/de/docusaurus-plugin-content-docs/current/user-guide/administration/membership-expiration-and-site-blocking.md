@@ -3,11 +3,11 @@ title: Mitgliedschaftsablauf und Seitenblockierung
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ablauf bei Ablauf der Mitgliedschaft und Sperrung der Website
+# Ablauf bei Ablauf der Mitgliedschaft und Sperrung der Website {#membership-expiration-and-site-blocking}
 
 Dieser Leitfaden erklärt, wie Ultimate Multisite mit dem Ablauf von Mitgliedschaften, dem Ende von Testphasen und der Sperrung der Website im Frontend umgeht. Er behandelt den Lebenszyklus einer Mitgliedschaft vom aktiven Zustand bis zum Ablauf, die Einstellungen, die steuern, ob Websites gesperrt werden, und was zu überprüfen ist, wenn Websites nach Ablauf einer Mitgliedschaft weiterhin zugänglich bleiben.
 
-## Lebenszyklus des Mitgliedschaftsstatus
+## Lebenszyklus des Mitgliedschaftsstatus {#membership-status-lifecycle}
 
 Jede Mitgliedschaft in Ultimate Multisite hat einen der folgenden Status:
 
@@ -24,7 +24,7 @@ Kostenlose Mitgliedschaften verfallen nicht automatisch. Ultimate Multisite beha
 | **Expired** | Ist über das Ablaufdatum und die Gnadenfrist hinaus ohne Verlängerung |
 | **Cancelled** | Explizit vom Kunden oder Admin storniert |
 
-### Wie Mitgliedschaften in den Status „Expired“ wechseln
+### Wie Mitgliedschaften in den Status „Expired“ wechseln {#how-memberships-transition-to-expired}
 
 Ultimate Multisite führt **jede Stunde** eine Hintergrundprüfung durch, um Mitgliedschaften zu suchen, die als abgelaufen markiert werden sollten. Diese Überprüfung verwendet [Action Scheduler](https://actionscheduler.org/) (nicht direkt WP-Cron) und läuft als geplante Aktion `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Die Ablaufprüfung hat standardmäßig eine **eingebaute Gnadenfrist von 3 Tagen
 Die 3-tägige Ablauf-Gnadenfrist ist getrennt von der Einstellung „Frontend Block Grace Period“, die unten beschrieben wird. Die Ablauf-Gnadenfrist steuert, wann sich der **Status** von aktiv/on-hold auf expired ändert. Die Frontend Block Grace Period steuert, wann die **Website gesperrt** wird, nachdem der Status bereits geändert wurde.
 :::
 
-#### Automatisch verlängernde vs. Nicht automatisch verlängernde Mitgliedschaften
+#### Automatisch verlängernde vs. Nicht automatisch verlängernde Mitgliedschaften {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Dieser Unterschied ist entscheidend, um das Ablaufverhalten zu verstehen:
 
@@ -42,7 +42,7 @@ Dieser Unterschied ist entscheidend, um das Ablaufverhalten zu verstehen:
 
 - **Automatisch verlängernde Mitgliedschaften** (`auto_renew = true`): Die Cron-Ablaufprüfung **überspringt diese komplett**. Es wird erwartet, dass das Payment Gateway (Stripe, PayPal usw.) Ultimate Multisite über Webhooks benachrichtigt, wenn ein Abonnement fehlschlägt oder storniert wird. Wird der Webhook nicht empfangen – beispielsweise aufgrund eines falsch konfigurierten Endpunkts, eines Gateway-Ausfalls oder einer außerhalb des Systems stornierten Abonnement – kann die Mitgliedschaft auch nach Ablauf des Datums unbegrenzt `active` bleiben.
 
-### Wie Testphasen enden
+### Wie Testphasen enden {#how-trials-end}
 
 Wenn die Testphase einer Mitgliedschaft endet, führt das System folgende Schritte durch:
 
@@ -52,11 +52,11 @@ Wenn die Testphase einer Mitgliedschaft endet, führt das System folgende Schrit
 
 Dieser Prozess läuft im gleichen stündlichen Intervall wie die reguläre Ablaufprüfung, jedoch **nur für nicht automatisch verlängernde Mitgliedschaften**. Bei automatisch verlängernden Testphasen übernimmt das Payment Gateway den Wechsel von der Testphase zum bezahlten Abonnement.
 
-## Frontend-Zugriff sperren
+## Frontend-Zugriff sperren {#block-frontend-access}
 
 Standardmäßig ist bei Ablauf oder Statuswechsel auf „On Hold“ **nur das wp-admin Dashboard eingeschränkt**. Das öffentliche Frontend der Website bleibt für Besucher zugänglich. Um auch den öffentlichen Zugriff zu sperren, müssen Sie die Einstellung **Block Frontend Access** aktivieren.
 
-### Einstellung konfigurieren
+### Einstellung konfigurieren {#configuring-the-setting}
 
 Navigieren Sie zu **Ultimate Multisite > Settings > Memberships** und aktivieren Sie **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Drei zusammenhängende Einstellungen steuern dieses Verhalten:
 | **Frontend Block Grace Period** | Anzahl der Tage, die gewartet werden, nachdem die Mitgliedschaft inaktiv geworden ist, bevor gesperrt wird. Auf `0` gesetzt, um sofort zu sperren. | 0 |
 | **Frontend Block Page** | Eine Seite auf der Hauptseite, zu der Besucher weitergeleitet werden, wenn eine Website gesperrt ist. Ist nicht gesetzt, sehen Besucher eine allgemeine Meldung „Site not available“. | Keine |
 
-### Was Besucher sehen, wenn eine Website gesperrt ist
+### Was Besucher sehen, wenn eine Website gesperrt ist {#what-visitors-see-when-a-site-is-blocked}
 
 Wenn der Frontend-Zugriff gesperrt ist, sehen Besucher der Website entweder:
 
@@ -83,7 +83,7 @@ Wenn der Frontend-Zugriff gesperrt ist, sehen Besucher der Website entweder:
 
 Site-Admins können sich weiterhin anmelden – die Anmeldeseite wird niemals gesperrt.
 
-### Was und wann gesperrt wird
+### Was und wann gesperrt wird {#what-gets-blocked-and-when}
 
 Das Sperrverhalten hängt vom Mitgliedschaftsstatus ab:
 
@@ -104,21 +104,21 @@ Selbst wenn eine Testphase abgelaufen ist, wird eine Mitgliedschaft mit dem Stat
 Stornierte Mitgliedschaften werden immer gesperrt, sobald das Ablaufdatum überschritten wurde, unabhängig davon, ob Block Frontend Access aktiviert ist. Die Frontend Block Grace Period gilt **nicht** für stornierte Mitgliedschaften.
 :::
 
-## Fehlerbehebung: Websites bleiben nach Ablauf zugänglich
+## Fehlerbehebung: Websites bleiben nach Ablauf zugänglich {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Wenn Websites nach Ablauf einer Mitgliedschaft öffentlich zugänglich bleiben, gehen Sie diese Überprüfungen in dieser Reihenfolge durch:
 
-### 1. Überprüfen Sie, ob die Einstellung „Block Frontend Access“ aktiviert ist
+### 1. Überprüfen Sie, ob die Einstellung „Block Frontend Access“ aktiviert ist {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Gehen Sie zu **Ultimate Multisite > Settings > Memberships** und bestätigen Sie, dass der Schalter **Block Frontend Access** aktiviert ist. Diese Einstellung ist **standardmäßig aus**, was bedeutet, dass nur wp-admin eingeschränkt wird, wenn eine Mitgliedschaft inaktiv wird.
 
-### 2. Überprüfen Sie die „Frontend Block Grace Period“
+### 2. Überprüfen Sie die „Frontend Block Grace Period“ {#2-check-the-frontend-block-grace-period}
 
 Auf derselben Einstellungsseite überprüfen Sie den Wert für die **Frontend Block Grace Period**. Wenn dieser beispielsweise auf 7 Tage eingestellt ist, wird das Frontend nicht gesperrt, bevor 7 Tage nach dem Ablaufdatum der Mitgliedschaft vergangen sind – selbst wenn der Mitgliedschaftsstatus bereits `expired` ist.
 
 Setzen Sie diesen Wert auf `0`, wenn Sie eine sofortige Sperrung wünschen, nachdem die Mitgliedschaft inaktiv geworden ist.
 
-### 3. Bestätigen Sie, dass sich der Mitgliedschaftsstatus tatsächlich geändert hat
+### 3. Bestätigen Sie, dass sich der Mitgliedschaftsstatus tatsächlich geändert hat {#3-confirm-the-membership-status-has-actually-changed}
 
 Gehen Sie zu **Ultimate Multisite > Memberships** und überprüfen Sie den Status der betroffenen Mitgliedschaft. Wenn dieser trotz des vergangenen Ablaufdatums immer noch `active` anzeigt, ist der Statuswechsel nicht erfolgt. Häufige Ursachen:
 
@@ -126,7 +126,7 @@ Gehen Sie zu **Ultimate Multisite > Memberships** und überprüfen Sie den Statu
 
 - **Der Cron-Job wurde nicht ausgeführt**: Siehe den nächsten Schritt.
 
-### 4. Überprüfen Sie, ob Action Scheduler läuft
+### 4. Überprüfen Sie, ob Action Scheduler läuft {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite verwendet Action Scheduler für seine Cron-Jobs. Gehen Sie im Netzwerk-Admin zu **Tools > Scheduled Actions** und suchen Sie nach:
 
@@ -148,7 +148,7 @@ Um eine zuverlässige Cron-Ausführung zu gewährleisten, richten Sie einen Syst
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Überprüfen Sie Webhook-Probleme des Gateways (Automatisch verlängernde Mitgliedschaften)
+### 5. Überprüfen Sie Webhook-Probleme des Gateways (Automatisch verlängernde Mitgliedschaften) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Wenn die Mitgliedschaft automatisch verlängernd ist und das Gateway-Abonnement storniert oder fehlgeschlagen ist, aber Ultimate Multisite sie immer noch als `active` anzeigt:
 
@@ -157,7 +157,7 @@ Wenn die Mitgliedschaft automatisch verlängernd ist und das Gateway-Abonnement 
 
 Wenn das Gateway das Abonnement als storniert anzeigt, Ultimate Multisite aber nicht, wurde die Webhook-Benachrichtigung wahrscheinlich verloren. Sie können den Mitgliedschaftsstatus manuell unter **Ultimate Multisite > Memberships > [Edit Membership]** ändern.
 
-### 6. Überprüfen Sie die Ablauf-Gnadenfrist (Cron-Ebene)
+### 6. Überprüfen Sie die Ablauf-Gnadenfrist (Cron-Ebene) {#6-check-the-expiration-grace-period-cron-level}
 
 Der Cron-Check hat seine eigene Gnadenfrist (Standard: 3 Tage), bevor eine Mitgliedschaft als abgelaufen markiert wird. Dies ist getrennt von der Frontend Block Grace Period. Die gesamte Zeit, die vergeht, bevor eine Website gesperrt wird, kann sein:
 
@@ -165,7 +165,7 @@ Der Cron-Check hat seine eigene Gnadenfrist (Standard: 3 Tage), bevor eine Mitgl
 
 Beispielsweise kann es bei Standardeinstellungen und einer 7-tägigen Frontend-Gnadenfrist bis zu 10 Tage dauern, bis die Website tatsächlich gesperrt wird, nachdem das `date_expiration` vergangen ist.
 
-### 7. Manuell eine Mitgliedschaft ablaufen lassen
+### 7. Manuell eine Mitgliedschaft ablaufen lassen {#7-manually-expire-a-membership}
 
 Wenn Sie eine Website sofort sperren müssen, ohne auf den Cron-Zyklus zu warten, können Sie den Mitgliedschaftsstatus manuell ändern:
 
@@ -176,7 +176,7 @@ Wenn Sie eine Website sofort sperren müssen, ohne auf den Cron-Zyklus zu warten
 
 Die Frontend-Sperrung tritt beim nächsten Seitenaufruf in Kraft (abhängig von der Frontend Block Grace Period für abgelaufene Mitgliedschaften oder sofort für stornierte Mitgliedschaften).
 
-## Zusammenfassung
+## Zusammenfassung {#summary}
 
 Der gesamte Zeitablauf vom Ablaufdatum bis zur Website-Sperrung:
 
@@ -208,7 +208,7 @@ Für stornierte Mitgliedschaften ist der Weg kürzer:
   Website-Frontend wird sofort gesperrt
 ```
 
-## Entwickler-Referenz
+## Entwickler-Referenz {#developer-reference}
 
 Die folgenden Hooks und Filter ermöglichen es Ihnen, das Ablauf- und Sperrverhalten anzupassen:
 

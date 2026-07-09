@@ -4,11 +4,11 @@ title: 'Salain - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# Filter: wu_\{$this->model\}_pre_save
+# Filter: wu_\{$this->model\}_pre_save {#filter-wuthis-modelpresave}
 
 Gisala ang datos sa object sa wala pa kini tipigi sa database.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Matang | Deskripsyon |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gisala ang datos sa object sa wala pa kini tipigi sa database.
 | $data_unserialized | `array` | Ang datos sa object nga tipigan. |
 | $this | `\Base_Model` | Ang instance sa object. |
 
-### Sukad
+### Sukad {#since}
 
 - 2.0.0
-### Gigikanan
+### Gigikanan {#source}
 
 Gihubit sa [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L570) sa linya 570

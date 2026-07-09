@@ -3,11 +3,11 @@ title: Zitsanzo za Khodi Zapamwamba
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Zitsanzo Zapamwamba za Khodi
+# Zitsanzo Zapamwamba za Khodi {#advanced-code-examples}
 
 Zitsanzozi zikuwonetsa njira zapamwamba zophatikizira ndi Ultimate Multisite.
 
-## Injini ya Mitengo Yosintha-sintha
+## Injini ya Mitengo Yosintha-sintha {#dynamic-pricing-engine}
 
 Injini ya mitengo yochokera pa malamulo yomwe imagwiritsa ntchito kuchotsera kwa kuchuluka, kukhulupirika, ndi nyengo:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Kukonzekera Kwapamwamba kwa Masaiti
+## Kukonzekera Kwapamwamba kwa Masaiti {#advanced-site-provisioning}
 
 Konzani zokha masaiti atsopano ndi zowonjezera, SSL, CDN, zosunga zobwezeretsa, ndi kuyang'anira kutengera mbali za dongosolo:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Dongosolo Lopangidwa Mwamakonda la Malire
+## Dongosolo Lopangidwa Mwamakonda la Malire {#custom-limitations-system}
 
 Tsatirani ndi kukakamiza malire a zinthu ndi machenjezo a kagwiritsidwe ntchito:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Kauntala ya Atomiki ya BerlinDB ndi `increment_item()`
+## Kauntala ya Atomiki ya BerlinDB ndi `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 inawonjezera njira ya `increment_item()` ku kalasi ya BerlinDB `Query`. Igwiritseni ntchito kuchita kuwonjezera kotetezeka, kwa atomiki pa mizati ya manambala popanda mpikisano wa kuwerenga-kusintha-kulemba — zothandiza pa makauntala, malire a kugwiritsa ntchito, ndi macheke a malire a mlingo omwe amayenda pansi pa zopempha zomwe zikuchitika nthawi imodzi.
 
-### Siginecha ya njira
+### Siginecha ya njira {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 inawonjezera njira ya `increment_item()` ku kalasi ya 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Kagwiritsidwe ntchito koyambirira
+### Kagwiritsidwe ntchito koyambirira {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Kutsata kugwiritsa ntchito API pa umembala uliwonse
+### Kutsata kugwiritsa ntchito API pa umembala uliwonse {#tracking-api-usage-per-membership}
 
 Njira yothandiza yokhazikitsira malire a mlingo wa API pa umembala uliwonse:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Chifukwa chiyani `increment_item()` m'malo mwa `update_item()`
+### Chifukwa chiyani `increment_item()` m'malo mwa `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Njira yosavuta ya kuwerenga-kusintha-kulemba si yotetezeka pansi pa zopempha zomwe zikuchitika nthawi imodzi:
 

@@ -3,13 +3,13 @@ title: Planų pasiklaida
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plana atnaujinimas (v2)
+# Plana atnaujinimas (v2) {#downgrading-a-plan-v2}
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 
 Plano ar prenumeratos atnaujinimas yra dažna veikla, kurią jūsų klientai gali atlikti, jei turėtų laimintų apribotą biudžetą arba je sužino, kad ne reikalauja daug resursų savo subsite veikti.
 
-## Kaip atnaujinti planą
+## Kaip atnaujinti planą {#how-to-downgrade-a-plan}
 
 Jūsų klientai gali pakeisti planą bet kuriuo metu, suvardijant į savo subsite admin panelį ir paspaudus **Change** (Pakeiti) mygtuką savo paskyros puslapyje.
 
@@ -25,7 +25,7 @@ Kad tęsti procesą vartotojui reikės paspausti mygtuką **Complete Checkout** 
 
 ![Paskyros puslapio nuotrauka su pranešimu apie neįvykdytą narys pakeitimą](/img/account-page/pending-change.png)
 
-### Kas vyksta, kai vartotojas atnaujina planą
+### Kas vyksta, kai vartotojas atnaujina planą {#what-happens-when-a-user-downgrades-their-plan}
 
 Svarbu paminėti, kad plano atnaujinimas nevertina esamų konfiguracijų vartotojo subsite.
 
@@ -37,7 +37,7 @@ Jei įrašų skaičius pasieks ribą, nustatytą planui, jūsų yra 3 skirtingos
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Kas su mokėjimu
+### Kas su mokėjimu {#what-happens-to-the-payment}
 
 Versijoje 2.0 tai ne reikalauja daugiau korekcijų dėl prastavimo (proration).
 

@@ -4,19 +4,19 @@ title: Filtro - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# Filtre: wu_captcha_providers
+# Filtre: wu_captcha_providers {#filter-wucaptchaproviders}
 
 Mevcut captcha sağlayıcılarını filtrelemek için kullanılır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | İsim | Tip | Açıklama |
 |------|------|-------------|
 | $providers | `\Abstract_Captcha_Provider[]` | Kayıtlı sağlayıcılar dizisi. |
 
-### Başlangıç
+### Başlangıç {#since}
 
 - 1.2.0
-### Kaynak
+### Kaynak {#source}
 
 - [URL] adresindeki kodda tanımlanmıştır.

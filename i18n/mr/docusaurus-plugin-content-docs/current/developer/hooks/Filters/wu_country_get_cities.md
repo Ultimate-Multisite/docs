@@ -4,11 +4,11 @@ title: Filter - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 एका देशातील राज्यासाठी (state) शहरांची यादी परत करतो.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | राज्यासाठी दोन-अक्षरी ISO कोड. |
 | $current_country | `\WP_Ultimo\Country\Country` | सध्याच्या क्लासचा (class) एक instance. |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) मध्ये लाइन 146 वर परिभाषित केले आहे.
 
 
-## Returns
+## Returns {#returns}
 फिल्टर केलेली राज्यांची (states) यादी.

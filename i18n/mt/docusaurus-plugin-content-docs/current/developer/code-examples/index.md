@@ -3,11 +3,11 @@ title: Eżempji Avvanzati ta' Kodiċi
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Eżempji ta' Kodiċi Avvanzati
+# Eżempji ta' Kodiċi Avvanzati {#advanced-code-examples}
 
 Dawn l-eżempji juru mudelli ta' integrazzjoni avvanzata ma' Ultimate Multisite.
 
-## Magna Dinamika tal-Ipprezzar
+## Magna Dinamika tal-Ipprezzar {#dynamic-pricing-engine}
 
 Magna tal-ipprezzar ibbażata fuq regoli li tapplika skontijiet skont il-volum, il-lealtà, u l-istaġun:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Provvista Avvanzata ta' Siti
+## Provvista Avvanzata ta' Siti {#advanced-site-provisioning}
 
 Ikkonfigura awtomatikament siti ġodda b'estensjonijiet, SSL, CDN, backups, u monitoraġġ ibbażati fuq il-karatteristiċi tal-pjan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistema ta' Limitazzjonijiet Personalizzata
+## Sistema ta' Limitazzjonijiet Personalizzata {#custom-limitations-system}
 
 Segwi u infurza limiti tar-riżorsi b'twissijiet dwar l-użu:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Counter Atomiku ta' BerlinDB b'`increment_item()`
+## Counter Atomiku ta' BerlinDB b'`increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 żied metodu `increment_item()` mal-klassi BerlinDB `Query`. Użah biex twettaq inkrementi sikuri u atomiċi fuq kolonni numeriċi mingħajr tlielaq ta' read-modify-write — utli għal counters, kwoti tal-użu, u verifiki ta' rate-limiting li jaħdmu taħt talbiet konkorrenti.
 
-### Firma tal-metodu
+### Firma tal-metodu {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 żied metodu `increment_item()` mal-klassi BerlinDB `Q
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Użu bażiku
+### Użu bażiku {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Traċċar tal-użu tal-API għal kull membership
+### Traċċar tal-użu tal-API għal kull membership {#tracking-api-usage-per-membership}
 
 Mudell prattiku biex jiġu infurzati limiti tar-rata tal-API għal kull membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Għaliex `increment_item()` minflok `update_item()`
+### Għaliex `increment_item()` minflok `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Approċċ naiv ta' read-modify-write mhuwiex sigur taħt talbiet konkorrenti:
 

@@ -3,17 +3,17 @@ title: 'Thuto ea 12: Ho tsamaisa Khoebo'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Thuto ya 12: Ho Tsamaisa Khoebo
+# Thuto ya 12: Ho Tsamaisa Khoebo {#lesson-12-running-the-business}
 
 Sethala ha se projeke eo o e qetang -- ke khoebo eo o e tsamaisang. Thuto ena e akaretsa ditshebetso tsa letsatsi le letsatsi tsa ho laola FitSite: tshehetso, ditefiso, tlhokomelo, le ho boloka bareki ba thabile.
 
-## Moo re Ileng ra Emisa Teng
+## Moo re Ileng ra Emisa Teng {#where-we-left-off}
 
 FitSite e se e phela mme bareki ba a ingodisa. Jwale o hloka ho tsamaisa tshebetso ka tsela e tsitsitseng.
 
-## Ditshebetso tsa Letsatsi le Letsatsi
+## Ditshebetso tsa Letsatsi le Letsatsi {#daily-operations}
 
-### Tlhokomelo
+### Tlhokomelo {#monitoring}
 
 Lekola tsena letsatsi le letsatsi (kapa o behe ditemoso):
 
@@ -22,7 +22,7 @@ Lekola tsena letsatsi le letsatsi (kapa o behe ditemoso):
 - **Ditefo tse hlolehileng**: Na ho na le ho hloleha ha ditefo ho hlokang tlhokomelo?
 - **Dikopo tsa tshehetso**: Na ho na le dipotso tsa bareki tse sa arajwang?
 
-### Tshehetso ya Bareki
+### Tshehetso ya Bareki {#customer-support}
 
 Tsepamiso ya hao ho niche ke monyetla mona. Hobane bareki bohle ba hao ke di-studio tsa boikoetliso, o tla bona dipotso tse tshwanang kgafetsa:
 
@@ -36,7 +36,7 @@ Tsepamiso ya hao ho niche ke monyetla mona. Hobane bareki bohle ba hao ke di-stu
 
 Haha polokelo ya hao ya tsebo (e qadileng Thutong ya 8) ho potoloha dipotso tsena tse iphetang. Tekete e nngwe le e nngwe ya tshehetso e neng e ka ba sengolwa sa polokelo ya tsebo ke pontsho ya hore o ngole sengolwa seo.
 
-### Maemo a Tshehetso
+### Maemo a Tshehetso {#support-tiers}
 
 Ha o ntse o hola, hlophisa tshehetso ho ya ka moralo:
 
@@ -48,9 +48,9 @@ Ha o ntse o hola, hlophisa tshehetso ho ya ka moralo:
 
 [Katoloso ya Support Tickets](/addons/support-tickets) e ka thusa ho laola dikopo tsa tshehetso ka hara sethala.
 
-## Ditshebetso tsa Ditefiso
+## Ditshebetso tsa Ditefiso {#billing-operations}
 
-### Ditefo tse Iphetang
+### Ditefo tse Iphetang {#recurring-payments}
 
 Ultimate Multisite e sebetsana le ditefiso tse iphetang ka boiketsetso ka payment gateway ya hao. Mosebetsi wa hao ke ho lekola:
 
@@ -58,7 +58,7 @@ Ultimate Multisite e sebetsana le ditefiso tse iphetang ka boiketsetso ka paymen
 - **Dunning**: Beha logic ya ho leka hape ka boiketsetso ka payment gateway ya hao (Stripe e sebetsana le sena hantle)
 - **Dikopo tsa ho hlakola**: Utloisisa hore na hobaneng bareki ba tloha. Ho hlakola ho hong le ho hong ke maikutlo.
 
-### Ho Laola Botho
+### Ho Laola Botho {#managing-memberships}
 
 Eya ho **Ultimate Multisite > Botho** ho:
 
@@ -69,13 +69,13 @@ Eya ho **Ultimate Multisite > Botho** ho:
 
 Bona [Ho Laola Botho](/user-guide/administration/managing-memberships) bakeng sa tshupiso e felletseng.
 
-### Di-invoice
+### Di-invoice {#invoicing}
 
 Netefatsa hore di-invoice di hlahiswa ka nepo bakeng sa tefo e nngwe le e nngwe. Bareki ba ka hloka di-invoice bakeng sa tlaleho ya ditshenyehelo tsa khoebo. Bona [Ho Laola Ditefo le Di-invoice](/user-guide/administration/managing-payments-and-invoices).
 
-## Tlhokomelo ya Sethala
+## Tlhokomelo ya Sethala {#platform-maintenance}
 
-### Dintlafatso tsa WordPress le Katoloso
+### Dintlafatso tsa WordPress le Katoloso {#wordpress-and-plugin-updates}
 
 Jwalo ka motsamaisi wa network, o ikarabella bakeng sa:
 
@@ -88,14 +88,14 @@ Jwalo ka motsamaisi wa network, o ikarabella bakeng sa:
 Ntlafatso e robehileng e ama sebaka se seng le se seng sa moreki ho network ya hao. Kamehla lekola dintlafatso pele koping ya staging ya network ya hao.
 :::
 
-### Tshireletso
+### Tshireletso {#security}
 
 - Boloka software yohle e le maemong a moraorao
 - Sebedisa diphasewete tse matla le netefatso ya mehato e mmedi bakeng sa di-account tsa admin
 - Lekola diketso tse belaetsang
 - Eba le moralo bakeng sa diketsahalo tsa tshireletso
 
-### Tshebetso
+### Tshebetso {#performance}
 
 Ha network ya hao e ntse e hola, lekola:
 
@@ -105,9 +105,9 @@ Ha network ya hao e ntse e hola, lekola:
 
 Nahana ka ho kenya caching tshebetsong (page cache, object cache) le CDN haeba ha o so etse jwalo. [Kopanyo ya Cloudflare](/user-guide/host-integrations/cloudflare) e sebetsana le boholo ba sena.
 
-## Taolo ya Potoloho ya Bophelo ba Moreki
+## Taolo ya Potoloho ya Bophelo ba Moreki {#customer-lifecycle-management}
 
-### Ho Fokotsa ho Tlohela
+### Ho Fokotsa ho Tlohela {#reducing-churn}
 
 Ho tlohela ke peresente ya bareki ba hlakolang kgwedi le kgwedi. Bakeng sa khoebo ya peeletso, ho fokotsa ho tlohela ho bohlokwa jwaloka ho fumana bareki ba batjha.
 
@@ -119,7 +119,7 @@ Ho tlohela ke peresente ya bareki ba hlakolang kgwedi le kgwedi. Bakeng sa khoeb
 - Ba fumane kgetho e nngwe e theko e tlase → matlafatsa boleng ba hao ba niche
 - Khoebo ya bona e kwetse → ha ho qojwe, empa sala sena morao ka thoko
 
-### Ho Kgothaletsa Dintlafatso
+### Ho Kgothaletsa Dintlafatso {#encouraging-upgrades}
 
 Bareki ba ho Starter ba atlehang ba lokela ho kgothaletswa ho ntlafatsa:
 
@@ -127,7 +127,7 @@ Bareki ba ho Starter ba atlehang ba lokela ho kgothaletswa ho ntlafatsa:
 - Romela di-imeile tse lebisitsweng tse totobatsang dikarolo tsa moralo wa Growth tseo ba ka ruang molemo ho tsona
 - Bontsha seo bareki ba Growth/Pro ba se hahileng
 
-### Matsholo a ho Kgutlisa
+### Matsholo a ho Kgutlisa {#win-back-campaigns}
 
 Ha moreki a hlakola:
 
@@ -135,30 +135,30 @@ Ha moreki a hlakola:
 2. Rarolla taba ya hae haeba ho kgoneha
 3. Fana ka theolelo hore a kgutle (matsatsi a 30-60 ka mora ho hlakola)
 
-## Ditlwaelo tsa Beke le Beke le tsa Kgwedi le Kgwedi
+## Ditlwaelo tsa Beke le Beke le tsa Kgwedi le Kgwedi {#weekly-and-monthly-routines}
 
-### Beke le Beke
+### Beke le Beke {#weekly}
 
 - Hlahloba dingodiso tse ntjha le ho hlakolwa
 - Arabela ditekete tsohle tsa tshehetso tse bulehileng
 - Lekola tshebetso ya sethala le nako ya ho sebetsa
 - Hlahloba ditefo dife kapa dife tse hlolehileng
 
-### Kgwedi le Kgwedi
+### Kgwedi le Kgwedi {#monthly}
 
 - Sekaseka metrics tsa bohlokwa (MRR, ho tlohela, bareki ba batjha, dintlafatso)
 - Kenya dintlafatso tsa WordPress le katoloso (ka mora teko ya staging)
 - Hlahloba le ho ntlafatsa polokelo ya tsebo ho ya ka dipaterone tsa tshehetso
 - Romela newsletter kapa ntlafatso ho bareki (dikarolo tse ntjha, malebela, ditaba tsa indasteri ya boikoetliso)
 
-### Kotara le Kotara
+### Kotara le Kotara {#quarterly}
 
 - Hlahloba ditheko kgahlanong le bahlolisani le maikutlo a bareki
 - Lekola meralo ya ditempleite -- na e hloka ho ntjhafatswa?
 - Lekola bokgoni ba hosting -- na o hloka ho hodisa?
 - Hlahloba le ho ntlafatsa onboarding ho ya ka data ya activation
 
-## Seo re se Hahileng Thutong Ena
+## Seo re se Hahileng Thutong Ena {#what-we-built-this-lesson}
 
 - **Mekgwa ya letsatsi le letsatsi ya ho lekola** bakeng sa uptime, boingodiso, ditefo, le tshehetso
 - **Sebopeho sa tshehetso se nang le maemo** se tsamaellanang le maemo a plan

@@ -3,13 +3,13 @@ title: Sazkirina Dayînên Destan
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Sazkirina Dayînên Destî (v2)
+# Sazkirina Dayînên Destî (v2) {#setting-up-manual-payments-v2}
 
 _**TÊBÎNIYA GIRÎNG: Ev gotar derbarê guhertoya Ultimate Multisite 2.x de ye.**_
 
 Dayînên destî rêyek in ku hûn dikarin rêbazên din ên dayînê pêşkêş bikin, dema ku **Stripe** an **PayPal** ji bo bikarhênerên we amade nebin. Ew dikare veguhastina têlî an bankayê be, an jî her rêbazek din a dayînê ku li herêma bikarhênerên we heye.
 
-## Çawa Dayînên Destî çalak bikin
+## Çawa Dayînên Destî çalak bikin {#how-to-enable-manual-payments}
 
 Sazkirina dayîna destî pir hêsan e. Tenê divê hûn wê di bin dergehên dayînê de çalak bikin û rêwerzên berfireh binivîsin ku bikarhêner çawa divê dayînê bişîne.
 
@@ -31,7 +31,7 @@ Her wiha ew ê li ser rûpela **Spas Ji Te Re** peyamek bi rêwerzên dayîna we
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Piştrastkirina dayînên destî
+## Piştrastkirina dayînên destî {#confirming-manual-payments}
 
 Ji bo piştrastkirina dayînek destî, biçin menuya **Dayîn** li ser stûna çepê. Li wir hûn dikarin hemû dayînên li ser tora xwe û hûrgiliyên wan bibînin, tevî **rewşa** wan. Dayînek destî dê her dem xwedî rewşa **Li bendê** be heta ku hûn bi destê xwe wê biguherînin.
 

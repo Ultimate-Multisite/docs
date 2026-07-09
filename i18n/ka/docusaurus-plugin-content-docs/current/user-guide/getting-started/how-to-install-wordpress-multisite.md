@@ -3,7 +3,7 @@ title: როგორ დავინსტალიროთ WordPress Multisi
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# როგორ დავაყენო WordPress Multisite?
+# როგორ დავაყენო WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite-ს საშუალებას გაძლევთ, ერთი ინსტალაციის ქვეშ გქონდეთ რამდენიმე ვებსაიტი. ეს არის ჩაშენებული ფუნქცია, მაგრამ ნაგულისხმევად არ არის აქტიური.
 
@@ -57,7 +57,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -93,9 +93,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 ველების შევსების შემდეგ, დააჭირეთ "Add site" ღილაკს. ახალი სუბსაიტის შექმნის შემდეგ, გადადით მასზე წვდომისთვის, რომ დარწმუნდეთ, რომ სუბსაიტი მუშაობს.
 
-## გავრცელებული პრობლემები:
+## გავრცელებული პრობლემები: {#common-problems}
 
-### 1. შემიძლია ახალი საიტების შექმნა, მაგრამ მათ ვერ ვხედავ.
+### 1. შემიძლია ახალი საიტების შექმნა, მაგრამ მათ ვერ ვხედავ. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 თუ თქვენ აირჩიეთ სუბდომენები, ასევე საჭიროა Wildcard subdomains-ის დაყენება თქვენს მულტი-საიტის ქსელისთვის.
 

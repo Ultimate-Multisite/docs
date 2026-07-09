@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite huwa plugin WordPress Multisite li jippermek li toffri WaaS (Web as a Service) jew Websites għall kliementi. Qabel ma niddir l-għoti u nifhmu kif Ultimate Multisite jistax jgħin lil biznis tiegħek u lil kliementi, għandna xi għarfien fundamentali li għandna li nisvolvi.
 
-## Il WordPress Multisite
+## Il WordPress Multisite {#the-wordpress-multisite}
 
 Għal ħafna minnna, inħossu l-installazzjoni standard ta WordPress. Tgħid it-tneqqas biex tgħmlih minn panel tal-kontroll tal-hosting tiegħek jew, għall il-ġenerali (jew għallom), tset applikazzjoni web u database, tnedix il-file core u tibda l-proċess ta installazzjoni.
 
@@ -21,13 +21,13 @@ F'essenza, WordPress multisite jista' jiġi imassimillat b'dan: Un Università t
 
 Biex nifitlien dan il-istatjam, niddirixiemna xi żmienji biex naħseb fuq terminoloġja biex nifhmu l-istatjam biex WordPress u fil-komunità tal-WordPress.
 
-### Il Network (R-Rete)
+### Il Network (R-Rete) {#the-network}
 
 F'WordPress, il network multisite huwa postell li tista' tmarrigu żmienji (subsites) min dashboard waħda. Kif ma jiddu l-kunsillenti għall-creaġimenti ta network multisite, l-risultatu finali huwa tipikament xi direttivi aggiemiet fil-file wp-config.php biex tgħti WordPress b'informazzjoni li qed jopera f'din il-mod speċifiku.
 
 Jumha għandna ħafna differenzi bejn network multisite u installazzjoni WordPress standalone, u nħobb nfermuh b'mod qasir.
 
-#### Subdomain vs. Subdirectory (Subdirettori)
+#### Subdomain vs. Subdirectory (Subdirettori) {#subdomain-vs-subdirectory}
 
 Ikuna dan l-deċizzjoni li għandek tmur biex tiffaċċja: jiddeċiedi se l-installazzjoni multisite tqiegħed b _subdirectories_ jew _subdomains_. Ultimate Multisite jopera b'mod ikejfu ma'dha, iżda huma għandhom xi differenzi arkitekturali bejn il-kunsillenti.
 
@@ -43,7 +43,7 @@ F konfigurazzjoni `_subdomain_`, l-użu tal-certifikatu SSL wildcard huwa minn i
 
 Kif hija opzioni oħra, huma spiss limitati fl-scope u applikazzjoni u teħtieġ konfigurazzjoni u considerazzjoni aggiementi biex tqassmu l-adegwazzjoni tiegħek.
 
-#### Plugins u Themes
+#### Plugins u Themes {#plugins-and-themes}
 
 X'la WordPress jgħid, jista' jgħid ukoll minn perspektiva tal-customer. F installazzjoni WordPress standalone, se l-administrator tal-siti jinstall plugin ħażin jew ma jippassja biex jipprovvidi l-installazzjoni tiegħu għall-aggiornamenti, l-viqqa' u l-talfiem huma l-istess. Madankollu, se l-administrator tal-siti jinstall plugin ħażin fuq installazzjoni multisite, hu jikkawża vittima ta ogni sit installat f-network.
 
@@ -51,7 +51,7 @@ Għal peress dan, meta jkun konfigurat bħala WordPress multisite, WordPress jix
 
 F'dan mod, l-network administrator huwa responsabbli għall-installazzjoni ta pluginijiet u temi f'network u jiddelega permessi biex jkun jistgħu jutilizzaw dan il-pluginijiet u temi f'siti network. L-administratorijiet tal-siti ma jistgħux jiġu installa pluginijiet u temi jew jakses pluginijiet u temi li ma huma assegnati lis-siti tagħhom.
 
-#### Utenti u Administratorijiet
+#### Utenti u Administratorijiet {#users-and-administrators}
 
 F'WordPress Multisite, kull sito network tajba isxi l-database u fil-mejlus isxi l-utenti, ruoli u kapabilità. Il-mod aktar adekwat biex tfihmu huwa li kull utente huwa membru tal-network u ma partikolari siti.
 
@@ -63,13 +63,13 @@ Jifabbilja l-dittakin, per ankba li l-account utenti jiddehjaha relatat lis-sita
 
 Although it's not a foreign concept in enterprise systems, this single source of user registration and authentication is often a difficult concept to understand for people familiar with stand-alone WordPress installations where user administration is somewhat easier.
 
-#### Media
+#### Media {#media}
 
 Where network sites share a single database in a WordPress Multisite, they maintain separate paths on the filesystem for media files.
 
 Il-lokazzjoni standard ta WordPress (wp-content/uploads) tajjeb; però il-indirizzjoni tiegħu tinteressil biex turi l-ID uniku tal-site network. Għalhekk, il-file ta media għas-site network juri bħala wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Qed nferrat qabel li jkun għandna vantaġġi differenti għall-konfigurazzjoni ta _subdomain_ kontra _subdirectory_, u fl-forza hija: il-paths.
 
@@ -83,7 +83,7 @@ F'konfigurazzjoni ta _subdomain_, dan l-aġġunt ma jkunx preżedut perché kada
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 F'konfigurazzjoni ta _subdirectory_ (subdirettori) l-potenzjal tal konflikti fl-nomi estendi għall-pajti statici bħal siti principali u siti reġistrali. Il-siti main u siti reti jgħandu ism/indirizzament isiem.
 
@@ -93,7 +93,7 @@ Biex jipprevjeni dan, WordPress joff mod biex tixgħel (blacklist) xi nomi di si
 
 F'konfigurazzjoni ta _subdomain_ (subdomeni), il-possibbiltà għall-konflitti fl-nomi hija mitigata min l-subdomenu biex huwa uniku għas-sita reti u ma jkun relattiv għal xejt mill-sita principal.
 
-### Registrazzjoni
+### Registrazzjoni {#registration}
 
 F'kontrolli ta' resekuturi tal-WordPress Multisite, huma disponibili diversi opzioni biex tiskribi (register) utenti ġoddi, li jippermet l-utenti ġoddin u esistenti biex ikunu siti.
 
@@ -111,7 +111,7 @@ Meta jiġu creati konti tal-utenti, il-konti huma generati fuq lejn il livell ta
 
 אם, עם זאת, הטבע והמטרה המיועדים של ה-multisite היו להציע אתרי רשת שאין ביניהם קשר כלשהו, כמעט תמיד נדרשים plugins חיצוניים או נוספים כדי לשלוט בהרשאות המשתמש.
 
-### דומיין ו-SSL
+### דומיין ו-SSL {#domain-and-ssl}
 
 בואו נדבר על התקנת WordPress Multisite שכמעט חורגת מהשינוי שלנו - Wordpress.com. זהו למעשה הדוגמה הנרחבת ביותר ל-wordpress multisite ומדגים את היכולות הרחבות שלו להיות מותאם ומוצג כדי למלא מטרה מסוימת.
 
@@ -125,11 +125,11 @@ Lill-administratorijiet ta network, dan huwa layer aggiem tal-komplessità sia f
 
 B'mod kif ma WordPress Multisite jipprovvidi mod li jista' mappat [www.anotherdomain.com](http://www.anotherdomain.com) għal 'site1', l-administrator ta network jipprovdi lilhu l-maħtur tal-managament eksternal tal-DNS entries u l-implementazzjoni tal-SSL certificates.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Mentre nifhmu l-differenzi bejn installazzjoni WordPress stand-alone u installazzjoni Multisite, famu nħarsu kif jista' jkollu l-Ultimate Multisite bħala arsenal ultim tal-fornita ta Websites as a Service (WaaS).
 
-### Introduzzjoni
+### Introduzzjoni {#introduction}
 
 L-Ultimate Multisite huwa l-Swiss Army knife tiegħek meta qed tgħmli Website as a Service (WaaS). Isperza f Wix.com, Squarespace, WordPress.com u famu nħarsu possidenza tal-servizz tiegħek.
 
@@ -137,9 +137,9 @@ Sodda, sotto il pannell, l-Ultimate Multisite jista' jiegħtieħdu l-WordPress M
 
 F'sezzjonijiet li j följande nifhmu xi casus u konsiderazzjonijiet comuni li jagħmlu l-support għall-casus kien hemm.
 
-### Casus Oġġetti (Use Cases)
+### Casus Oġġetti (Use Cases) {#use-cases}
 
-#### Casus 1: Aġenzija
+#### Casus 1: Aġenzija {#case-1-an-agency}
 
 B'mod tipiku, il-skills principali ta aġenzija jista' jkunu f'disjenijiet tal-websites b'aspettak bħal l-hosting jew il-marketing li jkun msemmi bħala servizzi aggiem.
 
@@ -165,7 +165,7 @@ I temi fornissono funzionalità simili, permettendo a certi temi di essere attiv
 
 Gli agenzie troveranno tranquillità con Ultimate Multisite che permette loro di fare ciò che sanno fare meglio: progettare siti web eccezionali.
 
-#### Caso 2: Fornitore di nicchia
+#### Caso 2: Fornitore di nicchia {#case-2-niche-provider}
 
 C'è un vecchio detto che dice: "fai una cosa e falla bene". Per molti specialisti, questo significa creare un prodotto o un servizio attorno a un'unica idea centrale.
 
@@ -179,7 +179,7 @@ Per un fornitore di siti e servizi di nicchia, questo offre un vantaggio ineguag
 
 Dependet min il-es bigħod, konfigurazzjonijiet ta _subdirectory_ jew _subdomain_ jistgħu jidħlu, u f dan peress l-architettura għandna se jkun bejn opzjonijiet biex nistabbiliss certifikat SSL semplice għal _subdirectories_ jew certifikat SSL wildcard għal _subdomains_.
 
-#### Kaso 3: Hosting Web WordPress
+#### Kaso 3: Hosting Web WordPress {#case-3-wordpress-web-hosting}
 
 Jum huwa ħafna modi biex tista' hosti siti WordPress, iżda mhux famu jkun sempliċi minn fornix spazzja web lil klijent mal-versjoni ta WordPress pre-installata. Dan hija peress li għal qasir tal deċiedi u konsiderazzjonijiet għandna jkun żviluppati biex nipprovdu servizz b'signifikanza.
 
@@ -191,11 +191,11 @@ Biex l-developer jistgħu jiġu integrati mal-Ultimate Multisite, il-soluzzjoni 
 
 Minqust li niddependu fuq ħafna plugin u licenziamenti esterni, l-Ultimate Multisite joffri soluzzjoni b'funzjonalità għad-ħer u comparabbli mal-Wix, Squarespace, WordPress.com u oħra.
 
-### Konsiderazzjonijiet Arkitettrali
+### Konsiderazzjonijiet Arkitettrali {#architecture-considerations}
 
 Mentre li hija giddiretta mhux guida komprewda, il-elementi tal-folji tagħna jidħlu biex jkun għajnuna għall-selezzjoni korretta tal-teknoloġiji biex tivvanta l-installazzjoni ta Ultimate Multisite.
 
-#### Hosting Shared vs. Dedicated
+#### Hosting Shared vs. Dedicated {#shared-vs-dedicated-hosting}
 
 Ma se la tutti i fornituri di hosting ma kbe żżid, u xog xi prattica densità server ekstremi. I fornituri b'cost tipikament generawu rividja min jommassi densità server. Għal tal-għax, l-installazzjoni tiegħek ta Ultimate Multisite tista' tkun biss waħda min ħammit siti fuq is-server isiem.
 
@@ -209,7 +209,7 @@ Ultimate Multisite jkun magħruf li jservi ma' xogħol ta fornituri hosting tajb
 
 Biex għandek lista ta fornituri kompatibbli u istruzzjonijiet kompleti biex tsetta għal kulhon, jiddeq fuq dokumentazzjoni Compatible Providers.
 
-#### Considerations ta Performance
+#### Considerations ta Performance {#performance-considerations}
 
 Ultimate Multisite mhux applikazzjoni lenta, ma hu sorprendentemente velo. Madankoll, huwa jaffidix biss qed jkun kif jkun l-applikazzjoni u l-infrastruttura tal-parti taqabbil tiegħu u jista' jipprovvidi biss dak li għandu access għalih.
 
@@ -227,7 +227,7 @@ Għal kuntratt dan, l-majarri ta' rete għalihom użaw ħafna soluzzjonijiet ta 
 
 Il-Unimate Multisite inkludi add-on sofisticat Cloudflare li jippermettix lil majarri ta' rete jikkontrollaw il-installazzjonijiet tagħhom permezz tal-Cloudflare u jutilizzaw mhux biss l-capacità tal-caching tiegħu, iżda wkoll hosting DNS, sertifikati SSL u mekanismi di sigurtà.
 
-#### Backup
+#### Backup {#backups}
 
 Tista' tistaqsi 50 persuni għall-parir fuq il-backup u tirċievi 50 opinjonijiet differenti fuq strateġiji ta' backup. Il-għapus huwa: jiddependi.
 
@@ -239,7 +239,7 @@ B'mod li nifhmu l-istess sezzjoni, niddikjar li backup huwa kopja tal-sistema f 
 
 Ma għalfeh, l-għapus kif jgħandu il-backup u xie ma huwa l-aħjar għall-ambiente tiegħek jiddependi ħafna mill-reqievi tiegħek u abilità provider hosting biex jaffidu dan ir-reqievi. Madankollu, fil-ordina tal-opzioni li huma l-più opinjonati għall-li huwa l-meno opinjonat, il-opzioni taħt qed jgħandu xi indirizzjiet.
 
-#### Snapshots (Screenshots)
+#### Snapshots (Screenshots) {#snapshots}
 
 Il-snapshots huma l-soluzzjoni perfetta biex jgħandu il-backup perché huma fasi, ma għandhomx problemi (finin li tixtiebiex tirrestaw) u "żgħażlu". Huqso biex jgħandu xi ħuda mill-provider tiegħek u japplikaw l-forza tagħhom quasi biss se tista' tkun VPS (Virtual Private Server) jew xi ħaġa kifma hija. Il-provider b’mod wieħed li huma l-lista fil-dokumentazzjoni 'Compatible Providers' tiegħene joffru backup li ma għandhomx ħafna intervenzjoni jew konsiderazzjoni mill-network administrator.
 
@@ -247,7 +247,7 @@ Mentre i backup tradizionali mirano l-filementi u i database, il snapshot mira a
 
 Is-snapshot jista' jattira costi aggiemali mill-provider ta hosting, iżda huwa polizza assicurativa kontra l-inċidenti.
 
-#### Scripts Esterni
+#### Scripts Esterni {#external-scripts}
 
 Jumblu li ma hemm ħsara ta scripts u soluzzjonijiet esterni biex tikkontrollaw WordPress u resursi MySQL u dan jista' jservu għall-Ultimate Multisite, peress huwa plugin WordPress li jista' jiegħdu l-filesystem u id-database tal-WordPress. Għalhekk, soluzzjoni li tikkontrolla siti WordPress tista' tgħmlu adeguat għall-esigenza ta Ultimate Multisite.
 
@@ -255,7 +255,7 @@ Mma nistgħu la nġgħandu scripts wa scripts oħra, is-parir ġenerali huwa li 
 
 Jista' jiġi notat li dan is-scripts, wa qed jorxu, jgħaddu l-load tal-sistema u għandek tħseb fuq dan.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Quasi ma hemm problemi f WordPress li ma jistgħu jiġu soluti b'plugin u jekk tmur b'managament ta scripts esterni mhux il-tuq tiegħek, meta plugin huwa l-opzjoni li tqaddem.
 
@@ -263,7 +263,7 @@ Mentre i pluginijiet jikkontinu biviestu opzioni u funzjonalità, l-più importa
 
 Meta tixxli plugin, għandu tkun attenta biex ti verifichi li huwa *multisite aware*. Minħabba natura operazzjonali tiegħu, waqt li backup qed jiffur, tista' tipprovdi żmien ta carico temporann fuq il-server fin ma jkun il-proċess jkomplutt.
 
-#### Domain u SSL
+#### Domain u SSL {#domain-and-ssl-1}
 
 Ħafna hija diskussija già li għal domini f modalità *subdomain* multisite. Soluzzjoni quasi universali għall-administratorijiet ta r-rannet huwa l-użu tal-wildcard DNS entries.
 
@@ -287,7 +287,7 @@ Lillu għal ħafiet, l-użu ta Cloudflare huwa opzjoni sħiħa. Il-klijenti jipp
 
 Ħalwa minn dan, għandien bypassi li għandhom issaġġu, li staqsi l-Ultimate Multisite lista ta Fornitori Kompatibbli (Compatible Providers). Dan hija biex ma jkun il-proċediment tal-setup tal-DNS u SSL proċediment mhux sħiħ. Madankollu, mal-integrazzjoni ta Ultimate Multisite ma jkunx il-komplessità ħafija u il-proċediment huwa awtomatiku.
 
-#### Plugins
+#### Plugins {#plugins-1}
 
 Il-probabbiltà hija għolja li għandek bżonn plugin aggiemali biex toffri funksjonalità lill-klijenti tiegħek jew siti ta nnetz. Għal ma tutti i plugins jgħانو mal WordPress Multisite u Ultimate Multisite? Il-għapus huwa.
 

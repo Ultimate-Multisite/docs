@@ -3,11 +3,11 @@ title: Tema buvimo įsigijimo procesas
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Przepływ Onboardingu Theme Builder
+# Przepływ Onboardingu Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 wprowadza przewodzący **przepływ onboardingu Theme Builder**, który pomoże Ci stworzyć własny motyw blokowy podczas początkowej konfiguracji. Zastępuje on stary tryb Site Builder bardziej elastycznym podejściem wspomaganym przez agenta.
 
-## Czym jest Przepływ Onboardingu Theme Builder?
+## Czym jest Przepływ Onboardingu Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Przepływ onboardingu Theme Builder to interaktywny kreator, który:
 
@@ -18,9 +18,9 @@ Przepływ onboardingu Theme Builder to interaktywny kreator, który:
 
 Przepływ ten jest zasilany przez **agent Setup Assistant**, który zadaje pytania wyjaśniające i buduje Twój motyw krok po kroku.
 
-## Rozpoczęcie Onboardingu Theme Builder
+## Rozpoczęcie Onboardingu Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Konfiguracja Pierwszego Użycia
+### Konfiguracja Pierwszego Użycia {#first-run-setup}
 
 Kiedy po raz pierwszy uruchomisz Superdav AI Agent na nowej instalacji WordPressa, zobaczysz:
 
@@ -35,7 +35,7 @@ Co chciałbyś zrobić?
 
 Wybierz **"Stwórz niestandardowy motyw"**, aby przejść do przepływu onboardingu Theme Builder.
 
-### Aktywacja Manualna
+### Aktywacja Manualna {#manual-activation}
 
 Możesz również rozpocząć onboarding Theme Builder w dowolnym momencie, prosząc o:
 
@@ -49,9 +49,9 @@ lub
 "Help me create a custom theme"
 ```
 
-## Kroki Onboardingu
+## Kroki Onboardingu {#the-onboarding-steps}
 
-### Krok 1: Wybór Trybu
+### Krok 1: Wybór Trybu {#step-1-mode-selection}
 
 Agent Setup Assistant pyta o Twoje preferencje:
 
@@ -63,7 +63,7 @@ Jak chciałbyś zbudować swój motyw?
 
 **Tryb przewodowy** jest zalecany dla większości użytkowników; agent proponuje rozwiązania projektowe na podstawie Twojej branży i celów.
 
-### Krok 2: Specyfikacja Strony
+### Krok 2: Specyfikacja Strony {#step-2-site-specification}
 
 - **Sito tikslas**: E-komercija, blogas, portfolijos, SaaS ir kitas.
 - **Tikslinė auditorija**: Kurie yra jūsų vizitatori?
@@ -72,7 +72,7 @@ Jak chciałbyś zbudować swój motyw?
 
 Šią informaciją saugomas jūsų **site_brief** archyve, kurį agentai naura ateityje sesijose.
 
-### 3. Dizaino sistemos sprendimai (Design System Decisions)
+### 3. Dizaino sistemos sprendimai (Design System Decisions) {#step-3-design-system-decisions}
 
 Agentas pagalbia jums pasirinkti dizaino tokenus:
 
@@ -81,7 +81,7 @@ Agentas pagalbia jums pasirinkti dizaino tokenus:
 - **Atstumas**: Kompaktai, normalūs ar laisvi dizainai
 - **Rinkimai (Motion)**: Animacijos ir perėjimo efektai (jei norite)
 
-### 4. Temų generavimas (Theme Generation)
+### 4. Temų generavimas (Theme Generation) {#step-4-theme-generation}
 
 Įdiegimo asistentas (Setup Assistant agent) sukuria jūsų pritaikytą blokų temą, įskaitant:
 
@@ -90,7 +90,7 @@ Agentas pagalbia jums pasirinkti dizaino tokenus:
 - Pritaikytus blokų stilius, atitinkant jūsų dizainą sistemą
 - Temos metadatos ir WordPressio palaikymo deklaracijas
 
-### 5. Aktyvavimas ir patikrinimas (Activation and Verification)
+### 5. Aktyvavimas ir patikrinimas (Activation and Verification) {#step-5-activation-and-verification}
 
 Tema aktyvuojama automatiškai, o jūs pamatys:
 
@@ -105,7 +105,7 @@ Tema aktyvuojama automatiškai, o jūs pamatys:
 
 Tada galite pasinaudoti savo svetaine ir patikrinti, ar tema atrodo tinkamai.
 
-## Svetainės specifikacijos ir site_brief archyvas
+## Svetainės specifikacijos ir site_brief archyvas {#site-specification-and-sitebrief-memory}
 
 Įdiegimo metu agentas įsigijama jūsų svetainės specifikacijas **site_brief** archyve kategorijoje. Tai apima:
 
@@ -115,11 +115,11 @@ Tada galite pasinaudoti savo svetaine ir patikrinti, ar tema atrodo tinkamai.
 - Dizaino preferencijas
 - Maudumo struktūrą
 
-### Kodėl site_brief yra svarbus
+### Kodėl site_brief yra svarbus {#why-sitebrief-matters}
 
 Ateityje sesijose agentai naura jūsų **site_brief** informaciją, kad:
 
-### Uvedimas apie jūsų svetainės apibendrinimą (site_brief)
+### Uvedimas apie jūsų svetainės apibendrinimą (site_brief) {#viewing-your-sitebrief}
 
 Jūs galite klausti agentui:
 
@@ -135,11 +135,11 @@ arba
 
 Agentas pateiks jūsų saugomas svetainės specifikaciją.
 
-## Personalizavimas po įdalybos (onboarding)
+## Personalizavimas po įdalybos (onboarding) {#customizing-after-onboarding}
 
 Po to, kai baigus Theme Builder įdalybą, galite:
 
-### Naudoti „Design System Aesthetics“ gadinimo įgalį
+### Naudoti „Design System Aesthetics“ gadinimo įgalį {#use-the-design-system-aesthetics-skill}
 
 Pagalbos su dizaino tobulinyminiais:
 
@@ -155,7 +155,7 @@ arba
 
 **Design System Aesthetics gadinimas įgalis** pabaigo jūsų veiksmus, skirtus tiksliniams dizaino atnaujinimams.
 
-### Redaguoti theme.json tiesiogiai
+### Redaguoti theme.json tiesiogiai {#edit-themejson-directly}
 
 Pagalpinui vartotojai galite redaguoti `/wp-content/themes/[theme-name]/theme.json`, kad nustatytumėte:
 
@@ -164,7 +164,7 @@ Pagalpinui vartotojai galite redaguoti `/wp-content/themes/[theme-name]/theme.js
 - Atrypimo reikšmes (Spacing values)
 - Kotų ir šakų apribojimų (Border and shadow definitions)
 
-### Sukurti pritaikytus blokų šablonus
+### Sukurti pritaikytus blokų šablonus {#create-custom-block-templates}
 
 Naudokite WordPress blokų redaktorią, kad sukurotumėte pritaikytus šablonus:
 
@@ -173,7 +173,7 @@ Naudokite WordPress blokų redaktorią, kad sukurotumėte pritaikytus šablonus:
 - Produktų puslapiams
 - Kontakto formoms
 
-## Palyginimas: Senas vs. Naujas įdalyba (onboarding)
+## Palyginimas: Senas vs. Naujas įdalyba (onboarding) {#comparison-old-vs-new-onboarding}
 
 | Pavadinimas | Svetainės kūrėjas (Legacy) | Theme Builder (Naujas) |
 |---------|----------------------|-------------------|
@@ -183,7 +183,7 @@ Naudokite WordPress blokų redaktorią, kad sukurotumėte pritaikytus šablonus:
 | Elgimys | Įfiksuoti variantai | Pritaikomi |
 | Ateities atnaujinimai | Neapibrėžti | Saugo tiesiogiai svetainės apibendrinime (site_brief) |
 
-## Problemos iššutes (Troubleshooting)
+## Problemos iššutes (Troubleshooting) {#troubleshooting}
 
 **Įdalyba nebaigėsi**
 - Prisijunkite prie jos: "Pradėti Theme Builder įdalybą"
@@ -200,7 +200,7 @@ Naudokite WordPress blokų redaktorią, kad sukurotumėte pritaikytus šablonus:
 - Prašykite agentą „regeneruoti temą su [konkretūs pakeitimai]“ ("regenerate the theme with [specific changes]").
 - Redaguokite `theme.json` tiesiogiai, kad turėtumėte tikslų kontrolges.
 
-## Ketvirtieji žingsniai
+## Ketvirtieji žingsniai {#next-steps}
 
 Tema Builder įdiegimo (onboarding) pabaigoje:
 

@@ -3,9 +3,9 @@ title: Diiwaanka Isbeddellada Shabakado Badan
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Diiwaanka Isbeddellada Multi-Network
+# Diiwaanka Isbeddellada Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Cusub: Muujiye horudhac template-ka network — baadh oo horay u eeg template-yada network adigoo adeegsanaya guddi toos ah ka hor iibsashada.
 * Cusub: Doortaha template-ka network marka checkout — macaamiishu waxay dooran karaan template network inta lagu jiro socodka signup checkout.
 * Cusub: Cross-network magic link SSO — macaamiishu waxay si habsami leh u geli karaan sub-networks iyagoo adeegsanaya aqoonsiga magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Hagaajin: Ka ilaali furaha `network_id` ee aan la qeexin gudaha xadka weydiinta site.
 * Hagaajin: Hubinta oggolaanshaha network ka hor beddelidda context waxay ka hortagtaa khaladaadka hantida jadwalka `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Hagaajin: Abuurista network cusub.
 * Hagaajin: Soo bandhigidda menus.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Waxaa loo cusboonaysiiyay Plugin Update Checker v5
 * Waxaa lagu daray headers casri ah oo WordPress plugin ah
 * La hagaajiyay la jaanqaadka noocyadii ugu dambeeyay ee WordPress
 
-### 1.0.2
+### 1.0.2 {#102}
 * Hagaajinta bug-yada iyo horumarinta waxqabadka
 * La xoojiyay kala-soocidda network
 
-### 1.0.0
+### 1.0.0 {#100}
 * Siidayntii ugu horreysay
 * Shaqaynta aasaasiga ah ee multinetwork
 * Isdhexgalka Multisite Ultimate

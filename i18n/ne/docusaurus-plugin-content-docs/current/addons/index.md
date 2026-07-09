@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite एडअनहरू
+# Ultimate Multisite एडअनहरू {#ultimate-multisite-addons}
 
 एडअनहरूले Ultimate Multisite लाई थप सुविधाहरू र एकीकरणहरूसँग विस्तार गर्छन्। धेरैजसो एडअनहरू सशुल्क हुन्छन् र [ultimatemultisite.com](https://ultimatemultisite.com) बाट किन्न सकिन्छ।
 
-## स्थापना
+## स्थापना {#installation}
 
 एडअनहरू दुई तरिकाले स्थापना गर्न सकिन्छ:
 
 1. **एडअन पृष्ठमार्फत** -- WordPress प्रशासनमा आफ्नो साइटको एडअन व्यवस्थापन पृष्ठमा जानुहोस्
 2. **म्यानुअल डाउनलोड** -- [आफ्नो Account](https://ultimatemultisite.com/my-account/downloads/) बाट डाउनलोड गर्नुहोस् र प्लगइनहरू > नयाँ थप्नुहोस् मार्फत अपलोड गर्नुहोस्
 
-## उपलब्ध एडअनहरू
+## उपलब्ध एडअनहरू {#available-addons}
 
 | एडअन | वर्णन |
 |-------|-------------|

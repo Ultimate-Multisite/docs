@@ -3,19 +3,19 @@ title: Stripe-asetusten asettaminen
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe-portaalauksen asennus (v2)
+# Stripe-portaalauksen asennus (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 
 Voit aktivoida jopa neljä maksutapaa maksun asetuksissasi: Stripe, Stripe Checkout, PayPal ja Manuaalinen. Tässä artikkelissa katsomme, miten integroidaan **Stripeen**.
 
-## Stripen aktivoiminen
+## Stripen aktivoiminen {#enabling-stripe}
 
 Jotta voit käyttää Stripea saatavaksi maksutapaa verkostossasi, siirry kohtaan **Ultimate Multisite > Asetukset > Maksut** ja valitse ruudunvalitsin (toggle) kohdasta **Stripe** tai **Stripe Checkout** Aktiiviset maksutapa-gateway -osiossa.
 
 ![Stripen aktivoiminen aktiivisissa maksutapa-gatewayissa](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Tämä menetelmä näyttää tilan, johon voit syöttää luottokorttitiedot kassalla.
 
@@ -25,7 +25,7 @@ Jotta voit käyttää Stripea saatavaksi maksutapaa verkostossasi, siirry kohtaa
 
 ![Stripen Checkout-ohjattu sivu kassalla](/img/config/settings-payment-gateways.png)
 
-### Stripen API-avaimien hankkiminen
+### Stripen API-avaimien hankkiminen {#setting-up-stripe-webhook}
 
 Kun olet aktivoimassa Stripea maksutapa-gateway-näppärinä, sinun on täytettävä kentät **Stripe Publishable Key** ja **Stripe Secret Key** -kentöihin. Voit saada nämä kirjautumalla sisään Stripe-tilillesi.
 

@@ -3,7 +3,7 @@ title: Referenca e aftësive
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenca e Aftësive
+# Referenca e Aftësive {#abilities-reference}
 
 Aftësitë janë veprimet atomike që Gratis AI Agent mund të thërrasë në instalimin tuaj WordPress. Çdo aftësi është një klasë PHP e regjistruar që ekspozon një skemë JSON — agjenti e lexon këtë skemë gjatë ekzekutimit për të kuptuar cilët parametra kërkohen dhe çfarë kthen aftësia.
 
@@ -11,11 +11,11 @@ Kjo faqe dokumenton të gjitha aftësitë që vijnë me Gratis AI Agent v1.9.0.
 
 ---
 
-## Llojet e Personalizuara të Postimeve
+## Llojet e Personalizuara të Postimeve {#custom-post-types}
 
 Këto aftësi menaxhojnë llojet e personalizuara të postimeve (CPT) të regjistruara përmes agjentit. Regjistrimet ruhen në tabelën e opsioneve të WordPress, në mënyrë që të mbijetojnë çaktivizimin dhe riaktivizimin e plugin-it.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Regjistron një lloj të ri të personalizuar postimi.
 
@@ -50,7 +50,7 @@ Regjistron një lloj të ri të personalizuar postimi.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Kthen të gjitha llojet e personalizuara të postimeve të regjistruara nga agjenti.
 
@@ -73,7 +73,7 @@ Kthen të gjitha llojet e personalizuara të postimeve të regjistruara nga agje
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Çregjistron një lloj të personalizuar postimi të regjistruar më parë nga agjenti. Postimet ekzistuese të atij lloji mbeten në bazën e të dhënave, por nuk janë më të aksesueshme përmes llojit të postimit.
 
@@ -87,11 +87,11 @@ Kthen të gjitha llojet e personalizuara të postimeve të regjistruara nga agje
 
 ---
 
-## Taksonomitë e Personalizuara
+## Taksonomitë e Personalizuara {#custom-taxonomies}
 
 Këto aftësi menaxhojnë taksonomitë e personalizuara. Ashtu si CPT-të, regjistrimet e taksonomive ruhen.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Regjistron një taksonomi të re të personalizuar.
 
@@ -123,7 +123,7 @@ Regjistron një taksonomi të re të personalizuar.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Kthen të gjitha taksonomitë e personalizuara të regjistruara nga agjenti.
 
@@ -146,7 +146,7 @@ Kthen të gjitha taksonomitë e personalizuara të regjistruara nga agjenti.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Çregjistron një taksonomi të personalizuar të regjistruar më parë nga agjenti.
 
@@ -160,11 +160,11 @@ Kthen të gjitha taksonomitë e personalizuara të regjistruara nga agjenti.
 
 ---
 
-## Sistemi i Dizajnit
+## Sistemi i Dizajnit {#design-system}
 
 Aftësitë e sistemit të dizajnit modifikojnë paraqitjen vizuale të faqes WordPress — nga CSS e personalizuar te modelet e blloqeve dhe logoja e faqes.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Shton CSS në `<head>` të faqes përmes `wp_add_inline_style`. CSS ruhet në opsionin `gratis_ai_agent_custom_css` dhe hiqet nga radha pastër kur aftësia rivendoset.
 
@@ -190,7 +190,7 @@ Shton CSS në `<head>` të faqes përmes `wp_add_inline_style`. CSS ruhet në op
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Regjistron një model blloku të ripërdorshëm në bibliotekën e modeleve të WordPress.
 
@@ -209,7 +209,7 @@ Regjistron një model blloku të ripërdorshëm në bibliotekën e modeleve të 
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Liston të gjitha modelet e blloqeve të regjistruara nga agjenti.
 
@@ -231,7 +231,7 @@ Liston të gjitha modelet e blloqeve të regjistruara nga agjenti.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Vendos logon e faqes WordPress në një ID bashkëngjitjeje të dhënë ose në një URL imazhi në distancë. Kur jepet një URL, imazhi shkarkohet dhe importohet në Media Library.
 
@@ -248,7 +248,7 @@ Duhet të jepet një nga `attachment_id` ose `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Zbaton një preset të emërtuar ngjyrash/tipografie në `theme.json` të temës aktive (ose `global-styles`). Preset-et janë paketa të kuruara që mirëmbahen nga ekipi i Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Zbaton një preset të emërtuar ngjyrash/tipografie në `theme.json` të temës
 
 ---
 
-## Stilet globale
+## Stilet globale {#global-styles}
 
 Aftësitë e Stileve globale lexojnë dhe shkruajnë vlera theme.json përmes WordPress Global Styles API, duke ndikuar në të gjitha blloqet dhe shabllonet në të gjithë faqen.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Kthen konfigurimin aktual të stileve globale.
 
@@ -291,7 +291,7 @@ Kthen konfigurimin aktual të stileve globale.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Përditëson një ose më shumë vlera në konfigurimin e stileve globale.
 
@@ -318,7 +318,7 @@ Përditëson një ose më shumë vlera në konfigurimin e stileve globale.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Rivendos të gjitha ndryshimet e stileve globale të zbatuara nga agenti, duke rikthyer parazgjedhjet e temës.
 
@@ -328,11 +328,11 @@ Rivendos të gjitha ndryshimet e stileve globale të zbatuara nga agenti, duke r
 
 ---
 
-## Menutë e navigimit
+## Menutë e navigimit {#navigation-menus}
 
 Aftësitë e Menuve të navigimit krijojnë dhe menaxhojnë menutë nav të WordPress dhe elementët e tyre.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Krijon një menu të re navigimi WordPress.
 
@@ -347,7 +347,7 @@ Krijon një menu të re navigimi WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Riemërton një menu ose e ricakton në një vendndodhje teme.
 
@@ -363,7 +363,7 @@ Riemërton një menu ose e ricakton në një vendndodhje teme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Shton një element në një menu ekzistuese navigimi.
 
@@ -383,7 +383,7 @@ Shton një element në një menu ekzistuese navigimi.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Heq një element nga një menu navigimi.
 
@@ -397,7 +397,7 @@ Heq një element nga një menu navigimi.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Liston të gjitha menutë e navigimit WordPress, përfshirë vendndodhjet e temës që u janë caktuar.
 
@@ -420,11 +420,11 @@ Liston të gjitha menutë e navigimit WordPress, përfshirë vendndodhjet e tem�
 
 ---
 
-## Menaxhimi i opsioneve
+## Menaxhimi i opsioneve {#options-management}
 
 Aftësitë e opsioneve lexojnë dhe shkruajnë opsione WordPress përmes `get_option` / `update_option`. Një listë bllokimi e integruar për siguri parandalon modifikimin aksidental të cilësimeve kritike.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Lexon një opsion WordPress.
 
@@ -440,7 +440,7 @@ Kthen një gabim nëse `option_name` është në listën e bllokimit të siguris
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Shkruan një opsion WordPress.
 
@@ -458,7 +458,7 @@ Kthen një gabim nëse `option_name` është në listën bllokuese të sigurisë
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Fshin një opsion WordPress.
 
@@ -474,7 +474,7 @@ Kthen një gabim nëse `option_name` është në listën bllokuese të sigurisë
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Liston opsionet WordPress që përputhen me një model.
 
@@ -498,11 +498,11 @@ Liston opsionet WordPress që përputhen me një model.
 
 ---
 
-## Menaxhimi i përmbajtjes
+## Menaxhimi i përmbajtjes {#content-management}
 
 Aftësitë e Menaxhimit të përmbajtjes krijojnë dhe redaktojnë postime dhe faqe WordPress. ID-të e postimeve kthehen që hapat pasues në plane me shumë aftësi të mund t’i referohen përmbajtjes së krijuar.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Krijon një postim, faqe ose hyrje të tipit të personalizuar të postimit në WordPress.
 
@@ -537,7 +537,7 @@ Krijon një postim, faqe ose hyrje të tipit të personalizuar të postimit në 
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Përditëson një postim ose faqe ekzistuese WordPress.
 
@@ -567,7 +567,7 @@ Përditëson një postim ose faqe ekzistuese WordPress.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Krijon shumë postime në një thirrje të vetme aftësie, duke reduktuar vajtje-ardhjet gjatë ndërtimit të site ose importimit masiv të përmbajtjes. Postimet krijohen me radhë; nëse njëri dështon, të tjerët vazhdojnë dhe dështimi raportohet në vargun e rezultateve.
 
@@ -619,7 +619,7 @@ Krijon shumë postime në një thirrje të vetme aftësie, duke reduktuar vajtje
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Cakton një imazh të veçuar (miniaturë postimi) për një postim ose faqe ekzistuese. Pranon një ID bashkëngjitjeje ekzistuese të Media Library ose një URL imazhi të largët; kur jepet një URL, imazhi shkarkohet dhe importohet automatikisht.
 
@@ -638,7 +638,7 @@ Duhet të jepet një nga `attachment_id` ose `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Krijon një formular kontakti duke përdorur plugin-in aktiv të formularëve (Contact Form 7, WPForms, Fluent Forms, ose Gravity Forms, në varësi të atij që është instaluar). Kthen një shortcode që mund të futet në çdo postim ose faqe.
 
@@ -691,11 +691,11 @@ Krijon një formular kontakti duke përdorur plugin-in aktiv të formularëve (C
 
 ---
 
-## Rishikim Vizual
+## Rishikim Vizual {#visual-review}
 
 Aftësitë e Rishikimit Vizual i lejojnë agjentit të kapë pamje ekrani të faqeve live dhe t’i analizojë ato, duke mundësuar rishikim autonom të dizajnit, krahasime para/pas dhe kontrolle të regresionit vizual pa kërkuar ndonjë zgjerim të shfletuesit.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Kap një pamje ekrani të një faqeje WordPress në një URL të caktuar duke përdorur një shfletues headless në anën e serverit. Imazhi ruhet në Media Library dhe kthehet një URL CDN.
 
@@ -724,7 +724,7 @@ Kap një pamje ekrani të një faqeje WordPress në një URL të caktuar duke p�
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Merr dy pamje ekrani dhe kthen një rezultat dallimi vizual plus një imazh dallimi që thekson zonat e ndryshuara. E dobishme për të konfirmuar se një ndryshim dizajni prodhoi rezultatin e pritur ose për të zbuluar regresione të paqëllimshme.
 
@@ -754,7 +754,7 @@ Një `diff_score` prej `0.0` do të thotë pa ndryshim të dukshëm; `1.0` do t�
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Kap një pamje ekrani të një faqeje dhe ia dërgon modelit gjuhësor për analizë vizuale. Kthen një vlerësim të strukturuar që mbulon strukturën, tipografinë, përdorimin e ngjyrave dhe shqetësimet e aksesueshmërisë.
 
@@ -785,11 +785,11 @@ Kap një pamje ekrani të një faqeje dhe ia dërgon modelit gjuhësor për anal
 
 ---
 
-## Aftësi të Instalueshme
+## Aftësi të Instalueshme {#installable-abilities}
 
 Regjistri i Aftësive të Instalueshme ju lejon ta zgjeroni agjentin me paketa shtesë aftësish të shpërndara si plugin-e WordPress. Çdo paketë regjistron një ose më shumë aftësi duke përdorur API-në standarde të aftësive.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Kthen katalogun e paketave të aftësive të disponueshme për instalim nga regjistri.
 
@@ -818,7 +818,7 @@ Kthen katalogun e paketave të aftësive të disponueshme për instalim nga regj
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Shkarkon dhe aktivizon një paketë aftësish nga regjistri.
 
@@ -832,7 +832,7 @@ Shkarkon dhe aktivizon një paketë aftësish nga regjistri.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Pyet regjistrin e aftësive për të gjetur plugin-in më të mirë për një rast përdorimi të përshkruar dhe, sipas dëshirës, e instalon atë.
 

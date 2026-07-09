@@ -3,13 +3,13 @@ title: Vytvorenie vlastnej integrácie registrátora
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Vytvorenie vlastnej integrácie registrátora
+# Vytvorenie vlastnej integrácie registrátora {#building-a-custom-registrar-integration}
 
 Doplnok Domain Seller používa vzor **Integration Registry**. Každý registrátor je PHP trieda, ktorá implementuje `Domain_Selling_Capability` a zaregistruje sa cez action hook `wu_domain_seller_register_capabilities`.
 
 Táto príručka ukazuje, ako pripojiť vlastného registrátora.
 
-## Rozhranie
+## Rozhranie {#the-interface}
 
 Vaša trieda musí implementovať `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` a rozširovať `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Voliteľné metódy
+### Voliteľné metódy {#optional-methods}
 
 Implementujte ich na sprístupnenie ďalších funkcií. Doplnok zisťuje podporu cez `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementujte ich na sprístupnenie ďalších funkcií. Doplnok zisťuje podpor
 | `get_epp_code(string $domain_name): array` | Prenos domény (odchádzajúci) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Prenos domény (prichádzajúci) |
 
-### Konvencia návratovej hodnoty
+### Konvencia návratovej hodnoty {#return-value-convention}
 
 Všetky metódy vracajú pole minimálne s kľúčom `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Registrácia vašej capability
+## Registrácia vašej capability {#registering-your-capability}
 
 Zaregistrujte svoju triedu pomocou action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Prvý argument pre `add_capability()` je **ID poskytovateľa** — slug malými 
 
 ---
 
-## Pridanie polí prihlasovacích údajov do sprievodcu
+## Pridanie polí prihlasovacích údajov do sprievodcu {#adding-credential-fields-to-the-wizard}
 
 Ak chcete adminom umožniť zadávať prihlasovacie údaje cez sprievodcu nastavením, zaregistrujte svoju integráciu:
 
@@ -137,7 +137,7 @@ Prihlasovacie údaje sa ukladajú ako sieťové možnosti pomocou ID polí ako k
 
 ---
 
-## Hooky pre akcie po registrácii
+## Hooky pre akcie po registrácii {#hooks-for-post-registration-actions}
 
 Použite tieto akcie na spúšťanie webhookov, provisioning, oznámení alebo aktualizácií CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logovanie
+## Logovanie {#logging}
 
 Zapisujte do logovacieho kanála špecifického pre vášho poskytovateľa pomocou `wu_log_add()`:
 

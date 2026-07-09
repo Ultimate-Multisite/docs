@@ -3,11 +3,11 @@ title: Tema-atsižvelgiant į įgūdžius
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Temas atsižiau
+# Temas atsižiau {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 įdaro naujas, automatiškai pritaikomi tema-atsižiavimo (theme-aware) įtraukimai, kurie automatine būdinga jūsų aktyviai naudojamajam WordPress temui. Šie įtraukimai suteikia specializuotą pagalbos ir galimybes, kurios yra atitinka jūsų temas architektūrą ir funkcijas.
 
-## Kas tai yra tema-atsižiavimo įtraukimai?
+## Kas tai yra tema-atsižiavimo įtraukimai? {#what-are-theme-aware-skills}
 
 Tema-atsižiavimo įtraukimai – tai pre-konfigūruoti žiniamos bazės ir įrankių rinkiniai, kuriuos AI asistentas automatiškai pasirinkia, atsižvelgiant į aktyviai naudojamą WordPress temą jūsų svetainėje. Kai keičiate temas, asistento turimos įtraukimai automatiškai atnaujinasi – nenaudojami manulys konfigūracijos.
 
@@ -18,9 +18,9 @@ Kiek kiekvienas įtraukimas apima:
 - **Personalizavimo pavyzdžius** – kodą fragmentus ir konfigūracijos šablonus dažniems uždupstams
 - **Geriausias praktikos** – rekomendacijos apie temas architektūrą ir veiklos procesą
 
-## Naudojami tema-atsižiavimo įtraukimai
+## Naudojami tema-atsižiavimo įtraukimai {#available-theme-aware-skills}
 
-### Blokų temai (Block Themes)
+### Blokų temai (Block Themes) {#block-themes}
 
 **Taikiama:** Temoms, kurios naudo WordPress blokų pagrindu (Full Site Editing).
 
@@ -34,7 +34,7 @@ Blokų temų įtraukimas suteikia pagalbos:
 
 **Automatiniai aktyvuojami, kai:** Jūsų aktyviai naudojama tema yra blokų tema (palaikoma `block-templates` funkcija).
 
-### Klasikiniai temai (Classic Themes)
+### Klasikiniai temai (Classic Themes) {#classic-themes}
 
 **Taikiama:** Tradicinė WordPress temoms, kurios naudo PHP šablonus ir klasikinį redaktorių.
 
@@ -48,7 +48,7 @@ Klasikinio temų įtraukimas suteikia pagalbos:
 
 **Automatiniai aktyvi:** Jūsų aktyviai naudojama klasikinis (ne blokas) tema.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Taikiama:** Svetai, kuriuose naudojamas Kadence Blocks plokaliui pagamintas dizainui.
 
@@ -62,7 +62,7 @@ Kadence Blocks įgūdžius pateikia nurodymus apie:
 
 **Automatiniai aktyvi:** Kadence Blocks plokaliui yra jūsų svetainėje.
 
-### Kadence Tema
+### Kadence Tema {#kadence-theme}
 
 **Taikiama:** Svetai, kuriuose naudojama Kadence tema blokaliui pagamintas dizainui ir personalizavimui.
 
@@ -76,15 +76,15 @@ Kadence Theme įgūdžiai pateikia nurodymus apie:
 
 **Automatiniai aktyvi:** Kadence tema yra jūsų aktyviai naudojama tema.
 
-## Kaip pasirinkti įgūdžius
+## Kaip pasirinkti įgūdžius {#how-skills-are-selected}
 
 Asistentu automatiškai pritikia jūsų aktyviai naudojamą temą ir įrengtus plokalius kiekviename žinutėje. Jei yra sujungęs šablonų sąmoningas įgūdžius, jis automatiškai įkeliama asistento kontekste. Jūs ne needete nustatyti ar pakeisti įgūdžių rankiniu būdu.
 
-### Dažnai naudojami įgūdžiai
+### Dažnai naudojami įgūdžiai {#multiple-skills}
 
 Jei jūsų svetainėje taikoma vienu metu keletas įgūdžių (pvz., jei turite aktyvūs tiek Kadence Blocks, tiek Kadence Theme), asistentas turės prieigą visoms pritaikytoms įgūdžiams ir gali suparatyti nurodytus nurodyklėmis iš kiekvieno.
 
-### Tema keitimas
+### Tema keitimas {#switching-themes}
 
 Kai pakeičiate aktyvivą temą, asistento prieinami įgūdžiai automatiškai atnaujinasi kitame pranešime. Pavyzdžiui:
 
@@ -92,11 +92,11 @@ Kai pakeičiate aktyvivą temą, asistento prieinami įgūdžiai automatiškai a
 2. Pakeičiate į klasikinę temą.
 3. Kitame pranešime į automatiškai įkeliama įgoda **Classic Themes**, o įgoda **Block Themes** nebus daugiau tersedia.
 
-## Temų prieinamų įgūdžių naudojimas
+## Temų prieinamų įgūdžių naudojimas {#using-theme-aware-skills}
 
 Kad naudoti temai prieinamą įgūdį, viskas, ką norite padaryti, pateiktu čate. Asistentas automatiškai suparats tinkamą nurodyklę atitinkamajam įgūdžiai.
 
-### Pavyzdys nurodyklėms
+### Pavyzdys nurodyklėms {#example-prompts}
 
 **Block Themes:**
 > "Sukurti hero sekciją su galono vaizdu aktyvumo vaizdu ir centrinčiu tekstu naudojant blokų šaltinius."

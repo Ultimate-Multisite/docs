@@ -4,11 +4,11 @@ title: Filtru - wu_membership_calculated_date_expiration
 sidebar_label: wu_membership_calculated_date_expiration
 _i18n_hash: 92e1113e33a3b69e4fc3d07d6dcd8d69
 ---
-# Filtru: wu_membership_calculated_date_expiration
+# Filtru: wu_membership_calculated_date_expiration {#filter-wumembershipcalculateddateexpiration}
 
 Jiffiltra d-data ta' skadenza kkalkulata.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Jiffiltra d-data ta' skadenza kkalkulata.
 | $membership_id | `int` | ID tas-sħubija. |
 | $membership | `\WP_Ultimo\Models\Membership` | Oġġett tas-sħubija. |
 
-### Minn
+### Minn {#since}
 
 - 2.0
-### Sors
+### Sors {#source}
 
 Definit f'[`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L1309) fil-linja 1309

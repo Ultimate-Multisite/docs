@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Onye Mwube Saịtị AI
+# Onye Mwube Saịtị AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Ihe achọrọ
+## Ihe achọrọ {#requirements}
 
 - WordPress 5.3 ma ọ bụ karịa
 - PHP 7.4 ma ọ bụ karịa
 - Multisite Ultimate plugin (na-arụ ọrụ)
 
-## Ntinye
+## Ntinye {#installation}
 
 1. Bulite faịlụ addon ndị ahụ n’akwụkwọ ndekọ `/wp-content/plugins/` gị
 2. Mee ka plugin rụọ ọrụ site na menu 'Plugins' na WordPress
 3. Hazie ntọala addon n’akaụntụ nchịkwa netwọkụ
 
-## Mmepe
+## Mmepe {#development}
 
-### Ntọlite
+### Ntọlite {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Nhazi oru ngo
+### Nhazi oru ngo {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Iwu ime ka code bụrụ nke ọgbara ọhụrụ
 ```
 
-### Nnwale
+### Nnwale {#testing}
 
 Addon a gụnyere usoro nnwale zuru oke:
 
@@ -79,44 +79,44 @@ Addon a gụnyere usoro nnwale zuru oke:
 - **Mkpuchi Nnwale**: Ahaziri ya iji soro mkpuchi code
 - **Nnwale Multisite**: Nnwale na-agba n’ime gburugburu multisite
 
-### Ụkpụrụ Code
+### Ụkpụrụ Code {#code-standards}
 
 - **Ụkpụrụ Ide Code WordPress**: A na-amanye ya site na PHPCS
 - **Ndakọrịta PHP 7.4+**: A na-akwado atụmatụ PHP ọgbara ọhụrụ
 - **Nyocha Static**: Njikọ PHPStan maka ịlele ụdị
 - **Ime ka Code bụrụ nke Ọgbara Ọhụrụ**: Iwu Rector maka mmelite PHP
 
-### Usoro Mwube
+### Usoro Mwube {#build-system}
 
 - **Nhazi Akụrụngwa**: Ibelata nha faịlụ CSS/JS
 - **Ntụgharị Asụsụ**: Mmepụta faịlụ POT
 - **Mbukota**: Ịmepụta archive maka nkesa
 - **Ụdị Mmepe**: Akụrụngwa a na-ebelataghị maka debugging
 
-## Nhazi
+## Nhazi {#configuration}
 
 Addon a na-akwado nhọrọ nhazi dị iche iche a na-enweta site na interface nchịkwa netwọkụ.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - A na-akpọ ya mgbe mmalite addon gachara
 - `ultimate-multisite-ai-site-builder_loaded` - A na-akpọ ya mgbe ebuchara faịlụ addon niile
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Gbanwee ntọala addon
 - `ultimate-multisite-ai-site-builder_enabled` - Dochie ọnọdụ ime ka addon rụọ ọrụ/kwụsị ọrụ
 
-## Ikikere
+## Ikikere {#license}
 
 Addon a nwere ikikere n’okpuru GPL v3 ma ọ bụ nke ọzọ gasịrị.
 
-## Nkwado
+## Nkwado {#support}
 
 Maka nkwado na akwụkwọ nduzi, gaa na [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): gbanwee prefix ka ọ bụrụ ultimate-multisite; melite text domain; bulie version.
 

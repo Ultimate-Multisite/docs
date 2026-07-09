@@ -3,9 +3,9 @@ title: Ŝanĝoprotokolo de Ultimate AI Connector por WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ŝanĝoprotokolo de Ultimate AI Connector por WebLLM
+# Ŝanĝoprotokolo de Ultimate AI Connector por WebLLM {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versio 1.1.0 — Eldonita je 2026-04-09
+## Versio 1.1.0 — Eldonita je 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Nova: Flosanta babilfenestraĵo kun admin-bar stata indikilo — ajna ensalutinta uzanto povas peti la retumil-flankan LLM rekte de la antaŭa flanko.
 * Nova: SharedWorker rultempo — la MLC-motoro nun ruliĝas en SharedWorker, tiel ke pluraj langetoj kunhavas unu GPU-sesion anstataŭ konkuri pri ĝi.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Riparo: Konekti WebLLM al la wpai_preferred_text_models filtrilo, tiel ke la AI Experiments trajto direktiĝas al la retumila motoro kiam modelo estas agordita.
 * Plibonigita: Kaŝmemora rompo, enhava normaligo, kaj aparatar-referencaj riparoj aperintaj dum fin-al-fina testado.
 
-## Versio 1.0.0 — Komenca Eldono
+## Versio 1.0.0 — Komenca Eldono {#version-100--initial-release}

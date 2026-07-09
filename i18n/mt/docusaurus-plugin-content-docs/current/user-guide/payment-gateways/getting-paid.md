@@ -3,13 +3,13 @@ title: Titħallas
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kif Titħallas (v2)
+# Kif Titħallas (v2) {#getting-paid-v2}
 
 _**NOTA IMPORTANTI: Dan l-artiklu jirreferi għal Ultimate Multisite verżjoni 2.x.**_
 
 Ultimate Multisite għandu sistema integrata ta' sħubija u fatturazzjoni. Biex is-sistema ta' fatturazzjoni tagħna taħdem, integrajna l-aktar gateways tal-ħlas komuni użati fil-kummerċ elettroniku. Il-gateways tal-ħlas predefiniti f'Ultimate Multisite huma _Stripe_ , _PayPal_ , u Ħlas Manwali. Tista' wkoll tuża _WooCommerce_ , _GoCardless_ u _Payfast_ biex tirċievi ħlasijiet billi tinstalla l-add-ons rispettivi tagħhom.
 
-## Settings Bażiċi
+## Settings Bażiċi {#basic-settings}
 
 Tista' tikkonfigura kwalunkwe minn dawn il-gateways tal-ħlas taħt is-settings tal-ħlas ta' Ultimate Multisite. Tista' ssibu billi tmur għal **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Dan jipprevjeni sħubija milli tidher li se tiġġedded awtomatikament meta l-ga
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Fejn issib il-gateways:
+## Fejn issib il-gateways: {#where-to-find-the-gateways}
 
 Tista' tissettja l-gateways tal-ħlas fl-istess paġna ( **Ultimate Multisite > Settings > Payments**). Eżatt taħt **gateways tal-ħlas attivi** , tkun tista' tara: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ u _Manual_.
 
@@ -67,7 +67,7 @@ Hawnhekk hemm ukoll dehra sħiħa tas-settings tal-gateways tal-ħlas:
 
 Issa, jekk trid tuża _WooCommerce_ , _GoCardless_ jew _Payfast_ bħala l-gateway tal-ħlas tiegħek, ikollok bżonn **tinstalla u tikkonfigura l-add-ons tagħhom**.
 
-### Kif tinstalla l-add-on ta' WooCommerce:
+### Kif tinstalla l-add-on ta' WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Nifhmu li _Stripe_ u _PayPal_ mhumiex disponibbli f'xi pajjiżi, li jillimita jew ixekkel lill-utenti ta' Ultimate Multisite milli jużaw il-plugin tagħna b'mod effettiv. Għalhekk ħloqna add-on biex nintegraw _WooCommerce,_ li huwa plugin tal-kummerċ elettroniku popolari ħafna. Żviluppaturi madwar id-dinja ħolqu add-ons biex jintegraw gateways tal-ħlas differenti miegħu. Ħadna vantaġġ minn dan biex nespandu l-gateways tal-ħlas li tista' tuża mas-sistema ta' fatturazzjoni ta' Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Wara li tattivaha, jekk għad m’għandekx il-plugin WooCommerce installat u at
 
 Biex taqra aktar dwar l-estensjoni ta' integrazzjoni WooCommerce, **ikklikkja hawn**.
 
-### Kif tinstalla l-estensjoni GoCardless:
+### Kif tinstalla l-estensjoni GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Il-passi biex tinstalla l-estensjoni _GoCardless_ huma kważi l-istess bħal tal-estensjoni _WooCommerce_. Jekk jogħġbok mur fil-paġna tal-estensjonijiet u agħżel l-estensjoni **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Wara li l-installazzjoni tkun lesta, tiġi ridirezzjonat lejn il-paġna tal-plug
 
 Biex titgħallem kif tibda bil-gateway _GoCardless_, **aqra dan l-artiklu**.
 
-### Kif tinstalla l-estensjoni Payfast:
+### Kif tinstalla l-estensjoni Payfast: {#how-to-install-the-payfast-add-on}
 
 Mur fil-paġna tal-estensjonijiet u agħżel l-estensjoni **Ultimate Multisite: Payfast Gateway**.
 

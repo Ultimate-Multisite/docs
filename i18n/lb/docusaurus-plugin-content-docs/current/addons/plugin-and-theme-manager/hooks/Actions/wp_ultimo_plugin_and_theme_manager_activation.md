@@ -4,13 +4,13 @@ title: Aktioun - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# Aktioun: wp_ultimo_plugin_and_theme_manager_activation
+# Aktioun: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
 
 Erlaabt aneren Deeler vun der Erweiderung, hir Routinne fir d'Aktivéierung unzehänken
 
-### Zanter
+### Zanter {#since}
 
 - 1.9.6
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/inc/class-hooks.php#L83) op Zeil 83

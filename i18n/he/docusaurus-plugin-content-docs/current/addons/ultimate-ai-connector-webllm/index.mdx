@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 ה-Ultimate AI Connector for WebLLM מביא יכולות הסקה (Inference) של AI ישירות מהדפדפן לרשת ה-multisite של WordPress שלך. הוא מפעיל מודלי שפה גדולים (LLMs) כולו בדפדפן באמצעות WebLLM ומנוע MLC — אין צורך במפתחות API, אין קריאות חיצוניות, ואין נתונים שעוזבים את המכשיר של המשתמש.
 
-## תכונות עיקריות
+## תכונות עיקריות {#key-features}
 
 - **הסקה בצד הדפדפן (Browser-side inference)**: ה-LLM פועל באופן מקומי בדפדפן של המבקר באמצעות WebLLM/MLC — לא נדרש GPU של שרת.
 - **ווידג'ט צ'אט צף (Floating chat widget)**: משתמשים מחוברים יכולים להזין הנחיות (Prompts) ל-LLM בצד הדפדפן ישירות מהצד הקדמי (Front end).
@@ -22,28 +22,28 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **IndexedDB cache**: הורדות משקלי המודל שורדות מהפניות CDN ששוברות את נתיב ה-Cache API הדיפולטיבי.
 - **אינטגרציית wpai filter**: מתחבר למסנן `wpai_preferred_text_models` כך שפיצ'ר הניסויים של AI ינתב למנוע בדפדפן כאשר הוא מוגדר.
 
-## דרישות
+## דרישות {#requirements}
 
 - WordPress 5.3 ומעלה
 - PHP 7.4 ומעלה
 - תוסף Ultimate Multisite (פעיל)
 - דפדפן עם תמיכה ב-WebGPU (Chrome 113+, Edge 113+, או Firefox Nightly עם WebGPU מופעל)
 
-## התקנה
+## התקנה {#installation}
 
 1. העלה את קבצי התוסף לתיקייה `/wp-content/plugins/` שלך.
 2. הפעל את התוסף דרך תפריט 'Plugins' ב-WordPress.
 3. נווט אל **Ultimate Multisite → AI Connector** כדי להגדיר את התוסף.
 
-## וידג'ט צ'אט צף
+## וידג'ט צ'אט צף {#floating-chat-widget}
 
 ווידג'ט הצ'אט הצף מאפשר לכל משתמש מחובר ליצור אינטראקציה עם ה-LLM בצד הדפדפן ישירות מהצד הקדמי שלך, מבלי לעזוב את הדף שעליו הוא נמצא.
 
-### מה הוא עושה
+### מה הוא עושה {#what-it-does}
 
 כאשר הוא מופעל, אייקון צ'אט מופיע בפינה של כל דף קדמי עבור משתמשים מחוברים. לחיצה על האייקון פותחת פאנל צ'אט שבו המשתמש יכול להקליד הנחיות ולקבל תגובות ממודל WebLLM הפועל מקומית. מכיוון שהמודל פועל כולו בדפדפן, התגובות פרטיות ואינן כוללות עיבוד בצד השרת.
 
-### מצביע סטטוס בסרגל המנהל
+### מצביע סטטוס בסרגל המנהל {#admin-bar-status-indicator}
 
 סרגל המנהל של WordPress כולל מצביע סטטוס שמציג את המצב הנוכחי של מנוע WebLLM:
 
@@ -56,7 +56,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 המצביע מתעדכן בזמן אמת מבלי לדרוש טעינת דף מחדש.
 
-### כיצד להפעיל או לכבות את הווידג'ט
+### כיצד להפעיל או לכבות את הווידג'ט {#how-to-enable-or-disable-the-widget}
 
 1. עבור אל **Ultimate Multisite → AI Connector** במנהל הרשת.
 2. מצא את פאנל **Connector**.
@@ -65,17 +65,17 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 ניתן גם להפעיל או לכבות את הווידג'ט לפי אתר, מהמנהל של האתר עצמו, אם מנהל הרשת העניק את היכולת הזו.
 
-## הגדרות הווידג'ט
+## הגדרות הווידג'ט {#widget-settings}
 
 פאנל ה-Connector ב-**Ultimate Multisite → AI Connector** מכיל את ההגדרות הבאות עבור וידג'ט הצ'אט הצף:
 
-### הפעלת וידג'ט צ'אט צף
+### הפעלת וידג'ט צ'אט צף {#enable-floating-chat-widget}
 
 מפעיל או מכבה את וידג'ט הצ'אט עבור כל הרשת. כאשר הוא מושבת, הווידג'ט אינו מופיע באף דף קדמי, ללא קשר לתפקיד המשתמש.
 
 **ברירת מחדל:** כבוי
 
-### התנהגות ה-Auto-Prompt
+### התנהגות ה-Auto-Prompt {#auto-prompt-behaviour}
 
 שולט אם וידג'ט הצ'אט שולח אוטומטית הנחיה כאשר משתמש פותח אותו.
 
@@ -93,7 +93,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 **ברירת מחדל:** כבוי
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 גרסה 1.1.0 מציגה SharedWorker runtime עבור מנוע MLC. בעבר, כל לשונית בדפדפן שהשתמשה ב-WebLLM טענה מופע משלה של המודל, וניצחה על משאבי ה-GPU וגרמה לבעיות ביצועים במכשירים עם זיכרון VRAM מוגבל.
 
@@ -105,29 +105,29 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 ה-SharedWorker שקוף למשתמשים. מצביע הסטטוס בסרגל המנהל תמיד משקף את המצב של המנוע המשותף, ולא את הלשונית הבודדת.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 התוסף מתקין middleware בשם `apiFetch` שחווסם בקשות WordPress REST API שמתאימות לתבנית של AI Client SDK. במקום לבצע בקשת HTTP של מעגל הלוך ושוב לשרת, בקשות אלו מנותבות ישירות ל-WebLLM broker המקומי הפועל ב-SharedWorker.
 
 משמעות הדבר היא שתוספים ואתרי תבניות (Themes) המשתמשים ב-API הסטנדרטי של WordPress `apiFetch` כדי לקרוא לנקודות קצה (endpoints) של AI ייהנו אוטומטית מהמודל בצד הדפדפן כשהוא זמין, ללא צורך בשינויים בקוד.
 
-## Hooks ו-Filters
+## Hooks ו-Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — נרשם את מנוע הדפדפן WebLLM כמודל טקסט מועדף. התוסף מתחבר למסנן זה אוטומטית כאשר המנוע מוגדר וזמין.
 - `ultimate_webllm_widget_enabled` — דריסה של מצב הפעלת הווידג'ט עבור משתמש או הקשר ספציפי. החזר `true` או `false`.
 - `ultimate_webllm_auto_prompt` — שינוי טקסט ה-auto-prompt לפני שהוא נשלח לווידג'ט. מקבל את מחרוזת ההנחיה ואת אובייקט ה-`WP_Post` הנוכחי.
 
-## פתרון תקלות
+## פתרון תקלות {#troubleshooting}
 
-### וידג'ט הצ'אט אינו מופיע
+### וידג'ט הצ'אט אינו מופיע {#the-chat-widget-does-not-appear}
 
 - ודא שהמשתמש מחובר — הווידג'ט מוצג רק למשתמשים מאומתים.
 - ודא ש**Enable floating chat widget** מופעל בפאנל ה-Connector.
 - ודא שהדפדפן של המשתמש תומך ב-WebGPU (ראה דרישות לעיל).
 
-### מצביע סרגל המנהל מציג "Error"
+### מצביע סרגל המנהל מציג "Error" {#the-admin-bar-indicator-shows-error}
 
 פתח את קונסולת המפתחים של הדפדפן (F12) וחפש שגיאות הקשורות ל-WebLLM. סיבות נפוצות:
 
@@ -135,10 +135,10 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - הורדת משקלי המודל נכשלה — בדוק את קישוריות הרשת ונסה לנקות את ה-IndexedDB cache בכלי המפתחים של הדפדפן (Application → IndexedDB).
 - תוסף דפדפן חוסם את ה-SharedWorker.
 
-### משקלי המודל מורידים בכל פעם
+### משקלי המודל מורידים בכל פעם {#model-weights-download-every-time}
 
 התוסף משתמש ב-IndexedDB כבסיס נתונים (cache backend) כדי להבטיח שמשקלי המודל שורדים מהפניות CDN. אם המשקלים מורידים מחדש בכל ביקור, ודא ש-IndexedDB אינו מנוקה על ידי הגדרת פרטיות או תוסף דפדפן.
 
-## יומן שינויים
+## יומן שינויים {#changelog}
 
 ראה [Changelog](./changelog) עבור היסטוריית הגרסאות המלאה.

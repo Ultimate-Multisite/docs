@@ -3,11 +3,11 @@ title: Altnivelaj kodekzemploj
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Altnivelaj Kodaj Ekzemploj
+# Altnivelaj Kodaj Ekzemploj {#advanced-code-examples}
 
 Ĉi tiuj ekzemploj demonstras altnivelajn integrigajn ŝablonojn kun Ultimate Multisite.
 
-## Dinamika Prezmotoro
+## Dinamika Prezmotoro {#dynamic-pricing-engine}
 
 Regul-bazita prezmotoro, kiu aplikas kvantajn, lojalecajn kaj laŭsezonajn rabatojn:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Altnivela Reteja Proviziado
+## Altnivela Reteja Proviziado {#advanced-site-provisioning}
 
 Aŭtomate agordi novajn retejojn kun kromprogramoj, SSL, CDN, sekurkopioj kaj monitorado surbaze de planaj funkcioj:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Propra Sistemo de Limigoj
+## Propra Sistemo de Limigoj {#custom-limitations-system}
 
 Spuri kaj devigi rimedajn limojn kun uzadaj avertoj:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atoma Nombrilo kun `increment_item()`
+## BerlinDB Atoma Nombrilo kun `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 aldonis metodon `increment_item()` al la BerlinDB `Query` klaso. Uzu ĝin por fari sekurajn, atomajn pliigojn ĉe nombraj kolumnoj sen vetkuraj kondiĉoj de legado-modifo-skribo — utila por nombriloj, uzokvotoj, kaj kontroloj de limigo de ofteco, kiuj ruliĝas sub samtempaj petoj.
 
-### Metoda subskribo
+### Metoda subskribo {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 aldonis metodon `increment_item()` al la BerlinDB `Que
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Baza uzo
+### Baza uzo {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Spurado de API-uzo laŭ membreco
+### Spurado de API-uzo laŭ membreco {#tracking-api-usage-per-membership}
 
 Praktika ŝablono por devigi API-limojn de ofteco laŭ membreco:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Kial `increment_item()` anstataŭ `update_item()`
+### Kial `increment_item()` anstataŭ `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Naiva aliro de legado-modifo-skribo estas nesekura sub samtempaj petoj:
 

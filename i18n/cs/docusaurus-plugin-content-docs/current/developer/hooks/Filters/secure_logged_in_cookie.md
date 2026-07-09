@@ -4,11 +4,11 @@ title: Filtrační metoda - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie
+# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtruje, zda by měl cookie přihlášeného uživatele být odesílán pouze přes HTTPS.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtruje, zda by měl cookie přihlášeného uživatele být odesílán pouze p
 | $user_id | `int` | ID uživatele. |
 | $secure | `bool` | Zda by měl cookie autentizace být odesílán pouze přes HTTPS. |
 
-### Od verze
+### Od verze {#since}
 
 - 3.1.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) na řádku 91

@@ -3,19 +3,19 @@ title: '13 pamoka: mastelio didinimas'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# 13 pamoka: Mastelio didinimas
+# 13 pamoka: Mastelio didinimas {#lesson-13-scaling-up}
 
 Turite veikiančią platformą su mokančiais klientais. Šioje pamokoje aptariama, kaip iš nedidelės veiklos išaugti į tvarų verslą -- didinti infrastruktūros mastelį, automatizuoti operacijas ir didinti pajamas iš vieno kliento.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite veikia, klientai registruojasi, o jūs vykdote kasdienes operacijas. Dabar sutelkiame dėmesį į augimą.
 
-## Žinokite savo skaičius
+## Žinokite savo skaičius {#know-your-numbers}
 
 Prieš didindami mastelį, supraskite, kur esate:
 
-### Pagrindiniai rodikliai
+### Pagrindiniai rodikliai {#key-metrics}
 
 - **MRR (mėnesinės pasikartojančios pajamos)**: Bendros mėnesinės prenumeratų pajamos
 - **Klientų skaičius**: Bendras aktyvių prenumeratorių skaičius
@@ -24,7 +24,7 @@ Prieš didindami mastelį, supraskite, kur esate:
 - **LTV (viso laikotarpio vertė)**: Vidutinės pajamos iš kliento per visą jo prenumeratos laikotarpį
 - **CAC (kliento įsigijimo kaina)**: Vidutinė vieno kliento pritraukimo kaina
 
-### Pavyzdys: FitSite su 50 klientų
+### Pavyzdys: FitSite su 50 klientų {#example-fitsite-at-50-customers}
 
 | Rodiklis | Vertė |
 |--------|-------|
@@ -36,9 +36,9 @@ Prieš didindami mastelį, supraskite, kur esate:
 
 Šie skaičiai parodo, į ką sutelkti dėmesį. Didelis nubyrėjimas? Gerinkite išlaikymą. Mažas ARPU? Skatinkite atnaujinimus. Didelis CAC? Optimizuokite pritraukimo kanalus.
 
-## Infrastruktūros mastelio didinimas
+## Infrastruktūros mastelio didinimas {#scaling-infrastructure}
 
-### Kada didinti mastelį
+### Kada didinti mastelį {#when-to-scale}
 
 Didinkite hostingo mastelį, kai:
 
@@ -47,7 +47,7 @@ Didinkite hostingo mastelį, kai:
 - Artėjate prie 100+ aktyvių svetainių
 - Daugėja klientų skundų dėl greičio
 
-### Kaip didinti mastelį
+### Kaip didinti mastelį {#how-to-scale}
 
 - **Vertikalus mastelio didinimas**: Atnaujinkite į didesnį serverį (daugiau CPU, RAM)
 - **Podėlio sluoksniai**: Pridėkite Redis/Memcached objektų podėliui, puslapių podėlį statiniam turiniui
@@ -55,7 +55,7 @@ Didinkite hostingo mastelį, kai:
 - **Duomenų bazės optimizavimas**: Tinklui augant, duomenų bazės užklausos lėtėja. Optimizuokite lenteles, pridėkite indeksų, apsvarstykite atskirą duomenų bazės serverį.
 - **Atskirkite atsakomybes**: Perkelkite medijos saugojimą į objektų saugyklą (S3 suderinamą), el. paštą perduokite transakcinio el. pašto paslaugai
 
-### Hostingo migracija
+### Hostingo migracija {#hosting-migration}
 
 Jei dabartinis hostingas nebegali toliau didinti mastelio, suplanuokite migraciją:
 
@@ -65,11 +65,11 @@ Jei dabartinis hostingas nebegali toliau didinti mastelio, suplanuokite migracij
 4. Iš anksto atnaujinkite DNS su minimaliu TTL
 5. Patikrinkite, ar po migracijos viskas veikia
 
-## Operacijų automatizavimas
+## Operacijų automatizavimas {#automating-operations}
 
 Augant rankiniai procesai tampa kliūtimis. Automatizuokite, ką galite:
 
-### Webhooks ir Zapier
+### Webhooks ir Zapier {#webhooks-and-zapier}
 
 Naudokite [Webhooks](/user-guide/integrations/webhooks) arba [Zapier](/user-guide/integrations/zapier), kad automatizuotumėte:
 
@@ -78,7 +78,7 @@ Naudokite [Webhooks](/user-guide/integrations/webhooks) arba [Zapier](/user-guid
 - **Mokėjimų nesėkmės** → įspėjimas jūsų stebėsenos įrankyje
 - **Planų atnaujinimai** → sveikinimo el. laiškas su naujų funkcijų gidu
 
-### El. pašto automatizavimas
+### El. pašto automatizavimas {#email-automation}
 
 Pereikite nuo rankinių el. laiškų prie automatizuotų sekų:
 
@@ -87,30 +87,30 @@ Pereikite nuo rankinių el. laiškų prie automatizuotų sekų:
 - Atnaujinimo raginimai, kai klientai artėja prie plano limitų
 - Pratęsimo priminimai metiniams prenumeratoriams
 
-### Palaikymo automatizavimas
+### Palaikymo automatizavimas {#support-automation}
 
 - **Paruošti atsakymai** dažniems klausimams
 - **Automatiniai atsakymai**, patvirtinantys palaikymo užklausų gavimą
 - **Žinių bazės pasiūlymai**, kai klientai pateikia užklausas, atitinkančias esamus straipsnius
 
-## Pajamų didinimas
+## Pajamų didinimas {#increasing-revenue}
 
 Augimas reiškia ne tik daugiau klientų. Tai taip pat reiškia daugiau pajamų iš vieno kliento.
 
-### Pardavimas esamiems klientams brangesnių pasiūlymų
+### Pardavimas esamiems klientams brangesnių pasiūlymų {#upselling-existing-customers}
 
 - **Planų atnaujinimai**: Tikslinės kampanijos, rodančios Augimo/Pro funkcijas Pradinio plano klientams
 - **Papildomi pasiūlymai užsakymo metu**: Reklamuokite papildomus produktus esamiems klientams el. paštu
 - **Perėjimas prie metinio plano**: Pasiūlykite mėnesiniams klientams nuolaidą pereiti prie metinio atsiskaitymo
 
-### Nauji pajamų srautai
+### Nauji pajamų srautai {#new-revenue-streams}
 
 - **Paruošimas už klientą**: Imkite papildomą mokestį už kliento svetainės paruošimą ir pritaikymą jam
 - **Individualaus dizaino paslaugos**: Siūlykite individualius dizaino darbus kaip šablono priedą
 - **Mokymų sesijos**: Mokami individualūs pristatymai klientams, kurie nori praktinės pagalbos
 - **Premium pluginai**: Siūlykite konkrečiai nišai skirtus premium pluginus kaip mokamus priedus (pvz., fitneso užsiėmimų rezervavimo valdiklį)
 
-### Kainų didinimas
+### Kainų didinimas {#raising-prices}
 
 Kai jūsų platforma bręsta ir suteikia daugiau vertės:
 
@@ -118,7 +118,7 @@ Kai jūsų platforma bręsta ir suteikia daugiau vertės:
 - Pakelkite kainas naujoms registracijoms
 - Pagrįskite padidinimus naujomis funkcijomis ir patobulinimais
 
-## Komandos kūrimas
+## Komandos kūrimas {#building-a-team}
 
 Tam tikru metu nebegalėsite visko daryti vieni. Dažni pirmieji samdiniai:
 
@@ -128,7 +128,7 @@ Tam tikru metu nebegalėsite visko daryti vieni. Dažni pirmieji samdiniai:
 
 Jums nebūtini darbuotojai. Rangovai ir laisvai samdomi specialistai puikiai tinka platformos verslui.
 
-## Augimo etapai
+## Augimo etapai {#growth-milestones}
 
 | Etapas | Apytikslis MRR | Dėmesio sritis |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Jums nebūtini darbuotojai. Rangovai ir laisvai samdomi specialistai puikiai tin
 | 250-500 klientų | $25,000-$50,000 | Komandos kūrimas, nauji pajamų srautai, premium funkcijos |
 | 500+ klientų | $50,000+ | Platformos branda, gretimos nišos, galimas pasitraukimas |
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Rodiklių sistemą**, kad suprastumėte verslo būklę
 - **Infrastruktūros mastelio didinimo planą**, skirtą augti nuo dešimčių iki šimtų svetainių

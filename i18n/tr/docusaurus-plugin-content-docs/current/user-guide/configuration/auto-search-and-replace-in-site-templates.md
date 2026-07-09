@@ -3,7 +3,7 @@ title: Site Şablonlarında Otomatik Ara ve Değiştir
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Site Şablonlarında Otomatik Arama ve Değiştirme (v2)
+# Site Şablonlarında Otomatik Arama ve Değiştirme (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Bu eğitim WP UItimo version 2.x gerektirir.**_
 
@@ -17,7 +17,7 @@ Müşteriniz daha sonra kayıt sırasında bu alanı doldurabilir.
 
 Ultimate Multisite daha sonra yer tutucuları müşteri tarafından sağlanan verilerle otomatik olarak değiştirir.
 
-## **"yer tutucularla dolu şablon" sorununu çözme**
+## **"yer tutucularla dolu şablon" sorununu çözme** {#solving-the-template-full-of-placeholders-problem}
 
 Bunların hepsi harika, ancak çirkin bir sorunla karşılaşırız: artık müşterilerimiz tarafından ziyaret edilebilen site şablonlarımız, pek bir şey anlatmayan çirkin yer tutucularla doludur.
 

@@ -3,7 +3,7 @@ title: Webhook
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Pandangan Pertama tentang Webhooks (v2)
+# Pandangan Pertama tentang Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**PERHATIAN: Perhatikan bahwa fitur atau artikel ini ditujukan untuk pengguna tingkat lanjut.**_
 
@@ -11,7 +11,7 @@ Sebuah **webhook** adalah cara bagi sebuah aplikasi atau perangkat lunak seperti
 
 Ini berguna jika Anda perlu mengintegrasikan atau meneruskan data tertentu dari Ultimate Multisite ke CRM atau sistem lain setiap kali sebuah event dipicu. Misalnya, Anda perlu mengirimkan nama dan alamat email pengguna ke mailing list setiap kali Account pengguna baru dibuat.
 
-## Cara membuat webhook
+## Cara membuat webhook {#how-to-create-a-webhook}
 
 Untuk membuat webhook, buka Dashboard admin jaringan Anda. Klik **Ultimate Multisite > Webhooks > Add New Webhook.**
 

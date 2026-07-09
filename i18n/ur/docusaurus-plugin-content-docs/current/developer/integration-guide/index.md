@@ -3,13 +3,13 @@ title: انضمام کی رہنمائی
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# انضمام گائیڈ
+# انضمام گائیڈ {#integration-guide}
 
 یہ گائیڈ Ultimate Multisite کے ساتھ عام انضمام کے نمونوں کا احاطہ کرتی ہے، بشمول بیرونی سروسز سے منسلک ہونا، حسبِ ضرورت ادائیگی گیٹ ویز بنانا، اور webhooks کو سنبھالنا۔
 
 الگ تھلگ tenant انفراسٹرکچر کے لیے، sovereign tenant bootstrap، migration verification، SSO، اور teardown رہنمائی کے لیے [Multi-Tenancy انضمام](./multi-tenancy) دیکھیں۔
 
-## CRM انضمام
+## CRM انضمام {#crm-integration}
 
 جب نئے customers سائن اپ کریں تو customer ڈیٹا اپنے CRM سے ہم آہنگ کریں:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics انضمام
+## Analytics انضمام {#analytics-integration}
 
 customer lifecycle میں اہم کاروباری واقعات کو track کریں:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## اگلے اقدامات
+## اگلے اقدامات {#next-steps}
 
 - [حسبِ ضرورت Gateway ڈیولپمنٹ](./custom-gateway) — اپنا payment gateway بنائیں
 - [Webhook سنبھالنا](./webhooks) — حسبِ ضرورت webhook endpoints بنائیں

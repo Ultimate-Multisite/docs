@@ -4,11 +4,11 @@ title: Çalakî - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Çalakî: wu_mcp_abilities_registered
+# Çalakî: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Piştî ku şiyanên MCP ji bo yek hebûnê tomar dibin tê xebitandin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Piştî ku şiyanên MCP ji bo yek hebûnê tomar dibin tê xebitandin.
 | $model_name | `string` | Navê modelê. |
 | $this | `object` | Nimûneya rêveberê. |
 
-### Ji guhertoya
+### Ji guhertoya {#since}
 
 - 2.5.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) de li rêza 171 hatiye danasîn.

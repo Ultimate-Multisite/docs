@@ -3,11 +3,11 @@ title: ပြောင်းလဲမှုမှတ်တမ်း
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# ပြောင်းလဲမှုမှတ်တမ်း (Changelog)
+# ပြောင်းလဲမှုမှတ်တမ်း (Changelog) {#changelog}
 
-## 1.9.0 — ၂၀၂၆-၀၄-၂၈ တွင် ထုတ်ဝေခဲ့သည်
+## 1.9.0 — ၂၀၂၆-၀၄-၂၈ တွင် ထုတ်ဝေခဲ့သည် {#190--released-on-2026-04-28}
 
-### အသစ်များ (New)
+### အသစ်များ (New) {#new}
 
 - **`create_contact_form` စွမ်းဆောင်ရည်** — လက်ရှိအသုံးပြုနေသည့် form plugin (Contact Form 7, WPForms, Fluent Forms, သို့မဟုတ် Gravity Forms) ကို အသုံးပြု၍ contact form တစ်ခု ဖန်တီးပေးပြီး၊ မည်သည့် post သို့မဟုတ် page တွင်မဆို ထည့်သွင်းနိုင်သည့် shortcode ကို ပြန်ပေးပါသည်။
 - **`set_featured_image` စွမ်းဆောင်ရည်** — ရှိပြီးသား Media Library attachment ID သို့မဟုတ် remote URL မှ post သို့မဟုတ် page အတွက် featured image ကို သတ်မှတ်ပေးနိုင်ပါသည်။ URL ပေးထားပါက ပုံကို အလိုအလျောက် import လုပ်ပေးပါသည်။
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **နောက်ဆုံး session ကို ပြန်ရယူခြင်း** — chat panel သည် page load လုပ်ချိန်နှင့် widget ကို ဖွင့်ချိန်တိုင်း အလိုအလျောက် နောက်ဆုံး 대화ကို ပြန်လည်တင်ပေးသောကြောင့် page navigation များအကြား context ပျောက်ဆုံးမည်မဟုတ်ပါ။
 - **Plugin action links** — WordPress ၏ **Plugins → Installed Plugins** မျက်နှာပြင်တွင် plugin description အောက်၌ Settings နှင့် Abilities Registry သို့ လျင်မြန်စွာသွားနိုင်သည့် link များ ပေါ်လာပါမည်။
 
-### ပိုမိုကောင်းမွန်လာသည်များ (Improved)
+### ပိုမိုကောင်းမွန်လာသည်များ (Improved) {#improved}
 
 - **Image source retry** — download လုပ်မှု ကျရှုံးပါက agent သည် AI-generated image သို့ ပြန်မကျဘဲ၊ စနစ်တကျ သတ်မှတ်ထားသော free image source အားလုံးကို ပြန်လည်ကြိုးစားပေးပါသည်။
 - **Model info panel** — chat header တွင် အမြဲတမ်း မြင်ရမည်ဖြစ်ပြီး၊ ပထမဆုံး message ပို့ပြီးနောက် ပုန်းကွယ်သွားမည်မဟုတ်တော့ပါ။
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — ယခင် custom avatar ကို ပေါင်းစည်းထားသော AI icon ဖြင့် အစားထိုးထားပြီး၊ built-in agent system နှင့် ကိုက်ညီမှုရှိစေပါသည်။
 - **URL linkification** — system messages နှင့် error message bubbles များတွင် ပေါ်လာသည့် URL များကို ယခုအခါ နှိပ်နိုင်သော link များအဖြစ် ပြသပေးပါသည်။
 
-### ပြင်ဆင်ခဲ့သည်များ (Fixed)
+### ပြင်ဆင်ခဲ့သည်များ (Fixed) {#fixed}
 
 - **Ability discoverability** — description များ၊ system prompt ကို ကိုးကားမှုများ၊ နှင့် namespace alignment တို့ကို ပြင်ဆင်ထားသဖြင့် ability အားလုံးသည် agent ၏ tool list တွင် ယုံကြည်စိတ်ချစွာ ပေါ်လာမည်ဖြစ်သည်။
 - **Providers cache** — multisite network များတွင် stale-provider ပြဿနာများ မဖြစ်စေရန် providers များကို version counter မှတစ်ဆင့် site-wide တွင် cache လုပ်ပေးထားပါသည်။
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — ၂၀၂၆-၀၄-၀၉ တွင် ထုတ်ဝေခဲ့သည်
+## 1.4.0 — ၂၀၂၆-၀၄-၀၉ တွင် ထုတ်ဝေခဲ့သည် {#140--released-on-2026-04-09}
 
-### အသစ်များ (New)
+### အသစ်များ (New) {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI pipelines နှင့် model evaluation workflows များအတွက် command line မှတစ်ဆင့် Agent Capabilities v1 benchmark suite ကို run နိုင်ပါသည်။ per-question runs၊ provider/model overrides၊ နှင့် JSON/CSV output တို့ကို ပံ့ပိုးပေးပါသည်။
 - **Agent Capabilities v1 benchmark suite** — စနစ်တကျဖွဲ့စည်းထားသော၊ အဆင့်များစွာပါဝင်သည့် complex prompts များဖြစ်ပြီး၊ ability ၏ စွမ်းဆောင်ရည် အကျယ်အဝန်းတစ်ခုလုံးကို စမ်းသပ်ပေးကာ scoring နှင့် token/duration အစီရင်ခံပါသည်။
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT registration၊ design system၊ navigation၊ နှင့် plugin discovery တို့ကို အကျုံးဝင်သည့် end-to-end test ဖြစ်ပါသည်။
 - **AI provider connector plugins** — ပိုမိုမြန်ဆန်သော local development setup အတွက် WordPress Playground blueprints များတွင် ထည့်သွင်းပေးထားပါသည်။
 
-### ပိုမိုကောင်းမွန်လာသည်များ (Improved)
+### ပိုမိုကောင်းမွန်လာသည်များ (Improved) {#improved-1}
 
 - README ကို AI provider connector documentation နှင့် setup instructions များဖြင့် update လုပ်ထားပါသည်။
 
-### ပြင်ဆင်ခဲ့သည်များ (Fixed)
+### ပြင်ဆင်ခဲ့သည်များ (Fixed) {#fixed-1}
 
 - `main` branch ပေါ်ရှိ PHPUnit test ကျရှုံးမှု ၂၅ ခုကို ပြင်ဆင်ခဲ့ပါသည်။
 - `blueprint.json` တွင် GitHub releases URL format ကို ပြင်ဆင်ခဲ့ပါသည်။
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _ယခင်ထုတ်ဝေမှု မှတ်တမ်းများကို plugin repository တွင် ထိန်းသိမ်းထားပါသည်။_

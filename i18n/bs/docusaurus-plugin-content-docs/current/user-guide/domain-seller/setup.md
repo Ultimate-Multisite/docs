@@ -3,21 +3,21 @@ title: Postavljanje i konfiguracija pružaoca usluga
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Prodavač domena: Postavljanje i konfiguracija provajdera
+# Prodavač domena: Postavljanje i konfiguracija provajdera {#domain-seller-setup-and-provider-configuration}
 
 Dodatak Prodavač domena dolazi s vođenim čarobnjakom za postavljanje koji vas vodi kroz svaki obavezni korak. Ova stranica pokriva tok čarobnjaka i kako naknadno konfigurirati ili ponovno konfigurirati provajdere.
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - **Multisite Ultimate** v2.4.12 ili noviji, aktiviran na mreži
 - **PHP** 7.4+
 - API pristupni podaci za najmanje jednog podržanog registrara
 
-## Čarobnjak za prvo pokretanje
+## Čarobnjak za prvo pokretanje {#first-run-setup-wizard}
 
 Čarobnjak za postavljanje pokreće se automatski prvi put kada mrežno aktivirate plugin. Također je dostupan u bilo kojem trenutku iz **Mrežni administrator › Ultimate Multisite › Postavljanje Prodavača domena**.
 
-### Korak 1 — Odaberite provajdera
+### Korak 1 — Odaberite provajdera {#step-1--choose-a-provider}
 
 Odaberite registrara kojeg želite povezati. Podržane opcije:
 
@@ -33,7 +33,7 @@ Odaberite registrara kojeg želite povezati. Podržane opcije:
 | NameSilo | Ne | Ne |
 | Enom | Da | Ne |
 
-### Korak 2 — Unesite pristupne podatke
+### Korak 2 — Unesite pristupne podatke {#step-2--enter-credentials}
 
 Svaki provajder ima različita polja za pristupne podatke:
 
@@ -57,17 +57,17 @@ Svaki provajder ima različita polja za pristupne podatke:
 
 Označite **Sandbox način** gdje je dostupno kako biste testirali u testnom okruženju provajdera prije prelaska uživo.
 
-### Korak 3 — Testirajte vezu
+### Korak 3 — Testirajte vezu {#step-3--test-the-connection}
 
 Kliknite **Testiraj vezu**. Čarobnjak šalje lagani API poziv kako bi provjerio pristupne podatke i povezivost. Ispravite sve probleme s pristupnim podacima prije nastavka.
 
-### Korak 4 — Uvezite TLD-ove
+### Korak 4 — Uvezite TLD-ove {#step-4--import-tlds}
 
 Kliknite **Uvezi TLD-ove** da povučete sve dostupne TLD-ove i veleprodajne cijene od povezanog provajdera. Ovo popunjava listu TLD-ova koju koriste domenski proizvodi. Uvoz može trajati 30–60 sekundi za provajdere s velikim katalozima TLD-ova.
 
 TLD-ovi se također automatski ponovno sinhronizuju jednom dnevno putem zakazanog cron zadatka.
 
-### Korak 5 — Kreirajte domenski proizvod
+### Korak 5 — Kreirajte domenski proizvod {#step-5--create-a-domain-product}
 
 Čarobnjak kreira zadani univerzalni domenski proizvod s maržom od 10%. Možete odmah urediti ovaj proizvod ili preskočiti i ručno kreirati proizvode pod **Ultimate Multisite › Proizvodi**.
 
@@ -75,7 +75,7 @@ Pogledajte [Domenski proizvodi i cijene](./domain-products) za potpuni vodič za
 
 ---
 
-## Ponovna konfiguracija provajdera
+## Ponovna konfiguracija provajdera {#reconfiguring-a-provider}
 
 Idite na **Mrežni administrator › Ultimate Multisite › Postavke › Prodavač domena** (ili kliknite **Postavke** na listi plugina).
 
@@ -88,17 +88,17 @@ Stranica postavki sadrži:
 - **Upravljaj domenskim proizvodima** — brza veza do liste Proizvoda
 - **Konfiguriraj provajdere** — otvara Čarobnjak za integraciju za dodavanje ili ponovnu konfiguraciju provajdera
 
-### Dodavanje drugog provajdera
+### Dodavanje drugog provajdera {#adding-a-second-provider}
 
 Kliknite **Konfiguriraj provajdere** i ponovno pokrenite čarobnjak za novog registrara. Možete imati više provajdera konfiguriranih istovremeno. Dodijelite svaki domenski proizvod određenom provajderu ili ga ostavite na zadanom.
 
-### Ručna sinhronizacija TLD-ova
+### Ručna sinhronizacija TLD-ova {#syncing-tlds-manually}
 
 Na stranici postavki kliknite **Sinhronizuj TLD-ove** pored bilo kojeg konfiguriranog provajdera kako biste povukli najnovije cijene. Ovo je korisno nakon što provajder ažurira veleprodajne cijene ili doda nove TLD-ove.
 
 ---
 
-## Logovi
+## Logovi {#logs}
 
 Svaki provajder piše u vlastiti kanal logova. Logovi se mogu pregledati pod **Mrežni administrator › Ultimate Multisite › Logovi**:
 
@@ -118,7 +118,7 @@ Svaki provajder piše u vlastiti kanal logova. Logovi se mogu pregledati pod **M
 
 ---
 
-## Napomene o mogućnostima provajdera
+## Napomene o mogućnostima provajdera {#provider-capability-notes}
 
 Ne izlaže svaki registrar API iste operacije. Dodatak prikazuje nepodržane operacije jasnim greškama namijenjenim administratorima umjesto da neprimjetno zakaže.
 

@@ -3,15 +3,15 @@ title: 'Lehena-lekurua: Niche Template-ak gaurkatu'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lehen 4: Niche Template-ak sortzea
+# Lehen 4: Niche Template-ak sortzea {#lesson-4-building-niche-templates}
 
 Templates hauek da irudiari (value proposition) garrantzian parte dira. Fitness studio bat dueñoa bere web-sailan iruditzen duen, eta hori fitness websteilan biltzen du -- klaseko edukiak, entrenador pertsonalak, eta irudiak ondo jakin dituz -- baino, ez du horrek erabiliziek aurrera egiteko.
 
-## Zer da dagoen jakin dugu
+## Zer da dagoen jakin dugu {#where-we-left-off}
 
 FitSite network bat dagoen, Ultimate Multisite instalatuta eta konfiguratuta. Arriba, FitSite-ak fitness negozioak dira bere irudiari biltzen dituz.
 
-## Niche Templates-ek zer eskatzen dute
+## Niche Templates-ek zer eskatzen dute {#why-niche-templates-matter}
 
 Template-ak umumatuak (generic) daude, horrek irudiziek ez duendu bere klientzak zorra egiteko: zer eskatzen dituz behar dituzten lapuak, zein estruktura kontentua ondo egiten du eta zein irudiak bere industria-ren edozein bidean ondo jakin dituz. Niche templates hauek hori ez duendu horrek.
 
@@ -24,11 +24,11 @@ FitSite-ra iscaintzeko studio bat dueñoa beharko luke:
 
 Horrek bere detallak hori ematen dute. Ez hasi egiten du guztiz.
 
-## Template-ak planpeatu
+## Template-ak planpeatu {#planning-your-templates}
 
 Biltzea baino lehen, zer templateak emateko da erabakiu. FitSite-ra, hiru sortu dugu:
 
-### Template 1: Studio Essential
+### Template 1: Studio Essential {#template-1-studio-essential}
 
 Mundia txiki studio eta entrenador pertsonalak dira.
 
@@ -39,7 +39,7 @@ Mundia txiki studio eta entrenador pertsonalak dira.
 - **Contact** página con mapa de ubicación y formulario
 - **Diseño limpio y moderno** con esquema de colores apropiado para el fitness
 
-### Plantilla 2: Gym Pro
+### Plantilla 2: Gym Pro {#template-2-gym-pro}
 
 Para gimnasios ya establecidos con más servicios.
 
@@ -50,7 +50,7 @@ Para gimnasios ya establecidos con más servicios.
 - Sección de **Testimonials** en la página de inicio
 - Opciones de **branding** más destacadas
 
-### Plantilla 3: Fitness Chain
+### Plantilla 3: Fitness Chain {#template-3-fitness-chain}
 
 Para operaciones con múltiples ubicaciones.
 
@@ -60,17 +60,17 @@ Para operaciones con múltiples ubicaciones.
 - **Branding centralizado** con detalles específicos de la ubicación
 - **Staff directory** en todas las ubicaciones
 
-## Construyendo un Sitio con una Plantilla
+## Construyendo un Sitio con una Plantilla {#building-a-template-site}
 
 En Ultimate Multisite, una plantilla es simplemente un sitio de WordPress configurado de la manera que quieres que se vean los sitios nuevos de los clientes. Así es como puedes crear una:
 
-### Paso 1: Crear el Sitio con Plantilla
+### Paso 1: Crear el Sitio con Plantilla {#step-1-create-the-template-site}
 
 1. Ve a **Sites > Add New** en tu administrador de red
 2. Crea un sitio llamado `template-studio-essential`
 3. Este sitio se convierte en tu lienzo de trabajo
 
-### Paso 2: Instalar y Configurar el Tema
+### Paso 2: Instalar y Configurar el Tema {#step-2-install-and-configure-the-theme}
 
 Cambia al panel de control del sitio con plantilla y:
 
@@ -82,7 +82,7 @@ Cambia al panel de control del sitio con plantilla y:
 Fitness-eko irudia duela baina klienteak ez jakin nahi du ondore, erabiliziek temak bat ematen. Astra, GeneratePress edo Kadence gurean onartzen da, gehiago lezioak, eskaintzeko modala eta onartzea da.
 :::
 
-### Irudi 3: Paguak (Pages) Jartzea
+### Irudi 3: Paguak (Pages) Jartzea {#step-3-create-the-pages}
 
 Indarra jakin dituzteko paguak hauek hartu behar dugu:
 
@@ -92,7 +92,7 @@ Indarra jakin dituzteko paguak hauek hartu behar dugu:
 
 Placeholder kontentua irudial izango da, posible jakin dituzteko. Generiko testu batzuk ez duzu, baita: "Hau hau sizkiolaren deskribapena eta hori zer espezial dagoela barne hartu." Training filosofianak, urte-larriaren esperientzia edo klienteak zer eskatzen dituzteko iragatik.
 
-### Irudi 4: Plugin-ek Konfiguratu (Configure Plugins)
+### Irudi 4: Plugin-ek Konfiguratu (Configure Plugins) {#step-4-configure-plugins}
 
 Fitness studioei beharrezko plugin-ek instalatu eta aktibatu duzu:
 
@@ -100,7 +100,7 @@ Fitness studioei beharrezko plugin-ek instalatu eta aktibatu duzu:
 - **Contact form plugin**
 - **SEO plugin** (fitness-eko erakundeak duen default-ekinpenarekin konfiguratutako)
 
-### Irudi 5: Template-ek Markatu (Mark as Template)
+### Irudi 5: Template-ek Markatu (Mark as Template) {#step-5-mark-as-template}
 
 1. **Ultimate Multisite > Sites** funtziokoan jarraitu
 2. Template sitea editatu
@@ -108,7 +108,7 @@ Fitness studioei beharrezko plugin-ek instalatu eta aktibatu duzu:
 
 Ezinbesteko prozesua hau zehatzeko template guztietatik errepikatu behar duzu.
 
-## Template Kalitatea Kontrola Lista
+## Template Kalitatea Kontrola Lista {#template-quality-checklist}
 
 Template bat erabilizatu daitezake baino, jartzen dituzte:
 
@@ -121,7 +121,7 @@ Template bat erabilizatu daitezake baino, jartzen dituzte:
 - [ ] No broken links or missing assets (Ez dago link ezdu edo artealeak agertzen)
 - [ ] Page load speed is acceptable (Pagina lauden handia ondo da)
 
-## FitSite Networka Zer da Datu
+## FitSite Networka Zer da Datu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson) (plan konfigurazioa erantzuna du - lehen eskoldea)
 ```
 
-## Zer Ezdu Zure Lessonaren
+## Zer Ezdu Zure Lessonaren {#what-we-built-this-lesson}
 
 - **Tres template ezagutza-spazio-besteko** diseinatuta fitness biznesses nagusiari
 - **Fitness-bazteko kontentua eta idazleak** zehazki emateko platforma daudenak

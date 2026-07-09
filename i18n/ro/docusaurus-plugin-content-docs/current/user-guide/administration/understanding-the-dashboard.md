@@ -3,31 +3,31 @@ title: Înțelegerea tabloului de bord
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Înțelegerea panoului de control Ultimate Multisite
+# Înțelegerea panoului de control Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
 
 Înainte de a explora opțiunile avansate de configurare și aspectele operaționale ale Ultimate Multisite, hai să aruncăm o privire asupra panoului de control.
 
 Ca multe plugin-uri WordPress, Ultimate Multisite creează o intrare de meniu la nivel de rețea numită **Ultimate Multisite**, cu mai multe sub-meniuri dedesubt.
 
-## Widget-uri în panoul de control al rețelei
+## Widget-uri în panoul de control al rețelei {#network-dashboard-widgets}
 
 Ultimate Multisite adaugă câteva widget-uri utile în panoul de control la nivel de rețea. Acest panou de control poate fi accesat navigând la **Site-urile mele → Administrator rețea → Panou de control**. Widget-urile sunt concepute pentru a oferi administratorului de rețea acces rapid la informații și operațiuni frecvente.
 
 ![Panoul de control al rețelei cu widget-urile Ultimate Multisite](/img/admin/network-dashboard-full.png)
 
-### Primii pași
+### Primii pași {#first-steps}
 
 ![Widget-ul Primii pași](/img/admin/network-dashboard-first-steps.png)
 
 Acest widget apare la o instalare nouă a Ultimate Multisite și îi amintește administratorului de rețea să finalizeze sarcini suplimentare, cum ar fi configurarea unei metode de plată și crearea unui cont de test.
 
-### Sumar
+### Sumar {#summary}
 
 ![Widget-ul Sumar](/img/admin/network-dashboard-summary.png)
 
 Widget-ul Sumar raportează numărul de înscrieri și veniturile generate în ziua respectivă. MRR (Venitul lunar recurent) indică o proiecție totală pentru clienții cu abonamente care generează venituri.
 
-### Fluxul de activitate
+### Fluxul de activitate {#activity-stream}
 
 ![Widget-ul Fluxul de activitate](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Acest widget raportează evenimentele din Ultimate Multisite. Evenimentele inclu
 
 Consultă secțiunea Evenimente din documentație pentru o descriere mai detaliată.
 
-### Chiar acum
+### Chiar acum {#right-now}
 
 ![Widget-ul Chiar acum](/img/admin/network-dashboard-right-now.png)
 
 Acest widget utilitar afișează un scurt sumar al utilizatorilor și site-urilor din rețea. Scurtăturile din partea de sus permit crearea rapidă de site-uri sau utilizatori noi cu un singur clic.
 
-### Știri și discuții
+### Știri și discuții {#news-and-discussions}
 
 ![Widget-ul Știri și discuții](/img/admin/network-dashboard-news.png)
 
 Acest widget preia și afișează cele mai recente știri despre Ultimate Multisite. Urmărește acest widget pentru informații despre actualizări, erori critice și corecții de securitate.
 
-## Panoul de control Ultimate Multisite
+## Panoul de control Ultimate Multisite {#ultimate-multisite-dashboard}
 
 În timp ce panoul de control la nivel de rețea prezintă informații generale despre rețea, panoul de control Ultimate Multisite (situat în partea de sus a meniului Ultimate Multisite) prezintă informații despre serviciu.
 
 ![Panoul de control Ultimate Multisite](/img/admin/um-dashboard-top.png)
 
-### Creșterea venitului lunar recurent
+### Creșterea venitului lunar recurent {#monthly-recurring-revenue-growth}
 
 Graficul MRR (Venit lunar recurent) afișează o defalcare lunară a veniturilor pe o perioadă de 12 luni calendaristice.
 
@@ -61,7 +61,7 @@ Graficul MRR (Venit lunar recurent) afișează o defalcare lunară a veniturilor
 
 Veniturile noi sunt reprezentate în albastru, iar anulările în roșu.
 
-### Suport pentru intervale de date
+### Suport pentru intervale de date {#date-range-support}
 
 În funcție de numărul de clienți și de activitate, statisticile pot deveni copleșitoare. Suportul pentru intervale de date integrat în panoul de control permite administratorului de rețea să se concentreze doar pe informațiile și perioada de timp necesare.
 

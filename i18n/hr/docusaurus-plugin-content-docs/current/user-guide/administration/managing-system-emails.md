@@ -3,11 +3,11 @@ title: Upravljanje e-mailovima sustava
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Upravljanje sistemskim mailovima
+# Upravljanje sistemskim mailovima {#managing-system-emails}
 
 Ultimate Multisite šalje različite sistemske e-mailove za događaje poput potvrda prijave, računa o plaćanju i promjena članstva. Možete prilagoditi ove email šablone kako bi odgovarale vašem brendu.
 
-## Pregled sistemskih mailova
+## Pregled sistemskih mailova {#viewing-system-emails}
 
 Idite na **Ultimate Multisite → Settings** (Postavke) i kliknite na karticu **Emails** (E-mailovi) da biste vidjeli postavke vezane uz e-mailove.
 
@@ -21,7 +21,7 @@ Možete uređivati pojedinačne email šablone koristeći editor sistemskih e-ma
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Uvoz novih email šablona
+## Uvoz novih email šablona {#importing-new-email-templates}
 
 Nove verzije Ultimate Multisite i dodatke mogu registrirati nove email šablone. Da biste spriječili konflikte, nove šablone se ne dodaju automatski — morate ih uvesti ručno.
 
@@ -32,7 +32,7 @@ Za uvoz novih email šablona:
 3. Prebacite opciju **Import Emails** (Uvoz e-mailova) da biste vidjeli dostupne šablone
 4. Odaberite šablone koje želite uvesti i potvrdite
 
-## Resetiranje email šablona
+## Resetiranje email šablona {#resetting-email-templates}
 
 Ako ste prilagodili neki email šablon i želite vratiti na podrazmjevni sadržaj, imate dvije opcije:
 

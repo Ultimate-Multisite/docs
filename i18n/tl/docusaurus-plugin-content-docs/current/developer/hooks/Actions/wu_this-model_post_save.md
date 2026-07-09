@@ -4,11 +4,11 @@ title: 'Aksyon - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 Tumatakbo matapos maimbak ang isang object sa database.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Tumatakbo matapos maimbak ang isang object sa database.
 | $this | `\Base_Model` | Ang instance ng object. |
 | $new | `bool` | Totoo kung bago ang object. |
 
-### Mula noong
+### Mula noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 - Tinukoy sa [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) sa linya 624
 - Tinukoy sa [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) sa linya 1754

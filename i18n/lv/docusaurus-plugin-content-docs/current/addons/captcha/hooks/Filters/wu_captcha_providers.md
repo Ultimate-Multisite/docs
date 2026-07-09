@@ -4,19 +4,19 @@ title: Filtrs - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# Filtrs: wu_captcha_providers
+# Filtrs: wu_captcha_providers {#filter-wucaptchaproviders}
 
 Filtrē pieejamos captcha pakalpojumu sniedzējus.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
 | $providers | `\Abstract_Captcha_Provider[]` | Reģistrētie pakalpojumu sniedzēji. |
 
-### Kopš
+### Kopš {#since}
 
 - 1.2.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/captcha-providers/class-captcha-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/captcha-providers/class-captcha-manager.php#L133) 133. rindā

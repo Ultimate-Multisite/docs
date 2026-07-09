@@ -3,13 +3,13 @@ title: Přechod na nižší tarif
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Přechod na nižší tarif (v2)
+# Přechod na nižší tarif (v2) {#downgrading-a-plan-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
 
 Přechod na nižší tarif nebo subscription je běžná akce, kterou mohou vaši klienti provést, pokud mají omezený rozpočet nebo se rozhodli, že pro provoz svého subsite nebudou potřebovat mnoho zdrojů.
 
-## Jak přejít na nižší tarif
+## Jak přejít na nižší tarif {#how-to-downgrade-a-plan}
 
 Vaši klienti mohou svůj tarif kdykoli snížit tak, že se přihlásí do administračního dashboardu svého subsite a kliknou na **Změnit** na stránce svého Account.
 
@@ -25,7 +25,7 @@ Pro pokračování stačí, aby uživatel klikl na tlačítko **Complete Checkou
 
 ![Stránka Account zobrazující banner čekající změny membership](/img/account-page/pending-change.png)
 
-### Co se stane, když uživatel přejde na nižší tarif
+### Co se stane, když uživatel přejde na nižší tarif {#what-happens-when-a-user-downgrades-their-plan}
 
 Je důležité poznamenat, že přechod na nižší tarif nemění stávající konfiguraci v subsite uživatele.
 
@@ -37,7 +37,7 @@ Pro příspěvky překračující limit nastavený v tarifu máte 3 různé mož
 
 ![Stránka Network Admin Settings Sites zobrazující možnosti chování při překročení limitu příspěvků](/img/account-page/settings-sites-post-limit.png)
 
-### Co se stane s platbou
+### Co se stane s platbou {#what-happens-to-the-payment}
 
 Ve verzi 2.0 již nejsou u platby vyžadovány žádné úpravy z hlediska proration.
 

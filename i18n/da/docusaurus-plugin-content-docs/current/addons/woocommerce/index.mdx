@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce Integration {#woocommerce-integration}
 
 WooCommerce Integration fungerer på en meget lignende måde som vores Manual Gateway fungerer. Den giver dine brugere stor fleksibilitet ved at lade dem vælge en hvilken som helst af de betalingsformularer, der er tilgængelige på din WooCommerce-installation. Og det er enkelt: Når brugerens faktureringsperiode slutter, sættes brugerens abonnement på pause. Samtidig oprettes der en ordre på WooCommerce-installationen på netværkets hovedwebsted. Brugeren modtager derefter en faktura i sin e-mail med et link til at gennemføre betalingen. Når betalingen er modtaget, fornyes abonnementet.
 
-## Funktioner
+## Funktioner {#features}
 
 - Nem integration mellem Ultimate Multisite og WooCommerce
 - Flere tilgængelige betalingsmetoder
 - Automatiseret tilbagevendende fakturering ved hjælp af den medfølgende abonnementskerne, med valgfrie forbedringer fra WooCommerce Subscriptions-plugin
 - Checkout-totaler inkluderer Ultimate Multisite-skatter som separate, ikke-afgiftspligtige WooCommerce-gebyrlinjer, så kunder kan gennemgå skattebeløb før betaling
 
-## Dokumentation
+## Dokumentation {#documentation}
 
 **Opsætning af WooCommerce Integration**
 
 **Udvid dine betalingsmuligheder med Ultimate Multisite: WooCommerce Integration**
 
-## Installation
+## Installation {#installation}
 
 1. Upload 'ultimate-multisite-woocommerce' til mappen '/wp-content/plugins/'
 2. Aktivér plugin’et via menuen 'Plugins' i WordPress
 3. Følg den trinvise Wizard for at konfigurere plugin’et
 
-## Brugsvejledning
+## Brugsvejledning {#usage-guide}
 
 _**VIGTIG BEMÆRKNING: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
@@ -40,7 +40,7 @@ Vi forstår, at _Stripe_ og _PayPal_ ikke er tilgængelige i nogle lande, hvilke
 
 _WooCommerce_ er et meget populært eCommerce-plugin. Udviklere over hele verden har oprettet add-ons til at integrere forskellige betalingsgateways med det. Vi udnyttede dette til at udvide de betalingsgateways, du kan bruge i Ultimate Multisite-faktureringssystemet.
 
-## Opsætning
+## Opsætning {#setting-it-up}
 
 Først skal du installere WooCommerce Integration-add-on’en, som er **gratis for licenserede brugere**. For at installere den skal du klikke på Ultimate Multisite på dit superadmin-dashboard og vælge **Add-ons**.
 
@@ -68,11 +68,11 @@ Når det er installeret, vil du se en ekstra mulighed under Ultimate Multisite-b
 
 Du kan konfigurere nogle grundlæggende indstillinger såsom visningsnavnet, der vises i front end, og instruktioner til at guide dine brugere i deres checkout-flow. Derefter kan du gå til dit **hovedwebsteds _WooCommerce_-indstillinger** for at aktivere og konfigurere den betalingsgateway, du foretrækker at bruge.
 
-### Checkout-skattegebyrlinjer
+### Checkout-skattegebyrlinjer {#checkout-tax-fee-lines}
 
 Når en Ultimate Multisite-checkout inkluderer skatter, tilføjer integrationen hvert Ultimate Multisite-skattebeløb til WooCommerce-checkout som en separat, ikke-afgiftspligtig gebyrlinje. Dette holder skattetotalen synlig før betaling, samtidig med at det forhindrer WooCommerce i at beskatte skattegebyret igen.
 
-## Sådan håndteres betalingen
+## Sådan håndteres betalingen {#how-to-manage-the-payment}
 
 WooCommerce Integration fungerer på en meget lignende måde som vores **Manual Gateway** fungerer. Ulempen er, at hver betaling skal betales manuelt ved faktureringsperiodens afslutning. Sådan fungerer flowet:
 
@@ -82,13 +82,13 @@ WooCommerce Integration fungerer på en meget lignende måde som vores **Manual 
 
   * Når betalingen er modtaget, bliver medlemskabet **fornyet** , betalingen logges i Ultimate Multisite, og ordren sættes til fuldført.
 
-### Nogle vigtige bemærkninger:
+### Nogle vigtige bemærkninger: {#some-important-notes}
 
   * Standardfunktionaliteten i Ultimate Multisite fungerer stadig med denne integrationsform. For eksempel vil **udstedelse af refunderinger** fra skærmen **Subscription Management** kommunikere med WooCommerce for at udstede refunderingen ved hjælp af den valgte betalingsformular.
 
   * Ultimate Multisite: WooCommerce Integration er afhængig af WP-Cron for at fungere. Dette fungerer meget godt det meste af tiden, men hvis webstedet har lav trafik, bliver cron ikke bedt om at tjekke for planlagte begivenheder, og begivenheden overses, hvilket kan forårsage forsinkelser i udførelsen.
 
-## WooCommerce Subscriptions-plugin
+## WooCommerce Subscriptions-plugin {#woocommerce-subscriptions-plugin}
 
 Manuel igangsættelse af en betaling hver måned er ikke ideelt for slutbrugere, fordi abonnementer forventes at gentage sig automatisk hver faktureringscyklus. WooCommerce Integration add-on inkluderer nu kernekoden til abonnementer, så tilbagevendende produkter altid bruger abonnementer til tilbagevendende fakturering.
 
@@ -100,7 +100,7 @@ Og det er det. Dine slutbrugere behøver ikke længere manuelt at foretage en be
 
 Ud over at en ordre oprettes på dit hovedwebsted under _WooCommerce_, vil der også blive oprettet et abonnement for hver Account.
 
-### Adfærd ved suspendering efter mislykket fornyelse
+### Adfærd ved suspendering efter mislykket fornyelse {#failed-renewal-suspension-behavior}
 
 Som standard forbliver medlemskaber aktive, mens WooCommerce Subscriptions behandler sin tidsplan for genforsøg ved mislykket betaling. Dette bevarer det normale WooCommerce Subscriptions respitvindue, så en genoprettet fornyelse kan bringe abonnementet og medlemskabet tilbage i synkronisering uden at afbryde adgangen for tidligt.
 

@@ -3,11 +3,11 @@ title: Cumais Bhainistíochta Breiseán
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Cumais Bhainistíochta Breiseán
+# Cumais Bhainistíochta Breiseán {#plugin-management-abilities}
 
 Tagann Gratis AI Agent v1.5.0 le **7 gcumas bainistíochta breiseán** ar féidir leis an gcúntóir IS iad a agairt le linn comhrá. Soláthraíonn na cumais seo rialú ríomhchláraithe ar bhreiseáin WordPress atá suiteáilte tríd an [Córas Tógálaí Breiseán & Bosca Gainimh](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Forbhreathnú ar Chumais
+## Forbhreathnú ar Chumais {#abilities-overview}
 
 | Cumas | Slug | Cur síos |
 |---|---|---|
@@ -19,7 +19,7 @@ Tagann Gratis AI Agent v1.5.0 le **7 gcumas bainistíochta breiseán** ar féidi
 | Suiteáil Breiseán | `install_plugin` | Imscarann sé breiseán bosca gainimh chuig eolaire breiseán beo WordPress. |
 | Gníomhachtaigh Breiseán | `activate_plugin` | Gníomhachtaíonn sé breiseán bosca gainimh i dtimpeallacht bosca gainimh wp-env. |
 
-## API Suiteálaí Breiseán
+## API Suiteálaí Breiseán {#plugin-installer-api}
 
 Láimhseálann an suiteálaí breiseán oibríochtaí córais comhad agus breiseáin á n-imscaradh nó á mbaint. Príomhiompraíochtaí:
 
@@ -28,7 +28,7 @@ Láimhseálann an suiteálaí breiseán oibríochtaí córais comhad agus breise
 - **Nuashonrú**: Cuireann sé comhaid nua in ionad chomhaid reatha an bhreiseáin. Díghníomhachtaítear an breiseán roimh scríobh chun earráidí páirtstaide a sheachaint.
 - **Scriosadh de réir slug**: Aimsíonn sé eolaire an bhreiseáin de réir slug, díghníomhachtaíonn sé ar fud na suíomhanna uile é, ansin baintear an t-eolaire.
 
-### Láimhseálaí Suiteála Saincheaptha a Chlárú
+### Láimhseálaí Suiteála Saincheaptha a Chlárú {#registering-a-custom-install-handler}
 
 Is féidir leat dul isteach i saolré na suiteála trí úsáid a bhaint as na gníomhartha `gratis_ai_plugin_installer_before_install` agus `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Clárlann Éiceachórais
+## Clárlann Éiceachórais {#ecosystem-registry}
 
 Cláraítear cumais tríd an **gclárlann éiceachórais breiseán**. Mapálann an chlárlann slugaí cumais chuig a ranganna láimhseálaí agus nochtann sí iad do sheoltóir uirlisí an ghníomhaire IS.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Comhtháthú HookScanner
+## Comhtháthú HookScanner {#hookscanner-integration}
 
 Ritheann na cumais `create_plugin` agus `update_plugin` **HookScanner** go huathoibríoch i gcoinne cód nua-ghinte. Filleann HookScanner liosta de chrúcaí gnímh agus scagaire WordPress atá cláraithe ag an mbreiseán.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 Scipeálann HookScanner eolairí `vendor/` agus `node_modules/` go huathoibríoch.
 
-## Ailtireacht Jabanna Asioncronacha
+## Ailtireacht Jabanna Asioncronacha {#async-job-architecture}
 
 Seoltar oibríochtaí breiseán fadtréimhseacha (giniúint, suiteáil) mar **jabanna asioncronacha** le rianú dul chun cinn beo. Déanann comhéadan comhrá IS vótaíocht ar dhul chun cinn agus sruthaíonn sé nuashonruithe stádais chuig an úsáideoir:
 

@@ -3,7 +3,7 @@ title: Kielenvalitsimen muutosloki
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Kielivalitsimen muutosloki
+# Kielivalitsimen muutosloki {#language-selector-changelog}
 
 Versio: 1.1.3 - Julkaistu 2026-05-05
 * Korjaus: Syötemuuttujat puhdistetaan nyt ja mukautettuihin hook-nimiin lisätään etuliite ristiriitojen estämiseksi kolmansien osapuolten lisäosien kanssa

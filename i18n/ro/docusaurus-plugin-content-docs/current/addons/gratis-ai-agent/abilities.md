@@ -3,7 +3,7 @@ title: Referință pentru abilități
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referință capabilități
+# Referință capabilități {#abilities-reference}
 
 Capabilitățile sunt acțiunile atomice pe care Gratis AI Agent le poate invoca în instalarea ta WordPress. Fiecare capabilitate este o clasă PHP înregistrată care expune o schemă JSON — agentul citește această schemă la rulare pentru a înțelege ce parametri sunt necesari și ce returnează capabilitatea.
 
@@ -11,11 +11,11 @@ Această pagină documentează toate capabilitățile incluse cu Gratis AI Agent
 
 ---
 
-## Tipuri de postări personalizate
+## Tipuri de postări personalizate {#custom-post-types}
 
 Aceste capabilități gestionează tipuri de postări personalizate (CPT-uri) înregistrate prin agent. Înregistrările sunt persistate în tabelul de opțiuni WordPress, astfel încât supraviețuiesc dezactivării și reactivării pluginului.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Înregistrează un nou tip de postare personalizată.
 
@@ -50,7 +50,7 @@ Aceste capabilități gestionează tipuri de postări personalizate (CPT-uri) î
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Returnează toate tipurile de postări personalizate înregistrate de agent.
 
@@ -73,7 +73,7 @@ Returnează toate tipurile de postări personalizate înregistrate de agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Anulează înregistrarea unui tip de postare personalizată înregistrat anterior de agent. Postările existente de acel tip rămân în baza de date, dar nu mai sunt accesibile prin tipul de postare.
 
@@ -87,11 +87,11 @@ Anulează înregistrarea unui tip de postare personalizată înregistrat anterio
 
 ---
 
-## Taxonomii personalizate
+## Taxonomii personalizate {#custom-taxonomies}
 
 Aceste capabilități gestionează taxonomii personalizate. La fel ca CPT-urile, înregistrările taxonomiilor sunt persistate.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Înregistrează o nouă taxonomie personalizată.
 
@@ -123,7 +123,7 @@ Aceste capabilități gestionează taxonomii personalizate. La fel ca CPT-urile,
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Returnează toate taxonomiile personalizate înregistrate de agent.
 
@@ -146,7 +146,7 @@ Returnează toate taxonomiile personalizate înregistrate de agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Anulează înregistrarea unei taxonomii personalizate înregistrate anterior de agent.
 
@@ -160,11 +160,11 @@ Anulează înregistrarea unei taxonomii personalizate înregistrate anterior de 
 
 ---
 
-## Sistem de design
+## Sistem de design {#design-system}
 
 Capabilitățile sistemului de design modifică prezentarea vizuală a site-ului WordPress — de la CSS personalizat la modele de blocuri și sigla site-ului.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Adaugă CSS în `<head>` al site-ului prin `wp_add_inline_style`. CSS este stocat în opțiunea `gratis_ai_agent_custom_css` și scos din coadă curat când capabilitatea este resetată.
 
@@ -190,7 +190,7 @@ Adaugă CSS în `<head>` al site-ului prin `wp_add_inline_style`. CSS este stoca
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Înregistrează un model de bloc reutilizabil în biblioteca de modele WordPress.
 
@@ -209,7 +209,7 @@ Adaugă CSS în `<head>` al site-ului prin `wp_add_inline_style`. CSS este stoca
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Listează toate modelele de blocuri înregistrate de agent.
 
@@ -231,7 +231,7 @@ Listează toate modelele de blocuri înregistrate de agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Setează logo-ul site-ului WordPress la un ID de atașament dat sau la un URL de imagine la distanță. Când este furnizat un URL, imaginea este descărcată și importată în Biblioteca media.
 
@@ -248,7 +248,7 @@ Trebuie furnizat unul dintre `attachment_id` sau `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Aplică o presetare denumită de culoare/tipografie la `theme.json` (sau `global-styles`) al temei active. Presetările sunt pachete curatoriate întreținute de echipa Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Aplică o presetare denumită de culoare/tipografie la `theme.json` (sau `global
 
 ---
 
-## Stiluri globale
+## Stiluri globale {#global-styles}
 
 Abilitățile pentru Stiluri globale citesc și scriu valori theme.json prin API-ul WordPress Global Styles, afectând toate blocurile și șabloanele la nivelul întregului site.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Returnează configurația curentă a stilurilor globale.
 
@@ -291,7 +291,7 @@ Returnează configurația curentă a stilurilor globale.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Actualizează una sau mai multe valori în configurația stilurilor globale.
 
@@ -318,7 +318,7 @@ Actualizează una sau mai multe valori în configurația stilurilor globale.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Resetează toate modificările stilurilor globale aplicate de agent, restaurând valorile implicite ale temei.
 
@@ -328,11 +328,11 @@ Resetează toate modificările stilurilor globale aplicate de agent, restaurând
 
 ---
 
-## Meniuri de navigare
+## Meniuri de navigare {#navigation-menus}
 
 Abilitățile pentru meniuri de navigare creează și gestionează meniuri de navigare WordPress și elementele acestora.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Creează un nou meniu de navigare WordPress.
 
@@ -347,7 +347,7 @@ Creează un nou meniu de navigare WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Redenumește un meniu sau îl reatribuie unei locații a temei.
 
@@ -363,7 +363,7 @@ Redenumește un meniu sau îl reatribuie unei locații a temei.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Adaugă un element într-un meniu de navigare existent.
 
@@ -383,7 +383,7 @@ Adaugă un element într-un meniu de navigare existent.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Elimină un element dintr-un meniu de navigare.
 
@@ -397,7 +397,7 @@ Elimină un element dintr-un meniu de navigare.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Listează toate meniurile de navigare WordPress, inclusiv locațiile de temă atribuite.
 
@@ -420,11 +420,11 @@ Listează toate meniurile de navigare WordPress, inclusiv locațiile de temă at
 
 ---
 
-## Gestionarea opțiunilor
+## Gestionarea opțiunilor {#options-management}
 
 Abilitățile pentru opțiuni citesc și scriu opțiuni WordPress prin `get_option` / `update_option`. O listă de blocare de siguranță încorporată previne modificarea accidentală a setărilor critice.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Citește o opțiune WordPress.
 
@@ -440,7 +440,7 @@ Returnează o eroare dacă `option_name` se află pe lista de blocare de siguran
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Scrie o opțiune WordPress.
 
@@ -458,7 +458,7 @@ Returnează o eroare dacă `option_name` se află pe lista de blocare de siguran
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Șterge o opțiune WordPress.
 
@@ -474,7 +474,7 @@ Returnează o eroare dacă `option_name` se află pe lista de blocare de siguran
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Listează opțiunile WordPress care corespund unui tipar.
 
@@ -498,11 +498,11 @@ Listează opțiunile WordPress care corespund unui tipar.
 
 ---
 
-## Gestionarea conținutului
+## Gestionarea conținutului {#content-management}
 
 Abilitățile de Gestionare a conținutului creează și editează articole și pagini WordPress. ID-urile articolelor sunt returnate, astfel încât pașii ulteriori din planurile cu mai multe abilități să poată referenția conținutul creat.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Creează un nou articol WordPress, o pagină sau o intrare de tip de articol personalizat.
 
@@ -537,7 +537,7 @@ Creează un nou articol WordPress, o pagină sau o intrare de tip de articol per
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Actualizează un articol sau o pagină WordPress existentă.
 
@@ -567,7 +567,7 @@ Actualizează un articol sau o pagină WordPress existentă.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Creează mai multe articole într-un singur apel de abilitate, reducând drumurile dus-întors în timpul construirii site-urilor sau al importului de conținut în masă. Articolele sunt create în secvență; dacă unul eșuează, celelalte continuă, iar eșecul este raportat în array-ul de rezultate.
 
@@ -619,7 +619,7 @@ Creează mai multe articole într-un singur apel de abilitate, reducând drumuri
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Atribuie o imagine reprezentativă (miniatură de articol) unui articol sau unei pagini existente. Acceptă un ID de atașament existent din Media Library sau un URL de imagine la distanță; când este furnizat un URL, imaginea este descărcată și importată automat.
 
@@ -638,7 +638,7 @@ Unul dintre `attachment_id` sau `url` trebuie furnizat.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Creează un formular de contact folosind pluginul de formulare activ (Contact Form 7, WPForms, Fluent Forms sau Gravity Forms, în funcție de ce este instalat). Returnează un shortcode care poate fi încorporat în orice articol sau pagină.
 
@@ -691,11 +691,11 @@ Creează un formular de contact folosind pluginul de formulare activ (Contact Fo
 
 ---
 
-## Revizuire vizuală
+## Revizuire vizuală {#visual-review}
 
 Capacitățile de Revizuire vizuală permit agentului să captureze capturi de ecran ale paginilor live și să le analizeze, permițând revizuirea autonomă a designului, comparații înainte/după și verificări de regresie vizuală fără a necesita vreo extensie de browser.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Capturează o captură de ecran a unei pagini WordPress la un URL dat folosind un browser headless pe partea de server. Imaginea este salvată în Media Library și este returnat un URL CDN.
 
@@ -724,7 +724,7 @@ Capturează o captură de ecran a unei pagini WordPress la un URL dat folosind u
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Preia două capturi de ecran și returnează un scor de diferență vizuală plus o imagine diff care evidențiază regiunile modificate. Util pentru confirmarea faptului că o modificare de design a produs rezultatul așteptat sau pentru detectarea regresiilor neintenționate.
 
@@ -754,7 +754,7 @@ Un `diff_score` de `0.0` înseamnă nicio schimbare vizibilă; `1.0` înseamnă 
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Capturează o captură de ecran a unei pagini și o trimite modelului lingvistic pentru analiză vizuală. Returnează o evaluare structurată care acoperă layout-ul, tipografia, utilizarea culorilor și preocupările de accesibilitate.
 
@@ -785,11 +785,11 @@ Capturează o captură de ecran a unei pagini și o trimite modelului lingvistic
 
 ---
 
-## Capacități instalabile
+## Capacități instalabile {#installable-abilities}
 
 Registrul de Capacități instalabile îți permite să extinzi agentul cu pachete de capacități suplimentare distribuite ca pluginuri WordPress. Fiecare pachet înregistrează una sau mai multe capacități folosind API-ul standard de capacități.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Returnează catalogul pachetelor de capacități disponibile pentru instalare din registru.
 
@@ -818,7 +818,7 @@ Returnează catalogul pachetelor de capacități disponibile pentru instalare di
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Descarcă și activează un pachet de abilități din registru.
 
@@ -832,7 +832,7 @@ Descarcă și activează un pachet de abilități din registru.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Interoghează registrul de abilități pentru a găsi cel mai bun plugin pentru un caz de utilizare descris și, opțional, îl instalează.
 

@@ -3,11 +3,11 @@ title: Pag-expire ng Miyembro at Pag-block ng Site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Pag-expire ng Membership at Pag-block ng Site
+# Pag-expire ng Membership at Pag-block ng Site {#membership-expiration-and-site-blocking}
 
 Ipaliwanag ng gabay na ito kung paano hinahawakan ng Ultimate Multisite ang pag-expire ng membership, pagtatapos ng trial, at pag-block sa frontend ng site. Saklaw nito ang buong siklo ng isang membership mula aktibo hanggang expired, ang mga setting na nagkokontrol kung magbo-block ba ang mga site, at kung ano ang dapat tingnan kapag nananatiling accessible ang mga site kahit nag-expire na ang membership.
 
-## Siklo ng Status ng Membership
+## Siklo ng Status ng Membership {#membership-status-lifecycle}
 
 Ang bawat membership sa Ultimate Multisite ay may isa sa mga sumusunod na status:
 
@@ -23,7 +23,7 @@ Hindi awtomatikong nag-e-expire ang mga libreng membership. Itinuturing ng Ultim
 | **Expired** | Lumampas na sa petsa ng pag-expire at grace period nang walang renewal |
 | **Cancelled** | Malinaw na kinansela ng customer o admin |
 
-### Paano Nagiging Expired ang mga Membership
+### Paano Nagiging Expired ang mga Membership {#how-memberships-transition-to-expired}
 
 Ang Ultimate Multisite ay nagsasagawa ng background check **bawat oras** para hanapin ang mga membership na dapat itala bilang expired. Ang pag-check na ito ay gumagamit ng [Action Scheduler](https://actionscheduler.org/) (hindi direktang WP-Cron) at tumatakbo bilang `wu_membership_check` scheduled action.
 
@@ -33,7 +33,7 @@ Mayroon itong **built-in grace period na 3 araw** sa default setting para sa pag
 Ang 3-araw na grace period para sa expiration ay hiwalay sa setting ng Frontend Block Grace Period na inilarawan sa ibaba. Ang expiration grace period ang nagkokontrol kung kailan **magbabago ang status** mula active/on-hold patungong expired. Ang frontend block grace period naman ang nagkokontrol kung kailan **ma-block ang site** pagkatapos magbago ng status.
 :::
 
-#### Auto-Renewing vs. Non-Auto-Renewing Memberships
+#### Auto-Renewing vs. Non-Auto-Renewing Memberships {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Mahalaga ito para maintindihan ang asal ng expiration:
 
@@ -41,7 +41,7 @@ Mahalaga ito para maintindihan ang asal ng expiration:
 
 - **Mga miyembro na awtomatikong nagre-renew** (`auto_renew = true`): Ang pagche-check ng expiration ng cron job **ay hindi ito kasama**. Inaasahang magpapadala ang payment gateway (Stripe, PayPal, atbp.) ng notification sa Ultimate Multisite gamit ang webhooks kapag nabigo o kinansela ang subscription. Kung walang natanggap na webhook -- dahil sa maling configuration ng endpoint, pagkawala ng serbisyo ng gateway, o kung ang subscription ay kinansela sa labas ng sistema -- maaaring manatiling `active` ang membership kahit lumampas na ang petsa ng expiration.
 
-### Paano Nagtatapos ang mga Trial
+### Paano Nagtatapos ang mga Trial {#how-trials-end}
 
 Kapag natapos ang trial period ng isang trialing membership, ang system:
 
@@ -51,11 +51,11 @@ Kapag natapos ang trial period ng isang trialing membership, ang system:
 
 Ang prosesong ito ay tumatakbo sa parehong oras ng regular na pagche-check ng expiration, ngunit **para lamang sa mga membership na hindi awtomatikong nagre-renew**. Para naman sa mga auto-renewing trial, ang payment gateway ang bahala sa paglipat mula sa trial patungo sa bayad na subscription.
 
-## Pag-block ng Access sa Frontend
+## Pag-block ng Access sa Frontend {#block-frontend-access}
 
 Sa default setting, kapag nag-expire o naka-hold ang isang membership, **ang `wp-admin dashboard` lang ang limitado**. Ang public frontend ng site ay nananatiling accessible sa mga bisita. Para ma-block din ang access ng publiko, kailangan mong i-enable ang setting na **Block Frontend Access**.
 
-### Pag-configure ng Setting
+### Pag-configure ng Setting {#configuring-the-setting}
 
 Pumunta sa **Ultimate Multisite > Settings > Memberships** at i-enable ang **Block Frontend Access**.
 
@@ -73,7 +73,7 @@ Tatlong kaugnay na setting ang kumokontrol sa pag-uugali na ito:
 | **Frontend Block Grace Period** | Bilang ng araw na maghihintay pagkatapos mawala ang aktibong membership bago i-block. Itakda sa `0` para agad na ma-block. | 0 |
 | **Frontend Block Page** | Isang pahina sa pangunahing site kung saan ire-redirect ang mga bisita kapag na-block ang isang site. Kung hindi itinakda, makikita ng mga bisita ang generic na mensaheng "Site not available". | None |
 
-### Ano ang Makikita ng mga Bisita Kapag Na-block ang Isang Site
+### Ano ang Makikita ng mga Bisita Kapag Na-block ang Isang Site {#what-visitors-see-when-a-site-is-blocked}
 
 Kapag na-block ang frontend access, ang mga bisitang pumunta sa site ay magkakaroon ng isa sa mga sumusunod:
 
@@ -82,7 +82,7 @@ Kapag na-block ang frontend access, ang mga bisitang pumunta sa site ay magkakar
 
 Maaayos pa ring mag-login ang mga site admin -- hindi kailanman bawal ang login page.
 
-### Ano ang Binablock at Kailan Ito Nangyayari
+### Ano ang Binablock at Kailan Ito Nangyayari {#what-gets-blocked-and-when}
 
 Ang pagbabawal ay nakadepende sa status ng membership:
 
@@ -103,21 +103,21 @@ Kahit matapos ang trial period, ang isang membership na may status na `trialing`
 Ang mga kinanselang membership ay laging ma-block kapag lumipas na ang expiration date, anuman kung naka-enable ba ang Block Frontend Access. Ang Frontend Block Grace Period ay **hindi** aplikable sa mga kinanselang membership.
 :::
 
-## Troubleshooting: Mga Site na Nanatiling Accessible Pagkatapos ng Expiration
+## Troubleshooting: Mga Site na Nanatiling Accessible Pagkatapos ng Expiration {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Kung nananatiling pampubliko ang mga site pagkatapos mag-expire ang isang membership, sundin ang mga check na ito ayon sa pagkakasunod:
 
-### 1. Siguraduhin na naka-enable ang Block Frontend Access Setting
+### 1. Siguraduhin na naka-enable ang Block Frontend Access Setting {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Pumunta sa **Ultimate Multisite > Settings > Memberships** at i-check kung naka-on ang toggle na **Block Frontend Access**. Ang setting na ito ay **off by default**, ibig sabihin, ang `wp-admin` lang ang maghihigpit kapag hindi na aktibo ang isang membership.
 
-### 2. Tingnan ang Frontend Block Grace Period
+### 2. Tingnan ang Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 Sa parehong settings page, tingnan ang value ng **Frontend Block Grace Period**. Kung ito ay naka-set sa 7 araw, halimbawa, hindi ma-block ang frontend hanggang 7 araw pagkatapos ng petsa ng pag-expire ng membership -- kahit na `expired` na ang status ng membership.
 
 Itakda ito sa `0` kung gusto mo ng agarang pag-block pagkatapos maging inactive ang membership.
 
-### 3. Siguraduhin na Nagbago Talaga ang Status ng Membership
+### 3. Siguraduhin na Nagbago Talaga ang Status ng Membership {#3-confirm-the-membership-status-has-actually-changed}
 
 Pumunta sa **Ultimate Multisite > Memberships** at tingnan ang status ng apektadong membership. Kung nakikita pa rin itong `active` kahit lumipas na ang expiration date, hindi naganap ang pagbabago ng status. Mga karaniwang dahilan:
 
@@ -125,7 +125,7 @@ Pumunta sa **Ultimate Multisite > Memberships** at tingnan ang status ng apektad
 
 - **Hindi tumakbo ang cron job**: Tingnan ang susunod na hakbang.
 
-### 4. I-verify na Tumatakbo ang Action Scheduler
+### 4. I-verify na Tumatakbo ang Action Scheduler {#4-verify-action-scheduler-is-running}
 
 Ginagamit ng Ultimate Multisite ang Action Scheduler para sa mga cron job nito. Pumunta sa **Tools > Scheduled Actions** sa network admin at hanapin ang mga sumusunod:
 
@@ -147,7 +147,7 @@ Para masigurado ang maaasahang pagtakbo ng cron job, mag-set up ka ng system cro
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Tingnan ang mga Problema sa Gateway Webhook (Auto-Renewing Memberships)
+### 5. Tingnan ang mga Problema sa Gateway Webhook (Auto-Renewing Memberships) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Kung ang membership ay auto-renew at ang subscription ng gateway ay na-cancel o nabigo, pero ipinapakita pa rin ng Ultimate Multisite bilang `active`:
 
@@ -156,7 +156,7 @@ Kung ang membership ay auto-renew at ang subscription ng gateway ay na-cancel o 
 
 Kung ipinapakita ng gateway na nakansela ang subscription pero hindi ito nakikita ng Ultimate Multisite, malamang nawala ang notipikasyon mula sa webhook. Maaari mong manu-manong baguhin ang membership status sa **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Tingnan ang Grace Period ng Expiration (Cron Level)
+### 6. Tingnan ang Grace Period ng Expiration (Cron Level) {#6-check-the-expiration-grace-period-cron-level}
 
 May sarili ring grace period ang cron check (default: 3 araw) bago itala bilang expired ang isang membership. Ito ay hiwalay sa grace period ng frontend block. Ang kabuuang oras bago ma-block ang site ay maaaring maging:
 
@@ -164,7 +164,7 @@ May sarili ring grace period ang cron check (default: 3 araw) bago itala bilang 
 
 Halimbawa, gamit ang default settings at isang 7-araw na frontend grace period, maaari itong tumagal hanggang 10 araw pagkatapos ng `date_expiration` bago talaga ma-block ang site.
 
-### 7. Manu-manong I-expire ang Isang Membership
+### 7. Manu-manong I-expire ang Isang Membership {#7-manually-expire-a-membership}
 
 Kung kailangan mong agad i-block ang isang site nang hindi naghihintay sa cron cycle, maaari mong manu-manong baguhin ang status ng membership:
 
@@ -175,7 +175,7 @@ Kung kailangan mong agad i-block ang isang site nang hindi naghihintay sa cron c
 
 Ang frontend block ay magsisimulang mag-effect sa susunod na pag-load ng page (depende ito sa Frontend Block Grace Period para sa mga expired membership, o agad kung ang membership ay kinansela).
 
-## Buod
+## Buod {#summary}
 
 Ang buong timeline mula petsa ng pag-expire hanggang sa pagbablock ng site:
 

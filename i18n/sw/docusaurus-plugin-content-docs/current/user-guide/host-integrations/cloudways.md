@@ -3,18 +3,18 @@ title: Ujumuishaji wa Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Muunganisho wa Cloudways
+# Muunganisho wa Cloudways {#cloudways-integration}
 
-## Muhtasari
+## Muhtasari {#overview}
 Cloudways ni jukwaa la usimamizi wa hosting ya cloud linalokuruhusu kuweka tovuti za WordPress kwenye watoa huduma mbalimbali wa cloud kama DigitalOcean, AWS, Google Cloud, na wengineo. Muunganisho huu huwezesha usawazishaji otomatiki wa domain na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na Cloudways.
 
-## Vipengele
+## Vipengele {#features}
 - Usawazishaji otomatiki wa domain
 - Usimamizi wa cheti cha SSL
 - Usaidizi wa domain za ziada
 - Uthibitishaji wa DNS kwa vyeti vya SSL
 
-## Mahitaji
+## Mahitaji {#requirements}
 Constants zifuatazo lazima zifafanuliwe katika faili lako la `wp-config.php`:
 
 ```php
@@ -30,16 +30,16 @@ Kwa hiari, unaweza pia kufafanua:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Maagizo ya Usanidi
+## Maagizo ya Usanidi {#setup-instructions}
 
-### 1. Pata Credentials Zako za Cloudways API
+### 1. Pata Credentials Zako za Cloudways API {#1-get-your-cloudways-api-credentials}
 
 1. Ingia kwenye Cloudways Dashboard yako
 2. Nenda kwenye "Account" > "Vifunguo vya API"
 3. Tengeneza ufunguo wa API ikiwa tayari huna mmoja
 4. Nakili barua pepe yako na ufunguo wa API
 
-### 2. Pata Vitambulisho vya Server na Application Vyako
+### 2. Pata Vitambulisho vya Server na Application Vyako {#2-get-your-server-and-application-ids}
 
 1. Katika Cloudways Dashboard yako, nenda kwenye "Seva"
 2. Chagua seva ambapo WordPress multisite yako imehifadhiwa
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Nenda kwenye "Programu" na uchague programu yako ya WordPress
 5. App ID inaonekana kwenye URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Ongeza Constants kwenye wp-config.php
+### 3. Ongeza Constants kwenye wp-config.php {#3-add-constants-to-wp-configphp}
 
 Ongeza constants zifuatazo kwenye faili lako la `wp-config.php`:
 
@@ -70,7 +70,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 hapa chini ili kuelewa kwa nini hili huzuia vyeti vya SSL vya kila mpangaji kutolewa.
 :::
 
-### 4. Wezesha Muunganisho
+### 4. Wezesha Muunganisho {#4-enable-the-integration}
 
 1. Katika msimamizi wako wa WordPress, nenda kwenye Ultimate Multisite > Mipangilio
 2. Nenda kwenye kichupo cha "Uelekezaji wa Domain"
@@ -78,9 +78,9 @@ hapa chini ili kuelewa kwa nini hili huzuia vyeti vya SSL vya kila mpangaji kuto
 4. Wezesha muunganisho wa Cloudways
 5. Bofya "Hifadhi Mabadiliko"
 
-## Jinsi Unavyofanya Kazi
+## Jinsi Unavyofanya Kazi {#how-it-works}
 
-### Usawazishaji wa Domain
+### Usawazishaji wa Domain {#domain-syncing}
 
 Domain inapounganishwa katika Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Domain inapounganishwa katika Ultimate Multisite:
 
 Kumbuka: Cloudways API inahitaji kutuma orodha kamili ya domain kila wakati, si kuongeza au kuondoa domain moja moja tu.
 
-### Usimamizi wa Cheti cha SSL
+### Usimamizi wa Cheti cha SSL {#ssl-certificate-management}
 
 Baada ya domain kusawazishwa:
 
@@ -106,7 +106,7 @@ muunganisho huu. Ili kutumia cheti cha wildcard kwenye Cloudways ungelazimika ku
 kwa mkono, lakini kufanya hivyo huzuia utoaji wa Let's Encrypt kwa kila domain kwa domain maalum zilizounganishwa
 (tazama mtego hapa chini).
 
-## Domain za Ziada
+## Domain za Ziada {#extra-domains}
 
 Constant ya `WU_CLOUDWAYS_EXTRA_DOMAINS` hukuruhusu kubainisha domain za ziada **za nje**
 ambazo zinapaswa kuwekwa daima kwenye orodha ya aliases ya programu ya Cloudways. Itumie kwa:
@@ -117,7 +117,7 @@ ambazo zinapaswa kuwekwa daima kwenye orodha ya aliases ya programu ya Cloudways
 **Usitumie** constant hii kwa wildcard ya subdomain ya mtandao wako mwenyewe
 (mf. `*.your-network.com`). Tazama mtego wa wildcard SSL hapa chini.
 
-## Muhimu — Mtego wa Wildcard SSL
+## Muhimu — Mtego wa Wildcard SSL {#important--wildcard-ssl-pitfall}
 
 Kosa la kawaida unapofuata usanidi chaguomsingi wa Cloudways ni kuongeza wildcard kama
 `*.your-network.com` kwenye `WU_CLOUDWAYS_EXTRA_DOMAINS`, au kusakinisha kwa mkono cheti cha
@@ -128,7 +128,7 @@ za kila mpangaji ambazo Ultimate Multisite huunganisha.** Cloudways hubadilisha 
 SSL kwenye programu kila wakati, na cheti cha wildcard kilichopo awali kwenye
 programu huzuia utoaji wa Let's Encrypt kwa kila domain ambao muunganisho unautegemea.
 
-### Usanidi wa SSL wa Cloudways unaopendekezwa kwa mtandao wa Ultimate Multisite
+### Usanidi wa SSL wa Cloudways unaopendekezwa kwa mtandao wa Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Katika kichupo cha **Cheti cha SSL** cha programu ya Cloudways, sakinisha cheti cha **kawaida
    cha Let's Encrypt** kinachofunika tu `your-network.com` na `www.your-network.com`
@@ -146,20 +146,20 @@ kwa domain kuu ya network pekee, na uondoe maingizo yoyote ya wildcard kutoka
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Kisha anzisha tena domain mapping (au subiri inayofuata)
 na muunganisho utaanza kutoa vyeti vya kila domain tena.
 
-## Utatuzi wa Matatizo
+## Utatuzi wa Matatizo {#troubleshooting}
 
-### Matatizo ya Muunganisho wa API
+### Matatizo ya Muunganisho wa API {#api-connection-issues}
 - Thibitisha kuwa email yako na API key ni sahihi
 - Angalia kuwa IDs za server na application zako ni sahihi
 - Hakikisha kuwa Account yako ya Cloudways ina ruhusa zinazohitajika
 
-### Matatizo ya Cheti cha SSL
+### Matatizo ya Cheti cha SSL {#ssl-certificate-issues}
 - Cloudways inahitaji domains ziwe na rekodi halali za DNS zinazoelekeza kwenye server yako kabla ya kutoa vyeti vya SSL
 - Muunganisho huthibitisha rekodi za DNS kabla ya kuomba vyeti vya SSL
 - Ikiwa vyeti vya SSL havitolewi, angalia kuwa domains zako zinaelekeza ipasavyo kwenye anwani ya IP ya server yako
 - **Domains maalum za kila tenant zimekwama bila SSL?** Angalia kichupo cha SSL Certificate cha application ya Cloudways. Ikiwa cheti cha wildcard (kilichosakinishwa kwa mkono, au kinachofunika `*.your-network.com`) kinatumika, Cloudways haitatoa vyeti vya Let's Encrypt kwa domains maalum zilizofanyiwa mapping moja moja. Kibadilishe kwa cheti cha kawaida cha Let's Encrypt kinachofunika tu domain kuu ya network (`your-network.com`, `www.your-network.com`) na uondoe maingizo yoyote ya wildcard kutoka `WU_CLOUDWAYS_EXTRA_DOMAINS`. Kisha anzisha tena domain mapping (au subiri inayofuata) na muunganisho utaomba vyeti vya kila domain.
 
-### Domain Haijaongezwa
+### Domain Haijaongezwa {#domain-not-added}
 - Angalia logs za Ultimate Multisite kwa ujumbe wowote wa hitilafu
 - Thibitisha kuwa domain haijaongezwa tayari kwenye Cloudways
 - Hakikisha kuwa plan yako ya Cloudways inaauni idadi ya domains unazoongeza

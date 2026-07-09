@@ -3,13 +3,13 @@ title: Index mutationum tesserarum subsidii
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Tabula mutationum tesserarum auxilii
+# Tabula mutationum tesserarum auxilii {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Emendatum: Directorium vendor/ e vestigatione Git remotum est (iam a .gitignore tectum), magnitudine repositorii redacta
 * Emendatum: Usque ad WordPress 7.0 probatum
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Correctum: Valores null in constitutoribus exemplaris tesserae nullable accipiuntur
 * Correctum: Omnes tesserae in tabulis globalibus per totam retis servantur ad aptum auxilium multisiti
 * Correctum: Campi curatorum celantur et redirectio paginae vacuae in forma novae tesserae emptoris corrigitur
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Emendatum: Res frontend conditionaliter tantum in paginis tesserarum auxilii onerantur
 * Emendatum: Autoloader plugin praeteritur cum autoloader radicis Bedrock dependentias iam oneravit
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Additum: Plena functio inspiciendarum tesserarum pro administratione et frontend
 * Additum: Tractator AJAX pro submissionibus responsionum tesserae
 * Additum: Auxilium functionis responsionum tesserae cum recta tractatione formae
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Emendatum: Structura datorum cum rectis classibus interrogationis et schemae pro responsionibus et adiunctionibus
 * Emendatum: Migratio ad proprietates reales loco attributorum pro exemplaribus tesserarum
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Renovatum: Praefixum in ultimate-multisite mutatum est propter constantiam
 * Renovatum: Standardizatio domini textus
 * Correctum: Minores errores correcti et emendationes
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Prima editio
 * Systema completum administrationis tesserarum
 * Moderatio accessus multiplex graduum

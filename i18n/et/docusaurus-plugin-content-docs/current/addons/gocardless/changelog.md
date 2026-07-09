@@ -3,7 +3,7 @@ title: GoCardlessi muudatuste logi
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardlessi muudatuste logi
+# GoCardlessi muudatuste logi {#gocardless-changelog}
 
 Versioon: 1.0.3 - Välja antud 2026-05-05
 * Parandus: orvuks jäänud ootel saidid puhastatakse nüüd, kui GoCardlessi liikmesus tühistatakse ootel või peatatud olekus

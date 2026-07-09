@@ -3,11 +3,11 @@ title: Mga Produkto ug Presyo sa Domain
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Mga Produkto sa Domain ug Presyo
+# Mga Produkto sa Domain ug Presyo {#domain-products-and-pricing}
 
 Ang mga domain product mao kung giun nimo kontrolado ang pagpresyo, TLDs (Top-Level Domains), WHOIS privacy, ug pagpili sa provider. Ang matag domain product kay usa ka standard Multisite Ultimate product nga adunay extra **Domain Settings** tab.
 
-## Paghimo og domain product
+## Paghimo og domain product {#creating-a-domain-product}
 
 1. Adto sa **Network Admin › Ultimate Multisite › Products**
 2. I-click ang **Add New**
@@ -17,13 +17,13 @@ Ang mga domain product mao kung giun nimo kontrolado ang pagpresyo, TLDs (Top-Le
 
 Ang mga domain product modama nga adunay usa ka purpura nga **Domain** badge sa listahan sa produkto ug mahimong i-filter gamit ang **Domain Products** tab.
 
-## Domain settings tab
+## Domain settings tab {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Pili kung kinsa ang registrar nga mag-handle sa registration para niining product. Ang default kay ang global nga **Default provider** nga ghitak sa Domain Seller settings.
 
-### Supported TLDs
+### Supported TLDs {#supported-tlds}
 
 Biyaan kini nga walay sulod aron makaporma og usa ka **catch-all product** nga magamit sa tanang TLDs nga wala matabangan sa lain nga product.
 
@@ -31,7 +31,7 @@ Isulod ang usa ka listahan nga gihubad sa koma sa mga TLD (pananglitan, `.com, .
 
 **Unsaon pagtrabaho ang product matching:** Kung mangita ang customer og domain, ang addon mopili sa labing espesipiko nga matching product. Ang product nga adunay `.com` sa listahan sa TLD ni mas unahon kaysa sa catch-all product. Kung walay TLD-specific product nga magmatch, gamiton ang catch-all. Kung walay mga produkto, dili ipakita ang pagpangita og domain.
 
-### Markup type
+### Markup type {#markup-type}
 
 Tulo ka modes ang nagkontrol kung giun gihimo ang imong retail price gikan sa wholesale cost:
 
@@ -41,11 +41,11 @@ Tulo ka modes ang nagkontrol kung giun gihimo ang imong retail price gikan sa wh
 | **Fixed markup** | Nagdadagdag og usa ka fixed nga kantidad sa kwarta. Ang $5 markup sa usa ka $10 nga domain naghatag og $15. |
 | **Fixed price** | Wala kini mag-alagad ang wholesale cost bisan unsa pa. Kanunay kining mangayo sa kantidad nga imong isulod. |
 
-### Introductory pricing
+### Introductory pricing {#introductory-pricing}
 
 Pahiyag sa paghatag og discounted nga presyo sa unang tuig. Magbutang og lahi nga **Introductory price** (presyo sa una nga tuig) uban sa regular nga **Renewal price** (para sa tuig 2 pataas). Makita sa customer ang duha ka presyo inang checkout para masayod sila unsa ang ilang mahimong expectar sa renewal.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 Nagkontrol kung gihatag ba og WHOIS privacy protection alang sa mga domain nga nagparehistro pinaagi niining produkto.
 
@@ -59,7 +59,7 @@ Para sa Namecheap, ang WHOIS privacy naggamit og WhoisGuard (luwas gihapon). Par
 
 ---
 
-## TLD import ug sync
+## TLD import ug sync {#tld-import-and-sync}
 
 Ang mga domain product nagpakita sa real-time nga wholesale pricing nga kuha gikan sa konektadong provider. Aron molihok kini, kinahanglan i-import ang mga TLDs.
 
@@ -70,7 +70,7 @@ Human sa sync, adto sa bisan unsang domain product's Domain Settings tab ug gami
 
 ---
 
-## Auto-renewal
+## Auto-renewal {#auto-renewal}
 
 Ang renewal sa domain gihubad sa membership status sa customer:
 
@@ -90,7 +90,7 @@ Email template IDs para sa domain lifecycle events:
 
 ---
 
-## Admin: Manual domain registration
+## Admin: Manual domain registration {#admin-manual-domain-registration}
 
 Para magparehistro og domain alang sa usa ka customer nga dili moagi sa checkout:
 

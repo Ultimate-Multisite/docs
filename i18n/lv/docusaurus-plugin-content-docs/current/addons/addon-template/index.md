@@ -3,25 +3,25 @@ title: Papildinājuma veidne
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon veidne
+# Addon veidne {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Prasības
+## Prasības {#requirements}
 
 - WordPress 5.3 vai jaunāka
 - PHP 7.4 vai jaunāka
 - Multisite Ultimate plugin (aktīvs)
 
-## Instalēšana
+## Instalēšana {#installation}
 
 1. Augšupielādējiet papildinājuma failus savā `/wp-content/plugins/` direktorijā
 2. Aktivizējiet plugin, izmantojot WordPress izvēlni 'Plugins'
 3. Konfigurējiet papildinājuma iestatījumus tīkla administrācijā
 
-## Izstrāde
+## Izstrāde {#development}
 
-### Iestatīšana
+### Iestatīšana {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projekta struktūra
+### Projekta struktūra {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Koda modernizācijas noteikumi
 ```
 
-### Testēšana
+### Testēšana {#testing}
 
 Papildinājums ietver visaptverošu testēšanas ietvaru:
 
@@ -75,44 +75,44 @@ Papildinājums ietver visaptverošu testēšanas ietvaru:
 - **Testu pārklājums**: Konfigurēts koda pārklājuma izsekošanai
 - **Multisite testēšana**: Testi darbojas multisite vidē
 
-### Koda standarti
+### Koda standarti {#code-standards}
 
 - **WordPress Coding Standards**: Tiek ievēroti, izmantojot PHPCS
 - **PHP 7.4+ saderība**: Atbalstītas modernas PHP funkcijas
 - **Statiskā analīze**: PHPStan integrācija tipu pārbaudei
 - **Koda modernizācija**: Rector noteikumi PHP jauninājumiem
 
-### Būvēšanas sistēma
+### Būvēšanas sistēma {#build-system}
 
 - **Resursu apstrāde**: CSS/JS failu minimizācija
 - **Tulkošana**: POT faila ģenerēšana
 - **Iepakošana**: Arhīva izveide izplatīšanai
 - **Izstrādes režīms**: Neminimizēti resursi atkļūdošanai
 
-## Konfigurācija
+## Konfigurācija {#configuration}
 
 Papildinājums atbalsta dažādas konfigurācijas opcijas, kas pieejamas tīkla administrācijas saskarnē.
 
-## Āķi un filtri
+## Āķi un filtri {#hooks-and-filters}
 
-### Darbības
+### Darbības {#actions}
 
 - `ultimate-multisite-addon-template_init` - Tiek palaists pēc papildinājuma inicializācijas
 - `ultimate-multisite-addon-template_loaded` - Tiek palaists pēc visu papildinājuma failu ielādes
 
-### Filtri
+### Filtri {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Mainīt papildinājuma iestatījumus
 - `ultimate-multisite-addon-template_enabled` - Pārrakstīt papildinājuma iespējotas/atspējotas statusu
 
-## Licence
+## Licence {#license}
 
 Šis papildinājums ir licencēts saskaņā ar GPL v3 vai jaunāku versiju.
 
-## Atbalsts
+## Atbalsts {#support}
 
 Lai saņemtu atbalstu un dokumentāciju, apmeklējiet [MultisiteUltimate.com](https://multisiteultimate.com)
-## Izmaiņu žurnāls
+## Izmaiņu žurnāls {#changelog}
 
 - Versija 1.0.1 (2025-09-28): pārdēvēt prefiksu uz ultimate-multisite; atjaunināt teksta domēnu; versijas palielinājums.
 

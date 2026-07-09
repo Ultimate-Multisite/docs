@@ -3,11 +3,11 @@ title: Compétence en spécifications de site
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Fonctionnalité de spécification de site
+# Fonctionnalité de spécification de site {#site-specification-skill}
 
 La **fonctionnalité de spécification de site** est une approche structurée pour capturer les objectifs, le public et l'identité de marque de votre site. Ces informations sont stockées dans votre mémoire **site_brief**, que les agents consultent au fil des sessions pour fournir une assistance cohérente et contextuelle.
 
-## Qu'est-ce que la spécification de site ?
+## Qu'est-ce que la spécification de site ? {#what-is-site-specification}
 
 La spécification de site est le processus de documentation des éléments suivants :
 
@@ -19,9 +19,9 @@ La spécification de site est le processus de documentation des éléments suiva
 
 Cette spécification devient votre **site_brief**, une mémoire persistante que les agents utilisent pour comprendre le contexte de votre site.
 
-## Pourquoi utiliser la spécification de site ?
+## Pourquoi utiliser la spécification de site ? {#why-use-site-specification}
 
-### Cohérence entre les sessions
+### Cohérence entre les sessions {#consistency-across-sessions}
 
 Sans site_brief, vous devriez réexpliquer l'objectif de votre site chaque fois que vous commencez une nouvelle session. Avec lui, les agents comprennent immédiatement :
 
@@ -30,7 +30,7 @@ Sans site_brief, vous devriez réexpliquer l'objectif de votre site chaque fois 
 - La structure de votre contenu
 - Vos objectifs commerciaux
 
-### Des recommandations améliorées
+### Des recommandations améliorées {#better-recommendations}
 
 Les agents utilisent votre site_brief pour :
 
@@ -39,17 +39,17 @@ Les agents utilisent votre site_brief pour :
 - Proposer des designs cohérents avec votre marque
 - Éviter de suggérer des fonctionnalités incompatibles
 
-### Un démarrage plus rapide
+### Un démarrage plus rapide {#faster-onboarding}
 
 Les nouveaux agents (ou les agents dans de nouvelles sessions) peuvent se mettre au point rapidement en lisant votre site_brief au lieu de poser des questions de clarification.
 
-## Lancement de la spécification de site
+## Lancement de la spécification de site {#initiating-site-specification}
 
-### Pendant l'intégration de Theme Builder
+### Pendant l'intégration de Theme Builder {#during-theme-builder-onboarding}
 
 La fonctionnalité de spécification de site est automatiquement lancée pendant le **flux d'intégration de Theme Builder**. L'agent Assistant de configuration pose des questions et construit votre site_brief.
 
-### Lancement manuel
+### Lancement manuel {#manual-initiation}
 
 Vous pouvez démarrer la spécification de site à tout moment :
 
@@ -63,9 +63,9 @@ ou
 "Aidez-moi à créer un site brief"
 ```
 
-## Le processus de spécification de site
+## Le processus de spécification de site {#the-site-specification-process}
 
-### Étape 1 : Objectif du site
+### Étape 1 : Objectif du site {#step-1-site-purpose}
 
 L'agent demande :
 
@@ -81,7 +81,7 @@ Quel est l'objectif principal de votre site ?
 
 Vous pouvez sélectionner une catégorie ou décrire votre propre objectif.
 
-### Étape 2 : Public cible
+### Étape 2 : Public cible {#step-2-target-audience}
 
 ```
 Quel est votre public principal ?
@@ -94,7 +94,7 @@ Quel est votre public principal ?
 Quels sont leurs besoins principaux ?
 ```
 
-### Étape 3 : Identité de marque
+### Étape 3 : Identité de marque {#step-3-brand-identity}
 
 ```
 Quelles sont les couleurs de votre marque ?
@@ -110,7 +110,7 @@ Comment décririez-vous le ton de votre marque ?
 - Chaleureux / amical
 ```
 
-### Étape 4 : Objectifs commerciaux
+### Étape 4 : Objectifs commerciaux {#step-4-business-goals}
 
 ```
 À quoi ressemble le succès pour votre site ?
@@ -129,7 +129,7 @@ Quelle est votre métrique principale ?
 - Autre
 ```
 
-### Étape 5 : Structure du contenu
+### Étape 5 : Structure du contenu {#step-5-content-structure}
 
 ```
 Comment votre contenu est-il organisé ?
@@ -148,7 +148,7 @@ Quels types de contenu utilisez-vous ?
 - Autre
 ```
 
-## Votre mémoire site_brief
+## Votre mémoire site_brief {#your-sitebrief-memory}
 
 Après avoir terminé la spécification de site, vos informations sont stockées sous la forme **site_brief** dans la mémoire de votre agent. Il s'agit d'un enregistrement structuré contenant :
 
@@ -169,9 +169,9 @@ Après avoir terminé la spécification de site, vos informations sont stockées
 }
 ```
 
-## Visualiser et mettre à jour votre site_brief
+## Visualiser et mettre à jour votre site_brief {#viewing-and-updating-your-sitebrief}
 
-### Voir votre site_brief
+### Voir votre site_brief {#view-your-sitebrief}
 
 Demandez à l'agent :
 
@@ -187,7 +187,7 @@ ou
 
 L'agent affichera votre spécification enregistrée.
 
-### Mettre à jour votre site_brief
+### Mettre à jour votre site_brief {#update-your-sitebrief}
 
 Si votre site évolue, vous pouvez le mettre à jour :
 
@@ -203,9 +203,9 @@ ou
 
 Ceci relancera la fonctionnalité de spécification de site en utilisant vos informations existantes comme point de départ.
 
-## Comment les agents utilisent site_brief
+## Comment les agents utilisent site_brief {#how-agents-use-sitebrief}
 
-### Recommandations de design
+### Recommandations de design {#design-recommendations}
 
 Lorsque vous demandez des modifications de design, les agents consultent votre site_brief :
 
@@ -216,7 +216,7 @@ avec un ton chaleureux et artisanal. Je vais créer un design qui met l'accent
 sur vos bijoux faits main et vos valeurs de durabilité."
 ```
 
-### Suggestions de fonctionnalités
+### Suggestions de fonctionnalités {#feature-suggestions}
 
 Les agents suggèrent des fonctionnalités alignées sur vos objectifs :
 
@@ -227,7 +227,7 @@ je recommanderais : un programme de fidélité, des avis clients, une newsletter
 et des suggestions de produits."
 ```
 
-### Structure du contenu
+### Structure du contenu {#content-structure}
 
 Les agents proposent une organisation du contenu basée sur votre structure :
 
@@ -238,16 +238,16 @@ d'organiser les articles par catégorie de produits et de créer des 'guides de 
 qui présentent plusieurs produits ensemble."
 ```
 
-## Bonnes pratiques
+## Bonnes pratiques {#best-practices}
 
-### Soyez précis
+### Soyez précis {#be-specific}
 
 Au lieu de "public général", décrivez votre public réel :
 
 - ✓ "Femmes âgées de 25 à 45 ans, intéressées par la mode durable"
 - ✗ "Tout le monde"
 
-### Mettez à jour régulièrement
+### Mettez à jour régulièrement {#update-regularly}
 
 À mesure que votre site évolue, mettez à jour votre site_brief :
 
@@ -256,14 +256,14 @@ Au lieu de "public général", décrivez votre public réel :
 - Lorsque votre identité de marque change
 - Lorsque vos objectifs commerciaux changent
 
-### Utilisez une terminologie cohérente
+### Utilisez une terminologie cohérente {#use-consistent-terminology}
 
 Utilisez les mêmes termes au cours des sessions :
 
 - ✓ Dites toujours "bijoux durables" (et non "bijoux écologiques" et "produits verts")
 - ✓ Faites toujours référence à votre public de la même manière
 
-### Incluez le contexte
+### Incluez le contexte {#include-context}
 
 Fournissez des informations de fond qui aident les agents à comprendre vos décisions :
 
@@ -271,7 +271,7 @@ Fournissez des informations de fond qui aident les agents à comprendre vos déc
 - "Notre public est technophile et s'attend à un design moderne"
 - "Nous sommes une startup autofinancée, nous avons donc besoin de solutions rentables"
 
-## Relation avec l'intégration de Theme Builder
+## Relation avec l'intégration de Theme Builder {#relationship-to-theme-builder-onboarding}
 
 La fonctionnalité de spécification de site est intégrée au **flux d'intégration de Theme Builder**. Lorsque vous terminez l'intégration, votre site_brief est automatiquement créé avec les informations que vous avez fournies.
 
@@ -281,7 +281,7 @@ Vous pouvez également exécuter la spécification de site de manière indépend
 - Mettre à jour votre site brief à mesure que votre site évolue
 - Créer une spécification détaillée avant de commencer Theme Builder
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
 **Mon site_brief n'est pas utilisé**
 - Confirmez que l'agent a accès à la mémoire
@@ -297,7 +297,7 @@ Vous pouvez également exécuter la spécification de site de manière indépend
 - Mettez à jour votre site_brief s'il est obsolète
 - Fournissez un contexte supplémentaire dans vos requêtes
 
-## Prochaines étapes
+## Prochaines étapes {#next-steps}
 
 Après avoir défini votre spécification de site :
 

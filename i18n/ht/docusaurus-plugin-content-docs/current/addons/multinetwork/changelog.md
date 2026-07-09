@@ -3,9 +3,9 @@ title: Jounal chanjman plizyè rezo
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Chanjman Multi-Network
+# Chanjman Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nouvo: Aparèy pou prevwa modèl rezo — navige epi prevwa modèl rezo yo ak yon panèl an dirèk anvan ou achte.
 * Nouvo: Chwazi modèl rezo nan checkout — kliyan yo ka chwazi yon modèl rezo pandan koule checkout enskripsyon an.
 * Nouvo: SSO magic link atravè rezo — kliyan yo ka jwenn aksè nan sou-rezo yo san pwoblèm atravè otantifikasyon magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Koreksyon: Pwoteksyon kont kle `network_id` ki pa defini nan dimansyon rechèch sit la.
 * Koreksyon: Verifikasyon pèmisyon rezo anvan chanjman kontèks anpeche erè pwopriyete tab `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Koreksyon: Kreyasyon nouvo rezo.
 * Koreksyon: Rann meni yo.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Mizajou pou Plugin Update Checker v5
 * Ajoute antèt plugin WordPress modèn
 * Amelyore konpatibilite ak dènye vèsyon WordPress yo
 
-### 1.0.2
+### 1.0.2 {#102}
 * Koreksyon ensèk ak amelyorasyon pèfòmans
 * Izolasyon rezo amelyore
 
-### 1.0.0
+### 1.0.0 {#100}
 * Premye vèsyon
 * Fonksyonalite debaz milti-rezo
 * Entegrasyon ak Multisite Ultimate

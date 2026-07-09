@@ -4,11 +4,11 @@ title: ການກະທຳ - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# ການກະທຳ: set_auth_cookie
+# ການກະທຳ: set_auth_cookie {#action-setauthcookie}
 
 ເຮັດວຽກທັນທີກ່ອນທີ່ຄຸກກີການຢືນຢັນຕົວຕົນຈະຖືກຕັ້ງຄ່າ.
 
-## ພາລາມິເຕີ
+## ພາລາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | ແບບແຜນການຢືນຢັນຕົວຕົນ. ຄ່າປະກອບມີ 'auth' ຫຼື 'secure_auth'. |
 | $token | `string` | token ເຊສຊັນຂອງຜູ້ໃຊ້ທີ່ຈະໃຊ້ສຳລັບຄຸກກີນີ້. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ຖືກກຳນົດໄວ້ໃນ [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ທີ່ບັນທັດ 124

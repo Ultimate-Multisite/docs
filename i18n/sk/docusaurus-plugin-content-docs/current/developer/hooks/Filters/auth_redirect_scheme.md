@@ -4,19 +4,19 @@ title: Filter - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme
+# Filter: auth_redirect_scheme {#filter-authredirectscheme}
 
 Filtruje schému presmerovania overovania.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
 | $scheme | `string` | Schéma presmerovania overovania. Predvolene prázdne. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.9.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212) na riadku 212

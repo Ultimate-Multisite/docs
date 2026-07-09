@@ -1,22 +1,22 @@
 ---
 title: Integrasi Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrasi Hostinger (hPanel)
+# Integrasi Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Ikhtisar
+## Ikhtisar {#overview}
 
 Hostinger adalah penyedia web hosting populer dengan panel kontrol modern bernama hPanel. Integrasi Ultimate Multisite Hostinger memungkinkan sinkronisasi domain otomatis antara Ultimate Multisite dan hPanel Hostinger, sehingga Anda dapat mengelola pemetaan domain dan subdomain secara otomatis langsung dari admin WordPress Anda.
 
-## Fitur
+## Fitur {#features}
 
 - Pembuatan domain tambahan (addon domain) otomatis di hPanel
 - Pembuatan subdomain otomatis di hPanel (untuk instalasi multisite subdomain)
 - Penghapusan domain ketika pemetaan dihapus
 - Integrasi mulus dengan API manajemen domain hPanel
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 Untuk menggunakan integrasi Hostinger, Anda memerlukan:
 
@@ -35,9 +35,9 @@ Secara opsional, Anda juga dapat mendefinisikan:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Endpoint API default
 ```
 
-## Petunjuk Pengaturan
+## Petunjuk Pengaturan {#setup-instructions}
 
-### 1. Buat Token API Hostinger Anda
+### 1. Buat Token API Hostinger Anda {#1-generate-your-hostinger-api-token}
 
 1. Masuk ke akun Hostinger Anda dan akses hPanel
 2. Arahkan ke **Pengaturan Akun** → **Token API**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Endpoint API 
    - Manajemen subdomain
 6. Salin token yang dihasilkan dan simpan dengan aman
 
-### 2. Temukan ID Akun Anda
+### 2. Temukan ID Akun Anda {#2-find-your-account-id}
 
 1. Di hPanel, buka **Pengaturan Akun** → **Informasi Akun**
 2. ID Akun Anda ditampilkan di halaman ini
 3. Salin dan simpan ID ini untuk langkah berikutnya
 
-### 3. Tambahkan Konstanta ke wp-config.php
+### 3. Tambahkan Konstanta ke wp-config.php {#3-add-constants-to-wp-configphp}
 
 Tambahkan konstanta berikut ke file `wp-config.php` Anda:
 
@@ -69,7 +69,7 @@ Jika akun Hostinger Anda menggunakan endpoint API yang berbeda, Anda dapat menye
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Aktifkan Integrasi
+### 4. Aktifkan Integrasi {#4-enable-the-integration}
 
 1. Di admin WordPress Anda, buka **Ultimate Multisite > Pengaturan**
 2. Arahkan ke tab **Pemetaan Domain**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Aktifkan integrasi **Hostinger (hPanel)**
 5. Klik **Simpan Perubahan**
 
-## Cara Kerjanya
+## Cara Kerjanya {#how-it-works}
 
-### Domain Tambahan (Addon Domains)
+### Domain Tambahan (Addon Domains) {#addon-domains}
 
 Ketika Anda memetakan domain di Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Ketika Anda memetakan domain di Ultimate Multisite:
 2. Domain dikonfigurasi untuk menunjuk ke direktori utama Anda
 3. Ketika pemetaan domain dihapus, integrasi secara otomatis menghapus domain tambahan dari hPanel
 
-### Subdomain
+### Subdomain {#subdomains}
 
 Untuk instalasi multisite subdomain, ketika situs baru dibuat:
 
@@ -95,7 +95,7 @@ Untuk instalasi multisite subdomain, ketika situs baru dibuat:
 2. Ia mengirim permintaan ke API Hostinger untuk menambahkan subdomain
 3. Subdomain dikonfigurasi untuk menunjuk ke direktori utama Anda
 
-## Catatan Penting
+## Catatan Penting {#important-notes}
 
 - Integrasi menggunakan REST API Hostinger untuk berkomunikasi dengan akun Anda
 - Token API Anda harus memiliki izin yang diperlukan untuk manajemen domain dan subdomain
@@ -103,33 +103,33 @@ Untuk instalasi multisite subdomain, ketika situs baru dibuat:
 - Permintaan API dibuat dengan aman melalui HTTPS
 - Jaga kerahasiaan token API Anda dan jangan pernah membagikannya di tempat umum
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
-### Masalah Koneksi API
+### Masalah Koneksi API {#api-connection-issues}
 
 - Verifikasi bahwa token API Anda benar dan belum kedaluwarsa
 - Periksa apakah ID Akun Anda sudah benar
 - Pastikan token API Anda memiliki izin yang diperlukan untuk manajemen domain
 - Verifikasi bahwa akun Hostinger Anda aktif dan dalam kondisi baik
 
-### Domain Tidak Ditambahkan
+### Domain Tidak Ditambahkan {#domain-not-added}
 
 - Periksa log Ultimate Multisite untuk pesan kesalahan apa pun
 - Verifikasi bahwa domain belum ditambahkan ke akun Hostinger Anda
 - Pastikan akun Hostinger Anda belum mencapai batas domain tambahan
 - Konfirmasi bahwa domain menunjuk dengan benar ke nameserver Hostinger Anda
 
-### Masalah Sertifikat SSL
+### Masalah Sertifikat SSL {#ssl-certificate-issues}
 
 - Integrasi tidak menangani penerbitan sertifikat SSL
 - Hostinger biasanya menyediakan sertifikat SSL gratis melalui AutoSSL
 - Anda dapat mengelola sertifikat SSL langsung di hPanel di bawah **SSL/TLS**
 - Sebagai alternatif, gunakan Let's Encrypt dengan fitur AutoSSL Hostinger
 
-## Dukungan
+## Dukungan {#support}
 
 Untuk bantuan tambahan mengenai integrasi Hostinger, silakan merujuk ke:
 
 - [Dokumentasi API Hostinger](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Dokumentasi Ultimate Multisite](/docs)
+- [Dokumentasi Ultimate Multisite](/)
 - [Dukungan Ultimate Multisite](https://ultimatemultisite.com/support)

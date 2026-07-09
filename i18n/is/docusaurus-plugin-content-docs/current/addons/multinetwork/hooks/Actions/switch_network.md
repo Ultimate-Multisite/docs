@@ -4,20 +4,20 @@ title: Aðgerð - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Aðgerð: switch_network
+# Aðgerð: switch_network {#action-switchnetwork}
 
 Keyrist þegar skipt er um núverandi netsamhengi.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Heiti | Tegund | Lýsing |
 |------|------|-------------|
 | $new_network_id | `int` | ID netsins sem verið er að skipta yfir í. |
 | $old_network_id | `int` | ID netsins sem áður var núverandi. |
 
-### Frá útgáfu
+### Frá útgáfu {#since}
 
 - 1.3.0
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L859) í línu 859

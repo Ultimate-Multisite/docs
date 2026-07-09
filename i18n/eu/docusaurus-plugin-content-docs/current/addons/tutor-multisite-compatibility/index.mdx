@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 WordPress gehigarri bat, multisite inguruneetan Tutor LMS-erako bateragarritasun-konponketak gehitzen dituena.
 
-## Deskribapena
+## Deskribapena {#description}
 
 Gehigarri honek ezinbesteko bateragarritasun-konponketak eskaintzen ditu Tutor LMS WordPress multisite sareetan exekutatzeko. Erabiltzaileen matrikulazioa, irakasleen kudeaketa, ikastaro-mugak eta multisite-ri berariazko beste funtzionalitate batzuk kudeatzen ditu.
 
-## Ezaugarriak
+## Ezaugarriak {#features}
 
 - **Datu-baseko taulen kudeaketa**: Multisite-ren kanpo-gakoen murrizketengatik huts egiten duten falta diren Tutor LMS taulak automatikoki detektatu eta sortzen ditu
 - **Multisite erabiltzaileen matrikulazioa**: Sareko guneen artean erabiltzaileen matrikulazioa kudeatzeko AJAX kudeatzaile pertsonalizatuak
@@ -24,7 +24,7 @@ Gehigarri honek ezinbesteko bateragarritasun-konponketak eskaintzen ditu Tutor L
 - **Administrazio-ikuspegi pertsonalizatuak**: Multisite kontuan hartzen duen irakasleen zerrenda eta kudeaketa-interfazea
 - **Administrazio-tresnak**: Datu-basea kudeatzeko interfazea sareko eta guneko administratzaileentzat
 
-## Eskakizunak
+## Eskakizunak {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Gehigarri honek ezinbesteko bateragarritasun-konponketak eskaintzen ditu Tutor L
 - WordPress Multisite instalazioa
 - Ultimate Multisite gehigarria (ikastaro-mugen funtzionalitaterako)
 
-## Instalazioa
+## Instalazioa {#installation}
 
 1. Kargatu gehigarriaren fitxategiak hona: `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Ziurtatu Tutor LMS instalatuta eta aktibatuta dagoela
 3. Aktibatu gehigarria WordPress-eko 'Gehigarriak' menuaren bidez
 4. Gehigarria automatikoki integratuko da Tutor LMS-ekin
 
-## Fitxategi-egitura
+## Fitxategi-egitura {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## MU plugin-etik mugitutako funtzionalitatea
+## MU plugin-etik mugitutako funtzionalitatea {#functionality-moved-from-mu-plugin}
 
 Gehigarri honek lehen `wp-content/mu-plugins/daves.php` fitxategian zegoen funtzionalitatea dauka:
 
@@ -71,9 +71,9 @@ Gehigarri honek lehen `wp-content/mu-plugins/daves.php` fitxategian zegoen funtz
 - Multisite erabiltzaileen matrikulazioaren kudeaketa
 - Ikastaro-produktuaren ID bistaratzea
 
-## Datu-basearen kudeaketa
+## Datu-basearen kudeaketa {#database-management}
 
-### Arazoa
+### Arazoa {#the-problem}
 
 WordPress multisite inguruneetan, Tutor LMS taulen sorrera huts egiten du erabiltzaileen taularako kanpo-gakoen murrizketak dituzten tauletan. Hau gertatzen da zeren:
 
@@ -81,7 +81,7 @@ WordPress multisite inguruneetan, Tutor LMS taulen sorrera huts egiten du erabil
 - Kanpo-gakoek `wp_2_users` erreferentziatzen dute (ez da existitzen)
 - Benetako erabiltzaileen taula `wp_users` da (sare osoan partekatua)
 
-### Konponbidea
+### Konponbidea {#the-solution}
 
 Gehigarri honek automatikoki:
 
@@ -92,13 +92,13 @@ Gehigarri honek automatikoki:
    - Sarean gune berria sortzea
    - Administrazio-interfazearen bidez taulak eskuz egiaztatzea
 
-### Eragindako taulak
+### Eragindako taulak {#affected-tables}
 
 - `tutor_coupon_usages` - Erabiltzaileen taularako kanpo-gakoa dauka
 - `tutor_carts` - Erabiltzaileen taularako kanpo-gakoa dauka
 - `tutor_notification_preferences` - Erabiltzaileen taularako kanpo-gakoa duen TutorPro taula
 
-### Administrazio-interfazea
+### Administrazio-interfazea {#admin-interface}
 
 Sartu datu-basea kudeatzeko tresnetara hemen:
 
@@ -111,6 +111,6 @@ Interfazeak aukera ematen dizu:
 - Datu-basearen konfigurazioa egiaztatzeko
 - Egoera-informazio xehea ikusteko
 
-## Laguntza
+## Laguntza {#support}
 
 Gehigarri hau KursoPro plataformarako berariaz diseinatuta dago. Laguntza teknikorako, jarri harremanetan garapen-taldearekin.

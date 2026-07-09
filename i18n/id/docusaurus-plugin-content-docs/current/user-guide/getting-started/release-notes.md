@@ -3,9 +3,9 @@ title: Catatan Rilis
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Catatan Rilis
+# Catatan Rilis {#release-notes}
 
-## Versi 2.13.0 — Dirilis pada 2026-06-05
+## Versi 2.13.0 — Dirilis pada 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Baru: Menambahkan dukungan sovereign-tenant untuk alur Account pelanggan, checkout, penagihan, situs, faktur, pergantian templat, dan pemetaan domain sehingga jaringan tenant dapat mengarahkan pelanggan kembali ke situs utama untuk tindakan terkelola.
 - Baru: Menambahkan pemeriksaan kredensial perpanjangan untuk membership berulang sehingga gateway dapat menonaktifkan perpanjangan otomatis ketika perjanjian penagihan tersimpan, langganan, atau vault token tidak ada.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: Kasus tepi perpanjangan membership, tampilan kedaluwarsa, dan pengumpulan pembayaran kini menghindari kedaluwarsa langsung, crash, atau pembayaran wajib yang terlewat.
 - Ditingkatkan: Kompatibilitas WordPress diuji hingga 7.0, aset Vue produksi dibangun ulang dari sumber npm, dan cakupan end-to-end Cypress kini menguji lebih banyak alur checkout, setup, SSO, dan gateway.
 
-## Versi 2.12.0 — Dirilis pada 2026-05-15
+## Versi 2.12.0 — Dirilis pada 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Baru: Menambahkan Hostinger (hPanel) sebagai penyedia host yang didukung dengan integrasi pemetaan domain
 - Baru: Site Exporter kini menangani bundel impor jaringan untuk pemulihan situs seluruh jaringan yang lebih ringkas
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: CLI Site Exporter kini mempertahankan pilihan situs jaringan default yang benar
 - Ditingkatkan: Menghapus wp-cli bawaan dari paket plugin, mengurangi ukuran plugin
 
-## Versi 2.11.0 — Dirilis pada 2026-05-11
+## Versi 2.11.0 — Dirilis pada 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Baru: Ekspor situs kini menyertakan `index.php` yang dapat booting sendiri sehingga ZIP dapat diinstal pada host baru tanpa instalasi plugin terpisah.
 - Baru: Ekspor jaringan memungkinkan administrator mengekspor semua subsitus dalam satu arsip dari halaman admin Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Baru: Editor formulir checkout memperingatkan ketika produk ditambahkan tanpa field wajib yang dikonfigurasi.
 - Baru: Tab pengaturan Impor/Ekspor kini menjelaskan cakupannya dengan jelas dan menautkan langsung ke alat Site Export.
 
-## Versi 2.10.0 — Dirilis pada 2026-05-05
+## Versi 2.10.0 — Dirilis pada 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Baru: PayPal guided setup wizard untuk entri kredensial manual dengan OAuth flag gate untuk konfigurasi gateway yang mulus.
 - Baru: Panel pelanggan pergantian templat didesain ulang dengan kartu templat saat ini, grid persisten, dan tombol **Reset templat saat ini**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: Path SSO yang difilter dihormati di semua alur login.
 - Perbaikan: Opsi identitas situs kosong dipertahankan saat disimpan.
 
-## Versi 2.9.0 — Dirilis pada 2026-04-30
+## Versi 2.9.0 — Dirilis pada 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Baru: Ekspor dan impor situs tunggal ditambahkan di bawah **Tools > Export & Import**.
 - Perbaikan: File ZIP ekspor kini disajikan melalui endpoint unduhan terautentikasi.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: ID tur dinormalisasi menjadi garis bawah dalam kunci pengaturan pengguna.
 - Ditingkatkan: ZipArchive kini digunakan sebagai pengganti Alchemy/Zippy untuk kompatibilitas yang lebih baik.
 
-## Versi 2.8.0 — Dirilis pada 2026-04-29
+## Versi 2.8.0 — Dirilis pada 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Baru: Toggle Enable Jumper ditambahkan ke UI pengaturan Other Options.
 - Baru: Kolom status ditambahkan ke tabel daftar formulir checkout.

@@ -3,7 +3,7 @@ title: Kaip įdėti įvykdyti WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kaip instaluoti WordPress Multisite?
+# Kaip instaluoti WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite leidžia turėti tinklą svetaini. Tai yra įtrauktas funkcija, bet ji neaktyvuota kaip pagrindinis nustatymas.
 
@@ -96,9 +96,9 @@ Subsaitos kūrimas:
 
 Pildant laukus, spauskite mygtuką "Add site" (Įdalyvę svetainę). Kai nauja subsite bus sukurta, pasiekitės ją ir patikrinkite, ar ji veikia tinkamai.
 
-## Dažniai susiję problemos:
+## Dažniai susiję problemos: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Aš galiu kurti naujas svetainis, bet jie nėra pasiekiami.
+### 1. Aš galiu kurti naujas svetainis, bet jie nėra pasiekiami. {#common-problems}
 
 Jei pasirinkote subdomainus, turite nustatyti ir wildcard subdomainus savo multisite tinklui.
 

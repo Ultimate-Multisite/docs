@@ -4,11 +4,11 @@ title: Toiminto - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Toiminto: wu_handle_customer_meta_fields
+# Toiminto: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Salli plugin-kehittäjien tallentaa metatietoja eri tavoilla, jos heidän tarvitsee.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Salli plugin-kehittäjien tallentaa metatietoja eri tavoilla, jos heidän tarvit
 | $customer | `\Customer` | Ultimate Multisite -asiakasobjekti. |
 | $checkout | `\Checkout` | Checkout-luokka. |
 
-### Alkaen versiosta
+### Alkaen versiosta {#since}
 
 - 2.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) rivillä 1211

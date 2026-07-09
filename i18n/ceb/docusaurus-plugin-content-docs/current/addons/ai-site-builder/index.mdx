@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Mga Kinahanglanon (Requirements)
+## Mga Kinahanglanon (Requirements) {#requirements}
 
 - WordPress 5.3 o mas taas pa
 - PHP 7.4 o mas taas pa
 - Multisite Ultimate plugin (aktibo)
 
-## Pag-instalar (Installation)
+## Pag-instalar (Installation) {#installation}
 
 1. I-upload ang mga addon files sa imong `/wp-content/plugins/` directory
 2. I-activate ang plugin pinaagi sa 'Plugins' menu sa WordPress
 3. I-configure ang settings sa addon didto sa network admin
 
-## Pagpalambo (Development)
+## Pagpalambo (Development) {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estruktura sa Proyekto (Project Structure)
+### Estruktura sa Proyekto (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### Pag-test (Testing)
+### Pag-test (Testing) {#testing}
 
 Ang addon naglakip og kumpleto nga testing framework:
 
@@ -79,44 +79,44 @@ Ang addon naglakip og kumpleto nga testing framework:
 - **Test Coverage**: Gi-set up aron masubay ang code coverage
 - **Multisite Testing**: Ang mga test moandar sa multisite environment
 
-### Mga Pamatarungan sa Code (Code Standards)
+### Mga Pamatarungan sa Code (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: Gipahamtangan pinaagi sa PHPCS
 - **PHP 7.4+ Compatibility**: Gisuportahan ang modernong features sa PHP
 - **Static Analysis**: Integrasyon sa PHPStan para sa type checking
 - **Code Modernization**: Mga rules sa Rector alang sa pag-upgrade sa PHP
 
-### Build System
+### Build System {#build-system}
 
 - **Asset Processing**: Minification para sa CSS/JS files
 - **Translation**: Paghimo og POT file
 - **Packaging**: Pagmugna og archive para sa pag-distribute
 - **Development Mode**: Walay minified assets para sa debugging
 
-## Configuration (Pag-configure)
+## Configuration (Pag-configure) {#configuration}
 
 Gisuportahan sa addon ang nagkalain-laing configuration options nga ma-access pinaagi sa network admin interface.
 
-## Hooks ug Filters
+## Hooks ug Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Ma-trigger pagkahuman ma-initialize ang addon
 - `ultimate-multisite-ai-site-builder_loaded` - Ma-trigger pagkahuman ma-load tanan nga files sa addon
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Pag-modify sa settings sa addon
 - `ultimate-multisite-ai-site-builder_enabled` - Pag-override sa status kung ang addon naka-enable o disabled
 
-## License (Lisensya)
+## License (Lisensya) {#license}
 
 Kining addon gihatag og lisensya ubos sa GPL v3 or later.
 
-## Support (Suporta)
+## Support (Suporta) {#support}
 
 Alang sa suporta ug dokumentasyon, bisitaha ang [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog (Kasaysayan sa Pagbag-o)
+## Changelog (Kasaysayan sa Pagbag-o) {#changelog}
 
 - Version 1.0.1 (2025-09-28): gipalit ang prefix ngadto sa ultimate-multisite; gi-update ang text domain; version bump.
 

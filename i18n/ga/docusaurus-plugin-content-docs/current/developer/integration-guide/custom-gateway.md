@@ -3,11 +3,11 @@ title: Forbairt Gheata Saincheaptha
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Forbairt Gateway Saincheaptha
+# Forbairt Gateway Saincheaptha {#custom-gateway-development}
 
 Is féidir leat gateways íocaíochta saincheaptha a chruthú trí shíneadh a chur leis an rang `Base_Gateway`.
 
-## Rang Gateway
+## Rang Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Cláraigh an Gateway
+## Cláraigh an Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Príomh-Mhodhanna
+## Príomh-Mhodhanna {#key-methods}
 
 | Modh | Cuspóir |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Láimhseáil iarratais ar aisíocaíocht |
 | `get_payment_methods()` | Tabhair ar ais modhanna íocaíochta sábháilte do chustaiméir |
 
-## Dintiúir athnuachana do bhallraíochtaí athfhillteacha
+## Dintiúir athnuachana do bhallraíochtaí athfhillteacha {#renewal-credentials-for-recurring-memberships}
 
 Ligeann Ultimate Multisite v2.13.0 do chomhtháthuithe gateway tuairisciú an bhfuil dintiúr athnuachana in-athúsáidte ag ballraíocht athfhillteach sula ndéantar `auto_renew` a bhuanú. Hook `wu_membership_has_renewal_credential` agus tabhair ar ais:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Glan an marcóir dintiúir ar iarraidh mar chuid de shreabhadh athúdaraithe rathúil do gateway tar éis dintiúr nua in-athúsáidte a stóráil.
 
-## Leideanna
+## Leideanna {#tips}
 
 - Tabhair `WP_Error` ar ais i gcónaí ar theip ionas gur féidir le Ultimate Multisite taispeáint earráide a láimhseáil
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Úsáid `wu_log_add()` le haghaidh logála a bhaineann go sonrach leis an gateway
 
-## Cumais soláthraí nascóra AI
+## Cumais soláthraí nascóra AI {#ai-connector-provider-capabilities}
 
 Ba cheart do chomhtháthuithe saincheaptha a ghlaonn oibríochtaí atá tacaithe ag nascóir AI ailíniú leis an tacar soláthraithe OAuth tacaithe a tugadh isteach le AI Provider for Anthropic Max v1.3.0:
 

@@ -4,26 +4,26 @@ title: ຕົວກອງ - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# ຕົວກັ່ນຕອງ: wu_get_site_domain_and_path
+# ຕົວກັ່ນຕອງ: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາປັບປ່ຽນຄູ່ໂດເມນ/ເສັ້ນທາງ.
 
 ສິ່ງນີ້ອາດມີປະໂຫຍດສຳລັບຫຼາຍຢ່າງ, ເຊັ່ນ ການນຳໃຊ້ວິທີແກ້ໄຂສຳລັບສະພາບແວດລ້ອມທົດລອງ, ເຊີບເວີທີ່ແຕກຕ່າງກັນ, ແລະອື່ນໆ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
 | $d | `object` | ອອບເຈັກປັດຈຸບັນທີ່ມີຄີໂດເມນ ແລະ ເສັ້ນທາງ. |
 | $path_or_subdomain | `string` | ເສັ້ນທາງ/ຊັບໂດເມນຕົ້ນສະບັບທີ່ສົ່ງເຂົ້າໄປຫາຟັງຊັນ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ຖືກກຳນົດໃນ [`inc/functions/site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/site.php#L235) ທີ່ແຖວ 235
 
 
-## ຄ່າທີ່ສົ່ງກັບ
+## ຄ່າທີ່ສົ່ງກັບ {#returns}
 ອອບເຈັກທີ່ມີຄີໂດເມນ ແລະ ເສັ້ນທາງ.

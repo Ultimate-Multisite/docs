@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 I-plugin ye-WordPress eyengeza ukulungiswa kokuhambisana kwe-Tutor LMS ezindaweni ze-multisite.
 
-## Incazelo
+## Incazelo {#description}
 
 Le plugin ihlinzeka ngokulungiswa okubalulekile kokuhambisana ukuze kusetshenziswe i-Tutor LMS kumanethiwekhi e-WordPress multisite. Iphatha ukubhaliswa kwabasebenzisi, ukuphathwa kwabafundisi, imikhawulo yezifundo, nokunye ukusebenza okuqondene ne-multisite.
 
-## Izici
+## Izici {#features}
 
 - **Ukuphathwa Kwamatafula Esizindalwazi**: Ithola ngokuzenzakalelayo futhi idale amatafula e-Tutor LMS angekho ahluleka ngenxa yemikhawulo ye-foreign key ye-multisite
 - **Ukubhaliswa Kwabasebenzisi be-Multisite**: Abaphathi be-AJAX abenziwe ngokwezifiso bokuphatha ukubhaliswa kwabasebenzisi kuzo zonke izingosi zenethiwekhi
@@ -24,7 +24,7 @@ Le plugin ihlinzeka ngokulungiswa okubalulekile kokuhambisana ukuze kusetshenzis
 - **Ukubukwa Kwe-Admin Okwenziwe Ngokwezifiso**: Uhlu lwabafundisi nesixhumi sokuphatha esiqaphela i-multisite
 - **Amathuluzi e-Admin**: Isixhumi sokuphatha isizindalwazi sabaphathi benethiwekhi nabaphathi bezingosi
 
-## Izidingo
+## Izidingo {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Le plugin ihlinzeka ngokulungiswa okubalulekile kokuhambisana ukuze kusetshenzis
 - Ukufakwa kwe-WordPress Multisite
 - I-plugin ye-Ultimate Multisite (yokusebenza kwemikhawulo yezifundo)
 
-## Ukufaka
+## Ukufaka {#installation}
 
 1. Layisha amafayela e-plugin ku-`/wp-content/plugins/tutor-multisite-compatibility/`
 2. Qinisekisa ukuthi i-Tutor LMS ifakiwe futhi yenziwe yasebenza
 3. Yenza i-plugin isebenze ngemenyu ethi 'Plugins' ku-WordPress
 4. I-plugin izohlangana ngokuzenzakalelayo ne-Tutor LMS
 
-## Isakhiwo Samafayela
+## Isakhiwo Samafayela {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Ukusebenza Okususwe Ku-MU plugin
+## Ukusebenza Okususwe Ku-MU plugin {#functionality-moved-from-mu-plugin}
 
 Le plugin iqukethe ukusebenza okwakukhona ngaphambilini ku-`wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Le plugin iqukethe ukusebenza okwakukhona ngaphambilini ku-`wp-content/mu-plugin
 - Ukuphathwa kokubhaliswa kwabasebenzisi be-multisite
 - Ukuboniswa kwe-ID yomkhiqizo wesifundo
 
-## Ukuphathwa Kwesizindalwazi
+## Ukuphathwa Kwesizindalwazi {#database-management}
 
-### Inkinga
+### Inkinga {#the-problem}
 
 Ezindaweni ze-WordPress multisite, ukudalwa kwamatafula e-Tutor LMS kuyahluleka kumatafula anemikhawulo ye-foreign key eya etafuleni labasebenzisi. Lokhu kwenzeka ngoba:
 
@@ -81,7 +81,7 @@ Ezindaweni ze-WordPress multisite, ukudalwa kwamatafula e-Tutor LMS kuyahluleka 
 - Ama-foreign key abhekisa ku-`wp_2_users` (okungekho)
 - Itafula labasebenzisi langempela lingu-`wp_users` (okwabelwana ngalo kuyo yonke inethiwekhi)
 
-### Isixazululo
+### Isixazululo {#the-solution}
 
 Le plugin ngokuzenzakalelayo:
 
@@ -92,13 +92,13 @@ Le plugin ngokuzenzakalelayo:
    - Ukudalwa kwesayithi elisha kunethiwekhi
    - Ukuhlola amatafula ngesandla ngesixhumi se-admin
 
-### Amatafula Athintekile
+### Amatafula Athintekile {#affected-tables}
 
 - `tutor_coupon_usages` - Iqukethe i-foreign key eya etafuleni labasebenzisi
 - `tutor_carts` - Iqukethe i-foreign key eya etafuleni labasebenzisi
 - `tutor_notification_preferences` - Itafula le-TutorPro eline-foreign key eya etafuleni labasebenzisi
 
-### Isixhumi se-Admin
+### Isixhumi se-Admin {#admin-interface}
 
 Finyelela amathuluzi okuphatha isizindalwazi ku-:
 
@@ -111,6 +111,6 @@ Isixhumi sikuvumela ukuthi:
 - Uhlole ukucushwa kwesizindalwazi
 - Ubuke imininingwane yesimo eningiliziwe
 
-## Usekelo
+## Usekelo {#support}
 
 Le plugin yakhelwe ngokukhethekile inkundla ye-KursoPro. Ukuze uthole usekelo lobuchwepheshe, xhumana nethimba lokuthuthukisa.

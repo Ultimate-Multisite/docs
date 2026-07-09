@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# ריבוי דיירים
+# ריבוי דיירים {#multi-tenancy}
 
 הפץ תתי-אתרים בין שרתים ומסדי נתונים לשיפור ביצועים ואבטחה
 
-## נקודות עיקריות במהדורת גרסה 1.2.0
+## נקודות עיקריות במהדורת גרסה 1.2.0 {#version-120-release-highlights}
 
 ריבוי דיירים 1.2.0 מוסיף את תשתית הדייר הריבוני עבור תהליכי עבודה של בידוד בסביבת ייצור:
 
@@ -25,21 +25,21 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 ראה את מדריכי המשתמש עבור [תהליך העבודה של הגירה ריבונית](/user-guide/getting-started/sovereign-migration-workflow), [בידוד ריבוי דיירים](/user-guide/configuration/multi-tenancy-isolation), ו[תפעול דיירים ריבוניים](/user-guide/administration/sovereign-tenant-operations).
 
-## דרישות
+## דרישות {#requirements}
 
 - WordPress 5.3 ומעלה
 - PHP 7.4 ומעלה
 - תוסף Multisite Ultimate (פעיל)
 
-## התקנה
+## התקנה {#installation}
 
 1. העלה את קובצי תוסף ההרחבה לתיקיית `/wp-content/plugins/` שלך
 2. הפעל את התוסף דרך תפריט 'תוספים' ב-WordPress
 3. הגדר את הגדרות תוסף ההרחבה בממשק ניהול הרשת
 
-## פיתוח
+## פיתוח {#development}
 
-### הגדרה
+### הגדרה {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### מבנה הפרויקט
+### מבנה הפרויקט {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # כללי מודרניזציית קוד
 ```
 
-### בדיקות
+### בדיקות {#testing}
 
 תוסף ההרחבה כולל מסגרת בדיקות מקיפה:
 
@@ -93,54 +93,54 @@ ultimate-multisite-addon-template/
 - **כיסוי בדיקות**: מוגדר למעקב אחר כיסוי קוד
 - **בדיקות Multisite**: הבדיקות רצות בסביבת multisite
 
-### תקני קוד
+### תקני קוד {#code-standards}
 
 - **תקני הקידוד של WordPress**: נאכפים באמצעות PHPCS
 - **תאימות PHP 7.4+**: נתמכות יכולות PHP מודרניות
 - **ניתוח סטטי**: שילוב PHPStan לבדיקת טיפוסים
 - **מודרניזציית קוד**: כללי Rector לשדרוגי PHP
 
-### מערכת בנייה
+### מערכת בנייה {#build-system}
 
 - **עיבוד נכסים**: הקטנה עבור קובצי CSS/JS
 - **תרגום**: יצירת קובץ POT
 - **אריזה**: יצירת ארכיון להפצה
 - **מצב פיתוח**: נכסים לא מוקטנים לצורך ניפוי שגיאות
 
-## תצורה
+## תצורה {#configuration}
 
 תוסף ההרחבה תומך במגוון אפשרויות תצורה הנגישות דרך ממשק ניהול הרשת.
 
-### תצורת דייר ריבוני
+### תצורת דייר ריבוני {#sovereign-tenant-configuration}
 
 עבור דיירים ריבוניים, הגדר את מסד הנתונים של הדייר, שורש מערכת הקבצים, קישור מארח מסד הנתונים ויכולת המארח לפני ניתוב תעבורה לדייר. הרץ אימות הגירה לאחר כל שינוי שמשפיע על פרטי הגישה למסד הנתונים, קישור המארח, הניתוב או הקצאת המשתמשים.
 
 השתמש ב-`localhost` רק כאשר סביבת הריצה של הדייר והרשאות מסד הנתונים מצפות לגישה דרך socket מקומי או מאותה מכונה. השתמש ב-`127.0.0.1` או בשם מארח של שירות כאשר זהו מארח ההרשאה שהוגדר על ידי הספק שלך.
 
-### יכולת Hostinger
+### יכולת Hostinger {#hostinger-capability}
 
 יכולת ריבוי הדיירים של Hostinger עובדת עם אסימון השילוב המשותף של Hostinger. ודא שהדומיין מופיע ב-hPanel, ש-DNS מצביע אל חשבון Hostinger, ושהגדרות מסד הנתונים של הדייר תואמות ל-hPanel לפני האימות.
 
-## Hooks ומסננים
+## Hooks ומסננים {#hooks-and-filters}
 
-### פעולות
+### פעולות {#actions}
 
 - `ultimate-multisite-addon-template_init` - מופעל לאחר אתחול תוסף ההרחבה
 - `ultimate-multisite-addon-template_loaded` - מופעל לאחר שכל קובצי תוסף ההרחבה נטענו
 
-### מסננים
+### מסננים {#filters}
 
 - `ultimate-multisite-addon-template_settings` - שנה את הגדרות תוסף ההרחבה
 - `ultimate-multisite-addon-template_enabled` - עקוף את מצב ההפעלה/השבתה של תוסף ההרחבה
 
-## רישיון
+## רישיון {#license}
 
 תוסף הרחבה זה מורשה תחת GPL v3 או מאוחר יותר.
 
-## תמיכה
+## תמיכה {#support}
 
 לתמיכה ותיעוד, בקר ב-[MultisiteUltimate.com](https://multisiteultimate.com)
-## יומן שינויים
+## יומן שינויים {#changelog}
 
 - גרסה 1.2.0 (2026-06-03): הוסף התחברות אוטומטית ללא מצב לדייר, יכולת ריבוי דיירים של Hostinger, בידוד מסד נתונים ומערכת קבצים לכל תת-אתר, שערי אימות הגירה ריבונית, שיפורים באתחול דייר/כותב מסד נתונים, קישור מארח MySQL הניתן להגדרה, ופירוק ריבוני בטוח יותר.
 

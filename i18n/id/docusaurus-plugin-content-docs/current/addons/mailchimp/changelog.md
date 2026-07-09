@@ -3,7 +3,7 @@ title: Catatan Perubahan Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Catatan Perubahan Mailchimp
+# Catatan Perubahan Mailchimp {#mailchimp-changelog}
 
 Versi: 1.1.1 - Dirilis pada 2025-09-28
 

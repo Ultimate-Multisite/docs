@@ -3,11 +3,11 @@ title: Тавцангийн ерөнхий харалт
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Дашбордын өгляд
+# Дашбордын өгляд {#dashboard-overview}
 
 Ultimate Multisite-д Ultimate Multisite меню доор тусгай **Дашборд** байдаг бөгөөд мөн Network Dashboard руу виджетүүдийг нэмдэг. Энэ нийтлэл нь эдгээр хоёр газраас юу харахыг тайлбарладаг.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite-ийн хэрэгжүүлсэн тусгай виджетүүдийг **My Sites → Network Admin → Dashboard**-д байгаа network-level dashboard руу оруулдаг.
 
@@ -35,7 +35,7 @@ Ultimate Multisite-ийн хэрэгжүүлсэн тусгай виджетүү
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Network dashboard нь network-ийн нийт мэдээллийг харуулдаг бол, Ultimate Multisite-ийн дашборд (Ultimate Multisite менюгийн хамгийн дээд түвшинд байрлах) тухайн үйлчилгээний талаарх мэдээллийг харуулдаг.
 

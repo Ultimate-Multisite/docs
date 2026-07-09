@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# MailChimp
+# MailChimp {#mailchimp}
 
 Multisite Ultimate: Integrare MailChimp
 
 Integrați rețeaua dvs. Multisite Ultimate cu Mailchimp. Puteți lega anumite planuri de Liste Mailchimp și adăuga automat abonații în aceste liste la înregistrare.
 
-## Instalare
+## Instalare {#installation}
 
 1. Încărcați 'ultimate-multisite-mailchimp' în directorul '/wp-content/plugins/'
 2. Activați plugin-ul prin meniul 'Plugins' din Adminul Rețelei WordPress
 
-## Ghid de utilizare
+## Ghid de utilizare {#usage-guide}
 
 Sincronizarea e-mailurilor abonaților cu listele dvs. MailChimp este foarte ușoară cu Add-on-ul nostru Ultimate Multisite: MailChimp Integration. Acest tutorial vă vizează să vă ajutăm să configurați totul!
 
-## Obținerea unei chei API
+## Obținerea unei chei API {#getting-an-api-key}
 
 Înainte de a ne aprofunda în diverse setări disponibile, avem nevoie de o cheie API MailChimp. Aceasta va permite Ultimate Multisite să interacționeze cu API-ul MailChimp pentru a prelua liste, grupuri și a adăuga adrese de e-mail în aceste liste și grupuri atunci când utilizatorii se înregistrează.
 
@@ -32,7 +32,7 @@ Urmați acest tutorial pentru a obține propria cheie API MailChimp: [About API 
 
 _Adăugați cheia API MailChimp în_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
 
-## Modul de integrare
+## Modul de integrare {#integration-mode}
 
 Add-on-ul de Integrare MailChimp oferă două „moduri de integrare”, ceea ce înseamnă că există două moduri diferite prin care puteți folosi add-on-ul pentru a sincroniza adresele de e-mail.
 
@@ -40,7 +40,7 @@ Add-on-ul de Integrare MailChimp oferă două „moduri de integrare”, ceea ce
 
 _Două moduri de integrare pentru o flexibilitate sporită!_
 
-### Modul 1: Liste Multiple
+### Modul 1: Liste Multiple {#mode-1-multiple-lists}
 
 Modul implicit folosește **Liste Multiple**. Acest mod vă va permite să selectați mai multe liste MailChimp pentru fiecare plan. Aceasta este cea mai bună opțiune dacă vă segmentează utilizatorii în liste diferite.
 
@@ -52,7 +52,7 @@ Pentru a realiza acest lucru, puteți folosi modul Liste Multiple pentru a adău
 
 _Selectați listele implicite pentru conturile noi și pentru conturile anulate_
 
-### Modul 2: Listă Unică + Grupuri Multiple
+### Modul 2: Listă Unică + Grupuri Multiple {#mode-2-single-list--multiple-groups}
 
 MailChimp vă permite să vă segmentezi lista în grupuri mai mici de utilizatori numite **Grupuri**. Acest lucru vă oferă mai mult control, deoarece puteți trimite o campanie unui subset specific de abonați fără a trebui să creați multiple copii ale aceleiași campanii pe MailChimp (ceea ce complică analiza metricilor acelei campanii ulterior).
 
@@ -62,13 +62,13 @@ De exemplu, puteți avea o listă unică numită **Abonaten Rețelei Mele**, și
 
 _Selectați listele și grupurile implicite, dacă folosiți modul de integrare „listă unică + grupuri multiple“_
 
-## Liste și Grupuri Implicite
+## Liste și Grupuri Implicite {#default-lists-and-groups}
 
 După ce ați selectat ce modul de integrare are cel mai mult sens pentru cazul dvs. de utilizare, este timpul să selectați listele implicite (și grupurile, în funcție de mod). Lista implicită va fi folosită atunci când un anumit plan nu are o Listă specifică selectată.
 
 Puteți selecta, de asemenea, lista implicită pentru conturile anulate. De fiecare dată când un utilizator își încheie abonamentul și își elimină contul din rețeaua dvs., adresa sa de e-mail va fi mutată în lista setată pentru conturile anulate.
 
-## Activarea Abonării Duble
+## Activarea Abonării Duble {#enabling-double-subscription}
 
 Pe aceeași pagină de setări, veți putea activa **Abonarea Dublă**. Această opțiune va adăuga utilizatorul atât în lista implicită selectată, cât și în lista selectată pentru planul utilizatorului. Dacă această opțiune nu este activată, utilizatorul va fi adăugat doar în lista selectată pentru planul utilizatorului. Dacă nu este setată nicio listă pentru acel plan în particular, atunci utilizatorul va fi adăugat în lista implicită selectată.
 
@@ -76,7 +76,7 @@ Pe aceeași pagină de setări, veți putea activa **Abonarea Dublă**. Această
 
 _Puteți avea utilizatorii abonați atât în lista implicită, cât și în lista planului la înregistrare_
 
-## Selectarea Listelor și Grupurilor pentru fiecare Plan
+## Selectarea Listelor și Grupurilor pentru fiecare Plan {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Mergeți la **Plans** (Planuri) și selectați planul pe care doriți să îl editați. Rețineți că în meta-box-ul **Advanced Options**, va fi disponibil un tab nou numit MailChimp.
 

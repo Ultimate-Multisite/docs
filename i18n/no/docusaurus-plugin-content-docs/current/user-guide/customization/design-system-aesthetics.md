@@ -3,11 +3,11 @@ title: Design System Estetikk Ferdighet
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Estetikk Ferdighet
+# Design System Estetikk Ferdighet {#design-system-aesthetics-skill}
 
 **Design System Estetikk ferdigheten** er en veiledet tilnærming for å forbedre nettstedets visuelle identitet. Den hjelper deg med å ta konsistente beslutninger om typografi, farge, avstand og bevegelsestokens som definerer designsystemet ditt.
 
-## Hva er Design System Estetikk?
+## Hva er Design System Estetikk? {#what-is-design-system-aesthetics}
 
 Design System Estetikk er en strukturert ferdighet som dekker:
 
@@ -20,9 +20,9 @@ Design System Estetikk er en strukturert ferdighet som dekker:
 
 Disse beslutningene fanges opp i temaets `theme.json`-fil, noe som skaper et sammenhengende visuelt system.
 
-## Hvorfor bruke Design System Estetikk?
+## Hvorfor bruke Design System Estetikk? {#why-use-design-system-aesthetics}
 
-### Konsistens
+### Konsistens {#consistency}
 
 Et designsystem sikrer at:
 
@@ -31,7 +31,7 @@ Et designsystem sikrer at:
 - Avstand følger et forutsigbart mønster
 - Animasjoner føles samlet
 
-### Effektivitet
+### Effektivitet {#efficiency}
 
 I stedet for å ta designbeslutninger side for side, kan du:
 
@@ -39,7 +39,7 @@ I stedet for å ta designbeslutninger side for side, kan du:
 - Bruke dem overalt
 - Oppdatere globalt ved å endre én verdi
 
-### Fleksibilitet
+### Fleksibilitet {#flexibility}
 
 Du kan:
 
@@ -47,9 +47,9 @@ Du kan:
 - Eksperimentere med forskjellige estetikker
 - Opprettholde merkevarekonsistens samtidig som du utvikler deg
 
-## Utløse Design System Estetikk Ferdigheten
+## Utløse Design System Estetikk Ferdigheten {#triggering-the-design-system-aesthetics-skill}
 
-### Manuell Aktivering
+### Manuell Aktivering {#manual-activation}
 
 Du kan starte ferdigheten når som helst:
 
@@ -69,7 +69,7 @@ eller
 "Veiled meg gjennom designsystembeslutninger"
 ```
 
-### Automatisk Forslag
+### Automatisk Forslag {#automatic-suggestions}
 
 Agenten kan foreslå å bruke ferdigheten når du:
 
@@ -78,9 +78,9 @@ Agenten kan foreslå å bruke ferdigheten når du:
 - Ønsker å forbedre visuell konsistens
 - Forbereder deg på å lansere nettstedet ditt
 
-## Design System Estetikk Prosessen
+## Design System Estetikk Prosessen {#the-design-system-aesthetics-process}
 
-### Trinn 1: Typografi
+### Trinn 1: Typografi {#step-1-typography}
 
 Agenten spør om dine skrifttypevalg:
 
@@ -110,7 +110,7 @@ Agenten definerer deretter:
 - **Vektskala**: Skrifttypevekter (normal, medium, fet, osv.)
 - **Linjehøyde**: Avstanden mellom linjene for bedre lesbarhet
 
-### Trinn 2: Fargepalett
+### Trinn 2: Fargepalett {#step-2-color-palette}
 
 ```
 La oss definere fargepaletten din.
@@ -140,7 +140,7 @@ Agenten oppretter en komplett palett som inkluderer:
 - Semantiske farger (suksess, advarsel, feil)
 - Hover- og aktivtilstander
 
-### Trinn 3: Avstand
+### Trinn 3: Avstand {#step-3-spacing}
 
 ```
 Hvor mye pustehull vil du ha?
@@ -162,7 +162,7 @@ Agenten definerer avstandstokens:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Spesifikke verdier for padding, margin, gap
 
-### Trinn 4: Rammer og Skygger
+### Trinn 4: Rammer og Skygger {#step-4-borders-and-shadows}
 
 ```
 Visuell dybde og definisjon:
@@ -185,7 +185,7 @@ Agenten oppretter:
 - Skygge-tokens for ulike elevasjonsnivåer
 - Border bredde-tokens
 
-### Trinn 5: Bevegelse og Animasjon
+### Trinn 5: Bevegelse og Animasjon {#step-5-motion-and-animation}
 
 ```
 Hvordan skal nettstedet føles når det er interaktivt?
@@ -207,9 +207,9 @@ Agenten definerer:
 - Easing-funksjoner (ease-in, ease-out, ease-in-out)
 - Animasjonskeyframes for vanlige interaksjoner
 
-## Anvende Design System Estetikk
+## Anvende Design System Estetikk {#applying-design-system-aesthetics}
 
-### Automatisk Anvendelse
+### Automatisk Anvendelse {#automatic-application}
 
 Etter at du har fullført ferdigheten, gjør agenten følgende:
 
@@ -218,7 +218,7 @@ Etter at du har fullført ferdigheten, gjør agenten følgende:
 3. Regenererer blokkstilene for å matche det nye systemet
 4. Aktiverer det oppdaterte temaet
 
-### Manuell Anvendelse
+### Manuell Anvendelse {#manual-application}
 
 Du kan også redigere `theme.json` direkte:
 
@@ -257,9 +257,9 @@ Du kan også redigere `theme.json` direkte:
 }
 ```
 
-## Se Design Systemet Ditt
+## Se Design Systemet Ditt {#viewing-your-design-system}
 
-### Spør Agenten
+### Spør Agenten {#ask-the-agent}
 
 ```
 "Vis meg designsystemet mitt"
@@ -273,13 +273,13 @@ eller
 
 Agenten vil vise din typografi, farger, avstand og andre tokens.
 
-### Se theme.json
+### Se theme.json {#view-themejson}
 
 Åpne `/wp-content/themes/[theme-name]/theme.json` i en teksteditor for å se de rå token-definisjonene.
 
-## Oppdatere Design Systemet Ditt
+## Oppdatere Design Systemet Ditt {#updating-your-design-system}
 
-### Raske Oppdateringer
+### Raske Oppdateringer {#quick-updates}
 
 Spør agenten om spesifikke endringer:
 
@@ -299,7 +299,7 @@ eller
 "Bytt overskriftsskrifttypen til en serif"
 ```
 
-### Full Redesign
+### Full Redesign {#full-redesign}
 
 Kjør Design System Estetikk ferdigheten på nytt:
 
@@ -309,7 +309,7 @@ Kjør Design System Estetikk ferdigheten på nytt:
 
 Dette vil veilede deg gjennom alle beslutninger på nytt, og starte med dine nåværende verdier.
 
-### Delvise Oppdateringer
+### Delvise Oppdateringer {#partial-updates}
 
 Oppdater spesifikke aspekter:
 
@@ -317,15 +317,15 @@ Oppdater spesifikke aspekter:
 "Oppdater bare fargepaletten, behold alt annet"
 ```
 
-## Beste Praksis for Design System
+## Beste Praksis for Design System {#design-system-best-practices}
 
-### Konsistens
+### Konsistens {#consistency-1}
 
 - Bruk de samme tokensene overalt
 - Ikke opprett engangs-farger eller størrelser
 - Referer til tokens i stedet for å hardkode verdier
 
-### Navngiving
+### Navngiving {#naming}
 
 Bruk klare, semantiske navn:
 
@@ -335,7 +335,7 @@ Bruk klare, semantiske navn:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalerbarhet
+### Skalerbarhet {#scalability}
 
 Design systemet ditt for å skalere:
 
@@ -343,7 +343,7 @@ Design systemet ditt for å skalere:
 - Opprett skalaer (xs, sm, md, lg, xl) i stedet for vilkårlige verdier
 - Planlegg for fremtidige tillegg
 
-### Dokumentasjon
+### Dokumentasjon {#documentation}
 
 Dokumenter designsystemet ditt:
 
@@ -351,37 +351,37 @@ Dokumenter designsystemet ditt:
 - Når du skal bruke hvert token
 - Unntak og kanttilfeller
 
-## Vanlige Design System Mønstre
+## Vanlige Design System Mønstre {#common-design-system-patterns}
 
-### Moderne Minimalist
+### Moderne Minimalist {#modern-minimalist}
 - Sans-serif typografi (Inter, Helvetica)
 - Begrenset fargepalett (2-3 farger)
 - Generøs avstand
 - Subtile skygger
 - Glatte, raske animasjoner
 
-### Varm og Vennlig
+### Varm og Vennlig {#warm-and-friendly}
 - Blanding av serif og sans-serif
 - Varm fargepalett (oransje, varme gråtoner)
 - Avrundede hjørner
 - Myke skygger
 - Lekende animasjoner
 
-### Profesjonell Bedrift
+### Profesjonell Bedrift {#professional-corporate}
 - Rent sans-serif (Roboto, Open Sans)
 - Nøytral palett med aksentfarge
 - Strukturert avstand
 - Minimal skygger
 - Subtile overganger
 
-### Kreativ og Dristig
+### Kreativ og Dristig {#creative-and-bold}
 - Distinkt typografi
 - Dristig fargepalett
 - Variert avstand
 - Sterke skygger
 - Merkbare animasjoner
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
 **Designsystemendringene mine vises ikke**
 - Tøm nettleserens hurtigbuffer (cache)
@@ -399,7 +399,7 @@ Dokumenter designsystemet ditt:
 - Rediger manuelt `theme.json` til tidligere verdier
 - Kjør ferdigheten på nytt med andre valg
 
-## Neste Steg
+## Neste Steg {#next-steps}
 
 Etter at du har definert designsystemet ditt:
 

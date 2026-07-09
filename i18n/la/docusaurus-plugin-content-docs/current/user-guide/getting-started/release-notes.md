@@ -3,9 +3,9 @@ title: Notae Editio
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Note de Sortie
+# Note de Sortie {#release-notes}
 
-## Versio 2.13.0 — Liberata il 2026-06-05
+## Versio 2.13.0 — Liberata il 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Novum: Aditus supportum tenantium souverainum ad numerum clientium, processus transactionis (checkout), facturation, situm, facturas, mutatio templatorum et mappae domini, ita ut network tenantium clienti in situs principalem redireger possint actiones gestas.
 - Novum: Adhibitus verificatio credentialium renovationis ad membranas recurrentes, ita ut gateways auto-renovatio debant cessare dum non sit existentia agreementi facturandi, subscriptionis aut tokeni vault.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rectificatio: Casus extremorum renovationis membrannarum, ostensionis expirationis, et collectio pecuniae nunc expirations immediatas, crasces, aut pagationes necessarias perdit.
 - Mutatum: Compatibilitas WordPress testata usque ad 7.0, assetum Vue in production re-buildi sunt ex fontibus npm, et Cypress coverage end-to-end nunc plus fluxus transactionis, setup, SSO, et gateway exercet.
 
-## Versio 2.12.0 — Liberata in 2026-05-15
+## Versio 2.12.0 — Liberata in 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Novum: Hostinger (hPanel) aditus ut fornitore host supportato cum integration mappae dominii
 - Novum: Site Exporter nunc maneat gestionem bundled network import bundles pro restauratione site per totam retinendum rete simplici
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rectificatio: CLI Site Exporter nunc selection rete default correctam retinens conservat
 - Emendatio: wp-cli bundled ex pacage plugin removata, magnitudinem plugin minimis redditam
 
-## Versio 2.11.0 — Liberata in 2026-05-11
+## Versio 2.11.0 — Liberata in 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Novum: Site exports nunc index.php autoinstituendum bundled maneant ita ut ZIP in host novo installari possit sine separate plugin installatione
 - Novum: Export network permittit administratores omnes subsites in unum archivum exportare ex pagina admin Site Export
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Novum: Editor form checkout advertit cum producendum sine campo requirendum configuratum
 - Novum: Tab settings Import/Export nunc suam ambitum claram descripit et directam link ad tool Site Export habet
 
-## Versio 2.10.0 — Liberata in 2026-05-05
+## Versio 2.10.0 — Liberata in 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Novum: Wizard de configuración guiado de PayPal para entrada manual de credenciales con puerta de enlace OAuth para una configuración fluida del gateway.
 - Novum: El panel de cliente de cambio de plantilla rediseñado con la tarjeta current-template, cuadrícula persistente y el botón **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corrección: La ruta SSO filtrada respetada en todos los flujos de inicio de sesión.
 - Corrección: Se conservan las opciones de identidad de sitio vacío al guardar.
 
-## Versión 2.9.0 — Lanzada el 30-04-2026
+## Versión 2.9.0 — Lanzada el 30-04-2026 {#version-290--released-on-2026-04-30}
 
 - Novum: Exportación e importación de sitios únicos añadidos bajo **Herramientas > Exportar e Importar**.
 - Corrección: Los archivos ZIP de exportación ahora se sirven a través de un punto final de descarga autenticado.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corrección: Los IDs de tour normalizados a guiones bajos en las claves de configuración de usuario.
 - Mejora: Ahora se utiliza ZipArchive en lugar de Alchemy/Zippy para una mejor compatibilidad.
 
-## Versión 2.8.0 — Lanzada el 29-04-2026
+## Versión 2.8.0 — Lanzada el 29-04-2026 {#version-280--released-on-2026-04-29}
 
 - Novum: Interruttore Jumper addebitus in optionibus Aliorum Configuratorum UI addito est.
 - Novum: Columna Status ad tabulam formarum checkout addita est.

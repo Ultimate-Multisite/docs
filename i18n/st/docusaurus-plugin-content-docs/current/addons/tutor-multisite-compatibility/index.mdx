@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Katoloso ya WordPress e eketsang ditokiso tsa tshebedisano bakeng sa Tutor LMS ditikolohong tsa multisite.
 
-## Tlhaloso
+## Tlhaloso {#description}
 
 Katoloso ena e fana ka ditokiso tsa bohlokwa tsa tshebedisano bakeng sa ho tsamaisa Tutor LMS ho dinetweke tsa WordPress multisite. E sebetsana le ngodiso ya basebedisi, taolo ya barupedi, meedi ya dithuto, le tshebetso e nngwe e ikgethang ya multisite.
 
-## Dikarolo
+## Dikarolo {#features}
 
 - **Taolo ya Ditafole tsa Database**: E lemoha ka boiketsetso le ho bopa ditafole tsa Tutor LMS tse haellang tse hlolehang ka lebaka la dithibelo tsa senotlolo sa kantle sa multisite
 - **Ngodiso ya Basebedisi ba Multisite**: Bahlokomedi ba AJAX ba ikgethang bakeng sa ho laola ngodiso ya basebedisi ho pholletsa le disaete tsa netweke
@@ -24,7 +24,7 @@ Katoloso ena e fana ka ditokiso tsa bohlokwa tsa tshebedisano bakeng sa ho tsama
 - **Dipono tsa Motsamaisi tse Ikgethang**: Lenane la barupedi le sehokelo sa taolo tse hlokomelang multisite
 - **Dithulusi tsa Motsamaisi**: Sehokelo sa taolo ya database bakeng sa batsamaisi ba netweke le ba saete
 
-## Ditlhoko
+## Ditlhoko {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Katoloso ena e fana ka ditokiso tsa bohlokwa tsa tshebedisano bakeng sa ho tsama
 - Kenyo ya WordPress Multisite
 - Katoloso ya Ultimate Multisite (bakeng sa tshebetso ya meedi ya dithuto)
 
-## Kenyo
+## Kenyo {#installation}
 
 1. Kenya difaele tsa katoloso ho `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Netefatsa hore Tutor LMS e kentsoe mme e butswitswe
 3. Bulela katoloso ka menyu ya 'Dikatoloso' ho WordPress
 4. Katoloso e tla ikopanya ka boiketsetso le Tutor LMS
 
-## Sebopeho sa Difaele
+## Sebopeho sa Difaele {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Tshebetso e Tlositsweng ho MU plugin
+## Tshebetso e Tlositsweng ho MU plugin {#functionality-moved-from-mu-plugin}
 
 Katoloso ena e na le tshebetso e neng e le ho `wp-content/mu-plugins/daves.php` pele:
 
@@ -71,9 +71,9 @@ Katoloso ena e na le tshebetso e neng e le ho `wp-content/mu-plugins/daves.php` 
 - Tshebetso ya ngodiso ya basebedisi ba multisite
 - Pontsho ya ID ya sehlahiswa sa thuto
 
-## Taolo ya Database
+## Taolo ya Database {#database-management}
 
-### Bothata
+### Bothata {#the-problem}
 
 Ditikolohong tsa WordPress multisite, ho bopa ditafole tsa Tutor LMS ho hloleha bakeng sa ditafole tse nang le dithibelo tsa senotlolo sa kantle ho tafole ya basebedisi. Sena se etsahala hobane:
 
@@ -81,7 +81,7 @@ Ditikolohong tsa WordPress multisite, ho bopa ditafole tsa Tutor LMS ho hloleha 
 - Dinotlolo tsa kantle di supa ho `wp_2_users` (e seng teng)
 - Tafole ya nnete ya basebedisi ke `wp_users` (e arolelanwang ho pholletsa le netweke)
 
-### Tharollo
+### Tharollo {#the-solution}
 
 Katoloso ena ka boiketsetso e:
 
@@ -92,13 +92,13 @@ Katoloso ena ka boiketsetso e:
    - Ho bopuwa ha saete e ntjha netwekeng
    - Ho hlahloba tafole ka letsoho ka sehokelo sa motsamaisi
 
-### Ditafole tse Angwang
+### Ditafole tse Angwang {#affected-tables}
 
 - `tutor_coupon_usages` - E na le senotlolo sa kantle ho tafole ya basebedisi
 - `tutor_carts` - E na le senotlolo sa kantle ho tafole ya basebedisi
 - `tutor_notification_preferences` - Tafole ya TutorPro e nang le senotlolo sa kantle ho tafole ya basebedisi
 
-### Sehokelo sa Motsamaisi
+### Sehokelo sa Motsamaisi {#admin-interface}
 
 Fumana dithulusi tsa taolo ya database ho:
 
@@ -111,6 +111,6 @@ Sehokelo se o dumella ho:
 - Hlahloba tlhophiso ya database
 - Sheba tlhahisoleseding e qaqileng ya boemo
 
-## Tshehetso
+## Tshehetso {#support}
 
 Katoloso ena e reretswe ka ho ikgetha sethala sa KursoPro. Bakeng sa tshehetso ya botekgeniki, ikopanye le sehlopha sa ntshetsopele.

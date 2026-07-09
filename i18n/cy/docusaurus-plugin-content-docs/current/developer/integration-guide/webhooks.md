@@ -3,11 +3,11 @@ title: Trin Webhookau
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Trin Webhook
+# Trin Webhook {#webhook-handling}
 
 Crëwch bwyntiau terfyn webhook personol i dderbyn digwyddiadau gan wasanaethau allanol a chysoni data ag Ultimate Multisite.
 
-## Pwynt Terfyn Webhook Personol
+## Pwynt Terfyn Webhook Personol {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Ystyriaethau Diogelwch
+## Ystyriaethau Diogelwch {#security-considerations}
 
 - Gwiriwch lofnodion webhook bob amser gan ddefnyddio HMAC neu gyfrinach a rennir
 - Defnyddiwch `permission_callback` ar eich llwybr REST — peidiwch byth â'i osod i `__return_true` mewn cynhyrchu

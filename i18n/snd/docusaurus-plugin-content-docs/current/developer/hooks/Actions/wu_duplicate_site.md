@@ -4,13 +4,13 @@ title: عمل - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# عمل: wu_duplicate_site
+# عمل: wu_duplicate_site {#action-wuduplicatesite}
 
 ڊولپرز کي اجازت ڏئي ٿو ته سائيٽ جي نقل ٿيڻ کان پوءِ ڳنڍجي سگهن.
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 1.9.4
-### ماخذ
+### ماخذ {#source}
 
 [`inc/helpers/class-site-duplicator.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/class-site-duplicator.php#L268) ۾ قطار 268 تي بيان ٿيل.

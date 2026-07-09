@@ -4,13 +4,13 @@ title: Фільтр - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Фільтр: get_blogs_of_user
+# Фільтр: get_blogs_of_user {#filter-getblogsofuser}
 
 Реалізує оригінальний WP Filter, для надійності.
 
 Фільтрує список сайтів, до яких належить користувач.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 | $user_id | `int` | ID користувача. |
 | $all | `bool` | Чи має повернений масив сайтів містити всі сайти, включаючи позначені як 'deleted', 'archived' або 'spam'. За замовчуванням `false`. |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 Визначено в [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851) на рядку 851

@@ -3,17 +3,17 @@ title: Unsaon Pag-configure sa Domain Mapping
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Unsaon Pag-configure sa Pag-map sa Domain (v2)
+# Unsaon Pag-configure sa Pag-map sa Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**MAHINUNGDANONG PAHINUMDOM: Kini nga artikulo nagtumong sa Ultimate Multisite bersyon 2.x.**_
 
 Usa sa labing gamhanang mga bahin sa usa ka premium nga network mao ang abilidad sa pagtanyag sa atong mga kliyente og kahigayonan nga itaod ang usa ka top-level domain sa ilang mga sityo. Human sa tanan, asa ang mas tan-awong propesyonal: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) o [_**joesbikeshop.com**_](http://joesbikeshop.com)? Mao kini ang hinungdan nga ang Ultimate Multisite nagtanyag niana nga bahin nga built-in, nga walay kinahanglan nga mogamit og third-party nga mga plugin.
 
-## Unsa ang pag-map sa domain?
+## Unsa ang pag-map sa domain? {#whats-domain-mapping}
 
 Sama sa gisugyot sa ngalan, ang pag-map sa domain mao ang abilidad nga gitanyag sa Ultimate Multisite sa pagdawat og request alang sa usa ka custom domain ug i-map kana nga request ngadto sa katugbang nga sityo sa network nga naay naka-attach nga partikular nga domain.
 
-### Unsaon pag-setup sa pag-map sa domain sa imong Ultimate Multisite Network
+### Unsaon pag-setup sa pag-map sa domain sa imong Ultimate Multisite Network {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Ang pag-map sa domain nagkinahanglan og pipila ka pag-setup gikan nimo aron molihok. Maayo na lang, gi-automate sa Ultimate Multisite ang lisod nga trabaho para nimo aron dali nimo matuman ang mga requirement.
 
@@ -45,7 +45,7 @@ Apan sa dili pa ka magsugod sa pag-map sa custom domain ngadto sa usa sa mga sub
 
 ###
 
-### Pagsiguro nga ang mga setting sa DNS sa domain husto nga na-configure
+### Pagsiguro nga ang mga setting sa DNS sa domain husto nga na-configure {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Aron molihok ang usa ka mapping, kinahanglan nimo siguruhon nga ang domain nga imong plano nga i-map nagtudlo ngadto sa IP address sa imong Network. Timan-i nga kinahanglan nimo ang Network IP address - ang IP address sa domain diin gi-install ang Ultimate Multisite - dili ang IP address sa custom domain nga gusto nimo i-map. Aron mangita sa IP address sa usa ka espesipikong domain, among gisugyot ang pag-adto sa [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), pananglitan.
 
@@ -55,7 +55,7 @@ Kung makasinati ka og kalisod sa pagpaandar niini, **kontaka ang support sa imon
 
 Kung nagplano ka nga tugotan ang imong mga kliyente nga i-map ang ilang kaugalingong mga domain, sila mismo ang kinahanglan mohimo sa trabaho niini nga bahin. Itudlo sila ngadto sa support system sa ilang registrar kung dili sila makahimo og A Record.
 
-### Pag-map sa custom domain name isip Super Admin
+### Pag-map sa custom domain name isip Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Kung naka-log in ka isip super admin sa imong network, dali ra nimo madugang ug madumala ang mga custom domain name pinaagi sa pag-adto ilalom sa **Ultimate Multisite > Mga Domain**.
 
@@ -93,7 +93,7 @@ Kung imong i-click ang domain name, makita nimo ang pipila ka opsyon sulod niini
 
 **Is Secure?:** Bisan pa og susihon sa Ultimate Multisite kung ang domain adunay SSL certificate o wala sa wala pa kini i-enable, mahimo nimo manual nga pilion nga i-load ang domain nga adunay o walay SSL certificate. Timan-i nga kung ang website walay SSL certificate ug sulayan nimo nga pugson ang pag-load niini gamit ang SSL, mahimo kini maghatag kanimo og mga sayop.
 
-### Pag-map sa custom domain name isip Subsite user
+### Pag-map sa custom domain name isip Subsite user {#mapping-custom-domain-name-as-subsite-user}
 
 Ang mga administrador sa subsite mahimo usab mag-map og custom domain names gikan sa ilang subsite admin dashboard.
 
@@ -121,7 +121,7 @@ Dayon mahimo i-click sa user ang **Next Step** ug magpadayon sa pagdugang sa cus
 
 Ang pag-click sa **Add Domain** magsugod sa proseso sa pag-verify ug pagkuha sa DNS information sa custom domain.
 
-### Bahin sa Domain Syncing
+### Bahin sa Domain Syncing {#about-domain-syncing}
 
 Ang Domain Syncing usa ka proseso diin ang Ultimate Multisite modugang sa custom domain name ngadto sa imong hosting account isip add-on domain **aron molihok ang domain mapping**.
 

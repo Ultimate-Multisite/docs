@@ -3,15 +3,15 @@ title: Tsarawa da Gudanar da Mai Gina Shafin Yanar Gizo v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (wanda aka gabatar a Gratis AI Agent v1.4.0) shi ne injin da ke ba da ƙarfin ƙirƙirar gidan yanar gizo mai matakai da yawa. Lokacin da ka nemi agent ya "gina gidan yanar gizo na gidan abinci" ko "ƙirƙiri portfolio tare da blog", orchestrator yana raba wannan babban buri zuwa **tsari** mai tsari, yana gano plugins da ake buƙata don cika shi, yana aiwatar da kowane mataki a jere, yana bin diddigin ci gaba, kuma yana murmurewa daga kurakurai kai tsaye.
 
 ---
 
-## Yadda Yake Aiki
+## Yadda Yake Aiki {#how-it-works}
 
-### 1. Samar da Tsari
+### 1. Samar da Tsari {#1-plan-generation}
 
 Lokacin da agent ya karɓi umarnin gina site, yana kiran ƙwarewar `create_site_plan` don samar da JSON **tsarin site**. Tsarin yana bayyana:
 
@@ -61,7 +61,7 @@ Lokacin da agent ya karɓi umarnin gina site, yana kiran ƙwarewar `create_site_
 }
 ```
 
-### 2. Gano Plugin
+### 2. Gano Plugin {#2-plugin-discovery}
 
 Kafin aiwatarwa ya fara, orchestrator yana duba `plugin_requirements` na tsarin kuma yana bincika waɗanne plugins ne suka riga suka kasance masu aiki. Ga plugins da suka ɓace, yana:
 
@@ -71,7 +71,7 @@ Kafin aiwatarwa ya fara, orchestrator yana duba `plugin_requirements` na tsarin 
 
 Gazawar gano plugin ba ta da kisa — orchestrator yana yi wa matakan da abin ya shafa alama da `skipped` kuma yana ci gaba da sauran tsarin.
 
-### 3. Aiwatar da Tsari
+### 3. Aiwatar da Tsari {#3-plan-execution}
 
 Orchestrator yana kiran `execute_site_plan` tare da ID na tsarin. Aiwatarwa yana gudana mataki-bayan-mataki, ƙaramin-mataki-bayan-ƙaramin-mataki:
 
@@ -79,7 +79,7 @@ Orchestrator yana kiran `execute_site_plan` tare da ID na tsarin. Aiwatarwa yana
 - **Matakai na lokaci guda** — matakai a cikin mataki ɗaya da ba su da dogaro da juna ana tura su a lokaci guda idan an saita alamar `parallel`.
 - **Ƙarewar lokacin mataki** — kowane mataki yana da iyakar lokacinsa na kansa (tsoho: saitin `Ability Timeout`). Matakin da lokacinsa ya ƙare ana yi masa alama `failed` kuma tsarin yana ci gaba.
 
-### 4. Bibiyar Ci gaba
+### 4. Bibiyar Ci gaba {#4-progress-tracking}
 
 Kira `get_plan_progress` a kowane lokaci don duba matsayin aiwatarwa:
 
@@ -104,7 +104,7 @@ Masu amfani da WP-CLI na iya sa ido kan ci gaba da:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Farfadowa daga Kuskure
+### 5. Farfadowa daga Kuskure {#5-error-recovery}
 
 Lokacin da mataki ya gaza, orchestrator yana duba ko akwai matakin **madadin mafita** da aka ayyana a cikin tsarin:
 
@@ -115,9 +115,9 @@ Agent yana bayar da rahoton duk gazawa a cikin taƙaitaccen tsarin ƙarshe kuma 
 
 ---
 
-## Ƙwarewar Tsarin Site
+## Ƙwarewar Tsarin Site {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Yana samar da tsarin site mai tsari daga bayanin buri a harshen halitta.
 
@@ -134,7 +134,7 @@ Yana samar da tsarin site mai tsari daga bayanin buri a harshen halitta.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Yana fara aiwatar da tsarin site da aka samar a baya.
 
@@ -150,7 +150,7 @@ Yana fara aiwatar da tsarin site da aka samar a baya.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Yana dawo da matsayin aiwatarwa na yanzu na shirin shafi.
 
@@ -164,7 +164,7 @@ Yana dawo da matsayin aiwatarwa na yanzu na shirin shafi.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Yana warware matakin da ya gaza da hannu kuma yana ci gaba da aiwatar da shiri daga mataki na gaba. Yi amfani da wannan lokacin da farfadowa ta atomatik ba ta yiwu ba kuma kana son shiga tsakani.
 
@@ -180,7 +180,7 @@ Yana warware matakin da ya gaza da hannu kuma yana ci gaba da aiwatar da shiri d
 
 ---
 
-## Kwatanta v1 da v2
+## Kwatanta v1 da v2 {#comparing-v1-and-v2}
 
 | Fasali | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Yana warware matakin da ya gaza da hannu kuma yana ci gaba da aiwatar da shiri d
 
 ---
 
-## Umarnin Shiri na WP-CLI
+## Umarnin Shiri na WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Yana samar da shirin shafi daga bayanin buri.
 
@@ -205,7 +205,7 @@ Yana samar da shirin shafi daga bayanin buri.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Yana aiwatar da shirin da aka riga aka samar.
 
@@ -213,7 +213,7 @@ Yana aiwatar da shirin da aka riga aka samar.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Yana nuna ci gaban yanzu na shirin da ake aiwatarwa ko wanda aka kammala.
 
@@ -221,7 +221,7 @@ Yana nuna ci gaban yanzu na shirin da ake aiwatarwa ko wanda aka kammala.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Yana lissafa dukkan shirye-shiryen shafi (masu jiran aiki, masu gudana, da waɗanda aka kammala).
 
@@ -229,7 +229,7 @@ Yana lissafa dukkan shirye-shiryen shafi (masu jiran aiki, masu gudana, da waɗa
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Yana sake saita shirin da ya gaza zuwa `pending` domin a iya sake aiwatar da shi daga farko.
 

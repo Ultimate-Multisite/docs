@@ -3,11 +3,11 @@ title: Požiadavky
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Požiadavky na Ultimate Multisite
+# Požiadavky na Ultimate Multisite {#ultimate-multisite-requirements}
 
 Prvým, čo si môžete pýtať, než si kúpiте Ultimate Multisite, je, aké sú požiadavky na fungovanie našej externá. Našťastne, na fungovanie Ultimate Multisite potrebujete len niekoľko základných požiadaviek: **doménu**, dobrého **hostia** a instaláciu WordPress **Multisite**. To všetko stačí!
 
-## Doména
+## Doména {#domain-name}
 
 Prvne sa porozprachmujeme o doménovej značke.
 
@@ -17,7 +17,7 @@ Naše externá poskytuje služby podmienky, zbieranie platení, formuláre na ob
 
 Akýkoľvek štýl si vyberiete môžete spravovať pomocou našej externá, ak predávate webové stránky ako službu! Uistite sa, že si vyberiete doménu, ktorá zodpovedá vašemu obchodnému plánu.
 
-## Hostiteľ
+## Hostiteľ {#hosting-provider}
 
 Teraz keď máte atraktivnú doménu, ktorá reprezentuje váš štýl a firmu, budete musieť vybrať dobrú webovú hostielsku spoločnosť na ubytovanie svojej siete s Ultimátom Multisite. Na trhu je niekoľko dobrých možností. Niektoré hostiteľské služby sa dobre integrujú s Ultimate Multisite, čo môže byť rozhodujúci faktor v závislosti od toho, čo plánujete vytvárať.
 
@@ -25,7 +25,7 @@ Ultimate Multisite by mala bude fungovať s akýmkoľvek hostom. Jediná rozdiel
 
 Čo sa týka špecifikácií servera, neexistuje konkrétna forma, pretože to bude závisieť na funkciách a službách, ktoré ponúkate a veľkosti vašej siete. Compartné hosting môže byť dobrým začiatkom, ale ak sa vaša sieť začne rozvíjať, pravdepodobne budete potrebovať dedikovaný VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Teraz sa porozprachmujeme trochu o inštalácii WordPress Multisite.
 

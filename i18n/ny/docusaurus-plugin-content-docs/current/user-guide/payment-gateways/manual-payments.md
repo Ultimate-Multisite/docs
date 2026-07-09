@@ -3,13 +3,13 @@ title: Kukhazikitsa Malipiro a Pamanja
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Kukhazikitsa Manual Payments (v2)
+# Kukhazikitsa Manual Payments (v2) {#setting-up-manual-payments-v2}
 
 _**CHENJEZO LOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite version 2.x.**_
 
 Manual payments ndi njira yoti mupereke njira zina zolipirira ngati **Stripe** kapena **PayPal** sizikupezeka kwa ogwiritsa ntchito anu. Itha kukhala wire kapena bank transfer kapena njira ina iliyonse yolipirira yomwe ilipo kwa ogwiritsa ntchito anu m’dera lawo.
 
-## Momwe mungayambitsire Manual Payments
+## Momwe mungayambitsire Manual Payments {#how-to-enable-manual-payments}
 
 Kukhazikitsa manual payment ndi kosavuta kwambiri. Muyenera kungoyiyambitsa pansi pa payment gateways ndi kuyika malangizo atsatanetsatane a momwe wogwiritsa ntchito ayenera kutumizira malipiro.
 
@@ -31,7 +31,7 @@ Ndipo adzalandiranso uthenga pa tsamba lanu la **Thank You** wokhala ndi malangi
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Kutsimikizira manual payments
+## Kutsimikizira manual payments {#confirming-manual-payments}
 
 Kuti mutsimikizire manual payment, pitani ku menyu ya **Payments** pa bala lakumanzere. Kumeneko mutha kuona malipiro onse pa network yanu ndi tsatanetsatane wawo, kuphatikizapo **status** yawo. Manual payment nthawi zonse idzakhala ndi **Pending** status mpaka mutayisintha pamanja.
 

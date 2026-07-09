@@ -3,13 +3,13 @@ title: 대금 받기
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# 결제 받기 (v2)
+# 결제 받기 (v2) {#getting-paid-v2}
 
 _**중요 참고: 이 문서는 Ultimate Multisite version 2.x를 기준으로 합니다.**_
 
 Ultimate Multisite에는 내장된 멤버십 및 청구 시스템이 있습니다. 청구 시스템이 작동하도록 전자상거래에서 사용되는 가장 일반적인 결제 게이트웨이를 통합했습니다. Ultimate Multisite의 기본 결제 게이트웨이는 _Stripe_ , _PayPal_ , 그리고 수동 결제입니다. 또한 각각의 add-on을 설치하여 _WooCommerce_ , _GoCardless_ 및 _Payfast_ 를 사용해 결제를 받을 수도 있습니다.
 
-## 기본 설정
+## 기본 설정 {#basic-settings}
 
 Ultimate Multisite 결제 설정에서 이러한 결제 게이트웨이 중 어느 것이든 구성할 수 있습니다. **Ultimate Multisite menu > Settings > Payments**로 이동하여 찾을 수 있습니다.
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0은 자동 갱신이 활성화된 반복 멤버십을 
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## 게이트웨이를 찾을 위치:
+## 게이트웨이를 찾을 위치: {#where-to-find-the-gateways}
 
 같은 페이지( **Ultimate Multisite > Settings > Payments**)에서 결제 게이트웨이를 설정할 수 있습니다. **활성 결제 게이트웨이** 바로 아래에서 _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ 및 _Manual_을 볼 수 있습니다.
 
@@ -67,7 +67,7 @@ Ultimate Multisite v2.13.0은 자동 갱신이 활성화된 반복 멤버십을 
 
 이제 _WooCommerce_ , _GoCardless_ 또는 _Payfast_ 를 결제 게이트웨이로 사용하려면, 해당 **add-on을 설치하고 구성**해야 합니다.
 
-### WooCommerce add-on 설치 방법:
+### WooCommerce add-on 설치 방법: {#how-to-install-the-woocommerce-add-on}
 
 _Stripe_ 와 _PayPal_ 은 일부 국가에서 사용할 수 없어 Ultimate Multisite 사용자가 우리 plugin을 효과적으로 사용하는 데 제한이 있거나 방해가 된다는 점을 이해합니다. 그래서 매우 인기 있는 전자상거래 plugin인 _WooCommerce,_ 를 통합하기 위한 add-on을 만들었습니다. 전 세계 개발자들이 여기에 다양한 결제 게이트웨이를 통합하기 위한 add-on을 만들었습니다. 우리는 이를 활용하여 Ultimate Multisite 청구 시스템과 함께 사용할 수 있는 결제 게이트웨이를 확장했습니다.
 
@@ -95,7 +95,7 @@ add-on 세부 정보가 있는 창이 팝업으로 표시됩니다. **Install No
 
 WooCommerce Integration add-on에 대해 더 읽으려면 **여기를 클릭하세요**.
 
-### GoCardless add-on 설치 방법:
+### GoCardless add-on 설치 방법: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ add-on을 설치하는 단계는 _WooCommerce_ add-on과 거의 같습니다. add-ons 페이지로 이동하여 **Ultimate Multisite: GoCardless Gateway** add-on을 선택하세요.
 
@@ -111,7 +111,7 @@ add-on 창이 팝업으로 표시됩니다. **Install Now**를 클릭하세요.
 
 _GoCardless_ gateway를 시작하는 방법을 알아보려면 **이 문서를 읽어보세요**.
 
-### Payfast add-on 설치 방법:
+### Payfast add-on 설치 방법: {#how-to-install-the-payfast-add-on}
 
 add-ons 페이지로 이동하여 **Ultimate Multisite: Payfast Gateway** add-on을 선택하세요.
 

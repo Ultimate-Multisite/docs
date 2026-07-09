@@ -3,13 +3,13 @@ title: Elektron xatlar va ommaviy xabarlarni yuborish
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Email va Broadcasts yuborish (v2)
+# Email va Broadcasts yuborish (v2) {#sending-emails-and-broadcasts-v2}
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
 
 Ultimate Multisite sizga maqsadli foydalanuvchiga yoki foydalanuvchilar guruhiga email yuborish, shuningdek e’lonlarni tarqatish uchun ularning admin dashboardida bildirishnomalar yuborish orqali mijozlaringiz bilan muloqot qilish imkonini beradigan funksiya bilan keladi
 
-## Broadcasts orqali mijozlaringiz dashboardiga admin bildirishnomalarini qo‘shing
+## Broadcasts orqali mijozlaringiz dashboardiga admin bildirishnomalarini qo‘shing {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ultimate Multisite broadcast funksiyasidan foydalanib, foydalanuvchingiz subsite admin dashboardiga **admin bildirishnomalari** qo‘shishingiz mumkin.
 
@@ -51,7 +51,7 @@ Xabaringizni yaratgandan so‘ng, **Send** tugmasini bosishingiz mumkin.
 
 Shu bilan tugadi. Admin bildirishnomasi darhol foydalanuvchingiz dashboardida ko‘rinishi kerak.
 
-## Mijozlaringizga emaillar yuboring
+## Mijozlaringizga emaillar yuboring {#send-emails-to-your-customers}
 
 Ultimate Multisite broadcast funksiyasidan foydalanib, foydalanuvchilaringizga email yuborishingiz mumkin. Emailni faqat aniq foydalanuvchilarga yuborish yoki ular obuna bo‘lgan mahsulot yoki plan asosida aniq foydalanuvchi guruhini target qilish imkoniyatingiz bor.
 
@@ -81,11 +81,11 @@ Xabaringizni yaratgandan so‘ng, **Send** tugmasini bosishingiz mumkin.
 
 Broadcast funksiyasidan foydalanib yakuniy foydalanuvchilaringizga email yuborish shunchalik oson.
 
-## Tizim emaillari
+## Tizim emaillari {#system-emails}
 
 Ultimate Multisite’dagi tizim emaillari — ro‘yxatdan o‘tish, to‘lov, domen mapping va hokazo kabi muayyan amallardan keyin tizim tomonidan yuboriladigan **avtomatik bildirishnomalar**. Bu emaillar Ultimate Multisite sozlamalaridan tahrirlanishi yoki o‘zgartirilishi mumkin. Shuningdek, u boshqa Ultimate Multisite o‘rnatilishidan mavjud sozlamalarni reset va import qilish imkonini beradigan funksiya bilan ham keladi.
 
-### Reset va import qilish
+### Reset va import qilish {#resetting--importing}
 
 Yangi Ultimate Multisite versiyalari, shuningdek add-onlar, vaqti-vaqti bilan yangi emaillarni ro‘yxatdan o‘tkazishi mumkin va o‘tkazadi.
 
@@ -93,7 +93,7 @@ Mojarolar va boshqa muammolarning oldini olish uchun, agar ular muayyan funksiya
 
 Biroq super adminlar va agentlar bu yangi ro‘yxatdan o‘tkazilgan emaillarni importer vositasi orqali import qilishlari mumkin. Bu jarayon yangi email shablonining kontenti va konfiguratsiyasi bilan yangi tizim emailini yaratadi, super adminga istagan o‘zgartirishlarini kiritish yoki ularni o‘z holicha qoldirish imkonini beradi.
 
-#### Tizim emaillarini qanday import qilish mumkin
+#### Tizim emaillarini qanday import qilish mumkin {#how-to-import-system-emails}
 
 Ultimate Multisite Settings sahifangizga o‘ting va **Emails** tabiga boring.
 
@@ -111,7 +111,7 @@ So‘ng qaysi tizim emaillari import qilinishi mumkinligini ko‘rish uchun Impo
 
 <!-- Skrinshot mavjud emas: Import Emails parametrlari kengaytirilgan Reset va Import modali -->
 
-#### Tizim emaillarini qayta tiklash
+#### Tizim emaillarini qayta tiklash {#reseting-system-emails}
 
 Ba’zan ma’lum bir email shabloniga kiritgan o‘zgarishlaringiz endi sizga mos kelmayotganini tushunasiz va uni **standart holatiga** qaytarmoqchi bo‘lasiz.
 

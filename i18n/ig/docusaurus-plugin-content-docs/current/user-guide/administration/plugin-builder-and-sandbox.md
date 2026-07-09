@@ -3,11 +3,11 @@ title: Plugin Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 nwere introduce the **Plugin Builder & Sandbox System**, nke na-eme AI assistant generate, activate, and manage WordPress plugins na-aka your network — onye ọ bụ na-akpọ na sandbox environment na-agbata.
 
-## Overview
+## Overview {#overview}
 
 The Plugin Builder na-eme AI assistant ịkpọ custom WordPress plugins na-akọwa akụkọ (natural language requests). Plugins nke a nwere ike ịchekwa, na-store, na-activate ọ bụ na-aka sandbox layer ma ọ bụrụ na ọ ga-agbata site live functionality.
 
@@ -17,7 +17,7 @@ Nche gị na-eme:
 - Prototyping features na-akọwa WordPress hooks ma custom post types.
 - Ịkọwa automation scripts nke nwere ike ịrụ batch operations.
 
-## Generating a Plugin via AI
+## Generating a Plugin via AI {#generating-a-plugin-via-ai}
 
 Ọ bụrụ na ị kpọ akụkọ (generate) plugin, jikọ interface chat Gratis AI Agent ma gosi ọ bụ na ị chọrọ ihe. Ọ bụrụ na ọ bụ:
 
@@ -32,7 +32,7 @@ AI ga-agbata:
 
 Ị ga-agbata ihe ọ bụ na ị kpọ akụkọ (refine) ọrụ ahụ ma ọ bụrụ na ị chọrọ, jikọ n'ime conversation thread ahụ ma ọ bụrụ na ị ga-activate.
 
-## Sandbox Activation
+## Sandbox Activation {#sandbox-activation}
 
 Activating plugin nke a na sandbox bụ ihe dị iche iche na-eme activation ọ na network live. Sandbox na-eme:
 

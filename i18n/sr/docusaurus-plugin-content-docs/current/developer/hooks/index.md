@@ -3,11 +3,11 @@ title: Референца за куке
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Референца за hooks
+# Референца за hooks {#hooks-reference}
 
 Аутоматски генерисана документација за свих **59 акција** и **118 филтера** у Ultimate Multisite.
 
-## Акције
+## Акције {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Покреће се пре преусмеравања аутентификације.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Покреће се непосредно пре него што се постави колачић за аутентификацију.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Покреће се након што се објекат сачува у бази података.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Омогућава програмерима plugin-а да додају радње у процес откључавања.
 
-## Филтери
+## Филтери {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Филтрира трајање периода истека колачића за аутентификацију.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Филтрира шему преусмеравања аутентификације.

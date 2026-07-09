@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filter: wp_ultimo_render_vars
+# Filter: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Omogoča razvijalcem pluginov, da globalno dodajo dodatno spremenljivko v kontekst izrisa.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Omogoča razvijalcem pluginov, da globalno dodajo dodatno spremenljivko v kontek
 | $view | `string` | Ime pogleda, ki naj bo izrisan. |
 | $default_view | `string` | Ime fallback_view |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.0
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) v vrstici 31
 
 
-## Vrne
+## Vrne {#returns}

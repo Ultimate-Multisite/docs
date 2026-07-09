@@ -3,11 +3,11 @@ title: Förmågevisibilitet
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Synlighet för förmågor (Ability Visibility)
+# Synlighet för förmågor (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introducerar kontrollerna **Synlighet för förmågor** (Ability Visibility), som styr vilka ytor som exponerar varje förmåga. Detta gör det möjligt för administratörer att finjustera vilka agentkapaciteter som är tillgängliga via REST API:er, MCP-servrar, WooCommerce-integrationer och andra gränssnitt.
 
-## Vad är Synlighet för förmågor?
+## Vad är Synlighet för förmågor? {#what-is-ability-visibility}
 
 Synlighet för förmågor är ett behörighetssystem som kontrollerar:
 
@@ -18,9 +18,9 @@ Synlighet för förmågor är ett behörighetssystem som kontrollerar:
 
 Varje förmåga har en synlighetsnivå som bestämmer dess tillgänglighet över olika ytor.
 
-## Synlighetsnivåer
+## Synlighetsnivåer {#visibility-levels}
 
-### Offentlig (Public)
+### Offentlig (Public) {#public}
 
 **Offentliga förmågor** är tillgängliga överallt:
 
@@ -32,7 +32,7 @@ Varje förmåga har en synlighetsnivå som bestämmer dess tillgänglighet över
 
 Exempel: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Intern (Internal)
+### Intern (Internal) {#internal}
 
 **Interna förmågor** är endast tillgängliga inom din WordPress-installation:
 
@@ -43,7 +43,7 @@ Exempel: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Exempel: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Partnerförmågor** är endast tillgängliga för vitlistade partners:
 
@@ -54,7 +54,7 @@ Exempel: `manage-settings`, `view-analytics`, `export-data`
 
 Exempel: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Inaktiverad (Disabled)
+### Inaktiverad (Disabled) {#disabled}
 
 **Inaktiverade förmågor** är inte tillgängliga någonstans:
 
@@ -63,15 +63,15 @@ Exempel: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Inte tillgängliga i adminpaneler
 - Användbart för inaktuella eller experimentella förmågor
 
-## Hantering av Synlighet för förmågor
+## Hantering av Synlighet för förmågor {#managing-ability-visibility}
 
-### Åtkomst till inställningar för Synlighet för förmågor
+### Åtkomst till inställningar för Synlighet för förmågor {#accessing-ability-visibility-settings}
 
 1. Gå till **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klicka på fliken **Abilities**
 3. Du ser en lista över alla installerade förmågor med deras synlighetsnivåer
 
-### Visa förmåga-detaljer
+### Visa förmåga-detaljer {#viewing-ability-details}
 
 Klicka på en förmåga för att se:
 
@@ -82,7 +82,7 @@ Klicka på en förmåga för att se:
 - **Last updated**: När synligheten senast ändrades
 - **Status**: Erkänd eller Oklassificerad
 
-### Ändra synlighetsnivåer
+### Ändra synlighetsnivåer {#changing-visibility-levels}
 
 För att ändra en förmågas synlighet:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Massoperationer
+### Massoperationer {#bulk-operations}
 
 För att ändra synligheten för flera förmågor:
 
@@ -108,11 +108,11 @@ För att ändra synligheten för flera förmågor:
 2. Välj en ny synlighetsnivå från rullgardinsmenyn för massåtgärder
 3. Klicka på **Apply**
 
-## Partner-tillåtelse-lista (Partner Allow-List)
+## Partner-tillåtelse-lista (Partner Allow-List) {#partner-allow-list}
 
 **Partner-tillåtelse-listan** kontrollerar vilka externa partners som kan komma åt förmågor på Partner-nivå.
 
-### Lägga till partners
+### Lägga till partners {#adding-partners}
 
 1. Gå till **Superdav AI Agent** → **Settings** → **Partners**
 2. Klicka på **Add Partner**
@@ -120,7 +120,7 @@ För att ändra synligheten för flera förmågor:
 4. Lägg valfritt till ett partnernamn och en beskrivning
 5. Klicka på **Save**
 
-### Tilldela förmågor till partners
+### Tilldela förmågor till partners {#assigning-abilities-to-partners}
 
 Efter att du har lagt till en partner:
 
@@ -130,7 +130,7 @@ Efter att du har lagt till en partner:
 4. I sektionen "Partner allow-list", kryssa i rutorna för de partners som ska ha tillgång
 5. Klicka på **Save**
 
-### Återkalla partneråtkomst
+### Återkalla partneråtkomst {#revoking-partner-access}
 
 För att ta bort en partners åtkomst:
 
@@ -140,11 +140,11 @@ För att ta bort en partners åtkomst:
 
 Partnern förlorar omedelbart åtkomsten till den förmågan.
 
-## Oklassificerade förmågor (Unclassified Abilities)
+## Oklassificerade förmågor (Unclassified Abilities) {#unclassified-abilities}
 
 När du installerar en tredjepartsförmåga som Superdav AI Agent inte känner igen, märks den som **Oklassificerad** (Unclassified).
 
-### Adminmeddelande för oklassificerade förmågor
+### Adminmeddelande för oklassificerade förmågor {#admin-notice-for-unclassified-abilities}
 
 Du kommer att se ett adminmeddelande:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Granska oklassificerade förmågor
+### Granska oklassificerade förmågor {#reviewing-unclassified-abilities}
 
 1. Klicka på **Review Abilities** i meddelandet
 2. För varje oklassificerad förmåga ser du:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Klicka på **Classify** för att spara ditt beslut
 
-### Varför klassificera oklassificerade förmågor?
+### Varför klassificera oklassificerade förmågor? {#why-classify-unclassified-abilities}
 
 Att klassificera förmågor:
 
@@ -187,9 +187,9 @@ Att klassificera förmågor:
 - **Aktiverar funktioner**: När den är klassificerad blir förmågan tillgänglig
 - **Dokumenterar beslut**: Dina val loggas för revisionsändamål
 
-## Synlighet i olika ytor
+## Synlighet i olika ytor {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Offentliga förmågor** är tillgängliga via REST-slutpunkter:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Interna och Partnerförmågor** är inte tillgängliga via REST API.
 
-### MCP-servrar
+### MCP-servrar {#mcp-servers}
 
 **Offentliga förmågor** är tillgängliga via MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partnerförmågor** är endast tillgängliga med partneruppgifter.
 
-### WooCommerce-integration
+### WooCommerce-integration {#woocommerce-integration}
 
 **Offentliga förmågor** relaterade till WooCommerce är tillgängliga:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Interna förmågor** exponeras inte för WooCommerce.
 
-### Chattgränssnitt
+### Chattgränssnitt {#chat-interface}
 
 **Alla förmågor** (Offentliga, Interna, Partner) är tillgängliga i chatten, beroende på användarens behörigheter:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Vanliga användare ser endast Offentliga förmågor
 - Partners ser Offentliga + Partnerförmågor (om de är vitlistade)
 
-## Säkerhetspraxis (Security Best Practices)
+## Säkerhetspraxis (Security Best Practices) {#security-best-practices}
 
-### Principen om minsta behörighet (Principle of Least Privilege)
+### Principen om minsta behörighet (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Ställ in förmågor till den mest restriktiva synlighet som fortfarande tillåter deras användning
 - Använd Partner-synlighet för känsliga operationer
 - Inaktivera förmågor du inte använder
 
-### Regelbundna revisioner (Regular Audits)
+### Regelbundna revisioner (Regular Audits) {#regular-audits}
 
 - Granska förmågas synlighet månadsvis
 - Kontrollera efter oklassificerade förmågor
 - Ta bort åtkomst för oanvända partners
 
-### Loggning och övervakning (Logging and Monitoring)
+### Loggning och övervakning (Logging and Monitoring) {#logging-and-monitoring}
 
 - Övervaka vilka förmågor som används mest
 - Spåra mönster för partneråtkomst
 - Larma vid ovanlig förmåganvändning
 
-### Tredjepartsförmågor (Third-Party Abilities)
+### Tredjepartsförmågor (Third-Party Abilities) {#third-party-abilities}
 
 - Granska tredjepartsförmågor innan du aktiverar dem
 - Klassificera dem explicit
 - Börja med Intern eller Partner-synlighet
 - Uppgradera till Offentlig endast efter granskning
 
-## Felsökning (Troubleshooting)
+## Felsökning (Troubleshooting) {#troubleshooting}
 
 **En förmåga visas inte i listan**
 - Verifiera att förmågan är installerad och aktiv
@@ -285,7 +285,7 @@ Available abilities:
 - Kontrollera att din klassificering sparades
 - Verifiera att pluginet som tillhandahåller förmågan är uppdaterat
 
-## Migration från äldre läge (Migration from Legacy Mode)
+## Migration från äldre läge (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Om du uppgraderar från en äldre version av Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Om du uppgraderar från en äldre version av Superdav AI Agent:
 
 Se **Third-Party Mode Migration** för mer detaljer om övergången till inbyggd Abilities API-integration.
 
-## Nästa steg (Next Steps)
+## Nästa steg (Next Steps) {#next-steps}
 
 Efter att ha konfigurerat synligheten för förmågor:
 

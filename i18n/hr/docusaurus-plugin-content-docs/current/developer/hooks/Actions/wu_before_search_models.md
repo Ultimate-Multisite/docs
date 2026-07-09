@@ -4,13 +4,13 @@ title: Radnja - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Radnja: wu_before_search_models
+# Radnja: wu_before_search_models {#action-wubeforesearchmodels}
 
 Pokreće se prije obrade zahtjeva za pretraživanje.
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/class-ajax.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-ajax.php#L94) u retku 94

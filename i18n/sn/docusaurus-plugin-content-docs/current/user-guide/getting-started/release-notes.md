@@ -3,9 +3,9 @@ title: Mavandzo ekupedzisira
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Zvinoreva Rezha (Release Notes)
+# Zvinoreva Rezha (Release Notes) {#release-notes}
 
-## Versoni 2.13.0 — Chireve panguva 2026-06-05
+## Versoni 2.13.0 — Chireve panguva 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Chiiya: Kubva: Kubva support ye sovereign-tenant kuti account ya mwana, checkout, billing, site, invoice, template switching, uye domain mapping flows zvakawanda, izvi zvinokubatsira tenant networks kuita kuti vanhu vashanye vafare back kune main site kuti vashandise matenderi anogadzirwa.
 - Chiiya: Kubva: Kubva checks dzemutauro wekugadzirisa (renewal-credential checks) dzinowanikwa pfungwa dze membership dzine kuratidza, izvi zvinokubatsira gateways kuita kuti auto-renewal isave imwe kana kune agreement ya billing, subscription, kana vault token inotevera isingazivikanwa.
@@ -18,7 +18,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Membership renewals, expiration display, uye payment collection edge cases ndinobva kubva pfungwa dze kupfuura mwedzi, crashes, kana kuva nepayment inotevera.
 - Improved: WordPress compatibility ndinobva kune 7.0, production Vue assets ndinokubva kubva npm sources, uye Cypress end-to-end coverage ndinobva kuita zvakawanda pfungwa dze checkout, setup, SSO, uye gateway flows.
 
-## Versheni 2.12.0 — Chirevedu kuita kuita neparati 2026-05-15
+## Versheni 2.12.0 — Chirevedu kuita kuita neparati 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Chinangwa: Hostinger (hPanel) wakaonekwa se provider wekuti unogona kutenda, uye na kugadzirisa domain mapping
 - Chinangwa: Site Exporter ndeyekuda kunge inoreva bundles dze network import kuti upanobatsira kuita site restoration yakanyanya kune network yese.
@@ -30,7 +30,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Kufamba: Site Exporter CLI ndine kuita default network site selection yakasiyana yakasiyana yakasiyana.
 - Chinangwa: Kubatana wp-cli wakaondwa pamusoro pe plugin, kunge kubatana neplugin inenge inokwanisa kuitira size ya plugin ine zvakanyanya.
 
-## Versheni 2.11.0 — Chirevedu kuita kuita neparati 2026-05-11
+## Versheni 2.11.0 — Chirevedu kuita kuita neparati 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Chinangwa: Site exports ndine kunge kubatana index.php inosanganisira kuti ZIP inogona kutarisirwa (installed) pane host chinobva kana kuti yakasiyana neplugin inenge inokwanisa kuita iye.
 - Chinangwa: Network export inokubatsira administrators kuti vore subsites zvose mu archive imwe chete kubva munzira ye Site Export admin page.
@@ -38,7 +38,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Chinangwa: Checkout form editor inoreva kana unenge uingara product yakashandiswa asi haunenge wakaona field inosanganisira.
 - Chinangwa: Settings tab yekubatanidza/kudya (Import/Export) ndine kunge kuita zvakasiyana kuti inoreve scope yake uye inogadzirisa link dzine Site Export tool.
 
-## Versheni 2.10.0 — Chirevedu kuita kuita neparati 2026-05-05
+## Versheni 2.10.0 — Chirevedu kuita kuita neparati 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Chii: Wizard ya PayPal kuti uingire credentials manually ne OAuth flag gate kuti uingire gateway zvakadzama.
 - Chii: Customer panel inogadzirwa kubva ku template yakanaka, grid yakidzidzwa, uye button ye **Reset current template**.
@@ -51,7 +51,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: SSO path yakapfuma panguva dzinogadzirwa dzine kuta dzese dzemabhukuya.
 - Fix: Options dzemabhukuya inenge dzakavara dzisavimbwe kana zvinogadzirwa.
 
-## Version 2.9.0 — Chakaedza kuita panguva 2026-04-30
+## Version 2.9.0 — Chakaedza kuita panguva 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - New: Export uye import ya single-site yakagadzirwa panguva **Tools > Export & Import**.
 - Fix: ZIP files dzemabhukuya dzinogadzirwa kubva mu endpoint wekudzorera (authenticated download endpoint).
@@ -65,7 +65,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Tour IDs dzine kuta dzinogadzirwa ku underscores mumuser settings keys.
 - Improved: ZipArchive inogadzirwa kubva mu Alchemy/Zippy kuti zvinhu zvinogona kuita zvakanaka.
 
-## Version 2.8.0 — Chakaedza kuita panguva 2026-04-29
+## Version 2.8.0 — Chakaedza kuita panguva 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Chii: Kufanira Jumper toggle yakagadzirwa mu settings UI ya Other Options.
 - Chii: Kolonji chii (Status column) yakagadzirwa mune table ye checkout forms list.

@@ -3,15 +3,15 @@ title: צור תפריט
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# יצירת תפריט
+# יצירת תפריט {#create-menu}
 
 יכולת **יצירת תפריט** יוצרת תפריטי ניווט של WordPress ותומכת בתיוג ניווט נפרד מטקסט המאפיין את העמוד.
 
-## סקירה כללית
+## סקירה כללית {#overview}
 
 יכולת זו מרחיבה את פונקציונליות יצירת התפריטים הסטנדרטית על ידי הוספת האפשרות לציין פרמטר `navigation_label`. זה מאפשר לך ליצור תפריטים שבהם התווית המוצגת בניווט שונה מטקסט העמוד, ומעניק גמישות רבה יותר במבנה האתר ובחוויית המשתמש.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 | `location` | string | No | מיקום התבנית (Theme location) אליו יש להקצות תפריט זה, לדוגמה: `primary` |
 | `navigation_label` | string | No | התווית שיוצג בניווט (שונה מטקסט העמוד) |
 
-## ערך מוחזר (Return Value)
+## ערך מוחזר (Return Value) {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 }
 ```
 
-## תווית ניווט מול טקסט עמוד
+## תווית ניווט מול טקסט עמוד {#navigation-label-vs-page-title}
 
 הפרמטר `navigation_label` מאפשר לך להפריד בין שם התפריט הפנימי לבין התווית המוצגת למשתמשים:
 
@@ -43,9 +43,9 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 - אתה צריך לתמוך במספר שפות עם אורכי תווית שונים
 - אתה בונה תפריטים לאזורים גיאוגרפיים או קבוצות משתמשים ספציפיות
 
-## דוגמאות שימוש
+## דוגמאות שימוש {#usage-examples}
 
-### דוגמה 1: תפריט פשוט עם תווית ניווט
+### דוגמה 1: תפריט פשוט עם תווית ניווט {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Create a primary navigation menu called "Main Navigation" with the navigation la
 }
 ```
 
-### דוגמה 2: תפריט למיקום תבנית ספציפי
+### דוגמה 2: תפריט למיקום תבנית ספציפי {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 }
 ```
 
-## אינטגרציה עם Theme Builder
+## אינטגרציה עם Theme Builder {#integration-with-theme-builder}
 
 כאשר משתמשים ב-Theme Builder, יכולת יצירת התפריט:
 
@@ -89,13 +89,13 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 3. מקצה תפריטים למיקומי התבנית הנכונים
 4. תומכת בהוספת פריטי תפריט לאחר היצירה
 
-## יכולות קשורות
+## יכולות קשורות {#related-abilities}
 
 - **`add_menu_item`** — הוספת פריטים לתפריט קיים
 - **`update_menu`** — שינוי שם תפריט או הקצאתו מחדש למיקום תבנית
 - **`delete_menu`** — הסרת תפריט מהאתר שלך
 
-## שיטות עבודה מומלצות
+## שיטות עבודה מומלצות {#best-practices}
 
 - **השתמש בתוויות ניווט ברורות** — שמור על תווית תמציתית ותיאורית עבור המשתמשים
 - **התאם מיקומי תבנית** — הקצה תפריטים למיקום התבנית הנכון להצגה תקינה
@@ -103,14 +103,14 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 - **בדוק תגובתיות** — ודא שהתפריטים מוצגים כראוי במכשירים ניידים
 - **הקם תווית מקומית** — השתמש בתוויות ניווט שונות עבור גרסאות שפה שונות
 
-## מגבלות
+## מגבלות {#limitations}
 
 - תווית הניווט היא להצגה בלבד; ה-`name` הפנימי עדיין משמש לזיהוי ב-WordPress
 - תמיכת תבניות משתנה; לא כל התבניות תומכות בכל מיקומי התפריט
 - יש להוסיף פריטי תפריט בנפרד לאחר יצירת התפריט
 - שינוי תווית הניווט דורש עדכון של התפריט כולו
 
-## יכולות קשורות
+## יכולות קשורות {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — יצירת לוגואים לכותרת האתר שלך
 - [Validate Palette Contrast](./validate-palette-contrast.md) — וידוא סכמות צבע נגישות

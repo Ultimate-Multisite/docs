@@ -3,7 +3,7 @@ title: Gidans Enstite Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite genyen yon wizard ki vini avan pou konvèti yon enstalasyon WordPress estanda an rezo WordPress Multisite otomatikman. Sa elimine bezwen ou edite `wp-config.php` oswa eseye komand baz done (database commands) menm jan an.
 
@@ -11,13 +11,13 @@ Ultimate Multisite genyen yon wizard ki vini avan pou konvèti yon enstalasyon W
 Si enstalasyon WordPress ou a deja ap mache kòm yon rezo Multisite, ou ka pase etap sa la pou kont li. Wizard la sèlman parèt lè Multisite pa aktif ankò.
 :::
 
-## Lè Wizard La Parèt?
+## Lè Wizard La Parèt? {#when-does-the-wizard-appear}
 
 Lè ou aktive Ultimate Multisite sou yon enstalasyon WordPress estanda (pa Multisite), plugin an ap detekte ke Multisite pa aktif epi li otomatikman redirekte ou nan Multisite Setup Wizard la olye pou wizard setup regilye a.
 
 Ou ka tou jwenn aksè li dirèkteman nan **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Pré-requis
+## Pré-requis {#prerequisites}
 
 Anvan ou kòmanse wizard la, asire w ke:
 
@@ -29,7 +29,7 @@ Anvan ou kòmanse wizard la, asire w ke:
 Wizard la modifie fichye `wp-config.php` ou a epi li kreye nouvo tab baz done (database tables). Toujou fè yon backup anvan ou kontinye.
 :::
 
-## Etap 1: Bienvenue
+## Etap 1: Bienvenue {#step-1-welcome}
 
 Premye ekran an eksplike sa k ap kòm WordPress Multisite e sa wizard la pral fè:
 
@@ -42,11 +42,11 @@ Premye ekran an eksplike sa k ap kòm WordPress Multisite e sa wizard la pral f�
 
 Klike **Continue** pou ou ka kontinye.
 
-## Etap 2: Konfigirasyon Rezo (Network Configuration)
+## Etap 2: Konfigirasyon Rezo (Network Configuration) {#step-2-network-configuration}
 
 Etap sa a mande w pou ou configure tout paramèt rezo ou yo.
 
-### Estrikti Sit (Site Structure)
+### Estrikti Sit (Site Structure) {#site-structure}
 
 Chwazi kijancho ki wè ou pral òganize sit ou yo nan rezo a:
 
@@ -57,11 +57,11 @@ Chwazi kijancho ki wè ou pral òganize sit ou yo nan rezo a:
 Si ou chwazi sub-domains, ou pral bezwen configure **wildcard DNS** ak yon **wildcard SSL certificate** pou domèn ou an. La plupart nan hosting WordPress ki byen jere ap fè sa otomatikman. Gade [Ultimate Multisite 101](./ultimate-multisite-101) pou yon konparasyon detaye.
 :::
 
-### Tit Rezo a (Network Title)
+### Tit Rezo a (Network Title) {#network-title}
 
 Bay yon non pou rezo ou an. Sa a default la se tit sit ou kounye a ak "Network" ajoute l. Ou ka chanje sa pi latè nan rann rezo a (network settings).
 
-### Email Admin Rezo a (Network Admin Email)
+### Email Admin Rezo a (Network Admin Email) {#network-admin-email}
 
 Adrès imèl ki itilize pou notifikasyon administrasyon rezo a. Sa a default la se adrès imèl itilizatè kounye a.
 
@@ -69,7 +69,7 @@ Adrès imèl ki itilize pou notifikasyon administrasyon rezo a. Sa a default la 
 
 Malgre ou fin ranpli tout fòt yo, klike sou **Continue** pou kontinye.
 
-## Etap 3: Enstalasyon (Installation)
+## Etap 3: Enstalasyon (Installation) {#step-3-installation}
 
 Klike sou bouton **Install** pou kòmanse. Wizard la ap fè twa etap otomatik ki vini ansè yon lòt, epi li montre pwogrè chak etap an tan reyèl:
 
@@ -96,7 +96,7 @@ Yon fwa tout etap yo fini siksèman, ou pral wè yon estati "Success!" vèt pou 
 
 Lè sa a, vizyè a ap kontinye otomatikman nan ekran konplè.
 
-## Etap 4: Konplèt
+## Etap 4: Konplèt {#step-4-complete}
 
 Yon fwa enstalasyon an fini, ou pral wè yon mesaj siksè ki konfime ke WordPress Multisite te aktive.
 
@@ -108,7 +108,7 @@ Kounye a, ou ka kontinye ak etap Ultimate Multisite setup wizard la pou configur
 Malgre ke instalasyon multisite la fini, browser ou ap redirekte atravè admin rezo ki te active. Ou ka bezwen se log in ankò paske cookie autentifikasyon yo te mete anwo pou anviwònman multisite a.
 :::
 
-## Fallback Setup Manual
+## Fallback Setup Manual {#manual-setup-fallback}
 
 Si wizard la pa kapab ekri nan fichye `wp-config.php` ou (ak pase pwoblèm pèmisyon fichye oswa restriksyon sèlèvè), li pral montre kòd egzak ou bezwen ajoute menm:
 
@@ -117,9 +117,9 @@ Si wizard la pa kapab ekri nan fichye `wp-config.php` ou (ak pase pwoblèm pèmi
 
 Malgre w fè chanjman manual yo, rafraîchi paj la epi wizard la pral detekte ke multisite a kounye a aktif.
 
-## Resousè pwoblèm (Troubleshooting)
+## Resousè pwoblèm (Troubleshooting) {#troubleshooting}
 
-### Wizard la di wp-config.php pa ekri
+### Wizard la di wp-config.php pa ekri {#the-wizard-says-wp-configphp-is-not-writable}
 
 Pwozes web sèlèvè ou bezwen pèmisyon pou ekri sou fichye `wp-config.php`. Ou ka chwazi:
 
@@ -127,7 +127,7 @@ Pwozes web sèlèvè ou bezwen pèmisyon pou ekri sou fichye `wp-config.php`. Ou
 - Itilize enstriksyon fallback setup manual ki bay wizard la
 - Demande sipò nan prestè hosting ou pou ede w
 
-### Sit yo pa aksede apre setup (subdomains)
+### Sit yo pa aksede apre setup (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Si ou te chwazi estrikti subdomain, ou bezwen configure **wildcard DNS** pou domèn ou a. Ajoute yon enregistre DNS:
 
@@ -139,7 +139,7 @@ Value: [IP sèlèvè ou an]
 
 Kontwe ak prestè hosting ou si ou pa asire kòman pou configure sa la.
 
-### Pwoblèm autentifikasyon apre setup
+### Pwoblèm autentifikasyon apre setup {#authentication-issues-after-setup}
 
 Si ou se log out oswa ou gen erè cookie apre setup multisite a:
 
@@ -147,7 +147,7 @@ Si ou se log out oswa ou gen erè cookie apre setup multisite a:
 2. Log in ankò nan `yourdomain.com/wp-login.php`
 3. Si pwoblèm nan rete, verifye ke `wp-config.php` ou pa gen `COOKIE_DOMAIN` mete an `false` — sa se yon pwoblèm ki konnen sou instalasyon multisite subdomain
 
-### Yon etap pa fini pandan enstalasyon an
+### Yon etap pa fini pandan enstalasyon an {#a-step-failed-during-installation}
 
 Si yon sèl etap enstalasyon montre yon erè:
 

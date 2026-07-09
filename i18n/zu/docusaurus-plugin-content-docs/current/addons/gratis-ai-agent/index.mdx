@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent ingumsizi we-WordPress AI ozimele ongakwazi ukuhlela, ukwakha, nokuphatha amasayithi e-WordPress aphelele ngemiyalelo yolimi lwemvelo. Iveza isethi ehlelekile **yamakhono** — izenzo ezihlukene, ezihlolakalayo i-agent engazibiza — ehlanganisa yonke into kusukela ekuphathweni kokuqukethwe kuya ekwenzeni ngokwezifiso uhlelo lokuklama. Inguqulo 1.9.0 yengeza amakhono okudala okuqukethwe, ukubuyekezwa kwamakhasi ngokubonakalayo ngezithombe-skrini zohlangothi lweklayenti, amaphrofayela amahlanu e-agent akhelwe ngaphakathi, namafulegi ezici okulawula ukufinyelela nokubhrenda.
 
-## Izici Ezisemqoka
+## Izici Ezisemqoka {#key-features}
 
 - **Uhlelo lwamakhono** — ikhathalogi yezenzo eyimodula, enwebekayo i-agent engazibiza ekufakweni kwakho kwe-WordPress
 - **Ukuphathwa Kokuqukethwe** — dala okuthunyelwe namakhasi (kuhlanganise nokwabela izifanekiso zamakhasi), dala okuthunyelwe okuningi ngobuningi ekubizeni okukodwa, setha izithombe ezigqanyisiwe, futhi wakhe amafomu okuxhumana
@@ -28,21 +28,21 @@ Gratis AI Agent ingumsizi we-WordPress AI ozimele ongakwazi ukuhlela, ukwakha, n
 - **Ukuhlelwa Kokwakha Isayithi v2** — amapulani okwakha isayithi anezinyathelo eziningi ngokutholwa kwezandiso, ukulandelela inqubekelaphambili, nokululama emaphutheni
 - **Umyalo we-benchmark we-WP-CLI** — sebenzisa isethi yokulinganisa amandla e-agent kusuka kulayini womyalo ye-CI nokuhlola imodeli
 
-## Izimfuneko
+## Izimfuneko {#requirements}
 
 - WordPress 6.0 noma ngaphezulu
 - PHP 8.1 noma ngaphezulu
 - WordPress Multisite (eyenziwe yasebenza kunethiwekhi) noma ukufakwa kwesayithi elilodwa
 - Isandiso sokuxhuma umhlinzeki we-AI esisebenzayo (Anthropic, OpenAI, noma esihambisanayo)
 
-## Ukufaka
+## Ukufaka {#installation}
 
 1. Layisha amafayela esandiso ku-`/wp-content/plugins/gratis-ai-agent`
 2. Yenza isandiso sisebenze ngesikrini **Sezandiso** ku-WordPress
 3. Zulazula uye ku-**Gratis AI Agent → Izilungiselelo** bese uxhuma umhlinzeki wakho we-AI
 4. (Ongakukhetha) Phequlula **Irejista Yamakhono** ukuze ufake amaphakethe wamakhono engeziwe
 
-## Ukuqala Ngokushesha
+## Ukuqala Ngokushesha {#quick-start}
 
 Uma isivuliwe futhi ixhunyiwe kumhlinzeki we-AI, vula iphaneli ye-**Gratis AI Agent** kubha eseceleni yokuphatha ye-WordPress. Thayipha umyalo wolimi lwemvelo futhi i-agent izohlela bese isebenzisa izinyathelo ezidingekayo isebenzisa amakhono ayo atholakalayo.
 
@@ -60,7 +60,7 @@ Faka iphalethi yemibala yemodi emnyama ku-theme bese usetha umbala oyinhloko ube
 Yakha iwebhusayithi yendawo yokudlela enemenyu eku-inthanethi, ifomu lokubhuka, nekhasi lokuxhumana.
 ```
 
-## Uhlolojikelele Lwamakhono
+## Uhlolojikelele Lwamakhono {#abilities-overview}
 
 Amakhono ayizenzo eziyisisekelo i-agent engazenza. Ikhono ngalinye liyiklasi le-PHP elibhalisiwe eliveza i-schema (amapharamitha nezinhlobo zokubuyisa) i-agent eyifunda ngesikhathi sokusebenza. Amakhono aqoqwe ezindaweni zokusebenza:
 
@@ -79,7 +79,7 @@ Amakhono ayizenzo eziyisisekelo i-agent engazenza. Ikhono ngalinye liyiklasi le-
 
 Bona [Ireferensi Yamakhono](./abilities) ukuze uthole imibhalo ephelele yamapharamitha nezibonelo zokusetshenziswa.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent iza nomndeni womyalo othi `wp gratis-ai-agent` wokusebenzisa ama-benchmark nokuphatha amakhono kusuka kulayini womyalo. Bona [Ireferensi ye-WP-CLI](./wp-cli) ukuze uthole uhlu oluphelele lwemiyalo.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Ukulungiselela
+## Ukulungiselela {#configuration}
 
 Zonke izilungiselelo zingaphansi kwe-**Gratis AI Agent → Izilungiselelo** kumphathi we-WordPress:
 
@@ -106,7 +106,7 @@ Zonke izilungiselelo zingaphansi kwe-**Gratis AI Agent → Izilungiselelo** kump
 | **Isikhathi Sokuphela Sekhono** | Imizuzwana ephezulu ikhono elilodwa elingasebenza ngayo (okuzenzakalelayo 30) |
 | **Ukuloga Kokulungisa Amaphutha** | Loga ukubizwa kwamakhono nokucabanga kwe-agent kulogi yokulungisa amaphutha ye-WordPress |
 
-## Uhlu Lokuvimba Lokuphepha Lokuphathwa Kwezinketho
+## Uhlu Lokuvimba Lokuphepha Lokuphathwa Kwezinketho {#options-management-safety-blocklist}
 
 Ikhono Lokuphathwa Kwezinketho lifaka uhlu lokuvimba olwakhelwe ngaphakathi oluvimbela i-agent ekufundeni noma ekubhaleni izinketho ze-WordPress ezibucayi. Uhlu lokuvimba oluzenzakalelayo luhlanganisa:
 
@@ -118,26 +118,26 @@ Ikhono Lokuphathwa Kwezinketho lifaka uhlu lokuvimba olwakhelwe ngaphakathi oluv
 
 Okufakiwe okwengeziwe kungangezwa ngesihlungi se-`gratis_ai_agent_options_blocklist`.
 
-## Ama-Hook Nezihlungi
+## Ama-Hook Nezihlungi {#hooks-and-filters}
 
-### Izenzo
+### Izenzo {#actions}
 
 - `gratis_ai_agent_ability_registered` — kudutshulwa ngemva kokuba ikhono libhalisiwe, kwamukela igama lekilasi lekhono
 - `gratis_ai_agent_plan_started` — kudutshulwa lapho ipulani yomakhi wesayithi iqala ukusetshenziswa
 - `gratis_ai_agent_plan_completed` — kudutshulwa lapho ipulani iqeda ngempumelelo
 - `gratis_ai_agent_plan_failed` — kudutshulwa lapho ipulani ihlangabezana nephutha elingalungiseki
 
-### Izihlungi
+### Izihlungi {#filters}
 
 - `gratis_ai_agent_abilities` — shintsha uhlu lwamakhono abhalisiwe ngaphambi kokuthi i-agent ilulayishe
 - `gratis_ai_agent_options_blocklist` — nweba noma wehlise uhlu lokuvimba lokuphepha lwezinketho
 - `gratis_ai_agent_benchmark_questions` — engeza imibuzo ye-benchmark eyenziwe ngokwezifiso kusethi yokuhlola
 - `gratis_ai_agent_plan_plugins` — shintsha uhlu lokutholwa kwezandiso ngesikhathi sokukhiqizwa kwepulani yesayithi
 
-## Usekelo
+## Usekelo {#support}
 
 Ukuze uthole usekelo, vakashela [ultimatemultisite.com](https://ultimatemultisite.com) noma uvule udaba kurephozithori yesandiso.
 
-## I-Changelog
+## I-Changelog {#changelog}
 
 Bona [I-Changelog](./changelog) ukuze uthole umlando ophelele wezinguqulo.

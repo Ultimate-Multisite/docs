@@ -3,15 +3,15 @@ title: 'Μάθημα 5: Σχεδιάζοντας τα Σχέδια σας'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Μάθημα 5: Σχεδιασμός των Σχεδίων σας
+# Μάθημα 5: Σχεδιασμός των Σχεδίων σας {#lesson-5-designing-your-plans}
 
 Τα επίπεδα τιμολόγησης (plan tiers) δεν είναι απλώς βαθμίδες τιμών—αντικατοπτρίζουν τον τρόπο λειτουργίας των πελατών σας στην συγκεκριμένη αγορά (niche). Σε αυτό το μάθημα, θα σχεδιάσετε τα επίπεδα προϊόντων ώστε να ταιριάζουν στις πραγματικές ανάγκες των επιχειρήσεων fitness σε διαφορετικά στάδια ανάπτυξης.
 
-## Πού Έμασαμε
+## Πού Έμασαμε {#where-we-left-off}
 
 Το FitSite έχει έτοιμα τρία templates (Studio Essential, Gym Pro, Fitness Chain). Τώρα δημιουργούμε τα σχέδια που καθορίζουν σε τι έχουν πρόσβαση οι πελάτες και τι πληρώνουν.
 
-## Σκέψη σε Ομάδες Πελατών
+## Σκέψη σε Ομάδες Πελατών {#thinking-in-customer-segments}
 
 Το λάθος που κάνουν οι περισσότεροι είναι να σχεδιάζουν τα σχέδια γύρω από τεχνικά χαρακτηριστικά (αποθήκευση, bandwidth, αριθμός σελίδων). Οι ιδιοί πελάτες σας δεν σκέφτονται με αυτούς τους όρους. Ένας ιδιοκτήτης γυμναστηρίου σκέφτεται για το τι χρειάζεται για να λειτουργήσει η επιχείρησή του.
 
@@ -25,11 +25,11 @@ _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 
 Τα σχέδιά σας πρέπει να αντιστοιχούν σε αυτές τις ομάδες, και όχι σε τυχαίες συλλογές χαρακτηριστικών.
 
-## Δημιουργία των Σχεδίων FitSite
+## Δημιουργία των Σχεδίων FitSite {#creating-the-fitsite-plans}
 
 Μεταβείτε στο **Ultimate Multisite > Products > Add Product** για κάθε plan.
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Στόχος**: Solo trainers και μικρά studios
 
@@ -59,7 +59,7 @@ _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **Στόχος**: Καθιερωμένα γυμναστήρια με μία τοποθεσία
 
@@ -85,7 +85,7 @@ _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **Στόχος**: Fitness chains με πολλαπλές τοποθεσίες
 
@@ -109,7 +109,7 @@ _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Ρύθμιση της Ομάδας Σχεδίων (Plan Group)
+## Ρύθμιση της Ομάδας Σχεδίων (Plan Group) {#setting-up-the-plan-group}
 
 Η ομάδα σχεδίων διασφαλίζει ότι οι πελάτες μπορούν να κάνουν upgrade ή downgrade μόνο εντός της οικογένειας σχεδίων FitSite. Στην καρτέλα **Up & Downgrades** κάθε plan:
 
@@ -118,7 +118,7 @@ _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 
 Αυτό δημιουργεί μια σαφή πορεία αναβάθμισης: Starter → Growth → Pro.
 
-## Προσθήκη Order Bumps
+## Προσθήκη Order Bumps {#adding-order-bumps}
 
 Τα order bumps είναι συμπληρωματικά προϊόντα που προσφέρονται κατά την ολοκλήρωση της αγοράς (checkout). Για το FitSite, λάβετε υπόψη:
 
@@ -128,7 +128,7 @@ _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 
 Δημιουργήστε αυτά ως προϊόντα τύπου **Package** στο Ultimate Multisite και συνδέστε τα με τα αντίστοιχα plans.
 
-## Γιατί Λειτουργεί Αυτή η Δομή
+## Γιατί Λειτουργεί Αυτή η Δομή {#why-this-structure-works}
 
 - Το **Starter** αφαιρεί τα εμπόδια εισόδου — χαμηλή τιμή, απλή προσφορά, φέρνει τους trainers online γρήγορα
 - Το **Growth** προσθέτει τα χαρακτηριστικά που ζητούν πραγματικά τα γυμναστήρια — booking, galleries, custom domains
@@ -136,7 +136,7 @@ _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 - Τα **Order bumps** επιτρέπουν στους πελάτες να προσαρμόζουν χωρίς να πολυπλοκάρнити τα βασικά plans
 - Η **σαφής πορεία αναβάθμισης** σημαίνει ότι οι πελάτες αναπτύσσονται μαζί σας αντί να φύγουν
 
-## Το FitSite Network μέχρι στιγμής
+## Το FitSite Network μέχρι στιγμής {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Τι Δημιουργήσαμε Αυτό το Μάθημα
+## Τι Δημιουργήσαμε Αυτό το Μάθημα {#what-we-built-this-lesson}
 
 - **Τρία επίπεδα σχεδίων** που αντιστοιχούν σε πραγματικές επιχειρήσεις fitness
 - **Feature gating** χρησιμοποιώντας τους ελέγχους plugins και templates του Ultimate Multisite

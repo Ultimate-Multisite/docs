@@ -3,15 +3,15 @@ title: Ngā Rārangi Kai Manaaki
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ngā Tahua Manaaki
+# Ngā Tahua Manaaki {#hospitality-menus}
 
 Mā te āhuatanga **Ngā Tahua Manaaki** e āhei ai a Theme Builder ki te waihanga me te tāmau i ngā whārangi tahua kai, inu hoki kua whakaraupapatia ki roto tonu i tō WordPress site.
 
-## Tirohanga Whānui
+## Tirohanga Whānui {#overview}
 
 Ka taea ināianei e Theme Builder te waihanga whārangi tahua ngaio, kua whakaraupapatia mō ngā pakihi manaaki, tae atu ki ngā wharekai, ngā kawhe, ngā pāpara, me ngā ratonga whakarato kai. Kua tino whakaurua ēnei tahua ki te hoahoa o tō site, ā, he māmā te whakahou me te whakahaere.
 
-## Ngā Momo Manaaki e Tautokona Ana
+## Ngā Momo Manaaki e Tautokona Ana {#supported-hospitality-types}
 
 - **Ngā wharekai** — ngā tahua kai ratonga-katoa
 - **Ngā kawhe** — ngā tahua kawhe me ngā kai māmā
@@ -21,9 +21,9 @@ Ka taea ināianei e Theme Builder te waihanga whārangi tahua ngaio, kua whakara
 - **Ngā taraka kai** — ngā tahua ratonga kai neke
 - **Ngā whare pia me ngā whare waina** — ngā tahua inu me ngā whakaahuatanga
 
-## Hanganga Tahua
+## Hanganga Tahua {#menu-structure}
 
-### Ngā Kāwai Tahua
+### Ngā Kāwai Tahua {#menu-categories}
 
 Ka whakaraupapatia ngā tahua ki ngā kāwai:
 
@@ -34,7 +34,7 @@ Ka whakaraupapatia ngā tahua ki ngā kāwai:
 - **Ngā inu** — ngā inu (waipiro me te kore-waipiro)
 - **Ngā mea motuhake** — ngā mea motuhake o ia rā, o ia kaupeka rānei
 
-### Hōputu Tūemi Tahua
+### Hōputu Tūemi Tahua {#menu-item-format}
 
 Kei ia tūemi tahua:
 
@@ -49,7 +49,7 @@ Kei ia tūemi tahua:
 }
 ```
 
-#### Ngā Āpure Tūemi
+#### Ngā Āpure Tūemi {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Kei ia tūemi tahua:
 | `allergens` | array | Ngā pāwera noa (nati, mātaitai, me ētahi atu) |
 | `availability` | string | Te wā e wātea ana (ia rā, ā-kaupeka, me ētahi atu) |
 
-## Te Waihanga Tahua Manaaki
+## Te Waihanga Tahua Manaaki {#creating-hospitality-menus}
 
-### Hipanga 1: Tukuna Ngā Mōhiohio Tahua
+### Hipanga 1: Tukuna Ngā Mōhiohio Tahua {#step-1-provide-menu-information}
 
 Kōrero atu ki Theme Builder mō tō tahua:
 
@@ -71,7 +71,7 @@ Waihangatia he tahua wharekai mō taku wharekai Itāriana me ngā kai tīmatanga
 ngā rihi parāoa rimurapa, ngā kai matua, me ngā kai reka. Whakaurua ngā utu me ngā whakaahuatanga.
 ```
 
-### Hipanga 2: Ka Waihanga a Theme Builder i te Tahua
+### Hipanga 2: Ka Waihanga a Theme Builder i te Tahua {#step-2-theme-builder-generates-menu}
 
 Ka mahia e Theme Builder:
 
@@ -81,7 +81,7 @@ Ka mahia e Theme Builder:
 4. Ka whakahōputu i ngā utu me ngā whakaahuatanga
 5. Ka tāpiri i ngā mōhiohio kai me ngā pāwera
 
-### Hipanga 3: Arotake me te Whakarite
+### Hipanga 3: Arotake me te Whakarite {#step-3-review-and-customize}
 
 Ka taea e koe:
 
@@ -91,9 +91,9 @@ Ka taea e koe:
 4. Te whakahou i ngā whakaahuatanga me ngā mōhiohio kai
 5. Te whakarite i te kāhua me te whakatakotoranga
 
-## Ngā Kōwhiringa Whakaatu Tahua
+## Ngā Kōwhiringa Whakaatu Tahua {#menu-display-options}
 
-### Whārangi Tahua Katoa
+### Whārangi Tahua Katoa {#full-menu-page}
 
 He whārangi motuhake e whakaatu ana i tō tahua katoa:
 
@@ -102,7 +102,7 @@ He whārangi motuhake e whakaatu ana i tō tahua katoa:
 - He whakatakotoranga pai mō te tā
 - He hoahoa urupare-pūkoro
 
-### Widget Tahua
+### Widget Tahua {#menu-widget}
 
 Tāmaua ngā wāhanga tahua ki ētahi atu whārangi:
 
@@ -111,7 +111,7 @@ Tāmaua ngā wāhanga tahua ki ētahi atu whārangi:
 - Tahua inu ki te whārangi pāpara
 - Whakaaturanga kai reka ki te hiku
 
-### PDF Tahua
+### PDF Tahua {#menu-pdf}
 
 Waihangatia he tahua PDF ka taea te tikiake:
 
@@ -120,9 +120,9 @@ Waihangatia he tahua PDF ka taea te tikiake:
 - Kei roto ngā atahanga me ngā whakaahuatanga
 - He māmā te tiri me te īmēra
 
-## Ngā Mōhiohio Kai me ngā Pāwera
+## Ngā Mōhiohio Kai me ngā Pāwera {#dietary-and-allergen-information}
 
-### Ngā Āhuatanga Kai
+### Ngā Āhuatanga Kai {#dietary-attributes}
 
 Tohua ngā tūemi ki ngā mōhiohio kai:
 
@@ -134,7 +134,7 @@ Tohua ngā tūemi ki ngā mōhiohio kai:
 - **Low-Carb** — kua whakaitihia ngā warowaihā
 - **High-Protein** — he nui te pūmua
 
-### Ngā Whakatūpato Pāwera
+### Ngā Whakatūpato Pāwera {#allergen-warnings}
 
 Whakaurua ngā pāwera noa:
 
@@ -147,9 +147,9 @@ Whakaurua ngā pāwera noa:
 - **Gluten** — te wīti me ngā kākano kei roto te gluten
 - **Hēhami** — ngā kākano hēhami me te hinu
 
-## Whakahaere Tahua
+## Whakahaere Tahua {#menu-management}
 
-### Te Whakahou Utu
+### Te Whakahou Utu {#updating-prices}
 
 Whakahoungia ngā utu tahua me te māmā:
 
@@ -159,7 +159,7 @@ Whakahoungia ngā utu tahua me te māmā:
 4. Tiakina ngā panonitanga
 5. Ka puta tonutia ngā panonitanga ki tō site
 
-### Te Tāpiri Tūemi Ā-kaupeka
+### Te Tāpiri Tūemi Ā-kaupeka {#adding-seasonal-items}
 
 Waihangatia ngā rerekētanga tahua ā-kaupeka:
 
@@ -169,7 +169,7 @@ Waihangatia ngā rerekētanga tahua ā-kaupeka:
 4. Whakaritea ngā rā wātea
 5. Whakaaturia aunoa i te wā o te kaupeka
 
-### Te Whakahaere i Ngā Mea Motuhake
+### Te Whakahaere i Ngā Mea Motuhake {#managing-specials}
 
 Whakaaturia ngā mea motuhake o ia rā, o ia wiki rānei:
 
@@ -179,7 +179,7 @@ Whakaaturia ngā mea motuhake o ia rā, o ia wiki rānei:
 4. Whakahoungia ia rā, ia wiki rānei
 5. Purangatia ngā mea motuhake tawhito
 
-## Whakaurunga ki Theme Builder
+## Whakaurunga ki Theme Builder {#integration-with-theme-builder}
 
 Ina whakamahi i Theme Builder mō ngā site manaaki:
 
@@ -189,9 +189,9 @@ Ina whakamahi i Theme Builder mō ngā site manaaki:
 4. **Arotau pūkoro** — ka ātaahua te whakaatu o ngā tahua ki ngā waea
 5. **Arotau SEO** — he pai ngā tahua mō ngā pūkaha rapu
 
-## Ngā Tikanga Pai
+## Ngā Tikanga Pai {#best-practices}
 
-### Hoahoa Tahua
+### Hoahoa Tahua {#menu-design}
 
 - **Whakaraupapatanga mārama** — he hanganga kāwai arorau
 - **Whakaahuatanga pānui-ngāwari** — he whakahihiri hiakai, he whakamōhio hoki
@@ -199,7 +199,7 @@ Ina whakamahi i Theme Builder mō ngā site manaaki:
 - **Whakaahua ngaio** — ngā atahanga kai kounga-nui
 - **Mokowā mā** — kaua e whakakī rawa i te whārangi
 
-### Ihirangi
+### Ihirangi {#content}
 
 - **Whakaahuatanga tika** — whakaahuahia tika ngā tūemi
 - **Whakamiramiratia ngā mea motuhake** — kia tū motuhake ngā mea motuhake
@@ -207,7 +207,7 @@ Ina whakamahi i Theme Builder mō ngā site manaaki:
 - **Whakahou auau** — kia hou tonu ngā utu me ngā tūemi
 - **Whakamahia te reo whakaoho hiakai** — kia reka te āhua o ngā tūemi
 
-### Urunga
+### Urunga {#accessibility}
 
 - **Momotuhi pānui-ngāwari** — whakamahia ngā momo pū mārama, pānui-ngāwari
 - **Rerekētanga tae rawaka** — whakaritea kia pānui-ngāwari te kuputuhi
@@ -215,9 +215,9 @@ Ina whakamahi i Theme Builder mō ngā site manaaki:
 - **Whakatūpato pāwera** — whakaaturia ngā pāwera kia kitea nuitia
 - **Pai mō te pūkoro** — whakamātauria ki ngā pūrere katoa
 
-## Ngā Tauira
+## Ngā Tauira {#examples}
 
-### Hanganga Tahua Wharekai
+### Hanganga Tahua Wharekai {#restaurant-menu-structure}
 
 ```
 Kai whakaohooho
@@ -241,7 +241,7 @@ Purini
 └── Kōwhiringa Gelato
 ```
 
-### Hanganga Tahua Wharekawhe
+### Hanganga Tahua Wharekawhe {#cafe-menu-structure}
 
 ```
 Kawhe
@@ -260,7 +260,7 @@ Hanawiti
 └── Tākai Huawhenua
 ```
 
-## Āhuatanga e Hāngai ana
+## Āhuatanga e Hāngai ana {#related-features}
 
 - [Waihanga Tahua](../abilities/create-menu.md) — waihanga tahua whakatere
 - [Aronga Hoahoa](./design-direction.md) — whakaritea te hoahoa o tō pae

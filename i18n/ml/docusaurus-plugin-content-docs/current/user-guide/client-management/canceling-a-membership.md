@@ -3,7 +3,7 @@ title: അംഗത്വം റദ്ദാക്കൽ
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# അംഗത്വം റദ്ദാക്കൽ (v2)
+# അംഗത്വം റദ്ദാക്കൽ (v2) {#canceling-a-membership-v2}
 
 _**പ്രധാന കുറിപ്പ്: ഈ ലേഖനം Ultimate Multisite പതിപ്പ് 2.x-നെ കുറിച്ചാണ്.**_
 

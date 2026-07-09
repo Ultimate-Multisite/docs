@@ -4,11 +4,11 @@ title: Ago - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Ago: wu_handle_customer_meta_fields
+# Ago: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Permesu al kromprogramaj programistoj konservi metadatumojn laŭ malsamaj manieroj, se ili bezonas.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Permesu al kromprogramaj programistoj konservi metadatumojn laŭ malsamaj manier
 | $customer | `\Customer` | La klienta objekto de Ultimate Multisite. |
 | $checkout | `\Checkout` | La klaso de pagfinaligo. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) ĉe linio 1211

@@ -3,7 +3,7 @@ title: Ukuphathwa Kwentela
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ukuphathwa Kwentela
+# Ukuphathwa Kwentela {#tax-handling}
 
 Ultimate Multisite inemojuli yokuqoqwa kwentela eyakhelwe ku-plugin yethu eyinhloko, ngakho uma udinga ukuqoqa izintela zokuthengisa ezinhlelweni, emaphakhejini nasezinsizeni zakho, ungakwenza kalula ngaphandle kokuphendukela ekufakeni noma yimaphi ama-add-ons.
 
@@ -11,7 +11,7 @@ Ezinkampanini ezise-Europe, sinikeza **i-add-on** enezela amathuluzi nezici ukuz
 
 Ultimate Multisite ayifayili noma ayithumeli izintela egameni lakho kuhulumeni; simane sikusize uqoqe izintela ezifanele ngesikhathi sokwenziwa komsebenzi. **Usazodinga ukuthumela izintela ngokwakho.**
 
-## Ukunika Amandla Ukuqoqwa Kwentela
+## Ukunika Amandla Ukuqoqwa Kwentela {#enabling-tax-collection}
 
 Ukuqoqwa kwentela akunikiwe amandla ngokuzenzakalelayo. Ukuze ukunike amandla, udinga ukuya ku-**Ultimate Multisite > Settings > Taxes** bese ushintsha ukuze unike amandla isethingi ethi Enable Taxes.
 
@@ -25,7 +25,7 @@ Ungabuka futhi izilungiselelo zentela zemikhiqizo ngayinye:
 
 ![Izilungiselelo ze-Tax zemikhiqizo](/img/config/settings-taxes.png)
 
-### Intela engafakiwe vs. Intela efakiwe
+### Intela engafakiwe vs. Intela efakiwe {#tax-excluded-vs-tax-included}
 
 Ngokuzenzakalelayo, wonke amanani emikhiqizo yakho awafaki intela, okusho ukuthi izintela **azifakiwe** enanini lomkhiqizo. Uma sinquma ukuthi ikhasimende kufanele likhokhe izintela ekuthengeni okuthile, sizongeza izintela **ngaphezulu** kwe-subtotal.
 
@@ -37,7 +37,7 @@ Ungakhohlwa **ukulondoloza** izinguquko ozenzile.
 
 ###
 
-## Ukudala Amanani Entela
+## Ukudala Amanani Entela {#creating-tax-rates}
 
 Ngemva kokunika amandla Ukuqoqwa Kwentela, uzodinga ukudala amanani entela ezindawo ezithile usebenzisa umhleli wethu wamanani entela.
 
@@ -51,7 +51,7 @@ Ekhasini lomhleli wamanani entela, ungakwazi ukwengeza ama-Tax Rates amasha ngok
 
 Uzodinga ukunikeza izinga lentela ngalinye **isihloko** (esisetshenziswa kuma-invoices). Bese ungakhetha **izwe** (okudingekayo), **isifundazwe,** kanye **nedolobha** (kokubili kuyakhethwa) lapho le ntela izokhokhiswa khona. Ekugcineni, engeza **izinga lentela ngamaphesenti**.
 
-### Izigaba Zentela
+### Izigaba Zentela {#tax-categories}
 
 Ungakwazi futhi ukudala Izigaba Zentela eziningi, ukuze ungeze amanani entela ahlukene ezinhlotsheni ezahlukene zemikhiqizo.
 
@@ -73,7 +73,7 @@ Ungasetha isigaba sentela somkhiqizo othile ngokuya ku-**Product edit page** bes
 
 Kuleso sikrini esifanayo, ungacisha iswishi ethi **Is Taxable?** ukuze wazise Ultimate Multisite ukuthi akufanele iqoqe izintela kulowo mkhiqizo onikeziwe.
 
-## Ukusekelwa kwe-European VAT
+## Ukusekelwa kwe-European VAT {#european-vat-support}
 
 Njengoba kushiwo ngaphambili, sine-add-on etholakalayo kumakhasimende ase-EU anezidingo ezengeziwe ngenxa yemithethonqubo ye-European VAT.
 
@@ -101,7 +101,7 @@ Uma ubuyela ku-**Tax Settings tab** , uzobona izinketho ezintsha ezitholakalayo.
 
 <!-- Screenshot unavailable: Iswishi ye-Enable VAT Support kuzilungiselelo ze-Tax ngemva kokuvulwa kwe-add-on -->
 
-### Ukudonsa Amanani Entela ye-VAT
+### Ukudonsa Amanani Entela ye-VAT {#pulling-on-vat-tax-rates}
 
 Elinye lamathuluzi elengezwa yi-integration yethu yikhono lokulayisha amanani entela amazwe angamalungu e-EU. Lokho kungenziwa ngokuvakashela ikhasi lomhleli wamanani entela ngemva kokunika amandla ukusekelwa kwe-EU VAT.
 
@@ -111,7 +111,7 @@ Phansi kwekhasi, uzobona izinketho zokudonsa i-VAT. Ukukhetha uhlobo lwezinga be
 
 Ungakwazi futhi ukuhlela amanani ngemva kokuwadonsa. Ukuze ukwenze, mane uhlele umugqa wethebula owudingayo bese uchofoza ukulondoloza amanani amasha.
 
-### Ukuqinisekiswa kwe-VAT
+### Ukuqinisekiswa kwe-VAT {#vat-validation}
 
 Uma ukusekelwa kwe-VAT kunikwe amandla, Ultimate Multisite izongeza inkambu eyengeziwe kufomu le-checkout, ngaphansi kwenkambu yekheli lokukhokhisa. Inkambu izovela kuphela kumakhasimende ase-EU.
 

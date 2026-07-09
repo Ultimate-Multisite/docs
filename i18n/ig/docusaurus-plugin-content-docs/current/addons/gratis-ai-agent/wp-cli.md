@@ -3,11 +3,11 @@ title: Ntụaka WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Ntụaka WP-CLI
+# Ntụaka WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent na-abịa na ezinụlọ iwu `wp gratis-ai-agent` maka ime benchmark onye nnọchi ahụ, ijikwa ikike, na ịjụ ọkwa onye nnọchi site na ahịrị iwu. Iwu niile chọrọ WP-CLI 2.0 ma ọ bụ nke ka elu.
 
-## Nwụnye
+## Nwụnye {#installation}
 
 A na-edebanye iwu WP-CLI aha na-akpaghị aka mgbe ngwa mgbakwunye ahụ dị ndụ. Nyochaa ya na:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Na-agba usoro benchmark nke Ikike Onye Nnọchi — nchịkọta prompts mgbagwoju anya, nwere ọtụtụ nzọụkwụ nke na-anwale akụkụ ikike niile. Jiri nke a nyochaa arụmọrụ model, tụnyere ndị na-eweta AI, ma ọ bụ kwado ngwugwu ikike tupu ibuga na mmepụta.
 
-### Nkọwa ojiji
+### Nkọwa ojiji {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Nhọrọ
+### Nhọrọ {#options}
 
 | Nhọrọ | Nkọwa |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Ụdị mmepụta: `table` (ndabara), `json`, `csv` |
 | `--save` | Chekwaa nsonaazụ benchmark na nchekwa data maka ntụnyere akụkọ ihe mere eme |
 
-### Ihe atụ
+### Ihe atụ {#examples}
 
 Gbaa usoro benchmark niile site na onye na-eweta na model dị ugbu a:
 
@@ -57,7 +57,7 @@ Gbaa megide otu model kpọmkwem ma chekwaa nsonaazụ:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Mmepụta
+### Mmepụta {#output}
 
 Benchmark na-ewepụta otu ahịrị maka ajụjụ ọ bụla nwere ogidi ndị a:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Ajụjụ Benchmark
+### Ajụjụ Benchmark {#benchmark-questions}
 
 Usoro ndabara gụnyere:
 
@@ -95,11 +95,11 @@ Enwere ike idebanye ajụjụ ndị ọzọ aha site na nzacha `gratis_ai_agent_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Na-ejikwa ikike arụnyere na ngwugwu ikike.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Na-edepụta ikike niile edebanyere aha, isi mmalite ha (isi ma ọ bụ ngwugwu), na ọkwa ha dị ugbu a.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Na-ebudata ma na-eme ka ngwugwu ikike sitere na registry rụọ ọrụ.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Na-eme ka otu ikike kpọmkwem ghara ịrụ ọrụ na-ewepụghị ngwugwu ahụ. Ọ bara uru maka ịkpa oke obosara ọrụ onye nnọchi na saịtị enyere.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Na-eme ka ikike agbanyụrụbu rụọ ọrụ ọzọ.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Na-egosi nhazi onye nnọchi dị ugbu a na ọkwa njikọta.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Na-egosi ọrụ onye nnọchi mere na nso nso a site na log nchọpụta nsogbu.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Na-emegharị ọnọdụ agent: na-ehichapụ CSS etinyere, na-ewepụ CPTs na taxonomies agent debanyere, na-emegharị styles zuru ụwa ọnụ, ma na-ekpochapụ cache nhọrọ agent. Ọ naghị ewepụ mgbakwunye ahụ ma ọ bụ ntọala ya.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Koodu Ọpụpụ
+## Koodu Ọpụpụ {#exit-codes}
 
 Iwu niile na-apụta `0` mgbe ihe gara nke ọma. Koodu ọpụpụ ndị na-abụghị efu:
 

@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Postavljanje oglasa na vašu mrežu s Ultimate Multisite: Ad Injector
+# Postavljanje oglasa na vašu mrežu s Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector je **besplatni dodatak** koji vam daje alate za postavljanje oglasa na vaše planove, direktno sa njihove stranice za uređivanje.
 
@@ -35,7 +35,7 @@ Također možete uključiti oglase u zaglavlje Admin stranica za korisnike tog p
 
 _Idite na opciju Admin Panel Ad Code ako želite prikazati oglase na korisnikovom backendu_
 
-### Izvan oglašavanja
+### Izvan oglašavanja {#beyond-advertising}
 
 Također možete koristiti Ultimate Multisite: Ad Injector za pružanje podrške premium planovima.
 

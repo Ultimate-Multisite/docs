@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Ultimate Multisite: GoCardless Fizetési Kapu
 
 Engedélyezze ügyfeleinek, hogy a Multisite Ultimate előfizetéseit és termékeinek fizetését Közvetett Banki Átutalással (Direct Debit) a GoCardless segítségével végezzék!
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltse fel az 'ultimate-multisite-gocardless' fájlt a '/wp-content/plugins/' könyvtárba
 2. Aktiválja a plugin-t a WordPress 'Plugins' menüpontja alatt
 3. Kövesse a lépésről lépésre haladó Wizard utasításait a plugin beállításához
 
-## Használati Útoguide
+## Használati Útoguide {#usage-guide}
 
 A _GoCardless_ egy fizetési kapu, amely **Európában és az Egyesült Királyságban** elérhető, és **Közvetett Banki Átutalást (Direct Debit)** tesz lehetővé.
 
@@ -29,7 +29,7 @@ Ez az útmutató bemutatja, hogyan kell beállítani a _GoCardless_ küldagyás�
 
 _**Megjegyzés: A GoCardless csak az alábbi fizetőeszközökkel működik:**_ **EUR, GBP, AUD, SEK és DKK.**
 
-## Az Add-on Telepítése
+## Az Add-on Telepítése {#installing-the-add-on}
 
 Először is, telepítenie kell a GoCardless add-ont az Ultimate Multisite-hoz. Ezt megteheti, hogy navigál **Ultimate Multisite > Settings > Add-ons** (a sávszínen) és kiválasztja a GoCardless add-ont a listából.
 
@@ -37,7 +37,7 @@ Miután az add-on telepítve és aktiválva van, navigáljon **Ultimate Multisit
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Az Access Token Megszerezdése
+## Az Access Token Megszerezdése {#getting-an-access-token}
 
 Létre kell hozni egy fiókot a _GoCardless_ felületen (vagy a _GoCardless_ sandbox felületen, ha először **tesztelni** szeretné, ami ajánlott). Bejelentkezése után navigáljon a **Developers** menüpontra.
 
@@ -61,7 +61,7 @@ Győződjön meg róla, hogy a jobb oldali mezőbe helyezi. Ha **éles token** *
 
 Ennyi volt az első lépéshez. Tovább, egy webhook hallgató (webhook listener) beállítását kell végeznie.
 
-## A Webhook Hallgató Beállítása
+## A Webhook Hallgató Beállítása {#setting-up-the-webhook-listener}
 
 Az előfizetések kezelésénél az Ultimate Multisitenek tudnia kell, ha változik az előfizetési státusz, ha érkeznek új fizetések, és más hasonló dolgok.
 

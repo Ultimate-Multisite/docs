@@ -3,15 +3,15 @@ title: Orchestratio Constructoris Situs v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (introductum in Gratis AI Agent v1.4.0) est machina quae creationem situs interretialis pluribus gradibus sustentat. Cum rogas agentem ut "situm interretialem popinae aedificet" vel "collectionem operum cum diario creet", orchestrator illud propositum summi gradus in **consilium** structum dividit, plugins necessarios ad id perficiendum reperit, quemque gradum ordine exsequitur, progressum observat, atque ab erroribus sua sponte se recipit.
 
 ---
 
-## Quomodo Operatur
+## Quomodo Operatur {#how-it-works}
 
-### 1. Generatio Consilii
+### 1. Generatio Consilii {#1-plan-generation}
 
 Cum agens mandatum ad situm aedificandum accipit, facultatem `create_site_plan` vocat ut **consilium situs** JSON efficiat. Consilium describit:
 
@@ -61,7 +61,7 @@ Cum agens mandatum ad situm aedificandum accipit, facultatem `create_site_plan` 
 }
 ```
 
-### 2. Inventio Plugin
+### 2. Inventio Plugin {#2-plugin-discovery}
 
 Antequam exsecutio incipit, orchestrator `plugin_requirements` consilii perquirit et examinat quae plugins iam activa sint. Pro plugins absentibus, is:
 
@@ -71,7 +71,7 @@ Antequam exsecutio incipit, orchestrator `plugin_requirements` consilii perquiri
 
 Defectus inventionis plugin non sunt fatales — orchestrator gradus affectos ut `skipped` signat et cum reliquo consilio pergit.
 
-### 3. Exsecutio Consilii
+### 3. Exsecutio Consilii {#3-plan-execution}
 
 Orchestrator `execute_site_plan` cum ID consilii vocat. Exsecutio procedit per phases, gradatim:
 
@@ -79,7 +79,7 @@ Orchestrator `execute_site_plan` cum ID consilii vocat. Exsecutio procedit per p
 - **Gradus paralleli** — gradus intra eandem phasem qui nullas interdependentias habent simul mittuntur cum signum `parallel` positum est.
 - **Tempus maximum gradus** — quisque gradus proprium tempus maximum habet (praedefinitum: optio `Ability Timeout`). Gradus cui tempus exspiravit ut `failed` signatur, et consilium pergit.
 
-### 4. Observatio Progressus
+### 4. Observatio Progressus {#4-progress-tracking}
 
 Voca `get_plan_progress` quovis tempore ut statum exsecutionis inspicias:
 
@@ -104,7 +104,7 @@ Usatores WP-CLI progressum observare possunt per:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Recuperatio ab Erroribus
+### 5. Recuperatio ab Erroribus {#5-error-recovery}
 
 Cum gradus deficit, orchestrator quaerit gradum **substitutionis** in consilio definitum:
 
@@ -115,9 +115,9 @@ Agens omnes defectus in summa finali consilii refert et gradus remediationis man
 
 ---
 
-## Facultates Consilii Situs
+## Facultates Consilii Situs {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Consilium situs structum generat ex descriptione propositi lingua naturali.
 
@@ -134,7 +134,7 @@ Consilium situs structum generat ex descriptione propositi lingua naturali.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Exsecutionem consilii situs antea generati incipit.
 
@@ -150,7 +150,7 @@ Exsecutionem consilii situs antea generati incipit.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Reddit statum exsecutionis praesentem consilii situs.
 
@@ -164,7 +164,7 @@ Reddit statum exsecutionis praesentem consilii situs.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Gradum deficientem manualiter resolvit et exsecutionem consilii a proximo gradu resumit. Hoc utere cum recuperatio automatica possibilis non fuit et intervenire vis.
 
@@ -180,7 +180,7 @@ Gradum deficientem manualiter resolvit et exsecutionem consilii a proximo gradu 
 
 ---
 
-## Comparatio v1 et v2
+## Comparatio v1 et v2 {#comparing-v1-and-v2}
 
 | Proprietas | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Gradum deficientem manualiter resolvit et exsecutionem consilii a proximo gradu 
 
 ---
 
-## Mandata Consiliorum WP-CLI
+## Mandata Consiliorum WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Generat consilium situs ex descriptione finis.
 
@@ -205,7 +205,7 @@ Generat consilium situs ex descriptione finis.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Exsequitur consilium antea generatum.
 
@@ -213,7 +213,7 @@ Exsequitur consilium antea generatum.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Ostendit progressum praesentem consilii exsequentis aut perfecti.
 
@@ -221,7 +221,7 @@ Ostendit progressum praesentem consilii exsequentis aut perfecti.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Enumerat omnia consilia situs (pendentia, in-progressu, et perfecta).
 
@@ -229,7 +229,7 @@ Enumerat omnia consilia situs (pendentia, in-progressu, et perfecta).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Reponit consilium deficiens ad `pending` ut denuo ab initio exsequi possit.
 

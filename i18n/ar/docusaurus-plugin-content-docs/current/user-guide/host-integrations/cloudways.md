@@ -3,18 +3,18 @@ title: تكامل Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# تكامل Cloudways
+# تكامل Cloudways {#cloudways-integration}
 
-## نظرة عامة
+## نظرة عامة {#overview}
 Cloudways هي منصة استضافة سحابية مُدارة تتيح لك نشر مواقع WordPress على مزوّدي سحابة مختلفين مثل DigitalOcean وAWS وGoogle Cloud والمزيد. يتيح هذا التكامل مزامنة النطاقات تلقائيًا وإدارة شهادات SSL بين Ultimate Multisite وCloudways.
 
-## الميزات
+## الميزات {#features}
 - مزامنة النطاقات تلقائيًا
 - إدارة شهادات SSL
 - دعم النطاقات الإضافية
 - التحقق من DNS لشهادات SSL
 
-## المتطلبات
+## المتطلبات {#requirements}
 يجب تعريف الثوابت التالية في ملف `wp-config.php` الخاص بك:
 
 ```php
@@ -30,16 +30,16 @@ define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## تعليمات الإعداد
+## تعليمات الإعداد {#setup-instructions}
 
-### 1. احصل على بيانات اعتماد Cloudways API الخاصة بك
+### 1. احصل على بيانات اعتماد Cloudways API الخاصة بك {#1-get-your-cloudways-api-credentials}
 
 1. سجّل الدخول إلى لوحة تحكم Cloudways الخاصة بك
 2. انتقل إلى "Account" > "API Keys"
 3. أنشئ مفتاح API إذا لم يكن لديك واحد بالفعل
 4. انسخ بريدك الإلكتروني ومفتاح API
 
-### 2. احصل على معرّفات الخادم والتطبيق الخاصة بك
+### 2. احصل على معرّفات الخادم والتطبيق الخاصة بك {#2-get-your-server-and-application-ids}
 
 1. في لوحة تحكم Cloudways الخاصة بك، انتقل إلى "Servers"
 2. حدّد الخادم الذي تتم استضافة WordPress multisite الخاص بك عليه
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. انتقل إلى "Applications" وحدّد تطبيق WordPress الخاص بك
 5. يكون App ID ظاهرًا في عنوان URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. أضف الثوابت إلى wp-config.php
+### 3. أضف الثوابت إلى wp-config.php {#3-add-constants-to-wp-configphp}
 
 أضف الثوابت التالية إلى ملف `wp-config.php` الخاص بك:
 
@@ -70,7 +70,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 أدناه لمعرفة سبب منع ذلك إصدار شهادات SSL لكل مستأجر.
 :::
 
-### 4. فعّل التكامل
+### 4. فعّل التكامل {#4-enable-the-integration}
 
 1. في إدارة WordPress، انتقل إلى Ultimate Multisite > Settings
 2. انتقل إلى تبويب "Domain Mapping"
@@ -78,9 +78,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. فعّل تكامل Cloudways
 5. انقر على "Save Changes"
 
-## كيف يعمل
+## كيف يعمل {#how-it-works}
 
-### مزامنة النطاقات
+### مزامنة النطاقات {#domain-syncing}
 
 عند ربط نطاق في Ultimate Multisite:
 
@@ -91,7 +91,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 
 ملاحظة: تتطلب Cloudways API إرسال القائمة الكاملة للنطاقات في كل مرة، وليس مجرد إضافة نطاقات فردية أو إزالتها.
 
-### إدارة شهادات SSL
+### إدارة شهادات SSL {#ssl-certificate-management}
 
 بعد مزامنة النطاقات:
 
@@ -106,7 +106,7 @@ Cloudways. إذا تم توفير نمط wildcard في `WU_CLOUDWAYS_EXTRA_DOMAI
 يدويًا، لكن القيام بذلك يمنع إصدار Let's Encrypt لكل نطاق للنطاقات المخصصة المرتبطة
 (راجع المشكلة أدناه).
 
-## النطاقات الإضافية
+## النطاقات الإضافية {#extra-domains}
 
 يتيح لك الثابت `WU_CLOUDWAYS_EXTRA_DOMAINS` تحديد نطاقات **خارجية** إضافية
 يجب أن تظل دائمًا ضمن قائمة الأسماء البديلة لتطبيق Cloudways. استخدمه من أجل:
@@ -117,7 +117,7 @@ Cloudways. إذا تم توفير نمط wildcard في `WU_CLOUDWAYS_EXTRA_DOMAI
 لا **تستخدم** هذا الثابت من أجل wildcard النطاق الفرعي لشبكتك الخاصة
 (مثل `*.your-network.com`). راجع مشكلة wildcard SSL أدناه.
 
-## مهم — مشكلة Wildcard SSL
+## مهم — مشكلة Wildcard SSL {#important--wildcard-ssl-pitfall}
 
 من الأخطاء الشائعة عند اتباع إعداد Cloudways الافتراضي إضافة wildcard مثل
 `*.your-network.com` إلى `WU_CLOUDWAYS_EXTRA_DOMAINS`، أو تثبيت شهادة Cloudways
@@ -128,7 +128,7 @@ wildcard SSL يدويًا لذلك wildcard.
 SSL النشطة على التطبيق في كل مرة، ووجود شهادة wildcard مسبقًا على
 التطبيق يمنع إصدار Let's Encrypt لكل نطاق الذي يعتمد عليه التكامل.
 
-### إعداد Cloudways SSL الموصى به لشبكة Ultimate Multisite
+### إعداد Cloudways SSL الموصى به لشبكة Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. في تبويب **SSL Certificate** لتطبيق Cloudways، ثبّت شهادة **Let's Encrypt قياسية**
    تغطي فقط `your-network.com` و`www.your-network.com`
@@ -146,20 +146,20 @@ SSL النشطة على التطبيق في كل مرة، ووجود شهادة 
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. ثم أعد تشغيل ربط النطاق (أو انتظر العملية التالية)
 وسيبدأ التكامل بإصدار شهادات لكل نطاق مرة أخرى.
 
-## استكشاف الأخطاء وإصلاحها
+## استكشاف الأخطاء وإصلاحها {#troubleshooting}
 
-### مشكلات اتصال API
+### مشكلات اتصال API {#api-connection-issues}
 - تحقق من أن بريدك الإلكتروني ومفتاح API صحيحان
 - تحقق من أن معرّفات الخادم والتطبيق لديك صحيحة
 - تأكد من أن حساب Cloudways لديك لديه الأذونات اللازمة
 
-### مشكلات شهادة SSL
+### مشكلات شهادة SSL {#ssl-certificate-issues}
 - يتطلب Cloudways أن تكون للنطاقات سجلات DNS صالحة تشير إلى خادمك قبل إصدار شهادات SSL
 - يتحقق التكامل من سجلات DNS قبل طلب شهادات SSL
 - إذا لم يتم إصدار شهادات SSL، فتحقق من أن نطاقاتك تشير بشكل صحيح إلى عنوان IP الخاص بخادمك
 - **هل النطاقات المخصصة لكل مستأجر عالقة بدون SSL؟** تحقق من تبويب SSL Certificate في تطبيق Cloudways. إذا كانت شهادة wildcard (مثبتة يدويًا، أو تغطي `*.your-network.com`) نشطة، فلن يصدر Cloudways شهادات Let's Encrypt للنطاقات المخصصة المرتبطة بشكل فردي. استبدلها بشهادة Let's Encrypt قياسية تغطي نطاق الشبكة الرئيسي فقط (`your-network.com`، `www.your-network.com`) وأزل أي إدخالات wildcard من `WU_CLOUDWAYS_EXTRA_DOMAINS`. ثم أعد تشغيل ربط النطاق (أو انتظر العملية التالية) وسيطلب التكامل شهادات لكل نطاق.
 
-### لم تتم إضافة النطاق
+### لم تتم إضافة النطاق {#domain-not-added}
 - تحقق من سجلات Ultimate Multisite بحثًا عن أي رسائل خطأ
 - تحقق من أن النطاق غير مضاف بالفعل إلى Cloudways
 - تأكد من أن خطة Cloudways تدعم عدد النطاقات التي تضيفها

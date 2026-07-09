@@ -3,17 +3,17 @@ title: İnternet Axtarışı
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# İnternet Axtarışı
+# İnternet Axtarışı {#internet-search}
 
 Gratis AI Agent v1.5.0, söhbət zamanı AI asistentinin vebdən müasir məlumatları əldə etməsinə imkan verən bir **İnternet Axtarışı** funksionallığı əlavə edir. Bu funksiya [Brave Search API](https://brave.com/search/api/) və ya [Tavily API](https://tavily.com/) vasitəsilə işləyir.
 
-## Necə İşləyir
+## Necə İşləyir {#how-it-works}
 
 İnternet axtarışı aktivləşdirildikdə, asistent müəyyən edir ki, sual cari və ya xarici məlumat tələb edir (məsələn, son xəbərlər, canlı qiymətlər və ya modelin təlimat kəsindən bəri dəyişmiş ola biləcək sənədlər) və avtomatik olaraq konfiqurasiya edilmiş axtarış provayudyerinizə sorğu göndərir.
 
 Nəticələr real vaxt rejimində əldə edilir və cavab yaratmaqdan əvvəl asistentin kontekstinə daxil edilir. Asistent, suala cavab vermək üçün axtarış nəticələrindən istifadə etdiyini bildirir.
 
-## İnternet Axtarışını Aktivləşdirmək
+## İnternet Axtarışını Aktivləşdirmək {#enabling-internet-search}
 
 İnternet axtarışı, seçdiyiniz axtarış provayudyerindən bir API açarı tələb edir. Konfiqurasiya etmək üçün:
 
@@ -24,35 +24,35 @@ Nəticələr real vaxt rejimində əldə edilir və cavab yaratmaqdan əvvəl as
 
 Açar yadda saxlandığı zaman, İnternet Axtarışı funksionallığı avtomatik olaraq asistent üçün mövcəd olur.
 
-## Brave Search
+## Brave Search {#brave-search}
 
-### Brave Search API Açarı Almaq
+### Brave Search API Açarı Almaq {#obtaining-a-brave-search-api-key}
 
 1. [Brave Search API səhifəsinə](https://brave.com/search/api/) daxil olun.
 2. Bir plan üçün qeydiyyatdan keçin. Aylıq sorğu limiti ilə pulsuz bir səviyyə mövcuddur.
 3. API açarınızı Brave Search developer dashboard-undan kopyalayın.
 4. Bunu Gratis AI Agent ayarları içindəki **Brave Search API Key** sahəsinə yapışdırın.
 
-### İstifadə Limitləri
+### İstifadə Limitləri {#usage-limits}
 
 İstifadə, Brave Search tərəfindən edilən sorğu sayına əsasən hesablanır. Axtarış başlatan hər bir AI cavabı bir sorğu hesab edilir. Təngsiz ödənişlərdən yayınmaq üçün istifadəinizi [Brave Search developer dashboard](https://brave.com/search/api/) vasitəsilə izləyin.
 
-## Tavily
+## Tavily {#tavily}
 
 Superdav AI Agent v1.10.0, daha zəngin axtarış nəticələri və təkmil tədqiqat imkanları təklif edən alternativ bir internet axtarışı provayudyeri kimi **Tavily** əlavə edir.
 
-### Tavily API Açarı Almaq
+### Tavily API Açarı Almaq {#obtaining-a-tavily-api-key}
 
 1. [Tavily API səhifəsinə](https://tavily.com/) daxil olun.
 2. Bir hesab üçün qeydiyyatdan keçin. Aylıq sorğu limiti ilə pulsuz bir səviyyə mövcuddur.
 3. API açarınızı Tavily dashboard-undan kopyalayın.
 4. Bunu Gratis AI Agent ayarları içindəki **Tavily API Key** sahəsinə yapışdırın.
 
-### İstifadə Limitləri
+### İstifadə Limitləri {#usage-limits-1}
 
 İstifadə, Tavily tərəfindən edilən API çağırışlarının sayına əsasən hesablanır. Axtarış başlatan hər bir AI cavabı bir çağırış hesab edilir. Təngsiz ödənişlərdən yayınmaq üçün istifadəinizi [Tavily dashboard](https://tavily.com/) vasitəsilə izləyin.
 
-## İnternet Axtarışını Dezaktivləşdirmək
+## İnternet Axtarışını Dezaktivləşdirmək {#disabling-internet-search}
 
 API açarını aktiv axtarış provayudyeri sahəsindən silin və yadda saxlayın. İnternet Axtarışı funksionallığı asistentə artıq təklif edilməyəcək.
 

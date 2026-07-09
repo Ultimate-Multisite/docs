@@ -3,7 +3,7 @@ title: Nhoroondo yekuchinja kweZvirongwa zvinoyerwa
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Nhoroondo Yeshanduko yeMetered Plans
+# Nhoroondo Yeshanduko yeMetered Plans {#metered-plans-changelog}
 
 Version 1.1.0 - Yakaburitswa musi wa2026-05-05
 - Zvitsva: Kubhadharisa maAI token kwemasaiti madiki e multisite — tevera uye bhadharisa kushandiswa kweAI token pamasaiti evatengi nemitengo inogadzirisika pa-token
@@ -14,17 +14,17 @@ Version 1.1.0 - Yakaburitswa musi wa2026-05-05
 - Kugadzirisa: Zvikanganiso zvinouraya uye nyaya dzekutanga kaviri pakurodha plugin zvagadziriswa
 - Kuvandudzwa: Yakawedzera check-env npm script kuitira kuti developer environments dzizvigadzirire pakumhanya kwekutanga
 
-### 1.0.3
+### 1.0.3 {#103}
 * Yakagadziridzwa kuPlugin Update Checker v5
 * Yakawedzera misoro yeplugin yeWordPress yemazuva ano
 * Yakavandudza kuenderana neshanduro dzichangoburwa dzeWordPress
 * Yakawedzera mashandiro ekutevera kushandiswa
 
-### 1.0.2
+### 1.0.2 {#102}
 * Kugadziriswa kwezvikanganiso nekuvandudzwa kwemashandiro
 * Yakawedzera kushuma kwekushandiswa
 
-### 1.0.0
+### 1.0.0 {#100}
 * Kuburitswa kwekutanga
 * Kushanda kwepakati kwekubhadharisa kunoyerwa
 * Kutevera kushandiswa uye kuverenga kuwandisa

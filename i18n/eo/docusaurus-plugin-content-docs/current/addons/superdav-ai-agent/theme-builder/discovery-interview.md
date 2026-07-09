@@ -3,35 +3,35 @@ title: Malkovra intervjuo
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Malkovra Intervjuo
+# Malkovra Intervjuo {#discovery-interview}
 
 La **Malkovra Intervjuo** estas la unua paŝo en la dezajnprocezo de Theme Builder. Ĝi kolektas informojn pri via retejo, entrepreno kaj dezajnpreferoj por krei personecigitan etoson.
 
-## Superrigardo
+## Superrigardo {#overview}
 
 La Malkovra Intervjuo gvidas vin tra serio da demandoj por kompreni vian markon, celgrupon kaj dezajnajn celojn. En versio 1.16.0, la intervjuo nun inkluzivas **paŝon por alŝuti fotojn**, kiu permesas al vi provizi vidan inspiron por via dezajno.
 
-## Intervjuaj Paŝoj
+## Intervjuaj Paŝoj {#interview-steps}
 
-### 1. Entreprenaj Informoj
+### 1. Entreprenaj Informoj {#1-business-information}
 
 - Reteja nomo kaj frapfrazo
 - Entreprena tipo aŭ industrio
 - Ĉefaj entreprenaj celoj
 - Priskribo de celgrupo
 
-### 2. Dezajnpreferoj
+### 2. Dezajnpreferoj {#2-design-preferences}
 
 - Preferata kolorskemo
 - Dezajnstilo (moderna, klasika, minimumisma, ludema, ktp.)
 - Inspiraj retejoj aŭ markoj
 - Nepraj dezajnelementoj
 
-### 3. Fotoalŝuto (Nova en v1.16.0)
+### 3. Fotoalŝuto (Nova en v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Alŝutu unu aŭ pli da fotoj por influi la dezajnan direkton:
 
-#### Akceptitaj Formatoj
+#### Akceptitaj Formatoj {#accepted-formats}
 
 | Formato | Finaĵo | Detaloj |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Alŝutu unu aŭ pli da fotoj por influi la dezajnan direkton:
 | **WebP** | `.webp` | Moderna formato, pli malgranda dosiergrandeco |
 | **GIF** | `.gif` | Nur statikaj bildoj (sen animacio) |
 
-#### Dosieraj Postuloj
+#### Dosieraj Postuloj {#file-requirements}
 
 - **Maksimuma dosiergrandeco:** 10 MB
 - **Minimumaj dimensioj:** 400 × 300 pikseloj
 - **Rekomenditaj dimensioj:** 1200 × 800 pikseloj aŭ pli grandaj
 - **Bildformata proporcio:** Iu ajn proporcio estas akceptebla
 
-#### Kiel Fotoj Influas Dezajnan Direkton
+#### Kiel Fotoj Influas Dezajnan Direkton {#how-photos-influence-design-direction}
 
 La fotoj, kiujn vi alŝutas, helpas Theme Builder kompreni:
 
@@ -57,21 +57,21 @@ La fotoj, kiujn vi alŝutas, helpas Theme Builder kompreni:
 - **Dezajnelementoj** — ŝablonoj, teksturoj kaj kompoziciaj stiloj
 - **Tipografia inspiro** — tiparstiloj, kiuj kompletigas la vidan etoson
 
-### 4. Enhava Strukturo
+### 4. Enhava Strukturo {#4-content-structure}
 
 - Bezonataj ĉefaj paĝoj (Hejmo, Pri, Servoj, Kontakto, ktp.)
 - Blogo aŭ novaĵsekcio bezonata
 - Retkomerca funkcieco bezonata
 - Specialaj funkcioj aŭ integriĝoj
 
-### 5. Revizio kaj Konfirmo
+### 5. Revizio kaj Konfirmo {#5-review-and-confirmation}
 
 - Resumo de ĉiuj provizitaj informoj
 - Konfirmo antaŭ ol komenciĝas dezajngenerado
 
-## Plej Bonaj Praktikoj por Fotoalŝuto
+## Plej Bonaj Praktikoj por Fotoalŝuto {#photo-upload-best-practices}
 
-### Kion Alŝuti
+### Kion Alŝuti {#what-to-upload}
 
 - **Marka inspiro** — emblemoj, kolorspecimenoj aŭ markaj gvidlinioj
 - **Konkurencaj retejoj** — ekrankopioj de retejoj, kiujn vi admiras
@@ -80,7 +80,7 @@ La fotoj, kiujn vi alŝutas, helpas Theme Builder kompreni:
 - **Teamaj aŭ oficejaj fotoj** — por persona aŭ profesia markado
 - **Vivstilaj bildoj** — reprezentantaj vian celgrupon
 
-### Kion Eviti
+### Kion Eviti {#what-to-avoid}
 
 - **Malaltkvalitaj bildoj** — malklaraj aŭ pikseligitaj fotoj
 - **Nerilataj bildoj** — fotoj, kiuj ne reprezentas vian markon
@@ -88,7 +88,7 @@ La fotoj, kiujn vi alŝutas, helpas Theme Builder kompreni:
 - **Kopirajtita materialo** — certigu, ke vi havas rajtojn uzi la bildojn
 - **Animaciaj GIF-oj** — nur statikaj bildoj estas prilaborataj
 
-### Konsiloj por Plej Bonaj Rezultoj
+### Konsiloj por Plej Bonaj Rezultoj {#tips-for-best-results}
 
 1. **Alŝutu 2-3 bildojn** — pluraj bildoj provizas pli bonan kuntekston
 2. **Uzu altkvalitajn fotojn** — klaraj, bone lumigitaj bildoj funkcias plej bone
@@ -96,7 +96,7 @@ La fotoj, kiujn vi alŝutas, helpas Theme Builder kompreni:
 4. **Provizu kuntekston** — mallonge priskribu kial vi elektis ĉiun bildon
 5. **Estu specifa** — se vi ŝatas apartan elementon, montru ĝin
 
-## Eligo de Dezajna Direkto
+## Eligo de Dezajna Direkto {#design-direction-output}
 
 Post la Malkovra Intervjuo, Theme Builder generas:
 
@@ -106,7 +106,7 @@ Post la Malkovra Intervjuo, Theme Builder generas:
 - **Vidaj elementoj** — ikonoj, ŝablonoj kaj ornamaj elementoj
 - **Humortabulo** — vida prezento de la dezajna direkto
 
-## Sekvaj Paŝoj
+## Sekvaj Paŝoj {#next-steps}
 
 Post kompletigo de la Malkovra Intervjuo:
 
@@ -115,7 +115,7 @@ Post kompletigo de la Malkovra Intervjuo:
 3. Daŭrigu al la paŝo [Dezajna Direkto](./design-direction.md)
 4. Theme Builder kreas vian propran etoson
 
-## Rilata Dokumentaro
+## Rilata Dokumentaro {#related-documentation}
 
 - [Dezajna Direkto](./design-direction.md) — reviziu kaj rafinu vian dezajnon
 - [Gastigaj Menuoj](./hospitality-menus.md) — kreu strukturitajn menuopaĝojn

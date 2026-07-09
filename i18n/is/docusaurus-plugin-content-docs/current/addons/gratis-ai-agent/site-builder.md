@@ -3,15 +3,15 @@ title: Site Builder samhæfing v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder-samhæfing v2
+# Site Builder-samhæfing v2 {#site-builder-orchestration-v2}
 
 Site Builder-samhæfing v2 (kynnt í Gratis AI Agent v1.4.0) er vélin sem knýr fjölþrepa vefsíðugerð. Þegar þú biður agent-inn um að „byggja vefsíðu fyrir veitingastað“ eða „búa til ferilskrá með bloggi“ brýtur samhæfirinn þetta hástigsmarkmið niður í skipulagða **áætlun**, finnur plugin sem þarf til að uppfylla hana, framkvæmir hvert skref í röð, fylgist með framvindu og jafnar sig sjálfkrafa á villum.
 
 ---
 
-## Hvernig það virkar
+## Hvernig það virkar {#how-it-works}
 
-### 1. Gerð áætlunar
+### 1. Gerð áætlunar {#1-plan-generation}
 
 Þegar agent-inn fær leiðbeiningu um vefsíðugerð kallar hann á `create_site_plan`-getuna til að búa til JSON **vefsíðuáætlun**. Áætlunin lýsir:
 
@@ -61,7 +61,7 @@ Site Builder-samhæfing v2 (kynnt í Gratis AI Agent v1.4.0) er vélin sem knýr
 }
 ```
 
-### 2. Plugin-leit
+### 2. Plugin-leit {#2-plugin-discovery}
 
 Áður en framkvæmd hefst skannar samhæfirinn `plugin_requirements` áætlunarinnar og athugar hvaða plugin eru þegar virk. Fyrir plugin sem vantar gerir hann eftirfarandi:
 
@@ -71,7 +71,7 @@ Site Builder-samhæfing v2 (kynnt í Gratis AI Agent v1.4.0) er vélin sem knýr
 
 Bilun í plugin-leit er ekki banvæn — samhæfirinn merkir viðkomandi skref sem `skipped` og heldur áfram með restina af áætluninni.
 
-### 3. Framkvæmd áætlunar
+### 3. Framkvæmd áætlunar {#3-plan-execution}
 
 Samhæfirinn kallar á `execute_site_plan` með áætlunarauðkenninu. Framkvæmd fer fram áfanga fyrir áfanga, skref fyrir skref:
 
@@ -79,7 +79,7 @@ Samhæfirinn kallar á `execute_site_plan` með áætlunarauðkenninu. Framkvæm
 - **Samhliða skref** — skref innan sama áfanga sem hafa engar innbyrðis háðir eru send af stað samtímis þegar `parallel`-flaggið er stillt.
 - **Tímamörk skrefs** — hvert skref hefur sín eigin tímamörk (sjálfgefið: `Ability Timeout`-stillingin). Skref sem rennur út á tíma er merkt `failed` og áætlunin heldur áfram.
 
-### 4. Framvindueftirlit
+### 4. Framvindueftirlit {#4-progress-tracking}
 
 Kallaðu á `get_plan_progress` hvenær sem er til að athuga stöðu framkvæmdar:
 
@@ -104,7 +104,7 @@ WP-CLI-notendur geta fylgst með framvindu með:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Villumeðhöndlun
+### 5. Villumeðhöndlun {#5-error-recovery}
 
 Þegar skref mistekst athugar samhæfirinn hvort **varaúrræðisskref** sé skilgreint í áætluninni:
 
@@ -115,9 +115,9 @@ Agent-inn tilkynnir allar bilanir í lokayfirliti áætlunarinnar og gæti lagt 
 
 ---
 
-## Getur vefsíðuáætlunar
+## Getur vefsíðuáætlunar {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Býr til skipulagða vefsíðuáætlun út frá markmiðslýsingu á náttúrulegu máli.
 
@@ -134,7 +134,7 @@ Býr til skipulagða vefsíðuáætlun út frá markmiðslýsingu á náttúrule
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Byrjar að framkvæma áður gerða vefsíðuáætlun.
 
@@ -150,7 +150,7 @@ Byrjar að framkvæma áður gerða vefsíðuáætlun.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Skilar núverandi keyrslustöðu vefáætlunar.
 
@@ -164,7 +164,7 @@ Skilar núverandi keyrslustöðu vefáætlunar.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Leysir misheppnað skref handvirkt og heldur keyrslu áætlunar áfram frá næsta skrefi. Notaðu þetta þegar sjálfvirk endurheimt var ekki möguleg og þú vilt grípa inn í.
 
@@ -180,7 +180,7 @@ Leysir misheppnað skref handvirkt og heldur keyrslu áætlunar áfram frá næs
 
 ---
 
-## Samanburður á v1 og v2
+## Samanburður á v1 og v2 {#comparing-v1-and-v2}
 
 | Eiginleiki | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Leysir misheppnað skref handvirkt og heldur keyrslu áætlunar áfram frá næs
 
 ---
 
-## WP-CLI áætlunarskipanir
+## WP-CLI áætlunarskipanir {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Býr til vefáætlun út frá markmiðslýsingu.
 
@@ -205,7 +205,7 @@ Býr til vefáætlun út frá markmiðslýsingu.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Keyrir áður útbúna áætlun.
 
@@ -213,7 +213,7 @@ Keyrir áður útbúna áætlun.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Sýnir núverandi framvindu fyrir áætlun sem er í keyrslu eða lokið.
 
@@ -221,7 +221,7 @@ Sýnir núverandi framvindu fyrir áætlun sem er í keyrslu eða lokið.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Listar allar vefáætlanir (í bið, í vinnslu og loknar).
 
@@ -229,7 +229,7 @@ Listar allar vefáætlanir (í bið, í vinnslu og loknar).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Endurstillir misheppnaða áætlun í `pending` svo hægt sé að keyra hana aftur frá upphafi.
 

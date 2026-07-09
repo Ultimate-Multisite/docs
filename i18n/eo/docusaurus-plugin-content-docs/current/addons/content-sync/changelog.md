@@ -3,9 +3,9 @@ title: Ŝanĝoprotokolo de Enhava Sinkronigo
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Enhava Sinkroniga Ŝanĝoprotokolo
+# Enhava Sinkroniga Ŝanĝoprotokolo {#content-sync-changelog}
 
-### Versio 1.1.0 - Eldonita je 2025-12-31
+### Versio 1.1.0 - Eldonita je 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nova: Subteno por sinkronigi ĉiujn afiŝotipojn (afiŝoj, paĝoj, propraj afiŝotipoj)
 * Nova: Filtrado laŭ afiŝotipo en la enhavelekta paŝo
 * Nova: Paŝo por elekti fontan retejon - sinkronigu de ajna retejo, ne nur de la ĉefa retejo
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Ŝanĝita: Paŝo "Elekti Ŝablonojn" alinomita al "Elekti Datumojn"
 * Plibonigita: Elementor-specifa kodo nun ruliĝas nur por afiŝotipo elementor_library
 
-### Versio 1.0.0 - Eldonita je 2025-12-19
+### Versio 1.0.0 - Eldonita je 2025-12-19 {#version-100---released-on-2025-12-19}
 * Komenca eldono
 * Plurpaŝa asistilo por elekto de ŝablono kaj retejo
 * Stapla prilaborado kun realtempa progresrespondo

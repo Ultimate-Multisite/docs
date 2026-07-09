@@ -3,11 +3,11 @@ title: Nkwado na Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Tour Through Admin Panel
+# Tour Through Admin Panel {#touring-the-admin-panel}
 
 Ultimate Multisite na-akọrọ ịbụkọchịta dị kama ọpụrụ ego ma a-akọrọ ihe bụ ihe ndị ahụ, onye na-agba n'ime ihe a dị nwere ike ịkpọka okwu. Ka anyị gidi ya n'ime akụkọchịta admin ahụ ka maka gị ịbụ n'ime ihe ndị a.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 **Dashboard** nke Ultimate Multisite na-akọrọ iheomụmụ dị mkpa ma ọ bụ ihe omume dị nwere, onye na-agba n'ime agha, ọgụgụ mmụta, akụkọ mmadụ, na data geografik.
 
@@ -25,61 +25,61 @@ Eee, ee bụ iheomume dị nwere nke network dashboard ahụ:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Checkout Forms {#checkout-forms}
 
 **Checkout Forms** na-agba gị ịdị mma ịkwado akụkọ mmadụ ọhụrụ. Ị ga-akwado ihe ndị a, ị chọrọ ihe dị nwere, ị chọrọ class na script ọhụrụ, ma ị chọrọ ịgbanwe ịga n'ime akụkọ mmadụ ahụ site n'ime nri ebe mmadụ ahụ na nri ebe.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Products
+## Products {#products}
 
 Akụkọ **Products** bụ onye ị chọrọ ihe dị iche iche, ọrụ, na awanni maka network gị. Ị ga-akwado ihe ndị a, ị ga-akwado ihe dị nwere, ị ga-akwado ihe dị nwere, na quota site n'ime product ahụ.
 
 ![Products list](/img/admin/products-list.png)
 
-## Memberships
+## Memberships {#memberships}
 
 Akụkọ **Memberships** na-akọrọ onye ọ bụla akụkọ mmadụ n'ime network gị. Ị ga-akwado ma ị chọrọ ihe ndị a, onye ị chọrọ, ọrụ, ndepụ ebe, na oge ịkwado, ihe omume, na oge ịkwado.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Payments
+## Payments {#payments}
 
 Página **Payments** nọ cho bạn xem nhanh lịch sử thanh toán của toàn bộ mạng lưới của bạn, bao gồm thông tin giao dịch chi tiết như sản phẩm cụ thể và số tiền.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Customers
+## Customers {#customers}
 
 Trang **Customers** hiển thị tất cả các thành viên đã đăng ký trong mạng lưới của bạn với thông tin người dùng cơ bản bao gồm tên, địa chỉ email, lần đăng nhập cuối cùng, và một liên kết "chuyển sang" để đăng nhập vào trang phụ (subsite) của họ.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Sites
+## Sites {#sites}
 
 Trang **Sites** liệt kê tất cả các trang phụ trong mạng lưới của bạn bao gồm mẫu trang (site templates) và các trang do khách hàng sở hữu. Dễ dàng quản lý tên miền đã được ánh xạ (mapped domains), giới hạn & hạn mức (limits & quotas), plugin và theme, cùng với hình thu nhỏ trang (site thumbnails).
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domains
+## Domains {#domains}
 
 Trang **Domains** dành riêng cho các tên miền tùy chỉnh được ánh xạ tới các trang phụ. Với vai trò là siêu quản trị viên (super admin), bạn có thể tự thêm hoặc ánh xạ các tên miền tùy chỉnh và xem các bản ghi DNS cùng nhật ký (logs).
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Discount Codes
+## Discount Codes {#discount-codes}
 
 **Discount Codes** cho phép bạn tạo mã phiếu giảm giá để tặng ưu đãi cho người dùng cuối của mình. Hãy chỉ định giá trị giảm giá và nhắm mục tiêu vào những người dùng hoặc nhóm cụ thể.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Broadcasts {#broadcasts}
 
 **Broadcasts** là công cụ giúp bạn gửi thông báo hoặc tin nhắn riêng đến người dùng của trang phụ. Hãy nhắm mục tiêu vào các nhóm người dùng cụ thể dựa trên gói (plan) hoặc sản phẩm mà họ đang đăng ký.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Settings
+## Settings {#settings}
 
 Trang **Settings** là nơi bạn cấu hình Ultimate Multisite — cài đặt đăng ký, thanh toán, API và webhooks, ánh xạ tên miền, và các tích hợp khác.
 
@@ -109,13 +109,13 @@ Và trang cài đặt trang web:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Events (Sự kiện)
+## Events (Sự kiện) {#events}
 
 Trang **Events** giữ lại hồ sơ về tất cả các sự kiện và nhật ký trong mạng của bạn. Nó theo dõi các hoạt động như thay đổi gói, đăng ký và các chuyển động khác — hữu ích để giám sát hệ thống multisite của bạn.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks (Webhook)
+## Webhooks (Webhook) {#webhooks}
 
 **Webhooks** cho phép bạn gửi dữ liệu đến một ứng dụng khác. Hữu ích để gửi dữ liệu từ Ultimate Multisite đến các nền tảng như Zapier.
 

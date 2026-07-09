@@ -3,7 +3,7 @@ title: Aggiornamento di un piano
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Aggiornare un piano (v2)
+# Aggiornare un piano (v2) {#upgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: Questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
@@ -41,7 +41,7 @@ Dopo il completamento del checkout, i nuovi prodotti verranno aggiunti all'accou
 
 ##
 
-## Percorsi di upgrade e downgrade
+## Percorsi di upgrade e downgrade {#upgrade-and-downgrade-paths}
 
 Su ciascuno dei tuoi prodotti, avrai una scheda **Up & Downgrades**. La prima opzione in quella scheda è un campo chiamato **Gruppo di piani**.
 

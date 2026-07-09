@@ -3,13 +3,13 @@ title: Fluxul de înregistrare
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Fluxul de înregistrare (v2)
+# Fluxul de înregistrare (v2) {#the-registration-flow-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
 Utilizatorii se pot înregistra în moduri diferite în rețeaua ta. Ei pot folosi formularul tău de înregistrare sau un link partajabil către un plan preselectat. Aici îți vom arăta cum se pot înregistra clienții tăi în rețeaua ta folosind căile disponibile și ce se întâmplă după ce se înregistrează în rețeaua ta.
 
-## Folosind formularul de înregistrare:
+## Folosind formularul de înregistrare: {#using-the-registration-form}
 
 Acesta este procesul standard de înregistrare. Creezi o pagină de înregistrare cu un **formular de checkout**, iar acesta va fi locul unde clienții tăi vor merge pentru a se înregistra în rețeaua ta și a se abona la un plan. Poți avea mai multe pagini de înregistrare, fiecare cu un formular de înregistrare diferit, dacă dorești.
 
@@ -35,13 +35,13 @@ Dacă s-au înregistrat pe un plan plătit sau verificarea emailului nu este obl
 
 ![Site activat cu link pentru autentificare în Dashboard](/img/frontend/site-activated.png)
 
-## Folosind un link partajabil:
+## Folosind un link partajabil: {#using-a-shareable-link}
 
 Procesul de înregistrare folosind un link partajabil este, în principiu, același ca formularul de înregistrare; singura diferență este că, folosind un link partajabil, clienții tăi pot avea un produs sau un șablon de website preselectat în formularul de checkout (consultă secțiunea Preselectarea produselor și șabloanelor prin parametri URL) sau poate un cod de cupon adăugat (consultă secțiunea Folosirea parametrilor URL).
 
 Procesul de înregistrare va fi același: vor trebui să își completeze numele, numele de utilizator, adresa de email, numele și titlul website-ului etc... dar planul sau șablonul de site va fi deja preselectat pentru ei.
 
-### Înregistrarea folosind plăți manuale:
+### Înregistrarea folosind plăți manuale: {#registering-using-manual-payments}
 
 Dacă nu vrei să folosești PayPal, Stripe sau orice alt gateway de plată oferit de Ultimate Multisite sau de integrările sale add-on, poți folosi plăți manuale pentru clienții tăi. În acest mod, poți genera o factură pentru ca ei să plătească prin procesatorul de plăți preferat după ce se înregistrează în rețeaua ta.
 

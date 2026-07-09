@@ -4,21 +4,21 @@ title: Filtè - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# Filtè: wu_magic_link_enforce_user_agent
+# Filtè: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
 
 Filtre si pou fòse verifikasyon user agent.
 
 Mete sou false pou pèmèt tokens yo mache atravè diferan navigatè/aparèy. Sa diminye sekirite men li ogmante itilizasyon fasil.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Non | Tip | Deskripsyon |
 |------|------|-------------|
 | $enforce | `bool` | Si pou fòse korespondans user agent lan. |
 
-### Depi
+### Depi {#since}
 
 - 2.0.0
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L410) nan liy 410

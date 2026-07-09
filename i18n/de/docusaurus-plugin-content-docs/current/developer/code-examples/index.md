@@ -3,11 +3,11 @@ title: Erweiterte Codebeispiele
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Erweiterte Codebeispiele
+# Erweiterte Codebeispiele {#advanced-code-examples}
 
 Diese Beispiele demonstrieren erweiterte Integrationsmuster mit Ultimate Multisite.
 
-## Dynamische Preis-Engine
+## Dynamische Preis-Engine {#dynamic-pricing-engine}
 
 Eine regelbasierte Preis-Engine, die Mengen-, Treue- und Saisonrabatte anwendet:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Erweiterte Website-Bereitstellung
+## Erweiterte Website-Bereitstellung {#advanced-site-provisioning}
 
 Konfiguriere neue Websites automatisch mit Plugins, SSL, CDN, Backups und Monitoring basierend auf Plan-Funktionen:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Benutzerdefiniertes Begrenzungssystem
+## Benutzerdefiniertes Begrenzungssystem {#custom-limitations-system}
 
 Ressourcenlimits verfolgen und mit Nutzungswarnungen durchsetzen:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Atomarer BerlinDB-Zähler mit `increment_item()`
+## Atomarer BerlinDB-Zähler mit `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 hat der BerlinDB-`Query`-Klasse eine `increment_item()`-Methode hinzugefügt. Verwende sie, um sichere, atomare Inkremente auf numerischen Spalten ohne Read-Modify-Write-Race-Conditions auszuführen — nützlich für Zähler, Nutzungskontingente und Rate-Limiting-Prüfungen, die unter gleichzeitigen Anfragen laufen.
 
-### Methodensignatur
+### Methodensignatur {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 hat der BerlinDB-`Query`-Klasse eine `increment_item()
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Grundlegende Verwendung
+### Grundlegende Verwendung {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API-Nutzung pro Mitgliedschaft verfolgen
+### API-Nutzung pro Mitgliedschaft verfolgen {#tracking-api-usage-per-membership}
 
 Ein praktisches Muster zum Durchsetzen von API-Rate-Limits pro Mitgliedschaft:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Warum `increment_item()` statt `update_item()`
+### Warum `increment_item()` statt `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Ein naiver Read-Modify-Write-Ansatz ist bei gleichzeitigen Anfragen unsicher:
 

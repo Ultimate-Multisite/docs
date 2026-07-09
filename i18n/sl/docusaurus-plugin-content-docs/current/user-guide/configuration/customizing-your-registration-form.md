@@ -3,13 +3,13 @@ title: Prilagajanje vašega registracijskega obrazca
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Prilagajanje vašega registracijskega obrazca
+# Prilagajanje vašega registracijskega obrazca {#customizing-your-registration-form}
 
 Da bo vaše omrežje videti edinstveno v primerjavi z vsemi drugimi SaaS rešitvami, zgrajenimi na platformi WordPress, vam Ultimate Multisite omogoča prilagajanje strani za registracijo in prijavo z našo funkcijo **Checkout Forms**.
 
 Čeprav so preprost in prilagodljiv način za preizkušanje različnih pristopov pri poskusu pretvorbe novih strank, se večinoma uporabljajo za ustvarjanje prilagojenih registracijskih obrazcev. Namen tega članka je pokazati, kako lahko to storite.
 
-## Strani za prijavo in registracijo:
+## Strani za prijavo in registracijo: {#login-and-registration-pages}
 
 Ob namestitvi Ultimate Multisite samodejno ustvari prilagojene strani za prijavo in registracijo na vašem glavnem spletnem mestu. Te privzete strani lahko kadar koli spremenite na strani **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Zdaj si oglejmo še druge možnosti, ki so še vedno pomembne za postopek prijav
 
 In to so vse možnosti, povezane s prijavo in registracijo, ki jih lahko prilagodite! Ne pozabite shraniti nastavitev, ko jih končate urejati.
 
-## Uporaba več registracijskih obrazcev:
+## Uporaba več registracijskih obrazcev: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 ponuja urejevalnik obrazcev za zaključek nakupa, ki vam omogoča ustvarjanje poljubnega števila obrazcev z različnimi polji, ponujenimi izdelki itd.
 
@@ -69,7 +69,7 @@ Druga možnost je, da obstoječe obrazce uredite ali podvojite s klikom na možn
 
 Če izberete en korak ali več korakov, bo obrazec za zaključek nakupa že vnaprej izpolnjen z osnovnimi koraki, potrebnimi za njegovo delovanje. Nato mu lahko po želji dodate dodatne korake.
 
-### Urejanje Checkout Form:
+### Urejanje Checkout Form: {#editing-a-checkout-form}
 
 Kot smo že omenili, lahko obrazce za zaključek nakupa ustvarite za različne namene. V tem primeru bomo delali na registracijskem obrazcu.
 
@@ -131,11 +131,11 @@ Za pridobitev kratke kode obrazca kliknite **Generate Shortcode** in kopirajte r
 
 _**Opomba:** To kratko kodo boste morali dodati na svojo registracijsko stran, da bo ta obrazec za checkout dodan nanjo._
 
-## Predizbira izdelkov in predlog prek URL-parametrov:
+## Predizbira izdelkov in predlog prek URL-parametrov: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Če želite ustvariti prilagojene cenovne tabele za svoje izdelke in v obrazcu za checkout predizbrati izdelek ali predlogo, ki jo vaša stranka izbere na vaši cenovni tabeli ali strani s predlogami, lahko za to uporabite URL-parametre.
 
-### **Za pakete:**
+### **Za pakete:** {#for-plans}
 
 Pojdite na **Ultimate Multisite > Products > Select a plan**. Na vrhu strani bi morali videti gumb **Click to copy Shareable Link**. To je povezava, ki jo lahko uporabite za predizbiro tega določenega paketa v svojem obrazcu za checkout.
 
@@ -143,7 +143,7 @@ Pojdite na **Ultimate Multisite > Products > Select a plan**. Na vrhu strani bi 
 
 Upoštevajte, da je ta deljiva povezava veljavna samo za **Plans**. Deljivih povezav ne morete uporabiti za pakete ali storitve.
 
-### Za predloge:
+### Za predloge: {#for-templates}
 
 Če želite predizbrati predloge spletnega mesta v svojem obrazcu za checkout, lahko na URL-ju svoje registracijske strani uporabite parameter: **?template_id=X**. "X" je treba zamenjati z **ID-številko predloge spletnega mesta**. Za pridobitev te številke pojdite na **Ultimate Multisite > Sites**.
 

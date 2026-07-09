@@ -3,18 +3,18 @@ title: Udibaniso lwe-Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Udityaniso lwe-Cloudways
+# Udityaniso lwe-Cloudways {#cloudways-integration}
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 Cloudways liqonga lokusingatha ilifu elilawulwayo elikuvumela ukuba uphumeze iisayithi ze-WordPress kubaboneleli belifu abohlukeneyo njenge-DigitalOcean, AWS, Google Cloud, nokunye. Olu dityaniso lwenza ukuvumelanisa kweedomain ngokuzenzekelayo kunye nolawulo lwezatifikethi ze-SSL phakathi kwe-Ultimate Multisite ne-Cloudways.
 
-## Iimpawu
+## Iimpawu {#features}
 - Ukuvumelanisa kweedomain ngokuzenzekelayo
 - Ulawulo lwezatifikethi ze-SSL
 - Inkxaso yeedomain ezongezelelweyo
 - Uqinisekiso lwe-DNS lwezatifikethi ze-SSL
 
-## Iimfuno
+## Iimfuno {#requirements}
 Ezi constants zilandelayo kufuneka zichazwe kwifayile yakho ye-`wp-config.php`:
 
 ```php
@@ -30,16 +30,16 @@ Ngokuzikhethela, unokuchaza kwakhona:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Imiyalelo Yokumisela
+## Imiyalelo Yokumisela {#setup-instructions}
 
-### 1. Fumana Iinkcukacha Zakho ze-Cloudways API
+### 1. Fumana Iinkcukacha Zakho ze-Cloudways API {#1-get-your-cloudways-api-credentials}
 
 1. Ngena kwi-dashboard yakho ye-Cloudways
 2. Yiya ku-"Account" > "API Keys"
 3. Yenza i-API key ukuba awukabinayo
 4. Khuphela i-imeyile yakho ne-API key
 
-### 2. Fumana ii-ID Zakho ze-Server ne-Application
+### 2. Fumana ii-ID Zakho ze-Server ne-Application {#2-get-your-server-and-application-ids}
 
 1. Kwi-dashboard yakho ye-Cloudways, yiya ku-"Servers"
 2. Khetha i-server apho i-WordPress multisite yakho isingathwe khona
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Yiya ku-"Applications" uze ukhethe i-WordPress application yakho
 5. I-App ID iyabonakala kwi-URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Yongeza ii-Constants ku-wp-config.php
+### 3. Yongeza ii-Constants ku-wp-config.php {#3-add-constants-to-wp-configphp}
 
 Yongeza ezi constants zilandelayo kwifayile yakho ye-`wp-config.php`:
 
@@ -70,7 +70,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 ngezantsi ukuze ubone ukuba kutheni oku kuthintela ukukhutshwa kwezatifikethi ze-SSL zomqeshi ngamnye.
 :::
 
-### 4. Yenza Udityaniso Lusebenze
+### 4. Yenza Udityaniso Lusebenze {#4-enable-the-integration}
 
 1. Kwi-WordPress admin yakho, yiya ku-Ultimate Multisite > Settings
 2. Yiya kwithebhu ethi "Domain Mapping"
@@ -78,9 +78,9 @@ ngezantsi ukuze ubone ukuba kutheni oku kuthintela ukukhutshwa kwezatifikethi ze
 4. Yenza udityaniso lwe-Cloudways lusebenze
 5. Cofa "Save Changes"
 
-## Indlela Esebenza Ngayo
+## Indlela Esebenza Ngayo {#how-it-works}
 
-### Ukuvumelanisa kweDomain
+### Ukuvumelanisa kweDomain {#domain-syncing}
 
 Xa idomain imaphiwe kwi-Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Xa idomain imaphiwe kwi-Ultimate Multisite:
 
 Qaphela: I-Cloudways API ifuna ukuthumela uluhlu olupheleleyo lweedomain qho, hayi ukongeza okanye ukususa nje iidomain nganye.
 
-### Ulawulo Lwezatifikethi ze-SSL
+### Ulawulo Lwezatifikethi ze-SSL {#ssl-certificate-management}
 
 Emva kokuba iidomain zivumelanisiwe:
 
@@ -106,7 +106,7 @@ dityaniso. Ukusebenzisa isatifikethi se-wildcard ku-Cloudways kuya kufuneka usif
 ngesandla, kodwa ukwenza oko kuthintela ukukhutshwa kwe-Let's Encrypt kwidomain nganye yeedomain zesiko ezimaphiweyo
 (jonga ingxaki engezantsi).
 
-## Iidomain Ezongezelelweyo
+## Iidomain Ezongezelelweyo {#extra-domains}
 
 I-constant `WU_CLOUDWAYS_EXTRA_DOMAINS` ikuvumela ukuba uchaze iidomain **zangaphandle**
 ezongezelelweyo ekufuneka zihlale zigcinwe kuluhlu lwe-aliases lwe-application ye-Cloudways. Yisebenzisele:
@@ -117,7 +117,7 @@ ezongezelelweyo ekufuneka zihlale zigcinwe kuluhlu lwe-aliases lwe-application y
 **Musa** ukusebenzisa le constant kwi-subdomain wildcard yenethiwekhi yakho
 (umz. `*.your-network.com`). Jonga ingxaki ye-wildcard SSL engezantsi.
 
-## Okubalulekileyo — Ingxaki ye-Wildcard SSL
+## Okubalulekileyo — Ingxaki ye-Wildcard SSL {#important--wildcard-ssl-pitfall}
 
 Impazamo eqhelekileyo xa kulandelwa ukumiselwa okungagqibekanga kwe-Cloudways kukongeza i-wildcard efana ne
 `*.your-network.com` ku-`WU_CLOUDWAYS_EXTRA_DOMAINS`, okanye ukufaka ngesandla isatifikethi se-Cloudways
@@ -128,7 +128,7 @@ zomqeshi ngamnye ezimaphiwa yi-Ultimate Multisite.** Cloudways itshintsha isatif
 SSL esisebenzayo kwi-application qho, kwaye isatifikethi se-wildcard esele sikhona kwi
 application sithintela ukukhutshwa kwe-Let's Encrypt kwidomain nganye oluxhomekeke kuko udityaniso.
 
-### Ukumiselwa kwe-Cloudways SSL okucetyiswayo kwenethiwekhi ye-Ultimate Multisite
+### Ukumiselwa kwe-Cloudways SSL okucetyiswayo kwenethiwekhi ye-Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Kwithebhu ye-**SSL Certificate** ye-application ye-Cloudways, faka isatifikethi se-**standard
    Let's Encrypt certificate** esigubungela kuphela `your-network.com` kunye ne-`www.your-network.com`
@@ -146,20 +146,20 @@ se-domain ephambili yenethiwekhi kuphela, kwaye ususe naluphi na ungeniso lwe-wi
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Emva koko phinda uqalise imephu ye-domain (okanye ulinde elandelayo)
 kwaye indibaniselwano iya kuqalisa ukukhupha izatifikethi ze-domain nganye kwakhona.
 
-## Ukusombulula iingxaki
+## Ukusombulula iingxaki {#troubleshooting}
 
-### Iingxaki zonxibelelwano lwe-API
+### Iingxaki zonxibelelwano lwe-API {#api-connection-issues}
 - Qinisekisa ukuba i-imeyile yakho kunye nesitshixo se-API zichanekile
 - Jonga ukuba ii-ID zeseva kunye nezesicelo sakho zichanekile
 - Qinisekisa ukuba i-Account yakho ye-Cloudways ineemvume eziyimfuneko
 
-### Iingxaki zesatifikethi se-SSL
+### Iingxaki zesatifikethi se-SSL {#ssl-certificate-issues}
 - I-Cloudways ifuna ukuba ii-domain zibe neerekhodi ze-DNS ezisebenzayo ezikhomba kwiseva yakho ngaphambi kokukhupha izatifikethi ze-SSL
 - Indibaniselwano iqinisekisa iirekhodi ze-DNS ngaphambi kokucela izatifikethi ze-SSL
 - Ukuba izatifikethi ze-SSL azikhutshwa, jonga ukuba ii-domain zakho zikhomba ngokufanelekileyo kwidilesi ye-IP yeseva yakho
 - **Ii-domain zesiko zomqeshi ngamnye zibambekile ngaphandle kwe-SSL?** Jonga ithebhu ye-SSL Certificate yesicelo se-Cloudways. Ukuba isatifikethi se-wildcard (esifakwe ngesandla, okanye esigubungela `*.your-network.com`) siyasebenza, i-Cloudways ayiyi kukhupha izatifikethi ze-Let's Encrypt zee-domain zesiko ezimephuweyo nganye nganye. Sitshintshe ngesatifikethi esisemgangathweni se-Let's Encrypt esigubungela kuphela i-domain ephambili yenethiwekhi (`your-network.com`, `www.your-network.com`) kwaye ususe naluphi na ungeniso lwe-wildcard kwi-`WU_CLOUDWAYS_EXTRA_DOMAINS`. Emva koko phinda uqalise imephu ye-domain (okanye ulinde elandelayo) kwaye indibaniselwano iya kucela izatifikethi ze-domain nganye.
 
-### I-domain ayongezwanga
+### I-domain ayongezwanga {#domain-not-added}
 - Jonga iilogi ze-Ultimate Multisite ukuba kukho nayiphi na imiyalezo yempazamo
 - Qinisekisa ukuba i-domain ayikongezwanga sele kwi-Cloudways
 - Qinisekisa ukuba isicwangciso sakho se-Cloudways sixhasa inani lee-domain ozongezayo

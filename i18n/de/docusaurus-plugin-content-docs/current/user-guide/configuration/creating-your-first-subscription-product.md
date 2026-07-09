@@ -3,13 +3,13 @@ title: Erstellen Ihres ersten Abonnementprodukts
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Dein erstes Abonnementprodukt erstellen (v2)
+# Dein erstes Abonnementprodukt erstellen (v2) {#creating-your-first-subscription-product-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel ist nur für Benutzer von Ultimate Multisite Version 2.x gedacht. Wenn du Version 1.x verwendest,**_ **_**lies diesen Artikel**_**.
 
 Um dein Netzwerk zu betreiben und deine Dienste an potenzielle Benutzer zu verkaufen, benötigst du verschiedene Abonnementoptionen. Wie erstellst du diese Produkte? Welche Arten von Produkten kannst du anbieten? In diesem Artikel behandeln wir alles, was du über Produkte wissen musst.
 
-## Produkttyp
+## Produkttyp {#product-type}
 
 Mit Ultimate Multisite kannst du deinen Kunden zwei Kategorien von Produkten anbieten: **Tarife** und **Add-ons** **(Order Bump)**. Add-ons können in zwei Typen unterteilt werden:**Pakete** und **Dienste**. Als Nächstes sehen wir uns ihre Unterschiede und Besonderheiten an.
 
@@ -19,7 +19,7 @@ Mit Ultimate Multisite kannst du deinen Kunden zwei Kategorien von Produkten anb
 
   * **Dienste:** Add-ons, die die Funktionen von Ultimate Multisite nicht verändern. Es handelt sich um Aufgaben, die du zusätzlich zu dem gekauften Tarif für deinen Kunden ausführst. Zum Beispiel könnte dein Kunde einen Tarif kaufen, der eine einzelne Website erlaubt, und zusätzlich für einen Extra-Dienst bezahlen, der das Design dieser Website erstellt.
 
-## Produkte verwalten
+## Produkte verwalten {#managing-products}
 
 Für viele kann der Tab **Produkte** in Ultimate Multisite **(Ultimate Multisite > Produkte)** mit Tarifen in einer traditionellen Hosting-Umgebung gleichgesetzt werden.
 
@@ -29,7 +29,7 @@ Dieser Abschnitt führt dich durch das Verständnis dieses wesentlichen Grundpfe
 
 ![Produktlistenseite](/img/config/products-list.png)
 
-## Produkte hinzufügen
+## Produkte hinzufügen {#adding-products}
 
 Ob Tarif, Paket oder Dienst: Der Einstiegspunkt zum Definieren eines neuen Elements erfolgt über **Ultimate Multisite > Produkte > Produkt hinzufügen**.
 
@@ -39,13 +39,13 @@ Die Oberfläche enthält zwei Hauptbereiche. Links befinden sich mehrere Tabs, d
 
 ![Übersicht der Produktbearbeitungsseite](/img/config/product-edit-full.png)
 
-### Beschreibung
+### Beschreibung {#description}
 
 Die grundlegenden Produktinformationen können durch Angabe eines Produktnamens und einer Beschreibung definiert werden. Diese Kennzeichnungen werden überall dort angezeigt, wo Produktinformationen erforderlich sind, etwa bei der Tarif- und Preisauswahl, auf Rechnungen, bei Upgrades und Ähnlichem.
 
 ![Abschnitt Produktbeschreibung](/img/config/product-description.png)
 
-### Preistyp
+### Preistyp {#pricing-type}
 
 Auf der rechten Seite der Oberfläche kann die Basispreisgestaltung definiert werden.
 
@@ -53,7 +53,7 @@ Auf der rechten Seite der Oberfläche kann die Basispreisgestaltung definiert we
 
 Ultimate Multisite unterstützt drei verschiedene Preistypen. Die Option **bezahlt** fordert den Netzwerkadministrator auf, Informationen zum Preis und zur Abrechnungshäufigkeit des Produkts anzugeben.
 
-### Preisgestaltung
+### Preisgestaltung {#pricing}
 
 Die Preiskomponente definiert den Grundpreis des Produkts und das Abrechnungsintervall.
 
@@ -61,7 +61,7 @@ Die Preiskomponente definiert den Grundpreis des Produkts und das Abrechnungsint
 
 Ein Beispielpreis von $29.99 mit einer Einstellung von 1 Monat wird daher jeden Monat mit $29.99 abgerechnet. Ebenso wird ein Preis von $89.97 mit einer Einstellung von 3 Monaten diesen Betrag jedes Quartal abrechnen.
 
-### Abrechnungszyklen
+### Abrechnungszyklen {#billing-cycles}
 
 Der Abschnitt Abrechnungszyklen gibt die Häufigkeit des oben genannten Abrechnungsintervalls an und wird im Allgemeinen im Zusammenhang mit Verträgen oder festen Laufzeiten verstanden.
 
@@ -69,7 +69,7 @@ Der Abschnitt Abrechnungszyklen gibt die Häufigkeit des oben genannten Abrechnu
 
 Beispielsweise würde ein Produktpreis von $29.99 mit einem Intervall von 1 Monat und 12 Abrechnungszyklen $29.99 pro Monat für das Produkt über die folgenden 12 Monate abrechnen. Mit anderen Worten: Eine solche Einstellung würde eine Festpreis-Laufzeit von $29.99 pro Monat für 12 Monate festlegen und danach die Abrechnung beenden.
 
-### Testzeitraum
+### Testzeitraum {#trial-period}
 
 Das Aktivieren des Schalters für ein Testangebot ermöglicht es dem Netzwerkadministrator, einen Testzeitraum für das Produkt festzulegen.
 
@@ -77,7 +77,7 @@ Das Aktivieren des Schalters für ein Testangebot ermöglicht es dem Netzwerkadm
 
 Während des Testzeitraums können Kunden das Produkt kostenlos nutzen und werden erst abgerechnet, wenn der Testzeitraum abgelaufen ist.
 
-### Einrichtungsgebühr
+### Einrichtungsgebühr {#setup-fee}
 
 Du kannst deinem Tarif auch eine Einrichtungsgebühr hinzufügen.
 
@@ -85,7 +85,7 @@ Du kannst deinem Tarif auch eine Einrichtungsgebühr hinzufügen.
 
 Das bedeutet, dass dein Kunde bei der ersten Belastung einen zusätzlichen Betrag zahlt (zusätzlich zum Tarifpreis), der der Gebühr entspricht, die du in diesem Abschnitt festgelegt hast.
 
-### Aktiv
+### Aktiv {#active}
 
 Der Aktiv-Schalter legt effektiv fest, ob das Produkt Kunden für neue Registrierungen zur Verfügung steht.
 
@@ -93,13 +93,13 @@ Der Aktiv-Schalter legt effektiv fest, ob das Produkt Kunden für neue Registrie
 
 Wenn es bestehende Kunden in diesem Tarif gibt, bewirkt das Deaktivieren des Schalters, dass der Tarif effektiv als Bestandstarif weitergeführt und aus zukünftigen Registrierungen entfernt wird. **Bestehende Kunden im Tarif werden weiterhin abgerechnet**, bis sie auf einen neuen Tarif umgestellt oder aus dem Tarif entfernt werden.
 
-### Produktbild
+### Produktbild {#product-image}
 
 Der Button **Bild hochladen** ermöglicht es dem Netzwerkadministrator, die Medienbibliothek zu verwenden, um ein Produktbild auszuwählen oder hochzuladen.
 
 ![Abschnitt Produktbild](/img/config/product-image.png)
 
-### Löschen
+### Löschen {#delete}
 
 Der Button **Produkt löschen** löscht das Produkt aus dem System. Er erscheint, sobald das Produkt veröffentlicht ist.
 
@@ -107,11 +107,11 @@ Der Button **Produkt löschen** löscht das Produkt aus dem System. Er erscheint
 
 Im Gegensatz zu anderen Löschvorgängen wird das Produkt nicht in einen Papierkorbzustand verschoben. Sobald es gelöscht wurde, ist die Aktion daher unumkehrbar.
 
-### Produktoptionen
+### Produktoptionen {#product-options}
 
 Sobald die grundlegenden Produktinformationen definiert sind, helfen die Produktoptionen dem Netzwerkadministrator dabei, die spezifischen Attribute des Produkts weiter zu definieren.
 
-#### Allgemein
+#### Allgemein {#general}
 
 Der Tab **Allgemein** definiert die allgemeinen Attribute des Produkts, die auf keinen der anderen produktspezifischen Tabs zutreffen.
 
@@ -125,7 +125,7 @@ Die **Kundenrolle** legt die Rolle fest, die dem Kunden zugewiesen wird, wenn di
 
 ![Einstellungen für Kundenrolle](/img/config/product-customer-role-settings.png)
 
-#### Upgrades & Downgrades
+#### Upgrades & Downgrades {#up--downgrades}
 
 Dieser Tab legt die Upgrade- und Downgrade-Pfade fest, die einem Kunden innerhalb seiner spezifischen Stufe zur Verfügung stehen.
 
@@ -143,7 +143,7 @@ Um eine Plangruppe zu definieren, geben Sie die kompatiblen Pläne in der Liste 
 
 Ultimate Multisite enthält außerdem eine **Order-Bump**-Funktion, mit der passende Add-on-Produkte und Dienstleistungen zu Plänen hinzugefügt werden können. Diese werden dem Kunden als zusätzliche Artikel angeboten, die beim Checkout oder während eines Upgrades zu Plänen hinzugefügt werden können.
 
-#### Preisvariationen
+#### Preisvariationen {#price-variations}
 
 Preisvariationen ermöglichen es dem Netzwerkadministrator, alternative Preisstufen abhängig von der Dauer festzulegen. Diese Einstellung ermöglicht es, monatliche, vierteljährliche, jährliche oder beliebige andere Abrechnungszeiträume für dasselbe Produkt anzubieten. Sie können beispielsweise ein Produkt für 29,99 $/Monat mit einer rabattierten Jahresoption für 249,99 $/Jahr einrichten.
 
@@ -165,7 +165,7 @@ Wenn Ihr Basisproduktpreis beispielsweise 29,99 $ pro Monat beträgt, könnten S
 Preisvariationen allein fügen dem Frontend-Checkout keinen Toggle oder Schalter hinzu. Damit Kunden zwischen Abrechnungszeiträumen wechseln können (z. B. monatlich / jährlich), müssen Sie Ihrem Checkout-Formular ein Feld **Zeitraumauswahl** hinzufügen. Siehe [Checkout-Formulare: Einen Schalter zur Zeitraum-Auswahl hinzufügen](checkout-forms#adding-a-period-selection-toggle) für Schritt-für-Schritt-Anweisungen.
 :::
 
-#### Steuern
+#### Steuern {#taxes}
 
 Der Tab **Steuern** stimmt mit den in **Ultimate Multisite > Einstellungen > Steuern** angegebenen Steuereinstellungen und genauer mit den definierten Steuersätzen überein. Um Steuern zu aktivieren und anwendbare Steuersätze zu definieren, lesen Sie bitte die Dokumentation unter **Ultimate Multisite: Einstellungen**
 
@@ -179,7 +179,7 @@ Sobald der Steuersatz unter **Ultimate Multisite > Einstellungen > Steuersätze 
 
 Um anzugeben, dass ein Produkt ein steuerpflichtiger Artikel ist, setzen Sie den Schalter **Ist steuerpflichtig** auf aktiv und wählen Sie den anwendbaren Steuersatz aus dem Dropdown-Menü Steuerkategorie aus.
 
-#### Website-Vorlagen
+#### Website-Vorlagen {#site-templates}
 
 Im Wesentlichen sind Website-Vorlagen vollständige WordPress-Websites, die zu Beginn ihres Abonnements auf die Website eines Kunden geklont werden.
 
@@ -201,7 +201,7 @@ Schließlich überschreibt **V** **erfügbare Website-Vorlagen auswählen** die 
 
 Wenn der Netzwerkadministrator letztlich möchte, dass die Vorlagenauswahl in den Bestellschritten erfolgt, genügt die Einstellung „ _Standard_ “. Alternativ können die Optionen „ _neue Vorlage zuweisen_ “ oder „ _verfügbare Website-Vorlagen auswählen_ “ wünschenswert sein, um die Vorlagenauswahl zu entfernen und zu sperren und die Auswahl an die Tarifeinstellungen zu delegieren.
 
-#### Websites
+#### Websites {#sites}
 
 Der Tab **Websites** ist Teil der Einschränkungsfunktionalität von Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Diese Einstellung legt die maximale Anzahl von Websites fest, die ein Kunde unte
 
 Um die Einschränkung zu aktivieren, setzen Sie den Umschalter **Websites begrenzen** in den aktiven Zustand und geben Sie die maximale Anzahl von Websites im Feld **Website-Kontingent** an.
 
-#### Besuche
+#### Besuche {#visits}
 
 Der Tab **Besuche** ist ein weiterer Teil des Einschränkungssystems von Ultimate Multisite. Diese Einstellung ermöglicht die Erfassung und anschließende Drosselung eindeutiger Besucher auf der Website eines Kunden.
 
@@ -223,7 +223,7 @@ Um diese Funktion zu nutzen, setzen Sie den Umschalter **eindeutige Besuche begr
 
 Sobald dieses Limit erreicht ist, stellt Ultimate Multisite die Bereitstellung der Website des Kunden ein, anstatt eine Meldung anzuzeigen, dass Limits überschritten wurden.
 
-#### Benutzer
+#### Benutzer {#users}
 
 Die „Benutzer“-Einschränkungen von Ultimate Multisite ermöglichen es dem Netzwerkadministrator, Limits für die Anzahl der Benutzer festzulegen, die erstellt und Rollen zugewiesen werden können.
 
@@ -233,7 +233,7 @@ Um die Einschränkungsfunktion zu aktivieren, setzen Sie den Umschalter **Benutz
 
 Setzen Sie als Nächstes für jede Rolle, die begrenzt werden soll, den danebenstehenden Umschalter in einen aktiven Zustand und definieren Sie das maximale obere Limit im entsprechenden Feld.
 
-#### Beitragstypen
+#### Beitragstypen {#post-types}
 
 Der Tab **Beitragstypen** ermöglicht es dem Netzwerkadministrator, granulare Limits für die umfangreiche Palette von Beitragstypen innerhalb von WordPress festzulegen.
 
@@ -245,7 +245,7 @@ Um dieses Einschränkungs-Subsystem zu aktivieren, setzen Sie den Umschalter **B
 
 Schalten Sie als Nächstes jeden zu begrenzenden Beitragstyp ein, indem Sie ihn nach rechts schieben und das maximale obere Limit im entsprechenden Feld angeben.
 
-#### Speicherplatz
+#### Speicherplatz {#disk-space}
 
 Der Tab **Speicherplatz** ermöglicht es Netzwerkadministratoren, den von Kunden verbrauchten Speicherplatz zu beschränken.
 
@@ -257,13 +257,13 @@ Um die Einschränkung der Speichernutzung zu aktivieren, setzen Sie den Umschalt
 
 Geben Sie als Nächstes das maximale obere Limit in Megabyte im Feld **Speicherplatzkontingent** an.
 
-#### Benutzerdefinierte Domain
+#### Benutzerdefinierte Domain {#custom-domain}
 
 Durch Umschalten dieser Option können Sie benutzerdefinierte Domains speziell für diesen Tarif zulassen.
 
 ![Tab Benutzerdefinierte Domains](/img/config/product-custom-domains.png)
 
-#### Themes
+#### Themes {#themes}
 
 Der Tab **Themes** innerhalb der Produktoptionen ermöglicht es dem Netzwerkadministrator, Themes für Kunden zur Auswahl verfügbar zu machen und optional den Status des Themes zu erzwingen.
 
@@ -281,7 +281,7 @@ Die Auswahl **Verhalten** ermöglicht es dem Netzwerkadministrator, den Status d
 
 Im Status **V** **erfügbar** wird das Theme dem Kunden zur Selbstaktivierung zur Verfügung gestellt. Umgekehrt entzieht der Status **Nicht verfügbar** dem Kunden die Möglichkeit, das Theme zu aktivieren. Schließlich erzwingt die Option **Aktivierung erzwingen** die Auswahl und Aktivierung des Themes und legt es damit bei der Website-Erstellung als Standard fest.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Ähnlich wie beim Tab Themes ermöglicht Ultimate Multisite dem Netzwerkadministrator, die Sichtbarkeit von Plugins für Kunden sowie deren Status bei der Erstellung einer neuen Website zu definieren.
 
@@ -301,7 +301,7 @@ Die Einstellung **Force Activate & Lock** funktioniert ähnlich, verhindert jedo
 
 Der Netzwerkadministrator sollte die Einstellungen Force Activate & Lock und Force Inactivate & Lock möglicherweise in Verbindung mit Website-Vorlagen berücksichtigen, da Plugins und Plugin-Zustände innerhalb der Vorlagen von diesen Einstellungen beeinflusst werden können, wenn sie ausgewählt sind.
 
-#### Einschränkungen zurücksetzen
+#### Einschränkungen zurücksetzen {#reset-limitations}
 
 Der Tab **Reset Limitations** setzt alle benutzerdefinierten Begrenzungen zurück, die für das Produkt definiert sind. Um Begrenzungen zurückzusetzen, klicken Sie auf die Schaltfläche **reset limitations**.
 
@@ -311,7 +311,7 @@ Um die Aktion zu bestätigen, schieben Sie den **confirm reset**-Schalter nach r
 
 ![Tab „Einschränkungen zurücksetzen“](/img/config/product-reset-limitations.png)
 
-## Produkt bearbeiten, duplizieren oder löschen
+## Produkt bearbeiten, duplizieren oder löschen {#edit-duplicate-or-delete-product}
 
 Bestehende Produkte können bearbeitet, dupliziert oder gelöscht werden, indem Sie zu **Ultimate Multisite > Products** navigieren und den Mauszeiger über den Namen des bestehenden Produkts bewegen.
 

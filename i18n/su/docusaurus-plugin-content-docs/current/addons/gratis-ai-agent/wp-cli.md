@@ -3,11 +3,11 @@ title: Rujukan WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Rujukan WP-CLI
+# Rujukan WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent mawa kulawarga paréntah `wp gratis-ai-agent` pikeun nguji patokan agent, ngatur kamampuhan, jeung naroskeun status agent tina command line. Sadaya paréntah merlukeun WP-CLI 2.0 atawa leuwih luhur.
 
-## Pamasangan
+## Pamasangan {#installation}
 
 Paréntah WP-CLI didaptarkeun sacara otomatis nalika plugin aktip. Pariksa ku:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Ngajalankeun rangkay uji patokan Kamampuhan Agent — sakumpulan prompt rumit, sababaraha léngkah, anu nguji sakabéh beungeut kamampuhan. Paké ieu pikeun meunteun kinerja modél, ngabandingkeun panyadia AI, atawa ngesahkeun pak kamampuhan saméméh dipasang ka produksi.
 
-### Sinopsis
+### Sinopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Pilihan
+### Pilihan {#options}
 
 | Pilihan | Pedaran |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Format kaluaran: `table` (bawaan), `json`, `csv` |
 | `--save` | Simpen hasil uji patokan ka basis data pikeun ngabandingkeun sajarah |
 
-### Conto
+### Conto {#examples}
 
 Jalankeun sakabéh rangkay uji patokan jeung panyadia sarta modél ayeuna:
 
@@ -57,7 +57,7 @@ Jalankeun ngalawan modél husus sarta simpen hasil:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Kaluaran
+### Kaluaran {#output}
 
 Uji patokan ngahasilkeun hiji baris per patarosan kalayan kolom di handap:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Patarosan Uji Patokan
+### Patarosan Uji Patokan {#benchmark-questions}
 
 Rangkay bawaan ngawengku:
 
@@ -95,11 +95,11 @@ Patarosan tambahan bisa didaptarkeun ngaliwatan filter `gratis_ai_agent_benchmar
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Ngatur kamampuhan jeung pak kamampuhan anu geus dipasang.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Nembongkeun sadaya kamampuhan anu kadaptar, sumberna (inti atawa pak), jeung status ayeuna.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Ngundeur sarta ngaktipkeun pak kamampuhan tina registri.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Nonaktipkeun kamampuhan husus tanpa mupus pakna. Mangpaat pikeun ngawatesan lingkup agent dina situs anu tangtu.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Ngaktipkeun deui kamampuhan anu saméméhna dinonaktipkeun.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Nembongkeun konfigurasi agent ayeuna jeung status konektipitas.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Nembongkeun kagiatan agent panganyarna tina debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Ngareset kaayaan agen: mupus CSS anu diselapkeun, ngahapus CPT jeung taksonomi anu didaptarkeun ku agen, ngareset gaya global, sarta ngosongkeun cache pilihan agén. Henteu ngahapus pangaya atawa setélanana.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Kode Kaluar
+## Kode Kaluar {#exit-codes}
 
 Sadaya paréntah kaluar `0` lamun suksés. Kode kaluar non-enol:
 

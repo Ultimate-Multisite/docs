@@ -3,7 +3,7 @@ title: កំណត់ហេតុការផ្លាស់ប្ដូរ Cap
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# កំណត់ហេតុផ្លាស់ប្តូរ Captcha
+# កំណត់ហេតុផ្លាស់ប្តូរ Captcha {#captcha-changelog}
 
 Version: 1.5.0 - ចេញផ្សាយនៅ 2026-05-22
 * ថ្មី៖ ឧបករណ៍កំណត់អត្រាបែប hard-stop — រាប់រាល់ GET និង POST លើផ្ទៃដែលត្រូវបានការពារ​ដោយ captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ហើយឆ្លើយតបដោយ HTTP 429, `Retry-After` header និងការពន្យារពេល tarpit ចៃដន្យ (1–5 វិនាទី កំណត់អតិបរមាដាច់ខាត 15 វិនាទី)។

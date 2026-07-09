@@ -3,11 +3,11 @@ title: Schopnosti spravování pluginů
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Schopnosti spravování pluginů
+# Schopnosti spravování pluginů {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 obsahuje **7 schopností spravování pluginů**, které si AI asistent může během konverzace vyvolat. Tyto schopnosti poskytují programátorskou kontrolu nad WordPress pluginy nainstalovanými prostřednictvím [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Přehled schopností
+## Přehled schopností {#abilities-overview}
 
 | Schopnost | Slug | Popis |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 obsahuje **7 schopností spravování pluginů**, které 
 | Install Plugin | `install_plugin` | Nasadí sandboxovaný plugin do živého adresáře pluginů WordPress. |
 | Activate Plugin | `activate_plugin` | Aktivuje sandboxovaný plugin v prostředí sandbox wp-env. |
 
-## API pro instalaci pluginů
+## API pro instalaci pluginů {#plugin-installer-api}
 
 Instalátor pluginů zpracovává operace na souborovém systému při nasazování nebo odstraňování pluginů. Klíčové chování:
 
@@ -28,7 +28,7 @@ Instalátor pluginů zpracovává operace na souborovém systému při nasazová
 - **Aktualizace:** Nahrazuje stávající soubory pluginu. Deaktivuje plugin před zápisem, aby se předešlo chybám kvůli neúplnému stavu.
 - **Odstranění podle slugu:** Najde adresář pluginu podle slugu, deaktivuje ho na všech sajtích, a poté adresář odstraní.
 
-### Registrace vlastní handleru pro instalaci
+### Registrace vlastní handleru pro instalaci {#registering-a-custom-install-handler}
 
 Můžete se připojit k životnímu cyklu instalace pomocí akcí `gratis_ai_plugin_installer_before_install` a `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registr ekosystému
+## Registr ekosystému {#ecosystem-registry}
 
 Schopnosti jsou registrovány prostřednictvím **registru ekosystému pluginů**. Tento registr mapuje slugy schopností na jejich třídy handlerů a vystavuje je dispečerovi nástrojů AI agenta.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integrace HookScanneru
+## Integrace HookScanneru {#hookscanner-integration}
 
 Schopnosti `create_plugin` a `update_plugin` automaticky provádějí **HookScanner** na nově vygenerovaný kód. HookScanner vrátí seznam akčních a filtračních hooků WordPress registrovaných pluginem.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner automaticky přeskočí adresáře `vendor/` a `node_modules/`.
 
-## Architektura asynchronních úloh
+## Architektura asynchronních úloh {#async-job-architecture}
 
 Dlouhodobé operace s pluginy (generování, instalace) jsou odeslány jako **asynchronní úlohy** s živým sledováním pokroku. Chatovací rozhraní AI o dotazuje na pokrok a streamuje aktualizace stavu uživateli:
 

@@ -3,17 +3,17 @@ title: Thumela ngaphandle & Ngenisa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 yongeza isixhobo se-site enye **Export & Import** phantsi kwe-**Tools > Export & Import**. Sisebenzise xa kufuneka upakishe i-WordPress site enye njengefayile ye-ZIP, ubuyisele loo ZIP, okanye uhambise i-site phakathi kofakelo oluhambelanayo lwe-Ultimate Multisite kunye ne-WordPress ye-site enye.
 
-## Iimvume ezifunekayo
+## Iimvume ezifunekayo {#required-permissions}
 
 Kufuneka ungene njengomlawuli onokufikelela kwimenyu ye-WordPress **Tools** kwi-site ethunyelwa ngaphandle okanye engeniswa ngaphakathi. Kwinethiwekhi ye-multisite, sebenzisa i-Account yomlawuli wenethiwekhi xa uthumela ngaphandle okanye ungenisa ngaphakathi ii-subsites kwizixhobo ze-Ultimate Multisite ezikwinqanaba lenethiwekhi.
 
 Ukhuphelo lwe-Export ZIP lunikezelwa nge-endpoint yokukhuphela eqinisekisiweyo, ngoko gcina iseshoni yomlawuli isebenza de ukhuphelo lugqitywe kwaye ungabelani ngee-URL zokukhuphela ezenziweyo esidlangalaleni.
 
-## Ukuthumela i-site ngaphandle kwi-ZIP
+## Ukuthumela i-site ngaphandle kwi-ZIP {#exporting-a-site-to-a-zip}
 
 1. Kwi-WordPress admin ye-site ofuna ukuyikopa, yiya ku-**Tools > Export & Import**.
 2. Vula indawo ye-export uze ukhethe i-site ofuna ukuyipakisha.
@@ -23,7 +23,7 @@ Ukhuphelo lwe-Export ZIP lunikezelwa nge-endpoint yokukhuphela eqinisekisiweyo, 
 
 Gcina i-ZIP kwindawo ekhuselekileyo. Inokuqulatha umxholo we-site, izicwangciso, iifayile zemidiya, kunye nee-asethi zekhowudi ezikhethiweyo.
 
-## Oko kuqukwa yi-export
+## Oko kuqukwa yi-export {#what-the-export-includes}
 
 I-export ZIP inokuquka:
 
@@ -34,7 +34,7 @@ I-export ZIP inokuquka:
 
 Ubungakanani obuchanekileyo be-ZIP buxhomekeke kubungakanani bemidiya, ii-plugins kunye nee-themes ezikhethiweyo, kunye nobungakanani beetafile zedathabheyisi ze-site.
 
-## Ukungenisa i-site ngaphakathi ukusuka kwi-ZIP
+## Ukungenisa i-site ngaphakathi ukusuka kwi-ZIP {#importing-a-site-from-a-zip}
 
 1. Yiya ku-**Tools > Export & Import** kwi-WordPress site ekuyiwa kuyo.
 2. Vula indawo ye-import uze ulayishe i-ZIP eyenziwe sisixhobo se-Export & Import.
@@ -46,7 +46,7 @@ Ubungakanani obuchanekileyo be-ZIP buxhomekeke kubungakanani bemidiya, ii-plugin
 
 Kufakelo lwe-WordPress lwe-site enye, ukungenisa i-ZIP ngaphakathi kutshintsha i-site yangoku nge-site engenisiweyo. Yenza i-backup epheleleyo ye-site ekujoliswe kuyo ngaphambi kokuba uqale, kwaye uphephe ukuqala ii-import ezininzi ze-site enye ngexesha elinye.
 
-## Imida kunye namanqaku okuhambelana
+## Imida kunye namanqaku okuhambelana {#limitations-and-compatibility-notes}
 
 - Iidirectory zokulayisha ezinkulu kakhulu okanye amathala eencwadi emidiya anokuvelisa iifayile ze-ZIP ezinkulu. Qinisekisa imida yokulayisha ye-PHP, imida yokusebenza, indawo yediski, imemori, kunye nezicwangciso ze-timeout zeseva ngaphambi kokuthumela ngaphandle okanye ukungenisa ngaphakathi ii-site ezinkulu.
 - Amathala eencwadi emidiya amakhulu kakhulu angadinga ukuhanjiswa ngexesha lefestile yolondolozo enetrafikhi ephantsi.

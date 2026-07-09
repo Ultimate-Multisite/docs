@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Kupa Ads kuunyuva paita munzvimbo neUltimate Multisite: Ad Injector
+# Kupa Ads kuunyuva paita munzvimbo neUltimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector ndiri **add-on wose** inoshanda zvinhu zvinokupa kuti upa ads pamapfano ako mune edit page yavo.
 
@@ -35,7 +35,7 @@ Unogonawo kuita kuti ads dzine kudzidzwa mumheader ye Admin Pages kunoita kuti v
 
 _Enda kuAdmin Panel Ad Code option kana unoda kuratidza ads pamabasa emunhu wako (user's back-end)_
 
-### Pamusoro Pezvinhu Zvinogona Kuita Kuti Usiitire Ads
+### Pamusoro Pezvinhu Zvinogona Kuita Kuti Usiitire Ads {#beyond-advertising}
 
 Unogonawo kuda kuti Ultimate Multisite: Ad Injector ushandiswe kuita support kune plans dzine matabura yakawanda.
 

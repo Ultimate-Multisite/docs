@@ -4,11 +4,11 @@ title: Сүзгі - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Сүзгі: wu_country_get_administrative_division_name
+# Сүзгі: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Елдің әкімшілік бөлімшелерінің әдемі атауын қайтарады.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | сөздерді бас әріппен жазатынымыз. |
 | $current_country | `\WP_Ultimo\Country\Country` | Ағымдағы кластың данасы. |
 
-### Бастап
+### Бастап {#since}
 
 - 2.0.11
-### Дереккөзі
+### Дереккөзі {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ішінде 250-жолда анықталған
 
 
-## Қайтарады
+## Қайтарады {#returns}
 Өзгертілген бөлімше атауы.

@@ -4,11 +4,11 @@ title: Dejanje - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Dejanje: wu_domain_renewal_failed
+# Dejanje: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Sproži se, ko poskus podaljšanja domene ne uspe.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sproži se, ko poskus podaljšanja domene ne uspe.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metapodatki podaljšanja (domain_name, leta itd.). |
 | $error_message | `string` | Človeku berljivo sporočilo o napaki od registrarja. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.0
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) v vrstici 630

@@ -3,13 +3,13 @@ title: Průvodce integrací
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Průvodce integrací
+# Průvodce integrací {#integration-guide}
 
 Tento průvodce pokrývá běžné vzory integrace s Ultimate Multisite, včetně připojení k externím službám, vytváření vlastních platebních bran a zpracování webhooků.
 
 Pro izolovanou infrastrukturu tenantů viz [Integrace multi-tenancy](./multi-tenancy) pro pokyny k bootstrapu suverénních tenantů, ověření migrace, SSO a teardownu.
 
-## Integrace CRM
+## Integrace CRM {#crm-integration}
 
 Synchronizujte zákaznická data do svého CRM, když se zaregistrují noví zákazníci:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrace analytiky
+## Integrace analytiky {#analytics-integration}
 
 Sledujte klíčové obchodní události napříč životním cyklem zákazníka:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Další kroky
+## Další kroky {#next-steps}
 
 - [Vývoj vlastní brány](./custom-gateway) — Vytvořte si vlastní platební bránu
 - [Zpracování webhooků](./webhooks) — Vytvořte vlastní endpointy webhooků

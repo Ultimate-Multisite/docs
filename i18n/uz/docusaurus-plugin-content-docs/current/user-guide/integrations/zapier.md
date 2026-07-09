@@ -3,7 +3,7 @@ title: Zapier Integratsiyasi
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite'i Zapier bilan birlashtirish
+# Ultimate Multisite'i Zapier bilan birlashtirish {#integrating-ultimate-multisite-with-zapier}
 
 Bir maqolada biz [Webhooks](webhooks.md) haqida gaplashgan edik va ulardan uchinchi tomon ilovalari bilan qanday integratsiya qilish mumkinligidan so'ragan edik.
 
@@ -15,7 +15,7 @@ Siz tarmoq (network)da voqealar sodir bo'lganda ishga tushadigan **Triggers** ya
 
 Bu mumkin, chunki **Ultimate Multisite Zapier's triggers** va actions [REST API](https://developer.ultimatemultisite.com/api/docs/) orqali ishlaydi.
 
-## Qanday boshlash kerak
+## Qanday boshlash kerak {#how-to-start}
 
 Avvalo, Zapier ilovasi ro'yxatidan Ultimate Multisite ni qidiring. Boshqa yo'l bilan, [bu linkga](https://zapier.com/apps/wp-ultimo/integrations) bosishingiz mumkin.
 
@@ -51,7 +51,7 @@ URL maydoniga tarmoqning to'liq URL-ini, protokollni (HTTP yoki HTTPS) o'z ichig
 
 Keyingi bosqichga o'tish uchun **Yes, Continue** (Ha, davom etish) tugmasini bosing. Hamma narsa to'g'ri bo'lsa, siz yangi bog'langan akkauntingiz bilan kutib turasiz! Yangi trigger yaratish uchun **Continue** (Davomiylik) tugmasini bosing.
 
-## Yangi Triggerni qanday yaratish kerak
+## Yangi Triggerni qanday yaratish kerak {#how-to-create-a-new-trigger}
 
 Hisobingiz ulanmaganidan so'ng mavjud voqealarni ko'rishingiz mumkin. Bu tutorial uchun biz **payment_received** (to'lov olindi) voqealaridan foydalanamiz.
 
@@ -67,7 +67,7 @@ Bu bosqichda Zapier sizning Zapingiz ushbu hodisaga tegishli ma'lumotni **o'zlas
 
 Bizning tutorialimizda sinov **muvaffaqiyatli yakunlandi** va payload misol ma'lumotlarini qaytarib berdi. Bu misol ma'lumotlar bizga harakatlarni yaratish jarayonida yo'l ko'rsatish uchun foydali bo'ladi. Sizning trigger hozir yaratilgan va boshqa ilovalar bilan bog'lanishga tayyor.
 
-## Harakatlarni (Actions) qanday yaratish
+## Harakatlarni (Actions) qanday yaratish {#how-to-create-actions}
 
 Harakatlar boshqa triggerlardan ma'lumot olib, sizning tarmohingizda yangi kirishlar yaratish uchun ishlatiladi.
 
@@ -79,7 +79,7 @@ Keyingi bosqichda siz autentifikatsiyangizni, **Qanday boshlash** da qilganimizd
 
 ![Zapier harakati uchun autentifikatsiyani tanlash](/img/admin/webhooks-list.png)
 
-### Harakatni sozlash
+### Harakatni sozlash {#setting-up-the-action}
 
 Bu **harakatning asosiy qadam** bo'lib, bu yerda narsalar biroz boshqacha. Birinchi ma'lumot sifatida siz **Element (Item)** ni tanlaysiz. Element — sizning tarmoqning **ma'lumot modelidir**, masalan **Mijozlar (Customers), To'lovlar (Payments), Saytlar (Sites), Elektron xatlar (Emails)** va boshqalar.
 

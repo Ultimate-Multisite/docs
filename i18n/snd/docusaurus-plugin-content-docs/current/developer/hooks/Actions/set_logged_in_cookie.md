@@ -4,11 +4,11 @@ title: عمل - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# عمل: set_logged_in_cookie
+# عمل: set_logged_in_cookie {#action-setloggedincookie}
 
 لاگ اِن تصديق ڪوڪي سيٽ ٿيڻ کان بلڪل اڳ هلندو آهي.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | تصديق اسڪيم. ڊفالٽ 'logged_in'. |
 | $token | `string` | هن ڪوڪي لاءِ استعمال ڪرڻ واسطي يوزر جو سيشن ٽوڪن. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### ماخذ
+### ماخذ {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) ۾ لائين 141 تي بيان ٿيل.

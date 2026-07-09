@@ -3,15 +3,15 @@ title: Krei menuon
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Krei Menuon
+# Krei Menuon {#create-menu}
 
 La kapablo **Krei Menuon** kreas WordPress-navigadajn menuojn kun subteno por apartaj navigadaj etikedoj malsamaj de paĝaj titoloj.
 
-## Superrigardo
+## Superrigardo {#overview}
 
 Ĉi tiu kapablo etendas la norman funkciecon por krei menuojn per la eblo specifi parametron `navigation_label`. Tio ebligas al vi krei menuojn kie la etikedo montrata en navigado malsamas de la paĝa titolo, provizante pli da fleksebleco en reteja strukturo kaj uzantosperto.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Parametro | Tipo | Bezonata | Priskribo |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ La kapablo **Krei Menuon** kreas WordPress-navigadajn menuojn kun subteno por ap
 | `location` | string | Ne | Etosa loko al kiu asigni ĉi tiun menuon, ekz. `primary` |
 | `navigation_label` | string | Ne | Etikedo montrenda en navigado (malsama de paĝa titolo) |
 
-## Revena Valoro
+## Revena Valoro {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ La kapablo **Krei Menuon** kreas WordPress-navigadajn menuojn kun subteno por ap
 }
 ```
 
-## Navigada Etikedo kontraŭ Paĝa Titolo
+## Navigada Etikedo kontraŭ Paĝa Titolo {#navigation-label-vs-page-title}
 
 La parametro `navigation_label` ebligas al vi apartigi la internan menunomon de la etikedo montrata al uzantoj:
 
@@ -43,9 +43,9 @@ Tio utilas kiam:
 - Vi bezonas subteni plurajn lingvojn kun malsamaj etikedlongoj
 - Vi konstruas menuojn por specifaj regionoj aŭ uzantogrupoj
 
-## Uzaj Ekzemploj
+## Uzaj Ekzemploj {#usage-examples}
 
-### Ekzemplo 1: Simpla Menuo kun Navigada Etikedo
+### Ekzemplo 1: Simpla Menuo kun Navigada Etikedo {#example-1-simple-menu-with-navigation-label}
 
 **Invito:**
 ```
@@ -62,7 +62,7 @@ Kreu ĉefan navigadan menuon nomatan "Ĉefa Navigado" kun la navigada etikedo "M
 }
 ```
 
-### Ekzemplo 2: Menuo por Specifa Etosa Loko
+### Ekzemplo 2: Menuo por Specifa Etosa Loko {#example-2-menu-for-specific-theme-location}
 
 **Invito:**
 ```
@@ -80,7 +80,7 @@ Kreu piednotan menuon nomatan "Piednotaj Ligiloj" kun navigada etikedo "Rapidaj 
 }
 ```
 
-## Integrado kun Theme Builder
+## Integrado kun Theme Builder {#integration-with-theme-builder}
 
 Kiam oni uzas Theme Builder, la kapablo Krei Menuon:
 
@@ -89,13 +89,13 @@ Kiam oni uzas Theme Builder, la kapablo Krei Menuon:
 3. Asignas menuojn al la ĝustaj etosaj lokoj
 4. Subtenas aldonadon de menueroj post kreado
 
-## Rilataj Kapabloj
+## Rilataj Kapabloj {#related-abilities}
 
 - **`add_menu_item`** — Aldoni erojn al ekzistanta menuo
 - **`update_menu`** — Renomi menuon aŭ reasigni ĝin al etosa loko
 - **`delete_menu`** — Forigi menuon de via retejo
 
-## Plej Bonaj Praktikoj
+## Plej Bonaj Praktikoj {#best-practices}
 
 - **Uzu klarajn navigadajn etikedojn** — tenu etikedojn koncizaj kaj priskribaj por uzantoj
 - **Kongruigu etosajn lokojn** — asignu menuojn al la ĝusta etosa loko por taŭga montrado
@@ -103,14 +103,14 @@ Kiam oni uzas Theme Builder, la kapablo Krei Menuon:
 - **Testu adapteblecon** — kontrolu, ke menuoj montriĝas ĝuste sur poŝtelefonaj aparatoj
 - **Lokigu etikedojn** — uzu malsamajn navigadajn etikedojn por malsamaj lingvoversioj
 
-## Limigoj
+## Limigoj {#limitations}
 
 - Navigadaj etikedoj estas nur por montrado; la interna `name` ankoraŭ estas uzata por WordPress-identigo
 - Etosa subteno varias; ne ĉiuj etosoj subtenas ĉiujn menuolokojn
 - Menueroj devas esti aldonitaj aparte post menuokreado
 - Ŝanĝi navigadan etikedon postulas ĝisdatigi la menuon
 
-## Rilataj Kapabloj
+## Rilataj Kapabloj {#related-abilities-1}
 
 - [Generi Logo SVG](./generate-logo-svg.md) — krei emblemojn por la kaplinio de via retejo
 - [Validigi Paletran Kontraston](./validate-palette-contrast.md) — certigi alireblajn kolorskemojn

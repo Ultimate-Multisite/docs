@@ -3,18 +3,18 @@ title: Zdolności Tworzenia Motywów
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Możliwości Tworzenia Tematów: Szkieletowanie i Aktywacja Block Themes
+# Możliwości Tworzenia Tematów: Szkieletowanie i Aktywacja Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 wprowadza dwie potężne funkcje, które pozwalają generować i wdrażać niestandardowe block themes bezpośrednio z interfejsu czatu.
 
-## Przegląd
+## Przegląd {#overview}
 
 Funkcje **scaffold-block-theme** i **activate-theme** umożliwiają agentom:
 - Generowanie kompletnych, gotowych do użycia block themes na podstawie Twoich wymagań
 - Automatyczne aktywowanie tematów na Twojej stronie bez ręcznej interwencji
 - Tworzenie spójnej identyfikacji wizualnej dzięki prowadzonym decyzjom projektowym
 
-## Szkieletowanie Block Theme
+## Szkieletowanie Block Theme {#scaffold-block-theme}
 
 Funkcja **scaffold-block-theme** generuje nowy block theme WordPress z kompletną strukturą, w tym:
 
@@ -23,7 +23,7 @@ Funkcja **scaffold-block-theme** generuje nowy block theme WordPress z kompletn�
 - Niestandardowe style i warianty bloków
 - Metadane i deklaracje wsparcia dla całego motywu
 
-### Jak wywołać
+### Jak wywołać {#how-to-invoke}
 
 W czacie z Superdav AI Agent możesz poprosić o wygenerowanie motywu:
 
@@ -38,7 +38,7 @@ Agent wykona następujące kroki:
 3. Tworzy wszystkie niezbędne pliki motywu
 4. Przygotowuje motyw do aktywacji
 
-### Oczekiwany wynik
+### Oczekiwany wynik {#expected-output}
 
 Po pomyślnym wykonaniu funkcji zobaczysz:
 
@@ -56,11 +56,11 @@ Przykład wyniku:
   Status: Ready to activate
 ```
 
-## Aktywacja Motywu
+## Aktywacja Motywu {#activate-theme}
 
 Funkcja **activate-theme** przełącza Twoją stronę na nowo przeszkieletowany lub istniejący block theme.
 
-### Jak wywołać
+### Jak wywołać {#how-to-invoke-1}
 
 Po przeszkieletowaniu motywu możesz go natychmiast aktywować:
 
@@ -74,7 +74,7 @@ Lub aktywować dowolny istniejący motyw:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Oczekiwany wynik
+### Oczekiwany wynik {#expected-output-1}
 
 Po pomyślnej aktywacji:
 
@@ -92,7 +92,7 @@ Przykład wyniku:
   Note: Check your homepage to verify the layout
 ```
 
-## Przepływ pracy: Szkieletowanie i Aktywacja
+## Przepływ pracy: Szkieletowanie i Aktywacja {#workflow-scaffold-and-activate}
 
 Typowy przepływ pracy łączy obie funkcje:
 
@@ -102,7 +102,7 @@ Typowy przepływ pracy łączy obie funkcje:
 4. **Aktywacja**: "Activate the theme now"
 5. **Weryfikacja**: Odwiedź swoją stronę, aby potwierdzić, że nowy design jest aktywny
 
-## Tokeny Projektowe i Dostosowanie
+## Tokeny Projektowe i Dostosowanie {#design-tokens-and-customization}
 
 Przeszkieletowane motywy używają tokenów projektowych WordPress (poprzez `theme.json`) do:
 
@@ -114,14 +114,14 @@ Przeszkieletowane motywy używają tokenów projektowych WordPress (poprzez `the
 
 Te tokeny są scentralizowane w pliku `theme.json`, co ułatwia dostosowanie całego systemu projektowego z jednego miejsca.
 
-## Ograniczenia i Uwagi
+## Ograniczenia i Uwagi {#limitations-and-notes}
 
 - Motywy są szkieletowane w katalogu `/wp-content/themes/` i muszą przestrzegać konwencji nazewnictwa WordPress.
 - Aktywacja wymaga odpowiednich uprawnień na Twojej stronie WordPress.
 - Niestandardowy kod PHP w motywach jest minimalny; do złożonej funkcjonalności używaj pluginów.
 - Block themes najlepiej działają z WordPress 5.9 i nowszym.
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
 **Motyw nie pojawia się po szkieletowaniu**
 - Sprawdź, czy katalog motywu istnieje i czy ma odpowiednie uprawnienia.
@@ -138,7 +138,7 @@ Te tokeny są scentralizowane w pliku `theme.json`, co ułatwia dostosowanie ca�
 - Wyczyść wszelkie pamięci podręczne (caching plugins).
 - Sprawdź, czy Twoja wersja WordPress obsługuje używane tokeny.
 
-## Następne kroki
+## Następne kroki {#next-steps}
 
 Po aktywacji motywu możesz:
 - Użyć umiejętności **Design System Aesthetics** do dopracowania typografii, kolorów i odstępów

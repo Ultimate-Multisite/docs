@@ -3,25 +3,25 @@ title: Ndebiri Mgbakwunye
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Ụkpụrụ Ndebiri Mgbakwunye
+# Ụkpụrụ Ndebiri Mgbakwunye {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Ihe achọrọ
+## Ihe achọrọ {#requirements}
 
 - WordPress 5.3 ma ọ bụ nke ka elu
 - PHP 7.4 ma ọ bụ nke ka elu
 - plugin Multisite Ultimate (na-arụ ọrụ)
 
-## Nwụnye
+## Nwụnye {#installation}
 
 1. Bulite faịlụ mgbakwunye ahụ na ndekọ `/wp-content/plugins/` gị
 2. Mee ka plugin ahụ rụọ ọrụ site na menu 'Mgbakwunye' na WordPress
 3. Hazie ntọala mgbakwunye ahụ na nchịkwa netwọkụ
 
-## Mmepe
+## Mmepe {#development}
 
-### Nhazi
+### Nhazi {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Ọdịdị Projekti
+### Ọdịdị Projekti {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Iwu ime ka code bụrụ nke ọgbara ọhụrụ
 ```
 
-### Nnwale
+### Nnwale {#testing}
 
 Mgbakwunye ahụ gụnyere usoro nnwale zuru oke:
 
@@ -75,44 +75,44 @@ Mgbakwunye ahụ gụnyere usoro nnwale zuru oke:
 - **Mkpuchi Nnwale**: Ahaziri ka ọ soro mkpuchi code
 - **Nnwale Multisite**: Nnwale na-agba n'ime gburugburu multisite
 
-### Ụkpụrụ Code
+### Ụkpụrụ Code {#code-standards}
 
 - **Ụkpụrụ Ide Code WordPress**: A na-amanye ya site na PHPCS
 - **Ndakọrịta PHP 7.4+**: A na-akwado atụmatụ PHP ọgbara ọhụrụ
 - **Nyocha Static**: Njikọ PHPStan maka ịlele ụdị
 - **Ime ka Code bụrụ nke Ọgbara Ọhụrụ**: Iwu Rector maka nkwalite PHP
 
-### Usoro Iwu
+### Usoro Iwu {#build-system}
 
 - **Nhazi Akụrụngwa**: Ibelata nha faịlụ CSS/JS
 - **Nsụgharị**: Mmepụta faịlụ POT
 - **Mbukọta**: Ịmepụta archive maka nkesa
 - **Ọnọdụ Mmepe**: Akụrụngwa a na-ebelataghị maka debugging
 
-## Nhazi
+## Nhazi {#configuration}
 
 Mgbakwunye ahụ na-akwado nhọrọ nhazi dị iche iche a pụrụ ịnweta site na interface nchịkwa netwọkụ.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Omume
+### Omume {#actions}
 
 - `ultimate-multisite-addon-template_init` - A na-akpalite ya mgbe mbido mgbakwunye gasịrị
 - `ultimate-multisite-addon-template_loaded` - A na-akpalite ya mgbe ebubatara faịlụ mgbakwunye niile
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Gbanwee ntọala mgbakwunye
 - `ultimate-multisite-addon-template_enabled` - Dochie ọnọdụ ime ka mgbakwunye rụọ ọrụ/kwụsị ịrụ ọrụ
 
-## Akwụkwọ Ikikere
+## Akwụkwọ Ikikere {#license}
 
 E nyere mgbakwunye a ikikere n'okpuru GPL v3 ma ọ bụ nke mechara.
 
-## Nkwado
+## Nkwado {#support}
 
 Maka nkwado na akwụkwọ nduzi, gaa na [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ndekọ Mgbanwe
+## Ndekọ Mgbanwe {#changelog}
 
 - Ụdị 1.0.1 (2025-09-28): gbanwee aha prefix ka ọ bụrụ ultimate-multisite; melite text domain; bulie ụdị.
 

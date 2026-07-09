@@ -3,7 +3,7 @@ title: Tixraaca Awoodaha
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tixraaca Awoodaha
+# Tixraaca Awoodaha {#abilities-reference}
 
 Awooduhu waa falalka atomiga ah ee Gratis AI Agent ku fulin karo rakibiddaada WordPress. Awood kasta waa PHP class diiwaangashan oo soo bandhigta JSON schema — agent-ku wuxuu schema-kan akhriyaa waqtiga socodka si uu u fahmo parameters-ka loo baahan yahay iyo waxa awooddu soo celiso.
 
@@ -11,11 +11,11 @@ Boggan wuxuu diiwaangeliyaa dhammaan awoodaha la socda Gratis AI Agent v1.9.0.
 
 ---
 
-## Noocyada Qoraallada La Habeeyay
+## Noocyada Qoraallada La Habeeyay {#custom-post-types}
 
 Awoodahani waxay maamulaan noocyada qoraallada la habeeyay (CPTs) ee lagu diiwaangeliyay agent-ka. Diiwaangelinnada waxaa lagu kaydiyaa WordPress options table si ay u sii jiraan xitaa marka plugin-ka la damiyo oo dib loo hawlgeliyo.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Wuxuu diiwaangeliyaa nooc qoraal la habeeyay oo cusub.
 
@@ -50,7 +50,7 @@ Wuxuu diiwaangeliyaa nooc qoraal la habeeyay oo cusub.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Wuxuu soo celiyaa dhammaan noocyada qoraallada la habeeyay ee uu agent-ku diiwaangeliyay.
 
@@ -73,7 +73,7 @@ Wuxuu soo celiyaa dhammaan noocyada qoraallada la habeeyay ee uu agent-ku diiwaa
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Wuxuu ka saaraa diiwaangelinta nooc qoraal la habeeyay oo hore uu agent-ku u diiwaangeliyay. Qoraallada jira ee noocaas ah waxay ku sii jiraan database-ka balse mar dambe lagama heli karo iyada oo loo marayo nooca qoraalka.
 
@@ -87,11 +87,11 @@ Wuxuu ka saaraa diiwaangelinta nooc qoraal la habeeyay oo hore uu agent-ku u dii
 
 ---
 
-## Taxonomies La Habeeyay
+## Taxonomies La Habeeyay {#custom-taxonomies}
 
 Awoodahani waxay maamulaan taxonomies la habeeyay. Sida CPTs oo kale, diiwaangelinnada taxonomy waa la kaydiyaa.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Wuxuu diiwaangeliyaa taxonomy la habeeyay oo cusub.
 
@@ -123,7 +123,7 @@ Wuxuu diiwaangeliyaa taxonomy la habeeyay oo cusub.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Wuxuu soo celiyaa dhammaan taxonomies la habeeyay ee uu agent-ku diiwaangeliyay.
 
@@ -146,7 +146,7 @@ Wuxuu soo celiyaa dhammaan taxonomies la habeeyay ee uu agent-ku diiwaangeliyay.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Wuxuu ka saaraa diiwaangelinta taxonomy la habeeyay oo hore uu agent-ku u diiwaangeliyay.
 
@@ -160,11 +160,11 @@ Wuxuu ka saaraa diiwaangelinta taxonomy la habeeyay oo hore uu agent-ku u diiwaa
 
 ---
 
-## Nidaamka Naqshadda
+## Nidaamka Naqshadda {#design-system}
 
 Awoodaha nidaamka naqshaddu waxay beddelaan muuqaalka WordPress site-ka — laga bilaabo CSS la habeeyay ilaa block patterns iyo astaanta site-ka.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Wuxuu CSS ku daraa `<head>`-ka site-ka iyada oo loo marayo `wp_add_inline_style`. CSS waxaa lagu kaydiyaa option-ka `gratis_ai_agent_custom_css` waxaana si nadiif ah looga saaraa safka marka awoodda dib loo dejiyo.
 
@@ -190,7 +190,7 @@ Wuxuu CSS ku daraa `<head>`-ka site-ka iyada oo loo marayo `wp_add_inline_style`
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Wuxuu diiwaangeliyaa block pattern dib loo isticmaali karo gudaha WordPress pattern library.
 
@@ -209,7 +209,7 @@ Wuxuu diiwaangeliyaa block pattern dib loo isticmaali karo gudaha WordPress patt
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Wuxuu taxaa dhammaan block patterns uu agent-ku diiwaangeliyay.
 
@@ -231,7 +231,7 @@ Wuxuu taxaa dhammaan block patterns uu agent-ku diiwaangeliyay.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Waxay astaanta goobta WordPress u dejisaa attachment ID la bixiyay ama URL sawir fog. Marka URL la bixiyo, sawirka waa la soo dejinayaa waxaana lagu soo gelinayaa Media Library.
 
@@ -248,7 +248,7 @@ Mid ka mid ah `attachment_id` ama `url` waa in la bixiyaa.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Waxay preset midab/qoraal-magaceed leh ku dabaqdaa theme-ka firfircoon `theme.json` (ama `global-styles`). Presets waa xirmooyin la habeeyay oo ay dayactirto kooxda Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Waxay preset midab/qoraal-magaceed leh ku dabaqdaa theme-ka firfircoon `theme.js
 
 ---
 
-## Qaababka Guud
+## Qaababka Guud {#global-styles}
 
 Awoodaha Qaababka Guud waxay akhriyaan oo qoraan qiimayaasha theme.json iyagoo maraya WordPress Global Styles API, waxayna saameeyaan dhammaan blocks iyo templates-ka goobta oo dhan.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Waxay soo celisaa habaynta qaababka guud ee hadda jira.
 
@@ -291,7 +291,7 @@ Waxay soo celisaa habaynta qaababka guud ee hadda jira.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Waxay cusboonaysiisaa hal ama in ka badan oo qiimayaal ah oo ku jira habaynta qaababka guud.
 
@@ -318,7 +318,7 @@ Waxay cusboonaysiisaa hal ama in ka badan oo qiimayaal ah oo ku jira habaynta qa
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Waxay dib u dejisaa dhammaan isbeddellada qaababka guud ee agent-ku dabaqay, iyadoo soo celinaysa defaults-ka theme-ka.
 
@@ -328,11 +328,11 @@ Waxay dib u dejisaa dhammaan isbeddellada qaababka guud ee agent-ku dabaqay, iya
 
 ---
 
-## Menus-ka Hagidda
+## Menus-ka Hagidda {#navigation-menus}
 
 Awoodaha Navigation Menu waxay abuuraan oo maareeyaan WordPress nav menus iyo items-kooda.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Waxay abuurtaa menu cusub oo hagid WordPress ah.
 
@@ -347,7 +347,7 @@ Waxay abuurtaa menu cusub oo hagid WordPress ah.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Waxay dib u magacawdaa menu ama waxay dib ugu qoondeysaa goob theme ah.
 
@@ -363,7 +363,7 @@ Waxay dib u magacawdaa menu ama waxay dib ugu qoondeysaa goob theme ah.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Waxay item ku dartaa menu hagid oo jira.
 
@@ -383,7 +383,7 @@ Waxay item ku dartaa menu hagid oo jira.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Waxay item ka saartaa menu hagid.
 
@@ -397,7 +397,7 @@ Waxay item ka saartaa menu hagid.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Waxay taxdaa dhammaan WordPress navigation menus, oo ay ku jiraan goobaha theme-ka ee loo qoondeeyay.
 
@@ -420,11 +420,11 @@ Waxay taxdaa dhammaan WordPress navigation menus, oo ay ku jiraan goobaha theme-
 
 ---
 
-## Maareynta Options
+## Maareynta Options {#options-management}
 
 Awoodaha Options waxay akhriyaan oo qoraan options-ka WordPress iyagoo adeegsanaya `get_option` / `update_option`. Blocklist badbaado oo ku dhex dhisan ayaa ka hortaga wax ka beddel shil ah oo lagu sameeyo settings muhiim ah.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Waxay akhridaa option WordPress ah.
 
@@ -440,7 +440,7 @@ Waxay soo celisaa qalad haddii `option_name` uu ku jiro blocklist-ka badbaadada.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Waxay qortaa option WordPress ah.
 
@@ -458,7 +458,7 @@ Waxay soo celisaa khalad haddii `option_name` uu ku jiro safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Waxay tirtirtaa ikhtiyaar WordPress ah.
 
@@ -474,7 +474,7 @@ Waxay soo celisaa khalad haddii `option_name` uu ku jiro safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Waxay taxdaa ikhtiyaarrada WordPress ee u dhigma qaab.
 
@@ -498,11 +498,11 @@ Waxay taxdaa ikhtiyaarrada WordPress ee u dhigma qaab.
 
 ---
 
-## Maareynta Mawduuca
+## Maareynta Mawduuca {#content-management}
 
 Awoodaha Maareynta Mawduucu waxay abuuraan oo wax ka beddelaan qoraallada iyo bogagga WordPress. Aqoonsiyada qoraallada ayaa la soo celiyaa si tallaabooyinka xiga ee qorshayaasha awoodaha badan ay u tixraaci karaan mawduuca la abuuray.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Waxay abuurtaa qoraal cusub oo WordPress ah, bog, ama gelin nooc qoraal gaar ah.
 
@@ -537,7 +537,7 @@ Waxay abuurtaa qoraal cusub oo WordPress ah, bog, ama gelin nooc qoraal gaar ah.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Waxay cusboonaysiisaa qoraal ama bog WordPress oo jira.
 
@@ -567,7 +567,7 @@ Waxay cusboonaysiisaa qoraal ama bog WordPress oo jira.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Waxay abuurtaa qoraallo badan hal wicitaan awood ah, iyadoo yareynaysa wareegyada safarka inta lagu jiro dhisidda site-ka ama soo dejinta mawduuc badan. Qoraallada waxaa loo abuuraa si isku xigta; haddii mid fashilmo kuwa kale way sii socdaan, fashilkana waxaa lagu soo sheegaa array-ga natiijooyinka.
 
@@ -619,7 +619,7 @@ Waxay abuurtaa qoraallo badan hal wicitaan awood ah, iyadoo yareynaysa wareegyad
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Waxay u qoondeysaa sawir muuqda (thumbnail-ka qoraalka) qoraal ama bog jira. Waxay aqbashaa aqoonsiga lifaaq Media Library oo jira ama URL sawir fog; marka URL la bixiyo, sawirka si otomaatig ah ayaa loo soo dejiyaa loona soo geliyaa.
 
@@ -638,7 +638,7 @@ Mid ka mid ah `attachment_id` ama `url` waa in la bixiyaa.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Waxay abuurtaa foom xiriir iyadoo la adeegsanayo plugin-ka foomka ee firfircoon (Contact Form 7, WPForms, Fluent Forms, ama Gravity Forms, iyadoo ku xiran midka la rakibay). Waxay soo celisaa shortcode lagu dhex dari karo qoraal ama bog kasta.
 
@@ -691,11 +691,11 @@ Waxay abuurtaa foom xiriir iyadoo la adeegsanayo plugin-ka foomka ee firfircoon 
 
 ---
 
-## Dib-u-eegis Muuqaal
+## Dib-u-eegis Muuqaal {#visual-review}
 
 Awoodaha Dib-u-eegista Muuqaalku waxay agent-ka u oggolaadaan inuu qaado screenshots bogag nool oo uu falanqeeyo, taas oo suurto gelinaysa dib-u-eegis naqshadeed oo iskeed ah, isbarbardhigyo ka hor/ka dib, iyo hubinno regression muuqaal ah iyada oo aan loo baahnayn browser extension.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Waxay qaaddaa screenshot bog WordPress ah oo ku yaal URL la siiyay iyadoo adeegsanaysa browser headless ah oo server-side ah. Sawirka waxaa lagu kaydiyaa Media Library waxaana la soo celiyaa URL CDN ah.
 
@@ -724,7 +724,7 @@ Waxay qaaddaa screenshot bog WordPress ah oo ku yaal URL la siiyay iyadoo adeegs
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Waxay qaadataa laba screenshots waxayna soo celisaa dhibic diff muuqaal ah iyo sawir diff ah oo muujinaya gobollada isbeddelay. Waxay faa'iido u leedahay xaqiijinta in isbeddel naqshadeed uu keenay natiijadii la filayay ama ogaanshaha regressions aan loogu talagelin.
 
@@ -754,7 +754,7 @@ Waxay qaadataa laba screenshots waxayna soo celisaa dhibic diff muuqaal ah iyo s
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Waxay qaaddaa screenshot bog ah waxayna u dirtaa moodalka luqadda si loo sameeyo falanqayn muuqaal ah. Waxay soo celisaa qiimeyn qaabaysan oo daboolaysa habaynta, typography, isticmaalka midabka, iyo walaacyada helitaanka.
 
@@ -785,11 +785,11 @@ Waxay qaaddaa screenshot bog ah waxayna u dirtaa moodalka luqadda si loo sameeyo
 
 ---
 
-## Awoodaha La Rakibi Karo
+## Awoodaha La Rakibi Karo {#installable-abilities}
 
 Installable Abilities Registry wuxuu kuu oggolaanayaa inaad agent-ka ku ballaariso xirmooyin awood oo dheeraad ah oo loo qaybiyo sidii plugins WordPress ah. Xirmo kasta waxay diiwaangelisaa hal ama in ka badan oo awoodood iyadoo adeegsanaysa ability API-ga caadiga ah.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Waxay soo celisaa catalogue-ka xirmooyinka awoodaha ee laga heli karo rakibidda registry-ga.
 
@@ -818,7 +818,7 @@ Waxay soo celisaa catalogue-ka xirmooyinka awoodaha ee laga heli karo rakibidda 
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Soo dejiya oo hawlgeliya xirmo awood oo ka timaadda diiwaanka.
 
@@ -832,7 +832,7 @@ Soo dejiya oo hawlgeliya xirmo awood oo ka timaadda diiwaanka.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Wuxuu weydiiyaa diiwaanka awoodaha si uu u helo kordhiyaha ugu fiican ee ku habboon xaalad adeegsi oo la sharraxay, haddii la rabo-na wuu rakibaa.
 

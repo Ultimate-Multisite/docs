@@ -3,17 +3,17 @@ title: Thumela ngaphandle & Ngenisa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Thekelisa & Ngenisa
+# Thekelisa & Ngenisa {#export--import}
 
 Ultimate Multisite 2.9.0 yengeza ithuluzi le-**Thekelisa & Ngenisa** lesayithi elilodwa ngaphansi kokuthi **Amathuluzi > Thekelisa & Ngenisa**. Lisebenzise lapho kudingeka ukupakisha isayithi elilodwa le-WordPress njengefayela le-ZIP, ukubuyisela leyo ZIP, noma ukuhambisa isayithi phakathi kokufakwa okuhambisanayo kwe-Ultimate Multisite nokwe-WordPress yesayithi elilodwa.
 
-## Izimvume ezidingekayo
+## Izimvume ezidingekayo {#required-permissions}
 
 Kufanele ungene ngemvume njengomlawuli okwazi ukufinyelela imenyu ethi **Amathuluzi** ye-WordPress kusayithi elithekeliswayo noma elingeniswayo. Kunethiwekhi yamasayithi amaningi, sebenzisa i-akhawunti yomlawuli wenethiwekhi lapho uthekelisa noma ungenisa amasayithi angaphansi kusukela kumathuluzi e-Ultimate Multisite asezingeni lenethiwekhi.
 
 Ukulandwa kwe-ZIP okuthekelisiwe kunikezwa nge-endpoint yokulanda egunyaziwe, ngakho gcina iseshini yomlawuli isebenza kuze kuphele ukulanda futhi ungabelani ngama-URL okulanda akhiqiziwe esidlangalaleni.
 
-## Ukuthekelisa isayithi libe yi-ZIP
+## Ukuthekelisa isayithi libe yi-ZIP {#exporting-a-site-to-a-zip}
 
 1. Ku-admin ye-WordPress yesayithi ofuna ukulikopisha, iya kokuthi **Amathuluzi > Thekelisa & Ngenisa**.
 2. Vula indawo yokuthekelisa bese ukhetha isayithi ofuna ukulipakisha.
@@ -23,7 +23,7 @@ Ukulandwa kwe-ZIP okuthekelisiwe kunikezwa nge-endpoint yokulanda egunyaziwe, ng
 
 Gcina i-ZIP endaweni evikelekile. Ingaba nokuqukethwe kwesayithi, izilungiselelo, amafayela emidiya, nezimpahla zekhodi ezikhethiwe.
 
-## Okuqukethwe ukuthekelisa
+## Okuqukethwe ukuthekelisa {#what-the-export-includes}
 
 I-ZIP yokuthekelisa ingafaka:
 
@@ -34,7 +34,7 @@ I-ZIP yokuthekelisa ingafaka:
 
 Usayizi oqondile we-ZIP uncike enanini lemidiya, izandiso namatimu akhethiwe, kanye nosayizi wamathebula edathabheyisi yesayithi.
 
-## Ukungenisa isayithi kusuka ku-ZIP
+## Ukungenisa isayithi kusuka ku-ZIP {#importing-a-site-from-a-zip}
 
 1. Iya kokuthi **Amathuluzi > Thekelisa & Ngenisa** kusayithi le-WordPress eliya khona.
 2. Vula indawo yokungenisa bese ulayisha i-ZIP eyakhiwe ithuluzi le-Thekelisa & Ngenisa.
@@ -46,7 +46,7 @@ Usayizi oqondile we-ZIP uncike enanini lemidiya, izandiso namatimu akhethiwe, ka
 
 Ekufakweni kwe-WordPress yesayithi elilodwa, ukungenisa i-ZIP kushintsha isayithi lamanje ngesayithi elingenisiwe. Dala isipele esigcwele sesayithi eliqondiwe ngaphambi kokuthi uqale, futhi gwema ukuqala ukungenisa okuningi kwesayithi elifanayo ngesikhathi esifanayo.
 
-## Imikhawulo namanothi okuhambisana
+## Imikhawulo namanothi okuhambisana {#limitations-and-compatibility-notes}
 
 - Izinkomba zokulayisha noma imitapo yemidiya emikhulu kakhulu zingakhiqiza amafayela e-ZIP amakhulu. Qinisekisa imikhawulo yokulayisha ye-PHP, imikhawulo yokusebenza, isikhala sediski, inkumbulo, nezilungiselelo zokuphelelwa isikhathi kweseva ngaphambi kokuthekelisa noma ukungenisa amasayithi amakhulu.
 - Imitapo yemidiya emikhulu kakhulu ingadinga ukuhanjiswa ngesikhathi sewindi lokulungisa elinethrafikhi ephansi.

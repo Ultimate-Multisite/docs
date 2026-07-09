@@ -3,17 +3,17 @@ title: Kuidas seadistada domeenide kaardistamist
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kuidas seadistada domeeni kaardistamist (v2)
+# Kuidas seadistada domeeni kaardistamist (v2) {#how-to-configure-domain-mapping-v2}
 
 _**OLULINE MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
 
 Üks premium-võrgustiku võimsamaid funktsioone on võimalus pakkuda meie klientidele võimalust siduda oma saitidega tippdomeen. Lõppude lõpuks, kumb näeb professionaalsem välja: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) või [_**joesbikeshop.com**_](http://joesbikeshop.com)? Seetõttu pakub Ultimate Multisite seda funktsiooni sisseehitatuna, ilma vajaduseta kasutada kolmanda osapoole pluginaid.
 
-## Mis on domeeni kaardistamine?
+## Mis on domeeni kaardistamine? {#whats-domain-mapping}
 
 Nagu nimi viitab, on domeeni kaardistamine Ultimate Multisite pakutav võimalus võtta vastu kohandatud domeeni päring ja kaardistada see päring võrgustikus vastavale saidile, millele see konkreetne domeen on seotud.
 
-### Kuidas seadistada domeeni kaardistamist oma Ultimate Multisite võrgustikus
+### Kuidas seadistada domeeni kaardistamist oma Ultimate Multisite võrgustikus {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domeeni kaardistamine nõuab toimimiseks mõningast seadistamist teie poolt. Õnneks automatiseerib Ultimate Multisite raske töö teie eest, et saaksite nõuded hõlpsasti täita.
 
@@ -45,7 +45,7 @@ Kuid enne kui hakkate kohandatud domeeni mõnele oma võrgustiku alamsaidile kaa
 
 ###
 
-### Veendumine, et domeeni DNS-i seaded on õigesti seadistatud
+### Veendumine, et domeeni DNS-i seaded on õigesti seadistatud {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Kaardistamise toimimiseks peate veenduma, et domeen, mida plaanite kaardistada, osutab teie võrgustiku IP-aadressile. Pange tähele, et vajate võrgustiku IP-aadressi – selle domeeni IP-aadressi, kuhu Ultimate Multisite on paigaldatud – mitte selle kohandatud domeeni IP-aadressi, mida soovite kaardistada. Konkreetse domeeni IP-aadressi otsimiseks soovitame minna näiteks lehele [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Kui teil tekib selle tööle saamisega probleeme, **võtke ühendust oma domeeni
 
 Kui plaanite lubada oma klientidel oma domeene ise kaardistada, peavad nad selle osa töö ise ära tegema. Suunake nad oma registripidaja tugisüsteemi poole, kui nad ei suuda A-kirjet luua.
 
-### Kohandatud domeeninime kaardistamine Super Adminina
+### Kohandatud domeeninime kaardistamine Super Adminina {#mapping-custom-domain-name-as-super-admin}
 
 Kui olete oma võrgustikus super adminina sisse logitud, saate kohandatud domeeninimesid hõlpsasti lisada ja hallata, minnes jaotisse **Ultimate Multisite > Domeenid**.
 
@@ -93,7 +93,7 @@ Kui klõpsate domeeninimel, näete selle sees mõningaid valikuid. Vaatame neid 
 
 **Kas turvaline?:** Kuigi Ultimate Multisite kontrollib enne domeeni lubamist, kas domeenil on SSL-sertifikaat või mitte, saate käsitsi valida, kas laadida domeen SSL-sertifikaadiga või ilma. Pange tähele, et kui veebisaidil ei ole SSL-sertifikaati ja proovite seda SSL-iga sundlaadida, võib see põhjustada vigu.
 
-### Kohandatud domeeninime kaardistamine alam-saidi kasutajana
+### Kohandatud domeeninime kaardistamine alam-saidi kasutajana {#mapping-custom-domain-name-as-subsite-user}
 
 Alam-saidi administraatorid saavad kohandatud domeeninimesid kaardistada ka oma alam-saidi admin Dashboardilt.
 
@@ -121,7 +121,7 @@ Seejärel saab kasutaja klõpsata **Järgmine samm** ja jätkata kohandatud dome
 
 Klõps **Lisa domeen** käivitab kohandatud domeeni DNS-teabe kontrollimise ja hankimise protsessi.
 
-### Domeeni sünkroonimise kohta
+### Domeeni sünkroonimise kohta {#about-domain-syncing}
 
 Domeeni sünkroonimine on protsess, mille käigus Ultimate Multisite lisab kohandatud domeeninime teie hostingukontole lisadomeenina **selleks, et domeeni kaardistamine toimiks**.
 

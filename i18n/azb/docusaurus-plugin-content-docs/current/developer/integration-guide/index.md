@@ -3,13 +3,13 @@ title: بیرلشدیرمه قولاووزو
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# بیرلشدیرمه قولاوزو
+# بیرلشدیرمه قولاوزو {#integration-guide}
 
 بو قولاوز Ultimate Multisite ایله یایغین بیرلشدیرمه الگو‌لاری‌نی اؤرتور؛ ائشیق سرویس‌لره باغلانماق، اؤزل اؤدنیش gateway-لری قورماق، و webhook-لاری ایداره ائتمک ده داخیل‌دیر.
 
 آیری tenant آلت‌یاپیسی اوچون، sovereign tenant bootstrap، migration verification، SSO و teardown قولاوزلوغو اوچون [Multi-Tenancy Integration](./multi-tenancy) بؤلومونه باخین.
 
-## CRM بیرلشدیرمه‌سی
+## CRM بیرلشدیرمه‌سی {#crm-integration}
 
 یئنی موشتریلر قئیددن کئچنده، موشتری بیلگی‌لرینی CRM-ینیزه sync ائدین:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics بیرلشدیرمه‌سی
+## Analytics بیرلشدیرمه‌سی {#analytics-integration}
 
 موشتری lifecycle بویونجا اساس بیزنس اولایلاری‌نی ایزله‌یین:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## سونراکی آددیملار
+## سونراکی آددیملار {#next-steps}
 
 - [اؤزل Gateway گلیشدیرمه‌سی](./custom-gateway) — اؤز اؤدنیش gateway-ینیزی قورون
 - [Webhook ایداره‌سی](./webhooks) — اؤزل webhook endpoint-لری یارادین

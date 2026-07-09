@@ -3,11 +3,11 @@ title: Referansa Hookan
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referansa Hookan
+# Referansa Hookan {#hooks-reference}
 
 Belgekirina xweber ji bo hemû **59 çalakiyan** û **118 fîlteran** di Ultimate Multisite de.
 
-## Çalakî
+## Çalakî {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Berî beralîkirina piştrastkirinê dixebite.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Rast berî ku cookie ya piştrastkirinê were danîn dixebite.
@@ -70,7 +70,7 @@ Belgekirina xweber ji bo hemû **59 çalakiyan** û **118 fîlteran** di Ultimat
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Piştî ku tiştek di databaseê de tê tomarkirin tê xebitandin.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Destûrê dide pêşdebirên plugin ku çalakiyan li pêvajoya vekirinê zêde bikin.
 
-## Parzûnlar
+## Parzûnlar {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Dirêjahiya dema qedandina cookie ya piştrastkirinê filter dike.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Şemaya redirect a piştrastkirinê filter dike.

@@ -3,7 +3,7 @@ title: PRO Tema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Administrazioa irudiari PRO Theme-ekin
+# Administrazioa irudiari PRO Theme-ekin {#customizing-your-admin-panel-with-pro-theme}
 
 Klient ziurtak egiten duenean, WordPress-en administrazio panelan (dashboard) oso espezialbidearen eragin bat emateko beharrak jartzen dugu. Hau lehen aurrera, Ultimate Multisite-ren premium plugin-ekaren parte bat da PRO Theme.
 

@@ -3,7 +3,7 @@ title: Ingxelo yotshintsho yoMkhethi woLwimi
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Ingxelo yotshintsho ye-Language Selector
+# Ingxelo yotshintsho ye-Language Selector {#language-selector-changelog}
 
 Inguqulelo: 1.1.3 - Ikhutshwe ngo-2026-05-05
 * Ulungiso: Iivariables zongeniso ngoku ziyacocwa kwaye amagama ee-hook zesiko afakwa isimaphambili ukuthintela ukungqubana nee-plugin zomntu wesithathu

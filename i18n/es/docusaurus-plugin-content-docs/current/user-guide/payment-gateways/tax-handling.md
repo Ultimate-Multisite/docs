@@ -3,7 +3,7 @@ title: Gestión de impuestos
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestión de impuestos
+# Gestión de impuestos {#tax-handling}
 
 Ultimate Multisite tiene un módulo de recaudación de impuestos integrado en nuestro plugin principal, así que si necesitas recaudar impuestos sobre ventas en tus planes, paquetes y servicios, puedes hacerlo fácilmente sin recurrir a instalar ningún complemento.
 
@@ -11,7 +11,7 @@ Para empresas ubicadas en Europa, ofrecemos un **complemento** que añade herram
 
 Ultimate Multisite no presenta ni remite impuestos en tu nombre al gobierno; simplemente te ayudamos a recaudar los impuestos correspondientes en el momento de la transacción. **Aun así, tendrás que remitir los impuestos por tu cuenta.**
 
-## Habilitar la recaudación de impuestos
+## Habilitar la recaudación de impuestos {#enabling-tax-collection}
 
 La recaudación de impuestos no está habilitada de forma predeterminada. Para habilitarla, debes ir a **Ultimate Multisite > Settings > Taxes** y activar el ajuste Enable Taxes.
 
@@ -25,7 +25,7 @@ También puedes ver los ajustes de impuestos para productos individuales:
 
 ![Ajustes de impuestos para productos](/img/config/settings-taxes.png)
 
-### Impuestos excluidos vs. impuestos incluidos
+### Impuestos excluidos vs. impuestos incluidos {#tax-excluded-vs-tax-included}
 
 De forma predeterminada, todos los precios de tus productos excluyen impuestos, lo que significa que los impuestos **no están incluidos** en el precio del producto. Si determinamos que un cliente debe pagar impuestos en una compra determinada, añadiremos los impuestos **encima** del subtotal.
 
@@ -37,7 +37,7 @@ No olvides **guardar** los cambios que has realizado.
 
 ###
 
-## Crear tasas impositivas
+## Crear tasas impositivas {#creating-tax-rates}
 
 Después de habilitar la recaudación de impuestos, tendrás que crear tasas impositivas para ubicaciones específicas usando nuestro editor de tasas impositivas.
 
@@ -51,7 +51,7 @@ En la página del editor de tasas impositivas, puedes añadir nuevas tasas impos
 
 Tendrás que dar a cada tasa impositiva un **título** (usado en las facturas). Luego puedes elegir el **país** (obligatorio), el **estado,** y la **ciudad** (ambos opcionales) donde se cobrará este impuesto. Por último, añade la **tasa impositiva en porcentajes**.
 
-### Categorías de impuestos
+### Categorías de impuestos {#tax-categories}
 
 También puedes crear varias categorías de impuestos, para añadir diferentes tasas impositivas para distintos tipos de productos.
 
@@ -73,7 +73,7 @@ Puedes establecer la categoría de impuestos para un producto concreto yendo a l
 
 En esa misma pantalla, puedes desactivar el alternador **Is Taxable?** para indicar a Ultimate Multisite que no debe recaudar impuestos en ese producto determinado.
 
-## Soporte para VAT europeo
+## Soporte para VAT europeo {#european-vat-support}
 
 Como se mencionó antes, tenemos un complemento disponible para clientes en la UE que tienen requisitos adicionales debido a las normativas europeas de VAT.
 
@@ -101,7 +101,7 @@ Si vuelves a la **pestaña Tax Settings** , verás nuevas opciones disponibles. 
 
 <!-- Captura de pantalla no disponible: alternador Enable VAT Support en los ajustes de impuestos después de la activación del complemento -->
 
-### Importar tasas impositivas de VAT
+### Importar tasas impositivas de VAT {#pulling-on-vat-tax-rates}
 
 Una de las herramientas que añade nuestra integración es la capacidad de cargar las tasas impositivas de los estados miembros de la UE. Esto se puede hacer visitando la página del editor de tasas impositivas después de habilitar el soporte para VAT de la UE.
 
@@ -111,7 +111,7 @@ En la parte inferior de la página, verás las opciones de importación de VAT. 
 
 También puedes editar los valores después de importarlos. Para hacerlo, simplemente edita la línea de la tabla que necesites y haz clic para guardar los nuevos valores.
 
-### Validación de VAT
+### Validación de VAT {#vat-validation}
 
 Cuando el soporte para VAT está habilitado, Ultimate Multisite añadirá un campo adicional al formulario de pago, debajo del campo de dirección de facturación. El campo solo aparecerá para clientes ubicados en la UE.
 

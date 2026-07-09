@@ -4,11 +4,11 @@ title: Action - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Utløses når et forsøk på domenergistrering mislykkes.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Utløses når et forsøk på domenergistrering mislykkes.
 | $registration_data | `array<string,mixed>` | Registreringsmetadata som inkluderer status=failed og error_message. |
 | $error_message | `string` | En lettlest feilmelding fra registeret. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.0
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) på linje 1250

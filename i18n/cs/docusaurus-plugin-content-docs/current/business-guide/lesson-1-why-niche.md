@@ -3,11 +3,11 @@ title: 'Lekce 1: Proč vítězí niša'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lekce 1: Proč vítězí Niche
+# Lekce 1: Proč vítězí Niche {#lesson-1-why-niche-wins}
 
 Než se dotkneme jakéhokoli softwaru, musíte pochopit, proč je budování pro specifickou cílovou skupinu nejdůležitější rozhodnutí, které kdy učiníte.
 
-## Problém prodeje obecných webových stránek
+## Problém prodeje obecných webových stránek {#the-problem-with-selling-generic-websites}
 
 Pokud nabízíte „webové stránky pro všechny“, konkurujete s:
 
@@ -17,11 +17,11 @@ Pokud nabízíte „webové stránky pro všechny“, konkurujete s:
 
 Nemůžete vyhrát na ceně. Nemůžete vyhrát na funkcích. Trh s obecními webovými stránkami je soutěž na nejnižší cenu.
 
-## Co se změní, když si vyberete Niche
+## Co se změní, když si vyberete Niche {#what-changes-when-you-pick-a-niche}
 
 Když platformu budujete specificky pro fitness studia (nebo jakýkoli jiný niche), vše se ve vašich výhodách změní:
 
-### Řešíte skutečné problémy
+### Řešíte skutečné problémy {#you-solve-real-problems}
 
 Vlastník fitness studia nechce „webové stránky“. Chce:
 
@@ -33,45 +33,45 @@ Vlastník fitness studia nechce „webové stránky“. Chce:
 
 Když vaše platforma tyto specifické problémy řeší „out of the box“, už neprodáváte web. Prodáváte řešení.
 
-### Můžete účtovat více
+### Můžete účtovat více {#you-can-charge-more}
 
 Obecní WordPress stránka se může prodat za 500–2 000 $ jako jednorázový projekt. Niche platforma, která řeší problémy specifické pro daný průmysl, může účtovat 49–199 $/měsíc jako opakující se předplatné, protože hodnota je trvalá a specifická.
 
-### Stáváte se expertem
+### Stáváte se expertem {#you-become-the-expert}
 
 Když se zaměříte na jeden průmysl, naučíte se jeho jazyk, jeho bolíčky a jeho nákupní vzorce. Vlastníci fitness studií si mezi sebou mluví. Když někdo najde platformu, která funguje, říká o ní ostatním. Zdánlivá slova v niche jsou silná, protože komunita je těsná.
 
-### Marketing se stává jednodušším
+### Marketing se stává jednodušším {#your-marketing-gets-easier}
 
 Místo „budujeme webové stránky pro podniky“ řeknete „budujeme webové stránky pro fitness studia“. Vaše cílová stránka mluví přímo k majitelům jídelní. Vaše šablony vypadají jako fitness stránky. Vaše reference pocházejí od trenérů a majitelů studií. Každý marketingový materiál zasáhne silněji, protože je specifický.
 
-## Příležitost FitSite
+## Příležitost FitSite {#the-fitsite-opportunity}
 
 Podívejme se na fitness průmysl z tohoto pohledu:
 
-### Velikost trhu
+### Velikost trhu {#market-size}
 
 - Jen v USA je více než 100 000 fitness zařízení
 - Většina z nich jsou nezávisle vlastněné malé podniky
 - Většina nemá ani web, nebo má hrozný web, nebo příliš drahý web, který sami nemohou aktualizovat
 
-### Stávající řešení
+### Stávající řešení {#current-solutions}
 
 - **Obecní konstruktory** (Wix, Squarespace): Žádné funkce specifické pro fitness, majitelé studií se potýkají s vytvořením toho, co potřebují
 - **Custom vývoj**: Drahé, jednorázové, obtížné udržovat
 - **Platformy specifické pro průmysl**: Existuje málo, a většina je svázána s booking systémy, namísto nabídky kompletní webové přítomnosti
 
-### Mezeru
+### Mezeru {#the-gap}
 
 Mezi „obecným webovým konstruktorem“ a „drahým custom vývojem“ pro fitness podniky existuje jasná mezera. Platforma, která majitelům studií poskytne profesionální, fitness specifický web s potřebnými funkcemi – za cenu, která má smysl pro malý podnik – tuto mezeru vyplňuje.
 
 Tato příležitost je to, na kterou FitSite směřuje.
 
-## Klíčový závěr
+## Klíčový závěr {#key-takeaway}
 
 Vybrat si niche není o omezování. Je o zaměření vašich úsilí tam, kde má největší dopad. Niche platforma, která obsluhuje 500 zákazníků za 99 $/měsíc, je podnikáním ve výši 600 000 $ ročně. Nemusíte potřebovat miliony zákazníků. Potřebujete ty správné.
 
-## Co jsme v této lekci vytvořili
+## Co jsme v této lekci vytvořili {#what-we-built-this-lesson}
 
 Ještě žádná technická práce – ale nyní máte strategický základ:
 

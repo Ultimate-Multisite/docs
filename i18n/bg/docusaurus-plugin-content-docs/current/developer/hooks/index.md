@@ -3,11 +3,11 @@ title: Справка за Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Справочник за hooks
+# Справочник за hooks {#hooks-reference}
 
 Автоматично генерирана документация за всички **59 действия** и **118 филтъра** в Ultimate Multisite.
 
-## Действия
+## Действия {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Задейства се преди пренасочването за удостоверяване.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Задейства се непосредствено преди задаването на бисквитката за удостоверяване.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Изпълнява се след съхраняване на обект в базата данни.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Позволява на разработчиците на plugin-и да добавят действия към процеса на отключване.
 
-## Филтри
+## Филтри {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Филтрира продължителността на периода на изтичане на authentication cookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Филтрира схемата за authentication redirect.

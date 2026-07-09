@@ -4,22 +4,22 @@ title: Фильтр - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Фильтр: wu_is_mcp_enabled
+# Фильтр: wu_is_mcp_enabled {#filter-wuismcpenabled}
 
 Плагин эшләүчеләргә MCP адаптеры өчен билгеле бер халәтне мәҗбүри билгеләргә рөхсәт итә.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
 | $enabled | `bool` | MCP адаптеры кабызылганмы-юкмы. |
 
-### Кайчаннан бирле
+### Кайчаннан бирле {#since}
 
 - 2.5.0
-### Чыганак
+### Чыганак {#source}
 
 [`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L250) эчендә 250 нче юлда билгеләнгән
 
 
-## Кайтара
+## Кайтара {#returns}

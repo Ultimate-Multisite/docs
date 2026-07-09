@@ -3,11 +3,11 @@ title: Conto Kode Canggih
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Conto Kode Canggih
+# Conto Kode Canggih {#advanced-code-examples}
 
 Conto ieu nunjukkeun pola integrasi canggih jeung Ultimate Multisite.
 
-## Mesin Harga Dinamis
+## Mesin Harga Dinamis {#dynamic-pricing-engine}
 
 Mesin harga dumasar aturan anu nerapkeun diskon volume, kasatiaan, jeung musiman:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Penyediaan Situs Canggih
+## Penyediaan Situs Canggih {#advanced-site-provisioning}
 
 Konpigurasikeun situs anyar sacara otomatis ku éksténsi, SSL, CDN, cadangan, jeung pangawasan dumasar kana fitur rencana:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistem Watesan Kustom
+## Sistem Watesan Kustom {#custom-limitations-system}
 
 Lacak jeung terapkeun wates sumber daya kalayan peringatan pamakéan:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter jeung `increment_item()`
+## BerlinDB Atomic Counter jeung `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 nambihan metode `increment_item()` kana kelas BerlinDB `Query`. Paké ieu pikeun ngalakukeun panambahan anu aman jeung atomik dina kolom numerik tanpa balapan read-modify-write — gunana pikeun counter, kuota pamakéan, jeung pamariksaan rate-limiting anu dijalankeun dina pamundut anu babarengan.
 
-### Tandatangan metode
+### Tandatangan metode {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 nambihan metode `increment_item()` kana kelas BerlinDB
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Pamakéan dasar
+### Pamakéan dasar {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Nyukcruk pamakéan API per membership
+### Nyukcruk pamakéan API per membership {#tracking-api-usage-per-membership}
 
 Pola praktis pikeun nerapkeun wates laju API per membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Naha `increment_item()` tibatan `update_item()`
+### Naha `increment_item()` tibatan `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Pendekatan read-modify-write anu polos teu aman dina pamundut anu babarengan:
 

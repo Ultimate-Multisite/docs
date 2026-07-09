@@ -4,13 +4,13 @@ title: Bộ lọc - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filter: get_blogs_of_user
+# Filter: get_blogs_of_user {#filter-getblogsofuser}
 
 Tái tạo lại bộ lọc WP gốc tại đây để đảm bảo tính nhất quán.
 
 Lọc danh sách các trang web (sites) mà một người dùng thuộc về.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Lọc danh sách các trang web (sites) mà một người dùng thuộc về.
 | $user_id | `int` | ID người dùng. |
 | $all | `bool` | Xác định xem mảng các trang web trả về có nên chứa tất cả các trang, bao gồm cả những trang được đánh dấu là 'deleted', 'archived', hoặc 'spam' hay không. Mặc định là `false`. |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 Được định nghĩa trong [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851) tại dòng 851

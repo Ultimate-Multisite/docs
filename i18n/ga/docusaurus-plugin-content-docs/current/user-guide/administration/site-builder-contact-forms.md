@@ -3,11 +3,11 @@ title: Formais contact na Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Fóramháil Formanna Contact (Contact Forms)
+# Fóramháil Formanna Contact (Contact Forms) {#site-builder-contact-forms}
 
 Is é Superdav AI Agent v1.10.0 le cur áimeacht a chur i bhfeicim a dhéanamh ar fómarmanna contact go díreach ó chaint a bheith ag úsáid an Site Builder agent. Is féidir leis seo a chur i bhfeicim fómarmanna contact go léir le chéile ar aon lúsach without imnídhe ó chaint.
 
-## Oibríochta (Overview)
+## Oibríochta (Overview) {#overview}
 
 Tá cur áimeacht formanna contact na Site Builder (`create_contact_form`) ag dacadh go léir an plugin fómarmanna atá agat agus ag teacht ar fómarmán contact a chur i bhfeicim ag úsáid cur áimeacht sin. Tá plugin fómarmanna a chothromú leat:
 
@@ -18,7 +18,7 @@ Tá cur áimeacht formanna contact na Site Builder (`create_contact_form`) ag da
 
 Bíonn an cur áimeacht ag iarraidh an plugin fómarmanna is fearr atá ar do site chun fómarmán contact a chur i bhfeicim a shonraithe ar sin.
 
-## Creacht Fómarmán Contact (Creating a Contact Form)
+## Creacht Fómarmán Contact (Creating a Contact Form) {#creating-a-contact-form}
 
 Leat a creacht fómarmán contact ag úsáid an Site Builder:
 
@@ -34,7 +34,7 @@ Leat a creacht fómarmán contact ag úsáid an Site Builder:
 
 4. Beidh an Site Builder ag teacht ar fómarmán contact agus beidh sé ready le shortcode chun é a chomhcheangail.
 
-## Usáid Shortcode a Chreachtaithe (Using the Generated Shortcode)
+## Usáid Shortcode a Chreachtaithe (Using the Generated Shortcode) {#using-the-generated-shortcode}
 
 Tar éis a chur i bhfeicim an Site Builder fómarmán contact, beidh sé ag teacht ar shortcode (mar shampla, `[contact-form-7 id="123"]`). Is féidir leat:
 
@@ -45,11 +45,11 @@ Tar éis a chur i bhfeicim an Site Builder fómarmán contact, beidh sé ag teac
 
 3. **Níl an t-aistriú i template** — Má tá tú ag fáilte le PHP, is féidir leat cur an shortcode seo i file templete deánach (theme template).
 
-## Déanadh ar Fóram Contact
+## Déanadh ar Fóram Contact {#customizing-the-contact-form}
 
 Tar éis lá a chur an Site Builder an fóram contact, is féidir leat é sin a chruinneadh níos mó:
 
-### Trá Chat Interface
+### Trá Chat Interface {#via-the-chat-interface}
 
 Céad míle fáilte ar an Site Builder chun an fóram a athrú:
 
@@ -57,7 +57,7 @@ Céad míle fáilte ar an Site Builder chun an fóram a athrú:
 
 Beidh an Site Builder ag athrú an fóram agus beidh sé ag teacht ar an shortcode athrú.
 
-### Trá Admin Interface an Plugin Fóram
+### Trá Admin Interface an Plugin Fóram {#via-the-form-plugins-admin-interface}
 
 Is féidir leat hefyd an fóram a chruinneadh go díreach i gcur na stóirítear (settings) an plugin fóram atá agat:
 
@@ -65,7 +65,7 @@ Is féidir leat hefyd an fóram a chruinneadh go díreach i gcur na stóirítear
 2. Déan cur isteach an fóram a chur in iúl ag an Site Builder.
 3. Athrúchais an fáilíocht, riolacha tairbhealla (validation rules), agus na iontaí email mar chéile.
 
-## Plugins Fóram agus Comhionrú
+## Plugins Fóram agus Comhionrú {#form-plugins-and-compatibility}
 
 Bíonn an Site Builder ag déanamh díriú ar an plugin fóram atá agat ar an site agus a úsáideann é sin chun an fóram contact a chur in iúl. Má tá duine mór de plugin fóram, beidh an Site Builder ag cur iarracht ar na sonraí seo:
 
@@ -76,7 +76,7 @@ Bíonn an Site Builder ag déanamh díriú ar an plugin fóram atá agat ar an s
 
 Má bhí aon cheann de na pluginne seo ag tairbheall, beidh an Site Builder ag cur iarracht chun é sin a chur in iúl prima chun an fóram contact a chur in iúl.
 
-## Iontaí Email
+## Iontaí Email {#email-notifications}
 
 Bíonn fóram contact a chur in iúl a chur ar an site leat ag iontaí email go dtí an chuid de-fháil. Is féidir leat an iontaí email a athrú agus an meán iontaíochta a athrú:
 
@@ -91,21 +91,21 @@ For cur isteach iarrachtaí bunaithe, déan cur isteach ar an documentation an p
 - [Notification Email Notifications for Fluent Forms](https://fluentforms.com/docs/)
 - [Notification Email Notifications for Gravity Forms](https://docs.gravityforms.com/)
 
-## Eagraísa Uimhreacha (Example Use Cases)
+## Eagraísa Uimhreacha (Example Use Cases) {#example-use-cases}
 
-### Form Contact Simple
+### Form Contact Simple {#simple-contact-form}
 
 > "Creoi form contact simple le feidheana nam, email agus meán."
 
-### Form Multi-Step
+### Form Multi-Step {#multi-step-form}
 
 > "Creoi form contact le chuid chéim ar an chéad chun féachanaimn contact a bheith agat agus chéim de dhá chun an meán agus miontún contact a bheith agat."
 
-### Form le Logic Conditional
+### Form le Logic Conditional {#form-with-conditional-logic}
 
 > "Creoi form contact a thaispeáin feidheanaimn ag curtha ar fáil ar athrú mar a bhfáthfaidh an chuid is déanach i gcurtha inbhileán."
 
-### Form le Clios File Upload
+### Form le Clios File Upload {#form-with-file-upload}
 
 > "Creoi form contact a ghlúite do chuid atá ag curtha file nó teachtaire."
 

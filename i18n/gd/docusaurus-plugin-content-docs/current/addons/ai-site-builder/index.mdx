@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Togail Làraich AI
+# Togail Làraich AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Riatanasan
+## Riatanasan {#requirements}
 
 - WordPress 5.3 no nas àirde
 - PHP 7.4 no nas àirde
 - plugin Multisite Ultimate (gnìomhach)
 
-## Stàladh
+## Stàladh {#installation}
 
 1. Luchdaich suas faidhlichean an addon dhan eòlaire `/wp-content/plugins/` agad
 2. Cuir an plugin an gnìomh tron chlàr-taice 'Plugins' ann an WordPress
 3. Rèitich roghainnean an addon ann an rianachd an lìonraidh
 
-## Leasachadh
+## Leasachadh {#development}
 
-### Suidheachadh
+### Suidheachadh {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structar a’ Phròiseict
+### Structar a’ Phròiseict {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Riaghailtean ùrachadh-còd
 ```
 
-### Deuchainnean
+### Deuchainnean {#testing}
 
 Tha an addon a’ gabhail a-steach frèam-obrach deuchainn coileanta:
 
@@ -79,44 +79,44 @@ Tha an addon a’ gabhail a-steach frèam-obrach deuchainn coileanta:
 - **Còmhdach Deuchainn**: Air a rèiteachadh gus còmhdach còd a leantainn
 - **Deuchainnean Multisite**: Ruithidh deuchainnean ann an àrainneachd multisite
 
-### Inbhean Còd
+### Inbhean Còd {#code-standards}
 
 - **Inbhean Còdaidh WordPress**: Air an cur an gnìomh tro PHPCS
 - **Co-chòrdalachd PHP 7.4+**: Taic do fheartan PHP ùr-nodha
 - **Mion-sgrùdadh Statach**: Amalachadh PHPStan airson sgrùdadh sheòrsaichean
 - **Ùrachadh Còd**: Riaghailtean Rector airson ùrachadh PHP
 
-### Siostam Togail
+### Siostam Togail {#build-system}
 
 - **Giullachd Maoin**: Mionachadh airson faidhlichean CSS/JS
 - **Eadar-theangachadh**: Gineadh faidhle POT
 - **Pacadh**: Cruthachadh tasglainn airson sgaoileadh
 - **Modh Leasachaidh**: Maoin gun mhionachadh airson dì-bhugachadh
 
-## Rèiteachadh
+## Rèiteachadh {#configuration}
 
 Tha an addon a’ toirt taic do dhiofar roghainnean rèiteachaidh a tha ruigsinneach tro eadar-aghaidh rianachd an lìonraidh.
 
-## Hooks agus Criathragan
+## Hooks agus Criathragan {#hooks-and-filters}
 
-### Gnìomhan
+### Gnìomhan {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Air a chur gu dol an dèidh tòiseachadh an addon
 - `ultimate-multisite-ai-site-builder_loaded` - Air a chur gu dol an dèidh dha faidhlichean uile an addon a bhith air an luchdadh
 
-### Criathragan
+### Criathragan {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Atharraich roghainnean an addon
 - `ultimate-multisite-ai-site-builder_enabled` - Sgrìobh thairis air inbhe comasachaidh/dì-chomasachaidh an addon
 
-## Ceadachas
+## Ceadachas {#license}
 
 Tha an addon seo fo cheadachas GPL v3 no nas ùire.
 
-## Taic
+## Taic {#support}
 
 Airson taic agus sgrìobhainnean, tadhail air [MultisiteUltimate.com](https://multisiteultimate.com)
-## Loga Atharrachaidhean
+## Loga Atharrachaidhean {#changelog}
 
 - Version 1.0.1 (2025-09-28): ath-ainmich prefix gu ultimate-multisite; ùraich text domain; togail tionndaidh.
 

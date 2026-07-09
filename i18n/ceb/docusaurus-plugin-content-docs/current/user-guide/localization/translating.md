@@ -3,11 +3,11 @@ title: Nag-translate sa Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Pagsalin sa Ultimate Multisite
+# Pagsalin sa Ultimate Multisite {#translating-ultimate-multisite}
 
 Ang Ultimate Multisite gihimo sa English, pero ang plugin kay kompleto nga mahimong i-translate ug aktibo mi nag-welcome og mga kontribusyon sa paghubad.
 
-## Mga Core Plugin Translations
+## Mga Core Plugin Translations {#core-plugin-translations}
 
 Ang core Ultimate Multisite plugin gi-translate pinaagi sa opisyal nga **WordPress.org translation platform**:
 
@@ -24,7 +24,7 @@ Kini ang standard nga sistema sa paghubad sa komunidad sa WordPress. Kung ang mg
 
 Kung gusto ninyong mahimong translation editor para sa inyong pinulongan (makaprovide og pag-approve sa mga hubad), kontaka kami pinaagi sa [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Mga Addon Translations
+## Mga Addon Translations {#addon-translations}
 
 Ang addon plugins gi-translate sa lain nga lugar:
 
@@ -32,11 +32,11 @@ Ang addon plugins gi-translate sa lain nga lugar:
 
 Ang mga translation sa addon karon gihimo pinaagi sa AI isip panggawas. Sakto kini sa tanang suportadong pinulongan pero basin adunay mga hugaw nga pagkasulti o dili kompleto ang impormasyon. Kami nag-welcome og mga human translator aron mag-review ug maghatag og sugyot para mas mahimong natural ug tukma kini.
 
-## Mga Lokal nga Translations
+## Mga Lokal nga Translations {#local-translations}
 
 Kung gusto nimo maghimo og kaugalingon nga mga hubad (translations) para sa imong kaugalingong project imbes nga mo-contribute sa upstream, naa kay duha ka pamaagi:
 
-### Paggamit sa Poedit
+### Paggamit sa Poedit {#using-poedit}
 
 Pwede nimong gamiton ang desktop application nga **[Poedit](https://poedit.net)** para i-translate ang `.pot` file:
 
@@ -46,6 +46,6 @@ Pwede nimong gamiton ang desktop application nga **[Poedit](https://poedit.net)*
 4. I-save -- Ang Poedit maghimo og `.po` ug `.mo` files
 5. Ibutang ang mga output nga files sa folder nga `lang`
 
-### Paggamit sa Loco Translate
+### Paggamit sa Loco Translate {#using-loco-translate}
 
 Ang **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin nagtugot kanimo sa pag-translate direkta gikan sa admin panel nga walay kinahanglan og desktop tools. Kini maoy maghimo ug mag-compile sa mga translation files para nimo.

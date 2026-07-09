@@ -3,11 +3,11 @@ title: 커스텀 게이트웨이 개발
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# 사용자 지정 Gateway 개발
+# 사용자 지정 Gateway 개발 {#custom-gateway-development}
 
 `Base_Gateway` 클래스를 확장하여 사용자 지정 결제 gateway를 만들 수 있습니다.
 
-## Gateway 클래스
+## Gateway 클래스 {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway 등록
+## Gateway 등록 {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## 주요 메서드
+## 주요 메서드 {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | 환불 요청 처리 |
 | `get_payment_methods()` | 고객의 저장된 결제 수단 반환 |
 
-## 반복 멤버십을 위한 갱신 자격 증명
+## 반복 멤버십을 위한 갱신 자격 증명 {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0에서는 gateway 통합이 `auto_renew`가 저장되기 전에 반복 멤버십에 재사용 가능한 갱신 자격 증명이 있는지 보고할 수 있습니다. `wu_membership_has_renewal_credential`를 hook하고 다음을 반환하세요.
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 새 재사용 가능 자격 증명이 저장된 후 gateway의 성공적인 재승인 흐름의 일부로 누락된 자격 증명 표시를 지우세요.
 
-## 팁
+## 팁 {#tips}
 
 - 실패 시 항상 `WP_Error`를 반환하여 Ultimate Multisite가 오류 표시를 처리할 수 있도록 하세요
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway별 로깅에는 `wu_log_add()`를 사용하세요
 
-## AI 커넥터 provider 기능
+## AI 커넥터 provider 기능 {#ai-connector-provider-capabilities}
 
 AI 커넥터 기반 작업을 호출하는 사용자 지정 통합은 AI Provider for Anthropic Max v1.3.0에서 도입된 지원 OAuth provider 세트에 맞춰야 합니다.
 

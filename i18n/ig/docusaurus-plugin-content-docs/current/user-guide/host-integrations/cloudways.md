@@ -3,18 +3,18 @@ title: Nkwado Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration
+# Cloudways Integration {#cloudways-integration}
 
-## Overview
+## Overview {#overview}
 Cloudways na-ehe platform hosting cloud-based management nke, na-enwe ịkwado ka ịdeploy WordPress sites na ọtụtụ ndị nchek cloud site dị ka DigitalOcean, AWS, Google Cloud, na ọzọ. Integration a na-eme iji syncing domain automatic na management SSL certificate n'etiti Ultimate Multisite na Cloudways.
 
-## Features
+## Features {#features}
 - Automatic domain syncing (syncing domain automatic)
 - Management SSL certificate (management SSL certificate)
 - Support for extra domains (support for extra domains)
 - DNS validation for SSL certificates (DNS validation for SSL certificates)
 
-## Requirements
+## Requirements {#requirements}
 Ihe constants ndị a ga-abụ na file `wp-config.php` của gị:
 
 ```php
@@ -30,16 +30,16 @@ N'ụzo, ị ga-abụ na:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Setup Instructions
+## Setup Instructions {#setup-instructions}
 
-### 1. Get Your Cloudways API Credentials
+### 1. Get Your Cloudways API Credentials {#1-get-your-cloudways-api-credentials}
 
 1. Log in na dashboard Cloudways của gị
 2. Mene "Account" > "API Keys" (Tụi-onye "Account" > "API Keys")
 3. Generate API key ma ọ bụrụ na ị chọrọ, ọ bụrụ na ị iche n'ụọ
 4. Copy email na API key của gị
 
-### 2. Get Your Server and Application IDs
+### 2. Get Your Server and Application IDs {#2-get-your-server-and-application-ids}
 
 1. Na dashboard Cloudways của gị, mene "Servers" (N'ime "Servers")
 2. Select server na-enwe WordPress multisite của gị dị
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Mene "Applications" (N'ime "Applications") ma select application WordPress của gị
 5. App ID bụ ihe ọkụ na URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Add Constants to wp-config.php
+### 3. Add Constants to wp-config.php {#3-add-constants-to-wp-configphp}
 
 Add constants ndị a na file `wp-config.php` của gị:
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 E **eji** jikọta `*.your-network.com` (ama ndaanyike subdomain nke ọkụkọ tute gị) n'WU_CLOUDWAYS_EXTRA_DOMAINS. Jiji [Important — wildcard SSL pitfall](#important--wildcard-ssl-pitfall) a iche ọnụ dị ka ihe kedu ga-eji ya maka faa certificate SSL ọ bụla na-tenant.
 :::
 
-### 4. Ọkụkọ Integrasiya (Enable the Integration)
+### 4. Ọkụkọ Integrasiya (Enable the Integration) {#4-enable-the-integration}
 
 1. Na admin WordPress gị, joko Ultimate Multisite > Settings
 2. Joko n'tab "Domain Mapping"
@@ -76,9 +76,9 @@ E **eji** jikọta `*.your-network.com` (ama ndaanyike subdomain nke ọkụkọ
 4. Kvæl integrasiya Cloudways
 5. Kvæl "Save Changes"
 
-## Ọ dị ka ịrụ
+## Ọ dị ka ịrụ {#how-it-works}
 
-### Domain Syncing (Jikọta Domain)
+### Domain Syncing (Jikọta Domain) {#domain-syncing}
 
 Mgbe domain na-map n'Ultimate Multisite:
 
@@ -89,7 +89,7 @@ Mgbe domain na-map n'Ultimate Multisite:
 
 Nche: API Cloudways ji nyere semua list domains ọ bụrụ na ị nwere, ma ọ bụ karịa ị chọrọ ka ị nwere, ebe ọ bụla.
 
-### SSL Certificate Management (Iye Certificate SSL)
+### SSL Certificate Management (Iye Certificate SSL) {#ssl-certificate-management}
 
 Ọ bụrụ na domain ndị a jikọta:
 
@@ -103,7 +103,7 @@ Nche: API Cloudways ji nyere semua list domains ọ bụrụ na ị nwere, ma �
 
 Integration-ah always requests **standard** (non-wildcard) Let's Encrypt certificates from Cloudways. If you supply a wildcard pattern in `WU_CLOUDWAYS_EXTRA_DOMAINS`, the leading `*.` will be removed before the SSL request — the wildcard itself is never installed by this integration. To use a wildcard certificate on Cloudways, you would have to install it manually, but doing so blocks per-domain Let's Encrypt issuance for mapped custom domains (see the pitfall below).
 
-## Extra Domains
+## Extra Domains {#extra-domains}
 
 The `WU_CLOUDWAYS_EXTRA_DOMAINS` constant allows you to specify additional **external** domains that should always be kept on the Cloudways application's aliases list. Use it for:
 
@@ -112,13 +112,13 @@ The `WU_CLOUDWAYS_EXTRA_DOMAINS` constant allows you to specify additional **ext
 
 Do **not** use this constant for your own network's subdomain wildcard (e.g. `*.your-network.com`). See the wildcard SSL pitfall below.
 
-## Important — Wildcard SSL Pitfall
+## Important — Wildcard SSL Pitfall {#important--wildcard-ssl-pitfall}
 
 A common mistake when following Cloudways' default setup is to add a wildcard such as `*.your-network.com` to `WU_CLOUDWAYS_EXTRA_DOMAINS`, or to manually install a Cloudways wildcard SSL certificate for that wildcard.
 
 If you do this, Cloudways will refuse to issue Let's Encrypt certificates for the per-tenant custom domains that Ultimate Multisite maps. Cloudways replaces the active SSL certificate on the application each time, and a pre-existing wildcard certificate on the application blocks the per-domain Let's Encrypt issuance the integration relies on.
 
-### Recommended Cloudways SSL setup for an Ultimate Multisite network
+### Recommended Cloudways SSL setup for an Ultimate Multisite network {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Na tab **SSL Certificate** na application Cloudways, install **standard Let's Encrypt certificate** nke nwere `your-network.com` na `www.your-network.com` karịrị — **ebee** wildcard.
 2. **Kere** ị chọp `*.your-network.com` (na ndụ anyị ga-agbọ na ọkụ anyị) n'WU_CLOUDWAYS_EXTRA_DOMAINS. Chọp constant ah maka **external** domains karịrị.
@@ -126,20 +126,20 @@ If you do this, Cloudways will refuse to issue Let's Encrypt certificates for th
 
 Ọ bụrụ na custom domains nke tenants-ụ dị nwere stuck ma ọ bụ ma ọ bụ SSL, chọp tab Cloudways SSL. Ọ bụrụ na wildcard certificate dị na m, jụọ ya offe, re-issue standard Let's Encrypt certificate fọdụ main network domain karịrị, na ri-remove ndụ wildcard n'WU_CLOUDWAYS_EXTRA_DOMAINS. Tata, re-trigger domain mapping (naa ma ọ bụ gbankara anọchịrị ah) na integration ga-agbọ certificate per-domain again.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 - Jụọ na email anyị na API key anyị bụrụkarị nwere
 - Check na server anyị na application IDs anyị bụrụkarị nwere
 - Ensure na Cloudways account anyị ga-agbọ permissions ndị dịrị
 
-### Issues with SSL Certificate
+### Issues with SSL Certificate {#ssl-certificate-issues}
 - Cloudways onye na domain-nụ (DNS records) ọma nọ ga-akịrị (valid) na ji server-nụ gị ọma nọ haa gaa (pointing to your server) karịsịrị (before issuing) SSL certificates.
 - Integration-nụ ahụ na-akịrị DNS records haa gaa karịsịrị trước khi yêu cầu SSL certificates.
 - Ka SSL certificates karịsịrị, jikọta (check) ka domain-nụ gị nọ haa gaa ọma nụ IP server-nụ gị karịsịrị.
 - **Domain-nụ kachị (Per-tenant custom domains) na-akịrị (stuck) ma ọ bụ SSL?** Jikọta tab SSL Certificate nke Cloudways application ahụ. Ka wildcard certificate (manually installed, or covering `*.your-network.com`) dị n'ụrụ, Cloudways karịsịrị (will not issue) Let's Encrypt certificates ha custom domains ndị ọzọ na-akịrị (individually mapped). Jikọta ya na certificate Let's Encrypt standard nke ga-akịrị (covering) domain nụ ọkụkọ ahụ karịsịrị (`your-network.com`, `www.your-network.com`) karịsịrị ma ri dịghị (remove) ndụ wildcard na `WU_CLOUDWAYS_EXTRA_DOMAINS`. Ka re-trigger domain mapping (or wait for the next one) ma integration-nụ ahụ ga-akịrị SSL certificates ha each domain.
 
-### Domain Not Added
+### Domain Not Added {#domain-not-added}
 - Jikọta Ultimate Multisite logs ha ndụ error messages ọ bụla.
 - Ka na-akịrị (verify) ka domain nọ dịghị na-akịrị Cloudways karịsịrị.
 - Ka na-akịrị (ensure) ka Cloudways plan gị ga-akịrị (supports) ndụ domains ị ga-akịrị.

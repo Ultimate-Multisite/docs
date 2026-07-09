@@ -3,7 +3,7 @@ title: 升级套餐
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# 升级方案 (v2)
+# 升级方案 (v2) {#upgrading-a-plan-v2}
 
 _**重要说明：本文指的是 Ultimate Multisite 2.x 版本。**_
 
@@ -41,7 +41,7 @@ _**重要说明：本文指的是 Ultimate Multisite 2.x 版本。**_
 
 ##
 
-## 升级和降级路径
+## 升级和降级路径 {#upgrade-and-downgrade-paths}
 
 在您的每个产品上，都会有一个 **升级与降级** 选项卡。该选项卡上的第一个选项是一个名为 **方案组** 的字段。
 

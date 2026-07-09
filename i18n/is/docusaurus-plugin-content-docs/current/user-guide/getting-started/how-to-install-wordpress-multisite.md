@@ -3,7 +3,7 @@ title: Hvernig installa WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hvernig get ég installað WordPress Multisite?
+# Hvernig get ég installað WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite leyfir þér að hafa netverk vísúta á einum uppsetningu. Þetta er innbyggð eiginleiki, en hún er ekki á hjá í raunni af raunni.
 
@@ -94,9 +94,9 @@ Til að skapa subsite:
 
 Eftir að filla út feldi, klikka á knappa "Add site". Eftir að nýtt subsite er skorið upp, gangi í það og tryggja þér að subsiteinn sé virkni.
 
-## Almenn vanda:
+## Almenn vanda: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Ég get skapað nýja síður en þeir eru ekki aðgangslegar.
+### 1. Ég get skapað nýja síður en þeir eru ekki aðgangslegar. {#common-problems}
 
 Ef þú valdið subdomainir, þurfaðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðuðu
 

@@ -3,15 +3,15 @@ title: 'Lesona 7: Ataovy ho anao'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lesona 7: Ataovy Ho Anao Manokana
+# Lesona 7: Ataovy Ho Anao Manokana {#lesson-7-making-it-yours}
 
 Tsy tokony hahatsapa mihitsy ny mpanjifanao fa mampiasa "plugin WordPress sasantsasany" izy ireo. Tokony hahatsapa izy ireo fa mampiasa FitSite -- sehatra iray naorina ho an'ny indostrian'izy ireo. Ity lesona ity dia miresaka marika, white-labeling, ary ny fomba hahatonga ilay sehatra ho toy ny vokatra.
 
-## Izay Nijanontsika
+## Izay Nijanontsika {#where-we-left-off}
 
 Manana fikorianan'ny checkout miasa ny FitSite izay mitondra ny tompon'ny studio fanaovana fanatanjahan-tena manomboka amin'ny fisafidianana plan ka hatramin'ny tranonkala velona. Ankehitriny dia ataontsika hahatsapa ho toy ny vokatra mirindra sy manana marika ny traikefa manontolo.
 
-## Domain an'ny Sehatrao
+## Domain an'ny Sehatrao {#your-platform-domain}
 
 Ny fototry ny marikao dia ny domain-nao. Ho an'ny FitSite:
 
@@ -19,7 +19,7 @@ Ny fototry ny marikao dia ny domain-nao. Ho an'ny FitSite:
 - **Tranonkalan'ny mpanjifa**: `studioname.fitsite.com` (subdomains)
 - **Domain manokana**: Afaka mampifandray ny domain-ny manokana ny mpanjifa ao amin'ny plan Growth sy Pro
 
-### Fametrahana ny Domain-nao
+### Fametrahana ny Domain-nao {#setting-up-your-domain}
 
 1. Soraty ara-dalàna ny domain an'ny sehatrao
 2. Tondroy any amin'ny mpamatsy hosting-nao izany
@@ -28,11 +28,11 @@ Ny fototry ny marikao dia ny domain-nao. Ho an'ny FitSite:
 
 Jereo ny [Fomba Fanamboarana Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) ho an'ny torolalana amin'ny antsipiriany.
 
-## White-Labeling ny Traikefan'ny Admin
+## White-Labeling ny Traikefan'ny Admin {#white-labeling-the-admin-experience}
 
 Rehefa miditra ao amin'ny Dashboard-n'ny tranonkalany ny tompon'ny studio fanaovana fanatanjahan-tena, dia tokony hahita ny marikao izy ireo, fa tsy marika WordPress na Ultimate Multisite.
 
-### Pejy Login Manokana
+### Pejy Login Manokana {#custom-login-page}
 
 Ataovy manokana ny pejy login WordPress mba hampiseho:
 
@@ -40,7 +40,7 @@ Ataovy manokana ny pejy login WordPress mba hampiseho:
 - Sary lafika mifanaraka amin'ny fanatanjahan-tena
 - Ny lokon'ny marikao
 
-### Marika amin'ny Dashboard
+### Marika amin'ny Dashboard {#dashboard-branding}
 
 Ampiasao ny addon [Admin Page Creator](/addons/admin-page-creator) na CSS manokana mba:
 
@@ -48,7 +48,7 @@ Ampiasao ny addon [Admin Page Creator](/addons/admin-page-creator) na CSS manoka
 - Hanamboarana ny rafitra lokon'ny admin hifanaraka amin'ny marikao
 - Hanampiana widget Dashboard manokana misy rohy haingana sy loharanom-panampiana manokana ho an'ny fanatanjahan-tena
 
-### Pejy Admin Manokana
+### Pejy Admin Manokana {#custom-admin-pages}
 
 Diniho ny famoronana pejy admin manokana izay mampiseho ireo hetsika mifandraika indrindra amin'ny tompon'ny studio fanaovana fanatanjahan-tena:
 
@@ -58,11 +58,11 @@ Diniho ny famoronana pejy admin manokana izay mampiseho ireo hetsika mifandraika
 
 Mampihena ny elanelam-pianarana izany amin'ny fametrahana ireo hetsika mifandraika amin'ny sehatra manokana eo anoloana sy afovoany fa tsy alevina ao amin'ny menu WordPress mahazatra.
 
-## Fametrahana Marika amin'ny Fifandraisanao
+## Fametrahana Marika amin'ny Fifandraisanao {#branding-your-communications}
 
 Ny email, invoice, ary fampandrenesana rehetra dia tokony hanamafy ny marikao.
 
-### Email-n'ny Rafitra
+### Email-n'ny Rafitra {#system-emails}
 
 Mandehana any amin'ny **Ultimate Multisite > Settings > Emails** ary ataovy manokana ny email-n'ny rafitra rehetra:
 
@@ -79,7 +79,7 @@ Email lehibe tokony hatao manokana:
 | Receipt fandoavam-bola | "Voaray ny fandoavam-bola" | "Voamarina ny fandoavam-bola subscription FitSite" |
 | Hifarana ny trial | "Hifarana tsy ho ela ny trial-nao" | "Hifarana afaka 3 andro ny trial FitSite-nao -- tazomy ho velona ny tranonkalan'ny studio-nao" |
 
-### Invoices
+### Invoices {#invoices}
 
 Ataovy manokana ny template invoice miaraka amin'ny:
 
@@ -87,7 +87,7 @@ Ataovy manokana ny template invoice miaraka amin'ny:
 - Ny antsipirian'ny orinasanao
 - Anaran'ny vokatra manokana ho an'ny fanatanjahan-tena (fa tsy ID plan ankapobeny)
 
-## Ny Tranonkala Atrehin'ny Mpanjifa
+## Ny Tranonkala Atrehin'ny Mpanjifa {#the-customer-facing-site}
 
 Mila tranonkala marketing mivarotra ilay sehatra ny domain fototrao (`fitsite.com`). Misaraka amin'ny admin tambajotra Ultimate Multisite izany -- izy no endrika ampahibemaso amin'ny orinasanao.
 
@@ -103,7 +103,7 @@ Pejy lehibe:
 Mamoròna ny tranonkala marketing-nao ho tranonkala iray ao anatin'ny tambajotranao manokana. Izany dia mamela anao hitantana azy avy amin'ilay Dashboard iray ihany ary mampiseho ny fahaizan'ny sehatrao manokana.
 :::
 
-## Domain Manokana ho an'ny Mpanjifa
+## Domain Manokana ho an'ny Mpanjifa {#custom-domain-for-customers}
 
 Ho an'ny mpanjifa ao amin'ny plan izay ahitana domain manokana, soraty mazava ny dingana:
 
@@ -113,7 +113,7 @@ Ho an'ny mpanjifa ao amin'ny plan izay ahitana domain manokana, soraty mazava ny
 
 Mamoròna lahatsoratra fanampiana na fidirana knowledge base manokana ho an'ity dingana ity, nosoratana ho an'ny tompon'ny studio fanaovana fanatanjahan-tena tsy teknika.
 
-## Ny Tambajotra FitSite Hatreto
+## Ny Tambajotra FitSite Hatreto {#the-fitsite-network-so-far}
 
 ```
 Tambajotra FitSite
@@ -132,7 +132,7 @@ Tambajotra FitSite
 └── Vonona ho an'ny fikorianan'ny onboarding (lesona manaraka)
 ```
 
-## Izay Naorintsika Tamin'ity Lesona Ity
+## Izay Naorintsika Tamin'ity Lesona Ity {#what-we-built-this-lesson}
 
 - **Domain an'ny sehatra sy DNS** voaamboatra ho an'ny traikefa misy marika
 - **Admin white-labeled** miaraka amin'ny marika FitSite manerana azy

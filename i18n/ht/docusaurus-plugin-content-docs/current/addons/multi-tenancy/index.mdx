@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Plizyè lokatè
+# Plizyè lokatè {#multi-tenancy}
 
 Distribye sou-sit yo atravè sèvè ak baz done pou pèfòmans ak sekirite
 
-## Pwen enpòtan nan vèsyon 1.2.0 la
+## Pwen enpòtan nan vèsyon 1.2.0 la {#version-120-release-highlights}
 
 Plizyè lokatè 1.2.0 ajoute fondasyon lokatè souveren an pou flux travay izolasyon pwodiksyon yo:
 
@@ -25,21 +25,21 @@ Plizyè lokatè 1.2.0 ajoute fondasyon lokatè souveren an pou flux travay izola
 
 Gade gid itilizatè yo pou [flux travay migrasyon souveren](/user-guide/getting-started/sovereign-migration-workflow), [izolasyon plizyè lokatè](/user-guide/configuration/multi-tenancy-isolation), ak [operasyon lokatè souveren](/user-guide/administration/sovereign-tenant-operations).
 
-## Egzijans
+## Egzijans {#requirements}
 
 - WordPress 5.3 oswa pi wo
 - PHP 7.4 oswa pi wo
 - plugin Multisite Ultimate (aktif)
 
-## Enstalasyon
+## Enstalasyon {#installation}
 
 1. Telechaje fichye addon yo nan repètwa `/wp-content/plugins/` ou a
 2. Aktive plugin nan atravè meni 'Plugins' nan WordPress
 3. Konfigire paramèt addon yo nan administrasyon rezo a
 
-## Devlopman
+## Devlopman {#development}
 
-### Konfigirasyon
+### Konfigirasyon {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estrikti pwojè
+### Estrikti pwojè {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Tès
+### Tès {#testing}
 
 Addon nan gen ladan yon kad tès konplè:
 
@@ -93,54 +93,54 @@ Addon nan gen ladan yon kad tès konplè:
 - **Kouvèti tès**: Konfigire pou swiv kouvèti kòd
 - **Tès multisite**: Tès yo kouri nan anviwònman multisite
 
-### Estanda kòd
+### Estanda kòd {#code-standards}
 
 - **Estanda kodaj WordPress**: Aplike atravè PHPCS
 - **Konpatibilite PHP 7.4+**: Fonksyonalite PHP modèn sipòte
 - **Analiz estatik**: Entegrasyon PHPStan pou verifikasyon tip
 - **Modènizasyon kòd**: Règ Rector pou mizajou PHP
 
-### Sistèm konstriksyon
+### Sistèm konstriksyon {#build-system}
 
 - **Tretman resous**: Minifikasyon pou fichye CSS/JS
 - **Tradiksyon**: Jenerasyon fichye POT
 - **Anbalaj**: Kreyasyon achiv pou distribisyon
 - **Mòd devlopman**: Resous ki pa minifye pou debogaj
 
-## Konfigirasyon
+## Konfigirasyon {#configuration}
 
 Addon nan sipòte divès opsyon konfigirasyon ki aksesib atravè koòdone administrasyon rezo a.
 
-### Konfigirasyon lokatè souveren
+### Konfigirasyon lokatè souveren {#sovereign-tenant-configuration}
 
 Pou lokatè souveren yo, konfigire baz done lokatè a, rasin sistèm fichye a, marezon host baz done a, ak kapasite host la anvan ou woute trafik bay lokatè a. Kouri verifikasyon migrasyon apre chak chanjman ki afekte kalifikasyon baz done, marezon host, woutaj, oswa pwovizyonman itilizatè.
 
 Itilize `localhost` sèlman lè egzekisyon lokatè a ak otorizasyon baz done yo atann aksè sokèt lokal oswa menm-machin. Itilize `127.0.0.1` oswa yon non host sèvis lè se host otorizasyon founisè ou a konfigire a.
 
-### Kapasite Hostinger
+### Kapasite Hostinger {#hostinger-capability}
 
 Kapasite plizyè lokatè Hostinger lan travay avèk token entegrasyon Hostinger pataje a. Konfime domèn nan prezan nan hPanel, DNS ap lonje dwèt sou kont Hostinger lan, epi paramèt baz done lokatè yo koresponn ak hPanel anvan verifikasyon.
 
-## Hooks ak filtè
+## Hooks ak filtè {#hooks-and-filters}
 
-### Aksyon
+### Aksyon {#actions}
 
 - `ultimate-multisite-addon-template_init` - Deklanche apre inisyalizasyon addon nan
 - `ultimate-multisite-addon-template_loaded` - Deklanche apre tout fichye addon yo chaje
 
-### Filtè
+### Filtè {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifye paramèt addon yo
 - `ultimate-multisite-addon-template_enabled` - Pase sou estati aktive/dezaktive addon nan
 
-## Lisans
+## Lisans {#license}
 
 Addon sa a gen lisans anba GPL v3 oswa pi resan.
 
-## Sipò
+## Sipò {#support}
 
 Pou sipò ak dokimantasyon, vizite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Jounal chanjman
+## Jounal chanjman {#changelog}
 
 - Vèsyon 1.2.0 (2026-06-03): ajoute otokoneksyon lokatè san eta, kapasite plizyè lokatè Hostinger, izolasyon baz done ak sistèm fichye pou chak sou-sit, baryè verifikasyon migrasyon souveren, amelyorasyon demaraj lokatè/ekriven baz done, marezon host MySQL ki ka konfigire, ak demantèlman souveren ki pi an sekirite.
 

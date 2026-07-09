@@ -3,7 +3,7 @@ title: Zapier ಮೂಲಕ Account ನೋಂದಾಯಿಸಿ
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# ಈವೆಂಟ್: Zapier ಮೂಲಕ Account ನೋಂದಾಯಿಸಿ
+# ಈವೆಂಟ್: Zapier ಮೂಲಕ Account ನೋಂದಾಯಿಸಿ {#event-register-an-account-via-zapier}
 
 [Ultimate Multisite ಅನ್ನು Zapier ಜೊತೆಗೆ ಸಂಯೋಜಿಸುವುದು](zapier.md) ಲೇಖನದಲ್ಲಿ, triggers ಮತ್ತು events ಆಧರಿಸಿ Ultimate Multisite ಒಳಗೆ ವಿಭಿನ್ನ ಕ್ರಿಯೆಗಳನ್ನು ಮಾಡಲು Zapier ಅನ್ನು ಹೇಗೆ ಬಳಸುವುದು ಎಂದು ನಾವು ಚರ್ಚಿಸಿದ್ದೇವೆ. ಈ ಲೇಖನದಲ್ಲಿ, 3rd party ಅನ್ವಯಿಕೆಗಳನ್ನು ನೀವು ಹೇಗೆ ಸಂಯೋಜಿಸಬಹುದು ಎಂಬುದನ್ನು ತೋರಿಸುತ್ತೇವೆ. ನಾವು Google Sheets ಅನ್ನು ಡೇಟಾದ ಮೂಲವಾಗಿ ಬಳಸುತ್ತೇವೆ ಮತ್ತು Account ನೋಂದಾಯಿಸಲು ಮಾಹಿತಿಯನ್ನು Ultimate Multisite ಗೆ ಕಳುಹಿಸುತ್ತೇವೆ.
 

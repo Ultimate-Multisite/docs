@@ -3,19 +3,19 @@ title: 'Leciono 2: Elektado de via niĉo'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leciono 2: Elekti Vian Niĉon
+# Leciono 2: Elekti Vian Niĉon {#lesson-2-picking-your-niche}
 
 En Leciono 1 ni klarigis kial niĉo superas ĝeneralaĵon. Nun vi devas elekti vian. Ĉi tiu leciono donas al vi kadron por trovi kaj validigi niĉon antaŭ ol vi investas tempon konstruante por ĝi.
 
-## Kie Ni Ĉesis
+## Kie Ni Ĉesis {#where-we-left-off}
 
 Ni difinis la FitSite-koncepton: reteja platformo por trejnejoj. Sed kiel ni alvenis specife al trejnejoj? Ĉi tiu leciono klarigas la procezon por ke vi povu apliki ĝin por trovi vian propran niĉon.
 
-## La Tri Kriterioj
+## La Tri Kriterioj {#the-three-criteria}
 
 Bona niĉo por reteja platformo plenumas tri kondiĉojn:
 
-### 1. Ili Bezonas Retejojn sed Luktas por Akiri Bonajn
+### 1. Ili Bezonas Retejojn sed Luktas por Akiri Bonajn {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Serĉu industriojn kie:
 
@@ -26,7 +26,7 @@ Serĉu industriojn kie:
 
 **Trejnejoj taŭgas**: membroj atendas trovi klasajn horarojn, prezojn kaj rezervadon rete. Plej multaj retejoj de trejnejoj estas malmodernaj aŭ konstruitaj sur ĝeneralaj ŝablonoj kiuj ne servas la celon.
 
-### 2. La Entreprenoj Povas Pagi Monatan Abonon
+### 2. La Entreprenoj Povas Pagi Monatan Abonon {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Viaj celklientoj devas esti:
 
@@ -36,7 +36,7 @@ Viaj celklientoj devas esti:
 
 **Trejnejoj taŭgas**: ili jam pagas por rezerva programaro, pagtraktado kaj merkatikaj iloj. Reteja abono estas natura aldono.
 
-### 3. Ili Parolas Inter Si
+### 3. Ili Parolas Inter Si {#3-they-talk-to-each-other}
 
 La plej bonaj niĉoj havas:
 
@@ -46,9 +46,9 @@ La plej bonaj niĉoj havas:
 
 **Trejnejoj taŭgas**: posedantoj de trejnejoj ĉeestas eventojn de la trejna industrio, partoprenas en retaj komunumoj kaj ofte dividas ilojn kaj servojn kun samprofesiuloj.
 
-## Kiel Trovi Niĉajn Kandidatojn
+## Kiel Trovi Niĉajn Kandidatojn {#how-to-find-niche-candidates}
 
-### Komencu per Tio, Kion Vi Konas
+### Komencu per Tio, Kion Vi Konas {#start-with-what-you-know}
 
 Via ekzistanta sperto estas avantaĝo. Konsideru:
 
@@ -56,7 +56,7 @@ Via ekzistanta sperto estas avantaĝo. Konsideru:
 - Hobioj aŭ interesoj kie vi komprenas la komunumon
 - Profesiaj retoj al kiuj vi jam apartenas
 
-### Serĉu Dolorajn Signalojn
+### Serĉu Dolorajn Signalojn {#look-for-pain-signals}
 
 Serĉu pruvojn ke entreprenoj en niĉo luktas kun retejoj:
 
@@ -65,7 +65,7 @@ Serĉu pruvojn ke entreprenoj en niĉo luktas kun retejoj:
 - Rigardu realajn retejojn en la niĉo -- ĉu plej multaj el ili estas malbonaj?
 - Kontrolu ĉu konkurantoj ekzistas kaj kiom bone ili servas la merkaton
 
-### Taksu la Ekonomion
+### Taksu la Ekonomion {#evaluate-the-economics}
 
 Por ĉiu kandidata niĉo, taksu:
 
@@ -73,11 +73,11 @@ Por ĉiu kandidata niĉo, taksu:
 - **Pagemo**: Kion ili nun elspezas por similaj iloj?
 - **Dumviva valora potencialo**: Ĉu ĉi tiuj entreprenoj estas stabilaj, aŭ ĉu ili rapide forfalas?
 
-## Validigi Vian Niĉon
+## Validigi Vian Niĉon {#validating-your-niche}
 
 Antaŭ ol konstrui ion ajn, validigu postulon:
 
-### Parolu al Eblaj Klientoj
+### Parolu al Eblaj Klientoj {#talk-to-potential-customers}
 
 Kontaktu 10-15 entreprenposedantojn en via cela niĉo. Demandu:
 
@@ -88,17 +88,17 @@ Kontaktu 10-15 entreprenposedantojn en via cela niĉo. Demandu:
 
 Vi ankoraŭ ne vendas. Vi aŭskultas.
 
-### Kontrolu la Konkurantan Pejzaĝon
+### Kontrolu la Konkurantan Pejzaĝon {#check-competitor-landscape}
 
 - **Neniuj konkurantoj**: Povus signifi neniun postulon, aŭ povus signifi neekspluatitan ŝancon. Klientaj konversacioj diros al vi kiu.
 - **Kelkaj konkurantoj**: Bona signo. Validigas postulon. Studu kion ili faras bone kaj kie ili mankas.
 - **Multaj konkurantoj**: Pli malfacile eniri, sed ankoraŭ eblas se vi povas klare diferenciĝi.
 
-### Konstruu Alteriĝan Paĝon
+### Konstruu Alteriĝan Paĝon {#build-a-landing-page}
 
 Antaŭ ol konstrui la platformon, kreu simplan alteriĝan paĝon kiu priskribas vian niĉan solvon kaj kolektu retpoŝtajn aliĝojn. Lanĉu malgrandan kvanton da celita reklamado por testi intereson. Se homoj aliĝas, vi havas validigon.
 
-## Apliki Ĉi Tion al FitSite
+## Apliki Ĉi Tion al FitSite {#applying-this-to-fitsite}
 
 Jen kiel FitSite poentis laŭ la kriterioj:
 
@@ -112,7 +112,7 @@ Jen kiel FitSite poentis laŭ la kriterioj:
 
 Validigo konfirmis la ŝancon. Nun ni konstruas.
 
-## Niĉaj Ideoj por Konsideri
+## Niĉaj Ideoj por Konsideri {#niche-ideas-to-consider}
 
 Se trejnado ne estas via merkato, jen aliaj niĉoj kiuj plenumas la kriteriojn:
 
@@ -127,7 +127,7 @@ Se trejnado ne estas via merkato, jen aliaj niĉoj kiuj plenumas la kriteriojn:
 
 Ĉiu el ĉi tiuj havas la samajn karakterizaĵojn: klaraj retejaj bezonoj, kapablo pagi kaj komunuma buŝ-al-buŝa rekomendado.
 
-## Kion Ni Konstruis en Ĉi Tiu Leciono
+## Kion Ni Konstruis en Ĉi Tiu Leciono {#what-we-built-this-lesson}
 
 - **Kadron por elekto de niĉo**: tri kriterioj por taksi ajnan niĉon
 - **Validigaj metodoj**: klientaj konversacioj, konkuranta analizo, testado de alteriĝa paĝo

@@ -4,11 +4,11 @@ title: Actio - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Actio: wu_domain_renewal_completed
+# Actio: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Excitatur postquam dominium prospere renovatum est.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Excitatur postquam dominium prospere renovatum est.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadata renovationis (domain_name, years, customer_id, etc.). |
 | $result | `array&lt;string,mixed&gt;` | Rudis ordinatio resultati a registro reddita, novam expiry_date includens. |
 
-### Ab
+### Ab {#since}
 
 - 2.0.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) ad lineam 594

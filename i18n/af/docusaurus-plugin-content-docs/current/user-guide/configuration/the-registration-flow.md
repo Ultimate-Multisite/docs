@@ -3,13 +3,13 @@ title: Die Registrasieproses
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Die Registrasieproses (v2)
+# Die Registrasieproses (v2) {#the-registration-flow-v2}
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
 Gebruikers kan op verskillende maniere by jou netwerk registreer. Hulle kan jou registrasieformulier gebruik of 'n deelbare skakel na 'n voorafgekoese plan. Hier sal ons wys hoe jou kliënte op jou netwerk kan registreer met die beskikbare roetes en wat gebeur nadat hulle by jou netwerk geregistreer het.
 
-## Gebruik van die Registrasieformulier:
+## Gebruik van die Registrasieformulier: {#using-the-registration-form}
 
 Dit is die standaard registrasieproses. Jy skep 'n registasiebladsy met 'n **checkout form** en dit is waar jou kliënte sal gaan om op jou netwerk te registreer en vir 'n plan te inteken. Jy kan verskeie registasiebladsye hê, elkeen met 'n ander registrasieformulier as jy wil.
 
@@ -35,13 +35,13 @@ As hulle op 'n betaalde plan geregistreer het of die e-posverifikasie is nie ver
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Gebruik van 'n Deelbare Skakel:
+## Gebruik van 'n Deelbare Skakel: {#using-a-shareable-link}
 
 Die proses van registrasie met behulp van 'n deelbare skakel is basies dieselfde as die registrasieformulier; die enigste verskil is dat met die gebruik van 'n deelbare skakel, kan jou kliënte 'n produk of webwerf-sjabloon voorafgekoes op die checkout form hê (verwys na die afdeling Voorafkoes van produkte en sjablone via URL-parameters) of miskien 'n kuponkode bygevoeg (verwys na die afdeling Gebruik van URL-parameters).
 
 Die registrasieproses sal dieselfde wees: hulle sal hoef hul naam, gebruikersnaam, e-posadres, webwerfnaam en titel, ens... in te vul, maar die plan of webwerf-sjabloon sal reeds vir hulle voorafgekoes wees.
 
-### Registreer met Handmatige Betalings:
+### Registreer met Handmatige Betalings: {#registering-using-manual-payments}
 
 As jy nie wil gebruik om PayPal, Stripe of enige ander betalingshekwerk wat deur Ultimate Multisite of sy add-on-integrasies aangebied word nie, kan jy handmatige betalings vir jou kliënte gebruik. Op hierdie manier kan jy 'n faktuur vir hulle genereer om op jou verkiesde betalingsverwerker te betaal nadat hulle by jou netwerk geregistreer het.
 

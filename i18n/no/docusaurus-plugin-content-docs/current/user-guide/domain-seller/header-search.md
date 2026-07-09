@@ -3,11 +3,11 @@ title: Overskrift for domenesøk
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search
+# Header Domain Search {#header-domain-search}
 
 Bruk dette oppsettet når du vil ha et lite skjema i headeren som starter et domenesøk, og deretter lar kunden velge blant tilgjengelige domener inne i Ultimate Multisite checkout.
 
-## Krav
+## Krav {#requirements}
 
 - Ultimate Multisite nettverksaktiv.
 - Multisite Ultimate Domain Seller nettverksaktiv.
@@ -16,7 +16,7 @@ Bruk dette oppsettet når du vil ha et lite skjema i headeren som starter et dom
   - Støttede TLD-er konfigurert, for eksempel `com`, `net` og `org`.
 - Et gyldig checkout-skjema som inneholder feltet **Domain Selection**.
 
-## Checkout-skjema
+## Checkout-skjema {#checkout-form}
 
 1. Opprett eller rediger checkout-skjemaet som brukes av registreringssiden.
 2. Legg til de vanlige påkrevde checkout-/Account-feltene, inkludert **Username**. Et checkout-skjema som bare inneholder domenefeltet, blir avvist av Ultimate Multisite-validering.
@@ -30,7 +30,7 @@ Registreringssiden bør vise checkout-skjemaet, for eksempel:
 [wu_checkout slug="domain-form"]
 ```
 
-## Header-skjema
+## Header-skjema {#header-form}
 
 Legg til et lite `GET`-skjema i site-headeren som sender det angitte søkeordet til checkout-siden som `domain_name`:
 
@@ -44,7 +44,7 @@ Legg til et lite `GET`-skjema i site-headeren som sender det angitte søkeordet 
 
 Ikke forhåndsvelg et domene i tilpasset header-JavaScript. Headeren skal bare sende søkeordet. Domain Seller checkout-skriptet leser `?domain_name=example`, fyller ut checkout-søkefeltet og kjører tilgjengelighetssøket slik at kunden kan velge blant domenene som returneres.
 
-## Forventet oppførsel
+## Forventet oppførsel {#expected-behaviour}
 
 Søk etter `example` i headeren skal åpne:
 
@@ -61,7 +61,7 @@ Checkout skal deretter vise valgbare resultater som:
 
 Etter at et tilgjengelig resultat er valgt, skal bestillingssammendraget inkludere domeneregistreringsproduktet og det valgte domenenavnet.
 
-## Verifisering
+## Verifisering {#verification}
 
 1. Åpne startsiden.
 2. Søk etter et rent navn, for eksempel `example`.
@@ -71,7 +71,7 @@ Etter at et tilgjengelig resultat er valgt, skal bestillingssammendraget inklude
 6. Klikk på **Velg** for et tilgjengelig domene.
 7. Bekreft at bestillingssammendraget inneholder `Domain Registration - example.com` eller det valgte domenet.
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
 - Hvis ingen liste vises, sjekk nettverksfanen i nettleseren for `admin-ajax.php?action=wu_domain_search` og bekreft at den returnerer ikke-tomme `domains` eller `results`.
 - Hvis checkout-skjemaet feiler validering under lagring, legg til de påkrevde Account-feltene, som **Username**.

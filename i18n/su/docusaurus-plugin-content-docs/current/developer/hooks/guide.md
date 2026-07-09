@@ -3,15 +3,15 @@ title: Pituduh Pamakéan Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Pituduh Pamakéan Hooks
+# Pituduh Pamakéan Hooks {#hooks-usage-guide}
 
 Ultimate Multisite nyayogikeun 200+ action hooks jeung 280+ filter hooks. Kaca ieu ngajelaskeun hooks anu pangseringna dipaké kalayan conto praktis. Pikeun rujukan lengkep anu dijieun otomatis, buka kaca séjén dina bagian ieu.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Siklus Hirup Palanggan
+### Siklus Hirup Palanggan {#customer-lifecycle}
 
-#### Sanggeus Nyieun Palanggan
+#### Sanggeus Nyieun Palanggan {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Parobahan Status Palanggan
+#### Parobahan Status Palanggan {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks Situs
+### Hooks Situs {#site-hooks}
 
-#### Sanggeus Situs Dipedalkeun
+#### Sanggeus Situs Dipedalkeun {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Saméméh Nerapkeun Témplat
+#### Saméméh Nerapkeun Témplat {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooks Kaanggotaan
+### Hooks Kaanggotaan {#membership-hooks}
 
-#### Transisi Status
+#### Transisi Status {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooks Pamayaran
+### Hooks Pamayaran {#payment-hooks}
 
-#### Pamayaran Réngsé / Gagal
+#### Pamayaran Réngsé / Gagal {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooks Checkout
+### Hooks Checkout {#checkout-hooks}
 
-#### Saméméh Ngolah / Sanggeus Réngsé
+#### Saméméh Ngolah / Sanggeus Réngsé {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooks Domain
+### Hooks Domain {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Filter Harga
+### Filter Harga {#pricing-filters}
 
-#### Total Karanjang
+#### Total Karanjang {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Ongkos Pajeg
+#### Ongkos Pajeg {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Filter Témplat
+### Filter Témplat {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Filter Watesan
+### Filter Watesan {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Filter Gateway
+### Filter Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Widang Formulir Checkout
+### Widang Formulir Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Eusi Email
+### Eusi Email {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

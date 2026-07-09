@@ -4,11 +4,11 @@ title: Filter - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filter: wu_country_get_states
+# Filter: wu_country_get_states {#filter-wucountrygetstates}
 
 Gëtt d'Lëscht vun de Bundesstaaten fir dëst Land zeréck.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Gëtt d'Lëscht vun de Bundesstaaten fir dëst Land zeréck.
 | $country_code | `string` | Zwee-Buschtawen-ISO-Code fir d'Land. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instanz vun der aktueller Klass. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0.11
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) op Zeil 86
 
 
-## Gëtt zeréck
+## Gëtt zeréck {#returns}
 Déi gefiltert Lëscht vun de Bundesstaaten.

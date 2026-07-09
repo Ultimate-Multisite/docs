@@ -4,22 +4,22 @@ title: ھەرىكەت - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Action: wu_membership_post_cancel
+# Action: wu_membership_post_cancel {#action-wumembershippostcancel}
 
 ئەزالىق بىكار قىلىنغاندىن كېيىن قوزغىتىلىدۇ.
 
 بۇ بىكار قىلىش ئېلخېتىنى قوزغىتىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | ئىسمى | تۈرى | چۈشەندۈرۈش |
 |------|------|-------------|
 | $membership_id | `int` | ئەزالىقنىڭ كىملىكى. |
 | $membership | `\WP_Ultimo\Models\Membership` | ئەزالىق ئوبيېكتى. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 2.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2290) دا 2290-قۇردا ئېنىقلانغان.

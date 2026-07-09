@@ -4,11 +4,11 @@ title: Филтер - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Го филтрира телото на пораката од е-поштата за ресетирање на лозинка.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Опис |
 |------|------|-------------|
@@ -17,14 +17,14 @@ _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 | $user_login | `string` | Корисничкото име за корисникот. |
 | $user_data | `\WP_User` | WP_User објект. |
 
-### Од верзија
+### Од верзија {#since}
 
 - 2.8.0
 - 4.1.0: Added <code>$user_login</code> and <code>$user_data</code> parameters.
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) на линија 149
 
 
-## Враќа
+## Враќа {#returns}
 Стандардна порака за е-пошта.

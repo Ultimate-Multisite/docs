@@ -3,15 +3,15 @@ title: Provjeri kontrast palete
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Provjera kontrasta palete
+# Provjera kontrasta palete {#validate-palette-contrast}
 
 Sposobnost **Validate Palette Contrast** provjerava parove boja u vašoj dizajnerskoj paleti radi usklađenosti s WCAG (Web Content Accessibility Guidelines) prije njihove primjene na vašu temu.
 
-## Pregled
+## Pregled {#overview}
 
 Ova sposobnost osigurava da shema boja vaše stranice zadovoljava standarde pristupačnosti provjerom omjera kontrasta između boja teksta i pozadine. Pomaže spriječiti kombinacije boja koje bi korisnicima s oštećenjima vida mogle biti teške za čitanje.
 
-## Format unosa
+## Format unosa {#input-format}
 
 Sposobnost prihvaća paletu boja kao unos:
 
@@ -35,7 +35,7 @@ Sposobnost prihvaća paletu boja kao unos:
 }
 ```
 
-### Parametri
+### Parametri {#parameters}
 
 | Parametar | Tip | Obavezno | Opis |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Sposobnost prihvaća paletu boja kao unos:
 | `wcag_level` | string | Ne | Razina usklađenosti s WCAG: "A", "AA" (zadano) ili "AAA" |
 | `pairs_to_check` | array | Ne | Određeni parovi boja za provjeru (npr. `["primary-text", "background-text"]`) |
 
-## Provjerene WCAG razine
+## Provjerene WCAG razine {#wcag-levels-checked}
 
 Sposobnost provjerava omjere kontrasta prema WCAG standardima:
 
@@ -56,7 +56,7 @@ Sposobnost provjerava omjere kontrasta prema WCAG standardima:
 - **Normalan tekst** — tekst manji od 18 pt (ili 14 pt podebljan)
 - **Veliki tekst** — tekst od 18 pt ili veći (ili 14 pt podebljan ili veći)
 
-## Shema izlaza
+## Shema izlaza {#output-schema}
 
 Sposobnost vraća detaljno izvješće o provjeri:
 
@@ -95,7 +95,7 @@ Sposobnost vraća detaljno izvješće o provjeri:
 }
 ```
 
-### Izlazna polja
+### Izlazna polja {#output-fields}
 
 | Polje | Tip | Opis |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Sposobnost vraća detaljno izvješće o provjeri:
 | `status` | string | "pass" ili "fail" za svaki par |
 | `recommendations` | array | Prijedlozi za poboljšanje neuspješnih parova |
 
-## Primjer upotrebe
+## Primjer upotrebe {#usage-example}
 
 **Upit:**
 ```
@@ -119,7 +119,7 @@ Sposobnost provjerava sve kombinacije boja i vraća:
 - ✅ Pozadina + tekst: omjer 12.1:1 (prolazi WCAG AAA)
 - Ukupno: Usklađeno s WCAG AA
 
-## Integracija s Theme Builder
+## Integracija s Theme Builder {#integration-with-theme-builder}
 
 Pri upotrebi odabira dizajnerskog smjera u Theme Builder, sposobnost Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Pri upotrebi odabira dizajnerskog smjera u Theme Builder, sposobnost Validate Pa
 4. Pruža preporuke za neusklađene parove
 5. Sprječava primjenu nepristupačnih shema boja
 
-## Najbolje prakse
+## Najbolje prakse {#best-practices}
 
 - **Započnite s razinom AA** — WCAG AA je standard za većinu web-stranica
 - **Testirajte prije primjene** — provjerite svoju paletu prije nego što se obvežete na dizajn
@@ -137,7 +137,7 @@ Pri upotrebi odabira dizajnerskog smjera u Theme Builder, sposobnost Validate Pa
 - **Uzmite u obzir korisničke preferencije** — neki korisnici mogu imati dodatnu osjetljivost na boje
 - **Koristite alate za provjeru kontrasta** — kombinirajte ovu sposobnost s alatima preglednika za verifikaciju
 
-## Neuspješni parovi i preporuke
+## Neuspješni parovi i preporuke {#failing-pairs-and-recommendations}
 
 Ako par boja ne prođe provjeru, sposobnost pruža preporuke:
 
@@ -155,7 +155,7 @@ Ako par boja ne prođe provjeru, sposobnost pruža preporuke:
 }
 ```
 
-## Povezane sposobnosti
+## Povezane sposobnosti {#related-abilities}
 
 - [Generiraj Logo SVG](./generate-logo-svg.md) — izradite logotipe s vašom provjerenom paletom boja
 - [Izradi izbornik](./create-menu.md) — izgradite navigaciju s pristupačnim bojama

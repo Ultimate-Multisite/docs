@@ -3,7 +3,7 @@ title: Captcha 更新日志
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha 更新日志
+# Captcha 更新日志 {#captcha-changelog}
 
 版本：1.5.0 - 发布于 2026-05-22
 * 新增：硬停止速率限制器 — 统计受验证码保护界面上的每个 GET 和 POST（wp-login / register / lost-password / comments、WooCommerce my-account / checkout / pay-for-order、Ultimate Multisite checkout / inline-login），并以 HTTP 429、一个 `Retry-After` header，以及随机化的 tarpit sleep（1–5 秒，硬上限 15 秒）响应。

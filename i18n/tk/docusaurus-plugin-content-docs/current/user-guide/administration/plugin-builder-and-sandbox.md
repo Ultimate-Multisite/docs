@@ -3,11 +3,11 @@ title: Plugin Builder we Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 sizde **Plugin Builder & Sandbox Systemini** tanit eder. Bu sistem arkalyk (sandbox) muhiti arkalykda WordPress pluginlerini döretmek, işlemek we dolandyr etmek üçin yapay zeka asistanyny ulanmaga imkan berýär — ähli bu howpsuz, izole ortama görä.
 
-## Umumylyk
+## Umumylyk {#overview}
 
 Plugin Builder AI asystantyň özüden gelip-gelip soraglaryňyz bilen gatnaşyp, size mysal üçin, natural dil bilen ýazylan WordPress pluginlerini döretmegi, işje etmek we dolandyrmagy mümkinleşdirýär. Döredilen pluginler hiç wakaýda hakyky sayt funksionalyga täsir etmeden öň, arkalyk katman (sandbox layer) içinde tassyklanýar, saklanýar we işje edilýär.
 
@@ -17,7 +17,7 @@ Ulanmak üçin mysallar:
 - WordPress hooklaryndan ýa-da özgertilipdirilen post türleri (custom post types) talap edýän funksiýalary prototiplemek.
 - Toplu işler üçin gysga wagty wekili awtomatlaşdyrmak skriptlerini döretmek.
 
-## AI arkaly Plugin Döretmek
+## AI arkaly Plugin Döretmek {#generating-a-plugin-via-ai}
 
 Plugin döretmek üçin, Gratis AI Agent chat interfeýsini açyň we näme gerekdigini düşündiriň. Mysal üçin:
 
@@ -32,7 +32,7 @@ AI şu işleri eder:
 
 Hasaplamaňdan öň, aynı söhbet sarynda soňra sorag bermegi arkaly netijäni gowusmaga mümkinçilik bar.
 
-## Sandbox İşje Etmek
+## Sandbox İşje Etmek {#sandbox-activation}
 
 Sandboxda döredilen plugin hasaplamak bilen hakyky ulgamy işje etmek aragatnaşyklydyr. Sandbox:
 

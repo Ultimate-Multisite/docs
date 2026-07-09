@@ -3,13 +3,13 @@ title: Nyetél Pamayaran Manual
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Nyetél Pangmayaran Manual (v2)
+# Nyetél Pangmayaran Manual (v2) {#setting-up-manual-payments-v2}
 
 _**CATETAN PENTING: Artikel ieu ngarujuk kana Ultimate Multisite vérsi 2.x.**_
 
 Pangmayaran manual nyaéta cara pikeun anjeun nawarkeun métode pangmayaran séjén lamun **Stripe** atawa **PayPal** teu sadia pikeun pamaké anjeun. Ieu bisa mangrupa transfer kawat atawa transfer bank, atawa métode pangmayaran séjén anu sadia sacara lokal pikeun pamaké anjeun.
 
-## Kumaha ngaktipkeun Pangmayaran Manual
+## Kumaha ngaktipkeun Pangmayaran Manual {#how-to-enable-manual-payments}
 
 Nyetél pangmayaran manual téh kacida gampangna. Anjeun ngan kudu ngaktipkeunana dina gerbang pangmayaran sarta ngalebetkeun parentah lengkep ngeunaan kumaha pamaké kudu ngirim pangmayaran.
 
@@ -31,7 +31,7 @@ Sarta maranéhna ogé bakal nampa pesen dina kaca **Hatur Nuhun** anjeun kalayan
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Mastikeun pangmayaran manual
+## Mastikeun pangmayaran manual {#confirming-manual-payments}
 
 Pikeun mastikeun pangmayaran manual, buka ménu **Pangmayaran** dina palang kénca. Di dinya anjeun bisa ningali sadaya pangmayaran dina jaringan anjeun jeung rincina, kaasup **status**-na. Pangmayaran manual bakal salawasna boga status **Ditangguhkeun** nepi ka anjeun ngarobahna sacara manual.
 

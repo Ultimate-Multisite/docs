@@ -3,13 +3,13 @@ title: Integreerimisjuhend
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integratsiooni juhend
+# Integratsiooni juhend {#integration-guide}
 
 See juhend käsitleb levinud integratsioonimustreid Ultimate Multisite’iga, sealhulgas ühendamist väliste teenustega, kohandatud makselüüside loomist ja webhookide käsitlemist.
 
 Isoleeritud rentniku taristu jaoks vaata [Multi-Tenancy integratsiooni](./multi-tenancy), et saada juhiseid suveräänse rentniku algkäivituse, migratsiooni verifitseerimise, SSO ja eemaldamise kohta.
 
-## CRM-i integratsioon
+## CRM-i integratsioon {#crm-integration}
 
 Sünkrooni kliendiandmed oma CRM-iga, kui uued kliendid registreeruvad:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analüütika integratsioon
+## Analüütika integratsioon {#analytics-integration}
 
 Jälgi peamisi ärisündmusi kogu kliendi elutsükli jooksul:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Järgmised sammud
+## Järgmised sammud {#next-steps}
 
 - [Kohandatud Gateway arendus](./custom-gateway) — Loo oma makselüüs
 - [Webhookide käsitlemine](./webhooks) — Loo kohandatud webhooki endpointid

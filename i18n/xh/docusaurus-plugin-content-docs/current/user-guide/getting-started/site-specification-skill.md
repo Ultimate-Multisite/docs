@@ -3,11 +3,11 @@ title: Isakhono seNkcukacha zeSiza
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Isakhono seNkcazelo yeSayithi
+# Isakhono seNkcazelo yeSayithi {#site-specification-skill}
 
 **Isakhono seNkcazelo yeSayithi** yindlela ecwangcisiweyo yokubamba iinjongo zesayithi yakho, abaphulaphuli, kunye nesazisi sophawu. Olu lwazi lugcinwa kwimemori yakho ye-**site_brief**, ethi ii-agent zibhekise kuyo kwiiseshoni ukuze zinike uncedo olungaguquguqukiyo, olunolwazi ngomxholo.
 
-## Yintoni iNkcazelo yeSayithi?
+## Yintoni iNkcazelo yeSayithi? {#what-is-site-specification}
 
 INkcazelo yeSayithi yinkqubo yokubhala phantsi:
 
@@ -19,9 +19,9 @@ INkcazelo yeSayithi yinkqubo yokubhala phantsi:
 
 Le nkcazelo iba yi-**site_brief** yakho, imemori eqhubekayo esetyenziswa zii-agent ukuze ziqonde umxholo wesayithi yakho.
 
-## Kutheni Usebenzisa iNkcazelo yeSayithi?
+## Kutheni Usebenzisa iNkcazelo yeSayithi? {#why-use-site-specification}
 
-### Ukungaguquguquki Kwiiseshoni
+### Ukungaguquguquki Kwiiseshoni {#consistency-across-sessions}
 
 Ngaphandle kwe-site_brief, kuya kufuneka uchaze kwakhona injongo yesayithi yakho rhoqo xa uqala iseshoni entsha. Ngayo, ii-agent ziqonda ngoko nangoko:
 
@@ -30,7 +30,7 @@ Ngaphandle kwe-site_brief, kuya kufuneka uchaze kwakhona injongo yesayithi yakho
 - Ulwakhiwo lomxholo wakho
 - Iinjongo zeshishini lakho
 
-### Iingcebiso Ezingcono
+### Iingcebiso Ezingcono {#better-recommendations}
 
 Ii-agent zisebenzisa i-site_brief yakho ukuze:
 
@@ -39,17 +39,17 @@ Ii-agent zisebenzisa i-site_brief yakho ukuze:
 - Ziphakamise uyilo olungqinelana nophawu lwakho
 - Ziphephe ukucebisa iimpawu ezingahambelaniyo
 
-### Ukuqalisa Ngokukhawuleza
+### Ukuqalisa Ngokukhawuleza {#faster-onboarding}
 
 Ii-agent ezintsha (okanye ii-agent kwiiseshoni ezintsha) zinokukhawuleza ziqonde imeko ngokufunda i-site_brief yakho endaweni yokubuza imibuzo yokucacisa.
 
-## Ukuqalisa iNkcazelo yeSayithi
+## Ukuqalisa iNkcazelo yeSayithi {#initiating-site-specification}
 
-### Ngexesha le-Theme Builder Onboarding
+### Ngexesha le-Theme Builder Onboarding {#during-theme-builder-onboarding}
 
 Isakhono seNkcazelo yeSayithi siqalwa ngokuzenzekelayo ngexesha le-**Theme Builder onboarding flow**. I-Setup Assistant agent ibuza imibuzo kwaye yakhe i-site_brief yakho.
 
-### Ukuqalisa Ngesandla
+### Ukuqalisa Ngesandla {#manual-initiation}
 
 Ungaqalisa iNkcazelo yeSayithi nangaliphi na ixesha:
 
@@ -63,9 +63,9 @@ okanye
 "Help me create a site brief"
 ```
 
-## Inkqubo yeNkcazelo yeSayithi
+## Inkqubo yeNkcazelo yeSayithi {#the-site-specification-process}
 
-### Inyathelo 1: Injongo yeSayithi
+### Inyathelo 1: Injongo yeSayithi {#step-1-site-purpose}
 
 I-agent iyabuza:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 Ungakhetha udidi okanye uchaze injongo yakho.
 
-### Inyathelo 2: Abaphulaphuli Ekujoliswe Kubo
+### Inyathelo 2: Abaphulaphuli Ekujoliswe Kubo {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### Inyathelo 3: Isazisi Sophawu
+### Inyathelo 3: Isazisi Sophawu {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### Inyathelo 4: Iinjongo Zeshishini
+### Inyathelo 4: Iinjongo Zeshishini {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### Inyathelo 5: Ulwakhiwo Lomxholo
+### Inyathelo 5: Ulwakhiwo Lomxholo {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## Imemori yakho ye-site_brief
+## Imemori yakho ye-site_brief {#your-sitebrief-memory}
 
 Emva kokugqiba iNkcazelo yeSayithi, ulwazi lwakho lugcinwa njenge-**site_brief** kwimemori ye-agent yakho. Le yingxelo ecwangcisiweyo equlathe:
 
@@ -169,9 +169,9 @@ Emva kokugqiba iNkcazelo yeSayithi, ulwazi lwakho lugcinwa njenge-**site_brief**
 }
 ```
 
-## Ukujonga Nokuhlaziya i-site_brief Yakho
+## Ukujonga Nokuhlaziya i-site_brief Yakho {#viewing-and-updating-your-sitebrief}
 
-### Jonga i-site_brief Yakho
+### Jonga i-site_brief Yakho {#view-your-sitebrief}
 
 Buza i-agent:
 
@@ -187,7 +187,7 @@ okanye
 
 I-agent iya kubonisa inkcazelo yakho egciniweyo.
 
-### Hlaziya i-site_brief Yakho
+### Hlaziya i-site_brief Yakho {#update-your-sitebrief}
 
 Ukuba isayithi yakho iyakhula, ungayihlaziya:
 
@@ -203,9 +203,9 @@ okanye
 
 Oku kuya kuqhuba kwakhona isakhono seNkcazelo yeSayithi ngolwazi lwakho olukhoyo njengendawo yokuqalisa.
 
-## Indlela Ii-agent Ezisebenzisa Ngayo i-site_brief
+## Indlela Ii-agent Ezisebenzisa Ngayo i-site_brief {#how-agents-use-sitebrief}
 
-### Iingcebiso Zoyilo
+### Iingcebiso Zoyilo {#design-recommendations}
 
 Xa ucela utshintsho loyilo, ii-agent zibhekisa kwi-site_brief yakho:
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Iingcebiso Zeempawu
+### Iingcebiso Zeempawu {#feature-suggestions}
 
 Ii-agent zicebisa iimpawu ezihambelana neenjongo zakho:
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Ulwakhiwo Lomxholo
+### Ulwakhiwo Lomxholo {#content-structure}
 
 Ii-agent ziphakamisa ulungelelwaniso lomxholo olusekelwe kulwakhiwo lwakho:
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## Ezona Ndlela Zilungileyo
+## Ezona Ndlela Zilungileyo {#best-practices}
 
-### Cacisa Ngokuthe Ngqo
+### Cacisa Ngokuthe Ngqo {#be-specific}
 
 Endaweni yokuthi "abaphulaphuli ngokubanzi," chaza abaphulaphuli bakho bokwenene:
 
 - ✓ "Abasetyhini abaneminyaka eyi-25-45, abanomdla kwifashoni ezinzileyo"
 - ✗ "Wonke umntu"
 
-### Hlaziya Rhoqo
+### Hlaziya Rhoqo {#update-regularly}
 
 Njengoko isayithi yakho ikhula, hlaziya i-site_brief yakho:
 
@@ -256,14 +256,14 @@ Njengoko isayithi yakho ikhula, hlaziya i-site_brief yakho:
 - Xa isazisi sophawu lwakho sitshintsha
 - Xa iinjongo zeshishini lakho zitshintsha
 
-### Sebenzisa Isigama Esingaguquguqukiyo
+### Sebenzisa Isigama Esingaguquguqukiyo {#use-consistent-terminology}
 
 Sebenzisa amagama afanayo kwiiseshoni:
 
 - ✓ Hlala usithi "sustainable jewelry" (hayi "eco-friendly jewelry" okanye "green products")
 - ✓ Bhekisa kubaphulaphuli bakho ngendlela efanayo rhoqo
 
-### Bandakanya Umxholo
+### Bandakanya Umxholo {#include-context}
 
 Nika imvelaphi enceda ii-agent ziqonde izigqibo zakho:
 
@@ -271,7 +271,7 @@ Nika imvelaphi enceda ii-agent ziqonde izigqibo zakho:
 - "Abaphulaphuli bethu banolwazi lobuchwepheshe kwaye balindele uyilo lwangoku"
 - "Siyi-startup exhaswa ngemali yethu, ngoko sifuna izisombululo ezingabizi kakhulu"
 
-## Ubudlelwane noKungeniswa kwe-Theme Builder
+## Ubudlelwane noKungeniswa kwe-Theme Builder {#relationship-to-theme-builder-onboarding}
 
 Isakhono seNkcazelo Yesayithi sidityaniswe kwi-**Theme Builder onboarding flow**. Xa ugqiba ukungeniswa, i-site_brief yakho yenziwa ngokuzenzekelayo ngolwazi olunikileyo.
 
@@ -281,7 +281,7 @@ Ungaqhuba neNkcazelo Yesayithi ngokuzimeleyo ukuba ufuna uku:
 - Hlaziya isishwankathelo sesayithi yakho njengoko isayithi yakho ikhula
 - Yenza inkcazelo eneenkcukacha ngaphambi kokuqala i-Theme Builder
 
-## Ukulungisa Iingxaki
+## Ukulungisa Iingxaki {#troubleshooting}
 
 **I-site_brief yam ayisetyenziswa**
 - Qinisekisa ukuba i-agent inokufikelela kwimemori
@@ -297,7 +297,7 @@ Ungaqhuba neNkcazelo Yesayithi ngokuzimeleyo ukuba ufuna uku:
 - Hlaziya i-site_brief yakho ukuba iphelelwe lixesha
 - Nika umxholo owongezelelweyo kwizicelo zakho
 
-## Amanyathelo Alandelayo
+## Amanyathelo Alandelayo {#next-steps}
 
 Emva kokuchaza inkcazelo yesayithi yakho:
 

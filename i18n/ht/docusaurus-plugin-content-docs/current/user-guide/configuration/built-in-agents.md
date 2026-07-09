@@ -3,11 +3,11 @@ title: Ajan ki entegre
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents entegre yo
+# Agents entegre yo {#built-in-agents}
 
 Gratis AI Agent v1.9.0 vini ak senk agents entegre, chak youn pre-konfigire ak yon seri zouti ki konsantre, yon system prompt ki adapte, ak sijesyon pou kòmanse ki koresponn ak travay komen nan zòn sa a. Lè w chanje ant agents yo, sa chanje sa asistan an ka fè ak fason li reponn — san okenn konfigirasyon bò kote pa w. Superdav AI Agent v1.18.0 ka ajoute zouti ki pran orè an konsiderasyon, dosye rapèl, pòtay apwobasyon, ak notifikasyon SMS nan workflow sa yo lè entegrasyon ki gen rapò yo konfigire.
 
-## Kisa yon Agent ye?
+## Kisa yon Agent ye? {#what-is-an-agent}
 
 Chak agent se yon pwofil konfigirasyon ki gen non ki konbine:
 
@@ -15,7 +15,7 @@ Chak agent se yon pwofil konfigirasyon ki gen non ki konbine:
 - **System prompt** — enstriksyon ki fikse ton, priyorite, ak kontrent agent la
 - **Sijesyon** — prompts ki deja ekri yo montre nan koòdone chat la pou ede w kòmanse rapidman
 
-## Aksede Agent Picker la
+## Aksede Agent Picker la {#accessing-the-agent-picker}
 
 1. Louvri panèl **Gratis AI Agent** la nan sidebar admin WordPress la.
 2. Klike sou **agent icon** nan anlè agoch header chat la (ikon nan chanje pou reflete agent ki aktif la).
@@ -24,9 +24,9 @@ Chak agent se yon pwofil konfigirasyon ki gen non ki konbine:
 
 Ou ka chanje agents tou nan mitan yon konvèsasyon — system prompt nouvo agent la pran efè apati pwochen mesaj la.
 
-## Senk Agents entegre yo
+## Senk Agents entegre yo {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Konsantre:** Kreye ak modifye pòs, paj, ak fòm kontak.
 
@@ -47,7 +47,7 @@ Ou ka chanje agents tou nan mitan yon konvèsasyon — system prompt nouvo agent
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Konsantre:** Kreyasyon sit entènèt depi kòmansman rive nan fen apati yon sèl prompt.
 
@@ -70,7 +70,7 @@ Ou ka chanje agents tou nan mitan yon konvèsasyon — system prompt nouvo agent
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Konsantre:** Pèsonalizasyon vizyèl — koulè, tipografi, CSS, ak modèl blòk.
 
@@ -87,7 +87,7 @@ Ou ka chanje agents tou nan mitan yon konvèsasyon — system prompt nouvo agent
 - *Pran yon screenshot paj dakèy la epi di m kisa ou ta amelyore.*
 - *Kreye yon modèl blòk hero ki ka reyitilize ak yon imaj background tout lajè ak yon tit santre.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Konsantre:** Dekouvri, enstale, ak jere WordPress plugins.
 
@@ -105,7 +105,7 @@ Ou ka chanje agents tou nan mitan yon konvèsasyon — system prompt nouvo agent
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Konsantre:** Reponn kesyon sou kontni site, paramèt, ak konfigirasyon WordPress.
 
@@ -124,7 +124,7 @@ Ou ka chanje agents tou nan mitan yon konvèsasyon — system prompt nouvo agent
 
 ---
 
-## Entegrasyon Otomasyon Superdav
+## Entegrasyon Otomasyon Superdav {#superdav-automation-integrations}
 
 Lè entegrasyon Superdav AI Agent v1.18.0 yo konfigire, ajan entegre yo ka patisipe nan workflow otomasyon ki pi an sekirite epi ki pran orè an kont:
 
@@ -138,11 +138,11 @@ Workflow rekòmande: mande ajan an prepare mesaj la oswa aksyon an, revize deman
 
 ---
 
-## Pèsonalize Ajan yo
+## Pèsonalize Ajan yo {#customising-agents}
 
 Chak ajan entegre ka pwolonje oswa ranplase atravè filtè `gratis_ai_agent_agents` la.
 
-### Ajoute yon prompt sistèm pèsonalize nan yon ajan ki deja egziste
+### Ajoute yon prompt sistèm pèsonalize nan yon ajan ki deja egziste {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Anrejistre yon nouvo ajan
+### Anrejistre yon nouvo ajan {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Nouvo ajan an parèt nan Selektè Ajan an imedyatman apre filtè a kouri.
 
-### Retire yon ajan entegre
+### Retire yon ajan entegre {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

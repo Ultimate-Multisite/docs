@@ -3,11 +3,11 @@ title: Abilități de Management al Plugin-urilor
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Capabilități de Management al Plugin-urilor
+# Capabilități de Management al Plugin-urilor {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 vine echipat cu **7 capacități de management al plugin-urilor** pe care asistentul AI le poate apela în timpul unei conversații. Aceste capacități oferă control programatic asupra plugin-urilor WordPress instalate prin [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Prezentare Capacități
+## Prezentare Capacități {#abilities-overview}
 
 | Capacitate | Slug | Descriere |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 vine echipat cu **7 capacități de management al plugin-
 | Install Plugin | `install_plugin` | Implementează un plugin sandbox într-acest director de plugin-uri WordPress activ. |
 | Activate Plugin | `activate_plugin` | Activează un plugin sandbox în mediul sandbox wp-env. |
 
-## API-ul Instalatorului de Plugin-uri
+## API-ul Instalatorului de Plugin-uri {#plugin-installer-api}
 
 Instalatorul de plugin-uri gestionează operațiunile pe sistemul de fișiere atunci când implementează sau elimină plugin-uri. Comportamentele cheie sunt:
 
@@ -28,7 +28,7 @@ Instalatorul de plugin-uri gestionează operațiunile pe sistemul de fișiere at
 - **Actualizare**: Înlocuiește fișierele existente ale plugin-ului. Dezactivează plugin-ul înainte de a scrie pentru a evita erorile de stare parțială.
 - **Ștergere după slug**: Localizează directorul plugin-ului după slug, îl dezactivează pe toate site-urile și apoi elimină directorul.
 
-### Înregistrarea unui Handler de Instalare Personalizat
+### Înregistrarea unui Handler de Instalare Personalizat {#registering-a-custom-install-handler}
 
 Puteți accesa ciclul de viață al instalării folosind acțiunile `gratis_ai_plugin_installer_before_install` și `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registrul Ecosistemului
+## Registrul Ecosistemului {#ecosystem-registry}
 
 Capabilitățile sunt înregistrate prin **registrul ecosistemului de plugin-uri**. Acest registru mapează slug-urile capacităților la clasele lor handler și le expune dispatcher-ului de instrumente al agentului AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integrarea HookScanner
+## Integrarea HookScanner {#hookscanner-integration}
 
 Capabilitățile `create_plugin` și `update_plugin` rulează automat **HookScanner** pe codul generat. HookScanner returnează o listă de hook-uri de acțiune și filtre WordPress înregistrate de plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner sări automat peste directorii `vendor/` și `node_modules/`.
 
-## Arhitectura Job-urilor Asincrone
+## Arhitectura Job-urilor Asincrone {#async-job-architecture}
 
 Operațiunile lungi de rulat ale plugin-urilor (generare, instalare) sunt trimise ca **job-uri asincrone** cu urmărire a progresului în timp real. Interfața de chat AI interoghează progresul și transmite actualizări de stare utilizatorului:
 

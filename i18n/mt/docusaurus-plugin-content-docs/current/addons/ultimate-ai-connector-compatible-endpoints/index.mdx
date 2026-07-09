@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints jintegra APIs ta' fornituri AI kompatibbli ma' OpenAI man-network multisite WordPress tiegħek. Ikkonfigura diversi fornituri AI — kull wieħed bil-URL tal-punt finali tiegħu, iċ-ċavetta API tiegħu, u l-mudell predefinit tiegħu — u dderieġi t-talbiet b'fallback awtomatiku meta fornitur ma jkunx disponibbli.
 
-## Karatteristiċi ewlenin
+## Karatteristiċi ewlenin {#key-features}
 
 - **Appoġġ għal diversi fornituri**: Żid diversi cards ta' fornituri AI, kull waħda bil-URL tal-punt finali tagħha, iċ-ċavetta API tagħha, u l-mudell predefinit tagħha
 - **Ġibed biex tibdel l-ordni**: Irranġa l-fornituri skont il-prijorità billi tuża l-manku tal-qabda fuq kull card; it-talbiet jużaw il-fornituri fl-ordni
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints jintegra APIs ta' fornituri AI ko
 - **Tespandi awtomatikament meta żżid**: Cards ġodda ta' fornituri jespandu awtomatikament sabiex tkun tista' timla d-dettalji minnufih
 - **Tkissir tal-cache tal-iskripts**: L-iskripts tal-fornituri jitneħħielhom il-cache meta l-estensjoni tiġi aġġornata biex jiġi żgurat li titgħabba l-aħħar verżjoni
 
-## Rekwiżiti
+## Rekwiżiti {#requirements}
 
 - WordPress 5.3 jew ogħla
 - PHP 7.4 jew ogħla
 - Estensjoni Ultimate Multisite (attiva)
 - Punt finali API kompatibbli ma' OpenAI (ospitat minnek stess jew minn parti terza)
 
-## Installazzjoni
+## Installazzjoni {#installation}
 
 1. Tella' l-fajls tal-add-on fid-direttorju `/wp-content/plugins/` tiegħek
 2. Attiva l-estensjoni permezz tal-menu 'Plugins' f'WordPress
 3. Mur lejn **Ultimate Multisite → AI Connector** biex tikkonfigura l-add-on
 
-## Konfigurazzjoni
+## Konfigurazzjoni {#configuration}
 
-### Twaqqif b'diversi fornituri
+### Twaqqif b'diversi fornituri {#multi-provider-setup}
 
 L-iskrin tal-konfigurazzjoni juża tqassim ibbażat fuq cards fejn kull card tirrappreżenta fornitur AI wieħed. Tista' żżid kemm għandek bżonn fornituri.
 
-#### Żieda ta' fornitur
+#### Żieda ta' fornitur {#adding-a-provider}
 
 1. Mur għal **Ultimate Multisite → AI Connector** fl-amministrazzjoni tan-network
 2. Ikklikkja **Żid fornitur**
@@ -52,15 +52,15 @@ L-iskrin tal-konfigurazzjoni juża tqassim ibbażat fuq cards fejn kull card tir
    - **Mudell predefinit** — l-identifikatur tal-mudell li għandu jintuża b'mod predefinit għal dan il-fornitur (eż. `gpt-4o`, `mistral-small`)
 5. Ikklikkja **Issejvja s-settings**
 
-#### Tneħħija ta' fornitur
+#### Tneħħija ta' fornitur {#removing-a-provider}
 
 Ikklikkja l-buttuna **Neħħi** fuq kwalunkwe card ta' fornitur biex tħassru. Issejvja s-settings biex tapplika l-bidla.
 
-#### Tibdil fl-ordni tal-fornituri
+#### Tibdil fl-ordni tal-fornituri {#reordering-providers}
 
 Ġibed l-ikona tal-qabda (⣿) fuq in-naħa tax-xellug ta' kwalunkwe card ta' fornitur biex tbiddel l-ordni tagħha. L-ordni tiddetermina l-prijorità tal-fallback: it-talbiet jintbagħtu lill-ewwel fornitur u jaqgħu lura għall-fornituri sussegwenti jekk talba tfalli.
 
-### Rotot ta' fallback
+### Rotot ta' fallback {#fallback-routing}
 
 Meta talba lill-fornitur primarju tfalli — minħabba timeout, limitu tar-rata, jew qtugħ tas-servizz — il-connector awtomatikament jerġa' jipprova mal-fornitur li jmiss fil-lista. Dan ikompli tul il-lista sakemm fornitur jirnexxi jew sakemm ikunu ġew ippruvati l-fornituri kollha.
 
@@ -72,7 +72,7 @@ Meta talba lill-fornitur primarju tfalli — minħabba timeout, limitu tar-rata,
 
 Il-fallback huwa trasparenti għall-estensjoni jew theme li tagħmel is-sejħa — huma jirċievu jew rispons b'suċċess jew żball finali, irrispettivament minn kemm-il fornitur ġie ppruvat.
 
-### Referenza tal-konfigurazzjoni tal-fornitur
+### Referenza tal-konfigurazzjoni tal-fornitur {#provider-configuration-reference}
 
 | Qasam | Meħtieġ | Deskrizzjoni |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Il-fallback huwa trasparenti għall-estensjoni jew theme li tagħmel is-sejħa �
 | Ċavetta API | Iva | Ċavetta ta' awtentikazzjoni għal dan il-fornitur |
 | Mudell predefinit | Iva | Identifikatur tal-mudell użat meta l-ebda mudell ma jiġi speċifikat fit-talba |
 
-## Issolvi l-problemi
+## Issolvi l-problemi {#troubleshooting}
 
-### Ma hemm l-ebda fornitur elenkat
+### Ma hemm l-ebda fornitur elenkat {#no-providers-are-listed}
 
 Jekk il-lista tal-fornituri tkun vojta wara li tissejvja, ikkonferma li:
 
@@ -91,21 +91,21 @@ Jekk il-lista tal-fornituri tkun vojta wara li tissejvja, ikkonferma li:
 - Il-browser tiegħek ma mblokkax lill-paġna tas-settings milli tissejvja (iċċekkja l-console tal-browser għal żbalji JavaScript)
 - L-estensjoni hija attiva u tinsab fuq l-iskrin tal-amministrazzjoni tan-network
 
-### It-talbiet qed ifallu għall-fornituri kollha
+### It-talbiet qed ifallu għall-fornituri kollha {#requests-are-failing-for-all-providers}
 
 - Ivverifika li l-URL tal-punt finali ta' kull fornitur jista' jintlaħaq mis-server tiegħek (mhux biss mill-browser tiegħek)
 - Iċċekkja li kull ċavetta API hija valida u ma skadietx
 - Irrevedi l-istatus tal-limitu tar-rata u tal-kwota tal-fornitur fid-dashboard tagħhom
 - Attiva l-logging tad-debug ta' WordPress (`WP_DEBUG_LOG`) biex taqbad messaġġi ta' żball dettaljati mill-connector
 
-### Fornitur mhux qed jintuża għall-fallback
+### Fornitur mhux qed jintuża għall-fallback {#a-provider-is-not-being-used-for-fallback}
 
 Drag-to-reorder ibiddel l-ordni tal-fallback. Ikkonferma li l-fornitur li tistenna li jirċievi talbiet ta' fallback jinsab fil-pożizzjoni korretta fil-lista u li l-URL tal-punt finali u ċ-ċavetta API tiegħu huma korretti.
 
-### Card ġdida tal-fornitur ma tespandix awtomatikament
+### Card ġdida tal-fornitur ma tespandix awtomatikament {#new-provider-card-does-not-expand-automatically}
 
 L-espansjoni awtomatika teħtieġ li JavaScript ikun attivat fil-browser tiegħek. Jekk il-card ma tespandix meta tikklikkja, iċċekkja l-console tal-browser għal żbalji. Il-kontenut tal-card dejjem jista' jintlaħaq billi tikklikkja l-header tal-card anke jekk l-espansjoni awtomatika ma tiskattax.
 
-## Changelog
+## Changelog {#changelog}
 
 Ara [Changelog](./changelog) għall-istorja sħiħa tal-verżjonijiet.

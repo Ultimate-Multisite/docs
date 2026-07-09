@@ -3,13 +3,13 @@ title: Kulipwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kulipwa (v2)
+# Kulipwa (v2) {#getting-paid-v2}
 
 _**DONDOO MUHIMU: Makala hii inahusu Ultimate Multisite toleo 2.x.**_
 
 Ultimate Multisite ina mfumo wa uanachama na utozaji uliojengwa ndani. Ili mfumo wetu wa utozaji ufanye kazi, tumeunganisha malango ya malipo yanayotumika zaidi katika biashara mtandaoni. Malango chaguomsingi ya malipo katika Ultimate Multisite ni _Stripe_ , _PayPal_ , na Malipo ya Mwongozo. Pia unaweza kutumia _WooCommerce_ , _GoCardless_ na _Payfast_ kupokea malipo kwa kusakinisha viendelezi vyake husika.
 
-## Mipangilio ya Msingi
+## Mipangilio ya Msingi {#basic-settings}
 
 Unaweza kusanidi mojawapo ya malango haya ya malipo chini ya mipangilio ya malipo ya Ultimate Multisite. Unaweza kuipata kwa kwenda kwenye **menyu ya Ultimate Multisite > Mipangilio > Malipo.**
 
@@ -39,7 +39,7 @@ Hii huzuia uanachama kuonekana kana kwamba unasasishwa kiotomatiki wakati lango 
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Mahali pa kupata malango:
+## Mahali pa kupata malango: {#where-to-find-the-gateways}
 
 Unaweza kusanidi malango ya malipo kwenye ukurasa huo huo ( **Ultimate Multisite > Mipangilio > Malipo**). Chini moja kwa moja ya **malango ya malipo yanayotumika** , utaweza kuona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ na _Mwongozo_.
 
@@ -67,7 +67,7 @@ Pia huu hapa mwonekano kamili wa mipangilio ya malango ya malipo:
 
 Sasa, ikiwa unataka kutumia _WooCommerce_ , _GoCardless_ au _Payfast_ kama lango lako la malipo, utahitaji **kusakinisha na kusanidi viendelezi vyake**.
 
-### Jinsi ya kusakinisha kiendelezi cha WooCommerce:
+### Jinsi ya kusakinisha kiendelezi cha WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Tunaelewa kwamba _Stripe_ na _PayPal_ hazipatikani katika baadhi ya nchi, jambo linaloweka kikomo au kuwazuia watumiaji wa Ultimate Multisite kutumia plugin yetu kwa ufanisi. Kwa hiyo tuliunda kiendelezi cha kuunganisha _WooCommerce,_ ambayo ni plugin maarufu sana ya biashara mtandaoni. Wasanidi programu kote duniani waliunda viendelezi vya kuunganisha malango tofauti ya malipo nayo. Tulitumia fursa hii kupanua malango ya malipo unayoweza kutumia na mfumo wa utozaji wa Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Baada ya kuiwasha, ikiwa bado huna nyongeza ya WooCommerce iliyosakinishwa na ku
 
 Ili kusoma zaidi kuhusu nyongeza ya WooCommerce Integration, **bofya hapa**.
 
-### Jinsi ya kusakinisha nyongeza ya GoCardless:
+### Jinsi ya kusakinisha nyongeza ya GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Hatua za kusakinisha nyongeza ya _GoCardless_ zinafanana sana na za nyongeza ya _WooCommerce_. Tafadhali nenda kwenye ukurasa wa nyongeza na uchague nyongeza ya **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Baada ya usakinishaji kukamilika, utaelekezwa kwenye ukurasa wa nyongeza. Hapa, 
 
 Ili kujifunza jinsi ya kuanza kutumia lango la _GoCardless_, **soma makala hii**.
 
-### Jinsi ya kusakinisha nyongeza ya Payfast:
+### Jinsi ya kusakinisha nyongeza ya Payfast: {#how-to-install-the-payfast-add-on}
 
 Nenda kwenye ukurasa wa nyongeza na uchague nyongeza ya **Ultimate Multisite: Payfast Gateway**.
 

@@ -3,11 +3,11 @@ title: Översikt över instrumentpanelen
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Översikt över kontrollpanelen
+# Översikt över kontrollpanelen {#dashboard-overview}
 
 Ultimate Multisite har en dedikerad **kontrollpanel** under Ultimate Multisite-menyn och lägger även till widgetar i nätverkets kontrollpanel. Den här artikeln går igenom vad du hittar på båda ställena.
 
-## Nätverkets kontrollpanel
+## Nätverkets kontrollpanel {#the-network-dashboard}
 
 Ultimate Multisite lägger till användbara widgetar i kontrollpanelen på nätverksnivå som du hittar under **Mina webbplatser → Nätverksadmin → Kontrollpanel**.
 
@@ -35,7 +35,7 @@ Så här fungerar varje widget:
 
 ![Nyhets-widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisites kontrollpanel
+## Ultimate Multisites kontrollpanel {#the-ultimate-multisite-dashboard}
 
 Medan nätverkets kontrollpanel ger en helhetsbild av nätverket, visar Ultimate Multisites kontrollpanel (överst i Ultimate Multisite-menyn) information om själva tjänsten.
 

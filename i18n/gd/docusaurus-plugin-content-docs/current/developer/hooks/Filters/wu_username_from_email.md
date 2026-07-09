@@ -4,11 +4,11 @@ title: Criathrag - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Criathrag: wu_username_from_email
+# Criathrag: wu_username_from_email {#filter-wuusernamefromemail}
 
 Criathraich ainm-cleachdaiche ùr neach-ceannach.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Criathraich ainm-cleachdaiche ùr neach-ceannach.
 | $new_user_args | `array` | Array de dh’argamaidean cleachdaiche ùir, ’s dòcha a’ gabhail a-steach ciad ainm agus sloinneadh. |
 | $suffix | `string` | Cuir string ri ainm-cleachdaiche gus a dhèanamh gun samhail. |
 
-### Bho
+### Bho {#since}
 
 - 2.0.0
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) aig loidhne 516

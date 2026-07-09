@@ -3,18 +3,18 @@ title: Zvinodzidzwa dzemabasa ya Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Feraura Zvinore: Scaffold uye Kuti Usimone Block Themes
+# Feraura Zvinore: Scaffold uye Kuti Usimone Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 inogona kuita zvinhu maviri zvinopotera kuti uwezere kutanga (generate) uye kusimone (deploy) block themes dzako dzinotamba (custom) nekuti unogona kutaura nechat interface.
 
-## Kuratidza (Overview)
+## Kuratidza (Overview) {#overview}
 
 Zvinoreva zvinoreva **scaffold-block-theme** uye **activate-theme** zvinhu zvinopfungwa kuti agents zvizere:
 - Kutaura block themes dzakareta (production-ready) dzinogona kuonekwa nekuti unenge uri kutaura nekuona zvako.
 - Kusimone themes pamusoro pe site yako pane kukanganisa kwako kunoita, kana usina kuteerera kwezvinhu zvinotamba.
 - Kutaura nzira dzinogona kuonekwa (visual identities) dzine kuratidza nekuti unenge uri kutaura nekuona zvakakosha.
 
-## Kuratidza Block Theme (Scaffold Block Theme)
+## Kuratidza Block Theme (Scaffold Block Theme) {#scaffold-block-theme}
 
 Zvinoreva **scaffold-block-theme** zvinogona kutanga block theme yeputindu ya WordPress inosanganisira:
 
@@ -23,7 +23,7 @@ Zvinoreva **scaffold-block-theme** zvinogona kutanga block theme yeputindu ya Wo
 - Styles uye variations dzinotamba (custom block styles and variations)
 - Metadata yete ye theme uye zvinoreva kuti inogona kuenda
 
-### Sei Kuti Usimone (How to Invoke)
+### Sei Kuti Usimone (How to Invoke) {#how-to-invoke}
 
 Mune chat yako neSuperdav AI Agent, unogona kutaura kuti utange kutanga theme:
 
@@ -38,7 +38,7 @@ Agent ichaiva:
 3. Kutanga files dzese dzinotamba.
 4. Kusanganisira theme kuti isimone.
 
-### Zvinogona Kuonekwa (Expected Output)
+### Zvinogona Kuonekwa (Expected Output) {#expected-output}
 
 Kana ability inosimbisa zvakanaka, uchaona:
 
@@ -56,11 +56,11 @@ Zvinogona kuonekwa:
   Status: Ready to activate
 ```
 
-## Kusimone Theme (Activate Theme)
+## Kusimone Theme (Activate Theme) {#activate-theme}
 
 Ita **activate-theme** ability inakupa iwe kuuta site yako kune theme yakachengetedza kana yakanengeka.
 
-### Kuvaitese
+### Kuvaitese {#how-to-invoke-1}
 
 Panda uyu theme wakaonekwa (scaffold), unogona kuvaitese nguva yakachengetedza:
 
@@ -74,7 +74,7 @@ Kana uri kuvaitese theme yakachengetedza yakanengeka:
 "Simbisa kune Twentytwentyfour theme"
 ```
 
-### Zvinhu Zvinogona Kuonekwa
+### Zvinhu Zvinogona Kuonekwa {#expected-output-1}
 
 Panda kuvaitese kunge kuenda zvakanaka:
 
@@ -92,7 +92,7 @@ Zvinoreva zvakanaka:
   Chii: Simbisa homepage yako kuti uone layout yakachengetedza
 ```
 
-## Workflow: Kuvaitese uye Kufamba
+## Workflow: Kuvaitese uye Kufamba {#workflow-scaffold-and-activate}
 
 Workflow inotanga nekuita zvinhu zvinobva mune zvinobva:
 
@@ -102,7 +102,7 @@ Workflow inotanga nekuita zvinhu zvinobva mune zvinobva:
 4. **Kuvaitese**: "Vaitese theme nguva iyi"
 5. **Kutanga kune zvinangwa**: Tinga site yako kuti uone design yakachengetedza inotanga kuita
 
-## Design Tokens uye Kufamba Nechinhu Chedesign
+## Design Tokens uye Kufamba Nechinhu Chedesign {#design-tokens-and-customization}
 
 Themes yakaiitwa (scaffolded themes) dzinoratidza design tokens dzine WordPress (kubva ku `theme.json`) kuti:
 
@@ -114,9 +114,9 @@ Themes yakaiitwa (scaffolded themes) dzinoratidza design tokens dzine WordPress 
 
 Tokens iyi dzinotsanana mumwe file we `theme.json`, zvichinguva kuendesa nzira yese ye design system yako kubva mufile imwe.
 
-## Zvinhu Zvinogona Kuonekwa uye Zvinangwa
+## Zvinhu Zvinogona Kuonekwa uye Zvinangwa {#limitations-and-notes}
 
-## Kutiro (Troubleshooting)
+## Kutiro (Troubleshooting) {#troubleshooting}
 
 **Theme haonenge haasi panyanya panyanya (Theme doesn't appear after scaffolding)**
 - Chire kuti directory ine ine ne permissions dzakare zvinhu zvinotora.
@@ -133,7 +133,7 @@ Tokens iyi dzinotsanana mumwe file we `theme.json`, zvichinguva kuendesa nzira y
 - Chire caching plugins dziri kuita.
 - Chire kuti version ya WordPress yako inogona kutora tokens dzine kuita.
 
-## Zvinhu Zvinotevera (Next Steps)
+## Zvinhu Zvinotevera (Next Steps) {#next-steps}
 
 Panguva unagadzira theme yako, unogona:
 - Kuratidza **Design System Aesthetics skill** kuti utore typography, colors, uye spacing zvakare.

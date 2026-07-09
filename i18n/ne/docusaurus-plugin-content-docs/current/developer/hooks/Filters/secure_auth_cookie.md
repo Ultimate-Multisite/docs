@@ -4,20 +4,20 @@ title: फिल्टर - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filter: secure_auth_cookie
+# Filter: secure_auth_cookie {#filter-secureauthcookie}
 
 auth cookie HTTPS मार्फत मात्र पठाउनुपर्छ कि पर्दैन भन्ने फिल्टर गर्छ।
 
-## प्यारामिटरहरू
+## प्यारामिटरहरू {#parameters}
 
 | नाम | प्रकार | विवरण |
 |------|------|-------------|
 | $secure | `bool` | cookie HTTPS मार्फत मात्र पठाउनुपर्छ कि पर्दैन। |
 | $user_id | `int` | प्रयोगकर्ता ID। |
 
-### देखि
+### देखि {#since}
 
 - 3.1.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) मा लाइन 80 मा परिभाषित गरिएको छ।

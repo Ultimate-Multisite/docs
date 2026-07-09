@@ -4,11 +4,11 @@ title: ფილტრი - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Filter: wu_apc_get_meta_content_default_content
+# Filter: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 აძლევს დეველოპერებს ნაგულისხმევი მნიშვნელობების გაფილტვრის საშუალებას
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | მისაღები მეტა მონაცემების ტიპი. |
 | $meta_key | `string` | მეტა ველის სახელი. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 1.4.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68)-ში, 68-ე ხაზზე
 
 
-## აბრუნებს
+## აბრუნებს {#returns}
 ახალ ნაგულისხმევ მნიშვნელობას.

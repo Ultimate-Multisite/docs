@@ -4,20 +4,20 @@ title: 'Akcija - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# Action: wu_page_\{$this->id\}_after_render
+# Action: wu_page_\{$this->id\}_after_render {#action-wupagethis-idafterrender}
 
 Omogućuje programerima dodataka dodavanje dodatnog sadržaja nakon što ispišemo stranicu
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page_id | `string` | ID ove stranice |
 | $page | `object` | Objekt stranice. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 1.8.2
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L423) u retku 423

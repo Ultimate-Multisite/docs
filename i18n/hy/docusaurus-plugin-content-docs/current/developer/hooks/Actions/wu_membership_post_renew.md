@@ -4,11 +4,11 @@ title: Գործողություն - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Գործողություն: wu_membership_post_renew
+# Գործողություն: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Գործարկվում է անդամակցության թարմացումից հետո։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 | $membership_id | `int` | Անդամակցության ID-ն։ |
 | $membership | `\Membership` | Անդամակցության օբյեկտ։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.0
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235)-ում՝ 2235-րդ տողում

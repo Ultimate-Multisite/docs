@@ -3,11 +3,11 @@ title: Pag-develop ng Pasadyang Gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pag-develop ng Custom Gateway
+# Pag-develop ng Custom Gateway {#custom-gateway-development}
 
 Maaari kang gumawa ng mga custom na gateway sa pagbabayad sa pamamagitan ng pag-extend sa class na `Base_Gateway`.
 
-## Klase ng Gateway
+## Klase ng Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Irehistro ang Gateway
+## Irehistro ang Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Mahahalagang Paraan
+## Mahahalagang Paraan {#key-methods}
 
 | Paraan | Layunin |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Pangasiwaan ang mga kahilingan sa refund |
 | `get_payment_methods()` | Ibalik ang mga naka-save na paraan ng pagbabayad para sa isang customer |
 
-## Mga kredensyal sa renewal para sa umuulit na mga pagiging kasapi
+## Mga kredensyal sa renewal para sa umuulit na mga pagiging kasapi {#renewal-credentials-for-recurring-memberships}
 
 Pinahihintulutan ng Ultimate Multisite v2.13.0 ang mga integration ng gateway na iulat kung ang isang umuulit na pagiging kasapi ay may magagamit-muling kredensyal sa renewal bago i-persist ang `auto_renew`. I-hook ang `wu_membership_has_renewal_credential` at ibalik ang:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 I-clear ang marker ng nawawalang kredensyal bilang bahagi ng matagumpay na daloy ng muling pag-awtorisa ng iyong gateway pagkatapos maimbak ang isang bagong magagamit-muling kredensyal.
 
-## Mga Tip
+## Mga Tip {#tips}
 
 - Palaging ibalik ang `WP_Error` kapag may kabiguan upang mapangasiwaan ng Ultimate Multisite ang pagpapakita ng error
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gamitin ang `wu_log_add()` para sa pag-log na partikular sa gateway
 
-## Mga kakayahan ng provider ng AI connector
+## Mga kakayahan ng provider ng AI connector {#ai-connector-provider-capabilities}
 
 Ang mga custom na integration na tumatawag sa mga operasyon na sinusuportahan ng AI connector ay dapat umayon sa sinusuportahang hanay ng OAuth provider na ipinakilala sa AI Provider for Anthropic Max v1.3.0:
 

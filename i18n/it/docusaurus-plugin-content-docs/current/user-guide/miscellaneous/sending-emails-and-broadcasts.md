@@ -3,13 +3,13 @@ title: Invio di email e comunicazioni di massa
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Invio di email e comunicazioni (v2)
+# Invio di email e comunicazioni (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
 Ultimate Multisite include una funzionalità che ti permette di comunicare con i tuoi clienti inviando un’email a un utente specifico o a un gruppo di utenti, oltre a inviare avvisi sulla loro Dashboard di amministrazione per diffondere annunci
 
-## Aggiungi avvisi di amministrazione alla Dashboard dei tuoi clienti con le comunicazioni
+## Aggiungi avvisi di amministrazione alla Dashboard dei tuoi clienti con le comunicazioni {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Usando la funzionalità di comunicazione di Ultimate Multisite, puoi aggiungere **avvisi di amministrazione** alla Dashboard di amministrazione del sottosito del tuo utente.
 
@@ -51,7 +51,7 @@ Dopo aver creato il tuo messaggio, puoi quindi premere il pulsante **Invia**.
 
 Ed è tutto. L’avviso di amministrazione dovrebbe comparire immediatamente sulla Dashboard del tuo utente.
 
-## Invia email ai tuoi clienti
+## Invia email ai tuoi clienti {#send-emails-to-your-customers}
 
 Usando la funzionalità di comunicazione di Ultimate Multisite, puoi inviare un’email ai tuoi utenti. Hai la possibilità di inviare l’email solo a utenti specifici oppure di indirizzarla a un gruppo di utenti specifico in base al prodotto o al piano a cui sono iscritti.
 
@@ -81,11 +81,11 @@ Dopo aver creato il tuo messaggio, puoi premere il pulsante **Invia**.
 
 Ed ecco quanto è facile inviare un’email ai tuoi utenti finali usando la funzionalità di comunicazione.
 
-## Email di sistema
+## Email di sistema {#system-emails}
 
 Le email di sistema in Ultimate Multisite sono quelle **notifiche automatiche** inviate dal sistema dopo determinate azioni, come registrazione, pagamento, mappatura del dominio, ecc. Queste email possono essere modificate dalle impostazioni di Ultimate Multisite. Include anche una funzionalità che ti permette di reimpostare e importare impostazioni esistenti da un’altra installazione di Ultimate Multisite.
 
-### Reimpostazione e importazione
+### Reimpostazione e importazione {#resetting--importing}
 
 Le nuove versioni di Ultimate Multisite, così come gli add-on, possono registrare e registreranno di tanto in tanto nuove email.
 
@@ -93,7 +93,7 @@ Per evitare conflitti e altri problemi, **non aggiungeremo automaticamente i nuo
 
 Tuttavia, i super admin e gli agenti possono importare queste email appena registrate tramite lo strumento di importazione. Questo processo creerà una nuova email di sistema con il contenuto e la configurazione del nuovo template email, permettendo al super admin di apportare qualsiasi modifica desideri o di mantenerli così come sono.
 
-#### Come importare le email di sistema
+#### Come importare le email di sistema {#how-to-import-system-emails}
 
 Vai alla pagina Impostazioni di Ultimate Multisite e apri la scheda **Email**.
 
@@ -111,7 +111,7 @@ Quindi, puoi attivare le opzioni Importa email per vedere quali email di sistema
 
 <!-- Screenshot non disponibile: modale Reimposta e Importa con le opzioni Importa email espanse -->
 
-#### Reimpostazione delle email di sistema
+#### Reimpostazione delle email di sistema {#reseting-system-emails}
 
 Altre volte, ti renderai conto che le modifiche apportate a un determinato template email non funzionano più per te e vorresti reimpostarlo al suo **stato predefinito**.
 

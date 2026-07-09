@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 S'exécute immédiatement avant que le cookie d'authentification ne soit défini.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,11 +19,11 @@ S'exécute immédiatement avant que le cookie d'authentification ne soit défini
 | $scheme | `string` | Schéma d'authentification. Les valeurs possibles sont 'auth' ou 'secure_auth'. |
 | $token | `string` | Jeton de session de l'utilisateur à utiliser pour ce cookie. |
 
-### Depuis
+### Depuis {#since}
 
 - 2.5.0
 - 4.9.0: Le paramètre <code>$token</code> a été ajouté.
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) à la ligne 124

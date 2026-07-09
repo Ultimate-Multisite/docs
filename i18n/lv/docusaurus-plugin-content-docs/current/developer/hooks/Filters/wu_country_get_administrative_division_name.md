@@ -4,11 +4,11 @@ title: Filtrs - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filtrs: wu_country_get_administrative_division_name
+# Filtrs: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Atgriež glītu valsts administratīvo apakšiedalījumu nosaukumu.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Atgriež glītu valsts administratīvo apakšiedalījumu nosaukumu.
 | $ucwords | `bool` | Vai vārdus rakstām ar lielajiem sākumburtiem. |
 | $current_country | `\WP_Ultimo\Country\Country` | Pašreizējās klases instance. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.11
-### Avots
+### Avots {#source}
 
 Definēts [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) 250. rindā
 
 
-## Atgriež
+## Atgriež {#returns}
 Mainīto iedalījuma nosaukumu.

@@ -3,9 +3,9 @@ title: Kif tibda bl-iżvilupp ta’ Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Żvilupp ta’ Żieda
+# Żvilupp ta’ Żieda {#addon-development}
 
-## Struttura taż-Żieda
+## Struttura taż-Żieda {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Fajls tal-mudelli
 ```
 
-## Mudell tal-Fajl Ewlieni taż-Żieda
+## Mudell tal-Fajl Ewlieni taż-Żieda {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Eżempju ta’ Mudell Personalizzat
+## Eżempju ta’ Mudell Personalizzat {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrazzjoni tal-Paġna tal-Amministrazzjoni
+## Integrazzjoni tal-Paġna tal-Amministrazzjoni {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Ittestjar tal-Addon Tiegħek
+## Ittestjar tal-Addon Tiegħek {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## punti ta’ estensjoni ta’ v2.13.0
+## punti ta’ estensjoni ta’ v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 iżid diversi punti ta’ estensjoni li huma utli għal addons li jintegraw ma’ tenants sovrani, domains ta’ checkout, jew awtomazzjoni DNS ta’ fornituri tal-host.
 
-### URLs għal SSO u ġestjoni tas-sit prinċipali
+### URLs għal SSO u ġestjoni tas-sit prinċipali {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Domains bażi tal-formola ta’ checkout
+### Domains bażi tal-formola ta’ checkout {#checkout-form-base-domains}
 
 Uża `wu_checkout_form_base_domains` meta l-addon tiegħek jipprovdi domains bażi kondiviżi addizzjonali li għandhom jaġixxu bħal domains **Site URL** tal-formola ta’ checkout minflok mappings personalizzati għal kull sit:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite jinnormalizza dawn il-hosts u jaqbeż records awtomatiċi ta’ mapped-domain għal kull sit għalihom.
 
-### Ħolqien awtomatiku ta’ records tad-domain
+### Ħolqien awtomatiku ta’ records tad-domain {#automatic-domain-record-creation}
 
 Uża `wu_should_create_domain_record_for_site` meta l-addon tiegħek jeħtieġ li jrażżan jew jipposponi l-ħolqien awtomatiku ta’ records tad-domain għal sit li għadu kif inħoloq:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Integrazzjonijiet ta’ fornituri tal-host li jisimgħu lil `wu_add_subdomain` jistgħu joħolqu records DNS fuq in-naħa tal-fornitur meta jinħolqu siti. Jekk l-ebda integrazzjoni ma tkun irreġistrata għal dik l-azzjoni, Ultimate Multisite jaqbeż il-biċċa xogħol fl-isfond vojta.
 
-## Passi Li Jmiss
+## Passi Li Jmiss {#next-steps}
 
 - Irrevedi r-[Referenza tal-Hooks](/developer/hooks) għall-azzjonijiet u l-filters disponibbli
 - Iċċekkja l-[Ħarsa Ġenerali lejn ir-REST API](/developer/rest-api/overview) għall-integrazzjoni tal-API

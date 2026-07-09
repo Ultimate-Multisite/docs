@@ -3,17 +3,17 @@ title: Ferramentas e Configuração
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Ferramentas e Configuração
+# Ferramentas e Configuração {#tools-and-configuration}
 
 Theme Builder usa um conjunto de ferramentas para analisar, desenhar e construir o seu site WordPress. Na versão 1.16.0, **sd-ai-agent/site-scrape é agora uma ferramenta de Camada 1**, ficando disponível por predefinição no Theme Builder. Superdav AI Agent v1.18.0 também introduz um pacote complementar Advanced distribuído separadamente para fluxos de trabalho de programadores de confiança; essas ferramentas não fazem parte do pacote principal WordPress.org e têm de ser instaladas e autorizadas separadamente.
 
-## Ferramentas Disponíveis
+## Ferramentas Disponíveis {#available-tools}
 
-### Ferramentas de Camada 1 (Sempre Disponíveis)
+### Ferramentas de Camada 1 (Sempre Disponíveis) {#tier-1-tools-always-available}
 
 As ferramentas de Camada 1 estão disponíveis por predefinição no Theme Builder sem qualquer configuração adicional.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Objetivo:** Analisar sites existentes para extrair inspiração de design, estrutura de conteúdo e funcionalidade.
 
@@ -51,11 +51,11 @@ Analisa o design de example.com e usa-o como inspiração para o meu site.
 - Sites com muito JavaScript podem ter uma análise limitada
 - Sites grandes podem demorar mais tempo a analisar
 
-### Ferramentas de Camada 2 (Opcionais)
+### Ferramentas de Camada 2 (Opcionais) {#tier-2-tools-optional}
 
 As ferramentas de Camada 2 estão disponíveis quando ativadas explicitamente nas definições do Theme Builder.
 
-#### Análises Avançadas
+#### Análises Avançadas {#advanced-analytics}
 
 Fornece métricas de desempenho detalhadas:
 
@@ -65,7 +65,7 @@ Fornece métricas de desempenho detalhadas:
 - Pontuação de acessibilidade
 - Pontuação de melhores práticas
 
-#### Otimizador de Conteúdo
+#### Otimizador de Conteúdo {#content-optimizer}
 
 Analisa e sugere melhorias para:
 
@@ -75,11 +75,11 @@ Analisa e sugere melhorias para:
 - Estrutura de conteúdo
 - Colocação de chamadas à ação
 
-### Ferramentas de Camada 3 (Premium)
+### Ferramentas de Camada 3 (Premium) {#tier-3-tools-premium}
 
 As ferramentas de Camada 3 requerem configuração adicional ou funcionalidades premium.
 
-#### Gerador de Conteúdo AI
+#### Gerador de Conteúdo AI {#ai-content-generator}
 
 Gera conteúdo para:
 
@@ -89,7 +89,7 @@ Gera conteúdo para:
 - Meta descrições
 - Texto de chamada à ação
 
-#### Ferramentas de Design Avançadas
+#### Ferramentas de Design Avançadas {#advanced-design-tools}
 
 Fornece capacidades de design avançadas:
 
@@ -99,7 +99,7 @@ Fornece capacidades de design avançadas:
 - Teoria avançada da cor
 - Otimização de tipografia
 
-### Ferramentas Complementares Advanced (Pacote Separado)
+### Ferramentas Complementares Advanced (Pacote Separado) {#advanced-companion-tools-separate-package}
 
 O pacote complementar Advanced é distribuído separadamente da versão principal do Superdav AI Agent. Destina-se a ambientes de programadores e proprietários de sites de confiança, onde os administradores permitem explicitamente que o agente use ferramentas de alto impacto.
 
@@ -116,9 +116,9 @@ As capacidades complementares Advanced podem incluir:
 
 Não documente estas ferramentas como ferramentas Theme Builder geralmente disponíveis para todas as instalações. Estão disponíveis apenas quando o pacote complementar Advanced está instalado, ativado e restrito a administradores de confiança.
 
-## Configuração de Ferramentas
+## Configuração de Ferramentas {#tool-configuration}
 
-### Ativar Ferramentas
+### Ativar Ferramentas {#enabling-tools}
 
 Para ativar ferramentas adicionais no Theme Builder:
 
@@ -127,7 +127,7 @@ Para ativar ferramentas adicionais no Theme Builder:
 3. Ative/desative ferramentas conforme necessário
 4. Guarde as definições
 
-### Permissões de Ferramentas
+### Permissões de Ferramentas {#tool-permissions}
 
 Algumas ferramentas requerem permissões:
 
@@ -137,7 +137,7 @@ Algumas ferramentas requerem permissões:
 - **Funcionalidades avançadas** — podem requerer subscrição premium
 - **Ferramentas complementares Advanced** — requerem o pacote Advanced distribuído separadamente e confiança explícita do administrador
 
-### Chaves de API e Credenciais
+### Chaves de API e Credenciais {#api-keys-and-credentials}
 
 Configure chaves de API para ferramentas que as requerem:
 
@@ -146,13 +146,13 @@ Configure chaves de API para ferramentas que as requerem:
 3. Teste a ligação
 4. Guarde de forma segura
 
-### Instalar o Pacote Complementar Advanced
+### Instalar o Pacote Complementar Advanced {#installing-the-advanced-companion-package}
 
 O pacote complementar Advanced é lançado separadamente do ZIP principal WordPress.org. Instale-o apenas a partir do canal oficial de distribuição do projeto para a versão e, em seguida, restrinja o acesso a administradores de confiança. Reveja os pontos de aprovação humana e o comportamento dos instantâneos git antes de ativar ferramentas de sistema de ficheiros, base de dados, WP-CLI, despachante REST, construção de plugins, gestão de utilizadores ou benchmark num site de produção.
 
-## Usar sd-ai-agent/site-scrape
+## Usar sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Utilização Básica
+### Utilização Básica {#basic-usage}
 
 Peça ao Theme Builder para analisar um site:
 
@@ -161,7 +161,7 @@ Analisa o design do site do meu concorrente em competitor.com
 e sugere melhorias de design para o meu site.
 ```
 
-### Análise Específica
+### Análise Específica {#specific-analysis}
 
 Solicite tipos específicos de análise:
 
@@ -179,7 +179,7 @@ Verifica a responsividade móvel de example.com e garante que o meu site
 é igualmente responsivo.
 ```
 
-### Análise Comparativa
+### Análise Comparativa {#comparison-analysis}
 
 Compare vários sites:
 
@@ -188,22 +188,22 @@ Compara os designs de site1.com e site2.com e cria um design
 que combine os melhores elementos de ambos.
 ```
 
-## Limitações e Considerações das Ferramentas
+## Limitações e Considerações das Ferramentas {#tool-limitations-and-considerations}
 
-### Limitação de Taxa
+### Limitação de Taxa {#rate-limiting}
 
 - O scraping tem limites de taxa para evitar sobrecarga do servidor
 - Vários pedidos ao mesmo site podem ser limitados
 - Sites grandes podem demorar mais a analisar
 
-### Precisão do conteúdo
+### Precisão do conteúdo {#content-accuracy}
 
 - Conteúdo dinâmico pode não ser totalmente capturado
 - Conteúdo renderizado por JavaScript pode ficar incompleto
 - Dados em tempo real podem não ser refletidos
 - Algum conteúdo pode estar por trás de paywalls
 
-### Considerações legais e éticas
+### Considerações legais e éticas {#legal-and-ethical-considerations}
 
 - Respeite robots.txt e as políticas do site
 - Não faça scraping de conteúdo protegido por direitos de autor para reprodução
@@ -211,16 +211,16 @@ que combine os melhores elementos de ambos.
 - Verifique se tem direitos para usar o conteúdo extraído
 - Siga os termos de serviço dos sites analisados
 
-### Impacto no desempenho
+### Impacto no desempenho {#performance-impact}
 
 - Fazer scraping de sites grandes pode demorar
 - Vários scrapes simultâneos podem ser mais lentos
 - A conectividade de rede afeta a velocidade
 - Grandes conjuntos de dados podem exigir mais processamento
 
-## Boas práticas
+## Boas práticas {#best-practices}
 
-### Usar a análise de sites
+### Usar a análise de sites {#using-site-analysis}
 
 1. **Analise vários sites** — reúna inspiração de várias fontes
 2. **Foque-se na estrutura** — aprenda padrões de layout e organização
@@ -228,7 +228,7 @@ que combine os melhores elementos de ambos.
 4. **Estude a tipografia** — identifique combinações de fontes de que gosta
 5. **Reveja a navegação** — compreenda a organização do menu
 
-### Scraping ético
+### Scraping ético {#ethical-scraping}
 
 1. **Respeite robots.txt** — siga as diretrizes do site
 2. **Não copie conteúdo** — use a análise apenas como inspiração
@@ -236,7 +236,7 @@ que combine os melhores elementos de ambos.
 4. **Atribua as fontes** — credite as fontes de inspiração
 5. **Siga os termos** — cumpra os termos de serviço do site
 
-### Maximizar a eficácia da ferramenta
+### Maximizar a eficácia da ferramenta {#maximizing-tool-effectiveness}
 
 1. **Seja específico** — solicite tipos específicos de análise
 2. **Forneça contexto** — explique o objetivo do seu site
@@ -244,9 +244,9 @@ que combine os melhores elementos de ambos.
 4. **Itere** — refine com base nos resultados
 5. **Combine ferramentas** — use várias ferramentas para uma análise abrangente
 
-## Resolução de problemas
+## Resolução de problemas {#troubleshooting}
 
-### O site não faz scraping
+### O site não faz scraping {#site-wont-scrape}
 
 - Verifique se o site está publicamente acessível
 - Verifique se robots.txt permite scraping
@@ -254,7 +254,7 @@ que combine os melhores elementos de ambos.
 - Verifique a ligação à internet
 - Contacte o suporte se o problema persistir
 
-### Análise incompleta
+### Análise incompleta {#incomplete-analysis}
 
 - O site pode ter conteúdo dinâmico
 - JavaScript pode não ser totalmente renderizado
@@ -262,7 +262,7 @@ que combine os melhores elementos de ambos.
 - Experimente analisar páginas específicas em vez disso
 - Solicite tipos específicos de análise
 
-### Desempenho lento
+### Desempenho lento {#slow-performance}
 
 - Sites grandes demoram mais a analisar
 - Vários scrapes simultâneos são mais lentos
@@ -270,7 +270,7 @@ que combine os melhores elementos de ambos.
 - Experimente fora das horas de pico
 - Analise primeiro secções menores
 
-## Documentação relacionada
+## Documentação relacionada {#related-documentation}
 
 - [Entrevista de descoberta](./discovery-interview.md) — recolha informações de design
 - [Direção de design](./design-direction.md) — refine o seu design

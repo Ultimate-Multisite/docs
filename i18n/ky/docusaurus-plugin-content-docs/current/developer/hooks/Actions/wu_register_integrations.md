@@ -4,21 +4,21 @@ title: Аракет - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Аракет: wu_register_integrations
+# Аракет: wu_register_integrations {#action-wuregisterintegrations}
 
 Интеграцияларга өздөрүн каттоого мүмкүндүк берүү үчүн иштейт.
 
 Өзөк өз интеграцияларын бул жерде каттайт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | Реестр экземпляры. |
 
-### Кайсы версиядан баштап
+### Кайсы версиядан баштап {#since}
 
 - 2.5.0
-### Булак
+### Булак {#source}
 
 [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L113) ичинде 113-сапта аныкталган

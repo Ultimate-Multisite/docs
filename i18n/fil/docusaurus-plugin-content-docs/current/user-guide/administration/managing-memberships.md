@@ -3,7 +3,7 @@ title: Pamamahala ng mga Kasapian
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Pamamahala ng mga Membership
+# Pamamahala ng mga Membership {#managing-memberships}
 
 Sa Ultimate Multisite, maaari mong pamahalaan ang mga membership at ma-access ang lahat ng subscription sa iyong network. Suriin at i-edit ang mga detalye ng subscription gaya ng mga plan at produkto, bilang ng mga site, halaga at dalas ng billing, kasaysayan ng pagbabayad, at mga timestamp.
 

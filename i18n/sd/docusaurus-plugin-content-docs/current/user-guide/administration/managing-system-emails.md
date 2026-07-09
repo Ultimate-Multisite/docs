@@ -3,11 +3,11 @@ title: سسٹم اي ميلز جو مانيجمنٽ
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# سسٹم ای میلز کو مینج کرنا (Managing System Emails)
+# سسٹم ای میلز کو مینج کرنا (Managing System Emails) {#managing-system-emails}
 
 Ultimate Multisite مختلف قسم جي نظامي اي ميلز (system emails) ڇاڪن جهڙو ڪم ڪند ٿا، جهڙوڪ سائن اپ ڪارفيڪيشن، پيمنتي وصولي جو رسید، ۽ ممبر شپ ۾ تبديليون. توهان ان اي ميل ٽيمپليٽس کي پنهنجي برانڊ سان مطابقت ڏيڻ لاءِ ڪسٽمائي (customize) ڪري سگهو ٿا.
 
-## نظامي ای میلز ڏسڻ (Viewing System Emails)
+## نظامي ای میلز ڏسڻ (Viewing System Emails) {#viewing-system-emails}
 
 **Ultimate Multisite → Settings** تي وڃو ۽ **Emails** ٽب تي ڪلڪ ڪريو ته اي ميل ريلٽڊ هيٺيون ترتيئون (settings) ڏسڻ لاءِ.
 
@@ -21,7 +21,7 @@ Ultimate Multisite مختلف قسم جي نظامي اي ميلز (system email
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## نئين اي ميل ٽيمپليٽس کي امپورٽ ڪرڻ (Importing New Email Templates)
+## نئين اي ميل ٽيمپليٽس کي امپورٽ ڪرڻ (Importing New Email Templates) {#importing-new-email-templates}
 
 نئين Ultimate Multisite ورژنيز ۽ اڊانز نون اي ميل ٽيمپليٽس کي ريجيسٽ ڪري سگهن ٿا. تصادم کان بچڻ لاءِ، نيني ٽيمپليٽس خود بخود شامل نه ڪيون وينديون — توهان انهن کي مانيو (manually) امپورٽ ڪرڻ گهرجي.
 
@@ -32,7 +32,7 @@ Ultimate Multisite مختلف قسم جي نظامي اي ميلز (system email
 3. موجودہ ٽيمپليٽس ڏسڻ لاءِ **Import Emails** جو خيار آن (toggle) ڪريو
 4. انهن ٽيمپليٽس کي چونڊيو جيڪي توهان امپورٽ ڪرڻ چاهيو ۽ تصديق ڪريو
 
-## اي ميل ٽيمپليٽس کي ريسٽ ڪرڻ (Resetting Email Templates)
+## اي ميل ٽيمپليٽس کي ريسٽ ڪرڻ (Resetting Email Templates) {#resetting-email-templates}
 
 جيڪڏهن توهان ڪنهن اي ميل ٽيمپليٽ کي ڪسٽمائي ڪيو آهي ۽ DEFAULT مواد تي واپس وڃڻ چاهيو، ته توهان جي دوئن طريقا آهن:
 

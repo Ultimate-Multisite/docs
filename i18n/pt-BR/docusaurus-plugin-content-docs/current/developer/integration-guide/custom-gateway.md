@@ -3,11 +3,11 @@ title: Desenvolvimento de Gateway Personalizado
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Desenvolvimento de gateway personalizado
+# Desenvolvimento de gateway personalizado {#custom-gateway-development}
 
 Você pode criar gateways de pagamento personalizados estendendo a classe `Base_Gateway`.
 
-## Classe do gateway
+## Classe do gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrar o gateway
+## Registrar o gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Métodos principais
+## Métodos principais {#key-methods}
 
 | Método | Finalidade |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Lidar com solicitações de reembolso |
 | `get_payment_methods()` | Retornar métodos de pagamento salvos para um cliente |
 
-## Credenciais de renovação para associações recorrentes
+## Credenciais de renovação para associações recorrentes {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 permite que integrações de gateway informem se uma associação recorrente tem uma credencial de renovação reutilizável antes que `auto_renew` seja persistido. Use o hook `wu_membership_has_renewal_credential` e retorne:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Limpe o marcador de credencial ausente como parte do fluxo de reautorização bem-sucedido do seu gateway depois que uma nova credencial reutilizável for armazenada.
 
-## Dicas
+## Dicas {#tips}
 
 - Sempre retorne `WP_Error` em caso de falha para que Ultimate Multisite possa lidar com a exibição de erros
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Use `wu_log_add()` para registros específicos do gateway
 
-## Capacidades de provedores de conectores de IA
+## Capacidades de provedores de conectores de IA {#ai-connector-provider-capabilities}
 
 Integrações personalizadas que chamam operações baseadas em conectores de IA devem se alinhar ao conjunto de provedores OAuth compatível introduzido com AI Provider for Anthropic Max v1.3.0:
 

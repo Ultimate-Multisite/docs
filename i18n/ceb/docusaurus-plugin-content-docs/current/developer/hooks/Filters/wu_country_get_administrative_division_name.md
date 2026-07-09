@@ -4,11 +4,11 @@ title: Salain - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Pansala: wu_country_get_administrative_division_name
+# Pansala: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Mobalik og hapsay nga ngalan sa administratibong mga sub-dibisyon sa nasod.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Matang | Deskripsyon |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Mobalik og hapsay nga ngalan sa administratibong mga sub-dibisyon sa nasod.
 | $ucwords | `bool` | kung atong himuong uppercase ang mga pulong. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance sa kasamtangang klase. |
 
-### Sukad
+### Sukad {#since}
 
 - 2.0.11
-### Gigikanan
+### Gigikanan {#source}
 
 Gidefine sa [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) sa linya 250
 
 
-## Mobalik
+## Mobalik {#returns}
 Ang giusab nga ngalan sa dibisyon.

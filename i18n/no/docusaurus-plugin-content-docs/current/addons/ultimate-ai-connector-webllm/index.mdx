@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM bringer AI-inferens direkte i nettleseren til ditt WordPress multisite-nettverk. Det kjører store språkmodeller (LLM) utelukkende i nettleseren ved hjelp av WebLLM og MLC-motoren – ingen API-nøkler, ingen eksterne kall, og ingen data forlater brukerens enhet.
 
-## Nøkkelfunksjoner
+## Nøkkelfunksjoner {#key-features}
 
 - **Inferens i nettleseren**: LLM kjører lokalt i besøkendes nettleser via WebLLM/MLC – krever ingen server-GPU
 - **Flytende chat-widget**: Innloggede brukere kan gi prompt til nettleserbasert LLM direkte fra front-enden
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM bringer AI-inferens direkte i nettleseren til d
 - **IndexedDB cache**: Nedlasting av modellvekter overlever CDN-omdirigeringer som bryter standard Cache API-sti
 - **wpai filter-integrasjon**: Krokker seg inn i `wpai_preferred_text_models`-filteret slik at AI Experiments-funksjonen rutes til nettlesermotoren når den er konfigurert
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller høyere
 - PHP 7.4 eller høyere
 - Ultimate Multisite plugin (aktiv)
 - En nettleser med WebGPU-støtte (Chrome 113+, Edge 113+, eller Firefox Nightly med WebGPU aktivert)
 
-## Installasjon
+## Installasjon {#installation}
 
 1. Last opp addon-filene til katalogen din `/wp-content/plugins/`
 2. Aktiver pluginet via 'Plugins'-menyen i WordPress
 3. Gå til **Ultimate Multisite → AI Connector** for å konfigurere addon-en
 
-## Flytende Chat Widget
+## Flytende Chat Widget {#floating-chat-widget}
 
 Den flytende chat-widgeten lar enhver innlogget bruker samhandle med nettleserbasert LLM direkte fra front-enden, uten å forlate siden de er på.
 
-### Hva den gjør
+### Hva den gjør {#what-it-does}
 
 Når den er aktivert, vises et chat-ikon i hjørnet av hver front-end-side for innloggede brukere. Ved å klikke på ikonet åpnes et chat-panel der brukeren kan skrive inn prompts og motta svar fra den lokalt kjørende WebLLM-modellen. Siden modellen kjører utelukkende i nettleseren, er svarene private og involverer ingen server-side prosessering.
 
-### Statusindikator i Admin-baren
+### Statusindikator i Admin-baren {#admin-bar-status-indicator}
 
 WordPress admin-baren inkluderer en statusindikator som viser den nåværende tilstanden til WebLLM-motoren:
 
@@ -56,7 +56,7 @@ WordPress admin-baren inkluderer en statusindikator som viser den nåværende ti
 
 Indikatoren oppdateres i sanntid uten å kreve en sideoppdatering.
 
-### Hvordan aktivere eller deaktivere widgeten
+### Hvordan aktivere eller deaktivere widgeten {#how-to-enable-or-disable-the-widget}
 
 1. Gå til **Ultimate Multisite → AI Connector** i nettverksadministrasjonen
 2. Finn **Connector**-panelet
@@ -65,17 +65,17 @@ Indikatoren oppdateres i sanntid uten å kreve en sideoppdatering.
 
 Widgeten kan også aktiveres eller deaktiveres per side fra sidens egen administrasjon hvis nettverksadministratoren har gitt den tillatelsen.
 
-## Widget-innstillinger
+## Widget-innstillinger {#widget-settings}
 
 Connector-panelet i **Ultimate Multisite → AI Connector** inneholder følgende innstillinger for den flytende chat-widgeten:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 Slår chat-widgeten på eller av for hele nettverket. Når den er deaktivert, vises ikke widgeten på noen front-end-side, uavhengig av brukerrolle.
 
 **Standard:** Av
 
-### Auto-Prompt Behaviour
+### Auto-Prompt Behaviour {#auto-prompt-behaviour}
 
 Styrer om chat-widgeten automatisk sender en prompt når en bruker åpner den.
 
@@ -93,7 +93,7 @@ Når den er satt til **Custom prompt**, vises et ekstra tekstfelt der du kan ang
 
 **Standard:** Av
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 Versjon 1.1.0 introduserer en SharedWorker runtime for MLC-motoren. Tidligere lastet hver nettleserfane som brukte WebLLM sin egen instans av modellen, noe som konkurrerte om GPU-minne og forårsaket ytelsesproblemer på enheter med begrenset VRAM.
 
@@ -105,29 +105,29 @@ Med SharedWorker runtime fungerer én fane som motorvert. Alle andre faner kommu
 
 SharedWorker er usynlig for brukerne. Statusindikatoren i admin-baren gjenspeiler alltid tilstanden til den delte motoren, ikke den individuelle fanen.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Addon-en installerer en `apiFetch` middleware som avbryter WordPress REST API-forespørsler som matcher AI Client SDK-mønsteret. I stedet for å gjøre en loopback HTTP-forespørsel til serveren, videresendes disse forespørringene direkte til den lokale WebLLM-brokeren som kjører i SharedWorker.
 
 Dette betyr at plugins og temaer som bruker standard WordPress `apiFetch` API for å kalle AI-endepunkter, automatisk vil dra nytte av nettlesermodellen når den er tilgjengelig, uten at det kreves kodeendringer.
 
-## Hooks og Filters
+## Hooks og Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — Registrer WebLLM nettlesermotoren som en foretrukket tekstmodell. Addon-en kretser seg inn i dette filteret automatisk når motoren er konfigurert og tilgjengelig.
 - `ultimate_webllm_widget_enabled` — Overstyrer widget-aktiveringsstatusen for en spesifikk bruker eller kontekst. Returner `true` eller `false`.
 - `ultimate_webllm_auto_prompt` — Endrer auto-prompt-teksten før den sendes til widgeten. Mottar prompt-strengen og den nåværende `WP_Post`-objektet.
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### Chat-widgeten vises ikke
+### Chat-widgeten vises ikke {#the-chat-widget-does-not-appear}
 
 - Bekreft at brukeren er innlogget — widgeten vises kun for autentiserte brukere
 - Sjekk at **Enable floating chat widget** er slått på i Connector-panelet
 - Verifiser at brukerens nettleser støtter WebGPU (se Krav ovenfor)
 
-### Admin-bar-indikatoren viser "Error"
+### Admin-bar-indikatoren viser "Error" {#the-admin-bar-indicator-shows-error}
 
 Åpne nettleserutviklerkonsollen (F12) og se etter WebLLM-relaterte feil. Vanlige årsaker:
 
@@ -135,10 +135,10 @@ Dette betyr at plugins og temaer som bruker standard WordPress `apiFetch` API fo
 - Nedlasting av modellvekter feilet — sjekk nettverkstilkoblingen og prøv å tømme IndexedDB-cachen i nettleserutviklerverktøyene (Application → IndexedDB)
 - En nettleserutvidelse blokkerer SharedWorker
 
-### Modellvekter lastes ned hver gang
+### Modellvekter lastes ned hver gang {#model-weights-download-every-time}
 
 Addon-en bruker IndexedDB som cache-backend for å sikre at modellvektene overlever CDN-omdirigeringer. Hvis vektene lastes ned på nytt ved hvert besøk, sjekk at IndexedDB ikke blir tømt av en nettleser-personverninnstilling eller utvidelse.
 
-## Changelog
+## Changelog {#changelog}
 
 Se [Changelog](./changelog) for full versjonshistorikk.

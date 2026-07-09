@@ -4,19 +4,19 @@ title: Filter - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme
+# Filter: auth_redirect_scheme {#filter-authredirectscheme}
 
 Memfilter skema pengalihan otentikasi.
 
-## Parameter
+## Parameter {#parameters}
 
 | Nama | Tipe | Deskripsi |
 |------|------|-------------|
 | $scheme | `string` | Skema pengalihan otentikasi. Default kosong. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.9.0
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212) pada baris 212

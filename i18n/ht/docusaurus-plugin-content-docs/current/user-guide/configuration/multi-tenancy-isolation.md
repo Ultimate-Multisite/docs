@@ -3,11 +3,11 @@ title: Izolasyon Multi-Tenant
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolasyon Multi-Tenancy (Multi-Tenancy Isolation)
+# Isolasyon Multi-Tenancy (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 aksepte izolasyon bazabase ak dosyer pou chak sous-site pou yon moun ki gen kont pou yo. Sa kenbe done tenant yo sepà pandan ou kenbe disponiblite rezo, faktirizasyon, ak administrasyon la menm jan an.
 
-## Estrateji Isolasyon (Isolation strategy)
+## Estrateji Isolasyon (Isolation strategy) {#isolation-strategy}
 
 Itilize izolasyon souveren (sovereign isolation) pou kliyan ki bezwen separasyon done pi fò, estoke dosyer dedye, oswa yon limitèjwenn (host boundary) sepandan.
 
@@ -18,7 +18,7 @@ Chak tenant souveren dwe gen:
 - Yon entri registry tenant ki mapite sit la ak bazabasan li, chemen root, non anviwònman (hostname), epi modèl izolasyon an.
 - Yon rezilta verifikasyon migrasyon anvan yo konsidere tenant la kòm aktif (live).
 
-## Liyye Host Bazabase (Database host binding)
+## Liyye Host Bazabase (Database host binding) {#database-host-binding}
 
 Vèsyon 1.2.0 chanje konpòtman default liyye host menm makin pou enstalasyon souveren. Valè menm makin tankou `localhost` yo normalize souvan, sa k fè Bedrock, FrankenPHP, ak WordPress ki gen kontyènerize ka bay epi verifi pèmisyon an kont string host MySQL la de reyalman.
 
@@ -31,11 +31,11 @@ Lè ou ap konfigire yon tenant souveren:
 
 Si verifikasyon yo rapòte échec bay pèmisyon, konpare bay pèmisyon itilizatè bazabasan tenant la ak liyye host ki te configure a. Yon itilizatè ki bay pou `user@localhost` se diferan de `user@127.0.0.1` oswa `user@%`.
 
-## Root Dosyer Sistèm (Filesystem root)
+## Root Dosyer Sistèm (Filesystem root) {#filesystem-root}
 
 Root du locataire (tenant root) dobe stable apre les redémarrages et les déploiements. Evite les chemins de montage temporaires. Pouvwa konfime ke root du locataire ap pointe nan web root WordPress ki espere pa tenant bootstrap la, epi pa sèlman root pwojè a.
 
-## Ordre pwovizyon (Provisioning order)
+## Ordre pwovizyon (Provisioning order) {#provisioning-order}
 
 Pou nouvo locataires souverens, itilize sa lòd la:
 
@@ -49,7 +49,7 @@ Pou nouvo locataires souverens, itilize sa lòd la:
 
 Lòd sa a ap anpeche locataires ki pa konplèman isolate yo resevwa trafik anvan ekriye baz done, itilizatè yo, ak fiches sistèm yo pare.
 
-## Flèm jere kliyan souverens (Sovereign customer management flows)
+## Flèm jere kliyan souverens (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 kenbe aksyon jere kliyan yo sou sit prensipal la lè mode souverain anki enbleme. Yon locataire ka toujou mache kòm yon instalasyon WordPress isolate, men aksyon ki gen rapò ak kliyan ki depann sou fakturaj rezo a (network billing), membraz, oswa done kont ki pataje yo dwe renmen mande kliyan an tounen sit prensipal la olye pou eseye konplè aksyon anndan itilize locatè a.
 

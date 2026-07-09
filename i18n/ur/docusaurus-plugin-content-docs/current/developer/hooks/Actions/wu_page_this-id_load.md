@@ -4,11 +4,11 @@ title: 'عمل - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_{$this->id}_load
+# Action: wu_page_{$this->id}_load {#action-wupagethis-idload}
 
 پلگ ان بنانے والوں کو ہمارے پیجز میں مزید hooks شامل کرنے کی اجازت دیتا ہے۔
 
-## پیرامیٹرز
+## پیرامیٹرز {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 | $page_hook | `string` | اس پیج کا پیج hook۔ |
 | $admin_page | `self` | پیج کا انسٹنس۔ |
 
-### کب سے موجود
+### کب سے موجود {#since}
 
 - 1.8.2
 - 2.0.4: تیسرا پیرامیٹر شامل کیا گیا: پیج کا انسٹنس۔
-### ماخذ
+### ماخذ {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) میں لائن 332 پر بیان کیا گیا ہے۔

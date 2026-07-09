@@ -3,7 +3,7 @@ title: Site-Management
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Sites verwalte
+# Sites verwalte {#managing-sites}
 
 Sites (oder subsites) sind de Kern vo Ihrem WaaS Business. Ultimate Multisite het 3 Typen Sites:
 
@@ -11,13 +11,13 @@ Sites (oder subsites) sind de Kern vo Ihrem WaaS Business. Ultimate Multisite he
 - **Site Templates** — Vorgefertigti Sites, wo Kunde als Startpunkt wähle chönne
 - **Main Site** — Ihr primäres Netzwerk-Site
 
-## Sites aaluege
+## Sites aaluege {#viewing-sites}
 
 Geit uf **Ultimate Multisite → Sites**, um alli Subsites in Ihrem Netzwerk z'gseh. Jedes Site isch nach Typ beschriftet und Sie chönne filtere nach All Sites, Customer-Owned, Templates oder Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Eusi neui Site hinzufüge
+## Eusi neui Site hinzufüge {#adding-a-new-site}
 
 Klicke uf de Button **Add Site**, um e neui Site z'erstelle. Sie müesse folgendes aabiete:
 
@@ -27,15 +27,15 @@ Klicke uf de Button **Add Site**, um e neui Site z'erstelle. Sie müesse folgend
 
 D'Option **Copy Site** erlaubt Ihne, e neui Site uf Basis vo eme bestehende Site Template z'erstelle. Wenn das aktiviert isch, chönne Sie wähle, weles Template als Startpunkt brucht wird. Achte druf, dass **Copy Media on Duplication** aktiviert isch, damit au Mediendate mitkopiert werde.
 
-## Eusi bestehendi Site verwalte
+## Eusi bestehendi Site verwalte {#managing-an-existing-site}
 
 Klicke uf **Manage** bi jede Site, um d'Seite **Edit Site** z'öffne. Do finded Sie:
 
-### Grundlegendi Informatione
+### Grundlegendi Informatione {#basic-information}
 
 De Sites-Name, de Typ, d'Site ID und d'Beschreibung. Sie gsehnd au d'abgemappti Domain, d'verbundeni Mitgliedschaft und s'Kunde-Account, wo d'Site besitzt.
 
-### Site Optionä
+### Site Optionä {#site-options}
 
 Konfiguriere d'Fähigkeite und Grenze vo de Site:
 
@@ -47,7 +47,7 @@ Konfiguriere d'Fähigkeite und Grenze vo de Site:
 
 Standardwiis folge d'Limits, déi uf de Mitgliedschaftsebene gsetzt sinn. Wenn Dir Limits uf Site-Niveau setzet, überbréit das d'Mitgliedschaftssettings.
 
-### Verknëppungen (Associations)
+### Verknëppungen (Associations) {#associations}
 
 Unter de Site-Optionen findet Dir Infos zu:
 
@@ -55,7 +55,7 @@ Unter de Site-Optionen findet Dir Infos zu:
 - **Mitgliedschaft**, unter dem d'Site staht
 - **Kunde-Account**, de mit der Site verbunde ass
 
-### Rechts Sidebar (Right Sidebar)
+### Rechts Sidebar (Right Sidebar) {#right-sidebar}
 
 Och op de rechti Siite chënnt Dir:
 

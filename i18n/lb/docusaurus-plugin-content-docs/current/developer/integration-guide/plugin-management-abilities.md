@@ -3,11 +3,11 @@ title: Plugin-Verwaltungsfäegkeeten
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin-Verwaltungsfäegkeeten
+# Plugin-Verwaltungsfäegkeeten {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 kënnt mat **7 Plugin-Verwaltungsfäegkeeten**, déi de KI-Assistent wärend engem Gespréich opruffe kann. Dës Fäegkeete bidden programmatesch Kontroll iwwer WordPress-Pluginnen, déi iwwer de [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) installéiert goufen.
 
-## Iwwersiicht vun de Fäegkeeten
+## Iwwersiicht vun de Fäegkeeten {#abilities-overview}
 
 | Fäegkeet | Slug | Beschreiwung |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 kënnt mat **7 Plugin-Verwaltungsfäegkeeten**, déi de K
 | Plugin installéieren | `install_plugin` | Setzt e sandboxéierte Plugin an de live WordPress-Plugin-Verzeechnes aus. |
 | Plugin aktivéieren | `activate_plugin` | Aktivéiert e sandboxéierte Plugin an der wp-env-Sandbox-Ëmgebung. |
 
-## Plugin-Installateur-API
+## Plugin-Installateur-API {#plugin-installer-api}
 
 De Plugin-Installateur behandelt Dateisystem-Operatiounen beim Aussetzen oder Entferne vu Pluginnen. Wichteg Verhalensweisen:
 
@@ -28,7 +28,7 @@ De Plugin-Installateur behandelt Dateisystem-Operatiounen beim Aussetzen oder En
 - **Aktualiséierung**: Ersetzt bestoend Plugin-Dateien. Deaktivéiert de Plugin virum Schreiwen, fir Feeler duerch en deelweisen Zoustand ze vermeiden.
 - **Läsche per Slug**: Fënnt de Plugin-Verzeechnes per Slug, deaktivéiert iwwer all Siten, an entfernt duerno de Verzeechnes.
 
-### E personaliséierten Installatiouns-Handler registréieren
+### E personaliséierten Installatiouns-Handler registréieren {#registering-a-custom-install-handler}
 
 Dir kënnt Iech an de Installatiouns-Liewenszyklus andocken, andeems Dir d'Aktiounen `gratis_ai_plugin_installer_before_install` an `gratis_ai_plugin_installer_after_install` benotzt:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ökosystem-Registry
+## Ökosystem-Registry {#ecosystem-registry}
 
 Fäegkeete ginn iwwer d'**Plugin-Ökosystem-Registry** registréiert. D'Registry verknëppt Fäegkeets-Slugs mat hire Handler-Klassen a mécht se fir den Tool-Dispatcher vum KI-Agent disponibel.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner-Integratioun
+## HookScanner-Integratioun {#hookscanner-integration}
 
 D'Fäegkeeten `create_plugin` an `update_plugin` lafen automatesch de **HookScanner** géint nei generéierte Code. HookScanner gëtt eng Lëscht vu WordPress-Action- a Filter-Hooks zeréck, déi vum Plugin registréiert goufen.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner iwwerspréngt automatesch `vendor/`- an `node_modules/`-Verzeechnesser.
 
-## Async-Job-Architektur
+## Async-Job-Architektur {#async-job-architecture}
 
 Laang lafend Plugin-Operatiounen (generéieren, installéieren) ginn als **asynchron Aarbechten** mat Live-Fortschrëttsverfollegung verschéckt. D'KI-Chat-Interface freet de Fortschrëtt periodesch of a streamt Statusaktualiséierungen un de Benotzer:
 

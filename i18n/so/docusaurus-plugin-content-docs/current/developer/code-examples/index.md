@@ -3,11 +3,11 @@ title: Tusaalooyin Koodh Sare
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Tusaalooyin Code oo Horumarsan
+# Tusaalooyin Code oo Horumarsan {#advanced-code-examples}
 
 Tusaalooyinkan waxay muujinayaan qaabab isdhexgal oo horumarsan oo lala adeegsado Ultimate Multisite.
 
-## Mashiinka Qiimeynta Firfircoon
+## Mashiinka Qiimeynta Firfircoon {#dynamic-pricing-engine}
 
 Mashiin qiimeyn oo ku salaysan xeerar, kaas oo dabaqa qiimo-dhimisyo mug, daacadnimo, iyo xilliyeed:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Diyaarinta Site Horumarsan
+## Diyaarinta Site Horumarsan {#advanced-site-provisioning}
 
 Si otomaatig ah u habee site-yo cusub oo leh plugins, SSL, CDN, kaydcelinno, iyo kormeer ku salaysan astaamaha plan-ka:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Nidaamka Xaddidaadaha Gaarka ah
+## Nidaamka Xaddidaadaha Gaarka ah {#custom-limitations-system}
 
 La soco oo dhaqan geli xaddidaadaha khayraadka adigoo adeegsanaya digniinno isticmaal:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB xisaabiye atoomik ah oo leh `increment_item()`
+## BerlinDB xisaabiye atoomik ah oo leh `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 waxay ku dartay habka `increment_item()` fasalka BerlinDB `Query`. U isticmaal inaad ku samayso kordhinno ammaan ah oo atoomik ah tiirarka tirooyinka ah adigoon gelin tartamada akhri-beddel-qor — waxay faa'iido u leedahay xisaabiyeyaasha, xaddidaadaha isticmaalka, iyo hubinnada xaddididda heerka ee ku shaqeeya codsiyo isbarbar socda.
 
-### Saxiixa habka
+### Saxiixa habka {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 waxay ku dartay habka `increment_item()` fasalka Berli
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Isticmaalka aasaasiga ah
+### Isticmaalka aasaasiga ah {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Raadraaca isticmaalka API halkii membership
+### Raadraaca isticmaalka API halkii membership {#tracking-api-usage-per-membership}
 
 Qaab wax ku ool ah oo lagu dhaqan-geliyo xaddidaadaha heerka API halkii membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Sababta `increment_item()` loogu dooranayo halkii `update_item()`
+### Sababta `increment_item()` loogu dooranayo halkii `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Habka fudud ee akhri-beddel-qor ma aha ammaan marka codsiyo isbarbar socda jiraan:
 

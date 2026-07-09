@@ -3,15 +3,15 @@ title: Xaqiiji Isbarbardhigga Paletka Midabbada
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Xaqiiji Isbarbardhigga Palette
+# Xaqiiji Isbarbardhigga Palette {#validate-palette-contrast}
 
 Awoodda **Validate Palette Contrast** waxay hubisaa lammaanaha midabbada ee palette-ka naqshaddaada si ay u waafaqaan WCAG (Web Content Accessibility Guidelines) ka hor inta aan lagu dabaqin theme-kaaga.
 
-## Dulmar
+## Dulmar {#overview}
 
 Awooddani waxay xaqiijisaa in nidaamka midabbada ee site-kaaga uu buuxiyo heerarka helitaannimada iyadoo la xaqiijinayo saamiyada isbarbardhigga ee u dhexeeya qoraalka iyo midabbada asalka. Waxay ka caawisaa ka hortagga isku-darka midab ee ku adkaan kara isticmaalayaasha leh naafonimo arag inay akhriyaan.
 
-## Qaabka Gelinta
+## Qaabka Gelinta {#input-format}
 
 Awooddu waxay aqbashaa palette midab ahaan gelin ahaan:
 
@@ -35,7 +35,7 @@ Awooddu waxay aqbashaa palette midab ahaan gelin ahaan:
 }
 ```
 
-### Xuduudaha
+### Xuduudaha {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Awooddu waxay aqbashaa palette midab ahaan gelin ahaan:
 | `wcag_level` | string | No | Heerka waafaqsanaanta WCAG: "A", "AA" (default), ama "AAA" |
 | `pairs_to_check` | array | No | Lammaane midab oo gaar ah oo la xaqiijinayo (tusaale, `["primary-text", "background-text"]`) |
 
-## Heerarka WCAG ee La Hubiyo
+## Heerarka WCAG ee La Hubiyo {#wcag-levels-checked}
 
 Awooddu waxay xaqiijisaa saamiyada isbarbardhigga iyadoo raacaysa heerarka WCAG:
 
@@ -56,7 +56,7 @@ Awooddu waxay xaqiijisaa saamiyada isbarbardhigga iyadoo raacaysa heerarka WCAG:
 - **Qoraal Caadi ah** — qoraal ka yar 18pt (ama 14pt oo bold ah)
 - **Qoraal Weyn** — qoraal 18pt ah ama ka weyn (ama 14pt oo bold ah ama ka weyn)
 
-## Schema-ga Soo-saarka
+## Schema-ga Soo-saarka {#output-schema}
 
 Awooddu waxay soo celisaa warbixin xaqiijin oo faahfaahsan:
 
@@ -95,7 +95,7 @@ Awooddu waxay soo celisaa warbixin xaqiijin oo faahfaahsan:
 }
 ```
 
-### Goobaha Soo-saarka
+### Goobaha Soo-saarka {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Awooddu waxay soo celisaa warbixin xaqiijin oo faahfaahsan:
 | `status` | string | "pass" ama "fail" lammaane kasta |
 | `recommendations` | array | Talooyin lagu hagaajinayo lammaanayaasha fashilmay |
 
-## Tusaalaha Isticmaalka
+## Tusaalaha Isticmaalka {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Awooddu waxay xaqiijisaa dhammaan isku-darrada midabbada waxayna soo celisaa:
 - ✅ Asal + Qoraal: saamiga 12.1:1 (wuu gudbaa WCAG AAA)
 - Guud ahaan: Waafaqsan WCAG AA
 
-## Isku-xidhka Theme Builder
+## Isku-xidhka Theme Builder {#integration-with-theme-builder}
 
 Marka la isticmaalayo xulashada jihada-naqshadda ee Theme Builder, awoodda Validate Palette Contrast waxay:
 
@@ -129,7 +129,7 @@ Marka la isticmaalayo xulashada jihada-naqshadda ee Theme Builder, awoodda Valid
 4. Bixisaa talooyin loogu talagalay lammaanayaasha aan waafaqsanayn
 5. Ka hortagtaa in la dabaqo nidaamyo midab oo aan la heli karin
 
-## Hab-dhaqannada Ugu Fiican
+## Hab-dhaqannada Ugu Fiican {#best-practices}
 
 - **Ku bilow heerka AA** — WCAG AA waa heerka caadiga ah ee inta badan mareegaha
 - **Tijaabi ka hor intaadan dabaqin** — xaqiiji palette-kaaga ka hor intaadan ku go'an naqshad
@@ -137,7 +137,7 @@ Marka la isticmaalayo xulashada jihada-naqshadda ee Theme Builder, awoodda Valid
 - **Tixgeli doorbidyada isticmaalaha** — isticmaalayaasha qaar waxay yeelan karaan xasaasiyad midab oo dheeraad ah
 - **Isticmaal hubiyeyaasha isbarbardhigga** — ku dar awooddan qalabka browser-ka si loo xaqiijiyo
 
-## Lammaanayaasha Fashilmay iyo Talooyinka
+## Lammaanayaasha Fashilmay iyo Talooyinka {#failing-pairs-and-recommendations}
 
 Haddii lammaane midab uu ku dhaco xaqiijinta, awooddu waxay bixisaa talooyin:
 
@@ -155,7 +155,7 @@ Haddii lammaane midab uu ku dhaco xaqiijinta, awooddu waxay bixisaa talooyin:
 }
 ```
 
-## Awoodaha La Xiriira
+## Awoodaha La Xiriira {#related-abilities}
 
 - [Samee Logo SVG](./generate-logo-svg.md) — samee astaamo adigoo isticmaalaya palette-ka midabbada ee la xaqiijiyay
 - [Abuur Menu](./create-menu.md) — dhis navigation leh midabbo la heli karo

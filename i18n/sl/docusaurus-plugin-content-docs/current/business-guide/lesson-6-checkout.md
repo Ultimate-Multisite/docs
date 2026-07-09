@@ -3,15 +3,15 @@ title: 'Lekcija 6: Izkušnja registracije'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekcija 6: Izkušnja registracije
+# Lekcija 6: Izkušnja registracije {#lesson-6-the-signup-experience}
 
 Potek nakupa je mesto, kjer se zanimanje spremeni v prihodek. Zmeden ali generičen postopek registracije izgublja stranke. Nišno specifičen potek, ki govori njihov jezik in deluje brez napora, jih pretvori v kupce.
 
-## Kje smo končali
+## Kje smo končali {#where-we-left-off}
 
 FitSite ima konfigurirane predloge in pakete. Zdaj bomo zgradili izkušnjo registracije in nakupa, ki lastnike fitnes studiev spremeni v plačljive stranke.
 
-## Razumevanje poteka registracije
+## Razumevanje poteka registracije {#understanding-the-registration-flow}
 
 Obrazci za nakup v Ultimate Multisite so popolnoma prilagodljivi večkoračni obrazci. Za FitSite želimo potek, ki:
 
@@ -21,11 +21,11 @@ Obrazci za nakup v Ultimate Multisite so popolnoma prilagodljivi večkoračni ob
 
 Za celotno tehnično referenco si oglejte [Potek registracije](/user-guide/configuration/the-registration-flow).
 
-## Oblikovanje nakupa za FitSite
+## Oblikovanje nakupa za FitSite {#designing-the-fitsite-checkout}
 
 Pojdite na **Ultimate Multisite > Obrazci za nakup** in ustvarite nov obrazec.
 
-### 1. korak: Izbira paketa
+### 1. korak: Izbira paketa {#step-1-plan-selection}
 
 Prva stvar, ki jo lastnik fitnes studia vidi, naj bodo paketi, predstavljeni z izrazi, ki jih razume.
 
@@ -37,7 +37,7 @@ Prva stvar, ki jo lastnik fitnes studia vidi, naj bodo paketi, predstavljeni z i
 "1 GB storage" means nothing to a gym owner. "Everything you need for a professional studio website" means everything. Write plan descriptions in your customer's language.
 :::
 
-### 2. korak: Izbira predloge
+### 2. korak: Izbira predloge {#step-2-template-selection}
 
 Po izbiri paketa stranka izbere svojo začetno predlogo.
 
@@ -45,7 +45,7 @@ Po izbiri paketa stranka izbere svojo začetno predlogo.
 - Razpoložljive predloge so filtrirane glede na paket, ki so ga izbrali (konfigurirano v Lekciji 5)
 - Vsaka predloga naj ima predogledno sliko, ki prikazuje dizajn, specifičen za fitnes
 
-### 3. korak: Ustvarjanje Account
+### 3. korak: Ustvarjanje Account {#step-3-account-creation}
 
 Naj bo minimalno. Zberite samo:
 
@@ -55,27 +55,27 @@ Naj bo minimalno. Zberite samo:
 
 Pri registraciji ne sprašujte po informacijah, ki jih ne potrebujete. Vsako dodatno polje zmanjša konverzije.
 
-### 4. korak: Nastavitev spletnega mesta
+### 4. korak: Nastavitev spletnega mesta {#step-4-site-setup}
 
 - **Naslov spletnega mesta**: Vnaprej izpolnite z imenom studia, vnesenim v 3. koraku
 - **URL spletnega mesta**: Samodejno ustvarite iz imena studia (npr. `ironworks.fitsite.com`)
 
-### 5. korak: Plačilo
+### 5. korak: Plačilo {#step-5-payment}
 
 - Dodajte polje **Plačilo**
 - Konfigurirajte svoj plačilni prehod ([Stripe](/user-guide/payment-gateways/stripe) je priporočen za obračunavanje naročnin)
 - Če ste v Lekciji 5 ustvarili dodatne ponudbe ob naročilu, dodajte polje **Dodatna ponudba ob naročilu** pred korakom plačila
 
-### 6. korak: Potrditev
+### 6. korak: Potrditev {#step-6-confirmation}
 
 - Prilagodite potrditveno sporočilo z jezikom, specifičnim za fitnes
 - Primer: "Spletno mesto vašega fitnes studia se ustvarja. Čez nekaj sekund boste preusmerjeni na svoje novo spletno mesto."
 
-## Dodajanje preklopa za izbiro obdobja
+## Dodajanje preklopa za izbiro obdobja {#adding-a-period-selection-toggle}
 
 Če ste v svojih paketih nastavili različice cen (mesečno proti letno), v obrazec za nakup dodajte polje **Izbira obdobja**, da lahko stranke preklapljajo med obračunskimi obdobji. Za navodila si oglejte [Obrazci za nakup](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-## Konfiguriranje plačila
+## Konfiguriranje plačila {#configuring-payment}
 
 Če še niste nastavili plačilnega prehoda:
 
@@ -85,7 +85,7 @@ Pri registraciji ne sprašujte po informacijah, ki jih ne potrebujete. Vsako dod
 
 Za podrobnosti o tem, kako plačila tečejo na vaš Account, si oglejte [Prejemanje plačil](/user-guide/payment-gateways/getting-paid).
 
-## Testiranje poteka
+## Testiranje poteka {#testing-the-flow}
 
 Preden nadaljujete, opravite celotno testno registracijo:
 
@@ -105,7 +105,7 @@ Preverite, da:
 - [ ] Stranka pristane na delujočem spletnem mestu z izbrano predlogo
 - [ ] Potrditvena e-poštna sporočila uporabljajo jezik, specifičen za fitnes
 
-## Omrežje FitSite do zdaj
+## Omrežje FitSite do zdaj {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Večkoračni obrazec za nakup**, prilagojen lastnikom fitnes studiev
 - **Nišno specifičen jezik** skozi celoten potek registracije

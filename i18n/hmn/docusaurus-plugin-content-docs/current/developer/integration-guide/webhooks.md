@@ -3,11 +3,11 @@ title: Kev tuav tswj Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Kev tuav webhook
+# Kev tuav webhook {#webhook-handling}
 
 Tsim cov webhook endpoints tshwj xeeb kom txais cov xwm txheej los ntawm cov kev pabcuam sab nraud thiab sync cov ntaub ntawv nrog Ultimate Multisite.
 
-## Webhook Endpoint Tshwj Xeeb
+## Webhook Endpoint Tshwj Xeeb {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Yam Yuav Tsum Xav Txog Txog Kev Ruaj Ntseg
+## Yam Yuav Tsum Xav Txog Txog Kev Ruaj Ntseg {#security-considerations}
 
 - Ib txwm kuaj xyuas webhook signatures siv HMAC lossis ib qho shared secret
 - Siv `permission_callback` rau koj txoj REST route — tsis txhob teeb nws ua `__return_true` hauv production

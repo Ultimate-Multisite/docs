@@ -3,13 +3,13 @@ title: ਏਕੀਕਰਨ ਗਾਈਡ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਗਾਈਡ
+# ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਗਾਈਡ {#integration-guide}
 
 ਇਹ ਗਾਈਡ Ultimate Multisite ਨਾਲ ਆਮ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਪੈਟਰਨਾਂ ਨੂੰ ਕਵਰ ਕਰਦੀ ਹੈ, ਜਿਸ ਵਿੱਚ ਬਾਹਰੀ ਸੇਵਾਵਾਂ ਨਾਲ ਕਨੈਕਟ ਕਰਨਾ, ਕਸਟਮ ਭੁਗਤਾਨ ਗੇਟਵੇ ਬਣਾਉਣਾ, ਅਤੇ webhooks ਨੂੰ ਸੰਭਾਲਣਾ ਸ਼ਾਮਲ ਹੈ।
 
 ਅਲੱਗ tenant ਇੰਫ੍ਰਾਸਟ੍ਰਕਚਰ ਲਈ, sovereign tenant bootstrap, migration verification, SSO, ਅਤੇ teardown ਮਾਰਗਦਰਸ਼ਨ ਲਈ [Multi-Tenancy ਇੰਟੀਗ੍ਰੇਸ਼ਨ](./multi-tenancy) ਵੇਖੋ।
 
-## CRM ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+## CRM ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#crm-integration}
 
 ਨਵੇਂ ਗਾਹਕ ਸਾਈਨ ਅੱਪ ਕਰਨ ਵੇਲੇ ਗਾਹਕ ਡਾਟਾ ਆਪਣੇ CRM ਨਾਲ ਸਿੰਕ ਕਰੋ:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## ਵਿਸ਼ਲੇਸ਼ਣ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+## ਵਿਸ਼ਲੇਸ਼ਣ ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#analytics-integration}
 
 ਗਾਹਕ lifecycle ਵਿੱਚ ਮੁੱਖ ਕਾਰੋਬਾਰੀ ਘਟਨਾਵਾਂ ਟਰੈਕ ਕਰੋ:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## ਅਗਲੇ ਕਦਮ
+## ਅਗਲੇ ਕਦਮ {#next-steps}
 
 - [ਕਸਟਮ ਗੇਟਵੇ ਵਿਕਾਸ](./custom-gateway) — ਆਪਣਾ ਭੁਗਤਾਨ ਗੇਟਵੇ ਬਣਾਓ
 - [Webhook ਹੈਂਡਲਿੰਗ](./webhooks) — ਕਸਟਮ webhook endpoints ਬਣਾਓ

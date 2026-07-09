@@ -3,11 +3,11 @@ title: Whakahaere Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Te Whakahaere Webhook
+# Te Whakahaere Webhook {#webhook-handling}
 
 Waihangatia he pito mutunga webhook ritenga hei whiwhi takahanga mai i ngā ratonga o waho, hei tukutahi raraunga hoki ki Ultimate Multisite.
 
-## Pito Mutunga Webhook Ritenga
+## Pito Mutunga Webhook Ritenga {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Ngā Whakaaro Haumarutanga
+## Ngā Whakaaro Haumarutanga {#security-considerations}
 
 - Manatokona ngā waitohu webhook i ngā wā katoa mā te HMAC, mā tētahi muna tiritahi rānei
 - Whakamahia tētahi `permission_callback` ki tō ara REST — kaua rawa e tautuhi ki `__return_true` i te taiao whakaputa

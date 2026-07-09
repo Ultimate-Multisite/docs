@@ -3,17 +3,17 @@ title: 'Lektioun 12: D''Geschäft féieren'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lektioun 12: D'Geschäft féieren
+# Lektioun 12: D'Geschäft féieren {#lesson-12-running-the-business}
 
 Eng Plattform ass kee Projet, deen een ofschléisst -- et ass e Geschäft, dat ee féiert. Dës Lektioun deckt den alldeegleche Betrib vum Gestioun vu FitSite of: Support, Ofrechnung, Maintenance, an d'Clienten zefridden halen.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 FitSite ass live an d'Clientë mellen sech un. Elo musst s du de Betrib nohalteg féieren.
 
-## Alldeegleche Betrib
+## Alldeegleche Betrib {#daily-operations}
 
-### Iwwerwaachung
+### Iwwerwaachung {#monitoring}
 
 Kontrolléier dëst all Dag (oder riicht Alarmer an):
 
@@ -22,7 +22,7 @@ Kontrolléier dëst all Dag (oder riicht Alarmer an):
 - **Feelgeschloe Bezuelungen**: Ginn et Bezuelungsfeeler, déi Opmierksamkeet brauchen?
 - **Support-Ufroen**: Ginn et onbeäntwert Clientefroen?
 
-### Clientssupport
+### Clientssupport {#customer-support}
 
 Däi Nischefokus ass hei e Virdeel. Well all deng Clientë Fitnessstudios sinn, wäerts du déiselwecht Froen ëmmer erëm gesinn:
 
@@ -36,7 +36,7 @@ Däi Nischefokus ass hei e Virdeel. Well all deng Clientë Fitnessstudios sinn, 
 
 Bau deng Wëssensbasis (ugefaangen an der Lektioun 8) ronderëm dës widderkéierend Froen op. All Support-Ticket, deen e Wëssensbasis-Artikel hätt kënne sinn, ass e Signal, deen Artikel ze schreiwen.
 
-### Support-Niveauen
+### Support-Niveauen {#support-tiers}
 
 Wéi s du wiiss, strukturéier de Support no Plan:
 
@@ -48,9 +48,9 @@ Wéi s du wiiss, strukturéier de Support no Plan:
 
 Den [Support Tickets addon](/addons/support-tickets) kann hëllefen, Support-Ufroen an der Plattform ze verwalten.
 
-## Ofrechnungsbetrib
+## Ofrechnungsbetrib {#billing-operations}
 
-### Widderkéierend Bezuelungen
+### Widderkéierend Bezuelungen {#recurring-payments}
 
 Ultimate Multisite geréiert widderkéierend Ofrechnung automatesch iwwer däi Bezuelungsgateway. Deng Aufgab ass et, Folgendes ze iwwerwaachen:
 
@@ -58,7 +58,7 @@ Ultimate Multisite geréiert widderkéierend Ofrechnung automatesch iwwer däi B
 - **Dunning**: Riicht automatiséiert Widderhuelungslogik iwwer däi Bezuelungsgateway an (Stripe geréiert dat gutt)
 - **Annulatiounsufroen**: Verstéi, firwat Clientë fortginn. All Annulatioun ass Feedback.
 
-### Memberships verwalten
+### Memberships verwalten {#managing-memberships}
 
 Navigéier op **Ultimate Multisite > Memberships**, fir:
 
@@ -69,13 +69,13 @@ Navigéier op **Ultimate Multisite > Memberships**, fir:
 
 Kuck [Memberships verwalten](/user-guide/administration/managing-memberships) fir déi komplett Referenz.
 
-### Rechnungsstellung
+### Rechnungsstellung {#invoicing}
 
 Stell sécher, datt Rechnunge fir all Bezuelung korrekt generéiert ginn. Clientë kënnen Rechnunge fir d'Rapportéiere vu Geschäftsausgaben brauchen. Kuck [Bezuelungen a Rechnunge verwalten](/user-guide/administration/managing-payments-and-invoices).
 
-## Plattform-Maintenance
+## Plattform-Maintenance {#platform-maintenance}
 
-### WordPress- a Plugin-Updates
+### WordPress- a Plugin-Updates {#wordpress-and-plugin-updates}
 
 Als Netzwierkadministrator bass du verantwortlech fir:
 
@@ -88,14 +88,14 @@ Als Netzwierkadministrator bass du verantwortlech fir:
 E futtissen Update beaflosst all Client-Site op dengem Netzwierk. Test Updates ëmmer als éischt op enger Staging-Kopie vun dengem Netzwierk.
 :::
 
-### Sécherheet
+### Sécherheet {#security}
 
 - Halt all Software aktuell
 - Benotz staark Passwierder an Zwee-Faktor-Authentifikatioun fir Admin-Accounts
 - Iwwerwaach verdächteg Aktivitéit
 - Hues e Plang fir Sécherheetsincidenten
 
-### Leeschtung
+### Leeschtung {#performance}
 
 Wéi däi Netzwierk wiisst, iwwerwaach:
 
@@ -105,9 +105,9 @@ Wéi däi Netzwierk wiisst, iwwerwaach:
 
 Erwääg Caching ëmzesetzen (Säitecache, Objektcache) an e CDN, falls du dat nach net gemaach hues. D'[Cloudflare-Integratioun](/user-guide/host-integrations/cloudflare) geréiert vill dovun.
 
-## Gestioun vum Clientsliewenszyklus
+## Gestioun vum Clientsliewenszyklus {#customer-lifecycle-management}
 
-### Churn reduzéieren
+### Churn reduzéieren {#reducing-churn}
 
 Churn ass de Prozentsaz vu Clienten, déi all Mount annuléieren. Fir en Abonnementsgeschäft ass Churn reduzéieren esou wichteg wéi nei Clientë gewannen.
 
@@ -119,7 +119,7 @@ Churn ass de Prozentsaz vu Clienten, déi all Mount annuléieren. Fir en Abonnem
 - Si hunn eng méi bëlleg Alternativ fonnt → däin Nischewäert verstäerken
 - Hiert Geschäft huet zougemaach → onvermeidbar, mee verfolleg dat separat
 
-### Upgrades encouragéieren
+### Upgrades encouragéieren {#encouraging-upgrades}
 
 Clienten um Starter, déi Erfolleg hunn, solle encouragéiert ginn ze upgraden:
 
@@ -127,7 +127,7 @@ Clienten um Starter, déi Erfolleg hunn, solle encouragéiert ginn ze upgraden:
 - Geziilt E-Maile schécken, déi Growth-Plan-Features ervirhiewen, vun deene si profitéiere géifen
 - Weisen, wat Growth/Pro-Clientë gebaut hunn
 
-### Win-Back-Campagnen
+### Win-Back-Campagnen {#win-back-campaigns}
 
 Wann e Client annuléiert:
 
@@ -135,30 +135,30 @@ Wann e Client annuléiert:
 2. Géi op säi Bedenken an, wann et méiglech ass
 3. Bitt eng Remise un, fir zeréckzekommen (30-60 Deeg no der Annulatioun)
 
-## Wöchentlech a monatlech Routinen
+## Wöchentlech a monatlech Routinen {#weekly-and-monthly-routines}
 
-### Wöchentlech
+### Wöchentlech {#weekly}
 
 - Nei Umeldungen an Annulatiounen iwwerpréiwen
 - Op all oppe Support-Ticketen äntweren
 - Plattformleeschtung an Uptime kontrolléieren
 - All feelgeschloe Bezuelungen iwwerpréiwen
 
-### Monatlech
+### Monatlech {#monthly}
 
 - Schlësselmetriken analyséieren (MRR, Churn, nei Clienten, Upgrades)
 - WordPress- a Plugin-Updates uwenden (nom Staging-Test)
 - Wëssensbasis op Basis vu Support-Musteren iwwerpréiwen an aktualiséieren
 - En Newsletter oder Update u Clientë schécken (nei Features, Tipps, Neiegkeeten aus der Fitnessbranche)
 
-### Véiereljäerlech
+### Véiereljäerlech {#quarterly}
 
 - Präisser géint Konkurrenten a Clientefeedback iwwerpréiwen
 - Template-Designs evaluéieren -- brauche se eng Opfrëschung?
 - Hosting-Kapazitéit aschätzen -- muss du skaléieren?
 - Onboarding op Basis vun Aktivéierungsdaten iwwerpréiwen a verbesseren
 
-## Wat mir an dëser Lektioun gebaut hunn
+## Wat mir an dëser Lektioun gebaut hunn {#what-we-built-this-lesson}
 
 - **Deeglech Iwwerwaachungsroutine** fir Uptime, Umeldungen, Bezuelungen a Support
 - **Eng gestaffelt Support-Struktur** ofgestëmmt op Plang-Niveauen

@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite iyi-WordPress Multisite plugin ekuvumela ukuthi unikeze i-WaaS noma Websites as a Service kumakhasimende. Ngaphambi kokuthi singene sijule futhi sifunde ukuthi Ultimate Multisite ingasiza kanjani ibhizinisi lakho namakhasimende, kunolwazi oluyisisekelo okudingeka siluthole.
 
-## I-WordPress Multisite
+## I-WordPress Multisite {#the-wordpress-multisite}
 
 Iningi lethu lijwayelene nokufakwa okujwayelekile kwe-WordPress. Uyikudala nge-control panel yomhlinzeki wakho wokusingatha noma, kwabanesibindi, usethe i-web server entsha ne-database, ulande amafayela ayisisekelo bese uqala inqubo yokufaka.
 
@@ -21,13 +21,13 @@ Ngokuyisisekelo, i-WordPress multisite ingacatshangwa kanje: Inyuvesi igcina uku
 
 Ukuhlukanisa lesi sitatimende ake sibheke elinye lamagama ayisisekelo akhona hhayi kuphela emibhalweni ye-Ultimate Multisite kodwa futhi nasemphakathini we-WordPress.
 
-### I-Network
+### I-Network {#the-network}
 
 Ngokwe-WordPress, i-multisite network yindawo lapho amasayithi angaphansi amaningi angaphathwa khona kusuka ku-dashboard eyodwa. Nakuba ukudala i-multisite network kwehluka phakathi kwabahlinzeki bokusingatha, umphumela wokugcina uvamise ukuba iziqondiso ezimbalwa ezengeziwe efayeleni le-wp-config.php ukwazisa WordPress ukuthi isebenza kule modi ethile.
 
 Kunezinguquko ezihlukile eziningana phakathi kwe-multisite network nokufakwa kwe-WordPress okuzimele esizoxoxa ngazo kafushane.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#subdomain-vs-subdirectory}
 
 Esinye sezinqumo zokuqala ozodinga ukuzenza ukuthi ukufakwa kwe-multisite kuzosebenza ngama-_subdirectories_ noma ama-_subdomains_. Ultimate Multisite isebenza kahle ngokulinganayo ngazo zombili izinketho kodwa kunezinguquko ezithile zesakhiwo phakathi kwezilungiselelo ezimbili.
 
@@ -43,7 +43,7 @@ Ekulungiselelweni kwe-_subdomain_ ukusetshenziswa kwesitifiketi se-wildcard SSL 
 
 Nakuba ezinye izinketho zikhona, lezi zivame ukulinganiselwa ngobubanzi nokusetshenziswa futhi zidinga ukulungiselelwa okwengeziwe nokucatshangelwa maqondana nokufaneleka.
 
-#### Ama-Plugin nama-Theme
+#### Ama-Plugin nama-Theme {#plugins-and-themes}
 
 Lokho WordPress ekupha khona iyakuphuca futhi, okungenani ngokombono wekhasimende. Ekufakweni kwe-WordPress okuzimele uma umphathi wesayithi efaka i-plugin embi noma ehluleka ukugcina ukufakwa kwakhe kusesikhathini, okuwukuphela kwesisulu nomonakalo walesi senzo nguye uqobo. Kodwa-ke, umphathi wesayithi ofaka i-plugin embi ekufakweni kwe-multisite udala isisulu sayo yonke isayithi efakiwe ku-network.
 
@@ -51,7 +51,7 @@ Ngalesi sizathu lapho ilungiselelwe njenge-multisite, WordPress isusa ikhono kub
 
 Kuleli zinga umphathi we-network unesibopho sokufaka ama-plugin nama-theme ku-network futhi udlulisela izimvume zokusebenzisa lawa ma-plugin nama-theme kumasayithi e-network. Abaphathi besayithi abakwazi ukufaka ama-plugin nama-theme noma ukufinyelela ama-plugin nama-theme angabelwe isayithi labo.
 
-#### Abasebenzisi Nabaphathi
+#### Abasebenzisi Nabaphathi {#users-and-administrators}
 
 Ku-WordPress Multisite, wonke amasayithi e-network abelana nge-database efanayo ngakho abelana ngabasebenzisi abafanayo, izindima namakhono. Indlela efanele kakhulu yokukucabanga ukuthi bonke abasebenzisi bangamalungu e-network hhayi esayithi elithile.
 
@@ -63,13 +63,13 @@ Siphinda isitatimende esingenhla, nakuba ama-akhawunti abasebenzisi ebonakala eh
 
 Nakuba lokhu kungewona umqondo ongaziwa ezinhlelweni zamabhizinisi, lo mthombo owodwa wokubhaliswa nokuqinisekiswa kwabasebenzisi uvame ukuba umqondo onzima ukuwuqonda kubantu abajwayelene nokufakwa kwe-WordPress okuzimele lapho ukuphathwa kwabasebenzisi kulula kancane.
 
-#### Imidiya
+#### Imidiya {#media}
 
 Lapho amasayithi enethiwekhi abelana ngesizindalwazi esisodwa ku-WordPress Multisite, agcina izindlela ezihlukene ohlelweni lwamafayela zamafayela emidiya.
 
 Indawo ejwayelekile ye-WordPress (wp-content/uploads) iyasala; nokho, indlela yayo iyashintshwa ukuze ibonise i-ID eyingqayizivele yesayithi lenethiwekhi. Ngenxa yalokho amafayela emidiya esayithi lenethiwekhi avela njenge-wp-contents/uploads/site/[id].
 
-#### Ama-Permalinks
+#### Ama-Permalinks {#permalinks}
 
 Sishilo ngaphambilini ukuthi kunezinzuzo ezihlukile zokuhlelwa kwe-_subdomain_ kunokwe-_subdirectory_ futhi nakhu: izindlela.
 
@@ -83,7 +83,7 @@ Ekuhlelweni kwe-_subdomain_ lesi senzo asidingeki ngoba isayithi ngalinye leneth
 
 <!-- Isithombe-skrini asitholakali: izilungiselelo ze-permalink ze-WordPress zokuhlelwa kwe-subdomain -->
 
-#### Amakhasi Angashintshi
+#### Amakhasi Angashintshi {#static-pages}
 
 Ekuhlelweni kwe-_subdirectory_ amathuba ezingxabano zamagama afinyelela nasemakhasini angashintshi njengoba isayithi eliyinhloko namasayithi enethiwekhi abelana ngendlela efanayo.
 
@@ -93,7 +93,7 @@ Ukuvimbela lokhu, i-WordPress inikeza indlela yokufaka ohlwini oluvinjelwe amaga
 
 Ekuhlelweni kwe-_subdomain_ amathuba ezingxabano zamagama ancishiswa yi-_subdomain_ njengoba iyingqayizivele kusayithi lenethiwekhi futhi ayihlobene nganoma iyiphi indlela nesayithi eliyinhloko.
 
-### Ukubhalisa
+### Ukubhalisa {#registration}
 
 Ngaphakathi kwezilungiselelo zenethiwekhi ze-WordPress Multisite kunezinketho ezintsha eziningana zokubhaliswa kwabasebenzisi ezitholakalayo, ezivumela abasebenzisi abasha nabakhona ukuthi badale amasayithi.
 
@@ -111,7 +111,7 @@ Ngokwaleli zinga, lapho umsebenzisi engena ngemvume ungena kunethiwekhi futhi ek
 
 Nokho, uma uhlobo nenhloso ehlosiwe ye-multisite bekuwukunikeza amasayithi enethiwekhi ahlukene angenabo ubudlelwano komunye nomunye, cishe njalo kuba njalo ukuthi kudingeke ama-plugin angaphandle noma angeziwe ukuze kulawulwe izindima zabasebenzisi.
 
-### Isizinda ne-SSL
+### Isizinda ne-SSL {#domain-and-ssl}
 
 Ake sikhulume ngokufakwa kwe-WordPress Multisite okucishe kusiphunyuke - Wordpress.com. Lesi yisibonelo esibanzi kakhulu se-Wordpress multisite futhi sibonisa amakhono aso abanzi okwenziwa ngokwezifiso nokubunjwa ukuze kufezwe injongo.
 
@@ -125,11 +125,11 @@ Kubaphathi benethiwekhi lokhu kuveza ungqimba olwengeziwe lobunkimbinkimbi kokub
 
 Kuleli zinga nakuba WordPress Multisite ihlinzeka indlela yokuvumela [www.anotherdomain.com](http://www.anotherdomain.com) ukuthi imephwe ku-‘site1’ umlawuli wenethiwekhi usala nenselele yokuphatha ngaphandle okufakiwe kwe-DNS nokusetshenziswa kwezitifiketi ze-SSL.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Njengoba umehluko phakathi kokufakwa kwe-WordPress okuzimele nokufakwa kwe-Multisite usuqondakele, ake sibheke ukuthi Ultimate Multisite iyisikhali esiphelele kanjani sokuhlinzeka Amawebhusayithi Njengesevisi.
 
-### Isingeniso
+### Isingeniso {#introduction}
 
 Ultimate Multisite iyithuluzi lakho elisebenza ngezindlela eziningi uma kuziwa ekudaleni Iwebhusayithi Njengesevisi (WaaS). Cabanga nge-Wix.com, Squarespace, WordPress.com bese ucabanga ngokuba nesevisi yakho siqu.
 
@@ -137,9 +137,9 @@ Ngaphansi kobuso Ultimate Multisite isebenzisa WordPress Multisite kodwa ikwenza
 
 Ezigabeni ezilandelayo sizobheka ezinye izindlela zokusebenzisa ezivamile kanye nokucatshangelwa okudingekayo ukuze kusekelwe lezo zimo.
 
-### Izindlela Zokusebenzisa
+### Izindlela Zokusebenzisa {#use-cases}
 
-#### Isimo 1: I-ejensi
+#### Isimo 1: I-ejensi {#case-1-an-agency}
 
 Ngokuvamile amakhono ayisisekelo e-ejensi asekwakhiweni kwamawebhusayithi, kanti izici ezifana nokuwasingatha noma ukumaketha kwawo zibhalwa njengezinsizakalo ezengeziwe.
 
@@ -165,7 +165,7 @@ Izindikimba zinikeza ukusebenza okufanayo, zivumela izindikimba ezithile ukuthi 
 
 Ama-ejensi azothola ukuthula kwengqondo nge-Ultimate Multisite ebavumela ukuthi benze abakwenza kangcono kakhulu - ukuklama amawebhusayithi avelele.
 
-#### Isimo 2: Umhlinzeki Womkhakha Okhethekile
+#### Isimo 2: Umhlinzeki Womkhakha Okhethekile {#case-2-niche-provider}
 
 Kukhona isisho sakudala esithi, “yenza into eyodwa futhi uyenze kahle”. Kubachwepheshe abaningi lokhu kusho ukudala umkhiqizo noma isevisi ezungeze umqondo owodwa oyisisekelo.
 
@@ -179,7 +179,7 @@ Kumhlinzeki wamasayithi nezinsizakalo zomkhakha okhethekile lokhu kunikeza inzuz
 
 Kuye ngezidingo, kokubili ukucushwa kwe-_subdirectory_ noma kwe-_subdomain_ kungase kufaneleke, lapho izinketho zokwakheka zingaba phakathi kwesitifiketi se-SSL esilula sama-_subdirectories_ noma isitifiketi se-SSL se-wildcard sama-_subdomains_.
 
-#### Isimo 3: Ukusingathwa Kwewebhu kwe-WordPress
+#### Isimo 3: Ukusingathwa Kwewebhu kwe-WordPress {#case-3-wordpress-web-hosting}
 
 Kunezindlela eziningi zokusingatha amasayithi e-WordPress kodwa akuvamile ukuthi kube lula njengokunikeza ikhasimende indawo yewebhu enenguqulo ye-WordPress efakwe kusengaphambili. Lokhu kungenxa yokuthi izinqumo nokucatshangelwa okuningi kudinga ukuhlangana ukuze kuhlinzekwe isevisi enenjongo.
 
@@ -191,11 +191,11 @@ Kubathuthukisi abafisa ukuhlanganisa ne-Ultimate Multisite, isixazululo siphinde
 
 Ngaphandle kokuncika enqwabeni yama-plugin angaphandle namalayisensi, Ultimate Multisite ihlinzeka ngesixazululo esicebile ngezici futhi esiqhathanisekayo nese-Wix, Squarespace, WordPress.com nabanye.
 
-### Okucatshangelwayo Ngokwakhiwa
+### Okucatshangelwayo Ngokwakhiwa {#architecture-considerations}
 
 Nakuba lokhu kungeyona inkomba ephelele, izinto ezilandelayo kufanele zisebenze njengesiqondiso ekukhetheni okulungile kobuchwepheshe bokusekela ukufakwa kwe-Ultimate Multisite.
 
-#### Ukusingathwa Okwabelwana Ngakho vs. Okuzinikele
+#### Ukusingathwa Okwabelwana Ngakho vs. Okuzinikele {#shared-vs-dedicated-hosting}
 
 Ngeshwa akubona bonke abahlinzeki bokusingathwa abafanayo futhi abanye basebenzisa ukuminyana okwedlulele kwamaseva. Abahlinzeki abanezindleko eziphansi ngokuvamile benza imali ngokwandisa ukuminyana kwamaseva. Ngakho-ke ukufakwa kwakho kwe-Ultimate Multisite kungase kube yisayithi elilodwa kuphela phakathi kwamakhulu amaningana amasayithi kuseva efanayo.
 
@@ -209,7 +209,7 @@ Ultimate Multisite yaziwa ukuthi isebenza nabahlinzeki bokusingathwa abahle aban
 
 Ukuze uthole uhlu lwabahlinzeki abahambisanayo kanye nemiyalelo ephelele yokusetha ngayinye sicela uhlole imibhalo Yabahlinzeki Abahambisanayo.
 
-#### Okucatshangelwayo Ngokusebenza
+#### Okucatshangelwayo Ngokusebenza {#performance-considerations}
 
 Ultimate Multisite akulona uhlelo lokusebenza oluhamba kancane; kunalokho, lushesha ngokumangalisayo. Nokho, lusebenza kahle kuphela njengohlelo lokusebenza oluyisisekelo nengqalasizinda, futhi lungasebenzisa kuphela lokho olunokufinyelela kukho.
 
@@ -227,7 +227,7 @@ Ngenxa yalesi sizathu abaphathi abaningi benethiwekhi basebenzisa izixazululo zo
 
 Ultimate Multisite ifaka i-add-on ye-Cloudflare ethuthukile evumela abaphathi benethiwekhi ukuthi babeke ukufakwa kwabo ngemuva kwe-Cloudflare futhi basebenzise hhayi kuphela amakhono ayo okugcina okwesikhashana kodwa nokusingathwa kwe-DNS, izitifiketi ze-SSL nezindlela zokuphepha futhi.
 
-#### Izipele
+#### Izipele {#backups}
 
 Umuntu angabuza abantu abangu-50 iseluleko ngezipele futhi athole imibono engu-50 ehlukene ngamasu ezipele. Impendulo ithi, kuya ngezimo.
 
@@ -237,7 +237,7 @@ Ngezinhloso zalesi sigaba masivumelane ngokuthi isipele siyikhophi yesimo sesist
 
 Ngalokhu kuqonda, impendulo yokuthi izipele zingafezwa kanjani nokuthi yini engcono kakhulu endaweni yakho izoncika kakhulu ezidingweni zakho nasekhonweni lomhlinzeki wokusingathwa lokwanelisa lezo zidingo. Nokho, ngokulandelana kusukela kokunemibono eqinile kakhulu kuya kokunemibono emincane kakhulu, izinketho ezingezansi kufanele zinikeze isiqondiso esithile.
 
-#### Ama-Snapshot
+#### Ama-Snapshot {#snapshots}
 
 Ama-Snapshot ayizinhlamvu zesiliva zezipele ngoba alula, awanzima (kuze kube yilapho ufuna ukubuyisela) futhi ‘avele asebenze’. Nokho kudinga usizo oluthile kumhlinzeki wakho futhi ikakhulukazi kusebenza kuphela uma une-VPS (Virtual Private Server) noma okufanayo. Abahlinzeki abaningana ababhalwe emibhalweni yethu ethi ‘Abahlinzeki Abahambisanayo’ banikeza izipele ezingadingi kungenelela noma ukucatshangelwa okwengeziwe ngumqondisi wenethiwekhi.
 
@@ -245,7 +245,7 @@ Lapho izipele zendabuko ziqondisa amafayela nama-database, i-snapshot iqondisa i
 
 Ama-Snapshot angase adonse izindleko ezengeziwe kumhlinzeki wokusingathwa kodwa ayinqubomgomo yomshwalense ngokumelene nezingozi.
 
-#### Ama-Script Angaphandle
+#### Ama-Script Angaphandle {#external-scripts}
 
 Kubukeka sengathi azishodi izikripthi zangaphandle nezixazululo zokwenza isipele sezinsiza ze-WordPress ne-MySQL, futhi lezi zingasebenza kahle ku-Ultimate Multisite njengoba iyi-plugin ye-WordPress esebenzisa uhlelo lwamafayela nedathabheyisi ye-WordPress. Ngakho-ke isixazululo esenza isipele samasayithi e-WordPress sizohlanganisa ngokwanele izidingo ze-Ultimate Multisite.
 
@@ -253,7 +253,7 @@ Asikwazi ukuncoma isikripthi esisodwa kunesinye, kodwa iseluleko sethu esijwayel
 
 Kufanele kuqashelwe ukuthi lezi zikripthi, ngesikhathi zisebenza, zizokwandisa umthwalo wesistimu, okumele kubhekwe.
 
-#### Ama-plugin
+#### Ama-plugin {#plugins}
 
 Cishe ayikho inkinga ku-WordPress engenakuxazululwa nge-plugin, futhi uma ukuphatha izikripthi zangaphandle kungesona isiphuzo sakho se-java, mhlawumbe i-plugin iyindlela elandelayo engcono.
 
@@ -261,7 +261,7 @@ Nakuba ama-plugin ehluka ngezinketho nezici, ngokuvamile enza umsebenzi ofanayo,
 
 Lapho ukhetha i-plugin yakho, qaphela ukuqinisekisa ukuthi iyayiqonda i-multisite. Ngenxa yemvelo yokusebenza kwayo, ngesikhathi isipele sisebenza ungalindela umthwalo wesikhashana kuseva kuze kube inqubo isiqediwe.
 
-#### Isizinda ne-SSL
+#### Isizinda ne-SSL {#domain-and-ssl-1}
 
 Sekuxoxwe okuningi kakade mayelana namagama ezizinda kumodi ye-_subdomain_ ye-multisite. Isixazululo esicishe sibe semhlabeni wonke kubaphathi benethiwekhi ukusebenzisa okufakiwe kwe-wildcard DNS.
 
@@ -285,7 +285,7 @@ Kwabaningi, ukusetshenziswa kwe-Cloudflare kuyindlela elula. Ikhasimende lidinga
 
 Ngaphandle kwalokhu, kudingeka kufunwe ezinye izixazululo, yingakho i-Ultimate Multisite incoma uhlu lwabahlinzeki abahambisanayo. Lokhu kungenxa yokuthi inqubo yokusetha i-DNS ne-SSL ingaba inqubo engelula. Nokho, ngokuhlanganiswa kwe-Ultimate Multisite nalaba bahlinzeki, ubunzima bususwa kakhulu futhi inqubo yenziwa ngokuzenzakalelayo.
 
-#### Ama-plugin
+#### Ama-plugin {#plugins-1}
 
 Kungenzeka kakhulu ukuthi uzodinga ama-plugin angeziwe ukuze unikeze ukusebenza kumakhasimende akho noma kumasayithi enethiwekhi. Ingabe wonke ama-plugin asebenza ne-WordPress Multisite ne-Ultimate Multisite? Hhayi-ke, kuya ngokuthi.
 

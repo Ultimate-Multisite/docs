@@ -3,7 +3,7 @@ title: Soliqlarni boshqarish
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Soliqlarni boshqarish
+# Soliqlarni boshqarish {#tax-handling}
 
 Ultimate Multisite asosiy pluginimizga o‘rnatilgan soliq yig‘ish moduliga ega, shuning uchun rejalaringiz, paketlaringiz va xizmatlaringiz uchun savdo soliqlarini yig‘ishingiz kerak bo‘lsa, buni hech qanday qo‘shimchalar o‘rnatmasdan osonlik bilan amalga oshirishingiz mumkin.
 
@@ -11,7 +11,7 @@ Yevropada joylashgan kompaniyalar uchun biz **qo‘shimcha** taklif qilamiz; u *
 
 Ultimate Multisite sizning nomingizdan soliqlarni hukumatga topshirmaydi yoki o‘tkazmaydi; biz shunchaki tranzaksiya vaqtida tegishli soliqlarni yig‘ishingizga yordam beramiz. **Soliqlarni baribir o‘zingiz o‘tkazishingiz kerak bo‘ladi.**
 
-## Soliq yig‘ishni yoqish
+## Soliq yig‘ishni yoqish {#enabling-tax-collection}
 
 Soliq yig‘ish sukut bo‘yicha yoqilmagan. Uni yoqish uchun **Ultimate Multisite > Sozlamalar > Soliqlar** bo‘limiga o‘tishingiz va Enable Taxes sozlamasini yoqish uchun o‘zgartirgichni yoqishingiz kerak.
 
@@ -25,7 +25,7 @@ Alohida mahsulotlar uchun soliq sozlamalarini ham ko‘rishingiz mumkin:
 
 ![Mahsulotlar uchun soliq sozlamalari](/img/config/settings-taxes.png)
 
-### Soliq kiritilmagan va soliq kiritilgan
+### Soliq kiritilmagan va soliq kiritilgan {#tax-excluded-vs-tax-included}
 
 Sukut bo‘yicha barcha mahsulot narxlaringizga soliq kiritilmagan, ya’ni soliqlar mahsulot narxiga **kiritilmagan**. Agar mijoz ma’lum xarid uchun soliq to‘lashi kerakligini aniqlasak, soliqlarni oraliq jami summaning **ustiga** qo‘shamiz.
 
@@ -37,7 +37,7 @@ Kiritgan o‘zgarishlaringizni **saqlashni** unutmang.
 
 ###
 
-## Soliq stavkalarini yaratish
+## Soliq stavkalarini yaratish {#creating-tax-rates}
 
 Soliq yig‘ishni yoqqaningizdan so‘ng, soliq stavkalari tahrirlagichimizdan foydalanib muayyan joylar uchun soliq stavkalarini yaratishingiz kerak bo‘ladi.
 
@@ -51,7 +51,7 @@ Soliq stavkalari tahrirlagichi sahifasida **Yangi qator qo‘shish** tugmasini b
 
 Har bir soliq stavkasiga **sarlavha** berishingiz kerak bo‘ladi (hisob-fakturalarda ishlatiladi). Keyin bu soliq undiriladigan **mamlakat**ni (majburiy), **shtat/viloyatni** va **shaharni** (ikkalasi ham ixtiyoriy) tanlashingiz mumkin. Oxirida **soliq stavkasini foizlarda** qo‘shing.
 
-### Soliq kategoriyalari
+### Soliq kategoriyalari {#tax-categories}
 
 Turli mahsulot turlari uchun turli soliq stavkalarini qo‘shish maqsadida bir nechta soliq kategoriyalarini ham yaratishingiz mumkin.
 
@@ -73,7 +73,7 @@ Muayyan mahsulot uchun soliq kategoriyasini **Mahsulotni tahrirlash sahifasi**ga
 
 O‘sha ekranning o‘zida **Soliqqa tortiladimi?** o‘zgartirgichini o‘chirib, Ultimate Multisite bu mahsulot uchun soliq yig‘masligi kerakligini bildirishingiz mumkin.
 
-## Yevropa VAT qo‘llab-quvvatlashi
+## Yevropa VAT qo‘llab-quvvatlashi {#european-vat-support}
 
 Avval aytilganidek, Yevropa VAT qoidalari sababli qo‘shimcha talablarga ega bo‘lgan EUdagi mijozlar uchun qo‘shimchamiz mavjud.
 
@@ -101,7 +101,7 @@ Agar **Soliq sozlamalari varag‘i**ga qaytsangiz, yangi opsiyalar mavjudligini 
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAT soliq stavkalarini olish
+### VAT soliq stavkalarini olish {#pulling-on-vat-tax-rates}
 
 Integratsiyamiz qo‘shadigan vositalardan biri — EU a’zo davlatlari uchun soliq stavkalarini yuklash imkoniyatidir. Buni EU VAT qo‘llab-quvvatlashini yoqqandan so‘ng soliq stavkalari tahrirlagichi sahifasiga kirish orqali amalga oshirish mumkin.
 
@@ -111,7 +111,7 @@ Sahifaning pastki qismida VAT olish opsiyalarini ko‘rasiz. Stavka turini tanla
 
 Qiymatlarni olgandan keyin ularni tahrirlashingiz ham mumkin. Buni qilish uchun kerakli jadval qatorini oddiygina tahrirlang va yangi qiymatlarni saqlashni bosing.
 
-### VAT tekshiruvi
+### VAT tekshiruvi {#vat-validation}
 
 VAT qo‘llab-quvvatlashi yoqilganda, Ultimate Multisite to‘lovni rasmiylashtirish formasiga, billing manzili maydoni ostiga qo‘shimcha maydon qo‘shadi. Maydon faqat EUda joylashgan mijozlar uchun ko‘rsatiladi.
 

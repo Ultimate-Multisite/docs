@@ -4,23 +4,23 @@ title: ตัวกรอง - wu_get_post_types
 sidebar_label: wu_get_post_types
 _i18n_hash: 7e9a849e187bc1b15e63e024b42d7593
 ---
-# Filter: wu_get_post_types
+# Filter: wu_get_post_types {#filter-wugetposttypes}
 
 ให้ผู้พัฒนาสามารถกำหนดได้ว่าต้องการแสดงประเภทโพสต์ (post types) ใดบ้าง
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $post_types | `array` | รายการของประเภทโพสต์ที่ต้องการ |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 กำหนดไว้ใน [`inc/ui/class-limits-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-limits-element.php#L267) บรรทัดที่ 267
 
 
-## Returns
+## Returns {#returns}
 รายการใหม่

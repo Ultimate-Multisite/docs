@@ -3,18 +3,18 @@ title: Cloudways-integrasjon
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways-integrasjon
+# Cloudways-integrasjon {#cloudways-integration}
 
-## Oversikt
+## Oversikt {#overview}
 Cloudways er en administrert skybasert hostingplattform som lar deg distribuere WordPress-nettsteder hos ulike skyleverandører som DigitalOcean, AWS, Google Cloud og flere. Denne integrasjonen muliggjør automatisk domenesynkronisering og administrasjon av SSL-sertifikater mellom Ultimate Multisite og Cloudways.
 
-## Funksjoner
+## Funksjoner {#features}
 - Automatisk domenesynkronisering
 - Administrasjon av SSL-sertifikater
 - Støtte for ekstra domener
 - DNS-validering for SSL-sertifikater
 
-## Krav
+## Krav {#requirements}
 Følgende konstanter må være definert i `wp-config.php`-filen din:
 
 ```php
@@ -30,16 +30,16 @@ Du kan også valgfritt definere:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Oppsettsinstruksjoner
+## Oppsettsinstruksjoner {#setup-instructions}
 
-### 1. Hent Cloudways API-legitimasjonen din
+### 1. Hent Cloudways API-legitimasjonen din {#1-get-your-cloudways-api-credentials}
 
 1. Logg inn på Cloudways Dashboard
 2. Gå til "Account" > "API Keys"
 3. Generer en API-nøkkel hvis du ikke allerede har en
 4. Kopier e-posten og API-nøkkelen din
 
-### 2. Hent server- og applikasjons-ID-ene dine
+### 2. Hent server- og applikasjons-ID-ene dine {#2-get-your-server-and-application-ids}
 
 1. I Cloudways Dashboard, gå til "Servers"
 2. Velg serveren der WordPress multisite-nettverket ditt er hostet
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Gå til "Applications" og velg WordPress-applikasjonen din
 5. App-ID-en er synlig i URL-en: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Legg til konstanter i wp-config.php
+### 3. Legg til konstanter i wp-config.php {#3-add-constants-to-wp-configphp}
 
 Legg til følgende konstanter i `wp-config.php`-filen din:
 
@@ -70,7 +70,7 @@ Ikke legg til `*.your-network.com` (eller noe subdomenemønster for ditt eget ne
 nedenfor for hvorfor dette hindrer at SSL-sertifikater per leietaker blir utstedt.
 :::
 
-### 4. Aktiver integrasjonen
+### 4. Aktiver integrasjonen {#4-enable-the-integration}
 
 1. I WordPress-admin, gå til Ultimate Multisite > Settings
 2. Naviger til fanen "Domain Mapping"
@@ -78,9 +78,9 @@ nedenfor for hvorfor dette hindrer at SSL-sertifikater per leietaker blir utsted
 4. Aktiver Cloudways-integrasjonen
 5. Klikk "Save Changes"
 
-## Slik fungerer det
+## Slik fungerer det {#how-it-works}
 
-### Domenesynkronisering
+### Domenesynkronisering {#domain-syncing}
 
 Når et domene tilordnes i Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Når et domene tilordnes i Ultimate Multisite:
 
 Merk: Cloudways API krever at den komplette listen over domener sendes hver gang, ikke bare at enkeltvise domener legges til eller fjernes.
 
-### Administrasjon av SSL-sertifikater
+### Administrasjon av SSL-sertifikater {#ssl-certificate-management}
 
 Etter at domener er synkronisert:
 
@@ -106,7 +106,7 @@ integrasjonen. For å bruke et wildcard-sertifikat på Cloudways må du installe
 manuelt, men å gjøre det blokkerer Let's Encrypt-utstedelse per domene for tilordnede egendefinerte domener
 (se fallgruven nedenfor).
 
-## Ekstra domener
+## Ekstra domener {#extra-domains}
 
 Konstanten `WU_CLOUDWAYS_EXTRA_DOMAINS` lar deg angi flere **eksterne**
 domener som alltid skal beholdes på Cloudways-applikasjonens aliasliste. Bruk den for:
@@ -117,7 +117,7 @@ domener som alltid skal beholdes på Cloudways-applikasjonens aliasliste. Bruk d
 Ikke bruk denne konstanten for ditt eget nettverks subdomene-wildcard
 (f.eks. `*.your-network.com`). Se fallgruven med wildcard-SSL nedenfor.
 
-## Viktig — fallgruve med wildcard-SSL
+## Viktig — fallgruve med wildcard-SSL {#important--wildcard-ssl-pitfall}
 
 En vanlig feil når man følger Cloudways' standardoppsett, er å legge til et wildcard som
 `*.your-network.com` i `WU_CLOUDWAYS_EXTRA_DOMAINS`, eller å installere et Cloudways
@@ -128,7 +128,7 @@ egendefinerte domenene per leietaker som Ultimate Multisite tilordner.** Cloudwa
 SSL-sertifikatet på applikasjonen hver gang, og et eksisterende wildcard-sertifikat på
 applikasjonen blokkerer Let's Encrypt-utstedelsen per domene som integrasjonen er avhengig av.
 
-### Anbefalt Cloudways SSL-oppsett for et Ultimate Multisite-nettverk
+### Anbefalt Cloudways SSL-oppsett for et Ultimate Multisite-nettverk {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. I Cloudways-applikasjonens **SSL Certificate**-fane, installer et **standard
    Let's Encrypt-sertifikat** som bare dekker `your-network.com` og `www.your-network.com`
@@ -146,20 +146,20 @@ sertifikat på nytt kun for hovednettverksdomenet, og fjern eventuelle wildcard-
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Utløs deretter en domenetilknytning på nytt (eller vent på den neste),
 så vil integrasjonen begynne å utstede sertifikater per domene igjen.
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### Problemer med API-tilkobling
+### Problemer med API-tilkobling {#api-connection-issues}
 - Kontroller at e-posten din og API-nøkkelen er riktige
 - Sjekk at server- og applikasjons-ID-ene dine er riktige
 - Sørg for at Cloudways Account har de nødvendige tillatelsene
 
-### Problemer med SSL-sertifikat
+### Problemer med SSL-sertifikat {#ssl-certificate-issues}
 - Cloudways krever at domener har gyldige DNS-oppføringer som peker til serveren din før SSL-sertifikater utstedes
 - Integrasjonen validerer DNS-oppføringer før SSL-sertifikater forespørres
 - Hvis SSL-sertifikater ikke blir utstedt, sjekk at domenene dine peker riktig til serverens IP-adresse
 - **Egendefinerte domener per leietaker sitter fast uten SSL?** Sjekk fanen SSL Certificate i Cloudways-applikasjonen. Hvis et wildcard-sertifikat (manuelt installert, eller som dekker `*.your-network.com`) er aktivt, vil ikke Cloudways utstede Let's Encrypt-sertifikater for individuelt tilknyttede egendefinerte domener. Erstatt det med et standard Let's Encrypt-sertifikat som bare dekker hovednettverksdomenet (`your-network.com`, `www.your-network.com`), og fjern eventuelle wildcard-oppføringer fra `WU_CLOUDWAYS_EXTRA_DOMAINS`. Utløs deretter en domenetilknytning på nytt (eller vent på den neste), så vil integrasjonen be om sertifikater per domene.
 
-### Domene ikke lagt til
+### Domene ikke lagt til {#domain-not-added}
 - Sjekk Ultimate Multisite-loggene for eventuelle feilmeldinger
 - Kontroller at domenet ikke allerede er lagt til i Cloudways
 - Sørg for at Cloudways-planen din støtter antallet domener du legger til

@@ -3,19 +3,19 @@ title: Ngatur Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ngatur Gateway Stripe (v2)
+# Ngatur Gateway Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**CATATAN PENTING: Artikel iki merujuk pada Ultimate Multisite versi 2.x.**_
 
 Sampeyan bisa ngaktifake nganti papat cara pembayaran ing halaman pengaturan pembayaran kita: Stripe, Stripe Checkout, PayPal lan Manual. Ing artikel iki, kita bakal deleng kepiye carane nggabungake karo **Stripe**.
 
-## Ngaktifake Stripe
+## Ngaktifake Stripe {#enabling-stripe}
 
 Kanggo ngaktifake Stripe minangka gateway pembayaran sing bisa digunakake ing jaringan sampeyan, tindakna menyang **Ultimate Multisite > Settings > Payments** lan centang toggle ing sebelah **Stripe** utawa **Stripe Checkout** ing bagian Active Payment Gateways.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Cara iki bakal nuduhake papan kanggo mlebu nomer kartu kredit nalika proses checkout.
 
@@ -47,7 +47,7 @@ Salin nilai saka **Publishable key** lan **Secret key**, saka kolom **Token** ba
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Ngatur Stripe Webhook
+## Ngatur Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe ngirim webhook event sing ngewene kabar marang Ultimate Multisite saben ana kedadeyan nang **akun stripe sampeyan**.
 

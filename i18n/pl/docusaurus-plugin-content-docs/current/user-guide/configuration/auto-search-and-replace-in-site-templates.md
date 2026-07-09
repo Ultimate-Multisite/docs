@@ -3,7 +3,7 @@ title: Automatyczne wyszukiwanie i zamiana w szablonach witryn
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatyczne wyszukiwanie i zastępowanie w szablonach witryn (v2)
+# Automatyczne wyszukiwanie i zastępowanie w szablonach witryn (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ten poradnik wymaga WP UItimo w wersji 2.x.**_
 
@@ -17,7 +17,7 @@ Twój klient będzie wtedy mógł wypełnić to pole podczas rejestracji.
 
 Ultimate Multisite automatycznie zastąpi symbole zastępcze danymi podanymi przez klienta.
 
-## **Rozwiązanie problemu „szablonu pełnego symboli zastępczych”**
+## **Rozwiązanie problemu „szablonu pełnego symboli zastępczych”** {#solving-the-template-full-of-placeholders-problem}
 
 To wszystko jest świetne, ale napotykamy nieprzyjemny problem: nasze szablony witryn — które mogą być odwiedzane przez naszych klientów — są teraz pełne brzydkich symboli zastępczych, które niewiele mówią.
 

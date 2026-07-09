@@ -3,7 +3,7 @@ title: Formuloj de pagado
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms estas facila kaj fleksabla maniero eksperimenti por diversaj approcioj pri provi konverti novajn klientojn.
 
@@ -36,13 +36,13 @@ Alternativ, vi povas modifi aŭ dupliki la formojn, kiujn vi 이미 havas, klaki
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Supervizo de redaktoro de checkout formo
+#### Supervizo de redaktoro de checkout formo {#checkout-form-editor-overview}
 
 La redaktoro de checkout formo provizas komprenan interfacon por konstrui vian registriĝformojn. Tial vi havas sovran vizion de la layout de la redaktoro:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Modifado de checkout formo
+### Modifado de checkout formo {#editing-a-checkout-form}
 
 Vi povas krei checkout formojn por diversaj caŭzoj. En ĉi tiu ekzemplo ni laboros kun registriĝoformo.
 
@@ -112,7 +112,7 @@ Por akcesi vian form's shortcode, klikuante sur "Generate Shortcode" (Generi Sho
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### La Campo de Tablo de Precoj
+### La Campo de Tablo de Precoj {#the-pricing-table-field}
 
 La campo **Pricing Table** (Tablo de Precoj) montras vian produktojn sur la checkout form por ke klientoj kapabos elteni planon. Kiam vi modigas ti ĉi kampan, vi povas konfiguri plurajn opciojn:
 
@@ -130,17 +130,17 @@ Jen kiel la tablo de precoj aparas sur la frontend registriĝo formo:
 
 Se vi aldonas produkton al la Pricing Table antaŭ ol la formo inkluzas la kampojn necesajn por kompleti ti produkto's checkout fluo, la editora nun montris avizadon. Uzdu ti avizadon por aĉeti la mantranĉitan necesan kampan antaŭ publikigi aŭ savi ŝanĝojn por viva registriĝo formo.
 
-### Доdaŭrigi la Periodan Selektadon Toggle
+### Доdaŭrigi la Periodan Selektadon Toggle {#adding-a-period-selection-toggle}
 
 Se vi havas konfiguriĝit [Price Variations](creating-your-first-subscription-product#price-variations) sur viajuntaj (ekz. mensala kaj anualaj kondicioj), vi povas diri **Periodan Selektadon** (Period Selection) la viajn checkout formo. Ĉi tiu campo prezentas togglon, kiu permesas klientojn ŝanĝi inter pagamentajn periodojn, kaj la ceno-tablo ĝisdatigas dinamike en reala tempo.
 
-#### Paŝto 1: Konfiguri Price Variations sur Viajuntaj
+#### Paŝto 1: Konfiguri Price Variations sur Viajuntaj {#step-1-set-up-price-variations-on-your-products}
 
 Anta da diri Periodan Selektadon campo, certigu, ke viajuntaj havas konfiguriĝitajn price variations. Aliri **Ultimate Multisite > Products**, editi produkton kaj navigi al la tabelo **Price Variations** por aĉeti alternativo pagamentajn periodojn (ekz. Anual per malpli ceno).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Paŝto 2: Adoji la Periodan Selektadon Field al Viajuntaj Checkout Formo
+#### Paŝto 2: Adoji la Periodan Selektadon Field al Viajuntaj Checkout Formo {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Aliri **Ultimate Multisite > Checkout Forms** kaj editi vian checkout formon.
 
@@ -163,13 +163,13 @@ Anta da diri Periodan Selektadon campo, certigu, ke viajuntaj havas konfiguriĝi
 
 7. Klik **Save Field**.
 
-#### Paŝto 3: Pozicionu la Campo Super la Tablo de Precojoj
+#### Paŝto 3: Pozicionu la Campo Super la Tablo de Precojoj {#step-3-position-the-field-above-the-pricing-table}
 
 Por la plej bona uzanto-eksprienco, certiguu, ke la campo Selekto de Periodo aparas **ante** la campo Tablo de Precojoj en via paŝto de checkout. Vi povas tiri la campojn por reordoni ilin en la redaktoro de la forma de checkout. Tiel, la klientoj malkreskas un periodon de fakturigo kaj tiam vidas precojn por tiu periodo.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Kiel Ĝi Funkcias Sur La Frontend
+#### Kiel Ĝi Funkcias Sur La Frontend {#how-it-works-on-the-frontend}
 
 Unfojita, klientoj kiuj vizitas via vian registriĝa paĝo vidos la selektanton de periodo super la tablo de precojoj. Kiam ili klikas al diversan periodon de fakturigo:
 
@@ -177,7 +177,7 @@ Unfojita, klientoj kiuj vizitas via vian registriĝa paĝo vidos la selektanton 
   * Se **Force Different Durations** estas desabilitita sur la campo Tablo de Precojoj, produktaj sen variaco de preco por la selektita periodo estu malparolita.
   * Se **Force Different Durations** estas aktiva, ĉiuj produktaj restas vidaj kiel ili ne havas vario por la selektita periodo (il montros sian defaultan precon).
 
-#### Pra-selektiun de Periodo de Fakturigo per URL
+#### Pra-selektiun de Periodo de Fakturigo per URL {#pre-selecting-a-billing-period-via-url}
 
 Vi ankaŭ povas pra-selekti produkton kaj periodon de fakturigo per la URL. Ultimate Multisite subtenas ĉi tiuj URL-patron:
 
@@ -185,11 +185,11 @@ Vi ankaŭ povas pra-selekti produkton kaj periodon de fakturigo per la URL. Ulti
   * `/register/premium/12` — Pra-selektas la produkton kaj 12-monan duran
   * `/register/premium/1/year` — Pra-selektas la produkton kun 1-jara duro
 
-### La Campo Selekto de Modeloj (Template Selection Field)
+### La Campo Selekto de Modeloj (Template Selection Field) {#the-template-selection-field}
 
 La campo **Template Selection** permesas klientojn elekti modelon de sitio dum checkout. Ili estas nun inkluzita per default en la formoj de checkout "single step" kaj "multi-step" en Ultimate Multisite v2.6.1.
 
-#### La aldonado de la campo manuele
+#### La aldonado de la campo manuele {#adding-the-field-manually}
 
 Se vi travail kun formulon, ki estis kreita antaŭ v2.6.1, aŭ komencas de blanka mallapo:
 
@@ -200,11 +200,11 @@ Se vi travail kun formulon, ki estis kreita antaŭ v2.6.1, aŭ komencas de blank
    - **Label** — La titolo, kiun klientoj vidas super la mallapo gridon (ekz., "Elektu sita mallapon").
    - **Required** (Obligobligita) — Se klientoj devas selekti mallapon antaŭe procedi.
 
-#### Kiel ĝi funkcias
+#### Kiel ĝi funkcias {#how-it-works}
 
 Kiam klientas elektas mallapon dum checkouto, Ultimate Multisite uzas ĝin pri la provizio de sia nova sita. La mallapoj, kiuj estas montritaj, venas el viaj **Site Templates** listo (**Ultimate Multisite > Site Templates**). Nur mallapoj, kiuj estas marķitaj kiel disponibile por klientoj, aparas ĉi tie.
 
-### Checkout-form bazaj domenoj
+### Checkout-form bazaj domenoj {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 traktas domenojn konfigiritajn en la lajnlaj lajnlaj **Site URL** plipunoj kiel retoj bazaj domenoj (network base domains). Uzdu la disponiblajn domeno-parametroj de la plipro, kiam vi volas, ke klientoj kreu sita sub unu el pluraj partaj registriĝemaj domenoj, kiel `example.com` kaj `sites.example.com`.
 
@@ -212,6 +212,6 @@ Partaj checkout-form bazaj domenoj ne traktas kiel domeno-mapado per-sita (per-s
 
 Maltu domajn kaj custom domenojn por per-kliento mapitaj hostoj, kiel `customer-example.com`. Maltu checkout-form bazaj domenojn por partaj registriĝemaj hostoj, kiujn multaj sitoj povas uzi.
 
-#### Eliminado de la plipro
+#### Eliminado de la plipro {#removing-the-field}
 
 Se vi ne ofersas sitioj modeloj (site templates), forcas la kampo Selekto de Modeloj (Template Selection) el de via formo. La klientoj riceverá la default modelo ki estas konfigurita sub **Ultimate Multisite > Settings > Site Templates**.

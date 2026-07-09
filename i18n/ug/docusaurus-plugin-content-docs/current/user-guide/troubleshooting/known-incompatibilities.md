@@ -3,7 +3,7 @@ title: Маълуматлиноқ келиб турулар
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Boshqa Pluginlarga Mümkin Bo'lmaganliklar
+# Boshqa Pluginlarga Mümkin Bo'lmaganliklar {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite ni o'rnatgan va faollashtirganingizdan so'ng, boshqa pluginlar bilan hal etilmagan mos kelmasliklar tufayli muammolarga duch kelishingiz mumkin.
 

@@ -3,7 +3,7 @@ title: Talaan ng Pagbabago ng Tagapili ng Wika
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Talaan ng Pagbabago ng Tagapili ng Wika
+# Talaan ng Pagbabago ng Tagapili ng Wika {#language-selector-changelog}
 
 Bersyon: 1.1.3 - Inilabas noong 2026-05-05
 * Ayos: Ang mga input variable ay nililinis na ngayon at ang mga pangalan ng pasadyang hook ay nilagyan ng prefix upang maiwasan ang mga salungatan sa mga pandagdag mula sa ikatlong partido

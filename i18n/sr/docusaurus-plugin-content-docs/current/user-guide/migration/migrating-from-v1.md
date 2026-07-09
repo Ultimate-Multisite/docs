@@ -3,9 +3,9 @@ title: Migracija sa V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Миграција са V1
+# Миграција са V1 {#migrating-from-v1}
 
-## Ultimate Multisite је прешао из своје оригиналне 1.x линије релиза на 2.x линију релиза.
+## Ultimate Multisite је прешао из своје оригиналне 1.x линије релиза на 2.x линију релиза. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite верзија 2.0 и новије су потпуно ревизија кода, што значи да је мало узајамности између старог и новог верзионима. За ту разлогу, када ажурирате са 1.x на 2.x, ваши подаци ће морати бити мигрирани у формат који нови верзије могу разумети.
 
@@ -15,7 +15,7 @@ Ultimate Multisite верзија 2.0 и новије су потпуно рев
 
 _**ВАЖНО: Пре него што почнете ажурирање са верзије 1.x на верзију 2.0, молим вас проверите да сте креирали резервну копију своје базе података сайта**_
 
-## Прстепене акције
+## Прстепене акције {#first-steps}
 
 Први корак је да преузмете .zip фајл плагина и инсталирате верзију 2.0 на својој административни таблици мреже (network admin dashboard).
 
@@ -49,19 +49,19 @@ Nakon što unesete svoj ključ, kliknite na **Agree & Activate** (Prihvati i Akt
 
 Nakon aktivacije licence, možete početi sa stvarnom instalacijom tako što ćete kliknuti na **Install** (Instaliraj) na sledećoj stranici. To će automatski kreirati potrebne fajlove i bazu podataka neophodnu za rad verzije 2.0.
 
-## Sada, migracija
+## Sada, migracija {#now-the-migration}
 
 Migrator ima ugrađenu sigurnosnu funkciju koja će proveriti ceo vaš multisite kako bi se uverio da je podaci svih Ultimate Multisite podataka mogu preneti bez ikakvih problema. Kliknite na dugme **Run Check** (Pokreni provere) da započnete proces.
 
 Nakon pokretanja provere, imate dve opcije: rezultat može biti **sa** greškom ili **bez** greške.
 
-### Sa Greškom
+### Sa Greškom {#with-error}
 
 Ako dobijete poruku o grešci, moraćete da se obratite našem timu podrške kako bi vam pomogli u ispravljanju greške. Uverite se da im **dostavite log greške** kada kreirate tiket (support zahtev). Možete preuzeti log ili kliknuti na link koji kaže "kontaktirajte naš tim podrške". Otvoriće se pomoćni widget sa desne strane vaše stranice, gde su vam polja već popunjena i koja uključuju logove grešaka pod opisom.
 
 _**Pošto je sistem pronašao grešku, nećete moći da nastavite sa migracijom na verziju 2.0. Tada možete vratiti se na verziju 1.x kako biste nastavljali da upravljate mrežom dok se greška ne popravi.**_
 
-### Bez Greške
+### Bez Greške {#without-error}
 
 Ako sistem ne pronađe nikakvu grešku, videćete poruku o uspehu i dugme **Migrate** (Migriraj) na dnu koje će vam omogućiti da nastavite sa migracijom. Na ovoj stranici, podsetite ćete se da napravite backup baze podataka pre nego što krenete dalje, što snažno preporučujemo. Pritisnite **Migrate** ako već imate backup.
 

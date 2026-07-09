@@ -4,22 +4,22 @@ title: ಫಿಲ್ಟರ್ - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Filter: wu_site_exporter_plugin_exclusion_list
+# Filter: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
 
 developers ಗಳಿಗೆ, ರಚಿಸಲಾದ zip ಫೈಲ್‌ನಿಂದ ಹೊರಗಿಡಬೇಕಾದ plugin ಪಟ್ಟಿಯನ್ನು ನಿರ್ವಹಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 
-## ಪ್ಯಾರಾಮೀಟರ್‌ಗಳು
+## ಪ್ಯಾರಾಮೀಟರ್‌ಗಳು {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $plugin_list | `array` | ಹೊರಗಿಡಬೇಕಾದ pluginಗಳು. |
 
-### ಯಾವಾಗ ಲಭ್ಯ:
+### ಯಾವಾಗ ಲಭ್ಯ: {#since}
 
 - 2.0.0
-### ಮೂಲ
+### ಮೂಲ {#source}
 
 [`inc/class-wp-ultimo-site-exporter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-wp-ultimo-site-exporter.php#L210) ನಲ್ಲಿ 210ನೇ ಸಾಲಿನಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸಲಾಗಿದೆ.
 
-## ಮರಳಿ ನೀಡುತ್ತದೆ
+## ಮರಳಿ ನೀಡುತ್ತದೆ {#returns}
 plugin ಪಟ್ಟಿ.

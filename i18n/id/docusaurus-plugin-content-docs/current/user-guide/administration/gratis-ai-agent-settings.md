@@ -3,16 +3,16 @@ title: Pengaturan Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Pengaturan Gratis AI Agent
+# Pengaturan Gratis AI Agent {#gratis-ai-agent-settings}
 
 Layar **Pengaturan → Lanjutan** di Gratis AI Agent menyediakan konfigurasi tingkat administrator untuk integrasi backend. Halaman ini mendokumentasikan penerusan feedback, kunci penyedia pencarian, penyiapan layanan Superdav terkelola, kontrol Google Calendar, pengaturan SMS TextBee, dan penanda fitur di seluruh jaringan.
 
-## Mengakses Pengaturan
+## Mengakses Pengaturan {#accessing-settings}
 
 1. Di admin WordPress, buka **Gratis AI Agent → Pengaturan**.
 2. Klik tab **Lanjutan**.
 
-## Konfigurasi Endpoint Feedback
+## Konfigurasi Endpoint Feedback {#feedback-endpoint-configuration}
 
 Endpoint feedback menerima permintaan POST dari AI agent setiap kali pengguna mengirim feedback melalui tombol jempol turun, banner prompt otomatis, atau perintah `/report-issue`.
 
@@ -21,7 +21,7 @@ Endpoint feedback menerima permintaan POST dari AI agent setiap kali pengguna me
 | **URL Endpoint Feedback** | URL yang menerima pengiriman feedback sebagai permintaan HTTP POST dengan body JSON. |
 | **Feedback API Key** | bearer token yang dikirim dalam `Authorization` header dari setiap permintaan feedback. Biarkan kosong jika endpoint Anda tidak memerlukan autentikasi. |
 
-### Payload JSON yang Diharapkan
+### Payload JSON yang Diharapkan {#expected-json-payload}
 
 Endpoint feedback Anda harus menerima body JSON dengan setidaknya bidang berikut:
 
@@ -36,7 +36,7 @@ Endpoint feedback Anda harus menerima body JSON dengan setidaknya bidang berikut
 
 Bidang tambahan dapat ada dalam payload tergantung pada konteks percakapan.
 
-### Nilai `triage_category`
+### Nilai `triage_category` {#triagecategory-values}
 
 Lapisan triase AI menetapkan salah satu nilai berikut ke `triage_category` sebelum meneruskan payload:
 
@@ -47,7 +47,7 @@ Lapisan triase AI menetapkan salah satu nilai berikut ke `triage_category` sebel
 | `inappropriate_content` | Respons berisi konten yang tidak boleh ditampilkan kepada pengguna. |
 | `other` | Feedback tidak cocok dengan kategori yang diketahui. |
 
-### Autentikasi
+### Autentikasi {#authentication}
 
 Jika endpoint Anda memerlukan autentikasi, atur bidang **Feedback API Key** ke bearer token Anda. Agent mengirim:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Jika bidang **Feedback API Key** kosong, tidak ada `Authorization` header yang dikirim.
 
-### Menonaktifkan Pengumpulan Feedback
+### Menonaktifkan Pengumpulan Feedback {#disabling-feedback-collection}
 
 Biarkan bidang **URL Endpoint Feedback** dan **Feedback API Key** kosong. Tombol jempol turun dan UI feedback tetap terlihat oleh pengguna, tetapi pengiriman tidak diteruskan ke layanan eksternal mana pun.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Juga pada tab **Lanjutan**, bidang **Brave Search API Key** mengaktifkan kemampuan [Pencarian Internet](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ Label bidang menyertakan tautan yang dapat diklik ke halaman pendaftaran Brave S
 
 Lihat [Pencarian Internet](../configuration/internet-search) untuk dokumentasi pengguna akhir tentang fitur ini.
 
-## Layanan Superdav Terkelola
+## Layanan Superdav Terkelola {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 menambahkan endpoint layanan Superdav terkelola dan penyediaan koneksi otomatis untuk site yang didukung. Gunakan kontrol ini saat site Anda harus terhubung ke penyedia yang di-host, bukan ke endpoint layanan yang dikonfigurasi secara manual.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 menambahkan endpoint layanan Superdav terkelola dan pe
 
 Setelah penyediaan, simpan pengaturan dan verifikasi status koneksi sebelum mengandalkan alur kerja layanan terkelola. Jika penyediaan gagal, tinjau panduan coba ulang yang ditampilkan dan konfirmasi bahwa site memiliki izin untuk menggunakan penyedia yang di-host.
 
-## Konfigurasi Google Calendar
+## Konfigurasi Google Calendar {#google-calendar-configuration}
 
 Saat fitur kalender Superdav AI Agent v1.18.0 diaktifkan, agent dapat membaca kalender yang dikonfigurasi dan detail acara. Alat kalender berorientasi baca dan berguna untuk pengingat yang sadar jadwal, tindak lanjut peserta, dan pencocokan kontak.
 
@@ -97,7 +97,7 @@ Saat fitur kalender Superdav AI Agent v1.18.0 diaktifkan, agent dapat membaca ka
 
 Batasi kredensial kalender hanya ke kalender yang dibutuhkan agent. Hubungkan ulang atau rotasi kredensial jika status menunjukkan token kedaluwarsa.
 
-## Notifikasi SMS TextBee
+## Notifikasi SMS TextBee {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 menambahkan TextBee sebagai penyedia SMS untuk alur kerja notifikasi yang dikonfigurasi. Notifikasi SMS harus dipasangkan dengan gerbang persetujuan manusia untuk pesan yang sensitif atau menghadap pengguna.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 menambahkan TextBee sebagai penyedia SMS untuk alur ke
 
 Kirim pesan uji hanya ke nomor milik administrator, lalu konfirmasi perilaku gerbang persetujuan sebelum mengaktifkan pengingat terjadwal atau yang menghadap peserta.
 
-## Penanda Fitur
+## Penanda Fitur {#feature-flags}
 
 Juga diperkenalkan di v1.9.0, tab **Pengaturan → Penanda Fitur** menyediakan sakelar toggle untuk fungsionalitas opsional. Setiap penanda diaktifkan atau dinonaktifkan di seluruh jaringan; saat ini tidak ada penggantian per site.
 
-### Mengakses Penanda Fitur
+### Mengakses Penanda Fitur {#accessing-feature-flags}
 
 1. Di admin WordPress, buka **Gratis AI Agent → Pengaturan**.
 2. Klik tab **Penanda Fitur**.
 
-### Penanda Kontrol Akses
+### Penanda Kontrol Akses {#access-control-flags}
 
 | Flag | Default | Deskripsi |
 |---|---|---|
@@ -127,7 +127,7 @@ Juga diperkenalkan di v1.9.0, tab **Pengaturan → Penanda Fitur** menyediakan s
 | **Izinkan Akses Subscriber** | Off | Saat diaktifkan, pengguna dengan role `subscriber` dapat menggunakan antarmuka chat tetapi dibatasi pada kemampuan hanya-baca (tanpa pembuatan pos atau perubahan pengaturan). |
 | **Nonaktifkan untuk Non-Anggota** | Off | Terintegrasi dengan status keanggotaan Ultimate Multisite. Saat diaktifkan, chat disembunyikan untuk site yang tidak memiliki keanggotaan aktif. |
 
-### Flag Branding
+### Flag Branding {#branding-flags}
 
 | Flag | Default | Deskripsi |
 |---|---|---|
@@ -136,7 +136,7 @@ Juga diperkenalkan di v1.9.0, tab **Pengaturan → Penanda Fitur** menyediakan s
 | **Sembunyikan Pemilih Agent** | Off | Saat diaktifkan, pengguna tidak dapat beralih di antara lima agent bawaan. Agent saat ini ditetapkan ke apa pun yang dikonfigurasi sebagai default di Settings → General. |
 | **Gunakan Ikon Site sebagai Avatar Chat** | Off | Mengganti ikon AI default di header widget chat dengan ikon site WordPress (diatur di Appearance → Customize → Site Identity). |
 
-### Flag Keamanan Otomatisasi
+### Flag Keamanan Otomatisasi {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 memperkenalkan gerbang persetujuan manusia dan catatan pengingat untuk menjalankan otomatisasi yang lebih aman. Kontrol ini dapat muncul di feature flags atau pengaturan otomatisasi lanjutan, bergantung pada paket yang diinstal.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 memperkenalkan gerbang persetujuan manusia dan catatan
 | **Aktifkan Calendar Tools** | Off hingga dikonfigurasi | Memungkinkan agent membaca Google calendars dan acara yang dikonfigurasi. |
 | **Aktifkan Notifikasi SMS** | Off hingga dikonfigurasi | Memungkinkan workflow yang disetujui mengirim notifikasi SMS TextBee setelah kredensial disimpan. |
 
-### Menerapkan Perubahan
+### Menerapkan Perubahan {#applying-changes}
 
 Klik **Save Settings** setelah mengalihkan flag apa pun. Perubahan langsung berlaku — tidak diperlukan pembersihan cache atau reaktivasi plugin.

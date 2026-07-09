@@ -3,11 +3,11 @@ title: Ukugcinwa kunqolobane kwama-prompt okuqaphela umhlinzeki
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Ukugcinwa Kunqolobane Kwemiyalezo Okuqaphela Umhlinzeki
+# Ukugcinwa Kunqolobane Kwemiyalezo Okuqaphela Umhlinzeki {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 yethula **ukugcinwa kunqolobane kwemiyalezo okuqaphela umhlinzeki**, okuthuthukisa izindleko ze-API nokulibaziseka ngokugcina imiyalezo kunqolobane kubahlinzeki be-LLM abahlukene. Umhlinzeki ngamunye unezindlela zokugcina kunqolobane nezilungiselelo ezahlukene.
 
-## Ukubuka konke
+## Ukubuka konke {#overview}
 
 Ukugcinwa kwemiyalezo kunqolobane kukuvumela ukuthi:
 
@@ -23,11 +23,11 @@ Abahlinzeki abahlukene basebenzisa ukugcinwa kunqolobane ngezindlela ezahlukene:
 - **OpenRouter**: Ukugcinwa kunqolobane okuqondene nomhlinzeki
 - **Vertex Anthropic**: Ukugcinwa kwemiyalezo kunqolobane ngokulawulwa kwenqolobane
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini inikeza ukuphathwa kwenqolobane okucacile nge-`cachedContents` API.
 
-### Ukulungiselela
+### Ukulungiselela {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Ukudala Umyalezo Ogcinwe Kunqolobane
+### Ukudala Umyalezo Ogcinwe Kunqolobane {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Ukusebenzisa Umyalezo Ogcinwe Kunqolobane
+### Ukusebenzisa Umyalezo Ogcinwe Kunqolobane {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Umjikelezo Wokuphila Wenqolobane
+### Umjikelezo Wokuphila Wenqolobane {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Izindlela Ezingcono Kakhulu ze-Gemini
+### Izindlela Ezingcono Kakhulu ze-Gemini {#best-practices-for-gemini}
 
 - **Setha i-TTL efanele**: Linganisa ukonga izindleko nokuphelelwa yisikhathi kokuqukethwe kwenqolobane
 - **Gcina imiyalezo yesistimu kunqolobane**: Phinda usebenzise umyalezo wesistimu ofanayo kuzo zonke izicelo
 - **Qapha ukusetshenziswa kwenqolobane**: Landela ukuthi yiziphi izinqolobane ezisetshenziswa kakhulu
 - **Susa izinqolobane eziphelelwe yisikhathi**: Susa ngezikhathi ezithile izinqolobane ezingasetshenziswa
 
-## Azure OpenAI: Ukugcinwa Kwemiyalezo Kunqolobane
+## Azure OpenAI: Ukugcinwa Kwemiyalezo Kunqolobane {#azure-openai-prompt-caching}
 
 Azure OpenAI isekela ukugcinwa kwemiyalezo kunqolobane ngokuphathwa kwe-TTL okuzenzakalelayo.
 
-### Ukulungiselela
+### Ukulungiselela {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Ukuvumela Ukugcinwa Kunqolobane
+### Ukuvumela Ukugcinwa Kunqolobane {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Izihloko Zenqolobane
+### Izihloko Zenqolobane {#cache-headers}
 
 Azure OpenAI isebenzisa izihloko ze-HTTP ukulawula inqolobane:
 
@@ -152,7 +152,7 @@ Amanani asekelwayo:
 - `no_cache`: Ungasigcini kunqolobane lesi sicelo
 - `no_store`: Ungasigcini kunqolobane futhi ungasisebenzisi kabusha
 
-### Ukuqapha Ukusetshenziswa Kwenqolobane
+### Ukuqapha Ukusetshenziswa Kwenqolobane {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Izindlela Ezingcono Kakhulu ze-Azure OpenAI
+### Izindlela Ezingcono Kakhulu ze-Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Sebenzisa imiyalezo engaguquguquki**: Imiyalezo efanayo iyazuza ekugcinweni kunqolobane
 - **Setha i-TTL enengqondo**: Linganisa izindleko nokusha kokuqukethwe
 - **Qapha izilinganiso zenqolobane**: Landela ukudalwa kwenqolobane uma kuqhathaniswa nokutholakala kuyo
 - **Hlanganisa izicelo ezifanayo**: Hlanganisa izicelo ukuze wandise ukutholakala kunqolobane
 
-## OpenRouter: Ukugcinwa Kunqolobane Okuqondene Nomhlinzeki
+## OpenRouter: Ukugcinwa Kunqolobane Okuqondene Nomhlinzeki {#openrouter-provider-specific-caching}
 
 OpenRouter isekela ukugcinwa kunqolobane ngabahlinzeki abangaphansi (OpenAI, Anthropic, njll.).
 
-### Ukulungiselela
+### Ukulungiselela {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Ukusebenzisa Ukugcinwa Kunqolobane kwe-OpenRouter
+### Ukusebenzisa Ukugcinwa Kunqolobane kwe-OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Izinketho Eziqondene Nomhlinzeki
+### Izinketho Eziqondene Nomhlinzeki {#provider-specific-options}
 
 Abahlinzeki abahlukene banezindlela ezahlukene zokugcina kunqolobane:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Izindlela Ezingcono Kakhulu ze-OpenRouter
+### Izindlela Ezingcono Kakhulu ze-OpenRouter {#best-practices-for-openrouter}
 
 - **Yazi ukugcinwa kunqolobane komhlinzeki wakho**: Umhlinzeki ngamunye unezindlela ezahlukene
 - **Hlola ukuziphatha kokugcinwa kunqolobane**: Qinisekisa ukuthi ukugcinwa kunqolobane kuyasebenza nomhlinzeki omkhethile
 - **Qapha izindleko**: Landela ukonga okuvela ekugcinweni kunqolobane
 - **Sebenzisa amamodeli angaguquguquki**: Ukushintsha amamodeli kuphazamisa ukutholakala kunqolobane
 
-## Vertex Anthropic: Ukugcinwa Kwemiyalezo Kunqolobane Ngokulawulwa Kwenqolobane
+## Vertex Anthropic: Ukugcinwa Kwemiyalezo Kunqolobane Ngokulawulwa Kwenqolobane {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) isekela ukugcinwa kwemiyalezo kunqolobane ngokulawulwa kwenqolobane okucacile.
 
-### Ukulungiselela
+### Ukulungiselela {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Ukusebenzisa Ukugcinwa Kunqolobane kwe-Vertex Anthropic
+### Ukusebenzisa Ukugcinwa Kunqolobane kwe-Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Izinhlobo Zokulawula Inqolobane
+### Izinhlobo Zokulawula Inqolobane {#cache-control-types}
 
 - **ephemeral**: Gcina kunqolobane isikhathi sesicelo (okuzenzakalelayo)
 - **persistent**: Gcina kunqolobane kuzo zonke izicelo eziningi (uma kusekelwa)
 
-### Ukuqapha Ukusetshenziswa Kwenqolobane
+### Ukuqapha Ukusetshenziswa Kwenqolobane {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Izindlela Ezingcono Kakhulu ze-Vertex Anthropic
+### Izindlela Ezingcono Kakhulu ze-Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Sebenzisa ukugcinwa kunqolobane kwe-ephemeral**: Kuhle ekugcinweni kunqolobane kweseshini eyodwa
 - **Setha i- max_tokens ngokufanele**: Linganisa usayizi wenqolobane nezindleko
 - **Qapha izilinganiso zenqolobane**: Landela ukusebenza kahle kwenqolobane
 - **Hlola ngomthwalo wakho womsebenzi**: Qinisekisa ukuthi ukugcinwa kunqolobane kuyalisiza icala lakho lokusebenzisa
 
-## Isu Lokugcinwa Kunqolobane Kubahlinzeki Abahlukene
+## Isu Lokugcinwa Kunqolobane Kubahlinzeki Abahlukene {#cross-provider-caching-strategy}
 
-### Ukulungiselela Okuhlanganisiwe
+### Ukulungiselela Okuhlanganisiwe {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Ukutholwa Komhlinzeki
+### Ukutholwa Komhlinzeki {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Isu Lokubuyela Emuva
+### Isu Lokubuyela Emuva {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Ukuthuthukisa Izindleko
+## Ukuthuthukisa Izindleko {#cost-optimization}
 
-### Bala Ukonga
+### Bala Ukonga {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Amathiphu Okuthuthukisa
+### Amathiphu Okuthuthukisa {#optimization-tips}
 
 - **Gcina imiyalezo emikhulu yesistimu kunqolobane**: Ukonga izindleko okukhulu kakhulu
 - **Phinda usebenzise umongo**: Gcina kunqolobane amadokhumenti omongo asetshenziswa njalo
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Qapha ukusebenza kahle kwenqolobane**: Landela ukonga kwangempela
 - **Lungisa i-TTL**: Linganisa izindleko nokusha kokuqukethwe
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
-### Inqolobane ayisetshenziswa
+### Inqolobane ayisetshenziswa {#cache-not-being-used}
 
 - Qinisekisa ukuthi ukugcinwa kunqolobane kuvunyelwe ekulungiselelweni
 - Hlola ukuthi imiyalezo iyafana (ukugcinwa kunqolobane kudinga ukufana okuqondile)
 - Qinisekisa ukuthi inqolobane ayikaphelelwa yisikhathi
 - Hlola imikhawulo yenqolobane eqondene nomhlinzeki
 
-### Ukudala inqolobane kuyahluleka
+### Ukudala inqolobane kuyahluleka {#cache-creation-failing}
 
 - Qinisekisa ukuthi usayizi wenqolobane ungaphakathi kwemikhawulo yomhlinzeki
 - Hlola ukuthi isintaksi sokulawula inqolobane silungile
 - Qinisekisa ukuthi umhlinzeki usekela ukugcinwa kunqolobane kwemodeli yakho
 - Buyekeza amadokhumenti omhlinzeki ukuze uthole imikhawulo
 
-### Izindleko ezingalindelekile
+### Izindleko ezingalindelekile {#unexpected-costs}
 
 - Qapha ukudalwa kwenqolobane uma kuqhathaniswa namathokheni okufunda inqolobane
 - Qinisekisa ukuthi inqolobane isetshenziswa ngempela
 - Hlola ukuphuthelwa yinqqolobane ngenxa yokuhlukahluka kwemiyalezo
 - Cabanga ukulungisa i-TTL noma isu lenqolobane
 
-## Ukuqhathanisa Abahlinzeki
+## Ukuqhathanisa Abahlinzeki {#provider-comparison}
 
 | Isici | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Ukwehliswa kwezindleko | 90% | 90% | Kuncike kumhlinzeki | 90% |
 | Ukuqapha | Okuningiliziwe | Ngezilinganiso | Kuncike kumhlinzeki | Ngokusetshenziswa |
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 1. **Khetha umhlinzeki wakho**: Khetha ngokusekelwe ezidingweni zakho
 2. **Lungiselela ukugcinwa kunqolobane**: Setha ukugcinwa kunqolobane okuqondene nomhlinzeki

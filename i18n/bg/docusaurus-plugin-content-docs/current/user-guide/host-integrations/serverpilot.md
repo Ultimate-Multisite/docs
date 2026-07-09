@@ -3,17 +3,17 @@ title: Интеграция с ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Интеграция с ServerPilot
+# Интеграция с ServerPilot {#serverpilot-integration}
 
-## Преглед
+## Преглед {#overview}
 ServerPilot е облачна услуга за хостинг на WordPress и други PHP уебсайтове на сървъри в DigitalOcean, Amazon, Google или всеки друг доставчик на сървъри. Тази интеграция позволява автоматично синхронизиране на домейни и управление на SSL сертификати между Ultimate Multisite и ServerPilot.
 
-## Характеристики
+## Характеристики {#features}
 - Автоматично синхронизиране на домейни
 - Управление на SSL сертификати с Let's Encrypt
 - Автоматично обновяване на SSL
 
-## Изисквания
+## Изисквания {#requirements}
 Следните константи трябва да бъдат дефинирани във файла `wp-config.php`:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## Инструкции за настройка
+## Инструкции за настройка {#setup-instructions}
 
-### 1. Получаване на API данни за ServerPilot
+### 1. Получаване на API данни за ServerPilot {#1-get-your-serverpilot-api-credentials}
 
 1. Влезте в dashboard на ServerPilot
 2. Отидете на "Account" > "API"
 3. Създайте нов API ключ, ако вече не разполагате с такъв
 4. Копирайте Client ID и API Key
 
-### 2. Получаване на App ID
+### 2. Получаване на App ID {#2-get-your-app-id}
 
 1. В dashboard на ServerPilot отидете на "Apps"
 2. Изберете приложението, където е хостван вашият WordPress multisite
 3. App ID е видим в URL-адресата: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Добавяне на константи в wp-config.php
+### 3. Добавяне на константи в wp-config.php {#3-add-constants-to-wp-configphp}
 
 Добавете следните константи във файла `wp-config.php`:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. Активиране на интеграцията
+### 4. Активиране на интеграцията {#4-enable-the-integration}
 
 1. В административната част на WordPress отидете на Ultimate Multisite > Settings
 2. Навигирайте до таба "Domain Mapping"
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. Активирайте интеграцията с ServerPilot
 5. Натиснете "Save Changes"
 
-## Как работи
+## Как работи {#how-it-works}
 
-### Синхронизиране на домейни
+### Синхронизиране на домейни {#domain-syncing}
 
 Когато домейн бъде мапиран в Ultimate Multisite:
 
@@ -66,7 +66,7 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 3. Изпраща актуализирания списък към ServerPilot чрез API
 4. ServerPilot актуализира списъка с домейни за вашето приложение
 
-### Управление на SSL сертификати
+### Управление на SSL сертификати {#ssl-certificate-management}
 
 След синхронизиране на домейните:
 
@@ -74,27 +74,27 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 2. ServerPilot се занимава с издаването и инсталирането на SSL сертификати, използвайки Let's Encrypt
 3. ServerPilot също се занимава с автоматичното обновяване на SSL сертификатите
 
-## Верификация на SSL сертификати
+## Верификация на SSL сертификати {#ssl-certificate-verification}
 
 Интеграцията е конфигурирана да увеличи броя на опитите за верификация на SSL сертификати за ServerPilot, тъй като ServerPilot може да отнеме известно време за издаване и инсталиране на SSL сертификати. По подразбиране, тя ще опита до 5 пъти, но това може да бъде коригирано с помощта на филтри.
 
-## Отстраняване на неизправности
+## Отстраняване на неизправности {#troubleshooting}
 
-### Проблеми с връзката към API
+### Проблеми с връзката към API {#api-connection-issues}
 - Проверете дали Client ID и API Key са коректни
 - Проверете дали App ID е коректен
 - Уверете се, че вашият account в ServerPilot има необходимите права
 
-### Проблеми с SSL сертификати
+### Проблеми с SSL сертификати {#ssl-certificate-issues}
 - ServerPilot изисква домейните да имат валидни DNS записи, насочващи към вашия сървър, преди да издаде SSL сертификати
 - Ако SSL сертификатите не се издават, проверете дали домейните ви точно показват IP адреса на сървъра ви
 - Може да отнеме известно време за ServerPilot да издаде и инсталира SSL сертификати (обикновено 5-15 минути)
 
-### Домейнът не е добавен
+### Домейнът не е добавен {#domain-not-added}
 - Проверете лог файловете на Ultimate Multisite за съобщения за грешки
 - Уверете се, че домейнът вече не е добавен към ServerPilot
 - Уверете се, че планът ви в ServerPilot поддържа броя домейни, които добавяте
 
-### Премахване на домейн
+### Премахване на домейн {#domain-removal}
 - В момента API на ServerPilot не предоставя начин за премахване на отделни домейни
 - Когато мапирането на домейн бъде премахнато в Ultimate Multisite, интеграцията ще актуализира списъка с домейни в ServerPilot, за да изключи премахнатия домейн

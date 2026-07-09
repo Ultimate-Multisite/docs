@@ -3,11 +3,11 @@ title: Ìdáhùn Oníbàárà & Ìjábọ̀ Ìṣòro
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Esi Oníbàárà & Ìjabọ Ìṣòro
+# Esi Oníbàárà & Ìjabọ Ìṣòro {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 ṣàgbékalẹ̀ ètò esi àti ìjabọ ìṣòro tí a kọ sínú rẹ̀, tí ó jẹ́ kí àwọn olumulo opin lè tọ́ka sí àwọn ìdáhùn tí kò wúlò kí wọ́n sì jabo àwọn ìṣòro tààrà láti inú wiwo ìfọ̀rọ̀wérọ̀. Ètò yìí ní ìṣàkóso ìfọwọ́sí, àṣẹ ìjabọ aládàáṣiṣẹ́, àti ìtúpalẹ̀ ìpele-àkọ́kọ́ tí AI ràn lọ́wọ́ ní backend.
 
-## Bọ́tìnì Àtàǹpàkò-sílẹ̀
+## Bọ́tìnì Àtàǹpàkò-sílẹ̀ {#thumbs-down-button}
 
 Gbogbo ìfiránṣẹ́ tí olùrànlọ́wọ́ AI bá rán ń fi bọ́tìnì **àtàǹpàkò-sílẹ̀** (👎) hàn. Nígbà tí olumulo bá tẹ ẹ, wọ́n lè samisi ìdáhùn kan gẹ́gẹ́ bí èyí tí kò wúlò tàbí tí kò tọ́.
 
@@ -15,7 +15,7 @@ Gbogbo ìfiránṣẹ́ tí olùrànlọ́wọ́ AI bá rán ń fi bọ́tìnì 
 - Títẹ ẹ máa ṣí **Ferese Ìfọwọ́sí Esi**.
 - Esi náà ní ìbáṣepọ̀ pẹ̀lú okun ìfọ̀rọ̀wérọ̀ àti ìfiránṣẹ́ pàtó náà.
 
-## Ferese Ìfọwọ́sí Esi
+## Ferese Ìfọwọ́sí Esi {#feedback-consent-modal}
 
 Nígbà tí olumulo bá tẹ bọ́tìnì àtàǹpàkò-sílẹ̀, ferese ìfọwọ́sí kan máa hàn kí a tó fi data kankan ránṣẹ́. Ferese náà:
 
@@ -26,13 +26,13 @@ Nígbà tí olumulo bá tẹ bọ́tìnì àtàǹpàkò-sílẹ̀, ferese ìfọ
 
 A kò ní gba esi kankan sílẹ̀ títí olumulo yóò fi jẹ́rìí ní kedere.
 
-## Bánà Esi Ìbéèrè-Aládàáṣiṣẹ́
+## Bánà Esi Ìbéèrè-Aládàáṣiṣẹ́ {#auto-prompt-feedback-banner}
 
 Ní ìparí ìfọ̀rọ̀wérọ̀ kan, olùrànlọ́wọ́ le fi **bánà esi ìbéèrè-aládàáṣiṣẹ́** hàn — ìfiránṣẹ́ tí kò díni lọ́wọ́ tí ń béèrè bóyá ìpàdé náà wúlò.
 
 Bánà yìí máa hàn ní aládàáṣiṣẹ́ gẹ́gẹ́ bí gígùn ìfọ̀rọ̀wérọ̀ àti àwọn ìlànà ìtẹ̀síwájú abajade. Ó sopọ̀ mọ́ ìṣàn esi kan náà bí bọ́tìnì àtàǹpàkò-sílẹ̀. Àwọn olumulo lè pa bánà náà tì láìpèsè esi.
 
-## Àṣẹ Slash /report-issue
+## Àṣẹ Slash /report-issue {#report-issue-slash-command}
 
 Àwọn olumulo lè fa ìṣàn esi jáde tààrà nípa títẹ `/report-issue` sínú ààyè ìwọlé ìfọ̀rọ̀wérọ̀. Àṣẹ yìí:
 
@@ -42,7 +42,7 @@ Bánà yìí máa hàn ní aládàáṣiṣẹ́ gẹ́gẹ́ bí gígùn ìfọ
 
 Àṣẹ `/report-issue` wà ní gbogbo àwọn ipo ìfọ̀rọ̀wérọ̀ (nínú ìlà, widget tí ń fò, iboju-kíkún).
 
-## Ìtúpalẹ̀ Ìpele-àkọ́kọ́ tí AI Ràn Lọ́wọ́
+## Ìtúpalẹ̀ Ìpele-àkọ́kọ́ tí AI Ràn Lọ́wọ́ {#ai-assisted-triage}
 
 Esi tí a fi ránṣẹ́ ni a máa darí sí fẹ́lẹ́fẹ́lẹ̀ ìtúpalẹ̀ ìpele-àkọ́kọ́ AI tí ó:
 

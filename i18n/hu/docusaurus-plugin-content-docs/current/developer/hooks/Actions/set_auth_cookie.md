@@ -4,11 +4,11 @@ title: Akció - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Akció: set_auth_cookie
+# Akció: set_auth_cookie {#action-setauthcookie}
 
 Azonosító sütit (authentication cookie) írása közvetlenül előtti.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Név | Típus | Leírás |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Azonosító sütit (authentication cookie) írása közvetlenül előtti.
 | $scheme | `string` | Azonosítási schéma (Authentication scheme). Az értékek közé tartozik az 'auth' vagy 'secure_auth'. |
 | $token | `string` | A felhasználó munkamenet tokenje (session token), amelyet ennek a sütitnek kell használni. |
 
-### Seit
+### Seit {#since}
 
 - 2.5.0
 - 4.9.0: A <code>$token</code> paramétert adják hozzá.
-### Forrás
+### Forrás {#source}
 
 Definálva van [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) fájlban, 124-sorban.

@@ -3,17 +3,17 @@ title: Alan Adı Eşlemesi Nasıl Yapılandırılır
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Eşleme Nasıl Yapılandırılır (v2)
+# Domain Eşleme Nasıl Yapılandırılır (v2) {#how-to-configure-domain-mapping-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x ile ilgilidir.**_
 
 Premium bir ağın en güçlü özelliklerinden biri, müşterilerimize sitelerine üst düzey bir domain bağlama olanağı sunabilmesidir. Sonuçta hangisi daha profesyonel görünür: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) mi yoksa [_**joesbikeshop.com**_](http://joesbikeshop.com) mi? Bu yüzden Ultimate Multisite, üçüncü taraf plugin kullanma ihtiyacı olmadan bu özelliği yerleşik olarak sunar.
 
-## Domain eşleme nedir?
+## Domain eşleme nedir? {#whats-domain-mapping}
 
 Adından da anlaşılacağı gibi domain eşleme, Ultimate Multisite tarafından sunulan; özel bir domain için gelen isteği alıp bu isteği, ağda o belirli domainin bağlı olduğu ilgili siteye eşleme yeteneğidir.
 
-### Ultimate Multisite Ağınızda domain eşleme nasıl kurulur?
+### Ultimate Multisite Ağınızda domain eşleme nasıl kurulur? {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domain eşlemenin çalışması için sizin tarafınızda bazı kurulumlar gerekir. Neyse ki Ultimate Multisite zor işi sizin için otomatikleştirir, böylece gereksinimleri kolayca karşılayabilirsiniz.
 
@@ -45,7 +45,7 @@ Ancak özel domaini ağınızdaki alt sitelerden birine eşlemeye başlamadan ö
 
 ###
 
-### Domain DNS ayarlarının doğru şekilde yapılandırıldığından emin olma
+### Domain DNS ayarlarının doğru şekilde yapılandırıldığından emin olma {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Bir eşlemenin çalışması için eşlemeyi planladığınız domainin Ağınızın IP adresine yönlendiğinden emin olmanız gerekir. Ağ IP adresine ihtiyacınız olduğunu unutmayın - Ultimate Multisite'in kurulu olduğu domainin IP adresi - eşlemek istediğiniz özel domainin IP adresi değil. Belirli bir domainin IP adresini aramak için örneğin [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) sitesine gitmenizi öneririz.
 
@@ -55,7 +55,7 @@ Bunu çalıştırmakta zorlanırsanız, **domain kayıt kuruluşunuzun desteğiy
 
 Müşterilerinizin kendi domainlerini eşlemesine izin vermeyi planlıyorsanız, bu kısımdaki işi kendileri yapmak zorunda kalırlar. A Record oluşturamadıklarını fark ederlerse onları kayıt kuruluşlarının destek sistemine yönlendirin.
 
-### Özel domain adını Süper Yönetici olarak eşleme
+### Özel domain adını Süper Yönetici olarak eşleme {#mapping-custom-domain-name-as-super-admin}
 
 Ağınızda süper yönetici olarak oturum açtığınızda, **Ultimate Multisite > Domainler** altına giderek özel domain adlarını kolayca ekleyebilir ve yönetebilirsiniz.
 
@@ -93,7 +93,7 @@ Domain adına tıklarsanız, içinde bazı seçenekleri görebilirsiniz. Bunlara
 
 **Güvenli mi?:** Ultimate Multisite, domain'i etkinleştirmeden önce domain'in SSL sertifikası olup olmadığını kontrol etse de, domain'i SSL sertifikasıyla veya SSL sertifikası olmadan yüklemeyi manuel olarak seçebilirsiniz. Web sitesinin SSL sertifikası yoksa ve onu SSL ile zorla yüklemeye çalışırsanız hatalar verebileceğini unutmayın.
 
-### Özel domain adını alt site kullanıcısı olarak eşleme
+### Özel domain adını alt site kullanıcısı olarak eşleme {#mapping-custom-domain-name-as-subsite-user}
 
 Alt site yöneticileri de özel domain adlarını alt site admin Dashboard'larından eşleyebilir.
 
@@ -121,7 +121,7 @@ Kullanıcı daha sonra **Sonraki Adım** seçeneğine tıklayabilir ve özel dom
 
 **Domain Ekle** seçeneğine tıklamak, özel domain'in DNS bilgilerini doğrulama ve getirme sürecini başlatacaktır.
 
-### Domain Senkronizasyonu Hakkında
+### Domain Senkronizasyonu Hakkında {#about-domain-syncing}
 
 Domain Senkronizasyonu, Ultimate Multisite'ın özel domain adını hosting hesabınıza eklenti domain olarak eklediği bir süreçtir; **bu, domain eşlemenin çalışması içindir**.
 

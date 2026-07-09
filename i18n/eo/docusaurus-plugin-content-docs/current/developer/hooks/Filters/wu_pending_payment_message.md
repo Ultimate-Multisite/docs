@@ -4,11 +4,11 @@ title: Filtro - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filtro: wu_pending_payment_message
+# Filtro: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Permesas al uzanto ŝanĝi la mesaĝon pri la pritraktataj pagoj.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Permesas al uzanto ŝanĝi la mesaĝon pri la pritraktataj pagoj.
 | $customer | `\WP_Ultimo\Models\Customer` | La nuna kliento. |
 | $pending_payments | `array` | Listo kun pritraktataj pagoj. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.19
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) ĉe linio 244

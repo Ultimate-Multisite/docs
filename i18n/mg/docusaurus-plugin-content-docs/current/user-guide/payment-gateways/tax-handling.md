@@ -3,7 +3,7 @@ title: Fitantanana ny hetra
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Fitantanana hetra
+# Fitantanana hetra {#tax-handling}
 
 Ultimate Multisite dia manana maodilin’ny fanangonana hetra tafiditra ao amin’ny tovona fototray, ka raha mila manangona hetran’ny varotra amin’ny drafitra, fonosana ary tolotra ianao, dia afaka manao izany mora foana nefa tsy mila mametraka fanampiny.
 
@@ -11,7 +11,7 @@ Ho an’ireo orinasa any Eoropa, manolotra **fanampiny** izahay izay manampy fit
 
 Ultimate Multisite dia tsy mametraka na mandoa hetra amin’ny governemanta amin’ny anaranao; manampy anao fotsiny izahay hanangona ny hetra sahaza amin’ny fotoanan’ny fifampiraharahana. **Mbola mila mandoa ny hetrao samirery ianao.**
 
-## Fampandehanana ny fanangonana hetra
+## Fampandehanana ny fanangonana hetra {#enabling-tax-collection}
 
 Tsy alefa amin’ny toerana misy azy ny fanangonana hetra. Mba hampandehanana azy dia mila mandeha any amin’ny **Ultimate Multisite > Fikirakirana > Hetra** ianao ary manova mba hampandeha ny fikirakirana Alefaso ny Hetra.
 
@@ -25,7 +25,7 @@ Afaka mijery ihany koa ny fikirakirana hetra ho an’ny vokatra tsirairay ianao:
 
 ![Fikirakirana hetra ho an’ny vokatra](/img/config/settings-taxes.png)
 
-### Hetra tsy tafiditra vs. Hetra tafiditra
+### Hetra tsy tafiditra vs. Hetra tafiditra {#tax-excluded-vs-tax-included}
 
 Amin’ny toerana misy azy, tsy tafiditra hetra avokoa ny vidin’ny vokatrao rehetra, midika izany fa **tsy tafiditra** ao amin’ny vidin’ny vokatra ny hetra. Raha fantatray fa tokony handoa hetra amin’ny fividianana iray ny mpanjifa, dia hanampy ny hetra **eo ambonin’ny** subtotal izahay.
 
@@ -37,7 +37,7 @@ Aza adino ny **mitahiry** ireo fanovana nataonao.
 
 ###
 
-## Famoronana tahan-ketra
+## Famoronana tahan-ketra {#creating-tax-rates}
 
 Rehefa avy mampandeha ny Fanangonana Hetra ianao, dia mila mamorona tahan-ketra ho an’ny toerana manokana amin’ny alalan’ny mpanitsy tahan-ketranay.
 
@@ -51,7 +51,7 @@ Ao amin’ny pejin’ny mpanitsy tahan-ketra, afaka manampy Tahan-ketra vaovao i
 
 Mila manome **lohateny** ny tahan-ketra tsirairay ianao (ampiasaina amin’ny faktiora). Avy eo afaka misafidy ny **firenena** (takiana), ny **fanjakana/faritra,** ary ny **tanàna** (samy tsy voatery) izay hampiharana ity hetra ity ianao. Farany, ampio ny **tahan-ketra amin’ny isan-jato**.
 
-### Sokajin-ketra
+### Sokajin-ketra {#tax-categories}
 
 Afaka mamorona Sokajin-ketra maro ihany koa ianao, mba hanampiana tahan-ketra samihafa ho an’ny karazana vokatra samihafa.
 
@@ -73,7 +73,7 @@ Azonao apetraka ny sokajin-ketra ho an’ny vokatra iray manokana amin’ny fand
 
 Amin’io efijery io ihany, azonao vonoina ny toggle **Azo hetraina ve?** mba hampahafantarana an’i Ultimate Multisite fa tsy tokony hanangona hetra amin’io vokatra voatondro io izy.
 
-## Fanohanana VAT Eoropeana
+## Fanohanana VAT Eoropeana {#european-vat-support}
 
 Araka ny voalaza teo aloha, manana fanampiny azo ampiasaina ho an’ny mpanjifa ao amin’ny EU izahay izay manana fepetra fanampiny noho ny fitsipika VAT Eoropeana.
 
@@ -101,7 +101,7 @@ Raha miverina any amin’ny **kiheba Fikirakirana Hetra** ianao, dia hahita safi
 
 <!-- Pikantsary tsy misy: toggle Alefaso ny Fanohanana VAT ao amin’ny fikirakirana Hetra aorian’ny fampandehanana ny fanampiny -->
 
-### Fisintonana Tahan-ketra VAT
+### Fisintonana Tahan-ketra VAT {#pulling-on-vat-tax-rates}
 
 Iray amin’ireo fitaovana ampian’ny fampifandraisanay ny fahafahana mampiditra ny tahan-ketra ho an’ireo firenena mpikambana ao amin’ny EU. Azo atao izany amin’ny fitsidihana ny pejin’ny mpanitsy tahan-ketra aorian’ny fampandehanana ny fanohanana EU VAT.
 
@@ -111,7 +111,7 @@ Eo amin’ny faran’ny pejy, ho hitanao ireo safidy fisintonana VAT. Ny fisafid
 
 Azonao ovaina ihany koa ireo sanda aorian’ny fisintonana azy. Mba hanaovana izany, ovao tsotra izao ny andalana ao amin’ny latabatra ilainao ary tsindrio mba hitahiry ireo sanda vaovao.
 
-### Fanamarinana VAT
+### Fanamarinana VAT {#vat-validation}
 
 Rehefa alefa ny fanohanana VAT, Ultimate Multisite dia hanampy saha fanampiny amin’ny endrika checkout, eo ambanin’ny saha adiresin’ny faktiora. Hiseho ho an’ny mpanjifa any amin’ny EU ihany ilay saha.
 

@@ -3,7 +3,7 @@ title: Kërkim dhe Zëvendësim Automatik në Template të Sijetes
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Kërkimi dhe Zëvendësim Automatik në Shkurtimet e Sitet (v2)
+# Kërkimi dhe Zëvendësim Automatik në Shkurtimet e Sitet (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ky tutorial kërkon WP Uitimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Këtu klientja juaj do të mund të plotësojë atë fushë gjatë regjistrimit.
 
 Ultimate Multisite pastaj do të zëvendësojë placeholder-t me të dhënat që ofronin klienti automatikisht.
 
-## **Zgjidhja e problemit "shkurtimi i plotë me placeholder-e"**
+## **Zgjidhja e problemit "shkurtimi i plotë me placeholder-e"** {#solving-the-template-full-of-placeholders-problem}
 
 Kjo gjithçka është fantastike, por ne hasim me një problem të keq: tani shkurtimet e saj - që mund t'i vizitojnë klientët tanë - janë plot me placeholder-e të mprehta që nuk thonë shumë.
 

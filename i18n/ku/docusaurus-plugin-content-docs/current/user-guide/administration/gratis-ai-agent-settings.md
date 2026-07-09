@@ -3,16 +3,16 @@ title: Mîhengên Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Mîhengên Gratis AI Agent
+# Mîhengên Gratis AI Agent {#gratis-ai-agent-settings}
 
 Dîmendera **Settings → Advanced** di Gratis AI Agent de veavakirina asta rêveberiyê ji bo girêdanên backend pêşkêş dike. Ev rûpel şandina feedback, kilîdên dabînkerên lêgerînê, sazkirina xizmeta birêvebirî ya Superdav, kontrolên Google Calendar, mîhengên SMS yên TextBee, û alayên taybetmendiyan ên hemû torê belge dike.
 
-## Gihîştina Settings
+## Gihîştina Settings {#accessing-settings}
 
 1. Di rêveberiya WordPress de, biçin **Gratis AI Agent → Settings**.
 2. Li ser tabloya **Advanced** bitikînin.
 
-## Veavakirina Endpoint a Feedback
+## Veavakirina Endpoint a Feedback {#feedback-endpoint-configuration}
 
 Endpoint a feedback daxwazên POST ji AI agent werdigire dema ku bikarhêner bi riya bişkoka thumbs-down, pankarta auto-prompt, an fermana `/report-issue` feedback dişîne.
 
@@ -21,7 +21,7 @@ Endpoint a feedback daxwazên POST ji AI agent werdigire dema ku bikarhêner bi 
 | **Feedback Endpoint URL** | URL ku şandinên feedback wek daxwazên HTTP POST bi laşek JSON werdigire. |
 | **Feedback API Key** | bearer token ku di `Authorization` header a her daxwaza feedback de tê şandin. Heke endpoint a we piştrastkirinê nehewce dike, vala bihêlin. |
 
-### Barkirina JSON a Tê Hêvîkirin
+### Barkirina JSON a Tê Hêvîkirin {#expected-json-payload}
 
 Endpoint a feedback a we divê laşek JSON bi herî kêm qadên jêrîn qebûl bike:
 
@@ -36,7 +36,7 @@ Endpoint a feedback a we divê laşek JSON bi herî kêm qadên jêrîn qebûl b
 
 Li gorî çarçoveya axaftinê, dibe ku qadên din jî di payload de hebin.
 
-### Nirxên `triage_category`
+### Nirxên `triage_category` {#triagecategory-values}
 
 Qata triage a AI berî şandina payload yek ji nirxên jêrîn dide `triage_category`:
 
@@ -47,7 +47,7 @@ Qata triage a AI berî şandina payload yek ji nirxên jêrîn dide `triage_cate
 | `inappropriate_content` | Bersiv naverokek hebû ku divê ji bikarhêneran re neyê nîşandan. |
 | `other` | Feedback bi kategoriyeke naskirî re nehat hev. |
 
-### Piştrastkirin
+### Piştrastkirin {#authentication}
 
 Heke endpoint a we piştrastkirinê hewce dike, qada **Feedback API Key** wek bearer token a xwe saz bikin. Agent dişîne:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Heke qada **Feedback API Key** vala be, tu `Authorization` header nayê şandin.
 
-### Neçalakirina Komkirina Feedback
+### Neçalakirina Komkirina Feedback {#disabling-feedback-collection}
 
 Her du qadên **Feedback Endpoint URL** û **Feedback API Key** vala bihêlin. Bişkoka thumbs-down û navrûya feedback ji bikarhêneran re xuya dimînin, lê şandin ji bo tu xizmeta derve nayê şandin.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Herwiha li ser tabloya **Advanced**, qada **Brave Search API Key** şiyana [Lêgerîna Înternetê](../configuration/internet-search) çalak dike.
 
@@ -73,7 +73,7 @@ Etîketa qadê girêdaneke ku dikare bê tikandin ji bo rûpela tomarkirina Brav
 
 Ji bo belgeya bikarhênerê dawî li ser vê taybetmendiyê, binêrin [Lêgerîna Înternetê](../configuration/internet-search).
 
-## Xizmeta Birêvebirî ya Superdav
+## Xizmeta Birêvebirî ya Superdav {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 endpointên xizmeta birêvebirî ya Superdav û dabînkirina girêdanê ya otomatîk ji bo malperên piştgirîkirî zêde dike. Dema ku divê malpera we li şûna endpoint a xizmetê ya bi destan veavakirî bi dabînkerê mêvandarkirî ve were girêdan, van kontrolan bikar bînin.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 endpointên xizmeta birêvebirî ya Superdav û dabîn
 
 Piştî dabînkirinê, mîhengan tomar bikin û berî piştrastkirina karûbarên xizmeta birêvebirî rewşa girêdanê kontrol bikin. Heke dabînkirin bi ser nekeve, rêberiya dubareceribandinê ya nîşandêr binirxînin û piştrast bikin ku malper destûr heye dabînkerê mêvandarkirî bikar bîne.
 
-## Veavakirina Google Calendar
+## Veavakirina Google Calendar {#google-calendar-configuration}
 
 Dema ku taybetmendiyên salnameyê yên Superdav AI Agent v1.18.0 çalak bin, agent dikare salnameyên veavakirî û hûrgiliyên bûyeran bixwîne. Amûrên salnameyê xwendin-navend in û ji bo bibîrxistinên bi zanîna demjimêrê, şopandina beşdaran, û hevberkirina têkiliyan bikêr in.
 
@@ -97,7 +97,7 @@ Dema ku taybetmendiyên salnameyê yên Superdav AI Agent v1.18.0 çalak bin, ag
 
 Agahiyên nasnameyê yên salnameyê tenê bi salnameyên ku agent pêwîst dike re sînordar bihêlin. Heke rewş nîşan dide ku token qediyaye, dîsa girêbidin an agahiyên nasnameyê biguherînin.
 
-## Agahdarkirinên SMS yên TextBee
+## Agahdarkirinên SMS yên TextBee {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 TextBee wek dabînkerê SMS ji bo rêxistinên agahdarkirinê yên veavakirî zêde dike. Agahdarkirinên SMS divê ji bo peyamên hestyar an yên ku bikarhêner dibînin bi dergehên pejirandina mirovî re werin hevkirin.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 TextBee wek dabînkerê SMS ji bo rêxistinên agahdar
 
 Peyameke ceribandinê tenê ji hejmareke ku aîdî rêveber e re bişînin, paşê berî çalakkirina bibîrxistinên plansazkirî an yên ber bi beşdaran ve çûyî, tevgera dergehên pejirandinê piştrast bikin.
 
-## Alayên Taybetmendiyan
+## Alayên Taybetmendiyan {#feature-flags}
 
 Herwiha di v1.9.0 de hatine nasandin, tabloya **Settings → Feature Flags** guhartokên vekirin/girtinê ji bo karîgeriyên bijarte pêşkêş dike. Her ala an li hemû torê çalak e an neçalak e; di vê demê de tune ye ku ji bo her malperê cuda were sererastkirin.
 
-### Gihîştina Feature Flags
+### Gihîştina Feature Flags {#accessing-feature-flags}
 
 1. Di rêveberiya WordPress de, biçin **Gratis AI Agent → Settings**.
 2. Li ser tabloya **Feature Flags** bitikînin.
 
-### Alayên Kontrola Gihîştinê
+### Alayên Kontrola Gihîştinê {#access-control-flags}
 
 | Nîşan | Standard | Şirove |
 |---|---|---|
@@ -127,7 +127,7 @@ Herwiha di v1.9.0 de hatine nasandin, tabloya **Settings → Feature Flags** guh
 | **Destûra gihîştina Subscriber bide** | Off | Dema ku çalak be, bikarhênerên bi rola `subscriber` dikarin navrûya axaftinê bikar bînin, lê tenê bi şiyanên xwendinê ve têne sînordarkirin (afirandina nivîsê an guherandina mîhengan tune). |
 | **Ji bo ne-Endaman neçalak bike** | Off | Bi rewşa endamtiya Ultimate Multisite re yek dibe. Dema ku çalak be, axaftin ji bo malperên ku endamtiyeke çalak tune ye tê veşartin. |
 
-### Nîşanên Branding
+### Nîşanên Branding {#branding-flags}
 
 | Nîşan | Standard | Şirove |
 |---|---|---|
@@ -136,7 +136,7 @@ Herwiha di v1.9.0 de hatine nasandin, tabloya **Settings → Feature Flags** guh
 | **Hilbijêrka Agent-ê veşêre** | Off | Dema ku çalak be, bikarhêner nikarin di navbera pênc agent-ên çêkirî de biguherin. Agent-a heyî li gorî ya ku wek standard di Settings → General de hatiye mîhengkirin sabît e. |
 | **Îkona Malperê wek Avatar-a Axaftinê bikar bîne** | Off | Di sernivîsa widget-a axaftinê de îkona AI ya standard bi îkona malpera WordPress (di bin Appearance → Customize → Site Identity de tê mîhengkirin) diguherîne. |
 
-### Nîşanên Ewlehiya Otomasyonê
+### Nîşanên Ewlehiya Otomasyonê {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 ji bo xebitandinên otomasyonê yên ewletir dergehên pejirandina mirovî û tomarên bîranînê dide destpêkirin. Ev kontrol dikarin li gorî pakêta sazkirî di nîşanên taybetmendiyan an mîhengên pêşketî yên otomasyonê de xuya bibin.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 ji bo xebitandinên otomasyonê yên ewletir dergehên
 | **Amûrên Salnameyê Çalak Bike** | Off heta ku were mîhengkirin | Destûr dide agent ku salname û bûyerên Google yên mîhengkirî bixwîne. |
 | **Agahdariyên SMS Çalak Bike** | Off heta ku were mîhengkirin | Destûr dide workflows-ên pejirandî ku piştî tomarkirina belgeyên nasnameyê agahdariyên TextBee SMS bişînin. |
 
-### Sepandina Guherînan
+### Sepandina Guherînan {#applying-changes}
 
 Piştî guherandina her nîşanekê, li **Save Settings** bitikîne. Guherîn tavilê bandor dikin — paqijkirina cache an ji nû ve çalakkirina plugin pêwîst nîne.

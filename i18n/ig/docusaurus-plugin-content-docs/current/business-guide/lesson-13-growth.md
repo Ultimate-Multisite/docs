@@ -3,19 +3,19 @@ title: 'Nkuzi 13: Ịgbasa Elu'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ihe Ọmụmụ 13: Ịgbasawanye
+# Ihe Ọmụmụ 13: Ịgbasawanye {#lesson-13-scaling-up}
 
 Ị nwere platform na-arụ ọrụ nke nwere ndị ahịa na-akwụ ụgwọ. Ihe ọmụmụ a na-akọwa otu esi eto site na obere ọrụ gaa n’azụmahịa ga-adigide -- ịgbasawanye infrastructure, ime ka operations rụọ ọrụ na-akpaghị aka, na ịbawanye ego a na-enweta n’aka onye ahịa ọ bụla.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 FitSite dị ndụ, ndị ahịa na-edebanye aha, ma ị na-arụ ọrụ kwa ụbọchị. Ugbu a anyị na-elekwasị anya n’uto.
 
-## Mara Nọmba Gị
+## Mara Nọmba Gị {#know-your-numbers}
 
 Tupu ịgbasawanye, ghọta ebe ị nọ:
 
-### Metrics Ndị Dị Mkpa
+### Metrics Ndị Dị Mkpa {#key-metrics}
 
 - **MRR (Ego Mbata Ọnwa Na-emegharị)**: Mkpokọta ego mbata subscription kwa ọnwa
 - **Ọnụọgụ ndị ahịa**: Mkpokọta subscribers na-arụ ọrụ
@@ -24,7 +24,7 @@ Tupu ịgbasawanye, ghọta ebe ị nọ:
 - **LTV (Uru Ndụ Onye Ahịa)**: Nkezi ego mbata kwa onye ahịa n’oge subscription ha niile
 - **CAC (Ọnụahịa Inweta Onye Ahịa)**: Nkezi ụgwọ iji nweta otu onye ahịa
 
-### Ihe Nlereanya: FitSite na Ndị Ahịa 50
+### Ihe Nlereanya: FitSite na Ndị Ahịa 50 {#example-fitsite-at-50-customers}
 
 | Metric | Uru |
 |--------|-------|
@@ -36,9 +36,9 @@ Tupu ịgbasawanye, ghọta ebe ị nọ:
 
 Nọmba ndị a na-agwa gị ihe ị ga-elekwasị anya na ya. Churn dị elu? Dozie retention. ARPU dị ala? Kwalite upgrades. CAC dị elu? Mee ka acquisition channels ka mma.
 
-## Ịgbasawanye Infrastructure
+## Ịgbasawanye Infrastructure {#scaling-infrastructure}
 
-### Mgbe A Ga-agbasawanye
+### Mgbe A Ga-agbasawanye {#when-to-scale}
 
 Gbasawanye hosting mgbe:
 
@@ -47,7 +47,7 @@ Gbasawanye hosting mgbe:
 - Ị na-eru nso na 100+ sites na-arụ ọrụ
 - Mkpesa ndị ahịa gbasara ọsọ na-abawanye
 
-### Otu Esi Agbasawanye
+### Otu Esi Agbasawanye {#how-to-scale}
 
 - **Ịgbasawanye kwụ ọtọ**: Kwalite gaa na server buru ibu (CPU, RAM karịa)
 - **Caching layers**: Tinye Redis/Memcached maka object caching, page caching maka static content
@@ -55,7 +55,7 @@ Gbasawanye hosting mgbe:
 - **Database optimization**: Ka network na-eto, database queries na-adalata. Mee ka tables ka mma, tinye indexes, tụlee server database raara onwe ya nye.
 - **Kewapụ ihe ndị dị iche**: Bugharịa media storage gaa na object storage (dakọtara na S3), nyefee email n’aka transactional email service
 
-### Mbugharị Hosting
+### Mbugharị Hosting {#hosting-migration}
 
 Ọ bụrụ na host gị ugbu a enweghị ike ịgbasawanye ọzọ, hazie mbugharị:
 
@@ -65,11 +65,11 @@ Gbasawanye hosting mgbe:
 4. Melite DNS na TTL pere mpe tupu oge eruo
 5. Nyochaa na ihe niile na-arụ ọrụ mgbe mbugharị gasịrị
 
-## Ime Ka Operations Rụọ Ọrụ Na-akpaghị Aka
+## Ime Ka Operations Rụọ Ọrụ Na-akpaghị Aka {#automating-operations}
 
 Ka ị na-eto, usoro aka na-aghọ ihe na-egbochi ọsọ. Mee ka ihe i nwere ike rụọ ọrụ na-akpaghị aka:
 
-### Webhooks na Zapier
+### Webhooks na Zapier {#webhooks-and-zapier}
 
 Jiri [Webhooks](/user-guide/integrations/webhooks) ma ọ bụ [Zapier](/user-guide/integrations/zapier) mee ka ihe ndị a rụọ ọrụ na-akpaghị aka:
 
@@ -78,7 +78,7 @@ Jiri [Webhooks](/user-guide/integrations/webhooks) ma ọ bụ [Zapier](/user-gu
 - **Payment failures** → ọkwa n’ime monitoring tool gị
 - **Plan upgrades** → email ekele nwere nduzi feature ọhụrụ
 
-### Email Automation
+### Email Automation {#email-automation}
 
 Si n’email aka gaa na usoro na-akpaghị aka:
 
@@ -87,30 +87,30 @@ Si n’email aka gaa na usoro na-akpaghị aka:
 - Nkpali upgrade mgbe ndị ahịa na-eru nso na plan limits
 - Ncheta renewal maka annual subscribers
 
-### Support Automation
+### Support Automation {#support-automation}
 
 - **Azịza akwadoro** maka ajụjụ a na-ajụkarị
 - **Auto-replies** na-egosi na a natara support tickets
 - **Aro knowledge base** mgbe ndị ahịa tinyere tickets kwekọrọ na edemede dị adị
 
-## Ịbawanye Ego Mbata
+## Ịbawanye Ego Mbata {#increasing-revenue}
 
 Uto abụghị naanị banyere inweta ndị ahịa karịa. Ọ bụkwa banyere inweta ego karịa n’aka onye ahịa ọ bụla.
 
-### Ịre Ihe Ka Elu Nye Ndị Ahịa Dị Ugbu A
+### Ịre Ihe Ka Elu Nye Ndị Ahịa Dị Ugbu A {#upselling-existing-customers}
 
 - **Plan upgrades**: Campaigns a lekwasịrị anya na-egosi features Growth/Pro nye ndị ahịa Starter
 - **Order bumps**: Kwalite add-on products nye ndị ahịa dị ugbu a site na email
 - **Annual conversion**: Nye ndị ahịa kwa ọnwa discount ka ha gbanwee gaa na billing kwa afọ
 
-### Isi Mmiri Ego Ọhụrụ
+### Isi Mmiri Ego Ọhụrụ {#new-revenue-streams}
 
 - **Nhazi emere-gị**: Kwụọ premium iji hazie ma mezie site onye ahịa maka ha
 - **Ọrụ imewe ahaziri iche**: Nye ọrụ imewe pụrụ iche n’elu template
 - **Ọmụmụ training**: Walkthroughs otu-na-otu akwụ ụgwọ maka ndị ahịa chọrọ enyemaka aka-na-ọrụ
 - **Premium plugins**: Nye premium plugins pụrụ iche maka niche dị ka add-ons akwụ ụgwọ (dịka, fitness class booking widget)
 
-### Ịkwalite Ọnụahịa
+### Ịkwalite Ọnụahịa {#raising-prices}
 
 Ka platform gị na-eto ma na-agbakwunye uru:
 
@@ -118,7 +118,7 @@ Ka platform gị na-eto ma na-agbakwunye uru:
 - Welie ọnụahịa maka signups ọhụrụ
 - Kọwaa mmụba ahụ site na features ọhụrụ na mmezi
 
-## Iwulite Otu
+## Iwulite Otu {#building-a-team}
 
 N’oge ụfọdụ, ị gaghị enwe ike ime ihe niile naanị gị. Ndị mbụ a na-ewekarị n’ọrụ:
 
@@ -128,7 +128,7 @@ N’oge ụfọdụ, ị gaghị enwe ike ime ihe niile naanị gị. Ndị mb�
 
 Ị chọghị ndị ọrụ oge niile. Contractors na freelancers na-arụ ọrụ nke ọma maka azụmahịa platform.
 
-## Milestones Uto
+## Milestones Uto {#growth-milestones}
 
 | Milestone | MRR Dị Ka Atụrụ Anya | Ihe A Ga-elekwasị Anya |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ N’oge ụfọdụ, ị gaghị enwe ike ime ihe niile naanị gị. Ndị mb�
 | Ndị ahịa 250-500 | $25,000-$50,000 | Iwulite otu, isi mmiri ego ọhụrụ, premium features |
 | Ndị ahịa 500+ | $50,000+ | Maturity nke platform, niches dị nso, exit nwere ike ime |
 
-## Ihe Anyị Wuru n’Ihe Ọmụmụ A
+## Ihe Anyị Wuru n’Ihe Ọmụmụ A {#what-we-built-this-lesson}
 
 - **Metrics framework** iji ghọta ahụike azụmahịa
 - **Atụmatụ ịgbasawanye infrastructure** maka ito site na ọtụtụ iri sites gaa na ọtụtụ narị

@@ -3,11 +3,11 @@ title: توسعه درگاه سفارشی
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# توسعه درگاه سفارشی
+# توسعه درگاه سفارشی {#custom-gateway-development}
 
 می‌توانید با گسترش کلاس `Base_Gateway` درگاه‌های پرداخت سفارشی ایجاد کنید.
 
-## کلاس درگاه
+## کلاس درگاه {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## ثبت درگاه
+## ثبت درگاه {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## روش‌های کلیدی
+## روش‌های کلیدی {#key-methods}
 
 | روش | هدف |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | مدیریت درخواست‌های بازپرداخت |
 | `get_payment_methods()` | بازگرداندن روش‌های پرداخت ذخیره‌شده برای یک مشتری |
 
-## اعتبارنامه‌های تمدید برای عضویت‌های دوره‌ای
+## اعتبارنامه‌های تمدید برای عضویت‌های دوره‌ای {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 به یکپارچه‌سازی‌های درگاه اجازه می‌دهد پیش از ذخیره شدن `auto_renew` گزارش دهند که آیا یک عضویت دوره‌ای اعتبارنامه تمدید قابل‌استفادهٔ مجدد دارد یا نه. `wu_membership_has_renewal_credential` را hook کنید و برگردانید:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 نشانگر اعتبارنامهٔ مفقود را پس از ذخیره شدن یک اعتبارنامهٔ قابل‌استفادهٔ مجدد جدید، به‌عنوان بخشی از جریان مجوزدهی دوبارهٔ موفق درگاه خود پاک کنید.
 
-## نکته‌ها
+## نکته‌ها {#tips}
 
 - همیشه در صورت شکست `WP_Error` برگردانید تا Ultimate Multisite بتواند نمایش خطا را مدیریت کند
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - از `wu_log_add()` برای ثبت گزارش‌های اختصاصی درگاه استفاده کنید
 
-## قابلیت‌های ارائه‌دهنده کانکتور AI
+## قابلیت‌های ارائه‌دهنده کانکتور AI {#ai-connector-provider-capabilities}
 
 یکپارچه‌سازی‌های سفارشی که عملیات پشتیبانی‌شده با کانکتور AI را فراخوانی می‌کنند باید با مجموعه ارائه‌دهندگان OAuth پشتیبانی‌شده که با AI Provider for Anthropic Max v1.3.0 معرفی شده است همسو باشند:
 

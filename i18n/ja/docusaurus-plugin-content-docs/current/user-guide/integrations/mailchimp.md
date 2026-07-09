@@ -3,7 +3,7 @@ title: MailChimp 統合
 sidebar_position: 7
 _i18n_hash: 9f328f09dc98677c9567636a81a7bf0a
 ---
-# MailChimp Integration
+# MailChimp Integration {#mailchimp-integration}
 
 この機能は **Mailchimp** アドオンによって提供されます。
 

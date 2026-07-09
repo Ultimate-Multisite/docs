@@ -3,7 +3,7 @@ title: Pagdumala sa mga Link nga Mahimong Ipaambit alang sa mga Plano
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Pag-manage sa mga Shareable Link para sa Plans
+# Pag-manage sa mga Shareable Link para sa Plans {#managing-shareable-links-for-plans}
 
 Ang Ultimate Multisite naghatag kanimo og option nga i-share ang plan links direkta sa imong mga kliyente. Aron magbuhat niana, pumunta lang sa bisan unsang edit page sa imong plans ug i-click ang _Click to copy the Shareable Link_ button.
 

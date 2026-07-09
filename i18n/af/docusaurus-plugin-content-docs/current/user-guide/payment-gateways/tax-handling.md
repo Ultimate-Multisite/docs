@@ -3,7 +3,7 @@ title: Belastinghantering
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Belastinghantering
+# Belastinghantering {#tax-handling}
 
 Ultimate Multisite het ’n belastinginvorderingsmodule ingebou in ons kern-plugin, so as jy verkoopsbelasting op jou planne, pakkette en dienste moet invorder, kan jy dit maklik doen sonder om enige add-ons te installeer.
 
@@ -11,7 +11,7 @@ Vir maatskappye in Europa bied ons ’n **add-on** wat hulpmiddels en funksies b
 
 Ultimate Multisite dien nie belasting namens jou by die regering in of betaal dit oor nie; ons help jou bloot om die toepaslike belasting ten tyde van die transaksie in te vorder. **Jy sal steeds self belasting moet oorbetaal.**
 
-## Belastinginvordering aktiveer
+## Belastinginvordering aktiveer {#enabling-tax-collection}
 
 Belastinginvordering is nie by verstek geaktiveer nie. Om dit te aktiveer, moet jy na **Ultimate Multisite > Settings > Taxes** gaan en die Enable Taxes-instelling aanskakel.
 
@@ -25,7 +25,7 @@ Jy kan ook die belastinginstellings vir individuele produkte bekyk:
 
 ![Belastinginstellings vir produkte](/img/config/settings-taxes.png)
 
-### Belasting uitgesluit vs. belasting ingesluit
+### Belasting uitgesluit vs. belasting ingesluit {#tax-excluded-vs-tax-included}
 
 By verstek is al jou produkpryse belasting uitgesluit, wat beteken dat belasting **nie ingesluit is** in die produk se prys nie. As ons bepaal dat ’n klant belasting op ’n gegewe aankoop moet betaal, sal ons die belasting **bo-op** die subtotaal byvoeg.
 
@@ -37,7 +37,7 @@ Moenie vergeet om die veranderinge wat jy gemaak het, te **stoor** nie.
 
 ###
 
-## Belastingkoerse skep
+## Belastingkoerse skep {#creating-tax-rates}
 
 Nadat jy belastinginvordering geaktiveer het, moet jy belastingkoerse vir spesifieke liggings skep met ons belastingkoersredigeerder.
 
@@ -51,7 +51,7 @@ Op die belastingkoersredigeerderbladsy kan jy nuwe belastingkoerse byvoeg deur o
 
 Jy moet elke belastingkoers ’n **titel** gee (gebruik op fakture). Dan kan jy die **land** (vereis), die **staat,** en die **stad** (albei opsioneel) kies waar hierdie belasting gehef sal word. Voeg laastens die **belastingkoers in persentasies** by.
 
-### Belastingkategorieë
+### Belastingkategorieë {#tax-categories}
 
 Jy kan ook verskeie belastingkategorieë skep om verskillende belastingkoerse vir verskillende soorte produkte by te voeg.
 
@@ -73,7 +73,7 @@ Jy kan die belastingkategorie vir ’n spesifieke produk stel deur na die **Prod
 
 Op dieselfde skerm kan jy die **Is Taxable?**-skakelaar afskakel om Ultimate Multisite te laat weet dat dit nie belasting op daardie gegewe produk moet invorder nie.
 
-## Europese VAT-ondersteuning
+## Europese VAT-ondersteuning {#european-vat-support}
 
 Soos voorheen genoem, het ons ’n add-on beskikbaar vir klante in die EU wat bykomende vereistes het weens Europese VAT-regulasies.
 
@@ -101,7 +101,7 @@ As jy teruggaan na die **Tax Settings tab**, sal jy nuwe opsies beskikbaar sien.
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAT-belastingkoerse intrek
+### VAT-belastingkoerse intrek {#pulling-on-vat-tax-rates}
 
 Een van die hulpmiddels wat ons integrasie byvoeg, is die vermoë om die belastingkoerse vir EU-lidlande te laai. Dit kan gedoen word deur die belastingkoersredigeerderbladsy te besoek nadat EU VAT-ondersteuning geaktiveer is.
 
@@ -111,7 +111,7 @@ Onderaan die bladsy sal jy die VAT-intrekopsies sien. Deur ’n koerstipe te kie
 
 Jy kan ook die waardes wysig nadat jy dit ingetrek het. Om dit te doen, wysig eenvoudig die tabelreël wat jy nodig het en klik om die nuwe waardes te stoor.
 
-### VAT-validering
+### VAT-validering {#vat-validation}
 
 Wanneer VAT-ondersteuning geaktiveer is, sal Ultimate Multisite ’n bykomende veld by die checkout-vorm voeg, onder die faktuuradresveld. Die veld sal slegs vir klante in die EU verskyn.
 

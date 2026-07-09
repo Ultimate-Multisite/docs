@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# El. paštas
+# El. paštas {#emails}
 
 Ultimate Multisite: Emails priedas leidžia tinklo savininkams kurti ir valdyti klientų el. pašto paskyras kartu su svetainėmis ir narystėmis. 1.1.0 versija prideda klientams skirtą el. pašto paskyrų valdymą, webmail vienkartinį prisijungimą, CyberPanel peradresavimo palaikymą ir patobulinimus, susijusius su paskyrų kūrimu atsiskaitymo metu.
 
-## Pagrindinės funkcijos
+## Pagrindinės funkcijos {#key-features}
 
 * **Kliento el. pašto paskyros valdiklis**: klientai gali kurti ir valdyti pašto dėžutes savo paskyros puslapyje, kai turi aktyvią el. pašto narystę.
 * **Webmail SSO ir magic links**: klientai gali atidaryti webmail tiesiai iš paskyros puslapio naudodami vieno spustelėjimo autentifikavimą, kai teikėjas tai palaiko.
@@ -20,14 +20,14 @@ Ultimate Multisite: Emails priedas leidžia tinklo savininkams kurti ir valdyti 
 * **CyberPanel peradresavimai**: CyberPanel pagrįsti tinklai gali kurti ir valdyti el. pašto peradresavimus kaip el. pašto paslaugos proceso dalį.
 * **Teikėją atpažįstantys nustatymai**: nustatymų puslapis filtruoja teikėjus iki aktyvių, sukonfigūruotų integracijų, kad administratoriai matytų tik naudojamas parinktis.
 
-## Reikalavimai
+## Reikalavimai {#requirements}
 
 * Ultimate Multisite 2.0.0 arba naujesnė
 * WordPress Multisite diegimas
 * Bent viena sukonfigūruota el. pašto teikėjo integracija
 * Teikėjo API prisijungimo duomenys su leidimu kurti pašto dėžutes, keisti slaptažodžius ir išduoti webmail prieigos nuorodas ten, kur palaikoma
 
-## Diegimas
+## Diegimas {#installation}
 
 1. Įkelkite plugin failus į `/wp-content/plugins/ultimate-multisite-emails`.
 2. Tinkle aktyvuokite priedą iš **Plugins** WordPress tinklo administravimo srityje.
@@ -35,7 +35,7 @@ Ultimate Multisite: Emails priedas leidžia tinklo savininkams kurti ir valdyti 
 4. Įjunkite el. pašto teikėjų integracijas, kurias norite leisti naudoti klientams.
 5. Išsaugokite nustatymus, tada išbandykite paskyros kūrimą su ne gamybinės aplinkos klientu arba testavimo svetaine.
 
-## Kaip veikia el. pašto pardavėjo procesas
+## Kaip veikia el. pašto pardavėjo procesas {#how-the-email-seller-flow-works}
 
 El. pašto pardavimas turi du atskirus sluoksnius:
 
@@ -53,7 +53,7 @@ Tai reiškia, kad įprastas kliento procesas yra toks:
 5. **El. pašto paskyrų** skydelis pasirodo tai aktyviai el. pašto narystei.
 6. Klientas spusteli **Sukurti paskyrą**, įveda vietinę dalį, pvz., `info`, nustato slaptažodį, o priedas sukuria `info@their-domain.com` pas sukonfigūruotą teikėją.
 
-## El. pašto produkto konfigūravimas
+## El. pašto produkto konfigūravimas {#configure-an-email-product}
 
 Sukurkite po vieną el. pašto produktą kiekvienam el. pašto paketui, kurį norite parduoti arba dovanoti. Jei produktų nustatymas jums naujas, pradėkite nuo [Pirmojo prenumeratos produkto kūrimo](../../user-guide/configuration/creating-your-first-subscription-product), tada grįžkite čia dėl el. paštui skirtų nustatymų.
 
@@ -67,7 +67,7 @@ Sukurkite po vieną el. pašto produktą kiekvienam el. pašto paketui, kurį no
 
 Teikėjo pasirinkiklyje rodomi tik teikėjai, kurie yra įjungti ir visiškai sukonfigūruoti puslapyje **Integracijos**. Jei pasirinkiklis tuščias, pirmiausia sukonfigūruokite ir išbandykite teikėją.
 
-## El. pašto pridėjimas prie atsiskaitymo
+## El. pašto pridėjimas prie atsiskaitymo {#add-email-to-checkout}
 
 El. pašto produktai paprastai siūlomi kaip svetainės plano priedai. Bendrą atsiskaitymo redaktoriaus darbo eigą žr. [Atsiskaitymo formos](../../user-guide/configuration/checkout-forms).
 
@@ -79,7 +79,7 @@ El. pašto produktai paprastai siūlomi kaip svetainės plano priedai. Bendrą a
 
 El. pašto domenas paimamas iš kliento svetainės domeno. Klientai neįveda el. pašto domeno el. pašto produkto žingsnyje.
 
-## Kliento paskyros el. pašto valdymas
+## Kliento paskyros el. pašto valdymas {#customer-account-email-management}
 
 1.1.0 versija prideda el. pašto valdymo valdiklį kliento paskyros puslapyje. Naudokite jį, kai klientai turėtų savarankiškai kurti ir prižiūrėti savo svetainių pašto dėžutes.
 
@@ -94,7 +94,7 @@ Valdiklis naudoja Ultimate Multisite paskyros puslapio dabartinių kontekstų si
 
 Jei klientas nemato el. pašto skydelio, patikrinkite, ar jis turi **aktyvią el. pašto produkto narystę**, ar narystė susieta su svetainės domenu ir ar produktui sukonfigūruotas teikėjas.
 
-## Nemokamo el. pašto plano suteikimas klientui
+## Nemokamo el. pašto plano suteikimas klientui {#giving-a-customer-a-free-email-plan}
 
 Norėdami suteikti klientui el. paštą jo neapmokestindami, pirmiausia suteikite **el. pašto teisę**, tada sukurkite pašto dėžutę arba leiskite klientui ją susikurti.
 
@@ -106,7 +106,7 @@ Rekomenduojamos parinktys:
 
 Jei norite, kad klientas pats valdytų pašto dėžutę iš paskyros puslapio, įsitikinkite, kad jis turi aktyvią el. pašto narystę domenui. Rankiniu būdu sukurta teikėjo pašto dėžutė be tokios narystės gali egzistuoti, bet klientas gali nematyti jai skirto savitarnos el. pašto skydelio.
 
-## Administratoriaus sukurtos paskyros ir „Nėra užsakymo numerio“
+## Administratoriaus sukurtos paskyros ir „Nėra užsakymo numerio“ {#admin-created-accounts-and-no-order-number}
 
 Administratoriaus puslapis **El. pašto paskyros** sukuria arba redaguoja teikėjo pašto dėžutę. Tai nėra pirmasis žingsnis parduodant arba suteikiant el. pašto planą.
 
@@ -122,7 +122,7 @@ Vietoj to naudokite tokią veiksmų seką:
 
 Jei jums tereikia sukurti teikėjo pašto dėžutę klientui ir nereikia savitarnos valdymo paskyros puslapyje, administratoriaus sukurta paskyra gali būti pakankama. Jei norite, kad klientas ją matytų ir valdytų Ultimate Multisite, taip pat sukurkite el. pašto narystę.
 
-## Webmail SSO ir prisijungimas per magišką nuorodą
+## Webmail SSO ir prisijungimas per magišką nuorodą {#webmail-sso-and-magic-link-login}
 
 Webmail SSO suteikia klientams tiesioginį veiksmą **Atidaryti webmail** iš paskyros puslapio. Kai aktyvus teikėjas tai palaiko, priedas paprašo trumpalaikio prieigos URL ir nukreipia klientą į webmail, neprašydamas kopijuoti pašto dėžutės prisijungimo duomenų.
 
@@ -134,7 +134,7 @@ Teikėjų elgsena gali skirtis:
 
 Įjunkite webmail prieigą tik tiems teikėjams, kuriems sukonfigūravote reikiamus API prisijungimo duomenis. Jei veiksmų trūksta konkrečiam teikėjui, pirmiausia patvirtinkite, kad teikėjas yra aktyvus, sukonfigūruotas ir palaiko webmail prisijungimo nuorodas.
 
-## Atsiskaitymo parengimas
+## Atsiskaitymo parengimas {#checkout-provisioning}
 
 Priedas parengia el. pašto **narystės kontekstą** atsiskaitymo metu. Jis įrašo teikėją, paskyrų limitą, kvotą ir svetainės domeną, kad po pirkimo klientai galėtų patys susikurti pašto dėžučių pavadinimus iš paskyros puslapio.
 
@@ -148,15 +148,15 @@ Rekomenduojamas diegimas:
 
 Jei parengimas nepavyksta, kliento paskyra ir narystė vis tiek gali egzistuoti, o el. pašto narystei arba teikėjo pašto dėžutei gali reikėti administratoriaus veiksmų. Prieš bandydami dar kartą, patikrinkite Ultimate Multisite veiklos žurnalus ir teikėjo žurnalus.
 
-## CyberPanel el. pašto peradresavimai
+## CyberPanel el. pašto peradresavimai {#cyberpanel-email-forwarders}
 
 CyberPanel pagrįstiems tinklams 1.1.0 versija prideda el. pašto peradresavimų palaikymą. Naudokite peradresavimus, kai klientams reikia adresų, pvz., `info@customer-domain.test`, kad laiškai būtų nukreipiami į kitą gautųjų dėžutę, nesukuriant pilnos pašto dėžutės.
 
 Prieš siūlydami peradresavimus, patvirtinkite, kad CyberPanel integracija sukonfigūruota ir pasiekiama. Reikalingus pagrindinio kompiuterio, naudotojo vardo, slaptažodžio ir paketo konstantų duomenis rasite [CyberPanel integracijos](../../user-guide/administration/cyberpanel-integration) vadove.
 
-## Keitimų žurnalas
+## Keitimų žurnalas {#changelog}
 
-### 1.1.0 versija - išleista 2026-05-05
+### 1.1.0 versija - išleista 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Nauja: Webmail SSO ir magic-link prisijungimas — klientai gali pasiekti webmail tiesiai iš savo Account su vieno paspaudimo autentifikavimu.
 * Nauja: slaptažodžio keitimo funkcija pridėta prie el. pašto paskyros valdymo valdiklio.
@@ -170,28 +170,28 @@ Prieš siūlydami peradresavimus, patvirtinkite, kad CyberPanel integracija suko
 * Pataisyta: pašalintas kiekvienos užklausos log spam iš Email_Account_Manager inicializavimo.
 * Patobulinta: nustatymų puslapis dabar filtruoja, kad būtų rodomi tik aktyvūs ir sukonfigūruoti el. pašto teikėjai.
 
-## Dažnai užduodami klausimai
+## Dažnai užduodami klausimai {#frequently-asked-questions}
 
-### Ar klientai gali kurti savo el. pašto paskyras?
+### Ar klientai gali kurti savo el. pašto paskyras? {#can-customers-create-their-own-email-accounts}
 
 Taip. Kai klientas turi aktyvią domeno el. pašto narystę ir produktas leidžia papildomas paskyras, klientai gali kurti ir valdyti savo pašto dėžutes iš Account puslapio.
 
-### Ar kiekvienas teikėjas palaiko webmail SSO?
+### Ar kiekvienas teikėjas palaiko webmail SSO? {#does-every-provider-support-webmail-sso}
 
 Ne. SSO ir magic-link palaikymas priklauso nuo aktyvaus el. pašto teikėjo. Teikėjai be prieigos nuorodos API vis tiek gali palaikyti pašto dėžučių kūrimą ir slaptažodžių keitimą.
 
-### Ar administratoriai gali kurti el. pašto paskyras klientams?
+### Ar administratoriai gali kurti el. pašto paskyras klientams? {#can-administrators-create-email-accounts-for-customers}
 
 Taip. Administratoriai gali kurti el. pašto paskyras iš admin sąsajos, įskaitant pradinio slaptažodžio nustatymą kuriant paskyrą. Klientų savitarnos valdymui taip pat įsitikinkite, kad klientas turi aktyvią domeno el. pašto narystę.
 
-### Ar galiu suteikti el. pašto paskyrą nemokamai?
+### Ar galiu suteikti el. pašto paskyrą nemokamai? {#can-i-give-an-email-account-away-for-free}
 
 Taip. Sukurkite nemokamą / nulinės kainos Email produktą ir pridėkite jį kaip aktyvią narystę klientui arba leiskite klientui užbaigti checkout su 100 % nuolaida. Kai el. pašto narystė jau yra, klientas arba administratorius gali sukurti faktinę pašto dėžutę.
 
-### Kodėl priskiriant el. pašto paskyrą prašoma užsakymo numerio?
+### Kodėl priskiriant el. pašto paskyrą prašoma užsakymo numerio? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Membership laukas ieško esamos Ultimate Multisite narystės pagal jos nuorodos / užsakymo numerį. Jei klientas nepirko el. pašto produkto ir jūs rankiniu būdu nesukūrėte el. pašto narystės, nėra el. pašto narystės / užsakymo, kurį būtų galima priskirti. Pirmiausia sukurkite el. pašto narystę, tada sukurkite arba priskirkite pašto dėžutę.
 
-### Ar peradresavimai yra tas pats, kas pašto dėžutės?
+### Ar peradresavimai yra tas pats, kas pašto dėžutės? {#are-forwarders-the-same-as-mailboxes}
 
 Ne. Pašto dėžutė saugo paštą ir turi prisijungimo duomenis. Peradresavimas nukreipia paštą į kitą adresą ir nesuteikia atskiros gautųjų dėžutės.

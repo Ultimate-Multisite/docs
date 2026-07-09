@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent adalah asisten AI WordPress otonom yang dapat merencanakan, membangun, dan mengelola situs WordPress lengkap hanya melalui instruksi bahasa alami. Agen ini mengekspos serangkaian **kemampuan** (abilities) terstruktur — yaitu tindakan diskrit yang dapat diuji dan dipanggil oleh agen — yang mencakup segala hal mulai dari manajemen konten hingga kustomisasi sistem desain. Versi 1.9.0 menambahkan kemampuan pembuatan konten, peninjauan halaman visual melalui tangkapan layar sisi klien, lima profil agen bawaan, dan *feature flag* untuk kontrol akses dan *branding*.
 
-## Fitur Utama
+## Fitur Utama {#key-features}
 
 - **Sistem Kemampuan (Abilities system)** — katalog tindakan modular dan dapat diperluas yang dapat dipanggil oleh agen pada instalasi WordPress Anda
 - **Manajemen Konten (Content Management)** — membuat postingan dan halaman (termasuk menetapkan *page template*), membuat banyak postingan sekaligus dalam satu panggilan, mengatur gambar unggulan, dan membangun formulir kontak
@@ -28,21 +28,21 @@ Gratis AI Agent adalah asisten AI WordPress otonom yang dapat merencanakan, memb
 - **Site Builder Orchestration v2** — rencana pembangunan situs multi-langkah dengan penemuan *plugin*, pelacakan kemajuan, dan pemulihan kesalahan
 - **Perintah Benchmark WP-CLI** — menjalankan rangkaian *benchmark* kemampuan agen dari *command line* untuk CI dan evaluasi model
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 - WordPress 6.0 atau lebih tinggi
 - PHP 8.1 atau lebih tinggi
 - WordPress Multisite (diaktifkan di jaringan) atau instalasi situs tunggal
 - *Plugin* konektor penyedia AI aktif (Anthropic, OpenAI, atau yang kompatibel)
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah file *plugin* ke `/wp-content/plugins/gratis-ai-agent`
 2. Aktifkan *plugin* melalui layar **Plugins** di WordPress
 3. Navigasikan ke **Gratis AI Agent → Settings** dan hubungkan penyedia AI Anda
 4. (Opsional) Jelajahi **Abilities Registry** untuk menginstal paket kemampuan tambahan
 
-## Memulai Cepat
+## Memulai Cepat {#quick-start}
 
 Setelah diaktifkan dan terhubung ke penyedia AI, buka panel **Gratis AI Agent** di bilah sisi admin WordPress. Ketik instruksi bahasa alami dan agen akan merencanakan serta menjalankan langkah-langkah yang diperlukan menggunakan kemampuan yang tersedia.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## Ikhtisar Kemampuan (Abilities Overview)
+## Ikhtisar Kemampuan (Abilities Overview) {#abilities-overview}
 
 Kemampuan adalah tindakan atomik yang dapat dilakukan oleh agen. Setiap kemampuan adalah kelas PHP terdaftar yang mengekspos skema (parameter dan tipe pengembalian) yang dibaca oleh agen saat *runtime*. Kemampuan dikelompokkan ke dalam area fungsional:
 
@@ -79,7 +79,7 @@ Kemampuan adalah tindakan atomik yang dapat dilakukan oleh agen. Setiap kemampua
 
 Lihat [Abilities Reference](./abilities) untuk dokumentasi parameter lengkap dan contoh penggunaan.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent menyediakan keluarga perintah `wp gratis-ai-agent` untuk menjalankan *benchmark* dan mengelola kemampuan dari *command line*. Lihat [WP-CLI Reference](./wp-cli) untuk daftar perintah lengkap.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Semua pengaturan berada di **Gratis AI Agent → Settings** di admin WordPress:
 
@@ -106,7 +106,7 @@ Semua pengaturan berada di **Gratis AI Agent → Settings** di admin WordPress:
 | **Ability Timeout** | Durasi maksimum (dalam detik) yang dapat dijalankan oleh satu kemampuan (default 30) |
 | **Debug Logging** | Mencatat panggilan kemampuan dan penalaran agen ke log debug WordPress |
 
-## Safety Blocklist Manajemen Opsi
+## Safety Blocklist Manajemen Opsi {#options-management-safety-blocklist}
 
 Kemampuan Manajemen Opsi mencakup *blocklist* bawaan yang mencegah agen membaca atau menulis opsi WordPress yang sensitif. *Blocklist* bawaan mencakup:
 
@@ -118,26 +118,26 @@ Kemampuan Manajemen Opsi mencakup *blocklist* bawaan yang mencegah agen membaca 
 
 Entri tambahan dapat ditambahkan melalui *filter* `gratis_ai_agent_options_blocklist`.
 
-## Hooks dan Filters
+## Hooks dan Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — dipicu setelah kemampuan terdaftar, menerima nama kelas kemampuan
 - `gratis_ai_agent_plan_started` — dipicu ketika rencana *site builder* mulai dieksekusi
 - `gratis_ai_agent_plan_completed` — dipicu ketika rencana selesai dengan sukses
 - `gratis_ai_agent_plan_failed` — dipicu ketika rencana menemui kesalahan yang tidak dapat dipulihkan
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — memodifikasi daftar kemampuan terdaftar sebelum agen memuatnya
 - `gratis_ai_agent_options_blocklist` — memperluas atau mengurangi *blocklist* keamanan opsi
 - `gratis_ai_agent_benchmark_questions` — menambahkan pertanyaan *benchmark* kustom ke rangkaian evaluasi
 - `gratis_ai_agent_plan_plugins` — memodifikasi daftar penemuan *plugin* selama pembuatan rencana situs
 
-## Dukungan
+## Dukungan {#support}
 
 Untuk dukungan, kunjungi [ultimatemultisite.com](https://ultimatemultisite.com) atau buka isu di repositori *plugin*.
 
-## Changelog
+## Changelog {#changelog}
 
 Lihat [Changelog](./changelog) untuk riwayat versi lengkap.

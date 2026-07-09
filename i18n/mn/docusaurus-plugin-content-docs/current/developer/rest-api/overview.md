@@ -3,28 +3,28 @@ title: REST API тойм
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API лавлах
+# REST API лавлах {#rest-api-reference}
 
-## Үндсэн тохиргоо
+## Үндсэн тохиргоо {#base-configuration}
 
 **Үндсэн URL:** `{site_url}/wp-json/wu/v2/`
 **Баталгаажуулалт:** API түлхүүр ба нууц (HTTP Basic Auth эсвэл URL параметрүүд)
 
-## Баталгаажуулалт
+## Баталгаажуулалт {#authentication}
 
-### API идэвхжүүлэх
+### API идэвхжүүлэх {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API итгэмжлэл авах
+### API итгэмжлэл авах {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Баталгаажуулалтын аргууд
+### Баталгаажуулалтын аргууд {#authentication-methods}
 
 **HTTP Basic Auth (Зөвлөмжтэй):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Үндсэн endpoint-ууд
+## Үндсэн endpoint-ууд {#core-endpoints}
 
-### 1. Хэрэглэгчдийн API
+### 1. Хэрэглэгчдийн API {#1-customers-api}
 
 **Үндсэн маршрут:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Сайтуудын API
+### 2. Сайтуудын API {#2-sites-api}
 
 **Үндсэн маршрут:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Гишүүнчлэлүүдийн API
+### 3. Гишүүнчлэлүүдийн API {#3-memberships-api}
 
 **Үндсэн маршрут:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Бүтээгдэхүүнүүдийн API
+### 4. Бүтээгдэхүүнүүдийн API {#4-products-api}
 
 **Үндсэн маршрут:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Төлбөрүүдийн API
+### 5. Төлбөрүүдийн API {#5-payments-api}
 
 **Үндсэн маршрут:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Домэйнүүдийн API
+### 6. Домэйнүүдийн API {#6-domains-api}
 
 **Үндсэн маршрут:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Бүртгэлийн endpoint
+## Бүртгэлийн endpoint {#registration-endpoint}
 
 `/register` endpoint нь бүрэн checkout/бүртгэлийн урсгалыг хангана:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Бүрэн эрхт tenant endpoint-ууд
+## Бүрэн эрхт tenant endpoint-ууд {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 нь тусгаарлагдсан tenant-уудыг provision хийх, шалгах эсвэл баталгаажуулах интеграцуудад зориулсан бүрэн эрхт tenant REST хамрах хүрээг нэмдэг.
 
@@ -242,7 +242,7 @@ Tenant бүртгэл, өгөгдлийн сан, файлын систем бо
 
 `ready: false`-г нээлтийн өмнөх blocker гэж үзнэ. Баталгаажуулалтын дэлгэрэнгүйг шалгаж, өгөгдлийн сангийн хост холболт, дараалал, хэрэглэгч provision хийх эсвэл routing асуудлыг зассаны дараа баталгаажуулалтыг дахин оролдоно уу.
 
-## Алдааны хариунууд
+## Алдааны хариунууд {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tenant бүртгэл, өгөгдлийн сан, файлын систем бо
 }
 ```
 
-## Хуудаслалт ба шүүлт
+## Хуудаслалт ба шүүлт {#pagination-and-filtering}
 
 **Query параметрүүд:**
 ```http

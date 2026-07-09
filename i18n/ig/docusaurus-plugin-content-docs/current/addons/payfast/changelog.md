@@ -3,7 +3,7 @@ title: PayFast Ndekọ mgbanwe
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Ndekọ mgbanwe PayFast
+# Ndekọ mgbanwe PayFast {#payfast-changelog}
 
 Ụdị: 1.0.2 - Ewepụtara na 2025-09-28
 

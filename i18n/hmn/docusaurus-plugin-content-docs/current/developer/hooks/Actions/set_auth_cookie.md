@@ -4,11 +4,11 @@ title: Kev nqis tes - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Khiav tam sim ua ntej authentication cookie raug teeb.
 
-## Cov parameter
+## Cov parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Khiav tam sim ua ntej authentication cookie raug teeb.
 | $scheme | `string` | Authentication scheme. Cov nqi muaj xws li 'auth' los sis 'secure_auth'. |
 | $token | `string` | Tus user lub session token siv rau lub cookie no. |
 
-### Txij thaum
+### Txij thaum {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Qhov chaw
+### Qhov chaw {#source}
 
 Teev tseg hauv [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ntawm kab 124

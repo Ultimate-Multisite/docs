@@ -3,15 +3,15 @@ title: አርማ SVG ይፍጠሩ
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# የሎጎ SVG መፍጠር
+# የሎጎ SVG መፍጠር {#generate-logo-svg}
 
 የ**Generate Logo SVG** ችሎታ (ability) Theme Builder በራስ-ሰር የnamespace-safe sanitisation አማካኝነት ብጁ የሎጎ SVGዎችን በቀጥታ ወደ WordPress ድረገጃችሁ እንዲፈጥሩ እና እንዲያስገቡ ያስችላል።
 
-## አጠቃላይ እይታ
+## አጠቃላይ እይታ {#overview}
 
 ይህ ችሎታ በድረ-ገጽዎ የብራንዲንግ አቅጣጫ እና የንድፍ ምርጫዎች ላይ ተመስርተው ሊሰፉ የሚችሉ የቬክተር ግራፊክስ (SVG) ሎጎዎችን ይፈጥራል። የተፈጠሩት SVGዎች በWordPress ውስጥ ለመጠቀም ደህንነታቸው የተረጋገጠ እና የእይታ ውበት ሳይቀንስ በራስ-ሰር sanitise (ማጽዳት) ይደረጋሉ።
 
-## መለኪያዎች
+## መለኪያዎች {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 | `height` | number | No | በፒክስል የSVG ቁመት (መነሻ፡ 200) |
 | `include_text` | boolean | No | የድረ-ገጽ ስም በሎጎ ውስጥ እንደ ጽሑፍ መካተት አለመሆኑ (መነሻ፡ true) |
 
-## የውጤት ቅርጸት
+## የውጤት ቅርጸት {#output-format}
 
 ይህ ችሎታ የሚከተለው መዋቅር ያለው የSVG ስትሪንግ ይመልሳል፡
 
@@ -36,7 +36,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 }
 ```
 
-## የSVG Sanitisation ባህሪ
+## የSVG Sanitisation ባህሪ {#svg-sanitisation-behaviour}
 
 የተፈጠሩት SVGዎች የሚከተሉትን ለማረጋገጥ በራስ-ሰር የnamespace-safe sanitisation ይደረጋሉ፡
 
@@ -48,7 +48,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 
 ይህ ደግሞ ተጨማሪ sanitisation ሳይፈልግ SVGው በቀጥታ በWordPress ውስጥ እንዲሰቀል ደህንነቱ የተጠበቀ መሆኑን ያረጋግጣል።
 
-## የአጠቃቀም ምሳሌ
+## የአጠቃቀም ምሳሌ {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Generate a modern logo for my tech startup called "CloudSync" using blue and whi
 - ዘመናዊ የንድፍ መርሆዎችን ይከተላል
 - በራስ-ሰር sanitise ተደርጎ ለመጠቀም ዝግጁ ነው።
 
-## ከTheme Builder ጋር ውህደት
+## ከTheme Builder ጋር ውህደት {#integration-with-theme-builder}
 
 Theme Builderን የንድፍ አቅጣጫ ምርጫ ሲጠቀሙ፣ የGenerate Logo SVG ችሎታው፡
 
@@ -71,21 +71,21 @@ Theme Builderን የንድፍ አቅጣጫ ምርጫ ሲጠቀሙ፣ የGenerate
 3. ሎጎውን በራስ-ሰር ወደ ድረ-ገጽዎ የራስጌ/የብራንዲንግ ቦታ ያስገባል
 4. SVGውን በWordPress media ውስጥ እንደ ብጁ ሎጎ ያከማቻል።
 
-## ምርጥ ልምዶች
+## ምርጥ ልምዶች {#best-practices}
 
 - **ግልጽ የዘይቤ ምርጫዎችን መስጠት** — የፈለጉትን የንድፍ ዘይቤ ይግለጹ (ዘመናዊ፣ ክላሲክ፣ አዝናኝ ወዘተ)
 - **ቀለም መግለጽ** — ወጥነት ለመጠበቅ የብራንድ ቀለሞችን ያካትቱ።
 - **renderingን መፈተሽ** — ሎጎው በተለያዩ ስክሪን መጠኖች ላይ በትክክል መታየቱን ያረጋግጡ።
 - **በተጨማሪ ማበጀት** — መጠን እና ቦታ ለማስተካከል የWordPress የሎጎ ማበጀት መሳሪያዎችን ይጠቀሙ።
 
-## ገደቦች
+## ገደቦች {#limitations}
 
 - የSVG ሎጎዎች እንደ ስታቲክ ግራፊክስ (አልሰም) ይፈጠራሉ።
 - ብዙ አካላት ባላቸው ውስብስብ ሎጎዎች በእጅ ማስተካከያ ሊያስፈልጋቸው ይችላል።
 - ብጁ ፊደላት አይደገፉም፤ ጽሑፉ የስርዓት ፊደላትን ይጠቀማል።
 - በጣም ትልቅ ወይም በጣም ትንሽ ልኬቶች ጥራቱን ሊነኩ ይችላሉ።
 
-## ተዛማጅ ችሎታዎች
+## ተዛማጅ ችሎታዎች {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — ተደራሽነትን ለማረጋገጥ የቀለም ንፅፅርን ይፈትሹ
 - [Create Menu](./create-menu.md) — ለድረ-ገጽዎ የአሰሳ ምናሌዎችን ይፍጠሩ

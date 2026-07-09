@@ -3,11 +3,11 @@ title: Misalan Lamba na Ci gaba
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Misalan Code na Ci-gaba
+# Misalan Code na Ci-gaba {#advanced-code-examples}
 
 Waɗannan misalan suna nuna tsarin haɗawa na ci-gaba da Ultimate Multisite.
 
-## Injin Farashi Mai Sauyawa
+## Injin Farashi Mai Sauyawa {#dynamic-pricing-engine}
 
 Injin farashi bisa ƙa'idoji wanda ke aiwatar da rangwamen yawan saye, aminci, da na yanayi:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Samar da Site na Ci-gaba
+## Samar da Site na Ci-gaba {#advanced-site-provisioning}
 
 Saita sababbin site kai tsaye tare da plugins, SSL, CDN, ajiyoyi, da sa ido bisa fasalolin plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Tsarin Ƙuntatawa na Musamman
+## Tsarin Ƙuntatawa na Musamman {#custom-limitations-system}
 
 Bi diddigi da tilasta iyakokin albarkatu tare da gargaɗin amfani:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter tare da `increment_item()`
+## BerlinDB Atomic Counter tare da `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 ya ƙara hanyar `increment_item()` zuwa ajin BerlinDB `Query`. Yi amfani da ita don aiwatar da ƙarin lambobi masu aminci, atomic a kan ginshiƙan lambobi ba tare da tseren karanta-gyara-rubuta ba — yana da amfani ga ƙididdigewa, iyakokin amfani, da binciken rate-limiting da ke gudana ƙarƙashin buƙatu masu faruwa lokaci guda.
 
-### Sa hannun hanya
+### Sa hannun hanya {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 ya ƙara hanyar `increment_item()` zuwa ajin BerlinDB 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Amfani na asali
+### Amfani na asali {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Bibiyar amfani da API ga kowane membership
+### Bibiyar amfani da API ga kowane membership {#tracking-api-usage-per-membership}
 
 Tsari mai amfani don tilasta iyakokin API rate ga kowane membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Me ya sa `increment_item()` maimakon `update_item()`
+### Me ya sa `increment_item()` maimakon `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Hanyar karanta-gyara-rubuta ta sakaci ba ta da aminci ƙarƙashin buƙatu masu faruwa lokaci guda:
 

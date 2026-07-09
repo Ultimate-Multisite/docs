@@ -3,17 +3,17 @@ title: 'Leson 12: Jere Biznis la'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leson 12: Jere Biznis la
+# Leson 12: Jere Biznis la {#lesson-12-running-the-business}
 
 Yon platfòm se pa yon pwojè ou fini -- se yon biznis ou jere. Leson sa a kouvri operasyon chak jou pou jere FitSite: sipò, faktirasyon, antretyen, epi kenbe kliyan yo kontan.
 
-## Kote Nou Te Rete a
+## Kote Nou Te Rete a {#where-we-left-off}
 
 FitSite an dirèk epi kliyan yo ap enskri. Kounye a ou bezwen jere operasyon an yon fason dirab.
 
-## Operasyon Chak Jou
+## Operasyon Chak Jou {#daily-operations}
 
-### Siveyans
+### Siveyans {#monitoring}
 
 Tcheke sa yo chak jou (oswa mete alèt):
 
@@ -22,7 +22,7 @@ Tcheke sa yo chak jou (oswa mete alèt):
 - **Peman ki echwe**: Èske gen echèk peman ki bezwen atansyon?
 - **Demann sipò**: Èske gen kesyon kliyan ki poko jwenn repons?
 
-### Sipò Kliyan
+### Sipò Kliyan {#customer-support}
 
 Konsantrasyon ou sou yon nich se yon avantaj isit la. Paske tout kliyan ou yo se estidyo kondisyon fizik, w ap wè menm kesyon yo repete:
 
@@ -36,7 +36,7 @@ Konsantrasyon ou sou yon nich se yon avantaj isit la. Paske tout kliyan ou yo se
 
 Bati baz konesans ou (ki te kòmanse nan Leson 8) alantou kesyon ki repete sa yo. Chak tikè sipò ki te ka tounen yon atik baz konesans se yon siy pou ekri atik sa a.
 
-### Nivo Sipò
+### Nivo Sipò {#support-tiers}
 
 Pandan w ap grandi, òganize sipò selon plan:
 
@@ -48,9 +48,9 @@ Pandan w ap grandi, òganize sipò selon plan:
 
 [Ekstansyon Support Tickets](/addons/support-tickets) la ka ede jere demann sipò yo andedan platfòm nan.
 
-## Operasyon Faktirasyon
+## Operasyon Faktirasyon {#billing-operations}
 
-### Peman Renouvlab
+### Peman Renouvlab {#recurring-payments}
 
 Ultimate Multisite jere faktirasyon renouvlab otomatikman atravè pòtay peman ou. Travay ou se siveye pou:
 
@@ -58,7 +58,7 @@ Ultimate Multisite jere faktirasyon renouvlab otomatikman atravè pòtay peman o
 - **Dunning**: Mete lojik re-eseye otomatik atravè pòtay peman ou (Stripe jere sa byen)
 - **Demann anilasyon**: Konprann poukisa kliyan yo ale. Chak anilasyon se fidbak.
 
-### Jere Abònman
+### Jere Abònman {#managing-memberships}
 
 Ale nan **Ultimate Multisite > Abònman** pou:
 
@@ -69,13 +69,13 @@ Ale nan **Ultimate Multisite > Abònman** pou:
 
 Gade [Jere Abònman](/user-guide/administration/managing-memberships) pou referans konplè a.
 
-### Fakti
+### Fakti {#invoicing}
 
 Asire fakti yo jenere kòrèkteman pou chak peman. Kliyan yo ka bezwen fakti pou rapò depans biznis. Gade [Jere Peman ak Fakti](/user-guide/administration/managing-payments-and-invoices).
 
-## Antretyen Platfòm
+## Antretyen Platfòm {#platform-maintenance}
 
-### Mizajou WordPress ak Plugin
+### Mizajou WordPress ak Plugin {#wordpress-and-plugin-updates}
 
 Kòm administratè rezo a, ou responsab pou:
 
@@ -88,14 +88,14 @@ Kòm administratè rezo a, ou responsab pou:
 Yon mizajou ki kase afekte chak sit kliyan sou rezo ou. Toujou teste mizajou yo sou yon kopi staging rezo ou an premye.
 :::
 
-### Sekirite
+### Sekirite {#security}
 
 - Kenbe tout lojisyèl yo ajou
 - Sèvi ak modpas solid ak otantifikasyon de faktè pou admin accounts
 - Siveye aktivite sispèk
 - Gen yon plan pou ensidan sekirite
 
-### Pèfòmans
+### Pèfòmans {#performance}
 
 Pandan rezo ou ap grandi, siveye:
 
@@ -105,9 +105,9 @@ Pandan rezo ou ap grandi, siveye:
 
 Konsidere mete caching an plas (page cache, object cache) ak yon CDN si ou poko fè sa. [Entegrasyon Cloudflare](/user-guide/host-integrations/cloudflare) la jere anpil nan sa.
 
-## Jesyon Sik Lavi Kliyan
+## Jesyon Sik Lavi Kliyan {#customer-lifecycle-management}
 
-### Diminye Churn
+### Diminye Churn {#reducing-churn}
 
 Churn se pousantaj kliyan ki anile chak mwa. Pou yon biznis abònman, diminye churn enpòtan menm jan ak jwenn nouvo kliyan.
 
@@ -119,7 +119,7 @@ Churn se pousantaj kliyan ki anile chak mwa. Pou yon biznis abònman, diminye ch
 - Yo jwenn yon altènativ pi bon mache → ranfòse valè nich ou
 - Biznis yo fèmen → enevitab, men swiv sa apa
 
-### Ankouraje Monte Nivo
+### Ankouraje Monte Nivo {#encouraging-upgrades}
 
 Kliyan sou Starter k ap reyisi yo ta dwe ankouraje pou monte nivo:
 
@@ -127,7 +127,7 @@ Kliyan sou Starter k ap reyisi yo ta dwe ankouraje pou monte nivo:
 - Voye email sible ki mete an avan fonksyonalite plan Growth yo ta benefisye de yo
 - Montre sa kliyan Growth/Pro yo konstwi
 
-### Kanpay Retounen
+### Kanpay Retounen {#win-back-campaigns}
 
 Lè yon kliyan anile:
 
@@ -135,30 +135,30 @@ Lè yon kliyan anile:
 2. Adrese enkyetid yo si sa posib
 3. Ofri yon rabè pou retounen (30-60 jou apre anilasyon)
 
-## Woutin Chak Semèn ak Chak Mwa
+## Woutin Chak Semèn ak Chak Mwa {#weekly-and-monthly-routines}
 
-### Chak Semèn
+### Chak Semèn {#weekly}
 
 - Revize nouvo enskripsyon ak anilasyon yo
 - Reponn tout tikè sipò ki louvri yo
 - Tcheke pèfòmans ak disponiblite platfòm nan
 - Revize nenpòt peman ki echwe
 
-### Chak Mwa
+### Chak Mwa {#monthly}
 
 - Analize metrik kle yo (MRR, churn, nouvo kliyan, monte nivo)
 - Aplike mizajou WordPress ak plugin (apre tès staging)
 - Revize epi mete baz konesans la ajou selon modèl sipò yo
 - Voye yon bilten oswa yon mizajou bay kliyan yo (nouvo fonksyonalite, konsèy, nouvèl endistri kondisyon fizik)
 
-### Chak Trimès
+### Chak Trimès {#quarterly}
 
 - Revize pri yo parapò ak konpetitè yo ak fidbak kliyan yo
 - Evalye konsepsyon modèl yo -- èske yo bezwen rafrechi?
 - Evalye kapasite hosting -- èske ou bezwen ogmante echèl?
 - Revize epi amelyore onboarding selon done aktivasyon
 
-## Sa Nou Te Konstwi nan Leson Sa a
+## Sa Nou Te Konstwi nan Leson Sa a {#what-we-built-this-lesson}
 
 - **Woutin siveyans chak jou** pou uptime, enskripsyon, peman, ak sipò
 - **Yon estrikti sipò pa nivo** ki koresponn ak nivo plan yo

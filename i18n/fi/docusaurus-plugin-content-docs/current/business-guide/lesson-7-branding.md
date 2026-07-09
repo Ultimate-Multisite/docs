@@ -3,15 +3,15 @@ title: 'Oppitunti 7: Tee siitä omasi'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Oppitunti 7: Tee siitä omasi
+# Oppitunti 7: Tee siitä omasi {#lesson-7-making-it-yours}
 
 Asiakkaidesi ei pitäisi koskaan tuntea käyttävänsä "jotain WordPress-lisäosaa." Heidän pitäisi tuntea käyttävänsä FitSitea -- heidän toimialalleen rakennettua alustaa. Tämä oppitunti käsittelee brändäystä, white-labelöintiä ja sitä, miten alustasta tehdään tuotteen tuntuinen.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSitella on toimiva kassaprosessi, joka vie fitness-studioiden omistajat paketin valinnasta julkaistulle sivustolle. Nyt teemme koko kokemuksesta yhtenäisen, brändätyn tuotteen tuntuisen.
 
-## Alustasi verkkotunnus
+## Alustasi verkkotunnus {#your-platform-domain}
 
 Brändisi perusta on verkkotunnuksesi. FitSitelle:
 
@@ -19,7 +19,7 @@ Brändisi perusta on verkkotunnuksesi. FitSitelle:
 - **Asiakassivustot**: `studioname.fitsite.com` (aliverkkotunnukset)
 - **Mukautetut verkkotunnukset**: Growth- ja Pro-pakettien asiakkaat voivat liittää oman verkkotunnuksensa
 
-### Verkkotunnuksesi määrittäminen
+### Verkkotunnuksesi määrittäminen {#setting-up-your-domain}
 
 1. Rekisteröi alustasi verkkotunnus
 2. Osoita se hosting-palveluntarjoajallesi
@@ -28,11 +28,11 @@ Brändisi perusta on verkkotunnuksesi. FitSitelle:
 
 Katso tarkat ohjeet kohdasta [Verkkotunnuksen liittämisen määrittäminen](/user-guide/domain-mapping/how-to-configure-domain-mapping).
 
-## Admin-kokemuksen white-labelöinti
+## Admin-kokemuksen white-labelöinti {#white-labeling-the-admin-experience}
 
 Kun fitness-studion omistaja kirjautuu sivustonsa Dashboardiin, hänen pitäisi nähdä sinun brändisi, ei WordPress- tai Ultimate Multisite -brändäystä.
 
-### Mukautettu kirjautumissivu
+### Mukautettu kirjautumissivu {#custom-login-page}
 
 Mukauta WordPress-kirjautumissivu näyttämään:
 
@@ -40,7 +40,7 @@ Mukauta WordPress-kirjautumissivu näyttämään:
 - Fitness-aiheinen taustakuvitus
 - Brändivärisi
 
-### Dashboard-brändäys
+### Dashboard-brändäys {#dashboard-branding}
 
 Käytä [Admin Page Creator](/addons/admin-page-creator) -lisäosaa tai mukautettua CSS:ää:
 
@@ -48,7 +48,7 @@ Käytä [Admin Page Creator](/addons/admin-page-creator) -lisäosaa tai mukautet
 - Mukauta admin-värimaailma vastaamaan brändiäsi
 - Lisää mukautettu Dashboard-widget, jossa on fitness-aiheisia pikalinkkejä ja tukiresursseja
 
-### Mukautetut admin-sivut
+### Mukautetut admin-sivut {#custom-admin-pages}
 
 Harkitse mukautettujen admin-sivujen luomista, jotka nostavat esiin fitness-studioiden omistajille olennaisimmat toiminnot:
 
@@ -58,11 +58,11 @@ Harkitse mukautettujen admin-sivujen luomista, jotka nostavat esiin fitness-stud
 
 Tämä madaltaa oppimiskynnystä tuomalla nicheen liittyvät toiminnot näkyvästi etualalle sen sijaan, että ne hautautuisivat WordPressin vakiovalikkoon.
 
-## Viestinnän brändäys
+## Viestinnän brändäys {#branding-your-communications}
 
 Jokaisen sähköpostin, laskun ja ilmoituksen pitäisi vahvistaa brändiäsi.
 
-### Järjestelmäsähköpostit
+### Järjestelmäsähköpostit {#system-emails}
 
 Siirry kohtaan **Ultimate Multisite > Asetukset > Sähköpostit** ja mukauta kaikki järjestelmäsähköpostit:
 
@@ -79,7 +79,7 @@ Tärkeät mukautettavat sähköpostit:
 | Maksukuitti | "Maksu vastaanotettu" | "FitSite-tilausmaksu vahvistettu" |
 | Kokeilujakso päättymässä | "Kokeilujaksosi päättyy pian" | "FitSite-kokeilujaksosi päättyy 3 päivän kuluttua -- pidä studiosi verkkosivusto julkaistuna" |
 
-### Laskut
+### Laskut {#invoices}
 
 Mukauta laskumallit sisältämään:
 
@@ -87,7 +87,7 @@ Mukauta laskumallit sisältämään:
 - Yrityksesi tiedot
 - Fitness-aiheiset tuotenimet (ei yleisiä pakettien tunnuksia)
 
-## Asiakkaille näkyvä sivusto
+## Asiakkaille näkyvä sivusto {#the-customer-facing-site}
 
 Pääverkkotunnuksesi (`fitsite.com`) tarvitsee markkinointisivuston, joka myy alustaa. Tämä on erillinen Ultimate Multisite -verkon administa -- se on yrityksesi julkinen kasvot.
 
@@ -103,7 +103,7 @@ Keskeiset sivut:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Mukautettu verkkotunnus asiakkaille
+## Mukautettu verkkotunnus asiakkaille {#custom-domain-for-customers}
 
 Asiakkaille, joiden paketteihin sisältyy mukautettuja verkkotunnuksia, dokumentoi prosessi selkeästi:
 
@@ -113,7 +113,7 @@ Asiakkaille, joiden paketteihin sisältyy mukautettuja verkkotunnuksia, dokument
 
 Luo tätä prosessia varten ohjeartikkeli tai tietopankkimerkintä, joka on kirjoitettu ei-teknisille fitness-studioiden omistajille.
 
-## FitSite-verkko tähän mennessä
+## FitSite-verkko tähän mennessä {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Mitä rakensimme tällä oppitunnilla
+## Mitä rakensimme tällä oppitunnilla {#what-we-built-this-lesson}
 
 - **Alustan verkkotunnus ja DNS** määritetty brändättyä kokemusta varten
 - **White-labelöity admin** FitSite-brändäyksellä kauttaaltaan

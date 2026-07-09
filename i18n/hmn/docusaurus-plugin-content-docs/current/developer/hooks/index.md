@@ -3,11 +3,11 @@ title: Kev Siv Qhia Txog Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Phau ntawv siv Hooks
+# Phau ntawv siv Hooks {#hooks-reference}
 
 Ntaub ntawv tsim cia rau tag nrho **59 actions** thiab **118 filters** hauv Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Khiav ua ntej kev xa rov mus rau kev txheeb xyuas tus kheej.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Khiav tam sim ua ntej cookie txheeb xyuas tus kheej raug teeb.
@@ -70,7 +70,7 @@ Ntaub ntawv tsim cia rau tag nrho **59 actions** thiab **118 filters** hauv Ulti
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Khiav tom qab ib object raug khaws cia rau hauv database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Tso cai rau cov plugin developers ntxiv actions rau hauv txheej txheem qhib xauv.
 
-## Cov Filters
+## Cov Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Lim lub sijhawm ntev ntawm lub caij tas sijhawm rau authentication cookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Lim qhov authentication redirect scheme.

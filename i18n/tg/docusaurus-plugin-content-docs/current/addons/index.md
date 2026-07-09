@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons Ultimate Multisite-ро бо хусусиятҳо ва ҳамгироиҳои иловагӣ васеъ мекунанд. Аксари addons пулакӣ мебошанд ва онҳоро аз [ultimatemultisite.com](https://ultimatemultisite.com) харидан мумкин аст.
 
-## Насб
+## Насб {#installation}
 
 Addons-ро бо ду роҳ насб кардан мумкин аст:
 
 1. **Тавассути саҳифаи Addon** -- Ба саҳифаи идоракунии addon-и сайти худ дар бахши маъмурии WordPress гузаред
 2. **Боргирии дастӣ** -- Аз [Account-и худ](https://ultimatemultisite.com/my-account/downloads/) боргирӣ кунед ва тавассути Plugins > Add New боргузорӣ намоед
 
-## Addons дастрас
+## Addons дастрас {#available-addons}
 
 | Addon | Тавсиф |
 |-------|-------------|

@@ -3,7 +3,7 @@ title: Log Perubahan Penjual Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Log Perubahan Domain Seller
+# Log Perubahan Domain Seller {#domain-seller-changelog}
 
 Versi 1.3.0 - Dikeluarkan pada 2026-06-02
 - Baharu: Menambah amaran network-admin apabila baki penjual semula HostAfrica menjadi terlalu rendah
@@ -134,20 +134,20 @@ Versi 1.0.0 - Dikeluarkan pada 2025-09-28
 * **Dibetulkan:** Semua kod v1 lapuk dikemas kini kepada piawaian v2
 * **Dialih keluar:** Keserasian v1 legasi (perubahan memecahkan keserasian)
 
-### Versi Terdahulu (v1 Legasi)
+### Versi Terdahulu (v1 Legasi) {#previous-versions-v1-legacy}
 
-### Versi 0.0.3 - 20/08/2019
+### Versi 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Dibetulkan: Ketidakserasian dengan Groundhogg CRM
 * Nota: Ini ialah keluaran terakhir yang serasi dengan v1
 
-### Versi 0.0.2 - 07/12/2018
+### Versi 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Dibetulkan: Medan License Key dialih keluar
 * Dibetulkan: Tab pelan hilang apabila plugin ciri aktif
 * Ditambah baik: Menambah butang langkau pada medan pendaftaran
 
-### Versi 0.0.1 - Keluaran Awal
+### Versi 0.0.1 - Keluaran Awal {#version-001---initial-release}
 
 * Integrasi OpenSRS asas untuk WP Ultimo v1
 * Carian dan pendaftaran domain ringkas

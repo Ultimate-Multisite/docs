@@ -4,11 +4,11 @@ title: Süzgüç - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Işläp düzüjilere soňky mazmuny üýtgetmäge rugsat berýär
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Işläp düzüjilere soňky mazmuny üýtgetmäge rugsat berýär
 | $to_replace | `array` | Placeholder-leriň saklanýan massiwi. |
 | $placeholder_count | `int` | Tapylan placeholder-leriň sany. |
 
-### Şondan bäri
+### Şondan bäri {#since}
 
 - 1.4.0
-### Çeşme
+### Çeşme {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) faýlynda 46-njy setirde kesgitlenen
 
 
-## Gaýtarýar
+## Gaýtarýar {#returns}
 Üýtgedilenden soňky mazmun.

@@ -3,11 +3,11 @@ title: उन्नत कोड उदाहरणहरू
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# उन्नत Code उदाहरणहरू
+# उन्नत Code उदाहरणहरू {#advanced-code-examples}
 
 यी उदाहरणहरूले Ultimate Multisite सँग उन्नत एकीकरण ढाँचाहरू देखाउँछन्।
 
-## Dynamic Pricing Engine
+## Dynamic Pricing Engine {#dynamic-pricing-engine}
 
 नियम-आधारित मूल्य निर्धारण इन्जिन जसले मात्रा, निष्ठा, र मौसमी छुटहरू लागू गर्छ:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## उन्नत साइट Provisioning
+## उन्नत साइट Provisioning {#advanced-site-provisioning}
 
 plan सुविधाहरूको आधारमा नयाँ साइटहरूलाई plugins, SSL, CDN, backups, र monitoring सहित स्वचालित रूपमा कन्फिगर गर्नुहोस्:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Custom Limitations System
+## Custom Limitations System {#custom-limitations-system}
 
 प्रयोग चेतावनीहरूसहित स्रोत सीमाहरू ट्र्याक र लागू गर्नुहोस्:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## `increment_item()` सहित BerlinDB Atomic Counter
+## `increment_item()` सहित BerlinDB Atomic Counter {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 ले BerlinDB `Query` class मा `increment_item()` method थप्यो। पढ्ने-परिमार्जन-लेख्ने प्रतिस्पर्धाबिना संख्यात्मक column हरूमा सुरक्षित, atomic increment गर्न यसको प्रयोग गर्नुहोस् — यो concurrent request हरू अन्तर्गत चल्ने counter, usage quota, र rate-limiting जाँचहरूका लागि उपयोगी छ।
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 ले BerlinDB `Query` class मा `increment_item()
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### आधारभूत प्रयोग
+### आधारभूत प्रयोग {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### membership प्रति API प्रयोग ट्र्याक गर्ने
+### membership प्रति API प्रयोग ट्र्याक गर्ने {#tracking-api-usage-per-membership}
 
 membership प्रति API rate limit लागू गर्ने एउटा व्यावहारिक ढाँचा:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### `update_item()` को सट्टा `increment_item()` किन
+### `update_item()` को सट्टा `increment_item()` किन {#why-incrementitem-instead-of-updateitem}
 
 सरल पढ्ने-परिमार्जन-लेख्ने तरिका concurrent request हरू अन्तर्गत असुरक्षित हुन्छ:
 

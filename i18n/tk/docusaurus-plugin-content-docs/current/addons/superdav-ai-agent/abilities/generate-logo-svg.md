@@ -3,15 +3,15 @@ title: Logotip SVG döret
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG döretmek
+# Logo SVG döretmek {#generate-logo-svg}
 
 **Logo SVG döretmek** başarnygy Theme Builder-e awtomatik namespace-howpsuz arassalama bilen ýörite logo SVG-lerini göni WordPress saýtyňyza döretmäge we ýerleşdirmäge mümkinçilik berýär.
 
-## Umumy syn
+## Umumy syn {#overview}
 
 Bu başarnyk saýtyňyzyň brending ugruna we dizaýn isleglerine esaslanyp, ulaldylyp-kiçeldilip bolýan wektor grafika (SVG) logolaryny döredýär. Döredilen SVG-ler WordPress-de ulanmak üçin howpsuzdygyny üpjün etmek maksady bilen awtomatik arassalanýar, şol bir wagtyň özünde wizual bitewilik saklanýar.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Bu başarnyk saýtyňyzyň brending ugruna we dizaýn isleglerine esaslanyp, ula
 | `height` | number | Ýok | SVG beýikligi pikselde (deslapky: 200) |
 | `include_text` | boolean | Ýok | Saýtyň adyny logoda tekst hökmünde goşmalymy (deslapky: true) |
 
-## Çykyş formaty
+## Çykyş formaty {#output-format}
 
 Bu başarnyk aşakdaky gurluşly SVG setirini gaýtarýar:
 
@@ -36,7 +36,7 @@ Bu başarnyk aşakdaky gurluşly SVG setirini gaýtarýar:
 }
 ```
 
-## SVG arassalama özüni alyp barşy
+## SVG arassalama özüni alyp barşy {#svg-sanitisation-behaviour}
 
 Döredilen SVG-ler aşakdakylar üçin awtomatik namespace-howpsuz arassalamadan geçýär:
 
@@ -48,7 +48,7 @@ Döredilen SVG-ler aşakdakylar üçin awtomatik namespace-howpsuz arassalamadan
 
 Bu, goşmaça arassalama talap etmezden SVG-ni göni WordPress içine ýerleşdirmek üçin howpsuz edýär.
 
-## Ulanyş mysaly
+## Ulanyş mysaly {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Bu başarnyk aşakdakylary ýerine ýetirýän SVG logo döredýär:
 - Döwrebap dizaýn ýörelgelerine eýerýär
 - Awtomatik arassalanýar we ulanmaga taýýar bolýar
 
-## Theme Builder bilen integrasiýa
+## Theme Builder bilen integrasiýa {#integration-with-theme-builder}
 
 Theme Builder-iň dizaýn-ugur saýlawyny ulananyňyzda, Logo SVG döretmek başarnygy:
 
@@ -71,21 +71,21 @@ Theme Builder-iň dizaýn-ugur saýlawyny ulananyňyzda, Logo SVG döretmek baş
 3. Logony awtomatik ýagdaýda saýtyňyzyň header/brending meýdanyna ýerleşdirýär
 4. SVG-ni WordPress media-da ýörite logo hökmünde saklaýar
 
-## Iň gowy tejribeler
+## Iň gowy tejribeler {#best-practices}
 
 - **Aýdyň stil isleglerini beriň** — isleýän dizaýn stiliňizi beýan ediň (döwrebap, klassiki, oýnaşyk we ş.m.)
 - **Reňkleri görkeziň** — yzygiderlilik üçin brand reňkleriňizi goşuň
 - **Görkezilişini synap görüň** — logonyň dürli ekran ölçeglerinde dogry görkezilýändigini barlaň
 - **Has-da sazlaň** — ölçegini we ýerleşişini sazlamak üçin WordPress-iň logo sazlama gurallaryny ulanyň
 
-## Çäklendirmeler
+## Çäklendirmeler {#limitations}
 
 - SVG logolar statik grafika hökmünde döredilýär (animasiýa däl)
 - Köp elementli çylşyrymly logolar elde kämilleşdirmegi talap edip biler
 - Ýörite şriftler goldanylmaýar; tekst ulgam şriftlerini ulanýar
 - Örän uly ýa-da örän kiçi ölçegler hiline täsir edip biler
 
-## Baglanyşykly başarnyklar
+## Baglanyşykly başarnyklar {#related-abilities}
 
 - [Palitra kontrastyny barlamak](./validate-palette-contrast.md) — elýeterlilik üçin reňk kontrastyny barlaň
 - [Menýu döretmek](./create-menu.md) — saýtyňyz üçin nawigasiýa menýularyny dörediň

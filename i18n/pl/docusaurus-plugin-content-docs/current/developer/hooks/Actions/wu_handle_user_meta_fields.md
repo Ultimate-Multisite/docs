@@ -4,11 +4,11 @@ title: Akcja - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Akcja: wu_handle_user_meta_fields
+# Akcja: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Pozwala deweloperom pluginów na zapisywanie danych użytkownika (meta data) na różne sposoby, jeśli zajdzie taka potrzeba.
 
-## Parametry
+## Parametry {#parameters}
 
 | Nazwa | Typ | Opis |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Pozwala deweloperom pluginów na zapisywanie danych użytkownika (meta data) na 
 | $customer | `\Customer` | Obiekt klienta Ultimate Multisite. |
 | $checkout | `\Checkout` | Klasa obsługująca proces kasy. |
 
-### Od
+### Od {#since}
 
 - 2.0.4
-### Źródło
+### Źródło {#source}
 
 Zdefiniowane w [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) w linii 1244

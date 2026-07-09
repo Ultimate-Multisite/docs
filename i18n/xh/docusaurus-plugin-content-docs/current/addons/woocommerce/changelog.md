@@ -3,7 +3,7 @@ title: Irekhodi lotshintsho lodibaniso lwe-WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Ingxelo yotshintsho yoDityaniso lwe-WooCommerce
+# Ingxelo yotshintsho yoDityaniso lwe-WooCommerce {#woocommerce-integration-changelog}
 
 Inguqulelo 2.2.0 - Ikhutshwe ngo-2026-07-01
 * Entsha: Izixa zerhafu ze-Ultimate Multisite ngoku zivela njengemigca eyahlukeneyo yeentlawulo ze-WooCommerce kwi-checkout, nto leyo eyenza iitotali zerhafu zicace ngakumbi phambi kwentlawulo.

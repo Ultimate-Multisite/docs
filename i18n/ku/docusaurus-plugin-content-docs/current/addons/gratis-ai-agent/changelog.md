@@ -3,11 +3,11 @@ title: Dîroka guhertinan
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Tomara guhertinan
+# Tomara guhertinan {#changelog}
 
-## 1.9.0 — Di 2026-04-28 de hate weşandin
+## 1.9.0 — Di 2026-04-28 de hate weşandin {#190--released-on-2026-04-28}
 
-### Nû
+### Nû {#new}
 
 - **Taybetmendiya `create_contact_form`** — bi karanîna plugin-a formê ya çalak (Contact Form 7, WPForms, Fluent Forms, an Gravity Forms) formekî têkiliyê çêdike û shortcode-ekî amade ji bo danînê di her nivîs an rûpelê de vedigerîne.
 - **Taybetmendiya `set_featured_image`** — wêneyekî sereke ji ID-ya pêveka heyî ya Media Library an ji URL-ekî dûr ve ji nivîs an rûpelê re destnîşan dike; dema URL were dayîn wêneyê bixweber tîne hundir.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Vegerandina danişîna dawî** — niha panelê chatê di barkirina rûpelê û dema vekirina widget de axaftina herî dawî bixweber dîsa bar dike, ji ber vê yekê context di nav gerana rûpelan de winda nabe.
 - **Girêdanên çalakiyên plugin** — niha girêdanên bilez bo Settings û Abilities Registry di ekrana WordPress **Plugins → Installed Plugins** de li jêr danasîna plugin xuya dibin.
 
-### Başkirî
+### Başkirî {#improved}
 
 - **Dubare hewildana çavkaniya wêneyê** — niha agent berî ku vegere ser wêneyekî bi AI hatî çêkirin, li ser têkçûna dakêşandinê hemû çavkaniyên wêneyên belaş ên mîhengkirî dîsa têdikoşe.
 - **Panela agahiyên modelê** — her dem di sernivîsa chat de xuya ye; piştî peyama yekem êdî nayê veşartin.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ji nû ve sêwirandina widget-a chatê** — îkona yekgirtî ya AI şûna avatar-a taybet a berê digire; bi pergala agent-a navxweyî re hevaheng e.
 - **Girêdankirina URL** — URL-yên ku di peyamên system û bilbilên peyamên çewtiyê de xuya dibin niha wekî girêdanên klikbar têne nîşandan.
 
-### Sererastkirî
+### Sererastkirî {#fixed}
 
 - **Dîtinbarîya taybetmendiyan** — danasîn, referansên system prompt, û hevahengiya namespace hatin sererastkirin da ku hemû taybetmendî bi bawerî di lîsteya amûrên agent de xuya bibin.
 - **Cache-a providers** — providers niha bi jimêrkera guhertoyê li seranserê malperê cache dibin, ku pirsgirêkên provider-a kevn li torên multisite asteng dike.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Di 2026-04-09 de hate weşandin
+## 1.4.0 — Di 2026-04-09 de hate weşandin {#140--released-on-2026-04-09}
 
-### Nû
+### Nû {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — ji rêzika fermanan ji bo CI pipelines û herikên xebata nirxandina modelan, komika benchmark a Agent Capabilities v1 dimeşîne. Meşandinên per-pirs, guherandinên provider/model, û derana JSON/CSV piştgirî dike.
 - **Komika benchmark a Agent Capabilities v1** — komek rêxistî ji promptên tevlihev û pir-qonaxî ye ku hemû qada şiyanê diceribîne, bi pûan dayînê û raporkirina token/demê.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pirsa benchmark a malpera xwaringehê** (`q-restaurant-website`) — ceribandina ji-serî-ta-dawî ku tomarkirina CPT, design system, navigation, û vedîtina plugin digire nav xwe.
 - **Pluginên girêdera AI provider** ji bo sazkirina herêmî ya pêşvebirinê ya bileztir li blueprintên WordPress Playground hatin zêdekirin.
 
-### Başkirî
+### Başkirî {#improved-1}
 
 - README bi belgekirina girêdera AI provider û rêwerzên sazkirinê hate nûkirin.
 
-### Çêkirî
+### Çêkirî {#fixed-1}
 
 - 25 têkçûnên testên PHPUnit li şaxa `main` hatin çareserkirin.
 - Forma URL ya weşanên GitHub di `blueprint.json` de hate rastkirin.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Têbînîyên weşanên berê di repository ya plugin de têne parastin._

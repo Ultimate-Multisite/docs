@@ -4,20 +4,20 @@ title: Actie - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Action: wu_cart_setup
+# Action: wu_cart_setup {#action-wucartsetup}
 
 Laat ontwikkelaars extra wijzigingen aan het afrekenobject maken.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $this | `` | \WP_Ultimo\Checkout\Cart Het winkelwagenobject. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.0.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L333) op regel 333

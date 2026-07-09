@@ -3,13 +3,13 @@ title: 틈새 웹사이트 비즈니스 구축하기
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite로 틈새 웹사이트 비즈니스 구축하기
+# Ultimate Multisite로 틈새 웹사이트 비즈니스 구축하기 {#build-a-niche-website-business-with-ultimate-multisite}
 
 웹사이트 판매를 시도하는 대부분의 사람들은 Wix, Squarespace, 그리고 수많은 프리랜서들과 가격 경쟁을 합니다. 그리고 그 경쟁에서 지게 됩니다. 승리하는 사람들은 특정 고객층을 정하고, 그 고객층에 맞춰진 솔루션을 구축한 다음, 제공하는 가치에 대해 비용을 청구합니다.
 
 이 과정은 Ultimate Multisite를 사용하여 정확히 그렇게 하는 방법을 가르쳐 드립니다.
 
-## 무엇을 구축하게 되나요
+## 무엇을 구축하게 되나요 {#what-you-will-build}
 
 이 과정 전체를 통해 여러분은 **FitSite**라는 실제 작동하는 네트워크를 구축하게 됩니다. FitSite는 피트니스 스튜디오, 개인 트레이너, 헬스장 사장님들을 위해 특별히 제작된 웹사이트 플랫폼입니다.
 
@@ -23,7 +23,7 @@ _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 
 여러분은 단계별로 따라오게 될 것이며, 끝날 무렵에는 작동하는 플랫폼과 여러분이 선택하는 어떤 틈새 시장에도 이 과정을 재현할 수 있는 지식을 모두 갖게 될 것입니다.
 
-## 왜 피트니스 스튜디오인가요?
+## 왜 피트니스 스튜디오인가요? {#why-fitness-studios}
 
 누구나 따라 할 수 있는 구체적인 예시가 필요했습니다. 피트니스 스튜디오가 성공하는 이유는 다음과 같습니다.
 
@@ -34,7 +34,7 @@ _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 
 FitSite를 구축하면서 배우는 모든 것은 여러분이 선택하는 어떤 틈새 시장(식당, 부동산 중개인, 법률 사무소, 교회, 전문 계약업자 또는 기타 모든 분야)에도 직접 적용됩니다.
 
-## 과정 구조
+## 과정 구조 {#course-structure}
 
 각 레슨은 하나의 개념을 소개하고, 그것이 왜 중요한지 설명하며, FitSite 네트워크에 실제로 구현하는 방법을 안내합니다. 모든 레슨은 이전 레슨을 기반으로 합니다.
 
@@ -55,7 +55,7 @@ FitSite를 구축하면서 배우는 모든 것은 여러분이 선택하는 어
 | [13. Scaling Up](lesson-13-growth) | Growing from first customers to a real business | FitSite 성장 및 자동화 전략 |
 | [14. What Comes Next](lesson-14-whats-next) | Expanding to adjacent niches and new opportunities | FitSite를 넘어선 로드맵 |
 
-## 사전 준비 사항
+## 사전 준비 사항 {#prerequisites}
 
 - WordPress Multisite 설치 (또는 설치할 의향)
 - 활성화된 Ultimate Multisite 라이선스
@@ -63,6 +63,6 @@ FitSite를 구축하면서 배우는 모든 것은 여러분이 선택하는 어
 
 코딩은 필요하지 않습니다. Ultimate Multisite를 사용해 본 적이 없다면 괜찮습니다. 레슨 3은 깨끗한 설치 상태에서 시작합니다.
 
-## 준비되셨나요?
+## 준비되셨나요? {#ready}
 
 [Lesson 1: Why Niche Wins](lesson-1-why-niche)부터 시작하세요.

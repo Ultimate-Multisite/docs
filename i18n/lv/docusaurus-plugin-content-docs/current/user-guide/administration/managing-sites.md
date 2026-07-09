@@ -3,7 +3,7 @@ title: Saites pārvaldīšana
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Vietušu vietnes pārvaldība
+# Vietušu vietnes pārvaldība {#managing-sites}
 
 Vietnes (vai subvietnes) ir galvenais daļa no jūsu WaaS biznesa. Ultimate Multisite ir 3 veidiem vietņu:
 
@@ -11,13 +11,13 @@ Vietnes (vai subvietnes) ir galvenais daļa no jūsu WaaS biznesa. Ultimate Mult
 - **Vietņu šabloni** — Predefined vietnes, ko klienti var izvēlēties kā sākumu
 - **Galvenā vietne** — Jūsu galvenā tīkla vietne
 
-## Vietņu skatīšana
+## Vietņu skatīšana {#viewing-sites}
 
 Navigējieties uz **Ultimate Multisite → Sites**, lai redzētu visus subvietnes jūsu tīklā. Katra vietne ir norādīta veidarbem un var filtrēt pēc Visām vietnēm, Klienta īpašums, Šablonu vai Pēdējais.
 
 ![Vietņu saraksta lapa](/img/admin/sites-list.png)
 
-## Jaunās vietnes pievienošana
+## Jaunās vietnes pievienošana {#adding-a-new-site}
 
 Noklikšķiniet uz pogas **Pievienot vietni**, lai izveidotu jaunu vietni. Jums būs jāsniedz:
 
@@ -27,15 +27,15 @@ Noklikšķiniet uz pogas **Pievienot vietni**, lai izveidotu jaunu vietni. Jums 
 
 Opcionā **Kopēt vietni** ļauj izveidot jaunu vietni uz bazas eksistējošās vietnes šablona pamatu. Ja to iespējati, varat izvēlēties, kurš šablonu izmantot kā sākumu. Nodrošinieties, ka ir ieslēgta opcija **Kopēt mediju duplikojumā**, lai iestavinātu mediju failus.
 
-## Eksistējo vietnes pārvaldība
+## Eksistējo vietnes pārvaldība {#managing-an-existing-site}
 
 Noklikšķiniet uz **Pārvaldīt** jebkurās vietnes atvērt vietni **Redi vietni**. Tur jūs varat atrast:
 
-### Pamato interviiss
+### Pamato interviiss {#basic-information}
 
 Vietnes nosaukumu, veidu, vietnes ID un aprakstu. Jūs redzēs arī mapeto domēnu, saistīto pievienošanos un klienta kontu, kas īpašniec vietni.
 
-### Vietņu opcijas
+### Vietņu opcijas {#site-options}
 
 Konfiguriet vietnes iespējas un ierobežojumus:
 
@@ -47,7 +47,7 @@ Konfiguriet vietnes iespējas un ierobežojumus:
 
 Par default vietnes seko tie limitus, kas noteikti pie biedrības līmeņa. Ja jūs iestatīsiet limitus vietnes līmenī, tie pārvarēs biedrības iestatījumus.
 
-### Piesaistes (Associations)
+### Piesaistes (Associations) {#associations}
 
 Apvietē vietnes opcijas jūs atrasties informāciju par:
 
@@ -55,7 +55,7 @@ Apvietē vietnes opcijas jūs atrasties informāciju par:
 - **Biedrību**, kurā vietne ir
 - **Klienta kontu**, kas saistīts ar vietni
 
-### Lablīgo puslapas stūra (Right Sidebar)
+### Lablīgo puslapas stūra (Right Sidebar) {#right-sidebar}
 
 Lablīgo puslapas stūrī jūs varat:
 

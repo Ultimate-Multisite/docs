@@ -3,9 +3,9 @@ title: Tarihin canje-canje na Ultimate AI Connector don Endpoints masu jituwa
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector don Compatible Endpoints Changelog
+# Ultimate AI Connector don Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Siga 2.0.0 — An saki a 2026-04-24
+## Siga 2.0.0 — An saki a 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Sabo: Goyon bayan masu bayarwa da yawa — saita AI endpoints da yawa kuma ka tura buƙatu tare da fallback na atomatik tsakanin masu bayarwa.
 * Gyara: Haɗin Multi-provider SDK tare da daidaitattun provider IDs, registration URLs, da iyakancewar HTTP filter ga kowane mai bayarwa.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Gyara: An kawar da buƙatar HTTP mai toshewa da ke faruwa a kowane loda shafi.
 * Ingantawa: An haɓaka GitHub Actions workflows zuwa Node.js 24.
 
-## Siga 1.0.0 — Sakin Farko
+## Siga 1.0.0 — Sakin Farko {#version-100--initial-release}

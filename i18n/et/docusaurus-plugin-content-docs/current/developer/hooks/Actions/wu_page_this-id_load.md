@@ -4,11 +4,11 @@ title: 'Toiming - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Võimaldab pluginate arendajatel lisada meie lehtedele täiendavaid haake.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Võimaldab pluginate arendajatel lisada meie lehtedele täiendavaid haake.
 | $page_hook | `string` | The page hook of this page. |
 | $admin_page | `self` | TThe page instance. |
 
-### Alates
+### Alates {#since}
 
 - 1.8.2
 - 2.0.4: Lisatud kolmas parameeter: lehe instants.
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) real 332

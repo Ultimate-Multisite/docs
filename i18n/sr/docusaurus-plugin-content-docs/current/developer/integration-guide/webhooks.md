@@ -3,11 +3,11 @@ title: Обрада веб-хука
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Обрада webhook-ова
+# Обрада webhook-ова {#webhook-handling}
 
 Креирајте прилагођене webhook крајње тачке за примање догађаја од спољних услуга и синхронизацију података са Ultimate Multisite.
 
-## Прилагођена webhook крајња тачка
+## Прилагођена webhook крајња тачка {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Безбедносна разматрања
+## Безбедносна разматрања {#security-considerations}
 
 - Увек верификујте webhook потписе помоћу HMAC-а или дељене тајне
 - Користите `permission_callback` на својој REST рути — никада га не постављајте на `__return_true` у продукцији

@@ -3,13 +3,13 @@ title: Missio epistularum electronicarum et nuntiationum diffusarum
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Mittendis Epistulis Electronicis et Nuntiis Latis (v2)
+# Mittendis Epistulis Electronicis et Nuntiis Latis (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x refertur.**_
 
 Ultimate Multisite cum facultate venit quae tibi permittet cum clientibus tuis communicare, epistulam electronicam ad usorem destinatum aut ad gregem usorum mittendo, necnon monita in eorum Dashboard administratoris mittendo ad annuntiationes divulgandas
 
-## Adde monita administratoris ad Dashboard clientium tuorum per Nuntios Latos
+## Adde monita administratoris ad Dashboard clientium tuorum per Nuntios Latos {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Utendo facultate nuntiorum latorum Ultimate Multisite, potes **monita administratoris** ad Dashboard administratoris subsitus usoris tui addere.
 
@@ -51,7 +51,7 @@ Postquam nuntium tuum creaveris, deinde puga **Mitte** premere potes.
 
 Et hoc est. Monitum administratoris statim in Dashboard usoris tui apparere debet.
 
-## Mitte epistulas electronicas clientibus tuis
+## Mitte epistulas electronicas clientibus tuis {#send-emails-to-your-customers}
 
 Utendo facultate nuntiorum latorum Ultimate Multisite, epistulam electronicam usoribus tuis mittere potes. Optionem habes ut epistulam electronicam solum certis usoribus mittas, aut gregem usorum certum destines secundum productum vel consilium sub quo subscripserunt.
 
@@ -81,11 +81,11 @@ Postquam nuntium tuum creaveris, puga **Mitte** premere potes.
 
 Et ita facile est epistulam electronicam ad usores finales tuos mittere utendo facultate nuntiorum latorum.
 
-## Epistulae electronicae systematis
+## Epistulae electronicae systematis {#system-emails}
 
 Epistulae electronicae systematis in Ultimate Multisite sunt illae **notificationes automaticae** a systemate missae post certas actiones sicut registrationem, solutionem, assignationem dominii, etc. Hae epistulae electronicae ex optionibus Ultimate Multisite recenseri vel mutari possunt. Etiam cum facultate venit quae tibi permittet optiones exstantes ex alia institutione Ultimate Multisite restituere et importare.
 
-### Restitutio & Importatio
+### Restitutio & Importatio {#resetting--importing}
 
 Novae versiones Ultimate Multisite, sicut etiam additamenta, novas epistulas electronicas interdum registrare possunt et registrabunt.
 
@@ -93,7 +93,7 @@ Ut conflictus aliaque problemata vitentur, **nova exemplaria epistularum electro
 
 Tamen, super administratores et agentes has epistulas electronicas nuper registratas per instrumentum importationis importare possunt. Ille processus novam epistulam electronicam systematis creabit cum contento et configuratione novi exemplaris epistulae electronicae, permittens super administratori quascumque modificationes velit facere aut eas sicut sunt servare.
 
-#### Quomodo epistulas electronicas systematis importare
+#### Quomodo epistulas electronicas systematis importare {#how-to-import-system-emails}
 
 Vade ad paginam Optionum Ultimate Multisite tuam et procede ad tab **Epistulae electronicae**.
 
@@ -111,7 +111,7 @@ Deinde, optiones Importa Epistulas Electronicas commutare potes ut videas quae e
 
 <!-- Captura non praesto: fenestra modalis Reponendi et Importandi cum optionibus Importandi Epistulas expansis -->
 
-#### Epistulae Electronicae Systematis Reponendae
+#### Epistulae Electronicae Systematis Reponendae {#reseting-system-emails}
 
 Aliquando intelleges mutationes quas in dato exemplari epistulae electronicae fecisti tibi iam non prodesse, atque velis illud ad suum **statum praedefinitum** reponere.
 

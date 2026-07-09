@@ -3,13 +3,13 @@ title: Stiùireadh Amalachaidh
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Stiùireadh Amalachaidh
+# Stiùireadh Amalachaidh {#integration-guide}
 
 Tha an stiùireadh seo a’ còmhdach phàtranan amalachaidh cumanta le Ultimate Multisite, a’ gabhail a-steach ceangal ri seirbheisean taobh a-muigh, togail gheataichean pàighidh gnàthaichte, agus làimhseachadh webhooks.
 
 Airson bun-structar màladair iomallaichte, faic [Amalachadh Ioma-mhàladaireachd](./multi-tenancy) airson stiùireadh air bootstrap màladair uachdaranach, dearbhadh imrich, SSO, agus toirt air falbh.
 
-## Amalachadh CRM
+## Amalachadh CRM {#crm-integration}
 
 Sioncronaich dàta luchd-ceannach ris an CRM agad nuair a chlàraicheas luchd-ceannach ùra:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Amalachadh Anailitigs
+## Amalachadh Anailitigs {#analytics-integration}
 
 Cum sùil air prìomh thachartasan gnìomhachais thar cuairt-beatha an neach-ceannach:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Na h-Ath Cheumannan
+## Na h-Ath Cheumannan {#next-steps}
 
 - [Leasachadh Geata Gnàthaichte](./custom-gateway) — Tog an geata pàighidh agad fhèin
 - [Làimhseachadh Webhooks](./webhooks) — Cruthaich endpoints webhook gnàthaichte

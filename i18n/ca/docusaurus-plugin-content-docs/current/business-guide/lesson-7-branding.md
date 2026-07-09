@@ -3,15 +3,15 @@ title: 'Lliçó 7: Fes-ho teu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Aula 7: Fes-ho teu
+# Aula 7: Fes-ho teu {#lesson-7-making-it-yours}
 
 Els teus clients mai han de sentir que estan utilitzant "un plugin de WordPress". Han de sentir que estan utilitzant FitSite, una plataforma construïda per la seva indústria. Aquesta aula cobreix la marca (branding), el *white-labeling* i com fer que la plataforma es senti com un producte propi.
 
-## On acab vam
+## On acab vam {#where-we-left-off}
 
 FitSite té un flux de caixa de pagament funcional que porta els propietaris de centres de fitness des de la selecció del pla fins a un lloc web actiu. Ara fem que tota l'experiència es senti com un producte coherent i de marca.
 
-## El domini de la teva plataforma
+## El domini de la teva plataforma {#your-platform-domain}
 
 La base de la teva marca és el teu domini. Per a FitSite:
 
@@ -19,7 +19,7 @@ La base de la teva marca és el teu domini. Per a FitSite:
 - **Llocs dels clients**: `nomdelcentre.fitsite.com` (subdomínis)
 - **Domínis personalitzats**: Els clients amb els plans Growth i Pro poden associar el seu propi domini
 
-### Configuració del domini
+### Configuració del domini {#setting-up-your-domain}
 
 1. Registra el teu domini de plataforma
 2. Direccional-lo al teu proveïdor d'hosting
@@ -28,11 +28,11 @@ La base de la teva marca és el teu domini. Per a FitSite:
 
 Consulta [Com configurar la mappatura de domínis](/user-guide/domain-mapping/how-to-configure-domain-mapping) per a instruccions detallades.
 
-## White-labeling l'experiència d'administració
+## White-labeling l'experiència d'administració {#white-labeling-the-admin-experience}
 
 Quan un propietari de centre de fitness inicia sessió al panell de control del seu lloc, ha de veure la teva marca, no la marca de WordPress o Ultimate Multisite.
 
-### Pàgina de connexió personalitzada
+### Pàgina de connexió personalitzada {#custom-login-page}
 
 Personalitza la pàgina de connexió de WordPress per mostrar:
 
@@ -40,7 +40,7 @@ Personalitza la pàgina de connexió de WordPress per mostrar:
 - Imatges de fons adequades per al sector fitness
 - Els colors de la teva marca
 
-### Branding del panell de control
+### Branding del panell de control {#dashboard-branding}
 
 Utilitza l'addon [Admin Page Creator](/addons/admin-page-creator) o CSS personalitzat per:
 
@@ -48,7 +48,7 @@ Utilitza l'addon [Admin Page Creator](/addons/admin-page-creator) o CSS personal
 - Personalitzar la paleta de colors de l'administració per fer-la coincidir amb la teva marca
 - Afegir un widget de panell de control personalitzat amb enllaços ràpids i recursos d'ajuda específics del sector fitness
 
-### Pàgines d'administració personalitzades
+### Pàgines d'administració personalitzades {#custom-admin-pages}
 
 Considera crear pàgines d'administració personalitzades que mostrin les accions més rellevants per als propietaris de centres de fitness:
 
@@ -58,11 +58,11 @@ Considera crear pàgines d'administració personalitzades que mostrin les accion
 
 Això redueix la curva d'aprenentatge posant accions específiques del sector al centre, en lloc de l'amagar en el menú estàndard de WordPress.
 
-## Branding de les teves comunicacions
+## Branding de les teves comunicacions {#branding-your-communications}
 
 Cada correu electrònic, factura i notificació ha de reforçar la teva marca.
 
-### Correus electrònics del sistema
+### Correus electrònics del sistema {#system-emails}
 
 Navega a **Ultimate Multisite > Settings > Emails** i personalitza tots els correus electrònics del sistema:
 
@@ -79,7 +79,7 @@ Correus electrònics clau per personalitzar:
 | Reçu de pagament | "Pagament rebut" | "Pagament de subscripció FitSite confirmat" |
 | Prova acabant | "La teva prova acaba aviat" | "La teva prova de FitSite acaba en 3 dies – mantingueu el vostre lloc web actiu" |
 
-### Factures
+### Factures {#invoices}
 
 Personalitza les plantilles de factures amb:
 
@@ -87,7 +87,7 @@ Personalitza les plantilles de factures amb:
 - Els teus detalls empresarials
 - Noms de productes específics del sector fitness (no IDs de plans genèrics)
 
-## El lloc web orientat al client
+## El lloc web orientat al client {#the-customer-facing-site}
 
 El teu domini principal (`fitsite.com`) necessita un lloc de mercatitzatge que venda la plataforma. Això és separat de l'administració de la xarxa Ultimate Multisite; és la cara pública del teu negoci.
 
@@ -103,7 +103,7 @@ Pàgines clau:
 Crea el teu lloc de mercatitzatge com a un lloc dins de la teva pròpia xarxa. Això et permet gestionar-lo des del mateix panell de control i demostra les capacitats de la teva pròpia plataforma.
 :::
 
-## Domini personalitzat per als clients
+## Domini personalitzat per als clients {#custom-domain-for-customers}
 
 Per als clients amb plans que inclouen domínis personalitzats, documenta el procés de manera clara:
 
@@ -113,7 +113,7 @@ Per als clients amb plans que inclouen domínis personalitzats, documenta el pro
 
 Crea un article d'ajuda o una entrada de base de coneixement específic per a aquest procés, escrit per propietaris de centres de fitness no tècnics.
 
-## La xarxa FitSite fins ara
+## La xarxa FitSite fins ara {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Preparat per al flux d'onboarding (pròxima aula)
 ```
 
-## El que vam construir en aquesta aula
+## El que vam construir en aquesta aula {#what-we-built-this-lesson}
 
 - **Domini de plataforma i DNS** configurats per una experiència de marca
 - **Administració *white-labeled*** amb marca FitSite en tot lloc

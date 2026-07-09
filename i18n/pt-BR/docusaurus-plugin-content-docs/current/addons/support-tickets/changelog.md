@@ -3,13 +3,13 @@ title: Registro de alterações dos Tickets de Suporte
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Changelog de Tickets de Suporte
+# Changelog de Tickets de Suporte {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Melhorado: Removido o diretório vendor/ do rastreamento do Git (já coberto por .gitignore), reduzindo o tamanho do repositório
 * Melhorado: Testado até WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Correção: Aceitar valores null em setters anuláveis do modelo de ticket
 * Correção: Armazenar todos os tickets em tabelas globais de toda a rede para suporte multisite adequado
 * Correção: Ocultar campos da equipe e corrigir redirecionamento de página em branco no formulário de novo ticket do cliente
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Melhorado: Carregar assets de frontend condicionalmente apenas nas páginas de tickets de suporte
 * Melhorado: Ignorar o autoloader do plugin quando o autoloader da raiz do Bedrock já carregou as dependências
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Adicionado: Funcionalidade completa de visualização de tickets para admin e frontend
 * Adicionado: Manipulador AJAX para envios de respostas a tickets
 * Adicionado: Suporte à funcionalidade de resposta a tickets com tratamento adequado de formulário
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Melhorado: Estrutura do banco de dados com classes adequadas de consulta e esquema para respostas e anexos
 * Melhorado: Migração para propriedades reais em vez de atributos para modelos de ticket
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Atualizado: Prefixo renomeado para ultimate-multisite para consistência
 * Atualizado: Padronização do domínio de texto
 * Corrigido: Pequenas correções de bugs e melhorias
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Lançamento inicial
 * Sistema completo de gerenciamento de tickets
 * Controle de acesso em vários níveis

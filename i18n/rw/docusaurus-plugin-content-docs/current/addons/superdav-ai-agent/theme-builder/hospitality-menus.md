@@ -3,15 +3,15 @@ title: Menyu z’Ubwakiranyi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menus za Hospitality
+# Menus za Hospitality {#hospitality-menus}
 
 Ikiranga cya **Hospitality Menus** cyemerera Theme Builder gukora no gushyira amapaji ya menus y'ibiribwa n'ibinyobwa afite imiterere itunganyijeho, ako kanya muri site yawe ya WordPress.
 
-## Incamake
+## Incamake {#overview}
 
 Theme Builder ubu ishobora gukora amapaji ya menu y'umwuga kandi atunganyije ku bucuruzi bwa hospitality burimo restaurants, cafes, bars, na serivisi za catering. Izi menus zinjizwa neza mu gishushanyo cya site yawe kandi zishobora kuvugururwa no gucungwa mu buryo bworoshye.
 
-## Ubwoko bwa Hospitality Bushyigikiwe
+## Ubwoko bwa Hospitality Bushyigikiwe {#supported-hospitality-types}
 
 - **Restaurants** — menus zo kurira aho bakorera serivisi yuzuye
 - **Cafes** — menus za kawa n'ibiribwa byoroheje
@@ -21,9 +21,9 @@ Theme Builder ubu ishobora gukora amapaji ya menu y'umwuga kandi atunganyije ku 
 - **Food Trucks** — menus za serivisi y'ibiribwa igendagenda
 - **Breweries and Wineries** — menus z'ibinyobwa zifite ibisobanuro
 
-## Imiterere ya Menu
+## Imiterere ya Menu {#menu-structure}
 
-### Ibyiciro bya Menu
+### Ibyiciro bya Menu {#menu-categories}
 
 Menus zitunganywa mu byiciro:
 
@@ -34,7 +34,7 @@ Menus zitunganywa mu byiciro:
 - **Beverages** — ibinyobwa (birimo inzoga n'ibitarimo inzoga)
 - **Specials** — ibyihariye bya buri munsi cyangwa ibihe by'umwaka
 
-### Imiterere y'Ikintu cya Menu
+### Imiterere y'Ikintu cya Menu {#menu-item-format}
 
 Buri kintu cya menu kirimo:
 
@@ -49,7 +49,7 @@ Buri kintu cya menu kirimo:
 }
 ```
 
-#### Imirima y'Ikintu
+#### Imirima y'Ikintu {#item-fields}
 
 | Umurima | Ubwoko | Ibisobanuro |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Buri kintu cya menu kirimo:
 | `allergens` | array | Ibishobora gutera allergies bikunze kuboneka (Nuts, Shellfish, n'ibindi) |
 | `availability` | string | Igihe kiboneka (Daily, Seasonal, n'ibindi) |
 
-## Gukora Hospitality Menus
+## Gukora Hospitality Menus {#creating-hospitality-menus}
 
-### Intambwe ya 1: Tanga Amakuru ya Menu
+### Intambwe ya 1: Tanga Amakuru ya Menu {#step-1-provide-menu-information}
 
 Bwira Theme Builder ibyerekeye menu yawe:
 
@@ -71,7 +71,7 @@ Kora menu ya restaurant kuri restaurant yanjye y'ibiribwa byo mu Butaliyani ifit
 ibyokurya bya pasta, ibyokurya nyamukuru, na desserts. Shyiramo ibiciro n'ibisobanuro.
 ```
 
-### Intambwe ya 2: Theme Builder Ikora Menu
+### Intambwe ya 2: Theme Builder Ikora Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Itunganya imiterere y'ibiciro n'ibisobanuro
 5. Yongeramo amakuru y'imirire n'aya allergens
 
-### Intambwe ya 3: Suzuma kandi Uhindure
+### Intambwe ya 3: Suzuma kandi Uhindure {#step-3-review-and-customize}
 
 Ushobora:
 
@@ -91,9 +91,9 @@ Ushobora:
 4. Kuvugurura ibisobanuro n'amakuru y'imirire
 5. Guhindura styling n'imiterere
 
-## Amahitamo yo Kwerekana Menu
+## Amahitamo yo Kwerekana Menu {#menu-display-options}
 
-### Paji ya Menu Yuzuye
+### Paji ya Menu Yuzuye {#full-menu-page}
 
 Paji yihariye yerekana menu yawe yose:
 
@@ -102,7 +102,7 @@ Paji yihariye yerekana menu yawe yose:
 - Imiterere yorohereza gucapa
 - Igishushanyo kijyana na mobile
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Shyira ibice bya menu ku yandi mapaji:
 
@@ -111,7 +111,7 @@ Shyira ibice bya menu ku yandi mapaji:
 - Menu y'ibinyobwa kuri paji ya bar
 - Kugaragaza desserts kuri footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Kora menu ya PDF ishobora gukururwa:
 
@@ -120,9 +120,9 @@ Kora menu ya PDF ishobora gukururwa:
 - Irimo amashusho n'ibisobanuro
 - Yoroshye gusangiza no kohereza kuri email
 
-## Amakuru y'Imirire n'aya Allergen
+## Amakuru y'Imirire n'aya Allergen {#dietary-and-allergen-information}
 
-### Ibiranga Imirire
+### Ibiranga Imirire {#dietary-attributes}
 
 Shyira ikimenyetso ku bintu ukoresheje amakuru y'imirire:
 
@@ -134,7 +134,7 @@ Shyira ikimenyetso ku bintu ukoresheje amakuru y'imirire:
 - **Low-Carb** — carbohydrates zagabanyijwe
 - **High-Protein** — bikungahaye kuri protein
 
-### Imiburo ya Allergen
+### Imiburo ya Allergen {#allergen-warnings}
 
 Shyiramo allergens zikunze kuboneka:
 
@@ -147,9 +147,9 @@ Shyiramo allergens zikunze kuboneka:
 - **Gluten** — ingano n'ibinyampeke birimo gluten
 - **Sesame** — imbuto za sesame n'amavuta yayo
 
-## Gucunga Menu
+## Gucunga Menu {#menu-management}
 
-### Kuvugurura Ibiciro
+### Kuvugurura Ibiciro {#updating-prices}
 
 Vugurura ibiciro bya menu mu buryo bworoshye:
 
@@ -159,7 +159,7 @@ Vugurura ibiciro bya menu mu buryo bworoshye:
 4. Bika impinduka
 5. Impinduka zigaragara ako kanya kuri site yawe
 
-### Kongeramo Ibintu by'Ibihe by'Umwaka
+### Kongeramo Ibintu by'Ibihe by'Umwaka {#adding-seasonal-items}
 
 Kora impinduka za menu zijyanye n'ibihe by'umwaka:
 
@@ -169,7 +169,7 @@ Kora impinduka za menu zijyanye n'ibihe by'umwaka:
 4. Teganya amatariki yo kuboneka
 5. Bizerekanwa mu buryo bwikora muri icyo gihe
 
-### Gucunga Ibyihariye
+### Gucunga Ibyihariye {#managing-specials}
 
 Erekana ibyihariye bya buri munsi cyangwa buri cyumweru:
 
@@ -179,7 +179,7 @@ Erekana ibyihariye bya buri munsi cyangwa buri cyumweru:
 4. Bivugurure buri munsi cyangwa buri cyumweru
 5. Bika ibyihariye bishaje mu bubiko
 
-## Kwihuza na Theme Builder
+## Kwihuza na Theme Builder {#integration-with-theme-builder}
 
 Iyo ukoresha Theme Builder kuri site za hospitality:
 
@@ -189,9 +189,9 @@ Iyo ukoresha Theme Builder kuri site za hospitality:
 4. **Kunoza mobile** — menus zigaragara neza kuri telefoni
 5. **Kunoza SEO** — menus ziba zinogeye search-engine
 
-## Imikorere Myiza
+## Imikorere Myiza {#best-practices}
 
-### Igishushanyo cya Menu
+### Igishushanyo cya Menu {#menu-design}
 
 - **Itunganywa risobanutse** — imiterere y'ibyiciro ifite logique
 - **Ibisobanuro bisomeka** — biryoshye kandi bitanga amakuru
@@ -199,7 +199,7 @@ Iyo ukoresha Theme Builder kuri site za hospitality:
 - **Amafoto y'umwuga** — amashusho y'ibiribwa afite ubwiza bwo hejuru
 - **Umwanya w'ubusa** — ntuzuzuze cyane paji
 
-### Ibirimo
+### Ibirimo {#content}
 
 - **Ibisobanuro nyabyo** — sobanura ibintu uko biri
 - **Garagaza ibyihariye** — tumaho ibyihariye bigaragara
@@ -207,7 +207,7 @@ Iyo ukoresha Theme Builder kuri site za hospitality:
 - **Vugurura kenshi** — komeza ibiciro n'ibintu bigezweho
 - **Koresha imvugo ikurura ipfa** — tuma ibintu byumvikana biryoshye
 
-### Uburyo bwo Kugera ku Bintu
+### Uburyo bwo Kugera ku Bintu {#accessibility}
 
 - **Fonts zisomeka** — koresha inyuguti zisobanutse kandi zisomeka
 - **Contrast ihagije** — menya neza ko inyandiko isomeka
@@ -215,9 +215,9 @@ Iyo ukoresha Theme Builder kuri site za hospitality:
 - **Imiburo ya allergen** — erekana allergens ahagaragara
 - **Ijyana na mobile** — gerageza ku bikoresho byose
 
-## Ingero
+## Ingero {#examples}
 
-### Imiterere ya Menu ya Restaurant
+### Imiterere ya Menu ya Restaurant {#restaurant-menu-structure}
 
 ```
 Ibyo kurya bibanza
@@ -241,7 +241,7 @@ Ibyo kurya bisoza
 └── Gelato Selection
 ```
 
-### Imiterere ya Menu ya Cafe
+### Imiterere ya Menu ya Cafe {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Ibiranga bifitanye isano
+## Ibiranga bifitanye isano {#related-features}
 
 - [Kora Menu](../abilities/create-menu.md) — kora menu zo kuyobora
 - [Icyerekezo cy'Igishushanyo](./design-direction.md) — hindura igishushanyo cy'urubuga rwawe

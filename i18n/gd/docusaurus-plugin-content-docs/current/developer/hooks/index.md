@@ -3,11 +3,11 @@ title: Iomradh air Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Iomradh Hooks
+# Iomradh Hooks {#hooks-reference}
 
 Sgrìobhainnean fèin-ghinte airson nan **59 gnìomhan** agus **118 sìoltachain** uile ann an Ultimate Multisite.
 
-## Gnìomhan
+## Gnìomhan {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Ruithidh e ron ath-stiùireadh dearbhaidh.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Ruithidh e sa bhad mus tèid a’ bhriosgaid dearbhaidh a shuidheachadh.
@@ -70,7 +70,7 @@ Sgrìobhainnean fèin-ghinte airson nan **59 gnìomhan** agus **118 sìoltachain
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Thèid a chur an gnìomh às dèidh nì a bhith air a stòradh san stòr-dàta.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Leig le luchd-leasachaidh phlugan gnìomhan a chur ris a’ phròiseas dì-ghlasaidh.
 
-## Criathragan
+## Criathragan {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Criathraich fad ùine crìochnachaidh a’ bhriosgaid dearbhaidh.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Criathraich sgeama ath-stiùiridh an dearbhaidh.

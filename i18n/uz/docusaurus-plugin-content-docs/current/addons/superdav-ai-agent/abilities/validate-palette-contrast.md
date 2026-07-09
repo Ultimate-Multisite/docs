@@ -3,15 +3,15 @@ title: Palitra kontrastini tekshirish
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palitra kontrastini tekshirish
+# Palitra kontrastini tekshirish {#validate-palette-contrast}
 
 **Validate Palette Contrast** qobiliyati dizayn palitrangizdagi rang juftliklarini theme'ingizga qo‘llashdan oldin WCAG (Web Content Accessibility Guidelines) talablariga muvofiqligini tekshiradi.
 
-## Umumiy ko‘rinish
+## Umumiy ko‘rinish {#overview}
 
 Bu qobiliyat matn va fon ranglari orasidagi kontrast nisbatlarini tekshirish orqali site'ingiz rang sxemasi maxsus imkoniyatlar standartlariga mos kelishini ta’minlaydi. U ko‘rishida nuqsoni bo‘lgan foydalanuvchilar uchun o‘qish qiyin bo‘lishi mumkin bo‘lgan rang kombinatsiyalarining oldini olishga yordam beradi.
 
-## Kiritish formati
+## Kiritish formati {#input-format}
 
 Qobiliyat kirish sifatida rang palitrasini qabul qiladi:
 
@@ -35,7 +35,7 @@ Qobiliyat kirish sifatida rang palitrasini qabul qiladi:
 }
 ```
 
-### Parametrlar
+### Parametrlar {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Qobiliyat kirish sifatida rang palitrasini qabul qiladi:
 | `wcag_level` | string | No | WCAG muvofiqlik darajasi: "A", "AA" (standart) yoki "AAA" |
 | `pairs_to_check` | array | No | Tekshiriladigan aniq rang juftliklari (masalan, `["primary-text", "background-text"]`) |
 
-## Tekshiriladigan WCAG darajalari
+## Tekshiriladigan WCAG darajalari {#wcag-levels-checked}
 
 Qobiliyat kontrast nisbatlarini WCAG standartlariga muvofiq tekshiradi:
 
@@ -56,7 +56,7 @@ Qobiliyat kontrast nisbatlarini WCAG standartlariga muvofiq tekshiradi:
 - **Oddiy matn** — 18pt dan kichik matn (yoki 14pt qalin)
 - **Katta matn** — 18pt yoki undan katta matn (yoki 14pt qalin yoki undan katta)
 
-## Chiqish sxemasi
+## Chiqish sxemasi {#output-schema}
 
 Qobiliyat batafsil tekshiruv hisobotini qaytaradi:
 
@@ -95,7 +95,7 @@ Qobiliyat batafsil tekshiruv hisobotini qaytaradi:
 }
 ```
 
-### Chiqish maydonlari
+### Chiqish maydonlari {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Qobiliyat batafsil tekshiruv hisobotini qaytaradi:
 | `status` | string | Har bir juftlik uchun "pass" yoki "fail" |
 | `recommendations` | array | Muvaffaqiyatsiz juftliklarni yaxshilash bo‘yicha tavsiyalar |
 
-## Foydalanish misoli
+## Foydalanish misoli {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Qobiliyat barcha rang kombinatsiyalarini tekshiradi va qaytaradi:
 - ✅ Fon + matn: 12.1:1 nisbat (WCAG AAA dan o‘tadi)
 - Umumiy: WCAG AA ga mos
 
-## Theme Builder bilan integratsiya
+## Theme Builder bilan integratsiya {#integration-with-theme-builder}
 
 Theme Builder'ning dizayn-yo‘nalish tanlovidan foydalanganda, Validate Palette Contrast qobiliyati:
 
@@ -129,7 +129,7 @@ Theme Builder'ning dizayn-yo‘nalish tanlovidan foydalanganda, Validate Palette
 4. Mos kelmaydigan juftliklar uchun tavsiyalar beradi
 5. Maxsus imkoniyatlarga mos bo‘lmagan rang sxemalarini qo‘llashning oldini oladi
 
-## Eng yaxshi amaliyotlar
+## Eng yaxshi amaliyotlar {#best-practices}
 
 - **AA darajasidan boshlang** — WCAG AA aksariyat website'lar uchun standartdir
 - **Qo‘llashdan oldin sinab ko‘ring** — dizaynga yakuniy qaror qilishdan oldin palitrangizni tekshiring
@@ -137,7 +137,7 @@ Theme Builder'ning dizayn-yo‘nalish tanlovidan foydalanganda, Validate Palette
 - **Foydalanuvchi afzalliklarini hisobga oling** — ayrim foydalanuvchilarda qo‘shimcha rang sezgirligi bo‘lishi mumkin
 - **Kontrast tekshiruvchilaridan foydalaning** — tasdiqlash uchun bu qobiliyatni brauzer vositalari bilan birga qo‘llang
 
-## Muvaffaqiyatsiz juftliklar va tavsiyalar
+## Muvaffaqiyatsiz juftliklar va tavsiyalar {#failing-pairs-and-recommendations}
 
 Agar rang juftligi tekshiruvdan o‘tmasa, qobiliyat tavsiyalar beradi:
 
@@ -155,7 +155,7 @@ Agar rang juftligi tekshiruvdan o‘tmasa, qobiliyat tavsiyalar beradi:
 }
 ```
 
-## Bog‘liq qobiliyatlar
+## Bog‘liq qobiliyatlar {#related-abilities}
 
 - [Logo SVG yaratish](./generate-logo-svg.md) — tekshirilgan rang palitrangiz bilan logotiplar yarating
 - [Menu yaratish](./create-menu.md) — maxsus imkoniyatlarga mos ranglar bilan navigatsiya yarating

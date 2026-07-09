@@ -4,13 +4,13 @@ title: Aðgerð - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Aðgerð: wp_ultimo_gocardless_deactivation
+# Aðgerð: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
 
 Leyfir öðrum hlutum pluginsins að tengja sínar rútínur fyrir afvirkjun
 
-### Síðan
+### Síðan {#since}
 
 - 1.9.6
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/class-hooks.php#L101) í línu 101

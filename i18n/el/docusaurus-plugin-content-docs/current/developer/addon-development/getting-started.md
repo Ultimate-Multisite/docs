@@ -3,9 +3,9 @@ title: Πρώτα βήματα με την ανάπτυξη πρόσθετων
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Ανάπτυξη πρόσθετου
+# Ανάπτυξη πρόσθετου {#addon-development}
 
-## Δομή πρόσθετου
+## Δομή πρόσθετου {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Αρχεία προτύπων
 ```
 
-## Πρότυπο κύριου αρχείου πρόσθετου
+## Πρότυπο κύριου αρχείου πρόσθετου {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Παράδειγμα προσαρμοσμένου μοντέλου
+## Παράδειγμα προσαρμοσμένου μοντέλου {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Ενσωμάτωση σελίδας διαχείρισης
+## Ενσωμάτωση σελίδας διαχείρισης {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Δοκιμή του πρόσθετού σας
+## Δοκιμή του πρόσθετού σας {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Σημεία επέκτασης v2.13.0
+## Σημεία επέκτασης v2.13.0 {#v2130-extension-points}
 
 Το Ultimate Multisite v2.13.0 προσθέτει αρκετά σημεία επέκτασης που είναι χρήσιμα για πρόσθετα που ενσωματώνονται με ανεξάρτητους ενοικιαστές, domains checkout ή αυτοματοποίηση DNS παρόχου φιλοξενίας.
 
-### SSO και URL διαχείρισης κύριου site
+### SSO και URL διαχείρισης κύριου site {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Βασικά domains φόρμας checkout
+### Βασικά domains φόρμας checkout {#checkout-form-base-domains}
 
 Χρησιμοποιήστε το `wu_checkout_form_base_domains` όταν το πρόσθετό σας παρέχει πρόσθετα κοινόχρηστα βασικά domains που θα πρέπει να συμπεριφέρονται σαν domains **URL site** της φόρμας checkout αντί για προσαρμοσμένες αντιστοιχίσεις ανά site:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Το Ultimate Multisite κανονικοποιεί αυτούς τους hosts και παραλείπει τις αυτόματες εγγραφές αντιστοιχισμένου domain ανά site για αυτούς.
 
-### Αυτόματη δημιουργία εγγραφών domain
+### Αυτόματη δημιουργία εγγραφών domain {#automatic-domain-record-creation}
 
 Χρησιμοποιήστε το `wu_should_create_domain_record_for_site` όταν το πρόσθετό σας χρειάζεται να καταστείλει ή να αναβάλει την αυτόματη δημιουργία εγγραφής domain για ένα νέο site:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Οι ενσωματώσεις παρόχων φιλοξενίας που ακούν το `wu_add_subdomain` μπορούν να δημιουργούν εγγραφές DNS στην πλευρά του παρόχου όταν δημιουργούνται sites. Αν δεν έχει καταχωριστεί καμία ενσωμάτωση για αυτήν την ενέργεια, το Ultimate Multisite παραλείπει την κενή εργασία παρασκηνίου.
 
-## Επόμενα βήματα
+## Επόμενα βήματα {#next-steps}
 
 - Ανατρέξτε στην [Αναφορά Hooks](/developer/hooks) για διαθέσιμες ενέργειες και φίλτρα
 - Ελέγξτε την [Επισκόπηση REST API](/developer/rest-api/overview) για ενσωμάτωση API

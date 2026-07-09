@@ -3,35 +3,35 @@ title: Intervju za otkrivanje
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Intervju za otkrivanje (Discovery Interview)
+# Intervju za otkrivanje (Discovery Interview) {#discovery-interview}
 
 **Intervju za otkrivanje** je prvi korak u procesu dizajna Theme Builder-a. On prikuplja informacije o vašoj web stranici, poslovanju i preferencijama dizajna kako bi kreirao personalizovanu temu.
 
-## Pregled
+## Pregled {#overview}
 
 Intervju za otkrivanje vas vodi kroz niz pitanja kako bi razumio vaš brend, ciljnu publiku i dizajnerske ciljeve. U verziji 1.16.0, intervju sada uključuje **korak za učitavanje fotografija**, što vam omogućava da pružite vizuelnu inspiraciju za dizajn.
 
-## Koraci intervjua
+## Koraci intervjua {#interview-steps}
 
-### 1. Poslovne informacije
+### 1. Poslovne informacije {#1-business-information}
 
 - Naziv stranice i slogan
 - Vrsta poslovanja ili industrija
 - Glavni poslovni ciljevi
 - Opis ciljne publike
 
-### 2. Dizajnerske preferencije
+### 2. Dizajnerske preferencije {#2-design-preferences}
 
 - Preferirana paleta boja
 - Dizajnerski stil (modern, klasičan, minimalistički, igran, itd.)
 - Inspiracioni sajtovi ili brendovi
 - Obavezni elementi dizajna
 
-### 3. Učitavanje fotografija (Novo u v1.16.0)
+### 3. Učitavanje fotografija (Novo u v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Učitajte jednu ili više fotografija kako biste utjecali na smjer dizajna:
 
-#### Prihvaćeni formati
+#### Prihvaćeni formati {#accepted-formats}
 
 | Format | Ekstenzija | Detalji |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Učitajte jednu ili više fotografija kako biste utjecali na smjer dizajna:
 | **WebP** | `.webp` | Moderni format, manji fajl veličine |
 | **GIF** | `.gif` | Samo statičke slike (bez animacije) |
 
-#### Zahtjevi za fajlove
+#### Zahtjevi za fajlove {#file-requirements}
 
 - **Maksimalna veličina fajla:** 10 MB
 - **Minimalne dimenzije:** 400 × 300 piksela
 - **Preporučene dimenzije:** 1200 × 800 piksela ili veće
 - **Aspektno omjer:** Acceptabilan je bilo koji omjer
 
-#### Kako fotografije utječu na smjer dizajna
+#### Kako fotografije utječu na smjer dizajna {#how-photos-influence-design-direction}
 
 Fotografije koje učitate pomažu Theme Builder-u da razumije:
 
@@ -57,21 +57,21 @@ Fotografije koje učitate pomažu Theme Builder-u da razumije:
 - **Dizajnerski elementi** — uzorci, teksture i kompozicioni stilovi
 - **Inspiracija tipografijom** — fontovi koji dopunjuju vizuelnu temu
 
-### 4. Struktura sadržaja
+### 4. Struktura sadržaja {#4-content-structure}
 
 - Glavne stranice koje su potrebne (Početna, O nama, Usluge, Kontakt, itd.)
 - Da li je potreban blog ili vijesti dio
 - Da li je potrebna e-commerce funkcionalnost
 - Posebne značajke ili integracije
 
-### 5. Pregled i potvrda
+### 5. Pregled i potvrda {#5-review-and-confirmation}
 
 - Sažetak svih pruženih informacija
 - Potvrda prije nego što počinje generisanje dizajna
 
-## Najbolje prakse za učitavanje fotografija
+## Najbolje prakse za učitavanje fotografija {#photo-upload-best-practices}
 
-### Šta učitati
+### Šta učitati {#what-to-upload}
 
 - **Inspiracija brenda** — logotipi, palete boja ili smjernice brenda
 - **Sajtovi konkurencije** — snimke zaslita sa sajtova koje divite
@@ -80,7 +80,7 @@ Fotografije koje učitate pomažu Theme Builder-u da razumije:
 - **Fotografije tima ili ureda** — za lični ili profesionalni brending
 - **Lifestyle slike** — koje predstavljaju vašu ciljnu publiku
 
-### Šta izbjegavati
+### Šta izbjegavati {#what-to-avoid}
 
 - **Nisko-kvalitetne slike** — zamućene ili pikselizovane fotografije
 - **Nepovezane slike** — fotografije koje ne predstavljaju vaš brend
@@ -88,7 +88,7 @@ Fotografije koje učitate pomažu Theme Builder-u da razumije:
 - **Materijal zaštićen autorskim pravima** — osigurajte da imate prava za korištenje slika
 - **Animirane GIF slike** — obrađuju se samo statične slike
 
-### Savjeti za najbolje rezultate
+### Savjeti za najbolje rezultate {#tips-for-best-results}
 
 1. **Učitajte 2-3 slike** — više slika pruža bolji kontekst
 2. **Koristite visokokvalitetne fotografije** — najbolje funkcionišu jasne, dobro osvijetljene slike
@@ -96,7 +96,7 @@ Fotografije koje učitate pomažu Theme Builder-u da razumije:
 4. **Dajte kontekst** — kratko opišite zašto ste izabrali svaku sliku
 5. **Budite specifični** — ako vam se sviđa određeni element, ukazujte na njega
 
-## Izlaz dizajnerskog smjera
+## Izlaz dizajnerskog smjera {#design-direction-output}
 
 Nakon Intervjua za otkrivanje, Theme Builder generiše:
 
@@ -106,7 +106,7 @@ Nakon Intervjua za otkrivanje, Theme Builder generiše:
 - **Vizuelne elemente** — ikone, uzorci i dekorativni elementi
 - **Mood board** — vizuelna reprezentacija dizajnerskog smjera
 
-## Sljedeći koraci
+## Sljedeći koraci {#next-steps}
 
 Nakon završetka Intervjua za otkrivanje:
 
@@ -115,7 +115,7 @@ Nakon završetka Intervjua za otkrivanje:
 3. Nastavite na korak [Design Direction](./design-direction.md)
 4. Theme Builder kreira vašu prilagođenu temu
 
-## Povezana dokumentacija
+## Povezana dokumentacija {#related-documentation}
 
 - [Design Direction](./design-direction.md) — pregledajte i usavršite svoj dizajn
 - [Hospitality Menus](./hospitality-menus.md) — kreirajte strukturirane stranice menija

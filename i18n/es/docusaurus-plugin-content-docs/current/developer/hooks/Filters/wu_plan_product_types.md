@@ -7,24 +7,24 @@ title: |-
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filter: wu_plan_product_types
+# Filter: wu_plan_product_types {#filter-wuplanproducttypes}
 
 Filtra los tipos de producto que deben tratarse como planes.
 
 Este filtro permite a los complementos registrar tipos de producto adicionales que deben reconocerse como planes en la validación y segregación.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
 | $plan_types | `array` | Array de tipos de producto que deben tratarse como planes. |
 
-### Desde
+### Desde {#since}
 
 - 2.3.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/functions/product.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/product.php#L196) en la línea 196
 
-## Devuelve
+## Devuelve {#returns}

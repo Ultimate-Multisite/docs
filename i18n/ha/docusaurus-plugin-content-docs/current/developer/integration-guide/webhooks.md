@@ -3,11 +3,11 @@ title: Gudanar da Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gudanar da Webhook
+# Gudanar da Webhook {#webhook-handling}
 
 Ƙirƙiri wuraren ƙarshen webhook na musamman don karɓar abubuwa daga ayyukan waje da daidaita bayanai da Ultimate Multisite.
 
-## Wurin Ƙarshen Webhook na Musamman
+## Wurin Ƙarshen Webhook na Musamman {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Abubuwan La'akari na Tsaro
+## Abubuwan La'akari na Tsaro {#security-considerations}
 
 - Koyaushe tabbatar da sa hannun webhook ta amfani da HMAC ko sirrin da aka raba
 - Yi amfani da `permission_callback` a kan hanyar REST ɗinka — kada ka taɓa saita shi zuwa `__return_true` a yanayin samarwa

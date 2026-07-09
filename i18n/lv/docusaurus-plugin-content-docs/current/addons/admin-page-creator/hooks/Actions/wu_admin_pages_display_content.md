@@ -4,19 +4,19 @@ title: Darbība - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Darbība: wu_admin_pages_display_content
+# Darbība: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
 
 Attēlot pielāgota redaktora saturu.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
 | $ | `\WU_Admin_Page` | Admin lapas objekts |
 
-### Kopš
+### Kopš {#since}
 
 - 1.0.1
-### Avots
+### Avots {#source}
 
 Definēts [`views/template/page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/template/page.php#L53) 53. rindā

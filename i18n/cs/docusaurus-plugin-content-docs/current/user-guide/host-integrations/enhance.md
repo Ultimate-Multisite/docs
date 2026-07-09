@@ -3,33 +3,33 @@ title: Vylepšete integraci ovládacího panelu
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Integrace s Enhance Control Panel
+# Integrace s Enhance Control Panel {#enhance-control-panel-integration}
 
-## Přehled
+## Přehled {#overview}
 Enhance je moderní ovládací panel, který poskytuje výkonné možnosti automatizace a správy hostingu. Tato integrace umožňuje automatickou synchronizaci domén a správu SSL certifikátů mezi Ultimate Multisite a Enhance Control Panel.
 
 **Související diskuze:** Podívejte se na [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265), kde najdete tipy od komunity a další informace.
 
-## Funkce
+## Funkce {#features}
 - Automatická synchronizace domén při jejich mapování v Ultimate Multisite
 - Automatické vydávání SSL certifikátů přes LetsEncrypt, jakmile DNS záznam funguje
 - Podpora subdomén pro sítě běžící v režimu subdomén
 - Odstranění domény při smazání mapování
 - Testování připojení pro ověření API přihlašovacích údajů
 
-## Požadavky
+## Požadavky {#requirements}
 
-### Systémové požadavky
+### Systémové požadavky {#system-requirements}
 - Nainstalovaný a přístupný Enhance Control Panel
 - WordPress Multisite instalace hostovaná na serveru Enhance nebo k němu připojená
 - Webový server Apache (Enhance aktuálně podporuje konfigurace Apache; LiteSpeed Enterprise je dostupný za sníženou cenu)
 
-### Přístup k API
+### Přístup k API {#api-access}
 Pro vytvoření API tokenů musíte mít administrátorský přístup k Enhance Control Panel.
 
-## Získání API přihlašovacích údajů
+## Získání API přihlašovacích údajů {#getting-your-api-credentials}
 
-### 1. Vytvoření API tokenu
+### 1. Vytvoření API tokenu {#1-create-an-api-token}
 
 1. Přihlaste se do Enhance Control Panel jako administrátor
 2. Klikněte na **Settings** v navigačním menu
@@ -44,7 +44,7 @@ Pro vytvoření API tokenů musíte mít administrátorský přístup k Enhance 
 
 Po vytvoření se zobrazí váš **Access Token** a **Organization ID**. **Okamžitě si je uložte**, protože token se zobrazí pouze jednou.
 
-### 2. Zjištění Organization ID
+### 2. Zjištění Organization ID {#2-get-your-organization-id}
 
 Organization ID je zobrazeno na stránce Access Tokens v modrém informačním poli s označením „Org ID: {vaše_id}".
 
@@ -55,7 +55,7 @@ Organization ID zákazníka můžete také zjistit takto:
 2. Klikněte na **Manage customer** u příslušného zákazníka
 3. Podívejte se na URL – Organization ID jsou alfanumerické znaky za `/customers/`
 
-### 3. Zjištění Server ID
+### 3. Zjištění Server ID {#3-get-your-server-id}
 
 Pro zjištění Server ID (potřebného pro operace s doménami):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID má formát UUID: `00000000-0000-0000-0000-000000000000`
 
-### 4. Zjištění URL API
+### 4. Zjištění URL API {#4-get-your-api-url}
 
 URL vašeho API je URL vašeho Enhance Control Panel s přidanou cestou `/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Použití pouze domény bez `/api/`
 - Použití HTTP místo HTTPS (HTTPS je vyžadováno z bezpečnostních důvodů)
 
-## Konfigurace
+## Konfigurace {#configuration}
 
-### Povinné konstanty
+### Povinné konstanty {#required-constants}
 
 Přidejte následující konstanty do souboru `wp-config.php`:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Nastavení pomocí průvodce integrací
+### Nastavení pomocí průvodce integrací {#setup-via-integration-wizard}
 
 1. V administraci WordPressu přejděte na **Ultimate Multisite** > **Settings**
 2. Přejděte na kartu **Integrations**
@@ -112,17 +112,17 @@ Můžete si vybrat:
 - Nechat průvodce automaticky vložit konstanty do souboru `wp-config.php`
 - Zkopírovat definice konstant a přidat je ručně
 
-## Další konfigurace WordPressu
+## Další konfigurace WordPressu {#additional-wordpress-configuration}
 
 Na základě zpětné vazby od komunity ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)) může být potřeba nakonfigurovat tato další nastavení:
 
-### Konfigurace .htaccess
+### Konfigurace .htaccess {#htaccess-configuration}
 
 Pokud máte problémy s mapováním domén:
 1. Smažte původní Enhance soubor `.htaccess`
 2. Nahraďte ho standardním WordPress Multisite souborem `.htaccess`
 
-### Konstanty pro cookies
+### Konstanty pro cookies {#cookie-constants}
 
 Přidejte tyto konstanty do `wp-config.php` pro správné zpracování cookies napříč mapovanými doménami:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Jak to funguje
+## Jak to funguje {#how-it-works}
 
-### Při mapování domény
+### Při mapování domény {#when-a-domain-is-mapped}
 
 1. Uživatel namapuje vlastní doménu v Ultimate Multisite (nebo je vytvořen nový web v režimu subdomén)
 2. Integrace odešle POST požadavek na API Enhance: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Když DNS směřuje na váš server, Enhance automaticky vydá SSL certifikát přes LetsEncrypt
 5. Doména se stane aktivní s HTTPS
 
-### Při odstranění domény
+### Při odstranění domény {#when-a-domain-is-removed}
 
 1. Mapování domény je smazáno v Ultimate Multisite
 2. Integrace se dotáže Enhance na ID domény
 3. Je odeslán DELETE požadavek na: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance odstraní doménu z konfigurace vašeho serveru
 
-### Kontrola DNS a SSL
+### Kontrola DNS a SSL {#dns-and-ssl-checking}
 
 Ultimate Multisite obsahuje vestavěnou kontrolu DNS a SSL:
 - Interval kontroly můžete nastavit v **Domain Mapping Settings** (výchozí: 300 sekund/5 minut)
@@ -157,9 +157,9 @@ Ultimate Multisite obsahuje vestavěnou kontrolu DNS a SSL:
 - Platnost SSL certifikátu se kontroluje automaticky
 - Enhance zajišťuje vydávání SSL automaticky, takže ruční konfigurace SSL není potřeba
 
-## Ověření nastavení
+## Ověření nastavení {#verifying-setup}
 
-### Test připojení
+### Test připojení {#test-the-connection}
 
 1. V průvodci integrací použijte krok **Test Connection**
 2. Plugin se pokusí vypsat domény na vašem serveru
@@ -169,7 +169,7 @@ Ultimate Multisite obsahuje vestavěnou kontrolu DNS a SSL:
    - Server ID je platné
    - Oprávnění jsou správně nastavena
 
-### Po namapování domény
+### Po namapování domény {#after-mapping-a-domain}
 
 1. Namapujte testovací doménu v Ultimate Multisite
 2. Zkontrolujte logy Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Ultimate Multisite obsahuje vestavěnou kontrolu DNS a SSL:
    - Nová doména by se měla objevit v seznamu
 4. Jakmile se DNS zpropaguje, ověřte, že SSL certifikát byl automaticky vydán
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
-### Problémy s připojením k API
+### Problémy s připojením k API {#api-connection-issues}
 
 **Chyba: „Failed to connect to Enhance API"**
 - Ověřte, že `WU_ENHANCE_API_URL` obsahuje na konci `/api/`
@@ -198,7 +198,7 @@ Ultimate Multisite obsahuje vestavěnou kontrolu DNS a SSL:
 - Ujistěte se, že Server ID má platný formát UUID
 - Potvrďte, že server existuje ve vašem Enhance panelu
 
-### Doména nebyla přidána
+### Doména nebyla přidána {#domain-not-added}
 
 **Zkontrolujte logy:**
 1. Přejděte na **Ultimate Multisite** > **Logs**
@@ -211,7 +211,7 @@ Ultimate Multisite obsahuje vestavěnou kontrolu DNS a SSL:
 - Nedostatečná oprávnění API (ujistěte se, že token má roli System Administrator)
 - Server ID neodpovídá skutečnému serveru v Enhance
 
-### Problémy s SSL certifikátem
+### Problémy s SSL certifikátem {#ssl-certificate-issues}
 
 **SSL se nevydává:**
 - Ověřte, že DNS směřuje na IP adresu vašeho serveru
@@ -225,7 +225,7 @@ Ultimate Multisite obsahuje vestavěnou kontrolu DNS a SSL:
 2. Najděte svou doménu a zkontrolujte její stav SSL
 3. V případě potřeby můžete ručně spustit vydání SSL
 
-### Interval kontroly DNS
+### Interval kontroly DNS {#dns-check-interval}
 
 Pokud aktivace domén nebo SSL certifikátů trvá příliš dlouho:
 1. Přejděte na **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -233,7 +233,7 @@ Pokud aktivace domén nebo SSL certifikátů trvá příliš dlouho:
 3. Upravte výchozí hodnotu 300 sekund na nižší (minimum: 10 sekund)
 4. **Poznámka:** Nižší intervaly znamenají častější kontroly, ale vyšší zatížení serveru
 
-### Chyby autentizace
+### Chyby autentizace {#authentication-errors}
 
 **Chyby HTTP 401/403:**
 - Vygenerujte nový API token v Enhance
@@ -241,7 +241,7 @@ Pokud aktivace domén nebo SSL certifikátů trvá příliš dlouho:
 - Zkontrolujte, že token nevypršel
 - Ujistěte se, že používáte správné Organization ID (i když obvykle není v URL vyžadováno)
 
-### Analýza logů
+### Analýza logů {#log-analysis}
 
 Povolte podrobné logování:
 ```php
@@ -255,15 +255,15 @@ Poté zkontrolujte logy na:
 - WordPress debug log: `wp-content/debug.log`
 - Logy Enhance panelu: Dostupné v administračním rozhraní Enhance
 
-## Reference API
+## Reference API {#api-reference}
 
-### Autentizace
+### Autentizace {#authentication}
 Všechny API požadavky používají Bearer token autentizaci:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Běžně používané endpointy
+### Běžně používané endpointy {#common-endpoints-used}
 
 **Výpis serverů:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Kompletní dokumentace API
+### Kompletní dokumentace API {#full-api-documentation}
 Úplná dokumentace API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Osvědčené postupy
+## Osvědčené postupy {#best-practices}
 
-### Bezpečnost
+### Bezpečnost {#security}
 - **Nikdy neukládejte API tokeny do verzovacího systému**
 - Uchovávejte tokeny v `wp-config.php`, který by měl být vyloučen z Gitu
 - Používejte tokeny s odpovídajícími oprávněními (System Administrator pro plnou integraci)
 - Nastavte datum expirace tokenů pro produkční prostředí
 - Pravidelně obměňujte tokeny
 
-### Výkon
+### Výkon {#performance}
 - Používejte výchozí interval kontroly DNS (300 sekund) pro zamezení nadměrného množství API volání
 - Sledujte prostředky Enhance serveru při provádění rozsáhlých operací s doménami
 - Zvažte postupné přidávání domén, pokud mapujete mnoho domén najednou
 
-### Monitoring
+### Monitoring {#monitoring}
 - Pravidelně kontrolujte logy Ultimate Multisite kvůli chybám integrace
 - Nastavte monitoring pro neúspěšná přidání domén
 - Ověřujte, že SSL certifikáty se správně vydávají
 - Sledujte kapacitu Enhance serveru a limity domén
 
-## Další zdroje
+## Další zdroje {#additional-resources}
 
 - **Oficiální dokumentace Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Dokumentace API Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 - **GitHub diskuze:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Průvodce mapováním domén Ultimate Multisite:** Viz wiki stránka „How to Configure Domain Mapping v2"
 
-## Podpora
+## Podpora {#support}
 
 Pokud narazíte na problémy:
 1. Prostudujte sekci Řešení problémů výše
@@ -326,7 +326,7 @@ Pokud narazíte na problémy:
 4. Kontaktujte podporu Enhance pro problémy specifické pro panel
 5. Vytvořte novou diskuzi s podrobnými chybovými logy pro pomoc od komunity
 
-## Poznámky
+## Poznámky {#notes}
 
 - Tato integrace zpracovává pouze aliasy domén; Enhance spravuje SSL automaticky
 - Integrace podporuje jak vlastní mapování domén, tak weby založené na subdoménách

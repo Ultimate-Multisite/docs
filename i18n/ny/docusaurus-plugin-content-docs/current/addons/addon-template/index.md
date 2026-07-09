@@ -3,25 +3,25 @@ title: Chitsanzo cha Chowonjezera
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Template ya Chowonjezera
+# Template ya Chowonjezera {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Zofunikira
+## Zofunikira {#requirements}
 
 - WordPress 5.3 kapena kupitirira
 - PHP 7.4 kapena kupitirira
 - pulogalamu yowonjezera ya Multisite Ultimate (yogwira ntchito)
 
-## Kuyika
+## Kuyika {#installation}
 
 1. Kwezani mafayilo a chowonjezera ku chikwatu chanu cha `/wp-content/plugins/`
 2. Yambitsani pulogalamu yowonjezera kudzera pa menyu ya 'Plugins' mu WordPress
 3. Konzani zokonda za chowonjezera mu woyang'anira netiweki
 
-## Chitukuko
+## Chitukuko {#development}
 
-### Kukhazikitsa
+### Kukhazikitsa {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Kapangidwe ka Projekiti
+### Kapangidwe ka Projekiti {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Malamulo okonzanso code kukhala yamakono
 ```
 
-### Kuyesa
+### Kuyesa {#testing}
 
 Chowonjezerachi chimaphatikiza chimango chokwanira choyesera:
 
@@ -75,44 +75,44 @@ Chowonjezerachi chimaphatikiza chimango chokwanira choyesera:
 - **Kuphimba kwa Mayeso**: Yakonzedwa kuti izitsata kuchuluka kwa code yoyesedwa
 - **Kuyesa kwa Multisite**: Mayeso amayendetsedwa mu chilengedwe cha multisite
 
-### Miyezo ya Code
+### Miyezo ya Code {#code-standards}
 
 - **Miyezo ya Kulemba Code ya WordPress**: Imakakamizidwa kudzera pa PHPCS
 - **Kugwirizana ndi PHP 7.4+**: Zinthu zamakono za PHP zimathandizidwa
 - **Kusanthula Kosasunthika**: Kuphatikiza kwa PHPStan pofufuza mitundu
 - **Kukonzanso Code Kukhala Yamakono**: Malamulo a Rector pa zosintha za PHP
 
-### Dongosolo la Kumanga
+### Dongosolo la Kumanga {#build-system}
 
 - **Kukonza Katundu**: Kuchepetsa mafayilo a CSS/JS
 - **Kumasulira**: Kupanga fayilo ya POT
 - **Kulongedza**: Kupanga archive yogawira
 - **Njira ya Chitukuko**: Katundu wosachepetsedwa wothandiza pa debugging
 
-## Kasinthidwe
+## Kasinthidwe {#configuration}
 
 Chowonjezerachi chimathandiza zosankha zosiyanasiyana za kasinthidwe zomwe zimapezeka kudzera mu mawonekedwe a woyang'anira netiweki.
 
-## Hooks ndi Filters
+## Hooks ndi Filters {#hooks-and-filters}
 
-### Zochita
+### Zochita {#actions}
 
 - `ultimate-multisite-addon-template_init` - Imayambitsidwa pambuyo poyambitsa chowonjezera
 - `ultimate-multisite-addon-template_loaded` - Imayambitsidwa mafayilo onse a chowonjezera atatsitsidwa
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Sinthani zokonda za chowonjezera
 - `ultimate-multisite-addon-template_enabled` - Dulani chikhalidwe choyatsa/kuzimitsa chowonjezera
 
-## License
+## License {#license}
 
 Chowonjezerachi chili ndi license ya GPL v3 kapena yapambuyo pake.
 
-## Thandizo
+## Thandizo {#support}
 
 Kuti mupeze thandizo ndi zolemba, pitani ku [MultisiteUltimate.com](https://multisiteultimate.com)
-## Mbiri ya Zosintha
+## Mbiri ya Zosintha {#changelog}
 
 - Mtundu 1.0.1 (2025-09-28): sinthani prefix kukhala ultimate-multisite; sinthani text domain; kukweza mtundu.
 

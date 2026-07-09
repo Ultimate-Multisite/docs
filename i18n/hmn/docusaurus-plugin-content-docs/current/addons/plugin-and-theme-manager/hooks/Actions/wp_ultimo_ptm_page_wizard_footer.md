@@ -4,20 +4,20 @@ title: Kev ua - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# Kev ua: wp_ultimo_ptm_page_wizard_footer
+# Kev ua: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
 
 Tso cai rau cov neeg tsim qhov txuas ntxiv ntxiv cov script rau hauv qab kawg ntawm nplooj ntawv
 
-## Cov parameter
+## Cov parameter {#parameters}
 
 | Npe | Hom | Kev piav qhia |
 |------|------|-------------|
 | $ | `\WU_Page` | Qhov instance ntawm nplooj ntawv Ultimate Multisite |
 
-### Txij thaum
+### Txij thaum {#since}
 
 - 1.8.2
-### Qhov chaw los
+### Qhov chaw los {#source}
 
 - Tau txhais hauv [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L163) ntawm kab 163
 - Tau txhais hauv [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L137) ntawm kab 137

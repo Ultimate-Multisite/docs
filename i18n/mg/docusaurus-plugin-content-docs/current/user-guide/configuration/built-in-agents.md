@@ -3,11 +3,11 @@ title: Mpandraharaha tafiditra ao anatiny
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents anatiny
+# Agents anatiny {#built-in-agents}
 
 Gratis AI Agent v1.9.0 dia mitondra agents anatiny dimy, samy efa voaomana mialoha miaraka amin’ny fitambaran-fitaovana mifantoka, system prompt namboarina manokana, ary soso-kevitra fanombohana mifanaraka amin’ny asa mahazatra amin’io sehatra io. Ny fifindrana eo amin’ireo agents dia manova izay azon’ilay assistant atao sy ny fomba famaliany — tsy mila fikirakirana avy aminao. Superdav AI Agent v1.18.0 dia afaka manampy fitaovana mahafantatra fandaharam-potoana, firaketana fampahatsiahivana, vavahadin-fankatoavana, ary fampandrenesana SMS amin’ireo workflows ireo rehefa voakirakira ny integrations mifandraika.
 
-## Inona no atao hoe Agent?
+## Inona no atao hoe Agent? {#what-is-an-agent}
 
 Ny agent tsirairay dia mombamomba fikirakirana manana anarana izay mampifangaro:
 
@@ -15,7 +15,7 @@ Ny agent tsirairay dia mombamomba fikirakirana manana anarana izay mampifangaro:
 - **System prompt** — toromarika mametraka ny feo, laharam-pahamehana, ary fetra ho an’ilay agent
 - **Soso-kevitra** — prompts efa voasoratra mialoha aseho ao amin’ny endrika chat mba hanampy anao hanomboka haingana
 
-## Fidirana amin’ny Agent Picker
+## Fidirana amin’ny Agent Picker {#accessing-the-agent-picker}
 
 1. Sokafy ny tontonana **Gratis AI Agent** ao amin’ny sisin’ny admin WordPress.
 2. Tsindrio ny **kisary agent** eo amin’ny zorony ambony havia amin’ny lohatenin’ny chat (miova ilay kisary mba hanehoana ny agent mavitrika).
@@ -24,9 +24,9 @@ Ny agent tsirairay dia mombamomba fikirakirana manana anarana izay mampifangaro:
 
 Azonao atao koa ny mifindra agents eo afovoan-dresaka — manomboka mihatra amin’ny hafatra manaraka ny system prompt an’ilay agent vaovao.
 
-## Ireo Agents anatiny dimy
+## Ireo Agents anatiny dimy {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fifantohana:** Mamorona sy manitsy lahatsoratra, pejy, ary taratasy fifandraisana.
 
@@ -47,7 +47,7 @@ Azonao atao koa ny mifindra agents eo afovoan-dresaka — manomboka mihatra amin
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fifantohana:** Famoronana tranonkala hatramin’ny voalohany ka hatramin’ny farany avy amin’ny prompt tokana.
 
@@ -70,7 +70,7 @@ Azonao atao koa ny mifindra agents eo afovoan-dresaka — manomboka mihatra amin
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fifantohana:** Fanamboarana endrika hita maso — loko, typography, CSS, ary block patterns.
 
@@ -87,7 +87,7 @@ Azonao atao koa ny mifindra agents eo afovoan-dresaka — manomboka mihatra amin
 - *Makà screenshot amin’ny pejy fandraisana ary lazao ahy izay hatsarainao.*
 - *Mamoròna hero block pattern azo ampiasaina indray miaraka amin’ny sary ambadika feno sakany sy lohateny afovoany.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fifantohana:** Mahita, mametraka, ary mitantana plugins WordPress.
 
@@ -105,7 +105,7 @@ Azonao atao koa ny mifindra agents eo afovoan-dresaka — manomboka mihatra amin
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fifantohana:** Mamaly fanontaniana momba ny atiny, ny fikirakirana, ary ny fikirakirana WordPress amin’ny site.
 
@@ -124,7 +124,7 @@ Azonao atao koa ny mifindra agents eo afovoan-dresaka — manomboka mihatra amin
 
 ---
 
-## Fampidirana automatique Superdav
+## Fampidirana automatique Superdav {#superdav-automation-integrations}
 
 Rehefa voarindra ny fampidirana Superdav AI Agent v1.18.0, afaka mandray anjara amin’ny fizotry ny asa automatique azo antoka kokoa sy mahafantatra fandaharam-potoana ireo agent tafiditra:
 
@@ -138,11 +138,11 @@ Fizotry ny asa atolotra: angataho ny agent hanomana ny hafatra na asa, jereo ny 
 
 ---
 
-## Fanamboarana manokana ny Agents
+## Fanamboarana manokana ny Agents {#customising-agents}
 
 Ny agent tafiditra tsirairay dia azo itarina na soloina amin’ny alalan’ny sivana `gratis_ai_agent_agents`.
 
-### Manampy prompt system namboarina manokana amin’ny agent efa misy
+### Manampy prompt system namboarina manokana amin’ny agent efa misy {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Manoratra anarana agent vaovao
+### Manoratra anarana agent vaovao {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Miseho ao amin’ny Mpifidy Agent avy hatrany ilay agent vaovao rehefa mandeha ilay sivana.
 
-### Manala agent tafiditra
+### Manala agent tafiditra {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

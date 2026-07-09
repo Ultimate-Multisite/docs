@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe Onye na-ere ngalaba
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Ndekọ mgbanwe Domain Seller
+# Ndekọ mgbanwe Domain Seller {#domain-seller-changelog}
 
 Ụdị 1.3.0 - E wepụtara na 2026-06-02
 - Ọhụrụ: Agbakwunyere ịdọ aka ná ntị network-admin mgbe nguzozi onye na-ereghachi HostAfrica dara ala nke ukwuu
@@ -134,20 +134,20 @@ _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 * **Edoziri:** Emelitere koodu v1 niile a kwụsịrị iji kwekọọ n'ụkpụrụ v2
 * **Ewepụla:** Ndakọrịta v1 ochie (mgbanwe na-emebi ndakọrịta)
 
-### Ụdị ndị gara aga (v1 Legacy)
+### Ụdị ndị gara aga (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Ụdị 0.0.3 - 20/08/2019
+### Ụdị 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Edoziri: Enweghị ndakọrịta na Groundhogg CRM
 * Ihe ndetu: Nke a bụ mwepụta ikpeazụ kwekọrọ na v1
 
-### Ụdị 0.0.2 - 07/12/2018
+### Ụdị 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Edoziri: Ewepụla ubi License Key
 * Edoziri: Taabụ plan na-efu mgbe plugin atụmatụ nọ n'ọrụ
 * Emelitere: Tụnyere bọtịnụ ịgafe na ubi ndebanye
 
-### Ụdị 0.0.1 - Mwepụta Mbụ
+### Ụdị 0.0.1 - Mwepụta Mbụ {#version-001---initial-release}
 
 * Njikọ OpenSRS bụ isi maka WP Ultimo v1
 * Ọchụchọ domain na ndebanye dị mfe

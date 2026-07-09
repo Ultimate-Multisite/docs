@@ -3,13 +3,13 @@ title: Mezu elektronikoak eta hedapenak bidaltzea
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Emailak eta igorpenak bidaltzea (v2)
+# Emailak eta igorpenak bidaltzea (v2) {#sending-emails-and-broadcasts-v2}
 
 _**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 
 Ultimate Multisite-k zure bezeroekin komunikatzeko aukera emango dizun eginbide bat dakar: erabiltzaile jakin bati edo erabiltzaile talde bati email bat bidaliz, baita haien administrazio-Dashboard-ean oharrak bidaliz ere iragarkiak zabaltzeko
 
-## Gehitu administrazio-oharrak zure bezeroen Dashboard-era Igorpenekin
+## Gehitu administrazio-oharrak zure bezeroen Dashboard-era Igorpenekin {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ultimate Multisite-ren igorpen eginbidea erabiliz, **administrazio-oharrak** gehi ditzakezu zure erabiltzailearen azpiguneko administrazio-Dashboard-era.
 
@@ -51,7 +51,7 @@ Zure mezua sortu ondoren, **Bidali** botoia sakatu dezakezu.
 
 Eta hori da guztia. Administrazio-oharra berehala agertu beharko litzateke zure erabiltzailearen Dashboard-ean.
 
-## Bidali emailak zure bezeroei
+## Bidali emailak zure bezeroei {#send-emails-to-your-customers}
 
 Ultimate Multisite-ren igorpen eginbidea erabiliz, email bat bidal diezaiekezu zure erabiltzaileei. Emaila erabiltzaile jakin batzuei bakarrik bidaltzeko aukera duzu, edo produktu edo plan jakin baten harpidetzapean dauden erabiltzaile talde jakin bat bideratzeko aukera.
 
@@ -81,11 +81,11 @@ Zure mezua sortu ondoren, **Bidali** botoia sakatu dezakezu.
 
 Eta horren erraza da email bat bidaltzea zure azken erabiltzaileei igorpen eginbidea erabiliz.
 
-## Sistemaren emailak
+## Sistemaren emailak {#system-emails}
 
 Ultimate Multisite-ko sistemaren emailak sistemak ekintza jakin batzuen ondoren bidaltzen dituen **jakinarazpen automatikoak** dira, hala nola erregistroa, ordainketa, domeinu-mapatzea, etab. Email hauek Ultimate Multisite-ren ezarpenetatik editatu edo aldatu daitezke. Beste Ultimate Multisite instalazio batetik lehendik dauden ezarpenak berrezarri eta inportatzeko aukera emango dizun eginbide bat ere badakar.
 
-### Berrezartzea eta inportatzea
+### Berrezartzea eta inportatzea {#resetting--importing}
 
 Ultimate Multisite bertsio berriek, baita gehigarriek ere, email berriak erregistratu ditzakete eta erregistratuko dituzte noizean behin.
 
@@ -93,7 +93,7 @@ Gatazkak eta bestelako arazoak saihesteko, **ez ditugu email-txantiloi berriak a
 
 Hala ere, super administratzaileek eta agenteek berriki erregistratutako email hauek inporta ditzakete inportatzaile tresnaren bidez. Prozesu horrek sistemaren email berri bat sortuko du email-txantiloi berriaren edukiarekin eta konfigurazioarekin, super administratzaileari nahi dituen aldaketak egiteko edo dauden bezala mantentzeko aukera emanez.
 
-#### Nola inportatu sistemaren emailak
+#### Nola inportatu sistemaren emailak {#how-to-import-system-emails}
 
 Joan zure Ultimate Multisite ezarpenen orrialdera eta jo **Emailak** fitxara.
 
@@ -111,7 +111,7 @@ Ondoren, Inportatu emailak aukerak txandakatu ditzakezu, zein sistemaren email i
 
 <!-- Pantaila-argazkia ez dago erabilgarri: Reset and Import modala, Import Emails aukerak zabalduta -->
 
-#### Sistemako emailak berrezartzea
+#### Sistemako emailak berrezartzea {#reseting-system-emails}
 
 Beste batzuetan, email-txantiloi jakin batean egin dituzun aldaketek jada ez dizutela balio konturatuko zara, eta bere **egoera lehenetsira** berrezarri nahiko duzu.
 

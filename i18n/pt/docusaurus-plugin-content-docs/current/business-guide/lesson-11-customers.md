@@ -3,15 +3,15 @@ title: 'Lição 11: Encontrar clientes'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lição 11: Encontrar clientes
+# Lição 11: Encontrar clientes {#lesson-11-finding-customers}
 
 Uma ótima plataforma sem clientes é apenas um passatempo. Esta lição aborda como adquirir clientes num nicho vertical -- estratégias que funcionam especificamente porque está focado numa indústria.
 
-## Onde ficámos
+## Onde ficámos {#where-we-left-off}
 
 FitSite está online. Agora precisamos que os proprietários de estúdios de fitness a encontrem e se registem.
 
-## Porque a aquisição em nicho é diferente
+## Porque a aquisição em nicho é diferente {#why-niche-acquisition-is-different}
 
 Quando vende a todos, compete por atenção num mercado ruidoso. Quando vende a um nicho, tem vantagens:
 
@@ -19,17 +19,17 @@ Quando vende a todos, compete por atenção num mercado ruidoso. Quando vende a 
 - **A sua mensagem ressoa imediatamente** -- "websites para estúdios de fitness" faz um proprietário de ginásio parar a meio do scroll
 - **As recomendações acumulam-se** -- proprietários de estúdios de fitness conhecem outros proprietários de estúdios de fitness
 
-## Canal 1: Contacto direto
+## Canal 1: Contacto direto {#channel-1-direct-outreach}
 
 O caminho mais rápido para os seus primeiros clientes é o contacto direto e pessoal.
 
-### Encontrar potenciais clientes
+### Encontrar potenciais clientes {#find-prospects}
 
 - Pesquise no Google Maps por estúdios de fitness, ginásios e personal trainers na sua área
 - Visite os websites atuais deles (ou anote que não têm um)
 - Recolha informações de contacto dos perfis Google Business ou das redes sociais deles
 
-### Avaliar a situação atual deles
+### Avaliar a situação atual deles {#evaluate-their-current-situation}
 
 Para cada potencial cliente, anote:
 
@@ -37,7 +37,7 @@ Para cada potencial cliente, anote:
 - **Website mau**: Potencial cliente forte -- mostre-lhes como é uma opção melhor
 - **Website bom**: Potencial cliente fraco -- já resolveram este problema
 
-### Fazer contacto
+### Fazer contacto {#make-contact}
 
 Envie um email ou mensagem personalizada:
 
@@ -48,7 +48,7 @@ Envie um email ou mensagem personalizada:
 
 Não envie emails em massa. Contacto personalizado a 20 potenciais clientes bem pesquisados terá melhor desempenho do que um envio genérico para 2.000.
 
-## Canal 2: Comunidades de nicho
+## Canal 2: Comunidades de nicho {#channel-2-niche-communities}
 
 Proprietários de estúdios de fitness reúnem-se em locais específicos online:
 
@@ -57,7 +57,7 @@ Proprietários de estúdios de fitness reúnem-se em locais específicos online:
 - **Fóruns da indústria** e painéis de discussão
 - **Grupos LinkedIn** para profissionais de fitness
 
-### Como participar
+### Como participar {#how-to-participate}
 
 Não entre e apresente imediatamente o seu produto. Em vez disso:
 
@@ -66,7 +66,7 @@ Não entre e apresente imediatamente o seu produto. Em vez disso:
 3. **Partilhe quando for relevante** -- quando alguém perguntar sobre websites, partilhe a sua plataforma naturalmente
 4. **Crie conteúdo útil** -- escreva publicações sobre "o que faz um ótimo website de estúdio de fitness" que conduzam naturalmente à sua plataforma
 
-## Canal 3: Marketing de conteúdo
+## Canal 3: Marketing de conteúdo {#channel-3-content-marketing}
 
 Crie conteúdo que proprietários de estúdios de fitness pesquisam:
 
@@ -77,7 +77,7 @@ Crie conteúdo que proprietários de estúdios de fitness pesquisam:
 
 Publique isto no blog de marketing da sua FitSite. Com o tempo, este conteúdo classifica-se nos motores de busca e traz tráfego orgânico de pessoas que procuram ativamente o que oferece.
 
-## Canal 4: Parcerias
+## Canal 4: Parcerias {#channel-4-partnerships}
 
 Faça parcerias com empresas que já servem estúdios de fitness:
 
@@ -88,7 +88,7 @@ Faça parcerias com empresas que já servem estúdios de fitness:
 
 Ofereça comissões de recomendação ou promoção recíproca. O [addon AffiliateWP](/addons/affiliatewp) pode ajudá-lo a configurar um programa formal de recomendações.
 
-## Canal 5: Eventos da indústria
+## Canal 5: Eventos da indústria {#channel-5-industry-events}
 
 Eventos da indústria do fitness colocam-no à frente de centenas de potenciais clientes:
 
@@ -99,7 +99,7 @@ Eventos da indústria do fitness colocam-no à frente de centenas de potenciais 
 
 Não precisa de um grande orçamento. Mesmo participar como assistente e ter conversas sobre o que faz pode gerar leads.
 
-## Canal 6: Sites de mostra
+## Canal 6: Sites de mostra {#channel-6-showcase-sites}
 
 O seu melhor marketing são os sites dos seus clientes existentes. Com permissão:
 
@@ -108,7 +108,7 @@ O seu melhor marketing são os sites dos seus clientes existentes. Com permissã
 - Peça testemunhos a clientes satisfeitos
 - Incentive os clientes a mencionar FitSite quando forem questionados sobre o website deles
 
-## Configurar um programa de recomendações
+## Configurar um programa de recomendações {#setting-up-a-referral-program}
 
 O passa-palavra é o seu canal mais poderoso num nicho. Formalize-o:
 
@@ -116,7 +116,7 @@ O passa-palavra é o seu canal mais poderoso num nicho. Formalize-o:
 2. Ofereça aos clientes existentes uma recompensa por recomendações (um mês grátis, crédito na conta, etc.)
 3. Facilite -- dê-lhes um link de recomendação e uma mensagem simples que possam reencaminhar
 
-## Acompanhar o que funciona
+## Acompanhar o que funciona {#tracking-what-works}
 
 Para cada canal, acompanhe:
 
@@ -126,7 +126,7 @@ Para cada canal, acompanhe:
 
 Reforce os canais que funcionam. Corte os canais que não funcionam.
 
-## Expectativas realistas
+## Expectativas realistas {#realistic-expectations}
 
 - **Mês 1-3**: 5-20 clientes, sobretudo de contacto direto e comunidades
 - **Mês 4-6**: 20-50 clientes, o marketing de conteúdo começa a contribuir
@@ -134,7 +134,7 @@ Reforce os canais que funcionam. Corte os canais que não funcionam.
 
 Estes números variam, mas o padrão é consistente: os primeiros clientes vêm de esforço direto, os clientes posteriores vêm dos efeitos acumulados de conteúdo, recomendações e reputação.
 
-## O que construímos nesta lição
+## O que construímos nesta lição {#what-we-built-this-lesson}
 
 - **Seis canais de aquisição** adaptados ao nicho de fitness
 - **Um processo de contacto direto** para conquistar os primeiros clientes

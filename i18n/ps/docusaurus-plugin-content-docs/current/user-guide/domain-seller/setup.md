@@ -3,21 +3,21 @@ title: تشوب او پرایدر تنظیمول
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: تنظیم و پیکربندی ارائه‌دهنده
+# Domain Seller: تنظیم و پیکربندی ارائه‌دهنده {#domain-seller-setup-and-provider-configuration}
 
 افزونه Domain Seller با یک راهنمای تنظیم هدایت شده همراه است که شما را از تمام مراحل مورد نیاز عبور می‌دهد. این صفحه در مورد جریان این wizard و نحوه پیکربندی یا تنظیم مجدد ارائه‌دهندگان بعد از آن توضیح می‌دهد.
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 
 - **Multisite Ultimate** نسخه v2.4.12 یا بالاتر، فعال شده در شبکه
 - **PHP** 7.4+
 - اعتبارنامه‌های API برای حداقل یک رجیستر پشتیبانی شده
 
-## wizard تنظیم اولیه
+## wizard تنظیم اولیه {#first-run-setup-wizard}
 
 این wizard به محض اینکه اولین بار افزونه را فعال و در شبکه کنید، به طور خودکار اجرا می‌شود. همچنین شما همیشه می‌توانید از طریق **Network Admin › Ultimate Multisite › Domain Seller Setup** به آن دسترسی داشته باشید.
 
-### مرحله ۱ — انتخاب ارائه‌دهنده
+### مرحله ۱ — انتخاب ارائه‌دهنده {#step-1--choose-a-provider}
 
 رجیستری را که می‌خواهید متصل کنید، انتخاب کنید. گزینه‌های پشتیبانی شده:
 
@@ -33,7 +33,7 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 | NameSilo | خیر | خیر |
 | Enom | بله | خیر |
 
-### مرحله ۲ — وارد کردن اعتبارنامه‌ها
+### مرحله ۲ — وارد کردن اعتبارنامه‌ها {#step-2--enter-credentials}
 
 هر ارائه‌دهنده فیلدهای اعتبارنامه متفاوتی دارد:
 
@@ -57,17 +57,17 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 
 যদি উপলব্ধ থাকে, **Sandbox mode** চাব লাগে যাতে লাইভ হোৱাৰ আগতে প্ৰদানকাৰৰ ট্ৰেষ্ট এনভায়রনমেন্টত পৰীক্ষা কৰিব পাৰে।
 
-### ধাপ ৩ — সংযোগটো পৰীক্ষা কৰক
+### ধাপ ৩ — সংযোগটো পৰীক্ষা কৰক {#step-3--test-the-connection}
 
 **Test Connection** ক্লিক কৰক। এই উইজार्डটোৱে স্বীকৃতি আৰু সংযোগ পৰীক্ষা কৰিবলৈ এটা সৰু API কল প্ৰেছনি কৰে। আগবাঢ়ি যোৱাৰ আগতে কোনো স্বীকৃতি সমস্যা সমাধান কৰি লওক।
 
-### ধাপ ৪ — TLD সমূহ আমদানি কৰক (Import TLDs)
+### ধাপ ৪ — TLD সমূহ আমদানি কৰক (Import TLDs) {#step-4--import-tlds}
 
 **Import TLDs** ক্লিক কৰক যাতে সংযুক্ত প্ৰদানকাৰৰ পৰা সকলো উপলব্ধ TLD আৰু পাইকারি মূল্যসমূহ লোৱা যায়। ই ডোমেইন প্ৰডাক্টবোৰৰ বাবে ব্যৱহাৰ হোৱা TLD তালিকাটো পূৰ্ণ কৰে। ডাঙৰ TLD ক্যাটালগ থকা প্ৰদানকাৰৰ ক্ষেত্ৰত আমদানি কৰাত ৩০–৬০ ছেকেণ্ড সময় ল’ব পাৰে।
 
 সময়ৰ এক পৰিকল্পিত cron job-ৰ দ্বাৰা দিনটোৰ ভিতৰত TLD সমূহ স্বয়ংক্রিয়ভাৱে পুনৰ সিমান কৰা হয়।
 
-### ধাপ ৫ — এটা ডোমেইন প্ৰডাক্ট সৃষ্টি কৰক
+### ধাপ ৫ — এটা ডোমেইন প্ৰডাক্ট সৃষ্টি কৰক {#step-5--create-a-domain-product}
 
 উইজार्डটোৱে ১০% markup সহ এটা ডিফল্ট catch-all ডোমেইন প্ৰডাক্ট সৃষ্টি কৰে। আপুনি এই প্ৰডাক্টটো তৎক্ষণাত সম্পাদনা কৰিব পাৰে বা **Ultimate Multisite › Products** ত মেৰুৱাই হাতেৰে প্ৰডাক্ট সৃষ্টি কৰিব পাৰে।
 
@@ -75,7 +75,7 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 
 ---
 
-## প্ৰদানকাৰ পুনৰ কনফিগুৰেট কৰা (Reconfiguring a provider)
+## প্ৰদানকাৰ পুনৰ কনফিগুৰেট কৰা (Reconfiguring a provider) {#reconfiguring-a-provider}
 
 **Network Admin › Ultimate Multisite › Settings › Domain Seller** লৈ যাওক (বা প্লাগইন তালিকাৰ পৰা **Settings** ক্লিক কৰক)।
 
@@ -88,17 +88,17 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 - **Manage domain products** — a quick link that takes you straight to the Products list so you can manage your domains easily.
 - **Configure providers** — this opens the Integration Wizard where you can add new providers or change settings for existing ones.
 
-### Adding a second provider
+### Adding a second provider {#adding-a-second-provider}
 
 Click on **Configure providers** and run the wizard again for the new registrar. You can have several providers set up at the same time. You can assign each domain product to a specific provider, or just leave it on the default setting.
 
-### Syncing TLDs manually
+### Syncing TLDs manually {#syncing-tlds-manually}
 
 On the settings page, click on **Sync TLDs** next to any configured provider to get the latest pricing information. This is helpful after a provider changes wholesale prices or adds new TLDs.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 هر پ로우ایدەر (provider) خپل الگ لاگ کانال ته ورته. شما می توانید لاگ ها را تحت **Network Admin › Ultimate Multisite › Logs** ببینید:
 
@@ -118,7 +118,7 @@ On the settings page, click on **Sync TLDs** next to any configured provider to 
 
 ---
 
-## Provider capability notes
+## Provider capability notes {#provider-capability-notes}
 
 همه ثبتي شرکتونو API یوه هم کارونه نریښه کړي. Addon هغه کارونه چې پ suport نه دي، به په چپ چاپ ناکام되지 نه شي، بَل له بدلې غلطی پیغامونه (errors) د مدیرانو لپاره ښکاره کوي.
 

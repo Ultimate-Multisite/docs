@@ -4,11 +4,11 @@ title: Filter - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filter: wu_rest_get_item
+# Filter: wu_rest_get_item {#filter-wurestgetitem}
 
 Filter, ob die Anfrage fortgesetzt werden darf oder nicht.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filter, ob die Anfrage fortgesetzt werden darf oder nicht.
 | $rest_base | `array` | Slug der Entität. |
 | $this | `\Base_Manager` | Die Objektinstanz. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 Definiert in [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) in Zeile 388

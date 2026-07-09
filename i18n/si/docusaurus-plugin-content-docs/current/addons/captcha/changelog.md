@@ -3,7 +3,7 @@ title: කැප්චා වෙනස්කම් ලේඛනය
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha වෙනස්කම් ලැයිස්තුව
+# Captcha වෙනස්කම් ලැයිස්තුව {#captcha-changelog}
 
 අනුවාදය: 1.5.0 - 2026-05-22 දින නිකුත් කරන ලදී
 * නව: Hard-stop rate limiter — captcha-ආරක්ෂිත මතුපිටවල් (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) මත සෑම GET සහ POST එකක්ම ගණන් කර, HTTP 429, `Retry-After` header එකක්, සහ අහඹු tarpit sleep එකක් (තත්පර 1–5, තත්පර 15 දී දැඩිව සීමා කළ) සමඟ ප්‍රතිචාර දක්වයි.

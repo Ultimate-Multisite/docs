@@ -3,13 +3,13 @@ title: Äert Registréierungsformular upassen
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Deng Registréierungsformular upassen
+# Deng Registréierungsformular upassen {#customizing-your-registration-form}
 
 Fir däi Netzwierk eenzegaarteg ausgesinn ze loossen am Verglach mat all deenen anere SaaS, déi op der WordPress-Plattform gebaut sinn, erlaabt Ultimate Multisite dir, deng Registréierungs- a Login-Säite mat eiser **Checkout Forms**-Funktioun unzepassen.
 
 Och wann se eng einfach a flexibel Manéier sinn, fir mat verschiddenen Usätz ze experimentéieren, wann ee probéiert nei Clienten ze konvertéieren, gi se meeschtens benotzt, fir personaliséiert Registréierungsformulairen ze erstellen. Dësen Artikel soll dir weisen, wéi s du dat maache kanns.
 
-## Login- a Registréierungssäiten:
+## Login- a Registréierungssäiten: {#login-and-registration-pages}
 
 Bei der Installatioun vun Ultimate Multisite erstellt et automatesch personaliséiert Login- a Registréierungssäiten op denger Haaptsäit. Du kanns dës Standard-Säiten zu all Moment änneren, andeems s du op deng **Ultimate Multisite > Settings > Login & Registration** Säit gees.
 
@@ -45,7 +45,7 @@ Elo kucke mer aner Optiounen, déi nach ëmmer relevant fir de Login- a Registr�
 
 An dat sinn all d’Optiounen am Zesummenhang mat Login a Registréierung, déi s du upasse kanns! Vergiess net, deng Astellungen ze späicheren, nodeems s du se fäerdeg geännert hues.
 
-## Méi Registréierungsformulairë benotzen:
+## Méi Registréierungsformulairë benotzen: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 bitt e Checkout Form-Editor, deen dir erlaabt, esou vill Formulairen ze erstellen, wéi s du wëlls, mat verschiddene Felder, ugebuedene Produkter, asw.
 
@@ -69,7 +69,7 @@ Alternativ kanns du d’Formulairen, déi s du schonn hues, änneren oder dupliz
 
 Wann s du eenzelne Schrëtt oder méi Schrëtt auswiels, ass de Checkout Form scho mat de Basis-Schrëtt virbefëllt, fir datt en funktionéiert. Duerno kanns du, wann s du wëlls, zousätzlech Schrëtt dobäisetzen.
 
-### E Checkout Form änneren:
+### E Checkout Form änneren: {#editing-a-checkout-form}
 
 Wéi mer virdru gesot hunn, kanns du Checkout Forms fir verschidden Zwecker erstellen. An dësem Beispill schaffe mer un engem Registréierungsformular.
 
@@ -131,11 +131,11 @@ Fir de Shortcode vun Ärem Formulaire ze kréien, klickt op **Shortcode generéi
 
 _**Notiz:** Dir musst dëse Shortcode op Är Registréierungssäit derbäisetzen, fir datt dëse Checkout-Formulaire derbäigesat gëtt._
 
-## Produkter a Schablounen iwwer URL-Parameteren viraus auswielen:
+## Produkter a Schablounen iwwer URL-Parameteren viraus auswielen: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Wann Dir personaliséiert Präistabelle fir Är Produkter erstelle wëllt an am Checkout-Formulaire de Produkt oder d'Schabloun viraus auswiele wëllt, déi Äre Client vun Ärer Präistabell oder Schablounesäit auswielt, kënnt Dir URL-Parameteren dofir benotzen.
 
-### **Fir Pläng:**
+### **Fir Pläng:** {#for-plans}
 
 Gitt op **Ultimate Multisite > Produkter > E Plang auswielen**. Dir sollt de Knäppchen **Klickt fir de deelbare Link ze kopéieren** uewen op der Säit gesinn. Dëst ass de Link, deen Dir benotze kënnt, fir dëse spezifesche Plang op Ärem Checkout-Formulaire viraus auszewielen.
 
@@ -143,7 +143,7 @@ Gitt op **Ultimate Multisite > Produkter > E Plang auswielen**. Dir sollt de Kn�
 
 Notéiert, datt dësen deelbare Link nëmme fir **Pläng** gëlteg ass. Dir kënnt deelbar Linken net fir Paketer oder Servicer benotzen.
 
-### Fir Schablounen:
+### Fir Schablounen: {#for-templates}
 
 Wann Dir Säiteschablounen op Ärem Checkout-Formulaire viraus auswiele wëllt, kënnt Dir de Parameter benotzen: **?template_id=X** op der URL vun Ärer Registréierungssäit. Den "X" muss duerch d'**ID-Nummer vun der Säiteschabloun** ersat ginn. Fir dës Nummer ze kréien, gitt op **Ultimate Multisite > Säiten**.
 

@@ -3,7 +3,7 @@ title: ಸದಸ್ಯತ್ವವನ್ನು ರದ್ದುಗೊಳಿಸು
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# ಸದಸ್ಯತ್ವವನ್ನು ರದ್ದುಪಡಿಸುವುದು (v2)
+# ಸದಸ್ಯತ್ವವನ್ನು ರದ್ದುಪಡಿಸುವುದು (v2) {#canceling-a-membership-v2}
 
 _**ಪ್ರಮುಖ ಸೂಚನೆ: ಈ ಲೇಖನವು Ultimate Multisite ಆವೃತ್ತಿ 2.x ಅನ್ನು ಸೂಚಿಸುತ್ತದೆ.**_
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM illationem AI nativam navigatoris ad rete multisite WordPress tuum adfert. Magna exemplaria linguarum omnino in navigatro currit utens WebLLM et machina MLC — nullae claves API, nullae vocationes externae, nulla data machinam usoris relinquunt.
 
-## Praecipuae Proprietates
+## Praecipuae Proprietates {#key-features}
 
 - **Illatio in latere navigatoris**: LLM localiter in navigatro visitatoris per WebLLM/MLC currit — nulla GPU ministri requiritur
 - **Instrumentum colloquii fluctuans**: Usores initium sessionis habentes LLM in latere navigatoris directe e fronte interrogare possunt
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM illationem AI nativam navigatoris ad rete multi
 - **IndexedDB cella**: Descensiones ponderum exemplaris supersunt redirectionibus CDN quae viam ordinariam Cache API frangunt
 - **Integratio filtri wpai**: Se inserit in filtrum `wpai_preferred_text_models` ut functio AI Experiments ad machinam navigatoris dirigatur cum configurata est
 
-## Requisita
+## Requisita {#requirements}
 
 - WordPress 5.3 aut superius
 - PHP 7.4 aut superius
 - Ultimate Multisite plugin (activum)
 - Navigator cum auxilio WebGPU (Chrome 113+, Edge 113+, aut Firefox Nightly cum WebGPU habilitato)
 
-## Installatio
+## Installatio {#installation}
 
 1. Fasciculos addon in directorium tuum `/wp-content/plugins/` impone
 2. plugin per menu 'Plugins' in WordPress activa
 3. Naviga ad **Ultimate Multisite → AI Connector** ut addon configures
 
-## Instrumentum Colloquii Fluctuans
+## Instrumentum Colloquii Fluctuans {#floating-chat-widget}
 
 Instrumentum colloquii fluctuans cuilibet usori initium sessionis habenti permittit ut cum LLM in latere navigatoris directe e fronte tua interagat, sine pagina quam spectat relicta.
 
-### Quid Faciat
+### Quid Faciat {#what-it-does}
 
 Cum habilitatum est, icon colloquii in angulo cuiusque paginae frontis apparet pro usoribus initium sessionis habentibus. Icone pressa tabula colloquii aperitur ubi usor prompta scribere et responsa ab exemplo WebLLM localiter currente accipere potest. Quia exemplar omnino in navigatro currit, responsa privata sunt nec ullam tractationem in latere ministri implicant.
 
-### Index Status in Barra Administrationis
+### Index Status in Barra Administrationis {#admin-bar-status-indicator}
 
 Barra administrationis WordPress indicem status includit qui statum praesentem machinae WebLLM ostendit:
 
@@ -56,7 +56,7 @@ Barra administrationis WordPress indicem status includit qui statum praesentem m
 
 Index tempore reali renovatur sine necessitate paginae iterum onerandae.
 
-### Quomodo Instrumentum Habilitare aut Inhabilitare
+### Quomodo Instrumentum Habilitare aut Inhabilitare {#how-to-enable-or-disable-the-widget}
 
 1. Vade ad **Ultimate Multisite → AI Connector** in administratione retis
 2. Inveni tabulam **Connector**
@@ -65,17 +65,17 @@ Index tempore reali renovatur sine necessitate paginae iterum onerandae.
 
 Instrumentum etiam per situm habilitari aut inhabilitari potest ex propria administratione situs, si administrator retis illam facultatem concessit.
 
-## Optiones Instrumenti
+## Optiones Instrumenti {#widget-settings}
 
 Tabula Connector in **Ultimate Multisite → AI Connector** continet sequentes optiones pro instrumento colloquii fluctuante:
 
-### Habilita Instrumentum Colloquii Fluctuans
+### Habilita Instrumentum Colloquii Fluctuans {#enable-floating-chat-widget}
 
 Instrumentum colloquii pro toto reti activo aut inactivo commutat. Cum inhabilitatum est, instrumentum in nulla pagina frontis apparet, quocumque munere usoris.
 
 **Praedefinitum:** Inactivum
 
-### Mores Auto-Prompt
+### Mores Auto-Prompt {#auto-prompt-behaviour}
 
 Regit utrum instrumentum colloquii promptum automatice mittat cum usor id aperit.
 
@@ -93,7 +93,7 @@ Cum ad **Promptum proprium** positum est, campus textus additus apparet ubi text
 
 **Praedefinitum:** Inhabilitatum
 
-## SharedWorker Tempus Exsecutionis
+## SharedWorker Tempus Exsecutionis {#sharedworker-runtime}
 
 Versio 1.1.0 tempus exsecutionis SharedWorker pro machina MLC introducit. Antea, quaeque tabula navigatoris quae WebLLM utebatur propriam instantiam exemplaris onerabat, pro memoria GPU certans et difficultates efficientiae in machinis cum VRAM limitata causans.
 
@@ -105,29 +105,29 @@ Cum tempore exsecutionis SharedWorker, una tabula ut hospes machinae agit. Omnes
 
 SharedWorker usoribus perspicuus est. Index status in barra administrationis semper statum machinae communicatae refert, non tabulae singulae.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 addon `apiFetch` middleware installat quod petitiones WordPress REST API formae AI Client SDK respondentes intercipit. Pro petitione HTTP loopback ad ministrum facienda, hae petitiones directe ad localem WebLLM internuntium in SharedWorker currentem diriguntur.
 
 Hoc significat plugins et themata quae API ordinariam WordPress `apiFetch` utuntur ad vocanda endpointa AI automatice utilitatem ex exemplo in latere navigatoris habitura esse cum praesto est, nullis mutationibus codicis requisitis.
 
-## Hooks et Filtra
+## Hooks et Filtra {#hooks-and-filters}
 
-### Filtra
+### Filtra {#filters}
 
 - `wpai_preferred_text_models` — WebLLM machinam navigatoriam registra ut exemplar textus praelatum. Addon huic filtro automatice se adiungit cum machina configurata et praesto est.
 - `ultimate_webllm_widget_enabled` — Statum widget activatum pro certo usore vel contextu supercede. Redde `true` aut `false`.
 - `ultimate_webllm_auto_prompt` — Textum auto-prompt muta antequam ad widget mittitur. Accipit filum prompt et obiectum `WP_Post` praesens.
 
-## Solutio problematum
+## Solutio problematum {#troubleshooting}
 
-### Widget colloquii non apparet
+### Widget colloquii non apparet {#the-chat-widget-does-not-appear}
 
 - Confirma usorem initium sessionis fecisse — widget solum usoribus authenticatis ostenditur
 - Reprehende ut **Enable floating chat widget** in tabula Connector activa sit
 - Verifica navigatrum usoris WebGPU sustinere (vide Requisita supra)
 
-### Indicator in admin-bar ostendit "Error"
+### Indicator in admin-bar ostendit "Error" {#the-admin-bar-indicator-shows-error}
 
 Aperi consolam navigatoris ad excogitatores (F12) et errores ad WebLLM pertinentes quaere. Causae communes:
 
@@ -135,10 +135,10 @@ Aperi consolam navigatoris ad excogitatores (F12) et errores ad WebLLM pertinent
 - Descriptio ponderum exemplaris defecit — conexionem retis inspice et tenta cache IndexedDB delere in instrumentis excogitatorum navigatoris (Application → IndexedDB)
 - Extensio navigatoris SharedWorker impedit
 
-### Pondera exemplaris omni tempore deponuntur
+### Pondera exemplaris omni tempore deponuntur {#model-weights-download-every-time}
 
 Addon utitur IndexedDB ut fundamento cache, ut pondera exemplaris post CDN redirectiones maneant. Si pondera in omni visitatione iterum deponuntur, inspice ne IndexedDB a secreto navigatoris occasu vel extensione deleatur.
 
-## Index mutationum
+## Index mutationum {#changelog}
 
 Vide [Index mutationum](./changelog) pro plena historia versionum.

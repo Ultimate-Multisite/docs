@@ -3,17 +3,17 @@ title: Nola konfiguratu domeinu-mapaketa
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Nola konfiguratu Domain Mapping (v2)
+# Nola konfiguratu Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
 
 _**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 
 Premium sare baten ezaugarri indartsuenetako bat gure bezeroei beren guneei goi-mailako domeinu bat eransteko aukera eskaintzea da. Azken finean, zer da profesionalagoa dirudiena: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) edo [_**joesbikeshop.com**_](http://joesbikeshop.com)? Horregatik Ultimate Multisite-k ezaugarri hori integratuta eskaintzen du, hirugarrenen plugin-ak erabili beharrik gabe.
 
-## Zer da domain mapping?
+## Zer da domain mapping? {#whats-domain-mapping}
 
 Izenak iradokitzen duen bezala, domain mapping Ultimate Multisite-k eskaintzen duen gaitasuna da domeinu pertsonalizatu baterako eskaera bat jasotzeko eta eskaera hori sareko dagokion gunera mapatzeko, domeinu jakin hori erantsita duena.
 
-### Nola konfiguratu domain mapping zure Ultimate Multisite Sarean
+### Nola konfiguratu domain mapping zure Ultimate Multisite Sarean {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domain mapping-ek zure aldetik konfigurazio pixka bat behar du funtzionatzeko. Zorionez, Ultimate Multisite-k lan zaila automatizatzen du zuretzat, eskakizunak erraz bete ditzazun.
 
@@ -45,7 +45,7 @@ Baina domeinu pertsonalizatua zure sareko azpiguneetako batera mapatzen hasi aur
 
 ###
 
-### Domeinuaren DNS ezarpenak behar bezala konfiguratuta daudela ziurtatzea
+### Domeinuaren DNS ezarpenak behar bezala konfiguratuta daudela ziurtatzea {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Mapping batek funtzionatzeko, mapatu nahi duzun domeinua zure Sarearen IP helbidera seinalatzen ari dela ziurtatu behar duzu. Kontuan izan Sarearen IP helbidea behar duzula —Ultimate Multisite instalatuta dagoen domeinuaren IP helbidea—, ez mapatu nahi duzun domeinu pertsonalizatuaren IP helbidea. Domeinu jakin baten IP helbidea bilatzeko, adibidez, [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) erabiltzera joatea gomendatzen dugu.
 
@@ -55,7 +55,7 @@ Hau funtzionarazteko arazoak badituzu, **jarri harremanetan zure domeinu-erregis
 
 Zure bezeroei beren domeinuak mapatzen uzteko asmoa baduzu, zati honetako lana beraiek egin beharko dute. Bideratu itzazu beren erregistratzailearen laguntza-sistemara A Record sortu ezin badute.
 
-### Domeinu-izen pertsonalizatua Super Admin gisa mapatzea
+### Domeinu-izen pertsonalizatua Super Admin gisa mapatzea {#mapping-custom-domain-name-as-super-admin}
 
 Zure sarean super admin gisa saioa hasita zaudenean, erraz gehitu eta kudea ditzakezu domeinu-izen pertsonalizatuak **Ultimate Multisite > Domains** atalera joanda.
 
@@ -93,7 +93,7 @@ Domeinu-izenaren gainean klik egiten baduzu, haren barruan aukera batzuk ikusi a
 
 **Segurua da?:** Ultimate Multisite-k domeinuak SSL ziurtagiria duen ala ez egiaztatzen badu ere gaitu aurretik, eskuz hauta dezakezu domeinua SSL ziurtagiriarekin edo gabe kargatzea. Kontuan izan webguneak SSL ziurtagiririk ez badu eta SSL bidez kargatzera behartzen saiatzen bazara, erroreak eman ditzakeela.
 
-### Domeinu-izen pertsonalizatua mapatzea azpiguneko erabiltzaile gisa
+### Domeinu-izen pertsonalizatua mapatzea azpiguneko erabiltzaile gisa {#mapping-custom-domain-name-as-subsite-user}
 
 Azpiguneko administratzaileek ere domeinu-izen pertsonalizatuak mapa ditzakete beren azpiguneko administrazio-Dashboardetik.
 
@@ -121,7 +121,7 @@ Ondoren, erabiltzaileak **Next Step** sakatu eta domeinu-izen pertsonalizatua ge
 
 **Add Domain** sakatzeak domeinu pertsonalizatuaren DNS informazioa egiaztatzeko eta eskuratzeko prozesua hasiko du.
 
-### Domeinuen sinkronizazioari buruz
+### Domeinuen sinkronizazioari buruz {#about-domain-syncing}
 
 Domeinuen sinkronizazioa prozesu bat da, non Ultimate Multisite-k domeinu-izen pertsonalizatua zure ostalaritza-kontura gehitzen duen gehigarri-domeinu gisa, **domeinu-mapaketak funtziona dezan**.
 

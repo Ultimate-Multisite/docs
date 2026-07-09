@@ -3,7 +3,7 @@ title: Zapier Integrasi
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite'ı Zapier ile Entegre Etmek
+# Ultimate Multisite'ı Zapier ile Entegre Etmek {#integrating-ultimate-multisite-with-zapier}
 
 Bir makalede [Webhooks](webhooks.md) konusunu ve bunların üçüncü taraf uygulamalarla nasıl entegre edilebileceğini tartıştık.
 
@@ -15,7 +15,7 @@ Ağınızda olaylar meydana geldiğinde tetiklenecek **Triggers** oluşturabilir
 
 Bu mümkün çünkü **Ultimate Multisite Zapier'ın triggers** ve actions [REST API](https://developer.ultimatemultisite.com/api/docs/) tarafından desteklenir.
 
-## Nasıl Başlanır
+## Nasıl Başlanır {#how-to-start}
 
 Öncelikle, Zapier uygulama listesinde Ultimate Multisite'ı arayın. Alternatif olarak, [bu bağlantıya](https://zapier.com/apps/wp-ultimo/integrations) tıklayabilirsiniz.
 
@@ -51,7 +51,7 @@ URL ulanyp, protokoly (HTTP ýa-da HTTPS) bilen birlikde şebekenizin doly URL-s
 
 Indiki ädimi geçmek üçin **Yes, Continue** düwmenine basyň. Her zat düzgün bolsa, size täze baglanyşykly hasabyňyz bilen hoşgalty beriljekdir! Täze trigger döretmek üçin **Continue** düwmenine basyň.
 
-## Täze Trigger nädip döredilýär
+## Täze Trigger nädip döredilýär {#how-to-create-a-new-trigger}
 
 Hasaba baglanandan soň, bar bolan waka (event) görkezijilerini görüp bilersiňiz. Bu tutorial üçin biz **payment_received** waka görkezijisini saýlaň.
 
@@ -67,7 +67,7 @@ Bu etapda Zapier, sizin Zap-i şol waka üçin **has görnüşli malumatlary aly
 
 Bizde tutorialda test **başarıyla tamamlandı** we payload örneğindeki bilgileri geri döndürdü. Bu örnek bilgiler, aksiyonlar oluştururken bize yol göstermesi için faydalı olacak. Tetikleyiciniz artık oluşturuldu ve diğer uygulamalarla bağlantı kurmaya hazır.
 
-## Aksiyon Nasıl Oluşturulur
+## Aksiyon Nasıl Oluşturulur {#how-to-create-actions}
 
 Aksiyonlar, ağınızda yeni kayıtlar oluşturmak için diğer tetikleyicilerden bilgi kullanır.
 
@@ -79,7 +79,7 @@ Son adımda ya **Başlamanın Nasıl Yapılacağı** kısmında yaptığımız g
 
 ![Zapier aksiyonu için kimlik doğrulama seçme](/img/admin/webhooks-list.png)
 
-### Aksiyonu Ayarlama
+### Aksiyonu Ayarlama {#setting-up-the-action}
 
 Bu, **aksiyonun ana adımıdır** ve burada işler biraz farklıdır. İlk seçeceğiniz bilgi **Öğe (Item)** olacaktır. Öğe, ağınızın **Müşteriler, Ödemeler, Siteler, E-postalar** gibi **bilgi modelidir**.
 

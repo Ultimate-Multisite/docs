@@ -3,11 +3,11 @@ title: Ihe Atụ Koodu Dị Elu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ihe Nlereanya Code Dị Elu
+# Ihe Nlereanya Code Dị Elu {#advanced-code-examples}
 
 Ihe nlereanya ndị a na-egosi ụkpụrụ njikọta dị elu na Ultimate Multisite.
 
-## Igwe Ọnụahịa Na-agbanwe Agbanwe
+## Igwe Ọnụahịa Na-agbanwe Agbanwe {#dynamic-pricing-engine}
 
 Igwe ọnụahịa dabere na iwu nke na-etinye mbelata ọnụahịa maka olu, ntụkwasị obi, na oge pụrụ iche:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Ịmepụta Site Dị Elu
+## Ịmepụta Site Dị Elu {#advanced-site-provisioning}
 
 Hazie site ọhụrụ na-akpaghị aka site na plugins, SSL, CDN, backups, na monitoring dabere na atụmatụ plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Usoro Mmachi Ahaziri Ahazi
+## Usoro Mmachi Ahaziri Ahazi {#custom-limitations-system}
 
 Soro ma mee ka mmachi akụrụngwa rụọ ọrụ site na ịdọ aka ná ntị ojiji:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter nwere `increment_item()`
+## BerlinDB Atomic Counter nwere `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 tinyere usoro `increment_item()` na BerlinDB klas `Query`. Jiri ya mee mmụba dị nchebe, atomic na kọlụm ọnụọgụgụ na-enweghị asọmpi read-modify-write — bara uru maka ndị ngụ, oke ojiji, na nyocha rate-limiting na-agba n'okpuru arịrịọ ndị na-eme n'otu oge.
 
-### Mbinye aka usoro
+### Mbinye aka usoro {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 tinyere usoro `increment_item()` na BerlinDB klas `Que
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Ojiji bụ isi
+### Ojiji bụ isi {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Iso ojiji API kwa membership
+### Iso ojiji API kwa membership {#tracking-api-usage-per-membership}
 
 Ụkpụrụ bara uru maka ịmanye oke API rate limits kwa membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Gịnị mere `increment_item()` kama `update_item()`
+### Gịnị mere `increment_item()` kama `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Ụzọ read-modify-write dị mfe adịghị nchebe n'okpuru arịrịọ ndị na-eme n'otu oge:
 

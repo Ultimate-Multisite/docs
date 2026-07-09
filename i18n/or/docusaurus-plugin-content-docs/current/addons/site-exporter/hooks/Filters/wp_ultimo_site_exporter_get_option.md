@@ -4,11 +4,11 @@ title: ଫିଲ୍ଟର୍ - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# ଫିଲ୍ଟର: wp_ultimo_site_exporter_get_option
+# ଫିଲ୍ଟର: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 slug ରୂପକୁ ପରିବର୍ତ୍ତିତ ନେଟୱର୍କ ବିକଳ୍ପ ମୂଲ୍ୟ ଫେରାଏ।
 
-## ପାରାମିଟରଗୁଡ଼ିକ
+## ପାରାମିଟରଗୁଡ଼ିକ {#parameters}
 
 | ନାମ | ପ୍ରକାର | ବର୍ଣ୍ଣନା |
 |------|------|-------------|
@@ -16,13 +16,13 @@ slug ରୂପକୁ ପରିବର୍ତ୍ତିତ ନେଟୱର୍କ ବ
 | $option_name | `string` | ବିକଳ୍ପ ନାମ। |
 | $default | `mixed` | ପୂର୍ବନିର୍ଦ୍ଧାରିତ ମୂଲ୍ୟ। |
 
-### ଠାରୁ
+### ଠାରୁ {#since}
 
 - 1.9.6
-### ଉତ୍ସ
+### ଉତ୍ସ {#source}
 
 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) ରେ 126 ନମ୍ବର ଧାଡ଼ିରେ ପରିଭାଷିତ
 
 
-## ଫେରାଏ
+## ଫେରାଏ {#returns}
 slug ରୂପକୁ ପରିବର୍ତ୍ତିତ ନେଟୱର୍କ ବିକଳ୍ପ ମୂଲ୍ୟ।

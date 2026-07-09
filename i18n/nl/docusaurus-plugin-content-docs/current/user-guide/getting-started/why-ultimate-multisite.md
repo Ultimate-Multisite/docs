@@ -3,11 +3,11 @@ title: Waarom Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Waarom Ultimate Multisite
+# Waarom Ultimate Multisite {#why-ultimate-multisite}
 
 Als je dit artikel hebt gelezen, heb je waarschijnlijk gehoord dat onze plugin misschien de oplossing is om je zakelijke idee waar te maken. We hopen dat je tegen het einde van dit stuk de antwoorden hebt die je nodig hebt.
 
-## Wat is Ultimate Multisite?
+## Wat is Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite is een WordPress Multisite-plugin waarmee je klanten een WaaS (Website as a Service) kunt aanbieden. Met onze plugin kun je verschillende abonnementsniveaus aanbieden en klanten laten betalen voor een terugkerende vergoeding om een site te hosten in je Multisite-netwerk.
 
@@ -15,7 +15,7 @@ Ultimate Multisite laat je betalingen ontvangen via verschillende gateways (zoal
 
 En dit is nog maar het begin, want je kunt de functies uitbreiden met add-ons en webhooks.
 
-## Andere functies
+## Andere functies {#other-features}
 
 Ultimate Multisite biedt ook:
 
@@ -33,11 +33,11 @@ En meer geavanceerde functies:
 
 * Search and Replace API: Je kunt site‑sjablonen ook annoteren met placeholders zoals {{site_name}} en de Search and Replace API gebruiken om die placeholders automatisch te vullen met informatie die door je klant wordt verstrekt direct na de aanmelding.
 
-## Gebruiksscenario's
+## Gebruiksscenario's {#use-cases}
 
 Nu is het tijd om enkele mogelijke gebruiksscenario's voor Ultimate Multisite te bekijken.
 
-### Casus 1: Een Agentuur
+### Casus 1: Een Agentuur {#case-1-an-agency}
 
 Typisch liggen de kernvaardigheden van een agentuur in het ontwerpen van websites, waarbij aspecten zoals hosting of marketing als aanvullende diensten worden vermeld.
 
@@ -47,7 +47,7 @@ Strakke controle over plugins en thema's wordt gehandhaafd op basis van per‑pr
 
 Agenturen zullen gemoedsrust vinden met Ultimate Multisite, waardoor ze kunnen doen waar ze het beste in zijn – uitzonderlijke websites ontwerpen.
 
-### Casus 2: Niche Provider
+### Casus 2: Niche Provider {#case-2-niche-provider}
 
 Er is een oude zegswijze die luidt: “Doe één ding en doe het goed”. Voor veel specialisten betekent dit het creëren van een product of dienst rond één kernidee.
 
@@ -57,7 +57,7 @@ Een van de innovatieve functies van Ultimate Multisite is een template site, waa
 
 Voor een provider van niche‑sites en diensten biedt dit een ongeëvenaarde voordeel in het vermogen om onmiddellijk een site klaar te maken met aangepaste plugins en ontwerp. De klant hoeft alleen minimale input te leveren om de dienst te voltooien.
 
-### Casus 3: WordPress Web Hosting
+### Casus 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Er zijn talloze manieren om WordPress‑sites te hosten, maar het is zelden zo eenvoudig als het aanbieden van webruimte aan een klant met een vooraf geïnstalleerde versie van WordPress. Dit komt omdat een aantal beslissingen en overwegingen samen moeten komen om een betekenisvolle service te bieden.
 

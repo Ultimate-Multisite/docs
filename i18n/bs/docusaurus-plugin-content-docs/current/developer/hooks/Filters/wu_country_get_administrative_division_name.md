@@ -4,11 +4,11 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Vraća lijepo ime administrativnih podježdionica zemlje.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Opis |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Vraća lijepo ime administrativnih podježdionica zemlje.
 | $ucwords | `bool` | Ako želimo da slova budu velika (kapitalna). |
 | $current_country | `\WP_Ultimo\Country\Country` | Instanca trenutne klase. |
 
-### Od
+### Od {#since}
 
 - 2.0.11
-### Izvor
+### Izvor {#source}
 
 Definisano je u [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) na liniji 250
 
 
-## Vraća
+## Vraća {#returns}
 Izmijenjeno ime podježdionice.

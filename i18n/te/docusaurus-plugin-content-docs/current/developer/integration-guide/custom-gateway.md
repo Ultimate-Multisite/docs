@@ -3,11 +3,11 @@ title: కస్టమ్ గేట్‌వే అభివృద్ధి
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# కస్టమ్ గేట్‌వే అభివృద్ధి
+# కస్టమ్ గేట్‌వే అభివృద్ధి {#custom-gateway-development}
 
 `Base_Gateway` క్లాస్‌ను విస్తరించి మీరు కస్టమ్ చెల్లింపు గేట్‌వేలను సృష్టించవచ్చు.
 
-## గేట్‌వే క్లాస్
+## గేట్‌వే క్లాస్ {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## గేట్‌వేను నమోదు చేయండి
+## గేట్‌వేను నమోదు చేయండి {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## ముఖ్య విధానాలు
+## ముఖ్య విధానాలు {#key-methods}
 
 | విధానం | ఉద్దేశ్యం |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | refund అభ్యర్థనలను నిర్వహిస్తుంది |
 | `get_payment_methods()` | customer కోసం సేవ్ చేసిన చెల్లింపు విధానాలను తిరిగి ఇస్తుంది |
 
-## పునరావృత membershipల కోసం పునరుద్ధరణ credentials
+## పునరావృత membershipల కోసం పునరుద్ధరణ credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 లో, `auto_renew` నిల్వ చేయబడే ముందు పునరావృత membershipకు మళ్లీ ఉపయోగించగల పునరుద్ధరణ credential ఉందో లేదో gateway integrations తెలియజేయగలవు. `wu_membership_has_renewal_credential` ను hook చేసి ఇలా తిరిగి ఇవ్వండి:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 కొత్తగా మళ్లీ ఉపయోగించగల credential నిల్వ చేసిన తర్వాత, మీ gateway యొక్క విజయవంతమైన re-authorization flow లో భాగంగా missing-credential markerను క్లియర్ చేయండి.
 
-## సూచనలు
+## సూచనలు {#tips}
 
 - విఫలమైనప్పుడు ఎల్లప్పుడూ `WP_Error` ను తిరిగి ఇవ్వండి, తద్వారా Ultimate Multisite లోపం ప్రదర్శనను నిర్వహించగలదు
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gatewayకు సంబంధించిన logging కోసం `wu_log_add()` ను ఉపయోగించండి
 
-## AI connector provider సామర్థ్యాలు
+## AI connector provider సామర్థ్యాలు {#ai-connector-provider-capabilities}
 
 AI connector ఆధారిత చర్యలను పిలిచే కస్టమ్ integrations, AI Provider for Anthropic Max v1.3.0 తో పరిచయం చేసిన మద్దతు ఉన్న OAuth provider సమితికి అనుగుణంగా ఉండాలి:
 

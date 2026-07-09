@@ -3,7 +3,7 @@ title: Referentie voor mogelijkheden
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities-referentie
+# Abilities-referentie {#abilities-reference}
 
 Abilities zijn de atomische acties die Gratis AI Agent kan aanroepen op je WordPress-installatie. Elke ability is een geregistreerde PHP-class die een JSON-schema beschikbaar stelt — de agent leest dit schema tijdens runtime om te begrijpen welke parameters vereist zijn en wat de ability retourneert.
 
@@ -11,11 +11,11 @@ Deze pagina documenteert alle abilities die worden meegeleverd met Gratis AI Age
 
 ---
 
-## Aangepaste berichttypen
+## Aangepaste berichttypen {#custom-post-types}
 
 Deze abilities beheren aangepaste berichttypen (CPT's) die via de agent zijn geregistreerd. Registraties worden opgeslagen in de WordPress-optietabel, zodat ze deactivering en heractivering van de plugin overleven.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registreert een nieuw aangepast berichttype.
 
@@ -50,7 +50,7 @@ Registreert een nieuw aangepast berichttype.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Retourneert alle aangepaste berichttypen die door de agent zijn geregistreerd.
 
@@ -73,7 +73,7 @@ Retourneert alle aangepaste berichttypen die door de agent zijn geregistreerd.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Deregistreert een aangepast berichttype dat eerder door de agent is geregistreerd. Bestaande berichten van dat type blijven in de database, maar zijn niet langer toegankelijk via het berichttype.
 
@@ -87,11 +87,11 @@ Deregistreert een aangepast berichttype dat eerder door de agent is geregistreer
 
 ---
 
-## Aangepaste taxonomieën
+## Aangepaste taxonomieën {#custom-taxonomies}
 
 Deze abilities beheren aangepaste taxonomieën. Net als CPT's worden taxonomieregistraties opgeslagen.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registreert een nieuwe aangepaste taxonomie.
 
@@ -123,7 +123,7 @@ Registreert een nieuwe aangepaste taxonomie.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Retourneert alle aangepaste taxonomieën die door de agent zijn geregistreerd.
 
@@ -146,7 +146,7 @@ Retourneert alle aangepaste taxonomieën die door de agent zijn geregistreerd.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Deregistreert een aangepaste taxonomie die eerder door de agent is geregistreerd.
 
@@ -160,11 +160,11 @@ Deregistreert een aangepaste taxonomie die eerder door de agent is geregistreerd
 
 ---
 
-## Ontwerpsysteem
+## Ontwerpsysteem {#design-system}
 
 Ontwerpsysteem-abilities wijzigen de visuele presentatie van de WordPress-site — van aangepaste CSS tot blokpatronen en het sitelogo.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Voegt CSS toe aan de `<head>` van de site via `wp_add_inline_style`. CSS wordt opgeslagen in de optie `gratis_ai_agent_custom_css` en netjes uit de wachtrij verwijderd wanneer de ability wordt gereset.
 
@@ -190,7 +190,7 @@ Voegt CSS toe aan de `<head>` van de site via `wp_add_inline_style`. CSS wordt o
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registreert een herbruikbaar blokpatroon in de WordPress-patroonbibliotheek.
 
@@ -209,7 +209,7 @@ Registreert een herbruikbaar blokpatroon in de WordPress-patroonbibliotheek.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Toont alle blokpatronen die door de agent zijn geregistreerd.
 
@@ -231,7 +231,7 @@ Toont alle blokpatronen die door de agent zijn geregistreerd.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Stelt het WordPress-sitelogo in op een opgegeven bijlage-ID of een externe afbeeldings-URL. Wanneer een URL wordt opgegeven, wordt de afbeelding gedownload en geïmporteerd in de Mediabibliotheek.
 
@@ -248,7 +248,7 @@ Een van `attachment_id` of `url` moet worden opgegeven.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Past een benoemde kleur-/typografie-preset toe op de `theme.json` (of `global-styles`) van het actieve thema. Presets zijn samengestelde bundels die worden onderhouden door het Gratis AI Agent-team.
 
@@ -273,11 +273,11 @@ Past een benoemde kleur-/typografie-preset toe op de `theme.json` (of `global-st
 
 ---
 
-## Globale stijlen
+## Globale stijlen {#global-styles}
 
 Mogelijkheden voor Globale stijlen lezen en schrijven theme.json-waarden via de WordPress Global Styles API, met effect op alle blokken en templates voor de hele site.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Retourneert de huidige configuratie van globale stijlen.
 
@@ -291,7 +291,7 @@ Retourneert de huidige configuratie van globale stijlen.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Werkt een of meer waarden bij in de configuratie van globale stijlen.
 
@@ -318,7 +318,7 @@ Werkt een of meer waarden bij in de configuratie van globale stijlen.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Reset alle door de agent toegepaste wijzigingen in globale stijlen en herstelt de standaardwaarden van het thema.
 
@@ -328,11 +328,11 @@ Reset alle door de agent toegepaste wijzigingen in globale stijlen en herstelt d
 
 ---
 
-## Navigatiemenu's
+## Navigatiemenu's {#navigation-menus}
 
 Mogelijkheden voor navigatiemenu's maken en beheren WordPress-navigatiemenu's en hun items.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Maakt een nieuw WordPress-navigatiemenu.
 
@@ -347,7 +347,7 @@ Maakt een nieuw WordPress-navigatiemenu.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Wijzigt de naam van een menu of wijst het opnieuw toe aan een themalocatie.
 
@@ -363,7 +363,7 @@ Wijzigt de naam van een menu of wijst het opnieuw toe aan een themalocatie.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Voegt een item toe aan een bestaand navigatiemenu.
 
@@ -383,7 +383,7 @@ Voegt een item toe aan een bestaand navigatiemenu.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Verwijdert een item uit een navigatiemenu.
 
@@ -397,7 +397,7 @@ Verwijdert een item uit een navigatiemenu.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Toont alle WordPress-navigatiemenu's, inclusief hun toegewezen themalocaties.
 
@@ -420,11 +420,11 @@ Toont alle WordPress-navigatiemenu's, inclusief hun toegewezen themalocaties.
 
 ---
 
-## Optiebeheer
+## Optiebeheer {#options-management}
 
 Optiemogelijkheden lezen en schrijven WordPress-opties via `get_option` / `update_option`. Een ingebouwde veiligheidsblokkeerlijst voorkomt onbedoelde wijziging van kritieke instellingen.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Leest een WordPress-optie.
 
@@ -440,7 +440,7 @@ Retourneert een fout als `option_name` op de veiligheidsblokkeerlijst staat.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Schrijft een WordPress-optie.
 
@@ -458,7 +458,7 @@ Retourneert een fout als `option_name` op de veiligheidsblokkeerlijst staat.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Verwijdert een WordPress-optie.
 
@@ -474,7 +474,7 @@ Retourneert een fout als `option_name` op de veiligheidsblokkeerlijst staat.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Geeft WordPress-opties weer die overeenkomen met een patroon.
 
@@ -498,11 +498,11 @@ Geeft WordPress-opties weer die overeenkomen met een patroon.
 
 ---
 
-## Contentbeheer
+## Contentbeheer {#content-management}
 
 Contentbeheer-mogelijkheden maken en bewerken WordPress-berichten en pagina's. Bericht-ID's worden geretourneerd zodat vervolgstappen in plannen met meerdere mogelijkheden naar de aangemaakte content kunnen verwijzen.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Maakt een nieuw WordPress-bericht, een nieuwe pagina of een item van een aangepast berichttype aan.
 
@@ -537,7 +537,7 @@ Maakt een nieuw WordPress-bericht, een nieuwe pagina of een item van een aangepa
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Werkt een bestaand WordPress-bericht of bestaande pagina bij.
 
@@ -567,7 +567,7 @@ Werkt een bestaand WordPress-bericht of bestaande pagina bij.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Maakt meerdere berichten aan in één enkele aanroep van een mogelijkheid, waardoor round-trips tijdens het bouwen van sites of bulkimport van content worden verminderd. Berichten worden op volgorde aangemaakt; als er één mislukt, gaan de andere door en wordt de fout gerapporteerd in de resultatenarray.
 
@@ -619,7 +619,7 @@ Maakt meerdere berichten aan in één enkele aanroep van een mogelijkheid, waard
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Wijst een uitgelichte afbeelding (berichtthumbnail) toe aan een bestaand bericht of bestaande pagina. Accepteert een bestaande bijlage-ID uit de Media Library of een externe afbeeldings-URL; wanneer een URL wordt opgegeven, wordt de afbeelding automatisch gedownload en geïmporteerd.
 
@@ -638,7 +638,7 @@ Een van `attachment_id` of `url` moet worden opgegeven.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Maakt een contactformulier aan met de actieve formulierplugin (Contact Form 7, WPForms, Fluent Forms of Gravity Forms, afhankelijk van wat is geïnstalleerd). Retourneert een shortcode die in elk bericht of elke pagina kan worden ingesloten.
 
@@ -691,11 +691,11 @@ Maakt een contactformulier aan met de actieve formulierplugin (Contact Form 7, W
 
 ---
 
-## Visuele beoordeling
+## Visuele beoordeling {#visual-review}
 
 Met Visual Review-mogelijkheden kan de agent screenshots van livepagina’s vastleggen en analyseren, waardoor autonome ontwerpbeoordeling, voor/na-vergelijkingen en visuele regressiecontroles mogelijk zijn zonder dat een browserextensie nodig is.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Legt een screenshot vast van een WordPress-pagina op een opgegeven URL met behulp van een server-side headless browser. De afbeelding wordt opgeslagen in de Media Library en er wordt een CDN-URL geretourneerd.
 
@@ -724,7 +724,7 @@ Legt een screenshot vast van een WordPress-pagina op een opgegeven URL met behul
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Neemt twee screenshots en retourneert een visuele diff-score plus een diff-afbeelding waarin gewijzigde gebieden worden gemarkeerd. Handig om te bevestigen dat een ontwerpwijziging het verwachte resultaat heeft opgeleverd of om onbedoelde regressies te detecteren.
 
@@ -754,7 +754,7 @@ Een `diff_score` van `0.0` betekent geen zichtbare wijziging; `1.0` betekent dat
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Legt een screenshot van een pagina vast en stuurt deze naar het taalmodel voor visuele analyse. Retourneert een gestructureerde beoordeling die lay-out, typografie, kleurgebruik en toegankelijkheidsproblemen behandelt.
 
@@ -785,11 +785,11 @@ Legt een screenshot van een pagina vast en stuurt deze naar het taalmodel voor v
 
 ---
 
-## Installeerbare mogelijkheden
+## Installeerbare mogelijkheden {#installable-abilities}
 
 Met het Installable Abilities Registry kun je de agent uitbreiden met extra mogelijkheidspakketten die als WordPress-plugins worden verspreid. Elk pakket registreert een of meer mogelijkheden met de standaard ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Retourneert de catalogus met mogelijkheidspakketten die beschikbaar zijn voor installatie vanuit het register.
 
@@ -818,7 +818,7 @@ Retourneert de catalogus met mogelijkheidspakketten die beschikbaar zijn voor in
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Downloadt en activeert een vaardighedenpakket vanuit het register.
 
@@ -832,7 +832,7 @@ Downloadt en activeert een vaardighedenpakket vanuit het register.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Bevraagt het vaardighedenregister om de beste plug-in voor een beschreven gebruiksscenario te vinden en installeert deze optioneel.
 

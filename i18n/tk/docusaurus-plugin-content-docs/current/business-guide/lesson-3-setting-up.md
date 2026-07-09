@@ -3,32 +3,32 @@ title: 'Sapak 3: Toruňyzy sazlamak'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Sapak 3: Toruňyzy gurnamak
+# Sapak 3: Toruňyzy gurnamak {#lesson-3-setting-up-your-network}
 
 Gurmaga wagt geldi. Bu sapakda Ultimate Multisite gurnarsyňyz we FitSite torunyň binýadyny sazlamaga başlarsyňyz. Bu ýerdäki her bir karar fitness ugruny göz öňünde tutup kabul edilýär.
 
-## Nirä çenli gelipdik
+## Nirä çenli gelipdik {#where-we-left-off}
 
 Biz fitness studiýalaryny öz ugrumyz hökmünde saýladyk we mümkinçilikleri barladyk. Indi şol pikiri işleýän platforma öwürýäris.
 
-## Hosting saýlamak
+## Hosting saýlamak {#choosing-your-hosting}
 
 Hosting saýlawyňyz aýratyn bir websaýtdan has köp, ýörite ugra gönükdirilen platforma üçin has möhümdir. Siz diňe bir saýty ýerleşdirmeýärsiňiz -- siz onlarça ýa-da ýüzlerçe saýta çenli ösjek tor ýerleşdirýärsiňiz.
 
-### Näme gözlemeli
+### Näme gözlemeli {#what-to-look-for}
 
 - **WordPress Multisite goldawy**: Ähli hostlar multisite bilen gowy işlemeýär
 - **Wildcard SSL**: Subdomen esasly torlar üçin hökmany
 - **Giňeldilip bilinýän resurslar**: Migrasiýa etmezden ösmek üçin giňişlik gerek
 - **Ultimate Multisite integrasiýasy**: Awtomatlaşdyrylan domen baglanyşygy we SSL ep-esli operasiýa zähmetini tygşytlaýar
 
-### Maslahat berilýän çemeleşme
+### Maslahat berilýän çemeleşme {#recommended-approach}
 
 [Utgaşykly üpjün edijiler](/user-guide/host-integrations/closte) sanawyndan host saýlaň. Bular Ultimate Multisite bilen synagdan geçirildi we domen baglanyşygy hem-de SSL awtomatlaşdyrmasy üçin zerur integrasiýalary üpjün edýär.
 
 FitSite üçin biz subdomen konfigurasiýasyny ulanarys. Bu, müşderi saýtlarynyň öz domenlerini islege görä baglamazdan ozal ilki `studioname.fitsite.com` görnüşinde görünjekdigini aňladýar.
 
-## WordPress Multisite gurnamak
+## WordPress Multisite gurnamak {#installing-wordpress-multisite}
 
 Eger sizde entek WordPress Multisite gurnamasy ýok bolsa:
 
@@ -40,7 +40,7 @@ Eger sizde entek WordPress Multisite gurnamasy ýok bolsa:
 Subdomenler her müşderi saýtyna ýol (`fitsite.com/studio`) däl-de, öz aýratyn salgysyny (`studio.fitsite.com`) berýär. Bu müşderileriňiz üçin has hünärli görünýär we permalink gapma-garşylyklarynyň öňüni alýar. Jikme-jik deňeşdirme üçin [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) serediň.
 :::
 
-## Ultimate Multisite gurnamak
+## Ultimate Multisite gurnamak {#installing-ultimate-multisite}
 
 [Ultimate Multisite gurnamak](/user-guide/getting-started/installing-ultimate-multisite) gollanmasyna eýerip:
 
@@ -53,11 +53,11 @@ Gurnama jadygöýiniň dowamynda FitSite ugruny ýatda saklaň:
 - **Kompaniýanyň ady**: "FitSite" (ýa-da saýlan brand adyňyz)
 - **Kompaniýanyň logotipi**: Brand logotipiňizi ýükläň -- bu hasap-fakturalarda we email-lerde görünýär
 
-## Fitness ugry üçin sazlamak
+## Fitness ugry üçin sazlamak {#configuring-for-the-fitness-niche}
 
 Ultimate Multisite gurnalandan soň, şu ugra mahsus konfigurasiýa saýlawlaryny ediň:
 
-### Umumy sazlamalar
+### Umumy sazlamalar {#general-settings}
 
 **Ultimate Multisite > Settings** bölümine geçiň we sazlaň:
 
@@ -65,7 +65,7 @@ Ultimate Multisite gurnalandan soň, şu ugra mahsus konfigurasiýa saýlawlaryn
 - **Bellenen rol**: Administrator -- fitness studiýasynyň eýelerine saýtynyň mazmunyna doly gözegçilik gerek
 - **Hasaba alyş**: Ulanyjy hasaba alşyny işjeňleşdiriň, şeýlelikde studiýa eýeleri özleri ýazylyp bilerler
 
-### Email konfigurasiýasy
+### Email konfigurasiýasy {#email-configuration}
 
 Ulgam email-leriňiz ugruňyzyň dilinde geplemeli. **Ultimate Multisite > Settings > Emails** bölümine geçiň we özleşdiriň:
 
@@ -75,7 +75,7 @@ Ulgam email-leriňiz ugruňyzyň dilinde geplemeli. **Ultimate Multisite > Setti
 
 Bulary 8-nji sapakda (Müşderini uýgunlaşdyrmak) has-da kämilleşdireris, emma indi äheňi kesgitlemek hatda irki synag ýazylmalarynyň hem ugra mahsus duýulmagyny üpjün edýär.
 
-### Domen konfigurasiýasy
+### Domen konfigurasiýasy {#domain-configuration}
 
 Eger utgaşykly hosting üpjün edijisini ulanýan bolsaňyz, domen baglanyşygyny indi sazlaň:
 
@@ -85,7 +85,7 @@ Eger utgaşykly hosting üpjün edijisini ulanýan bolsaňyz, domen baglanyşygy
 
 Bu indiki sapakda şablonlary we synag saýtlaryny döretmäge başlanymyzda, hemme zadyň başyndan ahyryna çenli işlemegini üpjün edýär.
 
-## Häzirki wagta çenli FitSite tory
+## Häzirki wagta çenli FitSite tory {#the-fitsite-network-so-far}
 
 Bu sapagyň ahyrynda sizde şular bar:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Ready for site templates (next lesson)
 ```
 
-## Bu sapakda näme gurdymyz
+## Bu sapakda näme gurdymyz {#what-we-built-this-lesson}
 
 - Subdomen režiminde **işleýän WordPress Multisite** gurnamasy
 - FitSite branding bilen sazlanan we **Ultimate Multisite gurnalan**

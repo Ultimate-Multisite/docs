@@ -4,11 +4,11 @@ title: Tace - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Tacewa: wu_rest_delete_item
+# Tacewa: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 Yana tace ko an yarda a ci gaba da buƙatar ko a'a.
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yana tace ko an yarda a ci gaba da buƙatar ko a'a.
 | $rest_base | `array` | Slug na abu. |
 | $this | `\Base_Manager` | Instance na abin. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 2.0.0
-### Tushe
+### Tushe {#source}
 
 An ayyana a cikin [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) a layi na 440

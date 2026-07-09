@@ -4,19 +4,19 @@ title: Chochita - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Zochita: wu_template_previewer
+# Zochita: wu_template_previewer {#action-wutemplatepreviewer}
 
 Imayenda ikakhala mkati mwa template previewer context.
 
-## Magawo
+## Magawo {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
 | $template_previewer | `self` | Instance ya class yapano. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.4
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) pa mzere 86

@@ -4,11 +4,11 @@ title: Isihluzi - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Isihluzi: auth_cookie_expiration
+# Isihluzi: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Sihluza ubude bexesha lokuphelelwa kwe-cookie yokuqinisekisa.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sihluza ubude bexesha lokuphelelwa kwe-cookie yokuqinisekisa.
 | $user_id | `int` | ID yomsebenzisi. |
 | $remember | `bool` | Nokuba makukhunjulwe ukungena komsebenzisi. Okungagqibekanga false. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 2.8.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) kumgca 52

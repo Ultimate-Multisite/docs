@@ -3,11 +3,11 @@ title: Loga athruithe
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Loga athruithe
+# Loga athruithe {#changelog}
 
-## 1.9.0 — Eisithe ar 2026-04-28
+## 1.9.0 — Eisithe ar 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nua
+### Nua {#new}
 
 - **cumas `create_contact_form`** — cruthaíonn sé foirm theagmhála ag úsáid an plugin foirme ghníomhaigh (Contact Form 7, WPForms, Fluent Forms, nó Gravity Forms) agus filleann sé shortcode réidh le leabú in aon alt nó leathanach.
 - **cumas `set_featured_image`** — sannann sé íomhá aibhsithe d’alt nó do leathanach ó ID ceangaltáin Media Library atá ann cheana nó ó URL cianda; iompórtálann sé an íomhá go huathoibríoch nuair a chuirtear URL ar fáil.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Athchóirigh an seisiún deireanach** — athlódálann an painéal comhrá an comhrá is déanaí go huathoibríoch anois ar luchtú leathanaigh agus ar oscailt an ghiúirléid, mar sin ní chailltear comhthéacs riamh thar loingseoireacht leathanaigh.
 - **Naisc ghníomhaíochta plugin** — tá naisc thapa chuig Settings agus chuig an gClárlann Cumais le feiceáil anois ar scáileán WordPress **Plugins → Plugins Suiteáilte** faoi thuairisc an plugin.
 
-### Feabhsaithe
+### Feabhsaithe {#improved}
 
 - **Atriail foinse íomhá** — déanann an gníomhaire atriail anois ar gach foinse íomhá saor in aisce atá cumraithe sula dtiteann sé siar ar íomhá ginte ag AI nuair a theipeann ar íoslódáil.
 - **Painéal faisnéise samhla** — infheicthe i gcónaí i gceanntásc an chomhrá; níl sé i bhfolach a thuilleadh tar éis na chéad teachtaireachta.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Athdhearadh giúirléid chomhrá** — tagann deilbhín aontaithe AI in ionad an avatar shaincheaptha roimhe seo; comhsheasmhach leis an gcóras gníomhairí ionsuite.
 - **Nascú URL** — déantar URLanna a bhíonn le feiceáil i dteachtaireachtaí córais agus i mboilgeoga teachtaireachta earráide a rindreáil anois mar naisc inchliceáilte.
 
-### Ceartaithe
+### Ceartaithe {#fixed}
 
 - **Infhaighteacht cumais** — ceartaíodh tuairiscí, tagairtí leide córais, agus ailíniú namespace ionas go bhfeictear gach cumas go hiontaofa i liosta uirlisí an ghníomhaire.
 - **Taisce soláthraithe** — déantar soláthraithe a thaisceadh anois ar fud an tsuímh trí chuntar leagain, rud a choisceann fadhbanna soláthraithe seanchaite ar líonraí multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Eisithe ar 2026-04-09
+## 1.4.0 — Eisithe ar 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nua
+### Nua {#new-1}
 
 - **Ordú benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — ritheann sé sraith benchmark Agent Capabilities v1 ón líne ordaithe do phíblínte CI agus sreafaí oibre measúnaithe samhlacha. Tacaíonn sé le rith in aghaidh na ceiste, sáruithe soláthraí/samhlacha, agus aschur JSON/CSV.
 - **Sraith benchmark Agent Capabilities v1** — tacar struchtúrtha de spreagthaí casta, ilchéimeacha a chleachtann dromchla iomlán na cumais, le scóráil agus tuairisciú token/fad ama.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ceist benchmark suíomh gréasáin bialainne** (`q-restaurant-website`) — tástáil ó cheann ceann a chlúdaíonn clárú CPT, Design System, nascleanúint, agus fionnachtain plugins.
 - **Plugins nascóra soláthraí AI** curtha le blueprints WordPress Playground chun socrú forbartha áitiúil níos tapúla a dhéanamh.
 
-### Feabhsaithe
+### Feabhsaithe {#improved-1}
 
 - Nuashonraíodh README le doiciméadú nascóra soláthraí AI agus treoracha socraithe.
 
-### Ceartaithe
+### Ceartaithe {#fixed-1}
 
 - Réitíodh 25 teip tástála PHPUnit ar bhrainse `main`.
 - Ceartaíodh formáid URL eisiúintí GitHub in `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Coinnítear nótaí eisiúna roimhe seo i stór an plugin._

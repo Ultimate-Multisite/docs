@@ -3,7 +3,7 @@ title: VAT የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# የቫት የለውጥ መዝገብ
+# የቫት የለውጥ መዝገብ {#vat-changelog}
 
 Version 1.0.7 - የተለቀቀበት ቀን 2026-02-03
 

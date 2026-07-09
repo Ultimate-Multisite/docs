@@ -3,11 +3,11 @@ title: Plugin-konstruisto kaj Sandboksado
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 introducit la **Plugin Builder & Sandbox System**, kiu per permetti al AI assistant generi, aktivi e administra WordPress pluginojn sur viajn de anda — ĉio per segura, izolita sandbox aĉento.
 
-## Vido
+## Vido {#overview}
 
 La Plugin Builder permesas al la AI assistant skribi memaj WordPress pluginojn respondiendo al naturaj lingva petoj. Generitaj pluginoj estas validitaj, estas konservitaj kaj aktivate en sandbox capa antaŭ ol ili afectus vivan siton funkcionon.
 
@@ -17,7 +17,7 @@ Uzo-kazo inkluzivas:
 - Prototipi funkciojn, kiuj postulas WordPress hooks aŭ memaj posttipojn de artikoloj.
 - Krei maldaŭran automatigon skriptojn por batach operacioj.
 
-## Plugin generado per AI
+## Plugin generado per AI {#generating-a-plugin-via-ai}
 
 Por generi pluginon, ofri la ŝaltan interfacon de chato de Gratis AI Agent kaj deskribi, kion vi bezonas. Ekzemple:
 
@@ -32,7 +32,7 @@ La AI faros:
 
 Vi povas perfami rezulton per sekvi en la sama konversacia filbo antaŭ aktiva.
 
-## Sandbox Aktivaĵo
+## Sandbox Aktivaĵo {#sandbox-activation}
 
 Aktivaĵa de generita plugino en la sandbox estas apartigita de aktivaĵa sur la vivan retoj. La sandbox:
 
@@ -46,7 +46,7 @@ Por aktivi pluginon en la sandbox, kliku sur butonon **Aktivi en Sandbox** en la
 
 Un certa statusmeldung konfirmi se si la aktivação sukcesisita aŭ ne. En caso de nefolg, la erorlogi estas prezentita en la chata temo.
 
-## Administriĝo de generitaj pluginoj
+## Administriĝo de generitaj pluginoj {#managing-generated-plugins}
 
 Generitaj pluginoj estas listita en **Gratis AI Agent → Plugin Builder → Manage Plugins**. De ĉi tiu skrimi vi povas:
 
@@ -62,7 +62,7 @@ Generitaj pluginoj estas listita en **Gratis AI Agent → Plugin Builder → Man
 **Install on network** dekloji la generitan pluginon al via viva WordPress multisite. Revizi la kodon de la plugino antaŭ la progresado. Gratis AI Agent demandos konfirmon antaŭ finita viva instalado.
 :::
 
-## Instalado de generita plugino sur la reto
+## Instalado de generita plugino sur la reto {#installing-a-generated-plugin-on-the-network}
 
 Kiam vi estas satisfacita per la sandbox-plugin, vi povas instali ĝin sur la viva reto:
 
@@ -76,7 +76,7 @@ Alternativne, uzu la slash command en la chata interfaco:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin updatoj
+## Plugin updatoj {#plugin-updates}
 
 Por aktualizi generitan pluginon, deskribi la ŝanĝon al la AI-asisto en nova konversacio:
 
@@ -84,7 +84,7 @@ Por aktualizi generitan pluginon, deskribi la ŝanĝon al la AI-asisto en nova k
 
 La AI generas novan versionon, kiu aparas en la sandbox kiam la aktuala versiono. Vi revizi la diff kaj konfirme antaŭ ol la updato aplikiĝas.
 
-## HookScanner Integation
+## HookScanner Integation {#hookscanner-integration}
 
 La Plugin Builder uzas **HookScanner** integritan por analizare la hooks kaj filterojn, kiuj estas registritaj de ĉiu generita plugino. La rezultoj de HookScanner estas montritaj en la chata respondo kaj inkluzivas:
 
@@ -94,7 +94,7 @@ La Plugin Builder uzas **HookScanner** integritan por analizare la hooks kaj fil
 
 Tio helpas vi kompreni la vivman de plugino antaŭ ol aktivi ĝin.
 
-## Sektura Konsideraĵoj
+## Sektura Konsideraĵoj {#security-considerations}
 
 - Generitaj pluginoj estas apartaj de manicial instalitaj pluginoj kaj ne estas aksesaj per la standarda WordPress plugin-menĝa skrianto, ĝis vi eksplice instalas ilin sur la retoj.
 - La sandbox uzas jarvajn validigon por preveni direktio-traveron kiam skribas plugin filojn.

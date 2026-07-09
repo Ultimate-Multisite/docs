@@ -3,11 +3,11 @@ title: Dokumentasi Pembangun
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentasi Pembangun
+# Dokumentasi Pembangun {#developer-documentation}
 
 Panduan ini menyediakan semua yang diperlukan oleh pembangun untuk berintegrasi, memperluas, atau membangunkan *addon* untuk Ultimate Multisite. Ultimate Multisite mengubah rangkaian WordPress Multisite menjadi platform *Website-as-a-Service* (WaaS).
 
-## Apa yang Tersedia
+## Apa yang Tersedia {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Operasi CRUD lengkap untuk semua entiti (pelanggan, tapak, keahlian, pembayaran, produk, domain) dengan pengesahan kunci API
 - **[Hooks Reference](./hooks/guide)** — 200+ *action hooks* dan 280+ *filter hooks* untuk acara kitaran hayat dan penyesuaian
@@ -15,13 +15,13 @@ Panduan ini menyediakan semua yang diperlukan oleh pembangun untuk berintegrasi,
 - **[Code Examples](./code-examples/)** — Corak lanjutan untuk penetapan harga dinamik, penyediaan tapak, had tersuai, dan pemprosesan pelbagai *gateway*
 - **[Addon Development](./addon-development/getting-started)** — Kerangka kerja berstruktur untuk membina *addon plugin*
 
-## Keperluan
+## Keperluan {#requirements}
 
 - Pemasangan WordPress Multisite
 - PHP 7.4 atau lebih tinggi
 - Plugin Ultimate Multisite diaktifkan
 
-## Pemasangan Composer / Bedrock
+## Pemasangan Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite tersedia di [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) sebagai `ultimate-multisite/ultimate-multisite`. Ini adalah kaedah pemasangan yang disyorkan untuk persediaan WordPress berasaskan [Bedrock] dan persekitaran yang diuruskan Composer yang lain.
 
@@ -45,15 +45,15 @@ Atau, jika anda memuatkan plugin ini sebagai plugin wajib guna (*must-use plugin
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Permulaan Pantas
+## Permulaan Pantas {#quick-start}
 
-### Gunakan REST API
+### Gunakan REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Kaitkan ke Acara (Hook into Events)
+### Kaitkan ke Acara (Hook into Events) {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Bina Addon
+### Bina Addon {#build-an-addon}
 
 ```bash
 # Jana rangka kerja addon daripada templat

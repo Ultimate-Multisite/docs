@@ -4,11 +4,11 @@ title: Veiksmas - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Veiksmas: wu_membership_post_renew
+# Veiksmas: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Suveikia po narystės atnaujinimo.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Suveikia po narystės atnaujinimo.
 | $membership_id | `int` | Narystės ID. |
 | $membership | `\Membership` | Narystės objektas. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) 2235 eilutėje

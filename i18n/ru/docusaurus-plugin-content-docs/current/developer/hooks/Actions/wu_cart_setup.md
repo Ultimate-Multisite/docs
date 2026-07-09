@@ -4,20 +4,20 @@ title: Действие - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Действие: wu_cart_setup
+# Действие: wu_cart_setup {#action-wucartsetup}
 
 Позволяет разработчикам вносить дополнительные изменения в объект оформления заказа.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $this | `` | \WP_Ultimo\Checkout\Cart Объект корзины. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L333) на строке 333

@@ -3,15 +3,15 @@ title: Dnevnik promjena činjenica o Chucku Norrisu
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Dnevnik promjena Chuck Norris činjenica
+# Dnevnik promjena Chuck Norris činjenica {#chuck-norris-facts-changelog}
 
-### 1.0.1 - 2025-11-03
+### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Dodano: Funkcionalnost automatskog ažuriranja putem Ultimate Multisite poslužitelja za ažuriranja
 * Ažurirano: Testirano do WordPress 6.6
 * Ažurirano: Poboljšana struktura dodatka s composer autoloaderom
 * Ažurirano: Poboljšana kompatibilnost s modernim WordPress instalacijama
 
-### 1.0.0 - 2024-10-21
+### 1.0.0 - 2024-10-21 {#100---2024-10-21}
 * Početno izdanje
 * 110+ Chuck Norris činjenica
 * Puna podrška za prijevod

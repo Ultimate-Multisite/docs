@@ -3,7 +3,7 @@ title: 网络钩子
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks 初探 (v2)
+# Webhooks 初探 (v2) {#a-first-look-on-webhooks-v2}
 
 _**注意：请注意，此功能或文章面向高级用户。**_
 
@@ -11,7 +11,7 @@ _**注意：请注意，此功能或文章面向高级用户。**_
 
 如果你需要在每次触发事件时，将某些数据从 Ultimate Multisite 集成或传递到另一个 CRM 或系统，这会很有帮助。例如，每次创建新用户 Account 时，你需要将用户的姓名和电子邮件地址发送到邮件列表。
 
-## 如何创建 webhook
+## 如何创建 webhook {#how-to-create-a-webhook}
 
 要创建 webhook，请前往你的网络管理 Dashboard。点击 **Ultimate Multisite > Webhooks > 添加新的 Webhook。**
 

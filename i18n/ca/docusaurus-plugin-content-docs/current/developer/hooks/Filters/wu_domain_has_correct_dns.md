@@ -4,11 +4,11 @@ title: Filtre - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filtre: wu_domain_has_correct_dns
+# Filtre: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Permet als desenvolupadors de plugins afegir noves comprovacions per definir els resultats.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Permet als desenvolupadors de plugins afegir noves comprovacions per definir els
 | $domain | `self` | La instància de domini actual. |
 | $domains_and_ips | `array` | La llista de dominis i IPs trobats a la consulta DNS. |
 
-### Des de
+### Des de {#since}
 
 - 2.0.4
-### Font
+### Font {#source}
 
 Definit a [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) a la línia 455
 
 
-## Retorna
+## Retorna {#returns}
 Si el DNS està configurat correctament o no.

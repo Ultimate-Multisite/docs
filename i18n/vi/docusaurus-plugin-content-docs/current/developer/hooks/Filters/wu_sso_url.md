@@ -4,13 +4,13 @@ title: Bộ lọc - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Bộ lọc: wu_sso_url
+# Bộ lọc: wu_sso_url {#filter-wussourl}
 
 Lọc các URL SSO đã tạo trước khi chúng được trả về cho các hành động khách hàng liên miền.
 
 Sử dụng bộ lọc này khi một tích hợp cần thêm ngữ cảnh đáng tin cậy vào liên kết SSO sovereign-tenant hoặc thay thế URL broker trong khi vẫn giữ nguyên việc xác thực token của Ultimate Multisite.
 
-## Tham số
+## Tham số {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Sử dụng bộ lọc này khi một tích hợp cần thêm ngữ cảnh đán
 | $site_id | `int` | ID site mục tiêu cho lượt truy cập. |
 | $redirect_to | `string` | URL đích sau khi xác thực SSO thành công. |
 
-### Kể từ
+### Kể từ {#since}
 
 - 2.13.0
 
-### Nguồn
+### Nguồn {#source}
 
 Được định nghĩa trong `inc/sso/class-sso.php`.
 
 
-## Giá trị trả về
+## Giá trị trả về {#returns}
 
 URL SSO đã được lọc.

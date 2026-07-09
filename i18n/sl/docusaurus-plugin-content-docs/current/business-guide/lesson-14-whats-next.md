@@ -3,15 +3,15 @@ title: 'Lekcija 14: Kaj sledi'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lekcija 14: Kaj sledi
+# Lekcija 14: Kaj sledi {#lesson-14-what-comes-next}
 
 Zgradili ste nišno platformo spletnih mest iz nič. FitSite je objavljen, služi fitnes studiem in ustvarja ponavljajoče se prihodke. Ta zadnja lekcija obravnava, kam naprej.
 
-## Kje smo končali
+## Kje smo končali {#where-we-left-off}
 
 FitSite je delujoče podjetje s strankami, operacijami in smerjo rasti. Zdaj razmišljamo o tem, kaj sledi.
 
-## Celotno omrežje FitSite
+## Celotno omrežje FitSite {#the-complete-fitsite-network}
 
 Tukaj je vse, kar smo zgradili v 14 lekcijah:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Možnost 1: Poglobite se v svojo nišo
+## Možnost 1: Poglobite se v svojo nišo {#option-1-go-deeper-in-your-niche}
 
 Preden se razširite v nove niše, razmislite o poglobitvi v fitnes:
 
-### Podniše
+### Podniše {#sub-niches}
 
 - **Joga studii** -- specializirane predloge s funkcijami za meditacijo, oddihe in delavnice
 - **CrossFit boxi** -- spremljanje WOD, rezultati tekmovanj, funkcije skupnosti
@@ -59,7 +59,7 @@ Preden se razširite v nove niše, razmislite o poglobitvi v fitnes:
 
 Vsaka podniša ima lahko svoje predloge in potencialno svojo blagovno znamko, vse pa deluje na istem omrežju Ultimate Multisite.
 
-### Premium funkcije
+### Premium funkcije {#premium-features}
 
 Zgradite funkcije, za katere bodo fitnes studii plačali dodatno:
 
@@ -68,14 +68,14 @@ Zgradite funkcije, za katere bodo fitnes studii plačali dodatno:
 - **Predloge za fitnes blog** -- vnaprej zgrajene strukture vsebine za vsebinski marketing v fitnesu
 - **Integracija družbenih omrežij** -- samodejno objavljanje urnikov vadb in posodobitev
 
-### Geografska širitev
+### Geografska širitev {#geographic-expansion}
 
 Če ste začeli lokalno, se razširite na:
 
 - Druga mesta v svoji državi
 - Druge države (uporabite [lokalizacijske funkcije](/user-guide/localization/translating) Ultimate Multisite za podporo več jezikom)
 
-## Možnost 2: Razširite se v sosednje niše
+## Možnost 2: Razširite se v sosednje niše {#option-2-expand-to-adjacent-niches}
 
 Postopek, ki ste ga uporabili za fitnes studie, deluje za katero koli nišo. Vaša druga niša je lažja, ker že imate:
 
@@ -83,7 +83,7 @@ Postopek, ki ste ga uporabili za fitnes studie, deluje za katero koli nišo. Va�
 - Operativne izkušnje
 - Dokazano strategijo
 
-### Sosednje niše fitnesu
+### Sosednje niše fitnesu {#adjacent-niches-to-fitness}
 
 - **Wellness in spa** -- maserji, dnevni spa centri, wellness centri
 - **Športni klubi** -- amaterske športne ekipe, lige, rekreativni klubi
@@ -91,7 +91,7 @@ Postopek, ki ste ga uporabili za fitnes studie, deluje za katero koli nišo. Va�
 
 Ti si s fitnesom delijo prekrivanje občinstva, zato se lahko vaš marketing in partnerstva prenesejo naprej.
 
-### Povsem nove niše
+### Povsem nove niše {#completely-new-niches}
 
 Uporabite okvir iz Lekcije 2 za oceno katere koli niše:
 
@@ -108,7 +108,7 @@ Vsaka nova niša potrebuje:
 
 Infrastruktura platforme, obračunavanje in operativni procesi ostanejo enaki.
 
-## Možnost 3: Zgradite platformo platform
+## Možnost 3: Zgradite platformo platform {#option-3-build-a-platform-of-platforms}
 
 Pri večjem obsegu lahko na enem omrežju Ultimate Multisite upravljate več nišnih blagovnih znamk:
 
@@ -118,11 +118,11 @@ Pri večjem obsegu lahko na enem omrežju Ultimate Multisite upravljate več ni�
 
 Vsaka blagovna znamka ima svoje predloge, pakete in marketing, vendar si delijo infrastrukturo, obračunavanje in operativne procese. Tu postane ekonomika Ultimate Multisite močna -- ena platforma, veliko vertikal.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Za popolno ločitev med nišami razmislite o [dodatku Multi-Network](/addons/multinetwork), ki vam omogoča zagon več WordPress omrežij iz ene same namestitve.
 
-## Možnost 4: Prodajte podjetje
+## Možnost 4: Prodajte podjetje {#option-4-sell-the-business}
 
 Nišna platforma spletnih mest s ponavljajočimi se prihodki, nizkim odlivom strank in jasnim tržnim položajem je dragoceno sredstvo. SaaS podjetja se običajno prodajo za 3-5x letnih prihodkov.
 
@@ -134,7 +134,7 @@ FitSite z 200 strankami pri $89 ARPU:
 
 To ni zagotovljen izid, vendar je realističen za dobro vodeno nišno platformo.
 
-## Kaj ste se naučili
+## Kaj ste se naučili {#what-you-have-learned}
 
 Ta tečaj vas je naučil ponovljivega procesa:
 
@@ -150,7 +150,7 @@ Ta tečaj vas je naučil ponovljivega procesa:
 
 Niša je strategija. Platforma je orodje. Ultimate Multisite omogoča to orodje. Vaše razumevanje niše mu daje vrednost.
 
-## Začnite graditi
+## Začnite graditi {#start-building}
 
 Če ste sledili FitSite, imate delujočo platformo. Če ste brali z namenom najti svojo lastno nišo, se vrnite na [Lekcijo 2: Izbira vaše niše](lesson-2-picking-your-niche) in začnite postopek za izbrano vertikalo.
 

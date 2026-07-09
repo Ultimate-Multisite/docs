@@ -4,13 +4,13 @@ title: Filtre - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filtre: wu_contains_element
+# Filtre: wu_contains_element {#filter-wucontainselement}
 
 Permet als desenvolupadors canviar els resultats de la cerca inicial.
 
 Això és útil per a constructors de tercers i similars.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Això és útil per a constructors de tercers i similars.
 | $element | `self` | L’element actual. |
 | $post | `null\|\WP_Post` | publicació per comprovar. |
 
-### Des de
+### Des de {#since}
 
 - 2.0.0
-### Font
+### Font {#source}
 
 Definit a [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) a la línia 534

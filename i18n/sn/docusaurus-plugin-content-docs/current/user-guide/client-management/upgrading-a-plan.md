@@ -3,7 +3,7 @@ title: Kutanga Plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Kufamba Plan (v2)
+# Kufamba Plan (v2) {#upgrading-a-plan-v2}
 
 _**CHINDIRA CHINDIRA: Iriweyi iri rinoreferira Ultimate Multisite version 2.x.**_
 
@@ -33,7 +33,7 @@ Panguva unokoma checkout, zvinhu zvinotanga (new product(s)) zvichakwanisa kuva 
 
 ##
 
-## Zvinotanga nekuvusha uye kunge kuta (Upgrade and Downgrade Paths)
+## Zvinotanga nekuvusha uye kunge kuta (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Muni product dzako dzose, unoda **Up & Downgrades** tab. Chinhu chaunoda kuita pane chiri chete mu tab iyi ndicho chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri chiri ch
 

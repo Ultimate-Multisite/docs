@@ -3,11 +3,11 @@ title: ترجمة Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# ترجمة Ultimate Multisite
+# ترجمة Ultimate Multisite {#translating-ultimate-multisite}
 
 يتم تطوير Ultimate Multisite باللغة الإنجليزية، لكن الإضافة قابلة للترجمة بالكامل ونرحب بنشاط بمساهمات الترجمة.
 
-## ترجمات الإضافة الأساسية
+## ترجمات الإضافة الأساسية {#core-plugin-translations}
 
 يتم ترجمة الإضافة الأساسية Ultimate Multisite عبر منصة الترجمة الرسمية **WordPress.org**:
 
@@ -24,7 +24,7 @@ _i18n_hash: a433d81386db16579adeb9a60f6af240
 
 إذا كنت ترغب في أن تصبح محرر ترجمة للغة الخاصة بك (قادر على الموافقة على الترجمات)، فاتصل عبر [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## ترجمات الإضافات
+## ترجمات الإضافات {#addon-translations}
 
 يتم ترجمة إضافات الإضافة بشكل منفصل على:
 
@@ -32,11 +32,11 @@ _i18n_hash: a433d81386db16579adeb9a60f6af240
 
 الترجمات الخاصة بالإضافات حاليًا مولدة بالذكاء الاصطناعي كنقطة انطلاق. تغطي جميع اللغات المدعومة ولكن قد تحتوي على عبارات غير طبيعية أو عدم دقة. نرحب بالمترجمين البشر لمراجعة واقتراح تحسينات لجعلها أكثر طبيعية ودقة.
 
-## الترجمات المحلية
+## الترجمات المحلية {#local-translations}
 
 إذا كنت تفضل إنشاء ترجمات محلية لمشروعك الخاص بدلاً من المساهمة في المصدر، فهناك خياران:
 
-### باستخدام Poedit
+### باستخدام Poedit {#using-poedit}
 
 يمكنك استخدام تطبيق سطح المكتب **[Poedit](https://poedit.net)** لترجمة ملف `.pot`:
 
@@ -46,6 +46,6 @@ _i18n_hash: a433d81386db16579adeb9a60f6af240
 4. احفظ -- يقوم Poedit بإنشاء ملفات `.po` و `.mo`
 5. ضع ملفات الإخراج في مجلد `lang`
 
-### باستخدام Loco Translate
+### باستخدام Loco Translate {#using-loco-translate}
 
 تتيح لك إضافة **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** في WordPress ترجمة مباشرة من لوحة الإدارة دون أي أدوات سطح مكتب. تتعامل مع إنشاء وتجميع ملفات الترجمة لك.

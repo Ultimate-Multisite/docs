@@ -3,11 +3,11 @@ title: Plugin Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 A Gratis AI Agent v1.5.0 bevezet egy **Plugin Builder & Sandbox Systemet**, amely lehetővé teszi az AI asszisztens számára, hogy a hálózatán (network) generálja, aktiválja és kezelje a WordPress plugin-eit – mindezt egy biztonságos, elszigetelt sandbox környezetben.
 
-## Overview
+## Overview {#overview}
 
 A Plugin Builder lehetővé teszi az AI asszisztens számára, hogy természetes nyelvi kérésekre reagálva készítsen egyedi WordPress plugin-eket. A generált plugin-eket validáljuk, tároljuk és egy sandbox rétegben aktiváljuk, mielőtt bármilyen élő oldal funkcióját érintkeznék.
 
@@ -17,7 +17,7 @@ A felhasználási esetek include:
 - Funkciók prototípusa, amelyek WordPress hook-okat vagy egyedi post típusokat igényelnek.
 - Rövid élettartamú automatizációs script-ek létrehozása toplu műveletekhez.
 
-## Generating a Plugin via AI
+## Generating a Plugin via AI {#generating-a-plugin-via-ai}
 
 Egy plugin generálásához nyissa meg a Gratis AI Agent chat felületét, és írja le, mi kell. Például:
 
@@ -32,7 +32,7 @@ Az AI:
 
 A találatot az aktiválás előtt tovább finomíthatja ugyanazon a konverzió szálban.
 
-## Sandbox Activation
+## Sandbox Activation {#sandbox-activation}
 
 Egy generált plugin sandbox-ban történő aktiválása eltér a live hálózatban történő aktiválásától. A sandbox:
 
@@ -48,7 +48,7 @@ Egy plugin aktiválásához a sandbox-ban, kattintson az AI chat válaszában ta
 
 Egy státusz üzenet megerősíti, hogy az aktiválás sikeres volt-e vagy sikertelen. Sikertelen esetben az hiba naplója megjelenik a chat szálban.
 
-## Managing Generated Plugins
+## Managing Generated Plugins {#managing-generated-plugins}
 
 A generált plugin-ek a **Gratis AI Agent → Plugin Builder → Manage Plugins** alatt találhatók. Ekránról a következőket teheti:
 
@@ -64,7 +64,7 @@ A generált plugin-ek a **Gratis AI Agent → Plugin Builder → Manage Plugins*
 **Install on network** kihelyezi a generált plugin-et az élő WordPress multisite-ra. Kérjük, ellenőrizze a plugin kódot, mielőtt elindul. A Gratis AI Agent megerősítést kér az élő telepítés előtt.
 :::
 
-## Installing a Generated Plugin on the Network
+## Installing a Generated Plugin on the Network {#installing-a-generated-plugin-on-the-network}
 
 Ha elégedett egy sandbox-ban futó plugin-től, kihelyezheti az élő hálózatra:
 
@@ -78,7 +78,7 @@ Alternatívaként használhatja a slash parancsot a chat felületen:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin Updates
+## Plugin Updates {#plugin-updates}
 
 Egy generált plugin frissítéséhez az AI asszisztenshez egy új konverzióban írja le a változtatást:
 
@@ -86,7 +86,7 @@ Egy generált plugin frissítéséhez az AI asszisztenshez egy új konverzióban
 
 Az AI generál egy új verziót, amely a sandboxban megjelenik az aktuális verzió mellett. Ön ellenőrzi a különbséget (diff) és megerősíti, mielőtt az frissítés alkalmazandó lenne.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 A Plugin Builder egy integrált **HookScanner**-t használ a generált plugin-ek által regisztrált hook-ok és filter-ek elemzéséhez. A HookScanner kimenete a chat válaszában látható, és tartalmazza:
 
@@ -96,7 +96,7 @@ A Plugin Builder egy integrált **HookScanner**-t használ a generált plugin-ek
 
 Ez segít megérteni egy plugin viselkedését, még mielőtt aktiválja.
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - A generált plugin-ek külön tárolódnak a kézi telepítésen keresztül történő plugin-ektől, és nem érhetők el a standard WordPress plugin kezelő felületén, amíg explicit módon nem telepíti őket a hálózatra.
 - A sandbox path validation-t használ a könyvtár traversálás elkerülésére a plugin fájlok írásakor.

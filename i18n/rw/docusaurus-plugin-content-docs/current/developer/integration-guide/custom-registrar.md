@@ -3,13 +3,13 @@ title: Kubaka ihuzwa ryihariye ry’umwanditsi w’amazina ya domaine
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kubaka Ihuzwa rya Registrar Ryihariye
+# Kubaka Ihuzwa rya Registrar Ryihariye {#building-a-custom-registrar-integration}
 
 Addon ya Domain Seller ikoresha imiterere ya **Integration Registry**. Buri registrar ni class ya PHP ishyira mu bikorwa `Domain_Selling_Capability` kandi ikiyandikisha binyuze kuri action hook ya `wu_domain_seller_register_capabilities`.
 
 Aka gatabo kerekana uko wahurizamo registrar yihariye.
 
-## Interface
+## Interface {#the-interface}
 
 Class yawe igomba gushyira mu bikorwa `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` kandi ikagura `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Uburyo butari ngombwa
+### Uburyo butari ngombwa {#optional-methods}
 
 Bishyire mu bikorwa kugira ngo ufungure ibindi biranga. Addon imenya ubufasha binyuze kuri `method_exists()`:
 
@@ -81,7 +81,7 @@ Bishyire mu bikorwa kugira ngo ufungure ibindi biranga. Addon imenya ubufasha bi
 | `get_epp_code(string $domain_name): array` | Kwimura domain (isohoka) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Kwimura domain (iyinjira) |
 
-### Amabwiriza y’agaciro gasubizwa
+### Amabwiriza y’agaciro gasubizwa {#return-value-convention}
 
 Uburyo bwose busubiza array ifite nibura key ya `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Kwandikisha ubushobozi bwawe
+## Kwandikisha ubushobozi bwawe {#registering-your-capability}
 
 Andikisha class yawe ukoresheje action ya `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argument ya mbere ya `add_capability()` ni **provider ID** — slug y’inyuguti
 
 ---
 
-## Kongera fields z’ibyangombwa muri wizard
+## Kongera fields z’ibyangombwa muri wizard {#adding-credential-fields-to-the-wizard}
 
 Kugira ngo ureke admins binjize ibyangombwa binyuze muri setup wizard, andikisha integration yawe:
 
@@ -137,7 +137,7 @@ Ibyangombwa bibikwa nka network options hakoreshejwe field IDs nka keys. Bibone 
 
 ---
 
-## Hooks z’ibikorwa bya nyuma yo kwiyandikisha
+## Hooks z’ibikorwa bya nyuma yo kwiyandikisha {#hooks-for-post-registration-actions}
 
 Koresha ibi bikorwa kugira ngo utangize webhooks, gutegura serivisi, imenyesha, cyangwa ivugurura rya CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Gufata inyandiko
+## Gufata inyandiko {#logging}
 
 Andika ku muyoboro w’inyandiko wihariye ku mutanga-serivisi wawe ukoresheje `wu_log_add()`:
 

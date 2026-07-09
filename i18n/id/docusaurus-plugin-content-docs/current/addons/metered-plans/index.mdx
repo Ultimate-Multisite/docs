@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Metered Plans
+# Metered Plans {#metered-plans}
 
 Addon Ultimate Multisite: Metered Plans mengubah cara Anda menagih pelanggan dengan memperkenalkan kemampuan penagihan terukur (metered billing) yang fleksibel. Alih-alih batasan keras yang kaku yang memblokir pengguna saat terlampaui, fitur ini memungkinkan biaya kelebihan batas (overage charges) yang secara otomatis menagih pelanggan untuk penggunaan tambahan.
 
-## Key Features
+## Key Features {#key-features}
 
 * **Metered Billing**: Menagih pelanggan berdasarkan penggunaan aktual, bukan tingkatan (tier) tetap
 * **Overage Management**: Menagih secara otomatis untuk penggunaan yang melebihi batas rencana
@@ -21,14 +21,14 @@ Addon Ultimate Multisite: Metered Plans mengubah cara Anda menagih pelanggan den
 * **Automatic Invoicing**: Menghasilkan faktur secara otomatis ketika ambang batas penggunaan terlampaui
 * **Usage Reports**: Analitik dan pelaporan penggunaan terperinci untuk pelanggan dan administrator
 
-## Perfect For
+## Perfect For {#perfect-for}
 
 * **Hosting Providers**: Menawarkan rencana yang skalabel yang tumbuh seiring kebutuhan pelanggan
 * **SaaS Platforms**: Menagih berdasarkan konsumsi sumber daya aktual
 * **Agency Networks**: Model harga yang fleksibel untuk proyek klien
 * **Reseller Hosting**: Memungkinkan mitra menawarkan harga berbasis penggunaan
 
-## How It Works
+## How It Works {#how-it-works}
 
 1. Konfigurasi sumber daya terukur (ruang disk, bandwidth, jumlah situs, dll.)
 2. Tetapkan batas rencana dasar dan tarif kelebihan batas
@@ -37,13 +37,13 @@ Addon Ultimate Multisite: Metered Plans mengubah cara Anda menagih pelanggan den
 5. Faktur dihasilkan secara otomatis berdasarkan siklus penagihan
 6. Pelanggan dapat melihat penggunaan dan biaya yang akan datang secara *real-time*
 
-## AI Token Billing
+## AI Token Billing {#ai-token-billing}
 
 Versi 1.1.0 menambahkan penagihan token AI untuk jaringan yang menawarkan fitur AI melalui WordPress AI Client SDK. Metered Plans mendengarkan permintaan pembuatan AI yang selesai, mencatat jumlah token input dan output untuk subsite saat ini, dan mengubah token tersebut menjadi biaya AI yang dapat ditagih untuk periode penagihan pelanggan saat ini.
 
 Gunakan penagihan token AI ketika Anda ingin menawarkan alat AI di situs pelanggan tanpa menyerap biaya model yang tidak terduga. Setiap permintaan diatribusikan ke subsite, pelanggan, keanggotaan, penyedia, dan model sehingga administrator dapat mengaudit penggunaan sementara pelanggan dapat melihat bagaimana konsumsi AI mereka memengaruhi akun mereka.
 
-### Configure Per-Token Rates
+### Configure Per-Token Rates {#configure-per-token-rates}
 
 Tarif AI dikonfigurasi per model sebagai tarif input dan output yang terpisah. Tarif dihitung per 1 juta token, yang sesuai dengan halaman harga penyedia AI umum.
 
@@ -55,7 +55,7 @@ Tarif AI dikonfigurasi per model sebagai tarif input dan output yang terpisah. T
 
 Ketika ID model yang tepat tidak dikonfigurasi, Metered Plans dapat mencocokkan berdasarkan awalan model. Misalnya, tarif yang dikonfigurasi untuk `claude-sonnet-4` dapat berlaku untuk ID model berstempel waktu yang dimulai dengan awalan tersebut. Pengembang juga dapat menyesuaikan tabel tarif akhir dengan filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Supported AI Connectors
+### Supported AI Connectors {#supported-ai-connectors}
 
 Penagihan token AI bekerja dengan konektor yang mengeluarkan *event* WordPress AI Client SDK pembuatan dan menyertakan penggunaan token dalam metadata respons. Ini termasuk keluarga konektor Ultimate Multisite AI yang didokumentasikan di sini:
 
@@ -65,13 +65,13 @@ Penagihan token AI bekerja dengan konektor yang mengeluarkan *event* WordPress A
 
 Konektor kustom dapat berpartisipasi dengan memicu *event* standar `wp_ai_client_before_generate_result` dan `wp_ai_client_after_generate_result` dengan metadata model, penyedia, dan penggunaan token. Pengaturan konektor ditegakkan dari situs utama ke subsites sehingga situs pelanggan menggunakan penyedia dan batas yang disetujui jaringan.
 
-### Customer Account Usage
+### Customer Account Usage {#customer-account-usage}
 
 Pelanggan melihat penggunaan AI bersama dengan sumber daya terukur mereka yang lain di area akun mereka. Baris pengeluaran AI menunjukkan total periode penagihan saat ini yang berasal dari token *prompt* dan *completion* yang tercatat, tarif model yang dikonfigurasi, dan jatah yang termasuk dalam rencana.
 
 Jika pelanggan memiliki metode pembayaran yang tersimpan, penggunaan di atas jatah yang termasuk diperlakukan sebagai kelebihan batas yang dapat ditagih. Jika rencana dikonfigurasi untuk pemotongan keras (*hard cutoff*) dan pelanggan tidak memiliki metode pembayaran yang tersedia, permintaan AI dapat diblokir setelah jatah tercapai dan pelanggan diminta untuk menambahkan detail pembayaran sebelum melanjutkan.
 
-## Supported Resources
+## Supported Resources {#supported-resources}
 
 * Disk storage
 * Bandwidth/Data transfer
@@ -80,13 +80,13 @@ Jika pelanggan memiliki metode pembayaran yang tersimpan, penggunaan di atas jat
 * AI token usage and AI spend
 * Custom resource types
 
-## Requirements
+## Requirements {#requirements}
 
 * Multisite Ultimate 2.0.0 atau lebih tinggi
 * Instalasi WordPress Multisite
 * PHP 7.4 atau lebih tinggi
 
-## Installation
+## Installation {#installation}
 
 1. Unggah file plugin ke `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Aktifkan plugin melalui layar 'Plugins' di WordPress
@@ -94,24 +94,24 @@ Jika pelanggan memiliki metode pembayaran yang tersimpan, penggunaan di atas jat
 4. Konfigurasi sumber daya terukur dan harga Anda
 5. Aktifkan penagihan terukur untuk produk di editor produk
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#frequently-asked-questions}
 
-## What happens when a customer exceeds their limit?
+## What happens when a customer exceeds their limit? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Alih-alih memblokir akses, sistem melacak kelebihan batas dan menambahkannya ke faktur mereka berikutnya berdasarkan tarif yang telah Anda konfigurasikan.
 
-## Can I set different overage rates for different products?
+## Can I set different overage rates for different products? {#can-i-set-different-overage-rates-for-different-products}
 
 Ya, setiap produk dapat memiliki sumber daya terukur dan harga kelebihan batas yang unik.
 
-## How are customers notified about usage?
+## How are customers notified about usage? {#how-are-customers-notified-about-usage}
 
 Pelanggan dapat melihat penggunaan mereka saat ini di dashboard mereka dan menerima notifikasi opsional saat mendekati atau melebihi batas.
 
-## How is AI token usage priced?
+## How is AI token usage priced? {#how-is-ai-token-usage-priced}
 
 Penggunaan token AI dihargai dari tarif input dan output model yang dikonfigurasi per 1 juta token. Metered Plans mengalikan hitungan token *prompt* dan *completion* setiap permintaan dengan tarif tersebut, menambahkan hasilnya ke pengeluaran AI periode penagihan pelanggan saat ini, dan menerapkan jatah atau aturan kelebihan batas rencana.
 
-## Can I still use hard limits?
+## Can I still use hard limits? {#can-i-still-use-hard-limits}
 
 Ya, penagihan terukur bersifat opsional per produk. Anda dapat mencampur produk batas keras tradisional dengan produk terukur.

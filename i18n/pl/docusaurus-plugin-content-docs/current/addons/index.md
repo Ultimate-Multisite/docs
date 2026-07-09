@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Dodatki Ultimate Multisite
+# Dodatki Ultimate Multisite {#ultimate-multisite-addons}
 
 Dodatki rozszerzają funkcjonalność Ultimate Multisite, dodając nowe cechy i integracje. Większość dodatków jest płatna i można je kupić na [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Instalacja
+## Instalacja {#installation}
 
 Dodatki można zainstalować na dwa sposoby:
 
 1. **Przez stronę dodatków** — Przejdź do strony zarządzania dodatkami dla Twojej witryny w panelu administracyjnym WordPress.
 2. **Pobieranie ręczne** — Pobierz plik ze [swojego konta](https://ultimatemultisite.com/my-account/downloads/) i załaduj go przez Plugins > Add New.
 
-## Dostępne dodatki
+## Dostępne dodatki {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

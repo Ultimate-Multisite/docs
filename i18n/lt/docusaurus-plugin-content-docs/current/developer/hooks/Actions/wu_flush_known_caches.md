@@ -4,10 +4,10 @@ title: Veiksmas - wu_flush_known_caches
 sidebar_label: wu_flush_known_caches
 _i18n_hash: bfe84286e3bd8d31846f6800c0954148
 ---
-# Veiksmas: wu_flush_known_caches
+# Veiksmas: wu_flush_known_caches {#action-wuflushknowncaches}
 
 Prijungti prie papildomo valymo
 
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/managers/class-cache-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-cache-manager.php#L49) 49 eilutėje

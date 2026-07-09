@@ -3,13 +3,13 @@ title: Luồng đăng ký
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Luồng đăng ký (v2)
+# Luồng đăng ký (v2) {#the-registration-flow-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
 Người dùng có thể đăng ký vào mạng của bạn theo nhiều cách khác nhau. Họ có thể sử dụng biểu mẫu đăng ký của bạn hoặc một liên kết có thể chia sẻ đến một gói đã được chọn sẵn. Tại đây, chúng tôi sẽ chỉ cho bạn cách khách hàng có thể đăng ký trên mạng của bạn bằng các đường dẫn hiện có và điều gì xảy ra sau khi họ đăng ký trên mạng của bạn.
 
-## Sử dụng biểu mẫu đăng ký:
+## Sử dụng biểu mẫu đăng ký: {#using-the-registration-form}
 
 Đây là quy trình đăng ký tiêu chuẩn. Bạn tạo một trang đăng ký với **biểu mẫu checkout** và đây sẽ là nơi khách hàng của bạn truy cập để đăng ký trên mạng của bạn và đăng ký một gói. Bạn có thể có nhiều trang đăng ký, mỗi trang có một biểu mẫu đăng ký khác nhau nếu muốn.
 
@@ -35,13 +35,13 @@ Nếu họ đã đăng ký gói trả phí hoặc việc xác minh email không 
 
 ![Site được kích hoạt với liên kết để đăng nhập vào dashboard](/img/frontend/site-activated.png)
 
-## Sử dụng liên kết có thể chia sẻ:
+## Sử dụng liên kết có thể chia sẻ: {#using-a-shareable-link}
 
 Quy trình đăng ký bằng liên kết có thể chia sẻ về cơ bản giống với biểu mẫu đăng ký, điểm khác biệt duy nhất là khi sử dụng liên kết có thể chia sẻ, khách hàng của bạn có thể có một sản phẩm hoặc mẫu website được chọn sẵn trên biểu mẫu checkout (tham khảo phần Chọn sẵn sản phẩm và mẫu qua tham số URL) hoặc có thể được thêm một mã phiếu giảm giá (tham khảo phần Sử dụng tham số URL).
 
 Quy trình đăng ký sẽ giống nhau: họ sẽ cần điền tên, tên người dùng, địa chỉ email, tên và tiêu đề website, v.v... nhưng gói hoặc mẫu site sẽ đã được chọn sẵn cho họ.
 
-### Đăng ký bằng thanh toán thủ công:
+### Đăng ký bằng thanh toán thủ công: {#registering-using-manual-payments}
 
 Nếu bạn không muốn sử dụng PayPal, Stripe hoặc bất kỳ cổng thanh toán nào khác do Ultimate Multisite hoặc các tích hợp tiện ích bổ sung của nó cung cấp, bạn có thể sử dụng thanh toán thủ công cho khách hàng của mình. Bằng cách này, bạn có thể tạo hóa đơn cho họ thanh toán trên bộ xử lý thanh toán bạn ưu tiên sau khi họ đăng ký trên mạng của bạn.
 

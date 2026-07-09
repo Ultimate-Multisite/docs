@@ -3,13 +3,13 @@ title: Ịhazigharị fọm ndebanye aha gị
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ịhazigharị Registration Form gị
+# Ịhazigharị Registration Form gị {#customizing-your-registration-form}
 
 Iji mee ka network gị dị iche na SaaS ndị ọzọ niile e wuru n’elu WordPress platform, Ultimate Multisite na-enye gị ohere ịhazi registration na login peeji gị site na njirimara **Checkout Forms** anyị.
 
 Ọ bụ ezie na ha bụ ụzọ dị mfe ma na-agbanwe agbanwe iji nwalee usoro dị iche iche mgbe ị na-agbalị ịtụgharị ndị ahịa ọhụrụ, a na-ejikarị ha mepụta registration forms ahaziri onwe. Edemede a bu n’obi igosi gị otu ị ga-esi mee ya.
 
-## Login na registration peeji:
+## Login na registration peeji: {#login-and-registration-pages}
 
 Mgbe etinyere Ultimate Multisite, ọ na-emepụta login na registration peeji ahaziri iche na main site gị na-akpaghị aka. Ị nwere ike ịgbanwe peeji ndabara ndị a n’oge ọ bụla site n’ịga na peeji **Ultimate Multisite > Settings > Login & Registration** gị.
 
@@ -45,7 +45,7 @@ Ugbu a, ka anyị hụ nhọrọ ndị ọzọ ka dị mkpa n’usoro login na r
 
 Nke ahụ bụkwa nhọrọ niile metụtara login na registration ị nwere ike ịhazi! Echefukwala ichekwa ntọala gị mgbe ị mechara idezi ha.
 
-## Iji ọtụtụ registration forms:
+## Iji ọtụtụ registration forms: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 na-enye checkout form editor nke na-enye gị ohere ịmepụta forms ole ịchọrọ, nwere fields dị iche iche, ngwaahịa a na-enye, wdg.
 
@@ -69,7 +69,7 @@ N’ụzọ ọzọ, ị nwere ike idezi ma ọ bụ mepụta oyiri forms ị nw
 
 Ọ bụrụ na ị họrọ otu nzọụkwụ ma ọ bụ ọtụtụ nzọụkwụ, checkout form ahụ ga-adịlarị juputara na nzọụkwụ bụ isi ka ọ rụọ ọrụ. Mgbe ahụ, ọ bụrụ na ịchọrọ, ị nwere ike itinye nzọụkwụ ndị ọzọ na ya.
 
-### Idezi Checkout Form:
+### Idezi Checkout Form: {#editing-a-checkout-form}
 
 Dị ka anyị kwuburu, ị nwere ike ịmepụta checkout forms maka ebumnuche dị iche iche. N’ihe atụ a anyị ga-arụ ọrụ na registration form.
 
@@ -131,11 +131,11 @@ Iji nweta shortcode nke fọm gị, pịa **Mepụta Shortcode** ma detuo nsonaa
 
 _**Rịba ama:** Ị ga-achọ ịgbakwunye shortcode a na ibe ndebanye aha gị ka etinye fọm ịkwụ ụgwọ a na ya._
 
-## Ịhọrọ ngwaahịa na ndebiri tupu oge eruo site na parameters URL:
+## Ịhọrọ ngwaahịa na ndebiri tupu oge eruo site na parameters URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ọ bụrụ na ịchọrọ imepụta tebụl ọnụahịa ahaziri iche maka ngwaahịa gị ma họrọ tupu oge eruo na fọm ịkwụ ụgwọ ngwaahịa ma ọ bụ ndebiri onye ahịa gị họrọ site na tebụl ọnụahịa gị ma ọ bụ ibe ndebiri, ị nwere ike iji parameters URL maka nke a.
 
-### **Maka atụmatụ:**
+### **Maka atụmatụ:** {#for-plans}
 
 Gaa na **Ultimate Multisite > Ngwaahịa > Họrọ atụmatụ**. Ị kwesịrị ịhụ bọtịnụ **Pịa iji detuo Njikọ A Pụrụ Ịkekọrịta** n'elu ibe ahụ. Nke a bụ njikọ ị nwere ike iji họrọ atụmatụ a kpọmkwem tupu oge eruo na fọm ịkwụ ụgwọ gị.
 
@@ -143,7 +143,7 @@ Gaa na **Ultimate Multisite > Ngwaahịa > Họrọ atụmatụ**. Ị kwesịr�
 
 Rịba ama na njikọ a pụrụ ịkekọrịta a bara uru naanị maka **Atụmatụ**. Ị nweghị ike iji njikọ a pụrụ ịkekọrịta maka ngwugwu ma ọ bụ ọrụ.
 
-### Maka ndebiri:
+### Maka ndebiri: {#for-templates}
 
 Ọ bụrụ na ịchọrọ ịhọrọ ndebiri saịtị tupu oge eruo na fọm ịkwụ ụgwọ gị, ị nwere ike iji parameter: **?template_id=X** na URL ibe ndebanye aha gị. A ga-eji **nọmba ID ndebiri saịtị** dochie "X". Iji nweta nọmba a, gaa na **Ultimate Multisite > Saịtị**.
 

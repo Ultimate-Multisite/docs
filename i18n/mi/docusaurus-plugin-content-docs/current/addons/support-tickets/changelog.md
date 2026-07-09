@@ -3,13 +3,13 @@ title: Rangitaki Huringa Tīkiti Tautoko
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Rārangi Huringa Tīkiti Tautoko
+# Rārangi Huringa Tīkiti Tautoko {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Kua whakapai ake: I tangohia te vendor/ directory i te whai a Git (kua hipokina kē e .gitignore), hei whakaiti i te rahi o te repository
 * Kua whakapai ake: Kua whakamātauria tae atu ki WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Whakatika: Whakaae ki ngā uara null i ngā nullable ticket model setters
 * Whakatika: Rokiroki i ngā tīkiti katoa ki ngā ripanga ā-whatunga whānui o te ao mō te tautoko multisite tika
 * Whakatika: Huna i ngā āpure kaimahi, ā, whakatika i te redirect whārangi-pātea i te puka tīkiti-hou a te kiritaki
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Kua whakapai ake: Utaina ā-herenga ngā frontend assets anake ki ngā whārangi tīkiti tautoko
 * Kua whakapai ake: Pekehia te plugin autoloader ina kua utaina kē e te Bedrock root autoloader ngā dependencies
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Kua tāpirihia: Taumahinga tiro tīkiti katoa mō te admin me te frontend
 * Kua tāpirihia: AJAX handler mō ngā tukunga whakautu tīkiti
 * Kua tāpirihia: Tautoko mō te taumahinga whakautu tīkiti me te whakahaere puka tika
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Kua whakapai ake: Hanganga pātengi raraunga me ngā query me schema classes tika mō ngā whakautu me ngā āpitihanga
 * Kua whakapai ake: Hekenga ki ngā āhuatanga tūturu, kaua ko ngā attributes, mō ngā tauira tīkiti
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Kua whakahōutia: Kua whakaingoatia anō te prefix ki ultimate-multisite mō te ōritetanga
 * Kua whakahōutia: Whakatauritetanga text domain
 * Kua whakatikahia: Ngā whakatikatika bug iti me ngā whakapainga
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Tukunga tuatahi
 * Pūnaha whakahaere tīkiti katoa
 * Mana urunga taumata-maha

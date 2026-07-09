@@ -3,11 +3,11 @@ title: Ilg‘or kod namunalari
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Kengaytirilgan Code namunalari
+# Kengaytirilgan Code namunalari {#advanced-code-examples}
 
 Ushbu namunalarda Ultimate Multisite bilan kengaytirilgan integratsiya andozalari ko‘rsatiladi.
 
-## Dinamik narxlash mexanizmi
+## Dinamik narxlash mexanizmi {#dynamic-pricing-engine}
 
 Hajm, sodiqlik va mavsumiy chegirmalarni qo‘llaydigan qoidalarga asoslangan narxlash mexanizmi:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Kengaytirilgan sayt tayyorlash
+## Kengaytirilgan sayt tayyorlash {#advanced-site-provisioning}
 
 Yangi saytlarni plan xususiyatlariga qarab pluginlar, SSL, CDN, zaxira nusxalar va monitoring bilan avtomatik sozlang:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Maxsus cheklovlar tizimi
+## Maxsus cheklovlar tizimi {#custom-limitations-system}
 
 Resurs cheklovlarini kuzating va ulardan foydalanish ogohlantirishlari bilan majburiy qo‘llang:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## `increment_item()` bilan BerlinDB atomik hisoblagichi
+## `increment_item()` bilan BerlinDB atomik hisoblagichi {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 BerlinDB `Query` classiga `increment_item()` metodini qo‘shdi. Undan raqamli ustunlarda read-modify-write poygalarsiz xavfsiz, atomik oshirishlarni bajarish uchun foydalaning — bu bir vaqtda keladigan so‘rovlar ostida ishlaydigan hisoblagichlar, foydalanish kvotalari va rate-limiting tekshiruvlari uchun foydali.
 
-### Metod imzosi
+### Metod imzosi {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 BerlinDB `Query` classiga `increment_item()` metodini 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Asosiy foydalanish
+### Asosiy foydalanish {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Har bir membership uchun API foydalanishini kuzatish
+### Har bir membership uchun API foydalanishini kuzatish {#tracking-api-usage-per-membership}
 
 Har bir membership bo‘yicha API rate limitlarini qo‘llash uchun amaliy andoza:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Nega `update_item()` o‘rniga `increment_item()`
+### Nega `update_item()` o‘rniga `increment_item()` {#why-incrementitem-instead-of-updateitem}
 
 Oddiy read-modify-write yondashuvi bir vaqtda keladigan so‘rovlar ostida xavfsiz emas:
 

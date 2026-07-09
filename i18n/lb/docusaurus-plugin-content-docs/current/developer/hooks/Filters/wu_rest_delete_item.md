@@ -4,11 +4,11 @@ title: Filter - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item
+# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 Filtert, ob et erlaabt ass, mat der Ufro virunzefueren oder net.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtert, ob et erlaabt ass, mat der Ufro virunzefueren oder net.
 | $rest_base | `array` | Entitéits-Slug. |
 | $this | `\Base_Manager` | D'Objektinstanz. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) op Linn 440

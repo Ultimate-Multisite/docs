@@ -3,7 +3,7 @@ title: Доступ к странице Account
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Как впервые получить доступ к странице моего Account?
+# Как впервые получить доступ к странице моего Account? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Добро пожаловать в Ultimate Multisite!
 

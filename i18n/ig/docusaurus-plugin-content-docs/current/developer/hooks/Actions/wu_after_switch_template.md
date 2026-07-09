@@ -4,19 +4,19 @@ title: Omume - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Omume: wu_after_switch_template
+# Omume: wu_after_switch_template {#action-wuafterswitchtemplate}
 
 Kwe ka ndị mmepe ngwa mgbakwunye jikọọ ọrụ mgbe onye ọrụ ma ọ bụ onye nchịkwa ukwu gbanwere ndebiri saịtị
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
 | $id | `int` | ID saịtị |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 1.9.8
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/ui/class-template-switching-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-switching-element.php#L296) n'ahịrị 296

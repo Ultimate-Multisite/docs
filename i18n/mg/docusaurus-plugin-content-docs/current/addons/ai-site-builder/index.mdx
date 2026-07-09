@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Fepetra takiana
+## Fepetra takiana {#requirements}
 
 - WordPress 5.3 na ambony
 - PHP 7.4 na ambony
 - Plugin Multisite Ultimate (mavitrika)
 
-## Fametrahana
+## Fametrahana {#installation}
 
 1. Ampakaro ao amin’ny lahatahiry `/wp-content/plugins/` ny rakitra addon
 2. Alefaso amin’ny alalan’ny menio 'Plugins' ao amin’ny WordPress ilay plugin
 3. Amboary ao amin’ny admin tambajotra ny fikirakiran’ilay addon
 
-## Fampivoarana
+## Fampivoarana {#development}
 
-### Fanamboarana
+### Fanamboarana {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Rafitry ny tetikasa
+### Rafitry ny tetikasa {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Fitsipika fanavaozana code
 ```
 
-### Fitsapana
+### Fitsapana {#testing}
 
 Ahitana rafitra fitsapana feno ilay addon:
 
@@ -79,44 +79,44 @@ Ahitana rafitra fitsapana feno ilay addon:
 - **Fandrakofana fitsapana**: Voakirakira hanara-maso ny fandrakofana code
 - **Fitsapana Multisite**: Mihazakazaka ao amin’ny tontolo multisite ny fitsapana
 
-### Fenitry ny code
+### Fenitry ny code {#code-standards}
 
 - **WordPress Coding Standards**: Ampiharina amin’ny alalan’ny PHPCS
 - **Fifanarahana amin’ny PHP 7.4+**: Tohanana ny endri-javatra PHP maoderina
 - **Fanadihadiana statika**: Fampidirana PHPStan ho an’ny fanamarinana karazana
 - **Fanavaozana code**: Fitsipika Rector ho an’ny fanavaozana PHP
 
-### Rafitra fananganana
+### Rafitra fananganana {#build-system}
 
 - **Fanodinana assets**: Fampihenana haben’ny rakitra CSS/JS
 - **Fandikan-teny**: Famoronana rakitra POT
 - **Fonosana**: Famoronana arisiva hozaraina
 - **Fomba fampivoarana**: Assets tsy nohafohezina ho an’ny debugging
 
-## Fikirakirana
+## Fikirakirana {#configuration}
 
 Manohana safidy fikirakirana isan-karazany azo idirana amin’ny alalan’ny interface admin tambajotra ilay addon.
 
-## Hooks sy Filters
+## Hooks sy Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Alefa aorian’ny fanombohana ilay addon
 - `ultimate-multisite-ai-site-builder_loaded` - Alefa rehefa voapetraka avokoa ny rakitra addon rehetra
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Ovay ny fikirakiran’ilay addon
 - `ultimate-multisite-ai-site-builder_enabled` - Soloy ny satan’ny fampandehanana/fampitsaharana ilay addon
 
-## Lisansa
+## Lisansa {#license}
 
 Ity addon ity dia manana lisansa GPL v3 na tatỳ aoriana.
 
-## Fanohanana
+## Fanohanana {#support}
 
 Ho an’ny fanohanana sy antontan-taratasy, tsidiho ny [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): ovaina anarana ho ultimate-multisite ny prefix; havaozina ny text domain; fampiakarana version.
 

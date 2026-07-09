@@ -3,7 +3,7 @@ title: Konfigurowanie PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Konfigurowanie bramki PayPal (v2)
+# Konfigurowanie bramki PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
@@ -13,13 +13,13 @@ Podobnie jak Stripe, PayPal jest szeroko używany do płatności online, zwłasz
 
 Pamiętaj, że musisz mieć **konto PayPal Business**, aby uzyskać dane uwierzytelniające API potrzebne do tej integracji.
 
-## Włączanie PayPal w Twojej sieci
+## Włączanie PayPal w Twojej sieci {#enabling-paypal-on-your-network}
 
 Aby włączyć PayPal jako dostępną metodę płatności w Twojej sieci, przejdź do karty **Ultimate Multisite > Ustawienia > Płatności** i zaznacz pole obok PayPal.
 
 ![Włączanie PayPal w aktywnych bramkach płatności](/img/config/settings-payment-gateways.png)
 
-## Korzystanie z prowadzonego kreatora konfiguracji
+## Korzystanie z prowadzonego kreatora konfiguracji {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 dodaje prowadzony kreator konfiguracji PayPal do ustawień bramki płatności. Po włączeniu PayPal użyj kreatora w **Ultimate Multisite > Ustawienia > Płatności**, aby wybrać, jak chcesz połączyć bramkę, i potwierdzić, które dane uwierzytelniające są nadal potrzebne przed zapisaniem.
 
@@ -30,7 +30,7 @@ Kreator obsługuje dwie ścieżki konfiguracji:
 
 Jeśli nie widzisz opcji OAuth w kreatorze, wykonaj poniższy przepływ ręcznego wprowadzania danych uwierzytelniających. Bramka działa z tymi samymi danymi uwierzytelniającymi PayPal Business API co poprzednie wydania Ultimate Multisite 2.x.
 
-## Uzyskiwanie danych uwierzytelniających PayPal API
+## Uzyskiwanie danych uwierzytelniających PayPal API {#getting-the-paypal-api-credentials}
 
 Gdy PayPal zostanie włączony jako bramka płatności, musisz wypełnić pola PayPal API **Username**, PayPal API **Password** i PayPal API **Signature**.
 

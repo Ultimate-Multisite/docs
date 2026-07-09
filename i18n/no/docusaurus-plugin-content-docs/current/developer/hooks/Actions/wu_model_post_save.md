@@ -4,11 +4,11 @@ title: Action - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Action: wu_model_post_save
+# Action: wu_model_post_save {#action-wumodelpostsave}
 
 Dette utløses etter at et objekt er lagret i databasen.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Dette utløses etter at et objekt er lagret i databasen.
 | $data_unserialized | `array` | Objektdataen som skal lagres. |
 | $this | `\Base_Model` | Objektinstansen. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.0
-### Kilde
+### Kilde {#source}
 
 - Definert i [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L613) på linje 613
 - Definert i [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1743) på linje 1743

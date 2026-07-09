@@ -3,7 +3,7 @@ title: Registrirajte račun preko Zapiera
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Dogodev: Registracija računa preko Zapierja
+# Dogodev: Registracija računa preko Zapierja {#event-register-an-account-via-zapier}
 
 V članku [Integracija Ultimate Multisite z Zapierjem](zapier.md) smo pogovorili kako uporabiti Zapier za opravljanje različnih dejakov v Ultimate Multisite na podlagi triggerjev in dogodkov. V tem članku vam bom pokazal kako lahko integrirate tretji strani aplikacije. Uporabimo Google Sheets kot vir podatkov in pošljemo informacije v Ultimate Multisite za registracijo računa.
 

@@ -3,11 +3,11 @@ title: Fandaharam-potoana fampianarana Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fandramba Fandramba (Onboarding Flow an'ny Loatra)
+# Fandramba Fandramba (Onboarding Flow an'ny Loatra) {#theme-builder-onboarding-flow}
 
 Ny Superdav AI Agent v1.12.0 dia manolotra **Theme Builder onboarding flow** izay manampy anao hahazo mamorona theme mifanaraka amin'ny zavatra tianao mandritra ny fanombohanao. Izany dia manolo ny Site Builder mode taloha amin'ny fomba mora kokoa sy miaraka amin'ny agent.
 
-## Inona no Theme Builder Onboarding Flow?
+## Inona no Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Ny Theme Builder onboarding flow dia wizard fametrahana mampifandray izay:
 
@@ -18,9 +18,9 @@ Ny Theme Builder onboarding flow dia wizard fametrahana mampifandray izay:
 
 Ity flow ity dia ataon'ny **Setup Assistant agent**, izay manontany fanazavana sy mamorona ny theme anao tsikelikely.
 
-## Fanombohana ny Theme Builder Onboarding
+## Fanombohana ny Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Fametrahana Voalohany (First-Run Setup)
+### Fametrahana Voalohany (First-Run Setup) {#first-run-setup}
 
 Rehefa manomboka Superdav AI Agent ianao amin'ny WordPress vaovao, dia ho hitanao izao:
 
@@ -35,7 +35,7 @@ Inona no tianao hatao?
 
 Safidio ny **"Mamorona theme mifanaraka"** mba hidirana ao amin'ny Theme Builder onboarding flow.
 
-### Fanatanterahana Manokana (Manual Activation)
+### Fanatanterahana Manokana (Manual Activation) {#manual-activation}
 
 Afaka manomboka ny Theme Builder onboarding aorian'izay na fotoana hafa ianao amin'ny alalan'ny fangatahana:
 
@@ -49,9 +49,9 @@ na
 "Ampahafantaro aho hanoratra theme mifanaraka"
 ```
 
-## Ireo Dingana An-onboarding
+## Ireo Dingana An-onboarding {#the-onboarding-steps}
 
-### Dingana 1: Safidy Modely (Mode Selection)
+### Dingana 1: Safidy Modely (Mode Selection) {#step-1-mode-selection}
 
 Ny Setup Assistant agent dia manontany momba ny safidinao:
 
@@ -63,7 +63,7 @@ Ahoana no tianao hamoronana ny theme anao?
 
 **Guided mode** dia toa tsara indrindra ho an'ny mpampiasa maro; ny agent dia manome torohevitra momba ny famolavolana mifototra amin'ny sehatry ny asa sy ny tanjona anao.
 
-### Dingana 2: Famaritana ny Site (Site Specification)
+### Dingana 2: Famaritana ny Site (Site Specification) {#step-2-site-specification}
 
 Ho fantatra ny site anao izy ireo:
 
@@ -74,7 +74,7 @@ Ho fantatra ny site anao izy ireo:
 
 Ity fampahalalana ity dia voatahiry ao anatin'ny fitadidiana **site_brief** anareo, izay ampiasain'ny agents hafa amin'ny fotoana ho avy.
 
-### Dingana 3: Fifidianana ny Design System
+### Dingana 3: Fifidianana ny Design System {#step-3-design-system-decisions}
 
 Ny agent dia hitarika anareo amin'ny safidy ireo design token (fepetra famolavolana):
 
@@ -83,7 +83,7 @@ Ny agent dia hitarika anareo amin'ny safidy ireo design token (fepetra famolavol
 - **Spacing**: Fomba fametrahana (fohy, salama, na mivelatra)
 - **Motion**: Animation sy transitions (raha tianareo)
 
-### Dingana 4: Famoronana ny Theme
+### Dingana 4: Famoronana ny Theme {#step-4-theme-generation}
 
 Ny agent Setup Assistant dia hanamboatra ny custom block theme anareo miaraka amin'ireto zavatra ireto:
 
@@ -92,7 +92,7 @@ Ny agent Setup Assistant dia hanamboatra ny custom block theme anareo miaraka am
 - Style ho an'ny block manokana mifanaraka amin'ny design system anareo
 - Metadata momba ny theme sy fanambarana fa miasa amin'ny WordPress
 
-### Dingana 5: Fanatanterahana sy Fanamarihana
+### Dingana 5: Fanatanterahana sy Fanamarihana {#step-5-activation-and-verification}
 
 Ny theme dia hanafatra ho azy ho automatique, ary hahita ireto zavatra ireto:
 
@@ -107,7 +107,7 @@ Ny theme dia hanafatra ho azy ho automatique, ary hahita ireto zavatra ireto:
 
 Avy eo, afaka mankany amin'ny tranokalanareo ianao mba hanamarinana fa mandeha tsara ny theme.
 
-## Famaritana ny Tranokala sy ny Fitadidiana site_brief
+## Famaritana ny Tranokala sy ny Fitadidiana site_brief {#site-specification-and-sitebrief-memory}
 
 Mandritra ny fanombohana (onboarding), ny agent dia mitazona ny famaritana ny tranokalanareo ao anatin'ny fampidirana **site_brief**. Tafiditra ao anatin'izany:
 
@@ -117,17 +117,17 @@ Mandritra ny fanombohana (onboarding), ny agent dia mitazona ny famaritana ny tr
 - Fifidianana famolavolana
 - Fandaminana ny rafitry ny votoaty
 
-### Nahoana no Zava-dehibe ny site_brief
+### Nahoana no Zava-dehibe ny site_brief {#why-sitebrief-matters}
 
 Amin'ny fotoana ho avy, ny agents dia mampiasa ny site_brief anareo mba:
 
-### Maintieni ny fomba fanaovana endrika mitovy rehefa miova zavatra
+### Maintieni ny fomba fanaovana endrika mitovy rehefa miova zavatra {#viewing-your-sitebrief}
 
 - Manolora fepetra mifanaraka amin'ny tanjaran'ny tranokalanareo
 - Manome torohevitra mifandray amin'ny toe-javatra misy anao (context-aware)
 - Aza mamerina fanontaniana momba ny fametrahana zavatra maro
 
-### Fijerena ny site_brief anao
+### Fijerena ny site_brief anao {#customizing-after-onboarding}
 
 Afaka mangataka amin'ilay agent ianao:
 
@@ -143,11 +143,11 @@ na
 
 Hasehon'ny agent ny famaritana anao momba ny site voamarina.
 
-## Fanovana Aorian'ny Fampidirana (Onboarding)
+## Fanovana Aorian'ny Fampidirana (Onboarding) {#use-the-design-system-aesthetics-skill}
 
 Aorian'ny fampiharana Theme Builder dia vita, afaka:
 
-### Mampiasa ny fahaizana Design System Aesthetics Skill
+### Mampiasa ny fahaizana Design System Aesthetics Skill {#edit-themejson-directly}
 
 Mangataka fanitsiana endrika:
 
@@ -163,7 +163,7 @@ na
 
 Ny **Design System Aesthetics skill** no hitarika anao amin'ny fanavaozana endrika mifantoka.
 
-### Manova mivantana ny theme.json
+### Manova mivantana ny theme.json {#create-custom-block-templates}
 
 Ho an'ireo mpampiasa manana fahaiza-manao avo lenta, dia ampiasao ny manova `/wp-content/themes/[theme-name]/theme.json` mba hanitsiana:
 
@@ -172,7 +172,7 @@ Ho an'ireo mpampiasa manana fahaiza-manao avo lenta, dia ampiasao ny manova `/wp
 - Spacing values (valiny fizarana)
 - Border and shadow definitions (fanazavana ny lamba sy ny aloka)
 
-### Mamorona Custom Block Templates
+### Mamorona Custom Block Templates {#comparison-old-vs-new-onboarding}
 
 Ampiasao ny WordPress block editor mba hamoronana template manokana ho an'ny:
 
@@ -181,7 +181,7 @@ Ampiasao ny WordPress block editor mba hamoronana template manokana ho an'ny:
 - Product pages (pejy vokatra)
 - Contact forms (forms fifandraisana)
 
-## Fampitahana: Taloha vs. Vaovao Fampidirana
+## Fampitahana: Taloha vs. Vaovao Fampidirana {#troubleshooting}
 
 | Torohevitra | Site Builder (Taloha) | Theme Builder (Vaovao) |
 |---------|----------------------|-------------------|
@@ -191,7 +191,7 @@ Ampiasao ny WordPress block editor mba hamoronana template manokana ho an'ny:
 | Fleksibilita | Safidy voafetra | azo ovaina |
 | Fanavaozana ho avy | Tsy voatendry intsony | Voarakitra ao amin'ny site_brief |
 
-## Fandresena Olana (Troubleshooting)
+## Fandresena Olana (Troubleshooting) {#next-steps}
 
 **Tsy vita ny dingana fampidirana (onboarding)**
 - Manomboha indray ny dingana: "Start the Theme Builder onboarding"

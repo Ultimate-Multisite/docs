@@ -3,15 +3,15 @@ title: 'Loj 14: Qhov yuav tsum cez'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lesson 14: Qhov Yuav Tsis Muaj Hauv Lej
+# Lesson 14: Qhov Yuav Tsis Muaj Hauv Lej {#lesson-14-what-comes-next}
 
 Kuv yuav tsim khoom website niche hauv txhua yam. FitSite tseem thov, txais lub hom phau fitness studios, thiab ua rau muaj cov nrhiav txhua hnub. No qab no, peb yuav tiv thaiv tias yuav mus mus tau paub li cas.
 
-## Peb Yuav Tsis Muaj Hauv Lej
+## Peb Yuav Tsis Muaj Hauv Lej {#where-we-left-off}
 
 FitSite yog ib lub neej uas muaj cov neeg uas xav plaws, cov laus, thiab txoj kev ua rau muaj ntau txhua hnub. No qab no, peb yuav tiv thaiv tias yuav mus mus tau paub li cas.
 
-## The Complete FitSite Network
+## The Complete FitSite Network {#the-complete-fitsite-network}
 
 No pawg yog txhua yam uas peb tsim hauv 14 leej:
 
@@ -44,11 +44,11 @@ FitSite Network (Complete)
     ├── Revenue optimization (upsells, annual conversion, new services)
     └── Team building roadmap
 
-## ជម្រើសទី ១៖ ការពង្រីកឱ្យកាន់តែស៊ីជម្រៅក្នុងវិស័យរបស់អ្នក
+## ជម្រើសទី ១៖ ការពង្រីកឱ្យកាន់តែស៊ីជម្រៅក្នុងវិស័យរបស់អ្នក {#option-1-go-deeper-in-your-niche}
 
 មុននឹងពង្រីកទៅវិស័យថ្មីៗ សូមពិចារណាការជីករហូតដល់ជ្រៅជាងនេះនៅក្នុងវិស័យហាត់ប្រាណ៖
 
-### វិស័យតូចៗ (Sub-Niches)
+### វិស័យតូចៗ (Sub-Niches) {#sub-niches}
 
 - **Yoga studios** -- templates tshaj tshiab neej uas muaj features zoo li meditation, retreat, thiab workshop
 - **CrossFit boxes** -- WOD tracking (WOD nyob zoo), competition results (txiv neeg txog kev ua siab), community features (huab neeg hauv kom)
@@ -57,7 +57,7 @@ FitSite Network (Complete)
 
 Txhua niche tshiab yuav muaj templates tshiab thiab pom zoo tshiab, thiab puas yog nws yuav muaj brand tshiab los ntawm lub network Ultimate Multisite pib nrho.
 
-### Premium Features
+### Premium Features {#premium-features}
 
 Tsim cov features uas fitness studios yuav xav plig nrog:
 
@@ -66,14 +66,14 @@ Tsim cov features uas fitness studios yuav xav plig nrog:
 - **Fitness blog templates** -- cov duab tshiab uas muaj structure rau marketing fitness content
 - **Social media integration** -- auto-post class schedules thiab updates
 
-### Geographic Expansion
+### Geographic Expansion {#geographic-expansion}
 
 Yog koj pib hauv kom, yuav muaj kev thov mus rau:
 
 - Lub kom tshiab ntau hauv lub ntiaj teb koj
 - Lub ntiaj teb tshiab (txiv siv cov features localization ntawm Ultimate Multisite](/user-guide/localization/translating) los yog xav tau cov lus nrog ntau luag)
 
-## Option 2: Expand to Adjacent Niches
+## Option 2: Expand to Adjacent Niches {#option-2-expand-to-adjacent-niches}
 
 Cov qho kev ua uas koj ua rau fitness studios yuav muaj tsis txhob hluav. Niche tshiab ntawm koj yuav hluav heev vim tias koj muaj:
 
@@ -81,7 +81,7 @@ Cov qho kev ua uas koj ua rau fitness studios yuav muaj tsis txhob hluav. Niche 
 - Kev txawm tau txog kev ua haujlwm (operational experience)
 - Cov playbook uas muaj txoj kev txawm tau (proven playbook)
 
-### Adjacent Niches to Fitness
+### Adjacent Niches to Fitness {#adjacent-niches-to-fitness}
 
 **Wellness and spa** -- massage therapists, day spas, wellness centers
 **Sports clubs** -- amateur sports teams, leagues, recreational clubs
@@ -89,7 +89,7 @@ Cov qho kev ua uas koj ua rau fitness studios yuav muaj tsis txhob hluav. Niche 
 
 እነዚህ ከfitness ጋር የ مشترك ተመልካች አላቸው፣ ስለዚህ ማርኬቲንግ እና ሽርክናዎችዎ ሊተላለፉ ይችላሉ።
 
-### ሙሉ በሙሉ አዲስ ኒሽ (Completely New Niches)
+### ሙሉ በሙሉ አዲስ ኒሽ (Completely New Niches) {#completely-new-niches}
 
 ከLesson 2 የተሰጠውን መዋቅር በመጠቀም ማንኛውንም ኒሽ ለመገምገም ይጠቀሙ፡
 
@@ -106,7 +106,7 @@ Cov qho kev ua uas koj ua rau fitness studios yuav muaj tsis txhob hluav. Niche 
 
 የድረ-ገጽ መሰረተ-መዋቅር (platform infrastructure)፣ ክፍያ (billing) እና የአሰራር ሂደቶች ተመሳሳይ ይቀራሉ።
 
-## አማራጭ 3፡ የፕላትፎርም የፕላትፎርሞች መገንባት (Build a Platform of Platforms)
+## አማራጭ 3፡ የፕላትፎርም የፕላትፎርሞች መገንባት (Build a Platform of Platforms) {#option-3-build-a-platform-of-platforms}
 
 በስፋት ሲሄዱ፣ በአንድ Ultimate Multisite አውታረ መረብ ላይ በርካታ ኒሽ ብራንዶችን ማስኬድ ይችላሉ፦
 
@@ -116,11 +116,11 @@ Cov qho kev ua uas koj ua rau fitness studios yuav muaj tsis txhob hluav. Niche 
 
 እያንዳንዱ ብራንድ የራሱ templates፣ plans እና ማርኬቲንግ አላቸው፣ ግን ተመሳሳይ መሰረተ-መዋቅር፣ ክፍያ እና የአሰራር ሂደቶችን ይጋራሉ። እዚህ ነው የUltimate Multisite ኢኮኖሚው የሚሆነው ጠንካራ የሆነው—አንድ ፕላትፎርም፣ ብዙ ዘርፎች።
 
-### ብዙ አውታረ መረብ (Multi-Network)
+### ብዙ አውታረ መረብ (Multi-Network) {#multi-network}
 
 ለኒሾች ሙሉ ለሙሉ ለመለያየት፣ አንድ ጭነት (installation) ውስጥ በርካታ WordPress networks ለማስኬድ የሚያስችልን [Multi-Network addon](/addons/multinetwork) ይገምግሙ።
 
-## ជម្រើសទី ៤៖ លក់អាជីវកម្ម
+## ជម្រើសទី ៤៖ លក់អាជីវកម្ម {#option-4-sell-the-business}
 
 វេទិកាគេហទំព័រដែលផ្តោតលើផ្នែកណាមួយ (niche website platform) ដែលមានចំណូលជាប់លាប់ (recurring revenue), អត្រាអ្នកប្រើប្រាស់ចាកចេញទាប (low churn), និងមានទីផ្សារច្បាស់លាស់ គឺជាទ្រព្យសម្បត្តិដ៏មានតម្លៃ។ អាជីវកម្ម SaaS ជាធម្មតាត្រូវបានលក់ក្នុងតម្លៃ ៣-៥ ដងនៃចំណូលប្រចាំឆ្នាំ។
 
@@ -132,7 +132,7 @@ FitSite ដែលមានអតិថិជន ២០០ នាក់ក្ន�
 
 នេះមិនមែនជាលទ្ធផលដែលធានាបានទេ ប៉ុន្តែវាគឺជាលទ្ធផលជាក់ស្តែងសម្រាប់វេទិកា niche ដែលដំណើរការបានល្អ។
 
-## អ្វីដែលអ្នកបានរៀន
+## អ្វីដែលអ្នកបានរៀន {#what-you-have-learned}
 
 វគ្គសិក្សានេះបានបង្រៀនអ្នកនូវដំណើរការដែលអាចធ្វើម្តងទៀតបាន៖
 
@@ -148,7 +148,7 @@ FitSite ដែលមានអតិថិជន ២០០ នាក់ក្ន�
 
 Niche គឺជាយុទ្ធសាស្ត្រ។ Platform គឺជាឧបករណ៍។ Ultimate Multisite ធ្វើឱ្យឧបករណ៍នោះក្លាយជាការពិត។ ការយល់ដឹងរបស់អ្នកអំពី niche គឺជាតម្លៃរបស់វា។
 
-## ចាប់ផ្តើមបង្កើត
+## ចាប់ផ្តើមបង្កើត {#start-building}
 
 ប្រសិនបើអ្នកបានតាមដាន FitSite អ្នកនឹងមាន platform ដែលដំណើរការរួចហើយ។ ប្រសិនបើអ្នកអានរហូតដល់រកឃើញ niche ផ្ទាល់ខ្លួនរបស់អ្នក សូមត្រលប់ទៅ [Lesson 2: Picking Your Niche](lesson-2-picking-your-niche) ហើយចាប់ផ្តើមដំណើរការសម្រាប់ផ្នែកដែលអ្នកបានជ្រើសរើស។
 

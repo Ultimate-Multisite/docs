@@ -4,11 +4,11 @@ title: Akayunguruzo - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Muyunguruzo: wu_pending_payment_message
+# Muyunguruzo: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Yemerera umukoresha guhindura ubutumwa bujyanye n'ubwishyu bugitegereje.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yemerera umukoresha guhindura ubutumwa bujyanye n'ubwishyu bugitegereje.
 | $customer | `\WP_Ultimo\Models\Customer` | Umukiriya uriho ubu. |
 | $pending_payments | `array` | Urutonde rufite ubwishyu bugitegereje. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.0.19
-### Inkomoko
+### Inkomoko {#source}
 
 Bisobanuwe muri [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) ku murongo wa 244

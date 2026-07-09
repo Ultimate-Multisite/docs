@@ -3,7 +3,7 @@ title: Adókezelés
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Adókezelés
+# Adókezelés {#tax-handling}
 
 Az Ultimate Multisite rendelkezik egy, a core pluginunkba beépített adóbeszedési modullal, így ha forgalmi adót kell beszedned a csomagjaid, csomagajánlataid és szolgáltatásaid után, ezt könnyedén megteheted bármilyen add-on telepítése nélkül.
 
@@ -11,7 +11,7 @@ Az Európában található vállalatok számára kínálunk egy **add-on**-t, am
 
 Az Ultimate Multisite nem nyújt be és nem fizet be adókat a nevedben a kormánynak; mi egyszerűen abban segítünk, hogy a tranzakció időpontjában beszedhesd a megfelelő adókat. **Az adókat továbbra is neked kell befizetned.**
 
-## Adóbeszedés engedélyezése
+## Adóbeszedés engedélyezése {#enabling-tax-collection}
 
 Az adóbeszedés alapértelmezés szerint nincs engedélyezve. Az engedélyezéséhez menj az **Ultimate Multisite > Settings > Taxes** menüpontra, és kapcsold be az Enable Taxes beállítást.
 
@@ -25,7 +25,7 @@ Az egyes termékek adóbeállításait is megtekintheted:
 
 ![Termékek adóbeállításai](/img/config/settings-taxes.png)
 
-### Adó kizárva vs. adóval együtt
+### Adó kizárva vs. adóval együtt {#tax-excluded-vs-tax-included}
 
 Alapértelmezés szerint minden termékárad adó nélkül értendő, ami azt jelenti, hogy az adók **nincsenek benne** a termék árában. Ha megállapítjuk, hogy egy ügyfélnek adót kell fizetnie egy adott vásárlás után, az adókat az részösszegen **felül** adjuk hozzá.
 
@@ -37,7 +37,7 @@ Ne felejtsd el **menteni** a módosításaidat.
 
 ###
 
-## Adókulcsok létrehozása
+## Adókulcsok létrehozása {#creating-tax-rates}
 
 Miután engedélyezted az adóbeszedést, létre kell hoznod adókulcsokat bizonyos helyekhez az adókulcs-szerkesztőnk használatával.
 
@@ -51,7 +51,7 @@ Az adókulcs-szerkesztő oldalon új adókulcsokat adhatsz hozzá az **Add new R
 
 Minden adókulcsnak meg kell adnod egy **címet** (számlákon használva). Ezután kiválaszthatod az **országot** (kötelező), az **államot/megyét,** és a **várost** (mindkettő opcionális), ahol ezt az adót felszámítjuk. Végül add meg az **adókulcsot százalékban**.
 
-### Adókategóriák
+### Adókategóriák {#tax-categories}
 
 Több adókategóriát is létrehozhatsz, hogy különböző terméktípusokhoz különböző adókulcsokat adj hozzá.
 
@@ -73,7 +73,7 @@ Egy adott termék adókategóriáját a **Product edit page** megnyitásával, m
 
 Ugyanezen a képernyőn kikapcsolhatod az **Is Taxable?** kapcsolót, hogy jelezd az Ultimate Multisite számára, hogy az adott termék után ne szedjen be adót.
 
-## Európai áfatámogatás
+## Európai áfatámogatás {#european-vat-support}
 
 Ahogy korábban említettük, elérhető egy add-on az EU-ban lévő ügyfelek számára, akiknek az európai áfaszabályozás miatt további követelményeknek kell megfelelniük.
 
@@ -101,7 +101,7 @@ Ha visszatérsz a **Tax Settings tab**-ra, új elérhető beállításokat fogsz
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Áfakulcsok lekérése
+### Áfakulcsok lekérése {#pulling-on-vat-tax-rates}
 
 Az integrációnk által hozzáadott egyik eszköz az EU-tagállamok adókulcsainak betöltési lehetősége. Ezt az EU-s áfatámogatás engedélyezése után az adókulcs-szerkesztő oldal felkeresésével lehet megtenni.
 
@@ -111,7 +111,7 @@ Az oldal alján látni fogod az áfa-lekérési beállításokat. Egy kulcstípu
 
 A lekérés után az értékeket is szerkesztheted. Ehhez egyszerűen szerkeszd a szükséges táblázatsort, majd kattints az új értékek mentésére.
 
-### Áfaellenőrzés
+### Áfaellenőrzés {#vat-validation}
 
 Amikor az áfatámogatás engedélyezve van, az Ultimate Multisite egy további mezőt ad hozzá a pénztárűrlaphoz, a számlázási cím mező alá. A mező csak az EU-ban található ügyfelek számára jelenik meg.
 

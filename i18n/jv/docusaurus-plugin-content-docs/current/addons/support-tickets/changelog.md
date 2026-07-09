@@ -3,13 +3,13 @@ title: Cathetan Owah-owahan Tiket Dhukungan
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Cathetan Owah-owahan Tiket Dhukungan
+# Cathetan Owah-owahan Tiket Dhukungan {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Ditingkataké: Mbusak direktori vendor/ saka pelacakan Git (wis kacakup déning .gitignore), nyuda ukuran repository
 * Ditingkataké: Diuji nganti WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Ndandani: Nampa nilai null ing setter model tiket sing nullable
 * Ndandani: Nyimpen kabèh tiket ing tabel global saindhenging jaringan kanggo dhukungan multisite sing bener
 * Ndandani: Ndhelikaké field staf lan ndandani pangalihan kaca kosong ing formulir tiket anyar pelanggan
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Ditingkataké: Mung ngemot aset frontend kanthi kondisional ing kaca tiket dhukungan
 * Ditingkataké: Nglewati autoloader plugin nalika autoloader oyod Bedrock wis ngemot dependensi
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Ditambahaké: Fungsi tampilan tiket lengkap kanggo admin lan frontend
 * Ditambahaké: Handler AJAX kanggo pangiriman balesan tiket
 * Ditambahaké: Dhukungan kanggo fungsi balesan tiket nganggo penanganan formulir sing bener
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Ditingkataké: Struktur database nganggo query lan kelas skema sing bener kanggo tanggapan lan lampiran
 * Ditingkataké: Migrasi menyang properti nyata tinimbang atribut kanggo model tiket
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Dianyari: Ngganti jeneng prefix dadi ultimate-multisite kanggo konsistensi
 * Dianyari: Standarisasi domain teks
 * Didandani: Ndandani bug cilik lan peningkatan
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Rilis wiwitan
 * Sistem manajemen tiket lengkap
 * Kontrol akses multi-tingkat

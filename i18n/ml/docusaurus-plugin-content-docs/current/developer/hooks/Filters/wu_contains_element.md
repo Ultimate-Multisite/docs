@@ -4,13 +4,13 @@ title: ഫിൽട്ടർ - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filter: wu_contains_element
+# Filter: wu_contains_element {#filter-wucontainselement}
 
 ഡെവലപ്പർമാർക്ക് ആദ്യത്തെ തിരയൽ ഫലങ്ങൾ മാറ്റാൻ ഇത് അനുവദിക്കുന്നു.
 
 ഇത് third-party builders-മാർക്കും മറ്റും ഉപയോഗപ്രദമാണ്.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,9 +19,9 @@ _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 | $element | `self` | നിലവിലെ എലമെന്റ്. |
 | $post | `null\|\WP_Post` | പരിശോധിക്കാനുള്ള പോസ്റ്റ്. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) at line 534

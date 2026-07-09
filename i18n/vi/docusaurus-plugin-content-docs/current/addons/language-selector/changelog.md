@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Bộ chọn Ngôn ngữ
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Lịch sử thay đổi của Bộ chọn Ngôn ngữ
+# Lịch sử thay đổi của Bộ chọn Ngôn ngữ {#language-selector-changelog}
 
 Phiên bản: 1.1.3 - Phát hành vào 2026-05-05
 * Sửa lỗi: Các biến đầu vào hiện đã được làm sạch (sanitized) và tên hook tùy chỉnh đã được thêm tiền tố để ngăn ngừa xung đột với các plugin bên thứ ba.

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Distribuujte podweby napříč servery a databázemi pro výkon a zabezpečení
 
-## Hlavní novinky ve verzi 1.2.0
+## Hlavní novinky ve verzi 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 přidává základ pro suverénní tenanty pro pracovní postupy izolace v produkci:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 přidává základ pro suverénní tenanty pro pracovní pos
 
 Viz uživatelské příručky pro [pracovní postup suverénní migrace](/user-guide/getting-started/sovereign-migration-workflow), [izolaci multi-tenancy](/user-guide/configuration/multi-tenancy-isolation) a [operace se suverénními tenanty](/user-guide/administration/sovereign-tenant-operations).
 
-## Požadavky
+## Požadavky {#requirements}
 
 - WordPress 5.3 nebo vyšší
 - PHP 7.4 nebo vyšší
 - plugin Multisite Ultimate (aktivní)
 
-## Instalace
+## Instalace {#installation}
 
 1. Nahrajte soubory addonu do svého adresáře `/wp-content/plugins/`
 2. Aktivujte plugin přes menu „Pluginy“ ve WordPress
 3. Nakonfigurujte nastavení addonu v administraci sítě
 
-## Vývoj
+## Vývoj {#development}
 
-### Nastavení
+### Nastavení {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura projektu
+### Struktura projektu {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Pravidla modernizace kódu
 ```
 
-### Testování
+### Testování {#testing}
 
 Addon obsahuje komplexní testovací framework:
 
@@ -93,54 +93,54 @@ Addon obsahuje komplexní testovací framework:
 - **Pokrytí testy**: Nakonfigurováno pro sledování pokrytí kódu
 - **Multisite testování**: Testy běží v multisite prostředí
 
-### Standardy kódu
+### Standardy kódu {#code-standards}
 
 - **WordPress Coding Standards**: Vynucováno přes PHPCS
 - **Kompatibilita s PHP 7.4+**: Podporovány moderní funkce PHP
 - **Statická analýza**: Integrace PHPStan pro kontrolu typů
 - **Modernizace kódu**: Pravidla Rector pro upgrady PHP
 
-### Build systém
+### Build systém {#build-system}
 
 - **Zpracování assetů**: Minifikace souborů CSS/JS
 - **Překlad**: Generování POT souboru
 - **Balení**: Vytvoření archivu pro distribuci
 - **Vývojový režim**: Neminifikované assety pro ladění
 
-## Konfigurace
+## Konfigurace {#configuration}
 
 Addon podporuje různé možnosti konfigurace dostupné přes rozhraní administrace sítě.
 
-### Konfigurace suverénního tenanta
+### Konfigurace suverénního tenanta {#sovereign-tenant-configuration}
 
 U suverénních tenantů nakonfigurujte databázi tenanta, kořen souborového systému, navázání databázového hostitele a schopnost hostitele před směrováním provozu na tenanta. Spusťte ověření migrace po každé změně, která ovlivňuje přihlašovací údaje k databázi, navázání hostitele, směrování nebo zřizování uživatelů.
 
 Použijte `localhost` pouze tehdy, když runtime tenanta a databázová oprávnění očekávají místní socket nebo přístup na stejném stroji. Použijte `127.0.0.1` nebo název hostitele služby, pokud je to hostitel oprávnění nakonfigurovaný vaším poskytovatelem.
 
-### Schopnost Hostinger
+### Schopnost Hostinger {#hostinger-capability}
 
 Schopnost Hostinger multi-tenancy funguje se sdíleným integračním tokenem Hostinger. Před ověřením potvrďte, že doména je přítomna v hPanel, DNS směřuje na účet Hostinger a nastavení databáze tenanta odpovídá hPanel.
 
-## Hooky a filtry
+## Hooky a filtry {#hooks-and-filters}
 
-### Akce
+### Akce {#actions}
 
 - `ultimate-multisite-addon-template_init` - Spuštěno po inicializaci addonu
 - `ultimate-multisite-addon-template_loaded` - Spuštěno po načtení všech souborů addonu
 
-### Filtry
+### Filtry {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Upravte nastavení addonu
 - `ultimate-multisite-addon-template_enabled` - Přepište stav povolení/zakázání addonu
 
-## Licence
+## Licence {#license}
 
 Tento addon je licencován pod GPL v3 nebo novější.
 
-## Podpora
+## Podpora {#support}
 
 Pro podporu a dokumentaci navštivte [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Verze 1.2.0 (2026-06-03): přidává bezstavové automatické přihlášení tenanta, schopnost Hostinger multi-tenancy, izolaci databáze a souborového systému pro každý podweb, ověřovací brány suverénní migrace, vylepšení bootstrapu tenanta/zapisovače databáze, konfigurovatelné navázání hostitele MySQL a bezpečnější odstranění suverénního tenanta.
 

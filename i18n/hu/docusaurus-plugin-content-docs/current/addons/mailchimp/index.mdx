@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: Mailchimp Integráció
 
 Integrálja Multisite Ultimate hálózatát MailChimp fiódiózához. Egyes terveket MailChimp Listákhoz köthet, és automatikusan hozzáadhat előfizetőket ezekhez a listákhoz a regisztrációkor.
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltse fel az 'ultimate-multisite-mailchimp' fájlt a '/wp-content/plugins/' könyvtárba
 2. Aktiválja a plugin-t a WordPress Network Admin menüjében, a 'Plugins' menüpont alatt
 
-## Használat Útoguide
+## Használat Útoguide {#usage-guide}
 
 Az előfizetők e-mail címének szinkronizálása a MailChimp listáival nagyon egyszerű az Ultimate Multisite: MailChimp Integration Add-on segítségével. Ez az útmutató célja, hogy segítséget nyújtson az összes beállítás megtevésehez!
 
-## API kulcs megszerzése
+## API kulcs megszerzése {#getting-an-api-key}
 
 Mielőtt belemerülnénk a különböző elérhető beállításokba, egy MailChimp API kulcsra van szükségünk. Ez lehetővé teszi az Ultimate Multisite számára, hogy kommunikáljon a MailChimp API-vel, így listákat és csoportokat lekérdezzen, és hozzáadja az e-mail címeket ezekhez a listákhoz és csoportokhoz a felhasználók regisztrációjának időpontjában.
 
@@ -32,7 +32,7 @@ Kövesse ezt az útmutatót, hogy saját MailChimp API kulcsot szerezzen be: [Ab
 
 _Adja hozzá a MailChimp API kulcsát az_ _**Ultimate Multisite Beállítások - > Add-on Beállítások -> MailChimp**_
 
-## Integrációs mód
+## Integrációs mód {#integration-mode}
 
 A MailChimp Integration add-on két „integrációs módot” kínál, ami azt jelenti, hogy két különböző módon használhatja az add-ont az e-mail címek szinkronizálásához.
 
@@ -40,7 +40,7 @@ A MailChimp Integration add-on két „integrációs módot” kínál, ami azt 
 
 _Két integrációs mód nagyobb rugalmasság érdekében!_
 
-### Mód 1: Több lista
+### Mód 1: Több lista {#mode-1-multiple-lists}
 
 Az alapértelmezett mód **Több listát** használ. Ez a mód lehetővé teszi, hogy minden tervhez több MailChimp listát válasszon ki. Ez az legjobb opció, ha felhasználóit különböző listákba osztja.
 
@@ -52,7 +52,7 @@ Ennek eléréséhez a Több listás módot használhatja, hogy a Plan A MailChim
 
 _Válassza ki az alapértelmezett listákat az új és törölt fiókok esetén_
 
-### Mód 2: Egy lista + Több csoport
+### Mód 2: Egy lista + Több csoport {#mode-2-single-list--multiple-groups}
 
 MailChimp lehetővé teszi, hogy a listáját kisebb felhasználói csoportokra, azaz **Csoportokra** bontsa. Ez több kontrollt biztosít, mivel egy kampányt küldhet egy konkrét előfizetők alcsoportjának, anélkül, hogy több másolatot kellene létrehoznia ugyanazon a kampányon MailChimp-en (ami nehéznek teszi a kampány későbbi metrikáinak elemzését).
 
@@ -62,13 +62,13 @@ Például egyetlen listája lehet, nevezésével: **My Network Subscribers**, é
 
 _Válassza ki az alapértelmezett listákat és csoportokat, ha az „egyes lista + több csoport” integrációs módot használja_
 
-## Alapértelmezett listák és csoportok
+## Alapértelmezett listák és csoportok {#default-lists-and-groups}
 
 Miután kiválasztotta, hogy melyik integrációs mód illik jobban a konkrét felhasználási eseteéhez, ideje kiválasztani az alapértelmezett listákat (és csoportokat, a módtól függően). Az alapértelmezett lista akkor használatos, ha egy adott tervhez nem választott konkrét listát.
 
 Ezenkrált továbbá kiválaszthatja az alapértelmezett listát a törölt fiókok számára. Amikor egy felhasználó megszünteti előfizetését és eltávolítja a fiókját a hálózatából, az e-mail címe a törölt fiókok számára beállított listába kerül.
 
-## A Két Szereplős Előfizetés Aktiválása
+## A Két Szereplős Előfizetés Aktiválása {#enabling-double-subscription}
 
 Ugyanazon a beállítási oldalon aktiválhatja a **Két Szereplős Előfizetést**. Ez az opció hozzáadja a felhasználót egyszerre az alapértelmezett listához, ÉS a felhasználó tervéhez választott listához. Ha ez az opció nem van aktiválva, a felhasználó csak a felhasználó tervéhez választott listába kerül. Ha az adott tervhez semmit állítottak be, akkor az alapértelmezett listába kerül.
 
@@ -76,7 +76,7 @@ Ugyanazon a beállítási oldalon aktiválhatja a **Két Szereplős Előfizetés
 
 _A felhasználói fiók regisztrációkor a két listába is kerülhet_
 
-## Listák és Csoportok Kiválasztása Minden Tervhez
+## Listák és Csoportok Kiválasztása Minden Tervhez {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Kattintson a **Tervekre**, és válassza ki azt a tervet, amelyet szerkedi. Figyelembe véve, hogy az **Advanced Options** meta-box-ban megjelenik egy új fül, nevé MailChimp.
 

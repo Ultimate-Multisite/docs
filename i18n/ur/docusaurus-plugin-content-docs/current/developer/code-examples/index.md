@@ -3,11 +3,11 @@ title: Advanced Code Examples
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples
+# Advanced Code Examples {#advanced-code-examples}
 
 یہ مثالیں Ultimate Multisite کے ساتھ ایڈوانس انٹیگریشن پیٹرن (advanced integration patterns) کو ظاہر کرتی ہیں۔
 
-## Dynamic Pricing Engine
+## Dynamic Pricing Engine {#dynamic-pricing-engine}
 
 ایک قواعد پر مبنی (rules-based) قیمت کا انجن جو مقدار (volume)، وفاداری (loyalty)، اور موسمی چھوٹ (seasonal discounts) لاگو کرتا ہے:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Advanced Site Provisioning
+## Advanced Site Provisioning {#advanced-site-provisioning}
 
 پلان کی خصوصیات کی بنیاد پر نئے سائٹس کو پلگ انز، SSL، CDN، بیک اپ، اور مانیٹرنگ کے ساتھ خودکار طور پر کنفیگر (configure) کرنا:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Custom Limitations System
+## Custom Limitations System {#custom-limitations-system}
 
 استعمال کی حدوں (resource limits) کو ٹریک کرنا اور ان پر عمل درآمد کرنا، ساتھ ہی استعمال کی وارننگز بھی دینا:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter with `increment_item()`
+## BerlinDB Atomic Counter with `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 میں BerlinDB `Query` کلاس میں ایک `increment_item()` میتھڈ شامل کیا گیا ہے۔ اس کا استعمال آپ کو پڑھنے، تبدیل کرنے اور لکھنے (read-modify-write) کی ریس (races) سے بچتے ہوئے، عددی کالمز (numeric columns) پر محفوظ، ایٹمی اضافہ (atomic increments) کرنے کے لیے کریں۔ یہ کاؤنٹرز، استعمال کی کوٹے (usage quotas)، اور ریٹ-لمٹنگ چیکس کے لیے مفید ہے جو ایک ساتھ چلنے والے درخواستوں (concurrent requests) کے تحت چلتے ہیں۔
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 میں BerlinDB `Query` کلاس میں ایک `increm
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Basic usage
+### Basic usage {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Tracking API usage per membership
+### Tracking API usage per membership {#tracking-api-usage-per-membership}
 
 ہر ممبرشپ کے لیے API ریٹ لیمٹ کو نافذ کرنے کا ایک عملی طریقہ (practical pattern):
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Why `increment_item()` instead of `update_item()`
+### Why `increment_item()` instead of `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 ایک سادہ پڑھنے، تبدیل کرنے، اور لکھنے (read-modify-write) کا طریقہ کار ایک ساتھ چلنے والی درخواستوں (concurrent requests) کے تحت محفوظ نہیں ہوتا:
 

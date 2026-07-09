@@ -3,7 +3,7 @@ title: Hvordan kansellere et abonnement
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Hvordan kan jeg si opp abonnementet mitt?
+# Hvordan kan jeg si opp abonnementet mitt? {#how-can-i-cancel-my-subscription}
 
 Hvis du har en Ultimate Multisite-lisens, kan du når som helst avbestille fornyelsen. Følg bare stegene nedenfor:
 

@@ -3,13 +3,13 @@ title: Izdelava integracije z registrarjem po meri
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Gradnja integracije registrarja po meri
+# Gradnja integracije registrarja po meri {#building-a-custom-registrar-integration}
 
 Dodatek Domain Seller uporablja vzorec **Integration Registry**. Vsak registrar je PHP razred, ki implementira `Domain_Selling_Capability` in se registrira prek action hooka `wu_domain_seller_register_capabilities`.
 
 Ta vodnik prikazuje, kako povezati registrarja po meri.
 
-## Vmesnik
+## Vmesnik {#the-interface}
 
 Vaš razred mora implementirati `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` in razširiti `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Izbirne metode
+### Izbirne metode {#optional-methods}
 
 Implementirajte jih, da odklenete dodatne funkcije. Dodatek zazna podporo prek `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementirajte jih, da odklenete dodatne funkcije. Dodatek zazna podporo prek `
 | `get_epp_code(string $domain_name): array` | Prenos domene (odhodni) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Prenos domene (dohodni) |
 
-### Konvencija vrnjene vrednosti
+### Konvencija vrnjene vrednosti {#return-value-convention}
 
 Vse metode vrnejo polje z najmanj ključem `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Registracija vaše zmožnosti
+## Registracija vaše zmožnosti {#registering-your-capability}
 
 Registrirajte svoj razred z actionom `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Prvi argument za `add_capability()` je **ID ponudnika** — slug z malimi črkam
 
 ---
 
-## Dodajanje polj za poverilnice v čarovnika
+## Dodajanje polj za poverilnice v čarovnika {#adding-credential-fields-to-the-wizard}
 
 Da lahko skrbniki vnesejo poverilnice prek čarovnika za nastavitev, registrirajte svojo integracijo:
 
@@ -137,7 +137,7 @@ Poverilnice so shranjene kot omrežne možnosti z ID-ji polj kot ključi. Pridob
 
 ---
 
-## Hooki za dejanja po registraciji
+## Hooki za dejanja po registraciji {#hooks-for-post-registration-actions}
 
 Uporabite te actione za sprožitev webhookov, zagotavljanja, obvestil ali posodobitev CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Dnevniki
+## Dnevniki {#logging}
 
 Pišite v dnevniški kanal, specifičen za vašega ponudnika, z uporabo `wu_log_add()`:
 

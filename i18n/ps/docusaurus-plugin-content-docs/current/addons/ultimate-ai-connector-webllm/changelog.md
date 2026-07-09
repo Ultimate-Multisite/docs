@@ -3,9 +3,9 @@ title: د WebLLM لپاره د Ultimate AI Connector د بدلونونو ثبت
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# د WebLLM لپاره Ultimate AI Connector بدلون‌لړ
+# د WebLLM لپاره Ultimate AI Connector بدلون‌لړ {#ultimate-ai-connector-for-webllm-changelog}
 
-## نسخه 1.1.0 — په 2026-04-09 خپره شوه
+## نسخه 1.1.0 — په 2026-04-09 خپره شوه {#version-110--released-on-2026-04-09}
 
 * نوی: د اډمین-بار حالت نښې سره لامبو وهونکی د چټ ویجټ — هر ننوتی کاروونکی کولی شي د مخکیني پای څخه نېغ په نېغه د براوزر-اړخ LLM ته پرامپټ ورکړي.
 * نوی: SharedWorker رن‌ټایم — د MLC انجن اوس په SharedWorker کې چلېږي، نو څو ټبونه د GPU یوه ناسته شریکوي، د دې پر ځای چې پر هغې سره وجنګېږي.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * سمونه: WebLLM د wpai_preferred_text_models filter سره ونښلوئ، څو د AI Experiments ځانګړنه د ماډل د تنظیم په صورت کې د براوزر انجن ته لاره ومومي.
 * ښه شوی: د کېش-ماتولو، منځپانګې عادي‌کولو، او د هارډویر-مرجع سمونې چې د پای-تر-پایه ازموینې پر مهال ښکاره شوې.
 
-## نسخه 1.0.0 — لومړنۍ خپرونه
+## نسخه 1.0.0 — لومړنۍ خپرونه {#version-100--initial-release}

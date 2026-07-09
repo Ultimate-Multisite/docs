@@ -4,11 +4,11 @@ title: アクション - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Action: wu_domain_renewal_completed
+# Action: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 ドメインが正常に更新された後に発火します。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | 型 | 説明 |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 | $renewal_data | `array<string,mixed>` | 更新のメタデータ（ドメイン名、年数、顧客IDなど）。 |
 | $result | `array<string,mixed>` | 新しい有効期限日を含む、レジストラから返される生の（raw）結果配列。 |
 
-### 利用可能バージョン
+### 利用可能バージョン {#since}
 
 - 2.0.0
-### 出典
+### 出典 {#source}
 
 [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) の594行目で定義されています。

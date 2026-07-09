@@ -3,7 +3,7 @@ title: Ki sa se WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Ki sa WordPress Multisite?
+# Ki sa WordPress Multisite? {#what-is-wordpress-multisite}
 
 Nan kòrè WordPress la gen yon fonksyon ki rele ‘Multisite’ (Multisite). Fonksyon sa a te vini nan 2010 lè lansman WordPress 3.0. Depi la, li te gen plizyè revizyon pou ajoute nouvo fonksyon epi fè sekirite pi fò.
 
@@ -11,7 +11,7 @@ Nan esans, ou ka panse ke yon WordPress multisite se sa: Yon Université kenbe y
 
 ##
 
-## Ki sa Multisite WordPress ye an egzakti?
+## Ki sa Multisite WordPress ye an egzakti? {#what-exactly-is-wordpress-multisite}
 
 Multisite se yon fonksyon nan WordPress ki pèmèt plizyè sit pataje yon sèl enstalasyon WordPress. Lè ou aktive multisite, sit WordPress orijinal la chanje pou sipò sa ki souvan rele **rezo sit** (network of sites).
 
@@ -23,7 +23,7 @@ Fakta sa a se youn nan avantaj prensipal multisite a, paske li pèmèt ou grandi
 
 ##
 
-## Sous-domèn oswa Sous-dètri? (Subdomain or Subdirectory?)
+## Sous-domèn oswa Sous-dètri? (Subdomain or Subdirectory?) {#subdomain-or-subdirectory}
 
 Gen de modèl pou w mete WordPress multisite a mache – epi ou dwe chwazi youn lè ou ap chanje enstalasyon WordPress regilye ou an enstalasyon multisite:
 
@@ -49,7 +49,7 @@ Yon nan yon pati nan defi prensipal pou mete mode subdomain se SSL coverage (HTT
 
 Kontrè a mode subdirectory, subsit sou rezo ki baze sou subdomain yo konsidere pa motè chèche yo kòm sit entèn diferan, sa vle di kontni ki genyen sou yon subsite pa fè anyi nan pèfòmans SEO lòt subsit yo.
 
-## The Super Admin (Super Admin)
+## The Super Admin (Super Admin) {#the-super-admin}
 
 Enstalasyon WordPress sèl-sit la pèmèt ou ajoute yon kantite wèz unlimited ak bay moun sa yo diferan wòl itilizat ak diferan pèmisyon.
 
@@ -63,7 +63,7 @@ Plugin ak theme yo ka sèlman enstale oswa desante sou network admin panel pa su
 
 _Note: kòm ou wè, menm si ou invite yon moun nan rezo ou epi ou bay li status super admin, sa bay itilizatè a kontwòl total sou tout rezo ou. Kòm egzanp, lòt super admin yo ka retire status super admin ou, ki efektivman bloke ou nan panel admin rezo ou menm. Pou pèmèt kliyan Ultimate Multisite gen kontwòl granilye sou sa ki ka fè lòt super admin yo, nou gen yon add-on rele Support Agents. Add-on sa la pèmèt ou kreye yon lòt kalite itilizatè – yon agent – ak sèl permisyon yo bezwen pou fè travay yo nan rezo a._
 
-## Sa ki pataje ant subsites ak sa ki pa pataje
+## Sa ki pataje ant subsites ak sa ki pa pataje {#what-is-shared-among-subsites-and-what-is-not}
 
 Kòm nou te mansyone anvan, youn nan avantaj kle WordPress multisite la se ke tout subsites yo pataje menm konfigirasyon yo, fichye kò (core files), thèm (themes), plugin yo, fichye kò WordPress, elatriye.
 
@@ -73,7 +73,7 @@ Sepandan, gen kèk eleman ki byen limite pou chak subsite.
 - Chak subsite gen li pwòp panel admin li epi li ka aktive oswa deaktive plugin oswa thèm men si yo te aktif nan rezo a pa yon super admin.
 - Pifò tab baz done (database tables) kreye pou chak subsite, sa vle di post, komen, paj, konfigirasyon, ak plis bagay yo limite pou chak subsite.
 
-## Jere itilizatè sou WordPress Multisite
+## Jere itilizatè sou WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Yon sijè ki chache nan WordPress multisite se jere itilizatè (user management). Tab itilizatè WordPress la se youn nan kèk tab ki pataje ant tout subsites yo.
 
@@ -97,7 +97,7 @@ _Nòt: Nou konprann kijan sa ka vin move selon itilizasyon ou a, kidonk Ultimate
 
 Menmwen ke menm si tabli itilizat la pa gen pwoblèm, paske admin subsite yo oswa super admin yo ka ajoute epi retire itilizat yo nan subsite yo, e yo ka gen diferan wòl itilizat sou diferan subsite.
 
-## Konsiderasyon pèfòmans (Performance considerations)
+## Konsiderasyon pèfòmans (Performance considerations) {#performance-considerations}
 
 WordPress multisite la trè pwisan lè nou pale de kantite sit ki li kapab sipòte. Nou ka teste sa pa fasil paske [WordPress.com](https://WordPress.com), Edublogs, ak Campuspress se tout sèvis ki baze sou multisite e chak anjeneral gen anpil sit.
 

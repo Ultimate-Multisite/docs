@@ -4,23 +4,23 @@ title: ფილტრი - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filter: mu-migration/all_posts/default_args
+# Filter: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
 
 ფილტრავს ნაგულისხმევ არგუმენტებს all_posts მეთოდში პოსტების მოთხოვნისთვის.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
 | $default_args | `array` | ნაგულისხმევი არგუმენტების მასივი. |
 
-### დანერგილია
+### დანერგილია {#since}
 
 - 0.2.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/mu-migration/includes/commands/class-mu-migration-base.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-base.php#L70)-ში, 70-ე ხაზზე
 
 
-## აბრუნებს
+## აბრუნებს {#returns}
 ნაგულისხმევი არგუმენტების მასივს.

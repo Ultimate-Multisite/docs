@@ -3,7 +3,7 @@ title: PRO Tēma
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Pārpersonalizēšana administrācijas panelim ar PRO tēmām
+# Pārpersonalizēšana administrācijas panelim ar PRO tēmām {#customizing-your-admin-panel-with-pro-theme}
 
 Darbā, kad mēs veidām klientiem darbus, bieži ir nepieciešamība sniegt viņiem personalizētu pieredzi WordPress administrācijas paneli. Ja jūs meklējat profesionālu skatu un jomtu, PRO Theme var jums palīdzēt.
 

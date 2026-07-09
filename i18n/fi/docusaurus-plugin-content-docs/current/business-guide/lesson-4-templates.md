@@ -3,15 +3,15 @@ title: 'Oppitunti 4: Niche-mallien rakentaminen'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Oppitunti 4: Niche-mallien rakentaminen
+# Oppitunti 4: Niche-mallien rakentaminen {#lesson-4-building-niche-templates}
 
 Mallit ovat niche-arvolupauksesi ydin. Kuntosaliohjaamon omistaja, joka rekisteröityy ja näkee sivuston, joka näyttää jo fitness-verkkosivustolta -- tuntiaikatauluineen, valmentajaprofiileineen ja oikeanlaisine kuvineen -- pysyy paljon todennäköisemmin kuin sellainen, joka näkee tyhjän pohjan.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 Meillä on toimiva FitSite-verkosto, johon Ultimate Multisite on asennettu ja määritetty. Nyt rakennamme mallit, jotka saavat FitSiten tuntumaan nimenomaan fitness-yrityksille rakennetulta.
 
-## Miksi niche-malleilla on merkitystä
+## Miksi niche-malleilla on merkitystä {#why-niche-templates-matter}
 
 Yleiset mallit pakottavat asiakkaasi tekemään vaikean työn: selvittämään, mitä sivuja he tarvitsevat, millainen sisältörakenne toimii ja miten sivustosta tehdään heidän toimialalleen sopivan näköinen. Niche-mallit poistavat tämän kitkan.
 
@@ -24,11 +24,11 @@ Kuntosaliohjaamon omistajan, joka rekisteröityy FitSiteen, pitäisi nähdä:
 
 He täyttävät omat tietonsa. He eivät aloita tyhjästä.
 
-## Mallien suunnittelu
+## Mallien suunnittelu {#planning-your-templates}
 
 Ennen rakentamista päätä, mitä malleja tarjoat. FitSiteä varten luomme kolme:
 
-### Malli 1: Studio Essential
+### Malli 1: Studio Essential {#template-1-studio-essential}
 
 Pienille studioille ja personal trainereille.
 
@@ -39,7 +39,7 @@ Pienille studioille ja personal trainereille.
 - **Yhteys**-sivu, jossa on sijaintikartta ja lomake
 - **Selkeä, moderni ulkoasu**, jossa on fitnessiin sopiva värimaailma
 
-### Malli 2: Gym Pro
+### Malli 2: Gym Pro {#template-2-gym-pro}
 
 Vakiintuneille kuntosaleille, joilla on enemmän palveluja.
 
@@ -50,7 +50,7 @@ Vakiintuneille kuntosaleille, joilla on enemmän palveluja.
 - **Asiakaspalautteet**-osio etusivulla
 - **Näkyvämmät brändäys**vaihtoehdot
 
-### Malli 3: Fitness Chain
+### Malli 3: Fitness Chain {#template-3-fitness-chain}
 
 Usean toimipisteen toimijoille.
 
@@ -60,17 +60,17 @@ Usean toimipisteen toimijoille.
 - **Keskitetty brändäys**, jossa on toimipistekohtaiset tiedot
 - **Henkilöstöhakemisto** eri toimipisteille
 
-## Mallisivuston rakentaminen
+## Mallisivuston rakentaminen {#building-a-template-site}
 
 Ultimate Multisitessa malli on yksinkertaisesti WordPress-sivusto, joka on määritetty näyttämään siltä kuin haluat uusien asiakassivustojen näyttävän. Näin luot sellaisen:
 
-### Vaihe 1: Luo mallisivusto
+### Vaihe 1: Luo mallisivusto {#step-1-create-the-template-site}
 
 1. Siirry verkoston ylläpidossa kohtaan **Sivustot > Lisää uusi**
 2. Luo sivusto nimeltä `template-studio-essential`
 3. Tästä sivustosta tulee työpohjasi
 
-### Vaihe 2: Asenna ja määritä teema
+### Vaihe 2: Asenna ja määritä teema {#step-2-install-and-configure-the-theme}
 
 Siirry mallisivuston Dashboardiin ja:
 
@@ -82,7 +82,7 @@ Siirry mallisivuston Dashboardiin ja:
 Valitse teema, joka on riittävän joustava näyttääkseen hyvältä fitness-käytössä mutta ei niin monimutkainen, etteivät asiakkaasi pysty hallitsemaan sitä. Teemat kuten Astra, GeneratePress tai Kadence toimivat hyvin, koska ne ovat kevyitä, mukautettavia ja hyvin tuettuja.
 :::
 
-### Vaihe 3: Luo sivut
+### Vaihe 3: Luo sivut {#step-3-create-the-pages}
 
 Rakenna jokainen sivu sisältämään:
 
@@ -92,7 +92,7 @@ Rakenna jokainen sivu sisältämään:
 
 Tee paikkamerkkisisällöstä mahdollisuuksien mukaan ohjaavaa. Yleisen täytetekstin sijaan kirjoita esimerkiksi: "Korvaa tämä lyhyellä kuvauksella studiostasi ja siitä, mikä tekee siitä erityisen. Mainitse valmennusfilosofiasi, kokemuksesi vuosissa tai se, mitä asiakkaat voivat odottaa."
 
-### Vaihe 4: Määritä pluginit
+### Vaihe 4: Määritä pluginit {#step-4-configure-plugins}
 
 Asenna ja aktivoi pluginit, joita fitness-studiot tarvitsevat:
 
@@ -100,7 +100,7 @@ Asenna ja aktivoi pluginit, joita fitness-studiot tarvitsevat:
 - Yhteydenottolomakeplugin
 - SEO-plugin (esimääritetty fitnessiin liittyvillä oletuksilla)
 
-### Vaihe 5: Merkitse malliksi
+### Vaihe 5: Merkitse malliksi {#step-5-mark-as-template}
 
 1. Siirry kohtaan **Ultimate Multisite > Sivustot**
 2. Muokkaa mallisivustoa
@@ -108,7 +108,7 @@ Asenna ja aktivoi pluginit, joita fitness-studiot tarvitsevat:
 
 Toista tämä prosessi jokaiselle mallille, jota haluat tarjota.
 
-## Mallin laadun tarkistuslista
+## Mallin laadun tarkistuslista {#template-quality-checklist}
 
 Ennen kuin asetat mallin saataville, varmista:
 
@@ -121,7 +121,7 @@ Ennen kuin asetat mallin saataville, varmista:
 - [ ] Rikkinäisiä linkkejä tai puuttuvia resursseja ei ole
 - [ ] Sivun latausnopeus on hyväksyttävä
 
-## FitSite-verkosto tähän mennessä
+## FitSite-verkosto tähän mennessä {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Mitä rakensimme tässä oppitunnissa
+## Mitä rakensimme tässä oppitunnissa {#what-we-built-this-lesson}
 
 - **Kolme niche-kohtaista mallia**, jotka on suunniteltu erikokoisille fitness-yrityksille
 - **Fitnessiin sopivaa sisältöä ja kuvastoa**, jotka saavat alustan tuntumaan tarkoitusta varten rakennetulta

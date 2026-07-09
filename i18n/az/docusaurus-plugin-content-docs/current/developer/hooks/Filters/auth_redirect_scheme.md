@@ -4,19 +4,19 @@ title: Filter - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme
+# Filter: auth_redirect_scheme {#filter-authredirectscheme}
 
 Bu, autentifikasiya yönləndirmə sxemini filtrləyir.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Ad | Növ | Təsvir |
 |------|------|-------------|
 | $scheme | `string` | Autentifikasiya yönləndirmə sxemi. Varsayılan olaraq boşdur. |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 2.9.0
-### Mənbə
+### Mənbə {#source}
 
 - [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212) faylında 212-ci sətirdə təyin edilmişdir.

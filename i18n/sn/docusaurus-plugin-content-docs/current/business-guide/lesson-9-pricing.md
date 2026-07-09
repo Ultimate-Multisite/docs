@@ -3,17 +3,17 @@ title: 'Chidzidzo 9: Kuisa Mitengo Kuti Uwane Pundutso'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Chidzidzo 9: Mitengo yePurofiti
+# Chidzidzo 9: Mitengo yePurofiti {#lesson-9-pricing-for-profit}
 
 Muchidzidzo 5 takaisa mitengo yekutanga yezvirongwa zveFitSite. Iye zvino tinonatsa nzira yemitengo nemaitiro anowedzera mari inopinda, anokurudzira kukwidziridza, uye anoderedza kusiya basa.
 
-## Patakasiira
+## Patakasiira {#where-we-left-off}
 
 FitSite yatova nezvirongwa, matemplate, kubhadhara, branding, uye onboarding zvakagadzirwa. Mitengo yekutanga yaiva $49/$99/$199 pamwedzi. Iye zvino tinoita kuti mitengo iyoyo ishande zvakanyanya.
 
-## Misimboti Yemitengo Yemapuratifomu eNiche
+## Misimboti Yemitengo Yemapuratifomu eNiche {#pricing-principles-for-niche-platforms}
 
-### Mutengo Ngauenderane neKukosha, Kwete Mutengo Wekugadzira
+### Mutengo Ngauenderane neKukosha, Kwete Mutengo Wekugadzira {#price-on-value-not-cost}
 
 Mari yako yehosting inogona kunge iri $5-$15 pasite yemutengi. Izvozvo hazvirevi kuti mutengo wako unofanira kuva $20. Hausi kutengesa hosting. Uri kutengesa:
 
@@ -24,7 +24,7 @@ Mari yako yehosting inogona kunge iri $5-$15 pasite yemutengi. Izvozvo hazvirevi
 
 Isa mutengo zvichienderana nekukosha kwaunopa, kwete mutengo wekukuendesa.
 
-### Enzanisa neDzimwe Sarudzo
+### Enzanisa neDzimwe Sarudzo {#anchor-to-alternatives}
 
 Kana muridzi wefitness studio achiongorora FitSite, anoienzanisa ne:
 
@@ -34,7 +34,7 @@ Kana muridzi wefitness studio achiongorora FitSite, anoienzanisa ne:
 
 Pa $49-$199/mwedzi, FitSite yakachipa kupfuura developer, ine kugona kwakawanda kupfuura vavaki vakajairika, uye iri nani zvisingaverengeki kupfuura kusava newebhusaiti.
 
-## Kuiswa kweMisiyano yeMitengo
+## Kuiswa kweMisiyano yeMitengo {#implementing-price-variations}
 
 Mitengo yegore inokurudzira kuzvipira uye inoderedza kusiya basa. Enda kutabhu ye **Price Variations** yechirongwa chimwe nechimwe uye wedzera sarudzo dzegore:
 
@@ -46,12 +46,12 @@ Mitengo yegore inokurudzira kuzvipira uye inoderedza kusiya basa. Enda kutabhu y
 
 Wedzera field ye **Period Selection** kufomu rako rekubhadhara kuitira kuti vatengi vagone kuchinja pakati pekubhadhara pamwedzi nepamwaka wegore. Ona [Mafomu Ekubhadhara](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Nei Mitengo yeGore Ichishanda
+### Nei Mitengo yeGore Ichishanda {#why-annual-pricing-works}
 
 - **Kwauri**: Mari inopinda pakutanga, kusiya basa kwakaderera (vatengi vanobhadhara gore rese havanyanyi kukanzura pakati petemu)
 - **Kwavari**: Kuchengetedza chaiko, kufanofungidzira bhajeti
 
-## Mari dzeSetup
+## Mari dzeSetup {#setup-fees}
 
 Funga nezvemari ye setup inobhadharwa kamwe chete yezvirongwa zvinosanganisira kugadzirisa kunoitwa nemaoko:
 
@@ -61,7 +61,7 @@ Funga nezvemari ye setup inobhadharwa kamwe chete yezvirongwa zvinosanganisira k
 
 Gadzira mari dze setup muchikamu chemitengo chechirongwa chimwe nechimwe. Ona [Kugadzira Subscription Product Yako Yekutanga](/user-guide/configuration/creating-your-first-subscription-product) kuti uwane ruzivo.
 
-## Nguva dzeTrial
+## Nguva dzeTrial {#trial-periods}
 
 Kupa trial kunoderedza kuoma kwekusaina asi kunounza njodzi yekusashanduka kuva mutengi anobhadhara. KuFitSite:
 
@@ -70,11 +70,11 @@ Kupa trial kunoderedza kuoma kwekusaina asi kunounza njodzi yekusashanduka kuva 
 
 Gadzira trial muchikamu chemitengo chechirongwa cheStarter nekugonesa toggle ye **Offer Trial** uye nekuisa nguva kuti ive mazuva 7.
 
-### Kuita Kuti MaTrial Ashanduke Kuva Kubhadhara
+### Kuita Kuti MaTrial Ashanduke Kuva Kubhadhara {#making-trials-convert}
 
 Trial inoshanda chete kana mutengi akawana kukosha mukati menguva ye trial. Onboarding sequence yako (Chidzidzo 8) yakakosha pano -- maemail ekugamuchira anofanira kurongwa nenguva kuti asundidzire kubatana mukati mehwindo remazuva 7.
 
-## Discount Codes
+## Discount Codes {#discount-codes}
 
 Gadzira discount codes dzakarongwa zvine chinangwa chezvinangwa zvakati:
 
@@ -88,7 +88,7 @@ Enda ku **Ultimate Multisite > Discount Codes** kuti ugadzire izvi. Ona [Kugadzi
 Discounts dzinofanira kuva maturusi ehungwaru, kwete zvinhu zvagara zviripo. Kana munhu wese achiwana discount, haisisiri discount -- ndiwo mutengo wako chaiwo. Dzishandise kumakampeni akati, kutumirwa kwevatengi, uye kusimudzira kune nguva yakatarwa.
 :::
 
-## Kubata Mitero
+## Kubata Mitero {#tax-handling}
 
 Kana uchishanda munzvimbo inoda kuunganidzwa kwemutero:
 
@@ -98,7 +98,7 @@ Kana uchishanda munzvimbo inoda kuunganidzwa kwemutero:
 
 Ona [Kubata Mitero](/user-guide/payment-gateways/tax-handling) kuti uwane configuration yakadzama. Kana uchishandira vatengi pasi rese, funga nezve [VAT addon](/addons/vat) kuti utevedzere mitemo yeEU.
 
-## Kuongorora Mitengo Yako
+## Kuongorora Mitengo Yako {#reviewing-your-pricing}
 
 Mushure mekuvhura, ongorora zvakare mitengo kota yega yega. Tarisa pa:
 
@@ -107,7 +107,7 @@ Mushure mekuvhura, ongorora zvakare mitengo kota yega yega. Tarisa pa:
 - **Churn nechirongwa**: Kana vatengi vegore vachisiya zvishoma, sundidzira mitengo yegore zvakanyanya
 - **Mitengo yevakwikwidzi**: Dzimwe sarudzo dziri kubhadharisa chii? Wakaiswa panzvimbo yakakodzera here?
 
-## FitSite Network Kusvika Parizvino
+## FitSite Network Kusvika Parizvino {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Zvatakavaka Muchidzidzo Ichi
+## Zvatakavaka Muchidzidzo Ichi {#what-we-built-this-lesson}
 
 - **Mitengo yepagore** ine 20% discount kukurudzira kuzvipira
 - **Mari dzekutanga setup** pamatier epamusoro kuti dzibhadhare basa reonboarding

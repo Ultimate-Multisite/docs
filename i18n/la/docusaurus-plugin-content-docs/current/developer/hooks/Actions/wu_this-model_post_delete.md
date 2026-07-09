@@ -4,21 +4,21 @@ title: 'Actio - wu_{$this->model}_post_delete'
 sidebar_label: 'wu_{$this->model}_post_delete'
 _i18n_hash: 723d566c67fd82808273b2eb42c96d73
 ---
-# Action: wu_\{$this->model\}_post_delete
+# Action: wu_\{$this->model\}_post_delete {#action-wuthis-modelpostdelete}
 
 Excitatur postquam obiectum in basim datorum repositum est.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
 | $result | `bool` | Verum, si obiectum feliciter deletum est. |
 | $this | `\Base_Model` | Instantia obiecti. |
 
-### Ex quo
+### Ex quo {#since}
 
 - 2.0.0
-### Fons
+### Fons {#source}
 
 - Definitum in [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L663) ad lineam 663
 - Definitum in [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1503) ad lineam 1503

@@ -3,17 +3,17 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 voegt een sunrise extension loader toe voor add-ons en aangepaste MU-plugin integraties die moeten draaien tijdens het WordPress sunrise bootstrapping, zonder dat u het gegenereerde `wp-content/sunrise.php` bestand hoeft te bewerken.
 
-## Wanneer te gebruiken
+## Wanneer te gebruiken {#when-to-use-it}
 
 Gebruik een sunrise extension wanneer uw integratie moet draaien voordat reguliere plugins worden geladen, zoals voor aangepaste domeinroutering, host-specifieke verwerking van verzoeken, of vroege aanpassingen aan de netwerk-bootstrap.
 
 Voor normale integraties geven wij de voorkeur aan reguliere WordPress plugins, MU-plugins en de gedocumenteerde Ultimate Multisite hooks. Sunrise code draait erg vroeg en moet klein, defensief en onafhankelijk van externe afhankelijkheden blijven.
 
-## Bestandsnaamconventie
+## Bestandsnaamconventie {#file-naming-convention}
 
 Maak een PHP-bestand met de naam `sunrise.php` in een addon-map waarvan de naam begint met `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 De overeenkomende bestanden worden in alfabetische volgorde geladen op basis van het addon-pad.
 
-## Waar het bestand te plaatsen
+## Waar het bestand te plaatsen {#where-to-place-the-file}
 
 Plaats het bestand in de root-map van de addon die verantwoordelijk is voor het sunrise-gedrag:
 
@@ -45,7 +45,7 @@ De scan wordt afgehandeld ten opzichte van `WP_CONTENT_DIR`, en niet ten opzicht
 
 Bewerk het gegenereerde `wp-content/sunrise.php` bestand niet direct. De loader stelt u in staat om aangepaste code te laten uitbreiden op het sunrise-gedrag zonder de kern-sunrise-file te forken die Ultimate Multisite installeert en bijwerkt.
 
-## Beschikbare hooks en filters
+## Beschikbare hooks en filters {#hooks-and-filters-available}
 
 Addon sunrise bestanden draaien nadat de domeinmapping van Ultimate Multisite is geladen en vóórdat WordPress `ms_loaded` activeert. Op dit punt kan een sunrise-bestand:
 
@@ -58,7 +58,7 @@ Ultimate Multisite activeert `wu_sunrise_loaded` nadat zijn sunrise loader is vo
 
 Roep alleen functies aan die al geladen zijn in de sunrise-fase. Vermijd database-intensief werk, template rendering, HTTP-verzoeken en code die ervan uitgaat dat de normale plugin-laadvolgorde is voltooid.
 
-## Minimale voorbeeld
+## Minimale voorbeeld {#minimal-example}
 
 ```php
 <?php

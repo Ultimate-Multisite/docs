@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Kuweka Matangazo kwenye Mtandao wako kwa kutumia Ultimate Multisite: Ad Injector
+# Kuweka Matangazo kwenye Mtandao wako kwa kutumia Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector ni **nyongeza ya bure** inayokupa zana za kuweka matangazo kwenye mipango yako moja kwa moja kutoka kwenye ukurasa wake wa kuhariri.
 
@@ -35,7 +35,7 @@ Unaweza pia kuweka matangazo kwenye sehemu ya juu ya Kurasa za Admin kwa watumia
 
 _Nenda kwenye chaguo la Admin Panel Ad Code ikiwa unataka kuonyesha matangazo kwenye sehemu ya nyuma ya mtumiaji wako_
 
-### Zaidi ya Matangazo
+### Zaidi ya Matangazo {#beyond-advertising}
 
 Unaweza pia kutumia Ultimate Multisite: Ad Injector kutoa msaada kwa mipango ya ngazi ya juu.
 

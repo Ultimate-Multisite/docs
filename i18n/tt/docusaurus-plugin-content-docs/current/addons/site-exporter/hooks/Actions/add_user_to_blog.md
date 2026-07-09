@@ -4,11 +4,11 @@ title: Гамәл - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog
+# Action: add_user_to_blog {#action-addusertoblog}
 
 Кулланучы сайтка өстәлгәннән соң шунда ук эшли.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 | $role | `string` | Кулланучы роле. |
 | $blog_id | `int` | Блог ID-сы. |
 
-### Кайчаннан
+### Кайчаннан {#since}
 
 - MU: MU
-### Чыганак
+### Чыганак {#source}
 
 [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) эчендә 174 нче юлда билгеләнгән.

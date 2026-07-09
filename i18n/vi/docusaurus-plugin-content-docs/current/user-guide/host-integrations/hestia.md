@@ -3,28 +3,28 @@ title: Tích hợp Bảng điều khiển Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Tích hợp Hestia Control Panel
+# Tích hợp Hestia Control Panel {#hestia-control-panel-integration}
 
 Hướng dẫn này giải thích cách cấu hình tích hợp Hestia trong Ultimate Multisite để các domain được ánh xạ trong mạng của bạn tự động được thêm (và xóa) dưới dạng Web Domain Alias trong Hestia.
 
 - Tham khảo Hestia CLI: v-add-web-domain-alias / v-delete-web-domain-alias
 - Tài liệu REST API chính thức: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Tính năng
+## Tính năng {#what-it-does}
 - Khi một domain được ánh xạ trong Ultimate Multisite, tích hợp sẽ gọi API của Hestia để chạy:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Khi một ánh xạ domain bị xóa, nó sẽ chạy:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Tùy chọn thêm/xóa alias `www.` tùy thuộc vào cài đặt "Tự động tạo subdomain www" trong phần cài đặt Domain Mapping.
 
-## Yêu cầu trước khi bắt đầu
+## Yêu cầu trước khi bắt đầu {#prerequisites}
 - Một Hestia Web Domain đã tồn tại và trỏ đến cài đặt WordPress của bạn. Tích hợp sẽ gắn các alias vào domain gốc này.
 - Đã bật quyền truy cập API của Hestia. Bạn có thể xác thực bằng mật khẩu hoặc API hash/token.
 
 Xem tài liệu REST API của Hestia để biết cách bật quyền truy cập API và chi tiết xác thực:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Cấu hình (Wizard → Integrations → Hestia)
+## Cấu hình (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Cung cấp các giá trị sau:
 
 - `WU_HESTIA_API_URL` (bắt buộc)
@@ -42,16 +42,16 @@ Cung cấp các giá trị sau:
 
 Bạn có thể để wizard tự động thêm các hằng số này vào `wp-config.php`, hoặc tự định nghĩa thủ công.
 
-## Xác minh cài đặt
+## Xác minh cài đặt {#verifying-setup}
 - Trong bước "Testing" của wizard, plugin sẽ gọi `v-list-web-domains <WU_HESTIA_ACCOUNT> json` qua API. Phản hồi thành công xác nhận kết nối và xác thực đã hoạt động.
 - Sau khi ánh xạ domain, kiểm tra trong Hestia: Web > domain gốc > Aliases. Bạn sẽ thấy alias mới được thêm vào.
 
-## Lưu ý & Mẹo
+## Lưu ý & Mẹo {#notes--tips}
 - Đảm bảo `WU_HESTIA_WEB_DOMAIN` đã tồn tại và thuộc sở hữu của `WU_HESTIA_ACCOUNT`.
 - Nếu cần SSL, hãy quản lý chứng chỉ trong Hestia. Tích hợp này hiện chỉ xử lý alias.
 - Plugin cũng có thể thêm/xóa `www.<domain>` tùy thuộc vào cài đặt "www subdomain" trong Domain Mapping.
 
-## Ví dụ gọi API (cURL)
+## Ví dụ gọi API (cURL) {#example-api-call-curl}
 Dưới đây là ví dụ minh họa (điều chỉnh theo môi trường của bạn). Tham khảo tài liệu chính thức để biết chính xác các tham số.
 
 ```
@@ -70,11 +70,11 @@ cmd=v-add-web-domain-alias
 
 Để xóa, sử dụng `cmd=v-delete-web-domain-alias` với các tham số tương tự.
 
-## Xử lý sự cố
+## Xử lý sự cố {#troubleshooting}
 - Lỗi HTTP từ API: kiểm tra `WU_HESTIA_API_URL` có thể truy cập được và có chứa `/api`.
 - Lỗi xác thực: xác nhận `WU_HESTIA_API_USER` và `WU_HESTIA_API_PASSWORD` hoặc `WU_HESTIA_API_HASH`.
 - "Missing account/base domain" trong log: đảm bảo `WU_HESTIA_ACCOUNT` và `WU_HESTIA_WEB_DOMAIN` đã được đặt và hợp lệ trong Hestia.
 
-## Tài liệu tham khảo
+## Tài liệu tham khảo {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Tham khảo Hestia CLI (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

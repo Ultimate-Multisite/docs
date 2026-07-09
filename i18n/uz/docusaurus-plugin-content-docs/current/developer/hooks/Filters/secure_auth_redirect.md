@@ -4,19 +4,19 @@ title: Filtr - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filtr: secure_auth_redirect
+# Filtr: secure_auth_redirect {#filter-secureauthredirect}
 
 Xavfsiz autentifikatsiya yo‘naltirishidan foydalanish yoki foydalanmaslikni filtrlaydi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
 | $secure | `bool` | Xavfsiz autentifikatsiya yo‘naltirishidan foydalanish yoki foydalanmaslik. Standart qiymat false. |
 
-### Joriy etilgan versiya
+### Joriy etilgan versiya {#since}
 
 - 3.1.0
-### Manba
+### Manba {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L190) faylida 190-qatorda aniqlangan.

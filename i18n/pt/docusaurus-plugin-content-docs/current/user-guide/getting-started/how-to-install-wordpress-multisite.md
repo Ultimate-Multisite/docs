@@ -3,7 +3,7 @@ title: Como instalar o WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Como Instalar o WordPress Multisite?
+# Como Instalar o WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 O WordPress Multisite permite que você tenha uma rede de sites em uma única instalação. Este é um recurso nativo, mas não está ativo por padrão.
 
@@ -104,9 +104,9 @@ Para criar um subsistema:
 
 Depois de preencher os campos, clique no botão "Adicionar site". Assim que o novo subsistema for criado, acesse-o para garantir que ele está funcionando corretamente.
 
-## Problemas Comuns:
+## Problemas Comuns: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Eu consigo criar novos sites, mas eles não estão acessíveis.
+### 1. Eu consigo criar novos sites, mas eles não estão acessíveis. {#common-problems}
 
 Se você escolheu subdomínios, também precisa configurar subdomínios curinga (wildcard) para sua rede multisite.
 

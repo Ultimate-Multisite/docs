@@ -3,13 +3,13 @@ title: Migração do Modo de Terceiros
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migração para o Modo de Terceiros
+# Migração para o Modo de Terceiros {#third-party-mode-migration}
 
 O Superdav AI Agent v1.12.0 muda a forma como as habilidades de terceiros são tratadas. **O modo de terceiros agora é definido como automático por padrão**, permitindo a integração nativa com a WordPress Abilities API no WordPress 7.0+ sem configuração manual.
 
-## O Que Mudou?
+## O Que Mudou? {#what-changed}
 
-### Antes da v1.12.0
+### Antes da v1.12.0 {#before-v1120}
 
 As habilidades de terceiros exigiam configuração manual:
 
@@ -18,7 +18,7 @@ As habilidades de terceiros exigiam configuração manual:
 - A integração com a WordPress Abilities API era opcional
 - O modo legado era o padrão
 
-### Depois da v1.12.0
+### Depois da v1.12.0 {#after-v1120}
 
 As habilidades de terceiros funcionam automaticamente:
 
@@ -27,13 +27,13 @@ As habilidades de terceiros funcionam automaticamente:
 - Não é necessária configuração manual no WordPress 7.0+
 - O modo legado ainda está disponível para versões mais antigas do WordPress
 
-## Quem Será Afetado?
+## Quem Será Afetado? {#who-is-affected}
 
-### Novas Instalações (WordPress 7.0+)
+### Novas Instalações (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Nenhuma ação necessária.** O modo de terceiros é definido automaticamente como "auto", e as habilidades funcionam sem necessidade de configuração.
 
-### Instalações Existentes
+### Instalações Existentes {#existing-installations}
 
 **Suas configurações são preservadas.** Se você estava usando:
 
@@ -41,7 +41,7 @@ As habilidades de terceiros funcionam automaticamente:
 - **Modo de terceiros manual**: Você permanece no modo manual (sem alteração)
 - **Modo automático**: Você continua com o modo automático (sem alteração)
 
-### Versões do WordPress Antes da 7.0
+### Versões do WordPress Antes da 7.0 {#wordpress-versions-before-70}
 
 **O modo legado ainda está disponível.** Se você estiver no WordPress 6.x ou anterior:
 
@@ -49,9 +49,9 @@ As habilidades de terceiros funcionam automaticamente:
 - Você pode habilitar manualmente o modo de terceiros se desejar
 - Atualize para o WordPress 7.0+ para usar a Abilities API nativa
 
-## Entendendo os Modos
+## Entendendo os Modos {#understanding-the-modes}
 
-### Modo Automático (Novo Padrão)
+### Modo Automático (Novo Padrão) {#auto-mode-new-default}
 
 **O modo automático** usa a integração nativa com a WordPress Abilities API:
 
@@ -62,7 +62,7 @@ As habilidades de terceiros funcionam automaticamente:
 
 **Quando usar**: WordPress 7.0+ com capacidades de terceiros
 
-### Modo Manual
+### Modo Manual {#manual-mode}
 
 O **modo manual** exige configuração explícita:
 
@@ -73,7 +73,7 @@ O **modo manual** exige configuração explícita:
 
 **Quando usar**: Testes, carregamento seletivo de capacidades ou configurações personalizadas
 
-### Modo Legado
+### Modo Legado {#legacy-mode}
 
 O **modo legado** usa o antigo sistema de capacidade de terceiros:
 
@@ -84,24 +84,24 @@ O **modo legado** usa o antigo sistema de capacidade de terceiros:
 
 **Quando usar**: WordPress 6.x ou anterior, ou quando você precisar de compatibilidade legada
 
-## Verificando Seu Modo Atual
+## Verificando Seu Modo Atual {#checking-your-current-mode}
 
-### Via Painel de Administração
+### Via Painel de Administração {#via-admin-panel}
 
 1. Vá para **Administração do WordPress** → **Superdav AI Agent** → **Configurações**
 2. Procure a configuração **Modo de Terceiros (Third-Party Mode)**
 3. Você verá seu modo atual e opções para alterá-lo
 
-### Via Código
+### Via Código {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', ou 'legacy'
 ```
 
-## Alterando Seu Modo
+## Alterando Seu Modo {#changing-your-mode}
 
-### Mudar para Modo Automático (Auto Mode)
+### Mudar para Modo Automático (Auto Mode) {#switch-to-auto-mode}
 
 Se você estiver no WordPress 7.0+ e quiser usar o modo automático:
 
@@ -112,7 +112,7 @@ Se você estiver no WordPress 7.0+ e quiser usar o modo automático:
 
 O Superdav AI Agent descobrirá e registrará automaticamente as capacidades de terceiros.
 
-### Mudar para Modo Manual
+### Mudar para Modo Manual {#switch-to-manual-mode}
 
 Se você quiser controlar manualmente quais capacidades são carregadas:
 
@@ -122,7 +122,7 @@ Se você quiser controlar manualmente quais capacidades são carregadas:
 4. Clique em **Salvar**
 5. Edite seu arquivo de configuração para especificar quais capacidades carregar
 
-### Mudar para Modo Legado
+### Mudar para Modo Legado {#switch-to-legacy-mode}
 
 Se você precisar de compatibilidade legada:
 
@@ -131,9 +131,9 @@ Se você precisar de compatibilidade legada:
 3. Selecione **Legado (Legacy)**
 4. Clique em **Salvar**
 
-## Benefícios do Modo Automático (Auto Mode)
+## Benefícios do Modo Automático (Auto Mode) {#benefits-of-auto-mode}
 
-### Descoberta Automática
+### Descoberta Automática {#automatic-discovery}
 
 As habilidades são descobertas automaticamente a partir de:
 
@@ -144,7 +144,7 @@ As habilidades são descobertas automaticamente a partir de:
 
 Não é necessário registro manual.
 
-### Integração Nativa
+### Integração Nativa {#native-integration}
 
 As habilidades se integram à Abilities API do WordPress:
 
@@ -153,67 +153,67 @@ As habilidades se integram à Abilities API do WordPress:
 - Compatível com outros plugins que usam a Abilities API
 - À prova de futuro conforme o WordPress evolui
 
-### Gerenciamento Simplificado
+### Gerenciamento Simplificado {#simplified-management}
 
 - Sem arquivos de configuração para editar
 - Sem registro manual de habilidades
 - Os controles de visibilidade das habilidades funcionam automaticamente
 - Avisos do administrador alertam sobre habilidades não classificadas
 
-### Melhor Desempenho
+### Melhor Desempenho {#better-performance}
 
 - As habilidades são armazenadas em cache (cached)
 - Carregamento preguiçoso (lazy-loaded) sob demanda
 - Otimizado para WordPress 7.0+
 
-## Caminho de Migração
+## Caminho de Migração {#migration-path}
 
-### Se Você Está no WordPress 6.x
+### Se Você Está no WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Atualize para o WordPress 7.0+** (quando estiver pronto)
 2. **Atualize o Superdav AI Agent** para a versão v1.12.0+
 3. **Mude o modo de terceiros para Auto** (opcional; o modo legado ainda funciona)
 4. **Revise a visibilidade das habilidades** para garantir os controles de acesso corretos
 
-### Se Você Está no WordPress 7.0+
+### Se Você Está no WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Atualize o Superdav AI Agent** para a versão v1.12.0+
 2. **Verifique se o modo de terceiros está definido como Auto** (deve estar por padrão)
 3. **Revise a visibilidade das habilidades** para garantir os controles de acesso corretos
 4. **Teste as habilidades de terceiros** para confirmar que estão funcionando
 
-## Solução de Problemas (Troubleshooting)
+## Solução de Problemas (Troubleshooting) {#troubleshooting}
 
-### As habilidades não estão carregando no modo automático
+### As habilidades não estão carregando no modo automático {#abilities-arent-loading-in-auto-mode}
 
 - Verifique se você está no WordPress 7.0+
 - Confirme se o modo de terceiros está definido como "Auto"
 - Verifique se o plugin que fornece a habilidade está ativo
 - Verifique os logs de erro do WordPress em busca de erros de registro
 
-### Eu quero manter o modo legado
+### Eu quero manter o modo legado {#i-want-to-keep-legacy-mode}
 
 - Vá para **Configurações** → **Modo de Terceiros (Third-Party Mode)**
 - Selecione **Legado (Legacy)**
 - Clique em **Salvar**
 - O modo legado continuará funcionando
 
-### Minhas habilidades personalizadas não estão aparecendo
+### Minhas habilidades personalizadas não estão aparecendo {#my-custom-abilities-arent-showing}
 
 - Verifique se elas estão registradas através dos hooks do WordPress
 - Confirme se elas implementam a Abilities API corretamente
 - Revise os logs de erro do WordPress
 - Use a página de administração **Ability Visibility** para ver todas as habilidades registradas
 
-### Estou recebendo avisos de "habilidade não classificada"
+### Estou recebendo avisos de "habilidade não classificada" {#im-getting-unclassified-ability-notices}
 
 - Isso é normal para novas habilidades de terceiros
 - Revise e classifique-as na notificação da administração
 - Veja **Ability Visibility** para detalhes sobre a classificação
 
-## Compatibilidade com Versões Anteriores (Backward Compatibility)
+## Compatibilidade com Versões Anteriores (Backward Compatibility) {#backward-compatibility}
 
-### Configurações Existentes
+### Configurações Existentes {#existing-configurations}
 
 Se você tiver configurações de habilidade de terceiros existentes:
 
@@ -223,33 +223,33 @@ Se você tiver configurações de habilidade de terceiros existentes:
 
 Para manter sua configuração personalizada, permaneça no modo Manual ou Legado.
 
-### Linha do Tempo de Descontinuação (Deprecation Timeline)
+### Linha do Tempo de Descontinuação (Deprecation Timeline) {#deprecation-timeline}
 
 - **v1.12.0**: Os modos Legado e Manual ainda são totalmente suportados.
 - **v1.13.0+**: O modo Legado pode começar a mostrar avisos de descontinuação.
 - **v2.0.0**: O modo Legado poderá ser removido (a definir).
 
-## Melhores Práticas (Best Practices)
+## Melhores Práticas (Best Practices) {#best-practices}
 
-### Para Novas Instalações
+### Para Novas Instalações {#for-new-installations}
 
 - Use o Modo Automático (é o padrão).
 - Deixe o Superdav AI Agent descobrir as habilidades automaticamente.
 - Use a Ability Visibility para controlar o acesso.
 
-### Para Instalações Existentes
+### Para Instalações Existentes {#for-existing-installations}
 
 - Atualize para WordPress 7.0+ sempre que possível.
 - Mude para o Modo Automático para uma gestão simplificada.
 - Revise e classifique as habilidades usando a Ability Visibility.
 
-### Para Habilidades Personalizadas
+### Para Habilidades Personalizadas {#for-custom-abilities}
 
 - Registre as habilidades através dos hooks do WordPress (Abilities API).
 - Evite registros de habilidade personalizados.
 - Teste no WordPress 7.0+ com o Modo Automático.
 
-## Próximos Passos
+## Próximos Passos {#next-steps}
 
 1. **Verifique sua versão do WordPress**: Confirme se você está na 7.0+ para o modo Automático (Auto mode).
 2. **Revise seu modo de terceiros**: Vá em Configurações e verifique seu modo atual.
@@ -257,7 +257,7 @@ Para manter sua configuração personalizada, permaneça no modo Manual ou Legad
 4. **Classifique as habilidades**: Revise e classifique quaisquer habilidades não classificadas.
 5. **Teste**: Verifique se suas habilidades de terceiros estão funcionando corretamente.
 
-## Tópicos Relacionados
+## Tópicos Relacionados {#related-topics}
 
 - **Visibilidade das Habilidades (Ability Visibility)**: Controle quais habilidades são expostas onde.
 - **API de Habilidades do WordPress (WordPress Abilities API)**: Aprenda sobre o registro nativo de habilidades do WordPress.

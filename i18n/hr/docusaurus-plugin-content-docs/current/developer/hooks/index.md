@@ -3,11 +3,11 @@ title: Referenca hookova
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referenca hookova
+# Referenca hookova {#hooks-reference}
 
 Automatski generirana dokumentacija za svih **59 akcija** i **118 filtera** u Ultimate Multisite.
 
-## Akcije
+## Akcije {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Pokreće se prije preusmjeravanja za autentifikaciju.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Pokreće se neposredno prije postavljanja kolačića za autentifikaciju.
@@ -70,7 +70,7 @@ Automatski generirana dokumentacija za svih **59 akcija** i **118 filtera** u Ul
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Pokreće se nakon što je objekt pohranjen u bazu podataka.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Omogućuje razvojnim programerima pluginova dodavanje radnji u proces otključavanja.
 
-## Filtri
+## Filtri {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrira trajanje razdoblja isteka autentifikacijskog kolačića.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrira shemu preusmjeravanja autentifikacije.

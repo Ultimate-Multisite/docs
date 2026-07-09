@@ -3,11 +3,11 @@ title: ডেভেলপৰ ডকুমেন্টেশ্বন
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ডেভেলপার ডকুমেন্টেশ্যন
+# ডেভেলপার ডকুমেন্টেশ্যন {#developer-documentation}
 
 এই গাইডখন Ultimate Multisite-ৰ সৈতে ইন্টিগ্রেট কৰিবলৈ, এক্সটেন্ড কৰিবলৈ বা এডন (addons) ডেভেলপ কৰিবলৈ ডেভেলপাৰসকলৰ বাবে সকলো প্ৰয়োজনীয় তথ্য দিয়ে। Ultimate Multisite-এ এটা WordPress Multisite network-ক Website-as-a-Service (WaaS) প্ল্যাটফৰ্মত পৰিণত কৰে।
 
-## কি কি উপলব্ধ
+## কি কি উপলব্ধ {#whats-available}
 
 - **[REST API](./rest-api/overview)** — সকলো প্ৰকাৰৰ CRUD অপাৰেচন (customers, sites, memberships, payments, products, domains) API key authentication লৈ উপলব্ধ।
 - **[Hooks Reference](./hooks/guide)** — লাইফ-চক্ৰ ইভেন্ট (lifecycle events) আৰু কাস্টমাইজেশ্যনৰ বাবে ২০০+ action hooks আৰু ২৮০+ filter hooks।
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Code Examples](./code-examples/)** — dynamic pricing, site provisioning, custom limitations, আৰু multi-gateway processing-ৰ বাবে উন্নত ধৰণৰ উদাহৰণ।
 - **[Addon Development](./addon-development/getting-started)** — এডন প্লাগইন নিৰ্মাণ কৰাৰ বাবে এটা সুসংগঠিত framework।
 
-## প্ৰয়োজনীয়তা
+## প্ৰয়োজনীয়তা {#requirements}
 
 - WordPress Multisite ইনষ্টলেচন
 - PHP 7.4 বা তাতকৈ অধিক
 - Ultimate Multisite প্লাগইন active কৰা
 
-## Composer / Bedrock ইনষ্টলেচন
+## Composer / Bedrock ইনষ্টলেচন {#composer--bedrock-installation}
 
 Ultimate Multisite [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) ত `ultimate-multisite/ultimate-multisite` হিচাপে উপলব্ধ। এইটো [Bedrock](https://roots.io/bedrock/)-ভিত্তিক WordPress setup আৰু আন Composer-managed environment-ৰ বাবে প্ৰেৰ্শমান ইনষ্টলেচন পদ্ধতি।
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## আৰম্ভণি (Quick Start)
+## আৰম্ভণি (Quick Start) {#quick-start}
 
-### REST API ব্যৱহাৰ কৰক
+### REST API ব্যৱহাৰ কৰক {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### ইভেন্টত Hook কৰক
+### ইভেন্টত Hook কৰক {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### এডন এটা নিৰ্মাণ কৰক
+### এডন এটা নিৰ্মাণ কৰক {#build-an-addon}
 
 ```bash
 # template ካৰ পৰা addon scaffold generate কৰক

@@ -4,13 +4,13 @@ title: ማጣሪያ - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gococardless_cleanup_pending_site
+# Filter: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 የተሰረዘ የGoCardless አባልነት ምክንያት የጠፋ (orphaned) ተስፋ የሚደረግበትን ድረ-ገጽ ከመሰረዝ በፊት ይሠራል።
 
 ይህንን filter ዋጋ (false) በመመለስ መሰረዝን መከላከል ይችላሉ።
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 | $membership | `\WP_Ultimo\Models\Membership` | የተሰረዘው የአባልነት መረጃ። |
 | $old_status | `string` | ከመሰረዙ በፊት የነበረው ሁኔታ (status)። |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 በ[`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) በ1086ኛው መስመር ተገልጿል።

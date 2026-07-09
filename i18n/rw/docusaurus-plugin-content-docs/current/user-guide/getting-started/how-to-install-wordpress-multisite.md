@@ -3,7 +3,7 @@ title: Uburyo bwo gukoresha WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Uburyo uko nshobora gukoresha WordPress Multisite?
+# Uburyo uko nshobora gukoresha WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite yagushobora kugira uburenganzira bwo kubyara impinduka (sites) mu gihe runaka cyangwa mu gihe runaka gishobora. Iki ni ikintu cyari kigize mu gihe runaka, ariko ntabwo kirimo gukoreshwa mu gihe runaka rwa mbere.
 
@@ -55,7 +55,7 @@ Kandi uburyo bwa code bucuroye n'WordPress, cyangwa file **.htaccess** yawe:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -85,9 +85,9 @@ Kugira ngo utoretse subsite:
 
 Nyuma yo gukoresha ibyo, kora "Add site". Icyiza cyane ko subsite yawe yari yagizeye, ugira ngo ugerageze gukoresha kandi wumva ko yari iteje.
 
-## Ibibazo by'ubwoko:
+## Ibibazo by'ubwoko: {#common-problems}
 
-### 1. Nshobora gutera subsite nyaho ariko ntabyo nshobora kumenya.
+### 1. Nshobora gutera subsite nyaho ariko ntabyo nshobora kumenya. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Niba wamukoresheye subdomains, ushobora kandi gufata uburyo bwo gukoresha wildcard subdomains kuri multisite yawe.
 

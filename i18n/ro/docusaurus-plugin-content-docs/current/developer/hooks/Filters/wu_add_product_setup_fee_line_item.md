@@ -4,11 +4,11 @@ title: Filtru - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filtru: wu_add_product_setup_fee_line_item
+# Filtru: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 Permite dezvoltatorilor să facă modificări la elementul de linie al taxei de configurare.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Descriere |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Permite dezvoltatorilor să facă modificări la elementul de linie al taxei de 
 | $product | `\WP_Ultimo\Models\Product` | Produsul legat de taxa de configurare. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | Obiectul coșului de cumpărături. |
 
-### De la
+### De la {#since}
 
 - 2.1
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) la linia 1790
 
 
-## Returnează
+## Returnează {#returns}

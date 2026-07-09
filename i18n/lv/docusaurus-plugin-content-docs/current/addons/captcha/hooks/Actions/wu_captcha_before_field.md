@@ -4,19 +4,19 @@ title: Darbība - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Darbība: wu_captcha_before_field
+# Darbība: wu_captcha_before_field {#action-wucaptchabeforefield}
 
 Tiek izpildīta, pirms captcha lauks tiek renderēts.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
 | $args | `array` | Renderēšanas argumenti. |
 
-### Kopš
+### Kopš {#since}
 
 - 1.2.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L127) 127. rindā

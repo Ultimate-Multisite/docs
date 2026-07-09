@@ -3,7 +3,7 @@ title: Қисмҳои GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Дар чӣ тавр аз Ultimate Multisite snippetҳо дар репозитори GitHub-и мо истифода баред
+# Дар чӣ тавр аз Ultimate Multisite snippetҳо дар репозитори GitHub-и мо истифода баред {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Ин ройгон барои омодасозии ва идоракунии мувофиқ кардани (snippet)ҳои Ultimate Multisite дар репозитори GitHub-и шумост. Ин маводи ба шумо ёрӣ мерасонад, ки чӣ тавр ин ҷузъёҳоро истифода баред.
 
@@ -55,7 +55,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 ۲. Плагинотҳои зарурӣ (mu-plugins)
 
-# Чӣ тавр snippet-ро дар файли functions.phpи тему худ илова кунед.
+# Чӣ тавр snippet-ро дар файли functions.phpи тему худ илова кунед. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
 ۱. Ба дашборди администратори WordPress Network ворид шавед ва ба Themes > Theme Editor равед (Ба намунаи скриншот дидаред).
 
@@ -63,7 +63,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 3. Барои ин файлро коркард (load) кунед, дар қисми "Theme Files" ба ҷои файли `functions.php` клик кунед. Аз паёло ба поён сарчашма меравед ва матни Ultimate Multisite-ро, ки аз репозиториумҳои GitHub гирифта gedар он ишора (paste) кунед.
 
-# Чӣ тавр плагиниҳои зарурӣ (mu-plugins) сохтаред
+# Чӣ тавр плагиниҳои зарурӣ (mu-plugins) сохтаред {#how-to-create-must-use-plugins-mu-plugins}
 
 <!-- Скриншот мавҷуд нест: Муалбии тема WordPress, ки тасвири файли functions.php-ро нишон медиҳад -->
 

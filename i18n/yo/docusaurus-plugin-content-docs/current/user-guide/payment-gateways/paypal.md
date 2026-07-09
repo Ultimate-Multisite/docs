@@ -3,7 +3,7 @@ title: Ṣíṣètò PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Ṣíṣètò Ẹnu-ọna Isanwo PayPal (v2)
+# Ṣíṣètò Ẹnu-ọna Isanwo PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀dà 2.x.**_
 
@@ -13,13 +13,13 @@ Gẹ́gẹ́ bí Stripe, PayPal jẹ́ ohun tí a ń lò gan-an fún isanwo orí
 
 Ṣàkíyèsí pé o ní láti ní **akọọlẹ PayPal Business** láti gba ẹ̀rí API tí a nílò fún ìṣepọ̀ yìí.
 
-## Mímú PayPal ṣiṣẹ́ lórí nẹ́tíwọọ̀kì rẹ
+## Mímú PayPal ṣiṣẹ́ lórí nẹ́tíwọọ̀kì rẹ {#enabling-paypal-on-your-network}
 
 Láti mú PayPal ṣiṣẹ́ gẹ́gẹ́ bí ọ̀nà isanwo tó wà lórí nẹ́tíwọọ̀kì rẹ, lọ sí taabu **Ultimate Multisite > Settings > Payments** kí o sì samisi apoti tó wà lẹ́gbẹ̀ẹ́ PayPal.
 
 ![Mímú PayPal ṣiṣẹ́ nínú àwọn ẹnu-ọna isanwo tó ń ṣiṣẹ́](/img/config/settings-payment-gateways.png)
 
-## Lílo wizard ìṣètò tí a darí
+## Lílo wizard ìṣètò tí a darí {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 ṣàfikún wizard ìṣètò PayPal tí a darí sí àwọn ètò ẹnu-ọna isanwo. Lẹ́yìn tí o bá mú PayPal ṣiṣẹ́, lo wizard lórí **Ultimate Multisite > Settings > Payments** láti yan bí o ṣe fẹ́ so ẹnu-ọna náà pọ̀ àti láti jẹ́rìí àwọn ẹ̀rí wo ni a ṣì nílò kí o tó fipamọ́.
 
@@ -30,7 +30,7 @@ Wizard náà ṣe àtìlẹ́yìn fún ipa ìṣètò méjì:
 
 Bí o kò bá rí aṣayan OAuth nínú wizard náà, parí ìṣàn ìfikún ẹ̀rí pẹ̀lú ọwọ́ ní ìsàlẹ̀. Ẹnu-ọna náà ń ṣiṣẹ́ pẹ̀lú àwọn ẹ̀rí PayPal Business API kan náà bí àwọn ìtúsílẹ̀ Ultimate Multisite 2.x ṣáájú.
 
-## Gbigba àwọn ẹ̀rí PayPal API
+## Gbigba àwọn ẹ̀rí PayPal API {#getting-the-paypal-api-credentials}
 
 Nígbà tí PayPal bá ti ṣiṣẹ́ gẹ́gẹ́ bí ẹnu-ọna isanwo, o máa nílò láti kún àwọn pápá fún PayPal API **Orúkọ olumulo** , PayPal API **Ọ̀rọ̀ aṣínà** àti PayPal API **Ìbuwọ́lu**.
 

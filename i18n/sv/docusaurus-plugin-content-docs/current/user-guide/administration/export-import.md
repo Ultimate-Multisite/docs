@@ -3,17 +3,17 @@ title: Export & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportera & Importera
+# Exportera & Importera {#export--import}
 
 Ultimate Multisite 2.9.0 lägger till ett verktyg för **Export & Import** för en enskild webbplats under **Tools > Export & Import**. Använd det när du behöver packa en WordPress-webbplats som en ZIP-fil, återställa den ZIP-filen eller flytta en webbplats mellan kompatibla Ultimate Multisite- och enskilda WordPress-installationer.
 
-## Nödvändiga behörigheter
+## Nödvändiga behörigheter {#required-permissions}
 
 Du måste logga in som en administratör som har tillgång till WordPress-menyn **Tools** på den webbplats som ska exporteras eller importeras. På ett multisite-nätverk ska du använda ett nätverksadministratörskonto när du exporterar eller importerar sub-sajter från nätverksnivåverktyg i Ultimate Multisite.
 
 ZIP-nedladdningar från exporten serveras via en autentiserad nedladdningspunkt, så håll admin-sessionen aktiv tills nedladdningen är klar och dela inte genererade nedladdnings-URL:er offentligt.
 
-## Exportera en webbplats till en ZIP
+## Exportera en webbplats till en ZIP {#exporting-a-site-to-a-zip}
 
 1. I WordPress-admin för den webbplats du vill kopiera, gå till **Tools > Export & Import**.
 2. Öppna exportområdet och välj den webbplats du vill packa.
@@ -23,7 +23,7 @@ ZIP-nedladdningar från exporten serveras via en autentiserad nedladdningspunkt,
 
 Förvara ZIP-filen på en säker plats. Den kan innehålla webbplatsinnehåll, inställningar, mediefiler och valda kodresurser.
 
-## Vad exporten inkluderar
+## Vad exporten inkluderar {#what-the-export-includes}
 
 En export-ZIP kan innehålla:
 
@@ -34,7 +34,7 @@ En export-ZIP kan innehålla:
 
 Den exakta storleken på ZIP-filen beror på mängden media, de valda plugins och teman, och storleken på webbplatsens databassistabeller.
 
-## Importera en webbplats från en ZIP
+## Importera en webbplats från en ZIP {#importing-a-site-from-a-zip}
 
 1. Gå till **Tools > Export & Import** på den destinationens WordPress-webbplats.
 2. Öppna importområdet och ladda upp ZIP-filen som skapades av Export & Import-verktyget.
@@ -46,7 +46,7 @@ Den exakta storleken på ZIP-filen beror på mängden media, de valda plugins oc
 
 På en enskild WordPress-installation ersätter import av en ZIP-fil den nuvarande webbplatsen med den importerade webbplatsen. Skapa en fullständig backup av målsajten innan du börjar, och undvik att starta flera importer för samma webbplats samtidigt.
 
-## Begränsningar och kompatibilitetsanteckningar
+## Begränsningar och kompatibilitetsanteckningar {#limitations-and-compatibility-notes}
 
 - Mycket stora uppladdningskataloger eller medielbibliotek kan resultera i stora ZIP-filer. Bekräfta PHP-uppladdningsgränser, exekveringsgränser, diskutrymme, minne och servertimeout-inställningar innan du exporterar eller importerar stora webbplatser.
 - Mycket stora medielbibliotek kan behöva flyttas under ett underhållsfönster med låg trafik.

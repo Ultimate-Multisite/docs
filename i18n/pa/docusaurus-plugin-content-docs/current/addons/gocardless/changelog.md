@@ -3,7 +3,7 @@ title: GoCardless ਬਦਲਾਅ ਦਾ ਲੌਗ
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Badlavon da Lekha
+# GoCardless Badlavon da Lekha {#gocardless-changelog}
 
 Version: 1.0.3 - 2026-05-05 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
 * ਸੁਧਾਰ: ਜੇਕਰ GoCardless ਮੈਂਬਰਸ਼ਿਪ ਪੈਂਡਿੰਗ ਜਾਂ 'on-hold' ਸਟੇਟ ਵਿੱਚ ਕੈंसिल ਹੋ ਜਾਂਦੀ ਹੈ, ਤਾਂ ਹੁਣ ਟੁੱਟੇ ਹੋਏ (orphaned) ਪੈਂਡਿੰਗ ਸਾਈਟਾਂ ਨੂੰ ਸਾਫ਼ ਕਰ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ।

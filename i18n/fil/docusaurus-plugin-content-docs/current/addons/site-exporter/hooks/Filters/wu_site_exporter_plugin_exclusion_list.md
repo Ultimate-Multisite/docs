@@ -4,23 +4,23 @@ title: Filter - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Filter: wu_site_exporter_plugin_exclusion_list
+# Filter: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
 
 Nagpapahintulot ito sa mga developer na pamahalaan ang isang listahan ng mga plugin na maaaring i-exclude mula sa ginagawang zip file.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $plugin_list | `array` | Ang mga plugin na tatanggalin (i-exclude). |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Tinukoy sa [`inc/class-wp-ultimo-site-exporter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-wp-ultimo-site-exporter.php#L210) sa linya 210
 
 
-## Returns
+## Returns {#returns}
 Ang listahan ng mga plugin.

@@ -3,15 +3,15 @@ title: Guia de Uso de Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Guia de Uso de Ganchos
+# Guia de Uso de Ganchos {#hooks-usage-guide}
 
 Ultimate Multisite fornece mais de 200 ganchos de ação e mais de 280 ganchos de filtro. Esta página cobre os ganchos mais comumente usados com exemplos práticos. Para uma referência completa auto-gerada, navegue pelas outras páginas desta seção.
 
-## Ganchos de Ação
+## Ganchos de Ação {#action-hooks}
 
-### Ciclo de Vida do Cliente
+### Ciclo de Vida do Cliente {#customer-lifecycle}
 
-#### Após a Criação do Cliente
+#### Após a Criação do Cliente {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Alteração de Status do Cliente
+#### Alteração de Status do Cliente {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Ganchos de Site
+### Ganchos de Site {#site-hooks}
 
-#### Após a Publicação do Site
+#### Após a Publicação do Site {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Antes da Aplicação do Modelo
+#### Antes da Aplicação do Modelo {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Ganchos de Associação
+### Ganchos de Associação {#membership-hooks}
 
-#### Transições de Status
+#### Transições de Status {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Ganchos de Pagamento
+### Ganchos de Pagamento {#payment-hooks}
 
-#### Pagamento Concluído / Falhou
+#### Pagamento Concluído / Falhou {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Ganchos de Finalização
+### Ganchos de Finalização {#checkout-hooks}
 
-#### Antes do Processamento / Após a Conclusão
+#### Antes do Processamento / Após a Conclusão {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Ganchos de Domínio
+### Ganchos de Domínio {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filtros de Ganchos
+## Filtros de Ganchos {#filter-hooks}
 
-### Filtros de Preço
+### Filtros de Preço {#pricing-filters}
 
-#### Total do Carrinho
+#### Total do Carrinho {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Taxas de Imposto
+#### Taxas de Imposto {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Filtros de Modelo
+### Filtros de Modelo {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Filtros de Limitação
+### Filtros de Limitação {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Filtros de Gateway
+### Filtros de Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Campos do Formulário de Finalização
+### Campos do Formulário de Finalização {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Conteúdo do E-mail
+### Conteúdo do E-mail {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

@@ -3,11 +3,11 @@ title: Áttekintő vezérlőpult
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Vezérlőpult áttekintés
+# Vezérlőpult áttekintés {#dashboard-overview}
 
 Az Ultimate Multisite rendelkezik egy saját **Vezérlőpulttal** az Ultimate Multisite menüben, továbbá widgeteket is elhelyez a Hálózati vezérlőpulton. Ez a cikk bemutatja, mit találsz mindkét helyen.
 
-## A Hálózati vezérlőpult
+## A Hálózati vezérlőpult {#the-network-dashboard}
 
 Az Ultimate Multisite hasznos widgeteket helyez el a hálózati szintű vezérlőpulton, amely a **Saját webhelyek → Hálózati adminisztráció → Vezérlőpult** útvonalon érhető el.
 
@@ -35,7 +35,7 @@ Az egyes widgetek a következőket nyújtják:
 
 ![Hírek widget](/img/admin/network-dashboard-news.png)
 
-## Az Ultimate Multisite vezérlőpult
+## Az Ultimate Multisite vezérlőpult {#the-ultimate-multisite-dashboard}
 
 Míg a hálózati vezérlőpult átfogó információkat mutat a hálózatról, az Ultimate Multisite vezérlőpult (az Ultimate Multisite menü legfelső szintjén) a szolgáltatással kapcsolatos információkat jeleníti meg.
 

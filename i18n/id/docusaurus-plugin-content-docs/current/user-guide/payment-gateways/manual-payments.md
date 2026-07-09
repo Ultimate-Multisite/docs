@@ -3,13 +3,13 @@ title: Menyiapkan Pembayaran Manual
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Menyiapkan Pembayaran Manual (v2)
+# Menyiapkan Pembayaran Manual (v2) {#setting-up-manual-payments-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
 Pembayaran manual adalah cara bagi Anda untuk menawarkan metode pembayaran lain jika **Stripe** atau **PayPal** tidak tersedia untuk pengguna Anda. Ini bisa berupa transfer kawat atau transfer bank, atau metode pembayaran lain apa pun yang tersedia secara lokal untuk pengguna Anda.
 
-## Cara mengaktifkan Pembayaran Manual
+## Cara mengaktifkan Pembayaran Manual {#how-to-enable-manual-payments}
 
 Menyiapkan pembayaran manual sangat mudah. Anda hanya perlu mengaktifkannya di bawah gateway pembayaran dan memasukkan instruksi terperinci tentang bagaimana pengguna harus mengirim pembayaran.
 
@@ -31,7 +31,7 @@ Dan mereka juga akan menerima pesan di halaman **Thank You** Anda dengan instruk
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Mengonfirmasi pembayaran manual
+## Mengonfirmasi pembayaran manual {#confirming-manual-payments}
 
 Untuk mengonfirmasi pembayaran manual, buka menu **Payments** di bilah kiri. Di sana Anda dapat melihat semua pembayaran di jaringan Anda beserta detailnya, termasuk **status** mereka. Pembayaran manual akan selalu memiliki status **Pending** sampai Anda mengubahnya secara manual.
 

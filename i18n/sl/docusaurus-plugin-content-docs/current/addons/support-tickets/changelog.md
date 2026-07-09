@@ -3,13 +3,13 @@ title: Dnevnik sprememb zahtevkov za podporo
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Dnevnik sprememb za podporne zahtevke
+# Dnevnik sprememb za podporne zahtevke {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Izboljšano: Odstranjena mapa vendor/ iz sledenja Git (že zajeto z .gitignore), kar zmanjša velikost repozitorija
 * Izboljšano: Preizkušeno do WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Popravek: Sprejme vrednosti null v nastavitvenih metodah modela zahtevka, ki dovoljujejo null
 * Popravek: Shrani vse zahtevke v globalne omrežne tabele za ustrezno podporo multisite
 * Popravek: Skrije polja za osebje in popravi preusmeritev na prazno stran v obrazcu novega zahtevka za stranko
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Izboljšano: Pogojno naloži frontend sredstva samo na straneh podpornih zahtevkov
 * Izboljšano: Preskoči samodejni nalagalnik plugin, ko je korenski samodejni nalagalnik Bedrock že naložil odvisnosti
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Dodano: Celovita funkcionalnost ogleda zahtevkov za admin in frontend
 * Dodano: AJAX obdelovalnik za oddaje odgovorov na zahtevke
 * Dodano: Podpora za funkcionalnost odgovorov na zahtevke z ustrezno obravnavo obrazca
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Izboljšano: Struktura baze podatkov z ustreznimi razredi za poizvedbe in sheme za odgovore ter priponke
 * Izboljšano: Migracija na prave lastnosti namesto atributov za modele zahtevkov
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Posodobljeno: Predpona preimenovana v ultimate-multisite zaradi doslednosti
 * Posodobljeno: Standardizacija besedilne domene
 * Popravljeno: Manjši popravki napak in izboljšave
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Prva izdaja
 * Celovit sistem za upravljanje zahtevkov
 * Večnivojski nadzor dostopa

@@ -3,11 +3,11 @@ title: Diiwaanka isbeddellada
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Diiwaanka isbeddellada
+# Diiwaanka isbeddellada {#changelog}
 
-## 1.9.0 — La sii daayay 2026-04-28
+## 1.9.0 — La sii daayay 2026-04-28 {#190--released-on-2026-04-28}
 
-### Cusub
+### Cusub {#new}
 
 - **Awoodda `create_contact_form`** — waxay abuurtaa foom xiriir iyadoo adeegsanaysa plugin-ka foomka firfircoon (Contact Form 7, WPForms, Fluent Forms, ama Gravity Forms) waxayna soo celisaa shortcode diyaar u ah in lagu dhex daro qoraal ama bog kasta.
 - **Awoodda `set_featured_image`** — waxay qoraal ama bog u qoondeysaa sawir muuqda iyadoo laga adeegsanayo ID lifaaq Media Library oo jira ama URL fog; si otomaatig ah ayay sawirka u soo gelisaa marka URL la bixiyo.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Soo celi kalfadhigii ugu dambeeyay** — panel-ka chat-ka hadda si otomaatig ah ayuu u soo raraa wada sheekaysigii ugu dambeeyay marka boggu soo raro iyo marka widget-ka la furo, sidaas awgeed context-ku marnaba kuma lumo dhex wareegista bogagga.
 - **Xiriiriyeyaasha falalka plugin-ka** — xiriiriyeyaal degdeg ah oo Settings iyo Abilities Registry ah ayaa hadda ka muuqda shaashadda WordPress **Plugins → Installed Plugins** hoosta sharaxaadda plugin-ka.
 
-### La hagaajiyay
+### La hagaajiyay {#improved}
 
 - **Isku-dayga isha sawirka** — agent-ku hadda wuxuu mar kale isku dayaa dhammaan ilaha sawirrada bilaashka ah ee la habeeyay ka hor inta uusan ugu dambayn u noqon sawir AI-soo saaray marka soo dejintu fashilanto.
 - **Panel-ka macluumaadka model-ka** — mar walba wuxuu ka muuqdaa madaxa chat-ka; mar dambe lama qariyo farriinta koowaad ka dib.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Dib-u-naqshadaynta chat widget-ka** — astaanta AI ee mideysan ayaa beddeshay avatar-kii caadiga ahaa ee hore; waxay la jaanqaadaysaa nidaamka agent-ka gudaha ku jira.
 - **URL linkification** — URLs-ka ka muuqda farriimaha nidaamka iyo xumbooyinka farriimaha qaladka hadda waxaa loo soo bandhigaa xiriiriyeyaal la gujin karo.
 
-### La hagaajiyay
+### La hagaajiyay {#fixed}
 
 - **Helitaanka awoodaha** — waxaa la saxay sharaxaadaha, tixraacyada system prompt, iyo isku-aaddinta namespace-ka si dhammaan awooduhu si lagu kalsoonaan karo uga muuqdaan liiska qalabka agent-ka.
 - **Cache-ka providers-ka** — providers hadda waxaa site-wide loogu kaydiyaa cache iyadoo la adeegsanayo version counter, taasoo ka hortagaysa dhibaatooyinka stale-provider ee shabakadaha multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — La sii daayay 2026-04-09
+## 1.4.0 — La sii daayay 2026-04-09 {#140--released-on-2026-04-09}
 
-### Cusub
+### Cusub {#new-1}
 
 - **Amarka WP-CLI benchmark** (`wp gratis-ai-agent benchmark`) — wuxuu ka socodsiiyaa xirmada benchmark ee Agent Capabilities v1 khadka amarka, loogu talagalay CI pipelines iyo habraacyada qiimaynta model. Wuxuu taageeraa socodsiin su’aal kasta ah, provider/model overrides, iyo soo-saar JSON/CSV ah.
 - **Xirmada Agent Capabilities v1 benchmark** — set qaabaysan oo ah prompts adag, talaabooyin badan leh, kuwaas oo tijaabiya dhammaan dusha awoodda, iyadoo leh scoring iyo warbixin token/duration ah.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Su’aasha benchmark ee website makhaayad** (`q-restaurant-website`) — tijaabo bilow-ilaa-dhammaad ah oo daboolaysa diiwaangelinta CPT, design system, navigation, iyo helitaanka plugin.
 - **AI provider connector plugins** ayaa lagu daray WordPress Playground blueprints si loo dedejiyo dejinta horumarinta maxalliga ah.
 
-### La hagaajiyay
+### La hagaajiyay {#improved-1}
 
 - README waa la cusboonaysiiyay iyadoo lagu daray dukumentiyada AI provider connector iyo tilmaamaha dejinta.
 
-### La saxay
+### La saxay {#fixed-1}
 
 - 25 guuldarrooyin tijaabo PHPUnit ah oo ku jiray laanta `main` waa la xalliyay.
 - Qaabka URL-ka GitHub releases ee `blueprint.json` waa la saxay.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Qoraalladii sii-deyntii hore waxaa lagu hayaa kaydka plugin-ka._

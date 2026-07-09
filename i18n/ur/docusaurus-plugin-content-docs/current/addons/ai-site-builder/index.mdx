@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 یا اس سے زیادہ
 - PHP 7.4 یا اس سے زیادہ
 - Multisite Ultimate plugin (active)
 
-## Installation
+## Installation {#installation}
 
 1. addon files کو اپنے `/wp-content/plugins/` directory میں upload کریں۔
 2. WordPress میں 'Plugins' menu کے ذریعے plugin کو activate کریں۔
 3. network admin میں addon کی settings configure کریں۔
 
-## Development
+## Development {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Project Structure {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testing
+### Testing {#testing}
 
 اس addon میں ایک مکمل testing framework شامل ہے:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Test Coverage**: code coverage کو track کرنے کے لیے configure کیا گیا ہے
 - **Multisite Testing**: ٹیسٹ multisite environment میں چلتے ہیں
 
-### Code Standards
+### Code Standards {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS کے ذریعے نافذ کیے گئے
 - **PHP 7.4+ Compatibility**: جدید PHP features کو سپورٹ کرتا ہے
 - **Static Analysis**: type checking کے لیے PHPStan کا انضمام (integration)
 - **Code Modernization**: PHP upgrades کے لیے Rector rules
 
-### Build System
+### Build System {#build-system}
 
 - **Asset Processing**: CSS/JS files کے لیے Minification
 - **Translation**: POT file generation
 - **Packaging**: distribution کے لیے archive creation
 - **Development Mode**: debugging کے لیے Unminified assets
 
-## Configuration
+## Configuration {#configuration}
 
 یہ addon network admin interface کے ذریعے قابل رسائی مختلف configuration options کو سپورٹ کرتا ہے۔
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - addon initialization کے بعد trigger ہوتا ہے
 - `ultimate-multisite-ai-site-builder_loaded` - تمام addon files load ہونے کے بعد trigger ہوتا ہے
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - addon settings کو modify کرتا ہے
 - `ultimate-multisite-ai-site-builder_enabled` - addon کے enable/disable status کو override کرتا ہے
 
-## License
+## License {#license}
 
 یہ addon GPL v3 یا اس سے زیادہ کے تحت لائسنس یافتہ ہے۔
 
-## Support
+## Support {#support}
 
 Support اور documentation کے لیے، [MultisiteUltimate.com](https://multisiteultimate.com) پر وزٹ کریں۔
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix کو ultimate-multisite میں rename کیا؛ text domain کو update کیا؛ version bump۔
 

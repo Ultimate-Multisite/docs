@@ -4,11 +4,11 @@ title: Filtrilo - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Filtro: wu_apc_get_meta_content_default_content
+# Filtro: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Permesas al programistoj filtri la defaŭltajn valorojn
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Permesas al programistoj filtri la defaŭltajn valorojn
 | $meta_type | `string` | Tipo de la metadatenoj por esti prenita. |
 | $meta_key | `string` | Nomo de la metakampo. |
 
-### Ekde
+### Ekde {#since}
 
 - 1.4.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) ĉe linio 68
 
 
-## Redonas
+## Redonas {#returns}
 Novan defaŭltan valoron.

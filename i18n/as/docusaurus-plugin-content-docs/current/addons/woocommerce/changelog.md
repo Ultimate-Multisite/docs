@@ -3,7 +3,7 @@ title: WooCommerce সংহতি পৰিৱৰ্তন-লগ
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration পৰিৱৰ্তন-লগ
+# WooCommerce Integration পৰিৱৰ্তন-লগ {#woocommerce-integration-changelog}
 
 সংস্কৰণ 2.2.0 - 2026-07-01 তাৰিখে মুকলি কৰা হৈছে
 * নতুন: Ultimate Multisite কৰৰ পৰিমাণসমূহ এতিয়া চেকআউটত সুকীয়া WooCommerce মাচুল শাৰী হিচাপে দেখা যায়, যাৰ ফলত পেমেণ্টৰ আগতে কৰৰ মুঠ পৰিমাণ অধিক স্পষ্ট হয়।

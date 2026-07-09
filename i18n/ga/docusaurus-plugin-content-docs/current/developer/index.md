@@ -3,11 +3,11 @@ title: Doiciméadacht d’Fhorbróirí
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Doiciméadú d'Fhorbróirí
+# Doiciméadú d'Fhorbróirí {#developer-documentation}
 
 Soláthraíonn an treoir seo gach rud atá de dhíth ar fhorbróirí chun comhtháthú le Ultimate Multisite, é a leathnú, nó breiseáin a fhorbairt dó. Athraíonn Ultimate Multisite líonra WordPress Multisite ina ardán Website-as-a-Service (WaaS).
 
-## Cad atá ar Fáil
+## Cad atá ar Fáil {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Oibríochtaí CRUD iomlána do gach eintiteas (custaiméirí, suíomhanna, ballraíochtaí, íocaíochtaí, táirgí, fearainn) le fíordheimhniú le heochair API
 - **[Tagairt do Hooks](./hooks/guide)** — 200+ action hooks agus 280+ filter hooks d’imeachtaí saolré agus do shaincheapadh
@@ -15,13 +15,13 @@ Soláthraíonn an treoir seo gach rud atá de dhíth ar fhorbróirí chun comhth
 - **[Samplaí Cóid](./code-examples/)** — Patrúin ardleibhéil do phraghsáil dhinimiciúil, soláthar suíomhanna, teorainneacha saincheaptha, agus próiseáil il-gheataí
 - **[Forbairt Breiseán](./addon-development/getting-started)** — Creatlach struchtúrtha chun breiseáin a thógáil
 
-## Riachtanais
+## Riachtanais {#requirements}
 
 - Suiteáil WordPress Multisite
 - PHP 7.4 nó níos airde
 - Breiseán Ultimate Multisite gníomhachtaithe
 
-## Suiteáil Composer / Bedrock
+## Suiteáil Composer / Bedrock {#composer--bedrock-installation}
 
 Tá Ultimate Multisite ar fáil ar [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) mar `ultimate-multisite/ultimate-multisite`. Is é seo an modh suiteála molta do shocruithe WordPress bunaithe ar [Bedrock](https://roots.io/bedrock/) agus do thimpeallachtaí eile atá á mbainistiú ag Composer.
 
@@ -45,15 +45,15 @@ Nó, má tá tú ag luchtú an bhreiseáin mar bhreiseán must-use trí autoload
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Tús Tapa
+## Tús Tapa {#quick-start}
 
-### Úsáid an REST API
+### Úsáid an REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Ceangail le hImeachtaí
+### Ceangail le hImeachtaí {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Tóg Breiseán
+### Tóg Breiseán {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

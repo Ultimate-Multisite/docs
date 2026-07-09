@@ -4,11 +4,11 @@ title: Akcija - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Action: wu_domain_renewal_completed
+# Action: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Pokreće se nakon uspješnog obnavljanja domene.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Pokreće se nakon uspješnog obnavljanja domene.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metapodaci o obnavljanju (ime domene, godine, ID klijenta, itd.). |
 | $result | `array&lt;string,mixed&gt;` | Sirovi niz rezultata koji je vratio registrator, uključujući novi `expiry_date`. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Definisano u [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) na liniji 594

@@ -3,7 +3,7 @@ title: Registro delle modifiche di Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Changelog di Site Exporter
+# Changelog di Site Exporter {#site-exporter-changelog}
 
 Versione: 1.0.6 - Rilasciata il 2026-05-11
 * Nuovo: le esportazioni dei siti ora includono un index.php autoavviante, così lo ZIP può essere installato su un host pulito senza un’installazione separata del plugin
@@ -20,19 +20,19 @@ Versione: 1.0.2 - Rilasciata il 2025-09-28
 
 * Rinominato il prefisso in ultimate-multisite; aggiornato il dominio di testo; incremento di versione.
 
-### Versione 1.0.1 - Rilasciata il 2023-08-09
+### Versione 1.0.1 - Rilasciata il 2023-08-09 {#version-101---released-on-2023-08-09}
 
 * Migliorato: ora assicura che venga ottenuto il percorso file corretto del file dell’importatore.
 * Corretto: disabilitata la cache oggetti per prevenire errori durante l’importazione.
 * Corretto: risolto il problema del link di download del plugin importatore non funzionante.
 
-### Versione 1.0.0 - Rilasciata il 2022-12-23
+### Versione 1.0.0 - Rilasciata il 2022-12-23 {#version-100---released-on-2022-12-23}
 
 * Corretto: popup del modulo di esportazione non caricato;
 * Corretto: file Javascript non caricati nella pagina di esportazione;
 * Interno: nuovo processo di build;
 
-### Versione 1.0.0-beta.4 - Rilasciata il 2022-01-13
+### Versione 1.0.0-beta.4 - Rilasciata il 2022-01-13 {#version-100-beta4---released-on-2022-01-13}
 
 * Interno: aggiunti generatore di hook e filtri;
 * Interno: aggiunti stub WP Ultimo per migliorare la qualità della vita degli sviluppatori;

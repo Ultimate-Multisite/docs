@@ -3,13 +3,13 @@ title: Slanje e-poruka i masovnih poruka
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Slanje emailova i emitiranja (v2)
+# Slanje emailova i emitiranja (v2) {#sending-emails-and-broadcasts-v2}
 
 _**VAŽNA NAPOMENA: Ovaj se članak odnosi na Ultimate Multisite verziju 2.x.**_
 
 Ultimate Multisite dolazi sa značajkom koja će vam omogućiti komunikaciju s vašim korisnicima slanjem emaila ciljanom korisniku ili skupini korisnika, kao i slanjem obavijesti na njihov admin Dashboard radi emitiranja najava
 
-## Dodajte admin obavijesti na Dashboard svojih korisnika pomoću emitiranja
+## Dodajte admin obavijesti na Dashboard svojih korisnika pomoću emitiranja {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Koristeći značajku emitiranja Ultimate Multisite, možete dodati **admin obavijesti** na admin Dashboard podstranice svog korisnika.
 
@@ -51,7 +51,7 @@ Nakon izrade poruke možete pritisnuti gumb **Pošalji**.
 
 I to je to. Admin obavijest trebala bi se odmah prikazati na Dashboardu vašeg korisnika.
 
-## Šaljite emailove svojim korisnicima
+## Šaljite emailove svojim korisnicima {#send-emails-to-your-customers}
 
 Koristeći značajku emitiranja Ultimate Multisite, možete poslati email svojim korisnicima. Imate opciju poslati email samo određenim korisnicima ili ciljati određenu korisničku skupinu na temelju proizvoda ili plana na koji su pretplaćeni.
 
@@ -81,11 +81,11 @@ Nakon izrade poruke možete pritisnuti gumb **Pošalji**.
 
 I tako je lako poslati email svojim krajnjim korisnicima pomoću značajke emitiranja.
 
-## Sistemski emailovi
+## Sistemski emailovi {#system-emails}
 
 Sistemski emailovi u Ultimate Multisite su one **automatske obavijesti** koje sustav šalje nakon određenih radnji poput registracije, plaćanja, mapiranja domene itd. Ti se emailovi mogu uređivati ili mijenjati u postavkama Ultimate Multisite. Također dolazi sa značajkom koja će vam omogućiti resetiranje i uvoz postojećih postavki iz druge Ultimate Multisite instalacije.
 
-### Resetiranje i uvoz
+### Resetiranje i uvoz {#resetting--importing}
 
 Nove Ultimate Multisite verzije, kao i dodaci, mogu i povremeno će registrirati nove emailove.
 
@@ -93,7 +93,7 @@ Kako bismo spriječili sukobe i druge probleme, **nećemo automatski dodati nove
 
 Međutim, super admini i agenti mogu uvesti te novoregistrirane emailove putem alata za uvoz. Taj će proces stvoriti novi sistemski email sa sadržajem i konfiguracijom novog predloška emaila, omogućujući super adminu da napravi bilo koje željene izmjene ili ih zadrži kakvi jesu.
 
-#### Kako uvesti sistemske emailove
+#### Kako uvesti sistemske emailove {#how-to-import-system-emails}
 
 Idite na svoju stranicu postavki Ultimate Multisite i prijeđite na karticu **Emailovi**.
 
@@ -111,7 +111,7 @@ Zatim možete uključiti opcije Uvoza emailova kako biste vidjeli koji su sistem
 
 <!-- Snimka zaslona nedostupna: modal Reset and Import s proširenim opcijama Import Emails -->
 
-#### Resetiranje sistemskih e-mailova
+#### Resetiranje sistemskih e-mailova {#reseting-system-emails}
 
 Ponekad ćete shvatiti da vam promjene koje ste napravili na određenom predlošku e-maila više ne odgovaraju i da ga želite vratiti u njegovo **zadano stanje**.
 

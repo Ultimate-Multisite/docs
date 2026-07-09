@@ -3,15 +3,15 @@ title: Hotelli- ja restoranivaldkonna menüüd
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality-menüüd
+# Hospitality-menüüd {#hospitality-menus}
 
 Funktsioon **Hospitality Menus** võimaldab Theme Builderil luua ja manustada struktureeritud toidu- ja joogimenüü lehti otse sinu WordPress saidile.
 
-## Ülevaade
+## Ülevaade {#overview}
 
 Theme Builder saab nüüd luua professionaalseid, struktureeritud menüülehti majutus- ja toitlustusettevõtetele, sealhulgas restoranidele, kohvikutele, baaridele ja catering-teenustele. Need menüüd on täielikult integreeritud sinu saidi kujundusse ning neid saab hõlpsasti uuendada ja hallata.
 
-## Toetatud Hospitality-tüübid
+## Toetatud Hospitality-tüübid {#supported-hospitality-types}
 
 - **Restoranid** — täisteenindusega söögimenüüd
 - **Kohvikud** — kohvi ja kergete roogade menüüd
@@ -21,9 +21,9 @@ Theme Builder saab nüüd luua professionaalseid, struktureeritud menüülehti m
 - **Toiduautod** — mobiilse toitlustuse menüüd
 - **Õllekojad ja veinikojad** — kirjeldustega joogimenüüd
 
-## Menüü struktuur
+## Menüü struktuur {#menu-structure}
 
-### Menüü kategooriad
+### Menüü kategooriad {#menu-categories}
 
 Menüüd on korraldatud kategooriatesse:
 
@@ -34,7 +34,7 @@ Menüüd on korraldatud kategooriatesse:
 - **Joogid** — joogid (alkohoolsed ja mittealkohoolsed)
 - **Eripakkumised** — päeva- või hooajalised eripakkumised
 
-### Menüüelemendi vorming
+### Menüüelemendi vorming {#menu-item-format}
 
 Iga menüüelement sisaldab:
 
@@ -49,7 +49,7 @@ Iga menüüelement sisaldab:
 }
 ```
 
-#### Elemendi väljad
+#### Elemendi väljad {#item-fields}
 
 | Väli | Tüüp | Kirjeldus |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Iga menüüelement sisaldab:
 | `allergens` | array | Levinud allergeenid (pähklid, koorikloomad jne) |
 | `availability` | string | Millal saadaval (iga päev, hooajaline jne) |
 
-## Hospitality-menüüde loomine
+## Hospitality-menüüde loomine {#creating-hospitality-menus}
 
-### Samm 1: esita menüüteave
+### Samm 1: esita menüüteave {#step-1-provide-menu-information}
 
 Räägi Theme Builderile oma menüüst:
 
@@ -71,7 +71,7 @@ Loo minu Itaalia restoranile restoranimenüü eelroogade,
 pastaroogade, pearoogade ja magustoitudega. Lisa hinnad ja kirjeldused.
 ```
 
-### Samm 2: Theme Builder loob menüü
+### Samm 2: Theme Builder loob menüü {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Vormindab hinnad ja kirjeldused
 5. Lisab toitumisalase ja allergeenide teabe
 
-### Samm 3: vaata üle ja kohanda
+### Samm 3: vaata üle ja kohanda {#step-3-review-and-customize}
 
 Sa saad:
 
@@ -91,9 +91,9 @@ Sa saad:
 4. Uuendada kirjeldusi ja toitumisalast teavet
 5. Kohandada stiili ja paigutust
 
-## Menüü kuvamise valikud
+## Menüü kuvamise valikud {#menu-display-options}
 
-### Täielik menüüleht
+### Täielik menüüleht {#full-menu-page}
 
 Eraldi leht, mis kuvab kogu sinu menüü:
 
@@ -102,7 +102,7 @@ Eraldi leht, mis kuvab kogu sinu menüü:
 - Printimiseks sobiv paigutus
 - Mobiilisõbralik kujundus
 
-### Menüüvidin
+### Menüüvidin {#menu-widget}
 
 Manusta menüüosi teistele lehtedele:
 
@@ -111,7 +111,7 @@ Manusta menüüosi teistele lehtedele:
 - Joogimenüü baarilehel
 - Magustoitude esitlus jaluses
 
-### Menüü PDF
+### Menüü PDF {#menu-pdf}
 
 Loo allalaaditav PDF-menüü:
 
@@ -120,9 +120,9 @@ Loo allalaaditav PDF-menüü:
 - Sisaldab pilte ja kirjeldusi
 - Lihtne jagada ja e-postiga saata
 
-## Toitumisalane ja allergeenide teave
+## Toitumisalane ja allergeenide teave {#dietary-and-allergen-information}
 
-### Toitumisalased omadused
+### Toitumisalased omadused {#dietary-attributes}
 
 Märgi elemendid toitumisalase teabega:
 
@@ -134,7 +134,7 @@ Märgi elemendid toitumisalase teabega:
 - **Madala süsivesikusisaldusega** — vähendatud süsivesikute sisaldus
 - **Kõrge valgusisaldusega** — valgurikas
 
-### Allergeenihoiatused
+### Allergeenihoiatused {#allergen-warnings}
 
 Lisa levinud allergeenid:
 
@@ -147,9 +147,9 @@ Lisa levinud allergeenid:
 - **Gluteen** — nisu ja gluteeni sisaldavad teraviljad
 - **Seesam** — seesamiseemned ja -õli
 
-## Menüü haldamine
+## Menüü haldamine {#menu-management}
 
-### Hindade uuendamine
+### Hindade uuendamine {#updating-prices}
 
 Uuenda menüü hindu hõlpsasti:
 
@@ -159,7 +159,7 @@ Uuenda menüü hindu hõlpsasti:
 4. Salvesta muudatused
 5. Muudatused ilmuvad sinu saidil kohe
 
-### Hooajaliste elementide lisamine
+### Hooajaliste elementide lisamine {#adding-seasonal-items}
 
 Loo hooajalisi menüüvariatsioone:
 
@@ -169,7 +169,7 @@ Loo hooajalisi menüüvariatsioone:
 4. Ajasta saadavuse kuupäevad
 5. Kuva hooaja ajal automaatselt
 
-### Eripakkumiste haldamine
+### Eripakkumiste haldamine {#managing-specials}
 
 Kuva päeva- või nädalapakkumisi:
 
@@ -179,7 +179,7 @@ Kuva päeva- või nädalapakkumisi:
 4. Uuenda iga päev või iga nädal
 5. Arhiveeri vanad eripakkumised
 
-## Integratsioon Theme Builderiga
+## Integratsioon Theme Builderiga {#integration-with-theme-builder}
 
 Kui kasutad Theme Builderit hospitality-saitide jaoks:
 
@@ -189,9 +189,9 @@ Kui kasutad Theme Builderit hospitality-saitide jaoks:
 4. **Mobiili optimeerimine** — menüüd kuvatakse telefonides kaunilt
 5. **SEO optimeerimine** — menüüd on otsingumootorisõbralikud
 
-## Parimad tavad
+## Parimad tavad {#best-practices}
 
-### Menüü kujundus
+### Menüü kujundus {#menu-design}
 
 - **Selge korraldus** — loogiline kategooriastruktuur
 - **Loetavad kirjeldused** — isuäratavad ja informatiivsed
@@ -199,7 +199,7 @@ Kui kasutad Theme Builderit hospitality-saitide jaoks:
 - **Professionaalsed fotod** — kvaliteetsed toidupildid
 - **Tühi ruum** — ära kuhja lehte üle
 
-### Sisu
+### Sisu {#content}
 
 - **Täpsed kirjeldused** — kirjelda elemente täpselt
 - **Tõsta eripakkumised esile** — pane eripakkumised silma paistma
@@ -207,7 +207,7 @@ Kui kasutad Theme Builderit hospitality-saitide jaoks:
 - **Uuenda regulaarselt** — hoia hinnad ja elemendid ajakohased
 - **Kasuta isuäratavat keelt** — pane elemendid kõlama maitsvalt
 
-### Ligipääsetavus
+### Ligipääsetavus {#accessibility}
 
 - **Loetavad fondid** — kasuta selgeid ja hästi loetavaid kirjatüüpe
 - **Piisav kontrast** — taga, et tekst oleks loetav
@@ -215,9 +215,9 @@ Kui kasutad Theme Builderit hospitality-saitide jaoks:
 - **Allergeenihoiatused** — kuva allergeenid silmapaistvalt
 - **Mobiilisõbralik** — testi kõigis seadmetes
 
-## Näited
+## Näited {#examples}
 
-### Restoranimenüü struktuur
+### Restoranimenüü struktuur {#restaurant-menu-structure}
 
 ```
 Eelroad
@@ -241,7 +241,7 @@ Magustoidud
 └── Gelato valik
 ```
 
-### Kohviku menüü struktuur
+### Kohviku menüü struktuur {#cafe-menu-structure}
 
 ```
 Kohv
@@ -260,7 +260,7 @@ Võileivad
 └── Taimetoitlase wrap
 ```
 
-## Seotud funktsioonid
+## Seotud funktsioonid {#related-features}
 
 - [Loo menüü](../abilities/create-menu.md) — loo navigeerimismenüüsid
 - [Disainisuund](./design-direction.md) — kohanda oma saidi disaini

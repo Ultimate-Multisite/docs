@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Requisits
+## Requisits {#requirements}
 
 - WordPress 5.3 o superior
 - PHP 7.4 o superior
 - Plugin Ultimate Multisite (activat)
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Carrega els fitxers de l'addon al teu directori `/wp-content/plugins/`
 2. Activa el plugin des del menú 'Plugins' de WordPress
 3. Configura les impostes de l'addon a l'administració de la xarxa
 
-## Desenvolupament
+## Desenvolupament {#development}
 
-### Configuració
+### Configuració {#setup}
 
 ```bash
 # Instal·la les dependències
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estructura del projecte
+### Estructura del projecte {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Regles de modernització de codi
 ```
 
-### Provesament (Testing)
+### Provesament (Testing) {#testing}
 
 L'addon inclou un marc de provesament complet:
 
@@ -79,44 +79,44 @@ L'addon inclou un marc de provesament complet:
 - **Test Coverage**: Configurat per rastrejar la cobertura del codi
 - **Multisite Testing**: Les proves s'executen en un entorn multisite
 
-### Estàndards de codi
+### Estàndards de codi {#code-standards}
 
 - **Estàndards de codi de WordPress**: Aplicats mitjançant PHPCS
 - **Compatibilitat PHP 7.4+**: Suporta les funcionalitats modernes de PHP
 - **Anàlisi estàtica**: Integració de PHPStan per a la verificació de tipus
 - **Modernització de codi**: Regles de Rector per a les actualitzacions de PHP
 
-### Sistema de compilació (Build System)
+### Sistema de compilació (Build System) {#build-system}
 
 - **Processament de recursos**: Minificació per a fitxers CSS/JS
 - **Traducció**: Generació de fitxer POT
 - **Empaquetat (Packaging)**: Creació d'arxiu per a la distribució
 - **Mode de desenvolupament**: Recursos no minificats per a la depuració
 
-## Configuració
+## Configuració {#configuration}
 
 L'addon suporta diverses opcions de configuració accessibles a través de l'interfície d'administració de la xarxa.
 
-## Hooks i Filtres
+## Hooks i Filtres {#hooks-and-filters}
 
-### Accions (Actions)
+### Accions (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - S'executa després de l'inicialització de l'addon
 - `ultimate-multisite-ai-site-builder_loaded` - S'executa després de carregar tots els fitxers de l'addon
 
-### Filtres (Filters)
+### Filtres (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modifica les impostes de l'addon
 - `ultimate-multisite-ai-site-builder_enabled` - Sobrepassa l'estat d'habilitar/deshabilitar l'addon
 
-## Llicència
+## Llicència {#license}
 
 Aquest addon està llicenciós sota GPL v3 o posterior.
 
-## Suport
+## Suport {#support}
 
 Per a suport i documentació, visita [MultisiteUltimate.com](https://multisiteultimate.com)
-## Historial de canvis (Changelog)
+## Historial de canvis (Changelog) {#changelog}
 
 - Versió 1.0.1 (2025-09-28): canvi de prefix a ultimate-multisite; actualització del domini de text; increment de versió.
 

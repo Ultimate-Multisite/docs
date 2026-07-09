@@ -3,13 +3,13 @@ title: Migrazione in Modalità Terze Parti
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrazione in Modalità di Terze Parti
+# Migrazione in Modalità di Terze Parti {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 modifica il modo in cui vengono gestite le capacità (abilities) di terze parti. **La modalità di terze parti è ora impostata di default su "auto"**, consentendo l'integrazione nativa con l'API Abilities di WordPress su WordPress 7.0+ senza configurazione manuale.
 
-## Cosa è cambiato?
+## Cosa è cambiato? {#what-changed}
 
-### Prima di v1.12.0
+### Prima di v1.12.0 {#before-v1120}
 
 Le capacità di terze parti richiedevano una configurazione manuale:
 
@@ -18,7 +18,7 @@ Le capacità di terze parti richiedevano una configurazione manuale:
 - L'integrazione con l'API Abilities di WordPress era opzionale
 - La modalità legacy era quella predefinita
 
-### Dopo v1.12.0
+### Dopo v1.12.0 {#after-v1120}
 
 Le capacità di terze parti funzionano automaticamente:
 
@@ -27,13 +27,13 @@ Le capacità di terze parti funzionano automaticamente:
 - Non è necessaria alcuna configurazione manuale su WordPress 7.0+
 - La modalità legacy è comunque disponibile per versioni più vecchie di WordPress
 
-## Chi è interessato?
+## Chi è interessato? {#who-is-affected}
 
-### Nuove installazioni (WordPress 7.0+)
+### Nuove installazioni (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Nessuna azione richiesta.** La modalità di terze parti è impostata automaticamente su "auto" e le capacità funzionano subito.
 
-### Installazioni esistenti
+### Installazioni esistenti {#existing-installations}
 
 **Le tue impostazioni vengono mantenute.** Se stavi utilizzando:
 
@@ -41,7 +41,7 @@ Le capacità di terze parti funzionano automaticamente:
 - **Modalità di terze parti manuale**: Rimani in modalità manuale (nessun cambiamento)
 - **Modalità auto**: Continui con la modalità auto (nessun cambiamento)
 
-### Versioni di WordPress precedenti al 7.0
+### Versioni di WordPress precedenti al 7.0 {#wordpress-versions-before-70}
 
 **La modalità legacy è ancora disponibile.** Se sei su WordPress 6.x o precedente:
 
@@ -49,9 +49,9 @@ Le capacità di terze parti funzionano automaticamente:
 - Puoi abilitare manualmente la modalità di terze parti se lo desideri
 - Aggiorna a WordPress 7.0+ per utilizzare l'API Abilities nativa
 
-## Comprendere le modalità
+## Comprendere le modalità {#understanding-the-modes}
 
-### Modalità Auto (Nuovo Default)
+### Modalità Auto (Nuovo Default) {#auto-mode-new-default}
 
 **La modalità auto** utilizza l'integrazione nativa con l'API Abilities di WordPress:
 
@@ -62,7 +62,7 @@ Le capacità di terze parti funzionano automaticamente:
 
 **Quando usarla**: WordPress 7.0+ con capacità di terze parti
 
-### Modalità Manuale
+### Modalità Manuale {#manual-mode}
 
 **La modalità manuale** richiede una configurazione esplicita:
 
@@ -73,7 +73,7 @@ Le capacità di terze parti funzionano automaticamente:
 
 **Quando usarla**: Test, caricamento selettivo delle capacità o configurazioni personalizzate
 
-### Modalità Legacy
+### Modalità Legacy {#legacy-mode}
 
 **La modalità legacy** utilizza il vecchio sistema di capacità di terze parti:
 
@@ -84,24 +84,24 @@ Le capacità di terze parti funzionano automaticamente:
 
 **Quando usarla**: WordPress 6.x o precedente, o quando hai bisogno di compatibilità legacy
 
-## Controllare la tua modalità attuale
+## Controllare la tua modalità attuale {#checking-your-current-mode}
 
-### Tramite il pannello di amministrazione
+### Tramite il pannello di amministrazione {#via-admin-panel}
 
 1. Vai su **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Cerca l'impostazione **Third-Party Mode**
 3. Vedrai la tua modalità attuale e le opzioni per modificarla
 
-### Tramite codice
+### Tramite codice {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', o 'legacy'
 ```
 
-## Cambiare la tua modalità
+## Cambiare la tua modalità {#changing-your-mode}
 
-### Passare alla Modalità Auto
+### Passare alla Modalità Auto {#switch-to-auto-mode}
 
 Se sei su WordPress 7.0+ e vuoi utilizzare la modalità auto:
 
@@ -112,7 +112,7 @@ Se sei su WordPress 7.0+ e vuoi utilizzare la modalità auto:
 
 Superdav AI Agent scoprirà e registrerà automaticamente le capacità di terze parti.
 
-### Passare alla Modalità Manuale
+### Passare alla Modalità Manuale {#switch-to-manual-mode}
 
 Se vuoi controllare manualmente quali capacità vengono caricate:
 
@@ -122,7 +122,7 @@ Se vuoi controllare manualmente quali capacità vengono caricate:
 4. Clicca **Save**
 5. Modifica il tuo file di configurazione per specificare quali capacità caricare
 
-### Passare alla Modalità Legacy
+### Passare alla Modalità Legacy {#switch-to-legacy-mode}
 
 Se hai bisogno di compatibilità legacy:
 
@@ -131,9 +131,9 @@ Se hai bisogno di compatibilità legacy:
 3. Seleziona **Legacy**
 4. Clicca **Save**
 
-## Vantaggi della Modalità Auto
+## Vantaggi della Modalità Auto {#benefits-of-auto-mode}
 
-### Scoperta Automatica
+### Scoperta Automatica {#automatic-discovery}
 
 Le capacità vengono scoperte automaticamente da:
 
@@ -144,7 +144,7 @@ Le capacità vengono scoperte automaticamente da:
 
 Non è necessaria alcuna registrazione manuale.
 
-### Integrazione Nativa
+### Integrazione Nativa {#native-integration}
 
 Le capacità si integrano con l'API Abilities di WordPress:
 
@@ -153,67 +153,67 @@ Le capacità si integrano con l'API Abilities di WordPress:
 - Compatibile con altri plugin che utilizzano l'API Abilities
 - A prova di futuro man mano che WordPress evolve
 
-### Gestione Semplificata
+### Gestione Semplificata {#simplified-management}
 
 - Nessun file di configurazione da modificare
 - Nessuna registrazione manuale delle capacità
 - I controlli di visibilità delle capacità funzionano automaticamente
 - Gli avvisi dell'admin ti segnalano le capacità non classificate
 
-### Migliore Prestazione
+### Migliore Prestazione {#better-performance}
 
 - Le capacità vengono memorizzate in cache
 - Caricate in modo pigro (lazy-loaded) quando necessario
 - Ottimizzate per WordPress 7.0+
 
-## Percorso di migrazione
+## Percorso di migrazione {#migration-path}
 
-### Se sei su WordPress 6.x
+### Se sei su WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Aggiorna a WordPress 7.0+** (quando sei pronto)
 2. **Aggiorna Superdav AI Agent** a v1.12.0+
 3. **Cambia la modalità di terze parti in Auto** (opzionale; la modalità legacy funziona ancora)
 4. **Rivedi la visibilità delle capacità** per garantire controlli di accesso appropriati
 
-### Se sei su WordPress 7.0+
+### Se sei su WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Aggiorna Superdav AI Agent** a v1.12.0+
 2. **Verifica che la modalità di terze parti sia impostata su Auto** (dovrebbe esserlo di default)
 3. **Rivedi la visibilità delle capacità** per garantire controlli di accesso appropriati
 4. **Testa le capacità di terze parti** per confermare che funzionino
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
-### Le capacità non vengono caricate in modalità auto
+### Le capacità non vengono caricate in modalità auto {#abilities-arent-loading-in-auto-mode}
 
 - Verifica di essere su WordPress 7.0+
 - Controlla che la modalità di terze parti sia impostata su "Auto"
 - Verifica che il plugin che fornisce la capacità sia attivo
 - Controlla i log degli errori di WordPress per errori di registrazione
 
-### Voglio mantenere la modalità legacy
+### Voglio mantenere la modalità legacy {#i-want-to-keep-legacy-mode}
 
 - Vai su **Settings** → **Third-Party Mode**
 - Seleziona **Legacy**
 - Clicca **Save**
 - La modalità legacy continuerà a funzionare
 
-### Le mie capacità personalizzate non vengono mostrate
+### Le mie capacità personalizzate non vengono mostrate {#my-custom-abilities-arent-showing}
 
 - Verifica che siano registrate tramite i hook di WordPress
 - Controlla che implementino correttamente l'API Abilities
 - Rivedi i log degli errori di WordPress
 - Usa la pagina admin **Ability Visibility** per vedere tutte le capacità registrate
 
-### Ricevo avvisi di "capacità non classificate"
+### Ricevo avvisi di "capacità non classificate" {#im-getting-unclassified-ability-notices}
 
 - Questo è normale per le nuove capacità di terze parti
 - Rivedile e classificali nell'avviso admin
 - Vedi **Ability Visibility** per dettagli sulla classificazione
 
-## Compatibilità retroattiva
+## Compatibilità retroattiva {#backward-compatibility}
 
-### Configurazioni esistenti
+### Configurazioni esistenti {#existing-configurations}
 
 Se hai configurazioni di capacità di terze parti esistenti:
 
@@ -223,33 +223,33 @@ Se hai configurazioni di capacità di terze parti esistenti:
 
 Per mantenere la tua configurazione personalizzata, resta in modalità Manuale o Legacy.
 
-### Cronologia di deprecazione
+### Cronologia di deprecazione {#deprecation-timeline}
 
 - **v1.12.0**: Modalità Legacy e Manuale sono ancora pienamente supportate
 - **v1.13.0+**: La modalità Legacy potrebbe mostrare avvisi di deprecazione
 - **v2.0.0**: La modalità Legacy potrebbe essere rimossa (da definire)
 
-## Migliori pratiche
+## Migliori pratiche {#best-practices}
 
-### Per nuove installazioni
+### Per nuove installazioni {#for-new-installations}
 
 - Usa la modalità Auto (è il default)
 - Lascia che Superdav AI Agent scopra le capacità automaticamente
 - Usa Ability Visibility per controllare l'accesso
 
-### Per installazioni esistenti
+### Per installazioni esistenti {#for-existing-installations}
 
 - Aggiorna a WordPress 7.0+ quando possibile
 - Passa alla modalità Auto per una gestione semplificata
 - Rivedi e classifica le capacità usando Ability Visibility
 
-### Per capacità personalizzate
+### Per capacità personalizzate {#for-custom-abilities}
 
 - Registra le capacità tramite i hook di WordPress (Abilities API)
 - Evita i registri di capacità personalizzati
 - Testa su WordPress 7.0+ con la modalità Auto
 
-## Prossimi passi
+## Prossimi passi {#next-steps}
 
 1. **Controlla la versione di WordPress**: Verifica di essere su 7.0+ per la modalità Auto
 2. **Rivedi la modalità di terze parti**: Vai su Settings e controlla la tua modalità attuale
@@ -257,7 +257,7 @@ Per mantenere la tua configurazione personalizzata, resta in modalità Manuale o
 4. **Classifica le capacità**: Rivedi e classifica eventuali capacità non classificate
 5. **Testa**: Verifica che le tue capacità di terze parti funzionino correttamente
 
-## Argomenti correlati
+## Argomenti correlati {#related-topics}
 
 - **Ability Visibility**: Controlla quali capacità sono esposte dove
 - **WordPress Abilities API**: Impara sulla registrazione nativa delle capacità di WordPress

@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Peata robotid. Kaitse tulu. Null seadistamisvaeva.**
 
@@ -15,7 +15,7 @@ Käitad kohandatud domeenidega multisite-võrku? Sa tead seda valu: Google reCAP
 
 **Ultimate Multisite: Captcha muudab kõike.**
 
-## Cap Captcha: isehostitud kaitse, mis lihtsalt töötab
+## Cap Captcha: isehostitud kaitse, mis lihtsalt töötab {#cap-captcha-self-hosted-protection-that-just-works}
 
 Meie uus **Cap Captcha** teenusepakkuja on multisite-võrkude jaoks mängumuutja:
 
@@ -25,7 +25,7 @@ Meie uus **Cap Captcha** teenusepakkuja on multisite-võrkude jaoks mängumuutja
 * **Nähtamatu proof-of-work** — Kasutajad lahendavad taustal arvutusliku mõistatuse. Ei tuletõrjehüdrantidel klõpsamist ega frustreerivaid pildiruudustikke.
 * **Kergekaaluline** — Vaid 20KB. Ei aeglusta sinu kassaprotsessi.
 
-## WooCommerce’i kaarditestimise kaitse
+## WooCommerce’i kaarditestimise kaitse {#woocommerce-card-testing-protection}
 
 Kaarditestimise rünnakud maksavad kaupmeestele igal aastal miljardeid. Petturid kasutavad roboteid, et valideerida varastatud krediitkaarte sinu WooCommerce’i kassas — sina maksad töötlemistasud, nemad saavad kehtivad kaardinumbrid.
 
@@ -35,7 +35,7 @@ Kaarditestimise rünnakud maksavad kaupmeestele igal aastal miljardeid. Petturid
 * **Ühildub PayPal Paymentsiga** — Töötab sujuvalt koos WooCommerce PayPal Paymentsiga
 * **Reaalajas statistika** — Näed täpselt, kui palju rünnakuid blokeerid
 
-## Vajad ikka Google reCAPTCHA’t või hCaptcha’t?
+## Vajad ikka Google reCAPTCHA’t või hCaptcha’t? {#still-need-google-recaptcha-or-hcaptcha}
 
 Meil on see kaetud. Täielik tugi järgmistele:
 
@@ -47,14 +47,14 @@ Meil on see kaetud. Täielik tugi järgmistele:
 
 Vaheta teenusepakkujaid igal ajal oma võrguseadetes.
 
-## Ehitatud skaleerumiseks
+## Ehitatud skaleerumiseks {#built-for-scale}
 
 * Kogu võrgu seadistused saidipõhiste ülekirjutustega
 * Statistika dashboard kaitse jälgimiseks
 * Kohandatavad turvatasemed (kiire, keskmine, maksimaalne)
 * Arendajasõbralik laiendatava teenusepakkuja arhitektuuriga
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 1. Laadi `ultimate-multisite-captcha` oma `/wp-content/plugins/` kataloogi
 2. Aktiveeri plugin võrgus
@@ -64,37 +64,37 @@ Cap Captcha aktiveerub automaatselt — pole seadistusi, mida konfigureerida, eg
 
 **Valikuline:** Kui soovid selle asemel kasutada Google reCAPTCHA’t või hCaptcha’t, liigu jaotisse **Ultimate Multisite → Settings → Captcha** ja vali eelistatud teenusepakkuja.
 
-## Korduma kippuvad küsimused
+## Korduma kippuvad küsimused {#frequently-asked-questions}
 
-## Kas ma pean midagi seadistama?
+## Kas ma pean midagi seadistama? {#do-i-need-to-configure-anything}
 
 Ei! Cap Captcha lubatakse automaatselt, kui aktiveerid addoni. Kogu sinu võrk on kohe kaitstud — pole seadistusi, mida konfigureerida, ega API-võtmeid, mida sisestada.
 
-## Kas mul on Cap Captcha jaoks API-võtmeid vaja?
+## Kas mul on Cap Captcha jaoks API-võtmeid vaja? {#do-i-need-api-keys-for-cap-captcha}
 
 Ei. Cap Captcha on täielikult isehostitud. Pole väliseid kontosid, domeeni registreerimist ega seadistamise peavalu.
 
-## Kas see aeglustab minu kassaprotsessi?
+## Kas see aeglustab minu kassaprotsessi? {#will-this-slow-down-my-checkout}
 
 Cap Captcha on vaid 20KB ja käitab proof-of-work väljakutseid taustal. Sinu kliendid ei märka mingit viivitust.
 
-## Kas see kaitseb kaarditestimise rünnakute eest?
+## Kas see kaitseb kaarditestimise rünnakute eest? {#does-this-protect-against-card-testing-attacks}
 
 Jah! Erinevalt traditsioonilistest captchadest, mis kaitsevad ainult HTML-vorme, haakub meie WooCommerce’i integratsioon otse Store API-ga, et blokeerida robotirünnakud API tasemel — seal, kus toimub enamik kaarditestimise rünnakuid.
 
-## Kas saan kasutada eri saitidel erinevaid captcha teenusepakkujaid?
+## Kas saan kasutada eri saitidel erinevaid captcha teenusepakkujaid? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Captcha teenusepakkuja määratakse kogu võrguüleselt, kuid saad raskusastme seadeid oma vajaduste põhjal kohandada.
 
-## Kas see vastab GDPR-i nõuetele?
+## Kas see vastab GDPR-i nõuetele? {#is-this-gdpr-compliant}
 
 Cap Captcha on 100% isehostitud ja välistele teenustele andmeid ei saadeta. Google reCAPTCHA ja hCaptcha puhul palun tutvu nende vastavate privaatsuspoliitikatega.
 
-## Kiiruse piiramine
+## Kiiruse piiramine {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 tutvustab range peatusega kiiruse piirajat, mis kaitseb sinu võrku brute-force ja kaarditestimise rünnakute eest.
 
-### Kuidas see töötab
+### Kuidas see töötab {#how-it-works}
 
 Kiiruse piiraja loendab iga GET- ja POST-päringu captcha’ga kaitstud pindadel:
 
@@ -108,9 +108,9 @@ Kui külastaja ületab kiiruse piirangu, vastab plugin järgmiselt:
 * **Retry-After** päis, mis näitab, millal uuesti proovida
 * **Juhuslik tarpit-viivitus** (vaikimisi 1–5 sekundit, rangelt piiratud 15 sekundiga), et ründajaid aeglustada
 
-### Konfiguratsioon
+### Konfiguratsioon {#configuration}
 
-#### Tarpit’i ajastus
+#### Tarpit’i ajastus {#tarpit-timing}
 
 Juhi kiirusega piiratud päringutele rakendatavat juhuslikku viivitust:
 
@@ -119,9 +119,9 @@ Juhi kiirusega piiratud päringutele rakendatavat juhuslikku viivitust:
 
 Need seaded on saadaval jaotises **Ultimate Multisite → Settings → Captcha**.
 
-### Laiendatavus
+### Laiendatavus {#extensibility}
 
-#### IP lubatud loendi filter
+#### IP lubatud loendi filter {#ip-whitelist-filter}
 
 Vabasta usaldusväärsed IP-vahemikud kiiruse piiramisest:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Blokeerimiseelne tegevus
+#### Blokeerimiseelne tegevus {#pre-block-action}
 
 Käivita kohandatud loogika vahetult enne kiirusepiirangu blokeeringu saatmist:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Kliendi IP tuvastamine ja usaldusväärsed puhverserverid
+## Kliendi IP tuvastamine ja usaldusväärsed puhverserverid {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 tutvustab võltsimiskindlat kliendi-IP tuvastust. Meetod `Captcha_Core::get_client_ip()` on nüüd ainus tõeallikas külastaja IP omistamiseks järgmistes kohtades:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 tutvustab võltsimiskindlat kliendi-IP tuvast
 * Captcha teenusepakkuja `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Statistika IP-räsid
 
-### Usaldusmudel
+### Usaldusmudel {#trust-model}
 
 Pistikprogramm jõustab range IP usaldushierarhia:
 
@@ -166,9 +166,9 @@ Pistikprogramm jõustab range IP usaldushierarhia:
    - Vahetu vastaspool on sinu adminis konfigureeritud usaldatud puhverserverite loendis
    - Päist parsitakse paremalt vasakule, jättes vahele usaldatud/Cloudflare hüpped
 
-### Konfiguratsioon
+### Konfiguratsioon {#configuration-1}
 
-#### Cloudflare päise usaldamine
+#### Cloudflare päise usaldamine {#cloudflare-header-trust}
 
 Luba Cloudflare'i `CF-Connecting-IP` päise usaldamine:
 
@@ -178,7 +178,7 @@ Luba Cloudflare'i `CF-Connecting-IP` päise usaldamine:
   - CIDR-vahemikke värskendatakse kord nädalas wp-croni kaudu
   - Komplektis olevat varuvarianti kasutatakse siis, kui värskendamine ebaõnnestub
 
-#### Usaldatud puhverserverite konfiguratsioon
+#### Usaldatud puhverserverite konfiguratsioon {#trusted-proxy-configuration}
 
 Määra oma eesliini puhverserverid ja koormusjaoturid:
 
@@ -194,14 +194,14 @@ Määra oma eesliini puhverserverid ja koormusjaoturid:
     198.51.100.50
     ```
 
-#### Esmakordse lubamise automaattuvastus
+#### Esmakordse lubamise automaattuvastus {#first-enable-auto-detection}
 
 Kui lubad kiirusepiiraja esimest korda, tuvastab pistikprogramm sinu tõenäolise Cloudflare'i ja puhverserverite olukorra ning kuvab ühe klõpsuga "Rakenda tuvastatud sätted" adminiteavituse.
 
 * Pistikprogramm **ei kirjuta kunagi üle** sinu salvestatud väärtusi
 * Kui hilisem liiklus viitab sellele, et sinu konfiguratsioon ei vasta enam tegelikkusele (nt Cloudflare muutis CIDR-vahemikke), kuvatakse mitte-eemaldatav mittevastavuse teavitus koos soovitatud uuendusega
 
-### Miks see on oluline
+### Miks see on oluline {#why-this-matters}
 
 Range IP usaldusmudel sulgeb kriitilise võltsimisvektori: otsesed päringud lähtekoodiserverisse, mis kannavad võltsitud `CF-Connecting-IP` päist, oleksid varem jaotatud võltsitud IP, mitte tegeliku vastaspoole järgi. See on eriti oluline järgmise jaoks:
 

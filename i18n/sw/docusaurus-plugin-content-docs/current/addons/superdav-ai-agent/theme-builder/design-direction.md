@@ -3,17 +3,17 @@ title: Mtiririko wa Ubunifu
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Mwelekeo wa Ubunifu
+# Mwelekeo wa Ubunifu {#design-direction}
 
 Hatua ya **Mwelekeo wa Ubunifu** inakuwezesha kupitia, kuboresha, na kumaliza muundo wa kuonekana wa theme yako kabla ya Theme Builder kutengeneza theme nzima.
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Baada ya kukamilisha Mahojiano ya Uchunguzi (Discovery Interview), Theme Builder inakuonyesha mwelekeo wako wa ubunifu kwa **kuonyesha muonekano wa desktop na simu**. Hii inakuwezesha kuona hasa jinsi muundo wako utaonekana kwenye vifaa tofauti kabla ya kujitolea na theme hiyo.
 
-## Vipengele vya Mwelekeo wa Ubunifu
+## Vipengele vya Mwelekeo wa Ubunifu {#design-direction-components}
 
-### 1. Rangi (Color Palette)
+### 1. Rangi (Color Palette) {#1-color-palette}
 
 Mfumo wa rangi wa theme yako, ikiwa ni pamoja na:
 
@@ -23,7 +23,7 @@ Mfumo wa rangi wa theme yako, ikiwa ni pamoja na:
 - **Neutral colors** — rangi za kijivu na nyeupe kwa ajili ya mandhari na maandishi.
 - **Text color** — rangi kuu ya maandishi kwa ajili ya usomaji.
 
-### 2. Tipografia (Typography)
+### 2. Tipografia (Typography) {#2-typography}
 
 Uchaguzi wa fonti kwa ajili ya:
 
@@ -33,14 +33,14 @@ Uchaguzi wa fonti kwa ajili ya:
 - **Line height** — umbali kati ya mistari kwa ajili ya usomaji.
 - **Font weights** — tofauti za bold, regular, na light.
 
-### 3. Mpangilio na Nafasi (Layout and Spacing)
+### 3. Mpangilio na Nafasi (Layout and Spacing) {#3-layout-and-spacing}
 
 - **Container width** — upana wa juu zaidi kwa maudhui.
 - **Padding and margins** — nafasi inayozunguka vipengele.
 - **Grid system** — mpangilio wa nguzo (column layout) kwa ajili ya muundo unaobadilika.
 - **Component spacing** — umbali kati ya vipengele vya UI.
 
-### 4. Vipengele vya Kuonekana (Visual Elements)
+### 4. Vipengele vya Kuonekana (Visual Elements) {#4-visual-elements}
 
 - **Button styles** — miundo ya vitufe vya primary, secondary, na tertiary.
 - **Card designs** — mpangilio wa sehemu za maudhui.
@@ -48,9 +48,9 @@ Uchaguzi wa fonti kwa ajili ya:
 - **Borders and shadows** — kina cha kuonekana kidogo.
 - **Hover effects** — mtindo wa hali ya kutumia (interactive state styling).
 
-## Kuonyesha Muonekano (Preview Rendering)
+## Kuonyesha Muonekano (Preview Rendering) {#preview-rendering}
 
-### Muonekano wa Desktop
+### Muonekano wa Desktop {#desktop-preview}
 
 Muonekano wa desktop unaonyesha muundo wako kwa upana kamili (kawaida 1200px au zaidi):
 
@@ -59,7 +59,7 @@ Muonekano wa desktop unaonyesha muundo wako kwa upana kamili (kawaida 1200px au 
 - Tipografia na nafasi kubwa.
 - Vipengele vyote vya kuonekana kwa ukubwa kamili.
 
-### Muonekano wa Simu
+### Muonekano wa Simu {#mobile-preview}
 
 Muonekano wa simu unaonyesha muundo wako kwa upana wa simu (kawaida 375px):
 
@@ -68,7 +68,7 @@ Muonekano wa simu unaonyesha muundo wako kwa upana wa simu (kawaida 375px):
 - Tipografia na nafasi zilizorekebishwa.
 - Vitufe vya ukubwa rafiki kwa kugusa.
 
-### Vipimo vya Kufanya Muonekano (Responsive Breakpoints)
+### Vipimo vya Kufanya Muonekano (Responsive Breakpoints) {#responsive-breakpoints}
 
 Theme Builder inatoa muonekano kwa vipimo hivi:
 
@@ -79,9 +79,9 @@ Theme Builder inatoa muonekano kwa vipimo hivi:
 | **Desktop** | 1200px | Desktop yenye upana kamili |
 | **Large Desktop** | 1920px | Displey kubwa sana |
 
-## Kuboresha Muundo Wako
+## Kuboresha Muundo Wako {#refining-your-design}
 
-### Kifanyia Marekebisho
+### Kifanyia Marekebisho {#making-adjustments}
 
 Unaweza kuboresha mwelekeo wako wa ubunifu kwa:
 
@@ -91,7 +91,7 @@ Unaweza kuboresha mwelekeo wako wa ubunifu kwa:
 4. **Kuboresha mpangilio** — badilisha upana wa container na nguzo za grid.
 5. **Kupanga vipengele** — badilisha button styles, card designs, n.k.
 
-### Sasisho la Muonekano
+### Sasisho la Muonekano {#preview-updates}
 
 Mabadiliko yanadhihirishwa kwa wakati halisi:
 
@@ -100,7 +100,7 @@ Mabadiliko yanadhihirishwa kwa wakati halisi:
 - Vipimo vyote vya responsive hubadilika.
 - Unaweza kubadilisha kati ya muonekano ili kuthibitisha mabadiliko.
 
-### Mtazamo wa Kulinganisha
+### Mtazamo wa Kulinganisha {#comparison-view}
 
 Linganisha mwelekeo wako wa ubunifu na:
 
@@ -108,7 +108,7 @@ Linganisha mwelekeo wako wa ubunifu na:
 - **Miundo ya washindani** — kulinganisha na tovuti za msukumo.
 - **Versi za awali** — kurudi kwenye mwelekeo wa ubunifu wa zamani.
 
-## Idhini ya Mwelekeo wa Ubunifu
+## Idhini ya Mwelekeo wa Ubunifu {#design-direction-approval}
 
 Mara tu unapokidhi na muundo wako:
 
@@ -118,7 +118,7 @@ Mara tu unapokidhi na muundo wako:
 4. **Kukagua mpangilio** — angalia nafasi na mpangilio.
 5. **Kuidhinisha muundo** — endelea na utengenezaji wa theme.
 
-## Hatua Zijazo
+## Hatua Zijazo {#next-steps}
 
 Baada ya kuidhinisha mwelekeo wako wa ubunifu:
 
@@ -127,7 +127,7 @@ Baada ya kuidhinisha mwelekeo wako wa ubunifu:
 3. Unaweza kuboresha zaidi kwa kutumia WordPress customizer.
 4. Endelea kwenda [Hospitality Menus](./hospitality-menus.md) au vipengele vingine.
 
-## Mazoea Bora
+## Mazoea Bora {#best-practices}
 
 - **Jaribu kwenye vifaa halisi** — tumia simu na tableti halisi ikiwezekana.
 - **Angalia usomaji** — hakikisha maandishi yanaonekana kwa urahisi katika ukubwa wote.
@@ -135,30 +135,30 @@ Baada ya kuidhinisha mwelekeo wako wa ubunifu:
 - **Zingatia utendaji** — boresha picha na fonti kwa kasi.
 - **Panga kwa maudhui** — hakikisha mpangilio unafanya kazi na maudhui yako halisi.
 
-## Kutatua Matatizo
+## Kutatua Matatizo {#troubleshooting}
 
-### Muonekano Unabadilika
+### Muonekano Unabadilika {#preview-not-updating}
 
 - Refresha ukurasa.
 - Futa cache ya browser.
 - Jaribu browser tofauti.
 - Angalia muunganisho wa intaneti.
 
-### Rangi Zinaonekana Tofauti
+### Rangi Zinaonekana Tofauti {#colors-look-different}
 
 - Angalia mipangilio ya rangi ya monitor.
 - Jaribu kwenye vifaa tofauti.
 - Thibitisha tofauti ya rangi kwa zana za uwezo wa kufikiwa.
 - Zingatia simula za ugonjwa wa rangi (color blindness simulators).
 
-### Matatizo ya Tipografia
+### Matatizo ya Tipografia {#typography-issues}
 
 - Thibitisha kwamba faili za fonti zinapakuliwa.
 - Angalia ukubwa wa fonti katika breakpoints tofauti.
 - Jaribu na maudhui halisi.
 - Zingatia urefu wa mstari kwa usomaji.
 
-## Nyaraka Zinazohusiana
+## Nyaraka Zinazohusiana {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — kukusanya taarifa za ubunifu.
 - [Hospitality Menus](./hospitality-menus.md) — kutengeneza kurasa za menyu zenye muundo.

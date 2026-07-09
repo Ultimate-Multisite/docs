@@ -3,15 +3,15 @@ title: مینیو بنائیں
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menu بنائیں
+# Menu بنائیں {#create-menu}
 
 **Menu بنانے** کی صلاحیت WordPress نیویگیشن مینیوز بناتی ہے، جس میں پیج کے ٹائٹل سے الگ نیویگیشن لیبلز (navigation labels) کو سپورٹ کیا جاتا ہے۔
 
-## جائزہ (Overview)
+## جائزہ (Overview) {#overview}
 
 یہ صلاحیت معیاری مینیو بنانے کے فنکشنلٹی کو بڑھاتی ہے، جس میں `navigation_label` پیرامیٹر کو شامل کرنے کی سہولت ملتی ہے۔ اس سے آپ ایسے مینیوز بنا سکتے ہیں جہاں نیویگیشن میں دکھایا جانے والا لیبل پیج کے ٹائٹل سے مختلف ہو، جو سائٹ کی ساخت اور صارف کے تجربے میں زیادہ لچک فراہم کرتا ہے۔
 
-## پیرامیٹرز (Parameters)
+## پیرامیٹرز (Parameters) {#parameters}
 
 | پیرامیٹر | قسم (Type) | ضروری (Required) | تفصیل (Description) |
 |-----------|-------------|-------------------|----------------------|
@@ -19,7 +19,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 | `location` | string | No | تھیم کی وہ جگہ جہاں یہ مینیو لگانا ہے، مثال کے طور پر: `primary` |
 | `navigation_label` | string | No | نیویگیشن میں دکھایا جانے والا لیبل (پیج کے ٹائٹل سے مختلف) |
 
-## واپسی کا ویلیو (Return Value)
+## واپسی کا ویلیو (Return Value) {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 }
 ```
 
-## نیویگیشن لیبل بمقابلہ پیج ٹائٹل (Navigation Label vs Page Title)
+## نیویگیشن لیبل بمقابلہ پیج ٹائٹل (Navigation Label vs Page Title) {#navigation-label-vs-page-title}
 
 `navigation_label` پیرامیٹر آپ کو اندرونی مینیو کے نام کو اس لیبل سے الگ کرنے کی اجازت دیتا ہے جو صارفین کو دکھایا جاتا ہے:
 
@@ -43,9 +43,9 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 - آپ کو مختلف لیبل لمبائیوں کے ساتھ متعدد زبانوں کو سپورٹ کرنے کی ضرورت ہو۔
 - آپ مخصوص علاقوں یا صارف گروپس کے لیے مینیوز بنا رہے ہوں۔
 
-## استعمال کے مثالیں (Usage Examples)
+## استعمال کے مثالیں (Usage Examples) {#usage-examples}
 
-### مثال 1: نیویگیشن لیبل کے ساتھ سادہ مینیو
+### مثال 1: نیویگیشن لیبل کے ساتھ سادہ مینیو {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Create a primary navigation menu called "Main Navigation" with the navigation la
 }
 ```
 
-### مثال 2: مخصوص تھیم لوکیشن کے لیے مینیو
+### مثال 2: مخصوص تھیم لوکیشن کے لیے مینیو {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 }
 ```
 
-## تھیم بلڈر کے ساتھ انضمام (Integration with Theme Builder)
+## تھیم بلڈر کے ساتھ انضمام (Integration with Theme Builder) {#integration-with-theme-builder}
 
 جب آپ Theme Builder استعمال کرتے ہیں، تو Create Menu کی صلاحیت:
 
@@ -89,13 +89,13 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 3. مینیوز کو صحیح تھیم لوکیشنز پر سیٹ کرتی ہے۔
 4. تخلیق کے بعد مینیو آئٹمز شامل کرنے کی سہولت فراہم کرتی ہے۔
 
-## متعلقہ صلاحیتیں (Related Abilities)
+## متعلقہ صلاحیتیں (Related Abilities) {#related-abilities}
 
 - **`add_menu_item`** — موجودہ مینیو میں آئٹمز شامل کرنا
 - **`update_menu`** — مینیو کا نام تبدیل کرنا یا اسے تھیم لوکیشن پر دوبارہ سیٹ کرنا
 - **`delete_menu`** — اپنی سائٹ سے مینیو ہٹانا
 
-## بہترین طریقے (Best Practices)
+## بہترین طریقے (Best Practices) {#best-practices}
 
 - **واضح نیویگیشن لیبلز استعمال کریں** — لیبلز کو صارفین کے لیے مختصر اور وضاحت سے بھرپور رکھیں۔
 - **تھیم لوکیشنز سے مطابقت رکھیں** — مناسب ڈسپلے کے لیے مینیوز کو صحیح تھیم لوکیشن پر سیٹ کریں۔
@@ -103,14 +103,14 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 - **ریسپانسیو ٹیسٹ کریں** — تصدیق کریں کہ مینیوز موبائل ڈیوائسز پر صحیح طریقے سے دکھائے جاتے ہیں۔
 - **لیبلز کو مقامی بنائیں (Localize)** — مختلف زبانوں کے مختلف نیویگیشن لیبلز استعمال کریں۔
 
-## حدودات (Limitations)
+## حدودات (Limitations) {#limitations}
 
 - نیویگیشن لیبلز صرف دکھانے کے لیے ہوتے ہیں؛ اندرونی `name` اب بھی WordPress کی شناخت کے لیے استعمال ہوتا ہے۔
 - تھیم سپورٹ مختلف ہوتی ہے؛ تمام تھیمز تمام مینیو لوکیشنز کو سپورٹ نہیں کرتے۔
 - مینیو آئٹمز کو مینیو بنانے کے بعد الگ سے شامل کرنا ضروری ہے۔
 - نیویگیشن لیبل تبدیل کرنے کے لیے مینیو کو اپ ڈیٹ کرنا ضروری ہے۔
 
-## متعلقہ صلاحیتیں (Related Abilities)
+## متعلقہ صلاحیتیں (Related Abilities) {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — اپنی سائٹ کے ہیڈر کے لیے لوگو بنانا
 - [Validate Palette Contrast](./validate-palette-contrast.md) — قابل رسائی (accessible) رنگ سکیمز کو یقینی بنانا

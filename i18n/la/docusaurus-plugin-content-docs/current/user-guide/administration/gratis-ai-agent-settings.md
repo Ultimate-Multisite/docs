@@ -3,16 +3,16 @@ title: Optiones Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Optiones Gratis AI Agent
+# Optiones Gratis AI Agent {#gratis-ai-agent-settings}
 
 Pagina **Optiones → Provectae** in Gratis AI Agent configurationem gradu administratoris praebet pro integrationibus partis posticae. Haec pagina documentatur transmissionem responsionum, claves praebitorum quaestionis, institutionem servitii Superdav administrati, moderamina Google Calendar, optiones SMS TextBee, et vexilla functionum per totum rete.
 
-## Optiones accedere
+## Optiones accedere {#accessing-settings}
 
 1. In administratione WordPress, vade ad **Gratis AI Agent → Optiones**.
 2. Preme tabulam **Provectae**.
 
-## Configuratio extremi responsionum
+## Configuratio extremi responsionum {#feedback-endpoint-configuration}
 
 Extremum responsionum petitiones POST ab AI agente accipit quoties usor responsionem mittit per bullam pollice deorsum, vexillum auto-interrogativum, aut mandatum `/report-issue`.
 
@@ -21,7 +21,7 @@ Extremum responsionum petitiones POST ab AI agente accipit quoties usor responsi
 | **Extremi Responsionum URL** | URL quae submissiones responsionum accipit ut petitiones HTTP POST cum corpore JSON. |
 | **Feedback API Key** | bearer token missum in `Authorization` header cuiusque petitionis responsionum. Relinque vacuum si extremum tuum authenticationem non requirit. |
 
-### Onus JSON Exspectatum
+### Onus JSON Exspectatum {#expected-json-payload}
 
 Extremum responsionum tuum corpus JSON accipere debet saltem cum his campis:
 
@@ -36,7 +36,7 @@ Extremum responsionum tuum corpus JSON accipere debet saltem cum his campis:
 
 Campi additi in onere adesse possunt secundum contextum colloquii.
 
-### Valores `triage_category`
+### Valores `triage_category` {#triagecategory-values}
 
 Stratum triage AI unum ex sequentibus valoribus `triage_category` attribuit antequam onus transmittat:
 
@@ -47,7 +47,7 @@ Stratum triage AI unum ex sequentibus valoribus `triage_category` attribuit ante
 | `inappropriate_content` | Responsum materiam continebat quae usoribus ostendi non debet. |
 | `other` | Responsio categoriae notae non congruit. |
 
-### Authenticatio
+### Authenticatio {#authentication}
 
 Si extremum tuum authenticationem requirit, campum **Feedback API Key** ad bearer token tuum pone. Agens mittit:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Si campus **Feedback API Key** vacuus est, nullum `Authorization` header mittitur.
 
-### Collectio Responsionum Dezactivanda
+### Collectio Responsionum Dezactivanda {#disabling-feedback-collection}
 
 Relinque campos **Extremi Responsionum URL** et **Feedback API Key** ambos vacuos. Bulla pollice deorsum et UI responsionum usoribus visibiles manent, sed submissiones ad ullum servitium externum non transmittuntur.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Etiam in tabula **Provectae**, campus **Brave Search API Key** facultatem [Quaestionis Interneticae](../configuration/internet-search) efficit.
 
@@ -73,7 +73,7 @@ Titulus campi nexum prehendibilem ad paginam inscriptionis API Brave Search cont
 
 Vide [Quaestionem Interneticam](../configuration/internet-search) pro documentis ad usorem finalem de hac functione.
 
-## Servitium Superdav Administratum
+## Servitium Superdav Administratum {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 extrema servitii Superdav administrati et provisionem connexionis automaticam pro sitibus sustentatis addit. His moderatoribus utere cum situs tuus ad praebitorem hospitatum connecti debet loco extremi servitii manu configurati.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 extrema servitii Superdav administrati et provisionem 
 
 Post provisionem, optiones serva et statum connexionis verifica antequam processibus operum servitii administrati innitaris. Si provisio deficit, consilium iterandi ostensum recognosce et confirma situm licentiam habere ut praebitorem hospitatum utatur.
 
-## Configuratio Google Calendar
+## Configuratio Google Calendar {#google-calendar-configuration}
 
 Cum functiones calendarii Superdav AI Agent v1.18.0 effectae sunt, agens calendaria configurata et singula eventuum legere potest. Instrumenta calendarii ad lectionem ordinantur et utilia sunt ad monita schedulae conscia, consequentiam participum, et congruentiam contactuum.
 
@@ -97,7 +97,7 @@ Cum functiones calendarii Superdav AI Agent v1.18.0 effectae sunt, agens calenda
 
 Credentialia calendarii ad calendaria quae agenti necessaria sunt limita. Reconnekte aut credentialia rota si status token exspiratum indicat.
 
-## Notificationes SMS TextBee
+## Notificationes SMS TextBee {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 TextBee addit ut praebitorem SMS pro processibus notificationum configuratis. Notificationes SMS cum portis approbationis humanae coniungendae sunt pro nuntiis sensibilibus aut ad usores spectantibus.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 TextBee addit ut praebitorem SMS pro processibus notif
 
 Mitte nuntium probationis tantum ad numerum ab administratore possessum, deinde mores portae approbationis confirma antequam monita schedulata aut ad participes spectantia efficias.
 
-## Vexilla Functionum
+## Vexilla Functionum {#feature-flags}
 
 Etiam in v1.9.0 introducta, tabula **Optiones → Vexilla Functionum** commutatores praebet pro functionibus optionalibus. Unumquodque vexillum aut effectum aut dezactivatum est per totum rete; nulla exceptio per situm hoc tempore est.
 
-### Vexilla Functionum accedere
+### Vexilla Functionum accedere {#accessing-feature-flags}
 
 1. In administratione WordPress, vade ad **Gratis AI Agent → Optiones**.
 2. Preme tabulam **Vexilla Functionum**.
 
-### Vexilla Moderationis Accessus
+### Vexilla Moderationis Accessus {#access-control-flags}
 
 | Signum | Praedefinitum | Descriptio |
 |---|---|---|
@@ -127,7 +127,7 @@ Etiam in v1.9.0 introducta, tabula **Optiones → Vexilla Functionum** commutato
 | **Accessum Subscriber permittere** | Off | Cum effectum est, utentes cum munere `subscriber` interfacie colloquii uti possunt, sed ad facultates solum legendi limitantur (nulla creatio postum aut mutationes configurationum). |
 | **Pro Non-Sociis disable** | Off | Cum statu sodalitatis Ultimate Multisite integratur. Cum effectum est, colloquium occultatur pro sitis quae sodalitatem activam non habent. |
 
-### Signa Notae
+### Signa Notae {#branding-flags}
 
 | Signum | Praedefinitum | Descriptio |
 |---|---|---|
@@ -136,7 +136,7 @@ Etiam in v1.9.0 introducta, tabula **Optiones → Vexilla Functionum** commutato
 | **Electorem Agentis occultare** | Off | Cum effectum est, utentes inter quinque agentes insitos commutare non possunt. Agens praesens fixus est ad id quod ut praedefinitum in Settings → General configuratur. |
 | **Icone Siti uti ut Chat Avatar** | Off | Iconem AI praedefinitam in capite instrumenti colloquii cum icone siti WordPress substituit (sub Appearance → Customize → Site Identity posita). |
 
-### Signa Salutis Automationis
+### Signa Salutis Automationis {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 portas approbationis humanae et tabulas recordationum introducit ad cursus automationis tutiores. Haec moderamina in signis functionum vel in configurationibus automationis provectis apparere possunt, secundum sarcinam institutam.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 portas approbationis humanae et tabulas recordationum 
 | **Instrumenta Calendarii efficere** | Off donec configuratum | Agenti permittit calendaria Google et eventus configuratos legere. |
 | **Notificationes SMS efficere** | Off donec configuratum | Fluxibus laboris approbatis permittit notificationes TextBee SMS mittere postquam credentialia servata sunt. |
 
-### Mutationes Applicare
+### Mutationes Applicare {#applying-changes}
 
 Preme **Save Settings** postquam aliquod signum mutaveris. Mutationes statim effectum habent — nulla purgatio cache aut reactivatio plugin requiritur.

@@ -3,11 +3,11 @@ title: Ýörite geçelge işläp düzmek
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway işläp taýýarlamak
+# Custom Gateway işläp taýýarlamak {#custom-gateway-development}
 
 `Base_Gateway` class-y giňeltmek arkaly custom töleg gateway-lerini döredip bilersiňiz.
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway-i hasaba almak
+## Gateway-i hasaba almak {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Esasy usullar
+## Esasy usullar {#key-methods}
 
 | Method | Maksat |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Pul gaýtarmak haýyşlaryny işlemek |
 | `get_payment_methods()` | Müşderi üçin saklanan töleg usullaryny gaýtarmak |
 
-## Gaýtalanýan agzalyklar üçin täzelenme credential-lary
+## Gaýtalanýan agzalyklar üçin täzelenme credential-lary {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway integrasiýalaryna `auto_renew` saklanmazdan öň gaýtalanýan agzalygyň gaýtadan ulanyp bolýan täzelenme credential-y bardygyny habar bermäge mümkinçilik berýär. `wu_membership_has_renewal_credential` hook-yny ulanyň we şuny gaýtaryň:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Täze gaýtadan ulanyp bolýan credential saklanandan soň, gateway-iňiziň üstünlikli täzeden awtorizasiýa akymynyň bir bölegi hökmünde ýetmeýän-credential belgisini arassalaň.
 
-## Maslahatlar
+## Maslahatlar {#tips}
 
 - Şowsuzlyk ýüze çykanda elmydama `WP_Error` gaýtaryň, şeýdip Ultimate Multisite säwlik görkezilişini işläp biler
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gateway-e mahsus logging üçin `wu_log_add()` ulanyň
 
-## AI connector provider mümkinçilikleri
+## AI connector provider mümkinçilikleri {#ai-connector-provider-capabilities}
 
 AI connector arkaly goldanýan amallary çagyrýan custom integrasiýalar AI Provider for Anthropic Max v1.3.0 bilen girizilen goldanýan OAuth provider toplumyna laýyk gelmelidir:
 

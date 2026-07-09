@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite 애드온
+# Ultimate Multisite 애드온 {#ultimate-multisite-addons}
 
 애드온은 추가 기능과 통합으로 Ultimate Multisite를 확장합니다. 대부분의 애드온은 유료이며 [ultimatemultisite.com](https://ultimatemultisite.com)에서 구매할 수 있습니다.
 
-## 설치
+## 설치 {#installation}
 
 애드온은 두 가지 방법으로 설치할 수 있습니다.
 
 1. **애드온 페이지를 통해** -- WordPress 관리자에서 사이트의 애드온 관리 페이지로 이동합니다
 2. **수동 다운로드** -- [내 Account](https://ultimatemultisite.com/my-account/downloads/)에서 다운로드하고 플러그인 > 새로 추가를 통해 업로드합니다
 
-## 사용 가능한 애드온
+## 사용 가능한 애드온 {#available-addons}
 
 | 애드온 | 설명 |
 |-------|-------------|

@@ -4,13 +4,13 @@ title: Sía - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Sía: wu_contains_element
+# Sía: wu_contains_element {#filter-wucontainselement}
 
 Leyfir forriturum að breyta niðurstöðum upphaflegu leitarinnar.
 
 Þetta er gagnlegt fyrir þriðja aðila smiði og slíkt.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Leyfir forriturum að breyta niðurstöðum upphaflegu leitarinnar.
 | $element | `self` | Núverandi element. |
 | $post | `null\|\WP_Post` | færsla til að athuga. |
 
-### Síðan
+### Síðan {#since}
 
 - 2.0.0
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) í línu 534

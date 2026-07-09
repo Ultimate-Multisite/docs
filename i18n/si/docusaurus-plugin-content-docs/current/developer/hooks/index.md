@@ -3,11 +3,11 @@ title: Hooks යොමුව
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks යොමුව
+# Hooks යොමුව {#hooks-reference}
 
 Ultimate Multisite හි සියලු **ක්‍රියා 59** සහ **පෙරහන් 118** සඳහා ස්වයංක්‍රීයව ජනනය කළ ලේඛන.
 
-## ක්‍රියා
+## ක්‍රියා {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — සත්‍යාපන යළි-යොමු කිරීමට පෙර ක්‍රියාත්මක වේ.
 - [set_auth_cookie](./Actions/set_auth_cookie) — සත්‍යාපන cookie එක සකසීමට කෙලින්ම පෙර ක්‍රියාත්මක වේ.
@@ -70,7 +70,7 @@ Ultimate Multisite හි සියලු **ක්‍රියා 59** සහ **
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — object එකක් database එකට ගබඩා කළ පසු ක්‍රියාත්මක වේ.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin සංවර්ධකයන්ට අගුළු හැරීමේ ක්‍රියාවලියට actions එක් කිරීමට ඉඩ දෙයි.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — සත්‍යාපන cookie කල් ඉකුත් වීමේ කාලපරාසයේ දිග පෙරහන් කරයි.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — සත්‍යාපන redirect scheme එක පෙරහන් කරයි.

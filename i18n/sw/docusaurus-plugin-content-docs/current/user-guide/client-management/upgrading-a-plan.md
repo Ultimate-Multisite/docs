@@ -3,7 +3,7 @@ title: Kuboresha Mpango
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Kuboresha Plan (v2)
+# Kuboresha Plan (v2) {#upgrading-a-plan-v2}
 
 _**DOKEZO MUHIMU: Makala haya yanahusu Ultimate Multisite toleo la 2.x.**_
 
@@ -41,7 +41,7 @@ Baada ya checkout kukamilika, product mpya zitaongezwa kwenye account ya wateja 
 
 ##
 
-## Njia za Kuboresha na Kushusha
+## Njia za Kuboresha na Kushusha {#upgrade-and-downgrade-paths}
 
 Kwenye kila moja ya product zako, utakuwa na kichupo cha **Up & Downgrades**. Chaguo la kwanza kwenye kichupo hicho ni sehemu inayoitwa **Plan Group**.
 

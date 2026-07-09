@@ -3,15 +3,15 @@ title: 'Piwulang 8: Pangenalan Pelanggan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Piwulang 8: Onboarding Pelanggan
+# Piwulang 8: Onboarding Pelanggan {#lesson-8-customer-onboarding}
 
 Nggawe pelanggan ndhaptar kuwi mung separo gaweyan. Yen dheweke mlebu, rumangsa kebacut bingung, banjur ora bali maneh, sampeyan wis kelangan dheweke. Piwulang iki ngrancang pengalaman sing ngowahi signup anyar dadi pelanggan sing aktif lan melu.
 
-## Pungkasan Sadurunge
+## Pungkasan Sadurunge {#where-we-left-off}
 
 FitSite wis kebak nganggo brand kanthi alur checkout sing bisa mlaku. Saiki kita fokus marang apa sing kedadeyan sawisé pemilik studio fitness ngrampungaké signup lan tekan situs anyaré kanggo pisanan.
 
-## Napa Onboarding Penting
+## Napa Onboarding Penting {#why-onboarding-matters}
 
 30 menit pisanan sawisé signup nemtokaké apa pelanggan bakal tetep utawa mandheg. Pemilik studio fitness sing:
 
@@ -21,9 +21,9 @@ FitSite wis kebak nganggo brand kanthi alur checkout sing bisa mlaku. Saiki kita
 
 Cithakan niche sampeyan (Piwulang 4) ngurusi poin pisanan. Piwulang iki ngurusi sing kapindho.
 
-## Pengalaman Mlebu Pisanan
+## Pengalaman Mlebu Pisanan {#the-first-login-experience}
 
-### Widget Dashboard Sugeng Rawuh
+### Widget Dashboard Sugeng Rawuh {#welcome-dashboard-widget}
 
 Gawe widget dashboard kustom sing nyapa pelanggan anyar lan nuntun dheweke liwat persiyapan. Iki kudu katon cetha nalika dheweke pisanan mlebu.
 
@@ -37,7 +37,7 @@ Gawe widget dashboard kustom sing nyapa pelanggan anyar lan nuntun dheweke liwat
 
 Saben langkah nyambung langsung menyang kaca utawa setelan sing cocog. Ora perlu nggoleki ing menu.
 
-### Sederhanakake Dashboard
+### Sederhanakake Dashboard {#simplify-the-dashboard}
 
 Pelanggan anyar ora perlu ndeleng saben item menu WordPress. Coba:
 
@@ -47,29 +47,29 @@ Pelanggan anyar ora perlu ndeleng saben item menu WordPress. Coba:
 
 Tambahan [Plugin & Theme Manager](/addons/plugin-and-theme-manager) bisa mbantu ngontrol apa sing dideleng pelanggan.
 
-## Rerangkèn Email Sugeng Rawuh
+## Rerangkèn Email Sugeng Rawuh {#welcome-email-sequence}
 
 Siji email sugeng rawuh wae ora cukup. Setel rerangkèn sing nuntun pelanggan sajrone minggu pisanané:
 
-### Email 1: Sugeng Rawuh (Langsung sawisé signup)
+### Email 1: Sugeng Rawuh (Langsung sawisé signup) {#email-1-welcome-immediately-after-signup}
 
 - Subjek: "Sugeng rawuh ing FitSite -- situs web studio sampeyan wis aktif"
 - Isi: Tautan mlebu, langkah quick start, tautan menyang sumber bantuan
 - Gaya: Semangat, nyengkuyung, khusus fitness
 
-### Email 2: Kamenangan Cepet (Dina 1)
+### Email 2: Kamenangan Cepet (Dina 1) {#email-2-quick-wins-day-1}
 
 - Subjek: "3 perkara sing kudu ditindakake dhisik ing FitSite sampeyan"
 - Isi: Tambah logo sampeyan, anyari gambar hero homepage, tambah jadwal kelas sampeyan
 - Lebokake screenshot sing nuduhaké persis endi sing kudu diklik
 
-### Email 3: Gawe Dadi Duwekmu (Dina 3)
+### Email 3: Gawe Dadi Duwekmu (Dina 3) {#email-3-make-it-yours-day-3}
 
 - Subjek: "Gawe situs fitness sampeyan luwih mencolok"
 - Isi: Kustomisasi werna, tambah foto pelatih, tulis crita studio sampeyan
 - Tautan menyang conto situs fitness apik ing platform
 
-### Email 4: Go Live (Dina 7)
+### Email 4: Go Live (Dina 7) {#email-4-go-live-day-7}
 
 - Subjek: "Siyap nuduhake FitSite sampeyan marang donya?"
 - Isi: Checklist babagan apa sing kudu diverifikasi sadurungé nuduhake, carané nyambungaké domain kustom (yen nganggo Growth/Pro), tips nuduhake ing sosial
@@ -78,11 +78,11 @@ Siji email sugeng rawuh wae ora cukup. Setel rerangkèn sing nuntun pelanggan sa
 Gunakake [Webhooks](/user-guide/integrations/webhooks) utawa [Zapier](/user-guide/integrations/zapier) kanggo micu email-email iki liwat platform marketing email sampeyan. Iki menehi sampeyan kontrol luwih gedhé marang wektu pangiriman lan ngidini sampeyan nglacak engagement.
 :::
 
-## Sumber Bantuan
+## Sumber Bantuan {#help-resources}
 
 Gawe konten bantuan khusus niche sing njawab pitakonan sing pancèn ditakokaké pemilik studio fitness:
 
-### Artikel Knowledge Base
+### Artikel Knowledge Base {#knowledge-base-articles}
 
 - "Carané nganyari jadwal kelas sampeyan"
 - "Nambah lan nyunting profil pelatih"
@@ -92,7 +92,7 @@ Gawe konten bantuan khusus niche sing njawab pitakonan sing pancèn ditakokaké 
 
 Tulis iki kanggo pangguna non-teknis. Gunakake screenshot. Aja nganggo jargon WordPress.
 
-### Video Pandhuan
+### Video Pandhuan {#video-walkthroughs}
 
 Rekaman layar cekak (2-3 menit) sing nuduhaké:
 
@@ -103,7 +103,7 @@ Rekaman layar cekak (2-3 menit) sing nuduhaké:
 
 Iki ora kudu dadi produksi sing mulus banget. Sing penting cetha, migunani, lan khusus niche.
 
-## Kaca Account
+## Kaca Account {#the-account-page}
 
 Ultimate Multisite kalebu [Account Page](/user-guide/client-management/account-page) sing diadhepake marang pelanggan, ing ngendi pelanggan ngatur subscription. Kustomisasi iki kanggo:
 
@@ -112,7 +112,7 @@ Ultimate Multisite kalebu [Account Page](/user-guide/client-management/account-p
 - Nyedhiyakake riwayat tagihan lan undhuhan invoice
 - Nyambung menyang sumber bantuan
 
-## Ngukur Kasuksesan Onboarding
+## Ngukur Kasuksesan Onboarding {#measuring-onboarding-success}
 
 Lacak indikator iki kanggo ngerti apa onboarding sampeyan bisa mlaku:
 
@@ -121,7 +121,7 @@ Lacak indikator iki kanggo ngerti apa onboarding sampeyan bisa mlaku:
 - **Tiket dhukungan saka pelanggan anyar**: Volume dhuwur tegese onboarding sampeyan isih ana celah
 - **Konversi trial-dadi-bayar**: Yen sampeyan nawakaké trial, pira persèn sing konversi?
 
-## Jaringan FitSite Nganti Saiki
+## Jaringan FitSite Nganti Saiki {#the-fitsite-network-so-far}
 
 ```
 Jaringan FitSite
@@ -142,7 +142,7 @@ Jaringan FitSite
 └── Siyap kanggo strategi rega (piwulang sabanjuré)
 ```
 
-## Sing Kita Gawe Ing Piwulang Iki
+## Sing Kita Gawe Ing Piwulang Iki {#what-we-built-this-lesson}
 
 - **Pengalaman mlebu pisanan sing dipandu** nganggo widget Quick Start
 - **Dashboard sing disederhanakake** fokus ing tugas manajemen situs fitness

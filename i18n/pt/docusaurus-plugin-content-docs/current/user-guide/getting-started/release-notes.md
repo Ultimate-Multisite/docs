@@ -3,9 +3,9 @@ title: Notas de Lançamento
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Notas de Lançamento
+# Notas de Lançamento {#release-notes}
 
-## Versão 2.13.0 — Lançada em 05/06/2026
+## Versão 2.13.0 — Lançada em 05/06/2026 {#version-2130--released-on-2026-06-05}
 
 Novo: Adicionamos suporte a inquilinos soberanos (sovereign-tenant) para fluxos de conta do cliente, checkout, faturamento, site, fatura, troca de templates e mapeamento de domínio, permitindo que as redes de inquilinos direcionem os clientes de volta ao site principal para ações gerenciadas.
 Novo: Adicionamos verificações de credenciais de renovação para assinaturas recorrentes, para que os gateways possam desativar a renovação automática quando estiver faltando um acordo de faturamento salvo, assinatura ou token do vault.
@@ -19,7 +19,7 @@ Correção: E-mails de broadcast agora mantêm os destinatários privados enquan
 Correção: Casos extremos em renovações de membros, exibição de expiração e coleta de pagamentos agora evitam expirações imediatas, travamentos ou pagamentos obrigatórios perdidos.
 Melhoria: A compatibilidade com o WordPress é testada até a versão 7.0, os ativos de produção Vue são reconstruídos a partir das fontes npm, e a cobertura end-to-end do Cypress agora executa mais fluxos de checkout, configuração, SSO e gateway.
 
-## Versão 2.12.0 — Lançada em 15/05/2026
+## Versão 2.12.0 — Lançada em 15/05/2026 {#version-2120--released-on-2026-05-15}
 
 - Novo: Adicionado Hostinger (hPanel) como provedor de hospedagem suportado com integração de mapeamento de domínio
 - Novo: O Site Exporter agora lida com pacotes de importação de rede para uma restauração de site em toda a rede simplificada
@@ -31,7 +31,7 @@ Melhoria: A compatibilidade com o WordPress é testada até a versão 7.0, os at
 - Correção: O CLI do Site Exporter agora preserva a seleção correta do site da rede padrão
 - Melhoria: Removido o `wp-cli` empacotado do pacote do plugin, reduzindo o tamanho do plugin
 
-## Versão 2.11.0 — Lançada em 11/05/2026
+## Versão 2.11.0 — Lançada em 11/05/2026 {#version-2110--released-on-2026-05-11}
 
 - Novo: As exportações de site agora empacotam um `index.php` que se auto-inicia, para que o ZIP possa ser instalado em um host novo sem a necessidade de instalar um plugin separado
 - Novo: A exportação de rede permite que os administradores exportem todos os subsites em um único arquivo da página de administração do Site Export
@@ -39,7 +39,7 @@ Melhoria: A compatibilidade com o WordPress é testada até a versão 7.0, os at
 - Novo: O editor do formulário de checkout alerta quando um produto é adicionado sem um campo obrigatório configurado
 - Novo: A aba de configurações de Importação/Exportação agora descreve claramente seu escopo e fornece um link direto para a ferramenta Site Export
 
-## Versão 2.10.0 — Lançada em 05/05/2026
+## Versão 2.10.0 — Lançada em 05/05/2026 {#version-2100--released-on-2026-05-05}
 
 - Novo: Assistente de configuração guiado do PayPal para entrada manual de credenciais com *flag* OAuth para configuração de gateway sem problemas.
 - Novo: Painel de troca de template redesenhado com o cartão current-template, grade persistente e botão **Resetar template atual**.
@@ -52,7 +52,7 @@ Melhoria: A compatibilidade com o WordPress é testada até a versão 7.0, os at
 - Correção: O caminho SSO filtrado é respeitado em todos os fluxos de login.
 - Correção: Opções de identidade de site vazio preservadas ao salvar.
 
-## Versão 2.9.0 — Lançada em 30/04/2026
+## Versão 2.9.0 — Lançada em 30/04/2026 {#version-290--released-on-2026-04-30}
 
 - Novo: Exportação e importação de site único adicionados na seção **Ferramentas > Exportar e Importar**.
 - Correção: Arquivos ZIP de exportação agora são servidos através de um endpoint de download autenticado.
@@ -66,7 +66,7 @@ Melhoria: A compatibilidade com o WordPress é testada até a versão 7.0, os at
 - Correção: IDs de Tour normalizados para underscores nas chaves de configurações do usuário.
 - Melhoria: ZipArchive agora é usado em vez de Alchemy/Zippy para melhor compatibilidade.
 
-## Versão 2.8.0 — Lançada em 29/04/2026
+## Versão 2.8.0 — Lançada em 29/04/2026 {#version-280--released-on-2026-04-29}
 
 - Novo: Adicionado o seletor Jumper nas configurações da interface de Opções.
 - Novo: Coluna de status adicionada à tabela de formulários de checkout.

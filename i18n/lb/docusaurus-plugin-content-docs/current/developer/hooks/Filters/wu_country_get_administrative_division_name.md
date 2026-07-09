@@ -4,11 +4,11 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Gëtt de schéinen Numm vun den administrativen Ënnerdeelunge vum Land zeréck.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Gëtt de schéinen Numm vun den administrativen Ënnerdeelunge vum Land zeréck.
 | $ucwords | `bool` | ob mir d'Wierder mat Groussbuschtawen ufänke loossen. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instanz vun der aktueller Klass. |
 
-### Zanter
+### Zanter {#since}
 
 - 2.0.11
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) op Linn 250
 
 
-## Gëtt zeréck
+## Gëtt zeréck {#returns}
 Den geännerten Numm vun der Ënnerdeelung.

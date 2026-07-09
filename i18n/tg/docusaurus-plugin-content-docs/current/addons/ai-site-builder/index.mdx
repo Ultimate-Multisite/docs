@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Созандаи сайт бо зеҳни сунъӣ
+# Созандаи сайт бо зеҳни сунъӣ {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Талабот
+## Талабот {#requirements}
 
 - WordPress 5.3 ё болотар
 - PHP 7.4 ё болотар
 - Плагини Multisite Ultimate (фаъол)
 
-## Насбкунӣ
+## Насбкунӣ {#installation}
 
 1. Файлҳои замимаро ба директорияи `/wp-content/plugins/`-и худ боргузорӣ кунед
 2. Плагинро тавассути менюи 'Plugins' дар WordPress фаъол кунед
 3. Танзимоти замимаро дар маъмурияти шабака танзим кунед
 
-## Таҳия
+## Таҳия {#development}
 
-### Танзим
+### Танзим {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Сохтори лоиҳа
+### Сохтори лоиҳа {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Қоидаҳои навсозии код
 ```
 
-### Санҷиш
+### Санҷиш {#testing}
 
 Ин замима чорчӯбаи фарогири санҷишро дар бар мегирад:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Фарогирии санҷиш**: Барои пайгирии фарогирии код танзим шудааст
 - **Санҷиши multisite**: Санҷишҳо дар муҳити multisite иҷро мешаванд
 
-### Стандартҳои код
+### Стандартҳои код {#code-standards}
 
 - **Стандартҳои коднависии WordPress**: Тавассути PHPCS маҷбурӣ карда мешаванд
 - **Мутобиқат бо PHP 7.4+**: Хусусиятҳои муосири PHP дастгирӣ мешаванд
 - **Таҳлили статикӣ**: Ҳамгироии PHPStan барои санҷиши навъҳо
 - **Навсозии код**: Қоидаҳои Rector барои навсозии PHP
 
-### Системаи сохтан
+### Системаи сохтан {#build-system}
 
 - **Коркарди дороиҳо**: Хурдсозӣ барои файлҳои CSS/JS
 - **Тарҷума**: Тавлиди файли POT
 - **Бастабандӣ**: Эҷоди бойгонӣ барои паҳнкунӣ
 - **Ҳолати таҳия**: Дороиҳои хурднашуда барои ислоҳи хатоҳо
 
-## Танзимот
+## Танзимот {#configuration}
 
 Ин замима имконоти гуногуни танзимотро дастгирӣ мекунад, ки тавассути интерфейси маъмурияти шабака дастрасанд.
 
-## Hooks ва Filters
+## Hooks ва Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Пас аз оғозёбии замима иҷро мешавад
 - `ultimate-multisite-ai-site-builder_loaded` - Пас аз бор шудани ҳамаи файлҳои замима иҷро мешавад
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Тағйир додани танзимоти замима
 - `ultimate-multisite-ai-site-builder_enabled` - Бознависии ҳолати фаъол/ғайрифаъол будани замима
 
-## Иҷозатнома
+## Иҷозатнома {#license}
 
 Ин замима таҳти GPL v3 ё версияи баъдтар иҷозатнома гирифтааст.
 
-## Дастгирӣ
+## Дастгирӣ {#support}
 
 Барои дастгирӣ ва ҳуҷҷатҳо, ба [MultisiteUltimate.com](https://multisiteultimate.com) гузаред
-## Сабти тағйирот
+## Сабти тағйирот {#changelog}
 
 - Версияи 1.0.1 (2025-09-28): тағйири номи пешванд ба ultimate-multisite; навсозии домени матн; баланд кардани версия.
 

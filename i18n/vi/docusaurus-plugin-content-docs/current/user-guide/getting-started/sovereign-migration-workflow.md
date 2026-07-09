@@ -3,11 +3,11 @@ title: Quy trình di chuyển chủ quyền
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Quy trình di chuyển chủ quyền (Sovereign Migration Workflow)
+# Quy trình di chuyển chủ quyền (Sovereign Migration Workflow) {#sovereign-migration-workflow}
 
 Ultimate Multisite phiên bản 1.2.0 đã thêm các cổng xác minh di chuyển để di chuyển một trang con tiêu chuẩn sang cơ sở hạ tầng khách thuê độc lập (sovereign tenant).
 
-## Trước khi bắt đầu
+## Trước khi bắt đầu {#before-you-start}
 
 Hãy chắc chắn rằng bạn đã:
 
@@ -18,7 +18,7 @@ Hãy chắc chắn rằng bạn đã:
 
 Truy cập để chạy các lệnh WP-CLI cho toàn bộ mạng.
 
-## Quy trình làm việc được đề xuất
+## Quy trình làm việc được đề xuất {#recommended-workflow}
 
 1. Chuẩn bị cơ sở dữ liệu và hệ thống tệp (filesystem) cho tenant đích.
 2. Đăng ký hoặc cập nhật cài đặt cô lập tenant.
@@ -30,7 +30,7 @@ Truy cập để chạy các lệnh WP-CLI cho toàn bộ mạng.
 7. Truy cập trang web thuê (tenant) bằng SSO.
 8. Chỉ chuyển đổi DNS hoặc định tuyến sau khi quá trình xác minh thành công.
 
-## Các cổng xác minh
+## Các cổng xác minh {#verification-gates}
 
 Quy trình xác minh kiểm tra việc di chuyển từ nhiều góc độ khác nhau:
 
@@ -43,6 +43,6 @@ Các đường dẫn dữ liệu phía mạng cũ không còn cần thiết cho 
 
 Hãy coi các lỗi xác minh là những trở ngại trước khi ra mắt sản phẩm. Hãy sửa lỗi cơ sở dữ liệu, người dùng, hàng đợi hoặc định tuyến đã được báo cáo, sau đó chạy lại quá trình xác minh trước khi cho khách thuê tiếp xúc với khách hàng.
 
-## Lần ghé thăm sản xuất đầu tiên
+## Lần ghé thăm sản xuất đầu tiên {#first-production-visit}
 
 Sau khi xác minh thành công, hãy sử dụng **Visit (SSO)** từ màn hình quản trị trang web để truy cập lần đầu của admin. Thao tác này sẽ xác nhận việc định tuyến tenant, xử lý token SSO, ghim nguồn gốc (origin pinning) và cấp quyền người dùng phía tenant chỉ trong một bước được kiểm soát.

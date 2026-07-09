@@ -3,28 +3,28 @@ title: REST API ئومۇمىي چۈشەنچىسى
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API پايدىلانمىسى
+# REST API پايدىلانمىسى {#rest-api-reference}
 
-## ئاساسىي سەپلىمە
+## ئاساسىي سەپلىمە {#base-configuration}
 
 **ئاساسىي URL:** `{site_url}/wp-json/wu/v2/`
 **دەلىللەش:** API ئاچقۇچى ۋە مەخپىي كود (HTTP Basic Auth ياكى URL پارامېتىرلىرى)
 
-## دەلىللەش
+## دەلىللەش {#authentication}
 
-### API نى قوزغىتىش
+### API نى قوزغىتىش {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API كىنىشكىلىرىنى ئېلىش
+### API كىنىشكىلىرىنى ئېلىش {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### دەلىللەش ئۇسۇللىرى
+### دەلىللەش ئۇسۇللىرى {#authentication-methods}
 
 **HTTP Basic Auth (تەۋسىيە قىلىنىدۇ):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## يادرولۇق ئاخىرقى نۇقتىلار
+## يادرولۇق ئاخىرقى نۇقتىلار {#core-endpoints}
 
-### 1. خېرىدارلار API
+### 1. خېرىدارلار API {#1-customers-api}
 
 **ئاساسىي يول:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. تور بېكەتلەر API
+### 2. تور بېكەتلەر API {#2-sites-api}
 
 **ئاساسىي يول:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. ئەزالىقلار API
+### 3. ئەزالىقلار API {#3-memberships-api}
 
 **ئاساسىي يول:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. مەھسۇلاتلار API
+### 4. مەھسۇلاتلار API {#4-products-api}
 
 **ئاساسىي يول:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. چىقىملار API
+### 5. چىقىملار API {#5-payments-api}
 
 **ئاساسىي يول:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. دائىرە ناملىرى API
+### 6. دائىرە ناملىرى API {#6-domains-api}
 
 **ئاساسىي يول:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## تىزىملىتىش ئاخىرقى نۇقتىسى
+## تىزىملىتىش ئاخىرقى نۇقتىسى {#registration-endpoint}
 
 `/register` ئاخىرقى نۇقتىسى تولۇق چىقىم قىلىش/تىزىملىتىش ئېقىمىنى تەمىنلەيدۇ:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## مۇستەقىل ئىجارىدار ئاخىرقى نۇقتىلىرى
+## مۇستەقىل ئىجارىدار ئاخىرقى نۇقتىلىرى {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ئايرىم ئىجارىدارلارنى تەمىنلەيدىغان، تەكشۈرىدىغان ياكى دەلىللەيدىغان بىرلەشتۈرۈشلەر ئۈچۈن مۇستەقىل ئىجارىدار REST قاپلىمىسىنى قوشىدۇ.
 
@@ -242,7 +242,7 @@ bootstrap ئاخىرقى نۇقتىسىنى ئىشلىتىپ ئىجارىدار 
 
 `ready: false` نى ئېلان قىلىشتىن بۇرۇنقى توسالغۇ دەپ قاراڭ. دەلىللەش تەپسىلاتلىرىنى تەكشۈرۈڭ، سانلىق مەلۇمات ئامبىرى host باغلىنىشى، قاتار، ئىشلەتكۈچى تەمىنلەش ياكى يوللاش مەسىلىسىنى تۈزىتىڭ، ئاندىن دەلىللەشنى قايتا سىناڭ.
 
-## خاتالىق جاۋابلىرى
+## خاتالىق جاۋابلىرى {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ bootstrap ئاخىرقى نۇقتىسىنى ئىشلىتىپ ئىجارىدار 
 }
 ```
 
-## بەتلەش ۋە سۈزۈش
+## بەتلەش ۋە سۈزۈش {#pagination-and-filtering}
 
 **سۈرۈشتۈرۈش پارامېتىرلىرى:**
 ```http

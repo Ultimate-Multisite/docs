@@ -3,7 +3,7 @@ title: Configuración de PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configurar o Gateway PayPal (v2)
+# Configurar o Gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere à versão 2.x do Ultimate Multisite.**_
 
@@ -13,13 +13,13 @@ Tal como o Stripe, o PayPal é muito usado para pagamentos online, especialmente
 
 Nota que precisas ter uma **conta Business PayPal** para obter as credenciais da API necessárias para esta integração.
 
-## Ativar o PayPal na tua rede
+## Ativar o PayPal na tua rede {#enabling-paypal-on-your-network}
 
 Para ativar o PayPal como um método de pagamento disponível na tua rede, vai a **Ultimate Multisite > Settings > Payments** e marca a caixa ao lado do PayPal.
 
 ![Ativar o PayPal nos gateways de pagamento ativos](/img/config/settings-payment-gateways.png)
 
-## Usar o assistente de configuração guiado
+## Usar o assistente de configuração guiado {#using-the-guided-setup-wizard}
 
 O Ultimate Multisite 2.10.0 adiciona um assistente de configuração guiado para o PayPal nas definições do gateway de pagamento. Depois de ativares o PayPal, usa o assistente em **Ultimate Multisite > Settings > Payments** para escolher como queres ligar o gateway e confirmar quais as credenciais que ainda são necessárias antes de guardar.
 
@@ -30,7 +30,7 @@ O assistente suporta dois caminhos de configuração:
 
 Si no ves la opción OAuth en el asistente, completa el flujo de ingreso manual de credenciales a continuación. La pasarela funciona con las mismas credenciales de API de PayPal Business que en las versiones anteriores de Ultimate Multisite 2.x.
 
-## Obtener las credenciales de la API de PayPal
+## Obtener las credenciales de la API de PayPal {#getting-the-paypal-api-credentials}
 
 Una vez que hayas habilitado PayPal como pasarela de pago, necesitarás rellenar los campos para el **Nombre de usuario de la API** (PayPal API Username), la **Contraseña de la API** (PayPal API Password) y la **Firma de la API** (PayPal API Signature).
 

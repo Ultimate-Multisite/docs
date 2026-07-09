@@ -3,7 +3,7 @@ title: یەکگرتووکردنی Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integration of Ultimate Multisite with Zapier
+# Integration of Ultimate Multisite with Zapier {#integrating-ultimate-multisite-with-zapier}
 
 In one of our articles, we discussed [Webhooks](webhooks.md) and how they can be used to integrate with third-party applications.
 
@@ -15,7 +15,7 @@ You can create **Triggers** that will be set off when events happen on your netw
 
 This is possible because **Ultimate Multisite Zapier's triggers** and actions are powered by the [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## How to start
+## How to start {#how-to-start}
 
 First, search for Ultimate Multisite in the Zapier app list. Alternatively, you can click [this link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Li felên URL, URL-a gelek netwirka xwe bipêjin, ku piştî protokolê (HTTP an
 
 Ji berê, ji bo pêşve xistin **Yes, Continue** (Ew, davam bike) butonê bi klik bibîne. Hever tişt dikare bi rastî bibe, hûn bi hesabê nû ya xwe yê hatine pênkarî bi destpêkê dîtin! Ji bo nirxinkirina nû ya trigger, ji bo **Continue** (Davam bike) bi klik bibîne.
 
-## Çawa ji bo nirxinkirina nûyê Trigger (Trigger) kirin
+## Çawa ji bo nirxinkirina nûyê Trigger (Trigger) kirin {#how-to-create-a-new-trigger}
 
 Niha ku hesabê we hatine pênkarî ye, hûn dikarin vê gelekî ji aliyên ku hewce ne li berînê binên. Ji bo ev dersê, em **payment_received** event-ê (gelekî pêwînî) bi seçîna wê bibînin.
 
@@ -67,7 +67,7 @@ Li vê etapê de, Zapier têkîna wê dike ku tu çawa karê we dikare **payload
 
 لە ڕێگەی ئەم ڕێنماییەدا، تاقیکردنەوەکە بە سەرکەوتوویی تەواو بووە و زانیاریی نموونەی پەیامەکە دەگەڕێتەوە. ئەم زانیارییە نموونەییە یارمەتی ئێمە دەدات لە کاتی دروستکردنی اکشنەکاندا. تریگرەکەت ئێستا دروستکراوە و ئامادەیە بۆ پەیوەستکردن بە ئەپڵیکاتەکانی دیکە.
 
-## چۆن اکشن (Action) دروست بکەین
+## چۆن اکشن (Action) دروست بکەین {#how-to-create-actions}
 
 اکشنەکان زانیاری لە تریگرەکانی دیکە بەکاری دەهێنن بۆ دروستکردنی نوێی پۆلێسداکەت (network).
 
@@ -79,7 +79,7 @@ Li vê etapê de, Zapier têkîna wê dike ku tu çawa karê we dikare **payload
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### ڕێکخستنی اکشنەکە (Setting up the Action)
+### ڕێکخستنی اکشنەکە (Setting up the Action) {#setting-up-the-action}
 
 ئەمە **هەنگاوی سەرەکیی اکشنەکە**یە و لێرەدا شتەکان کەمێک جیاوازن. یەکەم زانیارییەک کە دەبنە چاودێری، **Item** (بۆشکن). Item بریتییە لە **مۆدێلی زانیاریی تۆی تۆڕەکە** وەک **Customers, Payments, Sites, Emails** و دیکە.
 

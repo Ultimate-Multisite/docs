@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: pagamento con GoCardless
 
 Permite que os teus clientes paguen as subscricións e produtos de Multisite Ultimate con débito directo usando GoCardless!
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube 'ultimate-multisite-gocardless' ao directorio '/wp-content/plugins/'
 2. Activa o complemento a través do menú 'Complementos' en WordPress
 3. Sigue o asistente paso a paso para configurar o complemento
 
-## Guía de uso
+## Guía de uso {#usage-guide}
 
 _GoCardless_ é unha pasarela de pagamento dispoñible en **Europa e no Reino Unido** que permite pagamentos por **débito directo**.
 
@@ -29,7 +29,7 @@ Este titorial explicará como configurar _GoCardless_ para comezar a aceptar pag
 
 _**Nota: GoCardless só funciona coas seguintes moedas:**_ **EUR, GBP, AUD, SEK e DKK.**
 
-## Instalación do complemento
+## Instalación do complemento {#installing-the-add-on}
 
 Antes de nada, terás que instalar o complemento GoCardless para Ultimate Multisite. Podes facelo indo a **Ultimate Multisite > Settings > Add-ons (na barra lateral)**. E escollendo o complemento GoCardless nesa lista.
 
@@ -37,7 +37,7 @@ Despois de instalar e activar o complemento, vai a **Ultimate Multisite > Settin
 
 ![Configuración da pasarela de pagamento](/img/config/settings-payment-gateways.png)
 
-## Obter un token de acceso
+## Obter un token de acceso {#getting-an-access-token}
 
 Crea unha conta en _GoCardless_ (ou no sandbox de _GoCardless_, se queres **probalo primeiro** , o cal é recomendable). Despois, tras iniciar sesión, navega ata o elemento de menú **Developers**.
 
@@ -61,7 +61,7 @@ Asegúrate de colocalo no campo correcto. Se é un **token de produció** **n** 
 
 Iso é todo para o primeiro paso. A continuación, tes que configurar un listener de webhook.
 
-## Configurar o listener de webhook
+## Configurar o listener de webhook {#setting-up-the-webhook-listener}
 
 Ao traballar con subscricións, Ultimate Multisite necesita saber dos cambios no estado da subscrición, dos novos pagamentos realizados e doutras cousas semellantes.
 

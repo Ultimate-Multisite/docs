@@ -3,13 +3,13 @@ title: Sende e-poster og utsendelser
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Sende e-poster og kringkastinger (v2)
+# Sende e-poster og kringkastinger (v2) {#sending-emails-and-broadcasts-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
 Ultimate Multisite leveres med en funksjon som lar deg kommunisere med kundene dine ved å sende en e-post til en målrettet bruker eller en gruppe brukere, samt sende varsler på admin Dashboard for å kringkaste kunngjøringer
 
-## Legg til adminvarsler på kundenes Dashboard med kringkastinger
+## Legg til adminvarsler på kundenes Dashboard med kringkastinger {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ved å bruke kringkastingsfunksjonen i Ultimate Multisite kan du legge til **adminvarsler** på brukerens admin Dashboard for undernettstedet.
 
@@ -51,7 +51,7 @@ Etter at du har opprettet meldingen, kan du trykke på **Send**-knappen.
 
 Og det var det. Adminvarselet skal umiddelbart vises på brukerens Dashboard.
 
-## Send e-poster til kundene dine
+## Send e-poster til kundene dine {#send-emails-to-your-customers}
 
 Ved å bruke kringkastingsfunksjonen i Ultimate Multisite kan du sende en e-post til brukerne dine. Du har mulighet til å sende e-posten bare til bestemte brukere eller målrette mot en bestemt brukergruppe basert på produktet eller planen de abonnerer på.
 
@@ -81,11 +81,11 @@ Etter at du har opprettet meldingen, kan du trykke på **Send**-knappen.
 
 Og så enkelt er det å sende en e-post til sluttbrukerne dine ved hjelp av kringkastingsfunksjonen.
 
-## System-e-poster
+## System-e-poster {#system-emails}
 
 System-e-poster i Ultimate Multisite er de **automatiske varslene** som sendes av systemet etter bestemte handlinger som registrering, betaling, domenetilknytning osv. Disse e-postene kan redigeres eller endres fra Ultimate Multisite-innstillingene. Det følger også med en funksjon som lar deg tilbakestille og importere eksisterende innstillinger fra en annen Ultimate Multisite-installasjon.
 
-### Tilbakestilling og import
+### Tilbakestilling og import {#resetting--importing}
 
 Nye Ultimate Multisite-versjoner, samt tillegg, kan og vil registrere nye e-poster fra tid til annen.
 
@@ -93,7 +93,7 @@ For å unngå konflikter og andre problemer **legger vi ikke til de nye e-postma
 
 Superadministratorer og agenter kan imidlertid importere disse nylig registrerte e-postene via importverktøyet. Denne prosessen oppretter en ny system-e-post med innholdet og konfigurasjonen fra den nye e-postmalen, slik at superadministratoren kan gjøre eventuelle endringer de ønsker, eller beholde dem som de er.
 
-#### Slik importerer du system-e-poster
+#### Slik importerer du system-e-poster {#how-to-import-system-emails}
 
 Gå til Ultimate Multisite-innstillingssiden din og gå til **E-poster**-fanen.
 
@@ -111,7 +111,7 @@ Deretter kan du slå på alternativene for Importer e-poster for å se hvilke sy
 
 <!-- Skjermbilde utilgjengelig: Reset and Import-modal med Import Emails-alternativene utvidet -->
 
-#### Tilbakestilling av system-e-poster
+#### Tilbakestilling av system-e-poster {#reseting-system-emails}
 
 Andre ganger vil du innse at endringene du gjorde i en bestemt e-postmal, ikke lenger fungerer for deg, og du vil tilbakestille den til **standardtilstanden**.
 

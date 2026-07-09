@@ -4,11 +4,11 @@ title: فلتەر - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# پاڵێوەر: auth_cookie_expiration
+# پاڵێوەر: auth_cookie_expiration {#filter-authcookieexpiration}
 
 ماوەی کۆتاییهاتنی cookieی پشتڕاستکردنەوە دیاری دەکات.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 | $user_id | `int` | ناسنامەی بەکارهێنەر. |
 | $remember | `bool` | ئایا چوونەژوورەوەی بەکارهێنەر لەبیر بکرێت. بنەڕەت false. |
 
-### لەو وەشانەوە
+### لەو وەشانەوە {#since}
 
 - 2.8.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 لە [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) لە هێڵی 52 پێناسە کراوە.

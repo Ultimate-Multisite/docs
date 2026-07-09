@@ -4,11 +4,11 @@ title: Филтер - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Филтер: wu_apc_get_meta_content_default_content
+# Филтер: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Омогућава програмерима да филтрирају подразумеване вредности
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | Тип meta података који треба да се преузму. |
 | $meta_key | `string` | Назив meta поља. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 1.4.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) у реду 68
 
 
-## Враћа
+## Враћа {#returns}
 Нову подразумевану вредност.

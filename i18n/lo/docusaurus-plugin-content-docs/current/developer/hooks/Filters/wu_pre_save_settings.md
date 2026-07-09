@@ -4,11 +4,11 @@ title: ຕົວກອງ - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# ຕົວກັ່ນຕອງ: wu_pre_save_settings
+# ຕົວກັ່ນຕອງ: wu_pre_save_settings {#filter-wupresavesettings}
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາກັ່ນຕອງການຕັ້ງຄ່າກ່ອນບັນທຶກໂດຍ Ultimate Multisite.
 
-## ພາລາມິເຕີ
+## ພາລາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 | $settings_to_save | `array` | ການຕັ້ງຄ່າໃໝ່ທີ່ຈະເພີ່ມ. |
 | $saved_settings | `array` | ການຕັ້ງຄ່າປັດຈຸບັນທີ່ບັນທຶກໄວ້. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.18
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) ທີ່ແຖວ 296

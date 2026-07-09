@@ -3,11 +3,11 @@ title: ترقي يافته ڪوڊ جا مثال
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ترقي يافته Code مثال
+# ترقي يافته Code مثال {#advanced-code-examples}
 
 اهي مثال Ultimate Multisite سان ترقي يافته انضمام جا نمونا ڏيکارين ٿا.
 
-## متحرڪ قيمت جو Engine
+## متحرڪ قيمت جو Engine {#dynamic-pricing-engine}
 
 قاعدن تي ٻڌل قيمت جو engine، جيڪو مقدار، وفاداري، ۽ موسمي رعايتون لاڳو ڪري ٿو:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## ترقي يافته سائيٽ Provisioning
+## ترقي يافته سائيٽ Provisioning {#advanced-site-provisioning}
 
 پلان جي خاصيتن جي بنياد تي نيون سائيٽون پاڻمرادو plugins، SSL، CDN، backups، ۽ نگراني سان configure ڪريو:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## ڪسٽم حدن جو نظام
+## ڪسٽم حدن جو نظام {#custom-limitations-system}
 
 استعمال جي وارننگن سان وسيلا حدون track ۽ enforce ڪريو:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB ائٽامڪ ڪائونٽر `increment_item()` سان
+## BerlinDB ائٽامڪ ڪائونٽر `increment_item()` سان {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1، BerlinDB `Query` ڪلاس ۾ `increment_item()` طريقو شامل ڪيو. ان کي عددي ڪالمن تي محفوظ، ائٽامڪ واڌارا ڪرڻ لاءِ استعمال ڪريو، read-modify-write ريسز کان سواءِ — ڪائونٽرن، استعمال جي ڪوٽائن، ۽ rate-limiting چيڪن لاءِ ڪارائتو، جيڪي هم وقت درخواستن هيٺ هلن ٿا.
 
-### طريقي جي صحيح صورت
+### طريقي جي صحيح صورت {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1، BerlinDB `Query` ڪلاس ۾ `increment_item()` طر
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### بنيادي استعمال
+### بنيادي استعمال {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### هر ميمبرشپ لاءِ API استعمال ٽريڪ ڪرڻ
+### هر ميمبرشپ لاءِ API استعمال ٽريڪ ڪرڻ {#tracking-api-usage-per-membership}
 
 هر ميمبرشپ API rate limits لاڳو ڪرڻ لاءِ هڪ عملي نمونو:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### `update_item()` بدران `increment_item()` ڇو
+### `update_item()` بدران `increment_item()` ڇو {#why-incrementitem-instead-of-updateitem}
 
 هڪ سادو read-modify-write طريقو هم وقت درخواستن هيٺ غير محفوظ آهي:
 

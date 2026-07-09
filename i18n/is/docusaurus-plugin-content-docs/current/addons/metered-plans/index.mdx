@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Mældar áskriftarleiðir
+# Mældar áskriftarleiðir {#metered-plans}
 
 Ultimate Multisite: Mældar áskriftarleiðir-viðbótin umbreytir því hvernig þú rukkar viðskiptavini þína með því að innleiða sveigjanlega mælda innheimtu. Í stað stífra hámarksmarka sem loka á notendur þegar farið er yfir þau geturðu virkjað umframgjöld sem rukka viðskiptavini sjálfkrafa fyrir viðbótarnotkun.
 
-## Helstu eiginleikar
+## Helstu eiginleikar {#key-features}
 
 * **Mæld innheimta**: Rukkaðu viðskiptavini út frá raunverulegri notkun í stað fastra þrepa
 * **Umsjón með umframnotkun**: Rukkaðu sjálfkrafa fyrir notkun sem fer yfir mörk áskriftarleiðar
@@ -21,14 +21,14 @@ Ultimate Multisite: Mældar áskriftarleiðir-viðbótin umbreytir því hvernig
 * **Sjálfvirk reikningagerð**: Búðu sjálfkrafa til reikninga þegar farið er yfir notkunarþröskulda
 * **Notkunarskýrslur**: Ítarleg notkunargreining og skýrslugerð fyrir viðskiptavini og stjórnendur
 
-## Hentar fullkomlega fyrir
+## Hentar fullkomlega fyrir {#perfect-for}
 
 * **Hýsingaraðila**: Bjóddu skalanlegar áskriftarleiðir sem vaxa með þörfum viðskiptavina
 * **SaaS-kerfi**: Rukkaðu út frá raunverulegri auðlindanotkun
 * **Stofunet**: Sveigjanleg verðlíkön fyrir verkefni viðskiptavina
 * **Endursöluhýsingu**: Gerðu samstarfsaðilum kleift að bjóða verðlagningu byggða á notkun
 
-## Hvernig þetta virkar
+## Hvernig þetta virkar {#how-it-works}
 
 1. Stilltu mældar auðlindir (diskpláss, bandbreidd, fjölda vefja o.s.frv.)
 2. Stilltu grunnmörk áskriftarleiðar og verð fyrir umframnotkun
@@ -37,13 +37,13 @@ Ultimate Multisite: Mældar áskriftarleiðir-viðbótin umbreytir því hvernig
 5. Reikningar eru búnir til sjálfkrafa út frá innheimtutímabili
 6. Viðskiptavinir geta séð notkun sína og væntanleg gjöld í rauntíma
 
-## AI-token innheimta
+## AI-token innheimta {#ai-token-billing}
 
 Útgáfa 1.1.0 bætir við AI-token innheimtu fyrir net sem bjóða AI-eiginleika í gegnum WordPress AI Client SDK. Mældar áskriftarleiðir hlusta eftir loknum AI-myndunarbeiðnum, skrá fjölda input- og output-token fyrir núverandi undirvef og umbreyta þessum token í reikningshæfan AI-kostnað fyrir núverandi innheimtutímabil viðskiptavinarins.
 
 Notaðu AI-token innheimtu þegar þú vilt bjóða AI-verkfæri á vefjum viðskiptavina án þess að taka á þig ófyrirsjáanlegan líkanakostnað. Hver beiðni er tengd við undirvefinn, viðskiptavininn, aðildina, veitandann og líkanið svo stjórnendur geti yfirfarið notkun á meðan viðskiptavinir geta séð hvernig AI-notkun þeirra hefur áhrif á reikninginn þeirra.
 
-### Stilltu verð á hvert token
+### Stilltu verð á hvert token {#configure-per-token-rates}
 
 AI-verð eru stillt fyrir hvert líkan sem aðskilin input- og output-verð. Verð eru reiknuð fyrir hverja 1 milljón token, sem samsvarar algengum verðsíðum AI-veitenda.
 
@@ -55,7 +55,7 @@ AI-verð eru stillt fyrir hvert líkan sem aðskilin input- og output-verð. Ver
 
 Þegar nákvæmt líkanaauðkenni er ekki stillt geta Mældar áskriftarleiðir samsvarað eftir forskeyti líkans. Til dæmis getur verð sem er stillt fyrir `claude-sonnet-4` gilt fyrir tímasett líkanaauðkenni sem byrja á því forskeyti. Hönnuðir geta einnig lagað endanlega verðtöflu með [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) síunni.
 
-### Studdir AI-tenglar
+### Studdir AI-tenglar {#supported-ai-connectors}
 
 AI-token innheimta virkar með tenglum sem senda frá sér WordPress AI Client SDK-myndunaratburði og innihalda token-notkun í lýsigögnum svarsins. Þetta felur í sér Ultimate Multisite AI-tenglafjölskylduna sem er skjalfest hér:
 
@@ -65,13 +65,13 @@ AI-token innheimta virkar með tenglum sem senda frá sér WordPress AI Client S
 
 Sérsniðnir tenglar geta tekið þátt með því að kalla fram stöðluðu `wp_ai_client_before_generate_result` og `wp_ai_client_after_generate_result` atburðina með lýsigögnum um líkan, veitanda og token-notkun. Stillingum tengla er framfylgt frá aðalvefnum til undirvefja svo vefir viðskiptavina noti veitendur og mörk sem netið hefur samþykkt.
 
-### Notkun í Account viðskiptavinar
+### Notkun í Account viðskiptavinar {#customer-account-usage}
 
 Viðskiptavinir sjá AI-notkun samhliða öðrum mældum auðlindum sínum á Account-svæðinu sínu. AI-kostnaðarlínan sýnir heildartölu núverandi innheimtutímabils, reiknaða út frá skráðum prompt- og completion-token, stilltum líkanaverðum og allri innifaldri heimild í áskriftarleiðinni.
 
 Ef viðskiptavinur er með greiðslumáta á skrá er notkun yfir innifalinni heimild meðhöndluð sem reikningshæf umframnotkun. Ef áskriftarleiðin er stillt á harða stöðvun og viðskiptavinurinn hefur engan greiðslumáta tiltækan er hægt að loka fyrir AI-beiðnir þegar heimildinni er náð og viðskiptavinurinn er beðinn um að bæta við greiðsluupplýsingum áður en haldið er áfram.
 
-## Studdar auðlindir
+## Studdar auðlindir {#supported-resources}
 
 * Diskgeymsla
 * Bandbreidd/gagnaflutningur
@@ -80,13 +80,13 @@ Ef viðskiptavinur er með greiðslumáta á skrá er notkun yfir innifalinni he
 * AI-token notkun og AI-kostnaður
 * Sérsniðnar auðlindategundir
 
-## Kröfur
+## Kröfur {#requirements}
 
 * Multisite Ultimate 2.0.0 eða nýrra
 * WordPress Multisite uppsetning
 * PHP 7.4 eða nýrra
 
-## Uppsetning
+## Uppsetning {#installation}
 
 1. Hladdu plugin-skránum upp í `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Virkjaðu plugin í gegnum 'Plugins' skjáinn í WordPress
@@ -94,24 +94,24 @@ Ef viðskiptavinur er með greiðslumáta á skrá er notkun yfir innifalinni he
 4. Stilltu mældu auðlindirnar þínar og verðlagningu
 5. Virkjaðu mælda innheimtu fyrir vörur í vöruritlinum
 
-## Algengar spurningar
+## Algengar spurningar {#frequently-asked-questions}
 
-## Hvað gerist þegar viðskiptavinur fer yfir mörkin sín?
+## Hvað gerist þegar viðskiptavinur fer yfir mörkin sín? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Í stað þess að loka fyrir aðgang skráir kerfið umframnotkunina og bætir henni við næsta reikning þeirra samkvæmt gjöldunum sem þú hefur stillt.
 
-## Get ég stillt mismunandi gjöld fyrir umframnotkun fyrir mismunandi vörur?
+## Get ég stillt mismunandi gjöld fyrir umframnotkun fyrir mismunandi vörur? {#can-i-set-different-overage-rates-for-different-products}
 
 Já, hver vara getur haft einstök mæld tilföng og verðlagningu fyrir umframnotkun.
 
-## Hvernig eru viðskiptavinir látnir vita um notkun?
+## Hvernig eru viðskiptavinir látnir vita um notkun? {#how-are-customers-notified-about-usage}
 
 Viðskiptavinir geta séð núverandi notkun sína á stjórnborðinu sínu og fengið valfrjálsar tilkynningar þegar þeir nálgast eða fara yfir mörk.
 
-## Hvernig er AI-tókanotkun verðlögð?
+## Hvernig er AI-tókanotkun verðlögð? {#how-is-ai-token-usage-priced}
 
 AI-tókanotkun er verðlögð út frá stilltum inntaks- og úttaksgjöldum líkansins fyrir hverja 1 milljón tóka. Metered Plans margfaldar fjölda prompt- og completion-tóka í hverri beiðni með þessum gjöldum, bætir niðurstöðunni við núverandi AI-kostnað viðskiptavinarins á reikningstímabilinu og beitir heimild eða reglum um umframnotkun áskriftarleiðarinnar.
 
-## Get ég enn notað föst mörk?
+## Get ég enn notað föst mörk? {#can-i-still-use-hard-limits}
 
 Já, mæld innheimta er valfrjáls fyrir hverja vöru. Þú getur blandað saman hefðbundnum vörum með föstum mörkum og mældum vörum.

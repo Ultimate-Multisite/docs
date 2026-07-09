@@ -4,13 +4,13 @@ title: Aksi - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Action: wu_checkout_order_created
+# Action: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 Dipicu setelah pesanan checkout selesai dibuat sepenuhnya.
 
 Addon dapat menggunakan ini untuk membuat keanggotaan sekunder (secondary memberships) untuk produk yang memiliki siklus penagihan (billing cycles) independen.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Addon dapat menggunakan ini untuk membuat keanggotaan sekunder (secondary member
 | $membership | `\WP_Ultimo\Models\Membership` | Keanggotaan utama (primary membership). |
 | $payment | `\WP_Ultimo\Models\Payment` | Pembayaran. |
 
-### Since
+### Since {#since}
 
 - 2.5.0
-### Source
+### Source {#source}
 
 Defined in [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) at line 891

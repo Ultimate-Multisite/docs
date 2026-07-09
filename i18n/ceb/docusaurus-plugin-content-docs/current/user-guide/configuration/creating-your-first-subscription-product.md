@@ -3,13 +3,13 @@ title: Pagmugna sa Imong Una nga Produkto sa Subscription
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Paghimo sa Imong Una nga Subscription Product (v2)
+# Paghimo sa Imong Una nga Subscription Product (v2) {#creating-your-first-subscription-product-v2}
 
 _**MAHINUNGOD NGA PAHIBALO: Kini nga article para lang sa mga Ultimate Multisite version 2.x users. Kung gamiton nimo ang version 1.x,**_ **_kita kini nga article**_**.
 
 Aron magsugod sa pagpadagan sa imong network ug magsugod sa pagbaligya sa imong mga serbisyo sa mga potensyal nga user, kinahanglan nimo og lain-laing subscription options. Unsaon nimo paghimo niining mga produkto? Unsa ang mga klase sa mga produktong mahimong ihatag nimo? Niining article, atong tabangan kamo sa tanan nga kinahanglan ninyo mahibalo bahin sa mga produkto.
 
-## Klase sa Produkto
+## Klase sa Produkto {#product-type}
 
 Sa Ultimate Multisite, mahimo kang magtanyag og duha ka klase sa mga produkto ngadto sa imong mga kliyente: **plans** ug **add-ons (Order Bump)**. Ang add-ons mahimong magbinag-bahin sa duha ka klase: **packages** ug **services**. Makita nato ang ilang kalainan ug espesyalidad sunod.
 
@@ -19,7 +19,7 @@ Sa Ultimate Multisite, mahimo kang magtanyag og duha ka klase sa mga produkto ng
 
   * **Services**: mga add-on nga dili mag-usab sa mga functionality sa Ultimate Multisite. Kini mao ang mga buluhaton nga imong himoon alang sa imong kliyente gawas pa sa plan nga ilang gipalit. Pananglitan, ang imong customer mahimong mopalit og plan nga nagtugot sa usa ka site ug mobayad usab og extra service nga maghimo niining site design.
 
-## Pagdumala sa mga Produkto
+## Pagdumala sa mga Produkto {#managing-products}
 
 Para sa daghan, ang tab nga **Products** sa Ultimate Multisite **(Ultimate Multisite > Products)** mahimong itandi sa mga plano sa tradisyonal nga hosting environment.
 
@@ -29,7 +29,7 @@ Kini nga bahin maggiya kanimo sa pagsabot niining importante nga pundasyon sa Ul
 
 ![Products list page](/img/config/products-list.png)
 
-## Pagdadaghan og Produkto (Adding Products)
+## Pagdadaghan og Produkto (Adding Products) {#adding-products}
 
 Bisan plano, package, o serbisyo ang nagsilbing entrada para maghimo og bag-ong item pinaagi sa **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Ang interface adunay duha ka nag-unang seksyon. Sa wala kay pipila ka mga tab ng
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Deskripsyon (Description)
+### Deskripsyon (Description) {#description}
 
 Ang base nga impormasyon sa produkto mahimong ma-define pinaagi sa paghatag og ngalan ug deskripsyon sa produkto. Kini nga mga identifier gipakita bisan asa kinahanglan ang impormasyon sa produkto sama sa pagpili sa plano ug presyo, invoice, upgrades, ug uban pa.
 
 ![Product description section](/img/config/product-description.png)
 
-### Uri sa Pagpresyo (Pricing Type)
+### Uri sa Pagpresyo (Pricing Type) {#pricing-type}
 
 Sa tuo nga bahin sa interface, mahimong ma-define ang base nga pagpresyo.
 
@@ -53,7 +53,7 @@ Sa tuo nga bahin sa interface, mahimong ma-define ang base nga pagpresyo.
 
 Ang Ultimate Multisite nagsuporta og tulo ka nagkalain-laing uri sa pagpresyo. Ang opsyon nga **paid** magpangayo sa network administrator og impormasyon bahin sa presyo ug kalihokan sa pagbayad (billing frequency) sa produkto.
 
-### Pagpresyo (Pricing)
+### Pagpresyo (Pricing) {#pricing}
 
 Ang bahin sa presyo nag-define sa base nga presyo sa produkto ug ang panahon sa pagbayad (billing interval).
 
@@ -61,7 +61,7 @@ Ang bahin sa presyo nag-define sa base nga presyo sa produkto ug ang panahon sa 
 
 mao, usa ka pananglitan nga presyo og $29.99 nga naay setting nga 1 bulan, magbayad siya og $29.99 kada bulan. Parehas ni, ang presyo og $89.97 nga naay setting nga 3 ka bulan, magbayad ana kada quarter.
 
-### Billing Cycles
+### Billing Cycles {#billing-cycles}
 
 Ang billing cycles section naghatag sa kasagaran kung unsa ka kasaba (frequency) sa nabanggit nga interval sa pagbayad ug kini kasagarang gihapoy base sa mga kontrata o fixed terms.
 
@@ -69,7 +69,7 @@ Ang billing cycles section naghatag sa kasagaran kung unsa ka kasaba (frequency)
 
 Pananglitan, ang presyo sa produkto og $29.99 nga naay interval nga 1 ka bulan ug 12 ka billing cycles, magbayad siya og $29.99 kada bulan para sa produkto sulod sa sunod 12 ka bulan. Sa laing pagkasulti, ang ingon nga setting naghimo og fixed-price term nga $29.99 kada bulan sulod sa 12 ka bulan ug dayon moundang na sa pagbayad.
 
-### Trial Period
+### Trial Period {#trial-period}
 
 Ang pag-enable sa offer trial toggle nagtugot sa network administrator nga maghatag og trial period para sa produkto.
 
@@ -77,7 +77,7 @@ Ang pag-enable sa offer trial toggle nagtugot sa network administrator nga magha
 
 Atol sa panahon sa trial, ang mga customer libre gamiton ang produkto ug dili sila mobayad hangtod nga mahurot na ang trial period.
 
-### Setup Fee
+### Setup Fee {#setup-fee}
 
 Mahimo usab nimo magbutang og setup fee sa imong plan.
 
@@ -85,7 +85,7 @@ Mahimo usab nimo magbutang og setup fee sa imong plan.
 
 Nagpasabot ni nga ang imong kliyente mobayad og dugang kwarta sa unang bayad (gawas sa presyo sa plano) nga nagkabuluhan sa fee nga imong gihubad niining seksyon.
 
-### Active
+### Active {#active}
 
 Ang active toggle epektibong naghatag kung ang produkto available ba sa mga customer para sa bag-ong pag-sign up.
 
@@ -93,13 +93,13 @@ Ang active toggle epektibong naghatag kung ang produkto available ba sa mga cust
 
 Kung naa kay mga existing customers sa plan ani, ang pag-toggle sa toggle ngadto sa disabled state nagpasabot nga gipahimutang nimo ang plan ug gipahimong "grandfather" kini, nga gipahawa sa plano para sa future sign-ups. **Ang mga existing customers sa plan magpadayon sa pagbayad** hangtod sila mo-transition sa bag-ong plan o mawala sa plan.
 
-### Product Image
+### Product Image {#product-image}
 
 Ang button nga **Upload Image** nagtugot sa network administrator nga gamiton ang media library aron mopili o mag-upload og product image.
 
 ![Product image section](/img/config/product-image.png)
 
-### Delete
+### Delete {#delete}
 
 Ang button nga **Delete Product** maoy magtanggal sa product gikan sa system. Makita kini kung gi-publish na ang product.
 
@@ -107,11 +107,11 @@ Ang button nga **Delete Product** maoy magtanggal sa product gikan sa system. Ma
 
 Dili sama sa uban nga pagtanggal, ang product dili mapunta sa trash state. Busa kung gitanggal na, dili na maibalik ang aksyon.
 
-### Product Options
+### Product Options {#product-options}
 
 Pagkahuman nga gi-define na ang base-level information sa product, ang product options makatabang sa network administrator aron mas mag-define pa og specific attributes sa product.
 
-#### General
+#### General {#general}
 
 Ang tab nga **General** nag-define sa general attributes sa product nga dili magamit sa bisan unsang laing product-specific tabs.
 
@@ -125,7 +125,7 @@ Ang **Customer Role** nag-specify sa role nga gihatag sa customer kung gi-create
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Pataas ug Pababa (Up & Downgrades)
+#### Pataas ug Pababa (Up & Downgrades) {#up--downgrades}
 
 Kini nga tab naghatag og mga paagi sa pag-upgrade ug pagpababa (upgrade and downgrade paths) nga pwedeng gamiton sa usa ka customer sulod sa ilang piho nga tier.
 
@@ -143,7 +143,7 @@ Aron ma-define ang usa ka plan group, tukion ang mga compatible plans sulod sa l
 
 Ang Ultimate Multisite naglakip usab og usa ka feature nga gitawag og **order bump**, diin ang mga add-on products ug services nga angay mahimong idugang sa mga plano. Kini gihatag sa customer isip dugang nga mga butang nga mahimong idugang sa mga plano sa checkout o panahon sa pag-upgrade.
 
-#### Mga Pagbag-o sa Presyo (Price Variations)
+#### Mga Pagbag-o sa Presyo (Price Variations) {#price-variations}
 
 Ang mga pagbabago sa presyo nagpapahimutang sa network administrator nga maghatag og lain-laing lebel sa presyo depende sa gidugayon. Kini nga setting nagpapasulod kanimo aron mahimong magtanyag og monthly, quarterly, annual, o bisan unsang laing panahon sa pagbayad para sa parehas nga produkto. Pananglitan, pwede kang mag-set up og product sa $29.99/buwan uban ang discounted annual option sa $249.99/tuig.
 
@@ -165,7 +165,7 @@ Pananglitan, kung ang imong base product price kay $29.99 kada bulan, pwede kang
 Ang price variations lang dili makahatag og toggle o switch sa frontend checkout. Aron mapahimo ang mga customer nga mag-switch tali sa mga billing period (pananglitan: Monthly / Annual), kinahanglan nimo i-add ang **Period Selection** field sa imong checkout form. Tan-awa ang [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) para sa step-by-step instructions.
 :::
 
-#### Mga Buwis (Taxes)
+#### Mga Buwis (Taxes) {#taxes}
 
 Ang **Taxes** tab nag-align sa mga setting sa buwis nga gipangita sa **Ultimate Multisite > Settings > Taxes** ug mas espesipiko, ang mga tax rates nga gi-define. Aron ma-enable ang mga buwis ug mag-define og applicable tax rates, palihog tan-awa ang dokumentasyon sa **Ultimate Multisite: Settings**.
 
@@ -179,7 +179,7 @@ Kung ma-define na ang tax rate sa **Ultimate Multisite > Settings > Manage Tax R
 
 Aron ipakita nga ang usa ka product kay taxable item, i-set ang toggle nga **Is Taxable** ngadto sa active ug piliha ang applicable tax rate gikan sa Tax Category dropdown.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Sa laktod, ang site templates kay kompleto nga WordPress websites nga gi-clone para sa site sa customer sa sinugdan sa ilang subscription.
 
@@ -201,7 +201,7 @@ Sa katapusan, ang **C** **hoose Available Site Templates** mag-override sa mga t
 
 Sa katapusan, kung gusto sa network administrator nga mahitabo ang template selection sa mga checkout steps, igo na ang setting nga ' _default_ '. Alternatibo aron ma-remove ug ma-lock ang template selection ug ihatag kini sa plan settings, ang mga option nga ' _assign new template_ ' o ' _choose available site templates_ ' mahimong gusto.
 
-#### Sites
+#### Sites {#sites}
 
 Ang **Sites** tab bahin sa limitations functionality sa Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Kini setting nag-specify sa pinakadaghan nga gidaghanon sa mga sites nga pwede m
 
 Aron ma-enable ang limitation, i-set ang **limit sites** toggle ngadto sa active state ug ispesipikar ang pinakadaghan nga numero sa mga sites sa field nga **site allowance**.
 
-#### Visits
+#### Visits {#visits}
 
 Ang **Visits** tab usa pa ka bahin sa limitations system sa Ultimate Multisite. Kini nga setting nagtugot sa pag-account ug sunod nga throttling sa mga unique visitor ngadto sa site sa customer.
 
@@ -223,7 +223,7 @@ Aron gamiton kining feature, i-set ang **limit unique visits** toggle sa active 
 
 Kung naabot na ni limit, ang Ultimate Multisite dili na magserbisyo sa site sa customer imbes nga magpakita og mensahe nga naubos na ang mga limitasyon.
 
-#### Users
+#### Users {#users}
 
 Ang mga 'Users' limitations sa Ultimate Multisite nagtugot sa network administrator sa pagbutang og mga limitasyon sa gidaghanon sa mga user nga mahimong himuon ug ihatag og roles.
 
@@ -233,7 +233,7 @@ Aron ma-enable ang feature sa limitasyon, i-set ang **limit user** toggle sa act
 
 Sunod para sa matag role nga gustong limitahon, i-set ang toggle sa sunod niini ngadto sa active state ug tukion ang pinakataas nga limit sa angay nga field.
 
-#### Post Types
+#### Post Types {#post-types}
 
 Ang **Post Types** tab nagtugot sa network administrator sa pagbutang og pamaagi nga mga limitasyon sa daghang klase sa post types sulod sa WordPress.
 
@@ -245,7 +245,7 @@ Aron ma-enable kining limits subsystem, i-set ang **limit post types** toggle sa
 
 Sunod, para sa matag-iya nga post type, i-toggle kini pinaagi sa pag-slide niini sa tuig ug tukion ang pinakataas nga limitasyon sa husto nga field.
 
-#### Disk Space
+#### Disk Space {#disk-space}
 
 Ang tab nga **Disk Space** nagtugot sa mga network administrator nga maglimpyo sa luna nga gipaggamit sa mga customer.
 
@@ -257,13 +257,13 @@ Aron ma-enable ang limitasyon sa paggamit sa disk, i-set ang **limit disk size p
 
 Sunod, tukion ang pinakataas nga limitasyon sa megabytes sa field nga **disk space allowance**.
 
-#### Custom Domain
+#### Custom Domain {#custom-domain}
 
 Pinaagi sa pag-toggle niining option, mahimo nimong tugotan ang custom domains para la ni plan.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes
+#### Themes {#themes}
 
 Ang **Themes** tab sulod sa product options nagtugot sa network administrator nga himuon nga available ang mga themes para sa pagpili sa mga customer ug mapilitong i-set ang estado sa theme.
 
@@ -281,7 +281,7 @@ Ang pagpili nga **behavior** nagtugot sa network administrator nga maghatag og e
 
 Sa **A** **Available** nga kahimtang, ang theme gihatag sa customer para sa ilang kaugalingon nga pag-activate. Sa kasukwahi, ang **Not Available** nga kahimtang nagkuha sa abilidad sa customer nga ma-activate ang theme. Sa katapusan, ang opsyon nga **Force Activate** nagpugos sa pagpili ug pag-activate sa theme, busa kini mahimong default kung maghimo og bag-ong site.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Parehas ni sa Themes tab, ang Ultimate Multisite nagtugot sa network administrator nga mag-define sa visibility sa mga plugins ngadto sa mga customer ug ang ilang kahimtang kung maghimo og bag-ong site.
 
@@ -301,7 +301,7 @@ Ang setting nga **Force Activate & Lock** naglihok sa parehas pero pig-agbaw ni 
 
 Ang network administrator mahimong maghunahuna nga isalikway ang Force Activate & Lock ug Force Inactivate & Lock settings uban sa site templates isip plugins, ug ang mga plugin states sulod sa templates mahimong maapektuhan niini kung kini gipili.
 
-#### Reset Limitations
+#### Reset Limitations {#reset-limitations}
 
 Ang tab nga **Reset Limitations** mag-reset sa tanang custom limits nga gi-define sa product. Aron i-reset ang mga limitasyon, i-click lang ang button nga **reset limitations**.
 
@@ -311,7 +311,7 @@ Aron kumpirmahan ang buhat, slide ang toggle nga **confirm reset** ngadto sa act
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Edit, Duplicate, or Delete Product
+## Edit, Duplicate, or Delete Product {#edit-duplicate-or-delete-product}
 
 Ang mga existing product pwede i-edit, i-duplicate, o ma-delete pinaagi sa pag-navigate ngadto sa **Ultimate Multisite > Products** ug pag-hover sa existing product name.
 

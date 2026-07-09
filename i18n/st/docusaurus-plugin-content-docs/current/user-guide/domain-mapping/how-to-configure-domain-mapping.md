@@ -3,17 +3,17 @@ title: Mokhoa oa ho Hlophisa Ho Bapisa Domain
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Mokhoa oa ho Lokisa ho Hokahanya Domain (v2)
+# Mokhoa oa ho Lokisa ho Hokahanya Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**TEMOSO EA BOHLOKOA: Sengoloa sena se bua ka Ultimate Multisite mofuta oa 2.x.**_
 
 E ’ngoe ea likarolo tse matla ka ho fetisisa tsa marang-rang a premium ke bokhoni ba ho fa bareki ba rona monyetla oa ho hokela domain ea boemo bo holimo ho libaka tsa bona. Qetellong, ke efe e shebahalang e le ea profeshenale haholoanyane: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) kapa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ke ka lebaka leo Ultimate Multisite e fanang ka tšobotsi eo e hahiloe ka hare, ntle le tlhoko ea ho sebelisa li-plugin tsa batho ba boraro.
 
-## Ho hokahanya domain ke eng?
+## Ho hokahanya domain ke eng? {#whats-domain-mapping}
 
 Joalokaha lebitso le bontša, ho hokahanya domain ke bokhoni bo fanoang ke Ultimate Multisite ba ho amohela kopo ea domain e ikhethileng le ho hokahanya kopo eo le sebaka se lumellanang le eona marang-rang se nang le domain eo e hokelletsoeng.
 
-### Mokhoa oa ho lokisa ho hokahanya domain ho Ultimate Multisite Network ea hao
+### Mokhoa oa ho lokisa ho hokahanya domain ho Ultimate Multisite Network ea hao {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Ho hokahanya domain ho hloka hore o etse litlhophiso tse itseng hore ho sebetse. Ka lehlohonolo, Ultimate Multisite e iketsetsa mosebetsi o boima bakeng sa hao hore o khone ho fihlela litlhoko habonolo.
 
@@ -45,7 +45,7 @@ Empa pele o qala ho hokahanya domain e ikhethileng ho e ’ngoe ea li-subsite ma
 
 ###
 
-### Ho netefatsa hore litlhophiso tsa DNS tsa domain li hlophisitsoe hantle
+### Ho netefatsa hore litlhophiso tsa DNS tsa domain li hlophisitsoe hantle {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Hore ho hokahanya ho sebetse, o hloka ho netefatsa hore domain eo o rerang ho e hokahanya e supa ho IP address ea Network ea hao. Hlokomela hore o hloka IP address ea Network - IP address ea domain moo Ultimate Multisite e kentsoeng teng - eseng IP address ea domain e ikhethileng eo o batlang ho e hokahanya. Ho batla IP address ea domain e itseng, re sisinya hore o ee ho [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), mohlala.
 
@@ -55,7 +55,7 @@ Haeba o iphumana o e-na le bothata ba ho etsa hore sena se sebetse, **ikopanye l
 
 Haeba o rera ho lumella bareki ba hao ho hokahanya li-domain tsa bona, ba tla tlameha ho iketsetsa mosebetsi karolong ena. Ba lebise tsamaisong ea tšehetso ea morekisi oa bona haeba ba iphumana ba sa khone ho theha A Record.
 
-### Ho hokahanya lebitso la domain e ikhethileng joaloka Super Admin
+### Ho hokahanya lebitso la domain e ikhethileng joaloka Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Ha o kene joaloka super admin marang-rang a hao, o ka eketsa le ho laola mabitso a li-domain tse ikhethileng habonolo ka ho ea tlasa **Ultimate Multisite > Li-domain**.
 
@@ -93,7 +93,7 @@ Haeba o tobetsa lebitso la domaine, o tla kgona ho bona dikgetho tse ding ka har
 
 **Is Secure?:** Le hoja Ultimate Multisite e hlahloba hore na domaine e na le setifikeiti sa SSL kapa tjhe pele e e kgontsha, o ka kgetha ka letsoho ho kenya domaine ka setifikeiti sa SSL kapa ntle le sona. Hlokomela hore haeba webosaete e se na setifikeiti sa SSL mme o leka ho e qobella ho laiswa ka SSL, e ka o fa diphoso.
 
-### Ho mapa lebitso la domaine le ikgethetseng jwaloka mosebedisi wa subsite
+### Ho mapa lebitso la domaine le ikgethetseng jwaloka mosebedisi wa subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Batsamaisi ba subsite le bona ba ka mapa mabitso a di-domaine tse ikgethetseng ho tswa ho dashboard ya tsamaiso ya subsite ya bona.
 
@@ -121,7 +121,7 @@ Mosebedisi a ka tobetsa **Next Step** mme a tswele pele ho kenya lebitso la doma
 
 Ho tobetsa **Add Domain** ho tla qala tshebetso ya ho netefatsa le ho lata tlhahisoleseding ya DNS ya domaine e ikgethetseng.
 
-### Mabapi le ho Sync di-Domaine
+### Mabapi le ho Sync di-Domaine {#about-domain-syncing}
 
 Ho Sync di-Domaine ke tshebetso moo Ultimate Multisite e kenyang lebitso la domaine le ikgethetseng akhaonteng ya hao ya hosting jwaloka domaine ya tlatsetso **hore domain mapping e sebetse**.
 

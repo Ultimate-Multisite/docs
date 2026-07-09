@@ -3,19 +3,19 @@ title: 'Lectio 10: Dies Publicationis'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lectio 10: Dies Deductionis
+# Lectio 10: Dies Deductionis {#lesson-10-launch-day}
 
 Omnia aedificata sunt. Antequam ianuas aperias, haec lectio per indicem ante deductionem pergit, ut cures nihil fractum, deesse, aut pudendum esse.
 
-## Ubi Desivimus
+## Ubi Desivimus {#where-we-left-off}
 
 FitSite exemplaria, consilia, solutionem, notam, introductionem, et pretia omnia configurata habet. Nunc verificamus omnia operari et in vivum progredimur.
 
-## Index Ante Deductionem
+## Index Ante Deductionem {#pre-launch-checklist}
 
 Per omnia elementa procede. Nullum praetermitte.
 
-### Infrastructura Rostrae
+### Infrastructura Rostrae {#platform-infrastructure}
 
 - [ ] Hospitium stabile est et sub onere bene se gerit
 - [ ] SSL wildcard activum est et omnia subdominia per HTTPS serviuntur
@@ -23,7 +23,7 @@ Per omnia elementa procede. Nullum praetermitte.
 - [ ] Exemplaria subsidiaria configurata et probata sunt (saltem unum restitue ad verificandum)
 - [ ] Monitoratio in loco est -- scies si rostrum cadat
 
-### Exemplaria
+### Exemplaria {#templates}
 
 - [ ] Omnia tria exemplaria recte in novis sitibus onerantur
 - [ ] Contentum locum tenens utile est et mendis typographicis caret
@@ -32,7 +32,7 @@ Per omnia elementa procede. Nullum praetermitte.
 - [ ] Celeritas onerationis paginae acceptabilis est (proba instrumento sicut GTmetrix aut PageSpeed Insights)
 - [ ] Nullae nexus fracti aut res desunt in ullo exemplari
 
-### Consilia et Producta
+### Consilia et Producta {#plans-and-products}
 
 - [ ] Omnia tria consilia activa et visibilia sunt
 - [ ] Descriptiones consiliorum accuratae sunt et ad proprium angustum mercatum pertinent
@@ -42,7 +42,7 @@ Per omnia elementa procede. Nullum praetermitte.
 - [ ] Additamenta ordinis recte apparent per solutionem
 - [ ] Limitationes plugin et thematis recte secundum consilium coguntur
 
-### Fluxus Solutionis
+### Fluxus Solutionis {#checkout-flow}
 
 - [ ] Perfice plenam inscriptionem experimentalem in quoque consilio (modo solutionis experimentali utere)
 - [ ] Electio exemplaris recta exemplaria secundum consilium ostendit
@@ -52,7 +52,7 @@ Per omnia elementa procede. Nullum praetermitte.
 - [ ] Cliens statim in novum situm intrare potest
 - [ ] Codices deminutionis recte operantur
 
-### Nota
+### Nota {#branding}
 
 - [ ] Pagina ingressus notam FitSite ostendit
 - [ ] Dashboard administrativum notam FitSite ostendit
@@ -60,7 +60,7 @@ Per omnia elementa procede. Nullum praetermitte.
 - [ ] Syngraphae recte cum rebus negotii tui ostenduntur
 - [ ] Situs mercatorius vivus est et ad formam solutionis nectit
 
-### Introductio
+### Introductio {#onboarding}
 
 - [ ] Instrumentum Quick Start in novis Dashboard clientium apparet
 - [ ] Omnes nexus Quick Start ad rectas paginas ducunt
@@ -68,7 +68,7 @@ Per omnia elementa procede. Nullum praetermitte.
 - [ ] Articuli basis cognitionis editi et accessibiles sunt
 - [ ] Pagina Account rectas informationes consilii et optiones progressionis ostendit
 
-### Legalia et Negotium
+### Legalia et Negotium {#legal-and-business}
 
 - [ ] Condiciones servitii editae sunt et e solutione nectuntur
 - [ ] Politica privatatis edita et accessibilis est
@@ -77,11 +77,11 @@ Per omnia elementa procede. Nullum praetermitte.
 - [ ] Porta solutionum in modo vivo est (non modo experimentali)
 - [ ] Configuratio tributaria recta est pro tua iurisdictione
 
-## Deductio Lenis contra Deductionem Plenam
+## Deductio Lenis contra Deductionem Plenam {#soft-launch-vs-hard-launch}
 
 Considera deductionem duarum phasium:
 
-### Phasis 1: Deductio Lenis
+### Phasis 1: Deductio Lenis {#phase-1-soft-launch}
 
 Invita 5-10 dominos studiorum exercitationis corporis ut ante deductionem publicam se subscribant. Hi sunt clientes beta tui. Praebe eis magnam deminutionem (50% perpetuo detractum, aut 3 menses gratis) pro:
 
@@ -91,7 +91,7 @@ Invita 5-10 dominos studiorum exercitationis corporis ut ante deductionem public
 
 Hoc tibi dat veram opinionem clientium et situs vivos ostentandos antequam publico aperias.
 
-### Phasis 2: Deductio Publica
+### Phasis 2: Deductio Publica {#phase-2-public-launch}
 
 Postquam opiniones deductionis lenis incorporatae sunt:
 
@@ -100,7 +100,7 @@ Postquam opiniones deductionis lenis incorporatae sunt:
 - Incipe acquisitionem clientium (Lectio 11)
 - Nuntia in canalibus congruentibus industriae exercitationis corporis
 
-## Actiones Diei Deductionis
+## Actiones Diei Deductionis {#launch-day-actions}
 
 Die quo publice procedis:
 
@@ -110,7 +110,7 @@ Die quo publice procedis:
 4. **Praesto esto** -- primi veri clientes tui auxilio egere possunt, et responsio celeris fidem aedificat
 5. **Breviter celebra** -- deinde ad opus redi
 
-## Quid Male Ire Possit
+## Quid Male Ire Possit {#what-can-go-wrong}
 
 Para te ad:
 
@@ -120,7 +120,7 @@ Para te ad:
 - **Effectum sub onere**: Si subitam copiam commeatus accipis, scito quomodo hospitium tuum amplifices
 - **Confusionem clientium**: Basim cognitionis et canales auxilii paratos habe
 
-## Rete FitSite Hactenus
+## Rete FitSite Hactenus {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Quid Hac Lectione Aedificavimus
+## Quid Hac Lectione Aedificavimus {#what-we-built-this-lesson}
 
 - **Indicem comprehensivum ante deductionem** qui infrastructuram, contentum, solutiones, et legalia complectitur
 - **Strategiam deductionis lenis** ad veras opiniones antequam publice procedas obtinendas

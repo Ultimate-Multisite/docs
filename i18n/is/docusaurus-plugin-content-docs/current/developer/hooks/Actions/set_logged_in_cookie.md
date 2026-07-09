@@ -4,11 +4,11 @@ title: Aðgerð - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Aðgerð: set_logged_in_cookie
+# Aðgerð: set_logged_in_cookie {#action-setloggedincookie}
 
 Keyrir strax áður en logged-in auðkenningar-kakan er sett.
 
-## Breytur
+## Breytur {#parameters}
 
 | Nafn | Tegund | Lýsing |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Keyrir strax áður en logged-in auðkenningar-kakan er sett.
 | $scheme | `string` | Auðkenningarkerfi. Sjálfgefið 'logged_in'. |
 | $token | `string` | Setutákn notanda til að nota fyrir þessa köku. |
 
-### Síðan
+### Síðan {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) í línu 141

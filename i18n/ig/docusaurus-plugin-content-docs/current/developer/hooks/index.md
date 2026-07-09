@@ -3,11 +3,11 @@ title: Ntụaka Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Ntụaka Hooks
+# Ntụaka Hooks {#hooks-reference}
 
 Akwụkwọ ntụaka emepụtara na-akpaghị aka maka **omume 59** niile na **nzacha 118** niile dị na Ultimate Multisite.
 
-## Omume
+## Omume {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Na-arụ tupu ntụgharị njirimara.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Na-arụ ozugbo tupu edobe cookie njirimara.
@@ -70,7 +70,7 @@ Akwụkwọ ntụaka emepụtara na-akpaghị aka maka **omume 59** niile na **n
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Na-arụ ọrụ mgbe echekwara ihe n’ime database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Kwe ka ndị mmepe plugin tinye omume na usoro imeghe.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Na-enyocha ogologo oge njedebe cookie nkwenye njirimara.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Na-enyocha atụmatụ redirect nkwenye njirimara.

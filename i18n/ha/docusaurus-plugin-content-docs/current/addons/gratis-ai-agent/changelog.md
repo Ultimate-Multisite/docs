@@ -3,11 +3,11 @@ title: Tarihin canje-canje
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Kundin canje-canje
+# Kundin canje-canje {#changelog}
 
-## 1.9.0 — An fitar a 2026-04-28
+## 1.9.0 — An fitar a 2026-04-28 {#190--released-on-2026-04-28}
 
-### Sabo
+### Sabo {#new}
 
 - **ikon `create_contact_form`** — yana ƙirƙirar fom na tuntuɓa ta amfani da plugin ɗin fom da ke aiki (Contact Form 7, WPForms, Fluent Forms, ko Gravity Forms) kuma yana dawo da shortcode da ya shirya a saka cikin kowane rubutu ko shafi.
 - **ikon `set_featured_image`** — yana sanya hoton da aka fito da shi ga rubutu ko shafi daga ID na haɗin Media Library da ke akwai ko URL na nesa; yana shigo da hoton ta atomatik idan an bayar da URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Mayar da zaman ƙarshe** — yanzu panel ɗin hira yana sake loda tattaunawar baya-bayan nan ta atomatik lokacin loda shafi da lokacin buɗe widget, don kada mahallin ya ɓace a tsakanin kewaya shafuka.
 - **Hanyoyin aikin plugin** — hanyoyin sauri zuwa Settings da Abilities Registry yanzu suna bayyana a allon WordPress **Plugins → Installed Plugins** ƙarƙashin bayanin plugin.
 
-### An inganta
+### An inganta {#improved}
 
 - **Sake gwada tushen hoto** — yanzu agent yana sake gwada duk tushen hotuna kyauta da aka saita kafin ya koma ga hoton da AI ta samar idan saukewa ta gaza.
 - **Panel ɗin bayanin model** — koyaushe yana bayyane a kan taken hira; ba a ƙara ɓoye shi bayan saƙo na farko ba.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Sake fasalin widget ɗin hira** — gunkin AI ɗaya ya maye gurbin avatar na musamman na baya; ya yi daidai da tsarin agent da aka gina a ciki.
 - **Mayar da URL zuwa link** — yanzu URLs da ke bayyana a saƙonnin tsarin da kumfar saƙon kuskure ana nuna su a matsayin links da ake iya dannawa.
 
-### An gyara
+### An gyara {#fixed}
 
 - **Sauƙin gano iko** — an gyara bayanai, nassoshin system prompt, da daidaiton namespace don dukkan iko su bayyana cikin jerin kayan aikin agent cikin aminci.
 - **Cache na providers** — yanzu ana cache providers a faɗin shafi ta hanyar ƙididdigar sigar, yana hana matsalolin providers da suka tsufa a kan cibiyoyin multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — An fitar a 2026-04-09
+## 1.4.0 — An fitar a 2026-04-09 {#140--released-on-2026-04-09}
 
-### Sabo
+### Sabo {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — yana gudanar da tarin gwajin Agent Capabilities v1 daga layin umarni don hanyoyin CI da ayyukan tantance model. Yana goyon bayan gudanarwa ga kowace tambaya, sauya provider/model, da fitarwa ta JSON/CSV.
 - **Tarin gwajin Agent Capabilities v1** — tsararren tarin prompts masu rikitarwa, masu matakai da yawa da ke gwada cikakken fannin iyawa, tare da bayar da maki da rahoton token/tsawon lokaci.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Tambayar gwajin gidan yanar gizon restaurant** (`q-restaurant-website`) — gwajin daga farko zuwa ƙarshe da ke rufe rajistar CPT, design system, navigation, da gano plugin.
 - **AI provider connector plugins** an ƙara su zuwa blueprints na WordPress Playground don saitin ci gaban gida cikin sauri.
 
-### An Inganta
+### An Inganta {#improved-1}
 
 - An sabunta README da takardun AI provider connector da umarnin saiti.
 
-### An Gyara
+### An Gyara {#fixed-1}
 
 - An warware gazawar gwajin PHPUnit 25 a kan reshen `main`.
 - An gyara tsarin URL na GitHub releases a cikin `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Ana kiyaye bayanan sakin da suka gabata a cikin ma’ajiyar plugin._

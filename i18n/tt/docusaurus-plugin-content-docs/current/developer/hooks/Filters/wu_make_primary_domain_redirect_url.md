@@ -4,13 +4,13 @@ title: Фильтр - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Фильтр: wu_make_primary_domain_redirect_url
+# Фильтр: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Домен төп итеп билгеләнгәннән соң юнәлтү URL-адресын фильтрлый.
 
 Эшләүчеләргә доменны төп итеп уңышлы куйганнан соң кулланучыларның кая юнәлтеләчәген көйләү мөмкинлеге бирә. Килешү буенча, төп сайттагы агымдагы URL-адреска яки үзгәртелә торган сайтның админ URL-адресына юнәлтә.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -19,13 +19,13 @@ _i18n_hash: bda96824db400b25e97802e5567df22d
 | $domain | `\Domain` | Төп итеп билгеләнгән домен объекты. |
 | $old_primary_domains | `array` | Элек төп булган доменнарның ID-лары массивы. |
 
-### Версиядән башлап
+### Версиядән башлап {#since}
 
 - 2.0.0
-### Чыганак
+### Чыганак {#source}
 
 [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) эчендә 639 нчы юлда билгеләнгән
 
 
-## Кайтара
+## Кайтара {#returns}
 Фильтрланган юнәлтү URL-адресы.

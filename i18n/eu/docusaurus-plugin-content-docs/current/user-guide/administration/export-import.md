@@ -3,17 +3,17 @@ title: Exporte eta importazioa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportatu eta Importatu
+# Exportatu eta Importatu {#export--import}
 
 Ultimate Multisite 2.9.0-ek **Tools > Export & Import** (Herri-gainak > Exportatu eta Importatu) menuaren ondorioz, bat-sitea ZIP file batez paketo dezakezu, hori sortzeko edo Ultimate Multisite eta single-site WordPress instalazioak artean site bat aurkitzea behar duzu.
 
-## Aurrezko eskatzenak (Required permissions)
+## Aurrezko eskatzenak (Required permissions) {#required-permissions}
 
 Sortu edo importatu egiten duen sitean WordPress-en **Tools** menua erabil sortzen dituen administrator gisa identifikatu behar duzu. Multisite network batean, network-lekin Ultimate Multisite-aren herramienta batzuk sortu edo importatu egiten baduzu, subsites sortzeko network administrator kontua erabilizten duzu.
 
 Export ZIP deskargak autentikatuak deskargapen endpoint-ekoa (authenticated download endpoint) bidez ematen daitezke, zehazki deskargapena amaitu ondoren admin sesionak aktibo jarraitu eta sortutako deskargapen URL-ek ez hartu publikoan.
 
-## Site bat ZIP-era exportatu
+## Site bat ZIP-era exportatu {#exporting-a-site-to-a-zip}
 
 1. Kopietzen nahi duzu sitearen WordPress admin-ean, **Tools > Export & Import** (Herri-gainak > Exportatu eta Importatu) funtziara jarraitu.
 2. Sortuareko erabilgarria aurkitu eta paketo dezakezu nahi duzu sitea desitu.
@@ -23,7 +23,7 @@ Export ZIP deskargak autentikatuak deskargapen endpoint-ekoa (authenticated down
 
 ZIP-era seguragarri jardutze duen lekuan jarraitu. Site kontuentua, konfiguraturaak, media fileak eta desebutatutako kode assetak ez du.
 
-## Zer dago inguruko (What the export includes)
+## Zer dago inguruko (What the export includes) {#what-the-export-includes}
 
 Export ZIP batek barne dutenak:
 
@@ -34,7 +34,7 @@ Export ZIP batek barne dutenak:
 
 Ez dago ZIP-aren eksakua diseinazioa media-ren kopurua, aukeratutako plugin-ek eta themes-en diseinazioari eta webgunearen database-aren tabele-aren diseinazioan erabilizten.
 
-## Webgune bat ZIP-etik importatzea
+## Webgune bat ZIP-etik importatzea {#importing-a-site-from-a-zip}
 
 1. Destino WordPress webgunean **Tools > Export & Import** (Herri-gainak > Exportatu eta Importatu) funtziokoa jarri.
 2. Importatzeko eragilea irekitu eta Export & Import tool-ek ezarritutako ZIP-aren uzailedu.
@@ -46,7 +46,7 @@ Ez dago ZIP-aren eksakua diseinazioa media-ren kopurua, aukeratutako plugin-ek e
 
 WordPress instalazio bat webgunean, ZIP-a orokorako webgunea importatuta dagoen webgunean erpotzat egiten da. Importatuaren hasiera baino lehen target webgunearen oso kopuriko backup bat ezartu duzu eta berrek importak batzuk ezarritzen ez duzu berrek webgunei berekin.
 
-## Limitazioak eta kompatibilitateko noturiaren testuinguruak
+## Limitazioak eta kompatibilitateko noturiaren testuinguruak {#limitations-and-compatibility-notes}
 
 Batzu handiak datu-aldiaren edo media biblioteca hauek ZIP file bat handiagoak emateko potensialdie ditu. Handi ZIP file bat eksportatu edo importatu behar baino lehen, PHP upload limitak, ekzekutapena limitak, disk espazioa, memoria eta server timeout henia jakinaraztezu behar da.
 Handi media biblioteca hauek txiki trafikoko manutenzione (maintenance) ikastarekin aurkitzen behar izan dezatat.

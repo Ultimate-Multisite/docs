@@ -4,11 +4,11 @@ title: Ekintza - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Autentifikazio-cookiea ezarri aurretik berehala abiarazten da.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Autentifikazio-cookiea ezarri aurretik berehala abiarazten da.
 | $scheme | `string` | Autentifikazio-eskema. Balioen artean 'auth' edo 'secure_auth' daude. |
 | $token | `string` | Erabiltzailearen saio-tokena cookie honetarako erabiltzeko. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Iturria
+### Iturria {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) fitxategian definitua, 124. lerroan

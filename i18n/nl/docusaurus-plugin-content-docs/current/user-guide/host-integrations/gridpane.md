@@ -3,17 +3,17 @@ title: GridPane Integratie
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integratie
+# GridPane Integratie {#gridpane-integration}
 
-## Overzicht
+## Overzicht {#overview}
 GridPane is een gespecialiseerd WordPress-hosting controlepaneel ontworpen voor serieuze WordPress-professionals. Deze integratie maakt automatische domeinsynchronisatie en SSL-certificaatbeheer mogelijk tussen Ultimate Multisite en GridPane.
 
-## Functies
+## Functies {#features}
 - Automatische domeinsynchronisatie
 - SSL-certificaatbeheer
 - Automatische configuratie van de SUNRISE constant
 
-## Vereisten
+## Vereisten {#requirements}
 De volgende constanten moeten gedefinieerd zijn in uw `wp-config.php` bestand:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## Installatie-instructies
+## Installatie-instructies {#setup-instructions}
 
-### 1. Verkrijg uw GridPane API-gegevens
+### 1. Verkrijg uw GridPane API-gegevens {#1-get-your-gridpane-api-credentials}
 
 1. Log in op uw GridPane-dashboard  
 2. Ga naar "Settings" > "API"  
 3. Genereer een API-sleutel als u er nog geen heeft  
 4. Kopieer uw API-sleutel  
 
-### 2. Verkrijg uw Server- en Site-ID's
+### 2. Verkrijg uw Server- en Site-ID's {#2-get-your-server-and-site-ids}
 
 1. In uw GridPane-dashboard, ga naar "Servers"  
 2. Selecteer de server waarop uw WordPress multisite gehost wordt  
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. Ga naar "Sites" en selecteer uw WordPress-site  
 5. Noteer de Site ID (zichtbaar in de URL of op de site detailspagina)  
 
-### 3. Voeg constanten toe aan wp-config.php
+### 3. Voeg constanten toe aan wp-config.php {#3-add-constants-to-wp-configphp}
 
 Voeg de volgende constanten toe aan uw `wp-config.php` bestand:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Schakel de integratie in
+### 4. Schakel de integratie in {#4-enable-the-integration}
 
 1. In uw WordPress-beheer, ga naar Ultimate Multisite > Settings  
 2. Navigeer naar het tabblad "Domain Mapping"  
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Schakel de GridPane-integratie in  
 5. Klik op "Save Changes"
 
-## Hoe het werkt
+## Hoe het werkt {#how-it-works}
 
 Wanneer een domein wordt gekoppeld in Ultimate Multisite:
 
@@ -69,23 +69,23 @@ Wanneer een domein wordt gekoppeld in Ultimate Multisite:
 
 De integratie verwerkt ook automatisch de SUNRISE constant in uw wp-config.php bestand, die vereist is voor correcte werking van domeinbinding.
 
-## SUNRISE Constant Beheer
+## SUNRISE Constant Beheer {#sunrise-constant-management}
 
 Een unieke functie van de GridPane-integratie is dat het automatisch de SUNRISE constant in wp-config.php terugdraait om conflicten met het eigen domeinbinding-systeem van GridPane te voorkomen. Dit zorgt ervoor dat beide systemen samen kunnen werken zonder problemen.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### API-verbindingproblemen
+### API-verbindingproblemen {#api-connection-issues}
 - Controleer of uw API-sleutel correct is  
 - Controleer of uw server- en site-ID's correct zijn  
 - Zorg ervoor dat uw GridPane-account de nodige permissies heeft  
 
-### SSL-certificaatproblemen
+### SSL-certificaatproblemen {#ssl-certificate-issues}
 - GridPane kan enige tijd nodig hebben om SSL-certificaten uit te geven  
 - Controleer of uw domeinen correct verwijzen naar het IP-adres van uw server  
 - Controleer de GridPane SSL-instellingen voor uw site  
 
-### Domein niet toegevoegd
+### Domein niet toegevoegd {#domain-not-added}
 - Controleer de Ultimate Multisite-logs op foutmeldingen  
 - Controleer of het domein nog niet aan GridPane is toegevoegd  
 - Zorg ervoor dat de DNS-records van uw domein correct zijn geconfigureerd

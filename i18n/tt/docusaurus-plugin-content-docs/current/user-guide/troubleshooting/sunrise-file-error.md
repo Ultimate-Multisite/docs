@@ -3,7 +3,7 @@ title: Sunrise fayl xatası
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise Dosyasını Kurarken Hata Oluşması
+# Sunrise Dosyasını Kurarken Hata Oluşması {#error-installing-the-sunrise-file}
 
 sunrise.php dosyası, WordPress kendini başlatırken aradığı özel bir dosyadır. WordPress'in sunrise.php dosyasını algılayabilmesi için bu dosyanın **wp-content klasörü** içinde olması gerekir.
 

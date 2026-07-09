@@ -3,7 +3,7 @@ title: Pejy Kaontin'ny Mpanjifa
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pejy Ka Kaontina An'ny Mpanjaka (v2)
+# Pejy Ka Kaontina An'ny Mpanjaka (v2) {#your-clients-account-page-v2}
 
 _**FANAM-BAHANA MANAN-DAN-DAN: Io lahatsoratra io dia manondro ny Ultimate Multisite v2.x.**_
 
@@ -11,7 +11,7 @@ Rehefa misoratra (subscribe) ny mpanjaka iray amin'ny toromarika (plan) ao anati
 
 Amin'ity tutorial ity, dia hitarika anareo amin'ny pejy kaontina mpanjaka isika ary ho hitanareo izay vitan'izy ireo sy ataony ao anatin'izany.
 
-## Ny Pejy Kaontina (The Account Page)
+## Ny Pejy Kaontina (The Account Page) {#the-account-page}
 
 Afaka miditra amin'ity pejy kaontina ity ianao amin'ny alalan'ny tsindrim-peo **Account** ao anatin'ny dashboard an'ilay mpanjaka.
 
@@ -27,7 +27,7 @@ Rehefa tsindrin'izy ireo izany, dia hahita famintinana ny fandraisana anjara (me
 
 Afaka manova ny fandraisana anjara ho toromarika hafa izy, na mividy paketra na serivisy hafa izay atolotra anareo. Andao hijery tsirairay ny faritra.
 
-### Fampanana ny Fandraisana Anarana (Membership Overview):
+### Fampanana ny Fandraisana Anarana (Membership Overview): {#your-membership-overview}
 
 Ny tabilao voalohany eo ambaninny anaran'ny tranokalan'ny mpanjifa dia mampiseho fampahafantarana momba ny toromarika (plan) sy ny serivisy/package izay nividianareo tamin'izany. Mampiseho ihany koa io tabilao io ny laharanon-dikan'ny fandraisana anarana, ny vola voalohany nampanofana azy, ny vidin'ilay toromarika sy ny serivisy/package ary ny indray mandeha nampanofana azy ho fandraisana anarana. Afaka mahita ihany koa izy raha **Active** (mavitrika), **Expired** (tapitra) na **Canceled** (voafetra) no toerana misy ilay fandraisana anarana.
 
@@ -43,7 +43,7 @@ Ary raha misafidy ny mpanjifa ny fividianana package na serivisy ho an'ity fandr
 
 Tandremo fa tsy azo ampiana code coupon amin'ity pejy manova fandraisana anarana ity. Raha nampiasa code coupon mpanjifa tamin'ny fividianana voalohany dia hampiasaina koa ilay code amin'ity fandraisana anarana vaovao ity.
 
-### Fanavaozana ny Adiresy Fandrefana (Updating the Billing Address):
+### Fanavaozana ny Adiresy Fandrefana (Updating the Billing Address): {#updating-the-billing-address}
 
 Amin'ny pejy kaonty, afaka manavao ny adiresin'ny fandraisana vola ny mpanjifa anareo koa izy ireo. Mila tsapahina fotsiny ny **Update** eo anilan'ny _Billing Address_ noho.
 
@@ -53,7 +53,7 @@ Ho hiseho varavarankely vaovao ho an'ilay mpanjifa. Ny tokony hataony dia ny fam
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Fanovana ny Site Template:
+### Fanovana ny Site Template: {#changing-the-site-template}
 
 Mba ahafahanao mamela ny mpanjifanao manova ny site template ananany, mila mandeha any amin'ny **Ultimate Multisite > Settings > Sites** ianao ary ataovy **on** ilay safidy hoe **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Rehefa mandoro an-tsipika (toggle on) ilay fampahafantarana ary manindry ny **Pr
 
 Afaka mampiasa ny **Reset current template** avy amin'ity panel ity koa ny mpanjifa rehefa mila averina amin'ny site efa voatendry azy ilay template. Toy ny manova template hafa, ny famerenana template dia mety hanova ny votoatin'ny site, ka tokony hanamafisana izany ny mpanjifa rehefa mazava tsara ny fomba fiasan'ilay asa fanorenana (reset).
 
-### Fampidiana Domain Manokana (Adding Custom Domains):
+### Fampidiana Domain Manokana (Adding Custom Domains): {#adding-custom-domains}
 
 Afaka manana safidy ny mpanjifanao koa mba hanampy domain manokana ho an'ity plan ity amin'ny pejy an'ny kaonty azy. Mba ahafahana mampiasa domain manokana ireo mpanjifanao, mandehana any amin'**Ultimate Multisite > Settings > Domain Mapping**.
 
@@ -115,7 +115,7 @@ Aorian'ny tsindrim-peo **Next Step**, afaka manampy ny anaran'ny domain manokana
 
 Aorian'ny tsindrim-peo **Add Domain**, dia ho ampiana ao anaty kaontin'ny mpanjifanao ilay domain. Ny tokony hataonareo dia ny fanovana ireo DNS records an'io domain manokana io eo amin'ny domain registrar an'izy ireo.
 
-### Fanovana teny (Changing Password):
+### Fanovana teny (Changing Password): {#changing-password}
 
 Ao anatin'ny dashboard an'ny kaonty, afaka manova ny teny (password) ihany koa ny mpanjifanao amin'ny alalan'ny tsindrim-peo **Change Password**.
 
@@ -125,7 +125,7 @@ Ity dia hane fomba vaovao izay mila ny mpanjifa anareo hampiasa ny teny resaka (
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Faritra Mampidi-doza (Danger Zone):
+### Faritra Mampidi-doza (Danger Zone): {#danger-zone}
 
 Misy safidy roa koa izay haseho eo amin'ny faritra **Danger Zone**: ny **Manapaka Ny Tranokala (Delete Site)** sy ny **Manapaka ny Kaonty (Delete Account)**. Eto ireo dia ao anatin'ny Danger Zone satria tsy azo averina intsony ireo asa roa ireo. Raha manapaka toerana na kaonty ny mpanjifanao, dia tsy afaka averina azy ireo indray izany.
 

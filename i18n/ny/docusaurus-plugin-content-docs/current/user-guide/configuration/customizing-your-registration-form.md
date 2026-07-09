@@ -3,13 +3,13 @@ title: Kusintha Fomu Yanu Yolembetsa
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kusintha Fomu yanu Yolembetsa
+# Kusintha Fomu yanu Yolembetsa {#customizing-your-registration-form}
 
 Kuti network yanu iwoneke yapadera kuposa ma SaaS ena onse omangidwa pa WordPress platform, Ultimate Multisite imakulolani kusintha masamba anu olembetsa ndi olowera pogwiritsa ntchito mbali yathu ya **Checkout Forms**.
 
 Ngakhale ndi njira yosavuta komanso yosinthika yoyesera njira zosiyanasiyana poyesa kusintha alendo atsopano kukhala makasitomala, nthawi zambiri amagwiritsidwa ntchito kupanga mafomu olembetsa okonzedwa mwapadera. Nkhaniyi ikufuna kukuwonetsani momwe mungachitire izi.
 
-## Masamba olowera ndi olembetsa:
+## Masamba olowera ndi olembetsa: {#login-and-registration-pages}
 
 Mukangoyika Ultimate Multisite, imangopanga masamba apadera olowera ndi olembetsa pa site yanu yayikulu. Mutha kusintha masamba osasinthika awa nthawi iliyonse popita ku tsamba lanu la **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Tsopano, tiyeni tiwone njira zina zomwe zikadali zofunika pa njira yolowera ndi 
 
 Ndipo ndizo njira zonse zokhudzana ndi login ndi registration zomwe mungasinthe! Musaiwale kusunga makonda anu mukamaliza kuwasintha.
 
-## Kugwiritsa ntchito mafomu olembetsa angapo:
+## Kugwiritsa ntchito mafomu olembetsa angapo: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 imapereka checkout form editor yomwe imakulolani kupanga mafomu ochuluka momwe mukufunira, okhala ndi minda yosiyanasiyana, zinthu zomwe zikuperekedwa, ndi zina zotero.
 
@@ -69,7 +69,7 @@ Mwinanso, mutha kusintha kapena kubwereza mafomu omwe muli nawo kale podina njir
 
 Ngati musankha sitepe imodzi kapena masitepe angapo, checkout form idzakhala itadzazidwa kale ndi masitepe ofunikira kuti igwire ntchito. Kenako, ngati mukufuna, mutha kuwonjezera masitepe owonjezera.
 
-### Kusintha Checkout Form:
+### Kusintha Checkout Form: {#editing-a-checkout-form}
 
 Monga tanena kale, mutha kupanga checkout forms pa zolinga zosiyanasiyana. Mu chitsanzo ichi tigwira ntchito pa fomu yolembetsa.
 
@@ -131,11 +131,11 @@ Kuti mutenge shortcode ya fomu yanu dinani **Generate Shortcode** ndipo koperani
 
 _**Dziwani:** Mudzafunika kuwonjezera shortcode iyi pa tsamba lanu lolembetsera kuti fomu ya checkout iyi iwonjezedwe pamenepo._
 
-## Kusankhiratu zinthu ndi ma template kudzera mu magawo a URL:
+## Kusankhiratu zinthu ndi ma template kudzera mu magawo a URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ngati mukufuna kupanga matebulo a mitengo osinthidwa mwamakonda a zinthu zanu ndi kusankhiratu pa fomu ya checkout chinthu kapena template yomwe kasitomala wanu amasankha kuchokera pa tebulo lanu la mitengo kapena tsamba la ma template, mungagwiritse ntchito magawo a URL pa izi.
 
-### **Kwa mapulani:**
+### **Kwa mapulani:** {#for-plans}
 
 Pitani ku **Ultimate Multisite > Products > Select a plan**. Muyenera kuona batani la **Click to copy Shareable Link** pamwamba pa tsambalo. Iyi ndi link yomwe mungagwiritse ntchito kusankhiratu pulani yeniyeniyi pa fomu yanu ya checkout.
 
@@ -143,7 +143,7 @@ Pitani ku **Ultimate Multisite > Products > Select a plan**. Muyenera kuona bata
 
 Dziwani kuti link yogawana iyi ndi yovomerezeka kokha kwa **Mapulani**. Simungagwiritse ntchito ma link ogawana pa mapaketi kapena ntchito.
 
-### Kwa ma template:
+### Kwa ma template: {#for-templates}
 
 Ngati mukufuna kusankhiratu ma template a site pa fomu yanu ya checkout, mungagwiritse ntchito parameter: **?template_id=X** pa URL ya tsamba lanu lolembetsera. "X" iyenera kusinthidwa ndi **nambala ya ID ya site template**. Kuti mutenge nambala iyi, pitani ku **Ultimate Multisite > Sites**.
 

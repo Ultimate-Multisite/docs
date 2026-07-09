@@ -4,11 +4,11 @@ title: 'Sefe - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Lumella bahlahisi ho fetola dipharamitha tsa URL ya ho laola sebaka.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Lumella bahlahisi ho fetola dipharamitha tsa URL ya ho laola sebaka.
 | $id | `int` | ID ya sebaka. |
 | $site_hash | `string` | hash ya sebaka. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.0.9
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) moleng wa 214
 
 
-## Dikgutliso
+## Dikgutliso {#returns}
 URL ya ho laola e fetotsweng.

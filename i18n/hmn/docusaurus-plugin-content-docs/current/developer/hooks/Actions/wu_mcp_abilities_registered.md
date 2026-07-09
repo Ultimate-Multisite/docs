@@ -4,11 +4,11 @@ title: Kev ua - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Kev nqis tes: wu_mcp_abilities_registered
+# Kev nqis tes: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Khiav tom qab MCP abilities raug sau npe rau ib lub entity.
 
-## Cov parameter
+## Cov parameter {#parameters}
 
 | Npe | Hom | Kev piav qhia |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Khiav tom qab MCP abilities raug sau npe rau ib lub entity.
 | $model_name | `string` | Lub npe model. |
 | $this | `object` | Qhov manager instance. |
 
-### Txij thaum
+### Txij thaum {#since}
 
 - 2.5.0
-### Qhov chaw
+### Qhov chaw {#source}
 
 Tau txhais hauv [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) ntawm kab 171

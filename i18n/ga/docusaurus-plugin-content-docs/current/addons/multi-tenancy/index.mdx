@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Iltionóntacht
+# Iltionóntacht {#multi-tenancy}
 
 Dáil fo-shuíomhanna thar fhreastalaithe agus bunachair sonraí ar mhaithe le feidhmíocht agus slándáil
 
-## Buaicphointí eisiúna leagan 1.2.0
+## Buaicphointí eisiúna leagan 1.2.0 {#version-120-release-highlights}
 
 Cuireann Multi-Tenancy 1.2.0 an bhunchloch tionónta cheannasaigh leis do shreafaí oibre leithlisithe táirgthe:
 
@@ -25,21 +25,21 @@ Cuireann Multi-Tenancy 1.2.0 an bhunchloch tionónta cheannasaigh leis do shreaf
 
 Féach na treoracha úsáideora don [sreabhadh oibre imirce ceannasaí](/user-guide/getting-started/sovereign-migration-workflow), [leithlisiú iltionóntachta](/user-guide/configuration/multi-tenancy-isolation), agus [oibríochtaí tionónta cheannasaigh](/user-guide/administration/sovereign-tenant-operations).
 
-## Riachtanais
+## Riachtanais {#requirements}
 
 - WordPress 5.3 nó níos airde
 - PHP 7.4 nó níos airde
 - breiseán Multisite Ultimate (gníomhach)
 
-## Suiteáil
+## Suiteáil {#installation}
 
 1. Uaslódáil comhaid an bhreiseáin go dtí d’eolaire `/wp-content/plugins/`
 2. Gníomhachtaigh an breiseán tríd an roghchlár 'Plugins' in WordPress
 3. Cumraigh socruithe an bhreiseáin i riarachán an líonra
 
-## Forbairt
+## Forbairt {#development}
 
-### Socrú
+### Socrú {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struchtúr an Tionscadail
+### Struchtúr an Tionscadail {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Tástáil
+### Tástáil {#testing}
 
 Cuimsíonn an breiseán creat tástála cuimsitheach:
 
@@ -93,54 +93,54 @@ Cuimsíonn an breiseán creat tástála cuimsitheach:
 - **Clúdach Tástála**: Cumraithe chun clúdach cóid a rianú
 - **Tástáil Multisite**: Ritheann tástálacha i dtimpeallacht multisite
 
-### Caighdeáin Chóid
+### Caighdeáin Chóid {#code-standards}
 
 - **Caighdeáin Chódaithe WordPress**: Forfheidhmithe trí PHPCS
 - **Comhoiriúnacht PHP 7.4+**: Tacaítear le gnéithe nua-aimseartha PHP
 - **Anailís Statach**: Comhtháthú PHPStan do sheiceáil cineáil
 - **Nuachóiriú Cóid**: Rialacha Rector d’uasghráduithe PHP
 
-### Córas Tógála
+### Córas Tógála {#build-system}
 
 - **Próiseáil Sócmhainní**: Mionlaghdú do chomhaid CSS/JS
 - **Aistriúchán**: Giniúint comhaid POT
 - **Pacáistiú**: Cruthú cartlainne le haghaidh dáileacháin
 - **Mód Forbartha**: Sócmhainní neamh-mhionlaghdaithe le haghaidh dífhabhtaithe
 
-## Cumraíocht
+## Cumraíocht {#configuration}
 
 Tacaíonn an breiseán le roghanna cumraíochta éagsúla atá inrochtana trí chomhéadan riaracháin an líonra.
 
-### Cumraíocht tionónta cheannasaigh
+### Cumraíocht tionónta cheannasaigh {#sovereign-tenant-configuration}
 
 Do thionóntaí ceannasacha, cumraigh bunachar sonraí an tionónta, fréamh an chórais comhad, ceangal óstaigh an bhunachair sonraí, agus cumas an óstaigh sula ndéantar trácht a ródú chuig an tionónta. Rith fíorú imirce tar éis gach athrú a théann i bhfeidhm ar dhintiúir bunachair sonraí, ceangal óstaigh, ródú, nó soláthar úsáideoirí.
 
 Úsáid `localhost` amháin nuair a bhíonn am rite an tionónta agus deontais an bhunachair sonraí ag súil le soicéad áitiúil nó rochtain ar an meaisín céanna. Úsáid `127.0.0.1` nó óstainm seirbhíse nuair is é sin an t-óstach deontais atá cumraithe ag do sholáthraí.
 
-### Cumas Hostinger
+### Cumas Hostinger {#hostinger-capability}
 
 Oibríonn cumas iltionóntachta Hostinger leis an gcomhartha comhtháthaithe comhroinnte Hostinger. Deimhnigh go bhfuil an fearann i láthair in hPanel, go ndíríonn DNS ar an gcuntas Hostinger, agus go meaitseálann socruithe bhunachar sonraí an tionónta hPanel roimh fhíorú.
 
-## Hooks agus Scagairí
+## Hooks agus Scagairí {#hooks-and-filters}
 
-### Gníomhartha
+### Gníomhartha {#actions}
 
 - `ultimate-multisite-addon-template_init` - Spreagtar é tar éis thúsú an bhreiseáin
 - `ultimate-multisite-addon-template_loaded` - Spreagtar é tar éis gach comhad den bhreiseán a luchtú
 
-### Scagairí
+### Scagairí {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Athraigh socruithe an bhreiseáin
 - `ultimate-multisite-addon-template_enabled` - Sáraigh stádas cumasaithe/díchumasaithe an bhreiseáin
 
-## Ceadúnas
+## Ceadúnas {#license}
 
 Tá an breiseán seo ceadúnaithe faoin GPL v3 nó níos déanaí.
 
-## Tacaíocht
+## Tacaíocht {#support}
 
 Le haghaidh tacaíochta agus doiciméadúcháin, tabhair cuairt ar [MultisiteUltimate.com](https://multisiteultimate.com)
-## Loga Athruithe
+## Loga Athruithe {#changelog}
 
 - Leagan 1.2.0 (2026-06-03): cuir uathlogáil isteach tionónta gan staid, cumas iltionóntachta Hostinger, leithlisiú bunachair sonraí agus córais comhad de réir fo-shuíomh, geataí fíoraithe imirce ceannasaí, feabhsuithe ar thúsú tionónta/scríbhneoir bunachair sonraí, ceangal óstaigh MySQL inchumraithe, agus díchoimisiúnú ceannasach níos sábháilte leis.
 

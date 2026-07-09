@@ -4,11 +4,11 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Umožňuje vývojárom zasahovať do finálneho obsahu
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Umožňuje vývojárom zasahovať do finálneho obsahu
 | $to_replace | `array` | Pole obsahujúce zadržané zástupné symboly. |
 | $placeholder_count | `int` | Počet nájdených zástupných symbolov. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 1.4.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) na riadku 46
 
 
-## Vráti
+## Vráti {#returns}
 Obsah po úprave.

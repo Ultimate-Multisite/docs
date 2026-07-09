@@ -3,17 +3,17 @@ title: Instrumenta et Configuratio
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Instrumenta et Configuratio
+# Instrumenta et Configuratio {#tools-and-configuration}
 
 Theme Builder instrumento­rum copiam adhibet ut tuum WordPress situm perpendat, designet, et exstruat. In versione 1.16.0, **sd-ai-agent/site-scrape nunc est instrumentum Tier 1**, ita ut per defaltam in Theme Builder praesto sit. Superdav AI Agent v1.18.0 etiam introducit fasciculum socium provectum seorsum distributum pro processibus operis evolutoribus creditis; illa instrumenta non sunt pars fasciculi principalis WordPress.org et seorsum instituenda atque auctoranda sunt.
 
-## Instrumenta Praesto
+## Instrumenta Praesto {#available-tools}
 
-### Instrumenta Tier 1 (Semper Praesto)
+### Instrumenta Tier 1 (Semper Praesto) {#tier-1-tools-always-available}
 
 Instrumenta Tier 1 per defaltam in Theme Builder praesto sunt sine ulla configuratione addita.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Propositum:** Situs interretiales existentes perpendere ut inspirationem designi, structuram contenti, et functionem extrahat.
 
@@ -51,11 +51,11 @@ Designum example.com perpende et eo utere ut inspiratione pro meo situ.
 - Situs JavaScript-graves analysin limitatam habere possunt
 - Situs magni diutius ad perpendendum sumere possunt
 
-### Instrumenta Tier 2 (Optionalia)
+### Instrumenta Tier 2 (Optionalia) {#tier-2-tools-optional}
 
 Instrumenta Tier 2 praesto sunt cum explicite in optionibus Theme Builder habilitantur.
 
-#### Analytica Provecta
+#### Analytica Provecta {#advanced-analytics}
 
 Praebet mensuras efficientiae accuratas:
 
@@ -65,7 +65,7 @@ Praebet mensuras efficientiae accuratas:
 - Punctum accessibilitatis
 - Punctum optimarum consuetudinum
 
-#### Optimator Contenti
+#### Optimator Contenti {#content-optimizer}
 
 Perpendit et meliorationes suggerit pro:
 
@@ -75,11 +75,11 @@ Perpendit et meliorationes suggerit pro:
 - Structura contenti
 - Collocatione invitationis ad actionem
 
-### Instrumenta Tier 3 (Premium)
+### Instrumenta Tier 3 (Premium) {#tier-3-tools-premium}
 
 Instrumenta Tier 3 configurationem additam vel proprietates premium requirunt.
 
-#### Generator Contenti AI
+#### Generator Contenti AI {#ai-content-generator}
 
 Generat contentum pro:
 
@@ -89,7 +89,7 @@ Generat contentum pro:
 - Meta descriptionibus
 - Texto invitationis ad actionem
 
-#### Instrumenta Designi Provecta
+#### Instrumenta Designi Provecta {#advanced-design-tools}
 
 Praebet facultates designi provectas:
 
@@ -99,7 +99,7 @@ Praebet facultates designi provectas:
 - Theoriam colorum provectam
 - Optimizationem typographiae
 
-### Instrumenta Socia Provecta (Fasciculus Separatus)
+### Instrumenta Socia Provecta (Fasciculus Separatus) {#advanced-companion-tools-separate-package}
 
 Fasciculus socius provectus seorsum a principali emissione Superdav AI Agent distribuitur. Destinatur ambitibus evolutorum et dominorum situs creditorum, ubi administratores explicite sinunt agentem instrumentis magni momenti uti.
 
@@ -116,9 +116,9 @@ Facultates sociae provectae includere possunt:
 
 Haec ne describas ut instrumenta Theme Builder generaliter praesto pro omni institutione. Praesto sunt solum cum fasciculus socius provectus institutus, habilitatus, et ad administratores creditos restrictus est.
 
-## Configuratio Instrumentorum
+## Configuratio Instrumentorum {#tool-configuration}
 
-### Instrumenta Habilitare
+### Instrumenta Habilitare {#enabling-tools}
 
 Ut instrumenta addita in Theme Builder habilites:
 
@@ -127,7 +127,7 @@ Ut instrumenta addita in Theme Builder habilites:
 3. Instrumenta, prout opus est, activa vel inactiva fac
 4. Optiones serva
 
-### Permissiones Instrumentorum
+### Permissiones Instrumentorum {#tool-permissions}
 
 Quaedam instrumenta permissiones requirunt:
 
@@ -137,7 +137,7 @@ Quaedam instrumenta permissiones requirunt:
 - **Proprietates provectae** — subscriptionem premium requirere possunt
 - **Instrumenta socia provecta** — fasciculum Advanced seorsum distributum et fiduciam administratoris explicitam requirunt
 
-### API Claves et Credentialia
+### API Claves et Credentialia {#api-keys-and-credentials}
 
 Configura API claves pro instrumentis quae eas requirunt:
 
@@ -146,13 +146,13 @@ Configura API claves pro instrumentis quae eas requirunt:
 3. Connexionem proba
 4. Tute serva
 
-### Instituere Fasciculum Socium Provectum
+### Instituere Fasciculum Socium Provectum {#installing-the-advanced-companion-package}
 
 Fasciculus socius provectus seorsum a ZIP principali WordPress.org editur. Institue eum solum e canali distributionis officiali propositi pro emissione, deinde accessum ad administratores creditos restringe. Porta approbationis humanae et mores imaginum git recense antequam instrumenta systematis fasciculorum, database, WP-CLI, REST dispatcher, structoris plugin, administrationis usorum, vel mensurae comparativae in situ productionis habilites.
 
-## Uti sd-ai-agent/site-scrape
+## Uti sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Usus Fundamentalis
+### Usus Fundamentalis {#basic-usage}
 
 Roga Theme Builder ut situm interretialem perpendat:
 
@@ -161,7 +161,7 @@ Designum situs competitoris mei apud competitor.com perpende
 et meliorationes designi pro meo situ suggere.
 ```
 
-### Analysis Specifica
+### Analysis Specifica {#specific-analysis}
 
 Pete genera specifica analysis:
 
@@ -179,7 +179,7 @@ Aptationem mobilem example.com inspice et cura ut meus situs
 aeque aptus sit.
 ```
 
-### Analysis Comparativa
+### Analysis Comparativa {#comparison-analysis}
 
 Plures situs compara:
 
@@ -188,22 +188,22 @@ Compara designa site1.com et site2.com et crea designum
 quod optima elementa utriusque coniungat.
 ```
 
-## Limitationes et Considerationes Instrumentorum
+## Limitationes et Considerationes Instrumentorum {#tool-limitations-and-considerations}
 
-### Limitatio Frequentiae
+### Limitatio Frequentiae {#rate-limiting}
 
 - Scraping modis limitatur, ne ministratorium nimis oneretur
 - Plures petitiones ad eundem situm retardari possunt
 - Magni situs diutius ad analysin requirere possunt
 
-### Accuratio Contenti
+### Accuratio Contenti {#content-accuracy}
 
 - Contentum dynamicum fortasse non plene capietur
 - Contentum per JavaScript redditum incompletum esse potest
 - Data tempore reali fortasse non referentur
 - Aliquod contentum post muros solutionis esse potest
 
-### Considerationes Legales et Ethicae
+### Considerationes Legales et Ethicae {#legal-and-ethical-considerations}
 
 - Respice robots.txt et rationes situs
 - Noli contentum iure auctoris protectum ad reproductionem scraping facere
@@ -211,16 +211,16 @@ quod optima elementa utriusque coniungat.
 - Verifica te iura habere ad contentum extractum utendum
 - Sequere condiciones servitii situum analytorum
 
-### Effectus in Efficientiam
+### Effectus in Efficientiam {#performance-impact}
 
 - Scraping magnorum situum tempus sumere potest
 - Plura scraping simul facta tardiora esse possunt
 - Conexio retis celeritatem afficit
 - Magna copia datorum plus processus requirere potest
 
-## Optimae Consuetudines
+## Optimae Consuetudines {#best-practices}
 
-### Usus Analysis Situs
+### Usus Analysis Situs {#using-site-analysis}
 
 1. **Analysa plures situs** — inspirationem ex pluribus fontibus collige
 2. **Structurae attende** — exempla dispositionis et ordinationis disce
@@ -228,7 +228,7 @@ quod optima elementa utriusque coniungat.
 4. **Typographiam stude** — coniunctiones fontium quae tibi placent identifica
 5. **Navigationem recognosce** — ordinationem indicis intellege
 
-### Scraping Ethicum
+### Scraping Ethicum {#ethical-scraping}
 
 1. **Respice robots.txt** — praecepta situs sequere
 2. **Noli contentum imitari** — analysi tantum ad inspirationem utere
@@ -236,7 +236,7 @@ quod optima elementa utriusque coniungat.
 4. **Fontes attribue** — fontes inspirationis agnosce
 5. **Condiciones sequere** — condicionibus servitii situs obtempera
 
-### Maximizatio Efficaciae Instrumenti
+### Maximizatio Efficaciae Instrumenti {#maximizing-tool-effectiveness}
 
 1. **Esto specificus** — genera specifica analysis pete
 2. **Contextum praebe** — propositum situs tui explica
@@ -244,9 +244,9 @@ quod optima elementa utriusque coniungat.
 4. **Itera** — secundum eventus emenda
 5. **Instrumenta combina** — pluribus instrumentis utere ad analysin comprehensivam
 
-## Solutio Problematum
+## Solutio Problematum {#troubleshooting}
 
-### Situs Scraping Non Patitur
+### Situs Scraping Non Patitur {#site-wont-scrape}
 
 - Reprehende utrum situs publice accessibilis sit
 - Verifica robots.txt scraping permittere
@@ -254,7 +254,7 @@ quod optima elementa utriusque coniungat.
 - Conexum interretialem reprehende
 - Auxilium contacta si quaestio persistit
 
-### Analysis Incompleta
+### Analysis Incompleta {#incomplete-analysis}
 
 - Situs contentum dynamicum habere potest
 - JavaScript fortasse non plene redditur
@@ -262,7 +262,7 @@ quod optima elementa utriusque coniungat.
 - Conare paginas specificas potius analyzare
 - Genera specifica analysis pete
 
-### Effectus Tardus
+### Effectus Tardus {#slow-performance}
 
 - Magni situs diutius ad analysin requirunt
 - Plura scraping simul facta tardiora sunt
@@ -270,7 +270,7 @@ quod optima elementa utriusque coniungat.
 - Conare horis minus occupatis
 - Sectiones minores primum analysa
 
-## Documentatio Conexa
+## Documentatio Conexa {#related-documentation}
 
 - [Colloquium Inventionis](./discovery-interview.md) — informationem de consilio collige
 - [Directio Consilii](./design-direction.md) — consilium tuum excoli

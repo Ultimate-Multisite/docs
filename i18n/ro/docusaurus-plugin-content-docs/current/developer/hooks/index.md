@@ -3,11 +3,11 @@ title: Referință pentru hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referință hooks
+# Referință hooks {#hooks-reference}
 
 Documentație generată automat pentru toate cele **59 de actions** și **118 filters** din Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Se declanșează înainte de redirecționarea de autentificare.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Se declanșează imediat înainte ca modulul cookie de autentificare să fie setat.
@@ -70,7 +70,7 @@ Documentație generată automat pentru toate cele **59 de actions** și **118 fi
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Se declanșează după ce un obiect este stocat în baza de date.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permite dezvoltatorilor de plugin-uri să adauge acțiuni la procesul de deblocare.
 
-## Filtre
+## Filtre {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrează durata perioadei de expirare a cookie-ului de autentificare.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrează schema de redirecționare pentru autentificare.

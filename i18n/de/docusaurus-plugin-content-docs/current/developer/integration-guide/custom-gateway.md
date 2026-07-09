@@ -3,11 +3,11 @@ title: Entwicklung eines individuellen Gateways
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Entwicklung eines benutzerdefinierten Gateways
+# Entwicklung eines benutzerdefinierten Gateways {#custom-gateway-development}
 
 Du kannst benutzerdefinierte Zahlungs-Gateways erstellen, indem du die Klasse `Base_Gateway` erweiterst.
 
-## Gateway-Klasse
+## Gateway-Klasse {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Das Gateway registrieren
+## Das Gateway registrieren {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Wichtige Methoden
+## Wichtige Methoden {#key-methods}
 
 | Methode | Zweck |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Rückerstattungsanfragen verarbeiten |
 | `get_payment_methods()` | Gespeicherte Zahlungsmethoden für einen Kunden zurückgeben |
 
-## Verlängerungs-Zugangsdaten für wiederkehrende Mitgliedschaften
+## Verlängerungs-Zugangsdaten für wiederkehrende Mitgliedschaften {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ermöglicht Gateway-Integrationen zu melden, ob eine wiederkehrende Mitgliedschaft über wiederverwendbare Verlängerungs-Zugangsdaten verfügt, bevor `auto_renew` gespeichert wird. Hänge dich in `wu_membership_has_renewal_credential` ein und gib zurück:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Entferne die Markierung für fehlende Zugangsdaten als Teil des erfolgreichen erneuten Autorisierungsablaufs deines Gateways, nachdem neue wiederverwendbare Zugangsdaten gespeichert wurden.
 
-## Tipps
+## Tipps {#tips}
 
 - Gib bei Fehlern immer `WP_Error` zurück, damit Ultimate Multisite die Fehleranzeige handhaben kann
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Verwende `wu_log_add()` für Gateway-spezifisches Logging
 
-## Fähigkeiten von AI-Connector-Anbietern
+## Fähigkeiten von AI-Connector-Anbietern {#ai-connector-provider-capabilities}
 
 Benutzerdefinierte Integrationen, die AI-Connector-gestützte Vorgänge aufrufen, sollten sich am unterstützten OAuth-Anbieterset orientieren, das mit AI Provider for Anthropic Max v1.3.0 eingeführt wurde:
 

@@ -3,9 +3,9 @@ title: Mụrụ n'ụ V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrating from V1
+# Migrating from V1 {#migrating-from-v1}
 
-## Ultimate Multisite dijiye n'ụrụ na ebe 1.x family nke releases ya ọ bụ 2.x family of releases.
+## Ultimate Multisite dijiye n'ụrụ na ebe 1.x family nke releases ya ọ bụ 2.x family of releases. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite version 2.0 and up bụ ịgbanwe (rewrite) code-base ọ bụ la, nke ahịichị dị n'ime version ọ bụla a na version ọhụrụ. Oge n'ụzọ ahụ, ọ bụ ihe ọma dị n'etiti version ọ bụla a na ọhụrụ. Maka nchekwa nke ahụ, mgbe ị chọpụta (upgrading) n'ime 1.x zu 2.x, ị ga-agbanwe data gị n'ụzọ ndị ọhụrụ nwere ike ịghọta.
 
@@ -15,7 +15,7 @@ Nle a gbasara ihe migrator ahụ na ọ dị n'aka anọ n'ebe ọ bụrụ na e
 
 _**IMPORTANT: Ma ọ bụrụ na ị  ọ bụghị abụghị ịgba chọpụta (backup) database site gị mgbe ị chọpụta n'ime version 1.x zu version 2.0, biko jikọta nke ahụ.**_
 
-## Ihe ndị dị n'etiti
+## Ihe ndị dị n'etiti {#first-steps}
 
 Ihe ọkụ dị bụ ịgba file .zip na install version 2.0 ọrụ gị n'ime dashboard admin network-nwa gị.
 
@@ -49,17 +49,17 @@ Ihe ndị daalọọ bụ ịgba key license Ultimate Multisite ahụ ma ị ch�
 
 Ọ bụrụ na ịgbakọ license ahụ, ị nwere ike ịgụ ọrụ installation a by anya ma ọ bụ ka ị chọrọ ịgba ọsọ site **Install** na trang tupu. Oge a ga-arụ ihe ndị dị mma na database nke a dị mma pụtara version 2.0 ịrụ ọrụ.
 
-## Bây giờ, di migração (Now, the migration)
+## Bây giờ, di migração (Now, the migration) {#now-the-migration}
 
 Migrator-nya na-built-in safety feature. E ji ga ọchị ọchị n'aka mme check your entire multisite make sure say all your Ultimate Multisite data can be migrated without any issues. Click the **Run Check** button to start the process.
 
-### Na Oge Error (With Error)
+### Na Oge Error (With Error) {#with-error}
 
 Ọ bụrụ na ị chọta error message, ị ga-agba aka team support anyị so they fit help you fix the error. Make sure ị **provide the error log** when you create a ticket. You can download the log or you can click the link that says contact our support team. It will open the help widget on the right-hand side of your page with the fields pre-populated for you that include the error logs under the description.
 
 _**Since the system found an error, you won't be able to proceed to migrate to version 2.0. You can then roll back to version 1.x to resume running your network until the error is fixed.**_
 
-### Na Oge Error (Without Error)
+### Na Oge Error (Without Error) {#without-error}
 
 Ọ bụrụ na system ahụ la m nchekị anyị, ị ga-chọta success message and a **Migrate** button at the bottom that will allow you to proceed with the migration. On this page, they go remind you create a backup of your database before moving forward, which we strongly recommend. Hit **Migrate** if you already have a backup.
 

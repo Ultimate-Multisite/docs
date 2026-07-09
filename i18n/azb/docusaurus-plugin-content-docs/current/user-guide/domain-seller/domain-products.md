@@ -3,11 +3,11 @@ title: Domain Produk dan Harga
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Ürünleri ve Fiyatlandırma
+# Domain Ürünleri ve Fiyatlandırma {#domain-products-and-pricing}
 
 Domain ürünleri, fiyatlandırmayı, TLD'leri, WHOIS gizliliğini ve sağlayıcı seçimini kontrol ettiğiniz yerdir. Her domain ürünü, ek bir **Domain Ayarları** sekmesi bulunan standart bir Multisite Ultimate ürünüdür.
 
-## Bir domain ürünü oluşturma
+## Bir domain ürünü oluşturma {#creating-a-domain-product}
 
 1. **Network Admin › Ultimate Multisite › Products** yolunu izleyin
 2. **Add New**'a tıklayın
@@ -17,13 +17,13 @@ Domain ürünleri, fiyatlandırmayı, TLD'leri, WHOIS gizliliğini ve sağlayıc
 
 Domain ürünleri, ürün listesinde mor bir **Domain** rozeti ile görünür ve **Domain Products** sekmesi kullanılarak filtrelenebilir.
 
-## Domain ayarları sekmesi
+## Domain ayarları sekmesi {#domain-settings-tab}
 
-### Provider (Sağlayıcı)
+### Provider (Sağlayıcı) {#provider}
 
 Bu ürün için hangi kayıt kuruluşunun (registrar) kaydı yöneteceğini seçin. Varsayılan olarak, Domain Seller ayarlarında belirlenen global **Default provider** kullanılır.
 
-### Supported TLDs (Desteklenen TLD'ler)
+### Supported TLDs (Desteklenen TLD'ler) {#supported-tlds}
 
 Boş bırakmak, başka bir ürün tarafından eşleştirilmeyen tüm TLD'lere uygulanacak bir **catch-all ürün** oluşturur.
 
@@ -31,7 +31,7 @@ Sadece o uzantılara uygulanacak bir **TLD'ye özel ürün** oluşturmak için v
 
 **Ürün eşleştirme nasıl çalışır:** Bir müşteri bir domain aradığında, eklenti en spesifik eşleşen ürünü seçer. TLD listesinde `.com` bulunan bir ürün, catch-all ürününe göre önceliklidir. Eğer hiçbir TLD'ye özel ürün eşleşmezse, catch-all kullanılır. Hiç ürün yoksa, domain araması gösterilmez.
 
-### Markup type (Ek Ücret Türü)
+### Markup type (Ek Ücret Türü) {#markup-type}
 
 Üç mod, perakende fiyatınızın toptan maliyetten nasıl hesaplanacağını kontrol eder:
 
@@ -41,11 +41,11 @@ Sadece o uzantılara uygulanacak bir **TLD'ye özel ürün** oluşturmak için v
 | **Fixed markup (Sabit Ek Ücret)** | Sabit bir dolar miktarı ekler. 10 dolarlık bir domain için 5 dolarlık ek ücret, 15 dolar yapar. |
 | **Fixed price (Sabit Fiyat)** | Toptan maliyeti tamamen yok sayar. Her zaman girdiğiniz tutarı ücretlendirir. |
 
-### Introductory pricing (Tanıtım Fiyatlandırması)
+### Introductory pricing (Tanıtım Fiyatlandırması) {#introductory-pricing}
 
 İndirimli bir ilk yıl fiyatı sunmak için etkinleştirin. Düzenli **Renewal price** (2. yıl ve sonrası) fiyatının yanı sıra ayrı bir **Introductory price** (1. yıl fiyatı) belirleyin. Müşteri, yenileme sırasında ne bekleyeceğini bilmesi için her iki fiyatı da ödeme sırasında görür.
 
-### WHOIS privacy (WHOIS Gizliliği)
+### WHOIS privacy (WHOIS Gizliliği) {#whois-privacy}
 
 Bu ürün üzerinden kaydedilen domainler için WHOIS gizlilik korumasının sunulup sunulmayacağını kontrol eder.
 
@@ -59,7 +59,7 @@ Namecheap için WHOIS gizliliği WhoisGuard'ı (her zaman ücretsiz) kullanır. 
 
 ---
 
-## TLD İçe Aktarma ve Senkronizasyon
+## TLD İçe Aktarma ve Senkronizasyon {#tld-import-and-sync}
 
 Domain ürünleri, bağlı sağlayıcıdan çekilen gerçek zamanlı toptan fiyatlandırmayı gösterir. Bunun çalışması için TLD'lerin içe aktarılması gerekir.
 
@@ -70,7 +70,7 @@ Senkronizasyondan sonra, herhangi bir domain ürününün Domain Settings sekmes
 
 ---
 
-## Otomatik Yenileme
+## Otomatik Yenileme {#auto-renewal}
 
 Domain yenilemeleri, müşterinin üyelik durumuna bağlıdır:
 
@@ -90,7 +90,7 @@ Domain yaşam döngüsü olayları için e-posta şablon kimlikleri:
 
 ---
 
-## Yönetici: Manuel domain kaydı
+## Yönetici: Manuel domain kaydı {#admin-manual-domain-registration}
 
 Bir müşterinin ödeme yapmasını gerektirmeden onun adına bir domain kaydetmek için:
 

@@ -3,28 +3,28 @@ title: Pfupiso yeREST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Chirevo
+# REST API Chirevo {#rest-api-reference}
 
-## Kurongwa kweHwaro
+## Kurongwa kweHwaro {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Authentication:** API Key & Secret (HTTP Basic Auth kana URL Parameters)
 
-## Authentication
+## Authentication {#authentication}
 
-### Gonesa API
+### Gonesa API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Tora API Credentials
+### Tora API Credentials {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Nzira dzeAuthentication
+### Nzira dzeAuthentication {#authentication-methods}
 
 **HTTP Basic Auth (Inokurudzirwa):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## MaEndpoint Makuru
+## MaEndpoint Makuru {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **Base Route:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Base Route:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Base Route:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Base Route:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Base Route:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Base Route:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint
+## Registration Endpoint {#registration-endpoint}
 
 Endpoint ye`/register` inopa kuyerera kwakazara kwecheckout/registration:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## MaEndpoint eSovereign Tenant
+## MaEndpoint eSovereign Tenant {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inowedzera REST coverage ye sovereign tenant kune integrations dzinogadzira, kuongorora, kana kusimbisa tenants dzakazvimirira.
 
@@ -242,7 +242,7 @@ Mhinduro dzakajairika dze migration status dzinosanganisira:
 
 Tora `ready: false` sechinhu chinovhara pre-launch. Tarisa verification details, gadzirisa database host binding, queue, user provisioning, kana routing issue, wobva waedza verification zvakare.
 
-## Mhinduro dzeError
+## Mhinduro dzeError {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tora `ready: false` sechinhu chinovhara pre-launch. Tarisa verification details,
 }
 ```
 
-## Pagination uye Filtering
+## Pagination uye Filtering {#pagination-and-filtering}
 
 **Query Parameters:**
 ```http

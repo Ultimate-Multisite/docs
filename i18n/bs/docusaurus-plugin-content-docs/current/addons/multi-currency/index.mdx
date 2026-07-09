@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Višestručne Valute
+# Višestručne Valute {#multi-currency}
 
 Ultimate Multisite: Multi-Currency omogućava vašoj mreži da prima plaćanja u više valuta. Automatski konvertuje cijene koristeći žive ili ručno postavljene tečajevke, omogućava vam da postavite tačne cijene po proizvodu za bilo koju valutu i detektuje željenu valutu svakog posjetitelja putem geolokacije — sve to upravljano s jednog admin dashboarda.
 
-## Ključne značajke
+## Ključne značajke {#key-features}
 
 - **Automatska konverzija tečajeva** — cijene se konvertuju iz vaše osnovne valute koristeći tečajevke preuzete od odabranog provajdera
 - **Prilagođene cijene po proizvodu** — postavite tačne cijene specifične za valutu na bilo koji proizvod kako biste zaobišli automatsku konverziju
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency omogućava vašoj mreži da prima plaćanja u
 - **Detekcija valute bazirana na geolokaciji** — automatski predodređuje valutu koja odgovara zemlji posjetitelja
 - **Admin dashboard** — upravljajte aktivnim valutama, tečajevima i postavkama provajdera na jednom mjestu
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - Ultimate Multisite 2.0.0 ili noviji
 - Instalacija WordPress Multisite
 - PHP 7.4 ili noviji
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Postavite fajlove plugin-a u `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktivizujte plugin preko ekrana **Plugins** u WordPressu (Network Activate)
 3. Idite na **Ultimate Multisite → Multi-Currency** da otvorite admin dashboard
 4. Dodajte valute koje želite prihvatiti i konfigurišite provajdera tečajeva
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Admin dashboard za Višestručne Valute (**Ultimate Multisite → Multi-Currency**) je centralno mjesto za:
 
@@ -44,7 +44,7 @@ Admin dashboard za Višestručne Valute (**Ultimate Multisite → Multi-Currency
 - Pregled trenutnih tečajeva za sve aktivne valute
 - Postavljanje ručnih tečajeva kada automatski provajderi nisu pogodni
 
-### Provajderi tečajeva
+### Provajderi tečajeva {#exchange-rate-providers}
 
 | Provider | Opis |
 |---|---|
@@ -55,7 +55,7 @@ Admin dashboard za Višestručne Valute (**Ultimate Multisite → Multi-Currency
 
 Odaberite svoj provajder pod **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Tečajevi se mogu ručno osvježiti u bilo kojem trenutku ili se mogu zakazati za automatsko ažuriranje.
 
-### Prilagođene cijene po proizvodu
+### Prilagođene cijene po proizvodu {#per-product-pricing-overrides}
 
 Kada automatska konverzija nije dovoljno precizna, možete postaviti tačnu cijenu za određenu valutu na bilo koji proizvod:
 
@@ -66,7 +66,7 @@ Kada automatska konverzija nije dovoljno precizna, možete postaviti tačnu cije
 
 Proizvodi bez nadjačavanja koriste konvertovanu cijenu iz vaše osnovne valute.
 
-### Polje za odabir valute prilikom registracije
+### Polje za odabir valute prilikom registracije {#currency-selector-signup-field}
 
 Polje za odabir valute može se dodati vašem toku registracije/naplate kako bi kupci odabrali svoju željenu valutu prilikom registracije:
 
@@ -76,7 +76,7 @@ Polje za odabir valute može se dodati vašem toku registracije/naplate kako bi 
 
 Odabrana valuta se pohranjuje sa pretplatom i koristi se za sve naknadne naplate.
 
-### Detekcija valute bazirana na geolokaciji
+### Detekcija valute bazirana na geolokaciji {#geolocation-based-currency-detection}
 
 Kada je detekcija geolokacije aktivirana, addon mapira zemlju posjetitelja na valutu i predodređuje je u polju za odabir valute. Da biste aktivirali:
 
@@ -86,27 +86,27 @@ Kada je detekcija geolokacije aktivirana, addon mapira zemlju posjetitelja na va
 
 Ako ne postoji mapiranje za zemlju posjetitelja, koristi se osnovna valuta mreže kao rezervna opcija.
 
-## Često postavljana pitanja
+## Često postavljana pitanja {#frequently-asked-questions}
 
-### Šta se dešava ako provajder tečajeva nije dostupan?
+### Šta se dešava ako provajder tečajeva nije dostupan? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon se vraća na zadnje uspješno preuzete tečajevke. Ako nikada nisu preuzete tečajevke, vraća se na ručne tečajevke koje ste konfigurisali. Preporučuje se konfigurisati ručne tečajevke kao sigurnosnu mrežu.
 
-### Mogu li koristiti različite provajdere za različite valute?
+### Mogu li koristiti različite provajdere za različite valute? {#can-i-use-different-providers-for-different-currencies}
 
 Ne — jedan provajder je aktivan u bilo kojem trenutku za sve valute. Koristite **Manual** ako vam je potrebna potpuna kontrola nad pojedinačnim tečajevima.
 
-### Da li geolokacija zahtijeva zaseban plugin?
+### Da li geolokacija zahtijeva zaseban plugin? {#does-geolocation-require-a-separate-plugin}
 
 Nije potreban vanjski geolokacioni plugin. Addon koristi ugrađenu detekciju IP-a na zemlju u WordPressu. Za veću tačnost, posvećena geolokaciona usluga može se integrisati putem dostavljenih filter hook-ova.
 
-### Da li su prilagođene cijene po proizvodu primijenjene prije ili poslije poreza?
+### Da li su prilagođene cijene po proizvodu primijenjene prije ili poslije poreza? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Prilagođene cijene po proizvodu postavljaju cijenu prije poreza u ciljnoj valuti. Porez se izračunava na osnovu cijene nadjačavanja koristeći vaš postojeći sistem poreza.
 
-## Changelog
+## Changelog {#changelog}
 
-### Verzija 1.0.0 — Obraćeno 2026-04-02
+### Verzija 1.0.0 — Obraćeno 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Novo: Podrška za više valuta sa automatskom konverzijom tečajeva
 - Novo: Prilagođene cijene po proizvodu za tačne cijene specifične za valutu

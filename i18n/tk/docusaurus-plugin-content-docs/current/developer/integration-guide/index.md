@@ -3,13 +3,13 @@ title: Integrasiýa gollanmasy
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrasiýa gollanmasy
+# Integrasiýa gollanmasy {#integration-guide}
 
 Bu gollanma Ultimate Multisite bilen umumy integrasiýa nusgalaryny öz içine alýar, şol sanda daşarky hyzmatlara birikmek, ýörite töleg gateway-lerini gurmak we webhook-lary dolandyrmak.
 
 Izolirlenen tenant infrastrukturasy üçin, suweren tenant başlangyjy, migrasiýa barlagy, SSO we aýyrmak boýunça görkezmeler üçin [Multi-Tenancy integrasiýasy](./multi-tenancy) serediň.
 
-## CRM integrasiýasy
+## CRM integrasiýasy {#crm-integration}
 
 Täze müşderiler hasaba alnanda müşderi maglumatlaryny CRM-iňize sinhronlaň:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics integrasiýasy
+## Analytics integrasiýasy {#analytics-integration}
 
 Müşderi ýaşaýyş döwri boýunça esasy biznes wakalaryny yzarlaň:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Indiki ädimler
+## Indiki ädimler {#next-steps}
 
 - [Ýörite Gateway işläp düzmek](./custom-gateway) — Öz töleg gateway-iňizi guruň
 - [Webhook dolandyrmak](./webhooks) — Ýörite webhook endpoint-lerini dörediň

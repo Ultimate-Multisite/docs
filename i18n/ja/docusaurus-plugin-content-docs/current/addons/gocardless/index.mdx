@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless 決済
 
 GoCardless を使ったダイレクトデビットで、顧客が Multisite Ultimate のメンバーシップや商品を支払えるようにしましょう！
 
-## インストール
+## インストール {#installation}
 
 1. 'ultimate-multisite-gocardless' を '/wp-content/plugins/' ディレクトリにアップロードします
 2. WordPress の 'プラグイン' メニューから plugin を有効化します
 3. ステップごとのウィザードに従って plugin を設定します
 
-## 使い方ガイド
+## 使い方ガイド {#usage-guide}
 
 _GoCardless_ は、**ヨーロッパと英国**で利用できる決済ゲートウェイで、**ダイレクトデビット**決済に対応しています。
 
@@ -29,7 +29,7 @@ _GoCardless_ は、**ヨーロッパと英国**で利用できる決済ゲート
 
 _**注: GoCardless は次の通貨でのみ動作します:**_ **EUR、GBP、AUD、SEK、DKK。**
 
-## アドオンのインストール
+## アドオンのインストール {#installing-the-add-on}
 
 まず、Ultimate Multisite 用の GoCardless アドオンをインストールする必要があります。**Ultimate Multisite > 設定 > アドオン（サイドバー）**に移動し、その一覧から GoCardless アドオンを選択します。
 
@@ -37,7 +37,7 @@ _**注: GoCardless は次の通貨でのみ動作します:**_ **EUR、GBP、AUD
 
 ![決済ゲートウェイ設定](/img/config/settings-payment-gateways.png)
 
-## Access Token の取得
+## Access Token の取得 {#getting-an-access-token}
 
 _GoCardless_ で Account を作成します（**まずテストする**場合は _GoCardless_ サンドボックスで作成します。推奨です）。その後、ログインして **Developers** メニュー項目に移動します。
 
@@ -61,7 +61,7 @@ Access Token が画面に表示されます。それをコピーして、**Ultim
 
 最初の手順はこれで完了です。次に、webhook リスナーを設定する必要があります。
 
-## Webhook リスナーの設定
+## Webhook リスナーの設定 {#setting-up-the-webhook-listener}
 
 サブスクリプションを扱う場合、Ultimate Multisite はサブスクリプション状態の変更、新しい支払いの実行、その他同様の情報を受け取る必要があります。
 

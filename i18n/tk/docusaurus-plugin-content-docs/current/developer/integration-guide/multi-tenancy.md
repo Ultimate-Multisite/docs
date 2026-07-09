@@ -3,11 +3,11 @@ title: Köp kärendeçili integrasiýasy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy integrasiýasy
+# Multi-Tenancy integrasiýasy {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 özbaşdak tenantlar, migrasiýa barlagy we tenant ýaşaýyş sikliniň awtomatlaşdyrylmagy üçin birnäçe integrasiýa nokadyny üýtgedýär.
 
-## Tenant bootstrap akymy
+## Tenant bootstrap akymy {#tenant-bootstrap-flow}
 
 Tenantlary döredýän ýa-da üýtgedýän integrasiýalar şu tertibe eýermelidir:
 
@@ -20,13 +20,13 @@ Tenantlary döredýän ýa-da üýtgedýän integrasiýalar şu tertibe eýermel
 
 Özbaşdak tenantyň tor maglumat binýady birikmesini gaýtadan ulanyp biljekdigini çaklamaň. Addon tarapyndan üpjün edilýän tenant sanawyny we ýazýan ulanyjy abstraksiýalaryny ulanyň.
 
-## SSO we REST hooklar
+## SSO we REST hooklar {#sso-and-rest-hooks}
 
 Ýagdaýsyz tenant awtomatik giriş, maksat talaby, JTI gaýtadan ulanma goragy, möhlet çägi we gelip çykyş berkitmesi bolan gysga möhletli tokenleri ulanýar. Giriş düwmelerini ýa-da uzakdan dolandyryş baglanyşyklaryny goşýan integrasiýalar tenant giriş URL-lerini göni düzmegiň deregine goldanýan SSO akymy arkaly tenant saparlaryny döretmelidir.
 
 Tor tarapyndaky API audit wakalary we gündelik jemlemeler özbaşdak tenant gatewayleri üçin elýeterlidir. Tenant ýaşaýyş sikli endpointlerine jaň edýän daşarky ulgamlary sazlanda şol loglary ulanyň.
 
-## Özbaşdak müşderi amal URL-leri
+## Özbaşdak müşderi amal URL-leri {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 özbaşdak-tenant müşderi amallaryny Account, checkout, hasaplaşyk, hasap-faktura, saýt, şablon-çalşyrmak we domen-kartalaşdyrmak akymlary üçin esasy saýta yzyna ugrukdyrýar. Tenant tarapyndaky dolandyryş baglanyşyklaryny görkezýän integrasiýalar şol amallary esasy saýtdaky müşderi paneline gönükdirmeli we ulanyjy amaly tamamlandan soň tenanty yzyna dolanyp bilmeli bolsa, tassyklanan gaýdyp barmak nyşanyny goşmalydyr.
 
@@ -40,7 +40,7 @@ Döredilen URL `wu_sso_url` arkaly filterlenip galýar; ol SSO URL-ni, häzirki 
 
 Agzalyk, hasap-faktura, hasaplaşyk-salgysy, şablon ýa-da domen-dolandyryş ýagdaýyny özbaşdak tenantyň içinde gaýtalamaň. Tenant Dashboard-yny işe goýberiji hökmünde, esasy saýtdaky müşderi panelini bolsa dolandyrylýan amallar üçin esasy ýazgy ulgamy hökmünde kabul ediň.
 
-## Migrasiýa barlagy
+## Migrasiýa barlagy {#migration-verification}
 
 Migrasiýadan soň ýa-da ýaşaýyş sikli integrasiýasy tenant maglumatlaryny üýtgedenden soň, barlag derwezelerini işlediň:
 
@@ -49,10 +49,10 @@ Migrasiýadan soň ýa-da ýaşaýyş sikli integrasiýasy tenant maglumatlaryny
 
 Integrasiýalar şowsuz barlagy ýaýratma päsgelçiligi hökmünde kabul etmeli we şowsuzlyk çözülýänçä tenanty live diýip bellemezlikden gaça durmaly.
 
-## Tenanty pozmak
+## Tenanty pozmak {#tenant-deletion}
 
 Pozmak akymlary tenant maglumat binýady şahsyýet maglumatlarynyň arassalanmagy üçin addon teardown ýoluna jaň etmelidir. Daşarky integrasiýalar teardown üstünlikli bolandan soň üpjün ediji resurslaryny aýryp biler, ýöne barlag ýa-da async push işleri heniz işleýärkä host maglumat binýatlaryny ýa-da bukjalary pozmaly däldir.
 
-## Könelen maglumat binýady routeri
+## Könelen maglumat binýady routeri {#deprecated-database-router}
 
 Köne `Database_Router` deprecation stub bilen çalşyryldy. Täze integrasiýalar köne router class-a bagly bolmagyň deregine tenantlary häzirki saýt routeri we tenant sanawy API-leri arkaly kesgitlemelidir.

@@ -3,7 +3,7 @@ title: API Uç Noktasını Kaydet
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API endpoint
+# Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 Bu eğitimde, Ultimate Multisite /register API endpoint'ini kullanarak ağınızdaki yeni bir müşteri için tüm kayıt sürecini nasıl oluşturacağınızı ve bunu Zapier ile nasıl yapacağınızı öğreneceksiniz.
 
@@ -26,11 +26,11 @@ Bu süreç için API kimlik bilgilerine ihtiyacınız olacak. Bunları almak iç
 
 Şimdi, endpoint'i inceleyelim ve ardından Zapier'da bir kayıt eylemi oluşturalım.
 
-## Endpoint gövde parametreleri
+## Endpoint gövde parametreleri {#endpoint-body-parameters}
 
 Endpoint'e göndermemiz gereken minimum bilgiye genel bir bakış atalım. Bu makalenin sonunda tüm çağrıyı bulacaksınız.
 
-### Customer (Müşteri)
+### Customer (Müşteri) {#customer}
 
 Bu bilgi, Kullanıcı'yı ve Ultimate Multisite Müşterisi'ni oluşturma süreci için gereklidir:
 
@@ -40,25 +40,25 @@ Ağınızda oluşturulmuş müşteri ID'sini göndermeniz mümkündür. Gönderi
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership (Üyelik)**
+### **Membership (Üyelik)** {#membership}
 
 Bu nesne içinde ihtiyacımız olan tek bilgi Üyelik Durumu'dur (Membership Status).
 
 "membership" { "status" : "string", // "pending", "active", "trialing", "expired", "on-hold", "canceled" seçeneklerinden biri },
 
-### **Products (Ürünler)**
+### **Products (Ürünler)** {#products}
 
 Ürünler, ağınızdaki 1 veya daha fazla ürün ID'sinden oluşan bir dizi (array) ile verilir. Dikkat edin, bu endpoint ürün oluşturmaz. Ürün oluşturma endpoint'ini daha iyi anlamak için Ultimate Multisite'ın dokümantasyonunu kontrol edin.
 
 **"products" : [1,2],**
 
-### Payment (Ödeme)
+### Payment (Ödeme) {#payment}
 
 Membership'da olduğu gibi, burada da sadece duruma ihtiyacımız var.
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" seçeneklerinden biri },**
 
-### Site (Site)
+### Site (Site) {#site}
 
 Ve gövdeyi tamamlamak için, Site nesnesi içinde hem sitenin URL'sine hem de Başlığı'na ihtiyacımız var.
 
@@ -66,13 +66,13 @@ Ve gövdeyi tamamlamak için, Site nesnesi içinde hem sitenin URL'sine hem de B
 
 register endpoint'inin dönüşü, yeni oluşturulan üyelik bilgilerini içeren bir dizi olacaktır.
 
-## Zapier'da bir eylem oluşturma
+## Zapier'da bir eylem oluşturma {#creating-an-action-in-zapier}
 
 Bu yeni ve daha sağlam hesap oluşturma endpoint'inin tanıtılmasıyla, Zapier'da da yeni bir eyleme (action) erişeceksiniz.
 
 Zapier'ın yeni sürümünün sunduğu her şeyi kullanıp keyif aldığınızı biliyor musunuz? Daha fazla bilgi için buraya bakın. (link?)
 
-### Bir eylem oluşturma
+### Bir eylem oluşturma {#creating-an-action}
 
 Kayıt endpoint'ini Zapier ile nasıl kullanacağınızı daha iyi göstermek için, Google Forms ile bir entegrasyon oluşturalım. Bu form her doldurulup bilgi formun cevap sayfasında kaydedildiğinde, Ultimate Multisite ağı içinde yeni bir üyelik oluşturulacaktır.
 
@@ -102,7 +102,7 @@ Bilgiler ayarlandıktan sonra, son test aşamasına geçin. Son ekranda, endpoin
 
 Yeni Zap'ınızı test edin ve başarıyla tamamlanması gerekir. Herhangi bir hata oluşursa, tüm alanları kontrol edin ve doğru gönderilip gönderilmediğine bakın. Çok fazla bilgi olduğu için bazı şeyler gözden kaçabilir.
 
-### Tam endpoint parametreleri
+### Tam endpoint parametreleri {#complete-endpoint-parameters}
 
 İşte tam çağrı ve gönderilebilecek tüm alan olasılıkları.
 

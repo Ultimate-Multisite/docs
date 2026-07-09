@@ -3,13 +3,13 @@ title: Tasu saamine
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Tasu saamine (v2)
+# Tasu saamine (v2) {#getting-paid-v2}
 
 _**OLULINE MÄRKUS: see artikkel käsitleb Ultimate Multisite versiooni 2.x.**_
 
 Ultimate Multisite sisaldab sisseehitatud liikmesuse ja arvelduse süsteemi. Meie arveldussüsteemi toimimiseks oleme integreerinud levinumad e-kaubanduses kasutatavad makselüüsid. Ultimate Multisite vaikimisi makselüüsid on _Stripe_ , _PayPal_ ja käsitsi makse. Maksete vastuvõtmiseks saad kasutada ka _WooCommerce_ , _GoCardless_ ja _Payfast_ lahendusi, paigaldades nende vastavad lisad.
 
-## Põhiseaded
+## Põhiseaded {#basic-settings}
 
 Saad kõiki neid makselüüse seadistada Ultimate Multisite maksete seadetes. Leiad need, minnes jaotisse **Ultimate Multisite menüü > Seaded > Maksed.**
 
@@ -39,7 +39,7 @@ See takistab liikmesusel näimast automaatselt uuenevana, kui lüüs saab koguda
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kust lüüse leida:
+## Kust lüüse leida: {#where-to-find-the-gateways}
 
 Saad makselüüse seadistada samal lehel ( **Ultimate Multisite > Seaded > Maksed**). Otse **aktiivsete makselüüside** all näed: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ja _Manual_.
 
@@ -67,7 +67,7 @@ Siin on ka makselüüside seadete täielik vaade:
 
 Kui soovid nüüd kasutada makselüüsina _WooCommerce_ , _GoCardless_ või _Payfast_ lahendust, pead **paigaldama ja seadistama nende lisad**.
 
-### Kuidas paigaldada WooCommerce lisa:
+### Kuidas paigaldada WooCommerce lisa: {#how-to-install-the-woocommerce-add-on}
 
 Mõistame, et _Stripe_ ja _PayPal_ ei ole mõnes riigis saadaval, mis piirab või takistab Ultimate Multisite kasutajatel meie pluginat tõhusalt kasutada. Seetõttu lõime lisa _WooCommerce,_ integreerimiseks, mis on väga populaarne e-kaubanduse plugin. Arendajad üle maailma on loonud lisasid erinevate makselüüside integreerimiseks sellesse. Kasutasime seda ära, et laiendada makselüüside valikut, mida saad Ultimate Multisite arveldussüsteemiga kasutada.
 
@@ -95,7 +95,7 @@ Pärast selle aktiveerimist, kui teil pole WooCommerce pluginat oma veebisaidil 
 
 WooCommerce Integration lisamooduli kohta lisateabe lugemiseks **klõpsake siin**.
 
-### Kuidas paigaldada GoCardless lisamoodul:
+### Kuidas paigaldada GoCardless lisamoodul: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ lisamooduli paigaldamise sammud on peaaegu samad nagu _WooCommerce_ lisamooduli puhul. Minge lisamoodulite lehele ja valige **Ultimate Multisite: GoCardless Gateway** lisamoodul.
 
@@ -111,7 +111,7 @@ Pärast paigalduse lõppu suunatakse teid pluginate lehele. Siin klõpsake lihts
 
 Et teada saada, kuidas _GoCardless_ makseväravaga alustada, **lugege seda artiklit**.
 
-### Kuidas paigaldada Payfast lisamoodul:
+### Kuidas paigaldada Payfast lisamoodul: {#how-to-install-the-payfast-add-on}
 
 Minge lisamoodulite lehele ja valige **Ultimate Multisite: Payfast Gateway** lisamoodul.
 

@@ -3,25 +3,25 @@ title: Mudell taż-Żieda
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Mudell ta' Estensjoni
+# Mudell ta' Estensjoni {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Rekwiżiti
+## Rekwiżiti {#requirements}
 
 - WordPress 5.3 jew ogħla
 - PHP 7.4 jew ogħla
 - plugin Multisite Ultimate (attiv)
 
-## Installazzjoni
+## Installazzjoni {#installation}
 
 1. Tella' l-fajls tal-estensjoni fid-direttorju `/wp-content/plugins/` tiegħek
 2. Attiva l-plugin permezz tal-menu 'Plugins' f'WordPress
 3. Ikkonfigura s-settings tal-estensjoni fl-amministrazzjoni tan-network
 
-## Żvilupp
+## Żvilupp {#development}
 
-### Tħejjija
+### Tħejjija {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struttura tal-Proġett
+### Struttura tal-Proġett {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regoli għall-immodernizzar tal-kodiċi
 ```
 
-### Ittestjar
+### Ittestjar {#testing}
 
 L-estensjoni tinkludi qafas komprensiv għall-ittestjar:
 
@@ -75,44 +75,44 @@ L-estensjoni tinkludi qafas komprensiv għall-ittestjar:
 - **Kopertura tat-Testijiet**: Ikkonfigurata biex issegwi l-kopertura tal-kodiċi
 - **Ittestjar Multisite**: It-testijiet jitħaddmu f'ambjent multisite
 
-### Standards tal-Kodiċi
+### Standards tal-Kodiċi {#code-standards}
 
 - **Standards tal-Kodifikazzjoni ta' WordPress**: Infurzati permezz ta' PHPCS
 - **Kompatibbiltà ma' PHP 7.4+**: Karatteristiċi moderni ta' PHP appoġġjati
 - **Analiżi Statika**: Integrazzjoni ta' PHPStan għall-iċċekkjar tat-tipi
 - **Immodernizzar tal-Kodiċi**: Regoli ta' Rector għal aġġornamenti ta' PHP
 
-### Sistema tal-Bini
+### Sistema tal-Bini {#build-system}
 
 - **Ipproċessar tal-Assi**: Minifikazzjoni għal fajls CSS/JS
 - **Traduzzjoni**: Ġenerazzjoni ta' fajl POT
 - **Ippakkjar**: Ħolqien ta' arkivju għad-distribuzzjoni
 - **Modalità ta' Żvilupp**: Assi mhux minifikati għad-debugging
 
-## Konfigurazzjoni
+## Konfigurazzjoni {#configuration}
 
 L-estensjoni tappoġġja diversi għażliet ta' konfigurazzjoni aċċessibbli permezz tal-interface tal-amministrazzjoni tan-network.
 
-## Hooks u Filtri
+## Hooks u Filtri {#hooks-and-filters}
 
-### Azzjonijiet
+### Azzjonijiet {#actions}
 
 - `ultimate-multisite-addon-template_init` - Jiġi attivat wara l-inizjalizzazzjoni tal-estensjoni
 - `ultimate-multisite-addon-template_loaded` - Jiġi attivat wara li jitgħabbew il-fajls kollha tal-estensjoni
 
-### Filtri
+### Filtri {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Immodifika s-settings tal-estensjoni
 - `ultimate-multisite-addon-template_enabled` - Issupera l-istatus ta' attivazzjoni/diżattivazzjoni tal-estensjoni
 
-## Liċenzja
+## Liċenzja {#license}
 
 Din l-estensjoni hija lliċenzjata taħt il-GPL v3 jew aktar tard.
 
-## Appoġġ
+## Appoġġ {#support}
 
 Għal appoġġ u dokumentazzjoni, żur [MultisiteUltimate.com](https://multisiteultimate.com)
-## Reġistru tal-Bidliet
+## Reġistru tal-Bidliet {#changelog}
 
 - Verżjoni 1.0.1 (2025-09-28): semmi mill-ġdid il-prefiss għal ultimate-multisite; aġġorna t-text domain; żieda fil-verżjoni.
 

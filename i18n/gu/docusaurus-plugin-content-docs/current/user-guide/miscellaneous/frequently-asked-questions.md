@@ -3,7 +3,7 @@ title: વારંવાર પૂછાતા પ્રશ્નો
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# વારંવાર પૂછાતા પ્રશ્નો
+# વારંવાર પૂછાતા પ્રશ્નો {#frequently-asked-questions}
 
 અહીં કેટલાક **વારંવાર પૂછાતા પ્રશ્નો** છે જે support requests દરમિયાન વારંવાર આવે છે.
 

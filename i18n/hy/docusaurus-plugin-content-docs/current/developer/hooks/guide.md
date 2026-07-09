@@ -3,15 +3,15 @@ title: Հուքերի օգտագործման ուղեցույց
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks-ի օգտագործման ուղեցույց
+# Hooks-ի օգտագործման ուղեցույց {#hooks-usage-guide}
 
 Ultimate Multisite-ը տրամադրում է 200+ action hooks և 280+ filter hooks։ Այս էջը ընդգրկում է ամենահաճախ օգտագործվող hooks-ը՝ գործնական օրինակներով։ Լիարժեք ավտոմատ ստեղծված հղման համար դիտեք այս բաժնի մյուս էջերը։
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Հաճախորդի կենսաշրջան
+### Հաճախորդի կենսաշրջան {#customer-lifecycle}
 
-#### Հաճախորդի ստեղծումից հետո
+#### Հաճախորդի ստեղծումից հետո {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Հաճախորդի կարգավիճակի փոփոխություն
+#### Հաճախորդի կարգավիճակի փոփոխություն {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Կայքի hooks
+### Կայքի hooks {#site-hooks}
 
-#### Կայքի հրապարակումից հետո
+#### Կայքի հրապարակումից հետո {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Ձևանմուշի կիրառումից առաջ
+#### Ձևանմուշի կիրառումից առաջ {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership hooks
+### Membership hooks {#membership-hooks}
 
-#### Կարգավիճակի անցումներ
+#### Կարգավիճակի անցումներ {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Վճարման hooks
+### Վճարման hooks {#payment-hooks}
 
-#### Վճարումը ավարտված / ձախողված
+#### Վճարումը ավարտված / ձախողված {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout hooks
+### Checkout hooks {#checkout-hooks}
 
-#### Մշակումից առաջ / ավարտից հետո
+#### Մշակումից առաջ / ավարտից հետո {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Դոմենի hooks
+### Դոմենի hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Գնագոյացման զտիչներ
+### Գնագոյացման զտիչներ {#pricing-filters}
 
-#### Զամբյուղի ընդհանուր գումար
+#### Զամբյուղի ընդհանուր գումար {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Հարկային դրույքաչափեր
+#### Հարկային դրույքաչափեր {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Ձևանմուշի զտիչներ
+### Ձևանմուշի զտիչներ {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Սահմանափակումների զտիչներ
+### Սահմանափակումների զտիչներ {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway-ի զտիչներ
+### Gateway-ի զտիչներ {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout ձևի դաշտեր
+### Checkout ձևի դաշտեր {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Էլ․ նամակի բովանդակություն
+### Էլ․ նամակի բովանդակություն {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

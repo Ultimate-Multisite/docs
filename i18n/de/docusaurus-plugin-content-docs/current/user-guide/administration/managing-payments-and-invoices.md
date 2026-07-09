@@ -3,9 +3,9 @@ title: Zahlungen und Rechnungen verwalten
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Zahlungen und Rechnungen verwalten
+# Zahlungen und Rechnungen verwalten {#managing-payments-and-invoices}
 
-## Zahlungseinstellungen
+## Zahlungseinstellungen {#payment-settings}
 
 Bevor du Zahlungen empfangen kannst, musst du die zahlungsbezogenen Einstellungen konfigurieren. Navigiere zu **Ultimate Multisite → Einstellungen** und klicke auf den Tab **Payment**.
 
@@ -15,7 +15,7 @@ Hier ist eine vollständige Ansicht der Seite mit den Zahlungseinstellungen:
 
 ![Vollständige Seite der Zahlungseinstellungen](/img/admin/settings-payments-full.png)
 
-### Allgemeine Zahlungsoptionen
+### Allgemeine Zahlungsoptionen {#general-payment-options}
 
 In den allgemeinen Einstellungen kannst du Folgendes konfigurieren:
 
@@ -24,7 +24,7 @@ In den allgemeinen Einstellungen kannst du Folgendes konfigurieren:
 
 ![Einstellungen für Zahlungsgateways](/img/admin/settings-payments-options.png)
 
-### Payment Gateways
+### Payment Gateways {#payment-gateways}
 
 Ultimate Multisite unterstützt mehrere Zahlungsgateways. Du kannst jedes einzelne über den Tab Payment-Einstellungen aktivieren und konfigurieren.
 
@@ -40,11 +40,11 @@ Jedes Gateway hat einen eigenen Konfigurationsbereich, in dem du API-Schlüssel 
 
 ![Zusätzliche Gateway-Einstellungen](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox-Modus
+### Sandbox-Modus {#sandbox-mode}
 
 Du kannst den **Sandbox-Modus** aktivieren, um deine Zahlungsintegration zu testen, bevor sie live geht. Wenn der Sandbox-Modus aktiv ist, werden keine echten Abbuchungen vorgenommen.
 
-## Zahlungen anzeigen
+## Zahlungen anzeigen {#viewing-payments}
 
 Navigiere zur Seite **Payments** unter Ultimate Multisite, um alle Transaktionen in deinem Netzwerk zu sehen.
 
@@ -54,7 +54,7 @@ Du kannst Zahlungen nach Status filtern (abgeschlossen, ausstehend, fehlgeschlag
 
 Klicke auf eine Zahlung, um die vollständigen Details einschließlich der Positionen, der zugehörigen Mitgliedschaft, der Kundeninformationen und der Zahlungsgateway-Daten zu sehen.
 
-## Rechnungen
+## Rechnungen {#invoices}
 
 Ultimate Multisite kann automatisch Rechnungen für Zahlungen erstellen. Du kannst die Rechnungsvorlage und das Nummerierungsformat in den Payment-Einstellungen anpassen.
 

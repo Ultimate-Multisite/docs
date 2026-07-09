@@ -3,18 +3,18 @@ title: Uburyo bwo gukora uburyo bw'umuri
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Ibisya y'Uburyo mu nshuti ya Theme Builder: Scaffold na Gukora Theme Block
+# Ibisya y'Uburyo mu nshuti ya Theme Builder: Scaffold na Gukora Theme Block {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 igitangira uburyo bishobora kugera ku gukora no gukoresha theme block cyangwa custom ku chat interface.
 
-## Uburyo Bw'Ubwiramo (Overview)
+## Uburyo Bw'Ubwiramo (Overview) {#overview}
 
 Ibyiciro by'uburyo **scaffold-block-theme** n'ibyo byo **activate-theme** bishobora guhindura agents kugira ngo:
 - Kugera theme block zikoreshwa mu gukoresha (production-ready) aho uziye, bazishyira ku chat.
 - Gukora theme ku site yawe mu gihe cy'umwihariko nta gukoresha umuntu w'ubwoko.
 - Gukora ubushobozi bw'ubwujyu bwo kuvuga (visual identities) mu buryo bwo kwerekana uburyo bwo gukora ibyo byiza.
 
-## Gukora Theme Block (Scaffold Block Theme)
+## Gukora Theme Block (Scaffold Block Theme) {#scaffold-block-theme}
 
 Ibyiciro by'uburyo **scaffold-block-theme** bigira ngo bigere theme block ya WordPress yashobora gushyirwa mu buryo bwose, kandi bishobora gutanga ibi:
 
@@ -23,7 +23,7 @@ Ibyiciro by'uburyo **scaffold-block-theme** bigira ngo bigere theme block ya Wor
 - Styles na ibindi by'ubwoko (variations) bya block.
 - Metadata ya theme n'ibyo bishobora gukoresha mu kumenya uburyo bwo gukoresha.
 
-### Uburyo Bwo Gukoresha (How to Invoke)
+### Uburyo Bwo Gukoresha (How to Invoke) {#how-to-invoke}
 
 Mu chat yawe na Superdav AI Agent, ushobora kugira ngo wumva gukora theme:
 
@@ -38,7 +38,7 @@ Agent izakora iki:
 3. Gukora amafichier yose ya theme.
 4. Gutera theme kugira ngo ikoreshwa.
 
-### Icyo Bishobora Kwitwa (Expected Output)
+### Icyo Bishobora Kwitwa (Expected Output) {#expected-output}
 
 Iyo byiciro by'uburyo bigere mu buryo bwiza, uza kura:
 
@@ -56,11 +56,11 @@ Urugero rwa ubutumwa:
   Uburyo bwo gukoresha (Status): Ikoreshwa mu gihe
 ```
 
-## Gukora Theme (Activate Theme)
+## Gukora Theme (Activate Theme) {#activate-theme}
 
 Icyo **activate-theme** ni gukora uburyo w'ubwoko (theme) wako kugira ngo ubone ubutumwa bwo mu gihe cyangwa ubutumwa bwa hariye.
 
-### Uburyo Bwo Gukoresha
+### Uburyo Bwo Gukoresha {#how-to-invoke-1}
 
 Nyuma yemeza ubutumwa, uba mushobora gukoresha uko ubutumwa bwawe bishoboraga:
 
@@ -74,7 +74,7 @@ Cyangwa gukoresha ubutumwa hariye:
 "Kugira ngo nshobore ku butumwa Twentytwentyfour"
 ```
 
-### Icyo Gishoborwa Kwibonye
+### Icyo Gishoborwa Kwibonye {#expected-output-1}
 
 Iyo gukoresha byibonye neza:
 
@@ -92,7 +92,7 @@ Uburyo bwo kubona kuri modoka:
   Icyemezo: Shobora gushakira ku homepage kugira ngo umenye uburyo bwo kubona
 ```
 
-## Uburyo Bwo Gukora: Scaffolding no Gukoresha
+## Uburyo Bwo Gukora: Scaffolding no Gukoresha {#workflow-scaffold-and-activate}
 
 Uburyo bwawe bwa hariye bishobora gukoresha ibyo byose:
 
@@ -102,7 +102,7 @@ Uburyo bwawe bwa hariye bishobora gukoresha ibyo byose:
 4. **Gukoresha**: "Gukoresha ubutumwa ubu"
 5. **Kubona neza**: Gukora kuri site yacu kugira ngo umenye ko uburyo bwo kubona bwaragare.
 
-## Design Tokens no Gukora Icyemezo (Customization)
+## Design Tokens no Gukora Icyemezo (Customization) {#design-tokens-and-customization}
 
 Ibutumwa byitunganywe (scaffolded themes) bigira amakuru y'ubwoko bw'ubutumwa bwa WordPress (bishingiye ku `theme.json`) kugira ngo:
 
@@ -114,7 +114,7 @@ Ibutumwa byitunganywe (scaffolded themes) bigira amakuru y'ubwoko bw'ubutumwa bw
 
 Ibi makuru bigera mu `theme.json`, bikagira uburyo bwo gukora byiza kugira ngo umenye niba wumva ibyo byose ku butumwa bwakoze.
 
-## Icyemezo n'Amakuru
+## Icyemezo n'Amakuru {#limitations-and-notes}
 
 (This section is kept as is, translated naturally)
 
@@ -123,7 +123,7 @@ Ibi makuru bigera mu `theme.json`, bikagira uburyo bwo gukora byiza kugira ngo u
 
 Urugero rwa PHP rishobora yari ryigize mu themes ni rigera, gukoresha plugins cyangwa uburyo bwo gukoresha block themes.
 
-## Gukemura Ibibazo (Troubleshooting)
+## Gukemura Ibibazo (Troubleshooting) {#troubleshooting}
 
 **Theme ntirimo kuboneka nyuma yo gutanga (scaffolding)**
 - Shobora kumenya ko directory y'theme yari yashobora yitwa kandi yari yashobora gushyira (permissions) byiza.
@@ -140,7 +140,7 @@ Urugero rwa PHP rishobora yari ryigize mu themes ni rigera, gukoresha plugins cy
 - Shobora gukemura (clear) cyangwa gufata (clear) plugins zikoresha caching.
 - Shobora kumenya ko version ya WordPress yawe irimo uburyo bwo gukoresha tokens ugiye gukoresha.
 
-## Icyo Gufite Kwibonye (Next Steps)
+## Icyo Gufite Kwibonye (Next Steps) {#next-steps}
 
 Nyuma yo gutangira theme yawe, uza kuba ufite ubushobozi bwo:
 - Gutumia **Design System Aesthetics skill** kugira ngo ushuye umuntu mu buryo bwiza ku gukoresha typography, amagambo y'ubwoko (colors), n'ibyo byari bitandukanye (spacing).

@@ -4,23 +4,23 @@ title: Филтр - wu_checkout_form_register_domain_form_fields
 sidebar_label: wu_checkout_form_register_domain_form_fields
 _i18n_hash: 6d1f2eeb3abc57d82e1b8e4b949501c3
 ---
-# Филтр: wu_checkout_form_register_domain_form_fields
+# Филтр: wu_checkout_form_register_domain_form_fields {#filter-wucheckoutformregisterdomainformfields}
 
 Майдонҳои шакли checkout барои сабти доменро филтр мекунад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
 | $steps | `array` | Қадамҳои шакл. |
 | $membership | `\WP_Ultimo\Models\Membership` | Узвияти ҷорӣ. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 2.1.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L431) дар сатри 431 муайян шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}

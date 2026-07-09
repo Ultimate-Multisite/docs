@@ -3,28 +3,28 @@ title: Yfirlit yfir REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API tilvísun
+# REST API tilvísun {#rest-api-reference}
 
-## Grunnstillingar
+## Grunnstillingar {#base-configuration}
 
 **Grunn-URL:** `{site_url}/wp-json/wu/v2/`
 **Auðkenning:** API-lykill og leyndarmál (HTTP Basic Auth eða URL-færibreytur)
 
-## Auðkenning
+## Auðkenning {#authentication}
 
-### Virkja API
+### Virkja API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Sækja API-auðkenni
+### Sækja API-auðkenni {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Auðkenningaraðferðir
+### Auðkenningaraðferðir {#authentication-methods}
 
 **HTTP Basic Auth (mælt með):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kjarnaendapunktar
+## Kjarnaendapunktar {#core-endpoints}
 
-### 1. Viðskiptavina-API
+### 1. Viðskiptavina-API {#1-customers-api}
 
 **Grunnleið:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Vefja-API
+### 2. Vefja-API {#2-sites-api}
 
 **Grunnleið:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Aðildar-API
+### 3. Aðildar-API {#3-memberships-api}
 
 **Grunnleið:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Vöru-API
+### 4. Vöru-API {#4-products-api}
 
 **Grunnleið:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Greiðslu-API
+### 5. Greiðslu-API {#5-payments-api}
 
 **Grunnleið:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Léna-API
+### 6. Léna-API {#6-domains-api}
 
 **Grunnleið:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Skráningarendapunktur
+## Skráningarendapunktur {#registration-endpoint}
 
 Endapunkturinn `/register` veitir heilt checkout-/skráningarflæði:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endapunktar fyrir fullvalda leigjendur
+## Endapunktar fyrir fullvalda leigjendur {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 bætir við REST-umfjöllun um fullvalda leigjendur fyrir samþættingar sem útvega, skoða eða staðfesta einangraða leigjendur.
 
@@ -242,7 +242,7 @@ Dæmigerð svör um flutningsstöðu innihalda:
 
 Líttu á `ready: false` sem hindrun fyrir ræsingu. Athugaðu staðfestingarupplýsingarnar, lagaðu bindingu gagnagrunnshýsils, biðröð, útvegun notenda eða leiðarvandamál og reyndu síðan staðfestingu aftur.
 
-## Villusvör
+## Villusvör {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Líttu á `ready: false` sem hindrun fyrir ræsingu. Athugaðu staðfestingarupp
 }
 ```
 
-## Síðuskipting og síun
+## Síðuskipting og síun {#pagination-and-filtering}
 
 **Fyrirspurnarfæribreytur:**
 ```http

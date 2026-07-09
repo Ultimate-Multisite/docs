@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-post
+# E-post {#emails}
 
 Ultimate Multisite: Emails-tillägget låter nätverksägare tillhandahålla och hantera kunders e-postkonton tillsammans med webbplatser och medlemskap. Version 1.1.0 lägger till kundinriktad hantering av e-postkonton, enkel inloggning till webbmail, stöd för CyberPanel-vidarebefordrare och förbättringar av tillhandahållande vid checkout.
 
-## Viktiga funktioner
+## Viktiga funktioner {#key-features}
 
 * **Widget för kunders e-postkonton**: Kunder kan skapa och hantera postlådor från sin kontosida efter att de har ett aktivt e-postmedlemskap.
 * **Webmail SSO och magic links**: Kunder kan öppna webbmail direkt från kontosidan med autentisering med ett klick när providern stöder det.
@@ -20,14 +20,14 @@ Ultimate Multisite: Emails-tillägget låter nätverksägare tillhandahålla och
 * **CyberPanel-vidarebefordrare**: CyberPanel-baserade nätverk kan skapa och hantera e-postvidarebefordrare som en del av flödet för e-posttjänsten.
 * **Provider-medvetna inställningar**: Inställningssidan filtrerar providers till aktiva, konfigurerade integrationer så att administratörer bara ser användbara alternativ.
 
-## Krav
+## Krav {#requirements}
 
 * Ultimate Multisite 2.0.0 eller senare
 * WordPress Multisite-installation
 * Minst en konfigurerad integration med e-postprovider
 * Provider API-uppgifter med behörighet att skapa postlådor, ändra lösenord och utfärda åtkomstlänkar till webbmail där det stöds
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp plugin-filerna till `/wp-content/plugins/ultimate-multisite-emails`.
 2. Nätverksaktivera tillägget från **Plugins** i WordPress-nätverksadmin.
@@ -35,7 +35,7 @@ Ultimate Multisite: Emails-tillägget låter nätverksägare tillhandahålla och
 4. Aktivera de integrationer med e-postproviders som du vill att kunder ska använda.
 5. Spara inställningarna och testa sedan kontoskapande med en icke-produktionskund eller staging-webbplats.
 
-## Så fungerar flödet för att sälja e-post
+## Så fungerar flödet för att sälja e-post {#how-the-email-seller-flow-works}
 
 E-postförsäljning har två separata lager:
 
@@ -53,7 +53,7 @@ Det innebär att ett normalt kundflöde är:
 5. Panelen **E-postkonton** visas för det aktiva e-postmedlemskapet.
 6. Kunden klickar på **Skapa konto**, anger den lokala delen såsom `info`, anger ett lösenord och tillägget skapar `info@their-domain.com` hos den konfigurerade providern.
 
-## Konfigurera en e-postprodukt
+## Konfigurera en e-postprodukt {#configure-an-email-product}
 
 Skapa en e-postprodukt för varje e-postpaket du vill sälja eller ge bort. Om du är ny inom produktkonfiguration, börja med [Skapa din första prenumerationsprodukt](../../user-guide/configuration/creating-your-first-subscription-product) och återvänd sedan hit för de e-postspecifika inställningarna.
 
@@ -67,7 +67,7 @@ Skapa en e-postprodukt för varje e-postpaket du vill sälja eller ge bort. Om d
 
 Endast providers som är aktiverade och fullständigt konfigurerade på sidan **Integrationer** visas i providerväljaren. Om väljaren är tom, konfigurera och testa providern först.
 
-## Lägg till e-post i checkout
+## Lägg till e-post i checkout {#add-email-to-checkout}
 
 E-postprodukter erbjuds vanligtvis som tillägg till ett webbplatsabonnemang. Se [Checkout-formulär](../../user-guide/configuration/checkout-forms) för det allmänna arbetsflödet i checkout-redigeraren.
 
@@ -79,7 +79,7 @@ E-postprodukter erbjuds vanligtvis som tillägg till ett webbplatsabonnemang. Se
 
 E-postdomänen hämtas från kundens webbplatsdomän. Kunder anger inte e-postdomänen i steget för e-postprodukten.
 
-## Hantering av e-post på kundkonto
+## Hantering av e-post på kundkonto {#customer-account-email-management}
 
 Version 1.1.0 lägger till en widget för e-posthantering på kundens kontosida. Använd den när kunder ska kunna självbetjäna skapande och underhåll av postlådor för sina egna webbplatser.
 
@@ -94,7 +94,7 @@ Widgeten använder Ultimate Multisite-systemet för aktuella kontosideskontexter
 
 Om kunden inte ser e-postpanelen, kontrollera att de har ett **aktivt medlemskap för e-postprodukt**, att medlemskapet har kopplats till en webbplatsdomän och att produkten har en konfigurerad leverantör.
 
-## Ge en kund en kostnadsfri e-postplan
+## Ge en kund en kostnadsfri e-postplan {#giving-a-customer-a-free-email-plan}
 
 För att ge en kund e-post utan att debitera dem, bevilja **e-postberättigandet** först och skapa sedan brevlådan eller låt kunden skapa den.
 
@@ -106,7 +106,7 @@ Rekommenderade alternativ:
 
 Om du vill att kunden ska hantera brevlådan själv från kontosidan, se till att de har ett aktivt e-postmedlemskap för domänen. En manuellt skapad leverantörsbrevlåda utan det medlemskapet kan finnas, men kunden kanske inte ser självbetjäningspanelen för e-post för den.
 
-## Administratörsskapade konton och "Inget ordernummer"
+## Administratörsskapade konton och "Inget ordernummer" {#admin-created-accounts-and-no-order-number}
 
 Administratörssidan **E-postkonton** skapar eller redigerar en leverantörsbrevlåda. Det är inte det första steget för att sälja eller bevilja en e-postplan.
 
@@ -122,7 +122,7 @@ Använd den här arbetsordningen i stället:
 
 Om du bara behöver skapa en leverantörsbrevlåda för kunden och inte behöver självbetjäningshantering på kontosidan kan det administratörsskapade kontot räcka. Om du vill att kunden ska se och hantera den i Ultimate Multisite, skapa även e-postmedlemskapet.
 
-## Webmail SSO och inloggning med magisk länk
+## Webmail SSO och inloggning med magisk länk {#webmail-sso-and-magic-link-login}
 
 Webmail SSO ger kunder en direkt åtgärd för att **Öppna webbmail** från kontosidan. När det stöds av den aktiva leverantören begär tillägget en kortlivad åtkomst-URL och omdirigerar kunden till webbmail utan att be dem kopiera brevlådeuppgifter.
 
@@ -134,7 +134,7 @@ Leverantörers beteende kan variera:
 
 Aktivera webbmailåtkomst endast för leverantörer där du har konfigurerat de nödvändiga API-uppgifterna. Om åtgärden saknas för en leverantör, bekräfta först att leverantören är aktiv, konfigurerad och stöder inloggningslänkar för webbmail.
 
-## Provisionering i kassan
+## Provisionering i kassan {#checkout-provisioning}
 
 Tillägget provisionerar e-postens **medlemskapssammanhang** under checkout. Det registrerar leverantören, kontogränsen, kvoten och webbplatsdomänen så att kunder kan skapa sina egna brevlådenamn från kontosidan efter köp.
 
@@ -148,15 +148,15 @@ Rekommenderad lansering:
 
 Om provisioneringen misslyckas kan kundkontot och medlemskapet fortfarande finnas medan e-postmedlemskapet eller leverantörsbrevlådan kräver uppföljning av administratör. Kontrollera Ultimate Multisite-aktivitetsloggarna och leverantörsloggarna innan du försöker igen.
 
-## CyberPanel e-postvidarebefordringar
+## CyberPanel e-postvidarebefordringar {#cyberpanel-email-forwarders}
 
 För CyberPanel-baserade nätverk lägger version 1.1.0 till stöd för e-postvidarebefordring. Använd vidarebefordringar när kunder behöver adresser som `info@customer-domain.test` för att omdirigera e-post till en annan inkorg utan att skapa en fullständig brevlåda.
 
 Innan du erbjuder vidarebefordringar, bekräfta att CyberPanel-integrationen är konfigurerad och nåbar. Se guiden [CyberPanel-integration](../../user-guide/administration/cyberpanel-integration) för de nödvändiga konstanterna för värd, användarnamn, lösenord och paket.
 
-## Ändringslogg
+## Ändringslogg {#changelog}
 
-### Version 1.1.0 - Släppt 2026-05-05
+### Version 1.1.0 - Släppt 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Nytt: Webmail SSO och magic-link-inloggning — kunder kan komma åt webmail direkt från sitt Account med autentisering med ett klick.
 * Nytt: Funktionalitet för att ändra lösenord har lagts till i widgeten för hantering av e-postkonton.
@@ -170,28 +170,28 @@ Innan du erbjuder vidarebefordringar, bekräfta att CyberPanel-integrationen är
 * Korrigering: Loggspam per begäran borttagen från initialisering av Email_Account_Manager.
 * Förbättrat: Inställningssidan filtrerar nu för att endast visa aktiva och konfigurerade e-postleverantörer.
 
-## Vanliga frågor
+## Vanliga frågor {#frequently-asked-questions}
 
-### Kan kunder skapa sina egna e-postkonton?
+### Kan kunder skapa sina egna e-postkonton? {#can-customers-create-their-own-email-accounts}
 
 Ja. När kunden har ett aktivt e-postmedlemskap för en domän och produkten tillåter ytterligare konton kan kunder skapa och hantera sina egna brevlådor från Account-sidan.
 
-### Stöder varje leverantör webmail SSO?
+### Stöder varje leverantör webmail SSO? {#does-every-provider-support-webmail-sso}
 
 Nej. Stöd för SSO och magic-link beror på den aktiva e-postleverantören. Leverantörer utan ett API för åtkomstlänkar kan fortfarande stödja skapande av brevlådor och lösenordsändringar.
 
-### Kan administratörer skapa e-postkonton åt kunder?
+### Kan administratörer skapa e-postkonton åt kunder? {#can-administrators-create-email-accounts-for-customers}
 
 Ja. Administratörer kan skapa e-postkonton från administratörsgränssnittet, inklusive att ange det initiala lösenordet när kontot skapas. För självbetjäningshantering för kunder, se också till att kunden har ett aktivt e-postmedlemskap för domänen.
 
-### Kan jag ge bort ett e-postkonto gratis?
+### Kan jag ge bort ett e-postkonto gratis? {#can-i-give-an-email-account-away-for-free}
 
 Ja. Skapa en gratis/nollprissatt e-postprodukt och lägg till den som ett aktivt medlemskap för kunden, eller låt kunden slutföra checkout med 100 % rabatt. Efter att e-postmedlemskapet finns kan kunden eller en administratör skapa den faktiska brevlådan.
 
-### Varför ber tilldelning av ett e-postkonto om ett ordernummer?
+### Varför ber tilldelning av ett e-postkonto om ett ordernummer? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Membership-fältet slår upp ett befintligt Ultimate Multisite-medlemskap via dess referens-/ordernummer. Om kunden inte köpte en e-postprodukt och du inte manuellt har skapat ett e-postmedlemskap finns det inget e-postmedlemskap/ingen order att tilldela. Skapa e-postmedlemskapet först och skapa eller tilldela sedan brevlådan.
 
-### Är vidarebefordrare samma sak som brevlådor?
+### Är vidarebefordrare samma sak som brevlådor? {#are-forwarders-the-same-as-mailboxes}
 
 Nej. En brevlåda lagrar e-post och har inloggningsuppgifter. En vidarebefordrare omdirigerar e-post till en annan adress och tillhandahåller inte en separat inkorg.

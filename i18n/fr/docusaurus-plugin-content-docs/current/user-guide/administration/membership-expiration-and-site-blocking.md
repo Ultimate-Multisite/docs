@@ -3,11 +3,11 @@ title: Expiration de l'adhésion et blocage du site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expiration des adhésions et blocage du site
+# Expiration des adhésions et blocage du site {#membership-expiration-and-site-blocking}
 
 Ce guide explique comment Ultimate Multisite gère l'expiration des adhésions, la fin des périodes d'essai et le blocage du site sur le frontend. Il couvre le cycle de vie d'une adhésion, de l'état actif à l'état expiré, les paramètres qui contrôlent si les sites sont bloqués, et ce qu'il faut vérifier lorsque les sites restent accessibles après l'expiration d'une adhésion.
 
-## Cycle de vie du statut de l'adhésion
+## Cycle de vie du statut de l'adhésion {#membership-status-lifecycle}
 
 Chaque adhésion dans Ultimate Multisite possède l'un des statuts suivants :
 
@@ -24,7 +24,7 @@ Les adhésions gratuites n'expirent pas automatiquement. Ultimate Multisite les 
 | **Expired** | Passé la date d'expiration et la période de grâce sans renouvellement |
 | **Cancelled** | Annulé explicitement par le client ou l'administrateur |
 
-### Comment les adhésions passent à l'état expiré
+### Comment les adhésions passent à l'état expiré {#how-memberships-transition-to-expired}
 
 Ultimate Multisite exécute une vérification en arrière-plan **toutes les heures** pour rechercher les adhésions qui devraient être marquées comme expirées. Cette vérification utilise [Action Scheduler](https://actionscheduler.org/) (et non WP-Cron directement) et s'exécute sous forme d'action planifiée `wu_membership_check`.
 
@@ -34,7 +34,7 @@ La vérification d'expiration dispose par défaut d'une **période de grâce int
 La période de grâce d'expiration de 3 jours est distincte du paramètre de période de grâce de blocage du frontend décrit ci-dessous. La période de grâce d'expiration contrôle quand le **statut change** de actif/en attente à expiré. La période de grâce de blocage du frontend contrôle quand le **site est bloqué** après que le statut ait déjà changé.
 :::
 
-#### Adhésions auto-renouvelables vs. non auto-renouvelables
+#### Adhésions auto-renouvelables vs. non auto-renouvelables {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Cette distinction est essentielle pour comprendre le comportement d'expiration :
 
@@ -42,7 +42,7 @@ Cette distinction est essentielle pour comprendre le comportement d'expiration :
 
 - **Adhésions auto-renouvelables** (`auto_renew = true`) : La vérification d'expiration planifiée **ignore ces adhésions**. Le fournisseur de paiement (Stripe, PayPal, etc.) est censé notifier Ultimate Multisite via des webhooks lorsqu'un abonnement échoue ou est annulé. Si le webhook n'est pas reçu — en raison d'un point de terminaison mal configuré, d'une panne du fournisseur ou d'un abonnement annulé en dehors du système — l'adhésion peut rester `active` indéfiniment même après la date d'expiration.
 
-### Comment les périodes d'essai se terminent
+### Comment les périodes d'essai se terminent {#how-trials-end}
 
 Lorsqu'une période d'essai d'adhésion se termine, le système :
 
@@ -52,11 +52,11 @@ Lorsqu'une période d'essai d'adhésion se termine, le système :
 
 Ce processus s'exécute sur le même calendrier horaire que la vérification d'expiration régulière, mais **uniquement pour les adhésions non auto-renouvelables**. Pour les essais auto-renouvelables, le fournisseur de paiement gère la transition de l'essai à l'abonnement payant.
 
-## Bloquer l'accès au frontend
+## Bloquer l'accès au frontend {#block-frontend-access}
 
 Par défaut, lorsqu'une adhésion expire ou passe en attente, **seul le tableau de bord wp-admin est restreint**. Le frontend public du site reste accessible aux visiteurs. Pour bloquer également l'accès public, vous devez activer le paramètre **Block Frontend Access** (Bloquer l'accès au frontend).
 
-### Configuration du paramètre
+### Configuration du paramètre {#configuring-the-setting}
 
 Accédez à **Ultimate Multisite > Settings > Memberships** et activez **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Trois paramètres connexes contrôlent ce comportement :
 | **Frontend Block Grace Period** | Nombre de jours à attendre après que l'adhésion soit inactive avant de bloquer. Définir sur `0` pour bloquer immédiatement. | 0 |
 | **Frontend Block Page** | Une page sur le site principal à laquelle rediriger les visiteurs lorsqu'un site est bloqué. Si non défini, les visiteurs verront un message générique "Site not available". | None |
 
-### Ce que voient les visiteurs lorsqu'un site est bloqué
+### Ce que voient les visiteurs lorsqu'un site est bloqué {#what-visitors-see-when-a-site-is-blocked}
 
 Lorsque l'accès au frontend est bloqué, les visiteurs du site verront soit :
 
@@ -83,7 +83,7 @@ Lorsque l'accès au frontend est bloqué, les visiteurs du site verront soit :
 
 Les administrateurs de site peuvent toujours se connecter — la page de connexion n'est jamais bloquée.
 
-### Ce qui est bloqué et quand
+### Ce qui est bloqué et quand {#what-gets-blocked-and-when}
 
 Le comportement de blocage dépend du statut de l'adhésion :
 
@@ -104,21 +104,21 @@ Même si une période d'essai a pris fin, une adhésion avec le statut `trialing
 Les adhésions annulées sont toujours bloquées une fois que la date d'expiration est passée, peu importe si Block Frontend Access est activé. La Frontend Block Grace Period ne s'applique **pas** aux adhésions annulées.
 :::
 
-## Dépannage : Sites restant accessibles après expiration
+## Dépannage : Sites restant accessibles après expiration {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Si les sites restent accessibles au public après l'expiration d'une adhésion, suivez ces vérifications dans l'ordre :
 
-### 1. Vérifier que le paramètre Block Frontend Access est activé
+### 1. Vérifier que le paramètre Block Frontend Access est activé {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Allez à **Ultimate Multisite > Settings > Memberships** et confirmez que l'interrupteur **Block Frontend Access** est activé. Ce paramètre est **désactivé par défaut**, ce qui signifie que seul wp-admin est restreint lorsqu'une adhésion devient inactive.
 
-### 2. Vérifier la Frontend Block Grace Period
+### 2. Vérifier la Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 Sur la même page de paramètres, vérifiez la valeur de **Frontend Block Grace Period**. Si elle est définie à 7 jours, par exemple, le frontend ne sera pas bloqué avant 7 jours après la date d'expiration de l'adhésion — même si le statut de l'adhésion est déjà `expired`.
 
 Définissez-le sur `0` si vous souhaitez un blocage immédiat après que l'adhésion soit inactive.
 
-### 3. Confirmer que le statut de l'adhésion a réellement changé
+### 3. Confirmer que le statut de l'adhésion a réellement changé {#3-confirm-the-membership-status-has-actually-changed}
 
 Allez à **Ultimate Multisite > Memberships** et vérifiez le statut de l'adhésion concernée. Si elle affiche toujours `active` malgré le passage de la date d'expiration, la transition de statut n'a pas eu lieu. Causes courantes :
 
@@ -126,7 +126,7 @@ Allez à **Ultimate Multisite > Memberships** et vérifiez le statut de l'adhés
 
 - **La tâche planifiée n'a pas été exécutée** : Voir l'étape suivante.
 
-### 4. Vérifier qu'Action Scheduler fonctionne
+### 4. Vérifier qu'Action Scheduler fonctionne {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite utilise Action Scheduler pour ses tâches planifiées. Allez dans **Tools > Scheduled Actions** dans l'administration du réseau et recherchez :
 
@@ -148,7 +148,7 @@ Pour garantir une exécution fiable du cron, configurez une tâche cron système
 */5 * * * * cd /chemin/vers/wordpress && wp cron event run --due-now --url=https://votre-url-réseau.com
 ```
 
-### 5. Vérifier les problèmes de Webhook du fournisseur (Adhésions auto-renouvelables)
+### 5. Vérifier les problèmes de Webhook du fournisseur (Adhésions auto-renouvelables) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Si l'adhésion est auto-renouvelable et que l'abonnement du fournisseur a été annulé ou a échoué, mais qu'Ultimate Multisite l'affiche toujours comme `active` :
 
@@ -157,7 +157,7 @@ Si l'adhésion est auto-renouvelable et que l'abonnement du fournisseur a été 
 
 Si le fournisseur montre l'abonnement comme annulé mais qu'Ultimate Multisite ne le fait pas, la notification webhook a probablement été perdue. Vous pouvez changer manuellement le statut de l'adhésion dans **Ultimate Multisite > Memberships > [Modifier l'adhésion]**.
 
-### 6. Vérifier la période de grâce d'expiration (Niveau Cron)
+### 6. Vérifier la période de grâce d'expiration (Niveau Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 La vérification cron dispose de sa propre période de grâce (par défaut : 3 jours) avant de marquer une adhésion comme expirée. Ceci est distinct de la période de grâce de blocage du frontend. Le temps total avant que le site ne soit bloqué peut être :
 
@@ -165,7 +165,7 @@ La vérification cron dispose de sa propre période de grâce (par défaut : 3 j
 
 Par exemple, avec les paramètres par défaut et une période de grâce de blocage de 7 jours, il peut falloir jusqu'à 10 jours après la `date_expiration` avant que le site ne soit réellement bloqué.
 
-### 7. Expirer manuellement une adhésion
+### 7. Expirer manuellement une adhésion {#7-manually-expire-a-membership}
 
 Si vous devez bloquer immédiatement un site sans attendre le cycle cron, vous pouvez changer manuellement le statut de l'adhésion :
 
@@ -176,7 +176,7 @@ Si vous devez bloquer immédiatement un site sans attendre le cycle cron, vous p
 
 Le blocage du frontend prendra effet au prochain chargement de page (sous réserve de la période de grâce de blocage du frontend pour les adhésions expirées, ou immédiatement pour les adhésions annulées).
 
-## Résumé
+## Résumé {#summary}
 
 La chronologie complète de la date d'expiration au blocage du site :
 
@@ -208,7 +208,7 @@ Pour les adhésions annulées, le chemin est plus court :
   Le frontend du site est bloqué immédiatement
 ```
 
-## Référence développeur
+## Référence développeur {#developer-reference}
 
 Les hooks et filtres suivants vous permettent de personnaliser le comportement d'expiration et de blocage :
 

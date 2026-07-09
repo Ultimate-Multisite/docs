@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Gahunda Zipimwa
+# Gahunda Zipimwa {#metered-plans}
 
 Addon ya Ultimate Multisite: Gahunda Zipimwa ihindura uburyo wishyuza abakiriya bawe ishyiraho ubushobozi bworoshye bwo kwishyuza hashingiwe ku bipimo byakoreshejwe. Aho gukoresha imipaka ikomeye ihagarika abakoresha iyo bayirenze, shoboza amafaranga y’ikirenga yishyuza abakiriya mu buryo bwikora ku mikoreshereze y’inyongera.
 
-## Ibiranga by’Ingenzi
+## Ibiranga by’Ingenzi {#key-features}
 
 * **Kwishyuza Bishingiye ku Bipimo**: Ishyuza abakiriya hashingiwe ku mikoreshereze nyayo aho kuba ibyiciro bihamye
 * **Gucunga Ibirenga ku Bipimo**: Ishyuza mu buryo bwikora imikoreshereze irenze imipaka ya plan
@@ -21,14 +21,14 @@ Addon ya Ultimate Multisite: Gahunda Zipimwa ihindura uburyo wishyuza abakiriya 
 * **Gutanga Inyemezabwishyu mu Buryo Bwikora**: Kora inyemezabwishyu mu buryo bwikora iyo imipaka y’imikoreshereze irenzwe
 * **Raporo z’Imikoreshereze**: Isesengura rirambuye ry’imikoreshereze na raporo ku bakiriya n’abayobozi
 
-## Bibereye
+## Bibereye {#perfect-for}
 
 * **Abatanga Hosting**: Tanga plans zishobora kwaguka zikurana n’ibikenewe n’abakiriya
 * **SaaS Platforms**: Ishyuza hashingiwe ku mikoreshereze nyayo y’umutungo
 * **Imiyoboro y’Amasosiyete y’Imishinga**: Uburyo bworoshye bw’ibiciro ku mishinga y’abakiriya
 * **Reseller Hosting**: Shoboza abafatanyabikorwa gutanga ibiciro bishingiye ku mikoreshereze
 
-## Uko Bikora
+## Uko Bikora {#how-it-works}
 
 1. Tunganya umutungo upimwa (umwanya wa disiki, bandwidth, umubare wa sites, n’ibindi)
 2. Shyiraho imipaka ya base plan n’ibiciro by’ikirenga
@@ -37,13 +37,13 @@ Addon ya Ultimate Multisite: Gahunda Zipimwa ihindura uburyo wishyuza abakiriya 
 5. Inyemezabwishyu zikorwa mu buryo bwikora hashingiwe ku cyiciro cyo kwishyuza
 6. Abakiriya bashobora kureba imikoreshereze yabo n’amafaranga azishyurwa vuba ako kanya
 
-## Kwishyuza AI Token
+## Kwishyuza AI Token {#ai-token-billing}
 
 Version 1.1.0 yongeramo kwishyuza AI token ku networks zitanga ibiranga AI binyuze muri WordPress AI Client SDK. Gahunda Zipimwa yumva ibisabwa byo gukora AI byarangiye, ikandika imibare ya tokens zinjira n’izisohoka kuri subsite iriho, hanyuma igahindura izo tokens mo ikiguzi cya AI gishobora kwishyuzwa mu gihe cy’igihe cyo kwishyuza kiriho cy’umukiriya.
 
 Koresha kwishyuza AI token igihe ushaka gutanga ibikoresho bya AI kuri customer sites utitwaje ibiciro bya model bitateganyijwe. Buri gisabwa gihuzwa na subsite, umukiriya, membership, provider, na model kugira ngo abayobozi bashobore kugenzura imikoreshereze mu gihe abakiriya bashobora kubona uko imikoreshereze yabo ya AI igira ingaruka kuri account yabo.
 
-### Tunganya Ibiciro Kuri Token
+### Tunganya Ibiciro Kuri Token {#configure-per-token-rates}
 
 Ibiciro bya AI bitunganywa kuri buri model nk’ibiciro bitandukanye by’ibinjira n’ibisohoka. Ibiciro bibarwa kuri tokens miliyoni 1, bihuye n’impapuro z’ibiciro zisanzwe za AI providers.
 
@@ -55,7 +55,7 @@ Ibiciro bya AI bitunganywa kuri buri model nk’ibiciro bitandukanye by’ibinji
 
 Iyo model ID nyayo itatunganyijwe, Gahunda Zipimwa ishobora guhuza hakurikijwe prefix ya model. Urugero, igiciro cyatunganyijwe kuri `claude-sonnet-4` gishobora gukoreshwa kuri model IDs zifite timestamp zitangira n’iyo prefix. Developers bashobora kandi guhindura imbonerahamwe ya nyuma y’ibiciro bakoresheje filter ya [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### AI Connectors Zishyigikiwe
+### AI Connectors Zishyigikiwe {#supported-ai-connectors}
 
 Kwishyuza AI token bikorana na connectors zisohora events zo gukora za WordPress AI Client SDK kandi zikongeramo imikoreshereze ya token muri metadata y’igisubizo. Ibi birimo umuryango wa Ultimate Multisite AI connector wanditse hano:
 
@@ -65,13 +65,13 @@ Kwishyuza AI token bikorana na connectors zisohora events zo gukora za WordPress
 
 Custom connectors zishobora kwitabira zohereza events zisanzwe za `wp_ai_client_before_generate_result` na `wp_ai_client_after_generate_result` hamwe na metadata ya model, provider, n’imikoreshereze ya token. Igenamiterere rya connector rishyirwa mu bikorwa kuva kuri site nyamukuru kugera kuri subsites kugira ngo customer sites zikoreshe providers n’imipaka byemejwe na network.
 
-### Imikoreshereze ya Customer Account
+### Imikoreshereze ya Customer Account {#customer-account-usage}
 
 Abakiriya babona imikoreshereze ya AI hamwe n’indi mitungo yabo ipimwa mu gice cya account yabo. Umurongo w’ikiguzi cya AI werekana igiteranyo cy’igihe cyo kwishyuza kiriho gikomoka kuri prompt na completion tokens zanditswe, ibiciro bya model byatunganyijwe, n’allowance iyo ari yo yose ikubiye muri plan.
 
 Niba umukiriya afite uburyo bwo kwishyura buri muri dosiye, imikoreshereze irenze allowance ikubiyemo ifatwa nk’ikirenga gishobora kwishyuzwa. Niba plan itunganyijwe ku guhagarika gukomeye kandi umukiriya nta buryo bwo kwishyura afite buhari, ibisabwa bya AI bishobora guhagarikwa allowance imaze kugerwaho, maze umukiriya agasabwa kongeramo amakuru yo kwishyura mbere yo gukomeza.
 
-## Umutungo Ushyigikiwe
+## Umutungo Ushyigikiwe {#supported-resources}
 
 * Ububiko bwa disiki
 * Bandwidth/Kohereza amakuru
@@ -80,13 +80,13 @@ Niba umukiriya afite uburyo bwo kwishyura buri muri dosiye, imikoreshereze irenz
 * Imikoreshereze ya AI token n’ikiguzi cya AI
 * Ubwoko bw’umutungo bwihariye
 
-## Ibisabwa
+## Ibisabwa {#requirements}
 
 * Multisite Ultimate 2.0.0 cyangwa irenzeho
 * Ishyirwamo rya WordPress Multisite
 * PHP 7.4 cyangwa irenzeho
 
-## Gushyiramo
+## Gushyiramo {#installation}
 
 1. Ohereza dosiye za plugin kuri `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Koresha plugin unyuze kuri ecran ya 'Plugins' muri WordPress
@@ -94,24 +94,24 @@ Niba umukiriya afite uburyo bwo kwishyura buri muri dosiye, imikoreshereze irenz
 4. Tunganya umutungo wawe upimwa n’ibiciro
 5. Shoboza kwishyuza gupimwa kuri products muri product editor
 
-## Ibibazo Bikunze Kubazwa
+## Ibibazo Bikunze Kubazwa {#frequently-asked-questions}
 
-## Bigenda bite iyo umukiriya arenze umupaka we?
+## Bigenda bite iyo umukiriya arenze umupaka we? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Aho guhagarika uburenganzira bwo kugera, sisitemu ikurikirana uko kurenza byagenze maze ikabyongera kuri fagitire yabo ikurikira hashingiwe ku biciro wageneye.
 
-## Nshobora gushyiraho ibiciro bitandukanye byo kurenza ku bicuruzwa bitandukanye?
+## Nshobora gushyiraho ibiciro bitandukanye byo kurenza ku bicuruzwa bitandukanye? {#can-i-set-different-overage-rates-for-different-products}
 
 Yego, buri gicuruzwa gishobora kugira umutungo upimwa wihariye n'ibiciro byo kurenza.
 
-## Abakiriya bamenyeshwa bate ibyerekeye imikoreshereze?
+## Abakiriya bamenyeshwa bate ibyerekeye imikoreshereze? {#how-are-customers-notified-about-usage}
 
 Abakiriya bashobora kureba imikoreshereze yabo iriho muri dashboard yabo kandi bakakira imenyesha ry'ubushake igihe begereye cyangwa barenze imipaka.
 
-## Imikoreshereze ya AI token ishyirwaho igiciro ite?
+## Imikoreshereze ya AI token ishyirwaho igiciro ite? {#how-is-ai-token-usage-priced}
 
 Imikoreshereze ya AI token ishyirwaho igiciro hashingiwe ku biciro byinjira n'ibisohoka byagenwe mu model kuri buri token miliyoni 1. Metered Plans ikuba imibare ya prompt na completion token ya buri busabe n'ibyo biciro, ikongeraho igisubizo ku mafaranga y'igihe cyo kwishyurirwamo ya AI y'umukiriya ariho, kandi igakoresha allowance ya plan cyangwa amategeko yo kurenza.
 
-## Nshobora gukomeza gukoresha imipaka ikomeye?
+## Nshobora gukomeza gukoresha imipaka ikomeye? {#can-i-still-use-hard-limits}
 
 Yego, metered billing ni iy'ubushake kuri buri gicuruzwa. Ushobora kuvanga ibicuruzwa gakondo bifite imipaka ikomeye n'ibicuruzwa bipimwa.

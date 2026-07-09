@@ -3,13 +3,13 @@ title: Effettuare il downgrade di un piano
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Effettuare il downgrade di un piano (v2)
+# Effettuare il downgrade di un piano (v2) {#downgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
 Effettuare il downgrade di un piano o di un abbonamento è un’azione comune che i tuoi clienti potrebbero compiere se hanno un budget limitato o hanno deciso che non avranno bisogno di molte risorse per gestire il loro sottosito.
 
-## Come effettuare il downgrade di un piano
+## Come effettuare il downgrade di un piano {#how-to-downgrade-a-plan}
 
 I tuoi clienti possono effettuare il downgrade del loro piano in qualsiasi momento accedendo alla Dashboard di amministrazione del loro sottosito e facendo clic su **Change** nella pagina del loro Account.
 
@@ -25,7 +25,7 @@ Per procedere, l’utente deve semplicemente fare clic sul pulsante **Complete C
 
 ![Pagina Account che mostra il banner di modifica della membership in sospeso](/img/account-page/pending-change.png)
 
-### Cosa succede quando un utente effettua il downgrade del proprio piano
+### Cosa succede quando un utente effettua il downgrade del proprio piano {#what-happens-when-a-user-downgrades-their-plan}
 
 È importante notare che il downgrade del piano non modifica la configurazione esistente nel sottosito dell’utente.
 
@@ -37,7 +37,7 @@ Per gli articoli che superano il limite impostato nel piano, hai 3 diverse opzio
 
 ![Pagina Sites delle impostazioni Network Admin che mostra le opzioni di comportamento per il superamento del limite degli articoli](/img/account-page/settings-sites-post-limit.png)
 
-### Cosa succede al pagamento
+### Cosa succede al pagamento {#what-happens-to-the-payment}
 
 Nella versione 2.0, non richiede più alcun adeguamento del pagamento in termini di ripartizione proporzionale.
 

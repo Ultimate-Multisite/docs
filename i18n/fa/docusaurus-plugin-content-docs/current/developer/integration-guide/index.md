@@ -3,13 +3,13 @@ title: راهنمای یکپارچه‌سازی
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# راهنمای یکپارچه‌سازی
+# راهنمای یکپارچه‌سازی {#integration-guide}
 
 این راهنما الگوهای رایج یکپارچه‌سازی با Ultimate Multisite را پوشش می‌دهد، از جمله اتصال به سرویس‌های خارجی، ساخت درگاه‌های پرداخت سفارشی، و مدیریت webhooks.
 
 برای زیرساخت مستأجر ایزوله، برای راهنمایی درباره bootstrap مستأجر مستقل، تأیید مهاجرت، SSO، و teardown به [یکپارچه‌سازی چندمستأجری](./multi-tenancy) مراجعه کنید.
 
-## یکپارچه‌سازی CRM
+## یکپارچه‌سازی CRM {#crm-integration}
 
 وقتی مشتریان جدید ثبت‌نام می‌کنند، داده‌های مشتری را با CRM خود همگام‌سازی کنید:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## یکپارچه‌سازی Analytics
+## یکپارچه‌سازی Analytics {#analytics-integration}
 
 رویدادهای کلیدی کسب‌وکار را در سراسر چرخه عمر مشتری پیگیری کنید:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## گام‌های بعدی
+## گام‌های بعدی {#next-steps}
 
 - [توسعه Gateway سفارشی](./custom-gateway) — درگاه پرداخت خودتان را بسازید
 - [مدیریت Webhook](./webhooks) — endpointهای webhook سفارشی ایجاد کنید

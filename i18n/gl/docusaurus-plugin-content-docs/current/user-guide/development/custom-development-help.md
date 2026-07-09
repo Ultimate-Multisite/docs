@@ -3,13 +3,13 @@ title: Axuda coa desenvolvemento personalizado
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Como Obter Ajuda de Desenvolvimento Personalizado do Codeable?
+# Como Obter Ajuda de Desenvolvimento Personalizado do Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Às vezes, precisamos mesmo de alguma personalização incrível para fazer os nossos fluxos de rede exatamente como queremos. Se é isso que procura, recomendamos o [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), um sítio onde pode encontrar programadores experientes com especialidade em Ultimate Multisite.
 
 O [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) é uma plataforma que liga clientes a programadores freelancers qualificados de WordPress, capazes de trabalhar em projetos de qualquer tamanho. Eles têm um processo de candidatura muito cuidadoso para garantir que é associado a especialistas especificamente qualificados para a tarefa que tem em mente.
 
-### Como criar um projeto no Codeable?
+### Como criar um projeto no Codeable? {#how-to-create-a-project-in-codeable}
 
 Primeiro, vá ao [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) e clique no botão **Start a Project** (Iniciar um Projeto).
 

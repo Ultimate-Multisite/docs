@@ -3,11 +3,11 @@ title: Kaŝmemorigado de promptoj konscia pri provizanto
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provizanto-konscia prompt-kaŝmemorigado
+# Provizanto-konscia prompt-kaŝmemorigado {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 enkondukas **provizanto-konscian prompt-kaŝmemorigadon**, kiu optimumigas API-kostojn kaj atendotempon per kaŝmemorigado de promptoj tra malsamaj LLM-provizantoj. Ĉiu provizanto havas malsamajn kaŝmemorigajn mekanismojn kaj agordojn.
 
-## Superrigardo
+## Superrigardo {#overview}
 
 Prompt-kaŝmemorigado permesas al vi:
 
@@ -23,11 +23,11 @@ Malsamaj provizantoj efektivigas kaŝmemorigadon malsame:
 - **OpenRouter**: Provizanto-specifa kaŝmemorigado
 - **Vertex Anthropic**: Prompt-kaŝmemorigado kun kaŝmemora kontrolo
 
-## Google Gemini: `cachedContents` API
+## Google Gemini: `cachedContents` API {#google-gemini-cachedcontents-api}
 
 Google Gemini provizas eksplicitan kaŝmemoran administradon per la `cachedContents` API.
 
-### Agordo
+### Agordo {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Krei kaŝmemorigitan prompton
+### Krei kaŝmemorigitan prompton {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Uzi kaŝmemorigitan prompton
+### Uzi kaŝmemorigitan prompton {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Kaŝmemora vivociklo
+### Kaŝmemora vivociklo {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Plej bonaj praktikoj por Gemini
+### Plej bonaj praktikoj por Gemini {#best-practices-for-gemini}
 
 - **Agordu taŭgan TTL**: Ekvilibrigu kostajn ŝparojn kontraŭ kaŝmemora malfreŝeco
 - **Kaŝmemorigu sistemajn promptojn**: Reuzu la saman sisteman prompton tra petoj
 - **Kontrolu kaŝmemoran uzadon**: Spuru kiuj kaŝmemoroj estas plej uzataj
 - **Purigu eksvalidiĝintajn kaŝmemorojn**: Periode forigu neuzatajn kaŝmemorojn
 
-## Azure OpenAI: Prompt-kaŝmemorigado
+## Azure OpenAI: Prompt-kaŝmemorigado {#azure-openai-prompt-caching}
 
 Azure OpenAI subtenas prompt-kaŝmemorigadon kun aŭtomata TTL-administrado.
 
-### Agordo
+### Agordo {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Ebligi kaŝmemorigadon
+### Ebligi kaŝmemorigadon {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Kaŝmemoraj kaplinioj
+### Kaŝmemoraj kaplinioj {#cache-headers}
 
 Azure OpenAI uzas HTTP-kapliniojn por kaŝmemora kontrolo:
 
@@ -152,7 +152,7 @@ Subtenataj valoroj:
 - `no_cache`: Ne kaŝmemorigi ĉi tiun peton
 - `no_store`: Ne kaŝmemorigi kaj ne reuzi
 
-### Kontroli kaŝmemoran uzadon
+### Kontroli kaŝmemoran uzadon {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Plej bonaj praktikoj por Azure OpenAI
+### Plej bonaj praktikoj por Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Uzu konsekvencajn promptojn**: Identaj promptoj profitas de kaŝmemorigado
 - **Agordu prudentan TTL**: Ekvilibrigu koston kontraŭ freŝeco
 - **Kontrolu kaŝmemorajn metrikojn**: Spuru kaŝmemoran kreadon kontraŭ trafoj
 - **Grupe sendu similajn petojn**: Grupigu petojn por maksimumigi kaŝmemorajn trafojn
 
-## OpenRouter: Provizanto-specifa kaŝmemorigado
+## OpenRouter: Provizanto-specifa kaŝmemorigado {#openrouter-provider-specific-caching}
 
 OpenRouter subtenas kaŝmemorigadon per subaj provizantoj (OpenAI, Anthropic, ktp.).
 
-### Agordo
+### Agordo {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Uzi OpenRouter-kaŝmemorigadon
+### Uzi OpenRouter-kaŝmemorigadon {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Provizanto-specifaj opcioj
+### Provizanto-specifaj opcioj {#provider-specific-options}
 
 Malsamaj provizantoj havas malsamajn kaŝmemorigajn mekanismojn:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Plej bonaj praktikoj por OpenRouter
+### Plej bonaj praktikoj por OpenRouter {#best-practices-for-openrouter}
 
 - **Konu la kaŝmemorigadon de via provizanto**: Ĉiu provizanto havas malsamajn mekanismojn
 - **Testu kaŝmemoran konduton**: Kontrolu ke kaŝmemorigado funkcias kun via elektita provizanto
 - **Kontrolu kostojn**: Spuru ŝparojn el kaŝmemorigado
 - **Uzu konsekvencajn modelojn**: Ŝanĝi modelojn rompas kaŝmemorajn trafojn
 
-## Vertex Anthropic: Prompt-kaŝmemorigado kun kaŝmemora kontrolo
+## Vertex Anthropic: Prompt-kaŝmemorigado kun kaŝmemora kontrolo {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) subtenas prompt-kaŝmemorigadon kun eksplicita kaŝmemora kontrolo.
 
-### Agordo
+### Agordo {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Uzado de Vertex Anthropic-kaŝmemorado
+### Uzado de Vertex Anthropic-kaŝmemorado {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Tipoj de Cache Control
+### Tipoj de Cache Control {#cache-control-types}
 
 - **ephemeral**: Kaŝmemoro dum la daŭro de la peto (defaŭlte)
 - **persistent**: Kaŝmemoro trans pluraj petoj (se subtenata)
 
-### Monitorado de kaŝmemora uzado
+### Monitorado de kaŝmemora uzado {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Plej bonaj praktikoj por Vertex Anthropic
+### Plej bonaj praktikoj por Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Uzu ephemeral-kaŝmemoradon**: Bona por unusesia kaŝmemorado
 - **Agordu max_tokens taŭge**: Ekvilibrigu kaŝmemoran grandecon kontraŭ kosto
 - **Monitoru kaŝmemorajn metrikojn**: Spuru kaŝmemoran efikecon
 - **Testu per via laborŝarĝo**: Kontrolu ke kaŝmemorado utilas al via uzokazo
 
-## Transprovizanta kaŝmemora strategio
+## Transprovizanta kaŝmemora strategio {#cross-provider-caching-strategy}
 
-### Unuigita agordo
+### Unuigita agordo {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Detekto de provizanto
+### Detekto de provizanto {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Rezerva strategio
+### Rezerva strategio {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kosta optimumigo
+## Kosta optimumigo {#cost-optimization}
 
-### Kalkuli ŝparojn
+### Kalkuli ŝparojn {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimumigaj konsiletoj
+### Optimumigaj konsiletoj {#optimization-tips}
 
 - **Kaŝmemoru grandajn sistemajn instigojn**: Plej grandaj kostŝparoj
 - **Reuzu kuntekston**: Kaŝmemoru ofte uzatajn kuntekstajn dokumentojn
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Monitoru kaŝmemoran efikecon**: Spuru realajn ŝparojn
 - **Ĝustigu TTL**: Ekvilibrigu koston kontraŭ freŝeco
 
-## Problemsolvado
+## Problemsolvado {#troubleshooting}
 
-### Kaŝmemoro ne estas uzata
+### Kaŝmemoro ne estas uzata {#cache-not-being-used}
 
 - Kontrolu ke kaŝmemorado estas ebligita en agordo
 - Kontrolu ke instigoj estas identaj (kaŝmemorado postulas ĝustan kongruon)
 - Kontrolu ke kaŝmemoro ne eksvalidiĝis
 - Kontrolu provizanto-specifajn kaŝmemorajn limojn
 
-### Kreado de kaŝmemoro malsukcesas
+### Kreado de kaŝmemoro malsukcesas {#cache-creation-failing}
 
 - Kontrolu ke kaŝmemora grandeco estas ene de provizantaj limoj
 - Kontrolu ke kaŝmemora kontrolsintakso estas ĝusta
 - Certigu ke provizanto subtenas kaŝmemoradon por via modelo
 - Reviziu provizantan dokumentaron pri limigoj
 
-### Neatenditaj kostoj
+### Neatenditaj kostoj {#unexpected-costs}
 
 - Monitoru kaŝmemoran kreadon kontraŭ kaŝmemoraj legotokenoj
 - Kontrolu ke kaŝmemoro efektive estas uzata
 - Kontrolu pri kaŝmemoraj maltrafoj pro varioj de instigoj
 - Konsideru ĝustigi TTL aŭ kaŝmemoran strategion
 
-## Komparo de provizantoj
+## Komparo de provizantoj {#provider-comparison}
 
 | Trajto | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Kostoredukto | 90% | 90% | Provizanto-dependa | 90% |
 | Monitorado | Detala | Per metrikoj | Provizanto-dependa | Per uzado |
 
-## Sekvaj paŝoj
+## Sekvaj paŝoj {#next-steps}
 
 1. **Elektu vian provizanton**: Elektu laŭ viaj bezonoj
 2. **Agordu kaŝmemoradon**: Starigu provizanto-specifan kaŝmemoradon

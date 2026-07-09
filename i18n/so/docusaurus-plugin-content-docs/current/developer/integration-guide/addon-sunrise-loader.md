@@ -3,17 +3,17 @@ title: Rarayaasha Faylka Sunrise ee Dheeraadka
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 wuxuu ku darayaa rareeye sunrise extension ah oo loogu talagalay add-ons iyo isdhexgelinno MU-plugin gaar ah oo u baahan inay socdaan inta lagu jiro WordPress sunrise bootstrapping iyada oo aan la tafatirin faylka `wp-content/sunrise.php` ee la abuuray.
 
-## Goorta la isticmaalo
+## Goorta la isticmaalo {#when-to-use-it}
 
 Isticmaal sunrise extension marka isdhexgelintaadu ay khasab tahay inay socoto ka hor inta aan plugin-yada caadiga ah la rarinin, sida hagidda domain gaar ah, maaraynta codsiyada u gaarka ah host, ama hagaajinnada hore ee network bootstrap.
 
 Isdhexgelinnada caadiga ah, dooro WordPress plugins caadi ah, MU-plugins, iyo hooks-ka Ultimate Multisite ee la diiwaangeliyey. Koodhka Sunrise wuxuu socdaalaa aad u hore, waana inuu ahaadaa mid yar, is-difaac leh, oo aan ku tiirsanayn waxyaabo kale.
 
-## Xeerka magacaabista faylka
+## Xeerka magacaabista faylka {#file-naming-convention}
 
 Ku samee fayl PHP ah oo lagu magacaabo `sunrise.php` gudaha tusaha addon-ka oo magaciisu ku bilaabmo `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Faylasha iswaafaqa waxaa loo raraa kala horreyn alifbeeti ah iyadoo lagu salaynayo dariiqa addon-ka.
 
-## Meesha faylka la dhigo
+## Meesha faylka la dhigo {#where-to-place-the-file}
 
 Ku dhig faylka tusaha xididka ah ee addon-ka leh habdhaqanka sunrise:
 
@@ -45,7 +45,7 @@ Iskaanka waxaa loo xalliyaa marka loo eego `WP_CONTENT_DIR`, ee looma eego qiima
 
 Si toos ah ha u tafatirin faylka `wp-content/sunrise.php` ee la abuuray. Rareeyuhu wuxuu u oggolaanayaa koodh gaar ah inuu ballaariyo habdhaqanka sunrise iyada oo aan la farcin faylka sunrise core ee Ultimate Multisite rakibto oo cusboonaysiiso.
 
-## Hooks iyo filters la heli karo
+## Hooks iyo filters la heli karo {#hooks-and-filters-available}
 
 Faylasha addon sunrise waxay socdaan ka dib marka domain mapping-ka Ultimate Multisite la raro iyo ka hor inta WordPress uusan kicin `ms_loaded`. Marxaladdan fayl sunrise ah wuu awoodaa inuu:
 
@@ -58,7 +58,7 @@ Ultimate Multisite wuxuu kiciyaa `wu_sunrise_loaded` ka dib marka rareeyihiisa s
 
 Keliya wac functions horey loogu raray marxaladda sunrise. Ka fogow shaqo culus oo database ah, soo-bandhigga template, codsiyada HTTP, iyo koodhka u qaata in kala horreynta rarka plugin-ka caadiga ahi dhammaatay.
 
-## Tusaale ugu yar
+## Tusaale ugu yar {#minimal-example}
 
 ```php
 <?php

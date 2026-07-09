@@ -3,13 +3,13 @@ title: 建置自訂的註冊商整合
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# 建立自訂註冊商整合
+# 建立自訂註冊商整合 {#building-a-custom-registrar-integration}
 
 Domain Seller 外掛使用了 **整合註冊表 (Integration Registry)** 模式。每個註冊商都是一個實作了 `Domain_Selling_Capability` 介面，並透過 `wu_domain_seller_register_capabilities` action hook 進行註冊的 PHP 類別。
 
 本指南將展示如何接入一個自訂的註冊商。
 
-## 介面 (The interface)
+## 介面 (The interface) {#the-interface}
 
 您的類別必須實作 `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability`，並繼承 `WP_Ultimo\Integrations\Base_Capability_Module`。
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### 可選方法 (Optional methods)
+### 可選方法 (Optional methods) {#optional-methods}
 
 實作這些方法可以解鎖額外的功能。外掛會透過 `method_exists()` 來偵測支援性：
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | 域名轉移（出站） |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | 域名轉移（入站） |
 
-### 回傳值慣例 (Return value convention)
+### 回傳值慣例 (Return value convention) {#return-value-convention}
 
 所有方法都必須回傳一個包含至少 `success` 鍵的陣列：
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## 註冊您的功能 (Registering your capability)
+## 註冊您的功能 (Registering your capability) {#registering-your-capability}
 
 請使用 `wu_domain_seller_register_capabilities` action 來註冊您的類別：
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## 為嚮導新增憑證欄位 (Adding credential fields to the wizard)
+## 為嚮導新增憑證欄位 (Adding credential fields to the wizard) {#adding-credential-fields-to-the-wizard}
 
 若要讓管理員透過設定嚮導輸入憑證，請註冊您的整合：
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## 註冊後動作的 Hooks (Hooks for post-registration actions)
+## 註冊後動作的 Hooks (Hooks for post-registration actions) {#hooks-for-post-registration-actions}
 
 使用這些 action 來觸發 webhooks、配置、通知或 CRM 更新：
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## 日誌記錄 (Logging)
+## 日誌記錄 (Logging) {#logging}
 
 使用 `wu_log_add()` 寫入您提供者專屬的日誌頻道：
 

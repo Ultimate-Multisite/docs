@@ -3,13 +3,13 @@ title: Pagtanggap ng Bayad
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Pagbabayad (v2)
+# Pagbabayad (v2) {#getting-paid-v2}
 
 _**MAHALAGANG TALA: Tinutukoy ng artikulong ito ang Ultimate Multisite version 2.x.**_
 
 May built-in na sistema ng membership at billing ang Ultimate Multisite. Para gumana ang aming sistema ng billing, isinama namin ang pinakakaraniwang payment gateways na ginagamit sa e-commerce. Ang default na payment gateways sa Ultimate Multisite ay _Stripe_ , _PayPal_ , at Manual Payment. Maaari mo ring gamitin ang _WooCommerce_ , _GoCardless_ at _Payfast_ para tumanggap ng mga bayad sa pamamagitan ng pag-install ng kani-kanilang add-ons.
 
-## Mga Pangunahing Setting
+## Mga Pangunahing Setting {#basic-settings}
 
 Maaari mong i-configure ang alinman sa mga payment gateway na ito sa ilalim ng payment settings ng Ultimate Multisite. Mahahanap mo ito sa pagpunta sa **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Pinipigilan nito ang isang membership na magmukhang nag-auto-renew kapag one-tim
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Saan mahahanap ang mga gateway:
+## Saan mahahanap ang mga gateway: {#where-to-find-the-gateways}
 
 Maaari mong i-setup ang mga payment gateway sa parehong pahina ( **Ultimate Multisite > Settings > Payments**). Sa mismong ibaba ng **active payment gateways** , makikita mo ang: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ at _Manual_.
 
@@ -67,7 +67,7 @@ Narito rin ang buong view ng settings ng mga payment gateway:
 
 Ngayon, kung gusto mong gamitin ang _WooCommerce_ , _GoCardless_ o _Payfast_ bilang iyong payment gateway, kakailanganin mong **i-install at i-configure ang kanilang add-ons**.
 
-### Paano i-install ang WooCommerce add-on:
+### Paano i-install ang WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Nauunawaan namin na hindi available ang _Stripe_ at _PayPal_ sa ilang bansa na naglilimita o humahadlang sa mga user ng Ultimate Multisite na epektibong magamit ang aming plugin. Kaya gumawa kami ng add-on para i-integrate ang _WooCommerce,_ na isang napakasikat na e-commerce plugin. Gumawa ang mga developer sa buong mundo ng add-ons para i-integrate ang iba't ibang payment gateways dito. Sinamantala namin ito para palawakin ang payment gateways na maaari mong gamitin sa billing system ng Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Pagkatapos itong i-activate, kung wala ka pa ring WooCommerce na karagdagang pro
 
 Para magbasa pa tungkol sa WooCommerce Integration add-on, **i-click dito**.
 
-### Paano i-install ang GoCardless add-on:
+### Paano i-install ang GoCardless add-on: {#how-to-install-the-gocardless-add-on}
 
 Ang mga hakbang para i-install ang _GoCardless_ add-on ay halos kapareho ng sa _WooCommerce_ add-on. Mangyaring pumunta sa pahina ng mga add-on at piliin ang **Ultimate Multisite: GoCardless Gateway** add-on.
 
@@ -111,7 +111,7 @@ Pagkatapos ng pag-install, ire-redirect ka sa pahina ng mga karagdagang programa
 
 Para matutunan kung paano magsimula sa _GoCardless_ gateway, **basahin ang artikulong ito**.
 
-### Paano i-install ang Payfast add-on:
+### Paano i-install ang Payfast add-on: {#how-to-install-the-payfast-add-on}
 
 Pumunta sa pahina ng mga add-on at piliin ang **Ultimate Multisite: Payfast Gateway** add-on.
 

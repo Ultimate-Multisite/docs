@@ -4,11 +4,11 @@ title: Filtar - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Filtar: wu_generated_username_from_email
+# Filtar: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Filtrira generirano korisničko ime kupca.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtrira generirano korisničko ime kupca.
 | $new_user_args | `array` | Niz argumenata novog korisnika, možda uključujući ime i prezime. |
 | $suffix | `string` | Dodaj niz korisničkom imenu kako bi bilo jedinstveno. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 3.7.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) u retku 488

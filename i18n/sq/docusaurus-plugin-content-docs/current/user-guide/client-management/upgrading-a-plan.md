@@ -3,7 +3,7 @@ title: Përditësim i një plani
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Përditësim i Planit (v2)
+# Përditësim i Planit (v2) {#upgrading-a-plan-v2}
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 
@@ -41,7 +41,7 @@ Pas përfundimit të pagesës (checkout), produktet e reja do të shtojnë në l
 
 ##
 
-## Rrugët për Ngritje dhe Ulje (Upgrade and Downgrade Paths)
+## Rrugët për Ngritje dhe Ulje (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Në çdo produkt, ju do të keni një tab të quajtur **Up & Downgrades**. Opsioni i parë në atë tab është një fushë e quajtur **Plan Group**.
 

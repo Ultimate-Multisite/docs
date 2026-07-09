@@ -3,9 +3,9 @@ title: Төлемдер мен есептестерді басқару
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Төлемдер мен Есептерді Басқару
+# Төлемдер мен Есептерді Басқару {#managing-payments-and-invoices}
 
-## Төлем Параметрлері
+## Төлем Параметрлері {#payment-settings}
 
 Төлем алуды бастамас бұрын, төлеммен қатысты параметрлерді реттеуіңіз керек. **Ultimate Multisite → Settings**-ке өтіп, **Payment** табына басыңыз.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Жалпы Төлем Параметрлері
+### Жалпы Төлем Параметрлері {#general-payment-options}
 
 Жалпы параметрлерде мыналарды реттеуге болады:
 
@@ -24,7 +24,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Төлем Бوابةлары (Payment Gateways)
+### Төлем Бوابةлары (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite бірнеше төлем бوابةсын қолдайды. Әрқайсысын Төлем параметрлері табынан қосып, реттеуге болады.
 
@@ -40,11 +40,11 @@ Ultimate Multisite бірнеше төлем бوابةсын қолдайды. 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Режимі (Sandbox Mode)
+### Sandbox Режимі (Sandbox Mode) {#sandbox-mode}
 
 Төлем интеграцияңызды тірі жүйеде қолдану алдында сынау үшін **Sandbox Mode**-ды қосуға болады. Sandbox режимі белсенді болған кезде нақты алымдар жасалмайды.
 
-## Төлемдерді Көру
+## Төлемдерді Көру {#viewing-payments}
 
 Сіз желіңіздегі барлық транзакцияларды көру үшін Ultimate Multisite астындағы **Payments** парақшасына өтіңіз.
 
@@ -54,7 +54,7 @@ Ultimate Multisite бірнеше төлем бوابةсын қолдайды. 
 
 Төлемді басыңыз, оның толық мәліметтерін көре аласыз, соның ішінде жолдардағы тауарлар, тиесіп отырған мүшелік, клиенттер туралы ақпарат және төлем шлюзі деректері.
 
-## Есепшоттар (Invoices)
+## Есепшоттар (Invoices) {#invoices}
 
 Ultimate Multisite төлемдер үшін есепшоттарды автоматты түрде генерациялай алады. Сіз есепшот үлгісін және нөмірлеу форматын Төлем параметрлерінен өзгерте аласыз.
 

@@ -3,11 +3,11 @@ title: Üpjin edijini göz öňünde tutýan prompt keşlemesi
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-den habarly prompt keşleme
+# Provider-den habarly prompt keşleme {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 **provider-den habarly prompt keşlemegi** hödürleýär; ol dürli LLM provider-leriniň arasynda promptlary keşlemek arkaly API çykdajylaryny we gijikmäni optimallaşdyrýar. Her provider-iň keşleme mehanizmleri we konfigurasiýalary tapawutlanýar.
 
-## Umumy syn
+## Umumy syn {#overview}
 
 Prompt keşleme size şulary etmäge mümkinçilik berýär:
 
@@ -23,11 +23,11 @@ Dürli provider-ler keşlemegi dürli görnüşde amala aşyrýarlar:
 - **OpenRouter**: Provider-e mahsus keşleme
 - **Vertex Anthropic**: Keş dolandyryşy bilen prompt keşleme
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini `cachedContents` API arkaly anyk keş dolandyryşyny üpjün edýär.
 
-### Konfigurasiýa
+### Konfigurasiýa {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Keşlenen prompt döretmek
+### Keşlenen prompt döretmek {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Keşlenen prompty ulanmak
+### Keşlenen prompty ulanmak {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Keş ýaşaýyş sikli
+### Keş ýaşaýyş sikli {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini üçin iň gowy tejribeler
+### Gemini üçin iň gowy tejribeler {#best-practices-for-gemini}
 
 - **Degişli TTL belläň**: Çykdajy tygşytlamasyny keş könelmegi bilen deňagramlaşdyryň
 - **Ulgam promptlaryny keşläň**: Şol bir ulgam promptyny haýyşlaryň arasynda gaýtadan ulanyň
 - **Keş ulanylyşyna gözegçilik ediň**: Haýsy keşleriň has köp ulanylýandygyny yzarlaň
 - **Möhleti geçen keşleri arassalaň**: Ulanylmaýan keşleri wagtal-wagtal pozuň
 
-## Azure OpenAI: Prompt keşleme
+## Azure OpenAI: Prompt keşleme {#azure-openai-prompt-caching}
 
 Azure OpenAI awtomatik TTL dolandyryşy bilen prompt keşlemegi goldaýar.
 
-### Konfigurasiýa
+### Konfigurasiýa {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Keşlemegi işletmek
+### Keşlemegi işletmek {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Keş sözbaşylary
+### Keş sözbaşylary {#cache-headers}
 
 Azure OpenAI keş dolandyryşy üçin HTTP sözbaşylaryny ulanýar:
 
@@ -152,7 +152,7 @@ Goldanylýan bahalar:
 - `no_cache`: Bu haýyşy keşleme
 - `no_store`: Keşleme we gaýtadan ulanma
 
-### Keş ulanylyşyna gözegçilik etmek
+### Keş ulanylyşyna gözegçilik etmek {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Azure OpenAI üçin iň gowy tejribeler
+### Azure OpenAI üçin iň gowy tejribeler {#best-practices-for-azure-openai}
 
 - **Yzygiderli promptlary ulanyň**: Birmeňzeş promptlar keşlemekden peýda görýär
 - **Oňaýly TTL belläň**: Çykdajyny täzelik bilen deňagramlaşdyryň
 - **Keş ölçeglerine gözegçilik ediň**: Keş döredilmesini we gabat gelmeleri yzarlaň
 - **Meňzeş haýyşlary toparlaň**: Keş gabat gelmelerini artdyrmak üçin haýyşlary toparlaň
 
-## OpenRouter: Provider-e mahsus keşleme
+## OpenRouter: Provider-e mahsus keşleme {#openrouter-provider-specific-caching}
 
 OpenRouter esasy provider-ler (OpenAI, Anthropic we ş.m.) arkaly keşlemegi goldaýar.
 
-### Konfigurasiýa
+### Konfigurasiýa {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter keşlemegini ulanmak
+### OpenRouter keşlemegini ulanmak {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Provider-e mahsus opsiýalar
+### Provider-e mahsus opsiýalar {#provider-specific-options}
 
 Dürli provider-leriň keşleme mehanizmleri tapawutlanýar:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter üçin iň gowy tejribeler
+### OpenRouter üçin iň gowy tejribeler {#best-practices-for-openrouter}
 
 - **Provider-iňiziň keşlemegini biliň**: Her provider-iň mehanizmleri tapawutlanýar
 - **Keşleme hereketini synap görüň**: Saýlan provider-iňiz bilen keşlemegiň işleýändigini barlaň
 - **Çykdajylara gözegçilik ediň**: Keşlemekden gelýän tygşytlamalary yzarlaň
 - **Yzygiderli modelleri ulanyň**: Modelleri çalyşmak keş gabat gelmelerini bozýar
 
-## Vertex Anthropic: Keş dolandyryşy bilen prompt keşleme
+## Vertex Anthropic: Keş dolandyryşy bilen prompt keşleme {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) anyk keş dolandyryşy bilen prompt keşlemegi goldaýar.
 
-### Konfigurasiýa
+### Konfigurasiýa {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic keşlemegi ulanmak
+### Vertex Anthropic keşlemegi ulanmak {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Keş dolandyryş görnüşleri
+### Keş dolandyryş görnüşleri {#cache-control-types}
 
 - **ephemeral**: Soragyň dowamlylygy üçin keşle (deslapky)
 - **persistent**: Birnäçe soragyň arasynda keşle (goldanýan bolsa)
 
-### Keş ulanylyşyna gözegçilik etmek
+### Keş ulanylyşyna gözegçilik etmek {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic üçin iň gowy tejribeler
+### Vertex Anthropic üçin iň gowy tejribeler {#best-practices-for-vertex-anthropic}
 
 - **Ephemeral keşlemegi ulanyň**: Bir sessiýaly keşlemek üçin amatly
 - **max_tokens degişli edip sazlaň**: Keş ölçegi bilen çykdajynyň arasynda deňagramlylyk saklaň
 - **Keş görkezijilerine gözegçilik ediň**: Keşiň netijeliligini yzarlaň
 - **Iş ýüküňiz bilen synag ediň**: Keşlemegiň siziň ulanyş ýagdaýyňyza peýda berýändigini barlaň
 
-## Üpjün edijiler arasyndaky keşlemek strategiýasy
+## Üpjün edijiler arasyndaky keşlemek strategiýasy {#cross-provider-caching-strategy}
 
-### Bitewi konfigurasiýa
+### Bitewi konfigurasiýa {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Üpjün edijini anyklamak
+### Üpjün edijini anyklamak {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Ätiýaçlyk strategiýa
+### Ätiýaçlyk strategiýa {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Çykdajyny optimizirlemek
+## Çykdajyny optimizirlemek {#cost-optimization}
 
-### Tygşytlamalary hasaplaň
+### Tygşytlamalary hasaplaň {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimizirleme maslahatlary
+### Optimizirleme maslahatlary {#optimization-tips}
 
 - **Uly ulgam promptlaryny keşläň**: Iň uly çykdajy tygşytlamasy
 - **Konteksti gaýtadan ulanyň**: Ýygy-ýygydan ulanylýan kontekst resminamalaryny keşläň
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Keşiň netijeliligine gözegçilik ediň**: Hakyky tygşytlamalary yzarlaň
 - **TTL sazlaň**: Çykdajy bilen täzeligiň arasynda deňagramlylyk saklaň
 
-## Näsazlyklary düzetmek
+## Näsazlyklary düzetmek {#troubleshooting}
 
-### Keş ulanylmaýar
+### Keş ulanylmaýar {#cache-not-being-used}
 
 - Konfigurasiýada keşlemegiň açykdygyny barlaň
 - Promptlaryň birmeňzeşdigini barlaň (keşlemek takyk gabat gelmegi talap edýär)
 - Keşiň möhletiniň gutarmandygyny barlaň
 - Üpjün edijä mahsus keş çäklerini barlaň
 
-### Keş döretmek şowsuz bolýar
+### Keş döretmek şowsuz bolýar {#cache-creation-failing}
 
 - Keş ölçeginiň üpjün ediji çäkleriniň içinde bolandygyny barlaň
 - Keş dolandyryş sintaksisiniň dogrudygyny barlaň
 - Üpjün edijiniň siziň modeliňiz üçin keşlemegi goldaýandygyna göz ýetiriň
 - Çäklendirmeler üçin üpjün edijiniň resminamalaryny gözden geçiriň
 
-### Garaşylmadyk çykdajylar
+### Garaşylmadyk çykdajylar {#unexpected-costs}
 
 - Keş döretmek bilen keş okama tokenlerine gözegçilik ediň
 - Keşiň hakykatdan hem ulanylýandygyny barlaň
 - Prompt üýtgemeleri sebäpli keş sypdyrmalaryny barlaň
 - TTL ýa-da keş strategiýasyny sazlamagy göz öňünde tutuň
 
-## Üpjün edijileri deňeşdirmek
+## Üpjün edijileri deňeşdirmek {#provider-comparison}
 
 | Aýratynlyk | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Çykdajy azalmagy | 90% | 90% | Üpjün edijä bagly | 90% |
 | Gözegçilik | Jikme-jik | Metrikalar arkaly | Üpjün edijä bagly | Ulanylyş arkaly |
 
-## Indiki ädimler
+## Indiki ädimler {#next-steps}
 
 1. **Üpjün edijiňizi saýlaň**: Zerurlyklaryňyza görä saýlaň
 2. **Keşlemegi konfigurirläň**: Üpjün edijä mahsus keşlemegi sazlaň

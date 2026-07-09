@@ -3,15 +3,15 @@ title: 'Les 7: Het naar je hand zetten'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Les 7: Maak Het Jouw
+# Les 7: Maak Het Jouw {#lesson-7-making-it-yours}
 
 Je klanten mogen nooit het gevoel hebben dat ze "gewoon een WordPress plugin" gebruiken. Ze moeten het gevoel hebben dat ze FitSite gebruiken – een platform dat is gebouwd voor hun specifieke branche. In deze les behandelen we branding, white-labeling en hoe je het platform het gevoel geeft van een volwaardig product.
 
-## Waar We Gebleven Zijn
+## Waar We Gebleven Zijn {#where-we-left-off}
 
 FitSite heeft een werkende checkout-flow die fitnessstudio-eigenaren van planselectie naar een live site brengt. Nu zorgen we ervoor dat de gehele ervaring voelt als een samenhangend, gebrand product.
 
-## Het Platformdomein
+## Het Platformdomein {#your-platform-domain}
 
 De basis van je merk is je domein. Voor FitSite:
 
@@ -19,7 +19,7 @@ De basis van je merk is je domein. Voor FitSite:
 - **Klantwebsites**: `studioname.fitsite.com` (subdomeinen)
 - **Aangepaste domeinen**: Klanten op de Growth- en Pro-abonnementen kunnen hun eigen domein koppelen
 
-### Je Domein Instellen
+### Je Domein Instellen {#setting-up-your-domain}
 
 1. Registreer je platformdomein
 2. Richt het domein door naar je hostingprovider
@@ -28,11 +28,11 @@ De basis van je merk is je domein. Voor FitSite:
 
 Zie [Hoe je Domeinmapping Configureert](/user-guide/domain-mapping/how-to-configure-domain-mapping) voor gedetailleerde instructies.
 
-## De Admin Ervaring White-Labelen
+## De Admin Ervaring White-Labelen {#white-labeling-the-admin-experience}
 
 Wanneer een fitnessstudio-eigenaar in het dashboard van zijn site inlogt, moet hij jouw merk zien, en niet de branding van WordPress of Ultimate Multisite.
 
-### Custom Login Pagina
+### Custom Login Pagina {#custom-login-page}
 
 Pas de WordPress loginpagina aan om te tonen:
 
@@ -40,7 +40,7 @@ Pas de WordPress loginpagina aan om te tonen:
 - Fitnessgeschikte achtergrondafbeeldingen
 - Jouw merk-kleuren
 
-### Dashboard Branding
+### Dashboard Branding {#dashboard-branding}
 
 Gebruik de [Admin Page Creator](/addons/admin-page-creator) addon of custom CSS om:
 
@@ -48,7 +48,7 @@ Gebruik de [Admin Page Creator](/addons/admin-page-creator) addon of custom CSS 
 - Het admin kleurenschema aan te passen zodat het bij je merk past
 - Een aangepaste dashboard widget toe te voegen met fitnessspecifieke snelkoppelingen en hulpbronnen
 
-### Custom Admin Pagina's
+### Custom Admin Pagina's {#custom-admin-pages}
 
 Overweeg het aanmaken van aangepaste adminpagina's die de meest relevante acties voor fitnessstudio-eigenaren naar voren brengen:
 
@@ -58,11 +58,11 @@ Overweeg het aanmaken van aangepaste adminpagina's die de meest relevante acties
 
 Dit vermindert de leercurve door niche-relevante acties centraal te plaatsen in plaats van ze te verbergen in het standaard WordPress menu.
 
-## Je Communicatie Branden
+## Je Communicatie Branden {#branding-your-communications}
 
 Elk e-mailbericht, elke factuur en elke melding moet jouw merk versterken.
 
-### Systeem E-mails
+### Systeem E-mails {#system-emails}
 
 Navigeer naar **Ultimate Multisite > Settings > Emails** en pas alle systeem-e-mails aan:
 
@@ -79,7 +79,7 @@ Belangrijke e-mails om aan te passen:
 | Betalingsoverzicht | "Betaling ontvangen" | "FitSite abonnement betaling bevestigd" |
 | Proefperiode eindigt | "Je proefperiode eindigt snel" | "Je FitSite proefperiode eindigt over 3 dagen – houd je studio website live" |
 
-### Facturen
+### Facturen {#invoices}
 
 Pas factuurtemplates aan met:
 
@@ -87,7 +87,7 @@ Pas factuurtemplates aan met:
 - Jouw bedrijfsgegevens
 - Fitnessspecifieke productnamen (geen algemene plan-ID's)
 
-## De Klantgerichte Site
+## De Klantgerichte Site {#the-customer-facing-site}
 
 Je hoofddomein (`fitsite.com`) heeft een marketingwebsite die het platform verkoopt. Dit is gescheiden van het Ultimate Multisite netwerk-admin – het is het publieke gezicht van je bedrijf.
 
@@ -103,7 +103,7 @@ Belangrijke pagina's:
 Maak je marketingwebsite aan als een site binnen je eigen netwerk. Dit stelt je in staat om deze te beheren vanuit hetzelfde dashboard en toont de mogelijkheden van jouw eigen platform.
 :::
 
-## Custom Domein voor Klanten
+## Custom Domein voor Klanten {#custom-domain-for-customers}
 
 Voor klanten op abonnementen die custom domeinen bevatten, documenteer het proces dan duidelijk:
 
@@ -113,7 +113,7 @@ Voor klanten op abonnementen die custom domeinen bevatten, documenteer het proce
 
 Maak een helpartikel of kennisbank-entry specifiek voor dit proces, geschreven voor niet-technische fitnessstudio-eigenaren.
 
-## Het FitSite Netwerk Tot Nu Toe
+## Het FitSite Netwerk Tot Nu Toe {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Wat We Gebouwd Hebben Deze Les
+## Wat We Gebouwd Hebben Deze Les {#what-we-built-this-lesson}
 
 - **Platformdomein en DNS** geconfigureerd voor een gebrandde ervaring
 - **White-labeled admin** met FitSite branding overal

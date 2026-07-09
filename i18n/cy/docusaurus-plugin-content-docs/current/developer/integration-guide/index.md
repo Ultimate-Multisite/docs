@@ -3,13 +3,13 @@ title: Canllaw Integreiddio
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Canllaw Integreiddio
+# Canllaw Integreiddio {#integration-guide}
 
 Mae’r canllaw hwn yn ymdrin â phatrymau integreiddio cyffredin gyda Ultimate Multisite, gan gynnwys cysylltu â gwasanaethau allanol, adeiladu pyrth talu personol, a thrin webhooks.
 
 Ar gyfer seilwaith tenantiaid ynysig, gweler [Integreiddio Aml-denantiaeth](./multi-tenancy) am ganllawiau cychwyn tenantiaid sofran, gwirio mudo, SSO, a datgymalu.
 
-## Integreiddio CRM
+## Integreiddio CRM {#crm-integration}
 
 Cydamserwch ddata cwsmeriaid â’ch CRM pan fydd cwsmeriaid newydd yn cofrestru:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integreiddio Dadansoddeg
+## Integreiddio Dadansoddeg {#analytics-integration}
 
 Traciwch ddigwyddiadau busnes allweddol ar draws cylch bywyd y cwsmer:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Camau Nesaf
+## Camau Nesaf {#next-steps}
 
 - [Datblygu Porth Personol](./custom-gateway) — Adeiladwch eich porth talu eich hun
 - [Trin Webhooks](./webhooks) — Crëwch endpoints webhook personol

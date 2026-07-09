@@ -3,9 +3,9 @@ title: Ultimate AI Connector maka WebLLM Ndekọ mgbanwe
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Changelog
+# Ultimate AI Connector for WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Ụdị 1.1.0 — E wepụtara na 2026-04-09
+## Ụdị 1.1.0 — E wepụtara na 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Ọhụrụ: Widget nkata na-ese n’elu nwere ihe ngosi ọnọdụ admin-bar — onye ọrụ ọ bụla banyere nwere ike ịjụ browser-side LLM ozugbo site n’ihu.
 * Ọhụrụ: SharedWorker runtime — igwe MLC na-agba ugbu a n’ime SharedWorker ka taabụ ọtụtụ kesaa otu GPU session kama ịlụ ọgụ maka ya.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Ndozi: Tinye WebLLM n’ime wpai_preferred_text_models filter ka njirimara AI Experiments duzie gaa na igwe browser mgbe ahaziri model.
 * Emelitere: Cache-busting, nhazi ọdịnaya, na ndozi hardware-reference pụtara ìhè n’oge nnwale site na mmalite ruo na ngwụcha.
 
-## Ụdị 1.0.0 — Mwepụta Mbụ
+## Ụdị 1.0.0 — Mwepụta Mbụ {#version-100--initial-release}

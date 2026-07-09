@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite lisad
+# Ultimate Multisite lisad {#ultimate-multisite-addons}
 
 Lisad laiendavad Ultimate Multisite’i täiendavate funktsioonide ja integratsioonidega. Enamik lisasid on tasulised ja neid saab osta saidilt [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 Lisasid saab paigaldada kahel viisil:
 
 1. **Lisade lehe kaudu** -- Liigu oma saidi lisade haldamise lehele WordPressi adminialas
 2. **Käsitsi allalaadimine** -- Laadi alla [oma kontolt](https://ultimatemultisite.com/my-account/downloads/) ja laadi üles menüü Plugins > Add New kaudu
 
-## Saadaolevad lisad
+## Saadaolevad lisad {#available-addons}
 
 | Lisa | Kirjeldus |
 |-------|-------------|

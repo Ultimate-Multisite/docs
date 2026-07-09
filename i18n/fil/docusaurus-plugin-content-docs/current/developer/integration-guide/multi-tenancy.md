@@ -3,11 +3,11 @@ title: Integrasyon ng Maramihang Nangungupahan
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrasyon ng Multi-Tenancy
+# Integrasyon ng Multi-Tenancy {#multi-tenancy-integration}
 
 Ultimate Multisite: Binabago ng Multi-Tenancy 1.2.0 ang ilang touchpoint ng integrasyon para sa mga soberanong tenant, beripikasyon ng migrasyon, at awtomasyon ng lifecycle ng tenant.
 
-## Daloy ng bootstrap ng tenant
+## Daloy ng bootstrap ng tenant {#tenant-bootstrap-flow}
 
 Dapat sundin ng mga integrasyong lumilikha o nagbabago ng mga tenant ang ganitong pagkakasunod-sunod:
 
@@ -20,13 +20,13 @@ Dapat sundin ng mga integrasyong lumilikha o nagbabago ng mga tenant ang ganiton
 
 Huwag ipagpalagay na maaaring muling gamitin ng isang soberanong tenant ang koneksyon sa database ng network. Gamitin ang registry ng tenant at mga abstraction ng writer na ibinibigay ng addon.
 
-## SSO at REST hooks
+## SSO at REST hooks {#sso-and-rest-hooks}
 
 Gumagamit ang stateless na autologin ng tenant ng mga panandaliang token na may purpose claim, proteksyon laban sa replay ng JTI, cap sa expiry, at origin pinning. Dapat bumuo ang mga integrasyong nagdaragdag ng mga button sa login o mga link sa malayuang pamamahala ng mga pagbisita sa tenant sa pamamagitan ng suportadong daloy ng SSO sa halip na direktang gumawa ng mga URL sa login ng tenant.
 
 Available ang mga audit event ng API sa panig ng network at araw-araw na buod para sa mga gateway ng soberanong tenant. Gamitin ang mga log na iyon kapag nagde-debug ng mga panlabas na sistemang tumatawag sa mga endpoint ng lifecycle ng tenant.
 
-## Mga URL ng aksyon ng soberanong customer
+## Mga URL ng aksyon ng soberanong customer {#sovereign-customer-action-urls}
 
 Iniruruta ng Ultimate Multisite v2.13.0 ang mga aksyon ng customer ng soberanong tenant pabalik sa pangunahing sityo para sa mga daloy ng account, checkout, billing, invoice, sityo, pagpapalit ng template, at domain mapping. Dapat ituro ng mga integrasyong nagre-render ng mga link sa pamamahala sa panig ng tenant ang mga aksyong iyon sa panel ng customer sa pangunahing sityo at magsama ng napatunayang return target kapag dapat makapag-navigate pabalik ang user sa tenant pagkatapos makumpleto ang aksyon.
 
@@ -40,7 +40,7 @@ Nananatiling maaaring i-filter ang nabuong URL sa pamamagitan ng `wu_sso_url`, n
 
 Huwag duplikahin ang estado ng membership, invoice, billing address, template, o pamamahala ng domain sa loob ng soberanong tenant. Ituring ang dashboard ng tenant bilang launcher at ang panel ng customer sa pangunahing sityo bilang system of record para sa mga pinamamahalaang aksyon.
 
-## Beripikasyon ng migrasyon
+## Beripikasyon ng migrasyon {#migration-verification}
 
 Pagkatapos baguhin ng isang migrasyon o integrasyon ng lifecycle ang data ng tenant, patakbuhin ang mga gate ng beripikasyon:
 
@@ -49,10 +49,10 @@ Pagkatapos baguhin ng isang migrasyon o integrasyon ng lifecycle ang data ng ten
 
 Dapat ituring ng mga integrasyon ang nabigong beripikasyon bilang blocker sa deployment at iwasang markahan na live ang tenant hanggang maresolba ang pagkabigo.
 
-## Pagbura ng tenant
+## Pagbura ng tenant {#tenant-deletion}
 
 Dapat tawagin ng mga daloy ng pagbura ang teardown path ng addon upang malinis ang mga kredensyal ng database ng tenant. Maaaring alisin ng mga panlabas na integrasyon ang mga resource ng provider pagkatapos magtagumpay ang teardown, ngunit hindi dapat burahin ang mga database o folder ng host habang tumatakbo pa ang beripikasyon o mga async push job.
 
-## Hindi na ginagamit na database router
+## Hindi na ginagamit na database router {#deprecated-database-router}
 
 Pinalitan na ng deprecation stub ang legacy na `Database_Router`. Dapat tukuyin ng mga bagong integrasyon ang mga tenant sa pamamagitan ng kasalukuyang API ng router ng sityo at registry ng tenant sa halip na umasa sa lumang router class.

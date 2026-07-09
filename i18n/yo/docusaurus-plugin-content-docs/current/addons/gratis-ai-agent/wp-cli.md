@@ -3,11 +3,11 @@ title: Ìtọ́kasí WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Ìtọ́kasí WP-CLI
+# Ìtọ́kasí WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent ní ìdílé àṣẹ `wp gratis-ai-agent` fún lílo benchmark aṣojú náà, ṣíṣàkóso àwọn agbára, àti bíbéèrè ipò aṣojú láti laini àṣẹ. Gbogbo àwọn àṣẹ nílò WP-CLI 2.0 tàbí tó ga jù bẹ́ẹ̀ lọ.
 
-## Fífìsípò
+## Fífìsípò {#installation}
 
 Àwọn àṣẹ WP-CLI ni a forúkọsílẹ̀ laifọwọyi nígbà tí plugin bá ń ṣiṣẹ́. Ṣàyẹ̀wò pẹ̀lú:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Ó ń ṣiṣẹ́ akójọpọ̀ benchmark Agent Capabilities — àkójọpọ̀ àwọn prompt tó nira, tó ní ìgbésẹ̀ púpọ̀, tí ó ń dán gbogbo àgbègbè agbára wò. Lò èyí láti ṣe ìyẹ̀wò iṣẹ́ model, fi àwọn AI provider wé ara wọn, tàbí jẹ́rìí sí àwọn pack agbára kí o tó fi wọ́n sí production.
 
-### Àkótán
+### Àkótán {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Àwọn aṣàyàn
+### Àwọn aṣàyàn {#options}
 
 | Aṣàyàn | Àpèjúwe |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Ọ̀nà àbájáde: `table` (àiyédèrùn), `json`, `csv` |
 | `--save` | Fi àwọn èsì benchmark pamọ́ sínú ibi ìpamọ́ dátà fún fífi wé ìtàn àtijọ́ |
 
-### Àwọn àpẹẹrẹ
+### Àwọn àpẹẹrẹ {#examples}
 
 Ṣiṣẹ́ gbogbo akójọpọ̀ benchmark pẹ̀lú provider àti model tó wà lọ́wọ́lọ́wọ́:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Àbájáde
+### Àbájáde {#output}
 
 Benchmark máa ń mú ìlà kan jáde fún ìbéèrè kọ̀ọ̀kan pẹ̀lú àwọn kólọ́ọ̀mù wọ̀nyí:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Àwọn ìbéèrè Benchmark
+### Àwọn ìbéèrè Benchmark {#benchmark-questions}
 
 Akójọpọ̀ àiyédèrùn ní:
 
@@ -95,11 +95,11 @@ A lè forúkọsílẹ̀ àwọn ìbéèrè àfikún nípasẹ̀ filter `gratis_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Ó ń ṣàkóso àwọn agbára àti àwọn pack agbára tí a ti fi sílẹ̀.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Ó ń ṣe àtòkọ gbogbo àwọn agbára tí a forúkọsílẹ̀, orísun wọn (core tàbí pack), àti ipò wọn lọ́wọ́lọ́wọ́.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Ó ń gba pack agbára kan láti registry kí o sì mu ṣiṣẹ́.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Ó ń dá agbára kan pàtó dúró láì yọ pack náà kúrò. Ó wúlò fún dídín àgbègbè iṣẹ́ aṣojú kù lórí site kan.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Ó tún ń mu agbára kan tí a ti dá dúró tẹ́lẹ̀ ṣiṣẹ́.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Ó ń fi ìṣètò aṣojú lọ́wọ́lọ́wọ́ àti ipò ìsopọ̀ hàn.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Ó ń fi ìṣẹ̀lẹ̀ aṣojú àìpẹ́ hàn láti debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Ó ń tún ipò aṣojú ṣètò: ó ń pa CSS tí a fi sínú rẹ̀ rẹ́, ó ń yọ àwọn CPT àti taxonomy tí aṣojú forúkọsílẹ̀ kúrò, ó ń tún global styles ṣètò, ó sì ń sọ cache àwọn aṣàyàn aṣojú di òfo. Kò yọ plugin tàbí àwọn setting rẹ̀ kúrò.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Àwọn kóòdù ìjáde
+## Àwọn kóòdù ìjáde {#exit-codes}
 
 Gbogbo àwọn àṣẹ máa ń jáde pẹ̀lú `0` nígbà tí wọ́n ṣàṣeyọrí. Àwọn kóòdù ìjáde tí kì í ṣe odo:
 

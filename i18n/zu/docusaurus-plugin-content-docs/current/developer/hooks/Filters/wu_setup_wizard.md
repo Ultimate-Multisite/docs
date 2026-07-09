@@ -4,11 +4,11 @@ title: Isihlungi - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Isihlungi: wu_setup_wizard
+# Isihlungi: wu_setup_wizard {#filter-wusetupwizard}
 
 Vumela onjiniyela ukuthi bengeze izinyathelo ezengeziwe ze-setup wizard.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Vumela onjiniyela ukuthi bengeze izinyathelo ezengeziwe ze-setup wizard.
 | $is_migration | `bool` | Uma lokhu kuwukuthuthela noma cha. |
 | $wizard | `object` | I-instance yamanje. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) emugqeni 525
 
 
-## Okubuyiswayo
+## Okubuyiswayo {#returns}

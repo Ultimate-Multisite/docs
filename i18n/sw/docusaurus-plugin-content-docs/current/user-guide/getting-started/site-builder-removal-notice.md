@@ -3,13 +3,13 @@ title: Taarifa ya Kuondoa Hali ya Jengo la Tovuti
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Taarifa ya Kuondoa Hali ya Kuunda Tovuti (Site Builder Mode)
+# Taarifa ya Kuondoa Hali ya Kuunda Tovuti (Site Builder Mode) {#site-builder-mode-removal-notice}
 
 **Hali ya Kuunda Tovuti (Site Builder mode) imefutwa katika Superdav AI Agent v1.12.0.** Ikiwa ulikuwa unatumia Site Builder mode, unapaswa kuhama kwenda **agent Msaidizi wa Kuweka (Setup Assistant agent)** kwa ajili ya kuunda mandhari (theme) na kuweka tovuti.
 
-## Nini Kilotokea?
+## Nini Kilotokea? {#what-happened}
 
-### Site Builder Mode (Ya Zamani)
+### Site Builder Mode (Ya Zamani) {#site-builder-mode-legacy}
 
 Site Builder mode ilikuwa kiolesura kinachotegemea hatua (wizard-based interface) kwa ajili ya:
 
@@ -18,7 +18,7 @@ Site Builder mode ilikuwa kiolesura kinachotegemea hatua (wizard-based interface
 - Kuchagua mandhari (theme)
 - Kuweka maudhui ya awali
 
-### Nini Kilochukua Nafasi Yake?
+### Nini Kilochukua Nafasi Yake? {#what-replaced-it}
 
 **Setup Assistant agent** sasa inashughulikia utendaji wote wa Site Builder kwa kutumia:
 
@@ -27,15 +27,15 @@ Site Builder mode ilikuwa kiolesura kinachotegemea hatua (wizard-based interface
 - Kuunganishwa na onboarding ya Theme Builder
 - Kumbukumbu ya tovuti ya kudumu (persistent site_brief memory) kwa vikao vya baadaye
 
-## Ikiwa Ulikuwa Unatumia Site Builder Mode
+## Ikiwa Ulikuwa Unatumia Site Builder Mode {#if-you-were-using-site-builder-mode}
 
-### Tovuti Zako Ziko Salama
+### Tovuti Zako Ziko Salama {#your-sites-are-safe}
 
 - Tovuti zilizopo zilizoundwa kwa Site Builder mode bado zinafanya kazi
 - Hakuna kupotea kwa data au kukatika kwa tovuti
 - Unaweza kuendelea kusimamia tovuti zako kwa kawaida
 
-### Hama kwenda Setup Assistant Agent
+### Hama kwenda Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Kwa kuweka tovuti mpya au kubadilisha mandhari, tumia Setup Assistant agent:
 
@@ -51,7 +51,7 @@ au
 
 Setup Assistant agent inatoa utendaji ule ule lakini kwa uwezo zaidi wa kubadilika.
 
-## Kulinganisha: Site Builder vs. Setup Assistant
+## Kulinganisha: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Kipengele | Site Builder (Imefutwa) | Setup Assistant (Mpya) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent inatoa utendaji ule ule lakini kwa uwezo zaidi wa kubadili
 | Vikao vya baadaye | Kuweka upya mipangilio | Kutumia site_brief iliyohifadhiwa |
 | Uwezo wa kubadilika | Mchakato thabiti | Mazungumzo yanayobadilika |
 
-## Kuhama kwenda Setup Assistant Agent
+## Kuhama kwenda Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Kwa Tovuti Mpya
+### Kwa Tovuti Mpya {#for-new-sites}
 
 Badala ya kutumia Site Builder mode:
 
@@ -76,7 +76,7 @@ Badala ya kutumia Site Builder mode:
    - Uzalishaji wa mandhari
    - Mipangilio ya awali
 
-### Kwa Tovuti Zilizopo
+### Kwa Tovuti Zilizopo {#for-existing-sites}
 
 Ikiwa una tovuti iliyopo kutoka Site Builder mode:
 
@@ -85,7 +85,7 @@ Ikiwa una tovuti iliyopo kutoka Site Builder mode:
 3. Setup Assistant agent itakusaidia kuunda mandhari jipya
 4. Data yako ya tovuti haibadiliki
 
-### Kwa Mabadiliko ya Mandhari
+### Kwa Mabadiliko ya Mandhari {#for-theme-changes}
 
 Badala ya kuchagua mandhari kwa Site Builder mode:
 
@@ -95,9 +95,9 @@ Badala ya kuchagua mandhari kwa Site Builder mode:
    - Kuzalisha mandhari ya kipekee
    - Kuifanya iwe hai kwenye tovuti yako
 
-## Tofauti Muhimu
+## Tofauti Muhimu {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Chagua template
@@ -106,7 +106,7 @@ Badala ya kuchagua mandhari kwa Site Builder mode:
 4. Tayari
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Eleza lengo la tovuti yako
@@ -117,36 +117,36 @@ Badala ya kuchagua mandhari kwa Site Builder mode:
 6. Site brief inahifadhiwa kwa vikao vya baadaye
 ```
 
-## Faida za Setup Assistant Agent
+## Faida za Setup Assistant Agent {#benefits-of-setup-assistant-agent}
 
-### Inayobadilika Zaidi
+### Inayobadilika Zaidi {#more-flexible}
 
 - Eleza tovuti yako kwa lugha ya kawaida
 - Pata mapendekezo ya kipekee
 - Inabadilika kulingana na mahitaji yako maalum
 
-### Kubadilisha Bora
+### Kubadilisha Bora {#better-customization}
 
 - Uzalishaji wa mandhari ya kipekee
 - Maamuzi ya mfumo wa muundo (Design system decisions)
 - Tokens za muundo zinazoendelea (Persistent design tokens)
 
-### Kumbukumbu ya Kudumu
+### Kumbukumbu ya Kudumu {#persistent-memory}
 
 - Site_brief yako inahifadhiwa
 - Agents za baadaye zinaelewa tovuti yako
 - Hakuna haja ya kurudia taarifa za kuweka mipangilio
 
-### Mchakato Uliounganishwa
+### Mchakato Uliounganishwa {#integrated-workflow}
 
 - Onboarding ya Theme Builder
 - Stadi ya Aesthetics ya Design System
 - Udhibiti wa Uwezo wa Kuonekana (Ability Visibility controls)
 - Yote yanafanya kazi pamoja bila kukatizwa
 
-## Kutatua Matatizo
+## Kutatua Matatizo {#troubleshooting}
 
-### Siwezi kupata Site Builder mode
+### Siwezi kupata Site Builder mode {#i-cant-find-site-builder-mode}
 
 Site Builder mode imefutwa. Tumia Setup Assistant agent badala yake:
 
@@ -154,7 +154,7 @@ Site Builder mode imefutwa. Tumia Setup Assistant agent badala yake:
 "Help me set up a new site"
 ```
 
-### Nataka kuunda upya tovuti kutoka Site Builder
+### Nataka kuunda upya tovuti kutoka Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Unaweza kuifanya upya kwa kutumia Setup Assistant agent:
 
@@ -163,7 +163,7 @@ Unaweza kuifanya upya kwa kutumia Setup Assistant agent:
 3. Agent itazalisha mandhari inayofanana
 4. Site_brief yako itahifadhiwa kwa marejeo ya baadaye
 
-### Tovuti yangu ya Site Builder iliyopo haifanyi kazi
+### Tovuti yangu ya Site Builder iliyopo haifanyi kazi {#my-existing-site-builder-site-isnt-working}
 
 Tovuti zilizopo zilizoundwa kwa Site Builder mode bado zinafanya kazi. Ikiwa unakumbana na matatizo:
 
@@ -172,7 +172,7 @@ Tovuti zilizopo zilizoundwa kwa Site Builder mode bado zinafanya kazi. Ikiwa una
 3. Angalia kumbukumbu za makosa za WordPress
 4. Wasiliana na usaidizi ikiwa matatizo yanaendelea
 
-### Je, bado naweza kutumia templates zangu za Site Builder za zamani?
+### Je, bado naweza kutumia templates zangu za Site Builder za zamani? {#can-i-still-use-my-old-site-builder-templates}
 
 Templates za Site Builder hazipo tena. Hata hivyo:
 
@@ -180,14 +180,14 @@ Templates za Site Builder hazipo tena. Hata hivyo:
 - Unaweza kuunda upya tovuti zinazofanana kwa kutumia Setup Assistant agent
 - Setup Assistant agent inatoa chaguo zaidi za kubadilisha
 
-## Hatua Zijazo
+## Hatua Zijazo {#next-steps}
 
 1. **Kwa tovuti mpya**: Tumia Setup Assistant agent
 2. **Kwa tovuti zilizopo**: Endelea kutumia kama zilivyo
 3. **Kwa mabadiliko ya mandhari**: Omba msaada kutoka kwa Setup Assistant agent
 4. **Kwa kuboresha muundo**: Tumia stadi ya Design System Aesthetics
 
-## Mada Zinazohusiana
+## Mada Zinazohusiana {#related-topics}
 
 - **Theme Builder Onboarding**: Kuwekaji kwa mwongozo wa mandhari maalum
 - **Setup Assistant Agent**: Kuweka tovuti kwa mwongozo wa agent

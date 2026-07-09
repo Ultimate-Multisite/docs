@@ -3,7 +3,7 @@ title: Whakawhanaungatanga akauata i te whakatau aka via Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Pūrerehua: Whakawhanaungatanga akaupā via Zapier
+# Pūrerehua: Whakawhanaungatanga akaupā via Zapier {#event-register-an-account-via-zapier}
 
 I roto i te article [Integrating Ultimate Multisite with Zapier](zapier.md), i whakatakuta mātou i te mea he pēhea te whakamahi i Zapier mō te whakamaoritanga mahi ā-aupā (triggers) me ngā pūrere (events) i runga i Ultimate Multisite. I tēnei article, ka whakaatu atu mātou i a koe pēhea e taea ai te whaiwhakarite (integrate) ngā mea whakamahi o aua wāhi (3rd party applications). Ka whakamahia mātou i Google Sheets mō te waiata o ngā āhuatanga (source of data) me te tino pai i te whakamahi i Ultimate Multisite ki te whakamaoritanga akaupā.
 

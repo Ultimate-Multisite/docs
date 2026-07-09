@@ -4,11 +4,11 @@ title: Ficil - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Ficil: wu_mcp_abilities_registered
+# Ficil: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Waxay dhacdaa ka dib marka awoodaha MCP loo diiwaangeliyo hay'ad.
 
-## Halbeegyada
+## Halbeegyada {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Waxay dhacdaa ka dib marka awoodaha MCP loo diiwaangeliyo hay'ad.
 | $model_name | `string` | Magaca model-ka. |
 | $this | `object` | Tusaalaha maamulaha. |
 
-### Laga bilaabo
+### Laga bilaabo {#since}
 
 - 2.5.0
-### Isha
+### Isha {#source}
 
 Lagu qeexay [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) safka 171

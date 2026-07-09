@@ -4,11 +4,11 @@ title: 'Chochita - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 Imayambitsidwa chinthu chikasungidwa mu database.
 
-## Magawo
+## Magawo {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Imayambitsidwa chinthu chikasungidwa mu database.
 | $this | `\Base_Model` | Chitsanzo cha chinthucho. |
 | $new | `bool` | Zoonadi ngati chinthucho ndi chatsopano. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.0
-### Gwero
+### Gwero {#source}
 
 - Zafotokozedwa mu [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) pa mzere 624
 - Zafotokozedwa mu [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) pa mzere 1754

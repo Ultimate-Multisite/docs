@@ -3,7 +3,7 @@ title: Komuniti
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Cara menyertai Komuniti Ultimate Multisite
+# Cara menyertai Komuniti Ultimate Multisite {#how-to-join-ultimate-multisite-community}
 
 Komuniti Ultimate Multisite adalah ruang di mana anda boleh berhubung dengan pengguna Ultimate Multisite yang lain serta berkongsi tip, pengalaman dan banyak lagi. Untuk mengakses Komuniti Ultimate Multisite, pergi ke https://community.ultimatemultisite.com/home.
 

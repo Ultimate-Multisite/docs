@@ -3,7 +3,7 @@ title: PayFast የለውጥ ዝርዝር
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast የለውጥ መዝገብ
+# PayFast የለውጥ መዝገብ {#payfast-changelog}
 
 ስሪት፡ 1.0.2 - የተለቀቀበት ቀን 2025-09-28
 

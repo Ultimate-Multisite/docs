@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Ubukodeshwe bwinshi
+# Ubukodeshwe bwinshi {#multi-tenancy}
 
 Sakaza imbuga nto ku maseriveri no mu bubiko bw'amakuru kugira ngo imikorere yihute n'umutekano wiyongere
 
-## Iby'ingenzi byasohotse muri verisiyo 1.2.0
+## Iby'ingenzi byasohotse muri verisiyo 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 yongeramo urufatiro rw'umukodesha wigenga ku mikorere yo gutandukanya ibikorerwa mu musaruro:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 yongeramo urufatiro rw'umukodesha wigenga ku mikorere yo gut
 
 Reba inyoborabakoresha za [imikorere yo kwimura kwigenga](/user-guide/getting-started/sovereign-migration-workflow), [gutandukanya multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), na [ibikorwa by'umukodesha wigenga](/user-guide/administration/sovereign-tenant-operations).
 
-## Ibisabwa
+## Ibisabwa {#requirements}
 
 - WordPress 5.3 cyangwa iri hejuru yayo
 - PHP 7.4 cyangwa iri hejuru yayo
 - Multisite Ultimate plugin (ikora)
 
-## Kwinjiza
+## Kwinjiza {#installation}
 
 1. Ohereza dosiye za addon muri directory yawe ya `/wp-content/plugins/`
 2. Koresha plugin unyuze muri menu ya 'Plugins' muri WordPress
 3. Tunganya igenamiterere rya addon muri admin ya network
 
-## Iterambere
+## Iterambere {#development}
 
-### Gutegura
+### Gutegura {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Imiterere y'umushinga
+### Imiterere y'umushinga {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Amategeko yo kuvugurura code
 ```
 
-### Kugerageza
+### Kugerageza {#testing}
 
 Addon irimo urwego rwuzuye rwo kugerageza:
 
@@ -93,54 +93,54 @@ Addon irimo urwego rwuzuye rwo kugerageza:
 - **Uko code igerwaho n'ibizamini**: Byagenwe gukurikirana uko code igerwaho n'ibizamini
 - **Kugerageza Multisite**: Ibizamini bikorerwa mu bidukikije bya multisite
 
-### Amabwiriza ya code
+### Amabwiriza ya code {#code-standards}
 
 - **WordPress Coding Standards**: Ashyirwa mu bikorwa hakoreshejwe PHPCS
 - **Guhuza na PHP 7.4+**: Ibiranga PHP bigezweho birashyigikiwe
 - **Isesengura ridahinduka**: Guhuza PHPStan mu kugenzura ubwoko
 - **Kuvugurura code**: Amategeko ya Rector ku kuzamura PHP
 
-### Sisitemu yo kubaka
+### Sisitemu yo kubaka {#build-system}
 
 - **Gutunganya umutungo**: Kugabanya dosiye za CSS/JS
 - **Ubuhinduzi**: Gukora dosiye ya POT
 - **Gupakira**: Gukora archive yo gukwirakwiza
 - **Uburyo bw'iterambere**: Umutungo utagabanyijwe wo gufasha gukemura amakosa
 
-## Igenamiterere
+## Igenamiterere {#configuration}
 
 Addon ishyigikira amahitamo atandukanye y'igenamiterere aboneka binyuze muri interineti ya admin ya network.
 
-### Igenamiterere ry'umukodesha wigenga
+### Igenamiterere ry'umukodesha wigenga {#sovereign-tenant-configuration}
 
 Ku bakodesha bigenga, gena database y'umukodesha, umuzi wa filesystem, guhuza database host, n'ubushobozi bwa host mbere yo kohereza traffic ku mukodesha. Koresha kugenzura kwimura nyuma ya buri mpinduka igira ingaruka ku byangombwa bya database, guhuza host, routing, cyangwa gutegura abakoresha.
 
 Koresha `localhost` gusa igihe runtime y'umukodesha n'impushya za database byiteze local socket cyangwa kugera ku mashini imwe. Koresha `127.0.0.1` cyangwa izina rya host rya serivisi igihe iyo ari yo grant host yagenwe n'utanga serivisi wawe.
 
-### Ubushobozi bwa Hostinger
+### Ubushobozi bwa Hostinger {#hostinger-capability}
 
 Ubushobozi bwa Hostinger multi-tenancy bukorana na token rusange yo guhuza Hostinger. Emeza ko domain iri muri hPanel, DNS yerekeza kuri Account ya Hostinger, kandi igenamiterere rya database y'umukodesha rihuye na hPanel mbere yo kugenzura.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Itangizwa nyuma y'itangira rya addon
 - `ultimate-multisite-addon-template_loaded` - Itangizwa nyuma y'uko dosiye zose za addon zipakiwe
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Hindura igenamiterere rya addon
 - `ultimate-multisite-addon-template_enabled` - Hindura uko addon ifungurwa/ifungwa
 
-## Uruhushya
+## Uruhushya {#license}
 
 Iyi addon ifite uruhushya rwa GPL v3 cyangwa uruyikurikira.
 
-## Ubufasha
+## Ubufasha {#support}
 
 Ku bufasha n'inyandiko, sura [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Verisiyo 1.2.0 (2026-06-03): yongeraho kwinjira kw'umukodesha bidashingiye kuri leta, ubushobozi bwa Hostinger multi-tenancy, gutandukanya database na filesystem kuri buri rubuga ruto, amarembo yo kugenzura kwimura kwigenga, kunoza itangiza ry'umukodesha/umwanditsi wa database, guhuza MySQL host bishobora kugenwa, no gukuraho kwigenga kurushijeho kugira umutekano.
 

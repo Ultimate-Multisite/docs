@@ -3,17 +3,17 @@ title: GridPane integreerimine
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integreerimine
+# GridPane Integreerimine {#gridpane-integration}
 
-## Üldine ülevaade
+## Üldine ülevaade {#overview}
 GridPane on spetsialise WordPress hoitja kontrollpaneel, mille on loodud tõsise WordPress professionaalide jaoks. See integreerimine võimaldab automaatselt domeenid synkronida ja SSL-tüüdorite haldamist Ultimate Multisite'i ja GridPane vahel.
 
-## Funktsioonid
+## Funktsioonid {#features}
 - Automootne domeenide synkronimine
 - SSL-tüüdorite haldamine
 - SUNRISE konstantsi automaatne konfiguratsioon
 
-## nõuded
+## nõuded {#requirements}
 Järgnev konstantsid tuleb definitsiooniks teie `wp-config.php` failis:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-## Seadistamise juhised
+## Seadistamise juhised {#setup-instructions}
 
-### 1. Pide oma GridPane API-kujutused (Credentials)
+### 1. Pide oma GridPane API-kujutused (Credentials) {#1-get-your-gridpane-api-credentials}
 
 1. Logi sisse oma GridPane dashboardile
 2. Minema "Settings" > "API" menüüpunktile
 3. Loo API-kuju, kui teil selle pole juba
 4. Kopya oma API-kuju
 
-### 2. Pide oma serveri ja veebisaite ID-d (IDs)
+### 2. Pide oma serveri ja veebisaite ID-d (IDs) {#2-get-your-server-and-site-ids}
 
 1. GridPane dashboardil minema "Servers" sektsioonile
 2. Valige server, kus teie WordPress multisite on hoitu
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Minema "Sites" ja valige oma WordPress veebisaite
 5. Kirjuta Site ID (nähtav URL-is või veebisaite üksikasjaliste lehekülje all)
 
-### 3. Lisage konstantsid `wp-config.php`-le
+### 3. Lisage konstantsid `wp-config.php`-le {#3-add-constants-to-wp-configphp}
 
 Lisage järgmised konstantsid teie `wp-config.php` failile:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Lülitage integreerimine sisse
+### 4. Lülitage integreerimine sisse {#4-enable-the-integration}
 
 1. WordPress administratiivis osas minema Ultimate Multisite > Settings sektsioonile
 2. Minema "Domain Mapping" tabile
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Lülitage GridPane-integreerimine sisse
 5. Klõpsake "Save Changes" (Muutuste salvestamine)
 
-## Kuidas see toimib
+## Kuidas see toimib {#how-it-works}
 
 Kui domeen on Ultimate Multisite'is mappitud:
 
@@ -69,13 +69,13 @@ Kui domeen on Ultimate Multisite'is mappitud:
 
 Integreerimine haldab ka automaatselt SUNRISE konstantsi teie wp-config.php failis, mis on vajalik domeenmaappimise õiguse jaoks.
 
-## SUNRISE konstantsi haldamine
+## SUNRISE konstantsi haldamine {#sunrise-constant-management}
 
 GridPane integreerimise ainulaadne funktsioon on see, et see tagab, et SUNRISE konstantsi wp-config.php failis automaatselt tagasi käivitakse, et vältida konfliktid GridPane oma domeenmaappimissüsteemiga. See tagab, et mõlemad süsteemid saavad koos töötada ilma probleemide korral.
 
-## Ühenduse probleemide lahendamine
+## Ühenduse probleemide lahendamine {#troubleshooting}
 
-### API ühenduse probleemid
+### API ühenduse probleemid {#api-connection-issues}
 - Kontrollige, kas teie API key on õige
 - Kontrollige, kas teie serveri ja veebile ID on õiged
 - Veenduge, et teie GridPane konto on vajalikud lubanded

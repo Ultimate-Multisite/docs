@@ -3,7 +3,7 @@ title: Àwọn Ìbéèrè Tí A Máa ń Béèrè Lọ́pọ̀ Ìgbà
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Àwọn Ìbéèrè Tí A Máa Ń Béèrè Lọ́pọ̀ Ìgbà
+# Àwọn Ìbéèrè Tí A Máa Ń Béèrè Lọ́pọ̀ Ìgbà {#frequently-asked-questions}
 
 Eyi ni díẹ̀ lára **Àwọn Ìbéèrè Tí A Máa Ń Béèrè Lọ́pọ̀ Ìgbà** tí wọ́n sábà máa ń yọ nígbà àwọn ìbéèrè ìrànlọ́wọ́.
 

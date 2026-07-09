@@ -4,11 +4,11 @@ title: कार्य - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# कार्य: set_logged_in_cookie
+# कार्य: set_logged_in_cookie {#action-setloggedincookie}
 
 लग-इन प्रमाणीकरण cookie सेट हुनु ठीक अघि चल्छ।
 
-## Parameters
+## Parameters {#parameters}
 
 | नाम | प्रकार | विवरण |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | प्रमाणीकरण योजना। पूर्वनिर्धारित 'logged_in'। |
 | $token | `string` | यस cookie का लागि प्रयोग गर्ने प्रयोगकर्ताको session token। |
 
-### देखि
+### देखि {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### स्रोत
+### स्रोत {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) मा लाइन 141 मा परिभाषित गरिएको छ।

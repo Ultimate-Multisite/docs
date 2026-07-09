@@ -4,11 +4,11 @@ title: 'Радња - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Омогућава програмерима додатака да додају додатне закачке на наше странице.
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 | $page_hook | `string` | Закачка странице за ову страницу. |
 | $admin_page | `self` | Инстанца странице. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 1.8.2
 - 2.0.4: Додат трећи параметар: инстанца странице.
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) на линији 332

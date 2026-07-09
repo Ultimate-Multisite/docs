@@ -3,11 +3,11 @@ title: Visão geral do Painel
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Visão Geral do Painel
+# Visão Geral do Painel {#dashboard-overview}
 
 O Ultimate Multisite possui um **Painel** dedicado no menu Ultimate Multisite, e também adiciona widgets ao Painel da Rede. Este artigo cobre o que você verá em ambos os locais.
 
-## O Painel da Rede
+## O Painel da Rede {#the-network-dashboard}
 
 O Ultimate Multisite injeta widgets úteis no painel de nível de rede encontrado em **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Aqui está o que cada widget oferece:
 
 ![Widget Notícias](/img/admin/network-dashboard-news.png)
 
-## O Painel do Ultimate Multisite
+## O Painel do Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Enquanto o painel da rede apresenta informações holísticas sobre a rede, o painel do Ultimate Multisite (no nível superior do menu Ultimate Multisite) apresenta informações sobre o serviço.
 

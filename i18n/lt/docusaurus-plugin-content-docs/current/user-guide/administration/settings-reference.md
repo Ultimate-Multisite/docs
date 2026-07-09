@@ -3,11 +3,11 @@ title: Nustatymų žinynas
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Nustatymų nuoroda
+# Nustatymų nuoroda {#settings-reference}
 
 Šiame puslapyje sekami nustatymai, kurie veikia kasdienį administravimą ir naujausius elgsenos pakeitimus Ultimate Multisite.
 
-## Kitos parinktys
+## Kitos parinktys {#other-options}
 
 Sritis **Kitos parinktys** rodoma po **Ultimate Multisite > Nustatymai > Prisijungimas ir registracija**.
 
@@ -15,23 +15,23 @@ Sritis **Kitos parinktys** rodoma po **Ultimate Multisite > Nustatymai > Prisiju
 |---|---|
 | **Įjungti Jumper** | Rodo Jumper greitosios navigacijos įrankį administravimo srityje. Naudokite jį norėdami pereiti tiesiai į Ultimate Multisite ekranus, tinklo objektus ir palaikomas administravimo paskirties vietas. Išjunkite jį, jei nenorite, kad šis spartusis kelias būtų matomas. |
 
-## Klaidų ataskaitos ir telemetrija
+## Klaidų ataskaitos ir telemetrija {#error-reporting-and-telemetry}
 
 Ankstesnis sutikimo teikti klaidų ataskaitas nustatymas pašalintas iš nustatymų puslapio. Anoniminė telemetrija išjungta ir nėra UI perjungiklio jai įjungti.
 
 Jei prižiūrite vidinius darbo aprašus arba nustatymų puslapio ekrano kopijas, pašalinkite nuorodas į seną sutikimo teikti klaidų ataskaitas lauką, kad administratoriai neieškotų nustatymo, kurio nebėra.
 
-## Importo / eksporto nustatymai
+## Importo / eksporto nustatymai {#importexport-settings}
 
 Nustatymų skirtuke **Importas / eksportas** aprašoma, kuriuos nustatymus jis valdo, ir pateikiama tiesioginė nuoroda į **Ultimate Multisite > Svetainės eksportas** svetainių ir tinklo archyvams. Naudokite nustatymų skirtuką importo / eksporto konfigūracijai, naudokite **Įrankiai > Eksportas ir importas** vienos svetainės eksporto / importo eigai, o Svetainės eksporto įrankį naudokite, kai reikia viso tinklo eksporto archyvo.
 
-## Domain Seller HostAfrica balanso įspėjimas
+## Domain Seller HostAfrica balanso įspėjimas {#domain-seller-hostafrica-balance-warning}
 
 Kai Domain Seller priedas prijungtas prie HostAfrica, tinklo administratoriai dabar mato atmetamą įspėjimą apie mažą balansą, kai perpardavėjo paskyros balansas yra per mažas patikimam domenų registravimo ar atnaujinimo apdorojimui.
 
 Laikykite šį pranešimą operaciniu įspėjimu: papildykite HostAfrica perpardavėjo balansą prieš priimdami daugiau mokamų domenų registracijų, tada grįžkite į Domain Seller nustatymus arba domenų stebėjimo ekraną, kad patvirtintumėte, jog registracijos ir atnaujinimai gali tęstis įprastai.
 
-## AI tiekėjo jungties nustatymai
+## AI tiekėjo jungties nustatymai {#ai-provider-connector-settings}
 
 AI tiekėjo jungties nustatymai dabar rodo tik palaikomus OAuth paskyrų telkinius:
 

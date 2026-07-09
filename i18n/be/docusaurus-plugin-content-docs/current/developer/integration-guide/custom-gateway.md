@@ -3,11 +3,11 @@ title: Распрацоўка індывідуальнага шлюза
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Распрацоўка карыстальніцкага шлюза
+# Распрацоўка карыстальніцкага шлюза {#custom-gateway-development}
 
 Вы можаце ствараць карыстальніцкія плацежныя шлюзы, пашыраючы клас `Base_Gateway`.
 
-## Клас шлюза
+## Клас шлюза {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Зарэгістраваць шлюз
+## Зарэгістраваць шлюз {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ключавыя метады
+## Ключавыя метады {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Апрацоўка запытаў на вяртанне сродкаў |
 | `get_payment_methods()` | Вяртанне захаваных спосабаў аплаты для кліента |
 
-## Уліковыя даныя падаўжэння для перыядычных членстваў
+## Уліковыя даныя падаўжэння для перыядычных членстваў {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 дазваляе інтэграцыям шлюзаў паведамляць, ці мае перыядычнае членства шматразовы ўліковы даных для падаўжэння, перш чым `auto_renew` будзе захаваны. Падключыцеся да `wu_membership_has_renewal_credential` і вярніце:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Ачысціце маркер адсутнага ўліковага даных як частку паспяховага працэсу паўторнай аўтарызацыі вашага шлюза пасля захавання новага шматразовага ўліковага даных.
 
-## Парады
+## Парады {#tips}
 
 - Заўсёды вяртайце `WP_Error` пры збоі, каб Ultimate Multisite мог апрацаваць паказ памылкі
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Выкарыстоўвайце `wu_log_add()` для журналявання, спецыфічнага для шлюза
 
-## Магчымасці пастаўшчыкоў AI-канектара
+## Магчымасці пастаўшчыкоў AI-канектара {#ai-connector-provider-capabilities}
 
 Карыстальніцкія інтэграцыі, якія выклікаюць аперацыі на базе AI-канектара, павінны адпавядаць падтрымліванаму набору пастаўшчыкоў OAuth, уведзенаму з AI Provider for Anthropic Max v1.3.0:
 

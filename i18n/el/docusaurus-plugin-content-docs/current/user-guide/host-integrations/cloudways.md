@@ -3,18 +3,18 @@ title: Ενσωμάτωση Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Ενσωμάτωση Cloudways
+# Ενσωμάτωση Cloudways {#cloudways-integration}
 
-## Επισκόπηση
+## Επισκόπηση {#overview}
 Το Cloudways είναι μια διαχειριζόμενη πλατφόρμα cloud hosting που σας επιτρέπει να αναπτύσσετε WordPress ιστότοπους σε διάφορους παρόχους cloud όπως DigitalOcean, AWS, Google Cloud και άλλα. Αυτή η ενσωμάτωση ενεργοποιεί τον αυτόματο συγχρονισμό domain και τη διαχείριση πιστοποιητικών SSL μεταξύ Ultimate Multisite και Cloudways.
 
-## Δυνατότητες
+## Δυνατότητες {#features}
 - Αυτόματος συγχρονισμός domain
 - Διαχείριση πιστοποιητικών SSL
 - Υποστήριξη για επιπλέον domains
 - Επικύρωση DNS για πιστοποιητικά SSL
 
-## Απαιτήσεις
+## Απαιτήσεις {#requirements}
 Οι ακόλουθες σταθερές πρέπει να οριστούν στο αρχείο `wp-config.php` σας:
 
 ```php
@@ -30,16 +30,16 @@ define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Οδηγίες ρύθμισης
+## Οδηγίες ρύθμισης {#setup-instructions}
 
-### 1. Αποκτήστε τα διαπιστευτήρια Cloudways API σας
+### 1. Αποκτήστε τα διαπιστευτήρια Cloudways API σας {#1-get-your-cloudways-api-credentials}
 
 1. Συνδεθείτε στο Cloudways dashboard σας
 2. Μεταβείτε στο "Account" > "API Keys"
 3. Δημιουργήστε ένα API key αν δεν έχετε ήδη ένα
 4. Αντιγράψτε το email και το API key σας
 
-### 2. Αποκτήστε τα ID του διακομιστή και της εφαρμογής σας
+### 2. Αποκτήστε τα ID του διακομιστή και της εφαρμογής σας {#2-get-your-server-and-application-ids}
 
 1. Στο Cloudways dashboard σας, μεταβείτε στο "Servers"
 2. Επιλέξτε τον διακομιστή όπου φιλοξενείται το WordPress multisite σας
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Μεταβείτε στο "Applications" και επιλέξτε την WordPress εφαρμογή σας
 5. Το App ID είναι ορατό στο URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Προσθέστε σταθερές στο wp-config.php
+### 3. Προσθέστε σταθερές στο wp-config.php {#3-add-constants-to-wp-configphp}
 
 Προσθέστε τις ακόλουθες σταθερές στο αρχείο `wp-config.php` σας:
 
@@ -70,7 +70,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 παρακάτω για το γιατί αυτό εμποδίζει την έκδοση πιστοποιητικών SSL ανά tenant.
 :::
 
-### 4. Ενεργοποιήστε την ενσωμάτωση
+### 4. Ενεργοποιήστε την ενσωμάτωση {#4-enable-the-integration}
 
 1. Στο WordPress admin σας, μεταβείτε στο Ultimate Multisite > Settings
 2. Πλοηγηθείτε στην καρτέλα "Domain Mapping"
@@ -78,9 +78,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Ενεργοποιήστε την ενσωμάτωση Cloudways
 5. Κάντε κλικ στο "Save Changes"
 
-## Πώς λειτουργεί
+## Πώς λειτουργεί {#how-it-works}
 
-### Συγχρονισμός domain
+### Συγχρονισμός domain {#domain-syncing}
 
 Όταν ένα domain αντιστοιχίζεται στο Ultimate Multisite:
 
@@ -91,7 +91,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 
 Σημείωση: Το Cloudways API απαιτεί την αποστολή της πλήρους λίστας των domains κάθε φορά, όχι απλώς την προσθήκη ή αφαίρεση μεμονωμένων domains.
 
-### Διαχείριση πιστοποιητικών SSL
+### Διαχείριση πιστοποιητικών SSL {#ssl-certificate-management}
 
 Αφού συγχρονιστούν τα domains:
 
@@ -106,7 +106,7 @@ Cloudways. Αν παρέχεται ένα μοτίβο wildcard στο `WU_CLOUD
 χειροκίνητα, αλλά κάτι τέτοιο αποκλείει την ανά domain έκδοση Let's Encrypt για αντιστοιχισμένα προσαρμοσμένα domains
 (δείτε την παγίδα παρακάτω).
 
-## Επιπλέον domains
+## Επιπλέον domains {#extra-domains}
 
 Η σταθερά `WU_CLOUDWAYS_EXTRA_DOMAINS` σας επιτρέπει να καθορίσετε επιπλέον **εξωτερικά**
 domains που πρέπει πάντα να διατηρούνται στη λίστα ψευδωνύμων της εφαρμογής Cloudways. Χρησιμοποιήστε τη για:
@@ -117,7 +117,7 @@ domains που πρέπει πάντα να διατηρούνται στη λί
 Μην χρησιμοποιείτε αυτήν τη σταθερά για το wildcard subdomain του δικού σας δικτύου
 (π.χ. `*.your-network.com`). Δείτε την παγίδα wildcard SSL παρακάτω.
 
-## Σημαντικό — παγίδα wildcard SSL
+## Σημαντικό — παγίδα wildcard SSL {#important--wildcard-ssl-pitfall}
 
 Ένα συνηθισμένο λάθος όταν ακολουθείτε την προεπιλεγμένη ρύθμιση του Cloudways είναι να προσθέσετε ένα wildcard όπως
 `*.your-network.com` στο `WU_CLOUDWAYS_EXTRA_DOMAINS`, ή να εγκαταστήσετε χειροκίνητα ένα Cloudways
@@ -128,7 +128,7 @@ wildcard πιστοποιητικό SSL για αυτό το wildcard.
 πιστοποιητικό SSL στην εφαρμογή κάθε φορά, και ένα προϋπάρχον wildcard πιστοποιητικό στην
 εφαρμογή εμποδίζει την ανά domain έκδοση Let's Encrypt στην οποία βασίζεται η ενσωμάτωση.
 
-### Προτεινόμενη ρύθμιση Cloudways SSL για ένα δίκτυο Ultimate Multisite
+### Προτεινόμενη ρύθμιση Cloudways SSL για ένα δίκτυο Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Στην καρτέλα **SSL Certificate** της εφαρμογής Cloudways, εγκαταστήστε ένα **τυπικό
    πιστοποιητικό Let's Encrypt** που καλύπτει μόνο τα `your-network.com` και `www.your-network.com`
@@ -146,20 +146,20 @@ wildcard πιστοποιητικό είναι ενεργό εκεί, αφαιρ
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Έπειτα ενεργοποιήστε ξανά μια αντιστοίχιση domain (ή περιμένετε την επόμενη)
 και η ενσωμάτωση θα αρχίσει ξανά να εκδίδει πιστοποιητικά ανά domain.
 
-## Αντιμετώπιση προβλημάτων
+## Αντιμετώπιση προβλημάτων {#troubleshooting}
 
-### Προβλήματα σύνδεσης API
+### Προβλήματα σύνδεσης API {#api-connection-issues}
 - Επαληθεύστε ότι το email και το API key σας είναι σωστά
 - Ελέγξτε ότι τα IDs του server και της εφαρμογής σας είναι σωστά
 - Βεβαιωθείτε ότι το Account σας στο Cloudways έχει τα απαραίτητα δικαιώματα
 
-### Προβλήματα πιστοποιητικών SSL
+### Προβλήματα πιστοποιητικών SSL {#ssl-certificate-issues}
 - Το Cloudways απαιτεί τα domains να έχουν έγκυρες εγγραφές DNS που δείχνουν στον server σας πριν από την έκδοση πιστοποιητικών SSL
 - Η ενσωμάτωση επικυρώνει τις εγγραφές DNS πριν ζητήσει πιστοποιητικά SSL
 - Αν δεν εκδίδονται πιστοποιητικά SSL, ελέγξτε ότι τα domains σας δείχνουν σωστά στη διεύθυνση IP του server σας
 - **Προσαρμοσμένα domains ανά tenant κολλημένα χωρίς SSL;** Ελέγξτε την καρτέλα SSL Certificate της εφαρμογής Cloudways. Αν ένα wildcard πιστοποιητικό (εγκατεστημένο χειροκίνητα ή που καλύπτει το `*.your-network.com`) είναι ενεργό, το Cloudways δεν θα εκδώσει πιστοποιητικά Let's Encrypt για μεμονωμένα αντιστοιχισμένα προσαρμοσμένα domains. Αντικαταστήστε το με ένα τυπικό πιστοποιητικό Let's Encrypt που καλύπτει μόνο το κύριο domain του δικτύου (`your-network.com`, `www.your-network.com`) και αφαιρέστε τυχόν wildcard καταχωρίσεις από `WU_CLOUDWAYS_EXTRA_DOMAINS`. Έπειτα ενεργοποιήστε ξανά μια αντιστοίχιση domain (ή περιμένετε την επόμενη) και η ενσωμάτωση θα ζητήσει πιστοποιητικά ανά domain.
 
-### Το domain δεν προστέθηκε
+### Το domain δεν προστέθηκε {#domain-not-added}
 - Ελέγξτε τα αρχεία καταγραφής του Ultimate Multisite για τυχόν μηνύματα σφάλματος
 - Επαληθεύστε ότι το domain δεν έχει ήδη προστεθεί στο Cloudways
 - Βεβαιωθείτε ότι το πλάνο σας στο Cloudways υποστηρίζει τον αριθμό των domains που προσθέτετε

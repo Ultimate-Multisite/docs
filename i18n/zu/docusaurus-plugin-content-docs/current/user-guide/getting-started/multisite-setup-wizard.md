@@ -3,7 +3,7 @@ title: Isilekeleli Sokusetha Amasayithi Amaningi
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Iwizadi Yokusetha i-Multisite
+# Iwizadi Yokusetha i-Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite ifaka iwizadi eyakhelwe ngaphakathi eguqula ngokuzenzakalelayo ukufakwa okujwayelekile kwe-WordPress kube yinethiwekhi ye-WordPress Multisite. Lokhu kususa isidingo sokuhlela ngesandla `wp-config.php` noma ukusebenzisa imiyalo yedathabheyisi.
 
@@ -11,13 +11,13 @@ Ultimate Multisite ifaka iwizadi eyakhelwe ngaphakathi eguqula ngokuzenzakalelay
 Uma ukufakwa kwakho kwe-WordPress sekuvele kusebenza njengenethiwekhi ye-Multisite, ungaseqa ngokuphelele lesi sinyathelo. Iwizadi ivela kuphela lapho i-Multisite ingakavunyelwa.
 :::
 
-## Iwizadi Ivela Nini?
+## Iwizadi Ivela Nini? {#when-does-the-wizard-appear}
 
 Uma uvula i-Ultimate Multisite ekufakweni okujwayelekile kwe-WordPress (okungeyona i-Multisite), i-plugin ithola ukuthi i-Multisite ayikavunyelwa futhi ikuqondise ngokuzenzakalelayo ku-Iwizadi Yokusetha i-Multisite esikhundleni sewizadi yokusetha evamile.
 
 Ungakwazi futhi ukuyifinyelela ngqo ku-**WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Okudingekayo Ngaphambi Kokuqala
+## Okudingekayo Ngaphambi Kokuqala {#prerequisites}
 
 Ngaphambi kokusebenzisa iwizadi, qiniseka ukuthi:
 
@@ -29,7 +29,7 @@ Ngaphambi kokusebenzisa iwizadi, qiniseka ukuthi:
 Iwizadi ishintsha ifayela lakho elithi `wp-config.php` futhi idala amathebula amasha edathabheyisi. Njalo dala i-backup ngaphambi kokuqhubeka.
 :::
 
-## Isinyathelo 1: Ukwamukelwa
+## Isinyathelo 1: Ukwamukelwa {#step-1-welcome}
 
 Isikrini sokuqala sichaza ukuthi iyini i-WordPress Multisite nokuthi iwizadi izokwenzani:
 
@@ -42,11 +42,11 @@ Isikrini sokuqala sichaza ukuthi iyini i-WordPress Multisite nokuthi iwizadi izo
 
 Chofoza **Qhubeka** ukuze uqhubeke.
 
-## Isinyathelo 2: Ukucushwa Kwenethiwekhi
+## Isinyathelo 2: Ukucushwa Kwenethiwekhi {#step-2-network-configuration}
 
 Lesi sinyathelo sikucela ukuthi ucushwe izilungiselelo zenethiwekhi yakho.
 
-### Isakhiwo Sesayithi
+### Isakhiwo Sesayithi {#site-structure}
 
 Khetha ukuthi amasayithi enethiwekhi yakho azohlelwa kanjani:
 
@@ -57,11 +57,11 @@ Khetha ukuthi amasayithi enethiwekhi yakho azohlelwa kanjani:
 Uma ukhetha ama-sub-domain, kuzodingeka ucushwe i-**wildcard DNS** kanye nesitifiketi se-**wildcard SSL certificate** sesizinda sakho. Iningi labasingathi be-WordPress abaphethwe likwenza lokhu ngokuzenzakalelayo. Bheka [Ultimate Multisite 101](./ultimate-multisite-101) ukuze uthole ukuqhathanisa okunemininingwane.
 :::
 
-### Isihloko Senethiwekhi
+### Isihloko Senethiwekhi {#network-title}
 
 Faka igama lenethiwekhi yakho. Lokhu ngokuzenzakalelayo kuba isihloko sesayithi lakho samanje esinamathiselwe elithi "Network". Ungakushintsha lokhu kamuva kuzilungiselelo zenethiwekhi.
 
-### I-imeyili Yomlawuli Wenethiwekhi
+### I-imeyili Yomlawuli Wenethiwekhi {#network-admin-email}
 
 Ikheli le-imeyili elisetshenziselwa izaziso zokuphathwa kwenethiwekhi. Lokhu ngokuzenzakalelayo kuba ikheli le-imeyili lomsebenzisi wamanje.
 
@@ -69,7 +69,7 @@ Ikheli le-imeyili elisetshenziselwa izaziso zokuphathwa kwenethiwekhi. Lokhu ngo
 
 Ngemva kokugcwalisa izinkambu, chofoza **Qhubeka** ukuze uqhubeke.
 
-## Isinyathelo 3: Ukufakwa
+## Isinyathelo 3: Ukufakwa {#step-3-installation}
 
 Chofoza inkinobho ethi **Install** ukuze uqale. Iwizadi yenza izinyathelo ezinhlanu ezizenzakalelayo ngokulandelana, ngasinye sibonisa inqubekela-phambili yaso ngesikhathi sangempela:
 
@@ -96,7 +96,7 @@ Uma zonke izinyathelo seziqedwe ngempumelelo, uzobona isimo esiluhlaza esithi "I
 
 Iwizadi izobe isiqhubekela ngokuzenzakalelayo esikrinini sokuqeda.
 
-## Isinyathelo 4: Kuqediwe
+## Isinyathelo 4: Kuqediwe {#step-4-complete}
 
 Uma ukufakwa sekuqediwe, uzobona umlayezo wempumelelo oqinisekisa ukuthi i-WordPress Multisite isivunyelwe.
 
@@ -108,7 +108,7 @@ Manje ungaqhubeka newizadi yokusetha ye-Ultimate Multisite ukuze ucushwe inkundl
 Ngemva kokuthi ukufakwa kwe-multisite kuqediwe, isiphequluli sakho sizoqondiswa kabusha ngomlawuli wenethiwekhi osanda kuvunyelwa. Kungase kudingeke ungene ngemvume futhi njengoba ama-cookie okuqinisekisa ebuyekezwa ukuze avumelane nendawo ye-multisite.
 :::
 
-## Enye Indlela Yokusetha Mathupha
+## Enye Indlela Yokusetha Mathupha {#manual-setup-fallback}
 
 Uma iwizadi ingakwazi ukubhala efayeleni lakho elithi `wp-config.php` (ngenxa yezimvume zefayela noma imikhawulo yeseva), izobonisa ikhodi eqondile okudingeka uyengeze mathupha:
 
@@ -117,9 +117,9 @@ Uma iwizadi ingakwazi ukubhala efayeleni lakho elithi `wp-config.php` (ngenxa ye
 
 Ngemva kokwenza izinguquko mathupha, vuselela ikhasi futhi iwizadi izothola ukuthi i-multisite isiyasebenza manje.
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
-### Iwizadi ithi i-wp-config.php ayibhaleki
+### Iwizadi ithi i-wp-config.php ayibhaleki {#the-wizard-says-wp-configphp-is-not-writable}
 
 Inqubo yeseva yakho yewebhu idinga imvume yokubhala efayeleni elithi `wp-config.php`. Ungakwazi ukwenza okukodwa kwalokhu:
 
@@ -127,7 +127,7 @@ Inqubo yeseva yakho yewebhu idinga imvume yokubhala efayeleni elithi `wp-config.
 - Sebenzisa imiyalelo yendlela yokusetha mathupha enikezwe iwizadi
 - Cela usizo kumhlinzeki wakho wokusingatha
 
-### Amasayithi awafinyeleleki ngemva kokusetha (ama-subdomain)
+### Amasayithi awafinyeleleki ngemva kokusetha (ama-subdomain) {#sites-are-not-accessible-after-setup-subdomains}
 
 Uma ukhethe isakhiwo se-subdomain, kudingeka ucushwe i-**wildcard DNS** yesizinda sakho. Engeza irekhodi le-DNS:
 
@@ -139,7 +139,7 @@ Inani: [i-IP yeseva yakho]
 
 Buza kumhlinzeki wakho wokusingatha uma ungaqinisekile ukuthi ungakulungisa kanjani lokhu.
 
-### Izinkinga zokuqinisekisa ngemva kokusetha
+### Izinkinga zokuqinisekisa ngemva kokusetha {#authentication-issues-after-setup}
 
 Uma ukhishiwe ekungeneni noma uhlangabezana namaphutha ama-cookie ngemva kokusethwa kwamasayithi amaningi:
 
@@ -147,7 +147,7 @@ Uma ukhishiwe ekungeneni noma uhlangabezana namaphutha ama-cookie ngemva kokuset
 2. Ngena futhi ku-`yourdomain.com/wp-login.php`
 3. Uma inkinga iqhubeka, hlola ukuthi i-`wp-config.php` yakho ayinayo i-`COOKIE_DOMAIN` esethwe ku-`false` — lokhu kuyinkinga eyaziwayo ekufakweni kwe-multisite kwe-subdomain
 
-### Isinyathelo sehlulekile ngesikhathi sokufaka
+### Isinyathelo sehlulekile ngesikhathi sokufaka {#a-step-failed-during-installation}
 
 Uma esinye sezinyathelo zokufaka sibonisa iphutha:
 

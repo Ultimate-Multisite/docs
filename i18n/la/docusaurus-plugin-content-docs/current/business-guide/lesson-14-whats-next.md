@@ -3,15 +3,15 @@ title: 'Lectio 14: Quid deinde sequitur'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lectio 14: Quid Deinde Sequatur
+# Lectio 14: Quid Deinde Sequatur {#lesson-14-what-comes-next}
 
 Suggestum situs interretialis angusti mercatus a nihilo aedificavisti. FitSite iam vivit, studiis exercitationis corporis inservit, et reditum recurrentem generat. Haec ultima lectio spectat quo hinc eundum sit.
 
-## Ubi Desiimus
+## Ubi Desiimus {#where-we-left-off}
 
 FitSite est negotium currens cum clientibus, operationibus, et cursu incrementi. Nunc cogitamus quid deinde futurum sit.
 
-## Integrum Rete FitSite
+## Integrum Rete FitSite {#the-complete-fitsite-network}
 
 Hic est quidquid per 14 lectiones aedificavimus:
 
@@ -46,11 +46,11 @@ FitSite Rete (Integrum)
     └── Tabula viarum ad turmam aedificandam
 ```
 
-## Optio 1: Altius in Tuo Angusto Mercatu Ingredere
+## Optio 1: Altius in Tuo Angusto Mercatu Ingredere {#option-1-go-deeper-in-your-niche}
 
 Antequam ad novos angustos mercatus expandas, considera altius in exercitatione corporis ingredi:
 
-### Sub-Angusti Mercatus
+### Sub-Angusti Mercatus {#sub-niches}
 
 - **Studia yogae** -- exemplaria specialia cum meditationis, recessus, et officinarum functionibus
 - **CrossFit boxes** -- vestigatio WOD, eventus certaminum, functiones communitatis
@@ -59,7 +59,7 @@ Antequam ad novos angustos mercatus expandas, considera altius in exercitatione 
 
 Quisque sub-angustus mercatus sua exemplaria habere potest et fortasse suam propriam notam, omnia in eodem rete Ultimate Multisite currentia.
 
-### Functiones Pretiosiores
+### Functiones Pretiosiores {#premium-features}
 
 Aedifica functiones pro quibus studia exercitationis corporis extra solvere velint:
 
@@ -68,14 +68,14 @@ Aedifica functiones pro quibus studia exercitationis corporis extra solvere veli
 - **Exemplaria diarii exercitationis corporis** -- structurae contenti praeaedificatae ad mercaturam contenti de exercitatione corporis
 - **Integratio instrumentorum socialium** -- automatica publicatio calendariorum classium et nuntiorum
 
-### Expansio Geographica
+### Expansio Geographica {#geographic-expansion}
 
 Si localiter coepisti, expande ad:
 
 - Alias urbes in patria tua
 - Alias nationes (utere [functionibus localizationis](/user-guide/localization/translating) Ultimate Multisite ad plures linguas sustinendas)
 
-## Optio 2: Expande ad Angustos Mercatus Vicinos
+## Optio 2: Expande ad Angustos Mercatus Vicinos {#option-2-expand-to-adjacent-niches}
 
 Processus quem pro studiis exercitationis corporis secutus es pro quolibet angusto mercatu valet. Secundus tuus angustus mercatus facilior est quia iam habes:
 
@@ -83,7 +83,7 @@ Processus quem pro studiis exercitationis corporis secutus es pro quolibet angus
 - Experientiam operationalem
 - Methodum probatam
 
-### Angusti Mercatus Exercitationi Corporis Vicini
+### Angusti Mercatus Exercitationi Corporis Vicini {#adjacent-niches-to-fitness}
 
 - **Valetudo et spa** -- curatores massage, spa diurna, centra valetudinis
 - **Clubs lusorii** -- turmae lusoriae amateur, foedera, clubs recreationis
@@ -91,7 +91,7 @@ Processus quem pro studiis exercitationis corporis secutus es pro quolibet angus
 
 Hi cum exercitatione corporis partem auditorii communicant, ita mercatura tua et societates transferri possunt.
 
-### Angusti Mercatus Omnino Novi
+### Angusti Mercatus Omnino Novi {#completely-new-niches}
 
 Adhibe compagem ex Lectione 2 ad quemlibet angustum mercatum aestimandum:
 
@@ -108,7 +108,7 @@ Quisque novus angustus mercatus eget:
 
 Infrastructura suggesti, ratio solutionum, et processus operationales iidem manent.
 
-## Optio 3: Aedifica Suggestum Suggestorum
+## Optio 3: Aedifica Suggestum Suggestorum {#option-3-build-a-platform-of-platforms}
 
 In magna scala, plures notas angusti mercatus in uno rete Ultimate Multisite currere potes:
 
@@ -118,11 +118,11 @@ In magna scala, plures notas angusti mercatus in uno rete Ultimate Multisite cur
 
 Quaeque nota sua exemplaria, consilia, et mercaturam habet, sed infrastructuram, rationem solutionum, et processus operationales communicant. Hic oeconomia Ultimate Multisite potens fit -- unum suggestum, multae verticales.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Ad plenam separationem inter angustos mercatus, considera [addon Multi-Network](/addons/multinetwork), quod tibi permittit plura retia WordPress ex una institutione currere.
 
-## Optio 4: Negotium Vende
+## Optio 4: Negotium Vende {#option-4-sell-the-business}
 
 Suggestum sitorum interretialium angusti mercatus cum reditu recurrente, parvo discessu, et clara positione mercatus est res pretiosa. Negotia SaaS plerumque venduntur pro 3-5x reditu annuo.
 
@@ -134,7 +134,7 @@ FitSite cum 200 clientibus ad $89 ARPU:
 
 Hoc non est eventus praestitus, sed est realisticus pro suggesto angusti mercatus bene administrato.
 
-## Quid Didiceris
+## Quid Didiceris {#what-you-have-learned}
 
 Hic cursus te docuit processum iterabilem:
 
@@ -150,7 +150,7 @@ Hic cursus te docuit processum iterabilem:
 
 Angustus mercatus est strategia. Suggestum est instrumentum. Ultimate Multisite instrumentum possibile facit. Tua intellegentia angusti mercatus id pretiosum facit.
 
-## Incipias Aedificare
+## Incipias Aedificare {#start-building}
 
 Si una cum FitSite progressus es, suggestum operans habes. Si perlegisti ut propriam tuam provinciam invenires, redi ad [Lectio 2: Provinciam Tuam Eligere](lesson-2-picking-your-niche) et processum pro electa tua regione incipe.
 

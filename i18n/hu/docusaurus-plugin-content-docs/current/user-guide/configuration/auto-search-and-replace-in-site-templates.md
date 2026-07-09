@@ -3,7 +3,7 @@ title: Automatikus keresés és csere a webhelysablonokban
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatikus keresés és csere a webhely-sablonokban (v2)
+# Automatikus keresés és csere a webhely-sablonokban (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ehhez az útmutatóhoz WP UItimo 2.x verzió szükséges.**_
 
@@ -17,7 +17,7 @@ Az ügyfeled ezután ki tudja tölteni ezt a mezőt a regisztráció során.
 
 Az Ultimate Multisite ezután automatikusan lecseréli a helyőrzőket az ügyfél által megadott adatokra.
 
-## **A „helyőrzőkkel teli sablon” probléma megoldása**
+## **A „helyőrzőkkel teli sablon” probléma megoldása** {#solving-the-template-full-of-placeholders-problem}
 
 Mindez nagyszerű, de belefutunk egy csúnya problémába: a webhely-sablonjaink - amelyeket az ügyfeleink meglátogathatnak - tele vannak csúnya helyőrzőkkel, amelyek nem sokat mondanak.
 

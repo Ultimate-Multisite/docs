@@ -3,9 +3,9 @@ title: Pembaruan Log Sinkronisasi Kandungan
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Log Perubahan Content Sync
+# Log Perubahan Content Sync {#content-sync-changelog}
 
-### Versi 1.1.0 - Dikeluarkan pada 2025-12-31
+### Versi 1.1.0 - Dikeluarkan pada 2025-12-31 {#version-110---released-on-2025-12-31}
 * Baru: Sokongan untuk menyegerakkan semua jenis pos (posts, pages, custom post types)
 * Baru: Penapisan jenis pos dalam langkah pemilihan kandungan
 * Baru: Langkah pemilihan laman sumber - boleh menyegerakkan dari mana-mana laman, bukan hanya laman utama
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Langkah "Select Templates" nama diubah kepada "Select Data"
 * Diperbaiki: Kod khusus Elementor kini hanya berjalan untuk jenis pos elementor_library
 
-### Versi 1.0.0 - Dikeluarkan pada 2025-12-19
+### Versi 1.0.0 - Dikeluarkan pada 2025-12-19 {#version-100---released-on-2025-12-19}
 * Pelancaran awal
 * Wizard berbilang langkah untuk pemilihan templat dan laman
 * Pemprosesan kelompok dengan maklum balas kemajuan masa nyata

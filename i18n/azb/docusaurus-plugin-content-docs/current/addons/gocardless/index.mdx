@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless Ödeme Sistemi
 
 Müşterilerinizin Multisite Ultimate üyelikleri ve ürünleri için GoCardless kullanarak Direct Debit ile ödeme yapmasına izin verin!
 
-## Kurulum
+## Kurulum {#installation}
 
 1. 'ultimate-multisite-gocardless' dosyasını '/wp-content/plugins/' dizinine yükleyin
 2. WordPress'te 'Plugins' menüsünden eklentiyi etkinleştirin
 3. Eklentiyi kurmak için adım adım Sihirbaz'ı takip edin
 
-## Kullanım Kılavuzu
+## Kullanım Kılavuzu {#usage-guide}
 
 _GoCardless_, **Avrupa ve Birleşik Krallık'ta** bulunan ve **Direct Debit** ödemelerine olanak tanıyan bir ödeme ağ geçididir.
 
@@ -29,7 +29,7 @@ Bu eğitim, Ultimate Multisite ağınızda GoCardless üzerinden ödeme kabul et
 
 _**Not: GoCardless yalnızca aşağıdaki para birimleriyle çalışır:**_ **EUR, GBP, AUD, SEK ve DKK.**
 
-## Eklentiyi Kurma
+## Eklentiyi Kurma {#installing-the-add-on}
 
 Öncelikle, Ultimate Multisite için GoCardless eklentisini kurmanız gerekiyor. Bunu, **Ultimate Multisite > Ayarlar > Eklentiler (yan menüde)** yolunu izleyerek ve listeden GoCardless eklentisini seçerek yapabilirsiniz.
 
@@ -37,7 +37,7 @@ Eklenti kurulup etkinleştirildikten sonra, **Ultimate Multisite > Ayarlar > Öd
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Erişim Token'ı Alma
+## Erişim Token'ı Alma {#getting-an-access-token}
 
 _GoCardless_'ta bir hesap oluşturun (veya **önce test etmek** isterseniz _GoCardless_ sandbox'ında bir hesap oluşturun, bu önerilir). Ardından, giriş yaptıktan sonra **Developers** menü öğesine gidin.
 
@@ -61,7 +61,7 @@ Lütfen sağdaki alana yapıştırdığınızdan emin olun. Eğer bu bir **canl�
 
 İlk adım bu kadar. Şimdi bir webhook dinleyicisi (webhook listener) kurmanız gerekiyor.
 
-## Webhook Dinleyicisini Kurma
+## Webhook Dinleyicisini Kurma {#setting-up-the-webhook-listener}
 
 Aboneliklerle uğraşırken, Ultimate Multisite abonelik durumundaki değişiklikleri, yapılan yeni ödemeleri ve benzeri diğer olayları bilmek zorundadır.
 

@@ -3,18 +3,18 @@ title: Ujumuishaji wa Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Ujumuishaji wa Cloudflare
+# Ujumuishaji wa Cloudflare {#cloudflare-integration}
 
-## Muhtasari
+## Muhtasari {#overview}
 Cloudflare ni mtandao unaoongoza wa uwasilishaji wa maudhui (CDN) na mtoa huduma za usalama unaosaidia kulinda na kuharakisha tovuti. Ujumuishaji huu unawezesha usimamizi wa kiotomatiki wa domain kati ya Ultimate Multisite na Cloudflare, hasa kwa usakinishaji wa multisite za subdomain.
 
-## Vipengele
+## Vipengele {#features}
 - Uundaji wa kiotomatiki wa subdomain katika Cloudflare
 - Usaidizi wa subdomain zilizowekwa proxy
 - Usimamizi wa rekodi za DNS
 - Uonyeshaji ulioboreshwa wa rekodi za DNS katika usimamizi wa Ultimate Multisite
 
-## Mahitaji
+## Mahitaji {#requirements}
 Constants zifuatazo lazima zifafanuliwe katika faili yako ya `wp-config.php`:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Maelekezo ya Usanidi
+## Maelekezo ya Usanidi {#setup-instructions}
 
-### 1. Pata Cloudflare API Key Yako
+### 1. Pata Cloudflare API Key Yako {#1-get-your-cloudflare-api-key}
 
 1. Ingia kwenye Cloudflare Dashboard yako
 2. Nenda kwenye "Wasifu Wangu" (bofya barua pepe yako kwenye kona ya juu kulia)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. Nakili tokeni yako ya API
 
-### 2. Pata Zone ID Yako
+### 2. Pata Zone ID Yako {#2-get-your-zone-id}
 
 1. Katika Cloudflare Dashboard yako, chagua domain unayotaka kutumia
 2. Zone ID inaonekana kwenye kichupo cha "Muhtasari", kwenye utepe wa kulia chini ya "API"
 3. Nakili Zone ID
 
-### 3. Ongeza Constants kwenye wp-config.php
+### 3. Ongeza Constants kwenye wp-config.php {#3-add-constants-to-wp-configphp}
 
 Ongeza constants zifuatazo kwenye faili yako ya `wp-config.php`:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Washa Ujumuishaji
+### 4. Washa Ujumuishaji {#4-enable-the-integration}
 
 1. Katika usimamizi wako wa WordPress, nenda kwenye Ultimate Multisite > Mipangilio
 2. Nenda kwenye kichupo cha "Ulinganishaji wa Domain"
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Washa ujumuishaji wa Cloudflare
 5. Bofya "Hifadhi Mabadiliko"
 
-## Jinsi Inavyofanya Kazi
+## Jinsi Inavyofanya Kazi {#how-it-works}
 
-### Usimamizi wa Subdomain
+### Usimamizi wa Subdomain {#subdomain-management}
 
 Tovuti mpya inapoundwa katika usakinishaji wa multisite wa subdomain:
 
@@ -67,7 +67,7 @@ Tovuti mpya inapoundwa katika usakinishaji wa multisite wa subdomain:
 2. Subdomain husanidiwa kuwekwa proxy kupitia Cloudflare kwa chaguo-msingi (hili linaweza kubadilishwa kwa filters)
 3. Tovuti inapofutwa, ujumuishaji utaondoa subdomain kutoka Cloudflare
 
-### Uonyeshaji wa Rekodi za DNS
+### Uonyeshaji wa Rekodi za DNS {#dns-record-display}
 
 Ujumuishaji huboresha uonyeshaji wa rekodi za DNS katika usimamizi wa Ultimate Multisite kwa:
 
@@ -75,11 +75,11 @@ Ujumuishaji huboresha uonyeshaji wa rekodi za DNS katika usimamizi wa Ultimate M
 2. Kuonyesha ikiwa rekodi zimewekwa proxy au la
 3. Kuonyesha taarifa za ziada kuhusu rekodi za DNS
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (zamani iliitwa "Cloudflare for SaaS") ni kipengele cha Cloudflare kinachowaruhusu wateja wako kutumia domain zao wenyewe zenye SSL kwenye mtandao wako wa multisite. Ndiyo mbinu inayopendekezwa kwa usakinishaji wa multisite wenye domain zilizolinganishwa unaotumia Cloudflare, kwa sababu Cloudflare husimamia utoaji na usasishaji wa cheti cha SSL kwa kila custom domain kiotomatiki.
 
-### Jinsi inavyotofautiana na ujumuishaji wa kawaida wa Cloudflare
+### Jinsi inavyotofautiana na ujumuishaji wa kawaida wa Cloudflare {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Ujumuishaji wa kawaida | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ Ujumuishaji huboresha uonyeshaji wa rekodi za DNS katika usimamizi wa Ultimate M
 | **Inafaa zaidi kwa** | Multisite ya subdomain | Multisite yenye domain zilizolinganishwa |
 | **SSL** | Hushughulikiwa kando | Husimamiwa na Cloudflare kiotomatiki |
 
-### Kusanidi Cloudflare Custom Hostnames
+### Kusanidi Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. Katika Cloudflare Dashboard yako, fungua zone ya domain yako kuu.
 2. Nenda kwenye **SSL/TLS > Custom Hostnames**.
@@ -101,23 +101,23 @@ Kwa rejeleo kamili la API, tazama [nyaraka za Cloudflare Custom Hostnames](https
 Kuanzia Ultimate Multisite v2.6.1, kipengele hiki kinarejelewa kama **Cloudflare Custom Hostnames** katika mipangilio na lebo zote za plugin. Matoleo ya awali yalitumia jina "Cloudflare for SaaS", ambalo ndilo jina la bidhaa ya msingi ya Cloudflare.
 :::
 
-## Vidokezo Muhimu
+## Vidokezo Muhimu {#important-notes}
 
 Kutokana na masasisho ya hivi karibuni ya Cloudflare, wildcard proxying sasa inapatikana kwa wateja wote. Hii inamaanisha kuwa ujumuishaji wa kawaida wa Cloudflare DNS si muhimu sana kwa usakinishaji wa multisite za subdomain kama ilivyokuwa awali, kwa kuwa unaweza tu kusanidi rekodi ya wildcard DNS katika Cloudflare.
 
-## Utatuzi wa Matatizo
+## Utatuzi wa Matatizo {#troubleshooting}
 
-### Matatizo ya Muunganisho wa API
+### Matatizo ya Muunganisho wa API {#api-connection-issues}
 - Thibitisha kuwa tokeni yako ya API ni sahihi na ina ruhusa zinazohitajika
 - Hakikisha kuwa Zone ID yako ni sahihi
 - Hakikisha kuwa Account yako ya Cloudflare ina ruhusa zinazohitajika
 
-### Subdomain Haijaongezwa
+### Subdomain Haijaongezwa {#subdomain-not-added}
 - Angalia kumbukumbu za Ultimate Multisite kwa ujumbe wowote wa hitilafu
 - Thibitisha kuwa subdomain haijaongezwa tayari kwenye Cloudflare
 - Hakikisha kuwa mpango wako wa Cloudflare unaauni idadi ya rekodi za DNS unazounda
 
-### Matatizo ya Proxying
+### Matatizo ya Proxying {#proxying-issues}
 - Ikiwa hutaki subdomain ziwekwe proxy, unaweza kutumia filter ya `wu_cloudflare_should_proxy`
 - Baadhi ya vipengele huenda visifanye kazi vizuri vikiwa vimewekwa proxy (mfano, baadhi ya kazi za usimamizi wa WordPress)
 - Fikiria kutumia Page Rules za Cloudflare kupitisha cache kwa kurasa za usimamizi

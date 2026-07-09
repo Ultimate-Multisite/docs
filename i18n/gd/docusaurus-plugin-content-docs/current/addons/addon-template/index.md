@@ -3,25 +3,25 @@ title: Teamplaid Tuilleadain
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Teamplaid Tuilleadain
+# Teamplaid Tuilleadain {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Riatanasan
+## Riatanasan {#requirements}
 
 - WordPress 5.3 no nas àirde
 - PHP 7.4 no nas àirde
 - plugin Multisite Ultimate (gnìomhach)
 
-## Stàladh
+## Stàladh {#installation}
 
 1. Luchdaich suas faidhlichean an tuilleadain dhan eòlaire `/wp-content/plugins/` agad
 2. Gnìomhaich am plugin tron chlàr-taice 'Plugins' ann an WordPress
 3. Rèitich roghainnean an tuilleadain ann an rianachd an lìonraidh
 
-## Leasachadh
+## Leasachadh {#development}
 
-### Suidheachadh
+### Suidheachadh {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structar a’ Phròiseict
+### Structar a’ Phròiseict {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Riaghailtean ùrachadh còd
 ```
 
-### Deuchainneachadh
+### Deuchainneachadh {#testing}
 
 Tha frèam-obrach deuchainneachaidh coileanta anns an tuilleadan:
 
@@ -75,44 +75,44 @@ Tha frèam-obrach deuchainneachaidh coileanta anns an tuilleadan:
 - **Còmhdach Deuchainn**: Air a rèiteachadh gus còmhdach còd a leantainn
 - **Deuchainneachadh Multisite**: Ruithidh deuchainnean ann an àrainneachd multisite
 
-### Inbhean Còd
+### Inbhean Còd {#code-standards}
 
 - **Inbhean Còdaidh WordPress**: Air an cur an gnìomh tro PHPCS
 - **Co-chòrdalachd PHP 7.4+**: Taic do fheartan PHP ùr-nodha
 - **Mion-sgrùdadh Statach**: Amalachadh PHPStan airson sgrùdadh sheòrsaichean
 - **Ùrachadh Còd**: Riaghailtean Rector airson ùrachaidhean PHP
 
-### Siostam Togail
+### Siostam Togail {#build-system}
 
 - **Làimhseachadh Maoin**: Lùghdachadh airson faidhlichean CSS/JS
 - **Eadar-theangachadh**: Gineadh faidhle POT
 - **Pacadh**: Cruthachadh tasglainn airson sgaoileadh
 - **Modh Leasachaidh**: Maoin gun lùghdachadh airson dì-bhugachadh
 
-## Rèiteachadh
+## Rèiteachadh {#configuration}
 
 Tha an tuilleadan a’ toirt taic do dhiofar roghainnean rèiteachaidh a gheibhear tro eadar-aghaidh rianachd an lìonraidh.
 
-## Hooks agus Filters
+## Hooks agus Filters {#hooks-and-filters}
 
-### Gnìomhan
+### Gnìomhan {#actions}
 
 - `ultimate-multisite-addon-template_init` - Air a chur gu dol às dèidh tòiseachadh an tuilleadain
 - `ultimate-multisite-addon-template_loaded` - Air a chur gu dol às dèidh do gach faidhle tuilleadain a bhith air a luchdadh
 
-### Criathragan
+### Criathragan {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Atharraich roghainnean an tuilleadain
 - `ultimate-multisite-addon-template_enabled` - Tar-sgrìobh inbhe comasachaidh/dì-chomasachaidh an tuilleadain
 
-## Ceadachas
+## Ceadachas {#license}
 
 Tha an tuilleadan seo fo cheadachas GPL v3 no nas ùire.
 
-## Taic
+## Taic {#support}
 
 Airson taic agus docamaideadh, tadhail air [MultisiteUltimate.com](https://multisiteultimate.com)
-## Loga Atharrachaidhean
+## Loga Atharrachaidhean {#changelog}
 
 - Tionndadh 1.0.1 (2025-09-28): ath-ainmich an ro-leasachan gu ultimate-multisite; ùraich text domain; àrdachadh tionndaidh.
 

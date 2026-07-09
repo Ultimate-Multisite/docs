@@ -3,9 +3,9 @@ title: Ukulawula iintlawulo kunye nee-invoyisi
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ukulawula Iintlawulo nee-Invoyisi
+# Ukulawula Iintlawulo nee-Invoyisi {#managing-payments-and-invoices}
 
-## Iisetingi zeeNtlawulo
+## Iisetingi zeeNtlawulo {#payment-settings}
 
 Phambi kokuba uqale ukufumana iintlawulo, kuya kufuneka ulungiselele iisetingi ezinxulumene neentlawulo. Yiya ku **Ultimate Multisite → Iisetingi** uze ucofe kwithebhu ethi **Intlawulo**.
 
@@ -15,7 +15,7 @@ Nanku umbono opheleleyo wephepha leesetingi zentlawulo:
 
 ![Iphepha elipheleleyo leesetingi zentlawulo](/img/admin/settings-payments-full.png)
 
-### Iinketho Jikelele zeNtlawulo
+### Iinketho Jikelele zeNtlawulo {#general-payment-options}
 
 Kwiisetingi jikelele ungalungiselela:
 
@@ -24,7 +24,7 @@ Kwiisetingi jikelele ungalungiselela:
 
 ![Iisetingi zesango lentlawulo](/img/admin/settings-payments-options.png)
 
-### Amasango eNtlawulo
+### Amasango eNtlawulo {#payment-gateways}
 
 Ultimate Multisite ixhasa amasango entlawulo amaninzi. Ungavula uze ulungiselele ngalinye kwithebhu yeesetingi zeNtlawulo.
 
@@ -40,11 +40,11 @@ Isango ngalinye linecandelo lalo lolungiselelo apho ufaka khona API keys nezinye
 
 ![Iisetingi ezongezelelweyo zesango](/img/admin/settings-payments-gateways-2.png)
 
-### Imo yeSandbox
+### Imo yeSandbox {#sandbox-mode}
 
 Ungavula **Imo yeSandbox** ukuze uvavanye ukudityaniswa kweentlawulo zakho phambi kokuba uye bukhoma. Xa imo yeSandbox isebenza, akukho ntlawulo yokwenene eza kwenziwa.
 
-## Ukujonga Iintlawulo
+## Ukujonga Iintlawulo {#viewing-payments}
 
 Yiya kwiphepha le **Iintlawulo** phantsi kwe Ultimate Multisite ukuze ubone zonke iintengiselwano kuyo yonke inethiwekhi yakho.
 
@@ -54,7 +54,7 @@ Ungahluza iintlawulo ngokwesimo (zigqityiwe, zisalindile, zisilele, zibuyisiwe) 
 
 Cofa kwintlawulo ukuze ubone iinkcukacha zayo ezipheleleyo kuquka izinto zomgca, ubulungu obunxulumene nayo, iinkcukacha zomthengi, kunye nedatha yesango lentlawulo.
 
-## Ii-Invoyisi
+## Ii-Invoyisi {#invoices}
 
 Ultimate Multisite inokwenza ii-invoyisi ngokuzenzekelayo kwiintlawulo. Ungalungisa itemplate ye-invoyisi kunye nefomathi yokubala amanani kwiisetingi zeNtlawulo.
 

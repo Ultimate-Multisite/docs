@@ -3,7 +3,7 @@ title: Kekurangan anu Diketahui
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Ketidakcocokan yang Sudah Diketahui dengan Plugin Lain
+# Ketidakcocokan yang Sudah Diketahui dengan Plugin Lain {#known-incompatibilities-with-other-plugins}
 
 Setelah menginstal dan mengaktifkan Ultimate Multisite, kamu mungkin akan mengalami masalah karena ada ketidakcocokan yang belum diperbaiki dengan plugin lain.
 

@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 मल्टिसाइट वातावरणहरूमा Tutor LMS का लागि अनुकूलता सुधारहरू थप्ने WordPress प्लगइन।
 
-## विवरण
+## विवरण {#description}
 
 यस प्लगइनले WordPress मल्टिसाइट नेटवर्कहरूमा Tutor LMS चलाउनका लागि आवश्यक अनुकूलता सुधारहरू प्रदान गर्छ। यसले प्रयोगकर्ता नामांकन, प्रशिक्षक व्यवस्थापन, कोर्स सीमाहरू, र अन्य मल्टिसाइट-विशिष्ट कार्यक्षमता सम्हाल्छ।
 
-## सुविधाहरू
+## सुविधाहरू {#features}
 
 - **डेटाबेस तालिका व्यवस्थापन**: मल्टिसाइट foreign key constraints का कारण असफल हुने हराएका Tutor LMS तालिकाहरू स्वचालित रूपमा पत्ता लगाउँछ र सिर्जना गर्छ
 - **मल्टिसाइट प्रयोगकर्ता नामांकन**: नेटवर्क साइटहरूभरि प्रयोगकर्ता नामांकन व्यवस्थापन गर्न अनुकूल AJAX ह्यान्डलरहरू
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **अनुकूल Admin दृश्यहरू**: मल्टिसाइट-सचेत प्रशिक्षक सूची र व्यवस्थापन इन्टरफेस
 - **Admin उपकरणहरू**: नेटवर्क र साइट प्रशासकहरूका लागि डेटाबेस व्यवस्थापन इन्टरफेस
 
-## आवश्यकताहरू
+## आवश्यकताहरू {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - WordPress Multisite स्थापना
 - Ultimate Multisite प्लगइन (कोर्स सीमा कार्यक्षमताका लागि)
 
-## स्थापना
+## स्थापना {#installation}
 
 1. प्लगइन फाइलहरू `/wp-content/plugins/tutor-multisite-compatibility/` मा अपलोड गर्नुहोस्
 2. Tutor LMS स्थापना र सक्रिय गरिएको छ भनी सुनिश्चित गर्नुहोस्
 3. WordPress मा 'Plugins' मेनुबाट प्लगइन सक्रिय गर्नुहोस्
 4. प्लगइनले स्वचालित रूपमा Tutor LMS सँग एकीकरण गर्नेछ
 
-## फाइल संरचना
+## फाइल संरचना {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## MU Plugin बाट सारिएको कार्यक्षमता
+## MU Plugin बाट सारिएको कार्यक्षमता {#functionality-moved-from-mu-plugin}
 
 यस प्लगइनमा पहिले `wp-content/mu-plugins/daves.php` मा रहेको कार्यक्षमता समावेश छ:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - मल्टिसाइट प्रयोगकर्ता नामांकन व्यवस्थापन
 - कोर्स उत्पादन ID प्रदर्शन
 
-## डेटाबेस व्यवस्थापन
+## डेटाबेस व्यवस्थापन {#database-management}
 
-### समस्या
+### समस्या {#the-problem}
 
 WordPress मल्टिसाइट वातावरणहरूमा, users तालिकामा foreign key constraints भएका तालिकाहरूका लागि Tutor LMS तालिका सिर्जना असफल हुन्छ। यस्तो हुनुका कारण:
 
@@ -81,7 +81,7 @@ WordPress मल्टिसाइट वातावरणहरूमा, user
 - Foreign keys ले `wp_2_users` लाई सन्दर्भ गर्छन् (जुन अवस्थित छैन)
 - वास्तविक users तालिका `wp_users` हो (नेटवर्कभरि साझा)
 
-### समाधान
+### समाधान {#the-solution}
 
 यस प्लगइनले स्वचालित रूपमा:
 
@@ -92,13 +92,13 @@ WordPress मल्टिसाइट वातावरणहरूमा, user
    - नेटवर्कमा नयाँ साइट सिर्जना
    - admin इन्टरफेसमार्फत म्यानुअल तालिका जाँच
 
-### प्रभावित तालिकाहरू
+### प्रभावित तालिकाहरू {#affected-tables}
 
 - `tutor_coupon_usages` - users तालिकामा foreign key समावेश गर्छ
 - `tutor_carts` - users तालिकामा foreign key समावेश गर्छ
 - `tutor_notification_preferences` - users तालिकामा foreign key भएको TutorPro तालिका
 
-### Admin इन्टरफेस
+### Admin इन्टरफेस {#admin-interface}
 
 डेटाबेस व्यवस्थापन उपकरणहरू यहाँ पहुँच गर्नुहोस्:
 
@@ -111,6 +111,6 @@ WordPress मल्टिसाइट वातावरणहरूमा, user
 - डेटाबेस कन्फिगरेसन जाँच गर्न
 - विस्तृत स्थिति जानकारी हेर्न
 
-## समर्थन
+## समर्थन {#support}
 
 यो प्लगइन विशेष रूपमा KursoPro प्लेटफर्मका लागि डिजाइन गरिएको हो। प्राविधिक समर्थनका लागि, विकास टोलीलाई सम्पर्क गर्नुहोस्।

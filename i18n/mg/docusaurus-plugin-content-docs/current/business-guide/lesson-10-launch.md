@@ -3,19 +3,19 @@ title: 'Lesona 10: Andro fandefasana'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesona 10: Andro fandefasana
+# Lesona 10: Andro fandefasana {#lesson-10-launch-day}
 
 Vita avokoa ny zava-drehetra. Alohan'ny hanokafanao ny varavarana, ity lesona ity dia mandalo ny lisitra fanamarinana alohan'ny fandefasana mba hahazoana antoka fa tsy misy simba, tsy ampy, na mahamenatra.
 
-## Teo amin'izay nijanonantsika
+## Teo amin'izay nijanonantsika {#where-we-left-off}
 
 FitSite dia efa manana môdely, drafitra, fizotry ny fandoavana, marika, fampidirana mpampiasa vaovao, ary vidiny voaefy avokoa. Ankehitriny dia hamarinintsika fa mandeha tsara ny zava-drehetra ary halefa mivantana.
 
-## Lisitra fanamarinana alohan'ny fandefasana
+## Lisitra fanamarinana alohan'ny fandefasana {#pre-launch-checklist}
 
 Ataovy tsirairay ny singa rehetra. Aza mitsambikina na iray aza.
 
-### Fotodrafitrasa amin'ny sehatra
+### Fotodrafitrasa amin'ny sehatra {#platform-infrastructure}
 
 - [ ] Milamina ny hosting ary mandeha tsara na dia be enta-mavesatra aza
 - [ ] Mavitrika ny Wildcard SSL ary miasa amin'ny HTTPS ny subdomain rehetra
@@ -23,7 +23,7 @@ Ataovy tsirairay ny singa rehetra. Aza mitsambikina na iray aza.
 - [ ] Voarindra sy voasedra ny tahiry fiarovana (averina farafahakeliny iray mba hanamarinana)
 - [ ] Efa misy ny fanaraha-maso -- ho fantatrao raha latsaka ny sehatra
 
-### Môdely
+### Môdely {#templates}
 
 - [ ] Mivoaka tsara amin'ny site vaovao ny môdely telo rehetra
 - [ ] Mahasoa ary tsy misy hadisoana fanoratana ny atiny solon-toerana
@@ -32,7 +32,7 @@ Ataovy tsirairay ny singa rehetra. Aza mitsambikina na iray aza.
 - [ ] Ekena ny hafainganam-pamatrarana pejy (andramo amin'ny fitaovana toy ny GTmetrix na PageSpeed Insights)
 - [ ] Tsy misy rohy tapaka na rakitra tsy hita amin'ny môdely rehetra
 
-### Drafitra sy vokatra
+### Drafitra sy vokatra {#plans-and-products}
 
 - [ ] Mavitrika sy hita ny drafitra telo rehetra
 - [ ] Marina ary mifanaraka amin'ny sehatra manokana ny famaritana drafitra
@@ -42,7 +42,7 @@ Ataovy tsirairay ny singa rehetra. Aza mitsambikina na iray aza.
 - [ ] Miseho tsara mandritra ny fizotry ny fandoavana ny tolotra fanampiny amin'ny baiko
 - [ ] Ampiharina tsara araka ny drafitra ny famerana plugin sy theme
 
-### Fizotry ny fandoavana
+### Fizotry ny fandoavana {#checkout-flow}
 
 - [ ] Fenoy fitsapana fisoratana anarana feno amin'ny drafitra tsirairay (ampiasao ny fomba fandoavana fitsapana)
 - [ ] Mampiseho ny môdely marina araka ny drafitra ny fisafidianana môdely
@@ -52,7 +52,7 @@ Ataovy tsirairay ny singa rehetra. Aza mitsambikina na iray aza.
 - [ ] Afaka miditra avy hatrany amin'ny site vaovaony ny mpanjifa
 - [ ] Mandeha tsara ny kaody fihenam-bidy
 
-### Marika
+### Marika {#branding}
 
 - [ ] Mampiseho ny marika FitSite ny pejy fidirana
 - [ ] Mampiseho ny marika FitSite ny admin dashboard
@@ -60,7 +60,7 @@ Ataovy tsirairay ny singa rehetra. Aza mitsambikina na iray aza.
 - [ ] Miseho tsara miaraka amin'ny antsipirian'ny orinasanao ny faktiora
 - [ ] Mivantana ny site marketing ary mifandray amin'ny taratasy fandoavana
 
-### Fampidirana mpampiasa vaovao
+### Fampidirana mpampiasa vaovao {#onboarding}
 
 - [ ] Miseho amin'ny dashboard an'ny mpanjifa vaovao ny widget Quick Start
 - [ ] Mitondra mankany amin'ny pejy marina ny rohy Quick Start rehetra
@@ -68,7 +68,7 @@ Ataovy tsirairay ny singa rehetra. Aza mitsambikina na iray aza.
 - [ ] Navoaka ary azo idirana ny lahatsoratra ao amin'ny tahirim-pahalalana
 - [ ] Mampiseho fampahalalana marina momba ny drafitra sy safidy fanavaozana ny pejy Account
 
-### Ara-dalàna sy raharaham-barotra
+### Ara-dalàna sy raharaham-barotra {#legal-and-business}
 
 - [ ] Navoaka ary mifandray avy amin'ny fizotry ny fandoavana ny fepetra fampiasana
 - [ ] Navoaka ary azo idirana ny politika fiainana manokana
@@ -77,11 +77,11 @@ Ataovy tsirairay ny singa rehetra. Aza mitsambikina na iray aza.
 - [ ] Ao amin'ny fomba mivantana ny vavahady fandoavana (tsy fomba fitsapana)
 - [ ] Marina araka ny fahefana ara-dalàna misy anao ny fandrindrana hetra
 
-## Fandefasana malefaka vs. Fandefasana mafy
+## Fandefasana malefaka vs. Fandefasana mafy {#soft-launch-vs-hard-launch}
 
 Diniho ny fandefasana amin'ny dingana roa:
 
-### Dingana 1: Fandefasana malefaka
+### Dingana 1: Fandefasana malefaka {#phase-1-soft-launch}
 
 Asao hisoratra anarana alohan'ny fandefasana ampahibemaso ny tompon'ny studio fanatanjahan-tena 5-10. Ireo no mpanjifa beta anao. Omeo fihenam-bidy lehibe izy ireo (50% mandritra ny fiainana, na 3 volana maimaim-poana) ho takalon'ny:
 
@@ -91,7 +91,7 @@ Asao hisoratra anarana alohan'ny fandefasana ampahibemaso ny tompon'ny studio fa
 
 Izany dia manome anao hevitra avy amin'ny mpanjifa tena izy sy site mivantana haseho alohan'ny hanokafanao amin'ny besinimaro.
 
-### Dingana 2: Fandefasana ampahibemaso
+### Dingana 2: Fandefasana ampahibemaso {#phase-2-public-launch}
 
 Rehefa nampidirina ny hevitra avy amin'ny fandefasana malefaka:
 
@@ -100,7 +100,7 @@ Rehefa nampidirina ny hevitra avy amin'ny fandefasana malefaka:
 - Atombohy ny fitadiavana mpanjifa (Lesona 11)
 - Ampahafantaro amin'ny fantsona mifandraika amin'ny indostrian'ny fanatanjahan-tena
 
-## Hetsika amin'ny andro fandefasana
+## Hetsika amin'ny andro fandefasana {#launch-day-actions}
 
 Amin'ny andro hivoahanao amin'ny besinimaro:
 
@@ -110,7 +110,7 @@ Amin'ny andro hivoahanao amin'ny besinimaro:
 4. **Meteza ho azo tratrarina** -- mety mila fanampiana ny mpanjifanao tena izy voalohany, ary manangana fitokisana ny valiny haingana
 5. **Mankalazà vetivety** -- avy eo miverena miasa
 
-## Inona no mety ho diso
+## Inona no mety ho diso {#what-can-go-wrong}
 
 Miomàna amin'ny:
 
@@ -120,7 +120,7 @@ Miomàna amin'ny:
 - **Fahombiazana eo ambanin'ny enta-mavesatra**: Raha mahazo fiakaran'ny fifamoivoizana tampoka ianao, fantaro ny fomba hanitarana ny hosting-nao
 - **Fikorontanan'ny mpanjifa**: Ataovy vonona ny tahirim-pahalalanao sy ny fantsona fanohanana
 
-## Ny tambajotra FitSite hatreto
+## Ny tambajotra FitSite hatreto {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Izay naorinay tamin'ity lesona ity
+## Izay naorinay tamin'ity lesona ity {#what-we-built-this-lesson}
 
 - **Lisitra fanamarinana feno alohan'ny fandefasana** mandrakotra fotodrafitrasa, atiny, fandoavana, ary ara-dalàna
 - **Paikady fandefasana malefaka** hahazoana hevitra tena izy alohan'ny hivoahana amin'ny besinimaro

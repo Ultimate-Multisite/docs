@@ -3,15 +3,15 @@ title: Generera Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generera SVG-logotyp
+# Generera SVG-logotyp {#generate-logo-svg}
 
 Funktionen **Generera SVG-logotyp** låter Theme Builder skapa och bädda in anpassade SVG-logotyper direkt i din WordPress-sajt, med automatisk, namnrymsanpassad sanering.
 
-## Översikt
+## Översikt {#overview}
 
 Denna funktion genererar skalbara vektorgrafiker (SVG) av logotyper baserat på din sajtprofil och designpreferenser. De genererade SVG:erna saneras automatiskt för att säkerställa att de är säkra att använda i WordPress, samtidigt som det visuella utseendet bibehålls.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Parameter | Typ | Obligatoriskt | Beskrivning |
 |-----------|------|---------------|-------------|
@@ -22,7 +22,7 @@ Denna funktion genererar skalbara vektorgrafiker (SVG) av logotyper baserat på 
 | `height` | number | Nej | SVG-höjd i pixlar (standard: 200) |
 | `include_text` | boolean | Nej | Om sajtnamnet ska inkluderas som text i logotypen (standard: true) |
 
-## Utdataformat
+## Utdataformat {#output-format}
 
 Funktionen returnerar en SVG-sträng med följande struktur:
 
@@ -36,7 +36,7 @@ Funktionen returnerar en SVG-sträng med följande struktur:
 }
 ```
 
-## SVG-saneringsbeteende
+## SVG-saneringsbeteende {#svg-sanitisation-behaviour}
 
 De genererade SVG:erna genomgår automatisk, namnrymsanpassad sanering för att:
 
@@ -48,7 +48,7 @@ De genererade SVG:erna genomgår automatisk, namnrymsanpassad sanering för att:
 
 Detta säkerställer att SVG:n är säker att bädda in direkt i WordPress utan att kräva ytterligare sanering.
 
-## Användningsexempel
+## Användningsexempel {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Funktionen skapar en SVG-logotyp som:
 - Följer moderna designprinciper
 - Är automatisk sanerad och redo att användas
 
-## Integration med Theme Builder
+## Integration med Theme Builder {#integration-with-theme-builder}
 
 När du använder Theme Builders urval av designriktning:
 
@@ -71,21 +71,21 @@ När du använder Theme Builders urval av designriktning:
 3. Bäddar automatiskt in logotypen i sajtens header/varumärkesområde
 4. Lagrar SVG:n som en anpassad logotyp i WordPress media
 
-## Bästa praxis
+## Bästa praxis {#best-practices}
 
 - **Ge tydliga stilpreferenser** — beskriv den designstil du vill ha (modern, klassisk, lekfull, etc.)
 - **Ange färger** — inkludera dina varumärkesfärger för konsekvens
 - **Testa renderingen** — verifiera att logotypen visas korrekt på olika skärmstorlekar
 - **Anpassa ytterligare** — använd WordPresss verktyg för logotypanpassning för att justera storlek och placering
 
-## Begränsningar
+## Begränsningar {#limitations}
 
 - SVG-logotyper genereras som statiska grafik (inte animerade)
 - Komplexa logotyper med många element kan kräva manuell finjustering
 - Anpassade typsnitt stöds inte; text använder systemtypsnitt
 - Mycket stora eller mycket små dimensioner kan påverka kvaliteten
 
-## Relaterade funktioner
+## Relaterade funktioner {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — kontrollera färgkontrast för tillgänglighet
 - [Create Menu](./create-menu.md) — skapa navigeringsmenyer för din sajt

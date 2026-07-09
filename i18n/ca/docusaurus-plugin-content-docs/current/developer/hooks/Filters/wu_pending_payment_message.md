@@ -4,11 +4,11 @@ title: Filtre - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filtre: wu_pending_payment_message
+# Filtre: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Permet a l’usuari canviar el missatge sobre els pagaments pendents.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Permet a l’usuari canviar el missatge sobre els pagaments pendents.
 | $customer | `\WP_Ultimo\Models\Customer` | El client actual. |
 | $pending_payments | `array` | Una llista amb pagaments pendents. |
 
-### Des de
+### Des de {#since}
 
 - 2.0.19
-### Font
+### Font {#source}
 
 Definit a [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) a la línia 244

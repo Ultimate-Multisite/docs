@@ -3,13 +3,13 @@ title: Personalizzare il modulo di registrazione
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizzare il tuo modulo di registrazione
+# Personalizzare il tuo modulo di registrazione {#customizing-your-registration-form}
 
 Per rendere la tua rete unica rispetto a tutti gli altri SaaS costruiti sulla piattaforma WordPress, Ultimate Multisite ti permette di personalizzare le pagine di registrazione e login con la nostra funzionalità **Checkout Forms**.
 
 Sebbene siano un modo semplice e flessibile per sperimentare approcci diversi quando cerchi di convertire nuovi clienti, sono usati soprattutto per creare moduli di registrazione personalizzati. Questo articolo ha lo scopo di mostrarti come puoi farlo.
 
-## Pagine di login e registrazione:
+## Pagine di login e registrazione: {#login-and-registration-pages}
 
 Al momento dell'installazione di Ultimate Multisite, vengono create automaticamente pagine di login e registrazione personalizzate sul tuo sito principale. Puoi cambiare queste pagine predefinite in qualsiasi momento andando alla pagina **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Ora vediamo altre opzioni che sono comunque rilevanti per il processo di login e
 
 E queste sono tutte le opzioni relative a login e registrazione che puoi personalizzare! Non dimenticare di salvare le impostazioni dopo aver finito di modificarle.
 
-## Usare più moduli di registrazione:
+## Usare più moduli di registrazione: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 offre un editor di checkout form che ti permette di creare tutti i moduli che vuoi, con campi diversi, prodotti in offerta, ecc.
 
@@ -69,7 +69,7 @@ In alternativa, puoi modificare o duplicare i moduli che hai già facendo clic s
 
 Se selezioni singolo passaggio o multi-step, il checkout form sarà già precompilato con i passaggi di base necessari per funzionare. Poi, se vuoi, puoi aggiungervi passaggi extra.
 
-### Modificare un Checkout Form:
+### Modificare un Checkout Form: {#editing-a-checkout-form}
 
 Come abbiamo menzionato prima, puoi creare checkout forms per scopi diversi. In questo esempio lavoreremo su un modulo di registrazione.
 
@@ -131,11 +131,11 @@ Per ottenere lo shortcode del tuo modulo, fai clic su **Genera Shortcode** e cop
 
 _**Nota:** Dovrai aggiungere questo shortcode alla tua pagina di registrazione affinché questo modulo di pagamento venga aggiunto ad essa._
 
-## Preselezione di prodotti e modelli tramite parametri URL:
+## Preselezione di prodotti e modelli tramite parametri URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Se vuoi creare tabelle prezzi personalizzate per i tuoi prodotti e preselezionare nel modulo di pagamento il prodotto o il modello che il tuo cliente sceglie dalla tua tabella prezzi o dalla pagina dei modelli, puoi usare i parametri URL per farlo.
 
-### **Per i piani:**
+### **Per i piani:** {#for-plans}
 
 Vai su **Ultimate Multisite > Prodotti > Seleziona un piano**. Dovresti vedere il pulsante **Fai clic per copiare il link condivisibile** nella parte superiore della pagina. Questo è il link che puoi usare per preselezionare questo piano specifico nel tuo modulo di pagamento.
 
@@ -143,7 +143,7 @@ Vai su **Ultimate Multisite > Prodotti > Seleziona un piano**. Dovresti vedere i
 
 Tieni presente che questo link condivisibile è valido solo per i **Piani**. Non puoi usare link condivisibili per pacchetti o servizi.
 
-### Per i modelli:
+### Per i modelli: {#for-templates}
 
 Se vuoi preselezionare modelli di sito nel tuo modulo di pagamento, puoi usare il parametro: **?template_id=X** nell’URL della tua pagina di registrazione. La "X" deve essere sostituita dal **numero ID del modello di sito**. Per ottenere questo numero, vai su **Ultimate Multisite > Siti**.
 

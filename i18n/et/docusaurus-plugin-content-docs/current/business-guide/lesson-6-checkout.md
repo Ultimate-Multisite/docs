@@ -3,15 +3,15 @@ title: '6. õppetund: Registreerumiskogemus'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Õppetund 6: Registreerumiskogemus
+# Õppetund 6: Registreerumiskogemus {#lesson-6-the-signup-experience}
 
 Maksmise voog on koht, kus huvist saab tulu. Segane või üldine registreerumisprotsess kaotab kliente. Nišipõhine voog, mis räägib nende keeles ja tundub pingutuseta, konverteerib nad klientideks.
 
-## Kuhu me pooleli jäime
+## Kuhu me pooleli jäime {#where-we-left-off}
 
 FitSite’il on mallid ja plaanid seadistatud. Nüüd ehitame registreerumis- ja maksmiskogemuse, mis muudab fitnessistuudiote omanikud maksvateks klientideks.
 
-## Registreerumisvoo mõistmine
+## Registreerumisvoo mõistmine {#understanding-the-registration-flow}
 
 Ultimate Multisite’i maksmise vormid on täielikult kohandatavad mitmesammulised vormid. FitSite’i jaoks tahame voogu, mis:
 
@@ -21,11 +21,11 @@ Ultimate Multisite’i maksmise vormid on täielikult kohandatavad mitmesammulis
 
 Täieliku tehnilise viite leiad jaotisest [Registreerumisvoog](/user-guide/configuration/the-registration-flow).
 
-## FitSite’i maksmise kujundamine
+## FitSite’i maksmise kujundamine {#designing-the-fitsite-checkout}
 
 Liigu jaotisse **Ultimate Multisite > Maksmise vormid** ja loo uus vorm.
 
-### Samm 1: Plaani valik
+### Samm 1: Plaani valik {#step-1-plan-selection}
 
 Esimene asi, mida fitnessistuudio omanik näeb, peaksid olema plaanid, esitatud neile arusaadavas keeles.
 
@@ -37,7 +37,7 @@ Esimene asi, mida fitnessistuudio omanik näeb, peaksid olema plaanid, esitatud 
 "1 GB salvestusruumi" ei tähenda jõusaali omanikule midagi. "Kõik, mida vajad professionaalse stuudio veebisaidi jaoks" tähendab kõike. Kirjuta plaanide kirjeldused oma kliendi keeles.
 :::
 
-### Samm 2: Malli valik
+### Samm 2: Malli valik {#step-2-template-selection}
 
 Pärast plaani valimist valib klient oma algusmalli.
 
@@ -45,7 +45,7 @@ Pärast plaani valimist valib klient oma algusmalli.
 - Saadaolevad mallid filtreeritakse nende valitud plaani järgi (seadistatud õppetunnis 5)
 - Igal mallil peaks olema eelvaatepilt, mis näitab fitnessipõhist disaini
 
-### Samm 3: Accounti loomine
+### Samm 3: Accounti loomine {#step-3-account-creation}
 
 Hoia see minimaalne. Kogu ainult:
 
@@ -55,27 +55,27 @@ Hoia see minimaalne. Kogu ainult:
 
 Ära küsi registreerumisel teavet, mida sul vaja ei ole. Iga lisaväli vähendab konversioone.
 
-### Samm 4: Saidi seadistamine
+### Samm 4: Saidi seadistamine {#step-4-site-setup}
 
 - **Saidi pealkiri**: eeltäida stuudio nimega, mis sisestati sammus 3
 - **Saidi URL**: genereeri automaatselt stuudio nimest (nt `ironworks.fitsite.com`)
 
-### Samm 5: Makse
+### Samm 5: Makse {#step-5-payment}
 
 - Lisa väli **Makse**
 - Seadista oma makselüüs ([Stripe](/user-guide/payment-gateways/stripe) on tellimuste arveldamiseks soovitatav)
 - Kui lõid õppetunnis 5 lisapakkumisi, lisa enne maksesammu väli **Lisapakkumine**
 
-### Samm 6: Kinnitus
+### Samm 6: Kinnitus {#step-6-confirmation}
 
 - Kohanda kinnitussõnumit fitnessipõhise keelega
 - Näide: "Sinu fitnessistuudio veebisaiti luuakse. Sind suunatakse mõne sekundi pärast sinu uuele saidile."
 
-## Perioodi valiku lüliti lisamine
+## Perioodi valiku lüliti lisamine {#adding-a-period-selection-toggle}
 
 Kui seadistasid oma plaanides hinnavariatsioonid (kuu- vs aastapõhine), lisa maksmise vormile väli **Perioodi valik**, et kliendid saaksid arveldusperioodide vahel lülitada. Juhised leiad jaotisest [Maksmise vormid](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-## Makse seadistamine
+## Makse seadistamine {#configuring-payment}
 
 Kui sa ei ole veel makselüüsi seadistanud:
 
@@ -85,7 +85,7 @@ Kui sa ei ole veel makselüüsi seadistanud:
 
 Üksikasjad selle kohta, kuidas maksed sinu accountile liiguvad, leiad jaotisest [Tasude saamine](/user-guide/payment-gateways/getting-paid).
 
-## Voo testimine
+## Voo testimine {#testing-the-flow}
 
 Enne edasi liikumist tee täielik testregistreerumine:
 
@@ -105,7 +105,7 @@ Kontrolli, et:
 - [ ] Klient jõuab toimivale saidile valitud malliga
 - [ ] Kinnituse e-kirjad kasutavad fitnessipõhist keelt
 
-## FitSite’i võrgustik seni
+## FitSite’i võrgustik seni {#the-fitsite-network-so-far}
 
 ```
 FitSite’i võrgustik
@@ -123,7 +123,7 @@ FitSite’i võrgustik
 └── Valmis brändimiseks (järgmine õppetund)
 ```
 
-## Mida me selles õppetunnis ehitasime
+## Mida me selles õppetunnis ehitasime {#what-we-built-this-lesson}
 
 - **Mitmesammuline maksmise vorm**, mis on kohandatud fitnessistuudiote omanikele
 - **Nišipõhine keel** kogu registreerumisvoos

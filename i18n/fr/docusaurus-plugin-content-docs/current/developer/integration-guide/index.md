@@ -3,13 +3,13 @@ title: Guide d’intégration
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guide d’intégration
+# Guide d’intégration {#integration-guide}
 
 Ce guide couvre les modèles d’intégration courants avec Ultimate Multisite, notamment la connexion à des services externes, la création de passerelles de paiement personnalisées et la gestion des webhooks.
 
 Pour une infrastructure de locataires isolés, consultez [Intégration multi-locataire](./multi-tenancy) pour des conseils sur l’amorçage de locataires souverains, la vérification des migrations, le SSO et la suppression.
 
-## Intégration CRM
+## Intégration CRM {#crm-integration}
 
 Synchronisez les données client avec votre CRM lorsque de nouveaux clients s’inscrivent :
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Intégration des analyses
+## Intégration des analyses {#analytics-integration}
 
 Suivez les événements métier clés tout au long du cycle de vie client :
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Étapes suivantes
+## Étapes suivantes {#next-steps}
 
 - [Développement de passerelle personnalisée](./custom-gateway) — Créez votre propre passerelle de paiement
 - [Gestion des webhooks](./webhooks) — Créez des endpoints webhook personnalisés

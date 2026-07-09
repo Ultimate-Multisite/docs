@@ -3,11 +3,11 @@ title: Kev Tsim Kho Qhov Rooj Txuas Raws Li Xav Tau
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Kev Tsim Custom Gateway
+# Kev Tsim Custom Gateway {#custom-gateway-development}
 
 Koj tuaj yeem tsim custom payment gateways los ntawm kev txuas ntxiv chav kawm `Base_Gateway`.
 
-## Chav Kawm Gateway
+## Chav Kawm Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Sau Npe Gateway
+## Sau Npe Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Cov Method Tseem Ceeb
+## Cov Method Tseem Ceeb {#key-methods}
 
 | Method | Lub Hom Phiaj |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Tswj cov kev thov refund |
 | `get_payment_methods()` | Xa rov qab cov payment method uas tau khaws cia rau ib tug customer |
 
-## Cov ntaub ntawv pov thawj renewal rau recurring memberships
+## Cov ntaub ntawv pov thawj renewal rau recurring memberships {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 cia gateway integrations qhia tau tias ib qho recurring membership puas muaj ib qho renewal credential uas siv tau rov qab ua ntej `auto_renew` raug khaws cia. Hook `wu_membership_has_renewal_credential` thiab xa rov qab:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Tshem lub missing-credential marker ua ib feem ntawm koj lub gateway txoj kev re-authorization flow uas ua tiav tom qab ib qho credential tshiab uas siv tau rov qab raug khaws cia.
 
-## Cov Lus Qhia
+## Cov Lus Qhia {#tips}
 
 - Nco ntsoov xa rov qab `WP_Error` thaum ua tsis tiav kom Ultimate Multisite thiaj tswj tau kev tso saib error
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Siv `wu_log_add()` rau gateway-specific logging
 
-## Cov peev xwm ntawm AI connector provider
+## Cov peev xwm ntawm AI connector provider {#ai-connector-provider-capabilities}
 
 Cov custom integrations uas hu rau AI connector-backed operations yuav tsum phim nrog pawg OAuth provider uas txhawb nqa uas tau qhia nrog AI Provider for Anthropic Max v1.3.0:
 

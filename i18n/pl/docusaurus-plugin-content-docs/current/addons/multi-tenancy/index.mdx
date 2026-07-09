@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Wielodzierżawność
+# Wielodzierżawność {#multi-tenancy}
 
 Dystrybuuj podwitryny między serwerami i bazami danych w celu zwiększenia wydajności i bezpieczeństwa
 
-## Najważniejsze informacje o wydaniu wersji 1.2.0
+## Najważniejsze informacje o wydaniu wersji 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 dodaje fundament suwerennego dzierżawcy dla przepływów pracy izolacji produkcyjnej:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 dodaje fundament suwerennego dzierżawcy dla przepływów pr
 
 Zobacz przewodniki użytkownika dotyczące [przepływu pracy suwerennej migracji](/user-guide/getting-started/sovereign-migration-workflow), [izolacji wielodzierżawności](/user-guide/configuration/multi-tenancy-isolation) oraz [operacji suwerennego dzierżawcy](/user-guide/administration/sovereign-tenant-operations).
 
-## Wymagania
+## Wymagania {#requirements}
 
 - WordPress 5.3 lub nowszy
 - PHP 7.4 lub nowszy
 - plugin Multisite Ultimate (aktywny)
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij pliki dodatku do katalogu `/wp-content/plugins/`
 2. Aktywuj plugin przez menu „Pluginy” w WordPress
 3. Skonfiguruj ustawienia dodatku w panelu administratora sieci
 
-## Rozwój
+## Rozwój {#development}
 
-### Konfiguracja
+### Konfiguracja {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura projektu
+### Struktura projektu {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Reguły modernizacji kodu
 ```
 
-### Testowanie
+### Testowanie {#testing}
 
 Dodatek zawiera kompleksowy framework testowy:
 
@@ -93,54 +93,54 @@ Dodatek zawiera kompleksowy framework testowy:
 - **Pokrycie testami**: Skonfigurowane do śledzenia pokrycia kodu
 - **Testowanie Multisite**: Testy uruchamiane w środowisku multisite
 
-### Standardy kodu
+### Standardy kodu {#code-standards}
 
 - **WordPress Coding Standards**: Wymuszane przez PHPCS
 - **Zgodność z PHP 7.4+**: Obsługa nowoczesnych funkcji PHP
 - **Analiza statyczna**: Integracja PHPStan do sprawdzania typów
 - **Modernizacja kodu**: Reguły Rector dla aktualizacji PHP
 
-### System budowania
+### System budowania {#build-system}
 
 - **Przetwarzanie zasobów**: Minifikacja plików CSS/JS
 - **Tłumaczenie**: Generowanie pliku POT
 - **Pakietowanie**: Tworzenie archiwum do dystrybucji
 - **Tryb deweloperski**: Niezminifikowane zasoby do debugowania
 
-## Konfiguracja
+## Konfiguracja {#configuration}
 
 Dodatek obsługuje różne opcje konfiguracji dostępne przez interfejs administratora sieci.
 
-### Konfiguracja suwerennego dzierżawcy
+### Konfiguracja suwerennego dzierżawcy {#sovereign-tenant-configuration}
 
 W przypadku suwerennych dzierżawców skonfiguruj bazę danych dzierżawcy, katalog główny systemu plików, wiązanie hosta bazy danych oraz możliwość hosta przed skierowaniem ruchu do dzierżawcy. Uruchamiaj weryfikację migracji po każdej zmianie, która wpływa na dane uwierzytelniające bazy danych, wiązanie hosta, routing lub udostępnianie użytkowników.
 
 Używaj `localhost` tylko wtedy, gdy środowisko wykonawcze dzierżawcy i uprawnienia bazy danych oczekują dostępu przez lokalne gniazdo lub dostęp z tej samej maszyny. Używaj `127.0.0.1` albo nazwy hosta usługi, gdy jest to host uprawnień skonfigurowany przez Twojego dostawcę.
 
-### Możliwość Hostinger
+### Możliwość Hostinger {#hostinger-capability}
 
 Możliwość wielodzierżawności Hostinger działa ze współdzielonym tokenem integracji Hostinger. Potwierdź, że domena jest obecna w hPanel, DNS wskazuje na Account Hostinger, a ustawienia bazy danych dzierżawcy są zgodne z hPanel przed weryfikacją.
 
-## Hooki i filtry
+## Hooki i filtry {#hooks-and-filters}
 
-### Akcje
+### Akcje {#actions}
 
 - `ultimate-multisite-addon-template_init` - Wywoływane po inicjalizacji dodatku
 - `ultimate-multisite-addon-template_loaded` - Wywoływane po załadowaniu wszystkich plików dodatku
 
-### Filtry
+### Filtry {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modyfikuj ustawienia dodatku
 - `ultimate-multisite-addon-template_enabled` - Nadpisz stan włączenia/wyłączenia dodatku
 
-## Licencja
+## Licencja {#license}
 
 Ten dodatek jest licencjonowany na warunkach GPL v3 lub nowszej.
 
-## Wsparcie
+## Wsparcie {#support}
 
 Aby uzyskać wsparcie i dokumentację, odwiedź [MultisiteUltimate.com](https://multisiteultimate.com)
-## Dziennik zmian
+## Dziennik zmian {#changelog}
 
 - Wersja 1.2.0 (2026-06-03): dodano bezstanowe automatyczne logowanie dzierżawcy, możliwość wielodzierżawności Hostinger, izolację bazy danych i systemu plików dla każdej podwitryny, bramki weryfikacji suwerennej migracji, ulepszenia inicjalizacji dzierżawcy/zapisu bazy danych, konfigurowalne wiązanie hosta MySQL oraz bezpieczniejsze usuwanie suwerennego dzierżawcy.
 

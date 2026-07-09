@@ -3,7 +3,7 @@ title: Ho lula le tšepo ea multi-tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ho Lihloboho ho Tlhaloso ea Ho Baola ka Ho Hlahloba (Multi-Tenancy Isolation)
+# Ho Lihloboho ho Tlhaloso ea Ho Baola ka Ho Hlahloba (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ho baola ka ho hlahloba (Multi-Tenancy Isolation) ke taba e le sebaka seholo sa WordPress. E re bolela hore o ka baola mofuta o fapaneng oa sekolo se kholo (multi-tenant) ka morao o lehle, jo bolela hore mofuta o fapaneng oa sekolo se kholo ho baola ka tsela e ntle, ho hlahloba, le ho baola ka tsela e ntle.
 
@@ -29,7 +29,7 @@ Ke re bolela hore mofuta o fapaneng oa sekolo se kholo o baole ka tsela e ntle, 
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 e utloisisa database le filesystem ho fihla ha tsoalo ea mofuta o fanaang (per-subsite) ho ba le bohlokoa ba tenants. Sena se fihla data ea tenant ho ba le fihla, mme se fihla tse fapaneng tsa litiho tsa rono, ho ba le ho ba le tsoalo ea baka, le ho ba le ho ba le tsoalo (provisioning), le ho ba le ho ba le tsoalo (administration).
 
-## Ho ba le bohlokoa (Isolation strategy)
+## Ho ba le bohlokoa (Isolation strategy) {#isolation-strategy}
 
 U sebelisa sovereign isolation ho baithuti ba hloka sebopeho se fetang sa data, ho baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti ba ba baithuti
 
@@ -39,7 +39,7 @@ Tsoalo ea registry ea moho eo e mapang site le database ya hae, path ya tsoalo, 
 
 Ho fana'a lehlelo la mofuta oa migrasyonng (migration) ho hlokompha ka ntlha ea hore sefapiso (tenant) se tla ba lehlopha.
 
-## Ho tsamaisa bohlokoa ba host-i (Database host binding)
+## Ho tsamaisa bohlokoa ba host-i (Database host binding) {#database-host-binding}
 
 Vesitori 1.2.0 e leng lefetso la default la ho fana ka sefalo seofatsoha ka monate (same-machine host binding) ho tshepa ho installa sovereign. Ho litaba tse fana ka monate, jalo ka `localhost`, li fana ka sefalo seofatsohaho (normalized), ho etsa Bedrock, FrankenPHP, le WordPress efeletsoeng ka container (containerized), ho fana ka lebo le ho tshepa lebo la permissions phahameng le sefalo seofatsoha seo MySQL se bona.
 
@@ -53,11 +53,11 @@ Ho lona le tsoalo la sefapso (tenant) se fana'a:
 
 Re 'ho le fa lipoto tsa verification (verification reports) li fana ka tsela efe, re batla ho batla user grants ea DB ya tenant le host binding ea hau. User o a tsoilwe ho `user@localhost` o hloka ho ba se ka `user@127.0.0.1` kapa `user@%`.
 
-## Filesystem root
+## Filesystem root {#filesystem-root}
 
 Mofuta oa tlhahlobo ea tenant o hlophisoang ka ho tsamaea le ho fana ka. A re le ho hlalosa litshalo tsa mount path tse tšepo. Ho feta ho lala (install) le Bedrock, re bolela hore mofuta oa tlhahlobo o tla tsamaea ka root ea WordPress e mong le e leng eo a fetang a tlhaho ea tenant, ebe e ka fana ka root ea project.
 
-## Hohohohohohohohohohohohohohohohohohohohohohohohohohohohohohohoho
+## Hohohohohohohohohohohohohohohohohohohohohohohohohohohohohohohoho {#provisioning-order}
 
 1. Fetola tshedi tsa tlhahlo ya tenant (tenant registry entry).
 2. Fetola database ya tenant le user ya database.
@@ -70,7 +70,7 @@ Mofuta oa tlhahlobo ea tenant o hlophisoang ka ho tsamaea le ho fana ka. A re le
 
 Ho na le seboho sehle sa ba bangwe ba tenant (tenants) tse a fana'a traffic ka nako e le teng, ho fana'a ho thata ho ba le ka tsamaiso (isolated), ho ba le ka tsamaiso ha database writer, ba bangwe ba batho, le filesystem.
 
-## Ho fana'a (Flows) la ba bangwe ba tsoalo (Sovereign customer management flows)
+## Ho fana'a (Flows) la ba bangwe ba tsoalo (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 e tšoa litšomo tsa boikotso jwa mofuta o le lehle (customer management actions) ka site e le teng fa sovereign mode e le lehle. Tenant e ka fana ka ho thola ka WordPress e le moetsi o tshedi, empa litšomo tse di tšoa mofuta o le lehle tse di fetang ka data ea boikotso jwa netefe (network billing), membership, kapa data ea konto e kholo (shared account data) li fana ho tloha fa li batla ho feta litšomo tsa site e le teng empa li batla ho feta ka ho ba le mo runtime ea tenant.
 

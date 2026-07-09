@@ -3,9 +3,9 @@ title: Migrasi ti V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrasi ti V1
+# Migrasi ti V1 {#migrating-from-v1}
 
-## Ultimate Multisite geulah tina keluarga rilis 1.x anu asli ka keluarga rilis 2.x.
+## Ultimate Multisite geulah tina keluarga rilis 1.x anu asli ka keluarga rilis 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versi 2.0 sareng di luhur téh mangrupake nulis ulang total kode (complete rewrite of the codebase), hartina teu aya pisan pamahaman patali antara versi lama jeung anu anyar. Ku sabab éta, nalika naékna ti 1.x ka 2.x, data anjeun kudu diimigrasi kana format anu bisa dipahami ku versi anyar.
 
@@ -15,7 +15,7 @@ Pelajaran ieu bakal ngajelaskeun kumaha migrator éta gawé, naon anu kudu dilak
 
 _**PENTING: Saméméh anjeun mimiti naékna ti versi 1.x ka versi 2.0, mangga pastikeun yén anjeun geus nyieun backup database situs anjeun**_
 
-## Langkah-langkah Kahiji
+## Langkah-langkah Kahiji {#first-steps}
 
 Langkah kahiji nyaéta ngunduh file plugin .zip sareng ngalancarkeun (install) versi 2.0 dina dashboard admin jaringan anjeun.
 
@@ -49,19 +49,19 @@ Setelah memasukkan kuncinya, klik **Agree & Activate**.
 
 Setelah aktivasi lisensi, Anda bisa mulai instalasi yang sebenarnya dengan mengklik **Install** di halaman berikutnya. Ini akan secara otomatis membuat file dan database yang diperlukan agar versi 2.0 berfungsi.
 
-## Ayeuna, migrasi
+## Ayeuna, migrasi {#now-the-migration}
 
 Migrator téh miboga fitur aman anu ngajamin yén éta bakal ngecek sakabéh multisite anjeun sangkan yakin yén sadaya data Ultimate Multisite anjeun bisa dipigmigrasi tanpa aya masalah. Klik tombol **Run Check** pikeun ngamimitian prosésna.
 
 Setelah laksanake pengecekan, anjeun bakal miboga dua pilihan: hasilnya bisa **ngandung** error atawa **tanpa** error.
 
-### Ngandung Error
+### Ngandung Error {#with-error}
 
 Lamun anjeun meunang pesan error, anjeun kudu nyambung ka tim support kami sangkan maranéhna bisa ngabantosan anjeun ngalaksanake perbaikan error éta. Pastikeun anjeun **ngahasilkeun log error** nalika anjeun nyieun tiket. Anjeun bisa ngunduh log atawa anjeun bisa klik tautan anu nyebut "hubungi tim support kami". Ieu bakal mbukak widget bantuan di sisi kanan halaman anjeun kalayan kolom-kolom anu geus aya, kaasup log error dina deskripsi.
 
 _**Sabab sistem manggihan error, anjeun moal tiasa lanjut migrasi ka versi 2.0. Anjeun bisa balik deui ka versi 1.x pikeun ngalancarkeun jaringan anjeun nepi ka error éta diatasi.**_
 
-### Tanpa Error
+### Tanpa Error {#without-error}
 
 Lamun sistem teu manggihan naon-naon error, anjeun bakal ningali pesan sukses jeung tombol **Migrate** di handap anu bakal ngajadikeun anjeun tiasa neraskeun migrasi. Di halaman ieu, anjeun bakal diinget pikeun nyieun backup database anjeun saméméh maju, nu kami sangat rekomendasikeun. Klik **Migrate** lamun anjeun geus boga backup.
 

@@ -3,13 +3,13 @@ title: Ndekọ mgbanwe Tiketi Nkwado
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Changelog Tiketi Nkwado
+# Changelog Tiketi Nkwado {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Emeziwanye: Wepụrụ ndekọ vendor/ na nsochi Git (ekpuchilarị ya site na .gitignore), na-ebelata nha ebe nchekwa koodu
 * Emeziwanye: Nwalee ruo WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Ndozi: Nabata uru null n'ime ndị na-etinye uru nke ụdị tiketi nullable
 * Ndozi: Chekwaa tiketi niile n'ime tebụl zuru netwọkụ ụwa niile maka nkwado multisite kwesịrị ekwesị
 * Ndozi: Zoo fields nke ndị ọrụ ma dozie ntụgharị ibe efu na fọm tiketi ọhụrụ nke ahịa
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Emeziwanye: Buru akụ frontend naanị n’ọnọdụ dabara adaba na ibe tiketi nkwado
 * Emeziwanye: Mafee autoloader plugin mgbe autoloader mgbọrọgwụ Bedrock ebularị dependencies
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Agbakwunyere: Ọrụ nlele tiketi zuru ezu maka admin na frontend
 * Agbakwunyere: Onye njikwa AJAX maka ntinye nzaghachi tiketi
 * Agbakwunyere: Nkwado maka ọrụ nzaghachi tiketi nwere njikwa fọm kwesịrị ekwesị
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Emeziwanye: Nhazi database nwere klaasị query na schema kwesịrị ekwesị maka nzaghachi na mgbakwunye
 * Emeziwanye: Mbugharị gaa na properties n’ezie kama attributes maka ụdị tiketi
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Emelitere: Gbanwere aha prefix ka ọ bụrụ ultimate-multisite maka ịdị n’otu
 * Emelitere: Ịtọ text domain ka ọ bụrụ ọkọlọtọ
 * Edoziri: Ndozi obere njehie na mmeziwanye
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Mwepụta mbụ
 * Usoro njikwa tiketi zuru ezu
 * Njikwa nnweta ọkwa dị iche iche

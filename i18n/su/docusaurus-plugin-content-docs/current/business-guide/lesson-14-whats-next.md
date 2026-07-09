@@ -3,15 +3,15 @@ title: 'Palajaran 14: Naon Nu Salajengna'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Palajaran 14: Naon Salajengna
+# Palajaran 14: Naon Salajengna {#lesson-14-what-comes-next}
 
 Anjeun geus ngawangun platform situs wéb ceruk ti mimiti. FitSite geus hirup, ngalayanan studio kabugaran, jeung ngahasilkeun panghasilan berulang. Palajaran pamungkas ieu ningali ka mana kudu maju ti dieu.
 
-## Di Mana Urang Eureun
+## Di Mana Urang Eureun {#where-we-left-off}
 
 FitSite téh bisnis anu jalan kalayan palanggan, operasi, jeung arah pertumbuhan. Ayeuna urang mikirkeun naon salajengna.
 
-## Jaringan FitSite Lengkep
+## Jaringan FitSite Lengkep {#the-complete-fitsite-network}
 
 Ieu sagalana anu urang wangun salila 14 palajaran:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Pilihan 1: Leuwih Jero dina Ceruk Anjeun
+## Pilihan 1: Leuwih Jero dina Ceruk Anjeun {#option-1-go-deeper-in-your-niche}
 
 Saméméh ngalegaan ka ceruk anyar, pertimbangkeun pikeun leuwih jero dina kabugaran:
 
-### Sub-Ceruk
+### Sub-Ceruk {#sub-niches}
 
 - **Studio yoga** -- citakan husus kalayan fitur meditasi, retreat, jeung workshop
 - **CrossFit boxes** -- nyukcruk WOD, hasil kompetisi, fitur komunitas
@@ -59,7 +59,7 @@ Saméméh ngalegaan ka ceruk anyar, pertimbangkeun pikeun leuwih jero dina kabug
 
 Unggal sub-ceruk bisa boga citakan sorangan jeung kamungkinan brand sorangan, sadayana jalan dina jaringan Ultimate Multisite anu sarua.
 
-### Fitur Premium
+### Fitur Premium {#premium-features}
 
 Wangun fitur anu studio kabugaran bakal daék mayar leuwih:
 
@@ -68,14 +68,14 @@ Wangun fitur anu studio kabugaran bakal daék mayar leuwih:
 - **Citakan blog kabugaran** -- struktur eusi siap paké pikeun pamasaran eusi kabugaran
 - **Integrasi média sosial** -- otomatis masangkeun jadwal kelas jeung apdet
 
-### Ékspansi Géografis
+### Ékspansi Géografis {#geographic-expansion}
 
 Lamun anjeun ngamimitian sacara lokal, legaan ka:
 
 - Kota séjén di nagara anjeun
 - Nagara séjén (paké [fitur lokalisasi](/user-guide/localization/translating) Ultimate Multisite pikeun ngadukung sababaraha basa)
 
-## Pilihan 2: Ngalegaan ka Ceruk Anu Padeukeut
+## Pilihan 2: Ngalegaan ka Ceruk Anu Padeukeut {#option-2-expand-to-adjacent-niches}
 
 Prosés anu anjeun turutan pikeun studio kabugaran bisa dipaké pikeun ceruk naon waé. Ceruk kadua anjeun leuwih gampang sabab anjeun geus boga:
 
@@ -83,7 +83,7 @@ Prosés anu anjeun turutan pikeun studio kabugaran bisa dipaké pikeun ceruk nao
 - Pangalaman operasional
 - Playbook anu geus kabuktian
 
-### Ceruk Anu Padeukeut jeung Kabugaran
+### Ceruk Anu Padeukeut jeung Kabugaran {#adjacent-niches-to-fitness}
 
 - **Wellness jeung spa** -- terapis pijet, day spa, pusat wellness
 - **Klub olahraga** -- tim olahraga amatir, liga, klub rékréasi
@@ -91,7 +91,7 @@ Prosés anu anjeun turutan pikeun studio kabugaran bisa dipaké pikeun ceruk nao
 
 Ieu boga pamirsa anu tumpang tindih jeung kabugaran, jadi pamasaran jeung kamitraan anjeun bisa kabawa.
 
-### Ceruk Anyar Sagemblengna
+### Ceruk Anyar Sagemblengna {#completely-new-niches}
 
 Terapkeun kerangka tina Palajaran 2 pikeun meunteun ceruk naon waé:
 
@@ -108,7 +108,7 @@ Unggal ceruk anyar butuh:
 
 Infrastruktur platform, tagihan, jeung prosés operasional tetep sarua.
 
-## Pilihan 3: Ngawangun Platform tina Platform
+## Pilihan 3: Ngawangun Platform tina Platform {#option-3-build-a-platform-of-platforms}
 
 Dina skala gedé, anjeun bisa ngajalankeun sababaraha brand ceruk dina hiji jaringan Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Dina skala gedé, anjeun bisa ngajalankeun sababaraha brand ceruk dina hiji jari
 
 Unggal brand boga citakan, rencana, jeung pamasaran sorangan, tapi aranjeunna ngabagi infrastruktur, tagihan, jeung prosés operasional. Ieu tempat ékonomi Ultimate Multisite jadi kuat -- hiji platform, loba vertikal.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Pikeun pamisahan lengkep antara ceruk, pertimbangkeun [addon Multi-Network](/addons/multinetwork) anu ngamungkinkeun anjeun ngajalankeun sababaraha jaringan WordPress tina hiji instalasi.
 
-## Pilihan 4: Ngajual Bisnis
+## Pilihan 4: Ngajual Bisnis {#option-4-sell-the-business}
 
 Platform situs wéb ceruk kalayan panghasilan berulang, churn rendah, jeung posisi pasar anu jelas téh aset anu ajénna luhur. Bisnis SaaS biasana dijual 3-5x panghasilan taunan.
 
@@ -134,7 +134,7 @@ FitSite kalayan 200 palanggan dina $89 ARPU:
 
 Ieu lain hasil anu dijamin, tapi ieu hasil anu réalistis pikeun platform ceruk anu dijalankeun kalayan hadé.
 
-## Naon Anu Geus Anjeun Diajar
+## Naon Anu Geus Anjeun Diajar {#what-you-have-learned}
 
 Kursus ieu ngajarkeun anjeun prosés anu bisa diulang:
 
@@ -150,7 +150,7 @@ Kursus ieu ngajarkeun anjeun prosés anu bisa diulang:
 
 Ceruk téh strategi. Platform téh alatna. Ultimate Multisite ngajadikeun alat éta mungkin. Pamahaman anjeun kana ceruk ngajadikeun éta boga ajén.
 
-## Mimitian Ngawangun
+## Mimitian Ngawangun {#start-building}
 
 Upami anjeun nuturkeun FitSite, anjeun ayeuna gaduh platform anu jalan. Upami anjeun maca pikeun manggihan niche anjeun sorangan, balik deui ka [Palajaran 2: Milih Niche Anjeun](lesson-2-picking-your-niche) jeung mimitian prosés pikeun vertical anu anjeun pilih.
 

@@ -4,19 +4,19 @@ title: 'Filter - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Фільтр: wu_\{$id\}_form_fields
+# Фільтр: wu_\{$id\}_form_fields {#filter-wuidformfields}
 
 Фільтруе паля на форме. Саму форму ідэнтыфікуе ID ў назве фільтра.
 
-## Параметры
+## Параметры {#parameters}
 
 | Назва | Тып | Апісан |
 |------|------|-------------|
 | $fields | `array` | Спіс паля формы. |
 
-### З версіі
+### З версіі {#since}
 
 - 2.0.0
-### Выказчык
+### Выказчык {#source}
 
 Вызначаны ў [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) на 148-й кропцы

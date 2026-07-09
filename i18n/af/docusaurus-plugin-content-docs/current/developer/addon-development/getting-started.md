@@ -3,9 +3,9 @@ title: Begin met byvoegingsontwikkeling
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Byvoeging-ontwikkeling
+# Byvoeging-ontwikkeling {#addon-development}
 
-## Byvoeging-struktuur
+## Byvoeging-struktuur {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Hoof-byvoeginglêer-sjabloon
+## Hoof-byvoeginglêer-sjabloon {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Voorbeeld van pasgemaakte model
+## Voorbeeld van pasgemaakte model {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Adminbladsy-integrasie
+## Adminbladsy-integrasie {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Toets jou byvoeging
+## Toets jou byvoeging {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0-uitbreidingspunte
+## v2.13.0-uitbreidingspunte {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 voeg verskeie uitbreidingspunte by wat nuttig is vir byvoegings wat met soewereine huurders, betaalpuntdomeine of gasheerverskaffer-DNS-outomatisering integreer.
 
-### SSO- en hoofwerfbestuur-URL's
+### SSO- en hoofwerfbestuur-URL's {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Basisdomeine vir betaalpuntvorms
+### Basisdomeine vir betaalpuntvorms {#checkout-form-base-domains}
 
 Gebruik `wu_checkout_form_base_domains` wanneer jou byvoeging bykomende gedeelde basisdomeine verskaf wat soos betaalpuntvorm-**Werf-URL**-domeine moet optree in plaas van pasgemaakte toewysings per werf:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite normaliseer hierdie gashere en slaan outomatiese per-werf-rekords vir toegewysde domeine vir hulle oor.
 
-### Outomatiese skepping van domeinrekords
+### Outomatiese skepping van domeinrekords {#automatic-domain-record-creation}
 
 Gebruik `wu_should_create_domain_record_for_site` wanneer jou byvoeging outomatiese skepping van domeinrekords vir ’n nuutgeskepte werf moet onderdruk of uitstel:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Gasheerverskaffer-integrasies wat na `wu_add_subdomain` luister, kan verskafferkant-DNS-rekords skep wanneer werwe geskep word. As geen integrasie vir daardie aksie geregistreer is nie, slaan Ultimate Multisite die leë agtergrondtaak oor.
 
-## Volgende stappe
+## Volgende stappe {#next-steps}
 
 - Hersien die [Hooks-verwysing](/developer/hooks) vir beskikbare aksies en filters
 - Gaan die [REST API-oorsig](/developer/rest-api/overview) na vir API-integrasie

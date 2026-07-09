@@ -3,13 +3,13 @@ title: Ihr Registrierungsformular anpassen
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Dein Registrierungsformular anpassen
+# Dein Registrierungsformular anpassen {#customizing-your-registration-form}
 
 Damit dein Netzwerk einzigartig wirkt im Vergleich zu all den anderen SaaS-Angeboten, die auf der WordPress-Plattform aufgebaut sind, ermöglicht Ultimate Multisite dir, deine Registrierungs- und Login-Seiten mit unserer **Checkout Forms**-Funktion anzupassen.
 
 Obwohl sie eine einfache und flexible Möglichkeit sind, mit verschiedenen Ansätzen zu experimentieren, wenn du neue Kunden gewinnen möchtest, werden sie hauptsächlich verwendet, um personalisierte Registrierungsformulare zu erstellen. Dieser Artikel soll dir zeigen, wie du das tun kannst.
 
-## Login- und Registrierungsseiten:
+## Login- und Registrierungsseiten: {#login-and-registration-pages}
 
 Bei der Installation von Ultimate Multisite erstellt es automatisch benutzerdefinierte Login- und Registrierungsseiten auf deiner Haupt-Website. Du kannst diese Standardseiten jederzeit ändern, indem du zu deiner Seite **Ultimate Multisite > Settings > Login & Registration** gehst.
 
@@ -45,7 +45,7 @@ Sehen wir uns nun weitere Optionen an, die weiterhin für den Login- und Registr
 
 Und das sind alle Optionen im Zusammenhang mit Login und Registrierung, die du anpassen kannst! Vergiss nicht, deine Einstellungen zu speichern, nachdem du sie bearbeitet hast.
 
-## Mehrere Registrierungsformulare verwenden:
+## Mehrere Registrierungsformulare verwenden: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 bietet einen Checkout-Formular-Editor, mit dem du so viele Formulare erstellen kannst, wie du möchtest, mit unterschiedlichen Feldern, angebotenen Produkten usw.
 
@@ -69,7 +69,7 @@ Alternativ kannst du die Formulare, die du bereits hast, bearbeiten oder duplizi
 
 Wenn du Einzelschritt oder Mehrschritt auswählst, ist das Checkout-Formular bereits mit den grundlegenden Schritten vorausgefüllt, damit es funktioniert. Wenn du möchtest, kannst du danach zusätzliche Schritte hinzufügen.
 
-### Ein Checkout-Formular bearbeiten:
+### Ein Checkout-Formular bearbeiten: {#editing-a-checkout-form}
 
 Wie bereits erwähnt, kannst du Checkout-Formulare für verschiedene Zwecke erstellen. In diesem Beispiel arbeiten wir an einem Registrierungsformular.
 
@@ -131,11 +131,11 @@ Um den Shortcode deines Formulars zu erhalten, klicke auf **Shortcode generieren
 
 _**Hinweis:** Du musst diesen Shortcode zu deiner Registrierungsseite hinzufügen, damit dieses Checkout-Formular dort hinzugefügt wird._
 
-## Produkte und Vorlagen über URL-Parameter vorauswählen:
+## Produkte und Vorlagen über URL-Parameter vorauswählen: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Wenn du angepasste Preistabellen für deine Produkte erstellen und im Checkout-Formular das Produkt oder die Vorlage vorauswählen möchtest, das bzw. die dein Kunde auf deiner Preistabellen- oder Vorlagenseite auswählt, kannst du dafür URL-Parameter verwenden.
 
-### **Für Tarife:**
+### **Für Tarife:** {#for-plans}
 
 Gehe zu **Ultimate Multisite > Produkte > Tarif auswählen**. Du solltest oben auf der Seite den Button **Klicken, um teilbaren Link zu kopieren** sehen. Dies ist der Link, den du verwenden kannst, um diesen spezifischen Tarif in deinem Checkout-Formular vorauszuwählen.
 
@@ -143,7 +143,7 @@ Gehe zu **Ultimate Multisite > Produkte > Tarif auswählen**. Du solltest oben a
 
 Beachte, dass dieser teilbare Link nur für **Tarife** gültig ist. Du kannst teilbare Links nicht für Pakete oder Services verwenden.
 
-### Für Vorlagen:
+### Für Vorlagen: {#for-templates}
 
 Wenn du Website-Vorlagen in deinem Checkout-Formular vorauswählen möchtest, kannst du den Parameter **?template_id=X** in der URL deiner Registrierungsseite verwenden. Das „X“ muss durch die **ID-Nummer der Website-Vorlage** ersetzt werden. Um diese Nummer zu erhalten, gehe zu **Ultimate Multisite > Websites**.
 

@@ -4,11 +4,11 @@ title: Zochita - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Action: move_site
+# Action: move_site {#action-movesite}
 
 Imayambitsidwa pambuyo poti tsamba lasamutsidwa kupita ku network yatsopano.
 
-## Ma Parameter
+## Ma Parameter {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Imayambitsidwa pambuyo poti tsamba lasamutsidwa kupita ku network yatsopano.
 | $old_network_id | `int` | ID ya network yoyambirira ya tsambalo. |
 | $new_network_id | `int` | ID ya network yomwe tsambalo lasamutsidwirako. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 1.3.0
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) pa mzere 1587

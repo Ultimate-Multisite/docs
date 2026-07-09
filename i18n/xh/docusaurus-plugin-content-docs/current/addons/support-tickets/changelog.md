@@ -3,13 +3,13 @@ title: Ilogi yotshintsho yamaTikiti eNkxaso
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Ilogi yotshintsho yamatikiti enkxaso
+# Ilogi yotshintsho yamatikiti enkxaso {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Kuphuculwe: Kususiwe uvimba weefayile vendor/ ekulandelweni yi-Git (sele ugutyungelwe yi-.gitignore), kuncitshiswa ubungakanani bendawo yokugcina
 * Kuphuculwe: Kuvavanyiwe ukuya kutsho kwi-WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Ulungiso: Yamkela amaxabiso e-null kwiiseta zemodeli yetikiti ezivumela null
 * Ulungiso: Gcina onke amatikiti kwiitafile zehlabathi kuyo yonke inethiwekhi ukuze kubekho inkxaso efanelekileyo ye-multisite
 * Ulungiso: Fihla iifildi zabasebenzi kwaye ulungise ukuhanjiswa kwakhona kwephepha elingenanto kwifomu yomthengi yetikiti elitsha
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Kuphuculwe: Layisha ii-asethi ze-frontend ngokwemiqathango kuphela kumaphepha amatikiti enkxaso
 * Kuphuculwe: Tsiba i-autoloader yeplagi xa i-autoloader yengcambu ye-Bedrock sele ilayishe izixhomekeki
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Kongezwe: Ukusebenza okupheleleyo kokujonga itikiti kumphathi nakwi-frontend
 * Kongezwe: Umphathi we-AJAX wokungeniswa kweempendulo zetikiti
 * Kongezwe: Inkxaso yokusebenza kwempendulo yetikiti ngokuphathwa kwefomu okufanelekileyo
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Kuphuculwe: Ulwakhiwo lwedathabheyisi ngeeklasi ezifanelekileyo zemibuzo kunye ne-schema zeempendulo kunye nezincamatheliso
 * Kuphuculwe: Ukufuduselwa kwiipropati zokwenene endaweni yee-attributes zeemodeli zetikiti
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Kuhlaziywe: Kuthiywe ngokutsha isiqalo saba ultimate-multisite ukuze kungaguquguquki
 * Kuhlaziywe: Ukumiselwa komgangatho we-domain yombhalo
 * Kulungisiwe: Ulungiso lweebug ezincinci kunye nophuculo
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Ukukhutshwa kokuqala
 * Inkqubo epheleleyo yolawulo lwamatikiti
 * Ulawulo lofikelelo olunamanqanaba amaninzi

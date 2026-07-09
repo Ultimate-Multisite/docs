@@ -3,15 +3,15 @@ title: 'Aralin 6: Ang Karanasan sa Pagpaparehistro'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Aralin 6: Ang Karanasan sa Pag-signup
+# Aralin 6: Ang Karanasan sa Pag-signup {#lesson-6-the-signup-experience}
 
 Ang daloy ng pagbili ay kung saan nagiging kita ang interes. Nawawalan ng mga customer ang nakalilitong o pangkalahatang proseso ng signup. Ang daloy na partikular sa niche, nagsasalita sa kanilang wika, at magaan sa pakiramdam ay nagko-convert sa kanila.
 
-## Kung Saan Tayo Huminto
+## Kung Saan Tayo Huminto {#where-we-left-off}
 
 May mga template at plan na naka-configure ang FitSite. Ngayon, bubuuin natin ang karanasan sa pagpaparehistro at pagbili na ginagawang nagbabayad na customer ang mga may-ari ng fitness studio.
 
-## Pag-unawa sa Daloy ng Pagpaparehistro
+## Pag-unawa sa Daloy ng Pagpaparehistro {#understanding-the-registration-flow}
 
 Ang mga form ng pagbili ng Ultimate Multisite ay ganap na nako-customize na mga multi-step form. Para sa FitSite, gusto natin ng daloy na:
 
@@ -21,11 +21,11 @@ Ang mga form ng pagbili ng Ultimate Multisite ay ganap na nako-customize na mga 
 
 Tingnan ang [Ang Daloy ng Pagpaparehistro](/user-guide/configuration/the-registration-flow) para sa buong teknikal na sanggunian.
 
-## Pagdidisenyo ng Pagbili sa FitSite
+## Pagdidisenyo ng Pagbili sa FitSite {#designing-the-fitsite-checkout}
 
 Pumunta sa **Ultimate Multisite > Checkout Forms** at gumawa ng bagong form.
 
-### Hakbang 1: Pagpili ng Plan
+### Hakbang 1: Pagpili ng Plan {#step-1-plan-selection}
 
 Ang unang dapat makita ng may-ari ng fitness studio ay ang mga plan, na ipinapakita sa mga terminong nauunawaan nila.
 
@@ -37,7 +37,7 @@ Ang unang dapat makita ng may-ari ng fitness studio ay ang mga plan, na ipinapak
 Walang ibig sabihin ang "1 GB storage" sa may-ari ng gym. Ang "Lahat ng kailangan mo para sa isang propesyonal na website ng studio" ay may ibig sabihin. Isulat ang mga paglalarawan ng plan sa wika ng iyong customer.
 :::
 
-### Hakbang 2: Pagpili ng Template
+### Hakbang 2: Pagpili ng Template {#step-2-template-selection}
 
 Pagkatapos pumili ng plan, pipili ang customer ng kanilang panimulang template.
 
@@ -45,7 +45,7 @@ Pagkatapos pumili ng plan, pipili ang customer ng kanilang panimulang template.
 - Sinasala ang mga available na template batay sa plan na pinili nila (na-configure sa Aralin 5)
 - Dapat may preview image ang bawat template na nagpapakita ng disenyong partikular sa fitness
 
-### Hakbang 3: Paggawa ng Account
+### Hakbang 3: Paggawa ng Account {#step-3-account-creation}
 
 Panatilihin itong minimal. Kolektahin lang ang:
 
@@ -55,27 +55,27 @@ Panatilihin itong minimal. Kolektahin lang ang:
 
 Huwag humingi ng impormasyong hindi mo kailangan sa signup. Bawat karagdagang field ay nagpapababa ng conversions.
 
-### Hakbang 4: Pag-setup ng Site
+### Hakbang 4: Pag-setup ng Site {#step-4-site-setup}
 
 - **Pamagat ng site**: I-pre-fill mula sa pangalan ng studio na inilagay sa Hakbang 3
 - **URL ng site**: Awtomatikong bumuo mula sa pangalan ng studio (hal., `ironworks.fitsite.com`)
 
-### Hakbang 5: Pagbabayad
+### Hakbang 5: Pagbabayad {#step-5-payment}
 
 - Idagdag ang **Payment** field
 - I-configure ang iyong gateway ng pagbabayad (inirerekomenda ang [Stripe](/user-guide/payment-gateways/stripe) para sa subscription billing)
 - Kung gumawa ka ng mga order bump sa Aralin 5, magdagdag ng **Order Bump** field bago ang hakbang ng pagbabayad
 
-### Hakbang 6: Kumpirmasyon
+### Hakbang 6: Kumpirmasyon {#step-6-confirmation}
 
 - I-customize ang mensahe ng kumpirmasyon gamit ang wikang partikular sa fitness
 - Halimbawa: "Ginagawa na ang website ng iyong fitness studio. Ire-redirect ka sa iyong bagong site sa loob ng ilang segundo."
 
-## Pagdaragdag ng Toggle sa Pagpili ng Period
+## Pagdaragdag ng Toggle sa Pagpili ng Period {#adding-a-period-selection-toggle}
 
 Kung nag-set up ka ng mga variation ng presyo sa iyong mga plan (buwanan kumpara sa taun-taon), magdagdag ng **Period Selection** field sa form ng pagbili upang makapag-toggle ang mga customer sa pagitan ng mga period ng billing. Tingnan ang [Mga Form ng Pagbili](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) para sa mga tagubilin.
 
-## Pag-configure ng Pagbabayad
+## Pag-configure ng Pagbabayad {#configuring-payment}
 
 Kung hindi ka pa nakakapag-set up ng gateway ng pagbabayad:
 
@@ -85,7 +85,7 @@ Kung hindi ka pa nakakapag-set up ng gateway ng pagbabayad:
 
 Tingnan ang [Pagkuha ng Bayad](/user-guide/payment-gateways/getting-paid) para sa mga detalye kung paano dumadaloy ang mga bayad papunta sa iyong account.
 
-## Pagsubok sa Daloy
+## Pagsubok sa Daloy {#testing-the-flow}
 
 Bago magpatuloy, kumpletuhin ang isang buong test signup:
 
@@ -105,7 +105,7 @@ Suriin na:
 - [ ] Napupunta ang customer sa gumaganang site gamit ang napiling template
 - [ ] Gumagamit ang mga email ng kumpirmasyon ng wikang partikular sa fitness
 
-## Ang FitSite Network Sa Ngayon
+## Ang FitSite Network Sa Ngayon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Handa na para sa branding (susunod na aralin)
 ```
 
-## Ang Binuo Natin sa Araling Ito
+## Ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Isang multi-step na form ng pagbili** na iniangkop para sa mga may-ari ng fitness studio
 - **Wikang partikular sa niche** sa buong daloy ng signup

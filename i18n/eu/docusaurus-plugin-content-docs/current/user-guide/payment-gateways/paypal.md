@@ -3,7 +3,7 @@ title: PayPal-a konpondu
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal-aren konponbidea (v2)
+# PayPal-aren konponbidea (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**GIZKONTU NOTE ZERRE GIZKONTU: Hau artikulu Ultimate Multisite bertsio 2.x-era referentzia egiten du.**_
 
@@ -13,13 +13,13 @@ Stripe baten besteak garrantzitsuak bezala, PayPal-k online paymentak erabiliz l
 
 Ez dago ezberdina, hori integrazioari beharrezkoa den API credentialak aurkitzeko **PayPal Business account** bat du behar duzu.
 
-## PayPal aktibatu dezakezu kontuaren network-an
+## PayPal aktibatu dezakezu kontuaren network-an {#enabling-paypal-on-your-network}
 
 PayPal-a kontuaren network-an disponible metodo bat gisa aktibatu dezakezu, **Ultimate Multisite > Settings > Payments** tabera jarraitu eta PayPal-aren ondoreko kotakkoa (box) markatu duzu.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Guia kontuarekin erabiliz
+## Guia kontuarekin erabiliz {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0-ek kontuaren konponbidea (settings) arau PayPal setup wizard bat gehitu du. PayPal aktibatu egin ondoren, Ultimate Multisite > Settings > Payments-an guiaraduak erabildu eta zer moduan konektatzea nahi duzu eta saldatu aurretik beharrezkoa den credentialak zehazteko kontua (confirm) egiten duzu.
 
@@ -30,7 +30,7 @@ Guia bat perruta konponbidea (setup paths) bi bidea suportatzen du:
 
 Ez ikusten du OAuth opszioa wizard-an, aipatutako manual credential entry prozesua amaituu. Gateway-ak Ultimate Multisite 2.x irudinetasunaren lehen editiak beste PayPal Business API identifikazioakarekin funtzionatzen du.
 
-## PayPal API identifikazioak hartzea
+## PayPal API identifikazioak hartzea {#getting-the-paypal-api-credentials}
 
 PayPal-a labengatuta payment gateway gisa aktiboa egin ondoren, PayPal API **Username**, PayPal API **Password** eta PayPal API **Signature** galduak pleratu behar duzu.
 

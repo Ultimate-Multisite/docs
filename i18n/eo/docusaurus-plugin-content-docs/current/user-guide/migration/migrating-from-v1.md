@@ -3,9 +3,9 @@ title: Migri de V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migriĝo de V1
+# Migriĝo de V1 {#migrating-from-v1}
 
-## Ultimate Multisite ŝanĝis de sia originale 1.x familio de riliso al la 2.x familio de riliso.
+## Ultimate Multisite ŝanĝis de sia originale 1.x familio de riliso al la 2.x familio de riliso. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versio 2.0 kaj pli nova estas kompleta reekonstruo de la kodo, tio signifas, ke ebleti malmulta estas entre la veta versio kaj la nova. Pro tiu kialo, ĉiam pri moderniziĝi de 1.x al 2.x, via data devas esti migritita en formaton, kiun la novaj versio povas kompreni.
 
@@ -15,7 +15,7 @@ Tiu lektoro provizas informojn pri kiel funkcias la migratora, kion fari en caso
 
 _**IMPORTAN: Antaŭ ol vi komencas moderniziĝi de versio 1.x al versio 2.0, certigu, ke vi kreis rezervon de la bazda databazo de via sitio.**_
 
-## Unaj paŝoj
+## Unaj paŝoj {#first-steps}
 
 La unua paŝo estas teleĉi la plugin .zip filon kaj instali la version 2.0 sur via administrado de la retano (network admin dashboard).
 
@@ -49,19 +49,19 @@ Post enmeti vian klavon, kliku sur **Agree & Activate** (Acordas kaj Aktivas).
 
 Post licencon aktiva, vi povas komenci la realan instaladon per kliki sur **Install** (Instali) sur la sekva paĝo. Tio automatike kreos la necesajn filojn kaj bazdon datuman kiuj estas necesaj por versio 2.0 funkcii.
 
-## Nun, la migracio
+## Nun, la migracio {#now-the-migration}
 
 La migrator havas funkcionon de seguridade interna kie kontrolas tut vaš multisite por certu ar ĉiuj viaj de Ultimate Multisite datum povas esti migrit sen iu problemo. Klikas sur butonon **Run Check** por komenci la proceson.
 
 Post kiam vi faras la kontrolon, vi havas du opcio: rezulto povas esti **kun** eraro aŭ **sen** eraro.
 
-### Kun Eraro
+### Kun Eraro {#with-error}
 
 Se vi ricevas mesaĝon de eraro, vi bezonas kontakti la nia suporta ekipo por ke ili vi helpi en ŝanĝi lian. Assureĝuĝu vi **donas la logoj de eraro** kiam vi kreas tiketon. Vi povas teleŝuti la logojn aŭ kliki sur la linkon kiu diras kontakti la nia suporta ekipo. Ĝi aldonos la help-widget sur la dreta flanbo de via paĝo kun la kampoj antaŭplenpliita por vi, kiuj inkluzivas la logojn de eraro sub la deskribonio.
 
 _**Ĉar la sistema trovis eraron, vi ne bone procedi migri al versio 2.0. Vi povas tiam reveni al versio 1.x por plenumi rian reton ĝis ke la eraro estas ŝanĝita.**_
 
-### Sen Eraro
+### Sen Eraro {#without-error}
 
 Se la sistema ne trovas nin erarojn, vi vidus sukcesajn mesaĝon kaj butonon **Migrate** en la bazaltio kiu permesas vi procedi kun la migrado. Sur ĉi tiu paĝo vi permiĝos al krei kopion de via bazdatado antaŭe, kion ni forte rekomendas. Firnu **Migrate**, se vi 이미 havas kopion.
 

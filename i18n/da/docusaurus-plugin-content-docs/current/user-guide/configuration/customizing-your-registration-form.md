@@ -3,13 +3,13 @@ title: Tilpasning af din registreringsformular
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Tilpasning af din registreringsformular
+# Tilpasning af din registreringsformular {#customizing-your-registration-form}
 
 For at få dit netværk til at se unikt ud i forhold til alle andre SaaS-løsninger bygget på WordPress-platformen, giver Ultimate Multisite dig mulighed for at tilpasse dine registrerings- og login-sider med vores **Checkout Forms**-funktion.
 
 Selvom de er en nem og fleksibel måde at eksperimentere med forskellige tilgange på, når du forsøger at konvertere nye kunder, bruges de mest til at oprette personlige registreringsformularer. Denne artikel har til formål at vise dig, hvordan du kan gøre det.
 
-## Login- og registreringssider:
+## Login- og registreringssider: {#login-and-registration-pages}
 
 Ved installation af Ultimate Multisite opretter det automatisk brugerdefinerede login- og registreringssider på dit hovedsite. Du kan til enhver tid ændre disse standardsider ved at gå til din **Ultimate Multisite > Settings > Login & Registration**-side.
 
@@ -45,7 +45,7 @@ Lad os nu se på andre muligheder, som stadig er relevante for login- og registr
 
 Og det er alle de muligheder relateret til login og registrering, som du kan tilpasse! Glem ikke at gemme dine indstillinger, når du er færdig med at redigere dem.
 
-## Brug af flere registreringsformularer:
+## Brug af flere registreringsformularer: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 tilbyder en checkout form-editor, der giver dig mulighed for at oprette så mange formularer, som du ønsker, med forskellige felter, produkter på tilbud osv.
 
@@ -69,7 +69,7 @@ Alternativt kan du redigere eller duplikere de formularer, du allerede har, ved 
 
 Hvis du vælger enkelt trin eller flere trin, vil checkout form allerede være forudfyldt med de grundlæggende trin, der skal til, for at den fungerer. Hvis du derefter vil, kan du tilføje ekstra trin til den.
 
-### Redigering af en Checkout Form:
+### Redigering af en Checkout Form: {#editing-a-checkout-form}
 
 Som vi nævnte før, kan du oprette checkout forms til forskellige formål. I dette eksempel arbejder vi på en registreringsformular.
 
@@ -131,11 +131,11 @@ For at få din formulars shortcode skal du klikke på **Generér Shortcode** og 
 
 _**Bemærk:** Du skal tilføje denne shortcode til din registreringsside for at få denne checkout-formular tilføjet til den._
 
-## Forhåndsvælg produkter og skabeloner via URL-parametre:
+## Forhåndsvælg produkter og skabeloner via URL-parametre: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Hvis du vil oprette tilpassede pristabeller for dine produkter og forhåndsvælge det produkt eller den skabelon i checkout-formularen, som din kunde vælger fra din pristabel eller skabelonside, kan du bruge URL-parametre til dette.
 
-### **For planer:**
+### **For planer:** {#for-plans}
 
 Gå til **Ultimate Multisite > Produkter > Vælg en plan**. Du bør se knappen **Klik for at kopiere delbart link** øverst på siden. Dette er linket, du kan bruge til at forhåndsvælge denne specifikke plan i din checkout-formular.
 
@@ -143,7 +143,7 @@ Gå til **Ultimate Multisite > Produkter > Vælg en plan**. Du bør se knappen *
 
 Bemærk, at dette delbare link kun er gyldigt for **Planer**. Du kan ikke bruge delbare links til pakker eller tjenester.
 
-### For skabeloner:
+### For skabeloner: {#for-templates}
 
 Hvis du vil forhåndsvælge webstedsskabeloner i din checkout-formular, kan du bruge parameteren: **?template_id=X** på URL’en til din registreringsside. "X" skal erstattes med **webstedsskabelonens ID-nummer**. For at få dette nummer skal du gå til **Ultimate Multisite > Websteder**.
 

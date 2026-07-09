@@ -3,13 +3,13 @@ title: Afrekenveld en Kliënt-DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Betaalproses-veld en kliënt-DNS-bestuur
+# Betaalproses-veld en kliënt-DNS-bestuur {#checkout-field-and-customer-dns-management}
 
-## Die Domeinkeuse-betaalprosesveld
+## Die Domeinkeuse-betaalprosesveld {#the-domain-selection-checkout-field}
 
 Die **Domeinkeuse**-veld is ’n betaalproses-element wat kliënte ’n keuse gee oor hoe om hul webwerf se domein te kry. Voeg dit by enige betaalvorm om domeinverkope moontlik te maak.
 
-### Voeg die veld by ’n betaalvorm
+### Voeg die veld by ’n betaalvorm {#adding-the-field-to-a-checkout-form}
 
 1. Gaan na **Netwerkadmin › Ultimate Multisite › Betaalvorms**
 2. Maak ’n betaalvorm oop of skep een
@@ -18,7 +18,7 @@ Die **Domeinkeuse**-veld is ’n betaalproses-element wat kliënte ’n keuse ge
 5. Stel die veldopsies op (sien hieronder)
 6. Stoor die vorm
 
-### Veldopsies
+### Veldopsies {#field-options}
 
 **Domeinmodusse** — Kies watter oortjies die kliënt sien. Elke modus kan onafhanklik geaktiveer of gedeaktiveer word:
 
@@ -32,7 +32,7 @@ Die **Domeinkeuse**-veld is ’n betaalproses-element wat kliënte ’n keuse ge
 
 **Domeinproduk** — Koppel hierdie veld opsioneel aan ’n spesifieke domeinproduk. As dit nie gestel is nie, kies die byvoeging outomaties die ooreenstemmende produk op grond van die TLD waarna die kliënt soek.
 
-### Registrant-kontakvelde
+### Registrant-kontakvelde {#registrant-contact-fields}
 
 Wanneer ’n kliënt die **Registreer nuwe domein**-oortjie kies, voeg die betaalvorm registrant-kontakvelde inlyn by:
 
@@ -43,11 +43,11 @@ Wanneer ’n kliënt die **Registreer nuwe domein**-oortjie kies, voeg die betaa
 
 Dit word deur alle registrateurs vereis en gevalideer voordat die registrasie-API-oproep gemaak word. Telefoonnommers word outomaties geformateer na die `+CC.NNN` internasionale formaat wat registrateurs verwag.
 
-### Outomaties gegenereerde webwerf-URL
+### Outomaties gegenereerde webwerf-URL {#auto-generated-site-url}
 
 Wanneer ’n kliënt ’n domein registreer of koppel, word die webwerf-URL-veld outomaties ingevul vanaf die gekose domein. Kliënte hoef nie ’n aparte URL-veld in te vul nie.
 
-### Soekgedrag
+### Soekgedrag {#search-behaviour}
 
 - Domeinbeskikbaarheid word intyds met AJAX nagegaan terwyl die kliënt tik
 - Alternatiewe TLD-voorstelle word gewys wanneer die voorkeurdomein nie beskikbaar is nie
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Kliënt-DNS-bestuur
+## Kliënt-DNS-bestuur {#customer-dns-management}
 
 Kliënte kan DNS-rekords vir hul geregistreerde domeine vanaf die **My Account**-bladsy bestuur, onder hul domein se inskrywing.
 
-### Ondersteunde rekordtipes
+### Ondersteunde rekordtipes {#supported-record-types}
 
 | Tipe | Gebruik |
 |---|---|
@@ -91,11 +91,11 @@ Kliënte kan DNS-rekords vir hul geregistreerde domeine vanaf die **My Account**
 | **MX** | Stel posse-uitruilbediener |
 | **TXT** | Voeg SPF-, DMARC-, verifikasie- of ander teksrekords by |
 
-### Watter verskaffers ondersteun DNS-bestuur?
+### Watter verskaffers ondersteun DNS-bestuur? {#which-providers-support-dns-management}
 
 DNS-bestuur (rekords byvoeg, wysig, uitvee) is beskikbaar met **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, en **Openprovider**. **Hostinger**-domeine kan naambedieners deur Domain Seller opdateer; DNS-rekords vir gehuisveste domeine word deur die kern-Hostinger-domeinkoppeling-integrasie bestuur. Namecheap-, GoDaddy- en NameSilo-domeine wys status- en vervaldatuminligting, maar DNS moet direk in die registrateur se beheerpaneel bestuur word.
 
-### Verstek-DNS-rekords
+### Verstek-DNS-rekords {#default-dns-records}
 
 Jy kan verstek-DNS-rekords opstel wat outomaties toegepas word wanneer ’n domein geregistreer word. Gaan na **Instellings › Domain Seller › Verstek-DNS-rekords**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS bekyk en wysig
+### Admin: DNS bekyk en wysig {#admin-viewing-and-editing-dns}
 
 Netwerkadmins kan DNS-rekords vir enige kliëntdomein vanaf die domein se wysigbladsy in **Netwerkadmin › Ultimate Multisite › Domeine** bekyk en wysig.

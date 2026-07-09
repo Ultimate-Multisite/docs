@@ -3,7 +3,7 @@ title: Sunrise فائل کی خرابی
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise فائل کی تنصیب میں خرابی
+# Sunrise فائل کی تنصیب میں خرابی {#error-installing-the-sunrise-file}
 
 sunrise.php فائل ایک خاص فائل ہے جسے WordPress شروع ہوتے وقت تلاش کرتا ہے۔ WordPress کے لیے sunrise.php فائل کا پتہ لگانا ممکن ہو، اس کے لیے یہ فائل **wp-content فولڈر** کے اندر ہونی چاہیے۔
 

@@ -3,7 +3,7 @@ title: Ráidh an API endpoint aistadh
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# An API endpoint a' Chàir a' Chùlchnaich (The Ultimate Multisite Register API endpoint)
+# An API endpoint a' Chàir a' Chùlchnaich (The Ultimate Multisite Register API endpoint) {#the-ultimate-multisite-register-api-endpoint}
 
 Dug an tòradh seo, thuill thu le feuchain a' sgrùdadh a' chùlchnaich API Endpoint a' Chùlchnaich (Ultimate Multisite /register API endpoint) airson a' creachadh a' chùlchnaich fahuineach airson ùr-chùlchnaich ùr anns a' chùlchnaich agad agus faic a' sgrùdadh sin le Zapier.
 
@@ -29,11 +29,11 @@ Taisg an **Enable API** agus faic ealaian API agad.
 
 An uair sin, leugh sinn an endpoint agus creach sinn a' chùlchnaich fahuineach mar a' chùlchnaich (registration action) anns Zapier.
 
-## Paramètrair tòisich an body (Endpoint body parameters)
+## Paramètrair tòisich an body (Endpoint body parameters) {#endpoint-body-parameters}
 
 Leugh sinn ealaian air faighinn an fhaighinn fhuasach sin a bheilnos a' sgrùdadh gu endpoint. Ar deamheachd an curtha seo, beidh thu le tòisich fìor a' chùlchnaich.
 
-### Chùlchnaich (Customer)
+### Chùlchnaich (Customer) {#customer}
 
 Tha an fhaighinn seo a' sàmhach airson an prosesas a' creachadh ùr agus an Chùlchnaich ùr anns an Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Is e3ach ID seallach a'chuid a gineadhach air do chuid a gineadhach a gineadhach
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Tha an t-eòlas sin a lasa faicinn Status Membership.
 
 "membership" { "status" : "string", // aon de na "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Tha eòganan a thar a' chuid a gineadhach ID 1 mar mòr. Bidh thu a' chuid, tha an endpoint seo a' tàinig a' cruinn eòganan. Seallach a' chuid a gineadhach Ultimate Multisite airson a bhith a' faicinn a' chuid a gineadhach a gineadhach.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Mar a tha an t-eòlas sin a lasa, tha sinn a' chuid Status.
 
 **"payment" { "status" : "string", // aon de na "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Tha an t-eòlas sin a lasa, tha an URL a' chuid an Taisneil. Tha e uile sin san obsect Site.
 
@@ -69,11 +69,11 @@ Tha an t-eòlas sin a lasa, tha an URL a' chuid an Taisneil. Tha e uile sin san 
 
 Tha an t-eòlas a' chuid register a lasa aon array le faicinn fhaighinn a gineadhach membership.
 
-## Creachadh eògan air Zapier
+## Creachadh eògan air Zapier {#creating-an-action-in-zapier}
 
 Le bhith a' chuid an endpoint nòth a tha a' chuid a gineadhach a tha a' tàinig, tha thu a' chuid eògan ùr san Zapier. A tha thu a' faicinn a' chuid a lasa agus a' fhaighinn eògan ùr a th' ann? Learn more here. (link?)
 
-### Creachadh eògan
+### Creachadh eògan {#creating-an-action}
 
 An tò a chleachdadh an endpoint de registre le Zapier a chlàradh air a chleachdadh, rinn an t-uisge sin le Google Forms. Mar chùl, mar a tha an form seo a bhuladh agus a shàthachadh an fhaisg an fhoirbheithneach, faic mbeidh neoneamh a chruthachadh anns na h-nàdh Ultimate Multisite.
 
@@ -93,7 +93,7 @@ Chan tha fhaighinn a' sgrùdadh, ròidh gu leathair. Ar an sin, ar an sinneach i
 
 Test thu na Zap new agus bi thu a' sgrùdadh gu sònraichte. Mar sin, thu faic eir thu a' chunn fyndhromach air an endpoint a tha a' sgrùdadh gu sònraichte. Mar a tha mòran de dhòighinn, tha thailean beag aig tium.
 
-### Paramètra endpoint fhuilich
+### Paramètra endpoint fhuilich {#complete-endpoint-parameters}
 
 Seo an call fhuilich agus a chùisbeul na fhaighinn a tha a' sgrùdadh air a tha a' sgrùdadh.
 

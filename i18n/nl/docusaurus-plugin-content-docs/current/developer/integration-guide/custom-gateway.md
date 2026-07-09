@@ -3,11 +3,11 @@ title: Ontwikkeling van aangepaste gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway-ontwikkeling
+# Custom Gateway-ontwikkeling {#custom-gateway-development}
 
 Je kunt aangepaste betalingsgateways maken door de klasse `Base_Gateway` uit te breiden.
 
-## Gateway-klasse
+## Gateway-klasse {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## De Gateway registreren
+## De Gateway registreren {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Belangrijke methoden
+## Belangrijke methoden {#key-methods}
 
 | Methode | Doel |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Terugbetalingsverzoeken afhandelen |
 | `get_payment_methods()` | Opgeslagen betaalmethoden voor een klant retourneren |
 
-## Vernieuwingsgegevens voor terugkerende memberships
+## Vernieuwingsgegevens voor terugkerende memberships {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 laat gateway-integraties melden of een terugkerende membership een herbruikbaar vernieuwingsgegeven heeft voordat `auto_renew` wordt opgeslagen. Hook `wu_membership_has_renewal_credential` en retourneer:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Wis de marker voor ontbrekende gegevens als onderdeel van de succesvolle herautorisatiestroom van je gateway nadat een nieuw herbruikbaar gegeven is opgeslagen.
 
-## Tips
+## Tips {#tips}
 
 - Retourneer bij mislukking altijd `WP_Error`, zodat Ultimate Multisite foutweergave kan afhandelen
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gebruik `wu_log_add()` voor gateway-specifieke logging
 
-## Mogelijkheden van AI-connectorproviders
+## Mogelijkheden van AI-connectorproviders {#ai-connector-provider-capabilities}
 
 Aangepaste integraties die AI-connector-ondersteunde bewerkingen aanroepen, moeten aansluiten bij de ondersteunde OAuth-providerset die is geïntroduceerd met AI Provider for Anthropic Max v1.3.0:
 

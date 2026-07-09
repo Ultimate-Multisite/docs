@@ -3,11 +3,11 @@ title: Pokročilé príklady kódu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Pokročilé príklady kódu
+# Pokročilé príklady kódu {#advanced-code-examples}
 
 Tieto príklady demonštrujú pokročilé integračné vzory s Ultimate Multisite.
 
-## Dynamický cenový engine
+## Dynamický cenový engine {#dynamic-pricing-engine}
 
 Cenový engine založený na pravidlách, ktorý aplikuje množstevné, vernostné a sezónne zľavy:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Pokročilé provisionovanie stránok
+## Pokročilé provisionovanie stránok {#advanced-site-provisioning}
 
 Automaticky konfigurujte nové stránky s pluginmi, SSL, CDN, zálohami a monitoringom na základe funkcií plánu:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Vlastný systém obmedzení
+## Vlastný systém obmedzení {#custom-limitations-system}
 
 Sledujte a vynucujte limity zdrojov s upozorneniami na využitie:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Atomický čítač BerlinDB s `increment_item()`
+## Atomický čítač BerlinDB s `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 pridala metódu `increment_item()` do triedy BerlinDB `Query`. Použite ju na vykonávanie bezpečných, atomických zvýšení číselných stĺpcov bez pretekov typu čítanie-upravenie-zápis — užitočné pre čítače, kvóty používania a kontroly obmedzenia frekvencie, ktoré bežia pri súbežných požiadavkách.
 
-### Signatúra metódy
+### Signatúra metódy {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 pridala metódu `increment_item()` do triedy BerlinDB 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Základné použitie
+### Základné použitie {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Sledovanie používania API na členstvo
+### Sledovanie používania API na členstvo {#tracking-api-usage-per-membership}
 
 Praktický vzor na vynucovanie obmedzení frekvencie API pre jednotlivé členstvá:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Prečo `increment_item()` namiesto `update_item()`
+### Prečo `increment_item()` namiesto `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Naivný prístup čítanie-upravenie-zápis je pri súbežných požiadavkách nebezpečný:
 

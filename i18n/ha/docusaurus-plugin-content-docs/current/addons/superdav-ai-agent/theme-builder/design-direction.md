@@ -3,17 +3,17 @@ title: Jagorancin Zane
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Hanyar Zane
+# Hanyar Zane {#design-direction}
 
 Matakin **Hanyar Zane** yana ba ka damar duba, gyara, da kammala zanen gani na theme ɗinka kafin Theme Builder ya samar da cikakken theme.
 
-## Bayani Gabaɗaya
+## Bayani Gabaɗaya {#overview}
 
 Bayan kammala Discovery Interview, Theme Builder yana gabatar da hanyar zanenka tare da **rendering na preview na desktop da mobile**. Wannan yana ba ka damar ganin daidai yadda zanenka zai bayyana a na'urori daban-daban kafin ka yanke shawara kan theme.
 
-## Abubuwan Hanyar Zane
+## Abubuwan Hanyar Zane {#design-direction-components}
 
-### 1. Palette na Launuka
+### 1. Palette na Launuka {#1-color-palette}
 
 Tsarin launukan theme ɗinka, ciki har da:
 
@@ -23,7 +23,7 @@ Tsarin launukan theme ɗinka, ciki har da:
 - **Launuka neutral** — toka-toka da fari don backgrounds da rubutu
 - **Launin rubutu** — babban launin rubutu don sauƙin karantawa
 
-### 2. Typography
+### 2. Typography {#2-typography}
 
 Zaɓin fonts don:
 
@@ -33,14 +33,14 @@ Zaɓin fonts don:
 - **Tsayin layi** — tazara tsakanin layuka don sauƙin karantawa
 - **Nauyin font** — nau'o'in bold, regular, da light
 
-### 3. Layout da Tazara
+### 3. Layout da Tazara {#3-layout-and-spacing}
 
 - **Faɗin container** — mafi girman faɗi don abun ciki
 - **Padding da margins** — tazara a kewaye da abubuwa
 - **Tsarin grid** — layout na ginshiƙai don zane mai amsawa
 - **Tazara tsakanin components** — nisa tsakanin abubuwan UI
 
-### 4. Abubuwan Gani
+### 4. Abubuwan Gani {#4-visual-elements}
 
 - **Salo na maɓalli** — zane-zanen maɓalli na farko, na biyu, da na uku
 - **Zane-zanen card** — layouts don tubalan abun ciki
@@ -48,9 +48,9 @@ Zaɓin fonts don:
 - **Iyakoki da inuwa** — zurfin gani mai laushi
 - **Tasirin hover** — salon yanayin hulɗa
 
-## Rendering na Preview
+## Rendering na Preview {#preview-rendering}
 
-### Preview na Desktop
+### Preview na Desktop {#desktop-preview}
 
 Preview na desktop yana nuna zanenka a cikakken faɗi (yawanci 1200px ko fiye):
 
@@ -59,7 +59,7 @@ Preview na desktop yana nuna zanenka a cikakken faɗi (yawanci 1200px ko fiye):
 - Babban typography da tazara
 - Duk abubuwan gani a cikakken girma
 
-### Preview na Mobile
+### Preview na Mobile {#mobile-preview}
 
 Preview na mobile yana nuna zanenka a faɗin mobile (yawanci 375px):
 
@@ -68,7 +68,7 @@ Preview na mobile yana nuna zanenka a faɗin mobile (yawanci 375px):
 - Typography da tazara da aka daidaita
 - Girman maɓalli masu dacewa da taɓawa
 
-### Responsive Breakpoints
+### Responsive Breakpoints {#responsive-breakpoints}
 
 Theme Builder yana render previews a waɗannan breakpoints:
 
@@ -79,9 +79,9 @@ Theme Builder yana render previews a waɗannan breakpoints:
 | **Desktop** | 1200px | Desktop mai cikakken faɗi |
 | **Babban Desktop** | 1920px | Nuni mai faɗi sosai |
 
-## Gyaran Zaneka
+## Gyaran Zaneka {#refining-your-design}
 
-### Yin Gyare-gyare
+### Yin Gyare-gyare {#making-adjustments}
 
 Za ka iya gyara hanyar zanenka ta hanyar:
 
@@ -91,7 +91,7 @@ Za ka iya gyara hanyar zanenka ta hanyar:
 4. **Sabunta layout** — canza faɗin containers da ginshiƙan grid
 5. **Keɓance abubuwa** — gyara salon maɓalli, zane-zanen card, da sauransu.
 
-### Sabuntawar Preview
+### Sabuntawar Preview {#preview-updates}
 
 Ana nuna canje-canje a lokaci na ainihi:
 
@@ -100,7 +100,7 @@ Ana nuna canje-canje a lokaci na ainihi:
 - Ana sabunta duk responsive breakpoints
 - Za ka iya sauyawa tsakanin previews don tabbatar da canje-canje
 
-### Kallon Kwatantawa
+### Kallon Kwatantawa {#comparison-view}
 
 Kwatanta hanyar zanenka da:
 
@@ -108,7 +108,7 @@ Kwatanta hanyar zanenka da:
 - **Zane-zanen abokan hamayya** — kwatanta da shafukan wahayi
 - **Sigogin baya** — koma zuwa hanyoyin zane na baya
 
-## Amincewa da Hanyar Zane
+## Amincewa da Hanyar Zane {#design-direction-approval}
 
 Da zarar ka gamsu da zanenka:
 
@@ -118,7 +118,7 @@ Da zarar ka gamsu da zanenka:
 4. **Tabbatar da layout** — duba tazara da daidaituwa
 5. **Amince da zane** — ci gaba zuwa samar da theme
 
-## Matakai na Gaba
+## Matakai na Gaba {#next-steps}
 
 Bayan amincewa da hanyar zanenka:
 
@@ -127,7 +127,7 @@ Bayan amincewa da hanyar zanenka:
 3. Za ka iya ƙara keɓancewa ta amfani da WordPress customizer
 4. Ci gaba zuwa [Menus na Hospitality](./hospitality-menus.md) ko wasu fasaloli
 
-## Mafi Kyawun Ayyuka
+## Mafi Kyawun Ayyuka {#best-practices}
 
 - **Gwada a kan na'urori na ainihi** — yi amfani da wayoyi da tablets na gaske idan zai yiwu
 - **Duba sauƙin karantawa** — tabbatar rubutu yana da sauƙin karantawa a duk girma
@@ -135,30 +135,30 @@ Bayan amincewa da hanyar zanenka:
 - **Yi la'akari da performance** — inganta hotuna da fonts don sauri
 - **Shirya don abun ciki** — tabbatar layout yana aiki da ainihin abun cikinka
 
-## Warware Matsaloli
+## Warware Matsaloli {#troubleshooting}
 
-### Preview Ba Ya Sabuntawa
+### Preview Ba Ya Sabuntawa {#preview-not-updating}
 
 - Sabunta shafin
 - Share cache na browser
 - Gwada browser daban
 - Duba haɗin intanet
 
-### Launuka Suna Daban
+### Launuka Suna Daban {#colors-look-different}
 
 - Duba saitunan launin monitor
 - Gwada a na'urori daban-daban
 - Tabbatar da contrast na launi da kayan aikin accessibility
 - Yi la'akari da simulators na makantar launi
 
-### Matsalolin Typography
+### Matsalolin Typography {#typography-issues}
 
 - Tabbatar fayilolin font suna lodi
 - Duba girman font a breakpoints daban-daban
 - Gwada da ainihin abun ciki
 - Yi la'akari da tsawon layi don sauƙin karantawa
 
-## Takardun da Suka Shafi Wannan
+## Takardun da Suka Shafi Wannan {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — tattara bayanan zane
 - [Menus na Hospitality](./hospitality-menus.md) — ƙirƙiri shafukan menu masu tsari

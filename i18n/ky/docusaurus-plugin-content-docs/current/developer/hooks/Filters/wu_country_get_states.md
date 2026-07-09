@@ -4,11 +4,11 @@ title: Чыпка - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Чыпка: wu_country_get_states
+# Чыпка: wu_country_get_states {#filter-wucountrygetstates}
 
 Бул өлкө үчүн штаттардын тизмесин кайтарат.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 | $country_code | `string` | Өлкө үчүн эки тамгалуу ISO коду. |
 | $current_country | `\WP_Ultimo\Country\Country` | Учурдагы класстын инстанциясы. |
 
-### Баштап
+### Баштап {#since}
 
 - 2.0.11
-### Булак
+### Булак {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) файлында 86-сапта аныкталган
 
 
-## Кайтарат
+## Кайтарат {#returns}
 Штаттардын чыпкаланган тизмеси.

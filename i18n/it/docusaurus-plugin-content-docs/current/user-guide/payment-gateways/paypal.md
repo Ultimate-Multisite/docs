@@ -3,7 +3,7 @@ title: Configurazione di PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configurazione del gateway PayPal (v2)
+# Configurazione del gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
@@ -13,13 +13,13 @@ Proprio come Stripe, PayPal è ampiamente utilizzato per i pagamenti online, sop
 
 Tieni presente che devi avere un **Account PayPal Business** per ottenere la credenziale API necessaria per questa integrazione.
 
-## Abilitare PayPal sulla tua rete
+## Abilitare PayPal sulla tua rete {#enabling-paypal-on-your-network}
 
 Per abilitare PayPal come metodo di pagamento disponibile sulla tua rete, vai alla scheda **Ultimate Multisite > Settings > Payments** e seleziona la casella accanto a PayPal.
 
 ![Abilitazione di PayPal nei gateway di pagamento attivi](/img/config/settings-payment-gateways.png)
 
-## Usare la procedura guidata di configurazione
+## Usare la procedura guidata di configurazione {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 aggiunge una procedura guidata di configurazione di PayPal alle impostazioni del gateway di pagamento. Dopo aver abilitato PayPal, usa la procedura guidata in **Ultimate Multisite > Settings > Payments** per scegliere come vuoi connettere il gateway e confermare quali credenziali sono ancora necessarie prima di salvare.
 
@@ -30,7 +30,7 @@ La procedura guidata supporta due percorsi di configurazione:
 
 Se non vedi l’opzione OAuth nella procedura guidata, completa il flusso di inserimento manuale delle credenziali qui sotto. Il gateway funziona con le stesse credenziali API PayPal Business delle precedenti versioni Ultimate Multisite 2.x.
 
-## Ottenere le credenziali API PayPal
+## Ottenere le credenziali API PayPal {#getting-the-paypal-api-credentials}
 
 Una volta che PayPal è abilitato come gateway di pagamento, dovrai compilare i campi per PayPal API **Username** , PayPal API **Password** e PayPal API **Signature**.
 

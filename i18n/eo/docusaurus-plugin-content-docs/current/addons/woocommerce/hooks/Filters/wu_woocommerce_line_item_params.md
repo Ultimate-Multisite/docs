@@ -4,11 +4,11 @@ title: Filtrilo - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtro: wu_woocommerce_line_item_params
+# Filtro: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Filtras la parametrojn uzatajn por krei la liniobjektojn en la WooCommerce Ĉaro, antaŭ ol alidirekti la klienton al la WooCommerce checkout.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Filtras la parametrojn uzatajn por krei la liniobjektojn en la WooCommerce Ĉaro
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | La Ultimate Multisite liniobjekta instanco. |
 | $wc_product | `\WC_Product` | La WooCommerce product. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) ĉe linio 662
 
 
-## Revenoj
+## Revenoj {#returns}
 La modifitaj liniobjektaj parametroj.

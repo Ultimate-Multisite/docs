@@ -3,19 +3,19 @@ title: 'Isifundo 13: Ukwandisa'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Isifundo 13: Ukukhulisa
+# Isifundo 13: Ukukhulisa {#lesson-13-scaling-up}
 
 Unenkundla esebenzayo enamakhasimende akhokhayo. Lesi sifundo sihlanganisa indlela yokukhula usuke emsebenzini omncane uye ebhizinisini elisimeme -- ukukhulisa ingqalasizinda, ukuzenzakalela kwemisebenzi, nokwandisa imali engenayo ngekhasimende ngalinye.
 
-## Lapho Sigcine Khona
+## Lapho Sigcine Khona {#where-we-left-off}
 
 I-FitSite isiyasebenza, amakhasimende ayabhalisa, futhi uqhuba imisebenzi yansuku zonke. Manje sigxila ekukhuleni.
 
-## Yazi Izinombolo Zakho
+## Yazi Izinombolo Zakho {#know-your-numbers}
 
 Ngaphambi kokukhulisa, qonda ukuthi umi kuphi:
 
-### Izilinganiso Ezibalulekile
+### Izilinganiso Ezibalulekile {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Imali engenayo yokubhalisa yanyanga zonke isiyonke
 - **Inani lamakhasimende**: Ababhalisile abasebenzayo sebebonke
@@ -24,7 +24,7 @@ Ngaphambi kokukhulisa, qonda ukuthi umi kuphi:
 - **LTV (Lifetime Value)**: Isilinganiso semali engenayo ngekhasimende ngalinye kulo lonke ubhaliso lwalo
 - **CAC (Customer Acquisition Cost)**: Izindleko ezimaphakathi zokuthola ikhasimende elilodwa
 
-### Isibonelo: I-FitSite kumakhasimende angu-50
+### Isibonelo: I-FitSite kumakhasimende angu-50 {#example-fitsite-at-50-customers}
 
 | Isilinganiso | Inani |
 |--------|-------|
@@ -36,9 +36,9 @@ Ngaphambi kokukhulisa, qonda ukuthi umi kuphi:
 
 Lezi zinombolo zikutshela ukuthi ugxile kuphi. Ukukhanselwa kuphezulu? Lungisa ukugcinwa kwamakhasimende. I-ARPU iphansi? Phusha ukuthuthukela ezinhlelweni eziphezulu. I-CAC iphezulu? Lungisa iziteshi zokuthola amakhasimende.
 
-## Ukukhulisa Ingqalasizinda
+## Ukukhulisa Ingqalasizinda {#scaling-infrastructure}
 
-### Nini Ukukhulisa
+### Nini Ukukhulisa {#when-to-scale}
 
 Khulisa i-hosting lapho:
 
@@ -47,7 +47,7 @@ Khulisa i-hosting lapho:
 - Ususondela kumasayithi asebenzayo angu-100+
 - Izikhalazo zamakhasimende ngesivinini ziyanda
 
-### Indlela Yokukhulisa
+### Indlela Yokukhulisa {#how-to-scale}
 
 - **Ukukhulisa okuqondile**: Thuthukela kuseva enkulu (i-CPU eningi, RAM eningi)
 - **Izendlalelo ze-caching**: Engeza i-Redis/Memcached ukuze kube nokugcinwa kwezinto ku-cache, kanye ne-page caching kokuqukethwe okungashintshi
@@ -55,7 +55,7 @@ Khulisa i-hosting lapho:
 - **Ukulungiselela i-database**: Njengoba inethiwekhi ikhula, imibuzo ye-database iyancipha. Lungiselela amathebula, engeza ama-index, cabanga ngeseva ye-database ezinikele.
 - **Hlukanisa izibopho**: Hambisa ukugcinwa kwemidiya ku-object storage (ehambisana ne-S3), dlulisela i-imeyili kusevisi ye-imeyili yokuthengiselana
 
-### Ukuthuthela i-Hosting
+### Ukuthuthela i-Hosting {#hosting-migration}
 
 Uma i-host yakho yamanje ingasakwazi ukukhula ngaphezu kwalokho, hlela ukuthutha:
 
@@ -65,11 +65,11 @@ Uma i-host yakho yamanje ingasakwazi ukukhula ngaphezu kwalokho, hlela ukuthutha
 4. Buyekeza i-DNS nge-TTL encane kusengaphambili
 5. Qinisekisa ukuthi konke kusebenza ngemva kokuthutha
 
-## Ukuzenzakalela Kwemisebenzi
+## Ukuzenzakalela Kwemisebenzi {#automating-operations}
 
 Njengoba ukhula, izinqubo ezenziwa ngesandla ziba izivimbamgwaqo. Zenze ngokuzenzakalela lapho ungakwazi khona:
 
-### Webhooks ne-Zapier
+### Webhooks ne-Zapier {#webhooks-and-zapier}
 
 Sebenzisa [Webhooks](/user-guide/integrations/webhooks) noma [Zapier](/user-guide/integrations/zapier) ukuze uzenzakalelise:
 
@@ -78,7 +78,7 @@ Sebenzisa [Webhooks](/user-guide/integrations/webhooks) noma [Zapier](/user-guid
 - **Ukuhluleka kokukhokha** → xwayisa kuthuluzi lakho lokuqapha
 - **Ukuthuthukela kwe-plan** → i-imeyili yokuhalalisela enomhlahlandlela wesici esisha
 
-### Ukuzenzakalela Kwe-imeyili
+### Ukuzenzakalela Kwe-imeyili {#email-automation}
 
 Suka kuma-imeyili enziwa ngesandla uye ochungechungeni oluzenzakalelayo:
 
@@ -87,30 +87,30 @@ Suka kuma-imeyili enziwa ngesandla uye ochungechungeni oluzenzakalelayo:
 - Izikhuthazo zokuthuthukela lapho amakhasimende esondela emikhawulweni ye-plan
 - Izikhumbuzi zokuvuselela kubabhalisile bonyaka
 
-### Ukuzenzakalela Kokwesekwa
+### Ukuzenzakalela Kokwesekwa {#support-automation}
 
 - **Izimpendulo ezilungiselelwe** zemibuzo evamile
 - **Izimpendulo ezizenzakalelayo** eziqinisekisa ukutholwa kwamathikithi okwesekwa
 - **Iziphakamiso zesisekelo solwazi** lapho amakhasimende ethumela amathikithi ahambisana nezindatshana ezikhona
 
-## Ukwandisa Imali Engenayo
+## Ukwandisa Imali Engenayo {#increasing-revenue}
 
 Ukukhula akusho nje amakhasimende amaningi. Kuphinde kusho imali engenayo eningi ngekhasimende ngalinye.
 
-### Ukuthengisela Amakhasimende Akhona Okuphezulu
+### Ukuthengisela Amakhasimende Akhona Okuphezulu {#upselling-existing-customers}
 
 - **Ukuthuthukela kwe-plan**: Imikhankaso eqondisiwe ebonisa izici ze-Growth/Pro kumakhasimende e-Starter
 - **Order bumps**: Khuthaza imikhiqizo eyengeziwe kumakhasimende akhona nge-imeyili
 - **Ukuguqulela konyaka**: Nikeza amakhasimende anyanga zonke isaphulelo ukuze ashintshele ekukhokhisweni konyaka
 
-### Imithombo Emisha Yemali Engenayo
+### Imithombo Emisha Yemali Engenayo {#new-revenue-streams}
 
 - **Ukusethwa okwenzelwe wena**: Khokhisa imali ephezulu ukuze usethe futhi wenze ngendlela yekhasimende isayithi lalo
 - **Izinsizakalo zokuklama ngokwezifiso**: Nikeza umsebenzi wokuklama okhethekile phezu kwethempulethi
 - **Izikhathi zokuqeqesha**: Izinkomba ezikhokhelwayo zomuntu nomuntu kumakhasimende afuna usizo olusebenzayo
 - **Ama-plugin aphezulu**: Nikeza ama-plugin akhokhelwayo akhethekile kumkhakha othile njengezengezo ezikhokhelwayo (isb., iwijethi yokubhukha ikilasi lokuzivocavoca)
 
-### Ukwenyusa Amanani
+### Ukwenyusa Amanani {#raising-prices}
 
 Njengoba inkundla yakho ivuthwa futhi yengeza inani:
 
@@ -118,7 +118,7 @@ Njengoba inkundla yakho ivuthwa futhi yengeza inani:
 - Nyusa amanani kwabazobhalisa abasha
 - Chaza izizathu zokwenyuka ngezici ezintsha nokuthuthukiswa
 
-## Ukwakha Ithimba
+## Ukwakha Ithimba {#building-a-team}
 
 Ngesinye isikhathi, awukwazi ukwenza yonke into wedwa. Ukuqasha kokuqala okuvamile:
 
@@ -128,7 +128,7 @@ Ngesinye isikhathi, awukwazi ukwenza yonke into wedwa. Ukuqasha kokuqala okuvami
 
 Awudingi abasebenzi. Osomkontileka nama-freelancer basebenza kahle ebhizinisini lenkundla.
 
-## Izinyathelo Zokukhula
+## Izinyathelo Zokukhula {#growth-milestones}
 
 | Isinyathelo | I-MRR elinganiselwa | Okugxilwe kukho |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Awudingi abasebenzi. Osomkontileka nama-freelancer basebenza kahle ebhizinisini 
 | 250-500 amakhasimende | $25,000-$50,000 | Ukwakha ithimba, imithombo emisha yemali engenayo, izici eziphezulu |
 | 500+ amakhasimende | $50,000+ | Ukuvuthwa kwenkundla, imikhakha eseduze, ukuphuma okungenzeka |
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Uhlaka lwezilinganiso** lokuqonda impilo yebhizinisi
 - **Uhlelo lokukhulisa ingqalasizinda** lokukhula usuke kumasayithi ambalwa ukuya emakhulwini

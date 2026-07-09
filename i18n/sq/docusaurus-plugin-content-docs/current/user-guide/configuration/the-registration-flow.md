@@ -3,13 +3,13 @@ title: Fluksi i Regjistrimit
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Fluksi i Regjistrimi (v2)
+# Fluksi i Regjistrimi (v2) {#the-registration-flow-v2}
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 
 Përdoruesit mund të regjistrohen në mënyra të ndryshme në rrjetin tuaj. Mund të përdorin formularin tuaj të regjistrimit ose një link të ndarshëm për një plan të përzgjedhur mprehtë. Këtu do t'ju tregojmë si klientët tuaj mund të regjistrohen në rrjetin tuaj duke përdorur rrugët e disponueshme dhe çfarë ndodh pas që ata regjistrohen në rrjetin tuaj.
 
-## Përdorimi i Formularit të Regjistrimit:
+## Përdorimi i Formularit të Regjistrimit: {#using-the-registration-form}
 
 Ky është procesi standard i regjistrimit. Ju krijoni një faqe regjistrimi me një **checkout form** dhe kjo do të jetë vendi ku klientët tuaj do të shkojnë për të regjistruar në rrjetin tuaj dhe për të abonuar në një plan. Mund të keni disa faqe regjistrimi, secila me një formular regjistrimi të ndryshëm nëse dëshironi.
 
@@ -35,13 +35,13 @@ Nëse janë regjistruar me një plan të paguar ose konfirmimi i emailit nuk ës
 
 ![Faqja e vendosur me link për të hyrë në dashboard](/img/frontend/site-activated.png)
 
-## Përdorimi i një Linku të Ndarshëm:
+## Përdorimi i një Linku të Ndarshëm: {#using-a-shareable-link}
 
 Procesi i regjistrimit duke përdorur një link të ndarshëm është themelor si forma e regjistrimit, vetëm diferenca është se duke përdorur një link të ndarshëm, klientët tuaj mund të kenë një produkt ose një model faqeje të vendosur paraprakisht në formën e pagesës (referoni seksionin Pre-selecting products and templates via URL parameters) ose ndoshta një kod kupon shtuar (referoni seksionin Using URL Parameters).
 
 Procesi i regjistrimit do të jetë i njëjtë: ata do duhet të plotësojnë emrin, emrin e përdoruesit, adresën e emailit, emrin dhe titullin e faqes së tyre, etj... por plani ose modeli i faqeje do të jetë tashmë i vendosur paraprakisht për ta.
 
-### Regjistrimi me Pagesa Manuale:
+### Regjistrimi me Pagesa Manuale: {#registering-using-manual-payments}
 
 Nëse nuk dëshironi të përdorni PayPal, Stripe ose ndonjë portal pagesash tjetër të ofruar nga Ultimate Multisite ose integrimet e tij shtesë, mund të përdorni pagesa manuale për klientët tuaj. Kështu, mund të gjeneroni një fakturë për ta që të paguajnë në procesuesin tuaj të preferuar të pagesave pasi të regjistrohen në rrjetin tuaj.
 

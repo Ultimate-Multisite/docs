@@ -3,13 +3,13 @@ title: Cùinneas de dhèanamh a' chùisgeadh
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Cona chùinneachadh fìor airson co-dhùinn a tha thu a' tuigsinn de Codeable?
+# Cona chùinneachadh fìor airson co-dhùinn a tha thu a' tuigsinn de Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Tha am cean, tha sinn a' faighinn co-dhùinn fìor airson a bhith a' tòiseachadh air a chùineamhan a tha sinn a' faicinn. Mar a tha sin a tha thu a' faicinn, rinn am fhaighinn [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), làimh le fhaighinn deiseil airson seòl-dhèanamh (Ultimate Multisite) a tha a' tuigsinn.
 
 Tha [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) air a bhith na platform a tha a' tòiseachadh a chùinneamh-dheargaisine (WordPress) le deiseil freahdhaidh, a tha a' tuigsinn gu fìor airson projakta de uile cridhe. Tha iad le ceannas a tha a' tuigsinn air a bhith a' tòiseachadh air a chùinneamh-dheargaisine (WordPress) le deiseil freahdhaidh, a tha a' tuigsinn gu fìor airson projakta de uile cridhe. Tha iad le ceannas a tha a' tuigsinn air a bhith a' tòiseachadh air a chùinneamh-dheargaisine (WordPress) le deiseil freahdhaidh, a tha a' tuigsinn gu fìor airson projakta de uile cridhe. Tha iad le ceannas a tha a' tuigsinn air a bhith a' tòiseachadh air a chùinneamh-dheargaisine (WordPress) le deiseil freahdhaidh, a tha a' tuigsinn gu fìor airson projakta de uile cridhe.
 
-### Cona a thabhair thu seòl-dhèanamh (project) mar Codeable?
+### Cona a thabhair thu seòl-dhèanamh (project) mar Codeable? {#how-to-create-a-project-in-codeable}
 
 Prìomhach, rinn air [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) agus coileadh air **Start a Project** (Thoir an Projéct).
 

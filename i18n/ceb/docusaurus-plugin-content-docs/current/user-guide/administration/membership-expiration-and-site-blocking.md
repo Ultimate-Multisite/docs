@@ -3,11 +3,11 @@ title: Pagkaputol sa Miyembro ug Pag-block sa Sitio
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Pagkaputol sa Membership ug Site Blocking
+# Pagkaputol sa Membership ug Site Blocking {#membership-expiration-and-site-blocking}
 
 Kini nga guide naghatag og katin-awan kung unsaon pag-handle sa Ultimate Multisite sa pag-expire sa membership, katapusan sa trial, ug frontend site blocking. Gipatin-aw ni kini ang tibuok siklo sa usa ka membership gikan sa aktibo ngadto sa expired, ang mga setting nga nagkontrol kung ang mga site ma-block ba, ug unsaon pag-check kung ang mga site magpabilin nga accessible bisan pa sa pag-expire sa membership.
 
-## Siklo sa Status sa Membership
+## Siklo sa Status sa Membership {#membership-status-lifecycle}
 
 Ang matag membership sa Ultimate Multisite adunay usa sa mosunod nga status:
 
@@ -24,7 +24,7 @@ Ang mga Free memberships dili awtomatikong ma-expire. Ang Ultimate Multisite nag
 | **Expired** | Na-pass na ang grace period nga 3 ka adlaw nga walay renewal |
 | **Cancelled** | Gisaysay gihapon sa customer o admin |
 
-### Unsaon Paglihok sa Membership ngadto sa Expired
+### Unsaon Paglihok sa Membership ngadto sa Expired {#how-memberships-transition-to-expired}
 
 Ang Ultimate Multisite nagpadagan og background check **matag oras** nga nangita og mga membership nga kinahanglan i-marka isip expired. Kini nga check naggamit sa [Action Scheduler](https://actionscheduler.org/) (dili direkta ang WP-Cron) ug nagpadagan isip `wu_membership_check` scheduled action.
 
@@ -34,7 +34,7 @@ Ang expiration check adunay **built-in grace period nga 3 ka adlaw** sa default.
 Ang 3-araw nga grace period sa pag-expire kay lahi gikan sa setting sa Frontend Block Grace Period nga gihulagway sa ubos. Ang expiration grace period nagkontrol kung kanus-a **mag-usab ang status** gikan sa active/on-hold ngadto sa expired. Ang frontend block grace period nagkontrol kung kanus-a **ma-block ang site** human na mag-usab ang status.
 :::
 
-#### Auto-Renewing vs. Non-Auto-Renewing Memberships
+#### Auto-Renewing vs. Non-Auto-Renewing Memberships {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Importante kaayo ni para masabtan kung unsa ang pamaagi sa pag-expire:
 
@@ -42,7 +42,7 @@ Importante kaayo ni para masabtan kung unsa ang pamaagi sa pag-expire:
 
 - **Auto-renewing memberships** (`auto_renew = true`): Ang cron expiration check **maglikay niini bisan asa**. Gilauman nga ang payment gateway (Stripe, PayPal, etc.) maoy magpahibalo sa Ultimate Multisite pinaagi sa webhooks kung mapakyas o kanselado ang subscription. Kung wala madawat ang webhook -- tungod sa sayop nga endpoint, outage sa gateway, o kanselado ang subscription gawas sa sistema -- ang membership mahimong magpabilin nga `active` hangtod sa walay katapusan bisan na molapas na ang petsa sa pag-expire.
 
-### Unsaon Pagtapos sa Trials
+### Unsaon Pagtapos sa Trials {#how-trials-end}
 
 Kung matapos ang trial period sa usa ka trialing membership, ang sistema:
 
@@ -52,11 +52,11 @@ Kung matapos ang trial period sa usa ka trialing membership, ang sistema:
 
 Kini nga proseso molihok sa parehas nga hourly schedule sama sa regular expiration check, apan **para lang sa non-auto-renewing memberships**. Para sa auto-renewing trials, ang payment gateway maoy magmaneho sa pagtandi gikan sa trial ngadto sa paid subscription.
 
-## Block Frontend Access
+## Block Frontend Access {#block-frontend-access}
 
 Sa default, kung mag-expire o mag-hold ang membership, **ang wp-admin dashboard lang ang ma-restrict**. Ang public frontend sa site nagpabilin nga accessible sa mga bisita. Aron usab i-block ang access sa publiko, kinahanglan nimo i-enable ang setting nga **Block Frontend Access**.
 
-### Pag-configure sa Setting
+### Pag-configure sa Setting {#configuring-the-setting}
 
 Punta sa **Ultimate Multisite > Settings > Memberships** ug i-enable ang **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Tulo ka related setting ang nagkontrol niining pamaagi sa paglihok:
 | **Frontend Block Grace Period** | Kinahanglanon nga adlaw nga paghulat human mawala ang membership before blocking. I-set kini sa `0` para i-block dayon. | 0 |
 | **Frontend Block Page** | Usa ka page sa main site kung asa mag-redirect sa mga bisita kung ma-block ang usa ka site. Kung wala set, makakita ang mga bisita og generic nga mensahe nga "Site not available" uban ang link padulong sa login page para sa site admin. | None |
 
-### Unsa ang Makita sa mga Bisita Kung Ma-block ang Usa ka Site
+### Unsa ang Makita sa mga Bisita Kung Ma-block ang Usa ka Site {#what-visitors-see-when-a-site-is-blocked}
 
 Kung ma-block ang frontend access, ang mga bisita sa site mahimong:
 
@@ -83,7 +83,7 @@ Kung ma-block ang frontend access, ang mga bisita sa site mahimong:
 
 Ang mga site admin mahimong mag-login gihapon -- ang login page dili gayud ma-block.
 
-### Unsa ang Ma-block ug Kanus-a
+### Unsa ang Ma-block ug Kanus-a {#what-gets-blocked-and-when}
 
 Ang pamaagi sa pag-block nagdepende sa status sa membership:
 
@@ -104,21 +104,21 @@ Bisan pa nga tapos na ang trial period, ang usa ka membership nga naa sa status 
 Ang mga cancelled memberships kay kanunay ma-blocka paghuman moabot na ang expiration date, bisan unsa pa kung gi-enable ba ang Block Frontend Access. Ang Grace Period sa Frontend Block dili magamit para sa mga cancelled membership.
 :::
 
-## Troubleshooting: Mga Site nga Magpabilin nga Accessible Human Moabot sa Expiration
+## Troubleshooting: Mga Site nga Magpabilin nga Accessible Human Moabot sa Expiration {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Kung ang mga site nagpabilin nga public access human moabot sa expiration sa membership, sundon kini nga mga pagsusi sa sunod nga pagkahanap:
 
-### 1. Siguraduhon nga Ang Setting sa Block Frontend Access Kay On
+### 1. Siguraduhon nga Ang Setting sa Block Frontend Access Kay On {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Punta sa **Ultimate Multisite > Settings > Memberships** ug kumpirmaha nga ang toggle para sa **Block Frontend Access** kay on. Kini nga setting kay **off by default**, nga nagpasabot nga ang `wp-admin` ra ang gipugngan kung maglikli na ang membership.
 
-### 2. Siguroha ang Grace Period sa Frontend Block
+### 2. Siguroha ang Grace Period sa Frontend Block {#2-check-the-frontend-block-grace-period}
 
 Sa parehong settings page, i-check ang value sa **Frontend Block Grace Period**. Kung ito ay naka-set sa 7 kaadlawan, pananglitan, dili ma-block ang frontend hangtod 7 ka adlaw human sa petsa nga expired ang membership -- bisan pa kung ang status sa membership kay `expired` na.
 
 I-set kini sa `0` kung gusto nimo dayon i-block paghuman nga mawala ang aktibo ang membership.
 
-### 3. Siguraduhon nga Nagbag-o gyud ang Membership Status
+### 3. Siguraduhon nga Nagbag-o gyud ang Membership Status {#3-confirm-the-membership-status-has-actually-changed}
 
 Punta sa **Ultimate Multisite > Memberships** ug i-check ang status sa apektadong membership. Kung nagpakita pa kini og `active` bisan pa nga na-pass na ang petsa sa pag-expire, wala pa motungod ang pagbag-o sa status. Mga kasagaran nga hinungdan:
 
@@ -126,7 +126,7 @@ Punta sa **Ultimate Multisite > Memberships** ug i-check ang status sa apektadon
 
 - **Ang cron job wala pa mo-run**: Tan-awa ang sunod nga lakang.
 
-### 4. Siguraduhon nga Nag-run ang Action Scheduler
+### 4. Siguraduhon nga Nag-run ang Action Scheduler {#4-verify-action-scheduler-is-running}
 
 Ang Ultimate Multisite naggamit og Action Scheduler para sa iyang mga cron jobs. Punta sa **Tools > Scheduled Actions** sa network admin ug pangitaa kini:
 
@@ -148,7 +148,7 @@ Aron masiguro nga ma-execute ang cron sa tarong, mag-set up og system cron job:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Siguroha kung naa ba problema sa Gateway Webhook (Auto-Renewing Memberships)
+### 5. Siguroha kung naa ba problema sa Gateway Webhook (Auto-Renewing Memberships) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Kung ang membership kay auto-renew ug ang gateway subscription na gikapoy o napakyas, pero ang Ultimate Multisite nagpakita pa nga `active`:
 
@@ -157,7 +157,7 @@ Kung ang membership kay auto-renew ug ang gateway subscription na gikapoy o napa
 
 Kung ang gateway nagpakita nga gikapoy ang subscription pero wala kini ipakita sa Ultimate Multisite, nasayod nga nawala ang webhook notification. Mahimo nimo manual nga usbon ang membership status sa **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Siguroha ang Expiration Grace Period (Cron Level)
+### 6. Siguroha ang Expiration Grace Period (Cron Level) {#6-check-the-expiration-grace-period-cron-level}
 
 Ang cron check adunay kaugaling nga grace period (default: 3 ka adlaw) sa dili pa kini i-marka nga expired ang usa ka membership. Kini lahi sa frontend block grace period. Ang kinatibuk-ang oras sa dili pa ma-block ang site mahimong:
 
@@ -165,7 +165,7 @@ Ang cron check adunay kaugaling nga grace period (default: 3 ka adlaw) sa dili p
 
 Pananglitan, kung ang default settings ug usa ka 7-ka-adlaw nga grace period sa frontend, mahimong mag-abot og hangtod 10 ka adlaw human sa `date_expiration` pa dili gyud ma-block ang site.
 
-### 7. Manwal nga I-expire ang Membership
+### 7. Manwal nga I-expire ang Membership {#7-manually-expire-a-membership}
 
 Kung kinahanglan nimo dayon i-block ang usa ka site nga wala naghulat sa cron cycle, pwede nimo manwal nga usbon ang status sa membership:
 
@@ -176,7 +176,7 @@ Kung kinahanglan nimo dayon i-block ang usa ka site nga wala naghulat sa cron cy
 
 Ang frontend block molihok sa sunod nga pag-load sa pahina (depende sa Frontend Block Grace Period para sa mga expired membership, o dayon kung cancelled).
 
-## Summary
+## Summary {#summary}
 
 Ang tibuok timeline gikan sa petsa sa pag-expire ngadto sa pag-block sa site:
 
@@ -208,7 +208,7 @@ Para sa mga cancelled memberships, mas mubo ang dalan:
   Ang frontend sa site ma-block dayon
 ```
 
-## Developer Reference
+## Developer Reference {#developer-reference}
 
 Kining mga hook ug filter nagtugot kanimo sa pag-customize sa pamaagi sa expiration ug blocking:
 

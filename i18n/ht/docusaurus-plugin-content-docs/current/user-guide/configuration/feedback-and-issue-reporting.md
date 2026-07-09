@@ -3,11 +3,11 @@ title: Retours Kliyan ak Rapò Masseur
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Rapor Faisant Feedback Kliyan & Rapò Pwoblèm
+# Rapor Faisant Feedback Kliyan & Rapò Pwoblèm {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 bay yon sistèm rapòman ak geri (feedback) ki vini avèk li, ki pèmèt itilizatè yo fè endikasyon sou repons ki pa ede epi rapò pwoblèm dirèkteman nan entèfas chat la. Sistèm sa a gen ladan jere konsantman (consent management), yon komand rapò otomatik, ak triaj asisté pa AI nan backend la.
 
-## Bouton Thumbs-Down (Ba)
+## Bouton Thumbs-Down (Ba) {#thumbs-down-button}
 
 Chak mesaj ki soti nan asistan AI a montre yon bouton **thumbs-down** (👎). Lè yon itilizatè klike sou li, yo ka marre repons an kòm pa ede oswa sa ki pa bon.
 
@@ -15,7 +15,7 @@ Chak mesaj ki soti nan asistan AI a montre yon bouton **thumbs-down** (👎). L�
 - Klike sou li louvri **Feedback Consent Modal** la.
 - Feedback la asosye ak fil konvèsasyon an epi ak mesaj espesifik la.
 
-## Feedback Consent Modal (Fenèt Konsantman Feedback)
+## Feedback Consent Modal (Fenèt Konsantman Feedback) {#feedback-consent-modal}
 
 Lè yon itilizatè klike sou bouton thumbs-down, yon modal konsantman ap parèt anvan nenpòt done pa voye. Modal la:
 
@@ -26,13 +26,13 @@ Lè yon itilizatè klike sou bouton thumbs-down, yon modal konsantman ap parèt 
 
 Pa gen okenn feedback ki mete anrejistre jiskaske itilizatè a konfime eksplisite.
 
-## Auto-Prompt Feedback Banner (Bannè Prompt Feedback Otomatik)
+## Auto-Prompt Feedback Banner (Bannè Prompt Feedback Otomatik) {#auto-prompt-feedback-banner}
 
 Nan fen yon konvèsasyon, asistan an ka montre yon **auto-prompt feedback banner** — yon mesaj ki pa fè moun mal k ap mande si sesyon an te ede.
 
 Bannè sa a parèt otomatikman baze sou longè konvèsasyon ak rezilta yo. Li konekte ak menm flwa feedback tankou bouton thumbs-down la. Itilizatè yo ka retire bannè a san pa bay okenn geri.
 
-## /report-issue Slash Command (Komand Slash Rapò Pwoblèm)
+## /report-issue Slash Command (Komand Slash Rapò Pwoblèm) {#report-issue-slash-command}
 
 Itilizatè yo ka aktive flwa feedback la dirèkteman lè yo tape `/report-issue` nan entèfas chat la. Komand sa a:
 
@@ -42,7 +42,7 @@ Itilizatè yo ka aktive flwa feedback la dirèkteman lè yo tape `/report-issue`
 
 Kòmande `/report-issue` disponib nan tout mod chat (inline, floating widget, full-screen).
 
-## AI-Assisted Triage (Triaj ede pa AI)
+## AI-Assisted Triage (Triaj ede pa AI) {#ai-assisted-triage}
 
 Fidbak ki te soumèt ale yon kote triaj AI ki:
 

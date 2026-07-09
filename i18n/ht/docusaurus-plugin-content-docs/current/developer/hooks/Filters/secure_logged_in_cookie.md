@@ -4,11 +4,11 @@ title: Filtè - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtè: secure_logged_in_cookie
+# Filtè: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtre si cookie konekte a dwe voye sèlman sou HTTPS.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Non | Tip | Deskripsyon |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtre si cookie konekte a dwe voye sèlman sou HTTPS.
 | $user_id | `int` | ID itilizatè. |
 | $secure | `bool` | Si cookie auth la dwe voye sèlman sou HTTPS. |
 
-### Depi
+### Depi {#since}
 
 - 3.1.0
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) nan liy 91

@@ -3,15 +3,15 @@ title: Patunayan ang Kontrast ng Paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# I-validate ang Contrast ng Palette
+# I-validate ang Contrast ng Palette {#validate-palette-contrast}
 
 Sinusuri ng kakayahang **Validate Palette Contrast** ang mga pares ng kulay sa iyong design palette para sa pagsunod sa WCAG (Web Content Accessibility Guidelines) bago ilapat ang mga ito sa iyong theme.
 
-## Pangkalahatang-ideya
+## Pangkalahatang-ideya {#overview}
 
 Tinitiyak ng kakayahang ito na natutugunan ng color scheme ng iyong site ang mga pamantayan sa accessibility sa pamamagitan ng pag-validate ng mga contrast ratio sa pagitan ng mga kulay ng teksto at background. Nakakatulong ito na maiwasan ang mga kombinasyon ng kulay na maaaring mahirap basahin para sa mga user na may kapansanan sa paningin.
 
-## Format ng Input
+## Format ng Input {#input-format}
 
 Tumatanggap ang kakayahan ng color palette bilang input:
 
@@ -35,7 +35,7 @@ Tumatanggap ang kakayahan ng color palette bilang input:
 }
 ```
 
-### Mga Parameter
+### Mga Parameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Tumatanggap ang kakayahan ng color palette bilang input:
 | `wcag_level` | string | No | Antas ng pagsunod sa WCAG: "A", "AA" (default), o "AAA" |
 | `pairs_to_check` | array | No | Mga partikular na pares ng kulay na iva-validate (hal., `["primary-text", "background-text"]`) |
 
-## Mga Antas ng WCAG na Sinusuri
+## Mga Antas ng WCAG na Sinusuri {#wcag-levels-checked}
 
 Ine-validate ng kakayahan ang mga contrast ratio ayon sa mga pamantayan ng WCAG:
 
@@ -56,7 +56,7 @@ Ine-validate ng kakayahan ang mga contrast ratio ayon sa mga pamantayan ng WCAG:
 - **Karaniwang Teksto** — tekstong mas maliit sa 18pt (o 14pt na bold)
 - **Malaking Teksto** — tekstong 18pt o mas malaki (o 14pt na bold o mas malaki)
 
-## Schema ng Output
+## Schema ng Output {#output-schema}
 
 Nagbabalik ang kakayahan ng detalyadong ulat ng validation:
 
@@ -95,7 +95,7 @@ Nagbabalik ang kakayahan ng detalyadong ulat ng validation:
 }
 ```
 
-### Mga Field ng Output
+### Mga Field ng Output {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Nagbabalik ang kakayahan ng detalyadong ulat ng validation:
 | `status` | string | "pass" o "fail" para sa bawat pares |
 | `recommendations` | array | Mga mungkahi para mapabuti ang mga pares na bumabagsak |
 
-## Halimbawa ng Paggamit
+## Halimbawa ng Paggamit {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Ine-validate ng kakayahan ang lahat ng kombinasyon ng kulay at nagbabalik ng:
 - ✅ Background + Teksto: 12.1:1 ratio (pumapasa sa WCAG AAA)
 - Kabuuan: Sumusunod sa WCAG AA
 
-## Integrasyon sa Theme Builder
+## Integrasyon sa Theme Builder {#integration-with-theme-builder}
 
 Kapag ginagamit ang pagpili ng design-direction ng Theme Builder, ang kakayahang Validate Palette Contrast ay:
 
@@ -129,7 +129,7 @@ Kapag ginagamit ang pagpili ng design-direction ng Theme Builder, ang kakayahang
 4. Nagbibigay ng mga rekomendasyon para sa mga pares na hindi sumusunod
 5. Pinipigilan ang paglalapat ng mga color scheme na hindi accessible
 
-## Pinakamahuhusay na Kasanayan
+## Pinakamahuhusay na Kasanayan {#best-practices}
 
 - **Magsimula sa antas na AA** — Ang WCAG AA ang pamantayan para sa karamihan ng mga website
 - **Subukan bago ilapat** — i-validate ang iyong palette bago mag-commit sa isang design
@@ -137,7 +137,7 @@ Kapag ginagamit ang pagpili ng design-direction ng Theme Builder, ang kakayahang
 - **Isaalang-alang ang mga kagustuhan ng user** — maaaring may karagdagang sensitivity sa kulay ang ilang user
 - **Gumamit ng mga contrast checker** — pagsamahin ang kakayahang ito sa mga browser tool para sa beripikasyon
 
-## Mga Pares na Bumabagsak at Mga Rekomendasyon
+## Mga Pares na Bumabagsak at Mga Rekomendasyon {#failing-pairs-and-recommendations}
 
 Kung bumagsak sa validation ang isang pares ng kulay, nagbibigay ang kakayahan ng mga rekomendasyon:
 
@@ -155,7 +155,7 @@ Kung bumagsak sa validation ang isang pares ng kulay, nagbibigay ang kakayahan n
 }
 ```
 
-## Mga Kaugnay na Kakayahan
+## Mga Kaugnay na Kakayahan {#related-abilities}
 
 - [Bumuo ng Logo SVG](./generate-logo-svg.md) — gumawa ng mga logo gamit ang iyong na-validate na color palette
 - [Gumawa ng Menu](./create-menu.md) — bumuo ng nabigasyon gamit ang mga accessible na kulay

@@ -3,17 +3,17 @@ title: Mga Tool at Pagsasaayos
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Mga Tool at Configuration
+# Mga Tool at Configuration {#tools-and-configuration}
 
 Gumagamit ang Theme Builder ng hanay ng mga tool upang suriin, idisenyo, at buuin ang iyong WordPress site. Sa bersyon 1.16.0, **sd-ai-agent/site-scrape ay isa na ngayong Tier 1 tool**, kaya available ito bilang default sa Theme Builder. Ipinapakilala rin ng Superdav AI Agent v1.18.0 ang hiwalay na ipinapamahaging Advanced companion package para sa mga pinagkakatiwalaang developer workflow; ang mga tool na iyon ay hindi bahagi ng WordPress.org core package at dapat i-install at pahintulutan nang hiwalay.
 
-## Mga Available na Tool
+## Mga Available na Tool {#available-tools}
 
-### Tier 1 Tools (Palaging Available)
+### Tier 1 Tools (Palaging Available) {#tier-1-tools-always-available}
 
 Available bilang default ang Tier 1 tools sa Theme Builder nang walang anumang karagdagang configuration.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Layunin:** Suriin ang mga umiiral na website upang kumuha ng inspirasyon sa disenyo, estruktura ng nilalaman, at functionality.
 
@@ -51,11 +51,11 @@ Suriin ang disenyo ng example.com at gamitin ito bilang inspirasyon para sa akin
 - Maaaring limitado ang pagsusuri sa mga site na mabigat sa JavaScript
 - Maaaring mas matagal suriin ang malalaking site
 
-### Tier 2 Tools (Opsyonal)
+### Tier 2 Tools (Opsyonal) {#tier-2-tools-optional}
 
 Available ang Tier 2 tools kapag tahasang naka-enable sa mga setting ng Theme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
 Nagbibigay ng detalyadong mga sukatan ng performance:
 
@@ -65,7 +65,7 @@ Nagbibigay ng detalyadong mga sukatan ng performance:
 - Accessibility score
 - Best practices score
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
 Sinusuri at nagmumungkahi ng mga pagpapabuti para sa:
 
@@ -75,11 +75,11 @@ Sinusuri at nagmumungkahi ng mga pagpapabuti para sa:
 - Estruktura ng nilalaman
 - Paglalagay ng call-to-action
 
-### Tier 3 Tools (Premium)
+### Tier 3 Tools (Premium) {#tier-3-tools-premium}
 
 Nangangailangan ang Tier 3 tools ng karagdagang configuration o premium features.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Gumagawa ng nilalaman para sa:
 
@@ -89,7 +89,7 @@ Gumagawa ng nilalaman para sa:
 - Mga meta description
 - Call-to-action copy
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
 Nagbibigay ng advanced na kakayahan sa disenyo:
 
@@ -99,7 +99,7 @@ Nagbibigay ng advanced na kakayahan sa disenyo:
 - Advanced na teorya ng kulay
 - Typography optimization
 
-### Advanced Companion Tools (Hiwalay na Package)
+### Advanced Companion Tools (Hiwalay na Package) {#advanced-companion-tools-separate-package}
 
 Ang Advanced companion package ay ipinapamahagi nang hiwalay mula sa core na release ng Superdav AI Agent. Ito ay inilaan para sa mga pinagkakatiwalaang kapaligiran ng developer at may-ari ng site kung saan tahasang pinapayagan ng mga administrator ang agent na gumamit ng tooling na may malaking epekto.
 
@@ -116,9 +116,9 @@ Maaaring kabilang sa mga kakayahan ng Advanced companion ang:
 
 Huwag idokumento ang mga ito bilang pangkalahatang available na Theme Builder tools para sa bawat installation. Available lamang ang mga ito kapag naka-install, naka-enable, at nakalimit sa mga pinagkakatiwalaang administrator ang Advanced companion package.
 
-## Configuration ng Tool
+## Configuration ng Tool {#tool-configuration}
 
-### Pag-enable ng Tools
+### Pag-enable ng Tools {#enabling-tools}
 
 Upang i-enable ang karagdagang tools sa Theme Builder:
 
@@ -127,7 +127,7 @@ Upang i-enable ang karagdagang tools sa Theme Builder:
 3. I-toggle ang tools on/off ayon sa kailangan
 4. I-save ang settings
 
-### Mga Pahintulot ng Tool
+### Mga Pahintulot ng Tool {#tool-permissions}
 
 Nangangailangan ng mga pahintulot ang ilang tool:
 
@@ -137,7 +137,7 @@ Nangangailangan ng mga pahintulot ang ilang tool:
 - **Advanced features** — maaaring mangailangan ng premium subscription
 - **Advanced companion tools** — nangangailangan ng hiwalay na ipinapamahaging Advanced package at tahasang tiwala ng administrator
 
-### API Keys at Credentials
+### API Keys at Credentials {#api-keys-and-credentials}
 
 I-configure ang API keys para sa mga tool na nangangailangan nito:
 
@@ -146,13 +146,13 @@ I-configure ang API keys para sa mga tool na nangangailangan nito:
 3. Subukan ang connection
 4. I-save nang secure
 
-### Pag-install ng Advanced Companion Package
+### Pag-install ng Advanced Companion Package {#installing-the-advanced-companion-package}
 
 Ang Advanced companion package ay nire-release nang hiwalay mula sa WordPress.org core ZIP. I-install lamang ito mula sa opisyal na distribution channel ng proyekto para sa release, pagkatapos ay limitahan ang access sa mga pinagkakatiwalaang administrator. Repasuhin ang mga human approval gate at pag-uugali ng git snapshot bago i-enable ang filesystem, database, WP-CLI, REST dispatcher, plugin builder, user-management, o benchmark tools sa isang production site.
 
-## Paggamit ng sd-ai-agent/site-scrape
+## Paggamit ng sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Pangunahing Paggamit
+### Pangunahing Paggamit {#basic-usage}
 
 Hilingin sa Theme Builder na suriin ang isang website:
 
@@ -161,7 +161,7 @@ Suriin ang disenyo ng site ng aking competitor sa competitor.com
 at magmungkahi ng mga pagpapabuti sa disenyo para sa aking site.
 ```
 
-### Tiyak na Pagsusuri
+### Tiyak na Pagsusuri {#specific-analysis}
 
 Humiling ng mga tiyak na uri ng pagsusuri:
 
@@ -179,7 +179,7 @@ Suriin ang mobile responsiveness ng example.com at tiyaking ang aking site
 ay parehong responsive.
 ```
 
-### Paghahambing na Pagsusuri
+### Paghahambing na Pagsusuri {#comparison-analysis}
 
 Ihambing ang maraming site:
 
@@ -188,22 +188,22 @@ Ihambing ang mga disenyo ng site1.com at site2.com at gumawa ng disenyo
 na pinagsasama ang pinakamahuhusay na elemento ng pareho.
 ```
 
-## Mga Limitasyon at Pagsasaalang-alang ng Tool
+## Mga Limitasyon at Pagsasaalang-alang ng Tool {#tool-limitations-and-considerations}
 
-### Rate Limiting
+### Rate Limiting {#rate-limiting}
 
 - Ang pag-scrape ay nililimitahan ang rate upang maiwasan ang sobrang karga sa server
 - Maaaring i-throttle ang maraming request sa parehong site
 - Maaaring mas matagal suriin ang malalaking site
 
-### Katumpakan ng Nilalaman
+### Katumpakan ng Nilalaman {#content-accuracy}
 
 - Maaaring hindi ganap na makuha ang dynamic na nilalaman
 - Maaaring hindi kumpleto ang nilalamang ni-render ng JavaScript
 - Maaaring hindi maipakita ang real-time na data
 - Maaaring nasa likod ng mga paywall ang ilang nilalaman
 
-### Mga Legal at Etikal na Pagsasaalang-alang
+### Mga Legal at Etikal na Pagsasaalang-alang {#legal-and-ethical-considerations}
 
 - Igalang ang robots.txt at mga patakaran ng site
 - Huwag mag-scrape ng copyrighted na nilalaman para sa reproduksiyon
@@ -211,16 +211,16 @@ na pinagsasama ang pinakamahuhusay na elemento ng pareho.
 - Tiyaking may karapatan kang gamitin ang nakuha na nilalaman
 - Sundin ang mga tuntunin ng serbisyo ng mga site na sinuri
 
-### Epekto sa Performance
+### Epekto sa Performance {#performance-impact}
 
 - Maaaring tumagal ang pag-scrape ng malalaking site
 - Maaaring mas mabagal ang maraming sabay-sabay na pag-scrape
 - Nakaaapekto ang koneksiyon sa network sa bilis
 - Maaaring mangailangan ng mas maraming pagpoproseso ang malalaking dataset
 
-## Pinakamahuhusay na Kasanayan
+## Pinakamahuhusay na Kasanayan {#best-practices}
 
-### Paggamit ng Pagsusuri ng Site
+### Paggamit ng Pagsusuri ng Site {#using-site-analysis}
 
 1. **Suriin ang maraming site** — kumuha ng inspirasyon mula sa ilang pinagmulan
 2. **Magtuon sa estruktura** — alamin ang mga pattern ng layout at organisasyon
@@ -228,7 +228,7 @@ na pinagsasama ang pinakamahuhusay na elemento ng pareho.
 4. **Pag-aralan ang typography** — tukuyin ang mga kombinasyon ng font na gusto mo
 5. **Suriin ang navigation** — unawain ang organisasyon ng menu
 
-### Etikal na Pag-scrape
+### Etikal na Pag-scrape {#ethical-scraping}
 
 1. **Igalang ang robots.txt** — sundin ang mga alituntunin ng site
 2. **Huwag kopyahin ang nilalaman** — gamitin ang pagsusuri para sa inspirasyon lamang
@@ -236,7 +236,7 @@ na pinagsasama ang pinakamahuhusay na elemento ng pareho.
 4. **Banggitin ang mga pinagmulan** — bigyan ng kredito ang mga pinagmulan ng inspirasyon
 5. **Sundin ang mga tuntunin** — sumunod sa mga tuntunin ng serbisyo ng site
 
-### Pagpapataas ng Bisa ng Tool
+### Pagpapataas ng Bisa ng Tool {#maximizing-tool-effectiveness}
 
 1. **Maging tiyak** — humiling ng mga partikular na uri ng pagsusuri
 2. **Magbigay ng konteksto** — ipaliwanag ang layunin ng iyong site
@@ -244,9 +244,9 @@ na pinagsasama ang pinakamahuhusay na elemento ng pareho.
 4. **Ulitin at pagbutihin** — pinuhin batay sa mga resulta
 5. **Pagsamahin ang mga tool** — gumamit ng maraming tool para sa komprehensibong pagsusuri
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
-### Hindi Ma-scrape ang Site
+### Hindi Ma-scrape ang Site {#site-wont-scrape}
 
 - Suriin kung pampublikong naa-access ang site
 - Tiyaking pinapayagan ng robots.txt ang pag-scrape
@@ -254,7 +254,7 @@ na pinagsasama ang pinakamahuhusay na elemento ng pareho.
 - Suriin ang koneksiyon sa internet
 - Makipag-ugnayan sa suporta kung magpapatuloy ang isyu
 
-### Hindi Kumpletong Pagsusuri
+### Hindi Kumpletong Pagsusuri {#incomplete-analysis}
 
 - Maaaring may dynamic na nilalaman ang site
 - Maaaring hindi ganap na na-render ang JavaScript
@@ -262,7 +262,7 @@ na pinagsasama ang pinakamahuhusay na elemento ng pareho.
 - Subukang suriin na lang ang mga partikular na pahina
 - Humiling ng mga partikular na uri ng pagsusuri
 
-### Mabagal na Performance
+### Mabagal na Performance {#slow-performance}
 
 - Mas matagal suriin ang malalaking site
 - Mas mabagal ang maraming sabay-sabay na pag-scrape
@@ -270,7 +270,7 @@ na pinagsasama ang pinakamahuhusay na elemento ng pareho.
 - Subukan sa mga oras na hindi peak
 - Suriin muna ang mas maliliit na seksiyon
 
-## Kaugnay na Dokumentasyon
+## Kaugnay na Dokumentasyon {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — mangalap ng impormasyon sa disenyo
 - [Direksiyon ng Disenyo](./design-direction.md) — pinuhin ang iyong disenyo

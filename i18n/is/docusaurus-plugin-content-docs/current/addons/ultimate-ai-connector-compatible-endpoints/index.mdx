@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector fyrir samhæfa endapunkta
+# Ultimate AI Connector fyrir samhæfa endapunkta {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector fyrir samhæfa endapunkta samþættir OpenAI-samhæfð API AI-þjónustuveitna við WordPress multisite-netið þitt. Stilltu margar AI-þjónustuveitur — hverja með sína eigin URL endapunkts, API-lykil og sjálfgefið líkan — og beindu beiðnum með sjálfvirkri varaleið þegar þjónustuveita er ekki tiltæk.
 
-## Helstu eiginleikar
+## Helstu eiginleikar {#key-features}
 
 - **Stuðningur við margar þjónustuveitur**: Bættu við mörgum kortum fyrir AI-þjónustuveitur, hverju með sína eigin URL endapunkts, API-lykil og sjálfgefið líkan
 - **Draga til að endurraða**: Raðaðu þjónustuveitum eftir forgangi með griphandfanginu á hverju korti; beiðnir nota þjónustuveitur í röð
@@ -21,26 +21,26 @@ Ultimate AI Connector fyrir samhæfa endapunkta samþættir OpenAI-samhæfð API
 - **Sjálfvirk útvíkkun við viðbót**: Ný kort þjónustuveitna víkka sjálfkrafa út svo þú getir fyllt inn upplýsingarnar strax
 - **Hjáhlaup á skyndiminni skrifta**: Skriftur þjónustuveitna fá hjáhlaup á skyndiminni við uppfærslu á viðbót til að tryggja að nýjasta útgáfan hlaðist
 
-## Kröfur
+## Kröfur {#requirements}
 
 - WordPress 5.3 eða nýrra
 - PHP 7.4 eða nýrra
 - Ultimate Multisite plugin (virk)
 - OpenAI-samhæfður API-endapunktur (sjálfhýstur eða frá þriðja aðila)
 
-## Uppsetning
+## Uppsetning {#installation}
 
 1. Hladdu upp skrám viðbótarinnar í `/wp-content/plugins/` möppuna þína
 2. Virkjaðu viðbótina í gegnum valmyndina „Viðbætur“ í WordPress
 3. Farðu í **Ultimate Multisite → AI Connector** til að stilla viðbótina
 
-## Stillingar
+## Stillingar {#configuration}
 
-### Uppsetning margra þjónustuveitna
+### Uppsetning margra þjónustuveitna {#multi-provider-setup}
 
 Stillingaskjárinn notar kortabundið útlit þar sem hvert kort táknar eina AI-þjónustuveitu. Þú getur bætt við eins mörgum þjónustuveitum og þú þarft.
 
-#### Bæta við þjónustuveitu
+#### Bæta við þjónustuveitu {#adding-a-provider}
 
 1. Farðu í **Ultimate Multisite → AI Connector** í netstjórnuninni
 2. Smelltu á **Bæta við þjónustuveitu**
@@ -52,15 +52,15 @@ Stillingaskjárinn notar kortabundið útlit þar sem hvert kort táknar eina AI
    - **Sjálfgefið líkan** — auðkenni líkansins sem á að nota sjálfgefið fyrir þessa þjónustuveitu (t.d. `gpt-4o`, `mistral-small`)
 5. Smelltu á **Vista stillingar**
 
-#### Fjarlægja þjónustuveitu
+#### Fjarlægja þjónustuveitu {#removing-a-provider}
 
 Smelltu á hnappinn **Fjarlægja** á hvaða korti þjónustuveitu sem er til að eyða því. Vistaðu stillingar til að beita breytingunni.
 
-#### Endurraða þjónustuveitum
+#### Endurraða þjónustuveitum {#reordering-providers}
 
 Dragðu griptáknið (⣿) vinstra megin á hvaða korti þjónustuveitu sem er til að endurraða því. Röðin ákvarðar forgang varaleiðar: beiðnir eru sendar til fyrstu þjónustuveitunnar og falla yfir á næstu þjónustuveitur ef beiðni mistekst.
 
-### Varaleiðarbeining
+### Varaleiðarbeining {#fallback-routing}
 
 Þegar beiðni til aðalþjónustuveitunnar mistekst — vegna tímamarka, hraðatakmarkana eða þjónusturofs — reynir tengillinn sjálfkrafa aftur með næstu þjónustuveitu á listanum. Þetta heldur áfram niður listann þar til þjónustuveita tekst eða allar þjónustuveitur hafa verið reyndar.
 
@@ -72,7 +72,7 @@ Dragðu griptáknið (⣿) vinstra megin á hvaða korti þjónustuveitu sem er 
 
 Varaleið er gagnsæ fyrir viðbótina eða þemað sem kallar — þau fá annaðhvort farsælt svar eða lokavillu, óháð því hversu margar þjónustuveitur voru reyndar.
 
-### Tilvísun fyrir stillingar þjónustuveitu
+### Tilvísun fyrir stillingar þjónustuveitu {#provider-configuration-reference}
 
 | Reitur | Nauðsynlegt | Lýsing |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Varaleið er gagnsæ fyrir viðbótina eða þemað sem kallar — þau fá anna
 | API-lykill | Já | Auðkenningarlykill fyrir þessa þjónustuveitu |
 | Sjálfgefið líkan | Já | Auðkenni líkans sem er notað þegar ekkert líkan er tilgreint í beiðninni |
 
-## Úrræðaleit
+## Úrræðaleit {#troubleshooting}
 
-### Engar þjónustuveitur eru skráðar
+### Engar þjónustuveitur eru skráðar {#no-providers-are-listed}
 
 Ef listi þjónustuveitna er tómur eftir vistun skaltu staðfesta að:
 
@@ -91,21 +91,21 @@ Ef listi þjónustuveitna er tómur eftir vistun skaltu staðfesta að:
 - Vafrinn þinn hafi ekki hindrað að stillingasíðan vistist (athugaðu vafrastjórnborðið fyrir JavaScript-villur)
 - Viðbótin sé virk og þú sért á netstjórnunarskjánum
 
-### Beiðnir mistakast hjá öllum þjónustuveitum
+### Beiðnir mistakast hjá öllum þjónustuveitum {#requests-are-failing-for-all-providers}
 
 - Staðfestu að URL endapunkts hverrar þjónustuveitu sé aðgengileg frá þjóninum þínum (ekki bara úr vafranum þínum)
 - Athugaðu að hver API-lykill sé gildur og ekki útrunninn
 - Yfirfarðu stöðu hraðatakmarkana og kvóta þjónustuveitunnar í dashboardinu þeirra
 - Virkjaðu WordPress villuskráningu (`WP_DEBUG_LOG`) til að fanga ítarleg villuboð frá tenglinum
 
-### Þjónustuveita er ekki notuð fyrir varaleið
+### Þjónustuveita er ekki notuð fyrir varaleið {#a-provider-is-not-being-used-for-fallback}
 
 Draga-til-að-endurraða breytir röð varaleiðar. Staðfestu að þjónustuveitan sem þú býst við að fái varaleiðarbeiðnir sé rétt staðsett á listanum og að URL endapunkts hennar og API-lykill séu rétt.
 
-### Nýtt kort þjónustuveitu víkkar ekki sjálfkrafa út
+### Nýtt kort þjónustuveitu víkkar ekki sjálfkrafa út {#new-provider-card-does-not-expand-automatically}
 
 Sjálfvirk útvíkkun krefst þess að JavaScript sé virkt í vafranum þínum. Ef kortið víkkar ekki út við smell skaltu athuga vafrastjórnborðið fyrir villur. Innihald kortsins er alltaf aðgengilegt með því að smella á kortahausinn, jafnvel þótt sjálfvirk útvíkkun ræsist ekki.
 
-## Breytingaskrá
+## Breytingaskrá {#changelog}
 
 Sjá [Breytingaskrá](./changelog) fyrir fulla útgáfusögu.

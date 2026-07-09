@@ -4,11 +4,11 @@ title: Kichujio - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Inaangalia kama ada ya kujiandikisha inapaswa kutumika au la.
 
-## Vigezo
+## Vigezo {#parameters}
 
 | Name | Type | Maelezo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Inaangalia kama ada ya kujiandikisha inapaswa kutumika au la.
 | $product | `object` | Kichwa cha kiwango cha ushirikishwaji. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Kichwa cha usajili. |
 
-### Tangu
+### Tangu {#since}
 
 - 3.1
-### Chanzo
+### Chanzo {#source}
 
 Kimefafanuliwa katika [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) kwenye mstari wa 1769

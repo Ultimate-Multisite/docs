@@ -3,35 +3,35 @@ title: Pažintinis interviu
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Atradimo interviu
+# Atradimo interviu {#discovery-interview}
 
 **Atradimo interviu** yra pirmasis žingsnis Theme Builder dizaino procese. Jis surenka informaciją apie jūsų svetainę, verslą ir dizaino pageidavimus, kad būtų sukurta suasmeninta tema.
 
-## Apžvalga
+## Apžvalga {#overview}
 
 Atradimo interviu veda jus per klausimų seriją, kad suprastų jūsų prekės ženklą, tikslinę auditoriją ir dizaino tikslus. 1.16.0 versijoje interviu dabar apima **nuotraukų įkėlimo žingsnį**, kuris leidžia pateikti vizualinį įkvėpimą jūsų dizainui.
 
-## Interviu žingsniai
+## Interviu žingsniai {#interview-steps}
 
-### 1. Verslo informacija
+### 1. Verslo informacija {#1-business-information}
 
 - Svetainės pavadinimas ir šūkis
 - Verslo tipas arba pramonės šaka
 - Pagrindiniai verslo tikslai
 - Tikslinės auditorijos aprašymas
 
-### 2. Dizaino pageidavimai
+### 2. Dizaino pageidavimai {#2-design-preferences}
 
 - Pageidaujama spalvų schema
 - Dizaino stilius (modernus, klasikinis, minimalistinis, žaismingas ir t. t.)
 - Įkvėpimo svetainės arba prekės ženklai
 - Privalomi dizaino elementai
 
-### 3. Nuotraukų įkėlimas (nauja v1.16.0)
+### 3. Nuotraukų įkėlimas (nauja v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Įkelkite vieną ar daugiau nuotraukų, kad paveiktumėte dizaino kryptį:
 
-#### Priimami formatai
+#### Priimami formatai {#accepted-formats}
 
 | Formatas | Plėtinys | Išsami informacija |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Atradimo interviu veda jus per klausimų seriją, kad suprastų jūsų prekės �
 | **WebP** | `.webp` | Modernus formatas, mažesnis failo dydis |
 | **GIF** | `.gif` | Tik statiniai vaizdai (be animacijos) |
 
-#### Failų reikalavimai
+#### Failų reikalavimai {#file-requirements}
 
 - **Maksimalus failo dydis:** 10 MB
 - **Minimalūs matmenys:** 400 × 300 pikselių
 - **Rekomenduojami matmenys:** 1200 × 800 pikselių arba didesni
 - **Kraštinių santykis:** Priimtinas bet koks santykis
 
-#### Kaip nuotraukos veikia dizaino kryptį
+#### Kaip nuotraukos veikia dizaino kryptį {#how-photos-influence-design-direction}
 
 Jūsų įkeltos nuotraukos padeda Theme Builder suprasti:
 
@@ -57,21 +57,21 @@ Jūsų įkeltos nuotraukos padeda Theme Builder suprasti:
 - **Dizaino elementai** — raštai, tekstūros ir kompoziciniai stiliai
 - **Tipografijos įkvėpimas** — šriftų stiliai, papildantys vizualinę temą
 
-### 4. Turinio struktūra
+### 4. Turinio struktūra {#4-content-structure}
 
 - Reikalingi pagrindiniai puslapiai (Pagrindinis, Apie, Paslaugos, Kontaktai ir t. t.)
 - Reikalinga tinklaraščio arba naujienų skiltis
 - Reikalingas e. prekybos funkcionalumas
 - Specialios funkcijos arba integracijos
 
-### 5. Peržiūra ir patvirtinimas
+### 5. Peržiūra ir patvirtinimas {#5-review-and-confirmation}
 
 - Visos pateiktos informacijos santrauka
 - Patvirtinimas prieš pradedant dizaino generavimą
 
-## Nuotraukų įkėlimo geriausia praktika
+## Nuotraukų įkėlimo geriausia praktika {#photo-upload-best-practices}
 
-### Ką įkelti
+### Ką įkelti {#what-to-upload}
 
 - **Prekės ženklo įkvėpimas** — logotipai, spalvų pavyzdžiai arba prekės ženklo gairės
 - **Konkurentų svetainės** — svetainių, kuriomis žavitės, ekrano kopijos
@@ -80,7 +80,7 @@ Jūsų įkeltos nuotraukos padeda Theme Builder suprasti:
 - **Komandos arba biuro nuotraukos** — asmeniniam arba profesionaliam prekės ženklo įvaizdžiui
 - **Gyvenimo būdo vaizdai** — atspindintys jūsų tikslinę auditoriją
 
-### Ko vengti
+### Ko vengti {#what-to-avoid}
 
 - **Žemos kokybės vaizdai** — neryškios arba pikseliuotos nuotraukos
 - **Nesusiję vaizdai** — nuotraukos, kurios neatspindi jūsų prekės ženklo
@@ -88,7 +88,7 @@ Jūsų įkeltos nuotraukos padeda Theme Builder suprasti:
 - **Autorių teisėmis saugoma medžiaga** — įsitikinkite, kad turite teises naudoti vaizdus
 - **Animuoti GIF** — apdorojami tik statiniai vaizdai
 
-### Patarimai geriausiems rezultatams
+### Patarimai geriausiems rezultatams {#tips-for-best-results}
 
 1. **Įkelkite 2–3 vaizdus** — keli vaizdai suteikia geresnį kontekstą
 2. **Naudokite aukštos kokybės nuotraukas** — geriausiai tinka aiškūs, gerai apšviesti vaizdai
@@ -96,7 +96,7 @@ Jūsų įkeltos nuotraukos padeda Theme Builder suprasti:
 4. **Pateikite kontekstą** — trumpai aprašykite, kodėl pasirinkote kiekvieną vaizdą
 5. **Būkite konkretūs** — jei jums patinka konkretus elementas, nurodykite jį
 
-## Dizaino krypties rezultatas
+## Dizaino krypties rezultatas {#design-direction-output}
 
 Po Atradimo interviu Theme Builder sugeneruoja:
 
@@ -106,7 +106,7 @@ Po Atradimo interviu Theme Builder sugeneruoja:
 - **Vizualiniai elementai** — piktogramos, raštai ir dekoratyviniai elementai
 - **Nuotaikų koliažas** — vizualinis dizaino krypties atvaizdavimas
 
-## Kiti žingsniai
+## Kiti žingsniai {#next-steps}
 
 Užbaigę Atradimo interviu:
 
@@ -115,7 +115,7 @@ Užbaigę Atradimo interviu:
 3. Pereikite prie [Dizaino krypties](./design-direction.md) žingsnio
 4. Theme Builder sukuria jūsų pasirinktinę temą
 
-## Susijusi dokumentacija
+## Susijusi dokumentacija {#related-documentation}
 
 - [Dizaino kryptis](./design-direction.md) — peržiūrėkite ir patobulinkite savo dizainą
 - [Svetingumo meniu](./hospitality-menus.md) — kurkite struktūrizuotus meniu puslapius

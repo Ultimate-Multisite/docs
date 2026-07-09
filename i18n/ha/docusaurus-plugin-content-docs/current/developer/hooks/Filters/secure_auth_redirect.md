@@ -4,19 +4,19 @@ title: Tace - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Tacewa: secure_auth_redirect
+# Tacewa: secure_auth_redirect {#filter-secureauthredirect}
 
 Tana tace ko a yi amfani da turawa ta tabbatar da sahihanci mai tsaro.
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
 | $secure | `bool` | Ko a yi amfani da turawa ta tabbatar da sahihanci mai tsaro. Tsoho false. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 3.1.0
-### Tushen
+### Tushen {#source}
 
 An ayyana a cikin [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L190) a layi na 190

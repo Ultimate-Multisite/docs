@@ -3,15 +3,15 @@ title: قوائم الطعام الفندقية
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# قوائم الطعام للضيافة
+# قوائم الطعام للضيافة {#hospitality-menus}
 
 تسمح ميزة **قوائم الطعام للضيافة (Hospitality Menus)** لأداة بناء القوالب (Theme Builder) بإنشاء وتضمين صفحات قوائم طعام ومشروبات منظمة مباشرةً في موقعك على WordPress.
 
-## نظرة عامة
+## نظرة عامة {#overview}
 
 يمكن لأداة بناء القوالب الآن إنشاء صفحات قوائم طعام احترافية ومنظمة للشركات العاملة في مجال الضيافة، بما في ذلك المطاعم والمقاهي والحانات وخدمات تقديم الطعام. يتم دمج هذه القوائم بالكامل في تصميم موقعك ويمكن تحديثها وإدارتها بسهولة.
 
-## أنواع الضيافة المدعومة
+## أنواع الضيافة المدعومة {#supported-hospitality-types}
 
 - **المطاعم (Restaurants)** — قوائم طعام كاملة الخدمة
 - **المقاهي (Cafes)** — قوائم المشروبات والوجبات الخفيفة
@@ -21,9 +21,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **عربات الطعام (Food Trucks)** — قوائم خدمات الطعام المتنقلة
 - **مصانع البيرة ومزارع النبيذ (Breweries and Wineries)** — قوائم المشروبات مع الأوصاف
 
-## هيكل القائمة
+## هيكل القائمة {#menu-structure}
 
-### فئات القائمة (Menu Categories)
+### فئات القائمة (Menu Categories) {#menu-categories}
 
 يتم تنظيم القوائم في فئات:
 
@@ -34,7 +34,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **المشروبات (Beverages)** — المشروبات (الكحولية وغير الكحولية)
 - **العروض الخاصة (Specials)** — عروض يومية أو موسمية
 
-### تنسيق عنصر القائمة (Menu Item Format)
+### تنسيق عنصر القائمة (Menu Item Format) {#menu-item-format}
 
 يتضمن كل عنصر من عناصر القائمة ما يلي:
 
@@ -49,7 +49,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 }
 ```
 
-#### حقول العنصر (Item Fields)
+#### حقول العنصر (Item Fields) {#item-fields}
 
 | الحقل (Field) | النوع (Type) | الوصف (Description) |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 | `allergens` | array | مسببات الحساسية الشائعة (المكسرات، المحار، إلخ.) |
 | `availability` | string | متى يتوفر (يومي، موسمي، إلخ.) |
 
-## إنشاء قوائم الطعام للضيافة
+## إنشاء قوائم الطعام للضيافة {#creating-hospitality-menus}
 
-### الخطوة 1: تقديم معلومات القائمة
+### الخطوة 1: تقديم معلومات القائمة {#step-1-provide-menu-information}
 
 أخبر أداة بناء القوالب عن قائمتك:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### الخطوة 2: تقوم أداة بناء القوالب بإنشاء القائمة
+### الخطوة 2: تقوم أداة بناء القوالب بإنشاء القائمة {#step-2-theme-builder-generates-menu}
 
 أداة بناء القوالب:
 
@@ -81,7 +81,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. تنسق الأسعار والأوصاف
 5. تضيف معلومات النظام الغذائي ومسببات الحساسية
 
-### الخطوة 3: المراجعة والتخصيص
+### الخطوة 3: المراجعة والتخصيص {#step-3-review-and-customize}
 
 يمكنك:
 
@@ -91,9 +91,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. تحديث الأوصاف والمعلومات الغذائية
 5. تعديل التنسيق والتخطيط
 
-## خيارات عرض القائمة
+## خيارات عرض القائمة {#menu-display-options}
 
-### صفحة القائمة الكاملة (Full Menu Page)
+### صفحة القائمة الكاملة (Full Menu Page) {#full-menu-page}
 
 صفحة مخصصة تعرض قائمتك بالكامل:
 
@@ -102,7 +102,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - تصميم مناسب للطباعة
 - تصميم متجاوب مع الأجهزة المحمولة
 
-### ويدجت القائمة (Menu Widget)
+### ويدجت القائمة (Menu Widget) {#menu-widget}
 
 تضمين أقسام القائمة في صفحات أخرى:
 
@@ -111,7 +111,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - قائمة المشروبات في صفحة الحانة
 - عرض الحلويات في التذييل (Footer)
 
-### قائمة PDF (Menu PDF)
+### قائمة PDF (Menu PDF) {#menu-pdf}
 
 إنشاء قائمة طعام بصيغة PDF قابلة للتنزيل:
 
@@ -120,9 +120,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - تتضمن الصور والأوصاف
 - سهلة المشاركة عبر البريد الإلكتروني
 
-## معلومات النظام الغذائي ومسببات الحساسية
+## معلومات النظام الغذائي ومسببات الحساسية {#dietary-and-allergen-information}
 
-### السمات الغذائية (Dietary Attributes)
+### السمات الغذائية (Dietary Attributes) {#dietary-attributes}
 
 وضع علامات على العناصر بمعلومات غذائية:
 
@@ -134,7 +134,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **قليل الكربوهيدرات (Low-Carb)** — يحتوي على كربوهيدرات منخفضة
 - **غني بالبروتين (High-Protein)** — غني بالبروتين
 
-### تحذيرات مسببات الحساسية (Allergen Warnings)
+### تحذيرات مسببات الحساسية (Allergen Warnings) {#allergen-warnings}
 
 تضمين مسببات الحساسية الشائعة:
 
@@ -147,9 +147,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **الغلوتين (Gluten)** — القمح والحبوب المحتوية على الغلوتين
 - **السمسم (Sesame)** — بذور وزيت السمسم
 
-## إدارة القائمة
+## إدارة القائمة {#menu-management}
 
-### تحديث الأسعار
+### تحديث الأسعار {#updating-prices}
 
 تحديث أسعار القائمة بسهولة:
 
@@ -159,7 +159,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. احفظ التغييرات
 5. تظهر التغييرات فوراً على موقعك
 
-### إضافة العناصر الموسمية
+### إضافة العناصر الموسمية {#adding-seasonal-items}
 
 إنشاء اختلافات موسمية لقائمة الطعام:
 
@@ -169,7 +169,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. جدولة تواريخ التوفر
 5. عرضها تلقائيًا خلال الموسم
 
-### إدارة العروض الخاصة
+### إدارة العروض الخاصة {#managing-specials}
 
 عرض العروض اليومية أو الأسبوعية:
 
@@ -179,7 +179,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. التحديث يوميًا أو أسبوعيًا
 5. أرشفة العروض القديمة
 
-## التكامل مع أداة بناء القوالب (Theme Builder)
+## التكامل مع أداة بناء القوالب (Theme Builder) {#integration-with-theme-builder}
 
 عند استخدام أداة بناء القوالب لمواقع الضيافة:
 
@@ -189,9 +189,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. **تحسين الجوال** — تعرض القوائم بشكل جميل على الهواتف
 5. **تحسين محركات البحث (SEO)** — تكون القوائم صديقة لمحركات البحث
 
-## أفضل الممارسات
+## أفضل الممارسات {#best-practices}
 
-### تصميم القائمة
+### تصميم القائمة {#menu-design}
 
 - **التنظيم الواضح** — هيكل فئات منطقي
 - **الأوصاف المقروءة** — شهية وغنية بالمعلومات
@@ -199,7 +199,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **الصور الاحترافية** — صور طعام عالية الجودة
 - **المساحات البيضاء** — لا تزدحم الصفحة
 
-### المحتوى
+### المحتوى {#content}
 
 - **الأوصاف الدقيقة** — وصف العناصر بدقة
 - **إبراز العروض الخاصة** — جعل العروض الخاصة بارزة
@@ -207,7 +207,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **التحديث المنتظم** — إبقاء الأسعار والعناصر محدثة
 - **استخدام لغة شهية** — جعل العناصر تبدو لذيذة
 
-### إمكانية الوصول (Accessibility)
+### إمكانية الوصول (Accessibility) {#accessibility}
 
 - **خطوط مقروءة** — استخدام خطوط واضحة وسهلة القراءة
 - **تباين كافٍ** — التأكد من أن النص قابل للقراءة
@@ -215,9 +215,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **تحذيرات مسببات الحساسية** — عرض مسببات الحساسية بشكل بارز
 - **صديق للجوال** — الاختبار على جميع الأجهزة
 
-## الأمثلة
+## الأمثلة {#examples}
 
-### هيكل قائمة المطعم
+### هيكل قائمة المطعم {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### هيكل قائمة المقهى
+### هيكل قائمة المقهى {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## الميزات ذات الصلة
+## الميزات ذات الصلة {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — إنشاء قوائم التنقل
 - [Design Direction](./design-direction.md) — تخصيص تصميم موقعك

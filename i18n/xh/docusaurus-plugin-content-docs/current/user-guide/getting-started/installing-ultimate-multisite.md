@@ -3,13 +3,13 @@ title: Ukufaka Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ukufaka Ultimate Multisite
+# Ukufaka Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Esi sifundo sithatha ukuba sele unayo i-WordPress Multisite efakiweyo kwaye elungiselelweyo. Ukuze ufunde ukuba kwenziwa njani, jonga [esi sifundo](https://www.wpbeginner.com/glossary/multisite/) ngu-WP Beginner.
 :::
 
-## Ukufaka Isongezelelo
+## Ukufaka Isongezelelo {#installing-the-plugin}
 
 Ultimate Multisite iyafumaneka simahla ku-[WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Emva kokuvulwa, uya kuthunyelwa ngokuzenzekelayo kwi-Setup Wizard.
 
 ![Isongezelelo sivuliwe saza sathunyelwa kwi-wizard](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Setup Wizard {#setup-wizard}
 
 I-Setup Wizard iya kukukhokela ekulungiseleleni Ultimate Multisite malunga nemizuzu eli-10.
 
-### Wamkelekile
+### Wamkelekile {#welcome}
 
 Cofa **Qalisa** ukuze uqale.
 
 ![Isikrini sokwamkela se-Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Uhlolo lwangaphambi kokufaka
+### Uhlolo lwangaphambi kokufaka {#pre-install-checks}
 
 Eli nyathelo lijonga ulwazi lwenkqubo yakho kunye nokufakwa kwe-WordPress ukuqinisekisa ukuba kuyahlangabezana neemfuno ze-Ultimate Multisite. Ukuba yonke into ibonakala ilungile, cofa **Yiya kwiNyathelo Elilandelayo**.
 
@@ -51,31 +51,31 @@ Ukuba Ultimate Multisite ifakiwe kodwa **ayikavulwa kwinethiwekhi** — umzekelo
 Ukucofa **Vula kwiNethiwekhi** kuvula isongezelelo kuyo yonke inethiwekhi yakho ye-multisite ngokuzenzekelayo. Xa sele ivuliwe, i-wizard iyaqhubeka ngokuqhelekileyo kwinyathelo lokufaka. Akudingeki ukuba ushiye i-wizard ukuze ulungise imeko yokuvulwa.
 :::
 
-### Ukufaka
+### Ukufaka {#installation}
 
 Umfaki uya kudala iitafile zedatabase eziyimfuneko kwaye afake ifayile ye-`sunrise.php` efunwa ngu-Ultimate Multisite ukuze isebenze. Cofa **Faka** ukuze uqhubeke.
 
 ![Inyathelo lokufaka elibonisa iitafile zedatabase kunye ne-sunrise.php](/img/installation/wizard-installation.png)
 
-### Inkampani Yakho
+### Inkampani Yakho {#your-company}
 
 Gcwalisa ulwazi lwenkampani yakho kwaye usete imali yakho engagqibekanga. Olu lwazi luya kusetyenziswa kuyo yonke indawo yeqonga lakho le-WaaS. Cofa **Qhubeka** xa ugqibile.
 
 ![Inyathelo lokulungiselela Inkampani Yakho](/img/installation/wizard-your-company.png)
 
-### Umxholo Ohlala Ukho
+### Umxholo Ohlala Ukho {#default-content}
 
 Eli nyathelo likuvumela ukuba ufake iitempleyithi ezichazwe kwangaphambili, iimveliso, kunye nomnye umxholo wokuqalisa. Le yindlela entle yokuzazi iimpawu ze-Ultimate Multisite. Cofa **Faka** ukongeza umxholo ohlala ukho, okanye utsibe eli nyathelo ukuba ukhetha ukuqala ekuqaleni.
 
 ![Inyathelo lokufaka umxholo ohlala ukho](/img/installation/wizard-default-content.png)
 
-### Izongezelelo Ezicetyiswayo
+### Izongezelelo Ezicetyiswayo {#recommended-plugins}
 
 Ngokuzikhethela faka izongezelelo ezicetyiswayo ezihambelanayo. Cofa **Faka** ukuzongeza okanye utsibe ukuze uqhubeke.
 
 ![Inyathelo lezongezelelo ezicetyiswayo](/img/installation/wizard-recommended-plugins.png)
 
-### Ilungile!
+### Ilungile! {#ready}
 
 Kuphelele apho! Ukufakwa kwakho kwe-Ultimate Multisite kugqityiwe. Ngoku ungaqala ukwakha iqonga lakho leWebhusayithi njengeNkonzo ukusuka kwi-**Dashboard yoLawulo lweNethiwekhi**.
 

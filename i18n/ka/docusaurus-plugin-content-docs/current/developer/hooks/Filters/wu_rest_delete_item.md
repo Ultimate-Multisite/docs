@@ -4,11 +4,11 @@ title: ფილტრი - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# ფილტრი: wu_rest_delete_item
+# ფილტრი: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 ფილტრავს, დაშვებულია თუ არა მოთხოვნის გაგრძელება.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 | $rest_base | `array` | ობიექტის slug. |
 | $this | `\Base_Manager` | ობიექტის instance. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.0.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440)-ში, 440-ე ხაზზე

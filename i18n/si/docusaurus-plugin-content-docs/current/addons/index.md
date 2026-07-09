@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite ඇඩෝන
+# Ultimate Multisite ඇඩෝන {#ultimate-multisite-addons}
 
 ඇඩෝන, අමතර විශේෂාංග සහ ඒකාබද්ධ කිරීම් සමඟ Ultimate Multisite පුළුල් කරයි. බොහෝ ඇඩෝන ගෙවිය යුතු ඒවා වන අතර [ultimatemultisite.com](https://ultimatemultisite.com) වෙතින් මිලදී ගත හැක.
 
-## ස්ථාපනය
+## ස්ථාපනය {#installation}
 
 ඇඩෝන ක්‍රම දෙකකින් ස්ථාපනය කළ හැක:
 
 1. **ඇඩෝන පිටුව හරහා** -- WordPress පරිපාලකයේ ඔබේ අඩවියේ ඇඩෝන කළමනාකරණ පිටුවට යන්න
 2. **අතින් බාගැනීම** -- [ඔබේ Account](https://ultimatemultisite.com/my-account/downloads/) වෙතින් බාගෙන ප්ලගින > නව එකතු කරන්න හරහා උඩුගත කරන්න
 
-## ලබාගත හැකි ඇඩෝන
+## ලබාගත හැකි ඇඩෝන {#available-addons}
 
 | ඇඩෝනය | විස්තරය |
 |-------|-------------|

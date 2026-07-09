@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Zvekuwedzera zveUltimate Multisite
+# Zvekuwedzera zveUltimate Multisite {#ultimate-multisite-addons}
 
 Zvekuwedzera zvinowedzera Ultimate Multisite nezvimwe zvinhu uye kubatanidzwa. Zvekuwedzera zvakawanda zvinobhadharwa uye zvinogona kutengwa kubva ku[ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Kuiswa
+## Kuiswa {#installation}
 
 Zvekuwedzera zvinogona kuiswa nenzira mbiri:
 
 1. **Kuburikidza nePeji reZvekuwedzera** -- Enda kupeji rekutarisira zvekuwedzera resaiti yako muWordPress admin
 2. **Kudhaunirodha Nemaoko** -- Dhaunirodha kubva ku[Account yako](https://ultimatemultisite.com/my-account/downloads/) uye urodhe kuburikidza neZvirongwa zvekuwedzera > Wedzera Chitsva
 
-## Zvekuwedzera Zviripo
+## Zvekuwedzera Zviripo {#available-addons}
 
 | Chekuwedzera | Tsananguro |
 |-------|-------------|

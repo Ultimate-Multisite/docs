@@ -3,7 +3,7 @@ title: Página da Account do cliente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Página Account do seu cliente (v2)
+# Página Account do seu cliente (v2) {#your-clients-account-page-v2}
 
 _**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 
@@ -11,7 +11,7 @@ Quando os clientes assinam um plano na sua rede, eles recebem acesso a um site e
 
 Neste tutorial, vamos orientar você pela página Account do cliente, e você verá o que seus clientes podem ver e fazer dentro dela.
 
-## A página Account
+## A página Account {#the-account-page}
 
 A página Account pode ser acessada clicando em **Account** dentro do Dashboard do seu cliente.
 
@@ -27,7 +27,7 @@ Depois que um cliente clicar nele, ele verá uma visão geral da sua assinatura,
 
 Ele também pode alterar a assinatura para outro plano, ou comprar outro pacote ou serviço que você oferece. Vamos analisar cada seção separadamente.
 
-### Visão geral da sua assinatura:
+### Visão geral da sua assinatura: {#your-membership-overview}
 
 O primeiro bloco logo abaixo do nome do site dos seus clientes mostra uma visão geral do plano atual deles e dos serviços/pacotes que foram comprados com ele. O bloco também mostra o número da assinatura, o valor inicial pago por ela, quanto custam o plano e qualquer serviço/pacote, e quantas vezes eles foram cobrados por essa assinatura. Eles também podem ver se a assinatura está **Ativa** , **Expirada** ou **Cancelada**.
 
@@ -43,7 +43,7 @@ Agora, se seus clientes escolherem comprar pacotes ou serviços para essa assina
 
 Observe que códigos de cupom não podem ser adicionados nesta página de alteração de assinatura. Se o cliente usou um código de cupom na primeira compra da assinatura, o código também será aplicado a esta nova assinatura.
 
-### Atualizando o endereço de cobrança:
+### Atualizando o endereço de cobrança: {#updating-the-billing-address}
 
 Na página Account, seus clientes também podem atualizar o endereço de cobrança. Eles só precisam clicar em **Atualizar** ao lado de _Endereço de cobrança_.
 
@@ -53,7 +53,7 @@ Uma nova janela aparecerá para o seu cliente. Tudo o que ele precisa fazer é p
 
 ![Formulário de atualização do endereço de cobrança](/img/account-page/billing-address-form.png)
 
-### Alterando o Modelo de Site:
+### Alterando o Modelo de Site: {#changing-the-site-template}
 
 Para permitir que seus clientes alterem os modelos de seus sites, você precisa acessar **Ultimate Multisite > Configurações > Sites** e ativar a opção **Permitir troca de modelo**.
 
@@ -81,7 +81,7 @@ Depois de ativar a confirmação e clicar em **Processar troca** , o novo modelo
 
 Os clientes também podem usar **Redefinir modelo atual** neste painel quando precisarem redefinir o site de volta para o modelo atualmente atribuído. Assim como ao mudar para outro modelo, redefinir um modelo pode sobrescrever o conteúdo do site, portanto os clientes só devem confirmar quando entenderem a ação de redefinição.
 
-### Adicionando domínios personalizados:
+### Adicionando domínios personalizados: {#adding-custom-domains}
 
 Seus clientes também terão a opção de adicionar um domínio personalizado para este plano na página Account deles. Para permitir que seus clientes usem domínios personalizados, vá para **Ultimate Multisite > Configurações >** **Mapeamento de domínio**.
 
@@ -115,7 +115,7 @@ Depois de clicar em **Próxima etapa** , seus clientes podem adicionar o nome do
 
 Depois de clicar em **Adicionar domínio** , o domínio será adicionado à Account do seu cliente. Tudo o que eles precisam fazer agora é alterar os registros DNS desse domínio personalizado no registrador de domínio deles.
 
-### Alterando a senha:
+### Alterando a senha: {#changing-password}
 
 Dentro do Dashboard da Account, seus clientes também podem alterar a senha clicando em **Alterar senha**.
 
@@ -125,7 +125,7 @@ Isso mostrará uma nova janela onde seus clientes precisarão preencher a senha 
 
 ![Formulário de alteração de senha com campos de senha atual e nova senha](/img/account-page/change-password-form.png)
 
-### Zona de Perigo:
+### Zona de Perigo: {#danger-zone}
 
 Também temos duas opções que são exibidas na parte **Zona de Perigo**: **Excluir site** e **Excluir Account**. Ambas ficam na parte Zona de Perigo porque essas duas ações são irreversíveis. Se seus clientes excluírem o site ou a Account deles, não poderão recuperá-los.
 

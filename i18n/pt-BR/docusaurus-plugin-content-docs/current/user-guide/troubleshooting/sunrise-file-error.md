@@ -3,7 +3,7 @@ title: Erro no arquivo Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Erro ao instalar o arquivo Sunrise
+# Erro ao instalar o arquivo Sunrise {#error-installing-the-sunrise-file}
 
 O arquivo sunrise.php é um arquivo especial que o WordPress procura enquanto inicializa a si mesmo. Para que o WordPress consiga detectar o arquivo sunrise.php, ele precisa estar localizado dentro da **pasta wp-content**.
 

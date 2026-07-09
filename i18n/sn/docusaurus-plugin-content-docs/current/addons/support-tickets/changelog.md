@@ -3,13 +3,13 @@ title: Chinyorwa cheshanduko cheMatikiti eRutsigiro
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Nhoroondo yeShanduko dzeSupport Tickets
+# Nhoroondo yeShanduko dzeSupport Tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Yakavandudzwa: Yakabvisa dhairekitori re vendor/ kubva mukuteverwa neGit (rakatofukidzwa ne .gitignore), zvichideredza saizi yerepository
 * Yakavandudzwa: Yakaedzwa kusvika kuWordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Gadziriso: Gamuchira kukosha kwe null muma nullable ticket model setters
 * Gadziriso: Chengeta maticket ese mumatafura epasi rose enetwork yose kuti multisite itsigirwe nemazvo
 * Gadziriso: Viga minda yevashandi uye gadzirisa kuendeswa kupeji risina chinhu pafomu remutengi re new-ticket
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Yakavandudzwa: Rodha frontend assets zvichienderana nemamiriro chete pamapeji eSupport Tickets
 * Yakavandudzwa: Svetuka plugin autoloader kana Bedrock root autoloader yatotakura dependencies
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Yakawedzerwa: Kushanda kuzere kwekuona ticket kweadmin nefrontend
 * Yakawedzerwa: AJAX handler yekutumira mhinduro dzeticket
 * Yakawedzerwa: Tsigiro yekushanda kwemhinduro yeticket ine kubata fomu kwakakodzera
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Yakavandudzwa: Chimiro chedatabase chine query nemakirasi e schema akakodzera emhinduro nemaattachments
 * Yakavandudzwa: Kutamiswa kuenda kuma properties chaiwo panzvimbo pe attributes ema ticket models
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Yakagadziridzwa: Prefix yakatumidzwazve kuva ultimate-multisite kuitira kuenderana
 * Yakagadziridzwa: Kuenzaniswa kwe text domain
 * Yakagadziriswa: Gadziriso diki dzemabug nekuvandudzwa
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Kuburitswa kwekutanga
 * System yakazara yekutarisira maticket
 * Kudzora kupinda kwemazinga akawanda

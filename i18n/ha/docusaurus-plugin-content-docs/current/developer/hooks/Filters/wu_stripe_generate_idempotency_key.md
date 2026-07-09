@@ -4,11 +4,11 @@ title: Tace - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Tace: wu_stripe_generate_idempotency_key
+# Tace: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
 
 Yana tace ƙimar idempotency_key da ake aikawa tare da zaɓuɓɓukan cajin Stripe.
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yana tace ƙimar idempotency_key da ake aikawa tare da zaɓuɓɓukan cajin Strip
 | $args | `array` | Hujjojin da ake amfani da su don taimakawa samar da mabuɗin. |
 | $context | `string` | Yanayin da ake samar da mabuɗin idempotency a ƙarƙashinsa. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 3.5.0
-### Tushe
+### Tushe {#source}
 
 An ayyana a [`inc/functions/checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/checkout.php#L54) a layi na 54

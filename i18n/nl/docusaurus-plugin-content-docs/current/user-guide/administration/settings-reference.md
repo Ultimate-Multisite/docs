@@ -3,11 +3,11 @@ title: Referentie voor instellingen
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Instellingenreferentie
+# Instellingenreferentie {#settings-reference}
 
 Deze pagina houdt instellingen bij die van invloed zijn op dagelijkse administratie en recente gedragswijzigingen in Ultimate Multisite.
 
-## Overige opties
+## Overige opties {#other-options}
 
 Het gebied **Overige opties** verschijnt onder **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Het gebied **Overige opties** verschijnt onder **Ultimate Multisite > Settings >
 |---|---|
 | **Jumper inschakelen** | Toont de snelle navigatietool Jumper in het beheergebied. Gebruik deze om direct naar Ultimate Multisite-schermen, netwerkobjecten en ondersteunde beheerbestemmingen te springen. Schakel deze uit als je niet wilt dat deze snelkoppeling zichtbaar is. |
 
-## Foutrapportage en telemetrie
+## Foutrapportage en telemetrie {#error-reporting-and-telemetry}
 
 De vorige opt-in-instelling voor foutrapportage is verwijderd van de instellingenpagina. Anonieme telemetrie is uitgeschakeld en er is geen UI-schakelaar om deze in te schakelen.
 
 Als je interne draaiboeken of screenshots voor de instellingenpagina onderhoudt, verwijder dan verwijzingen naar het oude opt-in-veld voor foutrapportage zodat beheerders niet zoeken naar een instelling die niet langer aanwezig is.
 
-## Import-/exportinstellingen
+## Import-/exportinstellingen {#importexport-settings}
 
 Het tabblad **Import/Export**-instellingen beschrijft welke instellingen het beheert en linkt direct naar **Ultimate Multisite > Site Export** voor site- en netwerkarchieven. Gebruik het instellingentabblad voor import-/exportconfiguratie, gebruik **Tools > Export & Import** voor de export-/importworkflow voor één site, en gebruik de Site Export-tool wanneer je een volledig Network Export-archief nodig hebt.
 
-## Waarschuwing voor Domain Seller HostAfrica-saldo
+## Waarschuwing voor Domain Seller HostAfrica-saldo {#domain-seller-hostafrica-balance-warning}
 
 Wanneer de Domain Seller addon is verbonden met HostAfrica, zien netwerkbeheerders nu een wegklikbare waarschuwing voor laag saldo wanneer het saldo van het reselleraccount te laag is voor betrouwbare domeinregistratie- of verlengingsverwerking.
 
 Behandel deze melding als een operationele waarschuwing: vul het HostAfrica-resellersaldo aan voordat je meer betaalde domeinregistraties accepteert, en keer daarna terug naar de Domain Seller-instellingen of het domeinmonitoringscherm om te bevestigen dat registraties en verlengingen normaal kunnen doorgaan.
 
-## Instellingen voor AI-providerconnector
+## Instellingen voor AI-providerconnector {#ai-provider-connector-settings}
 
 Instellingen voor AI-providerconnectoren tonen nu alleen de ondersteunde OAuth-accountpools:
 

@@ -3,11 +3,11 @@ title: Miks Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Miks Ultimate Multisite
+# Miks Ultimate Multisite {#why-ultimate-multisite}
 
 Kui te artikli lugemise korral kuulsite tõenäoliselt, et meie plugin võib olla lahendus teie äriide idee realiseerimiseks. Arvatame, et endes lõpule jäävad sellele andmeid on need, mida vajate.
 
-## Mis on Ultimate Multisite?
+## Mis on Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite on WordPress Multisite plugin, mis võimaldab teil klientidele pakkuda WaaS-i (Website as a Service). Meie pluginiga saate kasutada erinevaid abenduskirjandi taseme ja saada klientidest korduvõtmise tasuta, et saad oma veebileht hostida teie Multisite võrku.
 
@@ -15,7 +15,7 @@ Ultimate Multisite võimaldab teil saada makside erinevate portaalide abil (nt W
 
 See on aga vaid algus, kuna saate selle funktsioone lisamoodi add-onid ja webhooks abil laiendada.
 
-## Muud funktsioonid
+## Muud funktsioonid {#other-features}
 
 Ultimate Multisite pakub ka:
 
@@ -33,11 +33,11 @@ Ja veel arendatud asjade kohta:
 
 * Otsing ja asendamine API (Search and Replace API): Saate ka annoteerida veebilehtmallide paigutajadega nagu {{site_name}} ja kasutada Search and Replace API-t, et neid paigutajad automaatselt täita klientilt antud teavet registreimise pärast.
 
-## Kasutusjuhtused (Use cases)
+## Kasutusjuhtused (Use cases) {#use-cases}
 
 Nüüd on aeg näha Ultimate Multisite võimalikke kasutusjuhtusi.
 
-### Juhus 1: Agentuur
+### Juhus 1: Agentuur {#case-1-an-agency}
 
 Agentuuri peamised oskused asub tavaliselt veebilehtide disainis, kus on osad nagu hostimine või turundus lisategevustena nimeeritud.
 
@@ -47,7 +47,7 @@ Pluginide ja teemade tihed kontroll on säilitatud iga toote kohta Ultimate Mult
 
 Agentuurid löend mituhead Ultimate Multisite'iga, võimaldades neil teha seda, mis nad kõige paremini teevad – erkste veebilehtide disainida.
 
-### Kasus 2: Niish provider
+### Kasus 2: Niish provider {#case-2-niche-provider}
 
 On vanaline ütlemine, et "tee üks asja ja tee see hästi". Paljud spetsialistide jaoks tähendab see ühte peamist idee põhjal luua toodet või teenust.
 
@@ -57,7 +57,7 @@ Ultimate Multisite'i innovatiivne funktsioon on selline mallveebileht, kus on pa
 
 Niish veebilehtide ja teenuste pakkuja jaoks annab see ette nähtamata eeliseuse: võimaluse kohe valmis oleva veebileht kiiresti luua oma erikoste pluginidega ja disainiga. Klient peab ainult minimaalse sisseandiku tegevuse täitmiseks.
 
-### Kasus 3: WordPress hooldus (Web Hosting)
+### Kasus 3: WordPress hooldus (Web Hosting) {#case-3-wordpress-web-hosting}
 
 WordPress veebilehtide hooldamiseks on mitu viis, kuid harva on see nii lihtne kui lihtsalt pakkuda klientile webi ruumi valmis paigaldatud WordPress versiooniga. See on seotud sellega, et vaja koos teha mitmeid otsuseid ja arvestusi, et pakkuda tähendavat teenust.
 

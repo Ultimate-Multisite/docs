@@ -4,11 +4,11 @@ title: Isihluzo - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message
+# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Vumela umsebenzisi atshintshe umyalezo malunga neentlawulo ezisalindileyo.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Vumela umsebenzisi atshintshe umyalezo malunga neentlawulo ezisalindileyo.
 | $customer | `\WP_Ultimo\Models\Customer` | Umthengi wangoku. |
 | $pending_payments | `array` | Uluhlu oluneentlawulo ezisalindileyo. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 2.0.19
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-[`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) kumgca 244

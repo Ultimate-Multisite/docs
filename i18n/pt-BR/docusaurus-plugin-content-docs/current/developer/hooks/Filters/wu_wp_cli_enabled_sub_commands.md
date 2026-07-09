@@ -8,7 +8,7 @@ Filtro: wu_wp_cli_enabled_sub_commands
 
 Filtra quais sub_commands estão habilitados para esta entidade.
 
-## Parameters
+## Parameters {#filter-wuwpclienabledsubcommands}
 
 | Nome | Tipo | Descrição |
 |------|------|-----------|
@@ -16,10 +16,10 @@ Filtra quais sub_commands estão habilitados para esta entidade.
 | $command_base | `string` | A base usada no comando logo após a raiz. |
 | $this | `\Base_Manager` | A instância do objeto. |
 
-### Since
+### Since {#parameters}
 
 - 2.0.0
 
-### Source
+### Source {#since}
 
 Definido em [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) na linha 198

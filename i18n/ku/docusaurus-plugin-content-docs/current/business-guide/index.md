@@ -3,13 +3,13 @@ title: Karsaziyek Malpera Nîş Ava Bike
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Karsaziyek Malperên Niş bi Ultimate Multisite ava bikin
+# Karsaziyek Malperên Niş bi Ultimate Multisite ava bikin {#build-a-niche-website-business-with-ultimate-multisite}
 
 Piraniya kesên ku dixwazin malperan bifroşin, li hember Wix, Squarespace û bi hezaran freelanceran li ser bihayê pêşbaziyê dikin. Ew winda dikin. Ewên ku serdikevin, temaşevanek taybet hildibijêrin, çareseriyek li gorî wê temaşevanê ava dikin, û ji bo nirxa ku radest dikin pere distînin.
 
 Ev kurs fêrî we dike ka çawa hûn bi Ultimate Multisite rast ev tiştê bikin.
 
-## Hûn ê Çi Ava Bikin
+## Hûn ê Çi Ava Bikin {#what-you-will-build}
 
 Di dirêjahiya vê kursê de hûn ê toreke rast û dixebite bi navê **FitSite** ava bikin -- platformeke malperê ku taybet ji bo stûdyoyên fitness, rahênerên kesane, û xwediyên salonên werzîşê hatiye çêkirin.
 
@@ -23,7 +23,7 @@ Di derse dawî de, FitSite dê bibe platformeke niş a temam bi:
 
 Hûn ê gav bi gav bişopînin, û di dawiyê de hûn ê hem platformeke dixebite hebin hem jî zanîna ku pêvajoyê ji bo her nişa ku hûn hilbijêrin dubare bikin.
 
-## Çima Stûdyoyên Fitness?
+## Çima Stûdyoyên Fitness? {#why-fitness-studios}
 
 Me mînakek rast û zelal diviya ku her kes bikare bişopîne. Stûdyoyên fitness baş in ji ber ku:
 
@@ -34,7 +34,7 @@ Me mînakek rast û zelal diviya ku her kes bikare bişopîne. Stûdyoyên fitne
 
 Hemû tiştê ku hûn bi avakirina FitSite fêr dibin rasterast li her nişa ku hûn hilbijêrin tê sepandin: xwaringeh, agentên malên neguhêzbar, fîrmayên qanûnê, dêr, peymankarên pîşeyî, an her verticaleke din.
 
-## Avahiya Kursê
+## Avahiya Kursê {#course-structure}
 
 Her ders têgehekê pêşkêş dike, vedibêje çima girîng e, û we gav bi gav di sepandina wê de di tora FitSite de rêberî dike. Her ders li ser ya berê ava dibe.
 
@@ -55,7 +55,7 @@ Her ders têgehekê pêşkêş dike, vedibêje çima girîng e, û we gav bi gav
 | [13. Mezinbûn](lesson-13-growth) | Mezinbûn ji xerîdarên yekem ber bi karsaziyek rast | Stratejiya mezinbûn û automation a FitSite |
 | [14. Piştre Çi Tê](lesson-14-whats-next) | Berfirehkirin ber bi nişên nêzîk û derfetên nû | Nexşerêya we ya piştî FitSite |
 
-## Pêşmerc
+## Pêşmerc {#prerequisites}
 
 - Sazkirineke WordPress Multisite (an amadebûn ji bo sazkirina wê)
 - Lîsanseke çalak a Ultimate Multisite
@@ -63,6 +63,6 @@ Her ders têgehekê pêşkêş dike, vedibêje çima girîng e, û we gav bi gav
 
 Kodnivîs ne hewce ye. Heger we berê tu car Ultimate Multisite bi kar neanîbe, ne xem e -- Ders 3 ji sazkirineke nû dest pê dike.
 
-## Amade ne?
+## Amade ne? {#ready}
 
 Bi [Ders 1: Çima Niş Serdikeve](lesson-1-why-niche) dest pê bikin.

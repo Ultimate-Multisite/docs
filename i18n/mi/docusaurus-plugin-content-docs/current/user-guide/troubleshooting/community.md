@@ -3,7 +3,7 @@ title: Ngā iwi/whānau
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# He aha te wahi ki te whai i te Ultimate Multisite Community
+# He aha te wahi ki te whai i te Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 He mea hekeheki te Ultimate Multisite Community, he wā i taea ai koe te whai i ngā uaua me ngā koutou katoa o Ultimate Multisite, ka whakatau i ngā whakaaro, ngā wero, me ngā mea katoa. Hei whai i te Ultimate Multisite Community, pēnei i te https://community.ultimatemultisite.com/home.
 

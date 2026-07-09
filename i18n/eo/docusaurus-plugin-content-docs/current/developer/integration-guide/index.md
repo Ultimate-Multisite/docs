@@ -3,13 +3,13 @@ title: Gvidilo pri Integriĝo
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gvidilo pri Integrado
+# Gvidilo pri Integrado {#integration-guide}
 
 Ĉi tiu gvidilo kovras oftajn integriĝajn ŝablonojn kun Ultimate Multisite, inkluzive de konektiĝo al eksteraj servoj, konstruado de propraj pagaj gateways, kaj traktado de webhooks.
 
 Por izolita tenant infrastrukturo, vidu [Multi-Tenancy Integrado](./multi-tenancy) por gvidado pri suverena tenant startigo, migrada kontrolado, SSO, kaj malkonstruo.
 
-## CRM Integrado
+## CRM Integrado {#crm-integration}
 
 Sinkronigu klientajn datumojn al via CRM kiam novaj klientoj registriĝas:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitika Integrado
+## Analitika Integrado {#analytics-integration}
 
 Spuru ŝlosilajn komercajn eventojn tra la klienta vivociklo:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Sekvaj Paŝoj
+## Sekvaj Paŝoj {#next-steps}
 
 - [Propra Gateway Disvolvado](./custom-gateway) — Konstruu vian propran pagan gateway
 - [Webhook Traktado](./webhooks) — Kreu proprajn webhook endpoints

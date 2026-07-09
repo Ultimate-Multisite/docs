@@ -3,7 +3,7 @@ title: Administrare clientes
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Gestionem Clientibus
+# Gestionem Clientibus {#managing-customers}
 
 La pàgina **Customers** mostra la lista de membres registrats en la vostra xarxa. Aquesta pàgina mostra informació bàsica de l'usuari com el nom, l'adreça electrònica, la última connexió i un link de **switch to** que us permet accedir al subsite de l'usuari com administrador del site.
 

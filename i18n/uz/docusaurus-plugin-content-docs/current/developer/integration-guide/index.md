@@ -3,13 +3,13 @@ title: Integratsiya qo‘llanmasi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integratsiya qo‘llanmasi
+# Integratsiya qo‘llanmasi {#integration-guide}
 
 Ushbu qo‘llanma Ultimate Multisite bilan keng tarqalgan integratsiya andozalarini, jumladan tashqi xizmatlarga ulanish, maxsus to‘lov shlyuzlarini yaratish va webhooklarni qayta ishlashni qamrab oladi.
 
 Ajratilgan tenant infratuzilmasi uchun sovereign tenant bootstrap, migratsiyani tekshirish, SSO va teardown bo‘yicha yo‘riqnoma uchun [Multi-Tenancy integratsiyasi](./multi-tenancy) sahifasiga qarang.
 
-## CRM integratsiyasi
+## CRM integratsiyasi {#crm-integration}
 
 Yangi mijozlar ro‘yxatdan o‘tganda mijoz ma’lumotlarini CRM’ingizga sinxronlang:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics integratsiyasi
+## Analytics integratsiyasi {#analytics-integration}
 
 Mijoz hayotiy sikli bo‘ylab asosiy biznes hodisalarini kuzating:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Keyingi qadamlar
+## Keyingi qadamlar {#next-steps}
 
 - [Maxsus Gateway ishlab chiqish](./custom-gateway) — O‘zingizning to‘lov shlyuzingizni yarating
 - [Webhooklarni qayta ishlash](./webhooks) — Maxsus webhook endpointlarini yarating

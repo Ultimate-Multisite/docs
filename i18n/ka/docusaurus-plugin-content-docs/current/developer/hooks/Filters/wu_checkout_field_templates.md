@@ -4,24 +4,24 @@ title: ფილტრი - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# ფილტრი: wu_checkout_field_templates
+# ფილტრი: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
 
 ჩვენი API-ები ახალი ველის შაბლონების დასამატებლად აქ უკავშირდება.
 
 არ გამოიყენოთ ეს ფილტრი პირდაპირ. ამის ნაცვლად გამოიყენეთ `wu_register_field_template()` ფუნქცია.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
 | $field_templates | `array` |  |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.0.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/managers/class-field-templates-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-field-templates-manager.php#L162)-ში, ხაზზე 162
 
 
-## აბრუნებს
+## აბრუნებს {#returns}

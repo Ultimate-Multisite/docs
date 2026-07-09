@@ -3,7 +3,7 @@ title: Bixinta Foomamada
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Foomada Checkout (Checkout Forms)
+# Foomada Checkout (Checkout Forms) {#checkout-forms}
 
 Foomada Checkout Forms waa hab fudud oo la qabsan karo inaad isku daydo qaab-dhismeedyo kala duwan marka aad rabto inaad cusub macaamiil u beddesho iibiyey.
 
@@ -36,13 +36,13 @@ Inta kale, waxaad hagaajin kartaa ama ku duvin kartaa foomiyada aad horey u hays
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Aragtida Muhiimka Editorka Foomamka Checkout
+#### Aragtida Muhiimka Editorka Foomamka Checkout {#checkout-form-editor-overview}
 
 Editorka foomamka checkout waxay bixisaa hab dhammaystiran oo aad ku dhisi karto foomamka diiwaangelintaada (registration forms). Halkan waxaa ah aragti guud oo ku saabsan qaabka editorka:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Wax Ka Bedelid Foomamka Checkout
+### Wax Ka Bedelid Foomamka Checkout {#editing-a-checkout-form}
 
 Waxaad samayn kartaa foomamyo checkout oo loo isticmaalo ujeedo kala duwan. Tusaale ahaan, waxaan diiradda saari doonnaa foomam diiwaangelin (registration form).
 
@@ -112,7 +112,7 @@ Si aad u hesho shortcode-ka foomkaaga, riix "Generate Shortcode" (Abuur Shortcod
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Fildhanka Qaybta Labada Qiimo (The Pricing Table Field)
+### Fildhanka Qaybta Labada Qiimo (The Pricing Table Field) {#the-pricing-table-field}
 
 Qaybta **Pricing Table** (Qeega Qeemaha) waxay muujinaysaa alaabahaaga foomka checkout-ka si macaamiishu u dooran karaan qorshe. Marka aad wax ka beddesho qaybtaas, waxaad dejin kartaa fursado badan:
 
@@ -130,17 +130,17 @@ Waa kan sida ay Qeega Qeemaha ugu muuqdo foomka diiwaangelinta (registration for
 
 Haddii aad alaab ku darato Qeega Qeemaha ka hor inta foomku ku darto qaybta loo baahan yahay si loo dhammaystiro habka checkout-kaas, editorka ayaa hadda muujinaya digniin (warning). Isticmaal digniintaas si aad u ku barato qaybta la'aanta ee loo baahan yahay ka hor intaadan soo saarin ama waxaad kaydsato isbeddellada foomka diiwaangelinta oo socda.
 
-### Bixitaanka Doorashada Muddada
+### Bixitaanka Doorashada Muddada {#adding-a-period-selection-toggle}
 
 Haddii aad dejisay [Price Variations](creating-your-first-subscription-product#price-variations) ee alaabtaada (tusaale qiimaha bil kasta iyo kuwa sanadkasta), waxaad ku dari kartaa meel loo doonayo doorashada **Muddada**. Meeshaas waxay muujinaysaa toggle oo u oggolaanaya macaamiisha inay u wareega muddleedka bixinta, halka jadwalka qiimaha uu si degdeg ah ugu cusboonaysiiyo.
 
-#### Tallaabta 1: Dejinta Price Variations-ka Alaabtaada
+#### Tallaabta 1: Dejinta Price Variations-ka Alaabtaada {#step-1-set-up-price-variations-on-your-products}
 
 Ka hor intaadan ku dariin meesha Doorashada Muddada, hubi in alaabtaada ay ku jiraan Price Variations la dejiyay. Tag **Ultimate Multisite > Products**, hagaaji alaabta, oo tag tab-ka **Price Variations** si aad u ku dartid muddleedka bixinta kale (tusaale: Sanadkasta qiimo yar).
 
 ![Tab-ka Price Variations ee alaabta](/img/config/product-price-variations-tab.png)
 
-#### Tallaabta 2: Ku dariista Meesha Doorashada Muddada Foomka Bixintaaga
+#### Tallaabta 2: Ku dariista Meesha Doorashada Muddada Foomka Bixintaaga {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Tag **Ultimate Multisite > Checkout Forms** oo hagaaji foomka bixintaada.
 
@@ -163,13 +163,13 @@ Ka hor intaadan ku dariin meesha Doorashada Muddada, hubi in alaabtaada ay ku ji
 
 7. Guji **Save Field**.
 
-#### Tallaadkii 3aad: Dhig Fildhanka Sare Gelinta Qiimeynta (Pricing Table)
+#### Tallaadkii 3aad: Dhig Fildhanka Sare Gelinta Qiimeynta (Pricing Table) {#step-3-position-the-field-above-the-pricing-table}
 
 Si isticmaalayaashu ugu wanaagsan, hubi in fildhanka Doorka Muddo (Period Selection field) uu soo muuqdo **ka hor** Gelinta Qiimeynta (Pricing Table field) ee tallaabada checkout-kaaga. Waxaad ficilka qaadi kartaa fildhanka si aad u dib u dejiso tartanka fildhankaas ee barnaamijka hagaajinta checkout-ka. Sidaas, macaamiishu waxay marka hore dooran doonaan mudadda la bixiyo (billing period) ka dibna waxay arki doonaan qiimaha ee mudaddaas.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Sida Loo Shaqeeyo Frontend-ka
+#### Sida Loo Shaqeeyo Frontend-ka {#how-it-works-on-the-frontend}
 
 Marka la dejiyo, macaamiisha oo booqanaya bogga diiwaangelintaada waxay arki doonaan doorka mudadda sare ee gelinta qiimeynta. Marka ay gujiyaan muddo kale oo la bixiyo:
 
@@ -177,7 +177,7 @@ Marka la dejiyo, macaamiisha oo booqanaya bogga diiwaangelintaada waxay arki doo
   * Haddii **Force Different Durations** uu xirnaado (disabled) fildhanka Gelinta Qiimeynta, alaabaha aan lahayn kala duwanaansho oo qiimo ah mudadda la dooratay ayaa lagu qarin doonaa.
   * Haddii **Force Different Durations** uu shaqaynayo (enabled), dhammaan alaabaha waxay ku sii ahaadaan muuqaalka iyadoo ay awoodaan in aan lahayn kala duwanaansho oo mudadda la dooratay (waxay muujin doonaan qiimaha kaliya ee ay leeyihiin).
 
-#### Dooro Muddo La Bixiyo Hore Iyadoo La Isticmaalayo URL-ka
+#### Dooro Muddo La Bixiyo Hore Iyadoo La Isticmaalayo URL-ka {#pre-selecting-a-billing-period-via-url}
 
 Waxaad sidoo kale hor dooran kartaa alaab iyo muddo la bixiyo iyadoo la isticmaalayo URL-ka. Ultimate Multisite wuxuu taageera qaababkan URL-ka ah:
 
@@ -185,11 +185,11 @@ Waxaad sidoo kale hor dooran kartaa alaab iyo muddo la bixiyo iyadoo la isticmaa
   * `/register/premium/12` — Wuxuu hore u dooranayaa alaabta iyo mudadda 12 bilood
   * `/register/premium/1/year` — Wuxuu hore u dooranayaa alaabta oo leh muddo 1 sano
 
-### Fildhanka Doorka Qoraalka (Template Selection Field)
+### Fildhanka Doorka Qoraalka (Template Selection Field) {#the-template-selection-field}
 
 Fildhanka **Dooro Muddo Qoraalka (Template Selection)** wuxuu macaamiisha u oggolaanayaa inay doortaan qaabka goobta (site template) marka ay ku jiraan checkout-ka. Waxay hadda ku jirtaa default-ka (default) labada nooc ee fildhanka checkout-ka ah ee **single step** iyo **multi-step** ee lagu daray Ultimate Multisite v2.6.1.
 
-#### Ku Darista Fildhanka Si Toos ah
+#### Ku Darista Fildhanka Si Toos ah {#adding-the-field-manually}
 
 Haddii aad ka shaqaynayso form oo hore loo sameeyay v2.6.1 ama laga bilaabo template bannaan:
 
@@ -200,11 +200,11 @@ Haddii aad ka shaqaynayso form oo hore loo sameeyay v2.6.1 ama laga bilaabo temp
    - **Label** — Waa madaxda (heading) ee macaamiishu arkaan sare oo ku jira grid-ka template-yada (tusaale: "Dooro template goob").
    - **Required** — Maa lahayd in macaamiishu si hore u doorto template ka hor inta aysan sii socon.
 
-#### Sida ay u shaqeeyaan
+#### Sida ay u shaqeeyaan {#how-it-works}
 
 Marka macmiil uu doorto template inta lagu guda jiro checkout-ka, Ultimate Multisite wuxuu isticmaalaa template-kaas marka la samaynayo goobta cusub ee macaamiisha. Template-yada muuqda waxay ka yimaadaan liiska **Site Templates** (Ultimate Multisite > Site Templates). Waxaan aragnaa oo kaliya template-yada loo tilmaamay inay macaamiisha u heli karaan.
 
-### Checkout-form base domains
+### Checkout-form base domains {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 wuxuu qiyafka domain-ka lagu dejiyay qaybta **Site URL** ee checkout form-ka ah isku arkaa inay yihiin "network base domains". Marka aad rabto in macaamiishu goobyo cusub ka samaystaan domain-yada la wadaagay, sida `example.com` iyo `sites.example.com`, isticmaal dejinta qaybta available-domain ee field-kaas.
 
@@ -212,6 +212,6 @@ Base domains-ka checkout form-ka la wadaagay ma aha wax la isku arko (mapping) o
 
 Hubi domain-yada gaarka ah (custom domains) ee la xiriira server-ta macaamiisha, sida `customer-example.com`. Hubi base domains-ka checkout form-ka si ay u adeegsadaan goobaha la wadaagay oo dad badan oo goobo isticmaali kara.
 
-#### Ka saarista field-ka
+#### Ka saarista field-ka {#removing-the-field}
 
 Haddii aad uusan bixin qoraallo (templates) ee website-kaaga, sii fariinta (form) ka saar qaybta "Template Selection". Macaamiishu waxay heshiin doonaan nooca template-ka ugu caansan ee la dejiyay hoos ku jira **Ultimate Multisite > Settings > Site Templates**.

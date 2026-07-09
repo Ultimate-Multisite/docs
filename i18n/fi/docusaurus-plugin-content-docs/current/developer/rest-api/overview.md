@@ -3,28 +3,28 @@ title: 'REST API:n yleiskatsaus'
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API -viite
+# REST API -viite {#rest-api-reference}
 
-## Peruskonfiguraatio
+## Peruskonfiguraatio {#base-configuration}
 
 **Perus-URL:** `{site_url}/wp-json/wu/v2/`
 **Todennus:** API-avain ja salaisuus (HTTP Basic Auth tai URL-parametrit)
 
-## Todennus
+## Todennus {#authentication}
 
-### Ota API käyttöön
+### Ota API käyttöön {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Hanki API-tunnistetiedot
+### Hanki API-tunnistetiedot {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Todennusmenetelmät
+### Todennusmenetelmät {#authentication-methods}
 
 **HTTP Basic Auth (suositeltu):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Ydinpäätepisteet
+## Ydinpäätepisteet {#core-endpoints}
 
-### 1. Asiakkaiden API
+### 1. Asiakkaiden API {#1-customers-api}
 
 **Perusreitti:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sivustojen API
+### 2. Sivustojen API {#2-sites-api}
 
 **Perusreitti:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Jäsenyyksien API
+### 3. Jäsenyyksien API {#3-memberships-api}
 
 **Perusreitti:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Tuotteiden API
+### 4. Tuotteiden API {#4-products-api}
 
 **Perusreitti:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Maksujen API
+### 5. Maksujen API {#5-payments-api}
 
 **Perusreitti:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Verkkotunnusten API
+### 6. Verkkotunnusten API {#6-domains-api}
 
 **Perusreitti:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Rekisteröinnin päätepiste
+## Rekisteröinnin päätepiste {#registration-endpoint}
 
 `/register`-päätepiste tarjoaa täydellisen checkout-/rekisteröintipolun:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Suvereenien asiakasympäristöjen päätepisteet
+## Suvereenien asiakasympäristöjen päätepisteet {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Moniasiakkuus 1.2.0 lisää suvereenien asiakasympäristöjen REST-kattavuuden integraatioille, jotka provisioivat, tarkastavat tai varmistavat eristettyjä asiakasympäristöjä.
 
@@ -242,7 +242,7 @@ Tyypilliset migraation tilan vastaukset sisältävät:
 
 Käsittele arvoa `ready: false` julkaisua edeltävänä estäjänä. Tarkista varmistuksen tiedot, korjaa tietokannan isäntäsidonta, jono, käyttäjien provisiointi tai reititysongelma ja yritä sitten varmistusta uudelleen.
 
-## Virhevastaukset
+## Virhevastaukset {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Käsittele arvoa `ready: false` julkaisua edeltävänä estäjänä. Tarkista va
 }
 ```
 
-## Sivutus ja suodatus
+## Sivutus ja suodatus {#pagination-and-filtering}
 
 **Kyselyparametrit:**
 ```http

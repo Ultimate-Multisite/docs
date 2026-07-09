@@ -4,11 +4,11 @@ title: Filtras - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filtras: wp_ultimo_site_exporter_get_option
+# Filtras: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Grąžina slugfied tinklo parinkties reikšmę.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Grąžina slugfied tinklo parinkties reikšmę.
 | $option_name | `string` | Parinkties pavadinimas. |
 | $default | `mixed` | Numatytoji reikšmė. |
 
-### Nuo
+### Nuo {#since}
 
 - 1.9.6
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) 126 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}
 Slugfield tinklo parinkties reikšmę.

@@ -3,7 +3,7 @@ title: Menaxhimi i Shteve
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Menaxhimi i Shteve
+# Menaxhimi i Shteve {#managing-sites}
 
 Shtevat (ose subshtevet) janë thelbi i biznesit tuaj WaaS. Ultimate Multisite ka 3 lloje shtevësh:
 
@@ -15,7 +15,7 @@ Shkoni te **Ultimate Multisite → Sites** për të parë të gjitha subsitet n�
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Shtimi i një Shteve
+## Shtimi i një Shteve {#viewing-sites}
 
 Klikoni butonin **Add Site** (Shtoj Shte) për të krijuar një shte të ri. Do të duhet të keni këto informacione gati:
 
@@ -25,15 +25,15 @@ Klikoni butonin **Add Site** (Shtoj Shte) për të krijuar një shte të ri. Do 
 
 Opsioni i **Kopjimi i Sitet (Copy Site)** ju lejon të krijoni një vitin e ri bazuar në një model (template) ekzistues. Kur është i aktivizuar, mund të zgjidhni cilin model do të përdorni si pikë fillestare. Sigurohuni që **Kopjimi i Medias në Duplikim** të jetë i aktivizuar për të përfshirë edhe skedarët e medies.
 
-## Menaxhimi i një Siti Ekzistues
+## Menaxhimi i një Siti Ekzistues {#adding-a-new-site}
 
 Klikoni në **Manage** (Menaxho) mbi çdo site për të hapur faqen **Edit Site** (Redigjo Siti). Këtu do të gjeni:
 
-### Informacion Bazë
+### Informacion Bazë {#managing-an-existing-site}
 
 Emri i faqes, tipi i saj, ID-ja e faqes dhe përshkrimi. Do të shihni gjithashtu domenit të mapuar, anëtarin e lidhur dhe llogarinë e klientit që vërteton faqen.
 
-### Opsionet e faqes
+### Opsionet e faqes {#basic-information}
 
 Konfigurojeni aftësitë dhe kufizimet e faqes:
 
@@ -46,7 +46,7 @@ Konfigurojeni aftësitë dhe kufizimet e faqes:
 
 Në rastin e përdorimit standard, faqet ndjekin kufizimet e vendosura në nivelin e anëtarisë (membership). Vendosja e kufizimeve në nivelin e faqes do të mbledhë dhe do të zbehet mbi cilësimet e anëtarisë.
 
-### Asociacionet
+### Asociacionet {#site-options}
 
 Mbi opsioneve të faqes, do të gjesh informacion rreth:
 
@@ -54,7 +54,7 @@ Mbi opsioneve të faqes, do të gjesh informacion rreth:
 - **Membresën** në të cilën është faqja
 - **Llogaria e klientit** e lidhur me faqen
 
-### Paneli i Dytë (Right Sidebar)
+### Paneli i Dytë (Right Sidebar) {#associations}
 
 Në anën e djathtë mund të bësh:
 

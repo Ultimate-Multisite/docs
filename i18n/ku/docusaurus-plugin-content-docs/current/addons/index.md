@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Pêvekên Ultimate Multisite
+# Pêvekên Ultimate Multisite {#ultimate-multisite-addons}
 
 Pêvek Ultimate Multisite bi taybetmendî û entegrasyonên zêde fireh dikin. Piraniya pêvekan bi pere ne û dikarin ji [ultimatemultisite.com](https://ultimatemultisite.com) bên kirîn.
 
-## Sazkirin
+## Sazkirin {#installation}
 
 Pêvek dikarin bi du awayan bên sazkirin:
 
 1. **Bi Rûpela Pêvekê** -- Biçe rûpela rêveberiya pêvekên malpera xwe di rêveberiya WordPress de
 2. **Daxistina Destan** -- Ji [Account-a xwe](https://ultimatemultisite.com/my-account/downloads/) daxîne û bi rêya Plugins > Add New bar bike
 
-## Pêvekên Berdest
+## Pêvekên Berdest {#available-addons}
 
 | Pêvek | Danasîn |
 |-------|-------------|

@@ -3,25 +3,25 @@ title: Modello Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Modello di Addon
+# Modello di Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Requisiti
+## Requisiti {#requirements}
 
 - WordPress 5.3 o superiore
 - PHP 7.4 o superiore
 - Multisite Ultimate plugin (attivo)
 
-## Installazione
+## Installazione {#installation}
 
 1. Carica i file dell'addon nella tua directory `/wp-content/plugins/`.
 2. Attiva il plugin tramite il menu 'Plugins' in WordPress.
 3. Configura le impostazioni dell'addon nell'amministrazione di rete.
 
-## Sviluppo
+## Sviluppo {#development}
 
-### Configurazione
+### Configurazione {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struttura del progetto
+### Struttura del progetto {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Test
+### Test {#testing}
 
 L'addon include un framework di test completo:
 
@@ -75,45 +75,45 @@ L'addon include un framework di test completo:
 - **Copertura dei Test**: configurata per tracciare la copertura del codice.
 - **Test Multisite**: i test vengono eseguiti in un ambiente multisito.
 
-### Standard di Codice
+### Standard di Codice {#code-standards}
 
 - **Standard di Codifica WordPress**: applicato tramite PHPCS.
 - **Compatibilità PHP 7.4+**: supportate le funzionalità PHP moderne.
 - **Analisi Statica**: integrazione PHPStan per il controllo dei tipi.
 - **Modernizzazione del Codice**: regole Rector per l'aggiornamento di PHP.
 
-### Sistema di Build
+### Sistema di Build {#build-system}
 
 - **Elaborazione degli Asset**: minificazione per file CSS/JS.
 - **Traduzione**: generazione di file POT.
 - **Imballaggio**: creazione di archivi per la distribuzione.
 - **Modalità Sviluppo**: asset non minificati per il debug.
 
-## Configurazione
+## Configurazione {#configuration}
 
 L'addon supporta varie opzioni di configurazione accessibili tramite l'interfaccia di amministrazione di rete.
 
-## Hooks e Filtri
+## Hooks e Filtri {#hooks-and-filters}
 
-### Azioni
+### Azioni {#actions}
 
 - `ultimate-multisite-addon-template_init` - Attivato dopo l'inizializzazione dell'addon
 - `ultimate-multisite-addon-template_loaded` - Attivato dopo il caricamento di tutti i file dell'addon
 
-### Filtri
+### Filtri {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifica le impostazioni dell'addon
 - `ultimate-multisite-addon-template_enabled` - Sovrascrive lo stato di abilitazione/disabilitazione dell'addon
 
-## Licenza
+## Licenza {#license}
 
 Questo addon è concesso in licenza sotto GPL v3 o successivo.
 
-## Supporto
+## Supporto {#support}
 
 Per supporto e documentazione, visita [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## Changelog
+## Changelog {#changelog}
 
 - Versione 1.0.1 (2025-09-28): rinomina prefisso a ultimate-multisite; aggiorna dominio di testo; incremento versione.
 - Versione (2025-09-28): rinomina prefisso a ultimate-multisite; aggiorna dominio di testo; incremento versione.

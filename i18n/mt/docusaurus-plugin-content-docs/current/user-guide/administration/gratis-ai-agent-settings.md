@@ -3,16 +3,16 @@ title: Issettjar ta’ Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Settings ta' Gratis AI Agent
+# Settings ta' Gratis AI Agent {#gratis-ai-agent-settings}
 
 L-iskrin **Settings → Advanced** f'Gratis AI Agent jipprovdi konfigurazzjoni fil-livell ta' amministratur għal integrazzjonijiet tal-backend. Din il-paġna tiddokumenta t-trażmissjoni ta' feedback, iċ-ċwievet tal-fornitur tat-tiftix, is-setup tas-servizz Superdav immaniġġjat, il-kontrolli ta' Google Calendar, is-settings tal-SMS ta' TextBee, u feature flags fuq in-network kollu.
 
-## Aċċess għas-Settings
+## Aċċess għas-Settings {#accessing-settings}
 
 1. Fl-amministrazzjoni ta' WordPress, mur **Gratis AI Agent → Settings**.
 2. Ikklikkja t-tab **Advanced**.
 
-## Konfigurazzjoni tal-Endpoint tal-Feedback
+## Konfigurazzjoni tal-Endpoint tal-Feedback {#feedback-endpoint-configuration}
 
 L-endpoint tal-feedback jirċievi talbiet POST mill-aġent tal-AI kull meta utent jibgħat feedback permezz tal-buttuna thumbs-down, il-banner auto-prompt, jew il-kmand `/report-issue`.
 
@@ -21,7 +21,7 @@ L-endpoint tal-feedback jirċievi talbiet POST mill-aġent tal-AI kull meta uten
 | **Feedback Endpoint URL** | Il-URL li jirċievi s-sottomissjonijiet tal-feedback bħala talbiet HTTP POST b'korp JSON. |
 | **Feedback API Key** | bearer token mibgħut fl-`Authorization` header ta' kull talba ta' feedback. Ħallih vojt jekk l-endpoint tiegħek ma jeħtieġx awtentikazzjoni. |
 
-### Payload JSON Mistenni
+### Payload JSON Mistenni {#expected-json-payload}
 
 L-endpoint tal-feedback tiegħek irid jaċċetta korp JSON b'mill-inqas l-oqsma li ġejjin:
 
@@ -36,7 +36,7 @@ L-endpoint tal-feedback tiegħek irid jaċċetta korp JSON b'mill-inqas l-oqsma 
 
 Jistgħu jkunu preżenti oqsma addizzjonali fil-payload skont il-kuntest tal-konverżazzjoni.
 
-### Valuri ta' `triage_category`
+### Valuri ta' `triage_category` {#triagecategory-values}
 
 Is-saff tat-triage tal-AI jassenja wieħed mill-valuri li ġejjin lil `triage_category` qabel ma jittrażmetti l-payload:
 
@@ -47,7 +47,7 @@ Is-saff tat-triage tal-AI jassenja wieħed mill-valuri li ġejjin lil `triage_ca
 | `inappropriate_content` | It-tweġiba kien fiha kontenut li m'għandux jintwera lill-utenti. |
 | `other` | Il-feedback ma qabilx ma' kategorija magħrufa. |
 
-### Awtentikazzjoni
+### Awtentikazzjoni {#authentication}
 
 Jekk l-endpoint tiegħek jeħtieġ awtentikazzjoni, issettja l-qasam **Feedback API Key** għall-bearer token tiegħek. L-aġent jibgħat:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Jekk il-qasam **Feedback API Key** ikun vojt, ma jintbagħat l-ebda `Authorization` header.
 
-### Diżattivazzjoni tal-Ġbir tal-Feedback
+### Diżattivazzjoni tal-Ġbir tal-Feedback {#disabling-feedback-collection}
 
 Ħalli ż-żewġ oqsma **Feedback Endpoint URL** u **Feedback API Key** vojta. Il-buttuna thumbs-down u l-UI tal-feedback jibqgħu viżibbli għall-utenti, iżda s-sottomissjonijiet ma jiġux trażmessi lil xi servizz estern.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Ukoll fuq it-tab **Advanced**, il-qasam **Brave Search API Key** jattiva l-abbiltà [Tiftix fuq l-Internet](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ It-tikketta tal-qasam tinkludi link li tista' tikklikkja fuqu għall-paġna ta' 
 
 Ara [Tiftix fuq l-Internet](../configuration/internet-search) għad-dokumentazzjoni għall-utenti finali dwar din il-karatteristika.
 
-## Servizz Superdav Immaniġġjat
+## Servizz Superdav Immaniġġjat {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 iżid endpoints tas-servizz Superdav immaniġġjat u provisioning awtomatiku tal-konnessjoni għal siti appoġġjati. Uża dawn il-kontrolli meta s-sit tiegħek għandu jikkonnettja mal-fornitur ospitat minflok endpoint tas-servizz ikkonfigurat manwalment.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 iżid endpoints tas-servizz Superdav immaniġġjat u p
 
 Wara l-provisioning, salva s-settings u vverifika l-istatus tal-konnessjoni qabel ma tiddependi fuq workflows tas-servizz immaniġġjat. Jekk il-provisioning ifalli, irrevedi l-gwida ta' prova mill-ġdid murija u kkonferma li s-sit għandu permess juża l-fornitur ospitat.
 
-## Konfigurazzjoni ta' Google Calendar
+## Konfigurazzjoni ta' Google Calendar {#google-calendar-configuration}
 
 Meta l-karatteristiċi tal-kalendarju ta' Superdav AI Agent v1.18.0 ikunu attivati, l-aġent jista' jaqra kalendarji kkonfigurati u dettalji tal-avvenimenti. L-għodod tal-kalendarju huma orjentati lejn il-qari u huma utli għal tfakkiriet konxji tal-iskeda, follow-up mal-parteċipanti, u tqabbil tal-kuntatti.
 
@@ -97,7 +97,7 @@ Meta l-karatteristiċi tal-kalendarju ta' Superdav AI Agent v1.18.0 ikunu attiva
 
 Żomm il-kredenzjali tal-kalendarju limitati għall-kalendarji li l-aġent jeħtieġ. Erġa' qabbad jew ibdel il-kredenzjali jekk l-istatus jindika token skadut.
 
-## Notifiki SMS ta' TextBee
+## Notifiki SMS ta' TextBee {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 iżid TextBee bħala fornitur tal-SMS għal workflows tan-notifiki kkonfigurati. In-notifiki SMS għandhom jiġu akkoppjati ma' punti ta' approvazzjoni umana għal messaġġi sensittivi jew immirati lejn l-utenti.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 iżid TextBee bħala fornitur tal-SMS għal workflows 
 
 Ibgħat messaġġ tat-test biss lil numru proprjetà ta' amministratur, imbagħad ikkonferma l-imġiba tal-punt ta' approvazzjoni qabel tattiva tfakkiriet skedati jew immirati lejn il-parteċipanti.
 
-## Feature Flags
+## Feature Flags {#feature-flags}
 
 Introdotta wkoll f'v1.9.0, it-tab **Settings → Feature Flags** tipprovdi swiċċijiet toggle għal funzjonalità fakultattiva. Kull flag huwa jew attivat jew diżattivat fuq in-network kollu; bħalissa m'hemm l-ebda override għal kull sit.
 
-### Aċċess għall-Feature Flags
+### Aċċess għall-Feature Flags {#accessing-feature-flags}
 
 1. Fl-amministrazzjoni ta' WordPress, mur **Gratis AI Agent → Settings**.
 2. Ikklikkja t-tab **Feature Flags**.
 
-### Flags tal-Kontroll tal-Aċċess
+### Flags tal-Kontroll tal-Aċċess {#access-control-flags}
 
 | Bandiera | Default | Deskrizzjoni |
 |---|---|---|
@@ -127,7 +127,7 @@ Introdotta wkoll f'v1.9.0, it-tab **Settings → Feature Flags** tipprovdi swiċ
 | **Ħalli Aċċess għas-Subscriber** | Mitfi | Meta jkun attivat, utenti bir-rwol `subscriber` jistgħu jużaw l-interface taċ-chat iżda jkunu limitati għal kapaċitajiet ta’ qari biss (l-ebda ħolqien ta’ posts jew bidliet fis-settings). |
 | **Itfi għal Min Mhux Membri** | Mitfi | Jintegra mal-istatus ta’ sħubija ta’ Ultimate Multisite. Meta jkun attivat, iċ-chat jinħeba għal siti li m’għandhomx sħubija attiva. |
 
-### Bnadar tal-Branding
+### Bnadar tal-Branding {#branding-flags}
 
 | Bandiera | Default | Deskrizzjoni |
 |---|---|---|
@@ -136,7 +136,7 @@ Introdotta wkoll f'v1.9.0, it-tab **Settings → Feature Flags** tipprovdi swiċ
 | **Aħbi l-Picker tal-Agent** | Mitfi | Meta jkun attivat, l-utenti ma jistgħux jaqilbu bejn il-ħames agents inkorporati. L-agent attwali jkun fiss għal dak li jkun ikkonfigurat bħala d-default f’Settings → General. |
 | **Uża l-Ikona tas-Sit bħala Avatar taċ-Chat** | Mitfi | Jissostitwixxi l-ikona default tal-AI fil-header tal-widget taċ-chat bl-ikona tas-sit WordPress (issettjata taħt Appearance → Customize → Site Identity). |
 
-### Bnadar tas-Sigurtà tal-Awtomazzjoni
+### Bnadar tas-Sigurtà tal-Awtomazzjoni {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 jintroduċi porti ta’ approvazzjoni umana u rekords ta’ tfakkiriet għal eżekuzzjonijiet ta’ awtomazzjoni aktar siguri. Dawn il-kontrolli jistgħu jidhru fil-feature flags jew fis-settings avvanzati tal-awtomazzjoni, skont il-pakkett installat.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 jintroduċi porti ta’ approvazzjoni umana u rekords 
 | **Attiva l-Għodod tal-Kalendarju** | Mitfi sakemm jiġi kkonfigurat | Jippermetti lill-agent jaqra kalendarji u avvenimenti Google kkonfigurati. |
 | **Attiva Notifiki SMS** | Mitfi sakemm jiġi kkonfigurat | Jippermetti workflows approvati jibagħtu notifiki SMS ta’ TextBee wara li l-kredenzjali jiġu ssejvjati. |
 
-### Applikazzjoni tal-Bidliet
+### Applikazzjoni tal-Bidliet {#applying-changes}
 
 Ikklikkja **Save Settings** wara li taqleb kwalunkwe bandiera. Il-bidliet jidħlu fis-seħħ immedjatament — ma huwiex meħtieġ cache flush jew riattivazzjoni tal-plugin.

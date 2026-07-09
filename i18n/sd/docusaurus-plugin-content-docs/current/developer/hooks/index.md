@@ -3,11 +3,11 @@ title: هُڪس جو حوالو
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks حوالو
+# Hooks حوالو {#hooks-reference}
 
 Ultimate Multisite ۾ سڀني **59 actions** ۽ **118 filters** لاءِ پاڻمرادو ٺاهيل دستاويز.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — تصديق واري ريڊائريڪٽ کان اڳ هلندو آهي.
 - [set_auth_cookie](./Actions/set_auth_cookie) — تصديق واري ڪوڪي سيٽ ٿيڻ کان بلڪل اڳ هلندو آهي.
@@ -70,7 +70,7 @@ Ultimate Multisite ۾ سڀني **59 actions** ۽ **118 filters** لاءِ پاڻ
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — object database ۾ stored ٿيڻ کان پوءِ هلندو آهي.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin developers کي unlocking process ۾ actions شامل ڪرڻ جي اجازت ڏيو.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — تصديق واري cookie جي ختم ٿيڻ واري مدت کي ڇاڻيندو آهي.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — تصديق واري redirect scheme کي ڇاڻيندو آهي.

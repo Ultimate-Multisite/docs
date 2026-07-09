@@ -3,7 +3,7 @@ title: Konfigurera PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Konfigurera PayPal-gatewayen (v2)
+# Konfigurera PayPal-gatewayen (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**VIKTIGT MEDDELANDE: Den här artikeln gäller Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Precis som Stripe används PayPal i stor utsträckning för onlinebetalningar, s
 
 Observera att du behöver ha ett **PayPal Business-konto** för att få de API-uppgifter som behövs för denna integration.
 
-## Aktivera PayPal i ditt nätverk
+## Aktivera PayPal i ditt nätverk {#enabling-paypal-on-your-network}
 
 För att aktivera PayPal som en tillgänglig betalningsmetod i ditt nätverk går du till fliken **Ultimate Multisite > Settings > Payments** och markerar rutan bredvid PayPal.
 
 ![Aktivera PayPal i aktiva betalningsgateways](/img/config/settings-payment-gateways.png)
 
-## Använda den guidade konfigurationsguiden
+## Använda den guidade konfigurationsguiden {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 lägger till en guidad PayPal-konfigurationsguide i inställningarna för betalningsgateway. När du har aktiverat PayPal använder du guiden på **Ultimate Multisite > Settings > Payments** för att välja hur du vill ansluta gatewayen och bekräfta vilka uppgifter som fortfarande behövs innan du sparar.
 
@@ -30,7 +30,7 @@ Guiden stöder två konfigurationsvägar:
 
 Om du inte ser OAuth-alternativet i guiden slutför du flödet för manuell inmatning av uppgifter nedan. Gatewayen fungerar med samma PayPal Business API-uppgifter som tidigare Ultimate Multisite 2.x-versioner.
 
-## Hämta PayPal API-uppgifter
+## Hämta PayPal API-uppgifter {#getting-the-paypal-api-credentials}
 
 När PayPal har aktiverats som betalningsgateway behöver du fylla i fälten för PayPal API **Username**, PayPal API **Password** och PayPal API **Signature**.
 

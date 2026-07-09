@@ -3,7 +3,7 @@ title: WooCommerce 통합 변경 로그
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce 통합 변경 로그
+# WooCommerce 통합 변경 로그 {#woocommerce-integration-changelog}
 
 버전 2.2.0 - 2026-07-01에 릴리스됨
 * 신규: Ultimate Multisite 세금 금액이 이제 결제 시 별도의 WooCommerce 수수료 항목으로 표시되어, 결제 전에 세금 합계를 더 명확하게 확인할 수 있습니다.

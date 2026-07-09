@@ -3,11 +3,11 @@ title: Zoznam zmien
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Záznam zmien
+# Záznam zmien {#changelog}
 
-## 1.9.0 — Vydané 2026-04-28
+## 1.9.0 — Vydané 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nové
+### Nové {#new}
 
 - **Schopnosť `create_contact_form`** — vytvorí kontaktný formulár pomocou aktívneho formulárového pluginu (Contact Form 7, WPForms, Fluent Forms alebo Gravity Forms) a vráti shortcode pripravený na vloženie do ľubovoľného príspevku alebo stránky.
 - **Schopnosť `set_featured_image`** — priradí príspevku alebo stránke ilustračný obrázok z existujúceho ID prílohy v knižnici médií alebo zo vzdialenej URL; pri zadaní URL obrázok automaticky importuje.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Obnoviť poslednú reláciu** — panel chatu teraz automaticky znova načíta najnovšiu konverzáciu pri načítaní stránky aj pri otvorení widgetu, takže kontext sa pri navigácii medzi stránkami nikdy nestratí.
 - **Odkazy akcií pluginu** — rýchle odkazy na Nastavenia a Register schopností sa teraz zobrazujú na obrazovke WordPress **Pluginy → Nainštalované pluginy** pod popisom pluginu.
 
-### Vylepšené
+### Vylepšené {#improved}
 
 - **Opakovanie zdroja obrázkov** — agent teraz pri zlyhaní sťahovania skúsi znova všetky nakonfigurované bezplatné zdroje obrázkov predtým, než použije AI vygenerovaný obrázok.
 - **Panel informácií o modeli** — vždy viditeľný v hlavičke chatu; po prvej správe už nie je skrytý.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Prepracovanie chat widgetu** — jednotná ikona AI nahrádza predchádzajúci vlastný avatar; je konzistentná so systémom vstavaných agentov.
 - **Premena URL na odkazy** — URL zobrazené v systémových správach a bublinách chybových správ sa teraz vykresľujú ako klikateľné odkazy.
 
-### Opravené
+### Opravené {#fixed}
 
 - **Objaviteľnosť schopností** — opravené popisy, odkazy v systémovom prompte a zarovnanie namespace, aby sa všetky schopnosti spoľahlivo zobrazovali v zozname nástrojov agenta.
 - **Cache poskytovateľov** — poskytovatelia sa teraz ukladajú do cache pre celú stránku cez počítadlo verzií, čím sa predchádza problémom so zastaranými poskytovateľmi v sieťach multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Vydané 2026-04-09
+## 1.4.0 — Vydané 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nové
+### Nové {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — spúšťa Agent Capabilities v1 benchmark suite z príkazového riadka pre CI pipelines a pracovné postupy hodnotenia modelov. Podporuje spustenia po jednotlivých otázkach, prepísania poskytovateľa/modelu a výstup JSON/CSV.
 - **Agent Capabilities v1 benchmark suite** — štruktúrovaná sada komplexných, viackrokových promptov, ktoré preverujú celý rozsah schopností, so skórovaním a reportovaním tokenov/trvania.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Benchmarková otázka pre reštauračný web** (`q-restaurant-website`) — end-to-end test pokrývajúci registráciu CPT, dizajnový systém, navigáciu a objavovanie pluginov.
 - **Pluginy konektorov poskytovateľov AI** pridané do WordPress Playground blueprintov na rýchlejšie nastavenie lokálneho vývoja.
 
-### Vylepšené
+### Vylepšené {#improved-1}
 
 - README aktualizované o dokumentáciu konektorov poskytovateľov AI a pokyny na nastavenie.
 
-### Opravené
+### Opravené {#fixed-1}
 
 - Vyriešených 25 zlyhaní PHPUnit testov na vetve `main`.
 - Opravený formát URL GitHub releases v `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Predchádzajúce poznámky k vydaniu sú udržiavané v repozitári pluginu._

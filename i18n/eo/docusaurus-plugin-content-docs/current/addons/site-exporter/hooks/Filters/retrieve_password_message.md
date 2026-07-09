@@ -4,11 +4,11 @@ title: Filtrilo - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filtro: retrieve_password_message
+# Filtro: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Filtras la mesaĝan korpon de la retpoŝto por pasvorta restarigo.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Filtras la mesaĝan korpon de la retpoŝto por pasvorta restarigo.
 | $user_login | `string` | La uzantnomo por la uzanto. |
 | $user_data | `\WP_User` | `WP_User`-objekto. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.8.0
 - 4.1.0: Added <code>$user_login</code> and <code>$user_data</code> parameters.
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) ĉe linio 149
 
 
-## Revenoj
+## Revenoj {#returns}
 Defaŭlta retpoŝta mesaĝo.

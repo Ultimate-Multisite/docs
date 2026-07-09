@@ -3,7 +3,7 @@ title: Ugradba paketa
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Onavaditev paketa (v2)
+# Onavaditev paketa (v2) {#upgrading-a-plan-v2}
 
 _**POMEMBNE OPOMENJE: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 
@@ -27,7 +27,7 @@ Po dokončanju plačila bodo novi produkt(i) dodani na račun vaših strank in v
 
 ##
 
-## Potnji za izboljšanje in spuščanje (Upgrade and Downgrade Paths)
+## Potnji za izboljšanje in spuščanje (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Na vsakem svojem produktu boste imeli tab **Up & Downgrades**. Prvi izbor na tej tab je polje z imenom **Plan Group**.
 

@@ -3,9 +3,9 @@ title: Breytingaskrá Ultimate AI Connector fyrir samhæfða endapunkta
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector fyrir samhæfa endapunkta breytingaskrá
+# Ultimate AI Connector fyrir samhæfa endapunkta breytingaskrá {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Útgáfa 2.0.0 — Gefin út 2026-04-24
+## Útgáfa 2.0.0 — Gefin út 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Nýtt: Stuðningur við marga veitendur — stilltu marga AI-endapunkta og beindu beiðnum með sjálfvirku varavali milli veitenda.
 * Lagfæring: Multi-provider SDK-samþætting með réttum veitendaauðkennum, skráningar-URL-um og afmörkun HTTP-síu fyrir hvern veitanda.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Lagfæring: Útrýmdi hamlandi HTTP-beiðni sem keyrði við hverja síðuhleðslu.
 * Bætt: GitHub Actions verkflæði uppfærð í Node.js 24.
 
-## Útgáfa 1.0.0 — Fyrsta útgáfa
+## Útgáfa 1.0.0 — Fyrsta útgáfa {#version-100--initial-release}

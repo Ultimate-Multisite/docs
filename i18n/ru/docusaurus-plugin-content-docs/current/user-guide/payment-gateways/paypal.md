@@ -3,7 +3,7 @@ title: Настройка PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Настройка шлюза PayPal (v2)
+# Настройка шлюза PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 
@@ -13,13 +13,13 @@ _**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к 
 
 Обратите внимание, что для получения учетных данных API, необходимых для этой интеграции, вам нужно иметь **бизнес-аккаунт PayPal**.
 
-## Включение PayPal в вашей сети
+## Включение PayPal в вашей сети {#enabling-paypal-on-your-network}
 
 Чтобы включить PayPal как доступный способ оплаты в вашей сети, перейдите на вкладку **Ultimate Multisite > Settings > Payments** и установите флажок рядом с PayPal.
 
 ![Включение PayPal в активных платежных шлюзах](/img/config/settings-payment-gateways.png)
 
-## Использование мастера настройки
+## Использование мастера настройки {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 добавляет мастер настройки PayPal в настройки платежного шлюза. После включения PayPal используйте мастер в **Ultimate Multisite > Settings > Payments**, чтобы выбрать, как вы хотите подключить шлюз, и подтвердить, какие учетные данные всё еще нужны перед сохранением.
 
@@ -30,7 +30,7 @@ Ultimate Multisite 2.10.0 добавляет мастер настройки Pay
 
 Если вы не видите опцию OAuth в мастере, выполните описанный ниже процесс ручного ввода учетных данных. Шлюз работает с теми же учетными данными PayPal Business API, что и предыдущие выпуски Ultimate Multisite 2.x.
 
-## Получение учетных данных PayPal API
+## Получение учетных данных PayPal API {#getting-the-paypal-api-credentials}
 
 После включения PayPal в качестве платежного шлюза вам нужно будет заполнить поля для PayPal API **Username** , PayPal API **Password** и PayPal API **Signature**.
 

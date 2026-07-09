@@ -3,11 +3,11 @@ title: WP-CLI רעפֿערענץ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI רעפֿערענץ
+# WP-CLI רעפֿערענץ {#wp-cli-reference}
 
 Gratis AI Agent קומט מיט אַ `wp gratis-ai-agent` באַפֿעלן־משפּחה פֿאַר דורכפֿירן בענטשמאַרקס אויפֿן אַגענט, פֿאַרוואַלטן פֿעיִקייטן, און נאָכפֿרעגן אַגענט־סטאַטוס פֿון דער באַפֿעלן־שורה. אַלע באַפֿעלן דאַרפֿן WP-CLI 2.0 אָדער העכער.
 
-## אינסטאַלירונג
+## אינסטאַלירונג {#installation}
 
 די WP-CLI באַפֿעלן ווערן רעגיסטרירט אויטאָמאַטיש ווען דער plugin איז אַקטיוו. באַשטעטיקט מיט:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 לויפֿט די אַגענט־פֿעיִקייטן בענטשמאַרק־סוויט — אַ זאַמלונג קאָמפּליצירטע, מאַלטי־שריט פּראָמפּטן וואָס פּרוּוון אויס דעם גאַנצן פֿעיִקייטן־אומפֿאַנג. ניצט דאָס צו אָפּשאַצן מאָדעל־פֿאָרשטעלונג, פֿאַרגלייכן AI־פּראָוויידערס, אָדער וואַלידירן פֿעיִקייטן־פּעקלעך איידער אַרויסשטעלן אין פּראָדוקציע.
 
-### סינאָפּסיס
+### סינאָפּסיס {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### אָפּציעס
+### אָפּציעס {#options}
 
 | אָפּציע | באַשרײַבונג |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | אַרויסגאַנג־פֿאָרמאַט: `table` (פעליקייַט), `json`, `csv` |
 | `--save` | היט די בענטשמאַרק־רעזולטאַטן אין דער דאַטאַבאַזע פֿאַר היסטאָרישן פֿאַרגלײַך |
 
-### בײַשפּילן
+### בײַשפּילן {#examples}
 
 לויף די גאַנצע בענטשמאַרק־סוויט מיטן איצטיקן פּראָוויידער און מאָדעל:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### אַרויסגאַנג
+### אַרויסגאַנג {#output}
 
 דער בענטשמאַרק גיט אַרויס איין ריי פּער פֿראַגע מיט די ווײַטערדיקע זיילן:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### בענטשמאַרק־פֿראַגעס
+### בענטשמאַרק־פֿראַגעס {#benchmark-questions}
 
 די פעליקייַט־סוויט נעמט אַרײַן:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 פֿאַרוואַלט אינסטאַלירטע פֿעיִקייטן און פֿעיִקייטן־פּעקלעך.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 ווײַזט אַלע רעגיסטרירטע פֿעיִקייטן, זייער מקור (קערן אָדער פּעקל), און זייער איצטיקן סטאַטוס.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 לאָדט אַראָפּ און אַקטיוויזירט אַ פֿעיִקייטן־פּעקל פֿון דעם רעגיסטרי.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 דיסייבלט אַ ספּעציפֿישע פֿעיִקייט אָן צו באַזײַטיקן דעם פּעקל. נוצלעך פֿאַר באַגרענעצן דעם אַגענטס אומפֿאַנג אויף אַ געוויסער וועבזײַט.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 אַקטיוויזירט ווידער אַ פֿריִער דיסייבלטע פֿעיִקייט.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 ווײַזט די איצטיקע אַגענט־קאָנפֿיגוראַציע און פֿאַרבינדונג־סטאַטוס.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 ווײַזט לעצטע אַגענט־אַקטיוויטעט פֿון דעם דעבאַג־לאָג.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 שטעלט צוריק אַגענט־צושטאַנד: רייניקט אויס אַרײַנגעשפּריצטן CSS, באַזײַטיקט אַגענט־רעגיסטרירטע CPTs און טאַקסאָנאָמיעס, שטעלט צוריק גלאבאַלע סטילן, און ליידיקט דעם אַגענטס אָפּציעס־קאַש. באַזײַטיקט נישט דעם plugin אָדער זײַנע סעטינגס.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## אַרויסגאַנג־קאָדן
+## אַרויסגאַנג־קאָדן {#exit-codes}
 
 אַלע באַפֿעלן גייען אַרויס מיט `0` בײַ הצלחה. נישט־נול אַרויסגאַנג־קאָדן:
 

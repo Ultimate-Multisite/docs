@@ -4,11 +4,11 @@ title: ຕົວກອງ - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# ຕົວກັ່ນຕອງ: wp_ultimo_render_vars
+# ຕົວກັ່ນຕອງ: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມຕົວແປພິເສດເຂົ້າໃນບໍລິບົດການ render ແບບທົ່ວໄປ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | ຊື່ຂອງ view ທີ່ຈະຖືກ render. |
 | $default_view | `string` | ຊື່ຂອງ fallback_view |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ຖືກກຳນົດໃນ [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) ທີ່ແຖວ 31
 
 
-## ສົ່ງຄືນ
+## ສົ່ງຄືນ {#returns}

@@ -3,9 +3,9 @@ title: Plurreta ŝanĝprotokolo
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Plur-reta ŝanĝoprotokolo
+# Plur-reta ŝanĝoprotokolo {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nova: Antaŭrigardilo de retaj ŝablonoj — foliumu kaj antaŭrigardu retajn ŝablonojn per viva panelo antaŭ aĉeto.
 * Nova: Elektilo de reta ŝablono ĉe pago — klientoj povas elekti retan ŝablonon dum la aliĝa pagofluo.
 * Nova: Trans-reta magia-liga SSO — klientoj povas aliri subretojn glate per magia-liga aŭtentikigo.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Korekto: Gardas kontraŭ nedifinita `network_id` ŝlosilo en reteja demanda amplekso.
 * Korekto: Reta permeskontrolo antaŭ kuntekstŝanĝo malhelpas erarojn pri tabela eco de `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Korekto: Kreado de nova reto.
 * Korekto: Bildigo de menuoj.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Ĝisdatigita al Plugin Update Checker v5
 * Aldonitaj modernaj WordPress kromprogramaj kaplinioj
 * Plibonigita kongruo kun plej novaj WordPress versioj
 
-### 1.0.2
+### 1.0.2 {#102}
 * Cimerkorektoj kaj rendimentaj plibonigoj
 * Plibonigita reta izoliteco
 
-### 1.0.0
+### 1.0.0 {#100}
 * Komenca eldono
 * Kerna plur-reta funkciado
 * Integriĝo kun Multisite Ultimate

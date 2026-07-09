@@ -3,7 +3,7 @@ title: Zapier integracija
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integracija Ultimate Multisite sa Zapierom
+# Integracija Ultimate Multisite sa Zapierom {#integrating-ultimate-multisite-with-zapier}
 
 U jednom od članaka razgovarali smo o [Webhooks](webhooks.md) i kako se mogu koristiti za integraciju s aplikacijama trećih strana.
 
@@ -15,7 +15,7 @@ Možete kreirati **Okidače** koji će se pokrenuti kada se događaji dese na va
 
 Ovo je moguće jer **Ultimate Multisite Zapierovi okidači** i akcije rade putem [REST API-ja](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kako početi
+## Kako početi {#how-to-start}
 
 Prvo, potražite Ultimate Multisite na listi Zapier aplikacija. Alternativno, možete kliknuti [ovaj link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ U polje URL unesite puni URL svoje mreže, uključujući protokol (HTTP ili HTTP
 
 Kliknite dugme **Da, nastavi** da pređete na sljedeći korak. Ako sve bude radilo, trebao bi vas dočekati vaš novi povezani Account! Kliknite **Nastavi** da kreirate novi okidač.
 
-## Kako kreirati novi okidač
+## Kako kreirati novi okidač {#how-to-create-a-new-trigger}
 
 Sada kada je vaš Account povezan, možete vidjeti dostupne događaje. Odaberimo događaj **payment_received** za ovaj vodič.
 
@@ -67,7 +67,7 @@ U ovoj fazi, Zapier će testirati može li vaš Zap **dohvatiti specifični payl
 
 U našem vodiču test je **uspješno završen** i vratio je primjer informacija payload-a. Ove primjer informacije bit će korisne da nas vode tokom kreiranja akcija. Vaš okidač je sada kreiran i spreman za povezivanje s drugim aplikacijama.
 
-## Kako kreirati akcije
+## Kako kreirati akcije {#how-to-create-actions}
 
 Akcije koriste informacije iz drugih okidača za kreiranje novih unosa u vašoj mreži.
 
@@ -79,7 +79,7 @@ U sljedećem koraku ćete ili kreirati svoju autentifikaciju, baš kao što smo 
 
 ![Odabir autentifikacije za Zapier akciju](/img/admin/webhooks-list.png)
 
-### Postavljanje akcije
+### Postavljanje akcije {#setting-up-the-action}
 
 Ovo je **glavni korak akcije** i ovdje su stvari malo drugačije. Prva informacija koju ćete odabrati je **Stavka**. Stavka je **informacijski model** vaše mreže kao što su **Klijenti, Plaćanja, Stranice, Emailovi** i drugi.
 

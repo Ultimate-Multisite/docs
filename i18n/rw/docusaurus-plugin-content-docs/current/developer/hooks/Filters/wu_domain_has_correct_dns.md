@@ -4,11 +4,11 @@ title: Muyunguruzi - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Muyunguruzi: wu_domain_has_correct_dns
+# Muyunguruzi: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Emerera abategura amacomeka kongeramo igenzura rishya kugira ngo basobanure ibisubizo.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Emerera abategura amacomeka kongeramo igenzura rishya kugira ngo basobanure ibis
 | $domain | `self` | Urugero rwa domain ruriho ubu. |
 | $domains_and_ips | `array` | Urutonde rwa domain na IP byabonetse mu ishakisha rya DNS. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.0.4
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) ku murongo wa 455
 
 
-## Ibyo isubiza
+## Ibyo isubiza {#returns}
 Niba DNS yateguwe neza cyangwa itateguwe neza.

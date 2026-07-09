@@ -3,11 +3,11 @@ title: Fitantanana ny Mail an'ny Rafitra
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Fitera ny Mail an-tserasera
+# Fitera ny Mail an-tserasera {#managing-system-emails}
 
 Ny Ultimate Multisite dia mandefa maila maro ho an'ny zavatra samihafa toy ny fanamaorana fidirana, famindrana vola, ary fiovana amin'ny fandraisana anjara. Afaka manova ireo modely maila ireo mba hifanaraka amin'ny marika (brand) anareo ianao.
 
-## Fijerena Mailan-tserasera
+## Fijerena Mailan-tserasera {#viewing-system-emails}
 
 Mandehana any amin'i **Ultimate Multisite → Settings** ary tsindrio ny tabilao **Emails** mba hijerena ny fepetra mifandraika amin'ny maila.
 
@@ -21,7 +21,7 @@ Afaka manova modely maila tsirairay ianao amin'ny alalan'ny system email editor:
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Fampidirana Modely Maila Vaovao
+## Fampidirana Modely Maila Vaovao {#importing-new-email-templates}
 
 Ny dikan-teny vaovao sy ny add-on an'ny Ultimate Multisite dia mety mametraka modely maila vaovao. Mba hisorohana fifanolanana, tsy voafidy ho voaray azy ireo avy aho — mila mampiditra azy ireo manokana ianao.
 
@@ -32,7 +32,7 @@ Mba hampidirana modely maila vaovao:
 3. Ampiana (Toggle) ny safidy **Import Emails** mba hijerena ireo modely azo ampiasaina
 4. Safidio ireo modely tianao hampidirina ary manamarina
 
-## Famohazana Modely Maila
+## Famohazana Modely Maila {#resetting-email-templates}
 
 Raha toa ka nanova modely maila ianao ary te hamerina amin'ny votoaty fototra (default content), dia misy safidy roa ianao:
 

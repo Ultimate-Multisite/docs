@@ -3,7 +3,7 @@ title: Mailchimp ענדערונגען־לאָג
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp ענדערונגס־לאָג
+# Mailchimp ענדערונגס־לאָג {#mailchimp-changelog}
 
 ווערסיע: 1.1.1 - אַרויסגעלאָזט דעם 2025-09-28
 

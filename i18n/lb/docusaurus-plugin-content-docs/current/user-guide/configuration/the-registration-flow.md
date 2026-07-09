@@ -3,13 +3,13 @@ title: De Registrierigsfluss
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# De Registrierigsablauf (v2)
+# De Registrierigsablauf (v2) {#the-registration-flow-v2}
 
 _**WICHTIGE NOTIZ: Dä Artikel bezieht sich uf Ultimate Multisite Version 2.x.**_
 
 User chönne uf verschidde Wëssen zu Ier Netz registriere. Si chönne Ier Registrierungsformular oder en teilbare Link zu enger voregschuelte Plan nutze. Hie zeigemer, wéi Ier Kunde uf Ier Netz registriere chönne, mit de verfügbare Wegin und wat danach passiert, wenn si sich registriere.
 
-## Mit em Registrierungsformular:
+## Mit em Registrierungsformular: {#using-the-registration-form}
 
 Das isch de standardregistrierigsablauf. Dir erstellt en Registrierungsseite mit eme **checkout form**, und do wä si Ier Kunde hige, um uf Ier Netz z'registriere und e Plan abzschlüsse. Dir chönntet verschidde Registrierungsseite ha, jede mit eme andere Formular, wenn Dir das wëllt.
 
@@ -35,13 +35,13 @@ Wenn si sich für en bezahlte Plan registriert händ oder d'E-Mail-Verifizierig 
 
 ![Site aktiviert mit Link zum Ilogge i Dashboard](/img/frontend/site-activated.png)
 
-## Verwende en teilbare Link:
+## Verwende en teilbare Link: {#using-a-shareable-link}
 
 De Prozess vo de Registrierig mit eme teilbare Link isch im Grunde glych wie s'Registrierigsformular, de einzig Unterschied isch, dass si mit eme teilbare Link Produkt oder en Website-Template scho vorab uf em Checkout-Formular usgwählt ha chönne (siehe Abschnitt Pre-selecting products and templates via URL parameters) oder villicht en Gutscheincode dezue füege chönne (siehe Abschnitt Using URL Parameters).
 
 De Registrierigsprozess isch de gliich: si müesse ire Name, Benutzername, E-Mail-Adresse, Website-Name und Titel usw. usfülle... aber de Plan oder s'Website-Template wird scho für sie vorab usgwählt sii.
 
-### Registriere mit manuellen Zahlige:
+### Registriere mit manuellen Zahlige: {#registering-using-manual-payments}
 
 Wenn Sie PayPal, Stripe oder e anderi Zahlungsgateway vo Ultimate Multisite oder ihre Add-on-Integratione nöd bruche wend, chönne Sie manuelli Zahlige für Ihre Kunde verwende. So chönd Sie en Rechnung für sie generiere, wo si nach de Registrierig uf ihrem Netzwerk bi Ihrem bevorzugte Zahlungsprozessor zahle chönne.
 

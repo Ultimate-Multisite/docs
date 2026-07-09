@@ -3,13 +3,13 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Kufotera kwa Webhooks (v2)
+# Kufotera kwa Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**KUFOTERA: Chifukwa choti chofotera ndi kuti mwayi wina wopanga software monga Ultimate Multisite ulemu lina mwayi wina wopanga software. Webhook imapereka malingaliro a real-time kwawo. Webhook imapereka data kapena payloads kwa applications zina monga momwe zimapangidwa, zomwezi ndi kuti **mupereke data mwachangu.**
 
 Ilo ndi kofunika ngati mukufuna kupanga (integrate) kapena kupasa data zina kuchokera kwa Ultimate Multisite ku CRM kapena system inayo m'maka nthawi yomwe chinthu chimapangidwa. Mwachitsanzo, mukuwunika kupasa dzina ndi email ya m'muli kwa mailing list m'maka momwe muli ndi akaunti yomwe yenera imapangidwa.
 
-## Kodi mwayi wopanga webhook?
+## Kodi mwayi wopanga webhook? {#how-to-create-a-webhook}
 
 Kuti upange webhook, ndi lero ku dashboard la admin la wopanga network wanu. Kuti **Ultimate Multisite > Webhooks > Add New Webhook.**
 

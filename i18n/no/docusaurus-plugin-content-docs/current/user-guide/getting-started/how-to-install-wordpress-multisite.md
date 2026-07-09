@@ -3,7 +3,7 @@ title: Hvordan installere WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hvordan installerer jeg WordPress Multisite?
+# Hvordan installerer jeg WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite lar deg ha et nettverk av nettsider på én enkelt installasjon. Dette er en innebygd funksjon, men den er ikke aktiv som standard.
 
@@ -61,7 +61,7 @@ Og denne koden, også generert av WordPress, i _**.htaccess**_-filen din:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# legg til en avsluttende skråstrek til /wp-admin
+# legg til en avsluttende skråstrek til /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ For å opprette en underside:
 
 Etter at du har fylt ut feltene, klikker du på «Legg til nettsted»-knappen. Når den nye undersiden er opprettet, gå videre og åpne den for å forsikre deg om at undersiden fungerer.
 
-## Vanlige problemer:
+## Vanlige problemer: {#common-problems}
 
-### 1\. Jeg kan opprette nye nettsteder, men de er ikke tilgjengelige.
+### 1\. Jeg kan opprette nye nettsteder, men de er ikke tilgjengelige. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Hvis du valgte underdomener, må du også sette opp jokertegn-underdomener for multisite-nettverket ditt.
 

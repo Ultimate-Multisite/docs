@@ -3,11 +3,11 @@ title: Razvoj prilagođenog pristupnika
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Razvoj prilagođenog Gatewaya
+# Razvoj prilagođenog Gatewaya {#custom-gateway-development}
 
 Možete izraditi prilagođene platne gatewaye proširivanjem klase `Base_Gateway`.
 
-## Klasa Gatewaya
+## Klasa Gatewaya {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrirajte Gateway
+## Registrirajte Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ključne metode
+## Ključne metode {#key-methods}
 
 | Metoda | Svrha |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Obrada zahtjeva za povrat sredstava |
 | `get_payment_methods()` | Vraćanje spremljenih načina plaćanja za kupca |
 
-## Vjerodajnice za obnovu za ponavljajuća članstva
+## Vjerodajnice za obnovu za ponavljajuća članstva {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 omogućuje integracijama gatewaya da prijave ima li ponavljajuće članstvo ponovno upotrebljivu vjerodajnicu za obnovu prije nego što se `auto_renew` trajno spremi. Zakačite se na `wu_membership_has_renewal_credential` i vratite:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Očistite oznaku nedostajuće vjerodajnice kao dio uspješnog tijeka ponovne autorizacije vašeg gatewaya nakon što se pohrani nova ponovno upotrebljiva vjerodajnica.
 
-## Savjeti
+## Savjeti {#tips}
 
 - Uvijek vratite `WP_Error` pri neuspjehu kako bi Ultimate Multisite mogao obraditi prikaz pogreške
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Upotrijebite `wu_log_add()` za zapisivanje specifično za gateway
 
-## Mogućnosti pružatelja AI konektora
+## Mogućnosti pružatelja AI konektora {#ai-connector-provider-capabilities}
 
 Prilagođene integracije koje pozivaju operacije podržane AI konektorom trebaju se uskladiti s podržanim skupom OAuth pružatelja uvedenim s AI Provider for Anthropic Max v1.3.0:
 

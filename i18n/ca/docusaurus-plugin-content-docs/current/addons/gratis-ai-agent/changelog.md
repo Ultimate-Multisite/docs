@@ -3,11 +3,11 @@ title: Diari de canvis
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Diari de canvis
+# Diari de canvis {#changelog}
 
-## 1.9.0 — Publicat el 2026-04-28
+## 1.9.0 — Publicat el 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nou
+### Nou {#new}
 
 - **Capacitat `create_contact_form`** — crea un formulari de contacte utilitzant el plugin de formularis actiu (Contact Form 7, WPForms, Fluent Forms o Gravity Forms) i retorna un shortcode preparat per incorporar a qualsevol article o pàgina.
 - **Capacitat `set_featured_image`** — assigna una imatge destacada a un article o pàgina a partir d'un ID d'adjunt de la Biblioteca de mitjà existent o d'una URL remota; importa automàticament l'imatge quan es proporciona una URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurar última sessió** — el panell de chat ara recarrega automàticament la conversa més recent quan es carrega la pàgina i quan s'obre el widget, així que el context mai es perd durant la navegació per pàgines.
 - **Enllaços d'acció del plugin** — ara apareixen enllaços ràpids a Settings i al Abilities Registry a l'e pantalla **Plugins → Plugins instal·lats** de WordPress, sota la descripció del plugin.
 
-### Millorat
+### Millorat {#improved}
 
 - **Reintent de font d'imatge** — l'agent ara reintenta totes les fonts d'imatges gratuïtes configurades abans de recórrer a una imatge generada per IA en cas de fracàs de descàrrega.
 - **Panell d'informació del model** — sempre visible a l'encabezament del chat; ja no està ocult després del primer missatge.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Rediseño del widget de chat** — un ícone AI unitari substitueix l'avatar personalitzat anterior; és consistent amb el sistema d'agents integrats.
 - **Linkificació d'URL** — les URL que apareixen en missatges del sistema i en bústies de missatges d'error es renderitzen ara com enllaços clicables.
 
-### Corregit
+### Corregit {#fixed}
 
 - **Descoberta de capacitats** — descricions, referències de prompts de sistema i alineació de namespace corregits perquè totes les capacitats apareguin a la llista d'eines de l'agent de manera fiable.
 - **Cache de proveïdors** — els proveïdors ara es cacheen a nivell de site amb un comptador de versions, prevenint problemes de proveïdors desactualitzats en xarxes multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Publicat el 2026-04-09
+## 1.4.0 — Publicat el 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nou
+### Nou {#new-1}
 
 - **Comandament de benchmark de WP-CLI** (`wp gratis-ai-agent benchmark`) — executa la suite de benchmark Agent Capabilities v1 des de la línia de comandes per a pipelines CI i fluxos de treball de evaluació de models. Suporta execucions per pregunta, sobreescritures de proveïdor/model i sortida JSON/CSV.
 - **Suite de benchmark Agent Capabilities v1** — un conjunt estructurat de prompts complexos i multi-etapa que exerciten la superfície completa de capacitats, amb puntuació i informes de tokens/durada.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pregunta de benchmark per a pàgines web de restaurants** (`q-restaurant-website`) — prova de cap a tot que cobreix la registració de CPT, sistema de disseny, navegació i descobriment de plugins.
 - **Plugins de conector de proveïdors d'IA** afegits als blueprints de WordPress Playground per a una configuració de desenvolupament local més ràpida.
 
-### Millorat
+### Millorat {#improved-1}
 
 - README actualitzat amb documentació i instruccions de configuració per als conectors de proveïdors d'IA.
 
-### Corregit
+### Corregit {#fixed-1}
 
 - 25 fallades de test PHPUnit a la branca `main` resoltes.
 - Format de URL de les publicacions de GitHub en `blueprint.json` corregit.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Les notes de les versions anteriors es mantenen al repository del plugin._

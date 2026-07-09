@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 যখন অথেন্টিকেশন কুকি সেট করা হবে, তার ঠিক আগে এটি কার্যকর হয়।
 
-## প্যারামিটারসমূহ
+## প্যারামিটারসমূহ {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | অথেন্টিকেশন স্কিম। এর মানগুলোর মধ্যে 'auth' বা 'secure_auth' থাকতে পারে। |
 | $token | `string` | এই কুকির জন্য ব্যবহারকারীর সেশন টোকেন। |
 
-### কখন থেকে
+### কখন থেকে {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> প্যারামিটারটি যোগ করা হয়েছে।
-### উৎস
+### উৎস {#source}
 
 এটি [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124)-এ লাইন ১২৪-এ সংজ্ঞায়িত করা হয়েছে।

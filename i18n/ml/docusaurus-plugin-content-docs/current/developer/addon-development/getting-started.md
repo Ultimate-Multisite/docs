@@ -3,9 +3,9 @@ title: ആഡ്‌ഓൺ വികസനം ആരംഭിക്കൽ
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# ആഡോൺ വികസനം
+# ആഡോൺ വികസനം {#addon-development}
 
-## ആഡോൺ ഘടന
+## ആഡോൺ ഘടന {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## പ്രധാന ആഡോൺ ഫയൽ ടെംപ്ലേറ്റ്
+## പ്രധാന ആഡോൺ ഫയൽ ടെംപ്ലേറ്റ് {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## ഇഷ്ടാനുസൃത മോഡൽ ഉദാഹരണം
+## ഇഷ്ടാനുസൃത മോഡൽ ഉദാഹരണം {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## അഡ്മിൻ പേജ് ഏകീകരണം
+## അഡ്മിൻ പേജ് ഏകീകരണം {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## നിങ്ങളുടെ Addon പരിശോധന
+## നിങ്ങളുടെ Addon പരിശോധന {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 വിപുലീകരണ പോയിന്റുകൾ
+## v2.13.0 വിപുലീകരണ പോയിന്റുകൾ {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 സ്വതന്ത്ര ടെനന്റുകളുമായി, checkout ഡൊമെയ്‌നുകളുമായി, അല്ലെങ്കിൽ ഹോസ്റ്റ്-പ്രൊവൈഡർ DNS ഓട്ടോമേഷനുമായി ഇന്റഗ്രേറ്റ് ചെയ്യുന്ന addons-കൾക്ക് ഉപയോഗപ്രദമായ നിരവധി വിപുലീകരണ പോയിന്റുകൾ ചേർക്കുന്നു.
 
-### SSOയും പ്രധാന-site മാനേജ്മെന്റ് URL-കളും
+### SSOയും പ്രധാന-site മാനേജ്മെന്റ് URL-കളും {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-form അടിസ്ഥാന ഡൊമെയ്‌നുകൾ
+### Checkout-form അടിസ്ഥാന ഡൊമെയ്‌നുകൾ {#checkout-form-base-domains}
 
 നിങ്ങളുടെ addon, ഓരോ-site custom mapping-കൾക്ക് പകരം checkout-form **Site URL** ഡൊമെയ്‌നുകൾ പോലെ പെരുമാറേണ്ട അധിക പങ്കിട്ട അടിസ്ഥാന ഡൊമെയ്‌നുകൾ നൽകുമ്പോൾ `wu_checkout_form_base_domains` ഉപയോഗിക്കുക:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite ഈ ഹോസ്റ്റുകൾ നോർമലൈസ് ചെയ്യുകയും അവയ്ക്കായി സ്വയമേവയുള്ള ഓരോ-site mapped-domain രേഖകൾ ഒഴിവാക്കുകയും ചെയ്യുന്നു.
 
-### സ്വയമേവയുള്ള ഡൊമെയ്ൻ-രേഖ സൃഷ്ടിക്കൽ
+### സ്വയമേവയുള്ള ഡൊമെയ്ൻ-രേഖ സൃഷ്ടിക്കൽ {#automatic-domain-record-creation}
 
 പുതുതായി സൃഷ്ടിച്ച site-നായി സ്വയമേവയുള്ള ഡൊമെയ്ൻ-രേഖ സൃഷ്ടിക്കൽ നിർത്തിവയ്ക്കുകയോ മാറ്റിവയ്ക്കുകയോ ചെയ്യേണ്ടപ്പോൾ നിങ്ങളുടെ addon `wu_should_create_domain_record_for_site` ഉപയോഗിക്കുക:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` കേൾക്കുന്ന ഹോസ്റ്റ്-പ്രൊവൈഡർ ഇന്റഗ്രേഷനുകൾ sites സൃഷ്ടിക്കുമ്പോൾ പ്രൊവൈഡർ-വശ DNS രേഖകൾ സൃഷ്ടിക്കാം. ആ action-നായി ഒരു ഇന്റഗ്രേഷനും രജിസ്റ്റർ ചെയ്തിട്ടില്ലെങ്കിൽ, Ultimate Multisite ശൂന്യമായ പശ്ചാത്തല ജോലി ഒഴിവാക്കും.
 
-## അടുത്ത ഘട്ടങ്ങൾ
+## അടുത്ത ഘട്ടങ്ങൾ {#next-steps}
 
 - ലഭ്യമായ actions-ുകളും filters-ുകളും കാണാൻ [Hooks Reference](/developer/hooks) പരിശോധിക്കുക
 - API ഇന്റഗ്രേഷനായി [REST API Overview](/developer/rest-api/overview) പരിശോധിക്കുക

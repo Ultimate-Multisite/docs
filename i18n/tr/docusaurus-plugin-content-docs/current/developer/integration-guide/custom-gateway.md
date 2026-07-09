@@ -3,11 +3,11 @@ title: Özel Ağ Geçidi Geliştirme
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Özel Gateway Geliştirme
+# Özel Gateway Geliştirme {#custom-gateway-development}
 
 `Base_Gateway` sınıfını genişleterek özel ödeme gateway'leri oluşturabilirsiniz.
 
-## Gateway Sınıfı
+## Gateway Sınıfı {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway'i Kaydetme
+## Gateway'i Kaydetme {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Temel Yöntemler
+## Temel Yöntemler {#key-methods}
 
 | Yöntem | Amaç |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | İade taleplerini işleme |
 | `get_payment_methods()` | Bir müşteri için kayıtlı ödeme yöntemlerini döndürme |
 
-## Yinelenen üyelikler için yenileme kimlik bilgileri
+## Yinelenen üyelikler için yenileme kimlik bilgileri {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0, gateway entegrasyonlarının `auto_renew` kalıcı hale getirilmeden önce yinelenen bir üyeliğin yeniden kullanılabilir bir yenileme kimlik bilgisine sahip olup olmadığını bildirmesine olanak tanır. `wu_membership_has_renewal_credential` kancasını kullanın ve şunu döndürün:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Yeni bir yeniden kullanılabilir kimlik bilgisi saklandıktan sonra, gateway'inizin başarılı yeniden yetkilendirme akışının bir parçası olarak eksik kimlik bilgisi işaretleyicisini temizleyin.
 
-## İpuçları
+## İpuçları {#tips}
 
 - Hata durumunda her zaman `WP_Error` döndürün, böylece Ultimate Multisite hata gösterimini işleyebilir
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gateway'e özel günlükleme için `wu_log_add()` kullanın
 
-## AI connector sağlayıcı yetenekleri
+## AI connector sağlayıcı yetenekleri {#ai-connector-provider-capabilities}
 
 AI connector destekli işlemleri çağıran özel entegrasyonlar, AI Provider for Anthropic Max v1.3.0 ile sunulan desteklenen OAuth sağlayıcı setiyle uyumlu olmalıdır:
 

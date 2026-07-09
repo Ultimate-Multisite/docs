@@ -3,9 +3,9 @@ title: ايڊآن ڊولپمينٽ سان شروعات ڪرڻ
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# اضافي جي ترقي
+# اضافي جي ترقي {#addon-development}
 
-## اضافي جو ڍانچو
+## اضافي جو ڍانچو {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## مکيه اضافي فائل جو سانچو
+## مکيه اضافي فائل جو سانچو {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## ڪسٽم ماڊل جو مثال
+## ڪسٽم ماڊل جو مثال {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## انتظامي صفحي جو انضمام
+## انتظامي صفحي جو انضمام {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## پنهنجي Addon جي جاچ
+## پنهنجي Addon جي جاچ {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 extension points
+## v2.13.0 extension points {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 ڪيترائي extension points شامل ڪري ٿو، جيڪي انهن addons لاءِ ڪارائتا آهن جيڪي sovereign tenants، checkout domains، يا host-provider DNS automation سان ضم ٿين ٿا.
 
-### SSO ۽ مکيه-سائيٽ انتظام URLs
+### SSO ۽ مکيه-سائيٽ انتظام URLs {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-form بنيادي domains
+### Checkout-form بنيادي domains {#checkout-form-base-domains}
 
 `wu_checkout_form_base_domains` استعمال ڪريو جڏهن توهان جو addon اضافي گڏيل بنيادي domains مهيا ڪري، جيڪي هر سائيٽ جي custom mappings بدران checkout-form **سائيٽ URL** domains وانگر عمل ڪرڻ گهرجن:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite انهن hosts کي normalize ڪري ٿو ۽ انهن لاءِ خودڪار هر-سائيٽ mapped-domain records کي ڇڏي ڏئي ٿو.
 
-### خودڪار domain-record ٺاهڻ
+### خودڪار domain-record ٺاهڻ {#automatic-domain-record-creation}
 
 `wu_should_create_domain_record_for_site` استعمال ڪريو جڏهن توهان جي addon کي نئين ٺاهيل سائيٽ لاءِ خودڪار domain-record ٺاهڻ کي روڪڻ يا ملتوي ڪرڻ جي ضرورت هجي:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Host-provider integrations جيڪي `wu_add_subdomain` کي ٻڌن ٿا، سائيٽون ٺاهڻ وقت provider-side DNS records ٺاهي سگهن ٿا. جيڪڏهن ان action لاءِ ڪا integration registered نه هجي، ته Ultimate Multisite خالي background job کي ڇڏي ڏئي ٿو.
 
-## ايندڙ قدم
+## ايندڙ قدم {#next-steps}
 
 - موجود actions ۽ filters لاءِ [Hooks Reference](/developer/hooks) جو جائزو وٺو
 - API integration لاءِ [REST API Overview](/developer/rest-api/overview) ڏسو

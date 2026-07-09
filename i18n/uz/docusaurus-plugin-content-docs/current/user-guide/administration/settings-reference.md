@@ -3,11 +3,11 @@ title: Sozlamalar ma’lumotnomasi
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Sozlamalar ma’lumotnomasi
+# Sozlamalar ma’lumotnomasi {#settings-reference}
 
 Ushbu sahifa Ultimate Multisite’da kundalik boshqaruvga ta’sir qiladigan sozlamalar va yaqindagi xatti-harakat o‘zgarishlarini kuzatadi.
 
-## Boshqa variantlar
+## Boshqa variantlar {#other-options}
 
 **Boshqa variantlar** hududi **Ultimate Multisite > Settings > Login & Registration** ostida ko‘rinadi.
 
@@ -15,23 +15,23 @@ Ushbu sahifa Ultimate Multisite’da kundalik boshqaruvga ta’sir qiladigan soz
 |---|---|
 | **Jumper’ni yoqish** | Admin hududida Jumper tezkor navigatsiya vositasini ko‘rsatadi. Undan bevosita Ultimate Multisite ekranlariga, tarmoq obyektlariga va qo‘llab-quvvatlanadigan admin manzillariga o‘tish uchun foydalaning. Bu yorliq ko‘rinishini xohlamasangiz, uni o‘chirib qo‘ying. |
 
-## Xato hisobotlari va telemetry
+## Xato hisobotlari va telemetry {#error-reporting-and-telemetry}
 
 Avvalgi xato hisobotlariga rozilik sozlamasi sozlamalar sahifasidan olib tashlandi. Anonim telemetry o‘chirilgan va uni yoqish uchun UI almashtirgichi yo‘q.
 
 Agar sozlamalar sahifasi uchun ichki runbook’lar yoki skrinshotlarni yuritsangiz, administratorlar endi mavjud bo‘lmagan sozlamani qidirmasligi uchun eski xato hisobotlariga rozilik maydoniga havolalarni olib tashlang.
 
-## Import/Export sozlamalari
+## Import/Export sozlamalari {#importexport-settings}
 
 **Import/Export** sozlamalari varag‘i qaysi sozlamalarni boshqarishini tavsiflaydi va site hamda tarmoq arxivlari uchun bevosita **Ultimate Multisite > Site Export** ga havola qiladi. Import/export konfiguratsiyasi uchun sozlamalar varag‘idan foydalaning, bitta site export/import ish jarayoni uchun **Tools > Export & Import** dan foydalaning va to‘liq Network Export arxivi kerak bo‘lganda Site Export vositasidan foydalaning.
 
-## Domain Seller HostAfrica balansi haqida ogohlantirish
+## Domain Seller HostAfrica balansi haqida ogohlantirish {#domain-seller-hostafrica-balance-warning}
 
 Domain Seller addon HostAfrica’ga ulanganida, tarmoq administratorlari reseller account balansi ishonchli domen ro‘yxatdan o‘tkazish yoki yangilash jarayoni uchun juda past bo‘lsa, yopib qo‘yiladigan balans pastligi ogohlantirishini ko‘radi.
 
 Bu bildirishnomani operatsion ogohlantirish sifatida qabul qiling: ko‘proq pulli domen ro‘yxatdan o‘tkazishlarni qabul qilishdan oldin HostAfrica reseller balansini to‘ldiring, so‘ng ro‘yxatdan o‘tkazishlar va yangilashlar odatdagidek davom eta olishini tasdiqlash uchun Domain Seller sozlamalariga yoki domen monitoringi ekraniga qayting.
 
-## AI provider connector sozlamalari
+## AI provider connector sozlamalari {#ai-provider-connector-settings}
 
 AI provider connector sozlamalari endi faqat qo‘llab-quvvatlanadigan OAuth account pool’larini ko‘rsatadi:
 

@@ -4,22 +4,22 @@ title: Filtrilo - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filtrilo: wu_is_mcp_enabled
+# Filtrilo: wu_is_mcp_enabled {#filter-wuismcpenabled}
 
 Permesu al kromprogramaj programistoj devigi donitan staton por la MCP-adaptilo.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
 | $enabled | `bool` | Ĉu la MCP-adaptilo estas ebligita. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.5.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L250) ĉe linio 250
 
 
-## Redonas
+## Redonas {#returns}

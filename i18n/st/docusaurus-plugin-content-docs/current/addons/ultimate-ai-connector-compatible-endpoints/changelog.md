@@ -5,9 +5,9 @@ title: >-
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector bakeng sa Compatible Endpoints Changelog
+# Ultimate AI Connector bakeng sa Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — E lokollotsoe ka 2026-04-24
+## Version 2.0.0 — E lokollotsoe ka 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * E ncha: Tšehetso ea bafani ba bangata — hlophisa AI endpoints tse ngata ’me u tsamaisetse likopo ka fallback e iketsang ho pholletsa le bafani.
 * Tokiso: Khokahanyo ea SDK ea bafani ba bangata ka li-ID tse nepahetseng tsa bafani, registration URLs, le HTTP filter scoping bakeng sa mofani ka mong.
@@ -18,4 +18,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Tokiso: E tlositse kopo ea HTTP e thibelang e neng e thunya nakong ea ho jarolloa ha leqephe le leng le le leng.
 * E ntlafalitsoe: Mekhoa ea mosebetsi ea GitHub Actions e phahamiselitsoe ho Node.js 24.
 
-## Version 1.0.0 — Tokollo ea Pele
+## Version 1.0.0 — Tokollo ea Pele {#version-100--initial-release}

@@ -3,13 +3,13 @@ title: Израда прилагођене интеграције регистр
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Прављење прилагођене интеграције регистрара
+# Прављење прилагођене интеграције регистрара {#building-a-custom-registrar-integration}
 
 Domain Seller addon користи образац **Integration Registry**. Сваки регистар је PHP класа која имплементира `Domain_Selling_Capability` и региструје се преко action hook-а `wu_domain_seller_register_capabilities`.
 
 Овај водич показује како да повежете прилагођени регистар.
 
-## Интерфејс
+## Интерфејс {#the-interface}
 
 Ваша класа мора да имплементира `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` и прошири `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Опционе методе
+### Опционе методе {#optional-methods}
 
 Имплементирајте ове методе да откључате додатне функције. Addon открива подршку преко `method_exists()`:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### Конвенција повратне вредности
+### Конвенција повратне вредности {#return-value-convention}
 
 Све методе враћају низ са најмање кључем `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Регистровање ваше capability
+## Регистровање ваше capability {#registering-your-capability}
 
 Региструјте своју класу користећи action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Додавање поља за акредитиве у чаробњак
+## Додавање поља за акредитиве у чаробњак {#adding-credential-fields-to-the-wizard}
 
 Да бисте омогућили администраторима да унесу акредитиве кроз чаробњак за подешавање, региструјте своју интеграцију:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## Hook-ови за радње после регистрације
+## Hook-ови за радње после регистрације {#hooks-for-post-registration-actions}
 
 Користите ове action-е да покренете webhook-ове, provisioning, обавештења или CRM ажурирања:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Евидентирање
+## Евидентирање {#logging}
 
 Пишите у канал евиденције специфичан за вашег провајдера користећи `wu_log_add()`:
 

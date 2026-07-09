@@ -3,7 +3,7 @@ title: Formulare de finalizare a comenzii
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulare de checkout
+# Formulare de checkout {#checkout-forms}
 
 Formularele de checkout sunt o modalitate ușoară și flexibilă de a experimenta cu abordări diferite atunci când încerci să convertești clienți noi.
 
@@ -36,13 +36,13 @@ Alternativ, poți edita sau duplica formularele pe care le ai deja făcând clic
 
 ![Acțiuni la trecerea cursorului peste formularul de checkout](/img/config/checkout-form-hover-actions.png)
 
-#### Prezentare generală a editorului de formulare de checkout
+#### Prezentare generală a editorului de formulare de checkout {#checkout-form-editor-overview}
 
 Editorul de formulare de checkout oferă o interfață completă pentru construirea formularelor tale de înregistrare. Iată o prezentare generală a structurii editorului:
 
 ![Prezentare generală a editorului de formulare de checkout](/img/config/checkout-form-editor-overview.png)
 
-### Editarea unui formular de checkout
+### Editarea unui formular de checkout {#editing-a-checkout-form}
 
 Poți crea formulare de checkout pentru scopuri diferite. În acest exemplu vom lucra la un formular de înregistrare.
 
@@ -112,7 +112,7 @@ Pentru a obține shortcode-ul formularului, fă clic pe Generează shortcode și
 
 ![Buton Salvare cu shortcode](/img/config/checkout-form-save.png)
 
-### Câmpul Tabel de prețuri
+### Câmpul Tabel de prețuri {#the-pricing-table-field}
 
 Câmpul **Tabel de prețuri** afișează produsele tale în formularul de checkout, astfel încât clienții să poată alege un plan. Când editezi acest câmp, poți configura mai multe opțiuni:
 
@@ -130,17 +130,17 @@ Iată cum apare tabelul de prețuri în formularul de înregistrare din frontend
 
 Dacă adăugați un produs în Tabelul de prețuri înainte ca formularul să includă câmpurile necesare pentru a finaliza fluxul de checkout al acelui produs, editorul afișează acum un avertisment. Folosiți avertismentul pentru a adăuga câmpul obligatoriu lipsă înainte de a publica sau salva modificările pentru un formular de înregistrare live.
 
-### Adăugarea unui comutator de selecție a perioadei
+### Adăugarea unui comutator de selecție a perioadei {#adding-a-period-selection-toggle}
 
 Dacă ați configurat [Variații de preț](creating-your-first-subscription-product#price-variations) pentru produsele dvs. (de ex. prețuri lunare și anuale), puteți adăuga un câmp **Selecție perioadă** în formularul dvs. de checkout. Acest câmp afișează un comutator care le permite clienților să schimbe perioadele de facturare, iar tabelul de prețuri se actualizează dinamic în timp real.
 
-#### Pasul 1: Configurați variații de preț pentru produsele dvs.
+#### Pasul 1: Configurați variații de preț pentru produsele dvs. {#step-1-set-up-price-variations-on-your-products}
 
 Înainte de a adăuga câmpul Selecție perioadă, asigurați-vă că produsele dvs. au variații de preț configurate. Mergeți la **Ultimate Multisite > Produse**, editați un produs și navigați la fila **Variații de preț** pentru a adăuga perioade alternative de facturare (de ex. Anual la un preț redus).
 
 ![Fila Variații de preț pentru un produs](/img/config/product-price-variations-tab.png)
 
-#### Pasul 2: Adăugați câmpul Selecție perioadă în formularul dvs. de checkout
+#### Pasul 2: Adăugați câmpul Selecție perioadă în formularul dvs. de checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Mergeți la **Ultimate Multisite > Checkout Forms** și editați formularul dvs. de checkout.
 
@@ -163,13 +163,13 @@ Dacă ați configurat [Variații de preț](creating-your-first-subscription-prod
 
 7. Faceți clic pe **Salvează câmpul**.
 
-#### Pasul 3: Poziționați câmpul deasupra tabelului de prețuri
+#### Pasul 3: Poziționați câmpul deasupra tabelului de prețuri {#step-3-position-the-field-above-the-pricing-table}
 
 Pentru cea mai bună experiență de utilizare, asigurați-vă că apare câmpul Selecție perioadă **înainte** de câmpul Tabel de prețuri în pasul dvs. de checkout. Puteți trage câmpurile pentru a le reordona în editorul formularului de checkout. Astfel, clienții aleg mai întâi o perioadă de facturare și apoi văd prețurile pentru acea perioadă.
 
 ![Editorul formularului de checkout care afișează ordinea câmpurilor](/img/config/checkout-form-editor-with-fields.png)
 
-#### Cum funcționează în frontend
+#### Cum funcționează în frontend {#how-it-works-on-the-frontend}
 
 După configurare, clienții care vă vizitează pagina de înregistrare vor vedea selectorul de perioadă deasupra tabelului de prețuri. Când fac clic pe o altă perioadă de facturare:
 
@@ -177,7 +177,7 @@ După configurare, clienții care vă vizitează pagina de înregistrare vor ved
   * Dacă **Forțează durate diferite** este dezactivat în câmpul Tabel de prețuri, produsele fără o variație de preț pentru perioada selectată vor fi ascunse.
   * Dacă **Forțează durate diferite** este activat, toate produsele rămân vizibile chiar dacă nu au o variație pentru perioada selectată (vor afișa prețul lor implicit).
 
-#### Preselectarea unei perioade de facturare prin URL
+#### Preselectarea unei perioade de facturare prin URL {#pre-selecting-a-billing-period-via-url}
 
 De asemenea, puteți preselecta un produs și o perioadă de facturare prin URL. Ultimate Multisite acceptă aceste modele de URL:
 
@@ -185,11 +185,11 @@ De asemenea, puteți preselecta un produs și o perioadă de facturare prin URL.
   * `/register/premium/12` — Preselectează produsul și durata de 12 luni
   * `/register/premium/1/year` — Preselectează produsul cu o durată de 1 an
 
-### Câmpul de selecție a șablonului
+### Câmpul de selecție a șablonului {#the-template-selection-field}
 
 Câmpul **Selecție șablon** le permite clienților să aleagă un șablon de site în timpul checkout-ului. Acum este inclus implicit în șabloanele de formular de checkout **cu un singur pas** și **cu mai mulți pași** adăugate în Ultimate Multisite v2.6.1.
 
-#### Adăugarea manuală a câmpului
+#### Adăugarea manuală a câmpului {#adding-the-field-manually}
 
 Dacă lucrați cu un formular care a fost creat înainte de v2.6.1 sau a pornit de la un șablon gol:
 
@@ -200,11 +200,11 @@ Dacă lucrați cu un formular care a fost creat înainte de v2.6.1 sau a pornit 
    - **Etichetă** — Titlul pe care clienții îl văd deasupra grilei de șabloane (de ex. „Alegeți un șablon de site”).
    - **Obligatoriu** — Dacă clienții trebuie să selecteze un șablon înainte de a continua.
 
-#### Cum funcționează
+#### Cum funcționează {#how-it-works}
 
 Când un client alege un șablon în timpul checkout-ului, Ultimate Multisite îl folosește la furnizarea noului său site. Șabloanele afișate provin din lista dvs. **Șabloane de site** (**Ultimate Multisite > Site Templates**). Doar șabloanele marcate ca disponibile pentru clienți apar aici.
 
-### Domenii de bază pentru formularele de checkout
+### Domenii de bază pentru formularele de checkout {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 tratează domeniile configurate în câmpurile **URL site** ale formularului de checkout ca domenii de bază ale rețelei. Folosiți setările pentru domenii disponibile ale câmpului atunci când doriți ca clienții să creeze site-uri sub unul sau mai multe domenii de înregistrare partajate, cum ar fi `example.com` și `sites.example.com`.
 
@@ -212,6 +212,6 @@ Domeniile de bază partajate pentru formularul de checkout nu sunt tratate ca ma
 
 Păstrați domeniile personalizate pentru gazde mapate per client, cum ar fi `customer-example.com`. Păstrați domeniile de bază pentru formularul de checkout pentru gazdele de înregistrare partajate pe care multe site-uri le pot folosi.
 
-#### Eliminarea câmpului
+#### Eliminarea câmpului {#removing-the-field}
 
 Dacă nu oferiți șabloane de site, eliminați câmpul Template Selection din formularul dvs. Clienții vor primi apoi șablonul implicit configurat sub **Ultimate Multisite > Settings > Site Templates**.

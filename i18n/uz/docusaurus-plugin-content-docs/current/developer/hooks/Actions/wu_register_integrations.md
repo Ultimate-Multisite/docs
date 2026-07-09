@@ -4,21 +4,21 @@ title: Amal - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Amal: wu_register_integrations
+# Amal: wu_register_integrations {#action-wuregisterintegrations}
 
 Integratsiyalarga o‘zlarini ro‘yxatdan o‘tkazish imkonini berish uchun ishga tushadi.
 
 Yadro o‘z integratsiyalarini shu yerda ro‘yxatdan o‘tkazadi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | Ro‘yxatga olish instansi. |
 
-### Dan beri
+### Dan beri {#since}
 
 - 2.5.0
-### Manba
+### Manba {#source}
 
 [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L113) faylida 113-qatorda aniqlangan

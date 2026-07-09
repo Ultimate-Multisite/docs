@@ -3,11 +3,11 @@ title: Reference til hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Reference for hooks
+# Reference for hooks {#hooks-reference}
 
 Automatisk genereret dokumentation for alle **59 handlinger** og **118 filtre** i Ultimate Multisite.
 
-## Handlinger
+## Handlinger {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Udløses før godkendelsesomdirigeringen.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Udløses umiddelbart før godkendelsescookien angives.
@@ -70,7 +70,7 @@ Automatisk genereret dokumentation for alle **59 handlinger** og **118 filtre** 
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Udløses efter et objekt er gemt i databasen.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Tillad plugin-udviklere at tilføje handlinger til oplåsningsprocessen.
 
-## Filtre
+## Filtre {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrerer varigheden af godkendelsescookiens udløbsperiode.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrerer godkendelsesomdirigeringsskemaet.

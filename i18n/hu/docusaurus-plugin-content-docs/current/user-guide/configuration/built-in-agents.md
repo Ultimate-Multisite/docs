@@ -3,11 +3,11 @@ title: Beépített ügynökök
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Beépített agentek
+# Beépített agentek {#built-in-agents}
 
 A Gratis AI Agent v1.9.0 öt beépített agenttel érkezik, mindegyik előre konfigurálva egy célzott eszközkészlettel, testreszabott system prompttal és az adott terület gyakori feladataihoz illeszkedő kezdő javaslatokkal. Az agentek közötti váltás megváltoztatja, mire képes az asszisztens és hogyan válaszol — anélkül, hogy részedről bármilyen konfigurációra lenne szükség. A Superdav AI Agent v1.18.0 ütemezést figyelembe vevő eszközöket, emlékeztetőrekordokat, jóváhagyási kapukat és SMS-értesítéseket adhat ezekhez a munkafolyamatokhoz, ha a kapcsolódó integrációk konfigurálva vannak.
 
-## Mi az az agent?
+## Mi az az agent? {#what-is-an-agent}
 
 Minden agent egy elnevezett konfigurációs profil, amely a következőket kombinálja:
 
@@ -15,7 +15,7 @@ Minden agent egy elnevezett konfigurációs profil, amely a következőket kombi
 - **System prompt** — utasítások, amelyek meghatározzák az agent hangnemét, prioritásait és korlátait
 - **Javaslatok** — a csevegőfelületen megjelenő előre megírt promptok, amelyek segítenek gyorsan elindulni
 
-## Az Agent Picker elérése
+## Az Agent Picker elérése {#accessing-the-agent-picker}
 
 1. Nyisd meg a **Gratis AI Agent** panelt a WordPress admin oldalsávjában.
 2. Kattints a **agent ikonra** a csevegés fejlécének bal felső sarkában (az ikon az aktív agentet tükrözve változik).
@@ -24,9 +24,9 @@ Minden agent egy elnevezett konfigurációs profil, amely a következőket kombi
 
 Beszélgetés közben is válthatsz agentet — az új agent system promptja a következő üzenettől lép érvénybe.
 
-## Az öt beépített agent
+## Az öt beépített agent {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fókusz:** Bejegyzések, oldalak és kapcsolatfelvételi űrlapok létrehozása és szerkesztése.
 
@@ -47,7 +47,7 @@ Beszélgetés közben is válthatsz agentet — az új agent system promptja a k
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fókusz:** Teljes körű webhelylétrehozás egyetlen promptból.
 
@@ -70,7 +70,7 @@ Beszélgetés közben is válthatsz agentet — az új agent system promptja a k
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fókusz:** Vizuális testreszabás — színek, tipográfia, CSS és blokkminták.
 
@@ -87,7 +87,7 @@ Beszélgetés közben is válthatsz agentet — az új agent system promptja a k
 - *Készíts képernyőképet a kezdőlapról, és mondd el, min javítanál.*
 - *Hozz létre egy újrafelhasználható hero blokkmintát teljes szélességű háttérképpel és középre igazított címsorral.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fókusz:** WordPress pluginek felfedezése, telepítése és kezelése.
 
@@ -105,7 +105,7 @@ Beszélgetés közben is válthatsz agentet — az új agent system promptja a k
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fókusz:** Kérdések megválaszolása a webhely tartalmáról, beállításairól és WordPress konfigurációjáról.
 
@@ -124,7 +124,7 @@ Beszélgetés közben is válthatsz agentet — az új agent system promptja a k
 
 ---
 
-## Superdav automatizálási integrációk
+## Superdav automatizálási integrációk {#superdav-automation-integrations}
 
 Amikor a Superdav AI Agent v1.18.0 integrációi konfigurálva vannak, a beépített ügynökök biztonságosabb, ütemezést figyelembe vevő automatizálási munkafolyamatokban vehetnek részt:
 
@@ -138,11 +138,11 @@ Ajánlott munkafolyamat: kérd meg az ügynököt, hogy készítse elő az üzen
 
 ---
 
-## Ügynökök testreszabása
+## Ügynökök testreszabása {#customising-agents}
 
 Minden beépített ügynök kibővíthető vagy lecserélhető a `gratis_ai_agent_agents` filteren keresztül.
 
-### Egyéni rendszerprompt hozzáadása egy meglévő ügynökhöz
+### Egyéni rendszerprompt hozzáadása egy meglévő ügynökhöz {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Új ügynök regisztrálása
+### Új ügynök regisztrálása {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Az új ügynök azonnal megjelenik az ügynökválasztóban, miután a filter lefut.
 
-### Beépített ügynök eltávolítása
+### Beépített ügynök eltávolítása {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

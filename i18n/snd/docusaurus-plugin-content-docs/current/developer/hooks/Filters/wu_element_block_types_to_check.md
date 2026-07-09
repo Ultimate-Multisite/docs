@@ -4,16 +4,16 @@ title: فلٽر - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# فلٽر: wu_element_block_types_to_check
+# فلٽر: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
 
 اسان کي شايد پوءِ اضافي بلاڪ شامل ڪرڻا پون.
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.0.0
-### ذريعو
+### ذريعو {#source}
 
 [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L300) ۾ قطار 300 تي بيان ڪيل
 
 
-## واپس ڪري ٿو
+## واپس ڪري ٿو {#returns}

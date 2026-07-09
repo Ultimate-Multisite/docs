@@ -3,13 +3,13 @@ title: Kayıt Akışı
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Kayıt Akışı (v2)
+# Kayıt Akışı (v2) {#the-registration-flow-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümünü ifade eder.**_
 
 Kullanıcılar ağınıza farklı yollarla kayıt olabilir. Kayıt formunuzu veya önceden seçilmiş bir plana yönlendiren paylaşılabilir bir bağlantıyı kullanabilirler. Burada müşterilerinizin mevcut yolları kullanarak ağınıza nasıl kayıt olabileceğini ve ağınıza kayıt olduktan sonra neler olduğunu göstereceğiz.
 
-## Kayıt Formunu Kullanma:
+## Kayıt Formunu Kullanma: {#using-the-registration-form}
 
 Bu standart kayıt sürecidir. Bir **checkout formu** içeren bir kayıt sayfası oluşturursunuz ve müşterileriniz ağınıza kayıt olmak ve bir plana abone olmak için buraya gider. İsterseniz her biri farklı bir kayıt formuna sahip birden fazla kayıt sayfanız olabilir.
 
@@ -35,13 +35,13 @@ E-posta adresi onayı gerekiyorsa, e-posta gelen kutularına gidip doğrulama ba
 
 ![Dashboard’a giriş bağlantısıyla etkinleştirilmiş site](/img/frontend/site-activated.png)
 
-## Paylaşılabilir Bağlantı Kullanma:
+## Paylaşılabilir Bağlantı Kullanma: {#using-a-shareable-link}
 
 Paylaşılabilir bir bağlantı kullanarak kayıt olma süreci temelde kayıt formuyla aynıdır; tek fark, paylaşılabilir bir bağlantı kullanıldığında müşterilerinizin checkout formunda önceden seçilmiş bir ürün veya web sitesi şablonuna sahip olabilmesidir (URL parametreleri aracılığıyla ürünleri ve şablonları önceden seçme bölümüne bakın) veya belki bir kupon kodu eklenmiş olabilir (URL Parametrelerini Kullanma bölümüne bakın).
 
 Kayıt süreci aynı olacaktır: adlarını, kullanıcı adlarını, e-posta adreslerini, web sitesi adını ve başlığını vb... doldurmaları gerekir; ancak plan veya site şablonu onlar için zaten önceden seçilmiş olacaktır.
 
-### Manuel Ödemeler Kullanarak Kayıt Olma:
+### Manuel Ödemeler Kullanarak Kayıt Olma: {#registering-using-manual-payments}
 
 PayPal, Stripe veya Ultimate Multisite tarafından ya da eklenti entegrasyonları tarafından sunulan herhangi başka bir ödeme ağ geçidini kullanmak istemiyorsanız, müşterileriniz için manuel ödemeleri kullanabilirsiniz. Bu şekilde, ağınıza kayıt olduktan sonra tercih ettiğiniz ödeme işlemcisinde ödeme yapmaları için onlara bir fatura oluşturabilirsiniz.
 

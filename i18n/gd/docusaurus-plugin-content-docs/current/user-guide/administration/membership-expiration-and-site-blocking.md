@@ -3,11 +3,11 @@ title: Taisgadh a' chluainn agus blocadh site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Cuimhneachadh air a' chluarach agus air a' chluarach an site
+# Cuimhneachadh air a' chluarach agus air a' chluarach an site {#membership-expiration-and-site-blocking}
 
 Tha an t-amlas seo a' gluasad a bhith a' chluarachadh amlas, deuchainn a' chluarach, agus a' chluarachadh an site. Tha e a' gabhail air an seachdaine an amlas a' tòiseachadh de 'active' gu 'expired', na stiùirithe a tha a' gabhail air an chluarachadhaidh a bhith a' chluarach, agus cè a tha a' gabhail air a bhith ag obair air an site air faighinn an amlas.
 
-## Cuimhneachadh air a' chluarachadh amlas
+## Cuimhneachadh air a' chluarachadh amlas {#membership-status-lifecycle}
 
 Tha amlas air a chluarachadach ann i ungllaidh Ultimate Multisite:
 
@@ -18,7 +18,7 @@ Nì amlas fadaich a tha a' tòiseachadh gu mòr. Tha amlas fadaich a' gabhail ai
 Sealltair de sgilean (grace period) de 3 diugh chan eil a' chothromh le sealltair de sgilean de bloc an t-frontend a chluas air a dhèanamh aige. A' chothromh de sgilean a chothromh gu sàmhach an **stàt a tharrach** de active/on-hold go expired. A' chothromh de sgilean de bloc a chothromh gu sàmhach an **site a chluas** an uair a tharrach an stàt a tharrach.
 :::
 
-#### Membriospa a tharrach (Auto-Renewing) vs. A tharrach (Non-Auto-Renewing)
+#### Membriospa a tharrach (Auto-Renewing) vs. A tharrach (Non-Auto-Renewing) {#how-memberships-transition-to-expired}
 
 Tha an t-eachd seo cruinn airson a bhith a' tuilleadh air an sealltair de sgilean:
 
@@ -26,7 +26,7 @@ Tha an t-eachd seo cruinn airson a bhith a' tuilleadh air an sealltair de sgilea
 
 - **Membriospa a tharrach (auto_renew = true)**: Tha an t-eachd de sgilean cron a' chluas **a' ghlìothadh gu sàmhach**. Tha an fhaisg de chàrach (Stripe, PayPal, etc.) a' tuilleadh air Ultimate Multisite gu webhooks nuair a tharrach an t-uisge (subscription) no tha e a' chluas. Mar a tha an webhook a' tòiseachadh a' tòiseachadh – mar a tha an endpoint a' chluas gu sàmhach, mar a tha an fhaisg a' chluas, no mar a tha an uisge a' chluas an t-am - leum nas fhaighinn an meibris air `active` gu sàmhach air a tharrach an t-am.
 
-### Ciamar a tharrach na triail (How Trials End)
+### Ciamar a tharrach na triail (How Trials End) {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Nuair a tharrach an t-am de riaghladh triail, tha an siostam:
 
@@ -36,11 +36,11 @@ Nuair a tharrach an t-am de riaghladh triail, tha an siostam:
 
 Tha an seòrsa seo a' tòiseachadh air an amhair cron job a' chluas gu latha mar an tàimeoir de sgilean a' chluas, ach **dùirchd air na meibrispa a tharrach (auto-renewing)**. Tha an fhaisg de chàrach a' chluas a' tuilleadh air an t-uisge de triail gu fhaisg a' chluas.
 
-## Bloc an t-frontend a chluas
+## Bloc an t-frontend a chluas {#how-trials-end}
 
 Dè an t-seall, gu nà, nuair a thàir an t-suidhe (membership) air a tha a' sgaidh air, **taich a tha dìreach an wp-admin dashboard a' sgaidh**. Tha an fhuartail (frontend) den site a' sgaidh air a' tha a' sgaidh. Mar sin, chun a bhith a' sgaidh an t-suidhe public, muscha thu a' sgaidh an setadh **Block Frontend Access**.
 
-### A' sgaidh an setadh
+### A' sgaidh an setadh {#block-frontend-access}
 
 Tuisgeadh gu **Ultimate Multisite > Settings > Memberships** agus tha thu a' sgaidh **Block Frontend Access**.
 
@@ -58,7 +58,7 @@ Tha tònaichean setadh beag a' sgaidh an fhaighinn seo:
 | **Frontend Block Grace Period** | Ambeidh tairgse (grace period) de chùiriche gu faic a' sgaidh a' mbeadh an t-suidhe air a' sgaidh a' mbeadh. Setadh go `0` chun a' sgaidh agad gu leòr. | 0 |
 | **Frontend Block Page** | Sealladh ar an site mhath airson a' chluichinn (redirect) do chluichean air gu cunntas nuair tha site a' sgaidh. Mar a tha e ann, tha chluichean a' fheuchainn meil a' chluichinn "Tha an site seo a' sgaidh" le lìn airson an t-suidhe admin. | None |
 
-### Tha cè a fheuchainn gu sgaidh nuair tha site a' sgaidh air
+### Tha cè a fheuchainn gu sgaidh nuair tha site a' sgaidh air {#configuring-the-setting}
 
 Nuair a tha an fhuartail (frontend) a' sgaidh, bi chluichean den site a' bheachd:
 
@@ -67,7 +67,7 @@ Nuair a tha an fhuartail (frontend) a' sgaidh, bi chluichean den site a' bheachd
 
 Is eadar, tha chluichean a' faighinn gu cunntas -- tha an sealladh chluichinn ann a' sgaidh gu leòr.
 
-### Tha cè a sgaidh agus nuair
+### Tha cè a sgaidh agus nuair {#what-visitors-see-when-a-site-is-blocked}
 
 Tha fhaighinn a' sgaidh ag iarraidh air a bhith a' sgaidh an t-suidhe:
 
@@ -87,7 +87,7 @@ Air dùil gu bheil am fhaighinn a' chunn beannach, seachda an t-àite a tha 'tri
 Tha meibbratach a tha a tha a tha a tha a' chunn beannach a tha a tha a tha a' chunn beannach. Chaidh e a' chunn beannach agad air an t-àite gu sgaidh (regardless of whether Block Frontend Access is enabled). Tha an períod grace a tha a tha a tha a tha a' chunn beannach a tha a tha a tha a' chunn beannach.
 :::
 
-## Troubleshooting: Sites Remaining Accessible After Expiration
+## Troubleshooting: Sites Remaining Accessible After Expiration {#what-gets-blocked-and-when}
 
 Tha sitean a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a tha a
 
@@ -95,7 +95,7 @@ Ar thu na pàipean a' chlàradhach, leathainn an **Frontend Block Grace Period**
 
 Rinn anseo seo air `0` má thuair a tha thu a' tòiseachadh air blocadh agad agad air an t-saoghal gun eil e air a bhith beag.
 
-### 3. Bhaigh a' chlàradh stat an t-saoghal a' tòiseachadh gu fìr
+### 3. Bhaigh a' chlàradh stat an t-saoghal a' tòiseachadh gu fìr {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Rinn air **Ultimate Multisite > Memberships** agus cheannach stat an t-saoghal a tha a' tòiseachadh. Má tha e ag tòiseachadh gu `active` air a tha eair a thar a' chlàradh, tha an t-saoghal a' tòiseachadh chan eil fhaighinn. Tha e cheannach a' tòiseachadh:
 
@@ -103,7 +103,7 @@ Rinn air **Ultimate Multisite > Memberships** agus cheannach stat an t-saoghal a
 
 - **Tha an cronaichean (cron job) a' tòiseachadh chan eil**: Cheannach an t-sealladh a' tòiseachadh.
 
-### 4. Bhaigh a' chlàradh Action Scheduler a' tòiseachadh
+### 4. Bhaigh a' chlàradh Action Scheduler a' tòiseachadh {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Tha Ultimate Multisite a' tòiseachadh air Action Scheduler airson na cronaichean (cron jobs) sin. Rinn air **Tools > Scheduled Actions** anns an admin de nàthair agus cheannach air:
 
@@ -125,7 +125,7 @@ Chan eil e cheannach a bhith ag obair cron gu mòr, rinnseall an cron job de dh�
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Comharrachadh fiosrachadh air coimhead Gateway Webhook (Auto-Renewing Memberships)
+### 5. Comharrachadh fiosrachadh air coimhead Gateway Webhook (Auto-Renewing Memberships) {#2-check-the-frontend-block-grace-period}
 
 Mar a tha an fhaisg ag obair gu robh e a' chluin a thaithid agus mar a tha an coimhead gateway wedi' sgeuladh, ach tha an Ultimate Multisite ag obair gu robh e a' chluin `active`:
 
@@ -134,13 +134,13 @@ Mar a tha an fhaisg ag obair gu robh e a' chluin a thaithid agus mar a tha an co
 
 Mar a tha an gateway ag obair gu robh e a' chluin wedi' sgeuladh ach chaidh an Ultimate Multisite a' chluin, bha an fiosrachadh webhook a' chluin. Is e cheannach a bhith ag atharrachadh status an fhaisg gu mheansrach anns **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Comharrachadh an t-amadh a tha air a' sgeuladh (Cron Level)
+### 6. Comharrachadh an t-amadh a tha air a' sgeuladh (Cron Level) {#3-confirm-the-membership-status-has-actually-changed}
 
 Tha an comharrachadh cron ag obair gu robh e a' chluin a thaithid (default: 3 dachaigh) a dimint a bhith a' chluin. Tha seo a' tairt air a bhith a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chluin a' chlu
 
 Am Beispiel, mit de default settings und ere 7-tägige vorende grace period für d'frontend, chönnt es bis zu 10 täg nach `date_expiration` dure, bevor d'site würkli blockiert wird.
 
-### 7. Manuell Ablauf e Mitgliad (Membership)
+### 7. Manuell Ablauf e Mitgliad (Membership) {#4-verify-action-scheduler-is-running}
 
 Wenn du d'site sofort blockiere muesch und nöd uf de cron cycle warte chasch, chasch d'mitgliadsstatus manuell ändere:
 
@@ -151,7 +151,7 @@ Wenn du d'site sofort blockiere muesch und nöd uf de cron cycle warte chasch, c
 
 D'frontend-block wird bi em nöchste page load in Kraft trete (abhängig vo de Frontend Block Grace Period für abgelaufeni mitgliads, oder sofort für abgstellti mitgliads).
 
-## Zämmefassig
+## Zämmefassig {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 De ganz Ablauf vo de ablaufdatum bis zur site-blockierig:
 
@@ -183,7 +183,7 @@ Für abgstellti mitgliads isch de Wäg kürzer:
   D'frontend vo de site wird sofort blockiert
 ```
 
-## Entwickler-Referenz
+## Entwickler-Referenz {#6-check-the-expiration-grace-period-cron-level}
 
 Die folgendi hooks und filters lach dir zue, d'ablauf und d'blockierigsverhalte z'passiere:
 

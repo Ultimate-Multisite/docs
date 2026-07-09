@@ -3,11 +3,11 @@ title: WP-CLI संदर्भ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI संदर्भ
+# WP-CLI संदर्भ {#wp-cli-reference}
 
 Gratis AI Agent मध्ये `wp gratis-ai-agent` कमांड फॅमिली आहे, जी कमांड लाईनवरून एजंटचे बेंचमार्किंग करण्यासाठी, क्षमता (abilities) व्यवस्थापित करण्यासाठी आणि एजंटची स्थिती (status) तपासण्यासाठी वापरली जाते. सर्व कमांड्ससाठी WP-CLI 2.0 किंवा त्याहून अधिक आवृत्ती आवश्यक आहे.
 
-## स्थापना (Installation)
+## स्थापना (Installation) {#installation}
 
 जेव्हा प्लगइन सक्रिय होते, तेव्हा WP-CLI कमांड्स आपोआप नोंदणीकृत (registered) होतात. खालील कमांड वापरून तपासा:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 हे एजंट क्षमता बेंचमार्क सूट (Agent Capabilities benchmark suite) चालवते — ही जटिल, अनेक-टप्प्यांच्या प्रॉम्प्ट्सची (prompts) एक मालिका आहे जी एजंटच्या संपूर्ण क्षमता तपासते. मॉडेलची कार्यक्षमता (performance) तपासण्यासाठी, AI प्रदात्यांची (AI providers) तुलना करण्यासाठी किंवा उत्पादन वातावरणात (production) तैनात करण्यापूर्वी क्षमता पॅक्स (ability packs) प्रमाणित करण्यासाठी याचा वापर करा.
 
-### सारांश (Synopsis)
+### सारांश (Synopsis) {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### पर्याय (Options)
+### पर्याय (Options) {#options}
 
 | पर्याय | वर्णन |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | आउटपुट स्वरूप: `table` (डीफॉल्ट), `json`, `csv` |
 | `--save` | ऐतिहासिक तुलना करण्यासाठी बेंचमार्क परिणाम डेटाबेसमध्ये सेव्ह करा |
 
-### उदाहरणे (Examples)
+### उदाहरणे (Examples) {#examples}
 
 सध्याच्या प्रदाता आणि मॉडेलसह संपूर्ण बेंचमार्क सूट चालवा:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### आउटपुट (Output)
+### आउटपुट (Output) {#output}
 
 बेंचमार्क प्रत्येक प्रश्नासाठी एक ओळ (row) आउटपुट करतो, ज्यामध्ये खालील स्तंभ (columns) असतात:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### बेंचमार्क प्रश्न (Benchmark Questions)
+### बेंचमार्क प्रश्न (Benchmark Questions) {#benchmark-questions}
 
 डीफॉल्ट सूटमध्ये खालील प्रश्न समाविष्ट आहेत:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 स्थापित क्षमता (abilities) आणि क्षमता पॅक्स (ability packs) व्यवस्थापित करते.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 नोंदणीकृत सर्व क्षमता, त्यांचा स्रोत (core किंवा pack), आणि त्यांची सध्याची स्थिती (status) सूचीबद्ध करते.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 नोंदणीतून (registry) एक क्षमता पॅक डाउनलोड करते आणि सक्रिय करते.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 पॅक काढून न करता विशिष्ट क्षमता अक्षम (disable) करते. हे दिलेल्या साइटवर एजंटची कार्यक्षेत्र मर्यादा (scope) ठेवण्यासाठी उपयुक्त आहे.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 पूर्वी अक्षम केलेली क्षमता पुन्हा सक्रिय (re-enable) करते.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 सध्याची एजंट कॉन्फिगरेशन आणि कनेक्टिव्हिटी स्थिती (connectivity status) प्रदर्शित करते.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 डीबग लॉगमधून (debug log) अलीकडील एजंट ॲक्टिव्हिटी प्रदर्शित करते.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 एजंटची स्थिती रीसेट करते: इंजेक्ट केलेले CSS साफ करते, एजंट-नोंदणीकृत CPTs आणि टॅक्सोनॉमी काढून टाकते, ग्लोबल स्टाईल्स रीसेट करते आणि एजंटचा पर्याय कॅशे (options cache) रिकामा करते. हे प्लगइन किंवा त्याच्या सेटिंग्ज काढून टाकत नाही.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## एक्झिट कोड्स (Exit Codes)
+## एक्झिट कोड्स (Exit Codes) {#exit-codes}
 
 सर्व कमांड्स यशस्वी झाल्यास `0` एक्झिट करतात. नॉन-झिरो एक्झिट कोड्स:
 

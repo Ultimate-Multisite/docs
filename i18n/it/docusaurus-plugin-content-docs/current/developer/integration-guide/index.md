@@ -3,13 +3,13 @@ title: Guida all'integrazione
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guida all'integrazione
+# Guida all'integrazione {#integration-guide}
 
 Questa guida copre i pattern di integrazione comuni con Ultimate Multisite, inclusi il collegamento a servizi esterni, la creazione di gateway di pagamento personalizzati e la gestione dei webhook.
 
 Per un'infrastruttura tenant isolata, consulta [Integrazione Multi-Tenancy](./multi-tenancy) per indicazioni su bootstrap di tenant sovrani, verifica della migrazione, SSO e teardown.
 
-## Integrazione CRM
+## Integrazione CRM {#crm-integration}
 
 Sincronizza i dati dei clienti con il tuo CRM quando nuovi clienti si registrano:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrazione analytics
+## Integrazione analytics {#analytics-integration}
 
 Traccia gli eventi aziendali chiave lungo il ciclo di vita del cliente:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Passi successivi
+## Passi successivi {#next-steps}
 
 - [Sviluppo di gateway personalizzato](./custom-gateway) — Crea il tuo gateway di pagamento
 - [Gestione dei webhook](./webhooks) — Crea endpoint webhook personalizzati

@@ -3,7 +3,7 @@ title: Shigarwar AffiliateWP
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# Shigarwar AffiliateWP
+# Shigarwar AffiliateWP {#affiliatewp-integration}
 
 Wannan ƙwarewa tana bayarwa ta hanyar addon ɗin **AffiliateWP**.
 

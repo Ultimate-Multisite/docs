@@ -3,15 +3,15 @@ title: 'Ceacht 11: Custaiméirí a aimsiú'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Ceacht 11: Custaiméirí a Aimsiú
+# Ceacht 11: Custaiméirí a Aimsiú {#lesson-11-finding-customers}
 
 Níl in ardán iontach gan chustaiméirí ach caitheamh aimsire. Clúdaíonn an ceacht seo conas custaiméirí a fháil i nideoige ingearach -- straitéisí a oibríonn go sonrach toisc go bhfuil tú dírithe ar thionscal amháin.
 
-## An Áit ar Fhágamar É
+## An Áit ar Fhágamar É {#where-we-left-off}
 
 Tá FitSite beo. Anois caithfimid a chur ar úinéirí stiúideonna aclaíochta é a aimsiú agus clárú.
 
-## Cén Fáth a bhfuil Fáil Nideoige Éagsúil
+## Cén Fáth a bhfuil Fáil Nideoige Éagsúil {#why-niche-acquisition-is-different}
 
 Nuair a dhíolann tú le gach duine, bíonn tú san iomaíocht ar son airde i margadh torannach. Nuair a dhíolann tú le nideoige, bíonn buntáistí agat:
 
@@ -19,17 +19,17 @@ Nuair a dhíolann tú le gach duine, bíonn tú san iomaíocht ar son airde i ma
 - **Buaileann do theachtaireacht go láithreach leo** -- cuireann "suíomhanna gréasáin do stiúideonna aclaíochta" úinéir giomnáisiam ar stad i lár scrollaithe
 - **Carnann atreoruithe** -- tá aithne ag úinéirí stiúideonna aclaíochta ar úinéirí stiúideonna aclaíochta eile
 
-## Cainéal 1: Teagmháil Dhíreach
+## Cainéal 1: Teagmháil Dhíreach {#channel-1-direct-outreach}
 
 Is í an chosán is tapúla chuig do chéad chustaiméirí ná teagmháil dhíreach, phearsanta.
 
-### Aimsigh Ionchais
+### Aimsigh Ionchais {#find-prospects}
 
 - Cuardaigh Google Maps le haghaidh stiúideonna aclaíochta, giomnáisiam, agus traenálaithe pearsanta i do cheantar
 - Tabhair cuairt ar a suíomhanna gréasáin reatha (nó tabhair faoi deara nach bhfuil ceann acu)
 - Bailigh faisnéis teagmhála óna bpróifílí Google Business nó ó na meáin shóisialta
 
-### Déan Measúnú ar a Staid Reatha
+### Déan Measúnú ar a Staid Reatha {#evaluate-their-current-situation}
 
 I gcás gach ionchais, tabhair faoi deara:
 
@@ -37,7 +37,7 @@ I gcás gach ionchais, tabhair faoi deara:
 - **Drochshuíomh gréasáin**: Ionchas láidir -- taispeáin dóibh cén chuma atá ar rogha níos fearr
 - **Suíomh gréasáin maith**: Ionchas lag -- tá an fhadhb seo réitithe acu cheana féin
 
-### Déan Teagmháil
+### Déan Teagmháil {#make-contact}
 
 Seol ríomhphost nó teachtaireacht phearsantaithe:
 
@@ -48,7 +48,7 @@ Seol ríomhphost nó teachtaireacht phearsantaithe:
 
 Ná seol mór-ríomhphoist. Sáróidh teagmháil phearsantaithe le 20 ionchas a ndearnadh taighde maith orthu pléascadh cineálach chuig 2,000.
 
-## Cainéal 2: Pobail Nideoige
+## Cainéal 2: Pobail Nideoige {#channel-2-niche-communities}
 
 Cruinníonn úinéirí stiúideonna aclaíochta in áiteanna ar leith ar líne:
 
@@ -57,7 +57,7 @@ Cruinníonn úinéirí stiúideonna aclaíochta in áiteanna ar leith ar líne:
 - **Fóraim tionscail** agus cláir phlé
 - **Grúpaí LinkedIn** do ghairmithe aclaíochta
 
-### Conas Páirt a Ghlacadh
+### Conas Páirt a Ghlacadh {#how-to-participate}
 
 Ná bí páirteach agus do tháirge a chur chun cinn láithreach. Ina áit sin:
 
@@ -66,7 +66,7 @@ Ná bí páirteach agus do tháirge a chur chun cinn láithreach. Ina áit sin:
 3. **Roinn nuair is ábhartha** -- nuair a chuireann duine ceist faoi shuíomhanna gréasáin, roinn d’ardán go nádúrtha
 4. **Cruthaigh ábhar úsáideach** -- scríobh postálacha faoi "cad a dhéanann suíomh gréasáin iontach do stiúideo aclaíochta" a threoraíonn go nádúrtha chuig d’ardán
 
-## Cainéal 3: Margaíocht Ábhair
+## Cainéal 3: Margaíocht Ábhair {#channel-3-content-marketing}
 
 Cruthaigh ábhar a chuardaíonn úinéirí stiúideonna aclaíochta:
 
@@ -77,7 +77,7 @@ Cruthaigh ábhar a chuardaíonn úinéirí stiúideonna aclaíochta:
 
 Foilsigh é seo ar do bhlag margaíochta FitSite. Le himeacht ama, rangaíonn an t-ábhar seo in innill chuardaigh agus tugann sé trácht orgánach ó dhaoine atá ag lorg go gníomhach an rud atá á thairiscint agat.
 
-## Cainéal 4: Comhpháirtíochtaí
+## Cainéal 4: Comhpháirtíochtaí {#channel-4-partnerships}
 
 Comhpháirtigh le gnólachtaí a fhreastalaíonn ar stiúideonna aclaíochta cheana féin:
 
@@ -88,7 +88,7 @@ Comhpháirtigh le gnólachtaí a fhreastalaíonn ar stiúideonna aclaíochta che
 
 Tairg coimisiúin atreoraithe nó cur chun cinn cómhalartach. Is féidir leis an [mbreiseán AffiliateWP](/addons/affiliatewp) cabhrú leat clár atreoraithe foirmiúil a chur ar bun.
 
-## Cainéal 5: Imeachtaí Tionscail
+## Cainéal 5: Imeachtaí Tionscail {#channel-5-industry-events}
 
 Cuireann imeachtaí tionscail aclaíochta os comhair na gcéadta custaiméirí féideartha thú:
 
@@ -99,7 +99,7 @@ Cuireann imeachtaí tionscail aclaíochta os comhair na gcéadta custaiméirí f
 
 Ní theastaíonn buiséad mór uait. Fiú má fhreastalaíonn tú mar rannpháirtí agus comhráite a bheith agat faoin méid a dhéanann tú, is féidir treoraigh a ghiniúint.
 
-## Cainéal 6: Suíomhanna Taispeántais
+## Cainéal 6: Suíomhanna Taispeántais {#channel-6-showcase-sites}
 
 Is í do mhargaíocht is fearr suíomhanna do chustaiméirí reatha. Le cead:
 
@@ -108,7 +108,7 @@ Is í do mhargaíocht is fearr suíomhanna do chustaiméirí reatha. Le cead:
 - Iarr teistiméireachtaí ar chustaiméirí sásta
 - Spreag custaiméirí chun FitSite a lua nuair a chuirtear ceist orthu faoina suíomh gréasáin
 
-## Clár Atreoraithe a Chur ar Bun
+## Clár Atreoraithe a Chur ar Bun {#setting-up-a-referral-program}
 
 Is é focal béil an cainéal is cumhachtaí atá agat i nideoige. Cuir foirm air:
 
@@ -116,7 +116,7 @@ Is é focal béil an cainéal is cumhachtaí atá agat i nideoige. Cuir foirm ai
 2. Tairg luach saothair do chustaiméirí reatha as atreoruithe (mí amháin saor in aisce, creidmheas cuntais, srl.)
 3. Déan é éasca -- tabhair nasc atreoraithe dóibh agus teachtaireacht shimplí is féidir leo a chur ar aghaidh
 
-## Rianú ar a nOibríonn
+## Rianú ar a nOibríonn {#tracking-what-works}
 
 I gcás gach cainéil, rianaigh:
 
@@ -126,7 +126,7 @@ I gcás gach cainéil, rianaigh:
 
 Dírigh níos mó ar na cainéil a oibríonn. Gearr amach cainéil nach n-oibríonn.
 
-## Ionchais Réadúla
+## Ionchais Réadúla {#realistic-expectations}
 
 - **Mí 1-3**: 5-20 custaiméir, den chuid is mó ó theagmháil dhíreach agus pobail
 - **Mí 4-6**: 20-50 custaiméir, tosaíonn margaíocht ábhair ag cur leis
@@ -134,7 +134,7 @@ Dírigh níos mó ar na cainéil a oibríonn. Gearr amach cainéil nach n-oibrí
 
 Athraíonn na huimhreacha seo, ach tá an patrún comhsheasmhach: tagann custaiméirí luatha ó iarracht dhíreach, tagann custaiméirí níos déanaí ó éifeachtaí carnacha ábhair, atreoruithe, agus clú.
 
-## An Méid a Thógamar sa Cheacht Seo
+## An Méid a Thógamar sa Cheacht Seo {#what-we-built-this-lesson}
 
 - **Sé chainéal fála** curtha in oiriúint don nideoige aclaíochta
 - **Próiseas teagmhála dírí** chun na chéad chustaiméirí a mhealladh

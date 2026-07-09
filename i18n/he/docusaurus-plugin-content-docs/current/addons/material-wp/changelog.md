@@ -3,7 +3,7 @@ title: Material WP יומן שינויים
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# יומן שינויים של Material WP
+# יומן שינויים של Material WP {#material-wp-changelog}
 
 גרסה 1.1.15 - 26/01/2026
 * שופר: סגנון ועיצוב הקוד;

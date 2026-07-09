@@ -3,13 +3,13 @@ title: Whakaawe Mode Pāramatanga Tuarua
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Whakaeke i te Mode Pāramatanga Tuarua (Third-Party Mode Migration)
+# Whakaeke i te Mode Pāramatanga Tuarua (Third-Party Mode Migration) {#third-party-mode-migration}
 
 Te Superdav AI Agent v1.12.0 mārie i te mea e whakahaa i te whakamahi o ngā āhua atu (third-party abilities). **Ko te mode pāramatanga tuarua (third-party mode) e whakaatanga ana ki "auto" (tūmā), e tino whaihi ana ki te whaiaro API Abilities o WordPress 7.0+ i runga i a WordPress, i roto i te waenganui o te whakamahi manu. **
 
-## He aha te whakawhiti?
+## He aha te whakawhiti? {#what-changed}
 
-### I te wae v1.12.0
+### I te wae v1.12.0 {#before-v1120}
 
 Ngā āhua atu (third-party abilities) e hiahia ana ki te whaiaro manu:
 
@@ -18,7 +18,7 @@ Ngā āhua atu (third-party abilities) e hiahia ana ki te whaiaro manu:
 - Ko te whaiaro API Abilities o WordPress he mea nui (optional)
 - Ko te mode legacy (legacy mode) ko te mode pūrere (default)
 
-### I te wae v1.12.0
+### I te wae v1.12.0 {#after-v1120}
 
 E tino pai ngā āhua atu tuarua:
 
@@ -27,13 +27,13 @@ E tino pai ngā āhua atu tuarua:
 - He tino nui te whakamahi i a WordPress 7.0+ i roto i te whakawhiti manu
 - Ko te mode legacy ka mau ana mō ngā phiên WordPress purini
 
-## Ka uaua ki te kua hua?
+## Ka uaua ki te kua hua? {#who-is-affected}
 
-### Ngā Whakawhiti Hou (WordPress 7.0+)
+### Ngā Whakawhiti Hou (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Koa mea e hiahia atu.** Ko te mode pāramatanga tuarua e whakaatanga ana ki "auto" i runga i te tūmā, ā, ngā āhua atu e pai i te whakamahi i roto i te whakatō (out of the box).
 
-### Ngā Whakawhiti Kua Hou (Existing Installations)
+### Ngā Whakawhiti Kua Hou (Existing Installations) {#existing-installations}
 
 **Ko ngā whakaritenga mo koe ka mau ana.** Ko te mea i runga i ahau i te whaiaro:
 
@@ -41,7 +41,7 @@ E tino pai ngā āhua atu tuarua:
 - **Manual third-party mode**: Ka mau ana koe i te mode manu.
 - **Auto mode**: Ka mau ana koe i te auto mode (ko atu nei, ko te mea i pūrere).
 
-### Ngā Phi-pī WordPress I te wae 7.0
+### Ngā Phi-pī WordPress I te wae 7.0 {#wordpress-versions-before-70}
 
 **Ko te mode legacy ka mau ana mō.** Ko te mea i runga i ahau i a WordPress 6.x he taroa:
 
@@ -49,9 +49,9 @@ E tino pai ngā āhua atu tuarua:
 - Ka taea e koe te whaiaro manu manually ko te mea i hiahia atu.
 - Whakaora ki WordPress 7.0+ kia mau i te API Abilities o tūmā (native)
 
-## Te Whakaritenga i ngā Mode
+## Te Whakaritenga i ngā Mode {#understanding-the-modes}
 
-### Auto Mode (Te Mode Pūrere Hou)
+### Auto Mode (Te Mode Pūrere Hou) {#auto-mode-new-default}
 
 **Auto mode** e whaiaro ana i te whaiaro API Abilities o WordPress i runga i a tūmā:
 
@@ -62,7 +62,7 @@ E tino pai ngā āhua atu tuarua:
 
 **Kāore i te wā mea:** WordPress 7.0+ me ngā āhua o tūmanako pōuri (third-party abilities)
 
-### Mode Manau (Manual Mode)
+### Mode Manau (Manual Mode) {#manual-mode}
 
 **Mode manau** e hiahia atu ki whakamahi whakamahi manuia:
 
@@ -73,7 +73,7 @@ E tino pai ngā āhua atu tuarua:
 
 **Kāore i te wā mea:** Whakamārama (testing), hewhai i te whai whakamahi i ngā āhua o tūmanako pōuri, hena te whakaritanga mō te manuia.
 
-### Mode Legacy (Legacy Mode)
+### Mode Legacy (Legacy Mode) {#legacy-mode}
 
 **Mode legacy** e whai i te system o āhua o tūmanako pōuri (abilities) purine:
 
@@ -84,24 +84,24 @@ E tino pai ngā āhua atu tuarua:
 
 **Kāore i te wā mea:** WordPress 6.x hena, hena ko te whakahirahira (legacy compatibility) kua roa.
 
-## Whakawātea Mode Kua Hou
+## Whakawātea Mode Kua Hou {#checking-your-current-mode}
 
-### I te Pāru Admin Panel
+### I te Pāru Admin Panel {#via-admin-panel}
 
 1. Pāinga ki **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Kia kōrero mō te whakaritanga **Third-Party Mode** (Mode Tūmanako Pōuri)
 3. Ka whakaatu i a koe i te mode kua whai whakamahinga kia ora, me ngā ohana mō te whakawhiti i ai
 
-### I te Kōrero (Via Code)
+### I te Kōrero (Via Code) {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', or 'legacy'
 ```
 
-## Whakawhiti Mode Kua Hou
+## Whakawhiti Mode Kua Hou {#changing-your-mode}
 
-### Whakawhiti ki Auto Mode
+### Whakawhiti ki Auto Mode {#switch-to-auto-mode}
 
 Ko i roto i WordPress 7.0+ he tino hiahia atu ki te whakamahi auto mode:
 
@@ -112,7 +112,7 @@ Ko i roto i WordPress 7.0+ he tino hiahia atu ki te whakamahi auto mode:
 
 Ko Superdav AI Agent ka mau i ngā āhua o tūmanako pōuri kua whai whakamahinga kia ora, me te whakarite ai i ahau.
 
-### Whakawhiti ki Manual Mode
+### Whakawhiti ki Manual Mode {#switch-to-manual-mode}
 
 Ko koe e hiahia atu ki te whakahaere manuia i ngā āhua o tūmanako pōuri (abilities) kua whai whakamahi:
 
@@ -122,7 +122,7 @@ Ko koe e hiahia atu ki te whakahaere manuia i ngā āhua o tūmanako pōuri (abi
 4. Whakawhiti i **Save**
 5. Whakawhiti i tō file o whakaritanga kia whai whakaaro ki ngā āhua kua e hiahia atu ki te whakamahi
 
-### Whakawhiti ki Legacy Mode
+### Whakawhiti ki Legacy Mode {#switch-to-legacy-mode}
 
 Ko koe e hiahia atu ki te whakawhiti mō ngā wera (legacy compatibility):
 
@@ -131,9 +131,9 @@ Ko koe e hiahia atu ki te whakawhiti mō ngā wera (legacy compatibility):
 3. Whakarite i **Legacy** (Mauri/Pūrere)
 4. Whakawātea **Save**
 
-## Manawa o te Auto Mode (Benefits of Auto Mode)
+## Manawa o te Auto Mode (Benefits of Auto Mode) {#benefits-of-auto-mode}
 
-### Whakawātea Otomato (Automatic Discovery)
+### Whakawātea Otomato (Automatic Discovery) {#automatic-discovery}
 
 Kia tino whakatika ngā Whakawātea (Abilities) i roto i te auto, e pēnei:
 
@@ -144,7 +144,7 @@ Kia tino whakatika ngā Whakawātea (Abilities) i roto i te auto, e pēnei:
 
 Kua kore e hiahia atu ki te whakatira manu manu (manual registration).
 
-### Whakawhanaungatanga Māori (Native Integration)
+### Whakawhanaungatanga Māori (Native Integration) {#native-integration}
 
 Kia whakahou i ngā Whakawātea (Abilities) me WordPress Abilities API:
 
@@ -153,67 +153,67 @@ Kia whakahou i ngā Whakawātea (Abilities) me WordPress Abilities API:
 - Pātai ana ki ngā plugins kia whakamahi te Abilities API
 - Kia kaha ai i te whakatika i te korero o WordPress
 
-### Whakawātea Whakamahara (Simplified Management)
+### Whakawātea Whakamahara (Simplified Management) {#simplified-management}
 
 - Kua kore ahau e hiahia atu ki mga file configuration kia whakawātea
 - Kua kore ahau e hiahia atu ki te whakatira manu manu (manual ability registration)
 - Ngā Whakawātea Visibility (Ability Visibility controls) e mahi ana i roto i te auto
 - Ngā Admin notices e whakamōhihi ana koe i ngā Whakawātea e kore tika kia whakawātea
 
-### Mahi Whakamahi Whakaaro (Better Performance)
+### Mahi Whakamahi Whakaaro (Better Performance) {#better-performance}
 
 - Kua kaha ai i ngā Whakawātea (Abilities)
 - E whai whakaaro ana ki te demand (Lazy-loaded on demand)
 - Kia tino whakamōhihi ana ki WordPress 7.0+
 
-## Te Onua o te Whakatika (Migration Path)
+## Te Onua o te Whakatika (Migration Path) {#migration-path}
 
-### Ko koe i runga i WordPress 6.x
+### Ko koe i runga i WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Whakahou ki WordPress 7.0+** (i roto i te wā e tika ana)
 2. **Whakahou i Superdav AI Agent** ki v1.12.0+
 3. **Whakawārite i third-party mode ki Auto** (optional; ka kaha te mahi i legacy mode)
 4. **Ki te whakaaro i ngā Whakawātea Visibility** kia whakahou i ngā whakahaere mō te whai access tika
 
-### Ko koe i runga i WordPress 7.0+
+### Ko koe i runga i WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Whakahou i Superdav AI Agent** ki v1.12.0+
 2. **Kia pēnei te whakatika i third-party mode ki Auto** (kia pēnei ana eke ana)
 3. **Ki te whakaaro i ngā Whakawātea Visibility** kia whakahou i ngā whakahaere mō te whai access tika
 4. **Whakawātea i third-party abilities** kia kore ahau e hiahia atu ki te whakamārama ana
 
-## Whakamārama (Troubleshooting)
+## Whakamārama (Troubleshooting) {#troubleshooting}
 
-### Kua kore ngā Abilities e pūmau i auto mode
+### Kua kore ngā Abilities e pūmau i auto mode {#abilities-arent-loading-in-auto-mode}
 
 - Kia tino whakaaro koe i runga i WordPress 7.0+
 - Kia kaha ai i te third-party mode ki "Auto"
 - Kia whakaaro i te plugin e pūmau ana i te ability he active ana
 - Kia whakaaro i ngā error logs o WordPress kia whakatika i ngā error o te registration
 
-### He hiahia ahauKia mau legacy mode
+### He hiahia ahauKia mau legacy mode {#i-want-to-keep-legacy-mode}
 
 - Pā no **Settings** → **Third-Party Mode**
 - Whakarite i **Legacy** (Mauri/Pūrere)
 - Whakawātea **Save**
 - Ka kaha te mahi i legacy mode
 
-### Ka taea e au ngā mea tino whaiaro ahau i whakawhiti?
+### Ka taea e au ngā mea tino whaiaro ahau i whakawhiti? {#my-custom-abilities-arent-showing}
 
 - Kia titi ki te whakamahi i WordPress hooks mō te whakatakī (register) i ahau
 - Kia tiaki i te whakamahi o ahau i te Abilities API i te tika
 - Titi ki ngā error logs o WordPress
 - Whakarongo ki te admin page **Ability Visibility** kia whakaahua i ngā ability katoa e whakawhiti
 
-### Ka pēhea ahau e pēhea ana "unclassified ability" (ability whakahou) e pēhea?
+### Ka pēhea ahau e pēhea ana "unclassified ability" (ability whakahou) e pēhea? {#im-getting-unclassified-ability-notices}
 
 - He pēhea tēnei mō ngā ability hou o pihakpi
 - Whakarongo ki te whakamahi i te admin notice kia whakaahua me te whakawhiti i ahiahi
 - Titi ki **Ability Visibility** mō whakamārama atu mō te whakahou
 
-## Backward Compatibility (Whakawātea i te whakatika)
+## Backward Compatibility (Whakawātea i te whakatika) {#backward-compatibility}
 
-### Ngā Configuration e Whakahaerehia
+### Ngā Configuration e Whakahaerehia {#existing-configurations}
 
 Ko ahau e hiahia ana koe mō ngā configuration o ability pihakpi e whai ake nei:
 
@@ -223,27 +223,27 @@ Ko ahau e hiahia ana koe mō ngā configuration o ability pihakpi e whai ake nei
 
 Kia mau i tō configuration whaiaro, kia mau i te Manual or Legacy mode.
 
-### Whakaaro o te Wāwhara (Deprecation Timeline)
+### Whakaaro o te Wāwhara (Deprecation Timeline) {#deprecation-timeline}
 
 - **v1.12.0**: Ko ngā Legacy and Manual modes e pēhea e mahi ana
 - **v1.13.0+**: Ko ngā Legacy mode e pēhea e mahi ana i whakaatu ngā notis o whakahou (deprecation notices)
 - **v2.0.0**: Ko ngā Legacy mode e pēhea e whakawhiti (TBD - E tika ana ki te tino whakatau)
 
-## Ngā Whakamahi Whakaaro (Best Practices)
+## Ngā Whakamahi Whakaaro (Best Practices) {#best-practices}
 
-### Mō Ngā Whakahaere Hou
+### Mō Ngā Whakahaere Hou {#for-new-installations}
 
 - Whakarongo ki Auto mode (he ko te default)
 - Kia ai i Superdav AI Agent kia whakaahua ngā ability automatically
 - Whakarongo ki Ability Visibility mō whakakawhiti access
 
-### Mō Ngā Whakahaere e Whakahouhia
+### Mō Ngā Whakahaere e Whakahouhia {#for-existing-installations}
 
 - Whakahou ki WordPress 7.0+ inā e taea ana
 - Whakatika ki Auto mode mō whakahaere e pēhea e whaiaro (simplified management)
 - Whakarongo ki ngā ability me te whakawhiti i ahiahi using Ability Visibility
 
-### Mō Ngā Ability Whaiaro
+### Mō Ngā Ability Whaiaro {#for-custom-abilities}
 
 - Whakatakī ngā ability via WordPress hooks (Abilities API)
 - Whakarongo ki te registry o ability whaiaro (custom ability registries)
@@ -255,7 +255,7 @@ Kia mau i tō configuration whaiaro, kia mau i te Manual or Legacy mode.
 4. **Whakawhanaungatanga ngā kaha (Classify abilities)**: Pā no me te whakawhanaunga me te whakarite i ngā kaha e hāpai ana i te whakaaro.
 5. **Whakawātea (Test)**: Kia whakapumahi ko ngā kaha o au third-party mō te mahi i runga i te tika.
 
-## Ngā Tautai Whakaritenga (Related Topics)
+## Ngā Tautai Whakaritenga (Related Topics) {#next-steps}
 
 - **Māhi Kaha Whakaaro (Ability Visibility)**: Whakamahinga me te whakakawhanaunga i ko ngā kaha kua whakahou ana i te wāhi e hihanga ana.
 - **WordPress Abilities API**: Whakarongo ki te whakamārama o te registration o abilities o WordPress mō te whenua.

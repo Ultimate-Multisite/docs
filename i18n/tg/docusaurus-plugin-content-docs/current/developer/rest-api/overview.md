@@ -3,28 +3,28 @@ title: Шарҳи REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Маълумотномаи REST API
+# Маълумотномаи REST API {#rest-api-reference}
 
-## Танзимоти асосӣ
+## Танзимоти асосӣ {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Аутентификатсия:** API Key ва Secret (HTTP Basic Auth ё параметрҳои URL)
 
-## Аутентификатсия
+## Аутентификатсия {#authentication}
 
-### Фаъол кардани API
+### Фаъол кардани API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Гирифтани маълумоти эътимодии API
+### Гирифтани маълумоти эътимодии API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Усулҳои аутентификатсия
+### Усулҳои аутентификатсия {#authentication-methods}
 
 **HTTP Basic Auth (тавсия мешавад):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Нуқтаҳои ниҳоии асосӣ
+## Нуқтаҳои ниҳоии асосӣ {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **Масири асосӣ:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Масири асосӣ:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Масири асосӣ:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Масири асосӣ:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Масири асосӣ:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Масири асосӣ:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Нуқтаи ниҳоии бақайдгирӣ
+## Нуқтаи ниҳоии бақайдгирӣ {#registration-endpoint}
 
 Нуқтаи ниҳоии `/register` ҷараёни пурраи checkout/бақайдгириро таъмин мекунад:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Нуқтаҳои ниҳоии иҷорагири мустақил
+## Нуқтаҳои ниҳоии иҷорагири мустақил {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 фарогирии REST барои иҷорагири мустақилро илова мекунад, барои ҳамгироиҳое, ки иҷорагирони ҷудошударо омода, тафтиш ё тасдиқ мекунанд.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false`-ро ҳамчун монеаи пеш аз оғоз ҳисоб кунед. Ҷузъиёти тасдиқро санҷед, пайвасткунии хости пойгоҳи додаҳо, навбат, омодасозии корбар ё мушкили масирдиҳиро ислоҳ кунед, сипас тасдиқро аз нав санҷед.
 
-## Ҷавобҳои хато
+## Ҷавобҳои хато {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## Саҳифабандӣ ва филтркунӣ
+## Саҳифабандӣ ва филтркунӣ {#pagination-and-filtering}
 
 **Параметрҳои дархост:**
 ```http

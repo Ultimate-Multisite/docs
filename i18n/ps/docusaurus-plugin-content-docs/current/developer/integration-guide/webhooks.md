@@ -3,11 +3,11 @@ title: د Webhook سمبالول
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# د وېبهوک سمبالول
+# د وېبهوک سمبالول {#webhook-handling}
 
 د بهرنیو خدمتونو څخه د پېښو ترلاسه کولو او له Ultimate Multisite سره د معلوماتو هممهاله کولو لپاره دودیز وېبهوک پای ټکي جوړ کړئ.
 
-## دودیز وېبهوک پای ټکی
+## دودیز وېبهوک پای ټکی {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## امنیتي ملاحظات
+## امنیتي ملاحظات {#security-considerations}
 
 - تل د HMAC یا ګډ راز په کارولو سره د وېبهوک لاسلیکونه تایید کړئ
 - په خپل REST لار کې `permission_callback` وکاروئ — په تولیدي چاپېریال کې یې هېڅکله `__return_true` ته مه ټاکئ

@@ -4,20 +4,20 @@ title: Sefa - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Sefa: secure_auth_cookie
+# Sefa: secure_auth_cookie {#filter-secureauthcookie}
 
 Inosefa kana auth cookie ichifanira kutumirwa chete kuburikidza neHTTPS.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
 | $secure | `bool` | Kana cookie ichifanira kutumirwa chete kuburikidza neHTTPS. |
 | $user_id | `int` | ID yemushandisi. |
 
-### Kubva
+### Kubva {#since}
 
 - 3.1.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) pamutsetse 80

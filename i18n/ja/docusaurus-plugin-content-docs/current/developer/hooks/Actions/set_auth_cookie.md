@@ -4,11 +4,11 @@ title: アクション - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# アクション: set_auth_cookie
+# アクション: set_auth_cookie {#action-setauthcookie}
 
 認証クッキーが設定される直前に発火します。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | 型 | 説明 |
 |------|------|-------------|
@@ -19,11 +19,11 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | 認証スキーム。'auth'または'secure_auth'が使用できます。 |
 | $token | `string` | このクッキーに使用するユーザーのセッショントークン。 |
 
-### 導入
+### 導入 {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> パラメータが追加されました。
 
-### ソース
+### ソース {#source}
 
 以下で定義されています [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) 行 124

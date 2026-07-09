@@ -3,16 +3,16 @@ title: Àwọn ìṣètò Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Àwọn Ètò Gratis AI Agent
+# Àwọn Ètò Gratis AI Agent {#gratis-ai-agent-settings}
 
 Ojú-ìbojú **Àwọn Ètò → To ti ni ilọsiwaju** ninu Gratis AI Agent ń pèsè ìṣètò ìpele-alákóso fún àwọn ìṣepọ̀ backend. Ojú-ìwé yìí ṣàkọsílẹ̀ fífi feedback ránṣẹ́ síwájú, àwọn kọ́kọ́rọ́ olupèsè ìṣàwárí, ìṣètò iṣẹ́ Superdav tí a ń ṣàkóso, àwọn ìṣàkóso Google Calendar, àwọn ètò SMS TextBee, àti àwọn àmì ẹya ka gbogbo nẹ́tíwọ́ọ̀kì.
 
-## Wíwọlé sí Àwọn Ètò
+## Wíwọlé sí Àwọn Ètò {#accessing-settings}
 
 1. Nínú abojútó WordPress, lọ sí **Gratis AI Agent → Àwọn Ètò**.
 2. Tẹ taabu **To ti ni ilọsiwaju**.
 
-## Ìṣètò Opin-ọ̀nà Feedback
+## Ìṣètò Opin-ọ̀nà Feedback {#feedback-endpoint-configuration}
 
 Opin-ọ̀nà feedback ń gba àwọn ìbéèrè POST láti ọdọ agent AI nígbàkúùgbà tí oníṣe bá fi feedback ránṣẹ́ nípasẹ̀ bọ́tìnì atanpako-sílẹ̀, àkójáde auto-prompt, tàbí àṣẹ `/report-issue`.
 
@@ -21,7 +21,7 @@ Opin-ọ̀nà feedback ń gba àwọn ìbéèrè POST láti ọdọ agent AI ní
 | **URL Opin-ọ̀nà Feedback** | URL tí ń gba àwọn fífi feedback ránṣẹ́ gẹ́gẹ́ bí àwọn ìbéèrè HTTP POST pẹ̀lú JSON body. |
 | **Feedback API Key** | bearer token tí a fi ránṣẹ́ nínú `Authorization` header ti ìbéèrè feedback kọ̀ọ̀kan. Fi sílẹ̀ ní òfo bí opin-ọ̀nà rẹ kò bá nílò ìfàrìdí. |
 
-### JSON Payload Tí a Retí
+### JSON Payload Tí a Retí {#expected-json-payload}
 
 Opin-ọ̀nà feedback rẹ gbọ́dọ̀ gba JSON body pẹ̀lú ó kéré tán àwọn pápá wọ̀nyí:
 
@@ -36,7 +36,7 @@ Opin-ọ̀nà feedback rẹ gbọ́dọ̀ gba JSON body pẹ̀lú ó kéré tán
 
 Àwọn pápá míì lè wà nínú payload da lori àyíká ìjíròrò.
 
-### Àwọn Iye `triage_category`
+### Àwọn Iye `triage_category` {#triagecategory-values}
 
 Ìpele ìtójú AI ń yàn ọ̀kan lára àwọn iye wọ̀nyí sí `triage_category` kí ó tó fi payload ránṣẹ́ síwájú:
 
@@ -47,7 +47,7 @@ Opin-ọ̀nà feedback rẹ gbọ́dọ̀ gba JSON body pẹ̀lú ó kéré tán
 | `inappropriate_content` | Ìdáhùn náà ní àkóónú tí kò yẹ kí a fi hàn sí àwọn oníṣe. |
 | `other` | Feedback náà kò bá ẹ̀ka tí a mọ̀ mu. |
 
-### Ìfàrìdí
+### Ìfàrìdí {#authentication}
 
 Bí opin-ọ̀nà rẹ bá nílò ìfàrìdí, ṣètò pápá **Feedback API Key** sí bearer token rẹ. Agent náà ń ránṣẹ́:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Bí pápá **Feedback API Key** bá ṣófo, a kò ní fi `Authorization` header ránṣẹ́.
 
-### Pípá Àkójọpọ̀ Feedback
+### Pípá Àkójọpọ̀ Feedback {#disabling-feedback-collection}
 
 Fi pápá **URL Opin-ọ̀nà Feedback** àti **Feedback API Key** méjèèjì sílẹ̀ ní òfo. Bọ́tìnì atanpako-sílẹ̀ àti UI feedback yóò ṣì hàn sí àwọn oníṣe, ṣùgbọ́n àwọn fífi-ránṣẹ́ kò ní lọ sí iṣẹ́ ìta kankan.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Bákan náà lórí taabu **To ti ni ilọsiwaju**, pápá **Brave Search API Key** ń jẹ́ kí agbára [Ìṣàwárí Íńtánẹ́ẹ̀tì](../configuration/internet-search) ṣiṣẹ́.
 
@@ -73,7 +73,7 @@ Bákan náà lórí taabu **To ti ni ilọsiwaju**, pápá **Brave Search API Ke
 
 Wo [Ìṣàwárí Íńtánẹ́ẹ̀tì](../configuration/internet-search) fún ìwé-àkọsílẹ̀ oníṣe-ìkẹyìn lórí ẹya yìí.
 
-## Iṣẹ́ Superdav Tí a Ń Ṣàkóso
+## Iṣẹ́ Superdav Tí a Ń Ṣàkóso {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 ṣàfikún àwọn opin-ọ̀nà iṣẹ́ Superdav tí a ń ṣàkóso àti pípèsè ìsopọ̀ aládàáṣiṣẹ́ fún àwọn site tí a ṣe àtìlẹ́yìn fún. Lo àwọn ìṣàkóso wọ̀nyí nígbà tí site rẹ gbọ́dọ̀ sopọ̀ mọ́ olupèsè hosted dípò opin-ọ̀nà iṣẹ́ tí a ṣètò pẹ̀lú ọwọ́.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 ṣàfikún àwọn opin-ọ̀nà iṣẹ́ Superdav t
 
 Lẹ́yìn pípèsè, fi àwọn ètò pamọ́ kí o sì ṣàyẹ̀wò ipo ìsopọ̀ kí o tó gbẹ́kẹ̀lé àwọn ìṣàn-iṣẹ́ iṣẹ́-tí-a-ń-ṣàkóso. Bí pípèsè bá kùnà, ṣàyẹ̀wò ìtọ́nisọ́nà ìgbìyànjú-lẹẹkansi tí a fi hàn, kí o sì jẹ́rìí pé site náà ní àṣẹ láti lo olupèsè hosted.
 
-## Ìṣètò Google Calendar
+## Ìṣètò Google Calendar {#google-calendar-configuration}
 
 Nígbà tí àwọn ẹya kalẹ́ńdà Superdav AI Agent v1.18.0 bá ṣiṣẹ́, agent náà lè ka àwọn kalẹ́ńdà tí a ṣètò àti àwọn àlàyé ìṣẹ̀lẹ̀. Àwọn irinṣẹ́ kalẹ́ńdà dojúkọ kíkà, wọ́n sì wúlò fún àwọn ìránnilétí tó mọ ìṣètò-àkókò, ìtẹ̀lé àwọn alábàápàdé, àti ìbáramu ìbásọrọ̀.
 
@@ -97,7 +97,7 @@ Nígbà tí àwọn ẹya kalẹ́ńdà Superdav AI Agent v1.18.0 bá ṣiṣẹ
 
 Jẹ́ kí àwọn ẹ̀rí ìdánimọ̀ kalẹ́ńdà dá dúró sí àwọn kalẹ́ńdà tí agent náà nílò. Sopọ̀ padà tàbí yí àwọn ẹ̀rí ìdánimọ̀ padà bí ipo bá tọ́ka sí token tí ó ti parí àkókò.
 
-## Àwọn Ìfitónilétí SMS TextBee
+## Àwọn Ìfitónilétí SMS TextBee {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 ṣàfikún TextBee gẹ́gẹ́ bí olupèsè SMS fún àwọn ìṣàn-iṣẹ́ ìfitónilétí tí a ṣètò. Àwọn ìfitónilétí SMS gbọ́dọ̀ wà pẹ̀lú àwọn ibodè ìfọwọ́sí ènìyàn fún àwọn ìfiránṣẹ́ tó ní ìfarabalẹ̀ tàbí tó dojúkọ oníṣe.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 ṣàfikún TextBee gẹ́gẹ́ bí olupèsè SMS fú
 
 Fi ìfiránṣẹ́ ìdánwò ránṣẹ́ sí nọ́mbà tí alákóso ní nìkan, lẹ́yìn náà jẹ́rìí ìwà ibodè-ìfọwọ́sí kí o tó jẹ́ kí àwọn ìránnilétí tí a ṣètò tàbí tí ó dojúkọ alábàápàdé ṣiṣẹ́.
 
-## Àwọn Àmì Ẹya
+## Àwọn Àmì Ẹya {#feature-flags}
 
 Bákan náà tí a ṣe àgbékalẹ̀ ní v1.9.0, taabu **Àwọn Ètò → Àwọn Àmì Ẹya** ń pèsè àwọn yíyípadà toggle fún iṣẹ́ àṣàyàn. Àmì kọ̀ọ̀kan yálà ó ṣiṣẹ́ tàbí ó jẹ́ pípá ka gbogbo nẹ́tíwọ́ọ̀kì; kò sí fífi yípadà fún site kọ̀ọ̀kan ní àkókò yìí.
 
-### Wíwọlé sí Àwọn Àmì Ẹya
+### Wíwọlé sí Àwọn Àmì Ẹya {#accessing-feature-flags}
 
 1. Nínú abojútó WordPress, lọ sí **Gratis AI Agent → Àwọn Ètò**.
 2. Tẹ taabu **Àwọn Àmì Ẹya**.
 
-### Àwọn Àmì Ìṣàkóso Ìwọlé
+### Àwọn Àmì Ìṣàkóso Ìwọlé {#access-control-flags}
 
 | Àmì | Àiyipada | Àpèjúwe |
 |---|---|---|
@@ -127,7 +127,7 @@ Bákan náà tí a ṣe àgbékalẹ̀ ní v1.9.0, taabu **Àwọn Ètò → Àw
 | **Gba Ìwọlé Alábàárà Láyè** | Paa | Nígbà tí ó bá ṣiṣẹ́, àwọn oníṣe pẹ̀lú ipa `subscriber` lè lo interface ìjíròrò ṣùgbọ́n a fi wọ́n mọ́ agbára kíkà-nìkan (kò sí ṣíṣe post tàbí yíyí àwọn ètò padà). |
 | **Pa Fún Àwọn Tí Kì Í Ṣe Ọmọ Ẹgbẹ́** | Paa | Ń ṣepọ̀ pẹ̀lú ipo membership Ultimate Multisite. Nígbà tí ó bá ṣiṣẹ́, ìjíròrò yóò farapamọ́ fún àwọn site tí kò ní membership tó ń ṣiṣẹ́. |
 
-### Àwọn Àmì Branding
+### Àwọn Àmì Branding {#branding-flags}
 
 | Àmì | Àiyipada | Àpèjúwe |
 |---|---|---|
@@ -136,7 +136,7 @@ Bákan náà tí a ṣe àgbékalẹ̀ ní v1.9.0, taabu **Àwọn Ètò → Àw
 | **Fi Olùyan Agent Pamọ́** | Paa | Nígbà tí ó bá ṣiṣẹ́, àwọn oníṣe kò lè yí padà láàárín àwọn agent marun tí a kọ́ sínú rẹ̀. Agent lọwọlọwọ jẹ́ fífi-dúró sí ohunkóhun tí a ṣètò gẹ́gẹ́ bí àiyipada nínú Àwọn Ètò → Gbogbogbò. |
 | **Lo Àwòrán Site gẹ́gẹ́ bí Chat Avatar** | Paa | Rọ́pò àwòrán AI àiyipada nínú header widget ìjíròrò pẹ̀lú àwòrán site WordPress (tí a ṣètò lábẹ́ Ìrísí → Ṣe Àṣà → Ìdánimọ̀ Site). |
 
-### Àwọn Àmì Ààbò Aládàáṣiṣẹ́
+### Àwọn Àmì Ààbò Aládàáṣiṣẹ́ {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 ṣàgbékalẹ̀ àwọn ibodè ìfọwọ́sí ènìyàn àti àwọn àkọsílẹ̀ ìránnilétí fún àwọn ìṣiṣẹ́ aládàáṣiṣẹ́ tó ní ààbò síi. Àwọn ìṣàkóso wọ̀nyí lè hàn nínú àwọn àmì ẹya tàbí àwọn ètò aládàáṣiṣẹ́ to ti ni ilọsiwaju, da lori package tí a fi sílẹ̀.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 ṣàgbékalẹ̀ àwọn ibodè ìfọwọ́sí ènì
 | **Jẹ́ Kí Àwọn Irinṣẹ́ Kalẹ́ńdà Ṣiṣẹ́** | Paa títí a ó fi ṣètò | Gba agent láyè láti ka àwọn kalẹ́ńdà Google tí a ṣètò àti àwọn ìṣẹ̀lẹ̀. |
 | **Jẹ́ Kí Àwọn Ìfitónilétí SMS Ṣiṣẹ́** | Paa títí a ó fi ṣètò | Gba àwọn ìṣàn-iṣẹ́ tí a fọwọ́sí láyè láti fi àwọn ìfitónilétí SMS TextBee ránṣẹ́ lẹ́yìn tí a bá ti fi àwọn ẹ̀rí ìdánimọ̀ pamọ́. |
 
-### Lílo Àwọn Ìyípadà
+### Lílo Àwọn Ìyípadà {#applying-changes}
 
 Tẹ **Fi Àwọn Ètò Pamọ́** lẹ́yìn yíyí àmì kankan. Àwọn ìyípadà máa bẹ̀rẹ̀ iṣẹ́ lẹ́sẹ̀kẹsẹ̀ — kò nílò fífi cache ṣàn kúrò tàbí mímú plugin ṣiṣẹ́ padà.

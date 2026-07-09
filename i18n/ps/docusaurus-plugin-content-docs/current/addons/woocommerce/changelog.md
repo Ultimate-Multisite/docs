@@ -3,7 +3,7 @@ title: WooCommerce ادغام بدلون‌لیک
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# د WooCommerce Integration د بدلونونو تاریخچه
+# د WooCommerce Integration د بدلونونو تاریخچه {#woocommerce-integration-changelog}
 
 Version 2.2.0 - په 2026-07-01 خپور شو
 * نوی: د Ultimate Multisite د مالیې مقدارونه اوس په checkout کې د جلا WooCommerce فیس کرښو په توګه ښکاري، چې د تادیې تر مخه د مالیې ټولیز مقدارونه روښانه کوي.

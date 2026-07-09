@@ -3,15 +3,15 @@ title: Comhordú Tógálaí Suímh v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orchestrú Tógálaí Suíomh v2
+# Orchestrú Tógálaí Suíomh v2 {#site-builder-orchestration-v2}
 
 Is é Orchestrú Tógálaí Suíomh v2 (a tugadh isteach in Gratis AI Agent v1.4.0) an t-inneall a chumhachtaíonn cruthú suíomhanna gréasáin ilchéime. Nuair a iarrann tú ar an agent "suíomh gréasáin bialainne a thógáil" nó "punann le blag a chruthú", briseann an t-orchestrator an sprioc ardleibhéil sin síos ina **phlean** struchtúrtha, aimsíonn sé na breiseáin atá ag teastáil chun é a chomhlíonadh, ritheann sé gach céim in ord, rianaíonn sé dul chun cinn, agus téann sé i mbun téarnaimh ó earráidí go huathrialach.
 
 ---
 
-## Conas a Oibríonn Sé
+## Conas a Oibríonn Sé {#how-it-works}
 
-### 1. Giniúint Plean
+### 1. Giniúint Plean {#1-plan-generation}
 
 Nuair a fhaigheann an agent treoir chun suíomh a thógáil, glaonn sé ar an gcumas `create_site_plan` chun **plean suímh** JSON a tháirgeadh. Déanann an plean cur síos ar:
 
@@ -61,7 +61,7 @@ Nuair a fhaigheann an agent treoir chun suíomh a thógáil, glaonn sé ar an gc
 }
 ```
 
-### 2. Aimsiú Breiseán
+### 2. Aimsiú Breiseán {#2-plugin-discovery}
 
 Sula dtosaíonn an rith, scanann an t-orchestrator `plugin_requirements` an phlean agus seiceálann sé cé na breiseáin atá gníomhach cheana. Maidir le breiseáin atá in easnamh, déanann sé:
 
@@ -71,7 +71,7 @@ Sula dtosaíonn an rith, scanann an t-orchestrator `plugin_requirements` an phle
 
 Ní bhíonn teipeanna aimsiú breiseán marfach — marcálann an t-orchestrator na céimeanna lena mbaineann mar `skipped` agus leanann sé ar aghaidh leis an gcuid eile den phlean.
 
-### 3. Rith an Phlean
+### 3. Rith an Phlean {#3-plan-execution}
 
 Glaonn an t-orchestrator ar `execute_site_plan` leis an aitheantas plean. Leanann an rith ar aghaidh céim mhór ar chéim mhór, céim ar chéim:
 
@@ -79,7 +79,7 @@ Glaonn an t-orchestrator ar `execute_site_plan` leis an aitheantas plean. Leanan
 - **Céimeanna comhthreomhara** — seoltar céimeanna laistigh den chéim mhór chéanna nach bhfuil idirspleáchais eatarthu go comhuaineach nuair atá an bhratach `parallel` socraithe.
 - **Teorainn ama céime** — tá teorainn ama aonair ag gach céim (réamhshocrú: an socrú `Ability Timeout`). Marcáiltear céim a ritheann thar am mar `failed` agus leanann an plean ar aghaidh.
 
-### 4. Rianú Dul Chun Cinn
+### 4. Rianú Dul Chun Cinn {#4-progress-tracking}
 
 Glaoigh ar `get_plan_progress` am ar bith chun stádas rite a sheiceáil:
 
@@ -104,7 +104,7 @@ Is féidir le húsáideoirí WP-CLI dul chun cinn a mhonatóiriú le:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Téarnamh ó Earráidí
+### 5. Téarnamh ó Earráidí {#5-error-recovery}
 
 Nuair a theipeann ar chéim, seiceálann an t-orchestrator an bhfuil céim **chúltaca** sainithe sa phlean:
 
@@ -115,9 +115,9 @@ Tuairiscíonn an agent gach teip san achoimre phlean deiridh agus féadfaidh sé
 
 ---
 
-## Cumais Plean Suímh
+## Cumais Plean Suímh {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Gineann sé plean suímh struchtúrtha ó chur síos sprioc i dteanga nádúrtha.
 
@@ -134,7 +134,7 @@ Gineann sé plean suímh struchtúrtha ó chur síos sprioc i dteanga nádúrtha
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Tosaíonn sé ar phlean suímh a gineadh roimhe seo a rith.
 
@@ -150,7 +150,7 @@ Tosaíonn sé ar phlean suímh a gineadh roimhe seo a rith.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Filleann sé stádas forghníomhaithe reatha plean suímh.
 
@@ -164,7 +164,7 @@ Filleann sé stádas forghníomhaithe reatha plean suímh.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Réitíonn sé céim theipthe de láimh agus atosaíonn sé forghníomhú an phlean ón gcéad chéim eile. Úsáid é seo nuair nach raibh aisghabháil uathoibríoch indéanta agus gur mian leat idirghabháil a dhéanamh.
 
@@ -180,7 +180,7 @@ Réitíonn sé céim theipthe de láimh agus atosaíonn sé forghníomhú an phl
 
 ---
 
-## Comparáid idir v1 agus v2
+## Comparáid idir v1 agus v2 {#comparing-v1-and-v2}
 
 | Gné | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Réitíonn sé céim theipthe de láimh agus atosaíonn sé forghníomhú an phl
 
 ---
 
-## Orduithe Plean WP-CLI
+## Orduithe Plean WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Gineann sé plean suímh ó chur síos sprice.
 
@@ -205,7 +205,7 @@ Gineann sé plean suímh ó chur síos sprice.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Forghníomhaíonn sé plean a gineadh roimhe seo.
 
@@ -213,7 +213,7 @@ Forghníomhaíonn sé plean a gineadh roimhe seo.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Taispeánann sé an dul chun cinn reatha do phlean atá á fhorghníomhú nó atá críochnaithe.
 
@@ -221,7 +221,7 @@ Taispeánann sé an dul chun cinn reatha do phlean atá á fhorghníomhú nó at
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Liostaíonn sé gach plean suímh (ar feitheamh, ar siúl, agus críochnaithe).
 
@@ -229,7 +229,7 @@ Liostaíonn sé gach plean suímh (ar feitheamh, ar siúl, agus críochnaithe).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Athshocraíonn sé plean teipthe go `pending` ionas gur féidir é a fhorghníomhú arís ón tús.
 

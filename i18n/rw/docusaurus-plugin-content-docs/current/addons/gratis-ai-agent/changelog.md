@@ -3,11 +3,11 @@ title: Urutonde rw’impinduka
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Urutonde rw'impinduka
+# Urutonde rw'impinduka {#changelog}
 
-## 1.9.0 — Yasohotse ku 2026-04-28
+## 1.9.0 — Yasohotse ku 2026-04-28 {#190--released-on-2026-04-28}
 
-### Bishya
+### Bishya {#new}
 
 - **Ubushobozi bwa `create_contact_form`** — bukora form yo koherezaho ubutumwa hakoreshejwe plugin ya form iri gukora (Contact Form 7, WPForms, Fluent Forms, cyangwa Gravity Forms) maze bugasubiza shortcode yiteguye gushyirwa muri post cyangwa page iyo ari yo yose.
 - **Ubushobozi bwa `set_featured_image`** — bugenera post cyangwa page ishusho y'ingenzi buhereye kuri ID y'umugereka uri muri Media Library cyangwa URL yo hanze; buhita bwinjiza ishusho iyo URL yatanzwe.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Kugarura session iheruka** — panel ya chat ubu yongera gufungura conversation iheruka mu buryo bwikora igihe page ipakiwe no igihe widget ifunguwe, bityo context ntizigere ibura mu kugenda hagati ya pages.
 - **Links z'ibikorwa bya plugin** — links zihuse zijya kuri Settings no kuri Abilities Registry ubu zigaragara kuri screen ya WordPress **Plugins → Installed Plugins** munsi y'ibisobanuro bya plugin.
 
-### Byanonosowe
+### Byanonosowe {#improved}
 
 - **Kugerageza kongera source y'ishusho** — agent ubu yongera kugerageza sources zose z'ubuntu z'amashusho zashyizweho mbere yo gusubira ku ishusho yakozwe na AI iyo download inaniwe.
 - **Panel y'amakuru ya model** — ihora igaragara muri header ya chat; ntikihishwa nyuma y'ubutumwa bwa mbere.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Kongera gukora design ya chat widget** — icon imwe ya AI isimbura avatar yihariye yari isanzwe; bihuje na system ya agent yubatswemo.
 - **Guhindura URLs mo links** — URLs zigaragara mu butumwa bwa system no mu buburu bw'ubutumwa bw'ikosa ubu zigaragazwa nka links zikandwaho.
 
-### Byakosowe
+### Byakosowe {#fixed}
 
 - **Kubonwa kw'ubushobozi** — ibisobanuro, references za system prompt, n'ihuzwa rya namespace byarakosowe kugira ngo ubushobozi bwose bugaragare mu rutonde rw'ibikoresho bya agent mu buryo bwizewe.
 - **Cache ya providers** — providers ubu zibikwa muri cache ku rwego rwa site yose hifashishijwe version counter, bikumira ibibazo bya providers zishaje kuri networks za multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Yasohotse ku 2026-04-09
+## 1.4.0 — Yasohotse ku 2026-04-09 {#140--released-on-2026-04-09}
 
-### Bishya
+### Bishya {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — ikoresha urwunge rw’ibigeragezo bya Agent Capabilities v1 benchmark suite ivuye ku murongo w’amabwiriza, ku miyoboro ya CI n’imirimo yo gusuzuma model. Ishyigikira gukora ku kibazo kimwe, guhindura provider/model, n’ibisohoka bya JSON/CSV.
 - **Agent Capabilities v1 benchmark suite** — urwunge rutunganyije rw’ibibazo bigoye, bifite intambwe nyinshi, bigerageza urwego rwose rw’ubushobozi, rufite gutanga amanota na raporo ya token/igihe bimara.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ikibazo cya benchmark cy’urubuga rwa restaurant** (`q-restaurant-website`) — ikigeragezo kuva ku ntangiriro kugeza ku iherezo gikubiyemo kwandikisha CPT, design system, navigation, no kuvumbura plugin.
 - **AI provider connector plugins** zongerewe kuri blueprints za WordPress Playground kugira ngo gutegura development ya hafi byihute.
 
-### Byanonosowe
+### Byanonosowe {#improved-1}
 
 - README yavuguruwe n’inyandiko za AI provider connector n’amabwiriza yo gutegura.
 
-### Byakosowe
+### Byakosowe {#fixed-1}
 
 - Kunanirwa kw’ibigeragezo 25 bya PHPUnit kuri branch ya `main` byakemuwe.
 - Imiterere ya URL ya GitHub releases muri `blueprint.json` yakosowe.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Inyandiko z’ibisohoka zabanje zibungabungiwe mu bubiko bwa plugin._

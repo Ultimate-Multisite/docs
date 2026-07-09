@@ -3,9 +3,9 @@ title: সামঞ্জস্যপূর্ণ এন্ডপয়েন্
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints পরিবর্তন লগ
+# Ultimate AI Connector for Compatible Endpoints পরিবর্তন লগ {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — প্রকাশিত হয়েছে 2026-04-24
+## Version 2.0.0 — প্রকাশিত হয়েছে 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * নতুন: মাল্টি-প্রোভাইডার সাপোর্ট — একাধিক AI এন্ডপয়েন্ট কনফিগার করুন এবং স্বয়ংক্রিয় ফলব্যাক (automatic fallback) সহ বিভিন্ন প্রোভাইডারের মধ্যে রিকোয়েস্ট রাউটিং করুন।
 * ফিক্স: প্রতিটি প্রোভাইডারের জন্য সঠিক প্রোভাইডার আইডি, রেজিস্ট্রেশন ইউআরএল এবং HTTP ফিল্টার স্কোপিং সহ মাল্টি-প্রোভাইডার SDK ইন্টিগ্রেশন।
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * ফিক্স: প্রতিটি পেজ লোডের সময় যে ব্লকিং HTTP রিকোয়েস্ট আসত, তা সরিয়ে ফেলা হয়েছে।
 * উন্নত: GitHub Actions ওয়ার্কফ্লো Node.js 24 এ আপগ্রেড করা হয়েছে।
 
-## Version 1.0.0 — প্রাথমিক রিলিজ
+## Version 1.0.0 — প্রাথমিক রিলিজ {#version-100--initial-release}

@@ -3,11 +3,11 @@ title: Admin paneli ilə tanışlıq
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panelə tur
+# Admin Panelə tur {#touring-the-admin-panel}
 
 Ultimate Multisite mümkün qədər sadə və özünü izah edən olmağı hədəfləyir, amma bu qədər güclü bir alətdə bələdçili tur faydalı ola bilər. Gəlin, yerləşməyinizə kömək etmək üçün admin səhifələrini nəzərdən keçirək.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 Ultimate Multisite **Dashboard** gəlirlər, sayt fəaliyyətləri, üzvlük artımı, ziyarətçi sayları və coğrafi məlumatlar daxil olmaqla əsas hesabatları və analitikanı göstərir.
 
@@ -25,61 +25,61 @@ Və dashboard-un alt bölməsi:
 
 ![Network Dashboard tam səhifə](/img/admin/network-dashboard-full-page.png)
 
-## Ödəniş formaları
+## Ödəniş formaları {#checkout-forms}
 
 **Ödəniş formaları** sizə fərdi qeydiyyat səhifələri yaratmaq çevikliyi verir. Sahələri fərdiləşdirə, xüsusi siniflər və skriptlər əlavə edə, həmçinin ziyarətçinin ölkəsinə və ya məkanına əsasən girişi məhdudlaşdıra bilərsiniz.
 
 ![Ödəniş formaları siyahısı](/img/admin/checkout-forms-list.png)
 
-## Məhsullar
+## Məhsullar {#products}
 
 **Məhsullar** bölməsi şəbəkəniz üçün müxtəlif planlar, paketlər və xidmətlər yaratdığınız yerdir. Qiymətləri, hesablaşma tezliklərini və limitləri & kvotaları məhsul səviyyəsində təyin edin.
 
 ![Məhsullar siyahısı](/img/admin/products-list.png)
 
-## Üzvlüklər
+## Üzvlüklər {#memberships}
 
 **Üzvlüklər** səhifəsi şəbəkənizdəki bütün abunəlikləri göstərir. Planlar, məhsullar, hesablaşma məbləğləri və tezlikləri, ödəniş tarixçəsi və vaxt damğaları daxil olmaqla abunəlik təfərrüatlarını nəzərdən keçirin və redaktə edin.
 
 ![Üzvlüklər siyahısı](/img/admin/memberships-list.png)
 
-## Ödənişlər
+## Ödənişlər {#payments}
 
 **Ödənişlər** səhifəsi bütün şəbəkəniz üzrə ödəniş tarixçəsinin sürətli görünüşünü təqdim edir və konkret məhsullar və məbləğlər daxil olmaqla ətraflı tranzaksiya məlumatlarını göstərir.
 
 ![Ödənişlər siyahısı](/img/admin/payments-list.png)
 
-## Müştərilər
+## Müştərilər {#customers}
 
 **Müştərilər** səhifəsi şəbəkənizdə qeydiyyatdan keçmiş bütün üzvləri ad, e-poçt ünvanı, son giriş və onların alt saytına daxil olmaq üçün "keçid et" linki daxil olmaqla əsas istifadəçi məlumatları ilə göstərir.
 
 ![Müştərilər siyahısı](/img/admin/customers-list.png)
 
-## Saytlar
+## Saytlar {#sites}
 
 **Saytlar** səhifəsi şəbəkənizdəki bütün alt saytları, o cümlədən sayt şablonlarını və müştəriyə məxsus saytları siyahılayır. Xəritələnmiş domenləri, limitləri & kvotaları, plugin-ləri və theme-ləri, həmçinin sayt miniatürlərini asanlıqla idarə edin.
 
 ![Saytlar siyahısı](/img/admin/sites-list.png)
 
-## Domenlər
+## Domenlər {#domains}
 
 **Domenlər** səhifəsi alt saytlara xəritələnmiş fərdi domenlərə həsr olunub. Super admin kimi, fərdi domen adlarını əl ilə əlavə edə və ya xəritələyə, həmçinin DNS qeydlərinə və jurnallara baxa bilərsiniz.
 
 ![Domenlər siyahısı](/img/admin/domains-list.png)
 
-## Endirim kodları
+## Endirim kodları {#discount-codes}
 
 **Endirim kodları** son istifadəçilərinizə endirimlər təklif etmək üçün kupon kodları yaratmağa imkan verir. Endirim dəyərini göstərin və konkret istifadəçiləri və ya qrupları hədəfləyin.
 
 ![Endirim kodları siyahısı](/img/admin/discount-codes-list.png)
 
-## Yayımlar
+## Yayımlar {#broadcasts}
 
 **Yayımlar** elanları yaymaq və ya alt sayt istifadəçilərinizə şəxsi mesajlar göndərmək üçün bir alətdir. Abunə olduqları plana və ya məhsula əsasən konkret istifadəçi qruplarını hədəfləyin.
 
 ![Yayımlar siyahısı](/img/admin/broadcasts-list.png)
 
-## Parametrlər
+## Parametrlər {#settings}
 
 **Parametrlər** səhifəsi Ultimate Multisite-ı konfiqurasiya etdiyiniz yerdir — qeydiyyat parametrləri, ödənişlər, API və webhook-lar, domen xəritələmə və digər inteqrasiyalar.
 
@@ -109,13 +109,13 @@ Və sayt parametrləri səhifəsi:
 
 ![Sayt parametrləri tam səhifə](/img/admin/settings-sites-full.png)
 
-## Hadisələr
+## Hadisələr {#events}
 
 **Hadisələr** səhifəsi şəbəkənizdəki bütün hadisələrin və jurnalların qeydini saxlayır. Plan dəyişiklikləri, qeydiyyatlar və digər hərəkətlər kimi fəaliyyətləri izləyir — multisite-inizi monitorinq etmək üçün faydalıdır.
 
 ![Hadisələr siyahısı](/img/admin/events-list.png)
 
-## Webhook-lar
+## Webhook-lar {#webhooks}
 
 **Webhook-lar** məlumatları başqa bir tətbiqə çatdırmağa imkan verir. Ultimate Multisite-dan Zapier kimi platformalara məlumat göndərmək üçün faydalıdır.
 

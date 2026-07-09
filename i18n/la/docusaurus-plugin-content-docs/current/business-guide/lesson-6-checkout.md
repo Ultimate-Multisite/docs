@@ -3,15 +3,15 @@ title: 'Lectio 6: Experientia inscriptionis'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lectio 6: Experientia Registrationis
+# Lectio 6: Experientia Registrationis {#lesson-6-the-signup-experience}
 
 Fluxus checkout est ubi studium in reditum vertitur. Processus registrationis confusus aut genericus clientes amittit. Fluxus ad certum genus accommodatus, qui linguam eorum loquitur et facilis videtur, eos convertit.
 
-## Ubi Desivimus
+## Ubi Desivimus {#where-we-left-off}
 
 FitSite exemplaria et consilia configurata habet. Nunc experientiam registrationis et checkout aedificamus, quae dominos gymnasiorum in clientes solventes convertit.
 
-## Intellegere Fluxum Registrationis
+## Intellegere Fluxum Registrationis {#understanding-the-registration-flow}
 
 Formae checkout Ultimate Multisite sunt formae multorum graduum plene configurabiles. Pro FitSite, fluxum volumus qui:
 
@@ -21,11 +21,11 @@ Formae checkout Ultimate Multisite sunt formae multorum graduum plene configurab
 
 Vide [Fluxus Registrationis](/user-guide/configuration/the-registration-flow) ad plenam relationem technicam.
 
-## Designare Checkout FitSite
+## Designare Checkout FitSite {#designing-the-fitsite-checkout}
 
 Naviga ad **Ultimate Multisite > Checkout Forms** et novam formam crea.
 
-### Gradus 1: Electio Consilii
+### Gradus 1: Electio Consilii {#step-1-plan-selection}
 
 Primum quod dominus gymnasii videt consilia esse debent, terminis quos intellegit praesentata.
 
@@ -37,7 +37,7 @@ Primum quod dominus gymnasii videt consilia esse debent, terminis quos intellegi
 "1 GB storage" nihil significat domino palaestrae. "Omnia quae tibi necessaria sunt pro situ interretiali gymnasii professionali" omnia significat. Scribe descriptiones consiliorum lingua clientis tui.
 :::
 
-### Gradus 2: Electio Exemplaris
+### Gradus 2: Electio Exemplaris {#step-2-template-selection}
 
 Postquam consilium elegit, cliens exemplar initiale eligit.
 
@@ -45,7 +45,7 @@ Postquam consilium elegit, cliens exemplar initiale eligit.
 - Exemplaria praesto colantur secundum consilium quod elegerunt (configuratum in Lectione 5)
 - Unumquodque exemplar imaginem praevisionis habere debet quae consilium ad idoneitatem pertinens ostendit
 
-### Gradus 3: Creatio Account
+### Gradus 3: Creatio Account {#step-3-account-creation}
 
 Hoc minimum serva. Collige tantum:
 
@@ -55,27 +55,27 @@ Hoc minimum serva. Collige tantum:
 
 Noli petere informationem qua in registratione non eges. Omnis campus additus conversiones minuit.
 
-### Gradus 4: Configuratio Situs
+### Gradus 4: Configuratio Situs {#step-4-site-setup}
 
 - **Titulus situs**: Praeimple ex nomine gymnasii in Gradu 3 ingressum
 - **URL situs**: Genera automatice ex nomine gymnasii (e.g., `ironworks.fitsite.com`)
 
-### Gradus 5: Solutio
+### Gradus 5: Solutio {#step-5-payment}
 
 - Adde campum **Payment**
 - Configura portam solutionis tuam ([Stripe](/user-guide/payment-gateways/stripe) commendatur pro subscriptionis exactione)
 - Si order bumps in Lectione 5 creavisti, adde campum **Order Bump** ante gradum solutionis
 
-### Gradus 6: Confirmatio
+### Gradus 6: Confirmatio {#step-6-confirmation}
 
 - Nuntium confirmationis lingua ad idoneitatem pertinente personaliza
 - Exemplum: "Situs interretialis gymnasii tui creatur. Ad novum situm tuum intra pauca secunda redirigeris."
 
-## Addere Commutationem Electionis Periodi
+## Addere Commutationem Electionis Periodi {#adding-a-period-selection-toggle}
 
 Si variationes pretii in consiliis tuis constituisti (menstruae contra annuas), adde campum **Period Selection** formae checkout ut clientes inter periodos exactionis commutare possint. Vide [Formae Checkout](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) ad instructiones.
 
-## Configurare Solutio
+## Configurare Solutio {#configuring-payment}
 
 Si portam solutionis nondum constituisti:
 
@@ -85,7 +85,7 @@ Si portam solutionis nondum constituisti:
 
 Vide [Solutiones Accipere](/user-guide/payment-gateways/getting-paid) ad singula de quomodo solutiones ad rationem tuam fluant.
 
-## Probatio Fluxus
+## Probatio Fluxus {#testing-the-flow}
 
 Antequam progrediaris, perfice plenam registrationem probatoriam:
 
@@ -105,7 +105,7 @@ Compesce ut:
 - [ ] Cliens in situ operante cum exemplari selecto perveniat
 - [ ] Epistulae confirmationis lingua ad idoneitatem pertinente utantur
 
-## Rete FitSite Usque Nunc
+## Rete FitSite Usque Nunc {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Quod Hac Lectione Aedificavimus
+## Quod Hac Lectione Aedificavimus {#what-we-built-this-lesson}
 
 - **Forma checkout multorum graduum** dominis gymnasiorum accommodata
 - **Lingua ad certum genus pertinens** per totum fluxum registrationis

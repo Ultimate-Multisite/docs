@@ -4,11 +4,11 @@ title: Suodatin - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Suodatin: wu_rest_get_item
+# Suodatin: wu_rest_get_item {#filter-wurestgetitem}
 
 Suodattaa, sallitaanko pyynnön jatkaminen vai ei.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Suodattaa, sallitaanko pyynnön jatkaminen vai ei.
 | $rest_base | `array` | Entiteetin slug. |
 | $this | `\Base_Manager` | Objektin instanssi. |
 
-### Versiosta alkaen
+### Versiosta alkaen {#since}
 
 - 2.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) rivillä 388

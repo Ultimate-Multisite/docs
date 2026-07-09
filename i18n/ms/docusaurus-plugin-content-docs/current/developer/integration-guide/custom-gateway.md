@@ -3,11 +3,11 @@ title: Pembangunan Gerbang Tersuai
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pembangunan Gateway Tersuai
+# Pembangunan Gateway Tersuai {#custom-gateway-development}
 
 Anda boleh mencipta gateway pembayaran tersuai dengan melanjutkan kelas `Base_Gateway`.
 
-## Kelas Gateway
+## Kelas Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Daftarkan Gateway
+## Daftarkan Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Kaedah Utama
+## Kaedah Utama {#key-methods}
 
 | Kaedah | Tujuan |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Mengendalikan permintaan bayaran balik |
 | `get_payment_methods()` | Mengembalikan kaedah pembayaran tersimpan untuk pelanggan |
 
-## Kelayakan pembaharuan untuk keahlian berulang
+## Kelayakan pembaharuan untuk keahlian berulang {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 membolehkan integrasi gateway melaporkan sama ada keahlian berulang mempunyai kelayakan pembaharuan boleh guna semula sebelum `auto_renew` disimpan. Hook `wu_membership_has_renewal_credential` dan kembalikan:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Kosongkan penanda kelayakan hilang sebagai sebahagian daripada aliran kebenaran semula gateway anda yang berjaya selepas kelayakan boleh guna semula baharu disimpan.
 
-## Petua
+## Petua {#tips}
 
 - Sentiasa kembalikan `WP_Error` apabila gagal supaya Ultimate Multisite boleh mengendalikan paparan ralat
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gunakan `wu_log_add()` untuk pengelogan khusus gateway
 
-## Keupayaan penyedia penyambung AI
+## Keupayaan penyedia penyambung AI {#ai-connector-provider-capabilities}
 
 Integrasi tersuai yang memanggil operasi bersandarkan penyambung AI harus selaras dengan set penyedia OAuth yang disokong yang diperkenalkan dengan AI Provider for Anthropic Max v1.3.0:
 

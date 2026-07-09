@@ -4,11 +4,11 @@ title: Sivana - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Sivana: wu_apply_signup_fee
+# Sivana: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Manivana raha tokony hampiharina na tsia ny saram-pisoratana anarana.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Anarana | Karazana | Famaritana |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Manivana raha tokony hampiharina na tsia ny saram-pisoratana anarana.
 | $product | `object` | Zavatra ambaratonga maha-mpikambana. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Zavatra fisoratana anarana. |
 
-### Hatramin'ny
+### Hatramin'ny {#since}
 
 - 3.1
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) amin'ny andalana 1769

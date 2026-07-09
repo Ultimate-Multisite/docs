@@ -4,20 +4,20 @@ title: Handling - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Handling: mu_migration/import/user/custom_data_before
+# Handling: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
 
 Udløses før eksport af brugerdefinerede brugerdata.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
 | $user_data | `array` | Brugerdata-arrayet. |
 | $user | `\WP_User` | Brugerobjektet. |
 
-### Siden
+### Siden {#since}
 
 - 0.1.0
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L139) på linje 139

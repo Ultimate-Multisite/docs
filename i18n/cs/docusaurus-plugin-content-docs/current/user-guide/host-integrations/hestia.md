@@ -3,28 +3,28 @@ title: Integrace s ovládacím panelem Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integrace s Hestia Control Panel
+# Integrace s Hestia Control Panel {#hestia-control-panel-integration}
 
 Tento průvodce vysvětluje, jak nakonfigurovat integraci Ultimate Multisite s Hestia, aby se mapované domény ve vaší síti automaticky přidávaly (a odebíraly) jako aliasy webových domén v Hestia.
 
 - Referenční příkazy Hestia CLI: v-add-web-domain-alias / v-delete-web-domain-alias
 - Oficiální dokumentace REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Co integrace dělá
+## Co integrace dělá {#what-it-does}
 - Když se v Ultimate Multisite namapuje doména, integrace zavolá Hestia API a spustí:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Když se mapování domény odstraní, spustí se:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Volitelně přidává/odebírá alias `www.` podle vašeho nastavení „Automaticky vytvořit www subdoménu" v nastavení mapování domén.
 
-## Předpoklady
+## Předpoklady {#prerequisites}
 - Existující webová doména v Hestia, která již směřuje na vaši WordPress instalaci. Integrace bude k této základní doméně připojovat aliasy.
 - Povolený přístup k Hestia API. Autentizovat se můžete buď heslem, nebo API hashem/tokenem.
 
 Podrobnosti o povolení API přístupu a autentizaci najdete v dokumentaci Hestia REST API:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Konfigurace (Průvodce → Integrace → Hestia)
+## Konfigurace (Průvodce → Integrace → Hestia) {#configuration-wizard--integrations--hestia}
 Zadejte následující hodnoty:
 
 - `WU_HESTIA_API_URL` (povinné)
@@ -42,16 +42,16 @@ Zadejte následující hodnoty:
 
 Můžete nechat průvodce vložit tyto konstanty do `wp-config.php`, nebo je definovat ručně.
 
-## Ověření nastavení
+## Ověření nastavení {#verifying-setup}
 - V kroku „Testování" průvodce plugin zavolá `v-list-web-domains <WU_HESTIA_ACCOUNT> json` přes API. Úspěšná odpověď potvrdí připojení a autentizaci.
 - Po namapování domény zkontrolujte v Hestia: Web > základní doména > Aliasy. Měli byste vidět nově přidaný alias.
 
-## Poznámky a tipy
+## Poznámky a tipy {#notes--tips}
 - Ujistěte se, že `WU_HESTIA_WEB_DOMAIN` již existuje a je vlastněna účtem `WU_HESTIA_ACCOUNT`.
 - Pokud potřebujete SSL, spravujte certifikáty v Hestia. Tato integrace aktuálně řeší pouze aliasy.
 - Plugin může také přidávat/odebírat `www.<doména>` v závislosti na vašem nastavení „www subdoména" v mapování domén.
 
-## Příklad API volání (cURL)
+## Příklad API volání (cURL) {#example-api-call-curl}
 Níže je koncepční příklad (upravte podle vašeho prostředí). Přesné parametry najdete v oficiální dokumentaci.
 
 ```
@@ -70,11 +70,11 @@ cmd=v-add-web-domain-alias
 
 Pro smazání použijte `cmd=v-delete-web-domain-alias` se stejnými argumenty.
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 - HTTP chyba z API: ověřte, že `WU_HESTIA_API_URL` je dostupná a obsahuje `/api`.
 - Chyby autentizace: zkontrolujte `WU_HESTIA_API_USER` a buď `WU_HESTIA_API_PASSWORD`, nebo `WU_HESTIA_API_HASH`.
 - „Chybí účet/základní doména" v logách: ujistěte se, že `WU_HESTIA_ACCOUNT` a `WU_HESTIA_WEB_DOMAIN` jsou nastaveny a platné v Hestia.
 
-## Reference
+## Reference {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Reference Hestia CLI (Aliasy): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

@@ -3,9 +3,9 @@ title: Өстәмә эшләүне башлау
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon эшләү
+# Addon эшләү {#addon-development}
 
-## Addon структурасы
+## Addon структурасы {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Төп Addon файлы шаблоны
+## Төп Addon файлы шаблоны {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Махсус модель мисалы
+## Махсус модель мисалы {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin битен интеграцияләү
+## Admin битен интеграцияләү {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addon-ыгызны сынау
+## Addon-ыгызны сынау {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 киңәйтү нокталары
+## v2.13.0 киңәйтү нокталары {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 суверен арендаторлар, checkout доменнары яки хост-провайдер DNS автоматлаштыруы белән интеграцияләнгән addon-нар өчен файдалы берничә киңәйтү ноктасы өсти.
 
-### SSO һәм төп-сайт идарә итү URL-лары
+### SSO һәм төп-сайт идарә итү URL-лары {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-форма төп доменнары
+### Checkout-форма төп доменнары {#checkout-form-base-domains}
 
 Addon-ыгыз һәр сайт өчен аерым махсус бәйләүләр урынына checkout-форма **Сайт URL** доменнары кебек эшләргә тиешле өстәмә уртак төп доменнар биргәндә `wu_checkout_form_base_domains` кулланыгыз:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite бу хостларны нормальләштерә һәм алар өчен һәр сайтка автоматик бәйләнгән домен язмаларын үткәреп җибәрә.
 
-### Автоматик домен-язма булдыру
+### Автоматик домен-язма булдыру {#automatic-domain-record-creation}
 
 Addon-ыгыз яңа булдырылган сайт өчен автоматик домен-язма булдыруны тыярга яки кичектерергә тиеш булганда `wu_should_create_domain_record_for_site` кулланыгыз:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` тыңлый торган хост-провайдер интеграцияләре сайтлар булдырылганда провайдер ягында DNS язмаларын булдыра ала. Әгәр бу гамәл өчен бернинди интеграция теркәлмәгән булса, Ultimate Multisite буш фон эшен үткәреп җибәрә.
 
-## Киләсе адымнар
+## Киләсе адымнар {#next-steps}
 
 - Мөмкин булган гамәлләр һәм фильтрлар өчен [Hooks белешмәлеген](/developer/hooks) карагыз
 - API интеграциясе өчен [REST API күзәтүен](/developer/rest-api/overview) карагыз

@@ -3,11 +3,11 @@ title: Témaépítő Bevezetési Folyamata
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Beindítási Folyamata
+# Theme Builder Beindítási Folyamata {#theme-builder-onboarding-flow}
 
 A Superdav AI Agent v1.12.0 bevezet egy irányított **Theme Builder beindítási folyamatot**, amely segít Önnek létrehozni egy egyedi blokk témát az első beállítás során. Ez helyettesíti az elavult Site Builder módot egy rugalmasabb, agent-asszisztált megközelítéssel.
 
-## Mi az a Theme Builder Beindítási Folyamat?
+## Mi az a Theme Builder Beindítási Folyamat? {#what-is-the-theme-builder-onboarding-flow}
 
 A Theme Builder beindítási folyamata egy interaktív beállítási varázsló, amely:
 
@@ -18,9 +18,9 @@ A Theme Builder beindítási folyamata egy interaktív beállítási varázsló,
 
 A folyamatot a **Setup Assistant agent** működteti, amely tisztázó kérdéseket tesz fel, és fokozatosan építi ki a témáját.
 
-## Hogyan Indítsuk el a Theme Builder Beindítását
+## Hogyan Indítsuk el a Theme Builder Beindítását {#starting-the-theme-builder-onboarding}
 
-### Első Alkalmi Beállítás
+### Első Alkalmi Beállítás {#first-run-setup}
 
 Ha először indítja el a Superdav AI Agent-et egy új WordPress telepítésen, a következőket fogja látni:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Válassza ki a **"Build a custom theme"** opciót, hogy belépjen a Theme Builder beindítási folyamatába.
 
-### Manuális Aktiválás
+### Manuális Aktiválás {#manual-activation}
 
 Bármikor elindíthatja a Theme Builder beindítását, ha kéri:
 
@@ -49,9 +49,9 @@ vagy
 "Help me create a custom theme"
 ```
 
-## Az Beindítási Lépések
+## Az Beindítási Lépések {#the-onboarding-steps}
 
-### 1. Lépés: Mód Kiválasztása
+### 1. Lépés: Mód Kiválasztása {#step-1-mode-selection}
 
 A Setup Assistant agent megkérdezi Önt a preferenciájakról:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 A **Guided mode** (vezérelt mód) ajánlott a legtöbb felhasználó számára; az agent a piacáról és céljairól alapján ad tervezési ajánlásokat.
 
-### 2. Lépés: Oldali Specifikáció
+### 2. Lépés: Oldali Specifikáció {#step-2-site-specification}
 
 Kérdeznek Önt az oldaláról:
 
@@ -74,7 +74,7 @@ Kérdeznek Önt az oldaláról:
 
 Ezek az információk az Ön **site_brief** memóriájában tárolódnak, amelyet az agentek a jövőbeli munkamenetek során hivatkozni fognak.
 
-### 3. Lépés: Tervezési Rendszer Döntései
+### 3. Lépés: Tervezési Rendszer Döntései {#step-3-design-system-decisions}
 
 Az agent végigvezet Önt a tervezési token (design token) kiválasztásán:
 
@@ -83,7 +83,7 @@ Az agent végigvezet Önt a tervezési token (design token) kiválasztásán:
 - **Spacing** (Távolság): Kompakt, normál vagy tágas elrendezések
 - **Motion** (Mozgás): Animációk és átmenetek (ha szükséges)
 
-### 4. Lépés: Téma Generálása
+### 4. Lépés: Téma Generálása {#step-4-theme-generation}
 
 A Setup Assistant agent létrehozza az egyedi blokk témáját a következő elemekkel:
 
@@ -92,7 +92,7 @@ A Setup Assistant agent létrehozza az egyedi blokk témáját a következő ele
 - Egyedi blokk stílusok, amelyek illeszkednek a tervezési rendszeréhez
 - Téma metadatája és WordPress támogatási deklarációi
 
-### 5. Lépés: Aktiválás és Ellenőrzés
+### 5. Lépés: Aktiválás és Ellenőrzés {#step-5-activation-and-verification}
 
 A téma automatikusan aktiválódik, és látja:
 
@@ -107,7 +107,7 @@ A téma automatikusan aktiválódik, és látja:
 
 Ezután elutazhat az oldalára, hogy ellenőrizze, hogy a téma megfelelően jelenik-e meg.
 
-## Oldali Specifikáció és site_brief Memória
+## Oldali Specifikáció és site_brief Memória {#site-specification-and-sitebrief-memory}
 
 Az onboarding során az agent rögzíti az oldal specifikációját egy **site_brief** memóriaterületen. Ez tartalmazza:
 
@@ -117,7 +117,7 @@ Az onboarding során az agent rögzíti az oldal specifikációját egy **site_b
 - Tervezési preferenciák
 - Tartalmi struktúra
 
-### Miért fontos a site_brief?
+### Miért fontos a site_brief? {#why-sitebrief-matters}
 
 A jövőbeli munkamenetek során az agentek a site_brief-et használják, hogy:
 
@@ -126,7 +126,7 @@ A jövőbeli munkamenetek során az agentek a site_brief-et használják, hogy:
 - Kontextus-érzékeny ajánlásokat biztosítsanak
 - Elkerüljék azonos beállítási kérdések megismétlését
 
-### A site_brief Megtekőzése
+### A site_brief Megtekőzése {#viewing-your-sitebrief}
 
 Kérdezheti meg az agenttől:
 
@@ -142,11 +142,11 @@ vagy
 
 Az agent megjeleníti az elmentett oldal specifikációját.
 
-## Testreszabás az Onboarding Után
+## Testreszabás az Onboarding Után {#customizing-after-onboarding}
 
 Az onboarding befejezése után teheti:
 
-### Használja a Design System Aesthetics Skill-t
+### Használja a Design System Aesthetics Skill-t {#use-the-design-system-aesthetics-skill}
 
 Kérje meg tervezési finomításokat:
 
@@ -162,7 +162,7 @@ vagy
 
 A **Design System Aesthetics skill** irányítja Önt a célzott tervezési frissítések során.
 
-### Direkt szerkesztése a theme.json fájlban
+### Direkt szerkesztése a theme.json fájlban {#edit-themejson-directly}
 
 Az avançált felhasználók számára szerkeszze meg a `/wp-content/themes/[theme-name]/theme.json` fájlt, hogy finomhangolhassa:
 
@@ -171,7 +171,7 @@ Az avançált felhasználók számára szerkeszze meg a `/wp-content/themes/[the
 - Távolsági értékeket
 - Keretezés és árnyékolás definiálásait
 
-### Egyedi Blokktemplátumok Létrehozása
+### Egyedi Blokktemplátumok Létrehozása {#create-custom-block-templates}
 
 Használja a WordPress blokk szerkesztőt az egyedi templátumok létrehozásához:
 
@@ -180,7 +180,7 @@ Használja a WordPress blokk szerkesztőt az egyedi templátumok létrehozásáh
 - Termékoldalakhoz
 - Kapcsolat űrlapokhoz
 
-## Öss 비교: Öreg vs. Új Onboarding
+## Öss 비교: Öreg vs. Új Onboarding {#comparison-old-vs-new-onboarding}
 
 | Funkció | Site Builder (Elavult) | Theme Builder (Új) |
 |---------|----------------------|--------------------|
@@ -190,7 +190,7 @@ Használja a WordPress blokk szerkesztőt az egyedi templátumok létrehozásáh
 | Rugalmasság | Rögzített opciók | Testreszabható |
 | Jövőbeli frissítések | Nem hivatkozott | Tárolva a site_brief-ben |
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
 **Az onboarding folyamat nem fejeződött be**
 - Indítsa újra a folyamatot: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Használja a WordPress blokk szerkesztőt az egyedi templátumok létrehozásáh
 - Kérje az agenttől, hogy "regenerate the theme with [specific changes]" (újra generálja a témát [specifikus változtatásokkal])
 - Szerkeszze meg közvetlenül a theme.json fájlt pontos kontrollért
 
-## Következő Lépések
+## Következő Lépések {#next-steps}
 
 Az Theme Builder onboarding befejezése után:
 

@@ -3,11 +3,11 @@ title: Rinn a' chùis Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Cuimh a'Ultimate Multisite
+# Cuimh a'Ultimate Multisite {#why-ultimate-multisite}
 
 Tha thu an tòiseachadh air an article seo, is e cudrom gu bheil thu a ghuinn a bhith a' chluich a tha a' sgaidh a' chùineachadh a' chuid a' chùineachadh. Tha sinn a' faicinn gu bheil thu a' chùineamhan a tha thu a' ginn a' chùineachadh gu deimialach air an deugh.
 
-## Cò a tha Ultimate Multisite?
+## Cò a tha Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Tha Ultimate Multisite is plugin WordPress Multisite a tha a' bheachd duit a' chuid a' chùineachadh le WaaS (Website as a Service) do chùineachadh chùineamhan. Da tha thu a' chùineamhan, leat a bhith agad deugh fhaisghean san t-uisge agus a tha chùineamhan a' faighinn duit a' chùineadh site a' gabhail air do ngrìomh fhaighinn.
 
@@ -23,11 +23,11 @@ Agus daoine a tha a' leughadh a' leughadh:
 
 * API Sealladh agus Suidheachadh (Search and Replace API): Leat baidh thu a' leughadh an seòl templates site gu annotations mar {{site_name}} agus a' leughadh a' leughadh API Sealladh agus Suidheachadh airson a' leughadh sin placeholders agad gu fhaicinn dachaigh a tha a' leughadh a' leughadh a' leughadh daoine a' sgrùdadh, gu fhaicinn an t-aithreachais (automatically).
 
-## Aighean a tha a' leughadh
+## Aighean a tha a' leughadh {#other-features}
 
 An uair a tha e cheann airson a' leughadh a' leughadh a' leughadh Ultimate Multisite.
 
-### Aig an 1: Seòl (Agency)
+### Aig an 1: Seòl (Agency) {#use-cases}
 
 Dùn duine skills core a' seòl a tha a' leughadh design deàtaichean le eargilean mar tairgseachaidh (hosting) no marketing a' leughadh mar seòl eile.
 
@@ -35,7 +35,7 @@ Air tairgseachdairean, a thann Ultimate Multisite a' leughadh a' leughadh a' leu
 
 Bidh ageniadau do chàir an t-uisge (peace of mind) gyda Ultimate Multisite a losgaid eu roinn a tha thu a' sgaidh gu fìor - leughadh seòthain (design) fìor.
 
-### Cas 2: Seòthach (Niche Provider)
+### Cas 2: Seòthach (Niche Provider) {#case-1-an-agency}
 
 Tha ealaian air a bhith a' cheann, a tha a' sgaidh: “Rinn aon rud agus siubhach.” Air maccidhean gu mòra, tha seo a' tighinn air a bhith a' creachadh seòthach (product) no seòthach (service) a choimbeadh air aon chùl-obair (core idea).
 
@@ -45,7 +45,7 @@ Is e cheann de fhaighinn Ultimate Multisite, seòthach site, gu làidir: tha thu
 
 Air dtàir seòthach sitean no seòthach (services), tha seo a' toirt fhaighinn gu mòr air a bhith a' leughadh site agad agad air a bhith ready-to-go le pluginhean agus design a tha thu a' sgaidh. Tha an t-uisge a' faicinn dìreach am fhadraidh (minimal input) a thabhair airson a' deinn seòthach sinne.
 
-### Cas 3: WordPress Web Hosting
+### Cas 3: WordPress Web Hosting {#case-2-niche-provider}
 
 Tha ealaian mòr air a bhith ag obair le sitean WordPress, ach gu latha, tha e cheann a tha thu a' sgaidh an t-uisge (web space) do chàir an t-site agad agad le WordPress a' sgaidh. Tha seo a' tighinn air a bhith a' deinn seòthach (service) fìor, no chaidh e cheann a tha thu a' sgaidh gu fìor. Tha seo a' tighinn air a bhith a' chlàradh de dhùnadh (decisions) agus a' ghnìomhachd sinne a' leughadh airson seòthach (service) fìor.
 

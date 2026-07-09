@@ -4,13 +4,13 @@ title: Aktioun - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Action: wu_checkout_order_created
+# Action: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 Gëtt ausgeléist, nodeems d'Checkout-Bestellung komplett zesummegestallt ass.
 
 Addons kënnen dëst benotzen, fir sekundär Memberschafte fir Produkter mat onofhängege Billing-Zyklen ze erstellen.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Addons kënnen dëst benotzen, fir sekundär Memberschafte fir Produkter mat ono
 | $membership | `\WP_Ultimo\Models\Membership` | Déi primär Memberschaft. |
 | $payment | `\WP_Ultimo\Models\Payment` | D'Bezuelung. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.5.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) op der Linn 891

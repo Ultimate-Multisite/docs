@@ -4,13 +4,13 @@ title: Filtar - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filtar: wu_sso_url
+# Filtar: wu_sso_url {#filter-wussourl}
 
 Filtrira generirane SSO URL-ove prije nego što se vrate za korisničke radnje među domenama.
 
 Upotrijebite ovaj filtar kada integracija treba dodati pouzdani kontekst SSO poveznici suverenog zakupca ili zamijeniti brokerski URL uz očuvanje provjere tokena Ultimate Multisite.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Upotrijebite ovaj filtar kada integracija treba dodati pouzdani kontekst SSO pov
 | $site_id | `int` | ID ciljnog sitea za posjet. |
 | $redirect_to | `string` | Odredišni URL nakon uspješne SSO provjere. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.13.0
 
-### Izvor
+### Izvor {#source}
 
 Definirano u `inc/sso/class-sso.php`.
 
 
-## Vraća
+## Vraća {#returns}
 
 Filtrirani SSO URL.

@@ -3,17 +3,17 @@ title: Integrasi ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integrasi ServerPilot
+# Integrasi ServerPilot {#serverpilot-integration}
 
-## Gambaran Keseluruhan
+## Gambaran Keseluruhan {#overview}
 ServerPilot ialah perkhidmatan awan untuk mengehoskan WordPress dan laman web PHP lain pada pelayan di DigitalOcean, Amazon, Google, atau mana-mana penyedia pelayan lain. Integrasi ini membolehkan penyegerakan domain secara automatik dan pengurusan sijil SSL antara Ultimate Multisite dan ServerPilot.
 
-## Ciri-ciri
+## Ciri-ciri {#features}
 - Penyegerakan domain secara automatik
 - Pengurusan sijil SSL dengan Let's Encrypt
 - Pembaharuan SSL secara automatik
 
-## Keperluan
+## Keperluan {#requirements}
 Pemalar berikut mesti ditakrifkan dalam fail `wp-config.php` anda:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## Arahan Persediaan
+## Arahan Persediaan {#setup-instructions}
 
-### 1. Dapatkan Kelayakan API ServerPilot Anda
+### 1. Dapatkan Kelayakan API ServerPilot Anda {#1-get-your-serverpilot-api-credentials}
 
 1. Log masuk ke dashboard ServerPilot anda
 2. Pergi ke "Account" > "API"
 3. Cipta kunci API baharu jika anda belum mempunyainya
 4. Salin Client ID dan API Key anda
 
-### 2. Dapatkan App ID Anda
+### 2. Dapatkan App ID Anda {#2-get-your-app-id}
 
 1. Dalam dashboard ServerPilot anda, pergi ke "Apps"
 2. Pilih aplikasi di mana multisite WordPress anda dihoskan
 3. App ID boleh dilihat dalam URL: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Tambah Pemalar ke wp-config.php
+### 3. Tambah Pemalar ke wp-config.php {#3-add-constants-to-wp-configphp}
 
 Tambahkan pemalar berikut ke dalam fail `wp-config.php` anda:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. Aktifkan Integrasi
+### 4. Aktifkan Integrasi {#4-enable-the-integration}
 
 1. Dalam admin WordPress anda, pergi ke Ultimate Multisite > Settings
 2. Navigasi ke tab "Domain Mapping"
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. Aktifkan integrasi ServerPilot
 5. Klik "Save Changes"
 
-## Cara Ia Berfungsi
+## Cara Ia Berfungsi {#how-it-works}
 
-### Penyegerakan Domain
+### Penyegerakan Domain {#domain-syncing}
 
 Apabila domain dipetakan dalam Ultimate Multisite:
 
@@ -66,7 +66,7 @@ Apabila domain dipetakan dalam Ultimate Multisite:
 3. Ia menghantar senarai yang dikemas kini ke ServerPilot melalui API
 4. ServerPilot mengemas kini senarai domain untuk aplikasi anda
 
-### Pengurusan Sijil SSL
+### Pengurusan Sijil SSL {#ssl-certificate-management}
 
 Selepas domain disegerakkan:
 
@@ -74,27 +74,27 @@ Selepas domain disegerakkan:
 2. ServerPilot menguruskan pengeluaran dan pemasangan sijil SSL menggunakan Let's Encrypt
 3. ServerPilot juga menguruskan pembaharuan sijil SSL secara automatik
 
-## Pengesahan Sijil SSL
+## Pengesahan Sijil SSL {#ssl-certificate-verification}
 
 Integrasi ini dikonfigurasikan untuk meningkatkan bilangan percubaan pengesahan sijil SSL untuk ServerPilot, kerana ServerPilot mungkin mengambil sedikit masa untuk mengeluarkan dan memasang sijil SSL. Secara lalai, ia akan mencuba sehingga 5 kali, tetapi ini boleh diselaraskan menggunakan filter.
 
-## Penyelesaian Masalah
+## Penyelesaian Masalah {#troubleshooting}
 
-### Isu Sambungan API
+### Isu Sambungan API {#api-connection-issues}
 - Pastikan Client ID dan API Key anda betul
 - Semak bahawa App ID anda betul
 - Pastikan akaun ServerPilot anda mempunyai kebenaran yang diperlukan
 
-### Isu Sijil SSL
+### Isu Sijil SSL {#ssl-certificate-issues}
 - ServerPilot memerlukan domain mempunyai rekod DNS yang sah yang menghala ke pelayan anda sebelum mengeluarkan sijil SSL
 - Jika sijil SSL tidak dikeluarkan, semak bahawa domain anda menghala dengan betul ke alamat IP pelayan anda
 - ServerPilot mungkin mengambil sedikit masa untuk mengeluarkan dan memasang sijil SSL (biasanya 5-15 minit)
 
-### Domain Tidak Ditambah
+### Domain Tidak Ditambah {#domain-not-added}
 - Semak log Ultimate Multisite untuk sebarang mesej ralat
 - Pastikan domain belum ditambah ke ServerPilot
 - Pastikan pelan ServerPilot anda menyokong bilangan domain yang anda tambahkan
 
-### Pembuangan Domain
+### Pembuangan Domain {#domain-removal}
 - Buat masa ini, API ServerPilot tidak menyediakan cara untuk membuang domain secara individu
 - Apabila pemetaan domain dibuang dalam Ultimate Multisite, integrasi ini akan mengemas kini senarai domain dalam ServerPilot untuk mengecualikan domain yang dibuang

@@ -4,11 +4,11 @@ title: Sivana - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Sivana: ultimate_multisite_content_sync_get_option
+# Sivana: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Mamerina ny sandan'ny safidin-tambajotra natao slugfied.
 
-## Parametra
+## Parametra {#parameters}
 
 | Anarana | Karazana | Famaritana |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Mamerina ny sandan'ny safidin-tambajotra natao slugfied.
 | $option_name | `string` | Ny anaran'ny safidy. |
 | $default | `mixed` | Ny sanda default. |
 
-### Hatramin'ny
+### Hatramin'ny {#since}
 
 - 1.0.0
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) amin'ny andalana 126
 
 
-## Mamerina
+## Mamerina {#returns}
 Ny sandan'ny safidin-tambajotra slugfield.

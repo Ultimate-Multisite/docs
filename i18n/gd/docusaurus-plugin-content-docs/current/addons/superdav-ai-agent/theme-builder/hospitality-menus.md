@@ -3,15 +3,15 @@ title: Clàran-bìdh Aoigheachd
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Clàran-bìdh Aoigheachd
+# Clàran-bìdh Aoigheachd {#hospitality-menus}
 
 Leigidh feart **Clàran-bìdh Aoigheachd** le Theme Builder duilleagan clàr-bìdh structaraichte airson biadh is deochan a ghineadh agus a chur a-steach gu dìreach dhan làrach WordPress agad.
 
-## Sealladh Coitcheann
+## Sealladh Coitcheann {#overview}
 
 Faodaidh Theme Builder a-nis duilleagan clàr-bìdh proifeiseanta, structaraichte a chruthachadh airson gnìomhachasan aoigheachd, a’ gabhail a-steach taighean-bìdh, cafaidhean, bàraichean, agus seirbheisean solarachaidh bìdh. Tha na clàran-bìdh seo air am filleadh a-steach gu tur ann an dealbhadh na làraich agad agus gabhaidh an ùrachadh is an stiùireadh gu furasta.
 
-## Seòrsaichean Aoigheachd le Taic
+## Seòrsaichean Aoigheachd le Taic {#supported-hospitality-types}
 
 - **Taighean-bìdh** — clàran-bìdh seirbheis-làn
 - **Cafaidhean** — clàran-bìdh cofaidh agus biadh aotrom
@@ -21,9 +21,9 @@ Faodaidh Theme Builder a-nis duilleagan clàr-bìdh proifeiseanta, structaraicht
 - **Trucaichean Bìdh** — clàran-bìdh seirbheis bìdh gluasadach
 - **Taighean-grùdaidh agus Taighean-fìona** — clàran-bìdh dheochan le tuairisgeulan
 
-## Structar Clàr-bìdh
+## Structar Clàr-bìdh {#menu-structure}
 
-### Roinnean Clàr-bìdh
+### Roinnean Clàr-bìdh {#menu-categories}
 
 Tha clàran-bìdh air an eagrachadh ann an roinnean:
 
@@ -34,7 +34,7 @@ Tha clàran-bìdh air an eagrachadh ann an roinnean:
 - **Deochan** — deochan (le deoch-làidir agus gun deoch-làidir)
 - **Rudan Sònraichte** — rudan sònraichte làitheil no ràitheil
 
-### Cruth Nì Clàr-bìdh
+### Cruth Nì Clàr-bìdh {#menu-item-format}
 
 Tha gach nì clàr-bìdh a’ gabhail a-steach:
 
@@ -49,7 +49,7 @@ Tha gach nì clàr-bìdh a’ gabhail a-steach:
 }
 ```
 
-#### Raointean Nì
+#### Raointean Nì {#item-fields}
 
 | Raon | Seòrsa | Tuairisgeul |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Tha gach nì clàr-bìdh a’ gabhail a-steach:
 | `allergens` | array | Aileirgeanan cumanta (Cnothan, Maorach, msaa.) |
 | `availability` | string | Cuin a tha e ri fhaighinn (Gach latha, Ràitheil, msaa.) |
 
-## Cruthachadh Chlàran-bìdh Aoigheachd
+## Cruthachadh Chlàran-bìdh Aoigheachd {#creating-hospitality-menus}
 
-### Ceum 1: Thoir seachad Fiosrachadh Clàr-bìdh
+### Ceum 1: Thoir seachad Fiosrachadh Clàr-bìdh {#step-1-provide-menu-information}
 
 Innis do Theme Builder mun chlàr-bìdh agad:
 
@@ -71,7 +71,7 @@ Cruthaich clàr-bìdh taigh-bìdh airson an taigh-bìdh Eadailteach agam le grei
 soithichean pasta, prìomh chùrsaichean, agus milseagan. Cuir a-steach prìsean agus tuairisgeulan.
 ```
 
-### Ceum 2: Bidh Theme Builder a’ Gineadh Clàr-bìdh
+### Ceum 2: Bidh Theme Builder a’ Gineadh Clàr-bìdh {#step-2-theme-builder-generates-menu}
 
 Bidh Theme Builder:
 
@@ -81,7 +81,7 @@ Bidh Theme Builder:
 4. A’ cruthachadh phrìsean agus thuairisgeulan
 5. A’ cur fiosrachadh daitheid agus aileirgeanan ris
 
-### Ceum 3: Dèan Lèirmheas agus Gnàthaich
+### Ceum 3: Dèan Lèirmheas agus Gnàthaich {#step-3-review-and-customize}
 
 Faodaidh tu:
 
@@ -91,9 +91,9 @@ Faodaidh tu:
 4. Tuairisgeulan agus fiosrachadh daitheid ùrachadh
 5. Stoidhleadh agus cruth a chur air dòigh
 
-## Roghainnean Taisbeanaidh Clàr-bìdh
+## Roghainnean Taisbeanaidh Clàr-bìdh {#menu-display-options}
 
-### Duilleag Clàr-bìdh Slàn
+### Duilleag Clàr-bìdh Slàn {#full-menu-page}
 
 Duilleag shònraichte a’ taisbeanadh a’ chlàr-bhìdh iomlan agad:
 
@@ -102,7 +102,7 @@ Duilleag shònraichte a’ taisbeanadh a’ chlàr-bhìdh iomlan agad:
 - Cruth freagarrach airson clò-bhualadh
 - Dealbhadh freagairteach do dh’innealan-làimhe
 
-### Widget Clàr-bìdh
+### Widget Clàr-bìdh {#menu-widget}
 
 Cuir earrannan clàr-bìdh a-steach air duilleagan eile:
 
@@ -111,7 +111,7 @@ Cuir earrannan clàr-bìdh a-steach air duilleagan eile:
 - Clàr-bìdh dheochan air duilleag a’ bhàir
 - Taisbeanadh milseagan sa footer
 
-### PDF Clàr-bìdh
+### PDF Clàr-bìdh {#menu-pdf}
 
 Gin clàr-bìdh PDF a ghabhas luchdadh a-nuas:
 
@@ -120,9 +120,9 @@ Gin clàr-bìdh PDF a ghabhas luchdadh a-nuas:
 - A’ gabhail a-steach ìomhaighean agus tuairisgeulan
 - Furasta a cho-roinn agus a chur air post-d
 
-## Fiosrachadh Daitheid agus Aileirgeanan
+## Fiosrachadh Daitheid agus Aileirgeanan {#dietary-and-allergen-information}
 
-### Buadhan Daitheid
+### Buadhan Daitheid {#dietary-attributes}
 
 Comharraich nithean le fiosrachadh daitheid:
 
@@ -134,7 +134,7 @@ Comharraich nithean le fiosrachadh daitheid:
 - **Ìosal ann an Gualaisg** — gualaisgean lùghdaichte
 - **Àrd ann am Pròtain** — beairteach ann am pròtain
 
-### Rabhaidhean Aileirgeanan
+### Rabhaidhean Aileirgeanan {#allergen-warnings}
 
 Cuir a-steach aileirgeanan cumanta:
 
@@ -147,9 +147,9 @@ Cuir a-steach aileirgeanan cumanta:
 - **Gluten** — cruithneachd agus gràinean anns a bheil gluten
 - **Sesame** — sìol sesame agus ola
 
-## Stiùireadh Clàr-bìdh
+## Stiùireadh Clàr-bìdh {#menu-management}
 
-### Ùrachadh Phrìsean
+### Ùrachadh Phrìsean {#updating-prices}
 
 Ùraich prìsean clàr-bìdh gu furasta:
 
@@ -159,7 +159,7 @@ Cuir a-steach aileirgeanan cumanta:
 4. Sàbhail atharrachaidhean
 5. Nochdaidh atharrachaidhean sa bhad air an làrach agad
 
-### Cur Nithean Ràitheil Ris
+### Cur Nithean Ràitheil Ris {#adding-seasonal-items}
 
 Cruthaich caochlaidhean clàr-bìdh ràitheil:
 
@@ -169,7 +169,7 @@ Cruthaich caochlaidhean clàr-bìdh ràitheil:
 4. Clàraich cinn-latha ruigsinneachd
 5. Taisbean gu fèin-obrachail tron ràith
 
-### Stiùireadh Rudan Sònraichte
+### Stiùireadh Rudan Sònraichte {#managing-specials}
 
 Taisbean rudan sònraichte làitheil no seachdaineil:
 
@@ -179,7 +179,7 @@ Taisbean rudan sònraichte làitheil no seachdaineil:
 4. Ùraich gach latha no gach seachdain
 5. Tasglannaich seann rudan sònraichte
 
-## Amalachadh le Theme Builder
+## Amalachadh le Theme Builder {#integration-with-theme-builder}
 
 Nuair a bhios tu a’ cleachdadh Theme Builder airson làraichean aoigheachd:
 
@@ -189,9 +189,9 @@ Nuair a bhios tu a’ cleachdadh Theme Builder airson làraichean aoigheachd:
 4. **Optimization airson innealan-làimhe** — bidh clàran-bìdh a’ taisbeanadh gu brèagha air fònaichean
 5. **SEO optimization** — tha clàran-bìdh càirdeil do einnseanan-luirg
 
-## Cleachdaidhean as Fheàrr
+## Cleachdaidhean as Fheàrr {#best-practices}
 
-### Dealbhadh Clàr-bìdh
+### Dealbhadh Clàr-bìdh {#menu-design}
 
 - **Eagrachadh soilleir** — structar roinnean loidsigeach
 - **Tuairisgeulan so-leughte** — blasta agus fiosrachail
@@ -199,7 +199,7 @@ Nuair a bhios tu a’ cleachdadh Theme Builder airson làraichean aoigheachd:
 - **Dealbhan proifeiseanta** — ìomhaighean bìdh àrd-chàileachd
 - **Àite bàn** — na lìon an duilleag cus
 
-### Susbaint
+### Susbaint {#content}
 
 - **Tuairisgeulan ceart** — thoir cunntas ceart air nithean
 - **Cuir cuideam air rudan sònraichte** — dèan rudan sònraichte follaiseach
@@ -207,7 +207,7 @@ Nuair a bhios tu a’ cleachdadh Theme Builder airson làraichean aoigheachd:
 - **Ùraich gu cunbhalach** — cùm prìsean agus nithean làithreach
 - **Cleachd cànan blasta** — dèan nithean fuaimeachadh blasta
 
-### Ruigsinneachd
+### Ruigsinneachd {#accessibility}
 
 - **Cruthan-clò so-leughte** — cleachd typefaces soilleir, furasta an leughadh
 - **Iomsgaradh gu leòr** — dèan cinnteach gu bheil an teacsa so-leughte
@@ -215,9 +215,9 @@ Nuair a bhios tu a’ cleachdadh Theme Builder airson làraichean aoigheachd:
 - **Rabhaidhean aileirgeanan** — taisbean aileirgeanan gu follaiseach
 - **Càirdeil do dh’innealan-làimhe** — dèan deuchainn air gach inneal
 
-## Eisimpleirean
+## Eisimpleirean {#examples}
 
-### Structar Clàr-bìdh Taigh-bìdh
+### Structar Clàr-bìdh Taigh-bìdh {#restaurant-menu-structure}
 
 ```
 Biadhan-tòiseachaidh
@@ -241,7 +241,7 @@ Milseagan
 └── Taghadh Gelato
 ```
 
-### Structar Clàr-taice Cafaidh
+### Structar Clàr-taice Cafaidh {#cafe-menu-structure}
 
 ```
 Cofaidh
@@ -260,7 +260,7 @@ Ceapairean
 └── Wrap Glasraichear
 ```
 
-## Feartan Co-cheangailte
+## Feartan Co-cheangailte {#related-features}
 
 - [Cruthaich Clàr-taice](../abilities/create-menu.md) — cruthaich clàir-sheòlaidh
 - [Stiùireadh Dealbhaidh](./design-direction.md) — gnàthaich dealbhadh na làraich agad

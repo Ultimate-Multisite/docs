@@ -4,11 +4,11 @@ title: Filtru - wu_get_network_public_ip
 sidebar_label: wu_get_network_public_ip
 _i18n_hash: 129b6c2423c8d5af9f4314cc35715281
 ---
-# Filtru: wu_get_network_public_ip
+# Filtru: wu_get_network_public_ip {#filter-wugetnetworkpublicip}
 
 Mai multe detalii despre acest filtru le găsești mai jos, în aceeași metodă.
 
-### Sursă
+### Sursă {#source}
 
 - Definit în [`inc/domain-mapping/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/domain-mapping/class-helper.php#L97) la linia 97
 - Definit în [`inc/domain-mapping/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/domain-mapping/class-helper.php#L139) la linia 139

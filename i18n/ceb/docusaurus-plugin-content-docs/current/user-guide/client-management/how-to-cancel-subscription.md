@@ -3,7 +3,7 @@ title: Unsaon pagkansela og subscription
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Unsaon nako pagkansela sa akong subscription?
+# Unsaon nako pagkansela sa akong subscription? {#how-can-i-cancel-my-subscription}
 
 Kung naa kay Ultimate Multisite license, pwede nimo kanselahon ang renewal bisan kanus-a gusto nimo. Sunda lang ni mga lakang:
 

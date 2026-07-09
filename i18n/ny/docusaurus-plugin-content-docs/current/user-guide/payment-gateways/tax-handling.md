@@ -3,7 +3,7 @@ title: Kasamalidwe ka Msonkho
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Kusamalira Misonkho
+# Kusamalira Misonkho {#tax-handling}
 
 Ultimate Multisite ili ndi module yosonkhanitsira misonkho yomangidwa mu plugin yathu yayikulu, choncho ngati mukufuna kusonkhanitsa misonkho yogulitsa pa mapulani, mapaketi ndi mautumiki anu, mungathe kuchita zimenezi mosavuta popanda kukhazikitsa add-ons iliyonse.
 
@@ -11,7 +11,7 @@ Kwa makampani omwe ali ku Europe, timapereka **add-on** yomwe imawonjezera zida 
 
 Ultimate Multisite siyipereka kapena kutumiza misonkho m'malo mwanu ku boma; timangokuthandizani kusonkhanitsa misonkho yoyenera pa nthawi ya transaction. **Mudzakhalabe mukuyenera kutumiza misonkho nokha.**
 
-## Kuyatsa Kusonkhanitsa Misonkho
+## Kuyatsa Kusonkhanitsa Misonkho {#enabling-tax-collection}
 
 Kusonkhanitsa misonkho sikuyatsidwa mwachisawawa. Kuti muyatse, muyenera kupita ku **Ultimate Multisite > Zokonda > Misonkho** kenako kusintha kuti muyatse zokonda za Yatsa Misonkho.
 
@@ -25,7 +25,7 @@ Mungathenso kuona zokonda za misonkho za zinthu payekha:
 
 ![Zokonda za Misonkho za zinthu](/img/config/settings-taxes.png)
 
-### Msonkho wosaphatikizidwa motsutsana ndi Msonkho wophatikizidwa
+### Msonkho wosaphatikizidwa motsutsana ndi Msonkho wophatikizidwa {#tax-excluded-vs-tax-included}
 
 Mwachisawawa, mitengo yonse ya zinthu zanu siyiphatikiza msonkho, kutanthauza kuti misonkho **siyiphatikizidwa** mu mtengo wa chinthucho. Ngati tazindikira kuti kasitomala ayenera kulipira misonkho pa kugula kwina, tidzawonjezera misonkhoyo **pamwamba** pa subtotal.
 
@@ -37,7 +37,7 @@ Musaiwale **kusunga** zosintha zomwe mwapanga.
 
 ###
 
-## Kupanga Mitengo ya Misonkho
+## Kupanga Mitengo ya Misonkho {#creating-tax-rates}
 
 Mukayatsa Kusonkhanitsa Misonkho, muyenera kupanga mitengo ya misonkho ya malo enieni pogwiritsa ntchito editor yathu ya mitengo ya misonkho.
 
@@ -51,7 +51,7 @@ Pa tsamba la editor ya mitengo ya misonkho, mungawonjezere Mitengo ya Misonkho y
 
 Muyenera kupatsa mlingo uliwonse wa msonkho **mutu** (wogwiritsidwa ntchito pa invoices). Kenako mungasankhe **dziko** (chofunikira), **state,** ndi **mzinda** (zonse ziwiri zosankha) komwe msonkho uwu udzalipiritsidwa. Pomaliza, onjezani **mlingo wa msonkho mu maperesenti**.
 
-### Magulu a Misonkho
+### Magulu a Misonkho {#tax-categories}
 
 Mungathenso kupanga Magulu a Misonkho angapo, kuti muwonjezere mitengo yosiyanasiyana ya misonkho ya mitundu yosiyanasiyana ya zinthu.
 
@@ -73,7 +73,7 @@ Mungakhazikitse gulu la msonkho la chinthu china popita ku **tsamba losinthira C
 
 Pa screen yomweyo, mungazimitse kusintha kwa **Kodi ndi Yokhometsedwa Msonkho?** kuti mudziwitse Ultimate Multisite kuti isasonkhanitse misonkho pa chinthu chimenecho.
 
-## Thandizo la European VAT
+## Thandizo la European VAT {#european-vat-support}
 
 Monga tanena kale, tili ndi add-on yomwe ilipo kwa kasitomala ku EU omwe ali ndi zofunikira zina chifukwa cha malamulo a European VAT.
 
@@ -101,7 +101,7 @@ Ngati mubwerera ku **tab ya Zokonda za Misonkho** , mudzaona zosankha zatsopano 
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Kukoka Mitengo ya Misonkho ya VAT
+### Kukoka Mitengo ya Misonkho ya VAT {#pulling-on-vat-tax-rates}
 
 Chimodzi mwa zida zomwe integration yathu imawonjezera ndi kuthekera kotsegula mitengo ya misonkho ya mayiko a EU member states. Izi zingachitike poyendera tsamba la editor ya mitengo ya misonkho mutayatsa thandizo la EU VAT.
 
@@ -111,7 +111,7 @@ Pansi pa tsambalo, mudzaona zosankha zokokera VAT. Kusankha mtundu wa mlingo ndi
 
 Mungathenso kusintha ma value mutawakoka. Kuti muchite zimenezi, ingosinthani mzere wa tebulo womwe mukufuna ndikudina kuti musunge ma value atsopano.
 
-### Kutsimikizira VAT
+### Kutsimikizira VAT {#vat-validation}
 
 Thandizo la VAT likayatsidwa, Ultimate Multisite idzawonjezera field yowonjezera ku form ya checkout, pansi pa field ya billing address. Fieldyo idzangowoneka kwa makasitomala omwe ali ku EU.
 

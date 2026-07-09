@@ -3,13 +3,13 @@ title: Gukora Discount Codes
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Gukoresha Discount Codes (v2)
+# Gukoresha Discount Codes (v2) {#creating-discount-codes-v2}
 
 _**Urugero Muhere: Iyiwe ari mu Ultimate Multisite version 2.x.**_
 
 Na Ultimate Multisite, uyuwe mushobora gukora discount codes kugira ngo umuntu wako yisobanure ku mibonye yawe. kandi gukora ni gukora gusa!
 
-## Gukora no Gutera Discount Codes
+## Gukora no Gutera Discount Codes {#creating-and-editing-discount-codes}
 
 Kugira ngo ukore cyangwa utere discount code, gukora **Ultimate Multisite > Discount Codes**.
 
@@ -85,7 +85,7 @@ Coupon yawe yari mu giciro ryawe, kandi ku gihe cyo, uzi umuntu wumva gukora **e
 
 ![Discount code row in the list with Edit and Delete hover actions](/img/config/discount-codes-list-hover.png)
 
-### Gukoresha URL Parameters:
+### Gukoresha URL Parameters: {#using-url-parameters}
 
 Niba wifashije gukoresha ibyo bishobora kubyara (customize) ibyo byo mu rubuga rwa ubwumva (pricing tables) cyangwa gukora uburyo bwiza bwo coupon code ku rubuga rwawe, kandi wifashije gushyira coupon code ku checkout form yawe mu gihe cyo, uzi gukora ibyo bikorwa bishobora gukoreshwa (URL parameters).
 

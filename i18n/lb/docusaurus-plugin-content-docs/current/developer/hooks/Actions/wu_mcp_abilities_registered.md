@@ -4,11 +4,11 @@ title: Aktioun - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered
+# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Gëtt ausgeléist, nodeems MCP-Fäegkeete fir eng Entitéit registréiert goufen.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gëtt ausgeléist, nodeems MCP-Fäegkeete fir eng Entitéit registréiert goufen
 | $model_name | `string` | De Modellnumm. |
 | $this | `object` | D'Manager-Instanz. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.5.0
-### Source
+### Source {#source}
 
 Definéiert an [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) op Zeil 171

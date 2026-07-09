@@ -3,11 +3,11 @@ title: Agebaute Agenten
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agebaute Agents
+# Agebaute Agents {#built-in-agents}
 
 Gratis AI Agent v1.9.0 liwwert fënnef agebaute Agents, jidderee virkonfiguréiert mat engem fokusséierte Set u Tools, engem ugepasste System-Prompt, an Ufanksvirschléi, déi op heefeg Aufgaben an deem Beräich ofgestëmmt sinn. Tëscht Agents wiesselen ännert, wat den Assistant maache kann a wéi en äntwert — ouni iergendeng Konfiguratioun vun Ärer Säit. Superdav AI Agent v1.18.0 kann dëse Workflows zäitplangbewosst Tools, Erënnerungsrecords, Geneemegungspaarten an SMS-Benoriichtegungen dobäisetzen, wann déi verbonne Integratioune konfiguréiert sinn.
 
-## Wat ass en Agent?
+## Wat ass en Agent? {#what-is-an-agent}
 
 All Agent ass e benannte Konfiguratiounsprofil, deen dat heite kombinéiert:
 
@@ -15,7 +15,7 @@ All Agent ass e benannte Konfiguratiounsprofil, deen dat heite kombinéiert:
 - **System-Prompt** — Instruktiounen, déi den Toun, d'Prioritéiten an d'Aschränkunge vum Agent festleeën
 - **Virschléi** — virgeschriwwe Prompts, déi an der Chat-Interface ugewise ginn, fir Iech ze hëllefen, séier unzefänken
 
-## Zougrëff op den Agent Picker
+## Zougrëff op den Agent Picker {#accessing-the-agent-picker}
 
 1. Maacht de **Gratis AI Agent**-Panel an der WordPress-Admin-Sidebar op.
 2. Klickt op d'**Agent-Ikon** uewe lénks am Chat-Header (d'Ikon ännert sech, fir den aktiven Agent ze weisen).
@@ -24,9 +24,9 @@ All Agent ass e benannte Konfiguratiounsprofil, deen dat heite kombinéiert:
 
 Dir kënnt Agents och matzen am Gespréich wiesselen — de System-Prompt vum neien Agent gräift ab der nächster Noriicht.
 
-## Déi fënnef agebaute Agents
+## Déi fënnef agebaute Agents {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fokus:** Erstellen an Ännere vu Bäiträg, Säiten a Kontaktformulairen.
 
@@ -47,7 +47,7 @@ Dir kënnt Agents och matzen am Gespréich wiesselen — de System-Prompt vum ne
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fokus:** End-to-end-Websäit-Erstellung aus engem eenzege Prompt.
 
@@ -70,7 +70,7 @@ Dir kënnt Agents och matzen am Gespréich wiesselen — de System-Prompt vum ne
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fokus:** Visuell Upassung — Faarwen, Typografie, CSS a Blockmuster.
 
@@ -87,7 +87,7 @@ Dir kënnt Agents och matzen am Gespréich wiesselen — de System-Prompt vum ne
 - *Maach e Screenshot vun der Startsäit a so mir, wat s du verbessere géifs.*
 - *Erstell e wiederverwendbaart Hero-Blockmuster mat engem hannergrondbild iwwer déi ganz Breet an enger zentréierter Iwwerschrëft.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokus:** WordPress-Plugins entdecken, installéieren a managen.
 
@@ -105,7 +105,7 @@ Dir kënnt Agents och matzen am Gespréich wiesselen — de System-Prompt vum ne
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fokus:** Froen iwwer Site-Inhalt, Astellungen a WordPress-Konfiguratioun beäntweren.
 
@@ -124,7 +124,7 @@ Dir kënnt Agents och matzen am Gespréich wiesselen — de System-Prompt vum ne
 
 ---
 
-## Superdav Automation Integratiounen
+## Superdav Automation Integratiounen {#superdav-automation-integrations}
 
 Wann Superdav AI Agent v1.18.0 Integratioune konfiguréiert sinn, kënnen agebaut Agenten u méi sécheren, plangbewossten Automatiséierungs-Workflows deelhuelen:
 
@@ -138,11 +138,11 @@ Recommandéierte Workflow: frot den Agent, de Message oder d'Aktioun virzebereed
 
 ---
 
-## Agenten upassen
+## Agenten upassen {#customising-agents}
 
 All agebauten Agent kann iwwer de `gratis_ai_agent_agents` Filter erweidert oder ersat ginn.
 
-### E personaliséierte System-Prompt zu engem existente Agent derbäisetzen
+### E personaliséierte System-Prompt zu engem existente Agent derbäisetzen {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### En neien Agent registréieren
+### En neien Agent registréieren {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Den neien Agent erschéngt am Agent-Auswieler direkt nodeems de Filter gelaf ass.
 
-### En agebauten Agent ewechhuelen
+### En agebauten Agent ewechhuelen {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

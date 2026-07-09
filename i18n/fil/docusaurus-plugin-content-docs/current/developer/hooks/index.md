@@ -3,11 +3,11 @@ title: Sanggunian ng Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Sanggunian sa Hooks
+# Sanggunian sa Hooks {#hooks-reference}
 
 Awtomatikong nabuong dokumentasyon para sa lahat ng **59 action** at **118 filter** sa Ultimate Multisite.
 
-## Mga Action
+## Mga Action {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Gumagana bago ang redirect ng authentication.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Gumagana kaagad bago itakda ang authentication cookie.
@@ -70,7 +70,7 @@ Awtomatikong nabuong dokumentasyon para sa lahat ng **59 action** at **118 filte
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Gumagana pagkatapos maimbak ang isang object sa database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Payagan ang mga developer ng plugin na magdagdag ng mga action sa proseso ng pag-unlock.
 
-## Mga Filter
+## Mga Filter {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Sinasala ang tagal ng panahon ng pag-expire ng authentication cookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Sinasala ang authentication redirect scheme.

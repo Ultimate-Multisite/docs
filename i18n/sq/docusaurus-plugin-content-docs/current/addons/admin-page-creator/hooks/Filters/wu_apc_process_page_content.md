@@ -4,11 +4,11 @@ title: Filtër - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Lejon zhvilluesit të ndërhyjnë në përmbajtjen përfundimtare
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Tipi | Përshkrimi |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Lejon zhvilluesit të ndërhyjnë në përmbajtjen përfundimtare
 | $to_replace | `array` | Array që përmban mbajtësit e vendit. |
 | $placeholder_count | `int` | Numri i mbajtësve të vendit të gjetur. |
 
-### Që prej
+### Që prej {#since}
 
 - 1.4.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) në rreshtin 46
 
 
-## Kthen
+## Kthen {#returns}
 Përmbajtjen pas modifikimit.

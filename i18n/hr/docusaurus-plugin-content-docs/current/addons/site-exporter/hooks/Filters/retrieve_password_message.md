@@ -4,11 +4,11 @@ title: Filtar - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filtar: retrieve_password_message
+# Filtar: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Filtrira tijelo poruke e-pošte za ponovno postavljanje lozinke.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Filtrira tijelo poruke e-pošte za ponovno postavljanje lozinke.
 | $user_login | `string` | Korisničko ime za korisnika. |
 | $user_data | `\WP_User` | WP_User objekt. |
 
-### Od
+### Od {#since}
 
 - 2.8.0
 - 4.1.0: Added <code>$user_login</code> and <code>$user_data</code> parameters.
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) u retku 149
 
 
-## Vraća
+## Vraća {#returns}
 Zadana poruka e-pošte.

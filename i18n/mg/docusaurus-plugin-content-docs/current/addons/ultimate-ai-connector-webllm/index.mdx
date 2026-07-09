@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ny Ultimate AI Connector for WebLLM dia mitondra inference AI teratany ao amin’ny navigateur ho an’ny tambajotra WordPress multisite anao. Mampandeha large language models manontolo ao amin’ny navigateur izy amin’ny alalan’ny WebLLM sy ny MLC engine — tsy mila API keys, tsy misy antso ivelany, tsy misy angona miala amin’ny fitaovan’ny mpampiasa.
 
-## Endri-javatra Fototra
+## Endri-javatra Fototra {#key-features}
 
 - **Inference eo amin’ny lafin’ny navigateur**: LLM mandeha eo an-toerana ao amin’ny navigateur an’ny mpitsidika amin’ny alalan’ny WebLLM/MLC — tsy mila GPU an’ny server
 - **Widget resaka mitsingevana**: Afaka mandefa prompt mivantana amin’ny LLM eo amin’ny lafin’ny navigateur avy eny amin’ny front end ireo mpampiasa tafiditra
@@ -22,28 +22,28 @@ Ny Ultimate AI Connector for WebLLM dia mitondra inference AI teratany ao amin�
 - **Cache IndexedDB**: Ny fisintonana lanjan’ny modely dia tafavoaka amin’ny CDN redirects izay manapaka ny lalan’ny Cache API mahazatra
 - **Fampidirana wpai filter**: Mifandray amin’ny filter `wpai_preferred_text_models` mba handefasan’ny endri-javatra AI Experiments mankany amin’ny engine ao amin’ny navigateur rehefa voarindra
 
-## Fepetra takiana
+## Fepetra takiana {#requirements}
 
 - WordPress 5.3 na ambony
 - PHP 7.4 na ambony
 - Ultimate Multisite plugin (mavitrika)
 - Navigateur manana fanohanana WebGPU (Chrome 113+, Edge 113+, na Firefox Nightly miaraka amin’ny WebGPU navela)
 
-## Fametrahana
+## Fametrahana {#installation}
 
 1. Ampidiro ao amin’ny lahatahiry `/wp-content/plugins/` anao ny rakitra addon
 2. Alefaso amin’ny alalan’ny sakafo 'Plugins' ao amin’ny WordPress ny plugin
 3. Mankanesa any amin’ny **Ultimate Multisite → AI Connector** handrindrana ny addon
 
-## Widget Resaka Mitsingevana
+## Widget Resaka Mitsingevana {#floating-chat-widget}
 
 Ny widget resaka mitsingevana dia mamela izay mpampiasa tafiditra hifandray amin’ny LLM eo amin’ny lafin’ny navigateur mivantana avy amin’ny front end anao, tsy mila miala amin’ilay pejy misy azy.
 
-### Inona no Ataony
+### Inona no Ataony {#what-it-does}
 
 Rehefa alefa, miseho eo amin’ny zoron’ny pejy front-end tsirairay ny kisary resaka ho an’ireo mpampiasa tafiditra. Rehefa tsindriana ilay kisary dia misokatra ny tontonana resaka ahafahan’ny mpampiasa manoratra prompt sy mandray valiny avy amin’ny modely WebLLM mandeha eo an-toerana. Satria mandeha manontolo ao amin’ny navigateur ilay modely, manokana ny valiny ary tsy misy fanodinana eo amin’ny lafin’ny server.
 
-### Famantarana Satan’ny Admin-Bar
+### Famantarana Satan’ny Admin-Bar {#admin-bar-status-indicator}
 
 Ny WordPress admin bar dia ahitana famantarana sata izay mampiseho ny toetry ny WebLLM engine amin’izao fotoana izao:
 
@@ -56,7 +56,7 @@ Ny WordPress admin bar dia ahitana famantarana sata izay mampiseho ny toetry ny 
 
 Mihavao amin’ny fotoana tena izy ilay famantarana nefa tsy mitaky famerenana mamaky pejy.
 
-### Ahoana no Hampandehanana na Hamonoana ny Widget
+### Ahoana no Hampandehanana na Hamonoana ny Widget {#how-to-enable-or-disable-the-widget}
 
 1. Mandehana any amin’ny **Ultimate Multisite → AI Connector** ao amin’ny network admin
 2. Tadiavo ny tontonana **Connector**
@@ -65,17 +65,17 @@ Mihavao amin’ny fotoana tena izy ilay famantarana nefa tsy mitaky famerenana m
 
 Azo alefa na vonoina isaky ny site ihany koa ny widget avy amin’ny admin an’ilay site raha nanome izany fahafahana izany ny mpandrindra tambajotra.
 
-## Firafitry ny Widget
+## Firafitry ny Widget {#widget-settings}
 
 Ny tontonana Connector ao amin’ny **Ultimate Multisite → AI Connector** dia ahitana ireto firafitra manaraka ireto ho an’ny widget resaka mitsingevana:
 
-### Alefaso ny Widget Resaka Mitsingevana
+### Alefaso ny Widget Resaka Mitsingevana {#enable-floating-chat-widget}
 
 Mampandeha na mamono ny widget resaka ho an’ny tambajotra manontolo. Rehefa vonoina, tsy miseho amin’ny pejy front-end rehetra ny widget, na inona na inona andraikitry ny mpampiasa.
 
 **Default:** Off
 
-### Fitondran-tena Auto-Prompt
+### Fitondran-tena Auto-Prompt {#auto-prompt-behaviour}
 
 Mifehy raha mandefa prompt ho azy ny widget resaka rehefa sokafan’ny mpampiasa.
 
@@ -93,7 +93,7 @@ Rehefa apetraka ho **Custom prompt**, miseho ny saha lahatsoratra fanampiny ahaf
 
 **Default:** Disabled
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 Ny version 1.1.0 dia mampiditra SharedWorker runtime ho an’ny MLC engine. Talohan’izay, ny kiheba navigateur tsirairay nampiasa WebLLM dia nampiditra instance-ny manokana an’ilay modely, nifaninana tamin’ny fahatsiarovana GPU ary niteraka olana amin’ny fahombiazana amin’ny fitaovana manana VRAM voafetra.
 
@@ -105,29 +105,29 @@ Amin’ny SharedWorker runtime, kiheba iray no miasa ho mpampiantrano engine. Ny
 
 Mangarahara amin’ny mpampiasa ny SharedWorker. Ny famantarana satan’ny admin-bar dia maneho foana ny toetry ny engine zaraina, fa tsy ny kiheba tsirairay.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Mametraka middleware `apiFetch` ny addon izay misambotra fangatahana WordPress REST API mifanaraka amin’ny lamina AI Client SDK. Raha tokony hanao fangatahana HTTP loopback mankany amin’ny server, ireo fangatahana ireo dia alefa mivantana mankany amin’ny broker WebLLM eo an-toerana mandeha ao amin’ny SharedWorker.
 
 Midika izany fa ny plugins sy themes mampiasa ny WordPress `apiFetch` API mahazatra hiantsoana AI endpoints dia hahazo tombontsoa avy hatrany amin’ny modely eo amin’ny lafin’ny navigateur rehefa misy izy, tsy mila fanovana code.
 
-## Hooks sy Filters
+## Hooks sy Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — Manoratra ny engine navigateur WebLLM ho modely lahatsoratra tiana ampiasaina. Ny fanampiny dia mifandray amin’ity sivana ity ho azy rehefa voafetra sy misy ilay engine.
 - `ultimate_webllm_widget_enabled` — Manova ny toetry ny widget hoe mandeha ho an’ny mpampiasa na toe-javatra manokana. Avereno `true` na `false`.
 - `ultimate_webllm_auto_prompt` — Manova ny lahatsoratra auto-prompt alohan’ny handefasana azy any amin’ny widget. Mandray ny prompt string sy ny object `WP_Post` ankehitriny.
 
-## Famahana olana
+## Famahana olana {#troubleshooting}
 
-### Tsy miseho ny widget chat
+### Tsy miseho ny widget chat {#the-chat-widget-does-not-appear}
 
 - Hamarino fa tafiditra ny mpampiasa — ny widget dia aseho amin’ireo mpampiasa voamarina ihany
 - Zahao fa **Enable floating chat widget** dia navadika ho mandeha ao amin’ny tontonana Connector
 - Hamarino fa manohana WebGPU ny navigateur an’ilay mpampiasa (jereo ny Fepetra takiana etsy ambony)
 
-### Mampiseho "Error" ny famantarana admin-bar
+### Mampiseho "Error" ny famantarana admin-bar {#the-admin-bar-indicator-shows-error}
 
 Sokafy ny console developer an’ny navigateur (F12) ary tadiavo ireo hadisoana mifandraika amin’ny WebLLM. Antony mahazatra:
 
@@ -135,10 +135,10 @@ Sokafy ny console developer an’ny navigateur (F12) ary tadiavo ireo hadisoana 
 - Tsy nahomby ny fampidinana ny lanjan’ny modely — zahao ny fifandraisana tambajotra ary andramo fafana ny cache IndexedDB ao amin’ny browser developer tools (Application → IndexedDB)
 - Misy browser extension manakana ny SharedWorker
 
-### Misintona ny lanjan’ny modely isaky ny mandeha
+### Misintona ny lanjan’ny modely isaky ny mandeha {#model-weights-download-every-time}
 
 Ny fanampiny dia mampiasa IndexedDB ho cache backend mba hahazoana antoka fa maharitra ny lanjan’ny modely na dia misy redirect CDN aza. Raha misintona indray ny lanja isaky ny fitsidihana, zahao fa tsy fafan’ny browser privacy setting na extension ny IndexedDB.
 
-## Changelog
+## Changelog {#changelog}
 
 Jereo ny [Changelog](./changelog) ho an’ny tantaran’ny version feno.

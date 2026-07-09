@@ -3,13 +3,13 @@ title: Íocaíochtaí Láimhe a Shocrú
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Íocaíochtaí Láimhe a Shocrú (v2)
+# Íocaíochtaí Láimhe a Shocrú (v2) {#setting-up-manual-payments-v2}
 
 _**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do Ultimate Multisite leagan 2.x.**_
 
 Is bealach iad íocaíochtaí láimhe chun modhanna íocaíochta eile a thairiscint má bhíonn **Stripe** nó **PayPal** ar fáil do d’úsáideoirí. D’fhéadfadh sé a bheith ina aistriú sreinge nó bainc, nó aon mhodh íocaíochta eile atá ar fáil do d’úsáideoirí go háitiúil.
 
-## Conas Íocaíochtaí Láimhe a chumasú
+## Conas Íocaíochtaí Láimhe a chumasú {#how-to-enable-manual-payments}
 
 Tá sé an-éasca íocaíocht láimhe a shocrú. Ní gá duit ach í a chumasú faoi gheataí íocaíochta agus treoracha mionsonraithe a chur isteach maidir leis an gcaoi ar cheart don úsáideoir an íocaíocht a sheoladh.
 
@@ -31,7 +31,7 @@ Agus gheobhaidh siad teachtaireacht freisin ar do leathanach **Go raibh maith ag
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Íocaíochtaí láimhe a dhearbhú
+## Íocaíochtaí láimhe a dhearbhú {#confirming-manual-payments}
 
 Chun íocaíocht láimhe a dhearbhú, téigh chuig an roghchlár **Íocaíochtaí** ar an mbarra ar chlé. Ansin is féidir leat na híocaíochtaí go léir ar do líonra agus a sonraí a fheiceáil, lena n-áirítear a **stádas**. Beidh stádas **Ar feitheamh** ag íocaíocht láimhe i gcónaí go dtí go n-athraíonn tú de láimh é.
 

@@ -3,7 +3,7 @@ title: Kesyon sou frekans
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Kesyon ki souvan poze (FAQ)
+# Kesyon ki souvan poze (FAQ) {#frequently-asked-questions}
 
 Men gen kèk kesyon ki souvan vini pandan mande sipò.
 

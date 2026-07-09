@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Conector Ultimate de IA para Endpoints Compatíveis
+# Conector Ultimate de IA para Endpoints Compatíveis {#ultimate-ai-connector-for-compatible-endpoints}
 
 O Conector Ultimate de IA para Endpoints Compatíveis integra APIs de provedores de IA compatíveis com o OpenAI à sua rede multisite do WordPress. Configure múltiplos provedores de IA — cada um com sua própria URL de endpoint, chave de API e modelo padrão — e roteie as requisições com fallback automático quando um provedor estiver indisponível.
 
-## Principais Recursos
+## Principais Recursos {#key-features}
 
 - **Suporte a múltiplos provedores**: Adicione vários cartões de provedores de IA, cada um com sua própria URL de endpoint, chave de API e modelo padrão.
 - **Reordenar arrastando**: Organize os provedores por prioridade usando o ícone de pega (grip handle) em cada cartão; as requisições usarão os provedores em ordem.
@@ -21,26 +21,26 @@ O Conector Ultimate de IA para Endpoints Compatíveis integra APIs de provedores
 - **Expansão automática ao adicionar**: Novos cartões de provedores se expandem automaticamente para que você possa preencher os detalhes imediatamente.
 - **Quebra de cache de scripts**: Os scripts dos provedores são "cache-busted" (quebra de cache) na atualização do plugin para garantir que a versão mais recente seja carregada.
 
-## Requisitos
+## Requisitos {#requirements}
 
 - WordPress 5.3 ou superior
 - PHP 7.4 ou superior
 - Plugin Ultimate Multisite (ativo)
 - Um endpoint de API compatível com OpenAI (auto-hospedado ou de terceiros)
 
-## Instalação
+## Instalação {#installation}
 
 1. Faça o upload dos arquivos do addon para o seu diretório `/wp-content/plugins/`
 2. Ative o plugin através do menu 'Plugins' no WordPress
 3. Navegue até **Ultimate Multisite → AI Connector** para configurar o addon
 
-## Configuração
+## Configuração {#configuration}
 
-### Configuração de Múltiplos Provedores
+### Configuração de Múltiplos Provedores {#multi-provider-setup}
 
 A tela de configuração usa um layout baseado em cartões, onde cada cartão representa um provedor de IA. Você pode adicionar quantos provedores precisar.
 
-#### Adicionando um Provedor
+#### Adicionando um Provedor {#adding-a-provider}
 
 1. Vá para **Ultimate Multisite → AI Connector** no administrador da rede.
 2. Clique em **Add Provider** (Adicionar Provedor).
@@ -52,15 +52,15 @@ A tela de configuração usa um layout baseado em cartões, onde cada cartão re
    - **Default Model** (Modelo Padrão) — o identificador do modelo a ser usado por padrão para este provedor (ex: `gpt-4o`, `mistral-small`).
 5. Clique em **Save Settings** (Salvar Configurações).
 
-#### Removendo um Provedor
+#### Removendo um Provedor {#removing-a-provider}
 
 Clique no botão **Remove** (Remover) em qualquer cartão de provedor para excluí-lo. Salve as configurações para aplicar a mudança.
 
-#### Reordenando Provedores
+#### Reordenando Provedores {#reordering-providers}
 
 Arraste o ícone de pega (⣿) no lado esquerdo de qualquer cartão de provedor para reordená-lo. A ordem determina a prioridade de fallback: as requisições são enviadas para o primeiro provedor e retornam (fallback) para os provedores subsequentes caso uma requisição falhe.
 
-### Roteamento de Fallback
+### Roteamento de Fallback {#fallback-routing}
 
 Quando uma requisição para o provedor primário falha — devido a um tempo limite, limite de taxa (rate limit) ou interrupção do serviço — o conector tenta automaticamente com o próximo provedor da lista. Isso continua pela lista até que um provedor tenha sucesso ou todos os provedores tenham sido tentados.
 
@@ -72,7 +72,7 @@ Quando uma requisição para o provedor primário falha — devido a um tempo li
 
 O fallback é transparente para o plugin ou tema chamador — eles recebem ou uma resposta de sucesso ou um erro final, independentemente de quantos provedores foram tentados.
 
-### Referência de Configuração do Provedor
+### Referência de Configuração do Provedor {#provider-configuration-reference}
 
 | Campo | Obrigatório | Descrição |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ O fallback é transparente para o plugin ou tema chamador — eles recebem ou um
 | API Key | Sim | Chave de autenticação para este provedor |
 | Default Model | Sim | Identificador de modelo usado quando nenhum modelo é especificado na requisição |
 
-## Solução de Problemas
+## Solução de Problemas {#troubleshooting}
 
-### Nenhum provedor é listado
+### Nenhum provedor é listado {#no-providers-are-listed}
 
 Se a lista de provedores estiver vazia após salvar, confirme que:
 
@@ -91,21 +91,21 @@ Se a lista de provedores estiver vazia após salvar, confirme que:
 - Seu navegador não bloqueou o salvamento da página de configurações (verifique o console do navegador em busca de erros JavaScript).
 - O plugin está ativo e você está na tela do administrador da rede.
 
-### As requisições estão falhando para todos os provedores
+### As requisições estão falhando para todos os provedores {#requests-are-failing-for-all-providers}
 
 - Verifique se a URL do endpoint de cada provedor é alcançável a partir do seu servidor (e não apenas do seu navegador).
 - Verifique se cada chave de API é válida e não expirou.
 - Revise o status de limite de taxa e cota do provedor no painel deles.
 - Ative o log de depuração do WordPress (`WP_DEBUG_LOG`) para capturar mensagens de erro detalhadas do conector.
 
-### Um provedor não está sendo usado para fallback
+### Um provedor não está sendo usado para fallback {#a-provider-is-not-being-used-for-fallback}
 
 Reordenar arrastando altera a ordem de fallback. Confirme se o provedor que você espera receber as requisições de fallback está posicionado corretamente na lista e se sua URL de endpoint e chave de API estão corretas.
 
-### O novo cartão de provedor não se expande automaticamente
+### O novo cartão de provedor não se expande automaticamente {#new-provider-card-does-not-expand-automatically}
 
 A expansão automática requer que o JavaScript esteja ativado no seu navegador. Se o cartão não expandir ao clicar, verifique o console do navegador em busca de erros. O conteúdo do cartão está sempre acessível ao clicar no cabeçalho do cartão, mesmo que a expansão automática não seja acionada.
 
-## Changelog
+## Changelog {#changelog}
 
 Veja [Changelog](./changelog) para o histórico completo de versões.

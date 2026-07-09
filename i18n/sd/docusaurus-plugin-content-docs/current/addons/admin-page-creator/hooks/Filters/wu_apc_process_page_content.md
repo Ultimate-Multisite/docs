@@ -4,11 +4,11 @@ title: فلٽر - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# فلٽر: wu_apc_process_page_content
+# فلٽر: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 ڊولپرز کي آخري مواد ۾ تبديلي ڪرڻ جي اجازت ڏئي ٿو
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | اهڙو ايري جنهن ۾ placeholders رکيل آهن. |
 | $placeholder_count | `int` | مليل placeholders جو تعداد. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 1.4.0
-### ذريعو
+### ذريعو {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) ۾ لڪير 46 تي بيان ٿيل
 
 
-## واپس ڏئي ٿو
+## واپس ڏئي ٿو {#returns}
 تبديلي کان پوءِ مواد.

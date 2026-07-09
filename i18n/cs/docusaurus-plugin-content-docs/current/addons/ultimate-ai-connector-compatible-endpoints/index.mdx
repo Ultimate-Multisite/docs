@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints integruje API poskytovatelů AI kompatibilní s OpenAI do vaší síti WordPress multisite. Konfigurujte více AI poskytovatelů — každý se svým vlastním URL koncovým bodem (endpoint), API klíčem a výchozním modelem — a směrování požadavků s automatickým fallbackem, když je nějaký poskytovatel nedostupný.
 
-## Klíčové funkce
+## Klíčové funkce {#key-features}
 
 - **Podpora více poskytovatelů**: Přidejte více karet poskytovatelů, každá se svým vlastním URL koncovým bodem, API klíčem a výchozím modelem.
 - **Přesuzování**: Uspořádejte poskytovatele podle priority pomocí uchopovacího prvku (grip handle) na každé kartě; požadavky používají poskytovatele v pořadí.
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints integruje API poskytovatelů AI k
 - **Automatické rozbalení při přidání**: Nové karty poskytovatelů se automaticky rozbalí, takže můžete okamžitě vyplnit detaily.
 - **Cache busting pro skripty**: Skripty poskytovatelů jsou při aktualizaci pluginu vymazány z cache, aby byla zajištěna načtení nejnovější verze.
 
-## Požadavky
+## Požadavky {#requirements}
 
 - WordPress 5.3 nebo vyšší
 - PHP 7.4 nebo vyšší
 - Plugin Ultimate Multisite (aktivní)
 - OpenAI kompatibilní API koncový bod (self-hosted nebo třetí strany)
 
-## Instalace
+## Instalace {#installation}
 
 1. Nahrajte soubory addon do adresáře `/wp-content/plugins/`
 2. Aktivujte plugin v menu „Plugins“ v WordPressu
 3. Přejděte na **Ultimate Multisite → AI Connector** pro nakonfiguraci addon.
 
-## Konfigurace
+## Konfigurace {#configuration}
 
-### Nastavení více poskytovatelů
+### Nastavení více poskytovatelů {#multi-provider-setup}
 
 Konfigurační obrazovka používá rozložení založené na kartách, kde každá karta představuje jednoho AI poskytovatele. Můžete přidat tak mnoho poskytovatelů, kolik potřebujete.
 
-#### Přidání poskytovatele
+#### Přidání poskytovatele {#adding-a-provider}
 
 1. Přejděte na **Ultimate Multisite → AI Connector** v administraci sítě.
 2. Klikněte na **Add Provider**.
@@ -52,15 +52,15 @@ Konfigurační obrazovka používá rozložení založené na kartách, kde kaž
    - **Default Model** — identifikátor modelu, který se pro tento poskytovatele bude používat výchozí.
 5. Klikněte na **Save Settings**.
 
-#### Odstranění poskytovatele
+#### Odstranění poskytovatele {#removing-a-provider}
 
 Klikněte na tlačítko **Remove** na jakékoli kartě poskytovatele, abyste ji smazali. Uložte nastavení, abyste změnu aplikovali.
 
-#### Přespořádání poskytovatelů
+#### Přespořádání poskytovatelů {#reordering-providers}
 
 Přetáhněte ikonu uchopovacího prvku (⣿) na levé straně jakékoli karty poskytovatele, abyste ji přespořádali. Pořadí určuje prioritu fallbacku: požadavky jsou odeslány nejprve prvnímu poskytovateli a v případě selhání požadavku se přepnou na následující poskytovatele.
 
-### Fallback směrování
+### Fallback směrování {#fallback-routing}
 
 Pokud selže požadavek na primárního poskytovatele — kvůli časování, limitu rychlosti nebo výpadku služby — konektor automaticky pokusí znovu s další poskytovatelem v seznamu. To pokračuje po seznamu, dokud poskytovatel nezíská úspěch nebo dokud se nepokusí všechny poskytovatelé.
 
@@ -72,7 +72,7 @@ Pokud selže požadavek na primárního poskytovatele — kvůli časování, li
 
 Fallback je pro volající plugin nebo téma průhledný — obdrží úspěšnou odpověď nebo finální chybu, bez ohledu na to, kolik poskytovatelů bylo zkoušeno.
 
-### Reference konfigurace poskytovatele
+### Reference konfigurace poskytovatele {#provider-configuration-reference}
 
 | Pole | Požadováno | Popis |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Fallback je pro volající plugin nebo téma průhledný — obdrží úspěšno
 | API Key | Ano | Klíč pro ověření totožnosti pro tento poskytovatel |
 | Default Model | Ano | Identifikátor modelu používaný, když není v požadavku specifikován model |
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
-### Nejsou uvedeni žádní poskytovatelé
+### Nejsou uvedeni žádní poskytovatelé {#no-providers-are-listed}
 
 Pokud je seznam poskytovatelů prázdný po uložení, potvrďte, že:
 
@@ -91,21 +91,21 @@ Pokud je seznam poskytovatelů prázdný po uložení, potvrďte, že:
 - Váš prohlížeč neblokoval uložení stránky nastavení (zkontrolujte konzoli prohlížeče kvůli JavaScript chybám).
 - Plugin je aktivní a nacházíte se na obrazovce administrace sítě.
 
-### Požadavky selhávají pro všechny poskytovatele
+### Požadavky selhávají pro všechny poskytovatele {#requests-are-failing-for-all-providers}
 
 - Ověřte, že URL koncového bodu každého poskytovatele je zobrazeno z vašeho serveru (nejen z vašeho prohlížeče).
 - Zkontrolujte, že každý API klíč je platný a neuzpálil.
 - Projděte stav limitu rychlosti a kvóty poskytovatele v jeho dashboardu.
 - Zapněte debugování WordPressu (`WP_DEBUG_LOG`) k zachycení podrobných chybových zpráv z konektoru.
 
-### Poskytovatel není použit pro fallback
+### Poskytovatel není použit pro fallback {#a-provider-is-not-being-used-for-fallback}
 
 Přespořádání pomocí přetáhnutí mění pořadí fallbacku. Potvrďte, že poskytovatel, který očekáváte, že obdrží požadavky fallbacku, je správně umístěn v seznamu a že jeho URL koncového bodu a API klíč jsou správné.
 
-### Nová karta poskytovatele se automaticky nerozbalí
+### Nová karta poskytovatele se automaticky nerozbalí {#new-provider-card-does-not-expand-automatically}
 
 Automatické rozbalení vyžaduje, aby ve vašem prohlížeči byla povolena JavaScript. Pokud se karta při kliknutí nerozbalí, zkontrolujte konzoli prohlížeče kvůli chybám. Obsah karty je vždy dostupné kliknutím na hlavičku karty, i když automatické rozbalení neproběhne.
 
-## Changelog
+## Changelog {#changelog}
 
 Podívejte se na [Changelog](./changelog) pro kompletní historii verzí.

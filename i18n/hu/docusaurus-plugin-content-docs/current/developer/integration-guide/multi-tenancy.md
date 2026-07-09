@@ -3,11 +3,11 @@ title: Több-bérlős integráció
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Több-bérlős integráció
+# Több-bérlős integráció {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 több integrációs kapcsolódási pontot módosít a szuverén bérlők, a migráció-ellenőrzés és a bérlői életciklus automatizálása számára.
 
-## Bérlői bootstrap folyamat
+## Bérlői bootstrap folyamat {#tenant-bootstrap-flow}
 
 Azoknak az integrációknak, amelyek bérlőket hoznak létre vagy módosítanak, ezt a sorrendet kell követniük:
 
@@ -20,13 +20,13 @@ Azoknak az integrációknak, amelyek bérlőket hoznak létre vagy módosítanak
 
 Ne feltételezd, hogy egy szuverén bérlő újrahasználhatja a hálózati adatbázis-kapcsolatot. Használd a kiegészítő által biztosított bérlői nyilvántartást és íróabsztrakciókat.
 
-## SSO és REST hookok
+## SSO és REST hookok {#sso-and-rest-hooks}
 
 Az állapotmentes bérlői automatikus bejelentkezés rövid élettartamú tokeneket használ célmegjelöléssel, JTI visszajátszás elleni védelemmel, lejárati korláttal és eredethez rögzítéssel. Azoknak az integrációknak, amelyek bejelentkezési gombokat vagy távoli kezelési linkeket adnak hozzá, a támogatott SSO folyamaton keresztül kell bérlői látogatásokat generálniuk ahelyett, hogy közvetlenül bérlői bejelentkezési URL-eket állítanának össze.
 
 A hálózati oldali API audit események és napi összegzések elérhetők a szuverén bérlői átjárókhoz. Használd ezeket a naplókat, amikor olyan külső rendszereket hibakeresel, amelyek bérlői életciklus endpointokat hívnak.
 
-## Szuverén ügyfélműveleti URL-ek
+## Szuverén ügyfélműveleti URL-ek {#sovereign-customer-action-urls}
 
 Az Ultimate Multisite v2.13.0 a szuverén bérlői ügyfélműveleteket visszairányítja a fő oldalra az Account, fizetés, számlázás, számla, oldal, sablonváltás és domain-leképezési folyamatokhoz. Azoknak az integrációknak, amelyek bérlői oldali kezelési linkeket jelenítenek meg, ezeket a műveleteket a fő oldali ügyfélpanelre kell irányítaniuk, és validált visszatérési célt kell tartalmazniuk, amikor a felhasználónak a művelet befejezése után vissza kell tudnia navigálni a bérlőhöz.
 
@@ -40,7 +40,7 @@ A generált URL továbbra is szűrhető a `wu_sso_url` segítségével, amely me
 
 Ne duplikáld a tagsági, számla-, számlázási cím-, sablon- vagy domainkezelési állapotot a szuverén bérlőn belül. A bérlői Dashboardot kezeld indítóként, a fő oldali ügyfélpanelt pedig a kezelt műveletek hiteles nyilvántartási rendszerének.
 
-## Migráció-ellenőrzés
+## Migráció-ellenőrzés {#migration-verification}
 
 Miután egy migráció vagy életciklus-integráció módosítja a bérlői adatokat, futtasd az ellenőrzési kapukat:
 
@@ -49,10 +49,10 @@ Miután egy migráció vagy életciklus-integráció módosítja a bérlői adat
 
 Az integrációknak a sikertelen ellenőrzést telepítési blokkolóként kell kezelniük, és kerülniük kell a bérlő élesként való megjelölését, amíg a hiba meg nem oldódik.
 
-## Bérlő törlése
+## Bérlő törlése {#tenant-deletion}
 
 A törlési folyamatoknak a kiegészítő lebontási útvonalát kell hívniuk, hogy a bérlői adatbázis hitelesítő adatai megtisztításra kerüljenek. A külső integrációk eltávolíthatják a szolgáltatói erőforrásokat, miután a lebontás sikeres, de nem szabad törölniük a hoszt adatbázisait vagy mappáit, amíg az ellenőrzés vagy az aszinkron push feladatok még futnak.
 
-## Elavult adatbázis-router
+## Elavult adatbázis-router {#deprecated-database-router}
 
 Az örökölt `Database_Router` helyét egy elavulási stub vette át. Az új integrációknak a bérlőket az aktuális oldalrouteren és bérlői nyilvántartási API-kon keresztül kell feloldaniuk, ahelyett, hogy a régi router osztálytól függenének.

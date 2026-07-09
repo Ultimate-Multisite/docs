@@ -3,7 +3,7 @@ title: Fitantanana ireo Mpanjifa
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Fitantan Mpanjaka (Managing Customers)
+# Fitantan Mpanjaka (Managing Customers) {#managing-customers}
 
 Ny pejy **Customers** dia mampiseho ny lisitry ny mpikambana (members) nisy anao tao amin'ny tambajy. Ity pejy ity dia mampiseho fampahalalana fototra momba ny mpampiasa, toy ny anarana, adiresy mailaka, fotoana farany nifandray, ary rohy **switch to** izay ahafahanao miditra amin'ny subsite an'ilay mpampiasa ho administrator.
 

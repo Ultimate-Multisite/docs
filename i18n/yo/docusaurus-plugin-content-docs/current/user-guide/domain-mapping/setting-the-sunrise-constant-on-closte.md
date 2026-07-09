@@ -3,13 +3,13 @@ title: Ṣíṣètò Sunrise Constant lórí Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Ṣíṣètò Sunrise constant sí true lórí Closte
+# Ṣíṣètò Sunrise constant sí true lórí Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Àwọn olùpèsè host kan máa ń ti wp-config.php pa fún ìdí ààbò. Èyí túmọ̀ sí pé Ultimate Multisite kò lè ṣàtúnṣe fáìlì náà laifọwọyi láti fi àwọn constants tó ṣe pàtàkì kún un kí domain mapping àti àwọn ẹya míì lè ṣiṣẹ́. Closte jẹ́ ọ̀kan lára irú host bẹ́ẹ̀.
 
 Síbẹ̀, Closte ń pèsè ọ̀nà láti fi constants kún wp-config.php ní ọ̀nà tó ní ààbò. O kan nílò láti tẹ̀lé àwọn ìgbésẹ̀ tó wà nísàlẹ̀:
 
-## Lórí Closte dashboard
+## Lórí Closte dashboard {#on-the-closte-dashboard}
 
 Kọ́kọ́, [wọlé sínú Account Closte rẹ](https://app.closte.com/), tẹ ohun èlò menu Sites, lẹ́yìn náà tẹ link Dashboard lórí site tí o ń ṣiṣẹ́ lé lórí báyìí:
 

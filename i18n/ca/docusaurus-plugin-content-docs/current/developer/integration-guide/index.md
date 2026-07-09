@@ -3,13 +3,13 @@ title: Guia d'integració
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guia d’integració
+# Guia d’integració {#integration-guide}
 
 Aquesta guia cobreix patrons d’integració habituals amb Ultimate Multisite, incloent-hi la connexió a serveis externs, la creació de passarel·les de pagament personalitzades i la gestió de webhooks.
 
 Per a infraestructura de tenant aïllada, consulteu [Integració Multi-Tenancy](./multi-tenancy) per obtenir orientació sobre bootstrap de tenant sobirà, verificació de migracions, SSO i desmuntatge.
 
-## Integració CRM
+## Integració CRM {#crm-integration}
 
 Sincronitzeu les dades de clients amb el vostre CRM quan es registrin clients nous:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integració d’analítiques
+## Integració d’analítiques {#analytics-integration}
 
 Feu el seguiment d’esdeveniments empresarials clau al llarg del cicle de vida del client:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Passos següents
+## Passos següents {#next-steps}
 
 - [Desenvolupament de passarel·la personalitzada](./custom-gateway) — Creeu la vostra pròpia passarel·la de pagament
 - [Gestió de webhooks](./webhooks) — Creeu endpoints de webhook personalitzats

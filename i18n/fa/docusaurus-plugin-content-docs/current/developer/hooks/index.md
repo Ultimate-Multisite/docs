@@ -3,11 +3,11 @@ title: مرجع هوک‌ها
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# مرجع Hooks
+# مرجع Hooks {#hooks-reference}
 
 مستندات تولیدشدهٔ خودکار برای همهٔ **59 action** و **118 filter** در Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — پیش از هدایت احراز هویت اجرا می‌شود.
 - [set_auth_cookie](./Actions/set_auth_cookie) — بلافاصله پیش از تنظیم کوکی احراز هویت اجرا می‌شود.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — پس از ذخیره شدن یک شیء در پایگاه داده اجرا می‌شود.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — به توسعه‌دهندگان plugin اجازه می‌دهد اقداماتی را به فرایند باز کردن قفل اضافه کنند.
 
-## فیلترها
+## فیلترها {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — مدت دوره انقضای کوکی احراز هویت را فیلتر می‌کند.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — طرح تغییر مسیر احراز هویت را فیلتر می‌کند.

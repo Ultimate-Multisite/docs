@@ -4,21 +4,21 @@ title: Действие - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# Действие: wp_ultimo_ptm_page_edit_footer
+# Действие: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
 
 Позволяет разработчикам плагинов добавлять скрипты в нижнюю часть страницы
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $ | `object` | Объект, содержащий информацию |
 | $ | `\WU_Page` | Экземпляр Multisite Ultimate Page |
 
-### С версии
+### С версии {#since}
 
 - 1.8.2
 
-### Источник
+### Источник {#source}
 
 Определено в [`views/base/edit.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/edit.php#L228) на строке 228

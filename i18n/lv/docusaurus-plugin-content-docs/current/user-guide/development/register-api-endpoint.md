@@ -3,7 +3,7 @@ title: Reģistrēt API galvenkoju
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API galvenis Ultimate Multisite
+# API galvenis Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Šajā instrukcijā jūs iepaziniete, kā izmantot Ultimate Multisite /register API galveni, lai veicētu visu uzsākšanas procesu jaunam klientam savā tīklā un kā to darīt ar Zapieru.
 
@@ -29,11 +29,11 @@ Izvēlieties **Enable API** un saņemiet savas API kredences.
 
 Tagad, atspējiet galveni un izveidiet reģistrācijas darbību Zapierā.
 
-## Galvena ķermeņa parametri (Endpoint body parameters)
+## Galvena ķermeņa parametri (Endpoint body parameters) {#endpoint-body-parameters}
 
 Atzīmēsim minimālu informāciju, ko mums ir jāsūtī uz galvenu. Šajā rakstā beigās jūs atrasties pilnu saskars.
 
-### Klient (Customer)
+### Klient (Customer) {#customer}
 
 Šis ir informācija, kas nepieciešama lietotāja un Ultimate Multisite klienta izveidošanas procesam:
 
@@ -43,25 +43,25 @@ Var ir iespējams sūtīt klientu ID, kas izveidots jūsu tīklā. Ja tas nav ie
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Pilnvaras (Membership)**
+### **Pilnvaras (Membership)** {#membership}
 
 Mums šajā objektā nepieciešama tikai Pilnvaras statusa informācija.
 
 "membership" { "status" : "string", // viens no "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produkti**
+### **Produkti** {#products}
 
 Produkti tiek sniegti ar sarakstu ar vienu vai vairākus produktu ID no jūsu tīkla. Brīdinājums, šis endpoint neizveido produktus. Izskatīt Ultimate Multisite dokumentāciju, lai labāk saprastu produktu izveide endpointu.
 
 **"products" : [1,2],**
 
-### **Maksas (Payment)**
+### **Maksas (Payment)** {#payment}
 
 Līdz kā Pilnvaras, mums pietiek statusa informācija.
 
 **"payment" { "status" : "string", // viens no "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### **Vieta (Site)**
+### **Vieta (Site)** {#site}
 
 Un lai aizvērtu ķermeņa, mums nepieciešams vietas URL un nosaukums, ab viens iekļauts Vietas objektā.
 
@@ -69,13 +69,13 @@ Un lai aizvērtu ķermeņa, mums nepieciešams vietas URL un nosaukums, ab viens
 
 Reiz register endpoint atgriezenās ar sarakstu ar jauno izveidoto pilnvaras informāciju.
 
-## Akcijas izveide Zapier-ā
+## Akcijas izveide Zapier-ā {#creating-an-action-in-zapier}
 
 Ar šī jauna un spēcīgāka konta izveides endpointa, jūs arī saisisat jaunu akciju Zapier-ā.
 
 Vai zināt, kā izmantot un izbaudīt visu, ko piedāvā Zapieras jauns versija? Lai uzzināt vairāk šeit. (saite?)
 
-### Akcijas izveide
+### Akcijas izveide {#creating-an-action}
 
 Lai labāk ilustrētu, kā izmantot reģistrācijas endpointu ar Zapieru, izveidojiet integrāciju ar Google Forms. Kad šis forma tiek aizpildīta un informācija tiek saglabāta formātā atbildēm, sistēmā Ultimate Multisite tiek izveidots jauns biedrs.
 
@@ -105,7 +105,7 @@ Kad informācija ir iestatīta, turpinājiet galveno pārbaudi. Pās savlaicīga
 
 Pārbaudiet savu jaunu Zap un tas jāveic veiksmīgi. Ja notiek kļūda, pārbaudiet visus laukus un vai tie tiek nosūtīti pareizi. Tā kā informācijas ir daudz, dažas lietas var neuzmanigt.
 
-### Pilns endpointa parametri
+### Pilns endpointa parametri {#complete-endpoint-parameters}
 
 Šeit ir pilna saucēšana un visie iespējami lauki, kas var tikties nosūtīti.
 

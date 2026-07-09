@@ -3,9 +3,9 @@ title: Vrystellingsnotas
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Vrystellingsnotas
+# Vrystellingsnotas {#release-notes}
 
-## Weergawe 2.13.0 — Vrygestel op 2026-06-05
+## Weergawe 2.13.0 — Vrygestel op 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nuut: Soewereine-huurder-ondersteuning bygevoeg vir kliënt-Account, checkout, fakturering, site, faktuur-, sjabloonwissel- en domeinkarteringvloei sodat huurdernetwerke kliënte kan terugstuur na die hoof-site vir bestuurde aksies.
 - Nuut: Hernuwingsbewys-kontroles bygevoeg vir herhalende lidmaatskappe sodat gateways outomatiese hernuwing kan deaktiveer wanneer ’n gestoorde faktureringsooreenkoms, subscription of vault token ontbreek.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Regstelling: Lidmaatskaphernuwings, vervaldatumvertoning en randgevalle vir betalingsinvordering vermy nou onmiddellike verval, ineenstortings of gemiste vereiste betalings.
 - Verbeter: WordPress-versoenbaarheid word tot 7.0 getoets, produksie-Vue-bates word herbou vanaf npm-bronne, en Cypress-einde-tot-einde-dekking oefen nou meer checkout-, opstelling-, SSO- en gateway-vloei uit.
 
-## Weergawe 2.12.0 — Vrygestel op 2026-05-15
+## Weergawe 2.12.0 — Vrygestel op 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nuut: Hostinger (hPanel) bygevoeg as ’n ondersteunde host-verskaffer met domeinkartering-integrasie
 - Nuut: Site Exporter hanteer nou netwerk-invoerbundels vir vaartbelynde netwerk-wye site-herstel
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Regstelling: Site Exporter CLI behou nou die korrekte versteknetwerk-site-seleksie
 - Verbeter: Gebundelde wp-cli uit die plugin-pakket verwyder, wat plugin-grootte verminder
 
-## Weergawe 2.11.0 — Vrygestel op 2026-05-11
+## Weergawe 2.11.0 — Vrygestel op 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nuut: Site-uitvoere bundel nou ’n selflaaiende `index.php` sodat die ZIP op ’n vars host geïnstalleer kan word sonder ’n aparte plugin-installasie.
 - Nuut: Netwerkuitvoer laat administrateurs alle subsites in ’n enkele argief uitvoer vanaf die Site Export-adminbladsy.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nuut: Checkout-vormredigeerder waarsku wanneer ’n produk bygevoeg word sonder ’n vereiste veld wat gekonfigureer is.
 - Nuut: Invoer/Uitvoer-instellingsoortjie beskryf nou duidelik sy omvang en skakel direk na die Site Export-nutsmiddel.
 
-## Weergawe 2.10.0 — Vrygestel op 2026-05-05
+## Weergawe 2.10.0 — Vrygestel op 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nuut: PayPal-begeleide opstellingsassistent vir handmatige geloofsbriefinvoer met OAuth-vlaghek vir naatlose gateway-konfigurasie.
 - Nuut: Kliëntpaneel vir sjabloonwisseling herontwerp met huidige-sjabloon-kaart, volgehoue rooster en **Stel huidige sjabloon terug**-knoppie.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Regstelling: Gefiltreerde SSO-pad gerespekteer oor alle aanmeldvloei.
 - Regstelling: Leë site-identiteitsopsies behou wanneer gestoor word.
 
-## Weergawe 2.9.0 — Vrygestel op 2026-04-30
+## Weergawe 2.9.0 — Vrygestel op 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nuut: Enkel-site-uitvoer en -invoer bygevoeg onder **Nutsmiddels > Uitvoer & Invoer**.
 - Regstelling: Uitvoer-ZIP-lêers word nou deur ’n geverifieerde aflaai-endpoint bedien.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Regstelling: Toer-ID’s genormaliseer na onderstrepings in gebruikersinstellingsleutels.
 - Verbeter: ZipArchive word nou gebruik in plaas van Alchemy/Zippy vir beter versoenbaarheid.
 
-## Weergawe 2.8.0 — Vrygestel op 2026-04-29
+## Weergawe 2.8.0 — Vrygestel op 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nuut: Enable Jumper-wisselknoppie by Other Options-instellings-UI gevoeg.
 - Nuut: Status-kolom by die lys-tabel vir checkout-vorms gevoeg.

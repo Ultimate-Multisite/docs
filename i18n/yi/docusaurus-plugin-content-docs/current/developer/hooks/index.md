@@ -3,11 +3,11 @@ title: הוקס־רעפֿערענץ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks רעפֿערענץ
+# Hooks רעפֿערענץ {#hooks-reference}
 
 אויטאָמאַטיש גענערירטע דאָקומענטאַציע פֿאַר אַלע **59 אַקציעס** און **118 פֿילטערס** אין Ultimate Multisite.
 
-## אַקציעס
+## אַקציעס {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — ווערט אויסגעפֿירט איידער דער אָטענטיפֿיקאַציע־ווײַטערפֿיר.
 - [set_auth_cookie](./Actions/set_auth_cookie) — ווערט אויסגעפֿירט גלײַך איידער דער אָטענטיפֿיקאַציע־קיכל ווערט באַשטימט.
@@ -69,7 +69,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ווערט אויסגעפֿירט נאָך דעם ווי אַן אָביעקט ווערט אויפֿגעהיטן אין דער דאַטנבאַזע.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן אַקציעס צום אויפֿשליס־פּראָצעס.
 
-## פֿילטערס
+## פֿילטערס {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — פֿילטערט די געדויער פֿון דער אויסגיין־פּעריאָד פֿון דעם אָטענטיפֿיקאַציע־קיכל.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — פֿילטערט דעם אָטענטיפֿיקאַציע־ווײַטערפֿיר־סכעמע.

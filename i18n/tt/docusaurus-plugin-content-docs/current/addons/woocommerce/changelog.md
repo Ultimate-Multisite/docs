@@ -3,7 +3,7 @@ title: WooCommerce интеграциясе үзгәрешләр журналы
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce интеграциясе үзгәрешләр журналы
+# WooCommerce интеграциясе үзгәрешләр журналы {#woocommerce-integration-changelog}
 
 Version 2.2.0 - 2026-07-01 чыгарылды
 * Яңа: Ultimate Multisite салым суммалары хәзер түләү битендә аерым WooCommerce җыем юллары булып күренә, бу түләүгә кадәр салым нәтиҗәләрен аңлаешлырак итә.

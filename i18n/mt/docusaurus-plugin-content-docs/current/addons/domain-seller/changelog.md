@@ -3,7 +3,7 @@ title: Reġistru tal-Bidliet tal-Bejjiegħ tad-Dominji
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Reġistru tal-bidliet ta’ Domain Seller
+# Reġistru tal-bidliet ta’ Domain Seller {#domain-seller-changelog}
 
 Verżjoni 1.3.0 - Rilaxxata fit-2026-06-02
 - Ġdid: Miżjuda twissija tan-network-admin meta l-bilanċ tar-reseller ta’ HostAfrica jinżel wisq
@@ -134,20 +134,20 @@ Verżjoni 1.0.0 - Rilaxxata fil-2025-09-28
 * **Irranġat:** Il-kodiċi v1 skadut kollu ġie aġġornat għall-istandards v2
 * **Imneħħi:** Kompatibbiltà legacy v1 (bidla li tkisser il-kompatibbiltà)
 
-### Verżjonijiet Preċedenti (v1 Legacy)
+### Verżjonijiet Preċedenti (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Verżjoni 0.0.3 - 20/08/2019
+### Verżjoni 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Irranġat: Inkompatibbiltà ma' Groundhogg CRM
 * Nota: Din kienet l-aħħar release kompatibbli ma' v1
 
-### Verżjoni 0.0.2 - 07/12/2018
+### Verżjoni 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Irranġat: Tneħħa l-qasam License Key
 * Irranġat: Tabs tal-plan nieqsa meta l-plugin tal-karatteristika jkun attiv
 * Imtejjeb: Ġiet miżjuda buttuna skip fuq il-qasam tar-reġistrazzjoni
 
-### Verżjoni 0.0.1 - Rilaxx Inizjali
+### Verżjoni 0.0.1 - Rilaxx Inizjali {#version-001---initial-release}
 
 * Integrazzjoni bażika ta' OpenSRS għal WP Ultimo v1
 * Tfittxija u reġistrazzjoni sempliċi tad-dominju

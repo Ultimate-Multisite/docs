@@ -3,13 +3,13 @@ title: 結帳欄位與客戶 DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# 結帳欄位與客戶 DNS 管理
+# 結帳欄位與客戶 DNS 管理 {#checkout-field-and-customer-dns-management}
 
-## 網域選擇結帳欄位
+## 網域選擇結帳欄位 {#the-domain-selection-checkout-field}
 
 **網域選擇**欄位是一個結帳元素，讓客戶選擇如何取得其網站的網域。將它加入任何結帳表單即可啟用網域銷售。
 
-### 將欄位加入結帳表單
+### 將欄位加入結帳表單 {#adding-the-field-to-a-checkout-form}
 
 1. 前往 **網路管理 › Ultimate Multisite › 結帳表單**
 2. 開啟或建立結帳表單
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. 設定欄位選項（見下方）
 6. 儲存表單
 
-### 欄位選項
+### 欄位選項 {#field-options}
 
 **網域模式** — 選擇客戶會看到哪些分頁。每個模式都可以獨立啟用或停用：
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **網域產品** — 可選擇將此欄位固定到特定網域產品。若未設定，該 addon 會根據客戶搜尋的 TLD 自動選擇相符產品。
 
-### 註冊人聯絡欄位
+### 註冊人聯絡欄位 {#registrant-contact-fields}
 
 當客戶選擇**註冊新網域**分頁時，結帳表單會在行內新增註冊人聯絡欄位：
 
@@ -43,11 +43,11 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 所有註冊商都需要這些資訊，且會在發出註冊 API 呼叫前進行驗證。電話號碼會自動格式化為註冊商預期的 `+CC.NNN` 國際格式。
 
-### 自動產生的網站 URL
+### 自動產生的網站 URL {#auto-generated-site-url}
 
 當客戶註冊或對應網域時，網站 URL 欄位會自動以所選網域填入。客戶不需要填寫單獨的 URL 欄位。
 
-### 搜尋行為
+### 搜尋行為 {#search-behaviour}
 
 - 客戶輸入時，會透過 AJAX 即時檢查網域可用性
 - 當偏好的網域不可用時，會顯示替代 TLD 建議
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## 客戶 DNS 管理
+## 客戶 DNS 管理 {#customer-dns-management}
 
 客戶可以從**我的 Account**頁面，在其網域項目下管理已註冊網域的 DNS 記錄。
 
-### 支援的記錄類型
+### 支援的記錄類型 {#supported-record-types}
 
 | 類型 | 用途 |
 |---|---|
@@ -91,11 +91,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 | **MX** | 設定郵件交換伺服器 |
 | **TXT** | 新增 SPF、DMARC、驗證或其他文字記錄 |
 
-### 哪些供應商支援 DNS 管理？
+### 哪些供應商支援 DNS 管理？ {#which-providers-support-dns-management}
 
 DNS 管理（新增、編輯、刪除記錄）可搭配 **OpenSRS**、**ResellerClub**、**Enom**、**HostAfrica** 和 **Openprovider** 使用。**Hostinger** 網域可透過 Domain Seller 更新名稱伺服器；託管網域的 DNS 記錄由核心 Hostinger 網域對應整合管理。Namecheap、GoDaddy 和 NameSilo 網域會顯示狀態與到期資訊，但 DNS 必須直接在註冊商的控制面板中管理。
 
-### 預設 DNS 記錄
+### 預設 DNS 記錄 {#default-dns-records}
 
 你可以設定預設 DNS 記錄，於網域註冊時自動套用。前往**設定 › Domain Seller › 預設 DNS 記錄**。
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### 管理員：檢視與編輯 DNS
+### 管理員：檢視與編輯 DNS {#admin-viewing-and-editing-dns}
 
 網路管理員可以從 **網路管理 › Ultimate Multisite › 網域** 中的網域編輯頁面，檢視和編輯任何客戶網域的 DNS 記錄。

@@ -3,13 +3,13 @@ title: Ìrànlọ́wọ́ Ìdàgbàsókè Àkànṣe
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Báwo ni a ṣe le Gba Iranlọwọ Idagbasoke Adani lati ọdọ Codeable?
+# Báwo ni a ṣe le Gba Iranlọwọ Idagbasoke Adani lati ọdọ Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Nígbà míì, a máa nílò àtúnṣe adani alárinrin gan-an láti jẹ́ kí ìṣàn nẹ́tíwọ́ọ̀kì wa ṣiṣẹ́ gẹ́gẹ́ bí a ṣe fẹ́. Bí ìyẹn bá jẹ́ ohun tí o ń wá, a ṣàbẹ̀wò fún [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), ibi tí o ti lè rí àwọn olùgbéjáde tó ní ìrírí pẹ̀lú amọ̀ja Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) jẹ́ pẹpẹ tí ń so àwọn oníbàárà pọ̀ mọ́ àwọn olùgbéjáde alágbèéká WordPress tó tóótun, tí wọ́n lè ṣiṣẹ́ lórí àwọn iṣẹ́ akanṣe ti ìwọ̀n èyíkéyìí. Wọ́n ní ìlànà ìbéèrè tó ṣọ́ra gan-an láti rí dájú pé a bá ọ mu pọ̀ mọ́ àwọn amòye tó tóótun ní pàtàkì fún iṣẹ́ tí o ní lọ́kàn.
 
-### Báwo ni a ṣe lè dá iṣẹ́ akanṣe kan sílẹ̀ ní Codeable?
+### Báwo ni a ṣe lè dá iṣẹ́ akanṣe kan sílẹ̀ ní Codeable? {#how-to-create-a-project-in-codeable}
 
 Kọ́kọ́, lọ sí [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) kí o sì tẹ bọtini **Bẹrẹ Iṣẹ́ Akanṣe**.
 

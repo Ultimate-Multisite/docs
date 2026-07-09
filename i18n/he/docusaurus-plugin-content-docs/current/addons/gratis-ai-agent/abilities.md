@@ -3,7 +3,7 @@ title: מדריך עזר ליכולות
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# הפניית יכולות
+# הפניית יכולות {#abilities-reference}
 
 יכולות הן הפעולות האטומיות ש־Gratis AI Agent יכול להפעיל בהתקנת WordPress שלך. כל יכולת היא מחלקת PHP רשומה שחושפת סכמת JSON — הסוכן קורא את הסכמה הזו בזמן ריצה כדי להבין אילו פרמטרים נדרשים ומה היכולת מחזירה.
 
@@ -11,11 +11,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## סוגי פוסטים מותאמים אישית
+## סוגי פוסטים מותאמים אישית {#custom-post-types}
 
 יכולות אלה מנהלות סוגי פוסטים מותאמים אישית (CPTs) שנרשמו דרך הסוכן. הרישומים נשמרים בטבלת האפשרויות של WordPress כך שהם שורדים השבתה והפעלה מחדש של plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 רושמת סוג פוסט מותאם אישית חדש.
 
@@ -50,7 +50,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 מחזירה את כל סוגי הפוסטים המותאמים אישית שנרשמו על ידי הסוכן.
 
@@ -73,7 +73,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 מבטלת רישום של סוג פוסט מותאם אישית שנרשם בעבר על ידי הסוכן. פוסטים קיימים מסוג זה נשארים במסד הנתונים אך אינם נגישים עוד דרך סוג הפוסט.
 
@@ -87,11 +87,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## טקסונומיות מותאמות אישית
+## טקסונומיות מותאמות אישית {#custom-taxonomies}
 
 יכולות אלה מנהלות טקסונומיות מותאמות אישית. כמו CPTs, רישומי טקסונומיה נשמרים.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 רושמת טקסונומיה מותאמת אישית חדשה.
 
@@ -123,7 +123,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 מחזירה את כל הטקסונומיות המותאמות אישית שנרשמו על ידי הסוכן.
 
@@ -146,7 +146,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 מבטלת רישום של טקסונומיה מותאמת אישית שנרשמה בעבר על ידי הסוכן.
 
@@ -160,11 +160,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## מערכת עיצוב
+## מערכת עיצוב {#design-system}
 
 יכולות מערכת העיצוב משנות את ההצגה החזותית של אתר ה־WordPress — החל מ־CSS מותאם אישית ועד תבניות בלוקים ולוגו האתר.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 מוסיפה CSS ל־`<head>` של האתר באמצעות `wp_add_inline_style`. ה־CSS נשמר באפשרות `gratis_ai_agent_custom_css` ומוסר מהתור בצורה נקייה כאשר היכולת מאופסת.
 
@@ -190,7 +190,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 רושמת תבנית בלוקים לשימוש חוזר בספריית התבניות של WordPress.
 
@@ -209,7 +209,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 מציגה את כל תבניות הבלוקים שנרשמו על ידי הסוכן.
 
@@ -231,7 +231,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 מגדיר את לוגו האתר של WordPress למזהה קובץ מצורף נתון או לכתובת URL של תמונה מרוחקת. כאשר מסופקת כתובת URL, התמונה יורדת ומיובאת אל ספריית המדיה.
 
@@ -248,7 +248,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 מחיל ערכת צבע/טיפוגרפיה מוגדרת מראש בעלת שם על `theme.json` (או `global-styles`) של ערכת העיצוב הפעילה. הערכות המוגדרות מראש הן חבילות שנאצרו ומתוחזקות על ידי צוות Gratis AI Agent.
 
@@ -273,11 +273,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## סגנונות גלובליים
+## סגנונות גלובליים {#global-styles}
 
 יכולות סגנונות גלובליים קוראות וכותבות ערכי theme.json דרך API הסגנונות הגלובליים של WordPress, ומשפיעות על כל הבלוקים והתבניות בכל האתר.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 מחזיר את תצורת הסגנונות הגלובליים הנוכחית.
 
@@ -291,7 +291,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 מעדכן ערך אחד או יותר בתצורת הסגנונות הגלובליים.
 
@@ -318,7 +318,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 מאפס את כל שינויי הסגנונות הגלובליים שהוחלו על ידי הסוכן, ומשחזר את ברירות המחדל של ערכת העיצוב.
 
@@ -328,11 +328,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## תפריטי ניווט
+## תפריטי ניווט {#navigation-menus}
 
 יכולות תפריט ניווט יוצרות ומנהלות תפריטי ניווט של WordPress ואת הפריטים שלהם.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 יוצר תפריט ניווט חדש של WordPress.
 
@@ -347,7 +347,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 משנה שם של תפריט או מקצה אותו מחדש למיקום בערכת העיצוב.
 
@@ -363,7 +363,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 מוסיף פריט לתפריט ניווט קיים.
 
@@ -383,7 +383,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 מסיר פריט מתפריט ניווט.
 
@@ -397,7 +397,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 מציג את כל תפריטי הניווט של WordPress, כולל המיקומים בערכת העיצוב שהוקצו להם.
 
@@ -420,11 +420,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ניהול אפשרויות
+## ניהול אפשרויות {#options-management}
 
 יכולות אפשרויות קוראות וכותבות אפשרויות WordPress דרך `get_option` / `update_option`. רשימת חסימה בטיחותית מובנית מונעת שינוי מקרי של הגדרות קריטיות.
 
-### `get_option`
+### `get_option` {#getoption}
 
 קורא אפשרות WordPress.
 
@@ -440,7 +440,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 כותב אפשרות WordPress.
 
@@ -458,7 +458,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 מוחק אפשרות WordPress.
 
@@ -474,7 +474,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 מציג אפשרויות WordPress שתואמות לתבנית.
 
@@ -498,11 +498,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## ניהול תוכן
+## ניהול תוכן {#content-management}
 
 יכולות ניהול תוכן יוצרות ועורכות פוסטים ועמודים של WordPress. מזהי פוסטים מוחזרים כדי ששלבים עוקבים בתוכניות מרובות יכולות יוכלו להפנות לתוכן שנוצר.
 
-### `create_post`
+### `create_post` {#createpost}
 
 יוצר פוסט WordPress חדש, עמוד, או רשומת סוג פוסט מותאם אישית.
 
@@ -537,7 +537,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 מעדכן פוסט או עמוד WordPress קיים.
 
@@ -567,7 +567,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 יוצר מספר פוסטים בקריאת יכולת יחידה, ומצמצם סבבי תקשורת במהלך בניית אתרים או ייבוא תוכן בכמות גדולה. הפוסטים נוצרים ברצף; אם אחד נכשל, האחרים ממשיכים והכשל מדווח במערך התוצאות.
 
@@ -619,7 +619,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 מקצה תמונה ראשית (תמונה ממוזערת של פוסט) לפוסט או לעמוד קיים. מקבל מזהה קובץ מצורף קיים מספריית המדיה או URL של תמונה מרוחקת; כאשר מסופק URL, התמונה מורדת ומיובאת אוטומטית.
 
@@ -638,7 +638,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 יוצר טופס יצירת קשר באמצעות תוסף הטפסים הפעיל (Contact Form 7, WPForms, Fluent Forms, או Gravity Forms, בהתאם למה שמותקן). מחזיר shortcode שניתן להטמיע בכל פוסט או עמוד.
 
@@ -691,11 +691,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## סקירה חזותית
+## סקירה חזותית {#visual-review}
 
 יכולות סקירה חזותית מאפשרות לסוכן ללכוד צילומי מסך של עמודים חיים ולנתח אותם, וכך לאפשר סקירת עיצוב אוטונומית, השוואות לפני/אחרי ובדיקות רגרסיה חזותית ללא צורך בתוסף דפדפן כלשהו.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 לוכד צילום מסך של עמוד WordPress בכתובת URL נתונה באמצעות דפדפן ללא ממשק גרפי בצד השרת. התמונה נשמרת בספריית המדיה ומוחזרת כתובת URL של CDN.
 
@@ -724,7 +724,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 מקבל שני צילומי מסך ומחזיר ציון הבדל חזותי וכן תמונת הבדל שמדגישה אזורים שהשתנו. שימושי לאישור ששינוי עיצוב הניב את התוצאה הצפויה או לזיהוי רגרסיות לא מכוונות.
 
@@ -754,7 +754,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 לוכד צילום מסך של עמוד ושולח אותו למודל השפה לניתוח חזותי. מחזיר הערכה מובנית המכסה פריסה, טיפוגרפיה, שימוש בצבעים ושיקולי נגישות.
 
@@ -785,11 +785,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## יכולות ניתנות להתקנה
+## יכולות ניתנות להתקנה {#installable-abilities}
 
 מרשם היכולות הניתנות להתקנה מאפשר להרחיב את הסוכן עם חבילות יכולות נוספות המופצות כתוספי WordPress. כל חבילה רושמת יכולת אחת או יותר באמצעות API היכולות הסטנדרטי.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 מחזיר את הקטלוג של חבילות יכולות הזמינות להתקנה מהמרשם.
 
@@ -818,7 +818,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 מוריד ומפעיל חבילת יכולת מהרישום.
 
@@ -832,7 +832,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 מתשאל את רישום היכולות כדי למצוא את ה-plugin הטוב ביותר עבור מקרה שימוש מתואר, ובאופן אופציונלי מתקין אותו.
 

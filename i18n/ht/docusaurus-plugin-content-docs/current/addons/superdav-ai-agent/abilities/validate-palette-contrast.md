@@ -3,15 +3,15 @@ title: Valide kontras palèt la
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valide Kontras Palèt
+# Valide Kontras Palèt {#validate-palette-contrast}
 
 Kapasite **Validate Palette Contrast** la tcheke pè koulè nan palèt konsepsyon ou pou konfòmite ak WCAG (Web Content Accessibility Guidelines) anvan li aplike yo sou theme ou.
 
-## Apèsi
+## Apèsi {#overview}
 
 Kapasite sa a asire konbinezon koulè sit ou a satisfè estanda aksesibilite yo lè li valide rapò kontras ant koulè tèks ak koulè fon. Li ede anpeche konbinezon koulè ki ta ka difisil pou itilizatè ki gen pwoblèm vizyèl li.
 
-## Fòma Antre
+## Fòma Antre {#input-format}
 
 Kapasite a aksepte yon palèt koulè kòm antre:
 
@@ -35,7 +35,7 @@ Kapasite a aksepte yon palèt koulè kòm antre:
 }
 ```
 
-### Paramèt
+### Paramèt {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Kapasite a aksepte yon palèt koulè kòm antre:
 | `wcag_level` | string | No | Nivo konfòmite WCAG: "A", "AA" (default), oswa "AAA" |
 | `pairs_to_check` | array | No | Pè koulè espesifik pou valide (pa egzanp, `["primary-text", "background-text"]`) |
 
-## Nivo WCAG yo Tcheke
+## Nivo WCAG yo Tcheke {#wcag-levels-checked}
 
 Kapasite a valide rapò kontras yo dapre estanda WCAG:
 
@@ -56,7 +56,7 @@ Kapasite a valide rapò kontras yo dapre estanda WCAG:
 - **Tèks Nòmal** — tèks ki pi piti pase 18pt (oswa 14pt an gra)
 - **Gwo Tèks** — tèks 18pt oswa pi gwo (oswa 14pt an gra oswa pi gwo)
 
-## Chema Sòti
+## Chema Sòti {#output-schema}
 
 Kapasite a retounen yon rapò validasyon detaye:
 
@@ -95,7 +95,7 @@ Kapasite a retounen yon rapò validasyon detaye:
 }
 ```
 
-### Chan Sòti
+### Chan Sòti {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Kapasite a retounen yon rapò validasyon detaye:
 | `status` | string | "pass" oswa "fail" pou chak pè |
 | `recommendations` | array | Sijesyon pou amelyore pè ki echwe yo |
 
-## Egzanp Itilizasyon
+## Egzanp Itilizasyon {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Kapasite a valide tout konbinezon koulè yo epi li retounen:
 - ✅ Fon + Tèks: rapò 12.1:1 (pase WCAG AAA)
 - An jeneral: Konfòm ak WCAG AA
 
-## Entegrasyon ak Theme Builder
+## Entegrasyon ak Theme Builder {#integration-with-theme-builder}
 
 Lè w ap itilize seleksyon direksyon-konsepsyon Theme Builder la, kapasite Validate Palette Contrast la:
 
@@ -129,7 +129,7 @@ Lè w ap itilize seleksyon direksyon-konsepsyon Theme Builder la, kapasite Valid
 4. Bay rekòmandasyon pou pè ki pa konfòm yo
 5. Anpeche aplikasyon konbinezon koulè ki pa aksesib
 
-## Pi Bon Pratik
+## Pi Bon Pratik {#best-practices}
 
 - **Kòmanse ak nivo AA** — WCAG AA se estanda a pou pifò sit entènèt
 - **Teste anvan ou aplike** — valide palèt ou anvan ou angaje w nan yon konsepsyon
@@ -137,7 +137,7 @@ Lè w ap itilize seleksyon direksyon-konsepsyon Theme Builder la, kapasite Valid
 - **Konsidere preferans itilizatè yo** — kèk itilizatè ka gen plis sansiblite ak koulè
 - **Sèvi ak zouti tcheke kontras** — konbine kapasite sa a ak zouti navigatè pou verifikasyon
 
-## Pè ki Echwe ak Rekòmandasyon
+## Pè ki Echwe ak Rekòmandasyon {#failing-pairs-and-recommendations}
 
 Si yon pè koulè echwe validasyon, kapasite a bay rekòmandasyon:
 
@@ -155,7 +155,7 @@ Si yon pè koulè echwe validasyon, kapasite a bay rekòmandasyon:
 }
 ```
 
-## Kapasite Ki Gen Rapò
+## Kapasite Ki Gen Rapò {#related-abilities}
 
 - [Jenere Logo SVG](./generate-logo-svg.md) — kreye logo ak palèt koulè valide ou a
 - [Kreye Meni](./create-menu.md) — bati navigasyon ak koulè aksesib

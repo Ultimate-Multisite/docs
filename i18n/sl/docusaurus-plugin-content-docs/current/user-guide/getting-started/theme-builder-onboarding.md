@@ -3,11 +3,11 @@ title: Potok vvoja za Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Potok za vdrožanje Theme Builderja
+# Potok za vdrožanje Theme Builderja {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 predstavlja usmerjen **potek za vdrožanje Theme Builderja**, ki vam pomaga ustvariti prilagodljiv temo blokov, med vašo začetno nastavitvijo. To zamenja staro način Site Builderja s bolj fleksibilnim pristopom, ki ga pomaga agent.
 
-## Kaj je Potek za vdrožanje Theme Builderja?
+## Kaj je Potek za vdrožanje Theme Builderja? {#what-is-the-theme-builder-onboarding-flow}
 
 Potek za vdrožanje Theme Builderja je interaktiv wizard za nastavitve, ki:
 
@@ -18,9 +18,9 @@ Potek za vdrožanje Theme Builderja je interaktiv wizard za nastavitve, ki:
 
 Potek je močan **Setup Assistant agent**, ki postavlja pojasbljiva vprašanja in postopno gradi vašo temu.
 
-## Začetek z Potkom za vdrožanje Theme Builderja
+## Začetek z Potkom za vdrožanje Theme Builderja {#starting-the-theme-builder-onboarding}
 
-### Nastavitve pri prvi uporabi (First-Run Setup)
+### Nastavitve pri prvi uporabi (First-Run Setup) {#first-run-setup}
 
 Ko prvič zagotovite Superdav AI Agent na novem WordPress nastavitvi, boste videli:
 
@@ -35,7 +35,7 @@ Kaj želite storiti?
 
 Izberite **"Ustvari prilagodljivo temu"**, da vstopite v potek za vdrožanje Theme Builderja.
 
-### Ručna aktivacija (Manual Activation)
+### Ručna aktivacija (Manual Activation) {#manual-activation}
 
 Potek za vdrožanje Theme Builderja lahko začnete tudi v katerem koli času, če zahtevate:
 
@@ -49,9 +49,9 @@ ali
 "Pomagaj mi ustvariti prilagodljivo temu"
 ```
 
-## Koraki potka
+## Koraki potka {#the-onboarding-steps}
 
-### Korak 1: Izbira načina (Mode Selection)
+### Korak 1: Izbira načina (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent postavlja vprašanje glede vaše prednosti:
 
@@ -63,7 +63,7 @@ Kako želite graditi svojo temu?
 
 **Usmerjen način** je priporočljiv za večino uporabnikov; agent predlaga dizajnerske predloge na podlagi vaše industrije in ciljev.
 
-### Korak 2: Specifikacija spletnega mesta (Site Specification)
+### Korak 2: Specifikacija spletnega mesta (Site Specification) {#step-2-site-specification}
 
 Boste vprašani glede vašega spletnega mesta:
 
@@ -74,7 +74,7 @@ Boste vprašani glede vašega spletnega mesta:
 
 Tisto informacije shranjuje v vašo **site_brief** memorijo, ki jo agenti bodo uporabili v prihodnjih seansah.
 
-### Korak 3: Odločitve o Design Systemu
+### Korak 3: Odločitve o Design Systemu {#step-3-design-system-decisions}
 
 Agent vas vodi skozi izbiro design tokenov:
 
@@ -83,7 +83,7 @@ Agent vas vodi skozi izbiro design tokenov:
 - **Razmaki**: Kompakti, normalni ali prostori lay-out
 - **Animacija**: Animacije in prehod (če želite)
 
-### Korak 4: Generiranje Teme
+### Korak 4: Generiranje Teme {#step-4-theme-generation}
 
 Agent Setup Assistant vam ustvari custom block theme z naslednjimi elementami:
 
@@ -92,7 +92,7 @@ Agent Setup Assistant vam ustvari custom block theme z naslednjimi elementami:
 - Custom blok stili, ki se usklajujejo z vašim design systemom
 - Metadata teme in deklaracije podpore WordPressa
 
-### Korak 5: Aktivacija in Preverjanje
+### Korak 5: Aktivacija in Preverjanje {#step-5-activation-and-verification}
 
 Tema se samodeaktivira, in boste videli:
 
@@ -107,7 +107,7 @@ Tema se samodeaktivira, in boste videli:
 
 Potem lahko obiščete svoj spletni prostor in preverite, da tema prikazuje pravilno.
 
-## Specifikacija spleta in memorija site_brief
+## Specifikacija spleta in memorija site_brief {#site-specification-and-sitebrief-memory}
 
 Med onboardingom agent zbere specifikacijo vašega spleta v kategoriji **site_brief** memorije. To vključuje:
 
@@ -117,7 +117,7 @@ Med onboardingom agent zbere specifikacijo vašega spleta v kategoriji **site_br
 - Prednosti dizajna
 - Strukturo vsebine
 
-### Zakaj je site_brief pomemben
+### Zakaj je site_brief pomemben {#why-sitebrief-matters}
 
 V prihodnjih seansah agenti bodo uporabili vaš **site_brief** za:
 
@@ -125,7 +125,7 @@ Ohranite konzistentno dizajn pri spremembah
 Predlagajte funkcije, ki so usklajene z namenom vaše strani
 Prvenite predloge na podlagi konteksta
 
-### Pregled vašega site_briefa
+### Pregled vašega site_briefa {#viewing-your-sitebrief}
 
 Lahko vprašate agentu:
 
@@ -141,11 +141,11 @@ ali
 
 Agent vam bo prikazal vaše shranjene specifikacije strani.
 
-## Uporaba po onboarding-u (naročanje)
+## Uporaba po onboarding-u (naročanje) {#customizing-after-onboarding}
 
 Po dokončanem onboarding-u Theme Builder lahko:
 
-### Uporabite veščino Design System Aesthetics
+### Uporabite veščino Design System Aesthetics {#use-the-design-system-aesthetics-skill}
 
 Zahtevajte spremembe dizajna:
 
@@ -161,7 +161,7 @@ ali
 
 Veščina **Design System Aesthetics** vas vodi skozi ciljane spremembe dizajna.
 
-### Direktno uredite theme.json
+### Direktno uredite theme.json {#edit-themejson-directly}
 
 Za napredne uporabnike, uredite datoteko `/wp-content/themes/[theme-name]/theme.json`, da prilagodite:
 
@@ -170,7 +170,7 @@ Za napredne uporabnike, uredite datoteko `/wp-content/themes/[theme-name]/theme.
 - Spacing values (vrednosti razdalje)
 - Border and shadow definitions (določanja obramb in senčenja)
 
-### Ustvarite custom Block Templates
+### Ustvarite custom Block Templates {#create-custom-block-templates}
 
 Uporabite WordPress block editor za ustvarjanje prilagojen templatev za:
 
@@ -179,7 +179,7 @@ Uporabite WordPress block editor za ustvarjanje prilagojen templatev za:
 - Product pages (stranke izdelkov)
 - Contact forms (oblike za stik)
 
-## Primerjava: Stari vs. Novi onboarding
+## Primerjava: Stari vs. Novi onboarding {#comparison-old-vs-new-onboarding}
 
 | Funkcija | Site Builder (Starostno) | Theme Builder (Novi) |
 |---------|----------------------|-------------------|
@@ -189,7 +189,7 @@ Uporabite WordPress block editor za ustvarjanje prilagojen templatev za:
 | Fleksibilnost | Fiksne možnosti | Prilagodljiva |
 | Prihodnje posodobitve | Ni omenjene | Shranjene v site_briefu |
 
-## Reševanje težav (Troubleshooting)
+## Reševanje težav (Troubleshooting) {#troubleshooting}
 
 **Onboarding flow ni dokončan**
 - Restartirajte potek: "Start the Theme Builder onboarding"
@@ -206,7 +206,7 @@ Uporabite WordPress block editor za ustvarjanje prilagojen templatev za:
 - Vprašajte agenta: "regeneriraj temo z [določene spremembe]"
 - Uredite `theme.json` neposredno za natančen nadzor
 
-## Naslednji koraki
+## Naslednji koraki {#next-steps}
 
 Po dokončanju onboardinga Theme Builderja:
 

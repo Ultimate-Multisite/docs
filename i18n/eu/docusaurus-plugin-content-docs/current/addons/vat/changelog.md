@@ -3,7 +3,7 @@ title: BEZaren aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# BEZaren aldaketen erregistroa
+# BEZaren aldaketen erregistroa {#vat-changelog}
 
 1.0.7 bertsioa - 2026-02-03an argitaratua
 

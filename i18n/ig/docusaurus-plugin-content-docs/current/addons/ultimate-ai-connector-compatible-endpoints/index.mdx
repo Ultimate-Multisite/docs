@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector maka Ngwụcha Njikọ Kwekọrọ
+# Ultimate AI Connector maka Ngwụcha Njikọ Kwekọrọ {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector maka Ngwụcha Njikọ Kwekọrọ na-ejikọta API nke ndị na-enye AI dakọtara na OpenAI na netwọkụ WordPress multisite gị. Hazie ọtụtụ ndị na-enye AI — nke ọ bụla nwere URL ngwụcha njikọ nke ya, igodo API, na model ndabara — ma duzie arịrịọ nwere fallback akpaka mgbe onye na-enye ọrụ adịghị.
 
-## Njirimara Ndị Dị Mkpa
+## Njirimara Ndị Dị Mkpa {#key-features}
 
 - **Nkwado maka ọtụtụ ndị na-enye ọrụ**: Tinye ọtụtụ kaadị ndị na-enye AI, nke ọ bụla nwere URL ngwụcha njikọ nke ya, igodo API, na model ndabara
 - **Dọrọ-iji-hazigharịa**: Hazie ndị na-enye ọrụ dịka mkpa si dị site n'iji aka njide dị na kaadị ọ bụla; arịrịọ na-eji ndị na-enye ọrụ n'usoro
@@ -21,26 +21,26 @@ Ultimate AI Connector maka Ngwụcha Njikọ Kwekọrọ na-ejikọta API nke nd
 - **Mgbasa akpaka mgbe agbakwunyere**: Kaadị onye na-enye ọrụ ọhụrụ na-agbasa na-akpaghị aka ka ị nwee ike dejupụta nkọwa ozugbo
 - **Imebi cache script**: A na-eme ka scripts ndị na-enye ọrụ ghara ịnọ na cache mgbe emelitere plugin iji hụ na a na-ebunye ụdị kachasị ọhụrụ
 
-## Ihe A Chọrọ
+## Ihe A Chọrọ {#requirements}
 
 - WordPress 5.3 ma ọ bụ nke ka elu
 - PHP 7.4 ma ọ bụ nke ka elu
 - Ultimate Multisite plugin (na-arụ ọrụ)
 - Ngwụcha njikọ API dakọtara na OpenAI (nke ị na-elekọta onwe gị ma ọ bụ nke ndị ọzọ)
 
-## Ntinye
+## Ntinye {#installation}
 
 1. Bulite faịlụ addon na ndekọ `/wp-content/plugins/` gị
 2. Mee ka plugin rụọ ọrụ site na menu 'Mgbakwunye' na WordPress
 3. Gaa na **Ultimate Multisite → Njikọ AI** iji hazie addon ahụ
 
-## Nhazi
+## Nhazi {#configuration}
 
-### Ntọala Maka Ọtụtụ Ndị Na-enye Ọrụ
+### Ntọala Maka Ọtụtụ Ndị Na-enye Ọrụ {#multi-provider-setup}
 
 Ihuenyo nhazi na-eji nhazi dabere na kaadị ebe kaadị ọ bụla na-anọchi anya otu onye na-enye AI. Ị nwere ike ịgbakwunye ndị na-enye ọrụ ole ị chọrọ.
 
-#### Ịgbakwunye Onye Na-enye Ọrụ
+#### Ịgbakwunye Onye Na-enye Ọrụ {#adding-a-provider}
 
 1. Gaa na **Ultimate Multisite → Njikọ AI** na nchịkwa netwọkụ
 2. Pịa **Tinye Onye Na-enye Ọrụ**
@@ -52,15 +52,15 @@ Ihuenyo nhazi na-eji nhazi dabere na kaadị ebe kaadị ọ bụla na-anọchi 
    - **Model Ndabara** — njirimara model a ga-eji na ndabara maka onye na-enye ọrụ a (dịka `gpt-4o`, `mistral-small`)
 5. Pịa **Chekwaa Ntọala**
 
-#### Iwepụ Onye Na-enye Ọrụ
+#### Iwepụ Onye Na-enye Ọrụ {#removing-a-provider}
 
 Pịa bọtịnụ **Wepụ** na kaadị onye na-enye ọrụ ọ bụla iji hichapụ ya. Chekwaa ntọala iji tinye mgbanwe ahụ n'ọrụ.
 
-#### Ịhazigharị Ndị Na-enye Ọrụ
+#### Ịhazigharị Ndị Na-enye Ọrụ {#reordering-providers}
 
 Dọrọ akara njide (⣿) n'akụkụ aka ekpe nke kaadị onye na-enye ọrụ ọ bụla iji hazigharịa ya. Usoro ahụ na-ekpebi mkpa fallback: a na-eziga arịrịọ n'aka onye na-enye ọrụ mbụ ma daa azụ n'aka ndị na-enye ọrụ sochirinụ ma ọ bụrụ na arịrịọ ada.
 
-### Nduzi Fallback
+### Nduzi Fallback {#fallback-routing}
 
 Mgbe arịrịọ n'aka onye na-enye ọrụ mbụ dara — n'ihi timeout, oke ọnụego, ma ọ bụ nkwụsị ọrụ — connector na-anwaleghachi na-akpaghị aka n'aka onye na-enye ọrụ ọzọ dị na ndepụta. Nke a na-aga n'ihu ndepụta ruo mgbe onye na-enye ọrụ gara nke ọma ma ọ bụ a nwaleela ndị na-enye ọrụ niile.
 
@@ -72,7 +72,7 @@ Mgbe arịrịọ n'aka onye na-enye ọrụ mbụ dara — n'ihi timeout, oke �
 
 Fallback na-apụta ìhè nye plugin ma ọ bụ theme na-akpọ ya — ha na-enweta ma ọ bụ nzaghachi gara nke ọma ma ọ bụ njehie ikpeazụ, n'agbanyeghị ole ndị na-enye ọrụ a nwaleere.
 
-### Ntụaka Nhazi Onye Na-enye Ọrụ
+### Ntụaka Nhazi Onye Na-enye Ọrụ {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Fallback na-apụta ìhè nye plugin ma ọ bụ theme na-akpọ ya — ha na-en
 | API Key | Yes | Igodo nkwenye maka onye na-enye ọrụ a |
 | Default Model | Yes | Njirimara model a na-eji mgbe akọwaghị model n'arịrịọ |
 
-## Idozi Nsogbu
+## Idozi Nsogbu {#troubleshooting}
 
-### Edepụtaghị ndị na-enye ọrụ ọ bụla
+### Edepụtaghị ndị na-enye ọrụ ọ bụla {#no-providers-are-listed}
 
 Ọ bụrụ na ndepụta ndị na-enye ọrụ tọgbọrọ n'efu mgbe echekwara, kwenye na:
 
@@ -91,21 +91,21 @@ Fallback na-apụta ìhè nye plugin ma ọ bụ theme na-akpọ ya — ha na-en
 - Browser gị egbochighị ibe ntọala ka ọ ghara ichekwa (lele console browser maka njehie JavaScript)
 - Plugin ahụ na-arụ ọrụ ma ị nọ na ihuenyo nchịkwa netwọkụ
 
-### Arịrịọ na-ada maka ndị na-enye ọrụ niile
+### Arịrịọ na-ada maka ndị na-enye ọrụ niile {#requests-are-failing-for-all-providers}
 
 - Nyochaa na a pụrụ iru URL ngwụcha njikọ onye na-enye ọrụ ọ bụla site na server gị (ọ bụghị naanị site na browser gị)
 - Lelee na igodo API ọ bụla ziri ezi ma na ọ gwụbeghị
 - Nyochaa ọnọdụ oke ọnụego na quota nke onye na-enye ọrụ na dashboard ha
 - Mee ka ndekọ debug WordPress (`WP_DEBUG_LOG`) rụọ ọrụ iji jide ozi njehie zuru ezu sitere na connector
 
-### A naghị eji onye na-enye ọrụ maka fallback
+### A naghị eji onye na-enye ọrụ maka fallback {#a-provider-is-not-being-used-for-fallback}
 
 Dọrọ-iji-hazigharịa na-agbanwe usoro fallback. Kwenye na onye na-enye ọrụ ị tụrụ anya na ọ ga-anata arịrịọ fallback nọ n'ọnọdụ ziri ezi na ndepụta nakwa na URL ngwụcha njikọ ya na igodo API ya ziri ezi.
 
-### Kaadị onye na-enye ọrụ ọhụrụ anaghị agbasa na-akpaghị aka
+### Kaadị onye na-enye ọrụ ọhụrụ anaghị agbasa na-akpaghị aka {#new-provider-card-does-not-expand-automatically}
 
 Mgbasa akpaka chọrọ ka JavaScript bụrụ nke enyere ikike na browser gị. Ọ bụrụ na kaadị ahụ anaghị agbasa mgbe a pịrị ya, lelee console browser maka njehie. A na-enweta ọdịnaya kaadị mgbe niile site n'ịpị isi kaadị ọbụlagodi ma ọ bụrụ na mgbasa akpaka akpaliteghị.
 
-## Ndekọ Mgbanwe
+## Ndekọ Mgbanwe {#changelog}
 
 Lee [Ndekọ Mgbanwe](./changelog) maka akụkọ ụdị zuru ezu.

@@ -4,13 +4,13 @@ title: Saringan - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Nyaring URL pangalihan sawisé ndadèkaké sawijining domain dadi utama.
 
 Ngidini pangembang kanggo ngatur menyang ngendi pangguna dialihaké sawisé kasil nyetel sawijining domain minangka utama. Kanthi gawan, ngalihaké menyang URL saiki ing situs utama, utawa menyang URL admin saka situs sing lagi diowahi.
 
-## Parameter
+## Parameter {#parameters}
 
 | Jeneng | Tipe | Katrangan |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Ngidini pangembang kanggo ngatur menyang ngendi pangguna dialihaké sawisé kasi
 | $domain | `\Domain` | Objek domain sing wis didadèkaké utama. |
 | $old_primary_domains | `array` | Larik ID saka domain sing sadurungé utama. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) ing baris 639
 
 
-## Balènan
+## Balènan {#returns}
 URL pangalihan sing wis disaring.

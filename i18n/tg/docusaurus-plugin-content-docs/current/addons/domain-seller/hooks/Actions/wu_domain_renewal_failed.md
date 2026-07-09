@@ -4,11 +4,11 @@ title: Амал - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Амал: wu_domain_renewal_failed
+# Амал: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Пас аз ноком шудани кӯшиши тамдиди домен фаъол мешавад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bff3fd7903485780766e490300546070
 | $renewal_data | `array&lt;string,mixed&gt;` | Метамаълумоти тамдид (domain_name, years ва ғайра). |
 | $error_message | `string` | Паёми хатои барои инсон хондашаванда аз registrar. |
 
-### Аз
+### Аз {#since}
 
 - 2.0.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) дар сатри 630 муайян шудааст

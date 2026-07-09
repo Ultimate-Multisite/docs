@@ -3,7 +3,7 @@ title: Sette opp PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Sette opp PayPal-gatewayen (v2)
+# Sette opp PayPal-gatewayen (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
@@ -13,13 +13,13 @@ Akkurat som Stripe er PayPal mye brukt for nettbetalinger, spesielt på WordPres
 
 Merk at du må ha en **PayPal Business-konto** for å få API-legitimasjonen som trengs for denne integrasjonen.
 
-## Aktivere PayPal på nettverket ditt
+## Aktivere PayPal på nettverket ditt {#enabling-paypal-on-your-network}
 
 For å aktivere PayPal som en tilgjengelig betalingsmetode på nettverket ditt, går du til fanen **Ultimate Multisite > Innstillinger > Betalinger** og krysser av i boksen ved siden av PayPal.
 
 ![Aktivere PayPal i aktive betalingsgatewayer](/img/config/settings-payment-gateways.png)
 
-## Bruke den veiledede oppsettsveiviseren
+## Bruke den veiledede oppsettsveiviseren {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 legger til en veiledet PayPal-oppsettsveiviser i innstillingene for betalingsgatewayen. Etter at du har aktivert PayPal, bruker du veiviseren på **Ultimate Multisite > Innstillinger > Betalinger** for å velge hvordan du vil koble til gatewayen og bekrefte hvilke legitimasjoner som fortsatt trengs før du lagrer.
 
@@ -30,7 +30,7 @@ Veiviseren støtter to oppsettsbaner:
 
 Hvis du ikke ser OAuth-alternativet i veiviseren, fullfører du flyten for manuell inntasting av legitimasjon nedenfor. Gatewayen fungerer med den samme PayPal Business API-legitimasjonen som tidligere Ultimate Multisite 2.x-utgivelser.
 
-## Hente PayPal API-legitimasjonen
+## Hente PayPal API-legitimasjonen {#getting-the-paypal-api-credentials}
 
 Når PayPal er aktivert som betalingsgateway, må du fylle ut feltene for PayPal API **Brukernavn** , PayPal API **Passord** og PayPal API **Signatur**.
 

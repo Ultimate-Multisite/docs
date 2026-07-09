@@ -3,13 +3,13 @@ title: تلقي المدفوعات
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# الحصول على المدفوعات (v2)
+# الحصول على المدفوعات (v2) {#getting-paid-v2}
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 
 يتضمن Ultimate Multisite نظامًا مدمجًا للعضويات والفوترة. لكي يعمل نظام الفوترة لدينا، قمنا بدمج بوابات الدفع الأكثر شيوعًا المستخدمة في التجارة الإلكترونية. بوابات الدفع الافتراضية في Ultimate Multisite هي _Stripe_ و_PayPal_ والدفع اليدوي. يمكنك أيضًا استخدام _WooCommerce_ و_GoCardless_ و_Payfast_ لتلقي المدفوعات عبر تثبيت الإضافات الخاصة بها.
 
-## الإعدادات الأساسية
+## الإعدادات الأساسية {#basic-settings}
 
 يمكنك تكوين أي من بوابات الدفع هذه ضمن إعدادات الدفع في Ultimate Multisite. يمكنك العثور عليها بالانتقال إلى **قائمة Ultimate Multisite > الإعدادات > المدفوعات.**
 
@@ -39,7 +39,7 @@ _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisi
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## أين تجد البوابات:
+## أين تجد البوابات: {#where-to-find-the-gateways}
 
 يمكنك إعداد بوابات الدفع في الصفحة نفسها ( **Ultimate Multisite > الإعدادات > المدفوعات**). مباشرةً أسفل **بوابات الدفع النشطة**، ستتمكن من رؤية: _Stripe_ و_Stripe_ _Checkout_ و_PayPal_ و_Manual_.
 
@@ -67,7 +67,7 @@ _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisi
 
 الآن، إذا كنت تريد استخدام _WooCommerce_ أو _GoCardless_ أو _Payfast_ كبوابة دفع لديك، فستحتاج إلى **تثبيت إضافاتها وتكوينها**.
 
-### كيفية تثبيت إضافة WooCommerce:
+### كيفية تثبيت إضافة WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 نحن ندرك أن _Stripe_ و_PayPal_ غير متاحين في بعض البلدان، مما يحد من قدرة مستخدمي Ultimate Multisite على استخدام إضافتنا بفعالية أو يعيقها. لذلك أنشأنا إضافة لدمج _WooCommerce,_ وهي إضافة تجارة إلكترونية شائعة جدًا. أنشأ المطورون حول العالم إضافات لدمج بوابات دفع مختلفة معها. استفدنا من ذلك لتوسيع بوابات الدفع التي يمكنك استخدامها مع نظام الفوترة في Ultimate Multisite.
 
@@ -95,7 +95,7 @@ _**مهم:** يتطلب Ultimate Multisite: WooCommerce Integration تفعيل W
 
 لقراءة المزيد عن الإضافة الملحقة WooCommerce Integration، **انقر هنا**.
 
-### كيفية تثبيت الإضافة الملحقة GoCardless:
+### كيفية تثبيت الإضافة الملحقة GoCardless: {#how-to-install-the-gocardless-add-on}
 
 خطوات تثبيت الإضافة الملحقة _GoCardless_ مماثلة إلى حد كبير للإضافة الملحقة _WooCommerce_. يُرجى الانتقال إلى صفحة الإضافات الملحقة واختيار الإضافة الملحقة **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ _**مهم:** يتطلب Ultimate Multisite: WooCommerce Integration تفعيل W
 
 لمعرفة كيفية البدء باستخدام بوابة _GoCardless_، **اقرأ هذه المقالة**.
 
-### كيفية تثبيت الإضافة الملحقة Payfast:
+### كيفية تثبيت الإضافة الملحقة Payfast: {#how-to-install-the-payfast-add-on}
 
 انتقل إلى صفحة الإضافات الملحقة واختر الإضافة الملحقة **Ultimate Multisite: Payfast Gateway**.
 

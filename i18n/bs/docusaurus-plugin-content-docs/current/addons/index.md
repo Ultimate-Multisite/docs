@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Dodaci
+# Ultimate Multisite Dodaci {#ultimate-multisite-addons}
 
 Dodaci proširuju Ultimate Multisite dodavanjem dodatnih funkcionalnosti i integracija. Većina dodataka je plaćena i može se kupiti na [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Instalacija
+## Instalacija {#installation}
 
 Dodaci se mogu instalirati na dva načina:
 
 1. **Preko stranice Dodataka** -- Idite na stranicu za upravljanje dodacima vašeg sajta u WordPress administraciji.
 2. **Ručno preuzimanje** -- Preuzmite sa [vašeg naloga](https://ultimatemultisite.com/my-account/downloads/) i učitajte ih putem Plugins > Add New.
 
-## Dostupni Dodaci
+## Dostupni Dodaci {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

@@ -4,11 +4,11 @@ title: Sefe - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Sesefe: secure_logged_in_cookie
+# Sesefe: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Se sefa hore na khukhi ya ho kena e lokela ho romelwa feela ka HTTPS.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Se sefa hore na khukhi ya ho kena e lokela ho romelwa feela ka HTTPS.
 | $user_id | `int` | ID ya mosebedisi. |
 | $secure | `bool` | Hore na khukhi ya netefatso e lokela ho romelwa feela ka HTTPS. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 3.1.0
-### Mohloli
+### Mohloli {#source}
 
 E hlalositswe ho [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) moleng wa 91

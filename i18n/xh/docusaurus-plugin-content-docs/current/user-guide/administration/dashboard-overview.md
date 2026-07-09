@@ -3,11 +3,11 @@ title: Ushwankathelo lwe-Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Ushwankathelo lwe-Dashboard
+# Ushwankathelo lwe-Dashboard {#dashboard-overview}
 
 Ultimate Multisite ine-**Dashboard** ezinikeleyo phantsi kwemenyu ye-Ultimate Multisite, kwaye yongeza neewijethi kwi-Dashboard yeNethiwekhi. Eli nqaku lichaza into oza kuyibona kwezi ndawo zombini.
 
-## I-Dashboard yeNethiwekhi
+## I-Dashboard yeNethiwekhi {#the-network-dashboard}
 
 Ultimate Multisite ifaka iiwijethi eziluncedo kwi-dashboard yenqanaba lenethiwekhi efumaneka ku-**Iisayithi Zam → Umlawuli weNethiwekhi → Dashboard**.
 
@@ -35,7 +35,7 @@ Nantsi into ebonelelwa yiwijethi nganye:
 
 ![Iwijethi yeendaba](/img/admin/network-dashboard-news.png)
 
-## I-Dashboard ye-Ultimate Multisite
+## I-Dashboard ye-Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Ngelixa i-dashboard yenethiwekhi ibonisa ulwazi olupheleleyo malunga nenethiwekhi, i-dashboard ye-Ultimate Multisite (kwinqanaba eliphezulu lemenyu ye-Ultimate Multisite) ibonisa ulwazi malunga nenkonzo.
 

@@ -3,7 +3,7 @@ title: Marrëdhënia Multsite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Wizard për Konfigurimin Multisite
+# Wizard për Konfigurimin Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite përfshin një wizard të integruar që automatikisht konverton një instalim standard WordPress në një rrjet WordPress Multisite. Kjo eliminojnë nevojën për të redaktuar manualisht `wp-config.php` ose ekzekutuar komanda në bazë të të dhënave.
 
@@ -11,13 +11,13 @@ Ultimate Multisite përfshin një wizard të integruar që automatikisht konvert
 Nëse instalimi juar WordPress tashmë po funksionon si një rrjet Multisite, mund ta kaloni këtë hap pa u nevojë. Wizard-i shfaqet vetëm kur Multisite nuk është aktiv ende.
 :::
 
-## Kur Shfaqet Wizard-i?
+## Kur Shfaqet Wizard-i? {#when-does-the-wizard-appear}
 
 Kur aktivizoni Ultimate Multisite në një instalim standard (jo Multisite), plugin-i zbulon se Multisite nuk është i aktivizuar dhe ju drejton automatikisht te Wizard-i i Konfigurimit Multisite në vend të wizard-it standard.
 
 A mund ta aksesoni direkt në **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Përparueshmëri
+## Përparueshmëri {#prerequisites}
 
 Para se të ekzekutoni wizard-in, sigurohuni që:
 
@@ -29,7 +29,7 @@ Para se të ekzekutoni wizard-in, sigurohuni që:
 Wizard-i modifikon file-in tuaj `wp-config.php` dhe krijon tabela të reja në bazë të dhënash. Gjithmonë keni duhet të bëni një backup para se të vazhdoni.
 :::
 
-## Hapi 1: Mirëseja
+## Hapi 1: Mirëseja {#step-1-welcome}
 
 Ekrandi i parë shpjegon se çfarë është WordPress Multisite dhe se çfarë do të bëjë wizard-i:
 
@@ -42,11 +42,11 @@ Ekrandi i parë shpjegon se çfarë është WordPress Multisite dhe se çfarë d
 
 Klikoni **Continue** për të vazhduar.
 
-## Hapi 2: Konfigurimi i Rrjetit
+## Hapi 2: Konfigurimi i Rrjetit {#step-2-network-configuration}
 
 Ky hap ju kërkon të konfigurosh cilësimet tuaja të rrjetit.
 
-### Struktura e Sitetve
+### Struktura e Sitetve {#site-structure}
 
 Zgjidhni si do të organizohen sitet tuaj në rrjet:
 
@@ -57,11 +57,11 @@ Zgjidhni si do të organizohen sitet tuaj në rrjet:
 Nëse zgjidhni sub-domena, do të keni nevojë të konfigurojëni **wildcard DNS** dhe një **certifikat wildcard SSL** për domenit tuaj. Shumica e hostave të menjuara WordPress bëjnë këtë automatikisht. Shijeni [Ultimate Multisite 101](./ultimate-multisite-101) për një krahasim më të detajuar.
 :::
 
-### Titulli i Rrjetit (Network Title)
+### Titulli i Rrjetit (Network Title) {#network-title}
 
 Vendosni një emër për rrjetin tuaj. Ky varet me titullin e aktualit të faqes tuaj dhe i shtojnë "Network". Mund ta ndryshoni më vonë nga cilësimet e rrjetit.
 
-### Emaili i Administratorit të Rrjetit (Network Admin Email)
+### Emaili i Administratorit të Rrjetit (Network Admin Email) {#network-admin-email}
 
 Adresa e emailit që përdoret për njoftime administrimi të rrjetit. Ky varet me adresën e emailit të përdoruesit aktual.
 
@@ -69,7 +69,7 @@ Adresa e emailit që përdoret për njoftime administrimi të rrjetit. Ky varet 
 
 Pas plotësimit i fushave, klikoni **Continue** për të vazhduar.
 
-## Hapi 3: Instalimi (Installation)
+## Hapi 3: Instalimi (Installation) {#step-3-installation}
 
 Klikoni butonin **Install** për të nisur. Wizard-i kryen pesë hapa automatike në një rreshtim, duke treguar progresin e secilit prej tyre në kohë reale:
 
@@ -96,7 +96,7 @@ Pasi të gjitha hapat përfundojnë me sukses, do të shihni një status të gje
 
 Marrëpas kësaj, wizardi do të vazhdojë automatikisht drejt ekranit të përfundimit.
 
-## Hapi 4: Përfundimi (Complete)
+## Hapi 4: Përfundimi (Complete) {#step-4-complete}
 
 Pasi instalimi të jetë i përfunduar, do të shihni një mesazh sukses që konfirmon se WordPress Multisite është aktivizuar.
 
@@ -108,7 +108,7 @@ Tani mund të vazhdoni me wizardin e Ultimate Multisite për të konfiguruar pla
 Pas instalimi i multisite të përfundojë, shfletuesi juaj do të redihjojë nëpër administratorin e rrjetit që është aktivuar. Mund të keni nevojë të hyeni sërish në logarimi sepse kokat autentikimi (authentication cookies) janë aktualizuar për mjedisin multisite.
 :::
 
-## Rezervues Manual i Konfigurimit
+## Rezervues Manual i Konfigurimit {#manual-setup-fallback}
 
 Nëse wizard-i nuk mund të shkruajë në skedarin tuaj `wp-config.php` (për shkak të lejeve të skedarit ose kufizimeve të serverit), ai do t'ju tregojë kodin e saktë që duhet të shtoni manualisht:
 
@@ -117,9 +117,9 @@ Nëse wizard-i nuk mund të shkruajë në skedarin tuaj `wp-config.php` (për sh
 
 Pas bërjes së këtyre ndryshimeve manuale, refreshoni faqen dhe wizard-i do të zbulojë se multisite është tashmë aktiv.
 
-## Zgjidhja e Problemeve (Troubleshooting)
+## Zgjidhja e Problemeve (Troubleshooting) {#troubleshooting}
 
-### Wizard-i thotë se wp-config.php nuk mund të shkruhet (is not writable)
+### Wizard-i thotë se wp-config.php nuk mund të shkruhet (is not writable) {#the-wizard-says-wp-configphp-is-not-writable}
 
 Procesi i serverit tuaj web duhet të ketë leje për shkrimin në skedarin `wp-config.php`. Ju mund të bëni një nga këto:
 
@@ -127,7 +127,7 @@ Procesi i serverit tuaj web duhet të ketë leje për shkrimin në skedarin `wp-
 - Përdorni udhëzimet e rezervuesit manual të konfigurimit të ofruara nga wizard-i
 - Kërkoni ndihmë nga provizuesi juaj i hostingut
 
-### Faqet nuk janë të aksesueshme pas instalimit (subdomains)
+### Faqet nuk janë të aksesueshme pas instalimit (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Nëse keni zgjedhur strukturën e subdomainit, duhet të konfiguroheni **wildcard DNS** për domenit tuaj. Shtoni një regjistrim DNS:
 
@@ -139,7 +139,7 @@ Value: [IP adresa e serverit tuaj]
 
 Kontrolloni me provizuesin tuaj të hostingut nëse nuk jeni të sigurt se si duhet të konfiguroheni këtë.
 
-### Problemet me autentikimin pas instalimit
+### Problemet me autentikimin pas instalimit {#authentication-issues-after-setup}
 
 Nëse jeni jashtë logarimit ose keni probleme me kokat (cookies) pas konfigurimit të multisite:
 
@@ -147,7 +147,7 @@ Nëse jeni jashtë logarimit ose keni probleme me kokat (cookies) pas konfigurim
 2. Hyjeni sërish në logarim te `yourdomain.com/wp-login.php`
 3. Nëse problemi vazhdon, kontrolloni që skedari juaj `wp-config.php` nuk ka të vendosur `COOKIE_DOMAIN` në `false` — ky është një problem i njohur në instalimet multisite me subdomain.
 
-### Një hap dështoi gjatë instalimit
+### Një hap dështoi gjatë instalimit {#a-step-failed-during-installation}
 
 Nëse një nga hapat e instalimit tregon një gabim:
 

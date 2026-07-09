@@ -3,11 +3,11 @@ title: Producta et Preti
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Producta de Dominio y Precios
+# Producta de Dominio y Precios {#domain-products-and-pricing}
 
 Las productos de dominio son la forma en que controlas los precios, las TLDs (extensiones de dominio), la privacidad WHOIS y la selección del proveedor. Cada producto de dominio es un producto Ultimate Multisite estándar con una pestaña extra llamada **Domain Settings** (Configuración de Dominio).
 
-## Creación de un producto de dominio
+## Creación de un producto de dominio {#creating-a-domain-product}
 
 1. Ve a **Network Admin › Ultimate Multisite › Products**
 2. Haz clic en **Add New** (Añadir Nuevo)
@@ -17,13 +17,13 @@ Las productos de dominio son la forma en que controlas los precios, las TLDs (ex
 
 Los productos de dominio aparecen con una insignia morada llamada **Domain** (Dominio) en la lista de productos y se pueden filtrar usando la pestaña **Domain Products** (Productos de Dominio).
 
-## Pestaña de configuración de dominio
+## Pestaña de configuración de dominio {#domain-settings-tab}
 
-### Proveedor
+### Proveedor {#provider}
 
 Selecciona qué registrador se encargará del registro para este producto. Por defecto, es el **Default provider** (Proveedor predeterminado) global configurado en la configuración del Vendedor de Dominios (Domain Seller settings).
 
-### TLDs compatibles
+### TLDs compatibles {#supported-tlds}
 
 Déjalo en blanco para crear un **catch-all product** (producto comodín) que se aplique a todas las TLDs que no coincidan con otro producto.
 
@@ -31,7 +31,7 @@ Introduce una lista separada por comas de TLDs (por ejemplo, `.com, .net, .org`)
 
 **Cómo funciona la coincidencia de productos:** Cuando un cliente busca un dominio, el addon elige el producto que mejor coincida. Un producto con `.com` en su lista de TLD tiene prioridad sobre un producto comodín. Si no hay ningún producto específico de TLD que coincida, se usa el comodín. Si no existen productos, la búsqueda de dominio no se muestra.
 
-### Tipo de margen (Markup type)
+### Tipo de margen (Markup type) {#markup-type}
 
 Tres modos controlan cómo se calcula tu precio minorista a partir del costo mayorista:
 
@@ -41,11 +41,11 @@ Tres modos controlan cómo se calcula tu precio minorista a partir del costo may
 | **Fixed markup** (Margen fijo) | Añade una cantidad fija en dólares. Un margen de $5 sobre un dominio de $10 da $15. |
 | **Fixed price** (Precio fijo) | Ignora por completo el costo mayorista. Siempre cobra la cantidad que ingreses. |
 
-### Precios introductorios
+### Precios introductorios {#introductory-pricing}
 
 Permite offrire un preț scontat per il primo anno. Imposta un **Prezzo introduttivo** (il prezzo del primo anno) separato dal **Prezzo di rinnovo** regolare (per l'anno 2 e successivi). Il cliente vede entrambi i prezzi visualizzati durante il checkout, così sa cosa aspettarsi al momento del rinnovo.
 
-### Privacy WHOIS
+### Privacy WHOIS {#whois-privacy}
 
 Controlla se viene offerta la protezione della privacy WHOIS per i domini registrati tramite questo prodotto.
 
@@ -59,7 +59,7 @@ Per Namecheap, la privacy WHOIS utilizza WhoisGuard (sempre gratuita). Per OpenS
 
 ---
 
-## Importazione e sincronizzazione TLD
+## Importazione e sincronizzazione TLD {#tld-import-and-sync}
 
 I prodotti di dominio mostrano i prezzi all'ingrosso in tempo reale recuperati dal provider collegato. Affinché questo funzioni, le TLD devono essere importate.
 
@@ -70,7 +70,7 @@ Dopo una sincronizzazione, vai alla scheda Impostazioni del Dominio di qualsiasi
 
 ---
 
-## Rinnovo automatico
+## Rinnovo automatico {#auto-renewal}
 
 I rinnovi dei domini sono collegati allo stato di iscrizione del cliente:
 
@@ -88,7 +88,7 @@ I rinnovi dei domini sono collegati allo stato di iscrizione del cliente:
 
 ---
 
-## Admin: Registratio manualis dominii
+## Admin: Registratio manualis dominii {#admin-manual-domain-registration}
 
 Ut dominium in nomine clientis registrare sine per itinerarium ordinis (checkout) transire:
 

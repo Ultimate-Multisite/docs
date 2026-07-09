@@ -3,13 +3,13 @@ title: Ինտեգրման ուղեցույց
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Ինտեգրման ուղեցույց
+# Ինտեգրման ուղեցույց {#integration-guide}
 
 Այս ուղեցույցը ներկայացնում է Ultimate Multisite-ի հետ ինտեգրման տարածված ձևաչափերը՝ ներառյալ արտաքին ծառայություններին միանալը, անհատական վճարային gateway-ներ կառուցելը և webhook-ների մշակումը։
 
 Մեկուսացված tenant ենթակառուցվածքի համար տեսեք [Multi-Tenancy ինտեգրում](./multi-tenancy)՝ ինքնիշխան tenant-ի սկզբնագործման, migration-ի ստուգման, SSO-ի և հեռացման ուղեցույցի համար։
 
-## CRM ինտեգրում
+## CRM ինտեգրում {#crm-integration}
 
 Համաժամացրեք հաճախորդների տվյալները ձեր CRM-ի հետ, երբ նոր հաճախորդներ են գրանցվում՝
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Վերլուծության ինտեգրում
+## Վերլուծության ինտեգրում {#analytics-integration}
 
 Հետևեք հիմնական բիզնես իրադարձություններին հաճախորդի կյանքի ցիկլի ընթացքում՝
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Հաջորդ քայլեր
+## Հաջորդ քայլեր {#next-steps}
 
 - [Custom Gateway-ի մշակում](./custom-gateway) — Կառուցեք ձեր սեփական վճարային gateway-ը
 - [Webhook-ների մշակում](./webhooks) — Ստեղծեք անհատական webhook endpoint-ներ

@@ -4,11 +4,11 @@ title: Omume - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 Na-eme ozugbo tupu etinye cookie nkwenye onye banyere.
 
-## Parameters
+## Parameters {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Na-eme ozugbo tupu etinye cookie nkwenye onye banyere.
 | $scheme | `string` | Usoro nkwenye. Ndabere 'logged_in'. |
 | $token | `string` | Token nnọkọ onye ọrụ a ga-eji maka cookie a. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Isi mmalite
+### Isi mmalite {#source}
 
 Akọwara na [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) na ahịrị 141

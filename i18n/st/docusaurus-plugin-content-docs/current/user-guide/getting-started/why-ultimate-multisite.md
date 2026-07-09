@@ -3,11 +3,11 @@ title: Kea eng Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ke eng kae Ultimate Multisite
+# Ke eng kae Ultimate Multisite {#why-ultimate-multisite}
 
 Ha u le ka e ntlala kae se tsela, o ka ne u le ka utlwa hore ho ba le bone seo se tla fana ka rona. Re bolela hore re tla le bone tse u batlang ka ho fetoga ea lona bonako.
 
-## Kae ke Ultimate Multisite?
+## Kae ke Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite ke plugin ea WordPress e ntse e tsoang ea Multisite, e tsoang ea ho ba le ka ho fana ka WaaS (Website as a Service). Le ho ba le ka rona, u ka ba le fa liti tse fapaneng le ho ba le ka ba le fa boikotso bo fetileng hore ba bang ba le ka ba le fa sebope sa lona sa Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite e le ea ho ba le ka ho tšoa liti tsa hau ka gateways fapanen
 
 Le seo se tla ba le ka ho leka ha sebope sa hau se tla fana ka add-ons le webhooks.
 
-## Boitshwaro ba lipuo
+## Boitshwaro ba lipuo {#other-features}
 
 Ultimate Multisite e fana ka:
 
@@ -31,11 +31,11 @@ Le fa go na dikgwomo tse di fanaang ka ho fetola ka tsela ya template (Template 
 
 Le fa go na Search and Replace API: O ka go annotate site templates le placeholders ja {{site_name}} le go u ubatla ho fanaang ka information e ntsha ea batho ba hau ka nako e ntsha ea signup, ka tsela e seng a ntlha.
 
-## Dikgwomo tsa ho u batla (Use cases)
+## Dikgwomo tsa ho u batla (Use cases) {#use-cases}
 
 Nokoe ke nako e ntsha ho bona dikgomo tse ka ho ubatla Ultimate Multisite.
 
-### Kgomo 1: Agency
+### Kgomo 1: Agency {#case-1-an-agency}
 
 Moea oa agency o na le dikgomo tse fapaneng tse a tlhokwa ka ho rata design tsa websites le dikgwomo tse kang ho ba le hosting kapa marketing ho batla ho ba le tseba ka ho ba le dikgwomo tse ntlha.
 
@@ -45,7 +45,7 @@ Ho na le ho tsamaea le ho tsamaea dikgwomo (plugins and themes) ho u batla ho ba
 
 Agencies ba le bone le fa'aalo le Ultimate Multisite e fanoa le lona fa'aalo—e fa'aalo ka e fa'aalo a le fa'aalo ea lona e tsoalo—ho ba le sona le ho fa sehlopha sa lona, ho fa website tsa bone tse fapaneng.
 
-### Case 2: Mofuta o Tsoalo (Niche Provider)
+### Case 2: Mofuta o Tsoalo (Niche Provider) {#case-2-niche-provider}
 
 Ho na le sehlopha sehle sa mofuta seo re re ea, seo re re etsa ka bonako, "Fa re etse ntho e le ntho e le bonako." Ho ba le fa fana'a ka tsela e le mofuta o oona, ho bolela ho etsa motho a le ntho e le ntho e le bonako.
 
@@ -55,7 +55,7 @@ Ho na le sehlopha seo Ultimate Multisite se fetang, template site ke ntho e le t
 
 Ho ba le mofuta o fana'ang ho mofuta oa sites le litšomo tsa bone, sehlopha se se fetang se fa bonako ea ho etsa site e ne e le le fetoga ka plugins le design tse tsoalo. Motho a le a hlokang ho fana'a ntho e le e le le fetoga ho feta ho etsa sehlopha.
 
-### Case 3: WordPress Web Hosting
+### Case 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Ho na le litšomo tse fapaneng tsa ho host WordPress sites, empa ha u le le le fetoga ho le le lefetso ea ho fana'a space ea web sa motho le version e ne e le etsa ka WordPress e le e le etsa. Ke ho feta ka tsela e le ntho e le bonako, empa ho na le litšomo tse ngata le litšomo tse hlokang ho fetola ho fana'a sehlopha sehlopha sa ho host WordPress sites.
 

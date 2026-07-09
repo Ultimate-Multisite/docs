@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Monivuokraajuus
+# Monivuokraajuus {#multi-tenancy}
 
 Jaa alisivustot palvelimien ja tietokantojen kesken suorituskyvyn ja turvallisuuden parantamiseksi
 
-## Version 1.2.0 -julkaisun kohokohdat
+## Version 1.2.0 -julkaisun kohokohdat {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 lisää suvereenin vuokralaisen perustan tuotannon eristystyönkuluille:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 lisää suvereenin vuokralaisen perustan tuotannon eristysty
 
 Katso käyttöoppaat: [suvereenin migraation työnkulku](/user-guide/getting-started/sovereign-migration-workflow), [monivuokraajuuden eristys](/user-guide/configuration/multi-tenancy-isolation) ja [suvereenin vuokralaisen toiminnot](/user-guide/administration/sovereign-tenant-operations).
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 
 - WordPress 5.3 tai uudempi
 - PHP 7.4 tai uudempi
 - Multisite Ultimate -lisäosa (aktiivinen)
 
-## Asennus
+## Asennus {#installation}
 
 1. Lataa lisäosan tiedostot `/wp-content/plugins/`-hakemistoosi
 2. Aktivoi plugin WordPressin Plugins-valikon kautta
 3. Määritä lisäosan asetukset verkon ylläpidossa
 
-## Kehitys
+## Kehitys {#development}
 
-### Määritys
+### Määritys {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektin rakenne
+### Projektin rakenne {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Koodin modernisointisäännöt
 ```
 
-### Testaus
+### Testaus {#testing}
 
 Lisäosa sisältää kattavan testauskehyksen:
 
@@ -93,54 +93,54 @@ Lisäosa sisältää kattavan testauskehyksen:
 - **Testikattavuus**: Määritetty seuraamaan koodikattavuutta
 - **Multisite-testaus**: Testit suoritetaan multisite-ympäristössä
 
-### Koodistandardit
+### Koodistandardit {#code-standards}
 
 - **WordPress Coding Standards**: Pakotetaan PHPCS:n kautta
 - **PHP 7.4+ -yhteensopivuus**: Modernit PHP-ominaisuudet tuettu
 - **Staattinen analyysi**: PHPStan-integraatio tyyppitarkistukseen
 - **Koodin modernisointi**: Rector-säännöt PHP-päivityksiin
 
-### Koontijärjestelmä
+### Koontijärjestelmä {#build-system}
 
 - **Resurssien käsittely**: CSS/JS-tiedostojen pienennys
 - **Käännös**: POT-tiedoston luonti
 - **Paketointi**: Arkiston luonti jakelua varten
 - **Kehitystila**: Pienentämättömät resurssit virheenkorjaukseen
 
-## Määritys
+## Määritys {#configuration}
 
 Lisäosa tukee erilaisia määritysvaihtoehtoja, jotka ovat käytettävissä verkon ylläpitokäyttöliittymän kautta.
 
-### Suvereenin vuokralaisen määritys
+### Suvereenin vuokralaisen määritys {#sovereign-tenant-configuration}
 
 Suvereeneille vuokralaisille määritä vuokralaisen tietokanta, tiedostojärjestelmän juuri, tietokanta-isännän sidonta ja isännän ominaisuus ennen liikenteen reitittämistä vuokralaiselle. Suorita migraation varmennus jokaisen muutoksen jälkeen, joka vaikuttaa tietokannan tunnistetietoihin, isäntäsidontaan, reititykseen tai käyttäjien provisiointiin.
 
 Käytä `localhost` vain, kun vuokralaisen suoritusympäristö ja tietokanta-avustukset odottavat paikallista socket-yhteyttä tai saman koneen käyttöä. Käytä `127.0.0.1`-osoitetta tai palvelun isäntänimeä, kun se on palveluntarjoajasi määrittämä avustusisäntä.
 
-### Hostinger-ominaisuus
+### Hostinger-ominaisuus {#hostinger-capability}
 
 Hostingerin monivuokraajuusominaisuus toimii jaetulla Hostinger-integraatiotunnuksella. Varmista, että verkkotunnus on hPanelissa, DNS osoittaa Hostinger-tiliin ja vuokralaisen tietokanta-asetukset vastaavat hPanelia ennen varmennusta.
 
-## Hookit ja suodattimet
+## Hookit ja suodattimet {#hooks-and-filters}
 
-### Toiminnot
+### Toiminnot {#actions}
 
 - `ultimate-multisite-addon-template_init` - Laukaistaan lisäosan alustuksen jälkeen
 - `ultimate-multisite-addon-template_loaded` - Laukaistaan, kun kaikki lisäosan tiedostot on ladattu
 
-### Suodattimet
+### Suodattimet {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Muokkaa lisäosan asetuksia
 - `ultimate-multisite-addon-template_enabled` - Ohita lisäosan käyttöönoton/käytöstäpoiston tila
 
-## Lisenssi
+## Lisenssi {#license}
 
 Tämä lisäosa on lisensoitu GPL v3 -lisenssillä tai uudemmalla.
 
-## Tuki
+## Tuki {#support}
 
 Tukea ja dokumentaatiota varten käy osoitteessa [MultisiteUltimate.com](https://multisiteultimate.com)
-## Muutosloki
+## Muutosloki {#changelog}
 
 - Versio 1.2.0 (2026-06-03): lisää tilaton vuokralaisen automaattinen kirjautuminen, Hostingerin monivuokraajuusominaisuus, alisivustokohtainen tietokannan ja tiedostojärjestelmän eristys, suvereenin migraation varmennusportit, parannukset vuokralaisen alustukseen/tietokantakirjoittajaan, määritettävä MySQL-isäntäsidonta ja turvallisempi suvereeni purku.
 

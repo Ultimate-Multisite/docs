@@ -3,17 +3,17 @@ title: 'Lektion 9: Prissætning til profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lektion 9: Prissætning for Profit
+# Lektion 9: Prissætning for Profit {#lesson-9-pricing-for-profit}
 
 I Lektion 5 satte vi de indledende priser på FitSite planer. Nu finjusterer vi prissætningsstrategien med teknikker, der øger omsætningen, opfordrer til opgraderinger og reducerer frafald (churn).
 
-## Hvor Vi Sluttede Af
+## Hvor Vi Sluttede Af {#where-we-left-off}
 
 FitSite har planer, skabeloner, checkout, branding og onboarding på plads. De indledende priser var $49/$99/$199 om måneden. Nu får vi den pris til at arbejde hårdere.
 
-## Principper for Prissætning af Niche Platforme
+## Principper for Prissætning af Niche Platforme {#pricing-principles-for-niche-platforms}
 
-### Pris baseret på værdi, ikke omkostninger
+### Pris baseret på værdi, ikke omkostninger {#price-on-value-not-cost}
 
 Dine hostingomkostninger kan være $5-$15 pr. kundesite. Det betyder ikke, at din pris skal være $20. Du sælger ikke hosting. Du sælger:
 
@@ -24,7 +24,7 @@ Dine hostingomkostninger kan være $5-$15 pr. kundesite. Det betyder ikke, at di
 
 Prissæt baseret på den værdi, du leverer, ikke omkostningerne ved at levere den.
 
-### Anker mod alternativer
+### Anker mod alternativer {#anchor-to-alternatives}
 
 Når en fitnessstudioejer vurderer FitSite, sammenligner de det med:
 
@@ -34,7 +34,7 @@ Når en fitnessstudioejer vurderer FitSite, sammenligner de det med:
 
 Til $49-$199 om måneden er FitSite billigere end en udvikler, mere kapabel end generiske bygherrer og uendeligt bedre end ingen hjemmeside.
 
-## Implementering af Prisvariationer
+## Implementering af Prisvariationer {#implementing-price-variations}
 
 Årlig prissætning opmuntrer til forpligtelse og reducerer frafald. Gå til fanen **Price Variations** for hver plan og tilføj årlige muligheder:
 
@@ -46,12 +46,12 @@ Til $49-$199 om måneden er FitSite billigere end en udvikler, mere kapabel end 
 
 Tilføj et felt til **Period Selection** i din checkout form, så kunder kan skifte mellem månedlig og årlig fakturering. Se [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Hvorfor virker årlig prissætning?
+### Hvorfor virker årlig prissætning? {#why-annual-pricing-works}
 
 - **For dig**: Kontant udbetalt på forhånd, lavere frafald (kunder, der betaler årligt, er mindre tilbøjelige til at opsige midtvejs)
 - **For dem**: Reelle besparelser, budgetforudsigelighed
 
-## Opsætningsgebyrer
+## Opsætningsgebyrer {#setup-fees}
 
 Overvej et engangsopsætningsgebyr for planer, der inkluderer manuel konfiguration:
 
@@ -61,7 +61,7 @@ Overvej et engangsopsætningsgebyr for planer, der inkluderer manuel konfigurati
 
 Konfigurer opsætningsgebyrer på hver plans prissætningssektion. Se [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) for detaljer.
 
-## Prøveperioder
+## Prøveperioder {#trial-periods}
 
 Tilbud om en prøveperiode reducerer signup-friktionen, men introducerer risikoen for manglende konvertering. For FitSite:
 
@@ -70,11 +70,11 @@ Tilbud om en prøveperiode reducerer signup-friktionen, men introducerer risikoe
 
 Konfigurer prøveperioden i prissiden for Starter-planen ved at slå **Offer Trial**-tasten til og sætte varigheden til 7 dage.
 
-### Gør Prøverne Om til Salg
+### Gør Prøverne Om til Salg {#making-trials-convert}
 
 En prøveperiode virker kun, hvis kunden oplever værdi i løbet af prøveperioden. Din onboarding-sekvens (Lektion 8) er kritisk her – velkomstmails skal timeliges for at drive engagement inden for de 7 dages vindue.
 
-## Rabatkoder
+## Rabatkoder {#discount-codes}
 
 Opret strategiske rabatkoder til specifikke formål:
 
@@ -88,7 +88,7 @@ Gå til **Ultimate Multisite > Discount Codes** for at oprette disse. Se [Creati
 Rabatter skal være strategiske værktøjer, ikke permanente ting. Hvis alle får en rabat, er det ikke en rabat – det er din virkelige pris. Brug dem til specifikke kampagner, henvisninger og tidsbegrænsede tilbud.
 :::
 
-## Skattehåndtering
+## Skattehåndtering {#tax-handling}
 
 Hvis du opererer i et jurisdiktion, der kræver skatteindberetning:
 
@@ -98,7 +98,7 @@ Hvis du opererer i et jurisdiktion, der kræver skatteindberetning:
 
 Se [Tax Handling](/user-guide/payment-gateways/tax-handling) for detaljerede konfigurationer. Hvis du betjener kunder internationalt, så overvej tilføjelsen [VAT addon](/addons/vat) for EU-overholdelse.
 
-## Gennemgang af din prissætning
+## Gennemgang af din prissætning {#reviewing-your-pricing}
 
 Efter lancering skal du se på priserne hver tredje måned. Kig efter:
 
@@ -107,7 +107,7 @@ Efter lancering skal du se på priserne hver tredje måned. Kig efter:
 - **Churn pr. plan**: Hvis årlige kunder churner mindre, skal du presse på med de årlige priser hårdere
 - **Konkurrentpriser**: Hvad tager alternativerne? Er du positioneret korrekt?
 
-## FitSite Netværket indtil nu
+## FitSite Netværket indtil nu {#the-fitsite-network-so-far}
 
 FitSite Network
 ├── WordPress Multisite (subdom-tilgang)
@@ -130,7 +130,7 @@ FitSite Network
 │   └── Skattekonfiguration
 └── Klar til lancering (næste lektion)
 
-## Hvad Vi Har Bygget I Denne Lektion
+## Hvad Vi Har Bygget I Denne Lektion {#what-we-built-this-lesson}
 
 - **Årlig prissætning** med 20% rabat for at opfordre til engagement
 - **Opsætningsgebyrer** på de højere niveauer for at dække opsætningsarbejdet

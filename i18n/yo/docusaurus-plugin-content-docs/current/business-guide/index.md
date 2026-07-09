@@ -3,13 +3,13 @@ title: Dá Iṣowo Oju opo wẹẹbu Amọ̀ja Sílẹ̀
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Kọ́ Iṣowo Ojú Opo Wẹẹbu Amọja pẹlu Ultimate Multisite
+# Kọ́ Iṣowo Ojú Opo Wẹẹbu Amọja pẹlu Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Ọ̀pọ̀ ènìyàn tí wọ́n ń gbìyànjú láti ta àwọn ojú opo wẹẹbu máa ń bá Wix, Squarespace, àti ẹgbẹẹgbẹ̀rún freelancer díje lórí iye owó. Wọ́n máa ń pàdánù. Àwọn tó ń ṣẹ́gun máa ń yan olùgbọ́ kan pàtó, kọ́ ojútùú tí a ṣe pàtàkì fún olùgbọ́ yẹn, wọ́n sì gba owó fún iye tí wọ́n ń fi ránṣẹ́.
 
 Ẹ̀kọ́ yìí kọ́ ọ bí o ṣe lè ṣe bẹ́ẹ̀ gan-an nípa lílo Ultimate Multisite.
 
-## Ohun Tí Ìwọ Yóò Kọ́
+## Ohun Tí Ìwọ Yóò Kọ́ {#what-you-will-build}
 
 Ní gbogbo ẹ̀kọ́ yìí, ìwọ yóò kọ́ nẹ́tíwọ́ọ̀kì gidi kan tí ń ṣiṣẹ́ tí a ń pè ní **FitSite** -- pẹpẹ ojú opo wẹẹbu tí a kọ́ pàtàkì fún àwọn studio amọdájú ara, àwọn olùkọ́ni ara ẹni, àti àwọn onílé gym.
 
@@ -23,7 +23,7 @@ Ní ẹ̀kọ́ ìkẹyìn, FitSite yóò jẹ́ pẹpẹ amọja pípé pẹ̀l
 
 Ìwọ yóò tẹ̀lé e ní ìgbésẹ̀-ní-ìgbésẹ̀, àti ní ìparí, ìwọ yóò ní pẹpẹ kan tí ń ṣiṣẹ́ àti ìmọ̀ láti tún ilana náà ṣe fún ẹ̀ka amọja èyíkéyìí tí o bá yan.
 
-## Kí Ló Dé Tí A Fi Yan Àwọn Studio Amọdájú Ara?
+## Kí Ló Dé Tí A Fi Yan Àwọn Studio Amọdájú Ara? {#why-fitness-studios}
 
 A nílò àpẹẹrẹ tó dájú tí ẹnikẹ́ni lè tẹ̀lé. Àwọn studio amọdájú ara ṣiṣẹ́ dáadáa nítorí pé:
 
@@ -34,7 +34,7 @@ A nílò àpẹẹrẹ tó dájú tí ẹnikẹ́ni lè tẹ̀lé. Àwọn studi
 
 Gbogbo ohun tí o kọ́ nípa kíkọ FitSite kan taara sí ẹ̀ka amọja èyíkéyìí tí o bá yan: àwọn ile ounjẹ, àwọn aṣojú ohun-ìní gidi, àwọn ilé agbẹjọ́rò, àwọn ṣọ́ọ̀ṣì, àwọn alágbàṣe iṣẹ́ ọwọ́, tàbí ẹ̀ka inaro míìkàn.
 
-## Ìlànà Ẹ̀kọ́
+## Ìlànà Ẹ̀kọ́ {#course-structure}
 
 Ẹ̀kọ́ kọ̀ọ̀kan máa ń ṣàgbékalẹ̀ ìmọ̀ kan, ṣàlàyé ìdí tí ó fi ṣe pàtàkì, ó sì máa ń rìn ọ lọ́nà fífi í ṣe nínú nẹ́tíwọ́ọ̀kì FitSite. Ẹ̀kọ́ kọ̀ọ̀kan ń kọ́ lé ti iṣáájú.
 
@@ -55,7 +55,7 @@ Gbogbo ohun tí o kọ́ nípa kíkọ FitSite kan taara sí ẹ̀ka amọja èy
 | [13. Fífi Kún Iwọn](lesson-13-growth) | Dídàgbàsókè láti àwọn oníbàárà àkọ́kọ́ sí iṣowo gidi | Ọgbọ́n-ìmúlò ìdàgbàsókè àti automation FitSite |
 | [14. Ohun Tó Máa Tẹ̀lé](lesson-14-whats-next) | Fífẹ̀ sí àwọn ẹ̀ka amọja tó súnmọ́ra àti àwọn ànfààní tuntun | Àtẹ̀jáde ọ̀nà rẹ lẹ́yìn FitSite |
 
-## Àwọn Ohun Tó Yẹ Kó Wà Tẹ́lẹ̀
+## Àwọn Ohun Tó Yẹ Kó Wà Tẹ́lẹ̀ {#prerequisites}
 
 - Fífi WordPress Multisite sílẹ̀ (tàbí ìfẹ́ láti ṣètò ọ̀kan)
 - Ìwé-àṣẹ Ultimate Multisite tó ń ṣiṣẹ́
@@ -63,6 +63,6 @@ Gbogbo ohun tí o kọ́ nípa kíkọ FitSite kan taara sí ẹ̀ka amọja èy
 
 Kò sí coding tí a nílò. Tí o kò bá tíì lo Ultimate Multisite rí, kò burú -- Ẹ̀kọ́ 3 bẹ̀rẹ̀ láti ìfifi-sílẹ̀ tuntun.
 
-## Ṣetán?
+## Ṣetán? {#ready}
 
 Bẹ̀rẹ̀ pẹ̀lú [Ẹ̀kọ́ 1: Ìdí Tí Ẹ̀ka Amọja Fi Ń Ṣẹ́gun](lesson-1-why-niche).

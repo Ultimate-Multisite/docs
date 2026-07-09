@@ -3,11 +3,11 @@ title: हुक्स संदर्भ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks संदर्भ
+# Hooks संदर्भ {#hooks-reference}
 
 Ultimate Multisite मधील सर्व **59 actions** आणि **118 filters** साठी स्वयं-निर्मित दस्तऐवजीकरण.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — प्रमाणीकरण रीडायरेक्टपूर्वी कार्यान्वित होते.
 - [set_auth_cookie](./Actions/set_auth_cookie) — प्रमाणीकरण कुकी सेट होण्याच्या लगेच आधी कार्यान्वित होते.
@@ -70,7 +70,7 @@ Ultimate Multisite मधील सर्व **59 actions** आणि **118 filt
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — object database मध्ये संग्रहित झाल्यानंतर चालते.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin विकासकांना अनलॉक करण्याच्या प्रक्रियेत actions जोडण्याची परवानगी द्या.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — प्रमाणीकरण cookie कालबाह्यता कालावधीचा कालावधी फिल्टर करते.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — प्रमाणीकरण पुनर्निर्देशन योजना फिल्टर करते.

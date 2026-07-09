@@ -3,16 +3,16 @@ title: Saitunan Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Saitunan Gratis AI Agent
+# Saitunan Gratis AI Agent {#gratis-ai-agent-settings}
 
 Allon **Settings → Advanced** a cikin Gratis AI Agent yana ba da daidaitawar matakin mai gudanarwa don haɗin backend. Wannan shafi yana rubuta tura feedback, maɓallan masu samar da bincike, saitin sabis na Superdav da ake sarrafawa, sarrafawar Google Calendar, saitunan TextBee SMS, da feature flags na dukkan network.
 
-## Shiga Saituna
+## Shiga Saituna {#accessing-settings}
 
 1. A cikin admin na WordPress, je zuwa **Gratis AI Agent → Settings**.
 2. Danna shafin **Advanced**.
 
-## Daidaitawar Feedback Endpoint
+## Daidaitawar Feedback Endpoint {#feedback-endpoint-configuration}
 
 Feedback endpoint yana karɓar buƙatun POST daga AI agent duk lokacin da mai amfani ya aika feedback ta maɓallin thumbs-down, banner na auto-prompt, ko umarnin `/report-issue`.
 
@@ -21,7 +21,7 @@ Feedback endpoint yana karɓar buƙatun POST daga AI agent duk lokacin da mai am
 | **Feedback Endpoint URL** | URL da ke karɓar aika feedback a matsayin buƙatun HTTP POST tare da jikin JSON. |
 | **Feedback API Key** | bearer token da ake aikawa a cikin `Authorization` header na kowace buƙatar feedback. Bar shi fanko idan endpoint ɗinka ba ya buƙatar tantancewa. |
 
-### JSON Payload da Ake Sa Ran Samu
+### JSON Payload da Ake Sa Ran Samu {#expected-json-payload}
 
 Feedback endpoint ɗinka dole ne ya karɓi jikin JSON tare da aƙalla filaye masu zuwa:
 
@@ -36,7 +36,7 @@ Feedback endpoint ɗinka dole ne ya karɓi jikin JSON tare da aƙalla filaye mas
 
 Ƙarin filaye na iya kasancewa a cikin payload gwargwadon mahallin tattaunawa.
 
-### Darajojin `triage_category`
+### Darajojin `triage_category` {#triagecategory-values}
 
 Matakin triage na AI yana sanya ɗaya daga cikin darajoji masu zuwa ga `triage_category` kafin tura payload:
 
@@ -47,7 +47,7 @@ Matakin triage na AI yana sanya ɗaya daga cikin darajoji masu zuwa ga `triage_c
 | `inappropriate_content` | Amsar ta ƙunshi abun ciki da bai kamata a nuna wa masu amfani ba. |
 | `other` | Feedback ɗin bai dace da sanannen rukuni ba. |
 
-### Tantancewa
+### Tantancewa {#authentication}
 
 Idan endpoint ɗinka yana buƙatar tantancewa, saita filin **Feedback API Key** zuwa bearer token ɗinka. Agent ɗin yana aikawa:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Idan filin **Feedback API Key** fanko ne, ba a aika `Authorization` header ba.
 
-### Kashe Tattara Feedback
+### Kashe Tattara Feedback {#disabling-feedback-collection}
 
 Bar filayen **Feedback Endpoint URL** da **Feedback API Key** duka fanko. Maɓallin thumbs-down da UI na feedback suna ci gaba da bayyana ga masu amfani, amma ba a tura abubuwan da aka aika zuwa kowane sabis na waje.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Haka kuma a shafin **Advanced**, filin **Brave Search API Key** yana kunna ikon [Binciken Intanet](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ Lakabin filin yana ƙunshe da hanyar haɗi da za a iya dannawa zuwa shafin rajis
 
 Duba [Binciken Intanet](../configuration/internet-search) don takardun masu amfani na ƙarshe game da wannan fasali.
 
-## Sabis na Superdav da Ake Sarrafawa
+## Sabis na Superdav da Ake Sarrafawa {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 yana ƙara endpoints na sabis na Superdav da ake sarrafawa da samar da haɗi ta atomatik ga shafuka masu tallafi. Yi amfani da waɗannan sarrafawa lokacin da shafinka ya kamata ya haɗu da hosted provider maimakon endpoint na sabis da aka daidaita da hannu.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 yana ƙara endpoints na sabis na Superdav da ake sarra
 
 Bayan provisioning, adana saituna kuma tabbatar da connection status kafin dogaro da workflows na managed-service. Idan provisioning ya kasa, duba jagorar sake gwadawa da aka nuna kuma tabbatar shafin yana da izinin amfani da hosted provider.
 
-## Daidaitawar Google Calendar
+## Daidaitawar Google Calendar {#google-calendar-configuration}
 
 Lokacin da aka kunna fasalolin calendar na Superdav AI Agent v1.18.0, agent ɗin zai iya karanta calendars da aka daidaita da cikakkun bayanan events. Kayan aikin calendar suna karkata ga karatu kuma suna da amfani don tunatarwa masu sanin jadawali, bin sawun attendee, da daidaita contact.
 
@@ -97,7 +97,7 @@ Lokacin da aka kunna fasalolin calendar na Superdav AI Agent v1.18.0, agent ɗin
 
 Ka iyakance calendar credentials zuwa calendars da agent ɗin ke buƙata kawai. Sake haɗawa ko juya credentials idan status ya nuna token ya ƙare.
 
-## Sanarwar TextBee SMS
+## Sanarwar TextBee SMS {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 yana ƙara TextBee a matsayin mai samar da SMS don workflows na sanarwa da aka daidaita. Ya kamata a haɗa sanarwar SMS da ƙofofin amincewar mutum don saƙonni masu muhimmanci ko waɗanda masu amfani za su gani.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 yana ƙara TextBee a matsayin mai samar da SMS don wor
 
 Aika saƙon gwaji kawai zuwa lambar da mai gudanarwa ya mallaka, sannan tabbatar da halayyar ƙofar amincewa kafin kunna tunatarwa da aka tsara ko waɗanda attendees za su gani.
 
-## Feature Flags
+## Feature Flags {#feature-flags}
 
 Haka kuma an gabatar da su a v1.9.0, shafin **Settings → Feature Flags** yana ba da maɓallan toggle don aikin zaɓi. Kowane flag ko dai a kunne yake ko a kashe yake a dukkan network; babu override na kowane shafi a wannan lokaci.
 
-### Shiga Feature Flags
+### Shiga Feature Flags {#accessing-feature-flags}
 
 1. A cikin admin na WordPress, je zuwa **Gratis AI Agent → Settings**.
 2. Danna shafin **Feature Flags**.
 
-### Flags na Sarrafa Shiga
+### Flags na Sarrafa Shiga {#access-control-flags}
 
 | Alama | Tsoho | Bayani |
 |---|---|---|
@@ -127,7 +127,7 @@ Haka kuma an gabatar da su a v1.9.0, shafin **Settings → Feature Flags** yana 
 | **Ba da Damar Samun Masu Subscriber** | A kashe | Idan an kunna, masu amfani masu rawar `subscriber` za su iya amfani da interface ɗin tattaunawa amma an takaita su ga damar karantawa-kawai (ba ƙirƙirar post ko sauye-sauyen settings). |
 | **Kashe ga Wadanda Ba Mambobi Ba** | A kashe | Yana haɗuwa da matsayin mambobci na Ultimate Multisite. Idan an kunna, ana ɓoye tattaunawa ga shafukan da ba su da mambobci mai aiki. |
 
-### Alamomin Branding
+### Alamomin Branding {#branding-flags}
 
 | Alama | Tsoho | Bayani |
 |---|---|---|
@@ -136,7 +136,7 @@ Haka kuma an gabatar da su a v1.9.0, shafin **Settings → Feature Flags** yana 
 | **Ɓoye Agent Picker** | A kashe | Idan an kunna, masu amfani ba za su iya sauyawa tsakanin agents biyar da aka gina a ciki ba. Agent na yanzu yana kafe ga abin da aka saita a matsayin tsoho a Settings → General. |
 | **Yi Amfani da Icon ɗin Shafi a matsayin Avatar na Tattaunawa** | A kashe | Yana maye gurbin tsohon icon na AI a header ɗin widget ɗin tattaunawa da icon ɗin shafin WordPress (wanda aka saita a ƙarƙashin Appearance → Customize → Site Identity). |
 
-### Alamomin Tsaron Automation
+### Alamomin Tsaron Automation {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 yana gabatar da ƙofofin amincewar mutum da bayanan tunatarwa don gudanarwar automation mafi aminci. Waɗannan sarrafawa na iya bayyana a cikin feature flags ko manyan settings na automation, gwargwadon package da aka girka.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 yana gabatar da ƙofofin amincewar mutum da bayanan tu
 | **Kunna Kayan Aikin Calendar** | A kashe har sai an saita | Yana ba agent damar karanta calendars na Google da events da aka saita. |
 | **Kunna Sanarwar SMS** | A kashe har sai an saita | Yana ba workflows da aka amince da su damar aika sanarwar SMS na TextBee bayan an adana credentials. |
 
-### Aiwatar da Sauye-sauye
+### Aiwatar da Sauye-sauye {#applying-changes}
 
 Danna **Save Settings** bayan kunna ko kashe kowace alama. Sauye-sauye suna fara aiki nan take — ba a buƙatar cache flush ko sake kunna plugin.

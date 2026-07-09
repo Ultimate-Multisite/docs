@@ -3,13 +3,13 @@ title: Flèch Enrejistrasyon an
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Flèy la Fòmasyon Enskripsyon (v2)
+# Flèy la Fòmasyon Enskripsyon (v2) {#the-registration-flow-v2}
 
 _**NOTE KRITIK: Sa tèks sa a refere a Ultimate Multisite v2.x.**_
 
 Kòman ou ka enkripsyon nan rezo ou yo pa menm fason. Yo ka itilize fòm enkripsyon ou oswa yon lyen ki ka pataje pou yon plan ki deja chwazi. Nan tèks sa a, nou pral montre w kijan kliyan ou ka enkripe sou rezo ou itilize chemen ki disponib ak sa k ap pase apre yo enkripe sou rezo ou.
 
-## Itilize Fòm Enskripsyon an:
+## Itilize Fòm Enskripsyon an: {#using-the-registration-form}
 
 Sa se pwosesis enkripsyon estanda a. Ou kreye yon paj enkripsyon ki gen yon **checkout form** (fòm chwazi) epi se la kliyan ou pral ale pou enkripe sou rezo ou epi abone nan yon plan. Ou ka gen plizyè paj enkripsyon, chak avèk yon fòm enkripsyon diferan si ou vle.
 
@@ -35,13 +35,13 @@ S'ils se sont inscrits à un plan payant ou si la vérification par e-mail n'est
 
 ![Site activé avec lien pour se connecter au dashboard](/img/frontend/site-activated.png)
 
-## Utiliser un Lien Partageable :
+## Utiliser un Lien Partageable : {#using-a-shareable-link}
 
 Le processus d'inscription en utilisant un lien partageable est pratiquement le même que le formulaire d'inscription, la seule différence est qu'en utilisant un lien partageable, vos clients pourront avoir un produit ou un modèle de site pré-sélectionné sur le formulaire de paiement (voir la section Pré-sélection des produits et modèles via les paramètres URL) ou peut-être un code de coupon ajouté (voir la section Utilisation des paramètres URL).
 
 Le processus d'inscription sera le même : ils devront remplir leur nom, nom d'utilisateur, adresse e-mail, nom du site web et titre, etc... mais le plan ou le modèle de site seront déjà pré-sélectionnés pour eux.
 
-### S'inscrire avec des Paiements Manuels :
+### S'inscrire avec des Paiements Manuels : {#registering-using-manual-payments}
 
 Si vous ne voulez pas utiliser PayPal, Stripe ou toute autre passerelle de paiement offerte par Ultimate Multisite ou ses intégrations additionnelles, vous pouvez utiliser les paiements manuels pour vos clients. De cette façon, vous pourrez générer une facture pour qu'ils paient sur votre processeur de paiement préféré après leur inscription sur votre réseau.
 

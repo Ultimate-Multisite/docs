@@ -3,28 +3,28 @@ title: Огляд REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Довідник REST API
+# Довідник REST API {#rest-api-reference}
 
-## Базова конфігурація
+## Базова конфігурація {#base-configuration}
 
 **Базовий URL:** `{site_url}/wp-json/wu/v2/`
 **Автентифікація:** API-ключ і секрет (HTTP Basic Auth або параметри URL)
 
-## Автентифікація
+## Автентифікація {#authentication}
 
-### Увімкнути API
+### Увімкнути API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Отримати облікові дані API
+### Отримати облікові дані API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Методи автентифікації
+### Методи автентифікації {#authentication-methods}
 
 **HTTP Basic Auth (рекомендовано):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Основні кінцеві точки
+## Основні кінцеві точки {#core-endpoints}
 
-### 1. API клієнтів
+### 1. API клієнтів {#1-customers-api}
 
 **Базовий маршрут:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API сайтів
+### 2. API сайтів {#2-sites-api}
 
 **Базовий маршрут:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API членств
+### 3. API членств {#3-memberships-api}
 
 **Базовий маршрут:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API продуктів
+### 4. API продуктів {#4-products-api}
 
 **Базовий маршрут:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API платежів
+### 5. API платежів {#5-payments-api}
 
 **Базовий маршрут:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API доменів
+### 6. API доменів {#6-domains-api}
 
 **Базовий маршрут:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Кінцева точка реєстрації
+## Кінцева точка реєстрації {#registration-endpoint}
 
 Кінцева точка `/register` забезпечує повний процес checkout/реєстрації:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Кінцеві точки суверенних орендарів
+## Кінцеві точки суверенних орендарів {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 додає покриття REST для суверенних орендарів для інтеграцій, які надають, перевіряють або верифікують ізольованих орендарів.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 Сприймайте `ready: false` як блокер перед запуском. Перевірте подробиці верифікації, виправте прив’язку хоста бази даних, чергу, надання користувачів або проблему маршрутизації, а потім повторіть верифікацію.
 
-## Відповіді про помилки
+## Відповіді про помилки {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## Пагінація та фільтрація
+## Пагінація та фільтрація {#pagination-and-filtering}
 
 **Параметри запиту:**
 ```http

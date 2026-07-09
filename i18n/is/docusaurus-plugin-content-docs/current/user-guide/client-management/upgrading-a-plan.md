@@ -3,7 +3,7 @@ title: Uppgrunnding staðar
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Uppgradering ein Plan (v2)
+# Uppgradering ein Plan (v2) {#upgrading-a-plan-v2}
 
 _**VIKTIG MERKNAD: Þessi grein er aðalmenningurinn fyrir Ultimate Multisite v2.x.**_
 
@@ -37,7 +37,7 @@ Ef þeir velja plan eða pakki sem ekki breytur nýtt en það sem er nú í skr
 
 Eftir að kaup fer eftir að kaupferli er fullfuið, verða nýttar vörp (eða vörp) viðbúnað til reikninga þeirra og allar takmarkanir eða eiginleikar nýrra vörpanna verða strax viðbúnað því: bílunar, skráningarsvæði, innlegg, m.fl...
 
-## Uppgrað og nedgravnir leiðir (Upgrade and Downgrade Paths)
+## Uppgrað og nedgravnir leiðir (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Á hverjum vörpu þitt mun þú hafa **Up & Downgrades** tab. Fyrirst möguleiki á þessum tabinn er fältur nefnd **Plan Group**.
 

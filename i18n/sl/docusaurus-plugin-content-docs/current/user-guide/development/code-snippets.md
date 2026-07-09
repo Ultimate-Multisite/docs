@@ -3,7 +3,7 @@ title: Kod segmenti
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kod fragmente za v2
+# Kod fragmente za v2 {#code-snippets-for-v2}
 
 Osnovno, kod fragmente za **WordPress** se uporabljajo za opravljanje določenih dejanj, ki bi jih drugače morali zahtevati poseben manjši plugin. Takšni kod fragmente se postavljajo v en od WordPress jezzer ali teme (običajno v datoteko functions.php vaše teme) ali lahko uporabite kot MU plugin.
 
@@ -15,7 +15,7 @@ V tem članku vam bom pokazal tri kod fragmente, ki jih lahko uporabite z **Ulti
 
   * [**Popravljanje CORS težav z Font-Icons na mapiranih domenah**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Spremanje položaja menija Račun
+## Spremanje položaja menija Račun {#changing-the-position-of-the-account-menu-item}
 
 Da bi spremenili položaj menija Račun na Dashboardu vašega stranke, le dodajte naslednji kod fragment v functions.php vaše glavne teme. Lahko ga tudi postavite notranje v en od vaših mu-pluginov ali prilagojenih pluginov.
 
@@ -37,8 +37,8 @@ Opazite, da uporabniki lahko pretplatijo le na **Plan**, ne na Paket ali Uslugo,
 
 ![Lista izdelkov z ID-ji načrtkov](/img/admin/products-list.png)
 
-## Reševanje težav s CORS v povezavi z Font-Icons na mapiranih domenah
-## Reševanje težav s CORS v povezavi z Font-Icons na mapiranih domenah
+## Reševanje težav s CORS v povezavi z Font-Icons na mapiranih domenah {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Reševanje težav s CORS v povezavi z Font-Icons na mapiranih domenah {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Po mapiranju domena na poddomeno boste morda ugotovili, da je strani težko zagotoviti nalaganje prilagojenih fontov. To je posledica blokiranja izza domene (cross-origin block) v nastavitvah vašega serverja.
 
@@ -46,13 +46,13 @@ Ker so fajli fontov skoraj vedno vključen neposredno iz CSS-a, naš plugin za m
 
 Spodaj so kod segmenti za rešitev problema za Apache in NGINX. Ti spremembe zahtevajo napredno znanje konfiguracij serverjevih datotek (.htaccess datotek in NGINX konfiguracijske datoteke). Če ste neprepričani, da boste sami opravili te spremembe, pošljite to stran vašim agentom podporuke hostinga, če potrebujete pomoč.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Na svoji .htaccess datoteci dodajte:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Na svojo server konfiguracijsko datoteko (lokacija se razlikuje od serverja do serverja) dodajte:
 

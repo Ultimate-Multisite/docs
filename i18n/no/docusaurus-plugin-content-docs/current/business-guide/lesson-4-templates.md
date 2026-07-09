@@ -3,15 +3,15 @@ title: 'Leksjon 4: Bygge nisjetemater'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leksjon 4: Bygge nisjetemplates
+# Leksjon 4: Bygge nisjetemplates {#lesson-4-building-niche-templates}
 
 Malene er kjernen i din spesialiserte verdi. En eier av et treningsstudio som registrerer seg og ser en nettside som allerede ser ut som en treningsnettside – med timeplaner, trenertilbud og riktig bildemateriale – er langt mer sannsynlig å bli værende enn en som ser et tomt lerret.
 
-## Hvor vi slapp
+## Hvor vi slapp {#where-we-left-off}
 
 Vi har nå et fungerende FitSite-nettverk med Ultimate Multisite installert og konfigurert. Nå skal vi bygge malene som får FitSite til å føles som om det er bygget spesifikt for treningsvirksomheter.
 
-## Hvorfor nisjetemplates betyr noe
+## Hvorfor nisjetemplates betyr noe {#why-niche-templates-matter}
 
 Generiske maler tvinger kundene dine til å gjøre det vanskelige arbeidet: å finne ut hvilke sider de trenger, hvilken innholdsstruktur som fungerer, og hvordan de skal få det til å se riktig ut for bransjen sin. Nisjetemplates eliminerer denne friksjonen.
 
@@ -24,11 +24,11 @@ En eier av et treningsstudio som registrerer seg på FitSite, bør se:
 
 De fyller inn sine detaljer. De starter ikke fra bunnen av.
 
-## Planlegging av malene dine
+## Planlegging av malene dine {#planning-your-templates}
 
 Før du bygger, bestem deg for hvilke maler du skal tilby. For FitSite skal vi lage tre:
 
-### Mal 1: Studio Essential
+### Mal 1: Studio Essential {#template-1-studio-essential}
 
 For små studioer og personlige trenere.
 
@@ -39,7 +39,7 @@ For små studioer og personlige trenere.
 - **Kontakt**-side med kart og skjema
 - **Rent, moderne design** med en fargepalett som passer til fitness
 
-### Mal 2: Gym Pro
+### Mal 2: Gym Pro {#template-2-gym-pro}
 
 For etablerte treningsstudioer med flere tjenester.
 
@@ -50,7 +50,7 @@ For etablerte treningsstudioer med flere tjenester.
 - **Vitnesbyrd**-seksjon på forsiden
 - **Mer fremtredende merkevare**-alternativer
 
-### Mal 3: Fitness Chain
+### Mal 3: Fitness Chain {#template-3-fitness-chain}
 
 For virksomheter med flere lokasjoner.
 
@@ -60,17 +60,17 @@ For virksomheter med flere lokasjoner.
 - **Sentralisert merkevarebygging** med lokasjonsspesifikke detaljer
 - **Stabdirektorium** på tvers av lokasjoner
 
-## Bygge en mal-side
+## Bygge en mal-side {#building-a-template-site}
 
 I Ultimate Multisite er en mal rett og slett en WordPress-side som er konfigurert slik du ønsker at nye kundesider skal se ut. Slik oppretter du en:
 
-### Trinn 1: Opprett mal-siden
+### Trinn 1: Opprett mal-siden {#step-1-create-the-template-site}
 
 1. Naviger til **Sites > Add New** i nettverksadministrasjonen din
 2. Opprett en side kalt `template-studio-essential`
 3. Denne siden blir ditt arbeidsområde
 
-### Trinn 2: Installer og konfigurer temaet
+### Trinn 2: Installer og konfigurer temaet {#step-2-install-and-configure-the-theme}
 
 Bytt til mal-sidens dashboard og:
 
@@ -82,7 +82,7 @@ Bytt til mal-sidens dashboard og:
 Velg et tema som er fleksibelt nok til å se bra ut for fitness, men ikke så komplisert at kundene dine ikke klarer å administrere det. Temaer som Astra, GeneratePress eller Kadence fungerer bra fordi de er lette, tilpassbare og godt støttet.
 :::
 
-### Trinn 3: Opprett sidene
+### Trinn 3: Opprett sidene {#step-3-create-the-pages}
 
 Bygg ut hver side med:
 
@@ -92,7 +92,7 @@ Bygg ut hver side med:
 
 Gjør plassholderinnholdet instruktivt der det er mulig. I stedet for generisk fylltekst, skriv innhold som: "Erstatt dette med en kort beskrivelse av studioet ditt og hva som gjør det spesielt. Nevn treningsfilosofien din, års erfaring, eller hva kundene kan forvente."
 
-### Trinn 4: Konfigurere plugins
+### Trinn 4: Konfigurere plugins {#step-4-configure-plugins}
 
 Installer og aktiver plugins som treningsstudioer trenger:
 
@@ -100,7 +100,7 @@ Installer og aktiver plugins som treningsstudioer trenger:
 - Et kontaktskjema-plugin
 - Et SEO-plugin (forhåndskonfigurert med fitness-relevante standardinnstillinger)
 
-### Trinn 5: Merke som mal
+### Trinn 5: Merke som mal {#step-5-mark-as-template}
 
 1. Naviger til **Ultimate Multisite > Sites**
 2. Rediger mal-siden
@@ -108,7 +108,7 @@ Installer og aktiver plugins som treningsstudioer trenger:
 
 Gjenta denne prosessen for hver mal du ønsker å tilby.
 
-## Sjekkliste for malkvalitet
+## Sjekkliste for malkvalitet {#template-quality-checklist}
 
 Før du gjør en mal tilgjengelig, verifiser:
 
@@ -121,7 +121,7 @@ Før du gjør en mal tilgjengelig, verifiser:
 - [ ] Ingen ødelagte lenker eller manglende ressurser
 - [ ] Sidens lastetid er akseptabel
 
-## FitSite-nettverket så langt
+## FitSite-nettverket så langt {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Hva vi bygde i denne leksjonen
+## Hva vi bygde i denne leksjonen {#what-we-built-this-lesson}
 
 - **Tre nisjespesifikke maler** designet for ulike størrelser av fitnessvirksomheter
 - **Fitness-passende innhold og bildemateriale** som får plattformen til å føles spesielt bygget

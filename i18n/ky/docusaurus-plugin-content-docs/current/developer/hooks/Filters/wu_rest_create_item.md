@@ -4,11 +4,11 @@ title: Чыпка - wu_rest_create_item
 sidebar_label: wu_rest_create_item
 _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 ---
-# Чыпка: wu_rest_create_item
+# Чыпка: wu_rest_create_item {#filter-wurestcreateitem}
 
 Сурам менен улантууга уруксат бар-жогун чыпкалайт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 | $rest_base | `array` | Объекттин slug'ы. |
 | $this | `\Base_Manager` | Объекттин нускасы. |
 
-### Киргизилген версия
+### Киргизилген версия {#since}
 
 - 2.0.0
-### Булак
+### Булак {#source}
 
 362-сапта [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L362) ичинде аныкталган

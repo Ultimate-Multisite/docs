@@ -3,19 +3,19 @@ title: 'Lliçó 13: Escalabilitat'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Aula 13: Escalar
+# Aula 13: Escalar {#lesson-13-scaling-up}
 
 Tens una plataforma funcional amb clients pagadors. Aquesta aula et cobreix com passar d'una operació petita a un negoci sostenible: escalar l'infraestructura, automatitzar operacions i augmentar els ingressos per client.
 
-## On acab vam
+## On acab vam {#where-we-left-off}
 
 FitSite està en línia, els clients s'estan inscrivent i tu estàs gestionant operacions diàries. Ara ens centrem en el creixement.
 
-## Conèixer els teus números
+## Conèixer els teus números {#know-your-numbers}
 
 Abans d'escalar, has de comprendre on et trobes:
 
-### Mètriques clau
+### Mètriques clau {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Ingressos mensuals recurrents totals.
 - **Comptació de clients**: Total de subscriptors actius.
@@ -24,7 +24,7 @@ Abans d'escalar, has de comprendre on et trobes:
 - **LTV (Lifetime Value)**: Ingressos mitjans per client durant tot el seu període de subscriptió.
 - **CAC (Customer Acquisition Cost)**: Cost mitjà per adquirir un client.
 
-### Exemple: FitSite amb 50 clients
+### Exemple: FitSite amb 50 clients {#example-fitsite-at-50-customers}
 
 | Mètrica | Valor |
 |--------|-------|
@@ -36,9 +36,9 @@ Abans d'escalar, has de comprendre on et trobes:
 
 Aquests números et diuen a què has de centrar-te. Deserció alta? Soluciona la retenció. ARPU baix? Impulla les actualitzacions. CAC alt? Optimitza els canals d'adquisició.
 
-## Escalar l'infraestructura
+## Escalar l'infraestructura {#scaling-infrastructure}
 
-### Quan escalar
+### Quan escalar {#when-to-scale}
 
 Escala l'hosting quan:
 
@@ -47,7 +47,7 @@ Escala l'hosting quan:
 - Estàs aproximant 100+ sites actius
 - Augmenten les queixes dels clients sobre la velocitat
 
-### Com escalar
+### Com escalar {#how-to-scale}
 
 - **Escalabilitat vertical (Vertical scaling)**: Actualitza a un servidor més gran (més CPU, RAM).
 - **Capes de cache (Caching layers)**: Afafeu Redis/Memcached per a cache d'objectes, cache de pàgines per a contingut estàtic.
@@ -55,7 +55,7 @@ Escala l'hosting quan:
 - **Optimització de la base de dades**: A mesura que la xarxa creix, les truyades de la base de dades es ralentitzen. Optimitza les taules, afegeix indexes i considera un servidor de base de dades dedicat.
 - **Separar preocupacions (Separate concerns)**: Trasloca l'emmagatzematge de mitjans a emmagatzematge d'objectes (compatible amb S3) i descarrega el correu electrònic a un servei de correu electrònic transaccional.
 
-### Migració d'hosting
+### Migració d'hosting {#hosting-migration}
 
 Si el teu host actual no pot escalar més, planifica una migració:
 
@@ -65,11 +65,11 @@ Si el teu host actual no pot escalar més, planifica una migració:
 4. Actualitza el DNS amb un TTL mínim abans.
 5. Verifica que tot funciona després de la migració.
 
-## Automatitzar operacions
+## Automatitzar operacions {#automating-operations}
 
 A mesura que creixes, els processos manuals es converteixen en cuellos d'amenaça. Automatitza el que puguis:
 
-### Webhooks i Zapier
+### Webhooks i Zapier {#webhooks-and-zapier}
 
 Utilitza [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/integrations/zapier) per automatitzar:
 
@@ -78,7 +78,7 @@ Utilitza [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/in
 - **Fallades de pagament** → Alerta al teu eina de monitorització.
 - **Actualitzacions de plan** → Correu electrònic de felicitació amb guia de noves funcionalitats.
 
-### Automatització de correu electrònic
+### Automatització de correu electrònic {#email-automation}
 
 Passa de correus electrònics manuals a seqüències automatitzades:
 
@@ -87,30 +87,30 @@ Passa de correus electrònics manuals a seqüències automatitzades:
 - Suggeriments d'actualització quan els clients s'aproximen als límits del plan.
 - Recordatoris de renovació per als subscriptors anuals.
 
-### Automatització de suport
+### Automatització de suport {#support-automation}
 
 - **Respostes preparades (Canned responses)** per a preguntes comunes.
 - **Respostes automàtiques** reconeixent la recepció dels tiquets de suport.
 - **Suggeriments de base de coneixement** quan els clients envien tiquets que coincideixen amb articles existents.
 
-## Augmentar els ingressos
+## Augmentar els ingressos {#increasing-revenue}
 
 Creixer no és només tenir més clients. També es tracta d'augmentar els ingressos per client.
 
-### Venda addicional a clients existents (Upselling)
+### Venda addicional a clients existents (Upselling) {#upselling-existing-customers}
 
 - **Actualitzacions de plan**: Campanyes dirigides que mostren funcionalitats de Creixement/Pro als clients Iniciants.
 - **Augmentos d'ordres (Order bumps)**: Promou productes addicionals als clients existents per correu electrònic.
 - **Conversió anual**: Ofereix als clients mensuals un descompte per passar a facturació anual.
 
-### Noves flius de ingressos
+### Noves flius de ingressos {#new-revenue-streams}
 
 - **Configuració completada (Done-for-you setup)**: Cobra una tarifa premium per configurar i personalitzar el site d'un client.
 - **Serveis de disseny personalitzat**: Ofereix treball de disseny a mida al-tres de la plantilla.
 - **Sesions de formació**: Sesions pagades de demostració individual per a clients que desitgen ajuda pràctica.
 - **Plugins premium**: Ofereix plugins premium de niș de pagament com a add-ons (per exemple, un widget de reserva de classes de fitness).
 
-### Augmentar els preus
+### Augmentar els preus {#raising-prices}
 
 A mesura que la teva plataforma madura i afegeix valor:
 
@@ -118,7 +118,7 @@ A mesura que la teva plataforma madura i afegeix valor:
 - Augmenta els preus per als nous inscripcions.
 - Justifica els augmentos amb noves funcionalitats i millores.
 
-## Construir un equip
+## Construir un equip {#building-a-team}
 
 En algun moment, no pots fer-ho tot sol. Les primeres contractacions comunes són:
 
@@ -128,7 +128,7 @@ En algun moment, no pots fer-ho tot sol. Les primeres contractacions comunes só
 
 No necessites empleats. Els contractes i els *freelancers* funcionen molt bé per un negoci de plataforma.
 
-## Hitos de creixement
+## Hitos de creixement {#growth-milestones}
 
 | Hito | MRR aproximat | Focus |
 |-----------|--------------|-------|
@@ -138,7 +138,7 @@ No necessites empleats. Els contractes i els *freelancers* funcionen molt bé pe
 | 250-500 clients | $25.000-$50.000 | Construcció d'equip, noves flius de ingressos, funcionalitats premium. |
 | 500+ clients | $50.000+ | Maduració de la plataforma, nișos adjacents, potencial de sortida. |
 
-## El que vam construir en aquesta aula
+## El que vam construir en aquesta aula {#what-we-built-this-lesson}
 
 - **Un marc de mètriques** per entendre la salut del negoci.
 - **Plan d'escalabilitat d'infraestructura** per creixer de dèzenes a centenars de sites.

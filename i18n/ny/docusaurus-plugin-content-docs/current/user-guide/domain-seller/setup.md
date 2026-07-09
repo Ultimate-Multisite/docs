@@ -3,21 +3,21 @@ title: Kuthandiza ndi Kukhazikitsa ndi Mwandikazi
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Mwandikizi wa Domain: Kuanzisha na Kuweka Watoa Huduma (Provider Configuration)
+# Mwandikizi wa Domain: Kuanzisha na Kuweka Watoa Huduma (Provider Configuration) {#domain-seller-setup-and-provider-configuration}
 
 Addon ya Domain Seller inatoka na mwongozo wa kuanzisha unaokuelekeza hatua zote unazohitaji kufanya. Ukurasa huu unahusu mtiririko wa mwongozo huo na jinsi ya kuweka au kubadilisha watoa huduma (providers) baada ya hapo.
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 - **Multisite Ultimate** v2.4.12 au zaidi, inayoamsha kwenye mtandao
 - **PHP** 7.4+
 - API credentials kwa angalau moja ya registrar inayotumiwa
 
-## Mwongozo wa kuanzisha mara ya kwanza (First-run setup wizard)
+## Mwongozo wa kuanzisha mara ya kwanza (First-run setup wizard) {#first-run-setup-wizard}
 
 Mwongozo huu unaanza kiotomatiki wakati mwanzo unapofanya usajili wa mtandao (network-activate) plugin. Unaweza kupata pia wakati wowote kutoka **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Hatua ya 1 — Chagua mtoa huduma (Choose a provider)
+### Hatua ya 1 — Chagua mtoa huduma (Choose a provider) {#step-1--choose-a-provider}
 
 Chagua registrar unayotaka kuunganisha nalo. Chaguo zilizosomozwa:
 
@@ -33,7 +33,7 @@ Chagua registrar unayotaka kuunganisha nalo. Chaguo zilizosomozwa:
 | NameSilo | Hapana | Hapana |
 | Enom | Ndiyo | Hapana |
 
-### Hatua ya 2 — Ingiza taarifa (Enter credentials)
+### Hatua ya 2 — Ingiza taarifa (Enter credentials) {#step-2--enter-credentials}
 
 Kila mtoa huduma una sehemu tofauti za taarifa:
 
@@ -57,11 +57,11 @@ Kila mtoa huduma una sehemu tofauti za taarifa:
 
 Chitete **Sandbox mode** pamene muli ndi ulemu wopereka kuti mupatsa kuwoneka pa mwayi wopereka poyamba mopereka kupita m'mwayi wopereka.
 
-### Step 3 — Yendetsa kukonzekera (Test the connection)
+### Step 3 — Yendetsa kukonzekera (Test the connection) {#step-3--test-the-connection}
 
 Kutete **Test Connection**. Wizard imapereka API call yomwe yomwe imapereka kuti mupatsa mapeto ndi kukhala ndi malo. Onesha ndalama zosiyana pa mapeto monga momwe mungayendetsa poyamba.
 
-### Step 4 — Kutsatira TLDs (Import TLDs)
+### Step 4 — Kutsatira TLDs (Import TLDs) {#step-4--import-tlds}
 
 Kutete **Import TLDs** kuti mupatsa zonse za TLDs zomwe zili pansi ndi mitengo ya wholesale kuchokera kwa provider yomwe muli wokhala ndi malo. Izi zimapereka list ya TLDs yomwe imaperekedwa pa mapeto a domain. Kutsatira kumatha kulimbikitsa sekondi kapena sekondi ziwiri poyamba kuti mupatsa mitengo ya wholesale zomwe zili pansi ndi kuwoneka kwa provider omwe muli wokhala ndi list ikulu ya TLDs.
 
@@ -73,17 +73,17 @@ TLDs zimaperekedwa pano poyamba poyamba poyamba poyamba poyamba poyamba poyamba 
 - **Mfutso wa cache ya kuwoneka (Availability cache duration)** — kutanthauza kuti m'moyo woyendwa wokwoneka ndi kuphunzira kwa mpambano; mavuto omwe ochepa amapereka zokhazikitsa koma amapangidwa nthawi yomweyo.
 - **Kupanga domain products** — link yofupi kuti m'moyo wopambana (Products list)
 
-### Kuti m'moyo woyendwa wokwoneka (second provider)
+### Kuti m'moyo woyendwa wokwoneka (second provider) {#step-5--create-a-domain-product}
 
 Chonje **Configure providers** ndikugwira wizard pano kwa mpambano woyendwa wosiyanasiyana. Muli ndi mpambano osiyanasiyana omwe mwapanga m'moyo wopambana. Kodi mupereka mpambano woyendwa wokhutskizi (domain product) ku mpambano oyenera, kapena mupereka kuti muli m'default.
 
-### Kuti TLDs kukhazikitsidwe ndi m'moyo wopambana (Syncing TLDs manually)
+### Kuti TLDs kukhazikitsidwe ndi m'moyo wopambana (Syncing TLDs manually) {#reconfiguring-a-provider}
 
 M'moyo wopambana, chonje **Sync TLDs** poyenera mpambano yoyendwa wokwoneka kuti mupeza mavuto omwe ochepa. Izi zimene kukhala kofunika pambuyo potera mpambano imapereka mavuto awholesale kapena kupanga TLDs zatsopano.
 
 ---
 
-## Logs (M'moyo wopambana)
+## Logs (M'moyo wopambana) {#adding-a-second-provider}
 
 Kukonse mpambano imapereka ku channel yoyenera kwake. M'moyo wopambana ndi wogulitsidwa m'moyo wofunsa **Network Admin › Ultimate Multisite › Logs**:
 
@@ -103,7 +103,7 @@ Kukonse mpambano imapereka ku channel yoyenera kwake. M'moyo wopambana ndi wogul
 
 ---
 
-## Zomwezi za ulemu wa M'maka (Provider capability notes)
+## Zomwezi za ulemu wa M'maka (Provider capability notes) {#syncing-tlds-manually}
 
 Sikuti ndipo m'maka onse a registrar amapereka zomwe ndi ntchito yomwe. Addon imapereka ntchito zomwe si zikubwera ndi m'maka ya admin kwa njira yomwezi, m'maka kuti zimweze kukhala ndi mavuto osalira.
 

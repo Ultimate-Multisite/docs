@@ -3,15 +3,15 @@ title: Meni Ospitalite
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Meni Ospitalite
+# Meni Ospitalite {#hospitality-menus}
 
 Fonksyon **Meni Ospitalite** a pèmèt Theme Builder jenere epi entegre paj meni manje ak bwason ki estriktire dirèkteman nan site WordPress ou a.
 
-## Apèsi
+## Apèsi {#overview}
 
 Theme Builder kapab kounye a kreye paj meni pwofesyonèl, estriktire pou biznis ospitalite tankou restoran, kafe, ba, ak sèvis katering. Meni sa yo entegre nèt nan konsepsyon site ou a epi yo ka fasilman mete ajou ak jere.
 
-## Kalite Ospitalite ki Sipòte
+## Kalite Ospitalite ki Sipòte {#supported-hospitality-types}
 
 - **Restoran** — meni manje ak sèvis konplè
 - **Kafe** — meni kafe ak ti manje lejè
@@ -21,9 +21,9 @@ Theme Builder kapab kounye a kreye paj meni pwofesyonèl, estriktire pou biznis 
 - **Kamyon Manje** — meni sèvis manje mobil
 - **Brasri ak Kav Diven** — meni bwason ak deskripsyon
 
-## Estrikti Meni
+## Estrikti Meni {#menu-structure}
 
-### Kategori Meni
+### Kategori Meni {#menu-categories}
 
 Meni yo òganize an kategori:
 
@@ -34,7 +34,7 @@ Meni yo òganize an kategori:
 - **Bwason** — bwason (ak alkòl ak san alkòl)
 - **Espesyal** — espesyal chak jou oswa sezonye
 
-### Fòma Atik Meni
+### Fòma Atik Meni {#menu-item-format}
 
 Chak atik meni gen ladan:
 
@@ -49,7 +49,7 @@ Chak atik meni gen ladan:
 }
 ```
 
-#### Chan Atik yo
+#### Chan Atik yo {#item-fields}
 
 | Chan | Kalite | Deskripsyon |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Chak atik meni gen ladan:
 | `allergens` | array | Alèjèn komen (Nwa, Fwidmè ak kokiy, elatriye) |
 | `availability` | string | Lè li disponib (Chak jou, Sezonye, elatriye) |
 
-## Kreye Meni Ospitalite
+## Kreye Meni Ospitalite {#creating-hospitality-menus}
 
-### Etap 1: Bay Enfòmasyon Meni an
+### Etap 1: Bay Enfòmasyon Meni an {#step-1-provide-menu-information}
 
 Di Theme Builder sou meni ou a:
 
@@ -71,7 +71,7 @@ Kreye yon meni restoran pou restoran Italyen mwen an ak ti antre,
 plat pasta, plat prensipal, ak desè. Mete pri ak deskripsyon.
 ```
 
-### Etap 2: Theme Builder Jenere Meni an
+### Etap 2: Theme Builder Jenere Meni an {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Fòmate pri ak deskripsyon
 5. Ajoute enfòmasyon alimantè ak alèjèn
 
-### Etap 3: Revize epi Pèsonalize
+### Etap 3: Revize epi Pèsonalize {#step-3-review-and-customize}
 
 Ou kapab:
 
@@ -91,9 +91,9 @@ Ou kapab:
 4. Mete deskripsyon ak enfòmasyon alimantè ajou
 5. Ajiste estil ak aranjman
 
-## Opsyon Afiche Meni
+## Opsyon Afiche Meni {#menu-display-options}
 
-### Paj Meni Konplè
+### Paj Meni Konplè {#full-menu-page}
 
 Yon paj dedye ki afiche meni konplè ou a:
 
@@ -102,7 +102,7 @@ Yon paj dedye ki afiche meni konplè ou a:
 - Aranjman ki bon pou enprime
 - Konsepsyon ki adapte ak mobil
 
-### Widget Meni
+### Widget Meni {#menu-widget}
 
 Entegre seksyon meni sou lòt paj:
 
@@ -111,7 +111,7 @@ Entegre seksyon meni sou lòt paj:
 - Meni bwason sou paj ba
 - Prezantasyon desè nan pye paj
 
-### PDF Meni
+### PDF Meni {#menu-pdf}
 
 Jenere yon meni PDF ki ka telechaje:
 
@@ -120,9 +120,9 @@ Jenere yon meni PDF ki ka telechaje:
 - Gen imaj ak deskripsyon ladan
 - Fasil pou pataje ak voye pa imel
 
-## Enfòmasyon Alimantè ak Alèjèn
+## Enfòmasyon Alimantè ak Alèjèn {#dietary-and-allergen-information}
 
-### Atribi Alimantè
+### Atribi Alimantè {#dietary-attributes}
 
 Make atik yo ak enfòmasyon alimantè:
 
@@ -134,7 +134,7 @@ Make atik yo ak enfòmasyon alimantè:
 - **Ba nan Kaboyidrat** — kaboyidrat redwi
 - **Wo nan Pwoteyin** — rich an pwoteyin
 
-### Avètisman Alèjèn
+### Avètisman Alèjèn {#allergen-warnings}
 
 Mete alèjèn komen yo:
 
@@ -147,9 +147,9 @@ Mete alèjèn komen yo:
 - **Gluten** — ble ak grenn ki gen gluten
 - **Sezam** — grenn sezam ak lwil sezam
 
-## Jesyon Meni
+## Jesyon Meni {#menu-management}
 
-### Mete Pri yo Ajou
+### Mete Pri yo Ajou {#updating-prices}
 
 Mete pri meni yo ajou fasilman:
 
@@ -159,7 +159,7 @@ Mete pri meni yo ajou fasilman:
 4. Sove chanjman yo
 5. Chanjman yo parèt imedyatman sou site ou a
 
-### Ajoute Atik Sezonye
+### Ajoute Atik Sezonye {#adding-seasonal-items}
 
 Kreye varyasyon meni sezonye:
 
@@ -169,7 +169,7 @@ Kreye varyasyon meni sezonye:
 4. Pwograme dat disponiblite yo
 5. Afiche otomatikman pandan sezon an
 
-### Jere Espesyal yo
+### Jere Espesyal yo {#managing-specials}
 
 Afiche espesyal chak jou oswa chak semèn:
 
@@ -179,7 +179,7 @@ Afiche espesyal chak jou oswa chak semèn:
 4. Mete ajou chak jou oswa chak semèn
 5. Achive ansyen espesyal yo
 
-## Entegrasyon ak Theme Builder
+## Entegrasyon ak Theme Builder {#integration-with-theme-builder}
 
 Lè w ap itilize Theme Builder pou site ospitalite:
 
@@ -189,9 +189,9 @@ Lè w ap itilize Theme Builder pou site ospitalite:
 4. **Optimizasyon mobil** — meni yo afiche bèl sou telefòn
 5. **Optimizasyon SEO** — meni yo fasil pou motè rechèch jwenn
 
-## Meyè Pratik
+## Meyè Pratik {#best-practices}
 
-### Konsepsyon Meni
+### Konsepsyon Meni {#menu-design}
 
 - **Òganizasyon klè** — estrikti kategori lojik
 - **Deskripsyon fasil pou li** — ki bay anvi manje epi ki enfòmatif
@@ -199,7 +199,7 @@ Lè w ap itilize Theme Builder pou site ospitalite:
 - **Foto pwofesyonèl** — imaj manje bon kalite
 - **Espas vid** — pa chaje paj la twòp
 
-### Kontni
+### Kontni {#content}
 
 - **Deskripsyon egzat** — dekri atik yo avèk presizyon
 - **Mete espesyal yo an evidans** — fè espesyal yo parèt klè
@@ -207,7 +207,7 @@ Lè w ap itilize Theme Builder pou site ospitalite:
 - **Mete ajou regilyèman** — kenbe pri ak atik yo aktyèl
 - **Itilize langaj ki bay apeti** — fè atik yo parèt bon gou
 
-### Aksesibilite
+### Aksesibilite {#accessibility}
 
 - **Polis fasil pou li** — itilize karaktè klè, lizib
 - **Kontras ase** — asire tèks la fasil pou li
@@ -215,9 +215,9 @@ Lè w ap itilize Theme Builder pou site ospitalite:
 - **Avètisman alèjèn** — afiche alèjèn yo kote yo byen vizib
 - **Bon pou mobil** — teste sou tout aparèy
 
-## Egzanp
+## Egzanp {#examples}
 
-### Estrikti Meni Restoran
+### Estrikti Meni Restoran {#restaurant-menu-structure}
 
 ```
 Aperitif
@@ -241,7 +241,7 @@ Desè
 └── Seleksyon Gelato
 ```
 
-### Estrikti Meni Kafe
+### Estrikti Meni Kafe {#cafe-menu-structure}
 
 ```
 Kafe
@@ -260,7 +260,7 @@ Sandwich
 └── Wrap Vejetaryen
 ```
 
-## Fonksyon ki Gen Rapò
+## Fonksyon ki Gen Rapò {#related-features}
 
 - [Kreye Meni](../abilities/create-menu.md) — kreye meni navigasyon
 - [Direksyon Konsepsyon](./design-direction.md) — pèsonalize konsepsyon sit ou a

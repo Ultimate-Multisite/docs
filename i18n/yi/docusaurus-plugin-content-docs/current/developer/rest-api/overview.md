@@ -3,28 +3,28 @@ title: REST API איבערבליק
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API רעפֿערענץ
+# REST API רעפֿערענץ {#rest-api-reference}
 
-## באַזע־קאָנפֿיגוראַציע
+## באַזע־קאָנפֿיגוראַציע {#base-configuration}
 
 **באַזע URL:** `{site_url}/wp-json/wu/v2/`
 **אָטענטיפֿיקאַציע:** API שליסל און געהיים (HTTP Basic Auth אָדער URL פּאַראַמעטערס)
 
-## אָטענטיפֿיקאַציע
+## אָטענטיפֿיקאַציע {#authentication}
 
-### אַקטיווירן API
+### אַקטיווירן API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### באַקומען API קרעדענציאַלן
+### באַקומען API קרעדענציאַלן {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### אָטענטיפֿיקאַציע־מעטאָדן
+### אָטענטיפֿיקאַציע־מעטאָדן {#authentication-methods}
 
 **HTTP Basic Auth (רעקאָמענדירט):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## עיקר־ענדפּוינטן
+## עיקר־ענדפּוינטן {#core-endpoints}
 
-### 1. קונים API
+### 1. קונים API {#1-customers-api}
 
 **באַזע־רוטע:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. פלעצער API
+### 2. פלעצער API {#2-sites-api}
 
 **באַזע־רוטע:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. מיטגלידערשאַפֿטן API
+### 3. מיטגלידערשאַפֿטן API {#3-memberships-api}
 
 **באַזע־רוטע:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. פּראָדוקטן API
+### 4. פּראָדוקטן API {#4-products-api}
 
 **באַזע־רוטע:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. צאָלונגען API
+### 5. צאָלונגען API {#5-payments-api}
 
 **באַזע־רוטע:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. דאָמיינס API
+### 6. דאָמיינס API {#6-domains-api}
 
 **באַזע־רוטע:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## רעגיסטראַציע־ענדפּוינט
+## רעגיסטראַציע־ענדפּוינט {#registration-endpoint}
 
 דער `/register` ענדפּוינט גיט אַ גאַנצן טשעקאַוט/רעגיסטראַציע־פֿלוס:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## זעלבשטענדיקע טענאַנט־ענדפּוינטן
+## זעלבשטענדיקע טענאַנט־ענדפּוינטן {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: מולטי־טענאַנסי 1.2.0 לייגט צו זעלבשטענדיקע טענאַנט REST דעקונג פֿאַר אינטעגראַציעס וואָס צושטעלן, דורכקוקן, אָדער באַשטעטיקן איזאָלירטע טענאַנטן.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 באַהאַנדלט `ready: false` ווי אַ פֿאַר־לאָנטש בלאָקירונג. קאָנטראָלירט די באַשטעטיקונג־פּרטים, פֿאַררעכט דעם דאַטאַבאַזע־האָסט־צובינד, ריי, באַניצער־צושטעלונג, אָדער רוטינג־פּראָבלעם, און פּרוּווט דערנאָך ווידער באַשטעטיקונג.
 
-## טעות־ענטפֿערס
+## טעות־ענטפֿערס {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## פּאַגינאַציע און פֿילטערונג
+## פּאַגינאַציע און פֿילטערונג {#pagination-and-filtering}
 
 **אָנפֿרעג־פּאַראַמעטערס:**
 ```http

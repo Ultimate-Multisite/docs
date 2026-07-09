@@ -3,7 +3,7 @@ title: تۆماری گۆڕانکارییەکانی بریکارەکانی پشت
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# گۆڕانکارییەکانی Support Agents
+# گۆڕانکارییەکانی Support Agents {#support-agents-changelog}
 
 وەشان: 1.0.14 - بڵاوکراوەتەوە لە 2026-05-05
 * چاککردنەوە: سەردێڕی Requires Plugins زیادکرا بۆ ڕاگەیاندنی دروستی پەیوەندی پێویستی pluginی WordPress

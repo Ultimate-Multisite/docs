@@ -3,7 +3,7 @@ title: Cùigeas nan cistean a tha thu a' tuiteam
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Cò mòr chriaidh (Frequently Asked Questions)
+# Cò mòr chriaidh (Frequently Asked Questions) {#frequently-asked-questions}
 
 Seo cean **cò mòr chriaidh** a tha a' tighinn gu sònraich a dh'chuidhdaisgeach.
 

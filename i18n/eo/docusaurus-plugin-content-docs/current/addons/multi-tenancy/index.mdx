@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Plurluado
+# Plurluado {#multi-tenancy}
 
 Distribuu subretejojn tra serviloj kaj datumbazoj por rendimento kaj sekureco
 
-## Ĉefaj elstaraĵoj de eldono 1.2.0
+## Ĉefaj elstaraĵoj de eldono 1.2.0 {#version-120-release-highlights}
 
 Plurluado 1.2.0 aldonas la fundamenton de suverena luanto por produktadaj izolaj laborfluoj:
 
@@ -25,21 +25,21 @@ Plurluado 1.2.0 aldonas la fundamenton de suverena luanto por produktadaj izolaj
 
 Vidu la uzantgvidilojn por [suverena migrada laborfluo](/user-guide/getting-started/sovereign-migration-workflow), [plurluada izolado](/user-guide/configuration/multi-tenancy-isolation), kaj [operacioj de suverenaj luantoj](/user-guide/administration/sovereign-tenant-operations).
 
-## Postuloj
+## Postuloj {#requirements}
 
 - WordPress 5.3 aŭ pli alta
 - PHP 7.4 aŭ pli alta
 - Multisite Ultimate kromprogramo (aktiva)
 
-## Instalado
+## Instalado {#installation}
 
 1. Alŝutu la aldonaĵajn dosierojn al via dosierujo `/wp-content/plugins/`
 2. Aktivigu la kromprogramon per la menuo 'Kromprogramoj' en WordPress
 3. Agordu la aldonaĵajn agordojn en la reta administrilo
 
-## Disvolvado
+## Disvolvado {#development}
 
-### Agordo
+### Agordo {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projekta Strukturo
+### Projekta Strukturo {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Reguloj por koda modernigo
 ```
 
-### Testado
+### Testado {#testing}
 
 La aldonaĵo inkluzivas ampleksan testan kadron:
 
@@ -93,54 +93,54 @@ La aldonaĵo inkluzivas ampleksan testan kadron:
 - **Testa Kovrado**: Agordita por spuri kodan kovradon
 - **Multisite-Testado**: Testoj ruliĝas en multisite-medio
 
-### Kodnormoj
+### Kodnormoj {#code-standards}
 
 - **WordPress Kodnormoj**: Devigitaj per PHPCS
 - **PHP 7.4+ Kongrueco**: Modernaj PHP trajtoj subtenataj
 - **Statika Analizo**: PHPStan integriĝo por tipkontrolado
 - **Koda Modernigo**: Rector reguloj por PHP ĝisdatigoj
 
-### Konstrusistemo
+### Konstrusistemo {#build-system}
 
 - **Havaĵa Prilaborado**: Malgrandigo por CSS/JS dosieroj
 - **Tradukado**: Generado de POT-dosiero
 - **Pakado**: Arkivokreado por distribuado
 - **Disvolva Reĝimo**: Nemalgrandigitaj havaĵoj por sencimigado
 
-## Agordo
+## Agordo {#configuration}
 
 La aldonaĵo subtenas diversajn agordajn opciojn alireblajn per la reta administra interfaco.
 
-### Agordo de suverena luanto
+### Agordo de suverena luanto {#sovereign-tenant-configuration}
 
 Por suverenaj luantoj, agordu la luantan datumbazon, dosiersisteman radikon, datumbazan gastigantan ligadon, kaj gastigantan kapablon antaŭ ol direkti trafikon al la luanto. Rulu migradan kontrolon post ĉiu ŝanĝo, kiu influas datumbazajn akreditaĵojn, gastigantan ligadon, vojigon, aŭ uzantan provizadon.
 
 Uzu `localhost` nur kiam la luanta rultempo kaj datumbazaj permesoj atendas lokan soketon aŭ sam-maŝinan aliron. Uzu `127.0.0.1` aŭ servan gastigantonomon kiam tio estas la permes-gastiganto agordita de via provizanto.
 
-### Hostinger kapablo
+### Hostinger kapablo {#hostinger-capability}
 
 La Hostinger plurluada kapablo funkcias kun la komuna Hostinger integriĝa ĵetono. Konfirmu, ke la domajno ĉeestas en hPanel, DNS montras al la Hostinger Account, kaj la luantaj datumbazaj agordoj kongruas kun hPanel antaŭ kontrolo.
 
-## Hokoj kaj Filtriloj
+## Hokoj kaj Filtriloj {#hooks-and-filters}
 
-### Agoj
+### Agoj {#actions}
 
 - `ultimate-multisite-addon-template_init` - Ekigita post aldonaĵa pravalorizo
 - `ultimate-multisite-addon-template_loaded` - Ekigita post kiam ĉiuj aldonaĵaj dosieroj estas ŝargitaj
 
-### Filtriloj
+### Filtriloj {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifi aldonaĵajn agordojn
 - `ultimate-multisite-addon-template_enabled` - Superregi aldonaĵan ebligan/malebligan staton
 
-## Permesilo
+## Permesilo {#license}
 
 Ĉi tiu aldonaĵo estas licencita laŭ GPL v3 aŭ pli posta.
 
-## Subteno
+## Subteno {#support}
 
 Por subteno kaj dokumentaro, vizitu [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ŝanĝprotokolo
+## Ŝanĝprotokolo {#changelog}
 
 - Versio 1.2.0 (2026-06-03): aldonu senstatan aŭtomatan ensaluton de luanto, Hostinger plurluadan kapablon, po-subretejan datumbazan kaj dosiersisteman izoladon, kontrolajn pordegojn por suverena migrado, plibonigojn de luanta praŝargo/datumbaza skribilo, agordeblan MySQL gastigantan ligadon, kaj pli sekuran suverenan malkonstruon.
 

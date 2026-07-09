@@ -3,11 +3,11 @@ title: Vidljivost sposobnosti
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Vidljivost Sposobnosti
+# Vidljivost Sposobnosti {#ability-visibility}
 
 Superdav AI Agent v1.12.0 uvodi kontrole **Vidljivosti Sposobnosti (Ability Visibility)** koje određuju na kojim platformama će se svaka sposobnost prikazati. To omogućava administratorima da precizno podešaju koje sposobnosti agenata su dostupne putem REST API-ja, MCP servera, WooCommerce integracija i drugih interfejsa.
 
-## Šta je Vidljivost Sposobnosti?
+## Šta je Vidljivost Sposobnosti? {#what-is-ability-visibility}
 
 Vidljivost sposobnosti je sistem dozvola koji kontroliše:
 
@@ -18,9 +18,9 @@ Vidljivost sposobnosti je sistem dozvola koji kontroliše:
 
 Svaka sposobnost nosi nivo vidljivosti koji određuje njenu dostupnost na različitim platformama.
 
-## Nivoi Vidljivosti
+## Nivoi Vidljivosti {#visibility-levels}
 
-### Javna (Public)
+### Javna (Public) {#public}
 
 **Javne sposobnosti** dostupne su svugdje:
 
@@ -32,7 +32,7 @@ Svaka sposobnost nosi nivo vidljivosti koji određuje njenu dostupnost na razli�
 
 Primjer: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interna (Internal)
+### Interna (Internal) {#internal}
 
 **Interne sposobnosti** dostupne su samo unutar vaše WordPress instalacije:
 
@@ -43,7 +43,7 @@ Primjer: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Primjer: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Partner sposobnosti** dostupne su samo za partnerima koji su na listi dozvoljenih:
 
@@ -54,7 +54,7 @@ Primjer: `manage-settings`, `view-analytics`, `export-data`
 
 Primjer: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Onemogućena (Disabled)
+### Onemogućena (Disabled) {#disabled}
 
 **Onemogućene sposobnosti** nisu dostupne nigdje:
 
@@ -63,15 +63,15 @@ Primjer: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Nisu dostupne u admin panelima
 - Korisno za zastarjele ili eksperimentalne sposobnosti
 
-## Upravljanje Vidljivošću Sposobnosti
+## Upravljanje Vidljivošću Sposobnosti {#managing-ability-visibility}
 
-### Pristup Podešavanjima Vidljivosti Sposobnosti
+### Pristup Podešavanjima Vidljivosti Sposobnosti {#accessing-ability-visibility-settings}
 
 1. Idite na **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Kliknite na karticu **Abilities**
 3. Vidjet ćete listu svih instaliranih sposobnosti sa njihovim nivoima vidljivosti
 
-### Pregled Detalja Sposobnosti
+### Pregled Detalja Sposobnosti {#viewing-ability-details}
 
 Kliknite na bilo koju sposobnost da vidite:
 
@@ -82,7 +82,7 @@ Kliknite na bilo koju sposobnost da vidite:
 - **Last updated**: Kada je vidljivost zadnji put promijenjena
 - **Status**: Prepoznata ili Neklasificirana
 
-### Promjena Nivoa Vidljivosti
+### Promjena Nivoa Vidljivosti {#changing-visibility-levels}
 
 Da biste promijenili vidljivost sposobnosti:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Masovne Operacije
+### Masovne Operacije {#bulk-operations}
 
 Da biste promijenili vidljivost više sposobnosti:
 
@@ -108,11 +108,11 @@ Da biste promijenili vidljivost više sposobnosti:
 2. Odaberite novi nivo vidljivosti iz padajućeg izbornika masovnih akcija
 3. Kliknite **Apply**
 
-## Lista Dozvoljenih Partnera (Partner Allow-List)
+## Lista Dozvoljenih Partnera (Partner Allow-List) {#partner-allow-list}
 
 **Lista dozvoljenih partnera** kontroliše koji vanjski partneri mogu pristupiti sposobnostima nivoa Partner.
 
-### Dodavanje Partnera
+### Dodavanje Partnera {#adding-partners}
 
 1. Idite na **Superdav AI Agent** → **Settings** → **Partners**
 2. Kliknite **Add Partner**
@@ -120,7 +120,7 @@ Da biste promijenili vidljivost više sposobnosti:
 4. Opcionalno dodajte ime i opis partnera
 5. Kliknite **Save**
 
-### Dodjeljivanje Sposobnosti Partnerima
+### Dodjeljivanje Sposobnosti Partnerima {#assigning-abilities-to-partners}
 
 Nakon dodavanja partnera:
 
@@ -130,7 +130,7 @@ Nakon dodavanja partnera:
 4. U sekciji "Partner allow-list", označite kutice za partnere koji bi trebali imati pristup
 5. Kliknite **Save**
 
-### Uklanjanje Partner Pristupa
+### Uklanjanje Partner Pristupa {#revoking-partner-access}
 
 Da biste uklonili pristup partnera:
 
@@ -140,11 +140,11 @@ Da biste uklonili pristup partnera:
 
 Partner će odmah izgubiti pristup toj sposobnosti.
 
-## Neklasificirane Sposobnosti
+## Neklasificirane Sposobnosti {#unclassified-abilities}
 
 Kada instalirate sposobnost treće strane koju Superdav AI Agent ne prepoznaje, označena je kao **Neklasificirana (Unclassified)**.
 
-### Admin Obavještenje za Neklasificirane Sposobnosti
+### Admin Obavještenje za Neklasificirane Sposobnosti {#admin-notice-for-unclassified-abilities}
 
 Vidjet ćete admin obavještenje:
 
@@ -161,7 +161,7 @@ Molimo vas da ih pregledate i klasifikujete.
 [Review Abilities] [Dismiss]
 ```
 
-### Pregled Neklasificiranih Sposobnosti
+### Pregled Neklasificiranih Sposobnosti {#reviewing-unclassified-abilities}
 
 1. Kliknite na **Review Abilities** u obavještenju
 2. Za svaku neklasificiranu sposobnost, vidjet ćete:
@@ -178,7 +178,7 @@ Molimo vas da ih pregledate i klasifikujete.
 
 4. Kliknite **Classify** da sačuvate svoju odluku
 
-### Zašto Klasifikovati Neklasificirane Sposobnosti?
+### Zašto Klasifikovati Neklasificirane Sposobnosti? {#why-classify-unclassified-abilities}
 
 Klasifikovanje sposobnosti:
 
@@ -187,9 +187,9 @@ Klasifikovanje sposobnosti:
 - **Omogućava funkcije**: Nakon klasifikacije, sposobnost postaje dostupna
 - **Dokumentuje odluke**: Vaši izbori su zapisani radi revizije
 
-## Vidljivost na Različitim Platformama
+## Vidljivost na Različitim Platformama {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Javne sposobnosti** dostupne su putem REST endpoint-ova:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Interne i Partner sposobnosti** nisu dostupne putem REST API-ja.
 
-### MCP Serveri
+### MCP Serveri {#mcp-servers}
 
 **Javne sposobnosti** dostupne su putem MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partner sposobnosti** dostupne su samo sa partner kredencijalima.
 
-### WooCommerce Integracija
+### WooCommerce Integracija {#woocommerce-integration}
 
 **Javne sposobnosti** povezane sa WooCommerce-om su dostupne:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Interne sposobnosti** nisu izložene WooCommerce-u.
 
-### Chat Interfejs
+### Chat Interfejs {#chat-interface}
 
 **Sve sposobnosti** (Javne, Interne, Partner) dostupne su u chatu, ovisno o dozvolama korisnika:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Obični korisnici vide samo Javne sposobnosti
 - Partneri vide Javne + Partner sposobnosti (ako su na listi dozvoljenih)
 
-## Najbolje Sigurnosne Prakse
+## Najbolje Sigurnosne Prakse {#security-best-practices}
 
-### Princip Najmanjeg Privileja (Principle of Least Privilege)
+### Princip Najmanjeg Privileja (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Postavite sposobnosti na najograničniji nivo vidljivosti koji i dalje omogućava njihovu upotrebu
 - Koristite Partner vidljivost za osjetljive operacije
 - Onemogućite sposobnosti koje ne koristite
 
-### Redovni Auditi
+### Redovni Auditi {#regular-audits}
 
 - Pregledajte vidljivost sposobnosti mjesečno
 - Provjerite neklasificirane sposobnosti
 - Uklonite pristup za neiskorištene partnere
 
-### Logovanje i Monitoring
+### Logovanje i Monitoring {#logging-and-monitoring}
 
 - Pratite koje sposobnosti se najviše koriste
 - Pratijte obrasce pristupa partnera
 - Postavite upozorenje na neobičnu upotrebu sposobnosti
 
-### Sposobnosti Treće Strane
+### Sposobnosti Treće Strane {#third-party-abilities}
 
 - Pregledajte sposobnosti treće strane prije omogućavanja
 - Eksplicitno ih klasifikujte
 - Počnite sa Internom ili Partner vidljivošću
 - Promovisanje na Javnu samo nakon provjere
 
-## Rješavanje Problema (Troubleshooting)
+## Rješavanje Problema (Troubleshooting) {#troubleshooting}
 
 **Sposobnost se ne prikazuje u listi**
 - Provjerite da li je sposobnost instalirana i aktivna
@@ -285,7 +285,7 @@ Available abilities:
 - Provjerite da li je vaša klasifikacija sačuvana
 - Provjerite da li je plugin koji pruža sposobnost ažuran
 
-## Migracija iz Starog Modusa (Legacy Mode)
+## Migracija iz Starog Modusa (Legacy Mode) {#migration-from-legacy-mode}
 
 Ako se nadograđujete sa starije verzije Superdav AI Agent-a:
 
@@ -295,7 +295,7 @@ Ako se nadograđujete sa starije verzije Superdav AI Agent-a:
 
 Pogledajte **Third-Party Mode Migration** za više detalja o prelasku na izvornu Abilities API integraciju.
 
-## Sljedeći Koraci
+## Sljedeći Koraci {#next-steps}
 
 Nakon konfigurisanja vidljivosti sposobnosti:
 

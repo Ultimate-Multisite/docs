@@ -4,11 +4,11 @@ title: Фільтр - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message
+# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Дазваляе карыўніку змяніць паведамленне, якое выказваецца пра неаплачаныя плацёжкі.
 
-## Параметры
+## Параметры {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 | $customer | `\WP_Ultimo\Models\Customer` | Bieжачы карыўнік. |
 | $pending_payments | `array` | Спіс неаплачаных плацёжкі. |
 
-### З версіі
+### З версіі {#since}
 
 - 2.0.19
-### Выказванне ў выдатку
+### Выказванне ў выдатку {#source}
 
 Вызначана ў [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) на 244-й паўніне.

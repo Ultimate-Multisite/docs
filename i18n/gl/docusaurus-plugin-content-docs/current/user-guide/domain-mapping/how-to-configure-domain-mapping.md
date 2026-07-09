@@ -3,17 +3,17 @@ title: Como configurar o mapeamento de dominios
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Como configurar Domain Mapping (v2)
+# Como configurar Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTA IMPORTANTE: Este artigo refírese á versión 2.x de Ultimate Multisite.**_
 
 Unha das funcións máis potentes dunha rede premium é a capacidade de ofrecer aos nosos clientes a posibilidade de anexar un dominio de nivel superior aos seus sitios. Ao fin e ao cabo, que parece máis profesional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ou [_**joesbikeshop.com**_](http://joesbikeshop.com)? Por iso Ultimate Multisite ofrece esa función integrada, sen necesidade de usar plugins de terceiros.
 
-## Que é o domain mapping?
+## Que é o domain mapping? {#whats-domain-mapping}
 
 Como suxire o nome, o domain mapping é a capacidade que ofrece Ultimate Multisite de recibir unha solicitude para un dominio personalizado e mapear esa solicitude ao sitio correspondente da rede que ten anexado ese dominio concreto.
 
-### Como configurar o domain mapping na túa rede Ultimate Multisite
+### Como configurar o domain mapping na túa rede Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 O domain mapping require certa configuración pola túa parte para funcionar. Afortunadamente, Ultimate Multisite automatiza o traballo duro por ti para que poidas cumprir os requisitos facilmente.
 
@@ -45,7 +45,7 @@ Pero antes de comezar a mapear o dominio personalizado a un dos subsitios da tú
 
 ###
 
-### Asegurarse de que a configuración DNS do dominio estea correctamente configurada
+### Asegurarse de que a configuración DNS do dominio estea correctamente configurada {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Para que un mapeo funcione, tes que asegurarte de que o dominio que planeas mapear apunta ao enderezo IP da túa rede. Ten en conta que precisas o enderezo IP da rede —o enderezo IP do dominio onde está instalado Ultimate Multisite—, non o enderezo IP do dominio personalizado que queres mapear. Para buscar o enderezo IP dun dominio específico, suxerimos ir a [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), por exemplo.
 
@@ -55,7 +55,7 @@ Se tes problemas para facer que isto funcione, **contacta co soporte do teu rexi
 
 Se planeas permitir que os teus clientes mapeen os seus propios dominios, terán que facer eles mesmos o traballo desta parte. Remíteos ao sistema de soporte do seu rexistrador se non son quen de crear o A Record.
 
-### Mapear un nome de dominio personalizado como superadministrador
+### Mapear un nome de dominio personalizado como superadministrador {#mapping-custom-domain-name-as-super-admin}
 
 Cando iniciaches sesión como superadministrador na túa rede, podes engadir e xestionar facilmente nomes de dominio personalizados indo a **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Se fas clic no nome de dominio, poderás ver algunhas opcións dentro del. Vexá
 
 **É seguro?:** Aínda que Ultimate Multisite comproba se o dominio ten un certificado SSL ou non antes de habilitalo, podes seleccionar manualmente cargar o dominio con ou sen certificado SSL. Ten en conta que, se o sitio web non ten un certificado SSL e intentas forzar a súa carga con SSL, pode darche erros.
 
-### Mapear nome de dominio personalizado como usuario de subsite
+### Mapear nome de dominio personalizado como usuario de subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Os administradores de subsite tamén poden mapear nomes de dominio personalizados desde o panel de administración do seu subsite.
 
@@ -121,7 +121,7 @@ Despois, o usuario pode facer clic en **Seguinte paso** e continuar para engadir
 
 Facer clic en **Engadir dominio** iniciará o proceso de verificar e obter a información DNS do dominio personalizado.
 
-### Sobre a sincronización de dominios
+### Sobre a sincronización de dominios {#about-domain-syncing}
 
 A sincronización de dominios é un proceso no que Ultimate Multisite engade o nome de dominio personalizado á túa conta de aloxamento como dominio adicional **para que o mapeo de dominios funcione**.
 

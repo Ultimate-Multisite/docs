@@ -4,11 +4,11 @@ title: کردار - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# کردار: wu_membership_pre_renew
+# کردار: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 پێش نوێکردنەوەی ئەندامێتی دەستپێدەکات.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 | $membership_id | `int` | ID ـی ئەندامێتی. |
 | $membership | `\Membership` | ئۆبجێکتی ئەندامێتی. |
 
-### لە وەختی
+### لە وەختی {#since}
 
 - 2.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) لە هێڵی 2204

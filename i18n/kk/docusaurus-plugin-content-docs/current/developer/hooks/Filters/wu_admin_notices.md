@@ -4,11 +4,11 @@ title: Сүзгі - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Сүзгі: wu_admin_notices
+# Сүзгі: wu_admin_notices {#filter-wuadminnotices}
 
 Әзірлеушілерге Ultimate Multisite қосқан әкімші хабарламаларын сүзуге мүмкіндік береді.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | Егер жабуға болатын хабарламалар сүзгіден алынып тасталса. |
 | $dismissed_messages | `array` | Жабылған хабарлама кілттерінің тізімі. |
 
-### Нұсқасынан бастап
+### Нұсқасынан бастап {#since}
 
 - 2.0.0
-### Дереккөз
+### Дереккөз {#source}
 
 [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) ішінде 121-жолда анықталған
 
 
-## Қайтарылатын мәндер
+## Қайтарылатын мәндер {#returns}

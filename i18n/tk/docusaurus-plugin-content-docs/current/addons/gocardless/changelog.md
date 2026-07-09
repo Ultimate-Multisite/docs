@@ -3,7 +3,7 @@ title: GoCardless Üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Üýtgeşmeler taryhy
+# GoCardless Üýtgeşmeler taryhy {#gocardless-changelog}
 
 Wersiýa: 1.0.3 - 2026-05-05 senesinde çykaryldy
 * Düzedildi: GoCardless agzalygy pending ýa-da on-hold ýagdaýynda ýatyrylanda, eýesiz pending saýtlar indi arassalanýar

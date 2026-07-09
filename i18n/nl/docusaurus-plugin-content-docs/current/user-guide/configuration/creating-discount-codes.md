@@ -3,13 +3,13 @@ title: Kortingscodes aanmaken
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kortingscodes aanmaken (v2)
+# Kortingscodes aanmaken (v2) {#creating-discount-codes-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
 Met Ultimate Multisite kun je kortingscodes aanmaken om je klanten korting te geven op hun abonnementen. En ze aanmaken is eenvoudig!
 
-## Kortingscodes aanmaken en bewerken
+## Kortingscodes aanmaken en bewerken {#creating-and-editing-discount-codes}
 
 Om een kortingscode aan te maken of te bewerken, ga je naar **Ultimate Multisite > Kortingscodes**.
 
@@ -87,7 +87,7 @@ De coupon staat nu in je lijst en van daaruit kun je erop klikken om deze te **b
 
 ###
 
-### URL-parameters gebruiken:
+### URL-parameters gebruiken: {#using-url-parameters}
 
 Als je je prijstabellen wilt aanpassen of een mooie couponcodepagina voor je website wilt maken en automatisch een kortingscode op je checkout-formulier wilt toepassen, kun je dit doen via URL-parameters.
 

@@ -3,15 +3,15 @@ title: Uququzelelo loMakhi weSayithi v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Ulungelelwaniso Lomakhi Wesayithi v2
+# Ulungelelwaniso Lomakhi Wesayithi v2 {#site-builder-orchestration-v2}
 
 Ulungelelwaniso Lomakhi Wesayithi v2 (olwaziswa kwi Gratis AI Agent v1.4.0) yinjini enika amandla ukwenziwa kweewebhusayithi ngamanyathelo amaninzi. Xa ucela i-agent ukuba "yakha iwebhusayithi yerestyu" okanye "dala ipotifoliyo enebhlog", umlungelelanisi wahlula loo njongo ikwinqanaba eliphezulu ibe **sisicwangciso** esakhiweyo, afumanise ii-plugin ezifunekayo ukuyizalisekisa, enze inyathelo ngalinye ngokulandelelana, alandele inkqubela, kwaye aphinde achache kwiimpazamo ngokuzenzekelayo.
 
 ---
 
-## Isebenza Njani
+## Isebenza Njani {#how-it-works}
 
-### 1. Ukuveliswa Kwesicwangciso
+### 1. Ukuveliswa Kwesicwangciso {#1-plan-generation}
 
 Xa i-agent ifumana umyalelo wokwakha isayithi, ibiza ubuchule be-`create_site_plan` ukuvelisa **isicwangciso sesayithi** se-JSON. Isicwangciso sichaza:
 
@@ -61,7 +61,7 @@ Xa i-agent ifumana umyalelo wokwakha isayithi, ibiza ubuchule be-`create_site_pl
 }
 ```
 
-### 2. Ukufunyanwa Kwee-plugin
+### 2. Ukufunyanwa Kwee-plugin {#2-plugin-discovery}
 
 Phambi kokuba kuqale ukwenziwa, umlungelelanisi uhlola `plugin_requirements` zesicwangciso aze ajonge ukuba zeziphi ii-plugin esele zisebenza. Kwi-plugin ezingekhoyo, wenza oku:
 
@@ -71,7 +71,7 @@ Phambi kokuba kuqale ukwenziwa, umlungelelanisi uhlola `plugin_requirements` zes
 
 Ukusilela kokufunyanwa kwee-plugin akubulali inkqubo — umlungelelanisi uphawula amanyathelo achaphazelekayo njenge-`skipped` aze aqhubeke nesicwangciso esiseleyo.
 
-### 3. Ukwenziwa Kwesicwangciso
+### 3. Ukwenziwa Kwesicwangciso {#3-plan-execution}
 
 Umlungelelanisi ubiza `execute_site_plan` nge-ID yesicwangciso. Ukwenziwa kuqhubeka isigaba ngesigaba, inyathelo ngenyathelo:
 
@@ -79,7 +79,7 @@ Umlungelelanisi ubiza `execute_site_plan` nge-ID yesicwangciso. Ukwenziwa kuqhub
 - **Amanyathelo ahambelanayo** — amanyathelo ngaphakathi kwesigaba esinye angenazo izixhomekeko phakathi kwawo athunyelwa ngaxeshanye xa iflegi ye-`parallel` isetiwe.
 - **Ixesha lokuphelelwa linyathelo** — inyathelo ngalinye linexesha lalo lokuphelelwa (okungagqibekanga: isetingi ye-`Ability Timeout`). Inyathelo eliphelelwe lixesha liphawulwa njenge-`failed` kwaye isicwangciso siyaqhubeka.
 
-### 4. Ukulandela Inkqubela
+### 4. Ukulandela Inkqubela {#4-progress-tracking}
 
 Biza `get_plan_progress` nangaliphi na ixesha ukujonga imeko yokwenziwa:
 
@@ -104,7 +104,7 @@ Abasebenzisi be-WP-CLI banokulandela inkqubela nge:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Ukuchacha Kwiimpazamo
+### 5. Ukuchacha Kwiimpazamo {#5-error-recovery}
 
 Xa inyathelo lisilela, umlungelelanisi ujonga inyathelo **lokubuyela emva** elichaziweyo kwisicwangciso:
 
@@ -115,9 +115,9 @@ I-agent inika ingxelo yazo zonke iintsilelo kwisishwankathelo sokugqibela sesicw
 
 ---
 
-## Ubuchule Besicwangciso Sesayithi
+## Ubuchule Besicwangciso Sesayithi {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Ivelisa isicwangciso sesayithi esakhiweyo ukusuka kwinkcazo yenjongo ngolwimi lwendalo.
 
@@ -134,7 +134,7 @@ Ivelisa isicwangciso sesayithi esakhiweyo ukusuka kwinkcazo yenjongo ngolwimi lw
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Iqalisa ukwenza isicwangciso sesayithi esiveliswe ngaphambili.
 
@@ -150,7 +150,7 @@ Iqalisa ukwenza isicwangciso sesayithi esiveliswe ngaphambili.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Ibuyisa imeko yangoku yokwenziwa kwesicwangciso sesayithi.
 
@@ -164,7 +164,7 @@ Ibuyisa imeko yangoku yokwenziwa kwesicwangciso sesayithi.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Isombulula ngesandla inyathelo elisileleyo kwaye iqhubekise ukwenziwa kwesicwangciso ukusuka kwinyathelo elilandelayo. Sebenzisa oku xa ukuchacha ngokuzenzekelayo bekungenakwenzeka kwaye ufuna ukungenelela.
 
@@ -180,7 +180,7 @@ Isombulula ngesandla inyathelo elisileleyo kwaye iqhubekise ukwenziwa kwesicwang
 
 ---
 
-## Ukuthelekisa i-v1 ne-v2
+## Ukuthelekisa i-v1 ne-v2 {#comparing-v1-and-v2}
 
 | Uphawu | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Isombulula ngesandla inyathelo elisileleyo kwaye iqhubekise ukwenziwa kwesicwang
 
 ---
 
-## Imiyalelo Yesicwangciso se-WP-CLI
+## Imiyalelo Yesicwangciso se-WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Ivelisa isicwangciso sesayithi ukusuka kwinkcazo yenjongo.
 
@@ -205,7 +205,7 @@ Ivelisa isicwangciso sesayithi ukusuka kwinkcazo yenjongo.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Yenza isicwangciso esiveliswe ngaphambili.
 
@@ -213,7 +213,7 @@ Yenza isicwangciso esiveliswe ngaphambili.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Ibonisa inkqubela yangoku yesicwangciso esenziwayo okanye esigqityiweyo.
 
@@ -221,7 +221,7 @@ Ibonisa inkqubela yangoku yesicwangciso esenziwayo okanye esigqityiweyo.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Idwelisa zonke izicwangciso zesayithi (ezisalindileyo, eziqhubekayo, nezegqityiweyo).
 
@@ -229,7 +229,7 @@ Idwelisa zonke izicwangciso zesayithi (ezisalindileyo, eziqhubekayo, nezegqityiw
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Iseta kwakhona isicwangciso esisileleyo sibe `pending` ukuze siphinde senziwe ukusuka ekuqaleni.
 

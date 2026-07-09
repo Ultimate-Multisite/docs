@@ -3,7 +3,7 @@ title: Menguruskan Pelanggan
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Mengurus Pelanggan
+# Mengurus Pelanggan {#managing-customers}
 
 Halaman **Customers** memaparkan senarai ahli yang berdaftar dalam rangkaian anda. Halaman ini menunjukkan maklumat asas pengguna termasuk nama, alamat emel, log masuk terakhir, dan pautan **switch to** yang membolehkan anda log masuk ke subsite pengguna tersebut sebagai pentadbir tapak.
 

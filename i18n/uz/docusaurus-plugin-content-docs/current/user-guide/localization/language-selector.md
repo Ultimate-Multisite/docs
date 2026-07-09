@@ -3,7 +3,7 @@ title: Tilni tanlovchi
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Dil Seçici
+# Dil Seçici {#language-selector}
 
 Bu özellik **Language Selector** eklentisi tarafından sağlanmaktadır.
 

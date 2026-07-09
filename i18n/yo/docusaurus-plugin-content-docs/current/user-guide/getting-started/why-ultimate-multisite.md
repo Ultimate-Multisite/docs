@@ -3,11 +3,11 @@ title: Kí nìdí Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kí nìdí Ultimate Multisite
+# Kí nìdí Ultimate Multisite {#why-ultimate-multisite}
 
 Tí o bá dé àpilẹ̀kọ yìí, ó ṣeé ṣe kí o ti gbọ́ pé plugin wa lè jẹ́ ojútùú láti mú èrò ìṣòwò rẹ ṣẹ. A nírètí pé ìwọ yóò ní àwọn ìdáhùn tí o nílò ní òpin àpilẹ̀kọ yìí.
 
-## Kí ni Ultimate Multisite?
+## Kí ni Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite jẹ́ WordPress Multisite plugin tí ó jẹ́ kí o lè fún àwọn oníbàárà ní WaaS (ìyẹn Website as a Service). Pẹ̀lú plugin wa, o lè ní oríṣiríṣi ìpele subscription kí àwọn oníbàárà sì máa san owó àtúnṣe sí ọ láti ní site tí a gbàlejò nínú nẹ́tíwọ́ọ̀kì Multisite rẹ.
 
@@ -15,7 +15,7 @@ Ultimate Multisite jẹ́ kí o lè gba àwọn ìsanwó rẹ pẹ̀lú oríṣi
 
 Èyí sì jẹ́ ìbẹ̀rẹ̀ nìkan nítorí pé o lè faagun àwọn iṣẹ́ rẹ pẹ̀lú add-ons àti webhooks.
 
-## Àwọn àbùdá míì
+## Àwọn àbùdá míì {#other-features}
 
 Ultimate Multisite tún ń pèsè:
 
@@ -33,11 +33,11 @@ Ultimate Multisite tún ń pèsè:
 
   * Search and Replace API: O tún lè fi àmi sí àwọn àwòṣe site pẹ̀lú placeholders bíi {{site_name}} kí o sì lo Search and Replace API láti fi ìwífún tí oníbàárà rẹ pèsè kún àwọn placeholders wọ̀nyẹn laifọwọ́yi lẹ́sẹ̀kẹsẹ̀ lẹ́yìn ìforúkọsílẹ̀.
 
-## Àwọn ọ̀nà lílò
+## Àwọn ọ̀nà lílò {#use-cases}
 
 Báyìí àkókò ti tó láti rí díẹ̀ lára àwọn ọ̀nà lílò tí ó ṣeé ṣe fún Ultimate Multisite.
 
-### Ọ̀ràn 1: Ilé-iṣẹ́ Aṣojú kan
+### Ọ̀ràn 1: Ilé-iṣẹ́ Aṣojú kan {#case-1-an-agency}
 
 Ní gbogbogbò, àwọn ọgbọ́n pàtàkì ti ilé-iṣẹ́ aṣojú kan wà nínú àpẹrẹ àwọn wẹ́ẹ̀bù, pẹ̀lú àwọn abala bíi gbígbàlejò wọn tàbí títàjà wọn tí a ń kà sí àwọn iṣẹ́ àfikún.
 
@@ -47,7 +47,7 @@ Fún àwọn ilé-iṣẹ́ aṣojú, Ultimate Multisite ń pèsè ìfilọ́ iy
 
 Àwọn ilé-iṣẹ́ aṣojú yóò rí ìsinmi ọkàn pẹ̀lú Ultimate Multisite tí ó jẹ́ kí wọ́n ṣe ohun tí wọ́n mọ̀ dáadáa jù - ṣíṣe àpẹrẹ àwọn wẹ́ẹ̀bù alárinrin.
 
-### Ọ̀ràn 2: Olùpèsè Niche
+### Ọ̀ràn 2: Olùpèsè Niche {#case-2-niche-provider}
 
 Òwe àtijọ́ kan wà tí ó sọ pé, “Ṣe ohun kan, kí o sì ṣe é dáadáa”. Fún ọ̀pọ̀ àwọn amọ̀ja, èyí túmọ̀ sí ṣíṣẹ̀dá product tàbí iṣẹ́ kan yí ká èrò pàtàkì kan ṣoṣo.
 
@@ -57,7 +57,7 @@ Tí o bá dojú kọ ìdàgbàsókè nẹ́tíwọ́ọ̀kì niche ti àwọn si
 
 Fún olùpèsè àwọn sites àti iṣẹ́ niche, èyí ń pèsè àǹfààní tí kò lẹ́gbẹ́ nínú agbára láti ṣẹ̀dá site lẹ́sẹ̀kẹsẹ̀ tí ó ti ṣetán láti ṣiṣẹ́ pẹ̀lú plugins àdáni àti àpẹrẹ. Oníbàárà nílò láti pèsè ìfọwọ́sowọ́pọ̀ kékeré nìkan láti parí iṣẹ́ náà.
 
-### Ọ̀ràn 3: Gbígbàlejò Wẹ́ẹ̀bù WordPress
+### Ọ̀ràn 3: Gbígbàlejò Wẹ́ẹ̀bù WordPress {#case-3-wordpress-web-hosting}
 
 Ọ̀pọ̀lọpọ̀ ọ̀nà ló wà láti gbàlejò àwọn WordPress sites ṣùgbọ́n kì í sábà rọrùn tó bí pípèsè àyè wẹ́ẹ̀bù fún oníbàárà pẹ̀lú ẹ̀dà WordPress tí a ti fi sí tẹ́lẹ̀. Èyí jẹ́ nítorí pé ọ̀pọ̀ ìpinnu àti ìrònú ló nílò láti wá pọ̀ láti pèsè iṣẹ́ tó ní ìtumọ̀.
 

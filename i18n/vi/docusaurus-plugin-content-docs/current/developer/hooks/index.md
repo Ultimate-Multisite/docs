@@ -3,11 +3,11 @@ title: Tài liệu tham khảo về Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tham chiếu Hooks
+# Tham chiếu Hooks {#hooks-reference}
 
 Tài liệu được tạo tự động cho tất cả **59 actions** và **118 filters** trong Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Kích hoạt trước khi chuyển hướng xác thực.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Kích hoạt ngay trước khi cookie xác thực được thiết lập.
@@ -70,7 +70,7 @@ Tài liệu được tạo tự động cho tất cả **59 actions** và **118 
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Kích hoạt sau khi một đối tượng được lưu vào cơ sở dữ liệu.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Cho phép các nhà phát triển plugin thêm hành động vào quá trình mở khóa.
 
-## Bộ lọc
+## Bộ lọc {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Lọc thời lượng của khoảng thời gian hết hạn cookie xác thực.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Lọc scheme chuyển hướng xác thực.

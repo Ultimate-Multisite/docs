@@ -4,11 +4,11 @@ title: Filter - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices
+# Filter: wu_admin_notices {#filter-wuadminnotices}
 
 Erlaabt Entwéckler, Admin-Noticen ze filteren, déi vun Ultimate Multisite derbäigesat goufen.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Erlaabt Entwéckler, Admin-Noticen ze filteren, déi vun Ultimate Multisite derb
 | $filter | `string` | Ob déi ewechdréckbar Noticen erausgefiltert goufen. |
 | $dismissed_messages | `array` | Lëscht vun ewechgedréckten Notice-Schlësselen. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) op Zeil 121
 
 
-## Retouren
+## Retouren {#returns}

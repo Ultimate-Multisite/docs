@@ -4,11 +4,11 @@ title: Фильтр - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Сөзгеч: wu_apc_get_meta_content_default_content
+# Сөзгеч: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Эшләүчеләргә килешү буенча кыйммәтләрне сөзәргә мөмкинлек бирә
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | Алыначак мета мәгълүмат төре. |
 | $meta_key | `string` | Мета кыры исеме. |
 
-### Версиядән
+### Версиядән {#since}
 
 - 1.4.0
-### Чыганак
+### Чыганак {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) эчендә 68 нче юлда билгеләнгән
 
 
-## Кайтара
+## Кайтара {#returns}
 Яңа килешү буенча кыйммәт.

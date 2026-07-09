@@ -3,13 +3,13 @@ title: ኢሜይሎችን እና ብሮድካስቶችን መላክ
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ኢሜይሎችን እና Broadcasts መላክ (v2)
+# ኢሜይሎችን እና Broadcasts መላክ (v2) {#sending-emails-and-broadcasts-v2}
 
 _**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ Ultimate Multisite ስሪት 2.xን ይመለከታል።**_
 
 Ultimate Multisite ለተወሰነ ተጠቃሚ ወይም ለተጠቃሚዎች ቡድን ኢሜይል በመላክ፣ እንዲሁም ማስታወቂያዎችን ለማሰራጨት በአስተዳዳሪ Dashboard ላይ ማሳወቂያዎችን በመላክ ከደንበኞችዎ ጋር እንዲገናኙ የሚያስችል ባህሪ አለው
 
-## Broadcasts በመጠቀም የአስተዳዳሪ ማሳወቂያዎችን ወደ ደንበኞችዎ Dashboard ያክሉ
+## Broadcasts በመጠቀም የአስተዳዳሪ ማሳወቂያዎችን ወደ ደንበኞችዎ Dashboard ያክሉ {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 የUltimate Multisite broadcast ባህሪን በመጠቀም፣ **የአስተዳዳሪ ማሳወቂያዎችን** ወደ ተጠቃሚዎ subsite አስተዳዳሪ Dashboard ማከል ይችላሉ።
 
@@ -51,7 +51,7 @@ Ultimate Multisite ለተወሰነ ተጠቃሚ ወይም ለተጠቃሚዎች 
 
 እና ይሄ ነው። የአስተዳዳሪ ማሳወቂያው በተጠቃሚዎ Dashboard ላይ ወዲያውኑ መታየት አለበት።
 
-## ለደንበኞችዎ ኢሜይሎችን ይላኩ
+## ለደንበኞችዎ ኢሜይሎችን ይላኩ {#send-emails-to-your-customers}
 
 የUltimate Multisite broadcast ባህሪን በመጠቀም፣ ለተጠቃሚዎችዎ ኢሜይል መላክ ይችላሉ። ኢሜይሉን ለተወሰኑ ተጠቃሚዎች ብቻ ለመላክ ወይም በተመዘገቡበት ምርት ወይም ፕላን መሠረት የተወሰነ የተጠቃሚ ቡድንን ዒላማ ለማድረግ አማራጭ አለዎት።
 
@@ -81,11 +81,11 @@ Ultimate Multisite ለተወሰነ ተጠቃሚ ወይም ለተጠቃሚዎች 
 
 እና የbroadcast ባህሪን በመጠቀም ለመጨረሻ ተጠቃሚዎችዎ ኢሜይል መላክ እንዲህ ቀላል ነው።
 
-## የስርዓት ኢሜይሎች
+## የስርዓት ኢሜይሎች {#system-emails}
 
 በUltimate Multisite ውስጥ የስርዓት ኢሜይሎች እንደ ምዝገባ፣ ክፍያ፣ የዶሜይን ማዛመድ፣ ወዘተ ካሉ የተወሰኑ እርምጃዎች በኋላ በስርዓቱ የሚላኩ **ራስ-ሰር ማሳወቂያዎች** ናቸው። እነዚህ ኢሜይሎች ከUltimate Multisite settings ማርትዕ ወይም ማሻሻል ይችላሉ። ከሌላ የUltimate Multisite መጫኛ ነባር settingsን ዳግም ለማስጀመር እና ለማስመጣት የሚያስችል ባህሪም አለው።
 
-### ዳግም ማስጀመር እና ማስመጣት
+### ዳግም ማስጀመር እና ማስመጣት {#resetting--importing}
 
 አዲስ የUltimate Multisite ስሪቶች፣ እንዲሁም add-ons፣ ከጊዜ ወደ ጊዜ አዲስ ኢሜይሎችን ሊመዘግቡ ይችላሉ እና ይመዘግባሉ።
 
@@ -93,7 +93,7 @@ Ultimate Multisite ለተወሰነ ተጠቃሚ ወይም ለተጠቃሚዎች 
 
 ሆኖም፣ super admins እና agents እነዚህን አዲስ የተመዘገቡ ኢሜይሎች በimporter መሣሪያ ማስመጣት ይችላሉ። ያ ሂደት የአዲሱ የኢሜይል አብነት ይዘት እና ውቅር ያለው አዲስ የስርዓት ኢሜይል ይፈጥራል፣ ይህም super admin የፈለጉትን ማንኛውንም ማሻሻያ እንዲያደርጉ ወይም እንዳለ እንዲያስቀምጡት ያስችላል።
 
-#### የስርዓት ኢሜይሎችን እንዴት ማስመጣት እንደሚቻል
+#### የስርዓት ኢሜይሎችን እንዴት ማስመጣት እንደሚቻል {#how-to-import-system-emails}
 
 ወደ Ultimate Multisite Settings ገጽዎ ይሂዱ እና ወደ **Emails** ትር ይሂዱ።
 
@@ -111,7 +111,7 @@ Ultimate Multisite ለተወሰነ ተጠቃሚ ወይም ለተጠቃሚዎች 
 
 <!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
-#### የስርዓት ኢሜይሎችን ዳግም ማስጀመር
+#### የስርዓት ኢሜይሎችን ዳግም ማስጀመር {#reseting-system-emails}
 
 አንዳንድ ጊዜ፣ በተወሰነ የኢሜይል አብነት ላይ ያደረጉት ለውጦች ከእንግዲህ ለእርስዎ እንደማይሰሩ ይገነዘባሉ፣ እና ወደ **ነባሪ ሁኔታው** ዳግም ማስጀመር ይፈልጋሉ።
 

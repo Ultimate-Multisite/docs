@@ -4,11 +4,11 @@ title: फिल्टर - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# फिल्टर: wu_apc_process_page_content
+# फिल्टर: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 विकासकर्ताहरूलाई अन्तिम सामग्रीमा परिवर्तन गर्न अनुमति दिन्छ
 
-## प्यारामिटरहरू
+## प्यारामिटरहरू {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | प्लेसहोल्डरहरू राख्ने एरे। |
 | $placeholder_count | `int` | फेला परेका प्लेसहोल्डरहरूको संख्या। |
 
-### संस्करणदेखि
+### संस्करणदेखि {#since}
 
 - 1.4.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) मा पङ्क्ति 46 मा परिभाषित
 
 
-## फिर्ता
+## फिर्ता {#returns}
 परिमार्जनपछि सामग्री।

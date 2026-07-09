@@ -3,11 +3,11 @@ title: Site Specification Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill
+# Site Specification Skill {#site-specification-skill}
 
 Die **Site Specification Skill** ist ein strukturierter Ansatz, um die Ziele, die Zielgruppe und die Markenidentität Ihrer Website festzuhalten. Diese Informationen werden in Ihrem **site_brief** Speicher abgelegt, auf den die Agents sie über Sitzungen hinweg referenzieren, um eine konsistente, kontextbezogene Unterstützung zu gewährleisten.
 
-## Was ist Site Specification?
+## Was ist Site Specification? {#what-is-site-specification}
 
 Site Specification ist der Prozess der Dokumentation von:
 
@@ -19,9 +19,9 @@ Site Specification ist der Prozess der Dokumentation von:
 
 Diese Spezifikation wird zu Ihrem **site_brief**, einem persistenten Speicher, den Agents nutzen, um den Kontext Ihrer Website zu verstehen.
 
-## Warum Site Specification nutzen?
+## Warum Site Specification nutzen? {#why-use-site-specification}
 
-### Konsistenz über Sitzungen hinweg
+### Konsistenz über Sitzungen hinweg {#consistency-across-sessions}
 
 Ohne site_brief müssten Sie den Zweck Ihrer Website jedes Mal neu erklären, wenn Sie eine neue Sitzung starten. Mit ihm verstehen die Agents sofort:
 
@@ -30,7 +30,7 @@ Ohne site_brief müssten Sie den Zweck Ihrer Website jedes Mal neu erklären, we
 - Ihre Content-Struktur
 - Ihre Geschäftsziele
 
-### Bessere Empfehlungen
+### Bessere Empfehlungen {#better-recommendations}
 
 Agents nutzen Ihren site_brief, um:
 
@@ -39,17 +39,17 @@ Agents nutzen Ihren site_brief, um:
 - Designs vorzuschlagen, die mit Ihrer Marke übereinstimmen
 - die Vorschlagung inkompatibler Funktionen zu vermeiden
 
-### Schnelleres Onboarding
+### Schnelleres Onboarding {#faster-onboarding}
 
 Neue Agents (oder Agents in neuen Sitzungen) können schnell auf den neuesten Stand gebracht werden, indem sie Ihren site_brief lesen, anstatt klärende Fragen zu stellen.
 
-## Site Specification starten
+## Site Specification starten {#initiating-site-specification}
 
-### Während des Theme Builder Onboardings
+### Während des Theme Builder Onboardings {#during-theme-builder-onboarding}
 
 Die Site Specification Skill wird automatisch während des **Theme Builder onboarding flow** gestartet. Der Setup Assistant Agent stellt Fragen und erstellt Ihren site_brief.
 
-### Manuelle Initiierung
+### Manuelle Initiierung {#manual-initiation}
 
 Sie können die Site Specification jederzeit starten:
 
@@ -63,9 +63,9 @@ oder
 "Help me create a site brief"
 ```
 
-## Der Site Specification Prozess
+## Der Site Specification Prozess {#the-site-specification-process}
 
-### Schritt 1: Site Purpose
+### Schritt 1: Site Purpose {#step-1-site-purpose}
 
 Der Agent fragt:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 Sie können eine Kategorie auswählen oder Ihren eigenen Zweck beschreiben.
 
-### Schritt 2: Target Audience
+### Schritt 2: Target Audience {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### Schritt 3: Brand Identity
+### Schritt 3: Brand Identity {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### Schritt 4: Business Goals
+### Schritt 4: Business Goals {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### Schritt 5: Content Structure
+### Schritt 5: Content Structure {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## Ihr site_brief Speicher
+## Ihr site_brief Speicher {#your-sitebrief-memory}
 
 Nach Abschluss der Site Specification wird Ihre Information als **site_brief** in Ihrem Agenten-Speicher gespeichert. Dies ist ein strukturiertes Protokoll, das Folgendes enthält:
 
@@ -169,9 +169,9 @@ Nach Abschluss der Site Specification wird Ihre Information als **site_brief** i
 }
 ```
 
-## Ihren site_brief ansehen und aktualisieren
+## Ihren site_brief ansehen und aktualisieren {#viewing-and-updating-your-sitebrief}
 
-### Ihren site_brief ansehen
+### Ihren site_brief ansehen {#view-your-sitebrief}
 
 Fragen Sie den Agenten:
 
@@ -187,7 +187,7 @@ oder
 
 Der Agent zeigt Ihre gespeicherte Spezifikation an.
 
-### Ihren site_brief aktualisieren
+### Ihren site_brief aktualisieren {#update-your-sitebrief}
 
 Wenn sich Ihre Website weiterentwickelt, können Sie ihn aktualisieren:
 
@@ -203,9 +203,9 @@ oder
 
 Dies führt die Site Specification Skill erneut aus, wobei Ihre bestehenden Informationen als Ausgangspunkt dienen.
 
-## Wie Agents site_brief nutzen
+## Wie Agents site_brief nutzen {#how-agents-use-sitebrief}
 
-### Design-Empfehlungen
+### Design-Empfehlungen {#design-recommendations}
 
 Wenn Sie Designänderungen anfordern, referenzieren Agents Ihren site_brief:
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Feature-Vorschläge
+### Feature-Vorschläge {#feature-suggestions}
 
 Agents schlagen Funktionen vor, die zu Ihren Zielen passen:
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Content-Struktur
+### Content-Struktur {#content-structure}
 
 Agents schlagen eine Content-Organisation basierend auf Ihrer Struktur vor:
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Seien Sie spezifisch
+### Seien Sie spezifisch {#be-specific}
 
 Anstatt "general audience" beschreiben Sie Ihre tatsächliche Zielgruppe:
 
 - ✓ "Women aged 25-45, interested in sustainable fashion"
 - ✗ "Everyone"
 
-### Regelmäßig aktualisieren
+### Regelmäßig aktualisieren {#update-regularly}
 
 Wenn sich Ihre Website weiterentwickelt, aktualisieren Sie Ihren site_brief:
 
@@ -256,14 +256,14 @@ Wenn sich Ihre Website weiterentwickelt, aktualisieren Sie Ihren site_brief:
 - Wenn sich Ihre Markenidentität ändert
 - Wenn sich Ihre Geschäftsziele verschieben
 
-### Konsistente Terminologie verwenden
+### Konsistente Terminologie verwenden {#use-consistent-terminology}
 
 Verwenden Sie über Sitzungen hinweg dieselben Begriffe:
 
 - ✓ Immer "sustainable jewelry" sagen (nicht "eco-friendly jewelry" und "green products")
 - ✓ Immer auf Ihre Zielgruppe in der gleichen Weise verweisen
 
-### Kontext einbeziehen
+### Kontext einbeziehen {#include-context}
 
 Geben Sie Hintergrundinformationen, die den Agents helfen, Ihre Entscheidungen zu verstehen:
 
@@ -271,7 +271,7 @@ Geben Sie Hintergrundinformationen, die den Agents helfen, Ihre Entscheidungen z
 - "Unsere Zielgruppe ist technikaffin und erwartet ein modernes Design"
 - "Wir sind ein bootstrapped Startup, daher benötigen wir kosteneffiziente Lösungen"
 
-## Beziehung zum Theme Builder Onboarding
+## Beziehung zum Theme Builder Onboarding {#relationship-to-theme-builder-onboarding}
 
 Die Site Specification Skill ist in den **Theme Builder onboarding flow** integriert. Wenn Sie das Onboarding abschließen, wird Ihr site_brief automatisch mit den von Ihnen bereitgestellten Informationen erstellt.
 
@@ -281,7 +281,7 @@ Sie können die Site Specification auch unabhängig ausführen, wenn Sie möchte
 - Ihren site_brief aktualisieren, wenn sich Ihre Website weiterentwickelt
 - Eine detaillierte Spezifikation erstellen, bevor Sie mit Theme Builder beginnen
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
 **Mein site_brief wird nicht verwendet**
 - Bestätigen Sie, dass der Agent Zugriff auf den Speicher hat
@@ -297,7 +297,7 @@ Sie können die Site Specification auch unabhängig ausführen, wenn Sie möchte
 - Aktualisieren Sie Ihren site_brief, wenn er veraltet ist
 - Geben Sie zusätzliche Informationen in Ihre Anfragen ein
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
 Nach der Definition Ihrer Site Specification:
 

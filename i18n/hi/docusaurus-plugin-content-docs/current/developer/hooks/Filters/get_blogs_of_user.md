@@ -4,13 +4,13 @@ title: फ़िल्टर - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filter: get_blogs_of_user
+# Filter: get_blogs_of_user {#filter-getblogsofuser}
 
 यह मूल WP Filter की कार्यक्षमता को यहाँ दोहराता है, ताकि यह सुनिश्चित किया जा सके कि सब कुछ सही काम करे।
 
 यह किसी उपयोगकर्ता से जुड़े साइटों की सूची को फ़िल्टर करता है।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 | $user_id | `int` | उपयोगकर्ता की ID। |
 | $all | `bool` | यह निर्धारित करता है कि लौटाए गए साइटों की ऐरे में सभी साइटें शामिल होनी चाहिए या नहीं, जिसमें 'deleted', 'archived', या 'spam' के रूप में चिह्नित साइटें भी शामिल हैं। डिफ़ॉल्ट रूप से false है। |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851) में लाइन 851 पर परिभाषित है

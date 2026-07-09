@@ -3,7 +3,7 @@ title: Kutsvaga Kuti uye Kuratidza Mutaura mune Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace mu Site Templates (v2)
+# Auto Search and Replace mu Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Iriyi tutorial iyi inenge WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Mudzidzi wako anogona kuita iye field nguva yekugadzirwa.
 
 Ultimate Multisite ichagadzirisa placeholders nedata inogadzirwa neudzidzi wako nekuti zvakaitwa nekuita.
 
-## **Kuvishandura "template inosimbiswa neplaceholders"**
+## **Kuvishandura "template inosimbiswa neplaceholders"** {#solving-the-template-full-of-placeholders-problem}
 
 Izvi zviri kwanisa, asi tinokwanisa kuona kunge kuna problem yakakaita: template sites dzedu -dzinogona kuoneiudzwa neudzidzi vedu-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-dzenge-d
 

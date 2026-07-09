@@ -3,13 +3,13 @@ title: Kuyera plani
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Kufunsa plan (v2)
+# Kufunsa plan (v2) {#downgrading-a-plan-v2}
 
 _**KUFUNSA: Izi nkhani iyi imaliza Ultimate Multisite v2.x.**_
 
 Kufunsa plan kapena subscription ndi chilichonse chomwe anthu ena angakugwira ngati ali ndi ndalama yomwe yomwe (limited budget) kapena ali ndi chonde kuti sindikukonza zinthu zingapo kuti muli ndi subsite.
 
-## Kodi mungufunse plan bwanji?
+## Kodi mungufunse plan bwanji? {#how-to-downgrade-a-plan}
 
 Anthu ena angayendetsa plan yawo m'malo woyamba kwa logging in ku admin dashboard ya subsite yawo ndipo yendera **Change** (Mwandirira) pansi pa account page yawo.
 
@@ -25,7 +25,7 @@ Kuti mupitire, user aliyense adzakhala kuyendera butunzi la **Complete Checkout*
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Kodi kuli ndi chiyani pamene user amakufunsa plan?
+### Kodi kuli ndi chiyani pamene user amakufunsa plan? {#what-happens-when-a-user-downgrades-their-plan}
 
 Kuti ndi zofunsa kuti kufunsa plan sikugwira kusintha monga momwe kuli pansi kwa subsite yawo.
 
@@ -37,7 +37,7 @@ Poyenera posts zomwe zikukwera ku quota yomwe mulipeza, muli ndi milengedwe imod
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Kodi kulipeza ku payment?
+### Kodi kulipeza ku payment? {#what-happens-to-the-payment}
 
 M'malo mwamene 2.0, sikuleni kutambira zinthu za proration (kudzipereka m'malo).
 

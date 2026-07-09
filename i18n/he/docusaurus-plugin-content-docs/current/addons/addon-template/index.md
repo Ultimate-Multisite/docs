@@ -3,25 +3,25 @@ title: תבנית תוסף
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# תבנית Addon
+# תבנית Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## דרישות
+## דרישות {#requirements}
 
 - WordPress 5.3 ומעלה
 - PHP 7.4 ומעלה
 - תוסף Ultimate Multisite (פעיל)
 
-## התקנה
+## התקנה {#installation}
 
 1. העלה את קבצי ה-addon לתיקייה `/wp-content/plugins/`
 2. הפעל את ה-plugin דרך תפריט ה-"Plugins" ב-WordPress
 3. הגדר את הגדרות ה-addon במנהל הרשת
 
-## פיתוח
+## פיתוח {#development}
 
-### הגדרה (Setup)
+### הגדרה (Setup) {#setup}
 
 ```bash
 # התקנת תלויות
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### מבנה הפרויקט
+### מבנה הפרויקט {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # כללי מודרניזציה של קוד
 ```
 
-### בדיקות (Testing)
+### בדיקות (Testing) {#testing}
 
 ה-addon כולל מסגרת בדיקות מקיפה:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **כיסוי בדיקות (Test Coverage)**: מוגדר למעקב אחר כיסוי הקוד.
 - **בדיקות רשת (Multisite Testing)**: הבדיקות רצות בסביבת רשת (Multisite).
 
-### תקני קוד (Code Standards)
+### תקני קוד (Code Standards) {#code-standards}
 
 - **תקני קידוד של WordPress**: נאכפים באמצעות PHPCS.
 - **תאימות PHP 7.4+**: נתמכים תכונות PHP מודרניות.
 - **ניתוח סטטי (Static Analysis)**: שילוב PHPStan לבדיקת טיפוסים (Type Checking).
 - **מודרניזציית קוד (Code Modernization)**: כללי Rector לשדרוג PHP.
 
-### מערכת בנייה (Build System)
+### מערכת בנייה (Build System) {#build-system}
 
 - **עיבוד נכסים (Asset Processing)**: מיניפיקציה לקבצי CSS/JS.
 - **תרגום (Translation)**: יצירת קובצי POT.
 - **אריזה (Packaging)**: יצירת ארכיון להפצה.
 - **מצב פיתוח (Development Mode)**: נכסים לא ממוזערים (Unminified) לצורך דיבוג.
 
-## קונפיגורציה (Configuration)
+## קונפיגורציה (Configuration) {#configuration}
 
 ה-addon תומך באפשרויות קונפיגורציה שונות הנגישות דרך ממשק מנהל הרשת.
 
-## Hooks ו-Filters
+## Hooks ו-Filters {#hooks-and-filters}
 
-### Actions (פעולות)
+### Actions (פעולות) {#actions}
 
 - `ultimate-multisite-addon-template_init` - מופעל לאחר אתחול ה-addon.
 - `ultimate-multisite-addon-template_loaded` - מופעל לאחר טעינת כל קבצי ה-addon.
 
-### Filters (מסננים)
+### Filters (מסננים) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - שינוי הגדרות ה-addon.
 - `ultimate-multisite-addon-template_enabled` - דריסה של סטטוס ההפעלה/כיבוי של ה-addon.
 
-## רישיון (License)
+## רישיון (License) {#license}
 
 ה-addon הזה מורשה תחת GPL v3 או גרסה מאוחר יותר.
 
-## תמיכה (Support)
+## תמיכה (Support) {#support}
 
 לתמיכה ותיעוד, בקר ב-[MultisiteUltimate.com](https://multisiteultimate.com)
-## יומן שינויים (Changelog)
+## יומן שינויים (Changelog) {#changelog}
 
 - גרסה 1.0.1 (2025-09-28): שינוי הקידומת ל-ultimate-multisite; עדכון תחום הטקסט; העלאת גרסה.
 

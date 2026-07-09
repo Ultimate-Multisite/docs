@@ -4,23 +4,23 @@ title: Filter - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filter: mu_migration/export/user/data
+# Filter: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
 
 Beperk die standaard stel gebruikersdata wat geëksporteer of geïmporteer moet word.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $custom_user_data | `array` | Die aangepaste gebruikersdata-array. |
 | $user | `\WP_User` | Die gebruikersobyek. |
 
-### Sedert
+### Sedert {#since}
 
 - 0.1.0
-### Bron
+### Bron {#source}
 
 - Gedefinieer in [`inc/mu-migration/includes/commands/class-mu-migration-export.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-export.php#L335) by lyn 335
 - Gedefinieer in [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L147) by lyn 147
-## Gee Terug
+## Gee Terug {#returns}
 Die gebruikersdata-array.

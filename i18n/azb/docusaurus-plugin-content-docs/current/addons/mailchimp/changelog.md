@@ -3,7 +3,7 @@ title: Mailchimp Changelog
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp Değişiklik Geçmişi
+# Mailchimp Değişiklik Geçmişi {#mailchimp-changelog}
 
 Sürüm: 1.1.1 - Yayınlanma Tarihi: 2025-09-28
 

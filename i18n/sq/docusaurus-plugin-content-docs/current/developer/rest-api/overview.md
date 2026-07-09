@@ -3,28 +3,28 @@ title: Përmbledhje e REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referenca e REST API
+# Referenca e REST API {#rest-api-reference}
 
-## Konfigurimi bazë
+## Konfigurimi bazë {#base-configuration}
 
 **URL bazë:** `{site_url}/wp-json/wu/v2/`
 **Autentikimi:** Çelësi API dhe sekreti (HTTP Basic Auth ose parametrat URL)
 
-## Autentikimi
+## Autentikimi {#authentication}
 
-### Aktivizo API
+### Aktivizo API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Merr kredencialet API
+### Merr kredencialet API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metodat e autentikimit
+### Metodat e autentikimit {#authentication-methods}
 
 **HTTP Basic Auth (Rekomandohet):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Pikat fundore kryesore
+## Pikat fundore kryesore {#core-endpoints}
 
-### 1. API e klientëve
+### 1. API e klientëve {#1-customers-api}
 
 **Rruga bazë:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API e faqeve
+### 2. API e faqeve {#2-sites-api}
 
 **Rruga bazë:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API e anëtarësimeve
+### 3. API e anëtarësimeve {#3-memberships-api}
 
 **Rruga bazë:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API e produkteve
+### 4. API e produkteve {#4-products-api}
 
 **Rruga bazë:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API e pagesave
+### 5. API e pagesave {#5-payments-api}
 
 **Rruga bazë:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API e domeneve
+### 6. API e domeneve {#6-domains-api}
 
 **Rruga bazë:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Pika fundore e regjistrimit
+## Pika fundore e regjistrimit {#registration-endpoint}
 
 Pika fundore `/register` ofron një rrjedhë të plotë pagese/regjistrimi:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Pikat fundore të tenantëve sovranë
+## Pikat fundore të tenantëve sovranë {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 shton mbulim REST për tenantë sovranë për integrime që sigurojnë, inspektojnë ose verifikojnë tenantë të izoluar.
 
@@ -242,7 +242,7 @@ Përgjigjet tipike të statusit të migrimit përfshijnë:
 
 Trajtojeni `ready: false` si bllokues para nisjes. Kontrolloni detajet e verifikimit, rregulloni lidhjen e host-it të bazës së të dhënave, radhën, sigurimin e përdoruesit ose problemin e rrugëzimit, pastaj riprovoni verifikimin.
 
-## Përgjigjet e gabimeve
+## Përgjigjet e gabimeve {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Trajtojeni `ready: false` si bllokues para nisjes. Kontrolloni detajet e verifik
 }
 ```
 
-## Faqosja dhe filtrimi
+## Faqosja dhe filtrimi {#pagination-and-filtering}
 
 **Parametrat e kërkesës:**
 ```http

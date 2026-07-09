@@ -4,19 +4,19 @@ title: فیلتر - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# فیلتر: send_auth_cookies
+# فیلتر: send_auth_cookies {#filter-sendauthcookies}
 
 این فیلتر اجازه می‌دهد که از ارسال واقعی کوکی‌های احراز هویت (auth cookies) به کلاینت جلوگیری شود.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
 | $send | `bool` | اینکه آیا کوکی‌های احراز هویت باید به کلاینت ارسال شوند یا خیر. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 4.7.4
-### منبع
+### منبع {#source}
 
 در [ \`inc/sso/auth-functions.php\` ] در خط ۱۵۰ تعریف شده است.

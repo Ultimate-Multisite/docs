@@ -3,7 +3,7 @@ title: Rajistar Canje-canje na Haɗin WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Tarihin Canje-canjen WooCommerce Integration
+# Tarihin Canje-canjen WooCommerce Integration {#woocommerce-integration-changelog}
 
 Version 2.2.0 - An fitar a 2026-07-01
 * Sabo: Adadin harajin Ultimate Multisite yanzu yana bayyana a matsayin layukan kuɗi na WooCommerce daban a wurin checkout, yana sa jimillar haraji ta fi bayyana kafin biyan kuɗi.

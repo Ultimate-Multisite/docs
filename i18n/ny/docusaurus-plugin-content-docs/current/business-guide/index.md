@@ -3,13 +3,13 @@ title: Pangani Bizinesi ya Webusaiti ya Gawo Lapadera
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Pangani Bizinesi ya Webusayiti ya Niche ndi Ultimate Multisite
+# Pangani Bizinesi ya Webusayiti ya Niche ndi Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Anthu ambiri amene amayesa kugulitsa mawebusayiti amapikisana pa mtengo motsutsana ndi Wix, Squarespace, ndi ma freelancer masauzande ambiri. Amaluza. Amene amapambana amasankha omvera enieni, amapanga yankho logwirizana ndi omverawo, ndipo amalipiritsa mtengo wa phindu limene amapereka.
 
 Maphunzirowa akuphunzitsani mmene mungachitire zimenezo pogwiritsa ntchito Ultimate Multisite.
 
-## Zimene Mudzamanga
+## Zimene Mudzamanga {#what-you-will-build}
 
 Pa maphunzirowa mudzamanga netiweki yeniyeni, yogwira ntchito yotchedwa **FitSite** -- pulatifomu ya webusayiti yomangidwa makamaka kwa ma studio a masewera olimbitsa thupi, aphunzitsi aumwini, ndi eni ma gym.
 
@@ -23,7 +23,7 @@ Pofika pa phunziro lomaliza, FitSite idzakhala pulatifomu yathunthu ya niche yok
 
 Mudzatsatira sitepe ndi sitepe, ndipo pamapeto mudzakhala ndi pulatifomu yogwira ntchito komanso chidziwitso chobwerezanso ndondomekoyi pa niche iliyonse imene mwasankha.
 
-## Chifukwa Chiyani Ma Studio a Masewera Olimbitsa Thupi?
+## Chifukwa Chiyani Ma Studio a Masewera Olimbitsa Thupi? {#why-fitness-studios}
 
 Tinkafunikira chitsanzo chenicheni chimene aliyense angatsatire. Ma studio a masewera olimbitsa thupi amagwira ntchito chifukwa:
 
@@ -34,7 +34,7 @@ Tinkafunikira chitsanzo chenicheni chimene aliyense angatsatire. Ma studio a mas
 
 Zonse zimene mumaphunzira pomanga FitSite zimagwira ntchito mwachindunji pa niche iliyonse imene mwasankha: malo odyera, ma ajenti a malo, makampani a malamulo, mipingo, akontrakitala a ntchito zamanja, kapena gawo lina lililonse.
 
-## Kapangidwe ka Maphunziro
+## Kapangidwe ka Maphunziro {#course-structure}
 
 Phunziro lililonse limayambitsa lingaliro limodzi, limafotokoza chifukwa chake ndi lofunika, ndipo limakutsogolerani kuligwiritsa ntchito mu netiweki ya FitSite. Phunziro lililonse limamangirira pa lakale.
 
@@ -55,7 +55,7 @@ Phunziro lililonse limayambitsa lingaliro limodzi, limafotokoza chifukwa chake n
 | [13. Kukulitsa](lesson-13-growth) | Kukula kuchokera kwa makasitomala oyamba kupita ku bizinesi yeniyeni | Njira ya kukula ndi automation ya FitSite |
 | [14. Zimene Zikubwera Kenako](lesson-14-whats-next) | Kukulira ku ma niche oyandikana ndi mwayi watsopano | Roadmap yanu kupitirira FitSite |
 
-## Zofunika Musanayambe
+## Zofunika Musanayambe {#prerequisites}
 
 - Kuyika kwa WordPress Multisite (kapena kufunitsitsa kukhazikitsa imodzi)
 - Layisensi yogwira ntchito ya Ultimate Multisite
@@ -63,6 +63,6 @@ Phunziro lililonse limayambitsa lingaliro limodzi, limafotokoza chifukwa chake n
 
 Palibe kulemba code kofunika. Ngati simunagwiritsepo ntchito Ultimate Multisite kale, zili bwino -- Phunziro 3 limayambira pa install yatsopano.
 
-## Mwakonzeka?
+## Mwakonzeka? {#ready}
 
 Yambani ndi [Phunziro 1: Chifukwa Chake Niche Imapambana](lesson-1-why-niche).

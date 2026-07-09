@@ -4,11 +4,11 @@ title: Filtro - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filtro: wu_post_count
+# Filtro: wu_post_count {#filter-wupostcount}
 
 Permite que os programadores de plugin alterem o total da contagem
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Permite que os programadores de plugin alterem o total da contagem
 | $post_counts | `object` | Objeto WordPress devolvido pela fn wp_count_posts |
 | $post_type | `string` | O slug do tipo de publicação |
 
-### Desde
+### Desde {#since}
 
 - 1.9.1
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) na linha 136
 
 
-## Devolve
+## Devolve {#returns}
 Novo total

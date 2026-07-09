@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Addons d'Ultimate Multisite
+# Addons d'Ultimate Multisite {#ultimate-multisite-addons}
 
 Els Addons amplien Ultimate Multisite amb funcjonalitats i integracions addicionals. La majoria dels Addons són de pagament i es poden comprar des de [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Instal·lació
+## Instal·lació {#installation}
 
 Els Addons es poden instal·lar de dues maneres:
 
 1. **A través de la pàgina d'Addons** — Navegueu a la pàgina de gestió d'addons del vostre lloc a l'administració de WordPress
 2. **Descarregament manual** — Descarregueu des de [el vostre compte](https://ultimatemultisite.com/my-account/downloads/) i carregueu a través de Plugins > Add New
 
-## Addons disponibles
+## Addons disponibles {#available-addons}
 
 | Addon | Descripció |
 |-------|-------------|

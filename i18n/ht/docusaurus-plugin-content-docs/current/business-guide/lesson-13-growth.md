@@ -3,19 +3,19 @@ title: 'Leson 13: Ogmante echèl la'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Leson 13: Monte Echèl
+# Leson 13: Monte Echèl {#lesson-13-scaling-up}
 
 Ou gen yon platfòm k ap mache ak kliyan k ap peye. Leson sa a kouvri kijan pou grandi soti nan yon ti operasyon pou vin yon biznis dirab -- monte echèl enfrastrikti, otomatize operasyon yo, epi ogmante revni pa kliyan.
 
-## Kote Nou Te Rete
+## Kote Nou Te Rete {#where-we-left-off}
 
 FitSite anliy, kliyan ap enskri, epi w ap jere operasyon chak jou. Kounye a nou konsantre sou kwasans.
 
-## Konnen Chif Ou Yo
+## Konnen Chif Ou Yo {#know-your-numbers}
 
 Anvan ou monte echèl, konprann kote ou ye:
 
-### Metrik Kle
+### Metrik Kle {#key-metrics}
 
 - **MRR (Revni Renouvlab Chak Mwa)**: Revni total abònman chak mwa
 - **Kantite kliyan**: Total abònen aktif
@@ -24,7 +24,7 @@ Anvan ou monte echèl, konprann kote ou ye:
 - **LTV (Valè Pandan Tout Dire Lavi)**: Revni mwayen pa kliyan pandan tout abònman yo
 - **CAC (Pri pou Akire Kliyan)**: Pri mwayen pou jwenn yon kliyan
 
-### Egzanp: FitSite ak 50 Kliyan
+### Egzanp: FitSite ak 50 Kliyan {#example-fitsite-at-50-customers}
 
 | Metrik | Valè |
 |--------|-------|
@@ -36,9 +36,9 @@ Anvan ou monte echèl, konprann kote ou ye:
 
 Chif sa yo di w sou kisa pou konsantre. Dezabònman wo? Amelyore retansyon. ARPU ba? Pouse amelyorasyon plan. CAC wo? Optimize chanèl akizisyon yo.
 
-## Monte Echèl Enfrastrikti
+## Monte Echèl Enfrastrikti {#scaling-infrastructure}
 
-### Kilè pou Monte Echèl
+### Kilè pou Monte Echèl {#when-to-scale}
 
 Monte echèl hosting lè:
 
@@ -47,7 +47,7 @@ Monte echèl hosting lè:
 - W ap pwoche 100+ sit aktif
 - Plent kliyan sou vitès ogmante
 
-### Kijan pou Monte Echèl
+### Kijan pou Monte Echèl {#how-to-scale}
 
 - **Monte echèl vètikal**: Pase nan yon pi gwo sèvè (plis CPU, RAM)
 - **Kouch kach**: Ajoute Redis/Memcached pou kach objè, kach paj pou kontni estatik
@@ -55,7 +55,7 @@ Monte echèl hosting lè:
 - **Optimizasyon bazdone**: Pandan rezo a ap grandi, rechèch bazdone yo vin pi dousman. Optimize tablo yo, ajoute endèks, konsidere yon sèvè bazdone dedye.
 - **Separe responsablite yo**: Deplase depo medya nan depo objè (konpatib ak S3), transfere imèl bay yon sèvis imèl tranzaksyonèl
 
-### Migrasyon Hosting
+### Migrasyon Hosting {#hosting-migration}
 
 Si host aktyèl ou a pa ka monte echèl pi lwen, planifye yon migrasyon:
 
@@ -65,11 +65,11 @@ Si host aktyèl ou a pa ka monte echèl pi lwen, planifye yon migrasyon:
 4. Mete DNS ajou ak TTL minimòm davans
 5. Verifye tout bagay mache apre migrasyon an
 
-## Otomatize Operasyon yo
+## Otomatize Operasyon yo {#automating-operations}
 
 Pandan w ap grandi, pwosesis manyèl yo vin tounen blokaj. Otomatize sa ou kapab:
 
-### Webhooks ak Zapier
+### Webhooks ak Zapier {#webhooks-and-zapier}
 
 Itilize [Webhooks](/user-guide/integrations/webhooks) oswa [Zapier](/user-guide/integrations/zapier) pou otomatize:
 
@@ -78,7 +78,7 @@ Itilize [Webhooks](/user-guide/integrations/webhooks) oswa [Zapier](/user-guide/
 - **Echèk peman** → alèt nan zouti siveyans ou a
 - **Amelyorasyon plan** → imèl felisitasyon ak gid nouvo fonksyonalite
 
-### Otomasyon Imèl
+### Otomasyon Imèl {#email-automation}
 
 Pase soti nan imèl manyèl pou ale nan sekans otomatize:
 
@@ -87,30 +87,30 @@ Pase soti nan imèl manyèl pou ale nan sekans otomatize:
 - Rapèl pou amelyore plan lè kliyan yo pwoche limit plan yo
 - Rapèl renouvèlman pou abònen anyèl yo
 
-### Otomasyon Sipò
+### Otomasyon Sipò {#support-automation}
 
 - **Repons pare davans** pou kesyon komen
 - **Repons otomatik** ki rekonèt resepsyon tikè sipò yo
 - **Sijesyon baz konesans** lè kliyan soumèt tikè ki koresponn ak atik ki deja egziste
 
-## Ogmante Revni
+## Ogmante Revni {#increasing-revenue}
 
 Kwasans pa sèlman vle di plis kliyan. Li vle di tou plis revni pa kliyan.
 
-### Vann Plis bay Kliyan ki Deja Egziste
+### Vann Plis bay Kliyan ki Deja Egziste {#upselling-existing-customers}
 
 - **Amelyorasyon plan**: Kanpay vize ki montre fonksyonalite Growth/Pro bay kliyan Starter yo
 - **Òf siplemantè nan kòmand**: Pwomote pwodwi adisyonèl bay kliyan ki deja egziste atravè imèl
 - **Konvèsyon anyèl**: Ofri kliyan chak mwa yo yon rabè pou pase nan faktirasyon anyèl
 
-### Nouvo Sous Revni
+### Nouvo Sous Revni {#new-revenue-streams}
 
 - **Konfigirasyon fè-pou-ou**: Fè peye yon pri prim pou mete kanpe epi pèsonalize sit yon kliyan pou li
 - **Sèvis konsepsyon pèsonalize**: Ofri travay konsepsyon sou mezi anplis modèl la
 - **Sesyon fòmasyon**: Vizit gid pèsonèl peye pou kliyan ki vle èd pratik
 - **Plugin prim**: Ofri plugin prim ki espesifik pou nich kòm adisyon peye (pa egzanp, yon widget rezèvasyon klas fitnes)
 
-### Ogmante Pri
+### Ogmante Pri {#raising-prices}
 
 Pandan platfòm ou a ap matire epi ajoute valè:
 
@@ -118,7 +118,7 @@ Pandan platfòm ou a ap matire epi ajoute valè:
 - Ogmante pri pou nouvo enskripsyon yo
 - Jistifye ogmantasyon yo ak nouvo fonksyonalite ak amelyorasyon
 
-## Bati yon Ekip
+## Bati yon Ekip {#building-a-team}
 
 Nan yon moman, ou pa ka fè tout bagay poukont ou. Premye anbochaj komen yo:
 
@@ -128,7 +128,7 @@ Nan yon moman, ou pa ka fè tout bagay poukont ou. Premye anbochaj komen yo:
 
 Ou pa bezwen anplwaye. Kontraktè ak travayè endepandan mache byen pou yon biznis platfòm.
 
-## Etap Kwasans
+## Etap Kwasans {#growth-milestones}
 
 | Etap | MRR Apwoksimatif | Konsantrasyon |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Ou pa bezwen anplwaye. Kontraktè ak travayè endepandan mache byen pou yon bizn
 | 250-500 kliyan | $25,000-$50,000 | Bati ekip, nouvo sous revni, fonksyonalite prim |
 | 500+ kliyan | $50,000+ | Matirite platfòm, nich vwazen, sòti potansyèl |
 
-## Sa Nou Te Bati nan Leson Sa a
+## Sa Nou Te Bati nan Leson Sa a {#what-we-built-this-lesson}
 
 - **Yon kad metrik** pou konprann sante biznis la
 - **Plan monte echèl enfrastrikti** pou grandi soti nan plizyè dizèn pou rive nan plizyè santèn sit

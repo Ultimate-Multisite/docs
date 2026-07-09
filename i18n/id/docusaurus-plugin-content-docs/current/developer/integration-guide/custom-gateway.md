@@ -3,11 +3,11 @@ title: Pengembangan Gateway Kustom
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pengembangan Gateway Kustom
+# Pengembangan Gateway Kustom {#custom-gateway-development}
 
 Anda dapat membuat gateway pembayaran kustom dengan memperluas class `Base_Gateway`.
 
-## Class Gateway
+## Class Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Daftarkan Gateway
+## Daftarkan Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Metode Utama
+## Metode Utama {#key-methods}
 
 | Metode | Tujuan |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Menangani permintaan pengembalian dana |
 | `get_payment_methods()` | Mengembalikan metode pembayaran tersimpan untuk pelanggan |
 
-## Kredensial perpanjangan untuk keanggotaan berulang
+## Kredensial perpanjangan untuk keanggotaan berulang {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 memungkinkan integrasi gateway melaporkan apakah keanggotaan berulang memiliki kredensial perpanjangan yang dapat digunakan kembali sebelum `auto_renew` disimpan. Hook `wu_membership_has_renewal_credential` dan kembalikan:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Hapus penanda kredensial hilang sebagai bagian dari alur otorisasi ulang gateway Anda yang berhasil setelah kredensial baru yang dapat digunakan kembali disimpan.
 
-## Tips
+## Tips {#tips}
 
 - Selalu kembalikan `WP_Error` saat gagal agar Ultimate Multisite dapat menangani tampilan error
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gunakan `wu_log_add()` untuk pencatatan khusus gateway
 
-## Kemampuan penyedia konektor AI
+## Kemampuan penyedia konektor AI {#ai-connector-provider-capabilities}
 
 Integrasi kustom yang memanggil operasi berbasis konektor AI harus selaras dengan kumpulan penyedia OAuth yang didukung, yang diperkenalkan dengan AI Provider for Anthropic Max v1.3.0:
 

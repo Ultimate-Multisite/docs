@@ -3,7 +3,7 @@ title: AffiliateWP ענדערונגס־לאָג
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP ענדערונגס־לאָג
+# AffiliateWP ענדערונגס־לאָג {#affiliatewp-changelog}
 
 ווערסיע: 2.0.1 - אַרויסגעגעבן דעם 2025-09-28
 

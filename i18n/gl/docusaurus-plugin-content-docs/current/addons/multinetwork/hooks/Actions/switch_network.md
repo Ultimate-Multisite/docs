@@ -4,20 +4,20 @@ title: Acción - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Acción: switch_network
+# Acción: switch_network {#action-switchnetwork}
 
 Dispárase cando se cambia o contexto da rede actual.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
 | $new_network_id | `int` | ID da rede á que se está cambiando. |
 | $old_network_id | `int` | ID da rede que era a actual anteriormente. |
 
-### Desde
+### Desde {#since}
 
 - 1.3.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L859) na liña 859

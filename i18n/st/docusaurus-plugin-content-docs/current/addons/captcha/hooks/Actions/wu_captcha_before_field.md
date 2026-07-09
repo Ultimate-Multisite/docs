@@ -4,19 +4,19 @@ title: Ketso - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Action: wu_captcha_before_field
+# Action: wu_captcha_before_field {#action-wucaptchabeforefield}
 
 E sebetsa pele sebaka sa captcha se hlahiswa.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
 | $args | `array` | Dikgang tsa ho hlahisa. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 1.2.0
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L127) moleng wa 127

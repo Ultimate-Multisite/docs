@@ -3,7 +3,7 @@ title: Muunganisho wa Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Kuunganisha Ultimate Multisite na Zapier
+# Kuunganisha Ultimate Multisite na Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Katika mojawapo ya makala, tulijadili [Webhooks](webhooks.md) na jinsi zinavyoweza kutumika kuunganisha na programu za wahusika wengine.
 
@@ -15,7 +15,7 @@ Unaweza kuunda **Triggers** ambazo zitaanzishwa matukio yanapotokea kwenye mtand
 
 Hili linawezekana kwa sababu **triggers za Ultimate Multisite Zapier** na actions zinaendeshwa na [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Jinsi ya kuanza
+## Jinsi ya kuanza {#how-to-start}
 
 Kwanza, tafuta Ultimate Multisite katika orodha ya app za Zapier. Vinginevyo, unaweza kubofya [kiungo hiki](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Kwenye sehemu ya URL, weka URL kamili ya mtandao wako, ikijumuisha itifaki (HTTP
 
 Bofya kitufe cha **Yes, Continue** ili kuendelea kwenye hatua inayofuata. Ikiwa kila kitu kitafanya kazi, unapaswa kukaribishwa na account yako mpya iliyounganishwa! Bofya **Continue** ili kuunda trigger mpya.
 
-## Jinsi ya kuunda Trigger mpya
+## Jinsi ya kuunda Trigger mpya {#how-to-create-a-new-trigger}
 
 Sasa kwa kuwa account yako imeunganishwa unaweza kuona matukio yanayopatikana. Hebu tuchague tukio la **payment_received** kwa mafunzo haya.
 
@@ -67,7 +67,7 @@ Katika hatua hii, Zapier itajaribu kama Zap yako inaweza **kuchota payload mahus
 
 Katika mafunzo yetu jaribio **lilikamilika kwa mafanikio** na kurudisha taarifa ya mfano wa payload. Taarifa hii ya mfano itakuwa muhimu kutuongoza tunapounda actions. Trigger yako sasa imeundwa na iko tayari kuunganishwa na programu nyingine.
 
-## Jinsi ya kuunda Actions
+## Jinsi ya kuunda Actions {#how-to-create-actions}
 
 Actions hutumia taarifa kutoka triggers nyingine kuunda maingizo mapya kwenye mtandao wako.
 
@@ -79,7 +79,7 @@ Katika hatua inayofuata utaweza kuunda uthibitishaji wako, kama tulivyofanya kat
 
 ![Kuchagua uthibitishaji kwa action ya Zapier](/img/admin/webhooks-list.png)
 
-### Kusanidi Action
+### Kusanidi Action {#setting-up-the-action}
 
 Hii ndiyo **hatua kuu ya action** na hapa mambo ni tofauti kidogo. Taarifa ya kwanza utakayochagua ni **Item**. Item ni **modeli ya taarifa** ya mtandao wako kama vile **Customers, Payments, Sites, Emails** na nyinginezo.
 

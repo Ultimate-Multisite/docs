@@ -3,11 +3,11 @@ title: Funktionalitet för hantering av plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Management Abilities
+# Plugin Management Abilities {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 kommer med **7 plugin management abilities** som AI-assistenten kan anropa under ett samtal. Dessa abilities ger programmeringskontroll över WordPress-plugins som är installerade via [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Abilities Overview
+## Abilities Overview {#abilities-overview}
 
 | Ability | Slug | Description |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 kommer med **7 plugin management abilities** som AI-assis
 | Install Plugin | `install_plugin` | Deployar ett sandboxed plugin till det live WordPress plugin-katalogen. |
 | Activate Plugin | `activate_plugin` | Aktiverar ett sandboxed plugin i wp-env sandbox-miljön. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Plugin-installatorn hanterar filsystemoperationer när den deployar eller tar bort plugins. Viktiga beteenden:
 
@@ -28,7 +28,7 @@ Plugin-installatorn hanterar filsystemoperationer när den deployar eller tar bo
 - **Update**: Ersätter befintliga plugin-filer. Avaktiverar pluginet innan skrivning för att undvika fel relaterade till ofullständigt tillstånd.
 - **Delete by slug**: Lokaliserar plugin-katalogen via slug, avaktiverar över alla sites, och tar sedan bort katalogen.
 
-### Registering a Custom Install Handler
+### Registering a Custom Install Handler {#registering-a-custom-install-handler}
 
 Du kan haka på installationslivscykeln med actionerna `gratis_ai_plugin_installer_before_install` och `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 Abilities registreras via **plugin ecosystem registry**. Registret mappar ability slugs till deras handler-klasser och exponerar dem för AI-agentens tool dispatcher.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Abilities för `create_plugin` och `update_plugin` kör automatiskt **HookScanner** mot nyskapad kod. HookScanner returnerar en lista över WordPress action- och filter-hooks som pluginet registrerat.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner hoppar automatiskt över `vendor/` och `node_modules/` katalogerna.
 
-## Async Job Architecture
+## Async Job Architecture {#async-job-architecture}
 
 Långvariga plugin-operationer (generera, installera) skickas ut som **async jobs** med live progress-spårning. AI-chattgränssnittet poll:ar efter framsteg och strömmar statusuppdateringar till användaren:
 

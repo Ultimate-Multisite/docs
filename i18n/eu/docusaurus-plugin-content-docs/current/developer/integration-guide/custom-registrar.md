@@ -3,13 +3,13 @@ title: Erregistratzaile pertsonalizatu baten integrazioa eraikitzea
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Registrar pertsonalizatu baten integrazioa eraikitzea
+# Registrar pertsonalizatu baten integrazioa eraikitzea {#building-a-custom-registrar-integration}
 
 Domain Seller addon-ak **Integration Registry** eredua erabiltzen du. Registrar bakoitza `Domain_Selling_Capability` inplementatzen duen PHP klase bat da, eta bere burua erregistratzen du `wu_domain_seller_register_capabilities` action hook-aren bidez.
 
 Gida honek registrar pertsonalizatu bat nola konektatu erakusten du.
 
-## Interfazea
+## Interfazea {#the-interface}
 
 Zure klaseak `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` inplementatu behar du eta `WP_Ultimo\Integrations\Base_Capability_Module` hedatu.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Aukerako metodoak
+### Aukerako metodoak {#optional-methods}
 
 Inplementatu hauek eginbide gehigarriak desblokeatzeko. Addon-ak euskarria detektatzen du `method_exists()` bidez:
 
@@ -81,7 +81,7 @@ Inplementatu hauek eginbide gehigarriak desblokeatzeko. Addon-ak euskarria detek
 | `get_epp_code(string $domain_name): array` | Domeinu-transferentzia (irteerakoa) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domeinu-transferentzia (sarrerakoa) |
 
-### Itzulera-balioaren konbentzioa
+### Itzulera-balioaren konbentzioa {#return-value-convention}
 
 Metodo guztiek array bat itzultzen dute, gutxienez `success` gakoarekin:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Zure gaitasuna erregistratzea
+## Zure gaitasuna erregistratzea {#registering-your-capability}
 
 Erregistratu zure klasea `wu_domain_seller_register_capabilities` action erabiliz:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Kredentzial-eremuak morroiari gehitzea
+## Kredentzial-eremuak morroiari gehitzea {#adding-credential-fields-to-the-wizard}
 
 Administratzaileei konfigurazio-morroiaren bidez kredentzialak sartzen uzteko, erregistratu zure integrazioa:
 
@@ -137,7 +137,7 @@ Kredentzialak sareko aukera gisa gordetzen dira, eremu-IDak gako gisa erabiliz. 
 
 ---
 
-## Erregistroaren ondorengo ekintzetarako hook-ak
+## Erregistroaren ondorengo ekintzetarako hook-ak {#hooks-for-post-registration-actions}
 
 Erabili action hauek webhook-ak, hornikuntza, jakinarazpenak edo CRM eguneraketak abiarazteko:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Erregistroak
+## Erregistroak {#logging}
 
 Idatzi zure hornitzaileari dagokion erregistro-kanalean `wu_log_add()` erabiliz:
 

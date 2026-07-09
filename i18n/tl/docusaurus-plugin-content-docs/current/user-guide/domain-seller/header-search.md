@@ -3,11 +3,11 @@ title: Paghahanap ng Domain sa Header
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Paghahanap ng Domain sa Header
+# Paghahanap ng Domain sa Header {#header-domain-search}
 
 Gamitin ang setup na ito kapag gusto mo ng maliit na form sa header na nagsisimula ng paghahanap ng domain, pagkatapos ay hinahayaan ang customer na pumili mula sa mga available na domain sa loob ng Ultimate Multisite checkout.
 
-## Mga Kinakailangan
+## Mga Kinakailangan {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Gamitin ang setup na ito kapag gusto mo ng maliit na form sa header na nagsisimu
   - Mga suportadong TLD na naka-configure, halimbawa `com`, `net`, at `org`.
 - Isang valid na checkout form na naglalaman ng field na **Pagpili ng Domain**.
 
-## Checkout form
+## Checkout form {#checkout-form}
 
 1. Gumawa o mag-edit ng checkout form na ginagamit ng registration page.
 2. Idagdag ang normal na kinakailangang mga field ng checkout/account, kabilang ang **Username**. Ang checkout form na naglalaman lamang ng field ng domain ay tinatanggihan ng Ultimate Multisite validation.
@@ -30,7 +30,7 @@ Dapat i-render ng registration page ang checkout form, halimbawa:
 [wu_checkout slug="domain-form"]
 ```
 
-## Form sa header
+## Form sa header {#header-form}
 
 Magdagdag ng maliit na `GET` form sa site header na nagpapadala ng inilagay na termino sa paghahanap papunta sa checkout page bilang `domain_name`:
 
@@ -44,7 +44,7 @@ Magdagdag ng maliit na `GET` form sa site header na nagpapadala ng inilagay na t
 
 Huwag mag-preselect ng domain sa custom na JavaScript ng header. Dapat ipasa lamang ng header ang termino sa paghahanap. Binabasa ng checkout script ng Domain Seller ang `?domain_name=example`, pinupunan ang search box ng checkout, at pinapatakbo ang paghahanap ng availability upang makapili ang customer mula sa mga ibinalik na domain.
 
-## Inaasahang asal
+## Inaasahang asal {#expected-behaviour}
 
 Ang paghahanap ng `example` sa header ay dapat magbukas ng:
 
@@ -61,7 +61,7 @@ Pagkatapos, dapat magpakita ang checkout ng mga napipiling resulta tulad ng:
 
 Pagkatapos pumili ng available na resulta, dapat isama sa buod ng order ang produkto sa pagrerehistro ng domain at ang napiling pangalan ng domain.
 
-## Pagberipika
+## Pagberipika {#verification}
 
 1. Buksan ang home page.
 2. Maghanap ng bare name, halimbawa `example`.
@@ -71,7 +71,7 @@ Pagkatapos pumili ng available na resulta, dapat isama sa buod ng order ang prod
 6. I-click ang **Piliin** para sa isang available na domain.
 7. Kumpirmahing naglalaman ang buod ng order ng `Domain Registration - example.com` o ng napiling domain.
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
 - Kung walang lumilitaw na listahan, tingnan ang browser network tab para sa `admin-ajax.php?action=wu_domain_search` at kumpirmahing nagbabalik ito ng hindi bakanteng `domains` o `results`.
 - Kung nabibigo ang validation ng checkout form habang sine-save, idagdag ang kinakailangang mga field ng account tulad ng **Username**.

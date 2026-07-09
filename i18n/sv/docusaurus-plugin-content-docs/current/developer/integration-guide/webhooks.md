@@ -3,11 +3,11 @@ title: Webhook-hantering
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-hantering
+# Webhook-hantering {#webhook-handling}
 
 Skapa anpassade webhook-slutpunkter (endpoints) för att ta emot händelser från externa tjänster och synkronisera data med Ultimate Multisite.
 
-## Anpassad webhook-slutpunkt
+## Anpassad webhook-slutpunkt {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Säkerhetsöverväganden
+## Säkerhetsöverväganden {#security-considerations}
 
 - Verifiera alltid webhook-signaturer med HMAC eller en delad hemlighet.
 - Använd en `permission_callback` på din REST-rutt — ställ aldrig in den till `__return_true` i produktion.

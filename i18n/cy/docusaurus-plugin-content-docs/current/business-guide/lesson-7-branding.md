@@ -3,15 +3,15 @@ title: 'Dysgu 7: Gwylio i''i gael'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Leses 7: Gwne'n ei eich hun
+# Leses 7: Gwne'n ei eich hun {#lesson-7-making-it-yours}
 
 Nid yw eich cyddeeion yn gwneud i'r cyddeeion eu gweld fel " rhywun plugin WordPress". Deall eu bod yn defnyddio FitSite -- platform a ddangoswyd ar gyfer y dyfodol eu gweithredol. Mae’r les hon yn cyflwyno brandau, white-labeling, ac yn gwneud i'r platform yn teimlo fel produs.
 
-## Oes yma lle ni dod
+## Oes yma lle ni dod {#where-we-left-off}
 
 Mae FitSite gyda chyflawni checkout sy mae'n rhoi ddefnyddwyr studio fit yn ymlaen o ddefnyddio plan i gael siat byw. Mae'n ddimais ni'n gwneud yr holl gyfathrebu teimlo fel produs unigol, wedi'i brandu.
 
-## Dyddiau eich platform
+## Dyddiau eich platform {#your-platform-domain}
 
 Mae'r cyfnod eich brand yn ysgol eich domain. Ar gyfer FitSite:
 
@@ -19,7 +19,7 @@ Mae'r cyfnod eich brand yn ysgol eich domain. Ar gyfer FitSite:
 - **Siat cyddeeion**: `studioname.fitsite.com` (subdomains)
 - **Domainau cyfathreiniol**: Gall y cyddeeion ar Pro ac Growth gallu mapi'u domain eu hun
 
-### Cyflwyno eich domain
+### Cyflwyno eich domain {#setting-up-your-domain}
 
 1. Registr eich domain platform
 2. Tynnu'n ei ddefnyddio eich darparwr hosting
@@ -28,11 +28,11 @@ Mae'r cyfnod eich brand yn ysgol eich domain. Ar gyfer FitSite:
 
 Gweld [Sut mae cyflwyno mapi'r domain](/user-guide/domain-mapping/how-to-configure-domain-mapping) i ddefnyddio gyfarwyddiadau am ystyried domain.
 
-## White-Labeling yr adran gweithredol
+## White-Labeling yr adran gweithredol {#white-labeling-the-admin-experience}
 
 Pan fydd un o ddefnyddwyr studio fit yn cyflwyno i'w dashboard siat, bydd eu gweld eich brand, nid WordPress neu brandau Ultimate Multisite.
 
-### Peiriant login custom
+### Peiriant login custom {#custom-login-page}
 
 Cyflwynwch y peiriant login WordPress i ddangos:
 
@@ -46,7 +46,7 @@ Gwelion y cyfieithiadau i'r gweithredwyr. Defnyddiwch y addon [Admin Page Creato
 - Customu'r rheollorau colortrwy (color scheme) ar gyfer'r admin i gyd-fynd â'ch brand
 - Ychwanegu widget dashboard customatig gyda linciau cyflym a resurcio help yn benodol i ffitnes.
 
-### Peidiadau Admin Customatig
+### Peidiadau Admin Customatig {#dashboard-branding}
 
 Meddwl am ystyried creu peidiadau admin customatig sydd yn dangos yr adweithiadau harafynol am ystodwyr studio ffitnes:
 
@@ -56,11 +56,11 @@ Meddwl am ystyried creu peidiadau admin customatig sydd yn dangos yr adweithiada
 
 Mae hyn yn redus y gystadleu gan ddefnyddio adweithiau sydd yn hanfodol i'r niche ar ben, yn lle gwneud eu cyflwyno mewn menywod WordPress standard.
 
-## Brando eich Cyfathiadau
+## Brando eich Cyfathiadau {#custom-admin-pages}
 
 Mae pob e-bost, ffurfiad cyflwyniad (invoice), a chyhoeddiad yn cadw'r brand eich gweithredol.
 
-### E-bost Systema
+### E-bost Systema {#branding-your-communications}
 
 Mynolwch i **Ultimate Multisite > Settings > Emails** ac gwysylltu'r e-bost systema allanol:
 
@@ -77,14 +77,14 @@ E-bostau allanol sydd yn hanfodol i gwysylltu:
 | Payment receipt | "Mae cyflwyniad cyflwyniad wedi cael ei derbyn" | "Mae cyflwyniad cyflwyniad FitSite wedi'i cadw yn bennod" |
 | Trial ending | "Mae eich trial yn dal yn ddefnyddio" | "Mae eich trial FitSite yn dal yn ddefnyddio mewn 3 dydd -- cadw eich wefan studio llai" |
 
-### Ffurfiadau Cyflwyniad (Invoices)
+### Ffurfiadau Cyflwyniad (Invoices) {#system-emails}
 
 Gwysylltu ffurfiadau cyflwyniad gyda:
 
 - Ych logo a gwynau brand eich
 - Mae'r amseriad eich busnes yn ddefnyddio (e.g., "Fitness-specific product names" - enwau cynnyrch o fithres)
 
-## Y Site i'r Cliention
+## Y Site i'r Cliention {#invoices}
 
 Mae eich domena chyfathrebu (fitsite.com) angen rhywbeth marketing sy'n baw yn gael y platform. Mae hyn yn rhywbeth arall na'r admin o rheolion Ultimate Multisite -- mae'n y fwythyn cyhoeddus o'ch busnes.
 
@@ -100,7 +100,7 @@ Paginau allweddol:
 Creu eich site marketing fel site o fewn yn eich rheolion eich hun. Mae hyn yn gallu'n gaelch ystyried yma o'r dashboard felly a dangos y galluau eich platform eich hun.
 :::
 
-## Domena Cynnyfrifol ar gyfer Cliention
+## Domena Cynnyfrifol ar gyfer Cliention {#the-customer-facing-site}
 
 Ar gyfer cliention ar planau sy'n cynnwys domena cynnyfrifol, ddefnyddiwch y prosess yn glir:
 
@@ -110,7 +110,7 @@ Ar gyfer cliention ar planau sy'n cynnwys domena cynnyfrifol, ddefnyddiwch y pro
 
 Creu article help neu entry mewn gweithgref gwybodaeth yn benodol ar gyfer y prosess hwn, wedi'i ysgrifennu ar gyfer rheolion fithres nad yw'n ddefnyddio technoleg.
 
-## Y FitSite Network Erioedd
+## Y FitSite Network Erioedd {#custom-domain-for-customers}
 
 Mae'r fitns i'r network eich erioedd
 
@@ -129,7 +129,7 @@ FitSite Network
 │   └── Marketing site ar fitsite.com
 └── Ready for onboarding flow (next dysgu)
 
-## Beth wedi'r Llesenau yr Llesenau Hwnnw
+## Beth wedi'r Llesenau yr Llesenau Hwnnw {#the-fitsite-network-so-far}
 
 - **Platform domain a DNS** wedi'i sicrwydd i gael gyfrifol brandoed
 - **Admin gyda chwarae gwytbwys** gyda FitSite yn llawn brandoed

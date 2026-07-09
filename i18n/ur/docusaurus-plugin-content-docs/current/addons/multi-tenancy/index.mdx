@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# کثیر کرایہ داری
+# کثیر کرایہ داری {#multi-tenancy}
 
 کارکردگی اور سیکیورٹی کے لیے ذیلی سائٹس کو سرورز اور ڈیٹابیسز میں تقسیم کریں
 
-## Version 1.2.0 ریلیز کی جھلکیاں
+## Version 1.2.0 ریلیز کی جھلکیاں {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 پیداواری علیحدگی کے ورک فلو کے لیے خودمختار کرایہ دار کی بنیاد شامل کرتا ہے:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 پیداواری علیحدگی کے ورک فلو کے لی
 
 [خودمختار منتقلی ورک فلو](/user-guide/getting-started/sovereign-migration-workflow)، [کثیر کرایہ داری علیحدگی](/user-guide/configuration/multi-tenancy-isolation)، اور [خودمختار کرایہ دار آپریشنز](/user-guide/administration/sovereign-tenant-operations) کے لیے صارف رہنما دیکھیں۔
 
-## تقاضے
+## تقاضے {#requirements}
 
 - WordPress 5.3 یا اس سے زیادہ
 - PHP 7.4 یا اس سے زیادہ
 - Multisite Ultimate پلگ اِن (فعال)
 
-## تنصیب
+## تنصیب {#installation}
 
 1. addon فائلوں کو اپنی `/wp-content/plugins/` ڈائریکٹری میں اپ لوڈ کریں
 2. WordPress میں 'پلگ اِنز' مینو کے ذریعے پلگ اِن فعال کریں
 3. نیٹ ورک منتظم میں addon ترتیبات تشکیل دیں
 
-## ترقی
+## ترقی {#development}
 
-### سیٹ اپ
+### سیٹ اپ {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### پروجیکٹ ساخت
+### پروجیکٹ ساخت {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # کوڈ جدید کاری کے قواعد
 ```
 
-### ٹیسٹنگ
+### ٹیسٹنگ {#testing}
 
 addon میں ایک جامع ٹیسٹنگ فریم ورک شامل ہے:
 
@@ -93,54 +93,54 @@ addon میں ایک جامع ٹیسٹنگ فریم ورک شامل ہے:
 - **ٹیسٹ کوریج**: کوڈ کوریج کو ٹریک کرنے کے لیے تشکیل شدہ
 - **Multisite ٹیسٹنگ**: ٹیسٹس multisite ماحول میں چلتے ہیں
 
-### کوڈ معیارات
+### کوڈ معیارات {#code-standards}
 
 - **WordPress کوڈنگ معیارات**: PHPCS کے ذریعے نافذ
 - **PHP 7.4+ مطابقت**: جدید PHP خصوصیات کی معاونت
 - **جامد تجزیہ**: قسم کی جانچ کے لیے PHPStan انضمام
 - **کوڈ جدید کاری**: PHP اپ گریڈز کے لیے Rector قواعد
 
-### بلڈ سسٹم
+### بلڈ سسٹم {#build-system}
 
 - **اثاثہ پروسیسنگ**: CSS/JS فائلوں کے لیے اختصار
 - **ترجمہ**: POT فائل تخلیق
 - **پیکیجنگ**: تقسیم کے لیے آرکائیو تخلیق
 - **ترقیاتی موڈ**: ڈیبگنگ کے لیے غیر مختصر اثاثے
 
-## تشکیل
+## تشکیل {#configuration}
 
 addon مختلف تشکیل اختیارات کی معاونت کرتا ہے جو نیٹ ورک منتظم انٹرفیس کے ذریعے قابلِ رسائی ہیں۔
 
-### خودمختار کرایہ دار تشکیل
+### خودمختار کرایہ دار تشکیل {#sovereign-tenant-configuration}
 
 خودمختار کرایہ داروں کے لیے، کرایہ دار ڈیٹابیس، فائل سسٹم روٹ، ڈیٹابیس میزبان بائنڈنگ، اور میزبان صلاحیت کو کرایہ دار کی طرف ٹریفک روٹ کرنے سے پہلے تشکیل دیں۔ ہر اس تبدیلی کے بعد منتقلی کی توثیق چلائیں جو ڈیٹابیس اسناد، میزبان بائنڈنگ، روٹنگ، یا صارف فراہمی کو متاثر کرتی ہو۔
 
 `localhost` صرف اس وقت استعمال کریں جب کرایہ دار رن ٹائم اور ڈیٹابیس گرانٹس مقامی ساکٹ یا اسی مشین تک رسائی کی توقع کریں۔ `127.0.0.1` یا سروس میزبان نام استعمال کریں جب وہی آپ کے فراہم کنندہ کے ذریعے تشکیل شدہ گرانٹ میزبان ہو۔
 
-### Hostinger صلاحیت
+### Hostinger صلاحیت {#hostinger-capability}
 
 Hostinger کثیر کرایہ داری صلاحیت مشترکہ Hostinger انضمام ٹوکن کے ساتھ کام کرتی ہے۔ توثیق سے پہلے تصدیق کریں کہ ڈومین hPanel میں موجود ہے، DNS Hostinger اکاؤنٹ کی طرف اشارہ کرتا ہے، اور کرایہ دار ڈیٹابیس ترتیبات hPanel سے مطابقت رکھتی ہیں۔
 
-## ہکس اور فلٹرز
+## ہکس اور فلٹرز {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - addon کی ابتدا کے بعد چلایا جاتا ہے
 - `ultimate-multisite-addon-template_loaded` - تمام addon فائلیں لوڈ ہونے کے بعد چلایا جاتا ہے
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - addon ترتیبات میں ترمیم کریں
 - `ultimate-multisite-addon-template_enabled` - addon کو فعال/غیرفعال کرنے کی حیثیت کو اوور رائیڈ کریں
 
-## لائسنس
+## لائسنس {#license}
 
 یہ addon GPL v3 یا بعد کے تحت لائسنس یافتہ ہے۔
 
-## معاونت
+## معاونت {#support}
 
 معاونت اور دستاویزات کے لیے، [MultisiteUltimate.com](https://multisiteultimate.com) ملاحظہ کریں
-## تبدیلیوں کی فہرست
+## تبدیلیوں کی فہرست {#changelog}
 
 - Version 1.2.0 (2026-06-03): بے حالت کرایہ دار خودکار لاگ اِن، Hostinger کثیر کرایہ داری صلاحیت، فی ذیلی سائٹ ڈیٹابیس اور فائل سسٹم علیحدگی، خودمختار منتقلی توثیقی گیٹس، کرایہ دار بوٹسٹریپ/ڈیٹابیس رائٹر بہتریاں، قابلِ ترتیب MySQL میزبان بائنڈنگ، اور زیادہ محفوظ خودمختار خاتمہ شامل کریں۔
 

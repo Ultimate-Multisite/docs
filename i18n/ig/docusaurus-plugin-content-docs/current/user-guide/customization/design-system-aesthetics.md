@@ -3,11 +3,11 @@ title: Nkwado Ụdị Nkwado Design System Aesthetic
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Nkanọta Aesthetics Design System Skill
+# Nkanọta Aesthetics Design System Skill {#design-system-aesthetics-skill}
 
 **Design System Aesthetics skill** na ebe ọ dimaka ịgba ọkụ (refine) ihe nkwado site-nwa gị. Ọ ga-eme ka ị chụrụ ihe ndị dị mma maka typography, ajụjụ (color), spacing, na motion tokens nke mere anọchịrịka sistem design system gị.
 
-## Ka bụ Design System Aesthetics?
+## Ka bụ Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics bụ ọkụ ọrụ dị nchekwa nke ga-akwụsị ihe ndị a:
 
@@ -20,9 +20,9 @@ Design System Aesthetics bụ ọkụ ọrụ dị nchekwa nke ga-akwụsị ihe
 
 Ihe ndị a ga-akwụsị n'file `theme.json` nke theme gị, mere ihe dị mma dị anọchịrịka visual system.
 
-## Ọ bụrụ na ị chọrọ Design System Aesthetics?
+## Ọ bụrụ na ị chọrọ Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Consistency (Anọchịrịka)
+### Consistency (Anọchịrịka) {#consistency}
 
 Design system ga-eme ka:
 
@@ -31,7 +31,7 @@ Design system ga-eme ka:
 - Spacing na-agba ihe dị mma dị anọchịrịka
 - Animations ga-eme ka ọ dị ọnụ
 
-### Efficiency (Ihe Nchegbu)
+### Efficiency (Ihe Nchegbu) {#efficiency}
 
 Ọ bụtụtụkwa ị chọrọ ịgba ọkụ design n'ọdịnihu, gị ga:
 
@@ -39,7 +39,7 @@ Design system ga-eme ka:
 - Apply them everywhere (Gụnyere ha dị anọchịrịka)
 - Update globally by changing one value (Chụrụ ihe ọ bụla n'ọdịnihu maara na ị chụrụ ihe ọ bụla)
 
-### Flexibility (Ihe Gị Ọ dị Mma)
+### Flexibility (Ihe Gị Ọ dị Mma) {#flexibility}
 
 Ị ga-akwụsị:
 
@@ -47,9 +47,9 @@ Design system ga-eme ka:
 - Experiment with different aesthetics (Chọrọ ihe dị iche iche nke aesthetic)
 - Maintain brand consistency while evolving (Diji anọchịrịka brand ma ọ bụ ị chụrụ ya)
 
-## Ka na-agba Design System Aesthetics Skill?
+## Ka na-agba Design System Aesthetics Skill? {#triggering-the-design-system-aesthetics-skill}
 
-### Manual Activation (Nkwado Ọkụ)
+### Manual Activation (Nkwado Ọkụ) {#manual-activation}
 
 Ị ga-eme ka ọkụ a mgbe ọ bụla:
 
@@ -69,7 +69,7 @@ na
 "Guide me through design system decisions"
 ```
 
-### Automatic Suggestions (Ihe Ọ Ga-eme Karị)
+### Automatic Suggestions (Ihe Ọ Ga-eme Karị) {#automatic-suggestions}
 
 Agents ga-awụrụ ka ọkụ a mgbe ị:
 
@@ -78,9 +78,9 @@ Agents ga-awụrụ ka ọkụ a mgbe ị:
 - Want to improve visual consistency (Chọrọ ịgba ọkụ anọchịrịka visual)
 - Are preparing to launch your site (Ị na-agba site gị nkwado)
 
-## Proses Estética Hệ Thống Thiết Kế
+## Proses Estética Hệ Thống Thiết Kế {#the-design-system-aesthetics-process}
 
-### Bước 1: Kiểu Chữ (Typography)
+### Bước 1: Kiểu Chữ (Typography) {#step-1-typography}
 
 Agent sẽ hỏi về lựa chọn font chữ của bạn:
 
@@ -110,7 +110,7 @@ Sau đó, agent sẽ định nghĩa:
 - **Thang độ đậm (Weight scale)**: Độ đậm của font (thông thường, trung bình, đậm, v.v.)
 - **Chiều cao dòng (Line height)**: Khoảng cách giữa các dòng để dễ đọc
 
-### Bước 2: Bảng Màu (Color Palette)
+### Bước 2: Bảng Màu (Color Palette) {#step-2-color-palette}
 
 ```
 Hãy cùng định nghĩa bảng màu của bạn nhé.
@@ -140,7 +140,7 @@ Agent sẽ tạo ra một bảng màu hoàn chỉnh bao gồm:
 - Các màu ngữ nghĩa (thành công, cảnh báo, lỗi)
 - Trạng thái di chuột (Hover) và trạng thái hoạt động (Active states)
 
-### Bước 3: Khoảng Cách (Spacing)
+### Bước 3: Khoảng Cách (Spacing) {#step-3-spacing}
 
 Edi nchekị ọkụ? (How much breathing room do you want?)
 
@@ -160,7 +160,7 @@ Agent ahụ na-ahazo spacing tokens (tokens ọkụ ọkụ):
 - Scale: xs, sm, md, lg, xl, 2xl
 - Specific values ọkụ ọkụ ọkụ na padding, margin, gap
 
-### Step 4: Borders and Shadows
+### Step 4: Borders and Shadows {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition (Ndu nchekwa ọkụ ọkụ):
@@ -183,7 +183,7 @@ Agent ahụ na-ahazo:
 - Shadow tokens maka elevation levels (maka oge nchekwa ọkụ ọkụ)
 - Border width tokens
 
-### Step 5: Motion and Animation
+### Step 5: Motion and Animation {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive? (Ndu nchegbu na-agba ọsọ?)
@@ -205,9 +205,9 @@ Agent ahụ na-ahazo:
 - Easing functions (ease-in, ease-out, ease-in-out) (Functions easing (ease-in, ease-out, ease-in-out))
 - Animation keyframes for common interactions (Keyframes animation maka interactions ndị dị nwere ike ịdị mma)
 
-## Applying Design System Aesthetics
+## Applying Design System Aesthetics {#applying-design-system-aesthetics}
 
-### Automatic Application
+### Automatic Application {#automatic-application}
 
 Ọ bụrụ na ị na-ahụ skill ahụ, agent ahụ ga-arị:
 
@@ -216,7 +216,7 @@ Agent ahụ na-ahazo:
 3. Regenerates block styles to match the new system (Na-ahụ style blocks maka ịdị mma na design system ọhụrụ ahụ)
 4. Activates the updated theme (Na-ahụ theme ahụ nke a na-ahụka ọkụ ọkụ ọkụ ọkụ)
 
-### Manual Application
+### Manual Application {#manual-application}
 
 Ị nwere ike ịgbagba `theme.json` direct:
 
@@ -255,9 +255,9 @@ Agent ahụ na-ahazo:
 }
 ```
 
-## Melihat Hệ Thống Thiết Kế Của Bạn
+## Melihat Hệ Thống Thiết Kế Của Bạn {#viewing-your-design-system}
 
-### Hỏi Trợ Lý (Agent)
+### Hỏi Trợ Lý (Agent) {#ask-the-agent}
 
 ```
 "Cho tôi xem hệ thống thiết kế của tôi"
@@ -271,13 +271,13 @@ hoặc
 
 Trợ lý sẽ hiển thị các thông tin về kiểu chữ, màu sắc, khoảng cách và các token khác của bạn.
 
-### Xem theme.json
+### Xem theme.json {#view-themejson}
 
 Mở file `/wp-content/themes/[theme-name]/theme.json` trong trình soạn thảo văn bản để xem định nghĩa token thô.
 
-## Cập Nhật Hệ Thống Thiết Kế Của Bạn
+## Cập Nhật Hệ Thống Thiết Kế Của Bạn {#updating-your-design-system}
 
-### Cập Nhật Nhanh
+### Cập Nhật Nhanh {#quick-updates}
 
 Hỏi trợ lý về những thay đổi cụ thể:
 
@@ -297,7 +297,7 @@ hoặc
 "Thay đổi font tiêu đề thành kiểu serif"
 ```
 
-### Thiết Kế Lại Toàn Diện
+### Thiết Kế Lại Toàn Diện {#full-redesign}
 
 Chạy lại kỹ năng Thẩm mỹ Hệ thống Thiết kế:
 
@@ -307,7 +307,7 @@ Chạy lại kỹ năng Thẩm mỹ Hệ thống Thiết kế:
 
 Điều này sẽ hướng dẫn bạn qua tất cả các quyết định một lần nữa, bắt đầu từ các giá trị hiện tại của bạn.
 
-### Cập Nhật Một Phần
+### Cập Nhật Một Phần {#partial-updates}
 
 Cập nhật các khía cạnh cụ thể:
 
@@ -315,15 +315,15 @@ Cập nhật các khía cạnh cụ thể:
 "Chỉ cập nhật bảng màu, giữ nguyên mọi thứ khác"
 ```
 
-## Thực Hành Tốt Về Hệ Thống Thiết Kế
+## Thực Hành Tốt Về Hệ Thống Thiết Kế {#design-system-best-practices}
 
-### Tính Nhất Quán
+### Tính Nhất Quán {#consistency-1}
 
 - Sử dụng cùng một token ở mọi nơi
 - Đừng tạo ra những màu sắc hoặc kích thước riêng lẻ
 - Tham chiếu đến các token thay vì viết giá trị cứng (hardcoding)
 
-### Đặt Tên
+### Đặt Tên {#naming}
 
 Sử dụng tên rõ ràng, dễ hiểu:
 
@@ -333,7 +333,7 @@ Sử dụng tên rõ ràng, dễ hiểu:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Khả Năng Mở Rộng (Scalability)
+### Khả Năng Mở Rộng (Scalability) {#scalability}
 
 Design hệ thống của bạn để mở rộng quy mô:
 
@@ -341,15 +341,15 @@ Design hệ thống của bạn để mở rộng quy mô:
 - Tạo các thang đo (xs, sm, md, lg, xl) thay vì các giá trị tùy ý
 - Lên kế hoạch cho các bổ sung trong tương lai
 
-### Tài liệu hóa hệ thống thiết kế của bạn:
+### Tài liệu hóa hệ thống thiết kế của bạn: {#documentation}
 
 - Tại sao bạn chọn những màu cụ thể đó
 - Khi nào nên dùng từng token
 - Các trường hợp ngoại lệ và tình huống khó xử lý
 
-## Các Mẫu Hệ Thống Thiết Kế Phổ Biến
+## Các Mẫu Hệ Thống Thiết Kế Phổ Biến {#common-design-system-patterns}
 
-### Tối Giản Hiện Đại (Modern Minimalist)
+### Tối Giản Hiện Đại (Modern Minimalist) {#modern-minimalist}
 
 - Kiểu chữ không chân (Inter, Helvetica)
 - Bảng màu giới hạn (2-3 màu)
@@ -357,7 +357,7 @@ Design hệ thống của bạn để mở rộng quy mô:
 - Bóng đổ tinh tế
 - Các hiệu ứng hoạt ảnh mượt mà, nhanh chóng
 
-### Ấm Áp và Thân Thiện (Warm and Friendly)
+### Ấm Áp và Thân Thiện (Warm and Friendly) {#warm-and-friendly}
 
 - Kết hợp giữa kiểu chữ có chân và không chân
 - Bảng màu ấm áp (cam, các tông xám ấm)
@@ -365,7 +365,7 @@ Design hệ thống của bạn để mở rộng quy mô:
 - Bóng đổ mềm mại
 - Các hiệu ứng hoạt ảnh vui nhộn
 
-### Chuyên Nghiệp Doanh Nghiệp (Professional Corporate)
+### Chuyên Nghiệp Doanh Nghiệp (Professional Corporate) {#professional-corporate}
 
 - Kiểu chữ không chân sạch sẽ (Roboto, Open Sans)
 - Bảng màu trung tính với một màu nhấn
@@ -373,7 +373,7 @@ Design hệ thống của bạn để mở rộng quy mô:
 - Bóng đổ tối thiểu
 - Các chuyển tiếp tinh tế
 
-### Sáng Tạo và Mạnh Mẽ (Creative and Bold)
+### Sáng Tạo và Mạnh Mẽ (Creative and Bold) {#creative-and-bold}
 
 - Kiểu chữ đặc trưng
 - Bảng màu đậm nét
@@ -381,7 +381,7 @@ Design hệ thống của bạn để mở rộng quy mô:
 - Bóng đổ mạnh mẽ
 - Các hiệu ứng hoạt ảnh dễ nhận thấy
 
-## Khắc Phục Sự Cố
+## Khắc Phục Sự Cố {#troubleshooting}
 
 **Hệ thống thiết kế của tôi không hiển thị thay đổi**
 - Xóa bộ nhớ đệm (cache) trình duyệt của bạn
@@ -399,7 +399,7 @@ Design hệ thống của bạn để mở rộng quy mô:
 - Chỉnh sửa thủ công theme.json sang các giá trị trước đó
 - Chạy lại kỹ năng với các lựa chọn khác
 
-## Các Bước Tiếp Theo
+## Các Bước Tiếp Theo {#next-steps}
 
 Sau khi xác định xong hệ thống thiết kế của bạn:
 

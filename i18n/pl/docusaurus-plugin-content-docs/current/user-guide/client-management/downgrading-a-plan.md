@@ -3,13 +3,13 @@ title: Obniżanie planu
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Obniżanie planu (v2)
+# Obniżanie planu (v2) {#downgrading-a-plan-v2}
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
 Obniżenie planu lub subskrypcji to częsta czynność, którą Twoi klienci mogą wykonać, jeśli mają ograniczony budżet albo uznali, że nie będą potrzebować wielu zasobów do prowadzenia swojej subwitryny.
 
-## Jak obniżyć plan
+## Jak obniżyć plan {#how-to-downgrade-a-plan}
 
 Twoi klienci mogą obniżyć swój plan w dowolnym momencie, logując się do panelu administracyjnego swojej subwitryny i klikając **Zmień** na stronie swojego Account.
 
@@ -25,7 +25,7 @@ Aby kontynuować, użytkownik musi po prostu kliknąć przycisk **Complete Check
 
 ![Strona Account z banerem oczekującej zmiany membership](/img/account-page/pending-change.png)
 
-### Co się dzieje, gdy użytkownik obniża swój plan
+### Co się dzieje, gdy użytkownik obniża swój plan {#what-happens-when-a-user-downgrades-their-plan}
 
 Warto zauważyć, że obniżenie planu nie zmienia istniejącej konfiguracji w subwitrynie użytkownika.
 
@@ -37,7 +37,7 @@ Dla wpisów przekraczających limit ustawiony w planie masz 3 różne opcje: **Z
 
 ![Strona Witryny w ustawieniach Network Admin pokazująca opcje zachowania po przekroczeniu limitu wpisów](/img/account-page/settings-sites-post-limit.png)
 
-### Co dzieje się z płatnością
+### Co dzieje się z płatnością {#what-happens-to-the-payment}
 
 W wersji 2.0 nie wymaga to już żadnych korekt płatności w zakresie proporcjonalnego rozliczenia.
 

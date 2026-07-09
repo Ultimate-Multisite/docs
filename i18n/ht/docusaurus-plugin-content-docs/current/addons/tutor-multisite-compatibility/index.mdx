@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Yon plugin WordPress ki ajoute koreksyon konpatibilite pou Tutor LMS nan anviwònman multisite yo.
 
-## Deskripsyon
+## Deskripsyon {#description}
 
 Plugin sa a bay koreksyon konpatibilite esansyèl pou fè Tutor LMS mache sou rezo WordPress multisite. Li jere enskripsyon itilizatè, jesyon enstriktè, limit kou, ak lòt fonksyonalite espesifik pou multisite.
 
-## Fonksyonalite
+## Fonksyonalite {#features}
 
 - **Jesyon Tab Bazdone**: Detekte otomatikman epi kreye tab Tutor LMS ki manke yo lè yo echwe akoz kontrent kle etranje multisite
 - **Enskripsyon Itilizatè Multisite**: Manadjè AJAX pèsonalize pou jere enskripsyon itilizatè atravè sit rezo yo
@@ -24,7 +24,7 @@ Plugin sa a bay koreksyon konpatibilite esansyèl pou fè Tutor LMS mache sou re
 - **Afichaj Admin Pèsonalize**: Lis enstriktè ak koòdone jesyon ki konprann multisite
 - **Zouti Admin**: Koòdone jesyon bazdone pou administratè rezo ak administratè sit
 
-## Kondisyon
+## Kondisyon {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Plugin sa a bay koreksyon konpatibilite esansyèl pou fè Tutor LMS mache sou re
 - Enstalasyon WordPress Multisite
 - Plugin Ultimate Multisite (pou fonksyonalite limit kou)
 
-## Enstalasyon
+## Enstalasyon {#installation}
 
 1. Telechaje fichye plugin yo nan `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Asire Tutor LMS enstale epi aktive
 3. Aktive plugin nan meni 'Plugins' nan WordPress
 4. Plugin nan ap entegre otomatikman ak Tutor LMS
 
-## Estrikti Fichye
+## Estrikti Fichye {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Fonksyonalite ki Deplase soti nan MU Plugin
+## Fonksyonalite ki Deplase soti nan MU Plugin {#functionality-moved-from-mu-plugin}
 
 Plugin sa a gen fonksyonalite ki te deja nan `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Plugin sa a gen fonksyonalite ki te deja nan `wp-content/mu-plugins/daves.php`:
 - Jesyon enskripsyon itilizatè multisite
 - Afichaj ID pwodwi kou
 
-## Jesyon Bazdone
+## Jesyon Bazdone {#database-management}
 
-### Pwoblèm nan
+### Pwoblèm nan {#the-problem}
 
 Nan anviwònman WordPress multisite, kreyasyon tab Tutor LMS echwe pou tab ki gen kontrent kle etranje pou tab itilizatè yo. Sa rive paske:
 
@@ -81,7 +81,7 @@ Nan anviwònman WordPress multisite, kreyasyon tab Tutor LMS echwe pou tab ki ge
 - Kle etranje yo fè referans ak `wp_2_users` (ki pa egziste)
 - Vrè tab itilizatè yo se `wp_users` (pataje atravè rezo a)
 
-### Solisyon an
+### Solisyon an {#the-solution}
 
 Plugin sa a otomatikman:
 
@@ -92,13 +92,13 @@ Plugin sa a otomatikman:
    - Kreyasyon nouvo sit nan rezo a
    - Verifikasyon tab manyèl atravè koòdone admin
 
-### Tab ki Afekte yo
+### Tab ki Afekte yo {#affected-tables}
 
 - `tutor_coupon_usages` - Gen kle etranje pou tab itilizatè yo
 - `tutor_carts` - Gen kle etranje pou tab itilizatè yo
 - `tutor_notification_preferences` - Tab TutorPro ak kle etranje pou tab itilizatè yo
 
-### Koòdone Admin
+### Koòdone Admin {#admin-interface}
 
 Aksede zouti jesyon bazdone yo nan:
 
@@ -111,6 +111,6 @@ Koòdone nan pèmèt ou:
 - Tcheke konfigirasyon bazdone
 - Wè enfòmasyon detaye sou estati
 
-## Sipò
+## Sipò {#support}
 
 Plugin sa a fèt espesyalman pou platfòm KursoPro. Pou sipò teknik, kontakte ekip devlopman an.

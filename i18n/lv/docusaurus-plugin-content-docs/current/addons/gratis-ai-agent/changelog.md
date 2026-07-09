@@ -3,11 +3,11 @@ title: Izmaiņu žurnāls
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Izmaiņu žurnāls
+# Izmaiņu žurnāls {#changelog}
 
-## 1.9.0 — Izlaists 2026-04-28
+## 1.9.0 — Izlaists 2026-04-28 {#190--released-on-2026-04-28}
 
-### Jauns
+### Jauns {#new}
 
 - **`create_contact_form` spēja** — izveido kontaktformu, izmantojot aktīvo formu plugin (Contact Form 7, WPForms, Fluent Forms vai Gravity Forms), un atgriež shortcode, kas gatavs iegulšanai jebkurā ierakstā vai lapā.
 - **`set_featured_image` spēja** — piešķir izcelto attēlu ierakstam vai lapai no esoša Media Library pielikuma ID vai attāla URL; automātiski importē attēlu, kad tiek norādīts URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Atjaunot pēdējo sesiju** — tērzēšanas panelis tagad automātiski atkārtoti ielādē pēdējo sarunu lapas ielādes laikā un atverot logrīku, tāpēc konteksts netiek zaudēts, pārvietojoties starp lapām.
 - **Plugin darbību saites** — ātrās saites uz Settings un Abilities Registry tagad parādās WordPress **Plugins → Installed Plugins** ekrānā zem plugin apraksta.
 
-### Uzlabots
+### Uzlabots {#improved}
 
 - **Attēla avota atkārtots mēģinājums** — agent tagad atkārtoti izmēģina visus konfigurētos bezmaksas attēlu avotus, pirms lejupielādes kļūmes gadījumā pāriet uz AI ģenerētu attēlu.
 - **Modeļa informācijas panelis** — vienmēr redzams tērzēšanas galvenē; vairs netiek paslēpts pēc pirmās ziņas.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Tērzēšanas logrīka pārveide** — vienotā AI ikona aizstāj iepriekšējo pielāgoto avataru; saskaņota ar iebūvēto agent sistēmu.
 - **URL pārvēršana saitēs** — URL, kas parādās sistēmas ziņās un kļūdu ziņojumu burbuļos, tagad tiek attēloti kā klikšķināmas saites.
 
-### Labots
+### Labots {#fixed}
 
 - **Spēju atrodamība** — izlaboti apraksti, sistēmas uzvedņu atsauces un namespace saskaņošana, lai visas spējas uzticami parādītos agent rīku sarakstā.
 - **Providers kešatmiņa** — providers tagad tiek kešoti visa site mērogā, izmantojot versijas skaitītāju, novēršot novecojušu providers problēmas multisite tīklos.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Izlaists 2026-04-09
+## 1.4.0 — Izlaists 2026-04-09 {#140--released-on-2026-04-09}
 
-### Jauns
+### Jauns {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — palaiž Agent Capabilities v1 benchmark suite no komandrindas CI konveijeriem un modeļu novērtēšanas darbplūsmām. Atbalsta palaišanu pa atsevišķiem jautājumiem, provider/model pārrakstīšanu un JSON/CSV izvadi.
 - **Agent Capabilities v1 benchmark suite** — strukturēts sarežģītu, daudzsoļu uzvedņu kopums, kas pārbauda visu spēju diapazonu, ar vērtēšanu un tokenu/ilguma pārskatiem.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restorāna tīmekļa vietnes benchmark jautājums** (`q-restaurant-website`) — pilns tests, kas aptver CPT reģistrāciju, dizaina sistēmu, navigāciju un plugin atklāšanu.
 - **AI provider connector plugins** pievienoti WordPress Playground shēmām ātrākai lokālās izstrādes iestatīšanai.
 
-### Uzlabots
+### Uzlabots {#improved-1}
 
 - README atjaunināts ar AI provider connector dokumentāciju un iestatīšanas instrukcijām.
 
-### Labots
+### Labots {#fixed-1}
 
 - Atrisinātas 25 PHPUnit testu kļūmes `main` zarā.
 - Izlabots GitHub laidienu URL formāts `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Iepriekšējās laidiena piezīmes tiek uzturētas plugin repozitorijā._

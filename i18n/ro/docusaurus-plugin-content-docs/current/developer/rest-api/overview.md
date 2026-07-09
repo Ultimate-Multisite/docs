@@ -3,28 +3,28 @@ title: Prezentare generală a REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referință REST API
+# Referință REST API {#rest-api-reference}
 
-## Configurație de bază
+## Configurație de bază {#base-configuration}
 
 **URL de bază:** `{site_url}/wp-json/wu/v2/`
 **Autentificare:** cheie API și secret (HTTP Basic Auth sau parametri URL)
 
-## Autentificare
+## Autentificare {#authentication}
 
-### Activează API
+### Activează API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Obține credențialele API
+### Obține credențialele API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metode de autentificare
+### Metode de autentificare {#authentication-methods}
 
 **HTTP Basic Auth (recomandat):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoint-uri principale
+## Endpoint-uri principale {#core-endpoints}
 
-### 1. API pentru clienți
+### 1. API pentru clienți {#1-customers-api}
 
 **Rută de bază:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API pentru site-uri
+### 2. API pentru site-uri {#2-sites-api}
 
 **Rută de bază:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API pentru abonamente
+### 3. API pentru abonamente {#3-memberships-api}
 
 **Rută de bază:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API pentru produse
+### 4. API pentru produse {#4-products-api}
 
 **Rută de bază:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API pentru plăți
+### 5. API pentru plăți {#5-payments-api}
 
 **Rută de bază:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API pentru domenii
+### 6. API pentru domenii {#6-domains-api}
 
 **Rută de bază:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint de înregistrare
+## Endpoint de înregistrare {#registration-endpoint}
 
 Endpoint-ul `/register` oferă un flux complet de checkout/înregistrare:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint-uri pentru tenant suveran
+## Endpoint-uri pentru tenant suveran {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 adaugă acoperire REST pentru tenant suveran pentru integrări care provizionează, inspectează sau verifică tenant-uri izolate.
 
@@ -242,7 +242,7 @@ Răspunsurile tipice privind starea migrării includ:
 
 Tratează `ready: false` ca pe un blocaj înainte de lansare. Verifică detaliile de verificare, remediază legarea host-ului bazei de date, coada, provizionarea utilizatorilor sau problema de rutare, apoi reîncearcă verificarea.
 
-## Răspunsuri de eroare
+## Răspunsuri de eroare {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tratează `ready: false` ca pe un blocaj înainte de lansare. Verifică detaliil
 }
 ```
 
-## Paginare și filtrare
+## Paginare și filtrare {#pagination-and-filtering}
 
 **Parametri de interogare:**
 ```http

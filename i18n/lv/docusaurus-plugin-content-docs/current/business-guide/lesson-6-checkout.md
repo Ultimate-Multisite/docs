@@ -3,15 +3,15 @@ title: '6. nodarbība: Reģistrēšanās pieredze'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Nodarbība 6: Reģistrēšanās pieredze
+# Nodarbība 6: Reģistrēšanās pieredze {#lesson-6-the-signup-experience}
 
 Norēķinu plūsma ir vieta, kur interese kļūst par ieņēmumiem. Mulsinošs vai pārāk vispārīgs reģistrēšanās process zaudē klientus. Nišai pielāgota plūsma, kas runā viņu valodā un šķiet vienkārša, pārvērš viņus par klientiem.
 
-## Kur mēs apstājāmies
+## Kur mēs apstājāmies {#where-we-left-off}
 
 FitSite ir konfigurētas veidnes un plāni. Tagad mēs veidojam reģistrēšanās un norēķinu pieredzi, kas fitnesa studiju īpašniekus pārvērš par maksājošiem klientiem.
 
-## Reģistrācijas plūsmas izpratne
+## Reģistrācijas plūsmas izpratne {#understanding-the-registration-flow}
 
 Ultimate Multisite norēķinu veidlapas ir pilnībā pielāgojamas daudzsoļu veidlapas. FitSite vajadzībām mēs vēlamies plūsmu, kas:
 
@@ -21,11 +21,11 @@ Ultimate Multisite norēķinu veidlapas ir pilnībā pielāgojamas daudzsoļu ve
 
 Pilnu tehnisko uzziņu skatiet sadaļā [Reģistrācijas plūsma](/user-guide/configuration/the-registration-flow).
 
-## FitSite norēķinu procesa izstrāde
+## FitSite norēķinu procesa izstrāde {#designing-the-fitsite-checkout}
 
 Dodieties uz **Ultimate Multisite > Norēķinu veidlapas** un izveidojiet jaunu veidlapu.
 
-### 1. solis: plāna izvēle
+### 1. solis: plāna izvēle {#step-1-plan-selection}
 
 Pirmajam, ko fitnesa studijas īpašnieks redz, vajadzētu būt plāniem, kas izklāstīti viņam saprotamos terminos.
 
@@ -37,7 +37,7 @@ Pirmajam, ko fitnesa studijas īpašnieks redz, vajadzētu būt plāniem, kas iz
 "1 GB krātuves" sporta zāles īpašniekam neko neizsaka. "Viss, kas nepieciešams profesionālai studijas tīmekļa vietnei" izsaka visu. Rakstiet plānu aprakstus klienta valodā.
 :::
 
-### 2. solis: veidnes izvēle
+### 2. solis: veidnes izvēle {#step-2-template-selection}
 
 Pēc plāna izvēles klients izvēlas sākuma veidni.
 
@@ -45,7 +45,7 @@ Pēc plāna izvēles klients izvēlas sākuma veidni.
 - Pieejamās veidnes tiek filtrētas pēc izvēlētā plāna (konfigurēts 5. nodarbībā)
 - Katrai veidnei vajadzētu būt priekšskatījuma attēlam, kas parāda fitnesam pielāgotu dizainu
 
-### 3. solis: Account izveide
+### 3. solis: Account izveide {#step-3-account-creation}
 
 Saglabājiet to minimālu. Ievāciet tikai:
 
@@ -55,27 +55,27 @@ Saglabājiet to minimālu. Ievāciet tikai:
 
 Neprasiet informāciju, kas reģistrēšanās brīdī nav vajadzīga. Katrs papildu lauks samazina konversijas.
 
-### 4. solis: vietnes iestatīšana
+### 4. solis: vietnes iestatīšana {#step-4-site-setup}
 
 - **Vietnes virsraksts**: automātiski aizpildiet no studijas nosaukuma, kas ievadīts 3. solī
 - **Vietnes URL**: automātiski ģenerējiet no studijas nosaukuma (piem., `ironworks.fitsite.com`)
 
-### 5. solis: maksājums
+### 5. solis: maksājums {#step-5-payment}
 
 - Pievienojiet **Maksājuma** lauku
 - Konfigurējiet savu maksājumu vārteju ([Stripe](/user-guide/payment-gateways/stripe) ir ieteicams abonementu norēķiniem)
 - Ja 5. nodarbībā izveidojāt pasūtījuma papildpiedāvājumus, pirms maksājuma soļa pievienojiet **Pasūtījuma papildpiedāvājuma** lauku
 
-### 6. solis: apstiprinājums
+### 6. solis: apstiprinājums {#step-6-confirmation}
 
 - Pielāgojiet apstiprinājuma ziņojumu ar fitnesam specifisku valodu
 - Piemērs: "Jūsu fitnesa studijas tīmekļa vietne tiek veidota. Pēc dažām sekundēm jūs tiksiet novirzīts uz savu jauno vietni."
 
-## Perioda izvēles pārslēga pievienošana
+## Perioda izvēles pārslēga pievienošana {#adding-a-period-selection-toggle}
 
 Ja savos plānos iestatījāt cenu variācijas (mēneša pret gada), pievienojiet norēķinu veidlapai **Perioda izvēles** lauku, lai klienti varētu pārslēgties starp norēķinu periodiem. Norādījumus skatiet sadaļā [Norēķinu veidlapas](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-## Maksājumu konfigurēšana
+## Maksājumu konfigurēšana {#configuring-payment}
 
 Ja vēl neesat iestatījis maksājumu vārteju:
 
@@ -85,7 +85,7 @@ Ja vēl neesat iestatījis maksājumu vārteju:
 
 Sīkāku informāciju par to, kā maksājumi nonāk jūsu kontā, skatiet sadaļā [Maksājumu saņemšana](/user-guide/payment-gateways/getting-paid).
 
-## Plūsmas testēšana
+## Plūsmas testēšana {#testing-the-flow}
 
 Pirms turpināt, pabeidziet pilnu testa reģistrēšanos:
 
@@ -105,7 +105,7 @@ Pārbaudiet, ka:
 - [ ] Klients nonāk strādājošā vietnē ar izvēlēto veidni
 - [ ] Apstiprinājuma e-pasti izmanto fitnesam specifisku valodu
 
-## FitSite tīkls līdz šim
+## FitSite tīkls līdz šim {#the-fitsite-network-so-far}
 
 ```
 FitSite tīkls
@@ -123,7 +123,7 @@ FitSite tīkls
 └── Gatavs zīmolvedībai (nākamā nodarbība)
 ```
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Daudzsoļu norēķinu veidlapa**, kas pielāgota fitnesa studiju īpašniekiem
 - **Nišai specifiska valoda** visā reģistrēšanās plūsmā

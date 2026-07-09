@@ -3,11 +3,11 @@ title: Aġenti integrati
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Inkorporati
+# Agents Inkorporati {#built-in-agents}
 
 Gratis AI Agent v1.9.0 jiġi b'ħames agents inkorporati, kull wieħed ikkonfigurat minn qabel b'sett iffukat ta' għodod, system prompt imfassal apposta, u suġġerimenti tal-bidu mqabbla ma' kompiti komuni f'dak il-qasam. Meta taqleb bejn agents jinbidel dak li l-assistent jista' jagħmel u kif jirrispondi — mingħajr ebda konfigurazzjoni min-naħa tiegħek. Superdav AI Agent v1.18.0 jista' jżid għodod konxji tal-iskeda, rekords ta' tfakkiriet, approval gates, u notifiki SMS ma' dawn il-flussi tax-xogħol meta l-integrazzjonijiet relatati jkunu kkonfigurati.
 
-## X'Inhu Agent?
+## X'Inhu Agent? {#what-is-an-agent}
 
 Kull agent huwa profil ta' konfigurazzjoni b'isem li jgħaqqad:
 
@@ -15,7 +15,7 @@ Kull agent huwa profil ta' konfigurazzjoni b'isem li jgħaqqad:
 - **System prompt** — istruzzjonijiet li jistabbilixxu t-ton, il-prijoritajiet, u r-restrizzjonijiet tal-agent
 - **Suġġerimenti** — prompts miktuba minn qabel murija fl-interface taċ-chat biex jgħinuk tibda malajr
 
-## Kif Taċċessa l-Agent Picker
+## Kif Taċċessa l-Agent Picker {#accessing-the-agent-picker}
 
 1. Iftaħ il-panel **Gratis AI Agent** fis-sidebar tal-amministrazzjoni ta' WordPress.
 2. Ikklikkja l-**ikona tal-agent** fir-rokna ta' fuq fuq ix-xellug tal-header taċ-chat (l-ikona tinbidel biex tirrifletti l-agent attiv).
@@ -24,9 +24,9 @@ Kull agent huwa profil ta' konfigurazzjoni b'isem li jgħaqqad:
 
 Tista' wkoll taqleb agents f'nofs konverżazzjoni — is-system prompt tal-agent il-ġdid jidħol fis-seħħ mill-messaġġ li jmiss.
 
-## Il-Ħames Agents Inkorporati
+## Il-Ħames Agents Inkorporati {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fokus:** Ħolqien u editjar ta' posts, paġni, u formoli ta' kuntatt.
 
@@ -47,7 +47,7 @@ Tista' wkoll taqleb agents f'nofs konverżazzjoni — is-system prompt tal-agent
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fokus:** Ħolqien ta' website minn tarf sa tarf minn prompt wieħed.
 
@@ -70,7 +70,7 @@ Tista' wkoll taqleb agents f'nofs konverżazzjoni — is-system prompt tal-agent
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fokus:** Personalizzazzjoni viżiva — kuluri, tipografija, CSS, u block patterns.
 
@@ -87,7 +87,7 @@ Tista' wkoll taqleb agents f'nofs konverżazzjoni — is-system prompt tal-agent
 - *Ħu screenshot tal-homepage u għidli x'tittejjeb.*
 - *Oħloq hero block pattern li jista' jerġa' jintuża b'immaġni fl-isfond fuq wisa' sħiħa u heading iċċentrat.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokus:** Skoperta, installazzjoni, u ġestjoni ta' WordPress plugins.
 
@@ -105,7 +105,7 @@ Tista' wkoll taqleb agents f'nofs konverżazzjoni — is-system prompt tal-agent
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fokus:** Tweġib ta' mistoqsijiet dwar il-kontenut tas-sit, settings, u konfigurazzjoni ta' WordPress.
 
@@ -124,7 +124,7 @@ Tista' wkoll taqleb agents f'nofs konverżazzjoni — is-system prompt tal-agent
 
 ---
 
-## Integrazzjonijiet ta’ Awtomazzjoni Superdav
+## Integrazzjonijiet ta’ Awtomazzjoni Superdav {#superdav-automation-integrations}
 
 Meta l-integrazzjonijiet ta’ Superdav AI Agent v1.18.0 ikunu kkonfigurati, l-aġenti mibnija jistgħu jipparteċipaw f’workflows ta’ awtomazzjoni aktar siguri u konxji tal-iskeda:
 
@@ -138,11 +138,11 @@ Workflow rakkomandat: staqsi lill-aġent iħejji l-messaġġ jew l-azzjoni, irre
 
 ---
 
-## Personalizzazzjoni tal-Aġenti
+## Personalizzazzjoni tal-Aġenti {#customising-agents}
 
 Kull aġent mibni jista’ jiġi estiż jew sostitwit permezz tal-filter `gratis_ai_agent_agents`.
 
-### Żieda ta’ system prompt personalizzat ma’ aġent eżistenti
+### Żieda ta’ system prompt personalizzat ma’ aġent eżistenti {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Reġistrazzjoni ta’ aġent ġdid
+### Reġistrazzjoni ta’ aġent ġdid {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 L-aġent il-ġdid jidher fil-Selector tal-Aġent immedjatament wara li l-filter jaħdem.
 
-### Tneħħija ta’ aġent mibni
+### Tneħħija ta’ aġent mibni {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

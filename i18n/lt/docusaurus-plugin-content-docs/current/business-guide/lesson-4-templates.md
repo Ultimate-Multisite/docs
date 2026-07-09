@@ -3,15 +3,15 @@ title: '4 pamoka: Nišinių šablonų kūrimas'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# 4 pamoka: nišinių šablonų kūrimas
+# 4 pamoka: nišinių šablonų kūrimas {#lesson-4-building-niche-templates}
 
 Šablonai yra jūsų nišinės vertės pasiūlymo pagrindas. Fitneso studijos savininkas, kuris užsiregistruoja ir pamato svetainę, jau atrodančią kaip fitneso svetainė -- su užsiėmimų tvarkaraščiais, trenerių profiliais ir tinkamais vaizdais -- daug labiau tikėtina, kad liks, nei tas, kuris pamato tuščią drobę.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 Turime veikiančią FitSite tinklo sistemą su įdiegtu ir sukonfigūruotu Ultimate Multisite. Dabar kuriame šablonus, dėl kurių FitSite atrodys specialiai sukurtas fitneso verslams.
 
-## Kodėl nišiniai šablonai svarbūs
+## Kodėl nišiniai šablonai svarbūs {#why-niche-templates-matter}
 
 Bendriniai šablonai verčia jūsų klientus atlikti sunkų darbą: išsiaiškinti, kokių puslapių jiems reikia, kokia turinio struktūra veikia ir kaip pritaikyti išvaizdą jų pramonei. Nišiniai šablonai pašalina šią trintį.
 
@@ -24,11 +24,11 @@ Fitneso studijos savininkas, užsiregistravęs į FitSite, turėtų matyti:
 
 Jie užpildo savo duomenis. Jie nepradeda nuo nulio.
 
-## Šablonų planavimas
+## Šablonų planavimas {#planning-your-templates}
 
 Prieš kurdami nuspręskite, kokius šablonus siūlysite. FitSite sukursime tris:
 
-### 1 šablonas: Studio Essential
+### 1 šablonas: Studio Essential {#template-1-studio-essential}
 
 Mažoms studijoms ir asmeniniams treneriams.
 
@@ -39,7 +39,7 @@ Mažoms studijoms ir asmeniniams treneriams.
 - **Kontaktų** puslapis su vietos žemėlapiu ir forma
 - **Švarus, modernus dizainas** su fitnesui tinkama spalvų schema
 
-### 2 šablonas: Gym Pro
+### 2 šablonas: Gym Pro {#template-2-gym-pro}
 
 Įsitvirtinusioms sporto salėms su daugiau paslaugų.
 
@@ -50,7 +50,7 @@ Mažoms studijoms ir asmeniniams treneriams.
 - **Atsiliepimų** skiltis pradžios puslapyje
 - **Ryškesnio prekės ženklo** parinktys
 
-### 3 šablonas: Fitness Chain
+### 3 šablonas: Fitness Chain {#template-3-fitness-chain}
 
 Kelių vietų operacijoms.
 
@@ -60,17 +60,17 @@ Kelių vietų operacijoms.
 - **Centralizuotas prekės ženklas** su konkrečios vietos detalėmis
 - **Darbuotojų katalogas** per kelias vietas
 
-## Šablono svetainės kūrimas
+## Šablono svetainės kūrimas {#building-a-template-site}
 
 Ultimate Multisite šablonas yra tiesiog WordPress svetainė, sukonfigūruota taip, kaip norite, kad atrodytų naujos klientų svetainės. Štai kaip ją sukurti:
 
-### 1 žingsnis: sukurkite šablono svetainę
+### 1 žingsnis: sukurkite šablono svetainę {#step-1-create-the-template-site}
 
 1. Eikite į **Sites > Add New** savo tinklo administratoriaus srityje
 2. Sukurkite svetainę pavadinimu `template-studio-essential`
 3. Ši svetainė tampa jūsų darbo drobe
 
-### 2 žingsnis: įdiekite ir sukonfigūruokite temą
+### 2 žingsnis: įdiekite ir sukonfigūruokite temą {#step-2-install-and-configure-the-theme}
 
 Pereikite į šablono svetainės Dashboard ir:
 
@@ -82,7 +82,7 @@ Pereikite į šablono svetainės Dashboard ir:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### 3 žingsnis: sukurkite puslapius
+### 3 žingsnis: sukurkite puslapius {#step-3-create-the-pages}
 
 Sukurkite kiekvieną puslapį su:
 
@@ -92,7 +92,7 @@ Sukurkite kiekvieną puslapį su:
 
 Kur įmanoma, laikiną turinį padarykite instrukcinį. Vietoj bendrinio užpildo teksto rašykite tokį turinį: „Pakeiskite tai trumpu savo studijos aprašymu ir tuo, kuo ji ypatinga. Paminėkite savo treniruočių filosofiją, patirties metus arba ko klientai gali tikėtis.“
 
-### 4 žingsnis: sukonfigūruokite pluginus
+### 4 žingsnis: sukonfigūruokite pluginus {#step-4-configure-plugins}
 
 Įdiekite ir aktyvuokite pluginus, kurių reikia fitneso studijoms:
 
@@ -100,7 +100,7 @@ Kur įmanoma, laikiną turinį padarykite instrukcinį. Vietoj bendrinio užpild
 - Kontaktinės formos pluginas
 - SEO pluginas (iš anksto sukonfigūruotas su fitnesui aktualiais numatytaisiais nustatymais)
 
-### 5 žingsnis: pažymėkite kaip šabloną
+### 5 žingsnis: pažymėkite kaip šabloną {#step-5-mark-as-template}
 
 1. Eikite į **Ultimate Multisite > Sites**
 2. Redaguokite šablono svetainę
@@ -108,7 +108,7 @@ Kur įmanoma, laikiną turinį padarykite instrukcinį. Vietoj bendrinio užpild
 
 Pakartokite šį procesą kiekvienam šablonui, kurį norite siūlyti.
 
-## Šablono kokybės kontrolinis sąrašas
+## Šablono kokybės kontrolinis sąrašas {#template-quality-checklist}
 
 Prieš padarydami šabloną prieinamą, patikrinkite:
 
@@ -121,7 +121,7 @@ Prieš padarydami šabloną prieinamą, patikrinkite:
 - [ ] Nėra neveikiančių nuorodų ar trūkstamų išteklių
 - [ ] Puslapio įkėlimo greitis yra priimtinas
 
-## FitSite tinklas iki šiol
+## FitSite tinklas iki šiol {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Trys nišai pritaikyti šablonai**, sukurti skirtingiems fitneso verslų dydžiams
 - **Fitnesui tinkamas turinys ir vaizdai**, dėl kurių platforma atrodo specialiai sukurta

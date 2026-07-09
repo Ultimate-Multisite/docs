@@ -4,20 +4,20 @@ title: 'Action - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# Action: wu_page_{$this->id}_after_render
+# Action: wu_page_{$this->id}_after_render {#action-wupagethis-idafterrender}
 
 Membenarkan pembangun plugin untuk menambah kandungan tambahan selepas halaman dipaparkan.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page_id | `string` | ID halaman ini |
 | $page | `object` | Objek halaman. |
 
-### Sejak
+### Sejak {#since}
 
 - 1.8.2
-### Sumber
+### Sumber {#source}
 
 Didefinisikan dalam [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L423) pada baris 423

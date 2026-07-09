@@ -3,11 +3,11 @@ title: Ƙwarewar Gudanar da Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ƙwarewar Sarrafa Plugin
+# Ƙwarewar Sarrafa Plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 yana zuwa da **ƙwarewar sarrafa plugin guda 7** da mataimakin AI zai iya kira yayin tattaunawa. Waɗannan ƙwarewa suna ba da ikon sarrafawa ta hanyar shirye-shirye kan WordPress plugins da aka girka ta hanyar [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Bayanin Ƙwarewa
+## Bayanin Ƙwarewa {#abilities-overview}
 
 | Ƙwarewa | Slug | Bayani |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 yana zuwa da **ƙwarewar sarrafa plugin guda 7** da matai
 | Girka Plugin | `install_plugin` | Yana tura plugin na sandbox zuwa kundin plugin na WordPress kai tsaye. |
 | Kunna Plugin | `activate_plugin` | Yana kunna plugin na sandbox a cikin muhallin sandbox na wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Mai girka plugin yana kula da ayyukan tsarin fayil lokacin tura ko cire plugins. Muhimman halaye:
 
@@ -28,7 +28,7 @@ Mai girka plugin yana kula da ayyukan tsarin fayil lokacin tura ko cire plugins.
 - **Sabuntawa**: Yana maye gurbin fayilolin plugin da ke akwai. Yana kashe plugin kafin rubutawa don kauce wa kurakuran yanayi na ɓangare.
 - **Goge ta slug**: Yana gano kundin plugin ta slug, yana kashewa a duk shafuka, sannan ya cire kundin.
 
-### Rijistar Mai Sarrafa Girka na Musamman
+### Rijistar Mai Sarrafa Girka na Musamman {#registering-a-custom-install-handler}
 
 Za ka iya haɗawa da zagayen rayuwar girkawa ta amfani da ayyukan `gratis_ai_plugin_installer_before_install` da `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Rijistar Tsarin Muhalli
+## Rijistar Tsarin Muhalli {#ecosystem-registry}
 
 Ana rijistar ƙwarewa ta hanyar **rijistar tsarin muhalli na plugin**. Rijistar tana haɗa slug na ƙwarewa da ajin masu sarrafa su kuma tana fallasa su ga mai rarraba kayan aikin AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Haɗin HookScanner
+## Haɗin HookScanner {#hookscanner-integration}
 
 Ƙwarewar `create_plugin` da `update_plugin` suna gudanar da **HookScanner** ta atomatik a kan sabuwar lambar da aka samar. HookScanner yana dawo da jerin WordPress action da filter hooks da plugin ya yi rijista.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner yana tsallake kundin `vendor/` da `node_modules/` ta atomatik.
 
-## Tsarin Async Job
+## Tsarin Async Job {#async-job-architecture}
 
 Ayyukan plugin masu ɗaukar lokaci (samarwa, girkawa) ana tura su a matsayin **async jobs** tare da bin diddigin ci gaba kai tsaye. Fuskar tattaunawar AI tana tambayar ci gaba kuma tana watsa sabunta matsayi ga mai amfani:
 

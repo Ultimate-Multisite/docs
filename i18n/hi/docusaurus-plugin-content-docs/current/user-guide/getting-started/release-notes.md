@@ -3,9 +3,9 @@ title: रिलीज़ नोट्स
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# रिलीज़ नोट्स
+# रिलीज़ नोट्स {#release-notes}
 
-## Version 2.13.0 — 2026-06-05 को जारी
+## Version 2.13.0 — 2026-06-05 को जारी {#version-2130--released-on-2026-06-05}
 
 - नया: ग्राहक खाते, चेकआउट, बिलिंग, साइट, इनवॉइस, टेम्पलेट बदलने और डोमेन मैपिंग प्रवाहों के लिए sovereign-tenant समर्थन जोड़ा गया, ताकि टेनेंट नेटवर्क प्रबंधित कार्रवाइयों के लिए ग्राहकों को मुख्य साइट पर वापस भेज सकें।
 - नया: आवर्ती सदस्यताओं के लिए नवीनीकरण-प्रमाण जांचें जोड़ी गईं, ताकि सहेजा गया बिलिंग अनुबंध, सदस्यता या vault token न होने पर गेटवे ऑटो-नवीनीकरण बंद कर सकें।
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - सुधार: सदस्यता नवीनीकरण, समाप्ति प्रदर्शन और भुगतान संग्रह के edge cases अब तत्काल समाप्ति, क्रैश या आवश्यक भुगतान छूटने से बचते हैं।
 - बेहतर: WordPress संगतता 7.0 तक परखी गई है, प्रोडक्शन Vue assets npm स्रोतों से फिर से बनाए गए हैं, और Cypress end-to-end कवरेज अब अधिक चेकआउट, सेटअप, SSO और गेटवे प्रवाहों को जांचता है।
 
-## Version 2.12.0 — 2026-05-15 को जारी
+## Version 2.12.0 — 2026-05-15 को जारी {#version-2120--released-on-2026-05-15}
 
 - नया: Hostinger (hPanel) को डोमेन मैपिंग एकीकरण के साथ समर्थित host provider के रूप में जोड़ा गया
 - नया: Site Exporter अब सुव्यवस्थित पूरे-नेटवर्क साइट बहाली के लिए नेटवर्क आयात bundles संभालता है
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - सुधार: Site Exporter CLI अब सही default network site चयन बनाए रखता है
 - बेहतर: प्लगइन पैकेज से bundled wp-cli हटाया गया, जिससे प्लगइन का आकार घटा
 
-## Version 2.11.0 — 2026-05-11 को जारी
+## Version 2.11.0 — 2026-05-11 को जारी {#version-2110--released-on-2026-05-11}
 
 - नया: साइट export अब self-booting `index.php` को bundle करते हैं, ताकि ZIP को अलग प्लगइन install के बिना नए host पर install किया जा सके।
 - नया: नेटवर्क export प्रशासकों को Site Export admin page से सभी subsites को एक ही archive में export करने देता है।
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - नया: चेकआउट फ़ॉर्म संपादक चेतावनी देता है जब कोई उत्पाद आवश्यक फ़ील्ड कॉन्फ़िगर किए बिना जोड़ा जाता है।
 - नया: Import/Export settings tab अब अपने scope को स्पष्ट रूप से बताता है और सीधे Site Export tool से लिंक करता है।
 
-## Version 2.10.0 — 2026-05-05 को जारी
+## Version 2.10.0 — 2026-05-05 को जारी {#version-2100--released-on-2026-05-05}
 
 - नया: सहज गेटवे कॉन्फ़िगरेशन के लिए OAuth flag gate के साथ manual credential entry हेतु PayPal guided setup wizard।
 - नया: Template switch customer panel को current-template card, persistent grid और **मौजूदा टेम्पलेट रीसेट करें** बटन के साथ फिर से डिज़ाइन किया गया।
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - सुधार: सभी login flows में filtered SSO path का पालन किया गया।
 - सुधार: खाली site identity options सहेजने पर बनाए रखे गए।
 
-## Version 2.9.0 — 2026-04-30 को जारी
+## Version 2.9.0 — 2026-04-30 को जारी {#version-290--released-on-2026-04-30}
 
 - नया: Single-site export और import को **Tools > Export & Import** के अंतर्गत जोड़ा गया।
 - सुधार: Export ZIP files अब authenticated download endpoint के माध्यम से परोसी जाती हैं।
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - सुधार: user settings keys में Tour IDs को underscores में normalise किया गया।
 - बेहतर: बेहतर संगतता के लिए अब Alchemy/Zippy के बजाय ZipArchive का उपयोग किया गया।
 
-## Version 2.8.0 — 2026-04-29
+## Version 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - नया: Other Options सेटिंग्स UI में Enable Jumper टॉगल जोड़ा गया।
 - नया: भुगतान प्रपत्र सूची तालिका में स्थिति कॉलम जोड़ा गया।

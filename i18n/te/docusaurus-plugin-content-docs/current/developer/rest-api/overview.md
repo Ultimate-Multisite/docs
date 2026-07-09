@@ -3,28 +3,28 @@ title: REST API అవలోకనం
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API సూచిక
+# REST API సూచిక {#rest-api-reference}
 
-## ప్రాథమిక కాన్ఫిగరేషన్
+## ప్రాథమిక కాన్ఫిగరేషన్ {#base-configuration}
 
 **ప్రాథమిక URL:** `{site_url}/wp-json/wu/v2/`
 **ప్రమాణీకరణ:** API కీ & రహస్యం (HTTP Basic Auth లేదా URL పరామితులు)
 
-## ప్రమాణీకరణ
+## ప్రమాణీకరణ {#authentication}
 
-### APIని ప్రారంభించండి
+### APIని ప్రారంభించండి {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ఆధారాలను పొందండి
+### API ఆధారాలను పొందండి {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### ప్రమాణీకరణ పద్ధతులు
+### ప్రమాణీకరణ పద్ధతులు {#authentication-methods}
 
 **HTTP Basic Auth (సిఫార్సు చేయబడింది):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ప్రధాన అంతిమ బిందువులు
+## ప్రధాన అంతిమ బిందువులు {#core-endpoints}
 
-### 1. వినియోగదారుల API
+### 1. వినియోగదారుల API {#1-customers-api}
 
 **ప్రాథమిక మార్గం:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. సైట్ల API
+### 2. సైట్ల API {#2-sites-api}
 
 **ప్రాథమిక మార్గం:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. సభ్యత్వాల API
+### 3. సభ్యత్వాల API {#3-memberships-api}
 
 **ప్రాథమిక మార్గం:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. ఉత్పత్తుల API
+### 4. ఉత్పత్తుల API {#4-products-api}
 
 **ప్రాథమిక మార్గం:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. చెల్లింపుల API
+### 5. చెల్లింపుల API {#5-payments-api}
 
 **ప్రాథమిక మార్గం:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. డొమైన్‌ల API
+### 6. డొమైన్‌ల API {#6-domains-api}
 
 **ప్రాథమిక మార్గం:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## నమోదు అంతిమ బిందువు
+## నమోదు అంతిమ బిందువు {#registration-endpoint}
 
 `/register` అంతిమ బిందువు పూర్తి checkout/నమోదు ప్రవాహాన్ని అందిస్తుంది:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## స్వతంత్ర టెనెంట్ అంతిమ బిందువులు
+## స్వతంత్ర టెనెంట్ అంతిమ బిందువులు {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 వేరుచేసిన టెనెంట్‌లను కేటాయించే, పరిశీలించే, లేదా ధృవీకరించే ఇంటిగ్రేషన్‌ల కోసం స్వతంత్ర టెనెంట్ REST కవరేజ్‌ను జోడిస్తుంది.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false`ను ప్రారంభానికి ముందు అడ్డంకిగా పరిగణించండి. ధృవీకరణ వివరాలను తనిఖీ చేయండి, డేటాబేస్ హోస్ట్ బైండింగ్, క్యూ, వినియోగదారు కేటాయింపు, లేదా రూటింగ్ సమస్యను పరిష్కరించి, తర్వాత ధృవీకరణను మళ్లీ ప్రయత్నించండి.
 
-## లోప ప్రతిస్పందనలు
+## లోప ప్రతిస్పందనలు {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## పేజినేషన్ మరియు ఫిల్టరింగ్
+## పేజినేషన్ మరియు ఫిల్టరింగ్ {#pagination-and-filtering}
 
 **క్వెరీ పరామితులు:**
 ```http

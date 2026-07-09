@@ -3,9 +3,9 @@ title: Gestion des paiements et des factures
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gestion des paiements et des factures
+# Gestion des paiements et des factures {#managing-payments-and-invoices}
 
-## Paramètres de paiement
+## Paramètres de paiement {#payment-settings}
 
 Avant de commencer à recevoir des paiements, vous devrez configurer les paramètres liés au paiement. Accédez à **Ultimate Multisite → Settings** et cliquez sur l’onglet **Payment**.
 
@@ -15,7 +15,7 @@ Voici une vue complète de la page des paramètres de paiement :
 
 ![Page complète des paramètres de paiement](/img/admin/settings-payments-full.png)
 
-### Options générales de paiement
+### Options générales de paiement {#general-payment-options}
 
 Dans les paramètres généraux, vous pouvez configurer :
 
@@ -24,7 +24,7 @@ Dans les paramètres généraux, vous pouvez configurer :
 
 ![Paramètres de la passerelle de paiement](/img/admin/settings-payments-options.png)
 
-### Passerelles de paiement
+### Passerelles de paiement {#payment-gateways}
 
 Ultimate Multisite prend en charge plusieurs passerelles de paiement. Vous pouvez activer et configurer chacune d’elles depuis l’onglet des paramètres de paiement.
 
@@ -40,11 +40,11 @@ Chaque passerelle dispose de sa propre section de configuration où vous saisiss
 
 ![Paramètres supplémentaires des passerelles](/img/admin/settings-payments-gateways-2.png)
 
-### Mode sandbox
+### Mode sandbox {#sandbox-mode}
 
 Vous pouvez activer le **mode sandbox** pour tester votre intégration de paiement avant la mise en production. Lorsque le mode sandbox est actif, aucun débit réel ne sera effectué.
 
-## Consultation des paiements
+## Consultation des paiements {#viewing-payments}
 
 Accédez à la page **Payments** sous Ultimate Multisite pour voir toutes les transactions sur l’ensemble de votre réseau.
 
@@ -54,7 +54,7 @@ Vous pouvez filtrer les paiements par statut (terminé, en attente, échoué, re
 
 Cliquez sur un paiement pour voir tous ses détails, y compris les lignes d’articles, l’adhésion associée, les informations client et les données de la passerelle de paiement.
 
-## Factures
+## Factures {#invoices}
 
 Ultimate Multisite peut générer automatiquement des factures pour les paiements. Vous pouvez personnaliser le modèle de facture et le format de numérotation depuis les paramètres de paiement.
 

@@ -3,7 +3,7 @@ title: Wat is WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Wat is WordPress Multisite?
+# Wat is WordPress Multisite? {#what-is-wordpress-multisite}
 
 In zijn kern biedt WordPress een functie genaamd ‘Multisite’ die zijn oorsprong teruggaat tot 2010 bij de lancering van WordPress 3.0. Sindsdien heeft het een aantal revisies ondergaan gericht op het introduceren van nieuwe functies en het versterken van de beveiliging.
 
@@ -11,7 +11,7 @@ In wezen kan een WordPress multisite als volgt worden beschouwd: Een universitei
 
 ## 
 
-## Wat is WordPress Multisite precies?
+## Wat is WordPress Multisite precies? {#what-exactly-is-wordpress-multisite}
 
 Multisite is een functie van WordPress die het mogelijk maakt dat meerdere sites een enkele WordPress‑installatie delen. Wanneer multisite wordt geactiveerd, wordt de oorspronkelijke WordPress‑site omgezet om te ondersteunen wat meestal wordt aangeduid als een **netwerk van sites**.
 
@@ -23,7 +23,7 @@ Dit feit is een van de belangrijkste voordelen van multisite, omdat het u in sta
 
 ## 
 
-## Subdomein of subdirectory?
+## Subdomein of subdirectory? {#subdomain-or-subdirectory}
 
 Er zijn twee modi om WordPress multisite te draaien – en u moet er één kiezen wanneer u uw reguliere WordPress‑installatie omzet in een multisite‑installatie:
 
@@ -49,7 +49,7 @@ Een van de belangrijkste uitdagingen bij het opzetten van subdomein‑modus is S
 
 In tegenstelling tot subdirectory‑modus worden subsites op een subdomein‑gebaseerd netwerk door zoekmachines beschouwd als afzonderlijke websites, wat betekent dat content die aanwezig is op één subsite de SEO‑prestaties van andere subsites helemaal niet beïnvloedt.
 
-## De Super Admin
+## De Super Admin {#the-super-admin}
 
 Single‑site WordPress‑installaties laten u een onbeperkt aantal gebruikers toevoegen en die gebruikers verschillende gebruikersrollen met verschillende permissies geven.
 
@@ -63,7 +63,7 @@ Plugins en thema's kunnen alleen worden geïnstalleerd of verwijderd via het net
 
 _Note: zoals u kunt zien, het uitnodigen van iemand in uw netwerk en het geven van super admin‑status geeft deze gebruiker volledige controle over uw netwerk. Als voorbeeld kunnen andere super admins zelfs uw super admin‑status verwijderen, waardoor u effectief wordt buitengesloten van uw eigen netwerk‑admin‑paneel. Om Ultimate Multisite‑klanten een fijnmazige controle te geven over wat extra super admins kunnen doen, hebben we een add‑on genaamd Support Agents. Dit add‑on stelt u in staat nog een soort gebruiker te creëren – een agent – met alleen de permissies die ze nodig hebben om hun taken op het netwerk uit te voeren._
 
-## Wat wordt gedeeld tussen subsites en wat niet
+## Wat wordt gedeeld tussen subsites en wat niet {#what-is-shared-among-subsites-and-what-is-not}
 
 Zoals we eerder hebben vermeld, is een van de belangrijkste voordelen van WordPress multisite dat alle subsites dezelfde configuraties, corebestanden, thema's, plugins, WordPress‑corebestanden, enz. delen.
 
@@ -75,7 +75,7 @@ Er zijn echter elementen die mooi per subsite zijn gescopeerd.
 
 \- De meeste database‑tabellen worden voor elke subsite aangemaakt, wat betekent dat berichten, reacties, pagina's, instellingen en meer per subsite zijn gescopeerd.
 
-## Gebruikersbeheer op WordPress Multisite
+## Gebruikersbeheer op WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Een delicate onderwerp op WordPress multisite is gebruikersbeheer. De WordPress‑gebruikertabel is een van de weinige die gedeeld wordt tussen alle subsites.
 
@@ -99,7 +99,7 @@ _Note: We realiseren ons hoe slecht dat kan zijn, afhankelijk van uw use‑case,
 
 Hoewel de gebruikers‑tabel gedeeld is, kunnen gebruikers worden toegevoegd aan en verwijderd van subsites door de subsite‑admins of de super admin, en kunnen ze zelfs verschillende gebruikersrollen hebben op verschillende subsites.
 
-## Prestatieoverwegingen
+## Prestatieoverwegingen {#performance-considerations}
 
 WordPress multisite is echt krachtig als het gaat om het aantal sites dat het kan ondersteunen. Dit kan worden getest door het feit dat [WordPress.com](https://WordPress.com), Edublogs, en Campuspress allemaal multisite‑gebaseerde services zijn en elk duizenden sites hosten.
 

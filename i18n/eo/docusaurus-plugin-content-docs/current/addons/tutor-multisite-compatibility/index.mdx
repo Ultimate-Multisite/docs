@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 WordPress kromprogramo kiu aldonas kongruecajn korektojn por Tutor LMS en multisite medioj.
 
-## Priskribo
+## Priskribo {#description}
 
 Ĉi tiu kromprogramo provizas esencajn kongruecajn korektojn por ruli Tutor LMS en WordPress multisite retoj. Ĝi traktas uzantan aliĝigon, instruistan administradon, kursajn limigojn kaj aliajn multisite-specifajn funkciojn.
 
-## Funkcioj
+## Funkcioj {#features}
 
 - **Administrado de datumbazaj tabeloj**: Aŭtomate detektas kaj kreas mankantajn Tutor LMS tabelojn, kiuj malsukcesas pro multisite eksteraj-ŝlosilaj limigoj
 - **Multisite uzanta aliĝigo**: Propraj AJAX traktantoj por administri uzantan aliĝigon trans retaj retejoj
@@ -24,7 +24,7 @@ WordPress kromprogramo kiu aldonas kongruecajn korektojn por Tutor LMS en multis
 - **Propraj administraj vidoj**: Multisite-konscia instruista listo kaj administra interfaco
 - **Administraj iloj**: Datumbaza administra interfaco por retaj kaj retejaj administrantoj
 
-## Postuloj
+## Postuloj {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ WordPress kromprogramo kiu aldonas kongruecajn korektojn por Tutor LMS en multis
 - WordPress Multisite instalo
 - Ultimate Multisite kromprogramo (por funkcieco de kursaj limigoj)
 
-## Instalado
+## Instalado {#installation}
 
 1. Alŝutu la kromprogramajn dosierojn al `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Certigu ke Tutor LMS estas instalita kaj aktivigita
 3. Aktivigu la kromprogramon per la menuo 'Plugins' en WordPress
 4. La kromprogramo aŭtomate integriĝos kun Tutor LMS
 
-## Dosiera strukturo
+## Dosiera strukturo {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funkcieco movita el MU plugin
+## Funkcieco movita el MU plugin {#functionality-moved-from-mu-plugin}
 
 Ĉi tiu kromprogramo enhavas funkciecon kiu antaŭe estis en `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - Traktado de multisite uzanta aliĝigo
 - Montrado de kursa produkta ID
 
-## Datumbaza administrado
+## Datumbaza administrado {#database-management}
 
-### La problemo
+### La problemo {#the-problem}
 
 En WordPress multisite medioj, kreado de Tutor LMS tabeloj malsukcesas por tabeloj kun eksteraj-ŝlosilaj limigoj al la uzantoj-tabelo. Ĉi tio okazas ĉar:
 
@@ -81,7 +81,7 @@ En WordPress multisite medioj, kreado de Tutor LMS tabeloj malsukcesas por tabel
 - Eksteraj ŝlosiloj referencas `wp_2_users` (kiu ne ekzistas)
 - La efektiva uzantoj-tabelo estas `wp_users` (komuna tra la reto)
 
-### La solvo
+### La solvo {#the-solution}
 
 Ĉi tiu kromprogramo aŭtomate:
 
@@ -92,13 +92,13 @@ En WordPress multisite medioj, kreado de Tutor LMS tabeloj malsukcesas por tabel
    - Kreado de nova retejo en reto
    - Mana tabelkontrolo per administra interfaco
 
-### Trafitaj tabeloj
+### Trafitaj tabeloj {#affected-tables}
 
 - `tutor_coupon_usages` - Enhavas eksteran ŝlosilon al uzantoj-tabelo
 - `tutor_carts` - Enhavas eksteran ŝlosilon al uzantoj-tabelo
 - `tutor_notification_preferences` - TutorPro tabelo kun ekstera ŝlosilo al uzantoj-tabelo
 
-### Administra interfaco
+### Administra interfaco {#admin-interface}
 
 Aliru la datumbazajn administrajn ilojn ĉe:
 
@@ -111,6 +111,6 @@ La interfaco permesas al vi:
 - Kontroli datumbazan agordon
 - Vidi detalajn statinformojn
 
-## Subteno
+## Subteno {#support}
 
 Ĉi tiu kromprogramo estas specife desegnita por la KursoPro platformo. Por teknika subteno, kontaktu la evoluigan teamon.

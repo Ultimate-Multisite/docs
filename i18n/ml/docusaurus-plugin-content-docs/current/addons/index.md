@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons ഉപയോഗിച്ച് Ultimate Multisite-ന് കൂടുതൽ ഫീച്ചറുകളും ഇന്റഗ്രേഷനുകളും നൽകുന്നു. മിക്ക അഡോണുകളും പണം കൊടുത്ത് വാങ്ങേണ്ടവയാണ്, അത് [ultimatemultisite.com](https://ultimatemultisite.com)-ൽ നിന്ന് വാങ്ങാൻ കഴിയും.
 
-## ഇൻസ്റ്റാളേഷൻ
+## ഇൻസ്റ്റാളേഷൻ {#installation}
 
 Addons രണ്ട് രീതിയിൽ ഇൻസ്റ്റാൾ ചെയ്യാവുന്നതാണ്:
 
 1. **Addon പേജ് വഴി** -- WordPress അഡ്മിനിൽ നിങ്ങളുടെ സൈറ്റിന്റെ അഡോൺ മാനേജ്‌മെന്റ് പേജിലേക്ക് പോകുക.
 2. **മാനുവൽ ഡൗൺലോഡ്** -- [your account](https://ultimatemultisite.com/my-account/downloads/) എന്നതിൽ നിന്ന് ഡൗൺലോഡ് ചെയ്ത്, Plugins > Add New വഴി അപ്‌ലോഡ് ചെയ്യുക.
 
-## ലഭ്യമായ അഡോണുകൾ
+## ലഭ്യമായ അഡോണുകൾ {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

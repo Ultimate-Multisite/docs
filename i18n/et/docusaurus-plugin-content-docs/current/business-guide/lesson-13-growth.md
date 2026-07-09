@@ -3,19 +3,19 @@ title: 'Õppetund 13: Mastaabi suurendamine'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Õppetund 13: Mastaabi suurendamine
+# Õppetund 13: Mastaabi suurendamine {#lesson-13-scaling-up}
 
 Sul on toimiv platvorm maksvate klientidega. See õppetund käsitleb, kuidas kasvada väikesest tegevusest jätkusuutlikuks äriks -- taristu skaleerimine, tegevuste automatiseerimine ja kliendipõhise tulu suurendamine.
 
-## Kuhu me pooleli jäime
+## Kuhu me pooleli jäime {#where-we-left-off}
 
 FitSite on avalik, kliendid registreeruvad ja sina haldad igapäevaseid tegevusi. Nüüd keskendume kasvule.
 
-## Tunne oma numbreid
+## Tunne oma numbreid {#know-your-numbers}
 
 Enne skaleerimist mõista, kus sa praegu oled:
 
-### Peamised mõõdikud
+### Peamised mõõdikud {#key-metrics}
 
 - **MRR (igakuine korduv tulu)**: Kogu igakuine tellimustulu
 - **Klientide arv**: Kõik aktiivsed tellijad kokku
@@ -24,7 +24,7 @@ Enne skaleerimist mõista, kus sa praegu oled:
 - **LTV (kliendi eluaegne väärtus)**: Keskmine tulu kliendi kohta kogu tema tellimuse jooksul
 - **CAC (kliendi hankimise kulu)**: Keskmine kulu ühe kliendi hankimiseks
 
-### Näide: FitSite 50 kliendiga
+### Näide: FitSite 50 kliendiga {#example-fitsite-at-50-customers}
 
 | Mõõdik | Väärtus |
 |--------|-------|
@@ -36,9 +36,9 @@ Enne skaleerimist mõista, kus sa praegu oled:
 
 Need numbrid ütlevad, millele keskenduda. Kõrge lahkumismäär? Paranda kliendihoidmist. Madal ARPU? Suuna kliente kõrgematele pakettidele. Kõrge CAC? Optimeeri hankekanaleid.
 
-## Taristu skaleerimine
+## Taristu skaleerimine {#scaling-infrastructure}
 
-### Millal skaleerida
+### Millal skaleerida {#when-to-scale}
 
 Skaleeri hostingut, kui:
 
@@ -47,7 +47,7 @@ Skaleeri hostingut, kui:
 - Lähened 100+ aktiivsele saidile
 - Klientide kaebused kiiruse kohta sagenevad
 
-### Kuidas skaleerida
+### Kuidas skaleerida {#how-to-scale}
 
 - **Vertikaalne skaleerimine**: Uuenda suuremale serverile (rohkem CPU-d, RAM-i)
 - **Vahemälukihid**: Lisa Redis/Memcached objektivahemälu jaoks, lehevahemälu staatilise sisu jaoks
@@ -55,7 +55,7 @@ Skaleeri hostingut, kui:
 - **Andmebaasi optimeerimine**: Võrgu kasvades aeglustuvad andmebaasipäringud. Optimeeri tabeleid, lisa indekseid, kaalu eraldi andmebaasiserverit.
 - **Eralda vastutusalad**: Vii meedia salvestamine objektisalvestusse (S3-ühilduv), suuna e-post transaktsioonilise e-posti teenusesse
 
-### Hostingu migreerimine
+### Hostingu migreerimine {#hosting-migration}
 
 Kui sinu praegune host ei saa enam edasi skaleeruda, planeeri migreerimine:
 
@@ -65,11 +65,11 @@ Kui sinu praegune host ei saa enam edasi skaleeruda, planeeri migreerimine:
 4. Uuenda DNS-i eelnevalt minimaalse TTL-iga
 5. Kontrolli pärast migreerimist, et kõik töötaks
 
-## Tegevuste automatiseerimine
+## Tegevuste automatiseerimine {#automating-operations}
 
 Kasvades muutuvad käsitsi protsessid pudelikaelteks. Automatiseeri kõik, mida saad:
 
-### Webhooks ja Zapier
+### Webhooks ja Zapier {#webhooks-and-zapier}
 
 Kasuta [Webhooks](/user-guide/integrations/webhooks) või [Zapier](/user-guide/integrations/zapier), et automatiseerida:
 
@@ -78,7 +78,7 @@ Kasuta [Webhooks](/user-guide/integrations/webhooks) või [Zapier](/user-guide/i
 - **Makse ebaõnnestumised** → hoiatus sinu seiretööriistas
 - **Paketi uuendused** → õnnitluse e-kiri koos uute funktsioonide juhendiga
 
-### E-posti automatiseerimine
+### E-posti automatiseerimine {#email-automation}
 
 Liigu käsitsi e-kirjadelt automatiseeritud jadadele:
 
@@ -87,30 +87,30 @@ Liigu käsitsi e-kirjadelt automatiseeritud jadadele:
 - Uuendamise soovitused, kui kliendid lähenevad paketi piirangutele
 - Pikendamise meeldetuletused aastastele tellijatele
 
-### Toe automatiseerimine
+### Toe automatiseerimine {#support-automation}
 
 - **Valmisvastused** levinud küsimustele
 - **Automaatvastused**, mis kinnitavad tugipiletite kättesaamist
 - **Teadmusbaasi soovitused**, kui kliendid esitavad pileteid, mis vastavad olemasolevatele artiklitele
 
-## Tulu suurendamine
+## Tulu suurendamine {#increasing-revenue}
 
 Kasv ei tähenda ainult rohkem kliente. See tähendab ka suuremat tulu iga kliendi kohta.
 
-### Olemasolevatele klientidele juurde müümine
+### Olemasolevatele klientidele juurde müümine {#upselling-existing-customers}
 
 - **Paketi uuendused**: Sihitud kampaaniad, mis näitavad Growth/Pro funktsioone Starter klientidele
 - **Tellimuse lisapakkumised**: Reklaami olemasolevatele klientidele e-posti teel lisatooteid
 - **Aastasele paketile üleminek**: Paku igakuistele klientidele soodustust, et nad läheksid üle aastasele arveldusele
 
-### Uued tuluvood
+### Uued tuluvood {#new-revenue-streams}
 
 - **Valmisseadistus sinu eest**: Küsi lisatasu kliendi saidi seadistamise ja kohandamise eest
 - **Kohandatud disainiteenused**: Paku malli peale eritellimusel disainitööd
 - **Koolitussessioonid**: Tasulised üks-ühele läbikäigud klientidele, kes soovivad praktilist abi
 - **Premium pluginad**: Paku nišipõhiseid premium pluginaid tasuliste lisadena (nt fitnessitunni broneerimise vidin)
 
-### Hindade tõstmine
+### Hindade tõstmine {#raising-prices}
 
 Kui sinu platvorm küpseb ja lisab väärtust:
 
@@ -118,7 +118,7 @@ Kui sinu platvorm küpseb ja lisab väärtust:
 - Tõsta hindu uutele registreerujatele
 - Põhjenda hinnatõuse uute funktsioonide ja täiustustega
 
-## Tiimi loomine
+## Tiimi loomine {#building-a-team}
 
 Mingil hetkel ei saa sa kõike üksi teha. Levinud esimesed värbamised:
 
@@ -128,7 +128,7 @@ Mingil hetkel ei saa sa kõike üksi teha. Levinud esimesed värbamised:
 
 Sa ei vaja tingimata töötajaid. Töövõtjad ja vabakutselised sobivad platvormiärile hästi.
 
-## Kasvu verstapostid
+## Kasvu verstapostid {#growth-milestones}
 
 | Verstapost | Ligikaudne MRR | Fookus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Sa ei vaja tingimata töötajaid. Töövõtjad ja vabakutselised sobivad platvor
 | 250-500 klienti | $25,000-$50,000 | Tiimi loomine, uued tuluvood, premium funktsioonid |
 | 500+ klienti | $50,000+ | Platvormi küpsus, lähedased nišid, võimalik väljumine |
 
-## Mida me selles õppetunnis ehitasime
+## Mida me selles õppetunnis ehitasime {#what-we-built-this-lesson}
 
 - **Mõõdikute raamistiku**, et mõista ettevõtte tervist
 - **Taristu skaleerimise plaani** kasvamiseks kümnetelt saitidelt sadadeni

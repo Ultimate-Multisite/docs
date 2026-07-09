@@ -4,11 +4,11 @@ title: Фильтр - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Чыпка: wu_apc_get_meta_content_default_content
+# Чыпка: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Иштеп чыгуучуларга демейки маанилерди чыпкалоого уруксат берет
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | Алына турган мета маалыматтын түрү. |
 | $meta_key | `string` | Мета талаанын аты. |
 
-### Баштап
+### Баштап {#since}
 
 - 1.4.0
-### Булак
+### Булак {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) ичинде 68-сапта аныкталган
 
 
-## Кайтарат
+## Кайтарат {#returns}
 Жаңы демейки маани.

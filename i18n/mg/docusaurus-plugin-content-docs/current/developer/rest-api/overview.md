@@ -3,28 +3,28 @@ title: Topimaso momba ny REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tahirin-kevitra REST API
+# Tahirin-kevitra REST API {#rest-api-reference}
 
-## Fanamboarana fototra
+## Fanamboarana fototra {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Fanamarinana:** API Key & Secret (HTTP Basic Auth na URL Parameters)
 
-## Fanamarinana
+## Fanamarinana {#authentication}
 
-### Alefaso ny API
+### Alefaso ny API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Makà API Credentials
+### Makà API Credentials {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Fomba fanamarinana
+### Fomba fanamarinana {#authentication-methods}
 
 **HTTP Basic Auth (Aroso):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoints fototra
+## Endpoints fototra {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **Base Route:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Base Route:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Base Route:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Base Route:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Base Route:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Base Route:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint fisoratana anarana
+## Endpoint fisoratana anarana {#registration-endpoint}
 
 Ny endpoint `/register` dia manome fikorianan'ny checkout/fisoratana anarana feno:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoints ho an'ny Tenant Mahaleo Tena
+## Endpoints ho an'ny Tenant Mahaleo Tena {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dia manampy fandrakofana REST ho an'ny tenant mahaleo tena ho an'ny fampidirana izay mamorona, manamarina, na manamarina tenants mitokana.
 
@@ -242,7 +242,7 @@ Ny valin'ny sata fifindra-monina mahazatra dia ahitana:
 
 Raiso ho toy ny sakana alohan'ny fandefasana ny `ready: false`. Zahao ny antsipirian'ny fanamarinana, amboary ny fatoran'ny host database, queue, famoronana user, na olana routing, dia andramo indray ny fanamarinana.
 
-## Valin-kafatra hadisoana
+## Valin-kafatra hadisoana {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Raiso ho toy ny sakana alohan'ny fandefasana ny `ready: false`. Zahao ny antsipi
 }
 ```
 
-## Pagination sy fanivanana
+## Pagination sy fanivanana {#pagination-and-filtering}
 
 **Query Parameters:**
 ```http

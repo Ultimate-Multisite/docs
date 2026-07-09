@@ -4,16 +4,16 @@ title: Shaandhee - wu_apply_plan_limits
 sidebar_label: wu_apply_plan_limits
 _i18n_hash: 494a7255a0f46d7f4b65acea6e3856bd
 ---
-# Shaandheeye: wu_apply_plan_limits
+# Shaandheeye: wu_apply_plan_limits {#filter-wuapplyplanlimits}
 
 U oggolow horumariyeyaasha kordhinta inay si toos ah uga boodaan xaddidaadaha.
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 1.0.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/limits/class-fluent-forms-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limits/class-fluent-forms-limits.php#L39) safka 39
 
 
-## Soo celinta
+## Soo celinta {#returns}

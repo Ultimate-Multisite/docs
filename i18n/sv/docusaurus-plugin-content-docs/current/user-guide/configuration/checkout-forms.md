@@ -3,7 +3,7 @@ title: Kassaformulär
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Kassformulär
+# Kassformulär {#checkout-forms}
 
 Kassformulär är ett enkelt och flexibelt sätt att experimentera med olika metoder när du försöker konvertera nya kunder.
 
@@ -36,13 +36,13 @@ Alternativt kan du redigera eller duplicera de formulär du redan har genom att 
 
 ![Åtgärder vid hovring över kassformulär](/img/config/checkout-form-hover-actions.png)
 
-#### Översikt över redigeraren för kassformulär
+#### Översikt över redigeraren för kassformulär {#checkout-form-editor-overview}
 
 Redigeraren för kassformulär tillhandahåller ett omfattande gränssnitt för att bygga dina registreringsformulär. Här är en översikt över redigerarens layout:
 
 ![Översikt över redigeraren för kassformulär](/img/config/checkout-form-editor-overview.png)
 
-### Redigera ett kassformulär
+### Redigera ett kassformulär {#editing-a-checkout-form}
 
 Du kan skapa kassformulär för olika syften. I det här exemplet kommer vi att arbeta med ett registreringsformulär.
 
@@ -112,7 +112,7 @@ För att få ditt formulärs shortcode, klicka på Generera shortcode och kopier
 
 ![Spara-knapp med shortcode](/img/config/checkout-form-save.png)
 
-### Fältet Pristabell
+### Fältet Pristabell {#the-pricing-table-field}
 
 Fältet **Pristabell** visar dina produkter i kassformuläret så att kunder kan välja en plan. När du redigerar detta fält kan du konfigurera flera alternativ:
 
@@ -130,17 +130,17 @@ Så här visas pristabellen i registreringsformuläret på frontend:
 
 Om du lägger till en produkt i pristabellen innan formuläret innehåller de fält som krävs för att slutföra den produktens checkout-flöde visar redigeraren nu en varning. Använd varningen för att lägga till det saknade obligatoriska fältet innan du publicerar eller sparar ändringar för ett aktivt registreringsformulär.
 
-### Lägga till en växlare för periodval
+### Lägga till en växlare för periodval {#adding-a-period-selection-toggle}
 
 Om du har konfigurerat [Prisvariationer](creating-your-first-subscription-product#price-variations) på dina produkter (t.ex. månads- och årspris) kan du lägga till ett **Periodval**-fält i ditt checkout-formulär. Det här fältet visar en växlare som låter kunder växla mellan faktureringsperioder, och pristabellen uppdateras dynamiskt i realtid.
 
-#### Steg 1: Konfigurera prisvariationer på dina produkter
+#### Steg 1: Konfigurera prisvariationer på dina produkter {#step-1-set-up-price-variations-on-your-products}
 
 Innan du lägger till fältet Periodval, se till att dina produkter har prisvariationer konfigurerade. Gå till **Ultimate Multisite > Produkter**, redigera en produkt och navigera till fliken **Prisvariationer** för att lägga till alternativa faktureringsperioder (t.ex. Årligen till ett rabatterat pris).
 
 ![Fliken Prisvariationer på en produkt](/img/config/product-price-variations-tab.png)
 
-#### Steg 2: Lägg till fältet Periodval i ditt checkout-formulär
+#### Steg 2: Lägg till fältet Periodval i ditt checkout-formulär {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Gå till **Ultimate Multisite > Checkout-formulär** och redigera ditt checkout-formulär.
 
@@ -163,13 +163,13 @@ Innan du lägger till fältet Periodval, se till att dina produkter har prisvari
 
 7. Klicka på **Spara fält**.
 
-#### Steg 3: Placera fältet ovanför pristabellen
+#### Steg 3: Placera fältet ovanför pristabellen {#step-3-position-the-field-above-the-pricing-table}
 
 För bästa användarupplevelse, se till att fältet Periodval visas **före** fältet Pristabell i ditt checkout-steg. Du kan dra fält för att ändra ordningen på dem i redigeraren för checkout-formulär. På så sätt väljer kunderna först en faktureringsperiod och ser sedan priserna för den perioden.
 
 ![Redigerare för checkout-formulär som visar fältordning](/img/config/checkout-form-editor-with-fields.png)
 
-#### Så fungerar det på Frontend
+#### Så fungerar det på Frontend {#how-it-works-on-the-frontend}
 
 När det är konfigurerat kommer kunder som besöker din registreringssida att se periodväljaren ovanför pristabellen. När de klickar på en annan faktureringsperiod:
 
@@ -177,7 +177,7 @@ När det är konfigurerat kommer kunder som besöker din registreringssida att s
   * Om **Tvinga olika varaktigheter** är inaktiverat på fältet Pristabell, döljs produkter utan en prisvariation för den valda perioden.
   * Om **Tvinga olika varaktigheter** är aktiverat förblir alla produkter synliga även om de inte har en variation för den valda perioden (de visar sitt standardpris).
 
-#### Förvälja en faktureringsperiod via URL
+#### Förvälja en faktureringsperiod via URL {#pre-selecting-a-billing-period-via-url}
 
 Du kan också förvälja en produkt och faktureringsperiod via URL:en. Ultimate Multisite stöder dessa URL-mönster:
 
@@ -185,11 +185,11 @@ Du kan också förvälja en produkt och faktureringsperiod via URL:en. Ultimate 
   * `/register/premium/12` — Förväljer produkten och en varaktighet på 12 månader
   * `/register/premium/1/year` — Förväljer produkten med en varaktighet på 1 år
 
-### Fältet för mallval
+### Fältet för mallval {#the-template-selection-field}
 
 Fältet **Mallval** låter kunder välja en webbplatsmall under checkout. Det ingår nu som standard i formulärmallarna för checkout med **ett steg** och **flera steg** som lades till i Ultimate Multisite v2.6.1.
 
-#### Lägga till fältet manuellt
+#### Lägga till fältet manuellt {#adding-the-field-manually}
 
 Om du arbetar med ett formulär som skapades före v2.6.1, eller började från en tom mall:
 
@@ -200,11 +200,11 @@ Om du arbetar med ett formulär som skapades före v2.6.1, eller började från 
    - **Etikett** — Rubriken som kunder ser ovanför mallrutnätet (t.ex. "Välj en webbplatsmall").
    - **Obligatoriskt** — Om kunder måste välja en mall innan de fortsätter.
 
-#### Så fungerar det
+#### Så fungerar det {#how-it-works}
 
 När en kund väljer en mall under checkout använder Ultimate Multisite den när deras nya webbplats provisioneras. Mallarna som visas kommer från din **lista över webbplatsmallar** (**Ultimate Multisite > Webbplatsmallar**). Endast mallar markerade som tillgängliga för kunder visas här.
 
-### Basdomäner för checkout-formulär
+### Basdomäner för checkout-formulär {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 behandlar domäner som konfigurerats i checkout-formulärens **Webbplats-URL**-fält som nätverkets basdomäner. Använd fältets inställningar för tillgängliga domäner när du vill att kunder ska skapa webbplatser under en eller flera delade registreringsdomäner, såsom `example.com` och `sites.example.com`.
 
@@ -212,6 +212,6 @@ Delade basdomäner för checkout-form behandlas inte som anpassade domänmappnin
 
 Behåll anpassade domäner för kundspecifika mappade hostar, såsom `customer-example.com`. Behåll basdomäner för checkout-form för delade registreringshostar som många webbplatser kan använda.
 
-#### Ta bort fältet
+#### Ta bort fältet {#removing-the-field}
 
 Om du inte erbjuder webbplatsmallar, ta bort fältet Mallval från ditt formulär. Kunder får då den standardmall som har konfigurerats under **Ultimate Multisite > Settings > Site Templates**.

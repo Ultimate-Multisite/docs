@@ -3,11 +3,11 @@ title: Sayt ko'rsatmalari ko'nikmasi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sayt Spesifikatsiyasi Ko'nikmasi
+# Sayt Spesifikatsiyasi Ko'nikmasi {#site-specification-skill}
 
 **Sayt Spesifikatsiyasi ko'nikmasi** — bu saytingizning maqsadlarini, auditoriyasini va brend identifikatsiyasini aniqlash uchun tuzilgan yondashuvdir. Bu ma'lumotlar sizning **site_brief** xotirangizda saqlanadi; agentlar har bir sessiyada doimiy, kontekstli yordam berish uchun shu yerga murojaat qiladilar.
 
-## Sayt Spesifikatsiyasi nima?
+## Sayt Spesifikatsiyasi nima? {#what-is-site-specification}
 
 Sayt Spesifikatsiyasi quyidagilarni hujjatlashtirish jarayonidir:
 
@@ -19,9 +19,9 @@ Sayt Spesifikatsiyasi quyidagilarni hujjatlashtirish jarayonidir:
 
 Bu spesifikatsiya sizning **site_brief** (sayt xotirangiz)ga aylanadi, bu esa agentlar saytingiz kontekstini tushunish uchun ishlatadigan doimiy xotira hisoblanadi.
 
-## Nega Sayt Spesifikatsiyasidan Foydalanish Kerak?
+## Nega Sayt Spesifikatsiyasidan Foydalanish Kerak? {#why-use-site-specification}
 
-### Sessiyalar Oralig'ida Doimiy Bo'lish
+### Sessiyalar Oralig'ida Doimiy Bo'lish {#consistency-across-sessions}
 
 site_brief bo'lmasa, har bir yangi sessiya boshlaganingizda saytingiz maqsadi haqida qayta tushuntirish kerak bo'ladi. U bilan esa agentlar darhol quyidagilarni tushunishadi:
 
@@ -30,7 +30,7 @@ site_brief bo'lmasa, har bir yangi sessiya boshlaganingizda saytingiz maqsadi ha
 - Sayt kontent tuzilishingiz
 - Biznes maqsadlaringiz
 
-### Yaxshil Tavsiyalar
+### Yaxshil Tavsiyalar {#better-recommendations}
 
 Agentlar site_briefdan foydalanib:
 
@@ -39,17 +39,17 @@ Agentlar site_briefdan foydalanib:
 - Brendingizga mos keladigan dizaynlarni taklif qilish
 - Mos kelmaydigan xususiyatlarni taklif qilishdan saqlanish
 
-### Tezroq Kirish (Onboarding)
+### Tezroq Kirish (Onboarding) {#faster-onboarding}
 
 Yangi agentlar (yoki yangi sessiyalardagi agentlar) aniqlash savollari berish o'rniga site_briefni o'qib, tezda ishga tushishi mumkin.
 
-## Sayt Spesifikatsiyasini Boshlash
+## Sayt Spesifikatsiyasini Boshlash {#initiating-site-specification}
 
-### Theme Builder Kirishida
+### Theme Builder Kirishida {#during-theme-builder-onboarding}
 
 Site Specification ko'nikmasi **Theme Builder kirish jarayoni** davomida avtomatik boshlanadi. Setup Assistant agent savollar beradi va sizning site_briefingizni qurib boradi.
 
-### Qo'lda Boshlash
+### Qo'lda Boshlash {#manual-initiation}
 
 Siz istalgan vaqtda Sayt ko'rsatmasini (Site Specification) boshlashingiz mumkin:
 
@@ -63,9 +63,9 @@ yoki
 "Sayt uchun ma'lumotnomani yaratishga yordam bering"
 ```
 
-## Sayt Ko'rsatmasi Jarayoni
+## Sayt Ko'rsatmasi Jarayoni {#the-site-specification-process}
 
-### 1-Qadam: Sayt Maqsadi (Site Purpose)
+### 1-Qadam: Sayt Maqsadi (Site Purpose) {#step-1-site-purpose}
 
 Agent quyidagicha so'raydi:
 
@@ -81,7 +81,7 @@ Sizning saytingizning asosiy maqsadi nima?
 
 Siz kategoriya tanlashingiz mumkin yoki o'zingizning maqsadingizni tasvirlashingiz mumkin.
 
-### 2-Qadam: Maqsadli Auditoriya (Target Audience)
+### 2-Qadam: Maqsadli Auditoriya (Target Audience) {#step-2-target-audience}
 
 ```
 Asosiy auditoriyangiz kim?
@@ -94,7 +94,7 @@ Asosiy auditoriyangiz kim?
 Ularning asosiy ehtiyojlari nimalar?
 ```
 
-### 3-Qadam: Brend Identiteti (Brand Identity)
+### 3-Qadam: Brend Identiteti (Brand Identity) {#step-3-brand-identity}
 
 ```
 Sizning brend ranglaringiz qaysi?
@@ -110,7 +110,7 @@ Brend toningizni qanday tasvirlaysiz?
 - Issiq / do'stona
 ```
 
-### 4-Qadam: Biznes Maqsadlari (Business Goals)
+### 4-Qadam: Biznes Maqsadlari (Business Goals) {#step-4-business-goals}
 
 ```
 Saytingiz uchun muvaffaqiyat qanday ko'rinishda?
@@ -129,7 +129,7 @@ Asosiy metrikingiz nima?
 - Boshqa
 ```
 
-### 5-Qadam: Kontent Tuzilishi (Content Structure)
+### 5-Qadam: Kontent Tuzilishi (Content Structure) {#step-5-content-structure}
 
 ```
 Kontentingiz qanday tashkil etilgan?
@@ -148,13 +148,13 @@ Qaysi kontent turlarini ishlatasiz?
 - Boshqa
 ```
 
-## Sizning site_brief Xotirangiz
+## Sizning site_brief Xotirangiz {#your-sitebrief-memory}
 
 Sayt ko'rsatmasini yakunlaganingizdan so'ng, sizning ma'lumotlaringiz agent xotirasida **site_brief** sifatida saqlanadi. Bu quyidagilarni o'z ichiga olgan tuzilgan yozuvdir:
 
-## Site özeti (site_brief) görüntüleme ve güncelleme
+## Site özeti (site_brief) görüntüleme ve güncelleme {#viewing-and-updating-your-sitebrief}
 
-### Site özetinizi görüntüleyin
+### Site özetinizi görüntüleyin {#view-your-sitebrief}
 
 Aşağıdaki komutlardan birini agent'a sorabilirsiniz:
 
@@ -170,7 +170,7 @@ veya
 
 Agent, kayıtlı spesifikasyonunuzu gösterecektir.
 
-### Site özetinizi güncelleyin
+### Site özetinizi güncelleyin {#update-your-sitebrief}
 
 Siteniz gelişirse, onu güncelleyebilirsiniz:
 
@@ -186,9 +186,9 @@ veya
 
 Bu işlem, mevcut bilgilerinizle Site Specification skill'ini yeniden çalıştıracaktır.
 
-## Agent'lar site_brief'i nasıl kullanır?
+## Agent'lar site_brief'i nasıl kullanır? {#how-agents-use-sitebrief}
 
-### Tasarım önerileri
+### Tasarım önerileri {#design-recommendations}
 
 Tasarım değişiklikleri istediğinizde, agent'lar site özetinizi referans alır:
 
@@ -197,7 +197,7 @@ Siz: "Redesign my homepage"
 Agent: "Site özetinize dayanarak, 25-45 yaş arası kadınlara sıcak ve el yapımı bir tonla odaklanıyorsunuz. El yapımı takılarınızı ve sürdürülebilirlik değerlerinizi vurgulayan bir tasarım oluşturacağım."
 ```
 
-### Özellik önerileri
+### Özellik önerileri {#feature-suggestions}
 
 Agent'lar hedeflerinize uygun özellikleri önerir:
 
@@ -206,23 +206,23 @@ Siz: "What features should I add?"
 Agent: "Müşteri sadakatine odaklanmış bir e-ticaret mağazası için şunları öneririm: sadakat programı, müşteri yorumları, e-posta bülteni ve ürün önerileri."
 ```
 
-### İçerik yapısı
+### İçerik yapısı {#content-structure}
 
 Agent'lar yapınıza dayanarak içerik düzenlemesi önerir:
 
 Siz blogingni qanday tartiblashim kerak?
 Agent: Siz mahsulot katalogidan foydalanayotganingiz uchun postlarni mahsulot kategoriyalariga ko'ra tartiblash va bir nechta mahsulotni birgalikda ko'rsatadigan "stil qo'llanmalari" yaratishni tavsiya qilaman.
 
-## Eng yaxshi amaliyotlar
+## Eng yaxshi amaliyotlar {#best-practices}
 
-### Aniqlik bilan bog'laning
+### Aniqlik bilan bog'laning {#be-specific}
 
 "Umumiy auditoriya" deyish o'rniga, haqiqiy auditoriyangizni tasvirlang:
 
 - ✓ "25-45 yoshdagi ayollar, barqaror modaga qiziqadiganlar"
 - ✗ "Hamma narsa"
 
-### Muntazam yangilang
+### Muntazam yangilang {#update-regularly}
 
 Saytingiz rivojlanishi bilan `site_brief` (sayt xulosasi)ni yangilang:
 
@@ -231,14 +231,14 @@ Saytingiz rivojlanishi bilan `site_brief` (sayt xulosasi)ni yangilang:
 - Brend identifikatingiz o'zgarganda
 - Biznes maqsadlaringiz o'zgarganda
 
-### Bir xil terminologiyadan foydalaning
+### Bir xil terminologiyadan foydalaning {#use-consistent-terminology}
 
 Sessiyalarda bir xil atamalardan foydalaning:
 
 - ✓ Har doim "barqaror juvelar" (buning o'rniga "ekologik juvelar" yoki "yashil mahsulotlar" deb aytmang)
 - ✓ Auditoriyangizni doim bir xil tarzda murojaat qiling
 
-### Kontekstni kiritish
+### Kontekstni kiritish {#include-context}
 
 Agentlarga qarorlaringizni tushunishga yordam beradigan fon ma'lumotlarini bering:
 
@@ -246,7 +246,7 @@ Agentlarga qarorlaringizni tushunishga yordam beradigan fon ma'lumotlarini berin
 - "Auditoriyamiz texnologiyalarga oid va zamonaviy dizaynni kutadi"
 - "Biz bootstrapped startapman, shuning uchun bizga samarali yechimlar kerak"
 
-## Theme Builder bilan bog'liqlik
+## Theme Builder bilan bog'liqlik {#relationship-to-theme-builder-onboarding}
 
 Site Specification skilli **Theme Builder onboarding flow** (Tema Quruvchi boshlash jarayoni) ichiga integratsiyalashgan. Onboardingni yakunlaganingizda, siz kiritgan ma'lumotlar bilan `site_brief` avtomatik yaratiladi.
 
@@ -256,7 +256,7 @@ Agar quyidagilarni istasangiz, Site Specificationni mustaqil ravishda ishga tush
 - Saytingiz rivojlanishi bilan `site_brief`ni yangilash uchun
 - Theme Builder boshlashdan oldin batafsil tavsif yaratish uchun
 
-## Muammolarni hal qilish
+## Muammolarni hal qilish {#troubleshooting}
 
 **Mening site_brief ishlatilmayapti**
 - Agentning xotiraga kirish imkoniyati borligini tasdiqlang
@@ -272,7 +272,7 @@ Agar quyidagilarni istasangiz, Site Specificationni mustaqil ravishda ishga tush
 - Agar u eskirgan bo'lsa, o'zingizning site_briefingizni yangilang
 - So'rovlaringizga qo'shimcha kontekst bering
 
-## Keyingi qadamlar
+## Keyingi qadamlar {#next-steps}
 
 Siz site spesifikatsiyangizni belgilagandan so'ng:
 

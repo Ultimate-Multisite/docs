@@ -3,19 +3,19 @@ title: 'Lektioun 2: Deng Nisch auswielen'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lektioun 2: Deng Nisch auswielen
+# Lektioun 2: Deng Nisch auswielen {#lesson-2-picking-your-niche}
 
 An der Lektioun 1 hu mir festgestallt, firwat eng Nisch besser ass wéi eppes Generesches. Elo muss du deng auswielen. Dës Lektioun gëtt dir e Kader, fir eng Nisch ze fannen an ze validéieren, ier s du Zäit investéiers, fir eppes dofir ze bauen.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 Mir hunn d'FitSite-Konzept definéiert: eng Websäit-Plattform fir Fitnessstudioen. Mee wéi si mir konkret bei Fitnessstudioe gelant? Dës Lektioun féiert dech duerch de Prozess, esou datt s du en uwende kanns, fir deng eege Nisch ze fannen.
 
-## Déi dräi Critèren
+## Déi dräi Critèren {#the-three-criteria}
 
 Eng gutt Nisch fir eng Websäit-Plattform erfëllt dräi Konditiounen:
 
-### 1. Si brauche Websäiten, mee hunn et schwéier, gutt der ze kréien
+### 1. Si brauche Websäiten, mee hunn et schwéier, gutt der ze kréien {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Sich no Branchen, wou:
 
@@ -26,7 +26,7 @@ Sich no Branchen, wou:
 
 **Fitnessstudioe passen**: Memberen erwaarden, Courspläng, Präisser a Buchung online ze fannen. Déi meescht Studio-Websäite sinn almoudesch oder op generesche Schabloune gebaut, déi hiren Zweck net erfëllen.
 
-### 2. D'Betriber kënnen sech e monatlecht Abonnement leeschten
+### 2. D'Betriber kënnen sech e monatlecht Abonnement leeschten {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Deng Zilclientë musse sinn:
 
@@ -36,7 +36,7 @@ Deng Zilclientë musse sinn:
 
 **Fitnessstudioe passen**: si bezuele schonn fir Buchungssoftware, Bezuelungsveraarbechtung a Marketing-Tools. E Websäit-Abonnement ass eng natierlech Ergänzung.
 
-### 3. Si schwätze mateneen
+### 3. Si schwätze mateneen {#3-they-talk-to-each-other}
 
 Déi bescht Nischen hunn:
 
@@ -46,9 +46,9 @@ Déi bescht Nischen hunn:
 
 **Fitnessstudioe passen**: Studio-Besëtzer ginn op Fitness-Branche-Eventer, bedeelegen sech un Online-Communautéiten a deelen dacks Tools a Servicer mat Kolleginnen a Kollegen.
 
-## Wéi s du Nisch-Kandidate fënns
+## Wéi s du Nisch-Kandidate fënns {#how-to-find-niche-candidates}
 
-### Fänk mat deem un, wat s du kenns
+### Fänk mat deem un, wat s du kenns {#start-with-what-you-know}
 
 Deng bestehend Erfarung ass e Virdeel. Iwwerlee:
 
@@ -56,7 +56,7 @@ Deng bestehend Erfarung ass e Virdeel. Iwwerlee:
 - Hobbyen oder Interessen, bei deenen s du d'Communautéit verstees
 - Berufflech Netzwierker, zu deenen s du schonn gehéiers
 
-### Sich no Péng-Signaler
+### Sich no Péng-Signaler {#look-for-pain-signals}
 
 Sich no Beweiser, datt Betriber an enger Nisch Problemer mat Websäiten hunn:
 
@@ -65,7 +65,7 @@ Sich no Beweiser, datt Betriber an enger Nisch Problemer mat Websäiten hunn:
 - Kuck tatsächlech Websäiten an der Nisch -- sinn déi meescht dovu schlecht?
 - Kontrolléier, ob Konkurrenten existéieren a wéi gutt si de Marché zerwéieren
 
-### Bewäert d'Ekonomie
+### Bewäert d'Ekonomie {#evaluate-the-economics}
 
 Fir all méiglech Nisch, schätz:
 
@@ -73,11 +73,11 @@ Fir all méiglech Nisch, schätz:
 - **Bereetschaft ze bezuelen**: Wat ginn si aktuell fir ähnlech Tools aus?
 - **Potenzial fir Liewensdauerwäert**: Sinn dës Betriber stabil, oder sprangen si séier of?
 
-## Deng Nisch validéieren
+## Deng Nisch validéieren {#validating-your-niche}
 
 Ier s du eppes baus, validéier d'Nofro:
 
-### Schwätz mat potenzielle Clienten
+### Schwätz mat potenzielle Clienten {#talk-to-potential-customers}
 
 Kontaktéier 10-15 Betribsbesëtzer an denger Zilnisch. Fro:
 
@@ -88,17 +88,17 @@ Kontaktéier 10-15 Betribsbesëtzer an denger Zilnisch. Fro:
 
 Du verkaafs nach net. Du lauschteres.
 
-### Kontrolléier d'Konkurrenzlandschaft
+### Kontrolléier d'Konkurrenzlandschaft {#check-competitor-landscape}
 
 - **Keng Konkurrenten**: Kann heeschen, datt et keng Nofro gëtt, oder et kann eng nach net genotzt Geleeënheet bedeiten. Gespréicher mat Clientë weisen dir, wat dovu stëmmt.
 - **E puer Konkurrenten**: Gutt Zeechen. Validéiert d'Nofro. Studéier, wat si gutt maachen a wou si Defiziter hunn.
 - **Vill Konkurrenten**: Méi schwéier eranzekommen, mee nach ëmmer méiglech, wann s du dech kloer differenzéiere kanns.
 
-### Bau eng Landing Page
+### Bau eng Landing Page {#build-a-landing-page}
 
 Ier s du d'Plattform baus, erstell eng einfach Landing Page, déi deng Nisch-Léisung beschreift, a sammelt E-Mail-Umeldungen. Schalt eng kleng Quantitéit u gezilter Reklamm, fir den Interessi ze testen. Wann d'Leit sech umellen, hues du Validatioun.
 
-## Dëst op FitSite uwenden
+## Dëst op FitSite uwenden {#applying-this-to-fitsite}
 
 Hei ass, wéi FitSite géint d'Critère ofgeschnidden huet:
 
@@ -112,7 +112,7 @@ Hei ass, wéi FitSite géint d'Critère ofgeschnidden huet:
 
 D'Validatioun huet d'Geleeënheet confirméiert. Elo baue mir.
 
-## Nisch-Iddien, déi s du iwwerleeë kanns
+## Nisch-Iddien, déi s du iwwerleeë kanns {#niche-ideas-to-consider}
 
 Wann Fitness net däi Marché ass, hei sinn aner Nischen, déi d'Critèren erfëllen:
 
@@ -127,7 +127,7 @@ Wann Fitness net däi Marché ass, hei sinn aner Nischen, déi d'Critèren erfë
 
 All dës hunn déi selwecht Charakteristiken: kloer Websäit-Besoinen, Fäegkeet ze bezuelen, a Communautéit-Mondpropaganda.
 
-## Wat mir an dëser Lektioun gebaut hunn
+## Wat mir an dëser Lektioun gebaut hunn {#what-we-built-this-lesson}
 
 - **E Kader fir d'Auswiel vun enger Nisch**: dräi Critèren, fir all Nisch ze bewäerten
 - **Validatiounsmethoden**: Clientsgespréicher, Konkurrenzanalys, Landing-Page-Testen

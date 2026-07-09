@@ -3,11 +3,11 @@ title: Isalathiso se-Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Isalathiso see-Hooks
+# Isalathiso see-Hooks {#hooks-reference}
 
 Amaxwebhu aveliswe ngokuzenzekelayo azo zonke **izenzo ezingama-59** kunye **nezihluzi eziyi-118** kwi-Ultimate Multisite.
 
-## Izenzo
+## Izenzo {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Isebenza phambi kokuthunyelwa kwakhona kokuqinisekisa.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Isebenza kanye phambi kokuba kusetwe i-cookie yokuqinisekisa.
@@ -69,7 +69,7 @@ Amaxwebhu aveliswe ngokuzenzekelayo azo zonke **izenzo ezingama-59** kunye **nez
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Isebenza emva kokuba into igcinwe kwidatabase.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Vumela abaphuhlisi be-plugin bongeze izenzo kwinkqubo yokuvula.
 
-## Izihluzi
+## Izihluzi {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Ihluza ixesha lexesha lokuphelelwa kwe-cookie yokuqinisekisa.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Ihluza iskimu sokuthumela kwakhona sokuqinisekisa.

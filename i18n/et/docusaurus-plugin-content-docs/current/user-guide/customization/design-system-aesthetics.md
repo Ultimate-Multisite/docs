@@ -3,11 +3,11 @@ title: Disaini süsteemi estetiikakundus
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Disaini süste estetika oskus
+# Disaini süste estetika oskus {#design-system-aesthetics-skill}
 
 **Disaini süste estetika oskus** on juhendatud lähenemine veebilehtide visuaalse identiteedi hoidmise parandamiseks. See aitab teid teha ühtlustatud otsuseid tipograafia, värvid, väljad ja liikumise tokenide kohta, mis määratavad teie disainijärjestust.
 
-## Mis on Disaini süste estetika?
+## Mis on Disaini süste estetika? {#what-is-design-system-aesthetics}
 
 Disaini süste estetika on struktureeritud oskus, mis hõlmab:
 
@@ -20,9 +20,9 @@ Disaini süste estetika on struktureeritud oskus, mis hõlmab:
 
 Need otsused on registreeritud teie teema `theme.json` failis, luues kohesise visuaalse süsteemi.
 
-## Miks kasutada Disaini süste estetika oskust?
+## Miks kasutada Disaini süste estetika oskust? {#why-use-design-system-aesthetics}
 
-### Ühtlustamine
+### Ühtlustamine {#consistency}
 
 Disainijärjestus tagab:
 
@@ -31,7 +31,7 @@ Disainijärjestus tagab:
 - Väljad järgivad ennustatavat maku
 - Animatsioonid tunnevad ühtlaseks
 
-### Efektiivsus
+### Efektiivsus {#efficiency}
 
 Veelpool, kui te teete disainide otsuseid lehel järgi, saate:
 
@@ -39,7 +39,7 @@ Veelpool, kui te teete disainide otsuseid lehel järgi, saate:
 - Kasutada neid igal kohas
 - Üldiselt uuendada ühe väärtuse muutumise abil
 
-### Joustuvus
+### Joustuvus {#flexibility}
 
 Saate teha:
 
@@ -47,9 +47,9 @@ Saate teha:
 - Eksperimenteerida erinevate estetiikatega
 - Hoida brändi ühtlustatavust, samal ajal kui teid arendatakse
 
-## Disaini süste estetika oskuse käivitamine
+## Disaini süste estetika oskuse käivitamine {#triggering-the-design-system-aesthetics-skill}
 
-### Manuaalne aktiveerimine
+### Manuaalne aktiveerimine {#manual-activation}
 
 Saate oskus alustada millalgi:
 
@@ -69,7 +69,7 @@ või
 "Juhenda mind disainide otsustes"
 ```
 
-### Automaatlikud ettepanekud
+### Automaatlikud ettepanekud {#automatic-suggestions}
 
 Agentid võivad soovita kasutada oskust, kui te:
 
@@ -78,9 +78,9 @@ Agentid võivad soovita kasutada oskust, kui te:
 - Soovite visuaalse ühtlustatavuse parandamist
 - Valmistate veebilehe lahkumiseks
 
-## Disaini süste estetika protsess
+## Disaini süste estetika protsess {#the-design-system-aesthetics-process}
 
-### Samuti 1: Tipografia
+### Samuti 1: Tipografia {#step-1-typography}
 
 Agent küsib teid oma font valikust:
 
@@ -110,7 +110,7 @@ Agent definib siis:
 - **Tähtivuse skaala**: Fonti lihvused (regulaarne, keskmine, lihv, jne.)
 - **Rida kõrgus**: Rida vahel olev laik, luetavuseks
 
-### Samuti 2: Värvi palett
+### Samuti 2: Värvi palett {#step-2-color-palette}
 
 ```
 Loo oma värvi paletti.
@@ -158,7 +158,7 @@ Agent definib väljaosas tokenid:
 - Skaal: xs, sm, md, lg, xl, 2xl
 - Spetsiifilised väärtused paddingile, margiinile ja väheolu
 
-### Samuti 4: Rajad ja Varjuid (Borders and Shadows)
+### Samuti 4: Rajad ja Varjuid (Borders and Shadows) {#step-3-spacing}
 
 ```
 Visuaalne sügavus ja definitsioon:
@@ -181,7 +181,7 @@ Agent luuakse:
 - Varjude tokenid eri taseme elevatsioonide jaoks
 - Rajade laius tokenid
 
-### Samuti 5: Liikumine ja Animatsioonid (Motion and Animation)
+### Samuti 5: Liikumine ja Animatsioonid (Motion and Animation) {#step-4-borders-and-shadows}
 
 ```
 Kuidas teie veebile toimida interaktiivselt?
@@ -203,9 +203,9 @@ Agent definib:
 - Easing funktsioonid (ease-in, ease-out, ease-in-out)
 - Tavase interaktsioonide animatsioonikilved
 
-## Disaini süsteemi estetiikka kasutamine
+## Disaini süsteemi estetiikka kasutamine {#step-5-motion-and-animation}
 
-### Automaatiline kasutamine
+### Automaatiline kasutamine {#applying-design-system-aesthetics}
 
 Kui lõpetate oskuse, teeb agent järgmised asjad:
 
@@ -214,13 +214,13 @@ Kui lõpetate oskuse, teeb agent järgmised asjad:
 3. Regeneratsioon teha blokki stiilide vastamiseks uue süsteemiga
 4. Jahid uuendatud theme
 
-### Manuaalne kasutamine
+### Manuaalne kasutamine {#automatic-application}
 
 Võite ka otseslikult muuta `theme.json`i:
 
-## Disaini süsteeni vaatamise
+## Disaini süsteeni vaatamise {#manual-application}
 
-### Küsi agentilt
+### Küsi agentilt {#viewing-your-design-system}
 
 ```
 "Näita mulle disainisüsteem"
@@ -234,13 +234,13 @@ või
 
 Agent näitab teie tipograafia, värvid, väljad ja muut signed.
 
-### Vaata theme.jsoni
+### Vaata theme.jsoni {#ask-the-agent}
 
 Ava `/wp-content/themes/[theme-name]/theme.json` tekstiredaatoris, et näha raamatulisi tokenide definitsioone.
 
-## Disainisüsteemi uuendamine
+## Disainisüsteemi uuendamine {#view-themejson}
 
-### Kiirused uuendused
+### Kiirused uuendused {#updating-your-design-system}
 
 Küsi agentilt konkreetseid muudatusi:
 
@@ -260,7 +260,7 @@ või
 "Muuda otsingfont serifiks"
 ```
 
-### Täielik rediseini
+### Täielik rediseini {#quick-updates}
 
 Jükkige Disainisüsteemi estetiikka oskus:
 
@@ -270,7 +270,7 @@ Jükkige Disainisüsteemi estetiikka oskus:
 
 See juhatab teid kõikide otsuste läbi, alustades teie praegustest väärtustest.
 
-### Osaline uuendused
+### Osaline uuendused {#full-redesign}
 
 Uuenda spetsiifilisi aspektid:
 
@@ -278,15 +278,15 @@ Uuenda spetsiifilisi aspektid:
 "Uuenda ainult värvi paletti, ülejäänud jäetakse samana"
 ```
 
-## Disainisüsteemi parimised praktikad
+## Disainisüsteemi parimised praktikad {#partial-updates}
 
-### Ühtlustamine
+### Ühtlustamine {#design-system-best-practices}
 
 - Kasutage sama tokenide kohas
 - Lõpeta üksiklikud värvid või suurusid mitte
 - Viita tokenidele instead of hardcoding values (ei kirjutada väärtusi otse koodi)
 
-### Nimetamine
+### Nimetamine {#consistency-1}
 
 Kasutage selge, semantilisi nimetusi:
 
@@ -296,11 +296,11 @@ Kasutage selge, semantilisi nimetusi:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skaalati
+### Skaalati {#naming}
 
 (Tähtisus skaalati on täiendav punkt, mida tuleb lisada dokumentatsiooni konteksti järgi.)
 
-### Dokumentatsioon
+### Dokumentatsioon {#scalability}
 
 Dokumenteerige oma disainisüsteemi:
 
@@ -308,9 +308,9 @@ Dokumenteerige oma disainisüsteemi:
 - Millal kasutatakse iga tokenit?
 - Väljemisevab ja piirangud.
 
-## Tavaliselt kasutatavad disainisüsteemi mönakud
+## Tavaliselt kasutatavad disainisüsteemi mönakud {#documentation}
 
-### Modern Minimalist
+### Modern Minimalist {#common-design-system-patterns}
 
 - Sans-serif tipograafia (Inter, Helvetica)
 - Piiratud värvipaletti (2–3 värvi)
@@ -318,7 +318,7 @@ Dokumenteerige oma disainisüsteemi:
 - Subtilsed varjuid
 - Sujuvad, kiireid animatsioonid
 
-### Lõpnev ja sõbralik
+### Lõpnev ja sõbralik {#modern-minimalist}
 
 - Seriff ja sans-serif ühine kasutamine
 - Lõpnev värvipaletti (oranjad, soojad hargraded)
@@ -326,7 +326,7 @@ Dokumenteerige oma disainisüsteemi:
 - Pehme varjud
 - Leppevad animatsioonid
 
-### Professionaalne korporatiivne
+### Professionaalne korporatiivne {#warm-and-friendly}
 
 - Pruuduline sans-serif (Roboto, Open Sans)
 - Neutraalne paletti aktsentvärviga
@@ -334,7 +334,7 @@ Dokumenteerige oma disainisüsteemi:
 - Minimalist varju
 - Subtilsed üleminevad
 
-### Kreatiivne ja vaimav
+### Kreatiivne ja vaimav {#professional-corporate}
 
 - Esimlik tipograafia
 - Vaimav värvipaletti
@@ -342,7 +342,7 @@ Dokumenteerige oma disainisüsteemi:
 - Tugevad varjud
 - Nähtavad animatsioonid
 
-## Probleemide lahendamine
+## Probleemide lahendamine {#creative-and-bold}
 
 **Minu disainisüsteemi muutusi ei näha**
 - Püristage brauseri kehr (cache)
@@ -360,7 +360,7 @@ Dokumenteerige oma disainisüsteemi:
 - Redige theme.json manuaalselt vanemate väärtuste jaoks
 - Käija oskust uute valikutega
 
-## Järgmine sammud
+## Järgmine sammud {#troubleshooting}
 
 Oma disainisüsteemi definointu pärast:
 

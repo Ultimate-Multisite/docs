@@ -4,13 +4,13 @@ title: Ketso - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Ketso: wu_checkout_order_created
+# Ketso: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 E qala kamora hore odara ya ho phethela theko e bokellwe ka botlalo.
 
 Dikatoloso di ka sebedisa sena ho etsa boingodiso ba bobedi bakeng sa dihlahiswa tse nang le medikologo ya tefiso e ikemetseng.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Dikatoloso di ka sebedisa sena ho etsa boingodiso ba bobedi bakeng sa dihlahiswa
 | $membership | `\WP_Ultimo\Models\Membership` | Boingodiso ba mantlha. |
 | $payment | `\WP_Ultimo\Models\Payment` | Tefo. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.5.0
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) moleng wa 891

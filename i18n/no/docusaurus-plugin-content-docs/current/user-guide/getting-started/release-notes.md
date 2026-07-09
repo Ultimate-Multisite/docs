@@ -3,9 +3,9 @@ title: Versjonsnotater
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Utgivelsesnotater
+# Utgivelsesnotater {#release-notes}
 
-## Versjon 2.13.0 — Utgitt 2026-06-05
+## Versjon 2.13.0 — Utgitt 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nytt: La til støtte for sovereign-tenant for kundekonto, kasse, fakturering, nettsted, faktura, malbytte og domenekartleggingsflyter slik at leietakernettverk kan sende kunder tilbake til hovednettstedet for administrerte handlinger.
 - Nytt: La til kontroller av fornyelseslegitimasjon for gjentakende medlemskap slik at gateways kan deaktivere automatisk fornyelse når en lagret faktureringsavtale, subscription eller vault token mangler.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rettet: Kanttilfeller for medlemskapsfornyelser, visning av utløp og innkreving av betaling unngår nå umiddelbare utløp, krasj eller manglende påkrevde betalinger.
 - Forbedret: WordPress-kompatibilitet er testet opptil 7.0, produksjonsressurser for Vue er bygget på nytt fra npm-kilder, og Cypress end-to-end-dekning tester nå flere flyter for kasse, oppsett, SSO og gateway.
 
-## Versjon 2.12.0 — Utgitt 2026-05-15
+## Versjon 2.12.0 — Utgitt 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nytt: La til Hostinger (hPanel) som en støttet vertsleverandør med integrasjon for domenekartlegging
 - Nytt: Site Exporter håndterer nå importpakker for nettverk for strømlinjeformet gjenoppretting av nettsteder på tvers av nettverket
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rettet: Site Exporter CLI bevarer nå riktig standardvalg av nettverksnettsted
 - Forbedret: Fjernet medfølgende wp-cli fra plugin-pakken, noe som reduserer plugin-størrelsen
 
-## Versjon 2.11.0 — Utgitt 2026-05-11
+## Versjon 2.11.0 — Utgitt 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nytt: Nettstedseksporter pakker nå med en selvstartende `index.php`, slik at ZIP-filen kan installeres på en ny vert uten separat plugin-installasjon.
 - Nytt: Nettverkseksport lar administratorer eksportere alle undernettsteder i ett enkelt arkiv fra administrasjonssiden Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nytt: Redigeringsprogrammet for kasseskjema varsler når et produkt legges til uten at et påkrevd felt er konfigurert.
 - Nytt: Innstillingsfanen for import/eksport beskriver nå tydelig sitt omfang og lenker direkte til Site Export-verktøyet.
 
-## Versjon 2.10.0 — Utgitt 2026-05-05
+## Versjon 2.10.0 — Utgitt 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nytt: PayPal-veiviser for guidet oppsett for manuell inntasting av legitimasjon med OAuth-flaggport for sømløs gateway-konfigurasjon.
 - Nytt: Kundepanel for malbytte redesignet med kort for gjeldende mal, vedvarende rutenett og **Tilbakestill gjeldende mal**-knapp.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rettet: Filtrert SSO-sti respekteres i alle innloggingsflyter.
 - Rettet: Tomme alternativer for nettstedsidentitet bevares ved lagring.
 
-## Versjon 2.9.0 — Utgitt 2026-04-30
+## Versjon 2.9.0 — Utgitt 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nytt: Eksport og import for enkeltnettsted lagt til under **Verktøy > Eksport og import**.
 - Rettet: Eksporterte ZIP-filer leveres nå gjennom et autentisert nedlastingsendepunkt.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rettet: Omvisnings-ID-er normalisert til understreker i nøkler for brukerinnstillinger.
 - Forbedret: ZipArchive brukes nå i stedet for Alchemy/Zippy for bedre kompatibilitet.
 
-## Versjon 2.8.0 — Utgitt 2026-04-29
+## Versjon 2.8.0 — Utgitt 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nytt: Aktiver Jumper-bryter lagt til i Other Options-innstillingsgrensesnittet.
 - Nytt: Statuskolonne lagt til i listetabellen for checkout-skjemaer.

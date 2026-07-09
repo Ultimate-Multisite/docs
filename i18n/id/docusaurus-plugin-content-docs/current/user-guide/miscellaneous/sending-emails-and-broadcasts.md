@@ -3,13 +3,13 @@ title: Mengirim Email dan Siaran
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Mengirim Email dan Broadcast (v2)
+# Mengirim Email dan Broadcast (v2) {#sending-emails-and-broadcasts-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
 Ultimate Multisite dilengkapi dengan fitur yang memungkinkan Anda berkomunikasi dengan pelanggan Anda dengan mengirim email ke pengguna yang ditargetkan atau sekelompok pengguna, serta mengirim pemberitahuan di Dashboard admin mereka untuk menyiarkan pengumuman
 
-## Tambahkan pemberitahuan admin ke Dashboard pelanggan Anda dengan Broadcasts
+## Tambahkan pemberitahuan admin ke Dashboard pelanggan Anda dengan Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Menggunakan fitur broadcast Ultimate Multisite, Anda dapat menambahkan **pemberitahuan admin** ke Dashboard admin subsite pengguna Anda.
 
@@ -51,7 +51,7 @@ Setelah membuat pesan, Anda kemudian dapat menekan tombol **Kirim**.
 
 Dan selesai. Pemberitahuan admin seharusnya langsung muncul di Dashboard pengguna Anda.
 
-## Kirim email kepada pelanggan Anda
+## Kirim email kepada pelanggan Anda {#send-emails-to-your-customers}
 
 Menggunakan fitur broadcast Ultimate Multisite, Anda dapat mengirim email kepada pengguna Anda. Anda memiliki opsi untuk mengirim email hanya kepada pengguna tertentu atau menargetkan grup pengguna tertentu berdasarkan produk atau paket langganan mereka.
 
@@ -81,11 +81,11 @@ Setelah membuat pesan, Anda dapat menekan tombol **Kirim**.
 
 Dan begitulah mudahnya mengirim email kepada pengguna akhir Anda menggunakan fitur broadcast.
 
-## Email sistem
+## Email sistem {#system-emails}
 
 Email sistem di Ultimate Multisite adalah **notifikasi otomatis** yang dikirim oleh sistem setelah tindakan tertentu seperti pendaftaran, pembayaran, pemetaan domain, dll. Email ini dapat diedit atau dimodifikasi dari pengaturan Ultimate Multisite. Fitur ini juga dilengkapi dengan kemampuan yang memungkinkan Anda mereset dan mengimpor pengaturan yang ada dari instalasi Ultimate Multisite lain.
 
-### Mereset & Mengimpor
+### Mereset & Mengimpor {#resetting--importing}
 
 Versi baru Ultimate Multisite, serta add-on, dapat dan akan mendaftarkan email baru dari waktu ke waktu.
 
@@ -93,7 +93,7 @@ Untuk mencegah konflik dan masalah lainnya, **kami tidak akan menambahkan templa
 
 Namun, super admin dan agen dapat mengimpor email yang baru terdaftar ini melalui alat pengimpor. Proses tersebut akan membuat email sistem baru dengan konten dan konfigurasi templat email baru, memungkinkan super admin melakukan modifikasi apa pun yang mereka inginkan atau mempertahankannya apa adanya.
 
-#### Cara mengimpor email sistem
+#### Cara mengimpor email sistem {#how-to-import-system-emails}
 
 Buka halaman Pengaturan Ultimate Multisite Anda dan menuju ke tab **Emails**.
 
@@ -111,7 +111,7 @@ Kemudian, Anda dapat mengalihkan opsi Import Emails untuk melihat email sistem m
 
 <!-- Screenshot unavailable: modal Reset dan Import dengan opsi Import Emails diperluas -->
 
-#### Mereset Email Sistem
+#### Mereset Email Sistem {#reseting-system-emails}
 
 Di lain waktu, Anda akan menyadari bahwa perubahan yang Anda buat pada template email tertentu tidak lagi sesuai untuk Anda dan Anda ingin meresetnya ke **keadaan default**.
 

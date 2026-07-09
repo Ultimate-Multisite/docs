@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# マルチテナンシー
+# マルチテナンシー {#multi-tenancy}
 
 パフォーマンスとセキュリティのために、サブサイトをサーバーとデータベースに分散します
 
-## バージョン 1.2.0 リリースの注目点
+## バージョン 1.2.0 リリースの注目点 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 は、本番環境の分離ワークフロー向けに主権テナント基盤を追加します。
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 は、本番環境の分離ワークフロー向けに主権
 
 [主権移行ワークフロー](/user-guide/getting-started/sovereign-migration-workflow)、[マルチテナンシー分離](/user-guide/configuration/multi-tenancy-isolation)、[主権テナント運用](/user-guide/administration/sovereign-tenant-operations)のユーザーガイドを参照してください。
 
-## 要件
+## 要件 {#requirements}
 
 - WordPress 5.3 以上
 - PHP 7.4 以上
 - Multisite Ultimate plugin（有効）
 
-## インストール
+## インストール {#installation}
 
 1. アドオンファイルを `/wp-content/plugins/` ディレクトリにアップロードします
 2. WordPress の「Plugins」メニューから plugin を有効化します
 3. ネットワーク管理画面でアドオン設定を構成します
 
-## 開発
+## 開発 {#development}
 
-### セットアップ
+### セットアップ {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### プロジェクト構造
+### プロジェクト構造 {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # コード近代化ルール
 ```
 
-### テスト
+### テスト {#testing}
 
 このアドオンには包括的なテストフレームワークが含まれます。
 
@@ -93,54 +93,54 @@ ultimate-multisite-addon-template/
 - **テストカバレッジ**: コードカバレッジを追跡するように設定済み
 - **Multisite テスト**: テストは Multisite 環境で実行
 
-### コード標準
+### コード標準 {#code-standards}
 
 - **WordPress コーディング標準**: PHPCS により適用
 - **PHP 7.4+ 互換性**: 最新の PHP 機能をサポート
 - **静的解析**: 型チェックのための PHPStan 統合
 - **コード近代化**: PHP アップグレード向けの Rector ルール
 
-### ビルドシステム
+### ビルドシステム {#build-system}
 
 - **アセット処理**: CSS/JS ファイルの圧縮
 - **翻訳**: POT ファイル生成
 - **パッケージ化**: 配布用アーカイブ作成
 - **開発モード**: デバッグ用の未圧縮アセット
 
-## 設定
+## 設定 {#configuration}
 
 このアドオンは、ネットワーク管理画面から利用できるさまざまな設定オプションをサポートします。
 
-### 主権テナント設定
+### 主権テナント設定 {#sovereign-tenant-configuration}
 
 主権テナントでは、トラフィックをテナントにルーティングする前に、テナントデータベース、ファイルシステムルート、データベースホストバインディング、ホスト機能を設定します。データベース認証情報、ホストバインディング、ルーティング、ユーザープロビジョニングに影響する変更を行うたびに、移行検証を実行してください。
 
 テナント実行環境とデータベース権限がローカルソケットまたは同一マシンアクセスを想定している場合にのみ、`localhost` を使用してください。プロバイダーが設定した権限ホストがそれである場合は、`127.0.0.1` またはサービスホスト名を使用してください。
 
-### Hostinger 機能
+### Hostinger 機能 {#hostinger-capability}
 
 Hostinger マルチテナンシー機能は、共有 Hostinger 統合トークンと連携します。検証前に、ドメインが hPanel に存在し、DNS が Hostinger アカウントを指し、テナントデータベース設定が hPanel と一致していることを確認してください。
 
-## フックとフィルター
+## フックとフィルター {#hooks-and-filters}
 
-### アクション
+### アクション {#actions}
 
 - `ultimate-multisite-addon-template_init` - アドオン初期化後に実行
 - `ultimate-multisite-addon-template_loaded` - すべてのアドオンファイルが読み込まれた後に実行
 
-### フィルター
+### フィルター {#filters}
 
 - `ultimate-multisite-addon-template_settings` - アドオン設定を変更
 - `ultimate-multisite-addon-template_enabled` - アドオンの有効化/無効化状態を上書き
 
-## ライセンス
+## ライセンス {#license}
 
 このアドオンは GPL v3 以降のライセンスで提供されます。
 
-## サポート
+## サポート {#support}
 
 サポートとドキュメントについては、[MultisiteUltimate.com](https://multisiteultimate.com) をご覧ください
-## 変更履歴
+## 変更履歴 {#changelog}
 
 - バージョン 1.2.0 (2026-06-03): ステートレスなテナント自動ログイン、Hostinger マルチテナンシー機能、サブサイトごとのデータベースとファイルシステム分離、主権移行検証ゲート、テナントブートストラップ/データベースライターの改善、設定可能な MySQL ホストバインディング、より安全な主権テナント解体を追加。
 

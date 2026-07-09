@@ -3,7 +3,7 @@ title: Zapier ایله Account قئید ائدین
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Zapier ایله بیر Account قئید ائتمک
+# Event: Zapier ایله بیر Account قئید ائتمک {#event-register-an-account-via-zapier}
 
 [Ultimate Multisite-ی Zapier ایله بیرلشدیرمک](zapier.md) مقاله‌سینده، تریگرلر و اؤزَل اولایلار اساسېندا Ultimate Multisite ایچینده فرقلی عملیاتی Zapier ایله نئجه یئریینه یئتیریمکدن دانیشدیق. بو مقاله‌ده، 3rd party اویقولامالاری نئجه بیرلشدیره بیله‌جه‌یینیزی گؤسترجه‌ییک. بیلگی قایناقې کیمی Google Sheets ایشلده‌جه‌ییک و بیلگیلری Ultimate Multisite-ه گؤندریپ بیر Account قئید ائده‌جه‌ییک.
 

@@ -4,20 +4,20 @@ title: Tātari - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Tātari: wu_password_require_special
+# Tātari: wu_password_require_special {#filter-wupasswordrequirespecial}
 
 Tātari mēnā me whakahau kia whai pūāhua motuhake ngā kupuhipa.
 
-## Tawhā
+## Tawhā {#parameters}
 
 | Ingoa | Momo | Whakaahuatanga |
 |------|------|-------------|
 | $require | `bool` | Mēnā me whakahau ngā pūāhua motuhake. Taunoa ki te true ina whakaūngia ngā ture. |
 | $defender_active | `bool` | Mēnā kei te hohe a Defender Pro Strong Password. |
 
-### Mai i
+### Mai i {#since}
 
 - 2.4.0
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia i [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L583) i te rārangi 583

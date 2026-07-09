@@ -3,11 +3,11 @@ title: Вебхуктарды иштетүү
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook иштетүү
+# Webhook иштетүү {#webhook-handling}
 
 Тышкы кызматтардан окуяларды алуу жана дайындарды Ultimate Multisite менен шайкештештирүү үчүн ыңгайлаштырылган webhook акыркы чекиттерин түзүңүз.
 
-## Ыңгайлаштырылган Webhook акыркы чекити
+## Ыңгайлаштырылган Webhook акыркы чекити {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Коопсуздук жагдайлары
+## Коопсуздук жагдайлары {#security-considerations}
 
 - Webhook колтамгаларын HMAC же жалпы сыр аркылуу ар дайым текшериңиз
 - REST маршрутуңузда `permission_callback` колдонуңуз — production чөйрөсүндө аны эч качан `__return_true` кылып койбоңуз

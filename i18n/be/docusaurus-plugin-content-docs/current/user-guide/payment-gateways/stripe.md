@@ -3,19 +3,19 @@ title: Наладванне Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Наладка шлюзу Stripe (v2)
+# Наладка шлюзу Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ВАЖНАЕ ПРАМІТЫ:** Гэты артыкул адносітся да версіі Ultimate Multisite 2.x._
 
 На нашый адканняўцы плацёжных настаўленняў вы можаце актываваць даў канчатковаў чатыро метады плацёжа: Stripe, Stripe Checkout, PayPal і Ручны. У гэтым артыкуле мы пакажам, як інтэграваць з **Stripe**.
 
-## Актывацыя Stripe
+## Актывацыя Stripe {#enabling-stripe}
 
 Каб актываваць Stripe як даступны плацёжны шлюз на вашай сетцы, зайдзіце на **Ultimate Multisite > Settings > Payments** і ўключыце перамычку побач з **Stripe** або **Stripe Checkout** у раздзеле Active Payment Gateways.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Гэты метад пакажа месца для ўвод страўцы каросцэнніка.
 
@@ -47,7 +47,7 @@ _**Заўвага:** вы можаце актываваць **Sandbox mode**, к
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Наладка Webhook Stripe
+## Наладка Webhook Stripe {#setting-up-stripe-webhook}
 
 Stripe адпраўляе Webhook паведамленні, якія паведамляюць Ultimate Multisite ў любы момант, калі адбываецца падбыццё на **вашым кант па Stripe**.
 

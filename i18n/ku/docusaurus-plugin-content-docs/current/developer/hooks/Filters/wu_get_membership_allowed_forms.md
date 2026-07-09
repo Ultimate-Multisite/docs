@@ -4,16 +4,16 @@ title: Parzûn - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Filter: wu_get_membership_allowed_forms
+# Filter: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
 
 Destûrê dide pêşveberan ku slugên formê yên nû lê zêde bikin da ku ev tevger derbas bikin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Şirove |
 |------|------|-------------|
 | $slugs | `array` | lîsteyek ji slugên formê ji bo derbaskirinê. |
 
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/ui/class-checkout-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-checkout-element.php#L409) de li rêza 409 hatiye pênasekirin.

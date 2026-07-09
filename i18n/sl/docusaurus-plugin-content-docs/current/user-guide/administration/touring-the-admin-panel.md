@@ -3,11 +3,11 @@ title: Prehod po admin panelu
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Pregled admin panela
+# Pregled admin panela {#touring-the-admin-panel}
 
 Ultimate Multisite ima za cilj biti čim bolj preprosto in samopojasnilo, vendar z takšno močno orodjem lahko pomaga pri usmerjenem ogledu. Pojdemo skozi admin strani, da vam pomagamo se ustaviti.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 **Dashboard** Ultimate Multisite prikazuje osnovne poročila in analitike, vključno s prihodki, dejavnostmi spletnih strani, rastom članov, številom obiskovalcev in geografskimi podatki.
 
@@ -25,61 +25,61 @@ Tukaj je tudi celoten prikaz omrežnega dashboarda:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Checkout Forms {#checkout-forms}
 
 **Checkout Forms** vam dajejo fleksibilnost za ustvarjanje prilagojen strani za registracijo. Lahko prilagodite polja, vstavite lastne klase in skripte ter omejite dostop na podlagi države ali lokacije obiskovalcev.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Produkte
+## Produkte {#products}
 
 Razdelek **Products** je mesto kjer ustvarjate različne načrte, pakete in storitve za vaše omrežje. Določite cene, frekvenco računanja ter omejitve in kvote na ravni izdelka.
 
 ![Products list](/img/admin/products-list.png)
 
-## Članstva
+## Članstva {#memberships}
 
 Stranica **Memberships** prikazuje vse pretplate v vašem omrežju. Pregledajte in uredite podatke o pretplavi, vključno z načrti, izdelki, količinami računanja in frekvencijo, historijo plačil ter časovnimi oznakami.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Plačbe
+## Plačbe {#payments}
 
 Stranje stran **Payments** vam daje hitro pregled historije plačil na vseh svojih omrežjih, z podrobnimi informacijami o transakcijah, vključno s specifičnimi izdelki in zneskoma.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Klicovalci (Customers)
+## Klicovalci (Customers) {#customers}
 
 Stranica **Customers** prikazuje vse članice, ki so se registrirale v vašem omrežju, z osnovnimi podatki o uporabniku, vključno s imenom, e-poštno naslovom, zadnjo uporabo in povezavo "preklopi na" za prijavu na njihovo podstranico.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Straniki (Sites)
+## Straniki (Sites) {#sites}
 
 Stranica **Sites** navaja vse podstranice v vašem omrežju, vključno s šabloni stran in strankami lastnimi strani. Lahko upravljajte mapirane domene, omejitve in kvote, pluginove in teme ter miniaturo stran.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domena (Domains)
+## Domena (Domains) {#domains}
 
 Stranica **Domains** je namenjena prilagojenim domenama, ki so mapirani na podstranice. Kot super admin lahko ručno dodate ali mapirate prilagojene imena domen in pregledate DNS podatke in log.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Koda za popust (Discount Codes)
+## Koda za popust (Discount Codes) {#discount-codes}
 
 **Discount Codes** vam omogočajo ustvarjanje kuponov, ki lahko ponudite svoje končni uporabnikom. Določite vrednost popusta in ciljajte na določene uporabnike ali skupine.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Obvestila (Broadcasts)
+## Obvestila (Broadcasts) {#broadcasts}
 
 **Broadcasts** je orodje za razširjanje obvestil ali poslanje zasebnih sporočil uporabnikom vaše podstranice. Ciljajte specifične skupine uporabnikov na podlagi načrta ali izdelka, ki ga imajo.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Nastavitve (Settings)
+## Nastavitve (Settings) {#settings}
 
 Stranica **Settings** je mesto kjer konfigurirate Ultimate Multisite — nastavitve registracije, plačevanja, API in webhooks, mapiranje domen in druge integracije.
 
@@ -109,13 +109,13 @@ In stran za nastavitve spletnikov (sites):
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Dogodki (Events)
+## Dogodki (Events) {#events}
 
 Stran **Dogodki** ohranja zapis vseh dogodkov in logov v vašeta omrežje. Predvajajo aktivnosti kot spremembe načrtov, registracije in druge premike — uporabno za nadzor vašega multisite.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooki (Webhooks)
+## Webhooki (Webhooks) {#webhooks}
 
 **Webhooki** vam omogočajo prenos podatkov v drugo aplikacijo. Uporno za pošiljanje podatkov iz Ultimate Multisite na platforme kot so Zapier.
 

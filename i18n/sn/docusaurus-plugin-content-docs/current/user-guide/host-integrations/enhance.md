@@ -3,32 +3,32 @@ title: Chingira Kufamba neKupatsanana kweControl Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kufamba Kuenzanisa Control Panel
+# Kufamba Kuenzanisa Control Panel {#enhance-control-panel-integration}
 
-## Zvinoreva
+## Zvinoreva {#overview}
 Enhance ndiyo control panel yakakwana inosimbisa zvinokosha dze hosting uye management. Izvi zvinhu zvinoita kuti domain syncing (kugadzirisa domain) uye SSL certificate management zvizere zvichitonga pakati pe Ultimate Multisite ne Enhance Control Panel.
 
 **Kufamba Kwemabasa:** Ongore [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) kuti uve nechinangwa chekugona kune zvinhu zvakawanda nemapurovedzisi ekurudzira.
 
-## Zvinoreva
+## Zvinoreva {#features}
 - Domain syncing yakazara kana domain dziri kuonekwa (mapped) mu Ultimate Multisite
 - SSL certificate provisioning yakazara nekubatsirwa neLetsEncrypt kana DNS inogadzirisa
 - Subdomain support kune networks dziri kuenda mwoyo we subdomain mode
 - Kuondedza domain kana mappings dzakachengetedzwa
 
-## Zvinoda Kufamba (Requirements)
+## Zvinoda Kufamba (Requirements) {#requirements}
 
-### Zvinoda Kune System
+### Zvinoda Kune System {#system-requirements}
 - Enhance Control Panel yakaiswa uye inogona kuonekwa (accessible)
 - WordPress Multisite installation inosimbiswa kana inosimbiswa ne server ya Enhance
 - Apache web server (Enhance inogona kudzidzisa Apache configurations; LiteSpeed Enterprise inogona kuonekwa nekuvaka zvakanyanya)
 
-### Access Kune API
+### Access Kune API {#api-access}
 Unofanira kuva neaccess ye administrator kune Enhance Control Panel kuti uwe API tokens.
 
-## Kuva NeAPI Credentials Yao
+## Kuva NeAPI Credentials Yao {#getting-your-api-credentials}
 
-### 1. Kuratidza API Token
+### 1. Kuratidza API Token {#1-create-an-api-token}
 
 1. Ingore (Log in) kune Enhance Control Panel yako seadministrator
 2. Chibvumira **Settings** mu navigation menu
@@ -44,7 +44,7 @@ Unofanira kuva neaccess ye administrator kune Enhance Control Panel kuti uwe API
 
 Apashe chakanaka, **Access Token** yako uye **Organization ID** dzachazobva kuoneka. **Save izvi zvakare** nekuti token ichazowoneka panguva yakare chete.
 
-### 2. Kuva NeOrganization ID Yako
+### 2. Kuva NeOrganization ID Yako {#2-get-your-organization-id}
 
 Organization ID inogoneka pane kurumbira kwenye Access Tokens page mu box yechinyorwa "Org ID: {your_id}" inochinjika.
 
@@ -55,7 +55,7 @@ Unogona kutaura Organization ID ya munhu nekuti:
 2.Chibvumira **Manage customer** panguva unenge uri munhu iye
 3.Ongorora URL - Organization ID inosvika pamusoro pe `/customers/`
 
-### 3. Kuva NeServer ID Yako
+### 3. Kuva NeServer ID Yako {#3-get-your-server-id}
 
 Kuti utore Server ID yako (unoda kuti ubatane nemurimo we domain):
 
@@ -73,7 +73,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID inogona kuoneka panguva yakare chete (UUID format): `00000000-0000-0000-0000-000000000000`
 
-### 4. Kuva NeAPI URL Yako
+### 4. Kuva NeAPI URL Yako {#4-get-your-api-url}
 
 API URL yako inosanganisira URL ya Enhance Control Panel yako ne `/api/`:
 
@@ -85,9 +85,9 @@ https://your-enhance-panel.com/api/
 - Kutenda domain chete pane /api/
 - Kutenda HTTP kunoita HTTPS (HTTPS inoda kuti ubatane nemurimo)
 
-## Configuration
+## Configuration {#configuration}
 
-### Constants Zvinoda Kuva
+### Constants Zvinoda Kuva {#required-constants}
 
 Chingira constants izvi mu file yako `wp-config.php`:
 
@@ -96,7 +96,7 @@ define('WU_ENHANCE_API_TOKEN', 'your-bearer-token-here');
 define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 
-### Setup kupiwo Integration Wizard
+### Setup kupiwo Integration Wizard {#setup-via-integration-wizard}
 
 1. Mu WordPress admin, ndirira ku **Ultimate Multisite** > **Settings**
 2. Dira ku tab ya **Integrations**
@@ -111,17 +111,17 @@ Unogona kuita iye:
 - Kuramba wizard inyira constants dzako mu file yako ya `wp-config.php` nekuti zvinhu zvinoreva (inject the constants into your `wp-config.php` file automatically)
 - Kuramba kurisa definitions dzemakosha uye kuita iye manually
 
-## Configuration yakatorerwa yechipfundo (Additional WordPress Configuration)
+## Configuration yakatorerwa yechipfundo (Additional WordPress Configuration) {#additional-wordpress-configuration}
 
 Kutiri kubva pa feedback ye vanhu vachikumbira ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), unogona kuitira configuration yese iyi:
 
-### Configuration ya .htaccess
+### Configuration ya .htaccess {#htaccess-configuration}
 
 Kana uri kuona matambudziko nekugadzirisa domain (domain mapping):
 1. Dihira file original Enhance `.htaccess`
 2. Ririre nefile standard WordPress Multisite `.htaccess`
 
-### Constants dzemakokoto (Cookie Constants)
+### Constants dzemakokoto (Cookie Constants) {#cookie-constants}
 
 Shandisa constants iyi mu `wp-config.php` kuti urobeure cookie zvakanaka pakati pe domains dzakagadzirwa:
 
@@ -131,9 +131,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Izvi zvinoreva sei (How It Works)
+## Izvi zvinoreva sei (How It Works) {#how-it-works}
 
-### Kana Domain Inogadzirwa (When a Domain is Mapped)
+### Kana Domain Inogadzirwa (When a Domain is Mapped) {#when-a-domain-is-mapped}
 
 1. Mwana anogona mapa domain wako wakanaka (custom domain) mu Ultimate Multisite (kana kana unyaya wechinyorwa mune subdomain mode).
 2. Integration inenge inenge POST request ku Enhance API: `/servers/{server_id}/domains`.
@@ -141,14 +141,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Kana DNS inenge inenge yakaona server yako, Enhance inenge inenge SSL certificate inenge inenge via LetsEncrypt.
 5. Idomain inenge inenge yakabva kuseka neHTTPS.
 
-### Kana Domain Inenge Inenge Iremwa (When a Domain is Removed)
+### Kana Domain Inenge Inenge Iremwa (When a Domain is Removed) {#when-a-domain-is-removed}
 
 1. Mapping ye domain inenge inenge irimwa mu Ultimate Multisite.
 2. Integration inenge inenge inenge iDomain ID ku Enhance kuti ibone.
 3. DELETE request inenge inenge inenge inenge ku: `/servers/{server_id}/domains/{domain_id}`.
 4. Enhance inenge inenge iDomain ineya ku server configuration yako.
 
-### Kuona DNS neSSL Checking (DNS and SSL Checking)
+### Kuona DNS neSSL Checking (DNS and SSL Checking) {#dns-and-ssl-checking}
 
 Ultimate Multisite inenge inenge inenge kune checking ye DNS neSSL:
 - Unogona ku configure check interval mu **Domain Mapping Settings** (default: 300 seconds/5 minutes).
@@ -156,9 +156,9 @@ Ultimate Multisite inenge inenge inenge kune checking ye DNS neSSL:
 - Validity ye SSL certificate inenge inenge inenge yakaona nekugutsa.
 - Enhance inenge inenge inenge inenge SSL provisioning, pane haunenge kune configuration ya SSL manual.
 
-## Kuona Setup (Verifying Setup)
+## Kuona Setup (Verifying Setup) {#verifying-setup}
 
-### Kuti Unge Test Connection (Test the Connection)
+### Kuti Unge Test Connection (Test the Connection) {#test-the-connection}
 
 1. Mu Integration Wizard, unenge use step we **Test Connection**.
 2. Plugin inenge inenge inenge inenge ku list domains pa server yako.
@@ -168,7 +168,7 @@ Ultimate Multisite inenge inenge inenge kune checking ye DNS neSSL:
    - Server ID inenge inenge inenge yakanaka (is valid)
    - Permissions inenge inenge inenge zvinenge zvinenge zvinenge zvinhu zvakakosha (are properly set).
 
-### Pasi Kubva NeMapping Domain (After Mapping a Domain)
+### Pasi Kubva NeMapping Domain (After Mapping a Domain) {#after-mapping-a-domain}
 
 1. Map domain yakatitso mu Ultimate Multisite.
 2. Check logs ye Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**).
@@ -177,9 +177,9 @@ Ultimate Multisite inenge inenge inenge kune checking ye DNS neSSL:
    - IDomain yakatitso inenge inenge inenge yakabva kune list.
 4. Kana DNS inenge inenge inenge yakabva, verify SSL inenge inenge inenge yakaedza:
 
-## Kutirozo (Troubleshooting)
+## Kutirozo (Troubleshooting) {#troubleshooting}
 
-### Matambudziko ekugadzirisa API Connection
+### Matambudziko ekugadzirisa API Connection {#api-connection-issues}
 
 **Error: "Failed to connect to Enhance API"**
 - Chireve kuti `WU_ENHANCE_API_URL` inenge inosanganisira `/api/` kuendapo.
@@ -197,7 +197,7 @@ Ultimate Multisite inenge inenge inenge kune checking ye DNS neSSL:
 - Chireve kuti Server ID inenge iwe UUID inoshandiswa zvakanaka.
 - Chireve kuti server iyi ine ku Enhance panelu yako.
 
-### Domain Haunenge Akatsanana (Not Added)
+### Domain Haunenge Akatsanana (Not Added) {#domain-not-added}
 
 **Chireve logs:**
 1.enda ku **Ultimate Multisite** > **Logs**
@@ -210,7 +210,7 @@ Ultimate Multisite inenge inenge inenge kune checking ye DNS neSSL:
 - Permissions dzakapiwa API dzinobva kune System Administrator (ensure token has System Administrator role).
 - Server ID haunenge uine server wako wemakore mu Enhance.
 
-### Matambudziko ekuti SSL Inenge Isanganisirwa (SSL Certificate Issues)
+### Matambudziko ekuti SSL Inenge Isanganisirwa (SSL Certificate Issues) {#ssl-certificate-issues}
 
 **SSL haunenge isanganisirwa:**
 - Chireve kuti DNS inosanganisira ku IP address ya server yako.
@@ -224,7 +224,7 @@ Ultimate Multisite inenge inenge inenge kune checking ye DNS neSSL:
 2. Kuratidza domain yako uye chireve status ya SSL yake.
 3. Unogona kuteerera isanganisirwa SSL kana unoda.
 
-### DNS Check Interval
+### DNS Check Interval {#dns-check-interval}
 
 Kana zvinodiwa kana domain dziri kana SSL certificates dzinotora nguva yakawanda kuti dzichireta:
 1. Ndosvika pakati **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -232,7 +232,7 @@ Kana zvinodiwa kana domain dziri kana SSL certificates dzinotora nguva yakawanda
 3. Ramba isingabatana ne default 300 seconds, ramba iwe zvinhu zvakasiyi (minimum: 10 seconds)
 4. **Chii:** Intervals dzinotsvaga dziri kuita checks dzakawanda asi dzichipa server load yakawanda
 
-### Matambudziko ekutambudzika kweAuthentication (Authentication Errors)
+### Matambudziko ekutambudzika kweAuthentication (Authentication Errors) {#authentication-errors}
 
 **HTTP 401/403 errors:**
 - Rerega API token yako mu Enhance
@@ -240,7 +240,7 @@ Kana zvinodiwa kana domain dziri kana SSL certificates dzinotora nguva yakawanda
 - Simbisa kuti token haunenge inenge yakadzedzera (expired)
 - Simbisa kuti unenge unogona kuita Organization ID yakakodzera (though it's typically not required in the URL)
 
-### Kufamba neLog Analysis (Log Analysis)
+### Kufamba neLog Analysis (Log Analysis) {#log-analysis}
 
 Chirudzirwa kudzidza logs dzakawanda:
 ```php
@@ -254,15 +254,15 @@ Zvakanaka, simbisa logs panguva izvi:
 - WordPress debug log: `wp-content/debug.log`
 - Enhance panel logs: Zvinogona kuoneka mu admin interface ya Enhance
 
-## API Reference (Rupiro reAPI)
+## API Reference (Rupiro reAPI) {#api-reference}
 
-### Authentication
+### Authentication {#authentication}
 Mazuva onozivawe weAPI onoshandisa Bearer token authentication:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Endpoints dzakasiyana dzinoshwa
+### Endpoints dzakasiyana dzinoshwa {#common-endpoints-used}
 
 **Kutanga Servers:**
 ```
@@ -285,30 +285,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### API Documentation Yese (Full API Documentation)
+### API Documentation Yese (Full API Documentation) {#full-api-documentation}
 API documentation yese: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Best Practices (Zvinoreva Zvinhu Zvinoreva)
+## Best Practices (Zvinoreva Zvinhu Zvinoreva) {#best-practices}
 
-### Security
+### Security {#security}
 - **Hapana kuta API tokens kuita version control** (Never commit API tokens to version control)
 - Store tokens mu `wp-config.php` inozvire, uye inofanira kuva panguva isingazviitwa Git (Store tokens in `wp-config.php` which should be excluded from Git)
 - Shandisa tokens nekuvimbiso zvakodzera (System Administrator kuti uve neintegration yakare) (Use tokens with appropriate permissions (System Administrator for full integration))
 - Tsvira mazuva ekupedzisira (expiry dates) kwetokens dzinogona kuita production environments (Set token expiry dates for production environments)
 - Rereta tokens zvakare (Rotate tokens periodically)
 
-### Performance
+### Performance {#performance}
 - Shandisa interval ya DNS check inotarisirwa (300 seconds) kuti usina kuta API calls zvinokurudzira (Use the default DNS check interval (300 seconds) to avoid excessive API calls)
 - Funga zvinhu zveEnhance server kana munenge uchitenderera mari yakawanda dzinogona kuita domain operations (Monitor Enhance server resources when running large-scale domain operations)
 - Rururura kuita domain additions kana unenge uchitenderera domain dzakawanda kumashure (Consider staggering domain additions if mapping many domains at once)
 
-### Monitoring
+### Monitoring {#monitoring}
 - Kururura zvakare Ultimate Multisite logs kuti usina matambudziko ekintegration (Regularly check Ultimate Multisite logs for integration errors)
 - Tsvira monitoring kuita domain additions dzinofamba (Set up monitoring for failed domain additions)
 - Tsanidza SSL certificates dzine kuta zvakanaka (Verify SSL certificates are provisioning correctly)
 - Kururura mari yaEnhance server uye limits dzeno domain (Keep an eye on Enhance server capacity and domain limits)
 
-## Additional Resources
+## Additional Resources {#additional-resources}
 
 - **Documentation ya Enhace:** [https://enhance.com/docs](https://enhance.com/docs)
 - **API Documentation ya Enhace:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -316,7 +316,7 @@ API documentation yese: [https://apidocs.enhance.com](https://apidocs.enhance.co
 - **GitHub Discussion:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Guide ya Ultimate Multisite Domain Mapping:** Shandisa wiki page "How to Configure Domain Mapping v2"
 
-## Support
+## Support {#support}
 
 Kana uchitambudzika:
 1. Kururura Troubleshooting section yakare (Check the Troubleshooting section above)
@@ -325,7 +325,7 @@ Kana uchitambudzika:
 4. Riramba neEnhance support kuti vashandise issues dzine kuita panel (Contact Enhance support for panel-specific issues)
 5. Tsvira discussion yepamusoro neerror logs dzine zvinobatsira community
 
-## Notes
+## Notes {#notes}
 
 Iyiwe, iye zvinotevera:
 

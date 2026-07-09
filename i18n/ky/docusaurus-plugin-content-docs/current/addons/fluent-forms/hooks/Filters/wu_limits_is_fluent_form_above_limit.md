@@ -4,11 +4,11 @@ title: Чыпка - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit
+# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
 
 Берилген форма түрү бул планда уруксат берилгенин текшерет Plugin иштеп чыгуучуларына кайтарылган маанини чыпкалоого уруксат берет
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,10 +17,10 @@ _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 | $form_count | `int` | Учурдагы форма саны |
 | $quota | `int` | Уруксат берилген квота |
 
-### Баштап
+### Баштап {#since}
 
 - 1.0.0
-### Булак
+### Булак {#source}
 
 - [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L56) ичинде 56-сапта аныкталган
 - [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L89) ичинде 89-сапта аныкталган

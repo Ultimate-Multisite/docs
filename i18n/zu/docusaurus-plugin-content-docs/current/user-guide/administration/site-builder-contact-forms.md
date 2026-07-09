@@ -3,11 +3,11 @@ title: Amafomu Okuxhumana Omakhi Wesayithi
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Amafomu Okuxhumana Omakhi Wesayithi
+# Amafomu Okuxhumana Omakhi Wesayithi {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 yengeza ikhono lokudala amafomu okuxhumana ngokuqondile kusixhumi sengxoxo usebenzisa i-agent Yomakhi Wesayithi. Lokhu kukuvumela ukuthi ungeze amafomu okuxhumana asebenza ngokugcwele kunoma yiliphi ikhasi ngaphandle kokushiya ingxoxo.
 
-## Uhlolojikelele
+## Uhlolojikelele {#overview}
 
 Ikhono lefomu lokuxhumana Lomakhi Wesayithi (`create_contact_form`) lithola ngokuzenzakalelayo i-plugin yefomu oyifakile bese lidala ifomu lokuxhumana lisebenzisa amakhono emvelo aleyo plugin. Ama-plugin amafomu asekelwayo afaka:
 
@@ -18,7 +18,7 @@ Ikhono lefomu lokuxhumana Lomakhi Wesayithi (`create_contact_form`) lithola ngok
 
 Umsizi ukhetha ngokuzenzakalelayo i-plugin yefomu engcono kakhulu etholakalayo kusayithi lakho bese ukhiqiza ifomu lokuxhumana elenzelwe leyo plugin.
 
-## Ukudala Ifomu Lokuxhumana
+## Ukudala Ifomu Lokuxhumana {#creating-a-contact-form}
 
 Ukuze udale ifomu lokuxhumana usebenzisa Umakhi Wesayithi:
 
@@ -34,7 +34,7 @@ Ukuze udale ifomu lokuxhumana usebenzisa Umakhi Wesayithi:
 
 4. Umakhi Wesayithi uzokhiqiza ifomu lokuxhumana futhi abuyise i-shortcode esilungele ukufakwa.
 
-## Ukusebenzisa I-shortcode Ekhiqiziwe
+## Ukusebenzisa I-shortcode Ekhiqiziwe {#using-the-generated-shortcode}
 
 Ngemva kokuba Umakhi Wesayithi edale ifomu lokuxhumana, ubuyisa i-shortcode (isibonelo, `[contact-form-7 id="123"]`). Ungakwazi:
 
@@ -45,11 +45,11 @@ Ngemva kokuba Umakhi Wesayithi edale ifomu lokuxhumana, ubuyisa i-shortcode (isi
 
 3. **Ukulisebenzisa ku-template** — Uma ukhululekile nge-PHP, ungangeza i-shortcode kufayela le-template yetimu.
 
-## Ukwenza Ifomu Lokuxhumana Lifanelane Nezidingo
+## Ukwenza Ifomu Lokuxhumana Lifanelane Nezidingo {#customizing-the-contact-form}
 
 Ngemva kokuba Umakhi Wesayithi edale ifomu lokuxhumana, ungalenza lifanelane nezidingo zakho ngokwengeziwe:
 
-### Ngosixhumi Sengxoxo
+### Ngosixhumi Sengxoxo {#via-the-chat-interface}
 
 Cela Umakhi Wesayithi ukuthi aguqule ifomu:
 
@@ -57,7 +57,7 @@ Cela Umakhi Wesayithi ukuthi aguqule ifomu:
 
 Umakhi Wesayithi uzobuyekeza ifomu futhi abuyise i-shortcode ebuyekeziwe.
 
-### Ngesixhumi Somphathi Se-plugin Yefomu
+### Ngesixhumi Somphathi Se-plugin Yefomu {#via-the-form-plugins-admin-interface}
 
 Ungakwazi futhi ukwenza ifomu lifanelane nezidingo zakho ngokuqondile kuzilungiselelo ze-plugin yakho yefomu:
 
@@ -65,7 +65,7 @@ Ungakwazi futhi ukwenza ifomu lifanelane nezidingo zakho ngokuqondile kuzilungis
 2. Thola ifomu elidalwe Umakhi Wesayithi.
 3. Hlela izinkambu zefomu, imithetho yokuqinisekisa, nezaziso ze-email njengoba kudingeka.
 
-## Ama-plugin Amafomu Nokuhambisana
+## Ama-plugin Amafomu Nokuhambisana {#form-plugins-and-compatibility}
 
 Umakhi Wesayithi uthola ngokuzenzakalelayo ukuthi iyiphi i-plugin yefomu efakiwe kusayithi lakho bese eyisebenzisa ukudala ifomu lokuxhumana. Uma kufakwe ama-plugin amafomu amaningi, Umakhi Wesayithi uwabeka phambili ngalolu hlelo:
 
@@ -76,7 +76,7 @@ Umakhi Wesayithi uthola ngokuzenzakalelayo ukuthi iyiphi i-plugin yefomu efakiwe
 
 Uma kungekho neyodwa kulawa ma-plugin efakiwe, Umakhi Wesayithi uzoncoma ukufaka eyodwa ngaphambi kokudala ifomu lokuxhumana.
 
-## Izaziso Ze-email
+## Izaziso Ze-email {#email-notifications}
 
 Amafomu okuxhumana adalwe Umakhi Wesayithi ahlelwe ukuthi athumele izaziso ze-email kumphathi wesayithi ngokuzenzakalelayo. Ungenza ikheli le-email lomamukeli nomlayezo wesaziso kufanelane nezidingo zakho:
 
@@ -91,21 +91,21 @@ Ukuze uthole imiyalelo enemininingwane, bheka amadokhumenti e-plugin yakho yefom
 - [Izaziso Ze-email ze-Fluent Forms](https://fluentforms.com/docs/)
 - [Izaziso Ze-email ze-Gravity Forms](https://docs.gravityforms.com/)
 
-## Izibonelo Zezimo Zokusetshenziswa
+## Izibonelo Zezimo Zokusetshenziswa {#example-use-cases}
 
-### Ifomu Lokuxhumana Elilula
+### Ifomu Lokuxhumana Elilula {#simple-contact-form}
 
 > "Dala ifomu lokuxhumana elilula elinezinkambu zegama, i-email, nomlayezo."
 
-### Ifomu Elinezinyathelo Eziningi
+### Ifomu Elinezinyathelo Eziningi {#multi-step-form}
 
 > "Dala ifomu lokuxhumana elinesinyathelo sokuqala solwazi lokuxhumana nesinyathelo sesibili somlayezo nendlela yokuxhumana ekhethwayo."
 
-### Ifomu Elinomqondo Onemibandela
+### Ifomu Elinomqondo Onemibandela {#form-with-conditional-logic}
 
 > "Dala ifomu lokuxhumana elibonisa izinkambu ezihlukene ngokusekelwe ekukhetheni komsebenzisi ku-dropdown."
 
-### Ifomu Elinokulayishwa Kwefayela
+### Ifomu Elinokulayishwa Kwefayela {#form-with-file-upload}
 
 > "Dala ifomu lokuxhumana elivumela abasebenzisi ukuthi balayishe ifayela noma okunamathiselwe."
 

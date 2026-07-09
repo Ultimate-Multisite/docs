@@ -4,11 +4,11 @@ title: Filtras - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filtras: auth_cookie_expiration
+# Filtras: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Filtruoja autentifikavimo slapuko galiojimo laikotarpio trukmę.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtruoja autentifikavimo slapuko galiojimo laikotarpio trukmę.
 | $user_id | `int` | Naudotojo ID. |
 | $remember | `bool` | Ar įsiminti naudotojo prisijungimą. Numatytoji reikšmė false. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.8.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta faile [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52), 52 eilutėje

@@ -3,28 +3,28 @@ title: Dulmarka REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tixraaca REST API
+# Tixraaca REST API {#rest-api-reference}
 
-## Qaabeynta Aasaasiga ah
+## Qaabeynta Aasaasiga ah {#base-configuration}
 
 **URL-ka Aasaasiga ah:** `{site_url}/wp-json/wu/v2/`
 **Xaqiijinta:** API Key & Sir (HTTP Basic Auth ama URL Parameters)
 
-## Xaqiijinta
+## Xaqiijinta {#authentication}
 
-### Daar API
+### Daar API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Hel Aqoonsiyada API
+### Hel Aqoonsiyada API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Hababka Xaqiijinta
+### Hababka Xaqiijinta {#authentication-methods}
 
 **HTTP Basic Auth (Lagu taliyay):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Baraha-dhamaadka Muhiimka ah
+## Baraha-dhamaadka Muhiimka ah {#core-endpoints}
 
-### 1. API-ga Macaamiisha
+### 1. API-ga Macaamiisha {#1-customers-api}
 
 **Waddada Aasaasiga ah:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API-ga Site-yada
+### 2. API-ga Site-yada {#2-sites-api}
 
 **Waddada Aasaasiga ah:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API-ga Membership-yada
+### 3. API-ga Membership-yada {#3-memberships-api}
 
 **Waddada Aasaasiga ah:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API-ga Products
+### 4. API-ga Products {#4-products-api}
 
 **Waddada Aasaasiga ah:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API-ga Payments
+### 5. API-ga Payments {#5-payments-api}
 
 **Waddada Aasaasiga ah:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API-ga Domains
+### 6. API-ga Domains {#6-domains-api}
 
 **Waddada Aasaasiga ah:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Barta-dhamaadka Diiwaangelinta
+## Barta-dhamaadka Diiwaangelinta {#registration-endpoint}
 
 Barta-dhamaadka `/register` waxay bixisaa socod checkout/diiwaangelin oo dhammeystiran:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Baraha-dhamaadka Kireystayaasha Madaxbannaan
+## Baraha-dhamaadka Kireystayaasha Madaxbannaan {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 waxay ku daraysaa daboolidda REST ee kireystayaasha madaxbannaan ee isku-xidhyada diyaariya, baara, ama xaqiijiya kireystayaal go'doonsan.
 
@@ -242,7 +242,7 @@ Jawaabaha caadiga ah ee xaaladda migration-ka waxaa ka mid ah:
 
 U qaado `ready: false` inuu yahay xannibaad ka hor bilaabista. Hubi faahfaahinta xaqiijinta, hagaaji isku-xidhka host-ka database-ka, queue-ga, diyaarinta isticmaalaha, ama arrinta routing-ka, ka dibna mar kale isku day xaqiijinta.
 
-## Jawaabaha Khaladka
+## Jawaabaha Khaladka {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ U qaado `ready: false` inuu yahay xannibaad ka hor bilaabista. Hubi faahfaahinta
 }
 ```
 
-## Bogagayn iyo Shaandhayn
+## Bogagayn iyo Shaandhayn {#pagination-and-filtering}
 
 **Query Parameters:**
 ```http

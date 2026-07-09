@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector ya Malo Omaliza Ogwirizana
+# Ultimate AI Connector ya Malo Omaliza Ogwirizana {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector ya Malo Omaliza Ogwirizana imaphatikiza ma API a opereka AI ogwirizana ndi OpenAI ndi netiweki yanu ya WordPress multisite. Konzani opereka AI angapo — aliyense ali ndi endpoint URL yake, API key yake, ndi model yake yokhazikika — ndipo tumizani zopempha ndi kubwerera kwadzidzidzi pamene wopereka sakugwira ntchito.
 
-## Zinthu Zofunika
+## Zinthu Zofunika {#key-features}
 
 - **Thandizo la opereka ambiri**: Onjezani makadi angapo a opereka AI, lililonse lili ndi endpoint URL yake, API key yake, ndi model yake yokhazikika
 - **Kukoka kuti musinthe dongosolo**: Konzani opereka malinga ndi kufunikira pogwiritsa ntchito chogwirira pa khadi lililonse; zopempha zimagwiritsa ntchito opereka motsatira dongosolo
@@ -21,26 +21,26 @@ Ultimate AI Connector ya Malo Omaliza Ogwirizana imaphatikiza ma API a opereka A
 - **Kutseguka kokha mukawonjezera**: Makadi atsopano a opereka amatseguka okha kuti mutha kudzaza tsatanetsatane nthawi yomweyo
 - **Kuchotsa cache ya script**: Ma script a opereka amachotsedwa mu cache pakusintha plugin kuti zitsimikizire kuti mtundu waposachedwa ukutsitsidwa
 
-## Zofunikira
+## Zofunikira {#requirements}
 
 - WordPress 5.3 kapena kupitirira
 - PHP 7.4 kapena kupitirira
 - Ultimate Multisite plugin (yogwira ntchito)
 - Malo omaliza a API ogwirizana ndi OpenAI (odzichititsa nokha kapena a gulu lachitatu)
 
-## Kuyika
+## Kuyika {#installation}
 
 1. Kwezani mafayilo a addon ku chikwatu chanu cha `/wp-content/plugins/`
 2. Yambitsani plugin kudzera mu menyu ya 'Plugins' mu WordPress
 3. Pitani ku **Ultimate Multisite → AI Connector** kuti mukonze addon
 
-## Kukonzekera
+## Kukonzekera {#configuration}
 
-### Kukhazikitsa Opereka Ambiri
+### Kukhazikitsa Opereka Ambiri {#multi-provider-setup}
 
 Chophimba chokonzera chimagwiritsa ntchito kapangidwe kozika pa makadi komwe khadi lililonse limayimira wopereka AI m'modzi. Mutha kuwonjezera opereka ambiri momwe mukufunira.
 
-#### Kuwonjezera Wopereka
+#### Kuwonjezera Wopereka {#adding-a-provider}
 
 1. Pitani ku **Ultimate Multisite → AI Connector** mu oyang'anira netiweki
 2. Dinani **Onjezani Wopereka**
@@ -52,15 +52,15 @@ Chophimba chokonzera chimagwiritsa ntchito kapangidwe kozika pa makadi komwe kha
    - **Model Yokhazikika** — chizindikiritso cha model chogwiritsidwa ntchito mwachisawawa kwa wopereka uyu (mwachitsanzo `gpt-4o`, `mistral-small`)
 5. Dinani **Sungani Zokonda**
 
-#### Kuchotsa Wopereka
+#### Kuchotsa Wopereka {#removing-a-provider}
 
 Dinani batani la **Chotsani** pa khadi lililonse la wopereka kuti muchotse. Sungani zokonda kuti kusinthaku kuyambe kugwira ntchito.
 
-#### Kusintha Dongosolo la Opereka
+#### Kusintha Dongosolo la Opereka {#reordering-providers}
 
 Kokani chizindikiro chogwirira (⣿) kumanzere kwa khadi lililonse la wopereka kuti musinthe dongosolo lake. Dongosololi limatsimikizira kufunikira kwa kubwerera: zopempha zimatumizidwa kwa wopereka woyamba ndipo zimabwerera kwa opereka otsatira ngati pempho lalephera.
 
-### Njira Yobwerera
+### Njira Yobwerera {#fallback-routing}
 
 Pamene pempho kwa wopereka wamkulu lalephera — chifukwa cha kutha kwa nthawi, malire a kuchuluka kwa zopempha, kapena kulephera kwa ntchito — cholumikizira chimayesanso chokha ndi wopereka wotsatira pa mndandanda. Izi zimapitiriza kutsika pa mndandanda mpaka wopereka wapambana kapena opereka onse ayesedwa.
 
@@ -72,7 +72,7 @@ Pamene pempho kwa wopereka wamkulu lalephera — chifukwa cha kutha kwa nthawi, 
 
 Kubwerera sikuwoneka kwa plugin kapena theme yomwe ikuyitana — amalandira mwina yankho lopambana kapena cholakwika chomaliza, mosasamala kanthu za kuchuluka kwa opereka omwe ayesedwa.
 
-### Buku la Kukonzekera Wopereka
+### Buku la Kukonzekera Wopereka {#provider-configuration-reference}
 
 | Gawo | Chofunikira | Kufotokozera |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Kubwerera sikuwoneka kwa plugin kapena theme yomwe ikuyitana — amalandira mwin
 | API Key | Inde | Kiyi yotsimikizira ya wopereka uyu |
 | Model Yokhazikika | Inde | Chizindikiritso cha model chogwiritsidwa ntchito pamene palibe model yomwe yatchulidwa mu pempho |
 
-## Kuthetsa Mavuto
+## Kuthetsa Mavuto {#troubleshooting}
 
-### Palibe opereka omwe akuwonetsedwa
+### Palibe opereka omwe akuwonetsedwa {#no-providers-are-listed}
 
 Ngati mndandanda wa opereka uli wopanda kanthu mutasunga, tsimikizirani kuti:
 
@@ -91,21 +91,21 @@ Ngati mndandanda wa opereka uli wopanda kanthu mutasunga, tsimikizirani kuti:
 - Msakatuli wanu sanatseke tsamba la zokonda kuti lisasunge (yang'anani console ya msakatuli kuti muwone zolakwika za JavaScript)
 - Plugin ikugwira ntchito ndipo muli pa chophimba cha oyang'anira netiweki
 
-### Zopempha zikulephera kwa opereka onse
+### Zopempha zikulephera kwa opereka onse {#requests-are-failing-for-all-providers}
 
 - Tsimikizirani kuti endpoint URL ya wopereka aliyense ikufikika kuchokera pa seva yanu (osati kuchokera pa msakatuli wanu wokha)
 - Onani kuti API key iliyonse ndi yolondola ndipo sinathe ntchito
 - Unikaninso malire a kuchuluka kwa zopempha ndi momwe quota ya woperekayo ilili mu dashboard yawo
 - Yambitsani kulemba kwa debug kwa WordPress (`WP_DEBUG_LOG`) kuti mugwire mauthenga atsatanetsatane a zolakwika kuchokera ku cholumikizira
 
-### Wopereka sakugwiritsidwa ntchito pa kubwerera
+### Wopereka sakugwiritsidwa ntchito pa kubwerera {#a-provider-is-not-being-used-for-fallback}
 
 Kukoka kuti musinthe dongosolo kumasintha dongosolo la kubwerera. Tsimikizirani kuti wopereka yemwe mukuyembekezera kuti alandire zopempha zobwerera ali pamalo oyenera pa mndandanda ndipo endpoint URL yake ndi API key yake ndi zolondola.
 
-### Khadi latsopano la wopereka silitseguka lokha
+### Khadi latsopano la wopereka silitseguka lokha {#new-provider-card-does-not-expand-automatically}
 
 Kutseguka kokha kumafuna kuti JavaScript ikhale yoyatsidwa mu msakatuli wanu. Ngati khadi silitseguka mukadina, yang'anani console ya msakatuli kuti muwone zolakwika. Zomwe zili pa khadi zimapezeka nthawi zonse podina mutu wa khadi ngakhale kutseguka kokha sikuyambika.
 
-## Mbiri ya Zosintha
+## Mbiri ya Zosintha {#changelog}
 
 Onani [Mbiri ya Zosintha](./changelog) kuti muwone mbiri yonse ya mitundu.

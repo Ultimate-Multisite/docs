@@ -3,7 +3,7 @@ title: Müşteri Account Sayfası
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Müşterinizin Account Sayfası (v2)
+# Müşterinizin Account Sayfası (v2) {#your-clients-account-page-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne atıfta bulunur.**_
 
@@ -11,7 +11,7 @@ Müşteriler ağınızda bir plana abone olduklarında, ödemeleri, üyelikleri,
 
 Bu eğitimde, müşterinin Account sayfasında size rehberlik edeceğiz ve müşterilerinizin bu sayfada neleri görebileceğini ve yapabileceğini göstereceğiz.
 
-## Account Sayfası
+## Account Sayfası {#the-account-page}
 
 Account sayfasına, müşterinizin Dashboard’unda **Account** üzerine tıklayarak erişilebilir.
 
@@ -27,7 +27,7 @@ Bir müşteri buna tıkladıktan sonra üyeliğinin, fatura adresinin, faturalar
 
 Ayrıca üyeliği başka bir plana değiştirebilir veya sunduğunuz başka bir paket ya da hizmeti satın alabilirler. Her bölüme ayrı ayrı bakalım.
 
-### Üyeliğinizin Genel Görünümü:
+### Üyeliğinizin Genel Görünümü: {#your-membership-overview}
 
 Müşterilerinizin web sitesi adının hemen altındaki ilk blok, mevcut planlarının ve onunla birlikte satın alınan hizmetlerin/paketlerin genel görünümünü gösterir. Blok ayrıca üyelik numarasını, bunun için ödenen ilk tutarı, planın ve herhangi bir hizmetin/paketin ne kadar tuttuğunu ve bu üyelik için kaç kez faturalandırıldıklarını gösterir. Üyeliğin **Aktif** , **Süresi Dolmuş** veya **İptal Edilmiş** olup olmadığını da görebilirler.
 
@@ -43,7 +43,7 @@ Bu bloğun hemen altında, müşterileriniz **Bu Site Hakkında** ve **Site Limi
 
 Kupon kodlarının bu üyelik değiştirme sayfasına eklenemeyeceğini unutmayın. Müşteri ilk üyelik satın alımında bir kupon kodu kullandıysa, kod bu yeni üyeliğe de uygulanacaktır.
 
-### Fatura Adresini Güncelleme:
+### Fatura Adresini Güncelleme: {#updating-the-billing-address}
 
 Account sayfasında müşterileriniz fatura adreslerini de güncelleyebilir. Tek yapmaları gereken _Fatura Adresi_ yanındaki **Güncelle** üzerine tıklamaktır.
 
@@ -53,7 +53,7 @@ Müşteriniz için yeni bir pencere açılacaktır. Tek yapması gereken yeni ad
 
 ![Fatura adresini güncelleme formu](/img/account-page/billing-address-form.png)
 
-### Site Şablonunu Değiştirme:
+### Site Şablonunu Değiştirme: {#changing-the-site-template}
 
 Müşterilerinizin site şablonlarını değiştirmesine izin vermek için **Ultimate Multisite > Ayarlar > Siteler** bölümüne gitmeniz ve **Şablon Değiştirmeye İzin Ver** seçeneğini açmanız gerekir.
 
@@ -81,7 +81,7 @@ Onayı açıp **Geçişi İşle** üzerine tıkladıktan sonra, yeni site şablo
 
 Müşteriler, siteyi şu anda atanmış template’e geri sıfırlamaları gerektiğinde bu panelden **Reset current template** seçeneğini de kullanabilir. Başka bir template’e geçmek gibi, bir template’i sıfırlamak site içeriğinin üzerine yazabilir; bu yüzden müşteriler sıfırlama işlemini yalnızca ne anlama geldiğini anladıklarında onaylamalıdır.
 
-### Özel Domainler Ekleme:
+### Özel Domainler Ekleme: {#adding-custom-domains}
 
 Müşterileriniz ayrıca Account sayfalarında bu plan için özel bir domain ekleme seçeneğine sahip olacaktır. Müşterilerinizin özel domainler kullanmasına izin vermek için **Ultimate Multisite > Settings >** **Domain Mapping** bölümüne gidin.
 
@@ -115,7 +115,7 @@ Domain mapping ayarları sayfasının tam görünümü:
 
 **Add Domain** seçeneğine tıkladıktan sonra domain müşterinizin hesabına eklenecektir. Şimdi yapmaları gereken tek şey, bu özel domainin DNS kayıtlarını domain kayıt kuruluşlarında değiştirmektir.
 
-### Şifre Değiştirme:
+### Şifre Değiştirme: {#changing-password}
 
 Account Dashboard içinde müşterileriniz **Change Password** seçeneğine tıklayarak şifrelerini de değiştirebilir.
 
@@ -125,7 +125,7 @@ Bu, müşterilerinizin mevcut şifrelerini doldurmaları ve ardından kullanmak 
 
 ![Mevcut ve yeni şifre alanları olan şifre değiştirme formu](/img/account-page/change-password-form.png)
 
-### Tehlikeli Bölge:
+### Tehlikeli Bölge: {#danger-zone}
 
 **Danger Zone** bölümünde gösterilen iki seçeneğimiz de vardır: **Delete Site** ve **Delete Account**. Bu iki işlem geri alınamaz olduğu için ikisi de Danger Zone bölümündedir. Müşterileriniz web sitelerini veya hesaplarını silerse, onları geri kurtaramazlar.
 

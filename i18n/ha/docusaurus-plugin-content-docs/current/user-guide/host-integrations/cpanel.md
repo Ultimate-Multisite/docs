@@ -3,17 +3,17 @@ title: Shigarwa ta cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# شمول‌کردن با cPanel
+# شمول‌کردن با cPanel {#cpanel-integration}
 
-## مروری کلی
+## مروری کلی {#overview}
 cPanel یکی از محبوب‌ترین پنل‌های کنترل هاست وب است که توسط بسیاری از ارائه‌دهندگان هاست اشتراکی و اختصاصی استفاده می‌شود. این اتصال به شما اجازه می‌دهد تا همگام‌سازی خودکار دامنه بین Ultimate Multisite و cPanel را فعال کنید، که باعث می‌شود آدرس‌های جایگزین (aliases) و زیردامنه (subdomains) را به طور خودکار به حساب cPanel خود اضافه کنید.
 
-## ویژگی‌ها
+## ویژگی‌ها {#features}
 - ایجاد خودکار دامنه‌های اضافی در cPanel
 - ایجاد خودکار زیردامنه‌ها در cPanel (برای نصب‌های چند دامنه با زیردامنه)
 - حذف دامنه زمانی که نگاشت‌ها (mappings) حذف می‌شوند
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 باید ثابت‌های زیر را در فایل `wp-config.php` خود تعریف کنید:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // پیش‌فرض ۲083 است
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // پیش‌فرض /public_html است
 ```
 
-## دستورالعمل‌های راه‌اندازی
+## دستورالعمل‌های راه‌اندازی {#setup-instructions}
 
-### ۱. دریافت اطلاعات cPanel خود
+### ۱. دریافت اطلاعات cPanel خود {#1-get-your-cpanel-credentials}
 
 ۱. نام کاربری و رمز عبور cPanel خود را از ارائه‌دهنده هاست خود دریافت کنید.
 ۲. میزبان cPanel خود را مشخص کنید (معمولاً `cpanel.yourdomain.com` یا `yourdomain.com:2083`).
 
-### ۲. اضافه کردن ثابت‌ها به wp-config.php
+### ۲. اضافه کردن ثابت‌ها به wp-config.php {#2-add-constants-to-wp-configphp}
 
 ثابت‌های زیر را به فایل `wp-config.php` خود اضافه کنید:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // اگر cPanel شما از پورت دیگری
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // اگر ریشه سند (document root) شما متفاوت است تغییر دهید
 ```
 
-### ۳. فعال کردن اتصال
+### ۳. فعال کردن اتصال {#3-enable-the-integration}
 
 1. A cikin admin site ɗin WordPress, ka je zuwa Ultimate Multisite > Settings (Tattara).
 2. Je zuwa tab ɗin "Domain Mapping" (Saurin Maida Domain).
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // اگر ریشه سند (documen
 4. Shiga wajen aiki (Enable) haɗin cPanel.
 5. Danna "Save Changes" (Ajiye Canjin).
 
-## Yadda Ake Aiki
+## Yadda Ake Aiki {#how-it-works}
 
-### Addon Domains (Saurin Maida Domain)
+### Addon Domains (Saurin Maida Domain) {#addon-domains}
 
 Idan aka saida domain a Ultimate Multisite:
 
@@ -71,7 +71,7 @@ Idan aka saida domain a Ultimate Multisite:
 2. Domain ɗin ana tsara shi ya shiga direktori na gaba (root directory).
 3. Lokacin da aka cire saida domain, haɗin zai cire addon domain daga cPanel.
 
-### Subdomains (Saurin Maida Subdomain)
+### Subdomains (Saurin Maida Subdomain) {#subdomains}
 
 Don install subdomain multisite, lokacin da ake ƙirƙirar wuri na sabon site:
 
@@ -79,27 +79,27 @@ Don install subdomain multisite, lokacin da ake ƙirƙirar wuri na sabon site:
 2. Yana aiko wajen API na cPanel don ƙara subdomain.
 3. Subdomain ɗin ana tsara shi ya shiga direktori na gaba (root directory).
 
-## Shawarwari Muhimmai
+## Shawarwari Muhimmai {#important-notes}
 
 - Haɗin yana amfani da API2 na cPanel don tattaunawa da asusun cPanel ɗinka.
 - Asusun cPanel ɗinka dole ne ya samu iyakacin amincewa don ƙara addon domains da subdomains.
 - Wasu masu gudanarwa (hosting providers) za su iya iyakance yawan addon domains ko subdomains da za ka iya ƙirƙira.
 - Haɗin ba shi da alaka da tsara DNS; dole ne ka shiga domain ɗinka zuwa IP address na server ɗinka.
 
-## Magan Rarraba Matala (Troubleshooting)
+## Magan Rarraba Matala (Troubleshooting) {#troubleshooting}
 
-### Matsalolin Haɗin API (API Connection Issues)
+### Matsalolin Haɗin API (API Connection Issues) {#api-connection-issues}
 - Ka tabbata sunan amfani (username) da kalmar sirri (password) na cPanel suna daidai.
 - Bincika ko wurin gudanarwa (host) na cPanel yana daidai kuma ana iya samun shi.
 - Ka tabbatar cewa asusun cPanel ɗinka yana da iyakacin amincewa da ake bukata.
 - Ka gwada amfani da URL ɗin gaba gaba ga host (misali: `https://cpanel.yourdomain.com`).
 
-### Domain Ba Ya Tamba (Domain Not Added)
+### Domain Ba Ya Tamba (Domain Not Added) {#domain-not-added}
 - Bincika logs na Ultimate Multisite don wata saƙon sauki (error messages).
 - Ka tabbatar domain ba ya ƙara a cPanel ba.
 - Ka tabbatar asusun cPanel ɗinka bai isa ga iyakacin addon domains ko subdomains ba.
 
-### Matsalolin Sertifikat SSL (SSL Certificate Issues)
+### Matsalolin Sertifikat SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 - Wannan haɗin ba shi da ikon samarwa ko samar da sertifikat SSL.
 - Dole ne ka yi amfani da kayan aiki na SSL/TLS na cPanel ko ƙarin ƙwarewar AutoSSL don samar da sertifikat SSL ga domain ɗinka.
 - A wani bangare, za ka iya amfani da wani sabon wuri kamar Let's Encrypt tare da AutoSSL na cPanel.

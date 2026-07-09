@@ -3,13 +3,13 @@ title: Memasang Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Memasang Ultimate Multisite
+# Memasang Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Tutorial ini menganggap bahawa anda sudah memasang dan mengkonfigurasi WordPress Multisite. Untuk mengetahui cara melakukannya, lihat [tutorial ini](https://www.wpbeginner.com/glossary/multisite/) oleh WP Beginner.
 :::
 
-## Memasang Plugin
+## Memasang Plugin {#installing-the-plugin}
 
 Ultimate Multisite tersedia secara percuma di [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Selepas pengaktifan, anda akan secara automatik dialihkan ke Wizard Persediaan.
 
 ![Plugin diaktifkan dan dialihkan ke wizard](/img/installation/plugin-activated.png)
 
-## Wizard Persediaan
+## Wizard Persediaan {#setup-wizard}
 
 Wizard Persediaan akan membimbing anda melalui konfigurasi Ultimate Multisite dalam kira-kira 10 minit.
 
-### Selamat Datang
+### Selamat Datang {#welcome}
 
 Klik **Mula** untuk memulakan.
 
 ![Skrin selamat datang Wizard Persediaan](/img/installation/wizard-welcome.png)
 
-### Semak Pra-pemasangan
+### Semak Pra-pemasangan {#pre-install-checks}
 
 Langkah ini menyemak maklumat sistem dan pemasangan WordPress anda untuk memastikan ia memenuhi keperluan Ultimate Multisite. Jika semuanya kelihatan baik, klik **Teruskan ke Langkah Seterusnya**.
 
@@ -51,31 +51,31 @@ Jika Ultimate Multisite telah dipasang tetapi **belum diaktifkan pada peringkat 
 Mengklik **Aktifkan Rangkaian** mengaktifkan plugin di seluruh rangkaian multisite anda secara automatik. Setelah diaktifkan, wizard akan berterusan seperti biasa ke langkah pemasangan. Anda tidak perlu meninggalkan wizard untuk menyelesaikan keadaan pengaktifan.
 :::
 
-### Pemasangan
+### Pemasangan {#installation}
 
 Pemasang akan mencipta jadual pangkalan data yang diperlukan dan memasang fail `sunrise.php` yang Ultimate Multisite perlukan untuk berfungsi. Klik **Pasang** untuk meneruskan.
 
 ![Langkah pemasangan yang menunjukkan jadual pangkalan data dan sunrise.php](/img/installation/wizard-installation.png)
 
-### Syarikat Anda
+### Syarikat Anda {#your-company}
 
 Isi maklumat syarikat anda dan tetapkan mata wang lalai anda. Maklumat ini akan digunakan di seluruh platform WaaS anda. Klik **Teruskan** apabila selesai.
 
 ![Langkah konfigurasi Syarikat Anda](/img/installation/wizard-your-company.png)
 
-### Kandungan Lalai
+### Kandungan Lalai {#default-content}
 
 Langkah ini membolehkan anda memasang templat yang telah ditetapkan, produk dan kandungan permulaan lain. Ini adalah cara terbaik untuk membiasakan diri dengan ciri-ciri Ultimate Multisite. Klik **Pasang** untuk menambah kandungan lalai, atau langkau langkah ini jika anda lebih suka bermula dari awal.
 
 ![Langkah pemasangan kandungan lalai](/img/installation/wizard-default-content.png)
 
-### Plugin yang Disyorkan
+### Plugin yang Disyorkan {#recommended-plugins}
 
 Secara pilihan pasang plugin tambahan yang disyorkan. Klik **Pasang** untuk menambahnya atau teruskan jika tidak.
 
 ![Langkah plugin yang disyorkan](/img/installation/wizard-recommended-plugins.png)
 
-### Sedia!
+### Sedia! {#ready}
 
 Itu sahaja! Pemasangan Ultimate Multisite anda telah selesai. Anda kini boleh mula membina platform Laman Web sebagai Perkhidmatan anda daripada **Papan Pemuka Pentadbir Rangkaian**.
 

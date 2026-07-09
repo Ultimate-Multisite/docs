@@ -3,13 +3,13 @@ title: Suunnitelman alennus
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Suunnitelman alennus (v2)
+# Suunnitelman alennus (v2) {#downgrading-a-plan-v2}
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 
 Suunnitelman tai tilauksen alennuttaminen on yleinen asia, jonka asiakkaat saattavat tehdä, jos heillä on rajallinen budjetti tai päättäneet, ettei he tarvitse paljon resursseja sivustonsa ylläpitämiseen.
 
-## Miten suunnitelmaa alennetaan
+## Miten suunnitelmaa alennetaan {#how-to-downgrade-a-plan}
 
 Asiakkaat voivat alentaa suunnitelma milloin tahansa kirjautumalla sisään subsite-admin-dashboardiin ja klikkaamalla **Change** (Muuta) -painiketta tilin sivulta.
 
@@ -25,7 +25,7 @@ Jatkaaksesi käyttäjän tarvitsee vain klikata **Complete Checkout** (Suorita k
 
 ![Tilin sivu, jossa on odotettavan jäsenyyden muutoksen banneri](/img/account-page/pending-change.png)
 
-### Mitä tapahtuu, kun käyttäjä alentaa suunnitelmaa
+### Mitä tapahtuu, kun käyttäjä alentaa suunnitelmaa {#what-happens-when-a-user-downgrades-their-plan}
 
 On tärkeää huomata, että suunnitelman alennuttaminen ei muuta olemassa olevaa konfiguraatiota käyttäjän subsite-sivustolla.
 
@@ -37,7 +37,7 @@ Posteille, jotka ylittävät suunnitelmassa asetetun rajan, sinulla on 3 eri vai
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Mitä tapahtuu maksulle
+### Mitä tapahtuu maksulle {#what-happens-to-the-payment}
 
 Versiossa 2.0 ei enää vaadi prorataation suhteen mitään muutoksia maksuun liittyen.
 

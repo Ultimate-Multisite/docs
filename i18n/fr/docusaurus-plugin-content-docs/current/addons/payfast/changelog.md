@@ -3,7 +3,7 @@ title: PayFast Historique des modifications
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Journal des modifications PayFast
+# Journal des modifications PayFast {#payfast-changelog}
 
 Version : 1.0.2 - Publiée le 2025-09-28
 

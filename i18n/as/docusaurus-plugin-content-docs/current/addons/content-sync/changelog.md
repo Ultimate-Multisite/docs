@@ -3,9 +3,9 @@ title: Content Sync Changelog
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync পৰিৱৰ্তনৰ তালিকা
+# Content Sync পৰিৱৰ্তনৰ তালিকা {#content-sync-changelog}
 
-### Version 1.1.0 - Released on 2025-12-31
+### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * নতুন: সকলো পোষ্ট প্ৰকাৰ (posts, pages, custom post types) সিঙ্কিং কৰাৰ সমৰ্থন।
 * নতুন: কন্টেন্ট বাছনি কৰাৰ ধাপত পোষ্ট প্ৰকাৰ ফিল্টাৰিং।
 * নতুন: উৎস স্থান বাছনি কৰাৰ ধাপ - কেৱল মূল স্থানৰ পৰা নহয়, যিকোনো স্থানৰ পৰা সিঙ্কিং কৰিব পাৰি।
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * সলনি কৰা: "Select Templates" ধাপটো "Select Data" নামলৈ সলনি কৰা হৈছে।
 * উন্নত কৰা: Elementor-specific কোড এতিয়া কেৱল elementor_library পোষ্ট প্ৰকাৰৰ বাবেহে চলিব।
 
-### Version 1.0.0 - Released on 2025-12-19
+### Version 1.0.0 - Released on 2025-12-19 {#version-100---released-on-2025-12-19}
 * প্ৰথম মুকলি
 * টেমপ্লেট আৰু স্থান বাছনি কৰাৰ বাবে বহু-ধাপী উইজৰ্ড।
 * প্ৰকৃত সময়ৰ প্ৰগ্ৰেছ ফিডবেকৰ সৈতে এককালীন প্ৰক্ৰিয়াকৰণ।

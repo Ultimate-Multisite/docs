@@ -3,13 +3,13 @@ title: Pag-set up ng Mga Manu-manong Pagbabayad
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Pag-set Up ng Manual Payments (v2)
+# Pag-set Up ng Manual Payments (v2) {#setting-up-manual-payments-v2}
 
 _**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 
 Ang manual payments ay isang paraan para makapag-alok ka ng ibang mga paraan ng pagbabayad kung hindi available ang **Stripe** o **PayPal** para sa iyong mga user. Maaari itong wire o bank transfer o anumang ibang paraan ng pagbabayad na available sa iyong mga user sa kanilang lugar.
 
-## Paano i-enable ang Manual Payments
+## Paano i-enable ang Manual Payments {#how-to-enable-manual-payments}
 
 Napakadali ng pag-set up ng manual payment. Kailangan mo lang itong i-enable sa ilalim ng payment gateways at maglagay ng detalyadong mga tagubilin kung paano dapat ipadala ng user ang bayad.
 
@@ -31,7 +31,7 @@ At makakatanggap din sila ng mensahe sa iyong **Thank You** page kasama ang iyon
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Pagkumpirma ng manual payments
+## Pagkumpirma ng manual payments {#confirming-manual-payments}
 
 Para kumpirmahin ang manual payment, pumunta sa menu na **Payments** sa kaliwang bar. Doon makikita mo ang lahat ng bayad sa iyong network at ang mga detalye ng mga ito, kabilang ang kanilang **status**. Ang manual payment ay palaging magkakaroon ng status na **Pending** hanggang manu-mano mo itong baguhin.
 

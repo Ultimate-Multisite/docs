@@ -4,11 +4,11 @@ title: Filtro - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtro: wu_woocommerce_line_item_params
+# Filtro: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Filtra los parámetros utilizados para crear los artículos de línea en el carrito de WooCommerce, antes de redirigir al cliente al checkout de WooCommerce.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
@@ -16,14 +16,14 @@ Filtra los parámetros utilizados para crear los artículos de línea en el carr
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | La instancia del artículo de línea de Ultimate Multisite. |
 | $wc_product | `\WC_Product` | El producto de WooCommerce. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) en la línea 662
 
-## Devuelve
+## Devuelve {#returns}
 
 Los parámetros del artículo de línea modificados.

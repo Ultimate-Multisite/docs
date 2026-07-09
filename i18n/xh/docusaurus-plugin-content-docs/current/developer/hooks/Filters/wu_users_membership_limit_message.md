@@ -4,16 +4,16 @@ title: Isihluzo - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Isihluzi: wu_users_membership_limit_message
+# Isihluzi: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
 
 Vumela abaphuhlisi batshintshe umyalezo omalunga nomda wabasebenzisi bobulungu
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazo |
 |------|------|-------------|
 | $message | `string` | Umyalezo oza kuprintwa kwisikrini. |
 
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-[`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72) kumgca 72

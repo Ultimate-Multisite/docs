@@ -3,11 +3,11 @@ title: Kubika amabwiriza muri cache bishingiye ku mutanga-serivisi
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Kubika Prompt mu Bubiko Hakurikijwe Provider
+# Kubika Prompt mu Bubiko Hakurikijwe Provider {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 izana **provider-aware prompt caching**, itunganya ibiciro bya API n’ubukererwe ibika prompts mu bubiko hagati ya LLM providers batandukanye. Buri provider afite uburyo n’igenamiterere bitandukanye byo kubika mu bubiko.
 
-## Incamake
+## Incamake {#overview}
 
 Kubika prompt mu bubiko bigufasha:
 
@@ -23,11 +23,11 @@ Providers batandukanye bashyira mu bikorwa kubika mu bubiko mu buryo butandukany
 - **OpenRouter**: Kubika mu bubiko byihariye kuri provider
 - **Vertex Anthropic**: Kubika prompt mu bubiko hamwe no kugenzura ububiko
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini itanga igenzura ryeruye ry’ububiko binyuze kuri `cachedContents` API.
 
-### Igenamiterere
+### Igenamiterere {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Gukora Prompt Ibitswe mu Bubiko
+### Gukora Prompt Ibitswe mu Bubiko {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Gukoresha Prompt Ibitswe mu Bubiko
+### Gukoresha Prompt Ibitswe mu Bubiko {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Ubuzima bw’Ibiri mu Bubiko
+### Ubuzima bw’Ibiri mu Bubiko {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Imikorere Myiza kuri Gemini
+### Imikorere Myiza kuri Gemini {#best-practices-for-gemini}
 
 - **Shyiraho TTL ikwiye**: Shyira ku munzani kuzigama ibiciro n’uko ibiri mu bubiko bishobora gusaza
 - **Bika system prompts mu bubiko**: Ongera ukoreshe system prompt imwe mu busabe butandukanye
 - **Kurikirana ikoreshwa ry’ububiko**: Menya ububiko bukoreshwa cyane kurusha ubundi
 - **Sukura ububiko bwarangije igihe**: Siba rimwe na rimwe ububiko butagikoreshwa
 
-## Azure OpenAI: Kubika Prompt mu Bubiko
+## Azure OpenAI: Kubika Prompt mu Bubiko {#azure-openai-prompt-caching}
 
 Azure OpenAI ishyigikira kubika prompt mu bubiko hamwe no gucunga TTL mu buryo bwikora.
 
-### Igenamiterere
+### Igenamiterere {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Gufungura Kubika mu Bubiko
+### Gufungura Kubika mu Bubiko {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Imitwe y’Ububiko
+### Imitwe y’Ububiko {#cache-headers}
 
 Azure OpenAI ikoresha HTTP headers mu kugenzura ububiko:
 
@@ -152,7 +152,7 @@ Indangagaciro zishyigikiwe:
 - `no_cache`: Ntukabike ubu busabe mu bubiko
 - `no_store`: Ntukabike kandi ntukongere gukoresha
 
-### Gukurikirana Ikoreshwa ry’Ububiko
+### Gukurikirana Ikoreshwa ry’Ububiko {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Imikorere Myiza kuri Azure OpenAI
+### Imikorere Myiza kuri Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Koresha prompts zidahindagurika**: Prompts zisa neza neza zungukira ku kubikwa mu bubiko
 - **Shyiraho TTL yumvikana**: Shyira ku munzani igiciro n’ubusugire bw’ibigezweho
 - **Kurikirana ibipimo by’ububiko**: Menya uko ububiko bukorwa ugereranyije n’uko buboneka
 - **Shyira hamwe ubusabe busa**: Shyira ubusabe mu matsinda kugira ngo wongere amahirwe yo kubona ibiri mu bubiko
 
-## OpenRouter: Kubika mu Bubiko Byihariye kuri Provider
+## OpenRouter: Kubika mu Bubiko Byihariye kuri Provider {#openrouter-provider-specific-caching}
 
 OpenRouter ishyigikira kubika mu bubiko binyuze kuri providers bo hasi (OpenAI, Anthropic, n’abandi).
 
-### Igenamiterere
+### Igenamiterere {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Gukoresha Kubika mu Bubiko kwa OpenRouter
+### Gukoresha Kubika mu Bubiko kwa OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Amahitamo Yihariye kuri Provider
+### Amahitamo Yihariye kuri Provider {#provider-specific-options}
 
 Providers batandukanye bafite uburyo butandukanye bwo kubika mu bubiko:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Imikorere Myiza kuri OpenRouter
+### Imikorere Myiza kuri OpenRouter {#best-practices-for-openrouter}
 
 - **Menya uburyo provider wawe abika mu bubiko**: Buri provider afite uburyo butandukanye
 - **Gerageza imyitwarire y’ububiko**: Emeza ko kubika mu bubiko bikorana na provider wahisemo
 - **Kurikirana ibiciro**: Menya amafaranga uzigama biturutse ku kubika mu bubiko
 - **Koresha models zidahindagurika**: Guhinduranya models bisenya amahirwe yo kubona ibiri mu bubiko
 
-## Vertex Anthropic: Kubika Prompt mu Bubiko hamwe no Kugenzura Ububiko
+## Vertex Anthropic: Kubika Prompt mu Bubiko hamwe no Kugenzura Ububiko {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) ishyigikira kubika prompt mu bubiko hamwe no kugenzura ububiko mu buryo bweruye.
 
-### Igenamiterere
+### Igenamiterere {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Gukoresha kubika by'agateganyo kwa Vertex Anthropic
+### Gukoresha kubika by'agateganyo kwa Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Ubwoko bwa Cache Control
+### Ubwoko bwa Cache Control {#cache-control-types}
 
 - **ephemeral**: Bika by'agateganyo mu gihe cy'igisubizo gisabwa (mburabuzi)
 - **persistent**: Bika by'agateganyo hagati y'ibisubizo bisabwa byinshi (niba bishyigikiwe)
 
-### Gukurikirana ikoreshwa rya cache
+### Gukurikirana ikoreshwa rya cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Imikorere myiza kuri Vertex Anthropic
+### Imikorere myiza kuri Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Koresha kubika by'agateganyo kwa ephemeral**: Ni byiza ku kubika by'agateganyo mu gihe kimwe cy'isomo
 - **Shyiraho max_tokens mu buryo bukwiye**: Guhuza ingano ya cache n'igiciro
 - **Kurikirana ibipimo bya cache**: Kurikirana uko cache ikora neza
 - **Gerageza n'umutwaro w'akazi wawe**: Emeza ko kubika by'agateganyo bigirira akamaro uko ubikoresha
 
-## Ingamba zo kubika by'agateganyo ku batanga serivisi benshi
+## Ingamba zo kubika by'agateganyo ku batanga serivisi benshi {#cross-provider-caching-strategy}
 
-### Iboneza rihuriweho
+### Iboneza rihuriweho {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Kumenya utanga serivisi
+### Kumenya utanga serivisi {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Ingamba zo gusubira ku yindi nzira
+### Ingamba zo gusubira ku yindi nzira {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kugabanya ibiciro
+## Kugabanya ibiciro {#cost-optimization}
 
-### Kubara amafaranga uzigama
+### Kubara amafaranga uzigama {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Inama zo kunoza
+### Inama zo kunoza {#optimization-tips}
 
 - **Bika by'agateganyo system prompts nini**: Ni ho haboneka kuzigama ibiciro byinshi kurusha ahandi
 - **Ongera ukoreshe imiterere**: Bika by'agateganyo inyandiko z'imiterere zikoreshwa kenshi
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Kurikirana uko cache ikora neza**: Kurikirana amafaranga nyayo uzigama
 - **Hindura TTL**: Guhuza igiciro n'ubusugire bw'igihe
 
-## Gukemura ibibazo
+## Gukemura ibibazo {#troubleshooting}
 
-### Cache ntikoreshwa
+### Cache ntikoreshwa {#cache-not-being-used}
 
 - Emeza ko kubika by'agateganyo byafunguwe mu iboneza
 - Reba ko prompts zisa neza neza (kubika by'agateganyo bisaba guhuza neza)
 - Emeza ko cache itararangiza igihe
 - Reba imipaka ya cache yihariye ku mutanga serivisi
 
-### Gukora cache birananirana
+### Gukora cache birananirana {#cache-creation-failing}
 
 - Emeza ko ingano ya cache iri mu mipaka y'utanga serivisi
 - Reba ko syntax ya cache control ari yo
 - Menya neza ko utanga serivisi ashyigikira kubika by'agateganyo kuri model yawe
 - Suzuma inyandiko z'utanga serivisi ku bijyanye n'imbogamizi
 
-### Ibiciro bitunguranye
+### Ibiciro bitunguranye {#unexpected-costs}
 
 - Kurikirana gukora cache ugereranyije na cache read tokens
 - Emeza ko cache ikoreshwa koko
 - Reba cache misses ziterwa n'itandukaniro muri prompt
 - Tekereza guhindura TTL cyangwa ingamba za cache
 
-## Kugereranya abatanga serivisi
+## Kugereranya abatanga serivisi {#provider-comparison}
 
 | Ikiranga | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Kugabanya igiciro | 90% | 90% | Biterwa n'utanga serivisi | 90% |
 | Gukurikirana | Birambuye | Binyuze mu bipimo | Biterwa n'utanga serivisi | Binyuze mu ikoreshwa |
 
-## Intambwe zikurikira
+## Intambwe zikurikira {#next-steps}
 
 1. **Hitamo utanga serivisi wawe**: Hitamo ukurikije ibyo ukeneye
 2. **Bona neza kubika by'agateganyo**: Tegura kubika by'agateganyo byihariye ku mutanga serivisi

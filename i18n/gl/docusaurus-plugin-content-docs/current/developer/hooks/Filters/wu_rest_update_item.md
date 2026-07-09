@@ -4,11 +4,11 @@ title: Filtro - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item
+# Filter: wu_rest_update_item {#filter-wurestupdateitem}
 
 Filtra se se permite continuar coa solicitude ou non.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtra se se permite continuar coa solicitude ou non.
 | $rest_base | `array` | Slug da entidade. |
 | $this | `\Base_Manager` | A instancia do obxecto. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) na liña 414

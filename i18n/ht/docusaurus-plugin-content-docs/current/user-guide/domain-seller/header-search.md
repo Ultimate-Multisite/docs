@@ -3,11 +3,11 @@ title: Antèt Rechèch Domèn
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Rechèch Domèn nan Header
+# Rechèch Domèn nan Header {#header-domain-search}
 
 Sèvi ak konfigirasyon sa a lè ou vle yon ti fòm nan header ki kòmanse yon rechèch domèn, epi ki kite kliyan an chwazi pami domèn ki disponib yo andedan checkout Ultimate Multisite la.
 
-## Kondisyon
+## Kondisyon {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Sèvi ak konfigirasyon sa a lè ou vle yon ti fòm nan header ki kòmanse yon re
   - TLD ki sipòte yo konfigire, pa egzanp `com`, `net`, ak `org`.
 - Yon fòm checkout valid ki genyen chan **Domain Selection** an.
 
-## Fòm checkout
+## Fòm checkout {#checkout-form}
 
 1. Kreye oswa modifye fòm checkout paj enskripsyon an itilize a.
 2. Ajoute chan checkout/Account nòmal ki obligatwa yo, enkli **Username**. Yon fòm checkout ki genyen sèlman chan domèn nan ap rejte pa validasyon Ultimate Multisite.
@@ -30,7 +30,7 @@ Paj enskripsyon an ta dwe rann fòm checkout la, pa egzanp:
 [wu_checkout slug="domain-form"]
 ```
 
-## Fòm header
+## Fòm header {#header-form}
 
 Ajoute yon ti fòm `GET` nan header sit la ki voye tèm rechèch yo antre a bay paj checkout la kòm `domain_name`:
 
@@ -44,7 +44,7 @@ Ajoute yon ti fòm `GET` nan header sit la ki voye tèm rechèch yo antre a bay 
 
 Pa preseleksyone yon domèn nan JavaScript header pèsonalize. Header la ta dwe sèlman pase tèm rechèch la. Script checkout Domain Seller la li `?domain_name=example`, ranpli bwat rechèch checkout la, epi lanse rechèch disponiblite a pou kliyan an ka chwazi pami domèn yo retounen yo.
 
-## Konpòtman yo atann
+## Konpòtman yo atann {#expected-behaviour}
 
 Lè w ap chèche `example` nan header la, sa ta dwe ouvri:
 
@@ -61,7 +61,7 @@ Checkout la ta dwe apre sa montre rezilta ou ka chwazi tankou:
 
 Apre ou chwazi yon rezilta ki disponib, rezime kòmand lan ta dwe gen ladan pwodwi enskripsyon domèn nan ak non domèn ou chwazi a.
 
-## Verifikasyon
+## Verifikasyon {#verification}
 
 1. Ouvri paj dakèy la.
 2. Chèche yon non senp, pa egzanp `example`.
@@ -71,7 +71,7 @@ Apre ou chwazi yon rezilta ki disponib, rezime kòmand lan ta dwe gen ladan pwod
 6. Klike **Select** pou yon domèn ki disponib.
 7. Konfime rezime kòmand lan genyen `Domain Registration - example.com` oswa domèn ou chwazi a.
 
-## Depanaj
+## Depanaj {#troubleshooting}
 
 - Si pa gen okenn lis ki parèt, tcheke onglet rezo navigatè a pou `admin-ajax.php?action=wu_domain_search` epi konfime li retounen `domains` oswa `results` ki pa vid.
 - Si fòm checkout la echwe validasyon pandan anrejistreman, ajoute chan Account obligatwa yo tankou **Username**.

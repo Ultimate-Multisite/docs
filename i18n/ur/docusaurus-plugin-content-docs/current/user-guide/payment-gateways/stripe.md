@@ -3,19 +3,19 @@ title: Stripe کی ترتیب
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe گیٹ وے سیٹ اپ کرنا (v2)
+# Stripe گیٹ وے سیٹ اپ کرنا (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**اہم نوٹ: یہ مضمون Ultimate Multisite ورژن 2.x سے متعلق ہے۔**_
 
 آپ ہماری پیمنٹ سیٹنگز پیج پر چار ادائیگی کے طریقے چالو کر سکتے ہیں: Stripe، Stripe Checkout، PayPal اور Manual۔ اس مضمون میں ہم دیکھیں گے کہ **Stripe** کے ساتھ کیسے انٹیگریٹ کریں۔
 
-## Stripe کو فعال کرنا
+## Stripe کو فعال کرنا {#enabling-stripe}
 
 اپنے نیٹ ورک پر Stripe کو بطور پیمنٹ گیٹ وے فعال کرنے کے لیے، **Ultimate Multisite > Settings > Payments** پر جائیں اور Active Payment Gateways سیکشن میں **Stripe** یا **Stripe Checkout** کے آگے والے ٹوگل پر کلک کریں۔
 
 ![Active payment gateways میں Stripe کو فعال کرنا](/img/config/settings-payment-gateways.png)
 
-### Stripe بمقابلہ Stripe Checkout:
+### Stripe بمقابلہ Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** یہ طریقہ چیک آؤٹ کے دوران کریڈٹ کارڈ نمبر ڈالنے کی جگہ دکھائے گا۔
 
@@ -47,7 +47,7 @@ _**نوٹ:** آپ یہ جانچنے کے لیے کہ پیمنٹ کا طریقہ 
 
 ![Ultimate Multisite سیٹنگز میں Stripe keys پیسٹ کرنا](/img/config/settings-payment-gateways.png)
 
-## Stripe Webhook سیٹ اپ کرنا
+## Stripe Webhook سیٹ اپ کرنا {#setting-up-stripe-webhook}
 
 Stripe webhook ایونٹس بھیجتا ہے جو Ultimate Multisite کو مطلع کرتے ہیں جب بھی **آپ کے Stripe اکاؤنٹ** پر کوئی ایونٹ ہوتا ہے۔
 

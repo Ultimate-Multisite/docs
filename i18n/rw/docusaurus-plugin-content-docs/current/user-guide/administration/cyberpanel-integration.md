@@ -3,25 +3,25 @@ title: Ubwumvikane bw'Ubushobozi bwa CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Uburyo Integration
+# Uburyo Integration {#cyberpanel-integration}
 
 Iyi gushyaho uburyo bwo gutegura uburyo bwa Ultimate Multisite CyberPanel. Igiheki n'ibyo uburyo bwa mapangwa (mapped domains) mu network yawe, byo bitangirwa (and bitakwiriwe) ngufi cyo kuba virtual hosts muri CyberPanel, kandi hari ubushobozi bwo gukoresha auto-SSL ku buryo bw'ubwujubi bwa Let's Encrypt.
 
-## Iyo Ibyo Bifata Icyo?
+## Iyo Ibyo Bifata Icyo? {#what-it-does}
 
 - Iyo domain yirindwe (mapped) mu Ultimate Multisite, uburyo bwa gutegura bishobora gukoresha API ya CyberPanel kugira ngo yitangire virtual host ku gihe cy'ibyo byo.
 - Iyo mapangwa y'domain irindwe, uburyo bwa gutegura bishobora gukoresha API kugira ngo yiyumve (delete) virtual host yashoboye.
 - Iyo auto-SSL iri mu gihe cyo, uburyo bwa gutegura bishobora gushyira cyangwa guhagarara (add/remove) certificate ya Let's Encrypt mu gihe cyo cyiza cyane cyizera virtual host yashoboye.
 - Hari ubushobozi bwo gushyira cyangwa guhagarara alias `www.` mu gihe cyo, byo bitewe n'ubwoko w'Auto-create www subdomain muri Domain Mapping settings yawe.
 
-## Icyo Cyiza Kumenya (Prerequisites)
+## Icyo Cyiza Kumenya (Prerequisites) {#prerequisites}
 
 - Uburyo bwa CyberPanel ugiye (v2.3 cyangwa uyu hejuru niho) kandi ufite uburyo bwo gukoresha (reachable) ku server yawe ya WordPress.
 - Uburyo bwa website yari mu CyberPanel kandi yashoboye guhagarara root ya network yawe ya WordPress. Iyo uburyo bwa gutegura bishobora gushyira virtual hosts zishya kuri uyu server.
 - Gutegura uburenganzira (API access) muri CyberPanel. Uburyo bwo gukoresha ubwujubi ni cyo mu gihe cyo cyiza cyane cyizera admin username n'ubwujubi yawe.
 - Icyo cyiza cyane cyane, DNS records za domain zishoboye guhagarara kuri IP ya server yawe mbere y'ibyo byo bwo auto-SSL gushyira certificate yiza.
 
-## Ingozi (Requirements)
+## Ingozi (Requirements) {#requirements}
 
 Icyo cyiza cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane cyane
 

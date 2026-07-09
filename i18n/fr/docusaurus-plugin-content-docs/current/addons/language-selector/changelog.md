@@ -3,7 +3,7 @@ title: Journal des modifications du sélecteur de langue
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Journal des modifications du sélecteur de langue
+# Journal des modifications du sélecteur de langue {#language-selector-changelog}
 
 Version : 1.1.3 - Publiée le 2026-05-05
 * Correction : les variables d’entrée sont désormais assainies et les noms de hook personnalisés préfixés afin d’éviter les conflits avec les extensions tierces

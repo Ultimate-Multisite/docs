@@ -3,11 +3,11 @@ title: Isalathiso se-WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Isalathiso se-WP-CLI
+# Isalathiso se-WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent iza nosapho lwemiyalelo `wp gratis-ai-agent` lokulinganisa iarhente, ukulawula izakhono, nokubuza ubume bearhente kumgca womyalelo. Yonke imiyalelo ifuna WP-CLI 2.0 okanye engaphezulu.
 
-## Ufakelo
+## Ufakelo {#installation}
 
 Imiyalelo ye-WP-CLI ibhaliswa ngokuzenzekelayo xa plugin isebenza. Qinisekisa nge:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Iqhuba iseti yokulinganisa yeZakhono ze-Agent — iseti yee-prompts ezintsonkothileyo, ezinamanyathelo amaninzi ezivavanya wonke ummandla wezakhono. Sebenzisa oku ukuvavanya ukusebenza kwemodeli, ukuthelekisa ababoneleli be-AI, okanye ukuqinisekisa iipakethi zezakhono phambi kokuzisa kwimveliso.
 
-### Isishwankathelo
+### Isishwankathelo {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Iinketho
+### Iinketho {#options}
 
 | Inketho | Inkcazelo |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Ifomathi yemveliso: `table` (engagqibekanga), `json`, `csv` |
 | `--save` | Gcina iziphumo zokulinganisa kwi-database ukuze zithelekiswe kwimbali |
 
-### Imizekelo
+### Imizekelo {#examples}
 
 Qhuba iseti epheleleyo yokulinganisa ngomboneleli nemodeli yangoku:
 
@@ -57,7 +57,7 @@ Qhuba kwimodeli ethile uze ugcine iziphumo:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Imveliso
+### Imveliso {#output}
 
 Umlinganiselo ukhupha umqolo omnye kumbuzo ngamnye oneekholamu ezilandelayo:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Imibuzo Yokulinganisa
+### Imibuzo Yokulinganisa {#benchmark-questions}
 
 Iseti engagqibekanga ibandakanya:
 
@@ -95,11 +95,11 @@ Imibuzo eyongezelelweyo inokubhaliswa nge-filter `gratis_ai_agent_benchmark_ques
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Ilawula izakhono ezifakiweyo kunye neepakethi zezakhono.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Idwelisa zonke izakhono ezibhalisiweyo, umthombo wazo (core okanye pack), kunye nobume bazo bangoku.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Ikhuphela ize ivule iphakheji yezakhono esuka kwirejistri.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Ikhubaza isakhono esithile ngaphandle kokususa iphakheji. Iluncedo ekuthinteleni umda wearhente kwisiza esithile.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Ivula kwakhona isakhono ebesikhubaziwe ngaphambili.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Ibonisa uqwalaselo lwangoku lwearhente kunye nobume bonxibelelwano.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Ibonisa umsebenzi wakutshanje wearhente osuka kwi-debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Iseta kwakhona ubume bearhente: icoca i-CSS efakiweyo, isusa ii-CPT kunye nee-taxonomies ezibhaliswe yiarhente, iseta kwakhona izimbo zehlabathi, ize ikhuphe i-cache yeenketho zearhente. Ayisusi plugin okanye iisetingi zayo.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Iikhowudi Zokuphuma
+## Iikhowudi Zokuphuma {#exit-codes}
 
 Yonke imiyalelo iphuma ngo-`0` xa iphumelele. Iikhowudi zokuphuma ezingengoo-zero:
 

@@ -3,17 +3,17 @@ title: WP Engine integration
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integration med WP Engine
+# Integration med WP Engine {#wp-engine-integration}
 
-## Oversigt
+## Oversigt {#overview}
 WP Engine er en premium managed WordPress hosting platform, der giver optimeret ydeevne, sikkerhed og skalerbarhed til dine WordPress-sider. Denne integration muliggør automatisk domænesynkronisering mellem Ultimate Multisite og WP Engine.
 
-## Funktioner
+## Funktioner {#features}
 - Automatisk domænesynkronisering
 - Underdomæne-support til multisite installationer
 - Problemfri integration med WP Engines eksisterende systemer
 
-## Krav
+## Krav {#requirements}
 Integrationen opdager automatisk, om du hoster på WP Engine, og bruger den indbyggede WP Engine API. Der kræves ingen yderligere konfiguration, hvis WP Engine plugin er aktivt og korrekt konfigureret.
 
 Hvis du derimod skal konfigurere integrationen manuelt, kan du definere en af disse konstanter i din `wp-config.php` fil:
@@ -24,16 +24,16 @@ define('WPE_APIKEY', 'din_api_nøgle'); // Foretrukken metode
 define('WPE_API', 'din_api_nøgle'); // Alternativ metode
 ```
 
-## Opsætning
+## Opsætning {#setup-instructions}
 
-### 1. Verificer WP Engine Plugin
+### 1. Verificer WP Engine Plugin {#1-verify-wp-engine-plugin}
 
 Hvis du hoster på WP Engine, skal WP Engine plugin allerede være installeret og aktiveret. Tjek følgende:
 
 1. WP Engine plugin er aktivt
 2. Filen `wp-content/mu-plugins/wpengine-common/class-wpeapi.php` eksisterer
 
-### 2. Aktiver Integrationen
+### 2. Aktiver Integrationen {#2-enable-the-integration}
 
 1. I din WordPress admin, gå til Ultimate Multisite > Indstillinger (Settings)
 2. Gå til fanen "Domain Mapping"
@@ -41,9 +41,9 @@ Hvis du hoster på WP Engine, skal WP Engine plugin allerede være installeret o
 4. Aktiver WP Engine integrationen
 5. Klik på "Save Changes"
 
-## Hvordan det virker
+## Hvordan det virker {#how-it-works}
 
-### Domænesynkronisering
+### Domænesynkronisering {#domain-syncing}
 
 Når et domæne er kortlagt i Ultimate Multisite:
 
@@ -51,7 +51,7 @@ Når et domæne er kortlagt i Ultimate Multisite:
 2. WP Engine håndterer domænekonfiguration og udstedelse af SSL-certifikatet
 3. Når en domænekortlægning fjernes, vil integrationen fjerne domænet fra WP Engine
 
-### Underdomæne-support
+### Underdomæne-support {#subdomain-support}
 
 For multisite installationer med subdomain:
 
@@ -59,28 +59,28 @@ For multisite installationer med subdomain:
 2. WP Engine håndterer din subdomainkonfiguration.
 3. Når en side slettes, vil integrationen fjerne subdomænen fra WP Engine.
 
-## Vigtige bemærkninger
+## Vigtige bemærkninger {#important-notes}
 
-### Wildcard-domæner
+### Wildcard-domæner {#wildcard-domains}
 
 For multisite installationer med subdomain anbefales det at kontakte WP Engine support for at anmode om en wildcard-domænekonfiguration. Dette gør det muligt for alle subdomæner automatisk at fungere uden, at du skal tilføje dem hver for sig.
 
-### SSL-certifikater
+### SSL-certifikater {#ssl-certificates}
 
 WP Engine håndterer automatisk udstedelse og fornyelse af SSL-certifikater for alle domæner tilføjet via denne integration. Der kræves ingen yderligere konfiguration.
 
-## Fejlfinding
+## Fejlfinding {#troubleshooting}
 
-### Problemer med API-forbindelsen
+### Problemer med API-forbindelsen {#api-connection-issues}
 - Tjek, at WP Engine plugin er aktivt og korrekt konfigureret.
 - Hvis du har defineret API-nøglen manuelt, tjek, at den er korrekt.
 - Kontakt WP Engine support, hvis du har problemer med API'en.
 
-### Domæne tilføjet
+### Domæne tilføjet {#domain-not-added}
 - Tjek Ultimate Multisite logs for eventuelle fejlmeddelelser.
 - Bekræft, at domænet ikke allerede er tilføjet til WP Engine.
 - Sørg for, at dit WP Engine-abonnement understøtter antallet af domæner, du tilføjer.
 
-### Subdomæne-problemer
+### Subdomæne-problemer {#subdomain-issues}
 - Hvis subdomæner ikke virker, kontakt WP Engine support for at anmode om en wildcard-domænekonfiguration.
 - Bekræft, at dine DNS-indstillinger er korrekt konfigureret for hoveddomænet og subdomænerne.

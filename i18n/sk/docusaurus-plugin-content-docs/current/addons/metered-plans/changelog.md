@@ -3,7 +3,7 @@ title: Zoznam zmien meraných plánov
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Zoznam zmien Metered Plans
+# Zoznam zmien Metered Plans {#metered-plans-changelog}
 
 Verzia 1.1.0 – vydané 2026-05-05
 - Nové: Účtovanie AI tokenov pre multisite podstránky — sledujte a účtujte používanie AI tokenov naprieč zákazníckymi stránkami s konfigurovateľnými sadzbami za token
@@ -14,17 +14,17 @@ Verzia 1.1.0 – vydané 2026-05-05
 - Oprava: Vyriešené fatálne chyby a problémy s dvojitou inicializáciou pri načítaní pluginu
 - Vylepšené: Pridaný npm skript check-env, aby sa vývojárske prostredia samy nakonfigurovali pri prvom spustení
 
-### 1.0.3
+### 1.0.3 {#103}
 * Aktualizované na Plugin Update Checker v5
 * Pridané moderné hlavičky WordPress pluginu
 * Vylepšená kompatibilita s najnovšími verziami WordPress
 * Zvýšený výkon sledovania používania
 
-### 1.0.2
+### 1.0.2 {#102}
 * Opravy chýb a vylepšenia výkonu
 * Vylepšené vykazovanie používania
 
-### 1.0.0
+### 1.0.0 {#100}
 * Prvé vydanie
 * Základná funkcionalita meraného účtovania
 * Sledovanie používania a výpočet prekročenia

@@ -4,20 +4,20 @@ title: Filter - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Filter: wu_checkout_validation_aliases
+# Filter: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
 
 Omogućava programerima pluginova da dodaju prilagođene aliase u validator formulara.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Tip | Opis |
 |------|------|-------------|
 | $validation_aliases | `array` | Niz (array) sa id => alias. |
 | $checkout | `\Checkout` | Klasa za checkout. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.1
-### Izvor
+### Izvor {#source}
 
 Definisano je u [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L2153) na liniji 2153

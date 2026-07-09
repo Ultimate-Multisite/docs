@@ -3,15 +3,15 @@ title: Treoir Úsáide Crúcaí
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Treoir maidir le hÚsáid Hooks
+# Treoir maidir le hÚsáid Hooks {#hooks-usage-guide}
 
 Soláthraíonn Ultimate Multisite 200+ action hooks agus 280+ filter hooks. Clúdaíonn an leathanach seo na hooks is coitianta a úsáidtear, le samplaí praiticiúla. Le haghaidh tagartha iomláine a ghintear go huathoibríoch, brabhsáil na leathanaigh eile sa chuid seo.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Saolré an Chustaiméara
+### Saolré an Chustaiméara {#customer-lifecycle}
 
-#### Tar éis Cruthú Custaiméara
+#### Tar éis Cruthú Custaiméara {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Athrú Stádais Custaiméara
+#### Athrú Stádais Custaiméara {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks Láithreáin
+### Hooks Láithreáin {#site-hooks}
 
-#### Tar éis Láithreán a Fhoilsiú
+#### Tar éis Láithreán a Fhoilsiú {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Roimh Chur i bhFeidhm Teimpléid
+#### Roimh Chur i bhFeidhm Teimpléid {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooks Ballraíochta
+### Hooks Ballraíochta {#membership-hooks}
 
-#### Aistrithe Stádais
+#### Aistrithe Stádais {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooks Íocaíochta
+### Hooks Íocaíochta {#payment-hooks}
 
-#### Íocaíocht Críochnaithe / Teipthe
+#### Íocaíocht Críochnaithe / Teipthe {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooks Seiceáil Amach
+### Hooks Seiceáil Amach {#checkout-hooks}
 
-#### Roimh Phróiseáil / Tar éis Críochnaithe
+#### Roimh Phróiseáil / Tar éis Críochnaithe {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooks Fearainn
+### Hooks Fearainn {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Scagairí Praghsála
+### Scagairí Praghsála {#pricing-filters}
 
-#### Iomlán na Cairte
+#### Iomlán na Cairte {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Rátaí Cánach
+#### Rátaí Cánach {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Scagairí Teimpléid
+### Scagairí Teimpléid {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Scagairí Teorannaithe
+### Scagairí Teorannaithe {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Scagairí Geata
+### Scagairí Geata {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Réimsí Fhoirm Checkout
+### Réimsí Fhoirm Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Ábhar Ríomhphoist
+### Ábhar Ríomhphoist {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

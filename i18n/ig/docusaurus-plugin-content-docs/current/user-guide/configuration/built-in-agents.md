@@ -3,11 +3,11 @@ title: Ndị nnọchi anya arụnyere n'ime
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents e wuru n’ime
+# Agents e wuru n’ime {#built-in-agents}
 
 Gratis AI Agent v1.9.0 na-ebute agents ise e wuru n’ime, nke ọ bụla akwadoro tupu oge ya na otu ngwaọrụ lekwasịrị anya, system prompt ahaziri ya, na aro mmalite kwekọrọ na ọrụ a na-ahụkarị n’akụkụ ahụ. Ịgbanwe n’etiti agents na-agbanwe ihe assistant nwere ike ime na otu o si aza — na-enweghị nhazi ọ bụla n’aka gị. Superdav AI Agent v1.18.0 nwere ike itinye ngwaọrụ maara usoro oge, ndekọ ncheta, ọnụ ụzọ nkwado, na ozi SMS na workflows ndị a mgbe ahaziri integrations metụtara ha.
 
-## Kedu ihe bụ Agent?
+## Kedu ihe bụ Agent? {#what-is-an-agent}
 
 Agent ọ bụla bụ profile nhazi nwere aha nke jikọtara:
 
@@ -15,7 +15,7 @@ Agent ọ bụla bụ profile nhazi nwere aha nke jikọtara:
 - **System prompt** — ntụziaka na-edobe olu, ihe ndị agent na-ebute ụzọ, na oke ya
 - **Aro** — prompts edere tupu oge e gosiri na chat interface iji nyere gị aka ibido ngwa ngwa
 
-## Inweta Agent Picker
+## Inweta Agent Picker {#accessing-the-agent-picker}
 
 1. Mepee panel **Gratis AI Agent** n’akụkụ admin WordPress.
 2. Pịa **akara agent** n’elu-akaekpe nke isi chat (akara ahụ na-agbanwe iji gosipụta agent dị ugbu a).
@@ -24,9 +24,9 @@ Agent ọ bụla bụ profile nhazi nwere aha nke jikọtara:
 
 Ị nwekwara ike ịgbanwe agents n’etiti mkparịta ụka — system prompt nke agent ọhụrụ na-amalite ịrụ ọrụ site na ozi na-esote.
 
-## Agents ise e wuru n’ime
+## Agents ise e wuru n’ime {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Ihe a na-elekwasị anya:** Ịmepụta na idezi posts, ibe, na fọm kọntaktị.
 
@@ -47,7 +47,7 @@ Agent ọ bụla bụ profile nhazi nwere aha nke jikọtara:
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Ihe a na-elekwasị anya:** Ịmepụta webụsaịtị site na mmalite ruo n’ọgwụgwụ site n’otu prompt.
 
@@ -70,7 +70,7 @@ Agent ọ bụla bụ profile nhazi nwere aha nke jikọtara:
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Ihe a na-elekwasị anya:** Nhazi anya — agba, typography, CSS, na block patterns.
 
@@ -87,7 +87,7 @@ Agent ọ bụla bụ profile nhazi nwere aha nke jikọtara:
 - *Were screenshot nke homepage ma gwa m ihe ị ga-eme ka mma.*
 - *Mepụta hero block pattern a pụrụ iji ọzọ nwere full-width background image na heading dị n’etiti.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Ihe a na-elekwasị anya:** Ịchọpụta, ịwụnye, na ijikwa WordPress plugins.
 
@@ -105,7 +105,7 @@ Agent ọ bụla bụ profile nhazi nwere aha nke jikọtara:
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Ihe a na-elekwasị anya:** Ịza ajụjụ banyere ọdịnaya saịtị, settings, na nhazi WordPress.
 
@@ -124,7 +124,7 @@ Agent ọ bụla bụ profile nhazi nwere aha nke jikọtara:
 
 ---
 
-## Njikọ Akpaaka Superdav
+## Njikọ Akpaaka Superdav {#superdav-automation-integrations}
 
 Mgbe ahaziri njikọ Superdav AI Agent v1.18.0, agents arụnyere n’ime ya nwere ike isonye na usoro ọrụ akpaaka dị nchebe karị nke na-eburu usoro oge n’uche:
 
@@ -138,11 +138,11 @@ Usoro ọrụ a tụrụ aro: gwa agent ka ọ kwadebe ozi ma ọ bụ omume ah�
 
 ---
 
-## Ịhazigharị Agents
+## Ịhazigharị Agents {#customising-agents}
 
 Enwere ike ịgbatị ma ọ bụ dochie agent ọ bụla arụnyere n’ime ya site na `gratis_ai_agent_agents` filter.
 
-### Ịgbakwunye system prompt ahaziri iche na agent dị adị
+### Ịgbakwunye system prompt ahaziri iche na agent dị adị {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Idebanye agent ọhụrụ
+### Idebanye agent ọhụrụ {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Agent ọhụrụ ahụ na-apụta na Agent Picker ozugbo filter ahụ rụsịrị ọrụ.
 
-### Iwepụ agent arụnyere n’ime ya
+### Iwepụ agent arụnyere n’ime ya {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

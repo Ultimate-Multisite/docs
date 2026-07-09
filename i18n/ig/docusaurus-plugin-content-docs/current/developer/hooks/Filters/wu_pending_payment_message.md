@@ -4,11 +4,11 @@ title: Nzacha - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message
+# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Kwe ka onye ọrụ gbanwee ozi gbasara ịkwụ ụgwọ ndị ka na-echere.
 
-## Parameters
+## Parameters {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Kwe ka onye ọrụ gbanwee ozi gbasara ịkwụ ụgwọ ndị ka na-echere.
 | $customer | `\WP_Ultimo\Models\Customer` | Onye ahịa dị ugbu a. |
 | $pending_payments | `array` | Ndepụta nwere ịkwụ ụgwọ ndị ka na-echere. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 2.0.19
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) n’ahịrị 244

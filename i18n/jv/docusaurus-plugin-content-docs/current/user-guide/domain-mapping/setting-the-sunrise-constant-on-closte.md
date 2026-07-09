@@ -3,13 +3,13 @@ title: Nyetel Konstanta Sunrise ing Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Ngatur konstanta Sunrise dadi true ing Closte
+# Ngatur konstanta Sunrise dadi true ing Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Kadhang penyedia hosting ngunci file `wp-config.php` kanggo alasan keamanan. Iki tegese, Ultimate Multisite ora bisa otomatis ngedit file kuwi kanggo nambah konstanta sing dibutuhake supaya pemetaan domain lan fitur liyane bisa kerja. Closte iku salah siji penyedia kaya ngono.
 
 Nanging, Closte nawakake cara kanggo nambah konstanta menyang `wp-config.php` kanthi aman. Sampeyan mung perlu tindakake langkah-langkah ing ngisor iki:
 
-## Ing dashboard Closte
+## Ing dashboard Closte {#on-the-closte-dashboard}
 
 Dhisik, [masuk menyang akun Closte panjenengan](https://app.closte.com/), klik menu Sites, banjur klik tautan Dashboard ing situs sing lagi panjenengan kerjain saiki:
 

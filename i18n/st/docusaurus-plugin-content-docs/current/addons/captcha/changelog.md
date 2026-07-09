@@ -3,7 +3,7 @@ title: Lenane la diphetoho la Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Lenane la liphetoho la Captcha
+# Lenane la liphetoho la Captcha {#captcha-changelog}
 
 Mofuta: 1.5.0 - E lokollotsoe ka 2026-05-22
 * E ncha: Hard-stop rate limiter — e bala GET le POST e nngwe le e nngwe dibakeng tse sireleditsweng ka captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) mme e araba ka HTTP 429, header ya `Retry-After`, le boroko ba tarpit bo kgethilweng ka tshohanyetso (1–5s, bo thibelletswe ka thata ho 15s).

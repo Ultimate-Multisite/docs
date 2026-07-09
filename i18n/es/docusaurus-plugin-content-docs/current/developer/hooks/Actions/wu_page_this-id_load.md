@@ -4,11 +4,11 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Permitir a los desarrolladores de plugins agregar ganchos adicionales a nuestras páginas.
 
-## Parameters
+## Parameters {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
@@ -16,11 +16,11 @@ Permitir a los desarrolladores de plugins agregar ganchos adicionales a nuestras
 | $page_hook | `string` | El gancho de página de esta página. |
 | $admin_page | `self` | La instancia de la página. |
 
-### Since
+### Since {#since}
 
 - 1.8.2
 - 2.0.4: Se añadió el tercer parámetro: la instancia de la página.
 
-### Source
+### Source {#source}
 
 Definido en [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) en la línea 332

@@ -3,7 +3,7 @@ title: Sunrise கோப்பு பிழை
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise கோப்பை நிறுவுவதில் பிழை
+# Sunrise கோப்பை நிறுவுவதில் பிழை {#error-installing-the-sunrise-file}
 
 sunrise.php கோப்பு என்பது WordPress துவங்கும் போது தேடும் ஒரு சிறப்பு கோப்பாகும். WordPress இந்த sunrise.php கோப்பை கண்டறிய, அது **wp-content folder**-க்குள் இருக்க வேண்டும்.
 

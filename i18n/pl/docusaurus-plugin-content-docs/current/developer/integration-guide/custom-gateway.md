@@ -3,11 +3,11 @@ title: Tworzenie niestandardowej bramki
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Tworzenie niestandardowego Gateway
+# Tworzenie niestandardowego Gateway {#custom-gateway-development}
 
 Możesz tworzyć niestandardowe bramki płatności, rozszerzając klasę `Base_Gateway`.
 
-## Klasa Gateway
+## Klasa Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Zarejestruj Gateway
+## Zarejestruj Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Kluczowe metody
+## Kluczowe metody {#key-methods}
 
 | Metoda | Cel |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Obsługuje żądania zwrotu |
 | `get_payment_methods()` | Zwraca zapisane metody płatności dla klienta |
 
-## Dane uwierzytelniające odnowienia dla cyklicznych członkostw
+## Dane uwierzytelniające odnowienia dla cyklicznych członkostw {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 pozwala integracjom Gateway zgłaszać, czy cykliczne członkostwo ma wielokrotnego użytku dane uwierzytelniające odnowienia, zanim `auto_renew` zostanie utrwalone. Podepnij się pod `wu_membership_has_renewal_credential` i zwróć:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Wyczyść znacznik brakujących danych uwierzytelniających jako część udanego procesu ponownej autoryzacji Gateway po zapisaniu nowych danych uwierzytelniających wielokrotnego użytku.
 
-## Wskazówki
+## Wskazówki {#tips}
 
 - Zawsze zwracaj `WP_Error` w przypadku niepowodzenia, aby Ultimate Multisite mogło obsłużyć wyświetlanie błędu
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Używaj `wu_log_add()` do logowania specyficznego dla Gateway
 
-## Możliwości dostawców konektora AI
+## Możliwości dostawców konektora AI {#ai-connector-provider-capabilities}
 
 Niestandardowe integracje, które wywołują operacje oparte na konektorze AI, powinny być zgodne z obsługiwanym zestawem dostawców OAuth wprowadzonym wraz z AI Provider for Anthropic Max v1.3.0:
 

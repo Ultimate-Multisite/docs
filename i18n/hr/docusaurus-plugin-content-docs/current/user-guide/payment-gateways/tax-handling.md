@@ -3,7 +3,7 @@ title: Obrada poreza
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Obrada poreza
+# Obrada poreza {#tax-handling}
 
 Ultimate Multisite ima modul za naplatu poreza ugrađen u naš osnovni plugin, pa ako trebate naplaćivati poreze na promet za svoje planove, pakete i usluge, to možete jednostavno učiniti bez potrebe za instaliranjem bilo kakvih dodataka.
 
@@ -11,7 +11,7 @@ Za tvrtke smještene u Europi nudimo **dodatak** koji dodaje alate i značajke z
 
 Ultimate Multisite ne prijavljuje niti uplaćuje poreze vladi u vaše ime; jednostavno vam pomažemo naplatiti odgovarajuće poreze u trenutku transakcije. **I dalje ćete morati sami uplaćivati poreze.**
 
-## Omogućavanje naplate poreza
+## Omogućavanje naplate poreza {#enabling-tax-collection}
 
 Naplata poreza nije omogućena prema zadanim postavkama. Da biste je omogućili, trebate otići na **Ultimate Multisite > Postavke > Porezi** i uključiti postavku Omogući poreze.
 
@@ -25,7 +25,7 @@ Možete također pregledati postavke poreza za pojedinačne proizvode:
 
 ![Postavke poreza za proizvode](/img/config/settings-taxes.png)
 
-### Porez isključen naspram poreza uključenog
+### Porez isključen naspram poreza uključenog {#tax-excluded-vs-tax-included}
 
 Prema zadanim postavkama, sve cijene vaših proizvoda ne uključuju porez, što znači da porezi **nisu uključeni** u cijenu proizvoda. Ako utvrdimo da korisnik treba platiti poreze za određenu kupnju, dodat ćemo poreze **povrh** međuzbroja.
 
@@ -37,7 +37,7 @@ Ne zaboravite **spremiti** promjene koje ste napravili.
 
 ###
 
-## Stvaranje poreznih stopa
+## Stvaranje poreznih stopa {#creating-tax-rates}
 
 Nakon što omogućite naplatu poreza, morat ćete stvoriti porezne stope za određene lokacije pomoću našeg uređivača poreznih stopa.
 
@@ -51,7 +51,7 @@ Na stranici uređivača poreznih stopa možete dodati nove porezne stope klikom 
 
 Svakoj poreznoj stopi trebate dati **naslov** (koristi se na računima). Zatim možete odabrati **državu** (obavezno), **saveznu državu/regiju,** i **grad** (oboje neobavezno) gdje će se ovaj porez naplaćivati. Na kraju dodajte **poreznu stopu u postocima**.
 
-### Porezne kategorije
+### Porezne kategorije {#tax-categories}
 
 Možete također stvoriti više poreznih kategorija kako biste dodali različite porezne stope za različite vrste proizvoda.
 
@@ -73,7 +73,7 @@ Možete postaviti poreznu kategoriju za određeni proizvod tako da odete na **st
 
 Na tom istom zaslonu možete isključiti prekidač **Je li oporezivo?** kako biste obavijestili Ultimate Multisite da ne treba naplaćivati poreze za taj određeni proizvod.
 
-## Podrška za europski VAT
+## Podrška za europski VAT {#european-vat-support}
 
 Kao što je ranije spomenuto, imamo dodatak dostupan za korisnike u EU koji imaju dodatne zahtjeve zbog europskih VAT propisa.
 
@@ -101,7 +101,7 @@ Ako se vratite na **karticu Postavke poreza** , vidjet ćete dostupne nove opcij
 
 <!-- Snimka zaslona nedostupna: prekidač Omogući VAT podršku u postavkama poreza nakon aktivacije dodatka -->
 
-### Dohvaćanje VAT poreznih stopa
+### Dohvaćanje VAT poreznih stopa {#pulling-on-vat-tax-rates}
 
 Jedan od alata koje naša integracija dodaje jest mogućnost učitavanja poreznih stopa za države članice EU. To se može učiniti posjetom stranici uređivača poreznih stopa nakon omogućavanja EU VAT podrške.
 
@@ -111,7 +111,7 @@ Na dnu stranice vidjet ćete opcije dohvaćanja VAT-a. Odabir vrste stope i klik
 
 Možete također urediti vrijednosti nakon što ih dohvatite. Da biste to učinili, jednostavno uredite redak tablice koji vam treba i kliknite za spremanje novih vrijednosti.
 
-### Provjera VAT-a
+### Provjera VAT-a {#vat-validation}
 
 Kada je VAT podrška omogućena, Ultimate Multisite dodat će dodatno polje u obrazac checkouta, ispod polja adrese za naplatu. Polje će se prikazati samo korisnicima koji se nalaze u EU.
 

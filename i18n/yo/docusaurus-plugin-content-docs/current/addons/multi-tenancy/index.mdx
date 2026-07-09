@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Ọpọ̀-Ayálégbé
+# Ọpọ̀-Ayálégbé {#multi-tenancy}
 
 Pín àwọn aaye abẹ́ káàkiri àwọn server àti àwọn ibi ipamọ́ data fún iṣẹ́ dáadáa àti ààbò
 
-## Àwọn kókó pàtàkì ìtújáde Version 1.2.0
+## Àwọn kókó pàtàkì ìtújáde Version 1.2.0 {#version-120-release-highlights}
 
 Ọpọ̀-Ayálégbé 1.2.0 ṣàfikún ìpìlẹ̀ ayálégbé aláṣẹ ara rẹ fún àwọn ìṣàn-iṣẹ́ ìyàsọ́tọ̀ iṣelọpọ:
 
@@ -25,21 +25,21 @@ Pín àwọn aaye abẹ́ káàkiri àwọn server àti àwọn ibi ipamọ́ da
 
 Wo àwọn ìtọ́sọ́nà aṣàmúlò fún [ìṣàn-iṣẹ́ ìṣípadà aláṣẹ ara rẹ](/user-guide/getting-started/sovereign-migration-workflow), [ìyàsọ́tọ̀ ọpọ̀-ayálégbé](/user-guide/configuration/multi-tenancy-isolation), àti [àwọn iṣẹ́ ayálégbé aláṣẹ ara rẹ](/user-guide/administration/sovereign-tenant-operations).
 
-## Àwọn ohun tí a nílò
+## Àwọn ohun tí a nílò {#requirements}
 
 - WordPress 5.3 tàbí tó ga ju bẹ́ẹ̀ lọ
 - PHP 7.4 tàbí tó ga ju bẹ́ẹ̀ lọ
 - Multisite Ultimate plugin (tó ń ṣiṣẹ́)
 
-## Ìfifi sori
+## Ìfifi sori {#installation}
 
 1. Ṣàgbéwọlé àwọn fáìlì addon sí directory `/wp-content/plugins/` rẹ
 2. Mú plugin náà ṣiṣẹ́ nípasẹ̀ menu 'Plugins' nínú WordPress
 3. Ṣètò àwọn settings addon nínú admin nẹ́tíwọ́ọ̀kì
 
-## Ìdàgbàsókè
+## Ìdàgbàsókè {#development}
 
-### Ìṣètò
+### Ìṣètò {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Ìgbékalẹ̀ Project
+### Ìgbékalẹ̀ Project {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Àwọn òfin ìsọ̀tun code
 ```
 
-### Ìdánwò
+### Ìdánwò {#testing}
 
 Addon náà ní àkànṣe ìdánwò tó péye:
 
@@ -93,54 +93,54 @@ Addon náà ní àkànṣe ìdánwò tó péye:
 - **Ìbòrí Ìdánwò**: A ṣètò rẹ̀ láti tọ́pa ìbòrí code
 - **Ìdánwò Multisite**: Àwọn ìdánwò ń ṣiṣẹ́ nínú ayika multisite
 
-### Àwọn Ìlànà Code
+### Àwọn Ìlànà Code {#code-standards}
 
 - **Àwọn Ìlànà Coding WordPress**: A fi agbára mú un nípasẹ̀ PHPCS
 - **Ìbámu PHP 7.4+**: Àwọn ẹya PHP òde-òní ni a ṣe àtìlẹ́yìn fún
 - **Ìtúpalẹ̀ Static**: Ìsopọ̀ PHPStan fún ṣíṣe àyẹ̀wò type
 - **Ìsọ̀tun Code**: Àwọn òfin Rector fún àwọn ìgbéga PHP
 
-### Ètò Kíkọ́
+### Ètò Kíkọ́ {#build-system}
 
 - **Ṣíṣe Àwọn Ohun-ìní**: Dídín fáìlì CSS/JS kù
 - **Ìtumọ̀**: Ṣíṣẹ̀dá fáìlì POT
 - **Ìṣàkójọpọ̀**: Ṣíṣẹ̀dá archive fún pípínkiri
 - **Mode Ìdàgbàsókè**: Àwọn ohun-ìní tí kò dín kù fún debugging
 
-## Ìṣètò
+## Ìṣètò {#configuration}
 
 Addon náà ṣe àtìlẹ́yìn fún onírúurú aṣayan ìṣètò tí a lè ráyè wọlé sí nípasẹ̀ àwòrán admin nẹ́tíwọ́ọ̀kì.
 
-### Ìṣètò ayálégbé aláṣẹ ara rẹ
+### Ìṣètò ayálégbé aláṣẹ ara rẹ {#sovereign-tenant-configuration}
 
 Fún àwọn ayálégbé aláṣẹ ara wọn, ṣètò ibi ipamọ́ data ayálégbé, gbòǹgbò ètò fáìlì, ìsopọ̀ host ibi ipamọ́ data, àti agbára host kí o tó darí traffic sí ayálégbé náà. Ṣiṣe ìjẹ́rìí ìṣípadà lẹ́yìn gbogbo ìyípadà tó kan àwọn ẹ̀rí ibi ipamọ́ data, ìsopọ̀ host, routing, tàbí pípèsè aṣàmúlò.
 
 Lo `localhost` nìkan nígbà tí runtime ayálégbé àti àwọn grants ibi ipamọ́ data bá ń retí socket abẹ́lé tàbí ìwọlé ẹrọ-kan-náà. Lo `127.0.0.1` tàbí orúkọ host iṣẹ́ nígbà tí ìyẹn ni host grant tí provider rẹ ṣètò.
 
-### Agbára Hostinger
+### Agbára Hostinger {#hostinger-capability}
 
 Agbára ọpọ̀-ayálégbé Hostinger ń ṣiṣẹ́ pẹ̀lú token ìsopọ̀ Hostinger tí a pín. Jẹ́rìí pé domain náà wà nínú hPanel, DNS tọ́ka sí Account Hostinger, àti pé settings ibi ipamọ́ data ayálégbé bá hPanel mu kí ìjẹ́rìí tó wáyé.
 
-## Hooks àti Filters
+## Hooks àti Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - A dá a ṣiṣẹ́ lẹ́yìn ìbẹ̀rẹ̀ addon
 - `ultimate-multisite-addon-template_loaded` - A dá a ṣiṣẹ́ lẹ́yìn tí gbogbo àwọn fáìlì addon ti kojọpọ̀
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ṣàtúnṣe settings addon
 - `ultimate-multisite-addon-template_enabled` - Ṣàkọjá ipò mímú ṣiṣẹ́/dídènà addon
 
-## License
+## License {#license}
 
 Addon yìí ní license lábẹ́ GPL v3 tàbí èyí tó wá lẹ́yìn rẹ̀.
 
-## Àtìlẹ́yìn
+## Àtìlẹ́yìn {#support}
 
 Fún àtìlẹ́yìn àti ìwé-àkọsílẹ̀, ṣàbẹ̀wò sí [MultisiteUltimate.com](https://multisiteultimate.com)
-## Àkọsílẹ̀ Ìyípadà
+## Àkọsílẹ̀ Ìyípadà {#changelog}
 
 - Version 1.2.0 (2026-06-03): ṣàfikún autologin ayálégbé aláìní-ìpamọ́-ipò, agbára ọpọ̀-ayálégbé Hostinger, ìyàsọ́tọ̀ ibi ipamọ́ data àti ètò fáìlì fún aaye abẹ́ kọ̀ọ̀kan, àwọn ẹnu-ọ̀nà ìjẹ́rìí ìṣípadà aláṣẹ ara rẹ, àwọn ìmúdára bootstrap ayálégbé/database writer, ìsopọ̀ host MySQL tí a lè ṣètò, àti ìparun aláṣẹ ara rẹ tó ní ààbò jù lọ.
 

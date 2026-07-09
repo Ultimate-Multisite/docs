@@ -3,13 +3,13 @@ title: دليل التكامل
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# دليل التكامل
+# دليل التكامل {#integration-guide}
 
 يغطي هذا الدليل أنماط التكامل الشائعة مع Ultimate Multisite، بما في ذلك الاتصال بخدمات خارجية، وبناء بوابات دفع مخصصة، والتعامل مع webhooks.
 
 للبنية التحتية المعزولة للمستأجرين، راجع [تكامل تعدد المستأجرين](./multi-tenancy) للحصول على إرشادات تمهيد المستأجر السيادي، والتحقق من الترحيل، وSSO، والإزالة.
 
-## تكامل CRM
+## تكامل CRM {#crm-integration}
 
 زامن بيانات العملاء إلى CRM الخاص بك عند تسجيل عملاء جدد:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## تكامل التحليلات
+## تكامل التحليلات {#analytics-integration}
 
 تتبّع أحداث الأعمال الرئيسية عبر دورة حياة العميل:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## الخطوات التالية
+## الخطوات التالية {#next-steps}
 
 - [تطوير بوابة مخصصة](./custom-gateway) — ابنِ بوابة الدفع الخاصة بك
 - [التعامل مع Webhook](./webhooks) — أنشئ endpoints مخصصة لـ webhook

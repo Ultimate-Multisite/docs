@@ -3,7 +3,7 @@ title: Mwayi kuita WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kodi ndilipo nji WordPress Multisite?
+# Kodi ndilipo nji WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite imapereka kuti muli ndi sites ingokhazikitsa m'moyo wosangalatsa wosangalatsa. Iyi ndi chinthu chomwe chimapereka, koma si yomwe imaperekedwa m'moyo wosangalatsa.
 
@@ -61,7 +61,7 @@ Ndipo code ili, iliyonse mwa file _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# tambani trailing slash ku /wp-admin
+# tambani trailing slash ku /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

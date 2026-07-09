@@ -3,7 +3,7 @@ title: Amateka y’impinduka za AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP Amateka y'impinduka
+# AffiliateWP Amateka y'impinduka {#affiliatewp-changelog}
 
 Verisiyo: 2.0.1 - Yasohotse ku 2025-09-28
 

@@ -3,15 +3,15 @@ title: लोगो SVG तयार करा
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# लोगो SVG तयार करा
+# लोगो SVG तयार करा {#generate-logo-svg}
 
 **Generate Logo SVG** ही क्षमता Theme Builder ला तुमच्या WordPress साइटमध्ये कस्टम लोगो SVG तयार करण्याची आणि एम्बेड करण्याची सुविधा देते. यात आपोआप namespace-safe sanitisation देखील होते.
 
-## विहंगावलोकन (Overview)
+## विहंगावलोकन (Overview) {#overview}
 
 ही क्षमता तुमच्या साइटच्या ब्रँडिंग दिशा आणि डिझाइन प्राधान्यांनुसार स्केलेबल वेक्टर ग्राफिक्स (SVG) लोगो तयार करते. तयार केलेले SVG आपोआप sanitise केले जातात, जेणेकरून ते WordPress मध्ये वापरण्यासाठी सुरक्षित राहतील आणि त्यांची व्हिज्युअल अखंडता (visual integrity) कायम राहील.
 
-## पॅरामीटर्स (Parameters)
+## पॅरामीटर्स (Parameters) {#parameters}
 
 | पॅरामीटर | प्रकार (Type) | आवश्यक (Required) | वर्णन (Description) |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 | `height` | number | नाही (No) | पिक्सेलमध्ये SVG उंची (default: 200) |
 | `include_text` | boolean | नाही (No) | लोगोमध्ये साइटचे नाव मजकूर म्हणून समाविष्ट करायचे आहे की नाही (default: true) |
 
-## आउटपुट स्वरूप (Output Format)
+## आउटपुट स्वरूप (Output Format) {#output-format}
 
 ही क्षमता खालील संरचनेत (structure) एक SVG string परत करते:
 
@@ -36,7 +36,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 }
 ```
 
-## SVG Sanitisation वर्तन (SVG Sanitisation Behaviour)
+## SVG Sanitisation वर्तन (SVG Sanitisation Behaviour) {#svg-sanitisation-behaviour}
 
 तयार केलेल्या SVG वर आपोआप namespace-safe sanitisation होते, ज्यामुळे:
 
@@ -48,7 +48,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 
 यामुळे हे सुनिश्चित होते की SVG मध्ये अतिरिक्त sanitisation करण्याची गरज न पडता ते थेट WordPress मध्ये एम्बेड करण्यासाठी सुरक्षित आहे.
 
-## वापर उदाहरण (Usage Example)
+## वापर उदाहरण (Usage Example) {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Generate a modern logo for my tech startup called "CloudSync" using blue and whi
 - आधुनिक डिझाइन तत्त्वांचे पालन करतो
 - आपोआप sanitise केले जाते आणि वापरण्यासाठी तयार असते
 
-## Theme Builder सोबत एकत्रीकरण (Integration with Theme Builder)
+## Theme Builder सोबत एकत्रीकरण (Integration with Theme Builder) {#integration-with-theme-builder}
 
 जेव्हा तुम्ही Theme Builder च्या डिझाइन-दिशा निवडीचा वापर करता, तेव्हा Generate Logo SVG क्षमता:
 
@@ -71,21 +71,21 @@ Generate a modern logo for my tech startup called "CloudSync" using blue and whi
 3. आपोआप लोगो तुमच्या साइटच्या header/branding area मध्ये एम्बेड करते.
 4. SVG ला WordPress media मध्ये कस्टम लोगो म्हणून साठवते.
 
-## सर्वोत्तम पद्धती (Best Practices)
+## सर्वोत्तम पद्धती (Best Practices) {#best-practices}
 
 - **स्पष्ट शैली प्राधान्ये द्या** — तुम्हाला कोणत्या प्रकारची डिझाइन शैली हवी आहे याचे वर्णन करा (modern, classic, playful, इत्यादी).
 - **रंग निर्दिष्ट करा** — सातत्यासाठी तुमच्या ब्रँड रंगांचा समावेश करा.
 - **rendering चाचणी घ्या** — वेगवेगळ्या स्क्रीन आकारांवर लोगो योग्यरित्या दिसतो की नाही याची खात्री करा.
 - **अधिक कस्टमायझेशन करा** — आकार आणि प्लेसमेंट समायोजित करण्यासाठी WordPress च्या लोगो कस्टमायझेशन साधनांचा वापर करा.
 
-## मर्यादा (Limitations)
+## मर्यादा (Limitations) {#limitations}
 
 - SVG लोगो स्थिर ग्राफिक्स (animated नाहीत) म्हणून तयार केले जातात.
 - अनेक घटकांनी बनलेले जटिल लोगोसाठी मॅन्युअल सुधारणा (manual refinement) आवश्यक असू शकते.
 - कस्टम फॉन्टला समर्थन नाही; मजकूर प्रणाली फॉन्ट (system fonts) वापरतो.
 - खूप मोठे किंवा खूप लहान आकार गुणवत्तेवर परिणाम करू शकतात.
 
-## संबंधित क्षमता (Related Abilities)
+## संबंधित क्षमता (Related Abilities) {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — ॲक्सेसिबिलिटीसाठी कलर कॉन्ट्रास्ट तपासा.
 - [Create Menu](./create-menu.md) — तुमच्या साइटसाठी नेव्हिगेशन मेनू तयार करा.

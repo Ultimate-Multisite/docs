@@ -3,21 +3,21 @@ title: Opstelling en Verskafferkonfigurasie
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Opstelling en verskafferkonfigurasie
+# Domain Seller: Opstelling en verskafferkonfigurasie {#domain-seller-setup-and-provider-configuration}
 
 Die Domain Seller-byvoeging word met ’n begeleide opstellingsassistent verskaf wat jou deur elke vereiste stap lei. Hierdie bladsy dek die assistentvloei en hoe om verskaffers daarna te konfigureer of te herkonfigureer.
 
-## Vereistes
+## Vereistes {#requirements}
 
 - **Multisite Ultimate** v2.4.12 of hoër, netwerk-geaktiveer
 - **PHP** 7.4+
 - API-bewyse vir ten minste een ondersteunde registrateur
 
-## Eerste-loop-opstellingsassistent
+## Eerste-loop-opstellingsassistent {#first-run-setup-wizard}
 
 Die opstellingsassistent begin outomaties die eerste keer wat jy die plugin netwerk-aktiveer. Dit is ook enige tyd beskikbaar vanaf **Netwerkadministrasie › Ultimate Multisite › Domain Seller-opstelling**.
 
-### Stap 1 — Kies ’n verskaffer
+### Stap 1 — Kies ’n verskaffer {#step-1--choose-a-provider}
 
 Kies die registrateur wat jy wil koppel. Ondersteunde opsies:
 
@@ -33,7 +33,7 @@ Kies die registrateur wat jy wil koppel. Ondersteunde opsies:
 | NameSilo | Nee | Nee |
 | Enom | Ja | Nee |
 
-### Stap 2 — Voer bewyse in
+### Stap 2 — Voer bewyse in {#step-2--enter-credentials}
 
 Elke verskaffer het verskillende bewysvelde:
 
@@ -57,17 +57,17 @@ Elke verskaffer het verskillende bewysvelde:
 
 Merk **Sandbox-modus** waar beskikbaar om teen die verskaffer se toetsomgewing te toets voordat jy lewendig gaan.
 
-### Stap 3 — Toets die verbinding
+### Stap 3 — Toets die verbinding {#step-3--test-the-connection}
 
 Klik **Toets verbinding**. Die assistent stuur ’n liggewig-API-oproep om bewyse en konnektiwiteit te verifieer. Los enige bewysprobleme op voordat jy voortgaan.
 
-### Stap 4 — Voer TLD’s in
+### Stap 4 — Voer TLD’s in {#step-4--import-tlds}
 
 Klik **Voer TLD’s in** om alle beskikbare TLD’s en groothandelpryse vanaf die gekoppelde verskaffer te trek. Dit vul die TLD-lys wat deur domeinprodukte gebruik word. Die invoer kan 30–60 sekondes neem vir verskaffers met groot TLD-katalogusse.
 
 TLD’s word ook outomaties een keer per dag weer gesinkroniseer via ’n geskeduleerde cron-taak.
 
-### Stap 5 — Skep ’n domeinproduk
+### Stap 5 — Skep ’n domeinproduk {#step-5--create-a-domain-product}
 
 Die assistent skep ’n verstek vang-alles-domeinproduk met ’n 10%-opslag. Jy kan hierdie produk onmiddellik wysig of oorslaan en produkte handmatig onder **Ultimate Multisite › Produkte** skep.
 
@@ -75,7 +75,7 @@ Sien [Domeinprodukte en pryse](./domain-products) vir die volledige produkkonfig
 
 ---
 
-## Herkonfigureer ’n verskaffer
+## Herkonfigureer ’n verskaffer {#reconfiguring-a-provider}
 
 Gaan na **Netwerkadministrasie › Ultimate Multisite › Instellings › Domain Seller** (of klik **Instellings** in die plugin-lys).
 
@@ -88,17 +88,17 @@ Die instellingsbladsy bevat:
 - **Bestuur domeinprodukte** — vinnige skakel na die Produktelys
 - **Konfigureer verskaffers** — maak die Integrasie-assistent oop om verskaffers by te voeg of te herkonfigureer
 
-### Voeg ’n tweede verskaffer by
+### Voeg ’n tweede verskaffer by {#adding-a-second-provider}
 
 Klik **Konfigureer verskaffers** en laat die assistent weer loop vir die nuwe registrateur. Jy kan meerdere verskaffers gelyktydig gekonfigureer hê. Ken elke domeinproduk aan ’n spesifieke verskaffer toe, of laat dit op die verstek.
 
-### Sinkroniseer TLD’s handmatig
+### Sinkroniseer TLD’s handmatig {#syncing-tlds-manually}
 
 Op die instellingsbladsy, klik **Sinkroniseer TLD’s** langs enige gekonfigureerde verskaffer om die jongste pryse te trek. Dit is nuttig nadat ’n verskaffer groothandelpryse opdateer of nuwe TLD’s byvoeg.
 
 ---
 
-## Logboeke
+## Logboeke {#logs}
 
 Elke verskaffer skryf na sy eie logkanaal. Logboeke is sigbaar onder **Netwerkadministrasie › Ultimate Multisite › Logboeke**:
 
@@ -118,7 +118,7 @@ Elke verskaffer skryf na sy eie logkanaal. Logboeke is sigbaar onder **Netwerkad
 
 ---
 
-## Verskaffervermoë-aantekeninge
+## Verskaffervermoë-aantekeninge {#provider-capability-notes}
 
 Nie elke registrateur-API stel dieselfde bewerkings bloot nie. Die byvoeging wys nie-ondersteunde bewerkings met duidelike admin-gerigte foute in plaas daarvan om stilweg te misluk.
 

@@ -3,9 +3,9 @@ title: Ինչպես սկսել հավելման մշակումը
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon-ի մշակում
+# Addon-ի մշակում {#addon-development}
 
-## Addon-ի կառուցվածք
+## Addon-ի կառուցվածք {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Հիմնական Addon ֆայլի ձևանմուշ
+## Հիմնական Addon ֆայլի ձևանմուշ {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Պատվերով մոդելի օրինակ
+## Պատվերով մոդելի օրինակ {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin էջի ինտեգրում
+## Admin էջի ինտեգրում {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Ձեր addon-ի թեստավորում
+## Ձեր addon-ի թեստավորում {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 ընդլայնման կետեր
+## v2.13.0 ընդլայնման կետեր {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0-ը ավելացնում է մի քանի ընդլայնման կետեր, որոնք օգտակար են այն addon-ների համար, որոնք ինտեգրվում են ինքնիշխան վարձակալների, վճարման տիրույթների կամ հոսթ-մատակարարի DNS ավտոմատացման հետ։
 
-### SSO և հիմնական կայքի կառավարման URL-ներ
+### SSO և հիմնական կայքի կառավարման URL-ներ {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Վճարման ձևի բազային տիրույթներ
+### Վճարման ձևի բազային տիրույթներ {#checkout-form-base-domains}
 
 Օգտագործեք `wu_checkout_form_base_domains`, երբ ձեր addon-ը տրամադրում է լրացուցիչ համօգտագործվող բազային տիրույթներ, որոնք պետք է գործեն որպես վճարման ձևի **Կայքի URL** տիրույթներ՝ յուրաքանչյուր կայքի անհատական քարտեզագրումների փոխարեն․
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite-ը նորմալացնում է այս հոսթերը և դրանց համար բաց է թողնում յուրաքանչյուր կայքի ավտոմատ քարտեզագրված տիրույթի գրառումները։
 
-### Տիրույթի գրառման ավտոմատ ստեղծում
+### Տիրույթի գրառման ավտոմատ ստեղծում {#automatic-domain-record-creation}
 
 Օգտագործեք `wu_should_create_domain_record_for_site`, երբ ձեր addon-ը պետք է ճնշի կամ հետաձգի նոր ստեղծված կայքի համար տիրույթի գրառման ավտոմատ ստեղծումը․
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Հոսթ-մատակարարի ինտեգրումները, որոնք լսում են `wu_add_subdomain`, կարող են ստեղծել մատակարարի կողմի DNS գրառումներ, երբ կայքեր են ստեղծվում։ Եթե այդ գործողության համար որևէ ինտեգրում գրանցված չէ, Ultimate Multisite-ը բաց է թողնում դատարկ ֆոնային առաջադրանքը։
 
-## Հաջորդ քայլերը
+## Հաջորդ քայլերը {#next-steps}
 
 - Վերանայեք [Hooks տեղեկանքը](/developer/hooks)՝ հասանելի գործողությունների և ֆիլտրերի համար
 - Ստուգեք [REST API ընդհանուր նկարագիրը](/developer/rest-api/overview)՝ API ինտեգրման համար

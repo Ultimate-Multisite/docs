@@ -3,13 +3,13 @@ title: ಏಕೀಕರಣ ಮಾರ್ಗದರ್ಶಿ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ಏಕೀಕರಣ ಮಾರ್ಗದರ್ಶಿ
+# ಏಕೀಕರಣ ಮಾರ್ಗದರ್ಶಿ {#integration-guide}
 
 ಈ ಮಾರ್ಗದರ್ಶಿ Ultimate Multisite ಜೊತೆಗಿನ ಸಾಮಾನ್ಯ ಏಕೀಕರಣ ಮಾದರಿಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ಇದರಲ್ಲಿ ಬಾಹ್ಯ ಸೇವೆಗಳಿಗೆ ಸಂಪರ್ಕಿಸುವುದು, ಕಸ್ಟಮ್ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ನಿರ್ಮಿಸುವುದು, ಮತ್ತು webhooks ನಿರ್ವಹಿಸುವುದು ಸೇರಿವೆ.
 
 ಪ್ರತ್ಯೇಕ ಭಾಡಿಗೆದಾರ ಮೂಲಸೌಕರ್ಯಕ್ಕಾಗಿ, ಸ್ವಾಯತ್ತ ಭಾಡಿಗೆದಾರ bootstrap, migration verification, SSO, ಮತ್ತು teardown ಮಾರ್ಗದರ್ಶನಕ್ಕೆ [ಬಹು-ಭಾಡಿಗೆದಾರಿಕೆ ಏಕೀಕರಣ](./multi-tenancy) ನೋಡಿ.
 
-## CRM ಏಕೀಕರಣ
+## CRM ಏಕೀಕರಣ {#crm-integration}
 
 ಹೊಸ ಗ್ರಾಹಕರು ನೋಂದಾಯಿಸಿದಾಗ ಗ್ರಾಹಕ ಡೇಟಾವನ್ನು ನಿಮ್ಮ CRM ಗೆ sync ಮಾಡಿ:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics ಏಕೀಕರಣ
+## Analytics ಏಕೀಕರಣ {#analytics-integration}
 
 ಗ್ರಾಹಕ ಜೀವನಚಕ್ರದಾದ್ಯಂತ ಪ್ರಮುಖ ವ್ಯವಹಾರ ಘಟನೆಗಳನ್ನು track ಮಾಡಿ:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## ಮುಂದಿನ ಹಂತಗಳು
+## ಮುಂದಿನ ಹಂತಗಳು {#next-steps}
 
 - [ಕಸ್ಟಮ್ Gateway ಅಭಿವೃದ್ಧಿ](./custom-gateway) — ನಿಮ್ಮದೇ ಪಾವತಿ ಗೇಟ್‌ವೇ ನಿರ್ಮಿಸಿ
 - [Webhook ನಿರ್ವಹಣೆ](./webhooks) — ಕಸ್ಟಮ್ webhook endpoints ರಚಿಸಿ

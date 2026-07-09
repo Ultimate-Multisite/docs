@@ -3,21 +3,21 @@ title: 设置和提供商配置
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller：设置和提供商配置
+# Domain Seller：设置和提供商配置 {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller addon 随附引导式设置向导，会带你完成每个必需步骤。本页介绍向导流程，以及之后如何配置或重新配置提供商。
 
-## 要求
+## 要求 {#requirements}
 
 - **Multisite Ultimate** v2.4.12 或更高版本，已在网络中启用
 - **PHP** 7.4+
 - 至少一个受支持注册商的 API 凭据
 
-## 首次运行设置向导
+## 首次运行设置向导 {#first-run-setup-wizard}
 
 设置向导会在你第一次在网络中启用 plugin 时自动启动。也可以随时从 **Network Admin › Ultimate Multisite › Domain Seller Setup** 访问。
 
-### 第 1 步 — 选择提供商
+### 第 1 步 — 选择提供商 {#step-1--choose-a-provider}
 
 选择你要连接的注册商。受支持选项：
 
@@ -33,7 +33,7 @@ Domain Seller addon 随附引导式设置向导，会带你完成每个必需步
 | NameSilo | 否 | 否 |
 | Enom | 是 | 否 |
 
-### 第 2 步 — 输入凭据
+### 第 2 步 — 输入凭据 {#step-2--enter-credentials}
 
 每个提供商都有不同的凭据字段：
 
@@ -57,17 +57,17 @@ Domain Seller addon 随附引导式设置向导，会带你完成每个必需步
 
 在可用时勾选 **Sandbox mode**，以便在上线前针对提供商的测试环境进行测试。
 
-### 第 3 步 — 测试连接
+### 第 3 步 — 测试连接 {#step-3--test-the-connection}
 
 点击 **Test Connection**。向导会发送一个轻量级 API 调用来验证凭据和连接性。继续之前请修复任何凭据问题。
 
-### 第 4 步 — 导入 TLD
+### 第 4 步 — 导入 TLD {#step-4--import-tlds}
 
 点击 **Import TLDs**，从已连接的提供商拉取所有可用 TLD 和批发价格。这会填充域名产品使用的 TLD 列表。对于拥有大型 TLD 目录的提供商，导入可能需要 30–60 秒。
 
 TLD 也会通过计划的 cron job 每天自动重新同步一次。
 
-### 第 5 步 — 创建域名产品
+### 第 5 步 — 创建域名产品 {#step-5--create-a-domain-product}
 
 向导会创建一个默认的兜底域名产品，并设置 10% 加价。你可以立即编辑此产品，或跳过并在 **Ultimate Multisite › Products** 下手动创建产品。
 
@@ -75,7 +75,7 @@ TLD 也会通过计划的 cron job 每天自动重新同步一次。
 
 ---
 
-## 重新配置提供商
+## 重新配置提供商 {#reconfiguring-a-provider}
 
 前往 **Network Admin › Ultimate Multisite › Settings › Domain Seller**（或在 plugin 列表中点击 **Settings**）。
 
@@ -88,17 +88,17 @@ TLD 也会通过计划的 cron job 每天自动重新同步一次。
 - **Manage domain products** — 指向产品列表的快捷链接
 - **Configure providers** — 打开 Integration Wizard 以添加或重新配置提供商
 
-### 添加第二个提供商
+### 添加第二个提供商 {#adding-a-second-provider}
 
 点击 **Configure providers** 并为新的注册商再次运行向导。你可以同时配置多个提供商。将每个域名产品分配给特定提供商，或保留默认设置。
 
-### 手动同步 TLD
+### 手动同步 TLD {#syncing-tlds-manually}
 
 在设置页面中，点击任何已配置提供商旁边的 **Sync TLDs** 以拉取最新价格。当提供商更新批发价格或添加新 TLD 时，这很有用。
 
 ---
 
-## 日志
+## 日志 {#logs}
 
 每个提供商都会写入自己的日志通道。日志可在 **Network Admin › Ultimate Multisite › Logs** 下查看：
 
@@ -118,7 +118,7 @@ TLD 也会通过计划的 cron job 每天自动重新同步一次。
 
 ---
 
-## 提供商功能说明
+## 提供商功能说明 {#provider-capability-notes}
 
 并非每个注册商 API 都公开相同的操作。addon 会以清晰的面向管理员的错误提示呈现不受支持的操作，而不是静默失败。
 

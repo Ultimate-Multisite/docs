@@ -3,21 +3,21 @@ title: Thiết lập và cấu hình nhà cung cấp
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Trình bán tên miền: Thiết lập và cấu hình nhà cung cấp
+# Trình bán tên miền: Thiết lập và cấu hình nhà cung cấp {#domain-seller-setup-and-provider-configuration}
 
 Tiện ích bổ sung Trình bán tên miền đi kèm một trình hướng dẫn thiết lập có chỉ dẫn, dẫn bạn qua mọi bước bắt buộc. Trang này trình bày luồng trình hướng dẫn và cách cấu hình hoặc cấu hình lại nhà cung cấp sau đó.
 
-## Yêu cầu
+## Yêu cầu {#requirements}
 
 - **Multisite Ultimate** v2.4.12 trở lên, được kích hoạt trên mạng
 - **PHP** 7.4+
 - Thông tin xác thực API cho ít nhất một nhà đăng ký được hỗ trợ
 
-## Trình hướng dẫn thiết lập lần chạy đầu tiên
+## Trình hướng dẫn thiết lập lần chạy đầu tiên {#first-run-setup-wizard}
 
 Trình hướng dẫn thiết lập tự động khởi chạy lần đầu tiên bạn kích hoạt plugin trên mạng. Nó cũng luôn có sẵn bất cứ lúc nào tại **Quản trị mạng › Ultimate Multisite › Thiết lập Trình bán tên miền**.
 
-### Bước 1 — Chọn nhà cung cấp
+### Bước 1 — Chọn nhà cung cấp {#step-1--choose-a-provider}
 
 Chọn nhà đăng ký bạn muốn kết nối. Các tùy chọn được hỗ trợ:
 
@@ -33,7 +33,7 @@ Chọn nhà đăng ký bạn muốn kết nối. Các tùy chọn được hỗ 
 | NameSilo | Không | Không |
 | Enom | Có | Không |
 
-### Bước 2 — Nhập thông tin xác thực
+### Bước 2 — Nhập thông tin xác thực {#step-2--enter-credentials}
 
 Mỗi nhà cung cấp có các trường thông tin xác thực khác nhau:
 
@@ -57,17 +57,17 @@ Mỗi nhà cung cấp có các trường thông tin xác thực khác nhau:
 
 Chọn **Chế độ sandbox** khi có sẵn để kiểm thử với môi trường thử nghiệm của nhà cung cấp trước khi chạy trực tiếp.
 
-### Bước 3 — Kiểm tra kết nối
+### Bước 3 — Kiểm tra kết nối {#step-3--test-the-connection}
 
 Nhấp **Kiểm tra kết nối**. Trình hướng dẫn gửi một lệnh gọi API nhẹ để xác minh thông tin xác thực và khả năng kết nối. Khắc phục mọi vấn đề về thông tin xác thực trước khi tiếp tục.
 
-### Bước 4 — Nhập TLD
+### Bước 4 — Nhập TLD {#step-4--import-tlds}
 
 Nhấp **Nhập TLD** để kéo tất cả TLD có sẵn và giá bán buôn từ nhà cung cấp đã kết nối. Việc này điền danh sách TLD được dùng bởi các sản phẩm tên miền. Quá trình nhập có thể mất 30–60 giây đối với các nhà cung cấp có danh mục TLD lớn.
 
 TLD cũng được đồng bộ lại tự động mỗi ngày một lần thông qua một tác vụ cron đã lên lịch.
 
-### Bước 5 — Tạo một sản phẩm tên miền
+### Bước 5 — Tạo một sản phẩm tên miền {#step-5--create-a-domain-product}
 
 Trình hướng dẫn tạo một sản phẩm tên miền mặc định bao quát tất cả với mức tăng giá 10%. Bạn có thể chỉnh sửa sản phẩm này ngay lập tức hoặc bỏ qua và tạo sản phẩm thủ công trong **Ultimate Multisite › Sản phẩm**.
 
@@ -75,7 +75,7 @@ Xem [Sản phẩm tên miền và định giá](./domain-products) để biết 
 
 ---
 
-## Cấu hình lại nhà cung cấp
+## Cấu hình lại nhà cung cấp {#reconfiguring-a-provider}
 
 Đi tới **Quản trị mạng › Ultimate Multisite › Cài đặt › Trình bán tên miền** (hoặc nhấp **Cài đặt** trong danh sách plugin).
 
@@ -88,17 +88,17 @@ Trang cài đặt chứa:
 - **Quản lý sản phẩm tên miền** — liên kết nhanh đến danh sách Sản phẩm
 - **Cấu hình nhà cung cấp** — mở Trình hướng dẫn tích hợp để thêm hoặc cấu hình lại nhà cung cấp
 
-### Thêm nhà cung cấp thứ hai
+### Thêm nhà cung cấp thứ hai {#adding-a-second-provider}
 
 Nhấp **Cấu hình nhà cung cấp** và chạy lại trình hướng dẫn cho nhà đăng ký mới. Bạn có thể cấu hình nhiều nhà cung cấp đồng thời. Gán từng sản phẩm tên miền cho một nhà cung cấp cụ thể, hoặc để ở mặc định.
 
-### Đồng bộ TLD thủ công
+### Đồng bộ TLD thủ công {#syncing-tlds-manually}
 
 Trong trang cài đặt, nhấp **Đồng bộ TLD** bên cạnh bất kỳ nhà cung cấp nào đã cấu hình để kéo giá mới nhất. Điều này hữu ích sau khi nhà cung cấp cập nhật giá bán buôn hoặc thêm TLD mới.
 
 ---
 
-## Nhật ký
+## Nhật ký {#logs}
 
 Mỗi nhà cung cấp ghi vào kênh nhật ký riêng. Nhật ký có thể xem trong **Quản trị mạng › Ultimate Multisite › Nhật ký**:
 
@@ -118,7 +118,7 @@ Mỗi nhà cung cấp ghi vào kênh nhật ký riêng. Nhật ký có thể xem
 
 ---
 
-## Ghi chú về khả năng của nhà cung cấp
+## Ghi chú về khả năng của nhà cung cấp {#provider-capability-notes}
 
 Không phải API của mọi nhà đăng ký đều cung cấp cùng các thao tác. Tiện ích bổ sung hiển thị các thao tác không được hỗ trợ bằng lỗi rõ ràng hướng tới quản trị viên thay vì âm thầm thất bại.
 

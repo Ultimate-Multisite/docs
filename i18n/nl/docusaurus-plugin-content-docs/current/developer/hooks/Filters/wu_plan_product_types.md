@@ -4,22 +4,22 @@ title: Filter - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filter: wu_plan_product_types
+# Filter: wu_plan_product_types {#filter-wuplanproducttypes}
 
 Deze filter laat add-ons toe om extra producttypes te registreren die als plannen moeten worden herkend in validatie en segregatie.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $plan_types | `array` | Array van producttypes die als plannen moeten worden behandeld. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.3.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/functions/product.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/product.php#L196) op regel 196
 
-## Retourneert
+## Retourneert {#returns}

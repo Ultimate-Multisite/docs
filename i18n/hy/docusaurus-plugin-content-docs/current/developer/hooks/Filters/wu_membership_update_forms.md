@@ -4,16 +4,16 @@ title: Զտիչ - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Զտիչ՝ wu_membership_update_forms
+# Զտիչ՝ wu_membership_update_forms {#filter-wumembershipupdateforms}
 
 Թույլ է տալիս մշակողներին ավելացնել թարմացման ձևերի նոր slug-եր։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
 | $slugs | `array` | շրջանցվող ձևերի slug-երի ցանկ։ |
 
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/ui/class-checkout-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-checkout-element.php#L709) ֆայլում՝ 709-րդ տողում։

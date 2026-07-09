@@ -3,17 +3,17 @@ title: Hoe om domeinkartering op te stel
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Hoe om domeinkartering op te stel (v2)
+# Hoe om domeinkartering op te stel (v2) {#how-to-configure-domain-mapping-v2}
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
 Een van die kragtigste kenmerke van ’n premium-netwerk is die vermoë om ons kliënte die kans te bied om ’n topvlakdomein aan hul webwerwe te koppel. Per slot van rekening, wat lyk meer professioneel: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) of [_**joesbikeshop.com**_](http://joesbikeshop.com)? Daarom bied Ultimate Multisite daardie kenmerk ingebou, sonder dat dit nodig is om derdeparty-plugins te gebruik.
 
-## Wat is domeinkartering?
+## Wat is domeinkartering? {#whats-domain-mapping}
 
 Soos die naam aandui, is domeinkartering die vermoë wat deur Ultimate Multisite gebied word om ’n versoek vir ’n pasgemaakte domein te ontvang en daardie versoek te karteer na die ooreenstemmende webwerf in die netwerk waaraan daardie spesifieke domein gekoppel is.
 
-### Hoe om domeinkartering op jou Ultimate Multisite-netwerk op te stel
+### Hoe om domeinkartering op jou Ultimate Multisite-netwerk op te stel {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domeinkartering vereis ’n bietjie opstelling van jou kant af om te werk. Gelukkig outomatiseer Ultimate Multisite die harde werk vir jou sodat jy maklik aan die vereistes kan voldoen.
 
@@ -45,7 +45,7 @@ Maar voordat jy die pasgemaakte domein aan een van die subwebwerwe in jou netwer
 
 ###
 
-### Maak seker dat die domein se DNS-instellings behoorlik gekonfigureer is
+### Maak seker dat die domein se DNS-instellings behoorlik gekonfigureer is {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Vir ’n kartering om te werk, moet jy seker maak dat die domein wat jy beplan om te karteer na jou netwerk se IP-adres wys. Let daarop dat jy die netwerk-IP-adres benodig - die IP-adres van die domein waar Ultimate Multisite geïnstalleer is - nie die IP-adres van die pasgemaakte domein wat jy wil karteer nie. Om na die IP-adres van ’n spesifieke domein te soek, stel ons voor dat jy byvoorbeeld na [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) gaan.
 
@@ -55,7 +55,7 @@ As jy sukkel om dit te laat werk, **kontak jou domeinregistreerder se ondersteun
 
 As jy beplan om jou kliënte toe te laat om hul eie domeine te karteer, sal hulle self die werk aan hierdie deel moet doen. Verwys hulle na hul registreerder se ondersteuningstelsel as hulle nie daarin slaag om die A Record te skep nie.
 
-### Pasgemaakte domeinnaam as Super Admin karteer
+### Pasgemaakte domeinnaam as Super Admin karteer {#mapping-custom-domain-name-as-super-admin}
 
 Wanneer jy as super-admin op jou netwerk aangemeld is, kan jy maklik pasgemaakte domeinname byvoeg en bestuur deur na **Ultimate Multisite > Domains** te gaan.
 
@@ -93,7 +93,7 @@ As jy op die domeinnaam klik, sal jy ’n paar opsies daarin kan sien. Kom ons k
 
 **Is Secure?:** Alhoewel Ultimate Multisite nagaan of die domein ’n SSL-sertifikaat het of nie voordat dit geaktiveer word, kan jy handmatig kies om die domein met of sonder ’n SSL-sertifikaat te laai. Let daarop dat as die webwerf nie ’n SSL-sertifikaat het nie en jy probeer om dit met SSL te forseer, dit vir jou foute kan gee.
 
-### Koppel pasgemaakte domeinnaam as Subsite-gebruiker
+### Koppel pasgemaakte domeinnaam as Subsite-gebruiker {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite-administrateurs kan ook pasgemaakte domeinname vanaf hul subsite-admin-dashboard koppel.
 
@@ -121,7 +121,7 @@ Die gebruiker kan dan op **Next Step** klik en voortgaan om die pasgemaakte dome
 
 Klik op **Add Domain** sal die proses begin om die DNS-inligting van die pasgemaakte domein te verifieer en op te haal.
 
-### Oor domeinsinkronisering
+### Oor domeinsinkronisering {#about-domain-syncing}
 
 Domeinsinkronisering is ’n proses waar Ultimate Multisite die pasgemaakte domeinnaam by jou hosting-rekening voeg as ’n byvoegdomein **sodat die domain mapping kan werk**.
 

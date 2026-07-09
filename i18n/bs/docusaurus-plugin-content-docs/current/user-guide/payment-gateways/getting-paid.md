@@ -3,13 +3,13 @@ title: Primanje uplata
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Primanje uplata (v2)
+# Primanje uplata (v2) {#getting-paid-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
 Ultimate Multisite ima ugrađen sistem članstva i naplate. Da bi naš sistem naplate funkcionisao, integrisali smo najčešće pristupnike plaćanja koji se koriste u e-trgovini. Zadani pristupnici plaćanja u Ultimate Multisite su _Stripe_ , _PayPal_ , i ručno plaćanje. Također možete koristiti _WooCommerce_ , _GoCardless_ i _Payfast_ za primanje uplata instaliranjem njihovih odgovarajućih add-onova.
 
-## Osnovne postavke
+## Osnovne postavke {#basic-settings}
 
 Možete konfigurirati bilo koji od ovih pristupnika plaćanja u postavkama plaćanja za Ultimate Multisite. Možete ih pronaći tako što odete na **Ultimate Multisite meni > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Ovo sprječava da članstvo izgleda kao da se automatski obnavlja kada pristupni
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Gdje pronaći pristupnike:
+## Gdje pronaći pristupnike: {#where-to-find-the-gateways}
 
 Možete postaviti pristupnike plaćanja na istoj stranici ( **Ultimate Multisite > Settings > Payments**). Odmah ispod **aktivnih pristupnika plaćanja** , moći ćete vidjeti: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ i _Manual_.
 
@@ -67,7 +67,7 @@ Evo također punog prikaza postavki pristupnika plaćanja:
 
 Sada, ako želite koristiti _WooCommerce_ , _GoCardless_ ili _Payfast_ kao svoj pristupnik plaćanja, morat ćete **instalirati i konfigurirati njihove add-onove**.
 
-### Kako instalirati WooCommerce add-on:
+### Kako instalirati WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Razumijemo da _Stripe_ i _PayPal_ nisu dostupni u nekim zemljama, što ograničava ili otežava korisnicima Ultimate Multisite da učinkovito koriste naš plugin. Zato smo kreirali add-on za integraciju _WooCommerce,_ koji je vrlo popularan plugin za e-trgovinu. Programeri širom svijeta kreirali su add-onove za integraciju različitih pristupnika plaćanja s njim. Iskoristili smo to kako bismo proširili pristupnike plaćanja koje možete koristiti sa sistemom naplate Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Nakon aktivacije, ako još uvijek nemate instaliran i aktiviran WooCommerce plug
 
 Da pročitate više o WooCommerce Integration add-on-u, **kliknite ovdje**.
 
-### Kako instalirati GoCardless add-on:
+### Kako instalirati GoCardless add-on: {#how-to-install-the-gocardless-add-on}
 
 Koraci za instaliranje _GoCardless_ add-on-a su uglavnom isti kao za _WooCommerce_ add-on. Idite na stranicu add-on-a i odaberite **Ultimate Multisite: GoCardless Gateway** add-on.
 
@@ -111,7 +111,7 @@ Nakon što se instalacija završi, bit ćete preusmjereni na stranicu plugin-a. 
 
 Da naučite kako početi koristiti _GoCardless_ gateway, **pročitajte ovaj članak**.
 
-### Kako instalirati Payfast add-on:
+### Kako instalirati Payfast add-on: {#how-to-install-the-payfast-add-on}
 
 Idite na stranicu add-on-a i odaberite **Ultimate Multisite: Payfast Gateway** add-on.
 

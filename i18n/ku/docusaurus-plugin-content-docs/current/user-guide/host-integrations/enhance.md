@@ -3,33 +3,33 @@ title: بۆ باشترکردنی یەکگرتوویی پۆلێپەلی (Control 
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# پترۆلکردنی یەکپۆل کنترۆڵ پانل
+# پترۆلکردنی یەکپۆل کنترۆڵ پانل {#enhance-control-panel-integration}
 
-## پێشەکی
+## پێشەکی {#overview}
 Enhance سیستەمێکی نوێی پانل کنترۆڵی بریتییە کە توانای بەڕێوەبرد و ئۆتۆماتیککردنی هاستکرد (hosting automation) دەدات. ئەم یەکگرتووکارییە ڕێنوێنی دابین دەکات بۆ هەڵسُوێنانی ئۆتۆماتیکی دامەنی (domain syncing) و بەڕێوەبرد گوازارنی سێرتیسڵ (SSL certificate management) لە نێوان Ultimate Multisite و Enhance Control Panel.
 
 **دیسکۆشنیا پەیوەندیدار:** بۆ چاوەڕوانی شێوازی کۆمەڵگایەکە و زانیاری زیاتر، سەردانی [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) بکە.
 
-## تایبەتمەندییەکان
+## تایبەتمەندییەکان {#features}
 - هەڵسُوێنانی ئۆتۆماتیکی دامەنی کاتێک دامەنانە لە Ultimate Multisite دابنێیت (map)
 - بەڕێوەبرد و پێشکەشکردنی سێرتیسڵی SSL بە شێوازی LetsEncrypt کاتێک DNS ڕێکدەهێنرێت
 - پشتگیریکردنی subdomain بۆ تۆڕکانی کارلێککراو لە چاودێرەی subdomain (subdomain mode)
 - هەڵماردنی دامەنی کاتێک مۆبایس (mappings) دەدابنێیت
 - تاقیکردنەوەی پەیوەندی بۆ دڵنیابوون لە دروستبوونی بەڵگەنامەکانی API
 
-## پێداویستییەکان
+## پێداویستییەکان {#requirements}
 
-### پێداویستیی سیستەم
+### پێداویستیی سیستەم {#system-requirements}
 - Enhance Control Panel دامەزراوە و دەربکەوتووە (accessible)
 - دامەزراندنی WordPress Multisite لەسەر خاڵێکی Enhance یان پەیوەندی بەو خاڵەوە
 - سێرڤری وێب Apache (Enhance ئێستا پشتگیریکردنی Apache دەکات؛ LiteSpeed Enterprise بە نرخێکی کەمتر دەتوانرێت)
 
-### دەستگەیشتنی API
+### دەستگەیشتنی API {#api-access}
 دەبێت دەستگەیشتنی Administrator بۆ Enhance Control Panel هەبێت بۆ دروستکردنی API tokens.
 
-## گرتۆڕکردنی بەڵگەنامەکانی API یەکەت
+## گرتۆڕکردنی بەڵگەنامەکانی API یەکەت {#getting-your-api-credentials}
 
-### ١. دروستکردنی API Token
+### ١. دروستکردنی API Token {#1-create-an-api-token}
 
 ١. وەرگرە (Log in) بۆ Enhance Control Panel بە دۆخی Administrator
 ٢. لە مێنیووی Navigation، سەر **Settings** بڵێژە
@@ -45,7 +45,7 @@ Enhance سیستەمێکی نوێی پانل کنترۆڵی بریتییە کە 
 
 پاش دروستکردن، **Access Token** و **Organization ID** شما نمایش داده خواهد شد. لطفاً این‌ها را فوراً ذخیره کنید زیرا توکن فقط یک بار نمایش داده می‌شود.
 
-### ۲. Organization ID خود را دریافت کنید
+### ۲. Organization ID خود را دریافت کنید {#2-get-your-organization-id}
 
 Organization ID صفحه Access Tokens در یک جعبه اطلاعاتی آبی با برچسب "Org ID: {your_id}" نمایش داده می‌شود.
 
@@ -56,7 +56,7 @@ Organization ID به شکل UUID زیر است: `d8554b6d-5d0d-6719-009b-fec1189
 ۲. روی **Manage customer** برای مشتری مربوطه کلیک کنید
 ۳. به URL نگاه کنید - Organization ID حروف الفبایی بعد از `/customers/` است.
 
-### ۳. Server ID خود را دریافت کنید
+### ۳. Server ID خود را دریافت کنید {#3-get-your-server-id}
 
 برای پیدا کردن Server ID خود (که برای عملیات دامنه لازم است):
 
@@ -73,7 +73,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID از قالب UUID زیر پیروی می‌کند: `00000000-0000-0000-0000-000000000000`
 
-### ۴. API URL خود را دریافت کنید
+### ۴. API URL خود را دریافت کنید {#4-get-your-api-url}
 
 API URL شما آدرس Enhance Control Panel با اضافه کردن `/api/` است:
 
@@ -85,9 +85,9 @@ https://your-enhance-panel.com/api/
 - استفاده فقط از دامنه بدون `/api/`
 - استفاده از HTTP به جای HTTPS (برای امنیت نیاز به HTTPS دارید)
 
-## پیکربندی
+## پیکربندی {#configuration}
 
-### ثابت‌های مورد نیاز
+### ثابت‌های مورد نیاز {#required-constants}
 
 ثابت‌های زیر را در فایل `wp-config.php` خود اضافه کنید:
 
@@ -96,7 +96,7 @@ define('WU_ENHANCE_API_TOKEN', 'your-bearer-token-here');
 define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 
-### ڕێبەری راکردنەوە بەهۆی یارمەتیدەرەوە (Integration Wizard)
+### ڕێبەری راکردنەوە بەهۆی یارمەتیدەرەوە (Integration Wizard) {#setup-via-integration-wizard}
 
 1. لە پۆستە ئیدارەی وۆرسپریت (WordPress admin)، بگواشبە **Ultimate Multisite** > **Settings**.
 2. بۆ لایەنی **Integrations** (یەکگرتوو)، دەربکەوێت.
@@ -111,17 +111,17 @@ define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 - ڕێبەریەکە بە شێوەیەکی ئۆتۆماتیکی دەستکاری بکات (inject) ئەم constantsانە لە فایلەکەی `wp-config.php` دابنێت.
 - پێناسەکان بۆ خۆت کۆپی بکە و بە دەستی زیاد بکەیت.
 
-## ڕێکخستنی زیاتر بۆ وۆرسپریت
+## ڕێکخستنی زیاتر بۆ وۆرسپریت {#additional-wordpress-configuration}
 
 بەرەو پێشنیاری کۆمەڵگاکان ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265))، دەتوانیت ئەم ڕێکخستنە زیاتر بکەیت:
 
-### ڕێکخستنی .htaccess
+### ڕێکخستنی .htaccess {#htaccess-configuration}
 
 ئەگەر کێشەیەک لە پۆلێنکردنی ناوچەکانی (domain mapping) هەبوو:
 1. فایلەکەی سەرەکی Enhance `.htaccess` دەبڕیت.
 2. بە فایلەکەی ستاندارد یەکگرتووی Multisite دابنێتەوە.
 
-### constantsەکانی Cookie
+### constantsەکانی Cookie {#cookie-constants}
 
 ئەم constantsانە بۆ `wp-config.php` زیاد بکە بۆ ئەوەی کارکردنی Cookie لە ناوچەکاندا بە شێوەیەکی دروست بێت:
 
@@ -131,9 +131,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## چۆن کار دەکات؟
+## چۆن کار دەکات؟ {#how-it-works}
 
-### کاتێک ناوچێک پۆلێن دەکرێت (When a Domain is Mapped)
+### کاتێک ناوچێک پۆلێن دەکرێت (When a Domain is Mapped) {#when-a-domain-is-mapped}
 
 ۱. یوزر یه دامنه سفارشی رو توی Ultimate Multisite نگاشت می‌کنه (یا یک سایت جدید در حالت زیردامنه ساخته میشه)
 ۲. این ادغام (integration) یه درخواست POST به APIِ Enhance می‌فرسته: `/servers/{server_id}/domains`
@@ -141,14 +141,14 @@ define('ADMIN_COOKIE_PATH', '/');
 ۴. وقتی DNS به سرور شما متصل میشه، Enhance به صورت خودکار یک گواهی SSL از طریق LetsEncrypt فراهم می‌کنه
 ۵. دامنه با HTTPS فعال میشه
 
-### وقتی دامنه‌ای حذف می‌شود
+### وقتی دامنه‌ای حذف می‌شود {#when-a-domain-is-removed}
 
 ۱. یک نگاشت دامنه در Ultimate Multisite پاک میشه
 ۲. این ادغام (integration) از Enhance پرس‌وجو می‌کنه تا شناسه (ID) اون دامنه رو پیدا کنه
 ۳. یک درخواست DELETE به آدرس زیر ارسال میشه: `/servers/{server_id}/domains/{domain_id}`
 ۴. Enhance اون دامنه رو از تنظیمات سرور شما حذف می‌کنه
 
-### بررسی DNS و SSL
+### بررسی DNS و SSL {#dns-and-ssl-checking}
 
 Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
 - شما می‌توانید بازه زمانی چک کردن رو در **Domain Mapping Settings** تنظیم کنید (پیش‌فرض: ۳۰۰ ثانیه/۵ دقیقه)
@@ -156,9 +156,9 @@ Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
 - اعتبار گواهی SSL به صورت خودکار چک میشه
 - Enhance مدیریت فراهم کردن SSL رو به صورت خودکار انجام میده، بنابراین نیاز به تنظیم دستی SSL نیست
 
-## تأیید تنظیمات
+## تأیید تنظیمات {#verifying-setup}
 
-### تست اتصال
+### تست اتصال {#test-the-connection}
 
 ۱. در Wizard ادغام (Integration Wizard)، از مرحله **Test Connection** استفاده کنید
 ۲. پلاگین سعی می‌کنه دامنه‌های سرور شما رو لیست کنه
@@ -168,7 +168,7 @@ Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
    - شناسه سرور معتبر است
    - مجوزها به درستی تنظیم شده‌اند
 
-### بعد از نگاشت یک دامنه
+### بعد از نگاشت یک دامنه {#after-mapping-a-domain}
 
 ۱. یک دامنه تست رو در Ultimate Multisite نگاشت کنید
 ۲. لاگ‌های Ultimate Multisite رو چک کنید (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -177,9 +177,9 @@ Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
    - دامنه جدید باید در لیست ظاهر بشه
 ۴. وقتی DNS منتشر شد، تأیید کنید که SSL به صورت خودکار فراهم شده است
 
-## گەڕانەوەی مشکلا (Troubleshooting)
+## گەڕانەوەی مشکلا (Troubleshooting) {#troubleshooting}
 
-### پشکی پەیوەندی بە API (API Connection Issues)
+### پشکی پەیوەندی بە API (API Connection Issues) {#api-connection-issues}
 
 **هەڵەی: "Failed to connect to Enhance API" (نەتوانراوە پەیوەبندی بە Enhance API)**
 - دڵنیابیت کە `WU_ENHANCE_API_URL` لە کۆتاییەکەی `/api/` بێت.
@@ -197,7 +197,7 @@ Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
 - دڵنیابیت کە Server IDەکە فۆڕماتی UUIDی دروستە.
 - پشتڕاست بکەرەوە ئایا ئەو خەریکە لە پینێل Enhance دا هەیە.
 
-### ناونیشان (Domain) نەکراوەتەوە
+### ناونیشان (Domain) نەکراوەتەوە {#domain-not-added}
 
 **دۆسیەی لاگەکان چاک بکە:**
 1. بگە بە **Ultimate Multisite** > **Logs**.
@@ -210,7 +210,7 @@ Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
 - ڕێگەپێدانی API کەم بێت (دڵنیابیت کە تۆکنەکە ڕۆڵی System Administratorی هەیە).
 - Server IDەکە لەگەڵ خەریکی ڕاستەقینەی Enhance یەک نەبێت.
 
-### کێشەکانی گواستنەوەی SSL (SSL Certificate Issues)
+### کێشەکانی گواستنەوەی SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 
 **SSL نەکراوەتەوە:**
 - دڵنیابیت کە DNS بە ئای پڕۆسێسەرەکەت دەڕوات.
@@ -224,7 +224,7 @@ Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
 2. ناونیشانەکەت بدۆزەوە و دۆخی SSLیەکەی چاک بکە.
 3. ئەگەر پێویست بوو، دەتوانیت گواستنەوەی SSL بە شێوەیەکی دەستی دەستپێبدەیت.
 
-### ماوەی چاککردنی DNS (DNS Check Interval)
+### ماوەی چاککردنی DNS (DNS Check Interval) {#dns-check-interval}
 
 ئەگەر دامێنی یان سێلسڵ (SSL certificates) زۆر کات دەبێت بۆ چالاککردنەوە:
 1. بگوا به **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -232,7 +232,7 @@ Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
 3. لە 300 چرکەی پیش‌دەکەیت بۆ بە شێوەیەکی کەمتر (کەمترین: 10 چرکە) بگۆڕە
 4. **تێبینی:** پاشکەوتنی کورتتر واتای چاککردنەوەی زیاترە، بەڵام بارکردنی خەریکی سروری زۆر دەبێت
 
-### هەڵەکانی ناساندنی تایبەتمەندی (Authentication Errors)
+### هەڵەکانی ناساندنی تایبەتمەندی (Authentication Errors) {#authentication-errors}
 
 **هەڵەکانی HTTP 401/403:**
 - توکن API یەکێتیت لە Enhance دابنێرییەکی نوێ بکە (Regenerate your API token in Enhance)
@@ -240,7 +240,7 @@ Ultimate Multisite شامل چک کردن داخلی برای DNS و SSL هست:
 - چاک بکە کە توکنەکە نەکراوە
 - دڵنیابیت کە لە کارۆینێکی ڕاستدا بەکاردەهێنیت (لەبەر ئەوەی زۆربەی کات پێویست نییە لە URL دا)
 
-### شیکردنەوەی تۆمارەکان (Log Analysis)
+### شیکردنەوەی تۆمارەکان (Log Analysis) {#log-analysis}
 
 تێبینی ورد و پڕ دەقکردن یەکگرتوو بکە:
 ```php
@@ -254,15 +254,15 @@ define('WP_DEBUG_LOG', true);
 - تۆمارە دیباجی WordPress: `wp-content/debug.log`
 - تۆمارەکانی پۆستەی Enhance: لە ناو ڕاپۆرت ADMINISTRATOR ی Enhance دەبینراوێت
 
-## ئاماژە بۆ API (API Reference)
+## ئاماژە بۆ API (API Reference) {#api-reference}
 
-### ناساندنی تایبەتمەندی (Authentication)
+### ناساندنی تایبەتمەندی (Authentication) {#authentication}
 هەموو داواکاریی API بە توکن Bearer دابنێرییەکی جیاواز بەکاردێن:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### شوێنەکانی کارکردن کە زیاتر بەکاردێن (Common Endpoints Used)
+### شوێنەکانی کارکردن کە زیاتر بەکاردێن (Common Endpoints Used) {#common-endpoints-used}
 
 **لیستکردنی Serverەکان:**
 ```
@@ -285,30 +285,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### dokumantacijaی تەواوی API (Full API Documentation)
+### dokumantacijaی تەواوی API (Full API Documentation) {#full-api-documentation}
 دۆکومنتacijaی تەواوی API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## باشترین شێوازی کارکردن (Best Practices)
+## باشترین شێوازی کارکردن (Best Practices) {#best-practices}
 
-### ئاسایدارکردن (Security)
+### ئاسایدارکردن (Security) {#security}
 - **هیچکاش API tokens-ên خۆت بە Git'ta نۆمئەنت (commit) مەکارێن.**
 - Tokens-ên خۆت لە `wp-config.php` دابنێ کە پێویستە لە Git لە دەرکردنی بێت.
 - لەگەڵ ئەو توکنانەی ڕێزم و دەسەڵاتی پێویست هەیە بەکاری بهێنە (System Administrator بۆ تەواوگرتنی یەکگرتوو).
 - بۆ ژینگەکانی پڕۆدۆکشن (production)، مۆدای کۆتاییی توکنەکان دیاری بکە.
 - توکنەکان بەردەوام گۆڕانکاری بکە.
 
-### کارایی (Performance)
+### کارایی (Performance) {#performance}
 - بۆ ئەوەی فراوانی داواکردنی API لە دەستنیشان نەبێت، ماوەی پشکنینی DNSی سەرەکی (300 چرکە) بەکاربهێنە.
 - کاتێک کار لەسەر گۆڕینی ناوچەکانی درێژخایەن دەکەیت، سەرچاوەکان وەرگرتنی Enhance فەرمیی بکە.
 - ئەگەر زۆر ناوچ دەبێت یەکجار زیاد بکەیت، چەند ناوچێک بە شێوەیەکی پاشاڕێ (staggering) زیادکردن لە پرسیار بکە.
 
-### چاودێری (Monitoring)
+### چاودێری (Monitoring) {#monitoring}
 - بەردەوام لۆگەکانی Ultimate Multisite بۆ هەڵەی یەکگرتوو ببنەڕەت ببینیت.
 - چاودێریی داواکردنی ناوچە شکستخوازان دیاری بکە.
 - دڵنیا بە لەوە چی SSL certificates-ە بە شێوەیەکی دروست دەکرێنەوە (provisioning).
 - سەرنجی لە توانای Enhance server و سنوورەکانی ناوچکان بدە.
 
-## سەرچاوە زیاتر (Additional Resources)
+## سەرچاوە زیاتر (Additional Resources) {#additional-resources}
 
 - **دۆکومێنتە فەرمی ی Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **دۆکومێنتە APIی Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -316,7 +316,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 - **دیسکۆشنیا GitHub:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **ئامێرەی مۆڵپەپکردنی ناوچەکانی Ultimate Multisite:** بۆ زیاتر بخوێنەرەوە بەشی wikiی "How to Configure Domain Mapping v2"
 
-## پشکنین (Support)
+## پشکنین (Support) {#support}
 
 ئەگەر کێشەیەکت هەبوو:
 1. بەشی چارەسەرکردن لە سەرەوە ببینیت.
@@ -325,7 +325,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 4. بۆ کێشەکانی تایبەت بە پەنلەکە، پەیوەندی بە پشتیوانی Enhance بکە.
 5. بۆ یارمەتی کۆمەڵگایەک، داواکاری نوێی دیسکۆشنیا دروست بکە لەگەڵ لۆگەکانی هەڵەی ورد.
 
-## تێبینییەکان (Notes)
+## تێبینییەکان (Notes) {#notes}
 
 ئەم یەکگرتووەکە تەنها ئالیزای ناو دامێنی دەگرێتەوە؛ Manage بە شێوەیەکی خۆکار SSL دەدات.
 ئەم یەکگرتووەیە پشتگیریکردنی هەردوو مۆبایس (custom domain mappings) و ئەو سایتانەی کە لەسەر ناوی subdomain دایەنرن، کردوونی هەیە.

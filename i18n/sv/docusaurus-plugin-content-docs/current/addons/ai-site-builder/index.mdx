@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller högre
 - PHP 7.4 eller högre
 - Multisite Ultimate plugin (aktivt)
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp tilläggsfilerna till din `/wp-content/plugins/` katalog
 2. Aktivera pluginet via menyn 'Plugins' i WordPress
 3. Konfigurera tilläggsinställningarna i nätverksadministratören
 
-## Utveckling
+## Utveckling {#development}
 
-### Uppställning
+### Uppställning {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektstruktur
+### Projektstruktur {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Regler för kodmodernisering
 ```
 
-### Testning
+### Testning {#testing}
 
 Tillägget inkluderar ett omfattande testramverk:
 
@@ -79,44 +79,44 @@ Tillägget inkluderar ett omfattande testramverk:
 - **Testtäckning (Test Coverage)**: Konfigurerad för att spåra kodtäckning
 - **Multisite-testning**: Tester körs i en multisite-miljö
 
-### Kodstandarder
+### Kodstandarder {#code-standards}
 
 - **WordPress Kodstandarder**: Hålls i ordning via PHPCS
 - **PHP 7.4+ Kompatibilitet**: Stöder moderna PHP-funktioner
 - **Statisk Analys**: PHPStan-integration för typkontroll
 - **Kodmodernisering**: Rector-regler för PHP-uppgraderingar
 
-### Byggsystem (Build System)
+### Byggsystem (Build System) {#build-system}
 
 - **Tillgångsprocessering (Asset Processing)**: Minifiering av CSS/JS-filer
 - **Översättning (Translation)**: Generering av POT-filer
 - **Paketering (Packaging)**: Skapande av arkiv för distribution
 - **Utvecklingsläge (Development Mode)**: Ominifierade tillgångar för felsökning
 
-## Konfiguration
+## Konfiguration {#configuration}
 
 Tillägget stöder olika konfigurationsalternativ som är tillgängliga via nätverksadministratörsgränssnittet.
 
-## Hooks och Filters
+## Hooks och Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Utlöses efter tilläggsinitialisering
 - `ultimate-multisite-ai-site-builder_loaded` - Utlöses efter att alla tilläggsfiler har laddats
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modifiera tilläggsinställningarna
 - `ultimate-multisite-ai-site-builder_enabled` - Överskriva tilläggets aktiverings-/avaktiveringsstatus
 
-## Licens
+## Licens {#license}
 
 Detta tillägg är licensierat under GPL v3 eller senare.
 
-## Support
+## Support {#support}
 
 För support och dokumentation, besök [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ändringslogg (Changelog)
+## Ändringslogg (Changelog) {#changelog}
 
 - Version 1.0.1 (2025-09-28): bytte prefix till ultimate-multisite; uppdaterade textdomän; versionsökning.
 

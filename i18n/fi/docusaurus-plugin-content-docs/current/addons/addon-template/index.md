@@ -3,25 +3,25 @@ title: Lisäosan mallipohja
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Lisäosan malli
+# Lisäosan malli {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 
 - WordPress 5.3 tai uudempi
 - PHP 7.4 tai uudempi
 - Multisite Ultimate -lisäosa (aktiivinen)
 
-## Asennus
+## Asennus {#installation}
 
 1. Lataa lisäosan tiedostot `/wp-content/plugins/`-hakemistoosi
 2. Aktivoi plugin WordPressin 'Plugins'-valikon kautta
 3. Määritä lisäosan asetukset verkon ylläpidossa
 
-## Kehitys
+## Kehitys {#development}
 
-### Asennus
+### Asennus {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektin rakenne
+### Projektin rakenne {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Koodin modernisointisäännöt
 ```
 
-### Testaus
+### Testaus {#testing}
 
 Lisäosa sisältää kattavan testauskehyksen:
 
@@ -75,44 +75,44 @@ Lisäosa sisältää kattavan testauskehyksen:
 - **Testikattavuus**: Määritetty seuraamaan koodikattavuutta
 - **Multisite-testaus**: Testit suoritetaan multisite-ympäristössä
 
-### Koodistandardit
+### Koodistandardit {#code-standards}
 
 - **WordPress-koodausstandardit**: Valvotaan PHPCS:n kautta
 - **PHP 7.4+ -yhteensopivuus**: Moderneja PHP-ominaisuuksia tuetaan
 - **Staattinen analyysi**: PHPStan-integraatio tyyppitarkistukseen
 - **Koodin modernisointi**: Rector-säännöt PHP-päivityksiin
 
-### Koontijärjestelmä
+### Koontijärjestelmä {#build-system}
 
 - **Resurssien käsittely**: CSS/JS-tiedostojen pienennys
 - **Käännös**: POT-tiedoston luonti
 - **Paketointi**: Arkiston luonti jakelua varten
 - **Kehitystila**: Pienentämättömät resurssit virheenkorjausta varten
 
-## Määritykset
+## Määritykset {#configuration}
 
 Lisäosa tukee erilaisia määritysvaihtoehtoja, jotka ovat käytettävissä verkon ylläpitoliittymän kautta.
 
-## Hookit ja suodattimet
+## Hookit ja suodattimet {#hooks-and-filters}
 
-### Toiminnot
+### Toiminnot {#actions}
 
 - `ultimate-multisite-addon-template_init` - Käynnistetään lisäosan alustuksen jälkeen
 - `ultimate-multisite-addon-template_loaded` - Käynnistetään, kun kaikki lisäosan tiedostot on ladattu
 
-### Suodattimet
+### Suodattimet {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Muokkaa lisäosan asetuksia
 - `ultimate-multisite-addon-template_enabled` - Ohita lisäosan käyttöönottotila
 
-## Lisenssi
+## Lisenssi {#license}
 
 Tämä lisäosa on lisensoitu GPL v3 -lisenssillä tai uudemmalla.
 
-## Tuki
+## Tuki {#support}
 
 Tukea ja dokumentaatiota varten käy osoitteessa [MultisiteUltimate.com](https://multisiteultimate.com)
-## Muutosloki
+## Muutosloki {#changelog}
 
 - Versio 1.0.1 (2025-09-28): nimeä etuliite uudelleen muotoon ultimate-multisite; päivitä text domain; version korotus.
 

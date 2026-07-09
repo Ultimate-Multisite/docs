@@ -3,15 +3,15 @@ title: 'Lekcija 6: Iskustvo registracije'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekcija 6: Iskustvo prijave
+# Lekcija 6: Iskustvo prijave {#lesson-6-the-signup-experience}
 
 Checkout tok je mjesto gdje interes postaje prihod. Zbunjujući ili generički proces prijave gubi klijente. Niche-specifičan tok koji govori njihovim jezikom i koji se čini nezahtjevan konvertira ih.
 
-## Gdje smo stali
+## Gdje smo stali {#where-we-left-off}
 
 FitSite ima konfigurirane šablone i planove. Sada gradimo proces registracije i plaćanja koji vlasnike fitness studija pretvara u plaćene klijente.
 
-## Razumijevanje toka registracije
+## Razumijevanje toka registracije {#understanding-the-registration-flow}
 
 Ultimate Multisite checkout forme su potpuno prilagodljive višestepene forme. Za FitSite, želimo tok koji:
 
@@ -21,11 +21,11 @@ Ultimate Multisite checkout forme su potpuno prilagodljive višestepene forme. Z
 
 Pogledajte [The Registration Flow](/user-guide/configuration/the-registration-flow) za potpunu tehničku referencu.
 
-## Dizajniranje FitSite Checkout-a
+## Dizajniranje FitSite Checkout-a {#designing-the-fitsite-checkout}
 
 Idite na **Ultimate Multisite > Checkout Forms** i kreirajte novu formu.
 
-### Korak 1: Odabir plana
+### Korak 1: Odabir plana {#step-1-plan-selection}
 
 Prva stvar koju vlasnik fitness studija treba vidjeti treba biti planovi, predstavljeni terminologijom koju razumiju.
 
@@ -37,7 +37,7 @@ Prva stvar koju vlasnik fitness studija treba vidjeti treba biti planovi, predst
 "1 GB skladišta" ništa ne znači vlasniku teretane. "Sve što vam treba za profesionalni sajt studija" znači sve. Opise planova pišite na jeziku vašeg klijenta.
 :::
 
-### Korak 2: Odabir šablona
+### Korak 2: Odabir šablona {#step-2-template-selection}
 
 Nakon odabira plana, klijent bira svoj početni šablon.
 
@@ -45,7 +45,7 @@ Nakon odabira plana, klijent bira svoj početni šablon.
 - Dostupni šabloni filtriraju se prema planu koji su odabrali (konfigurisano u Lekciji 5)
 - Svaki šablon treba imati preglednu sliku koja prikazuje dizajn specifičan za fitness
 
-### Korak 3: Kreiranje računa
+### Korak 3: Kreiranje računa {#step-3-account-creation}
 
 Držite ovo minimalnim. Sakupljajte samo:
 
@@ -55,27 +55,27 @@ Držite ovo minimalnim. Sakupljajte samo:
 
 Nemojte tražiti informacije koje vam nisu potrebne prilikom prijave. Svako dodatno polje smanjuje konverzije.
 
-### Korak 4: Postavljanje sajta
+### Korak 4: Postavljanje sajta {#step-4-site-setup}
 
 - **Site title**: Popunite automatski iz imena studija unesenog u Koraku 3
 - **Site URL**: Automatski generišite iz imena studija (npr. `ironworks.fitsite.com`)
 
-### Korak 5: Plaćanje
+### Korak 5: Plaćanje {#step-5-payment}
 
 - Dodajte polje **Payment**
 - Konfigurišite svoju plaćanja gateway ([Stripe](/user-guide/payment-gateways/stripe) je preporučljiv za naplatu pretplate)
 - Ako ste kreirali *order bumps* u Lekciji 5, dodajte polje **Order Bump** prije koraka plaćanja
 
-### Korak 6: Potvrda
+### Korak 6: Potvrda {#step-6-confirmation}
 
 - Prilagodite poruku potvrde jezikom specifičnim za fitness
 - Primjer: "Vaš sajt fitness studija se kreira. Preusmjerat ćemo vas na vaš novi sajt za nekoliko sekundi."
 
-## Dodavanje prekida za odabir perioda
+## Dodavanje prekida za odabir perioda {#adding-a-period-selection-toggle}
 
 Ako ste postavili varijacije cijena u svojim planovima (mjesečno naspram godišnje), dodajte polje **Period Selection** na checkout formu kako bi klijenti mogli prebacivati između perioda naplate. Pogledajte [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) za uputstva.
 
-## Konfigurisanje plaćanja
+## Konfigurisanje plaćanja {#configuring-payment}
 
 Ako još niste postavili plaćanja gateway:
 
@@ -85,7 +85,7 @@ Ako još niste postavili plaćanja gateway:
 
 Pogledajte [Getting Paid](/user-guide/payment-gateways/getting-paid) za detalje o tome kako novac teče na vaš račun.
 
-## Testiranje toka
+## Testiranje toka {#testing-the-flow}
 
 Prije nego nastavite, obavite puni test prijave:
 
@@ -105,7 +105,7 @@ Provjerite da:
 - [ ] Klijent stigne na funkcionalni sajt sa odabranim šablonom
 - [ ] E-mailovi potvrde koriste jezik specifičan za fitness
 
-## FitSite Mreža do sada
+## FitSite Mreža do sada {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Što smo izgradili u ovoj lekciji
+## Što smo izgradili u ovoj lekciji {#what-we-built-this-lesson}
 
 - **Višestepena checkout forma** prilagođena vlasnicima fitness studija
 - **Jezik specifičan za niche** kroz cijeli tok prijave

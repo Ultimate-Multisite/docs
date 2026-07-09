@@ -3,15 +3,15 @@ title: Gawe Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Ngasilake Logo SVG
+# Ngasilake Logo SVG {#generate-logo-svg}
 
 Kabisan **Ngasilake Logo SVG** ngidini Theme Builder nggawe lan masang SVG logo kustom langsung menyang situs WordPress sampeyan nganggo sanitasi otomatis sing aman kanggo namespace.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Kabisan iki ngasilake logo scalable vector graphics (SVG) adhedhasar arah branding lan pilihan desain situs sampeyan. SVG sing diasilake otomatis disanitasi kanggo mesthekake aman digunakake ing WordPress nalika tetep njaga integritas visual.
 
-## Parameter
+## Parameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Kabisan iki ngasilake logo scalable vector graphics (SVG) adhedhasar arah brandi
 | `height` | number | Ora | Dhuwure SVG ing piksel (gawan: 200) |
 | `include_text` | boolean | Ora | Apa jeneng situs dilebokake minangka teks ing logo (gawan: true) |
 
-## Format Output
+## Format Output {#output-format}
 
 Kabisan iki mbalekake string SVG kanthi struktur ing ngisor iki:
 
@@ -36,7 +36,7 @@ Kabisan iki mbalekake string SVG kanthi struktur ing ngisor iki:
 }
 ```
 
-## Prilaku Sanitasi SVG
+## Prilaku Sanitasi SVG {#svg-sanitisation-behaviour}
 
 SVG sing diasilake ngalami sanitasi otomatis sing aman kanggo namespace kanggo:
 
@@ -48,7 +48,7 @@ SVG sing diasilake ngalami sanitasi otomatis sing aman kanggo namespace kanggo:
 
 Iki mesthekake SVG aman kanggo dipasang langsung ing WordPress tanpa mbutuhake sanitasi tambahan.
 
-## Tuladha Panggunaan
+## Tuladha Panggunaan {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Kabisan iki nggawe logo SVG sing:
 - Ngetutake prinsip desain modern
 - Otomatis disanitasi lan siap digunakake
 
-## Integrasi karo Theme Builder
+## Integrasi karo Theme Builder {#integration-with-theme-builder}
 
 Nalika nggunakake pilihan arah desain saka Theme Builder, kabisan Ngasilake Logo SVG:
 
@@ -71,21 +71,21 @@ Nalika nggunakake pilihan arah desain saka Theme Builder, kabisan Ngasilake Logo
 3. Otomatis masang logo menyang area header/branding situs sampeyan
 4. Nyimpen SVG minangka logo kustom ing media WordPress
 
-## Praktik Paling Apik
+## Praktik Paling Apik {#best-practices}
 
 - **Wenehana pilihan gaya sing cetha** — jelasna gaya desain sing sampeyan karepake (modern, klasik, playful, lsp.)
 - **Temtokake warna** — lebokna warna brand sampeyan supaya konsisten
 - **Tes rendering** — priksa manawa logo katon kanthi bener ing macem-macem ukuran layar
 - **Kustomisasi luwih lanjut** — gunakake piranti kustomisasi logo WordPress kanggo nyetel ukuran lan panggonan
 
-## Watesan
+## Watesan {#limitations}
 
 - Logo SVG diasilake minangka grafis statis (ora animasi)
 - Logo kompleks kanthi akeh unsur bisa mbutuhake panyempurnaan manual
 - Font kustom ora didhukung; teks nggunakake font sistem
 - Dimensi sing gedhe banget utawa cilik banget bisa mengaruhi kualitas
 
-## Kabisan Gegandhengan
+## Kabisan Gegandhengan {#related-abilities}
 
 - [Validasi Kontras Palet](./validate-palette-contrast.md) — mriksa kontras warna kanggo aksesibilitas
 - [Nggawe Menu](./create-menu.md) — nggawe menu navigasi kanggo situs sampeyan

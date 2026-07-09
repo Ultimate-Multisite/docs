@@ -3,11 +3,11 @@ title: Khuul Tsim Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0  introduces **Plugin Builder & Sandbox System**, which lets the AI assistant generate, activate, and manage WordPress plugins on your network — all through a safe, isolated sandbox environment.
 
-## Overview
+## Overview {#overview}
 
 The Plugin Builder allows the AI assistant to write custom WordPress plugins in response to natural language requests. The plugins that are generated get checked for mistakes (validated), saved, and turned on inside a sandbox layer before they ever touch how the live site works.
 
@@ -17,7 +17,7 @@ Use cases include:
 - Testing features that need specific WordPress hooks or custom post types.
 - Making quick automation scripts for doing things in batches.
 
-## Generating a Plugin via AI
+## Generating a Plugin via AI {#generating-a-plugin-via-ai}
 
 To make a plugin, open the Gratis AI Agent chat interface and tell it what you want. For example:
 
@@ -32,7 +32,7 @@ The AI will do this:
 
 You can make it better by asking more questions in the same chat thread before you turn it on.
 
-## Sandbox Activation
+## Sandbox Activation {#sandbox-activation}
 
 Turning on a plugin in the sandbox is different from turning it on on your live network. The sandbox:
 
@@ -48,7 +48,7 @@ To turn on a plugin in the sandbox, just click the **Activate in Sandbox** butto
 
 Status message ཞིག་གིས་ plugin དེ་བསྐྱར་ཆུ་བྱས་པ་ཡོང་ངན་ཡང་ན་ཡག་པོ་ཡོད་པ་རྟོགས་ཐུབ་ཀྱི་ཡོད། ຖ້າ failure (បរའཕྲད་) བྱུང་ན་ error log དེ་ chat thread ནང་བསྟན་ཡོང་།
 
-## Plugin བཟོས་པའི་ものを འཇོག་པའི་སྐོར་
+## Plugin བཟོས་པའི་ものを འཇོག་པའི་སྐོར་ {#managing-generated-plugins}
 
 Plugin བཟོས་པ་ཚོ་ **Gratis AI Agent → Plugin Builder → Manage Plugins** ནང་ list བྱས་ཡོད་တယ်။ དེའི་སྒྲོན་མོ་ནས་ཁྱེད་རང་གིས་འདི་ལྟར་ လုပ်ဆောင်နိုင်ပါတယ်:
 
@@ -64,7 +64,7 @@ Plugin བཟོས་པ་ཚོ་ **Gratis AI Agent → Plugin Builder → M
 **Install on network** འདི་གིས་ generated plugin དེ་ཁྱེད་རང་གི་ live WordPress multisite ལ་ deploy བྱེད་တယ်။ മുന്നോട്ട് བསྐྱོད་པའི་སྔོན་ལ་plugin code དེ་བལྟ་རྒྱུ་གལ་ཆེན་པོ་ཡོད། Gratis AI Agent ནས་live install མཇུག་བསྡད་པ་དང་ མཐུན་འགྲོ་ཚར་བ་རྗེས་ཀྱི་ confirmation ཞུ་རྒྱུ་ཡོད།
 :::
 
-## Network ལ་ Generated Plugin འཇོག་པའི་སྐོར་
+## Network ལ་ Generated Plugin འཇོག་པའི་སྐོར་ {#installing-a-generated-plugin-on-the-network}
 
 ཁྱེད་རང་གིས་ sandbox ནང་ plugin དེ་བཟང་པོ་ཡིན་པ་རྟོགས་པ་དང་མཐུན་པའི་སྐབས་སུ་ live network ལ་ install བྱེད་ཆོག:
 
@@ -78,7 +78,7 @@ Plugin བཟོས་པ་ཚོ་ **Gratis AI Agent → Plugin Builder → M
 /install-plugin <plugin-slug>
 ```
 
-## Plugin Update བྱེད་པ།
+## Plugin Update བྱེད་པ། {#plugin-updates}
 
 Generated plugin ཞིག་ update བྱེད་དགོས་ན་ new conversation (对话) ནང་ AI assistant ལ་ change ག་རེ་བསྒྱུར་རྒྱུ་ཡིན་པ་བརྗོད་ပေးလိုက်:
 
@@ -86,7 +86,7 @@ Generated plugin ཞིག་ update བྱེད་དགོས་ན་ new co
 
 AI ལས་new version ཞིག་བཟོས་ཐོན་པ་དེ་sandbox ནང་ད་ལྟ་བའི་version དང་མཉམ་དུ་འཁྱོལ་ཡོང་། change (diff) དེ་ཁྱེད་རང་གིས་བལྟ་རྒྱུའི་སྐབས་ confirmation བྱས་ནས་ update ཞིག་ apply བྱེད་ཆོག។
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Plugin Builder ໃຊ້ **HookScanner** ທີ່ເຊື່ອມຕໍ່ເຂົ້າກັນ ເພື່ອວິເຄາະ hook ແລະ filter ທັງໝົດທີ່ plugin ແຕ່ລະໂຕສ້າງຂຶ້ນໄດ້ຕັ້ງໄວ້. ຜົນຂອງ HookScanner ຈະສະແດງຢູ່ໃນການຕອບກັບໃນ chat ແລະ ລວມມີ:
 
@@ -96,7 +96,7 @@ Plugin Builder ໃຊ້ **HookScanner** ທີ່ເຊື່ອມຕໍ່ເ
 
 ສິ່ງນີ້ຊ່ວຍໃຫ້ເຈົ້າເຂົ້າໃຈການເຮັດວຽກຂອງ plugin ກ່ອນທີ່ຈະເປີດໃຊ້ງານມັນ.
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - Plugin ທີ່ສ້າງຂຶ້ນຖືກເກັບໄວ້ແຍກອອກຈາກ plugin ທີ່ຕິດຕັ້ງດ້ວຍຕົນເອງ ແລະ ບໍ່ສາມາດເຂົ້າເຖິງໄດ້ຜ່ານໜ້າການຈັດການ plugin ຂອງ WordPress ແບບປົກກະຕິ ຈົນກວ່າເຈົ້າຈະຕິດຕັ້ງມັນໃນ network ຢ່າງຊັດເຈນ.
 - sandbox ນີ້ໃຊ້ path validation ເພື່ອປ້ອງກັນການເຂົ້າເຖິງ directory (directory traversal) ເມື່ອຂຽນໄຟລ໌ plugin.

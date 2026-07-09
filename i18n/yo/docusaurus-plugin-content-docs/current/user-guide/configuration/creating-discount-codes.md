@@ -3,13 +3,13 @@ title: Ṣíṣẹda Àwọn Kóòdù Ẹdinwo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ṣíṣẹ̀dá Àwọn Koodu Ẹdinwo (v2)
+# Ṣíṣẹ̀dá Àwọn Koodu Ẹdinwo (v2) {#creating-discount-codes-v2}
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 
 Pẹ̀lú Ultimate Multisite o lè ṣẹ̀dá àwọn koodu ẹdinwo láti fún àwọn oníbàárà rẹ ní ẹdinwo lórí àwọn ìforúkọ-ìsanwó wọn. Ṣíṣẹ̀dá wọn sì rọrùn!
 
-## Ṣíṣẹ̀dá àti Ṣíṣe Àtúnṣe Àwọn Koodu Ẹdinwo
+## Ṣíṣẹ̀dá àti Ṣíṣe Àtúnṣe Àwọn Koodu Ẹdinwo {#creating-and-editing-discount-codes}
 
 Láti ṣẹ̀dá tàbí ṣe àtúnṣe koodu ẹdinwo, lọ sí **Ultimate Multisite > Àwọn Koodu Ẹdinwo**.
 
@@ -87,7 +87,7 @@ Kupọọnu náà wà lórí àtòkọ rẹ báyìí, láti ibẹ̀, o lè tẹ 
 
 ###
 
-### Lílo Àwọn Parameter URL:
+### Lílo Àwọn Parameter URL: {#using-url-parameters}
 
 Bí o bá fẹ́ ṣe àwọn tábìlì ìdíyelé rẹ ní àdáni tàbí kọ́ ojúewé koodu kupọọnu tó dára fún wẹ́ẹ̀bù rẹ, tí o sì fẹ́ lo koodu ẹdinwo sí fọọmu isanwo rẹ laifọwọyi, o lè ṣe èyí nípasẹ̀ àwọn parameter URL.
 

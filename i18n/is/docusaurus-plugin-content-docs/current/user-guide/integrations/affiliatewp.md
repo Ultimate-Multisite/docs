@@ -3,7 +3,7 @@ title: Samstarf við AffiliateWP
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# Samning með AffiliateWP
+# Samning með AffiliateWP {#affiliatewp-integration}
 
 Þessi þríðja er framkvæmd af viðbótshlutnum **AffiliateWP**.
 

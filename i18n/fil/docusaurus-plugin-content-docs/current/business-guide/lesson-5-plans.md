@@ -3,15 +3,15 @@ title: 'Aralin 5: Pagpaplano ng Iyong mga Plano'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Aralin 5: Pagdidisenyo ng Iyong mga Plano
+# Aralin 5: Pagdidisenyo ng Iyong mga Plano {#lesson-5-designing-your-plans}
 
 Ang mga *plan tier* mo ay hindi lang basta mga antas ng presyo—ito ay repleksyon kung paano talaga nag-ooperate ang mga *niche* customer mo. Sa araling ito, magdidisenyo tayo ng mga *product tier* na tumutugma sa totoong pangangailangan ng mga *fitness business* sa iba't ibang yugto.
 
-## Saan Tayo Tumigil
+## Saan Tayo Tumigil {#where-we-left-off}
 
 May tatlong *template* na handa na ang FitSite (Studio Essential, Gym Pro, Fitness Chain). Ngayon, gagawa tayo ng mga plano na magde-determine kung ano ang maa-access ng mga customer at kung magkano ang babayaran nila.
 
-## Pag-iisip sa mga Customer Segment
+## Pag-iisip sa mga Customer Segment {#thinking-in-customer-segments}
 
 Ang pagkakamali ng karamihan ay ang pagdidisenyo ng mga plano batay sa mga *technical feature* (tulad ng *storage*, *bandwidth*, o bilang ng *pages*). Ang mga *niche customer* mo ay hindi nag-iisip sa mga terminong iyon. Ang isang *gym owner* ay nag-iisip tungkol sa kailangan niyang gawin para patakbuhin ang kanyang negosyo.
 
@@ -25,11 +25,11 @@ Para sa mga *fitness studio*, may tatlong natural na *segment*:
 
 Ang mga plano mo ay dapat naka-map sa mga *segment* na ito, hindi sa mga arbitraryong *feature bundle*.
 
-## Paglikha ng mga FitSite Plans
+## Paglikha ng mga FitSite Plans {#creating-the-fitsite-plans}
 
 Pumunta sa **Ultimate Multisite > Products > Add Product** para sa bawat plano.
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Target**: Solo trainers at maliit na *studio*
 
@@ -59,7 +59,7 @@ Pumunta sa **Ultimate Multisite > Products > Add Product** para sa bawat plano.
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **Target**: Established single-location gyms
 
@@ -85,7 +85,7 @@ Pumunta sa **Ultimate Multisite > Products > Add Product** para sa bawat plano.
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **Target**: Multi-location fitness chains
 
@@ -109,7 +109,7 @@ Pumunta sa **Ultimate Multisite > Products > Add Product** para sa bawat plano.
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Pag-set Up ng Plan Group
+## Pag-set Up ng Plan Group {#setting-up-the-plan-group}
 
 Tinitiyak ng *plan group* na ang mga customer ay makakapag-*upgrade* o makakapag-*downgrade* lamang sa loob ng pamilya ng FitSite plans. Sa **Up & Downgrades** tab ng bawat plano:
 
@@ -118,7 +118,7 @@ Tinitiyak ng *plan group* na ang mga customer ay makakapag-*upgrade* o makakapag
 
 Gumagawa ito ng malinaw na *upgrade path*: Starter → Growth → Pro.
 
-## Pagdaragdag ng Order Bumps
+## Pagdaragdag ng Order Bumps {#adding-order-bumps}
 
 Ang *Order bumps* ay mga *add-on product* na inaalok habang nagche-checkout. Para sa FitSite, isaalang-alang ang:
 
@@ -128,7 +128,7 @@ Ang *Order bumps* ay mga *add-on product* na inaalok habang nagche-checkout. Par
 
 Gumawa ng mga ito bilang mga *Package* type products sa Ultimate Multisite at iugnay ang mga ito sa mga kaugnay na plano.
 
-## Bakit Gumagana ang Istruktura na Ito
+## Bakit Gumagana ang Istruktura na Ito {#why-this-structure-works}
 
 - Ang **Starter** ay nag-aalis ng mga hadlang sa pagsisimula -- mababang presyo, simpleng alok, mabilis na nagpapa-online sa mga *trainer*
 - Ang **Growth** ay nagdaragdag ng mga *feature* na talagang hinihingi ng mga *gym* -- *booking*, *gallery*, *custom domain*
@@ -136,7 +136,7 @@ Gumawa ng mga ito bilang mga *Package* type products sa Ultimate Multisite at iu
 - Ang **Order bumps** ay nagpapahintulot sa mga customer na mag-customize nang hindi pinakomplikado ang mga pangunahing plano
 - Ang **Malinaw na upgrade path** ay nangangahulugang ang mga customer ay lumalaki kasama ka sa halip na umalis
 
-## Ang FitSite Network Hanggang Ngayon
+## Ang FitSite Network Hanggang Ngayon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Ano ang Binuo Natin sa Araling Ito
+## Ano ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Tatlong *plan tier*** na naka-map sa totoong *fitness business segment*
 - **Feature gating** gamit ang *plugin* at *template* controls ng Ultimate Multisite

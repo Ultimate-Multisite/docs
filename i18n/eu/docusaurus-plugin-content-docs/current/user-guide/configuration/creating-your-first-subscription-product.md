@@ -3,13 +3,13 @@ title: Zerbitzazio produktuaren lehenak sortzea
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Itzurearen Lehen Abonazio Produkzioa (v2)
+# Itzurearen Lehen Abonazio Produkzioa (v2) {#creating-your-first-subscription-product-v2}
 
 _**IMPORTANTE NOTA: Hau artikulu Ultimate Multisite 2.x bertsio erabiltzaileak dira. Bertsio 1.x erabiltzen ari zete,**_ **_hau artikuluari jartu_**.
 
 Lan-partiaren aurkitzea eta potensial erabiltzaileei irudiak saldzea hasten duela, abonazio opsio askore baduzu behar da. Nola sortzen dira hauek? Zer beste produkzioak aipatzea posible da? Hau artikuluan produktu ezagutzeko behar dituzun guztia adierazpen nahi izango dugu.
 
-## Produkzio Tipoa
+## Produkzio Tipoa {#product-type}
 
 Ultimate Multisite-arekin, klienten artean produktuak bi kategorian aipote ditu: **planak** eta **add-ons (Order Bump)**. Add-ons hauek bi tipu nahi du: **packages** eta **services**. Horren erkehiak eta espezialitateak ondoreko artikuluetan ikusten dugu.
 
@@ -19,7 +19,7 @@ Ultimate Multisite-arekin, klienten artean produktuak bi kategorian aipote ditu:
 
   * **Services**: Ultimate Multisite-aren funtzioak aldatzen ez duten add-ons hauek dira. Horrek planaren besteko eta klientela bereko espezialitateak dira. Adibidez, kliente bat plan bat hartuta salditu dezake eta beste service bat ere labaz, hori webgunearen diseinua egin dezake.
 
-## Produkzio Barkapen (Managing Products)
+## Produkzio Barkapen (Managing Products) {#managing-products}
 
 Adiou, oso gure...
 
@@ -31,7 +31,7 @@ Hau zehaztasunari lehen bidea izango da Ultimate Multisitean esentziazu behar du
 
 ![Products list page](/img/config/products-list.png)
 
-## Produkzioak jartzea (Adding Products)
+## Produkzioak jartzea (Adding Products) {#adding-products}
 
 Plan bat, package bat edo serbizio bat produktu berri bat definitzeko lehen bidea da **Ultimate Multisite > Products > Add Product**.
 
@@ -41,13 +41,13 @@ Interfaz-ek zuri-zuri bi zehaztasunari konponmentu egiten du. Ekinpearen parte b
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Deskribapena (Description)
+### Deskribapena (Description) {#description}
 
 Base produktu informazioak produktuaren emate eta deskribapen bat emanez definitzen da. Hau identifikadore hauek produktua informazioa behar duen jakin artean eragiten dira, gure plan eta prezioa aukeratzeko lekuetan, fakturak, upgrade-ek eta beste batzuk.
 
 ![Product description section](/img/config/product-description.png)
 
-### Preziorako Uri (Pricing Type)
+### Preziorako Uri (Pricing Type) {#pricing-type}
 
 Interfazaren baitarpeko partean, base prezioa definitzen da.
 
@@ -55,7 +55,7 @@ Interfazaren baitarpeko partean, base prezioa definitzen da.
 
 Ultimate Multisiteak preziorako uri bat ezberdinetan eskaintzen du. **paid** opsioak network administratorari produktuaren prezio eta fakturaren iraupenerako informazioa galdetzen dio.
 
-### Prezio (Pricing)
+### Prezio (Pricing) {#pricing}
 
 Prezioa eragila componentu hori base produktuaren prezioa eta faktura egindako iraupena definitzen da.
 
@@ -63,7 +63,7 @@ Prezioa eragila componentu hori base produktuaren prezioa eta faktura egindako i
 
 horrek, batezko prezioa $29.99 eta 1 luna konponduan hartzen duen konfiguratzean, lekuan $29.99 ezarri egiten da lekuan. Berria, $89.97 eta 3 bulan konponduan hartzen duenaren artean, hori guztiz karteratu egiten da lekuan.
 
-### Billing Cycles (Konponduak)
+### Billing Cycles (Konponduak) {#billing-cycles}
 
 Billing Cycles (Konponduak) arlinguen konponduak zehazten du horrek aipoko konponduaren irrenditua eta gaur egun kontratu edo erreguntzak duen adierazpena ezagutzen da.
 
@@ -71,7 +71,7 @@ Billing Cycles (Konponduak) arlinguen konponduak zehazten du horrek aipoko konpo
 
 Adibidez, $29.99 prezioan eta 1 luna konponduaren irrenditua eta 12 billing cycle (konponduak) duen produkto bat, hori produktua berri 12 alkartean lekuan $29.99 ezarri egiten da lekuan. Beste hain zuzen ere, erreguntzak $29.99 lekuan 12 alkartean fijo prezioa ematen du eta ondoren karteratu egiten denean.
 
-### Trial Period (Probatura Aldia)
+### Trial Period (Probatura Aldia) {#trial-period}
 
 Offer trial toggle (probatura aldia) aktiboa emateak administradore network-ari produktua erreguntzeko probatura alde bat zehazteko lehenen.
 
@@ -79,7 +79,7 @@ Offer trial toggle (probatura aldia) aktiboa emateak administradore network-ari 
 
 Probatura aldiaren aurrera, klientak produktoaren erabilera libre izango dira eta probatura aldia amaitaildu ondoren karteratu ez da.
 
-### Setup Fee (Konponbidea Lehenen)
+### Setup Fee (Konponbidea Lehenen) {#setup-fee}
 
 Lehenen planan konponbidea lehenen aplikatu dezake.
 
@@ -87,7 +87,7 @@ Lehenen planan konponbidea lehenen aplikatu dezake.
 
 Hau da, klientak bere prezio planaren bestalde ezarri egiten duen konponbidea erantzuten du lehen karteratzean (prezio planaren beste alde).
 
-### Active (Aktiboa)
+### Active (Aktiboa) {#active}
 
 Active toggle (aktibo aldia) ezinbesteko eskeritzeko produkto bat berri kontratuetan klientakengana aurkituta dagoela edo ez dagoela zehazteko eragiketa ematen du.
 
@@ -97,13 +97,13 @@ Ez dago, non dago jakin behar duzu:
 
 Honek planaren konfiguratzean toggle-a deshabilitatuta jartzea eragiketa da, eta horrek planaren deshabilitazioa eskatzen du, zehatzera iraupizun zuk ez du. **Planaren beste klanak jarraitu dira peletzeko** erabilera, zehatzera, leku berri bat edo planaren batzuk aldatuta jartira edo planari gabe izatean hurbiltzen dela.
 
-### Imajenaren Produkzioa
+### Imajenaren Produkzioa {#product-image}
 
 **Upload Image** (Imajenarekin jarri) botoia administrazio-gikoki ematen du irudiak liburuan erabiliz eta produkzio imazkin aukeratu edo jarri dezake.
 
 ![Product image section](/img/config/product-image.png)
 
-### Erabatzea
+### Erabatzea {#delete}
 
 **Delete Product** (Produktu Erabatzea) botoia produkzioa sistema gabein erabatzen du. Produkzioa publiko egin ondoren erabil da.
 
@@ -111,11 +111,11 @@ Honek planaren konfiguratzean toggle-a deshabilitatuta jartzea eragiketa da, eta
 
 Beste erabatzeak ondorioz, produkzioa ez dago "trash" (erabatza) eta ez da. Hau da, erabatatu ondoren akzioa iraupizuna ez da.
 
-### Produkzio Opzioak
+### Produkzio Opzioak {#product-options}
 
 Base-level produkzio informazioa definitu ondoren, **Product Options** (Produzio Opzioak) aukak administrazio-gikoki laguntzen du produkzioaren zehatzak atributuak lehiak definitzeko.
 
-#### Generalia
+#### Generalia {#general}
 
 **General** (Generalia) tab-a produkzioaren generaliak definatzen du eta horiek beste produkzio-spediko tab bat ez duten erabilera da.
 
@@ -129,7 +129,7 @@ Ultimate Multisite produkzioen artean Plan, Package eta Service gisa batzuk eska
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Uparretxpenak eta Behera (Up & Downgrades)
+#### Uparretxpenak eta Behera (Up & Downgrades) {#up--downgrades}
 
 Hau tab-a iragatu egiten du customer bat bere maila (tier) arloaren belerri guztietan aurkitzen dituen ustezpen eta behera (upgrade and downgrade) bideak.
 
@@ -147,7 +147,7 @@ Plan group bat definitzeko, **plan group** listan aurkitu maitasuneko mailak zeh
 
 Ultimate Multisite-ek **order bump** funtzioa ere hartzen du, non espezialista produkzio eta serbisioen erabilera mailak zehazteko lehiak aukeratu daiteke. Hau customer-ek iragatik beste elementuak gisa ematen dira, zehaztea checkoutan edo upgradean plan-eken beste elementuak gehiago ezartzeko.
 
-#### Prezioaren Erabiltzaileak (Price Variations)
+#### Prezioaren Erabiltzaileak (Price Variations) {#price-variations}
 
 Price variationak ez dule network administratorari erabil daurera honearen arabera beste prezioaiko lehenengoak (tiers) ezaratu. Hauko konfiguratzea gabe, product berri bat bere prezioarekin teklatzea posible da. Adibidez, $29.99/langileprezioan produktua ezaratu eta urteko opsioa $249.99-le eskaintzea.
 
@@ -169,7 +169,7 @@ Adibidez, base produktua prezioa $29.99/langileprezioa dela, hauek gehitu dezake
 Prezioaiko lehenengoak sajaina frontend checkout-an toggle edo switch bat ez du. Klientzak billing period hauek (adibidez, Langileprezio / Urteko) artean jarraitzea, checkout formaren parte batean **Period Selection** (Periodoa irudi) field bat gehitu behar duzu. Oinarriko instruktioak "Checkout Forms: Adding a Period Selection Toggle"-an eratu.
 :::
 
-#### Taxak
+#### Taxak {#taxes}
 
 **Taxes** (Taxak) tab-a Ultimate Multisite > Settings > Taxes-ean ezarritutako tax konfiguratueri eta, garrantzitsuen, definitutako tax rate-ekarekin jotasun du. Taxak aktiboa eta aplikatibo tax rate-ek ezaratzeko dokumentazioa "Ultimate Multisite: Settings"-an eratu.
 
@@ -185,7 +185,7 @@ Tax ratea **Ultimate Multisite > Settings > Manage Tax Rates**-an definitu gtain
 
 Produktua taxable (taxa sortzen dituen) bat dela erakusteko, **Is Taxable** toggle-a aktibo egin eta Tax Category dropdown-etik aplikatiboa tax ratea irudi ez daitezkeen.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Espeziatik, site templates hauek WordPress webgune guztiek dira, eta horiek kliunturren sitean abonazioaren lehenarenan klona dira.
 
@@ -207,7 +207,7 @@ Eskutza, **C** **Choose Available Site Templates** (Datu templateak aukeratu) ch
 
 Ezau, irralditzaileak checkout etap hauek template-selektazioa egin dezatatuz itxarri nahi du, ' _default_ ' aukera handiaren configurazioa onartuko da. Alternatiboz, template-selektazioa eliminatzeko eta planaren aukerak bizitzari pasatzen duen selekzioa delegatzeko, ' _assign new template_ ' edo ' _choose available site templates_ ' aukereak garrantzitsuak izan daitezke.
 
-#### Sites (Siteak)
+#### Sites (Siteak) {#sites}
 
 **Sites** tab-a Ultimate Multisite-ren irralditzearen funtzioaren parte bat da.
 
@@ -217,7 +217,7 @@ Hau aukera handiaren betetzeko, kontsumitorari bere membentziarean ezrulearen ma
 
 Irralditzea aktiboa egiteko, **limit sites** (site limitak) togglea aktibo eta **site allowance** (site aukera) lekuan maksimum site kopurua espezifikatu behar da.
 
-#### Visits (Bizitzak)
+#### Visits (Bizitzak) {#visits}
 
 **Visits** tab-a Ultimate Multisite-ren irralditzearen sistemaaren lehen parte bat da. Hau aukera handiaren kontsumitorari bere site-ra unikailak bizitzak kontuatzeko eta ondorioz, horiek limitatzea (throttling) ematen du.
 
@@ -229,7 +229,7 @@ Hau funtazioa erabilira, **limit unique visits** toggia aktibo estadoan ipotzatz
 
 Hau limitaren aurre eginduta, Ultimate Multisite-ak iradokizun bat emateaintzain ez du, baina limitak gehiago izan ditelako informazioa erakusten du.
 
-#### Users (Erabiltzaileak)
+#### Users (Erabiltzaileak) {#users}
 
 Ultimate Multisite-aren 'Users' limitazioak network administratorari lekuak sortzeko eta pertsonalak asignatzeko aukera duen erabiltzaileko kopurriak limitatzea gautela.
 
@@ -239,7 +239,7 @@ Limitazio funtazioa aktiboa egiteko, **limit user** toggia hakutuz aurrera ipotz
 
 Arrako, limitatzea eskatzen duen lekuari, aipoteak ondoan dagoen toggle-a aktibo estadoan ipotzatze eta aukera duen maximumko üstoa aipatzea da.
 
-#### Post Types (Post Uriak)
+#### Post Types (Post Uriak) {#post-types}
 
 **Post Types** tab-ek network administratorari WordPress-eko post uriak eragina limitatzea leku du.
 
@@ -251,7 +251,7 @@ Hau limitazio subsistema aktiboa egiteko, **limit post types** toggia hakutuz au
 
 Hurre, le post type bat limitatzen du, hori ondoan jarri behar da, aurrera puxikizten eta aukera duen maksimuma hautatu behar da.
 
-#### Disk Space (Espazio diskoaren)
+#### Disk Space (Espazio diskoaren) {#disk-space}
 
 **Disk Space** tab-ek administurak network-eko jarduergileei irudiak erabiliko espazioa batzuk limitatzea posible da.
 
@@ -263,13 +263,13 @@ Diskoaren erabilera limitatzea aktiboa egiteko, **limit disk size per site** tog
 
 Horren ondoren, megabyte-ekaz maksimuma üstia hautatu behar da **disk space allowance** lekuan.
 
-#### Custom Domain (Domaine osoa)
+#### Custom Domain (Domaine osoa) {#custom-domain}
 
 Hau opsioa ondoan jarri hokizten du, hori plan batean ezarritako custom domainak aukera egin dezake.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes (Tema)
+#### Themes (Tema) {#themes}
 
 Produktuen opsioetan dagoen **Themes** tab-ek administurari ematen dio network-eko jarduergilei customer-ek aukeratzeko tema batzuk erabilera emate eta, opzioa du, tema batzuen eragiketa bidez fordatzea.
 
@@ -287,7 +287,7 @@ _**Nota: Customer-ek tema batzuk erabilera ematuko da network-eko jarduergileare
 
 Ez dagoen testuingilean (A Available) tema hori erabiltzaileari bereziki aktibatzeko aukera ematen da. Kontstuari (Not Available) testuingilearen eskatzen dio, eta **Force Activate** opsioak tema hori aldatzen du eta site-a sortzeko defaulta daidetu du.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Ultimate Multisite-an Themes tab-aren besteak beste, administralari (network administrator) eskatzen dio plugin-ek erabilera edo modu jakin batzuk erabiltzeko kontstuari, eta leku berri site bat sortzen duenean modu jakin batzuk.
 
@@ -307,7 +307,7 @@ Ez dago **Force Activate & Lock** (Fuerza Aktivitate eta Bloqueo) aukera handia,
 
 Administratora-network-ek Force Activate & Lock eta Force Inactivate & Lock aukerak site template-ekin berain ikusitzea garrantzitsua izan daiteke, pluginak eta template-nko plugin eragilaia hauek aukeratzen direla eragiten dezaten.
 
-#### Reset Limitazioak
+#### Reset Limitazioak {#reset-limitations}
 
 **Reset Limitations** (Limitazioak Urratsa) tab-a produktuan definitutako guztietako custom limitazioak berri egiten du. Limitazioak berri egiteko, **reset limitations** (limitazioak berri egiteko) botoia klikatu behar duzu.
 
@@ -317,7 +317,7 @@ Aksionaren bidez konfirmatzeko, hakemailearen **confirm reset** (berri egitea ko
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Produktu Editatzea, Duplikatzea edo Erabatzea
+## Produktu Editatzea, Duplikatzea edo Erabatzea {#edit-duplicate-or-delete-product}
 
 Produktuak editatuta, duplikatuta edo erabatuta daiteke **Ultimate Multisite > Products** (Ultimate Multisite > Produktuak)-era aurkituz eta dagoen produktua nazioa jarri behar duzu.
 

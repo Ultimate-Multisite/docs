@@ -3,7 +3,7 @@ title: إعداد PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# إعداد بوابة PayPal (v2)
+# إعداد بوابة PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 
@@ -13,13 +13,13 @@ _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisi
 
 لاحظ أنك تحتاج إلى امتلاك **حساب PayPal Business** للحصول على بيانات اعتماد API المطلوبة لهذا التكامل.
 
-## تفعيل PayPal على شبكتك
+## تفعيل PayPal على شبكتك {#enabling-paypal-on-your-network}
 
 لتفعيل PayPal كطريقة دفع متاحة على شبكتك، انتقل إلى تبويب **Ultimate Multisite > Settings > Payments** وحدد المربع بجوار PayPal.
 
 ![تفعيل PayPal في بوابات الدفع النشطة](/img/config/settings-payment-gateways.png)
 
-## استخدام معالج الإعداد الموجّه
+## استخدام معالج الإعداد الموجّه {#using-the-guided-setup-wizard}
 
 يضيف Ultimate Multisite 2.10.0 معالج إعداد PayPal موجّهًا إلى إعدادات بوابة الدفع. بعد تفعيل PayPal، استخدم المعالج في **Ultimate Multisite > Settings > Payments** لاختيار الطريقة التي تريد بها ربط البوابة وتأكيد بيانات الاعتماد التي ما زالت مطلوبة قبل الحفظ.
 
@@ -30,7 +30,7 @@ _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisi
 
 إذا لم ترَ خيار OAuth في المعالج، فأكمل تدفق إدخال بيانات الاعتماد يدويًا أدناه. تعمل البوابة باستخدام بيانات اعتماد PayPal Business API نفسها كما في إصدارات Ultimate Multisite 2.x السابقة.
 
-## الحصول على بيانات اعتماد PayPal API
+## الحصول على بيانات اعتماد PayPal API {#getting-the-paypal-api-credentials}
 
 بمجرد تفعيل PayPal كبوابة دفع، ستحتاج إلى تعبئة الحقول الخاصة بـ PayPal API **Username** وPayPal API **Password** وPayPal API **Signature**.
 

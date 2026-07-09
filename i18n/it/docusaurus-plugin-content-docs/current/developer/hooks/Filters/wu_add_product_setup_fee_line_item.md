@@ -4,11 +4,11 @@ title: Filtro - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filtro: wu_add_product_setup_fee_line_item
+# Filtro: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 Consenti agli sviluppatori di apportare modifiche all'elemento della tassa di configurazione.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Consenti agli sviluppatori di apportare modifiche all'elemento della tassa di co
 | $product | `\WP_Ultimo\Models\Product` | Il prodotto correlato alla tassa di configurazione. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | L'oggetto carrello. |
 
-### Da
+### Da {#since}
 
 - 2.1
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) alla riga 1790
 
 
-## Restituisce
+## Restituisce {#returns}

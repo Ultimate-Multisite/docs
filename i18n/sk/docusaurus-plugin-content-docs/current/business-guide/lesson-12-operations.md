@@ -3,17 +3,17 @@ title: 'Lekcia 12: Riadenie podnikania'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lekcia 12: Prevádzkovanie biznisu
+# Lekcia 12: Prevádzkovanie biznisu {#lesson-12-running-the-business}
 
 Platforma nie je projekt, ktorý dokončíte -- je to biznis, ktorý prevádzkujete. Táto lekcia pokrýva každodennú prevádzku správy FitSite: podporu, fakturáciu, údržbu a udržiavanie spokojnosti zákazníkov.
 
-## Kde sme skončili
+## Kde sme skončili {#where-we-left-off}
 
 FitSite je spustený a zákazníci sa registrujú. Teraz potrebujete prevádzkovať celý proces udržateľne.
 
-## Každodenná prevádzka
+## Každodenná prevádzka {#daily-operations}
 
-### Monitorovanie
+### Monitorovanie {#monitoring}
 
 Kontrolujte ich denne (alebo nastavte upozornenia):
 
@@ -22,7 +22,7 @@ Kontrolujte ich denne (alebo nastavte upozornenia):
 - **Neúspešné platby**: Sú tu zlyhania platieb, ktoré si vyžadujú pozornosť?
 - **Žiadosti o podporu**: Sú tu nezodpovedané otázky zákazníkov?
 
-### Zákaznícka podpora
+### Zákaznícka podpora {#customer-support}
 
 Vaše zameranie na výklenok je tu výhodou. Keďže všetci vaši zákazníci sú fitness štúdiá, budete opakovane vidieť tie isté otázky:
 
@@ -36,7 +36,7 @@ Vaše zameranie na výklenok je tu výhodou. Keďže všetci vaši zákazníci s
 
 Budujte svoju znalostnú databázu (začatú v Lekcii 8) okolo týchto opakujúcich sa otázok. Každý tiket podpory, ktorý mohol byť článkom v znalostnej databáze, je signálom, že máte taký článok napísať.
 
-### Úrovne podpory
+### Úrovne podpory {#support-tiers}
 
 Ako rastiete, štruktúrujte podporu podľa plánu:
 
@@ -48,9 +48,9 @@ Ako rastiete, štruktúrujte podporu podľa plánu:
 
 [Support Tickets addon](/addons/support-tickets) môže pomôcť spravovať žiadosti o podporu v rámci platformy.
 
-## Fakturačná prevádzka
+## Fakturačná prevádzka {#billing-operations}
 
-### Opakované platby
+### Opakované platby {#recurring-payments}
 
 Ultimate Multisite spracúva opakovanú fakturáciu automaticky cez vašu platobnú bránu. Vašou úlohou je monitorovať:
 
@@ -58,7 +58,7 @@ Ultimate Multisite spracúva opakovanú fakturáciu automaticky cez vašu platob
 - **Dunning**: Nastavte automatizovanú logiku opakovaných pokusov cez vašu platobnú bránu (Stripe to zvláda dobre)
 - **Žiadosti o zrušenie**: Pochopte, prečo zákazníci odchádzajú. Každé zrušenie je spätná väzba.
 
-### Správa členstiev
+### Správa členstiev {#managing-memberships}
 
 Prejdite na **Ultimate Multisite > Memberships**, kde môžete:
 
@@ -69,13 +69,13 @@ Prejdite na **Ultimate Multisite > Memberships**, kde môžete:
 
 Úplnú referenciu nájdete v časti [Správa členstiev](/user-guide/administration/managing-memberships).
 
-### Fakturácia
+### Fakturácia {#invoicing}
 
 Zabezpečte, aby sa faktúry generovali správne pre každú platbu. Zákazníci môžu potrebovať faktúry na vykazovanie podnikateľských výdavkov. Pozrite si [Správa platieb a faktúr](/user-guide/administration/managing-payments-and-invoices).
 
-## Údržba platformy
+## Údržba platformy {#platform-maintenance}
 
-### Aktualizácie WordPress a pluginov
+### Aktualizácie WordPress a pluginov {#wordpress-and-plugin-updates}
 
 Ako správca siete ste zodpovední za:
 
@@ -88,14 +88,14 @@ Ako správca siete ste zodpovední za:
 Pokazená aktualizácia ovplyvní každú zákaznícku stránku vo vašej sieti. Aktualizácie vždy najprv otestujte na staging kópii svojej siete.
 :::
 
-### Bezpečnosť
+### Bezpečnosť {#security}
 
 - Udržiavajte všetok softvér aktuálny
 - Používajte silné heslá a dvojfaktorové overovanie pre správcovské účty
 - Monitorujte podozrivú aktivitu
 - Majte plán pre bezpečnostné incidenty
 
-### Výkon
+### Výkon {#performance}
 
 Ako vaša sieť rastie, monitorujte:
 
@@ -105,9 +105,9 @@ Ako vaša sieť rastie, monitorujte:
 
 Zvážte implementáciu cacheovania (page cache, object cache) a CDN, ak ste to ešte neurobili. [Cloudflare integrácia](/user-guide/host-integrations/cloudflare) pokrýva veľkú časť z toho.
 
-## Správa životného cyklu zákazníka
+## Správa životného cyklu zákazníka {#customer-lifecycle-management}
 
-### Znižovanie churnu
+### Znižovanie churnu {#reducing-churn}
 
 Churn je percento zákazníkov, ktorí každý mesiac zrušia službu. Pre biznis založený na predplatnom je znižovanie churnu rovnako dôležité ako získavanie nových zákazníkov.
 
@@ -119,7 +119,7 @@ Churn je percento zákazníkov, ktorí každý mesiac zrušia službu. Pre bizni
 - Našli lacnejšiu alternatívu → posilnite svoju hodnotu v danom výklenku
 - Ich podnikanie skončilo → nevyhnutné, ale sledujte to samostatne
 
-### Podpora upgradov
+### Podpora upgradov {#encouraging-upgrades}
 
 Zákazníkov na Starter, ktorým sa darí, treba povzbudzovať k upgradeu:
 
@@ -127,7 +127,7 @@ Zákazníkov na Starter, ktorým sa darí, treba povzbudzovať k upgradeu:
 - Posielajte cielené emaily zdôrazňujúce funkcie plánu Growth, z ktorých by mali úžitok
 - Ukážte, čo vytvorili zákazníci na Growth/Pro
 
-### Kampane na návrat zákazníkov
+### Kampane na návrat zákazníkov {#win-back-campaigns}
 
 Keď zákazník zruší službu:
 
@@ -135,30 +135,30 @@ Keď zákazník zruší službu:
 2. Ak je to možné, vyriešte jeho obavu
 3. Ponúknite zľavu na návrat (30-60 dní po zrušení)
 
-## Týždenné a mesačné rutiny
+## Týždenné a mesačné rutiny {#weekly-and-monthly-routines}
 
-### Týždenne
+### Týždenne {#weekly}
 
 - Skontrolujte nové registrácie a zrušenia
 - Odpovedzte na všetky otvorené tikety podpory
 - Skontrolujte výkon platformy a uptime
 - Skontrolujte všetky neúspešné platby
 
-### Mesačne
+### Mesačne {#monthly}
 
 - Analyzujte kľúčové metriky (MRR, churn, noví zákazníci, upgrady)
 - Aplikujte aktualizácie WordPress a pluginov (po staging teste)
 - Skontrolujte a aktualizujte znalostnú databázu na základe vzorcov podpory
 - Pošlite zákazníkom newsletter alebo aktualizáciu (nové funkcie, tipy, novinky z fitness odvetvia)
 
-### Štvrťročne
+### Štvrťročne {#quarterly}
 
 - Skontrolujte ceny voči konkurentom a spätnej väzbe zákazníkov
 - Vyhodnoťte dizajn templates -- potrebujú obnoviť?
 - Posúďte kapacitu hostingu -- potrebujete škálovať?
 - Skontrolujte a zlepšite onboarding na základe údajov o aktivácii
 
-## Čo sme vytvorili v tejto lekcii
+## Čo sme vytvorili v tejto lekcii {#what-we-built-this-lesson}
 
 - **Denné monitorovacie rutiny** pre dostupnosť, registrácie, platby a podporu
 - **Stupňovitá štruktúra podpory** prispôsobená úrovniam plánov

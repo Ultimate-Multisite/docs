@@ -3,7 +3,7 @@ title: Bhalisa iphoyinti lokugcina le-API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# I-Ultimate Multisite Register API endpoint
+# I-Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 Kulesi sifundo, uzofunda ukuthi ungayisebenzisa kanjani i-Ultimate Multisite /register API endpoint ukuze udale yonke inqubo yokwamukela ikhasimende elisha kunethiwekhi yakho nokuthi ungakwenza kanjani lokho nge-Zapier.
 
@@ -29,11 +29,11 @@ Khetha **Enable API** bese uthola imininingwane yakho ye-API.
 
 Manje, ake sihlole i-endpoint bese sidala isenzo sokubhalisa ku-Zapier.
 
-## Amapharamitha omzimba we-endpoint
+## Amapharamitha omzimba we-endpoint {#endpoint-body-parameters}
 
 Ake sibe nombono jikelele wolwazi oluncane oludingeka siluthumele ku-endpoint. Ekupheleni kwalesi sihloko, uzothola ubizo oluphelele.
 
-### Ikhasimende
+### Ikhasimende {#customer}
 
 Lolu ulwazi oludingekayo enqubweni yokudala uMsebenzisi neKhasimende le-Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Kungenzeka ukuthumela i-customer ID edalwe kunethiwekhi yakho. Uma ingathunyelwa
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Ulwazi kuphela esiludingayo ngaphakathi kwale nto yi-Membership Status.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Imikhiqizo**
+### **Imikhiqizo** {#products}
 
 Imikhiqizo inikezwa njenge-array ene-product ID engu-1 noma ngaphezulu evela kunethiwekhi yakho. Qaphela, le endpoint ayidali imikhiqizo. Hlola imibhalo ye-Ultimate Multisite ukuze uqonde kangcono i-endpoint yokudala umkhiqizo.
 
 **"products" : [1,2],**
 
-### Inkokhelo
+### Inkokhelo {#payment}
 
 Njenge-Membership, sidinga kuphela isimo.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Isayithi
+### Isayithi {#site}
 
 Futhi ukuvala umzimba sidinga i-URL nesihloko sesayithi, kokubili ngaphakathi kwento ye-Site.
 
@@ -69,13 +69,13 @@ Futhi ukuvala umzimba sidinga i-URL nesihloko sesayithi, kokubili ngaphakathi kw
 
 Impendulo ye-register endpoint izoba yi-array enolwazi lwe-membership olusanda kudalwa.
 
-## Ukudala isenzo ku-Zapier
+## Ukudala isenzo ku-Zapier {#creating-an-action-in-zapier}
 
 Ngokwethulwa kwale endpoint entsha nenamandla kakhudlwana yokudala Account, uzophinde ufinyelele isenzo esisha ku-Zapier.
 
 Uyakwazi yini ukusebenzisa nokujabulela konke okunikezwa inguqulo entsha ye-Zapier? Funda okwengeziwe lapha. (link?)
 
-### Ukudala isenzo
+### Ukudala isenzo {#creating-an-action}
 
 Ukuze sibonise kangcono ukuthi ungayisebenzisa kanjani i-registration endpoint nge-Zapier, ake sakhe ukuhlanganiswa ne-Google Forms. Njalo lapho leli fomu ligcwaliswa futhi ulwazi lugcinwa eshidini lezimpendulo zefomu, i-membership entsha izodalwa kunethiwekhi ye-Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Njengoba ulwazi selusethiwe, qhubekela ekuhlolweni kokugcina. Esikrinini sokugci
 
 Hlola i-Zap yakho entsha futhi kufanele iqede ngempumelelo. Uma kwenzeka noma yiliphi iphutha, hlola zonke izinkambu nokuthi zithunyelwa kahle yini. Njengoba kunolwazi oluningi, ezinye izinto zingaphuthelwa.
 
-### Amapharamitha aphelele e-endpoint
+### Amapharamitha aphelele e-endpoint {#complete-endpoint-parameters}
 
 Nalu ubizo oluphelele nawo wonke amathuba ezinkambu ezingathunyelwa.
 

@@ -4,11 +4,11 @@ title: ຕົວກອງ - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# ຕົວກອງ: wu_wp_cli_enabled_sub_commands
+# ຕົວກອງ: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 ກອງວ່າ sub_commands ໃດຖືກເປີດໃຊ້ສຳລັບເອນທິຕີນີ້.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 | $command_base | `string` | ຖານທີ່ໃຊ້ໃນຄຳສັ່ງທັນທີຫຼັງຈາກຮາກ. |
 | $this | `\Base_Manager` | ອິນສະແຕນຂອງອອບເຈັກ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ຖືກກຳນົດໃນ [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) ທີ່ແຖວ 198

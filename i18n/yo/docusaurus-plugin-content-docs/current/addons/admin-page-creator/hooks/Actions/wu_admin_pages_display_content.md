@@ -4,19 +4,19 @@ title: Ìṣe - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Ìṣe: wu_admin_pages_display_content
+# Ìṣe: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
 
 Ṣàfihàn àwọn àkóónú editor àdáṣe.
 
-## Àwọn Parameters
+## Àwọn Parameters {#parameters}
 
 | Orúkọ | Iru | Àpèjúwe |
 |------|------|-------------|
 | $ | `\WU_Admin_Page` | Object oju-iwe admin náà |
 
-### Láti igba
+### Láti igba {#since}
 
 - 1.0.1
-### Orísun
+### Orísun {#source}
 
 A ṣàlàyé rẹ̀ nínú [`views/template/page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/template/page.php#L53) ní ila 53

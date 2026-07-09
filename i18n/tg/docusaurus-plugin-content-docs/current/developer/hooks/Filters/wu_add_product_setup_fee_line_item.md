@@ -4,11 +4,11 @@ title: Филтр - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Филтр: wu_add_product_setup_fee_line_item
+# Филтр: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 Ба таҳиягарон имкон медиҳад, ки ба банди ҳаққи насб тағйирот ворид кунанд.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 7175266054e611752e49e762b103e858
 | $product | `\WP_Ultimo\Models\Product` | Маҳсулоте, ки ба ҳаққи насб вобаста аст. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | Объекти сабад. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 2.1
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) дар сатри 1790 муайян шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}

@@ -3,13 +3,13 @@ title: ইন্টিগ্রেশন গাইড
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ইন্টিগ্রেশন গাইড
+# ইন্টিগ্রেশন গাইড {#integration-guide}
 
 এই গাইডে Ultimate Multisite-এর সঙ্গে সাধারণ ইন্টিগ্রেশন প্যাটার্নগুলো আলোচনা করা হয়েছে, যার মধ্যে বাহ্যিক সার্ভিসে সংযোগ, কাস্টম পেমেন্ট গেটওয়ে তৈরি, এবং webhook পরিচালনা অন্তর্ভুক্ত।
 
 আলাদা tenant অবকাঠামোর জন্য, sovereign tenant bootstrap, migration verification, SSO, এবং teardown নির্দেশনার জন্য [Multi-Tenancy Integration](./multi-tenancy) দেখুন।
 
-## CRM ইন্টিগ্রেশন
+## CRM ইন্টিগ্রেশন {#crm-integration}
 
 নতুন গ্রাহক সাইন আপ করলে আপনার CRM-এ গ্রাহকের ডেটা সিঙ্ক করুন:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics ইন্টিগ্রেশন
+## Analytics ইন্টিগ্রেশন {#analytics-integration}
 
 গ্রাহক লাইফসাইকেলজুড়ে গুরুত্বপূর্ণ ব্যবসায়িক ইভেন্ট ট্র্যাক করুন:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## পরবর্তী ধাপ
+## পরবর্তী ধাপ {#next-steps}
 
 - [কাস্টম গেটওয়ে ডেভেলপমেন্ট](./custom-gateway) — নিজের পেমেন্ট গেটওয়ে তৈরি করুন
 - [Webhook পরিচালনা](./webhooks) — কাস্টম webhook endpoint তৈরি করুন

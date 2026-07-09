@@ -3,7 +3,7 @@ title: Bayanan Iyawa
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Bayanin Abilities
+# Bayanin Abilities {#abilities-reference}
 
 Abilities su ne ƙananan ayyuka na asali da Gratis AI Agent zai iya kira a kan shigarwar WordPress ɗinka. Kowace ability ajin PHP ce da aka yi rajista wadda ke fitar da JSON schema — agent ɗin yana karanta wannan schema a lokacin aiki don fahimtar waɗanne parameters ake buƙata da abin da ability ɗin ke mayarwa.
 
@@ -11,11 +11,11 @@ Wannan shafi yana bayanin duk abilities da ke zuwa tare da Gratis AI Agent v1.9.
 
 ---
 
-## Nau'ikan Rubutu na Musamman
+## Nau'ikan Rubutu na Musamman {#custom-post-types}
 
 Waɗannan abilities suna sarrafa nau'ikan rubutu na musamman (CPTs) da aka yi rajista ta hanyar agent ɗin. Ana adana rajistoci a teburin zaɓuɓɓukan WordPress don su ci gaba da kasancewa bayan kashe plugin da sake kunna shi.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Yana yin rajistar sabon nau'in rubutu na musamman.
 
@@ -50,7 +50,7 @@ Yana yin rajistar sabon nau'in rubutu na musamman.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Yana mayar da duk nau'ikan rubutu na musamman da agent ɗin ya yi rajista.
 
@@ -73,7 +73,7 @@ Yana mayar da duk nau'ikan rubutu na musamman da agent ɗin ya yi rajista.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Yana cire rajistar nau'in rubutu na musamman da agent ɗin ya riga ya yi rajista. Rubutun da ke akwai na wannan nau'in suna ci gaba da kasancewa a cikin database amma ba za a ƙara samun damar isa gare su ta wannan nau'in rubutu ba.
 
@@ -87,11 +87,11 @@ Yana cire rajistar nau'in rubutu na musamman da agent ɗin ya riga ya yi rajista
 
 ---
 
-## Taxonomies na Musamman
+## Taxonomies na Musamman {#custom-taxonomies}
 
 Waɗannan abilities suna sarrafa taxonomies na musamman. Kamar CPTs, ana adana rajistar taxonomy.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Yana yin rajistar sabuwar taxonomy ta musamman.
 
@@ -123,7 +123,7 @@ Yana yin rajistar sabuwar taxonomy ta musamman.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Yana mayar da duk taxonomies na musamman da agent ɗin ya yi rajista.
 
@@ -146,7 +146,7 @@ Yana mayar da duk taxonomies na musamman da agent ɗin ya yi rajista.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Yana cire rajistar taxonomy ta musamman da agent ɗin ya riga ya yi rajista.
 
@@ -160,11 +160,11 @@ Yana cire rajistar taxonomy ta musamman da agent ɗin ya riga ya yi rajista.
 
 ---
 
-## Tsarin Zane
+## Tsarin Zane {#design-system}
 
 Abilities na tsarin zane suna gyara bayyanar gani ta shafin WordPress — daga CSS na musamman zuwa block patterns da tambarin site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Yana ƙara CSS zuwa `<head>` na site ta hanyar `wp_add_inline_style`. Ana adana CSS a cikin zaɓin `gratis_ai_agent_custom_css` kuma ana cire shi cikin tsabta lokacin da aka sake saita ability ɗin.
 
@@ -190,7 +190,7 @@ Yana ƙara CSS zuwa `<head>` na site ta hanyar `wp_add_inline_style`. Ana adana 
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Yana yin rajistar block pattern da za a iya sake amfani da shi a cikin ɗakin karatu na pattern na WordPress.
 
@@ -209,7 +209,7 @@ Yana yin rajistar block pattern da za a iya sake amfani da shi a cikin ɗakin ka
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Yana jera duk block patterns da agent ɗin ya yi rajista.
 
@@ -231,7 +231,7 @@ Yana jera duk block patterns da agent ɗin ya yi rajista.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Yana saita tambarin shafin WordPress zuwa wani attachment ID da aka bayar ko URL na hoto daga nesa. Idan an bayar da URL, ana sauke hoton sannan a shigo da shi cikin Media Library.
 
@@ -248,7 +248,7 @@ Dole a bayar da ɗaya daga `attachment_id` ko `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Yana amfani da wani saitin launi/rubutu mai suna ga `theme.json` na theme mai aiki (ko `global-styles`). Presets tarin shirye-shirye ne da ƙungiyar Gratis AI Agent ke kula da su.
 
@@ -273,11 +273,11 @@ Yana amfani da wani saitin launi/rubutu mai suna ga `theme.json` na theme mai ai
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Ƙwarewar Global Styles tana karantawa da rubuta ƙimomin theme.json ta WordPress Global Styles API, tana shafar duk blocks da templates a faɗin shafi.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Yana dawo da saitunan global styles na yanzu.
 
@@ -291,7 +291,7 @@ Yana dawo da saitunan global styles na yanzu.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Yana sabunta ƙima ɗaya ko fiye a cikin saitunan global styles.
 
@@ -318,7 +318,7 @@ Yana sabunta ƙima ɗaya ko fiye a cikin saitunan global styles.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Yana sake saita duk canje-canjen global styles da agent ya yi, yana dawo da defaults na theme.
 
@@ -328,11 +328,11 @@ Yana sake saita duk canje-canjen global styles da agent ya yi, yana dawo da defa
 
 ---
 
-## Menus na Navigation
+## Menus na Navigation {#navigation-menus}
 
 Ƙwarewar Navigation Menu tana ƙirƙira da sarrafa menus na WordPress nav da abubuwansu.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Yana ƙirƙirar sabon menu na navigation na WordPress.
 
@@ -347,7 +347,7 @@ Yana ƙirƙirar sabon menu na navigation na WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Yana sake suna menu ko sake ɗora shi zuwa wani wurin theme.
 
@@ -363,7 +363,7 @@ Yana sake suna menu ko sake ɗora shi zuwa wani wurin theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Yana ƙara abu zuwa menu na navigation da ke akwai.
 
@@ -383,7 +383,7 @@ Yana ƙara abu zuwa menu na navigation da ke akwai.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Yana cire abu daga menu na navigation.
 
@@ -397,7 +397,7 @@ Yana cire abu daga menu na navigation.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Yana lissafa duk menus na navigation na WordPress, ciki har da wuraren theme da aka ɗora su.
 
@@ -420,11 +420,11 @@ Yana lissafa duk menus na navigation na WordPress, ciki har da wuraren theme da 
 
 ---
 
-## Sarrafa Options
+## Sarrafa Options {#options-management}
 
 Ƙwarewar Options tana karantawa da rubuta options na WordPress ta `get_option` / `update_option`. Wani safety blocklist da aka gina a ciki yana hana gyara saituna masu muhimmanci bisa kuskure.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Yana karanta option na WordPress.
 
@@ -440,7 +440,7 @@ Yana dawo da kuskure idan `option_name` yana cikin safety blocklist.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Yana rubuta option na WordPress.
 
@@ -458,7 +458,7 @@ Yana dawo da kuskure idan `option_name` yana cikin safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Yana goge wani zaɓin WordPress.
 
@@ -474,7 +474,7 @@ Yana dawo da kuskure idan `option_name` yana cikin safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Yana lissafa zaɓuɓɓukan WordPress da suka dace da wani tsari.
 
@@ -498,11 +498,11 @@ Yana lissafa zaɓuɓɓukan WordPress da suka dace da wani tsari.
 
 ---
 
-## Sarrafa Abun ciki
+## Sarrafa Abun ciki {#content-management}
 
 Ƙwarewar Sarrafa Abun ciki na ƙirƙira da gyara posts da shafuka na WordPress. Ana dawo da ID na post domin matakai na gaba a cikin tsare-tsaren ƙwarewa da yawa su iya nuni ga abun cikin da aka ƙirƙira.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Yana ƙirƙirar sabon post na WordPress, shafi, ko shigarwar nau'in post na musamman.
 
@@ -537,7 +537,7 @@ Yana ƙirƙirar sabon post na WordPress, shafi, ko shigarwar nau'in post na musa
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Yana sabunta wani post ko shafi na WordPress da yake akwai.
 
@@ -567,7 +567,7 @@ Yana sabunta wani post ko shafi na WordPress da yake akwai.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Yana ƙirƙirar posts da yawa a cikin kiran ƙwarewa guda ɗaya, yana rage kai-da-komo yayin gina site ko shigo da abun ciki mai yawa. Ana ƙirƙirar posts a jere; idan ɗaya ya gaza sauran za su ci gaba kuma za a bayar da rahoton gazawar a cikin array na sakamako.
 
@@ -619,7 +619,7 @@ Yana ƙirƙirar posts da yawa a cikin kiran ƙwarewa guda ɗaya, yana rage kai-d
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Yana sanya hoton featured (ƙaramin hoton post) ga wani post ko shafi da yake akwai. Yana karɓar ID na attachment da ke cikin Media Library ko URL na hoto na nesa; idan an bayar da URL, ana sauke hoton kuma a shigo da shi ta atomatik.
 
@@ -638,7 +638,7 @@ Dole a bayar da ɗaya daga `attachment_id` ko `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Yana ƙirƙirar fom ɗin tuntuɓa ta amfani da plugin na fom mai aiki (Contact Form 7, WPForms, Fluent Forms, ko Gravity Forms, gwargwadon wanda aka shigar). Yana dawo da shortcode da za a iya saka a kowanne post ko shafi.
 
@@ -691,11 +691,11 @@ Yana ƙirƙirar fom ɗin tuntuɓa ta amfani da plugin na fom mai aiki (Contact F
 
 ---
 
-## Bita ta gani
+## Bita ta gani {#visual-review}
 
 Ƙwarewar Bita ta gani tana ba agent damar ɗaukar hotunan allo na shafuka masu rai da nazarinsu, tana ba da damar bita ta ƙira mai cin gashin kanta, kwatancen kafin/bayan, da duba koma-bayan gani ba tare da buƙatar wani kari na burauza ba.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Yana ɗaukar hoton allo na shafin WordPress a wani URL da aka bayar ta amfani da burauza mara kai a ɓangaren sabar. Ana ajiye hoton a Media Library kuma ana mayar da CDN URL.
 
@@ -724,7 +724,7 @@ Yana ɗaukar hoton allo na shafin WordPress a wani URL da aka bayar ta amfani da
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Yana ɗaukar hotunan allo biyu kuma yana mayar da maki na bambancin gani tare da hoton bambanci da ke haskaka yankunan da suka canza. Yana da amfani don tabbatar da cewa canjin ƙira ya samar da sakamakon da ake tsammani ko don gano koma-bayan da ba a yi niyya ba.
 
@@ -754,7 +754,7 @@ Yana ɗaukar hotunan allo biyu kuma yana mayar da maki na bambancin gani tare da
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Yana ɗaukar hoton allo na shafi kuma yana aika shi zuwa samfurin harshe don nazarin gani. Yana mayar da kimantawa mai tsari da ta rufe shimfiɗa, tsarin rubutu, amfani da launi, da damuwar samun dama.
 
@@ -785,11 +785,11 @@ Yana ɗaukar hoton allo na shafi kuma yana aika shi zuwa samfurin harshe don naz
 
 ---
 
-## Ƙwarewa da ake iya girkawa
+## Ƙwarewa da ake iya girkawa {#installable-abilities}
 
 Installable Abilities Registry yana ba ka damar faɗaɗa agent da ƙarin fakitin ƙwarewa da ake rarrabawa a matsayin WordPress plugins. Kowane fakiti yana rijistar ƙwarewa ɗaya ko fiye ta amfani da standard ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Yana mayar da kundin fakitin ƙwarewa da ke samuwa don girkawa daga registry.
 
@@ -818,7 +818,7 @@ Yana mayar da kundin fakitin ƙwarewa da ke samuwa don girkawa daga registry.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Yana sauke kuma yana kunna kunshin ƙwarewa daga rajista.
 
@@ -832,7 +832,7 @@ Yana sauke kuma yana kunna kunshin ƙwarewa daga rajista.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Yana tambayar rajistar ƙwarewa don nemo mafi kyawun ƙari don yanayin amfani da aka bayyana kuma, idan ana so, ya shigar da shi.
 

@@ -3,11 +3,11 @@ title: Ugrađeni agenti
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ugrađeni agenti
+# Ugrađeni agenti {#built-in-agents}
 
 Gratis AI Agent v1.9.0 isporučuje se s pet ugrađenih agenata, svaki unaprijed konfiguriran s usmjerenim skupom alata, prilagođenim sistemskim promptom i početnim prijedlozima usklađenima s uobičajenim zadacima u tom području. Prebacivanje između agenata mijenja što asistent može učiniti i kako odgovara — bez ikakve konfiguracije s vaše strane. Superdav AI Agent v1.18.0 može dodati alate svjesne rasporeda, zapise podsjetnika, vrata za odobrenje i SMS obavijesti tim tijekovima rada kada su povezane integracije konfigurirane.
 
-## Što je agent?
+## Što je agent? {#what-is-an-agent}
 
 Svaki agent je imenovani konfiguracijski profil koji kombinira:
 
@@ -15,7 +15,7 @@ Svaki agent je imenovani konfiguracijski profil koji kombinira:
 - **Sistemski prompt** — upute koje postavljaju ton, prioritete i ograničenja agenta
 - **Prijedlozi** — unaprijed napisani promptovi prikazani u sučelju chata kako bi vam pomogli da brzo započnete
 
-## Pristup odabiru agenta
+## Pristup odabiru agenta {#accessing-the-agent-picker}
 
 1. Otvorite panel **Gratis AI Agent** u bočnoj traci WordPress administracije.
 2. Kliknite **ikonu agenta** u gornjem lijevom kutu zaglavlja chata (ikona se mijenja kako bi odražavala aktivnog agenta).
@@ -24,9 +24,9 @@ Svaki agent je imenovani konfiguracijski profil koji kombinira:
 
 Agente možete promijeniti i usred razgovora — sistemski prompt novog agenta stupa na snagu od sljedeće poruke.
 
-## Pet ugrađenih agenata
+## Pet ugrađenih agenata {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fokus:** Stvaranje i uređivanje objava, stranica i kontaktnih obrazaca.
 
@@ -47,7 +47,7 @@ Agente možete promijeniti i usred razgovora — sistemski prompt novog agenta s
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fokus:** Izrada web-stranice od početka do kraja iz jednog prompta.
 
@@ -70,7 +70,7 @@ Agente možete promijeniti i usred razgovora — sistemski prompt novog agenta s
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fokus:** Vizualna prilagodba — boje, tipografija, CSS i blok-uzorci.
 
@@ -87,7 +87,7 @@ Agente možete promijeniti i usred razgovora — sistemski prompt novog agenta s
 - *Napravi snimku zaslona početne stranice i reci mi što bi poboljšao.*
 - *Izradi višekratno upotrebljiv hero blok-uzorak sa slikom pozadine pune širine i centriranim naslovom.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokus:** Otkrivanje, instaliranje i upravljanje WordPress pluginima.
 
@@ -105,7 +105,7 @@ Agente možete promijeniti i usred razgovora — sistemski prompt novog agenta s
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fokus:** Odgovaranje na pitanja o sadržaju web-stranice, postavkama i WordPress konfiguraciji.
 
@@ -124,7 +124,7 @@ Agente možete promijeniti i usred razgovora — sistemski prompt novog agenta s
 
 ---
 
-## Superdav automatizacijske integracije
+## Superdav automatizacijske integracije {#superdav-automation-integrations}
 
 Kada su konfigurirane integracije Superdav AI Agent v1.18.0, ugrađeni agenti mogu sudjelovati u sigurnijim automatizacijskim tijekovima rada svjesnima rasporeda:
 
@@ -138,11 +138,11 @@ Preporučeni tijek rada: zamolite agenta da pripremi poruku ili radnju, pregleda
 
 ---
 
-## Prilagodba agenata
+## Prilagodba agenata {#customising-agents}
 
 Svaki ugrađeni agent može se proširiti ili zamijeniti putem filtera `gratis_ai_agent_agents`.
 
-### Dodavanje prilagođenog system prompta postojećem agentu
+### Dodavanje prilagođenog system prompta postojećem agentu {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Registracija novog agenta
+### Registracija novog agenta {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Novi agent pojavljuje se u Agent Picker odmah nakon što se filter pokrene.
 
-### Uklanjanje ugrađenog agenta
+### Uklanjanje ugrađenog agenta {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -3,7 +3,7 @@ title: Cúram na ghlúin Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Inseall Ultimate Multisite le Zapier
+# Inseall Ultimate Multisite le Zapier {#integrating-ultimate-multisite-with-zapier}
 
 I gcuid ar chláir, áit ag sbar éargáil ar [Webhooks](webhooks.md) agus conas a bheith i gceart le appachais third-party.
 
@@ -15,7 +15,7 @@ Is féidir leat creideach **Triggers** a chur ar fáil ag an t-aonach nuair a bh
 
 Is é seo faisnéis go bhfuil **Ultimate Multisite Zapier's triggers** agus actions a bhaint as an [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Conas a fhágáil ar aghaidh
+## Conas a fhágáil ar aghaidh {#how-to-start}
 
 Ar anois, bíodh an chéad, is féidir leat a chur ar fáil Ultimate Multisite i liosta appachais Zapier. Mar chuid eile, leat a chluinadh [an link seo](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Ar an feadreachas URL, leiceáil an URL fhuil miúcháin do network, gan cur ist
 
 Cliceáil ar an nútair **Yes, Continue** chun an taitneamh seo a thabhairt go dtí an áit eile. Má tá cinnte cé linn, cheana féin do chuid cur chuimhneacháin nua! Cliceáil ar **Continue** chun cur chuimhneachán nua a chur i gceart.
 
-## Conas a chur in áit nua (Trigger)
+## Conas a chur in áit nua (Trigger) {#how-to-create-a-new-trigger}
 
 Anois atá do chuid cur chuimhneacháin ag cur chuimhneacháin, leiceáil ar na obairí atá ar fáil. Déanann méid **payment_received** chun an taitneamh seo a bheith ag cur chuimhneachán.
 
@@ -77,7 +77,7 @@ Agus iarrar tú ag cur in áit aithreacha (authentication), mar a dhélig méid 
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Déanamh ar an Action
+### Déanamh ar an Action {#how-to-create-actions}
 
 Is é seo an **step leathanach eile** agus is é an t-áit a bhfuil daoine ag iarraidh a bheith ag cur isteach, mar atá sé ag dul ar chuid eile. An áit a chur in áit ar an chéad cheann leat beidh tú ag iarraidh an **Item**. Is é an **information model** ar chuid t-netnchais agat, mar **Customers, Payments, Sites, Emails** agus eile.
 

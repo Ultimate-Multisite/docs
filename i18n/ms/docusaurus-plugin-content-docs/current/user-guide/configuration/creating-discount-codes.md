@@ -3,13 +3,13 @@ title: Mencipta Kod Diskaun
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Mencipta Kod Diskaun (v2)
+# Mencipta Kod Diskaun (v2) {#creating-discount-codes-v2}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
 Dengan Ultimate Multisite, anda boleh mencipta kod diskaun untuk memberikan pelanggan anda diskaun pada langganan mereka. Dan menciptanya mudah!
 
-## Mencipta dan Mengedit Kod Diskaun
+## Mencipta dan Mengedit Kod Diskaun {#creating-and-editing-discount-codes}
 
 Untuk mencipta atau mengedit kod diskaun, pergi ke **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kupon kini berada dalam senarai anda dan, dari situ, anda boleh klik untuk **men
 
 ###
 
-### Menggunakan Parameter URL:
+### Menggunakan Parameter URL: {#using-url-parameters}
 
 Jika anda mahu menyesuaikan jadual harga anda atau membina halaman kod kupon yang menarik untuk laman web anda dan mahu menggunakan kod diskaun pada borang pembayaran anda secara automatik, anda boleh melakukannya melalui parameter URL.
 

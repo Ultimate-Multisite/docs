@@ -3,7 +3,7 @@ title: Bir Planı Yükseltme
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Bir Planı Yükseltme (v2)
+# Bir Planı Yükseltme (v2) {#upgrading-a-plan-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x ile ilgilidir.**_
 
@@ -41,7 +41,7 @@ Mevcut abonelikte herhangi bir şeyi değiştirmeyecek bir plan veya paket seçe
 
 ##
 
-## Yükseltme ve Düşürme Yolları
+## Yükseltme ve Düşürme Yolları {#upgrade-and-downgrade-paths}
 
 Ürünlerinizin her birinde bir **Up & Downgrades** sekmesi bulunur. Bu sekmedeki ilk seçenek **Plan Group** adlı bir alandır.
 

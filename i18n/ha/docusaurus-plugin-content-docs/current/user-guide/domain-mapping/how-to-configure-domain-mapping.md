@@ -3,17 +3,17 @@ title: Yadda ake Saita Taswirar Yanki
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Yadda ake Saita Haɗa Domain (v2)
+# Yadda ake Saita Haɗa Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**MUHIMMIYAR SANARWA: Wannan labarin yana magana ne game da Ultimate Multisite sigar 2.x.**_
 
 Ɗaya daga cikin mafi ƙarfin fasalolin cibiyar premium ita ce ikon ba abokan cinikinmu damar haɗa domain na matakin-sama zuwa shafukansu. Bayan haka, wanne ya fi kama da na ƙwararru: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ko [_**joesbikeshop.com**_](http://joesbikeshop.com)? Shi ya sa Ultimate Multisite ke bayar da wannan fasalin a ciki, ba tare da buƙatar amfani da plugins na ɓangare na uku ba.
 
-## Menene haɗa domain?
+## Menene haɗa domain? {#whats-domain-mapping}
 
 Kamar yadda sunan ya nuna, haɗa domain shi ne ikon da Ultimate Multisite ke bayarwa don karɓar buƙata ta custom domain sannan ya haɗa wannan buƙatar zuwa shafin da ya dace a cikin cibiyar wanda aka haɗa da wannan domain na musamman.
 
-### Yadda ake saita haɗa domain a kan Ultimate Multisite Network ɗinku
+### Yadda ake saita haɗa domain a kan Ultimate Multisite Network ɗinku {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Haɗa domain yana buƙatar wasu saituna daga gare ku domin ya yi aiki. Abin farin ciki, Ultimate Multisite yana sarrafa muku aikin mai wahala ta atomatik domin ku iya cika buƙatun cikin sauƙi.
 
@@ -45,7 +45,7 @@ Amma kafin ku fara haɗa custom domain zuwa ɗaya daga cikin subsites a cikin ci
 
 ###
 
-### Tabbatar da cewa saitunan DNS na domain an daidaita su yadda ya kamata
+### Tabbatar da cewa saitunan DNS na domain an daidaita su yadda ya kamata {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Domin haɗawa ya yi aiki, kuna buƙatar tabbatar da cewa domain ɗin da kuke shirin haɗawa yana nuni zuwa IP address na Network ɗinku. Ku lura cewa kuna buƙatar IP address na Network - IP address na domain inda aka shigar da Ultimate Multisite - ba IP address na custom domain da kuke son haɗawa ba. Don nemo IP address na wani domain na musamman, muna ba da shawarar zuwa [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), misali.
 
@@ -55,7 +55,7 @@ Idan kuka sami kanku cikin matsala wajen sa wannan ya yi aiki, **tuntuɓi tallaf
 
 Idan kuna shirin ba abokan cinikinku damar haɗa domains ɗinsu da kansu, dole ne su yi aikin wannan ɓangaren da kansu. Ku nuna musu tsarin tallafin mai rijistarsu idan suka kasa ƙirƙirar A Record.
 
-### Haɗa sunan custom domain a matsayin Super Admin
+### Haɗa sunan custom domain a matsayin Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Lokacin da kuka shiga a matsayin super admin a kan cibiyarku, za ku iya ƙara da sarrafa sunayen custom domain cikin sauƙi ta hanyar zuwa ƙarƙashin **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Idan ka danna sunan domain, za ka iya ganin wasu zaɓuɓɓuka a ciki. Mu duba su
 
 **Is Secure?:** Duk da cewa Ultimate Multisite yana bincika ko domain ɗin yana da takardar shaidar SSL ko babu kafin kunna shi, za ka iya zaɓar da hannu a loda domain ɗin da ko ba tare da takardar shaidar SSL ba. Ka lura cewa idan website ɗin ba shi da takardar shaidar SSL kuma ka yi ƙoƙarin tilasta lodinsa da SSL, yana iya ba ka kurakurai.
 
-### Mapping sunan custom domain a matsayin mai amfani da Subsite
+### Mapping sunan custom domain a matsayin mai amfani da Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite administrators kuma za su iya map sunayen custom domain daga dashboard na admin na subsite ɗinsu.
 
@@ -121,7 +121,7 @@ Sannan mai amfani zai iya danna **Next Step** ya ci gaba da ƙara sunan custom d
 
 Danna **Add Domain** zai fara tsarin tabbatarwa da ɗauko bayanan DNS na custom domain.
 
-### Game da Domain Syncing
+### Game da Domain Syncing {#about-domain-syncing}
 
 Domain Syncing tsari ne inda Ultimate Multisite yake ƙara sunan custom domain zuwa hosting account ɗinka a matsayin add-on domain **domin domain mapping ya yi aiki**.
 

@@ -3,7 +3,7 @@ title: Zapier Интеграци
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite-и Zapier-игүүдийг нэгтгэх
+# Ultimate Multisite-и Zapier-игүүдийг нэгтгэх {#integrating-ultimate-multisite-with-zapier}
 
 Нэг нийтлэлд бид [Webhooks](webhooks.md)-ыг хэрхэн гуравдагч талын аппликейшнүүдтэй холбоход ашиглаж болох тухай ярьсан.
 
@@ -15,7 +15,7 @@ Zapier нь 5000 гаруй аппликейшнтэй холбоотой бөг
 
 Энэ боломжтой учир нь **Ultimate Multisite Zapier-ийн triggers** ба actions [REST API](https://developer.ultimatemultisite.com/api/docs/) -аар ажилладаг.
 
-## Хэрхэн эхлэх вэ
+## Хэрхэн эхлэх вэ {#how-to-start}
 
 Эхлээд Zapier аппликейшн жагсаалтаас Ultimate Multisite-ыг хайгаарай. Эсвэл [энэ линк](https://zapier.com/apps/wp-ultimo/integrations)-аар ч хийж болно.
 
@@ -51,7 +51,7 @@ URL талбарт нь протокол (HTTP эсвэл HTTPS)-ийг багт
 
 Дараагийн алхам руу шилжихээр **Yes, Continue** (Тийм, үргэлжлүүлэх) товчийг дарна уу. Хэрэв бүх зүйл зөв ажиллавал таны шинэ холбогдсон аккаунт тань таныг угтана! Шинэ trigger-ийг үүсүүлэхийн тулд **Continue** (Үргэлжлүүлэх) дээр дарна уу.
 
-## Шинэ Trigger (Урьдчилсан тохиолдол) үүсгэх арга
+## Шинэ Trigger (Урьдчилсан тохиолдол) үүсгэх арга {#how-to-create-a-new-trigger}
 
 Аккаунт холбогдсон бол та боломжит events-ийг харах боломжтой болно. Энэ тусламжийн зорилгоор бид **payment_received** (өвлөгдсөн төлбөр) event-ийг сонгоё.
 
@@ -67,7 +67,7 @@ Event-ийг сонгоод, **continue** (Үргэлжлүүлэх) дээр д
 
 Бидний туслах дахь тест **амжилттай дууссан** бөгөөд payload-ийн жишээ мэдээллийг буцаасан. Энэ жишээ мэдээлэл нь бид үйлдлүүдийг үүсгэх явцад чиглүүлэхэд туслах болно. Таны trigger одоо үүсгэгдсэн бөгөөд бусад аппликейшнүүдтэй холбогдох боломжтой.
 
-## Action-ыг хэрхэн үүсгэх вэ?
+## Action-ыг хэрхэн үүсгэх вэ? {#how-to-create-actions}
 
 Action нь бусад trigger-ээс мэдээллийг ашиглан таны сүлжээнд шинэ оролт (entry) үүсгэдэг.
 
@@ -79,7 +79,7 @@ Action нь бусад trigger-ээс мэдээллийг ашиглан тан
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Action-ыг тохируулах
+### Action-ыг тохируулах {#setting-up-the-action}
 
 Энэ бол **action-ын үндсэн алхам** бөгөөд энд зүйлс бага зэрэг өөр байдаг. Эхний мэдээлэл нь **Item** (Оролт/Төлөв)-ийг сонгох явдал юм. Item гэдэг нь таны сүлжээний **Customer, Payments, Sites, Emails** зэрэг **мэдээллийн загвар (information model)** юм.
 

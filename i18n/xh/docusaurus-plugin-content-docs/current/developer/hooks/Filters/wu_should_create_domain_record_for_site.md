@@ -4,28 +4,28 @@ title: Isihluzi - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Isihluzi: wu_should_create_domain_record_for_site
+# Isihluzi: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
 
 Sihluza ukuba i-Ultimate Multisite kufuneka yenze irekhodi ledomeyini lesayithi esandul’ ukwenziwa.
 
 Sebenzisa esi sihluzi ukuthintela okanye ukulibazisa ukwenziwa ngokuzenzekelayo kwerekhodi ledomeyini kwiisayithi ezisebenzisa idomeyini esisiseko yefomu ye-checkout ekwabelwana ngayo, i-host yangaphakathi, okanye idomeyini eza kulawulwa yenye integration ngokwahlukeneyo.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazo |
 |------|------|-------------|
 | $create | `bool` | Ukuba irekhodi ledomeyini kufuneka lenziwe na. |
 | $site | `WP_Site` | I-object yesayithi esandul’ ukwenziwa. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 2.13.0
 
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-`inc/functions/domain.php`.
 
 
-## Ibuyisa
+## Ibuyisa {#returns}
 
 Boolean ebonisa ukuba irekhodi ledomeyini kufuneka lenziwe na.

@@ -4,23 +4,23 @@ title: Filtar - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Filter: wp_ultimo_site_exporter_url
+# Filter: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
 
 Omogućuje developerima upravljanje relativnom putanjom do korijena dodatka.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
 | $dir | `string` | Putanja relativna korijenu dodatka kojem želite pristupiti. |
 
-### Od
+### Od {#since}
 
 - 0.0.1
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L52) u retku 52
 
 
-## Vraća
+## Vraća {#returns}
 Putanju relativnu korijenu dodatka.

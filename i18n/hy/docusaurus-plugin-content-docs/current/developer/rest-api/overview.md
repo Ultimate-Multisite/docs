@@ -3,28 +3,28 @@ title: REST API-ի ակնարկ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API տեղեկատու
+# REST API տեղեկատու {#rest-api-reference}
 
-## Հիմնական կազմաձևում
+## Հիմնական կազմաձևում {#base-configuration}
 
 **Հիմնական URL:** `{site_url}/wp-json/wu/v2/`
 **Նույնականացում:** API բանալի և գաղտնիք (HTTP Basic Auth կամ URL պարամետրեր)
 
-## Նույնականացում
+## Նույնականացում {#authentication}
 
-### Միացնել API-ը
+### Միացնել API-ը {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Ստանալ API հավատարմագրերը
+### Ստանալ API հավատարմագրերը {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Նույնականացման մեթոդներ
+### Նույնականացման մեթոդներ {#authentication-methods}
 
 **HTTP Basic Auth (խորհուրդ է տրվում):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Հիմնական վերջնակետեր
+## Հիմնական վերջնակետեր {#core-endpoints}
 
-### 1. Հաճախորդների API
+### 1. Հաճախորդների API {#1-customers-api}
 
 **Հիմնական երթուղի:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Կայքերի API
+### 2. Կայքերի API {#2-sites-api}
 
 **Հիմնական երթուղի:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Անդամակցությունների API
+### 3. Անդամակցությունների API {#3-memberships-api}
 
 **Հիմնական երթուղի:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Ապրանքների API
+### 4. Ապրանքների API {#4-products-api}
 
 **Հիմնական երթուղի:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Վճարումների API
+### 5. Վճարումների API {#5-payments-api}
 
 **Հիմնական երթուղի:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Դոմենների API
+### 6. Դոմենների API {#6-domains-api}
 
 **Հիմնական երթուղի:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Գրանցման վերջնակետ
+## Գրանցման վերջնակետ {#registration-endpoint}
 
 `/register` վերջնակետը տրամադրում է ամբողջական checkout/գրանցման հոսք.
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Ինքնիշխան վարձակալների վերջնակետեր
+## Ինքնիշխան վարձակալների վերջնակետեր {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0-ը ավելացնում է ինքնիշխան վարձակալների REST ծածկույթ այն ինտեգրումների համար, որոնք տրամադրում, ստուգում կամ հաստատում են մեկուսացված վարձակալներին։
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false`-ը դիտարկեք որպես մեկնարկից առաջ արգելափակող գործոն։ Ստուգեք հաստատման մանրամասները, շտկեք տվյալների բազայի հոստի կապակցումը, հերթը, օգտատերերի տրամադրումը կամ երթուղավորման խնդիրը, ապա կրկին փորձեք հաստատումը։
 
-## Սխալի պատասխաններ
+## Սխալի պատասխաններ {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## Էջավորում և ֆիլտրում
+## Էջավորում և ֆիլտրում {#pagination-and-filtering}
 
 **Հարցման պարամետրեր:**
 ```http

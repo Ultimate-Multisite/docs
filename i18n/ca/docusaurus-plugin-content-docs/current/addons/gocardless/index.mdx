@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Ultimate Multisite: Pagament amb GoCardless
 
 !Permeteix als teus clients pagar les membresdies i productes d'Ultimate Multisite amb Descompte Directe utilitzant GoCardless!
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Carrega 'ultimate-multisite-gocardless' al directori '/wp-content/plugins/'
 2. Activa el plugin des del menú 'Plugins' de WordPress
 3. Segueix el Wizard pas a pas per configurar el plugin
 
-## Guia d'ús
+## Guia d'ús {#usage-guide}
 
 _GoCardless_ és una portera de pagament disponible a **Europa i al Regne Unit** que permet pagaments amb **Descompte Directe**.
 
@@ -29,7 +29,7 @@ Aquest tutorial cobreixerà com configurar _GoCardless_ per començar a acceptar
 
 _**Nota: GoCardless només funciona amb les següents muntades:**_ **EUR, GBP, AUD, SEK i DKK.**
 
-## Instal·lació de l'Add-on
+## Instal·lació de l'Add-on {#installing-the-add-on}
 
 En primer lloc, hauràs de instal·lar l'add-on de GoCardless per a Ultimate Multisite. Pots fer-ho anant a **Ultimate Multisite > Settings > Add-ons (a la barra lateral)**. I seleccionant l'add-on GoCardless en aquesta llista.
 
@@ -37,7 +37,7 @@ Després que l'add-on estigui instal·lat i activat, anant a **Ultimate Multisit
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Obtenció d'un Access Token
+## Obtenció d'un Access Token {#getting-an-access-token}
 
 Crea un compte a _GoCardless_ (o al sandbox de _GoCardless_, si vols **provar-ho abans**, cosa que es recomana). Després, després de connectar-te, navega fins al element de menú **Developers**.
 
@@ -61,7 +61,7 @@ Assegura't de posar-lo al camp de la dreta. Si és un **token actiu** **(live to
 
 Això és tot per al primer pas. Després, has de configurar un *webhook listener*.
 
-## Configuració del Webhook Listener
+## Configuració del Webhook Listener {#setting-up-the-webhook-listener}
 
 Quan es tracta de subscripcions, Ultimate Multisite ha de rebre notificacions sobre canvis en l'estat de la subscripció, pagaments realitzats, i altres coses.
 

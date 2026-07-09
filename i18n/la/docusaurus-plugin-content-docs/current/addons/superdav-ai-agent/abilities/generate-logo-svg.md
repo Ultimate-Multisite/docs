@@ -3,15 +3,15 @@ title: Genera logotypum SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generare Insigne SVG
+# Generare Insigne SVG {#generate-logo-svg}
 
 Facultas **Generare Insigne SVG** sinit Theme Builder creare et inserere insignia SVG propria directe in situm tuum WordPress cum purgatione automatica spatiis nominum tuta.
 
-## Conspectus
+## Conspectus {#overview}
 
 Haec facultas insignia imaginum vectorialium scalabilium (SVG) generat secundum directionem notae siti tui et consilia designandi praeoptata. SVG generata automatice purgantur ut tuta sint ad usum in WordPress, integritate visuali servata.
 
-## Parametra
+## Parametra {#parameters}
 
 | Parametrum | Typus | Necessarium | Descriptio |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Haec facultas insignia imaginum vectorialium scalabilium (SVG) generat secundum 
 | `height` | number | Non | Altitudo SVG in pixelis (praedefinitum: 200) |
 | `include_text` | boolean | Non | Utrum nomen siti ut textus in insigni includatur (praedefinitum: true) |
 
-## Forma Exitus
+## Forma Exitus {#output-format}
 
 Facultas reddit catenam SVG cum hac structura:
 
@@ -36,7 +36,7 @@ Facultas reddit catenam SVG cum hac structura:
 }
 ```
 
-## Mores Purgationis SVG
+## Mores Purgationis SVG {#svg-sanitisation-behaviour}
 
 SVG generata purgationem automaticam spatiis nominum tutam subeunt ut:
 
@@ -48,7 +48,7 @@ SVG generata purgationem automaticam spatiis nominum tutam subeunt ut:
 
 Hoc efficit ut SVG tutum sit directe in WordPress inserere sine purgatione addita requirenda.
 
-## Exemplum Usus
+## Exemplum Usus {#usage-example}
 
 **Monitum:**
 ```
@@ -62,7 +62,7 @@ Facultas creat insigne SVG quod:
 - Principia designandi moderna sequitur
 - Automatice purgatum est et ad usum paratum
 
-## Integratio cum Theme Builder
+## Integratio cum Theme Builder {#integration-with-theme-builder}
 
 Cum delectu directionis designandi Theme Builder uteris, facultas Generare Insigne SVG:
 
@@ -71,21 +71,21 @@ Cum delectu directionis designandi Theme Builder uteris, facultas Generare Insig
 3. Insigne automatice in caput/aream notae siti tui inserit
 4. SVG ut insigne proprium in mediis WordPress reponit
 
-## Optimae Rationes
+## Optimae Rationes {#best-practices}
 
 - **Praeferentias stili claras praebe** — describe stilum designandi quem vis (modernum, classicum, ludicrum, etc.)
 - **Colores specifica** — colores notae tuae include ad constantiam
 - **Renditionem experire** — verifica insigne recte apparere per diversas magnitudines schermatum
 - **Ulterius adapta** — utere instrumentis customizationis insignis WordPress ad magnitudinem et collocationem accommodandas
 
-## Limitationes
+## Limitationes {#limitations}
 
 - Insignia SVG generantur ut imagines staticae (non animatae)
 - Insignia complexa cum multis elementis emendationem manualem requirere possunt
 - Fontes proprii non sustinentur; textus fontibus systematis utitur
 - Dimensiones valde magnae vel valde parvae qualitatem afficere possunt
 
-## Facultates Relatae
+## Facultates Relatae {#related-abilities}
 
 - [Contrarium Palette Validare](./validate-palette-contrast.md) — contrarium colorum pro accessibilitate inspice
 - [Menú Creare](./create-menu.md) — menus navigationis pro situ tuo crea

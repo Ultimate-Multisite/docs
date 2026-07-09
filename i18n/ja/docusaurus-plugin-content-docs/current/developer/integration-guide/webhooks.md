@@ -3,11 +3,11 @@ title: Webhook処理
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ハンドリング
+# Webhook ハンドリング {#webhook-handling}
 
 外部サービスからのイベントを受信し、Ultimate Multisiteとデータを同期するためのカスタムWebhookエンドポイントを作成します。
 
-## Custom Webhook Endpoint
+## Custom Webhook Endpoint {#custom-webhook-endpoint}
 
 ```php
 // Webhook エンドポイントを登録する
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - 常にHMACまたは共有シークレットを使用してWebhook署名を検証してください
 - `permission_callback` をRESTルートに設定してください — 本番環境では `__return_true` を設定しないでください

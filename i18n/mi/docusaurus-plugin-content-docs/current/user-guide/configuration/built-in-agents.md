@@ -3,11 +3,11 @@ title: Ngā Āpiha Kua Hangaia ki Roto
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ngā Agent kua hangaia-ki-roto
+# Ngā Agent kua hangaia-ki-roto {#built-in-agents}
 
 Ka tukuna mai e Gratis AI Agent v1.9.0 ngā agent hangaia-ki-roto e rima, kua whirihoratia kē ia me tētahi huinga taputapu arotahi, tētahi system prompt kua whakahāngaitia, me ngā whakaaro tīmata e hāngai ana ki ngā mahi noa i taua wāhanga. Mā te whakawhiti i waenga i ngā agent ka panoni i ngā mea ka taea e te kaitautoko me te āhua o āna whakautu — kāore he whirihoranga māu. Ka taea e Superdav AI Agent v1.18.0 te tāpiri taputapu mōhio-hōtaka, pūkete whakamaumahara, kūaha whakaaetanga, me ngā whakamōhiotanga SMS ki ēnei rerengamahi ina whirihoratia ngā tūhononga e hāngai ana.
 
-## He aha te Agent?
+## He aha te Agent? {#what-is-an-agent}
 
 He kōtaha whirihoranga whai ingoa ia agent e whakakotahi ana i:
 
@@ -15,7 +15,7 @@ He kōtaha whirihoranga whai ingoa ia agent e whakakotahi ana i:
 - **System prompt** — ngā tohutohu e whakatakoto ana i te reo, ngā kaupapa matua, me ngā here a te agent
 - **Ngā whakaaro** — ngā prompt kua tuhia kē e whakaaturia ana ki te atanga kōrerorero hei āwhina i a koe kia tīmata wawe
 
-## Te uru ki te Kaitīpako Agent
+## Te uru ki te Kaitīpako Agent {#accessing-the-agent-picker}
 
 1. Whakatuwheratia te paewhiri **Gratis AI Agent** i te paetaha kaiwhakahaere WordPress.
 2. Pāwhiritia te **ata agent** i te kokonga mauī-runga o te pane kōrerorero (ka panoni te ata hei whakaatu i te agent hohe).
@@ -24,9 +24,9 @@ He kōtaha whirihoranga whai ingoa ia agent e whakakotahi ana i:
 
 Ka taea hoki e koe te whakawhiti agent i waenganui kōrerorero — ka whai mana te system prompt o te agent hou mai i te karere whai muri.
 
-## Ngā Agent Hangaia-ki-roto e Rima
+## Ngā Agent Hangaia-ki-roto e Rima {#the-five-built-in-agents}
 
-### Kaituhi Ihirangi
+### Kaituhi Ihirangi {#content-writer}
 
 **Arotahi:** Te waihanga me te whakatika pou, whārangi, me ngā puka whakapā.
 
@@ -47,7 +47,7 @@ Ka taea hoki e koe te whakawhiti agent i waenganui kōrerorero — ka whai mana 
 
 ---
 
-### Kaihanga Paetukutuku
+### Kaihanga Paetukutuku {#site-builder}
 
 **Arotahi:** Te waihanga paetukutuku mai i te tīmatanga ki te mutunga i runga i te prompt kotahi.
 
@@ -70,7 +70,7 @@ Ka taea hoki e koe te whakawhiti agent i waenganui kōrerorero — ka whai mana 
 
 ---
 
-### Taiwhanga Hoahoa
+### Taiwhanga Hoahoa {#design-studio}
 
 **Arotahi:** Whakaritenga ā-ataata — ngā tae, momotuhi, CSS, me ngā tauira poraka.
 
@@ -87,7 +87,7 @@ Ka taea hoki e koe te whakawhiti agent i waenganui kōrerorero — ka whai mana 
 - *Tangohia he whakaahua-mata o te whārangi kāinga, ā, kōrerotia mai ngā mea ka whakapai ake koe.*
 - *Waihangatia tētahi tauira poraka hero ka taea te whakamahi anō, me tētahi whakaahua papamuri whānui-katoa me tētahi pane kua whakawaengatia.*
 
-### Kaiwhakahaere Plugin
+### Kaiwhakahaere Plugin {#plugin-manager}
 
 **Arotahi:** Te kite, te tāuta, me te whakahaere WordPress plugins.
 
@@ -105,7 +105,7 @@ Ka taea hoki e koe te whakawhiti agent i waenganui kōrerorero — ka whai mana 
 
 ---
 
-### Kaitautoko Tautoko
+### Kaitautoko Tautoko {#support-assistant}
 
 **Arotahi:** Te whakautu pātai mō te ihirangi paetukutuku, ngā tautuhinga, me te whirihoranga WordPress.
 
@@ -124,7 +124,7 @@ Ka taea hoki e koe te whakawhiti agent i waenganui kōrerorero — ka whai mana 
 
 ---
 
-## Ngā Tuituinga Aunoatanga Superdav
+## Ngā Tuituinga Aunoatanga Superdav {#superdav-automation-integrations}
 
 Ina whirihorahia ngā tuituinga Superdav AI Agent v1.18.0, ka taea e ngā agent kua hangaia mai te whai wāhi ki ngā reremahi aunoatanga haumaru ake, mōhio hoki ki te hōtaka:
 
@@ -138,11 +138,11 @@ Reremahi e taunakitia ana: tonoa te agent kia whakarite i te karere, i te mahi r
 
 ---
 
-## Te Whakarite Ritenga i ngā Agent
+## Te Whakarite Ritenga i ngā Agent {#customising-agents}
 
 Ka taea ia agent kua hangaia mai te whakawhānui, te whakakapi rānei mā te tātari `gratis_ai_agent_agents`.
 
-### Te tāpiri i tētahi aki pūnaha ritenga ki tētahi agent o nāianei
+### Te tāpiri i tētahi aki pūnaha ritenga ki tētahi agent o nāianei {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Te rēhita i tētahi agent hou
+### Te rēhita i tētahi agent hou {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Ka puta te agent hou ki te Kaitīpako Agent i muri tonu i te rere o te tātari.
 
-### Te tango i tētahi agent kua hangaia mai
+### Te tango i tētahi agent kua hangaia mai {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

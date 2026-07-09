@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Izengezo ze-Ultimate Multisite
+# Izengezo ze-Ultimate Multisite {#ultimate-multisite-addons}
 
 Izengezo zinweba Ultimate Multisite ngezici ezengeziwe nokuhlanganiswa. Izengezo eziningi ziyakhokhelwa futhi zingathengwa ku-[ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Ukufaka
+## Ukufaka {#installation}
 
 Izengezo zingafakwa ngezindlela ezimbili:
 
 1. **Ngekhasi Lezengezo** -- Zulazula uye ekhasini lokuphatha izengezo lesayithi lakho ku-WordPress admin
 2. **Ukulanda Mathupha** -- Landa ku-[Account yakho](https://ultimatemultisite.com/my-account/downloads/) bese ulayisha nge Ama-plugin > Engeza Okusha
 
-## Izengezo Ezitholakalayo
+## Izengezo Ezitholakalayo {#available-addons}
 
 | Isengezo | Incazelo |
 |-------|-------------|

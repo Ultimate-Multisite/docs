@@ -3,15 +3,15 @@ title: 'Isomo rya 8: Kwinjiza abakiriya'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Isomo rya 8: Kwinjiza Abakiriya
+# Isomo rya 8: Kwinjiza Abakiriya {#lesson-8-customer-onboarding}
 
 Gutuma umukiriya yiyandikisha ni kimwe cya kabiri cy’akazi gusa. Niba yinjiye, akumva bimurenze, hanyuma ntazongere kugaruka, uba umutakaje. Iri somo ritegura ubunararibonye buhindura uwiyandikishije mushya umukiriya ukora kandi wiyumvamo serivisi.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 FitSite yamaze gushyirwaho ikirango cyayo neza, ifite n’inzira ya checkout ikora. Ubu twibanda ku bibaho nyuma y’uko nyiri studio ya fitness arangije kwiyandikisha maze akagera ku rubuga rwe rushya bwa mbere.
 
-## Impamvu Onboarding Ifite Akamaro
+## Impamvu Onboarding Ifite Akamaro {#why-onboarding-matters}
 
 Iminota 30 ya mbere nyuma yo kwiyandikisha ni yo igena niba umukiriya aguma cyangwa agenda. Nyiri studio ya fitness:
 
@@ -21,9 +21,9 @@ Iminota 30 ya mbere nyuma yo kwiyandikisha ni yo igena niba umukiriya aguma cyan
 
 Templates zanyu zijyanye n’icyiciro cyihariye (Isomo rya 4) zikemura ingingo ya mbere. Iri somo rikemura iya kabiri.
 
-## Ubunararibonye bw’Iyinjira rya Mbere
+## Ubunararibonye bw’Iyinjira rya Mbere {#the-first-login-experience}
 
-### Welcome Dashboard Widget
+### Welcome Dashboard Widget {#welcome-dashboard-widget}
 
 Kora dashboard widget yihariye isuhuza abakiriya bashya kandi ikabayobora mu gutegura urubuga. Ibi bigomba kugaragara cyane igihe binjiye bwa mbere.
 
@@ -37,7 +37,7 @@ Kora dashboard widget yihariye isuhuza abakiriya bashya kandi ikabayobora mu gut
 
 Buri ntambwe ihuza ako kanya n’urupapuro cyangwa igenamiterere birebana. Nta gushakisha mu ma menus.
 
-### Koroshya Dashboard
+### Koroshya Dashboard {#simplify-the-dashboard}
 
 Abakiriya bashya ntibakeneye kubona buri kintu cyose cyo muri menu ya WordPress. Tekereza kuri ibi:
 
@@ -47,29 +47,29 @@ Abakiriya bashya ntibakeneye kubona buri kintu cyose cyo muri menu ya WordPress.
 
 Addon ya [Plugin & Theme Manager](/addons/plugin-and-theme-manager) ishobora gufasha kugenzura ibyo abakiriya babona.
 
-## Urukurikirane rwa Email zo Kubaha Ikaze
+## Urukurikirane rwa Email zo Kubaha Ikaze {#welcome-email-sequence}
 
 Email imwe yo kubaha ikaze ntihagije. Tegura urukurikirane ruyobora abakiriya mu cyumweru cyabo cya mbere:
 
-### Email 1: Kubaha Ikaze (Ako kanya nyuma yo kwiyandikisha)
+### Email 1: Kubaha Ikaze (Ako kanya nyuma yo kwiyandikisha) {#email-1-welcome-immediately-after-signup}
 
 - Umutwe: "Welcome to FitSite -- your studio website is live"
 - Ibirimo: Link yo kwinjira, intambwe za quick start, link ijya ku bikoresho by’ubufasha
 - Imvugo: Ishimishije, itera akanyabugabo, ijyanye na fitness
 
-### Email 2: Intsinzi Zihuse (Umunsi wa 1)
+### Email 2: Intsinzi Zihuse (Umunsi wa 1) {#email-2-quick-wins-day-1}
 
 - Umutwe: "3 things to do first on your FitSite"
 - Ibirimo: Ongeramo logo yawe, vugurura ishusho ya hero yo ku rupapuro rw’ibanze, ongeramo ingengabihe y’amasomo yawe
 - Shyiramo screenshots zigaragaza neza aho gukanda
 
-### Email 3: Bigire Ibyawe (Umunsi wa 3)
+### Email 3: Bigire Ibyawe (Umunsi wa 3) {#email-3-make-it-yours-day-3}
 
 - Umutwe: "Make your fitness site stand out"
 - Ibirimo: Hindura amabara, ongeramo amafoto y’abatoza, andika inkuru ya studio yawe
 - Shyiramo link ijya ku ngero z’imbuga nziza za fitness ziri kuri platform
 
-### Email 4: Tangira Kuyitangaza (Umunsi wa 7)
+### Email 4: Tangira Kuyitangaza (Umunsi wa 7) {#email-4-go-live-day-7}
 
 - Umutwe: "Ready to share your FitSite with the world?"
 - Ibirimo: Checklist y’ibyo kugenzura mbere yo kuyisangiza abandi, uko wahuzamo domain yihariye (niba uri kuri Growth/Pro), inama zo gusangiza ku mbuga nkoranyambaga
@@ -78,11 +78,11 @@ Email imwe yo kubaha ikaze ntihagije. Tegura urukurikirane ruyobora abakiriya mu
 Use [Webhooks](/user-guide/integrations/webhooks) or [Zapier](/user-guide/integrations/zapier) to trigger these emails through your email marketing platform. This gives you more control over timing and allows you to track engagement.
 :::
 
-## Ibikoresho by’Ubufasha
+## Ibikoresho by’Ubufasha {#help-resources}
 
 Kora ibikoresho by’ubufasha bijyanye n’icyiciro cyihariye bisubiza ibibazo ba nyiri studio za fitness bakunze kubaza koko:
 
-### Inyandiko zo muri Knowledge Base
+### Inyandiko zo muri Knowledge Base {#knowledge-base-articles}
 
 - "Uko wavugurura ingengabihe y’amasomo yawe"
 - "Kongeramo no guhindura imyirondoro y’abatoza"
@@ -92,7 +92,7 @@ Kora ibikoresho by’ubufasha bijyanye n’icyiciro cyihariye bisubiza ibibazo b
 
 Ibi ubyandikire abakoresha badafite ubumenyi bwa tekinike. Koresha screenshots. Irinde imvugo yihariye ya WordPress.
 
-### Video Walkthroughs
+### Video Walkthroughs {#video-walkthroughs}
 
 Amashusho magufi yo gufata ibyo kuri screen (iminota 2-3) agaragaza:
 
@@ -103,7 +103,7 @@ Amashusho magufi yo gufata ibyo kuri screen (iminota 2-3) agaragaza:
 
 Ibi ntibikeneye kuba productions zinonosoye cyane. Icy’ingenzi ni ukuba bisobanutse, bifasha, kandi bihuye n’icyiciro cyihariye.
 
-## Urupapuro rwa Account
+## Urupapuro rwa Account {#the-account-page}
 
 Ultimate Multisite irimo [Account Page](/user-guide/client-management/account-page) igenewe abakiriya, aho bacungira subscription yabo. Yitunganye kugira ngo:
 
@@ -112,7 +112,7 @@ Ultimate Multisite irimo [Account Page](/user-guide/client-management/account-pa
 - Itange amateka ya billing no gukuramo invoices
 - Ihuze ku bikoresho by’ubufasha
 
-## Gupima Intsinzi ya Onboarding
+## Gupima Intsinzi ya Onboarding {#measuring-onboarding-success}
 
 Kurikirana ibi bipimo kugira ngo umenye niba onboarding yawe ikora:
 
@@ -121,7 +121,7 @@ Kurikirana ibi bipimo kugira ngo umenye niba onboarding yawe ikora:
 - **Support tickets from new customers**: Umubare munini uvuga ko onboarding yawe ifite icyuho
 - **Trial-to-paid conversion**: Niba utanga trials, ni ikihe gipimo gihinduka abakiriya bishyura?
 
-## FitSite Network Kugeza Ubu
+## FitSite Network Kugeza Ubu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Ibyo Twubatse muri Iri Somo
+## Ibyo Twubatse muri Iri Somo {#what-we-built-this-lesson}
 
 - **Ubunararibonye buyobowe bw’iyinjira rya mbere** bufite Quick Start widget
 - **Dashboard yoroshye** yibanda ku mirimo yo gucunga urubuga rwa fitness

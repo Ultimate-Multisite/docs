@@ -3,7 +3,7 @@ title: Closte-aren Sunrise Constantena emateko
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-an SUNRISE constanta truthona
+# Closte-an SUNRISE constanta truthona {#setting-the-sunrise-constant-to-true-on-closte}
 
 Bazun host provider-ek gabe wp-config.php-n lock egiten dute segurtasun erantzunetan. Horrek euskarri Ultimate Multisite-rek ez du automatikoki filea editatzeko, domain mapping eta beste funtzioak berri egiteko beharrezko constantsak sartzeko. Closte hori bat da.
 

@@ -3,15 +3,15 @@ title: 'Mësimi 6: Përvoja e regjistrimit'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Mësimi 6: Përvoja e regjistrimit
+# Mësimi 6: Përvoja e regjistrimit {#lesson-6-the-signup-experience}
 
 Rrjedha e checkout është vendi ku interesi shndërrohet në të ardhura. Një proces regjistrimi konfuz ose i përgjithshëm humb klientë. Një rrjedhë specifike për një nish, që flet gjuhën e tyre dhe duket e lehtë, i konverton ata.
 
-## Ku e lamë
+## Ku e lamë {#where-we-left-off}
 
 FitSite ka shabllone dhe plane të konfiguruara. Tani ndërtojmë përvojën e regjistrimit dhe checkout që i kthen pronarët e studiove të fitnesit në klientë që paguajnë.
 
-## Të kuptuarit e rrjedhës së regjistrimit
+## Të kuptuarit e rrjedhës së regjistrimit {#understanding-the-registration-flow}
 
 Formularët e checkout të Ultimate Multisite janë formularë plotësisht të personalizueshëm me shumë hapa. Për FitSite, duam një rrjedhë që:
 
@@ -21,11 +21,11 @@ Formularët e checkout të Ultimate Multisite janë formularë plotësisht të p
 
 Shihni [Rrjedha e regjistrimit](/user-guide/configuration/the-registration-flow) për referencën e plotë teknike.
 
-## Dizajnimi i checkout të FitSite
+## Dizajnimi i checkout të FitSite {#designing-the-fitsite-checkout}
 
 Navigoni te **Ultimate Multisite > Checkout Forms** dhe krijoni një formular të ri.
 
-### Hapi 1: Zgjedhja e planit
+### Hapi 1: Zgjedhja e planit {#step-1-plan-selection}
 
 Gjëja e parë që duhet të shohë një pronar studioje fitnesi janë planet, të paraqitura me terma që i kupton.
 
@@ -37,7 +37,7 @@ Gjëja e parë që duhet të shohë një pronar studioje fitnesi janë planet, t
 "1 GB storage" means nothing to a gym owner. "Everything you need for a professional studio website" means everything. Write plan descriptions in your customer's language.
 :::
 
-### Hapi 2: Zgjedhja e shabllonit
+### Hapi 2: Zgjedhja e shabllonit {#step-2-template-selection}
 
 Pasi zgjedh një plan, klienti zgjedh shabllonin e tij fillestar.
 
@@ -45,7 +45,7 @@ Pasi zgjedh një plan, klienti zgjedh shabllonin e tij fillestar.
 - Shabllonet e disponueshme filtrohen sipas planit që ata zgjodhën (i konfiguruar në Mësimin 5)
 - Çdo shabllon duhet të ketë një imazh parapamjeje që tregon një dizajn specifik për fitnesin
 
-### Hapi 3: Krijimi i Account
+### Hapi 3: Krijimi i Account {#step-3-account-creation}
 
 Mbajeni këtë minimal. Mblidhni vetëm:
 
@@ -55,27 +55,27 @@ Mbajeni këtë minimal. Mblidhni vetëm:
 
 Mos kërkoni informacion që nuk ju nevojitet gjatë regjistrimit. Çdo fushë shtesë ul konvertimet.
 
-### Hapi 4: Konfigurimi i sajtit
+### Hapi 4: Konfigurimi i sajtit {#step-4-site-setup}
 
 - **Titulli i sajtit**: Plotësojeni paraprakisht nga emri i studios i futur në Hapin 3
 - **URL-ja e sajtit**: Gjenerojeni automatikisht nga emri i studios (p.sh., `ironworks.fitsite.com`)
 
-### Hapi 5: Pagesa
+### Hapi 5: Pagesa {#step-5-payment}
 
 - Shtoni fushën **Pagesa**
 - Konfiguroni portën tuaj të pagesave ([Stripe](/user-guide/payment-gateways/stripe) rekomandohet për faturim me abonim)
 - Nëse krijuat order bumps në Mësimin 5, shtoni një fushë **Order Bump** përpara hapit të pagesës
 
-### Hapi 6: Konfirmimi
+### Hapi 6: Konfirmimi {#step-6-confirmation}
 
 - Personalizoni mesazhin e konfirmimit me gjuhë specifike për fitnesin
 - Shembull: "Faqja e internetit e studios suaj të fitnesit po krijohet. Do të ridrejtoheni te sajti juaj i ri brenda pak sekondash."
 
-## Shtimi i një çelësi për zgjedhjen e periudhës
+## Shtimi i një çelësi për zgjedhjen e periudhës {#adding-a-period-selection-toggle}
 
 Nëse keni konfiguruar variacione çmimi në planet tuaja (mujore kundrejt vjetore), shtoni një fushë **Zgjedhja e periudhës** në formularin e checkout që klientët të mund të kalojnë mes periudhave të faturimit. Shihni [Formularët e checkout](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) për udhëzime.
 
-## Konfigurimi i pagesës
+## Konfigurimi i pagesës {#configuring-payment}
 
 Nëse nuk keni konfiguruar tashmë një portë pagesash:
 
@@ -85,7 +85,7 @@ Nëse nuk keni konfiguruar tashmë një portë pagesash:
 
 Shihni [Marrja e pagesave](/user-guide/payment-gateways/getting-paid) për detaje se si pagesat rrjedhin në account tuaj.
 
-## Testimi i rrjedhës
+## Testimi i rrjedhës {#testing-the-flow}
 
 Përpara se të vazhdoni, përfundoni një regjistrim të plotë prove:
 
@@ -105,7 +105,7 @@ Kontrolloni që:
 - [ ] Klienti mbërrin në një sajt funksional me shabllonin e zgjedhur
 - [ ] Email-et e konfirmimit përdorin gjuhë specifike për fitnesin
 
-## Rrjeti FitSite deri tani
+## Rrjeti FitSite deri tani {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Çfarë ndërtuam në këtë mësim
+## Çfarë ndërtuam në këtë mësim {#what-we-built-this-lesson}
 
 - **Një formular checkout me shumë hapa** i përshtatur për pronarët e studiove të fitnesit
 - **Gjuhë specifike për nishin** gjatë gjithë rrjedhës së regjistrimit

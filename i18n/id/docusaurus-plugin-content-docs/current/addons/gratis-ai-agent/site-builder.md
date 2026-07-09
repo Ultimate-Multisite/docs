@@ -3,15 +3,15 @@ title: Orkestrasi Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (diperkenalkan di Gratis AI Agent v1.4.0) adalah mesin yang menjalankan pembuatan situs web multi-langkah. Ketika Anda meminta agen untuk "membuat situs web restoran" atau "membuat portofolio dengan blog", orkestrator akan memecah tujuan tingkat tinggi itu menjadi **rencana** terstruktur, menemukan plugin yang diperlukan untuk mewujudkannya, menjalankan setiap langkah secara berurutan, melacak kemajuan, dan pulih dari kesalahan secara mandiri.
 
 ---
 
-## Cara Kerjanya
+## Cara Kerjanya {#how-it-works}
 
-### 1. Pembuatan Rencana (Plan Generation)
+### 1. Pembuatan Rencana (Plan Generation) {#1-plan-generation}
 
 Ketika agen menerima instruksi pembuatan situs, ia akan memanggil kemampuan `create_site_plan` untuk menghasilkan **rencana situs** dalam format JSON. Rencana ini menjelaskan:
 
@@ -61,7 +61,7 @@ Ketika agen menerima instruksi pembuatan situs, ia akan memanggil kemampuan `cre
 }
 ```
 
-### 2. Penemuan Plugin (Plugin Discovery)
+### 2. Penemuan Plugin (Plugin Discovery) {#2-plugin-discovery}
 
 Sebelum eksekusi dimulai, orkestrator akan memindai `plugin_requirements` dari rencana dan memeriksa plugin mana yang sudah aktif. Untuk plugin yang hilang, ia akan:
 
@@ -71,7 +71,7 @@ Sebelum eksekusi dimulai, orkestrator akan memindai `plugin_requirements` dari r
 
 Kegagalan penemuan plugin tidak fatal — orkestrator akan menandai langkah yang terpengaruh sebagai `skipped` dan melanjutkan dengan sisa rencana.
 
-### 3. Eksekusi Rencana (Plan Execution)
+### 3. Eksekusi Rencana (Plan Execution) {#3-plan-execution}
 
 Orkestrator memanggil `execute_site_plan` dengan ID rencana. Eksekusi berjalan fase demi fase, langkah demi langkah:
 
@@ -79,7 +79,7 @@ Orkestrator memanggil `execute_site_plan` dengan ID rencana. Eksekusi berjalan f
 - **Langkah paralel** — langkah-langkah dalam fase yang sama yang tidak memiliki ketergantungan satu sama lain akan dikirim secara bersamaan ketika flag `parallel` diatur.
 - **Batas waktu langkah** — setiap langkah memiliki batas waktu individual (default: pengaturan `Ability Timeout`). Langkah yang melebihi batas waktu akan ditandai `failed` dan rencana akan dilanjutkan.
 
-### 4. Pelacakan Kemajuan (Progress Tracking)
+### 4. Pelacakan Kemajuan (Progress Tracking) {#4-progress-tracking}
 
 Panggil `get_plan_progress` kapan saja untuk memeriksa status eksekusi:
 
@@ -104,7 +104,7 @@ Pengguna WP-CLI dapat memantau kemajuan dengan:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Pemulihan Kesalahan (Error Recovery)
+### 5. Pemulihan Kesalahan (Error Recovery) {#5-error-recovery}
 
 Ketika sebuah langkah gagal, orkestrator akan memeriksa **fallback** langkah yang didefinisikan dalam rencana:
 
@@ -115,9 +115,9 @@ Agen akan melaporkan semua kegagalan dalam ringkasan rencana akhir dan mungkin m
 
 ---
 
-## Kemampuan Rencana Situs (Site Plan Abilities)
+## Kemampuan Rencana Situs (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Menghasilkan rencana situs terstruktur dari deskripsi tujuan bahasa alami.
 
@@ -134,7 +134,7 @@ Menghasilkan rencana situs terstruktur dari deskripsi tujuan bahasa alami.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Memulai eksekusi rencana situs yang telah dibuat sebelumnya.
 
@@ -150,7 +150,7 @@ Memulai eksekusi rencana situs yang telah dibuat sebelumnya.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Mengembalikan status eksekusi rencana situs saat ini.
 
@@ -164,7 +164,7 @@ Mengembalikan status eksekusi rencana situs saat ini.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Secara manual menyelesaikan langkah yang gagal dan melanjutkan eksekusi rencana dari langkah berikutnya. Gunakan ini ketika pemulihan otomatis tidak mungkin dilakukan dan Anda ingin melakukan intervensi.
 
@@ -180,7 +180,7 @@ Secara manual menyelesaikan langkah yang gagal dan melanjutkan eksekusi rencana 
 
 ---
 
-## Membandingkan v1 dan v2
+## Membandingkan v1 dan v2 {#comparing-v1-and-v2}
 
 | Fitur | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Secara manual menyelesaikan langkah yang gagal dan melanjutkan eksekusi rencana 
 
 ---
 
-## Perintah Rencana WP-CLI
+## Perintah Rencana WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Menghasilkan rencana situs dari deskripsi tujuan.
 
@@ -205,7 +205,7 @@ Menghasilkan rencana situs dari deskripsi tujuan.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Mengeksekusi rencana yang telah dibuat sebelumnya.
 
@@ -213,7 +213,7 @@ Mengeksekusi rencana yang telah dibuat sebelumnya.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Menampilkan kemajuan saat ini untuk rencana yang sedang berjalan atau yang sudah selesai.
 
@@ -221,7 +221,7 @@ Menampilkan kemajuan saat ini untuk rencana yang sedang berjalan atau yang sudah
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Mendaftar semua rencana situs (tertunda, sedang berjalan, dan selesai).
 
@@ -229,7 +229,7 @@ Mendaftar semua rencana situs (tertunda, sedang berjalan, dan selesai).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Meriset rencana yang gagal menjadi `pending` sehingga dapat dijalankan kembali dari awal.
 

@@ -3,9 +3,9 @@ title: Eklenti Geliştirmeye Başlarken
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Eklenti Geliştirme
+# Eklenti Geliştirme {#addon-development}
 
-## Eklenti Yapısı
+## Eklenti Yapısı {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Şablon dosyaları
 ```
 
-## Ana Eklenti Dosyası Şablonu
+## Ana Eklenti Dosyası Şablonu {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Özel Model Örneği
+## Özel Model Örneği {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Yönetici Sayfası Entegrasyonu
+## Yönetici Sayfası Entegrasyonu {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addon’unuzu Test Etme
+## Addon’unuzu Test Etme {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 uzantı noktaları
+## v2.13.0 uzantı noktaları {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0, egemen kiracılar, ödeme alan adları veya barındırma sağlayıcısı DNS otomasyonu ile entegre olan addon’lar için kullanışlı olan birkaç uzantı noktası ekler.
 
-### SSO ve ana site yönetimi URL’leri
+### SSO ve ana site yönetimi URL’leri {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Ödeme formu temel alan adları
+### Ödeme formu temel alan adları {#checkout-form-base-domains}
 
 Addon’unuz, site başına özel eşlemeler yerine ödeme formu **Site URL** alan adları gibi davranması gereken ek paylaşılan temel alan adları sağladığında `wu_checkout_form_base_domains` kullanın:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite bu host’ları normalleştirir ve onlar için otomatik site başına eşlenmiş alan adı kayıtlarını atlar.
 
-### Otomatik alan adı kaydı oluşturma
+### Otomatik alan adı kaydı oluşturma {#automatic-domain-record-creation}
 
 Addon’unuzun yeni oluşturulan bir site için otomatik alan adı kaydı oluşturmayı engellemesi veya ertelemesi gerektiğinde `wu_should_create_domain_record_for_site` kullanın:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` dinleyen barındırma sağlayıcısı entegrasyonları, siteler oluşturulduğunda sağlayıcı tarafında DNS kayıtları oluşturabilir. Bu action için kayıtlı bir entegrasyon yoksa Ultimate Multisite boş arka plan işini atlar.
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 - Kullanılabilir action’lar ve filter’lar için [Hooks Referansı](/developer/hooks) sayfasını inceleyin
 - API entegrasyonu için [REST API Genel Bakışı](/developer/rest-api/overview) sayfasını kontrol edin

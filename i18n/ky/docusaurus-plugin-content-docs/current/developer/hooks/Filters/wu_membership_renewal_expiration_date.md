@@ -4,11 +4,11 @@ title: Filter - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Узартуудан кийин коюла турган эсептелген мөөнөтү бүтүү күнүн чыпкалайт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аталышы | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 | $membership_id | `int` | Мүчөлүктүн ID'си. |
 | $membership | `\Membership` | Мүчөлүк объекти. |
 
-### Качантан бери
+### Качантан бери {#since}
 
 - 2.0.0
-### Булак
+### Булак {#source}
 
 2192-сапта [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) ичинде аныкталган

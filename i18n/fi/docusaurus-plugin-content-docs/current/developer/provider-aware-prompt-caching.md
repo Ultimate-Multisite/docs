@@ -3,11 +3,11 @@ title: Palveluntarjoajatietoinen kehotteiden välimuisti
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Palveluntarjoajat huomioiva kehotteiden välimuisti
+# Palveluntarjoajat huomioiva kehotteiden välimuisti {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 tuo käyttöön **palveluntarjoajat huomioivan kehotteiden välimuistin**, joka optimoi API-kustannuksia ja viivettä välimuistittamalla kehotteita eri LLM-palveluntarjoajien välillä. Jokaisella palveluntarjoajalla on erilaiset välimuistimekanismit ja määritykset.
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 Kehotteiden välimuisti mahdollistaa seuraavat asiat:
 
@@ -23,11 +23,11 @@ Eri palveluntarjoajat toteuttavat välimuistin eri tavoin:
 - **OpenRouter**: Palveluntarjoajakohtainen välimuisti
 - **Vertex Anthropic**: Kehotteiden välimuisti välimuistin hallinnalla
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini tarjoaa eksplisiittisen välimuistin hallinnan `cachedContents` API:n kautta.
 
-### Määritys
+### Määritys {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Välimuistitetun kehotteen luominen
+### Välimuistitetun kehotteen luominen {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Välimuistitetun kehotteen käyttäminen
+### Välimuistitetun kehotteen käyttäminen {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Välimuistin elinkaari
+### Välimuistin elinkaari {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Parhaat käytännöt Geminille
+### Parhaat käytännöt Geminille {#best-practices-for-gemini}
 
 - **Aseta sopiva TTL**: Tasapainota kustannussäästöt ja välimuistin vanhentuneisuus
 - **Välimuistita järjestelmäkehotteet**: Käytä samaa järjestelmäkehotetta uudelleen eri pyynnöissä
 - **Seuraa välimuistin käyttöä**: Seuraa, mitä välimuisteja käytetään eniten
 - **Siivoa vanhentuneet välimuistit**: Poista käyttämättömät välimuistit säännöllisesti
 
-## Azure OpenAI: Kehotteiden välimuisti
+## Azure OpenAI: Kehotteiden välimuisti {#azure-openai-prompt-caching}
 
 Azure OpenAI tukee kehotteiden välimuistia automaattisella TTL-hallinnalla.
 
-### Määritys
+### Määritys {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Välimuistin käyttöönotto
+### Välimuistin käyttöönotto {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Välimuistiotsakkeet
+### Välimuistiotsakkeet {#cache-headers}
 
 Azure OpenAI käyttää HTTP-otsakkeita välimuistin hallintaan:
 
@@ -152,7 +152,7 @@ Tuetut arvot:
 - `no_cache`: Älä välimuistita tätä pyyntöä
 - `no_store`: Älä välimuistita äläkä käytä uudelleen
 
-### Välimuistin käytön seuranta
+### Välimuistin käytön seuranta {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Parhaat käytännöt Azure OpenAI:lle
+### Parhaat käytännöt Azure OpenAI:lle {#best-practices-for-azure-openai}
 
 - **Käytä yhdenmukaisia kehotteita**: Identtiset kehotteet hyötyvät välimuistista
 - **Aseta kohtuullinen TTL**: Tasapainota kustannukset ja tuoreus
 - **Seuraa välimuistimittareita**: Seuraa välimuistin luontia suhteessa osumiin
 - **Eräytä samankaltaiset pyynnöt**: Ryhmittele pyynnöt maksimoidaksesi välimuistiosumat
 
-## OpenRouter: Palveluntarjoajakohtainen välimuisti
+## OpenRouter: Palveluntarjoajakohtainen välimuisti {#openrouter-provider-specific-caching}
 
 OpenRouter tukee välimuistia taustalla olevien palveluntarjoajien (OpenAI, Anthropic jne.) kautta.
 
-### Määritys
+### Määritys {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter-välimuistin käyttäminen
+### OpenRouter-välimuistin käyttäminen {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Palveluntarjoajakohtaiset vaihtoehdot
+### Palveluntarjoajakohtaiset vaihtoehdot {#provider-specific-options}
 
 Eri palveluntarjoajilla on erilaiset välimuistimekanismit:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Parhaat käytännöt OpenRouterille
+### Parhaat käytännöt OpenRouterille {#best-practices-for-openrouter}
 
 - **Tunne palveluntarjoajasi välimuisti**: Jokaisella palveluntarjoajalla on erilaiset mekanismit
 - **Testaa välimuistin toimintaa**: Varmista, että välimuisti toimii valitsemasi palveluntarjoajan kanssa
 - **Seuraa kustannuksia**: Seuraa välimuistin tuottamia säästöjä
 - **Käytä yhdenmukaisia malleja**: Mallien vaihtaminen estää välimuistiosumat
 
-## Vertex Anthropic: Kehotteiden välimuisti välimuistin hallinnalla
+## Vertex Anthropic: Kehotteiden välimuisti välimuistin hallinnalla {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) tukee kehotteiden välimuistia eksplisiittisellä välimuistin hallinnalla.
 
-### Määritys
+### Määritys {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic -välimuistin käyttö
+### Vertex Anthropic -välimuistin käyttö {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Välimuistin hallintatyypit
+### Välimuistin hallintatyypit {#cache-control-types}
 
 - **ephemeral**: Välimuisti pyynnön keston ajaksi (oletus)
 - **persistent**: Välimuisti useiden pyyntöjen välillä (jos tuettu)
 
-### Välimuistin käytön seuranta
+### Välimuistin käytön seuranta {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic -parhaat käytännöt
+### Vertex Anthropic -parhaat käytännöt {#best-practices-for-vertex-anthropic}
 
 - **Käytä ephemeral-välimuistia**: Hyvä yhden istunnon välimuistitukseen
 - **Aseta max_tokens asianmukaisesti**: Tasapainota välimuistin koko ja kustannukset
 - **Seuraa välimuistimittareita**: Seuraa välimuistin tehokkuutta
 - **Testaa omalla työkuormallasi**: Varmista, että välimuistitus hyödyttää käyttötapaustasi
 
-## Palveluntarjoajien välinen välimuististrategia
+## Palveluntarjoajien välinen välimuististrategia {#cross-provider-caching-strategy}
 
-### Yhtenäinen määritys
+### Yhtenäinen määritys {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Palveluntarjoajan tunnistus
+### Palveluntarjoajan tunnistus {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Varastrategia
+### Varastrategia {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kustannusten optimointi
+## Kustannusten optimointi {#cost-optimization}
 
-### Laske säästöt
+### Laske säästöt {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimointivinkit
+### Optimointivinkit {#optimization-tips}
 
 - **Tallenna suuret järjestelmäkehotteet välimuistiin**: Suurimmat kustannussäästöt
 - **Käytä kontekstia uudelleen**: Tallenna usein käytetyt kontekstiasiakirjat välimuistiin
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Seuraa välimuistin tehokkuutta**: Seuraa todellisia säästöjä
 - **Säädä TTL:ää**: Tasapainota kustannukset ja ajantasaisuus
 
-## Vianmääritys
+## Vianmääritys {#troubleshooting}
 
-### Välimuistia ei käytetä
+### Välimuistia ei käytetä {#cache-not-being-used}
 
 - Varmista, että välimuistitus on otettu käyttöön määrityksessä
 - Tarkista, että kehotteet ovat identtisiä (välimuistitus edellyttää täsmällistä vastaavuutta)
 - Varmista, ettei välimuisti ole vanhentunut
 - Tarkista palveluntarjoajakohtaiset välimuistin rajat
 
-### Välimuistin luonti epäonnistuu
+### Välimuistin luonti epäonnistuu {#cache-creation-failing}
 
 - Varmista, että välimuistin koko on palveluntarjoajan rajojen sisällä
 - Tarkista, että välimuistin hallinnan syntaksi on oikein
 - Varmista, että palveluntarjoaja tukee välimuistitusta mallillesi
 - Tarkista rajoitukset palveluntarjoajan dokumentaatiosta
 
-### Odottamattomat kustannukset
+### Odottamattomat kustannukset {#unexpected-costs}
 
 - Seuraa välimuistin luontia suhteessa välimuistin lukutokeneihin
 - Varmista, että välimuistia todella käytetään
 - Tarkista, johtuvatko välimuistihudit kehotteiden vaihteluista
 - Harkitse TTL:n tai välimuististrategian säätämistä
 
-## Palveluntarjoajien vertailu
+## Palveluntarjoajien vertailu {#provider-comparison}
 
 | Ominaisuus | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Kustannusten alennus | 90% | 90% | Palveluntarjoajasta riippuva | 90% |
 | Seuranta | Yksityiskohtainen | Mittareiden kautta | Palveluntarjoajasta riippuva | Käytön kautta |
 
-## Seuraavat vaiheet
+## Seuraavat vaiheet {#next-steps}
 
 1. **Valitse palveluntarjoajasi**: Valitse tarpeidesi perusteella
 2. **Määritä välimuistitus**: Ota käyttöön palveluntarjoajakohtainen välimuistitus

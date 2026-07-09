@@ -3,11 +3,11 @@ title: Webhook-ის დამუშავება
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook დამუშავება
+# Webhook დამუშავება {#webhook-handling}
 
 შექმენით მორგებული webhook endpoint-ები გარე სერვისებიდან მოვლენების მისაღებად და მონაცემების Ultimate Multisite-თან სინქრონიზაციისთვის.
 
-## მორგებული Webhook Endpoint
+## მორგებული Webhook Endpoint {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## უსაფრთხოების მოსაზრებები
+## უსაფრთხოების მოსაზრებები {#security-considerations}
 
 - ყოველთვის გადაამოწმეთ webhook ხელმოწერები HMAC-ის ან გაზიარებული საიდუმლოს გამოყენებით
 - გამოიყენეთ `permission_callback` თქვენს REST მარშრუტზე — წარმოებაში არასოდეს დააყენოთ ის `__return_true`-ზე

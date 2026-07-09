@@ -3,7 +3,7 @@ title: אתרי לקוחות
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# אתרי הלקוחות שלך (v2)
+# אתרי הלקוחות שלך (v2) {#your-clients-websites-v2}
 
 לאחר הרשמה לרשת שלך, הלקוחות שלך יכולים לגשת אל ה-Dashboard שלהם.
 

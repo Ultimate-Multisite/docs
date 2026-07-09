@@ -4,11 +4,11 @@ title: Фильтр - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Фильтр: wp_ultimo_render_vars
+# Фильтр: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Позволяет разработчикам плагинов добавлять дополнительные переменные в глобальный контекст рендеринга.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | Имя представления, которое будет отрисовано. |
 | $default_view | `string` | Имя fallback_view |
 
-### С версии
+### С версии {#since}
 
 - 2.0.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) на строке 31
 
-## Возвращает
+## Возвращает {#returns}

@@ -3,7 +3,7 @@ title: Ügyfélwebhelyek
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Az ügyfeled weboldalai (v2)
+# Az ügyfeled weboldalai (v2) {#your-clients-websites-v2}
 
 Miután regisztráltak a hálózatodon, az ügyfeleid hozzáférhetnek a Dashboardjukhoz.
 

@@ -3,15 +3,15 @@ title: 'Lezzjoni 14: X''Jiġi Wara'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lezzjoni 14: X'Jiġi Wara
+# Lezzjoni 14: X'Jiġi Wara {#lesson-14-what-comes-next}
 
 Bnejt pjattaforma ta' websajts għal niċċa mill-bidu nett. FitSite huwa live, qed jaqdi studios tal-fitness, u qed jiġġenera dħul rikorrenti. Din l-aħħar lezzjoni tħares lejn fejn tista' tmur minn hawn.
 
-## Fejn Ħallejna
+## Fejn Ħallejna {#where-we-left-off}
 
 FitSite huwa negozju li qed jaħdem b'klijenti, operazzjonijiet, u trajettorja ta' tkabbir. Issa naħsbu dwar x'inhu jmiss.
 
-## In-Network Sħiħ ta' FitSite
+## In-Network Sħiħ ta' FitSite {#the-complete-fitsite-network}
 
 Hawn hu kollox li bnejna matul 14-il lezzjoni:
 
@@ -46,11 +46,11 @@ FitSite Network (Sħiħ)
     └── Roadmap għall-bini tat-tim
 ```
 
-## Għażla 1: Mur Aktar Fil-Fond fin-Niċċa Tiegħek
+## Għażla 1: Mur Aktar Fil-Fond fin-Niċċa Tiegħek {#option-1-go-deeper-in-your-niche}
 
 Qabel tespandi għal niċeċ ġodda, ikkunsidra li tmur aktar fil-fond fil-fitness:
 
-### Sub-Niċeċ
+### Sub-Niċeċ {#sub-niches}
 
 - **Studios tal-yoga** -- mudelli speċjalizzati b'karatteristiċi għall-meditazzjoni, retreats, u workshops
 - **CrossFit boxes** -- traċċar ta' WOD, riżultati ta' kompetizzjonijiet, karatteristiċi tal-komunità
@@ -59,7 +59,7 @@ Qabel tespandi għal niċeċ ġodda, ikkunsidra li tmur aktar fil-fond fil-fitne
 
 Kull sub-niċċa tista' jkollha l-mudelli tagħha u potenzjalment il-brand tagħha, kollha jaħdmu fuq l-istess network Ultimate Multisite.
 
-### Karatteristiċi Premium
+### Karatteristiċi Premium {#premium-features}
 
 Ibni karatteristiċi li studios tal-fitness iħallsu żejjed għalihom:
 
@@ -68,14 +68,14 @@ Ibni karatteristiċi li studios tal-fitness iħallsu żejjed għalihom:
 - **Mudelli ta' blog tal-fitness** -- strutturi ta' kontenut mibnija minn qabel għall-marketing tal-kontenut tal-fitness
 - **Integrazzjoni tal-midja soċjali** -- ippubblikar awtomatiku ta' skedi tal-klassijiet u aġġornamenti
 
-### Espansjoni Ġeografika
+### Espansjoni Ġeografika {#geographic-expansion}
 
 Jekk bdejt lokalment, espandi għal:
 
 - Bliet oħra f'pajjiżek
 - Pajjiżi oħra (uża l-[karatteristiċi ta' lokalizzazzjoni](/user-guide/localization/translating) ta' Ultimate Multisite biex tappoġġja bosta lingwi)
 
-## Għażla 2: Espandi għal Niċeċ Qrib
+## Għażla 2: Espandi għal Niċeċ Qrib {#option-2-expand-to-adjacent-niches}
 
 Il-proċess li segwejt għal studios tal-fitness jaħdem għal kwalunkwe niċċa. It-tieni niċċa tiegħek hija aktar faċli għax diġà għandek:
 
@@ -83,7 +83,7 @@ Il-proċess li segwejt għal studios tal-fitness jaħdem għal kwalunkwe niċċa
 - Esperjenza operattiva
 - Playbook ippruvat
 
-### Niċeċ Qrib tal-Fitness
+### Niċeċ Qrib tal-Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness u spa** -- terapisti tal-massaġġi, day spas, ċentri tal-wellness
 - **Klabbs sportivi** -- timijiet sportivi tad-dilettanti, leagues, klabbs rikreattivi
@@ -91,7 +91,7 @@ Il-proċess li segwejt għal studios tal-fitness jaħdem għal kwalunkwe niċċa
 
 Dawn għandhom udjenza li tirkeb fuq dik tal-fitness, għalhekk il-marketing u s-sħubijiet tiegħek jistgħu jittrasferixxu.
 
-### Niċeċ Kompletament Ġodda
+### Niċeċ Kompletament Ġodda {#completely-new-niches}
 
 Applika l-qafas mil-Lezzjoni 2 biex tevalwa kwalunkwe niċċa:
 
@@ -108,7 +108,7 @@ Kull niċċa ġdida teħtieġ:
 
 L-infrastruttura tal-pjattaforma, il-billing, u l-proċessi operattivi jibqgħu l-istess.
 
-## Għażla 3: Ibni Pjattaforma ta' Pjattaformi
+## Għażla 3: Ibni Pjattaforma ta' Pjattaformi {#option-3-build-a-platform-of-platforms}
 
 Fuq skala kbira, tista' tmexxi bosta brands ta' niċeċ fuq network Ultimate Multisite wieħed:
 
@@ -118,11 +118,11 @@ Fuq skala kbira, tista' tmexxi bosta brands ta' niċeċ fuq network Ultimate Mul
 
 Kull brand għandu l-mudelli, il-pjanijiet, u l-marketing tiegħu, iżda jaqsmu l-infrastruttura, il-billing, u l-proċessi operattivi. Hawnhekk l-ekonomija ta' Ultimate Multisite ssir qawwija -- pjattaforma waħda, ħafna vertikali.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Għal separazzjoni sħiħa bejn in-niċeċ, ikkunsidra l-[addon Multi-Network](/addons/multinetwork) li jippermettilek tmexxi bosta networks WordPress minn installazzjoni waħda.
 
-## Għażla 4: Biegħ in-Negozju
+## Għażla 4: Biegħ in-Negozju {#option-4-sell-the-business}
 
 Pjattaforma ta' websajts għal niċċa b'dħul rikorrenti, churn baxx, u pożizzjoni ċara fis-suq hija assi ta' valur. Negozji SaaS tipikament jinbiegħu għal 3-5x tad-dħul annwali.
 
@@ -134,7 +134,7 @@ FitSite b'200 klijent b'$89 ARPU:
 
 Dan mhuwiex riżultat garantit, iżda huwa wieħed realistiku għal pjattaforma ta' niċċa mmexxija tajjeb.
 
-## X'Tgħallimt
+## X'Tgħallimt {#what-you-have-learned}
 
 Dan il-kors għallmek proċess li jista' jiġi ripetut:
 
@@ -150,7 +150,7 @@ Dan il-kors għallmek proċess li jista' jiġi ripetut:
 
 In-niċċa hija l-istrateġija. Il-pjattaforma hija l-għodda. Ultimate Multisite jagħmel l-għodda possibbli. Il-fehim tiegħek tan-niċċa jagħmilha ta' valur.
 
-## Ibda Ibni
+## Ibda Ibni {#start-building}
 
 Jekk segwejt ma' FitSite, għandek pjattaforma li taħdem. Jekk qrajt biex issib in-niċċa tiegħek, mur lura għal [Lezzjoni 2: L-għażla tan-Niċċa Tiegħek](lesson-2-picking-your-niche) u ibda l-proċess għall-qasam vertikali magħżul tiegħek.
 

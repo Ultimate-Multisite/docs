@@ -3,11 +3,11 @@ title: Dashbordoversikt
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashbord-oversikt
+# Dashbord-oversikt {#dashboard-overview}
 
 Ultimate Multisite har et eget **Dashbord** under Ultimate Multisite-menyen, og legger også til widgeter på Nettverksdashbordet. Denne artikkelen dekker hva du finner begge steder.
 
-## Nettverksdashbordet
+## Nettverksdashbordet {#the-network-dashboard}
 
 Ultimate Multisite legger til nyttige widgeter på dashbordet på nettverksnivå, som du finner under **Mine nettsteder → Nettverksadmin → Dashbord**.
 
@@ -35,7 +35,7 @@ Her er hva hver widget gir deg:
 
 ![Nyheter-widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite-dashbordet
+## Ultimate Multisite-dashbordet {#the-ultimate-multisite-dashboard}
 
 Mens nettverksdashbordet viser helhetlig informasjon om nettverket, viser Ultimate Multisite-dashbordet (på toppnivå i Ultimate Multisite-menyen) informasjon om tjenesten.
 

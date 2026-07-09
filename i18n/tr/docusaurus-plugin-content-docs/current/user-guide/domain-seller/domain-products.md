@@ -3,11 +3,11 @@ title: Alan Adı Ürünleri ve Fiyatlandırma
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Alan Adı Ürünleri ve Fiyatlandırma
+# Alan Adı Ürünleri ve Fiyatlandırma {#domain-products-and-pricing}
 
 Alan adı ürünleri, fiyatlandırmayı, TLD'leri (Üst Düzey Alan Adları), WHOIS gizliliğini ve sağlayıcı seçimini kontrol etmenizi sağlayan mekanizmalardır. Her alan adı ürünü, ek bir **Alan Adı Ayarları** sekmesi bulunan standart bir Multisite Ultimate ürünüdür.
 
-## Bir alan adı ürünü oluşturma
+## Bir alan adı ürünü oluşturma {#creating-a-domain-product}
 
 1. **Network Admin › Ultimate Multisite › Products** yolunu izleyin.
 2. **Add New** (Yeni Ekle) butonuna tıklayın.
@@ -17,13 +17,13 @@ Alan adı ürünleri, fiyatlandırmayı, TLD'leri (Üst Düzey Alan Adları), WH
 
 Alan adı ürünleri, ürün listesinde mor bir **Domain** rozetiyle görünür ve **Domain Products** (Alan Adı Ürünleri) sekmesi kullanılarak filtrelenebilir.
 
-## Alan Adı Ayarları sekmesi
+## Alan Adı Ayarları sekmesi {#domain-settings-tab}
 
-### Provider (Sağlayıcı)
+### Provider (Sağlayıcı) {#provider}
 
 Bu ürün için hangi kayıt kuruluşunun (registrar) kaydı yöneteceğini seçin. Varsayılan olarak, Domain Seller ayarlarında belirlenen global **Default provider** (Varsayılan sağlayıcı) kullanılır.
 
-### Supported TLDs (Desteklenen TLD'ler)
+### Supported TLDs (Desteklenen TLD'ler) {#supported-tlds}
 
 Tüm TLD'lere uygulanacak bir **catch-all product** (tümünü kapsayan ürün) oluşturmak için bu alanı boş bırakın.
 
@@ -31,7 +31,7 @@ Yalnızca bu uzantılara uygulanacak bir **TLD-specific product** (TLD'ye özel 
 
 **Ürün eşleştirme nasıl çalışır:** Bir müşteri bir alan adı aradığında, eklenti en spesifik eşleşen ürünü seçer. TLD listesinde `.com` bulunan bir ürün, tümünü kapsayan bir üründen daha önceliklidir. Eğer hiçbir TLD'ye özel ürün eşleşmezse, tümünü kapsayan ürün kullanılır. Hiç ürün yoksa, alan adı araması gösterilmez.
 
-### Markup type (Ek Ücret Türü)
+### Markup type (Ek Ücret Türü) {#markup-type}
 
 Toptan maliyetten perakende fiyatınızın nasıl hesaplanacağını kontrol eden üç mod vardır:
 
@@ -41,11 +41,11 @@ Toptan maliyetten perakende fiyatınızın nasıl hesaplanacağını kontrol ede
 | **Fixed markup** (Sabit Ek Ücret) | Sabit bir dolar miktarı ekler. 10 dolarlık bir alan adı için 5 dolarlık ek ücret, 15 dolar yapar. |
 | **Fixed price** (Sabit Fiyat) | Toptan maliyeti tamamen yok sayar. Her zaman girdiğiniz tutarı ücretlendirir. |
 
-### Introductory pricing (Tanıtım Fiyatlandırması)
+### Introductory pricing (Tanıtım Fiyatlandırması) {#introductory-pricing}
 
 İndirimli bir ilk yıl fiyatı sunmak için bu seçeneği etkinleştirin. Düzenli **Renewal price** (Yenileme fiyatı) (2. yıl ve sonrası) yanında ayrı bir **Introductory price** (Tanıtım fiyatı) (1. yıl) belirleyin. Müşteri, yenileme sırasında ne bekleyeceğini bilmesi için her iki fiyatı da ödeme aşamasında görür.
 
-### WHOIS privacy (WHOIS Gizliliği)
+### WHOIS privacy (WHOIS Gizliliği) {#whois-privacy}
 
 Bu ürün aracılığıyla kaydedilen alan adları için WHOIS gizliliği korumasının sunulup sunulmayacağını kontrol eder.
 
@@ -59,7 +59,7 @@ Namecheap için WHOIS gizliliği WhoisGuard'ı (her zaman ücretsiz) kullanır. 
 
 ---
 
-## TLD İçe Aktarma ve Senkronizasyon
+## TLD İçe Aktarma ve Senkronizasyon {#tld-import-and-sync}
 
 Alan adı ürünleri, bağlı sağlayıcıdan çekilen gerçek zamanlı toptan fiyatlandırmayı gösterir. Bunun çalışması için TLD'lerin içe aktarılması gerekir.
 
@@ -70,7 +70,7 @@ Senkronizasyondan sonra, herhangi bir alan adı ürününün Domain Settings sek
 
 ---
 
-## Otomatik Yenileme
+## Otomatik Yenileme {#auto-renewal}
 
 Alan adı yenilemeleri, müşterinin üyelik durumuna bağlıdır:
 
@@ -90,7 +90,7 @@ Alan adı yaşam döngüsü olayları için e-posta şablon kimlikleri:
 
 ---
 
-## Yönetici: Manuel alan adı kaydı
+## Yönetici: Manuel alan adı kaydı {#admin-manual-domain-registration}
 
 Bir müşterinin ödeme aşamasından geçmesine gerek kalmadan onun adına bir alan adı kaydetmek için:
 

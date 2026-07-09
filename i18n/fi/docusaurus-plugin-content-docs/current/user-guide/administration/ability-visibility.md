@@ -3,11 +3,11 @@ title: Näkyvyysominaisuus
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Mahdollisuuden näkyvyys (Ability Visibility)
+# Mahdollisuuden näkyvyys (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 tuo uusia **Mahdollisuuden näkyvyys** -asetuksia, jotka säätelevät, mitkä ominaisuudet (abilities) ovat saatavilla eri käyttöliittymissä. Tämä antaa ylläpitäjille mahdollisuuden hienosäätää, mitkä agentin kyvyt ovat käytettävissä REST API:n, MCP-palvelimien, WooCommerce-integraatioiden ja muiden rajapintojen kautta.
 
-## Mitä Mahdollisuuden näkyvyys on?
+## Mitä Mahdollisuuden näkyvyys on? {#what-is-ability-visibility}
 
 Mahdollisuuden näkyvyys on käyttöoikeusjärjestelmä, joka hallitsee seuraavia asioita:
 
@@ -18,9 +18,9 @@ Mahdollisuuden näkyvyys on käyttöoikeusjärjestelmä, joka hallitsee seuraavi
 
 Jokaisella kyvyllä on näkyvyysaste, joka määrittää sen saatavuuden eri käyttöliittymissä.
 
-## Näkyvyysasteet
+## Näkyvyysasteet {#visibility-levels}
 
-### Julkinen (Public)
+### Julkinen (Public) {#public}
 
 **Julkiset kyvyt** ovat käytettävissä kaikkialla:
 
@@ -32,7 +32,7 @@ Jokaisella kyvyllä on näkyvyysaste, joka määrittää sen saatavuuden eri kä
 
 Esimerkkejä: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Sisäinen (Internal)
+### Sisäinen (Internal) {#internal}
 
 **Sisäiset kyvyt** ovat saatavilla vain omassa WordPress-asennuksessasi:
 
@@ -43,7 +43,7 @@ Esimerkkejä: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Esimerkkejä: `manage-settings`, `view-analytics`, `export-data`
 
-### Kumppanuus (Partner)
+### Kumppanuus (Partner) {#partner}
 
 **Kumppanuuskyvyt** ovat saatavilla vain valitulle kumppaneille:
 
@@ -54,7 +54,7 @@ Esimerkkejä: `manage-settings`, `view-analytics`, `export-data`
 
 Esimerkkejä: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Poistettu käytöstä (Disabled)
+### Poistettu käytöstä (Disabled) {#disabled}
 
 **Poistetut kyvyt** eivät ole saatavilla missään:
 
@@ -63,15 +63,15 @@ Esimerkkejä: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Ei saatavilla admin-paneeleissa
 - Hyödyllinen vanhentuneille tai kokeellisille kyvyille
 
-## Mahdollisuuden näkyvyyden hallinta
+## Mahdollisuuden näkyvyyden hallinta {#managing-ability-visibility}
 
-### Mahdollisuuden näkyvyysasetusten avaaminen
+### Mahdollisuuden näkyvyysasetusten avaaminen {#accessing-ability-visibility-settings}
 
 1. Mene **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Napsauta välilehteä **Abilities** (Mahdollisuudet)
 3. Näet luettelon kaikista asennetuista mahdollistuksista ja niiden näkyvyysasteista
 
-### Mahdollisuuden yksityiskohtien katsominen
+### Mahdollisuuden yksityiskohtien katsominen {#viewing-ability-details}
 
 Napsauta mitä tahansa mahdollistusta nähdäksesi:
 
@@ -82,7 +82,7 @@ Napsauta mitä tahansa mahdollistusta nähdäksesi:
 - **Last updated** (Viimeisin päivitys): Milloin näkyvyyttä on viimeksi muutettu
 - **Status** (Tila): Recognized (Tunnistettu) tai Unclassified (Ei luokiteltu)
 
-### Näkyvyysasteiden muuttaminen
+### Näkyvyysasteiden muuttaminen {#changing-visibility-levels}
 
 Jotta voit muuttaa mahdollistuksen näkyvyyttä:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Massatoiminnot
+### Massatoiminnot {#bulk-operations}
 
 Useiden mahdollistusten näkyvyyden muuttamiseksi:
 
@@ -108,11 +108,11 @@ Useiden mahdollistusten näkyvyyden muuttamiseksi:
 2. Valitse uusi näkyvyysaste massatoimintojen pudotusvalikosta
 3. Napsauta **Apply** (Sovella)
 
-## Kumppanilupalista (Partner Allow-List)
+## Kumppanilupalista (Partner Allow-List) {#partner-allow-list}
 
 **Kumppanilupalista** säädellään sitä, mitkä ulkoiset kumppanit voivat päästä käsiksi Kumppanin tasolla oleviin mahdollistuksiin.
 
-### Kumppanien lisääminen
+### Kumppanien lisääminen {#adding-partners}
 
 1. Mene **Superdav AI Agent** → **Settings** → **Partners** (Kumppanit)
 2. Napsauta **Add Partner** (Lisää kumppani)
@@ -120,7 +120,7 @@ Useiden mahdollistusten näkyvyyden muuttamiseksi:
 4. Lisää valinnaisesti kumppanin nimi ja kuvaus
 5. Napsauta **Save** (Tallenna)
 
-### Mahdollistusten määrittäminen kumppaneille
+### Mahdollistusten määrittäminen kumppaneille {#assigning-abilities-to-partners}
 
 Kumppanin lisääsemisen jälkeen:
 
@@ -130,7 +130,7 @@ Kumppanin lisääsemisen jälkeen:
 4. "Partner allow-list" -osiossa valitse ruutuja niille kumppaneille, joilla pitäisi olla pääsy
 5. Napsauta **Save** (Tallenna)
 
-### Kumppanuuden pääsyn peruuttaminen
+### Kumppanuuden pääsyn peruuttaminen {#revoking-partner-access}
 
 Kumppanin pääsyn poistamiseksi:
 
@@ -140,11 +140,11 @@ Kumppanin pääsyn poistamiseksi:
 
 Kumppanilla tulee välittömästi menettää pääsy kyseiseen ominaisuuteen.
 
-## Luokittelemattomat ominaisuudet (Unclassified Abilities)
+## Luokittelemattomat ominaisuudet (Unclassified Abilities) {#unclassified-abilities}
 
 Kun asennat kolmannen osapuolen ominaisuuden, jota Superdav AI Agent ei tunnista, se merkitään **Unclassified** (Luokittelemat).
 
-### Ylläpitäjän huomautus luokittelemattomista ominaisuuksista
+### Ylläpitäjän huomautus luokittelemattomista ominaisuuksista {#admin-notice-for-unclassified-abilities}
 
 Näet ylläpitäjän ilmoituksen:
 
@@ -161,7 +161,7 @@ Ole hyvä ja tarkista ne ja luokittele ne.
 [Review Abilities] [Dismiss] (Tarkista ominaisuuksia) [Hylkää]
 ```
 
-### Luokittelemattomien ominaisuuksien tarkastelu
+### Luokittelemattomien ominaisuuksien tarkastelu {#reviewing-unclassified-abilities}
 
 1. Napsauta ilmoituksessa **Review Abilities** (Tarkista ominaisuuksia)
 2. Jokaisen luokittelemattoman ominaisuuden kohdalla näet:
@@ -178,7 +178,7 @@ Ole hyvä ja tarkista ne ja luokittele ne.
 
 4. Napsauta **Classify** (Luokittele) tallentaaksesi päätöksesi
 
-### Miksi luokitella luokittelemattomat ominaisuudet?
+### Miksi luokitella luokittelemattomat ominaisuudet? {#why-classify-unclassified-abilities}
 
 Ominaisuuksien luokittelu:
 
@@ -187,9 +187,9 @@ Ominaisuuksien luokittelu:
 - **Mahdollistaa ominaisuudet**: Kun ominaisuus luokitellaan, se tulee saataville
 - **Dokumentoi päätökset**: Valintojesi tallennetaan tarkastusta varten
 
-## Näkyvyys eri pinnoilla
+## Näkyvyys eri pinnoilla {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Julkiset ominaisuudet** ovat saatavilla REST-rajapintoja kautta:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Sisäiset ja kumppanuusominaisuudet** eivät ole saatavilla REST API:n kautta.
 
-### MCP-palvelimet
+### MCP-palvelimet {#mcp-servers}
 
 **Julkiset ominaisuudet** ovat saatavilla MCP:llä:
 
@@ -217,7 +217,7 @@ Saatavilla olevat ominaisuudet:
 
 **Kumppanuusominaisuudet** ovat saatavilla vain kumppanuuskertoimilla.
 
-### WooCommerce -integraatio
+### WooCommerce -integraatio {#woocommerce-integration}
 
 **Julkiset ominaisuudet**, jotka liittyvät WooCommerceiin, ovat saatavilla:
 
@@ -227,7 +227,7 @@ Saatavilla olevat ominaisuudet:
 
 **Sisäisiä ominaisuuksia ei ole esillä WooCommerceille.**
 
-### Chat-rajapinta
+### Chat-rajapinta {#chat-interface}
 
 **Kaikki ominaisuudet** (Julkiset, Sisäiset, Kumppanuus) ovat saatavilla chatin kautta käyttäjän oikeuksien mukaan:
 
@@ -235,34 +235,34 @@ Saatavilla olevat ominaisuudet:
 - Tavalliset käyttäjät näkevät vain Julkiset ominaisuudet
 - Kumppanit näkevät Julkiset + Kumppanuusominaisuudet (jos on luokiteltu)
 
-## Turvallisuusparhaat käytännöt
+## Turvallisuusparhaat käytännöt {#security-best-practices}
 
-### Vähiten oikeuksien periaate (Principle of Least Privilege)
+### Vähiten oikeuksien periaate (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Aseta ominaisuudet mahdollisimman rajoittavaksi näkyvyyteen, joka sallii silti niiden käytön
 - Käytä Kumppanuusominaisuuksia arkaluonteisissa operaatioissa
 - Poista pois päältä ne ominaisuudet, joita et käytä
 
-### Säännölliset tarkastukset
+### Säännölliset tarkastukset {#regular-audits}
 
 - Tarkista ominaisuuksien näkyvyyttä kuukausittain
 - Tarkista luokittelemattomat ominaisuudet
 - Poista pääsy käyttämättömille kumppaneille
 
-### Kirjaukset ja seuranta (Logging and Monitoring)
+### Kirjaukset ja seuranta (Logging and Monitoring) {#logging-and-monitoring}
 
 - Seuraa, mitkä ominaisuudet käytetään eniten
 - Seuraa kumppanuuden pääsykuvioita
 - Ilmoita poikkeavasta ominaisuuksien käytöstä
 
-### Kolmannen osapuolen ominaisuudet
+### Kolmannen osapuolen ominaisuudet {#third-party-abilities}
 
 - Tarkista kolmannen osapuolen ominaisuudet ennen niiden aktivoimista
 - Luokittele ne nimenomaisesti
 - Aloita Sisäisellä tai Kumppanuusominaisuudella
 - Edistele Julkiseen vasta tarkastelun jälkeen
 
-## Ongelmanratkaisu
+## Ongelmanratkaisu {#troubleshooting}
 
 **Ominaisuus ei näy listalla**
 - Tarkista, että ominaisuus on asennettu ja aktiivinen
@@ -285,7 +285,7 @@ Saatavilla olevat ominaisuudet:
 - Varmista, että luokittelu on tallennettu
 - Tarkista, että ominaisuutta tarjoava plugin on ajan tasalla
 
-## Migraatio vanhasta tilasta (Legacy Mode)
+## Migraatio vanhasta tilasta (Legacy Mode) {#migration-from-legacy-mode}
 
 Jos päivität vanhemmasta Superdav AI Agent -versiosta:
 
@@ -295,7 +295,7 @@ Jos päivität vanhemmasta Superdav AI Agent -versiosta:
 
 Katso **Third-Party Mode Migration** saadaksesi lisätietoja siirtymisestä natiivin Abilities API -integraatioon.
 
-## Seuraavat askeleet
+## Seuraavat askeleet {#next-steps}
 
 Ominaisuuden näkyvyyden määrittelyn jälkeen:
 

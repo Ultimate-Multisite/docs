@@ -3,7 +3,7 @@ title: د وړتیاوو ماخذ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# د وړتیاوو مرجع
+# د وړتیاوو مرجع {#abilities-reference}
 
 وړتیاوې هغه اټومي کړنې دي چې Gratis AI Agent یې ستاسو په WordPress نصب کې رابللی شي. هره وړتیا یوه ثبت شوې PHP کلاس ده چې د JSON سکیما څرګندوي — agent دا سکیما د اجرا پر مهال لولي څو پوه شي چې کوم پارامترونه اړین دي او وړتیا څه بېرته ورکوي.
 
@@ -11,11 +11,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## دودیز پوسټ ډولونه
+## دودیز پوسټ ډولونه {#custom-post-types}
 
 دا وړتیاوې هغه دودیز پوسټ ډولونه (CPTs) اداره کوي چې د agent له لارې ثبت شوي وي. ثبتونې د WordPress د options جدول کې ساتل کېږي، نو د plugin د غیرفعالېدو او بېرته فعالېدو وروسته هم پاتې کېږي.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 یو نوی دودیز پوسټ ډول ثبتوي.
 
@@ -50,7 +50,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 ټول هغه دودیز پوسټ ډولونه بېرته ورکوي چې د agent له خوا ثبت شوي وي.
 
@@ -73,7 +73,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 هغه دودیز پوسټ ډول له ثبت څخه وباسي چې مخکې د agent له خوا ثبت شوی وي. د هماغه ډول موجود پوسټونه په ډیټابېس کې پاتې کېږي، خو نور د پوسټ ډول له لارې د لاسرسي وړ نه وي.
 
@@ -87,11 +87,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## دودیزې ټکسونومۍ
+## دودیزې ټکسونومۍ {#custom-taxonomies}
 
 دا وړتیاوې دودیزې ټکسونومۍ اداره کوي. د CPTs په څېر، د ټکسونومي ثبتونې هم ساتل کېږي.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 یوه نوې دودیزه ټکسونومي ثبتوي.
 
@@ -123,7 +123,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 ټولې هغه دودیزې ټکسونومۍ بېرته ورکوي چې د agent له خوا ثبت شوې وي.
 
@@ -146,7 +146,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 هغه دودیزه ټکسونومي له ثبت څخه وباسي چې مخکې د agent له خوا ثبت شوې وي.
 
@@ -160,11 +160,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## د ډیزاین سیستم
+## د ډیزاین سیستم {#design-system}
 
 د ډیزاین سیستم وړتیاوې د WordPress site لیدیز وړاندې کول بدلوي — له دودیز CSS څخه تر block patterns او د site لوګو پورې.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیاتوي. CSS په `gratis_ai_agent_custom_css` option کې زېرمه کېږي او کله چې وړتیا reset شي، په پاک ډول له کتار څخه ایستل کېږي.
 
@@ -190,7 +190,7 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 د WordPress pattern library کې یو بیاکارېدونکی block pattern ثبتوي.
 
@@ -209,7 +209,7 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 ټول هغه block patterns لېست کوي چې د agent له خوا ثبت شوي وي.
 
@@ -231,7 +231,7 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 د WordPress سایټ لوګو ورکړل شوي ضمیمې ID یا لرې انځور URL ته ټاکي. کله چې URL ورکړل شي، انځور ډاونلوډېږي او Media Library ته واردېږي.
 
@@ -248,7 +248,7 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 فعالې theme د `theme.json` (یا `global-styles`) ته نومول شوی رنګ/ټایپوګرافي preset پلي کوي. Presets هغه تنظیم شوي بنډلونه دي چې د Gratis AI Agent ډلې له خوا ساتل کېږي.
 
@@ -273,11 +273,11 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 د Global Styles وړتیاوې د WordPress Global Styles API له لارې theme.json ارزښتونه لولي او لیکي، چې په ټول سایټ کې ټول بلاکونه او templates اغېزمنوي.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 اوسنی global styles تنظیمات راګرځوي.
 
@@ -291,7 +291,7 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 په global styles تنظیماتو کې یو یا څو ارزښتونه تازه کوي.
 
@@ -318,7 +318,7 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 ټول agent-پلي شوي global styles بدلونونه بیا تنظیموي، د theme تلوالې بېرته راولي.
 
@@ -328,11 +328,11 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-## د Navigation Menuګانې
+## د Navigation Menuګانې {#navigation-menus}
 
 د Navigation Menu وړتیاوې د WordPress د تګ‌راتګ menuګانې او د هغوی توکي جوړوي او اداره کوي.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 نوې WordPress navigation menu جوړوي.
 
@@ -347,7 +347,7 @@ CSS د `wp_add_inline_style` له لارې د site په `<head>` کې ورزیا
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
@@ -363,7 +363,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 موجودې navigation menu ته یو توکی ورزیاتوي.
 
@@ -383,7 +383,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 له navigation menu څخه یو توکی لرې کوي.
 
@@ -397,7 +397,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 ټولې WordPress navigation menuګانې لېست کوي، د هغوی ټاکل شوي theme ځایونه پکې شامل دي.
 
@@ -420,11 +420,11 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-## د Options مدیریت
+## د Options مدیریت {#options-management}
 
 د Options وړتیاوې د `get_option` / `update_option` له لارې WordPress options لولي او لیکي. جوړ-دننه خوندیتوب blocklist د مهمو تنظیماتو ناڅاپي بدلون مخنیوی کوي.
 
-### `get_option`
+### `get_option` {#getoption}
 
 یو WordPress option لولي.
 
@@ -440,7 +440,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 یو WordPress option لیکي.
 
@@ -458,7 +458,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 د WordPress یو option ړنګوي.
 
@@ -474,7 +474,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 هغه WordPress options لېست کوي چې له یوې بڼې سره سمون خوري.
 
@@ -498,11 +498,11 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-## د منځپانګې مدیریت
+## د منځپانګې مدیریت {#content-management}
 
 د منځپانګې مدیریت وړتیاوې د WordPress پوسټونه او پاڼې جوړوي او سموي. د پوسټ پېژندپاڼې بېرته راګرځول کېږي څو په څو-وړتیايي پلانونو کې راتلونکي ګامونه جوړې شوې منځپانګې ته اشاره وکړای شي.
 
-### `create_post`
+### `create_post` {#createpost}
 
 یو نوی WordPress پوسټ، پاڼه، یا د دودیز پوسټ ډول ننوتنه جوړوي.
 
@@ -537,7 +537,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 یو موجود WordPress پوسټ یا پاڼه تازه کوي.
 
@@ -567,7 +567,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 په یوه وړتیايي غوښتنه کې څو پوسټونه جوړوي، د site جوړولو یا د منځپانګې ډله‌ییز واردولو پر مهال تګ-راتګ کموي. پوسټونه په ترتیب جوړېږي؛ که یو ناکام شي نور دوام کوي او ناکامي د پایلو په array کې راپور کېږي.
 
@@ -619,7 +619,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 یوه موجود پوسټ یا پاڼې ته ځانګړی انځور (د پوسټ thumbnail) ټاکي. د موجود رسنۍ کتابتون attachment پېژندپاڼه یا د لرې انځور URL مني؛ کله چې URL ورکړل شي، انځور په اتومات ډول ښکته کېږي او واردېږي.
 
@@ -638,7 +638,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 د فعال فورم plugin په کارولو سره د اړیکې فورم جوړوي (Contact Form 7، WPForms، Fluent Forms، یا Gravity Forms، د نصب شوي پر بنسټ). یو shortcode راګرځوي چې په هر پوسټ یا پاڼه کې ځای پر ځای کېدای شي.
 
@@ -691,11 +691,11 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-## لیدیزه بیاکتنه
+## لیدیزه بیاکتنه {#visual-review}
 
 د لیدیزې بیاکتنې وړتیاوې agent ته اجازه ورکوي چې د ژوندیو پاڼو سکرین‌شاټونه واخلي او شننه یې وکړي، چې د ډیزاین خپلواکه بیاکتنه، مخکې/وروسته پرتله کول، او د لیدیزې شاتګ ازموینې بې له دې چې د براوزر کوم extension ته اړتیا وي ممکنوي.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 د server-side headless browser په کارولو سره په ورکړل شوي URL کې د WordPress پاڼې سکرین‌شاټ اخلي. انځور Media Library ته خوندي کېږي او یو CDN URL بېرته ورکول کېږي.
 
@@ -724,7 +724,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 دوه سکرین‌شاټونه اخلي او د لیدیز توپیر نمره او همدارنګه د توپیر انځور راګرځوي چې بدلې شوې سیمې روښانوي. د دې تایید لپاره ګټور دی چې د ډیزاین بدلون تمه شوې پایله ورکړې، یا د ناڅاپي شاتګونو د موندلو لپاره.
 
@@ -754,7 +754,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 د یوې پاڼې سکرین‌شاټ اخلي او د لیدیزې شننې لپاره یې ژبني model ته لېږي. یوه جوړښتي ارزونه راګرځوي چې layout، typography، د رنګ کارونه، او د accessibility اندېښنې پکې شاملې وي.
 
@@ -785,11 +785,11 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-## د نصبېدو وړ وړتیاوې
+## د نصبېدو وړ وړتیاوې {#installable-abilities}
 
 د نصبېدو وړ وړتیاوو Registry تاسو ته اجازه درکوي چې agent د اضافي وړتیاوو له بستو سره وغځوئ چې د WordPress pluginونو په توګه وېشل کېږي. هره بسته د معیاري وړتیا API په کارولو سره یوه یا څو وړتیاوې ثبتوي.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 له registry څخه د نصب لپاره د شته وړتیاوو بستو catalogue راګرځوي.
 
@@ -818,7 +818,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 له راجسترۍ څخه د وړتیا کڅوړه ښکته کوي او فعالوي.
 
@@ -832,7 +832,7 @@ menu بیا نوموي یا یې د theme ځای ته بیا ټاکي.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 د وړتیا راجستري پوښتي څو د تشریح شوې کارونې قضیې لپاره تر ټولو ښه plugin ومومي او، که اختیاري وي، نصب یې کړي.
 

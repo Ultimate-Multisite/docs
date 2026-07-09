@@ -3,7 +3,7 @@ title: Kev tswj se
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Kev Tswj Se
+# Kev Tswj Se {#tax-handling}
 
 Ultimate Multisite muaj ib module sau se tsim nyob rau hauv peb core plugin lawm, yog li yog koj yuav tsum sau se muag khoom ntawm koj cov plans, pob khoom thiab kev pabcuam, koj ua tau yooj yim yam tsis tas yuav mus nruab add-ons ntxiv.
 
@@ -11,7 +11,7 @@ Rau cov tuam txhab uas nyob hauv Europe, peb muaj ib **add-on** uas ntxiv cov cu
 
 Ultimate Multisite tsis xa ntaub ntawv se lossis them se sawv koj npe rau tsoomfwv; peb tsuas pab koj sau cov se tsim nyog thaum muaj kev yuav muag. **Koj tseem yuav tsum them se ntawm koj tus kheej.**
 
-## Qhib Kev Sau Se
+## Qhib Kev Sau Se {#enabling-tax-collection}
 
 Kev sau se tsis qhib ua ntej. Yuav qhib nws, koj yuav tsum mus rau **Ultimate Multisite > Settings > Taxes** thiab hloov kom qhib qhov Enable Taxes setting.
 
@@ -25,7 +25,7 @@ Koj kuj saib tau tax settings rau cov khoom ib qho zuj zus:
 
 ![Tax settings rau cov khoom](/img/config/settings-taxes.png)
 
-### Tsis suav se vs. Suav se nrog lawm
+### Tsis suav se vs. Suav se nrog lawm {#tax-excluded-vs-tax-included}
 
 Ua ntej, tag nrho koj cov nqi khoom yog tsis suav se, txhais tias se **tsis suav nrog** rau hauv tus nqi ntawm cov khoom. Yog peb txiav txim tias ib tus customer yuav tsum them se rau ib qho kev yuav khoom, peb yuav ntxiv cov se **rau saum** subtotal.
 
@@ -37,7 +37,7 @@ Tsis txhob hnov qab **save** cov kev hloov uas koj tau ua.
 
 ###
 
-## Tsim Tax Rates
+## Tsim Tax Rates {#creating-tax-rates}
 
 Tom qab koj qhib Tax Collection, koj yuav tsum tsim tax rates rau tej qhov chaw tshwj xeeb siv peb lub tax rates editor.
 
@@ -51,7 +51,7 @@ Nyob rau nplooj tax rates editor, koj ntxiv tau Tax Rates tshiab los ntawm nias 
 
 Koj yuav tsum muab ib qho **title** rau txhua tax rate (siv rau invoices). Ces koj xaiv tau **country** (yuav tsum muaj), **state,** thiab **city** (ob qho no xaiv tau) uas qhov se no yuav raug sau. Thaum kawg, ntxiv **tax rate in percents**.
 
-### Tax Categories
+### Tax Categories {#tax-categories}
 
 Koj kuj tsim tau ntau Tax Categories, los ntxiv tax rates sib txawv rau ntau hom khoom sib txawv.
 
@@ -73,7 +73,7 @@ Koj teeb tau tax category rau ib qho khoom tshwj xeeb los ntawm mus rau **Produc
 
 Nyob rau tib daim screen ntawd, koj hloov tau lub toggle **Is Taxable?** kom tua, kom Ultimate Multisite paub tias nws yuav tsum tsis txhob sau se ntawm yam khoom ntawd.
 
-## Kev Txhawb European VAT
+## Kev Txhawb European VAT {#european-vat-support}
 
 Raws li tau hais ua ntej, peb muaj ib add-on rau customer hauv EU uas muaj cov kev xav tau ntxiv vim European VAT cov cai.
 
@@ -101,7 +101,7 @@ Yog koj rov qab mus rau **Tax Settings tab** , koj yuav pom cov kev xaiv tshiab 
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Rub VAT Tax Rates
+### Rub VAT Tax Rates {#pulling-on-vat-tax-rates}
 
 Ib qho ntawm cov cuab yeej uas peb qhov integration ntxiv yog peev xwm thauj tax rates rau EU member states. Ua tau li ntawd los ntawm mus saib nplooj tax rates editor tom qab qhib EU VAT support.
 
@@ -111,7 +111,7 @@ Nyob hauv qab ntawm nplooj, koj yuav pom cov kev xaiv rub VAT. Xaiv ib hom rate 
 
 Koj kuj kho tau cov values tom qab rub lawv los lawm. Yuav ua li ntawd, tsuas kho kab ntawm lub rooj uas koj xav tau thiab nias kom save cov values tshiab.
 
-### VAT Validation
+### VAT Validation {#vat-validation}
 
 Thaum VAT support qhib lawm, Ultimate Multisite yuav ntxiv ib field ntxiv rau checkout form, hauv qab billing address field. Lub field yuav tsuas tshwm rau cov customers uas nyob hauv EU xwb.
 

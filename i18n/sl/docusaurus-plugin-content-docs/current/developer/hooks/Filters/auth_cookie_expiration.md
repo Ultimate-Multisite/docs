@@ -4,11 +4,11 @@ title: Filter - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Filtrira trajanje obdobja poteka veljavnosti piškotka za preverjanje pristnosti.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrira trajanje obdobja poteka veljavnosti piškotka za preverjanje pristnosti
 | $user_id | `int` | ID uporabnika. |
 | $remember | `bool` | Ali naj se prijava uporabnika zapomni. Privzeto false. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.8.0
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) v vrstici 52

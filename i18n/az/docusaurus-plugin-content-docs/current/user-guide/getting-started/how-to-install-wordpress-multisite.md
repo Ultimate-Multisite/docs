@@ -3,7 +3,7 @@ title: WordPress Multisite necə quraşdırılır
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite necə quraşdırılır?
+# WordPress Multisite necə quraşdırılır? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite, sizə tək bir quraşdırma üzərində bir neçə sayt ağı (network) qurmağa imkan verir. Bu, daxili bir xüsusiyyətdir, lakin default olaraq aktiv deyil.
 
@@ -61,7 +61,7 @@ Və WordPress tərəfindən təmin edilən bu kodu, _**.htaccess**_ faylınıza 
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Alt sayt yaratmaq üçün:
 
 Sahələri doldurduqdan sonra, "Add site" (Sayt əlavə et) düyməsinə basın. Yeni alt sayt yaradıldıqdan sonra, alt saytın işlək olduğundan əmin olmaq üçün ona daxil olun.
 
-## Ümumi Problemlər:
+## Ümumi Problemlər: {#common-problems}
 
-### 1. Yeni saytlar yarada bilirəm, amma onlara daxil ola bilmirəm.
+### 1. Yeni saytlar yarada bilirəm, amma onlara daxil ola bilmirəm. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Alt domenlərdən istifadə etdiyiniz halda, multisite network-iniz üçün wildcard alt domenlər qurmalısınız.
 

@@ -3,7 +3,7 @@ title: Mokesčių tvarkymas
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Mokesčių tvarkymas
+# Mokesčių tvarkymas {#tax-handling}
 
 Ultimate Multisite turi mokesčių surinkimo modulį, integruotą į mūsų pagrindinį įskiepį, todėl jei jums reikia surinkti pardavimo mokesčius už savo planus, paketus ir paslaugas, tai galite lengvai padaryti neįdiegdami jokių priedų.
 
@@ -11,7 +11,7 @@ Europoje įsikūrusioms įmonėms siūlome **priedą**, kuris prideda įrankių 
 
 Ultimate Multisite nepateikia ir neperveda mokesčių jūsų vardu vyriausybei; mes tiesiog padedame jums surinkti tinkamus mokesčius operacijos metu. **Jums vis tiek reikės patiems pervesti mokesčius.**
 
-## Mokesčių surinkimo įjungimas
+## Mokesčių surinkimo įjungimas {#enabling-tax-collection}
 
 Mokesčių surinkimas pagal numatytuosius nustatymus nėra įjungtas. Norėdami jį įjungti, turite eiti į **Ultimate Multisite > Nustatymai > Mokesčiai** ir perjungti, kad įjungtumėte nustatymą Įjungti mokesčius.
 
@@ -25,7 +25,7 @@ Taip pat galite peržiūrėti atskirų produktų mokesčių nustatymus:
 
 ![Produktų mokesčių nustatymai](/img/config/settings-taxes.png)
 
-### Mokesčiai neįtraukti ir mokesčiai įtraukti
+### Mokesčiai neįtraukti ir mokesčiai įtraukti {#tax-excluded-vs-tax-included}
 
 Pagal numatytuosius nustatymus visų jūsų produktų kainos yra be mokesčių, tai reiškia, kad mokesčiai **nėra įtraukti** į produkto kainą. Jei nustatysime, kad klientas turėtų mokėti mokesčius už konkretų pirkinį, pridėsime mokesčius **prie** tarpinės sumos.
 
@@ -37,7 +37,7 @@ Nepamirškite **išsaugoti** atliktų pakeitimų.
 
 ###
 
-## Mokesčių tarifų kūrimas
+## Mokesčių tarifų kūrimas {#creating-tax-rates}
 
 Įjungę mokesčių surinkimą, turėsite sukurti mokesčių tarifus konkrečioms vietovėms naudodami mūsų mokesčių tarifų redaktorių.
 
@@ -51,7 +51,7 @@ Mokesčių tarifų redaktoriaus puslapyje galite pridėti naujus mokesčių tari
 
 Kiekvienam mokesčių tarifui turėsite suteikti **pavadinimą** (naudojamą sąskaitose faktūrose). Tada galite pasirinkti **šalį** (privaloma), **valstiją,** ir **miestą** (abu neprivalomi), kur bus taikomas šis mokestis. Galiausiai pridėkite **mokesčio tarifą procentais**.
 
-### Mokesčių kategorijos
+### Mokesčių kategorijos {#tax-categories}
 
 Taip pat galite sukurti kelias mokesčių kategorijas, kad skirtingų rūšių produktams pridėtumėte skirtingus mokesčių tarifus.
 
@@ -73,7 +73,7 @@ Konkretaus produkto mokesčių kategoriją galite nustatyti eidami į **Produkto
 
 Tame pačiame ekrane galite išjungti perjungiklį **Ar apmokestinama?**, kad Ultimate Multisite žinotų, jog neturėtų rinkti mokesčių už tą konkretų produktą.
 
-## Europos VAT palaikymas
+## Europos VAT palaikymas {#european-vat-support}
 
 Kaip minėta anksčiau, turime priedą klientams ES, kuriems taikomi papildomi reikalavimai dėl Europos VAT reglamentų.
 
@@ -101,7 +101,7 @@ Jei grįšite į **Mokesčių nustatymų skirtuką** , pamatysite naujas prieina
 
 <!-- Ekrano kopija nepasiekiama: Įjungti VAT palaikymą perjungiklis mokesčių nustatymuose po priedo aktyvavimo -->
 
-### VAT mokesčių tarifų įkėlimas
+### VAT mokesčių tarifų įkėlimas {#pulling-on-vat-tax-rates}
 
 Vienas iš įrankių, kuriuos prideda mūsų integracija, yra galimybė įkelti ES valstybių narių mokesčių tarifus. Tai galima padaryti apsilankius mokesčių tarifų redaktoriaus puslapyje po ES VAT palaikymo įjungimo.
 
@@ -111,7 +111,7 @@ Puslapio apačioje matysite VAT įkėlimo parinktis. Pasirinkus tarifo tipą ir 
 
 Taip pat galite redaguoti reikšmes po jų įkėlimo. Norėdami tai padaryti, tiesiog redaguokite reikiamą lentelės eilutę ir spustelėkite, kad išsaugotumėte naujas reikšmes.
 
-### VAT patvirtinimas
+### VAT patvirtinimas {#vat-validation}
 
 Kai VAT palaikymas įjungtas, Ultimate Multisite pridės papildomą lauką prie atsiskaitymo formos, po atsiskaitymo adreso lauku. Laukas bus rodomas tik ES esantiems klientams.
 

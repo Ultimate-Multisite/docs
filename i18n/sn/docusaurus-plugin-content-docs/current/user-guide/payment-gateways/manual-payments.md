@@ -3,13 +3,13 @@ title: Kumisikidza Kubhadhara Kwemaoko
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Kugadzira Manual Payments (v2)
+# Kugadzira Manual Payments (v2) {#setting-up-manual-payments-v2}
 
 _**CHERECHEDZO YAKAKOSHA: Chinyorwa ichi chinoreva Ultimate Multisite shanduro 2.x.**_
 
 Manual payments inzira yekuti upe dzimwe nzira dzekubhadhara kana **Stripe** kana **PayPal** zvisipo kune vashandisi vako. Inogona kuva wire kana bank transfer kana imwe nzira ipi zvayo yekubhadhara iripo kune vashandisi vako munharaunda yavo.
 
-## Maitiro ekugonesa Manual Payments
+## Maitiro ekugonesa Manual Payments {#how-to-enable-manual-payments}
 
 Kugadzira manual payment kuri nyore zvikuru. Unongoda kuigonesa pasi pe payment gateways woisa mirayiridzo yakadzama yekuti mushandisi anofanira kutumira mubhadharo sei.
 
@@ -31,7 +31,7 @@ Uye vachagamuchirawo meseji papeji yako ye **Thank You** ine mirayiridzo yako ye
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Kusimbisa manual payments
+## Kusimbisa manual payments {#confirming-manual-payments}
 
 Kuti usimbise manual payment, enda kumenyu ye **Payments** pabhawa rekuruboshwe. Ikoko unogona kuona mabhadharo ese panetwork yako nemashoko awo, kusanganisira **status** yawo. Manual payment ichagara iine **Pending** status kusvikira waichinja nemaoko.
 

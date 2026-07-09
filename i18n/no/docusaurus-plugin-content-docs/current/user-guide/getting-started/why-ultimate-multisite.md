@@ -3,11 +3,11 @@ title: Hvorfor Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Hvorfor Ultimate Multisite
+# Hvorfor Ultimate Multisite {#why-ultimate-multisite}
 
 Hvis du har funnet frem til denne artikkelen, har du sannsynligvis hørt at vår plugin kan være løsningen for å realisere forretningsideen din. Vi håper du har fått svarene du trenger innen du er ferdig med å lese.
 
-## Hva er Ultimate Multisite?
+## Hva er Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite er en WordPress Multisite-plugin som lar deg tilby kundene dine WaaS (Website as a Service – nettsted som en tjeneste). Med vår plugin kan du ha ulike abonnementsnivåer og la kunder betale deg en løpende avgift for å ha et nettsted hostet i Multisite-nettverket ditt.
 
@@ -15,7 +15,7 @@ Ultimate Multisite lar deg motta betalinger via forskjellige betalingsløsninger
 
 Og dette er bare begynnelsen – du kan utvide funksjonaliteten med tillegg og webhooks.
 
-## Andre funksjoner
+## Andre funksjoner {#other-features}
 
 Ultimate Multisite tilbyr også:
 
@@ -33,11 +33,11 @@ Og mer avanserte ting:
 
   * Søk og erstatt-API: Du kan også merke nettstedsmaler med plassholdere som {{site_name}} og bruke søk og erstatt-APIet til å automatisk fylle ut disse plassholderne med informasjon kunden oppgir rett etter registrering.
 
-## Bruksområder
+## Bruksområder {#use-cases}
 
 Nå er det på tide å se på noen av de mulige bruksområdene for Ultimate Multisite.
 
-### Tilfelle 1: Et byrå
+### Tilfelle 1: Et byrå {#case-1-an-agency}
 
 Vanligvis ligger kjernekompetansen til et byrå i design av nettsteder, mens aspekter som hosting eller markedsføring tilbys som tilleggstjenester.
 
@@ -47,7 +47,7 @@ Tett kontroll over plugins og temaer opprettholdes på produktnivå gjennom Ulti
 
 Byråer kan føle seg trygge med Ultimate Multisite, slik at de kan gjøre det de gjør best – designe eksepsjonelle nettsteder.
 
-### Tilfelle 2: Nisjeleverandør
+### Tilfelle 2: Nisjeleverandør {#case-2-niche-provider}
 
 Det finnes et gammelt ordtak som sier: «Gjør én ting, og gjør det bra». For mange spesialister betyr dette å skape et produkt eller en tjeneste rundt én enkelt kjerneidé.
 
@@ -57,7 +57,7 @@ En av Ultimate Multisites innovative funksjoner er malnettstedet – et nettsted
 
 For en leverandør av nisjenettsteder og -tjenester gir dette en enestående fordel i muligheten til å umiddelbart opprette et nettsted klart til bruk med egendefinerte plugins og design. Kunden trenger bare å oppgi minimal informasjon for å fullføre tjenesten.
 
-### Tilfelle 3: WordPress webhosting
+### Tilfelle 3: WordPress webhosting {#case-3-wordpress-web-hosting}
 
 Det finnes utallige måter å hoste WordPress-nettsteder på, men det er sjelden så enkelt som bare å tilby webplass til en kunde med en forhåndsinstallert versjon av WordPress. Dette skyldes at en rekke beslutninger og hensyn må samordnes for å kunne tilby en meningsfull tjeneste.
 

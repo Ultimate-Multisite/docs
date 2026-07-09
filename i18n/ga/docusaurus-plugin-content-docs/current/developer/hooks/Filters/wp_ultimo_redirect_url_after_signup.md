@@ -4,15 +4,15 @@ title: Scagaire - wp_ultimo_redirect_url_after_signup
 sidebar_label: wp_ultimo_redirect_url_after_signup
 _i18n_hash: d2a07f6531164addf017a8b58bb860a1
 ---
-# Scagaire: wp_ultimo_redirect_url_after_signup
+# Scagaire: wp_ultimo_redirect_url_after_signup {#filter-wpultimoredirecturlaftersignup}
 
 Socraigh an URL atreoraithe.
 
 This is a legacy filter. Some of the parameters passed are not available, such as the $site_id.
 
-### Ó shin
+### Ó shin {#since}
 
 - 1.1.3: Lig d’fhorbróirí an URL atreoraithe a scagadh.
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L2450) ag líne 2450

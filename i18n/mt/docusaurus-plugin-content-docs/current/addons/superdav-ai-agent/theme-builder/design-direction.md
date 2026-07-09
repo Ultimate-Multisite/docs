@@ -3,17 +3,17 @@ title: Direzzjoni tad-Disinn
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direzzjoni tad-Disinn
+# Direzzjoni tad-Disinn {#design-direction}
 
 Il-pass **Direzzjoni tad-Disinn** jippermettilek tirrevedi, tirfina, u tiffinalizza d-disinn viżiv tat-theme tiegħek qabel ma Theme Builder jiġġenera t-theme kompluta.
 
-## Ħarsa Ġenerali
+## Ħarsa Ġenerali {#overview}
 
 Wara li tlesti l-Intervista ta' Skoperta, Theme Builder jippreżenta d-direzzjoni tad-disinn tiegħek b'**rendering ta' preview għal desktop u mobile**. Dan jippermettilek tara eżatt kif id-disinn tiegħek se jidher fuq apparati differenti qabel ma timpenja ruħek għat-theme.
 
-## Komponenti tad-Direzzjoni tad-Disinn
+## Komponenti tad-Direzzjoni tad-Disinn {#design-direction-components}
 
-### 1. Paletta tal-Kuluri
+### 1. Paletta tal-Kuluri {#1-color-palette}
 
 L-iskema tal-kuluri tat-theme tiegħek, inkluż:
 
@@ -23,7 +23,7 @@ L-iskema tal-kuluri tat-theme tiegħek, inkluż:
 - **Kuluri newtrali** — griżi u bojod għal sfondi u test
 - **Kulur tat-test** — kulur primarju tat-test għall-leġġibbiltà
 
-### 2. Tipografija
+### 2. Tipografija {#2-typography}
 
 Għażliet ta' fonts għal:
 
@@ -33,14 +33,14 @@ Għażliet ta' fonts għal:
 - **Għoli tal-linja** — spazjar bejn il-linji għall-leġġibbiltà
 - **Piżijiet tal-font** — varjazzjonijiet grassa, regolari, u ħfief
 
-### 3. Layout u Spazjar
+### 3. Layout u Spazjar {#3-layout-and-spacing}
 
 - **Wisa' tal-kontenitur** — wisa' massimu għall-kontenut
 - **Padding u marġini** — spazjar madwar l-elementi
 - **Sistema ta' grid** — layout ta' kolonni għal disinn reattiv
 - **Spazjar tal-komponenti** — distanza bejn elementi tal-UI
 
-### 4. Elementi Viżivi
+### 4. Elementi Viżivi {#4-visual-elements}
 
 - **Stili tal-buttuni** — disinji ta' buttuni primarji, sekondarji, u terzjarji
 - **Disinji tal-cards** — layouts għal blokki tal-kontenut
@@ -48,9 +48,9 @@ Għażliet ta' fonts għal:
 - **Borduri u dellijiet** — fond viżiv sottili
 - **Effetti ta' hover** — stilizzazzjoni tal-istat interattiv
 
-## Rendering tal-Preview
+## Rendering tal-Preview {#preview-rendering}
 
-### Preview tad-Desktop
+### Preview tad-Desktop {#desktop-preview}
 
 Il-preview tad-desktop turi d-disinn tiegħek bil-wisa' sħiħa (tipikament 1200px jew usa'):
 
@@ -59,7 +59,7 @@ Il-preview tad-desktop turi d-disinn tiegħek bil-wisa' sħiħa (tipikament 1200
 - Tipografija u spazjar kbar
 - L-elementi viżivi kollha fid-daqs sħiħ
 
-### Preview tal-Mobile
+### Preview tal-Mobile {#mobile-preview}
 
 Il-preview tal-mobile turi d-disinn tiegħek b'wisa' tal-mobile (tipikament 375px):
 
@@ -68,7 +68,7 @@ Il-preview tal-mobile turi d-disinn tiegħek b'wisa' tal-mobile (tipikament 375p
 - Tipografija u spazjar aġġustati
 - Daqsijiet ta' buttuni faċli għall-mess
 
-### Breakpoints Reattivi
+### Breakpoints Reattivi {#responsive-breakpoints}
 
 Theme Builder jirrendi previews f'dawn il-breakpoints:
 
@@ -79,9 +79,9 @@ Theme Builder jirrendi previews f'dawn il-breakpoints:
 | **Desktop** | 1200px | Desktop b'wisa' sħiħa |
 | **Desktop Kbir** | 1920px | Display ultra-wiesa' |
 
-## Irfinar tad-Disinn Tiegħek
+## Irfinar tad-Disinn Tiegħek {#refining-your-design}
 
-### Tagħmel Aġġustamenti
+### Tagħmel Aġġustamenti {#making-adjustments}
 
 Tista' tirfina d-direzzjoni tad-disinn tiegħek billi:
 
@@ -91,7 +91,7 @@ Tista' tirfina d-direzzjoni tad-disinn tiegħek billi:
 4. **Taġġorna l-layout** — ibdel il-wisa' tal-kontenituri u l-kolonni tal-grid
 5. **Tippersonalizza l-elementi** — immodifika l-istili tal-buttuni, id-disinji tal-cards, eċċ.
 
-### Aġġornamenti tal-Preview
+### Aġġornamenti tal-Preview {#preview-updates}
 
 Il-bidliet jiġu riflessi f'ħin reali:
 
@@ -100,7 +100,7 @@ Il-bidliet jiġu riflessi f'ħin reali:
 - Il-breakpoints reattivi kollha jiġu aġġornati
 - Tista' taqleb bejn il-previews biex tivverifika l-bidliet
 
-### Veduta ta' Tqabbil
+### Veduta ta' Tqabbil {#comparison-view}
 
 Qabbel id-direzzjoni tad-disinn tiegħek ma':
 
@@ -108,7 +108,7 @@ Qabbel id-direzzjoni tad-disinn tiegħek ma':
 - **Disinji tal-kompetituri** — qabbel ma' siti ta' ispirazzjoni
 - **Verżjonijiet preċedenti** — erġa' lura għal direzzjonijiet tad-disinn preċedenti
 
-## Approvazzjoni tad-Direzzjoni tad-Disinn
+## Approvazzjoni tad-Direzzjoni tad-Disinn {#design-direction-approval}
 
 Ladarba tkun sodisfatt bid-disinn tiegħek:
 
@@ -118,7 +118,7 @@ Ladarba tkun sodisfatt bid-disinn tiegħek:
 4. **Ikkonferma l-layout** — iċċekkja l-ispazjar u l-allinjament
 5. **Approva d-disinn** — kompli għall-ġenerazzjoni tat-theme
 
-## Passi Li Jmiss
+## Passi Li Jmiss {#next-steps}
 
 Wara li tapprova d-direzzjoni tad-disinn tiegħek:
 
@@ -127,7 +127,7 @@ Wara li tapprova d-direzzjoni tad-disinn tiegħek:
 3. Tista' tippersonalizza aktar billi tuża l-customizer ta' WordPress
 4. Kompli għal [Menus tal-Ospitalità](./hospitality-menus.md) jew karatteristiċi oħra
 
-## L-Aħjar Prattiki
+## L-Aħjar Prattiki {#best-practices}
 
 - **Ittestja fuq apparati reali** — uża telefowns u tablets attwali jekk possibbli
 - **Iċċekkja l-leġġibbiltà** — żgura li t-test jinqara fid-daqsijiet kollha
@@ -135,30 +135,30 @@ Wara li tapprova d-direzzjoni tad-disinn tiegħek:
 - **Ikkunsidra l-prestazzjoni** — ottimizza l-immaġini u l-fonts għall-veloċità
 - **Ippjana għall-kontenut** — żgura li l-layout jaħdem mal-kontenut attwali tiegħek
 
-## Soluzzjoni ta' Problemi
+## Soluzzjoni ta' Problemi {#troubleshooting}
 
-### Il-Preview Mhux Jaġġorna
+### Il-Preview Mhux Jaġġorna {#preview-not-updating}
 
 - Aġġorna l-paġna
 - Ħassar il-cache tal-browser
 - Ipprova browser differenti
 - Iċċekkja l-konnessjoni tal-internet
 
-### Il-Kuluri Jidhru Differenti
+### Il-Kuluri Jidhru Differenti {#colors-look-different}
 
 - Iċċekkja s-settings tal-kulur tal-monitor
 - Ipprova fuq apparati differenti
 - Ivverifika l-kuntrast tal-kulur b'għodod tal-aċċessibbiltà
 - Ikkunsidra simulaturi tal-għama għall-kuluri
 
-### Problemi bit-Tipografija
+### Problemi bit-Tipografija {#typography-issues}
 
 - Ivverifika li l-fajls tal-font qed jitgħabbew
 - Iċċekkja d-daqs tal-font f'breakpoints differenti
 - Ittestja b'kontenut attwali
 - Ikkunsidra t-tul tal-linja għall-leġġibbiltà
 
-## Dokumentazzjoni Relatata
+## Dokumentazzjoni Relatata {#related-documentation}
 
 - [Intervista ta' Skoperta](./discovery-interview.md) — iġbor informazzjoni dwar id-disinn
 - [Menus tal-Ospitalità](./hospitality-menus.md) — oħloq paġni ta' menus strutturati

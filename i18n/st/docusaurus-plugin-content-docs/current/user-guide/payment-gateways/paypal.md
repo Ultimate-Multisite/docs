@@ -3,7 +3,7 @@ title: Ho setse PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Setuping Le PayPal Gateway (v2)
+# Setuping Le PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTE ZWIKU: Le tsela le liti se a reka Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Like Stripe, PayPal e fana go fetogolo ho tsela le tsela lehle tsa online paymen
 
 A reka hore o na le **PayPal Business account** go bona API credential e ntsha e e hloka ho fetogoloana.
 
-## Go fana ka PayPal ka netefo ya hau
+## Go fana ka PayPal ka netefo ya hau {#enabling-paypal-on-your-network}
 
 Go fana ka PayPal as a payment method available on your network, u tla fihla ka **Ultimate Multisite > Settings > Payments** tab le u tsamisa bokao (tick the box) e ntsha se se hloka ho PayPal.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Go sebelisa guided setup wizard
+## Go sebelisa guided setup wizard {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 e ntshisa guided PayPal setup wizard le setse lehle sa payment gateway settings. Ha u fana ka PayPal, u sebelisa wizard eo ka **Ultimate Multisite > Settings > Payments** go bona hore o batla ho fetogoloana kae le ho bona hore na credentials a nang le ho hloka haholo fa u tsamisa (save).
 
@@ -30,7 +30,7 @@ Wizard eo e fana le dikotla tse pedi tsa setup:
 
 If hawe utlwa OAuth option e le teng mo wizard, feta pele kutlo ya kgethompho ya manu below. Gateway e le teng le credentials yeo PayPal Business API jo bo le ba release 2.x tsa Ultimate Multisite.
 
-## Goletse credentials ya PayPal API
+## Goletse credentials ya PayPal API {#getting-the-paypal-api-credentials}
 
 Ha o fetile PayPal e le gateway ya tšomo (payment gateway), o tla hloka ho fana ka fields yeo PayPal API **Username**, PayPal API **Password** le PayPal API **Signature**.
 

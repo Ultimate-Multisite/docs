@@ -4,11 +4,11 @@ title: Filtre - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Ülke idari alt bölümlerinin düzgün bir adını döndürür.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Açıklama |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | Kelimeleri büyük harfe çevirip çevirmeyeceğimiz. |
 | $current_country | `\WP_Ultimo\Country\Country` | Mevcut sınıfın örneği. |
 
-### Kullanılmaya Başladığı
+### Kullanılmaya Başladığı {#since}
 
 - 2.0.11
-### Kaynak
+### Kaynak {#source}
 
 [inc/country/class-country.php](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) adresinde 250. satırda tanımlanmıştır.
 
 
-## Dönüş Değeri
+## Dönüş Değeri {#returns}
 Değiştirilmiş bölüm adı.

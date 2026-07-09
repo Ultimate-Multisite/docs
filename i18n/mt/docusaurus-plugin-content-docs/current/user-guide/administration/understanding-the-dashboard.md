@@ -3,31 +3,31 @@ title: Fahmun tal-Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Fhemaxfiċċja ta Dashboard Ultimate Multisite
+# Fhemaxfiċċja ta Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
 
 Qabel ma niddammu f'piżor li għal opzjonijiet ta konfiguratizzjoni aktar avanzati u aspetti operattivi tal-Ultimate Multisite, famu l-aħħar għad nisolvi dwar il-dashboard.
 
 Bħall-koll il-plugin ta WordPress, Ultimate Multisite jikkonċerta menu a livell rešwirt (network-level) it-titlu **Ultimate Multisite** ma għandu ħafna entry fejn sub-menu.
 
-## Widgets tal-Dashboard ta' Rete (Network Dashboard Widgets)
+## Widgets tal-Dashboard ta' Rete (Network Dashboard Widgets) {#network-dashboard-widgets}
 
 L-Ultimate Multisite jikkontrolla (inject) qabel widgets uħud li huma utli f'dashboard a livell rešwirt. Dan dashboard tikkund il-navigazzjoni għal **My Sites → Network Admin → Dashboard**. Il-widgets iddisa biex jgħinu l-administrator ta' rešwirt biex jilqa’ informazzjoni u operazzjonijiet comuni b'mod fasil.
 
 ![Network Dashboard with Ultimate Multisite widgets](/img/admin/network-dashboard-full.png)
 
-### Evji Injiem (First Steps)
+### Evji Injiem (First Steps) {#first-steps}
 
 ![First Steps widget](/img/admin/network-dashboard-first-steps.png)
 
 Dan widget juri fuq installazzjoni ġdisa tal-Ultimate Multisite u jiddaħħal l'administrator ta' rešwirt biex jikkompleta proċedimenti aggiem, bħal konfigurar metoda tal-pagament u kreaw kontratta test.
 
-### Sintesi (Summary)
+### Sintesi (Summary) {#summary}
 
 ![Summary widget](/img/admin/network-dashboard-summary.png)
 
 Il-Widget ta' Sintesi jgħid dwar il-numru ta' iscrizioni u l-rikwimu tagħhom għall-jum. Il-MRR (Monthly Recurring Revenue) jindika total proġettat f'kull is-sittijiet biex jgħandu membership li jagħmel rikwwim.
 
-### Flus Aktivitajiet (Activity Stream)
+### Flus Aktivitajiet (Activity Stream) {#activity-stream}
 
 ![Activity Stream widget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Dan widget jgħid dwar l-eventi li qed jiġu avvenuti f'Ultimate Multisite. L-ev
 
 Jappliċa għall-sezzjoni tal-Eventi fil-dokumentazzjoni biex tiġi fornuta deskrizzjoni aktar dettaljata.
 
-### Ora (Right Now)
+### Ora (Right Now) {#right-now}
 
 ![Right Now widget](/img/admin/network-dashboard-right-now.png)
 
 Il-widget din utilità huwa dashboard qصير ta'عرض res juddu dwar l-utenti u siti fil-network. Il-shortcut li juri fuq jagħmel it-tikkja b'click għall-kunsidra tal-sitji jew l-utenti ewlieni.
 
-### Notizi u Diskussjonijiet
+### Notizi u Diskussjonijiet {#news-and-discussions}
 
 ![News and Discussions widget](/img/admin/network-dashboard-news.png)
 
 Il-widget huwa li jgħasl u jعرض l-notizi aktar ta'Ultimate Multisite. Ħalli l-istennija għall-widget dan b'informazzjoni dwar l-aggiornamenti, il-bug kritiku u l-korrezjonijiet ta'sigurtà.
 
-## Dashboard tal-Ultimate Multisite
+## Dashboard tal-Ultimate Multisite {#ultimate-multisite-dashboard}
 
 Hemm hekk il-dashboard ta'network juri informazzjoni komprewda dwar il-network, inta l-dashboard tal-Ultimate Multisite (li huwa f l-top-level tal-menu tal-Ultimate Multisite) juri informazzjoni dwar is-servizz.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-### Crescita ta'Rapportann Recurring Monthly (MRR)
+### Crescita ta'Rapportann Recurring Monthly (MRR) {#monthly-recurring-revenue-growth}
 
 Il-chart tal-MRR (Monthly Recurring Revenue) juri it-tqsim monthly tal-rapportann dwar il-perjodu kalendarju ta'12 mholji.
 
@@ -61,7 +61,7 @@ Il-chart tal-MRR (Monthly Recurring Revenue) juri it-tqsim monthly tal-rapportan
 
 Il-rapportann جديد jitqgwa bil azzurru, inta l-cancellazzjonijiet jirriflettu bil aħmar.
 
-### Support tal-Perjodu ta'Data
+### Support tal-Perjodu ta'Data {#date-range-support}
 
 B'mod kif jkun l-num tal-klijenti u l-attivitajiet, il-statistiki jistgħu jkunom b'ġud. Il-support tal-perjodu ta'data li huwa mban' built into il-dashboard jippermettix lil amministratur tal-network fokus'a biss fuq l-informazzjoni u perjodu tal-ħamta li għandhom biex ikunu.
 

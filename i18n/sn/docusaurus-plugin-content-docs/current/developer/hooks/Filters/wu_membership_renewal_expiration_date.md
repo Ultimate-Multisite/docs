@@ -4,11 +4,11 @@ title: Sefa - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Sefa: wu_membership_renewal_expiration_date
+# Sefa: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Inosefa zuva rekupedzisira rakaverengwa kuti riiswe mushure mekuvandudzwa.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Inosefa zuva rekupedzisira rakaverengwa kuti riiswe mushure mekuvandudzwa.
 | $membership_id | `int` | ID yekunyoreswa kwenhengo. |
 | $membership | `\Membership` | Chinhu chekuyoreswa kwenhengo. |
 
-### Kubva
+### Kubva {#since}
 
 - 2.0.0
-### Kwabva
+### Kwabva {#source}
 
 Yakatsanangurwa mu [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) pamutsara 2192

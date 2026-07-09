@@ -3,11 +3,11 @@ title: Referenca za WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI referenca
+# WP-CLI referenca {#wp-cli-reference}
 
 Gratis AI Agent isporučuje obitelj naredbi `wp gratis-ai-agent` za benchmarking agenta, upravljanje sposobnostima i dohvaćanje statusa agenta iz naredbenog retka. Sve naredbe zahtijevaju WP-CLI 2.0 ili noviji.
 
-## Instalacija
+## Instalacija {#installation}
 
 WP-CLI naredbe registriraju se automatski kada je plugin aktivan. Provjerite s:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Pokreće paket benchmark testova sposobnosti agenta — skup složenih, višekoračnih upita koji koriste cijelu površinu sposobnosti. Upotrijebite ovo za procjenu performansi modela, usporedbu pružatelja AI-ja ili validaciju paketa sposobnosti prije implementacije u produkciju.
 
-### Sinopsis
+### Sinopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Opcije
+### Opcije {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Format izlaza: `table` (zadano), `json`, `csv` |
 | `--save` | Spremi benchmark rezultate u bazu podataka za povijesnu usporedbu |
 
-### Primjeri
+### Primjeri {#examples}
 
 Pokreni cijeli benchmark paket s trenutačnim pružateljem i modelom:
 
@@ -57,7 +57,7 @@ Pokreni s određenim modelom i spremi rezultate:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Izlaz
+### Izlaz {#output}
 
 Benchmark ispisuje jedan redak po pitanju sa sljedećim stupcima:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark pitanja
+### Benchmark pitanja {#benchmark-questions}
 
 Zadani paket uključuje:
 
@@ -95,11 +95,11 @@ Dodatna pitanja mogu se registrirati putem filtra `gratis_ai_agent_benchmark_que
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Upravlja instaliranim sposobnostima i paketima sposobnosti.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Navodi sve registrirane sposobnosti, njihov izvor (jezgra ili paket) i njihov trenutačni status.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Preuzima i aktivira paket sposobnosti iz registra.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Onemogućuje određenu sposobnost bez uklanjanja paketa. Korisno za ograničavanje opsega agenta na određenoj web-stranici.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Ponovno omogućuje prethodno onemogućenu sposobnost.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Prikazuje trenutačnu konfiguraciju agenta i status povezivosti.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Prikazuje nedavnu aktivnost agenta iz debug zapisnika.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Resetira stanje agenta: čisti ubrizgani CSS, uklanja CPT-ove i taksonomije registrirane od strane agenta, resetira globalne stilove i prazni predmemoriju opcija agenta. Ne uklanja plugin ni njegove postavke.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Izlazni kodovi
+## Izlazni kodovi {#exit-codes}
 
 Sve naredbe izlaze s `0` pri uspjehu. Izlazni kodovi različiti od nule:
 

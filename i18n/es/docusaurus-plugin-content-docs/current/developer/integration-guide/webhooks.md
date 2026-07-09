@@ -3,11 +3,11 @@ title: Manejo de Webhooks
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Manejo de Webhooks
+# Manejo de Webhooks {#webhook-handling}
 
 Crear puntos finales de webhook personalizados para recibir eventos de servicios externos y sincronizar datos con Ultimate Multisite.
 
-## Punto final de Webhook personalizado
+## Punto final de Webhook personalizado {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Consideraciones de Seguridad
+## Consideraciones de Seguridad {#security-considerations}
 
 - Siempre verifique las firmas de webhook utilizando HMAC o un secreto compartido
 - Utilice un `permission_callback` en su ruta REST — nunca lo establezca en `__return_true` en producción

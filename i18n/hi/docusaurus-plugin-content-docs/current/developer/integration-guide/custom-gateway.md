@@ -3,11 +3,11 @@ title: कस्टम गेटवे विकास
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# कस्टम Gateway विकास
+# कस्टम Gateway विकास {#custom-gateway-development}
 
 आप `Base_Gateway` क्लास को बढ़ाकर कस्टम भुगतान gateways बना सकते हैं।
 
-## Gateway क्लास
+## Gateway क्लास {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway पंजीकृत करें
+## Gateway पंजीकृत करें {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## मुख्य विधियाँ
+## मुख्य विधियाँ {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | refund अनुरोधों को संभालें |
 | `get_payment_methods()` | ग्राहक के लिए सहेजी गई भुगतान विधियाँ लौटाएँ |
 
-## आवर्ती memberships के लिए नवीनीकरण credentials
+## आवर्ती memberships के लिए नवीनीकरण credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway integrations को यह बताने देता है कि किसी आवर्ती membership के पास `auto_renew` सहेजे जाने से पहले पुनः उपयोग योग्य नवीनीकरण credential है या नहीं। `wu_membership_has_renewal_credential` को hook करें और लौटाएँ:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 नया पुनः उपयोग योग्य credential संग्रहीत होने के बाद, अपने gateway के सफल re-authorization flow के हिस्से के रूप में missing-credential marker साफ़ करें।
 
-## सुझाव
+## सुझाव {#tips}
 
 - विफलता पर हमेशा `WP_Error` लौटाएँ ताकि Ultimate Multisite त्रुटि प्रदर्शन संभाल सके
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway-specific logging के लिए `wu_log_add()` का उपयोग करें
 
-## AI connector provider क्षमताएँ
+## AI connector provider क्षमताएँ {#ai-connector-provider-capabilities}
 
 AI connector-backed operations को कॉल करने वाली कस्टम integrations को AI Provider for Anthropic Max v1.3.0 के साथ प्रस्तुत समर्थित OAuth provider set के अनुरूप होना चाहिए:
 

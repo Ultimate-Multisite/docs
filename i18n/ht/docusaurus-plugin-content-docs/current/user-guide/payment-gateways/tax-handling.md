@@ -3,7 +3,7 @@ title: Jesyon taks
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Jesyon Taks
+# Jesyon Taks {#tax-handling}
 
 Ultimate Multisite gen yon modil koleksyon taks ki entegre nan plugin prensipal nou an, kidonk si ou bezwen kolekte taks sou lavant sou plan, pakè ak sèvis ou yo, ou ka fè sa fasil san ou pa bezwen enstale okenn ekstansyon.
 
@@ -11,7 +11,7 @@ Pou konpayi ki sitiye an Ewòp, nou ofri yon **ekstansyon** ki ajoute zouti ak f
 
 Ultimate Multisite pa ranpli ni voye taks bay gouvènman an nan non ou; nou senpleman ede ou kolekte taks ki apwopriye yo nan moman tranzaksyon an. **Ou ap toujou bezwen voye taks yo poukont ou.**
 
-## Aktive Koleksyon Taks
+## Aktive Koleksyon Taks {#enabling-tax-collection}
 
 Koleksyon taks pa aktive pa defo. Pou aktive li, ou bezwen ale nan **Ultimate Multisite > Paramèt > Taks** epi aktive paramèt Aktive Taks yo.
 
@@ -25,7 +25,7 @@ Ou kapab wè tou paramèt taks yo pou pwodwi endividyèl yo:
 
 ![Paramèt taks pou pwodwi yo](/img/config/settings-taxes.png)
 
-### Taks eskli vs. Taks enkli
+### Taks eskli vs. Taks enkli {#tax-excluded-vs-tax-included}
 
 Pa defo, tout pri pwodwi ou yo eskli taks, sa vle di taks yo **pa enkli** nan pri pwodwi a. Si nou detèmine ke yon kliyan ta dwe peye taks sou yon acha espesifik, n ap ajoute taks yo **anplis** sou soutotal la.
 
@@ -37,7 +37,7 @@ Pa bliye **sove** chanjman ou fè yo.
 
 ###
 
-## Kreye To Taks
+## Kreye To Taks {#creating-tax-rates}
 
 Apre ou aktive Koleksyon Taks, w ap bezwen kreye to taks pou kote espesifik lè ou itilize editè to taks nou an.
 
@@ -51,7 +51,7 @@ Sou paj editè to taks la, ou ka ajoute nouvo To Taks lè ou klike sou bouton **
 
 W ap bezwen bay chak to taks yon **tit** (yo itilize sou fakti). Apre sa, ou ka chwazi **peyi** a (obligatwa), **eta a,** ak **vil** la (toude opsyonèl) kote taks sa a pral chaje. Finalman, ajoute **to taks la an pousantaj**.
 
-### Kategori Taks
+### Kategori Taks {#tax-categories}
 
 Ou kapab kreye plizyè Kategori Taks tou, pou ajoute diferan to taks pou diferan kalite pwodwi.
 
@@ -73,7 +73,7 @@ Ou ka fikse kategori taks la pou yon pwodwi espesifik lè ou ale nan **paj modif
 
 Sou menm ekran sa a, ou ka dezaktive bouton **Èske li Taksab?** la pou fè Ultimate Multisite konnen li pa ta dwe kolekte taks sou pwodwi espesifik sa a.
 
-## Sipò VAT Ewopeyen
+## Sipò VAT Ewopeyen {#european-vat-support}
 
 Jan nou te mansyone anvan, nou gen yon ekstansyon ki disponib pou kliyan nan Inyon Ewopeyen an ki gen kondisyon adisyonèl akoz règleman VAT Ewopeyen yo.
 
@@ -101,7 +101,7 @@ Si ou retounen nan **onglet Paramèt Taks** la, w ap wè nouvo opsyon ki disponi
 
 <!-- Ekran pa disponib: bouton Aktive Sipò VAT nan paramèt Taks yo apre aktivasyon ekstansyon an -->
 
-### Rale To Taks VAT yo
+### Rale To Taks VAT yo {#pulling-on-vat-tax-rates}
 
 Youn nan zouti entegrasyon nou an ajoute yo se kapasite pou chaje to taks pou eta manm Inyon Ewopeyen yo. Sa ka fèt lè ou vizite paj editè to taks la apre ou fin aktive sipò EU VAT.
 
@@ -111,7 +111,7 @@ Anba paj la, w ap wè opsyon pou rale VAT yo. Lè ou chwazi yon kalite to epi kl
 
 Ou ka modifye valè yo tou apre ou fin rale yo. Pou fè sa, senpleman modifye liy tablo ou bezwen an epi klike pou sove nouvo valè yo.
 
-### Validasyon VAT
+### Validasyon VAT {#vat-validation}
 
 Lè sipò VAT aktive, Ultimate Multisite pral ajoute yon chan adisyonèl nan fòm checkout la, anba chan adrès faktirasyon an. Chan an ap parèt sèlman pou kliyan ki sitiye nan Inyon Ewopeyen an.
 

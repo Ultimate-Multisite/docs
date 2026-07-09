@@ -3,7 +3,7 @@ title: Incompatibilités connues
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Incompatibilités connues avec d'autres plugins
+# Incompatibilités connues avec d'autres plugins {#known-incompatibilities-with-other-plugins}
 
 Après l'installation et l'activation d'Ultimate Multisite, vous pourriez rencontrer des problèmes dus à des incompatibilités non résolues avec d'autres plugins.
 

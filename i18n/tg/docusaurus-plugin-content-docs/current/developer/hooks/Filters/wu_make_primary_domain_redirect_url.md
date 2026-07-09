@@ -4,13 +4,13 @@ title: Филтр - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Филтр: wu_make_primary_domain_redirect_url
+# Филтр: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 URL-и равонасозиро пас аз primary кардани домен филтр мекунад.
 
 Ба таҳиягарон имкон медиҳад, ки ҷойеро, ки корбарон пас аз бомуваффақият ҳамчун primary таъин кардани домен ба он равона карда мешаванд, танзим кунанд. Ба таври пешфарз, ба URL-и ҷорӣ дар сомонаи асосӣ ё ба URL-и admin-и сомонае, ки тағйир дода мешавад, равона мекунад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -19,13 +19,13 @@ URL-и равонасозиро пас аз primary кардани домен ф
 | $domain | `\Domain` | Объекти домен, ки primary карда шуд. |
 | $old_primary_domains | `array` | Массиви ID-ҳои доменҳое, ки қаблан primary буданд. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 2.0.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) дар сатри 639 муайян шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}
 URL-и равонасозии филтршуда.

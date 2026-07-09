@@ -3,11 +3,11 @@ title: Por que Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Por que o Ultimate Multisite
+# Por que o Ultimate Multisite {#why-ultimate-multisite}
 
 Se você chegou a este artigo, provavelmente ouviu dizer que nosso plugin pode ser a solução para realizar sua ideia de negócio. Esperamos que você tenha as respostas de que precisa ao final desta matéria.
 
-## O que é o Ultimate Multisite?
+## O que é o Ultimate Multisite? {#what-is-ultimate-multisite}
 
 O Ultimate Multisite é um plugin WordPress Multisite que permite oferecer aos seus clientes um WaaS (Website as a Service, ou Website como Serviço). Com nosso plugin, você pode ter vários níveis de assinatura e fazer com que os clientes paguem uma taxa recorrente para ter um site hospedado na sua rede Multisite.
 
@@ -15,7 +15,7 @@ O Ultimate Multisite permite que você receba seus pagamentos com diferentes gat
 
 E isso é apenas o começo, já que você pode estender suas funcionalidades com add-ons e webhooks.
 
-## Outras funcionalidades
+## Outras funcionalidades {#other-features}
 
 O Ultimate Multisite também oferece:
 
@@ -33,11 +33,11 @@ E muito mais avançado:
 
 * API de Busca e Substituição (Search and Replace API): Você também pode anotar os templates do site com placeholders como `{{site_name}}` e usar a Search and Replace API para preencher automaticamente esses placeholders com as informações fornecidas pelo seu cliente logo após o cadastro.
 
-## Casos de Uso
+## Casos de Uso {#use-cases}
 
 Agora é hora de ver alguns dos possíveis casos de uso do Ultimate Multisite.
 
-### Caso 1: Uma Agência
+### Caso 1: Uma Agência {#case-1-an-agency}
 
 Geralmente, as habilidades centrais de uma agência residem no design de sites com aspectos como hospedagem ou marketing listados como serviços adicionais.
 
@@ -47,7 +47,7 @@ O controle rigoroso sobre plugins e temas é mantido por produto através das co
 
 Agências terão tranquilidade com o Ultimate Multisite, permitindo que façam o que fazem de melhor: projetar websites excepcionais.
 
-### Caso 2: Provedor de Nicho
+### Caso 2: Provedor de Nicho {#case-2-niche-provider}
 
 Existe um ditado antigo que diz: "Faça uma coisa e faça bem". Para muitos especialistas, isso significa criar um produto ou serviço em torno de uma ideia central única.
 
@@ -57,7 +57,7 @@ Uma das funcionalidades inovadoras do Ultimate Multisite é o template de site: 
 
 Para um provedor de sites e serviços de nicho, isso oferece uma vantagem incomparável na capacidade de criar instantaneamente um site pronto para uso com plugins e design personalizados. O cliente só precisa fornecer uma entrada mínima para concluir o serviço.
 
-### Caso 3: Hospedagem WordPress
+### Caso 3: Hospedagem WordPress {#case-3-wordpress-web-hosting}
 
 Existem inúmeras maneiras de hospedar sites WordPress, mas raramente é tão simples quanto fornecer espaço web a um cliente com uma versão pré-instalada do WordPress. Isso ocorre porque várias decisões e considerações precisam se juntar para oferecer um serviço significativo.
 

@@ -3,15 +3,15 @@ title: Sivustonrakentajan orkestrointi v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Sivuston rakentamisen orkestrointi v2
+# Sivuston rakentamisen orkestrointi v2 {#site-builder-orchestration-v2}
 
 Sivuston rakentamisen orkestrointi v2 (esitelty Gratis AI Agent v1.4.0:ssa) on moottori, joka mahdollistaa monivaiheisen verkkosivustojen luomisen. Kun pyydät agenttia "rakentamaan ravintolasivuston" tai "luomaan portfolion blogilla", orkestroija pilkkoo tämän korkean tason tavoitteen rakenteiseksi **suunnitelmaksi**, löytää sen toteuttamiseen tarvittavat pluginit, suorittaa jokaisen vaiheen järjestyksessä, seuraa edistymistä ja palautuu virheistä itsenäisesti.
 
 ---
 
-## Kuinka se toimii
+## Kuinka se toimii {#how-it-works}
 
-### 1. Suunnitelman luonti
+### 1. Suunnitelman luonti {#1-plan-generation}
 
 Kun agentti vastaanottaa sivuston rakentamisohjeen, se kutsuu `create_site_plan`-kykyä tuottaakseen JSON-muotoisen **sivustosuunnitelman**. Suunnitelma kuvaa:
 
@@ -61,7 +61,7 @@ Kun agentti vastaanottaa sivuston rakentamisohjeen, se kutsuu `create_site_plan`
 }
 ```
 
-### 2. Pluginien löytäminen
+### 2. Pluginien löytäminen {#2-plugin-discovery}
 
 Ennen suorituksen alkamista orkestroija käy läpi suunnitelman `plugin_requirements`-kohdan ja tarkistaa, mitkä pluginit ovat jo aktiivisia. Puuttuville plugineille se:
 
@@ -71,7 +71,7 @@ Ennen suorituksen alkamista orkestroija käy läpi suunnitelman `plugin_requirem
 
 Pluginien löytämisen epäonnistumiset eivät ole kohtalokkaita — orkestroija merkitsee kyseiset askeleet tilaan `skipped` ja jatkaa muun suunnitelman kanssa.
 
-### 3. Suunnitelman suoritus
+### 3. Suunnitelman suoritus {#3-plan-execution}
 
 Orkestroija kutsuu `execute_site_plan`-toimintoa suunnitelman tunnuksella. Suoritus etenee vaihe vaiheelta, askel askeleelta:
 
@@ -79,7 +79,7 @@ Orkestroija kutsuu `execute_site_plan`-toimintoa suunnitelman tunnuksella. Suori
 - **Rinnakkaiset askeleet** — saman vaiheen askeleet, joilla ei ole keskinäisiä riippuvuuksia, lähetetään suoritettaviksi samanaikaisesti, kun `parallel`-lippu on asetettu.
 - **Askeleen aikakatkaisu** — jokaisella askeleella on yksilöllinen aikakatkaisu (oletus: `Ability Timeout`-asetus). Aikakatkaistu askel merkitään tilaan `failed`, ja suunnitelma jatkuu.
 
-### 4. Edistymisen seuranta
+### 4. Edistymisen seuranta {#4-progress-tracking}
 
 Kutsu `get_plan_progress` milloin tahansa tarkistaaksesi suorituksen tilan:
 
@@ -104,7 +104,7 @@ WP-CLI-käyttäjät voivat seurata edistymistä komennolla:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Virheistä palautuminen
+### 5. Virheistä palautuminen {#5-error-recovery}
 
 Kun askel epäonnistuu, orkestroija tarkistaa, onko suunnitelmassa määritelty **vararatkaisuaskel**:
 
@@ -115,9 +115,9 @@ Agentti raportoi kaikki epäonnistumiset lopullisessa suunnitelman yhteenvedossa
 
 ---
 
-## Sivustosuunnitelman kyvyt
+## Sivustosuunnitelman kyvyt {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Luo rakenteisen sivustosuunnitelman luonnollisen kielen tavoitekuvauksesta.
 
@@ -134,7 +134,7 @@ Luo rakenteisen sivustosuunnitelman luonnollisen kielen tavoitekuvauksesta.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Aloittaa aiemmin luodun sivustosuunnitelman suorittamisen.
 
@@ -150,7 +150,7 @@ Aloittaa aiemmin luodun sivustosuunnitelman suorittamisen.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Palauttaa sivustosuunnitelman nykyisen suoritustilan.
 
@@ -164,7 +164,7 @@ Palauttaa sivustosuunnitelman nykyisen suoritustilan.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ratkaisee epäonnistuneen vaiheen manuaalisesti ja jatkaa suunnitelman suorittamista seuraavasta vaiheesta. Käytä tätä, kun automaattinen palautuminen ei ollut mahdollista ja haluat puuttua tilanteeseen.
 
@@ -180,7 +180,7 @@ Ratkaisee epäonnistuneen vaiheen manuaalisesti ja jatkaa suunnitelman suorittam
 
 ---
 
-## v1:n ja v2:n vertailu
+## v1:n ja v2:n vertailu {#comparing-v1-and-v2}
 
 | Ominaisuus | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Ratkaisee epäonnistuneen vaiheen manuaalisesti ja jatkaa suunnitelman suorittam
 
 ---
 
-## WP-CLI-suunnitelmakomennot
+## WP-CLI-suunnitelmakomennot {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Luo sivustosuunnitelman tavoitekuvauksesta.
 
@@ -205,7 +205,7 @@ Luo sivustosuunnitelman tavoitekuvauksesta.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Suorittaa aiemmin luodun suunnitelman.
 
@@ -213,7 +213,7 @@ Suorittaa aiemmin luodun suunnitelman.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Näyttää suoritettavan tai valmistuneen suunnitelman nykyisen edistymisen.
 
@@ -221,7 +221,7 @@ Näyttää suoritettavan tai valmistuneen suunnitelman nykyisen edistymisen.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Listaa kaikki sivustosuunnitelmat (odottavat, käynnissä olevat ja valmistuneet).
 
@@ -229,7 +229,7 @@ Listaa kaikki sivustosuunnitelmat (odottavat, käynnissä olevat ja valmistuneet
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Palauttaa epäonnistuneen suunnitelman tilaan `pending`, jotta se voidaan suorittaa uudelleen alusta.
 

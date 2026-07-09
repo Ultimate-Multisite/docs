@@ -4,11 +4,11 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 രാജ്യത്തിന്റെ ഭരണപരമായ ഉപവിഭാഗങ്ങളുടെ മനോഹരമായ പേര് ഇത് തിരികെ നൽകുന്നു.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | വാക്കുകൾ വലിയ അക്ഷരങ്ങളാക്കണോ (uppercase). |
 | $current_country | `\WP_Ultimo\Country\Country` | നിലവിലെ ക്ലാസിന്റെ ഒരു ഉദാഹരണം (Instance). |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) എന്ന ഫയലിലെ 250-ാം വരിയിൽ നിർവചിച്ചിരിക്കുന്നു.
 
-## Returns
+## Returns {#returns}
 മാറ്റിയ ശേഷമുള്ള വിഭാഗത്തിന്റെ പേര്.

@@ -4,7 +4,7 @@ sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 
-# דער Ultimate Multisite Register API ענדפּוינט
+# דער Ultimate Multisite Register API ענדפּוינט {#the-ultimate-multisite-register-api-endpoint}
 
 אין דעם טוטאָריאַל וועט איר זיך אויסלערנען ווי צו ניצן דעם Ultimate Multisite /register API ענדפּוינט צו שאַפֿן דעם גאַנצן אָנבאָרדינג־פּראָצעס פֿאַר אַ נײַעם קונה אין אייער נעץ, און ווי אַזוי דאָס צו טאָן מיט Zapier.
 
@@ -30,11 +30,11 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 איצט לאָמיר אויספֿאָרשן דעם ענדפּוינט און דערנאָך שאַפֿן אַ רעגיסטראַציע־אַקציע אין Zapier.
 
-## פּאַראַמעטערס פֿאַר דעם גוף פֿונעם ענדפּוינט
+## פּאַראַמעטערס פֿאַר דעם גוף פֿונעם ענדפּוינט {#endpoint-body-parameters}
 
 לאָמיר איבערקוקן די מינימאַלע אינפֿאָרמאַציע וואָס מען דאַרף שיקן צום ענדפּוינט. צום סוף פֿון דעם אַרטיקל וועט איר געפֿינען דעם גאַנצן רוף.
 
-### Customer
+### Customer {#customer}
 
 דאָס איז די אינפֿאָרמאַציע וואָס איז נייטיק פֿאַרן פּראָצעס פֿון שאַפֿן דעם User און דעם Ultimate Multisite Customer:
 
@@ -44,25 +44,25 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 די איינציקע אינפֿאָרמאַציע וואָס מיר דאַרפֿן אין דעם אָביעקט איז Membership Status.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Products ווערן געגעבן ווי אַ מענגע מיט איינעם אָדער מער product ID פֿון אייער נעץ. זײַט אָפּגעהיט: דער ענדפּוינט שאַפֿט נישט products. קוקט אין Ultimate Multisite'ס דאַקיומענטאַציע כּדי בעסער צו פֿאַרשטיין דעם product creation endpoint.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 ווי בײַ Membership, דאַרפֿן מיר נאָר דעם status.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 און צו פֿאַרענדיקן דעם body דאַרפֿן מיר דעם URL און Title פֿון דער סייט, ביידע אין דעם Site אָביעקט.
 
@@ -70,13 +70,13 @@ Products ווערן געגעבן ווי אַ מענגע מיט איינעם אָ
 
 דער צוריקקער פֿונעם register ענדפּוינט וועט זײַן אַ מענגע מיט דער נײַ געשאַפֿענער membership אינפֿאָרמאַציע.
 
-## שאַפֿן אַן אַקציע אין Zapier
+## שאַפֿן אַן אַקציע אין Zapier {#creating-an-action-in-zapier}
 
 מיט דער אַרײַנפֿיר פֿון דעם נײַעם און שטאַרקערן account creation endpoint וועט איר אויך באַקומען צוטריט צו אַ נײַער אַקציע אין Zapier.
 
 ווייסט איר ווי צו ניצן און הנאה האָבן פֿון אַלץ וואָס די נײַע ווערסיע פֿון Zapier אָפפערט? לערנט מער דאָ. (link?)
 
-### שאַפֿן אַן אַקציע
+### שאַפֿן אַן אַקציע {#creating-an-action}
 
 כּדי בעסער צו ווײַזן ווי צו ניצן דעם registration endpoint מיט Zapier, לאָמיר שאַפֿן אַן אינטעגראַציע מיט Google Forms. יעדעס מאָל ווען דער פֿאָרעם ווערט אויסגעפֿילט און די אינפֿאָרמאַציע ווערט געראַטעוועט אין דער ענטפֿער־שיט פֿונעם פֿאָרעם, וועט אַ נײַע membership ווערן געשאַפֿן אין דער Ultimate Multisite נעץ.
 
@@ -106,7 +106,7 @@ Products ווערן געגעבן ווי אַ מענגע מיט איינעם אָ
 
 טעסט אייער נײַעם Zap און עס זאָל זיך מצליח פֿאַרענדיקן. אויב עס פּאַסירט אַ טעות, קאָנטראָלירט אַלע פעלדער און צי זיי ווערן ריכטיק געשיקט. ווײַל עס איז דאָ אַ סך אינפֿאָרמאַציע, קענען עטלעכע זאַכן בלײַבן אומבאַמערקט.
 
-### גאַנצע ענדפּוינט פּאַראַמעטערס
+### גאַנצע ענדפּוינט פּאַראַמעטערס {#complete-endpoint-parameters}
 
 דאָ איז דער גאַנצער רוף און אַלע מעגלעכקייטן פֿון פעלדער וואָס קענען ווערן געשיקט.
 

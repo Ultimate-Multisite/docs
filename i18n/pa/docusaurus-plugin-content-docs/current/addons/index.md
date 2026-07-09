@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons Ultimate Multisite ਨੂੰ ਹੋਰ فیਚਰਾਂ ਅਤੇ integrations ਨਾਲ ਵਧਾਉਂਦੇ ਹਨ। ਜ਼ਿਆਦਾਤਰ addons ਪੈਸੇ ਨਾਲ ਆਉਂਦੇ ਹਨ ਅਤੇ ਤੁਸੀਂ [ultimatemultisite.com](https://ultimatemultisite.com) ਤੋਂ ਖਰੀਦ ਸਕਦੇ ਹੋ।
 
-## Installation
+## Installation {#installation}
 
 Addons ਨੂੰ ਦੋ ਤਰੀਕਿਆਂ ਨਾਲ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ:
 
 1. **Addon Page ਰਾਹੀਂ** -- WordPress admin ਵਿੱਚ ਆਪਣੇ ਸਾਈਟ ਦੇ addon management page 'ਤੇ ਜਾਓ।
 2. **Manual Download** -- [your account](https://ultimatemultisite.com/my-account/downloads/) ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ ਅਤੇ Plugins > Add New ਰਾਹੀਂ ਅਪਲੋਡ ਕਰੋ।
 
-## Available Addons
+## Available Addons {#available-addons}
 
 | Addon | Vivaran |
 |-------|-------------|

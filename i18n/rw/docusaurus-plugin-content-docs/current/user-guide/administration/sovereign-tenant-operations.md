@@ -3,13 +3,13 @@ title: Umuco w'Abanyamwuga b'Ubutumwa
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Umuhuko wa Tenant w'Umuhaka (Sovereign Tenant Operations)
+# Umuhuko wa Tenant w'Umuhaka (Sovereign Tenant Operations) {#sovereign-tenant-operations}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yagira zindi zindi zindi zikoreshwa mu gukora ibikorwa by'ubunyangamugambi b'umuhaka (sovereign tenants): subsites zitera ku ntego ya database, filesystem root, no routing context zikoresha ariko zishobora kuvugwa n'abanyamwuga b'urugero.
 
 Gukoresha uyu ukuri iyo ugiye gukora ibikorwa by'ubunyangamugambi b'umuhaka (sovereign tenants) cyangwa uburyo bw'ibyo bishobora kubyara mu gihe cyo gutera umusaruro w'umutera (migrations) ubutumwa bwo gukoresha subsite mu gihugu cy'ubunyangamugambi.
 
-## Icyo kigira guhinduka ku mufa (administrators)
+## Icyo kigira guhinduka ku mufa (administrators) {#what-changes-for-administrators}
 
 - **Autologin y'umutera usaba umusaruro (Stateless tenant autologin)** — Abanyamwuga b'urugero bashobora gukoresha tenant w'umuhaka kandi nta kuyibanda ku uburyo bw'umusaruro bwa mbere. SSO token yari itandukanye n'uburyo bwo gukoresha, yari itandukanye n'uko umutera yashobora kubyara, yari itandukanye n'uko umutera usaba umusaruro (SSO) uburyo bw'umutera w'ibyo byishobora kubyara cyane.
 
@@ -19,7 +19,7 @@ Gukoresha uyu ukuri iyo ugiye gukora ibikorwa by'ubunyangamugambi b'umuhaka (sov
 
 - **Gukora umutera w'ubunyangamugambi bwa mbere (Safer teardown)** — Gukora umutera w'umuhaka (sovereign teardown) uburyo bwo gukoresha umusaruro bw'umuhaka mu buryo bwiza, bikaba ibintu by'ubunyangamugambi bwa mbere bituma tenant yashobye kubyara database access itandukanye.
 
-## Gukoresha tenant w'umuhaka (Visiting a sovereign tenant)
+## Gukoresha tenant w'umuhaka (Visiting a sovereign tenant) {#visiting-a-sovereign-tenant}
 
 1. Furu **Network Admin > Ultimate Multisite > Sites**.
 2. Shobora tenant w'umuhaka.
@@ -27,7 +27,7 @@ Gukoresha uyu ukuri iyo ugiye gukora ibikorwa by'ubunyangamugambi b'umuhaka (sov
 
 Uburyo bw'ubwumva bwa "visit" bukuraho token y'umutera itandukanye n'uko ari inyandiko, kandi bikaba ibintu by'umutera usaba umusaruro (SSO event) bigirwa mu gice cy'umutera w'ubunyangamugambi bwa tenant. Iyo ubutumwa butera umutera bukuraho, shobora kumenya ko domain ya tenant yari itandukanye n'uko byashobye kubyara kandi ko tenant yashobora gutanga endpoint bwa SSO mu gihe cyo gukoresha umutera w'urugero.
 
-## Icyemezo cyo gukora ibikorwa ku site (Remote-site operations checklist)
+## Icyemezo cyo gukora ibikorwa ku site (Remote-site operations checklist) {#remote-site-operations-checklist}
 
 Mbere yo gushyira mu mategeko tenant w'umuhaka cyangwa remote tenant, shobora kumenya:
 
@@ -37,7 +37,7 @@ Mbere yo gushyira mu mategeko tenant w'umuhaka cyangwa remote tenant, shobora ku
 - Icyemezo cy'amaqueue ya migration itandukanye (Async migration queues) yituma imbere mbere yuko twumva DNS cyangwa ububasha bwa tenant.
 - Umuntu w'ubwoko bw'amadinanzira (tenant admin user) yashoboye gukoresha mu gihe cyo gukora migration kandi ashobora kwiga ku SSO.
 
-## Gukoresha amadinanzira y'umutera (Deleting sovereign tenants)
+## Gukoresha amadinanzira y'umutera (Deleting sovereign tenants) {#deleting-sovereign-tenants}
 
 Gukoresha umutera w'umutera (sovereign tenant) ni ikintu gikomeye kuko bikorera ibyo byose. Umeza gukora backup no gukoresha (export status) mbere, nyuma yego ugagiza ku site management screen. Icyemezo cyo 1.2.0 cyumva amakuru ya database ya tenant nk'uko twitera ibyo twishobora gutunganya, ariko abajyane bashobora gukoresha uburyo bwa hosting buhuza (external hosting panels) kandi bakwumva ko umuntu w'ubwoko bw'amadinanzira n'amashyirahamwe y'database yashobye gutunganya.
 

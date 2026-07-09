@@ -3,9 +3,9 @@ title: Mailster Àkọsílẹ̀ Ìyípadà
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Àkọsílẹ̀ Àyípadà Mailster
+# Àkọsílẹ̀ Àyípadà Mailster {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * Ìtújáde àkọ́kọ́
 * Mímú subscriber ṣiṣẹ́ pọ̀ laifọwọyi nígbà signup tàbí payment
 * Àwọn ìyàn list tó dá lórí product pàtó

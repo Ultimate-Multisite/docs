@@ -4,11 +4,11 @@ title: Filtrilo - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filtro: ultimate_multisite_content_sync_get_option
+# Filtro: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Redonas la slugigitan retan opciovaloron.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Redonas la slugigitan retan opciovaloron.
 | $option_name | `string` | La opcinomo. |
 | $default | `mixed` | La defaŭlta valoro. |
 
-### Ekde
+### Ekde {#since}
 
 - 1.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) ĉe linio 126
 
 
-## Revenas
+## Revenas {#returns}
 La slugigita reta opciovaloro.

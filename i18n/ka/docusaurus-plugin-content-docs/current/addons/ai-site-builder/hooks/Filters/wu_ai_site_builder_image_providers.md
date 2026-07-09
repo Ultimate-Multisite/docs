@@ -4,19 +4,19 @@ title: ფილტრი - wu_ai_site_builder_image_providers
 sidebar_label: wu_ai_site_builder_image_providers
 _i18n_hash: 995fe14df700a1a85612bfb8e76578a1
 ---
-# ფილტრი: wu_ai_site_builder_image_providers
+# ფილტრი: wu_ai_site_builder_image_providers {#filter-wuaisitebuilderimageproviders}
 
 ფილტრავს ხელმისაწვდომ სურათების პროვაიდერებს
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
 | $providers | `array` | ხელმისაწვდომი პროვაიდერები. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 1.0.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/class-image-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-ai-site-builder/blob/main/inc/class-image-manager.php#L68)-ში, ხაზზე 68

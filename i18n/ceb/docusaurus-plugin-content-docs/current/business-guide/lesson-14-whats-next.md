@@ -3,15 +3,15 @@ title: 'Leksyon 14: Unsa ang Sunod'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lesson 14: Unsa ang Sunod
+# Lesson 14: Unsa ang Sunod {#lesson-14-what-comes-next}
 
 Naghimo ka na og niche website platform gikan sa sinugdanan. Ang FitSite kay nag-andar na, nagserbisyo sa mga fitness studio, ug nakahimo na og padayon nga kita (recurring revenue). Kini nga katapusang leksyon magtan-aw kung asa pa man mo moadto gikan ani.
 
-## Asa Mi Nahitabo
+## Asa Mi Nahitabo {#where-we-left-off}
 
 Ang FitSite usa nang nagpadagan nga negosyo nga adunay kustomer, operasyon, ug paglambo. Karon, atong hunahunaon unsa ang sunod.
 
-## Ang Kumpleto nga FitSite Network
+## Ang Kumpleto nga FitSite Network {#the-complete-fitsite-network}
 
 Kini ang tanan nga among gihimo sa 14 ka mga leksyon:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Option 1: Paglawom sa Imong Niche
+## Option 1: Paglawom sa Imong Niche {#option-1-go-deeper-in-your-niche}
 
 Sa dili pa mo-expand sa laing niches, hunahunaa ang paglawom pa sa fitness:
 
-### Sub-Niches
+### Sub-Niches {#sub-niches}
 
 - **Yoga studios** -- mga specialized template nga adunay features para sa meditation, retreat, ug workshop
 - **CrossFit boxes** -- WOD tracking, competition results, community features
@@ -59,7 +59,7 @@ Sa dili pa mo-expand sa laing niches, hunahunaa ang paglawom pa sa fitness:
 
 Ang matag sub-niche mahimong adunay kaugalingon nga mga template ug posibleng kaugalingon nga brand, tanan nagpadagan sa samang Ultimate Multisite network.
 
-### Premium Features
+### Premium Features {#premium-features}
 
 Pagmugna og mga features nga andam pay bayran sa fitness studios:
 
@@ -68,14 +68,14 @@ Pagmugna og mga features nga andam pay bayran sa fitness studios:
 - **Fitness blog templates** -- pre-built content structures alang sa fitness content marketing
 - **Social media integration** -- automatic pag-post sa class schedules ug updates
 
-### Geographic Expansion
+### Geographic Expansion {#geographic-expansion}
 
 Kung nagsugod ka sa usa ka lugar lang (locally), palapad kini ngadto sa:
 
 - Ubang siyudad sa imong nasud
 - Ubang nasud (gamita ang [localization features](/user-guide/localization/translating) sa Ultimate Multisite aron suportahan ang daghang mga lenggwahe)
 
-## Option 2: Pagpalapad sa mga Niche nga Magkalapit
+## Option 2: Pagpalapad sa mga Niche nga Magkalapit {#option-2-expand-to-adjacent-niches}
 
 Ang proseso nga imong gisunod para sa fitness studios mahimong gamiton sa bisan unsang niche. Mas sayon ang imong ikaduhang niche kay aduna ka na og:
 
@@ -83,7 +83,7 @@ Ang proseso nga imong gisunod para sa fitness studios mahimong gamiton sa bisan 
 - Operational experience
 - Usa ka napatunayang playbook
 
-### Adjacent Niches to Fitness
+### Adjacent Niches to Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness and spa** -- mga massage therapist, day spas, wellness centers
 - **Sports clubs** -- amateur sports teams, leagues, recreational clubs
@@ -91,7 +91,7 @@ Ang proseso nga imong gisunod para sa fitness studios mahimong gamiton sa bisan 
 
 Kini nagpaambit og audience overlap sa fitness, busa ang imong marketing ug partnerships mahimong magpadayon.
 
-### Completely New Niches
+### Completely New Niches {#completely-new-niches}
 
 I-apply ang framework gikan sa Lesson 2 aron masusi ang bisan unsang niche:
 
@@ -108,7 +108,7 @@ Ang matag bag-ong niche nagkinahanglan og:
 
 Ang platform infrastructure, billing, ug operational processes magpabilin nga pareho.
 
-## Option 3: Pagmugna og Platform sa mga Platforms
+## Option 3: Pagmugna og Platform sa mga Platforms {#option-3-build-a-platform-of-platforms}
 
 Sa pagdako (at scale), mahimo kang nagpadagan og daghang niche brands sa usa ka Ultimate Multisite network:
 
@@ -118,11 +118,11 @@ Sa pagdako (at scale), mahimo kang nagpadagan og daghang niche brands sa usa ka 
 
 Ang matag brand adunay kaugalingon nga templates, plans, ug marketing, apan nagpaambit sila og infrastructure, billing, ug operational processes. Dinhi makalig-on ang ekonomiya sa Ultimate Multisite — usa ka platform, daghang mga sektor (verticals).
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Alang sa bug-os nga pagbulag tali sa niches, hunahunaa ang [Multi-Network addon](/addons/multinetwork) nga nagtugot kanimo sa pagpadagan og daghang WordPress networks gikan sa usa ka installation.
 
-## Option 4: Pagbaligya sa Negosyo
+## Option 4: Pagbaligya sa Negosyo {#option-4-sell-the-business}
 
 Ang usa ka niche website platform nga adunay padayon nga kita, ubos nga churn, ug klaro nga market position kay bililhon kaayong asset. Ang mga SaaS businesses kasagaran gibaligya sa 3-5x sa annual revenue.
 
@@ -134,7 +134,7 @@ Usa ka FitSite nga adunay 200 ka kustomer sa $89 ARPU:
 
 Kini dili garantisadong resulta, apan kini usa ka makatotohanon nga posibilidad alang sa maayo pagpadagan nga niche platform.
 
-## Unsa ang Imong Nakat-onan
+## Unsa ang Imong Nakat-onan {#what-you-have-learned}
 
 Gitudlo kanimo niining kurso ang usa ka *repeatable process*:
 
@@ -150,7 +150,7 @@ Gitudlo kanimo niining kurso ang usa ka *repeatable process*:
 
 Ang niche mao ang strategy. Ang platform mao ang tool. Ang Ultimate Multisite maoy naghimo nga posible ang tool. Ang imong pagsabot sa niche maoy naghatag niini og bili.
 
-## Sugdi Pagmugna
+## Sugdi Pagmugna {#start-building}
 
 Kung nagsunod ka sa FitSite, aduna kay usa ka nagadagan nga platform. Kung nabasa nimo hangtod aron makit-an ang kaugalingong niche, pagbalik sa [Lesson 2: Picking Your Niche](lesson-2-picking-your-niche) ug sugdi ang proseso para sa imong napili nga sektor (vertical).
 

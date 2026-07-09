@@ -3,28 +3,28 @@ title: REST API അവലോകനം
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API റഫറൻസ്
+# REST API റഫറൻസ് {#rest-api-reference}
 
-## അടിസ്ഥാന ക്രമീകരണം
+## അടിസ്ഥാന ക്രമീകരണം {#base-configuration}
 
 **അടിസ്ഥാന URL:** `{site_url}/wp-json/wu/v2/`
 **പ്രാമാണീകരണം:** API Key & രഹസ്യം (HTTP Basic Auth അല്ലെങ്കിൽ URL പാരാമീറ്ററുകൾ)
 
-## പ്രാമാണീകരണം
+## പ്രാമാണീകരണം {#authentication}
 
-### API പ്രവർത്തനക്ഷമമാക്കുക
+### API പ്രവർത്തനക്ഷമമാക്കുക {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ക്രെഡൻഷ്യലുകൾ നേടുക
+### API ക്രെഡൻഷ്യലുകൾ നേടുക {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### പ്രാമാണീകരണ രീതികൾ
+### പ്രാമാണീകരണ രീതികൾ {#authentication-methods}
 
 **HTTP Basic Auth (ശുപാർശ ചെയ്യുന്നത്):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## പ്രധാന എൻഡ്‌പോയിന്റുകൾ
+## പ്രധാന എൻഡ്‌പോയിന്റുകൾ {#core-endpoints}
 
-### 1. ഉപഭോക്താക്കളുടെ API
+### 1. ഉപഭോക്താക്കളുടെ API {#1-customers-api}
 
 **അടിസ്ഥാന റൂട്ട്:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. സൈറ്റുകളുടെ API
+### 2. സൈറ്റുകളുടെ API {#2-sites-api}
 
 **അടിസ്ഥാന റൂട്ട്:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. മെമ്പർഷിപ്പുകളുടെ API
+### 3. മെമ്പർഷിപ്പുകളുടെ API {#3-memberships-api}
 
 **അടിസ്ഥാന റൂട്ട്:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. ഉൽപ്പന്നങ്ങളുടെ API
+### 4. ഉൽപ്പന്നങ്ങളുടെ API {#4-products-api}
 
 **അടിസ്ഥാന റൂട്ട്:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. പേയ്‌മെന്റുകളുടെ API
+### 5. പേയ്‌മെന്റുകളുടെ API {#5-payments-api}
 
 **അടിസ്ഥാന റൂട്ട്:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ഡൊമെയ്‌നുകളുടെ API
+### 6. ഡൊമെയ്‌നുകളുടെ API {#6-domains-api}
 
 **അടിസ്ഥാന റൂട്ട്:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## രജിസ്ട്രേഷൻ എൻഡ്‌പോയിന്റ്
+## രജിസ്ട്രേഷൻ എൻഡ്‌പോയിന്റ് {#registration-endpoint}
 
 `/register` എൻഡ്‌പോയിന്റ് പൂർണ്ണമായ checkout/രജിസ്ട്രേഷൻ പ്രവാഹം നൽകുന്നു:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## സ്വതന്ത്ര ടെനന്റ് എൻഡ്‌പോയിന്റുകൾ
+## സ്വതന്ത്ര ടെനന്റ് എൻഡ്‌പോയിന്റുകൾ {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ഒറ്റപ്പെട്ട ടെനന്റുകൾ സൃഷ്ടിക്കാനും പരിശോധിക്കാനും സ്ഥിരീകരിക്കാനും ഉപയോഗിക്കുന്ന ഇന്റഗ്രേഷനുകൾക്കായി സ്വതന്ത്ര ടെനന്റ് REST പിന്തുണ ചേർക്കുന്നു.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` പ്രീ-ലോഞ്ച് തടസ്സമായി പരിഗണിക്കുക. സ്ഥിരീകരണ വിശദാംശങ്ങൾ പരിശോധിച്ച് ഡാറ്റാബേസ് ഹോസ്റ്റ് binding, queue, ഉപയോക്തൃ provisioning, അല്ലെങ്കിൽ റൂട്ടിംഗ് പ്രശ്നം പരിഹരിക്കുക. ശേഷം സ്ഥിരീകരണം വീണ്ടും ശ്രമിക്കുക.
 
-## പിശക് പ്രതികരണങ്ങൾ
+## പിശക് പ്രതികരണങ്ങൾ {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## പേജിനേഷനും ഫിൽട്ടറിംഗും
+## പേജിനേഷനും ഫിൽട്ടറിംഗും {#pagination-and-filtering}
 
 **ക്വറി പാരാമീറ്ററുകൾ:**
 ```http

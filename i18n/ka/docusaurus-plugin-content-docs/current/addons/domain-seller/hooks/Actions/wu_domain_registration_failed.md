@@ -4,11 +4,11 @@ title: ქმედება - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 ამოქმედდება დომენის რეგისტრაციის მცდელობის წარუმატებლად დასრულების შემდეგ.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 | $registration_data | `array&lt;string,mixed&gt;` | რეგისტრაციის მეტამონაცემები, მათ შორის status=failed და error_message. |
 | $error_message | `string` | ადამიანისთვის წაკითხვადი შეცდომის შეტყობინება რეგისტრატორისგან. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.0.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250)-ში, ხაზზე 1250

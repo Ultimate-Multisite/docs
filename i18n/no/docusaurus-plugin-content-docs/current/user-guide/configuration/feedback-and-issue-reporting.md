@@ -3,11 +3,11 @@ title: Kunde tilbakemeldinger og feilrapportering
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kunde-tilbakemeldinger og feilrapportering
+# Kunde-tilbakemeldinger og feilrapportering {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 introduserer et innebygd system for tilbakemeldinger og feilrapportering som lar sluttbrukere flagge lite nyttige svar og rapportere problemer direkte fra chat-grensesnittet. Dette systemet inkluderer samtykkeforvaltning, en automatisert rapporteringskommando og AI-assistert triage i bakgrunnen.
 
-## Tommel ned-knappen
+## Tommel ned-knappen {#thumbs-down-button}
 
 Hver melding sendt av AI-assistenten viser en **tommel ned** (👎)-knapp. Når en bruker klikker på den, kan de merke et svar som lite nyttig eller feil.
 
@@ -15,7 +15,7 @@ Hver melding sendt av AI-assistenten viser en **tommel ned** (👎)-knapp. Når 
 - Å klikke på den åpner **Samtykke-modal for tilbakemelding**.
 - Tilbakemeldingen knyttes til samtaletråden og den spesifikke meldingen.
 
-## Samtykke-modal for tilbakemelding
+## Samtykke-modal for tilbakemelding {#feedback-consent-modal}
 
 Når en bruker klikker på tommel ned-knappen, vises en samtykke-modal før data sendes. Modalvinduet:
 
@@ -26,13 +26,13 @@ Når en bruker klikker på tommel ned-knappen, vises en samtykke-modal før data
 
 Ingen tilbakemelding blir registrert før brukeren eksplisitt bekrefter.
 
-## Automatisk tilbakemeldingsbanner
+## Automatisk tilbakemeldingsbanner {#auto-prompt-feedback-banner}
 
 Ved slutten av en samtale kan assistenten vise et **automatisk tilbakemeldingsbanner** – en ikke-påtrengende melding som spør om økten var nyttig.
 
 Dette banneret vises automatisk basert på samtalelengde og utfallshypoteser. Det lenker til samme tilbakemeldingsflyt som tommel ned-knappen. Brukere kan lukke banneret uten å gi tilbakemelding.
 
-## /report-issue Slash-kommando
+## /report-issue Slash-kommando {#report-issue-slash-command}
 
 Brukere kan utløse tilbakemeldingsflyten direkte ved å skrive `/report-issue` i chat-inndatafeltet. Denne kommandoen:
 
@@ -42,7 +42,7 @@ Brukere kan utløse tilbakemeldingsflyten direkte ved å skrive `/report-issue` 
 
 `/report-issue`-kommandoen er tilgjengelig i alle chat-moduser (inline, flytende widget, fullskjerm).
 
-## AI-assistert triage
+## AI-assistert triage {#ai-assisted-triage}
 
 Sendte tilbakemeldinger sendes til et AI-triage-lag som:
 

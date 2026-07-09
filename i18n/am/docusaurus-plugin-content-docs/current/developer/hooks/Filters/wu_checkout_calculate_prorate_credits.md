@@ -4,20 +4,20 @@ title: Filter - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Filter: wu_checkout_calculate_prorate_credits
+# Filter: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
 
 የፕልጊን ገንቢዎች የክሬዲት ዋጋን እንዲቀይሩ ያስችላል።
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $credit | `int` | የክሬዲት መጠን። |
 | $cart | `self` | ይህ የካርት ነገር (object)። |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 በ[`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1287) በ1287ኛው መስመር ተገልጿል።

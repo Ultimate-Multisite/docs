@@ -1,22 +1,22 @@
 ---
 title: Hostinger (hPanel) integreerimine
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integreerimine
+# Hostinger (hPanel) Integreerimine {#hostinger-hpanel-integration}
 
-## Üldine ülevaade
+## Üldine ülevaade {#overview}
 
 Hostinger on populaarne veebhoostja, millel on moderni kontrollpaneel hPanel. Ultimate Multisite Hostinger integreerimine võimaldab automaatselt domeenid synkronida Ultimate Multisite ja Hostinger's hPanel vahel, võimaldades teil domeenide ülekirjeldusi ja alsubdomeeneid käsitsemist otse WordPress administ.
 
-## Funktsioonid
+## Funktsioonid {#features}
 
 - Automootne lisadomeenide loomine hPanelis
 - Automootne alsubdomeenide loomine hPanelis (subdomain multisite installatsioonide jaoks)
 - Domeeni eemaldamine, kui ülekirjeldusi eemaldatakse
 - Sujuv integreerimine Hostinger's domeenihaldus API-ga
 
-## nõuded
+## nõuded {#requirements}
 
 Hostinger integreerimise kasutamiseks vajad:
 
@@ -35,9 +35,9 @@ Valikult saate definitsiona ka:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Poold API-punkt
 ```
 
-## Seadistamise juhised
+## Seadistamise juhised {#setup-instructions}
 
-### 1. Generiige Hostinger API token
+### 1. Generiige Hostinger API token {#1-generate-your-hostinger-api-token}
 
 1. Logi sisse oma Hostinger kontole ja pääse hPanelile
 2. Minema **Account Settings** → **API Tokens** menüü läbi
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Poold API-pun
    - Subdomain management (Alsubdomeenihaldus)
 6. Kopya ja salvestage genereeritud token turvaliselt
 
-### 2. Leida oma konto ID
+### 2. Leida oma konto ID {#2-find-your-account-id}
 
 1. hPanelis minema **Account Settings** → **Account Information** läbi
 2. Teie konti ID on nähtav selle lehel
 3. Kopya ja salvestage see ID järgmiseks sammuks.
 
-### 3. Lisage konstantsid wp-config.php'le
+### 3. Lisage konstantsid wp-config.php'le {#3-add-constants-to-wp-configphp}
 
 Lisage järgmised konstantsid oma `wp-config.php` failile:
 
@@ -69,7 +69,7 @@ Kui teie Hostinger konto kasutab teise API-punkti, saate seda kohandada:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Integreerimise aktiveerimine
+### 4. Integreerimise aktiveerimine {#4-enable-the-integration}
 
 1. WordPress administratiivis osas minud **Ultimate Multisite > Settings** sekkundi
 2. Minuda **Domain Mapping** tabile
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Aktiveeri **Hostinger (hPanel)** integreerimise
 5. Klõpsake **Save Changes**
 
-## Kuidas see toimib
+## Kuidas see toimib {#how-it-works}
 
-### Lisandatud domeenid (Addon Domains)
+### Lisandatud domeenid (Addon Domains) {#addon-domains}
 
 Kui te mappate domeeni Ultimate Multisite'is:
 
@@ -87,7 +87,7 @@ Kui te mappate domeeni Ultimate Multisite'is:
 2. Domeen on konfiguritud viitama teie juurdirektoriumile
 3. Kui domeeni mappimist eemaldatakse, integreerimine eemaldab lisandud domeeni automaatselt hPanelist
 
-### Subdomäinid (Subdomains)
+### Subdomäinid (Subdomains) {#subdomains}
 
 Subdomääinide multisite installatsioonide jaoks, kui uus kont (site) luuakse:
 
@@ -95,7 +95,7 @@ Subdomääinide multisite installatsioonide jaoks, kui uus kont (site) luuakse:
 2. See läheb Hostingeri API-le ja lisab subdomääni
 3. Subdomääin on konfiguritud viitama teie juurdirektoriumile
 
-## Oluline märkused
+## Oluline märkused {#important-notes}
 
 - Integreerimine kasutab Hostingeri REST API-t kommunikatsiooniks kontoiga
 - Kui teil on domeenide ja subdomääinide haldamiseks vajalikud lubanded, peab teie API tokenil need.
@@ -108,24 +108,24 @@ Subdomääinide multisite installatsioonide jaoks, kui uus kont (site) luuakse:
 * Veenduge, et teie API tokenil on vajalikud lubanded domeeni haldamiseks.
 * Kontrollige, kas teie Hostinger konto on aktiivne ja korralikult toimimas.
 
-### Domeen ei ole lisatud
+### Domeen ei ole lisatud {#troubleshooting}
 
 * Kontrollige Ultimate Multisite logid vigu otsides.
 * Veenduge, et domeen ei ole juba Hostinger kontole lisatud.
 * Veenduge, et teie Hostinger kontel pole jõudnud oma lisadomeenide piiri.
 * Lõpetage kontrolli, et domeen on õigesti viidatud teie Hostinger nameserveritele.
 
-### SSL-sertifikaadi probleemid
+### SSL-sertifikaadi probleemid {#api-connection-issues}
 
 * Integraal ei halda SSL-sertifikaadide väljastamist.
 * Hostinger pakub SSL-sertifikaade tavaliselt tasuta AutoSSL abil.
 * Saate SSL-sertifikaade hallata otses hPanelis **SSL/TLS** menyuskonnas.
 * Alternatiivselt kasutage Let's Encrypti ja Hostingeri AutoSSL funktsiooni.
 
-## Tuge
+## Tuge {#domain-not-added}
 
 Lisainformatsioonide jaoks Hostingeri integraaliga on soovitatav viidata:
 
 * [Hostinger API Dokumentatsioon](https://support.hostinger.com/en/articles/4286-api-documentation)
-* [Ultimate Multisite Dokumentatsioon](/docs)
+* [Ultimate Multisite Dokumentatsioon](/)
 * [Ultimate Multisite Tuge](https://ultimatemultisite.com/support)

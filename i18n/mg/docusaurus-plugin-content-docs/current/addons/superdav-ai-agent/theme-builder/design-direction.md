@@ -3,17 +3,17 @@ title: Tari-dalana momba ny famolavolana
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Torolalan'ny Famolavolana
+# Torolalan'ny Famolavolana {#design-direction}
 
 Ny dingana **Torolalan'ny Famolavolana** dia mamela anao hijery, hanatsara, ary hamarana ny famolavolana hita maso an'ny theme-nao alohan'ny hamoronan'ny Theme Builder ny theme feno.
 
-## Topimaso
+## Topimaso {#overview}
 
 Rehefa vita ny Discovery Interview, Theme Builder dia mampiseho ny torolalan'ny famolavolanao miaraka amin'ny **fampisehoana topimaso desktop sy mobile**. Izany dia mamela anao hahita mazava tsara ny ho endriky ny famolavolanao amin'ny fitaovana samihafa alohan'ny hanekena ny theme.
 
-## Singan'ny Torolalan'ny Famolavolana
+## Singan'ny Torolalan'ny Famolavolana {#design-direction-components}
 
-### 1. Paleta Loko
+### 1. Paleta Loko {#1-color-palette}
 
 Ny rafitra lokon'ny theme-nao, ahitana:
 
@@ -23,7 +23,7 @@ Ny rafitra lokon'ny theme-nao, ahitana:
 - **Loko tsy miandany** — volondavenona sy fotsy ho an'ny lafika sy lahatsoratra
 - **Loko lahatsoratra** — loko fototry ny lahatsoratra mba ho mora vakina
 
-### 2. Tipografia
+### 2. Tipografia {#2-typography}
 
 Safidy endri-tsoratra ho an'ny:
 
@@ -33,14 +33,14 @@ Safidy endri-tsoratra ho an'ny:
 - **Haavon'ny tsipika** — elanelana eo anelanelan'ny tsipika mba ho mora vakina
 - **Havesatry ny endri-tsoratra** — fiovaovana matevina, mahazatra, ary maivana
 
-### 3. Firafitra sy Elanelana
+### 3. Firafitra sy Elanelana {#3-layout-and-spacing}
 
 - **Sakan'ny container** — sakany ambony indrindra ho an'ny votoaty
 - **Padding sy margins** — elanelana manodidina ny singa
 - **Rafitra grid** — firafitra andry ho an'ny famolavolana responsive
 - **Elanelan'ny singa** — halavirana eo amin'ny singa UI
 
-### 4. Singa Hita Maso
+### 4. Singa Hita Maso {#4-visual-elements}
 
 - **Fomban'ny bokotra** — famolavolana bokotra fototra, faharoa, ary fahatelo
 - **Famolavolana karatra** — firafitra ho an'ny sakana votoaty
@@ -48,9 +48,9 @@ Safidy endri-tsoratra ho an'ny:
 - **Sisiny sy aloka** — halalina hita maso malefaka
 - **Vokatry ny hover** — fandravahana toetry ny fifandraisana
 
-## Fampisehoana Topimaso
+## Fampisehoana Topimaso {#preview-rendering}
 
-### Topimaso Desktop
+### Topimaso Desktop {#desktop-preview}
 
 Ny topimaso desktop dia mampiseho ny famolavolanao amin'ny sakany feno (matetika 1200px na mihoatra):
 
@@ -59,7 +59,7 @@ Ny topimaso desktop dia mampiseho ny famolavolanao amin'ny sakany feno (matetika
 - Tipografia sy elanelana lehibe
 - Singa hita maso rehetra amin'ny habe feno
 
-### Topimaso Mobile
+### Topimaso Mobile {#mobile-preview}
 
 Ny topimaso mobile dia mampiseho ny famolavolanao amin'ny sakany mobile (matetika 375px):
 
@@ -68,7 +68,7 @@ Ny topimaso mobile dia mampiseho ny famolavolanao amin'ny sakany mobile (matetik
 - Tipografia sy elanelana namboarina
 - Haben'ny bokotra mora kitihina
 
-### Breakpoints Responsive
+### Breakpoints Responsive {#responsive-breakpoints}
 
 Theme Builder dia mamorona topimaso amin'ireto breakpoints ireto:
 
@@ -79,9 +79,9 @@ Theme Builder dia mamorona topimaso amin'ireto breakpoints ireto:
 | **Desktop** | 1200px | Desktop sakany feno |
 | **Large Desktop** | 1920px | Fampisehoana midadasika be |
 
-## Fanatsarana ny Famolavolanao
+## Fanatsarana ny Famolavolanao {#refining-your-design}
 
-### Fanovana
+### Fanovana {#making-adjustments}
 
 Azonao hatsaraina ny torolalan'ny famolavolanao amin'ny alalan'ny:
 
@@ -91,7 +91,7 @@ Azonao hatsaraina ny torolalan'ny famolavolanao amin'ny alalan'ny:
 4. **Fanavaozana firafitra** — ovao ny sakan'ny container sy ny andry grid
 5. **Fanamboarana singa** — ovao ny fomban'ny bokotra, famolavolana karatra, sns.
 
-### Fanavaozana Topimaso
+### Fanavaozana Topimaso {#preview-updates}
 
 Hita amin'ny fotoana tena izy ny fanovana:
 
@@ -100,7 +100,7 @@ Hita amin'ny fotoana tena izy ny fanovana:
 - Havaozina avokoa ny breakpoints responsive rehetra
 - Afaka mifamadika topimaso ianao hanamarinana ny fanovana
 
-### Fijery Fampitahana
+### Fijery Fampitahana {#comparison-view}
 
 Ampitahao ny torolalan'ny famolavolanao amin'ny:
 
@@ -108,7 +108,7 @@ Ampitahao ny torolalan'ny famolavolanao amin'ny:
 - **Famolavolan'ny mpifaninana** — ampitahao amin'ireo site aingam-panahy
 - **Dika teo aloha** — avereno amin'ny torolalan'ny famolavolana teo aloha
 
-## Fankatoavana ny Torolalan'ny Famolavolana
+## Fankatoavana ny Torolalan'ny Famolavolana {#design-direction-approval}
 
 Rehefa afa-po amin'ny famolavolanao ianao:
 
@@ -118,7 +118,7 @@ Rehefa afa-po amin'ny famolavolanao ianao:
 4. **Hamafiso ny firafitra** — zahao ny elanelana sy ny fampifanarahana
 5. **Ekeo ny famolavolana** — miroso amin'ny famoronana theme
 
-## Dingana Manaraka
+## Dingana Manaraka {#next-steps}
 
 Rehefa nankatoavinao ny torolalan'ny famolavolanao:
 
@@ -127,7 +127,7 @@ Rehefa nankatoavinao ny torolalan'ny famolavolanao:
 3. Afaka manamboatra bebe kokoa ianao amin'ny fampiasana ny WordPress customizer
 4. Mirosoa amin'ny [Menio Fandraisam-bahiny](./hospitality-menus.md) na endri-javatra hafa
 
-## Fomba Fanao Tsara Indrindra
+## Fomba Fanao Tsara Indrindra {#best-practices}
 
 - **Andramo amin'ny fitaovana tena izy** — ampiasao finday sy tablet tena izy raha azo atao
 - **Zahao ny fahamoram-pamakiana** — ataovy azo antoka fa mora vakina amin'ny habe rehetra ny lahatsoratra
@@ -135,30 +135,30 @@ Rehefa nankatoavinao ny torolalan'ny famolavolanao:
 - **Diniho ny performance** — hatsarao ny sary sy endri-tsoratra ho an'ny hafainganam-pandeha
 - **Manomàna ho an'ny votoaty** — ataovy azo antoka fa miasa amin'ny votoatinao tena izy ny firafitra
 
-## Famahana Olana
+## Famahana Olana {#troubleshooting}
 
-### Tsy Mivao ny Topimaso
+### Tsy Mivao ny Topimaso {#preview-not-updating}
 
 - Havaozy ny pejy
 - Diovy ny cache an'ny browser
 - Andramo browser hafa
 - Zahao ny fifandraisana internet
 
-### Hafa ny Fijerin'ny Loko
+### Hafa ny Fijerin'ny Loko {#colors-look-different}
 
 - Zahao ny fandrindrana lokon'ny monitor
 - Andramo amin'ny fitaovana samihafa
 - Hamafiso ny fifanoheran'ny loko amin'ny fitaovana accessibility
 - Diniho ny simulators fahajambana loko
 
-### Olana Tipografia
+### Olana Tipografia {#typography-issues}
 
 - Hamafiso fa mipetraka ny rakitra endri-tsoratra
 - Zahao ny haben'ny endri-tsoratra amin'ny breakpoints samihafa
 - Andramo amin'ny votoaty tena izy
 - Diniho ny halavan'ny tsipika mba ho mora vakina
 
-## Tahirin-kevitra Mifandraika
+## Tahirin-kevitra Mifandraika {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — manangona fampahalalana momba ny famolavolana
 - [Menio Fandraisam-bahiny](./hospitality-menus.md) — mamorona pejin-menio voarafitra

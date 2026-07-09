@@ -3,7 +3,7 @@ title: Réigiú an Account trí Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Register an account via Zapier
+# Event: Register an account via Zapier {#event-register-an-account-via-zapier}
 
 Iar a ardán [Integrating Ultimate Multisite with Zapier](zapier.md), táimid ag siúlacht ar chuid atáin a bheith ag úsáid de Zapier chun eolaisfeanna eile a dhéanamh i Ultimate Multisite ar fáil ar na gnáthacha agus ar na athrúcháin (triggers and events). Iar an ardán seo, beidh mé a chur in iúl conas a bheith ag cur isteach (integrate) appailíocht chuid tríú. Beidh mé ag úsáid Google Sheets mar spás data agus beidh mé ag cur an t-aithris sin i Ultimate Multisite chun rachmasán a dhéanamh.
 

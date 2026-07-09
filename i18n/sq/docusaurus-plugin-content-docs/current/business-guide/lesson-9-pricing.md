@@ -3,17 +3,17 @@ title: 'Mësimi 9: Vendosja e çmimeve për fitim'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Mësimi 9: Vendosja e çmimeve për fitim
+# Mësimi 9: Vendosja e çmimeve për fitim {#lesson-9-pricing-for-profit}
 
 Në Mësimin 5 vendosëm çmimet fillestare për planet e FitSite. Tani e përmirësojmë strategjinë e çmimeve me teknika që rrisin të ardhurat, nxisin përmirësimet e planit dhe ulin largimet e klientëve.
 
-## Ku e lamë
+## Ku e lamë {#where-we-left-off}
 
 FitSite ka plane, shabllone, checkout, branding dhe onboarding gati. Çmimet fillestare ishin $49/$99/$199 në muaj. Tani e bëjmë këtë çmim të punojë më fort.
 
-## Parimet e çmimeve për platforma të ngrohta
+## Parimet e çmimeve për platforma të ngrohta {#pricing-principles-for-niche-platforms}
 
-### Vendos çmimin sipas vlerës, jo kostos
+### Vendos çmimin sipas vlerës, jo kostos {#price-on-value-not-cost}
 
 Kostot e tua të hosting mund të jenë $5-$15 për site klienti. Kjo nuk do të thotë që çmimi yt duhet të jetë $20. Ti nuk po shet hosting. Ti po shet:
 
@@ -24,7 +24,7 @@ Kostot e tua të hosting mund të jenë $5-$15 për site klienti. Kjo nuk do të
 
 Vendos çmimin bazuar në vlerën që ofron, jo në koston për ta ofruar atë.
 
-### Krahasoje me alternativat
+### Krahasoje me alternativat {#anchor-to-alternatives}
 
 Kur një pronar studioje fitnesi vlerëson FitSite, ai e krahason me:
 
@@ -34,7 +34,7 @@ Kur një pronar studioje fitnesi vlerëson FitSite, ai e krahason me:
 
 Me $49-$199/muaj, FitSite është më i lirë se një developer, më i aftë se ndërtuesit gjenerikë dhe pafundësisht më i mirë se mungesa e një website.
 
-## Zbatimi i variacioneve të çmimeve
+## Zbatimi i variacioneve të çmimeve {#implementing-price-variations}
 
 Çmimet vjetore nxisin angazhimin dhe ulin largimet e klientëve. Shko te skeda **Price Variations** e secilit plan dhe shto opsione vjetore:
 
@@ -46,12 +46,12 @@ Me $49-$199/muaj, FitSite është më i lirë se një developer, më i aftë se 
 
 Shto një fushë **Period Selection** në formularin tënd të checkout që klientët të mund të kalojnë midis faturimit mujor dhe atij vjetor. Shih [Formularët e checkout](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Pse funksionojnë çmimet vjetore
+### Pse funksionojnë çmimet vjetore {#why-annual-pricing-works}
 
 - **Për ty**: Para paraprakisht, më pak largime (klientët që paguajnë vjetor kanë më pak gjasa të anulojnë në mes të periudhës)
 - **Për ta**: Kursime reale, parashikueshmëri buxheti
 
-## Tarifat e konfigurimit
+## Tarifat e konfigurimit {#setup-fees}
 
 Mendo për një tarifë konfigurimi njëherëshe për planet që përfshijnë konfigurim praktik:
 
@@ -61,7 +61,7 @@ Mendo për një tarifë konfigurimi njëherëshe për planet që përfshijnë ko
 
 Konfiguro tarifat e konfigurimit në seksionin e çmimeve të secilit plan. Shih [Krijimi i produktit tënd të parë me subscription](/user-guide/configuration/creating-your-first-subscription-product) për detaje.
 
-## Periudhat e provës
+## Periudhat e provës {#trial-periods}
 
 Ofrimi i një prove ul pengesat për regjistrim, por sjell rrezikun e moskonvertimit. Për FitSite:
 
@@ -70,11 +70,11 @@ Ofrimi i një prove ul pengesat për regjistrim, por sjell rrezikun e moskonvert
 
 Konfiguro provën në seksionin e çmimeve të planit Starter duke aktivizuar çelësin **Offer Trial** dhe duke vendosur kohëzgjatjen në 7 ditë.
 
-### Si t'i bësh provat të konvertojnë
+### Si t'i bësh provat të konvertojnë {#making-trials-convert}
 
 Një provë funksionon vetëm nëse klienti përjeton vlerë gjatë periudhës së provës. Sekuenca jote e onboarding (Mësimi 8) është kritike këtu -- email-et e mirëseardhjes duhet të jenë të programuara për të nxitur angazhim brenda dritares 7-ditore.
 
-## Kodet e zbritjes
+## Kodet e zbritjes {#discount-codes}
 
 Krijo kode strategjike zbritjeje për qëllime specifike:
 
@@ -88,7 +88,7 @@ Shko te **Ultimate Multisite > Discount Codes** për t'i krijuar këto. Shih [Kr
 Zbritjet duhet të jenë mjete strategjike, jo elemente të përhershme. Nëse të gjithë marrin zbritje, ajo nuk është zbritje -- është çmimi yt real. Përdori për fushata specifike, referime dhe promovime me kohë të kufizuar.
 :::
 
-## Trajtimi i taksave
+## Trajtimi i taksave {#tax-handling}
 
 Nëse operon në një juridiksion që kërkon mbledhje taksash:
 
@@ -98,7 +98,7 @@ Nëse operon në një juridiksion që kërkon mbledhje taksash:
 
 Shih [Trajtimi i taksave](/user-guide/payment-gateways/tax-handling) për konfigurim të detajuar. Nëse u shërben klientëve ndërkombëtarisht, merr parasysh [addon-in VAT](/addons/vat) për përputhshmëri me BE-në.
 
-## Rishikimi i çmimeve të tua
+## Rishikimi i çmimeve të tua {#reviewing-your-pricing}
 
 Pas lançimit, rishiko çmimet çdo tremujor. Shiko:
 
@@ -107,7 +107,7 @@ Pas lançimit, rishiko çmimet çdo tremujor. Shiko:
 - **Largimi i klientëve sipas planit**: Nëse klientët vjetorë largohen më pak, shtyji më fort çmimet vjetore
 - **Çmimet e konkurrentëve**: Sa po tarifojnë alternativat? A je pozicionuar saktë?
 
-## FitSite Network deri tani
+## FitSite Network deri tani {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Çfarë ndërtuam në këtë mësim
+## Çfarë ndërtuam në këtë mësim {#what-we-built-this-lesson}
 
 - **Çmimi vjetor** me zbritje 20% për të nxitur angazhimin
 - **Tarifat e konfigurimit** në nivelet më të larta për të mbuluar përpjekjen e onboarding-ut

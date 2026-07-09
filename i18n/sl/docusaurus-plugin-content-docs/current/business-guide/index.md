@@ -3,13 +3,13 @@ title: Zgradite podjetje z nišnimi spletnimi mesti
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Zgradite nišno podjetje za spletna mesta z Ultimate Multisite
+# Zgradite nišno podjetje za spletna mesta z Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Večina ljudi, ki poskuša prodajati spletna mesta, tekmuje s ceno proti Wix, Squarespace in tisočim freelancerjem. Izgubijo. Tisti, ki zmagajo, izberejo specifično občinstvo, zgradijo rešitev, prilagojeno temu občinstvu, in zaračunajo vrednost, ki jo dostavijo.
 
 Ta tečaj vas nauči, kako narediti natanko to z uporabo Ultimate Multisite.
 
-## Kaj boste zgradili
+## Kaj boste zgradili {#what-you-will-build}
 
 Skozi ta tečaj boste zgradili resnično, delujoče omrežje z imenom **FitSite** -- platformo za spletna mesta, zgrajeno posebej za fitnes studie, osebne trenerje in lastnike telovadnic.
 
@@ -23,7 +23,7 @@ Do zadnje lekcije bo FitSite popolna nišna platforma z:
 
 Sledili boste korak za korakom, na koncu pa boste imeli delujočo platformo in znanje, kako postopek ponoviti za katero koli nišo, ki jo izberete.
 
-## Zakaj fitnes studii?
+## Zakaj fitnes studii? {#why-fitness-studios}
 
 Potrebovali smo konkreten primer, ki mu lahko sledi vsak. Fitnes studii so primerni, ker:
 
@@ -34,7 +34,7 @@ Potrebovali smo konkreten primer, ki mu lahko sledi vsak. Fitnes studii so prime
 
 Vse, kar se naučite pri gradnji FitSite, se neposredno uporablja za katero koli nišo, ki jo izberete: restavracije, nepremičninske agente, odvetniške pisarne, cerkve, obrtne izvajalce ali katero koli drugo vertikalo.
 
-## Struktura tečaja
+## Struktura tečaja {#course-structure}
 
 Vsaka lekcija predstavi en koncept, razloži, zakaj je pomemben, in vas vodi skozi njegovo implementacijo v omrežju FitSite. Vsaka lekcija gradi na prejšnji.
 
@@ -55,7 +55,7 @@ Vsaka lekcija predstavi en koncept, razloži, zakaj je pomemben, in vas vodi sko
 | [13. Širitev](lesson-13-growth) | Rast od prvih strank do pravega podjetja | Strategija rasti in avtomatizacije FitSite |
 | [14. Kaj sledi](lesson-14-whats-next) | Širitev na sosednje niše in nove priložnosti | Vaš načrt poti onkraj FitSite |
 
-## Predpogoji
+## Predpogoji {#prerequisites}
 
 - Namestitev WordPress Multisite (ali pripravljenost, da jo nastavite)
 - Aktivna licenca Ultimate Multisite
@@ -63,6 +63,6 @@ Vsaka lekcija predstavi en koncept, razloži, zakaj je pomemben, in vas vodi sko
 
 Programiranje ni potrebno. Če Ultimate Multisite še nikoli niste uporabljali, je to v redu -- Lekcija 3 se začne s svežo namestitvijo.
 
-## Ste pripravljeni?
+## Ste pripravljeni? {#ready}
 
 Začnite z [Lekcijo 1: Zakaj niša zmaga](lesson-1-why-niche).

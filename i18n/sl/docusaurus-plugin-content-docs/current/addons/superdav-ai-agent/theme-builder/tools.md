@@ -3,17 +3,17 @@ title: Orodja in konfiguracija
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Orodja in konfiguracija
+# Orodja in konfiguracija {#tools-and-configuration}
 
 Theme Builder uporablja nabor orodij za analizo, oblikovanje in izdelavo vašega WordPress spletnega mesta. V različici 1.16.0 je **sd-ai-agent/site-scrape zdaj orodje Tier 1**, zato je privzeto na voljo v Theme Builder. Superdav AI Agent v1.18.0 uvaja tudi ločeno distribuiran napredni spremljevalni paket za zaupanja vredne razvijalske poteke dela; ta orodja niso del osnovnega paketa WordPress.org in jih je treba namestiti ter pooblastiti ločeno.
 
-## Razpoložljiva orodja
+## Razpoložljiva orodja {#available-tools}
 
-### Orodja Tier 1 (vedno na voljo)
+### Orodja Tier 1 (vedno na voljo) {#tier-1-tools-always-available}
 
 Orodja Tier 1 so privzeto na voljo v Theme Builder brez dodatne konfiguracije.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Namen:** Analiza obstoječih spletnih mest za pridobivanje oblikovalskega navdiha, strukture vsebine in funkcionalnosti.
 
@@ -51,11 +51,11 @@ Analiziraj oblikovanje example.com in ga uporabi kot navdih za moje spletno mest
 - Spletna mesta z veliko JavaScripta imajo lahko omejeno analizo
 - Analiza velikih spletnih mest lahko traja dlje
 
-### Orodja Tier 2 (izbirno)
+### Orodja Tier 2 (izbirno) {#tier-2-tools-optional}
 
 Orodja Tier 2 so na voljo, ko so izrecno omogočena v nastavitvah Theme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
 Zagotavlja podrobne metrike zmogljivosti:
 
@@ -65,7 +65,7 @@ Zagotavlja podrobne metrike zmogljivosti:
 - Oceno dostopnosti
 - Oceno najboljših praks
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
 Analizira in predlaga izboljšave za:
 
@@ -75,11 +75,11 @@ Analizira in predlaga izboljšave za:
 - Strukturo vsebine
 - Postavitev pozivov k dejanju
 
-### Orodja Tier 3 (Premium)
+### Orodja Tier 3 (Premium) {#tier-3-tools-premium}
 
 Orodja Tier 3 zahtevajo dodatno konfiguracijo ali premium funkcije.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Ustvarja vsebino za:
 
@@ -89,7 +89,7 @@ Ustvarja vsebino za:
 - Meta opise
 - Besedilo pozivov k dejanju
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
 Zagotavlja napredne zmožnosti oblikovanja:
 
@@ -99,7 +99,7 @@ Zagotavlja napredne zmožnosti oblikovanja:
 - Napredno teorijo barv
 - Optimizacijo tipografije
 
-### Napredna spremljevalna orodja (ločen paket)
+### Napredna spremljevalna orodja (ločen paket) {#advanced-companion-tools-separate-package}
 
 Napredni spremljevalni paket se distribuira ločeno od osnovne izdaje Superdav AI Agent. Namenjen je zaupanja vrednim razvijalskim okoljem in okoljem lastnikov spletnih mest, kjer administratorji agentu izrecno dovolijo uporabo orodij z velikim vplivom.
 
@@ -116,9 +116,9 @@ Napredne spremljevalne zmožnosti lahko vključujejo:
 
 Teh ne dokumentirajte kot splošno razpoložljivih orodij Theme Builder za vsako namestitev. Na voljo so samo, ko je napredni spremljevalni paket nameščen, omogočen in omejen na zaupanja vredne administratorje.
 
-## Konfiguracija orodij
+## Konfiguracija orodij {#tool-configuration}
 
-### Omogočanje orodij
+### Omogočanje orodij {#enabling-tools}
 
 Za omogočanje dodatnih orodij v Theme Builder:
 
@@ -127,7 +127,7 @@ Za omogočanje dodatnih orodij v Theme Builder:
 3. Po potrebi vklopite/izklopite orodja
 4. Shranite nastavitve
 
-### Dovoljenja orodij
+### Dovoljenja orodij {#tool-permissions}
 
 Nekatera orodja zahtevajo dovoljenja:
 
@@ -137,7 +137,7 @@ Nekatera orodja zahtevajo dovoljenja:
 - **Napredne funkcije** — lahko zahtevajo premium naročnino
 - **Napredna spremljevalna orodja** — zahtevajo ločeno distribuiran napredni paket in izrecno zaupanje administratorja
 
-### API ključi in poverilnice
+### API ključi in poverilnice {#api-keys-and-credentials}
 
 Konfigurirajte API ključe za orodja, ki jih zahtevajo:
 
@@ -146,13 +146,13 @@ Konfigurirajte API ključe za orodja, ki jih zahtevajo:
 3. Preizkusite povezavo
 4. Varno shranite
 
-### Namestitev naprednega spremljevalnega paketa
+### Namestitev naprednega spremljevalnega paketa {#installing-the-advanced-companion-package}
 
 Napredni spremljevalni paket je izdan ločeno od osnovnega ZIP paketa WordPress.org. Namestite ga samo iz uradnega distribucijskega kanala projekta za izdajo, nato omejite dostop na zaupanja vredne administratorje. Preden na produkcijskem spletnem mestu omogočite orodja datotečnega sistema, podatkovne baze, WP-CLI, REST dispečerja, gradnje pluginov, upravljanja uporabnikov ali primerjalnih preizkusov, preglejte mehanizme človeške odobritve in obnašanje Git posnetkov.
 
-## Uporaba sd-ai-agent/site-scrape
+## Uporaba sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Osnovna uporaba
+### Osnovna uporaba {#basic-usage}
 
 Prosite Theme Builder, naj analizira spletno mesto:
 
@@ -161,7 +161,7 @@ Analiziraj oblikovanje spletnega mesta mojega konkurenta na competitor.com
 in predlagaj oblikovalske izboljšave za moje spletno mesto.
 ```
 
-### Specifična analiza
+### Specifična analiza {#specific-analysis}
 
 Zahtevajte specifične vrste analize:
 
@@ -179,7 +179,7 @@ Preveri mobilno prilagodljivost example.com in zagotovi, da je moje spletno mest
 enako prilagodljivo.
 ```
 
-### Primerjalna analiza
+### Primerjalna analiza {#comparison-analysis}
 
 Primerjajte več spletnih mest:
 
@@ -188,22 +188,22 @@ Primerjaj oblikovanje site1.com in site2.com ter ustvari oblikovanje,
 ki združuje najboljše elemente obeh.
 ```
 
-## Omejitve in premisleki glede orodij
+## Omejitve in premisleki glede orodij {#tool-limitations-and-considerations}
 
-### Omejevanje hitrosti
+### Omejevanje hitrosti {#rate-limiting}
 
 - Scraping je omejen po hitrosti, da se prepreči preobremenitev strežnika
 - Več zahtev na isto spletno mesto je lahko upočasnjenih
 - Analiza velikih spletnih mest lahko traja dlje
 
-### Točnost vsebine
+### Točnost vsebine {#content-accuracy}
 
 - Dinamična vsebina morda ne bo v celoti zajeta
 - Vsebina, upodobljena z JavaScript, je lahko nepopolna
 - Podatki v realnem času morda ne bodo prikazani
 - Nekatera vsebina je lahko za plačilnimi zidovi
 
-### Pravne in etične zahteve
+### Pravne in etične zahteve {#legal-and-ethical-considerations}
 
 - Spoštujte robots.txt in pravilnike spletnega mesta
 - Ne scrapeajte avtorsko zaščitene vsebine za reprodukcijo
@@ -211,16 +211,16 @@ ki združuje najboljše elemente obeh.
 - Preverite, ali imate pravice za uporabo izvlečene vsebine
 - Upoštevajte pogoje storitve analiziranih spletnih mest
 
-### Vpliv na zmogljivost
+### Vpliv na zmogljivost {#performance-impact}
 
 - Scraping velikih spletnih mest lahko traja nekaj časa
 - Več hkratnih scrapingov je lahko počasnejših
 - Omrežna povezljivost vpliva na hitrost
 - Veliki nabori podatkov lahko zahtevajo več obdelave
 
-## Najboljše prakse
+## Najboljše prakse {#best-practices}
 
-### Uporaba analize spletnega mesta
+### Uporaba analize spletnega mesta {#using-site-analysis}
 
 1. **Analizirajte več spletnih mest** — zberite navdih iz več virov
 2. **Osredotočite se na strukturo** — spoznajte vzorce postavitve in organizacije
@@ -228,7 +228,7 @@ ki združuje najboljše elemente obeh.
 4. **Preučite tipografijo** — prepoznajte kombinacije pisav, ki so vam všeč
 5. **Preglejte navigacijo** — razumite organizacijo menija
 
-### Etični scraping
+### Etični scraping {#ethical-scraping}
 
 1. **Spoštujte robots.txt** — upoštevajte smernice spletnega mesta
 2. **Ne kopirajte vsebine** — analizo uporabite samo za navdih
@@ -236,7 +236,7 @@ ki združuje najboljše elemente obeh.
 4. **Navedite vire** — priznajte vire navdiha
 5. **Upoštevajte pogoje** — ravnajte v skladu s pogoji storitve spletnega mesta
 
-### Povečanje učinkovitosti orodja
+### Povečanje učinkovitosti orodja {#maximizing-tool-effectiveness}
 
 1. **Bodite specifični** — zahtevajte določene vrste analize
 2. **Zagotovite kontekst** — pojasnite namen svojega spletnega mesta
@@ -244,9 +244,9 @@ ki združuje najboljše elemente obeh.
 4. **Iterirajte** — izpopolnjujte na podlagi rezultatov
 5. **Kombinirajte orodja** — uporabite več orodij za celovito analizo
 
-## Odpravljanje težav
+## Odpravljanje težav {#troubleshooting}
 
-### Spletnega mesta ni mogoče scrapeati
+### Spletnega mesta ni mogoče scrapeati {#site-wont-scrape}
 
 - Preverite, ali je spletno mesto javno dostopno
 - Preverite, ali robots.txt dovoljuje scraping
@@ -254,7 +254,7 @@ ki združuje najboljše elemente obeh.
 - Preverite internetno povezavo
 - Če se težava nadaljuje, se obrnite na podporo
 
-### Nepopolna analiza
+### Nepopolna analiza {#incomplete-analysis}
 
 - Spletno mesto ima lahko dinamično vsebino
 - JavaScript morda ni v celoti upodobljen
@@ -262,7 +262,7 @@ ki združuje najboljše elemente obeh.
 - Namesto tega poskusite analizirati določene strani
 - Zahtevajte določene vrste analize
 
-### Počasna zmogljivost
+### Počasna zmogljivost {#slow-performance}
 
 - Analiza velikih spletnih mest traja dlje
 - Več hkratnih scrapingov je počasnejših
@@ -270,7 +270,7 @@ ki združuje najboljše elemente obeh.
 - Poskusite v urah manjše obremenitve
 - Najprej analizirajte manjše razdelke
 
-## Povezana dokumentacija
+## Povezana dokumentacija {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — zberite informacije o oblikovanju
 - [Design Direction](./design-direction.md) — izpopolnite svoje oblikovanje

@@ -4,14 +4,14 @@ title: Action - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Action: wp_ultimo_gocardless_activation
+# Action: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
 
 Cho phép các thành phần khác của plugin gắn các hàm/logic cần chạy khi plugin được kích hoạt.
 
-### Từ phiên bản
+### Từ phiên bản {#since}
 
 - 1.9.6
 
-### Nguồn
+### Nguồn {#source}
 
 Được định nghĩa tại [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/class-hooks.php#L83) ở dòng 83.

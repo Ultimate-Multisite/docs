@@ -4,11 +4,11 @@ title: कार्य - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# कार्य: wu_domain_registration_failed
+# कार्य: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 डोमेन दर्ता प्रयास असफल भएपछि चल्छ।
 
-## प्यारामिटरहरू
+## प्यारामिटरहरू {#parameters}
 
 | नाम | प्रकार | विवरण |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 | $registration_data | `array&lt;string,mixed&gt;` | status=failed र error_message समावेश गर्ने दर्ता मेटाडेटा। |
 | $error_message | `string` | रजिस्ट्रारबाट आएको मानव-पठनीय त्रुटि सन्देश। |
 
-### देखि
+### देखि {#since}
 
 - 2.0.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) मा लाइन 1250 मा परिभाषित गरिएको छ।

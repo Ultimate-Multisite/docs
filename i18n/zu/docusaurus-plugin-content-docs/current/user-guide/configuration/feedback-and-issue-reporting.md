@@ -3,11 +3,11 @@ title: Impendulo yamakhasimende & Ukubika izinkinga
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Impendulo Yamakhasimende Nokubika Izinkinga
+# Impendulo Yamakhasimende Nokubika Izinkinga {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 yethula uhlelo olwakhelwe ngaphakathi lwempendulo nokubika izinkinga oluvumela abasebenzisi bokugcina ukumaka izimpendulo ezingasizi nokubika izinkinga ngqo kusixhumi sengxoxo. Lolu hlelo luhlanganisa ukuphathwa kwemvume, umyalo wokubika ozenzakalelayo, kanye nokuhlunga okusizwa yi-AI ohlangothini lwangemuva.
 
-## Inkinobho Yesithupha-Phansi
+## Inkinobho Yesithupha-Phansi {#thumbs-down-button}
 
 Wonke umyalezo othunyelwa umsizi we-AI ubonisa inkinobho **yesithupha-phansi** (👎). Lapho umsebenzisi eyichofoza, angamaka impendulo njengengasizi noma engalungile.
 
@@ -15,7 +15,7 @@ Wonke umyalezo othunyelwa umsizi we-AI ubonisa inkinobho **yesithupha-phansi** (
 - Ukuyichofoza kuvula **Iwindi Lemvume Yempendulo**.
 - Impendulo ihlotshaniswa nochungechunge lwengxoxo kanye nomyalezo othile.
 
-## Iwindi Lemvume Yempendulo
+## Iwindi Lemvume Yempendulo {#feedback-consent-modal}
 
 Lapho umsebenzisi echofoza inkinobho yesithupha-phansi, kuvela iwindi lemvume ngaphambi kokuba kuthunyelwe noma iyiphi idatha. Iwindi:
 
@@ -26,13 +26,13 @@ Lapho umsebenzisi echofoza inkinobho yesithupha-phansi, kuvela iwindi lemvume ng
 
 Ayikho impendulo erekhodwayo kuze kube yilapho umsebenzisi eqinisekisa ngokusobala.
 
-## Isibhengezo Sempendulo Esizivelela Ngokuzenzakalelayo
+## Isibhengezo Sempendulo Esizivelela Ngokuzenzakalelayo {#auto-prompt-feedback-banner}
 
 Ekupheleni kwengxoxo, umsizi angabonisa **isibhengezo sempendulo esizivelela ngokuzenzakalelayo** — umyalezo ongaphazamisi obuza ukuthi iseshini ibisiza yini.
 
 Lesi sibhengezo sivela ngokuzenzakalelayo ngokusekelwe kubude bengxoxo nasekuqageleni komphumela. Sixhumanisa nokugeleza kwempendulo okufanayo nenkinobho yesithupha-phansi. Abasebenzisi bangasivala isibhengezo ngaphandle kokunikeza impendulo.
 
-## Umyalo we-Slash /report-issue
+## Umyalo we-Slash /report-issue {#report-issue-slash-command}
 
 Abasebenzisi bangavusa ukugeleza kwempendulo ngokuqondile ngokuthayipha `/report-issue` kokufakwayo kwengxoxo. Lo myalo:
 
@@ -42,7 +42,7 @@ Abasebenzisi bangavusa ukugeleza kwempendulo ngokuqondile ngokuthayipha `/report
 
 Umyalo othi `/report-issue` uyatholakala kuzo zonke izindlela zengxoxo (ngaphakathi komugqa, iwidijethi elintantayo, isikrini esigcwele).
 
-## Ukuhlunga Okusizwa yi-AI
+## Ukuhlunga Okusizwa yi-AI {#ai-assisted-triage}
 
 Impendulo ethunyelwe idluliselwa kusendlalelo sokuhlunga se-AI esenza lokhu:
 

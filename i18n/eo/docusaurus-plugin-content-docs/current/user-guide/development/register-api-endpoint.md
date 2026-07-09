@@ -3,7 +3,7 @@ title: Registri API-punktan
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# La API-ponto de registri Ultima Multisite
+# La API-ponto de registri Ultima Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 En ĉi tiu tutoriavi vi lernos, kiel uzi la API-ponto `/register` de Ultimate Multisite por krei la tutan proceson de enontigo (onboarding) por novan klienton en via retoj kaj kiel faru tio per Zapier.
 
@@ -29,11 +29,11 @@ Selekton **Enable API** kaj akiri vian API kredencojn.
 
 Sekure, esploru la punto kaj tiam kreu agion de registriĝon en Zapier.
 
-## Parametroj de la korpo de la punto (Endpoint body parameters)
+## Parametroj de la korpo de la punto (Endpoint body parameters) {#endpoint-body-parameters}
 
 Jen supraĵo de la minimuma informacio, kiun vi bezonas envi por la punto. En la fini de ĉi tiu artikolo vi trovos la kompletan vokon.
 
-### Kliento (Customer)
+### Kliento (Customer) {#customer}
 
 Tio estas la informacio necesa por la proceso de kreado de la Uzo (User) kaj la Kliento en Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Eble estas posible enviuri la ID de la kliento kreita en via rete. Se necedas al
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membereco**
+### **Membereco** {#membership}
 
 La única informo necesa ni ĉi tie en ĉi tiu objekto estas Membeko Statuso.
 
 "membership" { "status" : "string", // unu el "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produktoj**
+### **Produktoj** {#products}
 
 Produktoj estas donita per array kun 1 aŭ pli ID de produktoj de via rete. Atendigu, ĉi tiu endpoint ne kreas produktojn. Kontu la dokumentadon de Ultimate Multisite por pli bone kompreni la endpoint de kreo de produktoj.
 
 **"products" : [1,2],**
 
-### Pagamento
+### Pagamento {#payment}
 
 Kiel kun Membeko, ni bezonas nur la statuson.
 
 **"payment" { "status" : "string", // unu el "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Sito
+### Sito {#site}
 
 E por fermi la korpon ni bezonas la URL kaj Titolo de la sito, amba tied en la Objekto Sito.
 
@@ -69,13 +69,13 @@ E por fermi la korpon ni bezonas la URL kaj Titolo de la sito, amba tied en la O
 
 La returo de la register endpoint sera array kun la novkreita Membeko informo.
 
-## Krei akcion en Zapier
+## Krei akcion en Zapier {#creating-an-action-in-zapier}
 
 Con la introdukto de ĉi tiu nova kaj pli robusa endpoint de kreo de konto, vi ankaŭ alcastas novan akcion en Zapier.
 
 Ĉu vi scias kiel uzui kaj ĝui ĉion, kion la nova versio de Zapier ofertas? Rian pli lerni ĉi tie. (link?)
 
-### Krei akcion
+### Krei akcion {#creating-an-action}
 
 Por ke pli bone ilustri la juten kiel u uzui la registration endpoint kun Zapier, ni kreons integracion kun Google Forms. Kote iu forma estas plenumi kaj la informoj estas salvita en la respondo-tablo de la forma, nova membraĵo sera kreita en la retoj Ultimate Multisite ĉiam kiam tiu forma estas plenita.
 
@@ -105,7 +105,7 @@ Kun vi la laŭ informoj, procedu al fini testoj. Sur la última ekrano vi povas 
 
 Testu vian novan Zap, kaj ĝi devas fini sukcese. Se iu eraro okazus, kontrolu ĉiuj kampojn kaj ĉu ili wirdi enviita ĝuste. Kiel ekzistas multaj informoj, certaj thing- povas pasigi sen notado.
 
-### Kompleta parametroj de endpointo
+### Kompleta parametroj de endpointo {#complete-endpoint-parameters}
 
 Jen la kompleta vokado kaj ĉiuj la posibilitoj de kampoj, kiuj povas esti enviitaj.
 

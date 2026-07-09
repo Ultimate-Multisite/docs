@@ -3,11 +3,11 @@ title: Webhook-Verarbeitung
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-Verarbeitung
+# Webhook-Verarbeitung {#webhook-handling}
 
 Erstellen Sie benutzerdefinierte Webhook-Endpunkte, um Ereignisse von externen Diensten zu empfangen und Daten mit Ultimate Multisite zu synchronisieren.
 
-## Benutzerdefinierter Webhook-Endpunkt
+## Benutzerdefinierter Webhook-Endpunkt {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Sicherheitsüberlegungen
+## Sicherheitsüberlegungen {#security-considerations}
 
 - Verifizieren Sie immer Webhook-Signaturen mit HMAC oder einem gemeinsamen Geheimnis
 - Verwenden Sie ein `permission_callback` auf Ihrer REST-Route — setzen Sie es niemals in der Produktion auf `__return_true`

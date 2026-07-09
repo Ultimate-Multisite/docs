@@ -3,9 +3,9 @@ title: Migreren vanaf V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migreren vanaf V1
+# Migreren vanaf V1 {#migrating-from-v1}
 
-## Ultimate Multisite is overgestapt van de oorspronkelijke 1.x-reeks releases naar de 2.x-reeks releases.
+## Ultimate Multisite is overgestapt van de oorspronkelijke 1.x-reeks releases naar de 2.x-reeks releases. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versie 2.0 en hoger is een volledige herschrijving van de codebase, wat betekent dat er heel weinig wordt gedeeld tussen de oude versie en de nieuwe. Daarom moeten je gegevens bij het upgraden van 1.x naar 2.x worden gemigreerd naar een indeling die de nieuwe versies kunnen begrijpen.
 
@@ -15,7 +15,7 @@ Deze les behandelt hoe de migrator werkt, wat je moet doen bij fouten en hoe je 
 
 _**BELANGRIJK: Voordat je begint met upgraden van versie 1.x naar versie 2.0, zorg ervoor dat je een back-up maakt van de database van je site**_
 
-## Eerste stappen
+## Eerste stappen {#first-steps}
 
 De eerste stap is om het .zip-bestand van de plug-in te downloaden en versie 2.0 te installeren op je netwerkbeheerdersdashboard.
 
@@ -51,7 +51,7 @@ Na de licentieactivering kun je de daadwerkelijke installatie starten door op de
 
 <!-- Screenshot niet beschikbaar: Installatiepagina die toont wat wordt bijgewerkt met knop Installeren -->
 
-## Nu de migratie
+## Nu de migratie {#now-the-migration}
 
 De migrator heeft een ingebouwde veiligheidsfunctie waarbij je hele multisite wordt gecontroleerd om ervoor te zorgen dat al je Ultimate Multisite-gegevens zonder problemen kunnen worden gemigreerd. Klik op de knop **Controle uitvoeren** om het proces te starten.
 
@@ -59,13 +59,13 @@ De migrator heeft een ingebouwde veiligheidsfunctie waarbij je hele multisite wo
 
 Na het uitvoeren van de controle zijn er twee mogelijkheden: het resultaat kan **met** een fout of **zonder fout** zijn.
 
-### Met fout
+### Met fout {#with-error}
 
 Als je een foutmelding krijgt, moet je contact opnemen met ons ondersteuningsteam zodat zij je kunnen helpen de fout te herstellen. Zorg ervoor dat je **het foutenlogboek meestuurt** wanneer je een ticket aanmaakt. Je kunt het logboek downloaden of op de link klikken met de tekst contact opnemen met ons ondersteuningsteam. Dit opent de helpwidget aan de rechterkant van je pagina met de velden vooraf voor je ingevuld, inclusief de foutenlogboeken onder de beschrijving.
 
 _**Omdat het systeem een fout heeft gevonden, kun je niet doorgaan met migreren naar versie 2.0. Je kunt dan teruggaan naar versie 1.x om je netwerk te blijven draaien totdat de fout is opgelost.**_
 
-### Zonder fout
+### Zonder fout {#without-error}
 
 Als het systeem geen fout vindt, zie je een succesbericht en onderaan een knop **Migreren** waarmee je kunt doorgaan met de migratie. Op deze pagina word je eraan herinnerd een back-up van je database te maken voordat je verdergaat, wat we sterk aanbevelen. Klik op **Migreren** als je al een back-up hebt.
 

@@ -3,11 +3,11 @@ title: Gestione Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gestione dei Webhook
+# Gestione dei Webhook {#webhook-handling}
 
 Crea endpoint webhook personalizzati per ricevere eventi da servizi esterni e sincronizzare i dati con Ultimate Multisite.
 
-## Endpoint Webhook Personalizzato
+## Endpoint Webhook Personalizzato {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Considerazioni sulla Sicurezza
+## Considerazioni sulla Sicurezza {#security-considerations}
 
 - Verifica sempre le firme dei webhook utilizzando HMAC o un segreto condiviso
 - Utilizza un `permission_callback` sulla tua rotta REST — non impostarlo mai su `__return_true` in produzione

@@ -3,7 +3,7 @@ title: Tez-tez verilən suallar
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Tez-tez Verilən Suallar
+# Tez-tez Verilən Suallar {#frequently-asked-questions}
 
 Dəstək sorğuları zamanı tez-tez rast gəlinən bəzi **Tez-tez Verilən Suallar** bunlardır.
 

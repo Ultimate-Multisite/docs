@@ -3,11 +3,11 @@ title: Desenvolupament de passarel·la personalitzada
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Desenvolupament de Custom Gateway
+# Desenvolupament de Custom Gateway {#custom-gateway-development}
 
 Pots crear passarel·les de pagament personalitzades ampliant la classe `Base_Gateway`.
 
-## Classe de Gateway
+## Classe de Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registra el Gateway
+## Registra el Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Mètodes clau
+## Mètodes clau {#key-methods}
 
 | Mètode | Propòsit |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Gestiona sol·licituds de reembossament |
 | `get_payment_methods()` | Retorna els mètodes de pagament desats per a un client |
 
-## Credencials de renovació per a membresies recurrents
+## Credencials de renovació per a membresies recurrents {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 permet que les integracions de gateway informin si una membresia recurrent té una credencial de renovació reutilitzable abans que `auto_renew` es persisteixi. Enganxa’t a `wu_membership_has_renewal_credential` i retorna:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Esborra el marcador de credencial absent com a part del flux de reautorització correcte del teu gateway després que s’hagi emmagatzemat una nova credencial reutilitzable.
 
-## Consells
+## Consells {#tips}
 
 - Retorna sempre `WP_Error` en cas d’error perquè Ultimate Multisite pugui gestionar la visualització de l’error
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Fes servir `wu_log_add()` per al registre específic del gateway
 
-## Capacitats dels proveïdors del connector d’AI
+## Capacitats dels proveïdors del connector d’AI {#ai-connector-provider-capabilities}
 
 Les integracions personalitzades que criden operacions basades en el connector d’AI s’han d’alinear amb el conjunt de proveïdors OAuth admesos introduït amb AI Provider for Anthropic Max v1.3.0:
 

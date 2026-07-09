@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Aml-Arian
+# Aml-Arian {#multi-currency}
 
 Ultimate Multisite: Mae Aml-Arian yn galluogi eich rhwydwaith i dderbyn taliadau mewn sawl arian cyfred. Mae'n trosi prisiau'n awtomatig gan ddefnyddio cyfraddau cyfnewid byw neu â llaw, yn gadael i chi osod union brisiau fesul cynnyrch ar gyfer unrhyw arian cyfred, ac yn canfod arian cyfred dewisol pob ymwelydd drwy geoleoliad — i gyd wedi'i reoli o un Dashboard gweinyddol.
 
-## Nodweddion Allweddol
+## Nodweddion Allweddol {#key-features}
 
 - **Trosi cyfraddau cyfnewid yn awtomatig** — caiff prisiau eu trosi o'ch arian cyfred sylfaenol gan ddefnyddio cyfraddau a nôlir gan eich darparwr dewisol
 - **Diystyriadau prisio fesul cynnyrch** — gosodwch union brisiau penodol i arian cyfred ar unrhyw gynnyrch i osgoi trosi awtomatig
@@ -20,22 +20,22 @@ Ultimate Multisite: Mae Aml-Arian yn galluogi eich rhwydwaith i dderbyn taliadau
 - **Canfod arian cyfred ar sail geoleoliad** — yn rhag-ddewis yn awtomatig yr arian cyfred sy'n cyfateb i wlad yr ymwelydd
 - **Dashboard gweinyddol** — rheolwch arian cyfred gweithredol, cyfraddau cyfnewid, a gosodiadau darparwyr o un lle
 
-## Gofynion
+## Gofynion {#requirements}
 
 - Ultimate Multisite 2.0.0 neu uwch
 - Gosodiad WordPress Multisite
 - PHP 7.4 neu uwch
 
-## Gosod
+## Gosod {#installation}
 
 1. Llwythwch ffeiliau'r ategyn i `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Ysgogwch yr ategyn drwy'r sgrin **Ategion** yn WordPress (Ysgogi Rhwydwaith)
 3. Ewch i **Ultimate Multisite → Aml-Arian** i agor y Dashboard gweinyddol
 4. Ychwanegwch yr arian cyfred rydych am ei dderbyn a ffurfweddwch eich darparwr cyfraddau cyfnewid
 
-## Ffurfweddu
+## Ffurfweddu {#configuration}
 
-### Dashboard Gweinyddol
+### Dashboard Gweinyddol {#admin-dashboard}
 
 Y Dashboard gweinyddol Aml-Arian (**Ultimate Multisite → Aml-Arian**) yw'r lle canolog i:
 
@@ -44,7 +44,7 @@ Y Dashboard gweinyddol Aml-Arian (**Ultimate Multisite → Aml-Arian**) yw'r lle
 - Adolygu cyfraddau cyfredol ar gyfer pob arian cyfred gweithredol
 - Gosod cyfraddau â llaw pan nad yw darparwyr awtomatig yn addas
 
-### Darparwyr Cyfraddau Cyfnewid
+### Darparwyr Cyfraddau Cyfnewid {#exchange-rate-providers}
 
 | Darparwr | Disgrifiad |
 |---|---|
@@ -55,7 +55,7 @@ Y Dashboard gweinyddol Aml-Arian (**Ultimate Multisite → Aml-Arian**) yw'r lle
 
 Dewiswch eich darparwr o dan **Ultimate Multisite → Aml-Arian → Gosodiadau → Darparwr Cyfraddau Cyfnewid**. Gellir adnewyddu cyfraddau â llaw unrhyw bryd neu eu hamserlennu i ddiweddaru'n awtomatig.
 
-### Diystyriadau Prisio Fesul Cynnyrch
+### Diystyriadau Prisio Fesul Cynnyrch {#per-product-pricing-overrides}
 
 Pan nad yw trosi awtomatig yn ddigon manwl, gallwch osod union bris ar gyfer arian cyfred penodol ar unrhyw gynnyrch:
 
@@ -66,7 +66,7 @@ Pan nad yw trosi awtomatig yn ddigon manwl, gallwch osod union bris ar gyfer ari
 
 Mae cynhyrchion heb ddiystyriad yn defnyddio'r pris wedi'i drosi o'ch arian cyfred sylfaenol.
 
-### Maes Cofrestru Dewis Arian Cyfred
+### Maes Cofrestru Dewis Arian Cyfred {#currency-selector-signup-field}
 
 Gellir ychwanegu'r maes dewis arian cyfred at eich llif cofrestru/talu fel bod cwsmeriaid yn dewis eu harian cyfred dewisol wrth gofrestru:
 
@@ -76,7 +76,7 @@ Gellir ychwanegu'r maes dewis arian cyfred at eich llif cofrestru/talu fel bod c
 
 Caiff yr arian cyfred a ddewiswyd ei storio gyda'r tanysgrifiad a'i ddefnyddio ar gyfer pob bilio dilynol.
 
-### Canfod Arian Cyfred ar Sail Geoleoliad
+### Canfod Arian Cyfred ar Sail Geoleoliad {#geolocation-based-currency-detection}
 
 Pan fydd canfod geoleoliad wedi'i alluogi, mae'r ategyn yn mapio gwlad yr ymwelydd i arian cyfred ac yn ei rag-ddewis yn y maes dewis arian cyfred. I alluogi:
 
@@ -86,27 +86,27 @@ Pan fydd canfod geoleoliad wedi'i alluogi, mae'r ategyn yn mapio gwlad yr ymwely
 
 Os nad oes mapio'n bodoli ar gyfer gwlad ymwelydd, defnyddir arian cyfred sylfaenol y rhwydwaith fel y dewis wrth gefn.
 
-## Cwestiynau Cyffredin
+## Cwestiynau Cyffredin {#frequently-asked-questions}
 
-### Beth sy'n digwydd os nad yw darparwr cyfraddau cyfnewid ar gael?
+### Beth sy'n digwydd os nad yw darparwr cyfraddau cyfnewid ar gael? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Mae'r ategyn yn defnyddio'r cyfraddau a nôlwyd yn llwyddiannus ddiwethaf fel dewis wrth gefn. Os nad oes unrhyw gyfraddau erioed wedi'u nôl, mae'n defnyddio'r cyfraddau â llaw rydych wedi'u ffurfweddu fel dewis wrth gefn. Argymhellir ffurfweddu cyfraddau â llaw fel rhwyd ddiogelwch.
 
-### A allaf ddefnyddio darparwyr gwahanol ar gyfer arian cyfred gwahanol?
+### A allaf ddefnyddio darparwyr gwahanol ar gyfer arian cyfred gwahanol? {#can-i-use-different-providers-for-different-currencies}
 
 Na — mae un darparwr yn weithredol ar y tro ar gyfer pob arian cyfred. Defnyddiwch **Â Llaw** os oes angen rheolaeth lawn arnoch dros gyfraddau unigol.
 
-### A oes angen ategyn ar wahân ar gyfer geoleoliad?
+### A oes angen ategyn ar wahân ar gyfer geoleoliad? {#does-geolocation-require-a-separate-plugin}
 
 Nid oes angen ategyn geoleoliad allanol. Mae'r ategyn yn defnyddio canfod IP-i-wlad adeiledig WordPress. Er mwyn cael mwy o gywirdeb, gellir integreiddio gwasanaeth geoleoliad penodedig drwy'r bachau hidlo a ddarperir.
 
-### A yw diystyriadau fesul cynnyrch yn cael eu cymhwyso cyn neu ar ôl treth?
+### A yw diystyriadau fesul cynnyrch yn cael eu cymhwyso cyn neu ar ôl treth? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Mae diystyriadau fesul cynnyrch yn gosod y pris cyn treth yn yr arian cyfred targed. Cyfrifir treth ar ben pris y diystyriad gan ddefnyddio eich ffurfweddiad treth presennol.
 
-## Cofnod Newidiadau
+## Cofnod Newidiadau {#changelog}
 
-### Fersiwn 1.0.0 — Rhyddhawyd ar 2026-04-02
+### Fersiwn 1.0.0 — Rhyddhawyd ar 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Newydd: Cymorth aml-arian gyda throsi cyfraddau cyfnewid yn awtomatig
 - Newydd: Diystyriadau prisio fesul cynnyrch ar gyfer union brisiau penodol i arian cyfred

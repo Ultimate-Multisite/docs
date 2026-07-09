@@ -3,11 +3,11 @@ title: 'Palajaran 1: Kunaon Ceruk Pasar Unggul'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Pangajaran 1: Naha Ceruk Éta Unggul
+# Pangajaran 1: Naha Ceruk Éta Unggul {#lesson-1-why-niche-wins}
 
 Saméméh urang nyabak software naon waé, anjeun kudu ngartos naha ngawangun pikeun pamiarsa anu husus téh kaputusan pangpentingna anu bakal anjeun jieun.
 
-## Masalah dina Ngajual Situs Wéb Generik
+## Masalah dina Ngajual Situs Wéb Generik {#the-problem-with-selling-generic-websites}
 
 Lamun anjeun nawarkeun "situs wéb pikeun saréréa," anjeun keur bersaing jeung:
 
@@ -17,11 +17,11 @@ Lamun anjeun nawarkeun "situs wéb pikeun saréréa," anjeun keur bersaing jeung
 
 Anjeun moal bisa meunang dina harga. Anjeun moal bisa meunang dina fitur. Pasar situs wéb generik téh balapan ka panghandapna.
 
-## Naon anu Robah Nalika Anjeun Milih Ceruk
+## Naon anu Robah Nalika Anjeun Milih Ceruk {#what-changes-when-you-pick-a-niche}
 
 Nalika anjeun ngawangun platform husus pikeun studio kabugaran (atawa ceruk naon waé), sagalana robah jadi nguntungkeun anjeun:
 
-### Anjeun Ngaréngsékeun Masalah Nyata
+### Anjeun Ngaréngsékeun Masalah Nyata {#you-solve-real-problems}
 
 Nu boga studio kabugaran henteu hayang "situs wéb." Maranéhna hayang:
 
@@ -33,45 +33,45 @@ Nu boga studio kabugaran henteu hayang "situs wéb." Maranéhna hayang:
 
 Nalika platform anjeun ngaréngsékeun masalah husus ieu langsung ti mimiti, anjeun henteu deui ngajual situs wéb. Anjeun ngajual solusi.
 
-### Anjeun Bisa Masang Harga Leuwih Luhur
+### Anjeun Bisa Masang Harga Leuwih Luhur {#you-can-charge-more}
 
 Situs WordPress generik bisa dijual $500-$2,000 minangka proyék sakali waé. Platform ceruk anu ngaréngsékeun masalah husus industri bisa masang biaya $49-$199/bulan minangka subscription anu terus-terusan sabab nilaina lumangsung sarta husus.
 
-### Anjeun Jadi Ahli
+### Anjeun Jadi Ahli {#you-become-the-expert}
 
 Nalika anjeun fokus kana hiji industri, anjeun diajar basana, titik nyerina, jeung pola meulina. Nu boga studio kabugaran silih ngobrol. Nalika hiji manggihan platform anu jalan, maranéhna nyaritakeun ka batur. Carita ti sungut ka sungut dina hiji ceruk téh kuat sabab komunitasna raket.
 
-### Marketing Anjeun Jadi Leuwih Gampang
+### Marketing Anjeun Jadi Leuwih Gampang {#your-marketing-gets-easier}
 
 Tibatan "kami ngawangun situs wéb pikeun bisnis," anjeun nyebutkeun "kami ngawangun situs wéb pikeun studio kabugaran." Landing page anjeun nyarita langsung ka nu boga gym. Template anjeun katingali saperti situs kabugaran. Testimonial anjeun datang ti palatih jeung nu boga studio. Unggal bagian marketing karasa leuwih kuat sabab éta husus.
 
-## Kasempetan FitSite
+## Kasempetan FitSite {#the-fitsite-opportunity}
 
 Hayu urang tingali industri kabugaran ngaliwatan sudut pandang ieu:
 
-### Ukuran Pasar
+### Ukuran Pasar {#market-size}
 
 - Aya leuwih ti 100.000 fasilitas kabugaran di Amérika Sarikat waé
 - Mayoritasna bisnis leutik anu dipiboga sacara mandiri
 - Kalolobaanana boh teu boga situs wéb, boga situs wéb anu goréng, atawa boga situs wéb mahal teuing anu teu bisa diropéa ku maranéhna sorangan
 
-### Solusi Ayeuna
+### Solusi Ayeuna {#current-solutions}
 
 - **Pangwangun generik** (Wix, Squarespace): Teu aya fitur husus kabugaran, nu boga studio bajoang pikeun ngawangun naon anu diperlukeun
 - **Pangwangunan kustom**: Mahal, sakali waé, hésé dipiara
 - **Platform husus industri**: Saeutik anu aya, sarta kalolobaanana kabeungkeut kana sistem booking tibatan nawarkeun ayana wéb anu lengkep
 
-### Celahna
+### Celahna {#the-gap}
 
 Aya celah anu écés antara "pangwangun situs wéb generik" jeung "pangwangunan kustom anu mahal" pikeun bisnis kabugaran. Platform anu masihan nu boga studio situs wéb profésional, husus kabugaran, kalayan fitur anu maranéhna peryogikeun -- dina titik harga anu asup akal pikeun bisnis leutik -- ngeusian celah éta.
 
 Ieu kasempetan anu bakal dituju ku FitSite.
 
-## Inti Pangajaran
+## Inti Pangajaran {#key-takeaway}
 
 Milih ceruk téh lain ngeunaan ngawatesan diri. Ieu ngeunaan museurkeun usaha anjeun di tempat anu panggedéna pangaruhna. Platform ceruk anu ngalayanan 500 palanggan dina $99/bulan nyaéta bisnis $600,000/taun. Anjeun henteu peryogi jutaan palanggan. Anjeun peryogi anu leres.
 
-## Naon anu Urang Wangun dina Pangajaran Ieu
+## Naon anu Urang Wangun dina Pangajaran Ieu {#what-we-built-this-lesson}
 
 Can aya pagawéan téknis -- tapi ayeuna anjeun boga pondasi stratégis:
 

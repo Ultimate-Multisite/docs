@@ -3,7 +3,7 @@ title: Entegrasyon MailChimp
 sidebar_position: 7
 _i18n_hash: 9f328f09dc98677c9567636a81a7bf0a
 ---
-# Entegrasyon Mailchimp
+# Entegrasyon Mailchimp {#mailchimp-integration}
 
 Fonksiyonel safer ou pa **Mailchimp** addon la bay.
 

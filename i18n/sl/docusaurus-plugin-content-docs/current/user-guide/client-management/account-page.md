@@ -3,7 +3,7 @@ title: Stranica računa stranke
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Vaša stran za stranke (v2)
+# Vaša stran za stranke (v2) {#your-clients-account-page-v2}
 
 _**POMEMBEN OPOMENJEV: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 
@@ -11,7 +11,7 @@ Ko kupci naročajo paket na vašo mrežno, dobijo dostop do spletne strani in nj
 
 V tem tutorialu vas vodimo skozi stran za stranke in vidite, kaj lahko vaši kupci tam vidijo in naredijo.
 
-## Stran za stranke (Account Page)
+## Stran za stranke (Account Page) {#the-account-page}
 
 Stran za stranke je dostopna z klikom na **Account** v dashboardu vašega kupca.
 
@@ -27,7 +27,7 @@ Po kliku na to bodo videli pregled svojega članstva, naslov za plačevanje, fak
 
 Lahko tudi spremenijo članstvo na drugi paket ali kupijo drugi paket ali storitev, ki jo ponujate. Pregledajmo vsako sekcijo oddiročno.
 
-### Previdba o vašem članstvu:
+### Previdba o vašem članstvu: {#your-membership-overview}
 
 Prvi blok odmah pod imenom spletne strani vaših strank prikazuje pregled trenutnega paketa in storitev/paketov, ki so z njim kupili. Blok prikazuje tudi številko članstva, začetno izplačeno skupno sploh, koliko je cena paketa in vsake storitve/paketa ter koliko je bilo računovanj za to članstvo. Tako lahko vidijo, ali je članstvo **Aktivo**, **Istečilo** ali **Prekinjeno**.
 
@@ -43,7 +43,7 @@ Zdaj, če stranke izbrezijo pakete ali storitve za to trenutno članstvo – kot
 
 Opazite, da ne morete dodati kupon kode na tej strani za spremembo članstva. Če stranka uporabi kupon koda pri prvi kupnji, ta kod bo tudi primjenljiv na to novo članstvo.
 
-### Obnovitev računa:
+### Obnovitev računa: {#updating-the-billing-address}
 
 Na strani za račun lahko kupci tudi spremenijo naslov za fakturiranje. Samo morajo klikniti na **Update** ob _Billing Address_.
 
@@ -53,7 +53,7 @@ Kupcu se bo pojavilo novo okno. Vse, kar mu je treba storiti, je vpisati novi na
 
 ![Obraznik za spremembo naslova za fakturiranje](/img/account-page/billing-address-form.png)
 
-### Sprememba štemple spletnega mesta:
+### Sprememba štemple spletnega mesta: {#changing-the-site-template}
 
 Da bi kupci lahko spremenili svoje štemple spletnih mest, morate iti na **Ultimate Multisite > Settings > Sites** in vključiti možnost **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Po vključitvi potrditve in kliku na **Process Switch** bo nov template za splet
 
 Kupci lahko uporabljajo možnost **Reset current template** iz tega panela, če potrebujejo vrniti spletno stran na trenutno dodeljen template. Kot pri prehodu na drugi template, je reset templete lahko nadomestitev vsebine spletne strani, zato kupci jo morajo potrditi le ko razumejo delovanje funkcije resetiranja.
 
-### Dodajanje prilagojenih domen:
+### Dodajanje prilagojenih domen: {#adding-custom-domains}
 
 Vaši kupci bodo imeli možnost dodati prilagojen domen za ta paket na svoji strani zadeve. Da bi lahko vaši kupci uporabljali prilagojene domene, gre do **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Po klikanju na **Next Step** lahko vaši stranki dodajo svoje lastno domenico in
 
 Po klikanju na **Add Domain** se bo domenica dodala v račun vašega stranka. Vse, kar morajo storiti zdaj, je spremeniti DNS podatke te lastne domenice pri svojem registratorju domen.
 
-### Sprememba gesla:
+### Sprememba gesla: {#changing-password}
 
 V dashboardu računa lahko vaši stranki spremenijo tudi geslo, kliknjo na **Change Password**.
 
@@ -125,7 +125,7 @@ To se vam bo prikazana nova okno, kjer bodo vaši kupci morali vneti trenutno ge
 
 ![Obraznik spremembe gesla z polji za trenutno in novo geslo](/img/account-page/change-password-form.png)
 
-### Ogrožna zona:
+### Ogrožna zona: {#danger-zone}
 
 Imamo tudi dve možnosti, ki so prikazane v delu **Ogrožna zona**: **Obriši spletno mesto** in **Obriši račun**. Običajno sta obdelana v ogrožni zoni, ker sta te dve dejanje nezavršena. Če vaši kupci obrišče svoje spletno mesto ali račun, ga ne bodo mogli ponovno dobiti.
 

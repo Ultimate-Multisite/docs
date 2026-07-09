@@ -4,22 +4,22 @@ title: Ação - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Action: wu_mt_providers_registered
+# Action: wu_mt_providers_registered {#action-wumtprovidersregistered}
 
 Dispara após os provedores padrão serem registrados.
 
 Use este hook para registrar provedores personalizados.
 
-## Parameters
+## Parameters {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
 | $manager | `\Provider_Manager` | A instância do gerenciador de provedores. |
 
-### Desde
+### Desde {#since}
 
 - 1.0.0
 
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/managers/class-provider-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/managers/class-provider-manager.php#L93) na linha 93

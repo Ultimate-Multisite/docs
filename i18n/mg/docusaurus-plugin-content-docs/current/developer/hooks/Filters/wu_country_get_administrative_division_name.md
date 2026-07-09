@@ -4,11 +4,11 @@ title: Sivana - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Sivana: wu_country_get_administrative_division_name
+# Sivana: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Mamerina anarana tsara aseho ho an’ireo fizaram-pitantanana ao amin’ny firenena.
 
-## Paramètres
+## Paramètres {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Mamerina anarana tsara aseho ho an’ireo fizaram-pitantanana ao amin’ny firen
 | $ucwords | `bool` | raha ataontsika sora-baventy ny teny. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance an’ny kilasy ankehitriny. |
 
-### Hatramin’ny
+### Hatramin’ny {#since}
 
 - 2.0.11
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin’ny [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) amin’ny andalana 250
 
 
-## Mamerina
+## Mamerina {#returns}
 Ny anaran’ny fizarana novaina.

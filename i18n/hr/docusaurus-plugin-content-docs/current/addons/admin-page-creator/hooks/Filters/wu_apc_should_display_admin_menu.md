@@ -4,20 +4,20 @@ title: Filtar - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filtar: wu_apc_should_display_admin_menu
+# Filtar: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
 
 Omogućuje administratorima da sakriju stranice administracijskog izbornika ako su završili proces prilagodbe.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Tip | Opis |
 |------|------|-------------|
 | $should_display_admin_menu | `bool` | Trebamo li prikazati stranice. |
 | $network_active | `bool` | Provjerava je li plugin aktivan u mrežnoj administraciji. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 1.4.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L645) na retku 645

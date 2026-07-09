@@ -4,11 +4,11 @@ title: 'Fîltre - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Destûrê dide pêşdebir ku parametreyên URL ya birêvebirina malperê biguherînin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Şirove |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Destûrê dide pêşdebir ku parametreyên URL ya birêvebirina malperê biguher
 | $id | `int` | ID ya malperê. |
 | $site_hash | `string` | Hash ya malperê. |
 
-### Ji guhertoya
+### Ji guhertoya {#since}
 
 - 2.0.9
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) de li rêza 214 hatiye diyarkirin
 
 
-## Vegerandin
+## Vegerandin {#returns}
 URL ya birêvebirinê ya guherandî.

@@ -3,19 +3,19 @@ title: '2. nodarbība: Savas nišas izvēle'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# 2. nodarbība: Savas nišas izvēle
+# 2. nodarbība: Savas nišas izvēle {#lesson-2-picking-your-niche}
 
 1. nodarbībā mēs noskaidrojām, kāpēc niša pārspēj vispārīgu pieeju. Tagad jums jāizvēlas savējā. Šī nodarbība sniedz ietvaru nišas atrašanai un validēšanai, pirms ieguldāt laiku tās izveidē.
 
-## Kur mēs palikām
+## Kur mēs palikām {#where-we-left-off}
 
 Mēs definējām FitSite koncepciju: tīmekļa vietņu platformu fitnesa studijām. Bet kā tieši mēs nonācām pie fitnesa studijām? Šī nodarbība izskaidro procesu, lai jūs varētu to izmantot savas nišas atrašanai.
 
-## Trīs kritēriji
+## Trīs kritēriji {#the-three-criteria}
 
 Laba niša tīmekļa vietņu platformai atbilst trim nosacījumiem:
 
-### 1. Viņiem ir vajadzīgas tīmekļa vietnes, bet ir grūti iegūt labas
+### 1. Viņiem ir vajadzīgas tīmekļa vietnes, bet ir grūti iegūt labas {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Meklējiet nozares, kurās:
 
@@ -26,7 +26,7 @@ Meklējiet nozares, kurās:
 
 **Fitnesa studijas atbilst**: dalībnieki sagaida, ka tiešsaistē atradīs nodarbību grafikus, cenas un rezervāciju. Lielākā daļa studiju tīmekļa vietņu ir novecojušas vai veidotas uz vispārīgām veidnēm, kas nekalpo mērķim.
 
-### 2. Uzņēmumi var atļauties mēneša abonementu
+### 2. Uzņēmumi var atļauties mēneša abonementu {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Jūsu mērķa klientiem jābūt:
 
@@ -36,7 +36,7 @@ Jūsu mērķa klientiem jābūt:
 
 **Fitnesa studijas atbilst**: tās jau maksā par rezervēšanas programmatūru, maksājumu apstrādi un mārketinga rīkiem. Tīmekļa vietnes abonements ir dabisks papildinājums.
 
-### 3. Viņi sarunājas savā starpā
+### 3. Viņi sarunājas savā starpā {#3-they-talk-to-each-other}
 
 Labākajām nišām ir:
 
@@ -46,9 +46,9 @@ Labākajām nišām ir:
 
 **Fitnesa studijas atbilst**: studiju īpašnieki apmeklē fitnesa nozares pasākumus, piedalās tiešsaistes kopienās un bieži dalās ar rīkiem un pakalpojumiem ar kolēģiem.
 
-## Kā atrast nišas kandidātus
+## Kā atrast nišas kandidātus {#how-to-find-niche-candidates}
 
-### Sāciet ar to, ko zināt
+### Sāciet ar to, ko zināt {#start-with-what-you-know}
 
 Jūsu esošā pieredze ir priekšrocība. Apsveriet:
 
@@ -56,7 +56,7 @@ Jūsu esošā pieredze ir priekšrocība. Apsveriet:
 - Vaļaspriekus vai intereses, kur saprotat kopienu
 - Profesionālos tīklus, kuros jau esat iesaistīts
 
-### Meklējiet sāpju signālus
+### Meklējiet sāpju signālus {#look-for-pain-signals}
 
 Meklējiet pierādījumus, ka uzņēmumiem nišā ir grūtības ar tīmekļa vietnēm:
 
@@ -65,7 +65,7 @@ Meklējiet pierādījumus, ka uzņēmumiem nišā ir grūtības ar tīmekļa vie
 - Apskatiet faktiskās tīmekļa vietnes nišā -- vai lielākā daļa ir sliktas?
 - Pārbaudiet, vai pastāv konkurenti un cik labi tie apkalpo tirgu
 
-### Izvērtējiet ekonomiku
+### Izvērtējiet ekonomiku {#evaluate-the-economics}
 
 Katrai kandidātnišai novērtējiet:
 
@@ -73,11 +73,11 @@ Katrai kandidātnišai novērtējiet:
 - **Gatavība maksāt**: Cik viņi pašlaik tērē līdzīgiem rīkiem?
 - **Klienta dzīves vērtības potenciāls**: Vai šie uzņēmumi ir stabili, vai arī tie ātri aiziet?
 
-## Savas nišas validēšana
+## Savas nišas validēšana {#validating-your-niche}
 
 Pirms kaut ko būvējat, validējiet pieprasījumu:
 
-### Runājiet ar potenciālajiem klientiem
+### Runājiet ar potenciālajiem klientiem {#talk-to-potential-customers}
 
 Sazinieties ar 10-15 uzņēmumu īpašniekiem savā mērķa nišā. Jautājiet:
 
@@ -88,17 +88,17 @@ Sazinieties ar 10-15 uzņēmumu īpašniekiem savā mērķa nišā. Jautājiet:
 
 Jūs vēl nepārdodat. Jūs klausāties.
 
-### Pārbaudiet konkurentu vidi
+### Pārbaudiet konkurentu vidi {#check-competitor-landscape}
 
 - **Nav konkurentu**: Tas var nozīmēt, ka nav pieprasījuma, vai arī tā var būt neizmantota iespēja. Sarunas ar klientiem parādīs, kurš variants ir patiess.
 - **Daži konkurenti**: Laba zīme. Validē pieprasījumu. Izpētiet, ko viņi dara labi un kur viņiem pietrūkst.
 - **Daudz konkurentu**: Grūtāk ienākt, bet joprojām iespējams, ja varat skaidri atšķirties.
 
-### Izveidojiet galveno lapu
+### Izveidojiet galveno lapu {#build-a-landing-page}
 
 Pirms platformas izveides izveidojiet vienkāršu galveno lapu, kas apraksta jūsu nišas risinājumu, un vāciet e-pasta pieteikumus. Palaidiet nelielu apjomu mērķētas reklāmas, lai pārbaudītu interesi. Ja cilvēki pierakstās, jums ir validācija.
 
-## Šī piemērošana FitSite
+## Šī piemērošana FitSite {#applying-this-to-fitsite}
 
 Lūk, kā FitSite tika novērtēts pēc kritērijiem:
 
@@ -112,7 +112,7 @@ Lūk, kā FitSite tika novērtēts pēc kritērijiem:
 
 Validācija apstiprināja iespēju. Tagad būvējam.
 
-## Nišas idejas, ko apsvērt
+## Nišas idejas, ko apsvērt {#niche-ideas-to-consider}
 
 Ja fitness nav jūsu tirgus, šeit ir citas nišas, kas atbilst kritērijiem:
 
@@ -127,7 +127,7 @@ Ja fitness nav jūsu tirgus, šeit ir citas nišas, kas atbilst kritērijiem:
 
 Katrai no tām ir tās pašas īpašības: skaidras tīmekļa vietnes vajadzības, spēja maksāt un kopienas ieteikumi no mutes mutē.
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Nišas izvēles ietvars**: trīs kritēriji jebkuras nišas izvērtēšanai
 - **Validācijas metodes**: sarunas ar klientiem, konkurentu analīze, galvenās lapas testēšana

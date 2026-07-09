@@ -3,13 +3,13 @@ title: Membangun Bisnis Website Niche
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Membangun Bisnis Website Niche dengan Ultimate Multisite
+# Membangun Bisnis Website Niche dengan Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Kebanyakan orang yang mencoba menjual website bersaing harga melawan Wix, Squarespace, dan ribuan freelancer. Mereka kalah. Mereka yang berhasil adalah mereka yang memilih audiens spesifik, membangun solusi yang disesuaikan untuk audiens tersebut, dan mengenakan biaya berdasarkan nilai yang mereka berikan.
 
 Kursus ini mengajarkan Anda cara melakukan hal yang sama persis menggunakan Ultimate Multisite.
 
-## Apa yang Akan Anda Bangun
+## Apa yang Akan Anda Bangun {#what-you-will-build}
 
 Sepanjang kursus ini, Anda akan membangun jaringan nyata yang berfungsi bernama **FitSite** — sebuah platform website yang dibangun khusus untuk studio kebugaran, pelatih pribadi, dan pemilik gym.
 
@@ -23,7 +23,7 @@ Pada pelajaran terakhir, FitSite akan menjadi platform niche yang lengkap dengan
 
 Anda akan mengikuti langkah demi langkah, dan pada akhirnya Anda akan memiliki platform yang berfungsi dan pengetahuan untuk mereplikasi proses ini untuk niche apa pun yang Anda pilih.
 
-## Mengapa Studio Kebugaran?
+## Mengapa Studio Kebugaran? {#why-fitness-studios}
 
 Kami membutuhkan contoh konkret yang bisa diikuti siapa saja. Studio kebugaran bekerja karena:
 
@@ -34,7 +34,7 @@ Kami membutuhkan contoh konkret yang bisa diikuti siapa saja. Studio kebugaran b
 
 Semua yang Anda pelajari saat membangun FitSite berlaku langsung untuk niche apa pun yang Anda pilih: restoran, agen real estat, firma hukum, gereja, kontraktor perdagangan, atau vertikal lainnya.
 
-## Struktur Kursus
+## Struktur Kursus {#course-structure}
 
 Setiap pelajaran memperkenalkan satu konsep, menjelaskan mengapa konsep itu penting, dan memandu Anda dalam mengimplementasikannya di jaringan FitSite. Setiap pelajaran dibangun di atas pelajaran sebelumnya.
 
@@ -55,7 +55,7 @@ Setiap pelajaran memperkenalkan satu konsep, menjelaskan mengapa konsep itu pent
 | [13. Scaling Up](lesson-13-growth) | Tumbuh dari pelanggan pertama menjadi bisnis nyata | Strategi pertumbuhan dan otomatisasi FitSite |
 | [14. What Comes Next](lesson-14-whats-next) | Ekspansi ke niche yang berdekatan dan peluang baru | Peta jalan Anda di luar FitSite |
 
-## Prasyarat
+## Prasyarat {#prerequisites}
 
 - Instalasi WordPress Multisite (atau kemauan untuk mengaturnya)
 - Lisensi Ultimate Multisite yang aktif
@@ -63,6 +63,6 @@ Setiap pelajaran memperkenalkan satu konsep, menjelaskan mengapa konsep itu pent
 
 Tidak perlu coding. Jika Anda belum pernah menggunakan Ultimate Multisite sebelumnya, tidak masalah — Lesson 3 dimulai dari instalasi baru.
 
-## Siap?
+## Siap? {#ready}
 
 Mulai dengan [Lesson 1: Why Niche Wins](lesson-1-why-niche).

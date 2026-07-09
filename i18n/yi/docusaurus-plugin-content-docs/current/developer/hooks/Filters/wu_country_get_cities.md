@@ -4,11 +4,11 @@ title: פֿילטער - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# פילטער: wu_country_get_cities
+# פילטער: wu_country_get_cities {#filter-wucountrygetcities}
 
 גיט צוריק די רשימה פֿון שטעט פֿאַר אַ שטאַט אין אַ לאַנד.
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | צוויי־אותיותדיקער ISO קאָד פֿאַר דער שטאַט. |
 | $current_country | `\WP_Ultimo\Country\Country` | אינסטאַנץ פֿון דער איצטיקער קלאַס. |
 
-### זינט
+### זינט {#since}
 
 - 2.0.11
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) אויף שורה 146
 
 
-## גיט צוריק
+## גיט צוריק {#returns}
 די געפֿילטערטע רשימה פֿון שטאַטן.

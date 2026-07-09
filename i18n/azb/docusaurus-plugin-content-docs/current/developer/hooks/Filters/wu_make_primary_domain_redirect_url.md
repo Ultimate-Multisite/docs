@@ -4,13 +4,13 @@ title: Filter - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Bir alan adını birincil yaptıktan sonra yönlendirme URL'sini filtreler.
 
 Geliştiricilerin, bir alan adını başarıyla birincil olarak ayarladıktan sonra kullanıcıların nereye yönlendirileceğini özelleştirmesine olanak tanır. Varsayılan olarak, ana sitedeki mevcut URL'ye veya değiştirilen sitenin yönetici URL'sine yönlendirilir.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Geliştiricilerin, bir alan adını başarıyla birincil olarak ayarladıktan so
 | $domain | `\Domain` | Birincil yapılan alan adı nesnesi. |
 | $old_primary_domains | `array` | Daha önce birincil olan alan adlarının ID'lerinden oluşan dizi. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) at line 639
 
 
-## Returns
+## Returns {#returns}
 Filtrelenmiş yönlendirme URL'si.

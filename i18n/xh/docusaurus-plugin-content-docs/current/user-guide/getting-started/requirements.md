@@ -3,11 +3,11 @@ title: Iimfuno
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Iimfuno ze-Ultimate Multisite
+# Iimfuno ze-Ultimate Multisite {#ultimate-multisite-requirements}
 
 Into yokuqala onokuzibuza yona phambi kokuthenga Ultimate Multisite kukuba zithini iimfuno zokuqhuba isongezo sethu. Ewe, ngethamsanqa, kukho kuphela iimfuno ezimbalwa ezisisiseko zokuqhuba Ultimate Multisite: **igama le-domain** , **umboneleli we-hosting** olungileyo kunye nofakelo lwe-WordPress **Multisite**. Yiyo yonke into oyifunayo!
 
-## Igama le-Domain
+## Igama le-Domain {#domain-name}
 
 Okokuqala, masithethe ngegama le-domain.
 
@@ -17,7 +17,7 @@ Isongezo sethu sibonelela ngeenkonzo zemirhumo, ukuqokelelwa kweentlawulo, iifom
 
 Nayiphi na indawo yeshishini oyikhethayo ingalawulwa usebenzisa isongezo sethu ukuba nje uthengisa iiwebhusayithi njengenkonzo! Qiniseka ukuba ukhetha igama le-domain elihambelana nesicwangciso sakho seshishini.
 
-## Umboneleli we-Hosting
+## Umboneleli we-Hosting {#hosting-provider}
 
 Ngoku ukuba unegama le-domain elitsalayo elimele indawo yakho yeshishini kunye neshishini lakho, kuya kufuneka ukhethe inkampani elungileyo ye-web hosting ukuze ibambe inethiwekhi yakho nge-Ultimate Multisite. Kukho ezinye iindlela ezilungileyo kwimarike. Abanye ababoneleli be-hosting badibana kakuhle ne-Ultimate Multisite, nto leyo enokuba yinto ethatha isigqibo kuxhomekeke kwinto oceba ukuyakha.
 
@@ -25,7 +25,7 @@ Ultimate Multisite kufuneka isebenze nakuwuphi na umboneleli we-hosting. Umahluk
 
 Xa kuziwa kwiinkcukacha ze-server, akukho fomyula ithile kuba kuya kuxhomekeka kwiimpawu nemisebenzi oza kuyinikezela kunye nobukhulu benethiwekhi yakho. I-shared hosting inokuba sisiqalo esihle, kodwa nje ukuba inethiwekhi yakho iqale ukukhula, mhlawumbi uya kufuna i-VPS ezinikeleyo.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Ngoku, masithethe kancinci ngofakelo lwe-WordPress Multisite.
 

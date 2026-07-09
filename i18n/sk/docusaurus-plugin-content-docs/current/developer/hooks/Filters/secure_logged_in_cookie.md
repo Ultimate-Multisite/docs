@@ -4,11 +4,11 @@ title: Filter - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie
+# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtruje, či sa má súbor cookie prihláseného používateľa odosielať iba cez HTTPS.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtruje, či sa má súbor cookie prihláseného používateľa odosielať iba 
 | $user_id | `int` | ID používateľa. |
 | $secure | `bool` | Či sa má autentifikačný súbor cookie odosielať iba cez HTTPS. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 3.1.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) na riadku 91

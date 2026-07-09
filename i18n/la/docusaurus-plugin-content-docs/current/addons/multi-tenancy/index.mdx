@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Sub-situs per ministratores et bases datorum distribue ad efficientiam et securitatem
 
-## Praecipua emissionis versionis 1.2.0
+## Praecipua emissionis versionis 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 fundamentum tenentis sui iuris addit pro operum fluxibus segregationis productionis:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 fundamentum tenentis sui iuris addit pro operum fluxibus seg
 
 Vide duces usoris pro [fluxu operum migrationis sui iuris](/user-guide/getting-started/sovereign-migration-workflow), [segregatione multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), et [operationibus tenentis sui iuris](/user-guide/administration/sovereign-tenant-operations).
 
-## Requisita
+## Requisita {#requirements}
 
 - WordPress 5.3 vel superior
 - PHP 7.4 vel superior
 - Plugin Multisite Ultimate (activum)
 
-## Installatio
+## Installatio {#installation}
 
 1. Fasciculos additamenti in indicem tuum `/wp-content/plugins/` mitte
 2. Plugin per menu 'Plugins' in WordPress activa
 3. Optiones additamenti in administratione retis configura
 
-## Evolutio
+## Evolutio {#development}
 
-### Institutio
+### Institutio {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structura Projecti
+### Structura Projecti {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regulae modernizationis codicis
 ```
 
-### Probatio
+### Probatio {#testing}
 
 Additamentum compagem probationis comprehensivam includit:
 
@@ -93,54 +93,54 @@ Additamentum compagem probationis comprehensivam includit:
 - **Ambitus Probationis**: Configuratus est ad ambitum codicis indagandum
 - **Probatio Multisite**: Probationes in ambitu multisite currunt
 
-### Normae Codicis
+### Normae Codicis {#code-standards}
 
 - **Normae Codicis WordPress**: Per PHPCS coguntur
 - **Compatibilitas PHP 7.4+**: Proprietates modernae PHP sustentantur
 - **Analysis Statica**: Integratio PHPStan ad verificationem generum
 - **Modernizatio Codicis**: Regulae Rector pro promotionibus PHP
 
-### Systema Aedificationis
+### Systema Aedificationis {#build-system}
 
 - **Processus Rerum**: Minificatio fasciculorum CSS/JS
 - **Translatio**: Generatio fasciculi POT
 - **Confectio Fasciculi**: Creatio archivii ad distributionem
 - **Modus Evolutionis**: Res non minificatae ad depurationem
 
-## Configuratio
+## Configuratio {#configuration}
 
 Additamentum varias optiones configurationis sustinet quae per interfaciem administrationis retis accedi possunt.
 
-### Configuratio tenentis sui iuris
+### Configuratio tenentis sui iuris {#sovereign-tenant-configuration}
 
 Pro tenentibus sui iuris, configura basim datorum tenentis, radicem systematis fasciculorum, ligationem hospitis basis datorum, et facultatem hospitis antequam commeatum ad tenentem dirigas. Verificationem migrationis curre post omnem mutationem quae credentia basis datorum, ligationem hospitis, directionem, aut provisionem usorum afficit.
 
 Utere `localhost` tantum cum tempus executionis tenentis et concessiones basis datorum accessum per socket localem aut eandem machinam exspectant. Utere `127.0.0.1` aut nomine hospitis servitii cum id est hospes concessionis a provisore tuo configuratus.
 
-### Facultas Hostinger
+### Facultas Hostinger {#hostinger-capability}
 
 Facultas multi-tenancy Hostinger cum signo integrationis Hostinger communi operatur. Confirma dominium in hPanel adesse, DNS ad Account Hostinger monstrare, et optiones basis datorum tenentis cum hPanel congruere ante verificationem.
 
-## Hooks et Filtra
+## Hooks et Filtra {#hooks-and-filters}
 
-### Actiones
+### Actiones {#actions}
 
 - `ultimate-multisite-addon-template_init` - Excitatur post initializationem additamenti
 - `ultimate-multisite-addon-template_loaded` - Excitatur postquam omnes fasciculi additamenti onerati sunt
 
-### Filtra
+### Filtra {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Optiones additamenti modifica
 - `ultimate-multisite-addon-template_enabled` - Statum activationis/deactivationis additamenti superpone
 
-## Licentia
+## Licentia {#license}
 
 Hoc additamentum sub GPL v3 aut posteriori licentiatum est.
 
-## Auxilium
+## Auxilium {#support}
 
 Pro auxilio et documentis, visita [MultisiteUltimate.com](https://multisiteultimate.com)
-## Index Mutationum
+## Index Mutationum {#changelog}
 
 - Versio 1.2.0 (2026-06-03): adde autoinitum tenentis sine statu, facultatem multi-tenancy Hostinger, segregationem basis datorum et systematis fasciculorum pro singulis sub-sitibus, portas verificationis migrationis sui iuris, emendationes initii tenentis/scriptoris basis datorum, ligationem hospitis MySQL configurabilem, et deletionem sui iuris tutiorem.
 

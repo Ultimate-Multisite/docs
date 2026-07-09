@@ -3,9 +3,9 @@ title: Cofnod Newidiadau Cydamseru Cynnwys
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Cofnod Newidiadau Content Sync
+# Cofnod Newidiadau Content Sync {#content-sync-changelog}
 
-### Fersiwn 1.1.0 - Rhyddhawyd ar 2025-12-31
+### Fersiwn 1.1.0 - Rhyddhawyd ar 2025-12-31 {#version-110---released-on-2025-12-31}
 * Newydd: Cymorth ar gyfer cysoni pob math o gofnod (cofnodion, tudalennau, mathau cofnodion personol)
 * Newydd: Hidlo math cofnod yn y cam dewis cynnwys
 * Newydd: Cam dewis safle ffynhonnell - cysoni o unrhyw safle, nid dim ond y prif safle
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Newidiwyd: Ailenwyd y cam "Select Templates" yn "Select Data"
 * Gwellwyd: Mae cod penodol i Elementor bellach yn rhedeg dim ond ar gyfer math cofnod elementor_library
 
-### Fersiwn 1.0.0 - Rhyddhawyd ar 2025-12-19
+### Fersiwn 1.0.0 - Rhyddhawyd ar 2025-12-19 {#version-100---released-on-2025-12-19}
 * Rhyddhad cychwynnol
 * Dewin aml-gam ar gyfer dewis templed a safle
 * Prosesu swp gydag adborth cynnydd amser real

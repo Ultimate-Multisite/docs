@@ -3,11 +3,11 @@ title: Күчелеклик Görünürlüğü
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Қажеттілік Көрініруі (Ability Visibility)
+# Қажеттілік Көрініруі (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0-де **Ability Visibility** бақылаулары енгізілді, олар әр мүмкіндікті қандай беттерде көрсетуге реттейді. Бұл администраторларға REST API, MCP серверлері, WooCommerce интеграциялары және басқа интерфейстер арқылы қай агент қабілеттері қолжетімді екенін нақты реттеуге мүмкіндік береді.
 
-## Ability Visibility деген не?
+## Ability Visibility деген не? {#what-is-ability-visibility}
 
 Ability Visibility – бұл рұқсат жүйесі, ол мыналарды бақылайды:
 
@@ -18,9 +18,9 @@ Ability Visibility – бұл рұқсат жүйесі, ол мыналарды
 
 Әр мүмкіндіктерде әртүрлі беттерде қолжетімді болуын анықтайтын көрініс деңгейі бар.
 
-## Көрініс Деңгейлері (Visibility Levels)
+## Көрініс Деңгейлері (Visibility Levels) {#visibility-levels}
 
-### Жалпы (Public)
+### Жалпы (Public) {#public}
 
 **Жалпы мүмкіндіктер** кез келген жерде қолжетімді:
 
@@ -32,7 +32,7 @@ WooCommerce интеграцияләре (WooCommerce integrations)
 
 Мисалы: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Ички (Internal)
+### Ички (Internal) {#internal}
 
 **Ички кабатлара** фақарәләрен дә гаиләдәге WordPress орнатылыгызның ичиндеккен юлларда була:
 
@@ -43,7 +43,7 @@ WooCommerce интеграцияләре (WooCommerce integrations)
 
 Мисалы: `manage-settings`, `view-analytics`, `export-data`
 
-### Партнер (Partner)
+### Партнер (Partner) {#partner}
 
 **Партнер кабатлара** фақарәләрен диярли партнерлар өчен гаиләдәге юлларда була:
 
@@ -54,7 +54,7 @@ WooCommerce интеграцияләре (WooCommerce integrations)
 
 Мисалы: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Азат (Disabled)
+### Азат (Disabled) {#disabled}
 
 **Имкенес отключены** нигде доступлы нет:
 
@@ -63,15 +63,15 @@ WooCommerce интеграцияләре (WooCommerce integrations)
 - Yönetici panellerinde bulunmuyor
 - Eskimiş veya deneysel yetenekler için kullanışlıdır
 
-## Yetenek Görünürlüğünü Yönetme
+## Yetenek Görünürlüğünü Yönetme {#managing-ability-visibility}
 
-### Yetenek Görünürlük Ayarlarına Erişim
+### Yetenek Görünürlük Ayarlarına Erişim {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** (Ayarlar) yolunu izleyin
 2. **Abilities** (Yetenekler) sekmesine tıklayın
 3. Burada kurulu tüm yeteneklerin ve bunların görünürlük seviyelerinin bir listesini göreceksiniz
 
-### Yetenek Detaylarını Görüntüleme
+### Yetenek Detaylarını Görüntüleme {#viewing-ability-details}
 
 Görmek için herhangi bir yeteneğe tıklayın:
 
@@ -82,7 +82,7 @@ Görmek için herhangi bir yeteneğe tıklayın:
 - **Последнее обновление**: Когда видимость в последний раз менялась
 - **Статус**: Распознанная или Неклассифицированная
 
-### Изменение уровней видимости
+### Изменение уровней видимости {#changing-visibility-levels}
 
 Чтобы изменить видимость способности:
 
@@ -100,7 +100,7 @@ Görmek için herhangi bir yeteneğe tıklayın:
 Список разрешенных партнеров: partner-123, partner-456
 ```
 
-### Массовые операции
+### Массовые операции {#bulk-operations}
 
 Чтобы изменить видимость для нескольких способностей:
 
@@ -108,11 +108,11 @@ Görmek için herhangi bir yeteneğe tıklayın:
 2. Массалык әрестәлек (bulk action) dérouлапчасынан янәчәләнгән күрсәтү уровьнән жаңы күрсәтү уровенди сайлагыз.
 3. **Apply**-ны сыйлагыз.
 
-## Партнерләр өчен Илау Сыйлалылар (Partner Allow-List)
+## Партнерләр өчен Илау Сыйлалылар (Partner Allow-List) {#partner-allow-list}
 
 **Партнерләр өчен илау сылалылар** — бу внеш партнерләрнең Партнер-уровень умеýәләрен эченә киле идеме дип күрсәтүче.
 
-### Партнерләрне Көтерергә
+### Партнерләрне Көтерергә {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** → **Partners**-ге кизегез
 2. **Add Partner**-ны сыйлагыз
@@ -120,7 +120,7 @@ Görmek için herhangi bir yeteneğe tıklayın:
 4. Күләме, партнернең исеме һәм тасвирлеген күтәрми тормы.
 5. **Save**-ны сыйлагыз
 
-### Партнерләрне Умеýәләргә Мәхәлкый Катерү
+### Партнерләрне Умеýәләргә Мәхәлкый Катерү {#assigning-abilities-to-partners}
 
 Партнерни күтәре алдында:
 
@@ -130,7 +130,7 @@ Görmek için herhangi bir yeteneğe tıklayın:
 4. "Partner allow-list" бөтенәлегендә, киләсеге кабул итүге кирәк булган партнерләр өчен чараларны тикшерегез
 5. **Save**-ны сыйлагыз
 
-### Партнер Катерүне Борыш
+### Партнер Катерүне Борыш {#revoking-partner-access}
 
 (Бу бөтен мәгълүмат яки процедураны төгәл тасвирлау эченә килә)
 
@@ -142,11 +142,11 @@ Görmek için herhangi bir yeteneğe tıklayın:
 
 Partner bu izinlere derrew erişimini itdirer.
 
-## Klassifikasiýa edilmemiş Izinler (Unclassified Abilities)
+## Klassifikasiýa edilmemiş Izinler (Unclassified Abilities) {#unclassified-abilities}
 
 Superdav AI Agent tanymayan uly (third-party) bir izni quraýan wagty, o **Klassifikasiýa edilmemiş** (Unclassified) hasaplanýar.
 
-### Klassifikasiýa edilmemiş Izinler barada Administrasiýa Bildirjisi
+### Klassifikasiýa edilmemiş Izinler barada Administrasiýa Bildirjisi {#admin-notice-for-unclassified-abilities}
 
 Siz administrasiýadan bildiriş görkezýärsiňiz:
 
@@ -163,7 +163,7 @@ Olary gözden geçiriň we klassifikasiýa edin.
 [Izinleri Gözden Geçirmek] [Reddi]
 ```
 
-### Klassifikasiýa edilmemiş Izinleri Gözden Geçirmek
+### Klassifikasiýa edilmemiş Izinleri Gözden Geçirmek {#reviewing-unclassified-abilities}
 
 1. Уведомлении «Review Abilities» (Возможности для проверки) нажмите на кнопку.
 2. Для каждой неклассифицированной возможности вы увидите:
@@ -180,7 +180,7 @@ Olary gözden geçiriň we klassifikasiýa edin.
 
 4. Нажмите **Classify** (Классифицировать), чтобы сохранить ваше решение.
 
-### Зачем классифицировать неклассифицированные возможности?
+### Зачем классифицировать неклассифицированные возможности? {#why-classify-unclassified-abilities}
 
 Классификация возможностей:
 
@@ -189,9 +189,9 @@ Olary gözden geçiriň we klassifikasiýa edin.
 * **Включает функции**: Как только возможность классифицирована, она становится доступной.
 * **Документирует решения**: Ваши выборы записываются для аудита.
 
-## Видимость на Разных Поверхностях
+## Видимость на Разных Поверхностях {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Публичные возможности** доступны через конечные точки (endpoints) REST:
 
@@ -203,7 +203,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Внутренние и партнерские возможности** недоступны через REST API.
 
-### MCP Серверы
+### MCP Серверы {#mcp-servers}
 
 **Публичные возможности** доступны через MCP:
 
@@ -217,7 +217,7 @@ MCP Сервер: Superdav AI Агент
 
 **Возможности партнера** доступны только с учетными данными партнера.
 
-### Интеграция с WooCommerce
+### Интеграция с WooCommerce {#woocommerce-integration}
 
 **Публичные возможности**, связанные с WooCommerce, доступны:
 
@@ -227,7 +227,7 @@ MCP Сервер: Superdav AI Агент
 
 **Внутренние возможности** не показываются в WooCommerce.
 
-### Чатный интерфейс
+### Чатный интерфейс {#chat-interface}
 
 **Все возможности** (публичные, внутренние, партнерские) доступны в чате, в зависимости от разрешений пользователя:
 
@@ -235,36 +235,36 @@ MCP Сервер: Superdav AI Агент
 - Обычные пользователи видят только публичные возможности
 - Партнеры видят публичные + партнерские возможности (если они внесены в белый список)
 
-## Лучшие практики безопасности
+## Лучшие практики безопасности {#security-best-practices}
 
-### Принцип наименьших привилегий
+### Принцип наименьших привилегий {#principle-of-least-privilege}
 
-### ИAbility-ләрнең көчлелигин соңгы яки ең тагын тыешеллек дәрәҗәгегә куйгыз
+### ИAbility-ләрнең көчлелигин соңгы яки ең тагын тыешеллек дәрәҗәгегә куйгыз {#regular-audits}
 
 * Эзәгатьләрнең (abilities) исәпкә алыла торган иң тыешеллек визибилитэтине куйгыз.
 * Чукурлы операциялар өчен Партнер визибилитене ислемегез.
 * Исемесез укыган эзәгатьләрне абатсыз калдырылганларын өчкән (disable) җибәрегез.
 
-### Кадим使 аудиторлар (Regular Audits)
+### Кадим使 аудиторлар (Regular Audits) {#logging-and-monitoring}
 
 * Эзәгать визибилитене айлыкка карата күчегез.
 * Классификасез эзәгатьләр бар-ми дип текчагыз.
 * Ислемесез партнерлар өчен кирәк булмаган киләчәкне алып тарыгыз.
 
-### Логирование һәм Мониторинг (Logging and Monitoring)
+### Логирование һәм Мониторинг (Logging and Monitoring) {#third-party-abilities}
 
 * Кач эзәгатьләр күтәлегенди карагыз.
 * Партнерларның киләчәкне карап чыгыгыз.
 * Тыныш булмаган эзәгать укыйлары өчен хабарландыру (alert) кулланыгыз.
 
-### Үч-ючлы Эзәгатьләр (Third-Party Abilities)
+### Үч-ючлы Эзәгатьләр (Third-Party Abilities) {#troubleshooting}
 
 * Ислеме активлаудан өчерелмәдеңиз уч-ючлы эзәгатьләрне карап чыгыгыз.
 * Мисол өчен, аларның нинди буларак булганларын ачык-ачык классификациялагыз.
 * Укыйлардан башлагыз: Ички (Internal) ва Партнер визибилитене.
 * Тек сыйнындап чыгыдан соң – Публик (Public) визибилитене күчегез.
 
-## Проблемләрне çözү (Troubleshooting)
+## Проблемләрне çözү (Troubleshooting) {#migration-from-legacy-mode}
 
 **Эзәгать списокта күрмәләре**
 * Эзәгать нинди кулланылып калдырылганлыгын текчагыз.
@@ -287,7 +287,7 @@ MCP Сервер: Superdav AI Агент
 - Сіздің классификацияңыз сақталғанын тексеріңіз.
 - Мүмкіндікті ұсынған плагин жаңартылған екенін тексеріңіз.
 
-## Ескі режимнен миграциялау
+## Ескі режимнен миграциялау {#next-steps}
 
 Егер сіз Superdav AI Agent-тің ескі нұсқасынан жаңартып отырсаңыз:
 

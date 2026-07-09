@@ -3,15 +3,15 @@ title: Gawe Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Gawe Menu
+# Gawe Menu {#create-menu}
 
 Kemampuan **Gawe Menu** nggawe menu navigasi WordPress kanthi dhukungan kanggo label navigasi sing kapisah saka irah-irahan kaca.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Kemampuan iki ngluwihi fungsionalitas standar nggawe menu kanthi kemampuan kanggo nemtokake paramèter `navigation_label`. Iki ngidini sampeyan nggawe menu ing ngendi label sing ditampilake ing navigasi béda saka irah-irahan kaca, menehi keluwesan luwih gedhé ing struktur situs lan pengalaman pangguna.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Paramèter | Jinis | Wajib | Katrangan |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Kemampuan iki ngluwihi fungsionalitas standar nggawe menu kanthi kemampuan kangg
 | `location` | string | Ora | Lokasi theme kanggo masrahake menu iki, umpamané `primary` |
 | `navigation_label` | string | Ora | Label kanggo ditampilake ing navigasi (béda saka irah-irahan kaca) |
 
-## Nilai Balikan
+## Nilai Balikan {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Kemampuan iki ngluwihi fungsionalitas standar nggawe menu kanthi kemampuan kangg
 }
 ```
 
-## Label Navigasi vs Irah-irahan Kaca
+## Label Navigasi vs Irah-irahan Kaca {#navigation-label-vs-page-title}
 
 Paramèter `navigation_label` ngidini sampeyan misahake jeneng menu internal saka label sing ditampilake marang pangguna:
 
@@ -43,9 +43,9 @@ Iki migunani nalika:
 - Panjenengan kudu ndhukung pirang-pirang basa kanthi dawa label sing béda-béda
 - Panjenengan nggawe menu kanggo wilayah tartamtu utawa kelompok pangguna tartamtu
 
-## Tuladha Panggunaan
+## Tuladha Panggunaan {#usage-examples}
 
-### Tuladha 1: Menu Prasaja nganggo Label Navigasi
+### Tuladha 1: Menu Prasaja nganggo Label Navigasi {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Gawe menu navigasi utama sing dijenengi "Main Navigation" nganggo label navigasi
 }
 ```
 
-### Tuladha 2: Menu kanggo Lokasi Theme Tartamtu
+### Tuladha 2: Menu kanggo Lokasi Theme Tartamtu {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Gawe menu footer sing dijenengi "Footer Links" nganggo label navigasi "Quick Lin
 }
 ```
 
-## Integrasi karo Theme Builder
+## Integrasi karo Theme Builder {#integration-with-theme-builder}
 
 Nalika nggunakake Theme Builder, kemampuan Gawe Menu:
 
@@ -89,13 +89,13 @@ Nalika nggunakake Theme Builder, kemampuan Gawe Menu:
 3. Masrahake menu menyang lokasi theme sing bener
 4. Ndhukung nambah item menu sawise digawe
 
-## Kemampuan Gegandhengan
+## Kemampuan Gegandhengan {#related-abilities}
 
 - **`add_menu_item`** — Nambah item menyang menu sing wis ana
 - **`update_menu`** — Ngganti jeneng menu utawa masrahake maneh menyang lokasi theme
 - **`delete_menu`** — Mbusak menu saka situs panjenengan
 
-## Praktik Paling Apik
+## Praktik Paling Apik {#best-practices}
 
 - **Gunakake label navigasi sing cetha** — jaga supaya label ringkes lan nerangake kanggo pangguna
 - **Cocogake lokasi theme** — pasrahake menu menyang lokasi theme sing bener supaya tampilan trep
@@ -103,14 +103,14 @@ Nalika nggunakake Theme Builder, kemampuan Gawe Menu:
 - **Tes responsivitas** — priksa manawa menu tampil kanthi bener ing piranti seluler
 - **Lokalisasi label** — gunakake label navigasi sing béda kanggo versi basa sing béda
 
-## Watesan
+## Watesan {#limitations}
 
 - Label navigasi mung kanggo tampilan; `name` internal isih digunakake kanggo identifikasi WordPress
 - Dhukungan theme béda-béda; ora kabeh theme ndhukung kabeh lokasi menu
 - Item menu kudu ditambahake kapisah sawise menu digawe
 - Ngganti label navigasi mbutuhake nganyari menu
 
-## Kemampuan Gegandhengan
+## Kemampuan Gegandhengan {#related-abilities-1}
 
 - [Gawe Logo SVG](./generate-logo-svg.md) — nggawe logo kanggo header situs panjenengan
 - [Validasi Kontras Palet](./validate-palette-contrast.md) — mesthekake skema werna sing bisa diakses

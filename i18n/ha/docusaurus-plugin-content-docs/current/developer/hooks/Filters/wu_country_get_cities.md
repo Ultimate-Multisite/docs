@@ -4,11 +4,11 @@ title: Tacewa - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 Yana dawo da jerin garuruwa na jiha a cikin ƙasa.
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Yana dawo da jerin garuruwa na jiha a cikin ƙasa.
 | $state_code | `string` | Lambar ISO mai haruffa biyu don jihar. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance na class na yanzu. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 2.0.11
-### Tushe
+### Tushe {#source}
 
 An ayyana a cikin [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) a layi na 146
 
 
-## Yana dawo da
+## Yana dawo da {#returns}
 Jerin jihohi da aka tace.

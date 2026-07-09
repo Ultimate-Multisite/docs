@@ -3,11 +3,11 @@ title: Zhvillimi i portës së personalizuar
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Zhvillimi i portave të personalizuara
+# Zhvillimi i portave të personalizuara {#custom-gateway-development}
 
 Mund të krijoni porta pagesash të personalizuara duke zgjeruar klasën `Base_Gateway`.
 
-## Klasa e portës
+## Klasa e portës {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Regjistroni portën
+## Regjistroni portën {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Metodat kryesore
+## Metodat kryesore {#key-methods}
 
 | Metoda | Qëllimi |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Trajton kërkesat për rimbursim |
 | `get_payment_methods()` | Kthen metodat e ruajtura të pagesës për një klient |
 
-## Kredencialet e rinovimit për anëtarësimet e përsëritura
+## Kredencialet e rinovimit për anëtarësimet e përsëritura {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 u lejon integrimeve të portave të raportojnë nëse një anëtarësim i përsëritur ka një kredencial rinovimi të ripërdorshëm përpara se `auto_renew` të ruhet. Lidhuni me `wu_membership_has_renewal_credential` dhe ktheni:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Pastroni shenjuesin e kredencialit që mungon si pjesë e rrjedhës së suksesshme të riautorizimit të portës suaj pasi të ruhet një kredencial i ri i ripërdorshëm.
 
-## Këshilla
+## Këshilla {#tips}
 
 - Gjithmonë ktheni `WP_Error` në rast dështimi që Ultimate Multisite të mund të trajtojë shfaqjen e gabimit
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Përdorni `wu_log_add()` për regjistrim specifik për portën
 
-## Aftësitë e ofruesve të konektorit AI
+## Aftësitë e ofruesve të konektorit AI {#ai-connector-provider-capabilities}
 
 Integrimet e personalizuara që thërrasin operacione të mbështetura nga konektori AI duhet të përputhen me grupin e mbështetur të ofruesve OAuth të prezantuar me AI Provider for Anthropic Max v1.3.0:
 

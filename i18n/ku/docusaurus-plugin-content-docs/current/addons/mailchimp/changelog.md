@@ -3,7 +3,7 @@ title: Tomara guhertinan a Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Guhertinên Mailchimp
+# Guhertinên Mailchimp {#mailchimp-changelog}
 
 Guherto: 1.1.1 - Di 2025-09-28 de hat berdan
 

@@ -3,13 +3,13 @@ title: Valdojimo laukelis ir klientų DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Poledė ir klientų DNS valdymo laipsnis
+# Poledė ir klientų DNS valdymo laipsnis {#checkout-field-and-customer-dns-management}
 
-## Domeno pasirinkimo checkout laipsnis
+## Domeno pasirinkimo checkout laipsnis {#the-domain-selection-checkout-field}
 
 Laipsnis **Domain Selection** yra checkout elementas, kuris suteikia klientams pasirinkimą, kaip gauti savo svetainės domeną. Pridėkite jį į bet kokį checkout formą, kad įveiktumėte domenų pardavimą.
 
-### Laipsnio pridėjimas prie checkout formos
+### Laipsnio pridėjimas prie checkout formos {#adding-the-field-to-a-checkout-form}
 
 1. Eikite į **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Atidarykite arba sukurkite checkout formą
@@ -18,7 +18,7 @@ Laipsnis **Domain Selection** yra checkout elementas, kuris suteikia klientams p
 5. Konfigūruokite laipsnio nustatymus (pateikta below)
 6. Išsaugokite formą
 
-### Laipsnio nustatymai
+### Laipsnio nustatymai {#field-options}
 
 **Domain modes** — Pasirinkite, kokias languotas klientas pamatys. Kiekvienas režimas gali būti įjungtas arba išjungtas nepriklausomai:
 
@@ -32,7 +32,7 @@ Laipsnis **Domain Selection** yra checkout elementas, kuris suteikia klientams p
 
 **Domain product** (Domenos produktas) — Galite opcionai sužymėti šį laipsnį su konkretiu domenų produktumu. Jei ne nustatyta, addon automatiškai pasirinks atitinkamą produktą, remiantis TLD, kurį ieško klientas.
 
-### Registrant kontaktų laipsniai
+### Registrant kontaktų laipsniai {#registrant-contact-fields}
 
 Kai klientas pasirinksite **Register New Domain** languotą, checkout forma įdiegia registrantų kontaktų laipsnius tiesiogiai:
 
@@ -43,11 +43,11 @@ Kai klientas pasirinksite **Register New Domain** languotą, checkout forma įdi
 
 Šie reikalavimai yra reikalinga visiems registratoriams ir valginami prieš atlikdami registracijos API laukimo. Telefonai automatiškai formatuojami į pradinį `+CC.NNN` tarptautinį formatą, kurį reikalauja registratoriai.
 
-### Automatinis svetainės URL adresas
+### Automatinis svetainės URL adresas {#auto-generated-site-url}
 
 Kai klientas registruojasi arba nurodo domeną, laukimo laukas svetainės URL adresu automatiškai užpildomas pasirinkto domeno pagalba. Klientams ne reikia įrašyti atskirta URL adreso laukelį.
 
-### Paieškos veikimas
+### Paieškos veikimas {#search-behaviour}
 
 - Domeno prieinamumas yra проверяjamas realiu laiku naudojant AJAX, kol vartotojas rašys
 - Kai pasirinktas domenas nėra prieinamas, rodomos alternatyvios TLD (top level domain) pasiūlymai
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Klientų DNS valdymo
+## Klientų DNS valdymo {#customer-dns-management}
 
 Klientai gali valdyti DNS įrašus savo registruotiems domenams iš **Mano paskyros** puslapio, esant savo domeno įraše.
 
-### Palaikomi įrašo tipai
+### Palaikomi įrašo tipai {#supported-record-types}
 
 | Tipas | Naudojimas |
 |---|---|
@@ -91,11 +91,11 @@ Klientai gali valdyti DNS įrašus savo registruotiems domenams iš **Mano pasky
 | **MX** | Nustatyti el. pašto paslaugų serverį |
 | **TXT** | Pridėti SPF, DMARC, patvirtinimo arba kitus tekstinius įrašus |
 
-### Kuri tiekėjai palaiko DNS valdymo?
+### Kuri tiekėjai palaiko DNS valdymo? {#which-providers-support-dns-management}
 
 Z managemento (pridėti, redaguoti, ištrinti įrašus) yra įvairiame OpenSRS, ResellerClub, Enom, HostAfrica ir Openprovider. Hostinger domenų vardus galima atnaujinti per Domain Seller; DNS įrašai hostingu valdyti core Hostinger domain-mapping integracija. Namecheap, GoDaddy ir NameSilo domenų vardai rodo statusą ir galiojimo informaciją, bet DNS turi būti valdytas tiesiogiai registratorio kontrolio panelis perdirbe.
 
-### Pagrindiniai DNS įrašai
+### Pagrindiniai DNS įrašai {#default-dns-records}
 
 Jūs galite nustatyti pagrindinius DNS įrašus, kurie automatiškai taikomi, kai domenų vardas registruojamas. Eikite į **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Administracija: DNS peržiūra ir redagavimas
+### Administracija: DNS peržiūra ir redagavimas {#admin-viewing-and-editing-dns}
 
 Tinklinės administratoriai gali peržiūrėti ir redaguoti DNS įrašus bet kurio klientų domenų nuo domaino redaguojimo puslapio **Network Admin › Ultimate Multisite › Domains**.

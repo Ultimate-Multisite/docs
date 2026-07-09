@@ -3,9 +3,9 @@ title: دەستپێکردن بە پەرەپێدانی Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# پەرەپێدانی پێوەکراو
+# پەرەپێدانی پێوەکراو {#addon-development}
 
-## پێکهاتەی پێوەکراو
+## پێکهاتەی پێوەکراو {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## قاڵبی فایلی سەرەکی پێوەکراو
+## قاڵبی فایلی سەرەکی پێوەکراو {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## نموونەی مۆدێلی تایبەت
+## نموونەی مۆدێلی تایبەت {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## یەکخستنی پەڕەی بەڕێوەبەرایەتی
+## یەکخستنی پەڕەی بەڕێوەبەرایەتی {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## تاقیکردنەوەی Addonـەکەت
+## تاقیکردنەوەی Addonـەکەت {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## خاڵەکانی فراوانکردنی v2.13.0
+## خاڵەکانی فراوانکردنی v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 چەند خاڵێکی فراوانکردن زیاد دەکات کە بۆ ئەو addonانە بەسوودن کە لەگەڵ بەکرێگیراوانی سەربەخۆ، دۆمەینەکانی checkout، یان خۆکارکردنی DNSی دابینکەری خانەخوێ یەکدەگرنەوە.
 
-### SSO و بەستەرەکانی بەڕێوەبردنی ماڵپەڕی سەرەکی
+### SSO و بەستەرەکانی بەڕێوەبردنی ماڵپەڕی سەرەکی {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### دۆمەینە بنەڕەتییەکانی فۆڕمی checkout
+### دۆمەینە بنەڕەتییەکانی فۆڕمی checkout {#checkout-form-base-domains}
 
 `wu_checkout_form_base_domains` بەکاربهێنە کاتێک addonـەکەت دۆمەینی بنەڕەتی هاوبەشی زیاتر دابین دەکات کە دەبێت وەک دۆمەینەکانی **Site URL**ی فۆڕمی checkout هەڵسوکەوت بکەن نەک وەک نەخشاندنە تایبەتەکانی هەر ماڵپەڕێک:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite ئەم خانەخوێیانە نۆرماڵ دەکات و تۆمارەکانی دۆمەینی نەخشێنراوی خۆکاری هەر ماڵپەڕێکیان بۆ تێدەپەڕێنێت.
 
-### دروستکردنی خۆکاری تۆماری دۆمەین
+### دروستکردنی خۆکاری تۆماری دۆمەین {#automatic-domain-record-creation}
 
 `wu_should_create_domain_record_for_site` بەکاربهێنە کاتێک addonـەکەت پێویستی بە سەرکوتکردن یان دواخستنی دروستکردنی خۆکاری تۆماری دۆمەین بۆ ماڵپەڕێکی تازە دروستکراو هەیە:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 یەکگرتنەوەکانی دابینکەری خانەخوێ کە گوێ لە `wu_add_subdomain` دەگرن دەتوانن کاتێک ماڵپەڕەکان دروست دەکرێن تۆمارەکانی DNS لای دابینکەر دروست بکەن. ئەگەر هیچ یەکگرتنەوەیەک بۆ ئەو کردارە تۆمار نەکرابێت، Ultimate Multisite کاری پاشبنەمای بەتاڵ تێدەپەڕێنێت.
 
-## هەنگاوەکانی دواتر
+## هەنگاوەکانی دواتر {#next-steps}
 
 - [سەرچاوەی Hooks](/developer/hooks) بۆ کردار و فلتەرە بەردەستەکان پێداچوونەوە بکە
 - [پوختەی REST API](/developer/rest-api/overview) بۆ یەکگرتنەوەی API بپشکنە

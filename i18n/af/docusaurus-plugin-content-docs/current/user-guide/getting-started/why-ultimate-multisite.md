@@ -3,11 +3,11 @@ title: Hoekom Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Hoekom Ultimate Multisite
+# Hoekom Ultimate Multisite {#why-ultimate-multisite}
 
 As jy hierdie artikel bereik het, het jy waarskynlik gehoor dat ons plugin die oplossing kan wees om jou besigheidsidee werklikheid te maak. Ons hoop jy het teen die einde van hierdie stuk die antwoorde wat jy nodig het.
 
-## Wat is Ultimate Multisite?
+## Wat is Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite is 'n WordPress Multisite plugin wat jou in staat stel om kliënte 'n WaaS (’n Website as 'n Diens) aan te bied. Met ons plugin kan jy verskillende abonnementsverdiepings hê en kliënte laat betaal vir 'n periodieke fooi om 'n webwerf in jou Multisite-netwerk te laat hê.
 
@@ -15,7 +15,7 @@ Ultimate Multisite laat jou toe om jou betalings te ontvang met verskillende gat
 
 En dit is nog net die begin, aangesien jy sy funksies kan uitbrei met add-ons en webhooks.
 
-## Ander kenmerke
+## Ander kenmerke {#other-features}
 
 Ultimate Multisite bied ook:
 
@@ -33,11 +33,11 @@ En meer gevorderde ding:
 
   * Soek-en-Vervang API: Jy kan ook webwerf-templates met platheidsplekke soos {{site_name}} aanmerk en die Soek-en-Vervang API gebruik om daardie platheidsplekke outomaties met inligting wat deur jou kliënt verskaf word, reg na registrasie, outomaties te vul.
 
-## Gebruiksvoorstelle
+## Gebruiksvoorstelle {#use-cases}
 
 Dit is nou tyd om van die moontlike gebruiksvoorstelle vir Ultimate Multisite te sien.
 
-### Geval 1: 'n Agentuur
+### Geval 1: 'n Agentuur {#case-1-an-agency}
 
 Die kernvaardighede van 'n agentuur lê tipies in die ontwerp van webwerwe met aspekte soos hul hosting of bemarking wat as bykomende dienste aangebied word.
 
@@ -47,7 +47,7 @@ Strak beheer oor plugins en temas word op 'n per-produk-basis gehandhaaf deur Ul
 
 Agenture sal gemoedsrus vind met Ultimate Multisite wat hulle toelaat om wat hulle die beste kan doen – die ontwerp van uitsonderlike webwerwe.
 
-### Geval 2: Niche-aanbieder
+### Geval 2: Niche-aanbieder {#case-2-niche-provider}
 
 Daar is 'n ou spreekwoord wat sê: “Do one thing and do it well” (Doen een ding en doen dit goed). Vir baie spesialiste beteken dit om 'n produk of diens rondom 'n enkele kernidee te skep.
 
@@ -57,7 +57,7 @@ Een van Ultimate Multisite se innoverende kenmerke, 'n template site, is een waa
 
 Vir 'n aanbieder van niche-webwerwe en -dienste, bied dit 'n ongeëwenaarde voordeel in die vermoë om onmiddellik 'n webwerf te skep wat gereed is met aangepaste plugins en ontwerp. Die kliënt hoef net minimale invoer te verskaf om die diens te voltooi.
 
-### Geval 3: WordPress Webhosting
+### Geval 3: WordPress Webhosting {#case-3-wordpress-web-hosting}
 
 Daar is 'n myriade maniere om WordPress-webwerwe te huisves, maar selde is dit so eenvoudig soos om webruimte aan 'n kliënt te verskaf met 'n vooraf-geïnstalleerde weergawe van WordPress. Dit is omdat 'n aantal besluite en oorwegings saamgekom moet word om 'n betekenisvolle diens te verskaf.
 

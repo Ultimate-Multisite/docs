@@ -4,11 +4,11 @@ title: การดำเนินการ - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog
+# Action: add_user_to_blog {#action-addusertoblog}
 
 จะทำงานทันทีหลังจากที่มีการเพิ่มผู้ใช้เข้าสู่เว็บไซต์
 
-## พารามิเตอร์ (Parameters)
+## พารามิเตอร์ (Parameters) {#parameters}
 
 | Name | Type | คำอธิบาย (Description) |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 | $role | `string` | บทบาทของผู้ใช้ |
 | $blog_id | `int` | ID ของบล็อก |
 
-### ตั้งแต่ (Since)
+### ตั้งแต่ (Since) {#since}
 
 - MU: MU
-### แหล่งที่มา (Source)
+### แหล่งที่มา (Source) {#source}
 
 - กำหนดไว้ใน [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) บรรทัดที่ 174

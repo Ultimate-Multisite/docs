@@ -3,11 +3,11 @@ title: Провайдерди эске алган промптту кэштөө
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Провайдерди эске алган Prompt Caching
+# Провайдерди эске алган Prompt Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 **провайдерди эске алган prompt caching** мүмкүнчүлүгүн киргизет, ал ар башка LLM провайдерлеринин ортосунда prompt’торду кэштөө аркылуу API чыгымдарын жана кечигүүнү оптималдаштырат. Ар бир провайдердин кэштөө механизмдери жана конфигурациялары ар башка.
 
-## Жалпы сереп
+## Жалпы сереп {#overview}
 
 Prompt caching төмөнкүлөргө мүмкүндүк берет:
 
@@ -23,11 +23,11 @@ Prompt caching төмөнкүлөргө мүмкүндүк берет:
 - **OpenRouter**: Провайдерге мүнөздүү кэштөө
 - **Vertex Anthropic**: Кэшти башкаруу менен prompt caching
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini `cachedContents` API аркылуу ачык кэш башкарууну камсыздайт.
 
-### Конфигурация
+### Конфигурация {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Кэштелген Prompt түзүү
+### Кэштелген Prompt түзүү {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Кэштелген Prompt колдонуу
+### Кэштелген Prompt колдонуу {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Кэштин жашоо цикли
+### Кэштин жашоо цикли {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini үчүн мыкты тажрыйбалар
+### Gemini үчүн мыкты тажрыйбалар {#best-practices-for-gemini}
 
 - **Ылайыктуу TTL коюңуз**: Чыгымды үнөмдөө менен кэштин эскирип калышынын ортосунда тең салмак сактаңыз
 - **Системалык prompt’торду кэштеңиз**: Бир эле системалык prompt’ту сурамдар боюнча кайра колдонуңуз
 - **Кэш колдонулушун көзөмөлдөңүз**: Кайсы кэштер эң көп колдонуларын байкаңыз
 - **Мөөнөтү бүткөн кэштерди тазалаңыз**: Колдонулбаган кэштерди мезгил-мезгили менен өчүрүңүз
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI автоматтык TTL башкаруусу менен prompt caching’ди колдойт.
 
-### Конфигурация
+### Конфигурация {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Кэштөөнү иштетүү
+### Кэштөөнү иштетүү {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Кэш Header’лери
+### Кэш Header’лери {#cache-headers}
 
 Azure OpenAI кэшти башкаруу үчүн HTTP header’лерин колдонот:
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: Бул сурамды кэштебөө
 - `no_store`: Кэштебөө жана кайра колдонбоо
 
-### Кэш колдонулушун көзөмөлдөө
+### Кэш колдонулушун көзөмөлдөө {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Azure OpenAI үчүн мыкты тажрыйбалар
+### Azure OpenAI үчүн мыкты тажрыйбалар {#best-practices-for-azure-openai}
 
 - **Туруктуу prompt’торду колдонуңуз**: Бирдей prompt’тор кэштөөдөн пайда көрөт
 - **Акылга сыярлык TTL коюңуз**: Чыгым менен жаңылыктын ортосунда тең салмак сактаңыз
 - **Кэш метрикаларын көзөмөлдөңүз**: Кэш түзүлүшүн жана дал келүүлөрүн байкаңыз
 - **Окшош сурамдарды топтоп жөнөтүңүз**: Кэш дал келүүлөрүн көбөйтүү үчүн сурамдарды топтоңуз
 
-## OpenRouter: Провайдерге мүнөздүү кэштөө
+## OpenRouter: Провайдерге мүнөздүү кэштөө {#openrouter-provider-specific-caching}
 
 OpenRouter негизги провайдерлер (OpenAI, Anthropic ж.б.) аркылуу кэштөөнү колдойт.
 
-### Конфигурация
+### Конфигурация {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter кэштөөсүн колдонуу
+### OpenRouter кэштөөсүн колдонуу {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Провайдерге мүнөздүү параметрлер
+### Провайдерге мүнөздүү параметрлер {#provider-specific-options}
 
 Ар башка провайдерлердин кэштөө механизмдери ар башка:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter үчүн мыкты тажрыйбалар
+### OpenRouter үчүн мыкты тажрыйбалар {#best-practices-for-openrouter}
 
 - **Провайдериңиздин кэштөөсүн билиңиз**: Ар бир провайдердин механизмдери ар башка
 - **Кэштөө жүрүм-турумун текшериңиз**: Тандалган провайдериңиз менен кэштөө иштээрин ырастаңыз
 - **Чыгымдарды көзөмөлдөңүз**: Кэштөөдөн түшкөн үнөмдү байкаңыз
 - **Туруктуу моделдерди колдонуңуз**: Моделдерди алмаштыруу кэш дал келүүлөрүн үзөт
 
-## Vertex Anthropic: Кэшти башкаруу менен Prompt Caching
+## Vertex Anthropic: Кэшти башкаруу менен Prompt Caching {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) ачык кэш башкаруусу менен prompt caching’ди колдойт.
 
-### Конфигурация
+### Конфигурация {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic кэшин колдонуу
+### Vertex Anthropic кэшин колдонуу {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Кэшти башкаруу түрлөрү
+### Кэшти башкаруу түрлөрү {#cache-control-types}
 
 - **ephemeral**: Сурамдын узактыгына кэштөө (демейки)
 - **persistent**: Бир нече сурам боюнча кэштөө (эгер колдоого алынса)
 
-### Кэш колдонулушун көзөмөлдөө
+### Кэш колдонулушун көзөмөлдөө {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic үчүн мыкты практикалар
+### Vertex Anthropic үчүн мыкты практикалар {#best-practices-for-vertex-anthropic}
 
 - **Эфемердик кэштөөнү колдонуңуз**: Бир сессиялык кэштөө үчүн жакшы
 - **max_tokens маанисин ылайыктуу коюңуз**: Кэш өлчөмү менен нарктын ортосунда тең салмак сактаңыз
 - **Кэш метрикаларын көзөмөлдөңүз**: Кэштин натыйжалуулугун байкаңыз
 - **Жумуш жүгүңүз менен сынаңыз**: Кэштөө сиздин колдонуу жагдайыңызга пайда алып келерин текшериңиз
 
-## Провайдерлер аралык кэштөө стратегиясы
+## Провайдерлер аралык кэштөө стратегиясы {#cross-provider-caching-strategy}
 
-### Бирдиктүү конфигурация
+### Бирдиктүү конфигурация {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Провайдерди аныктоо
+### Провайдерди аныктоо {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Резервдик стратегия
+### Резервдик стратегия {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Наркты оптималдаштыруу
+## Наркты оптималдаштыруу {#cost-optimization}
 
-### Үнөмдөөнү эсептөө
+### Үнөмдөөнү эсептөө {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Оптималдаштыруу кеңештери
+### Оптималдаштыруу кеңештери {#optimization-tips}
 
 - **Чоң системалык чакырыктарды кэштөө**: Эң чоң нарк үнөмдөөсү
 - **Контекстти кайра колдонуңуз**: Көп колдонулган контекст документтерин кэштеңиз
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Кэштин натыйжалуулугун көзөмөлдөңүз**: Чыныгы үнөмдөөнү байкаңыз
 - **TTL тууралаңыз**: Нарк менен жаңылыктын ортосунда тең салмак сактаңыз
 
-## Көйгөйлөрдү чечүү
+## Көйгөйлөрдү чечүү {#troubleshooting}
 
-### Кэш колдонулбай жатат
+### Кэш колдонулбай жатат {#cache-not-being-used}
 
 - Конфигурацияда кэштөө иштетилгенин текшериңиз
 - Чакырыктар бирдей экенин текшериңиз (кэштөө так дал келүүнү талап кылат)
 - Кэштин мөөнөтү өтө элек экенин текшериңиз
 - Провайдерге тиешелүү кэш чектөөлөрүн текшериңиз
 
-### Кэш түзүү ишке ашпай жатат
+### Кэш түзүү ишке ашпай жатат {#cache-creation-failing}
 
 - Кэш өлчөмү провайдер чектеринен ашпаганын текшериңиз
 - Кэшти башкаруу синтаксиси туура экенин текшериңиз
 - Провайдер сиздин моделиңиз үчүн кэштөөнү колдой турганын камсыздаңыз
 - Чектөөлөр боюнча провайдер документтерин карап чыгыңыз
 
-### Күтүлбөгөн чыгымдар
+### Күтүлбөгөн чыгымдар {#unexpected-costs}
 
 - Кэш түзүү менен кэштен окуу токендерин көзөмөлдөңүз
 - Кэш чынында колдонулуп жатканын текшериңиз
 - Чакыруу өзгөрүүлөрүнөн улам кэш өткөрүп жиберүүлөрүн текшериңиз
 - TTL же кэш стратегиясын тууралоону карап көрүңүз
 
-## Провайдерлерди салыштыруу
+## Провайдерлерди салыштыруу {#provider-comparison}
 
 | Өзгөчөлүк | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Наркты азайтуу | 90% | 90% | Провайдерге көз каранды | 90% |
 | Көзөмөлдөө | Деталдуу | Метрикалар аркылуу | Провайдерге көз каранды | Колдонуу аркылуу |
 
-## Кийинки кадамдар
+## Кийинки кадамдар {#next-steps}
 
 1. **Провайдериңизди тандаңыз**: Муктаждыктарыңызга жараша тандаңыз
 2. **Кэштөөнү конфигурациялаңыз**: Провайдерге тиешелүү кэштөөнү орнотуңуз

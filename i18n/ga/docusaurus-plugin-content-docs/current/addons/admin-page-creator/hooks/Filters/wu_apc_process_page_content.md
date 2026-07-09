@@ -4,11 +4,11 @@ title: Scagaire - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Scagaire: wu_apc_process_page_content
+# Scagaire: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Ligeann sé d’fhorbróirí cur isteach ar an ábhar deiridh
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Ligeann sé d’fhorbróirí cur isteach ar an ábhar deiridh
 | $to_replace | `array` | Eagar ina bhfuil na háitshealbhóirí. |
 | $placeholder_count | `int` | Líon na n-áitshealbhóirí a aimsíodh. |
 
-### Ó
+### Ó {#since}
 
 - 1.4.0
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) ag líne 46
 
 
-## Filleann
+## Filleann {#returns}
 Ábhar tar éis modhnaithe.

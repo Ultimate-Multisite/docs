@@ -3,13 +3,13 @@ title: Je eerste abonnementproduct aanmaken
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Je eerste abonnementsproduct maken (v2)
+# Je eerste abonnementsproduct maken (v2) {#creating-your-first-subscription-product-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel is alleen voor gebruikers van Ultimate Multisite versie 2.x. Als je versie 1.x gebruikt,**_ **_**bekijk dan dit artikel**_**.
 
 Om je netwerk te gaan beheren en je diensten aan potentiële gebruikers te verkopen, heb je verschillende abonnementsopties nodig. Hoe maak je deze producten? Welke soorten producten kun je aanbieden? In dit artikel behandelen we alles wat je moet weten over producten.
 
-## Producttype
+## Producttype {#product-type}
 
 Met Ultimate Multisite kun je twee categorieën producten aan je klanten aanbieden: **abonnementen** en **add-ons** **(Order Bump)**. Add-ons kunnen worden onderverdeeld in twee typen:**pakketten** en **diensten**. Hierna bekijken we hun verschillen en bijzonderheden.
 
@@ -19,7 +19,7 @@ Met Ultimate Multisite kun je twee categorieën producten aan je klanten aanbied
 
   * **Diensten:** add-ons die de functionaliteiten van Ultimate Multisite niet wijzigen. Het zijn taken die je voor je klant uitvoert naast het abonnement dat hij of zij heeft gekocht. Je klant kan bijvoorbeeld een abonnement kopen dat één site toestaat en ook betalen voor een extra dienst die het ontwerp van deze site maakt.
 
-## Producten beheren
+## Producten beheren {#managing-products}
 
 Voor velen kan het tabblad **Products** in Ultimate Multisite **(Ultimate Multisite > Products)** worden gelijkgesteld aan abonnementen in een traditionele hostingomgeving.
 
@@ -29,7 +29,7 @@ Deze sectie helpt je dit essentiële fundament van Ultimate Multisite te begrijp
 
 ![Pagina met productlijst](/img/config/products-list.png)
 
-## Producten toevoegen
+## Producten toevoegen {#adding-products}
 
 Of het nu om een abonnement, pakket of dienst gaat, het startpunt voor het definiëren van een nieuw item is via **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ De interface bevat twee hoofdsecties. Links staan verschillende tabbladen die he
 
 ![Overzicht van productbewerkingspagina](/img/config/product-edit-full.png)
 
-### Beschrijving
+### Beschrijving {#description}
 
 De basisproductinformatie kan worden gedefinieerd door een productnaam en beschrijving op te geven. Deze aanduidingen worden weergegeven overal waar de productinformatie nodig is, zoals bij abonnement- en prijsselectie, facturen, upgrades en dergelijke.
 
 ![Sectie productbeschrijving](/img/config/product-description.png)
 
-### Prijstype
+### Prijstype {#pricing-type}
 
 Aan de rechterkant van de interface kan de basisprijs worden gedefinieerd.
 
@@ -53,7 +53,7 @@ Aan de rechterkant van de interface kan de basisprijs worden gedefinieerd.
 
 Ultimate Multisite ondersteunt drie verschillende prijstypen. De optie **betaald** vraagt de netwerkbeheerder om informatie over de prijs van het product en de factureringsfrequentie.
 
-### Prijsstelling
+### Prijsstelling {#pricing}
 
 De prijscomponent definieert de basisproductprijs en het factureringsinterval.
 
@@ -61,7 +61,7 @@ De prijscomponent definieert de basisproductprijs en het factureringsinterval.
 
 dus een voorbeeldprijs van $29.99 met een instelling van 1 maand factureert elke maand $29.99. Op dezelfde manier factureert een prijs van $89.97 met een instelling van 3 maanden dat bedrag per kwartaal.
 
-### Factureringscycli
+### Factureringscycli {#billing-cycles}
 
 De sectie factureringscycli specificeert de frequentie van het bovengenoemde factureringsinterval en wordt over het algemeen begrepen in het kader van contracten of vaste termijnen.
 
@@ -69,7 +69,7 @@ De sectie factureringscycli specificeert de frequentie van het bovengenoemde fac
 
 Een productprijs van $29.99 met een interval van 1 maand en 12 factureringscycli zou bijvoorbeeld $29.99 per maand voor het product factureren gedurende de daaropvolgende 12 maanden. Met andere woorden, zo'n instelling zou een vaste prijstermijn van $29.99 per maand voor 12 maanden vastleggen en daarna de facturering beëindigen.
 
-### Proefperiode
+### Proefperiode {#trial-period}
 
 Door de schakelaar voor het aanbieden van een proefperiode in te schakelen, kan de netwerkbeheerder een proefperiode voor het product definiëren.
 
@@ -77,7 +77,7 @@ Door de schakelaar voor het aanbieden van een proefperiode in te schakelen, kan 
 
 Tijdens de proefperiode kunnen klanten het product gratis gebruiken en worden ze pas gefactureerd nadat de proefperiode is verlopen.
 
-### Setupkosten
+### Setupkosten {#setup-fee}
 
 Je kunt ook setupkosten toepassen op je abonnement.
 
@@ -85,7 +85,7 @@ Je kunt ook setupkosten toepassen op je abonnement.
 
 Dit betekent dat je klant bij de eerste afschrijving een extra bedrag betaalt (naast de prijs van het abonnement) dat overeenkomt met de kosten die je in deze sectie hebt gedefinieerd.
 
-### Actief
+### Actief {#active}
 
 De actieve schakelaar definieert effectief of het product beschikbaar is voor klanten voor nieuwe aanmeldingen.
 
@@ -93,13 +93,13 @@ De actieve schakelaar definieert effectief of het product beschikbaar is voor kl
 
 Als er bestaande klanten op dit abonnement zitten, zorgt het uitschakelen van de schakelaar er effectief voor dat het abonnement als bestaand wordt behouden en uit toekomstige aanmeldingen wordt verwijderd. **Bestaande klanten op het abonnement blijven gefactureerd worden** totdat ze naar een nieuw abonnement worden overgezet of uit het abonnement worden verwijderd.
 
-### Productafbeelding
+### Productafbeelding {#product-image}
 
 Met de knop **Upload Image** kan de netwerkbeheerder de mediabibliotheek gebruiken om een productafbeelding te selecteren of te uploaden.
 
 ![Sectie productafbeelding](/img/config/product-image.png)
 
-### Verwijderen
+### Verwijderen {#delete}
 
 De knop **Delete Product** verwijdert het product uit het systeem. Deze verschijnt zodra het product is gepubliceerd.
 
@@ -107,11 +107,11 @@ De knop **Delete Product** verwijdert het product uit het systeem. Deze verschij
 
 In tegenstelling tot andere verwijderingen wordt het product niet in een prullenbakstatus geplaatst. Zodra het is verwijderd, is de actie dus onomkeerbaar.
 
-### Productopties
+### Productopties {#product-options}
 
 Zodra de productinformatie op basisniveau is gedefinieerd, helpen de productopties de netwerkbeheerder om de specifieke kenmerken van het product verder te definiëren.
 
-#### Algemeen
+#### Algemeen {#general}
 
 Het tabblad **Algemeen** definieert de algemene kenmerken van het product die niet van toepassing zijn op een van de andere productspecifieke tabbladen.
 
@@ -125,7 +125,7 @@ De **Klantrol** specificeert de rol die aan de klant wordt toegewezen wanneer de
 
 ![Instellingen voor klantrol](/img/config/product-customer-role-settings.png)
 
-#### Upgrades & downgrades
+#### Upgrades & downgrades {#up--downgrades}
 
 Dit tabblad specificeert de upgrade- en downgradepaden die beschikbaar zijn voor een klant binnen hun specifieke niveau.
 
@@ -143,7 +143,7 @@ Om een abonnementsgroep te definiëren, specificeer je de compatibele abonnement
 
 Ultimate Multisite bevat ook een functie voor **order bump**, waarbij passende aanvullende producten en diensten aan abonnementen kunnen worden toegevoegd. Deze worden aan de klant aangeboden als extra items die tijdens het afrekenen of tijdens een upgrade aan abonnementen kunnen worden toegevoegd.
 
-#### Prijsvariaties
+#### Prijsvariaties {#price-variations}
 
 Prijsvariaties stellen de netwerkbeheerder in staat om alternatieve prijsniveaus te specificeren afhankelijk van de duur. Deze instelling maakt het mogelijk om maandelijkse, kwartaal-, jaarlijkse of elke andere factureringsperiode voor hetzelfde product aan te bieden. Je kunt bijvoorbeeld een product instellen op $29.99/maand met een jaarlijkse optie met korting van $249.99/jaar.
 
@@ -165,7 +165,7 @@ Als je basisproductprijs bijvoorbeeld $29.99 per maand is, kun je toevoegen:
 Prijsvariaties alleen voegen geen toggle of schakelaar toe aan de frontend-checkout. Om klanten te laten wisselen tussen factureringsperioden (bijv. Maandelijks / Jaarlijks), moet je een veld **Periodeselectie** toevoegen aan je afrekenformulier. Zie [Afrekenformulieren: een periodeselectie-toggle toevoegen](checkout-forms#adding-a-period-selection-toggle) voor stapsgewijze instructies.
 :::
 
-#### Belastingen
+#### Belastingen {#taxes}
 
 Het tabblad **Belastingen** sluit aan op de belastinginstellingen die zijn opgegeven in **Ultimate Multisite > Instellingen > Belastingen** en meer specifiek op de gedefinieerde belastingtarieven. Raadpleeg de documentatie bij **Ultimate Multisite: Instellingen** om belastingen in te schakelen en toepasselijke belastingtarieven te definiëren.
 
@@ -179,7 +179,7 @@ Zodra het belastingtarief is gedefinieerd in **Ultimate Multisite > Instellingen
 
 Om aan te geven dat een product een belastbaar item is, zet je de schakelaar **Is belastbaar** op actief en selecteer je het toepasselijke belastingtarief in de dropdown Belastingcategorie.
 
-#### Sitesjablonen
+#### Sitesjablonen {#site-templates}
 
 In essentie zijn sitesjablonen volledige WordPress-websites die aan het begin van hun abonnement naar de site van een klant worden gekloond.
 
@@ -201,7 +201,7 @@ Ten slotte overschrijft **C** **hoose Available Site Templates** de templates di
 
 Uiteindelijk, als de netwerkbeheerder wil dat template-selectie plaatsvindt in de checkout-stappen, volstaat de instelling ' _default_ '. Als alternatief, om template-selectie te verwijderen en te vergrendelen en de selectie te delegeren aan de plan-instellingen, kunnen de opties ' _assign new template_ ' of ' _choose available site templates_ ' wenselijk zijn.
 
-#### Sites
+#### Sites {#sites}
 
 Het tabblad **Sites** maakt deel uit van de beperkingsfunctionaliteit van Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Deze instelling specificeert het maximale aantal sites dat een klant onder zijn 
 
 Om de beperking in te schakelen, zet u de schakelaar **sites beperken** op actief en specificeert u het maximale aantal sites in het veld **site allowance**.
 
-#### Bezoeken
+#### Bezoeken {#visits}
 
 Het tabblad **Visits** is een verder onderdeel van het beperkingssysteem van Ultimate Multisite. Met deze instelling kunnen unieke bezoekers aan de site van een klant worden geteld en vervolgens worden afgeknepen.
 
@@ -223,7 +223,7 @@ Om deze functie te gebruiken, zet u de schakelaar **limit unique visits** op act
 
 Zodra deze limiet is bereikt, stopt Ultimate Multisite met het aanbieden van de site van de klant in plaats van een bericht weer te geven dat aangeeft dat limieten zijn overschreden.
 
-#### Gebruikers
+#### Gebruikers {#users}
 
 De 'Users'-beperkingen van Ultimate Multisite stellen de netwerkbeheerder in staat limieten op te leggen aan het aantal gebruikers dat kan worden aangemaakt en aan rollen kan worden toegewezen.
 
@@ -233,7 +233,7 @@ Om de beperkingsfunctie in te schakelen, zet u de schakelaar **limit user** op a
 
 Vervolgens zet u voor elke rol die moet worden beperkt de schakelaar ernaast op actief en definieert u de maximale bovengrens in het juiste veld.
 
-#### Berichttypen
+#### Berichttypen {#post-types}
 
 Het tabblad **Post Types** stelt de netwerkbeheerder in staat gedetailleerde limieten op te leggen aan de uitgebreide reeks berichttypen binnen WordPress.
 
@@ -245,7 +245,7 @@ Om dit limietsubsysteem in te schakelen, zet u de schakelaar **limit post types*
 
 Vervolgens schakelt u voor elk berichttype dat moet worden beperkt de schakelaar in door deze naar rechts te schuiven en de maximale bovengrens in het juiste veld op te geven.
 
-#### Schijfruimte
+#### Schijfruimte {#disk-space}
 
 Het tabblad **Disk Space** stelt netwerkbeheerders in staat de ruimte te beperken die door klanten wordt verbruikt.
 
@@ -257,13 +257,13 @@ Om de beperking van schijfgebruik in te schakelen, zet u de schakelaar **limit d
 
 Specificeer vervolgens de maximale bovengrens in megabytes in het veld **disk space allowanc** e.
 
-#### Aangepast domein
+#### Aangepast domein {#custom-domain}
 
 Door deze optie in te schakelen kunt u specifiek op dit plan aangepaste domeinen toestaan.
 
 ![Tabblad Custom Domains](/img/config/product-custom-domains.png)
 
-#### Themes
+#### Themes {#themes}
 
 Het tabblad **Themes** binnen de productopties stelt de netwerkbeheerder in staat themes beschikbaar te maken voor klanten om te selecteren en optioneel de status van de theme af te dwingen.
 
@@ -281,7 +281,7 @@ De selectie **behavior** stelt de netwerkbeheerder in staat de status van de the
 
 In de status **A** **vailable** wordt de theme beschikbaar gemaakt voor de klant voor zelfactivatie. Omgekeerd ontneemt de status **Not Available** de klant de mogelijkheid om de theme te activeren. Ten slotte forceert de optie **Force Activate** de selectie en activatie van de theme, waardoor deze als standaard wordt ingesteld bij het aanmaken van de site.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Vergelijkbaar met het tabblad Themes stelt Ultimate Multisite de netwerkbeheerder in staat de zichtbaarheid van plugins voor klanten te definiëren, evenals hun status bij het aanmaken van een nieuwe site.
 
@@ -301,7 +301,7 @@ De instelling **Geforceerd activeren en vergrendelen** werkt vergelijkbaar, maar
 
 De netwerkbeheerder kan overwegen de instellingen Geforceerd activeren en vergrendelen en Geforceerd deactiveren en vergrendelen te gebruiken in combinatie met sitesjablonen, omdat plugins en pluginstatussen binnen de sjablonen door deze instellingen kunnen worden beïnvloed als ze worden geselecteerd.
 
-#### Beperkingen resetten
+#### Beperkingen resetten {#reset-limitations}
 
 Het tabblad **Beperkingen resetten** reset alle aangepaste limieten die op het product zijn gedefinieerd. Klik op de knop **beperkingen resetten** om beperkingen te resetten.
 
@@ -311,7 +311,7 @@ Om de actie te bevestigen, schuif je de schakelaar **reset bevestigen** naar de 
 
 ![Tabblad Beperkingen resetten](/img/config/product-reset-limitations.png)
 
-## Product bewerken, dupliceren of verwijderen
+## Product bewerken, dupliceren of verwijderen {#edit-duplicate-or-delete-product}
 
 Bestaande producten kunnen worden bewerkt, gedupliceerd of verwijderd door naar **Ultimate Multisite > Producten** te navigeren en met de muis over de bestaande productnaam te bewegen.
 

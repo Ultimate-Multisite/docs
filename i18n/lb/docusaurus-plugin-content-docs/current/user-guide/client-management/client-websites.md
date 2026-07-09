@@ -3,7 +3,7 @@ title: Kliänt-Websites
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Iires Kunde-Websites (v2)
+# Iires Kunde-Websites (v2) {#your-clients-websites-v2}
 
 Nachdem Sie sich in unserem Netzwerk registriert händ, chönne Ihre Kunde ihri Dashboard ufrufe.
 

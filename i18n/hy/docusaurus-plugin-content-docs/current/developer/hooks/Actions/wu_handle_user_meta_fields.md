@@ -4,11 +4,11 @@ title: Գործողություն - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Գործողություն՝ wu_handle_user_meta_fields
+# Գործողություն՝ wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Թույլ է տալիս plugin մշակողներին անհրաժեշտության դեպքում օգտատիրոջ մետա տվյալները պահպանել տարբեր ձևերով։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 | $customer | `\Customer` | Ultimate Multisite հաճախորդի օբյեկտը։ |
 | $checkout | `\Checkout` | Checkout դասը։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.0.4
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244)-ում՝ 1244-րդ տողում։

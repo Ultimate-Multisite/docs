@@ -3,15 +3,15 @@ title: Viesmīlības nozares ēdienkartes
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Viesmīlības ēdienkartes
+# Viesmīlības ēdienkartes {#hospitality-menus}
 
 **Viesmīlības ēdienkartes** funkcija ļauj Theme Builder ģenerēt un iegult strukturētas ēdienu un dzērienu ēdienkaršu lapas tieši jūsu WordPress vietnē.
 
-## Pārskats
+## Pārskats {#overview}
 
 Theme Builder tagad var izveidot profesionālas, strukturētas ēdienkaršu lapas viesmīlības uzņēmumiem, tostarp restorāniem, kafejnīcām, bāriem un ēdināšanas pakalpojumiem. Šīs ēdienkartes ir pilnībā integrētas jūsu vietnes dizainā, un tās var viegli atjaunināt un pārvaldīt.
 
-## Atbalstītie viesmīlības veidi
+## Atbalstītie viesmīlības veidi {#supported-hospitality-types}
 
 - **Restorāni** — pilna servisa ēdināšanas ēdienkartes
 - **Kafejnīcas** — kafijas un vieglu uzkodu ēdienkartes
@@ -21,9 +21,9 @@ Theme Builder tagad var izveidot profesionālas, strukturētas ēdienkaršu lapa
 - **Ēdienu furgoni** — mobilās ēdināšanas pakalpojumu ēdienkartes
 - **Alus darītavas un vīna darītavas** — dzērienu ēdienkartes ar aprakstiem
 
-## Ēdienkartes struktūra
+## Ēdienkartes struktūra {#menu-structure}
 
-### Ēdienkartes kategorijas
+### Ēdienkartes kategorijas {#menu-categories}
 
 Ēdienkartes tiek organizētas kategorijās:
 
@@ -34,7 +34,7 @@ Theme Builder tagad var izveidot profesionālas, strukturētas ēdienkaršu lapa
 - **Dzērieni** — dzērieni (alkoholiskie un bezalkoholiskie)
 - **Īpašie piedāvājumi** — dienas vai sezonas īpašie piedāvājumi
 
-### Ēdienkartes vienuma formāts
+### Ēdienkartes vienuma formāts {#menu-item-format}
 
 Katrs ēdienkartes vienums ietver:
 
@@ -49,7 +49,7 @@ Katrs ēdienkartes vienums ietver:
 }
 ```
 
-#### Vienuma lauki
+#### Vienuma lauki {#item-fields}
 
 | Lauks | Tips | Apraksts |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Katrs ēdienkartes vienums ietver:
 | `allergens` | array | Biežākie alergēni (rieksti, vēžveidīgie utt.) |
 | `availability` | string | Kad pieejams (katru dienu, sezonāli utt.) |
 
-## Viesmīlības ēdienkaršu izveide
+## Viesmīlības ēdienkaršu izveide {#creating-hospitality-menus}
 
-### 1. solis: sniedziet ēdienkartes informāciju
+### 1. solis: sniedziet ēdienkartes informāciju {#step-1-provide-menu-information}
 
 Pastāstiet Theme Builder par savu ēdienkarti:
 
@@ -71,7 +71,7 @@ Izveido restorāna ēdienkarti manam itāļu restorānam ar uzkodām,
 pastas ēdieniem, pamatēdieniem un desertiem. Iekļauj cenas un aprakstus.
 ```
 
-### 2. solis: Theme Builder ģenerē ēdienkarti
+### 2. solis: Theme Builder ģenerē ēdienkarti {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formatē cenas un aprakstus
 5. Pievieno uztura un alergēnu informāciju
 
-### 3. solis: pārskatiet un pielāgojiet
+### 3. solis: pārskatiet un pielāgojiet {#step-3-review-and-customize}
 
 Jūs varat:
 
@@ -91,9 +91,9 @@ Jūs varat:
 4. Atjaunināt aprakstus un uztura informāciju
 5. Pielāgot stilu un izkārtojumu
 
-## Ēdienkartes attēlošanas opcijas
+## Ēdienkartes attēlošanas opcijas {#menu-display-options}
 
-### Pilna ēdienkartes lapa
+### Pilna ēdienkartes lapa {#full-menu-page}
 
 Īpaši veltīta lapa, kurā tiek attēlota jūsu pilnā ēdienkarte:
 
@@ -102,7 +102,7 @@ Jūs varat:
 - Drukai draudzīgs izkārtojums
 - Mobilajām ierīcēm pielāgots dizains
 
-### Ēdienkartes logrīks
+### Ēdienkartes logrīks {#menu-widget}
 
 Ieguliet ēdienkartes sadaļas citās lapās:
 
@@ -111,7 +111,7 @@ Ieguliet ēdienkartes sadaļas citās lapās:
 - Dzērienu ēdienkarte bāra lapā
 - Desertu vitrīna kājenē
 
-### Ēdienkartes PDF
+### Ēdienkartes PDF {#menu-pdf}
 
 Ģenerējiet lejupielādējamu PDF ēdienkarti:
 
@@ -120,9 +120,9 @@ Ieguliet ēdienkartes sadaļas citās lapās:
 - Ietver attēlus un aprakstus
 - Viegli kopīgot un nosūtīt pa e-pastu
 
-## Uztura un alergēnu informācija
+## Uztura un alergēnu informācija {#dietary-and-allergen-information}
 
-### Uztura atribūti
+### Uztura atribūti {#dietary-attributes}
 
 Atzīmējiet vienumus ar uztura informāciju:
 
@@ -134,7 +134,7 @@ Atzīmējiet vienumus ar uztura informāciju:
 - **Ar zemu ogļhidrātu saturu** — samazināts ogļhidrātu daudzums
 - **Ar augstu olbaltumvielu saturu** — bagāts ar olbaltumvielām
 
-### Alergēnu brīdinājumi
+### Alergēnu brīdinājumi {#allergen-warnings}
 
 Iekļaujiet biežākos alergēnus:
 
@@ -147,9 +147,9 @@ Iekļaujiet biežākos alergēnus:
 - **Glutēns** — kvieši un glutēnu saturoši graudi
 - **Sezams** — sezama sēklas un eļļa
 
-## Ēdienkartes pārvaldība
+## Ēdienkartes pārvaldība {#menu-management}
 
-### Cenu atjaunināšana
+### Cenu atjaunināšana {#updating-prices}
 
 Viegli atjauniniet ēdienkartes cenas:
 
@@ -159,7 +159,7 @@ Viegli atjauniniet ēdienkartes cenas:
 4. Saglabājiet izmaiņas
 5. Izmaiņas nekavējoties parādās jūsu vietnē
 
-### Sezonas vienumu pievienošana
+### Sezonas vienumu pievienošana {#adding-seasonal-items}
 
 Izveidojiet sezonālas ēdienkartes variācijas:
 
@@ -169,7 +169,7 @@ Izveidojiet sezonālas ēdienkartes variācijas:
 4. Ieplānojiet pieejamības datumus
 5. Automātiski attēlojiet sezonas laikā
 
-### Īpašo piedāvājumu pārvaldība
+### Īpašo piedāvājumu pārvaldība {#managing-specials}
 
 Attēlojiet dienas vai nedēļas īpašos piedāvājumus:
 
@@ -179,7 +179,7 @@ Attēlojiet dienas vai nedēļas īpašos piedāvājumus:
 4. Atjauniniet katru dienu vai katru nedēļu
 5. Arhivējiet vecos īpašos piedāvājumus
 
-## Integrācija ar Theme Builder
+## Integrācija ar Theme Builder {#integration-with-theme-builder}
 
 Izmantojot Theme Builder viesmīlības vietnēm:
 
@@ -189,9 +189,9 @@ Izmantojot Theme Builder viesmīlības vietnēm:
 4. **Mobilā optimizācija** — ēdienkartes skaisti tiek attēlotas tālruņos
 5. **SEO optimizācija** — ēdienkartes ir meklētājprogrammām draudzīgas
 
-## Labākā prakse
+## Labākā prakse {#best-practices}
 
-### Ēdienkartes dizains
+### Ēdienkartes dizains {#menu-design}
 
 - **Skaidra organizācija** — loģiska kategoriju struktūra
 - **Lasāmi apraksti** — apetīti rosinoši un informatīvi
@@ -199,7 +199,7 @@ Izmantojot Theme Builder viesmīlības vietnēm:
 - **Profesionāli fotoattēli** — augstas kvalitātes ēdienu attēli
 - **Tukšā vieta** — nepārblīvējiet lapu
 
-### Saturs
+### Saturs {#content}
 
 - **Precīzi apraksti** — aprakstiet vienumus precīzi
 - **Izceliet īpašos piedāvājumus** — padariet īpašos piedāvājumus pamanāmus
@@ -207,7 +207,7 @@ Izmantojot Theme Builder viesmīlības vietnēm:
 - **Regulāri atjauniniet** — uzturiet cenas un vienumus aktuālus
 - **Izmantojiet apetīti rosinošu valodu** — panāciet, lai vienumi izklausītos gardi
 
-### Pieejamība
+### Pieejamība {#accessibility}
 
 - **Lasāmi fonti** — izmantojiet skaidrus, viegli salasāmus burtveidolus
 - **Pietiekams kontrasts** — nodrošiniet, ka teksts ir salasāms
@@ -215,9 +215,9 @@ Izmantojot Theme Builder viesmīlības vietnēm:
 - **Alergēnu brīdinājumi** — pamanāmi attēlojiet alergēnus
 - **Draudzīgs mobilajām ierīcēm** — testējiet visās ierīcēs
 
-## Piemēri
+## Piemēri {#examples}
 
-### Restorāna ēdienkartes struktūra
+### Restorāna ēdienkartes struktūra {#restaurant-menu-structure}
 
 ```
 Uzkodas
@@ -241,7 +241,7 @@ Deserti
 └── Gelato izlase
 ```
 
-### Kafejnīcas ēdienkartes struktūra
+### Kafejnīcas ēdienkartes struktūra {#cafe-menu-structure}
 
 ```
 Kafija
@@ -260,7 +260,7 @@ Sviestmaizes
 └── Veģetārais tortiljas rullītis
 ```
 
-## Saistītās funkcijas
+## Saistītās funkcijas {#related-features}
 
 - [Izveidot izvēlni](../abilities/create-menu.md) — izveido navigācijas izvēlnes
 - [Dizaina virziens](./design-direction.md) — pielāgo savas vietnes dizainu

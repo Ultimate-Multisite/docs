@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Jinsi ya kutumia vipande vya msimbo vya Ultimate Multisite kutoka kwenye hazina yetu ya GitHub
+# Jinsi ya kutumia vipande vya msimbo vya Ultimate Multisite kutoka kwenye hazina yetu ya GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Kuna vipande vya msimbo vilivyopo kwenye hazina ya GitHub ambavyo mara nyingi vinaombwa na watumiaji wa Ultimate Multisite wanaotaka kuongeza utendaji mdogo kama kuweka script ya Google Analytics kwenye kurasa za usajili au kuficha kisanduku cha meta kutoka kwenye dashibodi ya msimamizi.
 
@@ -19,7 +19,7 @@ Kuna njia 2 za kuongeza msimbo
 
   2. Must-Use Plugins (mu-plugins)
 
-# Jinsi ya kuongeza kipande cha msimbo kwenye faili ya functions.php ya mandhari yako.
+# Jinsi ya kuongeza kipande cha msimbo kwenye faili ya functions.php ya mandhari yako. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Ingia kwenye dashibodi ya msimamizi wa WordPress Network na nenda Themes > Theme Editor (Angalia picha ya skrini hapa chini).
 
@@ -29,7 +29,7 @@ Kuna njia 2 za kuongeza msimbo
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Jinsi ya kuunda Must-Use Plugins (mu-plugins)
+# Jinsi ya kuunda Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress ina kipengele kinachokuruhusu kupakia utendaji maalum unaoitwa "Must-Use Plugins", au "mu-plugins" kwa kifupi.
 

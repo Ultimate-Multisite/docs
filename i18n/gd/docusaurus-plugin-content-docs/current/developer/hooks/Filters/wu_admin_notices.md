@@ -4,11 +4,11 @@ title: Criathrag - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Criathrag: wu_admin_notices
+# Criathrag: wu_admin_notices {#filter-wuadminnotices}
 
 Leig le luchd-leasachaidh brathan rianaire a chuireadh ris le Ultimate Multisite a chriathradh.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Leig le luchd-leasachaidh brathan rianaire a chuireadh ris le Ultimate Multisite
 | $filter | `string` | Ma chaidh na brathan a ghabhas cur à sealladh a chriathradh a-mach. |
 | $dismissed_messages | `array` | Liosta de iuchraichean bhrathan a chaidh a chur à sealladh. |
 
-### Bhon uair
+### Bhon uair {#since}
 
 - 2.0.0
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) aig loidhne 121
 
 
-## Tilleadh
+## Tilleadh {#returns}

@@ -3,7 +3,7 @@ title: PayPal Kurulumu
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway Kurulumu (v2)
+# PayPal Gateway Kurulumu (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne ilişkindir.**_
 
@@ -13,13 +13,13 @@ Stripe gibi PayPal da çevrimiçi ödemeler için, özellikle WordPress web site
 
 Bu entegrasyon için gerekli API kimlik bilgisini almak üzere bir **PayPal Business hesabınız** olması gerektiğini unutmayın.
 
-## Ağınızda PayPal’ı etkinleştirme
+## Ağınızda PayPal’ı etkinleştirme {#enabling-paypal-on-your-network}
 
 PayPal’ı ağınızda kullanılabilir bir ödeme yöntemi olarak etkinleştirmek için **Ultimate Multisite > Settings > Payments** sekmesine gidin ve PayPal’ın yanındaki kutuyu işaretleyin.
 
 ![Etkin ödeme gateway’lerinde PayPal’ı etkinleştirme](/img/config/settings-payment-gateways.png)
 
-## Rehberli kurulum sihirbazını kullanma
+## Rehberli kurulum sihirbazını kullanma {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0, ödeme gateway ayarlarına rehberli bir PayPal kurulum sihirbazı ekler. PayPal’ı etkinleştirdikten sonra, gateway’i nasıl bağlamak istediğinizi seçmek ve kaydetmeden önce hangi kimlik bilgilerinin hâlâ gerekli olduğunu doğrulamak için **Ultimate Multisite > Settings > Payments** üzerindeki sihirbazı kullanın.
 
@@ -30,7 +30,7 @@ Sihirbaz iki kurulum yolunu destekler:
 
 Sihirbazda OAuth seçeneğini görmüyorsanız aşağıdaki manuel kimlik bilgisi giriş akışını tamamlayın. Gateway, önceki Ultimate Multisite 2.x sürümleriyle aynı PayPal Business API kimlik bilgileriyle çalışır.
 
-## PayPal API kimlik bilgilerini alma
+## PayPal API kimlik bilgilerini alma {#getting-the-paypal-api-credentials}
 
 PayPal bir ödeme gateway’i olarak etkinleştirildikten sonra, PayPal API **Username** , PayPal API **Password** ve PayPal API **Signature** alanlarını doldurmanız gerekecektir.
 

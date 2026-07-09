@@ -3,7 +3,7 @@ title: Listahan sa mga Kausaban sa Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Pagbag-o sa Mailchimp
+# Pagbag-o sa Mailchimp {#mailchimp-changelog}
 
 Bersyon: 1.1.1 - Gipagawas niadtong 2025-09-28
 

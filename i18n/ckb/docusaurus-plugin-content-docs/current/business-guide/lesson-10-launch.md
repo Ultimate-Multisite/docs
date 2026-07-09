@@ -3,19 +3,19 @@ title: 'بۆژم ١٠: ڕۆژی دەستپێکردن'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Başlangıç Günü
+# Lesson 10: Başlangıç Günü {#lesson-10-launch-day}
 
 Her şey hazır. Kapıları açmadan önce, bu derste her şeyin bozuk, eksik veya utanç verici olup olmadığını kontrol etmek için ön lansman kontrol listesini inceleyeceğiz.
 
-## Nerede Kalmıştık
+## Nerede Kalmıştık {#where-we-left-off}
 
 FitSite'ta şablonlar, planlar, ödeme alma (checkout), marka kimliği, yeni kullanıcıyı yönlendirme (onboarding) ve fiyatlandırma hepsi ayarlandı. Şimdi her şeyin çalıştığını doğrulayacağız ve yayına geçeceğiz.
 
-## Ön Lansman Kontrol Listesi
+## Ön Lansman Kontrol Listesi {#pre-launch-checklist}
 
 Her maddeyi kontrol edin. Hiç atlamayın.
 
-### Platform Altyapısı
+### Platform Altyapısı {#platform-infrastructure}
 
 - [ ] Hosting kararlı ve yük altında iyi performans gösteriyor
 - [ ] Wildcard SSL aktif ve tüm alt alan adları HTTPS üzerinden hizmet veriyor
@@ -23,7 +23,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - [ ] Yedeklemeler ayarlandı ve test edildi (doğrulamak için en az birini geri yükleyin)
 - [ ] İzleme (Monitoring) mevcut -- platformun çöküp çökmediğini bileceksiniz
 
-### Şablonlar
+### Şablonlar {#templates}
 
 - [ ] Üç şablon da yeni sitelerde doğru şekilde yükleniyor
 - [ ] Yer tutucu içerikler faydalı ve yazım hatasından arınmış
@@ -32,7 +32,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - [ ] Sayfa yükleme hızı kabul edilebilir (GTmetrix veya PageSpeed Insights gibi bir araçla test edin)
 - [ ] Herhangi bir şablonda kırık bağlantı veya eksik varlık yok
 
-### Planlar ve Ürünler
+### Planlar ve Ürünler {#plans-and-products}
 
 - [ ] Üç plan da aktif ve görünür durumda
 - [ ] Plan açıklamaları doğru ve nişlere özel
@@ -42,7 +42,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - [ ] Ödeme sırasında sipariş artışları (order bumps) doğru görünüyor
 - [ ] Plan başına eklenti (plugin) ve tema kısıtlamaları doğru bir şekilde uygulanıyor
 
-### Ödeme Akışı (Checkout Flow)
+### Ödeme Akışı (Checkout Flow) {#checkout-flow}
 
 - [ ] Her plan için tam bir test kaydı yapın (test ödeme modunu kullanın)
 - [ ] Şablon seçimi, plana göre doğru şablonları gösteriyor
@@ -52,7 +52,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - [ ] Kullanıcı yeni sitesine hemen giriş yapabiliyor
 - [ ] İndirim kodları doğru çalışıyor
 
-### Markalama (Branding)
+### Markalama (Branding) {#branding}
 
 - [ ] Giriş sayfası FitSite markasını gösteriyor
 - [ ] Yönetici paneli FitSite markasını gösteriyor
@@ -60,7 +60,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - [ ] Faturalar iş detaylarınızla doğru bir şekilde görüntüleniyor
 - [ ] Pazarlama sitesi yayında ve ödeme formuna bağlantı veriyor
 
-### Yeni Kullanıcıyı Yönlendirme (Onboarding)
+### Yeni Kullanıcıyı Yönlendirme (Onboarding) {#onboarding}
 
 - [ ] Yeni müşteri panolarına Hızlı Başlangıç (Quick Start) widget'ı görünüyor
 - [ ] Tüm Hızlı Başlangıç bağlantıları doğru sayfalara yönlendiriyor
@@ -68,7 +68,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - [ ] Bilgi tabanı makaleleri yayınlandı ve erişilebilir durumda
 - [ ] Hesap sayfası doğru plan bilgilerini ve yükseltme seçeneklerini gösteriyor
 
-### Yasal ve İş Gereklilikleri
+### Yasal ve İş Gereklilikleri {#legal-and-business}
 
 - [ ] Hizmet şartları yayınlandı ve ödeme sayfasından bağlantı veriliyor
 - [ ] Gizlilik politikası yayınlandı ve erişilebilir durumda
@@ -77,11 +77,11 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - [ ] Ödeme ağ geçidi canlı modda (test modunda değil)
 - [ ] Vergi ayarları bulunduğunuz yargı için doğru
 
-## Yumuşak Lansman vs. Sert Lansman
+## Yumuşak Lansman vs. Sert Lansman {#soft-launch-vs-hard-launch}
 
 İki aşamalı bir lansmanı düşünün:
 
-### Aşama 1: Yumuşak Lansman
+### Aşama 1: Yumuşak Lansman {#phase-1-soft-launch}
 
 دعوت ۵ تا ۱۰ صاحب استودیو تناسب ورزشی برای ثبت‌نام قبل از راه‌اندازی عمومی. این‌ها مشتریان بتا شما هستند. به آن‌ها یک تخفیف قابل توجه (۵۰٪ برای همیشه، یا ۳ ماه رایگان) در ازای موارد زیر پیشنهاد دهید:
 
@@ -91,7 +91,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 
 این به شما بازخورد واقعی مشتریان و سایت‌های زنده برای نمایش قبل از اینکه برای عموم باز شوید می‌دهد.
 
-### مرحله ۲: راه‌اندازی عمومی (Public Launch)
+### مرحله ۲: راه‌اندازی عمومی (Public Launch) {#phase-2-public-launch}
 
 وقتی بازخورد راه‌اندازی نرم (soft launch) لحاظ شد:
 
@@ -100,7 +100,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - جذب مشتری را شروع کنید (درس ۱۱)
 - در کانال‌های مرتبط با صنعت تناسب اندام اعلام کنید
 
-## اقدامات روز راه‌اندازی
+## اقدامات روز راه‌اندازی {#launch-day-actions}
 
 در روزی که عمومی می‌شوید:
 
@@ -110,7 +110,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 ۴. **در دسترس باشید** -- اولین مشتریان واقعی شما ممکن است نیاز به کمک داشته باشند و پاسخ سریع اعتماد ایجاد می‌کند
 ۵. **به طور مختصر جشن بگیرید** -- سپس به کار برگردید
 
-## چه چیزهایی می‌تواند اشتباه پیش برود؟
+## چه چیزهایی می‌تواند اشتباه پیش برود؟ {#what-can-go-wrong}
 
 برای موارد زیر آماده باشید:
 
@@ -120,7 +120,7 @@ Her maddeyi kontrol edin. Hiç atlamayın.
 - **عملکرد تحت فشار**: اگر ترافیک شما افزایش یافت، بدانید چگونه هاست خود را مقیاس‌بندی کنید
 - **سردرگمی مشتریان**: پایگاه دانش و کانال‌های پشتیبانی خود را آماده داشته باشید
 
-## شبکه FitSite تا کنون
+## شبکه FitSite تا کنون {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## ما در این درس چه ساختیم؟
+## ما در این درس چه ساختیم؟ {#what-we-built-this-lesson}
 
 - **یک چک‌لیست جامع پیش از راه‌اندازی** که شامل زیرساخت، محتوا، پرداخت‌ها و مسائل قانونی است
 - **یک استراتژی راه‌اندازی نرم** برای دریافت بازخورد واقعی قبل از عمومی شدن

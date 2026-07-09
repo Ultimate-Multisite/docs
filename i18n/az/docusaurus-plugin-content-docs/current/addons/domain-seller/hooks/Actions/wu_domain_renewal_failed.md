@@ -4,11 +4,11 @@ title: Action - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed
+# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Domen yeniləmə cəhdi uğursuz olduqdan sonra işə düşür.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Ad | Növ | Təsvir |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Domen yeniləmə cəhdi uğursuz olduqdan sonra işə düşür.
 | $renewal_data | `array<string,mixed>` | Yeniləmə məlumatları (domain_name, years, və s.). |
 | $error_message | `string` | Qeydiyyatçıdan gələn, insanın oxuya biləcəyi xəta mesajı. |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 2.0.0
-### Mənbə
+### Mənbə {#source}
 
 [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) faylında 630-ci sətirdə təyin edilmişdir.

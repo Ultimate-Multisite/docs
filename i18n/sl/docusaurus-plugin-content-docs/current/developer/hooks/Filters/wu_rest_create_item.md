@@ -4,11 +4,11 @@ title: Filter - wu_rest_create_item
 sidebar_label: wu_rest_create_item
 _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 ---
-# Filter: wu_rest_create_item
+# Filter: wu_rest_create_item {#filter-wurestcreateitem}
 
 Filtrira, ali je dovoljeno nadaljevati z zahtevo ali ne.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrira, ali je dovoljeno nadaljevati z zahtevo ali ne.
 | $rest_base | `array` | Slug entitete. |
 | $this | `\Base_Manager` | Instanca objekta. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L362) v vrstici 362

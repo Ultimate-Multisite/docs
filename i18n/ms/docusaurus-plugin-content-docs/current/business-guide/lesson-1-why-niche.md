@@ -3,11 +3,11 @@ title: 'Pelajaran 1: Mengapa Niche Menang'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Pelajaran 1: Kekuatan Niche
+# Pelajaran 1: Kekuatan Niche {#lesson-1-why-niche-wins}
 
 Sebelum kita menyentuh sebarang perisian, anda perlu faham mengapa membina untuk audiens tertentu adalah keputusan paling penting yang akan anda buat.
 
-## Masalah Menjual Laman Web Umum
+## Masalah Menjual Laman Web Umum {#the-problem-with-selling-generic-websites}
 
 Jika anda menawarkan "laman web untuk semua orang," anda akan bersaing dengan:
 
@@ -17,11 +17,11 @@ Jika anda menawarkan "laman web untuk semua orang," anda akan bersaing dengan:
 
 Anda tidak boleh menang dari segi harga. Anda tidak boleh menang dari segi ciri-ciri (features). Pasaran laman web umum ini adalah perlumbaan ke dasar.
 
-## Apa Yang Berubah Apabila Anda Memilih Niche
+## Apa Yang Berubah Apabila Anda Memilih Niche {#what-changes-when-you-pick-a-niche}
 
 Apabila anda membina platform khusus untuk studio kecergasan (atau niche mana-mana), segala-galanya akan berubah ke arah yang lebih baik untuk anda:
 
-### Anda Menyelesaikan Masalah Sebenar
+### Anda Menyelesaikan Masalah Sebenar {#you-solve-real-problems}
 
 Pemilik studio kecergasan tidak mahukan "laman web." Mereka mahukan:
 
@@ -33,45 +33,45 @@ Pemilik studio kecergasan tidak mahukan "laman web." Mereka mahukan:
 
 Apabila platform anda menyelesaikan masalah spesifik ini terus (out of the box), anda tidak lagi menjual laman web. Anda menjual penyelesaian.
 
-### Anda Boleh Mengenakan Harga Lebih Tinggi
+### Anda Boleh Mengenakan Harga Lebih Tinggi {#you-can-charge-more}
 
 Laman web WordPress umum mungkin dijual pada harga $500-$2,000 sebagai projek sekali bayar. Platform niche yang menyelesaikan masalah khusus industri boleh mengenakan bayaran $49-$199/bulan sebagai langganan berulang kerana nilainya berterusan dan spesifik.
 
-### Anda Menjadi Pakar
+### Anda Menjadi Pakar {#you-become-the-expert}
 
 Apabila anda fokus pada satu industri, anda akan mempelajari bahasa, masalah utama, dan corak pembelian industri itu. Pemilik studio kecergasan bercakap sesama mereka. Apabila seseorang menemui platform yang berfungsi, mereka akan memberitahu orang lain. Mulut ke mulut dalam niche adalah sangat kuat kerana komuniti itu rapat.
 
-### Pemasaran Anda Jadi Lebih Mudah
+### Pemasaran Anda Jadi Lebih Mudah {#your-marketing-gets-easier}
 
 Daripada berkata "kami membina laman web untuk perniagaan," anda berkata "kami membina laman web untuk studio kecergasan." Halaman pendaratan (landing page) anda bercakap terus kepada pemilik gim. Templat anda kelihatan seperti laman web kecergasan. Testimoni anda datang daripada jurulatih dan pemilik studio. Setiap elemen pemasaran akan memberi impak yang lebih kuat kerana ia spesifik.
 
-## Peluang FitSite
+## Peluang FitSite {#the-fitsite-opportunity}
 
 Mari kita lihat industri kecergasan melalui lensa ini:
 
-### Saiz Pasaran
+### Saiz Pasaran {#market-size}
 
 - Terdapat lebih 100,000 kemudahan kecergasan hanya di Amerika Syarikat
 - Kebanyakan daripadanya adalah perniagaan kecil milik sendiri
 - Kebanyakan mempunyai sama ada tiada laman web, laman web yang teruk, atau laman web yang terlalu mahal yang tidak dapat mereka kemas kini sendiri
 
-### Penyelesaian Semasa
+### Penyelesaian Semasa {#current-solutions}
 
 - **Pembina umum** (Wix, Squarespace): Tiada ciri khusus kecergasan, pemilik studio bergelut untuk membina apa yang mereka perlukan
 - **Pembangunan tersuai**: Mahal, sekali bayar, sukar untuk diselenggara
 - **Platform khusus industri**: Sedikit wujud, dan kebanyakan dikaitkan dengan sistem tempahan berbanding menawarkan kehadiran web yang lengkap
 
-### Jurang
+### Jurang {#the-gap}
 
 Terdapat jurang yang jelas antara "pembina laman web umum" dan "pembangunan tersuai yang mahal" untuk perniagaan kecergasan. Platform yang memberikan pemilik studio laman web profesional dan khusus kecergasan dengan ciri-ciri yang mereka perlukan — pada harga yang masuk akal untuk perniagaan kecil — mengisi jurang itu.
 
 Inilah peluang yang akan disasarkan oleh FitSite.
 
-## Pengajaran Utama
+## Pengajaran Utama {#key-takeaway}
 
 Memilih niche bukan tentang mengehadkan diri anda. Ia adalah tentang memfokuskan usaha anda di tempat ia memberi impak paling besar. Platform niche yang melayani 500 pelanggan pada harga $99/bulan adalah perniagaan bernilai $600,000/tahun. Anda tidak memerlukan jutaan pelanggan. Anda memerlukan yang yang betul.
 
-## Apa Yang Kita Bina Dalam Pelajaran Ini
+## Apa Yang Kita Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 Belum ada kerja teknikal — tetapi anda kini mempunyai asas strategik:
 

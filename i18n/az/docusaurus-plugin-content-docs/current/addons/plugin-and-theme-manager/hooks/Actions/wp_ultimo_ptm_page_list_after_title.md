@@ -4,19 +4,19 @@ title: Action - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Action: wp_ultimo_ptm_page_list_after_title
+# Action: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
 
 Plugin developerlərinin siyahı səhifələrinə əlavə düymələr əlavə etməsinə imkan verir.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Ad | `\WU_Page` | Multisite Ultimate Səhifəsi nümunəsi |
 |------|------|-------------|
 | $ | `\WU_Page` | Multisite Ultimate Səhifəsi nümunəsi |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 1.8.2
-### Mənbə
+### Mənbə {#source}
 
 [`views/base/list.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/list.php#L47) faylında 47-ci sətirdə təyin edilmişdir

@@ -3,11 +3,11 @@ title: Goiburuaren domeinu-bilaketa
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Goiburuaren domeinu-bilaketa
+# Goiburuaren domeinu-bilaketa {#header-domain-search}
 
 Erabili konfigurazio hau goiburuan formulario txiki bat nahi duzunean, domeinu-bilaketa bat hasteko, eta gero bezeroari Ultimate Multisite checkout barruan eskuragarri dauden domeinuen artean aukeratzen uzteko.
 
-## Eskakizunak
+## Eskakizunak {#requirements}
 
 - Ultimate Multisite sarean aktibo.
 - Multisite Ultimate Domain Seller sarean aktibo.
@@ -16,7 +16,7 @@ Erabili konfigurazio hau goiburuan formulario txiki bat nahi duzunean, domeinu-b
   - Onartutako TLDak konfiguratuta, adibidez `com`, `net` eta `org`.
 - **Domain Selection** eremua duen checkout formulario baliodun bat.
 
-## Checkout formularioa
+## Checkout formularioa {#checkout-form}
 
 1. Sortu edo editatu erregistro-orriak erabiltzen duen checkout formularioa.
 2. Gehitu checkout/Account-eremu arrunt eta beharrezkoak, **Username** barne. Domeinu-eremua bakarrik duen checkout formulario bat Ultimate Multisite baliozkotzeak baztertzen du.
@@ -30,7 +30,7 @@ Erregistro-orriak checkout formularioa errenderizatu beharko luke, adibidez:
 [wu_checkout slug="domain-form"]
 ```
 
-## Goiburuko formularioa
+## Goiburuko formularioa {#header-form}
 
 Gehitu `GET` formulario txiki bat gunearen goiburuan, sartutako bilaketa-terminoa checkout orrira `domain_name` gisa bidal dezan:
 
@@ -44,7 +44,7 @@ Gehitu `GET` formulario txiki bat gunearen goiburuan, sartutako bilaketa-termino
 
 Ez hautatu aurrez domeinurik goiburuko JavaScript pertsonalizatuan. Goiburuak bilaketa-terminoa bakarrik pasatu beharko luke. Domain Seller checkout scriptak `?domain_name=example` irakurtzen du, checkout bilaketa-koadroa betetzen du, eta erabilgarritasun-bilaketa exekutatzen du bezeroak itzulitako domeinuen artean aukeratu ahal izan dezan.
 
-## Espero den portaera
+## Espero den portaera {#expected-behaviour}
 
 Goiburuan `example` bilatzeak hau ireki beharko luke:
 
@@ -61,7 +61,7 @@ Checkout-ak, ondoren, hauta daitezkeen emaitzak erakutsi beharko lituzke, hala n
 
 Eskuragarri dagoen emaitza bat hautatu ondoren, eskaeraren laburpenak domeinu-erregistroko produktua eta hautatutako domeinu-izena jaso beharko lituzke.
 
-## Egiaztapena
+## Egiaztapena {#verification}
 
 1. Ireki hasiera-orria.
 2. Bilatu izen soil bat, adibidez `example`.
@@ -71,7 +71,7 @@ Eskuragarri dagoen emaitza bat hautatu ondoren, eskaeraren laburpenak domeinu-er
 6. Egin klik **Select** aukeran eskuragarri dagoen domeinu baterako.
 7. Berretsi eskaeraren laburpenak `Domain Registration - example.com` edo hautatutako domeinua duela.
 
-## Arazoak konpontzea
+## Arazoak konpontzea {#troubleshooting}
 
 - Zerrendarik agertzen ez bada, egiaztatu nabigatzailearen sare-fitxa `admin-ajax.php?action=wu_domain_search` bilatzeko, eta berretsi `domains` edo `results` hutsik ez daudela itzultzen duela.
 - Checkout formularioak gordetzean baliozkotzean huts egiten badu, gehitu beharrezko Account-eremuak, hala nola **Username**.

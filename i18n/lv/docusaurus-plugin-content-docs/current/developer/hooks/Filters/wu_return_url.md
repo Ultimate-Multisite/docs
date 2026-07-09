@@ -4,11 +4,11 @@ title: Filtrs - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filtrs: wu_return_url
+# Filtrs: wu_return_url {#filter-wureturnurl}
 
 Ļauj izstrādātājiem mainīt maksājumu vārtejas atgriešanās URL, kas tiek izmantots pēc norēķinu procesiem.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,12 +17,12 @@ _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 | $payment | `\WP_Ultimo\Models\Payment` | Ultimate Multisite maksājuma instance. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | pašreizējais Ultimate Multisite groza pasūtījums. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.20
-### Avots
+### Avots {#source}
 
 Definēts [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) 683. rindā
 
 
-## Atgriež
+## Atgriež {#returns}

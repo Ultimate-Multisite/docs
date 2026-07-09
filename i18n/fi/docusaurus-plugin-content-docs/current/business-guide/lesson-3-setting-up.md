@@ -3,32 +3,32 @@ title: 'Oppitunti 3: Verkostosi määrittäminen'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Oppitunti 3: Verkkosi määrittäminen
+# Oppitunti 3: Verkkosi määrittäminen {#lesson-3-setting-up-your-network}
 
 On aika rakentaa. Tässä oppitunnissa asennat Ultimate Multisite -laajennuksen ja määrität FitSite-verkon perustan. Jokainen päätös tehdään fitness-niche mielessä.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 Valitsimme fitness-studiot nicheksemme ja validoimme mahdollisuuden. Nyt muutamme idean toimivaksi alustaksi.
 
-## Hostingin valitseminen
+## Hostingin valitseminen {#choosing-your-hosting}
 
 Hosting-valinnallasi on niche-alustalle enemmän merkitystä kuin yksittäiselle verkkosivustolle. Et hostaa yhtä sivustoa -- hostaat verkkoa, joka kasvaa kymmeniin tai satoihin sivustoihin.
 
-### Mitä etsiä
+### Mitä etsiä {#what-to-look-for}
 
 - **WordPress Multisite -tuki**: Kaikki palveluntarjoajat eivät käsittele multisiteä hyvin
 - **Wildcard SSL**: Välttämätön aliverkkotunnuksiin perustuville verkoille
 - **Skaalautuvat resurssit**: Tarvitset kasvunvaraa ilman migraatiota
 - **Ultimate Multisite -integraatio**: Automaattinen domain mapping ja SSL säästävät merkittävästi operatiivista työtä
 
-### Suositeltu lähestymistapa
+### Suositeltu lähestymistapa {#recommended-approach}
 
 Valitse palveluntarjoaja [Yhteensopivat palveluntarjoajat](/user-guide/host-integrations/closte) -listalta. Nämä on testattu Ultimate Multisite kanssa, ja ne tarjoavat tarvitsemasi integraatiot domain mappingiin ja SSL-automaatiota varten.
 
 FitSiteä varten käytämme aliverkkotunnusmääritystä. Tämä tarkoittaa, että asiakassivustot näkyvät aluksi muodossa `studioname.fitsite.com`, ennen kuin ne voivat halutessaan yhdistää oman verkkotunnuksensa.
 
-## WordPress Multisite -asennus
+## WordPress Multisite -asennus {#installing-wordpress-multisite}
 
 Jos sinulla ei vielä ole WordPress Multisite -asennusta:
 
@@ -40,7 +40,7 @@ Jos sinulla ei vielä ole WordPress Multisite -asennusta:
 Aliverkkotunnukset antavat jokaiselle asiakassivustolle oman erillisen osoitteen (`studio.fitsite.com`) polun (`fitsite.com/studio`) sijaan. Tämä on asiakkaillesi ammattimaisempaa ja välttää kestolinkkien ristiriidat. Katso yksityiskohtainen vertailu kohdasta [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101).
 :::
 
-## Ultimate Multisite -asennus
+## Ultimate Multisite -asennus {#installing-ultimate-multisite}
 
 Seuraa [Ultimate Multisite -asennusohjetta](/user-guide/getting-started/installing-ultimate-multisite), jotta voit:
 
@@ -53,11 +53,11 @@ Pidä asennusvelhon aikana FitSite-niche mielessä:
 - **Yrityksen nimi**: "FitSite" (tai valitsemasi brändinimi)
 - **Yrityksen logo**: Lataa brändilogosi -- tämä näkyy laskuissa ja sähköposteissa
 
-## Määritys fitness-nicheä varten
+## Määritys fitness-nicheä varten {#configuring-for-the-fitness-niche}
 
 Kun Ultimate Multisite on asennettu, tee nämä nichekohtaiset määritysvalinnat:
 
-### Yleiset asetukset
+### Yleiset asetukset {#general-settings}
 
 Siirry kohtaan **Ultimate Multisite > Settings** ja määritä:
 
@@ -65,7 +65,7 @@ Siirry kohtaan **Ultimate Multisite > Settings** ja määritä:
 - **Oletusrooli**: Administrator -- fitness-studioiden omistajat tarvitsevat täyden hallinnan sivustonsa sisältöön
 - **Rekisteröityminen**: Ota käyttäjien rekisteröityminen käyttöön, jotta studioiden omistajat voivat rekisteröityä itse
 
-### Sähköpostimääritys
+### Sähköpostimääritys {#email-configuration}
 
 Järjestelmäsi sähköpostien tulisi puhua nichesi kieltä. Siirry kohtaan **Ultimate Multisite > Settings > Emails** ja mukauta:
 
@@ -75,7 +75,7 @@ Järjestelmäsi sähköpostien tulisi puhua nichesi kieltä. Siirry kohtaan **Ul
 
 Hienosäädämme näitä lisää oppitunnissa 8 (Asiakkaan perehdytys), mutta sävyn määrittäminen nyt varmistaa, että jopa varhaiset testirekisteröitymiset tuntuvat nichekohtaisilta.
 
-### Verkkotunnusmääritys
+### Verkkotunnusmääritys {#domain-configuration}
 
 Jos käytät yhteensopivaa hosting-palveluntarjoajaa, määritä domain mapping nyt:
 
@@ -85,7 +85,7 @@ Jos käytät yhteensopivaa hosting-palveluntarjoajaa, määritä domain mapping 
 
 Tämä varmistaa, että kun alamme luoda malleja ja testisivustoja seuraavassa oppitunnissa, kaikki toimii alusta loppuun.
 
-## FitSite-verkko tähän mennessä
+## FitSite-verkko tähän mennessä {#the-fitsite-network-so-far}
 
 Tämän oppitunnin lopussa sinulla on:
 
@@ -99,7 +99,7 @@ FitSite-verkko
 └── Valmis sivustomalleja varten (seuraava oppitunti)
 ```
 
-## Mitä rakensimme tässä oppitunnissa
+## Mitä rakensimme tässä oppitunnissa {#what-we-built-this-lesson}
 
 - **Toimiva WordPress Multisite** -asennus aliverkkotunnustilassa
 - **Ultimate Multisite asennettuna** ja määritettynä FitSite-brändäyksellä

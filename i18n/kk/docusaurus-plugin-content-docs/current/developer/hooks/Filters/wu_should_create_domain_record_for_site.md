@@ -4,28 +4,28 @@ title: Сүзгі - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Filter: wu_should_create_domain_record_for_site
+# Filter: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
 
 Ultimate Multisite жаңа жасалған сайт үшін домен жазбасын жасау-жасамауын сүзеді.
 
 Бұл сүзгіні ортақ checkout-form негізгі доменін, ішкі host-ты немесе басқа интеграция бөлек басқаратын доменді пайдаланатын сайттар үшін автоматты домен жазбасын жасауды басу немесе кейінге қалдыру үшін пайдаланыңыз.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
 | $create | `bool` | Домен жазбасы жасалуы керек пе. |
 | $site | `WP_Site` | Жаңадан жасалған сайт нысаны. |
 
-### Бастап
+### Бастап {#since}
 
 - 2.13.0
 
-### Дереккөз
+### Дереккөз {#source}
 
 `inc/functions/domain.php` ішінде анықталған.
 
 
-## Қайтарады
+## Қайтарады {#returns}
 
 Домен жазбасын жасау-жасамауды көрсететін Boolean.

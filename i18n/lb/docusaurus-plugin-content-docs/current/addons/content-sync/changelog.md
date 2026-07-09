@@ -3,9 +3,9 @@ title: Inhalts-Synchronisatioun Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync Ännerungsprotokoll
+# Content Sync Ännerungsprotokoll {#content-sync-changelog}
 
-### Versioun 1.1.0 - Verëffentlecht den 2025-12-31
+### Versioun 1.1.0 - Verëffentlecht den 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nei: Ënnerstëtzung fir d'Synchroniséiere vun all Bäitragstypen (Bäiträg, Säiten, personaliséiert Bäitragstypen)
 * Nei: Filtere vum Bäitragstyp am Schrëtt fir d'Inhaltsauswiel
 * Nei: Schrëtt fir d'Auswiel vum Quell-Site - synchroniséiert vun all Site, net nëmme vum Haapt-Site
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Geännert: Schrëtt "Select Templates" ëmbenannt op "Select Data"
 * Verbessert: Elementor-spezifesche Code leeft elo nëmme fir den elementor_library-Bäitragstyp
 
-### Versioun 1.0.0 - Verëffentlecht den 2025-12-19
+### Versioun 1.0.0 - Verëffentlecht den 2025-12-19 {#version-100---released-on-2025-12-19}
 * Éischt Verëffentlechung
 * Méi-Schrëtt-Wizard fir Schabloun- a Site-Auswiel
 * Batch-Verarbechtung mat Echtzäit-Fortschrëttsfeedback

@@ -3,7 +3,7 @@ title: Configuration de PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configuration de la passerelle PayPal (v2)
+# Configuration de la passerelle PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTE IMPORTANTE : Cet article concerne Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Tout comme Stripe, PayPal est largement utilisé pour les paiements en ligne, en
 
 Notez que vous devez avoir un **compte PayPal Business** pour obtenir l’identifiant API nécessaire à cette intégration.
 
-## Activation de PayPal sur votre réseau
+## Activation de PayPal sur votre réseau {#enabling-paypal-on-your-network}
 
 Pour activer PayPal comme méthode de paiement disponible sur votre réseau, accédez à l’onglet **Ultimate Multisite > Paramètres > Paiements** et cochez la case à côté de PayPal.
 
 ![Activation de PayPal dans les passerelles de paiement actives](/img/config/settings-payment-gateways.png)
 
-## Utilisation de l’assistant de configuration guidée
+## Utilisation de l’assistant de configuration guidée {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 ajoute un assistant de configuration PayPal guidé aux paramètres de passerelle de paiement. Après avoir activé PayPal, utilisez l’assistant dans **Ultimate Multisite > Paramètres > Paiements** pour choisir comment vous souhaitez connecter la passerelle et confirmer quels identifiants sont encore nécessaires avant d’enregistrer.
 
@@ -30,7 +30,7 @@ L’assistant prend en charge deux parcours de configuration :
 
 Si vous ne voyez pas l’option OAuth dans l’assistant, terminez le flux de saisie manuelle des identifiants ci-dessous. La passerelle fonctionne avec les mêmes identifiants API PayPal Business que les versions précédentes d’Ultimate Multisite 2.x.
 
-## Obtention des identifiants API PayPal
+## Obtention des identifiants API PayPal {#getting-the-paypal-api-credentials}
 
 Une fois PayPal activé comme passerelle de paiement, vous devrez remplir les champs pour le PayPal API **Username** , le PayPal API **Password** et la PayPal API **Signature**.
 

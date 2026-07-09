@@ -3,11 +3,11 @@ title: Fahaizana Hita
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Fahaizana Azo Hita (Ability Visibility)
+# Fahaizana Azo Hita (Ability Visibility) {#ability-visibility}
 
 Ny Superdav AI Agent v1.12.0 dia manolotra fepetra **Ability Visibility** izay mifehy ireo lafiny (surfaces) izay afaka mampiseho ny fahaiza-manao tsirairay. Izany dia ahafahana manova ny fomba fiasa izay azo ampiasaina amin'ny alalan'ny REST APIs, MCP servers, WooCommerce integrations ary interface hafa.
 
-## Inona no Ability Visibility?
+## Inona no Ability Visibility? {#what-is-ability-visibility}
 
 Ny Ability Visibility dia rafitry ny alalana (permission system) izay mifehy:
 
@@ -18,9 +18,9 @@ Ny Ability Visibility dia rafitry ny alalana (permission system) izay mifehy:
 
 Ny fahaiza-manao tsirairay dia mitondra haavo fahitana izay mamaritra ny fahafahany ho azo ampiasaina amin'ny lafiny samihafa.
 
-## Haavo Fahitana (Visibility Levels)
+## Haavo Fahitana (Visibility Levels) {#visibility-levels}
 
-### Public (Lalina)
+### Public (Lalina) {#public}
 
 **Ny fahaiza-manao malalaka (Public abilities)** dia azo ampiharina hatrany:
 
@@ -32,7 +32,7 @@ Ny fahaiza-manao tsirairay dia mitondra haavo fahitana izay mamaritra ny fahafah
 
 Ohatra: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Atro anaty)
+### Internal (Atro anaty) {#internal}
 
 **Ny fahaiza-manao anatiny (Internal abilities)** dia azo ampiharina ao anatin'ny fametrahana WordPress anareo ihany:
 
@@ -43,7 +43,7 @@ Ohatra: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Ohatra: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Mpiara-miasa)
+### Partner (Mpiara-miasa) {#partner}
 
 **Ny fahaiza-manao mpiara-miasa (Partner abilities)** dia azo ampiharina ho an'ny mpiara-miasa voafidy (whitelisted partners) ihany:
 
@@ -54,7 +54,7 @@ Ohatra: `manage-settings`, `view-analytics`, `export-data`
 
 Ohatra: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Tsy azo ampiasaina)
+### Disabled (Tsy azo ampiasaina) {#disabled}
 
 **Ny fahaiza-manao tsy azo ampiasaina (Disabled abilities)** dia tsy azo ampiharina aiza na aiza:
 
@@ -63,15 +63,15 @@ Ohatra: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Tsy azo ampiasaina ao amin'ny admin panels
 - Ilaina ho an'ireo fahaiza-manao efa tsy ampiasaina intsony na manandrana (experimental)
 
-## Fitera ny Fahaizana Azo Atao (Managing Ability Visibility)
+## Fitera ny Fahaizana Azo Atao (Managing Ability Visibility) {#managing-ability-visibility}
 
-### Fidirana amin'ny Famaritana Azo Atao (Accessing Ability Visibility Settings)
+### Fidirana amin'ny Famaritana Azo Atao (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. Mandehana any amin'ny **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Tsindrio ny tabilao **Abilities**
 3. Ho hitanao lisitra rehetra an'ireo fahaizana (abilities) napetraka miaraka amin'ny haavon'ny fahitany azy ireo
 
-### Fijerena ny antsipiriany momba ny Azo Atao (Viewing Ability Details)
+### Fijerena ny antsipiriany momba ny Azo Atao (Viewing Ability Details) {#viewing-ability-details}
 
 Tsindrio amin'ny fahaizana iray mba hijerena:
 
@@ -82,7 +82,7 @@ Tsindrio amin'ny fahaizana iray mba hijerena:
 - **Last updated**: Ny fotoana farany novana ny fahitana azy
 - **Status**: Fantatra (Recognized) na Tsy voalamina (Unclassified)
 
-### Fanovana ny Haavon'ny Fahitana (Changing Visibility Levels)
+### Fanovana ny Haavon'ny Fahitana (Changing Visibility Levels) {#changing-visibility-levels}
 
 Mba hanovana ny fahitana an'ny fahaizana iray:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Fandraisana Atao Maro (Bulk Operations)
+### Fandraisana Atao Maro (Bulk Operations) {#bulk-operations}
 
 Mba hanovana ny fahitana ho an'ny fahaizana maromaro:
 
@@ -108,11 +108,11 @@ Mba hanovana ny fahitana ho an'ny fahaizana maromaro:
 2. Safidio ny haavon'ny fahitana vaovao avy amin'ny dropdown ho an'ny asa maro (bulk action)
 3. Tsindrio **Apply**
 
-## List'ny Partenera Azo Miditra (Partner Allow-List)
+## List'ny Partenera Azo Miditra (Partner Allow-List) {#partner-allow-list}
 
 Ny **partner allow-list** no mifehy izay partenera ivelany afaka miditra ireo fahaizana ho level Partenaire.
 
-### Fanampiana Partenera (Adding Partners)
+### Fanampiana Partenera (Adding Partners) {#adding-partners}
 
 1. Mandehana any amin'ny **Superdav AI Agent** → **Settings** → **Partners**
 2. Tsindrio **Add Partner**
@@ -120,7 +120,7 @@ Ny **partner allow-list** no mifehy izay partenera ivelany afaka miditra ireo fa
 4. Safidio raha tianao ampiana anarana sy famaritana ho an'ny partenera
 5. Tsindrio **Save**
 
-### Fametrahana Azo Atao ho Partenera (Assigning Abilities to Partners)
+### Fametrahana Azo Atao ho Partenera (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 Aorian'ny fanampiana partenera:
 
@@ -130,7 +130,7 @@ Aorian'ny fanampiana partenera:
 4. Ao amin'ny faritra "Partner allow-list" dia asio ny boky ho an'ireo partner izay tokony hanana fidirana
 5. Tsindrio **Save** (Tehirizo)
 
-### Fanapahana Fidirana An'ny Partner
+### Fanapahana Fidirana An'ny Partner {#revoking-partner-access}
 
 Mba hanaovana fanapahana ny fidirana an'ny partner iray:
 
@@ -140,11 +140,11 @@ Mba hanaovana fanapahana ny fidirana an'ny partner iray:
 
 Ho lasa tsy hanana fidirana amin'io fahaizana io ilay partner avy hatrany.
 
-## Fahaizana Tsy Vohevitra (Unclassified Abilities)
+## Fahaizana Tsy Vohevitra (Unclassified Abilities) {#unclassified-abilities}
 
 Rehefa mametraka fahaizana vonona avy any ivelany izay tsy fantatry ny Superdav AI Agent, dia voamarina ho **Unclassified** (Tsy Vohevitra).
 
-### Fampahafantarana ho Admin momba ireo Fahaizana Tsy Vohevitra
+### Fampahafantarana ho Admin momba ireo Fahaizana Tsy Vohevitra {#admin-notice-for-unclassified-abilities}
 
 Ho hitanao fampahafantarana avy amin'ny admin:
 
@@ -161,7 +161,7 @@ Azafady, jereo sy asio fametrahana (classify) azy ireo.
 [Review Abilities] [Dismiss]
 ```
 
-### Fijerena ireo Fahaizana Tsy Vohevitra
+### Fijerena ireo Fahaizana Tsy Vohevitra {#reviewing-unclassified-abilities}
 
 1. Tsindrio **Review Abilities** ao amin'ny fampahafantarana
 2. Ho an'ny fahaizana tsy vohevitra tsirairay, dia ho hitanao:
@@ -178,7 +178,7 @@ Azafady, jereo sy asio fametrahana (classify) azy ireo.
 
 4. Tsindrio **Classify** (Asio fametrahana) mba hitahirizana ny fanapahan-kevitra nataonao
 
-### Nahoana no Ilaina ny Fametrahana Fahaizana Tsy Vohevitra?
+### Nahoana no Ilaina ny Fametrahana Fahaizana Tsy Vohevitra? {#why-classify-unclassified-abilities}
 
 Ny fametrahana fahaizana:
 
@@ -187,9 +187,9 @@ Ny fametrahana fahaizana:
 - **Mamela ny fiasa**: Raha efa voapetra, dia lasa azo ampiasaina ilay fahaizana
 - **Manome antontan-taratasy momba ny fanapahan-kevitra**: Ny safidinao dia voarakitra ho an'ny fandinihana (audit purposes)
 
-## Hitaovana amin'ny Latama samihafa
+## Hitaovana amin'ny Latama samihafa {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Fahaizana ankapobeny (Public abilities)** dia azo alaina amin'ny alalan'ny REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Fahaizana anatiny sy ireo mpiara-miasa (Internal and Partner abilities)** dia tsy azo alaina amin'ny alalan'ny REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Fahaizana ankapobeny (Public abilities)** dia azo alaina amin'ny alalan'ny MCP:
 
@@ -217,7 +217,7 @@ Fahaizana azo ampiasaina:
 
 **Fahaizana mpiara-miasa (Partner abilities)** dia azo alaina ihany raha misy fampahalalana manokana ho an'ny mpiara-miasa ianao.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Fahaizana ankapobeny (Public abilities)** mifandraika amin'ny WooCommerce dia azo ampiasaina:
 
@@ -227,7 +227,7 @@ Fahaizana azo ampiasaina:
 
 **Fahaizana anatiny (Internal abilities)** dia tsy voalaza ho an'ny WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Ny fahaizana rehetra** (Ankapobeny, Anatiny, Mpiara-miasa) dia azo ampiasaina ao amin'ny chat, miankina amin'ny alalan'ny zo an'ny mpampiasa:
 
@@ -235,34 +235,34 @@ Fahaizana azo ampiasaina:
 - Ireo mpampiasa tsotra dia mahita ny fahaizana ankapobeny ihany
 - Ireo mpiara-miasa dia mahita ny fahaizana ankapobeny + fahaizana mpiara-miasa (raha voamarina)
 
-## Fomba fiasa tsara indrindra amin'ny fiarovana (Security Best Practices)
+## Fomba fiasa tsara indrindra amin'ny fiarovana (Security Best Practices) {#security-best-practices}
 
-### Fitsipika Fandraisana Ampahany Farany Indrindra (Principle of Least Privilege)
+### Fitsipika Fandraisana Ampahany Farany Indrindra (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Ataovy ny fahaizana ho mora azo indrindra izay mbola ahafahana mampiasa azy
 - Ampiasao ny fahaizana mpiara-miasa ho an'ny asa sarotra
 - Atao tsy ampiasaina ireo fahaizana tsy ampiasainao
 
-### Fandinihana tsy tapaka (Regular Audits)
+### Fandinihana tsy tapaka (Regular Audits) {#regular-audits}
 
 - Jereo ny fahaizana isan-taona
 - Fantaro raha misy fahaizana tsy voamarina
 - Esory ny fidirana ho an'ireo mpiara-miasa tsy ampiasaina
 
-### Fandaniam-bola sy Fanaraha-maso (Logging and Monitoring)
+### Fandaniam-bola sy Fanaraha-maso (Logging and Monitoring) {#logging-and-monitoring}
 
 - Fantaro izay fahaizana tena ampiasaina indrindra
 - Sarainao ny fomba fiasan'ny mpiara-miasa
 - Manome fampitandremana raha misy fampiasana tsy ara-dalàna ny fahaizana
 
-### Fahaizana Firaisana (Third-Party Abilities)
+### Fahaizana Firaisana (Third-Party Abilities) {#third-party-abilities}
 
 - Jereo ireo fahaizana avy amin'ny lafiny hafa alohan'ny hampandehanana azy
 - Fantaro mazava izany
 - Manomboha amin'ny fahaizana anatiny na mpiara-miasa
 - Atao ho ankapobeny ihany rehefa voamarina tsara
 
-## Fandiana (Troubleshooting)
+## Fandiana (Troubleshooting) {#troubleshooting}
 
 **Tsy mipoitra ny fahaizana (ability) ao anatin'ny lisitra**
 - Jereo raha voasokajy sy miasa ny fahaizana (ability)
@@ -285,7 +285,7 @@ Fahaizana azo ampiasaina:
 - Jereo raha voisa tsara ny sokajiana nataonao
 - Jereo raha vaovao ny plugin mampanome ilay fahaizana
 
-## Fiovan'ny Fandefasana avy amin'ny Mode Taloha (Migration from Legacy Mode)
+## Fiovan'ny Fandefasana avy amin'ny Mode Taloha (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Raha manova dikan-teny avy amin'ny dikan-teny taloha kokoa an'i Superdav AI Agent ianao:
 
@@ -295,7 +295,7 @@ Raha manova dikan-teny avy amin'ny dikan-teny taloha kokoa an'i Superdav AI Agen
 
 Jereo ny **Third-Party Mode Migration** mba hahazoana antsipiriany bebe kokoa momba ny fiovana mankany amin'ny fampifandraisana API ho an'ny Fahaizana (Abilities API) voalohany.
 
-## Dingana Manaraka (Next Steps)
+## Dingana Manaraka (Next Steps) {#next-steps}
 
 Aorian'ny fametrahana ny fomba fijerena ny fahaizana (ability visibility):
 

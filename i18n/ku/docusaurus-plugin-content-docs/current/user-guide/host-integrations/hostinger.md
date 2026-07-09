@@ -1,22 +1,22 @@
 ---
 title: Integrasiya Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integration with Hostinger (hPanel)
+# Integration with Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## گشتی (Overview)
+## گشتی (Overview) {#overview}
 
 Hostinger ی یه سرویس میزبانی وب خیلی معروفه و پنل کنترلی مدرنی به اسم hPanel داره. این ادغام Ultimate Multisite با Hostinger's hPanel اجازه می‌ده که همگام‌سازی دامنه‌ها بین Ultimate Multisite و hPanel انجام بشه، و این کار باعث می‌شه شما بتونید نگاشت دامنه‌ها و زیردامنه‌ها رو مستقیماً از پنل مدیریت وردپرس خودتون به صورت خودکار مدیریت کنید.
 
-## ویژگی‌ها (Features)
+## ویژگی‌ها (Features) {#features}
 
 - ایجاد خودکار دامنه افزونه در hPanel
 - ایجاد خودکار زیردامنه در hPanel (برای نصب‌های چندزیردامنه‌ای Multisite)
 - حذف دامنه زمانی که نگاشت‌ها حذف می‌شوند
 - ادغام بی‌نقص با API مدیریت دامنه hPanel
 
-## پیش‌نیازها (Requirements)
+## پیش‌نیازها (Requirements) {#requirements}
 
 برای استفاده از این ادغام Hostinger، شما به موارد زیر نیاز دارید:
 
@@ -35,9 +35,9 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // نقطه پایانی API پیش‌فرض
 ```
 
-## دستورالعمل‌های راه‌اندازی (Setup Instructions)
+## دستورالعمل‌های راه‌اندازی (Setup Instructions) {#setup-instructions}
 
-### ۱. تولید توکن API Hostinger خود
+### ۱. تولید توکن API Hostinger خود {#1-generate-your-hostinger-api-token}
 
 ۱. وارد حساب کاربری Hostinger خود بشید و به hPanel دسترسی پیدا کنید.
 ۲. به **Account Settings** → **API Tokens** بروید.
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // نقطه پا
    - مدیریت زیردامنه (Subdomain management)
 ۶. توکن تولید شده رو کپی کنید و آن رو به صورت امن ذخیره کنید.
 
-### ۲. پیدا کردن شناسه حساب خود
+### ۲. پیدا کردن شناسه حساب خود {#2-find-your-account-id}
 
 ۱. در hPanel، به **Account Settings** → **Account Information** بروید.
 ۲. شناسه حساب شما در این صفحه نمایش داده می‌شود.
 ۳. این شناسه رو کپی و برای مرحله بعد ذخیره کنید.
 
-### ۳. اضافه کردن ثابت‌ها به wp-config.php
+### ۳. اضافه کردن ثابت‌ها به wp-config.php {#3-add-constants-to-wp-configphp}
 
 ثابت‌های زیر رو توی فایل `wp-config.php` خودتون اضافه کنید:
 
@@ -69,16 +69,16 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### ٤. چالاککردنەوەی یەکگرتوو (Enable the Integration)
+### ٤. چالاککردنەوەی یەکگرتوو (Enable the Integration) {#4-enable-the-integration}
 
 ١. لە بەڕێوەبردنی WordPress، بگە به **Ultimate Multisite > Settings**
 ٢. بۆ تابلۆی **Domain Mapping** (پێناساندنی ناوچە)، دەربکە به ل خوارەوە بۆ **Host Integrations** (یەکگرتوو لەگەڵ Host)
 ٣. چالاک بکە بە یەکگرتووی **Hostinger (hPanel)**
 ٤. **Save Changes** (گۆڕینی گۆڕانکارییەکان) بێت
 
-## چۆن کار دەکات؟
+## چۆن کار دەکات؟ {#how-it-works}
 
-### Addon Domains (ناوچەکانی زیادە)
+### Addon Domains (ناوچەکانی زیادە) {#addon-domains}
 
 کاتێک ناوچێک لە Ultimate Multisite دا پێناساند دەدەیت:
 
@@ -86,7 +86,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ٢. ناوچەکە ڕێکدەدرێت کە ئاماژەی بە دایرێکتۆری سەرەکی (root directory) بدات
 ٣. کاتێک پێناساندنی ناوچەکە لەناوچەدا دەردەگرێت، یەکگرتوو بە شێوەیەکی خۆکاری addon domainەکە لە hPanel دەردەگرێت
 
-### Subdomains (ناوەکانی زیرەکی)
+### Subdomains (ناوەکانی زیرەکی) {#subdomains}
 
 بۆ جۆرەکانی دامەسازی subdomain multisite، کاتێک سایتێکی نوێ دروست دەکەیت:
 
@@ -94,7 +94,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ٢. داواکارییەک بۆ APIی Hostinger دەبینێت تا subdomainەکە زیاد بکات
 ٣. subdomainەکە ڕێکدەدرێت کە ئاماژەی بە دایرێکتۆری سەرەکی (root directory) بدات
 
-## تێبینییە گرنگان (Important Notes)
+## تێبینییە گرنگان (Important Notes) {#important-notes}
 
 - یەکگرتوو لەگەڵ Hostinger REST API بەکاری دەهێنێت بۆ پەیوەندی لەگەڵ هەژمارەکەت
 - توکن APIی تۆ پێویستی بە ڕێگەپێدانی پێویست بۆ بەڕێوەبردنی ناوچ و subdomain هەیە
@@ -102,9 +102,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 - داواکاریی API بە شێوەیەکی ئاسایی (HTTPS) بە شێوەیەکی سەلامەت ئەنجام دەدرێن
 - توکن APIی خۆت پارێزرا و هەرگیز بە جۆرە ئاشکرا ناهات
 
-## چارەسەرکردنی کێشەکان (Troubleshooting)
+## چارەسەرکردنی کێشەکان (Troubleshooting) {#troubleshooting}
 
-### کێشەکانی پەیوەندی API (API Connection Issues)
+### کێشەکانی پەیوەندی API (API Connection Issues) {#api-connection-issues}
 
 تأكد من أن توكن API (API token) ترويضە و نەچوونی کارکردنەوەی بۆی
 تێبینی بکە کە ID ی هەژمارەکەت دروستە
@@ -112,7 +112,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 دڵنیابە کە توكن API یەکەت ڕێگەپێردنی پێویست بۆ بەڕێوەبردنی دۆمەین (domain management) هەیە
 تأكد بکە کە هەژمارەکەت لە Hostinger چالاک و لە دۆخی باشدا بووە
 
-### دۆمەینی نەکراوە زیاد بکرێت
+### دۆمەینی نەکراوە زیاد بکرێت {#domain-not-added}
 
 - لە لاگەکانی Ultimate Multisite بۆ هەر پەیامێکی هەڵە یان ڕێگرییەک بگەڕێ
 تأكد بکە کە دۆمەینەکە پێشتر لە هەژمارەکەت لە Hostinger زیاد نییە
@@ -120,7 +120,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 
 - پشتڕاست بکەرەوە کە دۆمەینەکە بە شێوەیەکی دروست بۆ ناوی سروری (nameservers) ی Hostinger ئاراستە کراوە
 
-### کێشەکانی گوازارنی SSL Certificate
+### کێشەکانی گوازارنی SSL Certificate {#ssl-certificate-issues}
 
 - ئەم یەکێک لە کارکردنەکان نییە کە بەدواداچوون و دابینیکردنی SSL certificate بکات
 Hostinger بە شێوەیەکی باو، SSL certificates بەبێ پارە (free) دەدات لە ڕێگەی AutoSSL

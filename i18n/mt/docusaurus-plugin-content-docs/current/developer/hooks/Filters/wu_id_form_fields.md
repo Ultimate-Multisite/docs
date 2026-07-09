@@ -4,19 +4,19 @@ title: 'Filtru - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields
+# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
 
 Jiffiltra l-oqsma fuq formola. Il-formola tiġi identifikata bl-ID fl-isem tal-filtru.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
 | $fields | `array` | Lista ta' oqsma tal-formola. |
 
-### Minn
+### Minn {#since}
 
 - 2.0.0
-### Sors
+### Sors {#source}
 
 Iddefinit f'[`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) fil-linja 148

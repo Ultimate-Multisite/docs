@@ -3,11 +3,11 @@ title: ''
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Traduzione di Ultimate Multisite
+# Traduzione di Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite è sviluppato in inglese, ma il plugin è completamente traducibile e accogliamo attivamente contributi di traduzione.
 
-## Traduzioni del plugin principale
+## Traduzioni del plugin principale {#core-plugin-translations}
 
 Il plugin principale Ultimate Multisite è tradotto tramite la piattaforma ufficiale di traduzione **WordPress.org**:
 
@@ -24,7 +24,7 @@ Questo è il sistema standard di traduzione della comunità WordPress. Quando le
 
 Se desideri diventare un editor di traduzioni per la tua lingua (capace di approvare le traduzioni), contatta tramite [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Traduzioni degli addon
+## Traduzioni degli addon {#addon-translations}
 
 I plugin addon sono tradotti separatamente su:
 
@@ -32,11 +32,11 @@ I plugin addon sono tradotti separatamente su:
 
 Le traduzioni degli addon sono attualmente generate dall'IA come punto di partenza. Coprono tutte le lingue supportate ma possono contenere frasi scomode o inesatte. Accogliamo traduttori umani per rivedere e suggerire miglioramenti per renderle più naturali e accurate.
 
-## Traduzioni locali
+## Traduzioni locali {#local-translations}
 
 Se preferisci creare traduzioni localmente per il tuo progetto invece di contribuire upstream, ci sono due opzioni:
 
-### Utilizzando Poedit
+### Utilizzando Poedit {#using-poedit}
 
 Puoi utilizzare l'applicazione desktop **[Poedit](https://poedit.net)** per tradurre il file `.pot`:
 
@@ -46,6 +46,6 @@ Puoi utilizzare l'applicazione desktop **[Poedit](https://poedit.net)** per trad
 4. Salva -- Poedit genera file `.po` e `.mo`
 5. Posiziona i file di output nella cartella `lang`
 
-### Utilizzando Loco Translate
+### Utilizzando Loco Translate {#using-loco-translate}
 
 Il plugin WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** ti consente di tradurre direttamente dal pannello di amministrazione senza alcuno strumento desktop. Si occupa di creare e compilare i file di traduzione per te.

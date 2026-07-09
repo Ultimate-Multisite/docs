@@ -4,11 +4,11 @@ title: Hetsika - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Mitranga rehefa tsy mahomby ny andrana fisoratana anarana domain.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Mitranga rehefa tsy mahomby ny andrana fisoratana anarana domain.
 | $registration_data | `array&lt;string,mixed&gt;` | Metadata fisoratana anarana ahitana status=failed sy error_message. |
 | $error_message | `string` | Hafatra fahadisoana azon’olombelona vakina avy amin’ny mpisoratra anarana. |
 
-### Hatramin'ny
+### Hatramin'ny {#since}
 
 - 2.0.0
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) amin'ny andalana 1250

@@ -4,13 +4,13 @@ title: فیلتر - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# فیلتر: wu_contains_element
+# فیلتر: wu_contains_element {#filter-wucontainselement}
 
 به توسعه‌دهندگان اجازه می‌دهد تا نتایج جستجوی اولیه را تغییر دهند.
 
 این فیلتر برای سازندگان شخص ثالث و موارد مشابه مفید است.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -19,9 +19,9 @@ _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 | $element | `self` | عنصر فعلی. |
 | $post | `null\|\WP_Post` | پستی که باید بررسی شود. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.0
-### منبع
+### منبع {#source}
 
 تعریف شده در [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) در خط ۵۳۴

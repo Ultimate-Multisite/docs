@@ -3,7 +3,7 @@ title: Pencarian Otomatis dan Penggantian di Template Situs
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace di Site Template (v2)
+# Auto Search and Replace di Site Template (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Tutorial ieu butuh WP UItimo versi 2.x.**_
 
@@ -17,7 +17,7 @@ Si pelanggan anjeun teras bakal bisa ngisikeun field éta nalika registrasi.
 
 Ultimate Multisite teras bakal ngaganti placeholder ku data anu parantos dipasihkeun ku pelanggan téh sacara otomatis.
 
-## **Ngaréngkék masalah "template pinuh ku placeholder"**
+## **Ngaréngkék masalah "template pinuh ku placeholder"** {#solving-the-template-full-of-placeholders-problem}
 
 Sakitu mah saé, tapi urang manggihan masalah anu teu éndah: ayeuna template site urang - anu bisa dikunjung ku pelanggan urang - pinuh ku placeholder anu teu jelas.
 

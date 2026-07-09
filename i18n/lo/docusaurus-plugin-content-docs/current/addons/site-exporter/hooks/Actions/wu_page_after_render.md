@@ -4,20 +4,20 @@ title: ການກະທຳ - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# Action: wu_page_after_render
+# Action: wu_page_after_render {#action-wupageafterrender}
 
 ເຮັດວຽກຫຼັງຈາກການສະແດງໜ້າ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | id ຂອງໜ້າ. |
 | $this | `\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | instance ຂອງ Base Admin Page. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 1.8.2
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L382) ທີ່ບັນທັດ 382

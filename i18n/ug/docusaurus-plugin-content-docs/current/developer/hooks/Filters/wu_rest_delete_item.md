@@ -4,11 +4,11 @@ title: سۈزگۈچ - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item
+# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 تەلەپنى داۋاملاشتۇرۇشقا رۇخسەت قىلىنامدۇ-يوق، شۇنى سۈزۈپ بېرىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 | $rest_base | `array` | ئوبيېكت slugى. |
 | $this | `\Base_Manager` | ئوبيېكت مىسالى. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 2.0.0
-### مەنبە
+### مەنبە {#source}
 
 440-قۇردا [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) ئىچىدە بېكىتىلگەن.

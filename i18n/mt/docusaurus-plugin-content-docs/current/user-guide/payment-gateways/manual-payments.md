@@ -3,13 +3,13 @@ title: Twaqqif ta' Pagamenti Manwali
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Twaqqif ta’ Ħlasijiet Manwali (v2)
+# Twaqqif ta’ Ħlasijiet Manwali (v2) {#setting-up-manual-payments-v2}
 
 _**NOTA IMPORTANTI: Dan l-artiklu jirreferi għal Ultimate Multisite verżjoni 2.x.**_
 
 Il-ħlasijiet manwali huma mod kif toffri metodi oħra ta’ ħlas jekk **Stripe** jew **PayPal** ma jkunux disponibbli għall-utenti tiegħek. Jista’ jkun trasferiment bankarju jew wire transfer jew kwalunkwe metodu ieħor ta’ ħlas disponibbli lokalment għall-utenti tiegħek.
 
-## Kif tattiva Ħlasijiet Manwali
+## Kif tattiva Ħlasijiet Manwali {#how-to-enable-manual-payments}
 
 It-twaqqif ta’ ħlas manwali huwa faċli ħafna. Trid biss tattivah taħt il-gateways tal-ħlas u ddaħħal istruzzjonijiet dettaljati dwar kif l-utent għandu jibgħat il-ħlas.
 
@@ -31,7 +31,7 @@ U se jirċievu wkoll messaġġ fuq il-paġna **Grazzi** tiegħek bl-istruzzjonij
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Konferma ta’ ħlasijiet manwali
+## Konferma ta’ ħlasijiet manwali {#confirming-manual-payments}
 
 Biex tikkonferma ħlas manwali, mur fil-menu **Ħlasijiet** fuq il-bar tax-xellug. Hemmhekk tista’ tara l-ħlasijiet kollha fin-network tiegħek u d-dettalji tagħhom, inkluż l-**istatus** tagħhom. Ħlas manwali dejjem ikollu status **Pendenti** sakemm tibdlu manwalment.
 

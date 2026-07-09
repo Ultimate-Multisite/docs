@@ -4,11 +4,11 @@ title: Гамәл - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Гамәл: wu_mcp_abilities_registered
+# Гамәл: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 MCP мөмкинлекләре бер субъект өчен теркәлгәннән соң эшли.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -16,9 +16,9 @@ MCP мөмкинлекләре бер субъект өчен теркәлгән
 | $model_name | `string` | Модель исеме. |
 | $this | `object` | Идарәче экземпляры. |
 
-### Бирле
+### Бирле {#since}
 
 - 2.5.0
-### Чыганак
+### Чыганак {#source}
 
 [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) эчендә 171 нче юлда билгеләнгән.

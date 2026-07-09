@@ -4,11 +4,11 @@ title: Pansala - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Salain: wu_rest_update_item
+# Salain: wu_rest_update_item {#filter-wurestupdateitem}
 
 Sinasala kung pinapayagang magpatuloy sa kahilingan o hindi.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sinasala kung pinapayagang magpatuloy sa kahilingan o hindi.
 | $rest_base | `array` | Slug ng entity. |
 | $this | `\Base_Manager` | Ang instance ng object. |
 
-### Mula noong
+### Mula noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) sa linya 414

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector para sa Mga Compatible Endpoint
+# Ultimate AI Connector para sa Mga Compatible Endpoint {#ultimate-ai-connector-for-compatible-endpoints}
 
 Isinasama ng Ultimate AI Connector para sa Mga Compatible Endpoint ang mga API ng AI provider na compatible sa OpenAI sa iyong WordPress multisite network. Mag-configure ng maraming AI provider — bawat isa ay may sarili nitong endpoint URL, API key, at default na modelo — at iruta ang mga kahilingan na may awtomatikong fallback kapag hindi available ang isang provider.
 
-## Mga Pangunahing Tampok
+## Mga Pangunahing Tampok {#key-features}
 
 - **Suporta sa maraming provider**: Magdagdag ng maraming AI provider card, bawat isa ay may sarili nitong endpoint URL, API key, at default na modelo
 - **I-drag para baguhin ang pagkakasunod-sunod**: Ayusin ang mga provider ayon sa priyoridad gamit ang grip handle sa bawat card; ginagamit ng mga kahilingan ang mga provider ayon sa pagkakasunod-sunod
@@ -21,26 +21,26 @@ Isinasama ng Ultimate AI Connector para sa Mga Compatible Endpoint ang mga API n
 - **Awtomatikong pag-expand kapag nagdagdag**: Awtomatikong nag-e-expand ang mga bagong provider card upang mapunan mo agad ang mga detalye
 - **Script cache busting**: Ang mga provider script ay naka-cache-bust kapag nag-update ang plugin upang matiyak na ang pinakabagong bersyon ang na-load
 
-## Mga Kinakailangan
+## Mga Kinakailangan {#requirements}
 
 - WordPress 5.3 o mas mataas
 - PHP 7.4 o mas mataas
 - Ultimate Multisite plugin (aktibo)
 - Isang API endpoint na compatible sa OpenAI (self-hosted o third-party)
 
-## Pag-install
+## Pag-install {#installation}
 
 1. I-upload ang mga addon file sa iyong `/wp-content/plugins/` directory
 2. I-activate ang plugin sa pamamagitan ng menu na 'Plugins' sa WordPress
 3. Pumunta sa **Ultimate Multisite → AI Connector** upang i-configure ang addon
 
-## Configuration
+## Configuration {#configuration}
 
-### Setup ng Maraming Provider
+### Setup ng Maraming Provider {#multi-provider-setup}
 
 Gumagamit ang configuration screen ng card-based na layout kung saan ang bawat card ay kumakatawan sa isang AI provider. Maaari kang magdagdag ng kasing-daming provider ayon sa kailangan mo.
 
-#### Pagdaragdag ng Provider
+#### Pagdaragdag ng Provider {#adding-a-provider}
 
 1. Pumunta sa **Ultimate Multisite → AI Connector** sa network admin
 2. I-click ang **Magdagdag ng Provider**
@@ -52,15 +52,15 @@ Gumagamit ang configuration screen ng card-based na layout kung saan ang bawat c
    - **Default na Modelo** — ang identifier ng modelo na gagamitin bilang default para sa provider na ito (hal. `gpt-4o`, `mistral-small`)
 5. I-click ang **I-save ang Mga Setting**
 
-#### Pag-alis ng Provider
+#### Pag-alis ng Provider {#removing-a-provider}
 
 I-click ang button na **Alisin** sa anumang provider card upang tanggalin ito. I-save ang mga setting upang mailapat ang pagbabago.
 
-#### Pagbabago ng Pagkakasunod-sunod ng mga Provider
+#### Pagbabago ng Pagkakasunod-sunod ng mga Provider {#reordering-providers}
 
 I-drag ang grip icon (⣿) sa kaliwang bahagi ng anumang provider card upang baguhin ang pagkakasunod-sunod nito. Tinutukoy ng pagkakasunod-sunod ang fallback priority: ipinapadala ang mga kahilingan sa unang provider at lumilipat sa mga kasunod na provider kung mabigo ang isang kahilingan.
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 Kapag nabigo ang isang kahilingan sa pangunahing provider — dahil sa timeout, rate limit, o service outage — awtomatikong susubok muli ang connector gamit ang susunod na provider sa listahan. Magpapatuloy ito pababa sa listahan hanggang sa magtagumpay ang isang provider o masubukan na ang lahat ng provider.
 
@@ -72,7 +72,7 @@ Kapag nabigo ang isang kahilingan sa pangunahing provider — dahil sa timeout, 
 
 Transparent ang fallback sa tumatawag na plugin o theme — makakatanggap sila ng matagumpay na tugon o panghuling error, gaano man karaming provider ang sinubukan.
 
-### Sanggunian sa Configuration ng Provider
+### Sanggunian sa Configuration ng Provider {#provider-configuration-reference}
 
 | Field | Kinakailangan | Paglalarawan |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Transparent ang fallback sa tumatawag na plugin o theme — makakatanggap sila n
 | API Key | Oo | Authentication key para sa provider na ito |
 | Default na Modelo | Oo | Identifier ng modelo na ginagamit kapag walang modelong tinukoy sa kahilingan |
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
-### Walang nakalistang provider
+### Walang nakalistang provider {#no-providers-are-listed}
 
 Kung walang laman ang listahan ng provider pagkatapos mag-save, kumpirmahin na:
 
@@ -91,21 +91,21 @@ Kung walang laman ang listahan ng provider pagkatapos mag-save, kumpirmahin na:
 - Hindi hinarang ng iyong browser ang pag-save ng pahina ng mga setting (tingnan ang browser console para sa mga JavaScript error)
 - Aktibo ang plugin at nasa network admin screen ka
 
-### Nabibigo ang mga kahilingan para sa lahat ng provider
+### Nabibigo ang mga kahilingan para sa lahat ng provider {#requests-are-failing-for-all-providers}
 
 - Tiyaking maaabot mula sa iyong server ang endpoint URL ng bawat provider (hindi lamang mula sa iyong browser)
 - Suriin na valid ang bawat API key at hindi pa nag-expire
 - Suriin ang rate-limit at quota status ng provider sa kanilang dashboard
 - I-enable ang WordPress debug logging (`WP_DEBUG_LOG`) upang makuha ang detalyadong mga mensahe ng error mula sa connector
 
-### Hindi ginagamit ang isang provider para sa fallback
+### Hindi ginagamit ang isang provider para sa fallback {#a-provider-is-not-being-used-for-fallback}
 
 Binabago ng drag-to-reorder ang fallback order. Kumpirmahin na ang provider na inaasahan mong tumanggap ng mga fallback request ay nasa tamang posisyon sa listahan at tama ang endpoint URL at API key nito.
 
-### Hindi awtomatikong nag-e-expand ang bagong provider card
+### Hindi awtomatikong nag-e-expand ang bagong provider card {#new-provider-card-does-not-expand-automatically}
 
 Kinakailangan ng auto-expand na naka-enable ang JavaScript sa iyong browser. Kung hindi nag-e-expand ang card kapag na-click, tingnan ang browser console para sa mga error. Palaging maa-access ang mga nilalaman ng card sa pamamagitan ng pag-click sa card header kahit hindi ma-trigger ang auto-expand.
 
-## Changelog
+## Changelog {#changelog}
 
 Tingnan ang [Changelog](./changelog) para sa buong kasaysayan ng bersyon.

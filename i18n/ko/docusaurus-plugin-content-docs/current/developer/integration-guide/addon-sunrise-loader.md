@@ -3,17 +3,17 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise 파일 로더
+# Addon Sunrise 파일 로더 {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0은 add-on 및 커스텀 MU-plugin 통합을 위한 sunrise 확장 로더를 추가했습니다. 이 로더를 사용하면 `wp-content/sunrise.php` 파일을 직접 수정하지 않고도 WordPress의 sunrise 부팅 과정 중에 코드를 실행할 수 있습니다.
 
-## 사용 시점
+## 사용 시점 {#when-to-use-it}
 
 커스텀 도메인 라우팅, 호스트별 요청 처리, 또는 초기 네트워크 부팅 조정 등 일반 플러그인 로드 이전에 통합 코드가 실행되어야 할 때 sunrise 확장을 사용하세요.
 
 일반적인 통합의 경우, 일반 WordPress 플러그인, MU-plugin, 그리고 문서화된 Ultimate Multisite 훅을 사용하는 것이 좋습니다. sunrise 코드는 매우 초기에 실행되므로, 작고, 방어적이며, 의존성이 없는 코드를 유지해야 합니다.
 
-## 파일 명명 규칙
+## 파일 명명 규칙 {#file-naming-convention}
 
 `ultimate-multisite-`로 시작하는 이름의 add-on 디렉터리에 `sunrise.php`라는 이름의 PHP 파일을 생성하세요.
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 일치하는 파일들은 add-on 경로별로 알파벳 순서로 로드됩니다.
 
-## 파일 배치 위치
+## 파일 배치 위치 {#where-to-place-the-file}
 
 파일은 sunrise 동작을 소유한 add-on의 루트 디렉터리에 배치하세요.
 
@@ -45,7 +45,7 @@ wp-content/
 
 절대로 생성된 `wp-content/sunrise.php` 파일을 직접 수정하지 마세요. 이 로더를 사용하면 Ultimate Multisite가 설치하고 업데이트하는 핵심 sunrise 파일을 포크(forking)하지 않고도 커스텀 코드로 sunrise 동작을 확장할 수 있습니다.
 
-## 사용 가능한 훅 및 필터
+## 사용 가능한 훅 및 필터 {#hooks-and-filters-available}
 
 Addon sunrise 파일은 Ultimate Multisite 도메인 매핑이 로드된 후, WordPress가 `ms_loaded`를 발생시키기 전에 실행됩니다. 이 시점에서 sunrise 파일은 다음 작업을 수행할 수 있습니다.
 
@@ -58,7 +58,7 @@ Ultimate Multisite는 자신의 sunrise 로더가 완료된 후 `wu_sunrise_load
 
 sunrise 단계에서 이미 로드된 함수만 호출하세요. 데이터베이스 작업, 템플릿 렌더링, HTTP 요청, 그리고 일반적인 플러그인 로드 순서가 완료되었다고 가정하는 코드는 피해야 합니다.
 
-## 최소 예제
+## 최소 예제 {#minimal-example}
 
 ```php
 <?php

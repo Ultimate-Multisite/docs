@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons は、追加機能と連携で Ultimate Multisite を拡張します。ほとんどの Addons は有料で、[ultimatemultisite.com](https://ultimatemultisite.com) から購入できます。
 
-## インストール
+## インストール {#installation}
 
 Addons は2つの方法でインストールできます。
 
 1. **Addon ページ経由** -- WordPress 管理画面でサイトの Addon 管理ページに移動します
 2. **手動ダウンロード** -- [あなたの Account](https://ultimatemultisite.com/my-account/downloads/) からダウンロードし、Plugins > Add New からアップロードします
 
-## 利用可能な Addons
+## 利用可能な Addons {#available-addons}
 
 | Addon | 説明 |
 |-------|-------------|

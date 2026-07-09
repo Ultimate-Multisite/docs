@@ -3,13 +3,13 @@ title: Champ de validation de commande et DNS du client
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Champ de paiement et gestion DNS client
+# Champ de paiement et gestion DNS client {#checkout-field-and-customer-dns-management}
 
-## Le champ de paiement Sélection de domaine
+## Le champ de paiement Sélection de domaine {#the-domain-selection-checkout-field}
 
 Le champ **Sélection de domaine** est un élément de paiement qui donne aux clients le choix de la manière d’obtenir le domaine de leur site. Ajoutez-le à n’importe quel formulaire de paiement pour activer la vente de domaines.
 
-### Ajouter le champ à un formulaire de paiement
+### Ajouter le champ à un formulaire de paiement {#adding-the-field-to-a-checkout-form}
 
 1. Allez dans **Administration du réseau › Ultimate Multisite › Formulaires de paiement**
 2. Ouvrez ou créez un formulaire de paiement
@@ -18,7 +18,7 @@ Le champ **Sélection de domaine** est un élément de paiement qui donne aux cl
 5. Configurez les options du champ (voir ci-dessous)
 6. Enregistrez le formulaire
 
-### Options du champ
+### Options du champ {#field-options}
 
 **Modes de domaine** — Choisissez les onglets que le client voit. Chaque mode peut être activé ou désactivé indépendamment :
 
@@ -32,7 +32,7 @@ Le champ **Sélection de domaine** est un élément de paiement qui donne aux cl
 
 **Produit de domaine** — Épinglez éventuellement ce champ à un produit de domaine spécifique. S’il n’est pas défini, l’addon sélectionne automatiquement le produit correspondant en fonction du TLD recherché par le client.
 
-### Champs de contact du titulaire
+### Champs de contact du titulaire {#registrant-contact-fields}
 
 Lorsqu’un client sélectionne l’onglet **Enregistrer un nouveau domaine**, le formulaire de paiement ajoute les champs de contact du titulaire directement dans le formulaire :
 
@@ -43,11 +43,11 @@ Lorsqu’un client sélectionne l’onglet **Enregistrer un nouveau domaine**, l
 
 Ils sont requis par tous les bureaux d’enregistrement et validés avant l’appel à l’API d’enregistrement. Les numéros de téléphone sont automatiquement formatés au format international `+CC.NNN` attendu par les bureaux d’enregistrement.
 
-### URL de site générée automatiquement
+### URL de site générée automatiquement {#auto-generated-site-url}
 
 Lorsqu’un client enregistre ou mappe un domaine, le champ URL du site est automatiquement rempli à partir du domaine choisi. Les clients n’ont pas besoin de remplir un champ URL séparé.
 
-### Comportement de recherche
+### Comportement de recherche {#search-behaviour}
 
 - La disponibilité du domaine est vérifiée en temps réel avec AJAX à mesure que le client saisit
 - Des suggestions de TLD alternatifs sont affichées lorsque le domaine préféré est indisponible
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Gestion DNS client
+## Gestion DNS client {#customer-dns-management}
 
 Les clients peuvent gérer les enregistrements DNS de leurs domaines enregistrés depuis la page **Mon Account**, sous l’entrée de leur domaine.
 
-### Types d’enregistrements pris en charge
+### Types d’enregistrements pris en charge {#supported-record-types}
 
 | Type | Utilisation |
 |---|---|
@@ -91,11 +91,11 @@ Les clients peuvent gérer les enregistrements DNS de leurs domaines enregistré
 | **MX** | Définir le serveur d’échange de courrier |
 | **TXT** | Ajouter des enregistrements SPF, DMARC, de vérification ou d’autres enregistrements texte |
 
-### Quels fournisseurs prennent en charge la gestion DNS ?
+### Quels fournisseurs prennent en charge la gestion DNS ? {#which-providers-support-dns-management}
 
 La gestion DNS (ajout, modification, suppression d’enregistrements) est disponible avec **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** et **Openprovider**. Les domaines **Hostinger** peuvent mettre à jour les serveurs de noms via Domain Seller ; les enregistrements DNS des domaines hébergés sont gérés par l’intégration principale de mappage de domaines Hostinger. Les domaines Namecheap, GoDaddy et NameSilo affichent les informations de statut et d’expiration, mais le DNS doit être géré directement dans le panneau de contrôle du bureau d’enregistrement.
 
-### Enregistrements DNS par défaut
+### Enregistrements DNS par défaut {#default-dns-records}
 
 Vous pouvez configurer des enregistrements DNS par défaut appliqués automatiquement lorsqu’un domaine est enregistré. Allez dans **Réglages › Domain Seller › Enregistrements DNS par défaut**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin : consulter et modifier le DNS
+### Admin : consulter et modifier le DNS {#admin-viewing-and-editing-dns}
 
 Les administrateurs réseau peuvent consulter et modifier les enregistrements DNS de n’importe quel domaine client depuis la page de modification du domaine dans **Administration du réseau › Ultimate Multisite › Domaines**.

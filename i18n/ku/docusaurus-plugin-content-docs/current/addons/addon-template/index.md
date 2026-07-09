@@ -3,25 +3,25 @@ title: Şablona Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Şablona Pêvekê
+# Şablona Pêvekê {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Pêdivî
+## Pêdivî {#requirements}
 
 - WordPress 5.3 an jî bilindtir
 - PHP 7.4 an jî bilindtir
 - Plugin-a Multisite Ultimate (çalak)
 
-## Sazkirin
+## Sazkirin {#installation}
 
 1. Pelên pêvekê bar bike nav pelrêça xwe ya `/wp-content/plugins/`
 2. Pluginê bi riya menuya 'Pêvek' di WordPress de çalak bike
 3. Mîhengên pêvekê di rêveberiya torê de saz bike
 
-## Pêşvebirin
+## Pêşvebirin {#development}
 
-### Sazkirin
+### Sazkirin {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Avahiya Projeyê
+### Avahiya Projeyê {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Rêzikên nûjenkirina kodê
 ```
 
-### Testkirin
+### Testkirin {#testing}
 
 Ev pêvek çarçoveyeke testkirinê ya berfireh dihewîne:
 
@@ -75,44 +75,44 @@ Ev pêvek çarçoveyeke testkirinê ya berfireh dihewîne:
 - **Rûmeta Testê**: Ji bo şopandina rûmeta kodê hatî saz kirin
 - **Testkirina Multisite**: Test di jîngeha multisite de têne xebitandin
 
-### Standardên Kodê
+### Standardên Kodê {#code-standards}
 
 - **Standardên Kodnivîsê yên WordPress**: Bi PHPCS têne ferzkirin
 - **Lihevhatina PHP 7.4+**: Taybetmendiyên nûjen ên PHP têne piştgirîkirin
 - **Analîza Statîk**: Yekbûna PHPStan ji bo kontrolkirina cureyan
 - **Nûjenkirina Kodê**: Rêzikên Rector ji bo bilindkirinên PHP
 
-### Pergala Avakirinê
+### Pergala Avakirinê {#build-system}
 
 - **Pêvajoya Sermayeyan**: Biçûkkirin ji bo pelên CSS/JS
 - **Wergerandin**: Çêkirina pela POT
 - **Pakêt kirin**: Çêkirina arşîvê ji bo belavkirinê
 - **Moda Pêşvebirinê**: Sermayeyên ne-biçûkkirî ji bo şaşîtîgirtinê
 
-## Mîheng
+## Mîheng {#configuration}
 
 Ev pêvek vebijarkên mîhengê yên cuda piştgirî dike ku bi navrûya rêveberiya torê dikarin bên gihîştin.
 
-## Hook û Filter
+## Hook û Filter {#hooks-and-filters}
 
-### Çalakî
+### Çalakî {#actions}
 
 - `ultimate-multisite-addon-template_init` - Piştî destpêkirina pêvekê tê xebitandin
 - `ultimate-multisite-addon-template_loaded` - Piştî barkirina hemû pelên pêvekê tê xebitandin
 
-### Filter
+### Filter {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Mîhengên pêvekê biguherîne
 - `ultimate-multisite-addon-template_enabled` - Rewşa çalak/neçalak a pêvekê serwer bike
 
-## Lîsans
+## Lîsans {#license}
 
 Ev pêvek di bin lîsansa GPL v3 an jî ya paş wê de ye.
 
-## Piştgirî
+## Piştgirî {#support}
 
 Ji bo piştgirî û belgekirinê, biçin [MultisiteUltimate.com](https://multisiteultimate.com)
-## Dîroka Guhertinan
+## Dîroka Guhertinan {#changelog}
 
 - Guherto 1.0.1 (2025-09-28): pêşnavê bike ultimate-multisite; text domain nûve bike; guhertoyê bilind bike.
 

@@ -3,7 +3,7 @@ title: M'ndulo wa M'ndulo
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Kupi la Akaunti ya Mteja wako (v2)
+# Kupi la Akaunti ya Mteja wako (v2) {#your-clients-account-page-v2}
 
 _**Kumbukumbu Muhimu: Hii makala inahusu Ultimate Multisite toleo la 2.x.**_
 
@@ -11,7 +11,7 @@ Wakati wateja wanapochopoa mpango kwenye mtandao wako, wanapata ufikiaji wa tovu
 
 Katika mafunzo haya, tutakuelekeza kupitia ukurasa wa akaunti ya mteja na utaona kile ambacho wateja wako wanaweza kuona na kufanya ndani yake.
 
-## Ukurasa wa Akaunti (The Account Page)
+## Ukurasa wa Akaunti (The Account Page) {#the-account-page}
 
 Ukurasa wa akaunti unaweza kufikiwa kwa kukumbatia **Account** ndani ya dashboard ya mteja wako.
 
@@ -27,7 +27,7 @@ Baada ya mteja kukimkakia, ataona muhtasari wa usajili wake, anwani ya malipo, r
 
 Anaweza pia kubadilisha usajili kwenda mpango mwingine, au kununua pakiti au huduma nyingine unayotoa. Tuangalie kila sehemu kwa kutenga.
 
-### Kufufu Kwakwamba Kwa Umuwambi Wanu:
+### Kufufu Kwakwamba Kwa Umuwambi Wanu: {#your-membership-overview}
 
 Block ilililimi lili likulilimi mwa chisoni cha wamwambi wanu liliomba muundo wa mpango wao wa sasa na huduma/paketi walizopata nazo. Block ililipooneza namba ya umuwambi, kiasi kilicholipwa kwa awali, kadhowa kitengo cha mpango na paketi yoyote/huduma iko kwa bei gani, na mwanamke alipwa mara ngapi kwa umuwambi huo. Wanaweza pia kuona ikiwa umuwambi uko **Active** (Uliopo), **Expired** (Uliisha), au **Canceled** (Umeondolewa).
 
@@ -43,7 +43,7 @@ Sasa, ikiwa wamwambi wanu wanakuchagua kununua paketi au huduma kwa umuwambi huu
 
 Kumbukeni kwamba coupon codes haziwezi kuongezwa kwenye ukurasa huu wa kubadilisha umuwambi. Ikiwa mwanamke alitumia coupon code wakati wa kununua umuwambi wa kwanza, code hiyo itatumika pia kwa umuwambi huu mpya.
 
-### Kubadilisha Anwani ya Malipo:
+### Kubadilisha Anwani ya Malipo: {#updating-the-billing-address}
 
 Pa ndowu pa account page, angakomakom inalimbikana kwa makomero wanu kuli imalimbikanawo kuupatentera boma la lina. Kuti mupatentere, anayembekera kuti awapere **Update** pafupi ndi _Billing Address_.
 
@@ -53,7 +53,7 @@ Mwayi wosiyanasiya woyenera kuwona window lili lina kwa makomero wanu. Kuli mole
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Kusintha Site Template:
+### Kusintha Site Template: {#changing-the-site-template}
 
 Kuti makomero wanu kuweze kusintha site templates, mukuwunje ku **Ultimate Multisite > Settings > Sites** ndipo mupere option ya **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Pambuyo pomwe amapereka wokufuna kukhala, ndipo akupereka **Process Switch**, si
 
 Makubwiri osono angathe kutsegula **Reset current template** kuchokera m'moyo wosono pamene amayenera kukhala pansi pa site template yomwe yali yomwe yali yenera. Mwachitsanzo, pamene akupereka site template lina lina, kuchokera kwa site template kumapereka kulipeza zinthu za site, chifukwa chidziwitsa kuti osono angayenera kukonferma pambuyo pomwe amayenera kuona kuti ndikufuna kuchokera.
 
-### Kulemba Custom Domains:
+### Kulemba Custom Domains: {#adding-custom-domains}
 
 Makubwiri osono angathe kukhala ndi ulemu wosono wokuthandiza custom domain pamene akulimbikira pa m'moyo wosono wanu. Kuti makubwiri osono angathe kutsegula custom domains, ndipo mwayi wosono wanu, kudziwa **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Panda muli pa **Next Step**, anthu wanu angathe kudziwa dzina la custom domain l
 
 Panda muli pa **Add Domain**, domain iye idzakhala m'maka kwa account ya anthu wanu. Zomwe ali kukhala ndi kufunsa ndi kupeza ndipo ndi kopyera ndi DNS records za custom domain iye pa domain registrar yanu.
 
-### Kusintha Password:
+### Kusintha Password: {#changing-password}
 
 M'maka pa dashboard ya account, anthu wanu angathe kusintha password yake monga momwe mungayesulure **Change Password**.
 
@@ -125,7 +125,7 @@ Kuti ndi window lili lili ndi anthu wanu kuti mwayiwo amagwira password yomwe al
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Koma Kuti Muli ndi Mafumbo:
+### Koma Kuti Muli ndi Mafumbo: {#danger-zone}
 
 Tili ndi mashumba awiri omwe alipo m'Danger Zone: **Delete Site** (Kuyendetsa Website) ndipo **Delete Account** (Kuyendetsa Akata). Ziwirizi zimene zili m'Danger Zone chifukwa kuti anthu awa si mwomwe angayendetsa. Ngati anthu wanu aliyendetsa website yanu kapena akata lanu, osati angayendetsa pafupi.
 

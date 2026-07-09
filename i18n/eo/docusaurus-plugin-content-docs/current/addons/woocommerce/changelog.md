@@ -3,7 +3,7 @@ title: Ŝanĝprotokolo de la WooCommerce-integriĝo
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration Ŝanĝoprotokolo
+# WooCommerce Integration Ŝanĝoprotokolo {#woocommerce-integration-changelog}
 
 Versio 2.2.0 - Eldonita je 2026-07-01
 * Nova: Ultimate Multisite impostaj sumoj nun aperas kiel apartaj WooCommerce kotizaj linioj ĉe checkout, igante impostajn totalojn pli klaraj antaŭ pago.

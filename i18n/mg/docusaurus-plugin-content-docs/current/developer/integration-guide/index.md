@@ -3,13 +3,13 @@ title: Torolàlana fampifandraisana
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Torolàlana fampidirana
+# Torolàlana fampidirana {#integration-guide}
 
 Ity torolàlana ity dia mandrakotra ireo lamina fampidirana mahazatra amin’ny Ultimate Multisite, ao anatin’izany ny fampifandraisana amin’ny serivisy ivelany, ny fananganana vavahadin-karama manokana, ary ny fitantanana webhooks.
 
 Ho an’ny fotodrafitrasa tenant mitokana, jereo [Fampidirana Multi-Tenancy](./multi-tenancy) ho an’ny tari-dalana momba ny bootstrap tenant mahaleotena, fanamarinana fifindrana, SSO, ary teardown.
 
-## Fampidirana CRM
+## Fampidirana CRM {#crm-integration}
 
 Ampifanaraho amin’ny CRM-nao ny angon-drakitra mpanjifa rehefa misoratra anarana ny mpanjifa vaovao:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Fampidirana Analytics
+## Fampidirana Analytics {#analytics-integration}
 
 Araho ireo hetsika ara-barotra fototra manerana ny tsingerim-piainan’ny mpanjifa:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Dingana manaraka
+## Dingana manaraka {#next-steps}
 
 - [Fampivoarana vavahadin-karama manokana](./custom-gateway) — Amboary ny vavahadin-karamanao manokana
 - [Fitantanana webhook](./webhooks) — Mamoròna endpoint webhook manokana

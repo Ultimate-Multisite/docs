@@ -3,7 +3,7 @@ title: Sajili Account kupitia Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Tukio: Sajili Account kupitia Zapier
+# Tukio: Sajili Account kupitia Zapier {#event-register-an-account-via-zapier}
 
 Katika makala [Kuunganisha Ultimate Multisite na Zapier](zapier.md), tulijadili jinsi ya kutumia Zapier kutekeleza vitendo tofauti ndani ya Ultimate Multisite kulingana na vichochezi na matukio. Katika makala hii, tutaonyesha jinsi unavyoweza kuunganisha programu za wahusika wengine. Tutatumia Google Sheets kama chanzo cha data na kutuma taarifa kwa Ultimate Multisite ili kusajili Account.
 

@@ -3,7 +3,7 @@ title: Kodesnuttar
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodesnutter for v2
+# Kodesnutter for v2 {#code-snippets-for-v2}
 
 Kodesnutter for **WordPress** brukes til å utføre bestemte handlinger som ellers ville krevd en egen liten plugin. Slike kodesnutter plasseres i en av WordPress sine kjernefiler eller temafiler (vanligvis functions.php-filen i temaet ditt), eller de kan brukes som en MU-plugin.
 
@@ -15,13 +15,13 @@ I denne artikkelen viser vi deg tre kodesnutter som kan brukes med **Ultimate Mu
 
   * [**Løse CORS-problemer med font-ikoner på tilknyttede domener**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Endre plasseringen av Konto-menyelementet
+## Endre plasseringen av Konto-menyelementet {#changing-the-position-of-the-account-menu-item}
 
 For å endre plasseringen av Konto-menyelementet i kundens Dashboard, legger du bare til følgende kodesnutt i functions.php i hovedsiden din sitt aktive tema. Du kan også plassere snutten i en av dine mu-plugins eller egendefinerte plugins.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Juster denne verdien for å plassere menyen i ønsket posisjon.
 
-## Hvordan sjekke om brukeren har en bestemt plan og/eller et aktivt abonnement
+## Hvordan sjekke om brukeren har en bestemt plan og/eller et aktivt abonnement {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Som nettverksadministrator kan det hende du trenger å lage egendefinerte funksjoner som utfører grunnleggende handlinger eller gjør en tjeneste/funksjon tilgjengelig for en utvalgt gruppe abonnenter eller sluttbrukere, basert på statusen til abonnementet deres og hvilken plan de abonnerer på.
 
@@ -47,8 +47,8 @@ Merk at brukere bare kan abonnere på en **Plan**, ikke en pakke eller tjeneste,
 
 ![Produktliste som viser plan-ID-er](/img/admin/products-list.png)
 
-## Løse CORS-problemer med font-ikoner på tilknyttede domener
-## Løse CORS-problemer med font-ikoner på tilknyttede domener
+## Løse CORS-problemer med font-ikoner på tilknyttede domener {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Løse CORS-problemer med font-ikoner på tilknyttede domener {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Etter at du har tilknyttet et domene til en underside, kan det hende at siden har problemer med å laste egendefinerte fonter. Dette skyldes en cross-origin-blokkering i serverinnstillingene dine.
 
@@ -56,13 +56,13 @@ Siden fontfiler nesten alltid lastes direkte fra CSS, klarer ikke vår domain ma
 
 Nedenfor finner du kodesnutter for å løse problemet for Apache og NGINX. Disse endringene krever avansert kunnskap om serverkonfigurasjonsfiler (.htaccess-filer og NGINX-konfigurasjonsfiler). Hvis du ikke er komfortabel med å gjøre disse endringene selv, kan du sende denne siden til supportavdelingen hos hostingleverandøren din når du ber om hjelp.
 
-### Apache
+### Apache {#apache}
 
 I .htaccess-filen din, legg til:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 I serverkonfigurasjonsfilen din (plasseringen varierer fra server til server), legg til:
 

@@ -3,9 +3,9 @@ title: Идоракунӣ аз ҳисобот ва инвойсҳо
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Идоракунии Пардаровиши ва Инвойсҳо
+# Идоракунии Пардаровиши ва Инвойсҳо {#managing-payments-and-invoices}
 
-## Настдони Пардаровиши Масолатнома (Payment Settings)
+## Настдони Пардаровиши Масолатнома (Payment Settings) {#payment-settings}
 
 Пеш аз он ки оғоз кунед гирифтани масолатҳо, шумо бояд танзим кардани намунаҳои пайвастаро барои пардаровиши масолатҳо иҷро кунед. Ба **Ultimate Multisite → Settings** равед ва ба таббии **Payment** клик кунед.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Варианти Умумии Пардаровиши Масолат (General Payment Options)
+### Варианти Умумии Пардаровиши Масолат (General Payment Options) {#general-payment-options}
 
 Дар танзимотҳои умумӣ шумо метавонед инҳоро тартиб диҳед:
 
@@ -24,7 +24,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Порталҳои Пардаровиши Масолат (Payment Gateways)
+### Порталҳои Пардаровиши Масолат (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite дастгиری چندین دروازه‌ی پرداخت رو میاره. شما می‌توانید هر کدام را از تب تنظیمات پرداخت (Payment settings tab) فعال و پیکربندی کنید.
 
@@ -40,11 +40,11 @@ Ultimate Multisite дастгиری چندین دروازه‌ی پرداخت ر
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### حالت Sandbox (Sandbox Mode)
+### حالت Sandbox (Sandbox Mode) {#sandbox-mode}
 
 شما می‌توانید **حالت Sandbox** را فعال کنید تا قبل از راه‌اندازی نهایی، یکپارچه‌سازی پرداخت خود را تست کنید. وقتی حالت sandbox فعال باشد، هیچ هزینه واقعی انجام نخواهد شد.
 
-## مشاهده پرداخت‌ها
+## مشاهده پرداخت‌ها {#viewing-payments}
 
 Барои дидани ҳамаи транзаксияҳо дар тамоми шабакаи худ, ба саҳифаи **Payments** (Маорифат) дар Ultimate Multisite равед.
 
@@ -54,7 +54,7 @@ Ultimate Multisite дастгиری چندین دروازه‌ی پرداخت ر
 
 Барои дидани маълумоти пурраи маорифат, аз ҷумла якчанд қатор маҳсулот (line items), алоқамандӣ бо шабака ва иттилооти муштариён ҳамчунин маълумоти шウェイ-гейтвей (payment gateway data) ба он клик кунед.
 
-## Invoices (Фактуроҳо)
+## Invoices (Фактуроҳо) {#invoices}
 
 Ultimate Multisite метавонад барои маорифатҳо автоматикӣ фактура (invoice) созад. Шумо метавонед шаблон ва формати рақамбардонии фактураро аз сатҳи Payment settings тағйир диҳед.
 

@@ -3,13 +3,13 @@ title: Postavljanje ručnih plaćanja
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Postavljanje ručnih plaćanja (v2)
+# Postavljanje ručnih plaćanja (v2) {#setting-up-manual-payments-v2}
 
 _**VAŽNA NAPOMENA: Ovaj se članak odnosi na Ultimate Multisite verziju 2.x.**_
 
 Ručna plaćanja način su da ponudite druge načine plaćanja ako **Stripe** ili **PayPal** nisu dostupni vašim korisnicima. To može biti doznaka ili bankovni prijenos ili bilo koji drugi način plaćanja koji je lokalno dostupan vašim korisnicima.
 
-## Kako omogućiti ručna plaćanja
+## Kako omogućiti ručna plaćanja {#how-to-enable-manual-payments}
 
 Postavljanje ručnog plaćanja vrlo je jednostavno. Samo ga trebate omogućiti pod pristupnicima za plaćanje i unijeti detaljne upute o tome kako korisnik treba poslati uplatu.
 
@@ -31,7 +31,7 @@ Također će primiti poruku na vašoj stranici **Hvala** s vašim uputama za pla
 
 <!-- Snimka zaslona nije dostupna: stranica Hvala prikazuje upute za plaćanje nakon naplate -->
 
-## Potvrđivanje ručnih plaćanja
+## Potvrđivanje ručnih plaćanja {#confirming-manual-payments}
 
 Da biste potvrdili ručno plaćanje, idite na izbornik **Plaćanja** na lijevoj traci. Tamo možete vidjeti sva plaćanja na svojoj mreži i njihove pojedinosti, uključujući njihov **status**. Ručno plaćanje uvijek će imati status **Na čekanju** dok ga ručno ne promijenite.
 

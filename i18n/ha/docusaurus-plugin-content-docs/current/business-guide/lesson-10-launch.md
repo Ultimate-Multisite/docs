@@ -3,19 +3,19 @@ title: 'Darasi na 10: Ranar ƙaddamarwa'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Darasi na 10: Ranar Kaddamarwa
+# Darasi na 10: Ranar Kaddamarwa {#lesson-10-launch-day}
 
 An gina komai. Kafin ka buɗe ƙofofi, wannan darasi zai bi ta jerin abubuwan dubawa kafin kaddamarwa don tabbatar da cewa babu abin da ya lalace, ya ɓace, ko zai jawo kunya.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 FitSite yana da samfura, tsare-tsare, tsarin biyan oda, alamar kasuwanci, shigar da sababbin masu amfani, da farashi duk an saita su. Yanzu muna tabbatar da cewa komai yana aiki sannan mu kaddamar.
 
-## Jerin Dubawa Kafin Kaddamarwa
+## Jerin Dubawa Kafin Kaddamarwa {#pre-launch-checklist}
 
 Bi kowane abu. Kada ka tsallake ko ɗaya.
 
-### Kayan Aikin Dandamali
+### Kayan Aikin Dandamali {#platform-infrastructure}
 
 - [ ] Hosting yana da ƙarfi kuma yana aiki da kyau lokacin nauyi
 - [ ] Wildcard SSL yana aiki kuma duk subdomains suna aiki ta HTTPS
@@ -23,7 +23,7 @@ Bi kowane abu. Kada ka tsallake ko ɗaya.
 - [ ] An saita backups kuma an gwada su (maido da aƙalla ɗaya don tabbatarwa)
 - [ ] Ana sa ido -- za ka sani idan dandamalin ya tsaya aiki
 
-### Samfura
+### Samfura {#templates}
 
 - [ ] Duk samfura uku suna loda daidai a sababbin shafukan yanar gizo
 - [ ] Abubuwan placeholder suna da amfani kuma ba su da kuskuren rubutu
@@ -32,7 +32,7 @@ Bi kowane abu. Kada ka tsallake ko ɗaya.
 - [ ] Saurin loda shafi yana da karɓuwa (gwada da kayan aiki kamar GTmetrix ko PageSpeed Insights)
 - [ ] Babu hanyoyin da suka karye ko kadarorin da suka ɓace a kowane samfuri
 
-### Tsare-Tsare da Kayayyaki
+### Tsare-Tsare da Kayayyaki {#plans-and-products}
 
 - [ ] Duk tsare-tsare uku suna aiki kuma suna bayyane
 - [ ] Bayanin tsare-tsare daidai ne kuma ya dace da niche
@@ -42,7 +42,7 @@ Bi kowane abu. Kada ka tsallake ko ɗaya.
 - [ ] Order bumps suna bayyana daidai yayin biyan oda
 - [ ] Ana tilasta iyakokin plugin da theme daidai gwargwadon kowane tsari
 
-### Gudanarwar Biyan Oda
+### Gudanarwar Biyan Oda {#checkout-flow}
 
 - [ ] Kammala cikakken gwajin rajista a kan kowane tsari (yi amfani da yanayin gwajin biyan kuɗi)
 - [ ] Zaɓin samfuri yana nuna samfuran da suka dace gwargwadon tsari
@@ -52,7 +52,7 @@ Bi kowane abu. Kada ka tsallake ko ɗaya.
 - [ ] Abokin ciniki na iya shiga sabon shafinsa nan take
 - [ ] Lambobin rangwame suna aiki daidai
 
-### Alamar Kasuwanci
+### Alamar Kasuwanci {#branding}
 
 - [ ] Shafin shiga yana nuna alamar FitSite
 - [ ] Admin dashboard yana nuna alamar FitSite
@@ -60,7 +60,7 @@ Bi kowane abu. Kada ka tsallake ko ɗaya.
 - [ ] Invoices suna bayyana daidai tare da bayanan kasuwancinka
 - [ ] Shafin tallace-tallace yana aiki kuma yana haɗi zuwa fom ɗin biyan oda
 
-### Shigar da Sababbin Masu Amfani
+### Shigar da Sababbin Masu Amfani {#onboarding}
 
 - [ ] Widget na Quick Start yana bayyana a kan dashboards na sababbin abokan ciniki
 - [ ] Duk hanyoyin Quick Start suna nuni zuwa shafukan da suka dace
@@ -68,7 +68,7 @@ Bi kowane abu. Kada ka tsallake ko ɗaya.
 - [ ] An wallafa labaran knowledge base kuma ana iya samun su
 - [ ] Shafin Account yana nuna bayanin tsari daidai da zaɓuɓɓukan haɓakawa
 
-### Doka da Kasuwanci
+### Doka da Kasuwanci {#legal-and-business}
 
 - [ ] An wallafa sharuɗɗan sabis kuma an haɗa su daga biyan oda
 - [ ] An wallafa manufofin sirri kuma ana iya samun su
@@ -77,11 +77,11 @@ Bi kowane abu. Kada ka tsallake ko ɗaya.
 - [ ] Payment gateway yana cikin live mode (ba test mode ba)
 - [ ] Saitin haraji daidai ne ga yankin ikonka
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Yi la’akari da kaddamarwa mai matakai biyu:
 
-### Mataki na 1: Soft Launch
+### Mataki na 1: Soft Launch {#phase-1-soft-launch}
 
 Gayyaci masu studios na motsa jiki 5-10 su yi rajista kafin kaddamarwar jama’a. Waɗannan su ne abokan cinikinka na beta. Ba su babban rangwame (rangwamen 50% har abada, ko watanni 3 kyauta) a madadin:
 
@@ -91,7 +91,7 @@ Gayyaci masu studios na motsa jiki 5-10 su yi rajista kafin kaddamarwar jama’a
 
 Wannan yana ba ka ra’ayin abokin ciniki na gaske da shafukan yanar gizo masu aiki da za ka nuna kafin ka buɗe ga jama’a.
 
-### Mataki na 2: Kaddamarwar Jama’a
+### Mataki na 2: Kaddamarwar Jama’a {#phase-2-public-launch}
 
 Da zarar an haɗa ra’ayoyin soft launch:
 
@@ -100,7 +100,7 @@ Da zarar an haɗa ra’ayoyin soft launch:
 - Fara neman abokan ciniki (Darasi na 11)
 - Sanar a kan tashoshin masana’antar motsa jiki da suka dace
 
-## Ayyukan Ranar Kaddamarwa
+## Ayyukan Ranar Kaddamarwa {#launch-day-actions}
 
 A ranar da za ka buɗe ga jama’a:
 
@@ -110,7 +110,7 @@ A ranar da za ka buɗe ga jama’a:
 4. **Kasance a shirye** -- abokan cinikinka na farko na gaske na iya buƙatar taimako, kuma amsa da sauri tana gina amana
 5. **Yi murna kaɗan** -- sannan ka koma aiki
 
-## Abin da Zai Iya Tafiya Ba Daidai Ba
+## Abin da Zai Iya Tafiya Ba Daidai Ba {#what-can-go-wrong}
 
 Kasance a shirye don:
 
@@ -120,7 +120,7 @@ Kasance a shirye don:
 - **Aiki lokacin nauyi**: Idan ka samu ƙaruwa ta zirga-zirga, ka san yadda za ka faɗaɗa hosting ɗinka
 - **Ruɗanin abokin ciniki**: Ka tanadi knowledge base ɗinka da tashoshin tallafi
 
-## Cibiyar FitSite Zuwa Yanzu
+## Cibiyar FitSite Zuwa Yanzu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Abin da Muka Gina a Wannan Darasi
+## Abin da Muka Gina a Wannan Darasi {#what-we-built-this-lesson}
 
 - **Cikakken jerin dubawa kafin kaddamarwa** da ya ƙunshi kayan aiki, abun ciki, biyan kuɗi, da doka
 - **Dabarar soft launch** don samun ra’ayi na gaske kafin buɗewa ga jama’a

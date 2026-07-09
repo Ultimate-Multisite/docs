@@ -3,25 +3,25 @@ title: Addon-sjabloon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Sjabloon
+# Addon Sjabloon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Vereisten
+## Vereisten {#requirements}
 
 - WordPress 5.3 of hoger
 - PHP 7.4 of hoger
 - Multisite Ultimate plugin (actief)
 
-## Installatie
+## Installatie {#installation}
 
 1. Upload de addon-bestanden naar je `/wp-content/plugins/` directory
 2. Activeer de plugin via het 'Plugins' menu in WordPress
 3. Configureer de addon-instellingen in de netwerkbeheerder
 
-## Ontwikkeling
+## Ontwikkeling {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projectstructuur
+### Projectstructuur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testen
+### Testen {#testing}
 
 De addon bevat een uitgebreid testframework:
 
@@ -75,45 +75,45 @@ De addon bevat een uitgebreid testframework:
 - **Test Coverage**: Geconfigureerd om code coverage te volgen
 - **Multisite Testing**: Tests draaien in een multisite-omgeving
 
-### Code Standaarden
+### Code Standaarden {#code-standards}
 
 - WordPress Coding Standards: Afgedwongen via PHPCS
 - PHP 7.4+ Compatibiliteit: Moderne PHP-functies ondersteund
 - Statische Analyse: PHPStan-integratie voor typechecking
 - Code Modernization: Rector-regels voor PHP-upgrades
 
-### Build Systeem
+### Build Systeem {#build-system}
 
 - Assetverwerking: Minificatie voor CSS/JS-bestanden
 - Vertaling: POT-bestandsgeneratie
 - Pakket: Archiefcreatie voor distributie
 - Ontwikkelingsmodus: Onminified assets voor debugging
 
-## Configuratie
+## Configuratie {#configuration}
 
 De addon ondersteunt verschillende configuratieopties die toegankelijk zijn via de netwerkbeheerinterface.
 
-## Hooks en Filters
+## Hooks en Filters {#hooks-and-filters}
 
-### Acties
+### Acties {#actions}
 
 - `ultimate-multisite-addon-template_init` - Wordt geactiveerd na addon-initialisatie
 - `ultimate-multisite-addon-template_loaded` - Wordt geactiveerd na het laden van alle addon-bestanden
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Wijzig addon-instellingen
 - `ultimate-multisite-addon-template_enabled` - Overschrijf addon inschakelen/uitschakelen status
 
-## Licentie
+## Licentie {#license}
 
 Deze addon is gelicentieerd onder de GPL v3 of later.
 
-## Ondersteuning
+## Ondersteuning {#support}
 
 Voor ondersteuning en documentatie, bezoek [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## Wijzigingslog
+## Wijzigingslog {#changelog}
 
 - Versie 1.0.1 (2025-09-28): prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.
 - Versie (2025-09-28): prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.

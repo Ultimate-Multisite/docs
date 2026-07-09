@@ -3,7 +3,7 @@ title: Sunrise-Dateifehler
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fehler beim Installieren der Sunrise-Datei
+# Fehler beim Installieren der Sunrise-Datei {#error-installing-the-sunrise-file}
 
 Die Datei sunrise.php ist eine spezielle Datei, nach der WordPress sucht, während es sich selbst initialisiert. Damit WordPress die Datei sunrise.php erkennen kann, muss sie sich im **wp-content-Ordner** befinden.
 

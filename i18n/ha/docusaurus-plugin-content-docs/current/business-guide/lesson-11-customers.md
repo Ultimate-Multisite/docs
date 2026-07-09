@@ -3,15 +3,15 @@ title: 'Darasi na 11: Neman Abokan Ciniki'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Darasi na 11: Neman Abokan Ciniki
+# Darasi na 11: Neman Abokan Ciniki {#lesson-11-finding-customers}
 
 Babban dandali ba tare da abokan ciniki ba abin sha'awa ne kawai. Wannan darasin yana bayani kan yadda ake samun abokan ciniki a cikin takamaiman fanni -- dabarun da ke aiki musamman saboda ka mayar da hankali kan masana'antu guda ɗaya.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 FitSite yana aiki. Yanzu muna bukatar masu gidajen motsa jiki su same shi su yi rajista.
 
-## Dalilin da Ya Sa Samun Abokan Ciniki a Takamaiman Fanni Ya Bambanta
+## Dalilin da Ya Sa Samun Abokan Ciniki a Takamaiman Fanni Ya Bambanta {#why-niche-acquisition-is-different}
 
 Idan kana sayarwa ga kowa, kana fafatawa ne don samun kulawa a kasuwa mai hayaniya. Idan kana sayarwa ga takamaiman fanni, kana da fa'idodi:
 
@@ -19,17 +19,17 @@ Idan kana sayarwa ga kowa, kana fafatawa ne don samun kulawa a kasuwa mai hayani
 - **Saƙonka yana tasiri nan take** -- "shafukan yanar gizo don gidajen motsa jiki" yana tsayar da mai gym yayin lilo
 - **Shawarar baki tana taruwa** -- masu gidajen motsa jiki sun san wasu masu gidajen motsa jiki
 
-## Tasha ta 1: Tuntuɓar Kai Tsaye
+## Tasha ta 1: Tuntuɓar Kai Tsaye {#channel-1-direct-outreach}
 
 Hanya mafi sauri zuwa abokan cinikinka na farko ita ce tuntuɓar kai tsaye, ta sirri.
 
-### Nemo Masu Yiwuwa Su Zama Abokan Ciniki
+### Nemo Masu Yiwuwa Su Zama Abokan Ciniki {#find-prospects}
 
 - Bincika Google Maps don gidajen motsa jiki, gyms, da masu horas da motsa jiki na sirri a yankinka
 - Ziyarci shafukansu na yanzu (ko ka lura cewa ba su da shi)
 - Tattara bayanan tuntuɓa daga bayanansu na Google Business ko kafofin sada zumunta
 
-### Tantance Halin da Suke Ciki Yanzu
+### Tantance Halin da Suke Ciki Yanzu {#evaluate-their-current-situation}
 
 Ga kowane mai yiwuwa ya zama abokin ciniki, lura da:
 
@@ -37,7 +37,7 @@ Ga kowane mai yiwuwa ya zama abokin ciniki, lura da:
 - **Mummunan shafin yanar gizo**: Mai yiwuwa mai ƙarfi -- nuna musu yadda zaɓi mafi kyau yake
 - **Kyakkyawan shafin yanar gizo**: Mai yiwuwa mai rauni -- sun riga sun warware wannan matsalar
 
-### Yi Tuntuɓa
+### Yi Tuntuɓa {#make-contact}
 
 Aika imel ko saƙo na musamman:
 
@@ -48,7 +48,7 @@ Aika imel ko saƙo na musamman:
 
 Kada ka aika imel ɗin taro. Tuntuɓar musamman ga masu yiwuwa 20 da aka bincika sosai za ta fi aika saƙo na gama-gari ga 2,000.
 
-## Tasha ta 2: Al'ummomin Takamaiman Fanni
+## Tasha ta 2: Al'ummomin Takamaiman Fanni {#channel-2-niche-communities}
 
 Masu gidajen motsa jiki suna taruwa a takamaiman wurare a kan intanet:
 
@@ -57,7 +57,7 @@ Masu gidajen motsa jiki suna taruwa a takamaiman wurare a kan intanet:
 - **Dandalolin masana'antu** da allunan tattaunawa
 - **Ƙungiyoyin LinkedIn** don ƙwararrun motsa jiki
 
-### Yadda Ake Shiga
+### Yadda Ake Shiga {#how-to-participate}
 
 Kada ka shiga ka fara tallata samfurinka nan take. Maimakon haka:
 
@@ -66,7 +66,7 @@ Kada ka shiga ka fara tallata samfurinka nan take. Maimakon haka:
 3. **Raba idan ya dace** -- idan wani ya tambaya game da shafukan yanar gizo, raba dandalinka cikin yanayi na halitta
 4. **Ƙirƙiri abun ciki mai amfani** -- rubuta posts game da "abin da ke sa shafin yanar gizon gidan motsa jiki ya zama mai kyau" wanda zai kai ga dandalinka cikin yanayi na halitta
 
-## Tasha ta 3: Tallan Abun Ciki
+## Tasha ta 3: Tallan Abun Ciki {#channel-3-content-marketing}
 
 Ƙirƙiri abun ciki da masu gidajen motsa jiki ke nema:
 
@@ -77,7 +77,7 @@ Kada ka shiga ka fara tallata samfurinka nan take. Maimakon haka:
 
 Buga wannan a blog ɗin tallan FitSite. Da lokaci, wannan abun ciki yana samun matsayi a injunan bincike kuma yana kawo zirga-zirgar halitta daga mutanen da suke neman abin da kake bayarwa da gaske.
 
-## Tasha ta 4: Haɗin Gwiwa
+## Tasha ta 4: Haɗin Gwiwa {#channel-4-partnerships}
 
 Yi haɗin gwiwa da kasuwancin da suka riga suna hidimtawa gidajen motsa jiki:
 
@@ -88,7 +88,7 @@ Yi haɗin gwiwa da kasuwancin da suka riga suna hidimtawa gidajen motsa jiki:
 
 Bayar da kwamishinan turawa ko tallata juna. [ƙarin AffiliateWP](/addons/affiliatewp) na iya taimaka maka kafa shirin turawa na hukuma.
 
-## Tasha ta 5: Taron Masana'antu
+## Tasha ta 5: Taron Masana'antu {#channel-5-industry-events}
 
 Tarukan masana'antar motsa jiki suna sa ka gaban ɗaruruwan abokan ciniki masu yiwuwa:
 
@@ -99,7 +99,7 @@ Tarukan masana'antar motsa jiki suna sa ka gaban ɗaruruwan abokan ciniki masu y
 
 Ba ka bukatar babban kasafin kuɗi. Ko halarta a matsayin ɗan takara da yin tattaunawa game da abin da kake yi na iya samar da leads.
 
-## Tasha ta 6: Shafukan Nuni
+## Tasha ta 6: Shafukan Nuni {#channel-6-showcase-sites}
 
 Mafi kyawun tallanka shi ne shafukan abokan cinikinka na yanzu. Da izini:
 
@@ -108,7 +108,7 @@ Mafi kyawun tallanka shi ne shafukan abokan cinikinka na yanzu. Da izini:
 - Nemi shaidu daga abokan ciniki masu gamsuwa
 - Ƙarfafa abokan ciniki su ambaci FitSite idan aka tambaye su game da shafin yanar gizon su
 
-## Kafa Shirin Turawa
+## Kafa Shirin Turawa {#setting-up-a-referral-program}
 
 Bayanin baki shi ne tasharka mafi ƙarfi a cikin takamaiman fanni. Mayar da shi na hukuma:
 
@@ -116,7 +116,7 @@ Bayanin baki shi ne tasharka mafi ƙarfi a cikin takamaiman fanni. Mayar da shi 
 2. Bayar da lada ga abokan ciniki na yanzu don turawa (wata ɗaya kyauta, ƙimar Account, da sauransu)
 3. Sauƙaƙa shi -- ba su hanyar haɗin turawa da saƙo mai sauƙi da za su iya turawa
 
-## Bibiyar Abin da Ke Aiki
+## Bibiyar Abin da Ke Aiki {#tracking-what-works}
 
 Ga kowane tasha, bi diddigi:
 
@@ -126,7 +126,7 @@ Ga kowane tasha, bi diddigi:
 
 Ƙara ƙarfi kan tashoshin da ke aiki. Yanke tashoshin da ba sa aiki.
 
-## Tsammanin da Ya Dace da Gaskiya
+## Tsammanin da Ya Dace da Gaskiya {#realistic-expectations}
 
 - **Wata 1-3**: abokan ciniki 5-20, galibi daga tuntuɓar kai tsaye da al'ummomi
 - **Wata 4-6**: abokan ciniki 20-50, tallan abun ciki yana fara ba da gudummawa
@@ -134,7 +134,7 @@ Ga kowane tasha, bi diddigi:
 
 Waɗannan lambobi suna bambanta, amma tsarin yana da daidaito: abokan ciniki na farko suna zuwa daga ƙoƙarin kai tsaye, abokan ciniki na gaba suna zuwa daga tasirin taruwar abun ciki, turawa, da suna.
 
-## Abin da Muka Gina a Wannan Darasin
+## Abin da Muka Gina a Wannan Darasin {#what-we-built-this-lesson}
 
 - **Hanyoyin samun kwastomomi shida** da aka tsara don fannin motsa jiki
 - **Tsarin tuntuba kai tsaye** don samun kwastomomi na farko

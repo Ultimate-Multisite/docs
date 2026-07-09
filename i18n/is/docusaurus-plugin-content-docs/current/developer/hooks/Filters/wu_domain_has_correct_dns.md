@@ -4,11 +4,11 @@ title: Sía - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Sía: wu_domain_has_correct_dns
+# Sía: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Leyfir viðbótarhönnuðum að bæta við nýjum athugunum til að skilgreina niðurstöðurnar.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Nafn | Tegund | Lýsing |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Leyfir viðbótarhönnuðum að bæta við nýjum athugunum til að skilgreina n
 | $domain | `self` | Núverandi lénsinstans. |
 | $domains_and_ips | `array` | Listinn yfir lén og IP-tölur sem fundust í DNS uppflettingunni. |
 
-### Frá útgáfu
+### Frá útgáfu {#since}
 
 - 2.0.4
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) í línu 455
 
 
-## Skilar
+## Skilar {#returns}
 Hvort DNS sé rétt uppsett eða ekki.

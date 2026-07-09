@@ -3,11 +3,11 @@ title: Hooks-ის ცნობარი
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# ჰუკების ცნობარი
+# ჰუკების ცნობარი {#hooks-reference}
 
 ავტომატურად გენერირებული დოკუმენტაცია Ultimate Multisite-ის ყველა **59 მოქმედებისა** და **118 ფილტრისთვის**.
 
-## მოქმედებები
+## მოქმედებები {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — ეშვება ავთენტიფიკაციის გადამისამართებამდე.
 - [set_auth_cookie](./Actions/set_auth_cookie) — ეშვება უშუალოდ ავთენტიფიკაციის cookie-ის დაყენებამდე.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ეშვება მას შემდეგ, რაც object მონაცემთა ბაზაში შეინახება.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin-ის დეველოპერებს საშუალებას აძლევს, განბლოკვის პროცესს actions დაამატონ.
 
-## ფილტრები
+## ფილტრები {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ფილტრავს ავთენტიფიკაციის cookie-ის ვადის გასვლის პერიოდის ხანგრძლივობას.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ფილტრავს ავთენტიფიკაციის გადამისამართების სქემას.

@@ -3,11 +3,11 @@ title: Fomu za Mawasiliano za Jengo la Tovuti
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Contact Forms za Site Builder
+# Contact Forms za Site Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 imeongeza uwezo wa kuunda fomu za mawasiliano moja kwa moja kutoka kwenye chat interface kwa kutumia Site Builder agent. Hii inakuwezesha kuongeza fomu za mawasiliano zenye utendaji kamili kwenye ukurasa wowote bila kuondoka kwenye chat.
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Uwezo wa fomu za mawasiliano za Site Builder (`create_contact_form`) unabaini kiotomatiki plugin yako ya fomu iliyoanzishwa na kuunda fomu za mawasiliano kwa kutumia uwezo wa asili wa plugin hiyo. Plugin za fomu zinazodukungishwa ni pamoja na:
 
@@ -18,7 +18,7 @@ Uwezo wa fomu za mawasiliano za Site Builder (`create_contact_form`) unabaini ki
 
 Msaidizi anachagua kiotomatiki plugin bora ya fomu iliyopo kwenye tovuti yako na kuunda fomu ya mawasiliano iliyoundwa mahsusi kwa ajili ya plugin hiyo.
 
-## Kuunda Fomu ya Mawasiliano
+## Kuunda Fomu ya Mawasiliano {#creating-a-contact-form}
 
 Ili uunde fomu ya mawasiliano kwa kutumia Site Builder:
 
@@ -34,7 +34,7 @@ Ili uunde fomu ya mawasiliano kwa kutumia Site Builder:
 
 4. Site Builder atatengeneza fomu ya mawasiliano na kurudisha shortcode tayari ya kuingizwa.
 
-## Kutumia Shortcode Iliyotengenezwa
+## Kutumia Shortcode Iliyotengenezwa {#using-the-generated-shortcode}
 
 Baada ya Site Builder kuunda fomu ya mawasiliano, inarudisha shortcode (kwa mfano, `[contact-form-7 id="123"]`). Unaweza:
 
@@ -45,11 +45,11 @@ Baada ya Site Builder kuunda fomu ya mawasiliano, inarudisha shortcode (kwa mfan
 
 3. **Kuitumia kwenye template** — Ikiwa unafahamu PHP, unaweza kuongeza shortcode kwenye faili ya template ya theme.
 
-## Kubadilisha Fomu ya Mawasiliano
+## Kubadilisha Fomu ya Mawasiliano {#customizing-the-contact-form}
 
 Baada ya Site Builder kuunda fomu ya mawasiliano, unaweza kuibadilisha zaidi:
 
-### Kupitia Chat Interface
+### Kupitia Chat Interface {#via-the-chat-interface}
 
 Muombe Site Builder kubadilisha fomu:
 
@@ -57,7 +57,7 @@ Muombe Site Builder kubadilisha fomu:
 
 Site Builder atasasisha fomu na kurudisha shortcode iliyosasishwa.
 
-### Kupitia Admin Interface ya Plugin ya Fomu
+### Kupitia Admin Interface ya Plugin ya Fomu {#via-the-form-plugins-admin-interface}
 
 Unaweza pia kubadilisha fomu moja kwa moja kwenye mipangilio ya plugin yako ya fomu:
 
@@ -65,7 +65,7 @@ Unaweza pia kubadilisha fomu moja kwa moja kwenye mipangilio ya plugin yako ya f
 2. Tafuta fomu iliyotengenezwa na Site Builder.
 3. Hariri sehemu za fomu, sheria za uhalali (validation rules), na arifa za barua pepe kama inavyohitajika.
 
-## Plugin za Fomu na Upatanisho
+## Plugin za Fomu na Upatanisho {#form-plugins-and-compatibility}
 
 Site Builder inabaini kiotomatiki ni plugin gani ya fomu iliyoanzishwa kwenye tovuti yako na inatumia hiyo kuunda fomu ya mawasiliano. Ikiwa kuna plugin nyingi za fomu zimeanzishwa, Site Builder zinazotanguliza kwa mpangilio huu:
 
@@ -76,7 +76,7 @@ Site Builder inabaini kiotomatiki ni plugin gani ya fomu iliyoanzishwa kwenye to
 
 Ikiwa hakuna ya plugin hizi zimeanzishwa, Site Builder itapendekeza kuweka moja kabla ya kuunda fomu ya mawasiliano.
 
-## Arifa za Barua Pepe
+## Arifa za Barua Pepe {#email-notifications}
 
 Fomu za mawasiliano zilizoundwa na Site Builder zimepangishwa kutuma arifa za barua pepe kwa msimamizi wa tovuti kwa msingi. Unaweza kubadilisha anwani ya barua pepe inayopokea na ujumbe wa arifa:
 
@@ -91,21 +91,21 @@ Kwa maelekezo ya kina, rejelea waraka wa plugin yako ya fomu:
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Mifano ya Matumizi
+## Mifano ya Matumizi {#example-use-cases}
 
-### Fomu Rahisi ya Mawasiliano
+### Fomu Rahisi ya Mawasiliano {#simple-contact-form}
 
 > "Tengeneza fomu rahisi ya mawasiliano yenye sehemu za jina, barua pepe, na ujumbe."
 
-### Fomu ya Hatua Nyingi (Multi-Step Form)
+### Fomu ya Hatua Nyingi (Multi-Step Form) {#multi-step-form}
 
 > "Tengeneza fomu ya mawasiliano yenye hatua ya kwanza kwa taarifa za mawasiliano na hatua ya pili kwa ujumbe na njia anayopendelea ya mawasiliano."
 
-### Fomu yenye Mantiki ya Masharti (Conditional Logic)
+### Fomu yenye Mantiki ya Masharti (Conditional Logic) {#form-with-conditional-logic}
 
 > "Tengeneza fomu ya mawasiliano ambayo inaonyesha sehemu tofauti kulingana na uchaguzi wa mtumiaji kwenye orodha (dropdown)."
 
-### Fomu yenye Kupakia Faili
+### Fomu yenye Kupakia Faili {#form-with-file-upload}
 
 > "Tengeneza fomu ya mawasiliano ambayo inaruhusu watumiaji kupakia faili au kiambatisho."
 

@@ -3,7 +3,7 @@ title: Zapier-integrasjon
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrere Ultimate Multisite med Zapier
+# Integrere Ultimate Multisite med Zapier {#integrating-ultimate-multisite-with-zapier}
 
 I en av artiklene diskuterte vi [Webhooks](webhooks.md) og hvordan de kan brukes til å integrere med tredjepartsapplikasjoner.
 
@@ -15,7 +15,7 @@ Du kan opprette **Triggers** som utløses når hendelser skjer på nettverket di
 
 Dette er mulig fordi **Ultimate Multisite Zapier's triggers** og actions drives av [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Slik kommer du i gang
+## Slik kommer du i gang {#how-to-start}
 
 Først søker du etter Ultimate Multisite i Zapier-applisten. Alternativt kan du klikke på [denne lenken](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ I URL-feltet legger du inn full URL for nettverket ditt, inkludert protokollen (
 
 Klikk på **Yes, Continue**-knappen for å gå videre til neste trinn. Hvis alt fungerer, skal du bli møtt av den nye tilkoblede Account-en din! Klikk på **Continue** for å opprette en ny trigger.
 
-## Slik oppretter du en ny Trigger
+## Slik oppretter du en ny Trigger {#how-to-create-a-new-trigger}
 
 Nå som Account-en din er tilkoblet, kan du se tilgjengelige hendelser. La oss velge **payment_received**-hendelsen for denne veiledningen.
 
@@ -67,7 +67,7 @@ På dette stadiet vil Zapier teste om Zap-en din kan **hente den spesifikke payl
 
 I veiledningen vår ble testen **fullført** og returnerte eksempeldata for payload-en. Denne eksempeldataen vil være nyttig som veiledning mens vi oppretter actions. Triggeren din er nå opprettet og klar til å kobles til andre applikasjoner.
 
-## Slik oppretter du Actions
+## Slik oppretter du Actions {#how-to-create-actions}
 
 Actions bruker informasjon fra andre triggers til å opprette nye oppføringer i nettverket ditt.
 
@@ -79,7 +79,7 @@ I neste trinn oppretter du enten autentiseringen din, akkurat som vi gjorde i **
 
 ![Velger autentisering for Zapier-action](/img/admin/webhooks-list.png)
 
-### Sette opp Action
+### Sette opp Action {#setting-up-the-action}
 
 Dette er **hovedtrinnet i actionen**, og her er ting litt annerledes. Den første informasjonen du velger er **Item**. Item er **informasjonsmodellen** for nettverket ditt, som **Customers, Payments, Sites, Emails** og andre.
 

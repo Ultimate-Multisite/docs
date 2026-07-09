@@ -3,7 +3,7 @@ title: Talaan ng mga Pagbabago ng Nagbebenta ng Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Tala ng Pagbabago ng Domain Seller
+# Tala ng Pagbabago ng Domain Seller {#domain-seller-changelog}
 
 Bersyon 1.3.0 - Inilabas noong 2026-06-02
 - Bago: Nagdagdag ng babala sa network-admin kapag masyadong mababa na ang balanse ng reseller ng HostAfrica
@@ -134,20 +134,20 @@ Bersyon 1.0.0 - Inilabas noong 2025-09-28
 * **Naayos:** Lahat ng deprecated na v1 code ay na-update sa mga pamantayan ng v2
 * **Inalis:** Legacy na compatibility sa v1 (breaking change)
 
-### Mga Nakaraang Bersyon (v1 Legacy)
+### Mga Nakaraang Bersyon (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Bersyon 0.0.3 - 20/08/2019
+### Bersyon 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Naayos: Incompatibility sa Groundhogg CRM
 * Tala: Ito ang huling release na compatible sa v1
 
-### Bersyon 0.0.2 - 07/12/2018
+### Bersyon 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Naayos: Inalis ang field na License Key
 * Naayos: Nawawala ang mga tab ng plan kapag aktibo ang feature plugin
 * Pinahusay: Nagdagdag ng skip button sa registration field
 
-### Bersyon 0.0.1 - Paunang Release
+### Bersyon 0.0.1 - Paunang Release {#version-001---initial-release}
 
 * Pangunahing integrasyon ng OpenSRS para sa WP Ultimo v1
 * Simpleng paghahanap at pagpaparehistro ng domain

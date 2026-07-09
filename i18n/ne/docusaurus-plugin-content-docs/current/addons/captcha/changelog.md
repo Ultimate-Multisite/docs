@@ -3,7 +3,7 @@ title: क्याप्चा परिवर्तन विवरण
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha परिवर्तन विवरण
+# Captcha परिवर्तन विवरण {#captcha-changelog}
 
 संस्करण: 1.5.0 - 2026-05-22 मा जारी
 * नयाँ: कडा-रोक दर सीमक — captcha-सुरक्षित सतहहरू (wp-login / दर्ता / हराएको-पासवर्ड / टिप्पणीहरू, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) मा प्रत्येक GET र POST गणना गर्छ र HTTP 429, `Retry-After` header, र अनियमित tarpit निद्रा (१–५ सेकेन्ड, १५ सेकेन्डमा कडा-सीमित) सहित जवाफ दिन्छ।

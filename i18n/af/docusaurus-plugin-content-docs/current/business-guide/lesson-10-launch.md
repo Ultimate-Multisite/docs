@@ -3,19 +3,19 @@ title: 'Les 10: Lanser-dag'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Les 10: Lanseringsdag
+# Les 10: Lanseringsdag {#lesson-10-launch-day}
 
 Alles is gebou. Voordat jy die deure oopmaak, loop hierdie les deur die pre-launch-kontrolelys om te verseker dat niks gebreek, ontbreek of skemand is.
 
-## Waar Ons Gebly Het
+## Waar Ons Gebly Het {#where-we-left-off}
 
 FitSite het templates, planne, checkout, branding, onboarding en prysbepaling alles geconfigureer. Nou verifieer ons alles werk en gaan ons live.
 
-## Pre-Launch Kontrolelys
+## Pre-Launch Kontrolelys {#pre-launch-checklist}
 
 Loop deur elke item. Moenie enige een opsy sien nie.
 
-### Platform Infrastruktuur
+### Platform Infrastruktuur {#platform-infrastructure}
 
 - [ ] Hosting is stabiel en presteer goed onder las
 - [ ] Wildcard SSL is aktief en alle subdomene dien oor HTTPS
@@ -23,7 +23,7 @@ Loop deur elke item. Moenie enige een opsy sien nie.
 - [ ] Backups is geconfigureer en getoets (herstel ten minste een om te verifieer)
 - [ ] Monitoring is op plek – jy sal weet of die platform uitval
 
-### Templates
+### Templates {#templates}
 
 - [ ] Al drie templates laai korrek op nuwe webwerwe
 - [ ] Placeholder-inhoud is nuttig en vry van spelfoute
@@ -32,7 +32,7 @@ Loop deur elke item. Moenie enige een opsy sien nie.
 - [ ] Bladsy laai-spoed is aanvaarbaar (toets met 'n gereedskap soos GTmetrix of PageSpeed Insights)
 - [ ] Geen gebreekte skakels of ontbrekende assets op enige template
 
-### Planne en Produkte
+### Planne en Produkte {#plans-and-products}
 
 - [ ] Al drie planne is aktief en sigbaar
 - [ ] Planbeskrywings is akkuraat en nis-spesifiek
@@ -42,7 +42,7 @@ Loop deur elke item. Moenie enige een opsy sien nie.
 - [ ] Order bumps verskyn korrek tydens die checkout
 - [ ] Plugin- en tema-beperkings word korrek per plan afgedwing
 
-### Checkout Flow
+### Checkout Flow {#checkout-flow}
 
 - [ ] Voltooi 'n volledige toets-aanmelding op elke plan (gebruik toetsbetaling-modus)
 - [ ] Template-keuse toon die korrekte templates per plan
@@ -52,7 +52,7 @@ Loop deur elke item. Moenie enige een opsy sien nie.
 - [ ] Klant kan onmiddellik inlog op hul nuwe webwerf
 - [ ] Kortingskodes werk korrek
 
-### Branding
+### Branding {#branding}
 
 - [ ] Inlogbladsy toon FitSite branding
 - [ ] Admin dashboard toon FitSite branding
@@ -60,7 +60,7 @@ Loop deur elke item. Moenie enige een opsy sien nie.
 - [ ] Fakture toon korrek met jou besigheidsbesonderhede
 - [ ] Marketingwebwerf is live en skakel na die checkout-formulier
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Quick Start widget verskyn op nuwe kliënt-dashboards
 - [ ] Alle Quick Start skakels wys na die korrekte bladsye
@@ -68,7 +68,7 @@ Loop deur elke item. Moenie enige een opsy sien nie.
 - [ ] Kennisbasis-artikels is gepubliseer en toeganklik
 - [ ] Rekeningbladsy toon korrek plan-inligting en opgraderingsopsies
 
-### Wetlik en Besigheid
+### Wetlik en Besigheid {#legal-and-business}
 
 - [ ] Dienste-terme is gepubliseer en vanaf die checkout gekoppel
 - [ ] Privaatheidsbeleid is gepubliseer en toeganklik
@@ -77,11 +77,11 @@ Loop deur elke item. Moenie enige een opsy sien nie.
 - [ ] Betalingshek is in live-modus (nie toetsmodus nie)
 - [ ] Belastingkonfigurasie is korrek vir jou jurisdiksie
 
-## Soft Launch teenoor Hard Launch
+## Soft Launch teenoor Hard Launch {#soft-launch-vs-hard-launch}
 
 Oorweeg 'n twee-fase lansering:
 
-### Fase 1: Soft Launch
+### Fase 1: Soft Launch {#phase-1-soft-launch}
 
 Nooi 5-10 fitness-studio-eienaars uit om aan te meld voordat die publieke lansering plaasvind. Dit is jou beta-kliënte. Bied hulle 'n aansienlike afslag (50% afslag vir die lewe, of 3 maande gratis) aan in ruil vir:
 
@@ -91,7 +91,7 @@ Nooi 5-10 fitness-studio-eienaars uit om aan te meld voordat die publieke lanser
 
 Dit gee jou werklike kliëntterugvoer en live webwerwe om te vertoon voordat jy die publiek oopmaak.
 
-### Fase 2: Public Launch
+### Fase 2: Public Launch {#phase-2-public-launch}
 
 Sodra die soft launch-terugvoer ingebou is:
 
@@ -100,7 +100,7 @@ Sodra die soft launch-terugvoer ingebou is:
 - Begin kliëntverkryging (Les 11)
 - Kondig aan op relevante fitness-bedryfskanale
 
-## Aksies op Lanseringsdag
+## Aksies op Lanseringsdag {#launch-day-actions}
 
 Op die dag wat jy publiek word:
 
@@ -110,7 +110,7 @@ Op die dag wat jy publiek word:
 4. **Wees beskikbaar** – jou eerste werklike kliënte mag hulp benodig, en vinnige reaksie bou vertroue op
 5. **Vier kortliks** – en kom dan terug by die werk
 
-## Wat Kan Misgaan
+## Wat Kan Misgaan {#what-can-go-wrong}
 
 Wees gereed vir:
 
@@ -120,7 +120,7 @@ Wees gereed vir:
 - **Prestasie onder las**: As jy 'n verkeerpiek kry, weet hoe om jou hosting op te skaal
 - **Kliëntverwarring**: Hou jou kennisbasis en ondersteuningskanale gereed
 
-## Die FitSite Netwerk Tot Nou
+## Die FitSite Netwerk Tot Nou {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Wat Ons Hierdie Les Gebou Het
+## Wat Ons Hierdie Les Gebou Het {#what-we-built-this-lesson}
 
 - **'n Omvattende pre-launch-kontrolelys** wat infrastruktuur, inhoud, betalings en wetlik dek
 - **'n Soft launch-strategie** om werklike terugvoer te kry voordat jy publiek word

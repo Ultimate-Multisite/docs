@@ -4,11 +4,11 @@ title: Bộ lọc - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Điều chỉnh thời gian hết hạn của cookie xác thực.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 | $user_id | `int` | ID người dùng. |
 | $remember | `bool` | Liệu có ghi nhớ đăng nhập của người dùng hay không. Mặc định là false. |
 
-### Since
+### Since {#since}
 
 - 2.8.0
-### Source
+### Source {#source}
 
 Được định nghĩa trong [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) tại dòng 52

@@ -3,11 +3,11 @@ title: Илгичтер маалымдамасы
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks маалымдамасы
+# Hooks маалымдамасы {#hooks-reference}
 
 Ultimate Multisite ичиндеги бардык **59 аракет** жана **118 чыпка** үчүн автоматтык түрдө түзүлгөн документация.
 
-## Аракеттер
+## Аракеттер {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Аутентификация багыттоосунан мурун иштейт.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Аутентификация cookie коюлардын так алдында иштейт.
@@ -70,7 +70,7 @@ Ultimate Multisite ичиндеги бардык **59 аракет** жана **
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — объект базага сакталгандан кийин иштейт.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin иштеп чыгуучуларына кулпудан чыгаруу процессине аракеттерди кошууга уруксат берет.
 
-## Чыпкалар
+## Чыпкалар {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Аутентификация cookie мөөнөтүнүн аяктоо узактыгын чыпкалайт.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Аутентификация багыттоо схемасын чыпкалайт.

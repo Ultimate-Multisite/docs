@@ -3,13 +3,13 @@ title: Checkout Field eta Klientelaren DNS-a
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field eta DNS-aren Kontsumari Nagusiaketa
+# Checkout Field eta DNS-aren Kontsumari Nagusiaketa {#checkout-field-and-customer-dns-management}
 
-## Domainako Alegia lekuen leku
+## Domainako Alegia lekuen leku {#the-domain-selection-checkout-field}
 
 **Domain Selection** lekuak checkout element bat da, zein irudiak erabiltzen duen informazioa kontsumariei ematen du. Domainak saldira konponbideak edoze checkout form batean gehitu dezake domainak saldira aktiboa egiteko.
 
-### Lekuaren leku checkout form batean gehitu
+### Lekuaren leku checkout form batean gehitu {#adding-the-field-to-a-checkout-form}
 
 1. **Network Admin › Ultimate Multisite › Checkout Forms**-era jarri duzu.
 2. Checkout form bat lortu edo zure form bat jartu duzu.
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Legearen opsioak konfigura duzu (aurekin astiatuan).
 6. Formak saldu duzu.
 
-### Legearen opsioak
+### Legearen opsioak {#field-options}
 
 **Domain moduak** — Kontsumariei zein astiak ikusten dituzteko aukera ematen duen. Moduak guztiak independentean aktiboa edo deaktiboa egin daiteke:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domain produkto** — Legearen aukerari domain produkto bat ere pinatzea posible da. Ez estektzen duen irikusi, addon-ek kontsumariek bilatzen duen TLD (Top Level Domain) eratu behar duena jakinarazten duen produktoa automatikoki ematen du.
 
-### Registranten kontakto lekuak
+### Registranten kontakto lekuak {#registrant-contact-fields}
 
 Kontsumariek **Register New Domain** astia irudi duenean, checkout form batean registranten kontakto lekuak inline (lekuaren gainean) jartzen dira:
 
@@ -43,10 +43,10 @@ Kontsumariek **Register New Domain** astia irudi duenean, checkout form batean r
 
 Hauzu behar da guztizko registratoriek eskatzen dituen eta registrazio API-ko eskatzea bago egiten da. Telefonoa automatikoki registrarriek eskatzen duen `+CC.NNN` internazional formatu zehatzera formatzen da.
 
-### Automatiko URL-a emateko
+### Automatiko URL-a emateko {#auto-generated-site-url}
 Kunde bat registratzen edo domain bat mapatzen duenean, site URL lekuak nahi gertu domainetik automatikoki horren partirri da. Kundek ez dute URL leku batean iraki eta ematen behar.
 
-### Aurrespena eragiketa (Search behaviour)
+### Aurrespena eragiketa (Search behaviour) {#search-behaviour}
 - Domainaren disponibiltasua real-time AJAX bidez kontrolatzen da, kudeak testiatzen duenean.
 - Preferitu domaina ez dagoenean, alternatibo TLDs (Top Level Domains) sugerentziak gertatzen dira.
 - Prezioak live hartzen eta argi eragiten dira (registrazio prezioa, berri egindera prezioa, opcional WHOIS gizaldia).
@@ -75,11 +75,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Kundek DNS administrazioa
+## Kundek DNS administrazioa {#customer-dns-management}
 
 Kundek bere domainakaren DNS record-ek **My Account** lapurialdean, bere domainaren erregistratzeko lekuan, administrazio dezak.
 
-### Udaldeak (record types) zehatzak
+### Udaldeak (record types) zehatzak {#supported-record-types}
 
 | Uri | Erabiltza |
 |---|---|
@@ -89,11 +89,11 @@ Kundek bere domainakaren DNS record-ek **My Account** lapurialdean, bere domaina
 | **MX** | Mail exchange servera konpondu |
 | **TXT** | SPF, DMARC, bidezko identifikazio edo beste testu record-ek hasi ezarria |
 
-### DNS administrazioa zehatzak zein providerrak suportatzen du?
+### DNS administrazioa zehatzak zein providerrak suportatzen du? {#which-providers-support-dns-management}
 
 DNS administrazioa (rekordak gehitu, mugitu, haie) disponible da **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** eta **Openprovider**-ekin. **Hostinger** domeniuak ez daude irekitzenaren (Domain Seller) bidez nameservere mugitzen dezisten; hostatutako domen berezko DNS rekordak Hostinger domain-mapping integrazioa bidez administrazio dira. Namecheap, GoDaddy eta NameSilo domenak estatusu eta amaierri informazioa erakusten dute, baina DNS-ak registrararen kontrol panelan direktu zuzenean administrazio egin behar da.
 
-### Default DNS rekordak
+### Default DNS rekordak {#default-dns-records}
 
 Domenu ematen den default DNS rekordak konfiguru dezakezu, eta horiek domeniu ematenenean automatikoki aplikatzen dira. **Settings › Domain Seller › Default DNS Records** (Konfigurazioa > Domenia Emateko Lehenaren > Default DNS Rekordak) funtziora jarraitu.
 
@@ -116,6 +116,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admina: DNS ikustea eta mugitzea
+### Admina: DNS ikustea eta mugitzea {#admin-viewing-and-editing-dns}
 
 Network adminak domena ematenaren edozein kliente-ren DNS rekordak ikustu eta mugitu dezakete domain-en mugitzenaren (edit) lapurialdia **Network Admin › Ultimate Multisite › Domains** (Network Administrazioa > Ultimate Multisite > Domeniak) funtziora jarraituz.

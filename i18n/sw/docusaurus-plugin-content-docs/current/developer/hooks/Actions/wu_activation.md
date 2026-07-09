@@ -4,13 +4,13 @@ title: Kitendo - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Action: wu_activation
+# Action: wu_activation {#action-wuactivation}
 
 Inaruhusu sehemu zingine za plugin kuunganisha utaratibu wao wa kuendesha kazi wakati wa uanzishaji (activation).
 
-### Tangu
+### Tangu {#since}
 
 - 1.9.6
-### Chanzo
+### Chanzo {#source}
 
 Imefafanuliwa katika [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L91) kwenye mstari wa 91

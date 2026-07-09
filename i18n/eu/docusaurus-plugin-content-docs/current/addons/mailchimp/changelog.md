@@ -3,7 +3,7 @@ title: Mailchimp aldaketen erregistroa
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp aldaketen erregistroa
+# Mailchimp aldaketen erregistroa {#mailchimp-changelog}
 
 Bertsioa: 1.1.1 - 2025-09-28an argitaratua
 

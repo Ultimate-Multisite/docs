@@ -4,11 +4,11 @@ title: Aktioun - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 Gëtt direkt ausgeléist, ier de ageloggt-Authentifikatiouns-Cookie gesat gëtt.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Gëtt direkt ausgeléist, ier de ageloggt-Authentifikatiouns-Cookie gesat gëtt.
 | $scheme | `string` | Authentifikatiouns-Schema. Standard 'logged_in'. |
 | $token | `string` | Sessiouns-Token vum Benotzer fir dëse Cookie ze benotzen. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) op der Linn 141

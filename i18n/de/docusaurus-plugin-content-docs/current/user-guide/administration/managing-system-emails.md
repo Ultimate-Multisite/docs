@@ -3,11 +3,11 @@ title: System-E-Mails verwalten
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# System-E-Mails verwalten
+# System-E-Mails verwalten {#managing-system-emails}
 
 Ultimate Multisite versendet verschiedene System-E-Mails für Ereignisse wie Registrierungsbestätigungen, Zahlungsbelege und Änderungen der Mitgliedschaft. Du kannst diese E-Mail-Vorlagen an deine Marke anpassen.
 
-## System-E-Mails anzeigen
+## System-E-Mails anzeigen {#viewing-system-emails}
 
 Navigiere zu **Ultimate Multisite → Settings** und klicke auf den Tab **Emails**, um E-Mail-bezogene Einstellungen zu sehen.
 
@@ -21,7 +21,7 @@ Du kannst einzelne E-Mail-Vorlagen auch mit dem System-E-Mail-Editor bearbeiten:
 
 ![System-E-Mail-Editor](/img/admin/system-email-editor.png)
 
-## Neue E-Mail-Vorlagen importieren
+## Neue E-Mail-Vorlagen importieren {#importing-new-email-templates}
 
 Neue Ultimate Multisite-Versionen und Add-ons können neue E-Mail-Vorlagen registrieren. Um Konflikte zu vermeiden, werden neue Vorlagen nicht automatisch hinzugefügt — du musst sie manuell importieren.
 
@@ -32,7 +32,7 @@ So importierst du neue E-Mail-Vorlagen:
 3. Aktiviere die Option **Import Emails**, um verfügbare Vorlagen zu sehen
 4. Wähle die Vorlagen aus, die du importieren möchtest, und bestätige
 
-## E-Mail-Vorlagen zurücksetzen
+## E-Mail-Vorlagen zurücksetzen {#resetting-email-templates}
 
 Wenn du eine E-Mail-Vorlage angepasst hast und zum Standardinhalt zurückkehren möchtest, hast du zwei Optionen:
 

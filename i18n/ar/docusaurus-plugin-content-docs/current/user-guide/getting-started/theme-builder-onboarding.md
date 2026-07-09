@@ -3,11 +3,11 @@ title: مسار إعداد مُنشئ القوالب
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# مسار إعداد Theme Builder
+# مسار إعداد Theme Builder {#theme-builder-onboarding-flow}
 
 يقدم Superdav AI Agent v1.12.0 **مسار إعداد Theme Builder** مُوجَّهًا يساعدك على إنشاء قالب (Theme) مخصص بالاعتماد على نظام الكتل (block theme) أثناء إعدادك الأولي. يحل هذا المسار محل وضع Site Builder القديم بنهج أكثر مرونة يعتمد على المساعد الذكي (agent-assisted).
 
-## ما هو مسار إعداد Theme Builder؟
+## ما هو مسار إعداد Theme Builder؟ {#what-is-the-theme-builder-onboarding-flow}
 
 مسار إعداد Theme Builder هو معالج إعداد تفاعلي يقوم بما يلي:
 
@@ -18,9 +18,9 @@ _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 
 يعمل هذا المسار بواسطة **وكيل Setup Assistant**، الذي يطرح أسئلة توضيحية ويبني القالب الخاص بك بشكل تدريجي.
 
-## بدء إعداد Theme Builder
+## بدء إعداد Theme Builder {#starting-the-theme-builder-onboarding}
 
-### الإعداد عند التشغيل الأول
+### الإعداد عند التشغيل الأول {#first-run-setup}
 
 عند تشغيل Superdav AI Agent لأول مرة على تثبيت WordPress جديد، سترى:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 اختر **"Build a custom theme"** للدخول إلى مسار إعداد Theme Builder.
 
-### التفعيل اليدوي
+### التفعيل اليدوي {#manual-activation}
 
 يمكنك أيضًا بدء إعداد Theme Builder في أي وقت عن طريق طلب:
 
@@ -49,9 +49,9 @@ What would you like to do?
 "Help me create a custom theme"
 ```
 
-## خطوات الإعداد
+## خطوات الإعداد {#the-onboarding-steps}
 
-### الخطوة 1: اختيار الوضع (Mode Selection)
+### الخطوة 1: اختيار الوضع (Mode Selection) {#step-1-mode-selection}
 
 يسألك وكيل Setup Assistant عن تفضيلك:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 يوصى بـ **الوضع الموجه (Guided mode)** لمعظم المستخدمين؛ حيث يقدم الوكيل توصيات تصميمية بناءً على مجال عملك وأهدافك.
 
-### الخطوة 2: تحديد مواصفات الموقع (Site Specification)
+### الخطوة 2: تحديد مواصفات الموقع (Site Specification) {#step-2-site-specification}
 
 سيُطلب منك معلومات حول موقعك:
 
@@ -74,7 +74,7 @@ How would you like to build your theme?
 
 يتم تخزين هذه المعلومات في ذاكرة **site_brief** الخاصة بموقعك، والتي يستشيرها الوكيل في الجلسات المستقبلية.
 
-### الخطوة 3: قرارات نظام التصميم (Design System Decisions)
+### الخطوة 3: قرارات نظام التصميم (Design System Decisions) {#step-3-design-system-decisions}
 
 يوجهك الوكيل خلال اختيار رموز التصميم (design tokens):
 
@@ -83,7 +83,7 @@ How would you like to build your theme?
 - **المسافات (Spacing)**: تخطيطات مدمجة، عادية، أو واسعة.
 - **الحركة (Motion)**: الرسوم المتحركة والانتقالات (إذا رغبت في ذلك).
 
-### الخطوة 4: توليد القالب (Theme Generation)
+### الخطوة 4: توليد القالب (Theme Generation) {#step-4-theme-generation}
 
 يقوم وكيل Setup Assistant بإنشاء هيكل قالب الكتل المخصص الخاص بك، ويشمل:
 
@@ -92,7 +92,7 @@ How would you like to build your theme?
 - أنماط كتل مخصصة تتوافق مع نظام التصميم الخاص بك.
 - بيانات وصف القالب (metadata) وتصريحات دعم WordPress.
 
-### الخطوة 5: التفعيل والتحقق (Activation and Verification)
+### الخطوة 5: التفعيل والتحقق (Activation and Verification) {#step-5-activation-and-verification}
 
 يتم تفعيل القالب تلقائيًا، وسترى:
 
@@ -107,7 +107,7 @@ How would you like to build your theme?
 
 يمكنك بعد ذلك زيارة موقعك للتحقق من أن القالب يعرض بشكل صحيح.
 
-## مواصفات الموقع وذاكرة site_brief
+## مواصفات الموقع وذاكرة site_brief {#site-specification-and-sitebrief-memory}
 
 أثناء عملية الإعداد، يلتقط الوكيل مواصفات موقعك في فئة ذاكرة **site_brief**. ويشمل ذلك:
 
@@ -117,7 +117,7 @@ How would you like to build your theme?
 - تفضيلات التصميم.
 - هيكل المحتوى.
 
-### أهمية site_brief
+### أهمية site_brief {#why-sitebrief-matters}
 
 في الجلسات المستقبلية، يستشير الوكيل الـ site_brief الخاص بك من أجل:
 
@@ -126,7 +126,7 @@ How would you like to build your theme?
 - تقديم توصيات واعية بالسياق.
 - تجنب تكرار أسئلة الإعداد.
 
-### عرض site_brief الخاص بك
+### عرض site_brief الخاص بك {#viewing-your-sitebrief}
 
 يمكنك أن تطلب من الوكيل:
 
@@ -142,11 +142,11 @@ How would you like to build your theme?
 
 سيقوم الوكيل بعرض مواصفات موقعك المخزنة.
 
-## التخصيص بعد الإعداد
+## التخصيص بعد الإعداد {#customizing-after-onboarding}
 
 بعد اكتمال مسار إعداد Theme Builder، يمكنك:
 
-### استخدام مهارة جماليات نظام التصميم (Design System Aesthetics Skill)
+### استخدام مهارة جماليات نظام التصميم (Design System Aesthetics Skill) {#use-the-design-system-aesthetics-skill}
 
 اطلب تحسينات تصميمية:
 
@@ -162,7 +162,7 @@ How would you like to build your theme?
 
 تساعدك **مهارة جماليات نظام التصميم** في إجراء تحديثات تصميمية مستهدفة.
 
-### تعديل theme.json مباشرة
+### تعديل theme.json مباشرة {#edit-themejson-directly}
 
 للمستخدمين المتقدمين، قم بتعديل `/wp-content/themes/[theme-name]/theme.json` لتعديل:
 
@@ -171,7 +171,7 @@ How would you like to build your theme?
 - قيم المسافات (Spacing values).
 - تعريفات الحدود والظلال (Border and shadow definitions).
 
-### إنشاء قوالب كتل مخصصة (Custom Block Templates)
+### إنشاء قوالب كتل مخصصة (Custom Block Templates) {#create-custom-block-templates}
 
 استخدم محرر كتل WordPress لإنشاء قوالب مخصصة لـ:
 
@@ -180,7 +180,7 @@ How would you like to build your theme?
 - صفحات المنتجات.
 - نماذج الاتصال.
 
-## مقارنة: الإعداد القديم مقابل الإعداد الجديد
+## مقارنة: الإعداد القديم مقابل الإعداد الجديد {#comparison-old-vs-new-onboarding}
 
 | الميزة | Site Builder (القديم) | Theme Builder (الجديد) |
 |---------|----------------------|---------------------|
@@ -190,7 +190,7 @@ How would you like to build your theme?
 | المرونة | خيارات ثابتة | قابل للتخصيص |
 | التحديثات المستقبلية | لا يتم الرجوع إليها | يتم تخزينها في site_brief |
 
-## استكشاف الأخطاء وإصلاحها (Troubleshooting)
+## استكشاف الأخطاء وإصلاحها (Troubleshooting) {#troubleshooting}
 
 **لم يكتمل مسار الإعداد:**
 - أعد تشغيل المسار: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ How would you like to build your theme?
 - اطلب من الوكيل "regenerate the theme with [specific changes]" (إعادة توليد القالب بالتغييرات [المحددة]).
 - قم بتعديل theme.json مباشرة للتحكم الدقيق.
 
-## الخطوات التالية
+## الخطوات التالية {#next-steps}
 
 بعد إكمال إعداد Theme Builder:
 

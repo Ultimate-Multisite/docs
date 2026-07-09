@@ -3,11 +3,11 @@ title: Մատակարարին հարմարեցված Prompt քեշավորում
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Մատակարարին համապատասխան prompt caching
+# Մատակարարին համապատասխան prompt caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0-ը ներկայացնում է **մատակարարին համապատասխան prompt caching**, որը օպտիմալացնում է API-ի ծախսերն ու ուշացումը՝ տարբեր LLM մատակարարների միջև prompt-երը cache անելով։ Յուրաքանչյուր մատակարար ունի տարբեր cache մեխանիզմներ և կարգավորումներ։
 
-## Ընդհանուր ակնարկ
+## Ընդհանուր ակնարկ {#overview}
 
 Prompt caching-ը թույլ է տալիս՝
 
@@ -23,11 +23,11 @@ Prompt caching-ը թույլ է տալիս՝
 - **OpenRouter**: Մատակարարին հատուկ caching
 - **Vertex Anthropic**: Prompt caching cache control-ով
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini-ը տրամադրում է cache-ի հստակ կառավարում `cachedContents` API-ի միջոցով։
 
-### Կարգավորում
+### Կարգավորում {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Cache արված prompt-ի ստեղծում
+### Cache արված prompt-ի ստեղծում {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Cache արված prompt-ի օգտագործում
+### Cache արված prompt-ի օգտագործում {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache-ի կյանքի ցիկլ
+### Cache-ի կյանքի ցիկլ {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Լավագույն գործելակերպեր Gemini-ի համար
+### Լավագույն գործելակերպեր Gemini-ի համար {#best-practices-for-gemini}
 
 - **Սահմանեք համապատասխան TTL**: Հավասարակշռեք ծախսերի խնայողությունը և cache-ի հնացումը
 - **Cache արեք system prompt-երը**: Նույն system prompt-ը վերօգտագործեք հարցումների միջև
 - **Վերահսկեք cache-ի օգտագործումը**: Հետևեք, թե որ cache-երն են առավել շատ օգտագործվում
 - **Մաքրեք ժամկետանց cache-երը**: Պարբերաբար ջնջեք չօգտագործվող cache-երը
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI-ն աջակցում է prompt caching՝ ավտոմատ TTL կառավարմամբ։
 
-### Կարգավորում
+### Կարգավորում {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Caching-ի միացում
+### Caching-ի միացում {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache վերնագրեր
+### Cache վերնագրեր {#cache-headers}
 
 Azure OpenAI-ն օգտագործում է HTTP վերնագրեր cache-ի կառավարման համար՝
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: Չանել cache այս հարցումը
 - `no_store`: Չանել cache և չվերօգտագործել
 
-### Cache-ի օգտագործման վերահսկում
+### Cache-ի օգտագործման վերահսկում {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Լավագույն գործելակերպեր Azure OpenAI-ի համար
+### Լավագույն գործելակերպեր Azure OpenAI-ի համար {#best-practices-for-azure-openai}
 
 - **Օգտագործեք համահունչ prompt-եր**: Նույնական prompt-երը օգուտ են ստանում caching-ից
 - **Սահմանեք ողջամիտ TTL**: Հավասարակշռեք ծախսը և թարմությունը
 - **Վերահսկեք cache-ի չափորոշիչները**: Հետևեք cache-ի ստեղծմանն ընդդեմ հարվածների
 - **Խմբավորեք նմանատիպ հարցումները**: Խմբավորեք հարցումները՝ cache-ի հարվածները առավելագույնի հասցնելու համար
 
-## OpenRouter: Մատակարարին հատուկ caching
+## OpenRouter: Մատակարարին հատուկ caching {#openrouter-provider-specific-caching}
 
 OpenRouter-ն աջակցում է caching-ին հիմքում գտնվող մատակարարների միջոցով (OpenAI, Anthropic և այլն)։
 
-### Կարգավորում
+### Կարգավորում {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter caching-ի օգտագործում
+### OpenRouter caching-ի օգտագործում {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Մատակարարին հատուկ տարբերակներ
+### Մատակարարին հատուկ տարբերակներ {#provider-specific-options}
 
 Տարբեր մատակարարներ ունեն տարբեր caching մեխանիզմներ՝
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Լավագույն գործելակերպեր OpenRouter-ի համար
+### Լավագույն գործելակերպեր OpenRouter-ի համար {#best-practices-for-openrouter}
 
 - **Իմացեք ձեր մատակարարի caching-ը**: Յուրաքանչյուր մատակարար ունի տարբեր մեխանիզմներ
 - **Փորձարկեք caching-ի վարքագիծը**: Ստուգեք, որ caching-ը աշխատում է ձեր ընտրած մատակարարի հետ
 - **Վերահսկեք ծախսերը**: Հետևեք caching-ից ստացված խնայողություններին
 - **Օգտագործեք համահունչ մոդելներ**: Մոդելների փոխումը խափանում է cache-ի հարվածները
 
-## Vertex Anthropic: Prompt Caching cache control-ով
+## Vertex Anthropic: Prompt Caching cache control-ով {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic-ը (Google Cloud) աջակցում է prompt caching-ին՝ հստակ cache control-ով։
 
-### Կարգավորում
+### Կարգավորում {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic քեշավորման օգտագործումը
+### Vertex Anthropic քեշավորման օգտագործումը {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Քեշի կառավարման տեսակներ
+### Քեշի կառավարման տեսակներ {#cache-control-types}
 
 - **ephemeral**: Քեշավորել հարցման տևողության համար (լռելյայն)
 - **persistent**: Քեշավորել մի քանի հարցումների միջև (եթե աջակցվում է)
 
-### Քեշի օգտագործման մոնիթորինգ
+### Քեշի օգտագործման մոնիթորինգ {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic-ի լավագույն գործելակերպեր
+### Vertex Anthropic-ի լավագույն գործելակերպեր {#best-practices-for-vertex-anthropic}
 
 - **Օգտագործեք ephemeral քեշավորում**: Հարմար է մեկ սեսիայի քեշավորման համար
 - **Սահմանեք max_tokens-ը համապատասխան կերպով**: Հավասարակշռեք քեշի չափը և արժեքը
 - **Վերահսկեք քեշի մետրիկաները**: Հետևեք քեշի արդյունավետությանը
 - **Փորձարկեք ձեր ծանրաբեռնվածությամբ**: Ստուգեք, որ քեշավորումը օգտակար է ձեր օգտագործման դեպքի համար
 
-## Մատակարարների միջև քեշավորման ռազմավարություն
+## Մատակարարների միջև քեշավորման ռազմավարություն {#cross-provider-caching-strategy}
 
-### Միասնական կազմաձևում
+### Միասնական կազմաձևում {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Մատակարարի հայտնաբերում
+### Մատակարարի հայտնաբերում {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Պահուստային ռազմավարություն
+### Պահուստային ռազմավարություն {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Արժեքի օպտիմալացում
+## Արժեքի օպտիմալացում {#cost-optimization}
 
-### Խնայողությունների հաշվարկ
+### Խնայողությունների հաշվարկ {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Օպտիմալացման խորհուրդներ
+### Օպտիմալացման խորհուրդներ {#optimization-tips}
 
 - **Քեշավորեք մեծ համակարգային հուշումները**: Ամենամեծ արժեքային խնայողությունները
 - **Վերօգտագործեք համատեքստը**: Քեշավորեք հաճախ օգտագործվող համատեքստային փաստաթղթերը
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Վերահսկեք քեշի արդյունավետությունը**: Հետևեք իրական խնայողություններին
 - **Կարգավորեք TTL-ը**: Հավասարակշռեք արժեքը և թարմությունը
 
-## Խնդիրների լուծում
+## Խնդիրների լուծում {#troubleshooting}
 
-### Քեշը չի օգտագործվում
+### Քեշը չի օգտագործվում {#cache-not-being-used}
 
 - Ստուգեք, որ քեշավորումը միացված է կազմաձևում
 - Ստուգեք, որ հուշումները նույնական են (քեշավորումը պահանջում է ճշգրիտ համընկնում)
 - Ստուգեք, որ քեշի ժամկետը չի լրացել
 - Ստուգեք մատակարարին հատուկ քեշի սահմանաչափերը
 
-### Քեշի ստեղծումը ձախողվում է
+### Քեշի ստեղծումը ձախողվում է {#cache-creation-failing}
 
 - Ստուգեք, որ քեշի չափը մատակարարի սահմանաչափերի մեջ է
 - Ստուգեք, որ քեշի կառավարման շարահյուսությունը ճիշտ է
 - Համոզվեք, որ մատակարարը աջակցում է քեշավորմանը ձեր մոդելի համար
 - Վերանայեք մատակարարի փաստաթղթերը սահմանափակումների համար
 
-### Անսպասելի ծախսեր
+### Անսպասելի ծախսեր {#unexpected-costs}
 
 - Վերահսկեք քեշի ստեղծման և քեշի ընթերցման token-ները
 - Ստուգեք, որ քեշն իրականում օգտագործվում է
 - Ստուգեք հուշումների տարբերակների պատճառով առաջացած քեշի վրիպումները
 - Դիտարկեք TTL-ի կամ քեշի ռազմավարության կարգավորումը
 
-## Մատակարարների համեմատություն
+## Մատակարարների համեմատություն {#provider-comparison}
 
 | Հատկություն | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Արժեքի նվազեցում | 90% | 90% | Կախված մատակարարից | 90% |
 | Մոնիթորինգ | Մանրամասն | Մետրիկաների միջոցով | Կախված մատակարարից | Օգտագործման միջոցով |
 
-## Հաջորդ քայլերը
+## Հաջորդ քայլերը {#next-steps}
 
 1. **Ընտրեք ձեր մատակարարին**: Ընտրեք՝ հիմնվելով ձեր կարիքների վրա
 2. **Կազմաձևեք քեշավորումը**: Կարգավորեք մատակարարին հատուկ քեշավորումը

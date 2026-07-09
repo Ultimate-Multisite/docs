@@ -3,17 +3,17 @@ title: Me pēhea te Whirihora i te Whakamahere Rohe
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Me pēhea te Whirihora i te Domain Mapping (v2)
+# Me pēhea te Whirihora i te Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
 
 _**TUHIPOKA NUI: E pā ana tēnei tuhinga ki Ultimate Multisite putanga 2.x.**_
 
 Ko tētahi o ngā āhuatanga tino kaha o tētahi whatunga premium, ko te āhei ki te tuku ki ā tātou kiritaki i te whai wāhi ki te hono i tētahi top-level domain ki ā rātou pae. Ka mutu, ko tēhea te āhua ngaio ake: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com), ko [_**joesbikeshop.com**_](http://joesbikeshop.com) rānei? Koia te take ka tuku a Ultimate Multisite i taua āhuatanga kua whakaurua kē, me te kore e hiahia ki te whakamahi i ngā plugins rōpū-tuatoru.
 
-## He aha te domain mapping?
+## He aha te domain mapping? {#whats-domain-mapping}
 
 E ai ki te ingoa, ko te domain mapping te āheitanga e tukuna ana e Ultimate Multisite ki te tango i tētahi tono mō tētahi custom domain, ā, ki te whakamahere i taua tono ki te pae hāngai i roto i te whatunga kua honoa ki taua domain motuhake.
 
-### Me pēhea te whakarite i te domain mapping ki tō Ultimate Multisite Network
+### Me pēhea te whakarite i te domain mapping ki tō Ultimate Multisite Network {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Me whai whakariterite te domain mapping māu e mahi kia pai ai te mahi. Waimarie, ka aunoa a Ultimate Multisite i ngā mahi uaua māu, kia māmā ai tō whakatutuki i ngā whakaritenga.
 
@@ -45,7 +45,7 @@ Engari i mua i tō tīmata ki te mapping i te custom domain ki tētahi o ngā su
 
 ###
 
-### Te whakarite kia tika te whirihora o ngā tautuhinga DNS o te domain
+### Te whakarite kia tika te whirihora o ngā tautuhinga DNS o te domain {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Kia mahi ai tētahi mapping, me mātua whakarite koe kei te tohu te domain e whakamahere ana koe ki te map ki te wāhitau IP o tō Network. Kia mōhio me hiahia koe ki te wāhitau IP o te Network - arā, te wāhitau IP o te domain i tāutatia ai a Ultimate Multisite - ehara i te wāhitau IP o te custom domain e hiahia ana koe ki te map. Hei rapu i te wāhitau IP o tētahi domain motuhake, e tūtohu ana mātou kia haere ki [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), hei tauira.
 
@@ -55,7 +55,7 @@ Ki te raru koe ki te whakakori i tēnei, **whakapā atu ki te tautoko a tō doma
 
 Ki te whakamahere koe ki te tuku i ō kiritaki kia map i ā rātou ake domains, mā rātou anō e mahi tēnei wāhanga. Tohua rātou ki te pūnaha tautoko a tō rātou registrar ki te kore rātou e āhei ki te waihanga i te A Record.
 
-### Te mapping i te ingoa custom domain hei Super Admin
+### Te mapping i te ingoa custom domain hei Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Ina takiuru koe hei super admin ki tō whatunga, ka māmā tō tāpiri me te whakahaere i ngā ingoa custom domain mā te haere ki raro i **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Mēnā ka pāwhiri koe i te ingoa rohe, ka taea e koe te kite i ētahi kōwhirin
 
 **He Haumaru?:** Ahakoa ka arowhai a Ultimate Multisite mēnā he tiwhikete SSL tō te rohe, kāore rānei, i mua i te whakahohe i a ia, ka taea e koe te tīpako ā-ringa kia utaina te rohe me te tiwhikete SSL, kāore rānei. Kia mōhio, mēnā kāore he tiwhikete SSL tō te paetukutuku, ā, ka ngana koe ki te akiaki kia utaina mā SSL, tērā pea ka puta he hapa ki a koe.
 
-### Te mahere i te ingoa rohe ritenga hei kaiwhakamahi Pae-iti
+### Te mahere i te ingoa rohe ritenga hei kaiwhakamahi Pae-iti {#mapping-custom-domain-name-as-subsite-user}
 
 Ka taea hoki e ngā kaiwhakahaere pae-iti te mahere i ngā ingoa rohe ritenga mai i tā rātou Dashboard kaiwhakahaere pae-iti.
 
@@ -121,7 +121,7 @@ Kātahi ka taea e te kaiwhakamahi te pāwhiri i **Hipanga Panuku**, ā, ka haere
 
 Mā te pāwhiri i **Tāpiri Rohe** ka tīmata te tukanga manatoko me te tiki i ngā mōhiohio DNS o te rohe ritenga.
 
-### Mō te Tukutahi Rohe
+### Mō te Tukutahi Rohe {#about-domain-syncing}
 
 Ko te Tukutahi Rohe he tukanga e tāpiri ai a Ultimate Multisite i te ingoa rohe ritenga ki tō pūkete manaaki hei rohe tāpiri **kia mahi ai te mahere rohe**.
 

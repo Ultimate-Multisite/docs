@@ -4,11 +4,11 @@ title: Sivana - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Sivana: wu_woocommerce_line_item_params
+# Sivana: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Sivano ny masontsivana ampiasaina hamoronana ireo singa andalana ao amin’ny WooCommerce Cart, alohan’ny hamindrana ny mpanjifa mankany amin’ny WooCommerce checkout.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Anarana | Karazana | Famaritana |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Sivano ny masontsivana ampiasaina hamoronana ireo singa andalana ao amin’ny Wo
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Ny tranga singa andalana Ultimate Multisite. |
 | $wc_product | `\WC_Product` | Ny vokatra WooCommerce. |
 
-### Nanomboka tamin’ny
+### Nanomboka tamin’ny {#since}
 
 - 2.0.0
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin’ny [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) amin’ny andalana 662
 
 
-## Mamerina
+## Mamerina {#returns}
 Ny masontsivana singa andalana novaina.

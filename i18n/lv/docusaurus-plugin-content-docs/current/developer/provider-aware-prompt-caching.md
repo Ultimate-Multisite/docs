@@ -3,11 +3,11 @@ title: Nodrošinātājam pielāgota uzvedņu kešošana
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# No pakalpojumu sniedzēja atkarīga prompt kešošana
+# No pakalpojumu sniedzēja atkarīga prompt kešošana {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 ievieš **no pakalpojumu sniedzēja atkarīgu prompt kešošanu**, kas optimizē API izmaksas un latentumu, kešojot promptus dažādos LLM pakalpojumu sniedzējos. Katram pakalpojumu sniedzējam ir atšķirīgi kešošanas mehānismi un konfigurācijas.
 
-## Pārskats
+## Pārskats {#overview}
 
 Prompt kešošana ļauj jums:
 
@@ -23,11 +23,11 @@ Dažādi pakalpojumu sniedzēji kešošanu ievieš atšķirīgi:
 - **OpenRouter**: pakalpojumu sniedzējam specifiska kešošana
 - **Vertex Anthropic**: prompt kešošana ar keša kontroli
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini nodrošina tiešu keša pārvaldību, izmantojot `cachedContents` API.
 
-### Konfigurācija
+### Konfigurācija {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Kešota prompta izveide
+### Kešota prompta izveide {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Kešota prompta izmantošana
+### Kešota prompta izmantošana {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Keša dzīves cikls
+### Keša dzīves cikls {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Labākā prakse Gemini
+### Labākā prakse Gemini {#best-practices-for-gemini}
 
 - **Iestatiet atbilstošu TTL**: sabalansējiet izmaksu ietaupījumu un keša novecošanu
 - **Kešojiet sistēmas promptus**: atkārtoti izmantojiet vienu un to pašu sistēmas promptu dažādos pieprasījumos
 - **Pārraugiet keša lietojumu**: sekojiet, kuri keši tiek izmantoti visvairāk
 - **Notīriet beigušos kešus**: periodiski dzēsiet neizmantotos kešus
 
-## Azure OpenAI: prompt kešošana
+## Azure OpenAI: prompt kešošana {#azure-openai-prompt-caching}
 
 Azure OpenAI atbalsta prompt kešošanu ar automātisku TTL pārvaldību.
 
-### Konfigurācija
+### Konfigurācija {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Kešošanas iespējošana
+### Kešošanas iespējošana {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Keša galvenes
+### Keša galvenes {#cache-headers}
 
 Azure OpenAI keša kontrolei izmanto HTTP galvenes:
 
@@ -152,7 +152,7 @@ Atbalstītās vērtības:
 - `no_cache`: nekešot šo pieprasījumu
 - `no_store`: nekešot un neizmantot atkārtoti
 
-### Keša lietojuma pārraudzība
+### Keša lietojuma pārraudzība {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Labākā prakse Azure OpenAI
+### Labākā prakse Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Izmantojiet konsekventus promptus**: identiski prompti gūst labumu no kešošanas
 - **Iestatiet saprātīgu TTL**: sabalansējiet izmaksas un aktualitāti
 - **Pārraugiet keša metrikas**: sekojiet keša izveidei salīdzinājumā ar trāpījumiem
 - **Apvienojiet līdzīgus pieprasījumus paketēs**: grupējiet pieprasījumus, lai maksimizētu keša trāpījumus
 
-## OpenRouter: pakalpojumu sniedzējam specifiska kešošana
+## OpenRouter: pakalpojumu sniedzējam specifiska kešošana {#openrouter-provider-specific-caching}
 
 OpenRouter atbalsta kešošanu, izmantojot pamatā esošos pakalpojumu sniedzējus (OpenAI, Anthropic u. c.).
 
-### Konfigurācija
+### Konfigurācija {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter kešošanas izmantošana
+### OpenRouter kešošanas izmantošana {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Pakalpojumu sniedzējam specifiskas opcijas
+### Pakalpojumu sniedzējam specifiskas opcijas {#provider-specific-options}
 
 Dažādiem pakalpojumu sniedzējiem ir atšķirīgi kešošanas mehānismi:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Labākā prakse OpenRouter
+### Labākā prakse OpenRouter {#best-practices-for-openrouter}
 
 - **Pārziniet sava pakalpojumu sniedzēja kešošanu**: katram pakalpojumu sniedzējam ir atšķirīgi mehānismi
 - **Testējiet kešošanas darbību**: pārbaudiet, vai kešošana darbojas ar jūsu izvēlēto pakalpojumu sniedzēju
 - **Pārraugiet izmaksas**: sekojiet ietaupījumam no kešošanas
 - **Izmantojiet konsekventus modeļus**: modeļu maiņa izjauc keša trāpījumus
 
-## Vertex Anthropic: prompt kešošana ar keša kontroli
+## Vertex Anthropic: prompt kešošana ar keša kontroli {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) atbalsta prompt kešošanu ar tiešu keša kontroli.
 
-### Konfigurācija
+### Konfigurācija {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic kešošanas izmantošana
+### Vertex Anthropic kešošanas izmantošana {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Kešatmiņas kontroles veidi
+### Kešatmiņas kontroles veidi {#cache-control-types}
 
 - **ephemeral**: Kešatmiņa pieprasījuma ilgumam (noklusējums)
 - **persistent**: Kešatmiņa vairākos pieprasījumos (ja tiek atbalstīts)
 
-### Kešatmiņas lietojuma uzraudzība
+### Kešatmiņas lietojuma uzraudzība {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic labākā prakse
+### Vertex Anthropic labākā prakse {#best-practices-for-vertex-anthropic}
 
 - **Izmantojiet ephemeral kešošanu**: Piemērota vienas sesijas kešošanai
 - **Iestatiet max_tokens atbilstoši**: Līdzsvarojiet kešatmiņas izmēru un izmaksas
 - **Uzraugiet kešatmiņas metrikas**: Sekojiet kešatmiņas efektivitātei
 - **Testējiet ar savu darba slodzi**: Pārbaudiet, vai kešošana sniedz ieguvumu jūsu lietošanas gadījumā
 
-## Kešošanas stratēģija starp nodrošinātājiem
+## Kešošanas stratēģija starp nodrošinātājiem {#cross-provider-caching-strategy}
 
-### Vienota konfigurācija
+### Vienota konfigurācija {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Nodrošinātāja noteikšana
+### Nodrošinātāja noteikšana {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Atkāpšanās stratēģija
+### Atkāpšanās stratēģija {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Izmaksu optimizācija
+## Izmaksu optimizācija {#cost-optimization}
 
-### Ietaupījumu aprēķināšana
+### Ietaupījumu aprēķināšana {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimizācijas padomi
+### Optimizācijas padomi {#optimization-tips}
 
 - **Kešojiet lielus sistēmas promptus**: Lielākais izmaksu ietaupījums
 - **Atkārtoti izmantojiet kontekstu**: Kešojiet bieži izmantotus konteksta dokumentus
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Uzraugiet kešatmiņas efektivitāti**: Sekojiet faktiskajiem ietaupījumiem
 - **Pielāgojiet TTL**: Līdzsvarojiet izmaksas un svaigumu
 
-## Problēmu novēršana
+## Problēmu novēršana {#troubleshooting}
 
-### Kešatmiņa netiek izmantota
+### Kešatmiņa netiek izmantota {#cache-not-being-used}
 
 - Pārbaudiet, vai konfigurācijā ir iespējota kešošana
 - Pārbaudiet, vai prompti ir identiski (kešošanai nepieciešama precīza sakritība)
 - Pārbaudiet, vai kešatmiņa nav beigusies
 - Pārbaudiet nodrošinātājam specifiskos kešatmiņas ierobežojumus
 
-### Kešatmiņas izveide neizdodas
+### Kešatmiņas izveide neizdodas {#cache-creation-failing}
 
 - Pārbaudiet, vai kešatmiņas izmērs ir nodrošinātāja ierobežojumu robežās
 - Pārbaudiet, vai kešatmiņas kontroles sintakse ir pareiza
 - Pārliecinieties, ka nodrošinātājs atbalsta kešošanu jūsu modelim
 - Pārskatiet nodrošinātāja dokumentāciju par ierobežojumiem
 
-### Negaidītas izmaksas
+### Negaidītas izmaksas {#unexpected-costs}
 
 - Uzraugiet kešatmiņas izveides un kešatmiņas nolasīšanas tokenus
 - Pārbaudiet, vai kešatmiņa tiešām tiek izmantota
 - Pārbaudiet, vai promptu variāciju dēļ nerodas kešatmiņas netrāpījumi
 - Apsveriet TTL vai kešošanas stratēģijas pielāgošanu
 
-## Nodrošinātāju salīdzinājums
+## Nodrošinātāju salīdzinājums {#provider-comparison}
 
 | Funkcija | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Izmaksu samazinājums | 90% | 90% | Atkarīgs no nodrošinātāja | 90% |
 | Uzraudzība | Detalizēta | Izmantojot metrikas | Atkarīga no nodrošinātāja | Izmantojot lietojumu |
 
-## Nākamās darbības
+## Nākamās darbības {#next-steps}
 
 1. **Izvēlieties savu nodrošinātāju**: Atlasiet, pamatojoties uz savām vajadzībām
 2. **Konfigurējiet kešošanu**: Iestatiet nodrošinātājam specifisku kešošanu

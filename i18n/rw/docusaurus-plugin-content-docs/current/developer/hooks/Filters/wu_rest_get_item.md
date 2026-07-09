@@ -4,11 +4,11 @@ title: Akayunguruzo - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Muyunguruzi: wu_rest_get_item
+# Muyunguruzi: wu_rest_get_item {#filter-wurestgetitem}
 
 Iyungurura niba byemewe gukomeza ubusabe cyangwa bitaremewe.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Iyungurura niba byemewe gukomeza ubusabe cyangwa bitaremewe.
 | $rest_base | `array` | Slug y'ikigize. |
 | $this | `\Base_Manager` | Urugero rw'ikintu. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.0.0
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) ku murongo wa 388

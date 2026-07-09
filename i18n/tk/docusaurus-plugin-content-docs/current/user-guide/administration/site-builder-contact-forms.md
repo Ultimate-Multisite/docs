@@ -3,11 +3,11 @@ title: Sayt Qurýjy Kontakt Formalary
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Sayt Qurýjy Formalary
+# Sayt Qurýjy Formalary {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0, Site Builder agentini ulanyp chat arxalygyndan (chat interface) ýüzlenip sazlaşykly kontakt formalar döretmek mümkinçiligini goşdirýär. Bu, chatdan çykmasa hem her bir sahka üçin toly işje edýän kontakt formalary goşmaga bolýar.
 
-## Umumy Barlag
+## Umumy Barlag {#overview}
 
 Site Builder kontakt formasy döretmek (`create_contact_form`) sizi ulanyp bilýän form pluginini awtomatiki tanap we şondan hasaplaýan pluginin özü bilen sazlaşykly kontakt formany döredýär. Durnukli form pluginleri şu görnüşde:
 
@@ -18,7 +18,7 @@ Site Builder kontakt formasy döretmek (`create_contact_form`) sizi ulanyp bilý
 
 Asistenti siziň saytda bar bolan iň gowy form pluginini awtomatiki saýlaýar we şondan hasaplaýan plugin üçin sazlaşykly kontakt formany döredýär.
 
-## Kontakt Formasy Döretmek
+## Kontakt Formasy Döretmek {#creating-a-contact-form}
 
 Site Builder arkaly kontakt formasy döretmek üçin:
 
@@ -34,7 +34,7 @@ Site Builder arkaly kontakt formasy döretmek üçin:
 
 4. Site Builder kontakt formany döredip, onu goýmak üçin taýyn bolan shortcode (kısa kod) hasaplaýar.
 
-## Döredilen Shortcode-y Ulanmak
+## Döredilen Shortcode-y Ulanmak {#using-the-generated-shortcode}
 
 Site Builder kontakt formany döredenden soň, ol bir shortcode-i (mysal üçin, `[contact-form-7 id="123"]`) hasaplaýar. Siz:
 
@@ -45,11 +45,11 @@ Site Builder kontakt formany döredenden soň, ol bir shortcode-i (mysal üçin,
 
 3. **Onu şablonda ulan** — PHP bilen biri bolsa, bu shortcode-u tema şablon dosyasına ekleyip bilersiňiz.
 
-## Kontakt Formuny Özelleşdirmek
+## Kontakt Formuny Özelleşdirmek {#customizing-the-contact-form}
 
 Site Builder kontakt formany döredip biler, ondan soň onu has gowy özelleşdire bilersiňiz:
 
-### Chat Arayüzü Üzere
+### Chat Arayüzü Üzere {#via-the-chat-interface}
 
 Site Builder-den formany üýtgetmek üçin soraň:
 
@@ -57,7 +57,7 @@ Site Builder-den formany üýtgetmek üçin soraň:
 
 Site Builder formu güncelleşdirip özüni gowulandyrylan shortcode-u geri berer.
 
-### Form Plugininiň Admin Arayüzü Üzere
+### Form Plugininiň Admin Arayüzü Üzere {#via-the-form-plugins-admin-interface}
 
 Formany dogrudan form plugininiň sozlamalarynda hem özelleşdire bilersiňiz:
 
@@ -65,7 +65,7 @@ Formany dogrudan form plugininiň sozlamalarynda hem özelleşdire bilersiňiz:
 2. Site Builder-i dörediji formany tapyň.
 3. Gerek bolsa, form alanlaryny, barlaglama kurallaryny we elektronik habarlar üçin bildirişleri üýtgediň.
 
-## Form Pluginleri we Birlilik
+## Form Pluginleri we Birlilik {#form-plugins-and-compatibility}
 
 Site Builder siziň sahypada nähili form pluginini goýandygy bilen awtomatiki tanap we kontakt formany döretmek üçin onu ulanýar. Birnäçe form pluginleri ýüklän bolsa, Site Builder olary şu görkeziji ardykda hasaplary:
 
@@ -91,21 +91,21 @@ Has doly resminamalar üçin, form plugininiň resminamalaryna müraciň:
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Mysalanylydykler (Example Use Cases)
+## Mysalanylydykler (Example Use Cases) {#email-notifications}
 
-### Sadalyk Contact Form (Simple Contact Form)
+### Sadalyk Contact Form (Simple Contact Form) {#example-use-cases}
 
 > "Adyry isim, email we mesage ulanyşyklar bilen sadaly bir kontakt формы döredin."
 
-### Çörekli Forma (Multi-Step Form)
+### Çörekli Forma (Multi-Step Form) {#simple-contact-form}
 
 > "Kontakt maglumatlary üçin ilkin ädim we mesage we tercih edilen kontakt usul üçin ikindi ädim bilen kontakt formu döredin."
 
-### Şartly Logika Barada Forma (Form with Conditional Logic)
+### Şartly Logika Barada Forma (Form with Conditional Logic) {#multi-step-form}
 
 > "Dropdowndaky ulanyjynyň seçimine görä dürli ulanyşyklar bilen üýtgeýän bir kontakt formu döredin."
 
-### Dosya Ýükleme Barada Forma (Form with File Upload)
+### Dosya Ýükleme Barada Forma (Form with File Upload) {#form-with-conditional-logic}
 
 > "Ulanyjylara dosya ýa ýazgysy ýüklemegi mümkin bolan bir kontakt formu döredin."
 

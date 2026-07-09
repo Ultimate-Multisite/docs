@@ -3,17 +3,17 @@ title: 'Oppitunti 9: Kannattava hinnoittelu'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Oppitunti 9: Hinnoittelu voittoa varten
+# Oppitunti 9: Hinnoittelu voittoa varten {#lesson-9-pricing-for-profit}
 
 Oppitunnilla 5 asetimme FitSite-paketeille alkuhinnat. Nyt hiomme hinnoittelustrategiaa tekniikoilla, jotka kasvattavat liikevaihtoa, kannustavat päivittämään laajempaan pakettiin ja vähentävät asiakaspoistumaa.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSite-palvelussa on nyt paketit, sivupohjat, kassaprosessi, brändäys ja perehdytys käytössä. Alkuperäinen hinnoittelu oli $49/$99/$199 kuukaudessa. Nyt laitamme hinnoittelun tekemään enemmän töitä.
 
-## Hinnoitteluperiaatteet niche-alustoille
+## Hinnoitteluperiaatteet niche-alustoille {#pricing-principles-for-niche-platforms}
 
-### Hinnoittele arvon, älä kustannusten mukaan
+### Hinnoittele arvon, älä kustannusten mukaan {#price-on-value-not-cost}
 
 Palvelinkustannuksesi voivat olla $5-$15 per asiakassivusto. Se ei tarkoita, että hinnan pitäisi olla $20. Et myy hostingia. Myyt:
 
@@ -24,7 +24,7 @@ Palvelinkustannuksesi voivat olla $5-$15 per asiakassivusto. Se ei tarkoita, ett
 
 Hinnoittele toimittamasi arvon, älä sen toimittamisen kustannusten perusteella.
 
-### Ankkuroi vaihtoehtoihin
+### Ankkuroi vaihtoehtoihin {#anchor-to-alternatives}
 
 Kun fitness-studion omistaja arvioi FitSite-palvelua, hän vertaa sitä seuraaviin:
 
@@ -34,7 +34,7 @@ Kun fitness-studion omistaja arvioi FitSite-palvelua, hän vertaa sitä seuraavi
 
 Hintaan $49-$199/kk FitSite on halvempi kuin kehittäjä, kyvykkäämpi kuin yleiset rakentajat ja äärettömästi parempi kuin ei verkkosivustoa lainkaan.
 
-## Hintavaihteluiden käyttöönotto
+## Hintavaihteluiden käyttöönotto {#implementing-price-variations}
 
 Vuosihinnoittelu kannustaa sitoutumaan ja vähentää asiakaspoistumaa. Siirry kunkin paketin **Hintavariaatiot**-välilehdelle ja lisää vuosivaihtoehdot:
 
@@ -46,12 +46,12 @@ Vuosihinnoittelu kannustaa sitoutumaan ja vähentää asiakaspoistumaa. Siirry k
 
 Lisää kassalomakkeeseesi **Jakson valinta** -kenttä, jotta asiakkaat voivat vaihtaa kuukausi- ja vuosilaskutuksen välillä. Katso [Kassalomakkeet](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Miksi vuosihinnoittelu toimii
+### Miksi vuosihinnoittelu toimii {#why-annual-pricing-works}
 
 - **Sinulle**: Rahaa etukäteen, pienempi asiakaspoistuma (vuosittain maksavat asiakkaat peruuttavat epätodennäköisemmin kesken kauden)
 - **Heille**: Todellisia säästöjä, budjetin ennakoitavuus
 
-## Käyttöönottomaksut
+## Käyttöönottomaksut {#setup-fees}
 
 Harkitse kertaluonteista käyttöönottomaksua paketeille, joihin sisältyy käytännön määritystyötä:
 
@@ -61,7 +61,7 @@ Harkitse kertaluonteista käyttöönottomaksua paketeille, joihin sisältyy käy
 
 Määritä käyttöönottomaksut kunkin paketin hinnoitteluosiossa. Katso lisätiedot kohdasta [Ensimmäisen tilauspohjaisen tuotteen luominen](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Kokeilujaksot
+## Kokeilujaksot {#trial-periods}
 
 Kokeilun tarjoaminen vähentää rekisteröitymisen kitkaa, mutta tuo mukanaan riskin, ettei asiakas konvertoidu maksavaksi. FitSite-palvelussa:
 
@@ -70,11 +70,11 @@ Kokeilun tarjoaminen vähentää rekisteröitymisen kitkaa, mutta tuo mukanaan r
 
 Määritä kokeilu Starter-paketin hinnoitteluosiossa ottamalla **Tarjoa kokeilu** -kytkin käyttöön ja asettamalla kestoksi 7 päivää.
 
-### Miten saat kokeilut konvertoimaan
+### Miten saat kokeilut konvertoimaan {#making-trials-convert}
 
 Kokeilu toimii vain, jos asiakas kokee arvoa kokeilujakson aikana. Perehdytysjakso (oppitunti 8) on tässä ratkaisevan tärkeä -- tervetuloviestit kannattaa ajoittaa niin, että ne lisäävät sitoutumista 7 päivän ikkunan aikana.
 
-## Alennuskoodit
+## Alennuskoodit {#discount-codes}
 
 Luo strategisia alennuskoodeja tiettyihin tarkoituksiin:
 
@@ -88,7 +88,7 @@ Siirry kohtaan **Ultimate Multisite > Alennuskoodit** luodaksesi nämä. Katso k
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Verokäsittely
+## Verokäsittely {#tax-handling}
 
 Jos toimit alueella, jossa verojen kerääminen on pakollista:
 
@@ -98,7 +98,7 @@ Jos toimit alueella, jossa verojen kerääminen on pakollista:
 
 Katso tarkat määritysohjeet kohdasta [Verokäsittely](/user-guide/payment-gateways/tax-handling). Jos palvelet asiakkaita kansainvälisesti, harkitse [VAT addon](/addons/vat) EU-vaatimustenmukaisuutta varten.
 
-## Hinnoittelun tarkistaminen
+## Hinnoittelun tarkistaminen {#reviewing-your-pricing}
 
 Julkaisun jälkeen palaa hinnoitteluun neljännesvuosittain. Tarkastele seuraavia:
 
@@ -107,7 +107,7 @@ Julkaisun jälkeen palaa hinnoitteluun neljännesvuosittain. Tarkastele seuraavi
 - **Asiakaspoistuma paketeittain**: Jos vuosiasiakkaat poistuvat vähemmän, korosta vuosihinnoittelua voimakkaammin
 - **Kilpailijoiden hinnoittelu**: Mitä vaihtoehdot veloittavat? Onko asemointisi oikea?
 
-## FitSite Network tähän mennessä
+## FitSite Network tähän mennessä {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Mitä rakensimme tässä oppitunnissa
+## Mitä rakensimme tässä oppitunnissa {#what-we-built-this-lesson}
 
 - **Vuosihinnoittelu** 20 %:n alennuksella sitoutumisen kannustamiseksi
 - **Setup-maksut** korkeammissa tasoissa perehdytykseen kuluvan työn kattamiseksi

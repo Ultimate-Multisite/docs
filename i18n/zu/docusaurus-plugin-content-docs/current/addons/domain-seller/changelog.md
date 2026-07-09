@@ -3,7 +3,7 @@ title: Ilogu yezinguquko yoMthengisi Wesizinda
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Ilogu yezinguquko ye-Domain Seller
+# Ilogu yezinguquko ye-Domain Seller {#domain-seller-changelog}
 
 Inguqulo 1.3.0 - Ikhishwe ngo-2026-06-02
 - Okusha: Kwengezwe isexwayiso se-network-admin lapho ibhalansi yomthengisi we-HostAfrica iba phansi kakhulu
@@ -134,20 +134,20 @@ Inguqulo 1.0.0 - Ikhishwe ngo-2025-09-28
 * **Kulungisiwe:** Yonke ikhodi ye-v1 eseyekile ukubuyekezwa yaba ngamazinga e-v2
 * **Kususiwe:** Ukuhambisana kwe-v1 endala (ushintsho oluphulayo)
 
-### Izinhlobo Zangaphambilini (v1 Endala)
+### Izinhlobo Zangaphambilini (v1 Endala) {#previous-versions-v1-legacy}
 
-### Inguqulo 0.0.3 - 20/08/2019
+### Inguqulo 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Kulungisiwe: Ukungahambisani ne-Groundhogg CRM
 * Inothi: Lena kwakuwukukhishwa kokugcina okuhambisana ne-v1
 
-### Inguqulo 0.0.2 - 07/12/2018
+### Inguqulo 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Kulungisiwe: Kususiwe inkambu ye-License Key
 * Kulungisiwe: Amathebhu e-Plan ayengekho lapho i-plugin yesici isebenza
 * Kuthuthukisiwe: Kwengezwe inkinobho yokweqa enkambini yokubhalisa
 
-### Inguqulo 0.0.1 - Ukukhishwa Kokuqala
+### Inguqulo 0.0.1 - Ukukhishwa Kokuqala {#version-001---initial-release}
 
 * Ukuhlanganiswa okuyisisekelo kwe-OpenSRS kwe-WP Ultimo v1
 * Ukusesha nokubhalisa i-domain okulula

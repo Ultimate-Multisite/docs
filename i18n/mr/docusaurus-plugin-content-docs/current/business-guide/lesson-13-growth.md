@@ -3,19 +3,19 @@ title: 'धडा १३: विस्तार करणे'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lesson 13: Scale Up (व्यवसाय वाढवणे)
+# Lesson 13: Scale Up (व्यवसाय वाढवणे) {#lesson-13-scaling-up}
 
 तुमच्याकडे एक कार्यरत प्लॅटफॉर्म आहे आणि तिथे पैसे देणारे ग्राहक जोडले गेले आहेत. या धड्यात आपण एका लहान ऑपरेशनला एका शाश्वत व्यवसायात कसे वाढवायचे—म्हणजेच इन्फ्रास्ट्रक्चरला स्केल करणे, ऑपरेशन्सला ऑटोमेट करणे आणि प्रति ग्राहकांचा महसूल (revenue) कसा वाढवायचा—याबद्दल शिकू.
 
-## Where We Left Off (आपण कुठे थांबलो होतो)
+## Where We Left Off (आपण कुठे थांबलो होतो) {#where-we-left-off}
 
 FitSite लाइव्ह आहे, ग्राहक साइन अप करत आहेत आणि तुम्ही रोजचे ऑपरेशन्स करत आहात. आता आपण वाढीवर (growth) लक्ष केंद्रित करूया.
 
-## Know Your Numbers (तुमचे आकडे जाणून घ्या)
+## Know Your Numbers (तुमचे आकडे जाणून घ्या) {#know-your-numbers}
 
 स्केल करण्यापूर्वी, तुम्हाला कुठे उभे आहात हे समजून घ्या:
 
-### Key Metrics (मुख्य मेट्रिक्स)
+### Key Metrics (मुख्य मेट्रिक्स) {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: एकूण मासिक सबस्क्रिप्शन महसूल
 - **Customer count**: एकूण सक्रिय ग्राहक
@@ -24,7 +24,7 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 - **LTV (Lifetime Value)**: ग्राहकाकडून त्यांच्या संपूर्ण सबस्क्रिप्शन कालावधीत मिळणारा सरासरी महसूल
 - **CAC (Customer Acquisition Cost)**: एका ग्राहकाला मिळवण्यासाठी लागणारा सरासरी खर्च
 
-### Example: FitSite at 50 Customers (उदाहरण: ५० ग्राहकांसह FitSite)
+### Example: FitSite at 50 Customers (उदाहरण: ५० ग्राहकांसह FitSite) {#example-fitsite-at-50-customers}
 
 | Metric | Value |
 |--------|-------|
@@ -36,9 +36,9 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 
 हे आकडे तुम्हाला कशावर लक्ष केंद्रित करायचे हे सांगतात. जास्त churn आहे? तर ग्राहक टिकवून ठेवण्यावर (retention) काम करा. कमी ARPU आहे? तर अपग्रेड करण्यासाठी प्रोत्साहन द्या. जास्त CAC आहे? तर ग्राहक मिळवण्याचे मार्ग (acquisition channels) सुधारित करा.
 
-## Scaling Infrastructure (इन्फ्रास्ट्रक्चरला स्केल करणे)
+## Scaling Infrastructure (इन्फ्रास्ट्रक्चरला स्केल करणे) {#scaling-infrastructure}
 
-### When to Scale (कधी स्केल करावे)
+### When to Scale (कधी स्केल करावे) {#when-to-scale}
 
 खालीलपैकी कोणतीही गोष्ट घडल्यास होस्टिंग स्केल करा:
 
@@ -47,7 +47,7 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 - तुम्ही १००+ सक्रिय साइट्सच्या जवळ पोहोचत असाल
 - स्पीडबद्दल ग्राहकांकडून तक्रारी वाढल्या असतील
 
-### How to Scale (कसे स्केल करावे)
+### How to Scale (कसे स्केल करावे) {#how-to-scale}
 
 - **Vertical scaling**: मोठे सर्व्हर (जास्त CPU, RAM) घ्या.
 - **Caching layers**: ऑब्जेक्ट कॅशिंगसाठी Redis/Memcached जोडा, स्थिर (static) कंटेंटसाठी पेज कॅशिंग करा.
@@ -55,7 +55,7 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 - **Database optimization**: नेटवर्क जसजसे वाढेल, तसतसे डेटाबेस क्वेरी हळू होतात. टेबल्स ऑप्टिमाइझ करा, इंडेक्स जोडा आणि समर्पित डेटाबेस सर्व्हरचा विचार करा.
 - **Separate concerns**: मीडिया स्टोरेज ऑब्जेक्ट स्टोरेजमध्ये (S3-compatible) हलवा, ईमेल ट्रान्झॅक्शनल ईमेल सेवेवर (transactional email service) द्या.
 
-### Hosting Migration (होस्टिंग स्थलांतर)
+### Hosting Migration (होस्टिंग स्थलांतर) {#hosting-migration}
 
 जर तुमचा सध्याचा होस्ट अधिक स्केल करू शकत नसेल, तर स्थलांतर (migration) करण्याची योजना करा:
 
@@ -65,11 +65,11 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 4. आधी TTL कमी करून DNS अपडेट करा
 5. स्थलांतरानंतर सर्व काही व्यवस्थित काम करत आहे याची खात्री करा
 
-## Automating Operations (ऑपरेशन्स ऑटोमेट करणे)
+## Automating Operations (ऑपरेशन्स ऑटोमेट करणे) {#automating-operations}
 
 तुम्ही जसजसे वाढता, तसतसे मॅन्युअल प्रक्रिया अडथळे (bottlenecks) बनतात. जे काही करता येईल ते ऑटोमेट करा:
 
-### Webhooks and Zapier
+### Webhooks and Zapier {#webhooks-and-zapier}
 
 खालील गोष्टी ऑटोमेट करण्यासाठी [Webhooks](/user-guide/integrations/webhooks) किंवा [Zapier](/user-guide/integrations/zapier) वापरा:
 
@@ -78,7 +78,7 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 - **पेमेंट अयशस्वी** → तुमच्या मॉनिटरिंग टूलमध्ये अलर्ट करा
 - **प्लॅन अपग्रेड** → अभिनंदन ईमेल आणि नवीन फीचर मार्गदर्शकासह
 
-### Email Automation (ईमेल ऑटोमेशन)
+### Email Automation (ईमेल ऑटोमेशन) {#email-automation}
 
 मॅन्युअल ईमेलवरून ऑटोमेटेड सिक्वेन्सकडे जा:
 
@@ -87,30 +87,30 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 - जेव्हा ग्राहक प्लॅनच्या मर्यादेजवळ पोहोचतात तेव्हा अपग्रेड प्रॉम्प्ट
 - वार्षिक सबस्क्राइबर्ससाठी नूतनीकरण स्मरणपत्रे
 
-### Support Automation (समर्थन ऑटोमेशन)
+### Support Automation (समर्थन ऑटोमेशन) {#support-automation}
 
 - सामान्य प्रश्नांसाठी **Canned responses** (तयार उत्तरे)
 - सपोर्ट तिकीट मिळाल्याची पोचपावती देणारे **Auto-replies**
 - जेव्हा ग्राहक तिकीट सबमिट करतात आणि ते विद्यमान लेखांशी जुळतात तेव्हा **Knowledge base suggestions**
 
-## Increasing Revenue (महसूल वाढवणे)
+## Increasing Revenue (महसूल वाढवणे) {#increasing-revenue}
 
 वाढ म्हणजे फक्त जास्त ग्राहक मिळवणे नाही. याचा अर्थ प्रति ग्राहकांचा जास्त महसूल मिळवणे देखील आहे.
 
-### Upselling Existing Customers (सध्याच्या ग्राहकांकडून अपसेल)
+### Upselling Existing Customers (सध्याच्या ग्राहकांकडून अपसेल) {#upselling-existing-customers}
 
 - **Plan upgrades**: स्टार्टर ग्राहकांना ग्रोथ/प्रो फीचर्स दाखवणारे लक्ष्यित अभियान (targeted campaigns).
 - **Order bumps**: ईमेलद्वारे विद्यमान ग्राहकांना ॲड-ऑन उत्पादने (add-on products) प्रोत्साहन देणे.
 - **Annual conversion**: मासिक ग्राहकांना वार्षिक बिलिंगवर स्विच करण्यासाठी सवलत द्या.
 
-### New Revenue Streams (नवीन महसूल स्रोत)
+### New Revenue Streams (नवीन महसूल स्रोत) {#new-revenue-streams}
 
 - **Done-for-you setup**: ग्राहकासाठी साइट सेट अप आणि कस्टमाइझ करण्यासाठी प्रीमियम शुल्क आकारणे.
 - **Custom design services**: टेम्पलेटवर आधारित खास डिझाइन काम (bespoke design work) ऑफर करणे.
 - **Training sessions**: ज्या ग्राहकांना प्रत्यक्ष मदतीची गरज आहे त्यांच्यासाठी सशुल्क वन-ऑन-वन मार्गदर्शन सत्रे.
 - **Premium plugins**: विशिष्ट गरजांसाठी प्रीमियम प्लगइन्स सशुल्क ॲड-ऑन म्हणून ऑफर करणे (उदा. फिटनेस क्लास बुकिंग विजेट).
 
-### Raising Prices (किंमत वाढवणे)
+### Raising Prices (किंमत वाढवणे) {#raising-prices}
 
 जसजसा तुमचा प्लॅटफॉर्म परिपक्व होतो आणि मूल्य जोडतो:
 
@@ -118,7 +118,7 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 - नवीन साइनअपसाठी किंमत वाढवा.
 - वाढीचे समर्थन नवीन फीचर्स आणि सुधारणांनी करा.
 
-## Building a Team (टीम तयार करणे)
+## Building a Team (टीम तयार करणे) {#building-a-team}
 
 एका टप्प्यावर, तुम्ही सर्व काही एकटे करू शकत नाही. सामान्य पहिले नोकरीचे स्थान:
 
@@ -128,7 +128,7 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 
 तुम्हाला कर्मचाऱ्यांची गरज नाही. प्लॅटफॉर्म व्यवसायासाठी कंत्राटदार (Contractors) आणि फ्रीलांसर (freelancers) चांगले काम करतात.
 
-## Growth Milestones (वाढीचे टप्पे)
+## Growth Milestones (वाढीचे टप्पे) {#growth-milestones}
 
 | Milestone | Approximate MRR | Focus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ FitSite लाइव्ह आहे, ग्राहक साइन अप क
 | 250-500 customers | $25,000-$50,000 | Team building, new revenue streams, premium features |
 | 500+ customers | $50,000+ | Platform maturity, adjacent niches, potential exit |
 
-## What We Built This Lesson (या धड्यात आपण काय शिकलो)
+## What We Built This Lesson (या धड्यात आपण काय शिकलो) {#what-we-built-this-lesson}
 
 - व्यवसायाच्या आरोग्याला समजून घेण्यासाठी **एक मेट्रिक्स फ्रेमवर्क**
 - डझनहून शेकडो साइट्सपर्यंत वाढण्यासाठी **इन्फ्रास्ट्रक्चर स्केल करण्याची योजना**

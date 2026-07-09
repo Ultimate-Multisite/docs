@@ -3,7 +3,7 @@ title: Registro de cambios de Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Registro de cambios de Material WP
+# Registro de cambios de Material WP {#material-wp-changelog}
 
 Versión 1.1.15 - 01/26/2026
 * Mejorado: Estilo y formato del código;

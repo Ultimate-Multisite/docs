@@ -3,7 +3,7 @@ title: Yini i-WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Iyini i-WordPress Multisite?
+# Iyini i-WordPress Multisite? {#what-is-wordpress-multisite}
 
 Ngaphakathi komgogodla wayo, i-WordPress inikeza isici esibizwa ngokuthi ‘Multisite’ esilandela imvelaphi yaso emuva ku-2010 ngesikhathi kwethulwa i-WordPress 3.0. Kusukela lapho sesithole izibuyekezo eziningi ezihlose ukwethula izici ezintsha nokuqinisa ukuphepha.
 
@@ -11,7 +11,7 @@ Ngokuyisisekelo, i-WordPress multisite ingacatshangwa kanje: Inyuvesi igcina uku
 
 ##
 
-## Iyini Ngempela i-WordPress Multisite?
+## Iyini Ngempela i-WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 I-Multisite iyisici se-WordPress esivumela amasayithi amaningi ukuthi abelane ngokufakwa okukodwa kwe-WordPress. Lapho i-multisite ivuliwe, isayithi lokuqala le-WordPress liguqulwa ukuze lisekele lokho okuvame ukubizwa ngokuthi **inethiwekhi yamasayithi**.
 
@@ -23,7 +23,7 @@ Leli qiniso lingenye yezinzuzo eziyinhloko ze-multisite, njengoba likuvumela uku
 
 ##
 
-## Subdomain noma Subdirectory?
+## Subdomain noma Subdirectory? {#subdomain-or-subdirectory}
 
 Kunezindlela ezimbili zokusebenzisa i-WordPress multisite – futhi kudingeka ukhethe eyodwa lapho uguqula ukufakwa kwakho okuvamile kwe-WordPress kube ukufakwa kwe-multisite:
 
@@ -49,7 +49,7 @@ Enye yezinselelo eziyinhloko ekusetheni imodi ye-subdomain ukumbozwa kwe-SSL (HT
 
 Ngokuphambene nemodi ye-subdirectory, amasayithi angaphansi enethiwekhi esekelwe ku-subdomain abhekwa izinjini zokusesha njengamawebhusayithi ahlukene, okusho ukuthi okuqukethwe okukhona kusayithi elilodwa elingaphansi akuphazamisi nhlobo ukusebenza kwe-SEO kwamanye amasayithi angaphansi.
 
-## I-Super Admin
+## I-Super Admin {#the-super-admin}
 
 Ukufakwa kwe-WordPress kwesayithi elilodwa kukuvumela ukuthi wengeze inani elingenamkhawulo labasebenzisi futhi unikeze labo basebenzisi izindima ezahlukene zabasebenzisi ezinezimvume ezahlukene.
 
@@ -63,7 +63,7 @@ Izengezo namatimu kungafakwa noma kukhishwe kuphela kuphaneli yomlawuli wenethiw
 
 _Qaphela: njengoba ubona, ukumema umuntu enethiwekhi yakho nokumnika isimo se-super admin kunika lo msebenzisi ukulawula okuphelele kwenethiwekhi yakho. Njengesibonelo, amanye ama-super admin angasusa ngisho nesimo sakho se-super admin, akukhiyele ngaphandle kwephaneli yakho yomlawuli wenethiwekhi. Ukuze sivumele amakhasimende e-Ultimate Multisite ukuba abe nokulawula okunemininingwane kwalokho ama-super admin engeziwe angakwenza, sine-add-on ebizwa ngokuthi Support Agents. Le add-on ikuvumela ukuthi udale olunye uhlobo lomsebenzisi – i-agent – enezimvume kuphela ezingase zidingeke ukuze enze imisebenzi yakhe enethiwekhi._
 
-## Yini ebiwayo phakathi kwamasayithi angaphansi futhi yini engabiwa
+## Yini ebiwayo phakathi kwamasayithi angaphansi futhi yini engabiwa {#what-is-shared-among-subsites-and-what-is-not}
 
 Njengoba sishilo ngaphambili, enye yezinzuzo ezisemqoka ze-WordPress multisite ukuthi wonke amasayithi angaphansi abelana ngokucushwa okufanayo, amafayela omgogodla, amatimu, izengezo, amafayela omgogodla we-WordPress, njll.
 
@@ -75,7 +75,7 @@ Nokho, kunezinto ezilinganiselwe kahle ngokwesayithi ngalinye elingaphansi.
 
 \- Amathebula amaningi e-database adalelwa i-subsite ngayinye, okusho ukuthi okuthunyelwe, amazwana, amakhasi, izilungiselelo, nokunye kufakwa ngaphansi kwe-subsite ngayinye.
 
-## Ukuphathwa kwabasebenzisi ku-WordPress Multisite
+## Ukuphathwa kwabasebenzisi ku-WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Isihloko esibucayi ku-WordPress multisite ukuphathwa kwabasebenzisi. Ithebula labasebenzisi le-WordPress lingelinye lamambalwa abiwe phakathi kwawo wonke ama-subsite.
 
@@ -99,7 +99,7 @@ _Inothi: Siyaqonda ukuthi lokho kungaba kubi kangakanani kuye ngokusetshenziswa 
 
 Nakuba ithebula labasebenzisi labiwe, abasebenzisi bangangezwa futhi basuswe kuma-subsite ngabaphathi be-subsite noma i-super admin, futhi bangaba nezindima zomsebenzisi ezihlukene kuma-subsite ahlukene.
 
-## Okucatshangelwayo ngokusebenza
+## Okucatshangelwayo ngokusebenza {#performance-considerations}
 
 I-WordPress multisite inamandla ngempela uma kuziwa enanini lama-site engawasekela. Lokhu kungahlolwa iqiniso lokuthi [WordPress.com](https://WordPress.com), Edublogs, ne-Campuspress zonke ziyizinsizakalo ezisekelwe ku-multisite futhi ngayinye isingatha izinkulungwane zama-site.
 

@@ -4,19 +4,19 @@ title: Филтър - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# Филтър: wu_captcha_providers
+# Филтър: wu_captcha_providers {#filter-wucaptchaproviders}
 
 Филтрира наличните доставчици на капча.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $providers | `\Abstract_Captcha_Provider[]` | Регистрираните доставчици. |
 
-### От версия
+### От версия {#since}
 
 - 1.2.0
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/captcha-providers/class-captcha-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/captcha-providers/class-captcha-manager.php#L133) на линия 133

@@ -3,7 +3,7 @@ title: Dziennik zmian sprzedawcy domen
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Dziennik zmian Domain Seller
+# Dziennik zmian Domain Seller {#domain-seller-changelog}
 
 Wersja 1.3.0 - Wydana 2026-06-02
 - Nowe: Dodano ostrzeżenie network-admin, gdy saldo resellera HostAfrica staje się zbyt niskie
@@ -134,20 +134,20 @@ Wersja 1.0.0 - Wydana 2025-09-28
 * **Naprawione:** Cały przestarzały kod v1 zaktualizowano do standardów v2
 * **Usunięte:** Zgodność ze starszą wersją v1 (zmiana niekompatybilna wstecz)
 
-### Poprzednie wersje (v1 Legacy)
+### Poprzednie wersje (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Wersja 0.0.3 - 20/08/2019
+### Wersja 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Naprawione: Niekompatybilność z Groundhogg CRM
 * Uwaga: To było ostatnie wydanie zgodne z v1
 
-### Wersja 0.0.2 - 07/12/2018
+### Wersja 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Naprawione: Usunięto pole License Key
 * Naprawione: Brakujące karty planów, gdy plugin funkcji jest aktywny
 * Ulepszone: Dodano przycisk pominięcia w polu rejestracji
 
-### Wersja 0.0.1 - Pierwsze wydanie
+### Wersja 0.0.1 - Pierwsze wydanie {#version-001---initial-release}
 
 * Podstawowa integracja OpenSRS dla WP Ultimo v1
 * Proste wyszukiwanie i rejestracja domen

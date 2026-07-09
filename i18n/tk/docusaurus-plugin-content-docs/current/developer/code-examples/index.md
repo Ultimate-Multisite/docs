@@ -3,11 +3,11 @@ title: Öňdebaryjy kod mysallary
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Öňdebaryjy kod mysallary
+# Öňdebaryjy kod mysallary {#advanced-code-examples}
 
 Bu mysallar Ultimate Multisite bilen öňdebaryjy integrasiýa nagyşlaryny görkezýär.
 
-## Dinamiki nyrhlandyryş hereketlendirijisi
+## Dinamiki nyrhlandyryş hereketlendirijisi {#dynamic-pricing-engine}
 
 Göwrüm, wepalylyk we möwsümleýin arzanladyşlary ulanýan düzgünlere esaslanýan nyrhlandyryş hereketlendirijisi:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Öňdebaryjy saýty taýýarlamak
+## Öňdebaryjy saýty taýýarlamak {#advanced-site-provisioning}
 
 Plan aýratynlyklaryna esaslanyp täze saýtlary pluginler, SSL, CDN, ätiýaçlyk nusgalar we gözegçilik bilen awtomatiki sazlaň:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Hususy çäklendirmeler ulgamy
+## Hususy çäklendirmeler ulgamy {#custom-limitations-system}
 
 Ulanyş duýduryşlary bilen resurs çäklerini yzarlaň we ýerine ýetiriň:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB atomar sanaýjy `increment_item()` bilen
+## BerlinDB atomar sanaýjy `increment_item()` bilen {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 BerlinDB `Query` klasyna `increment_item()` metodyny goşdy. Ony san sütünlerinde okamak-üýtgetmek-ýazmak bäsleşmeleri bolmazdan howpsuz, atomar artdyrmalary ýerine ýetirmek üçin ulanyň — bu birwagtdaky soraglaryň astynda işleýän sanaýjylar, ulanyş kwotalary we tizlik-çäklendirme barlaglary üçin peýdalydyr.
 
-### Metod signaturasy
+### Metod signaturasy {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 BerlinDB `Query` klasyna `increment_item()` metodyny g
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Esasy ulanyş
+### Esasy ulanyş {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Her agzalyk boýunça API ulanylyşyny yzarlamak
+### Her agzalyk boýunça API ulanylyşyny yzarlamak {#tracking-api-usage-per-membership}
 
 Her agzalyk üçin API tizlik çäklerini ýerine ýetirmekde amaly nusga:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Näme üçin `update_item()` ýerine `increment_item()`
+### Näme üçin `update_item()` ýerine `increment_item()` {#why-incrementitem-instead-of-updateitem}
 
 Ýönekeý okamak-üýtgetmek-ýazmak çemeleşmesi birwagtdaky soraglaryň astynda howpsuz däl:
 

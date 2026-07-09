@@ -3,7 +3,7 @@ title: Klijentske veb stranice
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Vaši Klijentski Sajtovi (v2)
+# Vaši Klijentski Sajtovi (v2) {#your-clients-websites-v2}
 
 Nakon što se registrujete na vašu mrežu, vaši klijenti mogu pristupiti svom dashboardu.
 

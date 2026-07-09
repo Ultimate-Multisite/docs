@@ -3,17 +3,17 @@ title: Mar a rèiticheas tu mapadh àrainn
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Mar a rèiticheas tu mapadh àrainn (v2)
+# Mar a rèiticheas tu mapadh àrainn (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NOTA CUDROMACH: Tha an artaigil seo a’ toirt iomradh air Ultimate Multisite tionndadh 2.x.**_
 
 ’S e aon de na feartan as cumhachdaiche aig lìonra premium an comas cothrom a thoirt don luchd-dèiligidh againn àrainn àrd-ìre a cheangal ris na làraichean aca. Às dèidh na h-uile, dè tha a’ coimhead nas proifeiseanta: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) no [_**joesbikeshop.com**_](http://joesbikeshop.com)? Sin as coireach gu bheil Ultimate Multisite a’ tabhann na feart sin a-staigh, gun fheum air plugins treas-phàrtaidh a chleachdadh.
 
-## Dè th’ ann am mapadh àrainn?
+## Dè th’ ann am mapadh àrainn? {#whats-domain-mapping}
 
 Mar a tha an t-ainm a’ moladh, ’s e mapadh àrainn an comas a tha Ultimate Multisite a’ tabhann iarrtas airson àrainn ghnàthaichte a ghabhail a-steach agus an t-iarrtas sin a mhapadh ris an làrach fhreagarrach san lìonra leis an àrainn shònraichte sin ceangailte ris.
 
-### Mar a shuidhicheas tu mapadh àrainn air an lìonra Ultimate Multisite agad
+### Mar a shuidhicheas tu mapadh àrainn air an lìonra Ultimate Multisite agad {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Feumaidh mapadh àrainn beagan rèiteachaidh air do thaobh gus obrachadh. Gu fortanach, bidh Ultimate Multisite ag fèin-obrachadh na h-obrach chruaidh dhut gus an urrainn dhut na riatanasan a choileanadh gu furasta.
 
@@ -45,7 +45,7 @@ Ach mus tòisich thu air an àrainn ghnàthaichte a mhapadh ri aon de na fo-làr
 
 ###
 
-### Dèanamh cinnteach gu bheil roghainnean DNS na h-àrainn air an rèiteachadh gu ceart
+### Dèanamh cinnteach gu bheil roghainnean DNS na h-àrainn air an rèiteachadh gu ceart {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Gus am bi mapadh ag obair, feumaidh tu dèanamh cinnteach gu bheil an àrainn a tha thu an dùil a mhapadh a’ comharrachadh gu seòladh IP an lìonra agad. Thoir an aire gu bheil feum agad air seòladh IP an Lìonra - seòladh IP na h-àrainn far a bheil Ultimate Multisite air a stàladh - chan e seòladh IP na h-àrainn ghnàthaichte a tha thu airson a mhapadh. Gus seòladh IP àrainn shònraichte a lorg, tha sinn a’ moladh a dhol gu [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), mar eisimpleir.
 
@@ -55,7 +55,7 @@ Ma tha duilgheadas agad seo fhaighinn ag obair, **cuir fios gu taic clàradair n
 
 Ma tha thu an dùil leigeil leis an luchd-dèiligidh agad na h-àrainnean aca fhèin a mhapadh, feumaidh iadsan an obair air a’ phàirt seo a dhèanamh iad fhèin. Stiùir iad a dh’ionnsaigh siostam taic a’ chlàradair aca ma tha iad gan lorg fhèin gun chomas an A Record a chruthachadh.
 
-### Mapadh ainm àrainn ghnàthaichte mar Super Admin
+### Mapadh ainm àrainn ghnàthaichte mar Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Nuair a tha thu air logadh a-steach mar super admin air an lìonra agad, faodaidh tu ainmean àrainn gnàthaichte a chur ris agus a stiùireadh gu furasta le bhith a’ dol fo **Ultimate Multisite > Àrainnean**.
 
@@ -93,7 +93,7 @@ Ma bhriogas tu air ainm na h-àrainne, bidh e comasach dhut cuid de roghainnean 
 
 **A bheil i Tèarainte?:** Ged a nì Ultimate Multisite sgrùdadh a bheil teisteanas SSL aig an àrainn no nach eil mus cuir e an comas i, faodaidh tu taghadh le làimh an àrainn a luchdadh le teisteanas SSL no às aonais. Thoir an aire mura h-eil teisteanas SSL aig an làrach-lìn agus ma dh'fheuchas tu ri toirt oirre luchdadh le SSL, dh'fhaodadh i mearachdan a thoirt dhut.
 
-### Mapadh ainm àrainne gnàthaichte mar chleachdaiche fo-làraich
+### Mapadh ainm àrainne gnàthaichte mar chleachdaiche fo-làraich {#mapping-custom-domain-name-as-subsite-user}
 
 Faodaidh rianairean fo-làraich ainmean àrainne gnàthaichte a mhapadh cuideachd bho dheas-bhòrd rianachd na fo-làraich aca.
 
@@ -121,7 +121,7 @@ Faodaidh an cleachdaiche an uair sin briogadh air **An Ath Cheum** agus leantain
 
 Tòisichidh briogadh air **Cuir Àrainn Ris** am pròiseas airson fiosrachadh DNS na h-àrainne gnàthaichte a dhearbhadh agus fhaighinn.
 
-### Mu Shioncronachadh Àrainnean
+### Mu Shioncronachadh Àrainnean {#about-domain-syncing}
 
 'S e pròiseas a th' ann an Sioncronachadh Àrainnean far am bi Ultimate Multisite a' cur an ainm àrainne gnàthaichte ris a' chunntas òstachaidh agad mar àrainn add-on **gus an obraich mapadh na h-àrainne**.
 

@@ -3,11 +3,11 @@ title: Provider-Aware Prompt Caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt-caching med provider-medvetenhet
+# Prompt-caching med provider-medvetenhet {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 introducerar **provider-aware prompt caching**, vilket optimerar API-kostnader och latens genom att cacha prompts över olika LLM-leverantörer. Varje leverantör har olika cachemekanismer och konfigurationer.
 
-## Översikt
+## Översikt {#overview}
 
 Prompt-caching gör att du kan:
 
@@ -23,11 +23,11 @@ Olika leverantörer implementerar caching på olika sätt:
 - **OpenRouter**: Provider-specifikt caching
 - **Vertex Anthropic**: Prompt-caching med cache control
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini erbjuder explicit cachehantering via `cachedContents` API.
 
-### Konfiguration
+### Konfiguration {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Skapa en cachad prompt
+### Skapa en cachad prompt {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Använda en cachad prompt
+### Använda en cachad prompt {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cachelivscykel
+### Cachelivscykel {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Bästa praxis för Gemini
+### Bästa praxis för Gemini {#best-practices-for-gemini}
 
 - **Ställ in lämpligt TTL**: Balansera kostnadsbesparingar mot cache-föråldring
 - **Cacha systemprompts**: Återanvänd samma systemprompt i flera anrop
 - **Övervaka cacheanvändning**: Spåra vilka cache som används mest
 - **Rensa utgångna cache**: Radera regelbundet oanvända cache
 
-## Azure OpenAI: Prompt-caching
+## Azure OpenAI: Prompt-caching {#azure-openai-prompt-caching}
 
 Azure OpenAI stöder prompt-caching med automatisk TTL-hantering.
 
-### Konfiguration
+### Konfiguration {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Aktivera caching
+### Aktivera caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache-headers
+### Cache-headers {#cache-headers}
 
 Azure OpenAI använder HTTP-headers för cachekontroll:
 
@@ -152,7 +152,7 @@ Stödde värden:
 - `no_cache`: Cacha inte detta anrop
 - `no_store`: Cacha inte och återanvänd inte
 
-### Övervaka cacheanvändning
+### Övervaka cacheanvändning {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Bästa praxis för Azure OpenAI
+### Bästa praxis för Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Använd konsekventa prompts**: Identiska prompts gynnas av caching
 - **Ställ in rimligt TTL**: Balansera kostnad mot aktualitet
 - **Övervaka cachemetriker**: Spåra cacheskapande kontra träffar
 - **Batcha liknande anrop**: Gruppera anrop för att maximera cacheträffarna
 
-## OpenRouter: Provider-specifikt caching
+## OpenRouter: Provider-specifikt caching {#openrouter-provider-specific-caching}
 
 OpenRouter stöder caching via underliggande leverantörer (OpenAI, Anthropic, etc.).
 
-### Konfiguration
+### Konfiguration {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Använda OpenRouter caching
+### Använda OpenRouter caching {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Provider-specifika alternativ
+### Provider-specifika alternativ {#provider-specific-options}
 
 Olika leverantörer har olika cachemekanismer:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Bästa praxis för OpenRouter
+### Bästa praxis för OpenRouter {#best-practices-for-openrouter}
 
 - **Känn till din providers caching**: Varje leverantör har olika mekanismer
 - **Testa cachebeteendet**: Verifiera att caching fungerar med din valda provider
 - **Övervaka kostnader**: Spåra besparingar från caching
 - **Använd konsekventa modeller**: Att byta modeller bryter cacheträffarna
 
-## Vertex Anthropic: Prompt-caching med cache control
+## Vertex Anthropic: Prompt-caching med cache control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) stöder prompt-caching med explicit cache control.
 
-### Konfiguration
+### Konfiguration {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Använda Vertex Anthropic caching
+### Använda Vertex Anthropic caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache Control Typer
+### Cache Control Typer {#cache-control-types}
 
 - **ephemeral**: Cache under anropets varaktighet (standard)
 - **persistent**: Cache över flera anrop (om stöds)
 
-### Övervaka cacheanvändning
+### Övervaka cacheanvändning {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Bästa praxis för Vertex Anthropic
+### Bästa praxis för Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Använd ephemeral caching**: Bra för caching i en enskild session
 - **Ställ in max_tokens lämpligt**: Balansera cachestorlek mot kostnad
 - **Övervaka cachemetriker**: Spåra cacheeffektivitet
 - **Testa med din arbetsbelastning**: Verifiera att caching gynnar ditt användningsfall
 
-## Cross-Provider Caching Strategy
+## Cross-Provider Caching Strategy {#cross-provider-caching-strategy}
 
-### Enhetlig konfiguration
+### Enhetlig konfiguration {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Providerdetektering
+### Providerdetektering {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Fallback-strategi
+### Fallback-strategi {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kostnadsoptimering
+## Kostnadsoptimering {#cost-optimization}
 
-### Beräkna besparingar
+### Beräkna besparingar {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimeringstips
+### Optimeringstips {#optimization-tips}
 
 - **Cacha stora systemprompts**: Största kostnadsbesparingarna
 - **Återanvänd kontext**: Cacha ofta använda kontextdokument
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Övervaka cacheeffektivitet**: Spåra faktiska besparingar
 - **Justera TTL**: Balansera kostnad mot aktualitet
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
-### Caching används inte
+### Caching används inte {#cache-not-being-used}
 
 - Verifiera att caching är aktiverat i konfigurationen
 - Kontrollera att prompts är identiska (caching kräver exakt matchning)
 - Verifiera att cachen inte har gått ut
 - Kontrollera provider-specifika cachegränser
 
-### Cacheskapande misslyckas
+### Cacheskapande misslyckas {#cache-creation-failing}
 
 - Verifiera att cachestorleken är inom providerns gränser
 - Kontrollera att syntaxen för cache control är korrekt
 - Se till att providern stöder caching för din modell
 - Gå igenom providerns dokumentation för begränsningar
 
-### Oväntade kostnader
+### Oväntade kostnader {#unexpected-costs}
 
 - Övervaka cacheskapande kontra cachelästa tokens
 - Verifiera att cachen faktiskt används
 - Kontrollera efter cachemissar på grund av promptvariationer
 - Överväg att justera TTL eller cachestrategi
 
-## Providerjämförelse
+## Providerjämförelse {#provider-comparison}
 
 | Feature | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Cost reduction | 90% | 90% | Provider-dependent | 90% |
 | Monitoring | Detailed | Via metrics | Provider-dependent | Via usage |
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 1. **Välj din provider**: Välj baserat på dina behov
 2. **Konfigurera caching**: Ställ in provider-specifikt caching

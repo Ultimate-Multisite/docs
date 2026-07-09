@@ -4,11 +4,11 @@ title: Filtro - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Filtro: wu_pre_save_settings
+# Filtro: wu_pre_save_settings {#filter-wupresavesettings}
 
 Permite aos desenvolvedores filtrar os axustes antes de gardalos mediante Ultimate Multisite.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Permite aos desenvolvedores filtrar os axustes antes de gardalos mediante Ultima
 | $settings_to_save | `array` | Os novos axustes que se van engadir. |
 | $saved_settings | `array` | Os axustes actuais gardados. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.18
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) na liña 296

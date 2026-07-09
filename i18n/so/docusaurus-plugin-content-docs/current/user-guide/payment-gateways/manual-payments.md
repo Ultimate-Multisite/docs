@@ -3,13 +3,13 @@ title: Dejinta Lacag-bixinnada Gacanta
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Dejinta Lacag-bixinno Gacan-ku-samays ah (v2)
+# Dejinta Lacag-bixinno Gacan-ku-samays ah (v2) {#setting-up-manual-payments-v2}
 
 _**OGEYSIIS MUHIIM AH: Maqaalkani wuxuu khuseeyaa Ultimate Multisite nooca 2.x.**_
 
 Lacag-bixinno gacan-ku-samays ah waa hab aad ku siin karto isticmaalayaashaada qaabab kale oo lacag-bixin ah haddii **Stripe** ama **PayPal** aysan u heli karin isticmaalayaashaada. Waxay noqon kartaa wareejin silig ama bangi ama hab kasta oo kale oo lacag-bixin ah oo isticmaalayaashaadu deegaanka ka heli karaan.
 
-## Sida loo awoodsiiyo Lacag-bixinno Gacan-ku-samays ah
+## Sida loo awoodsiiyo Lacag-bixinno Gacan-ku-samays ah {#how-to-enable-manual-payments}
 
 Dejinta lacag-bixin gacan-ku-samays ah aad bay u fududahay. Kaliya waxaad u baahan tahay inaad ka awoodsiiso hoosta albaabbada lacag-bixinta oo aad geliso tilmaamo faahfaahsan oo ku saabsan sida isticmaaluhu u diri karo lacag-bixinta.
 
@@ -31,7 +31,7 @@ Waxayna sidoo kale heli doonaan farriin ku taal boggaaga **Mahadsanid** oo ay ku
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Xaqiijinta lacag-bixinno gacan-ku-samays ah
+## Xaqiijinta lacag-bixinno gacan-ku-samays ah {#confirming-manual-payments}
 
 Si loo xaqiijiyo lacag-bixin gacan-ku-samays ah, tag liiska **Lacag-bixinno** ee ku yaal baarka bidix. Halkaas waxaad ka arki kartaa dhammaan lacag-bixinnooyinka shabakaddaada iyo faahfaahintooda, oo ay ku jirto **xaaladdooda**. Lacag-bixin gacan-ku-samays ah mar walba waxay yeelan doontaa xaalad **Sugaysa** ilaa aad gacanta ku beddesho.
 

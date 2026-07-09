@@ -3,15 +3,15 @@ title: 'Lekcia 14: Čo bude ďalej'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lekcia 14: Čo príde ďalej
+# Lekcia 14: Čo príde ďalej {#lesson-14-what-comes-next}
 
 Vybudovali ste špecializovanú platformu webových stránok od základov. FitSite je spustený, slúži fitness štúdiám a generuje opakované príjmy. Táto záverečná lekcia sa venuje tomu, kam sa odtiaľto posunúť.
 
-## Kde sme skončili
+## Kde sme skončili {#where-we-left-off}
 
 FitSite je fungujúci biznis so zákazníkmi, prevádzkou a rastovou trajektóriou. Teraz sa zamyslíme nad tým, čo bude ďalej.
 
-## Kompletná sieť FitSite
+## Kompletná sieť FitSite {#the-complete-fitsite-network}
 
 Tu je všetko, čo sme vybudovali počas 14 lekcií:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Možnosť 1: Choďte vo svojej nike hlbšie
+## Možnosť 1: Choďte vo svojej nike hlbšie {#option-1-go-deeper-in-your-niche}
 
 Pred rozširovaním do nových ník zvážte, či nepôjdete hlbšie vo fitness:
 
-### Podniky
+### Podniky {#sub-niches}
 
 - **Jogové štúdiá** -- špecializované šablóny s funkciami pre meditácie, retreaty a workshopy
 - **CrossFit boxy** -- sledovanie WOD, výsledky súťaží, komunitné funkcie
@@ -59,7 +59,7 @@ Pred rozširovaním do nových ník zvážte, či nepôjdete hlbšie vo fitness:
 
 Každá podnika môže mať vlastné šablóny a potenciálne aj vlastnú značku, pričom všetko beží na tej istej sieti Ultimate Multisite.
 
-### Prémiové funkcie
+### Prémiové funkcie {#premium-features}
 
 Vybudujte funkcie, za ktoré si fitness štúdiá radi priplatia:
 
@@ -68,14 +68,14 @@ Vybudujte funkcie, za ktoré si fitness štúdiá radi priplatia:
 - **Šablóny fitness blogu** -- vopred pripravené obsahové štruktúry pre fitness content marketing
 - **Integrácia sociálnych médií** -- automatické zverejňovanie rozvrhov lekcií a aktualizácií
 
-### Geografická expanzia
+### Geografická expanzia {#geographic-expansion}
 
 Ak ste začali lokálne, rozšírte sa do:
 
 - Ďalších miest vo vašej krajine
 - Ďalších krajín (použite [lokalizačné funkcie](/user-guide/localization/translating) Ultimate Multisite na podporu viacerých jazykov)
 
-## Možnosť 2: Rozšírte sa do príbuzných ník
+## Možnosť 2: Rozšírte sa do príbuzných ník {#option-2-expand-to-adjacent-niches}
 
 Proces, ktorý ste použili pre fitness štúdiá, funguje pre akúkoľvek niku. Vaša druhá nika bude jednoduchšia, pretože už máte:
 
@@ -83,7 +83,7 @@ Proces, ktorý ste použili pre fitness štúdiá, funguje pre akúkoľvek niku.
 - Prevádzkové skúsenosti
 - Overený postup
 
-### Niky príbuzné fitness
+### Niky príbuzné fitness {#adjacent-niches-to-fitness}
 
 - **Wellness a spa** -- masážni terapeuti, denné spa, wellness centrá
 - **Športové kluby** -- amatérske športové tímy, ligy, rekreačné kluby
@@ -91,7 +91,7 @@ Proces, ktorý ste použili pre fitness štúdiá, funguje pre akúkoľvek niku.
 
 Tieto niky majú prekryv publika s fitness, takže váš marketing a partnerstvá sa môžu preniesť ďalej.
 
-### Úplne nové niky
+### Úplne nové niky {#completely-new-niches}
 
 Použite rámec z Lekcie 2 na vyhodnotenie akejkoľvek niky:
 
@@ -108,7 +108,7 @@ Každá nová nika potrebuje:
 
 Infraštruktúra platformy, fakturácia a prevádzkové procesy zostávajú rovnaké.
 
-## Možnosť 3: Vybudujte platformu platforiem
+## Možnosť 3: Vybudujte platformu platforiem {#option-3-build-a-platform-of-platforms}
 
 Pri väčšom rozsahu môžete prevádzkovať viacero špecializovaných značiek na jednej sieti Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Pri väčšom rozsahu môžete prevádzkovať viacero špecializovaných značie
 
 Každá značka má vlastné šablóny, plány a marketing, ale zdieľajú infraštruktúru, fakturáciu a prevádzkové procesy. Tu začína byť ekonomika Ultimate Multisite silná -- jedna platforma, mnoho vertikál.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Pre úplné oddelenie ník zvážte [doplnok Multi-Network](/addons/multinetwork), ktorý vám umožňuje prevádzkovať viacero sietí WordPress z jednej inštalácie.
 
-## Možnosť 4: Predajte biznis
+## Možnosť 4: Predajte biznis {#option-4-sell-the-business}
 
 Špecializovaná platforma webových stránok s opakovanými príjmami, nízkym churnom a jasnou pozíciou na trhu je hodnotné aktívum. SaaS biznisy sa zvyčajne predávajú za 3- až 5-násobok ročného príjmu.
 
@@ -134,7 +134,7 @@ FitSite s 200 zákazníkmi pri $89 ARPU:
 
 Nie je to zaručený výsledok, ale je to realistický cieľ pre dobre riadenú špecializovanú platformu.
 
-## Čo ste sa naučili
+## Čo ste sa naučili {#what-you-have-learned}
 
 Tento kurz vás naučil opakovateľný proces:
 
@@ -150,7 +150,7 @@ Tento kurz vás naučil opakovateľný proces:
 
 Nika je stratégia. Platforma je nástroj. Ultimate Multisite tento nástroj umožňuje. Vaše porozumenie nike mu dáva hodnotu.
 
-## Začnite budovať
+## Začnite budovať {#start-building}
 
 Ak ste postupovali spolu s FitSite, máte funkčnú platformu. Ak ste si čítali, aby ste našli vlastnú niku, vráťte sa na [Lekciu 2: Výber vašej niky](lesson-2-picking-your-niche) a začnite proces pre vami zvolený vertikál.
 

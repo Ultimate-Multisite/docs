@@ -4,11 +4,11 @@ title: 'Filter - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 ڈویلپرز کو مینج سائٹ کے URL پیرامیٹرز کو تبدیل کرنے کی اجازت دیتا ہے۔
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | سائٹ کی ID۔ |
 | $site_hash | `string` | سائٹ کا ہیش۔ |
 
-### Since
+### Since {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) میں لائن 214 پر ڈیفائن کیا گیا ہے۔
 
-## Returns
+## Returns {#returns}
 تبدیل شدہ مینج URL۔

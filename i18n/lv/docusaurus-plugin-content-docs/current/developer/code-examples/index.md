@@ -3,11 +3,11 @@ title: Uzlaboti koda piemēri
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Paplašināti koda piemēri
+# Paplašināti koda piemēri {#advanced-code-examples}
 
 Šie piemēri demonstrē paplašinātus integrācijas modeļus ar Ultimate Multisite.
 
-## Dinamiska cenu noteikšanas sistēma
+## Dinamiska cenu noteikšanas sistēma {#dynamic-pricing-engine}
 
 Uz noteikumiem balstīta cenu noteikšanas sistēma, kas piemēro apjoma, lojalitātes un sezonas atlaides:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Paplašināta vietņu nodrošināšana
+## Paplašināta vietņu nodrošināšana {#advanced-site-provisioning}
 
 Automātiski konfigurējiet jaunas vietnes ar spraudņiem, SSL, CDN, dublējumkopijām un uzraudzību, pamatojoties uz plāna funkcijām:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Pielāgota ierobežojumu sistēma
+## Pielāgota ierobežojumu sistēma {#custom-limitations-system}
 
 Izsekojiet un piemērojiet resursu ierobežojumus ar lietojuma brīdinājumiem:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB atomārais skaitītājs ar `increment_item()`
+## BerlinDB atomārais skaitītājs ar `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 pievienoja `increment_item()` metodi BerlinDB `Query` klasei. Izmantojiet to, lai veiktu drošus, atomārus pieaugumus skaitliskās kolonnās bez lasīšanas-modificēšanas-rakstīšanas sacensību situācijām — noderīgi skaitītājiem, lietošanas kvotām un ātruma ierobežošanas pārbaudēm, kas darbojas vienlaicīgu pieprasījumu laikā.
 
-### Metodes signatūra
+### Metodes signatūra {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 pievienoja `increment_item()` metodi BerlinDB `Query` 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Pamata lietošana
+### Pamata lietošana {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API lietojuma izsekošana katrai dalībai
+### API lietojuma izsekošana katrai dalībai {#tracking-api-usage-per-membership}
 
 Praktisks modelis katras dalības API ātruma ierobežojumu piemērošanai:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Kāpēc `increment_item()`, nevis `update_item()`
+### Kāpēc `increment_item()`, nevis `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Naiva lasīšanas-modificēšanas-rakstīšanas pieeja nav droša vienlaicīgu pieprasījumu laikā:
 

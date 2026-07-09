@@ -4,11 +4,11 @@ title: Ficil - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Ficil: wu_membership_pre_renew
+# Ficil: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Wuxuu kicayaa ka hor cusboonaysiinta xubinnimada.
 
-## Halbeegyada
+## Halbeegyada {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Wuxuu kicayaa ka hor cusboonaysiinta xubinnimada.
 | $membership_id | `int` | Aqoonsiga xubinnimada. |
 | $membership | `\Membership` | Shayga xubinnimada. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 2.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) safka 2204

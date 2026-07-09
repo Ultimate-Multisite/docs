@@ -3,13 +3,13 @@ title: Campo de checkout e DNS do cliente
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gerenciamento do campo de finalização de compra e DNS de clientes
+# Gerenciamento do campo de finalização de compra e DNS de clientes {#checkout-field-and-customer-dns-management}
 
-## O campo de finalização de compra Seleção de domínio
+## O campo de finalização de compra Seleção de domínio {#the-domain-selection-checkout-field}
 
 O campo **Seleção de domínio** é um elemento de finalização de compra que oferece aos clientes uma escolha de como obter o domínio do site deles. Adicione-o a qualquer formulário de finalização de compra para habilitar a venda de domínios.
 
-### Adicionando o campo a um formulário de finalização de compra
+### Adicionando o campo a um formulário de finalização de compra {#adding-the-field-to-a-checkout-form}
 
 1. Vá para **Admin da rede › Ultimate Multisite › Formulários de finalização de compra**
 2. Abra ou crie um formulário de finalização de compra
@@ -18,7 +18,7 @@ O campo **Seleção de domínio** é um elemento de finalização de compra que 
 5. Configure as opções do campo (veja abaixo)
 6. Salve o formulário
 
-### Opções do campo
+### Opções do campo {#field-options}
 
 **Modos de domínio** — Escolha quais abas o cliente vê. Cada modo pode ser habilitado ou desabilitado independentemente:
 
@@ -32,7 +32,7 @@ O campo **Seleção de domínio** é um elemento de finalização de compra que 
 
 **Produto de domínio** — Opcionalmente fixe este campo a um produto de domínio específico. Se não for definido, o addon seleciona automaticamente o produto correspondente com base no TLD que o cliente pesquisa.
 
-### Campos de contato do registrante
+### Campos de contato do registrante {#registrant-contact-fields}
 
 Quando um cliente seleciona a aba **Registrar novo domínio**, o formulário de finalização de compra adiciona campos de contato do registrante em linha:
 
@@ -43,11 +43,11 @@ Quando um cliente seleciona a aba **Registrar novo domínio**, o formulário de 
 
 Eles são exigidos por todos os registradores e validados antes que a chamada da API de registro seja feita. Números de telefone são formatados automaticamente no formato internacional `+CC.NNN` esperado pelos registradores.
 
-### URL do site gerada automaticamente
+### URL do site gerada automaticamente {#auto-generated-site-url}
 
 Quando um cliente registra ou mapeia um domínio, o campo de URL do site é preenchido automaticamente a partir do domínio escolhido. Os clientes não precisam preencher um campo de URL separado.
 
-### Comportamento da pesquisa
+### Comportamento da pesquisa {#search-behaviour}
 
 - A disponibilidade do domínio é verificada em tempo real com AJAX enquanto o cliente digita
 - Sugestões de TLDs alternativos são exibidas quando o domínio preferido não está disponível
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Gerenciamento de DNS de clientes
+## Gerenciamento de DNS de clientes {#customer-dns-management}
 
 Os clientes podem gerenciar registros DNS para seus domínios registrados na página **My Account**, na entrada do domínio deles.
 
-### Tipos de registro compatíveis
+### Tipos de registro compatíveis {#supported-record-types}
 
 | Tipo | Uso |
 |---|---|
@@ -91,11 +91,11 @@ Os clientes podem gerenciar registros DNS para seus domínios registrados na pá
 | **MX** | Definir servidor de troca de e-mails |
 | **TXT** | Adicionar SPF, DMARC, verificação ou outros registros de texto |
 
-### Quais provedores oferecem suporte ao gerenciamento de DNS?
+### Quais provedores oferecem suporte ao gerenciamento de DNS? {#which-providers-support-dns-management}
 
 O gerenciamento de DNS (adicionar, editar, excluir registros) está disponível com **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** e **Openprovider**. Domínios **Hostinger** podem atualizar nameservers por meio do Vendedor de domínios; os registros DNS para domínios hospedados são gerenciados pela integração principal de mapeamento de domínios da Hostinger. Domínios Namecheap, GoDaddy e NameSilo exibem informações de status e expiração, mas o DNS deve ser gerenciado diretamente no painel de controle do registrador.
 
-### Registros DNS padrão
+### Registros DNS padrão {#default-dns-records}
 
 Você pode configurar registros DNS padrão que são aplicados automaticamente quando um domínio é registrado. Vá para **Configurações › Vendedor de domínios › Registros DNS padrão**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: visualizando e editando DNS
+### Admin: visualizando e editando DNS {#admin-viewing-and-editing-dns}
 
 Admins de rede podem visualizar e editar registros DNS para qualquer domínio de cliente na página de edição do domínio em **Admin da rede › Ultimate Multisite › Domínios**.

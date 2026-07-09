@@ -3,9 +3,9 @@ title: Addon ဖွံ့ဖြိုးတိုးတက်မှု စတင
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# အပိုဆောင်းအစိတ်အပိုင်း ဖွံ့ဖြိုးရေး
+# အပိုဆောင်းအစိတ်အပိုင်း ဖွံ့ဖြိုးရေး {#addon-development}
 
-## အပိုဆောင်းအစိတ်အပိုင်း ဖွဲ့စည်းပုံ
+## အပိုဆောင်းအစိတ်အပိုင်း ဖွဲ့စည်းပုံ {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## အဓိက အပိုဆောင်းအစိတ်အပိုင်း ဖိုင်ပုံစံ
+## အဓိက အပိုဆောင်းအစိတ်အပိုင်း ဖိုင်ပုံစံ {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## စိတ်ကြိုက် မော်ဒယ် ဥပမာ
+## စိတ်ကြိုက် မော်ဒယ် ဥပမာ {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## အုပ်ချုပ်ရေးစာမျက်နှာ ပေါင်းစည်းမှု
+## အုပ်ချုပ်ရေးစာမျက်နှာ ပေါင်းစည်းမှု {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## သင်၏ Addon ကို စမ်းသပ်ခြင်း
+## သင်၏ Addon ကို စမ်းသပ်ခြင်း {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 extension points
+## v2.13.0 extension points {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 သည် sovereign tenants၊ checkout domains၊ သို့မဟုတ် host-provider DNS automation နှင့် ပေါင်းစည်းသည့် addons များအတွက် အသုံးဝင်သော extension points အချို့ကို ထည့်သွင်းထားသည်။
 
-### SSO နှင့် main-site management URLs
+### SSO နှင့် main-site management URLs {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-form base domains
+### Checkout-form base domains {#checkout-form-base-domains}
 
 သင့် addon က site တစ်ခုချင်းစီအလိုက် custom mappings အစား checkout-form **Site URL** domains ကဲ့သို့ လုပ်ဆောင်သင့်သည့် ထပ်တိုး shared base domains များကို ပေးသည့်အခါ `wu_checkout_form_base_domains` ကို အသုံးပြုပါ-
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite သည် ဤ hosts များကို normalize လုပ်ပြီး ၎င်းတို့အတွက် အလိုအလျောက် site တစ်ခုချင်းစီအလိုက် mapped-domain records များကို ကျော်သွားသည်။
 
-### အလိုအလျောက် domain-record ဖန်တီးခြင်း
+### အလိုအလျောက် domain-record ဖန်တီးခြင်း {#automatic-domain-record-creation}
 
 သင့် addon က အသစ်ဖန်တီးထားသော site အတွက် အလိုအလျောက် domain-record ဖန်တီးခြင်းကို တားဆီးရန် သို့မဟုတ် ရွှေ့ဆိုင်းရန် လိုအပ်သည့်အခါ `wu_should_create_domain_record_for_site` ကို အသုံးပြုပါ-
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` ကို နားထောင်သည့် host-provider integrations များသည် sites ဖန်တီးသည့်အခါ provider-side DNS records များကို ဖန်တီးနိုင်သည်။ ထို action အတွက် integration မည်သည့်အရာမျှ register မလုပ်ထားပါက Ultimate Multisite သည် အလွတ် background job ကို ကျော်သွားသည်။
 
-## နောက်တစ်ဆင့်များ
+## နောက်တစ်ဆင့်များ {#next-steps}
 
 - ရရှိနိုင်သော actions နှင့် filters များအတွက် [Hooks Reference](/developer/hooks) ကို ပြန်လည်ကြည့်ရှုပါ
 - API ပေါင်းစည်းမှုအတွက် [REST API Overview](/developer/rest-api/overview) ကို စစ်ဆေးပါ

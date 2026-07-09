@@ -3,11 +3,11 @@ title: Cholozera cha WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Buku la WP-CLI
+# Buku la WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent imabwera ndi banja la malamulo a `wp gratis-ai-agent` oyerekezera magwiridwe a wothandizira, kusamalira luso, ndi kufunsa momwe wothandizira alili kuchokera pa mzere wa malamulo. Malamulo onse amafuna WP-CLI 2.0 kapena yapamwamba.
 
-## Kuyika
+## Kuyika {#installation}
 
 Malamulo a WP-CLI amalembetsedwa okha plugin ikakhala yogwira. Tsimikizani ndi:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Imayendetsa gulu la mayeso a Agent Capabilities — mndandanda wa ma prompt ovuta, a magawo angapo omwe amayesa malo onse a luso. Gwiritsani ntchito izi kuti muwunikire magwiridwe a model, kuyerekezera opereka AI, kapena kutsimikizira mapaketi a luso musanatumize ku production.
 
-### Chidule
+### Chidule {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Zosankha
+### Zosankha {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Mtundu wa zotuluka: `table` (wokhazikika), `json`, `csv` |
 | `--save` | Sungani zotsatira za benchmark ku database kuti muzifanizire mbiri yakale |
 
-### Zitsanzo
+### Zitsanzo {#examples}
 
 Yendetsani gulu lonse la benchmark ndi wopereka ndi model apano:
 
@@ -57,7 +57,7 @@ Yendetsani motsutsana ndi model yeniyeni ndipo sungani zotsatira:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Zotuluka
+### Zotuluka {#output}
 
 Benchmark imatulutsa mzere umodzi pa funso lililonse ndi mizati yotsatirayi:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Mafunso a Benchmark
+### Mafunso a Benchmark {#benchmark-questions}
 
 Gulu lokhazikika limaphatikizapo:
 
@@ -95,11 +95,11 @@ Mafunso owonjezera angalembetsedwe kudzera pa fyuluta ya `gratis_ai_agent_benchm
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Imasamalira luso loyikidwa ndi mapaketi a luso.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Imalemba luso lonse lolembetsedwa, gwero lake (core kapena paketi), ndi momwe lilili pano.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Imatsitsa ndi kuyambitsa paketi ya luso kuchokera ku registry.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Imaletsa luso lenileni osachotsa paketi. Ndi yothandiza pochepetsa malo ogwirira ntchito a wothandizira pa tsamba lina.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Imayatsanso luso lomwe linali litaletsedwa kale.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Imawonetsa makonzedwe apano a wothandizira ndi momwe kulumikizana kulili.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Imawonetsa zochitika zaposachedwa za wothandizira kuchokera ku debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Imakhazikitsanso mkhalidwe wa wothandizirayo: imachotsa CSS yolowetsedwa, imachotsa CPTs ndi ma taxonomy olembetsedwa ndi wothandizirayo, imakhazikitsanso masitayilo apadziko lonse, ndipo imakhuthula cache ya zosankha za wothandizirayo. Sichichotsa plugin kapena zoikamo zake.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Ma Code Otuluka
+## Ma Code Otuluka {#exit-codes}
 
 Malamulo onse amatuluka ndi `0` akapambana. Ma code otuluka omwe si zero:
 

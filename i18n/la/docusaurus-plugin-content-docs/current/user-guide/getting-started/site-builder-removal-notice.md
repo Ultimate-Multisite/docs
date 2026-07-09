@@ -3,13 +3,13 @@ title: Notitia de Removendo Modus Constructio Situii
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Notitia de Removendo Modus Constructio Situs
+# Notitia de Removendo Modus Constructio Situs {#site-builder-mode-removal-notice}
 
 **Modus Constructio Situs est in Superdav AI Agent v1.12.0 removet.** Si usus er Modus Constructio Situs, debet migrare ad **agent Setup Assistant** pro creatione themorum et configuratione situs.
 
-## Quid Accidit?
+## Quid Accidit? {#what-happened}
 
-### Modus Constructio Situs (Obsoletum)
+### Modus Constructio Situs (Obsoletum) {#site-builder-mode-legacy}
 
 Modus Constructio Situs erat interface basatus in wizard pro:
 
@@ -18,7 +18,7 @@ Modus Constructio Situs erat interface basatus in wizard pro:
 - Eligendo themam
 - Configuratio contenti initialis
 
-### Quid Loquit?
+### Quid Loquit? {#what-replaced-it}
 
 **Agent Setup Assistant** nunc omnem functionem Modus Constructio Situs maneat cum:
 
@@ -27,15 +27,15 @@ Modus Constructio Situs erat interface basatus in wizard pro:
 - Integrare cum onboarding Thematic Builder
 - Memoria persistens site_brief pro sessionibus futura
 
-## Si Usus Erat Modus Constructio Situs
+## Si Usus Erat Modus Constructio Situs {#if-you-were-using-site-builder-mode}
 
-### Situs Tuorum Sunt Sani
+### Situs Tuorum Sunt Sani {#your-sites-are-safe}
 
 - Situs existere creati cum Modus Constructio Situs continuant operari
 - Nulla perdita data vel disruption situs
 - Possuit sita tuorum normaliter administrare
 
-### Migrare ad Agent Setup Assistant
+### Migrare ad Agent Setup Assistant {#migrate-to-setup-assistant-agent}
 
 Pro novis creationibus situs aut mutationibus themorum, usus agent Setup Assistant:
 
@@ -51,7 +51,7 @@ vel
 
 Agent Setup Assistant eam modum functionem daret cum plus flexibilitate.
 
-## Comparatio: Modus Constructio Situs vs. Agent Setup Assistant
+## Comparatio: Modus Constructio Situs vs. Agent Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Caracter | Modus Constructio Situs (Removetur) | Agent Setup Assistant (Novus) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Agent Setup Assistant eam modum functionem daret cum plus flexibilitate.
 | Sessiones Futurae | Configuratio repetita | Usus site_brief conservati |
 | Flexibilitas | Workflow fixus | Conversatio adaptabilis |
 
-## Migratio ad Agent Setup Assistant
+## Migratio ad Agent Setup Assistant {#migrating-to-setup-assistant-agent}
 
-### Pro Situs Novis
+### Pro Situs Novis {#for-new-sites}
 
 Inveci utmodo modum Site Builder:
 
@@ -76,7 +76,7 @@ Inveci utmodo modum Site Builder:
    - Generandum thematis (Theme generation)
    - Configuracion initialis
 
-### Pro Situs Existentibus
+### Pro Situs Existentibus {#for-existing-sites}
 
 Si situm ex modo Site Builder habes:
 
@@ -85,7 +85,7 @@ Si situm ex modo Site Builder habes:
 3. Agent Auxilii Configurandi te ad creationem thēmatum novum adiuvat.
 4. Data sitii tua manent in ubique.
 
-### Pro Mutibus Thematum
+### Pro Mutibus Thematum {#for-theme-changes}
 
 Inveci selectionem themae modo Site Builder:
 
@@ -95,9 +95,9 @@ Inveci selectionem themae modo Site Builder:
    - Themam custom generabit
    - In tuo sito activat
 
-## Differentiae Principales
+## Differentiae Principales {#key-differences}
 
-### Modo Site Builder
+### Modo Site Builder {#site-builder-mode}
 
 ```
 1. Elegere templum
@@ -106,7 +106,7 @@ Inveci selectionem themae modo Site Builder:
 4. Finis
 ```
 
-### Agent Auxilii Configurandi
+### Agent Auxilii Configurandi {#setup-assistant-agent}
 
 ```
 1. Describere finem sitii tui
@@ -117,42 +117,42 @@ Inveci selectionem themae modo Site Builder:
 6. Brevis sitii ad sessiones futuras conservatur
 ```
 
-## Beneficia Auxilii Configurandi
+## Beneficia Auxilii Configurandi {#benefits-of-setup-assistant-agent}
 
-### Plus Flexibilis
+### Plus Flexibilis {#more-flexible}
 
 - Situm describere in lingua naturalis
 - Recommutationes custom recipere
 - Ad tuas specificationes specificas adaptari
 
-### Magius Customizationem
+### Magius Customizationem {#better-customization}
 
 - Generatio themae custom
 - Decisiones systematis design (Design system decisions)
 - Tokens design perpetuae (Persistent design tokens)
 
-### Memoria Perpetua
+### Memoria Perpetua {#persistent-memory}
 
 - Tuus site_brief conservatur
 - Futura agentia tuum situm intelligant
 - Non opus est iterare informationem configurationem
 
-### Workflow Integratus
+### Workflow Integratus {#integrated-workflow}
 
 - Onboarding Thematici Builderis
 - Artis Systematis Design
 - Capacitas controlorum visibility (Ability Visibility controls)
 - Omnes labor in perfecta concordia operant
 
-## Solutio Problematum
+## Solutio Problematum {#troubleshooting}
 
-### Non invenio modo Site Builder
+### Non invenio modo Site Builder {#i-cant-find-site-builder-mode}
 
 Modus Site Builder est remsissum. Ut Agent Auxilii Configurandi uti possis:
 
 "Mi aiutas a configurare un nuovo sito"
 
-### Vultr un sito da Site Builder
+### Vultr un sito da Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Puoi ricrearlo con l'agente Setup Assistant:
 
@@ -161,7 +161,7 @@ Puoi ricrearlo con l'agente Setup Assistant:
 3. L'agente genererà un tema simile
 4. Il tuo site_brief verrà salvato per futuri riferimenti
 
-### Il mio sito Site Builder esistente non funziona
+### Il mio sito Site Builder esistente non funziona {#my-existing-site-builder-site-isnt-working}
 
 I siti creati con la modalità Site Builder esistente continuano a funzionare. Se stai riscontrando problemi:
 
@@ -170,7 +170,7 @@ I siti creati con la modalità Site Builder esistente continuano a funzionare. S
 3. Controlla i log di errore di WordPress
 4. Contatta il supporto se i problemi persistono
 
-### Posso ancora usare i miei vecchi template Site Builder?
+### Posso ancora usare i miei vecchi template Site Builder? {#can-i-still-use-my-old-site-builder-templates}
 
 I template Site Builder non sono più disponibili. Tuttavia:
 
@@ -178,14 +178,14 @@ I template Site Builder non sono più disponibili. Tuttavia:
 - Puoi ricreare siti simili con l'agente Setup Assistant
 - L'agente Setup Assistant offre opzioni di personalizzazione maggiori
 
-## Prossimi Passi
+## Prossimi Passi {#next-steps}
 
 1. **Per nuovi siti**: Usa l'agente Setup Assistant
 2. **Per i siti esistenti**: Continua a usarli così come sono
 3. **Per i cambiamenti del tema**: Richiedi aiuto all'agente Setup Assistant
 4. **Per il perfezionamento del design**: Usa la skill Design System Aesthetics
 
-## Argomenti Correlati
+## Argomenti Correlati {#related-topics}
 
 - **Onboarding Theme Builder**: Configurazione guidata per temi personalizzati
 - **Setup Assistant Agent**: Configurazione del sito guidata dall'agente

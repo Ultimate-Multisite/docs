@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Graditelj AI spletnih mest
+# Graditelj AI spletnih mest {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Zahteve
+## Zahteve {#requirements}
 
 - WordPress 5.3 ali novejši
 - PHP 7.4 ali novejši
 - vtičnik Multisite Ultimate (aktiven)
 
-## Namestitev
+## Namestitev {#installation}
 
 1. Naložite datoteke dodatka v svoj imenik `/wp-content/plugins/`
 2. Aktivirajte vtičnik prek menija 'Plugins' v WordPress
 3. Konfigurirajte nastavitve dodatka v skrbništvu omrežja
 
-## Razvoj
+## Razvoj {#development}
 
-### Nastavitev
+### Nastavitev {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura projekta
+### Struktura projekta {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Pravila za posodobitev kode
 ```
 
-### Testiranje
+### Testiranje {#testing}
 
 Dodatek vključuje celovit okvir za testiranje:
 
@@ -79,44 +79,44 @@ Dodatek vključuje celovit okvir za testiranje:
 - **Pokritost testov**: konfigurirano za sledenje pokritosti kode
 - **Multisite testiranje**: testi se izvajajo v okolju multisite
 
-### Standardi kode
+### Standardi kode {#code-standards}
 
 - **Standardi kodiranja WordPress**: uveljavljeni prek PHPCS
 - **Združljivost s PHP 7.4+**: podprte so sodobne funkcije PHP
 - **Statična analiza**: integracija PHPStan za preverjanje tipov
 - **Posodobitev kode**: pravila Rector za nadgradnje PHP
 
-### Sistem gradnje
+### Sistem gradnje {#build-system}
 
 - **Obdelava sredstev**: pomanjšanje datotek CSS/JS
 - **Prevajanje**: ustvarjanje datoteke POT
 - **Pakiranje**: ustvarjanje arhiva za distribucijo
 - **Razvojni način**: nepomanjšana sredstva za odpravljanje napak
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
 Dodatek podpira različne konfiguracijske možnosti, dostopne prek skrbniškega vmesnika omrežja.
 
-## Kljuke in filtri
+## Kljuke in filtri {#hooks-and-filters}
 
-### Dejanja
+### Dejanja {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Sproži se po inicializaciji dodatka
 - `ultimate-multisite-ai-site-builder_loaded` - Sproži se, ko so naložene vse datoteke dodatka
 
-### Filtri
+### Filtri {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Spremenite nastavitve dodatka
 - `ultimate-multisite-ai-site-builder_enabled` - Preglasite stanje omogočenosti/onemogočenosti dodatka
 
-## Licenca
+## Licenca {#license}
 
 Ta dodatek je licenciran pod GPL v3 ali novejšo različico.
 
-## Podpora
+## Podpora {#support}
 
 Za podporo in dokumentacijo obiščite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Dnevnik sprememb
+## Dnevnik sprememb {#changelog}
 
 - Različica 1.0.1 (2025-09-28): preimenuj predpono v ultimate-multisite; posodobi text domain; povišanje različice.
 

@@ -3,7 +3,7 @@ title: Waxyaabaha la ogaaday in ay isku khilaafaan
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Waxyaalad la'aanta la'aanta ah oo ay jiraan Plugin-yada kale
+# Waxyaalad la'aanta la'aanta ah oo ay jiraan Plugin-yada kale {#known-incompatibilities-with-other-plugins}
 
 Markaad install gareysid oo aad furto (activate) Ultimate Multisite, waxaad la kulmi kartaa dhibaatooyin sababta ay u yeeshaan isku dhafka (incompatibilities) ee aan la xalayn mid ka mid ah plugin-yada kale.
 

@@ -4,11 +4,11 @@ title: 'Filtrum - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Sinite programmatores parametros URL situs administrandi mutare.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Sinite programmatores parametros URL situs administrandi mutare.
 | $id | `int` | ID situs. |
 | $site_hash | `string` | Hash situs. |
 
-### Ex quo
+### Ex quo {#since}
 
 - 2.0.9
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) ad lineam 214
 
 
-## Reddita
+## Reddita {#returns}
 URL administrandi mutatum.

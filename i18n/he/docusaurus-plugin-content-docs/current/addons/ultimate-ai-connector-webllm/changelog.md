@@ -3,9 +3,9 @@ title: מחבר ה-AI האולטימטיבי עבור WebLLM - יומן שינו
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# יומן השינויים של Ultimate AI Connector עבור WebLLM
+# יומן השינויים של Ultimate AI Connector עבור WebLLM {#ultimate-ai-connector-for-webllm-changelog}
 
-## גרסה 1.1.0 — שוחררה ב-2026-04-09
+## גרסה 1.1.0 — שוחררה ב-2026-04-09 {#version-110--released-on-2026-04-09}
 
 * **חדש:** ווידג'ט צ'אט צף עם מדד סטטוס בסרגל המנהל — כל משתמש מחובר יכול להפעיל את ה-LLM בצד הלקוח ישירות מהצד הקדמי (front end).
 * **חדש:** זמן ריצה (runtime) של SharedWorker — כעת מנוע MLC פועל ב-SharedWorker, כך שמספר לשוניות משתפות סשן GPU אחד במקום להתחרות עליו.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * **תיקון:** חיבור (Hook) את WebLLM למסנן wpai_preferred_text_models, כך שפיצ'ר AI Experiments ינתב למנוע בדפדפן כאשר מוגדר מודל.
 * **שיפור:** תיקוני Cache-busting, נרמול תוכן (content normalisation) וייחוס חומרה (hardware-reference) שזוהו במהלך בדיקות מקצה לקצה (end-to-end testing).
 
-## גרסה 1.0.0 — השקה ראשונית
+## גרסה 1.0.0 — השקה ראשונית {#version-100--initial-release}

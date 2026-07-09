@@ -3,9 +3,9 @@ title: ਰੀਲਿਜ਼ ਨੋਟਸ
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# ਰਿਲੀਜ਼ ਨੋਟਸ
+# ਰਿਲੀਜ਼ ਨੋਟਸ {#release-notes}
 
-## ਵਰਜਨ 2.13.0 — 2026-06-05 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ
+## ਵਰਜਨ 2.13.0 — 2026-06-05 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ {#version-2130--released-on-2026-06-05}
 
 - ਨਵਾਂ: ਗਾਹਕ Account, checkout, billing, ਸਾਈਟ, ਚਲਾਨ, ਟੈਮਪਲੇਟ ਬਦਲਣ, ਅਤੇ ਡੋਮੇਨ ਮੈਪਿੰਗ ਫਲੋਜ਼ ਲਈ sovereign-tenant ਸਹਾਇਤਾ ਜੋੜੀ ਗਈ ਤਾਂ ਜੋ tenant ਨੈੱਟਵਰਕ managed ਕਾਰਵਾਈਆਂ ਲਈ ਗਾਹਕਾਂ ਨੂੰ ਮੁੱਖ ਸਾਈਟ ਵੱਲ ਵਾਪਸ ਭੇਜ ਸਕਣ।
 - ਨਵਾਂ: ਆਵਰਤੀ ਮੈਂਬਰਸ਼ਿਪਾਂ ਲਈ renewal-credential ਜਾਂਚਾਂ ਜੋੜੀਆਂ ਗਈਆਂ ਤਾਂ ਜੋ gateways ਸੇਵ ਕੀਤੇ billing agreement, subscription, ਜਾਂ vault token ਗੁੰਮ ਹੋਣ 'ਤੇ auto-renewal ਨੂੰ ਅਯੋਗ ਕਰ ਸਕਣ।
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - ਠੀਕ ਕੀਤਾ: Membership renewals, expiration display, ਅਤੇ payment collection edge cases ਹੁਣ ਤੁਰੰਤ expirations, crashes, ਜਾਂ ਲੋੜੀਂਦੀਆਂ payments ਛੁੱਟਣ ਤੋਂ ਬਚਦੇ ਹਨ।
 - ਸੁਧਾਰਿਆ: WordPress compatibility 7.0 ਤੱਕ ਟੈਸਟ ਕੀਤੀ ਗਈ ਹੈ, production Vue assets npm sources ਤੋਂ ਦੁਬਾਰਾ ਬਣਾਏ ਗਏ ਹਨ, ਅਤੇ Cypress end-to-end coverage ਹੁਣ ਹੋਰ checkout, setup, SSO, ਅਤੇ gateway flows ਦੀ ਜਾਂਚ ਕਰਦੀ ਹੈ।
 
-## ਵਰਜਨ 2.12.0 — 2026-05-15 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ
+## ਵਰਜਨ 2.12.0 — 2026-05-15 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ {#version-2120--released-on-2026-05-15}
 
 - ਨਵਾਂ: Hostinger (hPanel) ਨੂੰ domain mapping integration ਨਾਲ ਇੱਕ supported host provider ਵਜੋਂ ਜੋੜਿਆ ਗਿਆ
 - ਨਵਾਂ: Site Exporter ਹੁਣ streamlined network-wide ਸਾਈਟ restoration ਲਈ network import bundles ਸੰਭਾਲਦਾ ਹੈ
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - ਠੀਕ ਕੀਤਾ: Site Exporter CLI ਹੁਣ ਸਹੀ default network site selection ਨੂੰ preserve ਕਰਦਾ ਹੈ
 - ਸੁਧਾਰਿਆ: plugin package ਤੋਂ bundled wp-cli ਹਟਾਇਆ ਗਿਆ, ਜਿਸ ਨਾਲ plugin size ਘੱਟ ਹੋਇਆ
 
-## ਵਰਜਨ 2.11.0 — 2026-05-11 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ
+## ਵਰਜਨ 2.11.0 — 2026-05-11 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ {#version-2110--released-on-2026-05-11}
 
 - ਨਵਾਂ: ਸਾਈਟ exports ਹੁਣ self-booting `index.php` ਸ਼ਾਮਲ ਕਰਦੇ ਹਨ ਤਾਂ ਜੋ ZIP ਨੂੰ ਵੱਖਰੇ plugin install ਤੋਂ ਬਿਨਾਂ fresh host 'ਤੇ install ਕੀਤਾ ਜਾ ਸਕੇ।
 - ਨਵਾਂ: Network export administrators ਨੂੰ Site Export admin page ਤੋਂ ਇੱਕੋ archive ਵਿੱਚ ਸਾਰੀਆਂ subsites export ਕਰਨ ਦਿੰਦਾ ਹੈ।
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - ਨਵਾਂ: Checkout form editor ਚੇਤਾਵਨੀ ਦਿੰਦਾ ਹੈ ਜਦੋਂ required field configured ਕੀਤੇ ਬਿਨਾਂ product ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ।
 - ਨਵਾਂ: Import/Export settings tab ਹੁਣ ਆਪਣਾ scope ਸਪਸ਼ਟ ਤੌਰ 'ਤੇ ਵੇਰਵਾ ਦਿੰਦਾ ਹੈ ਅਤੇ Site Export tool ਨਾਲ ਸਿੱਧਾ link ਕਰਦਾ ਹੈ।
 
-## ਵਰਜਨ 2.10.0 — 2026-05-05 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ
+## ਵਰਜਨ 2.10.0 — 2026-05-05 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ {#version-2100--released-on-2026-05-05}
 
 - ਨਵਾਂ: seamless gateway configuration ਲਈ OAuth flag gate ਨਾਲ manual credential entry ਵਾਸਤੇ PayPal guided setup wizard।
 - ਨਵਾਂ: Template switch customer panel ਨੂੰ current-template card, persistent grid, ਅਤੇ **ਮੌਜੂਦਾ ਟੈਮਪਲੇਟ ਰੀਸੈੱਟ ਕਰੋ** button ਨਾਲ redesigned ਕੀਤਾ ਗਿਆ।
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - ਠੀਕ ਕੀਤਾ: Filtered SSO path ਨੂੰ ਸਾਰੇ login flows ਵਿੱਚ ਮੰਨਿਆ ਗਿਆ।
 - ਠੀਕ ਕੀਤਾ: Blank site identity options save 'ਤੇ preserve ਕੀਤੇ ਗਏ।
 
-## ਵਰਜਨ 2.9.0 — 2026-04-30 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ
+## ਵਰਜਨ 2.9.0 — 2026-04-30 ਨੂੰ ਰਿਲੀਜ਼ ਕੀਤਾ ਗਿਆ {#version-290--released-on-2026-04-30}
 
 - ਨਵਾਂ: Single-site export ਅਤੇ import **Tools > Export & Import** ਹੇਠ ਜੋੜੇ ਗਏ।
 - ਠੀਕ ਕੀਤਾ: Export ZIP files ਹੁਣ authenticated download endpoint ਰਾਹੀਂ serve ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - ਠੀਕ ਕੀਤਾ: Tour IDs ਨੂੰ user settings keys ਵਿੱਚ underscores ਵਜੋਂ normalise ਕੀਤਾ ਗਿਆ।
 - ਸੁਧਾਰਿਆ: ਬਿਹਤਰ compatibility ਲਈ ਹੁਣ Alchemy/Zippy ਦੀ ਥਾਂ ZipArchive ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।
 
-## ਵਰਜਨ 2.8.0 — 2026-04-29
+## ਵਰਜਨ 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - ਨਵਾਂ: Other Options ਸੈਟਿੰਗਾਂ UI ਵਿੱਚ Enable Jumper ਟੌਗਲ ਜੋੜਿਆ ਗਿਆ।
 - ਨਵਾਂ: ਚੈਕਆਉਟ ਫਾਰਮਾਂ ਦੀ ਸੂਚੀ ਟੇਬਲ ਵਿੱਚ ਸਥਿਤੀ ਕਾਲਮ ਜੋੜਿਆ ਗਿਆ।

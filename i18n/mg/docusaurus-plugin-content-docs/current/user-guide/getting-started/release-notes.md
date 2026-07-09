@@ -3,9 +3,9 @@ title: Fanamarihana Fialana
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Fanamarihana Fanavaozana (Release Notes)
+# Fanamarihana Fanavaozana (Release Notes) {#release-notes}
 
-## Versio 2.13.0 — Natao tamin'ny 2026-06-05
+## Versio 2.13.0 — Natao tamin'ny 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Vaovao: Nampiditra fanohanana ho "sovereign-tenant" (tenant manokana) ho an'ny kaonty mpanjifa, checkout, fandoavam-bola (billing), toerana (site), faktiora (invoice), fanovana template ary fametrahana domain. Izany dia ahafahan'ny tambajotra tenant mandefa ny mpanjifa hiverina amin'ny tranokala lehibe ho an'ny asa voatsabo.
 - Vaovao: Nampiditra fanamarinana fiverenana (renewal-credential checks) ho an'ny fandraisana miverimberina (recurring memberships). Izany dia ahafahana manakana ny fampiasana auto-renewal rehefa tsy misy fifanarahana fandoavam-bola, fampandrenesana (subscription), na token vault voamarina.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fanamboarana: Ireo toe-javatra manokana momba ny fanavaozana fandraisana (membership renewals), famantarana ny fahaverezan'ny fotoana, ary ny fandraisana vola dia miady amin'ny fahaverezana avy hatrany, ny fihanakalozana (crashes), na ny fahaverezana ny fandoavam-bola ilaina.
 - Fanatsarana: Ny fampifanarahana amin'i WordPress dia voavaha hatramin'ny 7.0, ary ny zavatra vita amin'ny Vue ho an'ny famokarana (production) dia novokarina indray avy amin'ny loharanon'ny npm, ary ny Cypress end-to-end coverage dia manao fanazaran-tena bebe kokoa ireo fidinana checkout, setup, SSO ary gateway.
 
-## Versio 2.12.0 — Nialana tamin'ny 2026-05-15
+## Versio 2.12.0 — Nialana tamin'ny 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Vaovao: Ampidirina ny Hostinger (hPanel) ho mpanome hosting ankasitrahana miaraka amin'ny fampifandraisana domain mapping
 - Vaovao: Ny Site Exporter dia afaka mandray ireo bundle famindrana tambajotra (network import bundles) mba hahatonga ny fanavaozana ny toerana an-tserasera ho mora kokoa
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fanitsiana: Ny Site Exporter CLI dia mitazona ny safidy toerana an-tserasera (network site selection) tokony ho eo fa tsy miova
 - Fanatsarana: Esory ny wp-cli voafandaka ao amin'ny package plugin, ka mampihena ny haben'ny plugin
 
-## Versio 2.11.0 — Nialana tamin'ny 2026-05-11
+## Versio 2.11.0 — Nialana tamin'ny 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Vaovao: Ny Site exports dia afaka manome `index.php` mampandray azy (self-booting) mba azo apetraka ao amin'ny hostinger vaovao tsy mila apetraka plugin hafa
 - Vaovao: Ny Network export dia mamela ny administrator handefa ireo subsites rehetra ao anaty archive iray avy amin'ny pejy Site Export admin
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Vaovao: Ny checkout form editor dia manome fampitandremana rehefa misy vokatra ampiana nefa tsy voatendry ny champ ilaina
 - Vaovao: Ny tab Import/Export dia manazava mazava kokoa ny fatra iainany ary mifandray mivantana amin'ny tool Site Export
 
-## Versio 2.10.0 — Nialana tamin'ny 2026-05-05
+## Versio 2.10.0 — Nialana tamin'ny 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Vaovao: Fitaovana fanampiana (setup wizard) ho an'ny PayPal izay mitarika ny fidirana amin'ny fampahalalana manokana (manual credential entry) miaraka amin'ny fifehezana OAuth mba hahatonga ny gateway ho mora ampiasaina.
 - Vaovao: Novana ny famolavolana ny panel an'ny mpanjifa rehefa mifindra template, misy card **current-template**, grid maharitra (persistent grid), ary bokotra **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fanamboarana: Voatandrina ny lalan'ny SSO (SSO path) ho an'ny fidirana rehetra.
 - Fanamboarana: Atao mitazona ireo safidy momba ny maha-izy azy (site identity options) rehefa mitahiry.
 
-## Version 2.9.0 — Nivoaka tamin'ny 2026-04-30
+## Version 2.9.0 — Nivoaka tamin'ny 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Vaovao: Novana ny famoahana sy ny fampidirana ho an'ny site iray eo amin'ny **Tools > Export & Import**.
 - Fanamboarana: Ny ZIP files dia azo omeny amin'ny alalan'ny endpoint download voamarina.
@@ -65,7 +65,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fanamboarana: Voavahana ny fifandraisana miankina amin'ny tsindrim-peo (circular dependency) ho an'ny fandaharam-potoana import.
 - Fanatsarana: Ampiasaina an'i ZipArchive fa tsy Alchemy/Zippy mba hahatonga azy ho mety kokoa.
 
-## Version 2.8.0 — Nivoaka tamin'ny 2026-04-29
+## Version 2.8.0 — Nivoaka tamin'ny 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Vaovao: Fanondroana Jumper (toggle) voafidy dia nampidirina ao amin'ny fampisehoana an'ny "Other Options" settings UI.
 - Vaovao: Kolontsaina "Status" dia nampidirina tao amin'ilay tabilao fampisehoana ny forms checkout.

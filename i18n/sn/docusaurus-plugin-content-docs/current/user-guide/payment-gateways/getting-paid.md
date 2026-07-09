@@ -3,13 +3,13 @@ title: Kubhadharwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kubhadharwa (v2)
+# Kubhadharwa (v2) {#getting-paid-v2}
 
 _**CHERECHEDZO CHINOKOSHA: Chinyorwa ichi chinoreva Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite ine membership nehurongwa hwekubhadharisa hwakavakirwa mukati. Kuti hurongwa hwedu hwekubhadharisa hushande, takabatanidza payment gateways anonyanya kushandiswa mu e-commerce. Payment gateways ekutanga muUltimate Multisite ndi _Stripe_ , _PayPal_ , uye Manual Payment. Unogonawo kushandisa _WooCommerce_ , _GoCardless_ ne _Payfast_ kugamuchira mubhadharo nekuiisa ma-add-ons awo akakodzera.
 
-## Zvirongwa Zvekutanga
+## Zvirongwa Zvekutanga {#basic-settings}
 
 Unogona kugadzirisa chero eaya payment gateways pasi pezvirongwa zvekubhadhara zveUltimate Multisite. Unogona kuzviwana nekuenda ku **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Izvi zvinodzivirira membership kuti isaratidzike sekunge iri auto-renew apo gate
 
 <!-- Screenshot haisi kuwanikwa: Next invoice number neinvoice number prefix fields zvinoratidzwa kana Sequential Number yasarudzwa -->
 
-## Kwaunowana gateways:
+## Kwaunowana gateways: {#where-to-find-the-gateways}
 
 Unogona kugadzira payment gateways papeji rimwe chete ( **Ultimate Multisite > Settings > Payments**). Pasi chaipo pe **active payment gateways** , uchakwanisa kuona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ uye _Manual_.
 
@@ -67,7 +67,7 @@ Heino zvakare tarisiro yakazara yezvirongwa zvepayment gateways:
 
 Zvino, kana uchida kushandisa _WooCommerce_ , _GoCardless_ kana _Payfast_ se payment gateway yako, uchafanira **kuisa nekugadzirisa ma-add-ons awo**.
 
-### Maitiro ekuisa WooCommerce add-on:
+### Maitiro ekuisa WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Tinonzwisisa kuti _Stripe_ ne _PayPal_ hazviwanikwi mune dzimwe nyika izvo zvinoderedza kana kutadzisa vashandisi veUltimate Multisite kushandisa plugin yedu zvinobudirira. Saka takagadzira add-on yekubatanidza _WooCommerce,_ inova plugin ye e-commerce inozivikanwa zvikuru. Developers pasi rose vakagadzira add-ons dzekubatanidza payment gateways dzakasiyana kwairi. Takashandisa mukana uyu kuwedzera payment gateways aunogona kushandisa nehurongwa hwekubhadharisa hweUltimate Multisite.
 
@@ -95,7 +95,7 @@ Mushure mekuishandisa, kana usati wava neWooCommerce chinowedzerwa chakaiswa uye
 
 Kuti uverenge zvimwe nezvewedzero yeWooCommerce Integration, **dzvanya pano**.
 
-### Maitiro ekuisa wedzero yeGoCardless:
+### Maitiro ekuisa wedzero yeGoCardless: {#how-to-install-the-gocardless-add-on}
 
 Matanho ekuisa wedzero ye_GoCardless_ akafanana chaizvo needzero ye_WooCommerce_. Ndapota enda kupeji rezvinowedzerwa wosarudza wedzero ye **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Kana kuiswa kwapera, uchaendeswa kupeji rezvinowedzerwa. Pano, ingodzvanya pa **
 
 Kuti udzidze matangiro ekushandisa gateway ye_GoCardless_, **verenga chinyorwa ichi**.
 
-### Maitiro ekuisa wedzero yePayfast:
+### Maitiro ekuisa wedzero yePayfast: {#how-to-install-the-payfast-add-on}
 
 Enda kupeji rezvinowedzerwa wosarudza wedzero ye **Ultimate Multisite: Payfast Gateway**.
 

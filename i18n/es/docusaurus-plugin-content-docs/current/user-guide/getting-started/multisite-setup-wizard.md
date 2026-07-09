@@ -3,7 +3,7 @@ title: Asistente de configuración de Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Asistente de Configuración Multisitio
+# Asistente de Configuración Multisitio {#multisite-setup-wizard}
 
 Ultimate Multisite incluye un asistente incorporado que convierte automáticamente una instalación estándar de WordPress en una red Multisitio de WordPress. Esto elimina la necesidad de editar manualmente `wp-config.php` o ejecutar comandos de base de datos.
 
@@ -11,13 +11,13 @@ Ultimate Multisite incluye un asistente incorporado que convierte automáticamen
 Si su instalación de WordPress ya está funcionando como una red Multisitio, puede omitir este paso por completo. El asistente solo aparece cuando Multisitio aún no está habilitado.
 :::
 
-## ¿Cuándo aparece el asistente?
+## ¿Cuándo aparece el asistente? {#when-does-the-wizard-appear}
 
 Cuando activa Ultimate Multisite en una instalación estándar (no Multisitio) de WordPress, el plugin detecta que Multisitio no está habilitado y lo redirige automáticamente al Asistente de Configuración Multisitio en lugar del asistente de configuración regular.
 
 También puede acceder directamente a través de **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Requisitos previos
+## Requisitos previos {#prerequisites}
 
 Antes de ejecutar el asistente, asegúrese de que:
 
@@ -29,7 +29,7 @@ Antes de ejecutar el asistente, asegúrese de que:
 El asistente modifica su archivo `wp-config.php` y crea nuevas tablas en la base de datos. Siempre realice una copia de seguridad antes de continuar.
 :::
 
-## Paso 1: Bienvenida
+## Paso 1: Bienvenida {#step-1-welcome}
 
 La primera pantalla explica qué es WordPress Multisite y lo que hará el asistente:
 
@@ -42,11 +42,11 @@ La primera pantalla explica qué es WordPress Multisite y lo que hará el asiste
 
 Haga clic en **Continuar** para continuar.
 
-## Paso 2: Configuración de la Red
+## Paso 2: Configuración de la Red {#step-2-network-configuration}
 
 Este paso le solicita que configure la configuración de su red.
 
-### Estructura del Sitio
+### Estructura del Sitio {#site-structure}
 
 Elija cómo se organizarán los sitios de su red:
 
@@ -57,11 +57,11 @@ Elija cómo se organizarán los sitios de su red:
 Si elige subdominios, deberá configurar **DNS comodín** y un **certificado SSL comodín** para su dominio. La mayoría de los hosts de WordPress gestionados lo manejan automáticamente. Consulte [Ultimate Multisite 101](./ultimate-multisite-101) para una comparación detallada.
 :::
 
-### Título de la Red
+### Título de la Red {#network-title}
 
 Introduzca un nombre para su red. Por defecto, se utiliza el título actual del sitio con "Network" añadido. Puede cambiarlo más tarde desde la configuración de la red.
 
-### Correo Electrónico del Administrador de la Red
+### Correo Electrónico del Administrador de la Red {#network-admin-email}
 
 La dirección de correo electrónico utilizada para las notificaciones de administración de la red. Por defecto, se utiliza la dirección de correo electrónico del usuario actual.
 
@@ -69,7 +69,7 @@ La dirección de correo electrónico utilizada para las notificaciones de admini
 
 Después de completar los campos, haga clic en **Continuar** para continuar.
 
-## Paso 3: Instalación
+## Paso 3: Instalación {#step-3-installation}
 
 Haga clic en el botón **Instalar** para comenzar. El asistente realiza cinco pasos automatizados en secuencia, cada uno mostrando su progreso en tiempo real:
 
@@ -96,7 +96,7 @@ Una vez que todos los pasos se completen con éxito, verá un estado verde "¡É
 
 El asistente luego procederá automáticamente a la pantalla de finalización.
 
-## Paso 4: Completo
+## Paso 4: Completo {#step-4-complete}
 
 Una vez que la instalación esté completa, verá un mensaje de éxito que confirma que WordPress Multisite ha sido habilitado.
 
@@ -108,7 +108,7 @@ Ahora puede continuar con el asistente de configuración de Ultimate Multisite p
 Después de que la instalación multisite se complete, su navegador se redirigirá a través del administrador de red recién habilitado. Es posible que deba iniciar sesión nuevamente ya que las cookies de autenticación se actualizan para el entorno multisite.
 :::
 
-## Configuración Manual de Respaldo
+## Configuración Manual de Respaldo {#manual-setup-fallback}
 
 Si el asistente no puede escribir en su archivo `wp-config.php` (debido a permisos de archivo o restricciones del servidor), mostrará el código exacto que necesita agregar manualmente:
 
@@ -117,9 +117,9 @@ Si el asistente no puede escribir en su archivo `wp-config.php` (debido a permis
 
 Después de realizar los cambios manuales, actualice la página y el asistente detectará que multisite ya está activo.
 
-## Solución de Problemas
+## Solución de Problemas {#troubleshooting}
 
-### El asistente indica que wp-config.php no es escribible
+### El asistente indica que wp-config.php no es escribible {#the-wizard-says-wp-configphp-is-not-writable}
 
 El proceso del servidor web necesita permiso de escritura en el archivo `wp-config.php`. Puede:
 
@@ -127,7 +127,7 @@ El proceso del servidor web necesita permiso de escritura en el archivo `wp-conf
 - Usar las instrucciones de configuración manual de respaldo proporcionadas por el asistente
 - Pedir ayuda a su proveedor de hosting
 
-### Los sitios no son accesibles después de la configuración (subdominios)
+### Los sitios no son accesibles después de la configuración (subdominios) {#sites-are-not-accessible-after-setup-subdomains}
 
 Si eligió la estructura de subdominio, necesita configurar **DNS comodín** para su dominio. Agregue un registro DNS:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Verifique con su proveedor de hosting si no está seguro de cómo configurarlo.
 
-### Problemas de autenticación después de la configuración
+### Problemas de autenticación después de la configuración {#authentication-issues-after-setup}
 
 Si ha cerrado sesión o experimenta errores de cookies después de la configuración multisite:
 
@@ -147,7 +147,7 @@ Si ha cerrado sesión o experimenta errores de cookies después de la configurac
 2. Inicie sesión nuevamente en `yourdomain.com/wp-login.php`
 3. Si el problema persiste, verifique que su `wp-config.php` no tenga `COOKIE_DOMAIN` establecido en `false` — esto es un problema conocido en instalaciones multisite de subdominio
 
-### Un paso falló durante la instalación
+### Un paso falló durante la instalación {#a-step-failed-during-installation}
 
 Si uno de los pasos de instalación muestra un error:
 

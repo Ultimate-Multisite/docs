@@ -3,13 +3,13 @@ title: A’ togail amalachadh clàraiche gnàthaichte
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# A’ togail amalachadh Registrar gnàthaichte
+# A’ togail amalachadh Registrar gnàthaichte {#building-a-custom-registrar-integration}
 
 Tha tuilleadan Domain Seller a’ cleachdadh pàtran **Integration Registry**. ’S e clas PHP a th’ anns gach registrar a chuireas `Domain_Selling_Capability` an gnìomh agus a chlàraicheas e fhèin tron action hook `wu_domain_seller_register_capabilities`.
 
 Tha an stiùireadh seo a’ sealltainn mar a cheanglas tu registrar gnàthaichte ris.
 
-## An eadar-aghaidh
+## An eadar-aghaidh {#the-interface}
 
 Feumaidh do chlas `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` a chur an gnìomh agus `WP_Ultimo\Integrations\Base_Capability_Module` a leudachadh.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Dòighean roghainneil
+### Dòighean roghainneil {#optional-methods}
 
 Cuir iad seo an gnìomh gus feartan a bharrachd fhuasgladh. Lorgaidh an tuilleadan taic tro `method_exists()`:
 
@@ -81,7 +81,7 @@ Cuir iad seo an gnìomh gus feartan a bharrachd fhuasgladh. Lorgaidh an tuillead
 | `get_epp_code(string $domain_name): array` | Tar-chur àrainn (a-mach) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Tar-chur àrainn (a-steach) |
 
-### Gnàth-riaghailt luach tilleadh
+### Gnàth-riaghailt luach tilleadh {#return-value-convention}
 
 Tillidh a h-uile dòigh array le iuchair `success` co-dhiù:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## A’ clàradh do chomas
+## A’ clàradh do chomas {#registering-your-capability}
 
 Clàraich do chlas leis an action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## A’ cur raointean teisteanais ris an draoidh
+## A’ cur raointean teisteanais ris an draoidh {#adding-credential-fields-to-the-wizard}
 
 Gus leigeil le rianairean teisteanasan a chur a-steach tron draoidh rèiteachaidh, clàraich an t-amalachadh agad:
 
@@ -137,7 +137,7 @@ Tha teisteanasan air an stòradh mar roghainnean lìonraidh a’ cleachdadh IDan
 
 ---
 
-## Hooks airson gnìomhan às dèidh clàraidh
+## Hooks airson gnìomhan às dèidh clàraidh {#hooks-for-post-registration-actions}
 
 Cleachd na gnìomhan seo gus webhooks, solarachadh, brathan, no ùrachaidhean CRM a bhrosnachadh:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logadh
+## Logadh {#logging}
 
 Sgrìobh dhan t-sianal loga sònraichte don t-solaraiche agad a’ cleachdadh `wu_log_add()`:
 

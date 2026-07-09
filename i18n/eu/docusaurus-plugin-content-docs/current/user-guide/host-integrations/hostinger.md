@@ -1,22 +1,22 @@
 ---
 title: Hostinger (hPanel) Integrazioa
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integrazioa
+# Hostinger (hPanel) Integrazioa {#hostinger-hpanel-integration}
 
-## Deskuntzua
+## Deskuntzua {#overview}
 
 Hostinger da web hosting provider bat da, eta hPanel irizkitzeko modern control panel bat du. Ultimate Multisite Hostinger integrazioak Ultimate Multisite eta Hostinger-ren hPanel-aren arteko domainio horren automatikoki sinkronizatzeko gaitasun handia ematen du, zehatz egiten duen domain mapping-ek eta subdomain-ek direktori WordPress admin-etik direla eskaintzen du.
 
-## Aeraguntzak
+## Aeraguntzak {#features}
 
 - hPanel-an addon domain-ek automatikoki sortzea
 - hPanel-an subdomain-ek automatikoki sortzea (subdomain multisite instalazioak dira)
 - Mapping-ek borratzen dituztenean domainioa borratzea
 - hPanel-ren domain management API-arekin erlazionatuta integrazioa
 
-## Aurrekontzak
+## Aurrekontzak {#requirements}
 
 Hostinger integrazioa erabiltzeko, da beharra:
 
@@ -35,9 +35,9 @@ Ondorekin, hauek definizatu ditzakezu:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // API-aren default endpointa
 ```
 
-## Aurrekontu Erdatzeko Instrucciones
+## Aurrekontu Erdatzeko Instrucciones {#setup-instructions}
 
-### 1. Hostinger API Token-ek Sortuatu
+### 1. Hostinger API Token-ek Sortuatu {#1-generate-your-hostinger-api-token}
 
 1. Hostinger kontuan erabiliz eta hPanel-era erabili
 2. **Account Settings** → **API Tokens** funtziara aurkitu
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // API-aren defa
    - Subdomain management (Subdomain-ek eskaintzea)
 6. Sortutako tokena kopiatu eta seguruan saldatu
 
-### 2. Aurrekontu ID-ak Aurkitu
+### 2. Aurrekontu ID-ak Aurkitu {#2-find-your-account-id}
 
 1. hPanel-an, **Account Settings** → **Account Information** funtziara joandu
 2. Aurrekontu ID-ak hori lapenaren da ezarri du
 3. Horra kopiatu eta lekuan saldatu, lehen urtsuaren bitartean
 
-### 3. wp-config.php-ean Konstante-ek Zahartu
+### 3. wp-config.php-ean Konstante-ek Zahartu {#3-add-constants-to-wp-configphp}
 
 Hauko konstante hauek irekizunaren `wp-config.php` filean gehitu:
 
@@ -69,7 +69,7 @@ Hoztingar-ren kontu erabiltzen duen API endpoint batekin erabiltzen ari zete, ho
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Integrazioa aktibatu
+### 4. Integrazioa aktibatu {#4-enable-the-integration}
 
 1. WordPress administrazioan, **Ultimate Multisite > Settings** (Konfigurazioak) funtziara jarraitu.
 2. **Domain Mapping** (Domeinak mapatu) tabera jarraitu.
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. **Hostinger (hPanel)** integrazioa aktibatu duzu.
 5. **Save Changes** (Aldakileak saldatu) klik egin.
 
-## Ondo jakinarazteko erantzuna
+## Ondo jakinarazteko erantzuna {#how-it-works}
 
-### Addon Domains (Addon Domeinak)
+### Addon Domains (Addon Domeinak) {#addon-domains}
 
 Ultimate Multisite-an domain bat mapatzen duenean:
 
@@ -87,7 +87,7 @@ Ultimate Multisite-an domain bat mapatzen duenean:
 2. Domainak zure root direktorioan jarraitu duen bitartean konfiguratzen da
 3. Domain mapping bat abazten denean, integrazioak hPanel-etik addon domaina otomatikoki abazten du
 
-### Subdomains (Subdomainak)
+### Subdomains (Subdomainak) {#subdomains}
 
 Subdomain multisite instalazioetan, leku berri bat sortzen duenean:
 
@@ -95,7 +95,7 @@ Subdomain multisite instalazioetan, leku berri bat sortzen duenean:
 2. Hostinger-ren API-rari eska bat bidaltzen du subdomaina hobetzeko
 3. Subdomainak zure root direktorioan jarraitu duen bitartean konfiguratzen da
 
-## Nota importanteak
+## Nota importanteak {#important-notes}
 
 - Integrazioak zure kontuarekin harreman dituzten bitartean Hostinger-ren REST API-a erabiltzen du
 - Zure API tokenak domain eta subdomain management (eskaintzeko) beharrezko autorizazioak ditu
@@ -103,33 +103,33 @@ Subdomain multisite instalazioetan, leku berri bat sortzen duenean:
 - API eska hauek HTTPS-ean seguragarri bidaltzen dira
 - Zure API tokena seguru jarri eta ez badago publikoan ematu
 
-## Problema irudineteko erantzunak
+## Problema irudineteko erantzunak {#troubleshooting}
 
-### API Connection Issues (API Harreman Problemaak)
+### API Connection Issues (API Harreman Problemaak) {#api-connection-issues}
 
 - Ezin er API tokena zuzena da eta ez hasi duela
 - Ezin kontrolatu da Account ID-ak zuzena diren
 - Segura egin behar da API token-ek domain management-er bitarteko beharrezko permietua ditu
 - Segura egin behar da Hostinger account-ek aktibo diren eta ondo dagoen
 
-### Domain ez hasiturik
+### Domain ez hasiturik {#domain-not-added}
 
 - Ultimate Multisite logs-ek erantzun edo error testu bat izan daitezkeen irudi duzu
 - Ezin kontrolatu da domainak Hostinger account-ekin ez hasiturik
 - Segura egin behar da Hostinger account-ek addon domains-er limitara ez hasi duen
 - Ezuratu da domainak Hostinger nameserver-ek zuzen daiteke
 
-### SSL Zertifikat eragiketa problemaak
+### SSL Zertifikat eragiketa problemaak {#ssl-certificate-issues}
 
 - Integrazioa SSL sertifikatuak emateko jarduera ez du
 - Hostinger normalmenti AutoSSL-ek garbiaren SSL sertifikatuak ematen du
 - SSL sertifikatuak direktu hPanelan **SSL/TLS**-aren ondorioz eskaintzen daiteke
 - Alternatiboa, Hostinger's AutoSSL funtzioa erabiliz Let's Encrypt-ak erabiliz
 
-## Udalak
+## Udalak {#support}
 
 Hostinger integrazioarekin laguntza gehiago behar duzu, honetan referatu egin dezakezu:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

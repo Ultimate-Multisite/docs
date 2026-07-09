@@ -3,11 +3,11 @@ title: Päävalikon yleiskatsaus
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Näkymäpaneelin yleiskatsaus
+# Näkymäpaneelin yleiskatsaus {#dashboard-overview}
 
 Ultimate Multisiteessa on omistettu **Dashboard** -sivu Ultimate Multisite -valikossa, ja se lisää myös widgetteja verkko-dashboardiin (Network Dashboard). Tässä artikkelissa käydään läpi, mitä näet molemmissa paikoissa.
 
-## Verkko-dashboardi (The Network Dashboard)
+## Verkko-dashboardi (The Network Dashboard) {#the-network-dashboard}
 
 Ultimate Multisite sijoittaa hyödyllisiä widgetteja verkko-tason dashboardiin, jota löydät **My Sites → Network Admin → Dashboard** -reitistä.
 
@@ -35,7 +35,7 @@ Tässä on mitä kukin widget tarjoaa:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Vaikka verkko-dashboardi esittää kokonaisvaltaista tietoa verkosta, Ultimate Multisite -dashboardi (Ultimate Multisite -valikon ylätasolla) esittää tietoa itse palvelusta.
 

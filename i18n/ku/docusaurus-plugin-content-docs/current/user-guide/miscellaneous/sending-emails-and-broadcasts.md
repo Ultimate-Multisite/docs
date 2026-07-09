@@ -3,13 +3,13 @@ title: Şandina E-nameyan û Weşanên Giştî
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Şandina E-nameyan û Weşanên Giştî (v2)
+# Şandina E-nameyan û Weşanên Giştî (v2) {#sending-emails-and-broadcasts-v2}
 
 _**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x e.**_
 
 Ultimate Multisite bi taybetmendiyek tê ku dê bihêle hûn bi xerîdarên xwe re têkilî daynin; bi şandina e-nameyek ji bo bikarhênerek armancgirtî an komek bikarhêneran, her weha bi şandina hişyariyan li ser Dashboard-a rêveberiyê ya wan ji bo ragihandinên giştî.
 
-## Bi Weşanên Giştî re hişyariyên rêveberiyê li Dashboard-a xerîdarên xwe zêde bikin
+## Bi Weşanên Giştî re hişyariyên rêveberiyê li Dashboard-a xerîdarên xwe zêde bikin {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Bi bikaranîna taybetmendiya weşana giştî ya Ultimate Multisite, hûn dikarin **hişyariyên rêveberiyê** li Dashboard-a rêveberiyê ya bin-malpera bikarhênerê xwe zêde bikin.
 
@@ -51,7 +51,7 @@ Piştî afirandina peyama xwe, hûn dikarin li bişkoka **Bişîne** bidin.
 
 Û ev hemû ye. Divê hişyariya rêveberiyê tavilê li ser Dashboard-a bikarhênerê we xuya bibe.
 
-## E-nameyan ji xerîdarên xwe re bişînin
+## E-nameyan ji xerîdarên xwe re bişînin {#send-emails-to-your-customers}
 
 Bi bikaranîna taybetmendiya weşana giştî ya Ultimate Multisite, hûn dikarin e-nameyek ji bikarhênerên xwe re bişînin. Vebijarka we heye ku e-nameyê tenê ji bikarhênerên taybet re bişînin an komek bikarhêner a taybet li gorî berhem an plana ku ew di bin wê de abone ne armanc bigirin.
 
@@ -81,11 +81,11 @@ Piştî afirandina peyama xwe, hûn dikarin li bişkoka **Bişîne** bidin.
 
 Û ev qas hêsan e ku hûn bi bikaranîna taybetmendiya weşana giştî e-nameyek ji bikarhênerên dawî yên xwe re bişînin.
 
-## E-nameyên pergalê
+## E-nameyên pergalê {#system-emails}
 
 E-nameyên pergalê di Ultimate Multisite de ew **agahdarkirinên xweber** in ku piştî hin çalakiyan, wekî qeydkirin, dayîn, girêdana domainê û hwd., ji aliyê pergalê ve têne şandin. Ev e-name dikarin ji mîhengên Ultimate Multisite bên guherandin an sererastkirin. Her weha bi taybetmendiyek tê ku dihêle hûn mîhengên heyî ji sazkirineke din a Ultimate Multisite vegerînin û têxin hundir.
 
-### Vegerandin & Têxistin
+### Vegerandin & Têxistin {#resetting--importing}
 
 Guhertoyên nû yên Ultimate Multisite, her weha add-on, dikarin dem bi dem e-nameyên nû tomar bikin û dê bikin.
 
@@ -93,7 +93,7 @@ Ji bo pêşîlêgirtina pevçûn û pirsgirêkên din, **em dê şablonên nû y
 
 Lêbelê, super admin û agent dikarin van e-nameyên nû tomarkirî bi amûra têxistinê têxin hundir. Ew pêvajo dê e-nameyeke nû ya pergalê bi naverok û veavakirina şablona e-nameya nû biafirîne, û dihêle super admin her guherandina ku dixwaze bike an wan wekî xwe bihêle.
 
-#### Çawa e-nameyên pergalê têxin hundir
+#### Çawa e-nameyên pergalê têxin hundir {#how-to-import-system-emails}
 
 Biçin rûpela Mîhengên Ultimate Multisite ya xwe û biçin taba **E-name**.
 
@@ -111,7 +111,7 @@ Paşê, hûn dikarin vebijarkên Têxistina E-nameyan biguherînin da ku bibîni
 
 <!-- Wêneya ekranê tune ye: modala Ji nû ve saz kirin û anîn hundir bi vebijarkên Anîna e-nameyan firehkirî -->
 
-#### Ji nû ve sazkirina e-nameyên pergalê
+#### Ji nû ve sazkirina e-nameyên pergalê {#reseting-system-emails}
 
 Carinan jî, tu dê bibînî ku guhertinên ku te li şablona e-nameyeke diyarkirî kirine êdî ji bo te nayên bikar, û tu dixwazî wê vegerînî **rewşa xwerû**.
 

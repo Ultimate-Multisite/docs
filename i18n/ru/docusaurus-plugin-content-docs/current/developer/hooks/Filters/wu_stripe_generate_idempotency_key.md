@@ -4,11 +4,11 @@ title: Фильтр - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Фильтр: wu_stripe_generate_idempotency_key
+# Фильтр: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
 
 Фильтрует значение idempotency_key, отправляемое с параметрами платежа Stripe.
 
-## Параметры
+## Параметры {#parameters}
 
 | Name | Type | Описание |
 |------|------|----------|
@@ -16,10 +16,10 @@ _i18n_hash: 0868609b646589822aead3d4a5201088
 | $args | `array` | Аргументы, используемые для генерации ключа. |
 | $context | `string` | Контекст, в котором генерируется ключ идемпотентности. |
 
-### С версии
+### С версии {#since}
 
 - 3.5.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/functions/checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/checkout.php#L54) на строке 54

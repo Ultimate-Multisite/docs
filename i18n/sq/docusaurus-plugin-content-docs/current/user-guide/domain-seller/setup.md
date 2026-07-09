@@ -3,11 +3,11 @@ title: Konfigurimi dhe Konfigurimi i Proveuesit
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vërtetues i Domenit: Konfigurimi dhe Providuesi
+# Vërtetues i Domenit: Konfigurimi dhe Providuesi {#domain-seller-setup-and-provider-configuration}
 
 Addon-i "Domain Seller" vjen me një mburesh manual (wizard) që ju udhëheq në çdo hap të nevojshëm. Kjo faqe mbulon rrjedhën e këtij wizard dhe mënyrën se si ta konfigurosh ose rikonfigurosh providuesit pas kësaj.
 
-## Kërkesat
+## Kërkesat {#requirements}
 
 - **Multisite Ultimate** v2.4.12 ose më i ri, aktivizuar në rrjet
 - **PHP** 7.4+
@@ -15,7 +15,7 @@ Addon-i "Domain Seller" vjen me një mburesh manual (wizard) që ju udhëheq në
 
 Wizardi i konfigurimit hapet automatikisht herën e parë që aktivizoni pluginin në rrjet. Gjithashtu, është i disponueshëm çdo kohë nga **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Hapi 1 — Zgjidhni një ofrues
+### Hapi 1 — Zgjidhni një ofrues {#first-run-setup-wizard}
 
 Zgjidhni registrin që dëshironi të lidhni. Opsionet e mbështetura janë:
 
@@ -32,7 +32,7 @@ Zgjidhni registrin që dëshironi të lidhni. Opsionet e mbështetura janë:
 | NameSilo | Jo | Jo |
 | Enom | Po | Jo |
 
-### Hapi 2 — Vendos kredencialet
+### Hapi 2 — Vendos kredencialet {#step-1--choose-a-provider}
 
 Secili ofrues ka fusha të ndryshme për kredenciale:
 
@@ -56,17 +56,17 @@ Secili ofrues ka fusha të ndryshme për kredenciale:
 
 Kontrolloni **mode Sandbox**, nëse është i disponueshëm, për të testuar ndaj mjedisit të provimit të ofrues para se të shkoni në prodhim.
 
-### Hapi 3 — Testoni lidhjen
+### Hapi 3 — Testoni lidhjen {#step-2--enter-credentials}
 
 Klikoni **Test Connection**. Wizard-i dërgon një thirrje të lehtë API për të verifikuar kredencialet dhe lidhjen. Rregulloni çdo problem me kredencialet para se të vazhdoni.
 
-### Hapi 4 — Import TLD-ve
+### Hapi 4 — Import TLD-ve {#step-3--test-the-connection}
 
 Klikoni në **Import TLDs** për të tërhequr të gjitha TLD-të (Top-Level Domains) dhe çmimet me llogari nga providuesi i lidhur. Kjo mbipopullon listën e TLD-ve që përdoret nga produktet e domenit. Importi mund të zgjasë 30–60 sekonda për providuesit me kataloge të mëdha TLD-sh.
 
 TLD-të gjithashtu ri-sinkohen automatikisht një herë në ditë përmes një taski të orari (cron job).
 
-### Hapi 5 — Krijoni produktin e domeneve (domain product)
+### Hapi 5 — Krijoni produktin e domeneve (domain product) {#step-4--import-tlds}
 
 Wizard-i krijon një produkt me domenin fillestar të përgjithshëm (catch-all) me një marzhgjim prej 10%. Mund ta modifikoni këtë produkt menjëherë ose mund ta kaloni dhe të krijoni produkte manualisht në **Ultimate Multisite › Products**.
 
@@ -74,7 +74,7 @@ Shikoni [Produkte dhe Çmimet e Domenit](domain-products) për udhëzimin e plot
 
 ---
 
-## Rikonfigurimi i një ofrues (provider)
+## Rikonfigurimi i një ofrues (provider) {#step-5--create-a-domain-product}
 
 Shkoni te **Network Admin › Ultimate Multisite › Settings › Domain Seller** (ose klikoni në **Settings** në listën e pluginëve).
 
@@ -90,17 +90,17 @@ Faqja e cilësimeve përmban:
 
 - **Konfiguroni providerët** — hapet Wizard i Integrime për të shtuar ose rikonfiguruar providerë.
 
-### Shtimi i një provideri të dytë
+### Shtimi i një provideri të dytë {#reconfiguring-a-provider}
 
 Klikoni në **Configure providers** dhe ekzekutoni përsëri wizardin për regjistrin e ri. Mund të keni disa provider konfiguruar njëkohësisht. Vendosni çdo produkt domen te një provider specifik, ose lëreni në default.
 
-### Sinkronizimi manual i TLD-ve
+### Sinkronizimi manual i TLD-ve {#adding-a-second-provider}
 
 Në faqen e cilësimeve, klikoni në **Sync TLDs** (Sinkronizoni TLD-t) pranë çdo ofrues të konfiguruar për të të tërhequr çmimet më të fundit. Kjo është e dobishme pasi një ofrues përditësoj çmimet wholesale ose shton TLD-ve të rinj.
 
 ---
 
-## Logs
+## Logs {#syncing-tlds-manually}
 
 Çdo ofrues shkruan në kanalin e tyre të logut. Logjet janë të shqyera te **Network Admin › Ultimate Multisite › Logs**:
 
@@ -120,7 +120,7 @@ Në faqen e cilësimeve, klikoni në **Sync TLDs** (Sinkronizoni TLD-t) pranë �
 | `domain-seller-namesilo` | Aktivitet i thjeshtë nga API-ja e NameSilo |
 | `domain-seller-enom` | Aktivitet i thjeshtë nga API-ja e Enom |
 
-## Shënim për aftësitë e ofrues
+## Shënim për aftësitë e ofrues {#logs}
 
 Nuk gjithçka nga API i një registri ekspozon të njëjtat operacione. Addon (përdoruesi shtesë) shfaq operacionet që nuk mbështeten me gabime të qarta për administratorin, në vend që të dështojë pa u njoftuar.
 

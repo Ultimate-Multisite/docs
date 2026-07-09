@@ -3,19 +3,19 @@ title: An t-aonadh Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Setadh an Gaeatrach Stripe (v2)
+# Setadh an Gaeatrach Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTE CRUCIAL: Tá an curte seo ag cur ábhar Ultimate Multisite version 2.x.**_
 
 Is féidir leat activaithe go leat na céad chéim de chuid meicmeais de chuid fáilteacht ar na stocht de fáilteacht: Stripe, Stripe Checkout, PayPal agus Manual. I an curte seo, beidh munaí linn a fheiceáil conas a bheith ag teacht ar **Stripe**.
 
-## Fáilteadh le Stripe
+## Fáilteadh le Stripe {#enabling-stripe}
 
 Leat chun Stripe a bheith ag fáilteacht mar gaeatrach de chuid meicmeais ar do ngrú, cur isteach i **Ultimate Multisite > Settings > Payments** agus cur an t-toggle seo ag teacht le chéile le **Stripe** nó **Stripe Checkout** ar na seachtain Activating Payment Gateways.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Dara miontáil a chur i gceart card leat ag an t-checkout.
 
@@ -47,7 +47,7 @@ Copáil an chuid as an **Publishable key** agus an **Secret key**, ó chuid **To
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Déanáil an Stripe Webhook
+## Déanáil an Stripe Webhook {#setting-up-stripe-webhook}
 
 Ag curtiaid Stripe webhook events a bheith ag curtuim Ultimate Multisite ag aon am áit a tháir ar **do account stripe**.
 

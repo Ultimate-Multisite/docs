@@ -3,13 +3,13 @@ title: Entegrasyon Kılavuzu
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Entegrasyon Kılavuzu
+# Entegrasyon Kılavuzu {#integration-guide}
 
 Bu kılavuz, harici hizmetlere bağlanma, özel ödeme ağ geçitleri oluşturma ve webhook’ları işleme dahil olmak üzere Ultimate Multisite ile yaygın entegrasyon kalıplarını kapsar.
 
 İzole kiracı altyapısı için egemen kiracı bootstrap, geçiş doğrulama, SSO ve kaldırma rehberliği amacıyla [Multi-Tenancy Entegrasyonu](./multi-tenancy) bölümüne bakın.
 
-## CRM Entegrasyonu
+## CRM Entegrasyonu {#crm-integration}
 
 Yeni müşteriler kaydolduğunda müşteri verilerini CRM’inize senkronize edin:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics Entegrasyonu
+## Analytics Entegrasyonu {#analytics-integration}
 
 Müşteri yaşam döngüsü boyunca temel iş olaylarını takip edin:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 - [Özel Gateway Geliştirme](./custom-gateway) — Kendi ödeme ağ geçidinizi oluşturun
 - [Webhook İşleme](./webhooks) — Özel webhook endpoint’leri oluşturun

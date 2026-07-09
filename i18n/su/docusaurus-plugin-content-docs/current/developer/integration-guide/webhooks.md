@@ -3,11 +3,11 @@ title: Nanganan Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ngatur Webhook
+# Ngatur Webhook {#webhook-handling}
 
 Jieun titik panarima webhook kustom pikeun narima kajadian ti layanan éksternal jeung nyingkronkeun data jeung Ultimate Multisite.
 
-## Titik Panarima Webhook Kustom
+## Titik Panarima Webhook Kustom {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Pertimbangan Kaamanan
+## Pertimbangan Kaamanan {#security-considerations}
 
 - Salawasna pariksa tanda tangan webhook maké HMAC atawa rusiah babarengan
 - Paké `permission_callback` dina rute REST anjeun — ulah kungsi nyetél éta jadi `__return_true` dina produksi

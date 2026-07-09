@@ -3,11 +3,11 @@ title: Gutunganya Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gutunganya Webhook
+# Gutunganya Webhook {#webhook-handling}
 
 Kora ahakirwa Webhook hihariye kugira ngo wakire ibyabaye bivuye muri serivisi zo hanze kandi uhuze amakuru na Ultimate Multisite.
 
-## Ahakirwa Webhook hihariye
+## Ahakirwa Webhook hihariye {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Ibyo kwitondera ku mutekano
+## Ibyo kwitondera ku mutekano {#security-considerations}
 
 - Jya ugenzura buri gihe imikono ya webhook ukoresheje HMAC cyangwa ibanga musangiye
 - Koresha `permission_callback` ku nzira yawe ya REST — ntuzigere uyishyira kuri `__return_true` mu ikoreshwa nyaryo

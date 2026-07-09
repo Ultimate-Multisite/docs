@@ -3,27 +3,27 @@ title: Ukuthumela ngaphandle iSayithi
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Ukuthumela Ngaphandle Isayithi
+# Ukuthumela Ngaphandle Isayithi {#site-export}
 
 Iphepha lomlawuli le-**Ukuthumela Ngaphandle Isayithi** livumela abalawuli benethiwekhi ukuba bapakishe isayithi enye, okanye inethiwekhi yonke, ibe nguvimba onokukhutshelwa ukuze kufuduswe, kugcinwe ikopi yogcino, okanye kudluliselwe umsebenzi.
 
-## Ukuthumela ngaphandle isayithi enye
+## Ukuthumela ngaphandle isayithi enye {#exporting-one-site}
 
 Yiya ku-**Ultimate Multisite > Ukuthumela Ngaphandle Isayithi** uze ukhethe **Yenza Ukuthumela Ngaphandle Isayithi okutsha**. Khetha isayithi encinane ofuna ukuyithumela ngaphandle, emva koko ukhethe ukuba uvimba kufuneka uquke okulayishiweyo, izongezelelo, kunye nemixholo na.
 
 Xa ukuthumela ngaphandle kugqityiwe, khuphela i-ZIP kuluhlu lwe-**Okuthunyelwe Ngaphandle Okukhoyo**. Ii-ZIP zokuthumela ngaphandle ngoku ziquka i-`index.php` eziqalisa ngokwayo kunye ne-`readme.txt`, ngoko uvimba unokulayishwa kumamkeli omtsha uze uqaliswe ngaphandle kokufaka kuqala isongezelelo sokungenisa esahlukileyo.
 
-## Ukuthumela ngaphandle inethiwekhi yonke
+## Ukuthumela ngaphandle inethiwekhi yonke {#exporting-the-whole-network}
 
 Sebenzisa **Ukuthumela Ngaphandle Inethiwekhi** kwiphepha lokuthumela ngaphandle isayithi xa ufuna uvimba omnye oqulethe zonke iisayithi ezincinane kwinethiwekhi. Oku kuluncedo phambi kokufuduswa kwabamkeli, iimvavanyo zokubuyisela emva kwentlekele, okanye ukwakhiwa kwakhona kwesiteji apho isayithi nganye encinane kufuneka ihambe kunye nezinye.
 
 Kuba ukuthumela ngaphandle inethiwekhi kunokuba kukhulu kakhulu kunokuthumela ngaphandle isayithi enye, kuqhube ngexesha apho ukugcwala kuphantsi uze uqinisekise ukuba ugcino ekujoliswe kulo lunendawo eyaneleyo yasimahla yokulayishiweyo, izongezelelo, imixholo, kunye neefayile ze-ZIP ezenziweyo.
 
-### Iipakethe Zokungenisa Inethiwekhi
+### Iipakethe Zokungenisa Inethiwekhi {#network-import-bundles}
 
 Ukuqala nge-Ultimate Multisite 2.12.0, i-Site Exporter inokuvelisa **iipakethe zokungenisa inethiwekhi** — oovimba abakhethekileyo abayilelwe ukubuyisela iisayithi kwinqanaba lenethiwekhi yonke ngendlela elula. Ipakethe yokungenisa inethiwekhi iqulethe zonke iifayile eziyimfuneko kunye nemetadata yokubuyisela iisayithi ezininzi kufakelo lwenethiwekhi entsha.
 
-#### Ukuvelisa Ipakethe Yokungenisa Inethiwekhi
+#### Ukuvelisa Ipakethe Yokungenisa Inethiwekhi {#generating-a-network-import-bundle}
 
 1. Yiya ku-**Ultimate Multisite > Ukuthumela Ngaphandle Isayithi**
 2. Cofa **Yenza Ukuthumela Ngaphandle Inethiwekhi okutsha**
@@ -32,7 +32,7 @@ Ukuqala nge-Ultimate Multisite 2.12.0, i-Site Exporter inokuvelisa **iipakethe z
 5. Cofa **Yenza**
 6. Khuphela i-ZIP yepakethe kuluhlu lwe-**Okuthunyelwe Ngaphandle Okukhoyo**
 
-#### Ukubuyisela usuka KwiPakethe Yokungenisa Inethiwekhi
+#### Ukubuyisela usuka KwiPakethe Yokungenisa Inethiwekhi {#restoring-from-a-network-import-bundle}
 
 Ukubuyisela iisayithi usuka kwipakethe yokungenisa inethiwekhi:
 
@@ -52,7 +52,7 @@ Iipakethe zokungenisa inethiwekhi zigcina:
 - Okulayishiweyo kwemidiya (ukuba kuqukiwe kwipakethe)
 - Iitheyibhile zedatabase ezenzelwe wena kunye nedatha
 
-## Ukufaka i-ZIP yokuthumela ngaphandle eziqalisa ngokwayo
+## Ukufaka i-ZIP yokuthumela ngaphandle eziqalisa ngokwayo {#installing-a-self-booting-export-zip}
 
 Ukubuyisela i-ZIP eziqalisa ngokwayo kumamkeli omtsha:
 

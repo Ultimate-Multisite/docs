@@ -3,7 +3,7 @@ title: การผสานการทำงานกับ Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# การผสาน Ultimate Multisite กับ Zapier
+# การผสาน Ultimate Multisite กับ Zapier {#integrating-ultimate-multisite-with-zapier}
 
 ในหนึ่งในบทความ เราได้พูดถึง [Webhooks](webhooks.md) และวิธีที่สามารถใช้เพื่อผสานกับแอปพลิเคชันของบุคคลที่สามได้
 
@@ -15,7 +15,7 @@ Zapier มีการผสานกับแอปมากกว่า 5000+ 
 
 สิ่งนี้เป็นไปได้เพราะ **Triggers ของ Ultimate Multisite Zapier** และ Actions ขับเคลื่อนโดย [REST API](https://developer.ultimatemultisite.com/api/docs/)
 
-## วิธีเริ่มต้น
+## วิธีเริ่มต้น {#how-to-start}
 
 ก่อนอื่น ให้ค้นหา Ultimate Multisite ในรายการแอปของ Zapier หรือคุณสามารถคลิก [ลิงก์นี้](https://zapier.com/apps/wp-ultimo/integrations) ได้
 
@@ -51,7 +51,7 @@ Zapier มีการผสานกับแอปมากกว่า 5000+ 
 
 คลิกปุ่ม **Yes, Continue** เพื่อไปยังขั้นตอนถัดไป หากทุกอย่างทำงานได้ คุณควรได้รับการต้อนรับด้วย Account ที่เชื่อมต่อใหม่ของคุณ! คลิก **Continue** เพื่อสร้าง Trigger ใหม่
 
-## วิธีสร้าง Trigger ใหม่
+## วิธีสร้าง Trigger ใหม่ {#how-to-create-a-new-trigger}
 
 ตอนนี้ Account ของคุณเชื่อมต่อแล้ว คุณจะเห็นเหตุการณ์ที่มีให้ใช้ มาเลือกเหตุการณ์ **payment_received** สำหรับบทช่วยสอนนี้
 
@@ -67,7 +67,7 @@ Zapier มีการผสานกับแอปมากกว่า 5000+ 
 
 ในบทช่วยสอนของเรา การทดสอบ **เสร็จสมบูรณ์สำเร็จ** และส่งคืนข้อมูลตัวอย่าง payload ข้อมูลตัวอย่างนี้จะเป็นประโยชน์ในการช่วยแนะนำเราในขณะที่สร้าง Actions ตอนนี้ Trigger ของคุณถูกสร้างแล้วและพร้อมเชื่อมต่อกับแอปพลิเคชันอื่น ๆ
 
-## วิธีสร้าง Actions
+## วิธีสร้าง Actions {#how-to-create-actions}
 
 Actions ใช้ข้อมูลจาก Triggers อื่น ๆ เพื่อสร้างรายการใหม่ในเครือข่ายของคุณ
 
@@ -79,7 +79,7 @@ Actions ใช้ข้อมูลจาก Triggers อื่น ๆ เพื
 
 ![การเลือกการยืนยันตัวตนสำหรับ Action ของ Zapier](/img/admin/webhooks-list.png)
 
-### การตั้งค่า Action
+### การตั้งค่า Action {#setting-up-the-action}
 
 นี่คือ **ขั้นตอนหลักของ Action** และตรงนี้สิ่งต่าง ๆ จะแตกต่างออกไปเล็กน้อย ข้อมูลแรกที่คุณจะเลือกคือ **Item** Item คือ **โมเดลข้อมูล** ของเครือข่ายของคุณ เช่น **Customers, Payments, Sites, Emails** และอื่น ๆ
 

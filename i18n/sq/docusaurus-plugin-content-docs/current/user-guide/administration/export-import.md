@@ -3,17 +3,17 @@ title: Eksport dhe Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksportimi dhe Importi
+# Eksportimi dhe Importi {#export--import}
 
 Ultimate Multisite 2.9.0 shtoi një mjet të vetëm për **Export & Import** (Eksport dhe Import) në menynë **Tools > Export & Import**. Përdorni këtë kur keni nevojë ta paketoni një site WordPress si një file ZIP, ta rikuarkoni atë ZIP ose ta transferoni një site midis instalimeve të pajtueshme Ultimate Multisite dhe single-site WordPress.
 
-## Lejeimet e nevojshme
+## Lejeimet e nevojshme {#required-permissions}
 
 Duhet të të hysh me llogarinë e administratorit që ka akses në menynë **Tools** (Mbrojtja/Marrëdhënie) të WordPress-it në faqen që po ekzheruar ose importuar. Në një rrjet multisite, përdor një llogari administratorje rrjeti kur ekzheron ose importon subsite nga mjetet e Ultimate Multisite me nivel rrjeti.
 
 Shkarkimet në ZIP shërpen përmes një pikat (endpoint) të autentikuar për shkarkim, kështu që ruani sesionin e adminit aktiv derisa shkarkimi të përfundojë dhe mos ndaqeni URL-t e gjeneruar të shkarkimit publik.
 
-## Eksportimi i një saiti në ZIP
+## Eksportimi i një saiti në ZIP {#exporting-a-site-to-a-zip}
 
 1. Në adminin e WordPress për faqen që dëshironi të kopjoni, shkoni te **Tools > Export & Import** (Mbrojtja > Eksportimi dhe Importi).
 2. Hapni zonën e eksportimit dhe zgjidhni faqen që dëshironi të paketoni.
@@ -25,7 +25,7 @@ Shkarkimet në ZIP shërpen përmes një pikat (endpoint) të autentikuar për s
 
 Ruani ZIP-in në një vend të sigurt. Ai mund të përmbajë përmbajtjen e faqes, cilësimet, skedarët multimedia dhe asetet e kodit të zgjedhur.
 
-## Çfarë përfshin ekzheri
+## Çfarë përfshin ekzheri {#what-the-export-includes}
 
 Një ZIP i ekzherimit mund të përfshijë:
 
@@ -37,11 +37,11 @@ Importoni metadatan e përdorur nga mjeti i Export & Import për të rikuperuar 
 
 Madhësia e saktë e ZIP-it varet nga sasia e medieve, pluginet dhe temat e zgjedhura, si dhe madhësia e tabelave të bazës së të dhënave të faqes.
 
-## Importimi i një faqeje nga një ZIP
+## Importimi i një faqeje nga një ZIP {#importing-a-site-from-a-zip}
 
 Ky udhëzues ju ndihmon të keni informacion se si ta importoni një faqe (site) në WordPress duke përdorur një arkiv ZIP. Kjo është mënyra më e shpejtë për të transferuar faqen tuaj.
 
-### Përgatitja
+### Përgatitja {#limitations-and-compatibility-notes}
 Para se të filloni, sigurohuni që:
 1.  Keni një kopje të plotë të faqeve të vendosura në ZIP (për shembull `site-backup.zip`).
 2.  Keni akses në panelin e kontrollit të WordPress dhe bazën e të dhënave MySQL.

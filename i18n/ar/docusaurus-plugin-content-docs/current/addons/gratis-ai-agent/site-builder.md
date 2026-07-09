@@ -3,15 +3,15 @@ title: تنسيق باني المواقع الإصدار 2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# تنسيق منشئ المواقع v2
+# تنسيق منشئ المواقع v2 {#site-builder-orchestration-v2}
 
 يُعد Site Builder Orchestration v2 (الذي تم تقديمه في Gratis AI Agent v1.4.0) المحرك الذي يشغل عملية إنشاء المواقع متعددة الخطوات. عندما تطلب من الوكيل "بناء موقع مطعم" أو "إنشاء معرض أعمال مع مدونة"، يقوم المنسق بتفكيك هذا الهدف العام إلى **خطة** منظمة، ويكتشف الـ plugins اللازمة لتنفيذها، وينفذ كل خطوة بالتتابع، ويتتبع التقدم، ويستعيد العمل تلقائيًا في حال حدوث أخطاء.
 
 ---
 
-## كيف يعمل
+## كيف يعمل {#how-it-works}
 
-### 1. إنشاء الخطة (Plan Generation)
+### 1. إنشاء الخطة (Plan Generation) {#1-plan-generation}
 
 عندما يتلقى الوكيل تعليمات لبناء موقع، فإنه يستدعي القدرة `create_site_plan` لإنتاج **خطة موقع** بصيغة JSON. تصف الخطة ما يلي:
 
@@ -61,7 +61,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 }
 ```
 
-### 2. اكتشاف الـ Plugins
+### 2. اكتشاف الـ Plugins {#2-plugin-discovery}
 
 قبل بدء التنفيذ، يقوم المنسق بفحص `plugin_requirements` الموجودة في الخطة ويتحقق من الـ plugins النشطة بالفعل. بالنسبة للـ plugins المفقودة، فإنه:
 
@@ -71,7 +71,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 
 فشل اكتشاف الـ plugins ليس أمرًا حاسمًا — يقوم المنسق بوضع علامة على الخطوات المتأثرة بأنها `skipped` (تخطي) ويستمر ببقية الخطة.
 
-### 3. تنفيذ الخطة (Plan Execution)
+### 3. تنفيذ الخطة (Plan Execution) {#3-plan-execution}
 
 يستدعي المنسق `execute_site_plan` باستخدام معرف الخطة (plan ID). يتم التنفيذ مرحلة تلو الأخرى، وخطوة تلو الأخرى:
 
@@ -79,7 +79,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 - **الخطوات المتوازية (Parallel steps)**: الخطوات ضمن نفس المرحلة التي لا توجد بينها تبعيات متبادلة يتم إرسالها بالتزامن عند تعيين علامة `parallel`.
 - **مهلة الخطوة (Step timeout)**: لكل خطوة مهلة فردية (الافتراضي: إعداد `Ability Timeout`). يتم وضع علامة على الخطوة التي انتهت مهلتها بأنها `failed` (فاشلة) ويستمر التخطيط.
 
-### 4. تتبع التقدم (Progress Tracking)
+### 4. تتبع التقدم (Progress Tracking) {#4-progress-tracking}
 
 استدعِ `get_plan_progress` في أي وقت للتحقق من حالة التنفيذ:
 
@@ -104,7 +104,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. استعادة الأخطاء (Error Recovery)
+### 5. استعادة الأخطاء (Error Recovery) {#5-error-recovery}
 
 عندما تفشل خطوة ما، يتحقق المنسق من وجود خطوة **احتياطية (fallback)** محددة في الخطة:
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## قدرات خطة الموقع (Site Plan Abilities)
+## قدرات خطة الموقع (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 تُنشئ خطة موقع منظمة من وصف هدف بلغة طبيعية.
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 يبدأ بتنفيذ خطة موقع تم إنشاؤها مسبقًا.
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 يعيد الحالة الحالية لتنفيذ خطة الموقع.
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 يحل يدويًا خطوة فاشلة ويستأنف تنفيذ الخطة من الخطوة التالية. استخدم هذا عندما لم يكن الاسترداد التلقائي ممكنًا وترغب في التدخل.
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## مقارنة v1 و v2
+## مقارنة v1 و v2 {#comparing-v1-and-v2}
 
 | الميزة (Feature) | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## أوامر خطة WP-CLI
+## أوامر خطة WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 تُنشئ خطة موقع من وصف هدف.
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 ينفذ خطة تم إنشاؤها مسبقًا.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 يعرض التقدم الحالي لخطة قيد التنفيذ أو المكتملة.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 يسرد جميع خطط المواقع (المنتظرة، قيد التقدم، والمكتملة).
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 يعيد تعيين خطة فاشلة إلى حالة `pending` (معلقة) حتى يمكن إعادة تنفيذها من البداية.
 

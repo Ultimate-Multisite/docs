@@ -3,7 +3,7 @@ title: Ukukhangela nokutshintsha okuzenzekelayo kwiitempleyithi zesayithi
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Ukukhangela nokuTshintsha ngokuZenzekelayo kwiiTemplate zeSayithi (v2)
+# Ukukhangela nokuTshintsha ngokuZenzekelayo kwiiTemplate zeSayithi (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Esi sifundo sifuna WP UItimo inguqulelo 2.x.**_
 
@@ -17,7 +17,7 @@ Umthengi wakho uya kuba nako ukugcwalisa loo mhlaba ngexesha lobhaliso.
 
 Ultimate Multisite iza kutshintsha izibambi-ndawo ngedatha enikwe ngumthengi ngokuzenzekelayo.
 
-## **Ukusombulula ingxaki "ye-template egcwele izibambi-ndawo"**
+## **Ukusombulula ingxaki "ye-template egcwele izibambi-ndawo"** {#solving-the-template-full-of-placeholders-problem}
 
 Konke oko kuhle, kodwa siyadibana nengxaki embi: ngoku ii-template zethu zesayithi - ezinokutyelelwa ngabathengi bethu - zigcwele izibambi-ndawo ezimbi ezingachazi nto ingako.
 

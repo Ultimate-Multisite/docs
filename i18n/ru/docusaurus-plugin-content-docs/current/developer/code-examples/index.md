@@ -3,11 +3,11 @@ title: Расширенные примеры кода
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Продвинутые примеры кода
+# Продвинутые примеры кода {#advanced-code-examples}
 
 Эти примеры демонстрируют продвинутые шаблоны интеграции с Ultimate Multisite.
 
-## Динамический механизм ценообразования
+## Динамический механизм ценообразования {#dynamic-pricing-engine}
 
 Механизм ценообразования на основе правил, который применяет скидки за объем, лояльность и сезонные скидки:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Продвинутая подготовка сайтов
+## Продвинутая подготовка сайтов {#advanced-site-provisioning}
 
 Автоматически настраивайте новые сайты с плагинами, SSL, CDN, резервными копиями и мониторингом на основе возможностей плана:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Пользовательская система ограничений
+## Пользовательская система ограничений {#custom-limitations-system}
 
 Отслеживайте и применяйте ограничения ресурсов с предупреждениями об использовании:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Атомарный счетчик BerlinDB с `increment_item()`
+## Атомарный счетчик BerlinDB с `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 добавила метод `increment_item()` в класс BerlinDB `Query`. Используйте его для выполнения безопасных атомарных инкрементов числовых столбцов без гонок read-modify-write — это полезно для счетчиков, квот использования и проверок rate-limiting, выполняющихся при параллельных запросах.
 
-### Сигнатура метода
+### Сигнатура метода {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 добавила метод `increment_item()` в кл
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Базовое использование
+### Базовое использование {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Отслеживание использования API для каждого членства
+### Отслеживание использования API для каждого членства {#tracking-api-usage-per-membership}
 
 Практический шаблон для применения лимитов скорости API для каждого членства:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Почему `increment_item()`, а не `update_item()`
+### Почему `increment_item()`, а не `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Наивный подход read-modify-write небезопасен при параллельных запросах:
 

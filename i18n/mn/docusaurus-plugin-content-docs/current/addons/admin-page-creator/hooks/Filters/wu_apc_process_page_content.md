@@ -4,11 +4,11 @@ title: Шүүлтүүр - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Шүүлтүүр: wu_apc_process_page_content
+# Шүүлтүүр: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Хөгжүүлэгчдэд эцсийн агуулгыг өөрчлөх боломж олгоно
 
-## Параметрүүд
+## Параметрүүд {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Placeholder-уудыг агуулсан массив. |
 | $placeholder_count | `int` | Олдсон placeholder-уудын тоо. |
 
-### Хойш
+### Хойш {#since}
 
 - 1.4.0
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46)-д 46-р мөрөнд тодорхойлогдсон
 
 
-## Буцаах утга
+## Буцаах утга {#returns}
 Өөрчилсний дараах агуулга.

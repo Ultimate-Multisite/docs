@@ -3,11 +3,11 @@ title: ئاچقۇچىلار ھۆججەتنامىسى
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ئىجادكار ھۆججەتلىرى
+# ئىجادكار ھۆججەتلىرى {#developer-documentation}
 
 بۇ قوللانما ئىجادكارلارغا Ultimate Multisite بىلەن بىرلەشتۈرۈش، كېڭەيتىش ياكى ئۇنىڭ ئۈچۈن قوشۇمچە plugin لارنى تەرەققىي قىلدۇرۇشقا كېرەكلىك ھەممە نەرسىنى تەمىنلەيدۇ. Ultimate Multisite بىر WordPress Multisite تورىنى توربېكەت-مۇلازىمەت (WaaS) سۇپىسىغا ئايلاندۇرىدۇ.
 
-## نېمىلەر بار
+## نېمىلەر بار {#whats-available}
 
 - **[REST API](./rest-api/overview)** — API ئاچقۇچى ئارقىلىق دەلىللەش بىلەن بارلىق ئوبيېكتلار (خېرىدارلار، توربېكەتلەر، ئەزالىقلار، چىقىملار، مەھسۇلاتلار، دومېنلار) ئۈچۈن تولۇق CRUD مەشغۇلاتلىرى
 - **[Hooks Reference](./hooks/guide)** — ھاياتلىق دەۋرى ۋەقەلىرى ۋە خاسلاشتۇرۇش ئۈچۈن 200+ action hook ۋە 280+ filter hook
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Code Examples](./code-examples/)** — دىنامىك باھا بېكىتىش، توربېكەت تەمىنلەش، خاس چەكلىمىلەر ۋە كۆپ-gateway بىر تەرەپ قىلىش ئۈچۈن ئىلغار قېلىپلار
 - **[Addon Development](./addon-development/getting-started)** — قوشۇمچە plugin لارنى قۇرۇش ئۈچۈن قۇرۇلمىلىق رامكا
 
-## تەلەپلەر
+## تەلەپلەر {#requirements}
 
 - WordPress Multisite ئورنىتىلغان بولۇشى
 - PHP 7.4 ياكى ئۇنىڭدىن يۇقىرى
 - Ultimate Multisite plugin ئاكتىپلاشتۇرۇلغان بولۇشى
 
-## Composer / Bedrock ئورنىتىش
+## Composer / Bedrock ئورنىتىش {#composer--bedrock-installation}
 
 Ultimate Multisite [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) دا `ultimate-multisite/ultimate-multisite` سۈپىتىدە بار. بۇ [Bedrock](https://roots.io/bedrock/) ئاساسىدىكى WordPress تەڭشەكلىرى ۋە باشقا Composer ئارقىلىق باشقۇرۇلىدىغان مۇھىتلار ئۈچۈن تەۋسىيە قىلىنغان ئورنىتىش ئۇسۇلىدۇر.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## تېز باشلاش
+## تېز باشلاش {#quick-start}
 
-### REST API نى ئىشلىتىش
+### REST API نى ئىشلىتىش {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### ۋەقەلەرگە Hook قىلىش
+### ۋەقەلەرگە Hook قىلىش {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Addon قۇرۇش
+### Addon قۇرۇش {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

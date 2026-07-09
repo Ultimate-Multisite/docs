@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
 
-# Multi-Network
+# Multi-Network {#multi-network}
 
 Ultimate Multisite: Multinetwork gehigarriak zure Ultimate Multisite plataforma multinetwork funtzionalitate indartsuarekin zabaltzen du. Gehigarri honek zure bezeroei WordPress multisite sare osoak erosteko eta kudeatzeko aukera ematen die, ez banakako guneak bakarrik.
 
-## Ezaugarri nagusiak
+## Ezaugarri nagusiak {#key-features}
 
 * **Sare-hornikuntza**: Sortu eta konfiguratu automatikoki WordPress multisite sare osoak zure bezeroentzat
 * **Sare-txantiloiak**: Utzi bezeroei aurrez eraikitako sare-txantiloi bat arakatzen, aurreikusten eta aukeratzen erregistratu aurretik
@@ -21,31 +21,31 @@ Ultimate Multisite: Multinetwork gehigarriak zure Ultimate Multisite plataforma 
 * **Arkitektura eskalagarria**: Kudeatu sare anitz modu eraginkorrean, baliabideen esleipen optimizatuarekin
 * **Integrazioa**: Ultimate Multisite-ren harpidetza- eta fakturazio-sistemekin modu jarraituan integratzen da
 
-## Erabilera-kasuak
+## Erabilera-kasuak {#use-cases}
 
 * **White Label ostatatzea**: Eman bezeroei beren marka propioa duten multisite sareak
 * **Agentzientzako irtenbideak**: Eman agentziei bezero-sare anitz plataforma bakar batetik kudeatzeko aukera
 * **Enpresa-inplementazioak**: Babestu eskakizun konplexuko sare anitzeko erakunde handiak
 * **Hezkuntza-plataformak**: Sortu sare bereiziak eskola edo sail desberdinetarako
 
-## Eskakizunak
+## Eskakizunak {#requirements}
 
 * Ultimate Multisite 2.0.0 edo berriagoa
 * WordPress Multisite instalazioa
 * PHP 7.4 edo berriagoa
 * MySQL 5.6 edo berriagoa
 
-## Instalazioa
+## Instalazioa {#installation}
 
 1. Kargatu plugin-fitxategiak `/wp-content/plugins/ultimate-multisite-multinetwork` direktoriora
 2. Aktibatu plugin-a WordPress-eko 'Plugins' pantailaren bidez
 3. Konfiguratu multinetwork ezarpenak Ultimate Multisite → Settings bidez
 
-## Sare-txantiloiak
+## Sare-txantiloiak {#network-templates}
 
 1.3.0 bertsioak txantiloiak aurkitzeko eta hautatzeko fluxu bat gehitzen du sare berriak erosten dituzten bezeroentzat. Erabili sare-txantiloiak bezero-sare berri bakoitza prestatutako egitura, diseinu, eduki-liburutegi edo sektore zehatz baterako konfigurazio batetik hastea nahi duzunean.
 
-### Txantiloien aurreikustailea
+### Txantiloien aurreikustailea {#template-previewer}
 
 Sare-txantiloien aurreikustaileak bezeroei eskuragarri dauden txantiloiak arakatzeko aukera ematen die checkout aurretik. Txantiloi bakoitza zuzeneko aurreikuspen-panel batean ireki daiteke, bezeroek diseinuak eta edukia alderatu ahal izan ditzaten sare bat erosi aurretik.
 
@@ -57,7 +57,7 @@ Erabili aurreikustailea bezeroei laguntzeko:
 
 Mantendu txantiloien izenak eta deskribapenak bezeroentzat ulerterraz. Aurreikustailea erabilgarriena da bezeroek aurreikusitako erabilera-kasua ulertzen dutenean, hala nola agentzia-sareak, eskola-sareak, frankizia-sareak edo white-label ostatatze-sortak.
 
-### Txantiloi-hautatzailea checkout-ean
+### Txantiloi-hautatzailea checkout-ean {#template-picker-at-checkout}
 
 Txantiloi-hautatzailea erregistratzeko checkout fluxuan gehitu daiteke eremu gisa. Konfiguratuta dagoenean, bezeroek nahi duten sare-txantiloia hautatzen dute checkout-ean, eta hautatutako txantiloia erabiltzen da haien sare berria hornitzen denean.
 
@@ -70,7 +70,7 @@ Hautatzailea checkout fluxu batean erabiltzeko:
 
 Checkout fluxu batek sare-produktu bakarra eskaintzen badu ere, hautatzailea erabilgarria izan daiteke onboarding gidatuko urrats gisa. Plan anitzeko funneletarako, erakutsi soilik hautatutako produktuarekin edo planarekin bateragarriak diren txantiloiak.
 
-## Sare arteko Magic Link SSO
+## Sare arteko Magic Link SSO {#cross-network-magic-link-sso}
 
 Sare arteko magic link SSO-k bezeroei beren kontu nagusiko eremuaren eta azpisareen artean mugitzeko aukera ematen die berriro eskuz saioa hasi beharrik gabe. Bezero batek sare arteko sarbide-esteka bat jarraitzen duenean, Ultimate Multisite-k denbora-mugatutako magic link bat sortzen du eta bezeroa helmugako sarean autentifikatzen du.
 
@@ -85,16 +85,16 @@ Administratzailearen egiaztapen-zerrenda:
 
 Magic link-ak saioa hasteko estekatzat hartu behar dira. Bezeroen sarbide jarraiturako diseinatuta daude, eta ez lirateke birbidali edo berrerabili behar aurreikusitako saiotik kanpo.
 
-## Maiz egiten diren galderak
+## Maiz egiten diren galderak {#frequently-asked-questions}
 
-### Zer da multinetwork?
+### Zer da multinetwork? {#what-is-multinetwork}
 
 Multinetwork WordPress-en ezaugarri bat da, WordPress instalazio bakar batean multisite sare independente anitz exekutatzeko aukera ematen dizuna.
 
-### Zertan da hau ohiko multisite-tik desberdina?
+### Zertan da hau ohiko multisite-tik desberdina? {#how-is-this-different-from-regular-multisite}
 
 Ohiko multisite-k sare bakar baten barruan gune anitz izatea ahalbidetzen du. Multinetwork-ek sare anitz ahalbidetzen ditu, bakoitza bere guneekin, denak WordPress instalazio bakar baten barruan.
 
-### Honek zerbitzariaren konfigurazio berezia behar al du?
+### Honek zerbitzariaren konfigurazio berezia behar al du? {#does-this-require-special-server-configuration}
 
 Bai, multinetwork-ek zerbitzariaren ezarpen eta konfigurazio espezifikoak behar ditu. Kontsultatu dokumentazioa konfigurazio-jarraibide xeheak lortzeko.

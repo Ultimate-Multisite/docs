@@ -4,11 +4,11 @@ title: Filtre - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params
+# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Filtra els paràmetres utilitzats per crear les línies d'article (line items) al carret de WooCommerce, abans de redirigir el client a la pagina de checkout de WooCommerce.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -16,14 +16,14 @@ Filtra els paràmetres utilitzats per crear les línies d'article (line items) a
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | L'instància de la línia d'article (line item) d'Ultimate Multisite. |
 | $wc_product | `\WC_Product` | El producte de WooCommerce. |
 
-### Desvinguts des de
+### Desvinguts des de {#since}
 
 - 2.0.0
-### Font
+### Font {#source}
 
 Definit en [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) a la línia 662
 
 
-## Retorn
+## Retorn {#returns}
 
 Els paràmetres de les línies d'article modificats.

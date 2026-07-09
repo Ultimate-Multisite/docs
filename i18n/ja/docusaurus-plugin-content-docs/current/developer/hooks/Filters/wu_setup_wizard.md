@@ -4,11 +4,11 @@ title: フィルタ - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# フィルタ: wu_setup_wizard
+# フィルタ: wu_setup_wizard {#filter-wusetupwizard}
 
 開発者が追加のセットアップウィザードステップを追加できるようにします。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 | $is_migration | `bool` | これは移行かどうか。 |
 | $wizard | `object` | 現在のインスタンス。 |
 
-### 以降
+### 以降 {#since}
 
 - 2.0.0
 
-### ソース
+### ソース {#source}
 
 Defined in [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) at line 525
 
-## 戻り値
+## 戻り値 {#returns}

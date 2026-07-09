@@ -3,16 +3,16 @@ title: Mga Setting ng Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Mga Setting ng Gratis AI Agent
+# Mga Setting ng Gratis AI Agent {#gratis-ai-agent-settings}
 
 Ang screen na **Settings → Advanced** sa Gratis AI Agent ay nagbibigay ng configuration na pang-administrator para sa mga backend integration. Idinodokumento ng pahinang ito ang pagpapasa ng feedback, mga key ng search provider, setup ng pinamamahalaang serbisyo ng Superdav, mga kontrol ng Google Calendar, mga setting ng TextBee SMS, at mga feature flag sa buong network.
 
-## Pag-access sa Settings
+## Pag-access sa Settings {#accessing-settings}
 
 1. Sa WordPress admin, pumunta sa **Gratis AI Agent → Settings**.
 2. I-click ang tab na **Advanced**.
 
-## Configuration ng Feedback Endpoint
+## Configuration ng Feedback Endpoint {#feedback-endpoint-configuration}
 
 Tumatanggap ang feedback endpoint ng mga POST request mula sa AI agent tuwing nagsusumite ng feedback ang isang user sa pamamagitan ng thumbs-down button, auto-prompt banner, o command na `/report-issue`.
 
@@ -21,7 +21,7 @@ Tumatanggap ang feedback endpoint ng mga POST request mula sa AI agent tuwing na
 | **Feedback Endpoint URL** | Ang URL na tumatanggap ng mga isinumiteng feedback bilang mga HTTP POST request na may JSON body. |
 | **Feedback API Key** | Isang bearer token na ipinapadala sa `Authorization` header ng bawat feedback request. Iwanang blangko kung hindi nangangailangan ng authentication ang iyong endpoint. |
 
-### Inaasahang JSON Payload
+### Inaasahang JSON Payload {#expected-json-payload}
 
 Dapat tumanggap ang iyong feedback endpoint ng JSON body na may hindi bababa sa mga sumusunod na field:
 
@@ -36,7 +36,7 @@ Dapat tumanggap ang iyong feedback endpoint ng JSON body na may hindi bababa sa 
 
 Maaaring may karagdagang mga field sa payload depende sa konteksto ng pag-uusap.
 
-### Mga Value ng `triage_category`
+### Mga Value ng `triage_category` {#triagecategory-values}
 
 Nagtatalaga ang AI triage layer ng isa sa mga sumusunod na value sa `triage_category` bago ipasa ang payload:
 
@@ -47,7 +47,7 @@ Nagtatalaga ang AI triage layer ng isa sa mga sumusunod na value sa `triage_cate
 | `inappropriate_content` | Naglaman ang tugon ng content na hindi dapat ipakita sa mga user. |
 | `other` | Hindi tumugma ang feedback sa isang kilalang kategorya. |
 
-### Authentication
+### Authentication {#authentication}
 
 Kung nangangailangan ng authentication ang iyong endpoint, itakda ang field na **Feedback API Key** sa iyong bearer token. Ipinapadala ng agent ang:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Kung walang laman ang field na **Feedback API Key**, walang ipinapadalang `Authorization` header.
 
-### Pag-disable ng Pangongolekta ng Feedback
+### Pag-disable ng Pangongolekta ng Feedback {#disabling-feedback-collection}
 
 Iwanang blangko ang parehong field na **Feedback Endpoint URL** at **Feedback API Key**. Mananatiling nakikita ng mga user ang thumbs-down button at feedback UI, ngunit hindi ipapasa ang mga isinumite sa anumang external service.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Nasa tab ding **Advanced**, pinapagana ng field na **Brave Search API Key** ang kakayahang [Internet Search](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ May kasamang naki-click na link ang label ng field papunta sa pahina ng pag-sign
 
 Tingnan ang [Internet Search](../configuration/internet-search) para sa dokumentasyon ng end-user tungkol sa feature na ito.
 
-## Pinamamahalaang Serbisyo ng Superdav
+## Pinamamahalaang Serbisyo ng Superdav {#managed-superdav-service}
 
 Nagdaragdag ang Superdav AI Agent v1.18.0 ng mga pinamamahalaang Superdav service endpoint at awtomatikong provisioning ng connection para sa mga suportadong site. Gamitin ang mga kontrol na ito kapag dapat kumonekta ang iyong site sa hosted provider sa halip na sa isang manu-manong naka-configure na service endpoint.
 
@@ -85,7 +85,7 @@ Nagdaragdag ang Superdav AI Agent v1.18.0 ng mga pinamamahalaang Superdav servic
 
 Pagkatapos ng provisioning, i-save ang settings at beripikahin ang estado ng connection bago umasa sa mga managed-service workflow. Kung nabigo ang provisioning, suriin ang ipinakitang gabay sa muling pagsubok at kumpirmahing may pahintulot ang site na gamitin ang hosted provider.
 
-## Configuration ng Google Calendar
+## Configuration ng Google Calendar {#google-calendar-configuration}
 
 Kapag pinagana ang mga feature ng calendar ng Superdav AI Agent v1.18.0, mababasa ng agent ang mga naka-configure na calendar at detalye ng event. Ang mga tool ng calendar ay nakatuon sa pagbabasa at kapaki-pakinabang para sa mga paalalang may kaalaman sa iskedyul, follow-up sa attendee, at pagtutugma ng contact.
 
@@ -97,7 +97,7 @@ Kapag pinagana ang mga feature ng calendar ng Superdav AI Agent v1.18.0, mababas
 
 Panatilihing limitado ang calendar credentials sa mga calendar na kailangan ng agent. Muling kumonekta o mag-rotate ng credentials kung ipinapakita ng status na expired na ang token.
 
-## Mga Notification sa TextBee SMS
+## Mga Notification sa TextBee SMS {#textbee-sms-notifications}
 
 Nagdaragdag ang Superdav AI Agent v1.18.0 ng TextBee bilang SMS provider para sa mga naka-configure na notification workflow. Dapat ipares ang mga SMS notification sa mga human approval gate para sa mga sensitibo o user-facing na mensahe.
 
@@ -109,16 +109,16 @@ Nagdaragdag ang Superdav AI Agent v1.18.0 ng TextBee bilang SMS provider para sa
 
 Magpadala ng test message lamang sa numerong pagmamay-ari ng administrator, pagkatapos ay kumpirmahin ang asal ng approval-gate bago paganahin ang mga naka-iskedyul o attendee-facing na paalala.
 
-## Mga Feature Flag
+## Mga Feature Flag {#feature-flags}
 
 Ipinakilala rin sa v1.9.0, nagbibigay ang tab na **Settings → Feature Flags** ng mga toggle switch para sa opsyonal na functionality. Ang bawat flag ay enabled o disabled sa buong network; wala pang per-site override sa kasalukuyan.
 
-### Pag-access sa Mga Feature Flag
+### Pag-access sa Mga Feature Flag {#accessing-feature-flags}
 
 1. Sa WordPress admin, pumunta sa **Gratis AI Agent → Settings**.
 2. I-click ang tab na **Feature Flags**.
 
-### Mga Access Control Flag
+### Mga Access Control Flag {#access-control-flags}
 
 | Flag | Default | Paglalarawan |
 |---|---|---|
@@ -127,7 +127,7 @@ Ipinakilala rin sa v1.9.0, nagbibigay ang tab na **Settings → Feature Flags** 
 | **Pahintulutan ang Subscriber Access** | Off | Kapag naka-enable, ang mga user na may `subscriber` na role ay makakagamit ng chat interface ngunit limitado sa read-only na kakayahan (walang paggawa ng post o pagbabago ng settings). |
 | **I-disable para sa Mga Hindi Miyembro** | Off | Nakikipag-integrate sa status ng membership ng Ultimate Multisite. Kapag naka-enable, nakatago ang chat para sa mga site na walang aktibong membership. |
 
-### Mga Branding Flag
+### Mga Branding Flag {#branding-flags}
 
 | Flag | Default | Paglalarawan |
 |---|---|---|
@@ -136,7 +136,7 @@ Ipinakilala rin sa v1.9.0, nagbibigay ang tab na **Settings → Feature Flags** 
 | **Itago ang Agent Picker** | Off | Kapag naka-enable, hindi makakapagpalipat-lipat ang mga user sa limang built-in na agent. Ang kasalukuyang agent ay nakapirmi sa anumang naka-configure bilang default sa Settings → General. |
 | **Gamitin ang Site Icon bilang Chat Avatar** | Off | Pinapalitan ang default na AI icon sa header ng chat widget ng WordPress site icon (itinakda sa ilalim ng Appearance → Customize → Site Identity). |
 
-### Mga Flag sa Kaligtasan ng Automation
+### Mga Flag sa Kaligtasan ng Automation {#automation-safety-flags}
 
 Ang Superdav AI Agent v1.18.0 ay nagpapakilala ng mga human approval gate at reminder record para sa mas ligtas na mga automation run. Maaaring lumitaw ang mga kontrol na ito sa feature flags o advanced automation settings, depende sa naka-install na package.
 
@@ -147,6 +147,6 @@ Ang Superdav AI Agent v1.18.0 ay nagpapakilala ng mga human approval gate at rem
 | **I-enable ang Calendar Tools** | Off hanggang ma-configure | Pinapayagan ang agent na basahin ang mga naka-configure na Google calendar at event. |
 | **I-enable ang SMS Notifications** | Off hanggang ma-configure | Pinapayagan ang mga naaprubahang workflow na magpadala ng TextBee SMS notification pagkatapos ma-save ang credentials. |
 
-### Paglalapat ng Mga Pagbabago
+### Paglalapat ng Mga Pagbabago {#applying-changes}
 
 I-click ang **Save Settings** pagkatapos i-toggle ang anumang flag. Agad na magkakabisa ang mga pagbabago — hindi kailangan ng cache flush o muling pag-activate ng plugin.

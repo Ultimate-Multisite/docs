@@ -3,19 +3,19 @@ title: Настройка Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Настройка шлюза Stripe (v2)
+# Настройка шлюза Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 
 На нашей странице настроек платежей вы можете активировать до четырех способов оплаты: Stripe, Stripe Checkout, PayPal и ручной. В этой статье мы рассмотрим, как интегрироваться с **Stripe**.
 
-## Включение Stripe
+## Включение Stripe {#enabling-stripe}
 
 Чтобы включить Stripe как доступный платежный шлюз в вашей сети, перейдите в **Ultimate Multisite > Настройки > Платежи** и включите переключатель рядом с **Stripe** или **Stripe Checkout** в разделе активных платежных шлюзов.
 
 ![Включение Stripe в активных платежных шлюзах](/img/config/settings-payment-gateways.png)
 
-### Stripe и Stripe Checkout:
+### Stripe и Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** этот метод покажет поле для ввода номера кредитной карты во время оформления заказа.
 
@@ -47,7 +47,7 @@ _**Примечание:** вы можете включить **режим Sandb
 
 ![Вставка ключей Stripe в настройки Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Настройка вебхука Stripe
+## Настройка вебхука Stripe {#setting-up-stripe-webhook}
 
 Stripe отправляет события вебхуков, которые уведомляют Ultimate Multisite каждый раз, когда происходит событие в **вашем аккаунте stripe**.
 

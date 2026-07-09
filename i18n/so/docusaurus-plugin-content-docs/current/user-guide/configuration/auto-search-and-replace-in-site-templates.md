@@ -3,7 +3,7 @@ title: Raadinta iyo Beddelka Otomaatigga ee Qoraallada Goobta Website-yada
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2)
+# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Tani casharkaasi waxay u baahan tahay WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Macmiilkaaga wuxuu markaas awood u laha doonaa inuu buuxiyo meeshaas inta uu dii
 
 Ultimate Multisite wuxuu ka badbaadin doonaa placeholder-yada macluumaadka ay bixisay macmiilka si toos ah.
 
-## **Xallinta dhibaatada "template oo buuxa placeholders"**
+## **Xallinta dhibaatada "template oo buuxa placeholders"** {#solving-the-template-full-of-placeholders-problem}
 
 Waxaan ku qabnaa dhammaan kan, laakiin waxaan la kulanno dhibaato xun: template-yada website-kaaga - kuwa ay macmiilku booqdo - waxay noqdaan kuwo buuxa placeholder-yo quruxdooda aan si fiican u muuqda oo aan wax badan ka sheegin.
 

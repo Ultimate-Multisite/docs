@@ -3,11 +3,11 @@ title: نظرة عامة على لوحة القيادة
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# نظرة عامة على لوحة القيادة
+# نظرة عامة على لوحة القيادة {#dashboard-overview}
 
 يحتوي Ultimate Multisite على لوحة قيادة مخصصة تحت قائمة Ultimate Multisite، كما يضيف أيضًا عناصر واجهة إلى لوحة القيادة الشبكية. يغطي هذا المقال ما سترى في كلا المكانين.
 
-## لوحة القيادة الشبكية
+## لوحة القيادة الشبكية {#the-network-dashboard}
 
 يقوم Ultimate Multisite بحقن عناصر واجهة مفيدة في لوحة القيادة على مستوى الشبكة الموجودة في **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 
 ![عنصر الأخبار](/img/admin/network-dashboard-news.png)
 
-## لوحة القيادة Ultimate Multisite
+## لوحة القيادة Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 بينما تعرض لوحة القيادة الشبكية معلومات شاملة عن الشبكة، تعرض لوحة القيادة Ultimate Multisite (في المستوى الأعلى من قائمة Ultimate Multisite) معلومات حول الخدمة.
 

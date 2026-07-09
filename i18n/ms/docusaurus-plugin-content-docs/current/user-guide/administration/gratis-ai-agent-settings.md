@@ -3,16 +3,16 @@ title: Tetapan Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Tetapan Gratis AI Agent
+# Tetapan Gratis AI Agent {#gratis-ai-agent-settings}
 
 Skrin **Settings → Advanced** dalam Gratis AI Agent menyediakan konfigurasi peringkat pentadbir untuk integrasi backend. Halaman ini mendokumenkan pemajuan maklum balas, kekunci penyedia carian, persediaan perkhidmatan Superdav terurus, kawalan Google Calendar, tetapan SMS TextBee, dan bendera ciri seluruh rangkaian.
 
-## Mengakses Tetapan
+## Mengakses Tetapan {#accessing-settings}
 
 1. Dalam pentadbir WordPress, pergi ke **Gratis AI Agent → Settings**.
 2. Klik tab **Advanced**.
 
-## Konfigurasi Endpoint Maklum Balas
+## Konfigurasi Endpoint Maklum Balas {#feedback-endpoint-configuration}
 
 Endpoint maklum balas menerima permintaan POST daripada AI agent setiap kali pengguna menyerahkan maklum balas melalui butang ibu jari ke bawah, banner gesaan automatik, atau arahan `/report-issue`.
 
@@ -21,7 +21,7 @@ Endpoint maklum balas menerima permintaan POST daripada AI agent setiap kali pen
 | **Feedback Endpoint URL** | URL yang menerima penyerahan maklum balas sebagai permintaan HTTP POST dengan badan JSON. |
 | **Feedback API Key** | bearer token yang dihantar dalam `Authorization` header bagi setiap permintaan maklum balas. Biarkan kosong jika endpoint anda tidak memerlukan pengesahan. |
 
-### Muatan JSON yang Dijangka
+### Muatan JSON yang Dijangka {#expected-json-payload}
 
 Endpoint maklum balas anda mesti menerima badan JSON dengan sekurang-kurangnya medan berikut:
 
@@ -36,7 +36,7 @@ Endpoint maklum balas anda mesti menerima badan JSON dengan sekurang-kurangnya m
 
 Medan tambahan mungkin hadir dalam muatan bergantung pada konteks perbualan.
 
-### Nilai `triage_category`
+### Nilai `triage_category` {#triagecategory-values}
 
 Lapisan triage AI menetapkan salah satu nilai berikut kepada `triage_category` sebelum memajukan muatan:
 
@@ -47,7 +47,7 @@ Lapisan triage AI menetapkan salah satu nilai berikut kepada `triage_category` s
 | `inappropriate_content` | Respons mengandungi kandungan yang tidak sepatutnya ditunjukkan kepada pengguna. |
 | `other` | Maklum balas tidak sepadan dengan kategori yang diketahui. |
 
-### Pengesahan
+### Pengesahan {#authentication}
 
 Jika endpoint anda memerlukan pengesahan, tetapkan medan **Feedback API Key** kepada bearer token anda. Agent menghantar:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Jika medan **Feedback API Key** kosong, tiada `Authorization` header dihantar.
 
-### Menyahdayakan Pengumpulan Maklum Balas
+### Menyahdayakan Pengumpulan Maklum Balas {#disabling-feedback-collection}
 
 Biarkan kedua-dua medan **Feedback Endpoint URL** dan **Feedback API Key** kosong. Butang ibu jari ke bawah dan UI maklum balas kekal kelihatan kepada pengguna, tetapi penyerahan tidak dimajukan kepada sebarang perkhidmatan luaran.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Juga pada tab **Advanced**, medan **Brave Search API Key** mendayakan keupayaan [Carian Internet](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ Label medan termasuk pautan boleh klik ke halaman pendaftaran Brave Search API. 
 
 Lihat [Carian Internet](../configuration/internet-search) untuk dokumentasi pengguna akhir tentang ciri ini.
 
-## Perkhidmatan Superdav Terurus
+## Perkhidmatan Superdav Terurus {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 menambah endpoint perkhidmatan Superdav terurus dan penyediaan sambungan automatik untuk site yang disokong. Gunakan kawalan ini apabila site anda perlu bersambung kepada penyedia yang dihoskan dan bukannya endpoint perkhidmatan yang dikonfigurasikan secara manual.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 menambah endpoint perkhidmatan Superdav terurus dan pe
 
 Selepas penyediaan, simpan tetapan dan sahkan status sambungan sebelum bergantung pada aliran kerja perkhidmatan terurus. Jika penyediaan gagal, semak panduan cuba semula yang dipaparkan dan sahkan site mempunyai kebenaran untuk menggunakan penyedia yang dihoskan.
 
-## Konfigurasi Google Calendar
+## Konfigurasi Google Calendar {#google-calendar-configuration}
 
 Apabila ciri kalendar Superdav AI Agent v1.18.0 didayakan, agent boleh membaca kalendar yang dikonfigurasikan dan butiran acara. Alat kalendar berorientasikan bacaan dan berguna untuk peringatan sedar jadual, susulan peserta, dan pemadanan kenalan.
 
@@ -97,7 +97,7 @@ Apabila ciri kalendar Superdav AI Agent v1.18.0 didayakan, agent boleh membaca k
 
 Hadkan kelayakan kalendar kepada kalendar yang diperlukan oleh agent sahaja. Sambung semula atau putarkan kelayakan jika status menunjukkan token yang telah tamat tempoh.
 
-## Pemberitahuan SMS TextBee
+## Pemberitahuan SMS TextBee {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 menambah TextBee sebagai penyedia SMS untuk aliran kerja pemberitahuan yang dikonfigurasikan. Pemberitahuan SMS patut digandingkan dengan pintu kelulusan manusia untuk mesej sensitif atau yang menghadap pengguna.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 menambah TextBee sebagai penyedia SMS untuk aliran ker
 
 Hantar mesej ujian hanya kepada nombor milik pentadbir, kemudian sahkan tingkah laku pintu kelulusan sebelum mendayakan peringatan berjadual atau yang menghadap peserta.
 
-## Bendera Ciri
+## Bendera Ciri {#feature-flags}
 
 Juga diperkenalkan dalam v1.9.0, tab **Settings → Feature Flags** menyediakan suis togol untuk fungsi pilihan. Setiap bendera sama ada didayakan atau dinyahdayakan seluruh rangkaian; tiada penggantian per-site pada masa ini.
 
-### Mengakses Bendera Ciri
+### Mengakses Bendera Ciri {#accessing-feature-flags}
 
 1. Dalam pentadbir WordPress, pergi ke **Gratis AI Agent → Settings**.
 2. Klik tab **Feature Flags**.
 
-### Bendera Kawalan Akses
+### Bendera Kawalan Akses {#access-control-flags}
 
 | Bendera | Lalai | Penerangan |
 |---|---|---|
@@ -127,7 +127,7 @@ Juga diperkenalkan dalam v1.9.0, tab **Settings → Feature Flags** menyediakan 
 | **Benarkan Akses Subscriber** | Off | Apabila diaktifkan, pengguna dengan peranan `subscriber` boleh menggunakan antara muka sembang tetapi terhad kepada keupayaan baca sahaja (tiada penciptaan siaran atau perubahan tetapan). |
 | **Nyahaktifkan untuk Bukan Ahli** | Off | Bersepadu dengan status keahlian Ultimate Multisite. Apabila diaktifkan, sembang disembunyikan untuk tapak yang tidak mempunyai keahlian aktif. |
 
-### Bendera Penjenamaan
+### Bendera Penjenamaan {#branding-flags}
 
 | Bendera | Lalai | Penerangan |
 |---|---|---|
@@ -136,7 +136,7 @@ Juga diperkenalkan dalam v1.9.0, tab **Settings → Feature Flags** menyediakan 
 | **Sembunyikan Pemilih Agent** | Off | Apabila diaktifkan, pengguna tidak boleh bertukar antara lima agent terbina dalam. Agent semasa ditetapkan kepada apa sahaja yang dikonfigurasikan sebagai lalai dalam Tetapan → Umum. |
 | **Gunakan Ikon Tapak sebagai Avatar Sembang** | Off | Menggantikan ikon AI lalai dalam pengepala widget sembang dengan ikon tapak WordPress (ditetapkan di bawah Penampilan → Sesuaikan → Identiti Tapak). |
 
-### Bendera Keselamatan Automasi
+### Bendera Keselamatan Automasi {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 memperkenalkan pagar kelulusan manusia dan rekod peringatan untuk jalankan automasi yang lebih selamat. Kawalan ini mungkin muncul dalam bendera ciri atau tetapan automasi lanjutan, bergantung pada pakej yang dipasang.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 memperkenalkan pagar kelulusan manusia dan rekod perin
 | **Aktifkan Alat Kalendar** | Off sehingga dikonfigurasikan | Membenarkan agent membaca kalendar dan acara Google yang dikonfigurasikan. |
 | **Aktifkan Pemberitahuan SMS** | Off sehingga dikonfigurasikan | Membenarkan aliran kerja yang diluluskan menghantar pemberitahuan SMS TextBee selepas kelayakan disimpan. |
 
-### Menerapkan Perubahan
+### Menerapkan Perubahan {#applying-changes}
 
 Klik **Simpan Tetapan** selepas menogol mana-mana bendera. Perubahan berkuat kuasa serta-merta — tiada pengosongan cache atau pengaktifan semula plugin diperlukan.

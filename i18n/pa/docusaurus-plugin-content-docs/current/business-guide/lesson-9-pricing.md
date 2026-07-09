@@ -3,17 +3,17 @@ title: 'ਪਾਠ 9: ਲਾਭ ਲਈ ਕੀਮਤ ਨਿਰਧਾਰਣ'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesson 9: Profit De Liye Pricing
+# Lesson 9: Profit De Liye Pricing {#lesson-9-pricing-for-profit}
 
 Lesson 5 vich assi FitSite plans de shuruaati daam set kiye si. Hun assi pricing strategy nu refine karenge, jin techniques naal revenue badhaya ja sake, upgrades ko encourage kiya ja sake, ate churn (grahak nu chhod dena) kam kiya ja sake.
 
-## Kithon Ruk Gaye
+## Kithon Ruk Gaye {#where-we-left-off}
 
 FitSite vich plans, templates, checkout, branding, ate onboarding set hai. Shuruaati pricing $49/$99/$199 per month si. Hun assi us pricing nu zyada kaam karne deya.
 
-## Niche Platforms Lai Pricing Principles
+## Niche Platforms Lai Pricing Principles {#pricing-principles-for-niche-platforms}
 
-### Cost Nahi, Value Te Price Karo
+### Cost Nahi, Value Te Price Karo {#price-on-value-not-cost}
 
 Tuhade hosting da kharcha har customer site te $5-$15 ho sakda hai. Is da matlab eh nahi ki tuhada daam $20 hona chahida hai. Tusi hosting nahi vech rahe. Tusi vech rahe ho:
 
@@ -24,7 +24,7 @@ Tuhade hosting da kharcha har customer site te $5-$15 ho sakda hai. Is da matlab
 
 Apne deliver kitte value te price karo, na ki us cost te jo deliver karna paira.
 
-### Alternatives naal Compare Karo (Anchor)
+### Alternatives naal Compare Karo (Anchor) {#anchor-to-alternatives}
 
 Jadon ik fitness studio owner FitSite nu evaluate karda hai, taan woh us nu in cheezan naal compare karda hai:
 
@@ -34,7 +34,7 @@ Jadon ik fitness studio owner FitSite nu evaluate karda hai, taan woh us nu in c
 
 $49-$199/month te, FitSite developer ton sasta hai, generic builders ton zyada capable hai, ate koi website na hone ton kahin zyada behtar hai.
 
-## Price Variations Implement Karna
+## Price Variations Implement Karna {#implementing-price-variations}
 
 Annual pricing commitment nu encourage karda hai ate churn kam karda hai. Har plan de **Price Variations** tab te jaao ate annual options add karo:
 
@@ -46,12 +46,12 @@ Annual pricing commitment nu encourage karda hai ate churn kam karda hai. Har pl
 
 Apne checkout form vich ik **Period Selection** field add karo taaki customers monthly ate annual billing vich toggle kar sakein. [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) dekhna.
 
-### Annual Pricing Kyun Kaam Karda Hai
+### Annual Pricing Kyun Kaam Karda Hai {#why-annual-pricing-works}
 
 - **Tuhade layi**: Shuruaati cash, kam churn (jo log annual pay karde ne, oh beech vich cancel karan de kam chance hunde ne)
 - **Ohna de layi**: Asli savings, budget te predictability
 
-## Setup Fees
+## Setup Fees {#setup-fees}
 
 Oh plans layi ik-baar da setup fee rakhne te soche jo hands-on configuration shamil karde ne:
 
@@ -61,7 +61,7 @@ Oh plans layi ik-baar da setup fee rakhne te soche jo hands-on configuration sha
 
 Har plan de pricing section te setup fees configure karo. Details layi [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) dekhna.
 
-## Trial Periods
+## Trial Periods {#trial-periods}
 
 Ik trial offer karna signup friction nu kam karda hai, par non-conversion da risk paida karda hai. FitSite layi:
 
@@ -70,11 +70,11 @@ Ik trial offer karna signup friction nu kam karda hai, par non-conversion da ris
 
 Starter plan de pricing section te trial configure karo, **Offer Trial** toggle enable karke ate duration 7 din set karke.
 
-### Trials nu Convert Karna
+### Trials nu Convert Karna {#making-trials-convert}
 
 Ik trial sirf tab kaam karda hai jadon customer nu trial period vich value mehsoos hove. Tuhadi onboarding sequence (Lesson 8) yahan critical hai — welcome emails nu is tarah time karna chahida hai ki 7-day window vich engagement badhe.
 
-## Discount Codes
+## Discount Codes {#discount-codes}
 
 Khaas maqsadan layi strategic discount codes banao:
 
@@ -88,7 +88,7 @@ Innu banane layi **Ultimate Multisite > Discount Codes** te jaao. Poori guide la
 Discounts strategic tools hone chahiye, permanent fixtures nahi. Je sab nu discount milega, taan oh discount nahi hai — oh tuhada asli daam hai. Ohna nu khaas campaigns, referrals, ate time-limited promotions layi istemal karo.
 :::
 
-## Tax Handling
+## Tax Handling {#tax-handling}
 
 Je tusi kisi aise jurisdiction vich kaam karde ho jithe tax collect karna zaroori hai:
 
@@ -98,7 +98,7 @@ Je tusi kisi aise jurisdiction vich kaam karde ho jithe tax collect karna zaroor
 
 Detailed configuration layi [Tax Handling](/user-guide/payment-gateways/tax-handling) dekhna. Je tusi international customers nu service karde ho, ta EU compliance layi [VAT addon](/addons/vat) consider karna.
 
-## Apni Pricing Review Karna
+## Apni Pricing Review Karna {#reviewing-your-pricing}
 
 Launch karan baad, pricing nu har teen mahine vich revisit karna. In cheezan nu dekho:
 
@@ -107,7 +107,7 @@ Launch karan baad, pricing nu har teen mahine vich revisit karna. In cheezan nu 
 - **Plan hisaab naal churn**: Je annual customers kam churn karde ne, taan annual pricing nu zyada zor deke promote karo
 - **Competitor pricing**: Alternatives ki charge kar rahe ne? Ki tusi sahi jagah par position kiye ho?
 
-## FitSite Network Hun Tak
+## FitSite Network Hun Tak {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Iss Lesson Vich Ki Banaya
+## Iss Lesson Vich Ki Banaya {#what-we-built-this-lesson}
 
 - Commitment encourage karan layi 20% discount naal **Annual pricing**
 - Onboarding effort cover karan layi higher tiers te **Setup fees**

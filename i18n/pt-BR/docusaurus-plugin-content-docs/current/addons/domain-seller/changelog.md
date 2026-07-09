@@ -3,7 +3,7 @@ title: Registro de alterações do Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Changelog do Domain Seller
+# Changelog do Domain Seller {#domain-seller-changelog}
 
 Versão 1.3.0 - Lançada em 2026-06-02
 - Novo: Adicionado um aviso no network-admin quando o saldo de revendedor da HostAfrica fica muito baixo
@@ -136,20 +136,20 @@ Versão 1.0.0 - Lançada em 2025-09-28
 * **Corrigido:** Todo o código v1 obsoleto atualizado para os padrões v2
 * **Removido:** Compatibilidade legada com v1 (breaking change)
 
-### Versões anteriores (v1 legado)
+### Versões anteriores (v1 legado) {#previous-versions-v1-legacy}
 
-### Versão 0.0.3 - 20/08/2019
+### Versão 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Corrigido: Incompatibilidade com Groundhogg CRM
 * Observação: Esta foi a última versão compatível com v1
 
-### Versão 0.0.2 - 07/12/2018
+### Versão 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Corrigido: Removido o campo License Key
 * Corrigido: Abas de planos ausentes quando o plugin de recurso está ativo
 * Melhorado: Adicionado um botão de pular no campo de registro
 
-### Versão 0.0.1 - Lançamento inicial
+### Versão 0.0.1 - Lançamento inicial {#version-001---initial-release}
 
 * Integração básica com OpenSRS para WP Ultimo v1
 * Pesquisa e registro simples de domínios

@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 একটি WordPress প্লাগইন যা multisite পরিবেশে Tutor LMS-এর জন্য সামঞ্জস্যতা (compatibility) ঠিক করে।
 
-## Description
+## Description {#description}
 
 এই প্লাগইনটি WordPress multisite নেটওয়ার্কে Tutor LMS চালানোর জন্য প্রয়োজনীয় সামঞ্জস্যতা ঠিক করে। এটি ব্যবহারকারী তালিকাভুক্তি (user enrollment), প্রশিক্ষক ব্যবস্থাপনা (instructor management), কোর্স সীমাবদ্ধতা (course limitations), এবং অন্যান্য multisite-নির্দিষ্ট কার্যকারিতা পরিচালনা করে।
 
-## Features
+## Features {#features}
 
 - **Database Table Management**: multisite foreign key constraints-এর কারণে ব্যর্থ হওয়া Tutor LMS-এর অনুপস্থিত টেবিলগুলি স্বয়ংক্রিয়ভাবে সনাক্ত করে এবং তৈরি করে।
 - **Multisite User Enrollment**: নেটওয়ার্ক জুড়ে ব্যবহারকারী তালিকাভুক্তি পরিচালনার জন্য কাস্টম AJAX হ্যান্ডলার।
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **Custom Admin Views**: multisite-সচেতন প্রশিক্ষক তালিকা এবং ব্যবস্থাপনা ইন্টারফেস।
 - **Admin Tools**: নেটওয়ার্ক এবং সাইট অ্যাডমিনিস্ট্রেটরদের জন্য ডেটাবেস ব্যবস্থাপনা ইন্টারফেস।
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - WordPress Multisite installation
 - Ultimate Multisite plugin (for course limitations functionality)
 
-## Installation
+## Installation {#installation}
 
 1. প্লাগইন ফাইলগুলি `/wp-content/plugins/tutor-multisite-compatibility/`-এ আপলোড করুন।
 2. নিশ্চিত করুন যে Tutor LMS ইনস্টল এবং অ্যাক্টিভেট করা আছে।
 3. WordPress-এর 'Plugins' মেনু থেকে প্লাগইনটি অ্যাক্টিভেট করুন।
 4. প্লাগইনটি স্বয়ংক্রিয়ভাবে Tutor LMS-এর সাথে ইন্টিগ্রেট হয়ে যাবে।
 
-## File Structure
+## File Structure {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Functionality Moved from MU Plugin
+## Functionality Moved from MU Plugin {#functionality-moved-from-mu-plugin}
 
 এই প্লাগইনটিতে এমন কিছু কার্যকারিতা রয়েছে যা আগে `wp-content/mu-plugins/daves.php`-এ ছিল:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - Multisite user enrollment handling
 - Course product ID display
 
-## Database Management
+## Database Management {#database-management}
 
-### The Problem
+### The Problem {#the-problem}
 
 WordPress multisite পরিবেশে, ব্যবহারকারী টেবিলের সাথে ফরেন কী (foreign key) সীমাবদ্ধতাযুক্ত টেবিলগুলির জন্য Tutor LMS টেবিল তৈরি করতে ব্যর্থ হয়। এর কারণ হলো:
 
@@ -81,7 +81,7 @@ WordPress multisite পরিবেশে, ব্যবহারকারী ট
 - ফরেন কীগুলি `wp_2_users` (যা বিদ্যমান নেই) কে রেফার করে।
 - আসল ব্যবহারকারী টেবিলটি হলো `wp_users` (যা নেটওয়ার্ক জুড়ে শেয়ার করা)।
 
-### The Solution
+### The Solution {#the-solution}
 
 এই প্লাগইনটি স্বয়ংক্রিয়ভাবে:
 
@@ -92,13 +92,13 @@ WordPress multisite পরিবেশে, ব্যবহারকারী ট
    - নেটওয়ার্কে নতুন সাইট তৈরি
    - অ্যাডমিন ইন্টারফেসের মাধ্যমে ম্যানুয়াল টেবিল চেক করা
 
-### Affected Tables
+### Affected Tables {#affected-tables}
 
 - `tutor_coupon_usages` - ব্যবহারকারী টেবিলের সাথে ফরেন কী ধারণ করে।
 - `tutor_carts` - ব্যবহারকারী টেবিলের সাথে ফরেন কী ধারণ করে।
 - `tutor_notification_preferences` - ব্যবহারকারী টেবিলের সাথে ফরেন কী সহ TutorPro টেবিল।
 
-### Admin Interface
+### Admin Interface {#admin-interface}
 
 ডেটাবেস ব্যবস্থাপনা সরঞ্জামগুলিতে অ্যাক্সেস করুন:
 
@@ -111,6 +111,6 @@ WordPress multisite পরিবেশে, ব্যবহারকারী ট
 - ডেটাবেস কনফিগারেশন পরীক্ষা করা।
 - বিস্তারিত স্ট্যাটাস তথ্য দেখা।
 
-## Support
+## Support {#support}
 
 এই প্লাগইনটি বিশেষভাবে KursoPro প্ল্যাটফর্মের জন্য ডিজাইন করা হয়েছে। প্রযুক্তিগত সহায়তার জন্য, ডেভেলপমেন্ট টিমের সাথে যোগাযোগ করুন।

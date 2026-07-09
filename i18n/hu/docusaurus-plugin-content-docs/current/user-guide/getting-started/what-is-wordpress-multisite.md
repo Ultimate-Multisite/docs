@@ -3,7 +3,7 @@ title: Mi az a WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Mi az a WordPress Multisite?
+# Mi az a WordPress Multisite? {#what-is-wordpress-multisite}
 
 A WordPress alapfunkciói között megtalálható a „Multisite" nevű lehetőség, amely a WordPress 3.0 megjelenésekor, 2010-ben debütált. Azóta számos frissítésen esett át, amelyek új funkciókat hoztak és a biztonságot is megerősítették.
 
@@ -11,7 +11,7 @@ A WordPress multisite lényege egyszerűen megfogalmazva: Egy egyetem egyetlen W
 
 ## 
 
-## Mi pontosan a WordPress Multisite?
+## Mi pontosan a WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 A Multisite a WordPress egyik funkciója, amely lehetővé teszi, hogy több webhely ugyanazt a WordPress-telepítést használja. A multisite aktiválásakor az eredeti WordPress-oldal átalakul, és támogatni kezdi azt, amit általában **oldalak hálózatának** nevezünk.
 
@@ -23,7 +23,7 @@ Ez a multisite egyik fő előnye: növelheted a kezelt oldalak számát, miközb
 
 ## 
 
-## Aldomain vagy alkönyvtár?
+## Aldomain vagy alkönyvtár? {#subdomain-or-subdirectory}
 
 A WordPress multisite kétféle módban futtatható – és az egyiket ki kell választanod, amikor a hagyományos WordPress-telepítésedet multisite-ra alakítod át:
 
@@ -49,7 +49,7 @@ Az aldomain mód beállításának egyik fő kihívása az SSL-lefedettség (HTT
 
 Az alkönyvtár móddal ellentétben az aldomain-alapú hálózat aloldalait a keresőmotorok külön webhelyeknek tekintik, ami azt jelenti, hogy az egyik aloldalon lévő tartalom egyáltalán nem befolyásolja a többi aloldal SEO-teljesítményét.
 
-## A szuperadmin
+## A szuperadmin {#the-super-admin}
 
 Az egyoldalas WordPress-telepítések lehetővé teszik, hogy korlátlan számú felhasználót adj hozzá, és különböző jogosultságokkal rendelkező felhasználói szerepköröket adj nekik.
 
@@ -63,7 +63,7 @@ A bővítményeket és sablonokat csak a szuperadminok telepíthetik vagy távol
 
 _Megjegyzés: Amint láthatod, ha valakit meghívsz a hálózatodba és szuperadmin jogosultságot adsz neki, ezzel teljes irányítást adsz a hálózatod felett. Például más szuperadminok akár el is távolíthatják a te szuperadmin státuszodat, gyakorlatilag kizárva téged a saját hálózati adminisztrációs paneledből. Hogy az Ultimate Multisite ügyfelei részletesen szabályozhassák, mit tehetnek a további szuperadminok, van egy Support Agents nevű kiegészítőnk. Ez a kiegészítő lehetővé teszi egy újabb felhasználótípus – az ügynök – létrehozását, aki csak azokat a jogosultságokat kapja meg, amelyekre a hálózaton végzett feladataihoz szüksége van._
 
-## Mi közös az aloldalak között és mi nem
+## Mi közös az aloldalak között és mi nem {#what-is-shared-among-subsites-and-what-is-not}
 
 Ahogy korábban említettük, a WordPress multisite egyik fő előnye, hogy az összes aloldal ugyanazokat a konfigurációkat, alapfájlokat, sablonokat, bővítményeket, WordPress-alapfájlokat stb. használja.
 
@@ -75,7 +75,7 @@ Vannak azonban olyan elemek, amelyek szépen elkülönülnek aloldalanként.
 
 \- A legtöbb adatbázistábla minden aloldalhoz külön jön létre, ami azt jelenti, hogy a bejegyzések, hozzászólások, oldalak, beállítások és egyebek aloldalanként elkülönülnek.
 
-## Felhasználókezelés a WordPress Multisite-ban
+## Felhasználókezelés a WordPress Multisite-ban {#user-management-on-wordpress-multisite}
 
 A WordPress multisite egyik kényes témája a felhasználókezelés. A WordPress felhasználói táblája egyike azon kevés táblának, amely közös az összes aloldal között.
 
@@ -99,7 +99,7 @@ _Megjegyzés: Tisztában vagyunk vele, hogy ez mennyire rossz lehet bizonyos fel
 
 Bár a felhasználói tábla közös, a felhasználókat az aloldal adminisztrátorai vagy a szuperadmin hozzáadhatják és eltávolíthatják az aloldalakról, és akár különböző felhasználói szerepkörük is lehet a különböző aloldalakon.
 
-## Teljesítménnyel kapcsolatos szempontok
+## Teljesítménnyel kapcsolatos szempontok {#performance-considerations}
 
 A WordPress multisite igazán erős, ami a támogatható oldalak számát illeti. Ezt bizonyítja, hogy a [WordPress.com](https://WordPress.com), az Edublogs és a Campuspress mind multisite-alapú szolgáltatások, és mindegyik több ezer oldalt üzemeltet.
 

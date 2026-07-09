@@ -4,11 +4,11 @@ title: Filtras - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Filtras: wu_stripe_generate_idempotency_key
+# Filtras: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
 
 Filtruoja idempotency_key reikšmę, siunčiamą su Stripe apmokestinimo parinktimis.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtruoja idempotency_key reikšmę, siunčiamą su Stripe apmokestinimo parinkt
 | $args | `array` | Argumentai, naudojami padėti sugeneruoti raktą. |
 | $context | `string` | Kontekstas, kuriame sugeneruojamas idempotency key. |
 
-### Nuo
+### Nuo {#since}
 
 - 3.5.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/functions/checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/checkout.php#L54) 54 eilutėje

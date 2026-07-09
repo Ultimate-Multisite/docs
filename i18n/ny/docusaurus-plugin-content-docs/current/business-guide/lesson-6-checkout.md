@@ -3,15 +3,15 @@ title: 'Phunziro 6: Zochitika pa Kulembetsa'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Phunziro 6: Zochitika Polembetsa
+# Phunziro 6: Zochitika Polembetsa {#lesson-6-the-signup-experience}
 
 Njira ya checkout ndi pomwe chidwi chimasanduka ndalama. Njira yolembetsa yosokoneza kapena wamba imataya makasitomala. Njira yokhudzana ndi niche inayake yomwe imalankhula chilankhulo chawo ndipo imamveka yosavuta imawasintha kukhala makasitomala.
 
-## Pomwe Tinathera
+## Pomwe Tinathera {#where-we-left-off}
 
 FitSite ili ndi ma template ndi mapulani okonzedwa. Tsopano timamanga zochitika zolembetsa ndi checkout zomwe zimasintha eni ake a masitudiyo a fitness kukhala makasitomala olipira.
 
-## Kumvetsetsa Njira Yolembetsa
+## Kumvetsetsa Njira Yolembetsa {#understanding-the-registration-flow}
 
 Mafomu a checkout a Ultimate Multisite ndi mafomu a masitepe angapo omwe angasinthidwe kwathunthu. Kwa FitSite, tikufuna njira yomwe:
 
@@ -21,11 +21,11 @@ Mafomu a checkout a Ultimate Multisite ndi mafomu a masitepe angapo omwe angasin
 
 Onani [Njira Yolembetsa](/user-guide/configuration/the-registration-flow) kuti mupeze buku lonse laukadaulo.
 
-## Kupanga Checkout ya FitSite
+## Kupanga Checkout ya FitSite {#designing-the-fitsite-checkout}
 
 Pitani ku **Ultimate Multisite > Mafomu a Checkout** ndipo pangani fomu yatsopano.
 
-### Sitepe 1: Kusankha Pulani
+### Sitepe 1: Kusankha Pulani {#step-1-plan-selection}
 
 Chinthu choyamba chomwe mwini wa situdiyo ya fitness ayenera kuwona ndi mapulani, operekedwa m'mawu omwe amamvetsetsa.
 
@@ -37,7 +37,7 @@ Chinthu choyamba chomwe mwini wa situdiyo ya fitness ayenera kuwona ndi mapulani
 "1 GB storage" sichitanthauza chilichonse kwa mwini wa gym. "Chilichonse chomwe mukufuna pa tsamba laukadaulo la situdiyo" chimatanthauza chilichonse. Lembani mafotokozedwe a mapulani m'chinenero cha kasitomala wanu.
 :::
 
-### Sitepe 2: Kusankha Template
+### Sitepe 2: Kusankha Template {#step-2-template-selection}
 
 Atasankha pulani, kasitomala amasankha template yoyambira.
 
@@ -45,7 +45,7 @@ Atasankha pulani, kasitomala amasankha template yoyambira.
 - Ma template omwe alipo amasankhidwa malinga ndi pulani yomwe anasankha (yokonzedwa mu Phunziro 5)
 - Template iliyonse iyenera kukhala ndi chithunzi chowonetseratu kapangidwe kokhudzana ndi fitness
 
-### Sitepe 3: Kupanga Account
+### Sitepe 3: Kupanga Account {#step-3-account-creation}
 
 Sungani izi kukhala zochepa. Sonkhanitsani zokha:
 
@@ -55,27 +55,27 @@ Sungani izi kukhala zochepa. Sonkhanitsani zokha:
 
 Musafunse zambiri zomwe simukuzifuna polembetsa. Gawo lililonse lowonjezera limachepetsa conversions.
 
-### Sitepe 4: Kukonza Tsamba
+### Sitepe 4: Kukonza Tsamba {#step-4-site-setup}
 
 - **Mutu wa tsamba**: Dzaziranitu kuchokera ku dzina la situdiyo lomwe lalowetsedwa mu Sitepe 3
 - **URL ya tsamba**: Ipangeni yokha kuchokera ku dzina la situdiyo (mwachitsanzo, `ironworks.fitsite.com`)
 
-### Sitepe 5: Malipiro
+### Sitepe 5: Malipiro {#step-5-payment}
 
 - Onjezani gawo la **Malipiro**
 - Konzani payment gateway yanu ([Stripe](/user-guide/payment-gateways/stripe) ikulimbikitsidwa pa kulipiritsa kwa subscription)
 - Ngati munapanga order bumps mu Phunziro 5, onjezani gawo la **Order Bump** musanafike sitepe ya malipiro
 
-### Sitepe 6: Chitsimikizo
+### Sitepe 6: Chitsimikizo {#step-6-confirmation}
 
 - Sinthani uthenga wotsimikizira ndi chilankhulo chokhudzana ndi fitness
 - Chitsanzo: "Tsamba la situdiyo yanu ya fitness likupangidwa. Mudzatumizidwa ku tsamba lanu latsopano m'masekondi ochepa."
 
-## Kuwonjezera Chosinthira Chosankha Nthawi
+## Kuwonjezera Chosinthira Chosankha Nthawi {#adding-a-period-selection-toggle}
 
 Ngati munakhazikitsa kusiyanasiyana kwa mitengo m'mapulani anu (pamwezi motsutsana ndi pachaka), onjezani gawo la **Kusankha Nthawi** ku fomu ya checkout kuti makasitomala athe kusintha pakati pa nthawi zolipiritsa. Onani [Mafomu a Checkout](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) kuti mupeze malangizo.
 
-## Kukonza Malipiro
+## Kukonza Malipiro {#configuring-payment}
 
 Ngati simunakhazikitsebe payment gateway:
 
@@ -85,7 +85,7 @@ Ngati simunakhazikitsebe payment gateway:
 
 Onani [Kulandira Malipiro](/user-guide/payment-gateways/getting-paid) kuti mupeze zambiri za momwe malipiro amayendera kupita ku account yanu.
 
-## Kuyesa Njirayi
+## Kuyesa Njirayi {#testing-the-flow}
 
 Musanapitirire, malizani kulembetsa koyesera kwathunthu:
 
@@ -105,7 +105,7 @@ Onani kuti:
 - [ ] Kasitomala amafika pa tsamba logwira ntchito lokhala ndi template yomwe yasankhidwa
 - [ ] Maimelo otsimikizira amagwiritsa ntchito chilankhulo chokhudzana ndi fitness
 
-## Network ya FitSite Pakadali Pano
+## Network ya FitSite Pakadali Pano {#the-fitsite-network-so-far}
 
 ```
 Network ya FitSite
@@ -123,7 +123,7 @@ Network ya FitSite
 └── Yakonzeka ku branding (phunziro lotsatira)
 ```
 
-## Zomwe Tinamanga mu Phunziro Ili
+## Zomwe Tinamanga mu Phunziro Ili {#what-we-built-this-lesson}
 
 - **Fomu ya checkout ya masitepe angapo** yokonzedwera eni ake a masitudiyo a fitness
 - **Chilankhulo chokhudzana ndi niche** mu njira yonse yolembetsa

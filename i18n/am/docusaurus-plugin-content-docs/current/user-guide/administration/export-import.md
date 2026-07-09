@@ -3,17 +3,17 @@ title: ኤክስፖርት እና ኢምፖርት
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# ኤክስፖርት እና ማስገባት (Export & Import)
+# ኤክስፖርት እና ማስገባት (Export & Import) {#export--import}
 
 Ultimate Multisite 2.9.0 በ **Tools > Export & Import** ስር አንድ የሳይት **ኤክስፖርት እና ማስገባት** መሳሪያ ይጨምራል። አንድ የWordPress siteን እንደ ZIP ፋይል ማዘጋጀት፣ ያንን ZIP መልሶ ማስቀመጥ፣ ወይም አንድ site በተጣጣሙ Ultimate Multisite እና single-site WordPress installation መካከል ማንቀሳቀስ በሚፈልጉበት ጊዜ ይጠቀሙበታል።
 
-## የሚያስፈልጉ መብቶች (Required permissions)
+## የሚያስፈልጉ መብቶች (Required permissions) {#required-permissions}
 
 የሚሰሩበት site ላይ የWordPress **Tools** ሜኑን መድረስ የሚችል አስተዳዳሪ (administrator) መሆን አለብዎት። በmultisite network ላይ፣ ከnetwork-level Ultimate Multisite tools የsubsiteዎችን ሲያወጡ ወይም ሲያስገቡ የnetwork administrator አካውንት ይጠቀሙ።
 
 የኤክስፖርት ZIP ፋይሎች በauthenticated download endpoint በኩል ስለሚሰጡ፣ እስኪወርድ ድረስ የአስተዳዳሪ ክፍለ ጊዜውን (admin session) ክፍት ያቆዩ እና የተፈጠሩትን download URLs በይፋ አያጋሩ።
 
-## siteን ወደ ZIP ማስቀመጥ (Exporting a site to a ZIP)
+## siteን ወደ ZIP ማስቀመጥ (Exporting a site to a ZIP) {#exporting-a-site-to-a-zip}
 
 1. ሊገለብጡት የሚፈልጉት site በWordPress admin ውስጥ፣ ወደ **Tools > Export & Import** ይሂዱ።
 2. የኤክስፖርት ቦታውን ይክፈቱ እና ማዘጋጀት የሚፈልጉትን site ይምረጡ።
@@ -23,7 +23,7 @@ Ultimate Multisite 2.9.0 በ **Tools > Export & Import** ስር አንድ የሳ
 
 ZIP ፋይሉን በአስተማማኝ ቦታ ያቆዩ። የsite ይዘት፣ ቅንብሮች (settings)፣ ሚዲያ ፋይሎች እና የተመረጡ የኮድ ንብረቶች ሊይዝ ይችላል።
 
-## ኤክስፖርቱ የሚያካትታቸው ነገሮች (What the export includes)
+## ኤክስፖርቱ የሚያካትታቸው ነገሮች (What the export includes) {#what-the-export-includes}
 
 የኤክስፖርት ZIP ፋይል የሚከተሉትን ሊይዝ ይችላል፦
 
@@ -34,7 +34,7 @@ ZIP ፋይሉን በአስተማማኝ ቦታ ያቆዩ። የsite ይዘት፣ 
 
 ትክክለኛው የZIP መጠን የሚወሰነው በሚዲያ መጠን፣ በተመረጡ plugins እና themes፣ እና በsite የዳታቤዝ ሰንጠረዦች (database tables) መጠን ነው።
 
-## siteን ከZIP ማስገባት (Importing a site from a ZIP)
+## siteን ከZIP ማስገባት (Importing a site from a ZIP) {#importing-a-site-from-a-zip}
 
 1. ወደ መድረሻ (destination) WordPress site ላይ **Tools > Export & Import** ይሂዱ።
 2. የimport ቦታውን ይክፈቱ እና በExport & Import tool የተፈጠረውን ZIP ያሰልጉ።
@@ -46,7 +46,7 @@ ZIP ፋይሉን በአስተማማኝ ቦታ ያቆዩ። የsite ይዘት፣ 
 
 በsingle-site WordPress installation ላይ ZIP ማስገባት፣ የአሁኑን site በየተገቡበት site ይተካዋል። ከመጀመርዎ በፊት የዒላማውን site ሙሉ ምትኬ (full backup) ይውሰዱ፣ እና በተመሳሳይ ጊዜ ለተመሳሳይ site ብዙ imports ከመጀመር መቆጠብ።
 
-## ገደቦች እና ተኳሃኝነት ማስታወሻዎች (Limitations and compatibility notes)
+## ገደቦች እና ተኳሃኝነት ማስታወሻዎች (Limitations and compatibility notes) {#limitations-and-compatibility-notes}
 
 - በጣም ትልልቅ uploads directories ወይም media libraries ትልቅ የZIP ፋይሎችን ሊፈጥሩ ይችላሉ። ትልልቅ sites ሲያወጡ ወይም ሲያስገቡ የPHP upload limits፣ execution limits፣ disk space፣ memory፣ እና server timeout settings መሆኑን ያረጋግጡ።
 - በጣም ትልልቅ ሚዲያ libraries በዝቅተኛ ትራፊክ ባለው የጥገና ጊዜ (maintenance window) መዛወር ሊያስፈልጋቸው ይችላል።

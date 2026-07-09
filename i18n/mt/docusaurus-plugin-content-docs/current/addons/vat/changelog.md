@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet tal-VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Reġistru tal-bidliet tal-VAT
+# Reġistru tal-bidliet tal-VAT {#vat-changelog}
 
 Verżjoni 1.0.7 - Maħruġa fit-2026-02-03
 

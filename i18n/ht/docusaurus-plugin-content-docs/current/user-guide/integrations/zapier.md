@@ -3,7 +3,7 @@ title: Entegrasyon Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Konbine Ultimate Multisite ak Zapier
+# Konbine Ultimate Multisite ak Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Nan yon tèks, nou te pale de [Webhooks](webhooks.md) e kijan yo ka itilize pou konekte ak aplikasyon ki pa nan sistèm ou an.
 
@@ -15,7 +15,7 @@ Ou ka kreye **Triggers** ki pral kòmanse lè nanvan evènman yo sou rezo ou a (
 
 Sa posib paske **Ultimate Multisite Zapier's triggers** ak actions yo fonksyone ak [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kijan pou kòmanse
+## Kijan pou kòmanse {#how-to-start}
 
 Premye bagay, chèche Ultimate Multisite nan lis aplikasyon Zapier la. Oswa ou ka klike sou [li sa a](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Sou champ URL la, mete tout URL rezo ou a, ki genyen protocole li (HTTP o HTTPS)
 
 Klike sou bouton **Yes, Continue** pou ale nan etap ankò. Si tout mache byen, ou pral resevwa kont ou ki konekte la! Klike pou **Continue** pou kreye yon nouvo trigger.
 
-## Kijan pou kreye yon nouvo Trigger
+## Kijan pou kreye yon nouvo Trigger {#how-to-create-a-new-trigger}
 
 Kounye ou gen kont ou konekte, ou ka wè evènman yo ki disponib. Ann chwazi evènman **payment_received** pou aprantis sa a.
 
@@ -67,7 +67,7 @@ Nan etap sa a, Zapier pral teste si Zap ou ka **jwenn payload espesifik pou evè
 
 Nan nouvwa a test la **konplè a byen** epi li te retounen ekzanp enfòmasyon payload la. Enfòmasyon egzampiy sa a ap itil pou gide nou pandan nou kreye aksyon yo. Ou trigger ou anse a kounye a ki fèt epi li pare pou konekte ak lòt aplikasyon.
 
-## Kijan pou kreye Actions
+## Kijan pou kreye Actions {#how-to-create-actions}
 
 Actions itilize enfòmasyon soti nan lòt triggers pou kreye nouvo entri nan rezo ou an.
 
@@ -79,7 +79,7 @@ Nan etap ankò ou pral kreye autentifikasyon ou, menm jan nou te fè nan **How t
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Konfigire Aksyon an
+### Konfigire Aksyon an {#setting-up-the-action}
 
 Sa se **etap prensipal aksyon an** epi la bagay yo yon ti jan diferan. Premye enfòmasyon ou ap chwazi se **Item**. Item se **modèl enfòmasyon** rezo ou a tankou **Customers, Payments, Sites, Emails** ak lòt bagay.
 

@@ -4,11 +4,11 @@ title: Dejanje - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Action: wu_membership_post_renew
+# Action: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Sproži se po obnovitvi članstva.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sproži se po obnovitvi članstva.
 | $membership_id | `int` | ID članstva. |
 | $membership | `\Membership` | Objekt članstva. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0
-### Vir
+### Vir {#source}
 
 Definirano v [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) v vrstici 2235

@@ -3,15 +3,15 @@ title: 'Leciono 5: Projektado de Viaj Planoj'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leciono 5: Desegni Viajn Abonplanojn
+# Leciono 5: Desegni Viajn Abonplanojn {#lesson-5-designing-your-plans}
 
 Viaj abonplanaj niveloj ne estas nur prezaj niveloj -- ili estas spegulo de kiel viaj niĉaj klientoj efektive funkcias. En ĉi tiu leciono vi desegnos produktajn nivelojn, kiuj kongruas kun la realaj bezonoj de trejnad-komercoj je malsamaj stadioj.
 
-## Kie Ni Ĉesis
+## Kie Ni Ĉesis {#where-we-left-off}
 
 FitSite havas tri ŝablonojn pretajn (Studio Essential, Gym Pro, Fitness Chain). Nun ni kreas la abonplanojn, kiuj determinas al kio klientoj ricevas aliron kaj kion ili pagas.
 
-## Pensado laŭ Klientaj Segmentoj
+## Pensado laŭ Klientaj Segmentoj {#thinking-in-customer-segments}
 
 La eraro, kiun plej multaj homoj faras, estas desegni abonplanojn ĉirkaŭ teknikaj funkcioj (stokado, bendolarĝo, nombro de paĝoj). Viaj niĉaj klientoj ne pensas laŭ tiuj terminoj. Gimnastikeja posedanto pensas pri tio, kion ili bezonas por funkciigi sian komercon.
 
@@ -25,11 +25,11 @@ Por trejnad-studioj ekzistas tri naturaj segmentoj:
 
 Viaj abonplanoj devas kongrui kun ĉi tiuj segmentoj, ne kun arbitraj funkciaroj.
 
-## Krei la FitSite-Abonplanojn
+## Krei la FitSite-Abonplanojn {#creating-the-fitsite-plans}
 
 Navigu al **Ultimate Multisite > Produktoj > Aldoni Produkton** por ĉiu abonplano.
 
-### Abonplano 1: FitSite Starter -- $49/monate
+### Abonplano 1: FitSite Starter -- $49/monate {#plan-1-fitsite-starter----49month}
 
 **Celo**: Solaj trejnistoj kaj malgrandaj studioj
 
@@ -59,7 +59,7 @@ Navigu al **Ultimate Multisite > Produktoj > Aldoni Produkton** por ĉiu abonpla
 - Via elektita theme: Devige Aktivigi
 - Ĉiuj aliaj themes: Kaŝitaj
 
-### Abonplano 2: FitSite Growth -- $99/monate
+### Abonplano 2: FitSite Growth -- $99/monate {#plan-2-fitsite-growth----99month}
 
 **Celo**: Establitaj unulukaj gimnastikejoj
 
@@ -85,7 +85,7 @@ Navigu al **Ultimate Multisite > Produktoj > Aldoni Produkton** por ĉiu abonpla
 - Abonplana grupo: FitSite Plans
 - Produkta ordo: 2
 
-### Abonplano 3: FitSite Pro -- $199/monate
+### Abonplano 3: FitSite Pro -- $199/monate {#plan-3-fitsite-pro----199month}
 
 **Celo**: Multolokaj trejnad-ĉenoj
 
@@ -109,7 +109,7 @@ Navigu al **Ultimate Multisite > Produktoj > Aldoni Produkton** por ĉiu abonpla
 - Abonplana grupo: FitSite Plans
 - Produkta ordo: 3
 
-## Agordi la Abonplanan Grupon
+## Agordi la Abonplanan Grupon {#setting-up-the-plan-group}
 
 La abonplana grupo certigas, ke klientoj povas nur altgradigi aŭ malaltgradigi ene de la FitSite-abonplana familio. En la langeto **Altgradigoj & Malaltgradigoj** de ĉiu abonplano:
 
@@ -118,7 +118,7 @@ La abonplana grupo certigas, ke klientoj povas nur altgradigi aŭ malaltgradigi 
 
 Ĉi tio kreas klaran altgradigan vojon: Starter → Growth → Pro.
 
-## Aldoni Mendaldonojn
+## Aldoni Mendaldonojn {#adding-order-bumps}
 
 Mendaldonoj estas aldonaj produktoj ofertataj dum pago. Por FitSite, konsideru:
 
@@ -128,7 +128,7 @@ Mendaldonoj estas aldonaj produktoj ofertataj dum pago. Por FitSite, konsideru:
 
 Kreu ĉi tiujn kiel **Pakaĵo**-tipajn produktojn en Ultimate Multisite kaj asociu ilin kun la koncernaj abonplanoj.
 
-## Kial Ĉi Tiu Strukturo Funkcias
+## Kial Ĉi Tiu Strukturo Funkcias {#why-this-structure-works}
 
 - **Starter** forigas enirbarojn -- malalta prezo, simpla oferto, rapide enretigas trejnistojn
 - **Growth** aldonas la funkciojn, kiujn gimnastikejoj efektive petas -- rezervado, galerioj, propraj domajnoj
@@ -136,7 +136,7 @@ Kreu ĉi tiujn kiel **Pakaĵo**-tipajn produktojn en Ultimate Multisite kaj asoc
 - **Mendaldonoj** lasas klientojn personecigi sen kompliki la kernajn abonplanojn
 - **Klara altgradiga vojo** signifas, ke klientoj kreskas kun vi anstataŭ foriri
 
-## La FitSite-Reto Ĝis Nun
+## La FitSite-Reto Ĝis Nun {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Kion Ni Konstruis en Ĉi Tiu Leciono
+## Kion Ni Konstruis en Ĉi Tiu Leciono {#what-we-built-this-lesson}
 
 - **Tri abonplanaj niveloj** kongruigitaj kun realaj trejnad-komercaj segmentoj
 - **Funkcia limigado** uzante la plugin- kaj ŝablonajn kontrolojn de Ultimate Multisite

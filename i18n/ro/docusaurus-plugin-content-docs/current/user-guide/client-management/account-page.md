@@ -3,7 +3,7 @@ title: Pagina Account a clientului
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pagina Account a clientului tău (v2)
+# Pagina Account a clientului tău (v2) {#your-clients-account-page-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
@@ -11,7 +11,7 @@ Când clienții se abonează la un plan în rețeaua ta, primesc acces la un sit
 
 În acest tutorial, te vom ghida prin pagina de Account a clientului și vei vedea ce pot vedea și face clienții tăi în interiorul acesteia.
 
-## Pagina Account
+## Pagina Account {#the-account-page}
 
 Pagina de Account este accesibilă făcând clic pe **Account** în Dashboard-ul clientului tău.
 
@@ -27,7 +27,7 @@ După ce un client face clic pe aceasta, va vedea o prezentare generală a membe
 
 De asemenea, poate schimba membership-ul la un alt plan sau poate achiziționa un alt pachet sau serviciu pe care îl oferi. Să analizăm fiecare secțiune separat.
 
-### Prezentarea generală a membership-ului tău:
+### Prezentarea generală a membership-ului tău: {#your-membership-overview}
 
 Primul bloc chiar sub numele site-ului web al clienților tăi afișează o prezentare generală a planului lor curent și a serviciilor/pachetelor care au fost achiziționate împreună cu acesta. Blocul afișează și numărul membership-ului, suma inițială plătită pentru acesta, cât costă planul și orice serviciu/pachet și de câte ori au fost facturați pentru acest membership. De asemenea, pot vedea dacă membership-ul este **Activ** , **Expirat** sau **Anulat**.
 
@@ -43,7 +43,7 @@ Acum, dacă clienții tăi aleg să achiziționeze pachete sau servicii pentru a
 
 Reține că codurile de cupon nu pot fi adăugate pe această pagină de schimbare a membership-ului. Dacă clientul a folosit un cod de cupon la prima achiziție de membership, codul se va aplica și acestui nou membership.
 
-### Actualizarea adresei de facturare:
+### Actualizarea adresei de facturare: {#updating-the-billing-address}
 
 Pe pagina de Account, clienții tăi își pot actualiza și adresa de facturare. Trebuie doar să facă clic pe **Actualizează** lângă _Adresa de facturare_.
 
@@ -53,7 +53,7 @@ O fereastră nouă va apărea pentru clientul tău. Tot ce trebuie să facă est
 
 ![Formular de actualizare a adresei de facturare](/img/account-page/billing-address-form.png)
 
-### Schimbarea șablonului site-ului:
+### Schimbarea șablonului site-ului: {#changing-the-site-template}
 
 Pentru a le permite clienților tăi să schimbe șabloanele site-urilor lor, trebuie să mergi la **Ultimate Multisite > Settings > Sites** și să activezi opțiunea **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ După activarea confirmării și clic pe **Procesează schimbarea** , noul șabl
 
 Clienții pot folosi și **Reset current template** din acest panou atunci când trebuie să reseteze site-ul înapoi la șablonul atribuit în prezent. La fel ca trecerea la un alt șablon, resetarea unui șablon poate suprascrie conținutul site-ului, așa că clienții ar trebui să confirme doar atunci când înțeleg acțiunea de resetare.
 
-### Adăugarea domeniilor personalizate:
+### Adăugarea domeniilor personalizate: {#adding-custom-domains}
 
 Clienții tăi vor avea, de asemenea, opțiunea de a adăuga un domeniu personalizat pentru acest plan pe pagina lor Account. Pentru a le permite clienților tăi să folosească domenii personalizate, mergi la **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ După ce fac clic pe **Next Step** , clienții tăi pot adăuga numele domeniulu
 
 După ce fac clic pe **Add Domain** , domeniul va fi adăugat în contul clientului tău. Tot ce trebuie să facă acum este să schimbe înregistrările DNS ale acestui domeniu personalizat la registratorul lor de domeniu.
 
-### Schimbarea parolei:
+### Schimbarea parolei: {#changing-password}
 
 În interiorul dashboardului contului, clienții tăi își pot schimba și parola făcând clic pe **Change Password**.
 
@@ -125,7 +125,7 @@ Aceasta va afișa o fereastră nouă în care clienții tăi vor trebui să comp
 
 ![Formular de schimbare a parolei cu câmpuri pentru parola actuală și parola nouă](/img/account-page/change-password-form.png)
 
-### Zona de pericol:
+### Zona de pericol: {#danger-zone}
 
 Avem, de asemenea, două opțiuni care sunt afișate în partea **Danger Zone**: **Delete Site** și **Delete Account**. Ambele sunt în partea Danger Zone deoarece aceste două acțiuni sunt ireversibile. Dacă clienții tăi își șterg site-ul sau contul, nu le pot recupera.
 

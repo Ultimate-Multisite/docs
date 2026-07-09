@@ -3,11 +3,11 @@ title: Umiejętność specyfikacji stron
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Umiejętność Specyfikacji Strony
+# Umiejętność Specyfikacji Strony {#site-specification-skill}
 
 **Umiejętność Specyfikacji Strony** to ustrukturyzowane podejście do zbierania informacji o celach, docelowej grupie odbiorców i tożsamości marki Twojej strony. Te informacje są zapisywane w Twojej pamięci **site_brief**, do której agentzy odwołują się w różnych sesjach, aby zapewnić spójną i kontekstową pomoc.
 
-## Co to jest Specyfikacja Strony?
+## Co to jest Specyfikacja Strony? {#what-is-site-specification}
 
 Specyfikacja Strony to proces dokumentowania:
 
@@ -19,9 +19,9 @@ Specyfikacja Strony to proces dokumentowania:
 
 Ta specyfikacja staje się Twoim **site_brief**, czyli trwałym zapisem, którego agentzy używają do zrozumienia kontekstu Twojej strony.
 
-## Dlaczego używać Specyfikacji Strony?
+## Dlaczego używać Specyfikacji Strony? {#why-use-site-specification}
 
-### Spójność między sesjami
+### Spójność między sesjami {#consistency-across-sessions}
 
 Bez site_brief musiałbyś za każdym razem, gdy rozpoczynasz nową sesję, ponownie wyjaśniać cel swojej strony. Dzięki niemu agentzy natychmiast rozumieją:
 
@@ -30,7 +30,7 @@ Bez site_brief musiałbyś za każdym razem, gdy rozpoczynasz nową sesję, pono
 - Strukturę Twoich treści
 - Twoje cele biznesowe
 
-### Lepsze rekomendacje
+### Lepsze rekomendacje {#better-recommendations}
 
 Agentzy używają Twojego site_brief, aby:
 
@@ -39,16 +39,16 @@ Agentzy używają Twojego site_brief, aby:
 - Proponować projekty spójne z Twoją marką
 - Unikać sugerowania niekompatybilnych funkcji
 
-### Szybsze wdrożenie
+### Szybsze wdrożenie {#faster-onboarding}
 
 Nowi agentzy (lub agentzy w nowych sesjach) mogą szybko się uczyć, czytając Twój site_brief, zamiast zadawać pytania wyjaśniające.
 
-## Inicjowanie Specyfikacji Strony
+## Inicjowanie Specyfikacji Strony {#initiating-site-specification}
 
-### Podczas wdrożenia Theme Builder
+### Podczas wdrożenia Theme Builder {#during-theme-builder-onboarding}
 Umiejętność Specyfikacji Strony jest automatycznie uruchamiana podczas przepływu **onboarding Theme Builder**. Agent Setup Assistant zadaje pytania i tworzy Twój site_brief.
 
-### Ręczne inicjowanie
+### Ręczne inicjowanie {#manual-initiation}
 Możesz rozpocząć Specyfikację Strony w dowolnym momencie:
 
 ```
@@ -61,9 +61,9 @@ lub
 "Pomóż mi stworzyć site brief"
 ```
 
-## Proces Specyfikacji Strony
+## Proces Specyfikacji Strony {#the-site-specification-process}
 
-### Krok 1: Cel strony
+### Krok 1: Cel strony {#step-1-site-purpose}
 
 Agent pyta:
 
@@ -79,7 +79,7 @@ Jaki jest główny cel Twojej strony?
 
 Możesz wybrać kategorię lub opisać własny cel.
 
-### Krok 2: Docelowa grupa odbiorców
+### Krok 2: Docelowa grupa odbiorców {#step-2-target-audience}
 
 ```
 Kto jest Twoją główną grupą docelową?
@@ -92,7 +92,7 @@ Kto jest Twoją główną grupą docelową?
 Jakie są ich główne potrzeby?
 ```
 
-### Krok 3: Tożsamość marki
+### Krok 3: Tożsamość marki {#step-3-brand-identity}
 
 ```
 Jakie są kolory Twojej marki?
@@ -108,7 +108,7 @@ Jak byś opisał ton swojej marki?
 - Ciepły / przyjazny
 ```
 
-### Krok 4: Cele biznesowe
+### Krok 4: Cele biznesowe {#step-4-business-goals}
 
 ```
 Jak wygląda sukces dla Twojej strony?
@@ -127,7 +127,7 @@ Jaki jest Twój główny wskaźnik?
 - Inne
 ```
 
-### Krok 5: Struktura treści
+### Krok 5: Struktura treści {#step-5-content-structure}
 
 ```
 Jak zorganizowane są Twoje treści?
@@ -146,7 +146,7 @@ Jakie typy treści używasz?
 - Inne
 ```
 
-## Twoja pamięć site_brief
+## Twoja pamięć site_brief {#your-sitebrief-memory}
 
 Po zakończeniu Specyfikacji Strony, Twoje informacje są zapisywane jako **site_brief** w pamięci agenta. Jest to ustrukturyzowany zapis zawierający:
 
@@ -167,9 +167,9 @@ Po zakończeniu Specyfikacji Strony, Twoje informacje są zapisywane jako **site
 }
 ```
 
-## Wyświetlanie i aktualizacja site_brief
+## Wyświetlanie i aktualizacja site_brief {#viewing-and-updating-your-sitebrief}
 
-### Wyświetlanie site_brief
+### Wyświetlanie site_brief {#view-your-sitebrief}
 Poproś agenta:
 
 ```
@@ -184,7 +184,7 @@ lub
 
 Agent wyświetli Twoją zapisaną specyfikację.
 
-### Aktualizacja site_brief
+### Aktualizacja site_brief {#update-your-sitebrief}
 Jeśli Twoja strona ewoluuje, możesz zaktualizować site_brief:
 
 ```
@@ -199,9 +199,9 @@ lub
 
 To ponownie uruchomi umiejętność Specyfikacji Strony, używając Twoich istniejących informacji jako punktu wyjścia.
 
-## Jak agentzy używają site_brief
+## Jak agentzy używają site_brief {#how-agents-use-sitebrief}
 
-### Rekomendacje projektowe
+### Rekomendacje projektowe {#design-recommendations}
 Kiedy prosisz o zmiany w projekcie, agentzy odwołują się do Twojego site_brief:
 
 ```
@@ -211,7 +211,7 @@ o ciepłym, rzemieślniczym tonie. Stworzę projekt, który podkreśli
 Twoją biżuterię ręcznie robioną i wartości zrównoważonego rozwoju."
 ```
 
-### Sugestie funkcji
+### Sugestie funkcji {#feature-suggestions}
 Agentzy sugerują funkcje zgodne z Twoimi celami:
 
 ```
@@ -221,7 +221,7 @@ poleciłbym: program lojalnościowy, recenzje klientów, newsletter e-mail
 i rekomendacje produktów."
 ```
 
-### Struktura treści
+### Struktura treści {#content-structure}
 Agentzy proponują organizację treści na podstawie Twojej struktury:
 
 ```
@@ -231,15 +231,15 @@ organizację postów według kategorii produktów i stworzenie 'przewodników st
 które prezentują wiele produktów razem."
 ```
 
-## Najlepsze praktyki
+## Najlepsze praktyki {#best-practices}
 
-### Bądź konkretny
+### Bądź konkretny {#be-specific}
 Zamiast "ogólna grupa odbiorców," opisz swoją faktyczną grupę docelową:
 
 - ✓ "Kobiety w wieku 25-45 lat, zainteresowane modą zrównoważoną"
 - ✗ "Każdy"
 
-### Aktualizuj regularnie
+### Aktualizuj regularnie {#update-regularly}
 W miarę ewolucji Twojej strony, aktualizuj site_brief:
 
 - Kiedy zmieniasz grupę docelową
@@ -247,20 +247,20 @@ W miarę ewolucji Twojej strony, aktualizuj site_brief:
 - Kiedy zmienia się tożsamość Twojej marki
 - Kiedy zmieniają się Twoje cele biznesowe
 
-### Używaj spójnej terminologii
+### Używaj spójnej terminologii {#use-consistent-terminology}
 Używaj tych samych terminów w różnych sesjach:
 
 - ✓ Zawsze mów "biżuteria zrównoważona" (a nie "ekologiczna biżuteria" i "zielone produkty")
 - ✓ Konsekwentnie odwołuj się do swojej grupy docelowej w ten sam sposób
 
-### Dodawaj kontekst
+### Dodawaj kontekst {#include-context}
 Podawaj informacje w tle, które pomogą agentom zrozumieć Twoje decyzje:
 
 - "Celujemy w profesjonalistów, którzy cenią jakość ponad cenę"
 - "Nasza grupa docelowa jest świadoma technologii i oczekuje nowoczesnego designu"
 - "Jesteśmy startupem finansowanym z własnych środków, więc potrzebujemy rozwiązań kosztowo efektywnych"
 
-## Związek ze wdrożeniem Theme Builder
+## Związek ze wdrożeniem Theme Builder {#relationship-to-theme-builder-onboarding}
 
 Umiejętność Specyfikacji Strony jest zintegrowana z przepływem **onboarding Theme Builder**. Po zakończeniu wdrożenia, Twój site_brief jest automatycznie tworzony na podstawie podanych przez Ciebie informacji.
 
@@ -270,7 +270,7 @@ Możesz również uruchomić Specyfikację Strony niezależnie, jeśli chcesz:
 - Zaktualizować site brief wraz z rozwojem strony
 - Stworzyć szczegółową specyfikację przed rozpoczęciem pracy w Theme Builder
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
 **Mój site_brief nie jest używany**
 - Upewnij się, że agent ma dostęp do pamięci
@@ -286,7 +286,7 @@ Możesz również uruchomić Specyfikację Strony niezależnie, jeśli chcesz:
 - Zaktualizuj swój site_brief, jeśli jest przestarzały
 - Podaj dodatkowy kontekst w swoich zapytaniach
 
-## Następne kroki
+## Następne kroki {#next-steps}
 
 Po zdefiniowaniu specyfikacji strony:
 

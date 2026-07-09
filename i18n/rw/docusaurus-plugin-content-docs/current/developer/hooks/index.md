@@ -3,11 +3,11 @@ title: Ishakiro rya Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Indango za Hooks
+# Indango za Hooks {#hooks-reference}
 
 Inyandiko zakozwe mu buryo bwikora ku **bikorwa 59** byose na **filters 118** zose muri Ultimate Multisite.
 
-## Ibikorwa
+## Ibikorwa {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Bikora mbere yo kohereza ku kwemeza umwirondoro.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Bikora ako kanya mbere y’uko cookie yo kwemeza umwirondoro ishyirwaho.
@@ -70,7 +70,7 @@ Inyandiko zakozwe mu buryo bwikora ku **bikorwa 59** byose na **filters 118** zo
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Bikora nyuma y’uko object ibitswe muri database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Emerera abatunganya plugin kongeramo actions mu gikorwa cyo gufungura.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Iyungurura igihe cy'igihe cookie y'iyemezabubasha irangiriraho.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Iyungurura gahunda yo kuyobora ahandi y'iyemezabubasha.

@@ -3,13 +3,13 @@ title: Šabloni sajtova
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Šabloni za sajtove (v2)
+# Šabloni za sajtove (v2) {#site-templates-v2}
 
 _**NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x. Ako koristite verziju 1.x,**_ **pročitajte ovaj članak.**_
 
 Naš cilj pri kreiranju premium mreže sa Ultimate Multisite je da što više procesa automatizujemo, dajući našim klijentima fleksibilnost i različite opcije za izbor kada kreiraju svoje web sajtove. Jedan lak način da postignemo taj balans je korišćenje značajke Site Templates u Ultimate Multisite-u.
 
-## Šta je Site Template?
+## Šta je Site Template? {#what-is-a-site-template}
 
 Kao što ime kaže, Site Template je osnovni (boilerplate) sajt koji se može koristiti kao osnova pri kreiranju novih sajtova u vašoj mreži.
 
@@ -17,7 +17,7 @@ To znači da možete napraviti osnovni sajt, aktivirati različite pluginove, po
 
 To zvuči sjajno, ali kako da napravim novi site template? To je što jednostavnije što može biti.
 
-## Kreiranje i uređivanje novog Site Template-a
+## Kreiranje i uređivanje novog Site Template-a {#creating-and-editing-a-new-site-template}
 
 Site Templates su jednostavno obični sajtovi u vašoj mreži. Da biste kreirali novi šablon, možete jednostavno otići na **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Na dnu forme ćete primetiti prekidač **Copy Site** (Kopiraj sajt). Ovo vam omo
 
 ![Modal za dodavanje šablona sa prekidačem kopiranja sajta](/img/config/site-templates-list.png)
 
-### Prilagođavanje sadržaja Šablona Sajta
+### Prilagođavanje sadržaja Šablona Sajta {#customizing-the-contents-of-a-site-template}
 
 Da biste prilagodili svoj šablon sajta, jednostavno idite na njegov dashboard panel i napravite potrebne promene. Možete kreirati nove objave (posts), stranice (pages), aktivirati pluginove i promeniti aktivan temu (theme). Možete čak otići u Customizer i promeniti sve vrste opcija prilagođavanja.
 
@@ -43,11 +43,11 @@ Da biste prilagodili svoj šablon sajta, jednostavno idite na njegov dashboard p
 
 Sve te podatke će biti kopirana kada klijent kreira novi sajt na osnovu tog Šablona Sajta.
 
-### Napredne opcije
+### Napredne opcije {#advanced-options}
 
 Ako znate kako da radite malo prilagođeno kodiranje, možete koristiti naš Search and Replace API (Pretraži i zameni) da biste automatski zamenili informacije na novom sajtu nakon njegove kreiranja. Ovo je korisno za stvari poput zamene nazivima kompanija na stranici "O nama" (About page), zamene e-mail adrese kontakta na stranici kontakata, itd.
 
-### Korišćenje Šablona Sajta
+### Korišćenje Šablona Sajta {#using-site-templates}
 
 Dobro, kreirali ste niz različitih Šablona Sajta sa različitim dizajnom, temama i podešavanjima. Kako ih sada učiniti korisnim u vašoj mreži?
 
@@ -59,7 +59,7 @@ U osnovi, sada možete koristiti dva pristupa (ne istovremeno):
 
   * Omogućiti klijentima da sami izaberu šablone sajta tokom prijave.
 
-#### Režim 1: Dodela Šablona Sajta
+#### Režim 1: Dodela Šablona Sajta {#mode-1-assign-site-template}
 
 U ovom modu, klijenti neće moći da biraju šablon prilikom kreiranja naloga, već vi ćete definisati koji šablon treba koristiti za svaki od vaših Planova.
 
@@ -71,7 +71,7 @@ Ovo će vas dovesti na stranicu **Edit Product**. U sekciji **Product Options**,
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mod 2: Izaberite dostupni šablon sajta
+#### Mod 2: Izaberite dostupni šablon sajta {#mode-2-choose-available-site-template}
 
 U ovom modu, dajete klijentima izbor tokom procesa prijave. Oni će moći da izaberu između različitih šablona sajtova koje definišete pod podešavanjima proizvoda. Imate opciju da ograničite šablone sajtova koje mogu da odaberu pod odabirom proizvoda. Ovo vam omogućava da imate različite skupove šablona sajta za svaki proizvod, što je idealno da istaknete različite funkcije i karakteristike za veći cenovni proizvod.
 
@@ -79,7 +79,7 @@ Na stranici **Uređivanje proizvoda**. U sekciji **Opcije proizvoda**, pronađit
 
 ![Izaberite dostupne šablone sajtova sa opcijama ponašanja](/img/config/product-site-templates.png)
 
-### Podrazumevani način: Izbor šablona sajta na obrascu za plaćanje (Checkout form)
+### Podrazumevani način: Izbor šablona sajta na obrascu za plaćanje (Checkout form) {#default-mode-site-template-selection-on-the-checkout-form}
 
 Ako želite da su vam svi vaši šabloni sajtova dostupni tokom registracije, ili možda ne želite dodatni posao dodeljivanja ili specifikovanja šablona sajtova pod svakim proizvodom koji kreirate. Tada možete jednostavno postaviti izbor šablona sajta ispod vašeg **Checkout Form** (Obrasca za plaćanje). Da biste to uradili, idite na **Ultimate Multisite > Checkout Forms** i kliknite **Edit** ispod obrasca koji želite da konfigurišete.
 
@@ -93,29 +93,29 @@ Na frontend-u, kupci vide izaber sajtova tokom plaćanja i mogu da odaberu poče
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opcije šablona sajta
+### Opcije šablona sajta {#site-template-options}
 
 Postoje i druge funkcije šablona sajtova koje možete uključiti ili isključiti u podešavanjima Ultimate Multisite.
 
 ![Opcije šablona sajta u podešavanjima Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Omogućavanje menjanja šablona (Allow Template Switching)
+#### Omogućavanje menjanja šablona (Allow Template Switching) {#allow-template-switching}
 
 Omogućavanjem ove opcije, vaši klijenti će moći da menjaju šablon koji biraju tokom procesa prijave nakon što je nalog i sajt kreirani. Ovo je korisno iz perspektive klijenta jer im omogućava ponovo izbor šablona ako kasnije shvate da je njihov prvobitni izbor nije bio najbolji za njihove specifične potrebe.
 
-#### Omogućavanje korisnicima da koriste svoj sajt kao šablon (Allow Users to use their Site as templates)
+#### Omogućavanje korisnicima da koriste svoj sajt kao šablon (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Pošto korisnici pod-sajta troše vreme na izgradnju i dizajn svog sajta, možda žele da ga kloniraju i koriste kao jedan od dostupnih šablona sajta kada kreiraju novi pod-sajt u vašoj mreži. Ova opcija im će omogućiti da to postignu.
 
-#### Kopiranje medija pri dupliranju šablona (Copy Media on Template Duplication)
+#### Kopiranje medija pri dupliranju šablona (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Provera ove opcije će kopirati medije učitane na šablon sajt u 새로 kreirani sajt. Ovo se može prebaciti (override) na svakom planu.
 
-#### **Sprečavanje indeksiranja šablona sajtova od strane pretraživača (Prevent Search Engines from indexing Site Templates)**
+#### **Sprečavanje indeksiranja šablona sajtova od strane pretraživača (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Šabloni sajtova, kao što je diskutovano u ovom članku, su osnovni (boilerplate), ali i dalje čine deo vaše mreže, što znači da su dostupni pretraživačima za pronalaženje. Ova opcija će vam omogućiti da sakrijete šablone sajtova tako da pretraživači mogu da ih indeksiraju.
 
-## Predpunjenje šablona sajtova automatskim pretraživanjem i zamenom (Pre-populating Site Templates with auto search-and-replace)
+## Predpunjenje šablona sajtova automatskim pretraživanjem i zamenom (Pre-populating Site Templates with auto search-and-replace) {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Jedna od najmoćnijih karakteristika Ultimate Multisite je mogućnost dodavanja bilo kog teksta, boja i polja na formular za registraciju. Kada to podatke uhvatimo, možemo ih koristiti da unapred popunimo sadržaj u određenim delovima izabranog šablona sajta. Zatim, kada se novi sajt objavljuje, Ultimate Multisite će zameniti mesta (placeholder-e) stvarnim informacijama koje su unete tokom registracije.
 
@@ -135,7 +135,7 @@ Ultimate Multisite će zatim automatski zameniti mesta podacima koje je klijent 
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Rešavanje problema "šablon pun mesta"
+### Rešavanje problema "šablon pun mesta" {#solving-the-template-full-of-placeholders-problem}
 
 Sve to je super, ali naiđemo na neugodan problem: sada su na našim šablonima sajtova - koje mogu da poseti kupci - puna jezive mesta koja ne daju mnogo informacija.
 

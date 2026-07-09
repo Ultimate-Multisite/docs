@@ -3,7 +3,7 @@ title: Inyandiko y’impinduka za Gahunda zishyurwa hakurikijwe ikoreshwa
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Amateka y'impinduka ya gahunda zipimwa
+# Amateka y'impinduka ya gahunda zipimwa {#metered-plans-changelog}
 
 Verisiyo 1.1.0 - Yasohotse ku wa 2026-05-05
 - Gishya: Kwishyuza AI token ku masite mato ya multisite — ukurikirane kandi wishyuze ikoreshwa rya AI token ku masite y'abakiriya ukoresheje ibiciro bishyirwaho kuri buri token
@@ -14,17 +14,17 @@ Verisiyo 1.1.0 - Yasohotse ku wa 2026-05-05
 - Gikosowe: Hakemuwe amakosa akomeye n'ibibazo byo gutangiza inshuro ebyiri igihe plugin itangiye
 - Byanonosowe: Hyongewemo check-env npm script kugira ngo ibidukikije by'abakora iterambere byishyireho ubwabyo ku ikorwa rya mbere
 
-### 1.0.3
+### 1.0.3 {#103}
 * Yavuguruwe kuri Plugin Update Checker v5
 * Hyongewemo imitwe ya WordPress plugin igezweho
 * Byanonosoye gukorana na verisiyo za WordPress ziheruka
 * Byongereye umuvuduko wo gukurikirana ikoreshwa
 
-### 1.0.2
+### 1.0.2 {#102}
 * Gukosora amakosa no kunoza umuvuduko
 * Byongereye raporo z'ikoreshwa
 
-### 1.0.0
+### 1.0.0 {#100}
 * Isohora rya mbere
 * Imikorere y'ibanze yo kwishyuza hakurikijwe ibipimo
 * Gukurikirana ikoreshwa no kubara ibirenga ku gipimo

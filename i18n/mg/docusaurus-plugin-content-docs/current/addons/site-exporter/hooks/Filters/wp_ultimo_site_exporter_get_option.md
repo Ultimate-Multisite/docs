@@ -4,11 +4,11 @@ title: Sivana - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Sivana: wp_ultimo_site_exporter_get_option
+# Sivana: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Mamerina ny sandan'ny safidin'ny tambajotra natao slugfied.
 
-## Parametera
+## Parametera {#parameters}
 
 | Anarana | Karazana | Famaritana |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Mamerina ny sandan'ny safidin'ny tambajotra natao slugfied.
 | $option_name | `string` | Ny anaran'ny safidy. |
 | $default | `mixed` | Ny sanda default. |
 
-### Hatramin'ny
+### Hatramin'ny {#since}
 
 - 1.9.6
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) amin'ny andalana 126
 
 
-## Mamerina
+## Mamerina {#returns}
 Ny sandan'ny safidin'ny tambajotra natao slugfield.

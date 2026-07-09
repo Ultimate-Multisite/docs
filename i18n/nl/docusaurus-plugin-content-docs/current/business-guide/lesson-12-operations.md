@@ -3,17 +3,17 @@ title: 'Les 12: Het Bedrijf Runnen'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Les 12: Het Bedrijf Runnen
+# Les 12: Het Bedrijf Runnen {#lesson-12-running-the-business}
 
 Een platform is geen project dat je afwerkt; het is een bedrijf dat je draaiende houdt. In deze les behandelen we de dagelijkse bedrijfsvoering van FitSite: ondersteuning, facturatie, onderhoud en het tevreden houden van klanten.
 
-## Waar We Gebleven Zijn
+## Waar We Gebleven Zijn {#where-we-left-off}
 
 FitSite is live en klanten melden zich aan. Nu moet je de operatie duurzaam laten draaien.
 
-## Dagelijkse Operaties
+## Dagelijkse Operaties {#daily-operations}
 
-### Monitoring
+### Monitoring {#monitoring}
 
 Controleer deze dagelijks (of stel meldingen in):
 
@@ -22,7 +22,7 @@ Controleer deze dagelijks (of stel meldingen in):
 - **Mislukte betalingen**: Zijn er betalingsmislukkingen die aandacht vereisen?
 - **Supportverzoeken**: Zijn er onbeantwoorde vragen van klanten?
 
-### Klantondersteuning
+### Klantondersteuning {#customer-support}
 
 Je nichefocus is hier een voordeel. Omdat al je klanten fitnessstudio's zijn, zul je steeds dezelfde vragen tegenkomen:
 
@@ -36,7 +36,7 @@ Je nichefocus is hier een voordeel. Omdat al je klanten fitnessstudio's zijn, zu
 
 Bouw je kennisbank (gestart in Les 8) rond deze terugkerende vragen. Elk supportticket dat een kennisbankartikel had kunnen zijn, is een signaal om dat artikel te schrijven.
 
-### Support Niveaus
+### Support Niveaus {#support-tiers}
 
 Naarmate je groeit, structureer je de ondersteuning per plan:
 
@@ -48,9 +48,9 @@ Naarmate je groeit, structureer je de ondersteuning per plan:
 
 De [Support Tickets addon](/addons/support-tickets) kan helpen bij het beheren van supportverzoeken binnen het platform.
 
-## Facturatieprocessen
+## Facturatieprocessen {#billing-operations}
 
-### Periodieke Betalingen
+### Periodieke Betalingen {#recurring-payments}
 
 Ultimate Multisite beheert periodieke facturering automatisch via je payment gateway. Jouw taak is om te monitoren op:
 
@@ -58,7 +58,7 @@ Ultimate Multisite beheert periodieke facturering automatisch via je payment gat
 - **Dunning**: Stel automatische herhaallogica in via je payment gateway (Stripe regelt dit goed)
 - **Annuleringsverzoeken**: Begrijp waarom klanten vertrekken. Elke annulering is feedback.
 
-### Lidmaatschappen Beheren
+### Lidmaatschappen Beheren {#managing-memberships}
 
 Navigeer naar **Ultimate Multisite > Memberships** om:
 
@@ -69,13 +69,13 @@ Navigeer naar **Ultimate Multisite > Memberships** om:
 
 Zie [Managing Memberships](/user-guide/administration/managing-memberships) voor de volledige referentie.
 
-### Facturatie
+### Facturatie {#invoicing}
 
 Zorg ervoor dat facturen correct worden gegenereerd voor elke betaling. Klanten hebben facturen mogelijk nodig voor de verantwoording van bedrijfskosten. Zie [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Platform Onderhoud
+## Platform Onderhoud {#platform-maintenance}
 
-### WordPress en Plugin Updates
+### WordPress en Plugin Updates {#wordpress-and-plugin-updates}
 
 Als netwerkbeheerder ben je verantwoordelijk voor:
 
@@ -88,14 +88,14 @@ Als netwerkbeheerder ben je verantwoordelijk voor:
 Een defecte update beïnvloedt elke klantwebsite op je netwerk. Test updates altijd eerst op een stagingkopie van je netwerk.
 :::
 
-### Beveiliging
+### Beveiliging {#security}
 
 - Houd alle software up-to-date
 - Gebruik sterke wachtwoorden en tweefactorauthenticatie voor admin-accounts
 - Monitor op verdachte activiteiten
 - Zorg voor een plan voor beveiligingsincidenten
 
-### Prestaties
+### Prestaties {#performance}
 
 Naarmate je netwerk groeit, monitor je:
 
@@ -105,9 +105,9 @@ Naarmate je netwerk groeit, monitor je:
 
 Overweeg het implementeren van caching (pagina- en objectcaching) en een CDN als je dat nog niet gedaan hebt. De [Cloudflare integration](/user-guide/host-integrations/cloudflare) regelt veel van dit.
 
-## Klantlevenscyclusbeheer
+## Klantlevenscyclusbeheer {#customer-lifecycle-management}
 
-### Churn Verminderen
+### Churn Verminderen {#reducing-churn}
 
 Churn is het percentage klanten dat elke maand annuleert. Voor een abonnementsbedrijf is het verminderen van churn net zo belangrijk als het werven van nieuwe klanten.
 
@@ -119,7 +119,7 @@ Churn is het percentage klanten dat elke maand annuleert. Voor een abonnementsbe
 - Ze vonden een goedkopere alternatief → versterk je nichewaarde
 - Hun bedrijf sloot → onvermijdelijk, maar houd dit apart bij
 
-### Upgrades Stimuleren
+### Upgrades Stimuleren {#encouraging-upgrades}
 
 Klanten op het Starter-niveau die succesvol zijn, moeten worden aangemoedigd om te upgraden:
 
@@ -127,7 +127,7 @@ Klanten op het Starter-niveau die succesvol zijn, moeten worden aangemoedigd om 
 - Stuur gerichte e-mails waarin de functies van het Growth-plan worden benadrukt waar ze baat bij zouden hebben
 - Toon wat Growth/Pro-klanten hebben gebouwd
 
-### Win-Back Campagnes
+### Win-Back Campagnes {#win-back-campaigns}
 
 Wanneer een klant annuleert:
 
@@ -135,30 +135,30 @@ Wanneer een klant annuleert:
 2. Beantwoord hun zorg indien mogelijk
 3. Bied een korting om terug te keren (30-60 dagen na annulering)
 
-## Wekelijkse en Maandelijkse Routines
+## Wekelijkse en Maandelijkse Routines {#weekly-and-monthly-routines}
 
-### Wekelijks
+### Wekelijks {#weekly}
 
 - Bekijk nieuwe aanmeldingen en annuleringen
 - Beantwoord alle open supporttickets
 - Controleer de platformprestaties en uptime
 - Controleer op mislukte betalingen
 
-### Maandelijks
+### Maandelijks {#monthly}
 
 - Analyseer belangrijke metrics (MRR, churn, nieuwe klanten, upgrades)
 - Pas WordPress- en plugin-updates aan (na stagingtest)
 - Herzien en update de kennisbank op basis van supportpatronen
 - Stuur een nieuwsbrief of update naar klanten (nieuwe functies, tips, nieuws uit de fitnessindustrie)
 
-### Driemaandelijks
+### Driemaandelijks {#quarterly}
 
 - Evalueer de prijzen ten opzichte van concurrenten en klantfeedback
 - Beoordeel de template-ontwerpen – moeten ze vernieuwd worden?
 - Beoordeel de hostingcapaciteit – moet je opschalen?
 - Herzien en verbeter de onboarding op basis van activatiedata
 
-## Wat We In Deze Les Hebben Opgebouwd
+## Wat We In Deze Les Hebben Opgebouwd {#what-we-built-this-lesson}
 
 - **Dagelijkse monitoringroutines** voor uptime, aanmeldingen, betalingen en support
 - **Een gelaagde supportstructuur** afgestemd op planniveaus

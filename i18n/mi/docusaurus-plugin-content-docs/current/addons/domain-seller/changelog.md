@@ -3,7 +3,7 @@ title: Rangitaki Panonitanga Kaihoko Ingoa Rohe
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Rangitaki Huringa Domain Seller
+# Rangitaki Huringa Domain Seller {#domain-seller-changelog}
 
 Putanga 1.3.0 - I tukuna i te 2026-06-02
 - Hou: Kua tāpirihia he whakatūpato network-admin ina tino iti rawa te toenga reseller HostAfrica
@@ -134,20 +134,20 @@ Putanga 1.0.0 - I tukuna i te 2025-09-28
 * **Kua whakatikahia:** Kua whakahōutia ngā waehere v1 katoa kua whakakoretia ki ngā paerewa v2
 * **Kua tangohia:** Hototahitanga v1 tawhito (panonitanga pakaru)
 
-### Ngā Putanga o Mua (v1 Tuku iho)
+### Ngā Putanga o Mua (v1 Tuku iho) {#previous-versions-v1-legacy}
 
-### Putanga 0.0.3 - 20/08/2019
+### Putanga 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Kua whakatikahia: Korehototahi ki Groundhogg CRM
 * Tuhipoka: Koinei te tukunga whakamutunga i hototahi ki v1
 
-### Putanga 0.0.2 - 07/12/2018
+### Putanga 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Kua whakatikahia: Kua tangohia te āpure License Key
 * Kua whakatikahia: Kua ngaro ngā ripa mahere ina hohe te plugin āhuatanga
 * Kua whakapai ake: Kua tāpirihia he pātene tīpoka ki te āpure rēhitatanga
 
-### Putanga 0.0.1 - Tukunga Tuatahi
+### Putanga 0.0.1 - Tukunga Tuatahi {#version-001---initial-release}
 
 * Tuituitanga OpenSRS taketake mō WP Ultimo v1
 * Rapu rohe me te rēhitatanga māmā

@@ -4,21 +4,21 @@ title: フィルタ - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# Filter: networks_user_is_network_admin
+# Filter: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
 
 ユーザーが管理者であるネットワークをフィルタリングします。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $ | `array\|bool` | ユーザーにネットワークがない場合は false、ある場合はネットワーク ID のリスト。 |
 | $ | `int` | ネットワークを返す対象のユーザー ID。 |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 定義は [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L703) の 703 行目にあります。

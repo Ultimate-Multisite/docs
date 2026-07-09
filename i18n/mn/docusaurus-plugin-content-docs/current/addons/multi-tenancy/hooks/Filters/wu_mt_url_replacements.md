@@ -4,11 +4,11 @@ title: Шүүлтүүр - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Шүүлтүүр: wu_mt_url_replacements
+# Шүүлтүүр: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 URL солих хосуудыг шүүнэ.
 
-## Параметрүүд
+## Параметрүүд {#parameters}
 
 | Нэр | Төрөл | Тайлбар |
 |------|------|-------------|
@@ -17,9 +17,9 @@ URL солих хосуудыг шүүнэ.
 | $new_url | `string` | Шинэ URL. |
 | $blog_id | `int` | Blog ID. |
 
-### Хувилбараас
+### Хувилбараас {#since}
 
 - 1.0.0
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) дотор 151-р мөрөнд тодорхойлсон.

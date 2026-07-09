@@ -3,11 +3,11 @@ title: Hooklar salgylanmasy
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks salgylanmasy
+# Hooks salgylanmasy {#hooks-reference}
 
 Ultimate Multisite-däki ähli **59 amal** we **118 süzgüç** üçin awtomatiki döredilen resminamalar.
 
-## Amallar
+## Amallar {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Autentifikasiýa gönükdirmesinden öň işleýär.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Autentifikasiýa cookie-si goýulmazdan edil öň işleýär.
@@ -70,7 +70,7 @@ Ultimate Multisite-däki ähli **59 amal** we **118 süzgüç** üçin awtomatik
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Obýekt maglumatlar bazasyna saklanandan soň işe düşýär.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Plagin işläp düzüjilere açmak prosesine hereketler goşmaga rugsat berýär.
 
-## Süzgüçler
+## Süzgüçler {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Autentifikasiýa cookie-siniň möhletiniň gutarýan döwrüniň dowamlylygyny süzýär.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Autentifikasiýa ugrukdyrma shemasyny süzýär.

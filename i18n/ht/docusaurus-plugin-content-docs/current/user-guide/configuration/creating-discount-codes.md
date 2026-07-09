@@ -3,13 +3,13 @@ title: Kreye Kòd Rabais
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kreye Kod Rabote (v2)
+# Kreye Kod Rabote (v2) {#creating-discount-codes-v2}
 
 _**NOTE KRITIK: Sa tèks sa a refere a Ultimate Multisite v2.x.**_
 
 Avèk Ultimate Multisite ou ka kreye discount codes pou ba kliyan ou desonkou pou abònman yo. E kreye yo fasil!
 
-## Kreye ak Edite Discount Codes
+## Kreye ak Edite Discount Codes {#creating-and-editing-discount-codes}
 
 Pou kreye oswa edite yon discount code, ale nan **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kòpon an kounye a sou lis ou e, men apre sa, ou ka klike pou **edite oswa delet
 
 ###
 
-### Itilize Paramèt URL:
+### Itilize Paramèt URL: {#using-url-parameters}
 
 Si ou vle personalize tab pri ou yo oswa bati yon paj kòd ti kòpon ki chou pou sit entèn ou epi ou vle aplike yon kòd ti kòpon sou fòm checkout ou otomatikman, ou ka fè sa atravè paramèt URL.
 

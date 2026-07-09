@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Emails
+# Emails {#emails}
 
 Dodatek Ultimate Multisite: Emails lastnikom omrežij omogoča zagotavljanje in upravljanje e-poštnih računov strank skupaj s spletišči in članstvi. Različica 1.1.0 dodaja upravljanje e-poštnih računov za stranke, enotno prijavo v spletno pošto, podporo za posredovalnike CyberPanel in izboljšave zagotavljanja med nakupom.
 
-## Ključne funkcije
+## Ključne funkcije {#key-features}
 
 * **Gradnik e-poštnega računa za stranke**: Stranke lahko ustvarjajo in upravljajo poštne predale na svoji strani računa, potem ko imajo aktivno e-poštno članstvo.
 * **SSO za spletno pošto in čarobne povezave**: Stranke lahko odprejo spletno pošto neposredno s strani računa z overjanjem z enim klikom, kadar ponudnik to podpira.
@@ -20,14 +20,14 @@ Dodatek Ultimate Multisite: Emails lastnikom omrežij omogoča zagotavljanje in 
 * **Posredovalniki CyberPanel**: Omrežja, podprta s CyberPanel, lahko ustvarjajo in upravljajo e-poštne posredovalnike kot del poteka e-poštne storitve.
 * **Nastavitve, prilagojene ponudniku**: Stran z nastavitvami filtrira ponudnike na aktivne, konfigurirane integracije, tako da skrbniki vidijo samo uporabne možnosti.
 
-## Zahteve
+## Zahteve {#requirements}
 
 * Ultimate Multisite 2.0.0 ali novejši
 * Namestitev WordPress Multisite
 * Vsaj ena konfigurirana integracija ponudnika e-pošte
 * Poverilnice API ponudnika z dovoljenjem za ustvarjanje poštnih predalov, spreminjanje gesel in izdajanje povezav za dostop do spletne pošte, kjer je to podprto
 
-## Namestitev
+## Namestitev {#installation}
 
 1. Naložite datoteke vtičnika v `/wp-content/plugins/ultimate-multisite-emails`.
 2. Omrežno aktivirajte dodatek iz **Vtičniki** v skrbništvu omrežja WordPress.
@@ -35,7 +35,7 @@ Dodatek Ultimate Multisite: Emails lastnikom omrežij omogoča zagotavljanje in 
 4. Omogočite integracije ponudnikov e-pošte, ki jih želite ponuditi strankam.
 5. Shranite nastavitve, nato preizkusite ustvarjanje računa z neprodukcijsko stranko ali pripravljalnim spletiščem.
 
-## Kako deluje potek prodaje e-pošte
+## Kako deluje potek prodaje e-pošte {#how-the-email-seller-flow-works}
 
 Prodaja e-pošte ima dve ločeni plasti:
 
@@ -53,7 +53,7 @@ To pomeni, da je običajen potek za stranko:
 5. Plošča **E-poštni računi** se prikaže za to aktivno e-poštno članstvo.
 6. Stranka klikne **Ustvari račun**, vnese lokalni del, kot je `info`, nastavi geslo in dodatek ustvari `info@their-domain.com` pri konfiguriranem ponudniku.
 
-## Konfiguriranje e-poštnega izdelka
+## Konfiguriranje e-poštnega izdelka {#configure-an-email-product}
 
 Ustvarite en e-poštni izdelek za vsak e-poštni paket, ki ga želite prodajati ali podariti. Če ste novi pri nastavitvi izdelkov, začnite z [Ustvarjanje vašega prvega naročniškega izdelka](../../user-guide/configuration/creating-your-first-subscription-product), nato se vrnite sem za nastavitve, specifične za e-pošto.
 
@@ -67,7 +67,7 @@ Ustvarite en e-poštni izdelek za vsak e-poštni paket, ki ga želite prodajati 
 
 V izbirniku ponudnika se prikažejo samo ponudniki, ki so omogočeni in v celoti konfigurirani na strani **Integracije**. Če je izbirnik prazen, najprej konfigurirajte in preizkusite ponudnika.
 
-## Dodajanje e-pošte v nakup
+## Dodajanje e-pošte v nakup {#add-email-to-checkout}
 
 E-poštni izdelki so običajno ponujeni kot dodatki k paketu spletišča. Za splošni potek dela urejevalnika nakupa glejte [Obrazci za nakup](../../user-guide/configuration/checkout-forms).
 
@@ -79,7 +79,7 @@ E-poštni izdelki so običajno ponujeni kot dodatki k paketu spletišča. Za spl
 
 E-poštna domena se vzame iz domene spletišča stranke. Stranke ne vnesejo e-poštne domene v koraku e-poštnega izdelka.
 
-## Upravljanje e-pošte v računu stranke
+## Upravljanje e-pošte v računu stranke {#customer-account-email-management}
 
 Različica 1.1.0 dodaja gradnik za upravljanje e-pošte na stran računa stranke. Uporabite ga, kadar naj stranke same ustvarjajo in vzdržujejo poštne predale za svoja spletišča.
 
@@ -94,7 +94,7 @@ Gradnik uporablja sistem trenutnega konteksta strani računa Ultimate Multisite,
 
 Če stranka ne vidi e-poštne plošče, preverite, ali ima **aktivno članstvo za e-poštni produkt**, ali je članstvo povezano z domeno spletnega mesta in ali ima produkt konfiguriranega ponudnika.
 
-## Dodelitev brezplačnega e-poštnega paketa stranki
+## Dodelitev brezplačnega e-poštnega paketa stranki {#giving-a-customer-a-free-email-plan}
 
 Če želite stranki dodeliti e-pošto brez zaračunavanja, najprej podelite **e-poštno upravičenje**, nato ustvarite poštni predal ali omogočite, da ga ustvari stranka.
 
@@ -106,7 +106,7 @@ Priporočene možnosti:
 
 Če želite, da stranka sama upravlja poštni predal s strani računa, poskrbite, da ima aktivno e-poštno članstvo za domeno. Ročno ustvarjen poštni predal pri ponudniku brez tega članstva lahko obstaja, vendar stranka zanj morda ne bo videla samopostrežne e-poštne plošče.
 
-## Skrbniško ustvarjeni računi in »brez številke naročila«
+## Skrbniško ustvarjeni računi in »brez številke naročila« {#admin-created-accounts-and-no-order-number}
 
 Skrbniška stran **E-poštni računi** ustvari ali ureja poštni predal pri ponudniku. To ni prvi korak za prodajo ali dodelitev e-poštnega paketa.
 
@@ -122,7 +122,7 @@ Namesto tega uporabite ta vrstni red postopka:
 
 Če morate za stranko ustvariti samo poštni predal pri ponudniku in ne potrebujete samopostrežnega upravljanja na strani računa, je lahko skrbniško ustvarjen račun dovolj. Če želite, da ga stranka vidi in upravlja v Ultimate Multisite, ustvarite tudi e-poštno članstvo.
 
-## Webmail SSO in prijava z magic-link
+## Webmail SSO in prijava z magic-link {#webmail-sso-and-magic-link-login}
 
 Webmail SSO strankam omogoči neposredno dejanje **Odpri spletno pošto** s strani računa. Ko ga aktivni ponudnik podpira, dodatek zahteva kratkotrajni dostopni URL in stranko preusmeri v spletno pošto, ne da bi morala kopirati poverilnice poštnega predala.
 
@@ -134,7 +134,7 @@ Vedenje ponudnikov se lahko razlikuje:
 
 Dostop do spletne pošte omogočite samo za ponudnike, pri katerih ste konfigurirali zahtevane API poverilnice. Če dejanje pri ponudniku manjka, najprej potrdite, da je ponudnik aktiven, konfiguriran in podpira povezave za prijavo v spletno pošto.
 
-## Oskrba ob zaključku nakupa
+## Oskrba ob zaključku nakupa {#checkout-provisioning}
 
 Dodatek med zaključkom nakupa zagotovi e-poštni **kontekst članstva**. Zabeleži ponudnika, omejitev računov, kvoto in domeno spletnega mesta, tako da lahko stranke po nakupu s strani računa ustvarijo lastna imena poštnih predalov.
 
@@ -148,15 +148,15 @@ Priporočen postopek uvedbe:
 
 Če oskrba ne uspe, lahko strankin račun in članstvo še vedno obstajata, medtem ko e-poštno članstvo ali poštni predal pri ponudniku zahteva skrbniško nadaljnje ukrepanje. Pred ponovnim poskusom preverite dnevnike dejavnosti Ultimate Multisite in dnevnike ponudnika.
 
-## E-poštni posredovalniki CyberPanel
+## E-poštni posredovalniki CyberPanel {#cyberpanel-email-forwarders}
 
 Za omrežja, podprta s CyberPanel, različica 1.1.0 dodaja podporo za e-poštne posredovalnike. Posredovalnike uporabite, ko stranke potrebujejo naslove, kot je `info@customer-domain.test`, za preusmeritev pošte v drug nabiralnik brez ustvarjanja polnega poštnega predala.
 
 Preden ponudite posredovalnike, potrdite, da je integracija CyberPanel konfigurirana in dosegljiva. Za zahtevane konstante gostitelja, uporabniškega imena, gesla in paketa glejte vodnik [Integracija CyberPanel](../../user-guide/administration/cyberpanel-integration).
 
-## Dnevnik sprememb
+## Dnevnik sprememb {#changelog}
 
-### Različica 1.1.0 – izdana 2026-05-05
+### Različica 1.1.0 – izdana 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Novo: Webmail SSO in prijava z magic-link — stranke lahko do webmaila dostopajo neposredno iz svojega accounta z overjanjem z enim klikom.
 * Novo: Funkcionalnost za spremembo gesla je dodana v gradnik za upravljanje email accounta.
@@ -170,28 +170,28 @@ Preden ponudite posredovalnike, potrdite, da je integracija CyberPanel konfiguri
 * Popravek: Neželena poplava dnevniških zapisov na zahtevo je odstranjena iz inicializacije Email_Account_Manager.
 * Izboljšano: Stran z nastavitvami zdaj filtrira prikaz tako, da pokaže samo aktivne in konfigurirane ponudnike e-pošte.
 
-## Pogosta vprašanja
+## Pogosta vprašanja {#frequently-asked-questions}
 
-### Ali lahko stranke ustvarijo svoje email accounte?
+### Ali lahko stranke ustvarijo svoje email accounte? {#can-customers-create-their-own-email-accounts}
 
 Da. Ko ima stranka aktivno email membership za domeno in product dovoljuje dodatne accounte, lahko stranke ustvarjajo in upravljajo svoje poštne predale na strani accounta.
 
-### Ali vsak ponudnik podpira webmail SSO?
+### Ali vsak ponudnik podpira webmail SSO? {#does-every-provider-support-webmail-sso}
 
 Ne. Podpora za SSO in magic-link je odvisna od aktivnega ponudnika e-pošte. Ponudniki brez API-ja za povezavo za dostop lahko še vedno podpirajo ustvarjanje poštnih predalov in spremembe gesel.
 
-### Ali lahko administratorji ustvarijo email accounte za stranke?
+### Ali lahko administratorji ustvarijo email accounte za stranke? {#can-administrators-create-email-accounts-for-customers}
 
 Da. Administratorji lahko ustvarijo email accounte iz administratorskega vmesnika, vključno z nastavitvijo začetnega gesla ob ustvarjanju accounta. Za samopostrežno upravljanje stranke poskrbite tudi, da ima stranka aktivno email membership za domeno.
 
-### Ali lahko email account podarim brezplačno?
+### Ali lahko email account podarim brezplačno? {#can-i-give-an-email-account-away-for-free}
 
 Da. Ustvarite brezplačen Email product oziroma product z ničelno ceno in ga dodajte kot aktivno membership za stranko ali pa naj stranka zaključi checkout s 100-% popustom. Ko email membership obstaja, lahko stranka ali administrator ustvari dejanski poštni predal.
 
-### Zakaj dodeljevanje email accounta zahteva številko naročila?
+### Zakaj dodeljevanje email accounta zahteva številko naročila? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Polje Membership poišče obstoječe Ultimate Multisite membership po njegovi referenčni številki/številki naročila. Če stranka ni kupila email producta in niste ročno ustvarili email membership, ni email membershipa/naročila, ki bi ga bilo mogoče dodeliti. Najprej ustvarite email membership, nato ustvarite ali dodelite poštni predal.
 
-### Ali so forwarderji enaki kot poštni predali?
+### Ali so forwarderji enaki kot poštni predali? {#are-forwarders-the-same-as-mailboxes}
 
 Ne. Poštni predal shranjuje pošto in ima prijavne podatke. Forwarder preusmeri pošto na drug naslov in ne zagotavlja ločenega nabiralnika.

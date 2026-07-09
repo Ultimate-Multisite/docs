@@ -3,9 +3,9 @@ title: Ku Bilaabidda Horumarinta Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Horumarinta Addon
+# Horumarinta Addon {#addon-development}
 
-## Qaab-dhismeedka Addon
+## Qaab-dhismeedka Addon {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Qaabka Faylka Ugu Weyn ee Addon
+## Qaabka Faylka Ugu Weyn ee Addon {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Tusaale Model Gaar ah
+## Tusaale Model Gaar ah {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Isku-xirka Bogga Admin
+## Isku-xirka Bogga Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Tijaabinta Addon-kaaga
+## Tijaabinta Addon-kaaga {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 meelaha ballaarinta
+## v2.13.0 meelaha ballaarinta {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 wuxuu ku darayaa dhowr meelood oo ballaarin ah oo faa'iido u leh addons-ka ku dhexgala kiraystayaal madax-bannaan, checkout domains, ama otomaatigga DNS ee bixiyaha martigelinta.
 
-### SSO iyo URL-yada maareynta goobta ugu weyn
+### SSO iyo URL-yada maareynta goobta ugu weyn {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Domains-ka aasaasiga ah ee foomka checkout
+### Domains-ka aasaasiga ah ee foomka checkout {#checkout-form-base-domains}
 
 Adeegso `wu_checkout_form_base_domains` marka addon-kaagu bixiyo domains aasaasi ah oo wadaag ah oo dheeraad ah oo ay tahay inay u dhaqmaan sida domains-ka **Site URL** ee foomka checkout halkii ay ka ahaan lahaayeen khariidadeyn gaar ah oo goob kasta ah:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite wuxuu caadiyeeyaa martigeliyayaashan wuxuuna ka boodaa diiwaannada domain-ka la khariidadeeyay ee otomaatiga ah ee goob kasta u gaarka ah.
 
-### Abuurista otomaatiga ah ee diiwaanka domain-ka
+### Abuurista otomaatiga ah ee diiwaanka domain-ka {#automatic-domain-record-creation}
 
 Adeegso `wu_should_create_domain_record_for_site` marka addon-kaagu u baahan yahay inuu xannibo ama dib u dhigo abuurista otomaatiga ah ee diiwaanka domain-ka ee goob cusub oo la abuuray:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Isdhexgalka bixiyaha martigelinta ee dhagaysta `wu_add_subdomain` wuxuu abuuri karaa diiwaanno DNS ah oo dhinaca bixiyaha ah marka goobaha la abuuro. Haddii isdhexgal aan loo diiwaangelin falkaas, Ultimate Multisite wuxuu ka boodaa shaqada asalka ah ee madhan.
 
-## Tallaabooyinka Xiga
+## Tallaabooyinka Xiga {#next-steps}
 
 - Dib u eeg [Tixraaca Hooks](/developer/hooks) si aad u aragto actions iyo filters la heli karo
 - Hubi [Dulmarka REST API](/developer/rest-api/overview) si aad u hesho isdhexgalka API

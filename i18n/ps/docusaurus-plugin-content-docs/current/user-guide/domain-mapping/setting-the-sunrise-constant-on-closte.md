@@ -3,13 +3,13 @@ title: د کلستৰ ওপৰত سنيز کنستان্ট ayarl কৰা
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-ا د Sunrise constant ته true کول喺 Closte کې
+# Closte-ا د Sunrise constant ته true کول喺 Closte کې {#setting-the-sunrise-constant-to-true-on-closte}
 
 کله چې یو څه هاست میزبانहरू (host providers) امنیتي دلته `wp-config.php` کي قفلوي، دا معنی دی چې Ultimate Multisite نمونې خود بخود او د دامنه مپینګ (domain mapping) او نورو خوندونو کار کولو لپاره اړین constantونه اضافه کول نشي. Closte هم einي यस्तो هاست میزبان دی.
 
 خو Closte ته یو لارښوونەوە لري چې په امنیتي ډول `wp-config.php` کې constantونه اضافه کړئ. تاسو باید زیرو ګامونه ورسېږئ:
 
-## د Closte داشبورد کې
+## د Closte داشبورد کې {#on-the-closte-dashboard}
 
 پله، [د خپل Closte حساب څخه لاگ شئ](https://app.closte.com/)، върху Sites منوټ (menu item) کلیک وکړئ، بیا په هغه سایت باندې د Dashboard لینک ته کلیک وکړئ چې تاسو کار پرې کوئ:
 

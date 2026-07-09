@@ -3,7 +3,7 @@ title: நிர்வாக பக்க உருவாக்கி
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# நிர்வாக பக்க உருவாக்கி
+# நிர்வாக பக்க உருவாக்கி {#admin-page-creator}
 
 இந்த அம்சம் **Admin Page Creator** addon மூலம் வழங்கப்படுகிறது.
 

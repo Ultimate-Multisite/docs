@@ -3,11 +3,11 @@ title: Webhooklarni qayta ishlash
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook bilan ishlash
+# Webhook bilan ishlash {#webhook-handling}
 
 Tashqi xizmatlardan hodisalarni qabul qilish va maʼlumotlarni Ultimate Multisite bilan sinxronlash uchun maxsus webhook endpointlar yarating.
 
-## Maxsus Webhook endpoint
+## Maxsus Webhook endpoint {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Xavfsizlik masalalari
+## Xavfsizlik masalalari {#security-considerations}
 
 - HMAC yoki umumiy maxfiy kalit yordamida webhook imzolarini har doim tekshiring
 - REST marshrutingizda `permission_callback` dan foydalaning — ishchi muhitda uni hech qachon `__return_true` ga sozlamang

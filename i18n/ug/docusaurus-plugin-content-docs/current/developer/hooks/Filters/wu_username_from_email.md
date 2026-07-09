@@ -4,11 +4,11 @@ title: سۈزگۈچ - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filter: wu_username_from_email
+# Filter: wu_username_from_email {#filter-wuusernamefromemail}
 
 يېڭى خېرىدار ئىشلەتكۈچى نامىنى سۈزۈڭ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: ab432839e318d008d082383ff5a18467
 | $new_user_args | `array` | يېڭى ئىشلەتكۈچى args لارنىڭ array سى، بەلكىم ئىسىم ۋە فامىلىنى ئۆز ئىچىگە ئالىدۇ. |
 | $suffix | `string` | ئىشلەتكۈچى نامىغا قوشۇپ، ئۇنى بىردىنبىر قىلىدىغان string. |
 
-### شۇ نەشرىدىن باشلاپ
+### شۇ نەشرىدىن باشلاپ {#since}
 
 - 2.0.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) دا 516-قۇردا ئېنىقلانغان

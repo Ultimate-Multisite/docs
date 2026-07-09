@@ -3,7 +3,7 @@ title: Mailchimp Changelog
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Dnevnik promjena MailChimp-a
+# Dnevnik promjena MailChimp-a {#mailchimp-changelog}
 
 Verzija: 1.1.1 - Objavljeno 2025-09-28
 

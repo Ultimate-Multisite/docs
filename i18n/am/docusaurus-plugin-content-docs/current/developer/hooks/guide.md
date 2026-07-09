@@ -3,15 +3,15 @@ title: የመንጠቆዎች አጠቃቀም መመሪያ
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# የHooks አጠቃቀም መመሪያ
+# የHooks አጠቃቀም መመሪያ {#hooks-usage-guide}
 
 Ultimate Multisite ከ200 በላይ action hooks እና ከ280 በላይ filter hooks አሉት። ይህ ገጽ በጣም በተደጋጋሚ ጥቅም ላይ የሚውሉ hooks ምሳሌዎችን በመስጠት ይሸፍናል። ሙሉ በሙሉ በራስ-የተፈጠረ ማጣቀሻ (reference) የሚያስፈልግ ከሆነ፣ በዚህ ክፍል ውስጥ ያሉትን ሌሎች ገጾች ይመልከቱ።
 
-## የድርጊት Hooks (Action Hooks)
+## የድርጊት Hooks (Action Hooks) {#action-hooks}
 
-### የደንበኛ የህይወት ዑደት (Customer Lifecycle)
+### የደንበኛ የህይወት ዑደት (Customer Lifecycle) {#customer-lifecycle}
 
-#### ከተጠቃሚ መረጃ በኋላ መፍጠር (After Customer Creation)
+#### ከተጠቃሚ መረጃ በኋላ መፍጠር (After Customer Creation) {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### የደንበኛ ሁኔታ ለውጥ (Customer Status Change)
+#### የደንበኛ ሁኔታ ለውጥ (Customer Status Change) {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### የጣቢያ Hooks (Site Hooks)
+### የጣቢያ Hooks (Site Hooks) {#site-hooks}
 
-#### ጣቢያው ከተሰራ በኋላ (After Site Published)
+#### ጣቢያው ከተሰራ በኋላ (After Site Published) {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### የቴምፕሌት መተግበሪያ ከመሆኑ በፊት (Before Template Application)
+#### የቴምፕሌት መተግበሪያ ከመሆኑ በፊት (Before Template Application) {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### የአባልነት Hooks (Membership Hooks)
+### የአባልነት Hooks (Membership Hooks) {#membership-hooks}
 
-#### የሁኔታ ሽግግሮች (Status Transitions)
+#### የሁኔታ ሽግግሮች (Status Transitions) {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### የክፍያ Hooks (Payment Hooks)
+### የክፍያ Hooks (Payment Hooks) {#payment-hooks}
 
-#### ክፍያ ሲጠናቀቅ / ሲሳሳት (Payment Completed / Failed)
+#### ክፍያ ሲጠናቀቅ / ሲሳሳት (Payment Completed / Failed) {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### የቼክአው Hooks (Checkout Hooks)
+### የቼክአው Hooks (Checkout Hooks) {#checkout-hooks}
 
-#### ከመስራት በፊት / ከተጠናቀቀ በኋላ (Before Processing / After Completion)
+#### ከመስራት በፊት / ከተጠናቀቀ በኋላ (Before Processing / After Completion) {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### የዶሜን Hooks (Domain Hooks)
+### የዶሜን Hooks (Domain Hooks) {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## የFilter Hooks (Filter Hooks)
+## የFilter Hooks (Filter Hooks) {#filter-hooks}
 
-### የዋጋ መለያዎች (Pricing Filters)
+### የዋጋ መለያዎች (Pricing Filters) {#pricing-filters}
 
-#### የጋሪ ጠቅላላ ዋጋ (Cart Total)
+#### የጋሪ ጠቅላላ ዋጋ (Cart Total) {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### የግብር መጠን (Tax Rates)
+#### የግብር መጠን (Tax Rates) {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### የቴምፕሌት ማጣሪያዎች (Template Filters)
+### የቴምፕሌት ማጣሪያዎች (Template Filters) {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### ገደብ ማጣሪያዎች (Limitation Filters)
+### ገደብ ማጣሪያዎች (Limitation Filters) {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### የጌትዌይ ማጣሪያዎች (Gateway Filters)
+### የጌትዌይ ማጣሪያዎች (Gateway Filters) {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### የቼክአው ቅጽ መስኮት ክፍሎች (Checkout Form Fields)
+### የቼክአው ቅጽ መስኮት ክፍሎች (Checkout Form Fields) {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### የኢሜይል ይዘት (Email Content)
+### የኢሜይል ይዘት (Email Content) {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

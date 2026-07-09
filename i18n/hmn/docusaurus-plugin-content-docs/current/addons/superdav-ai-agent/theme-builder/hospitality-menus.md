@@ -3,15 +3,15 @@ title: Cov Ntawv Qhia Rau Kev Tos Txais Qhua
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Cov Menu Rau Kev Tos Qhua
+# Cov Menu Rau Kev Tos Qhua {#hospitality-menus}
 
 Qhov feature **Cov Menu Rau Kev Tos Qhua** tso cai rau Theme Builder tsim thiab embed cov nplooj menu zaub mov thiab dej haus uas muaj qauv ncaj qha rau hauv koj lub WordPress site.
 
-## Kev Saib Dav
+## Kev Saib Dav {#overview}
 
 Theme Builder tam sim no tsim tau cov nplooj menu uas zoo li kws tshaj lij thiab muaj qauv rau cov lag luam tos qhua xws li khw noj mov, cafes, bars, thiab kev pab catering. Cov menu no sib xyaw tag nrho rau hauv koj site tus qauv tsim thiab hloov kho nrog tswj tau yooj yim.
 
-## Hom Kev Tos Qhua Uas Txhawb
+## Hom Kev Tos Qhua Uas Txhawb {#supported-hospitality-types}
 
 - **Khw noj mov** — cov menu noj mov puv kev pabcuam
 - **Cafes** — cov menu kas fes thiab khoom noj me
@@ -21,9 +21,9 @@ Theme Builder tam sim no tsim tau cov nplooj menu uas zoo li kws tshaj lij thiab
 - **Food Trucks** — cov menu kev pab zaub mov txawb chaw
 - **Breweries thiab Wineries** — cov menu dej haus nrog lus piav qhia
 
-## Qauv Menu
+## Qauv Menu {#menu-structure}
 
-### Pawg Menu
+### Pawg Menu {#menu-categories}
 
 Cov menu raug teeb kom muaj pawg:
 
@@ -34,7 +34,7 @@ Cov menu raug teeb kom muaj pawg:
 - **Dej haus** — dej haus (muaj cawv thiab tsis muaj cawv)
 - **Yam tshwj xeeb** — yam tshwj xeeb txhua hnub lossis raws caij nyoog
 
-### Hom Ntawv Rau Yam Hauv Menu
+### Hom Ntawv Rau Yam Hauv Menu {#menu-item-format}
 
 Txhua yam hauv menu muaj:
 
@@ -49,7 +49,7 @@ Txhua yam hauv menu muaj:
 }
 ```
 
-#### Cov Field Ntawm Yam Khoom
+#### Cov Field Ntawm Yam Khoom {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Txhua yam hauv menu muaj:
 | `allergens` | array | Cov ua xua uas pom ntau (Nuts, Shellfish, thiab lwm yam) |
 | `availability` | string | Thaum twg muaj (Txhua hnub, Raws caij nyoog, thiab lwm yam) |
 
-## Tsim Cov Menu Rau Kev Tos Qhua
+## Tsim Cov Menu Rau Kev Tos Qhua {#creating-hospitality-menus}
 
-### Kauj Ruam 1: Muab Cov Ntaub Ntawv Menu
+### Kauj Ruam 1: Muab Cov Ntaub Ntawv Menu {#step-1-provide-menu-information}
 
 Qhia Theme Builder txog koj menu:
 
@@ -71,7 +71,7 @@ Tsim ib lub menu khw noj mov rau kuv lub khw noj mov Italian nrog khoom noj qhib
 cov tais pasta, zaub mov tseem ceeb, thiab khoom qab zib. Muab tus nqi thiab lus piav qhia nrog.
 ```
 
-### Kauj Ruam 2: Theme Builder Tsim Menu
+### Kauj Ruam 2: Theme Builder Tsim Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Format cov nqi thiab lus piav qhia
 5. Ntxiv ntaub ntawv kev noj haus thiab ua xua
 
-### Kauj Ruam 3: Tshuaj Xyuas Thiab Kho Kom Haum
+### Kauj Ruam 3: Tshuaj Xyuas Thiab Kho Kom Haum {#step-3-review-and-customize}
 
 Koj tuaj yeem:
 
@@ -91,9 +91,9 @@ Koj tuaj yeem:
 4. Hloov kho lus piav qhia thiab ntaub ntawv kev noj haus
 5. Kho styling thiab layout
 
-## Kev Xaiv Rau Kev Tso Menu Pom
+## Kev Xaiv Rau Kev Tso Menu Pom {#menu-display-options}
 
-### Nplooj Menu Tag Nrho
+### Nplooj Menu Tag Nrho {#full-menu-page}
 
 Ib nplooj tshwj xeeb uas tso koj menu tag nrho pom:
 
@@ -102,7 +102,7 @@ Ib nplooj tshwj xeeb uas tso koj menu tag nrho pom:
 - Layout zoo rau luam tawm
 - Tus qauv tsim teb tau rau mobile
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Embed cov ntu menu rau lwm nplooj:
 
@@ -111,7 +111,7 @@ Embed cov ntu menu rau lwm nplooj:
 - Menu dej haus rau nplooj bar
 - Kev nthuav qhia khoom qab zib rau footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Tsim ib lub menu PDF uas download tau:
 
@@ -120,9 +120,9 @@ Tsim ib lub menu PDF uas download tau:
 - Muaj duab thiab lus piav qhia
 - Yooj yim share thiab email
 
-## Ntaub Ntawv Kev Noj Haus Thiab Ua Xua
+## Ntaub Ntawv Kev Noj Haus Thiab Ua Xua {#dietary-and-allergen-information}
 
-### Cov Yam Ntxwv Kev Noj Haus
+### Cov Yam Ntxwv Kev Noj Haus {#dietary-attributes}
 
 Cim cov khoom nrog ntaub ntawv kev noj haus:
 
@@ -134,7 +134,7 @@ Cim cov khoom nrog ntaub ntawv kev noj haus:
 - **Low-Carb** — txo carbohydrates
 - **High-Protein** — muaj protein ntau
 
-### Kev Ceeb Toom Ua Xua
+### Kev Ceeb Toom Ua Xua {#allergen-warnings}
 
 Muab cov ua xua uas pom ntau:
 
@@ -147,9 +147,9 @@ Muab cov ua xua uas pom ntau:
 - **Gluten** — nplej thiab cov noob qoob loo uas muaj gluten
 - **Sesame** — noob sesame thiab roj
 
-## Kev Tswj Menu
+## Kev Tswj Menu {#menu-management}
 
-### Hloov Kho Tus Nqi
+### Hloov Kho Tus Nqi {#updating-prices}
 
 Hloov kho cov nqi menu tau yooj yim:
 
@@ -159,7 +159,7 @@ Hloov kho cov nqi menu tau yooj yim:
 4. Save cov kev hloov
 5. Cov kev hloov tshwm tam sim ntawd rau koj site
 
-### Ntxiv Cov Khoom Raws Caij Nyoog
+### Ntxiv Cov Khoom Raws Caij Nyoog {#adding-seasonal-items}
 
 Tsim cov kev hloov menu raws caij nyoog:
 
@@ -169,7 +169,7 @@ Tsim cov kev hloov menu raws caij nyoog:
 4. Teem hnub muaj
 5. Tso pom yam tsis siv neeg thaum txog caij
 
-### Tswj Yam Tshwj Xeeb
+### Tswj Yam Tshwj Xeeb {#managing-specials}
 
 Tso yam tshwj xeeb txhua hnub lossis txhua lub lim tiam pom:
 
@@ -179,7 +179,7 @@ Tso yam tshwj xeeb txhua hnub lossis txhua lub lim tiam pom:
 4. Hloov kho txhua hnub lossis txhua lub lim tiam
 5. Khaws cov yam tshwj xeeb qub cia hauv archive
 
-## Kev Sib Xyaw Nrog Theme Builder
+## Kev Sib Xyaw Nrog Theme Builder {#integration-with-theme-builder}
 
 Thaum siv Theme Builder rau hospitality sites:
 
@@ -189,9 +189,9 @@ Thaum siv Theme Builder rau hospitality sites:
 4. **Kev kho kom zoo rau mobile** — cov menu tso pom zoo nkauj rau hauv xov tooj
 5. **Kev kho kom zoo rau SEO** — cov menu haum rau search engine
 
-## Cov Kev Xyaum Zoo Tshaj
+## Cov Kev Xyaum Zoo Tshaj {#best-practices}
 
-### Qauv Tsim Menu
+### Qauv Tsim Menu {#menu-design}
 
 - **Kev teeb meej** — qauv pawg uas muaj laj thawj
 - **Lus piav qhia nyeem tau** — ntxim qab thiab muaj ntaub ntawv
@@ -199,7 +199,7 @@ Thaum siv Theme Builder rau hospitality sites:
 - **Duab zoo li kws tshaj lij** — duab zaub mov zoo siab
 - **Chaw dawb** — tsis txhob muab nplooj ntim dhau
 
-### Cov Ntsiab Lus
+### Cov Ntsiab Lus {#content}
 
 - **Lus piav qhia raug** — piav cov khoom kom raug
 - **Nthuav qhia yam tshwj xeeb** — ua kom yam tshwj xeeb sawv tawm
@@ -207,7 +207,7 @@ Thaum siv Theme Builder rau hospitality sites:
 - **Hloov kho tsis tu ncua** — khaws cov nqi thiab cov khoom kom tshiab
 - **Siv lus ua kom qab los noj** — ua kom cov khoom suab qab heev
 
-### Kev Nkag Tau Siv
+### Kev Nkag Tau Siv {#accessibility}
 
 - **Fonts nyeem tau** — siv typefaces meej thiab nyeem yooj yim
 - **Contrast txaus** — xyuas kom text nyeem tau
@@ -215,9 +215,9 @@ Thaum siv Theme Builder rau hospitality sites:
 - **Kev ceeb toom ua xua** — tso cov ua xua kom pom tseeb
 - **Haum rau mobile** — sim rau txhua yam device
 
-## Piv Txwv
+## Piv Txwv {#examples}
 
-### Qauv Menu Khw Noj Mov
+### Qauv Menu Khw Noj Mov {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Qauv txheej txheem Menu hauv Cafe
+### Qauv txheej txheem Menu hauv Cafe {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Cov yam ntxwv muaj feem xyuam
+## Cov yam ntxwv muaj feem xyuam {#related-features}
 
 - [Tsim Menu](../abilities/create-menu.md) — tsim cov menu coj kev
 - [Kev taw qhia tsim qauv](./design-direction.md) — kho lub tsim qauv ntawm koj lub vev xaib

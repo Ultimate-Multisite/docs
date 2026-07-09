@@ -3,7 +3,7 @@ title: WooCommerce İnteqrasiyası Dəyişiklik Jurnalı
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce İnteqrasiyası Dəyişiklik Jurnalı
+# WooCommerce İnteqrasiyası Dəyişiklik Jurnalı {#woocommerce-integration-changelog}
 
 Versiya 2.2.0 - 2026-07-01 tarixində buraxılıb
 * Yeni: Ultimate Multisite vergi məbləğləri indi ödəniş səhifəsində ayrıca WooCommerce rüsum sətirləri kimi görünür, bu da ödənişdən əvvəl vergi yekunlarını daha aydın edir.

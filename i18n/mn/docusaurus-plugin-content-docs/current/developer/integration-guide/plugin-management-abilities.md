@@ -3,11 +3,11 @@ title: Плагин удирдах боломжууд
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Удирдлагын чадварууд
+# Plugin Удирдлагын чадварууд {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 нь ярианы явцад AI туслах дуудаж ашиглаж болох **plugin удирдлагын 7 чадвар**-тай ирдэг. Эдгээр чадварууд нь [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox)-ээр дамжуулан суулгасан WordPress plugin-уудыг програмчлалын аргаар удирдах боломж олгодог.
 
-## Чадваруудын тойм
+## Чадваруудын тойм {#abilities-overview}
 
 | Чадвар | Slug | Тайлбар |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 нь ярианы явцад AI туслах дуудаж
 | Plugin суулгах | `install_plugin` | Sandbox-д байгаа plugin-ийг ажиллаж буй WordPress plugin директорид байршуулна. |
 | Plugin идэвхжүүлэх | `activate_plugin` | wp-env sandbox орчинд sandbox-д байгаа plugin-ийг идэвхжүүлнэ. |
 
-## Plugin Суулгагч API
+## Plugin Суулгагч API {#plugin-installer-api}
 
 Plugin суулгагч нь plugin байршуулах эсвэл устгах үед файлын системийн үйлдлүүдийг зохицуулдаг. Гол зан төлөвүүд:
 
@@ -28,7 +28,7 @@ Plugin суулгагч нь plugin байршуулах эсвэл устгах
 - **Шинэчлэлт**: Одоо байгаа plugin файлуудыг солино. Хэсэгчилсэн төлөвийн алдаанаас зайлсхийхийн тулд бичихээс өмнө plugin-ийг идэвхгүй болгоно.
 - **Slug-аар устгах**: Plugin директорийг slug-аар нь олж, бүх сайт дээр идэвхгүй болгосны дараа директорийг устгана.
 
-### Захиалгат суулгалтын боловсруулагч бүртгэх
+### Захиалгат суулгалтын боловсруулагч бүртгэх {#registering-a-custom-install-handler}
 
 Та `gratis_ai_plugin_installer_before_install` болон `gratis_ai_plugin_installer_after_install` actions ашиглан суулгалтын амьдралын мөчлөгт холбогдож болно:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Экосистемийн бүртгэл
+## Экосистемийн бүртгэл {#ecosystem-registry}
 
 Чадваруудыг **plugin экосистемийн бүртгэл**-ээр дамжуулан бүртгэдэг. Бүртгэл нь чадварын slug-уудыг тэдгээрийн handler class-уудтай холбож, AI agent-ийн хэрэгслийн dispatcher-т ил болгодог.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Интеграци
+## HookScanner Интеграци {#hookscanner-integration}
 
 `create_plugin` болон `update_plugin` чадварууд нь шинээр үүсгэсэн код дээр **HookScanner**-ийг автоматаар ажиллуулдаг. HookScanner нь plugin-ээр бүртгэгдсэн WordPress action болон filter hook-уудын жагсаалтыг буцаадаг.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner нь `vendor/` болон `node_modules/` директоруудыг автоматаар алгасдаг.
 
-## Асинхрон ажлын архитектур
+## Асинхрон ажлын архитектур {#async-job-architecture}
 
 Удаан ажилладаг plugin үйлдлүүдийг (үүсгэх, суулгах) шууд явцын хяналттай **асинхрон ажлууд** болгон илгээдэг. AI чат интерфейс нь явцыг тогтмол шалгаж, төлөвийн шинэчлэлтүүдийг хэрэглэгч рүү урсгалаар дамжуулна:
 

@@ -3,13 +3,13 @@ title: Hulp bij maatwerkontwikkeling
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Hoe krijg je hulp bij maatwerkontwikkeling van Codeable?
+# Hoe krijg je hulp bij maatwerkontwikkeling van Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Soms hebben we echt geweldige aanpassingen nodig om ons netwerk precies te laten verlopen zoals we dat willen. Als dat is waar je naar op zoek bent, raden we [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) aan, een plek waar je ervaren ontwikkelaars met Ultimate Multisite-expertise kunt vinden.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) is een platform dat klanten in contact brengt met gekwalificeerde WordPress freelance-ontwikkelaars, die aan projecten van elke omvang kunnen werken. Ze hebben een zorgvuldig aanmeldingsproces om ervoor te zorgen dat je wordt gekoppeld aan experts die specifiek gekwalificeerd zijn voor de taak die je in gedachten hebt.
 
-### Hoe maak je een project aan in Codeable?
+### Hoe maak je een project aan in Codeable? {#how-to-create-a-project-in-codeable}
 
 Ga eerst naar [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) en klik op de knop **Start a Project**.
 

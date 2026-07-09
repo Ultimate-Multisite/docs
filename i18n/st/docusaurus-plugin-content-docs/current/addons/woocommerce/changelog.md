@@ -3,7 +3,7 @@ title: WooCommerce Kopanyo Lenane la liphetoho
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Lenane la Diphetoho la Kopanyo ya WooCommerce
+# Lenane la Diphetoho la Kopanyo ya WooCommerce {#woocommerce-integration-changelog}
 
 Mofuta 2.2.0 - E lokollotswe ka 2026-07-01
 * E ntjha: Dipalo tsa lekgetho tsa Ultimate Multisite jwale di hlaha e le mela e arohaneng ya ditefiso tsa WooCommerce nakong ya checkout, ho etsa hore kakaretso ya lekgetho e hlake haholoanyane pele ho tefo.

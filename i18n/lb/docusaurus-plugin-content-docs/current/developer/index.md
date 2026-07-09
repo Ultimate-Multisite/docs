@@ -3,11 +3,11 @@ title: Entwécklerdokumentatioun
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Entwéckler-Dokumentatioun
+# Entwéckler-Dokumentatioun {#developer-documentation}
 
 Dëse Guide liwwert Entwéckler alles, wat néideg ass, fir mat Ultimate Multisite z'integréieren, et z'erweideren oder Addons dofir z'entwéckelen. Ultimate Multisite transforméiert e WordPress Multisite-Netzwierk an eng Website-as-a-Service (WaaS)-Plattform.
 
-## Wat verfügbar ass
+## Wat verfügbar ass {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Komplett CRUD-Operatioune fir all Entitéiten (Clienten, Siten, Memberschaften, Bezuelungen, Produkter, Domainen) mat API-Schlëssel-Authentifikatioun
 - **[Hooks-Referenz](./hooks/guide)** — 200+ Action Hooks an 280+ Filter Hooks fir Lifecycle-Evenementer an Upassung
@@ -15,13 +15,13 @@ Dëse Guide liwwert Entwéckler alles, wat néideg ass, fir mat Ultimate Multisi
 - **[Code-Beispiller](./code-examples/)** — Avancéiert Mustere fir dynamesch Präisser, Site-Bereetstellung, personaliséiert Limitatiounen a Multi-Gateway-Veraarbechtung
 - **[Addon-Entwécklung](./addon-development/getting-started)** — Strukturéierte Framework fir Addon-Plugins ze bauen
 
-## Ufuerderungen
+## Ufuerderungen {#requirements}
 
 - WordPress Multisite-Installatioun
 - PHP 7.4 oder méi héich
 - Ultimate Multisite-Plugin aktivéiert
 
-## Composer / Bedrock-Installatioun
+## Composer / Bedrock-Installatioun {#composer--bedrock-installation}
 
 Ultimate Multisite ass op [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) als `ultimate-multisite/ultimate-multisite` verfügbar. Dëst ass déi recommandéiert Installatiounsmethod fir WordPress-Setups op Basis vu [Bedrock](https://roots.io/bedrock/) an aner Composer-verwalt Ëmfeld.
 
@@ -45,15 +45,15 @@ Oder, wann Dir de Plugin als must-use Plugin iwwer dem Bedrock säin Autoloader 
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Schnellstart
+## Schnellstart {#quick-start}
 
-### D'REST API benotzen
+### D'REST API benotzen {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### An Evenementer andocken
+### An Evenementer andocken {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### En Addon bauen
+### En Addon bauen {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

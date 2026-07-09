@@ -3,13 +3,13 @@ title: Oprettelse af rabatkoder
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Oprettelse af rabatkoder (v2)
+# Oprettelse af rabatkoder (v2) {#creating-discount-codes-v2}
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
 Med Ultimate Multisite kan du oprette rabatkoder for at give dine kunder rabatter på deres abonnementer. Og det er nemt at gøre!
 
-## Oprettelse og redigering af rabatkoder
+## Oprettelse og redigering af rabatkoder {#creating-and-editing-discount-codes}
 
 For at oprette eller redigere en rabatkode skal du gå til **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kuponen er nu på din liste, og derfra kan du klikke for at **redigere eller sle
 
 ###
 
-### Brug af URL-parametre:
+### Brug af URL-parametre: {#using-url-parameters}
 
 Hvis du vil tilpasse dine prisoverblik eller bygge en flot rabatkode side til din hjemmeside, og gerne vil anvende en rabatkode på dit checkout-formular automatisk, kan du gøre dette via URL-parametre.
 

@@ -3,7 +3,7 @@ title: Hooks và Filters
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Hook và filter của Ultimate Multisite
+# Hook và filter của Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite được xây dựng từ rất nhiều hàm và truy vấn cơ sở dữ liệu. Plugin cung cấp các hook và filter cho phép bạn chỉnh sửa hoặc thêm code mới vào các hàm có sẵn.
 

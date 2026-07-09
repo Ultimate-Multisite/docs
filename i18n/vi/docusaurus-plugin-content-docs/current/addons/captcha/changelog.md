@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Nhật ký thay đổi Captcha
+# Nhật ký thay đổi Captcha {#captcha-changelog}
 
 Phiên bản: 1.5.0 - Phát hành ngày 2026-05-22
 * Mới: Bộ giới hạn tốc độ dừng cứng (Hard-stop rate limiter) — đếm mọi yêu cầu GET và POST trên các khu vực được bảo vệ bằng captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) và phản hồi bằng HTTP 429, tiêu đề `Retry-After`, và một độ trễ ngẫu nhiên (tarpit sleep) (1–5 giây, tối đa 15 giây).

@@ -3,7 +3,7 @@ title: Pagdumala sa Buhis
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Pagdumala sa Buhis
+# Pagdumala sa Buhis {#tax-handling}
 
 Ang Ultimate Multisite adunay module sa pagkolekta og buhis nga gitukod sulod sa among core plugin, busa kung kinahanglan nimo mangolekta og sales taxes sa imong mga plan, package ug serbisyo, dali ra nimo kining mahimo nga dili kinahanglan mag-install og bisan unsang add-ons.
 
@@ -11,7 +11,7 @@ Alang sa mga kompanya nga nahimutang sa Europe, nagtanyag kami og **add-on** nga
 
 Ang Ultimate Multisite dili mo-file o mo-remit og buhis alang kanimo ngadto sa gobyerno; motabang lang kami kanimo sa pagkolekta sa angay nga mga buhis sa panahon sa transaksyon. **Kinahanglan gihapon nimo nga i-remit ang mga buhis sa imong kaugalingon.**
 
-## Pag-enable sa Pagkolekta og Buhis
+## Pag-enable sa Pagkolekta og Buhis {#enabling-tax-collection}
 
 Ang pagkolekta og buhis dili naka-enable by default. Aron i-enable kini, kinahanglan kang moadto sa **Ultimate Multisite > Settings > Taxes** ug i-toggle aron i-enable ang Enable Taxes setting.
 
@@ -25,7 +25,7 @@ Mahimo usab nimo tan-awon ang tax settings alang sa tagsa-tagsa nga mga produkto
 
 ![Tax settings alang sa mga produkto](/img/config/settings-taxes.png)
 
-### Wala gilakip ang buhis vs. gilakip ang buhis
+### Wala gilakip ang buhis vs. gilakip ang buhis {#tax-excluded-vs-tax-included}
 
 By default, ang tanan nimong presyo sa produkto wala maglakip og buhis, nagpasabot nga ang mga buhis **wala gilakip** sa presyo sa produkto. Kung matino namo nga ang usa ka customer kinahanglan mobayad og buhis sa usa ka partikular nga pagpalit, idugang namo ang mga buhis **ibabaw** sa subtotal.
 
@@ -37,7 +37,7 @@ Ayaw kalimti ang **pag-save** sa mga kausaban nga imong gihimo.
 
 ###
 
-## Paghimo og Tax Rates
+## Paghimo og Tax Rates {#creating-tax-rates}
 
 Human nimo i-enable ang Tax Collection, kinahanglan nimo maghimo og tax rates alang sa piho nga mga lokasyon gamit ang among tax rates editor.
 
@@ -51,7 +51,7 @@ Sa panid sa tax rates editor, makadugang ka og bag-ong Tax Rates pinaagi sa pag-
 
 Kinahanglan nimo hatagan ang matag tax rate og **titulo** (gigamit sa invoices). Dayon makapili ka sa **nasod** (kinahanglan), sa **estado,** ug sa **siyudad** (parehong optional) diin kini nga buhis paninglon. Sa kataposan, idugang ang **tax rate sa porsiyento**.
 
-### Tax Categories
+### Tax Categories {#tax-categories}
 
 Mahimo usab kang maghimo og daghang Tax Categories, aron makadugang og lain-laing tax rates alang sa lain-laing matang sa mga produkto.
 
@@ -73,7 +73,7 @@ Mahimo nimo i-set ang tax category alang sa usa ka partikular nga produkto pinaa
 
 Sa mao gihapong screen, mahimo nimo i-toggle off ang **Is Taxable?** toggle aron ipahibalo sa Ultimate Multisite nga dili kini kinahanglan mangolekta og buhis sa maong produkto.
 
-## Suporta sa European VAT
+## Suporta sa European VAT {#european-vat-support}
 
 Sama sa gihisgotan kaniadto, aduna kamiy add-on nga anaa alang sa customer sa EU nga adunay dugang nga mga kinahanglanon tungod sa mga regulasyon sa European VAT.
 
@@ -101,7 +101,7 @@ Kung mobalik ka sa **Tax Settings tab** , makita nimo ang bag-ong mga opsyon nga
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Pagkuha sa VAT Tax Rates
+### Pagkuha sa VAT Tax Rates {#pulling-on-vat-tax-rates}
 
 Usa sa mga tool nga gidugang sa among integration mao ang abilidad sa pag-load sa tax rates alang sa EU member states. Mahimo kini pinaagi sa pagbisita sa panid sa tax rates editor human ma-enable ang EU VAT support.
 
@@ -111,7 +111,7 @@ Sa ubos sa panid, makita nimo ang VAT pulling options. Ang pagpili og rate type 
 
 Mahimo usab nimo i-edit ang mga value human kini makuha. Aron buhaton kini, i-edit lang ang linya sa table nga imong kinahanglan ug i-klik aron i-save ang bag-ong mga value.
 
-### VAT Validation
+### VAT Validation {#vat-validation}
 
 Kung naka-enable ang VAT support, ang Ultimate Multisite magdugang og dugang nga field sa checkout form, ubos sa billing address field. Ang field mopakita ra alang sa mga customer nga nahimutang sa EU.
 

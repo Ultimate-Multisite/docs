@@ -3,13 +3,13 @@ title: Trecerea la un plan inferior
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Trecerea la un plan inferior (v2)
+# Trecerea la un plan inferior (v2) {#downgrading-a-plan-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
 Trecerea la un plan sau abonament inferior este o acțiune obișnuită pe care clienții tăi ar putea să o facă dacă au un buget limitat sau au decis că nu vor avea nevoie de multe resurse pentru a-și rula subsite-ul.
 
-## Cum să treci la un plan inferior
+## Cum să treci la un plan inferior {#how-to-downgrade-a-plan}
 
 Clienții tăi pot trece oricând la un plan inferior autentificându-se în Dashboard-ul de administrare al subsite-ului lor și făcând clic pe **Schimbă** în pagina lor Account.
 
@@ -25,7 +25,7 @@ Pentru a continua, utilizatorul trebuie doar să facă clic pe butonul **Finaliz
 
 ![Pagina Account afișând bannerul de modificare a abonamentului în așteptare](/img/account-page/pending-change.png)
 
-### Ce se întâmplă când un utilizator trece la un plan inferior
+### Ce se întâmplă când un utilizator trece la un plan inferior {#what-happens-when-a-user-downgrades-their-plan}
 
 Este important de reținut că trecerea la un plan inferior nu modifică configurația existentă din subsite-ul utilizatorului.
 
@@ -37,7 +37,7 @@ Pentru articolele care depășesc limita setată în plan, ai 3 opțiuni diferit
 
 ![Pagina Sites din Network Admin Settings afișând opțiunile de comportament pentru depășirea limitei de articole](/img/account-page/settings-sites-post-limit.png)
 
-### Ce se întâmplă cu plata
+### Ce se întâmplă cu plata {#what-happens-to-the-payment}
 
 În versiunea 2.0, nu mai necesită nicio ajustare a plății în ceea ce privește proratarea.
 

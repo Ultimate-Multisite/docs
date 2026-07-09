@@ -4,23 +4,23 @@ title: Filtru - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Filtru: wu_current_set_membership
+# Filtru: wu_current_set_membership {#filter-wucurrentsetmembership}
 
 Permite dezvoltatorilor să modifice comportamentul implicit și să stabilească membrii curenți diferit.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
 | $membership | `\WP_Ultimo\Models\Membership` | Membrul curent pe care doriți să îl setați. |
 | $ | `self` | Instanța clasei curente. |
 
-### De la
+### De la {#since}
 
 - 2.0.18
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L412) la linia 412
 
 
-## Returnează
+## Returnează {#returns}

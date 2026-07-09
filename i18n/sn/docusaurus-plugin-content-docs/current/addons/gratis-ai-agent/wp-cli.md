@@ -3,11 +3,11 @@ title: WP-CLI Chirevo
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Referensi yeWP-CLI
+# Referensi yeWP-CLI {#wp-cli-reference}
 
 Gratis AI Agent inouya nemhuri yemirairo ye`wp gratis-ai-agent` yekuyera mashandiro eajenti, kutarisira hunyanzvi, uye kubvunza chimiro cheajenti kubva pamutsetse wemirairo. Mirairo yose inoda WP-CLI 2.0 kana yepamusoro.
 
-## Kuisa
+## Kuisa {#installation}
 
 Mirairo yeWP-CLI inonyoreswa otomatiki kana plugin iri kushanda. Simbisa ne:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Inomhanyisa boka rebvunzo dzeAgent Capabilities — seti yezvikumbiro zvakaoma, zvine nhanho dzakawanda zvinoedza nzvimbo yose yehunyanzvi. Shandisa izvi kuongorora mashandiro emodel, kuenzanisa vanopa AI, kana kusimbisa mapakeji ehunyanzvi usati waendesa kugadzirwa.
 
-### Pfupiso
+### Pfupiso {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Sarudzo
+### Sarudzo {#options}
 
 | Sarudzo | Tsananguro |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Fomati yekuburitsa: `table` (default), `json`, `csv` |
 | `--save` | Chengetedza zvabuda mubvunzo mudatabase kuitira kuenzanisa kwenhoroondo |
 
-### Mienzaniso
+### Mienzaniso {#examples}
 
 Mhanyisa boka rose rebvunzo nemupi uye model zvazvino:
 
@@ -57,7 +57,7 @@ Mhanyisa uchipesana nemodel yakatarwa uye chengetedza zvabuda:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Zvabuda
+### Zvabuda {#output}
 
 Bvunzo inoburitsa mutsara mumwe pamubvunzo nemakoramu anotevera:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Mibvunzo yeBvunzo
+### Mibvunzo yeBvunzo {#benchmark-questions}
 
 Boka redefault rinosanganisira:
 
@@ -95,11 +95,11 @@ Mibvunzo yekuwedzera inogona kunyoreswa kuburikidza nefilter ye`gratis_ai_agent_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Inotarisira hunyanzvi hwakaiswa uye mapakeji ehunyanzvi.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Inonyora hunyanzvi hwose hwakanyoreswa, kwahunobva (core kana pack), uye chimiro chahwo chazvino.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Inodhawunirodha uye inomutsa paki yehunyanzvi kubva muregistry.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Inodzima hunyanzvi hwakati pasina kubvisa pack. Zvinobatsira pakudzora nzvimbo inobvumidzwa yeajenti pasite yakapihwa.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Inobatidza zvakare hunyanzvi hwakambodzimwa.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Inoratidza configuration yeajenti yazvino uye chimiro chekubatana.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Inoratidza chiitiko cheajenti chichangobva kuitika kubva mudebug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Inodzoreredza mamiriro emumiriri: inobvisa CSS yakaiswa, inobvisa maCPTs nema taxonomies akanyoreswa nemumiriri, inodzoreredza masitayera epasi rose, uye inodurura cache yesarudzo dzemumiriri. Haibvisi chinowedzerwa kana marongero acho.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Makodhi eKubuda
+## Makodhi eKubuda {#exit-codes}
 
 Mirairo yose inobuda ne `0` kana yabudirira. Makodhi ekubuda asiri zero:
 

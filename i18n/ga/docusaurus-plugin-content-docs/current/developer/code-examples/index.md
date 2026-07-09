@@ -3,11 +3,11 @@ title: Samplaí Casta Cóid
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Samplaí Casta Cóid
+# Samplaí Casta Cóid {#advanced-code-examples}
 
 Léiríonn na samplaí seo patrúin chomhtháthaithe chasta le Ultimate Multisite.
 
-## Inneall Praghsála Dinimiciúil
+## Inneall Praghsála Dinimiciúil {#dynamic-pricing-engine}
 
 Inneall praghsála bunaithe ar rialacha a chuireann lascainí de réir toirte, dílseachta agus séasúir i bhfeidhm:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Soláthar Suíomhanna Casta
+## Soláthar Suíomhanna Casta {#advanced-site-provisioning}
 
 Cumraigh suíomhanna nua go huathoibríoch le breiseáin, SSL, CDN, cúltacaí agus monatóireacht bunaithe ar ghnéithe plean:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Córas Saincheaptha Teorainneacha
+## Córas Saincheaptha Teorainneacha {#custom-limitations-system}
 
 Rianaigh agus cuir teorainneacha acmhainní i bhfeidhm le rabhaidh úsáide:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Áiritheoir Adamhach BerlinDB le `increment_item()`
+## Áiritheoir Adamhach BerlinDB le `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Chuir Ultimate Multisite v2.6.1 modh `increment_item()` leis an rang BerlinDB `Query`. Úsáid é chun incrimintí sábháilte, adamhacha a dhéanamh ar cholúin uimhriúla gan rásaí léamh-athrú-scríobh — úsáideach d’áiritheoirí, cuótaí úsáide, agus seiceálacha teorannaithe ráta a ritheann faoi iarratais chomhthráthacha.
 
-### Síniú an mhodha
+### Síniú an mhodha {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Chuir Ultimate Multisite v2.6.1 modh `increment_item()` leis an rang BerlinDB `Q
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Úsáid bhunúsach
+### Úsáid bhunúsach {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Úsáid API a rianú in aghaidh na membership
+### Úsáid API a rianú in aghaidh na membership {#tracking-api-usage-per-membership}
 
 Patrún praiticiúil chun teorainneacha ráta API in aghaidh na membership a fhorfheidhmiú:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Cén fáth `increment_item()` in ionad `update_item()`
+### Cén fáth `increment_item()` in ionad `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Tá cur chuige simplí léamh-athrú-scríobh neamhshábháilte faoi iarratais chomhthráthacha:
 

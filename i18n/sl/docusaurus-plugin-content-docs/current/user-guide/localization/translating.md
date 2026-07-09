@@ -3,11 +3,11 @@ title: Prevod Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Prevod Ultimate Multisite
+# Prevod Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite je razvijen v angleščini, vendar je plugin popolnoma prevodljiv in aktivno sprejemamo prinoše za prevode.
 
-## Prevodje osnovnega plugin-a
+## Prevodje osnovnega plugin-a {#core-plugin-translations}
 
 Osnovni Ultimate Multisite plugin se prevaja preko uradne platforme **WordPress.org**:
 
@@ -24,7 +24,7 @@ To je standardni sistem za prevode v WordPress topljusti. Ko prevodi doseže dov
 
 Če želite postati urednik prevodov za svoj jezik (ki lahko odobrate prevode), se obljubite preko [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Prevodje dodatkov (Addon)
+## Prevodje dodatkov (Addon) {#addon-translations}
 
 Prevodje dodatkov (addon plugins) se prevajajo ločeno na:
 
@@ -32,11 +32,11 @@ Prevodje dodatkov (addon plugins) se prevajajo ločeno na:
 
 Prevodje dodatkov so trenutno generirani z uporabo AI kot začetni točka. Pokrivajo vse podporne jezike, vendar lahko vsebujeta neprirodne fraze ali napake. Sprejemamo ljudske prevodnike, da preverijo in predlagajo izboljšave za naredjenje prevodov bolj naravnih in natančnih.
 
-## Lokalni prevodi
+## Lokalni prevodi {#local-translations}
 
 Če si predvaja, da bi lokalno ustvarjal prevode za svoj projekt namesto da prispevaš k temu, obstavi dve možnosti:
 
-### Uporaba Poedit
+### Uporaba Poedit {#using-poedit}
 
 Sามารถ uporabite desktop aplikacijo **[Poedit](https://poedit.net)** za prevod datoteke `.pot`:
 
@@ -46,6 +46,6 @@ Sามารถ uporabite desktop aplikacijo **[Poedit](https://poedit.net)** z
 4. Shranite -- Poedit generira datoteke `.po` in `.mo`
 5. Postavite rezultatsne datoteke v slovo `lang`
 
-### Uporaba Loco Translate
+### Uporaba Loco Translate {#using-loco-translate}
 
 WordPress plugin **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** vam omogoča prevod neposredno iz admin panela brez potrebe po desktop aplikacijah. On se ob skrbi za ustvarjanje in kompajliranje prevodnih datotek za vas.

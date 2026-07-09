@@ -3,20 +3,20 @@ title: Kea leboha ho saho WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# O ka na le ho installa WordPress Multisite?
+# O ka na le ho installa WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite e le sehlopha se fanaang le sehlopha se fapaneng sa sitšhōpho (installation). E le sehlopha se fanaang, empa se se fanaang ka tsela e fapaneng.
 
 :::tip
 Ultimate Multisite e na le **[Multisite Setup Wizard](./multisite-setup-wizard)** e ntse a fetola tsela efe ka ho ba le ho fana ka sebope. Ha u na Ultimate Multisite, re re bolela hore u tle u sebelise wizard le goba ho fana ka tsela tse di fetang ke le ho ba le ho feta ka tsela e fetang ea meha tse botle tse bontšang below.
 
-## Hoetsoalo la WordPress
+## Hoetsoalo la WordPress {#add-a-trailing-slash-to-wp-admin}
 
-### Leano la ho fana ka Tlhaloso (Documentation)
+### Leano la ho fana ka Tlhaloso (Documentation) {#common-problems}
 
 Ke tla u thusa ho bona le ho tseba hore na leano la WordPress le howe. Ke tla go fana ka tsela e ntle ea ho bona eng, ho etsa eng, le ho seboha eng. Ho nna le seo o batlang!
 
-### Leano la Ho Baola (Dashboard)
+### Leano la Ho Baola (Dashboard) {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ho baola le Dashboard haholo ke leka la hau le lehlakeng la hau le WordPress. Ke leka la hau le lehlakeng la hau lehle, le leng le lehlakeng la hau le lehlakeng la hau le le hlompho. Le ka bona eng:
 

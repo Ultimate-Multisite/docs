@@ -3,25 +3,25 @@ title: ଅତିରିକ୍ତ ଯୋଗାଂଶ ଢାଞ୍ଚା
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# ଆଡଅନ୍ ଛାଞ୍ଚ
+# ଆଡଅନ୍ ଛାଞ୍ଚ {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## ଆବଶ୍ୟକତା
+## ଆବଶ୍ୟକତା {#requirements}
 
 - WordPress 5.3 କିମ୍ବା ତାଠାରୁ ଉଚ୍ଚ
 - PHP 7.4 କିମ୍ବା ତାଠାରୁ ଉଚ୍ଚ
 - Multisite Ultimate ପ୍ଲଗଇନ୍ (ସକ୍ରିୟ)
 
-## ସ୍ଥାପନ
+## ସ୍ଥାପନ {#installation}
 
 1. ଆଡଅନ୍ ଫାଇଲଗୁଡ଼ିକୁ ଆପଣଙ୍କ `/wp-content/plugins/` ଡାଇରେକ୍ଟରୀକୁ ଅପଲୋଡ୍ କରନ୍ତୁ
 2. WordPress ରେ 'ପ୍ଲଗଇନ୍‌ଗୁଡ଼ିକ' ମେନୁ ମାଧ୍ୟମରେ ପ୍ଲଗଇନ୍ ସକ୍ରିୟ କରନ୍ତୁ
 3. ନେଟୱର୍କ ପ୍ରଶାସନରେ ଆଡଅନ୍ ସେଟିଂସ୍ ବିନ୍ୟାସ କରନ୍ତୁ
 
-## ବିକାଶ
+## ବିକାଶ {#development}
 
-### ସେଟଅପ୍
+### ସେଟଅପ୍ {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ପ୍ରକଳ୍ପ ଗଠନ
+### ପ୍ରକଳ୍ପ ଗଠନ {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # କୋଡ୍ ଆଧୁନିକୀକରଣ ନିୟମ
 ```
 
-### ପରୀକ୍ଷା
+### ପରୀକ୍ଷା {#testing}
 
 ଏହି ଆଡଅନ୍‌ରେ ଏକ ବ୍ୟାପକ ପରୀକ୍ଷା ଫ୍ରେମୱର୍କ ରହିଛି:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **ପରୀକ୍ଷା ଆବରଣ**: କୋଡ୍ ଆବରଣ ଟ୍ରାକ୍ କରିବାକୁ ବିନ୍ୟାସିତ
 - **ମଲ୍ଟିସାଇଟ୍ ପରୀକ୍ଷା**: ପରୀକ୍ଷାଗୁଡ଼ିକ ମଲ୍ଟିସାଇଟ୍ ପରିବେଶରେ ଚାଲେ
 
-### କୋଡ୍ ମାନକ
+### କୋଡ୍ ମାନକ {#code-standards}
 
 - **WordPress କୋଡିଂ ମାନକ**: PHPCS ମାଧ୍ୟମରେ ପ୍ରବଳିତ
 - **PHP 7.4+ ସୁସଙ୍ଗତତା**: ଆଧୁନିକ PHP ବୈଶିଷ୍ଟ୍ୟ ସମର୍ଥିତ
 - **ସ୍ଥିର ବିଶ୍ଳେଷଣ**: ପ୍ରକାର ଯାଞ୍ଚ ପାଇଁ PHPStan ସମାକଳନ
 - **କୋଡ୍ ଆଧୁନିକୀକରଣ**: PHP ଅପଗ୍ରେଡ୍ ପାଇଁ Rector ନିୟମ
 
-### ବିଲ୍ଡ ସିଷ୍ଟମ୍
+### ବିଲ୍ଡ ସିଷ୍ଟମ୍ {#build-system}
 
 - **ସମ୍ପଦ ପ୍ରକ୍ରିୟାକରଣ**: CSS/JS ଫାଇଲଗୁଡ଼ିକ ପାଇଁ ସଂକୁଚନ
 - **ଅନୁବାଦ**: POT ଫାଇଲ ସୃଷ୍ଟି
 - **ପ୍ୟାକେଜିଂ**: ବିତରଣ ପାଇଁ ଆର୍କାଇଭ୍ ସୃଷ୍ଟି
 - **ବିକାଶ ମୋଡ୍**: ଡିବଗିଂ ପାଇଁ ଅସଂକୁଚିତ ସମ୍ପଦ
 
-## ବିନ୍ୟାସ
+## ବିନ୍ୟାସ {#configuration}
 
 ଏହି ଆଡଅନ୍ ନେଟୱର୍କ ପ୍ରଶାସନ ଇଣ୍ଟରଫେସ୍ ମାଧ୍ୟମରେ ପ୍ରବେଶଯୋଗ୍ୟ ବିଭିନ୍ନ ବିନ୍ୟାସ ବିକଳ୍ପକୁ ସମର୍ଥନ କରେ।
 
-## ହୁକ୍ ଏବଂ ଫିଲ୍ଟର
+## ହୁକ୍ ଏବଂ ଫିଲ୍ଟର {#hooks-and-filters}
 
-### କାର୍ଯ୍ୟ
+### କାର୍ଯ୍ୟ {#actions}
 
 - `ultimate-multisite-addon-template_init` - ଆଡଅନ୍ ଆରମ୍ଭିକରଣ ପରେ ଚାଲୁ ହୁଏ
 - `ultimate-multisite-addon-template_loaded` - ସମସ୍ତ ଆଡଅନ୍ ଫାଇଲ ଲୋଡ୍ ହେବା ପରେ ଚାଲୁ ହୁଏ
 
-### ଫିଲ୍ଟର
+### ଫିଲ୍ଟର {#filters}
 
 - `ultimate-multisite-addon-template_settings` - ଆଡଅନ୍ ସେଟିଂସ୍ ସଂଶୋଧନ କରନ୍ତୁ
 - `ultimate-multisite-addon-template_enabled` - ଆଡଅନ୍ ସକ୍ରିୟ/ନିଷ୍କ୍ରିୟ ସ୍ଥିତିକୁ ଓଭରରାଇଡ୍ କରନ୍ତୁ
 
-## ଲାଇସେନ୍ସ
+## ଲାଇସେନ୍ସ {#license}
 
 ଏହି ଆଡଅନ୍ GPL v3 କିମ୍ବା ପରବର୍ତ୍ତୀ ଲାଇସେନ୍ସ ଅଧୀନରେ ଲାଇସେନ୍ସପ୍ରାପ୍ତ।
 
-## ସହାୟତା
+## ସହାୟତା {#support}
 
 ସହାୟତା ଏବଂ ଡକ୍ୟୁମେଣ୍ଟେସନ୍ ପାଇଁ, [MultisiteUltimate.com](https://multisiteultimate.com) ଦେଖନ୍ତୁ
-## ପରିବର୍ତ୍ତନ ତାଲିକା
+## ପରିବର୍ତ୍ତନ ତାଲିକା {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix କୁ ultimate-multisite ଭାବେ ପୁନର୍ନାମ କରନ୍ତୁ; text domain ଅପଡେଟ୍ କରନ୍ତୁ; version ବଢ଼ାନ୍ତୁ।
 

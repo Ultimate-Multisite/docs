@@ -4,11 +4,11 @@ title: Çalakî - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Çalakî: wu_handle_customer_meta_fields
+# Çalakî: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Destûrê bide pêşdebirên pêvekê ku heke pêwîst be daneyên meta bi awayên cuda tomar bikin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Destûrê bide pêşdebirên pêvekê ku heke pêwîst be daneyên meta bi away�
 | $customer | `\Customer` | Objeya xerîdarê Ultimate Multisite. |
 | $checkout | `\Checkout` | Klasa qedandina kirînê. |
 
-### Ji guhertoyê ve
+### Ji guhertoyê ve {#since}
 
 - 2.0.0
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) de li rêza 1211 hatiye pênasekirin.

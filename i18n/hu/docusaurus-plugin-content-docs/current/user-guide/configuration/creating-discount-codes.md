@@ -3,13 +3,13 @@ title: Kedvezménykódok létrehozása
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kedvezménykódok létrehozása (v2)
+# Kedvezménykódok létrehozása (v2) {#creating-discount-codes-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
 Az Ultimate Multisite segítségével kedvezménykódokat hozhatsz létre, hogy kedvezményeket adj ügyfeleidnek az előfizetéseikre. A létrehozásuk pedig egyszerű!
 
-## Kedvezménykódok létrehozása és szerkesztése
+## Kedvezménykódok létrehozása és szerkesztése {#creating-and-editing-discount-codes}
 
 Kedvezménykód létrehozásához vagy szerkesztéséhez menj ide: **Ultimate Multisite > Kedvezménykódok**.
 
@@ -87,7 +87,7 @@ A kupon most már szerepel a listádban, és onnan rákattinthatsz a **szerkeszt
 
 ###
 
-### URL-paraméterek használata:
+### URL-paraméterek használata: {#using-url-parameters}
 
 Ha testre szeretnéd szabni az ártáblázataidat, vagy egy szép kuponkódoldalt szeretnél készíteni a webhelyedhez, és automatikusan szeretnél kedvezménykódot alkalmazni a fizetési űrlapodra, ezt URL-paraméterekkel teheted meg.
 

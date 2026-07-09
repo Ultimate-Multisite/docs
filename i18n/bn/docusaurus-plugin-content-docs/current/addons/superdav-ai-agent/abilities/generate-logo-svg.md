@@ -3,15 +3,15 @@ title: লোগো SVG তৈরি করুন
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generate Logo SVG
+# Generate Logo SVG {#generate-logo-svg}
 
 **Generate Logo SVG** সুবিধাটি থিম বিল্ডারকে আপনার ওয়ার্ডপ্রেস সাইটে কাস্টম লোগো SVG তৈরি করতে এবং এমবেড করতে সাহায্য করে। এটি স্বয়ংক্রিয়ভাবে নেমস্পেস-নিরাপদ স্যানিটাইজেশন (sanitisation) করে।
 
-## Overview
+## Overview {#overview}
 
 এই সুবিধাটি আপনার সাইটের ব্র্যান্ডিং দিকনির্দেশনা এবং ডিজাইনের পছন্দের উপর ভিত্তি করে স্কেলেবল ভেক্টর গ্রাফিক্স (SVG) লোগো তৈরি করে। তৈরি হওয়া SVG গুলো স্বয়ংক্রিয়ভাবে স্যানিটাইজ করা হয়, যাতে নিশ্চিত করা যায় যে এগুলো ওয়ার্ডপ্রেসে ব্যবহারের জন্য নিরাপদ এবং একই সাথে ভিজ্যুয়াল ইন্টিগ্রিটি বজায় থাকে।
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 | `height` | number | No | পিক্সেল এককে SVG উচ্চতা (ডিফল্ট: 200) |
 | `include_text` | boolean | No | লোগোতে সাইট নামটি টেক্সট হিসেবে অন্তর্ভুক্ত করা হবে কি না (ডিফল্ট: true) |
 
-## Output Format
+## Output Format {#output-format}
 
 এই সুবিধাটি নিম্নলিখিত কাঠামো সহ একটি SVG স্ট্রিং ফিরিয়ে দেয়:
 
@@ -36,7 +36,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 }
 ```
 
-## SVG Sanitisation Behaviour
+## SVG Sanitisation Behaviour {#svg-sanitisation-behaviour}
 
 তৈরি হওয়া SVG গুলো স্বয়ংক্রিয় নেমস্পেস-নিরাপদ স্যানিটাইজেশনের মধ্য দিয়ে যায়, যা নিম্নলিখিত কাজগুলো করে:
 
@@ -48,7 +48,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 
 এটি নিশ্চিত করে যে SVG টি ওয়ার্ডপ্রেসে সরাসরি এমবেড করার জন্য নিরাপদ এবং এর জন্য অতিরিক্ত স্যানিটাইজেশনের প্রয়োজন হয় না।
 
-## Usage Example
+## Usage Example {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Generate a modern logo for my tech startup called "CloudSync" using blue and whi
 - আধুনিক ডিজাইনের নীতি অনুসরণ করে
 - স্বয়ংক্রিয়ভাবে স্যানিটাইজ করা এবং ব্যবহারের জন্য প্রস্তুত
 
-## Integration with Theme Builder
+## Integration with Theme Builder {#integration-with-theme-builder}
 
 যখন আপনি থিম বিল্ডারের ডিজাইন-ডিরেকশন নির্বাচন ব্যবহার করেন, তখন Generate Logo SVG সুবিধাটি:
 
@@ -71,21 +71,21 @@ Generate a modern logo for my tech startup called "CloudSync" using blue and whi
 ৩. স্বয়ংক্রিয়ভাবে লোগোটি আপনার সাইটের হেডার/ব্র্যান্ডিং এলাকায় এমবেড করে
 ৪. ওয়ার্ডপ্রেস মিডিয়ায় একটি কাস্টম লোগো হিসেবে SVG টি সংরক্ষণ করে
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Provide clear style preferences** — আপনি কেমন ডিজাইন স্টাইল চান তা বর্ণনা করুন (যেমন: আধুনিক, ক্লাসিক, প্লেফুল ইত্যাদি)।
 - **Specify colors** — ধারাবাহিকতার জন্য আপনার ব্র্যান্ডের রংগুলো উল্লেখ করুন।
 - **Test rendering** — বিভিন্ন স্ক্রিন সাইজে লোগোটি সঠিকভাবে প্রদর্শিত হচ্ছে কিনা তা যাচাই করুন।
 - **Customize further** — আকার এবং স্থান পরিবর্তন করতে ওয়ার্ডপ্রেসের লোগো কাস্টমাইজেশন টুল ব্যবহার করুন।
 
-## Limitations
+## Limitations {#limitations}
 
 - SVG লোগোগুলো স্ট্যাটিক গ্রাফিক্স হিসেবে তৈরি হয় (এনিমেটেড নয়)।
 - অনেক উপাদানযুক্ত জটিল লোগোর জন্য ম্যানুয়াল পরিমার্জন প্রয়োজন হতে পারে।
 - কাস্টম ফন্ট সাপোর্ট করে না; টেক্সটে সিস্টেম ফন্ট ব্যবহার করা হয়।
 - খুব বড় বা খুব ছোট মাত্রা গুণমানকে প্রভাবিত করতে পারে।
 
-## Related Abilities
+## Related Abilities {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — অ্যাক্সেসিবিলিটির জন্য রঙের বৈসাদৃশ্য পরীক্ষা করুন
 - [Create Menu](./create-menu.md) — আপনার সাইটের জন্য নেভিগেশন মেনু তৈরি করুন

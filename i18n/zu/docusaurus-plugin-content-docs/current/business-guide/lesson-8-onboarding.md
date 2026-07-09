@@ -3,15 +3,15 @@ title: 'Isifundo 8: Ukungeniswa kwamakhasimende'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Isifundo 8: Ukwamukela Amakhasimende
+# Isifundo 8: Ukwamukela Amakhasimende {#lesson-8-customer-onboarding}
 
 Ukwenza ikhasimende libhalise kuyingxenye yomsebenzi kuphela. Uma lingena, lizizwe likhungathekile, bese lingabuyi, usulilahlekile. Lesi sifundo sakha umuzwa oguqula obhalise okusha abe ikhasimende elisebenzayo nelizibandakanyayo.
 
-## Lapho Sigcine Khona
+## Lapho Sigcine Khona {#where-we-left-off}
 
 I-FitSite isifakwe uphawu ngokuphelele ngokugeleza kwe-checkout okusebenzayo. Manje sigxila kulokho okwenzeka ngemva kokuba umnikazi westudio sokuzivocavoca eqede ukubhalisa futhi efika kusayithi lakhe elisha okokuqala.
 
-## Kungani Ukwamukela Kubalulekile
+## Kungani Ukwamukela Kubalulekile {#why-onboarding-matters}
 
 Imizuzu yokuqala engama-30 ngemva kokubhalisa inquma ukuthi ikhasimende liyahlala noma liyahamba. Umnikazi westudio sokuzivocavoca othi:
 
@@ -21,9 +21,9 @@ Imizuzu yokuqala engama-30 ngemva kokubhalisa inquma ukuthi ikhasimende liyahlal
 
 Ama-template akho e-niche (Isifundo 4) aphatha iphuzu lokuqala. Lesi sifundo siphatha elesibili.
 
-## Umuzwa Wokungena Kokuqala
+## Umuzwa Wokungena Kokuqala {#the-first-login-experience}
 
-### I-Widget Ye-Dashboard Yokwamukela
+### I-Widget Ye-Dashboard Yokwamukela {#welcome-dashboard-widget}
 
 Dala i-dashboard widget yangokwezifiso ebingelela amakhasimende amasha futhi iwaqondise ekusetheni. Lokhu kufanele kuvele ngokugqamile lapho engena okokuqala.
 
@@ -37,7 +37,7 @@ Dala i-dashboard widget yangokwezifiso ebingelela amakhasimende amasha futhi iwa
 
 Isinyathelo ngasinye sixhuma ngokuqondile ekhasini noma esilungiselelweni esifanele. Akukho ukuzingela kumamenyu.
 
-### Yenza i-Dashboard Ibe Lula
+### Yenza i-Dashboard Ibe Lula {#simplify-the-dashboard}
 
 Amakhasimende amasha awadingi ukubona yonke into yemenyu ye-WordPress. Cabanga ngoku:
 
@@ -47,29 +47,29 @@ Amakhasimende amasha awadingi ukubona yonke into yemenyu ye-WordPress. Cabanga n
 
 I-addon ye-[Plugin & Theme Manager](/addons/plugin-and-theme-manager) ingasiza ukulawula lokho amakhasimende akubonayo.
 
-## Uchungechunge Lwe-imeyili Yokwamukela
+## Uchungechunge Lwe-imeyili Yokwamukela {#welcome-email-sequence}
 
 I-imeyili eyodwa yokwamukela ayanele. Setha uchungechunge oluqondisa amakhasimende ngesonto lawo lokuqala:
 
-### I-imeyili 1: Ukwamukela (Ngokushesha ngemva kokubhalisa)
+### I-imeyili 1: Ukwamukela (Ngokushesha ngemva kokubhalisa) {#email-1-welcome-immediately-after-signup}
 
 - Isihloko: "Siyakwamukela ku-FitSite -- iwebhusayithi yestudio sakho isibukhoma"
 - Okuqukethwe: Isixhumanisi sokungena, izinyathelo zokuqala ngokushesha, isixhumanisi sezinsiza zosizo
 - Izwi: Linomdlandla, liyakhuthaza, liqondene nokuzivocavoca
 
-### I-imeyili 2: Ukunqoba Okusheshayo (Usuku 1)
+### I-imeyili 2: Ukunqoba Okusheshayo (Usuku 1) {#email-2-quick-wins-day-1}
 
 - Isihloko: "Izinto ezi-3 okufanele uzenze kuqala ku-FitSite yakho"
 - Okuqukethwe: Engeza i-logo yakho, buyekeza isithombe se-hero sekhasi lasekhaya, engeza uhlelo lwakho lwamakilasi
 - Faka izithombe-skrini ezibonisa ngqo lapho okufanele uchofoze khona
 
-### I-imeyili 3: Yenze Ibe Ngeyakho (Usuku 3)
+### I-imeyili 3: Yenze Ibe Ngeyakho (Usuku 3) {#email-3-make-it-yours-day-3}
 
 - Isihloko: "Yenza isayithi yakho yokuzivocavoca igqame"
 - Okuqukethwe: Yenza imibala ibe ngeyakho, engeza izithombe zabaqeqeshi, bhala indaba yestudio sakho
 - Xhuma ezibonelweni zamasayithi amahle okuzivocavoca ku-platform
 
-### I-imeyili 4: Hamba Bukhoma (Usuku 7)
+### I-imeyili 4: Hamba Bukhoma (Usuku 7) {#email-4-go-live-day-7}
 
 - Isihloko: "Usukulungele ukwabelana nge-FitSite yakho nomhlaba?"
 - Okuqukethwe: Uhlu lokuhlola lokho okufanele uqinisekise ngaphambi kokwabelana, indlela yokuxhuma i-domain yangokwezifiso (uma uku-Growth/Pro), amathiphu okwabelana ezinkundleni zokuxhumana
@@ -78,11 +78,11 @@ I-imeyili eyodwa yokwamukela ayanele. Setha uchungechunge oluqondisa amakhasimen
 Sebenzisa [Webhooks](/user-guide/integrations/webhooks) noma [Zapier](/user-guide/integrations/zapier) ukuqala la ma-imeyili nge-platform yakho yokumaketha nge-imeyili. Lokhu kukunikeza ukulawula okwengeziwe phezu kwesikhathi futhi kukuvumela ukulandelela ukuzibandakanya.
 :::
 
-## Izinsiza Zosizo
+## Izinsiza Zosizo {#help-resources}
 
 Dala okuqukethwe kosizo okuqondene ne-niche okuphendula imibuzo abanikazi bezitudio zokuzivocavoca abayibuzayo ngempela:
 
-### Ama-athikili e-Knowledge Base
+### Ama-athikili e-Knowledge Base {#knowledge-base-articles}
 
 - "Indlela yokubuyekeza uhlelo lwakho lwamakilasi"
 - "Ukwengeza nokuhlela amaphrofayela abaqeqeshi"
@@ -92,7 +92,7 @@ Dala okuqukethwe kosizo okuqondene ne-niche okuphendula imibuzo abanikazi bezitu
 
 Kubhalele abasebenzisi abangewona ochwepheshe bezobuchwepheshe. Sebenzisa izithombe-skrini. Gwema ulimi oluyinkimbinkimbi lwe-WordPress.
 
-### Ama-Video Walkthrough
+### Ama-Video Walkthrough {#video-walkthroughs}
 
 Ukuqoshwa kwesikrini okufushane (imizuzu emi-2-3) okubonisa:
 
@@ -103,7 +103,7 @@ Ukuqoshwa kwesikrini okufushane (imizuzu emi-2-3) okubonisa:
 
 Lokhu akudingeki kube imikhiqizo epholishiwe. Okubalulekile ukuthi kucace, kube usizo, futhi kuqondane ne-niche.
 
-## Ikhasi le-Account
+## Ikhasi le-Account {#the-account-page}
 
 Ultimate Multisite ifaka [Account Page](/user-guide/client-management/account-page) ebhekene nekhasimende lapho amakhasimende ephatha khona i-subscription yawo. Yenze ibe ngeyakho ukuze:
 
@@ -112,7 +112,7 @@ Ultimate Multisite ifaka [Account Page](/user-guide/client-management/account-pa
 - Inikeze umlando wokukhokha nokulandwa kwama-invoice
 - Ixhumanise nezinsiza zosizo
 
-## Ukulinganisa Impumelelo Yokwamukela
+## Ukulinganisa Impumelelo Yokwamukela {#measuring-onboarding-success}
 
 Landela lezi zinkomba ukuze wazi ukuthi ukwamukela kwakho kuyasebenza yini:
 
@@ -121,7 +121,7 @@ Landela lezi zinkomba ukuze wazi ukuthi ukwamukela kwakho kuyasebenza yini:
 - **Amathikithi osizo avela kumakhasimende amasha**: Umthamo omkhulu usho ukuthi ukwamukela kwakho kunezikhala
 - **Ukuguqulwa kusuka kusivivinyo kuya kokukhokhelwayo**: Uma unikeza izivivinyo, yiliphi iphesenti eliguqukayo?
 
-## I-FitSite Network Kuze Kube Manje
+## I-FitSite Network Kuze Kube Manje {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Umuzwa wokungena kokuqala oqondisiwe** one-widget ye-Quick Start
 - **I-dashboard eyenziwe lula** egxile emisebenzini yokuphatha isayithi yokuzivocavoca

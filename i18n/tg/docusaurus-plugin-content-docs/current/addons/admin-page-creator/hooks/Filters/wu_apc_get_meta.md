@@ -4,11 +4,11 @@ title: Филтр - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Филтр: wu_apc_get_meta
+# Филтр: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Ба таҳиягарон имкон медиҳад, ки арзишҳои ниҳоиро филтр кунанд ва ҳолатҳои нави коркардро илова намоянд.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 | $meta_type | `string` | Навъи маълумоти meta, ки бояд гирифта шавад. |
 | $meta_key | `string` | Номи майдони meta. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 1.4.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) дар сатри 93 муайян шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}
 Арзиши нави пешфарз.

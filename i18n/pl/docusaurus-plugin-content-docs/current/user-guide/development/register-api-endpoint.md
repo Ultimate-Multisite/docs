@@ -3,7 +3,7 @@ title: Zarejestruj punkt końcowy API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Punkt końcowy API /register Ultimate Multisite
+# Punkt końcowy API /register Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 W tym samouczku dowiesz się, jak używać punktu końcowego API /register Ultimate Multisite, aby utworzyć cały proces onboardingu dla nowego klienta w swojej sieci, oraz jak zrobić to za pomocą Zapier.
 
@@ -29,11 +29,11 @@ Wybierz **Włącz API** i pobierz swoje dane uwierzytelniające API.
 
 Teraz przyjrzyjmy się punktowi końcowemu, a następnie utwórzmy akcję rejestracji w Zapier.
 
-## Parametry treści punktu końcowego
+## Parametry treści punktu końcowego {#endpoint-body-parameters}
 
 Przyjrzyjmy się minimalnym informacjom, które musimy wysłać do punktu końcowego. Na końcu tego artykułu znajdziesz pełne wywołanie.
 
-### Klient
+### Klient {#customer}
 
 Są to informacje niezbędne w procesie tworzenia użytkownika oraz klienta Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Możliwe jest wysłanie ID klienta utworzonego w Twojej sieci. Jeśli nie zostan
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Członkostwo**
+### **Członkostwo** {#membership}
 
 Jedyną informacją, której potrzebujemy wewnątrz tego obiektu, jest status członkostwa.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produkty**
+### **Produkty** {#products}
 
 Produkty są przekazywane jako tablica z 1 lub większą liczbą ID produktów z Twojej sieci. Uwaga: ten punkt końcowy nie tworzy produktów. Sprawdź dokumentację Ultimate Multisite, aby lepiej zrozumieć punkt końcowy tworzenia produktu.
 
 **"products" : [1,2],**
 
-### Płatność
+### Płatność {#payment}
 
 Podobnie jak w przypadku członkostwa, potrzebujemy tylko statusu.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Witryna
+### Witryna {#site}
 
 Aby domknąć treść, potrzebujemy URL i tytułu witryny, oba wewnątrz obiektu Site.
 
@@ -69,13 +69,13 @@ Aby domknąć treść, potrzebujemy URL i tytułu witryny, oba wewnątrz obiektu
 
 Zwrotem z punktu końcowego rejestracji będzie tablica z informacjami o nowo utworzonym członkostwie.
 
-## Tworzenie akcji w Zapier
+## Tworzenie akcji w Zapier {#creating-an-action-in-zapier}
 
 Wraz z wprowadzeniem tego nowego i bardziej rozbudowanego punktu końcowego tworzenia konta uzyskasz również dostęp do nowej akcji w Zapier.
 
 Czy wiesz, jak korzystać ze wszystkiego, co oferuje nowa wersja Zapier, i czerpać z tego korzyści? Dowiedz się więcej tutaj. (link?)
 
-### Tworzenie akcji
+### Tworzenie akcji {#creating-an-action}
 
 Aby lepiej zilustrować, jak używać punktu końcowego rejestracji z Zapier, utwórzmy integrację z Google Forms. Za każdym razem, gdy ten formularz zostanie wypełniony, a informacje zapisane w arkuszu odpowiedzi formularza, w sieci Ultimate Multisite zostanie utworzone nowe członkostwo.
 
@@ -105,7 +105,7 @@ Po skonfigurowaniu informacji przejdź do końcowego testu. Na ostatnim ekranie 
 
 Przetestuj swój nowy Zap — powinien zakończyć się powodzeniem. Jeśli wystąpi jakikolwiek błąd, sprawdź wszystkie pola i upewnij się, że są wysyłane poprawnie. Ponieważ informacji jest dużo, niektóre rzeczy mogą umknąć uwadze.
 
-### Pełne parametry punktu końcowego
+### Pełne parametry punktu końcowego {#complete-endpoint-parameters}
 
 Oto pełne wywołanie oraz wszystkie możliwe pola, które można wysłać.
 

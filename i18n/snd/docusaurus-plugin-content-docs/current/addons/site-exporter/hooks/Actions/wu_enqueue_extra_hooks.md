@@ -4,19 +4,19 @@ title: عمل - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# عمل: wu_enqueue_extra_hooks
+# عمل: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
 
 plugin ڊولپرن کي اضافي hooks شامل ڪرڻ جي اجازت ڏيو.
 
-## پيراميٽر
+## پيراميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
 | $page_hook | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | هن صفحي لاءِ ٺاهيل hook. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 1.8.2
-### ذريعو
+### ذريعو {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L614) ۾ line 614 تي بيان ڪيل.

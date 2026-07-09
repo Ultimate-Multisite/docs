@@ -3,13 +3,13 @@ title: Vaka Bhizinesi reWebhusaiti Rakanangana neChikamu Chakatarwa
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Vaka Bhizinesi reWebhusaiti reMusika Wakasarudzika neUltimate Multisite
+# Vaka Bhizinesi reWebhusaiti reMusika Wakasarudzika neUltimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Vanhu vazhinji vanoedza kutengesa mawebhusaiti vanokwikwidza pamutengo neWix, Squarespace, uye zviuru zvevashandi vakazvimirira. Vanokundwa. Vanohwina vanosarudza vateereri vakatarwa, vanovaka mhinduro yakagadzirirwa vateereri ivavo, uye vanobhadharisa kukosha kwavanounza.
 
 Kosi iyi inokudzidzisa kuita izvozvo chaizvo uchishandisa Ultimate Multisite.
 
-## Zvauchavaka
+## Zvauchavaka {#what-you-will-build}
 
 Mukati mekosi iyi yose uchavaka network chaiyo, inoshanda inonzi **FitSite** -- chikuva chewebhusaiti chakavakirwa chaizvo mastudio ekusimbisa muviri, varairidzi vemunhu, nevaridzi vemagym.
 
@@ -23,7 +23,7 @@ Pakazosvika chidzidzo chekupedzisira, FitSite ichava chikuva chakakwana chemusik
 
 Uchatevera nhanho nenhanho, uye pakupera uchava nechikuva chinoshanda pamwe neruzivo rwekudzokorora maitiro acho kune chero musika wakasarudzika waunosarudza.
 
-## Sei Mastudio Ekusimbisa Muviri?
+## Sei Mastudio Ekusimbisa Muviri? {#why-fitness-studios}
 
 Taida muenzaniso wakajeka unogona kuteverwa nemunhu wese. Mastudio ekusimbisa muviri anoshanda nekuti:
 
@@ -34,7 +34,7 @@ Taida muenzaniso wakajeka unogona kuteverwa nemunhu wese. Mastudio ekusimbisa mu
 
 Zvese zvaunodzidza uchivaka FitSite zvinoshanda zvakananga kune chero musika wakasarudzika waunosarudza: maresitorendi, maagent edzimba, mafemu emagweta, makereke, makontrakita emabasa emaoko, kana chero chimwe chikamu.
 
-## Chimiro cheKosi
+## Chimiro cheKosi {#course-structure}
 
 Chidzidzo chimwe nechimwe chinounza pfungwa imwe, chinotsanangura kuti nei ichikosha, uye chinokutungamira pakuiisa muFitSite network. Chidzidzo chimwe nechimwe chinovakira pane chakapfuura.
 
@@ -55,7 +55,7 @@ Chidzidzo chimwe nechimwe chinounza pfungwa imwe, chinotsanangura kuti nei ichik
 | [13. Kukura](lesson-13-growth) | Kukura kubva kuvatengi vekutanga kusvika kubhizinesi chairo | Zano rekukura neautomation reFitSite |
 | [14. Zvinotevera Chii](lesson-14-whats-next) | Kuwedzera kumisika yakasarudzika iri pedyo nemikana mitsva | Roadmap yako kupfuura FitSite |
 
-## Zvinodiwa Usati Watanga
+## Zvinodiwa Usati Watanga {#prerequisites}
 
 - Kuiswa kweWordPress Multisite (kana kuda kugadzira imwe)
 - Rezinesi reUltimate Multisite riri kushanda
@@ -63,6 +63,6 @@ Chidzidzo chimwe nechimwe chinounza pfungwa imwe, chinotsanangura kuti nei ichik
 
 Hapana kunyora code kunodiwa. Kana usati wamboshandisa Ultimate Multisite kare, hazvina basa -- Chidzidzo 3 chinotanga kubva pakuisa kutsva.
 
-## Wagadzirira?
+## Wagadzirira? {#ready}
 
 Tanga ne[Chidzidzo 1: Nei Musika Wakasarudzika Uchihwina](lesson-1-why-niche).

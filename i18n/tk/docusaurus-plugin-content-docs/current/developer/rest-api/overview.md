@@ -3,28 +3,28 @@ title: REST API umumy syn
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API salgylanmasy
+# REST API salgylanmasy {#rest-api-reference}
 
-## Esasy konfigurasiýa
+## Esasy konfigurasiýa {#base-configuration}
 
 **Esasy URL:** `{site_url}/wp-json/wu/v2/`
 **Autentifikasiýa:** API açary we gizlin açar (HTTP Basic Auth ýa-da URL parametrleri)
 
-## Autentifikasiýa
+## Autentifikasiýa {#authentication}
 
-### API-ni işjeňleşdirmek
+### API-ni işjeňleşdirmek {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API maglumatlaryny almak
+### API maglumatlaryny almak {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentifikasiýa usullary
+### Autentifikasiýa usullary {#authentication-methods}
 
 **HTTP Basic Auth (maslahat berilýär):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Esasy endpointler
+## Esasy endpointler {#core-endpoints}
 
-### 1. Müşderiler API-si
+### 1. Müşderiler API-si {#1-customers-api}
 
 **Esasy ugur:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Saýtlar API-si
+### 2. Saýtlar API-si {#2-sites-api}
 
 **Esasy ugur:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Agzalyklar API-si
+### 3. Agzalyklar API-si {#3-memberships-api}
 
 **Esasy ugur:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Önümler API-si
+### 4. Önümler API-si {#4-products-api}
 
 **Esasy ugur:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Tölegler API-si
+### 5. Tölegler API-si {#5-payments-api}
 
 **Esasy ugur:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domenler API-si
+### 6. Domenler API-si {#6-domains-api}
 
 **Esasy ugur:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Hasaba alyş endpointi
+## Hasaba alyş endpointi {#registration-endpoint}
 
 `/register` endpointi doly checkout/hasaba alyş akymyny üpjün edýär:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Özbaşdak tenant endpointleri
+## Özbaşdak tenant endpointleri {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 izolirlenen tenantlary üpjün edýän, barlaýan ýa-da tassyklanýan integrasiýalar üçin özbaşdak tenant REST örtügini goşýar.
 
@@ -242,7 +242,7 @@ Adaty migrasiýa ýagdaýy jogaplary şulary öz içine alýar:
 
 `ready: false` ýagdaýyny işe goýberişden öňki päsgelçilik hökmünde kabul ediň. Tassyklama jikme-jikliklerini barlaň, maglumatlar binýadynyň host baglanyşygyny, nobaty, ulanyjy üpjünçiligini ýa-da marşrutlama meselesini düzediň, soňra tassyklamany gaýtadan synanyşyň.
 
-## Ýalňyşlyk jogaplary
+## Ýalňyşlyk jogaplary {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Adaty migrasiýa ýagdaýy jogaplary şulary öz içine alýar:
 }
 ```
 
-## Sahypalama we filtrleme
+## Sahypalama we filtrleme {#pagination-and-filtering}
 
 **Sorag parametrleri:**
 ```http

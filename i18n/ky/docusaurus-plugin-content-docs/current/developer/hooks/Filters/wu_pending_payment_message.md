@@ -4,11 +4,11 @@ title: Чыпка - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Фильтр: wu_pending_payment_message
+# Фильтр: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Колдонуучуга күтүүдөгү төлөмдөр жөнүндө билдирүүнү өзгөртүүгө уруксат берет.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аталышы | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 | $customer | `\WP_Ultimo\Models\Customer` | Учурдагы кардар. |
 | $pending_payments | `array` | Күтүүдөгү төлөмдөрдүн тизмеси. |
 
-### Кайсы версиядан бери
+### Кайсы версиядан бери {#since}
 
 - 2.0.19
-### Булак
+### Булак {#source}
 
 [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) ичинде 244-сапта аныкталган.

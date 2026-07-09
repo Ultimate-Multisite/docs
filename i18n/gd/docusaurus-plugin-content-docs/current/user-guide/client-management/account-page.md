@@ -3,7 +3,7 @@ title: Pàirc àite chliant
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Page an Comharrachd Ur-àig an Eòlas (v2)
+# Page an Comharrachd Ur-àig an Eòlas (v2) {#your-clients-account-page-v2}
 
 _**NOTE CRÍTICA: Tha an article seo a' tighinn air Ultimate Multisite version 2.x.**_
 
@@ -11,7 +11,7 @@ Nuair a thionnann na stiùirean (customers) seòl ar plan ar fàilte agad, tha s
 
 Dugaim sinn a' chleachdadh an page àite an eòlas (account page) agus tha sinn ag faicinn gu sàmhach as e cheann sin.
 
-## An Page Ur-àig an Eòlas
+## An Page Ur-àig an Eòlas {#the-account-page}
 
 Is e an page ur-àig an eòlas a fhaighinn gu leithid a' **Account** anns an dashboard a thionnann na stiùirean (customers).
 
@@ -27,7 +27,7 @@ An uair a leicinn iad air sin, tha sinn a' faicinn am beòr ri cumhachdachais, a
 
 Is e possible airson a' atharrachadh an cumhachdachais air plan eile, no a' fhaighinn am beòr eile no seòlach a tha sinn ag fhaighinn. Dugaim sinn a' faicinn chùineachdan sin gu am beòr.
 
-### Aimsiridh Eòlas Riabhachd Chanachaidh:
+### Aimsiridh Eòlas Riabhachd Chanachaidh: {#your-membership-overview}
 
 An bloc an uair a tha agad gu leath air an ainm ws-sìth na chunnich, a th' ann eòlas de plan agus seòluasan/packagean a chàirinn sgaidh. A tha an bloc seo ag tòiseachadh an nàran riabhachd, an ammeachd a chàirinn airson e, an tairgseach air a chàirinn airson e, agus gu fìor, a' chùrsain a tha an plan agus seòluasan/packagean. Cuilear sinn aig an sin a fheuchain obair **Active**, **Expired** no **Canceled**.
 
@@ -43,7 +43,7 @@ An uair a tha agad gu leath airson packagean no seòluasan airson an plan a tha 
 
 Cuilear sinn gu sònraichte: cha thuairtichean (coupon codes) a bhith ag tòiseachadh air an athroachadh riabhachd seo. Má tha an chunnich a' chùairtichean air an tairgseach riabhachd a' chùrsain a' chùrsain a' leathann, beidh an chùairtichean a' tàite am bheil eirinn riabhachd a' chùrsain a' tàite.
 
-### Athroachadh An Ammeachd A' Chàirinn:
+### Athroachadh An Ammeachd A' Chàirinn: {#updating-the-billing-address}
 
 Ar bith ar fhaigh, thuair a tha a' chlàradh a' chùlnaid a' chàrachdhan a' atharrachadh riaghladh bhon àite a' chàrachdhan. Tha e gu sònraich, tha iad ag iarraidh dìreach a' chlàradh ar **Update** a' chùlnaid a' chàrachdhan.
 
@@ -53,7 +53,7 @@ Tha sealladh ùr a' tòiseachadh airson a' chùlnaid. Tha e gu sònraich, tha ia
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Atharrachadh an Teampa Site:
+### Atharrachadh an Teampa Site: {#changing-the-site-template}
 
  airson a bhith a' chùlnaid a' atharrachadh na teampa site, tha thuig a' fáil air **Ultimate Multisite > Settings > Sites** agus a' chlàradh ar an option **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ An uair a thabhas a' sin a tha thu a' chlàradh, beidh an t-template site ùr a'
 
 Beidhe sinn a' chlàradh a' sin a 'Reset current template' a' chlàradh seo a' chlàradh a' site gu sgaidh a' chlàradh a' tha a' fhaighinn. Mar a tha thu a' chlàradh a' sin, is e cheann a' chlàradh a' chlàradh a' site a' faighinn, mar a tha an t-template a' chlàradh a' chlàradh a' site, beidh iad a' fhaighinn.
 
-### A' chlàradh domain ùr:
+### A' chlàradh domain ùr: {#adding-custom-domains}
 
 Beidh na chluainnan agad a' fhaighinn am pròiseas a' chlàradh domain ùr airson an plan sin air an seòl a' chlàradh. Gu bhith a' gineadh eadar-dhealaidh do chluainnan a' faighinn am pròiseas a' chlàradh domain ùr, thànaidh thu gu **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -125,7 +125,7 @@ An uair a thèid a' leat a' sgrùdadh **Next Step**, caithedh na chùisiainn a b
 
 An uair a thèid a' leat a' sgrùdadh **Add Domain**, faigh an domhan a' leat a' sgrùdadh ann an account na chùisiainn. Tha e cheannach a tha thu a' sgrùdadh a' ginn a' tighinn gu leithid an DNS records a' domhan ùr sin ar an t-seòl de dhutha domhan (domain registrar).
 
-### Atharrachadh na Passord:
+### Atharrachadh na Passord: {#changing-password}
 
 An uair a thèid a' leat a' sgrùdadh dashboard account, caithedh na chùisiainn a bhith ag atharrachadh a' passord a' leat a' sgrùdadh gu leithid **Change Password**.
 
@@ -135,7 +135,7 @@ Bidh seo a' chluain new a' chluain a tha thuig a' faic a' faic an t-aisgadh (cur
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### A' chluain a' chùl:
+### A' chluain a' chùl: {#danger-zone}
 
 Tha am raidheach air sinn sìos a' chùl (Danger Zone) a tha de uile a' sgaidh: **Delete Site** agus **Delete Account**. Tha sin beag air an t-aisgadh a' chùl a' tha de uile a' sgaidh a' chluain is dòigh, no'n dhomh. Tha sin beag air an t-aisgadh a' chluain a' tha de uile a' sgaidh a' chluain is dòigh, no'n dhomh. Tha sin beag air an t-aisgadh a' chluain a' tha de uile a' sgaidh a' chluain is dòigh, no'n dhomh.
 

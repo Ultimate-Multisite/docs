@@ -3,17 +3,17 @@ title: '12 pamoka: Verslo valdymas'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# 12 pamoka: Verslo valdymas
+# 12 pamoka: Verslo valdymas {#lesson-12-running-the-business}
 
 Platforma nėra projektas, kurį užbaigiate -- tai verslas, kurį valdote. Šioje pamokoje aptariamos kasdienės FitSite valdymo operacijos: palaikymas, atsiskaitymai, priežiūra ir klientų pasitenkinimo užtikrinimas.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite veikia, o klientai registruojasi. Dabar turite valdyti veiklą tvariai.
 
-## Kasdienės operacijos
+## Kasdienės operacijos {#daily-operations}
 
-### Stebėsena
+### Stebėsena {#monitoring}
 
 Tikrinkite tai kasdien (arba nustatykite įspėjimus):
 
@@ -22,7 +22,7 @@ Tikrinkite tai kasdien (arba nustatykite įspėjimus):
 - **Nepavykę mokėjimai**: Ar yra mokėjimo nesėkmių, kurioms reikia dėmesio?
 - **Palaikymo užklausos**: Ar yra neatsakytų klientų klausimų?
 
-### Klientų palaikymas
+### Klientų palaikymas {#customer-support}
 
 Jūsų nišinis fokusas čia yra pranašumas. Kadangi visi jūsų klientai yra sporto studijos, tuos pačius klausimus matysite nuolat:
 
@@ -36,7 +36,7 @@ Jūsų nišinis fokusas čia yra pranašumas. Kadangi visi jūsų klientai yra s
 
 Kurkite savo žinių bazę (pradėtą 8 pamokoje) pagal šiuos pasikartojančius klausimus. Kiekvienas palaikymo bilietas, kuris galėjo būti žinių bazės straipsnis, yra signalas tą straipsnį parašyti.
 
-### Palaikymo lygiai
+### Palaikymo lygiai {#support-tiers}
 
 Augant struktūruokite palaikymą pagal planą:
 
@@ -48,9 +48,9 @@ Augant struktūruokite palaikymą pagal planą:
 
 [Support Tickets priedas](/addons/support-tickets) gali padėti valdyti palaikymo užklausas platformoje.
 
-## Atsiskaitymo operacijos
+## Atsiskaitymo operacijos {#billing-operations}
 
-### Pasikartojantys mokėjimai
+### Pasikartojantys mokėjimai {#recurring-payments}
 
 Ultimate Multisite automatiškai tvarko pasikartojantį atsiskaitymą per jūsų mokėjimų šliuzą. Jūsų darbas yra stebėti:
 
@@ -58,7 +58,7 @@ Ultimate Multisite automatiškai tvarko pasikartojantį atsiskaitymą per jūsų
 - **Skolų priminimus**: Nustatykite automatizuotą pakartotinių bandymų logiką per savo mokėjimų šliuzą (Stripe tai tvarko gerai)
 - **Atšaukimo užklausas**: Supraskite, kodėl klientai išeina. Kiekvienas atšaukimas yra grįžtamasis ryšys.
 
-### Narysčių valdymas
+### Narysčių valdymas {#managing-memberships}
 
 Eikite į **Ultimate Multisite > Narystės**, kad:
 
@@ -69,13 +69,13 @@ Eikite į **Ultimate Multisite > Narystės**, kad:
 
 Visą nuorodą žr. [Narysčių valdymas](/user-guide/administration/managing-memberships).
 
-### Sąskaitų faktūrų išrašymas
+### Sąskaitų faktūrų išrašymas {#invoicing}
 
 Užtikrinkite, kad sąskaitos faktūros būtų teisingai sugeneruotos kiekvienam mokėjimui. Klientams gali reikėti sąskaitų faktūrų verslo išlaidų ataskaitoms. Žr. [Mokėjimų ir sąskaitų faktūrų valdymas](/user-guide/administration/managing-payments-and-invoices).
 
-## Platformos priežiūra
+## Platformos priežiūra {#platform-maintenance}
 
-### WordPress ir plugin atnaujinimai
+### WordPress ir plugin atnaujinimai {#wordpress-and-plugin-updates}
 
 Kaip tinklo administratorius, esate atsakingi už:
 
@@ -88,14 +88,14 @@ Kaip tinklo administratorius, esate atsakingi už:
 Sugedęs atnaujinimas paveikia kiekvieną kliento svetainę jūsų tinkle. Visada pirmiausia išbandykite atnaujinimus savo tinklo staging kopijoje.
 :::
 
-### Saugumas
+### Saugumas {#security}
 
 - Laikykite visą programinę įrangą atnaujintą
 - Naudokite stiprius slaptažodžius ir dviejų veiksnių autentifikavimą administratorių paskyroms
 - Stebėkite įtartiną veiklą
 - Turėkite planą saugumo incidentams
 
-### Našumas
+### Našumas {#performance}
 
 Augant jūsų tinklui, stebėkite:
 
@@ -105,9 +105,9 @@ Augant jūsų tinklui, stebėkite:
 
 Apsvarstykite kešavimo įgyvendinimą (puslapio kešas, objektų kešas) ir CDN, jei to dar nepadarėte. [Cloudflare integracija](/user-guide/host-integrations/cloudflare) tvarko didelę šios dalies dalį.
 
-## Klientų gyvavimo ciklo valdymas
+## Klientų gyvavimo ciklo valdymas {#customer-lifecycle-management}
 
-### Klientų praradimo mažinimas
+### Klientų praradimo mažinimas {#reducing-churn}
 
 Klientų praradimas yra procentas klientų, kurie kas mėnesį atšaukia paslaugą. Prenumeratos verslui klientų praradimo mažinimas yra toks pat svarbus kaip naujų klientų pritraukimas.
 
@@ -119,7 +119,7 @@ Klientų praradimas yra procentas klientų, kurie kas mėnesį atšaukia paslaug
 - Jie rado pigesnę alternatyvą → sustiprinkite savo nišinę vertę
 - Jų verslas užsidarė → neišvengiama, bet sekite tai atskirai
 
-### Atnaujinimų skatinimas
+### Atnaujinimų skatinimas {#encouraging-upgrades}
 
 Starter plano klientus, kuriems sekasi, reikėtų skatinti atnaujinti planą:
 
@@ -127,7 +127,7 @@ Starter plano klientus, kuriems sekasi, reikėtų skatinti atnaujinti planą:
 - Siųskite tikslinius el. laiškus, pabrėžiančius Growth plano funkcijas, kurios jiems būtų naudingos
 - Parodykite, ką sukūrė Growth/Pro klientai
 
-### Susigrąžinimo kampanijos
+### Susigrąžinimo kampanijos {#win-back-campaigns}
 
 Kai klientas atšaukia:
 
@@ -135,30 +135,30 @@ Kai klientas atšaukia:
 2. Jei įmanoma, spręskite jų rūpestį
 3. Pasiūlykite nuolaidą grįžimui (30–60 dienų po atšaukimo)
 
-## Savaitinės ir mėnesinės rutinos
+## Savaitinės ir mėnesinės rutinos {#weekly-and-monthly-routines}
 
-### Kas savaitę
+### Kas savaitę {#weekly}
 
 - Peržiūrėkite naujas registracijas ir atšaukimus
 - Atsakykite į visus atvirus palaikymo bilietus
 - Patikrinkite platformos našumą ir veikimo laiką
 - Peržiūrėkite visus nepavykusius mokėjimus
 
-### Kas mėnesį
+### Kas mėnesį {#monthly}
 
 - Analizuokite pagrindinius rodiklius (MRR, klientų praradimas, nauji klientai, atnaujinimai)
 - Taikykite WordPress ir plugin atnaujinimus (po staging testo)
 - Peržiūrėkite ir atnaujinkite žinių bazę pagal palaikymo tendencijas
 - Siųskite klientams naujienlaiškį arba atnaujinimą (naujos funkcijos, patarimai, sporto industrijos naujienos)
 
-### Kas ketvirtį
+### Kas ketvirtį {#quarterly}
 
 - Peržiūrėkite kainodarą, palygindami su konkurentais ir klientų grįžtamuoju ryšiu
 - Įvertinkite šablonų dizainus -- ar juos reikia atnaujinti?
 - Įvertinkite hostingo pajėgumą -- ar reikia plėstis?
 - Peržiūrėkite ir pagerinkite įvedimą pagal aktyvavimo duomenis
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Kasdienės stebėsenos procedūros** veikimo laikui, registracijoms, mokėjimams ir pagalbai
 - **Pakopinė pagalbos struktūra**, pritaikyta plano lygiams

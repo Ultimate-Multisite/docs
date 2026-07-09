@@ -3,19 +3,19 @@ title: 'Les 2: Kies jou nis'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Les 2: Kies Jou Nis
+# Les 2: Kies Jou Nis {#lesson-2-picking-your-niche}
 
 In Les 1 het ons vasgestel waarom 'n nis beter is as generiek. Nou moet jy jou eie nis kies. Hierdie les gee jou 'n raamwerk om 'n nis te vind en te valideer voordat jy tyd en moeite in die bou daarvan belê.
 
-## Waar Ons Gehou Het
+## Waar Ons Gehou Het {#where-we-left-off}
 
 Ons het die FitSite-konsep gedefinieer: 'n webwerfplatform vir fiksheidsstudio's. Maar hoe het ons spesifiek by fiksheidsstudio's gekom? Hierdie les loop deur die proses sodat jy dit kan toepas om jou eie nis te vind.
 
-## Die Drie Kriteria
+## Die Drie Kriteria {#the-three-criteria}
 
 'n Goeie nis vir 'n webwerfplatform voldoen aan drie voorwaardes:
 
-### 1. Hulle Het Webwerwe Nodig, Maar Sukkel om Goeie Een te Kry
+### 1. Hulle Het Webwerwe Nodig, Maar Sukkel om Goeie Een te Kry {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Soek na industrieë waar:
 
@@ -26,7 +26,7 @@ Soek na industrieë waar:
 
 **Fiksheidsstudio's pas**: Lede verwag om skedules, pryse en besprekings aanlyn te vind. Die meeste studio-webwerwe is verouderd of gebou op generieke templates wat nie die doel dien nie.
 
-### 2. Die Besighede Kan 'n Maandelikse Abonnement Betaal
+### 2. Die Besighede Kan 'n Maandelikse Abonnement Betaal {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Jou teikenklante moet wees:
 
@@ -36,7 +36,7 @@ Jou teikenklante moet wees:
 
 **Fiksheidsstudio's pas**: Hulle betaal reeds vir beskingssagteware, betalingverwerking en bemarkinghulpmiddels. 'n Webwerf-abonnement is 'n natuurlike bykomer.
 
-### 3. Hulle Praat Met Mekaar
+### 3. Hulle Praat Met Mekaar {#3-they-talk-to-each-other}
 
 Die beste nisse het:
 
@@ -46,9 +46,9 @@ Die beste nisse het:
 
 **Fiksheidsstudio's pas**: Studio-eienaars bywoon fiksheidsindustrie-geleenthede, neem deel aan aanlyn gemeenskappe, en deel gereeld hul gereedskap en dienste met eweknieë.
 
-## Hoe om Niskandidaat te Vind
+## Hoe om Niskandidaat te Vind {#how-to-find-niche-candidates}
 
-### Begin met Wat Jy Ken
+### Begin met Wat Jy Ken {#start-with-what-you-know}
 
 Jou bestaande ervaring is 'n voordeel. Oorweeg:
 
@@ -56,7 +56,7 @@ Jou bestaande ervaring is 'n voordeel. Oorweeg:
 - Hobbies of belangstellings waar jy die gemeenskap verstaan
 - Professionele netwerke waartoe jy reeds behoort
 
-### Soek na Pynsignale
+### Soek na Pynsignale {#look-for-pain-signals}
 
 Soek na bewys dat besighede in 'n nis sukkel met webwerwe:
 
@@ -65,7 +65,7 @@ Soek na bewys dat besighede in 'n nis sukkel met webwerwe:
 - Kyk na werklike webwerwe in die nis – is die meeste van hulle swak?
 - Kontroleer of kompetisie bestaan en hoe goed hulle die mark bedien
 
-### Evalueer die Ekonomie
+### Evalueer die Ekonomie {#evaluate-the-economics}
 
 Vir elke kandidaatnis, skat die volgende in:
 
@@ -73,11 +73,11 @@ Vir elke kandidaatnis, skat die volgende in:
 - **Bereidwilligheid om te betaal**: Wat spandeer hulle tans op soortgelyke hulpmiddels?
 - **Potensiaal vir lewenslange waarde**: Is hierdie besighede stabiel, of verlaat hulle vinnig?
 
-## Jou Nis Valideer
+## Jou Nis Valideer {#validating-your-niche}
 
 Voordat jy enigiets bou, valideer die vraag:
 
-### Praat met Potensiële Klante
+### Praat met Potensiële Klante {#talk-to-potential-customers}
 
 Neem kontak met 10-15 besigheidseienaars in jou teikennis. Vra:
 
@@ -88,17 +88,17 @@ Neem kontak met 10-15 besigheidseienaars in jou teikennis. Vra:
 
 Jy verkoop nog nie. Jy luister.
 
-### Kontroleer die Kompetisie-landskap
+### Kontroleer die Kompetisie-landskap {#check-competitor-landscape}
 
 - **Geen kompetisie**: Kan beteken dat daar geen vraag is nie, of dit kan 'n onbenutte geleentheid wees. Klantgesprekke sal jou vertel watter een.
 - **'n Paar kompetisie**: Goeie teken. Valideer die vraag. Bestudeer wat hulle goed doen en waar hulle tekortskiet.
 - **Baie kompetisie**: Moeilik om binne te kom, maar steeds moontlik as jy duidelik kan diferensieer.
 
-### Bou 'n Landingsblad
+### Bou 'n Landingsblad {#build-a-landing-page}
 
 Voordat jy die platform bou, skep 'n eenvoudige landingsblad wat jou nisoplossing beskryf en versamel e-pos-aanmeldings. Hardloop 'n klein hoeveelheid gerigte bemarking om belangstelling te toets. As mense aanmeld, het jy validasie.
 
-## Toepassing op FitSite
+## Toepassing op FitSite {#applying-this-to-fitsite}
 
 Hier is hoe FitSite teen die kriteria geskor het:
 
@@ -112,7 +112,7 @@ Hier is hoe FitSite teen die kriteria geskor het:
 
 Validasie het die geleentheid bevestig. Nou bou ons.
 
-## Nis Idees om te Oorweeg
+## Nis Idees om te Oorweeg {#niche-ideas-to-consider}
 
 As fiksheid nie jou mark is nie, hier is ander nisse wat aan die kriteria voldoen:
 
@@ -127,7 +127,7 @@ As fiksheid nie jou mark is nie, hier is ander nisse wat aan die kriteria voldoe
 
 Elk van hierdie het dieselfde kenmerke: duidelike webwerfbehoeftes, vermoë om te betaal, en mond-tot-mond gemeenskapskommunikasie.
 
-## Wat Ons Hierdie Les Gebou Het
+## Wat Ons Hierdie Les Gebou Het {#what-we-built-this-lesson}
 
 - **'n Nis-seleksie raamwerk**: drie kriteria om enige nis te evalueer
 - **Validasiemetodes**: klantgesprekke, kompetisie-analise, landingsblad-toetsing

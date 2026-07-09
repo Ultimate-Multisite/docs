@@ -3,13 +3,13 @@ title: Noticio pri la forigo de Modo Konstrui Siton
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Notitzum pri Entferon de Modilo Konstrui (Site Builder Mode)
+# Notitzum pri Entferon de Modilo Konstrui (Site Builder Mode) {#site-builder-mode-removal-notice}
 
 **La modilo Site Builder a espagi en Superdav AI Agent v1.12.0.** Se necese migri al **Setup Assistant agent** por kreo temoj kaj montri la siton.
 
-## Kion Ok Fari?
+## Kion Ok Fari? {#what-happened}
 
-### Modilo Site Builder (Vétaj)
+### Modilo Site Builder (Vétaj) {#site-builder-mode-legacy}
 
 Modilo Site Builder estis interfaco bazita sur wizard por:
 
@@ -18,7 +18,7 @@ Modilo Site Builder estis interfaco bazita sur wizard por:
 - Eliri temon
 - Montri la inicialan enconponon de la enhavo
 
-### Kion Ĝi Substitutis?
+### Kion Ĝi Substitutis? {#what-replaced-it}
 
 La **Setup Assistant agent** nun maneĝas ĉiuj funkciojn de Site Builder per:
 
@@ -27,15 +27,15 @@ La **Setup Assistant agent** nun maneĝas ĉiuj funkciojn de Site Builder per:
 - integriĝo kun la enkonfimo de Theme Builder
 - persistanta memoro `site_brief` por futaj sesioj
 
-## Se Vi Usis Modilo Site Builder
+## Se Vi Usis Modilo Site Builder {#if-you-were-using-site-builder-mode}
 
-### Via Sitoj Estas Segure
+### Via Sitoj Estas Segure {#your-sites-are-safe}
 
 - Ekzistantaj sitoj, kiuj estis kreitaj per modilo Site Builder, continus fari funkcion
 - Sen da vinco de datum aŭ montri la siton
 - Vi povas kontinui manĝi viajn sitojn normalan maniero
 
-### Migri al Setup Assistant Agent
+### Migri al Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Por nova montrado de sitio aŭ ŝanĝoj en temojn, uzu la Setup Assistant agent:
 
@@ -51,7 +51,7 @@ aŭ
 
 La Setup Assistant agent donas la saman funkcion per pli da fleksibiliteco.
 
-## Komparado: Site Builder vs. Setup Assistant
+## Komparado: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Karaktero | Site Builder (Drangi) | Setup Assistant (Nova) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ La Setup Assistant agent donas la saman funkcion per pli da fleksibiliteco.
 | Futaj sesioj | Repeti montron | Uzui apartigitan site_brief |
 | Fleksibiliteco | Fikta flujo de laboro | Adaptiva konversacio |
 
-## Migri al Setup Assistant Agent
+## Migri al Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Por Novaj Sitoj
+### Por Novaj Sitoj {#for-new-sites}
 
 Inplie de uzadon Mode Konstruktoro Stazo (Site Builder mode):
 
@@ -76,7 +76,7 @@ Inplie de uzadon Mode Konstruktoro Stazo (Site Builder mode):
    - Temo generavimas
    - Pradinis nustatymas
 
-### Eksistancinių Stazų Kur
+### Eksistancinių Stazų Kur {#for-existing-sites}
 
 Jei turite jau eksistantų stazų iš Mode Konstruktoro Stazo:
 
@@ -85,7 +85,7 @@ Jei turite jau eksistantų stazų iš Mode Konstruktoro Stazo:
 3. Asistentus Nustatymo Agentas padės jums su naujo temos kūrimu
 4. Jūsų stazo duomenys liks nepasikeisti
 
-### Temų Keitimo Kur
+### Temų Keitimo Kur {#for-theme-changes}
 
 Jei norite keisti temą, be Mode Konstruktoro Stazo pasirinkimo:
 
@@ -95,9 +95,9 @@ Jei norite keisti temą, be Mode Konstruktoro Stazo pasirinkimo:
    - Generuoti pritaikytą temą
    - Aktyvuoti ją jūsų stazo ant stazo
 
-## Pagrindinės Skirbliai (Key Differences)
+## Pagrindinės Skirbliai (Key Differences) {#key-differences}
 
-### Mode Konstruktoro Stazo (Site Builder Mode)
+### Mode Konstruktoro Stazo (Site Builder Mode) {#site-builder-mode}
 
 ```
 1. Pasirinkti šabloną
@@ -106,7 +106,7 @@ Jei norite keisti temą, be Mode Konstruktoro Stazo pasirinkimo:
 4. Apsauga
 ```
 
-### Asistentus Nustatymo Agentas (Setup Assistant Agent)
+### Asistentus Nustatymo Agentas (Setup Assistant Agent) {#setup-assistant-agent}
 
 ```
 1. Apibūdinti jūsų stazo tikslumą
@@ -117,42 +117,42 @@ Jei norite keisti temą, be Mode Konstruktoro Stazo pasirinkimo:
 6. Stazo apibūdinimas saugomas ateitymo sesijoms
 ```
 
-## Asistentus Nustatymo Agentų Privalumai (Benefits of Setup Assistant Agent)
+## Asistentus Nustatymo Agentų Privalumai (Benefits of Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Darbu Saugesnis (More Flexible)
+### Darbu Saugesnis (More Flexible) {#more-flexible}
 
 - Apibūdinti savo stazę natūraliu kalbu
 - Gauti pritaikytus rekomendacijas
 - Prisiginti jūsų specifinėms poreikiams
 
-### Geros Pritaikymo Kur (Better Customization)
+### Geros Pritaikymo Kur (Better Customization) {#better-customization}
 
 - Pritaikytos temų generavimas
 - Dizaino sistemos sprendimai
 - Persistanti dizaino tokenai
 
-### Persistanti Memoria (Persistent Memory)
+### Persistanti Memoria (Persistent Memory) {#persistent-memory}
 
 - Jūsų `site_brief` saugomas
 - Ateitymo agentai supranta jūsų stazę
 - Nežreikia powtaryti nustatymo informacijos
 
-### Integruotas Darbo Procesas (Integrated Workflow)
+### Integruotas Darbo Procesas (Integrated Workflow) {#integrated-workflow}
 
 - Temų kūrimo įkurimas (Theme Builder onboarding)
 - Dizaino sistemos esteties įgūdžius
 - Matomumo kontrolės galimybė
 - Visi darbai dirba kartu be problemų
 
-## Problemos Atsilapimo (Troubleshooting)
+## Problemos Atsilapimo (Troubleshooting) {#troubleshooting}
 
-### Negaliu rasti Mode Konstruktoro Stazo
+### Negaliu rasti Mode Konstruktoro Stazo {#i-cant-find-site-builder-mode}
 
 Mode Konstruktoro Stazą buvo pašalintas. Nors naudokite Asistentus Nustatymo Agentą:
 
 "Help mi konfigi nova siton"
 
-### Mi vol recrei siton din Site Builder
+### Mi vol recrei siton din Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Vi povas recrei ĝin kun la agento Asisto de Konfigo (Setup Assistant agent):
 
@@ -161,7 +161,7 @@ Vi povas recrei ĝin kun la agento Asisto de Konfigo (Setup Assistant agent):
 3. La agente generos similajn temojn
 4. Via `site_brief` estas konservita por futura referenco
 
-### Mia ekzista sito din Site Builder ne funkcias
+### Mia ekzista sito din Site Builder ne funkcias {#my-existing-site-builder-site-isnt-working}
 
 Ekzistaj sitoj, kiuj estis kreitaj kun modo Site Builder, continus funkcii. Se vi havas problemo:
 
@@ -170,7 +170,7 @@ Ekzistaj sitoj, kiuj estis kreitaj kun modo Site Builder, continus funkcii. Se v
 3. Kontrole WordPress erorlogojn (error logs)
 4. Kontakti subtenon, se problemo persistas
 
-### Ĉu mi povas uzi miajn vortajn ŝablonojn de Site Builder?
+### Ĉu mi povas uzi miajn vortajn ŝablonojn de Site Builder? {#can-i-still-use-my-old-site-builder-templates}
 
 Vortaj ŝablonoj de Site Builder ne estas disponibile pli da. Tial:
 
@@ -178,14 +178,14 @@ Vortaj ŝablonoj de Site Builder ne estas disponibile pli da. Tial:
 - Vi povas recrei similajn sitojn kun la agento Asisto de Konfigo (Setup Assistant agent)
 - La agento Asisto de Konfigo (Setup Assistant agent) provizas pli da opciojn por personaligi
 
-## Proksimaj Paŝoj
+## Proksimaj Paŝoj {#next-steps}
 
 1. **Por novaj sitoj**: Uzu la agento Asisto de Konfigo (Setup Assistant agent)
 2. **Por ekzistaj sitoj**: Kontinu uzi ilin kiel ili estas
 3. **Por ŝanĝoj de temo**: Petu helpon de la agento Asisto de Konfigo (Setup Assistant agent)
 4. **Por dezajno refina**: Uzu la abiliteco Estetiko de Sistemo de Dezajno (Design System Aesthetics skill)
 
-## Relatitaj Temoj
+## Relatitaj Temoj {#related-topics}
 
 - **Onboarding de Modo Temo (Theme Builder Onboarding)**: Gvidita konfigo por vortaj temoj
 - **Agento Asisto de Konfigo (Setup Assistant Agent)**: Sito konfigura gvitita per la agente

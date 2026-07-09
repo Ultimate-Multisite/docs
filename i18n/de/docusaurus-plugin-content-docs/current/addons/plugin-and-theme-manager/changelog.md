@@ -3,7 +3,7 @@ title: Plugin- & Theme-Manager-Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# Plugin- & Theme-Manager-Änderungsprotokoll
+# Plugin- & Theme-Manager-Änderungsprotokoll {#plugin--theme-manager-changelog}
 
 Version: 2.0.8 - Veröffentlicht am 2026-05-05
 * Verbessert: Plugin-Liste verwendet jetzt den Website-Cache, um Datenbankabfragen zu reduzieren und die Leistung zu verbessern

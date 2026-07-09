@@ -3,15 +3,15 @@ title: Menu Perhotelan
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Hospitality
+# Menu Hospitality {#hospitality-menus}
 
 Fitur **Menu Hospitality** ngidini Theme Builder nggawe lan masang kaca menu panganan lan ombenan sing terstruktur langsung menyang situs WordPress sampeyan.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Theme Builder saiki bisa nggawe kaca menu profesional lan terstruktur kanggo bisnis hospitality kalebu restoran, kafe, bar, lan layanan katering. Menu iki wis kagabung kanthi lengkap menyang desain situs sampeyan lan bisa gampang dianyari lan dikelola.
 
-## Jinis Hospitality sing Didhukung
+## Jinis Hospitality sing Didhukung {#supported-hospitality-types}
 
 - **Restoran** — menu dhahar layanan lengkap
 - **Kafe** — menu kopi lan panganan entheng
@@ -21,9 +21,9 @@ Theme Builder saiki bisa nggawe kaca menu profesional lan terstruktur kanggo bis
 - **Food Truck** — menu layanan panganan seluler
 - **Pabrik Bir lan Winery** — menu ombenan nganggo katrangan
 
-## Struktur Menu
+## Struktur Menu {#menu-structure}
 
-### Kategori Menu
+### Kategori Menu {#menu-categories}
 
 Menu diatur dadi kategori:
 
@@ -34,7 +34,7 @@ Menu diatur dadi kategori:
 - **Ombenan** — ombenan (alkohol lan non-alkohol)
 - **Spesial** — spesial saben dina utawa musiman
 
-### Format Item Menu
+### Format Item Menu {#menu-item-format}
 
 Saben item menu kalebu:
 
@@ -49,7 +49,7 @@ Saben item menu kalebu:
 }
 ```
 
-#### Field Item
+#### Field Item {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Saben item menu kalebu:
 | `allergens` | array | Alergen umum (kacang, kerang, lsp.) |
 | `availability` | string | Nalika kasedhiya (saben dina, musiman, lsp.) |
 
-## Nggawe Menu Hospitality
+## Nggawe Menu Hospitality {#creating-hospitality-menus}
 
-### Langkah 1: Wenehake Informasi Menu
+### Langkah 1: Wenehake Informasi Menu {#step-1-provide-menu-information}
 
 Kandhani Theme Builder babagan menu sampeyan:
 
@@ -71,7 +71,7 @@ Gawe menu restoran kanggo restoran Italia kula nganggo panganan pambuka,
 hidangan pasta, hidangan utama, lan panganan panutup. Lebokake rega lan katrangan.
 ```
 
-### Langkah 2: Theme Builder Ngasilake Menu
+### Langkah 2: Theme Builder Ngasilake Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Mformat rega lan katrangan
 5. Nambah informasi diet lan alergen
 
-### Langkah 3: Tinjau lan Kustomisasi
+### Langkah 3: Tinjau lan Kustomisasi {#step-3-review-and-customize}
 
 Sampeyan bisa:
 
@@ -91,9 +91,9 @@ Sampeyan bisa:
 4. Nganyari katrangan lan informasi diet
 5. Nyetel gaya lan tata letak
 
-## Pilihan Tampilan Menu
+## Pilihan Tampilan Menu {#menu-display-options}
 
-### Kaca Menu Lengkap
+### Kaca Menu Lengkap {#full-menu-page}
 
 Kaca khusus sing nampilake menu lengkap sampeyan:
 
@@ -102,7 +102,7 @@ Kaca khusus sing nampilake menu lengkap sampeyan:
 - Tata letak ramah-cetak
 - Desain responsif seluler
 
-### Widget Menu
+### Widget Menu {#menu-widget}
 
 Pasang bagean menu ing kaca liya:
 
@@ -111,7 +111,7 @@ Pasang bagean menu ing kaca liya:
 - Menu ombenan ing kaca bar
 - Tampilan panganan panutup ing footer
 
-### PDF Menu
+### PDF Menu {#menu-pdf}
 
 Gawe menu PDF sing bisa diundhuh:
 
@@ -120,9 +120,9 @@ Gawe menu PDF sing bisa diundhuh:
 - Kalebu gambar lan katrangan
 - Gampang dienggo nuduhake lan email
 
-## Informasi Diet lan Alergen
+## Informasi Diet lan Alergen {#dietary-and-allergen-information}
 
-### Atribut Diet
+### Atribut Diet {#dietary-attributes}
 
 Tandhani item nganggo informasi diet:
 
@@ -134,7 +134,7 @@ Tandhani item nganggo informasi diet:
 - **Low-Carb** — karbohidrat dikurangi
 - **High-Protein** — sugih protein
 
-### Peringatan Alergen
+### Peringatan Alergen {#allergen-warnings}
 
 Lebokake alergen umum:
 
@@ -147,9 +147,9 @@ Lebokake alergen umum:
 - **Gluten** — gandum lan biji-bijian sing ngemot gluten
 - **Wijen** — wiji wijen lan lenga
 
-## Manajemen Menu
+## Manajemen Menu {#menu-management}
 
-### Nganyari Rega
+### Nganyari Rega {#updating-prices}
 
 Gampang nganyari rega menu:
 
@@ -159,7 +159,7 @@ Gampang nganyari rega menu:
 4. Simpen owah-owahan
 5. Owah-owahan langsung katon ing situs sampeyan
 
-### Nambah Item Musiman
+### Nambah Item Musiman {#adding-seasonal-items}
 
 Gawe variasi menu musiman:
 
@@ -169,7 +169,7 @@ Gawe variasi menu musiman:
 4. Jadwalake tanggal kasedhiyan
 5. Tampilake otomatis sajrone mangsa
 
-### Ngatur Spesial
+### Ngatur Spesial {#managing-specials}
 
 Tampilake spesial saben dina utawa mingguan:
 
@@ -179,7 +179,7 @@ Tampilake spesial saben dina utawa mingguan:
 4. Anyari saben dina utawa saben minggu
 5. Arsipake spesial lawas
 
-## Integrasi karo Theme Builder
+## Integrasi karo Theme Builder {#integration-with-theme-builder}
 
 Nalika nggunakake Theme Builder kanggo situs hospitality:
 
@@ -189,9 +189,9 @@ Nalika nggunakake Theme Builder kanggo situs hospitality:
 4. **Optimasi seluler** — menu katon apik ing telpon
 5. **Optimasi SEO** — menu ramah mesin telusur
 
-## Praktik Paling Apik
+## Praktik Paling Apik {#best-practices}
 
-### Desain Menu
+### Desain Menu {#menu-design}
 
 - **Organisasi cetha** — struktur kategori sing logis
 - **Katrangan gampang diwaca** — nggugah selera lan informatif
@@ -199,7 +199,7 @@ Nalika nggunakake Theme Builder kanggo situs hospitality:
 - **Foto profesional** — gambar panganan kualitas dhuwur
 - **Ruang kosong** — aja nganti kaca kakehan isi
 
-### Konten
+### Konten {#content}
 
 - **Katrangan akurat** — jelasake item kanthi akurat
 - **Sorot spesial** — gawe spesial katon menonjol
@@ -207,7 +207,7 @@ Nalika nggunakake Theme Builder kanggo situs hospitality:
 - **Anyari rutin** — jaga rega lan item tetep anyar
 - **Gunakake basa sing nggugah selera** — gawe item katon énak
 
-### Aksesibilitas
+### Aksesibilitas {#accessibility}
 
 - **Font gampang diwaca** — gunakake typeface sing cetha lan gampang diwaca
 - **Kontras cukup** — pasthekake teks bisa diwaca
@@ -215,9 +215,9 @@ Nalika nggunakake Theme Builder kanggo situs hospitality:
 - **Peringatan alergen** — tampilake alergen kanthi menonjol
 - **Ramah seluler** — uji ing kabeh piranti
 
-## Conto
+## Conto {#examples}
 
-### Struktur Menu Restoran
+### Struktur Menu Restoran {#restaurant-menu-structure}
 
 ```
 Pambuka
@@ -241,7 +241,7 @@ Panganan Panutup
 └── Pilihan Gelato
 ```
 
-### Struktur Menu Kafe
+### Struktur Menu Kafe {#cafe-menu-structure}
 
 ```
 Kopi
@@ -260,7 +260,7 @@ Sandwich
 └── Wrap Vegetarian
 ```
 
-## Fitur Gegandhengan
+## Fitur Gegandhengan {#related-features}
 
 - [Gawe Menu](../abilities/create-menu.md) — gawe menu navigasi
 - [Arah Desain](./design-direction.md) — ngatur desain situsmu

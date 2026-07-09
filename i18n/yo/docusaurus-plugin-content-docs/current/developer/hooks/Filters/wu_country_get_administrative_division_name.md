@@ -4,11 +4,11 @@ title: Àlẹmọ - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Àlẹmọ: wu_country_get_administrative_division_name
+# Àlẹmọ: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Ó dá orúkọ tó dára ti àwọn ìpín abẹ́ ìṣàkóso orílẹ̀-èdè padà.
 
-## Àwọn Parameter
+## Àwọn Parameter {#parameters}
 
 | Orúkọ | Iru | Àpèjúwe |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | bí a bá ń ṣe àwọn ọ̀rọ̀ náà ní lẹ́tà ńlá. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance ti class lọwọlọwọ. |
 
-### Láti ìgbà
+### Láti ìgbà {#since}
 
 - 2.0.11
-### Orísun
+### Orísun {#source}
 
 A ṣàlàyé rẹ̀ nínú [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ní laini 250
 
 
-## Ó dá padà
+## Ó dá padà {#returns}
 Orúkọ ìpín tí a túnṣe.

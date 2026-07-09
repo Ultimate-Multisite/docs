@@ -3,17 +3,17 @@ title: Exportar e Importar
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportar e Importar
+# Exportar e Importar {#export--import}
 
 Ultimate Multisite 2.9.0 añade una herramienta de **Exportar e Importar** para sitios únicos en **Herramientas > Exportar e Importar**. Úsela cuando necesite empaquetar un sitio de WordPress en un archivo ZIP, restaurar ese ZIP o mover un sitio entre instalaciones compatibles de Ultimate Multisite y WordPress para sitios únicos.
 
-## Permisos requeridos
+## Permisos requeridos {#required-permissions}
 
 Debe iniciar sesión como administrador que pueda acceder al menú **Herramientas** de WordPress en el sitio que se va a exportar o importar. En una red multisite, utilice una cuenta de administrador de red al exportar o importar subsitios desde las herramientas de Ultimate Multisite a nivel de red.
 
 Las descargas de ZIP de exportación se sirven a través de un punto final de descarga autenticado, por lo que mantenga activa la sesión de administrador hasta que finalice la descarga y no comparta las URL de descarga generadas públicamente.
 
-## Exportar un sitio a un ZIP
+## Exportar un sitio a un ZIP {#exporting-a-site-to-a-zip}
 
 1. En el administrador de WordPress del sitio que desea copiar, vaya a **Herramientas > Exportar e Importar**.
 2. Abra el área de exportación y elija el sitio que desea empaquetar.
@@ -23,7 +23,7 @@ Las descargas de ZIP de exportación se sirven a través de un punto final de de
 
 Guarde el ZIP en un lugar seguro. Puede contener contenido del sitio, configuraciones, archivos multimedia y activos de código seleccionados.
 
-## Lo que incluye la exportación
+## Lo que incluye la exportación {#what-the-export-includes}
 
 Un ZIP de exportación puede incluir:
 
@@ -34,7 +34,7 @@ Un ZIP de exportación puede incluir:
 
 El tamaño exacto del ZIP depende de la cantidad de contenido multimedia, los plugins y temas seleccionados, y el tamaño de las tablas de la base de datos del sitio.
 
-## Importar un sitio desde un ZIP
+## Importar un sitio desde un ZIP {#importing-a-site-from-a-zip}
 
 1. Vaya a **Herramientas > Exportar e Importar** en el sitio de destino de WordPress.
 2. Abra el área de importación y suba el ZIP creado con la herramienta Exportar e Importar.
@@ -46,7 +46,7 @@ El tamaño exacto del ZIP depende de la cantidad de contenido multimedia, los pl
 
 En una instalación de WordPress para sitios únicos, importar un ZIP reemplaza el sitio actual con el sitio importado. No es una herramienta de fusión. Cree una copia de seguridad completa del sitio de destino antes de comenzar y evite iniciar múltiples importaciones para el mismo sitio al mismo tiempo.
 
-## Limitaciones y notas de compatibilidad
+## Limitaciones y notas de compatibilidad {#limitations-and-compatibility-notes}
 
 - Los directorios de subidas o bibliotecas multimedia muy grandes pueden generar archivos ZIP grandes. Confirme los límites de subida de PHP, los límites de ejecución, el espacio en disco, la memoria y la configuración de tiempo de espera del servidor antes de exportar o importar sitios grandes.
 - Las bibliotecas multimedia muy grandes pueden necesitar moverse durante una ventana de mantenimiento de bajo tráfico.

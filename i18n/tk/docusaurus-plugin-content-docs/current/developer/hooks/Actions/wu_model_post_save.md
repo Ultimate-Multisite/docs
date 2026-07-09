@@ -4,11 +4,11 @@ title: Hereket - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Action: wu_model_post_save
+# Action: wu_model_post_save {#action-wumodelpostsave}
 
 Obýekt maglumatlar bazasyna saklanandan soň işledilýär.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Obýekt maglumatlar bazasyna saklanandan soň işledilýär.
 | $data_unserialized | `array` | Saklanjak obýekt maglumatlary. |
 | $this | `\Base_Model` | Obýekt instance-y. |
 
-### Şondan bäri
+### Şondan bäri {#since}
 
 - 2.0.0
-### Çeşme
+### Çeşme {#source}
 
 - [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L613) içinde 613-nji setirde kesgitlenen
 - [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1743) içinde 1743-nji setirde kesgitlenen

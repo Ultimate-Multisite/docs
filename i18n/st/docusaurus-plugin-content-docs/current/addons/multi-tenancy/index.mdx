@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Aba dibaka tse nyenyane ho pholletsa le diseva le dipolokelo tsa data bakeng sa tshebetso le tshireletso
 
-## Dintlha tsa bohlokwa tsa tokollo ya mofuta wa 1.2.0
+## Dintlha tsa bohlokwa tsa tokollo ya mofuta wa 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 e eketsa motheo wa mohiri ya ipusang bakeng sa ditshebetso tsa ho arola tikoloho ya tlhahiso:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 e eketsa motheo wa mohiri ya ipusang bakeng sa ditshebetso t
 
 Sheba ditataiso tsa mosebedisi bakeng sa [tshebetso ya phallo ya mohiri ya ipusang](/user-guide/getting-started/sovereign-migration-workflow), [karohano ya multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), le [ditshebetso tsa mohiri ya ipusang](/user-guide/administration/sovereign-tenant-operations).
 
-## Ditlhoko
+## Ditlhoko {#requirements}
 
 - WordPress 5.3 kapa ho feta
 - PHP 7.4 kapa ho feta
 - Katoloso ya Multisite Ultimate (e sebetsang)
 
-## Ho kenya
+## Ho kenya {#installation}
 
 1. Kenya difaele tsa tlatsetso ho foldara ya hao ya `/wp-content/plugins/`
 2. Kenya katoloso tshebetsong ka menu ya 'Plugins' ho WordPress
 3. Lokisa disetting tsa tlatsetso ho molaodi wa neteweke
 
-## Ntshetsopele
+## Ntshetsopele {#development}
 
-### Ho seta
+### Ho seta {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Sebopeho sa projeke
+### Sebopeho sa projeke {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Ho etsa diteko
+### Ho etsa diteko {#testing}
 
 Tlatsetso ena e akarelletsa moralo o feletseng wa diteko:
 
@@ -93,54 +93,54 @@ Tlatsetso ena e akarelletsa moralo o feletseng wa diteko:
 - **Kakaretso ya diteko**: E lokiseditswe ho sala morao kakaretso ya khoutu e lekilweng
 - **Diteko tsa multisite**: Diteko di sebetsa tikolohong ya multisite
 
-### Maemo a khoutu
+### Maemo a khoutu {#code-standards}
 
 - **Maemo a ho ngola khoutu a WordPress**: A qobellwa ka PHPCS
 - **Tshehetso ya PHP 7.4+**: Dikarolo tsa sejwalejwale tsa PHP di a tshehetswa
 - **Tlhahlobo e tsitsitseng**: Kopanyo ya PHPStan bakeng sa ho lekola mefuta
 - **Ntlafatso ya khoutu ya sejwalejwale**: Melao ya Rector bakeng sa dintlafatso tsa PHP
 
-### Sistimi ya kaho
+### Sistimi ya kaho {#build-system}
 
 - **Tshebetso ya dithoto**: Ho fokotsa difaele tsa CSS/JS
 - **Phetolelo**: Ho hlahisa faele ya POT
 - **Ho paka**: Ho theha archive bakeng sa kabo
 - **Mokgwa wa ntshetsopele**: Dithoto tse sa fokotswang bakeng sa ho batlisisa diphoso
 
-## Tlhophiso
+## Tlhophiso {#configuration}
 
 Tlatsetso ena e tshehetsa dikgetho tse fapaneng tsa tlhophiso tse fumanehang ka sebopeho sa molaodi wa neteweke.
 
-### Tlhophiso ya mohiri ya ipusang
+### Tlhophiso ya mohiri ya ipusang {#sovereign-tenant-configuration}
 
 Bakeng sa bahiri ba ipusang, lokisa polokelo ya data ya mohiri, motso wa sistimi ya difaele, kgokahanyo ya moamoheli wa polokelo ya data, le bokgoni ba moamoheli pele o lebisa sephethephethe ho mohiri. Mathisa netefatso ya phallo kamora phetoho e nngwe le e nngwe e amang mangolo a boitsebiso a polokelo ya data, kgokahanyo ya moamoheli, tsela ya sephethephethe, kapa phepelo ya basebedisi.
 
 Sebedisa `localhost` feela ha nako ya ho sebetsa ya mohiri le ditumello tsa polokelo ya data di lebelletse socket ya lehae kapa phihlello ya mochini o le mong. Sebedisa `127.0.0.1` kapa lebitso la moamoheli wa tshebeletso ha eo e le moamoheli wa tumello ya lokisitsweng ke mofani wa hao.
 
-### Bokgoni ba Hostinger
+### Bokgoni ba Hostinger {#hostinger-capability}
 
 Bokgoni ba Hostinger multi-tenancy bo sebetsa ka token ya kopanyo ya Hostinger e arolelanwang. Netefatsa hore domain e teng ho hPanel, DNS e supa ho Account ya Hostinger, mme disetting tsa polokelo ya data ya mohiri di tsamaisana le hPanel pele ho netefatso.
 
-## Hooks le difilthara
+## Hooks le difilthara {#hooks-and-filters}
 
-### Diketso
+### Diketso {#actions}
 
 - `ultimate-multisite-addon-template_init` - E qalwa kamora ho qala tlatsetso
 - `ultimate-multisite-addon-template_loaded` - E qalwa kamora hore difaele tsohle tsa tlatsetso di kentswe
 
-### Difilthara
+### Difilthara {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Fetola disetting tsa tlatsetso
 - `ultimate-multisite-addon-template_enabled` - Fetola boemo ba ho dumella/ho thibela tlatsetso
 
-## Laesense
+## Laesense {#license}
 
 Tlatsetso ena e filwe laesense tlasa GPL v3 kapa hamorao.
 
-## Tshehetso
+## Tshehetso {#support}
 
 Bakeng sa tshehetso le ditokomane, etela [MultisiteUltimate.com](https://multisiteultimate.com)
-## Lenane la diphetoho
+## Lenane la diphetoho {#changelog}
 
 - Mofuta wa 1.2.0 (2026-06-03): eketsa ho kena ka boiketsetso ha mohiri ho se nang state, bokgoni ba Hostinger multi-tenancy, karohano ya polokelo ya data le sistimi ya difaele bakeng sa sebaka se seng le se seng se senyenyane, dikgoro tsa netefatso ya phallo ya mohiri ya ipusang, dintlafatso tsa ho qala mohiri/mongodi wa polokelo ya data, kgokahanyo e lokisehang ya moamoheli wa MySQL, le ho qhaqha ka polokeho ho feta ha mohiri ya ipusang.
 

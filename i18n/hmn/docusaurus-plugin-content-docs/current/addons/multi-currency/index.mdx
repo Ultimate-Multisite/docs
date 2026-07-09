@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency pab kom koj lub network txais tau kev them nyiaj hauv ntau hom txiaj nyiaj. Nws hloov tus nqi cia li tau siv cov nqi pauv nyiaj tshiab lossis cov nqi teeb tes, cia koj teeb tus nqi meej rau ib qho khoom rau txhua hom txiaj, thiab txheeb xyuas txhua tus qhua hom txiaj uas nws nyiam siv los ntawm kev nrhiav chaw nyob — tag nrho tswj tau los ntawm ib qho admin dashboard xwb.
 
-## Cov yam ntxwv tseem ceeb
+## Cov yam ntxwv tseem ceeb {#key-features}
 
 - **Kev hloov pauv tus nqi pauv nyiaj cia li tau** — cov nqi raug hloov ntawm koj hom txiaj nyiaj hauv paus siv cov nqi uas rub los ntawm tus provider uas koj xaiv
 - **Kev hloov tus nqi rau ib qho khoom** — teeb cov nqi meej rau ib hom txiaj tshwj xeeb rau txhua yam khoom kom hla dhau kev hloov pauv cia li tau
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency pab kom koj lub network txais tau kev them ny
 - **Kev txheeb xyuas txiaj raws chaw nyob** — cia li xaiv ua ntej hom txiaj uas phim tus qhua lub teb chaws
 - **Admin dashboard** — tswj cov txiaj uas qhib siv, cov nqi pauv nyiaj, thiab provider settings hauv ib qho chaw
 
-## Yam yuav tsum muaj
+## Yam yuav tsum muaj {#requirements}
 
 - Ultimate Multisite 2.0.0 lossis siab dua
 - WordPress Multisite installation
 - PHP 7.4 lossis siab dua
 
-## Kev teeb tsa
+## Kev teeb tsa {#installation}
 
 1. Upload cov plugin files mus rau `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Qhib lub plugin los ntawm lub vijtsam **Plugins** hauv WordPress (Network Activate)
 3. Mus rau **Ultimate Multisite → Multi-Currency** kom qhib admin dashboard
 4. Ntxiv cov txiaj nyiaj uas koj xav txais thiab teeb koj tus exchange rate provider
 
-## Kev teeb kho
+## Kev teeb kho {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) yog qhov chaw tseem ceeb rau:
 
@@ -44,7 +44,7 @@ Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) yog q
 - Xyuas cov nqi tam sim no rau txhua hom txiaj uas qhib siv
 - Teeb cov nqi manual thaum cov providers cia li tau tsis haum
 
-### Exchange Rate Providers
+### Exchange Rate Providers {#exchange-rate-providers}
 
 | Provider | Kev piav qhia |
 |---|---|
@@ -55,7 +55,7 @@ Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) yog q
 
 Xaiv koj tus provider hauv **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Cov nqi refresh tau los ntawm tes txhua lub sijhawm lossis teem sijhawm kom update cia li tau.
 
-### Kev hloov tus nqi rau ib qho khoom
+### Kev hloov tus nqi rau ib qho khoom {#per-product-pricing-overrides}
 
 Thaum kev hloov pauv cia li tau tsis meej txaus, koj tuaj yeem teeb ib tus nqi meej rau ib hom txiaj tshwj xeeb rau txhua yam khoom:
 
@@ -66,7 +66,7 @@ Thaum kev hloov pauv cia li tau tsis meej txaus, koj tuaj yeem teeb ib tus nqi m
 
 Cov khoom uas tsis muaj override yuav siv tus nqi uas hloov los ntawm koj hom txiaj hauv paus.
 
-### Daim teb xaiv txiaj nyiaj thaum signup
+### Daim teb xaiv txiaj nyiaj thaum signup {#currency-selector-signup-field}
 
 Daim teb xaiv txiaj nyiaj tuaj yeem muab ntxiv rau koj signup/checkout flow kom cov neeg yuav khoom xaiv hom txiaj uas lawv nyiam thaum sau npe:
 
@@ -76,7 +76,7 @@ Daim teb xaiv txiaj nyiaj tuaj yeem muab ntxiv rau koj signup/checkout flow kom 
 
 Hom txiaj uas xaiv lawm raug khaws nrog subscription thiab siv rau txhua qhov kev sau nqi tom qab.
 
-### Kev txheeb xyuas txiaj raws chaw nyob
+### Kev txheeb xyuas txiaj raws chaw nyob {#geolocation-based-currency-detection}
 
 Thaum qhib kev txheeb xyuas chaw nyob, lub addon map tus qhua lub teb chaws rau ib hom txiaj thiab xaiv ua ntej hauv daim teb xaiv txiaj nyiaj. Yuav qhib li no:
 
@@ -86,27 +86,27 @@ Thaum qhib kev txheeb xyuas chaw nyob, lub addon map tus qhua lub teb chaws rau 
 
 Yog tsis muaj mapping rau tus qhua lub teb chaws, ces siv lub network hom txiaj hauv paus ua fallback.
 
-## Cov lus nug uas nquag nug
+## Cov lus nug uas nquag nug {#frequently-asked-questions}
 
-### Yuav ua li cas yog exchange rate provider siv tsis tau?
+### Yuav ua li cas yog exchange rate provider siv tsis tau? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Lub addon fallback mus rau cov nqi uas rub tau tiav zaum kawg. Yog tsis tau rub ib qho nqi li, nws fallback mus rau cov nqi manual uas koj tau teeb tseg. Pom zoo kom teeb cov nqi manual ua ib txoj kev ruaj ntseg.
 
-### Kuv puas siv tau cov providers sib txawv rau cov txiaj sib txawv?
+### Kuv puas siv tau cov providers sib txawv rau cov txiaj sib txawv? {#can-i-use-different-providers-for-different-currencies}
 
 Tsis tau — ib zaug tsuas muaj ib tus provider qhib siv rau txhua hom txiaj xwb. Siv **Manual** yog koj xav tswj tag nrho cov nqi ib qho zuj zus.
 
-### Geolocation puas yuav tsum muaj ib lub plugin cais?
+### Geolocation puas yuav tsum muaj ib lub plugin cais? {#does-geolocation-require-a-separate-plugin}
 
 Tsis tas yuav muaj geolocation plugin sab nraud. Lub addon siv WordPress qhov built-in IP-to-country detection. Yog xav tau qhov raug dua, ib qho geolocation service tshwj xeeb tuaj yeem integrate los ntawm cov filter hooks uas muab los.
 
-### Cov per-product overrides siv ua ntej lossis tom qab se?
+### Cov per-product overrides siv ua ntej lossis tom qab se? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Per-product overrides teeb tus nqi ua ntej se hauv hom txiaj uas xav tau. Se raug xam ntxiv saum tus nqi override siv koj qhov tax configuration uas twb muaj lawm.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.0.0 — Tso tawm rau 2026-04-02
+### Version 1.0.0 — Tso tawm rau 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Tshiab: Kev txhawb ntau hom txiaj nrog kev hloov pauv tus nqi pauv nyiaj cia li tau
 - Tshiab: Per-product pricing overrides rau cov nqi meej raws hom txiaj tshwj xeeb

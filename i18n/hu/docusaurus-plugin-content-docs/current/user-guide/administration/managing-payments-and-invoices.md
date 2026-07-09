@@ -3,9 +3,9 @@ title: Fizetések és számlák kezelése
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Fizetések és számlák kezelése
+# Fizetések és számlák kezelése {#managing-payments-and-invoices}
 
-## Fizetési beállítások
+## Fizetési beállítások {#payment-settings}
 
 Mielőtt elkezdenél fizetéseket fogadni, konfigurálnod kell a fizetéssel kapcsolatos beállításokat. Navigálj ide: **Ultimate Multisite → Beállítások**, majd kattints a **Fizetés** fülre.
 
@@ -15,7 +15,7 @@ Mielőtt elkezdenél fizetéseket fogadni, konfigurálnod kell a fizetéssel kap
 
 ![Fizetési beállítások teljes oldal](/img/admin/settings-payments-full.png)
 
-### Általános fizetési beállítások
+### Általános fizetési beállítások {#general-payment-options}
 
 Az általános beállításokban a következőket konfigurálhatod:
 
@@ -24,7 +24,7 @@ Az általános beállításokban a következőket konfigurálhatod:
 
 ![Fizetési átjáró beállításai](/img/admin/settings-payments-options.png)
 
-### Fizetési átjárók
+### Fizetési átjárók {#payment-gateways}
 
 Az Ultimate Multisite több fizetési átjárót támogat. Mindegyiket engedélyezheted és konfigurálhatod a Fizetés beállítások fülön.
 
@@ -40,11 +40,11 @@ Minden átjárónak saját konfigurációs szakasza van, ahol megadhatod az API-
 
 ![További átjáróbeállítások](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox mód
+### Sandbox mód {#sandbox-mode}
 
 Engedélyezheted a **Sandbox módot**, hogy élesítés előtt teszteld a fizetési integrációdat. Amikor a sandbox mód aktív, nem történnek valódi terhelések.
 
-## Fizetések megtekintése
+## Fizetések megtekintése {#viewing-payments}
 
 Navigálj a **Fizetések** oldalra az Ultimate Multisite alatt, hogy lásd a hálózatod összes tranzakcióját.
 
@@ -54,7 +54,7 @@ A fizetéseket szűrheted állapot szerint (befejezett, függőben lévő, siker
 
 Kattints egy fizetésre a teljes részletek megtekintéséhez, beleértve a tételeket, a kapcsolódó tagságot, az ügyféladatokat és a fizetési átjáró adatait.
 
-## Számlák
+## Számlák {#invoices}
 
 Az Ultimate Multisite automatikusan számlákat tud generálni a fizetésekhez. A számlasablont és a számozási formátumot a Fizetés beállításokban szabhatod testre.
 

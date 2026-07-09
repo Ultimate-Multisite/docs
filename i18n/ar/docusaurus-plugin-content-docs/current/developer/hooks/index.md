@@ -3,11 +3,11 @@ title: مرجع الخطافات
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# مرجع الخطافات
+# مرجع الخطافات {#hooks-reference}
 
 توثيق مُنشأ تلقائيًا لجميع **59 إجراءً** و**118 مرشحًا** في Ultimate Multisite.
 
-## الإجراءات
+## الإجراءات {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — ينطلق قبل إعادة توجيه المصادقة.
 - [set_auth_cookie](./Actions/set_auth_cookie) — ينطلق مباشرةً قبل تعيين ملف تعريف ارتباط المصادقة.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — يتم تشغيله بعد تخزين كائن في قاعدة البيانات.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — يسمح لمطوري الإضافة بإضافة إجراءات إلى عملية إلغاء القفل.
 
-## الفلاتر
+## الفلاتر {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — يرشّح مدة فترة انتهاء صلاحية ملف تعريف ارتباط المصادقة.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — يرشّح مخطط إعادة توجيه المصادقة.

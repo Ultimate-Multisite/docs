@@ -3,11 +3,11 @@ title: Traktado de ret-hokoj
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-traktado
+# Webhook-traktado {#webhook-handling}
 
 Kreu proprajn webhook-finpunktojn por ricevi eventojn de eksteraj servoj kaj sinkronigi datumojn kun Ultimate Multisite.
 
-## Propra Webhook-finpunkto
+## Propra Webhook-finpunkto {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Sekurecaj konsideroj
+## Sekurecaj konsideroj {#security-considerations}
 
 - Ĉiam kontrolu webhook-subskribojn per HMAC aŭ komuna sekreto
 - Uzu `permission_callback` ĉe via REST-itinero — neniam agordu ĝin al `__return_true` en produktado

@@ -3,7 +3,7 @@ title: Daftarkan Titik Akhir API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Titik akhir API Register Ultimate Multisite
+# Titik akhir API Register Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Dalam tutorial ini, anda akan mempelajari cara menggunakan titik akhir API /register Ultimate Multisite untuk mencipta keseluruhan proses onboarding bagi pelanggan baharu dalam rangkaian anda dan cara melakukannya dengan Zapier.
 
@@ -29,11 +29,11 @@ Pilih **Enable API** dan dapatkan kelayakan API anda.
 
 Sekarang, mari kita terokai titik akhir ini dan kemudian cipta tindakan pendaftaran dalam Zapier.
 
-## Parameter badan titik akhir
+## Parameter badan titik akhir {#endpoint-body-parameters}
 
 Mari kita lihat gambaran keseluruhan maklumat minimum yang perlu kita hantar ke titik akhir. Di akhir artikel ini, anda akan menemui panggilan penuh.
 
-### Pelanggan
+### Pelanggan {#customer}
 
 Ini ialah maklumat yang diperlukan untuk proses mencipta User dan Ultimate Multisite Customer:
 
@@ -43,25 +43,25 @@ Anda boleh menghantar ID pelanggan yang dicipta dalam rangkaian anda. Jika tidak
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Satu-satunya maklumat yang kita perlukan di dalam objek ini ialah Status Membership.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produk**
+### **Produk** {#products}
 
 Produk diberikan sebagai array dengan 1 atau lebih ID produk daripada rangkaian anda. Berhati-hati, titik akhir ini tidak mencipta produk. Semak dokumentasi Ultimate Multisite untuk memahami titik akhir penciptaan produk dengan lebih baik.
 
 **"products" : [1,2],**
 
-### Pembayaran
+### Pembayaran {#payment}
 
 Seperti Membership, kita hanya memerlukan status.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Laman
+### Laman {#site}
 
 Dan untuk menutup badan, kita memerlukan URL dan Tajuk laman, kedua-duanya di dalam objek Site.
 
@@ -69,13 +69,13 @@ Dan untuk menutup badan, kita memerlukan URL dan Tajuk laman, kedua-duanya di da
 
 Pulangan titik akhir register akan berupa array dengan maklumat membership yang baru dicipta.
 
-## Mencipta tindakan dalam Zapier
+## Mencipta tindakan dalam Zapier {#creating-an-action-in-zapier}
 
 Dengan pengenalan titik akhir penciptaan Account baharu yang lebih kukuh ini, anda juga akan mengakses tindakan baharu dalam Zapier.
 
 Adakah anda tahu cara menggunakan dan menikmati semua yang ditawarkan oleh versi baharu Zapier? Ketahui lebih lanjut di sini. (pautan?)
 
-### Mencipta tindakan
+### Mencipta tindakan {#creating-an-action}
 
 Untuk menggambarkan dengan lebih baik cara menggunakan titik akhir pendaftaran dengan Zapier, mari kita cipta integrasi dengan Google Forms. Setiap kali borang ini diisi dan maklumat disimpan dalam helaian jawapan borang, membership baharu akan dicipta dalam rangkaian Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Dengan maklumat yang disediakan, teruskan ke ujian akhir. Pada skrin terakhir, a
 
 Uji Zap baharu anda dan ia sepatutnya selesai dengan jayanya. Jika sebarang ralat berlaku, semak semua medan dan sama ada ia dihantar dengan betul. Memandangkan terdapat banyak maklumat, sesetengah perkara boleh terlepas pandang.
 
-### Parameter titik akhir lengkap
+### Parameter titik akhir lengkap {#complete-endpoint-parameters}
 
 Berikut ialah panggilan lengkap dan semua kemungkinan medan yang boleh dihantar.
 

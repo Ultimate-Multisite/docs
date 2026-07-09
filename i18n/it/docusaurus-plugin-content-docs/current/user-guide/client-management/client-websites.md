@@ -3,7 +3,7 @@ title: Siti web dei clienti
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# I siti web del tuo cliente (v2)
+# I siti web del tuo cliente (v2) {#your-clients-websites-v2}
 
 Dopo essersi registrati sulla tua rete, i tuoi clienti possono accedere alla loro Dashboard.
 

@@ -4,11 +4,11 @@ title: Nzacha - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Na-eweghachi uru nhọrọ network e mere slug.
 
-## Parameters
+## Parameters {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Na-eweghachi uru nhọrọ network e mere slug.
 | $option_name | `string` | Aha nhọrọ ahụ. |
 | $default | `mixed` | Uru ndabara ahụ. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 1.0.0
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) n'ahịrị 126
 
 
-## Na-eweghachi
+## Na-eweghachi {#returns}
 Uru nhọrọ network e mere slugfield.

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-tenance
+# Multi-tenance {#multi-tenancy}
 
 Répartissez les sous-sites entre des serveurs et des bases de données pour les performances et la sécurité
 
-## Points forts de la version 1.2.0
+## Points forts de la version 1.2.0 {#version-120-release-highlights}
 
 Multi-tenance 1.2.0 ajoute la fondation de tenants souverains pour les workflows d’isolation en production :
 
@@ -25,21 +25,21 @@ Multi-tenance 1.2.0 ajoute la fondation de tenants souverains pour les workflows
 
 Consultez les guides utilisateur pour le [workflow de migration souveraine](/user-guide/getting-started/sovereign-migration-workflow), l’[isolation de multi-tenance](/user-guide/configuration/multi-tenancy-isolation) et les [opérations de tenants souverains](/user-guide/administration/sovereign-tenant-operations).
 
-## Exigences
+## Exigences {#requirements}
 
 - WordPress 5.3 ou supérieur
 - PHP 7.4 ou supérieur
 - Extension Multisite Ultimate (active)
 
-## Installation
+## Installation {#installation}
 
 1. Téléversez les fichiers du module complémentaire dans votre répertoire `/wp-content/plugins/`
 2. Activez l’extension via le menu « Extensions » dans WordPress
 3. Configurez les réglages du module complémentaire dans l’administration du réseau
 
-## Développement
+## Développement {#development}
 
-### Configuration
+### Configuration {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structure du projet
+### Structure du projet {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Règles de modernisation du code
 ```
 
-### Tests
+### Tests {#testing}
 
 Le module complémentaire inclut un framework de tests complet :
 
@@ -93,54 +93,54 @@ Le module complémentaire inclut un framework de tests complet :
 - **Couverture de test** : configurée pour suivre la couverture du code
 - **Tests multisite** : les tests s’exécutent dans un environnement multisite
 
-### Standards de code
+### Standards de code {#code-standards}
 
 - **Standards de codage WordPress** : appliqués via PHPCS
 - **Compatibilité PHP 7.4+** : fonctionnalités PHP modernes prises en charge
 - **Analyse statique** : intégration PHPStan pour la vérification des types
 - **Modernisation du code** : règles Rector pour les mises à niveau PHP
 
-### Système de build
+### Système de build {#build-system}
 
 - **Traitement des ressources** : minification des fichiers CSS/JS
 - **Traduction** : génération de fichier POT
 - **Conditionnement** : création d’archive pour la distribution
 - **Mode développement** : ressources non minifiées pour le débogage
 
-## Configuration
+## Configuration {#configuration}
 
 Le module complémentaire prend en charge diverses options de configuration accessibles via l’interface d’administration du réseau.
 
-### Configuration des tenants souverains
+### Configuration des tenants souverains {#sovereign-tenant-configuration}
 
 Pour les tenants souverains, configurez la base de données du tenant, la racine du système de fichiers, la liaison de l’hôte de base de données et la capacité de l’hôte avant d’acheminer le trafic vers le tenant. Exécutez la vérification de migration après chaque changement qui affecte les identifiants de base de données, la liaison de l’hôte, le routage ou le provisionnement des utilisateurs.
 
 Utilisez `localhost` uniquement lorsque l’environnement d’exécution du tenant et les autorisations de base de données attendent un socket local ou un accès sur la même machine. Utilisez `127.0.0.1` ou un nom d’hôte de service lorsque c’est l’hôte d’autorisation configuré par votre fournisseur.
 
-### Capacité Hostinger
+### Capacité Hostinger {#hostinger-capability}
 
 La capacité de multi-tenance Hostinger fonctionne avec le jeton d’intégration Hostinger partagé. Confirmez que le domaine est présent dans hPanel, que le DNS pointe vers le Account Hostinger et que les réglages de base de données du tenant correspondent à hPanel avant la vérification.
 
-## Hooks et filtres
+## Hooks et filtres {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Déclenché après l’initialisation du module complémentaire
 - `ultimate-multisite-addon-template_loaded` - Déclenché après le chargement de tous les fichiers du module complémentaire
 
-### Filtres
+### Filtres {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifier les réglages du module complémentaire
 - `ultimate-multisite-addon-template_enabled` - Remplacer l’état d’activation/désactivation du module complémentaire
 
-## Licence
+## Licence {#license}
 
 Ce module complémentaire est sous licence GPL v3 ou ultérieure.
 
-## Support
+## Support {#support}
 
 Pour le support et la documentation, consultez [MultisiteUltimate.com](https://multisiteultimate.com)
-## Journal des modifications
+## Journal des modifications {#changelog}
 
 - Version 1.2.0 (2026-06-03) : ajoute la connexion automatique de tenant sans état, la capacité de multi-tenance Hostinger, l’isolation par sous-site de la base de données et du système de fichiers, les portes de vérification de migration souveraine, les améliorations de l’amorçage des tenants et du rédacteur de base de données, la liaison configurable de l’hôte MySQL et un démantèlement souverain plus sûr.
 

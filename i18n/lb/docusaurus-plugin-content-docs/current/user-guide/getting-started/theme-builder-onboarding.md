@@ -3,11 +3,11 @@ title: Onboarding-Flow vom Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 füeiert en gefüehrt **Theme Builder onboarding flow** i, wo dir hilft, e eigene block-theme während dinere erschte Irichtig z'erstelle. Das ersetzt de alte Site Builder Modus dur en flexiblere, agent-unterstützte Aasatz.
 
-## Was isch de Theme Builder Onboarding Flow?
+## Was isch de Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 De Theme Builder onboarding flow isch en interaktive Setup Wizard, wo:
 
@@ -18,9 +18,9 @@ De Theme Builder onboarding flow isch en interaktive Setup Wizard, wo:
 
 De Flow wird dur de **Setup Assistant agent** aagtriibe, wo klärendi Froge stellt und dis Theme Stück für Stück baut.
 
-## Start vom Theme Builder Onboarding
+## Start vom Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Ersti Irichtig (First-Run Setup)
+### Ersti Irichtig (First-Run Setup) {#first-run-setup}
 
 Wenn du Superdav AI Agent zum erschte Mal ufere neui WordPress-Installation startisch, gsehsch du:
 
@@ -35,7 +35,7 @@ Was wetsch du mache?
 
 Wähl **"Eigene Theme baue"** us, um de Theme Builder onboarding flow z'starte.
 
-### Manuell Aktivierä
+### Manuell Aktivierä {#manual-activation}
 
 Du chasch de Theme Builder onboarding au zu jedere Ziit starte, indem du afragisch:
 
@@ -49,9 +49,9 @@ oder
 "Help me create a custom theme"
 ```
 
-## D Onboarding Schritt
+## D Onboarding Schritt {#the-onboarding-steps}
 
-### Schritt 1: Moduswahl (Mode Selection)
+### Schritt 1: Moduswahl (Mode Selection) {#step-1-mode-selection}
 
 De Setup Assistant agent frogt nach dinere Präferenz:
 
@@ -63,7 +63,7 @@ Wie wetsch du dis Theme baue?
 
 **Gefüehrti Modus** isch empfohle für die meiste Benutzer; de Agent macht Designempfehlige basierend uf dinere Branche und dine Ziel.
 
-### Schritt 2: Site-Spezifikation (Site Specification)
+### Schritt 2: Site-Spezifikation (Site Specification) {#step-2-site-specification}
 
 Dir wird nach dinere Site frogt:
 
@@ -74,7 +74,7 @@ Dir wird nach dinere Site frogt:
 
 Dës Informatione werded in dim **site_brief** Gedächtnis gspeicheret, wo d'Agenten i zukünftige Sitzige referenziere.
 
-### Schritt 3: Design System Entscheidigä
+### Schritt 3: Design System Entscheidigä {#step-3-design-system-decisions}
 
 De Agent führt dich dur d'Wahl vo Design Tokens (Design-Element) dure:
 
@@ -83,7 +83,7 @@ De Agent führt dich dur d'Wahl vo Design Tokens (Design-Element) dure:
 - **Abstand (Spacing)**: Kompakt, normal oder grosszügig Layouts
 - **Bewegig (Motion)**: Animatione und Übergäng (falls gwünscht)
 
-### Schritt 4: Theme Generierig
+### Schritt 4: Theme Generierig {#step-4-theme-generation}
 
 De Setup Assistant Agent baut din benutzerdefinierten Block Theme mit:
 
@@ -92,7 +92,7 @@ De Setup Assistant Agent baut din benutzerdefinierten Block Theme mit:
 - Benutzerdefinierti Block-Stile, wo zu dim Design System passe
 - Theme-Metadate und WordPress-Unterstützigserklärige
 
-### Schritt 5: Aktivierig und Überprüefig
+### Schritt 5: Aktivierig und Überprüefig {#step-5-activation-and-verification}
 
 De Theme wird automatisch aktiviert, und du gsehsch folgendes:
 
@@ -107,7 +107,7 @@ De Theme wird automatisch aktiviert, und du gsehsch folgendes:
 
 Du chasch denn dini Site bsueche, um z'überprüefe, ob de Theme korrekt aazigt wird.
 
-## Site-Spezifikation und site_brief Gedächtnis
+## Site-Spezifikation und site_brief Gedächtnis {#site-specification-and-sitebrief-memory}
 
 Während em Onboarding fangt de Agent d'Spezifikation vo dinere Site i ere **site_brief** Gedächtniskategorie uf. Dës umfasst:
 
@@ -117,11 +117,11 @@ Während em Onboarding fangt de Agent d'Spezifikation vo dinere Site i ere **sit
 - Designvorzogeber
 - Inhaltsstruktur
 
-### Warum site_brief wichtig isch
+### Warum site_brief wichtig isch {#why-sitebrief-matters}
 
 In zukünftige Sitzige referenziere d'Agenten din site_brief, um:
 
-### Iri Dir Ihrem Site-Brief aafange
+### Iri Dir Ihrem Site-Brief aafange {#viewing-your-sitebrief}
 
 Sie chönne de Agent froge:
 
@@ -137,11 +137,11 @@ oder
 
 De Agent zeigt dir dini gspeicherte Site-Spezifikation aa.
 
-## Customizing Nach em Onboarding
+## Customizing Nach em Onboarding {#customizing-after-onboarding}
 
 Nachdem d'Onboarding vom Theme Builder fertig isch, chasch du:
 
-### D'Design System Aesthetics Skill bruche
+### D'Design System Aesthetics Skill bruche {#use-the-design-system-aesthetics-skill}
 
 Bitte um Designverbesserige:
 
@@ -157,7 +157,7 @@ oder
 
 D'**Design System Aesthetics skill** führt dich dur gezielti Design-Updates.
 
-### theme.json Direkt bearbeite
+### theme.json Direkt bearbeite {#edit-themejson-directly}
 
 Für fortgschritteni Benutzer chasch du `/wp-content/themes/[theme-name]/theme.json` bearbeite, um z'passe:
 
@@ -166,7 +166,7 @@ Für fortgschritteni Benutzer chasch du `/wp-content/themes/[theme-name]/theme.j
 - Spacing values
 - Border und shadow Definitionen
 
-### Custom Block Templates erstelle
+### Custom Block Templates erstelle {#create-custom-block-templates}
 
 Bruche de WordPress block editor, um benutzerdefinierti Vorlage für:
 
@@ -175,7 +175,7 @@ Bruche de WordPress block editor, um benutzerdefinierti Vorlage für:
 - Produktseiten
 - Kontaktformulare z'erstelle
 
-## Verglich: Alt vs. Neu Onboarding
+## Verglich: Alt vs. Neu Onboarding {#comparison-old-vs-new-onboarding}
 
 | Merkmal | Site Builder (Alt) | Theme Builder (Neu) |
 |---|---|---|
@@ -185,7 +185,7 @@ Bruche de WordPress block editor, um benutzerdefinierti Vorlage für:
 | Flexibilität | Feschti Optionä | Anpassbar |
 | Zuekunft Updates | Nicht referenziert | In site_brief gspeichert |
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
 **De Onboarding-Flow isch nöd fertig worde**
 - Flow neu starte: "Start the Theme Builder onboarding"
@@ -202,7 +202,7 @@ Bruche de WordPress block editor, um benutzerdefinierti Vorlage für:
 - Frog de Agent, "de Theme mit [spezifische Änderige] neu z'generiere" (regenerate the theme with [specific changes])
 - Edit di `theme.json` direkt für präzisi Kontroll
 
-## Nächsti Schritt
+## Nächsti Schritt {#next-steps}
 
 Nachdem du s'Theme Builder Onboarding fertig hesch:
 

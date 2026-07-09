@@ -3,19 +3,19 @@ title: Konfigire Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Konfigirasyon Gateay Stripe (v2)
+# Konfigirasyon Gateay Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTE ENTRANTA: Sa tèks sa a refere a Ultimate Multisite v2.x.**_
 
 Ou ka aktive jounye char ant quatre metò pamanman sou paj konfigirasyon pamanman ou an: Stripe, Stripe Checkout, PayPal ak Manual. Nan tèks sa a, nou pral wè kijan pou nou intègre ak **Stripe**.
 
-## Aktive Stripe
+## Aktive Stripe {#enabling-stripe}
 
 Pou active Stripe kòm yon pòt pamanman ki disponib nan rezo ou a, ale nan **Ultimate Multisite > Settings > Payments** epi mete tik sou bouton an bò kote **Stripe** oswa **Stripe Checkout** nan seksyon Active Payment Gateways.
 
 ![Aktive Stripe nan gateay pamanman aktif](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Metò sa a pral montre yon espas pou w mete nimewo kat kredi pandan checkout la.
 
@@ -47,7 +47,7 @@ Kopi valè ki nan **Publishable key** ak **Secret key**, soti nan kolòn **Token
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Konfigire Stripe Webhook
+## Konfigire Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe voye webhook events ki fè Ultimate Multisite konnen chak fwa yon evènman rive sou **kont stripe ou a**.
 

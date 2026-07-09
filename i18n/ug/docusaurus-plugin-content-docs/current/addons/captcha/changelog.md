@@ -3,7 +3,7 @@ title: Captcha ئۆزگىرىش خاتىرىسى
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha ئۆزگىرىش خاتىرىسى
+# Captcha ئۆزگىرىش خاتىرىسى {#captcha-changelog}
 
 نەشرى: 1.5.0 - 2026-05-22 ئېلان قىلىندى
 * يېڭى: قاتتىق توختىتىدىغان سۈرئەت چەكلىگۈچ — captcha بىلەن قوغدالغان يۈزلەردىكى (wp-login / register / lost-password / comments، WooCommerce my-account / checkout / pay-for-order، Ultimate Multisite checkout / inline-login) ھەر بىر GET ۋە POST نى سانايدۇ، ھەمدە HTTP 429، بىر `Retry-After` header، ۋە ئىختىيارىلاشتۇرۇلغان tarpit ئۇيقۇسى (1–5s، قاتتىق ھالدا ئەڭ كۆپ 15s) بىلەن جاۋاب قايتۇرىدۇ.

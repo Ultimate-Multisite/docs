@@ -3,11 +3,11 @@ title: Integratutako agenteak
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Integratutako agenteak
+# Integratutako agenteak {#built-in-agents}
 
 Gratis AI Agent v1.9.0-k bost agente integratu dakartza, bakoitza tresna multzo fokalizatu batekin, egokitutako sistemaren prompt batekin eta arlo horretako ohiko zereginetarako egokitutako hasierako iradokizunekin aurrez konfiguratuta. Agenteen artean aldatzeak laguntzaileak zer egin dezakeen eta nola erantzuten duen aldatzen du — zure aldetik inolako konfiguraziorik gabe. Superdav AI Agent v1.18.0-k egutegiaren araberako tresnak, oroigarri-erregistroak, onespen-ateak eta SMS jakinarazpenak gehi diezazkieke lan-fluxu horiei, erlazionatutako integrazioak konfiguratuta daudenean.
 
-## Zer da agente bat?
+## Zer da agente bat? {#what-is-an-agent}
 
 Agente bakoitza izendatutako konfigurazio-profil bat da, honako hauek konbinatzen dituena:
 
@@ -15,7 +15,7 @@ Agente bakoitza izendatutako konfigurazio-profil bat da, honako hauek konbinatze
 - **Sistemaren prompta** — agentearen tonua, lehentasunak eta mugak ezartzen dituzten jarraibideak
 - **Iradokizunak** — txat-interfazean erakusten diren aurrez idatzitako promptak, azkar hasten laguntzeko
 
-## Agent Picker-era sartzea
+## Agent Picker-era sartzea {#accessing-the-agent-picker}
 
 1. Ireki **Gratis AI Agent** panela WordPress administrazioaren alboko barran.
 2. Egin klik txat-goiburuaren goiko ezkerreko **agentearen ikonoan** (ikonoa aldatu egiten da agente aktiboa islatzeko).
@@ -24,9 +24,9 @@ Agente bakoitza izendatutako konfigurazio-profil bat da, honako hauek konbinatze
 
 Agenteak elkarrizketa erdian ere alda ditzakezu — agente berriaren sistemaren prompta hurrengo mezutik aurrera aplikatzen da.
 
-## Bost agente integratuak
+## Bost agente integratuak {#the-five-built-in-agents}
 
-### Eduki Idazlea
+### Eduki Idazlea {#content-writer}
 
 **Fokua:** Argitalpenak, orrialdeak eta kontaktu-inprimakiak sortzea eta editatzea.
 
@@ -47,7 +47,7 @@ Agenteak elkarrizketa erdian ere alda ditzakezu — agente berriaren sistemaren 
 
 ---
 
-### Gune Eraikitzailea
+### Gune Eraikitzailea {#site-builder}
 
 **Fokua:** Webgune osoa sortzea prompt bakar batetik abiatuta.
 
@@ -70,7 +70,7 @@ Agenteak elkarrizketa erdian ere alda ditzakezu — agente berriaren sistemaren 
 
 ---
 
-### Diseinu Estudioa
+### Diseinu Estudioa {#design-studio}
 
 **Fokua:** Ikusizko pertsonalizazioa — koloreak, tipografia, CSS eta bloke-ereduak.
 
@@ -87,7 +87,7 @@ Agenteak elkarrizketa erdian ere alda ditzakezu — agente berriaren sistemaren 
 - *Hartu hasiera-orriaren pantaila-argazki bat eta esan zer hobetuko zenukeen.*
 - *Sortu berrerabil daitekeen hero bloke-eredu bat zabalera osoko atzeko planoko irudi batekin eta erdiratutako izenburuarekin.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokua:** WordPress pluginak aurkitzea, instalatzea eta kudeatzea.
 
@@ -105,7 +105,7 @@ Agenteak elkarrizketa erdian ere alda ditzakezu — agente berriaren sistemaren 
 
 ---
 
-### Laguntzailea
+### Laguntzailea {#support-assistant}
 
 **Fokua:** Gune-edukiari, ezarpenei eta WordPress konfigurazioari buruzko galderak erantzutea.
 
@@ -124,7 +124,7 @@ Agenteak elkarrizketa erdian ere alda ditzakezu — agente berriaren sistemaren 
 
 ---
 
-## Superdav Automation integrazioak
+## Superdav Automation integrazioak {#superdav-automation-integrations}
 
 Superdav AI Agent v1.18.0 integrazioak konfiguratuta daudenean, integratutako agenteek ordutegia kontuan hartzen duten automatizazio-lan-fluxu seguruagoetan parte har dezakete:
 
@@ -138,11 +138,11 @@ Gomendatutako lan-fluxua: eskatu agenteari mezua edo ekintza prestatzeko, berrik
 
 ---
 
-## Agenteak pertsonalizatzea
+## Agenteak pertsonalizatzea {#customising-agents}
 
 Integratutako agente bakoitza hedatu edo ordeztu daiteke `gratis_ai_agent_agents` iragazkiaren bidez.
 
-### Lehendik dagoen agente bati sistema-prompt pertsonalizatua gehitzea
+### Lehendik dagoen agente bati sistema-prompt pertsonalizatua gehitzea {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Agente berri bat erregistratzea
+### Agente berri bat erregistratzea {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Agente berria Agent hautatzailean agertzen da iragazkia exekutatu eta berehala.
 
-### Integratutako agente bat kentzea
+### Integratutako agente bat kentzea {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -4,13 +4,13 @@ title: Զտիչ - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Զտիչ՝ wu_make_primary_domain_redirect_url
+# Զտիչ՝ wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Զտում է վերաուղղման URL-ը՝ դոմենը հիմնական դարձնելուց հետո։
 
 Թույլ է տալիս մշակողներին հարմարեցնել, թե օգտատերերը ուր են վերաուղղվելու դոմենը հաջողությամբ որպես հիմնական սահմանելուց հետո։ Լռելյայն՝ վերաուղղում է հիմնական կայքի ընթացիկ URL-ին կամ փոփոխվող կայքի admin URL-ին։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -19,13 +19,13 @@ _i18n_hash: bda96824db400b25e97802e5567df22d
 | $domain | `\Domain` | Դոմենի օբյեկտը, որը դարձվել է հիմնական։ |
 | $old_primary_domains | `array` | Այն դոմենների ID-ների զանգվածը, որոնք նախկինում հիմնական էին։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.0.0
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) ֆայլում՝ 639-րդ տողում
 
 
-## Վերադարձնում է
+## Վերադարձնում է {#returns}
 Զտված վերաուղղման URL-ը։

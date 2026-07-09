@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Distribuisci i sottositi tra server e database per prestazioni e sicurezza
 
-## Punti salienti della versione 1.2.0
+## Punti salienti della versione 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 aggiunge la base per tenant sovrani per i flussi di lavoro di isolamento in produzione:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 aggiunge la base per tenant sovrani per i flussi di lavoro d
 
 Consulta le guide utente per [flusso di lavoro della migrazione sovrana](/user-guide/getting-started/sovereign-migration-workflow), [isolamento multi-tenancy](/user-guide/configuration/multi-tenancy-isolation) e [operazioni sui tenant sovrani](/user-guide/administration/sovereign-tenant-operations).
 
-## Requisiti
+## Requisiti {#requirements}
 
 - WordPress 5.3 o superiore
 - PHP 7.4 o superiore
 - Plugin Multisite Ultimate (attivo)
 
-## Installazione
+## Installazione {#installation}
 
 1. Carica i file dell'addon nella directory `/wp-content/plugins/`
 2. Attiva il plugin tramite il menu 'Plugin' in WordPress
 3. Configura le impostazioni dell'addon nell'amministrazione di rete
 
-## Sviluppo
+## Sviluppo {#development}
 
-### Configurazione
+### Configurazione {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struttura del progetto
+### Struttura del progetto {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Test
+### Test {#testing}
 
 L'addon include un framework di test completo:
 
@@ -93,54 +93,54 @@ L'addon include un framework di test completo:
 - **Copertura dei test**: configurata per monitorare la copertura del codice
 - **Test multisite**: i test vengono eseguiti in ambiente multisite
 
-### Standard di codice
+### Standard di codice {#code-standards}
 
 - **WordPress Coding Standards**: applicati tramite PHPCS
 - **Compatibilità PHP 7.4+**: supporto per funzionalità PHP moderne
 - **Analisi statica**: integrazione PHPStan per il controllo dei tipi
 - **Modernizzazione del codice**: regole Rector per aggiornamenti PHP
 
-### Sistema di build
+### Sistema di build {#build-system}
 
 - **Elaborazione degli asset**: minificazione per file CSS/JS
 - **Traduzione**: generazione del file POT
 - **Packaging**: creazione di archivi per la distribuzione
 - **Modalità di sviluppo**: asset non minificati per il debug
 
-## Configurazione
+## Configurazione {#configuration}
 
 L'addon supporta varie opzioni di configurazione accessibili tramite l'interfaccia di amministrazione di rete.
 
-### Configurazione del tenant sovrano
+### Configurazione del tenant sovrano {#sovereign-tenant-configuration}
 
 Per i tenant sovrani, configura il database del tenant, la radice del filesystem, l'associazione dell'host database e la funzionalità dell'host prima di instradare il traffico verso il tenant. Esegui la verifica della migrazione dopo ogni modifica che influisce sulle credenziali del database, sull'associazione dell'host, sul routing o sul provisioning degli utenti.
 
 Usa `localhost` solo quando il runtime del tenant e i grant del database prevedono accesso tramite socket locale o sulla stessa macchina. Usa `127.0.0.1` o un hostname di servizio quando quello è l'host di grant configurato dal tuo provider.
 
-### Funzionalità Hostinger
+### Funzionalità Hostinger {#hostinger-capability}
 
 La funzionalità Hostinger multi-tenancy funziona con il token di integrazione Hostinger condiviso. Conferma che il dominio sia presente in hPanel, che il DNS punti all'Account Hostinger e che le impostazioni del database del tenant corrispondano a hPanel prima della verifica.
 
-## Hook e filtri
+## Hook e filtri {#hooks-and-filters}
 
-### Azioni
+### Azioni {#actions}
 
 - `ultimate-multisite-addon-template_init` - Attivato dopo l'inizializzazione dell'addon
 - `ultimate-multisite-addon-template_loaded` - Attivato dopo il caricamento di tutti i file dell'addon
 
-### Filtri
+### Filtri {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifica le impostazioni dell'addon
 - `ultimate-multisite-addon-template_enabled` - Sovrascrivi lo stato di abilitazione/disabilitazione dell'addon
 
-## Licenza
+## Licenza {#license}
 
 Questo addon è concesso in licenza sotto GPL v3 o successiva.
 
-## Supporto
+## Supporto {#support}
 
 Per supporto e documentazione, visita [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Versione 1.2.0 (2026-06-03): aggiunge autologin tenant stateless, funzionalità Hostinger multi-tenancy, isolamento del database e del filesystem per sottosito, gate di verifica della migrazione sovrana, miglioramenti al bootstrap del tenant/writer del database, associazione host MySQL configurabile e teardown sovrano più sicuro.
 

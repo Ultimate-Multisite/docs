@@ -3,7 +3,7 @@ title: Spēju atsauce
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Iespēju uzziņa
+# Iespēju uzziņa {#abilities-reference}
 
 Iespējas ir atomāras darbības, ko Gratis AI Agent var izsaukt jūsu WordPress instalācijā. Katra iespēja ir reģistrēta PHP klase, kas atklāj JSON shēmu — aģents šo shēmu nolasa izpildlaikā, lai saprastu, kādi parametri ir nepieciešami un ko iespēja atgriež.
 
@@ -11,11 +11,11 @@ Iespējas ir atomāras darbības, ko Gratis AI Agent var izsaukt jūsu WordPress
 
 ---
 
-## Pielāgoti ierakstu tipi
+## Pielāgoti ierakstu tipi {#custom-post-types}
 
 Šīs iespējas pārvalda pielāgotus ierakstu tipus (CPT), kas reģistrēti caur aģentu. Reģistrācijas tiek saglabātas WordPress opciju tabulā, tāpēc tās saglabājas pēc plugin deaktivizēšanas un atkārtotas aktivizēšanas.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Reģistrē jaunu pielāgotu ieraksta tipu.
 
@@ -50,7 +50,7 @@ Reģistrē jaunu pielāgotu ieraksta tipu.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Atgriež visus pielāgotos ierakstu tipus, ko reģistrējis aģents.
 
@@ -73,7 +73,7 @@ Atgriež visus pielāgotos ierakstu tipus, ko reģistrējis aģents.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Atreģistrē pielāgotu ieraksta tipu, ko iepriekš reģistrējis aģents. Esošie šī tipa ieraksti paliek datubāzē, taču vairs nav pieejami caur šo ieraksta tipu.
 
@@ -87,11 +87,11 @@ Atreģistrē pielāgotu ieraksta tipu, ko iepriekš reģistrējis aģents. Esoš
 
 ---
 
-## Pielāgotas taksonomijas
+## Pielāgotas taksonomijas {#custom-taxonomies}
 
 Šīs iespējas pārvalda pielāgotas taksonomijas. Tāpat kā CPT, taksonomiju reģistrācijas tiek saglabātas.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Reģistrē jaunu pielāgotu taksonomiju.
 
@@ -123,7 +123,7 @@ Reģistrē jaunu pielāgotu taksonomiju.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Atgriež visas pielāgotās taksonomijas, ko reģistrējis aģents.
 
@@ -146,7 +146,7 @@ Atgriež visas pielāgotās taksonomijas, ko reģistrējis aģents.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Atreģistrē pielāgotu taksonomiju, ko iepriekš reģistrējis aģents.
 
@@ -160,11 +160,11 @@ Atreģistrē pielāgotu taksonomiju, ko iepriekš reģistrējis aģents.
 
 ---
 
-## Dizaina sistēma
+## Dizaina sistēma {#design-system}
 
 Dizaina sistēmas iespējas maina WordPress vietnes vizuālo attēlojumu — no pielāgota CSS līdz bloku rakstiem un vietnes logotipam.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Pievieno CSS vietnes `<head>`, izmantojot `wp_add_inline_style`. CSS tiek glabāts opcijā `gratis_ai_agent_custom_css` un tiek korekti izņemts no rindas, kad iespēja tiek atiestatīta.
 
@@ -190,7 +190,7 @@ Pievieno CSS vietnes `<head>`, izmantojot `wp_add_inline_style`. CSS tiek glabā
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Reģistrē atkārtoti izmantojamu bloka rakstu WordPress rakstu bibliotēkā.
 
@@ -209,7 +209,7 @@ Reģistrē atkārtoti izmantojamu bloka rakstu WordPress rakstu bibliotēkā.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Uzskaita visus bloku rakstus, ko reģistrējis aģents.
 
@@ -231,7 +231,7 @@ Uzskaita visus bloku rakstus, ko reģistrējis aģents.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Iestata WordPress vietnes logotipu uz norādītu pielikuma ID vai attālināta attēla URL. Ja tiek norādīts URL, attēls tiek lejupielādēts un importēts Media Library.
 
@@ -248,7 +248,7 @@ Jānorāda viens no `attachment_id` vai `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Piemēro nosauktu krāsu/tipogrāfijas priekšiestatījumu aktīvās tēmas `theme.json` (vai `global-styles`). Priekšiestatījumi ir atlasītas pakotnes, ko uztur Gratis AI Agent komanda.
 
@@ -273,11 +273,11 @@ Piemēro nosauktu krāsu/tipogrāfijas priekšiestatījumu aktīvās tēmas `the
 
 ---
 
-## Globālie stili
+## Globālie stili {#global-styles}
 
 Globālo stilu iespējas lasa un raksta theme.json vērtības, izmantojot WordPress Global Styles API, ietekmējot visus blokus un veidnes visā vietnē.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Atgriež pašreizējo globālo stilu konfigurāciju.
 
@@ -291,7 +291,7 @@ Atgriež pašreizējo globālo stilu konfigurāciju.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Atjaunina vienu vai vairākas vērtības globālo stilu konfigurācijā.
 
@@ -318,7 +318,7 @@ Atjaunina vienu vai vairākas vērtības globālo stilu konfigurācijā.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Atiestata visas aģenta piemērotās globālo stilu izmaiņas, atjaunojot tēmas noklusējuma vērtības.
 
@@ -328,11 +328,11 @@ Atiestata visas aģenta piemērotās globālo stilu izmaiņas, atjaunojot tēmas
 
 ---
 
-## Navigācijas izvēlnes
+## Navigācijas izvēlnes {#navigation-menus}
 
 Navigācijas izvēlņu iespējas izveido un pārvalda WordPress navigācijas izvēlnes un to vienumus.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Izveido jaunu WordPress navigācijas izvēlni.
 
@@ -347,7 +347,7 @@ Izveido jaunu WordPress navigācijas izvēlni.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Pārdēvē izvēlni vai atkārtoti piešķir to tēmas atrašanās vietai.
 
@@ -363,7 +363,7 @@ Pārdēvē izvēlni vai atkārtoti piešķir to tēmas atrašanās vietai.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Pievieno vienumu esošai navigācijas izvēlnei.
 
@@ -383,7 +383,7 @@ Pievieno vienumu esošai navigācijas izvēlnei.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Noņem vienumu no navigācijas izvēlnes.
 
@@ -397,7 +397,7 @@ Noņem vienumu no navigācijas izvēlnes.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Uzskaita visas WordPress navigācijas izvēlnes, tostarp tām piešķirtās tēmas atrašanās vietas.
 
@@ -420,11 +420,11 @@ Uzskaita visas WordPress navigācijas izvēlnes, tostarp tām piešķirtās tēm
 
 ---
 
-## Opciju pārvaldība
+## Opciju pārvaldība {#options-management}
 
 Opciju iespējas lasa un raksta WordPress opcijas, izmantojot `get_option` / `update_option`. Iebūvēts drošības bloķēšanas saraksts novērš nejaušu kritisku iestatījumu modificēšanu.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Nolasa WordPress opciju.
 
@@ -440,7 +440,7 @@ Atgriež kļūdu, ja `option_name` ir drošības bloķēšanas sarakstā.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Raksta WordPress opciju.
 
@@ -458,7 +458,7 @@ Atgriež kļūdu, ja `option_name` ir drošības bloķēšanas sarakstā.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Dzēš WordPress opciju.
 
@@ -474,7 +474,7 @@ Atgriež kļūdu, ja `option_name` ir drošības bloķēšanas sarakstā.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Uzskaita WordPress opcijas, kas atbilst paraugam.
 
@@ -498,11 +498,11 @@ Uzskaita WordPress opcijas, kas atbilst paraugam.
 
 ---
 
-## Satura pārvaldība
+## Satura pārvaldība {#content-management}
 
 Satura pārvaldības iespējas izveido un rediģē WordPress ziņas un lapas. Ziņu ID tiek atgriezti, lai turpmākās darbības vairāku iespēju plānos varētu atsaukties uz izveidoto saturu.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Izveido jaunu WordPress ziņu, lapu vai pielāgota ziņas tipa ierakstu.
 
@@ -537,7 +537,7 @@ Izveido jaunu WordPress ziņu, lapu vai pielāgota ziņas tipa ierakstu.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Atjaunina esošu WordPress ziņu vai lapu.
 
@@ -567,7 +567,7 @@ Atjaunina esošu WordPress ziņu vai lapu.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Izveido vairākas ziņas vienā iespējas izsaukumā, samazinot turp-atpakaļ pieprasījumus vietņu izveides vai masveida satura importa laikā. Ziņas tiek izveidotas secīgi; ja viena neizdodas, pārējās turpinās, un kļūme tiek norādīta rezultātu masīvā.
 
@@ -619,7 +619,7 @@ Izveido vairākas ziņas vienā iespējas izsaukumā, samazinot turp-atpakaļ pi
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Piešķir izcelto attēlu (ziņas sīktēlu) esošai ziņai vai lapai. Pieņem esoša Media Library pielikuma ID vai attāla attēla URL; ja tiek norādīts URL, attēls tiek automātiski lejupielādēts un importēts.
 
@@ -638,7 +638,7 @@ Jānorāda viens no `attachment_id` vai `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Izveido kontaktformu, izmantojot aktīvo formu plugin (Contact Form 7, WPForms, Fluent Forms vai Gravity Forms, atkarībā no tā, kurš ir instalēts). Atgriež shortcode, ko var iegult jebkurā ziņā vai lapā.
 
@@ -691,11 +691,11 @@ Izveido kontaktformu, izmantojot aktīvo formu plugin (Contact Form 7, WPForms, 
 
 ---
 
-## Vizuālā pārskatīšana
+## Vizuālā pārskatīšana {#visual-review}
 
 Vizuālās pārskatīšanas iespējas ļauj agent uzņemt aktīvu lapu ekrānuzņēmumus un analizēt tos, nodrošinot autonomu dizaina pārskatīšanu, pirms/pēc salīdzinājumus un vizuālās regresijas pārbaudes bez nepieciešamības izmantot pārlūka paplašinājumu.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Uzņem WordPress lapas ekrānuzņēmumu norādītajā URL, izmantojot servera puses headless pārlūku. Attēls tiek saglabāts Media Library, un tiek atgriezts CDN URL.
 
@@ -724,7 +724,7 @@ Uzņem WordPress lapas ekrānuzņēmumu norādītajā URL, izmantojot servera pu
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Paņem divus ekrānuzņēmumus un atgriež vizuālās atšķirības vērtējumu, kā arī atšķirību attēlu, kurā izceltas mainītās zonas. Noder, lai apstiprinātu, ka dizaina izmaiņas radīja gaidīto rezultātu, vai lai noteiktu nevēlamas regresijas.
 
@@ -754,7 +754,7 @@ Paņem divus ekrānuzņēmumus un atgriež vizuālās atšķirības vērtējumu,
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Uzņem lapas ekrānuzņēmumu un nosūta to valodas modelim vizuālai analīzei. Atgriež strukturētu novērtējumu, kas aptver izkārtojumu, tipogrāfiju, krāsu lietojumu un pieejamības problēmas.
 
@@ -785,11 +785,11 @@ Uzņem lapas ekrānuzņēmumu un nosūta to valodas modelim vizuālai analīzei.
 
 ---
 
-## Instalējamās iespējas
+## Instalējamās iespējas {#installable-abilities}
 
 Installable Abilities Registry ļauj paplašināt agent ar papildu iespēju pakotnēm, kas tiek izplatītas kā WordPress plugins. Katra pakotne reģistrē vienu vai vairākas iespējas, izmantojot standarta iespēju API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Atgriež no Registry instalēšanai pieejamo iespēju pakotņu katalogu.
 
@@ -818,7 +818,7 @@ Atgriež no Registry instalēšanai pieejamo iespēju pakotņu katalogu.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Lejupielādē un aktivizē spēju pakotni no reģistra.
 
@@ -832,7 +832,7 @@ Lejupielādē un aktivizē spēju pakotni no reģistra.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Vaicā spēju reģistru, lai atrastu labāko plugin aprakstītajam lietošanas gadījumam un, pēc izvēles, to instalē.
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector ühilduvate lõpp-punktide jaoks
+# Ultimate AI Connector ühilduvate lõpp-punktide jaoks {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector ühilduvate lõpp-punktide jaoks integreerib OpenAI-ga ühilduvate AI teenusepakkujate API-d teie WordPress multisite võrguga. Seadistage mitu AI teenusepakkujat — igaühel oma lõpp-punkti URL, API-võti ja vaikemudel — ning suunake päringuid automaatse varuvariandiga, kui teenusepakkuja pole saadaval.
 
-## Põhifunktsioonid
+## Põhifunktsioonid {#key-features}
 
 - **Mitme teenusepakkuja tugi**: lisage mitu AI teenusepakkuja kaarti, igaühel oma lõpp-punkti URL, API-võti ja vaikemudel
 - **Lohistades ümberjärjestamine**: seadke teenusepakkujad prioriteedi järgi, kasutades iga kaardi haaramispidet; päringud kasutavad teenusepakkujaid järjekorras
@@ -21,26 +21,26 @@ Ultimate AI Connector ühilduvate lõpp-punktide jaoks integreerib OpenAI-ga üh
 - **Automaatne avamine lisamisel**: uued teenusepakkuja kaardid avanevad automaatselt, et saaksite üksikasjad kohe sisestada
 - **Skriptide vahemälu tühistamine**: teenusepakkuja skriptidele rakendatakse plugina uuendamisel vahemälu tühistamist, et tagada uusima versiooni laadimine
 
-## Nõuded
+## Nõuded {#requirements}
 
 - WordPress 5.3 või uuem
 - PHP 7.4 või uuem
 - Ultimate Multisite plugin (aktiivne)
 - OpenAI-ga ühilduv API lõpp-punkt (ise hostitud või kolmanda osapoole oma)
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 1. Laadige lisamooduli failid üles oma `/wp-content/plugins/` kataloogi
 2. Aktiveerige plugin WordPressi menüü „Plugins” kaudu
 3. Liikuge jaotisse **Ultimate Multisite → AI Connector**, et lisamoodul seadistada
 
-## Seadistamine
+## Seadistamine {#configuration}
 
-### Mitme teenusepakkuja seadistus
+### Mitme teenusepakkuja seadistus {#multi-provider-setup}
 
 Seadistusekraan kasutab kaardipõhist paigutust, kus iga kaart tähistab ühte AI teenusepakkujat. Saate lisada nii palju teenusepakkujaid, kui vajate.
 
-#### Teenusepakkuja lisamine
+#### Teenusepakkuja lisamine {#adding-a-provider}
 
 1. Minge võrgu administraatoris jaotisse **Ultimate Multisite → AI Connector**
 2. Klõpsake **Lisa teenusepakkuja**
@@ -52,15 +52,15 @@ Seadistusekraan kasutab kaardipõhist paigutust, kus iga kaart tähistab ühte A
    - **Vaikemudel** — mudeli identifikaator, mida selle teenusepakkuja puhul vaikimisi kasutada (nt `gpt-4o`, `mistral-small`)
 5. Klõpsake **Salvesta seaded**
 
-#### Teenusepakkuja eemaldamine
+#### Teenusepakkuja eemaldamine {#removing-a-provider}
 
 Selle kustutamiseks klõpsake mis tahes teenusepakkuja kaardil nuppu **Eemalda**. Muudatuse rakendamiseks salvestage seaded.
 
-#### Teenusepakkujate ümberjärjestamine
+#### Teenusepakkujate ümberjärjestamine {#reordering-providers}
 
 Lohistage mis tahes teenusepakkuja kaardi vasakul küljel olevat haaramisikooni (⣿), et seda ümber järjestada. Järjekord määrab varuvariandi prioriteedi: päringud saadetakse esimesele teenusepakkujale ja päringu nurjumisel liiguvad need järgmiste teenusepakkujate juurde.
 
-### Varumarsruutimine
+### Varumarsruutimine {#fallback-routing}
 
 Kui päring peamisele teenusepakkujale nurjub — ajalõpu, kiiruspiirangu või teenusekatkestuse tõttu — proovib ühendaja automaatselt uuesti järgmise loendis oleva teenusepakkujaga. See jätkub loendi lõpuni, kuni mõni teenusepakkuja õnnestub või kõiki teenusepakkujaid on proovitud.
 
@@ -72,7 +72,7 @@ Kui päring peamisele teenusepakkujale nurjub — ajalõpu, kiiruspiirangu või 
 
 Varuvariant on kutsuva plugina või teema jaoks läbipaistev — nad saavad kas eduka vastuse või lõpliku vea, sõltumata sellest, mitut teenusepakkujat prooviti.
 
-### Teenusepakkuja seadistuse viide
+### Teenusepakkuja seadistuse viide {#provider-configuration-reference}
 
 | Väli | Kohustuslik | Kirjeldus |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Varuvariant on kutsuva plugina või teema jaoks läbipaistev — nad saavad kas 
 | API-võti | Jah | Selle teenusepakkuja autentimisvõti |
 | Vaikemudel | Jah | Mudeli identifikaator, mida kasutatakse, kui päringus pole mudelit määratud |
 
-## Tõrkeotsing
+## Tõrkeotsing {#troubleshooting}
 
-### Ühtegi teenusepakkujat pole loetletud
+### Ühtegi teenusepakkujat pole loetletud {#no-providers-are-listed}
 
 Kui teenusepakkujate loend on pärast salvestamist tühi, veenduge, et:
 
@@ -91,21 +91,21 @@ Kui teenusepakkujate loend on pärast salvestamist tühi, veenduge, et:
 - Teie brauser ei blokeerinud seadete lehe salvestamist (kontrollige brauseri konsoolist JavaScripti vigu)
 - Plugin on aktiivne ja te olete võrgu administraatori ekraanil
 
-### Päringud nurjuvad kõigi teenusepakkujate puhul
+### Päringud nurjuvad kõigi teenusepakkujate puhul {#requests-are-failing-for-all-providers}
 
 - Kontrollige, et iga teenusepakkuja lõpp-punkti URL oleks teie serverist kättesaadav (mitte ainult teie brauserist)
 - Veenduge, et iga API-võti oleks kehtiv ega oleks aegunud
 - Vaadake teenusepakkuja kiiruspiirangu ja kvoodi olekut nende Dashboardil
 - Lubage WordPressi silumislogimine (`WP_DEBUG_LOG`), et jäädvustada ühendaja üksikasjalikud veateated
 
-### Teenusepakkujat ei kasutata varuvariandina
+### Teenusepakkujat ei kasutata varuvariandina {#a-provider-is-not-being-used-for-fallback}
 
 Lohistades ümberjärjestamine muudab varuvariantide järjekorda. Veenduge, et teenusepakkuja, kellelt ootate varupäringuid, oleks loendis õigel kohal ning et tema lõpp-punkti URL ja API-võti oleksid õiged.
 
-### Uus teenusepakkuja kaart ei avane automaatselt
+### Uus teenusepakkuja kaart ei avane automaatselt {#new-provider-card-does-not-expand-automatically}
 
 Automaatne avamine nõuab, et JavaScript oleks teie brauseris lubatud. Kui kaart ei avane klõpsamisel, kontrollige brauseri konsoolist vigu. Kaardi sisu on alati kättesaadav, klõpsates kaardi päist, isegi kui automaatne avamine ei käivitu.
 
-## Muudatuste logi
+## Muudatuste logi {#changelog}
 
 Täieliku versiooniajaloo leiate jaotisest [Muudatuste logi](./changelog).

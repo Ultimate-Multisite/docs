@@ -4,11 +4,11 @@ title: Filter - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filter: wu_add_product_setup_fee_line_item
+# Filter: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 Erlaabt Entwéckler, Ännerungen un der Positioun fir d'Ariichtungsgebühr ze maachen.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Erlaabt Entwéckler, Ännerungen un der Positioun fir d'Ariichtungsgebühr ze ma
 | $product | `\WP_Ultimo\Models\Product` | De Produit, dee mat der Ariichtungsgebühr verbonnen ass. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | D'Wuerekierfchen-Objet. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.1
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) op Zeil 1790
 
 
-## Réckgabewäerter
+## Réckgabewäerter {#returns}

@@ -3,7 +3,7 @@ title: Breytingaskrá lénasala
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Breytingaskrá Domain Seller
+# Breytingaskrá Domain Seller {#domain-seller-changelog}
 
 Útgáfa 1.3.0 - Gefin út 2026-06-02
 - Nýtt: Bætti við viðvörun fyrir netkerfisstjóra þegar HostAfrica reseller-inneign verður of lág
@@ -134,20 +134,20 @@ _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 * **Lagað:** Allur úreltur v1 kóði uppfærður í v2 staðla
 * **Fjarlægt:** Eldri v1 samhæfni (brjótandi breyting)
 
-### Fyrri útgáfur (v1 eldri útgáfur)
+### Fyrri útgáfur (v1 eldri útgáfur) {#previous-versions-v1-legacy}
 
-### Útgáfa 0.0.3 - 20/08/2019
+### Útgáfa 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Lagað: Ósamhæfni við Groundhogg CRM
 * Athugið: Þetta var síðasta v1-samhæfa útgáfan
 
-### Útgáfa 0.0.2 - 07/12/2018
+### Útgáfa 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Lagað: License Key reiturinn fjarlægður
 * Lagað: Plan flipar vantaði þegar eiginleika-plugin er virkt
 * Bætt: Bætt við hnappi til að sleppa á skráningarreitnum
 
-### Útgáfa 0.0.1 - Upphafleg útgáfa
+### Útgáfa 0.0.1 - Upphafleg útgáfa {#version-001---initial-release}
 
 * Grunnsamþætting OpenSRS fyrir WP Ultimo v1
 * Einföld lénaleit og skráning

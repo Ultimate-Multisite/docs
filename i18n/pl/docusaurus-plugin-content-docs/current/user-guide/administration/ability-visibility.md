@@ -3,11 +3,11 @@ title: Widoczność uprawnień
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Widoczność Zdolności
+# Widoczność Zdolności {#ability-visibility}
 
 Superdav AI Agent v1.12.0 wprowadza kontrole **Widoczności Zdolności** (Ability Visibility), które określają, na jakich interfejsach dana zdolność jest dostępna. Pozwala to administratorom precyzyjnie określić, które możliwości agenta są dostępne przez REST API, serwery MCP, integracje WooCommerce i inne interfejsy.
 
-## Co to jest Widoczność Zdolności?
+## Co to jest Widoczność Zdolności? {#what-is-ability-visibility}
 
 Widoczność Zdolności to system uprawnień, który kontroluje:
 
@@ -18,9 +18,9 @@ Widoczność Zdolności to system uprawnień, który kontroluje:
 
 Każda zdolność ma poziom widoczności, który określa jej dostępność na różnych interfejsach.
 
-## Poziomy Widoczności
+## Poziomy Widoczności {#visibility-levels}
 
-### Publiczne (Public)
+### Publiczne (Public) {#public}
 
 **Publiczne zdolności** są dostępne wszędzie:
 
@@ -32,7 +32,7 @@ Każda zdolność ma poziom widoczności, który określa jej dostępność na r
 
 Przykład: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Wewnętrzne (Internal)
+### Wewnętrzne (Internal) {#internal}
 
 **Wewnętrzne zdolności** są dostępne tylko w ramach Twojej instalacji WordPress:
 
@@ -43,7 +43,7 @@ Przykład: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Przykład: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Zdolności Partnera** są dostępne tylko dla partnerów znajdujących się na białej liście:
 
@@ -54,7 +54,7 @@ Przykład: `manage-settings`, `view-analytics`, `export-data`
 
 Przykład: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Wyłączone (Disabled)
+### Wyłączone (Disabled) {#disabled}
 
 **Wyłączone zdolności** nie są dostępne nigdzie:
 
@@ -63,15 +63,15 @@ Przykład: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Niedostępne w panelach administracyjnych
 - Przydatne dla przestarzałych lub eksperymentalnych zdolności
 
-## Zarządzanie Widocznością Zdolności
+## Zarządzanie Widocznością Zdolności {#managing-ability-visibility}
 
-### Dostęp do Ustawień Widoczności Zdolności
+### Dostęp do Ustawień Widoczności Zdolności {#accessing-ability-visibility-settings}
 
 1. Przejdź do **Panelu Administracyjnego WordPress** → **Superdav AI Agent** → **Ustawienia**
 2. Kliknij zakładkę **Abilities**
 3. Zobaczysz listę wszystkich zainstalowanych zdolności wraz z ich poziomami widoczności
 
-### Podgląd Szczegółów Zdolności
+### Podgląd Szczegółów Zdolności {#viewing-ability-details}
 
 Kliknij dowolną zdolność, aby zobaczyć:
 
@@ -82,7 +82,7 @@ Kliknij dowolną zdolność, aby zobaczyć:
 - **Ostatnia aktualizacja**: Kiedy widoczność była ostatnio zmieniana
 - **Status**: Rozpoznana czy Nierozpoznana
 
-### Zmiana Poziomów Widoczności
+### Zmiana Poziomów Widoczności {#changing-visibility-levels}
 
 Aby zmienić widoczność zdolności:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operacje Masowe
+### Operacje Masowe {#bulk-operations}
 
 Aby zmienić widoczność wielu zdolności:
 
@@ -108,11 +108,11 @@ Aby zmienić widoczność wielu zdolności:
 2. Wybierz nowy poziom widoczności z rozwijanego menu akcji masowych
 3. Kliknij **Zastosuj**
 
-## Lista Dostępnych Partnerów (Partner Allow-List)
+## Lista Dostępnych Partnerów (Partner Allow-List) {#partner-allow-list}
 
 **Lista dostępnych partnerów** kontroluje, którzy zewnętrzni partnerzy mogą uzyskać dostęp do zdolności na poziomie Partnera.
 
-### Dodawanie Partnerów
+### Dodawanie Partnerów {#adding-partners}
 
 1. Przejdź do **Superdav AI Agent** → **Ustawienia** → **Partnerzy**
 2. Kliknij **Dodaj Partnera**
@@ -120,7 +120,7 @@ Aby zmienić widoczność wielu zdolności:
 4. Opcjonalnie dodaj nazwę i opis partnera
 5. Kliknij **Zapisz**
 
-### Przypisywanie Zdolności Partnerom
+### Przypisywanie Zdolności Partnerom {#assigning-abilities-to-partners}
 
 Po dodaniu partnera:
 
@@ -130,7 +130,7 @@ Po dodaniu partnera:
 4. W sekcji "Partner allow-list" zaznacz pola dla partnerów, którzy mają mieć dostęp
 5. Kliknij **Zapisz**
 
-### Cofanie Dostępu Partnera
+### Cofanie Dostępu Partnera {#revoking-partner-access}
 
 Aby usunąć dostęp partnera:
 
@@ -140,11 +140,11 @@ Aby usunąć dostęp partnera:
 
 Partner natychmiast straci dostęp do tej zdolności.
 
-## Nierozpoznane Zdolności (Unclassified Abilities)
+## Nierozpoznane Zdolności (Unclassified Abilities) {#unclassified-abilities}
 
 Gdy instalujesz zdolność zewnętrznego dostawcy, której Superdav AI Agent nie rozpoznaje, jest ona oznaczana jako **Nierozpoznana** (Unclassified).
 
-### Powiadomienie Administracyjne o Nierozpoznanych Zdolnościach
+### Powiadomienie Administracyjne o Nierozpoznanych Zdolnościach {#admin-notice-for-unclassified-abilities}
 
 Zobaczysz powiadomienie administracyjne:
 
@@ -161,7 +161,7 @@ Prosimy o ich sprawdzenie i sklasyfikowanie.
 [Sprawdź Zdolności] [Zamknij]
 ```
 
-### Sprawdzanie Nierozpoznanych Zdolności
+### Sprawdzanie Nierozpoznanych Zdolności {#reviewing-unclassified-abilities}
 
 1. Kliknij **Sprawdź Zdolności** w powiadomieniu
 2. Dla każdej nierozpoznanej zdolności zobaczysz:
@@ -178,7 +178,7 @@ Prosimy o ich sprawdzenie i sklasyfikowanie.
 
 4. Kliknij **Sklasyfikuj** (Classify), aby zapisać swoją decyzję
 
-### Dlaczego należy sklasyfikować nierozpoznane zdolności?
+### Dlaczego należy sklasyfikować nierozpoznane zdolności? {#why-classify-unclassified-abilities}
 
 Klasyfikowanie zdolności:
 
@@ -187,9 +187,9 @@ Klasyfikowanie zdolności:
 - **Umożliwia funkcje**: Po sklasyfikowaniu zdolność staje się dostępna
 - **Dokumentuje decyzje**: Twoje wybory są rejestrowane w celach audytowych
 
-## Widoczność na Różnych Interfejsach
+## Widoczność na Różnych Interfejsach {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Publiczne zdolności** są dostępne przez endpointy REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Zdolności Wewnętrzne i Partnera** nie są dostępne przez REST API.
 
-### Serwery MCP
+### Serwery MCP {#mcp-servers}
 
 **Publiczne zdolności** są dostępne przez MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Zdolności Partnera** są dostępne tylko z poświadczeniami partnera.
 
-### Integracja WooCommerce
+### Integracja WooCommerce {#woocommerce-integration}
 
 **Publiczne zdolności** związane z WooCommerce są dostępne:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Zdolności Wewnętrzne** nie są eksponowane dla WooCommerce.
 
-### Interfejs Czatowy
+### Interfejs Czatowy {#chat-interface}
 
 **Wszystkie zdolności** (Publiczne, Wewnętrzne, Partnera) są dostępne w czacie, w zależności od uprawnień użytkownika:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Zwykli użytkownicy widzą tylko zdolności Publiczne
 - Partnerzy widzą zdolności Publiczne + Partnera (jeśli są na białej liście)
 
-## Najlepsze Praktyki Bezpieczeństwa
+## Najlepsze Praktyki Bezpieczeństwa {#security-best-practices}
 
-### Zasada Najmniejszych Przywilejów (Principle of Least Privilege)
+### Zasada Najmniejszych Przywilejów (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Ustaw zdolności na najbardziej restrykcyjną widoczność, która nadal umożliwia ich użycie
 - Używaj widoczności Partnera dla wrażliwych operacji
 - Wyłącz zdolności, których nie używasz
 
-### Regularne Audyty
+### Regularne Audyty {#regular-audits}
 
 - Sprawdzaj widoczność zdolności co miesiąc
 - Szukaj nierozpoznanych zdolności
 - Usuwaj dostęp dla nieużywanych partnerów
 
-### Logowanie i Monitorowanie
+### Logowanie i Monitorowanie {#logging-and-monitoring}
 
 - Monitoruj, które zdolności są używane najczęściej
 - Śledź wzorce dostępu partnerów
 - Otrzymuj alerty o nietypowym użyciu zdolności
 
-### Zdolności Zewnętrznych Dostawców (Third-Party Abilities)
+### Zdolności Zewnętrznych Dostawców (Third-Party Abilities) {#third-party-abilities}
 
 - Sprawdź zdolności zewnętrznych dostawców przed włączeniem
 - Sklasyfikuj je wyraźnie
 - Zacznij od widoczności Wewnętrznej lub Partnera
 - Promuj do Publicznej tylko po weryfikacji
 
-## Rozwiązywanie Problemów (Troubleshooting)
+## Rozwiązywanie Problemów (Troubleshooting) {#troubleshooting}
 
 **Zdolność nie pojawia się na liście**
 - Sprawdź, czy zdolność jest zainstalowana i aktywna
@@ -285,7 +285,7 @@ Available abilities:
 - Upewnij się, że Twoja klasyfikacja została zapisana
 - Sprawdź, czy plugin dostarczający zdolność jest aktualny
 
-## Migracja ze Starego Trybu (Legacy Mode)
+## Migracja ze Starego Trybu (Legacy Mode) {#migration-from-legacy-mode}
 
 Jeśli aktualizujesz się ze starszej wersji Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Jeśli aktualizujesz się ze starszej wersji Superdav AI Agent:
 
 Zobacz **Migracja z Trybu Zewnętrznego Dostawcy** (Third-Party Mode Migration) o więcej szczegółów dotyczących przejścia do natywnej integracji Abilities API.
 
-## Następne Kroki
+## Następne Kroki {#next-steps}
 
 Po skonfigurowaniu widoczności zdolności:
 

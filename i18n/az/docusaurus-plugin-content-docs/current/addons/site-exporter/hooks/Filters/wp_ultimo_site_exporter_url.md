@@ -4,23 +4,23 @@ title: Filter - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Filter: wp_ultimo_site_exporter_url
+# Filter: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
 
 Developerlərə plugin-in köküne olan relativ yolu idarə etməyə imkan verir.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $dir | `string` | Plugin-in kökü ilə əlaqəli olaraq daxil olmaq istədiyiniz yol. |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 0.0.1
-### Mənbə
+### Mənbə {#source}
 
 Defined in [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L52) at line 52
 
 
-## Qaytarır
+## Qaytarır {#returns}
 Plugin-in kökü ilə əlaqəli yol.

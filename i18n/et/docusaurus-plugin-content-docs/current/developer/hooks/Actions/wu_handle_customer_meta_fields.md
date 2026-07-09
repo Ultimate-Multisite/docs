@@ -4,11 +4,11 @@ title: Tegevus - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Tegevus: wu_handle_customer_meta_fields
+# Tegevus: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Võimaldab plugin arendajatel salvestada metaandmeid eri viisidel, kui neil seda vaja on.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Võimaldab plugin arendajatel salvestada metaandmeid eri viisidel, kui neil seda
 | $customer | `\Customer` | The Ultimate Multisite customer object. |
 | $checkout | `\Checkout` | The checkout class. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) real 1211

@@ -3,11 +3,11 @@ title: Kusaka Domain pa Header
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Kusaka Domain mu Header
+# Kusaka Domain mu Header {#header-domain-search}
 
 Gwiritsani ntchito setup iyi mukafuna form yaing'ono ya header yomwe imayambitsa kusaka domain, kenako imalola kasitomala kusankha kuchokera ku domains omwe alipo mkati mwa Ultimate Multisite checkout.
 
-## Zofunikira
+## Zofunikira {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Gwiritsani ntchito setup iyi mukafuna form yaing'ono ya header yomwe imayambitsa
   - TLDs zothandizidwa zokonzedwa, mwachitsanzo `com`, `net`, ndi `org`.
 - Form yovomerezeka ya checkout yokhala ndi field ya **Kusankha Domain**.
 
-## Form ya checkout
+## Form ya checkout {#checkout-form}
 
 1. Pangani kapena sinthani form ya checkout yomwe imagwiritsidwa ntchito ndi tsamba la kulembetsa.
 2. Onjezani fields zofunikira za checkout/account, kuphatikizapo **Username**. Form ya checkout yokhala ndi field ya domain yokha imakanidwa ndi validation ya Ultimate Multisite.
@@ -30,7 +30,7 @@ Tsamba la kulembetsa liyenera kuwonetsa form ya checkout, mwachitsanzo:
 [wu_checkout slug="domain-form"]
 ```
 
-## Form ya header
+## Form ya header {#header-form}
 
 Onjezani form yaing'ono ya `GET` mu header ya site yomwe imatumiza mawu osaka omwe alowetsedwa ku tsamba la checkout monga `domain_name`:
 
@@ -44,7 +44,7 @@ Onjezani form yaing'ono ya `GET` mu header ya site yomwe imatumiza mawu osaka om
 
 Musasankhe domain pasadakhale mu JavaScript ya header yokonzedwa mwamakonda. Header iyenera kungodutsa mawu osaka. Script ya Domain Seller checkout imawerenga `?domain_name=example`, imadzaza bokosi losaka la checkout, ndipo imayendetsa kusaka kwa kupezeka kuti kasitomala asankhe kuchokera ku domains obwezedwa.
 
-## Khalidwe loyembekezeredwa
+## Khalidwe loyembekezeredwa {#expected-behaviour}
 
 Kusaka `example` mu header kuyenera kutsegula:
 
@@ -61,7 +61,7 @@ Checkout iyenera kenako kuwonetsa zotsatira zosankhika monga:
 
 Pambuyo posankha zotsatira zomwe zilipo, chidule cha order chiyenera kuphatikiza chinthu cha kulembetsa domain ndi dzina la domain losankhidwa.
 
-## Kutsimikizira
+## Kutsimikizira {#verification}
 
 1. Tsegulani tsamba loyamba.
 2. Sakani dzina lopanda zina, mwachitsanzo `example`.
@@ -71,7 +71,7 @@ Pambuyo posankha zotsatira zomwe zilipo, chidule cha order chiyenera kuphatikiza
 6. Dinani **Select** pa domain yomwe ilipo.
 7. Tsimikizirani kuti chidule cha order chili ndi `Domain Registration - example.com` kapena domain yosankhidwa.
 
-## Kuthetsa mavuto
+## Kuthetsa mavuto {#troubleshooting}
 
 - Ngati palibe mndandanda ukuoneka, onani tab ya network ya browser pa `admin-ajax.php?action=wu_domain_search` ndipo tsimikizirani kuti imabweza `domains` kapena `results` zosakhala zopanda kanthu.
 - Ngati form ya checkout ikulephera validation posunga, onjezani fields zofunikira za account monga **Username**.

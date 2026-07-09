@@ -3,9 +3,9 @@ title: Konektè AI Ultimate pou WebLLM Jounal chanjman
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Changelog
+# Ultimate AI Connector for WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Vèsyon 1.1.0 — Pibliye 2026-04-09
+## Vèsyon 1.1.0 — Pibliye 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Nouvo: Widget chat k ap flote ak endikatè estati nan ba administratè a — nenpòt itilizatè ki konekte ka bay LLM bò navigatè a yon prompt dirèkteman depi front end la.
 * Nouvo: SharedWorker runtime — motè MLC a kounye a kouri nan yon SharedWorker pou plizyè onglet pataje yon sèl sesyon GPU olye yo goumen pou li.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Koreksyon: Branche WebLLM nan filtè wpai_preferred_text_models la pou fonksyon AI Experiments la voye trafik nan motè navigatè a lè yon modèl konfigire.
 * Amelyore: Cache-busting, nòmalizasyon kontni, ak koreksyon referans pyès ki parèt pandan tès bout-an-bout.
 
-## Vèsyon 1.0.0 — Premye Lansman
+## Vèsyon 1.0.0 — Premye Lansman {#version-100--initial-release}

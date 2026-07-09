@@ -4,11 +4,11 @@ title: Filtras - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filtras: wu_post_default_status
+# Filtras: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Filtruoja objekto duomenis prieš juos išsaugant duomenų bazėje.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtruoja objekto duomenis prieš juos išsaugant duomenų bazėje.
 | $post_type | `string` | Įrašo tipas. |
 | $this | `\Base_Model` | Objekto egzempliorius. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) 320 eilutėje

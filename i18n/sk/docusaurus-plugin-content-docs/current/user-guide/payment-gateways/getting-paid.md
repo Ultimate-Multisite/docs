@@ -3,13 +3,13 @@ title: Prijímanie platieb
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Prijímanie platieb (v2)
+# Prijímanie platieb (v2) {#getting-paid-v2}
 
 _**DÔLEŽITÁ POZNÁMKA: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 
 Ultimate Multisite má vstavaný systém členstiev a fakturácie. Aby náš fakturačný systém fungoval, integrovali sme najbežnejšie platobné brány používané v e-commerce. Predvolené platobné brány v Ultimate Multisite sú _Stripe_ , _PayPal_ a Manuálna platba. Platby môžete prijímať aj cez _WooCommerce_ , _GoCardless_ a _Payfast_ nainštalovaním ich príslušných doplnkov.
 
-## Základné nastavenia
+## Základné nastavenia {#basic-settings}
 
 Ktorúkoľvek z týchto platobných brán môžete nakonfigurovať v nastaveniach platieb Ultimate Multisite. Nájdete ich cez **menu Ultimate Multisite > Nastavenia > Platby.**
 
@@ -39,7 +39,7 @@ Tým sa zabráni tomu, aby členstvo vyzeralo, že sa automaticky obnoví, keď 
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kde nájsť brány:
+## Kde nájsť brány: {#where-to-find-the-gateways}
 
 Platobné brány môžete nastaviť na tej istej stránke ( **Ultimate Multisite > Nastavenia > Platby**). Hneď pod **aktívnymi platobnými bránami** uvidíte: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ a _Manuálna_.
 
@@ -67,7 +67,7 @@ Tu je aj úplné zobrazenie nastavení platobných brán:
 
 Ak teraz chcete používať _WooCommerce_ , _GoCardless_ alebo _Payfast_ ako svoju platobnú bránu, budete musieť **nainštalovať a nakonfigurovať ich doplnky**.
 
-### Ako nainštalovať doplnok WooCommerce:
+### Ako nainštalovať doplnok WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Chápeme, že _Stripe_ a _PayPal_ nie sú dostupné v niektorých krajinách, čo obmedzuje alebo bráni používateľom Ultimate Multisite efektívne používať náš plugin. Preto sme vytvorili doplnok na integráciu _WooCommerce,_ čo je veľmi populárny e-commerce plugin. Vývojári po celom svete vytvorili doplnky na integráciu rôznych platobných brán do neho. Využili sme to na rozšírenie platobných brán, ktoré môžete používať s fakturačným systémom Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Po jeho aktivácii, ak ešte nemáte zásuvný modul WooCommerce nainštalovaný
 
 Ak si chcete prečítať viac o doplnku WooCommerce Integration, **kliknite sem**.
 
-### Ako nainštalovať doplnok GoCardless:
+### Ako nainštalovať doplnok GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Kroky na inštaláciu doplnku _GoCardless_ sú takmer rovnaké ako pri doplnku _WooCommerce_. Prejdite, prosím, na stránku doplnkov a vyberte doplnok **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Po dokončení inštalácie budete presmerovaní na stránku zásuvných modulov
 
 Ak sa chcete dozvedieť, ako začať s bránou _GoCardless_, **prečítajte si tento článok**.
 
-### Ako nainštalovať doplnok Payfast:
+### Ako nainštalovať doplnok Payfast: {#how-to-install-the-payfast-add-on}
 
 Prejdite na stránku doplnkov a vyberte doplnok **Ultimate Multisite: Payfast Gateway**.
 

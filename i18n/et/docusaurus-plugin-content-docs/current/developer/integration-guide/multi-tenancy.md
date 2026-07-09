@@ -3,11 +3,11 @@ title: Mitmerentnikluse integratsioon
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy integratsioon
+# Multi-Tenancy integratsioon {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 muudab mitut integratsiooni puutepunkti suveräänsete tenantide, migratsiooni kontrollimise ja tenanti elutsükli automatiseerimise jaoks.
 
-## Tenanti algkäivituse voog
+## Tenanti algkäivituse voog {#tenant-bootstrap-flow}
 
 Integratsioonid, mis loovad või muudavad tenante, peaksid järgima seda järjekorda:
 
@@ -20,13 +20,13 @@ Integratsioonid, mis loovad või muudavad tenante, peaksid järgima seda järjek
 
 Ära eelda, et suveräänne tenant saab võrgu andmebaasiühendust taaskasutada. Kasuta addoni pakutavaid tenanti registri ja kirjutaja abstraktsioone.
 
-## SSO ja REST konksud
+## SSO ja REST konksud {#sso-and-rest-hooks}
 
 Olekuta tenanti automaatne sisselogimine kasutab lühiajalisi tokeneid koos eesmärgi väitega, JTI taasesituskaitse, aegumistähtaja ülempiiri ja päritolu kinnitamisega. Integratsioonid, mis lisavad sisselogimisnuppe või kaughalduse linke, peaksid genereerima tenanti külastused toetatud SSO voo kaudu, mitte koostama tenanti sisselogimise URL-e otse.
 
 Võrgupoole API auditisündmused ja igapäevased kokkuvõtted on saadaval suveräänsete tenantide lüüside jaoks. Kasuta neid logisid, kui silud väliseid süsteeme, mis kutsuvad tenanti elutsükli endpoint’e.
 
-## Suveräänse kliendi toimingu URL-id
+## Suveräänse kliendi toimingu URL-id {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 suunab suveräänse tenanti klienditoimingud tagasi põhisaidile Account, checkouti, arvelduse, arve, saidi, malli vahetamise ja domeeni kaardistamise voogude jaoks. Integratsioonid, mis renderdavad tenantipoolseid halduslinke, peaksid suunama need toimingud põhisaidi kliendipaneelile ja lisama valideeritud tagasipöördumise sihtkoha, kui kasutajal peaks olema võimalik pärast toimingu lõpetamist tagasi tenanti navigeerida.
 
@@ -40,7 +40,7 @@ Genereeritud URL jääb filtreeritavaks läbi `wu_sso_url`, mis saab SSO URL-i, 
 
 Ära dubleeri liikmesuse, arve, arveldusaadressi, malli ega domeenihalduse olekut suveräänse tenanti sees. Käsitle tenanti Dashboardi käivitajana ja põhisaidi kliendipaneeli hallatavate toimingute lõpliku süsteemina.
 
-## Migratsiooni kontroll
+## Migratsiooni kontroll {#migration-verification}
 
 Pärast seda, kui migratsioon või elutsükli integratsioon muudab tenanti andmeid, käivita kontrollväravad:
 
@@ -49,10 +49,10 @@ Pärast seda, kui migratsioon või elutsükli integratsioon muudab tenanti andme
 
 Integratsioonid peaksid käsitlema ebaõnnestunud kontrolli juurutuse blokeerijana ja vältima tenanti live’iks märkimist, kuni tõrge on lahendatud.
 
-## Tenanti kustutamine
+## Tenanti kustutamine {#tenant-deletion}
 
 Kustutusvood peaksid kutsuma addoni mahavõtmise teed, et tenanti andmebaasi mandaatandmed saaksid puhastatud. Välised integratsioonid võivad pärast mahavõtmise õnnestumist eemaldada teenusepakkuja ressursid, kuid ei tohiks kustutada hosti andmebaase ega kaustu, kui kontroll või asünkroonsed tõuketööd veel töötavad.
 
-## Aegunud andmebaasiruuter
+## Aegunud andmebaasiruuter {#deprecated-database-router}
 
 Pärand `Database_Router` on asendatud aegumisstubiga. Uued integratsioonid peaksid lahendama tenantid praeguse saidiruuteri ja tenanti registri API-de kaudu, mitte sõltuma vanast ruuteriklassist.

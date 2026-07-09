@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce Integration {#woocommerce-integration}
 
 WooCommerce Integration działa w bardzo podobny sposób do naszej bramki ręcznej. Oferuje użytkownikom ogromną elastyczność, pozwalając im wybrać dowolny formularz płatności dostępny w Twojej instalacji WooCommerce. I jest to proste: gdy okres rozliczeniowy użytkownika dobiegnie końca, subskrypcja użytkownika zostaje wstrzymana. Jednocześnie w instalacji WooCommerce głównej witryny sieci zostanie utworzone zamówienie. Następnie użytkownik otrzymuje fakturę w wiadomości e-mail z linkiem do dokonania płatności. Po otrzymaniu płatności subskrypcja zostaje odnowiona.
 
-## Funkcje
+## Funkcje {#features}
 
 - Łatwa integracja między Ultimate Multisite a WooCommerce
 - Dostępnych jest kilka metod płatności
 - Zautomatyzowane cykliczne rozliczenia przy użyciu dołączonego rdzenia subskrypcji, z opcjonalnymi ulepszeniami pluginu WooCommerce Subscriptions
 - Sumy przy checkout obejmują podatki Ultimate Multisite jako oddzielne, nieopodatkowane pozycje opłat WooCommerce, aby klienci mogli sprawdzić kwoty podatku przed płatnością
 
-## Dokumentacja
+## Dokumentacja {#documentation}
 
 **Konfigurowanie WooCommerce Integration**
 
 **Rozszerzanie opcji płatności za pomocą Ultimate Multisite: WooCommerce Integration**
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij 'ultimate-multisite-woocommerce' do katalogu '/wp-content/plugins/'
 2. Aktywuj plugin przez menu 'Pluginy' w WordPress
 3. Postępuj zgodnie z kreatorem krok po kroku, aby skonfigurować plugin
 
-## Przewodnik użytkowania
+## Przewodnik użytkowania {#usage-guide}
 
 _**WAŻNA UWAGA: Ten artykuł odnosi się do wersji Ultimate Multisite 2.x.**_
 
@@ -40,7 +40,7 @@ Rozumiemy, że _Stripe_ i _PayPal_ nie są dostępne w niektórych krajach, co o
 
 _WooCommerce_ to bardzo popularny plugin eCommerce. Programiści na całym świecie stworzyli dodatki integrujące z nim różne bramki płatności. Wykorzystaliśmy to, aby rozszerzyć bramki płatności, których możesz używać w systemie rozliczeń Ultimate Multisite.
 
-## Konfiguracja
+## Konfiguracja {#setting-it-up}
 
 Najpierw musisz zainstalować dodatek WooCommerce Integration, który jest **bezpłatny dla licencjonowanych użytkowników**. Aby go zainstalować, kliknij Ultimate Multisite w swoim dashboard superadministratora i wybierz **Dodatki**.
 
@@ -68,11 +68,11 @@ Po zainstalowaniu zobaczysz dodatkową opcję w ustawieniach płatności Ultimat
 
 Możesz skonfigurować podstawowe ustawienia, takie jak nazwa wyświetlana, która pojawi się w interfejsie użytkownika, oraz instrukcje prowadzące użytkowników przez proces checkout. Następnie możesz przejść do **ustawień _WooCommerce_ głównej witryny**, aby włączyć i skonfigurować bramkę płatności, której chcesz używać.
 
-### Pozycje opłat podatkowych przy checkout
+### Pozycje opłat podatkowych przy checkout {#checkout-tax-fee-lines}
 
 Gdy checkout Ultimate Multisite obejmuje podatki, integracja dodaje każdą kwotę podatku Ultimate Multisite do checkout WooCommerce jako oddzielną, nieopodatkowaną pozycję opłaty. Dzięki temu łączna kwota podatku jest widoczna przed płatnością, a jednocześnie WooCommerce nie nalicza ponownie podatku od opłaty podatkowej.
 
-## Jak zarządzać płatnością
+## Jak zarządzać płatnością {#how-to-manage-the-payment}
 
 WooCommerce Integration działa w bardzo podobny sposób do naszej **bramki ręcznej**. Wadą jest to, że każda płatność musi zostać opłacona ręcznie na koniec okresu rozliczeniowego. Oto jak działa ten proces:
 
@@ -82,13 +82,13 @@ WooCommerce Integration działa w bardzo podobny sposób do naszej **bramki ręc
 
   * Po otrzymaniu płatności członkostwo zostaje **odnowione** , płatność jest rejestrowana w Ultimate Multisite, a zamówienie zostaje oznaczone jako ukończone.
 
-### Kilka ważnych uwag:
+### Kilka ważnych uwag: {#some-important-notes}
 
   * Domyślna funkcjonalność Ultimate Multisite nadal działa z tą formą integracji. Na przykład **wystawianie zwrotów** z ekranu **Zarządzanie subskrypcją** skomunikuje się z WooCommerce, aby wystawić zwrot przy użyciu wybranego formularza płatności.
 
   * Ultimate Multisite: WooCommerce Integration polega na WP-Cron. W większości przypadków działa to bardzo dobrze, ale jeśli witryna ma mały ruch, cron nie jest wywoływany w celu sprawdzenia zaplanowanych zdarzeń i zdarzenie zostaje pominięte, co może powodować opóźnienia wykonania.
 
-## Plugin WooCommerce Subscriptions
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
 
 Ręczne inicjowanie płatności co miesiąc nie jest idealne dla użytkowników końcowych, ponieważ oczekuje się, że subskrypcje będą odnawiać się automatycznie w każdym cyklu rozliczeniowym. Dodatek WooCommerce Integration zawiera teraz podstawowy kod subskrypcji, więc produkty cykliczne zawsze używają subskrypcji do rozliczeń cyklicznych.
 
@@ -100,7 +100,7 @@ I to wszystko. Twoi użytkownicy końcowi nie będą już musieli ręcznie dokon
 
 Oprócz utworzenia zamówienia na Twojej głównej witrynie w _WooCommerce_, zostanie również utworzona subskrypcja dla każdego Account.
 
-### Zachowanie zawieszania po nieudanym odnowieniu
+### Zachowanie zawieszania po nieudanym odnowieniu {#failed-renewal-suspension-behavior}
 
 Domyślnie członkostwa pozostają aktywne, gdy WooCommerce Subscriptions przetwarza swój harmonogram ponownych prób po nieudanej płatności. Zachowuje to standardowe okno karencji WooCommerce Subscriptions, aby odzyskane odnowienie mogło ponownie zsynchronizować subskrypcję i członkostwo bez przedwczesnego przerywania dostępu.
 

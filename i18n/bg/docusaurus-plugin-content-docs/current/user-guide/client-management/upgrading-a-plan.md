@@ -3,7 +3,7 @@ title: Повишаване на план
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Повишаване на план (v2)
+# Повишаване на план (v2) {#upgrading-a-plan-v2}
 
 _**ВАЖНО ЗАБЕЛЕЖКА: Тази статия се отнася до Ultimate Multisite версия 2.x.**_
 
@@ -41,7 +41,7 @@ _**ВАЖНО ЗАБЕЛЕЖКА: Тази статия се отнася до U
 
 ##
 
-## Пътища за актуализация и понижаване на плана (Upgrade and Downgrade Paths)
+## Пътища за актуализация и понижаване на плана (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 В всеки от вашите продукти ще има таб **Up & Downgrades**. Първата опция в този таб е поле, наречено **Plan Group**.
 

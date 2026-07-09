@@ -3,13 +3,13 @@ title: Å bygge en tilpasset registrar-integrasjon
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Bygge en tilpasset registrator-integrasjon
+# Bygge en tilpasset registrator-integrasjon {#building-a-custom-registrar-integration}
 
 Domain Seller-tillegg bruker et **Integration Registry**-mønster. Hver registrator er en PHP-klasse som implementerer `Domain_Selling_Capability` og registrerer seg via `wu_domain_seller_register_capabilities` action hook.
 
 Denne guiden viser hvordan du kobler til en tilpasset registrator.
 
-## Grensesnittet
+## Grensesnittet {#the-interface}
 
 Klassen din må implementere `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` og arve fra `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Valgfrie metoder
+### Valgfrie metoder {#optional-methods}
 
 Implementer disse for å låse opp ekstra funksjonalitet. Tillegget oppdager støtte via `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementer disse for å låse opp ekstra funksjonalitet. Tillegget oppdager st�
 | `get_epp_code(string $domain_name): array` | Domeneoverføring (utgående) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domeneoverføring (innkommende) |
 
-### Returverdi-konvensjon
+### Returverdi-konvensjon {#return-value-convention}
 
 Alle metoder returnerer et array som minimum inneholder en `success`-nøkkel:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Enkel lesbar feilmelding'];
 
 ---
 
-## Registrering av funksjonaliteten din
+## Registrering av funksjonaliteten din {#registering-your-capability}
 
 Registrer klassen din ved hjelp av `wu_domain_seller_register_capabilities` action:
 
@@ -109,7 +109,7 @@ Det første argumentet til `add_capability()` er **provider ID** — en liten bo
 
 ---
 
-## Legge til legitimasjonsfelt i assistenten
+## Legge til legitimasjonsfelt i assistenten {#adding-credential-fields-to-the-wizard}
 
 For å la administratorer legge inn legitimasjon gjennom oppsett-assistenten, registrerer du integrasjonen din:
 
@@ -137,7 +137,7 @@ Legitimasjonen lagres som nettverksalternativer ved hjelp av felt-ID-ene som nø
 
 ---
 
-## Hooks for handling etter registrering
+## Hooks for handling etter registrering {#hooks-for-post-registration-actions}
 
 Bruk disse actionene for å utløse webhooks, provisioning, varsler eller CRM-oppdateringer:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging
+## Logging {#logging}
 
 Skriv til din leverandørspesifikke loggkanal ved hjelp av `wu_log_add()`:
 

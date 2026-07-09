@@ -3,11 +3,11 @@ title: 훅 참조
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks 참조
+# Hooks 참조 {#hooks-reference}
 
 Ultimate Multisite의 모든 **59개 actions** 및 **118개 filters**에 대해 자동 생성된 문서입니다.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — 인증 리디렉션 전에 실행됩니다.
 - [set_auth_cookie](./Actions/set_auth_cookie) — 인증 cookie가 설정되기 직전에 실행됩니다.
@@ -70,7 +70,7 @@ Ultimate Multisite의 모든 **59개 actions** 및 **118개 filters**에 대해 
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — 객체가 데이터베이스에 저장된 후 실행됩니다.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin 개발자가 잠금 해제 과정에 작업을 추가할 수 있도록 허용합니다.
 
-## 필터
+## 필터 {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — 인증 cookie 만료 기간의 지속 시간을 필터링합니다.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — 인증 리디렉션 방식을 필터링합니다.

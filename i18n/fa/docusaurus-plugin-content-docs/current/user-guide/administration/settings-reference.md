@@ -3,11 +3,11 @@ title: مرجع تنظیمات
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# مرجع Settings
+# مرجع Settings {#settings-reference}
 
 این صفحه Settingsی را پیگیری می‌کند که بر مدیریت روزمره و تغییرات اخیر رفتار در Ultimate Multisite اثر می‌گذارند.
 
-## گزینه‌های دیگر
+## گزینه‌های دیگر {#other-options}
 
 بخش **Other Options** زیر **Ultimate Multisite > Settings > Login & Registration** ظاهر می‌شود.
 
@@ -15,23 +15,23 @@ _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 |---|---|
 | **Enable Jumper** | ابزار ناوبری سریع Jumper را در ناحیه مدیریت نشان می‌دهد. از آن برای پرش مستقیم به صفحه‌های Ultimate Multisite، اشیای شبکه، و مقصدهای مدیریتی پشتیبانی‌شده استفاده کنید. اگر نمی‌خواهید این میان‌بر قابل مشاهده باشد، آن را غیرفعال کنید. |
 
-## گزارش خطا و تله‌متری
+## گزارش خطا و تله‌متری {#error-reporting-and-telemetry}
 
 تنظیم قبلی پذیرش گزارش خطا از صفحه Settings حذف شده است. تله‌متری ناشناس غیرفعال است و هیچ تغییر‌دهنده UI برای فعال کردن آن وجود ندارد.
 
 اگر runbookهای داخلی یا اسکرین‌شات‌هایی برای صفحه Settings نگهداری می‌کنید، ارجاع‌ها به فیلد قدیمی پذیرش گزارش خطا را حذف کنید تا مدیران دنبال تنظیمی نگردند که دیگر وجود ندارد.
 
-## تنظیمات Import/Export
+## تنظیمات Import/Export {#importexport-settings}
 
 زبانه تنظیمات **Import/Export** توضیح می‌دهد که کدام Settings را کنترل می‌کند و مستقیماً به **Ultimate Multisite > Site Export** برای بایگانی‌های سایت و شبکه پیوند می‌دهد. از زبانه Settings برای پیکربندی Import/Export استفاده کنید، از **Tools > Export & Import** برای گردش‌کار export/import تک‌سایتی استفاده کنید، و زمانی که به بایگانی کامل Network Export نیاز دارید از ابزار Site Export استفاده کنید.
 
-## هشدار موجودی Domain Seller HostAfrica
+## هشدار موجودی Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 وقتی افزونه Domain Seller به HostAfrica متصل است، مدیران شبکه اکنون هنگامی که موجودی حساب reseller برای پردازش قابل‌اعتماد ثبت یا تمدید دامنه خیلی کم است، یک هشدار قابل بستن درباره کم بودن موجودی می‌بینند.
 
 این اعلان را به‌عنوان یک هشدار عملیاتی در نظر بگیرید: پیش از پذیرش ثبت‌های پولی بیشتر دامنه، موجودی reseller در HostAfrica را شارژ کنید، سپس به Settings مربوط به Domain Seller یا صفحه پایش دامنه برگردید تا تأیید کنید ثبت‌ها و تمدیدها می‌توانند به‌طور عادی ادامه پیدا کنند.
 
-## تنظیمات اتصال‌دهنده ارائه‌دهنده AI
+## تنظیمات اتصال‌دهنده ارائه‌دهنده AI {#ai-provider-connector-settings}
 
 Settings اتصال‌دهنده ارائه‌دهنده AI اکنون فقط مخزن‌های Account پشتیبانی‌شده OAuth را نمایش می‌دهند:
 

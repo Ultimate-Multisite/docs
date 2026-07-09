@@ -3,15 +3,15 @@ title: Ndepụta nri ile ọbịa
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Ọrụ Ile Ọbịa
+# Menu Ọrụ Ile Ọbịa {#hospitality-menus}
 
 Njirimara **Menu Ọrụ Ile Ọbịa** na-enye Theme Builder ohere imepụta ma tinye peeji menu nri na ihe ọṅụṅụ ahaziri nke ọma ozugbo n'ime saịtị WordPress gị.
 
-## Nchịkọta
+## Nchịkọta {#overview}
 
 Theme Builder nwere ike ugbu a ịmepụta peeji menu ọkachamara, ahaziri nke ọma maka azụmahịa ọrụ ile ọbịa gụnyere ụlọ oriri na ọṅụṅụ, kafe, baa, na ọrụ nri emume. A na-etinye menu ndị a kpamkpam n'ime nhazi saịtị gị, a pụkwara imelite ma jikwaa ha n'ụzọ dị mfe.
 
-## Ụdị Ọrụ Ile Ọbịa A Na-akwado
+## Ụdị Ọrụ Ile Ọbịa A Na-akwado {#supported-hospitality-types}
 
 - **Ụlọ oriri na ọṅụṅụ** — menu nri zuru oke
 - **Kafe** — menu kọfị na nri dị mfe
@@ -21,9 +21,9 @@ Theme Builder nwere ike ugbu a ịmepụta peeji menu ọkachamara, ahaziri nke 
 - **Ụgbọ Nri** — menu ọrụ nri na-agagharị
 - **Ụlọ biya na ụlọ mmanya vaịn** — menu ihe ọṅụṅụ nwere nkọwa
 
-## Nhazi Menu
+## Nhazi Menu {#menu-structure}
 
-### Otu Menu
+### Otu Menu {#menu-categories}
 
 A na-ahazi menu n'ime otu:
 
@@ -34,7 +34,7 @@ A na-ahazi menu n'ime otu:
 - **Ihe ọṅụṅụ** — ihe a na-aṅụ (nwere mmanya na enweghị mmanya)
 - **Nri pụrụ iche** — nri pụrụ iche kwa ụbọchị ma ọ bụ nke oge
 
-### Usoro Ihe Menu
+### Usoro Ihe Menu {#menu-item-format}
 
 Ihe menu ọ bụla gụnyere:
 
@@ -49,7 +49,7 @@ Ihe menu ọ bụla gụnyere:
 }
 ```
 
-#### Ubi Ihe
+#### Ubi Ihe {#item-fields}
 
 | Ubi | Ụdị | Nkọwa |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Ihe menu ọ bụla gụnyere:
 | `allergens` | array | Ihe na-akpalite nfụkasị a na-ahụkarị (akị, anụ mmiri nwere okpokoro, wdg.) |
 | `availability` | string | Mgbe ọ dị (Kwa ụbọchị, Nke oge, wdg.) |
 
-## Ịmepụta Menu Ọrụ Ile Ọbịa
+## Ịmepụta Menu Ọrụ Ile Ọbịa {#creating-hospitality-menus}
 
-### Nzọụkwụ 1: Nye Ozi Menu
+### Nzọụkwụ 1: Nye Ozi Menu {#step-1-provide-menu-information}
 
 Gwa Theme Builder gbasara menu gị:
 
@@ -71,7 +71,7 @@ Mepụta menu ụlọ oriri na ọṅụṅụ maka ụlọ oriri Italian m nwer
 nri pasta, nri isi, na nri ụtọ. Tinye ọnụahịa na nkọwa.
 ```
 
-### Nzọụkwụ 2: Theme Builder Na-emepụta Menu
+### Nzọụkwụ 2: Theme Builder Na-emepụta Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Na-ahazi ọnụahịa na nkọwa
 5. Na-agbakwunye ozi nri na ihe na-akpalite nfụkasị
 
-### Nzọụkwụ 3: Nyochaa ma Hazie
+### Nzọụkwụ 3: Nyochaa ma Hazie {#step-3-review-and-customize}
 
 Ị nwere ike:
 
@@ -91,9 +91,9 @@ Theme Builder:
 4. Melite nkọwa na ozi nri
 5. Gbanwee ịcha mma na nhazi
 
-## Nhọrọ Ngosipụta Menu
+## Nhọrọ Ngosipụta Menu {#menu-display-options}
 
-### Peeji Menu Zuru Oke
+### Peeji Menu Zuru Oke {#full-menu-page}
 
 Peeji raara onwe ya nye nke na-egosi menu gị zuru ezu:
 
@@ -102,7 +102,7 @@ Peeji raara onwe ya nye nke na-egosi menu gị zuru ezu:
 - Nhazi dabara maka ibipụta
 - Nhazi na-aza nke ọma na ekwentị
 
-### Wijet Menu
+### Wijet Menu {#menu-widget}
 
 Tinye ngalaba menu na peeji ndị ọzọ:
 
@@ -111,7 +111,7 @@ Tinye ngalaba menu na peeji ndị ọzọ:
 - Menu ihe ọṅụṅụ na peeji baa
 - Ngosipụta nri ụtọ na footer
 
-### PDF Menu
+### PDF Menu {#menu-pdf}
 
 Mepụta menu PDF a pụrụ ibudata:
 
@@ -120,9 +120,9 @@ Mepụta menu PDF a pụrụ ibudata:
 - Gụnyere onyonyo na nkọwa
 - Dị mfe ịkekọrịta na izipu email
 
-## Ozi Nri na Ihe Na-akpalite Nfụkasị
+## Ozi Nri na Ihe Na-akpalite Nfụkasị {#dietary-and-allergen-information}
 
-### Njirimara Nri
+### Njirimara Nri {#dietary-attributes}
 
 Kaa ihe akara na ozi nri:
 
@@ -134,7 +134,7 @@ Kaa ihe akara na ozi nri:
 - **Low-Carb** — carbohydrates belatara
 - **High-Protein** — bara ụba na protein
 
-### Ịdọ Aka ná Ntị Maka Ihe Na-akpalite Nfụkasị
+### Ịdọ Aka ná Ntị Maka Ihe Na-akpalite Nfụkasị {#allergen-warnings}
 
 Tinye ihe na-akpalite nfụkasị a na-ahụkarị:
 
@@ -147,9 +147,9 @@ Tinye ihe na-akpalite nfụkasị a na-ahụkarị:
 - **Gluten** — ọka wheat na ọka nwere gluten
 - **Sesame** — mkpụrụ sesame na mmanụ
 
-## Njikwa Menu
+## Njikwa Menu {#menu-management}
 
-### Imelite Ọnụahịa
+### Imelite Ọnụahịa {#updating-prices}
 
 Melite ọnụahịa menu n'ụzọ dị mfe:
 
@@ -159,7 +159,7 @@ Melite ọnụahịa menu n'ụzọ dị mfe:
 4. Chekwaa mgbanwe
 5. Mgbanwe ga-apụta ozugbo na saịtị gị
 
-### Ịgbakwunye Ihe Nke Oge
+### Ịgbakwunye Ihe Nke Oge {#adding-seasonal-items}
 
 Mepụta ụdị menu nke oge:
 
@@ -169,7 +169,7 @@ Mepụta ụdị menu nke oge:
 4. Hazie ụbọchị ịdị adị
 5. Gosipụta ya akpaghị aka n'oge ya
 
-### Ijikwa Nri Pụrụ Iche
+### Ijikwa Nri Pụrụ Iche {#managing-specials}
 
 Gosipụta nri pụrụ iche kwa ụbọchị ma ọ bụ kwa izu:
 
@@ -179,7 +179,7 @@ Gosipụta nri pụrụ iche kwa ụbọchị ma ọ bụ kwa izu:
 4. Melite kwa ụbọchị ma ọ bụ kwa izu
 5. Debe nri pụrụ iche ochie n'akwụkwọ nchekwa
 
-## Njikọ na Theme Builder
+## Njikọ na Theme Builder {#integration-with-theme-builder}
 
 Mgbe ị na-eji Theme Builder maka saịtị ọrụ ile ọbịa:
 
@@ -189,9 +189,9 @@ Mgbe ị na-eji Theme Builder maka saịtị ọrụ ile ọbịa:
 4. **Nkwalite ekwentị** — menu na-egosi nke ọma na ekwentị
 5. **Nkwalite SEO** — menu dị mma maka igwe nchọta
 
-## Omume Kachasị Mma
+## Omume Kachasị Mma {#best-practices}
 
-### Nhazi Menu
+### Nhazi Menu {#menu-design}
 
 - **Nhazi doro anya** — nhazi otu nwere ezi uche
 - **Nkọwa a na-agụ mfe** — na-akpali agụụ nri ma na-enye ozi
@@ -199,7 +199,7 @@ Mgbe ị na-eji Theme Builder maka saịtị ọrụ ile ọbịa:
 - **Foto ọkachamara** — onyonyo nri dị elu
 - **Oghere ọcha** — ejula peeji ahụ oke
 
-### Ọdịnaya
+### Ọdịnaya {#content}
 
 - **Nkọwa ziri ezi** — kọwaa ihe n'ụzọ ziri ezi
 - **Mee ka nri pụrụ iche pụta ìhè** — mee ka nri pụrụ iche pụta ìhè
@@ -207,7 +207,7 @@ Mgbe ị na-eji Theme Builder maka saịtị ọrụ ile ọbịa:
 - **Melite mgbe niile** — debe ọnụahịa na ihe ka ọ dị ugbu a
 - **Jiri asụsụ na-akpali agụụ nri** — mee ka ihe daa ụtọ n'ọnụ
 
-### Nnweta
+### Nnweta {#accessibility}
 
 - **Font a na-agụ mfe** — jiri ụdị mkpụrụedemede doro anya, dị mfe ọgụgụ
 - **Ọdịiche zuru oke** — hụ na ederede dị mfe ọgụgụ
@@ -215,9 +215,9 @@ Mgbe ị na-eji Theme Builder maka saịtị ọrụ ile ọbịa:
 - **Ịdọ aka ná ntị nfụkasị** — gosipụta ihe na-akpalite nfụkasị nke ọma
 - **Dabara na ekwentị** — nwalee na ngwaọrụ niile
 
-## Ihe Nlereanya
+## Ihe Nlereanya {#examples}
 
-### Nhazi Menu Ụlọ Oriri Na Ọṅụṅụ
+### Nhazi Menu Ụlọ Oriri Na Ọṅụṅụ {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Nhazi menu kafe
+### Nhazi menu kafe {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Njirimara metụtara
+## Njirimara metụtara {#related-features}
 
 - [Mepụta menu](../abilities/create-menu.md) — mepụta menu nsoroụzọ
 - [Ntuziaka imewe](./design-direction.md) — hazie imewe saịtị gị

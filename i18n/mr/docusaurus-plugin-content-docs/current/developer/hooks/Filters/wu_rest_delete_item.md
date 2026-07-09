@@ -4,11 +4,11 @@ title: Filter - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item
+# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 हा फिल्टर विनंती (request) पुढे जाण्याची परवानगी आहे की नाही हे ठरवतो.
 
-## पॅरामीटर्स
+## पॅरामीटर्स {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 | $rest_base | `array` | ॲन्टिटी स्लग् (Entity slug). |
 | $this | `\Base_Manager` | ऑब्जेक्ट इन्स्टन्स (Object instance). |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) मध्ये लाइन ४४० वर परिभाषित केले आहे.

@@ -4,11 +4,11 @@ title: 'Veiksmas - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 Leisti plugin kūrėjams pridėti valdiklius prie Network Dashboard Panel.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Leisti plugin kūrėjams pridėti valdiklius prie Network Dashboard Panel.
 | $screen | `\WP_Screen` | Ekrano objektas. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ultimate Multisite administratoriaus puslapio egzempliorius. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) 214 eilutėje

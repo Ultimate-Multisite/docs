@@ -3,15 +3,15 @@ title: 'Leson 5: Konsepsyon plan ou yo'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leson 5: Konsepsyon Plan Ou yo
+# Leson 5: Konsepsyon Plan Ou yo {#lesson-5-designing-your-plans}
 
 Nivo plan ou yo pa sèlman nivo pri -- yo se yon refleksyon sou fason kliyan nan nich ou yo fonksyone toutbon. Nan leson sa a ou pral konsevwa nivo pwodwi ki koresponn ak bezwen reyèl biznis kondisyon fizik yo nan diferan etap.
 
-## Kote Nou Te Rete
+## Kote Nou Te Rete {#where-we-left-off}
 
 FitSite gen twa modèl pare (Studio Essential, Gym Pro, Fitness Chain). Kounye a nou kreye plan yo ki detèmine sa kliyan yo jwenn aksè a ak sa yo peye.
 
-## Panse an Segman Kliyan
+## Panse an Segman Kliyan {#thinking-in-customer-segments}
 
 Erè pifò moun fè se konsevwa plan yo selon fonksyonalite teknik (depo, bandwidth, kantite paj). Kliyan nan nich ou yo pa panse konsa. Yon pwopriyetè jim panse ak sa li bezwen pou jere biznis li.
 
@@ -25,11 +25,11 @@ Pou estidyo kondisyon fizik yo, gen twa segman natirèl:
 
 Plan ou yo ta dwe koresponn ak segman sa yo, pa ak pakè fonksyonalite abitrè.
 
-## Kreye Plan FitSite yo
+## Kreye Plan FitSite yo {#creating-the-fitsite-plans}
 
 Ale nan **Ultimate Multisite > Products > Add Product** pou chak plan.
 
-### Plan 1: FitSite Starter -- $49/mwa
+### Plan 1: FitSite Starter -- $49/mwa {#plan-1-fitsite-starter----49month}
 
 **Sib**: Antrenè solo ak ti estidyo
 
@@ -59,7 +59,7 @@ Ale nan **Ultimate Multisite > Products > Add Product** pou chak plan.
 - Theme ou chwazi a: Force Activate
 - Tout lòt themes yo: Kache
 
-### Plan 2: FitSite Growth -- $99/mwa
+### Plan 2: FitSite Growth -- $99/mwa {#plan-2-fitsite-growth----99month}
 
 **Sib**: Jim etabli ki gen yon sèl lokal
 
@@ -85,7 +85,7 @@ Ale nan **Ultimate Multisite > Products > Add Product** pou chak plan.
 - Gwoup plan: FitSite Plans
 - Lòd pwodwi: 2
 
-### Plan 3: FitSite Pro -- $199/mwa
+### Plan 3: FitSite Pro -- $199/mwa {#plan-3-fitsite-pro----199month}
 
 **Sib**: Chèn kondisyon fizik ki gen plizyè lokal
 
@@ -109,7 +109,7 @@ Ale nan **Ultimate Multisite > Products > Add Product** pou chak plan.
 - Gwoup plan: FitSite Plans
 - Lòd pwodwi: 3
 
-## Mete Gwoup Plan an Kanpe
+## Mete Gwoup Plan an Kanpe {#setting-up-the-plan-group}
 
 Gwoup plan an asire kliyan yo ka sèlman upgrade oswa downgrade andedan fanmi plan FitSite la. Sou onglè **Up & Downgrades** chak plan:
 
@@ -118,7 +118,7 @@ Gwoup plan an asire kliyan yo ka sèlman upgrade oswa downgrade andedan fanmi pl
 
 Sa kreye yon chemen upgrade ki klè: Starter → Growth → Pro.
 
-## Ajoute Order Bumps
+## Ajoute Order Bumps {#adding-order-bumps}
 
 Order bumps se pwodwi siplemantè yo ofri pandan checkout. Pou FitSite, konsidere:
 
@@ -128,7 +128,7 @@ Order bumps se pwodwi siplemantè yo ofri pandan checkout. Pou FitSite, konsider
 
 Kreye sa yo kòm pwodwi kalite **Package** nan Ultimate Multisite epi asosye yo ak plan ki apwopriye yo.
 
-## Poukisa Estrikti Sa a Fonksyone
+## Poukisa Estrikti Sa a Fonksyone {#why-this-structure-works}
 
 - **Starter** retire baryè pou antre -- pri ba, òf senp, mete antrenè yo sou entènèt vit
 - **Growth** ajoute fonksyonalite jim yo mande toutbon -- rezèvasyon, galri, domèn pèsonalize
@@ -136,7 +136,7 @@ Kreye sa yo kòm pwodwi kalite **Package** nan Ultimate Multisite epi asosye yo 
 - **Order bumps** pèmèt kliyan yo pèsonalize san yo pa konplike plan prensipal yo
 - **Chemen upgrade klè** vle di kliyan yo grandi avèk ou olye pou yo ale
 
-## Rezo FitSite la Jiskaprezan
+## Rezo FitSite la Jiskaprezan {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Sa Nou Te Konstwi nan Leson Sa a
+## Sa Nou Te Konstwi nan Leson Sa a {#what-we-built-this-lesson}
 
 - **Twa nivo plan** ki koresponn ak segman reyèl biznis kondisyon fizik yo
 - **Blokaj fonksyonalite** avèk kontwòl plugin ak modèl Ultimate Multisite yo

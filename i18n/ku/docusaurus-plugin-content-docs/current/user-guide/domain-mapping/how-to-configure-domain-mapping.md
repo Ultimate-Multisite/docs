@@ -3,17 +3,17 @@ title: Nexşandina Domainê Çawa Saz Bikin
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Çawa Domain Mapping (v2) Veavakirin
+# Çawa Domain Mapping (v2) Veavakirin {#how-to-configure-domain-mapping-v2}
 
 _**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x e.**_
 
 Yek ji taybetmendiyên herî bihêz ên toreke premium ew e ku em dikarin ji xerîdarên xwe re şansê bidin ku domaineke asta jor bi malperên xwe ve girê bidin. Axir, kîjan profesyoneltir xuya dike: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) an [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ji ber vê yekê Ultimate Multisite ev taybetmendî di nav xwe de pêşkêş dike, bêyî ku hewcedariya pluginên aliyê sêyem hebe.
 
-## Domain mapping çi ye?
+## Domain mapping çi ye? {#whats-domain-mapping}
 
 Wekî ku navê wê jî dibêje, domain mapping şiyana ku Ultimate Multisite pêşkêş dike ye: daxwazek ji bo domaineke taybet bistîne û wê daxwazê bi malpera têkildar a di torê de, ku ew domaina taybet pê ve girêdayî ye, ve girê bide.
 
-### Çawa domain mapping li ser Tora xwe ya Ultimate Multisite saz bikin
+### Çawa domain mapping li ser Tora xwe ya Ultimate Multisite saz bikin {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Ji bo ku domain mapping bixebite, divê hûn hin mîhengan bikin. Xweşbextane, Ultimate Multisite karê giran ji bo we otomatîk dike, da ku hûn bi hêsanî daxwazan bicîh bînin.
 
@@ -45,7 +45,7 @@ Lê berî ku hûn dest bi girêdana domaina taybet bi yek ji binmalperên di tor
 
 ###
 
-### Piştrastkirin ku mîhengên DNS ên domainê rast veavakirî ne
+### Piştrastkirin ku mîhengên DNS ên domainê rast veavakirî ne {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Ji bo ku girêdan bixebite, divê hûn piştrast bikin ku domaina ku hûn dixwazin girê bidin ber bi IP addressa Tora we ve nîşan dide. Bihînin bîra xwe ku hûn hewceyî IP addressa Torê ne - IP addressa domaina ku Ultimate Multisite lê saz bûye - ne IP addressa domaina taybet ku hûn dixwazin girê bidin. Ji bo lêgerîna IP addressa domaineke taybet, em pêşniyar dikin ku wekî mînak biçin [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Ger hûn di xebitandina vê de zehmetî bibînin, **bi piştgiriya tomarvana dom
 
 Ger hûn plan dikin ku destûr bidin xerîdarên xwe domainên xwe bixwe girê bidin, ew ê vê beşê bixwe bikin. Ger nikaribin A Record biafirînin, wan ber bi pergala piştgiriya tomarvana wan ve rêberî bikin.
 
-### Girêdana navê domaina taybet wekî Super Admin
+### Girêdana navê domaina taybet wekî Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Dema ku hûn li ser tora xwe wekî super admin têketî ne, hûn dikarin bi hêsanî navên domainên taybet zêde bikin û rêve bibin bi çûna bin **Ultimate Multisite > Domain**.
 
@@ -93,7 +93,7 @@ Heke hûn li ser navê domainê bikirtînin, hûn ê karibin çend vebijêrkên 
 
 **Ewledar e?:** Her çiqas Ultimate Multisite berî çalakkirinê kontrol dike ka domain sertîfîkaya SSL heye an na, hûn dikarin bi destan hilbijêrin ku domain bi sertîfîkaya SSL an bê sertîfîkaya SSL were barkirin. Bala xwe bidin ku heke malper sertîfîkaya SSL tune be û hûn hewl bidin wê bi zorê bi SSL bar bikin, dibe ku xeletiyan bide we.
 
-### Mapkirina navê domaina taybet wek bikarhênerê subsite
+### Mapkirina navê domaina taybet wek bikarhênerê subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Rêveberên subsite jî dikarin ji dashboarda rêveberiya subsite ya xwe navên domainên taybet map bikin.
 
@@ -121,7 +121,7 @@ Paşê bikarhêner dikare li **Gava Piştre** bikirtîne û berdewam bike da ku 
 
 Kirtandina li ser **Zêdekirina Domainê** dê pêvajoya erêkirin û anîna agahiyên DNS ên domaina taybet dest pê bike.
 
-### Derbarê Hevdemkirina Domainê
+### Derbarê Hevdemkirina Domainê {#about-domain-syncing}
 
 Hevdemkirina Domainê pêvajoyek e ku Ultimate Multisite navê domaina taybet wek domaina add-on li hesabê hosting a we zêde dike **da ku mapkirina domainê bixebite**.
 

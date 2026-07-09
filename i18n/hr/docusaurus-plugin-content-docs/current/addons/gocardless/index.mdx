@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless plaćanje
 
 Omogućite svojim kupcima plaćanje članstava i proizvoda za Multisite Ultimate izravnim terećenjem putem GoCardless!
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Prenesite 'ultimate-multisite-gocardless' u direktorij '/wp-content/plugins/'
 2. Aktivirajte dodatak putem izbornika 'Dodaci' u WordPress
 3. Slijedite čarobnjak korak po korak kako biste postavili dodatak
 
-## Vodič za upotrebu
+## Vodič za upotrebu {#usage-guide}
 
 _GoCardless_ je pristupnik za plaćanje dostupan u **Europi i u UK-u** koji omogućuje plaćanja **izravnim terećenjem**.
 
@@ -29,7 +29,7 @@ Ovaj vodič objasnit će kako postaviti _GoCardless_ kako biste počeli prihvać
 
 _**Napomena: GoCardless radi samo sa sljedećim valutama:**_ **EUR, GBP, AUD, SEK i DKK.**
 
-## Instaliranje dodatka
+## Instaliranje dodatka {#installing-the-add-on}
 
 Prije svega, morat ćete instalirati GoCardless dodatak za Ultimate Multisite. To možete učiniti odlaskom na **Ultimate Multisite > Settings > Add-ons (na bočnoj traci)**. Zatim odaberite GoCardless dodatak na tom popisu.
 
@@ -37,7 +37,7 @@ Nakon što je dodatak instaliran i aktiviran, idite na **Ultimate Multisite > Se
 
 ![Postavke pristupnika za plaćanje](/img/config/settings-payment-gateways.png)
 
-## Dobivanje pristupnog tokena
+## Dobivanje pristupnog tokena {#getting-an-access-token}
 
 Izradite račun na _GoCardless_ (ili u _GoCardless_ sandboxu, ako ga želite **prvo testirati** , što se preporučuje). Zatim se, nakon prijave, pomaknite do stavke izbornika **Developers**.
 
@@ -61,7 +61,7 @@ Pazite da ga postavite u odgovarajuće polje. Ako je riječ o **live toke** **nu
 
 To je to za prvi korak. Zatim trebate postaviti webhook slušatelj.
 
-## Postavljanje webhook slušatelja
+## Postavljanje webhook slušatelja {#setting-up-the-webhook-listener}
 
 Kada se radi o pretplatama, Ultimate Multisite mora primati informacije o promjenama statusa pretplate, novim izvršenim plaćanjima i drugim sličnim stvarima.
 

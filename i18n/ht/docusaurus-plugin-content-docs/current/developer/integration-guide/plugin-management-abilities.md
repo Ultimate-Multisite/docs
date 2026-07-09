@@ -3,11 +3,11 @@ title: Kapasite pou jere ekstansyon
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kapasite Jesyon Plugin
+# Kapasite Jesyon Plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 vini ak **7 kapasite jesyon plugin** ke asistan AI a ka envoke pandan yon konvèsasyon. Kapasite sa yo bay kontwòl pwogramatik sou plugin WordPress ki enstale atravè [Sistèm Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Apèsi sou Kapasite yo
+## Apèsi sou Kapasite yo {#abilities-overview}
 
 | Kapasite | Slug | Deskripsyon |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 vini ak **7 kapasite jesyon plugin** ke asistan AI a ka e
 | Enstale Plugin | `install_plugin` | Deplwaye yon plugin ki nan sandbox nan repètwa plugin WordPress vivan an. |
 | Aktive Plugin | `activate_plugin` | Aktive yon plugin ki nan sandbox nan anviwònman sandbox wp-env la. |
 
-## API Enstalatè Plugin
+## API Enstalatè Plugin {#plugin-installer-api}
 
 Enstalatè plugin nan jere operasyon sistèm fichye lè l ap deplwaye oswa retire plugin yo. Konpòtman kle yo:
 
@@ -28,7 +28,7 @@ Enstalatè plugin nan jere operasyon sistèm fichye lè l ap deplwaye oswa retir
 - **Mizajou**: Ranplase fichye plugin ki deja egziste yo. Dezaktive plugin nan anvan ekriti pou evite erè eta pasyèl.
 - **Efase dapre slug**: Lokalize repètwa plugin nan dapre slug, dezaktive li atravè tout sit yo, apre sa retire repètwa a.
 
-### Anrejistre yon Custom Install Handler
+### Anrejistre yon Custom Install Handler {#registering-a-custom-install-handler}
 
 Ou ka branche nan sik lavi enstalasyon an lè w itilize aksyon `gratis_ai_plugin_installer_before_install` ak `gratis_ai_plugin_installer_after_install` yo:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Rejis Ekosistèm
+## Rejis Ekosistèm {#ecosystem-registry}
 
 Kapasite yo anrejistre atravè **rejis ekosistèm plugin** nan. Rejis la matche slug kapasite yo ak klas handler yo epi ekspoze yo bay dispatchè zouti AI agent lan.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Entegrasyon HookScanner
+## Entegrasyon HookScanner {#hookscanner-integration}
 
 Kapasite `create_plugin` ak `update_plugin` yo otomatikman kouri **HookScanner** sou kòd ki fèk jenere a. HookScanner retounen yon lis hook aksyon ak filtè WordPress plugin nan anrejistre.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner sote repètwa `vendor/` ak `node_modules/` yo otomatikman.
 
-## Achitekti Travay Async
+## Achitekti Travay Async {#async-job-architecture}
 
 Operasyon plugin ki pran tan (jenere, enstale) yo voye kòm **travay async** ak swivi pwogrè an dirèk. Entèfas chat AI a fè sondaj pou pwogrè epi li difize mizajou estati bay itilizatè a:
 

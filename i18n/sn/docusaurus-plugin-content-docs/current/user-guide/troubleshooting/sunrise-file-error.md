@@ -3,7 +3,7 @@ title: Kutanga Kufamba Kwemafayere
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Kufungurukutsa File ya Sunrise
+# Kufungurukutsa File ya Sunrise {#error-installing-the-sunrise-file}
 
 File ya `sunrise.php` ndiyo file yakakosha kuitika neWordPress inoziva kuti iye ine. Kuti WordPress inezive file ya `sunrise.php`, inofanira kuwanzika mune **wp-content folder**.
 

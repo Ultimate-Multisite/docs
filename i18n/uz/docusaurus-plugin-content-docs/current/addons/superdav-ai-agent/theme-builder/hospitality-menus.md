@@ -3,15 +3,15 @@ title: Mehmondo‘stlik menyulari
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Mehmondo‘stlik menyulari
+# Mehmondo‘stlik menyulari {#hospitality-menus}
 
 **Hospitality Menus** funksiyasi Theme Builder-ga tuzilmali taom va ichimlik menyu sahifalarini bevosita WordPress saytingizga yaratish va joylashtirish imkonini beradi.
 
-## Umumiy ko‘rinish
+## Umumiy ko‘rinish {#overview}
 
 Theme Builder endi restoranlar, kafelar, barlar va catering xizmatlari kabi mehmondo‘stlik bizneslari uchun professional, tuzilmali menyu sahifalarini yaratishi mumkin. Bu menyular saytingiz dizayniga to‘liq integratsiya qilinadi va ularni oson yangilash hamda boshqarish mumkin.
 
-## Qo‘llab-quvvatlanadigan mehmondo‘stlik turlari
+## Qo‘llab-quvvatlanadigan mehmondo‘stlik turlari {#supported-hospitality-types}
 
 - **Restoranlar** — to‘liq xizmat ko‘rsatiladigan ovqatlanish menyulari
 - **Kafelar** — qahva va yengil taomlar menyulari
@@ -21,9 +21,9 @@ Theme Builder endi restoranlar, kafelar, barlar va catering xizmatlari kabi mehm
 - **Food Trucklar** — ko‘chma ovqat xizmati menyulari
 - **Pivo zavodlari va vinochilik xo‘jaliklari** — tavsiflari bilan ichimlik menyulari
 
-## Menyu tuzilmasi
+## Menyu tuzilmasi {#menu-structure}
 
-### Menyu toifalari
+### Menyu toifalari {#menu-categories}
 
 Menyular toifalarga ajratiladi:
 
@@ -34,7 +34,7 @@ Menyular toifalarga ajratiladi:
 - **Ichimliklar** — ichimliklar (alkogolli va alkogolsiz)
 - **Maxsus takliflar** — kunlik yoki mavsumiy maxsus takliflar
 
-### Menyu elementi formati
+### Menyu elementi formati {#menu-item-format}
 
 Har bir menyu elementi quyidagilarni o‘z ichiga oladi:
 
@@ -49,7 +49,7 @@ Har bir menyu elementi quyidagilarni o‘z ichiga oladi:
 }
 ```
 
-#### Element maydonlari
+#### Element maydonlari {#item-fields}
 
 | Maydon | Tur | Tavsif |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Har bir menyu elementi quyidagilarni o‘z ichiga oladi:
 | `allergens` | array | Keng tarqalgan allergenlar (yong‘oqlar, dengiz qisqichbaqalari va h.k.) |
 | `availability` | string | Qachon mavjudligi (kunlik, mavsumiy va h.k.) |
 
-## Mehmondo‘stlik menyularini yaratish
+## Mehmondo‘stlik menyularini yaratish {#creating-hospitality-menus}
 
-### 1-qadam: Menyu ma’lumotlarini taqdim eting
+### 1-qadam: Menyu ma’lumotlarini taqdim eting {#step-1-provide-menu-information}
 
 Theme Builder-ga menyuingiz haqida ayting:
 
@@ -70,7 +70,7 @@ Theme Builder-ga menyuingiz haqida ayting:
 Italiyan restoranım uchun appetizerlar, makaron taomlari, asosiy taomlar va desertlardan iborat restoran menyusini yarating. Narxlar va tavsiflarni kiriting.
 ```
 
-### 2-qadam: Theme Builder menyuni yaratadi
+### 2-qadam: Theme Builder menyuni yaratadi {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -80,7 +80,7 @@ Theme Builder:
 4. Narxlar va tavsiflarni formatlaydi
 5. Parhez va allergen ma’lumotlarini qo‘shadi
 
-### 3-qadam: Ko‘rib chiqing va moslang
+### 3-qadam: Ko‘rib chiqing va moslang {#step-3-review-and-customize}
 
 Siz quyidagilarni qilishingiz mumkin:
 
@@ -90,9 +90,9 @@ Siz quyidagilarni qilishingiz mumkin:
 4. Tavsiflar va parhez ma’lumotlarini yangilash
 5. Uslub va joylashuvni sozlash
 
-## Menyuni ko‘rsatish variantlari
+## Menyuni ko‘rsatish variantlari {#menu-display-options}
 
-### To‘liq menyu sahifasi
+### To‘liq menyu sahifasi {#full-menu-page}
 
 To‘liq menyuingizni ko‘rsatadigan alohida sahifa:
 
@@ -101,7 +101,7 @@ To‘liq menyuingizni ko‘rsatadigan alohida sahifa:
 - Chop etishga qulay joylashuv
 - Mobil qurilmalarga mos dizayn
 
-### Menyu vidjeti
+### Menyu vidjeti {#menu-widget}
 
 Menyu bo‘limlarini boshqa sahifalarga joylashtiring:
 
@@ -110,7 +110,7 @@ Menyu bo‘limlarini boshqa sahifalarga joylashtiring:
 - Bar sahifasida ichimlik menyusi
 - Footer-da desert namoyishi
 
-### Menyu PDF
+### Menyu PDF {#menu-pdf}
 
 Yuklab olinadigan PDF menyu yarating:
 
@@ -119,9 +119,9 @@ Yuklab olinadigan PDF menyu yarating:
 - Rasmlar va tavsiflarni o‘z ichiga oladi
 - Ulashish va email orqali yuborish oson
 
-## Parhez va allergen ma’lumotlari
+## Parhez va allergen ma’lumotlari {#dietary-and-allergen-information}
 
-### Parhez atributlari
+### Parhez atributlari {#dietary-attributes}
 
 Elementlarni parhez ma’lumotlari bilan belgilang:
 
@@ -133,7 +133,7 @@ Elementlarni parhez ma’lumotlari bilan belgilang:
 - **Low-Carb** — uglevodlar kamaytirilgan
 - **High-Protein** — oqsilga boy
 
-### Allergen ogohlantirishlari
+### Allergen ogohlantirishlari {#allergen-warnings}
 
 Keng tarqalgan allergenlarni kiriting:
 
@@ -146,9 +146,9 @@ Keng tarqalgan allergenlarni kiriting:
 - **Gluten** — bug‘doy va gluten saqlovchi donlar
 - **Kunjut** — kunjut urug‘lari va yog‘i
 
-## Menyu boshqaruvi
+## Menyu boshqaruvi {#menu-management}
 
-### Narxlarni yangilash
+### Narxlarni yangilash {#updating-prices}
 
 Menyu narxlarini oson yangilang:
 
@@ -158,7 +158,7 @@ Menyu narxlarini oson yangilang:
 4. O‘zgarishlarni saqlang
 5. O‘zgarishlar saytingizda darhol ko‘rinadi
 
-### Mavsumiy elementlarni qo‘shish
+### Mavsumiy elementlarni qo‘shish {#adding-seasonal-items}
 
 Mavsumiy menyu variantlarini yarating:
 
@@ -168,7 +168,7 @@ Mavsumiy menyu variantlarini yarating:
 4. Mavjudlik sanalarini rejalashtiring
 5. Mavsum davomida avtomatik ko‘rsating
 
-### Maxsus takliflarni boshqarish
+### Maxsus takliflarni boshqarish {#managing-specials}
 
 Kunlik yoki haftalik maxsus takliflarni ko‘rsating:
 
@@ -178,7 +178,7 @@ Kunlik yoki haftalik maxsus takliflarni ko‘rsating:
 4. Kunlik yoki haftalik yangilang
 5. Eski maxsus takliflarni arxivlang
 
-## Theme Builder bilan integratsiya
+## Theme Builder bilan integratsiya {#integration-with-theme-builder}
 
 Mehmondo‘stlik saytlari uchun Theme Builder-dan foydalanganda:
 
@@ -188,9 +188,9 @@ Mehmondo‘stlik saytlari uchun Theme Builder-dan foydalanganda:
 4. **Mobil optimallashtirish** — menyular telefonlarda chiroyli ko‘rinadi
 5. **SEO optimallashtirish** — menyular qidiruv tizimlariga mos
 
-## Eng yaxshi amaliyotlar
+## Eng yaxshi amaliyotlar {#best-practices}
 
-### Menyu dizayni
+### Menyu dizayni {#menu-design}
 
 - **Aniq tashkil etish** — mantiqiy toifa tuzilmasi
 - **O‘qilishi oson tavsiflar** — ishtahani ochuvchi va ma’lumotli
@@ -198,7 +198,7 @@ Mehmondo‘stlik saytlari uchun Theme Builder-dan foydalanganda:
 - **Professional fotosuratlar** — yuqori sifatli taom rasmlari
 - **Bo‘sh joy** — sahifani haddan tashqari to‘ldirmang
 
-### Kontent
+### Kontent {#content}
 
 - **Aniq tavsiflar** — elementlarni aniq tavsiflang
 - **Maxsus takliflarni ajratib ko‘rsatish** — maxsus takliflar ko‘zga tashlansin
@@ -206,7 +206,7 @@ Mehmondo‘stlik saytlari uchun Theme Builder-dan foydalanganda:
 - **Muntazam yangilang** — narxlar va elementlarni dolzarb saqlang
 - **Ishtahani ochuvchi tildan foydalaning** — elementlar mazali eshitilsin
 
-### Maxsus imkoniyatlar
+### Maxsus imkoniyatlar {#accessibility}
 
 - **O‘qilishi oson shriftlar** — aniq, o‘qilishi qulay shriftlardan foydalaning
 - **Yetarli kontrast** — matn o‘qilishi mumkinligiga ishonch hosil qiling
@@ -214,9 +214,9 @@ Mehmondo‘stlik saytlari uchun Theme Builder-dan foydalanganda:
 - **Allergen ogohlantirishlari** — allergenlarni yaqqol ko‘rsating
 - **Mobilga mos** — barcha qurilmalarda sinab ko‘ring
 
-## Misollar
+## Misollar {#examples}
 
-### Restoran menyusi tuzilmasi
+### Restoran menyusi tuzilmasi {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -240,7 +240,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Kafe menyusi tuzilmasi
+### Kafe menyusi tuzilmasi {#cafe-menu-structure}
 
 ```
 Coffee
@@ -259,7 +259,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Tegishli xususiyatlar
+## Tegishli xususiyatlar {#related-features}
 
 - [Menyu yaratish](../abilities/create-menu.md) — navigatsiya menyularini yarating
 - [Dizayn yo‘nalishi](./design-direction.md) — saytingiz dizaynini moslashtiring

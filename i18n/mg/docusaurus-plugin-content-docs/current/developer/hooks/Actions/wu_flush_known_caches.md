@@ -4,10 +4,10 @@ title: Hetsika - wu_flush_known_caches
 sidebar_label: wu_flush_known_caches
 _i18n_hash: bfe84286e3bd8d31846f6800c0954148
 ---
-# Hetsika: wu_flush_known_caches
+# Hetsika: wu_flush_known_caches {#action-wuflushknowncaches}
 
 Hook mankany amin'ny fanadiovana fanampiny
 
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin'ny [`inc/managers/class-cache-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-cache-manager.php#L49) amin'ny andalana 49

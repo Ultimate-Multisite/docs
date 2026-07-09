@@ -3,13 +3,13 @@ title: Ngranggepake Paket
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Turunkan paket (v2)
+# Turunkan paket (v2) {#downgrading-a-plan-v2}
 
 _**CATATAN PENTING: Artikel iki merujuk pada Ultimate Multisite versi 2.x.**_
 
 Turunkan paket atau langganan iku tindakan sing lumrah ditindakake dening klienmu yen duwe anggaran terbatas utawa wis mutusake yen ora butuh akeh sumber daya kanggo ngoperasik subsite-e.
 
-## Cara menurunkan paket
+## Cara menurunkan paket {#how-to-downgrade-a-plan}
 
 Klienmu bisa ngrusak (downgrade) paket kapan wae kanthi mlebu akun admin subsite-e lan klik **Change** ing bawah halaman akuné.
 
@@ -25,7 +25,7 @@ Kanggo lanjut, user mung perlu klik tombol **Complete Checkout**. Banjur bakal d
 
 ![Halaman akun sing nuduh banner perubahan keanggotaan tertunda](/img/account-page/pending-change.png)
 
-### Apa sing kedadeyan nalika user ngrusak paketé
+### Apa sing kedadeyan nalika user ngrusak paketé {#what-happens-when-a-user-downgrades-their-plan}
 
 Penting kanggo dicatat yen ngrusak paket ora ngowahi konfigurasi sing wis ana ing subsite user.
 
@@ -37,7 +37,7 @@ Kanggo postingan sing luwih akeh tinimbang batas sing diatur ing paket, sampeyan
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Apa sing kedadeyan karo pembayaran
+### Apa sing kedadeyan karo pembayaran {#what-happens-to-the-payment}
 
 Ing versi 2.0, ora perlu maneh diatur babagan proration (penyesuaian tarif) ing pembayaran.
 

@@ -3,11 +3,11 @@ title: 设计系统美学技能
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# 设计系统美学技能
+# 设计系统美学技能 {#design-system-aesthetics-skill}
 
 **设计系统美学技能**是一个指导性的方法，用于完善您网站的视觉识别度。它帮助您就定义设计系统的排版、颜色、间距和动效（motion）等设计令牌（tokens）做出一致的决策。
 
-## 什么是设计系统美学？
+## 什么是设计系统美学？ {#what-is-design-system-aesthetics}
 
 设计系统美学是一个结构化的技能，涵盖以下内容：
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 这些决策都会记录在您主题的 `theme.json` 文件中，从而创建一个统一的视觉系统。
 
-## 为什么使用设计系统美学？
+## 为什么使用设计系统美学？ {#why-use-design-system-aesthetics}
 
-### 一致性
+### 一致性 {#consistency}
 
 设计系统确保了：
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 间距遵循可预测的模式
 - 动画感觉统一协调
 
-### 效率
+### 效率 {#efficiency}
 
 您无需逐页做出设计决策，而是可以：
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 在所有地方应用它们
 - 通过更改一个值实现全局更新
 
-### 灵活性
+### 灵活性 {#flexibility}
 
 您可以：
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 尝试不同的美学风格
 - 在不断发展的同时保持品牌一致性
 
-## 触发设计系统美学技能
+## 触发设计系统美学技能 {#triggering-the-design-system-aesthetics-skill}
 
-### 手动激活
+### 手动激活 {#manual-activation}
 
 您可以在任何时候启动此技能：
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "引导我完成设计系统决策"
 ```
 
-### 自动建议
+### 自动建议 {#automatic-suggestions}
 
 当您：
 
@@ -80,9 +80,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 代理可能会建议使用此技能。
 
-## 设计系统美学流程
+## 设计系统美学流程 {#the-design-system-aesthetics-process}
 
-### 步骤 1：排版（Typography）
+### 步骤 1：排版（Typography） {#step-1-typography}
 
 代理会询问您的字体选择：
 
@@ -112,7 +112,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - **字重比例（Weight scale）**: 字体字重（regular, medium, bold 等）
 - **行高（Line height）**: 用于提高可读性的行间距
 
-### 步骤 2：颜色调色板（Color Palette）
+### 步骤 2：颜色调色板（Color Palette） {#step-2-color-palette}
 
 ```
 让我们定义您的颜色调色板。
@@ -142,7 +142,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 语义色（成功、警告、错误）
 - 悬停和激活状态
 
-### 步骤 3：间距（Spacing）
+### 步骤 3：间距（Spacing） {#step-3-spacing}
 
 ```
 您想要多少呼吸空间？
@@ -164,7 +164,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 比例：xs, sm, md, lg, xl, 2xl
 - 用于内边距、外边距、间隙的具体值
 
-### 步骤 4：边框和阴影（Borders and Shadows）
+### 步骤 4：边框和阴影（Borders and Shadows） {#step-4-borders-and-shadows}
 
 ```
 视觉深度和定义：
@@ -187,7 +187,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 用于提升级别的阴影令牌
 - 边框宽度令牌
 
-### 步骤 5：动效和动画（Motion and Animation）
+### 步骤 5：动效和动画（Motion and Animation） {#step-5-motion-and-animation}
 
 ```
 您的网站在交互时应该感觉如何？
@@ -209,9 +209,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 缓动函数（ease-in, ease-out, ease-in-out）
 - 用于常见交互的动画关键帧
 
-## 应用设计系统美学
+## 应用设计系统美学 {#applying-design-system-aesthetics}
 
-### 自动应用
+### 自动应用 {#automatic-application}
 
 完成此技能后，代理会：
 
@@ -220,7 +220,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 3. 重新生成块样式以匹配新的系统
 4. 激活更新后的主题
 
-### 手动应用
+### 手动应用 {#manual-application}
 
 您也可以直接编辑 `theme.json`：
 
@@ -259,9 +259,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 }
 ```
 
-## 查看您的设计系统
+## 查看您的设计系统 {#viewing-your-design-system}
 
-### 询问代理
+### 询问代理 {#ask-the-agent}
 
 ```
 "展示我的设计系统"
@@ -275,13 +275,13 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 代理将显示您的排版、颜色、间距和其他令牌。
 
-### 查看 theme.json
+### 查看 theme.json {#view-themejson}
 
 在文本编辑器中打开 `/wp-content/themes/[theme-name]/theme.json` 即可查看原始令牌定义。
 
-## 更新您的设计系统
+## 更新您的设计系统 {#updating-your-design-system}
 
-### 快速更新
+### 快速更新 {#quick-updates}
 
 要求代理进行特定更改：
 
@@ -301,7 +301,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "把标题字体改成衬线体"
 ```
 
-### 全面重设计
+### 全面重设计 {#full-redesign}
 
 重新运行设计系统美学技能：
 
@@ -311,7 +311,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 这将引导您再次完成所有决策，从您当前的数值开始。
 
-### 部分更新
+### 部分更新 {#partial-updates}
 
 更新特定方面：
 
@@ -319,15 +319,15 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "只更新颜色调色板，其他保持不变"
 ```
 
-## 设计系统最佳实践
+## 设计系统最佳实践 {#design-system-best-practices}
 
-### 一致性
+### 一致性 {#consistency-1}
 
 - 在所有地方使用相同的令牌
 - 不要创建一次性的颜色或尺寸
 - 参考令牌而不是硬编码值
 
-### 命名
+### 命名 {#naming}
 
 使用清晰、语义化的名称：
 
@@ -337,7 +337,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### 可扩展性
+### 可扩展性 {#scalability}
 
 设计您的系统以实现扩展：
 
@@ -345,7 +345,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 创建比例（xs, sm, md, lg, xl）而不是任意值
 - 为未来的添加做好规划
 
-### 文档化
+### 文档化 {#documentation}
 
 记录您的设计系统：
 
@@ -353,9 +353,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 何时使用每个令牌
 - 例外情况和边缘情况
 
-## 常见设计系统模式
+## 常见设计系统模式 {#common-design-system-patterns}
 
-### 现代极简风（Modern Minimalist）
+### 现代极简风（Modern Minimalist） {#modern-minimalist}
 
 - 无衬线体排版（Inter, Helvetica）
 - 有限的颜色调色板（2-3 种颜色）
@@ -363,7 +363,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 微妙的阴影
 - 平滑、快速的动画
 
-### 温馨友好风（Warm and Friendly）
+### 温馨友好风（Warm and Friendly） {#warm-and-friendly}
 
 - 衬线体和无衬线体的混合使用
 - 温暖的颜色调色板（橙色、暖灰色）
@@ -371,7 +371,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 柔和的阴影
 - 活泼的动画
 
-### 专业企业风（Professional Corporate）
+### 专业企业风（Professional Corporate） {#professional-corporate}
 
 - 简洁的无衬线体（Roboto, Open Sans）
 - 带有强调色的中性调色板
@@ -379,7 +379,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 极简的阴影
 - 微妙的过渡效果
 
-### 创意大胆风（Creative and Bold）
+### 创意大胆风（Creative and Bold） {#creative-and-bold}
 
 - 独特的排版
 - 大胆的颜色调色板
@@ -387,7 +387,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 强烈的阴影
 - 明显的动画
 
-## 故障排除
+## 故障排除 {#troubleshooting}
 
 **我的设计系统更改没有显示**
 - 清除浏览器缓存
@@ -405,7 +405,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 手动编辑 `theme.json` 到之前的数值
 - 使用不同的选择重新运行此技能
 
-## 下一步
+## 下一步 {#next-steps}
 
 定义了设计系统后：
 

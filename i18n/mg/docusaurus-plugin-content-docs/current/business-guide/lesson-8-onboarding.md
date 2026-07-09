@@ -3,15 +3,15 @@ title: 'Lesona 8: Fampidirana ny mpanjifa'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lesona 8: Fampidirana ny Mpanjifa
+# Lesona 8: Fampidirana ny Mpanjifa {#lesson-8-customer-onboarding}
 
 Ny mampisoratra anarana mpanjifa dia antsasaky ny asa ihany. Raha miditra izy ireo, mahatsiaro ho very hevitra, ary tsy miverina intsony, dia very izy ireo. Ity lesona ity dia mamolavola ny traikefa izay manova fisoratana anarana vaovao ho mpanjifa mavitrika sy mandray anjara.
 
-## Izay Nijanonaantsika
+## Izay Nijanonaantsika {#where-we-left-off}
 
 FitSite dia efa manana marika feno miaraka amin’ny fizotry ny checkout miasa. Ankehitriny dia hifantoka amin’izay mitranga isika rehefa vitan’ny tompon’ny studio fanatanjahan-tena ny fisoratana anarana ary tonga voalohany amin’ny site vaovaony izy.
 
-## Nahoana no Zava-dehibe ny Fampidirana
+## Nahoana no Zava-dehibe ny Fampidirana {#why-onboarding-matters}
 
 Ny 30 minitra voalohany aorian’ny fisoratana anarana no mamaritra raha hijanona na hiala ny mpanjifa. Tompon’ny studio fanatanjahan-tena izay:
 
@@ -21,9 +21,9 @@ Ny 30 minitra voalohany aorian’ny fisoratana anarana no mamaritra raha hijanon
 
 Ny maodely niche-nao (Lesona 4) no mikarakara ny teboka voalohany. Ity lesona ity no mikarakara ny faharoa.
 
-## Ny Traikefa Fidirana Voalohany
+## Ny Traikefa Fidirana Voalohany {#the-first-login-experience}
 
-### Widget Dashboard Fandraisana
+### Widget Dashboard Fandraisana {#welcome-dashboard-widget}
 
 Mamoròna widget dashboard manokana izay mandray ny mpanjifa vaovao ary mitarika azy ireo amin’ny setup. Tokony hiseho miharihary izany rehefa miditra voalohany izy ireo.
 
@@ -37,7 +37,7 @@ Mamoròna widget dashboard manokana izay mandray ny mpanjifa vaovao ary mitarika
 
 Ny dingana tsirairay dia mampifandray mivantana amin’ny pejy na firafitra mifandraika. Tsy mila mikaroka ao anaty menio.
 
-### Ataovy Tsotra ny Dashboard
+### Ataovy Tsotra ny Dashboard {#simplify-the-dashboard}
 
 Tsy mila mahita ny singa menio WordPress rehetra ny mpanjifa vaovao. Diniho ny:
 
@@ -47,29 +47,29 @@ Tsy mila mahita ny singa menio WordPress rehetra ny mpanjifa vaovao. Diniho ny:
 
 Ny addon [Mpitantana Plugin & Theme](/addons/plugin-and-theme-manager) dia afaka manampy amin’ny fifehezana izay hitan’ny mpanjifa.
 
-## Andiana Email Fandraisana
+## Andiana Email Fandraisana {#welcome-email-sequence}
 
 Tsy ampy ny email fandraisana tokana. Mametraha andiany iray izay mitarika ny mpanjifa mandritra ny herinandro voalohany:
 
-### Email 1: Fandraisana (Avy hatrany aorian’ny fisoratana anarana)
+### Email 1: Fandraisana (Avy hatrany aorian’ny fisoratana anarana) {#email-1-welcome-immediately-after-signup}
 
 - Lohahevitra: "Tongasoa eto amin’ny FitSite -- velona ny tranokalan’ny studio-nao"
 - Votoaty: Rohy fidirana, dingana fanombohana haingana, rohy mankany amin’ny loharanom-panampiana
 - Feo: Faly, mampahery, manokana ho an’ny fanatanjahan-tena
 
-### Email 2: Fandresena Haingana (Andro 1)
+### Email 2: Fandresena Haingana (Andro 1) {#email-2-quick-wins-day-1}
 
 - Lohahevitra: "Zavatra 3 atao voalohany amin’ny FitSite-nao"
 - Votoaty: Ampio ny logo-nao, havaozy ny sary hero ao amin’ny pejy fandraisana, ampio ny fandaharam-pianaranao
 - Ampidiro sary pikantsary mampiseho mazava tsara izay tsindriana
 
-### Email 3: Ataovy ho Anao (Andro 3)
+### Email 3: Ataovy ho Anao (Andro 3) {#email-3-make-it-yours-day-3}
 
 - Lohahevitra: "Ataovy miavaka ny site fanatanjahan-tenanao"
 - Votoaty: Amboary ny loko, ampio sarin’ny mpanazatra, soraty ny tantaran’ny studio-nao
 - Rohy mankany amin’ny ohatra amin’ireo site fanatanjahan-tena tena tsara eo amin’ny sehatra
 
-### Email 4: Alefaso Mivantana (Andro 7)
+### Email 4: Alefaso Mivantana (Andro 7) {#email-4-go-live-day-7}
 
 - Lohahevitra: "Vonona hizara ny FitSite-nao amin’izao tontolo izao ve ianao?"
 - Votoaty: Lisitra fanamarinana izay hohamarinina alohan’ny fizarana, fomba fampifandraisana domain manokana (raha ao amin’ny Growth/Pro), torohevitra fizarana ara-tsosialy
@@ -78,11 +78,11 @@ Tsy ampy ny email fandraisana tokana. Mametraha andiany iray izay mitarika ny mp
 Ampiasao ny [Webhooks](/user-guide/integrations/webhooks) na [Zapier](/user-guide/integrations/zapier) hanetsika ireo email ireo amin’ny alalan’ny sehatra email marketing-nao. Manome anao fifehezana bebe kokoa amin’ny fotoana fandefasana izany ary mamela anao hanara-maso ny fandraisana anjara.
 :::
 
-## Loharanom-panampiana
+## Loharanom-panampiana {#help-resources}
 
 Mamoròna votoaty fanampiana manokana ho an’ny niche izay mamaly ireo fanontaniana tena apetraky ny tompon’ny studio fanatanjahan-tena:
 
-### Lahatsoratra Knowledge Base
+### Lahatsoratra Knowledge Base {#knowledge-base-articles}
 
 - "Ahoana ny fanavaozana ny fandaharam-pianaranao"
 - "Fanampiana sy fanitsiana ny mombamomba ny mpanazatra"
@@ -92,7 +92,7 @@ Mamoròna votoaty fanampiana manokana ho an’ny niche izay mamaly ireo fanontan
 
 Soraty ho an’ny mpampiasa tsy teknika ireo. Mampiasà sary pikantsary. Ialao ny jargon WordPress.
 
-### Video Walkthroughs
+### Video Walkthroughs {#video-walkthroughs}
 
 Fandraisam-peo efijery fohy (2-3 minitra) mampiseho:
 
@@ -103,7 +103,7 @@ Fandraisam-peo efijery fohy (2-3 minitra) mampiseho:
 
 Tsy voatery ho famokarana voakolokolo be ireo. Ny mazava, manampy, ary manokana ho an’ny niche no zava-dehibe.
 
-## Ny Pejy Account
+## Ny Pejy Account {#the-account-page}
 
 Ultimate Multisite dia ahitana [Pejy Account](/user-guide/client-management/account-page) atrehin’ny mpanjifa izay itantanan’ny mpanjifa ny subscription-ny. Amboary izany mba:
 
@@ -112,7 +112,7 @@ Ultimate Multisite dia ahitana [Pejy Account](/user-guide/client-management/acco
 - Hanome tantaran’ny faktiora sy fisintomana invoice
 - Hampifandray amin’ny loharanom-panampiana
 
-## Fandrefesana ny Fahombiazan’ny Fampidirana
+## Fandrefesana ny Fahombiazan’ny Fampidirana {#measuring-onboarding-success}
 
 Araho ireto famantarana ireto hahafantarana raha mandeha ny onboarding-nao:
 
@@ -121,7 +121,7 @@ Araho ireto famantarana ireto hahafantarana raha mandeha ny onboarding-nao:
 - **Tikety fanohanana avy amin’ny mpanjifa vaovao**: Ny habetsahana avo dia midika fa misy banga ny onboarding-nao
 - **Fiovam-po avy amin’ny trial ho paid**: Raha manolotra trial ianao, firy isan-jato no miova?
 
-## Ny FitSite Network Hatramin’izao
+## Ny FitSite Network Hatramin’izao {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Izay Natsangantsika Tamin’ity Lesona Ity
+## Izay Natsangantsika Tamin’ity Lesona Ity {#what-we-built-this-lesson}
 
 - **Traikefa fidirana voalohany misy fitarihana** miaraka amin’ny widget Quick Start
 - **Dashboard tsotsotra** mifantoka amin’ny asa fitantanana site fanatanjahan-tena

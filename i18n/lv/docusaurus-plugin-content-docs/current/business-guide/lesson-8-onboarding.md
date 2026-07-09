@@ -3,15 +3,15 @@ title: 'Nodarbība 8: Klientu ievadapmācība'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# 8. nodarbība: Klientu ievadapmācība
+# 8. nodarbība: Klientu ievadapmācība {#lesson-8-customer-onboarding}
 
 Panākt, lai klients reģistrējas, ir tikai puse darba. Ja viņš piesakās, jūtas apjucis un nekad neatgriežas, jūs viņu esat zaudējuši. Šajā nodarbībā tiek veidota pieredze, kas jaunu reģistrāciju pārvērš aktīvā, iesaistītā klientā.
 
-## Kur mēs palikām
+## Kur mēs palikām {#where-we-left-off}
 
 FitSite ir pilnībā zīmolots, ar strādājošu checkout plūsmu. Tagad pievērsīsimies tam, kas notiek pēc tam, kad fitnesa studijas īpašnieks pabeidz reģistrāciju un pirmo reizi nonāk savā jaunajā vietnē.
 
-## Kāpēc ievadapmācība ir svarīga
+## Kāpēc ievadapmācība ir svarīga {#why-onboarding-matters}
 
 Pirmās 30 minūtes pēc reģistrācijas nosaka, vai klients paliks vai aizies. Fitnesa studijas īpašnieks, kurš:
 
@@ -21,9 +21,9 @@ Pirmās 30 minūtes pēc reģistrācijas nosaka, vai klients paliks vai aizies. 
 
 Jūsu nišas veidnes (4. nodarbība) atrisina pirmo punktu. Šī nodarbība risina otro.
 
-## Pirmās pieteikšanās pieredze
+## Pirmās pieteikšanās pieredze {#the-first-login-experience}
 
-### Sveiciena Dashboard logrīks
+### Sveiciena Dashboard logrīks {#welcome-dashboard-widget}
 
 Izveidojiet pielāgotu Dashboard logrīku, kas sveicina jaunos klientus un vada viņus cauri iestatīšanai. Tam vajadzētu būt labi pamanāmam, kad viņi pirmo reizi piesakās.
 
@@ -37,7 +37,7 @@ Izveidojiet pielāgotu Dashboard logrīku, kas sveicina jaunos klientus un vada 
 
 Katrs solis ved tieši uz attiecīgo lapu vai iestatījumu. Nekādas meklēšanas pa izvēlnēm.
 
-### Vienkāršojiet Dashboard
+### Vienkāršojiet Dashboard {#simplify-the-dashboard}
 
 Jaunajiem klientiem nav jāredz katrs WordPress izvēlnes vienums. Apsveriet:
 
@@ -47,29 +47,29 @@ Jaunajiem klientiem nav jāredz katrs WordPress izvēlnes vienums. Apsveriet:
 
 [Plugin & Theme Manager](/addons/plugin-and-theme-manager) papildinājums var palīdzēt kontrolēt, ko klienti redz.
 
-## Sveiciena e-pastu secība
+## Sveiciena e-pastu secība {#welcome-email-sequence}
 
 Ar vienu sveiciena e-pastu nepietiek. Iestatiet secību, kas vada klientus viņu pirmajā nedēļā:
 
-### 1. e-pasts: Sveiciens (uzreiz pēc reģistrācijas)
+### 1. e-pasts: Sveiciens (uzreiz pēc reģistrācijas) {#email-1-welcome-immediately-after-signup}
 
 - Tēma: "Laipni lūdzam FitSite -- jūsu studijas tīmekļa vietne ir aktīva"
 - Saturs: Pieteikšanās saite, ātrā starta soļi, saite uz palīdzības resursiem
 - Tonis: Aizrautīgs, iedrošinošs, fitnesam specifisks
 
-### 2. e-pasts: Ātrie ieguvumi (1. diena)
+### 2. e-pasts: Ātrie ieguvumi (1. diena) {#email-2-quick-wins-day-1}
 
 - Tēma: "3 lietas, ko vispirms izdarīt savā FitSite"
 - Saturs: Pievienojiet savu logotipu, atjauniniet sākumlapas hero attēlu, pievienojiet savu nodarbību grafiku
 - Iekļaujiet ekrānuzņēmumus, kas precīzi parāda, kur klikšķināt
 
-### 3. e-pasts: Padariet to par savu (3. diena)
+### 3. e-pasts: Padariet to par savu (3. diena) {#email-3-make-it-yours-day-3}
 
 - Tēma: "Izceliet savu fitnesa vietni"
 - Saturs: Pielāgojiet krāsas, pievienojiet treneru fotoattēlus, uzrakstiet savas studijas stāstu
 - Saite uz lielisku fitnesa vietņu piemēriem platformā
 
-### 4. e-pasts: Publicējiet (7. diena)
+### 4. e-pasts: Publicējiet (7. diena) {#email-4-go-live-day-7}
 
 - Tēma: "Vai esat gatavs kopīgot savu FitSite ar pasauli?"
 - Saturs: Kontrolsaraksts par to, kas jāpārbauda pirms kopīgošanas, kā pieslēgt pielāgotu domēnu (ja izmanto Growth/Pro), padomi kopīgošanai sociālajos tīklos
@@ -78,11 +78,11 @@ Ar vienu sveiciena e-pastu nepietiek. Iestatiet secību, kas vada klientus viņu
 Use [Webhooks](/user-guide/integrations/webhooks) or [Zapier](/user-guide/integrations/zapier) to trigger these emails through your email marketing platform. This gives you more control over timing and allows you to track engagement.
 :::
 
-## Palīdzības resursi
+## Palīdzības resursi {#help-resources}
 
 Izveidojiet nišai specifisku palīdzības saturu, kas atbild uz jautājumiem, kurus fitnesa studiju īpašnieki patiešām uzdod:
 
-### Zināšanu bāzes raksti
+### Zināšanu bāzes raksti {#knowledge-base-articles}
 
 - "Kā atjaunināt nodarbību grafiku"
 - "Treneru profilu pievienošana un rediģēšana"
@@ -92,7 +92,7 @@ Izveidojiet nišai specifisku palīdzības saturu, kas atbild uz jautājumiem, k
 
 Rakstiet tos netehniskiem lietotājiem. Izmantojiet ekrānuzņēmumus. Izvairieties no WordPress žargona.
 
-### Video pamācības
+### Video pamācības {#video-walkthroughs}
 
 Īsi (2–3 minūšu) ekrāna ieraksti, kas parāda:
 
@@ -103,7 +103,7 @@ Rakstiet tos netehniskiem lietotājiem. Izmantojiet ekrānuzņēmumus. Izvairiet
 
 Tām nav jābūt noslīpētām produkcijām. Svarīgi ir, lai tās būtu skaidras, noderīgas un nišai specifiskas.
 
-## Account lapa
+## Account lapa {#the-account-page}
 
 Ultimate Multisite ietver klientiem paredzētu [Account lapu](/user-guide/client-management/account-page), kur klienti pārvalda savu abonementu. Pielāgojiet to, lai:
 
@@ -112,7 +112,7 @@ Ultimate Multisite ietver klientiem paredzētu [Account lapu](/user-guide/client
 - Nodrošinātu norēķinu vēsturi un rēķinu lejupielādes
 - Sasaistītu ar palīdzības resursiem
 
-## Ievadapmācības panākumu mērīšana
+## Ievadapmācības panākumu mērīšana {#measuring-onboarding-success}
 
 Sekojiet šiem rādītājiem, lai saprastu, vai jūsu ievadapmācība darbojas:
 
@@ -121,7 +121,7 @@ Sekojiet šiem rādītājiem, lai saprastu, vai jūsu ievadapmācība darbojas:
 - **Atbalsta pieprasījumi no jauniem klientiem**: Liels apjoms nozīmē, ka jūsu ievadapmācībā ir trūkumi
 - **Pāreja no izmēģinājuma uz maksas versiju**: Ja piedāvājat izmēģinājumus, kāds procents pāriet uz maksas versiju?
 
-## FitSite tīkls līdz šim
+## FitSite tīkls līdz šim {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Vadītu pirmās pieteikšanās pieredzi** ar Quick Start logrīku
 - **Vienkāršotu Dashboard**, kas koncentrējas uz fitnesa vietnes pārvaldības uzdevumiem

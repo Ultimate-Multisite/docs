@@ -4,11 +4,11 @@ title: Hidlydd - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Hidlydd: wu_admin_notices
+# Hidlydd: wu_admin_notices {#filter-wuadminnotices}
 
 Caniatáu i ddatblygwyr hidlo hysbysiadau gweinyddol a ychwanegwyd gan Ultimate Multisite.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Caniatáu i ddatblygwyr hidlo hysbysiadau gweinyddol a ychwanegwyd gan Ultimate 
 | $filter | `string` | Os yw’r hysbysiadau y gellir eu diystyru wedi’u hidlo allan. |
 | $dismissed_messages | `array` | Rhestr o allweddi hysbysiadau a ddiystyrwyd. |
 
-### Ers
+### Ers {#since}
 
 - 2.0.0
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Diffinnir yn [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) ar linell 121
 
 
-## Yn dychwelyd
+## Yn dychwelyd {#returns}

@@ -3,15 +3,15 @@ title: 'Piwulang 14: Apa Sabanjuré'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Piwulang 14: Apa Sabanjuré
+# Piwulang 14: Apa Sabanjuré {#lesson-14-what-comes-next}
 
 Sampeyan wis mbangun platform situs web niche saka nol. FitSite wis urip, nglayani studio fitness, lan ngasilaké penghasilan bola-bali. Piwulang pungkasan iki ndeleng menyang ngendi langkah sabanjuré.
 
-## Panggonan Pungkasan Kita Mandheg
+## Panggonan Pungkasan Kita Mandheg {#where-we-left-off}
 
 FitSite iku bisnis sing wis mlaku kanthi pelanggan, operasional, lan arah tuwuh. Saiki kita mikiraké apa sabanjuré.
 
-## Jaringan FitSite Lengkap
+## Jaringan FitSite Lengkap {#the-complete-fitsite-network}
 
 Iki kabèh sing wis kita bangun sajrone 14 piwulang:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Opsi 1: Luwih Jero ing Niche Sampeyan
+## Opsi 1: Luwih Jero ing Niche Sampeyan {#option-1-go-deeper-in-your-niche}
 
 Sadurungé ngembang menyang niche anyar, pikirna kanggo luwih jero ing fitness:
 
-### Sub-Niche
+### Sub-Niche {#sub-niches}
 
 - **Studio yoga** -- template khusus kanthi fitur meditasi, retreat, lan workshop
 - **CrossFit boxes** -- pelacakan WOD, asil kompetisi, fitur komunitas
@@ -59,7 +59,7 @@ Sadurungé ngembang menyang niche anyar, pikirna kanggo luwih jero ing fitness:
 
 Saben sub-niche bisa nduwé template dhéwé lan bisa uga brand dhéwé, kabèh mlaku ing jaringan Ultimate Multisite sing padha.
 
-### Fitur Premium
+### Fitur Premium {#premium-features}
 
 Bangun fitur sing bakal dibayar luwih déning studio fitness:
 
@@ -68,14 +68,14 @@ Bangun fitur sing bakal dibayar luwih déning studio fitness:
 - **Template blog fitness** -- struktur konten sing wis disiapaké kanggo pemasaran konten fitness
 - **Integrasi media sosial** -- otomatis ngirim jadwal kelas lan pembaruan
 
-### Ekspansi Geografis
+### Ekspansi Geografis {#geographic-expansion}
 
 Yèn sampeyan miwiti sacara lokal, ngembangna menyang:
 
 - Kutha liya ing negara sampeyan
 - Negara liya (gunakna [fitur pelokalan](/user-guide/localization/translating) Ultimate Multisite kanggo ndhukung pirang-pirang basa)
 
-## Opsi 2: Ngembang menyang Niche Cedhak
+## Opsi 2: Ngembang menyang Niche Cedhak {#option-2-expand-to-adjacent-niches}
 
 Proses sing sampeyan tindakake kanggo studio fitness bisa digunakaké kanggo niche apa wae. Niche kapindho sampeyan luwih gampang amarga sampeyan wis nduwé:
 
@@ -83,7 +83,7 @@ Proses sing sampeyan tindakake kanggo studio fitness bisa digunakaké kanggo nic
 - Pengalaman operasional
 - Playbook sing wis kabukten
 
-### Niche Cedhak karo Fitness
+### Niche Cedhak karo Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness lan spa** -- terapis pijet, day spa, pusat wellness
 - **Klub olahraga** -- tim olahraga amatir, liga, klub rekreasi
@@ -91,7 +91,7 @@ Proses sing sampeyan tindakake kanggo studio fitness bisa digunakaké kanggo nic
 
 Iki nduwé tumpang tindih pamirsa karo fitness, mula pemasaran lan kemitraan sampeyan bisa uga bisa diterusaké.
 
-### Niche Sing Babagané Bener-bener Anyar
+### Niche Sing Babagané Bener-bener Anyar {#completely-new-niches}
 
 Terapna kerangka saka Piwulang 2 kanggo ngevaluasi niche apa wae:
 
@@ -108,7 +108,7 @@ Saben niche anyar butuh:
 
 Infrastruktur platform, billing, lan proses operasional tetep padha.
 
-## Opsi 3: Mbangun Platform saka Platform
+## Opsi 3: Mbangun Platform saka Platform {#option-3-build-a-platform-of-platforms}
 
 Ing skala gedhé, sampeyan bisa mbukak pirang-pirang brand niche ing siji jaringan Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Ing skala gedhé, sampeyan bisa mbukak pirang-pirang brand niche ing siji jaring
 
 Saben brand nduwé template, plan, lan pemasaran dhéwé, nanging padha nuduhake infrastruktur, billing, lan proses operasional. Iki panggonan ekonomi saka Ultimate Multisite dadi kuwat -- siji platform, akeh vertikal.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Kanggo pamisahan lengkap antarane niche, pikirna [addon Multi-Network](/addons/multinetwork) sing ngidini sampeyan mbukak pirang-pirang jaringan WordPress saka siji instalasi.
 
-## Opsi 4: Adol Bisnis
+## Opsi 4: Adol Bisnis {#option-4-sell-the-business}
 
 Platform situs web niche kanthi penghasilan bola-bali, churn sing sithik, lan posisi pasar sing cetha iku aset sing aji. Bisnis SaaS biasané didol kanthi 3-5x penghasilan taunan.
 
@@ -134,7 +134,7 @@ FitSite kanthi 200 pelanggan ing $89 ARPU:
 
 Iki dudu asil sing dijamin, nanging iki asil sing realistis kanggo platform niche sing dikelola kanthi apik.
 
-## Sing Wis Sampeyan Sinau
+## Sing Wis Sampeyan Sinau {#what-you-have-learned}
 
 Kursus iki mulang sampeyan proses sing bisa diulang:
 
@@ -150,7 +150,7 @@ Kursus iki mulang sampeyan proses sing bisa diulang:
 
 Niche iku strateginé. Platform iku pirantiné. Ultimate Multisite ndadèkaké piranti kasebut bisa ana. Pangerten sampeyan marang niche ndadèkaké iku aji.
 
-## Miwiti Mbangun
+## Miwiti Mbangun {#start-building}
 
 Yen sampeyan ngetutake bareng karo FitSite, sampeyan wis nduweni platform sing bisa digunakake. Yen sampeyan maca kanggo nemokake ceruk pasar sampeyan dhewe, balia menyang [Piwulang 2: Milih Ceruk Pasar Sampeyan](lesson-2-picking-your-niche) lan wiwitana proses kanggo bidang vertikal sing sampeyan pilih.
 

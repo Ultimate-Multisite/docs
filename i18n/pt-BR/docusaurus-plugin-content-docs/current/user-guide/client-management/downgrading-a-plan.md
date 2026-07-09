@@ -3,13 +3,13 @@ title: Fazendo downgrade de um Plano
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Fazendo downgrade de um plano (v2)
+# Fazendo downgrade de um plano (v2) {#downgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 
 Fazer downgrade de um plano ou assinatura é uma ação comum que seus clientes podem realizar se tiverem um orçamento limitado ou decidirem que não precisarão de muitos recursos para executar o subsite deles.
 
-## Como fazer downgrade de um plano
+## Como fazer downgrade de um plano {#how-to-downgrade-a-plan}
 
 Seus clientes podem fazer downgrade do plano a qualquer momento fazendo login no Dashboard de administração do subsite e clicando em **Alterar** na página Account deles.
 
@@ -25,7 +25,7 @@ Para prosseguir, o usuário só precisa clicar no botão **Finalizar compra**. E
 
 ![Página Account exibindo o banner de alteração pendente da assinatura](/img/account-page/pending-change.png)
 
-### O que acontece quando um usuário faz downgrade do plano
+### O que acontece quando um usuário faz downgrade do plano {#what-happens-when-a-user-downgrades-their-plan}
 
 É importante observar que fazer downgrade do plano não altera a configuração existente no subsite do usuário.
 
@@ -37,7 +37,7 @@ Para as publicações que excederem o limite definido no plano, você tem 3 opç
 
 ![Página Sites das configurações do Network Admin mostrando as opções de comportamento para limite de publicações excedido](/img/account-page/settings-sites-post-limit.png)
 
-### O que acontece com o pagamento
+### O que acontece com o pagamento {#what-happens-to-the-payment}
 
 Na versão 2.0, não é mais necessário fazer ajustes no pagamento em termos de rateio proporcional.
 

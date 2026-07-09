@@ -3,13 +3,13 @@ title: Hjálp við sérsniðna þróun
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Hvernig fáir þú sérstaka aðstoð í þróun frá Codeable?
+# Hvernig fáir þú sérstaka aðstoð í þróun frá Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Í nokkrum tilfellum þurfa við okkur svo ótrúlega sérstakla aðlögunar til að gera netverkssambönd okkar nákvæmlega eins og við viljum. Ef það er það sem þú leitar eftir, mælum við með [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), staðnum þar sem þú getur verið í tengslum við erfitt upplýst þróunarframkvæmdavinnu með sérfræði í Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) er plattaform sem tengir viðskiptavini við fullkomlega kvalfðar WordPress freelance þróunarframkvæmdavinnu, sem geta að vinnja á verkefnum almennri háðni. Þeir hafa nákvæma skráningaraferð til að tryggja að þú sért tengd sérfræðingum sem eru sérstaklega kvalfðar fyrir uppgåva sem þú hefur í huga.
 
-### Hvernig skapa verkefni í Codeable?
+### Hvernig skapa verkefni í Codeable? {#how-to-create-a-project-in-codeable}
 
 Fyrst, ferðu yfir [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) og klikka á knappa **Start a Project** (Byrja verkefni).
 

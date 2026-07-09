@@ -3,13 +3,13 @@ title: Migrasi Mode Pihak Ketiga
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrasi Mode Pihak Ketiga
+# Migrasi Mode Pihak Ketiga {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 mengubah cara penanganan kemampuan (abilities) pihak ketiga. **Mode pihak ketiga sekarang secara default menggunakan auto**, memungkinkan integrasi API Abilities WordPress secara *native* pada WordPress 7.0+ tanpa konfigurasi manual.
 
-## Apa yang Berubah?
+## Apa yang Berubah? {#what-changed}
 
-### Sebelum v1.12.0
+### Sebelum v1.12.0 {#before-v1120}
 
 Kemampuan pihak ketiga memerlukan konfigurasi manual:
 
@@ -18,7 +18,7 @@ Kemampuan pihak ketiga memerlukan konfigurasi manual:
 - Integrasi dengan WordPress Abilities API bersifat opsional
 - Mode *Legacy* adalah *default*-nya
 
-### Setelah v1.12.0
+### Setelah v1.12.0 {#after-v1120}
 
 Kemampuan pihak ketiga bekerja secara otomatis:
 
@@ -27,13 +27,13 @@ Kemampuan pihak ketiga bekerja secara otomatis:
 - Tidak perlu konfigurasi manual pada WordPress 7.0+
 - Mode *Legacy* masih tersedia untuk versi WordPress yang lebih lama
 
-## Siapa yang Terdampak?
+## Siapa yang Terdampak? {#who-is-affected}
 
-### Instalasi Baru (WordPress 7.0+)
+### Instalasi Baru (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Tidak perlu tindakan.** Mode pihak ketiga secara otomatis diatur ke "auto", dan kemampuan berfungsi langsung (*out of the box*).
 
-### Instalasi yang Sudah Ada
+### Instalasi yang Sudah Ada {#existing-installations}
 
 **Pengaturan Anda dipertahankan.** Jika Anda menggunakan:
 
@@ -41,7 +41,7 @@ Kemampuan pihak ketiga bekerja secara otomatis:
 - **Manual third-party mode**: Anda tetap dalam mode manual (tidak ada perubahan)
 - **Auto mode**: Anda melanjutkan dengan mode auto (tidak ada perubahan)
 
-### Versi WordPress Sebelum 7.0
+### Versi WordPress Sebelum 7.0 {#wordpress-versions-before-70}
 
 **Mode *Legacy* masih tersedia.** Jika Anda menggunakan WordPress 6.x atau lebih awal:
 
@@ -49,9 +49,9 @@ Kemampuan pihak ketiga bekerja secara otomatis:
 - Anda dapat mengaktifkan mode pihak ketiga secara manual jika diinginkan
 - Tingkatkan ke WordPress 7.0+ untuk menggunakan Abilities API *native*
 
-## Memahami Mode
+## Memahami Mode {#understanding-the-modes}
 
-### Auto Mode (Default Baru)
+### Auto Mode (Default Baru) {#auto-mode-new-default}
 
 **Auto mode** menggunakan integrasi WordPress Abilities API *native*:
 
@@ -62,7 +62,7 @@ Kemampuan pihak ketiga bekerja secara otomatis:
 
 **Kapan digunakan**: WordPress 7.0+ dengan kemampuan pihak ketiga
 
-### Manual Mode
+### Manual Mode {#manual-mode}
 
 **Manual mode** memerlukan konfigurasi eksplisit:
 
@@ -73,7 +73,7 @@ Kemampuan pihak ketiga bekerja secara otomatis:
 
 **Kapan digunakan**: Pengujian, pemuatan kemampuan selektif, atau konfigurasi kustom
 
-### Legacy Mode
+### Legacy Mode {#legacy-mode}
 
 **Legacy mode** menggunakan sistem kemampuan pihak ketiga lama:
 
@@ -84,24 +84,24 @@ Kemampuan pihak ketiga bekerja secara otomatis:
 
 **Kapan digunakan**: WordPress 6.x atau lebih awal, atau ketika Anda memerlukan kompatibilitas *legacy*
 
-## Memeriksa Mode Anda Saat Ini
+## Memeriksa Mode Anda Saat Ini {#checking-your-current-mode}
 
-### Melalui Admin Panel
+### Melalui Admin Panel {#via-admin-panel}
 
 1. Buka **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Cari pengaturan **Third-Party Mode**
 3. Anda akan melihat mode Anda saat ini dan opsi untuk mengubahnya
 
-### Melalui Kode
+### Melalui Kode {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', atau 'legacy'
 ```
 
-## Mengubah Mode Anda
+## Mengubah Mode Anda {#changing-your-mode}
 
-### Beralih ke Auto Mode
+### Beralih ke Auto Mode {#switch-to-auto-mode}
 
 Jika Anda menggunakan WordPress 7.0+ dan ingin menggunakan mode auto:
 
@@ -112,7 +112,7 @@ Jika Anda menggunakan WordPress 7.0+ dan ingin menggunakan mode auto:
 
 Superdav AI Agent akan secara otomatis menemukan dan mendaftarkan kemampuan pihak ketiga.
 
-### Beralih ke Manual Mode
+### Beralih ke Manual Mode {#switch-to-manual-mode}
 
 Jika Anda ingin mengontrol secara manual kemampuan mana yang dimuat:
 
@@ -122,7 +122,7 @@ Jika Anda ingin mengontrol secara manual kemampuan mana yang dimuat:
 4. Klik **Save**
 5. Edit file konfigurasi Anda untuk menentukan kemampuan mana yang akan dimuat
 
-### Beralih ke Legacy Mode
+### Beralih ke Legacy Mode {#switch-to-legacy-mode}
 
 Jika Anda memerlukan kompatibilitas *legacy*:
 
@@ -131,9 +131,9 @@ Jika Anda memerlukan kompatibilitas *legacy*:
 3. Pilih **Legacy**
 4. Klik **Save**
 
-## Keuntungan Auto Mode
+## Keuntungan Auto Mode {#benefits-of-auto-mode}
 
-### Penemuan Otomatis
+### Penemuan Otomatis {#automatic-discovery}
 
 Kemampuan ditemukan secara otomatis dari:
 
@@ -144,7 +144,7 @@ Kemampuan ditemukan secara otomatis dari:
 
 Tidak perlu pendaftaran manual.
 
-### Integrasi *Native*
+### Integrasi *Native* {#native-integration}
 
 Kemampuan terintegrasi dengan WordPress Abilities API:
 
@@ -153,67 +153,67 @@ Kemampuan terintegrasi dengan WordPress Abilities API:
 - Kompatibel dengan plugin lain yang menggunakan Abilities API
 - Tahan masa depan seiring perkembangan WordPress
 
-### Manajemen yang Disederhanakan
+### Manajemen yang Disederhanakan {#simplified-management}
 
 - Tidak ada file konfigurasi yang perlu diedit
 - Tidak ada pendaftaran kemampuan manual
 - Kontrol Visibilitas Kemampuan bekerja secara otomatis
 - Pemberitahuan admin memberi tahu Anda tentang kemampuan yang belum diklasifikasikan
 
-### Performa Lebih Baik
+### Performa Lebih Baik {#better-performance}
 
 - Kemampuan di-*cache*
 - Dimuat secara malas (*lazy-loaded*) sesuai permintaan
 - Dioptimalkan untuk WordPress 7.0+
 
-## Jalur Migrasi
+## Jalur Migrasi {#migration-path}
 
-### Jika Anda Menggunakan WordPress 6.x
+### Jika Anda Menggunakan WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Tingkatkan ke WordPress 7.0+** (ketika siap)
 2. **Perbarui Superdav AI Agent** ke v1.12.0+
 3. **Ubah mode pihak ketiga ke Auto** (opsional; mode *legacy* masih berfungsi)
 4. **Tinjau visibilitas kemampuan** untuk memastikan kontrol akses yang tepat
 
-### Jika Anda Menggunakan WordPress 7.0+
+### Jika Anda Menggunakan WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Perbarui Superdav AI Agent** ke v1.12.0+
 2. **Verifikasi mode pihak ketiga diatur ke Auto** (seharusnya sudah *default*)
 3. **Tinjau visibilitas kemampuan** untuk memastikan kontrol akses yang tepat
 4. **Uji kemampuan pihak ketiga** untuk memastikan berfungsi
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
-### Kemampuan tidak dimuat dalam mode auto
+### Kemampuan tidak dimuat dalam mode auto {#abilities-arent-loading-in-auto-mode}
 
 - Verifikasi Anda menggunakan WordPress 7.0+
 - Periksa bahwa mode pihak ketiga diatur ke "Auto"
 - Verifikasi plugin yang menyediakan kemampuan tersebut aktif
 - Periksa *error log* WordPress untuk kesalahan pendaftaran
 
-### Saya ingin mempertahankan mode *legacy*
+### Saya ingin mempertahankan mode *legacy* {#i-want-to-keep-legacy-mode}
 
 - Buka **Settings** → **Third-Party Mode**
 - Pilih **Legacy**
 - Klik **Save**
 - Mode *legacy* akan terus berfungsi
 
-### Kemampuan kustom saya tidak muncul
+### Kemampuan kustom saya tidak muncul {#my-custom-abilities-arent-showing}
 
 - Verifikasi bahwa kemampuan tersebut didaftarkan melalui *hook* WordPress
 - Periksa bahwa mereka mengimplementasikan Abilities API dengan benar
 - Tinjau *error log* WordPress
 - Gunakan halaman admin **Ability Visibility** untuk melihat semua kemampuan yang terdaftar
 
-### Saya mendapatkan pemberitahuan "unclassified ability"
+### Saya mendapatkan pemberitahuan "unclassified ability" {#im-getting-unclassified-ability-notices}
 
 - Ini normal untuk kemampuan pihak ketiga yang baru
 - Tinjau dan klasifikasikan di pemberitahuan admin
 - Lihat **Ability Visibility** untuk detail klasifikasi
 
-## Kompatibilitas Mundur
+## Kompatibilitas Mundur {#backward-compatibility}
 
-### Konfigurasi yang Ada
+### Konfigurasi yang Ada {#existing-configurations}
 
 Jika Anda memiliki konfigurasi kemampuan pihak ketiga yang sudah ada:
 
@@ -223,33 +223,33 @@ Jika Anda memiliki konfigurasi kemampuan pihak ketiga yang sudah ada:
 
 Untuk mempertahankan konfigurasi kustom Anda, tetaplah dalam mode Manual atau Legacy.
 
-### Linimasa Penghentian Dukungan (*Deprecation Timeline*)
+### Linimasa Penghentian Dukungan (*Deprecation Timeline*) {#deprecation-timeline}
 
 - **v1.12.0**: Mode *Legacy* dan Manual masih sepenuhnya didukung
 - **v1.13.0+**: Mode *Legacy* mungkin menampilkan pemberitahuan *deprecation*
 - **v2.0.0**: Mode *Legacy* mungkin dihapus (Akan ditentukan)
 
-## Praktik Terbaik
+## Praktik Terbaik {#best-practices}
 
-### Untuk Instalasi Baru
+### Untuk Instalasi Baru {#for-new-installations}
 
 - Gunakan Auto mode (ini *default*-nya)
 - Biarkan Superdav AI Agent menemukan kemampuan secara otomatis
 - Gunakan Ability Visibility untuk mengontrol akses
 
-### Untuk Instalasi yang Sudah Ada
+### Untuk Instalasi yang Sudah Ada {#for-existing-installations}
 
 - Tingkatkan ke WordPress 7.0+ jika memungkinkan
 - Beralih ke Auto mode untuk manajemen yang lebih sederhana
 - Tinjau dan klasifikasikan kemampuan menggunakan Ability Visibility
 
-### Untuk Kemampuan Kustom
+### Untuk Kemampuan Kustom {#for-custom-abilities}
 
 - Daftarkan kemampuan melalui *hook* WordPress (Abilities API)
 - Hindari *registry* kemampuan kustom
 - Uji pada WordPress 7.0+ dengan Auto mode
 
-## Langkah Selanjutnya
+## Langkah Selanjutnya {#next-steps}
 
 1. **Periksa versi WordPress Anda**: Verifikasi Anda menggunakan 7.0+ untuk Auto mode
 2. **Tinjau mode pihak ketiga Anda**: Buka Settings dan periksa mode Anda saat ini
@@ -257,7 +257,7 @@ Untuk mempertahankan konfigurasi kustom Anda, tetaplah dalam mode Manual atau Le
 4. **Klasifikasikan kemampuan**: Tinjau dan klasifikasikan kemampuan apa pun yang belum diklasifikasikan
 5. **Uji**: Verifikasi kemampuan pihak ketiga Anda berfungsi dengan benar
 
-## Topik Terkait
+## Topik Terkait {#related-topics}
 
 - **Ability Visibility**: Mengontrol kemampuan mana yang ditampilkan di mana
 - **WordPress Abilities API**: Pelajari tentang pendaftaran kemampuan WordPress *native*

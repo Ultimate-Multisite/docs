@@ -3,7 +3,7 @@ title: VAT Changelog
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# KDV Değişiklik Günlüğü
+# KDV Değişiklik Günlüğü {#vat-changelog}
 
 Version 1.0.7 - Yayınlanma tarihi 2026-02-03
 

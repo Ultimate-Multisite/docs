@@ -3,15 +3,15 @@ title: Gjenero logon SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Gjenero Logo SVG
+# Gjenero Logo SVG {#generate-logo-svg}
 
 Aftësia **Gjenero Logo SVG** i lejon Theme Builder të krijojë dhe të integrojë logo SVG të personalizuara drejtpërdrejt në faqen tuaj WordPress me sanitizim automatik të sigurt për namespace.
 
-## Përmbledhje
+## Përmbledhje {#overview}
 
 Kjo aftësi gjeneron logo me grafikë vektoriale të shkallëzueshme (SVG) bazuar në drejtimin e markimit të faqes suaj dhe preferencat e dizajnit. SVG-të e gjeneruara sanitizohen automatikisht për të siguruar që janë të sigurta për përdorim në WordPress, duke ruajtur integritetin vizual.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Parametër | Tipi | I detyrueshëm | Përshkrimi |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Kjo aftësi gjeneron logo me grafikë vektoriale të shkallëzueshme (SVG) bazua
 | `height` | number | Jo | Lartësia e SVG-së në pikselë (parazgjedhje: 200) |
 | `include_text` | boolean | Jo | Nëse duhet të përfshihet emri i faqes si tekst në logo (parazgjedhje: true) |
 
-## Formati i daljes
+## Formati i daljes {#output-format}
 
 Aftësia kthen një string SVG me strukturën e mëposhtme:
 
@@ -36,7 +36,7 @@ Aftësia kthen një string SVG me strukturën e mëposhtme:
 }
 ```
 
-## Sjellja e sanitizimit të SVG-së
+## Sjellja e sanitizimit të SVG-së {#svg-sanitisation-behaviour}
 
 SVG-të e gjeneruara i nënshtrohen sanitizimit automatik të sigurt për namespace për të:
 
@@ -48,7 +48,7 @@ SVG-të e gjeneruara i nënshtrohen sanitizimit automatik të sigurt për namesp
 
 Kjo siguron që SVG-ja është e sigurt për t’u integruar drejtpërdrejt në WordPress pa kërkuar sanitizim shtesë.
 
-## Shembull përdorimi
+## Shembull përdorimi {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Aftësia krijon një logo SVG që:
 - Ndjek parimet moderne të dizajnit
 - Sanitizohet automatikisht dhe është gati për përdorim
 
-## Integrimi me Theme Builder
+## Integrimi me Theme Builder {#integration-with-theme-builder}
 
 Kur përdorni përzgjedhjen e drejtimit të dizajnit të Theme Builder, aftësia Generate Logo SVG:
 
@@ -71,21 +71,21 @@ Kur përdorni përzgjedhjen e drejtimit të dizajnit të Theme Builder, aftësia
 3. Integron automatikisht logon në zonën header/branding të faqes suaj
 4. Ruan SVG-në si logo të personalizuar në median e WordPress-it
 
-## Praktikat më të mira
+## Praktikat më të mira {#best-practices}
 
 - **Jepni preferenca të qarta stili** — përshkruani stilin e dizajnit që dëshironi (modern, klasik, lozonjar, etj.)
 - **Specifikoni ngjyrat** — përfshini ngjyrat e markës suaj për qëndrueshmëri
 - **Testoni paraqitjen** — verifikoni që logoja shfaqet saktë në madhësi të ndryshme ekrani
 - **Personalizoni më tej** — përdorni mjetet e personalizimit të logos të WordPress-it për të rregulluar madhësinë dhe vendosjen
 
-## Kufizimet
+## Kufizimet {#limitations}
 
 - Logot SVG gjenerohen si grafikë statike (jo të animuara)
 - Logot komplekse me shumë elemente mund të kërkojnë përpunim manual
 - Fontet e personalizuara nuk mbështeten; teksti përdor fontet e sistemit
 - Dimensionet shumë të mëdha ose shumë të vogla mund të ndikojnë në cilësi
 
-## Aftësi të lidhura
+## Aftësi të lidhura {#related-abilities}
 
 - [Valido kontrastin e paletës](./validate-palette-contrast.md) — kontrolloni kontrastin e ngjyrave për aksesueshmëri
 - [Krijo menu](./create-menu.md) — krijoni menu navigimi për faqen tuaj

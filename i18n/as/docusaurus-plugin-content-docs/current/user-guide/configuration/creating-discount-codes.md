@@ -3,13 +3,13 @@ title: ডছকাণ্ট কোড সৃষ্টি কৰা
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ডিসকাউন্ট কোড (Discount Codes) সৃষ্টি কৰা (v2)
+# ডিসকাউন্ট কোড (Discount Codes) সৃষ্টি কৰা (v2) {#creating-discount-codes-v2}
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ultimate Multisiteৰ version 2.x লৈ কথা পাতে।**_
 
 Ultimate Multisite ব্যৱহাৰ কৰি আপুনি নিজৰ ক্লায়েন্টসকলক তেওঁলোকৰ সাবস্ক্রিপশ্যনত ডিসকাউন্ট দিবলৈ ডিসকাউন্ট কোড সৃষ্টি কৰিব পাৰে। আৰু ইয়াৰ সৃষ্টি কৰাটো সহজ!
 
-## ডিসকাউন্ট কোড সৃষ্টি কৰা আৰু সম্পাদনা কৰা
+## ডিসকাউন্ট কোড সৃষ্টি কৰা আৰু সম্পাদনা কৰা {#creating-and-editing-discount-codes}
 
 এটা ডিসকাউন্ট কোড সৃষ্টি কৰিব বা সম্পাদনা কৰিবলৈ, **Ultimate Multisite > Discount Codes** লৈ যাওক।
 
@@ -87,7 +87,7 @@ Ultimate Multisite ব্যৱহাৰ কৰি আপুনি নিজৰ 
 
 ###
 
-### URL Parameters ব্যৱহাৰ কৰা:
+### URL Parameters ব্যৱহাৰ কৰা: {#using-url-parameters}
 
 যদি আপুনি আপোনাৰ মূল্য তালিকা (pricing tables) ক কাস্টমাইজ কৰিব বিচাৰে বা আপোনাৰ ওয়েবসাইটৰ বাবে এটা ভাল কুপন কোড পৃষ্ঠা (coupon code page) বনাওঁতে আৰু আপোনাৰ checkout form ত কোনো ডিসকাউন্ট কোড স্বয়ংক্রিয়ভাৱে প্ৰয়োগ কৰিব বিচাৰে, তেন্তে আপুনি URL parameters ব্যৱহাৰ কৰি এই কামটো কৰিব পাৰে।
 

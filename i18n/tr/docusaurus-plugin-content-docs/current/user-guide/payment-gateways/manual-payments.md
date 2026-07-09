@@ -3,13 +3,13 @@ title: Manuel Ödemeleri Ayarlama
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuel Ödemeleri Ayarlama (v2)
+# Manuel Ödemeleri Ayarlama (v2) {#setting-up-manual-payments-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüyle ilgilidir.**_
 
 Manuel ödemeler, kullanıcılarınız için **Stripe** veya **PayPal** kullanılamıyorsa başka ödeme yöntemleri sunmanızın bir yoludur. Bu, havale veya banka transferi ya da kullanıcılarınızın yerel olarak kullanabildiği başka herhangi bir ödeme yöntemi olabilir.
 
-## Manuel Ödemeler nasıl etkinleştirilir
+## Manuel Ödemeler nasıl etkinleştirilir {#how-to-enable-manual-payments}
 
 Manuel ödemeyi ayarlamak çok kolaydır. Yalnızca ödeme ağ geçitleri altında etkinleştirmeniz ve kullanıcının ödemeyi nasıl göndermesi gerektiğine dair ayrıntılı talimatlar girmeniz gerekir.
 
@@ -31,7 +31,7 @@ Ayrıca **Teşekkürler** sayfanızda ödeme talimatlarınızı içeren bir mesa
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manuel ödemeleri onaylama
+## Manuel ödemeleri onaylama {#confirming-manual-payments}
 
 Manuel bir ödemeyi onaylamak için sol çubuktaki **Ödemeler** menüsüne gidin. Burada ağınızdaki tüm ödemeleri ve **durum** dahil olmak üzere ayrıntılarını görebilirsiniz. Manuel ödeme, siz manuel olarak değiştirene kadar her zaman **Beklemede** durumunda olur.
 

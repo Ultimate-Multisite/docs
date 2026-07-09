@@ -3,13 +3,13 @@ title: Përshtatja e Formularit Tuaj të Regjistrimit
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Përshtatja e Formularit tuaj të Regjistrimit
+# Përshtatja e Formularit tuaj të Regjistrimit {#customizing-your-registration-form}
 
 Për ta bërë rrjetin tuaj të duket unik nga të gjitha SaaS-et e tjera të ndërtuara mbi platformën WordPress, Ultimate Multisite ju lejon të përshtatni faqet tuaja të regjistrimit dhe hyrjes me veçorinë tonë **Formularët e Checkout-it**.
 
 Edhe pse ato janë një mënyrë e lehtë dhe fleksibël për të eksperimentuar me qasje të ndryshme kur përpiqeni të konvertoni klientë të rinj, ato përdoren kryesisht për të krijuar formularë regjistrimi të personalizuar. Ky artikull synon t’ju tregojë se si mund ta bëni këtë.
 
-## Faqet e hyrjes dhe regjistrimit:
+## Faqet e hyrjes dhe regjistrimit: {#login-and-registration-pages}
 
 Pas instalimit të Ultimate Multisite, ai krijon automatikisht faqe të personalizuara hyrjeje dhe regjistrimi në sajtin tuaj kryesor. Ju mund t’i ndryshoni këto faqe të parazgjedhura në çdo kohë duke shkuar te faqja juaj **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Tani, le të shohim opsione të tjera që janë ende relevante për procesin e h
 
 Dhe këto janë të gjitha opsionet që lidhen me hyrjen dhe regjistrimin që mund të përshtatni! Mos harroni të ruani cilësimet tuaja pasi të përfundoni redaktimin e tyre.
 
-## Përdorimi i formularëve të shumtë të regjistrimit:
+## Përdorimi i formularëve të shumtë të regjistrimit: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 ofron një redaktues formularësh checkout-i që ju lejon të krijoni sa formularë të dëshironi, me fusha të ndryshme, produkte në ofertë, etj.
 
@@ -69,7 +69,7 @@ Përndryshe, mund të redaktoni ose dublikoni formularët që keni tashmë duke 
 
 Nëse zgjidhni një hap ose shumë hapa, formulari i checkout-it do të jetë tashmë i parapopulluar me hapat bazë që i nevojiten për të funksionuar. Pastaj, nëse dëshironi, mund t’i shtoni hapa shtesë.
 
-### Redaktimi i një Formulari Checkout-i:
+### Redaktimi i një Formulari Checkout-i: {#editing-a-checkout-form}
 
 Siç e përmendëm më parë, mund të krijoni formularë checkout-i për qëllime të ndryshme. Në këtë shembull do të punojmë mbi një formular regjistrimi.
 
@@ -131,11 +131,11 @@ Për të marrë shortcode-in e formularit tuaj, klikoni te **Gjenero Shortcode**
 
 _**Shënim:** Do t’ju duhet ta shtoni këtë shortcode në faqen tuaj të regjistrimit në mënyrë që ky formular i përfundimit të blerjes të shtohet në të._
 
-## Përzgjedhja paraprake e produkteve dhe shablloneve përmes parametrave të URL-së:
+## Përzgjedhja paraprake e produkteve dhe shablloneve përmes parametrave të URL-së: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Nëse dëshironi të krijoni tabela çmimesh të personalizuara për produktet tuaja dhe të përzgjidhni paraprakisht në formularin e përfundimit të blerjes produktin ose shabllonin që klienti juaj zgjedh nga tabela juaj e çmimeve ose faqja e shablloneve, mund të përdorni parametrat e URL-së për këtë.
 
-### **Për planet:**
+### **Për planet:** {#for-plans}
 
 Shkoni te **Ultimate Multisite > Produktet > Zgjidh një plan**. Duhet të shihni butonin **Kliko për të kopjuar lidhjen e ndashme** në krye të faqes. Kjo është lidhja që mund të përdorni për të përzgjedhur paraprakisht këtë plan specifik në formularin tuaj të përfundimit të blerjes.
 
@@ -143,7 +143,7 @@ Shkoni te **Ultimate Multisite > Produktet > Zgjidh një plan**. Duhet të shihn
 
 Vini re se kjo lidhje e ndashme është e vlefshme vetëm për **Planet**. Nuk mund të përdorni lidhje të ndashme për paketa ose shërbime.
 
-### Për shabllonet:
+### Për shabllonet: {#for-templates}
 
 Nëse dëshironi të përzgjidhni paraprakisht shabllonet e sajtit në formularin tuaj të përfundimit të blerjes, mund të përdorni parametrin: **?template_id=X** në URL-në e faqes suaj të regjistrimit. "X" duhet të zëvendësohet me **numrin ID të shabllonit të sajtit**. Për ta marrë këtë numër, shkoni te **Ultimate Multisite > Sitet**.
 

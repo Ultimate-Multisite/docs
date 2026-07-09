@@ -3,11 +3,11 @@ title: Benotzerdefinéiert Gateway-Entwécklung
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Benotzerdefinéiert Gateway-Entwécklung
+# Benotzerdefinéiert Gateway-Entwécklung {#custom-gateway-development}
 
 Du kanns benotzerdefinéiert Bezuel-Gateways erstellen, andeems du d'Klass `Base_Gateway` erweiders.
 
-## Gateway-Klass
+## Gateway-Klass {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## De Gateway registréieren
+## De Gateway registréieren {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Wichteg Methoden
+## Wichteg Methoden {#key-methods}
 
 | Method | Zweck |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Remboursementsufroe verschaffen |
 | `get_payment_methods()` | Gespäichert Bezuelmethoden fir e Client zeréckginn |
 
-## Erneierungs-Zougangsdaten fir widderhuelend Memberschaften
+## Erneierungs-Zougangsdaten fir widderhuelend Memberschaften {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 léisst Gateway-Integratiounen mellen, ob eng widderhuelend Memberschaft eng nees benotzbar Erneierungs-Zougangsdat huet, ier `auto_renew` gespäichert gëtt. Hook `wu_membership_has_renewal_credential` a gëff zeréck:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Läsch de Marker fir feelend Zougangsdaten als Deel vum erfollegräichen Neiautoriséierungs-Oflaf vun dengem Gateway, nodeems eng nei nees benotzbar Zougangsdat gespäichert gouf.
 
-## Tipps
+## Tipps {#tips}
 
 - Gëff bei engem Feeler ëmmer `WP_Error` zeréck, sou datt Ultimate Multisite d'Feeleruweisung handhabe kann
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Benotz `wu_log_add()` fir gateway-spezifescht Logging
 
-## Fäegkeete vum AI-Connector-Provider
+## Fäegkeete vum AI-Connector-Provider {#ai-connector-provider-capabilities}
 
 Benotzerdefinéiert Integratiounen, déi AI-Connector-gestäipt Operatiounen opruffen, sollten op de Set vun ënnerstëtzten OAuth-Provideren ofgestëmmt sinn, deen mat AI Provider for Anthropic Max v1.3.0 agefouert gouf:
 

@@ -3,7 +3,7 @@ title: Ġestjoni tat-Taxxa
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ġestjoni tat-Taxxa
+# Ġestjoni tat-Taxxa {#tax-handling}
 
 Ultimate Multisite għandu modulu għall-ġbir tat-taxxa mibni fil-plugin ewlieni tagħna, għalhekk jekk għandek bżonn tiġbor taxxi fuq il-bejgħ fuq il-pjanijiet, il-pakketti u s-servizzi tiegħek, tista’ tagħmel dan faċilment mingħajr ma tirrikorri għall-installazzjoni ta’ xi add-ons.
 
@@ -11,7 +11,7 @@ Għal kumpaniji li jinsabu fl-Ewropa, noffru **add-on** li jżid għodod u karat
 
 Ultimate Multisite ma jippreżentax jew iħallas it-taxxi f’ismek lill-gvern; aħna sempliċement ngħinuk tiġbor it-taxxi xierqa fil-ħin tat-tranżazzjoni. **Xorta jkollok bżonn tħallas it-taxxi waħdek.**
 
-## Attivazzjoni tal-Ġbir tat-Taxxa
+## Attivazzjoni tal-Ġbir tat-Taxxa {#enabling-tax-collection}
 
 Il-ġbir tat-taxxa mhuwiex attivat b’mod awtomatiku. Biex tattivah, trid tmur għal **Ultimate Multisite > Settings > Taxes** u taqleb biex tattiva s-setting Enable Taxes.
 
@@ -25,7 +25,7 @@ Tista’ tara wkoll is-settings tat-taxxa għal prodotti individwali:
 
 ![Settings tat-taxxa għall-prodotti](/img/config/settings-taxes.png)
 
-### Taxxa eskluża vs. Taxxa inkluża
+### Taxxa eskluża vs. Taxxa inkluża {#tax-excluded-vs-tax-included}
 
 B’mod awtomatiku, il-prezzijiet kollha tal-prodotti tiegħek huma esklużi mit-taxxa, jiġifieri t-taxxi **mhumiex inklużi** fil-prezz tal-prodott. Jekk niddeterminaw li klijent għandu jħallas taxxi fuq xiri partikolari, inżidu t-taxxi **fuq** is-subtotal.
 
@@ -37,7 +37,7 @@ Tinsiex **issalva** l-bidliet li għamilt.
 
 ###
 
-## Ħolqien ta’ Rati tat-Taxxa
+## Ħolqien ta’ Rati tat-Taxxa {#creating-tax-rates}
 
 Wara li tattiva l-Ġbir tat-Taxxa, ikollok bżonn toħloq rati tat-taxxa għal postijiet speċifiċi billi tuża l-editur tar-rati tat-taxxa tagħna.
 
@@ -51,7 +51,7 @@ Fuq il-paġna tal-editur tar-rati tat-taxxa, tista’ żżid Tax Rates ġodda bi
 
 Ikollok bżonn tagħti lil kull rata tat-taxxa **titlu** (użat fuq il-fatturi). Imbagħad tista’ tagħżel il-**pajjiż** (meħtieġ), l-**istat,** u l-**belt** (it-tnejn mhux obbligatorji) fejn din it-taxxa se tiġi ċċarġjata. Fl-aħħar, żid ir-**rata tat-taxxa f’perċentwali**.
 
-### Kategoriji tat-Taxxa
+### Kategoriji tat-Taxxa {#tax-categories}
 
 Tista’ wkoll toħloq diversi Kategoriji tat-Taxxa, biex iżżid rati tat-taxxa differenti għal tipi differenti ta’ prodotti.
 
@@ -73,7 +73,7 @@ Tista’ tissettja l-kategorija tat-taxxa għal prodott partikolari billi tmur f
 
 Fuq dak l-istess skrin, tista’ titfi t-toggle **Is Taxable?** biex tgħarraf lil Ultimate Multisite li m’għandux jiġbor taxxi fuq dak il-prodott partikolari.
 
-## Appoġġ għall-VAT Ewropea
+## Appoġġ għall-VAT Ewropea {#european-vat-support}
 
 Kif imsemmi qabel, għandna add-on disponibbli għal klijenti fl-UE li għandhom rekwiżiti addizzjonali minħabba r-regolamenti tal-VAT Ewropea.
 
@@ -101,7 +101,7 @@ Jekk terġa’ tmur fit-**tab Tax Settings** , tara għażliet ġodda disponibbl
 
 <!-- Screenshot unavailable: toggle Enable VAT Support fis-settings tat-Taxxa wara l-attivazzjoni tal-add-on -->
 
-### Ġbid tar-Rati tat-Taxxa tal-VAT
+### Ġbid tar-Rati tat-Taxxa tal-VAT {#pulling-on-vat-tax-rates}
 
 Waħda mill-għodod li żżid l-integrazzjoni tagħna hija l-abbiltà li tgħabbi r-rati tat-taxxa għall-istati membri tal-UE. Dan jista’ jsir billi żżur il-paġna tal-editur tar-rati tat-taxxa wara li tattiva l-appoġġ għall-VAT tal-UE.
 
@@ -111,7 +111,7 @@ Fil-qiegħ tal-paġna, tara l-għażliet tal-ġbid tal-VAT. Meta tagħżel tip t
 
 Tista’ wkoll teditja l-valuri wara li tiġbidhom. Biex tagħmel dan, sempliċement editja l-linja tat-tabella li għandek bżonn u kklikkja biex issalva l-valuri l-ġodda.
 
-### Validazzjoni tal-VAT
+### Validazzjoni tal-VAT {#vat-validation}
 
 Meta l-appoġġ għall-VAT ikun attivat, Ultimate Multisite se jżid qasam addizzjonali mal-formola taċ-checkout, taħt il-qasam tal-indirizz tal-kontijiet. Il-qasam jidher biss għall-klijenti li jinsabu fl-UE.
 

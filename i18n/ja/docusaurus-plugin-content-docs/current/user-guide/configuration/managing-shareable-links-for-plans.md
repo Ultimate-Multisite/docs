@@ -3,7 +3,7 @@ title: プランの共有可能リンクを管理する
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# プランの共有可能リンクの管理
+# プランの共有可能リンクの管理 {#managing-shareable-links-for-plans}
 
 Ultimate Multisite では、プランのリンクをクライアントに直接共有できます。これを行うには、任意のプランの編集ページに移動し、_クリックして共有可能リンクをコピー_ボタンをクリックします。
 

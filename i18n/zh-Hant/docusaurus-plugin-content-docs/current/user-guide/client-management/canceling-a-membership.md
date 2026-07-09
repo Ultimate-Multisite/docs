@@ -3,7 +3,7 @@ title: 取消會籍
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# 取消會員資格 (v2)
+# 取消會員資格 (v2) {#canceling-a-membership-v2}
 
 _**重要注意事項：本文適用於 Ultimate Multisite 2.x 版本。**_
 

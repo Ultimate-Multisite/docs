@@ -3,11 +3,11 @@ title: Dokuméntasi Pangembang
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokuméntasi Pamekar
+# Dokuméntasi Pamekar {#developer-documentation}
 
 Pituduh ieu nyayogikeun sagala anu diperlukeun ku pamekar pikeun ngahijikeun jeung, ngalegaan, atawa ngamekarkeun addon pikeun Ultimate Multisite. Ultimate Multisite ngarobah jaringan WordPress Multisite jadi platform Website-as-a-Service (WaaS).
 
-## Anu Sadia
+## Anu Sadia {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Operasi CRUD lengkep pikeun sadaya éntitas (palanggan, situs, kaanggotaan, pamayaran, produk, domain) kalayan auténtikasi API key
 - **[Rujukan Hooks](./hooks/guide)** — 200+ action hooks jeung 280+ filter hooks pikeun kajadian siklus hirup jeung kustomisasi
@@ -15,13 +15,13 @@ Pituduh ieu nyayogikeun sagala anu diperlukeun ku pamekar pikeun ngahijikeun jeu
 - **[Conto Kode](./code-examples/)** — Pola tingkat lanjut pikeun harga dinamis, panyadiaan situs, watesan kustom, jeung pamrosésan multi-gateway
 - **[Pamekaran Addon](./addon-development/getting-started)** — Kerangka terstruktur pikeun ngawangun plugin addon
 
-## Sarat
+## Sarat {#requirements}
 
 - Instalasi WordPress Multisite
 - PHP 7.4 atawa leuwih luhur
 - Plugin Ultimate Multisite diaktipkeun
 
-## Instalasi Composer / Bedrock
+## Instalasi Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite sadia dina [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) salaku `ultimate-multisite/ultimate-multisite`. Ieu métode instalasi anu disarankeun pikeun setup WordPress dumasar [Bedrock](https://roots.io/bedrock/) jeung lingkungan séjén anu dikokolakeun ku Composer.
 
@@ -45,15 +45,15 @@ Atawa, lamun anjeun ngamuat plugin salaku must-use plugin ngaliwatan autoloader 
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Mimitian Gancang
+## Mimitian Gancang {#quick-start}
 
-### Paké REST API
+### Paké REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Hook kana Kajadian
+### Hook kana Kajadian {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Ngawangun Addon
+### Ngawangun Addon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

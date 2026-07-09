@@ -3,7 +3,7 @@ title: PRO 테마
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme으로 Admin Panel 사용자 지정하기
+# PRO Theme으로 Admin Panel 사용자 지정하기 {#customizing-your-admin-panel-with-pro-theme}
 
 클라이언트 작업을 할 때 WordPress의 admin dashboard에서 클라이언트에게 맞춤형 경험을 제공해야 하는 경우가 자주 있습니다. 더 전문적인 모양과 느낌을 찾고 있다면 PRO Theme이 도움이 될 수 있습니다.
 

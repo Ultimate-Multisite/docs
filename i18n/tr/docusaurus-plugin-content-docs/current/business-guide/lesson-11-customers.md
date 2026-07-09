@@ -3,15 +3,15 @@ title: 'Ders 11: Müşteri Bulma'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Ders 11: Müşteri Bulma
+# Ders 11: Müşteri Bulma {#lesson-11-finding-customers}
 
 Müşterisi olmayan harika bir platform, sadece bir hobi olarak kalır. Bu ders, niş bir alanda müşteri edinme stratejilerini ele alıyor; bu stratejiler, tek bir sektöre odaklandığınız için özel olarak işe yarar.
 
-## Nerede Kalmıştık
+## Nerede Kalmıştık {#where-we-left-off}
 
 FitSite yayında. Şimdi fitness stüdyosu sahiplerinin onu bulması ve kaydolması gerekiyor.
 
-## Niş Edinimin Farkı Nedir
+## Niş Edinimin Farkı Nedir {#why-niche-acquisition-is-different}
 
 Herkese satış yaptığınızda, gürültülü bir pazarda dikkat çekmek için rekabet edersiniz. Nişe satış yaptığınızda ise avantajlarınız olur:
 
@@ -19,17 +19,17 @@ Herkese satış yaptığınızda, gürültülü bir pazarda dikkat çekmek için
 - **Mesajınız anında dikkat çeker** -- "fitness stüdyoları için web siteleri" ifadesi, bir spor salonu sahibini kaydırma yaparken durdurur
 - **Referanslar birikir** -- fitness stüdyosu sahipleri, diğer fitness stüdyosu sahiplerini tanır
 
-## Kanal 1: Doğrudan Erişim
+## Kanal 1: Doğrudan Erişim {#channel-1-direct-outreach}
 
 İlk müşterilerinize ulaşmanın en hızlı yolu, doğrudan ve kişisel bir iletişim kurmaktır.
 
-### Potansiyel Müşterileri Bulun
+### Potansiyel Müşterileri Bulun {#find-prospects}
 
 - Bölgenizdeki fitness stüdyolarını, spor salonlarını ve kişisel antrenörleri Google Haritalar'da arayın
 - Mevcut web sitelerini ziyaret edin (veya web sitelerinin olmadığını not edin)
 - Google İşletme profillerinden veya sosyal medyadan iletişim bilgilerini toplayın
 
-### Mevcut Durumlarını Değerlendirin
+### Mevcut Durumlarını Değerlendirin {#evaluate-their-current-situation}
 
 Her potansiyel müşteri için şunları not edin:
 
@@ -37,7 +37,7 @@ Her potansiyel müşteri için şunları not edin:
 - **Kötü web sitesi**: Güçlü bir potansiyel müşteri -- daha iyi bir seçeneğin nasıl göründüğünü gösterin
 - **İyi web sitesi**: Zayıf bir potansiyel müşteri -- bu sorunu zaten çözmüş durumda
 
-### İletişime Geçin
+### İletişime Geçin {#make-contact}
 
 Kişiselleştirilmiş bir e-posta veya mesaj gönderin:
 
@@ -48,7 +48,7 @@ Kişiselleştirilmiş bir e-posta veya mesaj gönderin:
 
 Toplu e-posta göndermeyin. İyi araştırılmış 20 kişiye gönderilen kişiselleştirilmiş bir iletişim, 2.000 kişiye gönderilen genel bir mesajdan daha iyi sonuç verir.
 
-## Kanal 2: Niş Topluluklar
+## Kanal 2: Niş Topluluklar {#channel-2-niche-communities}
 
 Fitness stüdyosu sahipleri belirli yerlerde çevrimiçi toplanır:
 
@@ -57,7 +57,7 @@ Fitness stüdyosu sahipleri belirli yerlerde çevrimiçi toplanır:
 - **Sektörel forumlar** ve tartışma panoları
 - Fitness profesyonelleri için **LinkedIn grupları**
 
-### Nasıl Katılırsınız
+### Nasıl Katılırsınız {#how-to-participate}
 
 Ürününüzü hemen tanıtmak için katılmayın. Bunun yerine:
 
@@ -66,7 +66,7 @@ Fitness stüdyosu sahipleri belirli yerlerde çevrimiçi toplanır:
 3. **Uygun olduğunda paylaşın** -- biri web siteleri hakkında sorduğunda, platformunuzu doğal bir şekilde paylaşın
 4. **Faydalı içerik oluşturun** -- "harika bir fitness stüdyosu web sitesini ne yapar" gibi konularda gönderiler yazın ve bu gönderiler doğal olarak platformunuza yönlendirsin
 
-## Kanal 3: İçerik Pazarlaması
+## Kanal 3: İçerik Pazarlaması {#channel-3-content-marketing}
 
 Fitness stüdyosu sahiplerinin aradığı içerikleri oluşturun:
 
@@ -77,7 +77,7 @@ Fitness stüdyosu sahiplerinin aradığı içerikleri oluşturun:
 
 Bunları FitSite pazarlama blogunuzda yayınlayın. Zamanla, bu içerikler arama motorlarında sıralanır ve sunduklarınız için aktif olarak arayan insanlardan organik trafik getirir.
 
-## Kanal 4: Ortaklıklar
+## Kanal 4: Ortaklıklar {#channel-4-partnerships}
 
 Zaten fitness stüdyolarına hizmet veren işletmelerle ortaklık kurun:
 
@@ -88,7 +88,7 @@ Zaten fitness stüdyolarına hizmet veren işletmelerle ortaklık kurun:
 
 Referans komisyonları veya karşılıklı tanıtım teklif edin. [AffiliateWP addon](/addons/affiliatewp) resmi bir referans programı kurmanıza yardımcı olabilir.
 
-## Kanal 5: Sektörel Etkinlikler
+## Kanal 5: Sektörel Etkinlikler {#channel-5-industry-events}
 
 Fitness endüstrisi etkinlikleri sizi yüzlerce potansiyel müşterinin önüne çıkarır:
 
@@ -99,7 +99,7 @@ Fitness endüstrisi etkinlikleri sizi yüzlerce potansiyel müşterinin önüne 
 
 Büyük bir bütçeye ihtiyacınız yok. Bir katılımcı olarak bile yer almak ve ne yaptığınız hakkında sohbetler etmek potansiyel müşteri yaratabilir.
 
-## Kanal 6: Vitrin Siteleri
+## Kanal 6: Vitrin Siteleri {#channel-6-showcase-sites}
 
 En iyi pazarlamanız, mevcut müşterilerinizin siteleridir. İzinle:
 
@@ -108,7 +108,7 @@ En iyi pazarlamanız, mevcut müşterilerinizin siteleridir. İzinle:
 - Memnun müşterilerden referanslar isteyin
 - Müşterileri, web siteleri hakkında sorulduğunda FitSite'ı anmalarını teşvik edin
 
-## Bir Referans Programı Kurmak
+## Bir Referans Programı Kurmak {#setting-up-a-referral-program}
 
 Ağızdan ağıza pazarlama, nişinizdeki en güçlü kanaldır. Bunu resmiyete dökün:
 
@@ -116,7 +116,7 @@ Ağızdan ağıza pazarlama, nişinizdeki en güçlü kanaldır. Bunu resmiyete 
 2. Mevcut müşterilere referansları için bir ödül teklif edin (bir ay ücretsiz, hesap kredisi vb.)
 3. Kolaylaştırın -- onlara bir referans bağlantısı ve iletebilecekleri basit bir mesaj verin
 
-## Neyin İşe Yaradığını Takip Etmek
+## Neyin İşe Yaradığını Takip Etmek {#tracking-what-works}
 
 Her kanal için şunları takip edin:
 
@@ -126,7 +126,7 @@ Her kanal için şunları takip edin:
 
 İşe yarayan kanallara odaklanın. İşe yaramayan kanalları kesin.
 
-## Gerçekçi Beklentiler
+## Gerçekçi Beklentiler {#realistic-expectations}
 
 - **1-3. Ay**: 5-20 müşteri, çoğunlukla doğrudan erişim ve topluluklardan
 - **4-6. Ay**: 20-50 müşteri, içerik pazarlaması katkı sağlamaya başlar
@@ -134,7 +134,7 @@ Her kanal için şunları takip edin:
 
 Bu sayılar değişir, ancak örüntü tutarlıdır: erken müşteriler doğrudan çabadan, sonraki müşteriler ise içerik, referans ve itibarın birikimli etkilerinden gelir.
 
-## Bu Derste Neler İnşa Ettik
+## Bu Derste Neler İnşa Ettik {#what-we-built-this-lesson}
 
 - Fitness nişine özel **altı edinme kanalı**
 - İlk müşterileri yakalamak için **doğrudan erişim süreci**

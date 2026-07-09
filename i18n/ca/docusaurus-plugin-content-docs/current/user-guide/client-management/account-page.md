@@ -3,7 +3,7 @@ title: Pàgina Account del client
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# La pàgina Account del vostre client (v2)
+# La pàgina Account del vostre client (v2) {#your-clients-account-page-v2}
 
 _**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 
@@ -11,7 +11,7 @@ Quan els clients se subscriuen a un pla a la vostra xarxa, obtenen accés a un l
 
 En aquest tutorial, us guiarem per la pàgina Account del client i veureu què poden veure i fer-hi els vostres clients.
 
-## La pàgina Account
+## La pàgina Account {#the-account-page}
 
 La pàgina Account és accessible fent clic a **Account** dins del dashboard del vostre client.
 
@@ -27,7 +27,7 @@ Després que un client hi faci clic, veurà una visió general de la seva membre
 
 També pot canviar la membresia a un altre pla, o comprar un altre paquet o servei que oferiu. Vegem cada secció per separat.
 
-### Visió general de la vostra membresia:
+### Visió general de la vostra membresia: {#your-membership-overview}
 
 El primer bloc just sota el nom del lloc web dels vostres clients mostra una visió general del seu pla actual i dels serveis/paquets que s'hi van comprar. El bloc també mostra el número de membresia, l'import inicial pagat, quant costen el pla i qualsevol servei/paquet, i quantes vegades se'ls ha facturat per aquesta membresia. També poden veure si la membresia està **Activa** , **Expirada** o **Cancel·lada**.
 
@@ -43,7 +43,7 @@ Ara bé, si els vostres clients decideixen comprar paquets o serveis per a aques
 
 Tingueu en compte que no es poden afegir codis de cupó en aquesta pàgina de canvi de membresia. Si el client va utilitzar un codi de cupó en la primera compra de membresia, el codi també s'aplicarà a aquesta nova membresia.
 
-### Actualització de l'adreça de facturació:
+### Actualització de l'adreça de facturació: {#updating-the-billing-address}
 
 A la pàgina Account, els vostres clients també poden actualitzar la seva adreça de facturació. Només han de fer clic a **Actualitza** al costat de _Adreça de facturació_.
 
@@ -53,7 +53,7 @@ Apareixerà una finestra nova per al vostre client. Tot el que ha de fer és emp
 
 ![Formulari d'actualització de l'adreça de facturació](/img/account-page/billing-address-form.png)
 
-### Canvi de la plantilla del lloc:
+### Canvi de la plantilla del lloc: {#changing-the-site-template}
 
 Per permetre que els vostres clients canviïn les plantilles dels seus llocs, heu d'anar a **Ultimate Multisite > Settings > Sites** i activar l'opció **Permet el canvi de plantilla**.
 
@@ -81,7 +81,7 @@ Després d'activar la confirmació i fer clic a **Processa el canvi** , la nova 
 
 Els clients també poden fer servir **Restableix la plantilla actual** des d’aquest panell quan necessitin restablir el lloc a la plantilla assignada actualment. Igual que en canviar a una altra plantilla, restablir una plantilla pot sobreescriure el contingut del lloc, així que els clients només ho haurien de confirmar quan entenguin l’acció de restabliment.
 
-### Afegir dominis personalitzats:
+### Afegir dominis personalitzats: {#adding-custom-domains}
 
 Els teus clients també tindran l’opció d’afegir un domini personalitzat per a aquest pla a la seva pàgina Account. Per permetre que els teus clients facin servir dominis personalitzats, ves a **Ultimate Multisite > Configuració >** **Mapatge de dominis**.
 
@@ -115,7 +115,7 @@ Després de fer clic a **Pas següent** , els teus clients poden afegir el nom d
 
 Després de fer clic a **Afegeix domini** , el domini s’afegirà al compte del teu client. Ara l’únic que han de fer és canviar els registres DNS d’aquest domini personalitzat al seu registrador de dominis.
 
-### Canviar la contrasenya:
+### Canviar la contrasenya: {#changing-password}
 
 Dins del Dashboard del compte, els teus clients també poden canviar la seva contrasenya fent clic a **Canvia la contrasenya**.
 
@@ -125,7 +125,7 @@ Això mostrarà una finestra nova on els teus clients hauran d’introduir la se
 
 ![Formulari de canvi de contrasenya amb camps de contrasenya actual i nova](/img/account-page/change-password-form.png)
 
-### Zona de perill:
+### Zona de perill: {#danger-zone}
 
 També tenim dues opcions que es mostren a la part **Zona de perill**: **Suprimeix el lloc** i **Suprimeix el compte**. Totes dues són a la part Zona de perill perquè aquestes dues accions són irreversibles. Si els teus clients suprimeixen el seu lloc web o el seu compte, no els podran recuperar.
 

@@ -3,31 +3,31 @@ title: Förstå instrumentpanelen
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Förstå Ultimate Multisite-panelen
+# Förstå Ultimate Multisite-panelen {#understanding-the-ultimate-multisite-dashboard}
 
 Innan vi fördjupar oss i mer avancerade konfigurationsalternativ och de operativa aspekterna av Ultimate Multisite, låt oss ta en titt på panelen.
 
 Precis som många WordPress-tillägg skapar Ultimate Multisite en menypost på nätverksnivå med titeln **Ultimate Multisite** med ett antal undermenyalternativ.
 
-## Widgetar i nätverkspanelen
+## Widgetar i nätverkspanelen {#network-dashboard-widgets}
 
 Ultimate Multisite lägger till några användbara widgetar i panelen på nätverksnivå. Denna panel hittar du genom att navigera till **Mina webbplatser → Nätverksadmin → Panel**. Widgetarna är utformade för att ge enkel åtkomst till information och vanliga åtgärder för nätverksadministratören.
 
 ![Nätverkspanelen med Ultimate Multisite-widgetar](/img/admin/network-dashboard-full.png)
 
-### Kom igång
+### Kom igång {#first-steps}
 
 ![Kom igång-widget](/img/admin/network-dashboard-first-steps.png)
 
 Denna widget visas vid en ny installation av Ultimate Multisite och påminner nätverksadministratören om att slutföra ytterligare uppgifter som att konfigurera en betalningsmetod och skapa ett testkonto.
 
-### Sammanfattning
+### Sammanfattning {#summary}
 
 ![Sammanfattningswidget](/img/admin/network-dashboard-summary.png)
 
 Sammanfattningswidgeten visar antal registreringar och deras intäkter för dagen. MRR (månatliga återkommande intäkter) anger en uppskattad totalsumma för kunder med intäktsgenererande medlemskap.
 
-### Aktivitetsflöde
+### Aktivitetsflöde {#activity-stream}
 
 ![Aktivitetsflödeswidget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Denna widget rapporterar händelser i hela Ultimate Multisite. Händelser inklud
 
 Se avsnittet Händelser i dokumentationen för en mer detaljerad beskrivning.
 
-### Just nu
+### Just nu {#right-now}
 
 ![Just nu-widget](/img/admin/network-dashboard-right-now.png)
 
 Denna praktiska widget visar en kort sammanfattning av användare och webbplatser i nätverket. Smidiga genvägar högst upp ger ettklicksåtkomst för att skapa nya webbplatser eller användare.
 
-### Nyheter och diskussioner
+### Nyheter och diskussioner {#news-and-discussions}
 
 ![Nyheter och diskussioner-widget](/img/admin/network-dashboard-news.png)
 
 Denna widget hämtar och visar de senaste nyheterna om Ultimate Multisite. Håll ett öga på denna widget för information om uppdateringar, kritiska buggar och säkerhetskorrigeringar.
 
-## Ultimate Multisite-panelen
+## Ultimate Multisite-panelen {#ultimate-multisite-dashboard}
 
 Medan panelen på nätverksnivå presenterar övergripande information om nätverket, visar Ultimate Multisite-panelen (som finns på översta nivån i Ultimate Multisite-menyn) information om tjänsten.
 
 ![Ultimate Multisite-panelen](/img/admin/um-dashboard-top.png)
 
-### Tillväxt av månatliga återkommande intäkter
+### Tillväxt av månatliga återkommande intäkter {#monthly-recurring-revenue-growth}
 
 MRR-diagrammet (månatliga återkommande intäkter) visar en månadsvis uppdelning av intäkter över en 12-månaders kalenderperiod.
 
@@ -61,7 +61,7 @@ MRR-diagrammet (månatliga återkommande intäkter) visar en månadsvis uppdelni
 
 Nya intäkter visas i blått medan avslut visas i rött.
 
-### Stöd för datumintervall
+### Stöd för datumintervall {#date-range-support}
 
 Beroende på antalet kunder och aktivitet kan statistiken bli överväldigande. Det inbyggda stödet för datumintervall i panelen gör att nätverksadministratören kan fokusera på endast den information och tidsperiod som behövs.
 

@@ -3,7 +3,7 @@ title: Aħjar PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Aħdat il-Gateway ta PayPal (v2)
+# Aħdat il-Gateway ta PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTA IMPORTANTI: Dan l-artiklu jiferix għall Ultimate Multisite bizzjoni 2.x.**_
 
@@ -13,13 +13,13 @@ F'mod ġenerali bħal Stripe, PayPal jiegħtieħdu għall-pagamenti on-line, spe
 
 Nota li għandek **kont PayPal Business** biex tiġi l-API credential li għadte għall-integrazzjoni.
 
-## Attivazzjoni tal-PayPal fuq la-netwerk tiegħek
+## Attivazzjoni tal-PayPal fuq la-netwerk tiegħek {#enabling-paypal-on-your-network}
 
 Biex tattivazzxi l-PayPal bħala metod ta pagament disponibbli fuq la-netwerk tiegħek, għandi tmur għand **Ultimate Multisite > Settings > Payments** u tagħmel il-tick box li jipprovdi lil PayPal.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Użu tal-wizard ta setup guidat
+## Użu tal-wizard ta setup guidat {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 jiddeq wizard ta setup guidat għall-PayPal f'ippoġġi tal-gateway ta pagament. Wara ma attiverti l-PayPal, uża l-wizard fuq **Ultimate Multisite > Settings > Payments** biex tista' tagħżir kif tista' tipprovvidi lil gateway u ti conferma li quali credential għad ikun għadte qabel ma tgħmli save.
 
@@ -30,7 +30,7 @@ Il-wizard jipproxxamma żwiem l-trażi ta setup:
 
 Meta ma tista' tqabbil l-opzjoni OAuth fil-wizard, kumpletta l-flus manual tal-credentials li j segue. Il-gateway jaħdem mal-API credentials ta PayPal Business isiem minn il-rilizzamenti precedenti tal-Ultimate Multisite 2.x.
 
-## Għtieġ l-PayPal API credentials
+## Għtieġ l-PayPal API credentials {#getting-the-paypal-api-credentials}
 
 Morniex PayPal ma jkollok biex tiġi popolat il-fieldijiet għall-PayPal API **Username**, PayPal API **Password** u PayPal API **Signature**.
 

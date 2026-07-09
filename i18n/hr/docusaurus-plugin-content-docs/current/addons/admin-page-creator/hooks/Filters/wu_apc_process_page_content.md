@@ -4,11 +4,11 @@ title: Filtar - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filtar: wu_apc_process_page_content
+# Filtar: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Omogućuje developerima da mijenjaju konačni sadržaj
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Omogućuje developerima da mijenjaju konačni sadržaj
 | $to_replace | `array` | Niz koji sadrži rezervirana mjesta. |
 | $placeholder_count | `int` | Broj pronađenih rezerviranih mjesta. |
 
-### Od
+### Od {#since}
 
 - 1.4.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) u retku 46
 
 
-## Vraća
+## Vraća {#returns}
 Sadržaj nakon izmjene.

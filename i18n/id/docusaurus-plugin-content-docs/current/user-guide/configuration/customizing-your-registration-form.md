@@ -3,13 +3,13 @@ title: Menyesuaikan Formulir Pendaftaran Anda
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Menyesuaikan Formulir Pendaftaran Anda
+# Menyesuaikan Formulir Pendaftaran Anda {#customizing-your-registration-form}
 
 Untuk membuat jaringan Anda terlihat unik dibandingkan semua SaaS lain yang dibangun di platform WordPress, Ultimate Multisite memungkinkan Anda menyesuaikan halaman pendaftaran dan login dengan fitur **Checkout Forms** kami.
 
 Meskipun fitur ini merupakan cara yang mudah dan fleksibel untuk bereksperimen dengan berbagai pendekatan saat mencoba mengonversi pelanggan baru, fitur ini paling sering digunakan untuk membuat formulir pendaftaran yang dipersonalisasi. Artikel ini bertujuan menunjukkan kepada Anda bagaimana Anda dapat melakukannya.
 
-## Halaman login dan pendaftaran:
+## Halaman login dan pendaftaran: {#login-and-registration-pages}
 
 Saat instalasi Ultimate Multisite, Ultimate Multisite secara otomatis membuat halaman login dan pendaftaran kustom di situs utama Anda. Anda dapat mengubah halaman default ini kapan saja dengan membuka halaman **Ultimate Multisite > Settings > Login & Registration** Anda.
 
@@ -45,7 +45,7 @@ Sekarang, mari lihat opsi lain yang masih relevan dengan proses login dan pendaf
 
 Dan itulah semua opsi terkait login dan pendaftaran yang dapat Anda sesuaikan! Jangan lupa menyimpan pengaturan Anda setelah selesai mengeditnya.
 
-## Menggunakan beberapa formulir pendaftaran:
+## Menggunakan beberapa formulir pendaftaran: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 menawarkan editor checkout form yang memungkinkan Anda membuat formulir sebanyak yang Anda inginkan, dengan field berbeda, produk yang ditawarkan, dan sebagainya.
 
@@ -69,7 +69,7 @@ Sebagai alternatif, Anda dapat mengedit atau menduplikasi formulir yang sudah An
 
 Jika Anda memilih satu langkah atau multi-langkah, checkout form sudah akan terisi sebelumnya dengan langkah-langkah dasar agar dapat bekerja. Lalu, jika Anda mau, Anda dapat menambahkan langkah ekstra ke dalamnya.
 
-### Mengedit Checkout Form:
+### Mengedit Checkout Form: {#editing-a-checkout-form}
 
 Seperti yang kami sebutkan sebelumnya, Anda dapat membuat checkout form untuk berbagai tujuan. Dalam contoh ini kita akan mengerjakan formulir pendaftaran.
 
@@ -131,11 +131,11 @@ Untuk mendapatkan shortcode formulir Anda, klik **Buat Shortcode** dan salin has
 
 _**Catatan:** Anda perlu menambahkan shortcode ini ke halaman pendaftaran Anda agar formulir pembayaran ini ditambahkan ke halaman tersebut._
 
-## Memilih produk dan template lebih awal melalui parameter URL:
+## Memilih produk dan template lebih awal melalui parameter URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Jika Anda ingin membuat tabel harga yang disesuaikan untuk produk Anda dan memilih lebih awal pada formulir pembayaran produk atau template yang dipilih pelanggan Anda dari tabel harga atau halaman template, Anda dapat menggunakan parameter URL untuk ini.
 
-### **Untuk paket:**
+### **Untuk paket:** {#for-plans}
 
 Buka **Ultimate Multisite > Produk > Pilih paket**. Anda seharusnya melihat tombol **Klik untuk menyalin Tautan yang Dapat Dibagikan** di bagian atas halaman. Ini adalah tautan yang dapat Anda gunakan untuk memilih lebih awal paket spesifik ini pada formulir pembayaran Anda.
 
@@ -143,7 +143,7 @@ Buka **Ultimate Multisite > Produk > Pilih paket**. Anda seharusnya melihat tomb
 
 Perhatikan bahwa tautan yang dapat dibagikan ini hanya valid untuk **Paket**. Anda tidak dapat menggunakan tautan yang dapat dibagikan untuk paket bundel atau layanan.
 
-### Untuk template:
+### Untuk template: {#for-templates}
 
 Jika Anda ingin memilih lebih awal template situs pada formulir pembayaran Anda, Anda dapat menggunakan parameter: **?template_id=X** pada URL halaman pendaftaran Anda. "X" perlu diganti dengan **nomor ID template situs**. Untuk mendapatkan nomor ini, buka **Ultimate Multisite > Situs**.
 

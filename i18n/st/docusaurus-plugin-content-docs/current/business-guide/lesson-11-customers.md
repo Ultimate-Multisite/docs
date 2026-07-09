@@ -3,15 +3,15 @@ title: 'Thuto 11: Ho fumana bareki'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Thuto 11: Ho Fumana Bareki
+# Thuto 11: Ho Fumana Bareki {#lesson-11-finding-customers}
 
 Sethala se setle se se nang bareki ke boithabiso feela. Thuto ena e akaretsa kamoo o ka fumanang bareki lekaleng le itseng la niche -- maano a sebetsang ka ho khetheha hobane o tsepamisitse maikutlo indastering e le nngwe.
 
-## Moo re Ileng ra Emisa Teng
+## Moo re Ileng ra Emisa Teng {#where-we-left-off}
 
 FitSite e se e sebetsa. Jwale re hloka hore beng ba di-studio tsa boikoetliso ba e fumane mme ba ingodise.
 
-## Hobaneng ha ho Fumana Bareki ba Niche ho Fapane
+## Hobaneng ha ho Fumana Bareki ba Niche ho Fapane {#why-niche-acquisition-is-different}
 
 Ha o rekisetsa bohle, o qothisana lehlokoa bakeng sa tlhokomelo mmarakeng o lerata. Ha o rekisetsa niche, o na le melemo:
 
@@ -19,17 +19,17 @@ Ha o rekisetsa bohle, o qothisana lehlokoa bakeng sa tlhokomelo mmarakeng o lera
 - **Molaetsa wa hao o kgahla hanghang** -- "websites bakeng sa di-studio tsa boikoetliso" e emisa monga gym ha a ntse a scrolla
 - **Ditshupiso di a eketseha** -- beng ba di-studio tsa boikoetliso ba tseba beng ba bang ba di-studio tsa boikoetliso
 
-## Kanale 1: Ho Ikgokahanya ka Kotloloho
+## Kanale 1: Ho Ikgokahanya ka Kotloloho {#channel-1-direct-outreach}
 
 Tsela e potlakileng ka ho fetisisa ya ho fumana bareki ba hao ba pele ke ho ikopanya le bona ka kotloloho le ka tsela ya botho.
 
-### Fumana Bao e ka Bang Bareki
+### Fumana Bao e ka Bang Bareki {#find-prospects}
 
 - Batla Google Maps bakeng sa di-studio tsa boikoetliso, di-gym, le bakoetlisi ba motho ka mong sebakeng sa heno
 - Etela websites tsa bona tsa hona jwale (kapa o ngole hore ha ba na yona)
 - Bokella tlhahisoleseding ya kgokahano ho diprofaele tsa bona tsa Google Business kapa social media
 
-### Lekola Boemo ba Bona ba Hona Jwale
+### Lekola Boemo ba Bona ba Hona Jwale {#evaluate-their-current-situation}
 
 Bakeng sa e mong le e mong eo e ka bang moreki, ngola:
 
@@ -37,7 +37,7 @@ Bakeng sa e mong le e mong eo e ka bang moreki, ngola:
 - **Website e mpe**: E ka bang moreki ya matla -- ba bontshe hore kgetho e betere e shebahala jwang
 - **Website e ntle**: E ka bang moreki ya fokolang -- ba se ba rarolotse bothata bona
 
-### Etsa Kgokahano
+### Etsa Kgokahano {#make-contact}
 
 Romela email kapa molaetsa o etseditsweng motho eo ka ho kgetheha:
 
@@ -48,7 +48,7 @@ Romela email kapa molaetsa o etseditsweng motho eo ka ho kgetheha:
 
 O se ke wa romela di-email tse ngata ka bongata. Ho ikopanya ka tsela ya botho le batho ba 20 bao o ba batlisisitseng hantle ho tla sebetsa betere ho feta ho thunya molaetsa o akaretsang ho ba 2,000.
 
-## Kanale 2: Ditjhaba tsa Niche
+## Kanale 2: Ditjhaba tsa Niche {#channel-2-niche-communities}
 
 Beng ba di-studio tsa boikoetliso ba kopana dibakeng tse itseng inthaneteng:
 
@@ -57,7 +57,7 @@ Beng ba di-studio tsa boikoetliso ba kopana dibakeng tse itseng inthaneteng:
 - **Diforamo tsa indasteri** le diboto tsa puisano
 - **Dihlopha tsa LinkedIn** bakeng sa ditsebi tsa boikoetliso
 
-### Kamoo o ka Nkang Karolo
+### Kamoo o ka Nkang Karolo {#how-to-participate}
 
 O se ke wa kena mme hanghang wa bapatsa product ya hao. Ho ena le hoo:
 
@@ -66,7 +66,7 @@ O se ke wa kena mme hanghang wa bapatsa product ya hao. Ho ena le hoo:
 3. **Arolelana ha ho tshwaneleha** -- ha motho a botsa ka websites, arolelana sethala sa hao ka tlhaho
 4. **Bopa dikahare tse molemo** -- ngola diposo ka "se etsang hore website ya studio sa boikoetliso e be ntle" tse isang ka tlhaho sethaleng sa hao
 
-## Kanale 3: Papatso ka Dikahare
+## Kanale 3: Papatso ka Dikahare {#channel-3-content-marketing}
 
 Bopa dikahare tseo beng ba di-studio tsa boikoetliso ba di batlang:
 
@@ -77,7 +77,7 @@ Bopa dikahare tseo beng ba di-studio tsa boikoetliso ba di batlang:
 
 Phatlalatsa sena blogeng ya papatso ya FitSite. Ha nako e ntse e ya, dikahare tsena di fumana maemo ho dienjine tsa patlo mme di tlisa sephethephethe sa tlhaho ho tswa ho batho ba batlang ka mafolofolo seo o fanang ka sona.
 
-## Kanale 4: Dikamano tsa Kgwebo
+## Kanale 4: Dikamano tsa Kgwebo {#channel-4-partnerships}
 
 Sebedisana le dikgwebo tse seng di sebeletsa di-studio tsa boikoetliso:
 
@@ -88,7 +88,7 @@ Sebedisana le dikgwebo tse seng di sebeletsa di-studio tsa boikoetliso:
 
 Fana ka dikhomishene tsa tshupiso kapa kgothaletso ya ho busetsana. [AffiliateWP addon](/addons/affiliatewp) e ka o thusa ho theha lenaneo la semmuso la tshupiso.
 
-## Kanale 5: Diketsahalo tsa Indasteri
+## Kanale 5: Diketsahalo tsa Indasteri {#channel-5-industry-events}
 
 Diketsahalo tsa indasteri ya boikoetliso di o beha ka pele ho makgolo a bareki ba ka bang teng:
 
@@ -99,7 +99,7 @@ Diketsahalo tsa indasteri ya boikoetliso di o beha ka pele ho makgolo a bareki b
 
 Ha o hloke tekanyetso e kgolo ya tjhelete. Esita le ho ya jwalo ka monkakarolo le ho ba le dipuisano ka seo o se etsang ho ka hlahisa menyetla ya bareki.
 
-## Kanale 6: Dibaka tsa Pontsho
+## Kanale 6: Dibaka tsa Pontsho {#channel-6-showcase-sites}
 
 Papatso ya hao e ntle ka ho fetisisa ke dibaka tsa bareki ba hao ba teng. Ka tumello:
 
@@ -108,7 +108,7 @@ Papatso ya hao e ntle ka ho fetisisa ke dibaka tsa bareki ba hao ba teng. Ka tum
 - Kopa bareki ba kgotsofetseng dipaki
 - Kgothaletsa bareki ho bua ka FitSite ha ba botswa ka website ya bona
 
-## Ho Theha Lenaneo la Tshupiso
+## Ho Theha Lenaneo la Tshupiso {#setting-up-a-referral-program}
 
 Ho buisana ka molomo ke kanale ya hao e matla ka ho fetisisa ho niche. E etse ya semmuso:
 
@@ -116,7 +116,7 @@ Ho buisana ka molomo ke kanale ya hao e matla ka ho fetisisa ho niche. E etse ya
 2. Fana ka moputso ho bareki ba teng bakeng sa ditshupiso (kgwedi e le nngwe mahala, account credit, jj.)
 3. E etse hore ho be bonolo -- ba fe link ya tshupiso le molaetsa o bonolo oo ba ka o fetisetsang pele
 
-## Ho Sala Morao se Sebetsang
+## Ho Sala Morao se Sebetsang {#tracking-what-works}
 
 Bakeng sa kanale ka nngwe, sala morao:
 
@@ -126,7 +126,7 @@ Bakeng sa kanale ka nngwe, sala morao:
 
 Eketsa boiteko dikanaleng tse sebetsang. Kgaola dikanale tse sa sebetseng.
 
-## Ditebello tsa Nnete
+## Ditebello tsa Nnete {#realistic-expectations}
 
 - **Kgwedi 1-3**: Bareki ba 5-20, haholoholo ho tswa ho ho ikopanya ka kotloloho le ditjhaba
 - **Kgwedi 4-6**: Bareki ba 20-50, papatso ka dikahare e qala ho kenya letsoho
@@ -134,7 +134,7 @@ Eketsa boiteko dikanaleng tse sebetsang. Kgaola dikanale tse sa sebetseng.
 
 Dipalo tsena di a fapana, empa paterone e tsitsitse: bareki ba pele ba tswa boitekong bo tobileng, bareki ba hamorao ba tswa ditlamoraong tse eketsehang tsa dikahare, ditshupiso, le botumo.
 
-## Seo re se Hahileng Thutong Ena
+## Seo re se Hahileng Thutong Ena {#what-we-built-this-lesson}
 
 - **Dikanale tse tsheletseng tsa ho fumana bareki** tse etseditsweng lekala le ikgethang la boikoetliso
 - **Tshebetso ya ho ikopanya ka kotloloho** bakeng sa ho fumana bareki ba pele

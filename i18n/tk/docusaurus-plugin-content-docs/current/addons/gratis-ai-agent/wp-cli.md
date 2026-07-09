@@ -3,11 +3,11 @@ title: WP-CLI salgylanmasy
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI salgylanmasy
+# WP-CLI salgylanmasy {#wp-cli-reference}
 
 Gratis AI Agent agenti ölçeg synagy etmek, ukyplary dolandyrmak we buýruk setirinden agent ýagdaýyny soramak üçin `wp gratis-ai-agent` buýruk maşgalasy bilen gelýär. Ähli buýruklar WP-CLI 2.0 ýa-da has ýokary wersiýany talap edýär.
 
-## Gurnama
+## Gurnama {#installation}
 
 WP-CLI buýruklary plugin işjeň bolanda awtomatik hasaba alynýar. Muny şunuň bilen barlaň:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agent ukyplarynyň ölçeg synag toplumyny işledýär — bu doly ukyp gerimini synaýan çylşyrymly, köp ädimli görkezmeleriň toplumydyr. Muny model öndürijiligini bahalandyrmak, AI üpjün edijileri deňeşdirmek ýa-da önümçilik gurşawyna ýerleşdirmezden öň ukyp paketlerini tassyklamak üçin ulanyň.
 
-### Gysgaça görnüş
+### Gysgaça görnüş {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Opsiýalar
+### Opsiýalar {#options}
 
 | Opsiýa | Düşündiriş |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Çykyş formaty: `table` (başdaky), `json`, `csv` |
 | `--save` | Taryhy deňeşdirme üçin ölçeg synag netijelerini maglumatlar bazasyna saklaň |
 
-### Mysallar
+### Mysallar {#examples}
 
 Häzirki üpjün ediji we model bilen doly ölçeg synag toplumyny işlediň:
 
@@ -57,7 +57,7 @@ Belli bir modele garşy işlediň we netijeleri saklaň:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Çykyş
+### Çykyş {#output}
 
 Ölçeg synagy aşakdaky sütünler bilen her sorag üçin bir hatar çykarýar:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Ölçeg synag soraglary
+### Ölçeg synag soraglary {#benchmark-questions}
 
 Başdaky toplum şulary öz içine alýar:
 
@@ -95,11 +95,11 @@ Goşmaça soraglar `gratis_ai_agent_benchmark_questions` filter arkaly hasaba al
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Gurlan ukyplary we ukyp paketlerini dolandyrýar.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Ähli hasaba alnan ukyplary, olaryň çeşmesini (esasy ýa-da paket) we häzirki ýagdaýyny sanap görkezýär.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Registrden ukyp paketini ýükleýär we işjeňleşdirýär.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Paketi aýyrmazdan belli bir ukypy öçürýär. Berlen web sahypasynda agentiň gerimini çäklendirmek üçin peýdaly.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Öň öçürilen ukypy täzeden işjeňleşdirýär.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Häzirki agent sazlamasyny we baglanyşyk ýagdaýyny görkezýär.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Debug log-dan soňky agent işjeňligini görkezýär.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Agent ýagdaýyny täzeden düzýär: girizilen CSS-i arassalaýar, agent tarapyndan hasaba alnan CPT-leri we taksonomiýalary aýyrýar, global stilleri täzeden düzýär we agentiň opsiýalar keşini boşadýar. Plugin-i ýa-da onuň sazlamalaryny aýyrmaýar.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Çykyş kodlary
+## Çykyş kodlary {#exit-codes}
 
 Ähli buýruklar üstünlikli bolanda `0` bilen çykýar. Nol däl çykyş kodlary:
 

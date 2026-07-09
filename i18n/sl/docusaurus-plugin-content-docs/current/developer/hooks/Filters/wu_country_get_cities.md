@@ -4,11 +4,11 @@ title: Filter - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 Vrne seznam mest za zvezno državo v državi.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Vrne seznam mest za zvezno državo v državi.
 | $state_code | `string` | Dvočrkovna ISO koda za zvezno državo. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instanca trenutnega razreda. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.11
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) v vrstici 146
 
 
-## Vrne
+## Vrne {#returns}
 Filtriran seznam zveznih držav.

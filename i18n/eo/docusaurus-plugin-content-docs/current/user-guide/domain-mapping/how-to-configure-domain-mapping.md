@@ -3,17 +3,17 @@ title: Kiel agordi domajnan mapadon
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kiel agordi domajnan mapadon (v2)
+# Kiel agordi domajnan mapadon (v2) {#how-to-configure-domain-mapping-v2}
 
 _**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 
 Unu el la plej potencaj funkcioj de altkvalita reto estas la eblo oferti al niaj klientoj ŝancon ligi pintnivelan domajnon al iliaj retejoj. Finfine, kio aspektas pli profesia: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) aŭ [_**joesbikeshop.com**_](http://joesbikeshop.com)? Tial Ultimate Multisite ofertas tiun funkcion enkonstruita, sen la bezono uzi triaflankajn kromprogramojn.
 
-## Kio estas domajna mapado?
+## Kio estas domajna mapado? {#whats-domain-mapping}
 
 Kiel la nomo sugestas, domajna mapado estas la eblo ofertata de Ultimate Multisite akcepti peton por propra domajno kaj mapi tiun peton al la responda retejo en la reto kun tiu aparta domajno ligita.
 
-### Kiel agordi domajnan mapadon en via Ultimate Multisite Reto
+### Kiel agordi domajnan mapadon en via Ultimate Multisite Reto {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domajna mapado postulas iom da agordo viaflanke por funkcii. Feliĉe, Ultimate Multisite aŭtomatigas la malfacilan laboron por vi, tiel ke vi povas facile plenumi la postulojn.
 
@@ -45,7 +45,7 @@ Sed antaŭ ol vi komencos mapi la propran domajnon al unu el la subretejoj en vi
 
 ###
 
-### Certigi, ke la DNS-agordoj de la domajno estas ĝuste agorditaj
+### Certigi, ke la DNS-agordoj de la domajno estas ĝuste agorditaj {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Por ke mapado funkciu, vi devas certigi, ke la domajno, kiun vi planas mapi, montras al la IP-adreso de via Reto. Notu, ke vi bezonas la IP-adreson de la Reto - la IP-adreson de la domajno kie Ultimate Multisite estas instalita - ne la IP-adreson de la propra domajno, kiun vi volas mapi. Por serĉi la IP-adreson de specifa domajno, ni sugestas iri al [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), ekzemple.
 
@@ -55,7 +55,7 @@ Se vi spertas problemojn funkciigi ĉi tion, **kontaktu la subtenon de via domaj
 
 Se vi planas permesi al viaj klientoj mapi siajn proprajn domajnojn, ili devos fari la laboron pri ĉi tiu parto mem. Direktigu ilin al la subtena sistemo de ilia registristo se ili ne povas krei la A Record.
 
-### Mapi propran domajnan nomon kiel Superadministranto
+### Mapi propran domajnan nomon kiel Superadministranto {#mapping-custom-domain-name-as-super-admin}
 
 Kiam vi estas ensalutinta kiel superadministranto en via reto, vi povas facile aldoni kaj administri proprajn domajnajn nomojn irante al **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Se vi alklakas la domajnan nomon, vi povos vidi kelkajn opciojn ene de ĝi. Ni r
 
 **Ĉu Sekura?:** Kvankam Ultimate Multisite kontrolas ĉu la domajno havas SSL-atestilon aŭ ne antaŭ ol ebligi ĝin, vi povas permane elekti ŝargi la domajnon kun aŭ sen SSL-atestilo. Notu, ke se la retejo ne havas SSL-atestilon kaj vi provas devige ŝargi ĝin kun SSL, ĝi povas doni al vi erarojn.
 
-### Mapi propran domajnan nomon kiel subreteja uzanto
+### Mapi propran domajnan nomon kiel subreteja uzanto {#mapping-custom-domain-name-as-subsite-user}
 
 Subretejaj administrantoj ankaŭ povas mapi proprajn domajnajn nomojn el sia subreteja administra Dashboard.
 
@@ -121,7 +121,7 @@ La uzanto povas tiam alklaki **Sekva Paŝo** kaj daŭrigi por aldoni la propran 
 
 Alklaki **Aldoni Domajnon** komencos la procezon de konfirmado kaj akirado de la DNS-informoj de la propra domajno.
 
-### Pri Domajna Sinkronigado
+### Pri Domajna Sinkronigado {#about-domain-syncing}
 
 Domajna Sinkronigado estas procezo per kiu Ultimate Multisite aldonas la propran domajnan nomon al via gastiga konto kiel aldona domajno **por ke la domajna mapado funkciu**.
 

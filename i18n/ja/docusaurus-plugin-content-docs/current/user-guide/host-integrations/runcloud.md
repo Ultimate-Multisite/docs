@@ -3,17 +3,17 @@ title: RunCloud 統合
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud統合
+# RunCloud統合 {#runcloud-integration}
 
-## 概要
+## 概要 {#overview}
 RunCloud はクラウドベースのサーバー管理プラットフォームで、独自のクラウドサーバー上でウェブアプリケーションを簡単にデプロイおよび管理できます。この統合により、Ultimate Multisite と RunCloud の間で自動ドメイン同期と SSL 証明書管理が可能になります。
 
-## 機能
+## 機能 {#features}
 - 自動ドメイン同期
 - SSL 証明書管理
 - マッピングが削除されたときにドメインを削除
 
-## 要件
+## 要件 {#requirements}
 以下の定数を `wp-config.php` ファイルに定義する必要があります。
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## セットアップ手順
+## セットアップ手順 {#setup-instructions}
 
-### 1. RunCloud API 認証情報を取得する
+### 1. RunCloud API 認証情報を取得する {#1-get-your-runcloud-api-credentials}
 
 1. RunCloud ダッシュボードにログイン
 2. 右上のプロフィール画像をクリックし「User Profile」を選択
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. まだキーが無い場合は「Generate API Key」をクリック
 5. API Key と API Secret をコピー
 
-### 2. サーバーとアプリ ID を取得する
+### 2. サーバーとアプリ ID を取得する {#2-get-your-server-and-app-ids}
 
 1. RunCloud ダッシュボードで「Servers」を選択
 2. WordPress マルチサイトがホストされているサーバーを選択
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. 「Web Applications」に移動し、WordPress アプリケーションを選択
 5. アプリ ID は URL に表示されます: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. `wp-config.php` に定数を追加
+### 3. `wp-config.php` に定数を追加 {#3-add-constants-to-wp-configphp}
 
 以下の定数を `wp-config.php` ファイルに追加します。
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. 統合を有効化
+### 4. 統合を有効化 {#4-enable-the-integration}
 
 1. WordPress 管理画面で Ultimate Multisite > Settings に移動
 2. 「Domain Mapping」タブへ移動
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. RunCloud 統合を有効化
 5. 「Save Changes」をクリック
 
-## 動作概要
+## 動作概要 {#how-it-works}
 
 Ultimate Multisite でドメインがマッピングされると：
 
@@ -70,19 +70,19 @@ Ultimate Multisite でドメインがマッピングされると：
 
 サブドメインインストールの場合、統合はネットワークに新しいサイトが追加されると RunCloud でサブドメインを自動的に作成します。
 
-## トラブルシューティング
+## トラブルシューティング {#troubleshooting}
 
-### API 接続の問題
+### API 接続の問題 {#api-connection-issues}
 - API 認証情報が正しいか確認
 - サーバー ID とアプリ ID が正しいか確認
 - RunCloud アカウントに必要な権限があるか確認
 
-### SSL 証明書の問題
+### SSL 証明書の問題 {#ssl-certificate-issues}
 - RunCloud が SSL 証明書を発行するまでに時間がかかる場合があります
 - ドメインがサーバーの IP アドレスを正しく指しているか確認
 - アプリの RunCloud SSL 設定を確認
 
-### ドメインが追加されない
+### ドメインが追加されない {#domain-not-added}
 - Ultimate Multisite のログでエラーメッセージを確認
 - ドメインが既に RunCloud に追加されていないか確認
 - RunCloud プランが複数ドメインをサポートしているか確認

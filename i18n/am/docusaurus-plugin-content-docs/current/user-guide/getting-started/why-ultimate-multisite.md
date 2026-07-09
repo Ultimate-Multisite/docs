@@ -3,11 +3,11 @@ title: የUltimate Multisite ለምን?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# የUltimate Multisite አስፈላጊነት
+# የUltimate Multisite አስፈላጊነት {#why-ultimate-multisite}
 
 ወደዚህ ጽሑፍ የመጡ ከሆነ፣ የፕልጊኑአችን የእርስዎን የንግድ ሀሳብ እውን ለማድረግ መፍትሔ ሊሆን እንደሚችል ሰምተዋል ምናልባት። በዚህ ክፍል መጨረሻ ላይ የሚያስፈልጉዎትን መልሶች ተስፋ እናደርጋለን።
 
-## Ultimate Multisite ምንድነው?
+## Ultimate Multisite ምንድነው? {#what-is-ultimate-multisite}
 
 Ultimate Multisite አንድ WordPress Multisite plugin ሲሆን፣ ደንበኞችን WaaS (Website as a Service) እንዲያቀርቡ ያስችላል። በፕልጊኑአችን አማካኝነት የተለያዩ የደንበኝነት ምደባዎችን (subscription tiers) ሊኖሩዎት ይችላሉ፣ ደንበኞችም በMultisite ኔትዎርክዎ ውስጥ ድረ-ገጽ እንዲይዝዎ ተደጋጋሚ ክፍያ እንዲከፍሉ ሊያደርጉ ይችላሉ።
 
@@ -15,7 +15,7 @@ Ultimate Multisite የተለያዩ ክፍያዎችን (እንደ WooCommerce ወ
 
 ይህም መጀመሪያ ብቻ ነው፣ ምክንያቱም በadd-ons እና webhooks አማካኝነት ተግባሮቹን ማስፋት ይችላሉ።
 
-## ሌሎች ባህሪያት
+## ሌሎች ባህሪያት {#other-features}
 
 Ultimate Multisite የሚከተሉትንም ያቀርባል፦
 
@@ -33,11 +33,11 @@ Ultimate Multisite የሚከተሉትንም ያቀርባል፦
 
 *   **የፍለጋ እና መተካት API (Search and Replace API):** እንዲሁም የድረ-ገጽ አብነቶችን በ`{{site_name}}` ባሉ ቦታዎች (placeholders) ምልክት ማድረግ እና ተጠቃሚው ከተመዘገበ በኋላ ወዲያውኑ፣ በራስ-ሰር እነዚህን ቦታዎች የሚሞሉበትን Search and Replace API መጠቀም ይችላሉ።
 
-## የአጠቃቀም ሁኔታዎች (Use cases)
+## የአጠቃቀም ሁኔታዎች (Use cases) {#use-cases}
 
 አሁን Ultimate Multisite ሊሆኑ የሚችሉባቸውን አንዳንድ የአጠቃቀም ሁኔታዎች ለማየት ጊዜው ደርሷል።
 
-### የጉምሩክ ኤጀንሲ (An Agency)
+### የጉምሩክ ኤጀንሲ (An Agency) {#case-1-an-agency}
 
 በአጠቃላይ የኤጀንሲ ዋና ችሎታዎች በድረ-ገጽ ዲዛይን ላይ ያተኮሩ ሲሆን፣ አስተናጋጅ (hosting) ወይም ግብይት (marketing) እንደ ተጨማሪ አገልግሎቶች ሊዘረዘሩ ይችላሉ።
 
@@ -47,7 +47,7 @@ Ultimate Multisite የሚከተሉትንም ያቀርባል፦
 
 ኤጀንሲዎች Ultimate Multisite በመጠቀም ምርጥ የሆኑ ድረ-ገጾችን ዲዛይን በማድረግ የሚያደርጉትን ምርጥ ነገር እንዲያደርጉ ሰላም ይሰማቸዋል።
 
-### የልዩ ዘርፍ ሰጪ (Niche Provider)
+### የልዩ ዘርፍ ሰጪ (Niche Provider) {#case-2-niche-provider}
 
 “አንድ ነገር አድርግ እና በደንብ አድርገው” የሚል አባባል አለ። ለብዙ ባለሙያዎች፣ ይህ ማለት በብቸኛ ዋና ሀሳብ ዙሪያ ምርት ወይም አገልግሎት መፍጠር ማለት ነው።
 
@@ -57,7 +57,7 @@ Ultimate Multisite የሚከተሉትንም ያቀርባል፦
 
 ለልዩ ዘርፍ ድረ-ገጽ እና አገልግሎት ሰጪ፣ ይህ በባለልዩ plugins እና ዲዛይን የታጠቀ፣ ለመጠቀም ዝግጁ የሆነ ድረ-ገጽ ወዲያውኑ የመፍጠር ባሕሪ ልዩ ጥቅም ይሰጣል። ደንበኛው አገልግሎቱን ለማጠናቀቅ አነስተኛ ግብዓት ብቻ ሊሰጥ ይበቃዋል።
 
-### የWordPress ድረ-ገጽ አስተናጋጅ (WordPress Web Hosting)
+### የWordPress ድረ-ገጽ አስተናጋጅ (WordPress Web Hosting) {#case-3-wordpress-web-hosting}
 
 WordPress ድረ-ገጾችን ለማስተናገድ ብዙ መንገዶች ቢኖሩም፣ ለደንበኛ የWordPress የተጫነ የዌብ ቦታ መስጠት ብቻ ቀላል አይደለም። ምክንያቱም ትርጉም ያለው አገልግሎት ለመስጠት ብዙ ውሳኔዎች እና ግምት ውስጥ ማስገባት ያለባቸው ነገሮች ስላሉ።
 

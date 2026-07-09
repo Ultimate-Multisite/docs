@@ -3,11 +3,11 @@ title: Çoxkirayəçilik inteqrasiyası
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy inteqrasiyası
+# Multi-Tenancy inteqrasiyası {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suveren icarəçilər, miqrasiya yoxlaması və icarəçi həyat dövrünün avtomatlaşdırılması üçün bir neçə inteqrasiya təmas nöqtəsini dəyişir.
 
-## İcarəçi ilkin işə salma axını
+## İcarəçi ilkin işə salma axını {#tenant-bootstrap-flow}
 
 İcarəçilər yaradan və ya dəyişdirən inteqrasiyalar bu ardıcıllığa əməl etməlidir:
 
@@ -20,13 +20,13 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 suveren icarəçilər, miqrasiya yoxlama
 
 Suveren icarəçinin şəbəkə verilənlər bazası bağlantısından yenidən istifadə edə biləcəyini güman etməyin. Əlavə tərəfindən təqdim edilən icarəçi reyestri və yazıcı abstraksiyalarından istifadə edin.
 
-## SSO və REST hook-ları
+## SSO və REST hook-ları {#sso-and-rest-hooks}
 
 Vəziyyətsiz icarəçi avtomatik girişi məqsəd claim-i, JTI təkrar istifadə qorunması, bitmə müddəti həddi və mənbə bağlanması olan qısaömürlü token-lərdən istifadə edir. Giriş düymələri və ya uzaqdan idarəetmə linkləri əlavə edən inteqrasiyalar icarəçi giriş URL-lərini birbaşa qurmaq əvəzinə dəstəklənən SSO axını vasitəsilə icarəçi ziyarətləri yaratmalıdır.
 
 Şəbəkə tərəfli API audit hadisələri və gündəlik xülasələr suveren icarəçi gateway-ləri üçün əlçatandır. İcarəçi həyat dövrü endpoint-lərini çağıran xarici sistemləri sazlayarkən həmin loqlardan istifadə edin.
 
-## Suveren müştəri əməliyyat URL-ləri
+## Suveren müştəri əməliyyat URL-ləri {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 suveren icarəçi müştəri əməliyyatlarını hesab, ödəniş tamamlanması, hesablaşma, qaimə, sayt, şablon dəyişdirmə və domen xəritələmə axınları üçün əsas sayta yönləndirir. İcarəçi tərəfli idarəetmə linklərini göstərən inteqrasiyalar bu əməliyyatları əsas saytın müştəri panelinə yönəltməli və istifadəçi əməliyyatı tamamladıqdan sonra icarəçiyə qayıda bilməlidirsə, təsdiqlənmiş qayıdış hədəfi daxil etməlidir.
 
@@ -40,7 +40,7 @@ Yaradılan URL `wu_sso_url` vasitəsilə filterlənə bilən olaraq qalır; bu f
 
 Üzvlük, qaimə, hesablaşma ünvanı, şablon və ya domen idarəetməsi vəziyyətini suveren icarəçinin daxilində təkrarlamayın. İcarəçi dashboard-unu işəsalma nöqtəsi, əsas saytın müştəri panelini isə idarə olunan əməliyyatlar üçün əsas qeyd sistemi kimi qəbul edin.
 
-## Miqrasiya yoxlaması
+## Miqrasiya yoxlaması {#migration-verification}
 
 Miqrasiyadan sonra və ya həyat dövrü inteqrasiyası icarəçi məlumatlarını dəyişdikdən sonra yoxlama qapılarını işə salın:
 
@@ -49,10 +49,10 @@ Miqrasiyadan sonra və ya həyat dövrü inteqrasiyası icarəçi məlumatların
 
 İnteqrasiyalar uğursuz yoxlamanı yerləşdirmə blokeri kimi qəbul etməli və problem həll olunana qədər icarəçini canlı kimi işarələməkdən çəkinməlidir.
 
-## İcarəçinin silinməsi
+## İcarəçinin silinməsi {#tenant-deletion}
 
 Silmə axınları icarəçi verilənlər bazası giriş məlumatlarının təmizlənməsi üçün əlavə teardown yolunu çağırmalıdır. Xarici inteqrasiyalar teardown uğurla tamamlandıqdan sonra provayder resurslarını silə bilər, lakin yoxlama və ya async push işləri hələ də icra olunarkən host verilənlər bazalarını və ya qovluqları silməməlidir.
 
-## Köhnəlmiş verilənlər bazası router-i
+## Köhnəlmiş verilənlər bazası router-i {#deprecated-database-router}
 
 Köhnə `Database_Router` deprecation stub ilə əvəz edilib. Yeni inteqrasiyalar köhnə router class-ından asılı olmaq əvəzinə icarəçiləri cari sayt router-i və icarəçi reyestri API-ləri vasitəsilə müəyyən etməlidir.

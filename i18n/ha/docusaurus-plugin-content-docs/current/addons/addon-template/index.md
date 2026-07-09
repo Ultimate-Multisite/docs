@@ -3,25 +3,25 @@ title: Samfurin Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Samfurin Addon
+# Samfurin Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Bukatu
+## Bukatu {#requirements}
 
 - WordPress 5.3 ko sama da haka
 - PHP 7.4 ko sama da haka
 - plugin na Multisite Ultimate (yana kunne)
 
-## Shigarwa
+## Shigarwa {#installation}
 
 1. Loda fayilolin addon zuwa kundin `/wp-content/plugins/` naka
 2. Kunna plugin ta hanyar menu na 'Plugins' a cikin WordPress
 3. Saita saitunan addon a cikin gudanarwar cibiyar sadarwa
 
-## Haɓakawa
+## Haɓakawa {#development}
 
-### Saitawa
+### Saitawa {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Tsarin Aiki
+### Tsarin Aiki {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Ka’idojin zamanantar da code
 ```
 
-### Gwaji
+### Gwaji {#testing}
 
 Addon ɗin ya ƙunshi cikakken tsarin gwaji:
 
@@ -75,44 +75,44 @@ Addon ɗin ya ƙunshi cikakken tsarin gwaji:
 - **Rufin Gwaji**: An daidaita shi don bibiyar rufin code
 - **Gwajin Multisite**: Gwaje-gwaje suna gudana a cikin yanayin multisite
 
-### Ƙa’idodin Code
+### Ƙa’idodin Code {#code-standards}
 
 - **WordPress Coding Standards**: Ana tilasta su ta hanyar PHPCS
 - **Dacewa da PHP 7.4+**: Ana tallafawa fasalolin PHP na zamani
 - **Bincike na Tsaye**: Haɗin PHPStan don duba nau’i
 - **Zamanantar da Code**: Ka’idojin Rector don haɓaka PHP
 
-### Tsarin Gina
+### Tsarin Gina {#build-system}
 
 - **Sarrafa Kayayyaki**: Rage girman fayilolin CSS/JS
 - **Fassara**: Samar da fayil na POT
 - **Kunshi**: Ƙirƙirar archive don rarrabawa
 - **Yanayin Haɓakawa**: Kayayyaki marasa rage girma don debugging
 
-## Daidaitawa
+## Daidaitawa {#configuration}
 
 Addon ɗin yana tallafawa zaɓuɓɓukan daidaitawa daban-daban da ake iya samu ta hanyar manhajar gudanarwar cibiyar sadarwa.
 
-## Hooks da Filters
+## Hooks da Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Ana kunna shi bayan fara addon
 - `ultimate-multisite-addon-template_loaded` - Ana kunna shi bayan an loda duk fayilolin addon
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Gyara saitunan addon
 - `ultimate-multisite-addon-template_enabled` - Sauya matsayin kunna/kashe addon
 
-## Lasisi
+## Lasisi {#license}
 
 Wannan addon yana ƙarƙashin lasisin GPL v3 ko na baya.
 
-## Tallafi
+## Tallafi {#support}
 
 Don tallafi da takardu, ziyarci [MultisiteUltimate.com](https://multisiteultimate.com)
-## Tarihin Canje-canje
+## Tarihin Canje-canje {#changelog}
 
 - Siga 1.0.1 (2025-09-28): sake suna prefix zuwa ultimate-multisite; sabunta text domain; ƙara lambar siga.
 

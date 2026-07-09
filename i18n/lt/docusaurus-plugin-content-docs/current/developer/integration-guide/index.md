@@ -3,13 +3,13 @@ title: Integracijos vadovas
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integravimo vadovas
+# Integravimo vadovas {#integration-guide}
 
 Šiame vadove aptariami įprasti integravimo su Ultimate Multisite modeliai, įskaitant prisijungimą prie išorinių paslaugų, pasirinktinių mokėjimo šliuzų kūrimą ir webhookų apdorojimą.
 
 Apie izoliuotą tenant infrastruktūrą žr. [Multi-Tenancy integravimą](./multi-tenancy), kuriame pateikiamos sovereign tenant pradinio parengimo, migracijos patikros, SSO ir pašalinimo gairės.
 
-## CRM integravimas
+## CRM integravimas {#crm-integration}
 
 Sinchronizuokite klientų duomenis su savo CRM, kai užsiregistruoja nauji klientai:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitikos integravimas
+## Analitikos integravimas {#analytics-integration}
 
 Sekite pagrindinius verslo įvykius per visą kliento gyvavimo ciklą:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Kiti žingsniai
+## Kiti žingsniai {#next-steps}
 
 - [Pasirinktinio Gateway kūrimas](./custom-gateway) — Sukurkite savo mokėjimo šliuzą
 - [Webhookų apdorojimas](./webhooks) — Kurkite pasirinktinius webhook endpointus

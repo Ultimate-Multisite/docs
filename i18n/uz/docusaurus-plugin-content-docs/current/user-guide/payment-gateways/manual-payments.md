@@ -3,13 +3,13 @@ title: Qo‘lda to‘lovlarni sozlash
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Qo‘lda to‘lovlarni sozlash (v2)
+# Qo‘lda to‘lovlarni sozlash (v2) {#setting-up-manual-payments-v2}
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga taalluqli.**_
 
 Qo‘lda to‘lovlar — foydalanuvchilaringiz uchun **Stripe** yoki **PayPal** mavjud bo‘lmaganda, ularga boshqa to‘lov usullarini taklif qilish yo‘lidir. Bu pul o‘tkazmasi yoki bank o‘tkazmasi yoxud foydalanuvchilaringiz hududida mavjud bo‘lgan istalgan boshqa to‘lov usuli bo‘lishi mumkin.
 
-## Qo‘lda to‘lovlarni qanday yoqish mumkin
+## Qo‘lda to‘lovlarni qanday yoqish mumkin {#how-to-enable-manual-payments}
 
 Qo‘lda to‘lovni sozlash juda oson. Siz uni to‘lov shlyuzlari ostida yoqishingiz va foydalanuvchi to‘lovni qanday yuborishi kerakligi haqida batafsil yo‘riqnomalarni kiritishingiz kifoya.
 
@@ -31,7 +31,7 @@ Shuningdek, ular **Rahmat** sahifangizda to‘lov yo‘riqnomalaringiz bilan xab
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Qo‘lda to‘lovlarni tasdiqlash
+## Qo‘lda to‘lovlarni tasdiqlash {#confirming-manual-payments}
 
 Qo‘lda to‘lovni tasdiqlash uchun chap paneldagi **To‘lovlar** menyusiga o‘ting. U yerda tarmog‘ingizdagi barcha to‘lovlarni va ularning tafsilotlarini, jumladan **holat**ini ko‘rishingiz mumkin. Qo‘lda to‘lov siz uni qo‘lda o‘zgartirmaguningizcha har doim **Kutilmoqda** holatida bo‘ladi.
 

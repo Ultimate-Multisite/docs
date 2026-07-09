@@ -3,7 +3,7 @@ title: Gateway GoCardless
 sidebar_position: 8
 _i18n_hash: dbf9269ae462e506432cf441e86b9647
 ---
-# GoCardless Gateway
+# GoCardless Gateway {#gocardless-gateway}
 
 Questa funzionalità è fornita dall'addon **GoCardless**.
 

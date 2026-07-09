@@ -4,21 +4,21 @@ title: Isenzo - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Isenzo: wu_sso_loaded
+# Isenzo: wu_sso_loaded {#action-wussoloaded}
 
 Vumela abathuthukisi bezengezo ukuthi bengeze ama-hook engeziwe, uma kudingeka.
 
 Lokhu kudinga ukubambezeleka kuze kube yi-init njengoba i-SSO iyinto esebenza ku-sunrise.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
 | $sso | `self` | Ikilasi le-SSO. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/sso/class-sso.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-sso.php#L285) emgqeni 285

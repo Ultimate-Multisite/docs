@@ -3,11 +3,11 @@ title: Cyfeirnod Bachau
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Cyfeirnod Hooks
+# Cyfeirnod Hooks {#hooks-reference}
 
 Dogfennaeth a gynhyrchwyd yn awtomatig ar gyfer pob un o'r **59 o weithredoedd** a'r **118 o hidlyddion** yn Ultimate Multisite.
 
-## Gweithredoedd
+## Gweithredoedd {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Yn tanio cyn yr ailgyfeiriad dilysu.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Yn tanio yn union cyn i’r cwci dilysu gael ei osod.
@@ -70,7 +70,7 @@ Dogfennaeth a gynhyrchwyd yn awtomatig ar gyfer pob un o'r **59 o weithredoedd**
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Yn tanio ar ôl i wrthrych gael ei storio yn y gronfa ddata.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Caniatáu i ddatblygwyr plugin ychwanegu gweithredoedd at y broses ddatgloi.
 
-## Hidlwyr
+## Hidlwyr {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Yn hidlo hyd cyfnod dod i ben y cwci dilysu.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Yn hidlo’r cynllun ailgyfeirio dilysu.

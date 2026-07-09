@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Erweiderungen
+# Ultimate Multisite Erweiderungen {#ultimate-multisite-addons}
 
 Erweiderungen erweideren Ultimate Multisite mat zousätzleche Funktiounen an Integratiounen. Déi meescht Erweiderunge si bezuelt a kënnen op [ultimatemultisite.com](https://ultimatemultisite.com) kaf ginn.
 
-## Installatioun
+## Installatioun {#installation}
 
 Erweiderunge kënnen op zwou Aarte installéiert ginn:
 
 1. **Iwwer d'Erweiderungssäit** -- Gitt op d'Erweiderungsverwaltungs-Säit vun Ärer Säit am WordPress-Admin
 2. **Manuellen Download** -- Luet se vun [Ärem Account](https://ultimatemultisite.com/my-account/downloads/) erof a lued se iwwer Pluginen > Nei derbäisetzen erop
 
-## Verfügbar Erweiderungen
+## Verfügbar Erweiderungen {#available-addons}
 
 | Erweiderung | Beschreiwung |
 |-------|-------------|

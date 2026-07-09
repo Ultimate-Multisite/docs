@@ -4,11 +4,11 @@ title: کړنه - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# عمل: set_auth_cookie
+# عمل: set_auth_cookie {#action-setauthcookie}
 
 سمدستي مخکې له دې فعالېږي چې د تصدیق کوکي وټاکل شي.
 
-## پارامترونه
+## پارامترونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | د تصدیق طرحه. ارزښتونه 'auth' یا 'secure_auth' شاملوي. |
 | $token | `string` | د دې کوکي لپاره د کارولو د کارونکي د ناستې token. |
 
-### له نسخې راهیسې
+### له نسخې راهیسې {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) کې په ۱۲۴ کرښه تعریف شوی.

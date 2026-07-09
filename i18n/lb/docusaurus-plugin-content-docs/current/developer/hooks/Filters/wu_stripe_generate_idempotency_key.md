@@ -4,11 +4,11 @@ title: Filter - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Filter: wu_stripe_generate_idempotency_key
+# Filter: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
 
 Filtert de Wäert `idempotency_key`, dee mat de Stripe-Bezuelungsoptioune geschéckt gëtt.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtert de Wäert `idempotency_key`, dee mat de Stripe-Bezuelungsoptioune gesch�
 | $args | `array` | Argumenter, déi benotzt ginn, fir de Schlëssel ze generéieren. |
 | $context | `string` | Kontext, ënner deem den Idempotenz-Schlëssel generéiert gëtt. |
 
-### Zënter
+### Zënter {#since}
 
 - 3.5.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/functions/checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/checkout.php#L54) op Linn 54

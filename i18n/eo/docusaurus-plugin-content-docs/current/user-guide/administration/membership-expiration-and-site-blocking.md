@@ -3,11 +3,11 @@ title: Membara expirado kaj sita blokado
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Membroj la Ekspirado kaj Blokado de Sitaj
+# Membroj la Ekspirado kaj Blokado de Sitaj {#membership-expiration-and-site-blocking}
 
 Ĉi tiu gvidado klarigas, kiel Ultimate Multisite maneĝas ekspiradon de membraj, fini de provoj (trial endings) kaj blokadon de frontaj sitaj. Ĝi mastrumas la ciklon de membrajo de aktiva al ekspirita, la ŝanĝon, kiuj kontrolas ĉu sitaj estas blokitaj, kaj kion diri, kiam sitaj restas aksesaj post la ekspirado de membrajo.
 
-## Ciklo de Status Membrajo
+## Ciklo de Status Membrajo {#membership-status-lifecycle}
 
 Ĉi tiu ĉiuj membraj en Ultimate Multisite havas unu el la seguenti statusoj:
 
@@ -24,7 +24,7 @@ Liberaj membraj ne ekspiras aŭtomate. Ultimate Multisite traktas ilin kiel ĉia
 | **Expired** (Ekspirita) | Passis la ekspiradon daton kaj la periodon de graco sen renovado |
 | **Cancelled** (Anulita) | Ekspliciite anulita de la klienton aŭ administristro |
 
-### Kiel Membraj Transiti al Ekspirita
+### Kiel Membraj Transiti al Ekspirita {#how-memberships-transition-to-expired}
 
 Ultimate Multisite faras bazan kontrolon **ĉiuj ora** por ŝaŭi membrajn, kiuj devus esti marcit kiel ekspiritaj. Ĉi tiu kontrola funkcio uzas [Action Scheduler](https://actionscheduler.org/) (ne direkte WP-Cron) kaj funkcias kiel la programita akcio `wu_membership_check`.
 
@@ -34,7 +34,7 @@ La kontrola ekspirado havas **inplivitan periodon de graco de 3 tajtablaj** per 
 La 3-dias expiracia gracia estas aparta de la configuracio del Período Gracia del Bloque Frontend descrita abajo. El período gracia de expiracia controla cuándo la **status ŝanĝas** de activa/en-hold a expirata. La período gracia del bloque frontend kontrolas cuándo la **sitio estas blokita** post kiam la status już ŝanĝiĝis.
 :::
 
-#### Membriado Sen Auto-Renovado vs. Sen Auto-Renovado
+#### Membriado Sen Auto-Renovado vs. Sen Auto-Renovado {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Ĉi tiu diferenco estas kritika por kompreni la funkcion de expiracia:
 
@@ -42,7 +42,7 @@ La 3-dias expiracia gracia estas aparta de la configuracio del Período Gracia d
 
 - **Membriado auto-renovada** (`auto_renew = true`): La kontrola ŝekado de cron expiracia **skiptas ĉi tiuj komplete**. La pagamentporta (Stripe, PayPal, etc.) esperas informi Ultimate Multisite per webhooks, kiam subskribcio ne funkcias aŭ estas kancelita. Se la webhook ne ricevas -- pro malkonfigurita punkto finaj de linko, interrupo de porta, aŭ subskribcio kancelita ekster la sistemo -- la membriado povas resti `active` indefinita tempo post kiam la expiracia dato pasas.
 
-### Kiel Testoj Finiras
+### Kiel Testoj Finiras {#how-trials-end}
 
 Kiam la testperiodo de membriado triala finiras, la sistema:
 
@@ -52,11 +52,11 @@ Kiam la testperiodo de membriado triala finiras, la sistema:
 
 Ĉi tiu proceso funkcias sur la sama horla jadwal kiel la regula kontrola expiracia, sed **nur por membriado sen auto-renovado**. Por auto-renovadaj testoj, la pagamentporta maneĝas la transiron de testaj al pagita subskribcio.
 
-## Blokado de Aliro al Frontend
+## Blokado de Aliro al Frontend {#block-frontend-access}
 
 Par defaŭlta, kiam miempartia (membership) expireras aŭ iras en paŭzo, **tam nur wp-admin dashboard estas restriĉita**. La publika antaŭa parto de la sita restas akcesebla al vizitaroj. Por bloki ankaŭ publikan akceson, vi devas aktivi la ŝancon **Block Frontend Access** (Bloki Antaŭan Parton).
 
-### Konfigurado de la ŝanco
+### Konfigurado de la ŝanco {#configuring-the-setting}
 
 Navigu al **Ultimate Multisite > Settings > Memberships** kaj aktivi **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Trinkaj ili rilatas ŝanĝoj kontrolas ĉi tiun vivon:
 | **Frontend Block Grace Period** | La nubaj tagoj, kiujn vi esperi post tio, kiam la miempartio ne estas aktiva, antaŭ blokado. Setu al `0` por bloki tate. | 0 |
 | **Frontend Block Page** | Paĝo sur la ĉefa sita, al kiu vizitaroj redirektas, kiam un sitio estas blokita. Se ĝi ne estas setita, vizitaroj vidas ĝeneran mesaĝon "Sitio ne estas disponibile en tiu momento" kun linko al la log-in paĝo por la admino de la sitio. | None |
 
-### Kion Vizitaroj Vidas, Kiam Un Sitio Estas Blokita
+### Kion Vizitaroj Vidas, Kiam Un Sitio Estas Blokita {#what-visitors-see-when-a-site-is-blocked}
 
 Kiam antaŭa parto estas blokita, vizitaroj al la sitio ĉu:
 
@@ -83,7 +83,7 @@ Kiam antaŭa parto estas blokita, vizitaroj al la sitio ĉu:
 
 Adminoj de la sitio povas pliboni -- la log-in paĝo ne estas blokita.
 
-### Kion Blokas kaj Kiam
+### Kion Blokas kaj Kiam {#what-gets-blocked-and-when}
 
 La blokita vivo dependas de la status de la miempartio:
 
@@ -104,21 +104,21 @@ Chiar dacă perioada de trial s-a încheiat, un membru cu statut `trialing` **nu
 Membrii canceli sunt întotdeauna blocați odată ce data expirării a trecut, indiferent dacă Accès Frontend Block este activat. Perioada de Grație pentru Blocarea Frontend **nu** se aplică membrilor canceli.
 :::
 
-## Soluționare a Problemelor: Site-uri care rămân accesibile după expirare
+## Soluționare a Problemelor: Site-uri care rămân accesibile după expirare {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Dacă site-urile rămân accesibile public după expirarea unui membru, urmați aceste verificări în această ordine:
 
-### 1. Verificați că Setarea Block Frontend Access este activată
+### 1. Verificați că Setarea Block Frontend Access este activată {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Mergeți la **Ultimate Multisite > Settings > Memberships** și confirmați că comutatorul **Block Frontend Access** este pornit (on). Această setare este **dezactivată prin default**, ceea ce înseamnă că doar wp-admin este restricționat atunci când un membru devine inactiv.
 
-### 2. Verificați Perioada de Grație pentru Blocarea Frontend
+### 2. Verificați Perioada de Grație pentru Blocarea Frontend {#2-check-the-frontend-block-grace-period}
 
 Sur la sama page de paramètres, vérifiez la valeur **Frontend Block Grace Period**. Si celle-ci est réglée sur 7 jours, par exemple, le frontend ne sera pas bloqué avant 7 jours après la date d'expiration de l'adhésion -- même si le statut de l'adhésion est déjà `expired`.
 
 Réglez cette valeur à `0` si vous souhaitez un blocage immédiat après que l'adhésion devienne inactive.
 
-### 3. Confirmer que le Statut de l'Adhésion a Réellement Changé
+### 3. Confirmer que le Statut de l'Adhésion a Réellement Changé {#3-confirm-the-membership-status-has-actually-changed}
 
 Allez dans **Ultimate Multisite > Memberships** et vérifiez le statut de l'adhésion concernée. Si elle affiche toujours `active` même après la date d'expiration, la transition de statut n'a pas eu lieu. Causes courantes :
 
@@ -126,7 +126,7 @@ Allez dans **Ultimate Multisite > Memberships** et vérifiez le statut de l'adh�
 
 - **Le job cron n'a pas été exécuté**: Voir l'étape suivante.
 
-### 4. Vérifier que Action Scheduler Fonctionne
+### 4. Vérifier que Action Scheduler Fonctionne {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite utilise Action Scheduler pour ses jobs cron. Allez dans **Tools > Scheduled Actions** dans l'administration du réseau et recherchez :
 
@@ -148,7 +148,7 @@ Por certigi fiabla ekzekucadon de cron, konfigura job cron sistemo:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Kontrolu por Problemo de Gateway Webhook (Auto-renova Membrajn)
+### 5. Kontrolu por Problemo de Gateway Webhook (Auto-renova Membrajn) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Se la membrajnia auto-renovas kaj la gateway subskribcio estis cancelita aŭ ne funkcias, sed Ultimate Multisite tutplene montras ĝin kiel `active`:
 
@@ -157,13 +157,13 @@ Se la membrajnia auto-renovas kaj la gateway subskribcio estis cancelita aŭ ne 
 
 Se la gateway montras la subskribcion kiel cancelita sed Ultimate Multisite ne montras tiel, la webhook notifikado probable perdis. Vi povas manuveble ŝanĝi la statuson de la membrajnio en **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Kontrolu la Graces Periodo de Ekspirio (Nivel Cron)
+### 6. Kontrolu la Graces Periodo de Ekspirio (Nivel Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 La cron kontrolas sin propra graces periodo (default: 3 tajtaboj) antaŭ markigi la membrajn kiel ekspirita. Tio estas separe de la graces periodo de la frontend bloko. La totala tempo antaŭ tio ke sita blokas povas esti:
 
 **Graces periodo de ekspirio (3 tajtaboj)** + **Graces periodo de frontend bloko (via via konfiguracio)** = Totala tardo
 
-### 7. Manually Expire a Membership
+### 7. Manually Expire a Membership {#7-manually-expire-a-membership}
 
 Se vi bezon necese blokigi la siton senone esperi la cron cycle, vi povas manuele ŝanĝi la staton de la membereco:
 
@@ -174,7 +174,7 @@ Se vi bezon necese blokigi la siton senone esperi la cron cycle, vi povas manuel
 
 La blokado de la frontend tutegeta efiki pri la suivante paĝo (sub la Grace Period de Blokado de Frontend por memberekaj membrerekaj expiritaj, aŭ tutegeta por anulitaj membrerekaj).
 
-## Rezumo
+## Rezumo {#summary}
 
 La plena temp-linio de la dato de expirado ĝis blokado de la sita frontend:
 
@@ -206,7 +206,7 @@ Por anulitaj membrerekaj, la vojo estas pli korta:
   Sita frontend estas blokita tutuegeta
 ```
 
-## Developer Reference
+## Developer Reference {#developer-reference}
 
 La sekvaj hooks kaj filters permesas al vi personaligi la komporton de expirado kaj blokado:
 

@@ -4,11 +4,11 @@ title: Filtar - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status
+# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Filtrira podatke objekta prije nego što se pohrane u bazu podataka.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrira podatke objekta prije nego što se pohrane u bazu podataka.
 | $post_type | `string` | Vrsta objave. |
 | $this | `\Base_Model` | Instanca objekta. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) u retku 320

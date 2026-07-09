@@ -4,11 +4,11 @@ title: Filter - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Slug'lanmış ağ seçeneği değerini döndürür.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Slug'lanmış ağ seçeneği değerini döndürür.
 | $option_name | `string` | Seçenek adı. |
 | $default | `mixed` | Varsayılan değer. |
 
-### Kullanılmaya Başladığı
+### Kullanılmaya Başladığı {#since}
 
 - 1.0.0
-### Kaynak
+### Kaynak {#source}
 
 126. satırda [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) içinde tanımlanmıştır.
 
 
-## Dönüş Değeri
+## Dönüş Değeri {#returns}
 Slug'lanmış ağ seçeneği değeri.

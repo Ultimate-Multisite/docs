@@ -3,7 +3,7 @@ title: Cổng thanh toán PayFast
 sidebar_position: 18
 _i18n_hash: 522faa86d920457375203119d78650a7
 ---
-# Cổng thanh toán PayFast
+# Cổng thanh toán PayFast {#payfast-gateway}
 
 Tính năng này được cung cấp bởi addon **PayFast**.
 

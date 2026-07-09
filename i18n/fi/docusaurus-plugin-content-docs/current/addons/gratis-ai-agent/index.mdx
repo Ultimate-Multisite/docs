@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent on autonominen WordPress AI -avustaja, joka voi suunnitella, rakentaa ja hallita kokonaisia WordPress-sivustoja luonnollisen kielen ohjeiden avulla. Se tarjoaa jäsennellyn joukon **kykyjä** — erillisiä, testattavia toimintoja, joita agentti voi kutsua — kattaen kaiken sisällönhallinnasta design-järjestelmän mukauttamiseen. Versio 1.9.0 lisää sisällöntuotantokykyjä, visuaalisen sivutarkastelun asiakaspuolen kuvakaappausten avulla, viisi sisäänrakennettua agenttiprofiilia sekä feature flagit käyttöoikeuksien hallintaan ja brändäykseen.
 
-## Keskeiset ominaisuudet
+## Keskeiset ominaisuudet {#key-features}
 
 - **Kykyjärjestelmä** — modulaarinen, laajennettava toimintoluettelo, jota agentti voi kutsua WordPress-asennuksessasi
 - **Sisällönhallinta** — luo artikkeleita ja sivuja (mukaan lukien sivupohjien määrittäminen), luo useita artikkeleita erissä yhdellä kutsulla, aseta artikkelikuvia ja rakenna yhteydenottolomakkeita
@@ -28,21 +28,21 @@ Gratis AI Agent on autonominen WordPress AI -avustaja, joka voi suunnitella, rak
 - **Site Builder Orchestration v2** — monivaiheiset sivuston rakennussuunnitelmat, joissa on pluginien haku, edistymisen seuranta ja virheistä palautuminen
 - **WP-CLI-benchmark-komento** — suorita agentin kyvykkyyksien benchmark-testisarja komentoriviltä CI:tä ja mallien arviointia varten
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 
 - WordPress 6.0 tai uudempi
 - PHP 8.1 tai uudempi
 - WordPress Multisite (verkkoaktivoitu) tai yhden sivuston asennus
 - Aktiivinen AI-palveluntarjoajan liitin-plugin (Anthropic, OpenAI tai yhteensopiva)
 
-## Asennus
+## Asennus {#installation}
 
 1. Lataa plugin-tiedostot hakemistoon `/wp-content/plugins/gratis-ai-agent`
 2. Aktivoi plugin WordPressin **Plugins**-näkymässä
 3. Siirry kohtaan **Gratis AI Agent → Settings** ja yhdistä AI-palveluntarjoajasi
 4. (Valinnainen) Selaa **Abilities Registry** -osiota asentaaksesi lisää kykypaketteja
 
-## Pika-aloitus
+## Pika-aloitus {#quick-start}
 
 Kun se on aktivoitu ja yhdistetty AI-palveluntarjoajaan, avaa **Gratis AI Agent** -paneeli WordPressin ylläpidon sivupalkista. Kirjoita luonnollisen kielen ohje, ja agentti suunnittelee ja suorittaa tarvittavat vaiheet käytettävissä olevien kykyjensä avulla.
 
@@ -60,7 +60,7 @@ Lisää tummaa tilaa varten väripaletti teemaan ja aseta pääväriksi #1a1a2e.
 Rakenna ravintolasivusto, jossa on verkkovalikko, varauslomake ja yhteystietosivu.
 ```
 
-## Kykyjen yleiskatsaus
+## Kykyjen yleiskatsaus {#abilities-overview}
 
 Kyvyt ovat atomisia toimintoja, joita agentti voi suorittaa. Jokainen kyky on rekisteröity PHP-luokka, joka tarjoaa skeeman (parametrit ja palautustyypit), jonka agentti lukee ajon aikana. Kyvyt on ryhmitelty toiminnallisiin alueisiin:
 
@@ -79,7 +79,7 @@ Kyvyt ovat atomisia toimintoja, joita agentti voi suorittaa. Jokainen kyky on re
 
 Katso täydellinen parametridokumentaatio ja käyttöesimerkit [Kykyjen viitteestä](./abilities).
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent sisältää `wp gratis-ai-agent` -komentoperheen benchmark-testien suorittamiseen ja kykyjen hallintaan komentoriviltä. Katso koko komentoluettelo [WP-CLI-viitteestä](./wp-cli).
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Määritys
+## Määritys {#configuration}
 
 Kaikki asetukset ovat WordPress-ylläpidossa kohdassa **Gratis AI Agent → Settings**:
 
@@ -106,7 +106,7 @@ Kaikki asetukset ovat WordPress-ylläpidossa kohdassa **Gratis AI Agent → Sett
 | **Kyvyn aikakatkaisu** | Enimmäissekunnit, joiden ajan yksittäinen kyky voi olla käynnissä (oletus 30) |
 | **Debug-lokitus** | Kirjaa kykykutsut ja agentin päättely WordPressin debug-lokiin |
 
-## Asetusten hallinnan turvallisuusestolista
+## Asetusten hallinnan turvallisuusestolista {#options-management-safety-blocklist}
 
 Options Management -kyky sisältää sisäänrakennetun estolistan, joka estää agenttia lukemasta tai kirjoittamasta arkaluonteisia WordPress-asetuksia. Oletusestolista kattaa:
 
@@ -118,26 +118,26 @@ Options Management -kyky sisältää sisäänrakennetun estolistan, joka estää
 
 Lisämerkintöjä voidaan lisätä `gratis_ai_agent_options_blocklist`-suodattimen kautta.
 
-## Hookit ja suodattimet
+## Hookit ja suodattimet {#hooks-and-filters}
 
-### Toiminnot
+### Toiminnot {#actions}
 
 - `gratis_ai_agent_ability_registered` — suoritetaan, kun kyky on rekisteröity; vastaanottaa kyvyn luokkanimen
 - `gratis_ai_agent_plan_started` — suoritetaan, kun sivustonrakennussuunnitelman suoritus alkaa
 - `gratis_ai_agent_plan_completed` — suoritetaan, kun suunnitelma päättyy onnistuneesti
 - `gratis_ai_agent_plan_failed` — suoritetaan, kun suunnitelma kohtaa peruuttamattoman virheen
 
-### Suodattimet
+### Suodattimet {#filters}
 
 - `gratis_ai_agent_abilities` — muokkaa rekisteröityjen kykyjen luetteloa ennen kuin agentti lataa sen
 - `gratis_ai_agent_options_blocklist` — laajenna tai supista asetusten turvallisuuteen liittyvää estolistaa
 - `gratis_ai_agent_benchmark_questions` — lisää mukautettuja vertailutestikysymyksiä arviointikokonaisuuteen
 - `gratis_ai_agent_plan_plugins` — muokkaa lisäosien hakuluetteloa sivustosuunnitelman luonnin aikana
 
-## Tuki
+## Tuki {#support}
 
 Saat tukea käymällä osoitteessa [ultimatemultisite.com](https://ultimatemultisite.com) tai avaamalla ongelman lisäosan repositoriossa.
 
-## Muutosloki
+## Muutosloki {#changelog}
 
 Katso täydellinen versiohistoria [muutoslokista](./changelog).

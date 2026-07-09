@@ -3,9 +3,9 @@ title: Dechrau arni gyda datblygu ategion
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Datblygu Ategyn
+# Datblygu Ategyn {#addon-development}
 
-## Strwythur Ategyn
+## Strwythur Ategyn {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Ffeiliau templed
 ```
 
-## Templed Prif Ffeil Ategyn
+## Templed Prif Ffeil Ategyn {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Enghraifft o Fodel Personol
+## Enghraifft o Fodel Personol {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integreiddio Tudalen Weinyddol
+## Integreiddio Tudalen Weinyddol {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Profi Eich Addon
+## Profi Eich Addon {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Pwyntiau estyn v2.13.0
+## Pwyntiau estyn v2.13.0 {#v2130-extension-points}
 
 Mae Ultimate Multisite v2.13.0 yn ychwanegu sawl pwynt estyn sy’n ddefnyddiol ar gyfer addons sy’n integreiddio â thenantiaid sofran, parthau checkout, neu awtomeiddio DNS darparwr gwesteiwr.
 
-### URLau SSO a rheoli’r prif safle
+### URLau SSO a rheoli’r prif safle {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Parthau sylfaenol ffurflen checkout
+### Parthau sylfaenol ffurflen checkout {#checkout-form-base-domains}
 
 Defnyddiwch `wu_checkout_form_base_domains` pan fydd eich addon yn darparu parthau sylfaenol ychwanegol a rennir a ddylai ymddwyn fel parthau **Site URL** ffurflen checkout yn lle mapio personol fesul safle:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Mae Ultimate Multisite yn normaleiddio’r gwesteiwyr hyn ac yn hepgor cofnodion parth wedi’u mapio’n awtomatig fesul safle ar eu cyfer.
 
-### Creu cofnod parth yn awtomatig
+### Creu cofnod parth yn awtomatig {#automatic-domain-record-creation}
 
 Defnyddiwch `wu_should_create_domain_record_for_site` pan fydd angen i’ch addon atal neu ohirio creu cofnod parth yn awtomatig ar gyfer safle newydd ei greu:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Gall integreiddiadau darparwr gwesteiwr sy’n gwrando ar `wu_add_subdomain` greu cofnodion DNS ar ochr y darparwr pan gaiff safleoedd eu creu. Os nad oes unrhyw integreiddiad wedi’i gofrestru ar gyfer y weithred honno, mae Ultimate Multisite yn hepgor y swydd gefndir wag.
 
-## Camau Nesaf
+## Camau Nesaf {#next-steps}
 
 - Adolygwch y [Cyfeirnod Hooks](/developer/hooks) ar gyfer gweithredoedd a hidlyddion sydd ar gael
 - Gwiriwch y [Trosolwg REST API](/developer/rest-api/overview) ar gyfer integreiddio API

@@ -4,11 +4,11 @@ title: Filtro - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filtrilo: wu_country_get_administrative_division_name
+# Filtrilo: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Redonas belan nomon de la administraj subpartoj de la lando.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Redonas belan nomon de la administraj subpartoj de la lando.
 | $ucwords | `bool` | ĉu ni majuskligas la vortojn. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instanco de la nuna klaso. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.11
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ĉe linio 250
 
 
-## Redonas
+## Redonas {#returns}
 La modifitan nomon de la subparto.

@@ -3,11 +3,11 @@ title: Webhook-en kudeaketa
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-en kudeaketa
+# Webhook-en kudeaketa {#webhook-handling}
 
 Sortu webhook amaiera-puntu pertsonalizatuak kanpoko zerbitzuetatik gertaerak jasotzeko eta datuak Ultimate Multisite-rekin sinkronizatzeko.
 
-## Webhook amaiera-puntu pertsonalizatua
+## Webhook amaiera-puntu pertsonalizatua {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Segurtasun-kontuan hartu beharrekoak
+## Segurtasun-kontuan hartu beharrekoak {#security-considerations}
 
 - Egiaztatu beti webhook sinadurak HMAC edo sekretu partekatu bat erabiliz
 - Erabili `permission_callback` bat zure REST ibilbidean — ez ezarri inoiz `__return_true` gisa ekoizpenean

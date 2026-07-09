@@ -3,11 +3,11 @@ title: Ìdàgbàsókè Ẹnu-ọ̀nà Àdáni
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Idagbasoke Gateway Aṣa
+# Idagbasoke Gateway Aṣa {#custom-gateway-development}
 
 O le ṣẹda àwọn gateway isanwo àṣà nípa fífi kún kilasi `Base_Gateway`.
 
-## Kilasi Gateway
+## Kilasi Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Forúkọsílẹ Gateway náà
+## Forúkọsílẹ Gateway náà {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Àwọn Ọna Pátá
+## Àwọn Ọna Pátá {#key-methods}
 
 | Ọna | Ète |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Ṣàkóso àwọn ìbéèrè ìdápadà owó |
 | `get_payment_methods()` | Dá àwọn ọ̀nà isanwo tí a ti fipamọ́ padà fún oníbàárà |
 
-## Àwọn credential ìtúnṣe fún àwọn membership tó ń tún ṣẹlẹ̀
+## Àwọn credential ìtúnṣe fún àwọn membership tó ń tún ṣẹlẹ̀ {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 jẹ́ kí àwọn ìṣepọ̀ gateway ròyìn bóyá membership tó ń tún ṣẹlẹ̀ ní credential ìtúnṣe tí a lè tún lò ṣáájú kí `auto_renew` tó wa ní pípa mọ́. Hook `wu_membership_has_renewal_credential` kí o sì dá padà:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Pa àmì credential tí kò sí rẹ́ gẹ́gẹ́ bí apá kan nínú ìṣàn re-authorization gateway rẹ tí ó ṣàṣeyọrí lẹ́yìn tí a bá ti fipamọ́ credential tuntun tí a lè tún lò.
 
-## Àwọn ìmọ̀ràn
+## Àwọn ìmọ̀ràn {#tips}
 
 - Máa dá `WP_Error` padà nígbà gbogbo nígbà ìkùnà kí Ultimate Multisite lè ṣàkóso fífi àṣìṣe hàn
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Lo `wu_log_add()` fún logging tó jẹ mọ́ gateway
 
-## Àwọn agbára olupese connector AI
+## Àwọn agbára olupese connector AI {#ai-connector-provider-capabilities}
 
 Àwọn ìṣepọ̀ àṣà tí ń pe àwọn iṣẹ́ tí AI connector ṣe àtìlẹ́yìn gbọ́dọ̀ bá àkójọpọ̀ olupese OAuth tí a ṣe àgbékalẹ̀ pẹ̀lú AI Provider for Anthropic Max v1.3.0 mu:
 

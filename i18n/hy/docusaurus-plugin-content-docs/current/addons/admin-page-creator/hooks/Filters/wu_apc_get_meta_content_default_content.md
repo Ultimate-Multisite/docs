@@ -4,11 +4,11 @@ title: Զտիչ - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Filter: wu_apc_get_meta_content_default_content
+# Filter: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Թույլ է տալիս մշակողներին զտել լռելյայն արժեքները
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | Վերցվելիք մետատվյալների տեսակը։ |
 | $meta_key | `string` | Մետա դաշտի անունը։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 1.4.0
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) ֆայլում՝ 68-րդ տողում
 
 
-## Վերադարձնում է
+## Վերադարձնում է {#returns}
 Նոր լռելյայն արժեք։

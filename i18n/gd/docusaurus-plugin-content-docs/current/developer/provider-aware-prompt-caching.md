@@ -3,11 +3,11 @@ title: Tasgadh phròmptan a tha mothachail air an t-solaraiche
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Tasgadh prompt mothachail air solaraichean
+# Tasgadh prompt mothachail air solaraichean {#provider-aware-prompt-caching}
 
 Tha Superdav AI Agent v1.12.0 a’ toirt a-steach **tasgadh prompt mothachail air solaraichean**, a nì cosgaisean API agus latency nas fheàrr le bhith a’ tasgadh promptaichean thar diofar sholaraichean LLM. Tha uidheaman agus rèiteachaidhean tasgaidh eadar-dhealaichte aig gach solaraiche.
 
-## Sealladh farsaing
+## Sealladh farsaing {#overview}
 
 Leigidh tasgadh prompt leat:
 
@@ -23,11 +23,11 @@ Bidh diofar sholaraichean a’ cur tasgadh an gnìomh ann an dòighean eadar-dhe
 - **OpenRouter**: Tasgadh sònraichte don t-solaraiche
 - **Vertex Anthropic**: Tasgadh prompt le smachd tasgadain
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Tha Google Gemini a’ toirt seachad stiùireadh tasgadain soilleir tron `cachedContents` API.
 
-### Rèiteachadh
+### Rèiteachadh {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Cruthachadh prompt tasgaichte
+### Cruthachadh prompt tasgaichte {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Cleachdadh prompt tasgaichte
+### Cleachdadh prompt tasgaichte {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cuairt-beatha an tasgadain
+### Cuairt-beatha an tasgadain {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Cleachdaidhean as fheàrr airson Gemini
+### Cleachdaidhean as fheàrr airson Gemini {#best-practices-for-gemini}
 
 - **Suidhich TTL iomchaidh**: Cothromaich sàbhalaidhean cosgais an aghaidh seannachd an tasgadain
 - **Tasgaich promptaichean siostaim**: Ath-chleachd an aon prompt siostaim thar iarrtasan
 - **Cum sùil air cleachdadh an tasgadain**: Lorg dè na tasgadain as motha a thathar a’ cleachdadh
 - **Glan tasgadain a dh’fhalbh an ùine**: Sguab às tasgadain nach eilear a’ cleachdadh bho àm gu àm
 
-## Azure OpenAI: Tasgadh prompt
+## Azure OpenAI: Tasgadh prompt {#azure-openai-prompt-caching}
 
 Tha Azure OpenAI a’ toirt taic do thasgadh prompt le stiùireadh TTL fèin-obrachail.
 
-### Rèiteachadh
+### Rèiteachadh {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Cur tasgaidh an comas
+### Cur tasgaidh an comas {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Headers tasgadain
+### Headers tasgadain {#cache-headers}
 
 Bidh Azure OpenAI a’ cleachdadh HTTP headers airson smachd tasgadain:
 
@@ -152,7 +152,7 @@ Luachan le taic:
 - `no_cache`: Na tasgaich an t-iarrtas seo
 - `no_store`: Na tasgaich agus na h-ath-chleachd
 
-### Cumail sùil air cleachdadh an tasgadain
+### Cumail sùil air cleachdadh an tasgadain {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Cleachdaidhean as fheàrr airson Azure OpenAI
+### Cleachdaidhean as fheàrr airson Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Cleachd promptaichean cunbhalach**: Gheibh promptaichean co-ionann buannachd bho thasgadh
 - **Suidhich TTL reusanta**: Cothromaich cosgais an aghaidh ùiread
 - **Cum sùil air metrics tasgadain**: Lorg cruthachadh tasgadain an aghaidh bhuillean
 - **Batch iarrtasan coltach**: Cuir iarrtasan ann am buidhnean gus buillean tasgadain a mheudachadh
 
-## OpenRouter: Tasgadh sònraichte don t-solaraiche
+## OpenRouter: Tasgadh sònraichte don t-solaraiche {#openrouter-provider-specific-caching}
 
 Tha OpenRouter a’ toirt taic do thasgadh tro na solaraichean bunaiteach (OpenAI, Anthropic, msaa).
 
-### Rèiteachadh
+### Rèiteachadh {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Cleachdadh tasgadh OpenRouter
+### Cleachdadh tasgadh OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Roghainnean sònraichte don t-solaraiche
+### Roghainnean sònraichte don t-solaraiche {#provider-specific-options}
 
 Tha uidheaman tasgaidh eadar-dhealaichte aig diofar sholaraichean:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Cleachdaidhean as fheàrr airson OpenRouter
+### Cleachdaidhean as fheàrr airson OpenRouter {#best-practices-for-openrouter}
 
 - **Biodh fios agad air tasgadh an t-solaraiche agad**: Tha uidheaman eadar-dhealaichte aig gach solaraiche
 - **Dèan deuchainn air giùlan tasgaidh**: Dearbhaich gu bheil tasgadh ag obair leis an t-solaraiche a thagh thu
 - **Cum sùil air cosgaisean**: Lorg sàbhalaidhean bho thasgadh
 - **Cleachd modailean cunbhalach**: Brisidh atharrachadh mhodailean buillean tasgadain
 
-## Vertex Anthropic: Tasgadh prompt le smachd tasgadain
+## Vertex Anthropic: Tasgadh prompt le smachd tasgadain {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Tha Vertex Anthropic (Google Cloud) a’ toirt taic do thasgadh prompt le smachd tasgadain soilleir.
 
-### Rèiteachadh
+### Rèiteachadh {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### A’ cleachdadh tasgadh Vertex Anthropic
+### A’ cleachdadh tasgadh Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Seòrsaichean Cache Control
+### Seòrsaichean Cache Control {#cache-control-types}
 
 - **ephemeral**: Tasgadan fad na h-iarrtais (bunaiteach)
 - **persistent**: Tasgadan thar iomadh iarrtas (ma tha taic ann)
 
-### A’ cumail sùil air cleachdadh an tasgadain
+### A’ cumail sùil air cleachdadh an tasgadain {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Na cleachdaidhean as fheàrr airson Vertex Anthropic
+### Na cleachdaidhean as fheàrr airson Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Cleachd tasgadh ephemeral**: Math airson tasgadh ann an aon seisean
 - **Suidhich max_tokens gu h-iomchaidh**: Cothromaich meud an tasgadain an aghaidh cosgais
 - **Cum sùil air meatraigean an tasgadain**: Lorg èifeachdas an tasgadain
 - **Dèan deuchainn leis an eallach-obrach agad**: Dearbhaich gu bheil tasgadh feumail don chùis-chleachdaidh agad
 
-## Ro-innleachd tasgaidh thar sholaraichean
+## Ro-innleachd tasgaidh thar sholaraichean {#cross-provider-caching-strategy}
 
-### Rèiteachadh aonaichte
+### Rèiteachadh aonaichte {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Lorg solaraiche
+### Lorg solaraiche {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Ro-innleachd cùl-taice
+### Ro-innleachd cùl-taice {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Barranachadh cosgais
+## Barranachadh cosgais {#cost-optimization}
 
-### Obraich a-mach sàbhalaidhean
+### Obraich a-mach sàbhalaidhean {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Molaidhean barranachaidh
+### Molaidhean barranachaidh {#optimization-tips}
 
 - **Tasgaich brosnachaidhean mòra siostaim**: Na sàbhalaidhean cosgais as motha
 - **Ath-chleachd co-theacsa**: Tasgaich sgrìobhainnean co-theacsa a thathar a’ cleachdadh gu tric
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Cum sùil air èifeachdas an tasgadain**: Lorg na fìor shàbhalaidhean
 - **Atharraich TTL**: Cothromaich cosgais an aghaidh ùiread
 
-## Fuasgladh dhuilgheadasan
+## Fuasgladh dhuilgheadasan {#troubleshooting}
 
-### Chan eil an tasgadan ga chleachdadh
+### Chan eil an tasgadan ga chleachdadh {#cache-not-being-used}
 
 - Dearbhaich gu bheil tasgadh an comas san rèiteachadh
 - Dèan cinnteach gu bheil na brosnachaidhean co-ionann (tha tasgadh ag iarraidh maids cheart)
 - Dearbhaich nach eil an tasgadan air tighinn gu crìch
 - Thoir sùil air crìochan tasgadain a tha sònraichte don t-solaraiche
 
-### Tha cruthachadh an tasgadain a’ fàiligeadh
+### Tha cruthachadh an tasgadain a’ fàiligeadh {#cache-creation-failing}
 
 - Dearbhaich gu bheil meud an tasgadain taobh a-staigh crìochan an t-solaraiche
 - Dèan cinnteach gu bheil co-chàradh Cache Control ceart
 - Dèan cinnteach gu bheil an solaraiche a’ toirt taic do thasgadh airson a’ mhodail agad
 - Lèirmheas sgrìobhainnean an t-solaraiche airson cuingeachaidhean
 
-### Cosgaisean ris nach robh dùil
+### Cosgaisean ris nach robh dùil {#unexpected-costs}
 
 - Cum sùil air cruthachadh tasgadain an aghaidh tòcanan leughaidh tasgadain
 - Dearbhaich gu bheil an tasgadan ga chleachdadh dha-rìribh
 - Thoir sùil airson fàilligidhean tasgadain air sgàth atharrachaidhean ann am brosnachaidhean
 - Beachdaich air TTL no ro-innleachd tasgadain atharrachadh
 
-## Coimeas sholaraichean
+## Coimeas sholaraichean {#provider-comparison}
 
 | Feart | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Lùghdachadh cosgais | 90% | 90% | An urra ris an t-solaraiche | 90% |
 | Cumail sùil | Mionaideach | Tro mheatraigean | An urra ris an t-solaraiche | Tro chleachdadh |
 
-## Na h-ath cheumannan
+## Na h-ath cheumannan {#next-steps}
 
 1. **Tagh an solaraiche agad**: Tagh stèidhichte air na feumalachdan agad
 2. **Rèitich tasgadh**: Stèidhich tasgadh a tha sònraichte don t-solaraiche

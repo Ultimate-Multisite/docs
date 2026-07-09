@@ -3,19 +3,19 @@ title: 'Pelajaran 10: Hari Peluncuran'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Pelajaran 10: Hari Peluncuran
+# Pelajaran 10: Hari Peluncuran {#lesson-10-launch-day}
 
 Semuanya sudah jadi. Sebelum Anda membuka "pintu"-nya, pelajaran ini akan memandu Anda melalui daftar periksa pra-peluncuran untuk memastikan tidak ada yang rusak, hilang, atau memalukan.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah memiliki template, paket, checkout, branding, onboarding, dan harga yang sudah dikonfigurasi. Sekarang kita akan memverifikasi bahwa semuanya berfungsi dan siap diluncurkan.
 
-## Daftar Periksa Pra-Peluncuran
+## Daftar Periksa Pra-Peluncuran {#pre-launch-checklist}
 
 Kerjakan setiap item. Jangan lewatkan satu pun.
 
-### Infrastruktur Platform
+### Infrastruktur Platform {#platform-infrastructure}
 
 - [ ] Hosting stabil dan berkinerja baik di bawah beban (load)
 - [ ] Wildcard SSL aktif dan semua subdomain menggunakan HTTPS
@@ -23,7 +23,7 @@ Kerjakan setiap item. Jangan lewatkan satu pun.
 - [ ] Backup sudah dikonfigurasi dan diuji (pulihkan setidaknya satu untuk verifikasi)
 - [ ] Monitoring sudah terpasang — Anda akan tahu jika platform mati
 
-### Template
+### Template {#templates}
 
 - [ ] Ketiga template dimuat dengan benar di situs baru
 - [ ] Konten placeholder membantu dan bebas dari salah ketik
@@ -32,7 +32,7 @@ Kerjakan setiap item. Jangan lewatkan satu pun.
 - [ ] Kecepatan muat halaman dapat diterima (uji dengan alat seperti GTmetrix atau PageSpeed Insights)
 - [ ] Tidak ada tautan rusak atau aset yang hilang di template mana pun
 
-### Paket dan Produk
+### Paket dan Produk {#plans-and-products}
 
 - [ ] Ketiga paket aktif dan terlihat
 - [ ] Deskripsi paket akurat dan spesifik niche
@@ -42,7 +42,7 @@ Kerjakan setiap item. Jangan lewatkan satu pun.
 - [ ] Order bumps muncul dengan benar selama checkout
 - [ ] Batasan plugin dan tema ditegakkan dengan benar per paket
 
-### Alur Checkout
+### Alur Checkout {#checkout-flow}
 
 - [ ] Selesaikan pendaftaran uji coba penuh pada setiap paket (gunakan mode pembayaran uji coba)
 - [ ] Pemilihan template menampilkan template yang benar per paket
@@ -52,7 +52,7 @@ Kerjakan setiap item. Jangan lewatkan satu pun.
 - [ ] Pelanggan dapat masuk ke situs baru mereka segera
 - [ ] Kode diskon berfungsi dengan benar
 
-### Branding
+### Branding {#branding}
 
 - [ ] Halaman login menampilkan branding FitSite
 - [ ] Dashboard admin menampilkan branding FitSite
@@ -60,7 +60,7 @@ Kerjakan setiap item. Jangan lewatkan satu pun.
 - [ ] Faktur ditampilkan dengan benar beserta detail bisnis Anda
 - [ ] Situs pemasaran sudah aktif dan menautkan ke formulir checkout
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Widget Quick Start muncul di dashboard pelanggan baru
 - [ ] Semua tautan Quick Start menunjuk ke halaman yang benar
@@ -68,7 +68,7 @@ Kerjakan setiap item. Jangan lewatkan satu pun.
 - [ ] Artikel knowledge base sudah diterbitkan dan dapat diakses
 - [ ] Halaman akun menampilkan informasi paket dan opsi peningkatan yang benar
 
-### Legal dan Bisnis
+### Legal dan Bisnis {#legal-and-business}
 
 - [ ] Syarat layanan (Terms of service) sudah diterbitkan dan ditautkan dari checkout
 - [ ] Kebijakan privasi (Privacy policy) sudah diterbitkan dan dapat diakses
@@ -77,11 +77,11 @@ Kerjakan setiap item. Jangan lewatkan satu pun.
 - [ ] Payment gateway dalam mode live (bukan mode uji coba)
 - [ ] Konfigurasi pajak sudah benar untuk yurisdiksi Anda
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Pertimbangkan peluncuran dua fase:
 
-### Fase 1: Soft Launch
+### Fase 1: Soft Launch {#phase-1-soft-launch}
 
 Ajak 5-10 pemilik studio kebugaran untuk mendaftar sebelum peluncuran publik. Mereka adalah pelanggan beta Anda. Tawarkan diskon signifikan kepada mereka (diskon 50% seumur hidup, atau 3 bulan gratis) sebagai imbalan atas:
 
@@ -91,7 +91,7 @@ Ajak 5-10 pemilik studio kebugaran untuk mendaftar sebelum peluncuran publik. Me
 
 Ini memberi Anda umpan balik pelanggan nyata dan situs live untuk dipamerkan sebelum Anda terbuka untuk publik.
 
-### Fase 2: Public Launch
+### Fase 2: Public Launch {#phase-2-public-launch}
 
 Setelah umpan balik soft launch dimasukkan:
 
@@ -100,7 +100,7 @@ Setelah umpan balik soft launch dimasukkan:
 - Mulai akuisisi pelanggan (Pelajaran 11)
 - Umumkan di saluran industri kebugaran yang relevan
 
-## Tindakan Hari Peluncuran
+## Tindakan Hari Peluncuran {#launch-day-actions}
 
 Pada hari Anda menjadi publik:
 
@@ -110,7 +110,7 @@ Pada hari Anda menjadi publik:
 4. **Siap sedia** — pelanggan nyata pertama Anda mungkin membutuhkan bantuan, dan respons cepat membangun kepercayaan
 5. **Rayakan sebentar** — lalu kembali bekerja
 
-## Apa yang Bisa Salah
+## Apa yang Bisa Salah {#what-can-go-wrong}
 
 Bersiaplah untuk:
 
@@ -120,7 +120,7 @@ Bersiaplah untuk:
 - **Kinerja di bawah beban**: Jika Anda mengalami lonjakan lalu lintas, ketahui cara meningkatkan hosting Anda
 - **Kebingungan pelanggan**: Siapkan knowledge base dan saluran dukungan Anda
 
-## FitSite Network Sejauh Ini
+## FitSite Network Sejauh Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Apa yang Kita Bangun di Pelajaran Ini
+## Apa yang Kita Bangun di Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Daftar periksa pra-peluncuran komprehensif** yang mencakup infrastruktur, konten, pembayaran, dan legal
 - **Strategi soft launch** untuk mendapatkan umpan balik nyata sebelum menjadi publik

@@ -4,20 +4,20 @@ title: Iragazkia - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Iragazkia: wu_password_require_lowercase
+# Iragazkia: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
 
 Pasahitzetan letra xeheak eskatu behar diren ala ez iragazi.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
 | $require | `bool` | Letra xeheak eskatu behar diren ala ez. Lehenetsia true da arauak indarrean daudenean. |
 | $defender_active | `bool` | Defender Pro Strong Password aktibo dagoen ala ez. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.4.0
-### Iturburua
+### Iturburua {#source}
 
 [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L563) fitxategian definitua, 563. lerroan

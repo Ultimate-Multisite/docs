@@ -3,11 +3,11 @@ title: Sarlavha domen qidiruvi
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header domen qidiruvi
+# Header domen qidiruvi {#header-domain-search}
 
 Ultimate Multisite checkout ichida mijoz mavjud domenlardan tanlashi uchun avval domen qidiruvini boshlaydigan kichik header form kerak bo‘lganda ushbu sozlamadan foydalaning.
 
-## Talablar
+## Talablar {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Ultimate Multisite checkout ichida mijoz mavjud domenlardan tanlashi uchun avval
   - Qo‘llab-quvvatlanadigan TLDlar sozlangan, masalan `com`, `net` va `org`.
 - **Domain Selection** maydonini o‘z ichiga olgan yaroqli checkout form.
 
-## Checkout form
+## Checkout form {#checkout-form}
 
 1. Ro‘yxatdan o‘tish sahifasi ishlatadigan checkout formni yarating yoki tahrirlang.
 2. Oddiy talab qilinadigan checkout/account maydonlarini, jumladan **Username**ni qo‘shing. Faqat domen maydonidan iborat checkout form Ultimate Multisite validatsiyasi tomonidan rad etiladi.
@@ -30,7 +30,7 @@ Ro‘yxatdan o‘tish sahifasi checkout formni ko‘rsatishi kerak, masalan:
 [wu_checkout slug="domain-form"]
 ```
 
-## Header form
+## Header form {#header-form}
 
 Sayt headeriga kiritilgan qidiruv atamasini checkout sahifasiga `domain_name` sifatida yuboradigan kichik `GET` form qo‘shing:
 
@@ -44,7 +44,7 @@ Sayt headeriga kiritilgan qidiruv atamasini checkout sahifasiga `domain_name` si
 
 Maxsus header JavaScriptda domenni oldindan tanlamang. Header faqat qidiruv atamasini uzatishi kerak. Domain Seller checkout skripti `?domain_name=example`ni o‘qiydi, checkout qidiruv oynasini to‘ldiradi va mijoz qaytarilgan domenlardan tanlashi uchun mavjudlik qidiruvini ishga tushiradi.
 
-## Kutilgan xatti-harakat
+## Kutilgan xatti-harakat {#expected-behaviour}
 
 Headerda `example` qidirilsa, quyidagini ochishi kerak:
 
@@ -61,7 +61,7 @@ Checkout keyin quyidagilar kabi tanlanadigan natijalarni ko‘rsatishi kerak:
 
 Mavjud natija tanlangandan so‘ng, buyurtma xulosasida domen ro‘yxatdan o‘tkazish mahsuloti va tanlangan domen nomi bo‘lishi kerak.
 
-## Tekshirish
+## Tekshirish {#verification}
 
 1. Bosh sahifani oching.
 2. Yalang‘och nomni qidiring, masalan `example`.
@@ -71,7 +71,7 @@ Mavjud natija tanlangandan so‘ng, buyurtma xulosasida domen ro‘yxatdan o‘t
 6. Mavjud domen uchun **Select**ni bosing.
 7. Buyurtma xulosasida `Domain Registration - example.com` yoki tanlangan domen borligini tasdiqlang.
 
-## Muammolarni bartaraf etish
+## Muammolarni bartaraf etish {#troubleshooting}
 
 - Agar ro‘yxat ko‘rinmasa, browser tarmoq tabida `admin-ajax.php?action=wu_domain_search`ni tekshiring va u bo‘sh bo‘lmagan `domains` yoki `results` qaytarishini tasdiqlang.
 - Agar checkout form saqlash vaqtida validatsiyadan o‘tmasa, **Username** kabi talab qilinadigan account maydonlarini qo‘shing.

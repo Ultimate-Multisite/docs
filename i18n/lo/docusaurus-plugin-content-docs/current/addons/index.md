@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# ສ່ວນເສີມ Ultimate Multisite
+# ສ່ວນເສີມ Ultimate Multisite {#ultimate-multisite-addons}
 
 ສ່ວນເສີມຊ່ວຍຂະຫຍາຍ Ultimate Multisite ດ້ວຍຄຸນສົມບັດແລະການເຊື່ອມຕໍ່ເພີ່ມເຕີມ. ສ່ວນເສີມສ່ວນໃຫຍ່ເປັນແບບຈ່າຍເງິນ ແລະສາມາດຊື້ໄດ້ຈາກ [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## ການຕິດຕັ້ງ
+## ການຕິດຕັ້ງ {#installation}
 
 ສາມາດຕິດຕັ້ງສ່ວນເສີມໄດ້ສອງວິທີ:
 
 1. **ຜ່ານໜ້າສ່ວນເສີມ** -- ໄປທີ່ໜ້າຈັດການສ່ວນເສີມຂອງເວັບໄຊຂອງທ່ານໃນສ່ວນຜູ້ດູແລ WordPress
 2. **ດາວໂຫຼດດ້ວຍຕົນເອງ** -- ດາວໂຫຼດຈາກ [Account ຂອງທ່ານ](https://ultimatemultisite.com/my-account/downloads/) ແລະອັບໂຫຼດຜ່ານ Plugins > Add New
 
-## ສ່ວນເສີມທີ່ມີໃຫ້ໃຊ້
+## ສ່ວນເສີມທີ່ມີໃຫ້ໃຊ້ {#available-addons}
 
 | ສ່ວນເສີມ | ຄຳອະທິບາຍ |
 |-------|-------------|

@@ -3,13 +3,13 @@ title: Menyesuaikan Borang Pendaftaran Anda
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Menyesuaikan Borang Pendaftaran anda
+# Menyesuaikan Borang Pendaftaran anda {#customizing-your-registration-form}
 
 Untuk menjadikan rangkaian anda kelihatan unik berbanding semua SaaS lain yang dibina pada platform WordPress, Ultimate Multisite membolehkan anda menyesuaikan halaman pendaftaran dan log masuk anda dengan ciri **Checkout Forms** kami.
 
 Walaupun ia merupakan cara yang mudah dan fleksibel untuk mencuba pendekatan berbeza ketika cuba menukar pelanggan baharu, ia kebanyakannya digunakan untuk mencipta borang pendaftaran yang diperibadikan. Artikel ini bertujuan untuk menunjukkan kepada anda cara melakukannya.
 
-## Halaman log masuk dan pendaftaran:
+## Halaman log masuk dan pendaftaran: {#login-and-registration-pages}
 
 Selepas pemasangan Ultimate Multisite, ia secara automatik mencipta halaman log masuk dan pendaftaran tersuai pada laman utama anda. Anda boleh menukar halaman lalai ini pada bila-bila masa dengan pergi ke halaman **Ultimate Multisite > Settings > Login & Registration** anda.
 
@@ -45,7 +45,7 @@ Sekarang, mari lihat pilihan lain yang masih berkaitan dengan proses log masuk d
 
 Dan itulah semua pilihan berkaitan log masuk dan pendaftaran yang boleh anda sesuaikan! Jangan lupa untuk menyimpan tetapan anda selepas anda selesai mengeditnya.
 
-## Menggunakan berbilang borang pendaftaran:
+## Menggunakan berbilang borang pendaftaran: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 menawarkan editor borang checkout yang membolehkan anda mencipta seberapa banyak borang yang anda mahu, dengan medan berbeza, produk yang ditawarkan, dan sebagainya.
 
@@ -69,7 +69,7 @@ Sebagai alternatif, anda boleh mengedit atau menduplikasi borang yang sudah anda
 
 Jika anda memilih satu langkah atau berbilang langkah, borang checkout akan sedia diisi terlebih dahulu dengan langkah asas untuk ia berfungsi. Kemudian, jika anda mahu, anda boleh menambah langkah tambahan padanya.
 
-### Mengedit Checkout Form:
+### Mengedit Checkout Form: {#editing-a-checkout-form}
 
 Seperti yang kami sebut sebelum ini, anda boleh mencipta borang checkout untuk tujuan yang berbeza. Dalam contoh ini kami akan mengusahakan borang pendaftaran.
 
@@ -131,11 +131,11 @@ Untuk mendapatkan shortcode borang anda, klik **Generate Shortcode** dan salin h
 
 _**Nota:** Anda perlu menambah shortcode ini pada halaman pendaftaran anda supaya borang checkout ini ditambahkan padanya._
 
-## Memilih produk dan templat terlebih dahulu melalui parameter URL:
+## Memilih produk dan templat terlebih dahulu melalui parameter URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Jika anda mahu mencipta jadual harga tersuai untuk produk anda dan memilih terlebih dahulu pada borang checkout produk atau templat yang pelanggan anda pilih daripada jadual harga atau halaman templat anda, anda boleh menggunakan parameter URL untuk ini.
 
-### **Untuk pelan:**
+### **Untuk pelan:** {#for-plans}
 
 Pergi ke **Ultimate Multisite > Products > Select a plan**. Anda sepatutnya melihat butang **Click to copy Shareable Link** di bahagian atas halaman. Ini ialah pautan yang boleh anda gunakan untuk memilih pelan khusus ini terlebih dahulu pada borang checkout anda.
 
@@ -143,7 +143,7 @@ Pergi ke **Ultimate Multisite > Products > Select a plan**. Anda sepatutnya meli
 
 Ambil perhatian bahawa pautan boleh kongsi ini hanya sah untuk **Plans**. Anda tidak boleh menggunakan pautan boleh kongsi untuk pakej atau perkhidmatan.
 
-### Untuk templat:
+### Untuk templat: {#for-templates}
 
 Jika anda mahu memilih templat laman terlebih dahulu pada borang checkout anda, anda boleh menggunakan parameter: **?template_id=X** pada URL halaman pendaftaran anda. "X" perlu digantikan dengan **nombor ID templat laman**. Untuk mendapatkan nombor ini, pergi ke **Ultimate Multisite > Sites**.
 

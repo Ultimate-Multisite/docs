@@ -3,7 +3,7 @@ title: Regjistro API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint-i API i Regjistrimitja e Ultimate Multisite
+# Endpoint-i API i Regjistrimitja e Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 N këtë tutorial, do të mësoni se si të përdorni endpoint-in e API-së Ultimate Multisite /register për të krijuar gjithë procesin e hyrjes së një klientit të ri në rrjetin tuaj dhe si ta bëni këtë me Zapier.
 
@@ -29,11 +29,11 @@ Zgjidhni **Enable API** dhe merrni kredencialet tuaja API.
 
 Tani, le të eksplorojmë endpoint-in dhe më pas krijojmë një veprim regjistrimi në Zapier.
 
-## Parametrat e trupit të endpoint-it (Endpoint body parameters)
+## Parametrat e trupit të endpoint-it (Endpoint body parameters) {#endpoint-body-parameters}
 
 Le të shohim një përmbledhje të informacionit minimal që duhet të dërgojmë te endpoint. Në fund të këtij artikulli, do të gjeni thirrjen e plotë.
 
-### Klienti (Customer)
+### Klienti (Customer) {#customer}
 
 Kjo është informacioni i nevojshëm për procesin e krijimit të Përdoruesit dhe Klientit Ultimate Multisite:
 
@@ -43,25 +43,25 @@ A është e mundur të dërgoni ID-në e klientit që keni krijuar në rrjetin t
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membreshtia (Membership)**
+### **Membreshtia (Membership)** {#membership}
 
 Vetëm informacioni që na duhet brenda këtij objekti është Statusi i Membreshties.
 
 "membership" { "status" : "string", // një nga "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produkte (Products)**
+### **Produkte (Products)** {#products}
 
 Produkte mund t'u japin një array me 1 ose më shumë ID-ve të produktit nga rrjeti juaj. Kujdes, ky endpoint nuk krijon produkte. Kontrolloni dokumentacionin e Ultimate Multisite për të kuptuar më mirë endpoint-in e krijimit të produktit.
 
 **"products" : [1,2],**
 
-### **Pagesa (Payment)**
+### **Pagesa (Payment)** {#payment}
 
 As me Membreshtin, ne kemi nevojë vetëm për statusin.
 
 **"payment" { "status" : "string", // një nga "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### **Siti (Site)**
+### **Siti (Site)** {#site}
 
 Dhe për të mbyllur trupin, ne kemi nevojë edhe për URL dhe Titullin e faqes së internetit brenda objektit Site.
 
@@ -69,13 +69,13 @@ Dhe për të mbyllur trupin, ne kemi nevojë edhe për URL dhe Titullin e faqes 
 
 Kthimi i endpoint-it register do të jetë një array me informacionin e ri të membreshties krijuar.
 
-## Krijimi i një aksioni në Zapier
+## Krijimi i një aksioni në Zapier {#creating-an-action-in-zapier}
 
 Me hyrjen e këtij endpointi të ri dhe më të fortë për krijimin e llogrive, ju do të aksesoni edhe një aksion të ri në Zapier.
 
 A dini se si të përdorni dhe të merrni kënaqësinë nga çdo gjë që ofron versioni i ri i Zapier? Mëso më shumë këtu. (link?)
 
-### Krijimi i një aksioni
+### Krijimi i një aksioni {#creating-an-action}
 
 Për të ilustruar më mirë se si të përdorni endpoint-in e regjistrimit me Zapier, le të krijojmë një integrim me Google Forms. Çdo herë që ky form mbulohet dhe informacioni ruhet në fletën e përgjigjeve të formës, do të krijohet një anëtarje (membership) e re në rrjetin Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Kur informacione të vendosura, vazhdo me testin final. Në ekranin e fundit mun
 
 Testoni Zap-in tuaj të ri dhe ai duhet të përfundojë me sukses. Nëse ndodh ndonjë gabim, kontrolloni të gjitha fushat dhe nëse po dërgohen si duhet. Sepse ka shumë informacion, disa gjëra mund të mos vërehen.
 
-### Parametrat e plotë të endpoint-it
+### Parametrat e plotë të endpoint-it {#complete-endpoint-parameters}
 
 Këtu është thirrja e plotë dhe të gjitha mundësitë për fushat që mund të dërgohen.
 

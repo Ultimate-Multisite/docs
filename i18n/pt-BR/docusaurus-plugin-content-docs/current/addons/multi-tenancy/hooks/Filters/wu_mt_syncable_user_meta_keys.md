@@ -8,16 +8,16 @@ Filtro: wu_mt_syncable_user_meta_keys
 
 Filtra a lista de chaves de meta do usuário que devem ser sincronizadas com nós remotos.
 
-## Parameters
+## Parameters {#filter-wumtsyncableusermetakeys}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $syncable_keys | `array` | Chaves de meta padrão para sincronizar. |
 
-### Since
+### Since {#parameters}
 
 - 1.0.0
 
-### Source
+### Source {#since}
 
 Definido em [`inc/users/class-network-user-sync.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/users/class-network-user-sync.php#L296) na linha 296

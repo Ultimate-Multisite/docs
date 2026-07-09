@@ -4,13 +4,13 @@ title: Фильтр - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Домен негизги кылынгандан кийин багыттоо URL-ин чыпкалайт.
 
 Иштеп чыгуучуларга домен ийгиликтүү негизги катары коюлгандан кийин колдонуучулар кайда багытталарын ыңгайлаштырууга мүмкүндүк берет. Демейки боюнча, негизги сайттагы учурдагы URL-ге же өзгөртүлүп жаткан сайттын админ URL-ине багыттайт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -19,13 +19,13 @@ _i18n_hash: bda96824db400b25e97802e5567df22d
 | $domain | `\Domain` | Негизги кылынган домен объекти. |
 | $old_primary_domains | `array` | Мурда негизги болгон домендердин ID-леринин массиви. |
 
-### Чыгарылгандан бери
+### Чыгарылгандан бери {#since}
 
 - 2.0.0
-### Булак
+### Булак {#source}
 
 [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) ичинде 639-сапта аныкталган
 
 
-## Кайтарымдар
+## Кайтарымдар {#returns}
 Чыпкаланган багыттоо URL-и.

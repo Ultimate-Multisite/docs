@@ -4,24 +4,24 @@ title: Filtrilo - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filtrilo: wu_fluent_form_count
+# Filtrilo: wu_fluent_form_count {#filter-wufluentformcount}
 
 Permesas al plugin-programistoj ŝanĝi la totalan nombron de formularoj
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
 | $count | `int` | La totala nombro de formularoj |
 | $form_type | `string` | La formular-tipa slug |
 
-### Ekde
+### Ekde {#since}
 
 - 1.0.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L156) ĉe linio 156
 
 
-## Revenoj
+## Revenoj {#returns}
 Nova totalo

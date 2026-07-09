@@ -3,15 +3,15 @@ title: 'Isomo rya 6: Uko kwiyandikisha bigenda'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Isomo rya 6: Uburambe bwo Kwiyandikisha
+# Isomo rya 6: Uburambe bwo Kwiyandikisha {#lesson-6-the-signup-experience}
 
 Inzira yo kwishyura ni ho inyungu ihinduka amafaranga yinjira. Uburyo bwo kwiyandikisha buteye urujijo cyangwa busanzwe cyane butuma utakaza abakiriya. Inzira yihariye ku cyiciro runaka, ivuga ururimi rwabo kandi yumvikana nk’iyoroshye, irabahindura abakiriya bishyura.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 FitSite ifite inyandikorugero na plans byamaze gushyirwaho. Ubu tugiye kubaka uburambe bwo kwiyandikisha no kwishyura buhindura ba nyiri studio za fitness abakiriya bishyura.
 
-## Gusobanukirwa Inzira yo Kwiyandikisha
+## Gusobanukirwa Inzira yo Kwiyandikisha {#understanding-the-registration-flow}
 
 Amafishi yo kwishyura ya Ultimate Multisite ni amafishi y’intambwe nyinshi ashobora guhindurwa uko ushaka. Kuri FitSite, dushaka inzira:
 
@@ -21,11 +21,11 @@ Amafishi yo kwishyura ya Ultimate Multisite ni amafishi y’intambwe nyinshi ash
 
 Reba [Inzira yo Kwiyandikisha](/user-guide/configuration/the-registration-flow) kugira ngo ubone ibisobanuro byose bya tekiniki.
 
-## Gutegura Checkout ya FitSite
+## Gutegura Checkout ya FitSite {#designing-the-fitsite-checkout}
 
 Jya kuri **Ultimate Multisite > Amafishi yo Kwishyura** maze ukore ifishi nshya.
 
-### Intambwe ya 1: Guhitamo Plan
+### Intambwe ya 1: Guhitamo Plan {#step-1-plan-selection}
 
 Ikintu cya mbere nyiri studio ya fitness abona kigomba kuba ari plans, zigaragajwe mu magambo yumva.
 
@@ -37,7 +37,7 @@ Ikintu cya mbere nyiri studio ya fitness abona kigomba kuba ari plans, zigaragaj
 "Ububiko bwa 1 GB" nta cyo bivuze kuri nyiri gym. "Ibintu byose ukeneye ku rubuga rw'umwuga rwa studio" bivuze byose. Andika ibisobanuro bya plan mu rurimi rw'umukiriya wawe.
 :::
 
-### Intambwe ya 2: Guhitamo Inyandikorugero
+### Intambwe ya 2: Guhitamo Inyandikorugero {#step-2-template-selection}
 
 Nyuma yo guhitamo plan, umukiriya ahitamo inyandikorugero aheraho.
 
@@ -45,7 +45,7 @@ Nyuma yo guhitamo plan, umukiriya ahitamo inyandikorugero aheraho.
 - Inyandikorugero ziboneka zungururwa hashingiwe kuri plan yahisemo (byashyizweho mu Isomo rya 5)
 - Buri nyandikorugero igomba kugira ishusho y'ibanze igaragaza design yihariye ya fitness
 
-### Intambwe ya 3: Gukora Account
+### Intambwe ya 3: Gukora Account {#step-3-account-creation}
 
 Bigumane byoroheje. Kusanya gusa:
 
@@ -55,27 +55,27 @@ Bigumane byoroheje. Kusanya gusa:
 
 Ntugasabe amakuru udakeneye mu gihe cyo kwiyandikisha. Buri mwanya w'inyongera ugabanya umubare w'abiyandikisha.
 
-### Intambwe ya 4: Gushyiraho Urubuga
+### Intambwe ya 4: Gushyiraho Urubuga {#step-4-site-setup}
 
 - **Umutwe w'urubuga**: Wuzuze mbere uhereye ku izina rya studio ryinjijwe mu Ntambwe ya 3
 - **URL y'urubuga**: Yikore mu buryo bwikora uhereye ku izina rya studio (urugero, `ironworks.fitsite.com`)
 
-### Intambwe ya 5: Kwishyura
+### Intambwe ya 5: Kwishyura {#step-5-payment}
 
 - Ongeramo umwanya wa **Kwishyura**
 - Shyiraho inzira yawe yo kwakira ubwishyu ([Stripe](/user-guide/payment-gateways/stripe) ni yo isabwa ku kwishyurisha subscription)
 - Niba wakoze order bumps mu Isomo rya 5, ongeramo umwanya wa **Order Bump** mbere y’intambwe yo kwishyura
 
-### Intambwe ya 6: Kwemeza
+### Intambwe ya 6: Kwemeza {#step-6-confirmation}
 
 - Hindura ubutumwa bwo kwemeza ukoresheje ururimi rwihariye rwa fitness
 - Urugero: "Urubuga rwa studio yawe ya fitness rurimo gukorwa. Urahita woherezwa ku rubuga rwawe rushya mu masegonda make."
 
-## Kongeramo Akabuto ko Guhitamo Igihe
+## Kongeramo Akabuto ko Guhitamo Igihe {#adding-a-period-selection-toggle}
 
 Niba warashyizeho itandukaniro ry'ibiciro muri plans zawe (buri kwezi ugereranyije n’umwaka), ongeramo umwanya wa **Guhitamo Igihe** ku ifishi yo kwishyura kugira ngo abakiriya bashobore guhinduranya ibihe byo kwishyuriraho. Reba [Amafishi yo Kwishyura](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) kugira ngo ubone amabwiriza.
 
-## Gushyiraho Ubwishyu
+## Gushyiraho Ubwishyu {#configuring-payment}
 
 Niba utarashyiraho inzira yo kwakira ubwishyu:
 
@@ -85,7 +85,7 @@ Niba utarashyiraho inzira yo kwakira ubwishyu:
 
 Reba [Kwakira Ubwishyu](/user-guide/payment-gateways/getting-paid) kugira ngo ubone ibisobanuro ku buryo ubwishyu bugera kuri konti yawe.
 
-## Kugerageza Inzira
+## Kugerageza Inzira {#testing-the-flow}
 
 Mbere yo gukomeza, urangize igerageza ryuzuye ryo kwiyandikisha:
 
@@ -105,7 +105,7 @@ Genzura ko:
 - [ ] Umukiriya agera ku rubuga rukora rufite inyandikorugero yahisemo
 - [ ] Emails zo kwemeza zikoresha ururimi rwihariye rwa fitness
 
-## Urusobe rwa FitSite Kugeza Ubu
+## Urusobe rwa FitSite Kugeza Ubu {#the-fitsite-network-so-far}
 
 ```
 Urusobe rwa FitSite
@@ -123,7 +123,7 @@ Urusobe rwa FitSite
 └── Biteguye branding (isomo rikurikira)
 ```
 
-## Ibyo Twubatse muri Iri Somo
+## Ibyo Twubatse muri Iri Somo {#what-we-built-this-lesson}
 
 - **Ifishi yo kwishyura y’intambwe nyinshi** igenewe ba nyiri studio za fitness
 - **Ururimi rwihariye ku cyiciro** mu nzira yose yo kwiyandikisha

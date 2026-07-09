@@ -4,28 +4,28 @@ title: Sía - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Sía: wu_should_create_domain_record_for_site
+# Sía: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
 
 Síar hvort Ultimate Multisite eigi að búa til domain-færslu fyrir nýstofnaðan vef.
 
 Notaðu þessa síu til að bæla niður eða fresta sjálfvirkri stofnun domain-færslu fyrir vefi sem nota sameiginlegt grunndomain fyrir checkout-form, innri hýsil eða domain sem önnur samþætting mun stjórna sérstaklega.
 
-## Breytur
+## Breytur {#parameters}
 
 | Nafn | Tegund | Lýsing |
 |------|------|-------------|
 | $create | `bool` | Hvort domain-færslan eigi að vera búin til. |
 | $site | `WP_Site` | Nýstofnaði vefhluturinn. |
 
-### Síðan
+### Síðan {#since}
 
 - 2.13.0
 
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í `inc/functions/domain.php`.
 
 
-## Skilar
+## Skilar {#returns}
 
 Boolean sem gefur til kynna hvort eigi að búa til domain-færsluna.

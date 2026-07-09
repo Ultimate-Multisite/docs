@@ -3,17 +3,17 @@ title: Sesebelisoa sa Keketso sa ho Kenya Faele ea Sunrise
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Sejarolli sa Faele sa Sunrise sa Addon
+# Sejarolli sa Faele sa Sunrise sa Addon {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 e eketsa sejarolli sa katoloso ya sunrise bakeng sa di-add-on le dikopanyo tsa MU-plugin tse ikgethileng tse hlokang ho sebetsa nakong ya WordPress sunrise bootstrapping ntle le ho hlophisa faele e hlahisitsweng ya `wp-content/sunrise.php`.
 
-## Nako ya ho e sebedisa
+## Nako ya ho e sebedisa {#when-to-use-it}
 
 Sebedisa katoloso ya sunrise ha kopanyo ya hao e tlameha ho sebetsa pele di-plugin tse tlwaelehileng di jarollwa, jwalo ka ho tsamaisa domain e ikgethileng, ho sebetsana le dikopo tse ikgethileng ho host, kapa diphetoho tsa pele tsa bootstrap ya neteweke.
 
 Bakeng sa dikopanyo tse tlwaelehileng, kgetha ho sebedisa di-plugin tse tlwaelehileng tsa WordPress, MU-plugins, le di-hook tsa Ultimate Multisite tse ngotsweng ditokomaneng. Khoutu ya sunrise e sebetsa kapele haholo mme e lokela ho dula e le nyane, e itshireletsa, ebile e se na ditshengelo.
 
-## Mokgwa wa ho reha faele lebitso
+## Mokgwa wa ho reha faele lebitso {#file-naming-convention}
 
 Etsa faele ya PHP e bitswang `sunrise.php` ka hara bukantswe ya addon eo lebitso la yona le qalang ka `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Difaele tse tsamaellanang di jarollwa ka tatellano ya alfabete ho ya ka tsela ya addon.
 
-## Moo o ka behang faele teng
+## Moo o ka behang faele teng {#where-to-place-the-file}
 
 Beha faele bukantsweng ya motso ya addon e nang le boitshwaro ba sunrise:
 
@@ -45,7 +45,7 @@ Tlhahlobo e rarollwa ho ya ka `WP_CONTENT_DIR`, eseng boleng ba hona jwale ba `W
 
 Se ke wa hlophisa faele e hlahisitsweng ya `wp-content/sunrise.php` ka kotloloho. Sejarolli se dumella khoutu e ikgethileng ho atolosa boitshwaro ba sunrise ntle le ho etsa fork ya faele ya mantlha ya sunrise eo Ultimate Multisite e e kenyang le ho e ntjhafatsa.
 
-## Di-hook le difilthara tse fumanehang
+## Di-hook le difilthara tse fumanehang {#hooks-and-filters-available}
 
 Difaele tsa sunrise tsa addon di sebetsa ka mora hore ho mmapa ha domain ha Ultimate Multisite ho jarollwe le pele WordPress e thunya `ms_loaded`. Mothating ona faele ya sunrise e ka:
 
@@ -58,7 +58,7 @@ Ultimate Multisite e thunya `wu_sunrise_loaded` ka mora hore sejarolli sa yona s
 
 Bitsa feela difunction tse seng di jarollotswe mokgahlelong wa sunrise. Qoba mosebetsi o boima wa database, ho hlahisa template, dikopo tsa HTTP, le khoutu e nahanang hore tatellano e tlwaelehileng ya ho jarolla di-plugin e se e phethetse.
 
-## Mohlala o monyane
+## Mohlala o monyane {#minimal-example}
 
 ```php
 <?php

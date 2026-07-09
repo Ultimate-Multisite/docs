@@ -3,7 +3,7 @@ title: PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Kholo-lapa le Dashboard ya Admin ha PRO Theme
+# Kholo-lapa le Dashboard ya Admin ha PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Moea ka ntlha, ha ntlha e re ba etsa litshwalo tsa moaka, re na le tsela ea ho nthela ba ba le boikotso bo fetileng (custom experience) ha dashboard ya WordPress. Ha u batla ho leba le lona le leboha la professional, PRO Theme e ka u thusa.
 

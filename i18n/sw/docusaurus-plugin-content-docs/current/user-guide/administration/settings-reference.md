@@ -3,11 +3,11 @@ title: Marejeleo ya Mipangilio
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Rejeleo la Settings
+# Rejeleo la Settings {#settings-reference}
 
 Ukurasa huu hufuatilia settings zinazoathiri usimamizi wa kila siku na mabadiliko ya hivi karibuni ya tabia katika Ultimate Multisite.
 
-## Chaguo Nyingine
+## Chaguo Nyingine {#other-options}
 
 Eneo la **Chaguo Nyingine** huonekana chini ya **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Eneo la **Chaguo Nyingine** huonekana chini ya **Ultimate Multisite > Settings >
 |---|---|
 | **Washa Jumper** | Huonyesha zana ya urambazaji wa haraka ya Jumper katika eneo la msimamizi. Itumie kuruka moja kwa moja hadi skrini za Ultimate Multisite, vitu vya mtandao, na maeneo ya msimamizi yanayoungwa mkono. Izime ikiwa hutaki njia hii ya mkato ionekane. |
 
-## Kuripoti makosa na telemetria
+## Kuripoti makosa na telemetria {#error-reporting-and-telemetry}
 
 Mpangilio wa awali wa kujijumuisha katika kuripoti makosa umeondolewa kwenye ukurasa wa settings. Telemetria isiyo na utambulisho imezimwa na hakuna UI toggle ya kuiwasha.
 
 Ikiwa unasimamia runbooks za ndani au picha za skrini za ukurasa wa settings, ondoa marejeleo ya uga wa zamani wa kujijumuisha katika kuripoti makosa ili wasimamizi wasitafute mpangilio ambao haupo tena.
 
-## Settings za Import/Export
+## Settings za Import/Export {#importexport-settings}
 
 Kichupo cha settings cha **Import/Export** hueleza settings kinazodhibiti na huunganisha moja kwa moja na **Ultimate Multisite > Site Export** kwa ajili ya kumbukumbu za tovuti na mtandao. Tumia kichupo cha settings kwa usanidi wa import/export, tumia **Tools > Export & Import** kwa mchakato wa export/import wa tovuti moja, na tumia zana ya Site Export unapohitaji kumbukumbu kamili ya Network Export.
 
-## Onyo la salio la Domain Seller HostAfrica
+## Onyo la salio la Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Wakati addon ya Domain Seller imeunganishwa na HostAfrica, wasimamizi wa mtandao sasa huona onyo linaloweza kufutwa la salio kuwa chini wakati salio la account ya reseller liko chini sana kwa usajili wa domain au uchakataji wa usasishaji unaotegemewa.
 
 Lichukulie tangazo hili kama onyo la kiutendaji: ongeza salio la reseller wa HostAfrica kabla ya kukubali usajili zaidi wa domain unaolipiwa, kisha rudi kwenye settings za Domain Seller au skrini ya ufuatiliaji wa domain ili kuthibitisha kuwa usajili na usasishaji vinaweza kuendelea kawaida.
 
-## Settings za kiunganishi cha mtoa huduma wa AI
+## Settings za kiunganishi cha mtoa huduma wa AI {#ai-provider-connector-settings}
 
 Settings za kiunganishi cha mtoa huduma wa AI sasa huonyesha tu makundi ya account za OAuth yanayoungwa mkono:
 

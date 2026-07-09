@@ -3,7 +3,7 @@ title: Pagħda tal-Klijent
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pagħha tal-Account ta Klient (v2)
+# Pagħha tal-Account ta Klient (v2) {#your-clients-account-page-v2}
 
 _**NOTA IMPORTANTI: Dan l-artifika tiffa għall-Ultimate Multisite bizzjoni 2.x.**_
 
@@ -11,7 +11,7 @@ Meta il-klient jiddispożizzja għal plan fuq la-nettu tiegħek, jieħu l-akses 
 
 F'dan tutorial, nġġibrannkom fil-paċċa tal-account ta klient u taraw x'inqas il-klientie li jistgħu jara u jgħidu fih.
 
-## Il-Account Page
+## Il-Account Page {#the-account-page}
 
 Il-account page tiddirġi b'klikju fuq **Account** f'dashboard tal-klient tiegħek.
 
@@ -27,7 +27,7 @@ Wara li l-klient jiklik fuqhu, jara panoramika tal-membership tiegħu, indirizz 
 
 Jistax jgħatti l-membership għal plan ieħor, jew iġib paket jew servizz ieħor li toffri. Għall-aħħar, nistaqqu b'detal fuq kulle seccjone separata.
 
-### Panorama Membership:
+### Panorama Membership: {#your-membership-overview}
 
 Il-block ewli sott'il nome tal-website tal-istruttori jogra l-panorama tal-plan u l-servizzi/package li kunsidd. Il-block jogra wkoll il numru tal-membership, l-importi inizjali li tħallu għalih, qabel qabel kif kostaw il-plan u jekk ma' l-servizz/package, u qabel kif ħalli l-billing biex jiġu fattati għal dan il-membership. Jidduq wkoll jifhmu jekk l-membership **Active** (Attiv), **Expired** (Espiri) jew **Canceled** (Sospedut).
 
@@ -43,7 +43,7 @@ Morn, jekk il-kunsidd jieħu biex jixgħlu package o servizzi għal dan il-membe
 
 Nota li codi coupon ma jistgħux jiġu aḍiddati fuq dan pajjiċ tal-membership change. Jekk il-kunsidd użaw codi coupon fuq l-importi tal-membership inizjali, il-cod jidduq wkoll għal dan il-membership newwa.
 
-### Aġġornament tal-Indirizz Address tal-Billing:
+### Aġġornament tal-Indirizz Address tal-Billing: {#updating-the-billing-address}
 
 F'pagina tal-account, il-customer tiegħek jistgħu jgħaġġlu wkoll l-indirizzo ta'billing. Jekk jogħġbok jippressaw fuq **Update** qabel ta' _Billing Address_.
 
@@ -53,7 +53,7 @@ Tidħlu finestra ġdisse għall-customer tiegħek. Il-għadd li għandhom aghjtu
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Bidla tal-Template ta'Siti:
+### Bidla tal-Template ta'Siti: {#changing-the-site-template}
 
 Biex t'itħalli lil customer tiegħek biddik jbażaw il-template ta'siti tagħhom, għandek li tmur għand **Ultimate Multisite > Settings > Sites** u tiġib aktiva l-opzione **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Wara ma tivitalizzaw il-konferma u tikkliq fuq **Process Switch**, il-template d
 
 Il-klijenti jistgħu jgħandu wkoll biex jgħandu **Reset current template** minn dan panel meta għandhom jgħadu l-site b'mod aċċettabbli l-template li huwa attwalment assegnat. Fl-mod li jipparella biex jgħadnu b'template ieħor, irresetta template jgħandu li jgħaqlu l-kontenut tal-site, għoli il-klijenti għandhom jkonferma meta jifhmu l-azzjoni ta reset.
 
-### Ażjanza ta domini kustomi:
+### Ażjanza ta domini kustomi: {#adding-custom-domains}
 
 Il-klijenti tagħkom jistgħu jilqu l-opzjoni biex jiddu dominu kustomi għall-plan din fuq l-pagina tal-account tagħhom. Biex tistawli li il-klijenti tagħkom jistgħu jiddu domini kustomi, għandu tmur għand **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Wara li tkliqa fuq **Next Step**, il-klijenti tiegħek jistgħu jiddu ism tal-do
 
 Wara li tkliqa fuq **Add Domain**, id-dominu jitidda fil-account tal-klijent tiegħek. Kull ħaġa li għandhom uġigħlu hija biex jgħadru l-record DNS ta dan dominu kustomi fuq il-registrar tal-domini tagħhom.
 
-### Bidla Password:
+### Bidla Password: {#changing-password}
 
 F'dashboard tal-account, il-klijenti tiegħek jistgħu jbidlu dik password biex ikliki fuq **Change Password**.
 
@@ -125,7 +125,7 @@ F'dashboard tal-account, il-klijenti tiegħek jistgħu jbidlu dik password biex 
 
 ![Forma per cambiare la password con campi vecchia e nuova password](/img/account-page/change-password-form.png)
 
-### Zona Pericolo:
+### Zona Pericolo: {#danger-zone}
 
 Abbiamo anche due opzioni mostrate nella parte della **Zona Pericolo**: **Elimina Sito** e **Elimina Account**. Entrambe sono nella Zona Pericolo perché queste due azioni non possono essere annullate. Se i tuoi clienti eliminano il loro sito web o il loro account, non potranno recuperarlo.
 

@@ -3,9 +3,9 @@ title: Maelezo ya Toleo
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Maelezo ya Toleo
+# Maelezo ya Toleo {#release-notes}
 
-## Toleo 2.13.0 — Lilitolewa tarehe 2026-06-05
+## Toleo 2.13.0 — Lilitolewa tarehe 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Mpya: Imeongeza usaidizi wa sovereign-tenant kwa mtiririko wa Account ya mteja, checkout, bili, tovuti, ankara, ubadilishaji wa violezo, na domain mapping ili mitandao ya tenant iweze kuwaelekeza wateja kurudi kwenye tovuti kuu kwa vitendo vinavyosimamiwa.
 - Mpya: Imeongeza ukaguzi wa vitambulisho vya usasishaji kwa memberships zinazojirudia ili gateways ziweze kuzima usasishaji otomatiki wakati makubaliano ya bili yaliyohifadhiwa, subscription, au vault token yanakosekana.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Marekebisho: Usasishaji wa memberships, onyesho la kuisha muda, na hali za pembeni za ukusanyaji wa malipo sasa huepuka kuisha mara moja, kuanguka kwa mfumo, au malipo yanayohitajika kukosekana.
 - Imeboreshwa: Upatanifu wa WordPress umejaribiwa hadi 7.0, mali za Vue za uzalishaji zimejengwa upya kutoka vyanzo vya npm, na chanjo ya mwisho-hadi-mwisho ya Cypress sasa hujaribu mitiririko zaidi ya checkout, usanidi, SSO, na gateway.
 
-## Toleo 2.12.0 — Lilitolewa tarehe 2026-05-15
+## Toleo 2.12.0 — Lilitolewa tarehe 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Mpya: Imeongeza Hostinger (hPanel) kama host provider anayeungwa mkono aliye na muunganisho wa domain mapping
 - Mpya: Site Exporter sasa hushughulikia vifurushi vya kuingiza mtandao kwa urejeshaji wa tovuti wa mtandao mzima uliorahisishwa
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Marekebisho: Site Exporter CLI sasa huhifadhi uchaguzi sahihi wa tovuti chaguo-msingi ya mtandao
 - Imeboreshwa: Imeondoa wp-cli iliyojumuishwa kutoka kifurushi cha plugin, ikipunguza ukubwa wa plugin
 
-## Toleo 2.11.0 — Lilitolewa tarehe 2026-05-11
+## Toleo 2.11.0 — Lilitolewa tarehe 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Mpya: Usafirishaji wa tovuti sasa hujumuisha `index.php` inayojianzisha ili ZIP iweze kusakinishwa kwenye host mpya bila usakinishaji tofauti wa plugin.
 - Mpya: Usafirishaji wa mtandao huwawezesha wasimamizi kusafirisha subtovuti zote katika jalada moja kutoka ukurasa wa usimamizi wa Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Mpya: Kihariri cha fomu ya checkout huonya wakati bidhaa inaongezwa bila field inayohitajika kusanidiwa.
 - Mpya: Kichupo cha mipangilio ya Import/Export sasa kinaeleza wazi upeo wake na kuunganisha moja kwa moja kwenye zana ya Site Export.
 
-## Toleo 2.10.0 — Lilitolewa tarehe 2026-05-05
+## Toleo 2.10.0 — Lilitolewa tarehe 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Mpya: Setup wizard inayoongozwa ya PayPal kwa uingizaji wa vitambulisho kwa mkono yenye OAuth flag gate kwa usanidi rahisi wa gateway.
 - Mpya: Paneli ya mteja ya ubadilishaji wa violezo imeundwa upya ikiwa na kadi ya kiolezo cha sasa, gridi endelevu, na kitufe cha **Weka upya kiolezo cha sasa**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Marekebisho: Njia ya SSO iliyochujwa inaheshimiwa katika mitiririko yote ya kuingia.
 - Marekebisho: Chaguo tupu za utambulisho wa tovuti huhifadhiwa wakati wa kuhifadhi.
 
-## Toleo 2.9.0 — Lilitolewa tarehe 2026-04-30
+## Toleo 2.9.0 — Lilitolewa tarehe 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Mpya: Usafirishaji na uingizaji wa tovuti moja umeongezwa chini ya **Tools > Export & Import**.
 - Marekebisho: Faili za ZIP za usafirishaji sasa hutolewa kupitia endpoint ya upakuaji iliyothibitishwa.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Marekebisho: Tour IDs zimesawazishwa kuwa underscores katika funguo za mipangilio ya mtumiaji.
 - Imeboreshwa: ZipArchive sasa inatumika badala ya Alchemy/Zippy kwa upatanifu bora.
 
-## Toleo 2.8.0 — Lilitolewa tarehe 2026-04-29
+## Toleo 2.8.0 — Lilitolewa tarehe 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Mpya: Toggle ya Enable Jumper imeongezwa kwenye UI ya mipangilio ya Other Options.
 - Mpya: Safu ya hali imeongezwa kwenye jedwali la orodha ya fomu za checkout.

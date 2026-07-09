@@ -3,11 +3,11 @@ title: Żvilupp ta' Gateway Personalizzat
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Żvilupp ta' Gateway Personalizzat
+# Żvilupp ta' Gateway Personalizzat {#custom-gateway-development}
 
 Tista' toħloq gateways ta' ħlas personalizzati billi testendi l-klassi `Base_Gateway`.
 
-## Klassi Gateway
+## Klassi Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Irreġistra l-Gateway
+## Irreġistra l-Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Metodi Ewlenin
+## Metodi Ewlenin {#key-methods}
 
 | Metodu | Għan |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Immaniġġja talbiet għal rifużjoni |
 | `get_payment_methods()` | Irritorna metodi ta' ħlas salvati għal klijent |
 
-## Kredenzjali ta' tiġdid għal sħubijiet rikorrenti
+## Kredenzjali ta' tiġdid għal sħubijiet rikorrenti {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 jippermetti lill-integrazzjonijiet tal-gateway jirrapportaw jekk sħubija rikorrenti għandhiex kredenzjal ta' tiġdid li jista' jerġa' jintuża qabel ma `auto_renew` jiġi ppersistit. Qabbad `wu_membership_has_renewal_credential` u rritorna:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Neħħi l-marka ta' kredenzjal nieqes bħala parti mill-fluss ta' awtorizzazzjoni mill-ġdid b'suċċess tal-gateway tiegħek wara li kredenzjal ġdid li jista' jerġa' jintuża jinħażen.
 
-## Pariri
+## Pariri {#tips}
 
 - Dejjem irritorna `WP_Error` f'każ ta' falliment sabiex Ultimate Multisite ikun jista' jimmaniġġja l-wiri tal-iżbalji
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Uża `wu_log_add()` għal logging speċifiku għall-gateway
 
-## Kapaċitajiet tal-fornitur tal-konnettur AI
+## Kapaċitajiet tal-fornitur tal-konnettur AI {#ai-connector-provider-capabilities}
 
 Integrazzjonijiet personalizzati li jsejħu operazzjonijiet appoġġjati minn konnettur AI għandhom jallinjaw mas-sett ta' fornituri OAuth appoġġjat introdott ma' AI Provider for Anthropic Max v1.3.0:
 

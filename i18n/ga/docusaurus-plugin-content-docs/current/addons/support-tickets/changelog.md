@@ -3,13 +3,13 @@ title: Loga Athruithe Ticéad Tacaíochta
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Loga Athruithe Ticéad Tacaíochta
+# Loga Athruithe Ticéad Tacaíochta {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Feabhsaithe: Baineadh an chomhadlann vendor/ ó rianú Git (clúdaithe cheana ag .gitignore), ag laghdú mhéid an taisclainne
 * Feabhsaithe: Tástáilte suas go WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Ceartú: Glac le luachanna null i socraitheoirí samhla ticéid atá in-nullaithe
 * Ceartú: Stóráil gach ticéad i dtáblaí domhanda ar fud an líonra le haghaidh tacaíocht cheart multisite
 * Ceartú: Folaigh réimsí foirne agus ceartaigh atreorú leathanaigh bháin ar fhoirm ticéid nua an chustaiméara
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Feabhsaithe: Luchtaigh sócmhainní frontend go coinníollach ar leathanaigh ticéad tacaíochta amháin
 * Feabhsaithe: Scipeáil uathlódálaí plugin nuair atá uathlódálaí fréimhe Bedrock tar éis spleáchais a luchtú cheana
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Curtha leis: Feidhmiúlacht iomlán féachana ticéad don riarachán agus don frontend
 * Curtha leis: Láimhseálaí AJAX le haghaidh cur isteach freagraí ticéid
 * Curtha leis: Tacaíocht d’fheidhmiúlacht freagra ticéid le láimhseáil cheart foirme
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Feabhsaithe: Struchtúr bunachair sonraí le ranganna ceiste agus scéime cearta le haghaidh freagraí agus iatán
 * Feabhsaithe: Imirce chuig airíonna fíora in ionad tréithe do shamhlacha ticéid
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Nuashonraithe: Athainmníodh an réimír go ultimate-multisite ar mhaithe le comhsheasmhacht
 * Nuashonraithe: Caighdeánú fearainn téacs
 * Ceartaithe: Mioncheartúcháin fabhtanna agus feabhsuithe
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Eisiúint tosaigh
 * Córas iomlán bainistíochta ticéad
 * Rialú rochtana il-leibhéil

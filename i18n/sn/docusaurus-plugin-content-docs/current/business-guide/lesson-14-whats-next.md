@@ -3,15 +3,15 @@ title: 'Chidzidzo 14: Chii Chinotevera'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Chidzidzo 14: Chii Chinotevera
+# Chidzidzo 14: Chii Chinotevera {#lesson-14-what-comes-next}
 
 Wakavaka puratifomu yewebhusaiti yeniche kubva pakutanga. FitSite yava kushanda, ichishandira mastudio ekusimbisa muviri, uye ichigadzira mari inodzokororwa. Chidzidzo chekupedzisira ichi chinotarisa kwaungaenda kubva pano.
 
-## Patakasiyira
+## Patakasiyira {#where-we-left-off}
 
 FitSite ibhizinesi riri kushanda rine vatengi, mashandiro, uye nzira yekukura. Iye zvino tinofunga nezvechinotevera.
 
-## Netiweki Yakazara yeFitSite
+## Netiweki Yakazara yeFitSite {#the-complete-fitsite-network}
 
 Hezvino zvese zvatakavaka muzvidzidzo 14:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Sarudzo 1: Pinda Zvakadzama muNiche Yako
+## Sarudzo 1: Pinda Zvakadzama muNiche Yako {#option-1-go-deeper-in-your-niche}
 
 Usati wawedzera kune maniche matsva, funga kupinda zvakadzama munyaya yekusimbisa muviri:
 
-### Maniche Madiki
+### Maniche Madiki {#sub-niches}
 
 - **Mastudio eYoga** -- matemplate akasarudzika ane maficha ekufungisisa, retreat, uye maworkshop
 - **Nzvimbo dzeCrossFit** -- kutevera WOD, mibairo yemakwikwi, maficha enharaunda
@@ -59,7 +59,7 @@ Usati wawedzera kune maniche matsva, funga kupinda zvakadzama munyaya yekusimbis
 
 Niche diki imwe neimwe inogona kuva nematemplate ayo uye pamwe nebrand yayo, zvese zvichimhanya paUltimate Multisite network imwe chete.
 
-### Maficha ePremium
+### Maficha ePremium {#premium-features}
 
 Vaka maficha ayo mastudio ekusimbisa muviri achabhadharira mari yekuwedzera:
 
@@ -68,14 +68,14 @@ Vaka maficha ayo mastudio ekusimbisa muviri achabhadharira mari yekuwedzera:
 - **Matemplate eblog rekusimbisa muviri** -- zvimiro zvemukati zvakavakwa kare zvekushambadzira zvemukati zvekusimbisa muviri
 - **Kubatanidza social media** -- kutumira otomatiki zvirongwa zvemakirasi nezvigadziriso
 
-### Kuwedzera Munzvimbo
+### Kuwedzera Munzvimbo {#geographic-expansion}
 
 Kana wakatanga munharaunda yako, wedzera ku:
 
 - Mamwe maguta munyika yako
 - Dzimwe nyika (shandisa [maficha ekushandura mitauro](/user-guide/localization/translating) eUltimate Multisite kutsigira mitauro yakawanda)
 
-## Sarudzo 2: Wedzera kuManiche Ari Pedyo
+## Sarudzo 2: Wedzera kuManiche Ari Pedyo {#option-2-expand-to-adjacent-niches}
 
 Maitiro awakatevera kumastudio ekusimbisa muviri anoshanda kune chero niche. Niche yako yechipiri iri nyore nekuti watova ne:
 
@@ -83,7 +83,7 @@ Maitiro awakatevera kumastudio ekusimbisa muviri anoshanda kune chero niche. Nic
 - Ruzivo rwemashandiro
 - Nzira yakaratidza kushanda
 
-### Maniche Ari Pedyo neFitness
+### Maniche Ari Pedyo neFitness {#adjacent-niches-to-fitness}
 
 - **Wellness nespa** -- vanorapa nemassage, ma day spa, nzvimbo dze wellness
 - **Makirabhu emitambo** -- zvikwata zvemitambo zveamateur, maligi, makirabhu ekuvaraidza
@@ -91,7 +91,7 @@ Maitiro awakatevera kumastudio ekusimbisa muviri anoshanda kune chero niche. Nic
 
 Izvi zvine kuwirirana kwevateereri nefitness, saka kushambadzira kwako nekudyidzana kwako zvinogona kuenderera mberi.
 
-### Maniche Matsva Zvakazara
+### Maniche Matsva Zvakazara {#completely-new-niches}
 
 Shandisa hwaro hweChidzidzo 2 kuongorora chero niche:
 
@@ -108,7 +108,7 @@ Niche itsva imwe neimwe inoda:
 
 Zvivakwa zvepuratifomu, kubhadharisa, uye maitiro emashandiro zvinoramba zvakafanana.
 
-## Sarudzo 3: Vaka Puratifomu yeMapuratifomu
+## Sarudzo 3: Vaka Puratifomu yeMapuratifomu {#option-3-build-a-platform-of-platforms}
 
 Pakukura, unogona kumhanyisa mabrand emaniche akawanda paUltimate Multisite network imwe chete:
 
@@ -118,11 +118,11 @@ Pakukura, unogona kumhanyisa mabrand emaniche akawanda paUltimate Multisite netw
 
 Brand imwe neimwe ine matemplate ayo, maplan ayo, uye kushambadzira kwayo, asi vanogovana zvivakwa, kubhadharisa, uye maitiro emashandiro. Apa ndipo panosimba hupfumi hweUltimate Multisite -- puratifomu imwe, ma vertical mazhinji.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Kuti maniche aparadzane zvizere, funga nezve [Multi-Network addon](/addons/multinetwork) inobvumira kumhanyisa maWordPress network akawanda kubva pakuiswa kumwe chete.
 
-## Sarudzo 4: Tengesa Bhizinesi
+## Sarudzo 4: Tengesa Bhizinesi {#option-4-sell-the-business}
 
 Puratifomu yewebhusaiti yeniche ine mari inodzokororwa, kurasikirwa nevatengi kwakaderera, uye chinzvimbo chemusika chakajeka chinhu chine kukosha. Mabhizinesi eSaaS anowanzo tengeswa pa3-5x yemari yegore.
 
@@ -134,7 +134,7 @@ FitSite ine vatengi 200 pa$89 ARPU:
 
 Izvi hazvisi mhedzisiro yakavimbiswa, asi ndeyechokwadi inogona kuitika kupuratifomu yeniche inotungamirirwa zvakanaka.
 
-## Zvawakadzidza
+## Zvawakadzidza {#what-you-have-learned}
 
 Kosi iyi yakakudzidzisa maitiro anodzokororwa:
 
@@ -150,7 +150,7 @@ Kosi iyi yakakudzidzisa maitiro anodzokororwa:
 
 Niche ndiyo nzira. Puratifomu ndicho chishandiso. Ultimate Multisite inoita kuti chishandiso chigoneke. Kunzwisisa kwako niche kunoita kuti chive chakakosha.
 
-## Tanga Kuvaka
+## Tanga Kuvaka {#start-building}
 
 Kana wakatevera pamwe chete neFitSite, une platform iri kushanda. Kana wakaverenga uchitsvaga niche yako, dzokera ku[Chidzidzo 2: Kusarudza Niche Yako](lesson-2-picking-your-niche) uye tanga maitiro echikamu chawasarudza.
 

@@ -3,7 +3,7 @@ title: Kufikia Ukurasa wa Akaunti
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Je, ninawezaje kufikia ukurasa wangu wa akaunti kwa mara ya kwanza?
+# Je, ninawezaje kufikia ukurasa wangu wa akaunti kwa mara ya kwanza? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Karibu Ultimate Multisite!
 

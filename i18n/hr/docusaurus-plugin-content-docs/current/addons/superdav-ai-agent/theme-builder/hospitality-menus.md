@@ -3,15 +3,15 @@ title: Ugostiteljski jelovnici
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ugostiteljski jelovnici
+# Ugostiteljski jelovnici {#hospitality-menus}
 
 Značajka **Ugostiteljski jelovnici** omogućuje Theme Builderu generiranje i ugrađivanje strukturiranih stranica jelovnika hrane i pića izravno u vaše WordPress web-mjesto.
 
-## Pregled
+## Pregled {#overview}
 
 Theme Builder sada može izrađivati profesionalne, strukturirane stranice jelovnika za ugostiteljske tvrtke, uključujući restorane, kafiće, barove i catering usluge. Ti su jelovnici potpuno integrirani u dizajn vašeg web-mjesta i mogu se jednostavno ažurirati i upravljati.
 
-## Podržane vrste ugostiteljstva
+## Podržane vrste ugostiteljstva {#supported-hospitality-types}
 
 - **Restorani** — jelovnici za posluživanje za stolom
 - **Kafići** — jelovnici kave i laganih jela
@@ -21,9 +21,9 @@ Theme Builder sada može izrađivati profesionalne, strukturirane stranice jelov
 - **Food truckovi** — jelovnici mobilne usluge hrane
 - **Pivovare i vinarije** — jelovnici pića s opisima
 
-## Struktura jelovnika
+## Struktura jelovnika {#menu-structure}
 
-### Kategorije jelovnika
+### Kategorije jelovnika {#menu-categories}
 
 Jelovnici su organizirani u kategorije:
 
@@ -34,7 +34,7 @@ Jelovnici su organizirani u kategorije:
 - **Pića** — pića (alkoholna i bezalkoholna)
 - **Posebne ponude** — dnevne ili sezonske posebne ponude
 
-### Format stavke jelovnika
+### Format stavke jelovnika {#menu-item-format}
 
 Svaka stavka jelovnika uključuje:
 
@@ -49,7 +49,7 @@ Svaka stavka jelovnika uključuje:
 }
 ```
 
-#### Polja stavke
+#### Polja stavke {#item-fields}
 
 | Polje | Vrsta | Opis |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Svaka stavka jelovnika uključuje:
 | `allergens` | array | Uobičajeni alergeni (orašasti plodovi, školjke itd.) |
 | `availability` | string | Kada je dostupno (dnevno, sezonski itd.) |
 
-## Izrada ugostiteljskih jelovnika
+## Izrada ugostiteljskih jelovnika {#creating-hospitality-menus}
 
-### Korak 1: Navedite informacije o jelovniku
+### Korak 1: Navedite informacije o jelovniku {#step-1-provide-menu-information}
 
 Recite Theme Builderu o svom jelovniku:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Korak 2: Theme Builder generira jelovnik
+### Korak 2: Theme Builder generira jelovnik {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formatira cijene i opise
 5. Dodaje informacije o prehrani i alergenima
 
-### Korak 3: Pregledajte i prilagodite
+### Korak 3: Pregledajte i prilagodite {#step-3-review-and-customize}
 
 Možete:
 
@@ -91,9 +91,9 @@ Možete:
 4. Ažurirati opise i prehrambene informacije
 5. Prilagoditi stiliziranje i raspored
 
-## Opcije prikaza jelovnika
+## Opcije prikaza jelovnika {#menu-display-options}
 
-### Cijela stranica jelovnika
+### Cijela stranica jelovnika {#full-menu-page}
 
 Namjenska stranica koja prikazuje vaš potpuni jelovnik:
 
@@ -102,7 +102,7 @@ Namjenska stranica koja prikazuje vaš potpuni jelovnik:
 - Raspored prilagođen ispisu
 - Dizajn prilagodljiv mobilnim uređajima
 
-### Widget jelovnika
+### Widget jelovnika {#menu-widget}
 
 Ugradite odjeljke jelovnika na druge stranice:
 
@@ -111,7 +111,7 @@ Ugradite odjeljke jelovnika na druge stranice:
 - Jelovnik pića na stranici bara
 - Izlog deserata u podnožju
 
-### PDF jelovnika
+### PDF jelovnika {#menu-pdf}
 
 Generirajte PDF jelovnik za preuzimanje:
 
@@ -120,9 +120,9 @@ Generirajte PDF jelovnik za preuzimanje:
 - Uključuje slike i opise
 - Jednostavno za dijeljenje i slanje e-poštom
 
-## Prehrambene informacije i informacije o alergenima
+## Prehrambene informacije i informacije o alergenima {#dietary-and-allergen-information}
 
-### Prehrambene oznake
+### Prehrambene oznake {#dietary-attributes}
 
 Označite stavke prehrambenim informacijama:
 
@@ -134,7 +134,7 @@ Označite stavke prehrambenim informacijama:
 - **S malo ugljikohidrata** — smanjeni ugljikohidrati
 - **Visok udio proteina** — bogato proteinima
 
-### Upozorenja o alergenima
+### Upozorenja o alergenima {#allergen-warnings}
 
 Uključite uobičajene alergene:
 
@@ -147,9 +147,9 @@ Uključite uobičajene alergene:
 - **Gluten** — pšenica i žitarice koje sadrže gluten
 - **Sezam** — sjemenke i ulje sezama
 
-## Upravljanje jelovnikom
+## Upravljanje jelovnikom {#menu-management}
 
-### Ažuriranje cijena
+### Ažuriranje cijena {#updating-prices}
 
 Jednostavno ažurirajte cijene jelovnika:
 
@@ -159,7 +159,7 @@ Jednostavno ažurirajte cijene jelovnika:
 4. Spremite promjene
 5. Promjene se odmah pojavljuju na vašem web-mjestu
 
-### Dodavanje sezonskih stavki
+### Dodavanje sezonskih stavki {#adding-seasonal-items}
 
 Izradite sezonske varijacije jelovnika:
 
@@ -169,7 +169,7 @@ Izradite sezonske varijacije jelovnika:
 4. Zakažite datume dostupnosti
 5. Automatski prikazujte tijekom sezone
 
-### Upravljanje posebnim ponudama
+### Upravljanje posebnim ponudama {#managing-specials}
 
 Prikažite dnevne ili tjedne posebne ponude:
 
@@ -179,7 +179,7 @@ Prikažite dnevne ili tjedne posebne ponude:
 4. Ažurirajte dnevno ili tjedno
 5. Arhivirajte stare posebne ponude
 
-## Integracija s Theme Builderom
+## Integracija s Theme Builderom {#integration-with-theme-builder}
 
 Kada koristite Theme Builder za ugostiteljska web-mjesta:
 
@@ -189,9 +189,9 @@ Kada koristite Theme Builder za ugostiteljska web-mjesta:
 4. **Optimizacija za mobilne uređaje** — jelovnici se lijepo prikazuju na telefonima
 5. **SEO optimizacija** — jelovnici su prilagođeni tražilicama
 
-## Najbolje prakse
+## Najbolje prakse {#best-practices}
 
-### Dizajn jelovnika
+### Dizajn jelovnika {#menu-design}
 
 - **Jasna organizacija** — logična struktura kategorija
 - **Čitljivi opisi** — primamljivi i informativni
@@ -199,7 +199,7 @@ Kada koristite Theme Builder za ugostiteljska web-mjesta:
 - **Profesionalne fotografije** — visokokvalitetne slike hrane
 - **Prazan prostor** — nemojte pretrpati stranicu
 
-### Sadržaj
+### Sadržaj {#content}
 
 - **Točni opisi** — točno opišite stavke
 - **Istaknite posebne ponude** — neka se posebne ponude istaknu
@@ -207,7 +207,7 @@ Kada koristite Theme Builder za ugostiteljska web-mjesta:
 - **Redovito ažurirajte** — održavajte cijene i stavke ažurnima
 - **Koristite primamljiv jezik** — neka stavke zvuče ukusno
 
-### Pristupačnost
+### Pristupačnost {#accessibility}
 
 - **Čitljivi fontovi** — koristite jasna, čitljiva pisma
 - **Dovoljan kontrast** — osigurajte da je tekst čitljiv
@@ -215,9 +215,9 @@ Kada koristite Theme Builder za ugostiteljska web-mjesta:
 - **Upozorenja o alergenima** — istaknuto prikažite alergene
 - **Prilagođeno mobilnim uređajima** — testirajte na svim uređajima
 
-## Primjeri
+## Primjeri {#examples}
 
-### Struktura jelovnika restorana
+### Struktura jelovnika restorana {#restaurant-menu-structure}
 
 ```
 Predjela
@@ -241,7 +241,7 @@ Deserti
 └── Izbor gelata
 ```
 
-### Struktura jelovnika kafića
+### Struktura jelovnika kafića {#cafe-menu-structure}
 
 ```
 Kava
@@ -260,7 +260,7 @@ Sendviči
 └── Vegetarijanski wrap
 ```
 
-## Povezane značajke
+## Povezane značajke {#related-features}
 
 - [Izradi izbornik](../abilities/create-menu.md) — izradite navigacijske izbornike
 - [Smjer dizajna](./design-direction.md) — prilagodite dizajn svoje web-lokacije

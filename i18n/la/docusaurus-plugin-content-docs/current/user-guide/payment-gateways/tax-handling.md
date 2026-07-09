@@ -3,7 +3,7 @@ title: Administratio vectigalium
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Administratio Tributorum
+# Administratio Tributorum {#tax-handling}
 
 Ultimate Multisite modulum collectionis tributorum in nostro modulo principali inclusum habet; itaque, si tributa venditionis in rationibus, fasciculis et ministeriis tuis colligere debes, id facile facere potes sine ulla additamenta instituenda.
 
@@ -11,7 +11,7 @@ Societatibus in Europa sitis, **additamentum** offerimus quod instrumenta et fac
 
 Ultimate Multisite tributa tuo nomine apud regimen non declarat neque persolvit; nos tantum adiuvamus ut tributa idonea tempore transactionis colligas. **Tributa tamen ipse persolvere debebis.**
 
-## Collectio Tributorum Activanda
+## Collectio Tributorum Activanda {#enabling-tax-collection}
 
 Collectio tributorum per defaltam non est activa. Ut eam actives, debes ire ad **Ultimate Multisite > Settings > Taxes** et commutare ut occasum Enable Taxes actives.
 
@@ -25,7 +25,7 @@ Etiam occasus tributorum singulorum productorum videre potes:
 
 ![Occasus tributorum pro productis](/img/config/settings-taxes.png)
 
-### Tributum exclusum vs. Tributum inclusum
+### Tributum exclusum vs. Tributum inclusum {#tax-excluded-vs-tax-included}
 
 Per defaltam, omnia pretia productorum tuorum tributo excluso sunt, quod significat tributa **non includi** in pretio producti. Si statuimus emptorem tributa in certa emptione solvere debere, tributa **super** summam partialem addemus.
 
@@ -37,7 +37,7 @@ Noli oblivisci mutationes quas fecisti **servare**.
 
 ###
 
-## Rationes Tributarias Creare
+## Rationes Tributarias Creare {#creating-tax-rates}
 
 Postquam Collectionem Tributorum activaveris, rationes tributarias pro locis specificis creare debebis utens nostro editore rationum tributariarum.
 
@@ -51,7 +51,7 @@ In pagina editoris rationum tributariarum, novas Rationes Tributarias addere pot
 
 Cuique rationi tributariae **titulum** dare debebis (in facturis adhibitum). Deinde eligere potes **patriam** (necessariam), **statum,** et **urbem** (utrumque optionale) ubi hoc tributum exigetur. Denique adde **rationem tributariam in centesimis**.
 
-### Categoriae Tributorum
+### Categoriae Tributorum {#tax-categories}
 
 Etiam plures Categorias Tributorum creare potes, ut diversas rationes tributarias diversis generibus productorum addas.
 
@@ -73,7 +73,7 @@ Categoriam tributorum pro certo producto constituere potes eundo ad **Product ed
 
 In eodem illo scrinio, commutatorem **Is Taxable?** deactivare potes ut Ultimate Multisite sciat se tributa in illo certo producto colligere non debere.
 
-## Sustentatio VAT Europaea
+## Sustentatio VAT Europaea {#european-vat-support}
 
 Ut ante dictum est, additamentum praesto habemus pro emptoribus in EU qui requisita addita habent propter normas VAT Europaeas.
 
@@ -101,7 +101,7 @@ Si redieris ad **Tax Settings tab** , novas optiones praesto videbis. Optionem *
 
 <!-- Imago non praesto: commutator Enable VAT Support in occasibus Tributorum post activationem additamenti -->
 
-### Rationes Tributarias VAT Importare
+### Rationes Tributarias VAT Importare {#pulling-on-vat-tax-rates}
 
 Unum ex instrumentis quae integratio nostra addit est facultas onerandi rationes tributarias pro civitatibus membris EU. Id fieri potest visitando paginam editoris rationum tributariarum post sustentationem EU VAT activatam.
 
@@ -111,7 +111,7 @@ In imo paginae, optiones importationis VAT videbis. Genere rationis selecto et b
 
 Etiam valores postquam importati sunt recensere potes. Ut id facias, simpliciter lineam tabulae quam debes recense et preme ut novos valores serves.
 
-### Validatio VAT
+### Validatio VAT {#vat-validation}
 
 Cum sustentatio VAT activa est, Ultimate Multisite agrum additum formae checkout addet, infra agrum inscriptionis ad rationem faciendam. Ager solum apparebit emptoribus in EU sitis.
 

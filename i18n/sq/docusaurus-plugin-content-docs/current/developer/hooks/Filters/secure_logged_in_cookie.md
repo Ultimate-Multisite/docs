@@ -4,11 +4,11 @@ title: Filtër - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtër: secure_logged_in_cookie
+# Filtër: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtron nëse cookie i përdoruesit të kyçur duhet të dërgohet vetëm përmes HTTPS.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Tipi | Përshkrimi |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtron nëse cookie i përdoruesit të kyçur duhet të dërgohet vetëm përme
 | $user_id | `int` | ID e përdoruesit. |
 | $secure | `bool` | Nëse cookie i autentikimit duhet të dërgohet vetëm përmes HTTPS. |
 
-### Që nga
+### Që nga {#since}
 
 - 3.1.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) në rreshtin 91

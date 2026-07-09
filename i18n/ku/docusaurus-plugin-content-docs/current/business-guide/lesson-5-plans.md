@@ -3,15 +3,15 @@ title: 'Ders 5: Sêwirandina Planên Xwe'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ders 5: Sêwirandina Planên Xwe
+# Ders 5: Sêwirandina Planên Xwe {#lesson-5-designing-your-plans}
 
 Astên planên te tenê astên bihayê nînin -- ew nîşana awayê rastîn ê xebata xerîdarên nişeya te ne. Di vê dersê de tu dê astên berhemê sêwirînî ku bi hewcedariyên rastîn ên karsaziyên fitnessê di qonaxên cuda de li hev bikin.
 
-## Li Ku Derê Ma Bûn
+## Li Ku Derê Ma Bûn {#where-we-left-off}
 
 FitSite sê şablon amade hene (Studio Essential, Gym Pro, Fitness Chain). Niha em planan çêdikin ku diyar dikin xerîdar dê gihîştina çi bistînin û çi bidin.
 
-## Fikirîn Li Ser Beşên Xerîdaran
+## Fikirîn Li Ser Beşên Xerîdaran {#thinking-in-customer-segments}
 
 Şaşiya ku pir kes dikin ev e ku planan li dora taybetmendiyên teknîkî sêwirînin (cihê hilanînê, bandwidth, hejmara rûpelan). Xerîdarên nişeya te bi van têgihan nafikirin. Xwediyê gymê li ser tiştên ku ji bo rêvebirina karsaziya xwe pêdivî ne difikire.
 
@@ -25,11 +25,11 @@ Ji bo studioyên fitnessê, sê beşên xwezayî hene:
 
 Divê planên te bi van beşan re li hev bikin, ne bi pakêtên taybetmendiyên keyfî re.
 
-## Çêkirina Planên FitSite
+## Çêkirina Planên FitSite {#creating-the-fitsite-plans}
 
 Ji bo her planê biçin **Ultimate Multisite > Products > Add Product**.
 
-### Plan 1: FitSite Starter -- $49/meh
+### Plan 1: FitSite Starter -- $49/meh {#plan-1-fitsite-starter----49month}
 
 **Armanc**: Rahênerên tenê û studioyên biçûk
 
@@ -59,7 +59,7 @@ Ji bo her planê biçin **Ultimate Multisite > Products > Add Product**.
 - Tema hilbijartî ya te: Bi zorê çalak bike
 - Hemû temayên din: Veşartî
 
-### Plan 2: FitSite Growth -- $99/meh
+### Plan 2: FitSite Growth -- $99/meh {#plan-2-fitsite-growth----99month}
 
 **Armanc**: Gymên sazbûyî yên yek-cihî
 
@@ -85,7 +85,7 @@ Ji bo her planê biçin **Ultimate Multisite > Products > Add Product**.
 - Koma planê: Planên FitSite
 - Rêza berhemê: 2
 
-### Plan 3: FitSite Pro -- $199/meh
+### Plan 3: FitSite Pro -- $199/meh {#plan-3-fitsite-pro----199month}
 
 **Armanc**: Zincîreyên fitnessê yên pir-cihî
 
@@ -109,7 +109,7 @@ Ji bo her planê biçin **Ultimate Multisite > Products > Add Product**.
 - Koma planê: Planên FitSite
 - Rêza berhemê: 3
 
-## Sazkirina Koma Planê
+## Sazkirina Koma Planê {#setting-up-the-plan-group}
 
 Koma planê piştrast dike ku xerîdar tenê dikarin di nav malbata planên FitSite de bilind bikin an daxînin. Li ser taba **Bilindkirin û Daxistin** a her planê:
 
@@ -118,7 +118,7 @@ Koma planê piştrast dike ku xerîdar tenê dikarin di nav malbata planên FitS
 
 Ev rêyek bilindkirinê ya zelal çêdike: Starter → Growth → Pro.
 
-## Zêdekirina Pêşniyarên Fermanê
+## Zêdekirina Pêşniyarên Fermanê {#adding-order-bumps}
 
 Pêşniyarên fermanê berhemên zêde ne ku di dema checkout de tên pêşkêşkirin. Ji bo FitSite, van bifikire:
 
@@ -128,7 +128,7 @@ Pêşniyarên fermanê berhemên zêde ne ku di dema checkout de tên pêşkêş
 
 Van wek berhemên cureyê **Pakêt** di Ultimate Multisite de çêbike û wan bi planên têkildar re girê bide.
 
-## Çima Ev Avahî Kar Dike
+## Çima Ev Avahî Kar Dike {#why-this-structure-works}
 
 - **Starter** astengên destpêkirinê radike -- bihayê nizm, pêşkêşiyek sade, rahêneran zû online dike
 - **Growth** taybetmendiyên ku gym rastî wan dixwazin zêde dike -- rezervasyon, gallery, domainên taybet
@@ -136,7 +136,7 @@ Van wek berhemên cureyê **Pakêt** di Ultimate Multisite de çêbike û wan bi
 - **Pêşniyarên fermanê** dihêlin xerîdar bêyî tevlihevkirina planên bingehîn xweş bikin
 - **Rêya bilindkirinê ya zelal** tê wateya ku xerîdar bi te re mezin dibin, ne ku biçin
 
-## Tora FitSite Heta Niha
+## Tora FitSite Heta Niha {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Di Vê Dersê De Me Çi Avakir
+## Di Vê Dersê De Me Çi Avakir {#what-we-built-this-lesson}
 
 - **Sê astên planê** ku bi beşên rastîn ên karsaziyên fitnessê re hatine girêdan
 - **Girtina taybetmendiyan** bi kontrolên pêvek û şablonên Ultimate Multisite

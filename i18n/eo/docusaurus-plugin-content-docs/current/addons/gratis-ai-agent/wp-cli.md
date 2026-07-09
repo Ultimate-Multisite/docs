@@ -3,11 +3,11 @@ title: Referenco de WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI-Referenco
+# WP-CLI-Referenco {#wp-cli-reference}
 
 Gratis AI Agent liveras komandan familion `wp gratis-ai-agent` por komparnorme testi la agenton, administri kapablojn, kaj konsulti agentan staton el la komandlinio. Ĉiuj komandoj postulas WP-CLI 2.0 aŭ pli novan.
 
-## Instalado
+## Instalado {#installation}
 
 La WP-CLI-komandoj estas registritaj aŭtomate kiam la plugin estas aktiva. Kontrolu per:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Rulas la komparnorman testaron de Agentaj Kapabloj — aron de kompleksaj, plurpaŝaj promptoj kiuj ekzercas la plenan kapablan surfacon. Uzu ĉi tion por taksi modelan rendimenton, kompari AI-provizantojn, aŭ validigi kapablopakojn antaŭ ol deploji al produktado.
 
-### Sinoptiko
+### Sinoptiko {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Opcioj
+### Opcioj {#options}
 
 | Opcio | Priskribo |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Eliga formato: `table` (defaŭlte), `json`, `csv` |
 | `--save` | Konservu la komparnormajn rezultojn al la datumbazo por historia komparo |
 
-### Ekzemploj
+### Ekzemploj {#examples}
 
 Rulu la plenan komparnorman testaron kun la nuna provizanto kaj modelo:
 
@@ -57,7 +57,7 @@ Rulu kontraŭ specifa modelo kaj konservu rezultojn:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Eligo
+### Eligo {#output}
 
 La komparnorma testo eligas unu vicon por ĉiu demando kun la jenaj kolumnoj:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Komparnormaj Demandoj
+### Komparnormaj Demandoj {#benchmark-questions}
 
 La defaŭlta testaro inkluzivas:
 
@@ -95,11 +95,11 @@ Pliaj demandoj povas esti registritaj per la filtro `gratis_ai_agent_benchmark_q
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Administras instalitajn kapablojn kaj kapablopakojn.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Listigas ĉiujn registritajn kapablojn, ilian fonton (kerno aŭ pako), kaj ilian nunan staton.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Elŝutas kaj aktivigas kapablopakon el la registro.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Malŝaltas specifan kapablon sen forigi la pakon. Utila por limigi la amplekson de la agento en donita retejo.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Reŝaltas antaŭe malŝaltitan kapablon.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Montras la nunan agentan agordon kaj konektecan staton.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Montras lastatempan agentan agadon el la sencimiga protokolo.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Restarigas la staton de la agento: purigas injektitan CSS, forigas CPT-ojn kaj taksonomiojn registritajn de la agento, restarigas ĉieajn stilojn, kaj malplenigas la opcio-kaŝmemoron de la agento. Ne forigas la kromprogramon aŭ ĝiajn agordojn.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Eliro-kodoj
+## Eliro-kodoj {#exit-codes}
 
 Ĉiuj komandoj eliras kun `0` je sukceso. Ne-nulaj eliro-kodoj:
 

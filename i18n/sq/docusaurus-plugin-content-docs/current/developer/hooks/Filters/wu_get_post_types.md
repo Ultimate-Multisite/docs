@@ -4,23 +4,23 @@ title: Filtër - wu_get_post_types
 sidebar_label: wu_get_post_types
 _i18n_hash: 7e9a849e187bc1b15e63e024b42d7593
 ---
-# Filtri: wu_get_post_types
+# Filtri: wu_get_post_types {#filter-wugetposttypes}
 
 Lejon zhvilluesit të zgjedhin cilat lloje postimesh duhet të shfaqen.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Lloji | Përshkrimi |
 |------|------|-------------|
 | $post_types | `array` | Lista e llojeve të postimeve. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.0.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/ui/class-limits-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-limits-element.php#L267) në rreshtin 267
 
 
-## Kthen
+## Kthen {#returns}
 Listë e re.

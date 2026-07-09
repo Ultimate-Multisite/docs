@@ -3,11 +3,11 @@ title: Sisäänrakennetut agentit
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Sisäänrakennetut agentit
+# Sisäänrakennetut agentit {#built-in-agents}
 
 Gratis AI Agent v1.9.0 sisältää viisi sisäänrakennettua agenttia, joista jokainen on esikonfiguroitu kohdennetulla työkalujoukolla, räätälöidyllä järjestelmäkehotteella ja aloitusehdotuksilla, jotka sopivat kyseisen alueen yleisiin tehtäviin. Agenttien välillä vaihtaminen muuttaa sitä, mitä avustaja voi tehdä ja miten se vastaa — ilman mitään määrityksiä sinun puoleltasi. Superdav AI Agent v1.18.0 voi lisätä näihin työnkulkuihin aikataulutietoisia työkaluja, muistutustietueita, hyväksyntäportteja ja SMS-ilmoituksia, kun niihin liittyvät integraatiot on määritetty.
 
-## Mikä agentti on?
+## Mikä agentti on? {#what-is-an-agent}
 
 Jokainen agentti on nimetty määritysprofiili, joka yhdistää:
 
@@ -15,7 +15,7 @@ Jokainen agentti on nimetty määritysprofiili, joka yhdistää:
 - **Järjestelmäkehote** — ohjeet, jotka määrittävät agentin sävyn, prioriteetit ja rajoitukset
 - **Ehdotukset** — valmiiksi kirjoitetut kehotteet, jotka näytetään chat-käyttöliittymässä, jotta pääset nopeasti alkuun
 
-## Agentin valitsimen käyttäminen
+## Agentin valitsimen käyttäminen {#accessing-the-agent-picker}
 
 1. Avaa **Gratis AI Agent** -paneeli WordPress-ylläpidon sivupalkissa.
 2. Napsauta **agenttikuvaketta** chat-otsakkeen vasemmassa yläkulmassa (kuvake muuttuu aktiivisen agentin mukaan).
@@ -24,9 +24,9 @@ Jokainen agentti on nimetty määritysprofiili, joka yhdistää:
 
 Voit myös vaihtaa agenttia kesken keskustelun — uuden agentin järjestelmäkehote tulee voimaan seuraavasta viestistä alkaen.
 
-## Viisi sisäänrakennettua agenttia
+## Viisi sisäänrakennettua agenttia {#the-five-built-in-agents}
 
-### Sisällöntuottaja
+### Sisällöntuottaja {#content-writer}
 
 **Painopiste:** Julkaisujen, sivujen ja yhteydenottolomakkeiden luominen ja muokkaaminen.
 
@@ -47,7 +47,7 @@ Voit myös vaihtaa agenttia kesken keskustelun — uuden agentin järjestelmäke
 
 ---
 
-### Sivuston rakentaja
+### Sivuston rakentaja {#site-builder}
 
 **Painopiste:** Kokonaisvaltainen verkkosivuston luonti yhdestä kehotteesta.
 
@@ -70,7 +70,7 @@ Voit myös vaihtaa agenttia kesken keskustelun — uuden agentin järjestelmäke
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Painopiste:** Visuaalinen mukauttaminen — värit, typografia, CSS ja lohkomallit.
 
@@ -87,7 +87,7 @@ Voit myös vaihtaa agenttia kesken keskustelun — uuden agentin järjestelmäke
 - *Ota kuvakaappaus etusivusta ja kerro, mitä parantaisit.*
 - *Luo uudelleenkäytettävä hero-lohkomalli, jossa on koko leveyden taustakuva ja keskitetty otsikko.*
 
-### Lisäosien hallinta
+### Lisäosien hallinta {#plugin-manager}
 
 **Painopiste:** WordPress-lisäosien löytäminen, asentaminen ja hallinta.
 
@@ -105,7 +105,7 @@ Voit myös vaihtaa agenttia kesken keskustelun — uuden agentin järjestelmäke
 
 ---
 
-### Tukiavustaja
+### Tukiavustaja {#support-assistant}
 
 **Painopiste:** Sivuston sisältöä, asetuksia ja WordPress-määrityksiä koskeviin kysymyksiin vastaaminen.
 
@@ -124,7 +124,7 @@ Voit myös vaihtaa agenttia kesken keskustelun — uuden agentin järjestelmäke
 
 ---
 
-## Superdav-automaation integraatiot
+## Superdav-automaation integraatiot {#superdav-automation-integrations}
 
 Kun Superdav AI Agent v1.18.0 -integraatiot on määritetty, sisäänrakennetut agentit voivat osallistua turvallisempiin aikataulut huomioiviin automaatiotyönkulkuihin:
 
@@ -138,11 +138,11 @@ Suositeltu työnkulku: pyydä agenttia valmistelemaan viesti tai toiminto, tarki
 
 ---
 
-## Agenttien mukauttaminen
+## Agenttien mukauttaminen {#customising-agents}
 
 Jokaista sisäänrakennettua agenttia voi laajentaa tai sen voi korvata `gratis_ai_agent_agents`-suodattimen kautta.
 
-### Mukautetun järjestelmäkehotteen lisääminen olemassa olevaan agenttiin
+### Mukautetun järjestelmäkehotteen lisääminen olemassa olevaan agenttiin {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Uuden agentin rekisteröinti
+### Uuden agentin rekisteröinti {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Uusi agentti ilmestyy Agenttivalitsimeen heti suodattimen suorittamisen jälkeen.
 
-### Sisäänrakennetun agentin poistaminen
+### Sisäänrakennetun agentin poistaminen {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

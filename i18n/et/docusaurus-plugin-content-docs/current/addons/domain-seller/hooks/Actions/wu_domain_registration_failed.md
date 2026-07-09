@@ -4,11 +4,11 @@ title: Toiming - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Toiming: wu_domain_registration_failed
+# Toiming: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Käivitub pärast domeeni registreerimise katse nurjumist.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Käivitub pärast domeeni registreerimise katse nurjumist.
 | $registration_data | `array&lt;string,mixed&gt;` | Registreerimise metaandmed, sealhulgas status=failed ja error_message. |
 | $error_message | `string` | Inimloetav veateade registraatorilt. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) real 1250

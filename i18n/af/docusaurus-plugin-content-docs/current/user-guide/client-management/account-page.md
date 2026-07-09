@@ -3,7 +3,7 @@ title: Kliënt Account-bladsy
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Jou kliënt se Account-bladsy (v2)
+# Jou kliënt se Account-bladsy (v2) {#your-clients-account-page-v2}
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
@@ -11,7 +11,7 @@ Wanneer kliënte op jou netwerk op ’n plan inteken, kry hulle toegang tot ’n
 
 In hierdie handleiding sal ons jou deur die kliënt se Account-bladsy lei, en jy sal sien wat jou kliënte daarin kan sien en doen.
 
-## Die Account-bladsy
+## Die Account-bladsy {#the-account-page}
 
 Die Account-bladsy is toeganklik deur op **Account** binne jou kliënt se Dashboard te klik.
 
@@ -27,7 +27,7 @@ Nadat ’n kliënt daarop klik, sal hulle ’n oorsig van hul lidmaatskap, faktu
 
 Hulle kan ook die lidmaatskap na ’n ander plan verander, of ’n ander pakket of diens koop wat jy aanbied. Kom ons kyk afsonderlik na elke afdeling.
 
-### Jou lidmaatskapoorsig:
+### Jou lidmaatskapoorsig: {#your-membership-overview}
 
 Die eerste blok reg onder jou kliënte se webwerfnaam wys ’n oorsig van hul huidige plan en dienste/pakkette wat daarmee gekoop is. Die blok wys ook die lidmaatskapnommer, die aanvanklike bedrag wat daarvoor betaal is, hoeveel die plan en enige diens/pakket kos, en hoeveel keer hulle vir hierdie lidmaatskap gefaktureer is. Hulle kan ook sien of die lidmaatskap **Aktief**, **Verval** of **Gekanselleer** is.
 
@@ -43,7 +43,7 @@ As jou kliënte nou kies om pakkette of dienste vir hierdie huidige lidmaatskap 
 
 Let daarop dat koeponkodes nie op hierdie lidmaatskapveranderingsbladsy bygevoeg kan word nie. As die kliënt ’n koeponkode op die eerste lidmaatskapaankoop gebruik het, sal die kode ook op hierdie nuwe lidmaatskap van toepassing wees.
 
-### Opdatering van die faktuuradres:
+### Opdatering van die faktuuradres: {#updating-the-billing-address}
 
 Op die Account-bladsy kan jou kliënte ook hul faktuuradres opdateer. Hulle hoef net op **Opdateer** langs _Faktuuradres_ te klik.
 
@@ -53,7 +53,7 @@ Op die Account-bladsy kan jou kliënte ook hul faktuuradres opdateer. Hulle hoef
 
 ![Vorm om faktuuradres op te dateer](/img/account-page/billing-address-form.png)
 
-### Verandering van die werfsjabloon:
+### Verandering van die werfsjabloon: {#changing-the-site-template}
 
 Om jou kliënte toe te laat om hul werfsjablone te verander, moet jy na **Ultimate Multisite > Instellings > Werwe** gaan en die opsie **Laat sjabloonwisseling toe** aanskakel.
 
@@ -81,7 +81,7 @@ Nadat hulle die bevestiging aangeskakel en op **Verwerk wisseling** geklik het, 
 
 Kliënte kan ook **Stel huidige sjabloon terug** vanaf hierdie paneel gebruik wanneer hulle die werf moet terugstel na die tans toegewysde sjabloon. Soos met die wisseling na ’n ander sjabloon, kan die terugstelling van ’n sjabloon werfinhoud oorskryf, dus moet kliënte dit slegs bevestig wanneer hulle die terugstelaksie verstaan.
 
-### Byvoeging van pasgemaakte domeine:
+### Byvoeging van pasgemaakte domeine: {#adding-custom-domains}
 
 Jou kliënte sal ook die opsie hê om ’n pasgemaakte domein vir hierdie plan op hul Account-bladsy by te voeg. Om jou kliënte toe te laat om pasgemaakte domeine te gebruik, gaan na **Ultimate Multisite > Instellings >** **Domeinkartering**.
 
@@ -115,7 +115,7 @@ Nadat hulle op **Volgende stap** geklik het, kan jou kliënte hul pasgemaakte do
 
 Nadat hulle op **Voeg domein by** geklik het, sal die domein by jou kliënt se Account gevoeg word. Al wat hulle nou hoef te doen, is om die DNS-rekords van hierdie pasgemaakte domein by hul domeinregistreerder te verander.
 
-### Verandering van wagwoord:
+### Verandering van wagwoord: {#changing-password}
 
 Binne die Account-Dashboard kan jou kliënte ook hul wagwoord verander deur op **Verander wagwoord** te klik.
 
@@ -125,7 +125,7 @@ Dit sal ’n nuwe venster wys waar jou kliënte hul huidige wagwoord moet invul 
 
 ![Verander wagwoord-vorm met huidige en nuwe wagwoordvelde](/img/account-page/change-password-form.png)
 
-### Gevaarsone:
+### Gevaarsone: {#danger-zone}
 
 Ons het ook twee opsies wat in die **Gevaarsone**-gedeelte gewys word: **Vee werf uit** en **Vee Account uit**. Hulle is albei in die Gevaarsone-gedeelte omdat hierdie twee aksies onomkeerbaar is. As jou kliënte hul webwerf of hul Account uitvee, kan hulle dit nie herstel nie.
 

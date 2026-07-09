@@ -3,7 +3,7 @@ title: Mchawi wa Usanidi wa Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Mwongozo wa Kusanidi Multisite
+# Mwongozo wa Kusanidi Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite inajumuisha mwongozo wa ndani ambao hubadilisha kiotomatiki usakinishaji wa kawaida wa WordPress kuwa mtandao wa WordPress Multisite. Hii inaondoa haja ya kuhariri `wp-config.php` kwa mkono au kuendesha amri za database.
 
@@ -11,13 +11,13 @@ Ultimate Multisite inajumuisha mwongozo wa ndani ambao hubadilisha kiotomatiki u
 Ikiwa usakinishaji wako wa WordPress tayari unaendeshwa kama mtandao wa Multisite, unaweza kuruka hatua hii kabisa. Mwongozo unaonekana tu wakati Multisite bado haijawezeshwa.
 :::
 
-## Mwongozo Unaonekana Lini?
+## Mwongozo Unaonekana Lini? {#when-does-the-wizard-appear}
 
 Unapoamilisha Ultimate Multisite kwenye usakinishaji wa kawaida wa WordPress (ambao si Multisite), programu-jalizi inagundua kuwa Multisite haijawezeshwa na inakuelekeza kiotomatiki kwenye Mwongozo wa Kusanidi Multisite badala ya mwongozo wa kawaida wa kusanidi.
 
 Unaweza pia kuufikia moja kwa moja kwenye **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Mahitaji ya Awali
+## Mahitaji ya Awali {#prerequisites}
 
 Kabla ya kuendesha mwongozo, hakikisha:
 
@@ -29,7 +29,7 @@ Kabla ya kuendesha mwongozo, hakikisha:
 Mwongozo hubadilisha faili yako ya `wp-config.php` na kuunda jedwali mpya za database. Daima tengeneza nakala rudufu kabla ya kuendelea.
 :::
 
-## Hatua ya 1: Karibu
+## Hatua ya 1: Karibu {#step-1-welcome}
 
 Skrini ya kwanza inaeleza WordPress Multisite ni nini na mwongozo utafanya nini:
 
@@ -42,11 +42,11 @@ Skrini ya kwanza inaeleza WordPress Multisite ni nini na mwongozo utafanya nini:
 
 Bofya **Continue** kuendelea.
 
-## Hatua ya 2: Usanidi wa Mtandao
+## Hatua ya 2: Usanidi wa Mtandao {#step-2-network-configuration}
 
 Hatua hii inakuomba usanidi mipangilio ya mtandao wako.
 
-### Muundo wa Tovuti
+### Muundo wa Tovuti {#site-structure}
 
 Chagua jinsi tovuti za mtandao wako zitakavyopangwa:
 
@@ -57,11 +57,11 @@ Chagua jinsi tovuti za mtandao wako zitakavyopangwa:
 Ukichagua sub-domains, utahitaji kusanidi **wildcard DNS** na **cheti cha wildcard SSL** kwa domain yako. Wenyeji wengi wa WordPress wanaodhibitiwa hushughulikia hili kiotomatiki. Tazama [Ultimate Multisite 101](./ultimate-multisite-101) kwa ulinganisho wa kina.
 :::
 
-### Jina la Mtandao
+### Jina la Mtandao {#network-title}
 
 Ingiza jina la mtandao wako. Hii inakadiria kuwa jina la tovuti yako ya sasa likiwa na "Network" imeongezwa. Unaweza kubadilisha hili baadaye kutoka mipangilio ya mtandao.
 
-### Barua Pepe ya Msimamizi wa Mtandao
+### Barua Pepe ya Msimamizi wa Mtandao {#network-admin-email}
 
 Anwani ya barua pepe inayotumika kwa arifa za usimamizi wa mtandao. Hii inakadiria kuwa anwani ya barua pepe ya mtumiaji wa sasa.
 
@@ -69,7 +69,7 @@ Anwani ya barua pepe inayotumika kwa arifa za usimamizi wa mtandao. Hii inakadir
 
 Baada ya kujaza sehemu, bofya **Continue** kuendelea.
 
-## Hatua ya 3: Usakinishaji
+## Hatua ya 3: Usakinishaji {#step-3-installation}
 
 Bofya kitufe cha **Install** kuanza. Mwongozo unafanya hatua tano za kiotomatiki kwa mfuatano, kila moja ikionyesha maendeleo yake kwa wakati halisi:
 
@@ -96,7 +96,7 @@ Hatua zote zikamilika kwa mafanikio, utaona hali ya kijani ya "Success!" kwa kil
 
 Mwongozo utaendelea kiotomatiki kwenye skrini ya kukamilika.
 
-## Hatua ya 4: Imekamilika
+## Hatua ya 4: Imekamilika {#step-4-complete}
 
 Usakinishaji ukikamilika, utaona ujumbe wa mafanikio unaothibitisha kuwa WordPress Multisite imewezeshwa.
 
@@ -108,7 +108,7 @@ Sasa unaweza kuendelea na mwongozo wa kusanidi Ultimate Multisite ili kusanidi j
 Baada ya usakinishaji wa multisite kukamilika, kivinjari chako kitaelekeza kupitia msimamizi wa mtandao uliowezeshwa hivi karibuni. Huenda ukahitaji kuingia tena kwani kuki za uthibitishaji zinasasishwa kwa mazingira ya multisite.
 :::
 
-## Mbadala wa Usanidi wa Mikono
+## Mbadala wa Usanidi wa Mikono {#manual-setup-fallback}
 
 Ikiwa mwongozo hauwezi kuandika kwenye faili yako ya `wp-config.php` (kutokana na ruhusa za faili au vikwazo vya seva), itaonyesha msimbo halisi unaohitaji kuongeza kwa mkono:
 
@@ -117,9 +117,9 @@ Ikiwa mwongozo hauwezi kuandika kwenye faili yako ya `wp-config.php` (kutokana n
 
 Baada ya kufanya mabadiliko ya mikono, onyesha upya ukurasa na mwongozo utagundua kuwa multisite sasa inafanya kazi.
 
-## Utatuzi wa Matatizo
+## Utatuzi wa Matatizo {#troubleshooting}
 
-### Mwongozo unasema wp-config.php haiwezi kuandikwa
+### Mwongozo unasema wp-config.php haiwezi kuandikwa {#the-wizard-says-wp-configphp-is-not-writable}
 
 Mchakato wa seva yako ya wavuti unahitaji ruhusa ya kuandika kwenye faili ya `wp-config.php`. Unaweza ama:
 
@@ -127,7 +127,7 @@ Mchakato wa seva yako ya wavuti unahitaji ruhusa ya kuandika kwenye faili ya `wp
 - Kutumia maelekezo ya mbadala wa usanidi wa mikono yanayotolewa na mwongozo
 - Kuomba msaada kutoka kwa mtoa huduma wako wa hosting
 
-### Tovuti hazipatikani baada ya usanidi (subdomains)
+### Tovuti hazipatikani baada ya usanidi (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Ukichagua muundo wa subdomain, unahitaji kusanidi **wildcard DNS** kwa domain yako. Ongeza rekodi ya DNS:
 
@@ -139,7 +139,7 @@ Value: [IP ya seva yako]
 
 Angalia na mtoa huduma wako wa hosting ikiwa huna uhakika jinsi ya kusanidi hii.
 
-### Matatizo ya uthibitishaji baada ya usanidi
+### Matatizo ya uthibitishaji baada ya usanidi {#authentication-issues-after-setup}
 
 Ukitolewa kwenye akaunti au kupata hitilafu za kuki baada ya usanidi wa multisite:
 
@@ -147,7 +147,7 @@ Ukitolewa kwenye akaunti au kupata hitilafu za kuki baada ya usanidi wa multisit
 2. Ingia tena kwenye `yourdomain.com/wp-login.php`
 3. Ikiwa tatizo linaendelea, angalia kuwa `wp-config.php` yako haina `COOKIE_DOMAIN` iliyowekwa kuwa `false` — hii ni tatizo linalojulikana kwenye usakinishaji wa multisite wa subdomain
 
-### Hatua imeshindwa wakati wa usakinishaji
+### Hatua imeshindwa wakati wa usakinishaji {#a-step-failed-during-installation}
 
 Ikiwa moja ya hatua za usakinishaji inaonyesha hitilafu:
 

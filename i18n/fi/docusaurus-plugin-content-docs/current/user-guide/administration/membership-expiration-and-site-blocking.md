@@ -3,11 +3,11 @@ title: Jäsenyyden päättyminen ja sivuston estäminen
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Jäsenyyden vanhentuminen ja sivustojen estäminen
+# Jäsenyyden vanhentuminen ja sivustojen estäminen {#membership-expiration-and-site-blocking}
 
 Tämä opas selittää, miten Ultimate Multisite hoitaa jäsenyyksien vanhentumisen, kokeiden päättymisen ja etusivun sivustojen estämisen. Se kattaa jäsenyden elinkaaren aktiivisesta vanhentuneeseen, niitä hallitsevat asetukset sekä mitä tarkistaa, jos sivustot pysyvät käytettävinä jäsenyyden vanhentumisen jälkeen.
 
-## Jäsenyden tilan elinkaari
+## Jäsenyden tilan elinkaari {#membership-status-lifecycle}
 
 Jokaisella Ultimate Multisite -jäsenyydellä on yksi seuraavista tiloista:
 
@@ -24,7 +24,7 @@ Ilmaiset jäsenyydet eivät vanhene automaattisesti. Ultimate Multisite käsitte
 | **Vanhentunut** (Expired) | Vanhentumispäivää ja anteilajaksoa mennyt ilman uusiostoa |
 | **Peruettu** (Cancelled) | Selkeästi peruttu asiakkaalla tai ylläpitäjä toimesta |
 
-### Miten jäsenyydet siirtyvät vanhentuneiksi
+### Miten jäsenyydet siirtyvät vanhentuneiksi {#how-memberships-transition-to-expired}
 
 Ultimate Multisite suorittaa taustahakistuksen **joka tunti** etsien jäsenyyksiä, jotka tulisi merkitä vanhentuneiksi. Tämä tarkistus käyttää [Action Scheduleria](https://actionscheduler.org/) (ei suoraan WP-Cronia) ja suoritetaan `wu_membership_check` -nimisen aikataulutetun toiminnon avulla.
 
@@ -34,7 +34,7 @@ Vanhentumistarkistuksessa on **sisäänrakennettu anteilajakso 3 päivää** ole
 Kolmen päivän vanhentumisaikayleinen nopea aika on erillinen asetuksesta "Frontend Block Grace Period". Vanhentumisaikayleinen aika määrittää, milloin **tila muuttuu** aktiiviseksi/pidossa olevalta vanhentuneeksi. Frontend-blokki-vanhentumisaika puolestaan määrittää, milloin **sivusto estetään** sen jälkeen, kun tila on jo muuttunut.
 :::
 
-#### Automaattisesti uusittuvat vs. ei automaattisesti uusituvat jäsenyydet
+#### Automaattisesti uusittuvat vs. ei automaattisesti uusituvat jäsenyydet {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Tämä ero on tärkeä ymmärtää vanhentumishallinnan kannalta:
 
@@ -42,7 +42,7 @@ Tämä ero on tärkeä ymmärtää vanhentumishallinnan kannalta:
 
 - **Automaattisesti uusituva jäsenyys** (`auto_renew = true`): Tunnisteen vanhentumistarkastus **ohittaa nämä kokonaan**. Maksuportaalilta (Stripe, PayPal jne.) odotetaan ilmoittavan Ultimate Multisite -järjestelmään web-hookilla, jos tilaus epäonnistuu tai peruutetaan. Jos web-hookia ei vastaanoteta -- esimerkiksi väärän konfiguroitujen päätepisteiden vuoksi, porttialueen ongelman tai tilauksen peruuttamisen järjestelmän ulkopuolella tapahtumana -- jäsenyys voi pysyä `active` -tilassa ikuisesti jopa vanhentumispäivämäärän jälkeen.
 
-### Kuinka kokeilujakso päättyy
+### Kuinka kokeilujakso päättyy {#how-trials-end}
 
 Kun kokeilujakson aikana oleva jäsenyys päättyy, järjestelmä:
 
@@ -52,11 +52,11 @@ Kun kokeilujakson aikana oleva jäsenyys päättyy, järjestelmä:
 
 Tämä prosessi suoritetaan samalla tunnituisella aikataululla kuin säännöllinen vanhentumistarkastus, mutta **vain ei automaattisesti uusituville jäsenyksille**. Automaattisissa kokeilujaksoissa maksuporttaliikenne hoitaa siirtymän kokeilusta maksulliseen tilaan.
 
-## Frontend-juuri pääsyn estäminen
+## Frontend-juuri pääsyn estäminen {#block-frontend-access}
 
 Olet oletuksena, kun jäsenyys päättyy tai siirtyy tauolle, **rajoitetaan vain wp-admin -paneeli**. Sivuston julkinen etupää pysyy saatavilla vierailijoille. Julkisen pääsyn estämiseksi sinun on käytettävä **Block Frontend Access** -asetusta.
 
-### Asetuksen konfigurointi
+### Asetuksen konfigurointi {#configuring-the-setting}
 
 Siirry kohtaan **Ultimate Multisite > Settings > Memberships** ja aktivoi **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Kolme yhteen liittyvää asetusta hallitsee tätä käyttäytymistä:
 | **Frontend Block Grace Period** | Päivien määrä odotettava aika sen jälkeen, kun jäsenyys on epäaktiivinen ennen estämistä. Aseta `0` estämään välittömästi. | 0 |
 | **Frontend Block Page** | Sivu pääsivustolla, johon vierailijoita ohjataan, kun sivusto estetään. Jos sitä ei ole asetettu, vierailijat näkevät yleisen viestin "Sivua ei ole tällä hetkellä saatavilla" ja linkin sisäänkirjautumissivulle sivuston ylläpitäjän käyttöön. | None |
 
-### Mitä vierailijat näkevät, kun sivu estetään
+### Mitä vierailijat näkevät, kun sivu estetään {#what-visitors-see-when-a-site-is-blocked}
 
 Kun etupää pääsy on estetty, vierailijat saavat joko:
 
@@ -83,7 +83,7 @@ Kun etupää pääsy on estetty, vierailijat saavat joko:
 
 Sivuston ylläpitäjät voivat silti kirjautua sisään – sisäänkirjautumissivu ei koskaan esty.
 
-### Mitä estetään ja milloin
+### Mitä estetään ja milloin {#what-gets-blocked-and-when}
 
 Estämiskäyttäytyminen riippuu jäsenyysstatusesta:
 
@@ -104,21 +104,21 @@ Vaikka kokeilujakso on päättynyt, `trialing`-tilalla oleva jäsenyys **ei** es
 Perutut jäsenyydet estetään aina, kun vanhentumispäivämäärä on mennyt, riippumatta siitä, onko Etkikatselu estetty päällä. Koronisaika ei koske peruttuun jäsenyyksiin.
 :::
 
-## Ongelmanratkaisu: Sivustot pysyvät saatavilla vanhentumisen jälkeen
+## Ongelmanratkaisu: Sivustot pysyvät saatavilla vanhentumisen jälkeen {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Jos sivustot pysyvät julkisesti käytettävissä, kun jäsenyys on vanhentunut, suorita nämä tarkistukset järjestyksessä:
 
-### 1. Varmista, että Etkikatselu estetty -asetus on päällä
+### 1. Varmista, että Etkikatselu estetty -asetus on päällä {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Siirry **Ultimate Multisite > Settings > Memberships** -sivulle ja varmista, että **Block Frontend Access** -kytkin on päällä. Tämä asetuksella oletetaan, että se on **pois päältä oletuksena**, mikä tarkoittaa, että vain wp-admin estetään, kun jäsenyys muuttuu passiiviseksi.
 
-### 2. Tarkista Etikatselun estettuna -koronisaika
+### 2. Tarkista Etikatselun estettuna -koronisaika {#2-check-the-frontend-block-grace-period}
 
 Tarkista samalla asetussivulla **Frontend Block Grace Period** -arvo. Jos tämä on asetettu 7 päiväksi esimerkiksi, etusivu ei esty ennen jäsenyyden päättymispäivän kuluttua 7 päivää – vaikka jäsenyyden tila olisi jo `expired`.
 
 Aseta tämä arvoksi `0`, jos haluat välittömän eston heti kun jäsenyys muuttuu passiiviseksi.
 
-### 3. Vahvista, että Jäsenyyden Tila On Todella Muuttunut
+### 3. Vahvista, että Jäsenyyden Tila On Todella Muuttunut {#3-confirm-the-membership-status-has-actually-changed}
 
 Siirry **Ultimate Multisite > Memberships** -sivulle ja tarkista vaikutusvalitun jäsenyyden tila. Jos se näyttää edelleen `active`, vaikka päättymispäivä on mennyt, tilamuutos ei ole tapahtunut. Yleisiä syitä:
 
@@ -126,7 +126,7 @@ Siirry **Ultimate Multisite > Memberships** -sivulle ja tarkista vaikutusvalitun
 
 - **Cron-työ ei ole suoritettu**: Katso seuraava vaihe.
 
-### 4. Varmista, että Action Scheduler Käynnistyy
+### 4. Varmista, että Action Scheduler Käynnistyy {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite käyttää Action Schedulerin cron-työkuormien hallintaan. Mene **Tools > Scheduled Actions** -sivulle verkkoadminissa ja etsi:
 
@@ -148,7 +148,7 @@ Varmistaaksesi luotettavan cron-suorituksen aseta järjestelmän cron-työ:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Tarkista Gateway Webhook -ongelmat (Automaattisesti uusituvat jäsenyydet)
+### 5. Tarkista Gateway Webhook -ongelmat (Automaattisesti uusituvat jäsenyydet) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Jos jäsenyys uusitaan automaattisesti ja gateway-tilaus on peruutettu tai epäonnistunut, mutta Ultimate Multisite näyttää sen silti `active`-tilana:
 
@@ -157,7 +157,7 @@ Jos jäsenyys uusitaan automaattisesti ja gateway-tilaus on peruutettu tai epäo
 
 Jos gateway näyttää tilauksen peruutettuna mutta Ultimate Multisite ei, webhook-ilmoitus on todennäköisesti menetetty. Voit muuttaa jäsenyden tilaa manuaalisesti **Ultimate Multisite > Memberships > [Edit Membership]** -osiossa.
 
-### 6. Tarkista vanhentumisaikojen sallittu aika (Cron-taso)
+### 6. Tarkista vanhentumisaikojen sallittu aika (Cron-taso) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron-tarkistuksella on oma sallittu aika (oletus: 3 päivää) ennen jäsenyyden merkitsemistä vanhentuneeksi. Tämä on erillinen etälaidasta (frontend block grace period). Kokonaisviive ennen kuin sivustoa estetään voi olla:
 
@@ -165,7 +165,7 @@ Cron-tarkistuksella on oma sallittu aika (oletus: 3 päivää) ennen jäsenyyden
 
 Esimerkiksi oletusasetuksilla ja 7 päivän etukäyttöajan (frontend grace period) myötä sivuston estyminen voi kestää jopa 10 päivää `date_expiration`-päivämäärän jälkeen.
 
-### 7. Poista jäsenyys manuaalisesti
+### 7. Poista jäsenyys manuaalisesti {#7-manually-expire-a-membership}
 
 Jos tarvitset sivustoa välittömästi estämään ilman odottamista cron-syklin päättymistä, voit muuttaa jäsenyyden tilaa manuaalisesti:
 
@@ -176,7 +176,7 @@ Jos tarvitset sivustoa välittömästi estämään ilman odottamista cron-syklin
 
 Etukäyttöajan eston vaikutus tulee voimaan seuraavalla sivun latauksella (riippuen etukäyttöajan säännöistä vanhentuneille jäsenyksille tai välittömästi peruetuille jäsenyksille).
 
-## Yhteenveto
+## Yhteenveto {#summary}
 
 Koko aikajana vanhentumispäivästä sivuston estämiseen:
 
@@ -208,7 +208,7 @@ Peruetuille jäsenyksille polku on lyhyempi:
   Sivuston etuosa estetään välittömästi
 ```
 
-## Kehittäjien viittaukset
+## Kehittäjien viittaukset {#developer-reference}
 
 Seuraavat hookit ja filterit antavat sinulle mahdollisuuden räätälöidä vanhentumisen ja eston käyttäytymistä:
 

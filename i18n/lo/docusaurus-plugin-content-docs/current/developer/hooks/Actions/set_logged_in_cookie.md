@@ -4,11 +4,11 @@ title: ການກະທຳ - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 ເກີດຂຶ້ນທັນທີກ່ອນທີ່ cookie ການຢືນຢັນຕົວຕົນແບບເຂົ້າລະບົບແລ້ວຈະຖືກຕັ້ງຄ່າ.
 
-## ພາລາມິເຕີ
+## ພາລາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | ແຜນການຢືນຢັນຕົວຕົນ. ຄ່າເລີ່ມຕົ້ນ 'logged_in'. |
 | $token | `string` | token ເຊດຊັນຂອງຜູ້ໃຊ້ທີ່ຈະໃຊ້ສຳລັບ cookie ນີ້. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ຖືກກຳນົດໃນ [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) ທີ່ແຖວ 141

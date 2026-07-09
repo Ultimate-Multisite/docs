@@ -4,11 +4,11 @@ title: Ketso - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Ketso: wu_handle_customer_meta_fields
+# Ketso: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Dumella baetsi ba dikatoloso ho boloka dintlha tsa meta ka ditsela tse fapaneng haeba ba hloka ho etsa jwalo.
 
-## Dipharametha
+## Dipharametha {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Dumella baetsi ba dikatoloso ho boloka dintlha tsa meta ka ditsela tse fapaneng 
 | $customer | `\Customer` | Ntho ya moreki ya Ultimate Multisite. |
 | $checkout | `\Checkout` | Sehlopha sa tefo ya ho qetela. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.0.0
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) moleng wa 1211

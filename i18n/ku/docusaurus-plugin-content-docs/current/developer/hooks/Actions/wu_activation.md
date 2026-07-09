@@ -4,13 +4,13 @@ title: Çalakî - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Çalakî: wu_activation
+# Çalakî: wu_activation {#action-wuactivation}
 
 Bihêle beşên din ên plugin rêgezên xwe yên ji bo çalakkirinê girê bidin
 
-### Ji guhertoya
+### Ji guhertoya {#since}
 
 - 1.9.6
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L91) de li rêza 91 hate pênasekirin

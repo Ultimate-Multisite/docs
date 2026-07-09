@@ -3,9 +3,9 @@ title: د اېډان پراختیا پیلول
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# د اضافې پراختیا
+# د اضافې پراختیا {#addon-development}
 
-## د اضافې جوړښت
+## د اضافې جوړښت {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## د اصلي اضافې فایل کينډۍ
+## د اصلي اضافې فایل کينډۍ {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## د دودیز ماډل بېلګه
+## د دودیز ماډل بېلګه {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## د ادارې پاڼې ادغام
+## د ادارې پاڼې ادغام {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## خپل Addon ازمویل
+## خپل Addon ازمویل {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## د v2.13.0 پراختیا ټکي
+## د v2.13.0 پراختیا ټکي {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 څو پراختیا ټکي زیاتوي چې د هغو addonونو لپاره ګټور دي چې له خپلواکو کرایه‌والو، د checkout ډومېنونو، یا د کوربه-برابروونکي DNS اتومات‌کولو سره یوځای کېږي.
 
-### د SSO او اصلي-سایټ مدیریت URLونه
+### د SSO او اصلي-سایټ مدیریت URLونه {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### د checkout-فورم بنسټیز ډومېنونه
+### د checkout-فورم بنسټیز ډومېنونه {#checkout-form-base-domains}
 
 `wu_checkout_form_base_domains` وکاروئ کله چې ستاسو addon اضافي شریک بنسټیز ډومېنونه برابروي چې باید د هر-سایټ دودیزو نقشو پر ځای د checkout-فورم **Site URL** ډومېنونو په څېر چلند وکړي:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite دا کوربه‌نومونه عادي کوي او د هغوی لپاره اتومات د هر-سایټ نقشه‌شوي-ډومېن ریکارډونه پرېږدي.
 
-### اتومات د ډومېن-ریکارډ جوړونه
+### اتومات د ډومېن-ریکارډ جوړونه {#automatic-domain-record-creation}
 
 `wu_should_create_domain_record_for_site` وکاروئ کله چې ستاسو addon اړتیا لري چې د نوي جوړ شوي سایټ لپاره اتومات د ډومېن-ریکارډ جوړونه وځپي یا وځنډوي:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 د کوربه-برابروونکي یوځای‌کونې چې `wu_add_subdomain` ته غوږ نیسي، کله چې سایټونه جوړېږي د برابروونکي-لوري DNS ریکارډونه جوړولی شي. که د دې عمل لپاره هېڅ یوځای‌کونه ثبت شوې نه وي، Ultimate Multisite تش تش شالید کار پرېږدي.
 
-## راتلونکي ګامونه
+## راتلونکي ګامونه {#next-steps}
 
 - د شته کړنو او فلټرونو لپاره [Hooks Reference](/developer/hooks) وګورئ
 - د API یوځای‌کونې لپاره [REST API Overview](/developer/rest-api/overview) وګورئ

@@ -3,19 +3,19 @@ title: 'Ceacht 10: Lá an tSeolta'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Ceacht 10: Lá an tSeolta
+# Ceacht 10: Lá an tSeolta {#lesson-10-launch-day}
 
 Tá gach rud tógtha. Sula n-osclaíonn tú na doirse, téann an ceacht seo tríd an seicliosta réamhsheolta chun a chinntiú nach bhfuil aon rud briste, in easnamh, ná náireach.
 
-## An Áit ar Fágadh Sinn
+## An Áit ar Fágadh Sinn {#where-we-left-off}
 
 Tá teimpléid, pleananna, íocaíocht, brandáil, ionduchtú, agus praghsáil uile cumraithe ag FitSite. Anois deimhnímid go n-oibríonn gach rud agus téimid beo.
 
-## Seicliosta Réamhsheolta
+## Seicliosta Réamhsheolta {#pre-launch-checklist}
 
 Oibrigh trí gach mír. Ná scipeáil aon cheann.
 
-### Bonneagar an Ardáin
+### Bonneagar an Ardáin {#platform-infrastructure}
 
 - [ ] Tá an óstáil cobhsaí agus ag feidhmiú go maith faoi ualach
 - [ ] Tá wildcard SSL gníomhach agus seirbheálann gach fofhearann thar HTTPS
@@ -23,7 +23,7 @@ Oibrigh trí gach mír. Ná scipeáil aon cheann.
 - [ ] Tá cúltacaí cumraithe agus tástáilte (athchóirigh ceann amháin ar a laghad lena dheimhniú)
 - [ ] Tá monatóireacht i bhfeidhm -- beidh a fhios agat má théann an t-ardán síos
 
-### Teimpléid
+### Teimpléid {#templates}
 
 - [ ] Luchtaíonn na trí theimpléad go léir i gceart ar shuíomhanna nua
 - [ ] Tá ábhar ionadchoinneála cabhrach agus saor ó chlóscríobhanna míchearta
@@ -32,7 +32,7 @@ Oibrigh trí gach mír. Ná scipeáil aon cheann.
 - [ ] Tá luas luchtaithe leathanaigh inghlactha (tástáil le huirlis cosúil le GTmetrix nó PageSpeed Insights)
 - [ ] Níl aon naisc bhriste ná sócmhainní in easnamh ar aon teimpléad
 
-### Pleananna agus Táirgí
+### Pleananna agus Táirgí {#plans-and-products}
 
 - [ ] Tá na trí phlean go léir gníomhach agus infheicthe
 - [ ] Tá tuairiscí na bpleananna cruinn agus sonrach don nideoige
@@ -42,7 +42,7 @@ Oibrigh trí gach mír. Ná scipeáil aon cheann.
 - [ ] Taispeántar tairiscintí breise ordaithe i gceart le linn íocaíochta
 - [ ] Cuirtear teorainneacha plugin agus theme i bhfeidhm i gceart de réir plean
 
-### Sreabhadh Íocaíochta
+### Sreabhadh Íocaíochta {#checkout-flow}
 
 - [ ] Críochnaigh clárú tástála iomlán ar gach plean (úsáid mód íocaíochta tástála)
 - [ ] Taispeánann roghnú teimpléid na teimpléid chearta de réir plean
@@ -52,7 +52,7 @@ Oibrigh trí gach mír. Ná scipeáil aon cheann.
 - [ ] Is féidir leis an gcustaiméir logáil isteach ina shuíomh nua láithreach
 - [ ] Oibríonn cóid lascaine i gceart
 
-### Brandáil
+### Brandáil {#branding}
 
 - [ ] Taispeánann an leathanach logála isteach brandáil FitSite
 - [ ] Taispeánann an Dashboard riaracháin brandáil FitSite
@@ -60,7 +60,7 @@ Oibrigh trí gach mír. Ná scipeáil aon cheann.
 - [ ] Taispeántar sonraisc i gceart le sonraí do ghnó
 - [ ] Tá an suíomh margaíochta beo agus nascann sé leis an bhfoirm íocaíochta
 
-### Ionduchtú
+### Ionduchtú {#onboarding}
 
 - [ ] Taispeántar an ghiuirléid Quick Start ar Dashboard custaiméirí nua
 - [ ] Díríonn gach nasc Quick Start ar na leathanaigh chearta
@@ -68,7 +68,7 @@ Oibrigh trí gach mír. Ná scipeáil aon cheann.
 - [ ] Tá ailt sa bhunachar eolais foilsithe agus inrochtana
 - [ ] Taispeánann leathanach Account an fhaisnéis cheart faoin bplean agus roghanna uasghrádaithe
 
-### Cúrsaí Dlí agus Gnó
+### Cúrsaí Dlí agus Gnó {#legal-and-business}
 
 - [ ] Tá téarmaí seirbhíse foilsithe agus nasctha ón íocaíocht
 - [ ] Tá polasaí príobháideachais foilsithe agus inrochtana
@@ -77,11 +77,11 @@ Oibrigh trí gach mír. Ná scipeáil aon cheann.
 - [ ] Tá an geata íocaíochta i mód beo (ní mód tástála)
 - [ ] Tá cumraíocht chánach ceart do do dhlínse
 
-## Seoladh Bog vs. Seoladh Crua
+## Seoladh Bog vs. Seoladh Crua {#soft-launch-vs-hard-launch}
 
 Smaoinigh ar sheoladh dhá chéim:
 
-### Céim 1: Seoladh Bog
+### Céim 1: Seoladh Bog {#phase-1-soft-launch}
 
 Tabhair cuireadh do 5-10 n-úinéir stiúideo folláine clárú roimh an seoladh poiblí. Is iad seo do chustaiméirí béite. Tairg lascaine shuntasach dóibh (50% de thalamh ar feadh a saoil, nó 3 mhí saor in aisce) mar mhalairt ar:
 
@@ -91,7 +91,7 @@ Tabhair cuireadh do 5-10 n-úinéir stiúideo folláine clárú roimh an seoladh
 
 Tugann sé seo fíor-aiseolas custaiméirí duit agus suíomhanna beo le taispeáint sula n-osclaíonn tú don phobal.
 
-### Céim 2: Seoladh Poiblí
+### Céim 2: Seoladh Poiblí {#phase-2-public-launch}
 
 Nuair a bheidh aiseolas an tseolta bhog ionchorpraithe:
 
@@ -100,7 +100,7 @@ Nuair a bheidh aiseolas an tseolta bhog ionchorpraithe:
 - Tosaigh ar chustaiméirí a fháil (Ceacht 11)
 - Fógair ar chainéil ábhartha sa tionscal folláine
 
-## Gníomhartha Lá an tSeolta
+## Gníomhartha Lá an tSeolta {#launch-day-actions}
 
 Ar an lá a théann tú os comhair an phobail:
 
@@ -110,7 +110,7 @@ Ar an lá a théann tú os comhair an phobail:
 4. **Bí ar fáil** -- d’fhéadfadh cabhair a bheith ag teastáil ó do chéad fhíorchustaiméirí, agus tógann freagairt thapa muinín
 5. **Déan ceiliúradh gairid** -- ansin fill ar an obair
 
-## Cad a D’fhéadfadh Dul Mícheart
+## Cad a D’fhéadfadh Dul Mícheart {#what-can-go-wrong}
 
 Bí ullamh do:
 
@@ -120,7 +120,7 @@ Bí ullamh do:
 - **Feidhmíocht faoi ualach**: Má fhaigheann tú ardú tobann tráchta, bíodh a fhios agat conas d’óstáil a scálú
 - **Mearbhall custaiméirí**: Bíodh do bhunachar eolais agus do chainéil tacaíochta réidh agat
 
-## Líonra FitSite Go dtí Seo
+## Líonra FitSite Go dtí Seo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## An Méid a Thógamar sa Cheacht Seo
+## An Méid a Thógamar sa Cheacht Seo {#what-we-built-this-lesson}
 
 - **Seicliosta réamhsheolta cuimsitheach** a chlúdaíonn bonneagar, ábhar, íocaíochtaí, agus cúrsaí dlí
 - **Straitéis seolta bhog** chun fíor-aiseolas a fháil sula dtéann tú os comhair an phobail

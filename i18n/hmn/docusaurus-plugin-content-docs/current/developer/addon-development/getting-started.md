@@ -3,9 +3,9 @@ title: Pib tsim cov khoom ntxiv
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Kev Tsim Addon
+# Kev Tsim Addon {#addon-development}
 
-## Qauv Txheej Addon
+## Qauv Txheej Addon {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Qauv Ntaub Ntawv Addon Tseem Ceeb
+## Qauv Ntaub Ntawv Addon Tseem Ceeb {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Piv Txwv Custom Model
+## Piv Txwv Custom Model {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Kev Txuas Admin Page
+## Kev Txuas Admin Page {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Kuaj Koj Addon
+## Kuaj Koj Addon {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 cov chaw txuas ntxiv
+## v2.13.0 cov chaw txuas ntxiv {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 ntxiv ntau qhov chaw txuas ntxiv uas muaj txiaj ntsig rau cov addon uas koom ua haujlwm nrog cov tenant muaj kev ywj pheej, cov domain checkout, lossis kev automation DNS ntawm host-provider.
 
-### SSO thiab URL tswj main-site
+### SSO thiab URL tswj main-site {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Cov base domain rau checkout-form
+### Cov base domain rau checkout-form {#checkout-form-base-domains}
 
 Siv `wu_checkout_form_base_domains` thaum koj addon muab cov base domain sib koom ntxiv uas yuav tsum coj li cov domain **Site URL** ntawm checkout-form es tsis yog kev map custom ib site zuj zus:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite normalize cov host no thiab hla kev tsim record mapped-domain ib site zuj zus rau lawv.
 
-### Kev tsim domain-record tsis siv tes
+### Kev tsim domain-record tsis siv tes {#automatic-domain-record-creation}
 
 Siv `wu_should_create_domain_record_for_site` thaum koj addon yuav tsum txwv lossis ncua kev tsim domain-record tsis siv tes rau ib site tshiab uas nyuam qhuav tsim:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Cov kev koom ua haujlwm host-provider uas mloog `wu_add_subdomain` tuaj yeem tsim DNS records sab provider thaum tsim cov site. Yog tsis muaj kev koom ua haujlwm twg sau npe rau action ntawd, Ultimate Multisite yuav hla background job khoob ntawd.
 
-## Cov Kauj Ruam Tom Ntej
+## Cov Kauj Ruam Tom Ntej {#next-steps}
 
 - Saib dua [Hooks Reference](/developer/hooks) rau cov actions thiab filters uas muaj
 - Tshawb [REST API Overview](/developer/rest-api/overview) rau kev koom ua haujlwm API

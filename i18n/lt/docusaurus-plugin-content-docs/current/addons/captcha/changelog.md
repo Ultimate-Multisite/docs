@@ -3,7 +3,7 @@ title: Captcha pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha pakeitimų žurnalas
+# Captcha pakeitimų žurnalas {#captcha-changelog}
 
 Versija: 1.5.0 - Išleista 2026-05-22
 * Nauja: griežtas rate limiter — skaičiuoja kiekvieną GET ir POST captcha apsaugotuose paviršiuose (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ir atsako HTTP 429, `Retry-After` header bei atsitiktine tarpit delsa (1–5 s, griežta viršutinė riba 15 s).

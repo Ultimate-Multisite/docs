@@ -3,11 +3,11 @@ title: Zahtjevi
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Zahtjevi za Ultimate Multisite
+# Zahtjevi za Ultimate Multisite {#ultimate-multisite-requirements}
 
 Prvo što biste mogli pitati prije kupnje Ultimate Multisite je koji su zahtjevi za pokretanje našeg plugin-a. Srećom, postoji samo nekoliko osnovnih zahtjeva za pokretanje Ultimate Multisite: **ime domena**, dobar **hosting provajder** i instalacija WordPress **Multisite**. To je sve što vam treba!
 
-## Ime domena
+## Ime domena {#domain-name}
 
 Prvo, hajde da pričamo o imenu domena.
 
@@ -17,7 +17,7 @@ Naš plugin pruža usluge pretplate, prikupljanje plaćanja, obrasce za promenu 
 
 Svaku nišu koju odaberete možete upravljati pomoću našeg plugin-a pod uvjetom da prodajete web stranice kao uslugu! Osigurajte se da birate ime domena koje odgovara vašem poslovnom planu.
 
-## Hosting provajder
+## Hosting provajder {#hosting-provider}
 
 Sada kada imate privlačno ime domena koje predstavlja vašu nišu i posao, trebate odabrati dobar web hosting tvrtku za hostiranje svoje mreže s Ultimate Multisite. Na tržištu postoji nekoliko dobrih opcija. Neki hosting provajderi se dobro integriraju s Ultimate Multisite, što može biti odlučujući faktor ovisno o tome što planirate izgraditi.
 
@@ -25,7 +25,7 @@ Ultimate Multisite bi treba raditi na bilo kojem hostingu. Jedina razlika je da 
 
 Što se tiče specifikacija servera, nema specifične formule jer ovisi o značajkama i funkcijama koje nudiš te veličini tvoje mreže. Podijeljeni hosting može biti dobar početak, ali čim počneš rasti, vjerojatno će ti trebati posvećeni VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Sada ćemo malo popričati o instalaciji WordPress Multisite-a.
 

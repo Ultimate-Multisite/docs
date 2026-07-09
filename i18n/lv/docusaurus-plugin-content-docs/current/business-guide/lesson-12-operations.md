@@ -3,17 +3,17 @@ title: '12. nodarbība: Uzņēmuma vadīšana'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Nodarbība 12: Uzņēmuma vadīšana
+# Nodarbība 12: Uzņēmuma vadīšana {#lesson-12-running-the-business}
 
 Platforma nav projekts, ko pabeidz -- tas ir uzņēmums, ko vadi. Šī nodarbība aptver FitSite pārvaldības ikdienas darbības: atbalstu, norēķinus, uzturēšanu un klientu apmierinātības uzturēšanu.
 
-## Kur mēs palikām
+## Kur mēs palikām {#where-we-left-off}
 
 FitSite ir palaists, un klienti reģistrējas. Tagad tev jāvada darbība ilgtspējīgi.
 
-## Ikdienas darbības
+## Ikdienas darbības {#daily-operations}
 
-### Uzraudzība
+### Uzraudzība {#monitoring}
 
 Pārbaudi šo katru dienu (vai iestati brīdinājumus):
 
@@ -22,7 +22,7 @@ Pārbaudi šo katru dienu (vai iestati brīdinājumus):
 - **Neizdevušies maksājumi**: Vai ir maksājumu kļūmes, kurām jāpievērš uzmanība?
 - **Atbalsta pieprasījumi**: Vai ir neatbildēti klientu jautājumi?
 
-### Klientu atbalsts
+### Klientu atbalsts {#customer-support}
 
 Tavs nišas fokuss šeit ir priekšrocība. Tā kā visi tavi klienti ir fitnesa studijas, tu atkārtoti redzēsi tos pašus jautājumus:
 
@@ -36,7 +36,7 @@ Tavs nišas fokuss šeit ir priekšrocība. Tā kā visi tavi klienti ir fitnesa
 
 Veido savu zināšanu bāzi (sāktu 8. nodarbībā) ap šiem atkārtotajiem jautājumiem. Katrs atbalsta pieteikums, kas varēja būt zināšanu bāzes raksts, ir signāls uzrakstīt šo rakstu.
 
-### Atbalsta līmeņi
+### Atbalsta līmeņi {#support-tiers}
 
 Augot strukturē atbalstu pēc plāna:
 
@@ -48,9 +48,9 @@ Augot strukturē atbalstu pēc plāna:
 
 [Support Tickets papildinājums](/addons/support-tickets) var palīdzēt pārvaldīt atbalsta pieprasījumus platformā.
 
-## Norēķinu darbības
+## Norēķinu darbības {#billing-operations}
 
-### Periodiskie maksājumi
+### Periodiskie maksājumi {#recurring-payments}
 
 Ultimate Multisite automātiski apstrādā periodiskos norēķinus caur tavu maksājumu vārteju. Tavs uzdevums ir uzraudzīt:
 
@@ -58,7 +58,7 @@ Ultimate Multisite automātiski apstrādā periodiskos norēķinus caur tavu mak
 - **Parādu atgūšanas paziņojumi**: Iestati automātisku atkārtotu mēģinājumu loģiku caur savu maksājumu vārteju (Stripe ar to labi tiek galā)
 - **Atcelšanas pieprasījumi**: Izproti, kāpēc klienti aiziet. Katra atcelšana ir atgriezeniskā saite.
 
-### Memberships pārvaldība
+### Memberships pārvaldība {#managing-memberships}
 
 Dodieties uz **Ultimate Multisite > Memberships**, lai:
 
@@ -69,13 +69,13 @@ Dodieties uz **Ultimate Multisite > Memberships**, lai:
 
 Pilnu atsauci skatiet [Memberships pārvaldība](/user-guide/administration/managing-memberships).
 
-### Rēķinu izrakstīšana
+### Rēķinu izrakstīšana {#invoicing}
 
 Pārliecinies, ka rēķini tiek pareizi ģenerēti par katru maksājumu. Klientiem var būt nepieciešami rēķini uzņēmuma izdevumu atskaitēm. Skatiet [Maksājumu un rēķinu pārvaldība](/user-guide/administration/managing-payments-and-invoices).
 
-## Platformas uzturēšana
+## Platformas uzturēšana {#platform-maintenance}
 
-### WordPress un plugin atjauninājumi
+### WordPress un plugin atjauninājumi {#wordpress-and-plugin-updates}
 
 Kā tīkla administratoram tev ir pienākums:
 
@@ -88,14 +88,14 @@ Kā tīkla administratoram tev ir pienākums:
 Bojāts atjauninājums ietekmē katru klienta vietni tavā tīklā. Vienmēr vispirms testē atjauninājumus sava tīkla staging kopijā.
 :::
 
-### Drošība
+### Drošība {#security}
 
 - Uzturi visu programmatūru atjauninātu
 - Izmanto spēcīgas paroles un divfaktoru autentifikāciju administratora kontiem
 - Uzraugi aizdomīgas aktivitātes
 - Izstrādā plānu drošības incidentiem
 
-### Veiktspēja
+### Veiktspēja {#performance}
 
 Tavam tīklam augot, uzraugi:
 
@@ -105,9 +105,9 @@ Tavam tīklam augot, uzraugi:
 
 Apsver kešošanas ieviešanu (lapu kešs, objektu kešs) un CDN, ja vēl neesi to izdarījis. [Cloudflare integrācija](/user-guide/host-integrations/cloudflare) paveic lielu daļu no tā.
 
-## Klientu dzīves cikla pārvaldība
+## Klientu dzīves cikla pārvaldība {#customer-lifecycle-management}
 
-### Atbiruma samazināšana
+### Atbiruma samazināšana {#reducing-churn}
 
 Atbirums ir to klientu procentuālā daļa, kuri katru mēnesi atceļ pakalpojumu. Abonēšanas uzņēmumam atbiruma samazināšana ir tikpat svarīga kā jaunu klientu iegūšana.
 
@@ -119,7 +119,7 @@ Atbirums ir to klientu procentuālā daļa, kuri katru mēnesi atceļ pakalpojum
 - Viņi atrada lētāku alternatīvu → pastiprini savas nišas vērtību
 - Viņu uzņēmums tika slēgts → neizbēgami, bet uzskaiti to atsevišķi
 
-### Jauninājumu veicināšana
+### Jauninājumu veicināšana {#encouraging-upgrades}
 
 Klienti Starter plānā, kuriem klājas veiksmīgi, jāmudina jaunināt:
 
@@ -127,7 +127,7 @@ Klienti Starter plānā, kuriem klājas veiksmīgi, jāmudina jaunināt:
 - Sūti mērķētus e-pastus, izceļot Growth plāna funkcijas, no kurām viņi gūtu labumu
 - Parādi, ko Growth/Pro klienti ir izveidojuši
 
-### Atgūšanas kampaņas
+### Atgūšanas kampaņas {#win-back-campaigns}
 
 Kad klients atceļ:
 
@@ -135,30 +135,30 @@ Kad klients atceļ:
 2. Ja iespējams, risini viņa bažas
 3. Piedāvā atlaidi, lai atgrieztos (30–60 dienas pēc atcelšanas)
 
-## Nedēļas un mēneša rutīnas
+## Nedēļas un mēneša rutīnas {#weekly-and-monthly-routines}
 
-### Katru nedēļu
+### Katru nedēļu {#weekly}
 
 - Pārskati jaunas reģistrācijas un atcelšanas
 - Atbildi uz visiem atvērtajiem atbalsta pieteikumiem
 - Pārbaudi platformas veiktspēju un darbspējas laiku
 - Pārskati visus neizdevušos maksājumus
 
-### Katru mēnesi
+### Katru mēnesi {#monthly}
 
 - Analizē galvenos rādītājus (MRR, atbirums, jauni klienti, jauninājumi)
 - Piemēro WordPress un plugin atjauninājumus (pēc staging testa)
 - Pārskati un atjaunini zināšanu bāzi, balstoties uz atbalsta modeļiem
 - Nosūti klientiem jaunumu vēstuli vai atjauninājumu (jaunas funkcijas, padomi, fitnesa nozares ziņas)
 
-### Katru ceturksni
+### Katru ceturksni {#quarterly}
 
 - Pārskati cenas salīdzinājumā ar konkurentiem un klientu atsauksmēm
 - Izvērtē veidņu dizainus -- vai tos nepieciešams atsvaidzināt?
 - Novērtē hostinga kapacitāti -- vai tev jāpalielina mērogs?
 - Pārskati un uzlabo ievadapmācību, balstoties uz aktivizācijas datiem
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Ikdienas uzraudzības rutīnas** darbspējas laikam, reģistrācijām, maksājumiem un atbalstam
 - **Līmeņota atbalsta struktūra**, kas pielāgota plānu līmeņiem

@@ -3,11 +3,11 @@ title: Amakhono Aqaphela Itimu
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Amakhono Aqaphela Itimu
+# Amakhono Aqaphela Itimu {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 iza namakhono amasha amane akhelwe ngaphakathi aqaphela itimu, azivumelanisa ngokuzenzakalelayo netimu yakho esebenzayo ye-WordPress. Lawa makhono ahlinzeka ngesiqondiso esikhethekile namakhono ahambisana nesakhiwo nezici zetimu yakho.
 
-## Ayini Amakhono Aqaphela Itimu?
+## Ayini Amakhono Aqaphela Itimu? {#what-are-theme-aware-skills}
 
 Amakhono aqaphela itimu ayizisekelo zolwazi namasethi amathuluzi aselungiselelwe kusengaphambili, i-AI assistant ewukhetha ngokuzenzakalelayo ngokusekelwe etimuni ye-WordPress esebenzayo okwamanje kusayithi lakho. Uma ushintsha amatimu, amakhono atholakalayo omsizi abuyekezwa ngokuzenzakalelayo — akukho ukucushwa ngesandla okudingekayo.
 
@@ -18,9 +18,9 @@ Ikhono ngalinye lifaka:
 - **Izibonelo zokwenza ngokwezifiso** — izingcezu zekhodi namaphethini okucushwa emisebenzi evamile
 - **Imikhuba emihle kakhulu** — izincomo zesakhiwo netindlela zokusebenza zetimu
 
-## Amakhono Aqaphela Itimu Atholakalayo
+## Amakhono Aqaphela Itimu Atholakalayo {#available-theme-aware-skills}
 
-### Amatimu Amabhulokhi
+### Amatimu Amabhulokhi {#block-themes}
 
 **Kusebenza ku:** Amatimu asebenzisa isakhiwo se-WordPress esisekelwe kumabhulokhi (Ukuhlela Isayithi Lonke).
 
@@ -34,7 +34,7 @@ Ikhono le-Block Themes linikeza isiqondiso mayelana nokuthi:
 
 **Kuvulwa ngokuzenzakalelayo lapho:** Itimu yakho esebenzayo iyitimu yamabhulokhi (isekela isici se-`block-templates`).
 
-### Amatimu Akudala
+### Amatimu Akudala {#classic-themes}
 
 **Kusebenza ku:** Amatimu endabuko e-WordPress asebenzisa amathempulethi e-PHP nomhleli wakudala.
 
@@ -48,7 +48,7 @@ Ikhono le-Classic Themes linikeza isiqondiso mayelana nokuthi:
 
 **Kuvulwa ngokuzenzakalelayo lapho:** Itimu yakho esebenzayo iyitimu yakudala (engeyona eyamabhulokhi).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Kusebenza ku:** Amasayithi asebenzisa i-Kadence Blocks plugin yokuklama okuthuthukile okusekelwe kumabhulokhi.
 
@@ -62,7 +62,7 @@ Ikhono le-Kadence Blocks linikeza isiqondiso mayelana nokuthi:
 
 **Kuvulwa ngokuzenzakalelayo lapho:** I-Kadence Blocks plugin isebenza kusayithi lakho.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Kusebenza ku:** Amasayithi asebenzisa itimu ye-Kadence yokuklama nokwenza ngokwezifiso okusekelwe kumabhulokhi.
 
@@ -76,15 +76,15 @@ Ikhono le-Kadence Theme linikeza isiqondiso mayelana nokuthi:
 
 **Kuvulwa ngokuzenzakalelayo lapho:** Itimu ye-Kadence iyitimu yakho esebenzayo.
 
-## Amakhono Akhethwa Kanjani
+## Amakhono Akhethwa Kanjani {#how-skills-are-selected}
 
 Umsizi uthola ngokuzenzakalelayo itimu yakho esebenzayo nama-plugins afakiwe kumlayezo ngamunye. Uma ikhono eliqaphela itimu elihambisanayo litholakala, lilayishwa ngokuzenzakalelayo kumongo womsizi. Awudingi ukuvula noma ukushintsha amakhono ngesandla.
 
-### Amakhono Amaningi
+### Amakhono Amaningi {#multiple-skills}
 
 Uma amakhono amaningi esebenza kusayithi lakho (ngokwesibonelo, uma une-Kadence Blocks ne-Kadence Theme kokubili kusebenzayo), umsizi unokufinyelela kuwo wonke amakhono asebenzayo futhi angabhekisela esiqondisweni esivela kwelinye nelinye.
 
-### Ukushintsha Amatimu
+### Ukushintsha Amatimu {#switching-themes}
 
 Uma ushintsha itimu yakho esebenzayo, amakhono atholakalayo omsizi abuyekezwa ngokuzenzakalelayo emlayezweni olandelayo. Ngokwesibonelo:
 
@@ -92,11 +92,11 @@ Uma ushintsha itimu yakho esebenzayo, amakhono atholakalayo omsizi abuyekezwa ng
 2. Ushintshela kutimu yakudala.
 3. Emlayezweni wakho olandelayo, ikhono le-**Classic Themes** lilayishwa ngokuzenzakalelayo, futhi ikhono le-**Block Themes** alisatholakali.
 
-## Ukusebenzisa Amakhono Aqaphela Itimu
+## Ukusebenzisa Amakhono Aqaphela Itimu {#using-theme-aware-skills}
 
 Ukuze usebenzise ikhono eliqaphela itimu, vele uchaze ofuna ukukwenza esibonakalayo sengxoxo. Umsizi uzobhekisela ngokuzenzakalelayo esiqondisweni sekhono elifanele.
 
-### Izibonelo Zemiyalelo
+### Izibonelo Zemiyalelo {#example-prompts}
 
 **Okwe-Block Themes:**
 > "Dala isigaba se-hero esinesithombe sangemuva nombhalo omiswe maphakathi usebenzisa amaphethini amabhulokhi."

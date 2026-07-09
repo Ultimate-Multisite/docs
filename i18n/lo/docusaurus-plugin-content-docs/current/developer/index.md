@@ -3,11 +3,11 @@ title: ເອກະສານສຳລັບນັກພັດທະນາ
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ເອກະສານສຳລັບ Developer
+# ເອກະສານສຳລັບ Developer {#developer-documentation}
 
 ຄູ່ມືນີ້ໃຫ້ທຸກຢ່າງທີ່ Developer ຕ້ອງການເພື່ອເຊື່ອມຕໍ່, ຂະຫຍາຍ, ຫຼືພັດທະນາ addons ສຳລັບ Ultimate Multisite. Ultimate Multisite ປ່ຽນເຄືອຂ່າຍ WordPress Multisite ໃຫ້ເປັນແພລດຟອມ Website-as-a-Service (WaaS).
 
-## ມີຫຍັງໃຫ້ໃຊ້
+## ມີຫຍັງໃຫ້ໃຊ້ {#whats-available}
 
 - **[REST API](./rest-api/overview)** — ການດຳເນີນການ CRUD ຄົບຖ້ວນສຳລັບທຸກເອນທິຕີ (ລູກຄ້າ, ເວັບໄຊ, ສະມາຊິກພາບ, ການຊຳລະເງິນ, ຜະລິດຕະພັນ, ໂດເມນ) ພ້ອມການຢືນຢັນຕົວຕົນດ້ວຍ API key
 - **[ອ້າງອີງ Hooks](./hooks/guide)** — action hooks ຫຼາຍກວ່າ 200 ລາຍການ ແລະ filter hooks ຫຼາຍກວ່າ 280 ລາຍການ ສຳລັບເຫດການວົງຈອນຊີວິດ ແລະການປັບແຕ່ງ
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[ຕົວຢ່າງ Code](./code-examples/)** — ຮູບແບບຂັ້ນສູງສຳລັບການຕັ້ງລາຄາແບບໄດນາມິກ, ການຈັດຕັ້ງເວັບໄຊ, ຂໍ້ຈຳກັດກຳນົດເອງ, ແລະການປະມວນຜົນຫຼາຍ gateway
 - **[ການພັດທະນາ Addon](./addon-development/getting-started)** — ກອບໂຄງສ້າງສຳລັບສ້າງ addon plugins
 
-## ຂໍ້ກຳນົດ
+## ຂໍ້ກຳນົດ {#requirements}
 
 - ການຕິດຕັ້ງ WordPress Multisite
 - PHP 7.4 ຫຼືສູງກວ່າ
 - ເປີດໃຊ້ Ultimate Multisite plugin ແລ້ວ
 
-## ການຕິດຕັ້ງ Composer / Bedrock
+## ການຕິດຕັ້ງ Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite ມີໃຫ້ໃຊ້ໃນ [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) ໃນນາມ `ultimate-multisite/ultimate-multisite`. ນີ້ແມ່ນວິທີການຕິດຕັ້ງທີ່ແນະນຳສຳລັບການຕັ້ງຄ່າ WordPress ທີ່ອີງໃສ່ [Bedrock](https://roots.io/bedrock/) ແລະສະພາບແວດລ້ອມອື່ນໆທີ່ຈັດການດ້ວຍ Composer.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## ເລີ່ມຕົ້ນດ່ວນ
+## ເລີ່ມຕົ້ນດ່ວນ {#quick-start}
 
-### ໃຊ້ REST API
+### ໃຊ້ REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### ເຊື່ອມ Hook ເຂົ້າກັບເຫດການ
+### ເຊື່ອມ Hook ເຂົ້າກັບເຫດການ {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### ສ້າງ Addon
+### ສ້າງ Addon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

@@ -4,24 +4,24 @@ title: Զտիչ - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count
+# Filter: wu_fluent_form_count {#filter-wufluentformcount}
 
 Թույլ է տալիս plugin մշակողներին փոխել ձևերի ընդհանուր քանակը
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
 | $count | `int` | Ձևերի ընդհանուր քանակը |
 | $form_type | `string` | Ձևի տեսակի slug-ը |
 
-### Սկսած
+### Սկսած {#since}
 
 - 1.0.0
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L156)-ում՝ 156-րդ տողում
 
 
-## Վերադարձնում է
+## Վերադարձնում է {#returns}
 Նոր ընդհանուր քանակը

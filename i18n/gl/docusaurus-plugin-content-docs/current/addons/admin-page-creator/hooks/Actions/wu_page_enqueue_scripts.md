@@ -4,19 +4,19 @@ title: Acción - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Acción: wu_page_enqueue_scripts
+# Acción: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
 
 Engadindo aquí unha acción personalizada para que teñamos un lugar onde enfileirar os scripts e estilos segundo sexa necesario\ e asegurarnos de que só se carguen nas páxinas correctas
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
 | $ | `\WU_Page` | A páxina de administración actual |
 
-### Desde
+### Desde {#since}
 
 - 1.3.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1123) na liña 1123

@@ -3,13 +3,13 @@ title: Ang Daloy ng Pagpaparehistro
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ang Daloy ng Pagpaparehistro (v2)
+# Ang Daloy ng Pagpaparehistro (v2) {#the-registration-flow-v2}
 
 _**MAHALAGANG TALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 
 Maaaring magparehistro ang mga user sa iba't ibang paraan sa iyong network. Maaari nilang gamitin ang iyong form ng pagpaparehistro o isang naibabahaging link papunta sa paunang napiling plano. Dito, ipapakita namin kung paano maaaring magparehistro ang iyong mga customer sa iyong network gamit ang mga available na landas at kung ano ang mangyayari pagkatapos nilang magparehistro sa iyong network.
 
-## Gamit ang Form ng Pagpaparehistro:
+## Gamit ang Form ng Pagpaparehistro: {#using-the-registration-form}
 
 Ito ang karaniwang proseso ng pagpaparehistro. Gumagawa ka ng pahina ng pagpaparehistro na may **form ng pag-checkout** at dito pupunta ang iyong mga customer upang magparehistro sa iyong network at mag-subscribe sa isang plano. Maaari kang magkaroon ng maraming pahina ng pagpaparehistro, bawat isa ay may ibang form ng pagpaparehistro kung gusto mo.
 
@@ -35,13 +35,13 @@ Kung nagparehistro sila sa isang bayad na plano o hindi mandatoryo ang email ver
 
 ![Website na na-activate na may link para mag-sign in sa Dashboard](/img/frontend/site-activated.png)
 
-## Gamit ang Naibabahaging Link:
+## Gamit ang Naibabahaging Link: {#using-a-shareable-link}
 
 Ang proseso ng pagpaparehistro gamit ang naibabahaging link ay halos pareho sa form ng pagpaparehistro; ang tanging pagkakaiba ay kapag gumagamit ng naibabahaging link, maaaring may paunang napiling produkto o template ng website ang iyong mga customer sa form ng pag-checkout (tingnan ang seksyong Paunang pagpili ng mga produkto at template sa pamamagitan ng mga parameter ng URL) o maaaring may idinagdag na coupon code (tingnan ang seksyong Paggamit ng mga Parameter ng URL).
 
 Magiging pareho ang proseso ng pagpaparehistro: kailangan nilang punan ang kanilang pangalan, username, email address, pangalan at pamagat ng website, atbp... ngunit ang plano o template ng website ay paunang napili na para sa kanila.
 
-### Pagpaparehistro Gamit ang mga Manwal na Pagbabayad:
+### Pagpaparehistro Gamit ang mga Manwal na Pagbabayad: {#registering-using-manual-payments}
 
 Kung ayaw mong gumamit ng PayPal, Stripe o anumang iba pang payment gateway na inaalok ng Ultimate Multisite o ng mga integrasyon ng add-on nito, maaari kang gumamit ng mga manwal na pagbabayad para sa iyong mga customer. Sa ganitong paraan, maaari kang gumawa ng invoice para mabayaran nila sa iyong gustong payment processor pagkatapos nilang magparehistro sa iyong network.
 

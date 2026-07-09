@@ -4,11 +4,11 @@ title: مەشغۇلات - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# مەشغۇلات: wu_membership_post_renew
+# مەشغۇلات: wu_membership_post_renew {#action-wumembershippostrenew}
 
 ئەزالىق يېڭىلانغاندىن كېيىن قوزغىتىلىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 | $membership_id | `int` | ئەزالىقنىڭ IDسى. |
 | $membership | `\Membership` | ئەزالىق ئوبيېكتى. |
 
-### دىن باشلاپ
+### دىن باشلاپ {#since}
 
 - 2.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) دا 2235-قۇردا ئېنىقلانغان

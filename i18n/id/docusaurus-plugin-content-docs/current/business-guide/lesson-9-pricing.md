@@ -3,17 +3,17 @@ title: 'Pelajaran 9: Penetapan Harga untuk Keuntungan'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Pelajaran 9: Penetapan Harga untuk Keuntungan
+# Pelajaran 9: Penetapan Harga untuk Keuntungan {#lesson-9-pricing-for-profit}
 
 Di Pelajaran 5, kita sudah menetapkan harga awal untuk paket FitSite. Sekarang, kita akan menyempurnakan strategi harga dengan teknik-teknik yang dapat meningkatkan pendapatan, mendorong peningkatan paket (upgrade), dan mengurangi tingkat *churn* (pelanggan yang berhenti).
 
-## Titik Awal Kita
+## Titik Awal Kita {#where-we-left-off}
 
 FitSite sudah memiliki paket, template, *checkout*, *branding*, dan *onboarding*. Harga awal yang kita tetapkan adalah $49/$99/$199 per bulan. Sekarang, kita akan membuat harga tersebut bekerja lebih keras.
 
-## Prinsip Penetapan Harga untuk Platform Niche
+## Prinsip Penetapan Harga untuk Platform Niche {#pricing-principles-for-niche-platforms}
 
-### Harga Berdasarkan Nilai, Bukan Biaya
+### Harga Berdasarkan Nilai, Bukan Biaya {#price-on-value-not-cost}
 
 Biaya *hosting* Anda mungkin $5-$15 per situs pelanggan. Itu tidak berarti harga Anda harus $20. Anda tidak menjual *hosting*. Anda menjual:
 
@@ -24,7 +24,7 @@ Biaya *hosting* Anda mungkin $5-$15 per situs pelanggan. Itu tidak berarti harga
 
 Tetapkan harga berdasarkan nilai yang Anda berikan, bukan biaya untuk menyediakannya.
 
-### Kaitkan dengan Alternatif
+### Kaitkan dengan Alternatif {#anchor-to-alternatives}
 
 Ketika pemilik studio kebugaran mengevaluasi FitSite, mereka membandingkannya dengan:
 
@@ -34,7 +34,7 @@ Ketika pemilik studio kebugaran mengevaluasi FitSite, mereka membandingkannya de
 
 Dengan harga $49-$199/bulan, FitSite lebih murah daripada menyewa pengembang, lebih mumpuni daripada *builder* generik, dan jauh lebih baik daripada tidak memiliki situs web sama sekali.
 
-## Menerapkan Variasi Harga
+## Menerapkan Variasi Harga {#implementing-price-variations}
 
 Harga tahunan mendorong komitmen dan mengurangi *churn*. Arahkan ke tab **Price Variations** pada setiap paket dan tambahkan opsi tahunan:
 
@@ -46,12 +46,12 @@ Harga tahunan mendorong komitmen dan mengurangi *churn*. Arahkan ke tab **Price 
 
 Tambahkan *field* **Period Selection** ke formulir *checkout* Anda sehingga pelanggan dapat beralih antara penagihan bulanan dan tahunan. Lihat [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Mengapa Harga Tahunan Berhasil
+### Mengapa Harga Tahunan Berhasil {#why-annual-pricing-works}
 
 - **Untuk Anda**: Uang tunai di muka, *churn* yang lebih rendah (pelanggan yang membayar tahunan cenderung tidak membatalkan di tengah periode)
 - **Untuk Mereka**: Penghematan nyata, prediksi anggaran
 
-## Biaya Pengaturan (*Setup Fees*)
+## Biaya Pengaturan (*Setup Fees*) {#setup-fees}
 
 Pertimbangkan biaya pengaturan satu kali untuk paket yang mencakup konfigurasi langsung:
 
@@ -61,7 +61,7 @@ Pertimbangkan biaya pengaturan satu kali untuk paket yang mencakup konfigurasi l
 
 Konfigurasikan biaya pengaturan di bagian harga setiap paket. Lihat [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) untuk detailnya.
 
-## Masa Percobaan (*Trial Periods*)
+## Masa Percobaan (*Trial Periods*) {#trial-periods}
 
 Menawarkan masa percobaan dapat mengurangi hambatan pendaftaran, tetapi memperkenalkan risiko tidak dikonversi. Untuk FitSite:
 
@@ -70,11 +70,11 @@ Menawarkan masa percobaan dapat mengurangi hambatan pendaftaran, tetapi memperke
 
 Konfigurasikan masa percobaan di bagian harga paket Starter dengan mengaktifkan *toggle* **Offer Trial** dan mengatur durasinya menjadi 7 hari.
 
-### Membuat Masa Percobaan Berkonversi
+### Membuat Masa Percobaan Berkonversi {#making-trials-convert}
 
 Masa percobaan hanya berhasil jika pelanggan merasakan nilai selama periode tersebut. Urutan *onboarding* Anda (Pelajaran 8) sangat penting di sini — email sambutan harus dijadwalkan untuk mendorong keterlibatan dalam jendela 7 hari.
 
-## Kode Diskon (*Discount Codes*)
+## Kode Diskon (*Discount Codes*) {#discount-codes}
 
 Buat kode diskon strategis untuk tujuan tertentu:
 
@@ -88,7 +88,7 @@ Arahkan ke **Ultimate Multisite > Discount Codes** untuk membuatnya. Lihat [Crea
 Diskon harus menjadi alat strategis, bukan perlengkapan permanen. Jika semua orang mendapatkan diskon, itu bukan diskon — itu adalah harga asli Anda. Gunakan diskon untuk kampanye, rujukan, dan promosi terbatas waktu tertentu.
 :::
 
-## Penanganan Pajak (*Tax Handling*)
+## Penanganan Pajak (*Tax Handling*) {#tax-handling}
 
 Jika Anda beroperasi di yurisdiksi yang mewajibkan pengumpulan pajak:
 
@@ -98,7 +98,7 @@ Jika Anda beroperasi di yurisdiksi yang mewajibkan pengumpulan pajak:
 
 Lihat [Tax Handling](/user-guide/payment-gateways/tax-handling) untuk konfigurasi detail. Jika Anda melayani pelanggan secara internasional, pertimbangkan *addon* [VAT](/addons/vat) untuk kepatuhan Uni Eropa.
 
-## Meninjau Harga Anda
+## Meninjau Harga Anda {#reviewing-your-pricing}
 
 Setelah peluncuran, tinjau kembali harga setiap kuartal. Perhatikan:
 
@@ -107,7 +107,7 @@ Setelah peluncuran, tinjau kembali harga setiap kuartal. Perhatikan:
 - **Tingkat *churn* per paket**: Jika pelanggan tahunan memiliki *churn* yang lebih rendah, dorong harga tahunan lebih keras
 - **Harga pesaing**: Berapa yang dikenakan alternatif? Apakah posisi Anda sudah tepat?
 
-## Jaringan FitSite Sejauh Ini
+## Jaringan FitSite Sejauh Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Siap diluncurkan (pelajaran berikutnya)
 ```
 
-## Apa yang Kita Bangun di Pelajaran Ini
+## Apa yang Kita Bangun di Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Harga tahunan** dengan diskon 20% untuk mendorong komitmen
 - **Biaya pengaturan** pada tingkatan yang lebih tinggi untuk menutupi upaya *onboarding*

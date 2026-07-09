@@ -3,7 +3,7 @@ title: Innstillingar PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Innreiðing PayPal-gætimótli (v2)
+# Innreiðing PayPal-gætimótli (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**VIÐVÖGUN: Þessi grein er tengd Ultimate Multisite v2.x.**_
 
@@ -13,13 +13,13 @@ _**VIÐVÖGUN: Þessi grein er tengd Ultimate Multisite v2.x.**_
 
 Litið það að þú þarft **PayPal Business account** til að fá API-kennileika sem er nauðsynleg fyrir þennan tengingu.
 
-## Aktiva PayPal á nálgunni þinni
+## Aktiva PayPal á nálgunni þinni {#enabling-paypal-on-your-network}
 
 Til að aktiva PayPal sem tilfyllt betalingsformhæðir á nálgunni þinni, ferðu yfir í **Ultimate Multisite > Settings > Payments** tab og vickingja af boksins við PayPal.
 
 ![Aktiva PayPal í virkum betalingsgætimótli](/img/config/settings-payment-gateways.png)
 
-## Notkun leiðarstefnu uppsetningar
+## Notkun leiðarstefnu uppsetningar {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 hefur lagt á leiðarstefnu uppsetningu PayPal í settum betalingsgætimótli. Eftir að þú aktiva PayPal, nota leiðarstefnuna á **Ultimate Multisite > Settings > Payments** til að velja hvernig þú vilt tengja gætimótlið og staðfesta hvort kennileiki eru enn nauðsynlegar áður en þú hefur lagt farið.
 
@@ -30,7 +30,7 @@ Leiðarstefnan stendur fyrir tveimjum uppsetjastengdum:
 
 Viss du ikkje ser OAuth-alternativet i veilederen, fullfør den manuelle innfæringsprosessen nedanfor. Gatewayen fungerer med dei same PayPal Business API-legitimasjonane som tidlegare Ultimate Multisite 2.x utgåver.
 
-## Få tilgang til PayPal API-legitimasjonar
+## Få tilgang til PayPal API-legitimasjonar {#getting-the-paypal-api-credentials}
 
 Når du har aktivert PayPal som betalingsgateway, må du fylle ut feltene for PayPal API **Username**, PayPal API **Password** og PayPal API **Signature**.
 

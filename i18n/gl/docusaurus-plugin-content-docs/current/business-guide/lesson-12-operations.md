@@ -3,17 +3,17 @@ title: 'Lección 12: Xestionar o negocio'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lección 12: Xestionar o negocio
+# Lección 12: Xestionar o negocio {#lesson-12-running-the-business}
 
 Unha plataforma non é un proxecto que rematas: é un negocio que xestionas. Esta lección cobre as operacións do día a día para xestionar FitSite: soporte, facturación, mantemento e manter satisfeitos os clientes.
 
-## Onde o deixamos
+## Onde o deixamos {#where-we-left-off}
 
 FitSite está en produción e os clientes están rexistrándose. Agora tes que xestionar a operación de forma sustentable.
 
-## Operacións diarias
+## Operacións diarias {#daily-operations}
 
-### Monitorización
+### Monitorización {#monitoring}
 
 Comproba isto a diario (ou configura alertas):
 
@@ -22,7 +22,7 @@ Comproba isto a diario (ou configura alertas):
 - **Pagamentos fallidos**: Hai fallos de pagamento que requiran atención?
 - **Solicitudes de soporte**: Hai preguntas de clientes sen responder?
 
-### Soporte ao cliente
+### Soporte ao cliente {#customer-support}
 
 O teu enfoque de nicho é unha vantaxe aquí. Como todos os teus clientes son estudos de fitness, verás as mesmas preguntas repetidamente:
 
@@ -36,7 +36,7 @@ O teu enfoque de nicho é unha vantaxe aquí. Como todos os teus clientes son es
 
 Crea a túa base de coñecemento (iniciada na Lección 8) arredor destas preguntas recorrentes. Cada tícket de soporte que podería ter sido un artigo da base de coñecemento é un sinal para escribir ese artigo.
 
-### Niveis de soporte
+### Niveis de soporte {#support-tiers}
 
 A medida que medres, estrutura o soporte por plan:
 
@@ -48,9 +48,9 @@ A medida que medres, estrutura o soporte por plan:
 
 O [addon de tíckets de soporte](/addons/support-tickets) pode axudar a xestionar as solicitudes de soporte dentro da plataforma.
 
-## Operacións de facturación
+## Operacións de facturación {#billing-operations}
 
-### Pagamentos recorrentes
+### Pagamentos recorrentes {#recurring-payments}
 
 Ultimate Multisite xestiona automaticamente a facturación recorrente a través da túa pasarela de pagamento. O teu traballo é monitorizar:
 
@@ -58,7 +58,7 @@ Ultimate Multisite xestiona automaticamente a facturación recorrente a través 
 - **Dunning**: Configura unha lóxica automatizada de reintento a través da túa pasarela de pagamento (Stripe xestiona isto ben)
 - **Solicitudes de cancelación**: Entende por que marchan os clientes. Cada cancelación é feedback.
 
-### Xestionar subscricións
+### Xestionar subscricións {#managing-memberships}
 
 Vai a **Ultimate Multisite > Subscricións** para:
 
@@ -69,13 +69,13 @@ Vai a **Ultimate Multisite > Subscricións** para:
 
 Consulta [Xestionar subscricións](/user-guide/administration/managing-memberships) para a referencia completa.
 
-### Facturación
+### Facturación {#invoicing}
 
 Asegúrate de que as facturas se xeren correctamente para cada pagamento. Os clientes poden necesitar facturas para informar de gastos empresariais. Consulta [Xestionar pagamentos e facturas](/user-guide/administration/managing-payments-and-invoices).
 
-## Mantemento da plataforma
+## Mantemento da plataforma {#platform-maintenance}
 
-### Actualizacións de WordPress e plugins
+### Actualizacións de WordPress e plugins {#wordpress-and-plugin-updates}
 
 Como administrador da rede, es responsable de:
 
@@ -88,14 +88,14 @@ Como administrador da rede, es responsable de:
 Unha actualización rota afecta a todos os sitios de clientes da túa rede. Proba sempre primeiro as actualizacións nunha copia de staging da túa rede.
 :::
 
-### Seguridade
+### Seguridade {#security}
 
 - Mantén todo o software actualizado
 - Usa contrasinais fortes e autenticación de dous factores para as contas de administración
 - Monitoriza a actividade sospeitosa
 - Ten un plan para incidentes de seguridade
 
-### Rendemento
+### Rendemento {#performance}
 
 A medida que a túa rede medre, monitoriza:
 
@@ -105,9 +105,9 @@ A medida que a túa rede medre, monitoriza:
 
 Considera implementar caché (caché de páxina, caché de obxectos) e unha CDN se aínda non o fixeches. A [integración con Cloudflare](/user-guide/host-integrations/cloudflare) xestiona gran parte disto.
 
-## Xestión do ciclo de vida do cliente
+## Xestión do ciclo de vida do cliente {#customer-lifecycle-management}
 
-### Reducir a perda de clientes
+### Reducir a perda de clientes {#reducing-churn}
 
 A perda de clientes é a porcentaxe de clientes que cancelan cada mes. Para un negocio de subscrición, reducir a perda de clientes é tan importante como adquirir novos clientes.
 
@@ -119,7 +119,7 @@ A perda de clientes é a porcentaxe de clientes que cancelan cada mes. Para un n
 - Atoparon unha alternativa máis barata → reforza o teu valor de nicho
 - O seu negocio pechou → inevitable, pero fai seguimento disto por separado
 
-### Fomentar actualizacións de plan
+### Fomentar actualizacións de plan {#encouraging-upgrades}
 
 Débese animar os clientes de Starter que están tendo éxito a actualizar:
 
@@ -127,7 +127,7 @@ Débese animar os clientes de Starter que están tendo éxito a actualizar:
 - Envía correos electrónicos segmentados destacando funcionalidades do plan Growth das que se beneficiarían
 - Amosa o que construíron os clientes de Growth/Pro
 
-### Campañas de recuperación
+### Campañas de recuperación {#win-back-campaigns}
 
 Cando un cliente cancela:
 
@@ -135,30 +135,30 @@ Cando un cliente cancela:
 2. Aborda a súa preocupación se é posible
 3. Ofrece un desconto para volver (30-60 días despois da cancelación)
 
-## Rutinas semanais e mensuais
+## Rutinas semanais e mensuais {#weekly-and-monthly-routines}
 
-### Semanais
+### Semanais {#weekly}
 
 - Revisa novos rexistros e cancelacións
 - Responde a todos os tíckets de soporte abertos
 - Comproba o rendemento e o tempo de actividade da plataforma
 - Revisa calquera pagamento fallido
 
-### Mensuais
+### Mensuais {#monthly}
 
 - Analiza métricas clave (MRR, perda de clientes, novos clientes, actualizacións)
 - Aplica actualizacións de WordPress e plugins (despois da proba en staging)
 - Revisa e actualiza a base de coñecemento segundo os patróns de soporte
 - Envía un boletín ou actualización aos clientes (novas funcionalidades, consellos, novas da industria do fitness)
 
-### Trimestrais
+### Trimestrais {#quarterly}
 
 - Revisa os prezos fronte aos competidores e o feedback dos clientes
 - Avalía os deseños dos modelos: necesitan renovarse?
 - Avalía a capacidade de aloxamento: necesitas escalar?
 - Revisa e mellora a incorporación segundo os datos de activación
 
-## O que construímos nesta lección
+## O que construímos nesta lección {#what-we-built-this-lesson}
 
 - **Rutinas diarias de supervisión** para tempo de actividade, rexistros, pagamentos e soporte
 - **Unha estrutura de soporte por niveis** adaptada aos niveis do plan

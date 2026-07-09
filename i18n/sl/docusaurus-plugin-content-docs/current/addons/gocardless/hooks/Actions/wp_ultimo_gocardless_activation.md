@@ -4,13 +4,13 @@ title: Dejanje - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Action: wp_ultimo_gocardless_activation
+# Action: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
 
 Omogoči drugim delom plugin, da ob aktivaciji pripnejo svoje rutine
 
-### Od različice
+### Od različice {#since}
 
 - 1.9.6
-### Vir
+### Vir {#source}
 
 Definirano v [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/class-hooks.php#L83) v vrstici 83

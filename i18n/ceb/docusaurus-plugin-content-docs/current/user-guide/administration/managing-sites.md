@@ -3,7 +3,7 @@ title: Pagdumala sa mga Site
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Pagdumala sa mga Sites
+# Pagdumala sa mga Sites {#managing-sites}
 
 Ang mga Site (o subsites) mao ang sentro sa imong WaaS business. Ang Ultimate Multisite adunay 3 klase sa sites:
 
@@ -11,13 +11,13 @@ Ang mga Site (o subsites) mao ang sentro sa imong WaaS business. Ang Ultimate Mu
 - **Site Templates** — Mga pre-define nga sites nga pwede pilion sa mga customer isip nagsugod
 - **Main Site** — Imong pangunang network site
 
-## Pagtan-aw sa mga Sites
+## Pagtan-aw sa mga Sites {#viewing-sites}
 
 Magsulod sa **Ultimate Multisite → Sites** para makita ang tanang subsites sa imong network. Ang matag site gi-label base sa klase ug pwede ka magfilter base sa All Sites, Customer-Owned, Templates, o Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Pagdugang og Bag-ong Site
+## Pagdugang og Bag-ong Site {#adding-a-new-site}
 
 I-click ang **Add Site** button para makakabukod og bag-ong site. Kinahanglan nimo ihatag:
 
@@ -27,15 +27,15 @@ I-click ang **Add Site** button para makakabukod og bag-ong site. Kinahanglan ni
 
 Ang **Copy Site** option nagtugot kanimo sa paghimo og bag-ong site base sa naay existing site template. Kung i-enable nimo, pwede nimong pilion kung unsang template ang gamiton isip nagsugod. Siguraduhon nga i-enable ang **Copy Media on Duplication** para apil ang mga media files.
 
-## Pagdumala sa Nagigikan nga Site
+## Pagdumala sa Nagigikan nga Site {#managing-an-existing-site}
 
 I-click ang **Manage** sa bisan unsang site aron maabli ang **Edit Site** page. Dinhi nimo makita:
 
-### Basic Information
+### Basic Information {#basic-information}
 
 Ang ngalan sa site, klase, site ID, ug deskripsyon. Makita usab nimo ang domain nga gipa-mapa (mapped domain), konektadong membership, ug ang customer account nga nagpanag-iya sa site.
 
-### Site Options
+### Site Options {#site-options}
 
 I-configure ang mga abilidad ug limitasyon sa site:
 
@@ -47,7 +47,7 @@ I-configure ang mga abilidad ug limitasyon sa site:
 
 Sa default, ang mga website nagasunod sa mga limitasyon nga ghitak sa membership level. Ang pagset og limits sa lebel sa site maoy mag-override sa mga setting sa membership.
 
-### Mga Koneksyon (Associations)
+### Mga Koneksyon (Associations) {#associations}
 
 Sa ubos sa mga opsyon sa site makita nimo ang impormasyon bahin sa:
 
@@ -55,7 +55,7 @@ Sa ubos sa mga opsyon sa site makita nimo ang impormasyon bahin sa:
 - **Membership** kung unsa ang membership level sa site
 - **Customer account** nga konektado sa site
 
-### Right Sidebar (Pahapos nga Bahin sa Sayda)
+### Right Sidebar (Pahapos nga Bahin sa Sayda) {#right-sidebar}
 
 Sa tuig sa tuo, mahimo nimo:
 

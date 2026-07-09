@@ -3,11 +3,11 @@ title: تەمىنلىگۈچىگە ماسلاشقان پرامپتنى كەشلە
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# تەمىنلىگۈچىدىن خەۋەردار Prompt Caching
+# تەمىنلىگۈچىدىن خەۋەردار Prompt Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 **تەمىنلىگۈچىدىن خەۋەردار prompt caching** نى تونۇشتۇرىدۇ؛ بۇ ئوخشىمىغان LLM تەمىنلىگۈچىلەر ئارىسىدا prompt لارنى cache قىلىش ئارقىلىق API خىراجىتى ۋە كېچىكىشنى ئەلالاشتۇرىدۇ. ھەر بىر تەمىنلىگۈچىنىڭ cache مېخانىزمى ۋە سەپلىمىلىرى ئوخشىمايدۇ.
 
-## ئومۇمىي چۈشەنچە
+## ئومۇمىي چۈشەنچە {#overview}
 
 Prompt caching سىزگە تۆۋەندىكىلەرنى قىلىش ئىمكانىنى بېرىدۇ:
 
@@ -23,11 +23,11 @@ Prompt caching سىزگە تۆۋەندىكىلەرنى قىلىش ئىمكانى
 - **OpenRouter**: تەمىنلىگۈچىگە خاس caching
 - **Vertex Anthropic**: cache control بىلەن prompt caching
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini `cachedContents` API ئارقىلىق ئېنىق cache باشقۇرۇشنى تەمىنلەيدۇ.
 
-### سەپلىمە
+### سەپلىمە {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Cache قىلىنغان Prompt قۇرۇش
+### Cache قىلىنغان Prompt قۇرۇش {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Cache قىلىنغان Prompt نى ئىشلىتىش
+### Cache قىلىنغان Prompt نى ئىشلىتىش {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache ھايات دەۋرى
+### Cache ھايات دەۋرى {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini ئۈچۈن ئەڭ ياخشى ئەمەلىيەتلەر
+### Gemini ئۈچۈن ئەڭ ياخشى ئەمەلىيەتلەر {#best-practices-for-gemini}
 
 - **مۇۋاپىق TTL بەلگىلەڭ**: خىراجەت تېجەش بىلەن cache نىڭ كونىرىشى ئوتتۇرىسىدا تەڭپۇڭلۇق ساقلاڭ
 - **سىستېما prompt لارنى cache قىلىڭ**: ئوخشاش سىستېما prompt نى تەلەپلەر ئارىسىدا قايتا ئىشلىتىڭ
 - **cache ئىشلىتىلىشىنى كۆزىتىڭ**: قايسى cache لارنىڭ ئەڭ كۆپ ئىشلىتىلىدىغانلىقىنى ئىز قوغلاڭ
 - **مۇددىتى ئۆتكەن cache لارنى تازىلاڭ**: ئىشلىتىلمەيدىغان cache لارنى قەرەللىك ئۆچۈرۈڭ
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI ئاپتوماتىك TTL باشقۇرۇشى بىلەن prompt caching نى قوللايدۇ.
 
-### سەپلىمە
+### سەپلىمە {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Caching نى قوزغىتىش
+### Caching نى قوزغىتىش {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Headers
+### Cache Headers {#cache-headers}
 
 Azure OpenAI cache control ئۈچۈن HTTP headers ئىشلىتىدۇ:
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: بۇ تەلەپنى cache قىلماسلىق
 - `no_store`: cache قىلماسلىق ۋە قايتا ئىشلەتمەسلىك
 
-### Cache ئىشلىتىلىشىنى كۆزىتىش
+### Cache ئىشلىتىلىشىنى كۆزىتىش {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Azure OpenAI ئۈچۈن ئەڭ ياخشى ئەمەلىيەتلەر
+### Azure OpenAI ئۈچۈن ئەڭ ياخشى ئەمەلىيەتلەر {#best-practices-for-azure-openai}
 
 - **ئىزچىل prompt لارنى ئىشلىتىڭ**: ئوخشاش prompt لار caching دىن پايدا ئالىدۇ
 - **مۇۋاپىق TTL بەلگىلەڭ**: خىراجەت بىلەن يېڭىلىق ئوتتۇرىسىدا تەڭپۇڭلۇق ساقلاڭ
 - **cache ئۆلچەملىرىنى كۆزىتىڭ**: cache قۇرۇلۇشى بىلەن hit لارنى ئىز قوغلاڭ
 - **ئوخشاش تەلەپلەرنى توپلاڭ**: cache hit لارنى ئەڭ يۇقىرى چەككە يەتكۈزۈش ئۈچۈن تەلەپلەرنى گۇرۇپپىلاڭ
 
-## OpenRouter: تەمىنلىگۈچىگە خاس Caching
+## OpenRouter: تەمىنلىگۈچىگە خاس Caching {#openrouter-provider-specific-caching}
 
 OpenRouter ئاستىدىكى تەمىنلىگۈچىلەر (OpenAI، Anthropic قاتارلىقلار) ئارقىلىق caching نى قوللايدۇ.
 
-### سەپلىمە
+### سەپلىمە {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Caching نى ئىشلىتىش
+### OpenRouter Caching نى ئىشلىتىش {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### تەمىنلىگۈچىگە خاس تاللانمىلار
+### تەمىنلىگۈچىگە خاس تاللانمىلار {#provider-specific-options}
 
 ئوخشىمىغان تەمىنلىگۈچىلەرنىڭ cache مېخانىزملىرى ئوخشىمايدۇ:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter ئۈچۈن ئەڭ ياخشى ئەمەلىيەتلەر
+### OpenRouter ئۈچۈن ئەڭ ياخشى ئەمەلىيەتلەر {#best-practices-for-openrouter}
 
 - **تەمىنلىگۈچىڭىزنىڭ caching نى بىلىڭ**: ھەر بىر تەمىنلىگۈچىنىڭ مېخانىزمى ئوخشىمايدۇ
 - **caching ھەرىكىتىنى سىناڭ**: تاللىغان تەمىنلىگۈچىڭىز بىلەن caching نىڭ ئىشلەيدىغانلىقىنى دەلىللەڭ
 - **خىراجەتنى كۆزىتىڭ**: caching ئارقىلىق تېجەلگەن مىقدارنى ئىز قوغلاڭ
 - **ئىزچىل model لارنى ئىشلىتىڭ**: model ئالماشتۇرۇش cache hit لارنى بۇزىدۇ
 
-## Vertex Anthropic: Cache Control بىلەن Prompt Caching
+## Vertex Anthropic: Cache Control بىلەن Prompt Caching {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) ئېنىق cache control بىلەن prompt caching نى قوللايدۇ.
 
-### سەپلىمە
+### سەپلىمە {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic Caching نى ئىشلىتىش
+### Vertex Anthropic Caching نى ئىشلىتىش {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache كونترول تۈرلىرى
+### Cache كونترول تۈرلىرى {#cache-control-types}
 
 - **ephemeral**: ئىلتىماس داۋامىدا Cache قىلىش (كۆڭۈلدىكى)
 - **persistent**: كۆپ ئىلتىماس ئارىسىدا Cache قىلىش (قوللىسا)
 
-### Cache ئىشلىتىلىشىنى كۆزىتىش
+### Cache ئىشلىتىلىشىنى كۆزىتىش {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic ئۈچۈن ئەڭ ياخشى ئەمەلىيەتلەر
+### Vertex Anthropic ئۈچۈن ئەڭ ياخشى ئەمەلىيەتلەر {#best-practices-for-vertex-anthropic}
 
 - **ephemeral caching نى ئىشلىتىڭ**: يەككە session Cache قىلىشقا ماس كېلىدۇ
 - **max_tokens نى مۇۋاپىق تەڭشەڭ**: Cache چوڭلۇقى بىلەن خىراجەت ئارىسىدا تەڭپۇڭلۇق ساقلاڭ
 - **Cache ئۆلچەملىرىنى كۆزىتىڭ**: Cache ئۈنۈمىنى ئىز قوغلاڭ
 - **ئۆز workloadىڭىز بىلەن سىناڭ**: Cache قىلىشنىڭ سىزنىڭ ئىشلىتىش ئەھۋالىڭىزغا پايدا ئېلىپ كېلىدىغانلىقىنى دەلىللەڭ
 
-## تەمىنلىگۈچىلەر ئارا Cache ئىستراتېگىيەسى
+## تەمىنلىگۈچىلەر ئارا Cache ئىستراتېگىيەسى {#cross-provider-caching-strategy}
 
-### بىرلەشمە تەڭشەك
+### بىرلەشمە تەڭشەك {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### تەمىنلىگۈچىنى بايقاش
+### تەمىنلىگۈچىنى بايقاش {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### قايتما ئىستراتېگىيە
+### قايتما ئىستراتېگىيە {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## خىراجەتنى ئەلالاشتۇرۇش
+## خىراجەتنى ئەلالاشتۇرۇش {#cost-optimization}
 
-### تېجەمنى ھېسابلاش
+### تېجەمنى ھېسابلاش {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### ئەلالاشتۇرۇش ئۇسۇللىرى
+### ئەلالاشتۇرۇش ئۇسۇللىرى {#optimization-tips}
 
 - **چوڭ system prompt لارنى Cache قىلىڭ**: ئەڭ چوڭ خىراجەت تېجەش
 - **context نى قايتا ئىشلىتىڭ**: دائىم ئىشلىتىلىدىغان context ھۆججەتلىرىنى Cache قىلىڭ
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Cache ئۈنۈمىنى كۆزىتىڭ**: ئەمەلىي تېجەمنى ئىز قوغلاڭ
 - **TTL نى تەڭشەڭ**: خىراجەت بىلەن يېڭىلىق ئارىسىدا تەڭپۇڭلۇق ساقلاڭ
 
-## مەسىلىلەرنى ھەل قىلىش
+## مەسىلىلەرنى ھەل قىلىش {#troubleshooting}
 
-### Cache ئىشلىتىلمەيۋاتىدۇ
+### Cache ئىشلىتىلمەيۋاتىدۇ {#cache-not-being-used}
 
 - تەڭشەكتە Cache قىلىشنىڭ قوزغىتىلغانلىقىنى تەكشۈرۈڭ
 - prompt لارنىڭ ئوخشاش ئىكەنلىكىنى تەكشۈرۈڭ (Cache قىلىش ئېنىق ماس كېلىشنى تەلەپ قىلىدۇ)
 - Cache نىڭ ۋاقتى ئۆتۈپ كەتمىگەنلىكىنى دەلىللەڭ
 - تەمىنلىگۈچىگە خاس Cache چەكلىمىلىرىنى تەكشۈرۈڭ
 
-### Cache قۇرۇش مەغلۇپ بولۇۋاتىدۇ
+### Cache قۇرۇش مەغلۇپ بولۇۋاتىدۇ {#cache-creation-failing}
 
 - Cache چوڭلۇقىنىڭ تەمىنلىگۈچى چەكلىمىلىرى ئىچىدە ئىكەنلىكىنى دەلىللەڭ
 - Cache كونترول syntax نىڭ توغرا ئىكەنلىكىنى تەكشۈرۈڭ
 - تەمىنلىگۈچىنىڭ مودېلىڭىز ئۈچۈن Cache قىلىشنى قوللايدىغانلىقىغا كاپالەتلىك قىلىڭ
 - چەكلىمىلەر ئۈچۈن تەمىنلىگۈچى ھۆججەتلىرىنى كۆرۈپ چىقىڭ
 
-### كۈتۈلمىگەن خىراجەتلەر
+### كۈتۈلمىگەن خىراجەتلەر {#unexpected-costs}
 
 - Cache قۇرۇش بىلەن Cache ئوقۇش token لىرىنى كۆزىتىڭ
 - Cache نىڭ ھەقىقەتەن ئىشلىتىلىۋاتقانلىقىنى دەلىللەڭ
 - prompt ئۆزگىرىشلىرى سەۋەبلىك Cache miss نى تەكشۈرۈڭ
 - TTL ياكى Cache ئىستراتېگىيەسىنى تەڭشەشنى ئويلاڭ
 
-## تەمىنلىگۈچى سېلىشتۇرمىسى
+## تەمىنلىگۈچى سېلىشتۇرمىسى {#provider-comparison}
 
 | ئىقتىدار | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | خىراجەتنى ئازايتىش | 90% | 90% | تەمىنلىگۈچىگە باغلىق | 90% |
 | كۆزىتىش | تەپسىلىي | ئۆلچەملەر ئارقىلىق | تەمىنلىگۈچىگە باغلىق | usage ئارقىلىق |
 
-## كېيىنكى قەدەملەر
+## كېيىنكى قەدەملەر {#next-steps}
 
 1. **تەمىنلىگۈچىڭىزنى تاللاڭ**: ئېھتىياجىڭىزغا ئاساسەن تاللاڭ
 2. **Cache قىلىشنى تەڭشەڭ**: تەمىنلىگۈچىگە خاس Cache قىلىشنى تەڭشەپ چىقىڭ

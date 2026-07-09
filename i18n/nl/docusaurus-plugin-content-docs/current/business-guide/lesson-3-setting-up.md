@@ -3,32 +3,32 @@ title: 'Les 3: Het instellen van uw netwerk'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Les 3: Het Instellen van Uw Netwerk
+# Les 3: Het Instellen van Uw Netwerk {#lesson-3-setting-up-your-network}
 
 Het is tijd om te bouwen. In deze les installeert u Ultimate Multisite en configureert u de basis van het FitSite-netwerk. Elke beslissing die we hier nemen, is gericht op de fitnessniche.
 
-## Waar We Gebleven Zijn
+## Waar We Gebleven Zijn {#where-we-left-off}
 
 We hebben fitnessstudio's gekozen als onze niche en de kans gevalideerd. Nu zetten we dat idee om in een werkend platform.
 
-## Uw Hosting Kiezen
+## Uw Hosting Kiezen {#choosing-your-hosting}
 
 Uw hostingkeuze is belangrijker voor een nicheplatform dan voor één enkele website. U host niet één site – u host een netwerk dat zal groeien naar tientallen of zelfs honderden sites.
 
-### Waar U Op Moet Letten
+### Waar U Op Moet Letten {#what-to-look-for}
 
 - **WordPress Multisite ondersteuning**: Niet alle hosts zijn goed in multisite.
 - **Wildcard SSL**: Essentieel voor netwerken op basis van subdomeinen.
 - **Schaalbare middelen**: U heeft ruimte nodig om te groeien zonder dat u moet migreren.
 - **Ultimate Multisite integratie**: Geautomatiseerde domeinmapping en SSL besparen aanzienlijk operationeel werk.
 
-### Aanbevolen Aanpak
+### Aanbevolen Aanpak {#recommended-approach}
 
 Kies een host uit de lijst met [Compatibele Providers](/user-guide/host-integrations/closte). Deze zijn getest met Ultimate Multisite en bieden de integraties die u nodig heeft voor domeinmapping en SSL-automatisering.
 
 Voor FitSite zullen we een subdomeinconfiguratie gebruiken. Dit betekent dat de klantwebsites in eerste instantie zullen verschijnen als `studienaam.fitsite.com` voordat ze optioneel hun eigen domein koppelen.
 
-## WordPress Multisite Installeren
+## WordPress Multisite Installeren {#installing-wordpress-multisite}
 
 Als u nog geen WordPress Multisite-installatie heeft:
 
@@ -40,7 +40,7 @@ Als u nog geen WordPress Multisite-installatie heeft:
 Subdomeinen geven elke klantwebsite zijn eigen unieke adres (`studio.fitsite.com`) in plaats van een pad (`fitsite.com/studio`). Dit is professioneler voor uw klanten en voorkomt permalink-conflicten. Zie [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) voor een gedetailleerde vergelijking.
 :::
 
-## Ultimate Multisite Installeren
+## Ultimate Multisite Installeren {#installing-ultimate-multisite}
 
 Volg de handleiding [Ultimate Multisite installeren](/user-guide/getting-started/installing-ultimate-multisite) om:
 
@@ -53,11 +53,11 @@ Houd tijdens de setup wizard de FitSite-niche in gedachten:
 - **Bedrijfsnaam**: "FitSite" (of de door u gekozen merknaam)
 - **Bedrijfslogo**: Upload uw merklogo – dit verschijnt op facturen en e-mails
 
-## Configureren voor de Fitnessniche
+## Configureren voor de Fitnessniche {#configuring-for-the-fitness-niche}
 
 Nadat Ultimate Multisite is geïnstalleerd, maakt u de volgende niche-specifieke configuratiekeuzes:
 
-### Algemene Instellingen
+### Algemene Instellingen {#general-settings}
 
 Navigeer naar **Ultimate Multisite > Settings** en configureer:
 
@@ -65,7 +65,7 @@ Navigeer naar **Ultimate Multisite > Settings** en configureer:
 - **Default role**: Administrator – fitnessstudio-eigenaren hebben volledige controle over hun site-inhoud nodig
 - **Registration**: Schakel gebruikersregistratie in, zodat studio-eigenaren zichzelf kunnen aanmelden
 
-### E-mailconfiguratie
+### E-mailconfiguratie {#email-configuration}
 
 Uw systeem-e-mails moeten de taal van uw niche spreken. Navigeer naar **Ultimate Multisite > Settings > Emails** en pas aan:
 
@@ -75,7 +75,7 @@ Uw systeem-e-mails moeten de taal van uw niche spreken. Navigeer naar **Ultimate
 
 We verfijnen deze punten verder in Les 8 (Klantonboarding), maar het nu al zetten van de toon zorgt ervoor dat zelfs vroege testaanmeldingen niche-specifiek aanvoelen.
 
-### Domeinconfiguratie
+### Domeinconfiguratie {#domain-configuration}
 
 Als u een compatibele hostingprovider gebruikt, configureer dan nu de domeinmapping:
 
@@ -85,7 +85,7 @@ Als u een compatibele hostingprovider gebruikt, configureer dan nu de domeinmapp
 
 Dit zorgt ervoor dat wanneer we in de volgende les beginnen met het maken van templates en testsites, alles end-to-end werkt.
 
-## Het FitSite Netwerk Tot Nu Toe
+## Het FitSite Netwerk Tot Nu Toe {#the-fitsite-network-so-far}
 
 Aan het einde van deze les heeft u het volgende:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Klaar voor site-templates (volgende les)
 ```
 
-## Wat We Deze Les Hebben Gebouwd
+## Wat We Deze Les Hebben Gebouwd {#what-we-built-this-lesson}
 
 - **Een werkende WordPress Multisite** installatie in subdomeinmodus
 - **Ultimate Multisite geïnstalleerd** en geconfigureerd met FitSite branding

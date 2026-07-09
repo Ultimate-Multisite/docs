@@ -3,11 +3,11 @@ title: יכולות ניהול תוספים
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# יכולות ניהול תוספים
+# יכולות ניהול תוספים {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 מגיע עם **7 יכולות ניהול תוספים** שהעוזרת ה-AI יכולה להפעיל במהלך שיחה. יכולות אלה מספקות שליטה תכנותית על תוספי WordPress המותקנים דרך [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## סקירה כללית של היכולות
+## סקירה כללית של היכולות {#abilities-overview}
 
 | יכולת | Slug | תיאור |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 מגיע עם **7 יכולות ניהול תוספים** 
 | Install Plugin | `install_plugin` | פורס תוסף שנמצא בסנדבוקס לתיקיית התוספים האמיתית של WordPress. |
 | Activate Plugin | `activate_plugin` | מפעיל תוסף שנמצא בסנדבוקס בסביבת ה-wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 מנגנון התקנת התוספים מטפל בפעולות על מערכת הקבצים בעת פריסה או הסרה של תוספים. ההתנהגויות המרכזיות כוללות:
 
@@ -28,7 +28,7 @@ Gratis AI Agent v1.5.0 מגיע עם **7 יכולות ניהול תוספים** 
 - **עדכון (Update)**: מחליף קבצי תוסף קיימים. הוא מבטל את התוסף לפני הכתיבה כדי למנוע שגיאות של מצב חלקי.
 - **מחיקה לפי slug**: מזהה את ספריית התוסף לפי ה-slug, מבטל את ההפעלה בכל האתרים, ואז מסיר את התיקייה.
 
-### רישום מנגנון התקנה מותאם אישית
+### רישום מנגנון התקנה מותאם אישית {#registering-a-custom-install-handler}
 
 ניתן להתחבר למחזור חיי ההתקנה באמצעות הפעולות `gratis_ai_plugin_installer_before_install` ו-`gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 היכולות נרשמות דרך **מנגנון רישום האקוסיסטם של התוספים (plugin ecosystem registry)**. המנגנון ממפה את ה-slugs של היכולות למחלקות המטפלות בהן ומציג אותן למפצל הכלים של ה-AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 היכולות `create_plugin` ו-`update_plugin` מריצות אוטומטית את **HookScanner** על הקוד שנוצר. HookScanner מחזיר רשימה של Hooks (פעולות ופילטרים) של WordPress שנרשמו על ידי התוסף.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner מדלג אוטומטית על התיקיות `vendor/` ו-`node_modules/`.
 
-## Async Job Architecture
+## Async Job Architecture {#async-job-architecture}
 
 פעולות תוספים ארוכות הריצה (יצירה, התקנה) נשלחות כ**משימות אסינכרוניות (async jobs)** עם מעקב אחר ההתקדמות בזמן אמת. ממשק הצ'אט של ה-AI מבצע Polling אחר ההתקדמות ומזרים עדכוני סטטוס למשתמש:
 

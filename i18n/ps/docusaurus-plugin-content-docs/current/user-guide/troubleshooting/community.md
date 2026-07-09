@@ -3,7 +3,7 @@ title: ' ټولنه'
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community ته څنګه ملګرتیا جوړ کړئ
+# Ultimate Multisite Community ته څنګه ملګرتیا جوړ کړئ {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community دا یو ځای دی چې تاسو کولی شئ له نورو Ultimate Multisite کارکوونکو سره اړیکه ونیسئ او نصیحتونه، تجربې او نور څه شریک کړئ. د Ultimate Multisite Community رəسا پاتې کېد لپاره به به دې لینک ته لاړ شئ: https://community.ultimatemultisite.com/home.
 

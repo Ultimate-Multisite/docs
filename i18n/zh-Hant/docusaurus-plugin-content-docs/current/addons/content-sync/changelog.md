@@ -3,9 +3,9 @@ title: 內容同步變更日誌
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# 內容同步更新日誌
+# 內容同步更新日誌 {#content-sync-changelog}
 
-### Version 1.1.0 - 發布日期 2025-12-31
+### Version 1.1.0 - 發布日期 2025-12-31 {#version-110---released-on-2025-12-31}
 * 新增：支援同步所有文章類型（文章、頁面、自訂文章類型）。
 * 新增：內容選擇步驟中加入文章類型過濾。
 * 新增：來源網站選擇步驟——可從任何網站同步，不限主網站。
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * 變更：「Select Templates」步驟更名為「Select Data」。
 * 改進：Elementor 專屬程式碼現在僅在 elementor_library 文章類型下執行。
 
-### Version 1.0.0 - 發布日期 2025-12-19
+### Version 1.0.0 - 發布日期 2025-12-19 {#version-100---released-on-2025-12-19}
 * 初次發布。
 * 多步驟嚮導，用於範本和網站選擇。
 * 批次處理，並提供即時進度回饋。

@@ -3,9 +3,9 @@ title: 附加组件开发入门
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# 附加组件开发
+# 附加组件开发 {#addon-development}
 
-## 附加组件结构
+## 附加组件结构 {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## 主附加组件文件模板
+## 主附加组件文件模板 {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## 自定义模型示例
+## 自定义模型示例 {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## 管理页面集成
+## 管理页面集成 {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## 测试你的 Addon
+## 测试你的 Addon {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 扩展点
+## v2.13.0 扩展点 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 添加了多个扩展点，可用于与主权租户、结账域名或主机提供商 DNS 自动化集成的 Addon。
 
-### SSO 和主站点管理 URL
+### SSO 和主站点管理 URL {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### 结账表单基础域名
+### 结账表单基础域名 {#checkout-form-base-domains}
 
 当你的 Addon 提供额外的共享基础域名，并且这些域名应像结账表单 **Site URL** 域名一样运行，而不是作为每个站点的自定义映射时，请使用 `wu_checkout_form_base_domains`：
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite 会规范化这些主机，并跳过为它们自动创建的每站点映射域名记录。
 
-### 自动创建域名记录
+### 自动创建域名记录 {#automatic-domain-record-creation}
 
 当你的 Addon 需要阻止或延迟为新创建的站点自动创建域名记录时，请使用 `wu_should_create_domain_record_for_site`：
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 监听 `wu_add_subdomain` 的主机提供商集成可以在创建站点时创建提供商端 DNS 记录。如果没有为该操作注册任何集成，Ultimate Multisite 会跳过空的后台任务。
 
-## 后续步骤
+## 后续步骤 {#next-steps}
 
 - 查看 [Hooks 参考](/developer/hooks)，了解可用的操作和过滤器
 - 查看 [REST API 概览](/developer/rest-api/overview)，了解 API 集成

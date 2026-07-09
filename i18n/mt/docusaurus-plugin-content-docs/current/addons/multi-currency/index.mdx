@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency jippermetti lin-network tiegħek jaċċetta pagamenti f'diversi muniti. Jikkonverti l-prezzijiet awtomatikament billi juża rati tal-kambju diretti jew manwali, iħallik tissettja prezzijiet eżatti għal kull prodott għal kwalunkwe munita, u jidentifika l-munita preferuta ta' kull viżitatur permezz tal-ġeolokalizzazzjoni — kollox immaniġġjat minn Dashboard wieħed tal-amministrazzjoni.
 
-## Karatteristiċi Ewlenin
+## Karatteristiċi Ewlenin {#key-features}
 
 - **Konverżjoni awtomatika tar-rati tal-kambju** — il-prezzijiet jiġu kkonvertiti mill-munita bażi tiegħek billi jintużaw rati miġjuba mill-fornitur magħżul tiegħek
 - **Sovrascrizzjonijiet tal-ipprezzar għal kull prodott** — issettja prezzijiet eżatti speċifiċi għall-munita fuq kwalunkwe prodott biex taqbeż il-konverżjoni awtomatika
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency jippermetti lin-network tiegħek jaċċetta p
 - **Identifikazzjoni tal-munita bbażata fuq il-ġeolokalizzazzjoni** — tagħżel minn qabel awtomatikament il-munita li taqbel mal-pajjiż tal-viżitatur
 - **Dashboard tal-amministrazzjoni** — immaniġġja muniti attivi, rati tal-kambju, u settings tal-fornitur minn post wieħed
 
-## Rekwiżiti
+## Rekwiżiti {#requirements}
 
 - Ultimate Multisite 2.0.0 jew ogħla
 - Installazzjoni WordPress Multisite
 - PHP 7.4 jew ogħla
 
-## Installazzjoni
+## Installazzjoni {#installation}
 
 1. Tella' l-fajls tal-estensjoni fuq `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Attiva l-estensjoni permezz tal-iskrin **Estensjonijiet** f'WordPress (Attiva fin-Network)
 3. Mur lejn **Ultimate Multisite → Multi-Currency** biex tiftaħ id-Dashboard tal-amministrazzjoni
 4. Żid il-muniti li trid taċċetta u kkonfigura l-fornitur tar-rati tal-kambju tiegħek
 
-## Konfigurazzjoni
+## Konfigurazzjoni {#configuration}
 
-### Dashboard tal-Amministrazzjoni
+### Dashboard tal-Amministrazzjoni {#admin-dashboard}
 
 Id-Dashboard tal-amministrazzjoni ta' Multi-Currency (**Ultimate Multisite → Multi-Currency**) huwa l-post ċentrali biex:
 
@@ -44,7 +44,7 @@ Id-Dashboard tal-amministrazzjoni ta' Multi-Currency (**Ultimate Multisite → M
 - Tirrevedi r-rati kurrenti għall-muniti attivi kollha
 - Tissettja rati manwali meta l-fornituri awtomatiċi ma jkunux xierqa
 
-### Fornituri tar-Rati tal-Kambju
+### Fornituri tar-Rati tal-Kambju {#exchange-rate-providers}
 
 | Fornitur | Deskrizzjoni |
 |---|---|
@@ -55,7 +55,7 @@ Id-Dashboard tal-amministrazzjoni ta' Multi-Currency (**Ultimate Multisite → M
 
 Agħżel il-fornitur tiegħek taħt **Ultimate Multisite → Multi-Currency → Issettjar → Fornitur tar-Rati tal-Kambju**. Ir-rati jistgħu jiġu aġġornati manwalment fi kwalunkwe ħin jew skedati biex jaġġornaw awtomatikament.
 
-### Sovrascrizzjonijiet tal-Ipprezzar għal Kull Prodott
+### Sovrascrizzjonijiet tal-Ipprezzar għal Kull Prodott {#per-product-pricing-overrides}
 
 Meta l-konverżjoni awtomatika ma tkunx preċiża biżżejjed, tista' tissettja prezz eżatt għal munita speċifika fuq kwalunkwe prodott:
 
@@ -66,7 +66,7 @@ Meta l-konverżjoni awtomatika ma tkunx preċiża biżżejjed, tista' tissettja 
 
 Prodotti mingħajr sovrascrizzjoni jużaw il-prezz ikkonvertit mill-munita bażi tiegħek.
 
-### Qasam tas-Selettur tal-Munita fir-Reġistrazzjoni
+### Qasam tas-Selettur tal-Munita fir-Reġistrazzjoni {#currency-selector-signup-field}
 
 Il-qasam tas-selettur tal-munita jista' jiżdied mal-fluss tar-reġistrazzjoni/ħlas tiegħek sabiex il-klijenti jagħżlu l-munita preferuta tagħhom waqt ir-reġistrazzjoni:
 
@@ -76,7 +76,7 @@ Il-qasam tas-selettur tal-munita jista' jiżdied mal-fluss tar-reġistrazzjoni/�
 
 Il-munita magħżula tinħażen mal-abbonament u tintuża għall-kontijiet sussegwenti kollha.
 
-### Identifikazzjoni tal-Munita Bbażata fuq il-Ġeolokalizzazzjoni
+### Identifikazzjoni tal-Munita Bbażata fuq il-Ġeolokalizzazzjoni {#geolocation-based-currency-detection}
 
 Meta l-identifikazzjoni tal-ġeolokalizzazzjoni tkun attivata, l-addon jimmappja l-pajjiż tal-viżitatur ma' munita u jagħżilha minn qabel fil-qasam tas-selettur tal-munita. Biex tattiva:
 
@@ -86,27 +86,27 @@ Meta l-identifikazzjoni tal-ġeolokalizzazzjoni tkun attivata, l-addon jimmappja
 
 Jekk ma jeżisti l-ebda mmappjar għall-pajjiż ta' viżitatur, tintuża l-munita bażi tan-network bħala l-għażla ta' riżerva.
 
-## Mistoqsijiet Frekwenti
+## Mistoqsijiet Frekwenti {#frequently-asked-questions}
 
-### X'jiġri jekk fornitur tar-rati tal-kambju ma jkunx disponibbli?
+### X'jiġri jekk fornitur tar-rati tal-kambju ma jkunx disponibbli? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 L-addon jaqa' lura għall-aħħar rati miġjuba b'suċċess. Jekk qatt ma nġabu rati, jaqa' lura għar-rati manwali li kkonfigurajt. Huwa rakkomandat li tikkonfigura rati manwali bħala xibka ta' sigurtà.
 
-### Nista' nuża fornituri differenti għal muniti differenti?
+### Nista' nuża fornituri differenti għal muniti differenti? {#can-i-use-different-providers-for-different-currencies}
 
 Le — fornitur wieħed ikun attiv kull darba għall-muniti kollha. Uża **Manwali** jekk għandek bżonn kontroll sħiħ fuq rati individwali.
 
-### Il-ġeolokalizzazzjoni teħtieġ estensjoni separata?
+### Il-ġeolokalizzazzjoni teħtieġ estensjoni separata? {#does-geolocation-require-a-separate-plugin}
 
 Ma hija meħtieġa l-ebda estensjoni esterna tal-ġeolokalizzazzjoni. L-addon juża l-identifikazzjoni IP-għal-pajjiż integrata f'WordPress. Għal preċiżjoni ogħla, servizz dedikat tal-ġeolokalizzazzjoni jista' jiġi integrat permezz tal-filter hooks ipprovduti.
 
-### Is-sovrascrizzjonijiet għal kull prodott jiġu applikati qabel jew wara t-taxxa?
+### Is-sovrascrizzjonijiet għal kull prodott jiġu applikati qabel jew wara t-taxxa? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Is-sovrascrizzjonijiet għal kull prodott jistabbilixxu l-prezz qabel it-taxxa fil-munita fil-mira. It-taxxa tiġi kkalkulata fuq il-prezz tas-sovrascrizzjoni billi tintuża l-konfigurazzjoni tat-taxxa eżistenti tiegħek.
 
-## Reġistru tal-Bidliet
+## Reġistru tal-Bidliet {#changelog}
 
-### Verżjoni 1.0.0 — Maħruġa fit-2026-04-02
+### Verżjoni 1.0.0 — Maħruġa fit-2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Ġdid: Appoġġ għal diversi muniti b'konverżjoni awtomatika tar-rati tal-kambju
 - Ġdid: Sovrascrizzjonijiet tal-ipprezzar għal kull prodott għal prezzijiet eżatti speċifiċi għall-munita

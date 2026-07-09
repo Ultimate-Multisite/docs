@@ -3,19 +3,19 @@ title: 'Isomo rya 10: Umunsi wo gutangiza'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Isomo rya 10: Umunsi wo Gutangiza
+# Isomo rya 10: Umunsi wo Gutangiza {#lesson-10-launch-day}
 
 Byose byarubatswe. Mbere yo gufungura imiryango, iri somo rikunyura ku rutonde rwo kugenzura mbere yo gutangiza kugira ngo wizere ko nta kintu cyangiritse, kibuze, cyangwa giteye isoni.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 FitSite ifite inyandikorugero, gahunda, kwishyura, ikirango, gutangiza abakiriya bashya, n’ibiciro byose byamaze gutunganywa. Ubu tugenzura ko byose bikora maze tukabitangiza ku mugaragaro.
 
-## Urutonde rwo Kugenzura Mbere yo Gutangiza
+## Urutonde rwo Kugenzura Mbere yo Gutangiza {#pre-launch-checklist}
 
 Kora kuri buri kintu. Ntugire na kimwe usimbuka.
 
-### Ibikorwaremezo bya Platform
+### Ibikorwaremezo bya Platform {#platform-infrastructure}
 
 - [ ] Hosting irahamye kandi ikora neza no mu gihe hari ubusabe bwinshi
 - [ ] Wildcard SSL irakora kandi subdomains zose zitangwa binyuze kuri HTTPS
@@ -23,7 +23,7 @@ Kora kuri buri kintu. Ntugire na kimwe usimbuka.
 - [ ] Backups zaratunganyijwe kandi zarageragejwe (subiza nibura imwe kugira ngo ubyemeze)
 - [ ] Monitoring irahari -- uzamenya niba platform ihagaze gukora
 
-### Inyandikorugero
+### Inyandikorugero {#templates}
 
 - [ ] Inyandikorugero zose uko ari eshatu zifunguka neza ku mbuga nshya
 - [ ] Ibirimo by’agateganyo birafasha kandi nta makosa y’imyandikire bifite
@@ -32,7 +32,7 @@ Kora kuri buri kintu. Ntugire na kimwe usimbuka.
 - [ ] Umuvuduko wo gufungura paji urakwiriye (gerageza ukoresheje igikoresho nka GTmetrix cyangwa PageSpeed Insights)
 - [ ] Nta links zangiritse cyangwa assets zibuze ku nyandikorugero iyo ari yo yose
 
-### Gahunda n’Ibicuruzwa
+### Gahunda n’Ibicuruzwa {#plans-and-products}
 
 - [ ] Gahunda zose uko ari eshatu zirakora kandi ziragaragara
 - [ ] Ibisobanuro bya gahunda biraccurate kandi byihariye kuri niche
@@ -42,7 +42,7 @@ Kora kuri buri kintu. Ntugire na kimwe usimbuka.
 - [ ] Order bumps zigaragara neza mu gihe cyo kwishyura
 - [ ] Imipaka ya plugin na theme ishyirwa mu bikorwa neza hakurikijwe buri gahunda
 
-### Uburyo bwo Kwishyura
+### Uburyo bwo Kwishyura {#checkout-flow}
 
 - [ ] Kora igerageza ryuzuye ryo kwiyandikisha kuri buri gahunda (koresha test payment mode)
 - [ ] Guhitamo inyandikorugero byerekana inyandikorugero zikwiye kuri buri gahunda
@@ -52,7 +52,7 @@ Kora kuri buri kintu. Ntugire na kimwe usimbuka.
 - [ ] Umukiriya ashobora guhita yinjira ku rubuga rwe rushya ako kanya
 - [ ] Discount codes zikora neza
 
-### Ikirango
+### Ikirango {#branding}
 
 - [ ] Paji yo kwinjira yerekana ikirango cya FitSite
 - [ ] Admin dashboard yerekana ikirango cya FitSite
@@ -60,7 +60,7 @@ Kora kuri buri kintu. Ntugire na kimwe usimbuka.
 - [ ] Invoices zigaragara neza ziriho amakuru y’ubucuruzi bwawe
 - [ ] Urubuga rwo kwamamaza ruri live kandi rufite links zijya ku ifishi yo kwishyura
 
-### Gutangiza Abakiriya Bashya
+### Gutangiza Abakiriya Bashya {#onboarding}
 
 - [ ] Quick Start widget igaragara kuri dashboards z’abakiriya bashya
 - [ ] Links zose za Quick Start zijya kuri paji zikwiye
@@ -68,7 +68,7 @@ Kora kuri buri kintu. Ntugire na kimwe usimbuka.
 - [ ] Inyandiko za knowledge base zatangajwe kandi ziragerwaho
 - [ ] Paji ya Account yerekana amakuru ya gahunda akwiye n’amahitamo yo kuzamura urwego
 
-### Amategeko n’Ubucuruzi
+### Amategeko n’Ubucuruzi {#legal-and-business}
 
 - [ ] Amabwiriza agenga serivisi yatangajwe kandi afite link iva ku kwishyura
 - [ ] Politiki y’ibanga yatangajwe kandi iragerwaho
@@ -77,11 +77,11 @@ Kora kuri buri kintu. Ntugire na kimwe usimbuka.
 - [ ] Payment gateway iri muri live mode (si test mode)
 - [ ] Imiterere y’imisoro irakwiye ku karere kawe k’ububasha
 
-## Gutangiza Buhoro vs. Gutangiza Byuzuye
+## Gutangiza Buhoro vs. Gutangiza Byuzuye {#soft-launch-vs-hard-launch}
 
 Tekereza gutangiza mu byiciro bibiri:
 
-### Icyiciro cya 1: Gutangiza Buhoro
+### Icyiciro cya 1: Gutangiza Buhoro {#phase-1-soft-launch}
 
 Tumira ba nyiri studios za fitness 5-10 kwiyandikisha mbere yo gutangiza ku mugaragaro. Aba ni abakiriya bawe ba beta. Bahe igabanyirizwa rikomeye (50% kugabanyirizwa ubuzima bwose, cyangwa amezi 3 ku buntu) mu kuguranira:
 
@@ -91,7 +91,7 @@ Tumira ba nyiri studios za fitness 5-10 kwiyandikisha mbere yo gutangiza ku muga
 
 Ibi biguha ibitekerezo by’abakiriya nyabo n’imbuga ziri live zo kugaragaza mbere yo gufungurira rubanda.
 
-### Icyiciro cya 2: Gutangiza ku Mugaragaro
+### Icyiciro cya 2: Gutangiza ku Mugaragaro {#phase-2-public-launch}
 
 Iyo ibitekerezo byo mu gutangiza buhoro bimaze gushyirwamo:
 
@@ -100,7 +100,7 @@ Iyo ibitekerezo byo mu gutangiza buhoro bimaze gushyirwamo:
 - Tangira gushaka abakiriya (Isomo rya 11)
 - Bitangaze ku miyoboro ijyanye n’inganda za fitness
 
-## Ibikorwa byo ku Munsi wo Gutangiza
+## Ibikorwa byo ku Munsi wo Gutangiza {#launch-day-actions}
 
 Ku munsi ufungurira rubanda:
 
@@ -110,7 +110,7 @@ Ku munsi ufungurira rubanda:
 4. **Boneka** -- abakiriya bawe ba mbere nyabo bashobora gukenera ubufasha, kandi gusubiza vuba byubaka icyizere
 5. **Ishimire akanya gato** -- hanyuma usubire ku kazi
 
-## Ibishobora Kugenda Nabi
+## Ibishobora Kugenda Nabi {#what-can-go-wrong}
 
 Itegure ibi:
 
@@ -120,7 +120,7 @@ Itegure ibi:
 - **Imikorere mu gihe hari ubusabe bwinshi**: Niba ubonye traffic yazamutse cyane, menya uko wakongera ubushobozi bwa hosting yawe
 - **Urujijo rw’abakiriya**: Tegura knowledge base yawe n’imiyoboro y’ubufasha
 
-## Umuyoboro wa FitSite Kugeza Ubu
+## Umuyoboro wa FitSite Kugeza Ubu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Ibyo Twubatse muri Iri Somo
+## Ibyo Twubatse muri Iri Somo {#what-we-built-this-lesson}
 
 - **Urutonde rwuzuye rwo kugenzura mbere yo gutangiza** rukubiyemo ibikorwaremezo, ibirimo, ubwishyu, n’amategeko
 - **Ingamba zo gutangiza buhoro** kugira ngo ubone ibitekerezo nyabyo mbere yo gufungurira rubanda

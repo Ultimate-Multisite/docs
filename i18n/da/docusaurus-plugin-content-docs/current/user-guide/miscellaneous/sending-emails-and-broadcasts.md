@@ -3,13 +3,13 @@ title: Afsendelse af e-mails og udsendelser
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Afsendelse af e-mails og broadcasts (v2)
+# Afsendelse af e-mails og broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**VIGTIG BEMÆRKNING: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite leveres med en funktion, der giver dig mulighed for at kommunikere med dine kunder ved at sende en e-mail til en målrettet bruger eller en gruppe af brugere samt sende meddelelser på deres admin dashboard for at udsende meddelelser
 
-## Tilføj admin-meddelelser til dine kunders dashboard med Broadcasts
+## Tilføj admin-meddelelser til dine kunders dashboard med Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ved at bruge Ultimate Multisite-broadcastfunktionen kan du tilføje **admin-meddelelser** til din brugers subsite-admin dashboard.
 
@@ -51,7 +51,7 @@ Når du har oprettet din besked, kan du derefter trykke på knappen **Send**.
 
 Og det var det. Admin-meddelelsen bør straks blive vist på din brugers dashboard.
 
-## Send e-mails til dine kunder
+## Send e-mails til dine kunder {#send-emails-to-your-customers}
 
 Ved at bruge Ultimate Multisite-broadcastfunktionen kan du sende en e-mail til dine brugere. Du har mulighed for kun at sende e-mailen til specifikke brugere eller målrette en bestemt brugergruppe baseret på det produkt eller den plan, de er subscribed under.
 
@@ -81,11 +81,11 @@ Når du har oprettet din besked, kan du trykke på knappen **Send**.
 
 Og så nemt er det at sende en e-mail til dine slutbrugere ved hjælp af broadcastfunktionen.
 
-## System-e-mails
+## System-e-mails {#system-emails}
 
 System-e-mails i Ultimate Multisite er de **automatiske notifikationer**, der sendes af systemet efter bestemte handlinger som registrering, betaling, domænetilknytning osv. Disse e-mails kan redigeres eller ændres fra Ultimate Multisite-indstillinger. Det leveres også med en funktion, der giver dig mulighed for at nulstille og importere eksisterende indstillinger fra en anden Ultimate Multisite-installation.
 
-### Nulstilling & import
+### Nulstilling & import {#resetting--importing}
 
 Nye Ultimate Multisite-versioner samt add-ons kan og vil registrere nye e-mails fra tid til anden.
 
@@ -93,7 +93,7 @@ For at forhindre konflikter og andre problemer **tilføjer vi ikke de nye e-mail
 
 Dog kan superadmins og agenter importere disse nyregistrerede e-mails via importværktøjet. Denne proces vil oprette en ny system-e-mail med indholdet og konfigurationen fra den nye e-mail-skabelon, hvilket giver superadmin mulighed for at foretage de ændringer, de ønsker, eller beholde dem, som de er.
 
-#### Sådan importerer du system-e-mails
+#### Sådan importerer du system-e-mails {#how-to-import-system-emails}
 
 Gå til din Ultimate Multisite-indstillingsside og gå til fanen **E-mails**.
 
@@ -111,7 +111,7 @@ Derefter kan du slå indstillingerne Importér e-mails til/fra for at se, hvilke
 
 <!-- Skærmbillede ikke tilgængeligt: Nulstil og importér-modal med Importér e-mails-indstillingerne udvidet -->
 
-#### Nulstilling af system-e-mails
+#### Nulstilling af system-e-mails {#reseting-system-emails}
 
 Andre gange vil du opdage, at de ændringer, du har foretaget i en given e-mailskabelon, ikke længere fungerer for dig, og at du gerne vil nulstille den til dens **standardtilstand**.
 

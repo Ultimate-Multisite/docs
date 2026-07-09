@@ -4,11 +4,11 @@ title: Филтер - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Филтер: wu_apc_process_page_content
+# Филтер: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Омогућава програмерима да мењају коначни садржај
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Низ који садржи чуваре места. |
 | $placeholder_count | `int` | Број пронађених чувара места. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 1.4.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) у линији 46
 
 
-## Враћа
+## Враћа {#returns}
 Садржај након измене.

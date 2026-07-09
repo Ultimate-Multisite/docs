@@ -3,15 +3,15 @@ title: 'Isifundo 14: Yini Elandelayo'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Isifundo 14: Okulandelayo
+# Isifundo 14: Okulandelayo {#lesson-14-what-comes-next}
 
 Usuwakhe inkundla yamawebhusayithi e-niche kusukela ekuqaleni. I-FitSite isiyasebenza, isiza ama-studio okujima, futhi ikhiqiza imali engenayo ephindaphindayo. Lesi sifundo sokugcina sibheka ukuthi ungaya kuphi kusukela lapha.
 
-## Lapho Esigcine Khona
+## Lapho Esigcine Khona {#where-we-left-off}
 
 I-FitSite iyibhizinisi elisebenzayo elinamakhasimende, imisebenzi, kanye nomkhondo wokukhula. Manje sicabanga ngokulandelayo.
 
-## Inethiwekhi Ephelele ye-FitSite
+## Inethiwekhi Ephelele ye-FitSite {#the-complete-fitsite-network}
 
 Nakhu konke esikwakhile ezifundweni eziyi-14:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Inketho 1: Ngena Ngokujulile Ku-Niche Yakho
+## Inketho 1: Ngena Ngokujulile Ku-Niche Yakho {#option-1-go-deeper-in-your-niche}
 
 Ngaphambi kokunwebeka uye kuma-niche amasha, cabanga ngokungena ngokujulile emkhakheni wokujima:
 
-### Ama-Sub-Niche
+### Ama-Sub-Niche {#sub-niches}
 
 - **Ama-studio e-yoga** -- ama-template akhethekile anezici zokuzindla, ama-retreat, nama-workshop
 - **Ama-CrossFit boxes** -- ukulandelela i-WOD, imiphumela yemincintiswano, izici zomphakathi
@@ -59,7 +59,7 @@ Ngaphambi kokunwebeka uye kuma-niche amasha, cabanga ngokungena ngokujulile emkh
 
 I-sub-niche ngayinye ingaba nama-template ayo futhi mhlawumbe nomkhiqizo wayo, konke kusebenza kunethiwekhi efanayo ye-Ultimate Multisite.
 
-### Izici Ezisezingeni Eliphezulu
+### Izici Ezisezingeni Eliphezulu {#premium-features}
 
 Yakha izici ama-studio okujima azokhokhela okwengeziwe ngazo:
 
@@ -68,14 +68,14 @@ Yakha izici ama-studio okujima azokhokhela okwengeziwe ngazo:
 - **Ama-template ebhulogi yokujima** -- izakhiwo zokuqukethwe esezakhiwe kusengaphambili zokumaketha okuqukethwe kokujima
 - **Ukuhlanganiswa kwezinkundla zokuxhumana** -- ukuthumela ngokuzenzakalela amashejuli amakilasi nezibuyekezo
 
-### Ukunwebeka Ngokwendawo
+### Ukunwebeka Ngokwendawo {#geographic-expansion}
 
 Uma uqale endaweni yangakini, nwebekela ku:
 
 - Amanye amadolobha ezweni lakho
 - Amanye amazwe (sebenzisa [izici zokwenziwa kwasendaweni ze-Ultimate Multisite](/user-guide/localization/translating) ukusekela izilimi eziningi)
 
-## Inketho 2: Nwebekela Kuma-Niche Aseduze
+## Inketho 2: Nwebekela Kuma-Niche Aseduze {#option-2-expand-to-adjacent-niches}
 
 Inqubo oyilandele kuma-studio okujima isebenza kunoma iyiphi i-niche. I-niche yakho yesibili ilula ngoba usuvele unakho:
 
@@ -83,7 +83,7 @@ Inqubo oyilandele kuma-studio okujima isebenza kunoma iyiphi i-niche. I-niche ya
 - Isipiliyoni sokusebenza
 - Uhlelo lokusebenza olufakazelwe
 
-### Ama-Niche Aseduze Nokujima
+### Ama-Niche Aseduze Nokujima {#adjacent-niches-to-fitness}
 
 - **Impilo enhle nama-spa** -- abelaphi bemassage, ama-day spa, izikhungo zempilo enhle
 - **Amakilabhu ezemidlalo** -- amaqembu ezemidlalo angakhokhelwa, amaligi, amakilabhu okuzijabulisa
@@ -91,7 +91,7 @@ Inqubo oyilandele kuma-studio okujima isebenza kunoma iyiphi i-niche. I-niche ya
 
 Lezi zinezithameli ezihambisanayo nokujima, ngakho ukumaketha kwakho nobambiswano kungase kudlulele kuzo.
 
-### Ama-Niche Amasha Ngokuphelele
+### Ama-Niche Amasha Ngokuphelele {#completely-new-niches}
 
 Sebenzisa uhlaka oluvela Esifundweni 2 ukuhlola noma iyiphi i-niche:
 
@@ -108,7 +108,7 @@ I-niche ngayinye entsha idinga:
 
 Ingqalasizinda yenkundla, ukukhokhisa, nezinqubo zokusebenza zihlala zifana.
 
-## Inketho 3: Yakha Inkundla Yezinkundla
+## Inketho 3: Yakha Inkundla Yezinkundla {#option-3-build-a-platform-of-platforms}
 
 Uma usukhule ngezinga elikhulu, ungasebenzisa imikhiqizo eminingi ye-niche kunethiwekhi eyodwa ye-Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Uma usukhule ngezinga elikhulu, ungasebenzisa imikhiqizo eminingi ye-niche kunet
 
 Umkhiqizo ngamunye unama-template awo, ama-plan awo, nokumaketha kwawo, kodwa babelana ngengqalasizinda, ukukhokhisa, nezinqubo zokusebenza. Yilapho umnotho we-Ultimate Multisite uba namandla khona -- inkundla eyodwa, ama-vertical amaningi.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Ukuze kube nokwehlukaniswa okuphelele phakathi kwama-niche, cabanga nge-[addon ye-Multi-Network](/addons/multinetwork) ekuvumela ukuthi usebenzise amanethiwekhi amaningi e-WordPress kusukela ekufakweni okukodwa.
 
-## Inketho 4: Thengisa Ibhizinisi
+## Inketho 4: Thengisa Ibhizinisi {#option-4-sell-the-business}
 
 Inkundla yamawebhusayithi e-niche enemali engenayo ephindaphindayo, ukushiya okuphansi kwamakhasimende, kanye nesikhundla semakethe esicacile iyimpahla ebalulekile. Amabhizinisi e-SaaS ngokuvamile athengiswa ngo-3-5x wemali engenayo yonyaka.
 
@@ -134,7 +134,7 @@ I-FitSite enamakhasimende angu-200 ku-$89 ARPU:
 
 Lokhu akuwona umphumela oqinisekisiwe, kodwa kungumphumela ongokoqobo wenkundla ye-niche ephethwe kahle.
 
-## Okufundile
+## Okufundile {#what-you-have-learned}
 
 Lesi sifundo sikufundise inqubo ephindaphindekayo:
 
@@ -150,7 +150,7 @@ Lesi sifundo sikufundise inqubo ephindaphindekayo:
 
 I-niche iyisu. Inkundla iyithuluzi. Ultimate Multisite yenza ithuluzi libe nokwenzeka. Ukuqonda kwakho i-niche kuyenza ibe yigugu.
 
-## Qala Ukwakha
+## Qala Ukwakha {#start-building}
 
 Uma ulandele kanye ne-FitSite, unenkundla esebenzayo. Uma ufunde ukuze uthole i-niche yakho, buyela ku-[Isifundo 2: Ukukhetha I-Niche Yakho](lesson-2-picking-your-niche) bese uqala inqubo ye-vertical oyikhethile.
 

@@ -3,13 +3,13 @@ title: Configuración de pagamentos manuais
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Configuración de pagamentos manuais (v2)
+# Configuración de pagamentos manuais (v2) {#setting-up-manual-payments-v2}
 
 _**NOTA IMPORTANTE: Este artigo refírese a Ultimate Multisite versión 2.x.**_
 
 Os pagamentos manuais son unha forma de ofrecer outros métodos de pagamento se **Stripe** ou **PayPal** non están dispoñibles para os teus usuarios. Pode ser unha transferencia bancaria ou calquera outro método de pagamento dispoñible localmente para os teus usuarios.
 
-## Como activar os pagamentos manuais
+## Como activar os pagamentos manuais {#how-to-enable-manual-payments}
 
 Configurar o pagamento manual é moi sinxelo. Só tes que activalo en pasarelas de pagamento e introducir instrucións detalladas sobre como o usuario debe enviar o pagamento.
 
@@ -31,7 +31,7 @@ E tamén recibirán unha mensaxe na túa páxina de **Thank You** coas túas ins
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Confirmar pagamentos manuais
+## Confirmar pagamentos manuais {#confirming-manual-payments}
 
 Para confirmar un pagamento manual, vai ao menú **Payments** da barra esquerda. Alí podes ver todos os pagamentos da túa rede e os seus detalles, incluído o seu **estado**. Un pagamento manual sempre terá o estado **Pendente** ata que o cambies manualmente.
 

@@ -3,7 +3,7 @@ title: PayPal nustatymas
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal bramkų nustatymas (v2)
+# PayPal bramkų nustatymas (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 
@@ -13,13 +13,13 @@ Tinkamai kaip ir Stripe, PayPal yra labai populiarus online mokėjimai, ypač Wo
 
 Pagalba, kad gautumėte reikiamas API kredencijas šiai integracijai, turite **PayPal Business paskyrą**.
 
-## PayPal aktyvavimas jūsų tinklu
+## PayPal aktyvavimas jūsų tinklu {#enabling-paypal-on-your-network}
 
 Kad įveiktu PayPal kaip prieinamą mokėjimo būdą savo tinklu, eikite į **Ultimate Multisite > Settings > Payments** (Nustatymai > Mokėjimai) ir pažymėkite lauką šalia PayPal.
 
 ![PayPal aktyvavimas aktyvijuojamu mokėjimo bramkų](/img/config/settings-payment-gateways.png)
 
-## Naudojant vadiną nustatymo žaizdį (wizard)
+## Naudojant vadiną nustatymo žaizdį (wizard) {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 pridėjo vadinį PayPal nustatymo žaidį į mokėjimo bramkų nustatyjimus. Po aktyvuotojo PayPal, naudokite šį žaidįje **Ultimate Multisite > Settings > Payments** pasirinkti, kaip norite sujungti bramkę ir patvirtinti, kokie kredencijai vis dar reikalinga prieš išsaugodami.
 
@@ -30,7 +30,7 @@ Ultimate Multisite 2.10.0 pridėjo vadinį PayPal nustatymo žaidį į mokėjimo
 
 Jei neperkriejote OAuth opsinio wizard'e, užpildykite rankinio kredentales įvedimo procesą iki aiškiau. Gateway veikia su tą pačia PayPal Business API kredentalėmis kaip ir kitose Ultimate Multisite 2.x versijose.
 
-## Kai gauti PayPal API kredentales
+## Kai gauti PayPal API kredentales {#getting-the-paypal-api-credentials}
 
 Kai PayPal bus įjungtas kaip mokėjimo gateway, turėsite užpildyti laukus: **PayPal API Username**, **PayPal API Password** ir **PayPal API Signature**.
 

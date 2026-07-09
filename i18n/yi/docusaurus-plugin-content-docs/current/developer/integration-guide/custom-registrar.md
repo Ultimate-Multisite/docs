@@ -3,13 +3,13 @@ title: בויען אַן אייגענע רעגיסטראַר־אינטעגראַ
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# בויען אַ אייגענע רעגיסטראַטאָר־אינטעגראַציע
+# בויען אַ אייגענע רעגיסטראַטאָר־אינטעגראַציע {#building-a-custom-registrar-integration}
 
 דער דאָמיין־פארקויפער־אַדאָן ניצט אַן **אינטעגראַציע־רעגיסטרי** מוסטער. יעדער רעגיסטראַטאָר איז אַ PHP קלאַס וואָס אימפּלאַמענטירט `Domain_Selling_Capability` און רעגיסטרירט זיך דורך דעם `wu_domain_seller_register_capabilities` אַקציע־הוק.
 
 דער וועגווײַזער ווײַזט ווי אַרײַנצובינדן אַן אייגענעם רעגיסטראַטאָר.
 
-## דער צובינד
+## דער צובינד {#the-interface}
 
 אייער קלאַס מוז אימפּלאַמענטירן `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` און פֿאַרברייטערן `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### אָפּציאָנעלע מעטאָדן
+### אָפּציאָנעלע מעטאָדן {#optional-methods}
 
 אימפּלאַמענטירט די כּדי אויפֿצושליסן נאָך פֿעיִקייטן. דער אַדאָן דערקענט שטיצע דורך `method_exists()`:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### קאָנווענץ פֿאַר צוריקגעבן־ווערט
+### קאָנווענץ פֿאַר צוריקגעבן־ווערט {#return-value-convention}
 
 אַלע מעטאָדן געבן צוריק אַן array מיט לכל־הפּחות אַ `success` שליסל:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## רעגיסטרירן אייער פֿעיִקייט
+## רעגיסטרירן אייער פֿעיִקייט {#registering-your-capability}
 
 רעגיסטרירט אייער קלאַס ניצנדיק די `wu_domain_seller_register_capabilities` אַקציע:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## צולייגן צוטריט־דאַטן־פעלדער צום וויזאַרד
+## צולייגן צוטריט־דאַטן־פעלדער צום וויזאַרד {#adding-credential-fields-to-the-wizard}
 
 כּדי צו לאָזן אַדמינים אַרײַנגעבן צוטריט־דאַטן דורך דעם איינשטעל־וויזאַרד, רעגיסטרירט אייער אינטעגראַציע:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## הוקס פֿאַר אַקציעס נאָך רעגיסטראַציע
+## הוקס פֿאַר אַקציעס נאָך רעגיסטראַציע {#hooks-for-post-registration-actions}
 
 ניצט די אַקציעס צו אויסלייזן וועבהוקס, צושטעלונג, מעלדונגען, אָדער CRM דערהײַנטיקונגען:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## לאָגירן
+## לאָגירן {#logging}
 
 שרײַבט צו אייער צושטעלער־ספּעציפֿישן לאָג־קאַנאַל ניצנדיק `wu_log_add()`:
 

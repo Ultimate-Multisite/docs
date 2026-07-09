@@ -3,13 +3,13 @@ title: Obvestilo o odstranitvi načina gradnje spletnega mesta
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Obvestilo o odstranitvi moči Site Builder Mode
+# Obvestilo o odstranitvi moči Site Builder Mode {#site-builder-mode-removal-notice}
 
 **Site Builder mode je odstranjen v Superdav AI Agent v verziji v1.12.0.** Če ste uporabljali Site Builder mode, morate prehoditi na **Setup Assistant agent** za ustvarjanje tem in urejanje spletnih strani.
 
-## Kaj se je zgodilo?
+## Kaj se je zgodilo? {#what-happened}
 
-### Site Builder Mode (Starostni)
+### Site Builder Mode (Starostni) {#site-builder-mode-legacy}
 
 Site Builder mode je bil wizard-baziran interfejs za:
 
@@ -18,7 +18,7 @@ Site Builder mode je bil wizard-baziran interfejs za:
 - Izbiro teme
 - Uporabo začetnega vsebine
 
-### Kaj ga zamenja?
+### Kaj ga zamenja? {#what-replaced-it}
 
 **Setup Assistant agent** zdaj obravnava vso funkcionalnost Site Builder mode s:
 
@@ -27,15 +27,15 @@ Site Builder mode je bil wizard-baziran interfejs za:
 - integracijo z onboardingom Theme Builderja
 - trajnim memorijo `site_brief` za prihodnje seanse
 
-## Če ste uporabljali Site Builder Mode
+## Če ste uporabljali Site Builder Mode {#if-you-were-using-site-builder-mode}
 
-### Vaše strani so varno
+### Vaše strani so varno {#your-sites-are-safe}
 
 - Strani ustvarjene s Site Builder mode nadaljujejo delovati
 - Ni izgubljen podatki ali prekinitev strani
 - Lahko nadaljevate upravljanje svojih strani običajno
 
-### Prehod na Setup Assistant agent
+### Prehod na Setup Assistant agent {#migrate-to-setup-assistant-agent}
 
 Za novo nastavitve strani ali spremembe tem uporabite Setup Assistant agent:
 
@@ -51,7 +51,7 @@ ali
 
 Setup Assistant agent ponuja isto funkcionalnost z več fleksibilnosti.
 
-## Primerjava: Site Builder vs. Setup Assistant
+## Primerjava: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Funkcija | Site Builder (Odstranjen) | Setup Assistant (Novo) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent ponuja isto funkcionalnost z več fleksibilnosti.
 | Prihodnje seanse | Ponovni postavitvi | Uporaba shranjene `site_brief` |
 | Fleksibilnost | Fiksna potek delovanja | Adaptiv razgovor |
 
-## Prehod na Setup Assistant agent
+## Prehod na Setup Assistant agent {#migrating-to-setup-assistant-agent}
 
-### Za nove strani
+### Za nove strani {#for-new-sites}
 
 Namesto uporabo Site Builder mode:
 
@@ -76,7 +76,7 @@ Namesto uporabo Site Builder mode:
    - Generiranje teme
    - Početna konfiguracija
 
-### Za obstoječa spletna mesta
+### Za obstoječa spletna mesta {#for-existing-sites}
 
 Če imate obstojno spletno mesto iz Site Builder mode:
 
@@ -85,7 +85,7 @@ Namesto uporabo Site Builder mode:
 3. Agent Pomaga za nastavitvami vam bo pomagal ustvariti novo temo
 4. Vaš podatki o spletnem mestu ostajajo neimenovani
 
-### Za spremembe teme
+### Za spremembe teme {#for-theme-changes}
 
 Namesto izbire teme v Site Builder mode:
 
@@ -95,9 +95,9 @@ Namesto izbire teme v Site Builder mode:
    - Generiral prilagojeno temo
    - Aktiviral jo na vašem mestu
 
-## Ključne razlike
+## Ključne razlike {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Izberi šablon
@@ -106,7 +106,7 @@ Namesto izbire teme v Site Builder mode:
 4. Končno
 ```
 
-### Agent Pomaga za nastavitvami (Setup Assistant Agent)
+### Agent Pomaga za nastavitvami (Setup Assistant Agent) {#setup-assistant-agent}
 
 ```
 1. Opisaj namen vaše spletne strani
@@ -117,40 +117,40 @@ Namesto izbire teme v Site Builder mode:
 6. Kratko opomba o mestu je shranjena za prihodnje seanse
 ```
 
-## Prednosti Agent Pomaga za nastavitvami (Setup Assistant Agent)
+## Prednosti Agent Pomaga za nastavitvami (Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Več fleksibilno
+### Več fleksibilno {#more-flexible}
 
 - Opisujte svoje spletno mesto v naravnem jeziku
 - Dobite prilagojene priporočbe
 - Prilagodite se vašim specifičnim potrebam
 
-### Boljša prilagodljivost
+### Boljša prilagodljivost {#better-customization}
 
 - Generiranje prilagojene teme
 - Odločanja o sistemu dizajna (Design System)
 - Trajno shranjevanje dizajnerskih tokenov (design tokens)
 
-### Trajna memorija
+### Trajna memorija {#persistent-memory}
 
 - Vaš `site_brief` je shranjen
 - Prihodnji agenti bodo razumeli vaše spletno mesto
 - Ni potrebno ponavljati informacije o nastavitvah pri vsakoj seanci
 
-### Integriran delovni tok (Integrated Workflow)
+### Integriran delovni tok (Integrated Workflow) {#integrated-workflow}
 
 - Onboarding za temo Builderja
 - Veščina estetike Design Systema
 - Možnost nadzorov vidljivosti (Visibility controls)
 - Vse stvari deluje skoordinirano in brez težav
 
-## Reševanje težav (Troubleshooting)
+## Reševanje težav (Troubleshooting) {#troubleshooting}
 
-### Ne najdem Site Builder mode
+### Ne najdem Site Builder mode {#i-cant-find-site-builder-mode}
 
 Site Builder mode je odstranjen. Uporabite agent Pomaga za nastavitvami:
 
-### I želim ponovno ustvariti spletno mesto iz Site Builderja
+### I želim ponovno ustvariti spletno mesto iz Site Builderja {#i-want-to-recreate-a-site-from-site-builder}
 
 To lahko ponovno ustvarite z agentom Setup Assistant:
 
@@ -159,7 +159,7 @@ To lahko ponovno ustvarite z agentom Setup Assistant:
 3. Agent bo generiral podobno temo
 4. Vaš `site_brief` bo shranjen za prihodnje reference
 
-### Moj obstoječi Site Builder spletni strani ne deluje
+### Moj obstoječi Site Builder spletni strani ne deluje {#my-existing-site-builder-site-isnt-working}
 
 Obstojna spletna mesta ustvarjena z načinom Site Builderja nadaljujejo delovati. Če imate težave:
 
@@ -168,7 +168,7 @@ Obstojna spletna mesta ustvarjena z načinom Site Builderja nadaljujejo delovati
 3. Preverite WordPress error logs
 4. Stikajte se z podporo, če problemi vztrajajo
 
-### Ali lahko nadaljujem z uporabo mojih starih temeljcev Site Builderja?
+### Ali lahko nadaljujem z uporabo mojih starih temeljcev Site Builderja? {#can-i-still-use-my-old-site-builder-templates}
 
 Temeljci Site Builderja ni več na voljo. Vendar:
 
@@ -176,14 +176,14 @@ Temeljci Site Builderja ni več na voljo. Vendar:
 - Lahko ponovno ustvarite podobna spletna mesta z agentom Setup Assistant
 - Agent Setup Assistant ponuja več možnosti prilagodbe
 
-## Naslednji koraki
+## Naslednji koraki {#next-steps}
 
 1. **Za nova spletne mesta**: Uporabite agent Setup Assistant
 2. **Za obstojna spletna mesta**: Nadaljujte z uporabo kot so
 3. **Za spremembe teme**: Zahtevajte pomoč od agenta Setup Assistant
 4. **Za izboljšanje dizajna**: Uporabite veščino Design System Aesthetics
 
-## Povezani področja
+## Povezani področja {#related-topics}
 
 - **Onboarding Theme Builderja**: Voženo nastavitve za prilagojene teme
 - **Agent Setup Assistant**: Voženo nastavitve spletne strani z agentom

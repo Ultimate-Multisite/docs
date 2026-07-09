@@ -3,17 +3,17 @@ title: 'Lezioa 9: Prezioa zaharrak'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Ustea 9: Prezioak eta Gainara
+# Ustea 9: Prezioak eta Gainara {#lesson-9-pricing-for-profit}
 
 Eskaintza 5-ean FitSite plan-ek beste prezioak ezartu dugu. Orain, merkatuaren merkataritza estrategiak estaltzeko teknike batzuk erabilizuz, revenusak handitu, upgradeak emateko eta churn (irudiak aukeratzeko) azaltzeko.
 
-## Nondorean Orain Zuztitu Dugu
+## Nondorean Orain Zuztitu Dugu {#where-we-left-off}
 
 FitSite-ek planak, templateak, checkouta, brandingak eta onboardingak dagoen. Lehen prezioak bulanatu $49/$99/$199 eramania izan ziren. Orain hori prezioak handiagoz lan egin dezaten dugu.
 
-## Niche Plataformakako Prezio Prinsipialak
+## Niche Plataformakako Prezio Prinsipialak {#pricing-principles-for-niche-platforms}
 
-### Erabendu Ardi, Ez Kostu
+### Erabendu Ardi, Ez Kostu {#price-on-value-not-cost}
 
 Zerbitzuaren kostuak irudiari $5-$15 baina pertsona site bat. Horrak pretziokoa $20 ez duzaintzen du. Sizkizki hosting ez dutena saldu egiten duzu. Saldu egiten duzu:
 
@@ -24,7 +24,7 @@ Zerbitzuaren kostuak irudiari $5-$15 baina pertsona site bat. Horrak pretziokoa 
 
 Zerbitzuaren erabilera onartu behar duen ardiari, ez erabilera.
 
-### Alternatibezkatuta Ekitatu (Anchor)
+### Alternatibezkatuta Ekitatu (Anchor) {#anchor-to-alternatives}
 
 Fitness studioaren propietaria FitSitea ebaloratzean, hori compareatzen du:
 
@@ -44,12 +44,12 @@ Zuzendararen prezioak adierazten duen horrek adeti eta iradokizun azaltzen du. P
 
 Checkout form-eko **Period Selection** field bat gehitu, guztiak lekuen iradokizuna eta mensual iradokizun artean aldatu dezaten. [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) ikusi.
 
-### Nola funtzionatzen du annual prezioak?
+### Nola funtzionatzen du annual prezioak? {#implementing-price-variations}
 
 - **Zure partean**: Aurrekiko diru, txikiago churn (annualan iradokizuna egiten dituzten klientak erabilgarri ez dira zeharren middlean cancelatzeko).
 - **Gehiago**: Ahorrak gertu, aurrekontuaren iradokizun ezagutza.
 
-## Setup Fees (Adeti-ezpenak)
+## Setup Fees (Adeti-ezpenak) {#why-annual-pricing-works}
 
 Handiaren konfiguratura edo adeti behar dituzten planak dira, horiek bitartean batzuen adeti-ezpena kontuan hartu:
 
@@ -59,7 +59,7 @@ Handiaren konfiguratura edo adeti behar dituzten planak dira, horiek bitartean b
 
 Plan baten prezio zeisten adeti-ezpenak konfiguratatu. Detalleak [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) ikusi.
 
-## Trial Periods (Probarren Barki)
+## Trial Periods (Probarren Barki) {#setup-fees}
 
 Trial period bat emateak signup iradokizunaren erraztasuna arautzen du baina non konvertizio ezarritzen duen riskua sortzen du. FitSite-eko:
 
@@ -68,11 +68,11 @@ No hay prueba en Growth y Pro (estos clientes están más comprometidos y espera
 
 Konfigura la prueba en la sección de precios del plan Starter activando el interruptor **Offer Trial** y estableciendo la duración en 7 días.
 
-### Prueba kon konvertizatu
+### Prueba kon konvertizatu {#trial-periods}
 
 Prueba only funksiak duenean, klientea erabilera eta garrantzia da trialen ondorioz. Sailapenaren diseinu (Lesson 8) da garrantzitsia hemenan -- email-ekualdeak daingoa zuzenduko engagementa 7-egunko lapurtuaren beldurrak.
 
-## Kodiko eskaintzak (Discount Codes)
+## Kodiko eskaintzak (Discount Codes) {#making-trials-convert}
 
 Jartzen dut eskaintzak estrategiko diren zehatzeko:
 
@@ -86,7 +86,7 @@ Jartzen dut hauek lehiak: **Ultimate Multisite > Discount Codes**. Erdatu [Creat
 Eskaintzak herramienta estrategiko diren, ez dira beste batzuk. Hau guztioi eskaintzatu duenean, ez da eskaintza -- hau da prezioa gertuagoa. Gehiago erabiltu hauek kampainiak, referentziak eta promosioak erreguntzeko.
 :::
 
-## Tax-en maneho
+## Tax-en maneho {#discount-codes}
 
 Hau jakintzen ari zutenean taxo hartzea eskatzen duen erdatuetan dago:
 
@@ -96,7 +96,7 @@ Hau jakintzen ari zutenean taxo hartzea eskatzen duen erdatuetan dago:
 
 [Tax Handling](/user-guide/payment-gateways/tax-handling) artikuluak egiaztatzeko detallatutako konfiguerazioa ikusitu. Mendiatune inpernatzen duten kliuntzak ematen dutenean, EU erregulazioari berriagarri eta [VAT addon](/addons/vat) ez duzu.
 
-## Prezioak Ebaluatzea
+## Prezioak Ebaluatzea {#tax-handling}
 
 Lan-aldiaren ondoren, prezioak quarterly (kuartaletan) ikusi. Horrek ikusi:
 
@@ -126,7 +126,7 @@ FitSite Network
 │   └── Tax konfigurazioa
 └── Lanbidean egiteko prestazio (next lesson)
 
-## Zer egin dugu hori lekurrian
+## Zer egin dugu hori lekurrian {#reviewing-your-pricing}
 
 - **Ezpotuaren prezioa** 20% diskontuarekin betetzeko
 - **Instalazio zergabatuek** hautatutako nivelak dira beharra eskatzen eta onartzea eragiten

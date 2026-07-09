@@ -3,18 +3,18 @@ title: ການເຊື່ອມຕໍ່ Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# ການເຊື່ອມຕໍ່ກັບ Cloudflare
+# ການເຊື່ອມຕໍ່ກັບ Cloudflare {#cloudflare-integration}
 
-## ພາບລວມ
+## ພາບລວມ {#overview}
 Cloudflare ແມ່ນຜູ້ໃຫ້ບໍລິການເຄືອຂ່າຍສົ່ງເນື້ອຫາ (CDN) ແລະ ຄວາມປອດໄພຊັ້ນນໍາທີ່ຊ່ວຍປົກປ້ອງ ແລະ ເຮັດໃຫ້ເວັບໄຊທ໌ໄວຂຶ້ນ. ການເຊື່ອມຕໍ່ນີ້ເຮັດໃຫ້ສາມາດຈັດການໂດເມນໂດຍອັດຕະໂນມັດລະຫວ່າງ Ultimate Multisite ແລະ Cloudflare, ໂດຍສະເພາະສຳລັບການຕິດຕັ້ງ subdomain multisite.
 
-## ຄຸນສົມບັດ
+## ຄຸນສົມບັດ {#features}
 - ສ້າງ subdomain ອັດຕະໂນມັດໃນ Cloudflare
 - ຮອງຮັບ subdomain ທີ່ເປັນ Proxy (Proxied subdomain support)
 - ການຈັດການ DNS record
 - ການສະແດງ DNS record ທີ່ດີຂຶ້ນໃນ Ultimate Multisite admin
 
-## ຂໍ້ກຳນົດ
+## ຂໍ້ກຳນົດ {#requirements}
 ຄ່າ constant ຕໍ່ໄປນີ້ຕ້ອງຖືກກຳນົດໄວ້ໃນໄຟລ໌ `wp-config.php` ຂອງທ່ານ:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## ຄຳແນະນຳການຕັ້ງຄ່າ
+## ຄຳແນະນຳການຕັ້ງຄ່າ {#setup-instructions}
 
-### 1. ດຶງເອົາ Cloudflare API Key ຂອງທ່ານ
+### 1. ດຶງເອົາ Cloudflare API Key ຂອງທ່ານ {#1-get-your-cloudflare-api-key}
 
 1. ເຂົ້າສູ່ລະບົບ dashboard ຂອງ Cloudflare ຂອງທ່ານ
 2. ໄປທີ່ "My Profile" (ກົດໃສ່ອີເມວຂອງທ່ານຢູ່ມຸມຂວາເທິງ)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. ຄັດລອກ API token ຂອງທ່ານ
 
-### 2. ດຶງເອົາ Zone ID ຂອງທ່ານ
+### 2. ດຶງເອົາ Zone ID ຂອງທ່ານ {#2-get-your-zone-id}
 
 1. ໃນ dashboard ຂອງ Cloudflare, ເລືອກໂດເມນທີ່ທ່ານຕ້ອງການໃຊ້
 2. Zone ID ສາມາດເຫັນໄດ້ໃນ tab "Overview", ຢູ່ແຖບຂ້າງຂວາພາຍໃຕ້ "API"
 3. ຄັດລອກ Zone ID
 
-### 3. ເພີ່ມ Constants ໃນ wp-config.php
+### 3. ເພີ່ມ Constants ໃນ wp-config.php {#3-add-constants-to-wp-configphp}
 
 ເພີ່ມ constant ຕໍ່ໄປນີ້ເຂົ້າໃນໄຟລ໌ `wp-config.php` ຂອງທ່ານ:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. ເປີດການເຊື່ອມຕໍ່ (Enable the Integration)
+### 4. ເປີດການເຊື່ອມຕໍ່ (Enable the Integration) {#4-enable-the-integration}
 
 1. ໃນ WordPress admin, ໄປທີ່ Ultimate Multisite > Settings
 2. ໄປທີ່ tab "Domain Mapping"
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. ເປີດການເຊື່ອມຕໍ່ Cloudflare
 5. ກົດ "Save Changes"
 
-## ມັນເຮັດວຽກແນວໃດ
+## ມັນເຮັດວຽກແນວໃດ {#how-it-works}
 
-### ການຈັດການ Subdomain
+### ການຈັດການ Subdomain {#subdomain-management}
 
 ເມື່ອມີການສ້າງໄຊທ໌ໃໝ່ໃນການຕິດຕັ້ງ subdomain multisite:
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. Subdomain ນີ້ຖືກຕັ້ງຄ່າໃຫ້ເປັນ proxy ຜ່ານ Cloudflare by default (ສິ່ງນີ້ສາມາດປ່ຽນໄດ້ດ້ວຍ filters)
 3. ເມື່ອ site ຖືກລຶບ, ການເຊື່ອມຕໍ່ນີ້ຈະເອົາ subdomain ອອກຈາກ Cloudflare
 
-### ການສະແດງ DNS Record
+### ການສະແດງ DNS Record {#dns-record-display}
 
 ການເຊື່ອມຕໍ່ນີ້ເຮັດໃຫ້ການສະແດງ DNS record ໃນ Ultimate Multisite admin ດີຂຶ້ນໂດຍ:
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. ສະແດງວ່າ record ນັ້ນເປັນ proxy ຫຼື ບໍ່
 3. ສະແດງຂໍ້ມູນເພີ່ມເຕີມກ່ຽວກັບ DNS records ນັ້ນໆ
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (ທີ່ເຄີຍເອີ້ນວ່າ "Cloudflare for SaaS") ແມ່ນຟີເຈີຂອງ Cloudflare ທີ່ຊ່ວຍໃຫ້ລູກຄ້າຂອງທ່ານສາມາດໃຊ້ domain ເອງທີ່ມີ SSL ໃນ network multisite ຂອງທ່ານໄດ້. ນີ້ແມ່ນວິທີທີ່ແນະນຳສຳລັບການຕິດຕັ້ງ multisite ທີ່ map domain ໂດຍໃຊ້ Cloudflare, ເພາະວ່າ Cloudflare ຈະຈັດການການອອກ ແລະ ການຕໍ່ອາຍຸໃບຢັ້ງ (SSL certificate) ສຳລັບ domain custom ແຕ່ລະອັນໂດຍອັດຕະໂນມັດ.
 
-### ມັນແຕກຕ່າງຈາກການເຊື່ອມຕໍ່ Cloudflare ປົກກະຕິແນວໃດ
+### ມັນແຕກຕ່າງຈາກການເຊື່ອມຕໍ່ Cloudflare ປົກກະຕິແນວໃດ {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Standard integration | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **ເໝາະສຳລັບ** | Multisite ທີ່ມີ subdomain | Multisite ທີ່ map domain |
 | **SSL** | ຈັດການແຍກອອກໄປ | ຖືກຈັດການໂດຍ Cloudflare ອັດຕະໂນມັດ |
 
-### ການຕັ້ງຄ່າ Cloudflare Custom Hostnames
+### ການຕັ້ງຄ່າ Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. ຢູ່ໃນแดชบอร์ดของ Cloudflare ของคุณ ให้เปิดโซน (zone) สำหรับโดเมนหลักของคุณ
 
@@ -104,23 +104,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 :::note การอัปเดตคำศัพท์
 ตั้งแต่ Ultimate Multisite v2.6.1 เป็นต้นไป ฟีเจอร์นี้จะถูกเรียกว่า **Cloudflare Custom Hostnames** ในการตั้งค่าและป้ายกำกับของปลั๊กอินทั้งหมด เวอร์ชันก่อนหน้าใช้ชื่อ "Cloudflare for SaaS" ซึ่งเป็นชื่อผลิตภัณฑ์ Cloudflare ที่อยู่เบื้องหลัง
 
-## ข้อควรทราบที่สำคัญ
+## ข้อควรทราบที่สำคัญ {#important-notes}
 
 ตามการอัปเดตล่าสุดของ Cloudflare ปัจจุบันสามารถใช้งาน wildcard proxying สำหรับลูกค้าทุกคนได้ หมายความว่า การผสานรวม DNS มาตรฐานของ Cloudflare ไม่มีความสำคัญเท่าเดิมสำหรับการติดตั้งซับโดเมนแบบ multisite เนื่องจากคุณสามารถตั้งค่า record DNS แบบ wildcard ใน Cloudflare ได้เลย
 
-## การแก้ไขปัญหา (Troubleshooting)
+## การแก้ไขปัญหา (Troubleshooting) {#troubleshooting}
 
-### ปัญหาการเชื่อมต่อ API
+### ปัญหาการเชื่อมต่อ API {#api-connection-issues}
 - ตรวจสอบให้แน่ใจว่า API token ของคุณถูกต้องและมีสิทธิ์ที่จำเป็น
 - ตรวจสอบว่า Zone ID ของคุณถูกต้องหรือไม่
 - ตรวจสอบให้แน่ใจว่าบัญชี Cloudflare ของคุณมีสิทธิ์ที่จำเป็นครบถ้วน
 
-### ไม่มีการเพิ่มซับโดเมน
+### ไม่มีการเพิ่มซับโดเมน {#subdomain-not-added}
 - ตรวจสอบ log ของ Ultimate Multisite เพื่อดูข้อความแสดงข้อผิดพลาดใดๆ
 - ตรวจสอบว่าซับโดเมนนั้นไม่ได้ถูกเพิ่มเข้าไปใน Cloudflare แล้วหรือไม่
 - ตรวจสอบให้แน่ใจว่าแผนของ Cloudflare ที่คุณใช้อยู่รองรับจำนวน record DNS ที่คุณกำลังสร้างอยู่
 
-### ปัญหาเรื่อง Proxy
+### ปัญหาเรื่อง Proxy {#proxying-issues}
 
 - ถ้าคุณไม่ต้องการให้ subdomain ถูก proxy คุณสามารถใช้ฟิลเตอร์ `wu_cloudflare_should_proxy` ได้เลยครับ/ค่ะ
 - บางฟีเจอร์อาจจะไม่ทำงานถูกต้องเมื่อมีการทำ proxy (เช่น ฟังก์ชันบางอย่างของ WordPress admin)

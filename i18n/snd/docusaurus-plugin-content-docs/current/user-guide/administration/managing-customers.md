@@ -3,7 +3,7 @@ title: Grahakon ka prabandhan
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# گهواردار استعمال ڪرڻ (Managing Customers)
+# گهواردار استعمال ڪرڻ (Managing Customers) {#managing-customers}
 
 **Customers** صفحو توهان جي نرسڪي (network) ۾ لچي ٿيل اراكن جي فهرست ڏئي ٿو. هي صفحو نام، ايميل adhesion، آخري لاگ-इन وقت، ۽ هڪ **switch to** لينڪ ڏئي ٿو جنه توهان کي سائيٽ جو اراكن جي انتظام ڪندڙ (site administrator) طور لاگ ان ڪرڻ جي اجازت ڏئي ٿو.
 

@@ -3,13 +3,13 @@ title: Pagtukod og Negosyo sa Niche Website
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Paghimo og Niche Website Business gamit ang Ultimate Multisite
+# Paghimo og Niche Website Business gamit ang Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Kadaghanan sa mga tawo nga mosulay pagbaligya og website nagkompetensya base sa presyo batok sa Wix, Squarespace, ug libo ka freelancers. Mao silay mapildi. Ang mga nakakadaog kay nagpili og piho nga grupo (niche), naghimo og solusyon nga gidesinyo para kanila, ug nangopya base sa bili nga ilang gihatag.
 
 Kining kurso magtudlo nimo kung unsaon pagbuhat niini gamit ang Ultimate Multisite.
 
-## Unsay Imong Mahimo Buhaton
+## Unsay Imong Mahimo Buhaton {#what-you-will-build}
 
 Sa tibuok kurso, makahimo ka og usa ka tinuod ug naglihok nga network nga gitawag og **FitSite** — usa ka website platform nga gidesinyo ilabi na para sa mga fitness studio, personal trainer, ug gym owners.
 
@@ -23,7 +23,7 @@ Pagkahuman sa katapusang leksyon, ang FitSite mahimong usa ka kompleto nga niche
 
 Mo-follow ka step by step, ug sa katapusan makakuha ka dili lang og naglihok nga platform, kundi pati na usab ang kahibalo aron ma-replicate nimo kini nga proseso para sa bisan unsang niche nga imong pilion.
 
-## Ngano man Fitness Studios?
+## Ngano man Fitness Studios? {#why-fitness-studios}
 
 Nagkinahanglan mi og konkretong ehemplo nga bisan kinsa makasunod. Ang mga fitness studios naglihok kay:
 
@@ -34,7 +34,7 @@ Nagkinahanglan mi og konkretong ehemplo nga bisan kinsa makasunod. Ang mga fitne
 
 Ang tanan nimong makat-onan samtang paghimo og FitSite magamit direkta sa bisan unsang niche nga imong pilion: mga restawran, real estate agents, law firms, simbahan, trade contractors, o bisan unsa pa nga vertical.
 
-## Estruktura sa Kurso
+## Estruktura sa Kurso {#course-structure}
 
 Ang matag leksyon nagpaila og usa ka konsepto, nagpasabot nganong importante kini, ug maggiya kanimo sa pag-implement niini sa FitSite network. Ang matag leksyon naggikan sa nauna.
 
@@ -55,7 +55,7 @@ Ang matag leksyon nagpaila og usa ka konsepto, nagpasabot nganong importante kin
 | [13. Scaling Up](lesson-13-growth) | Growing from first customers to a real business | FitSite growth and automation strategy |
 | [14. What Comes Next](lesson-14-whats-next) | Expanding to adjacent niches and new opportunities | Your roadmap beyond FitSite |
 
-## Prerequisites
+## Prerequisites {#prerequisites}
 
 - Usa ka WordPress Multisite installation (o kabubut-on nga mag-set up niini)
 - Usa ka aktibo nga Ultimate Multisite license
@@ -63,6 +63,6 @@ Ang matag leksyon nagpaila og usa ka konsepto, nagpasabot nganong importante kin
 
 Walay gikinahanglan nga coding. Kung kaniadto pa nimo og gamit ang Ultimate Multisite, okay ra — Ang Lesson 3 magsugod gikan sa usa ka fresh install.
 
-## Andam na ba?
+## Andam na ba? {#ready}
 
 Sugdi sa [Lesson 1: Why Niche Wins](lesson-1-why-niche).

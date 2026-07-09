@@ -3,15 +3,15 @@ title: 'Lectio 11: Clientes reperire'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lectio 11: Clientes Invenire
+# Lectio 11: Clientes Invenire {#lesson-11-finding-customers}
 
 Praeclara suggesta sine clientibus mera oblectatio est. Haec lectio explicat quomodo clientes in sectore speciali acquiras -- rationes quae proprie valent quia in una industria intentus es.
 
-## Ubi Desivimus
+## Ubi Desivimus {#where-we-left-off}
 
 FitSite in publico est. Nunc opus est ut domini studiorum exercitationis eam inveniant et se inscribant.
 
-## Cur Acquisitio Specialis Aliter Se Habeat
+## Cur Acquisitio Specialis Aliter Se Habeat {#why-niche-acquisition-is-different}
 
 Cum omnibus vendis, de attentione in foro strepitoso certare debes. Cum ad sectorem specialem vendis, commoda habes:
 
@@ -19,17 +19,17 @@ Cum omnibus vendis, de attentione in foro strepitoso certare debes. Cum ad secto
 - **Nuntius tuus statim resonat** -- "paginae interretiales pro studiis exercitationis" dominum palaestrae medio tractu sistit
 - **Commendationes cumulantur** -- domini studiorum exercitationis alios dominos studiorum exercitationis noverunt
 
-## Canalis 1: Appellatio Directa
+## Canalis 1: Appellatio Directa {#channel-1-direct-outreach}
 
 Celerrima via ad primos clientes tuos est appellatio directa, personalis.
 
-### Prospectus Invenire
+### Prospectus Invenire {#find-prospects}
 
 - Quaere in Google Maps studia exercitationis, palaestras, et magistros personales in regione tua
 - Visita paginas interretiales eorum praesentes (vel nota eos nullam habere)
 - Collige informationem contactus ex profilis Google Business eorum vel ex socialibus mediis
 
-### Aestima Eorum Praesentem Statum
+### Aestima Eorum Praesentem Statum {#evaluate-their-current-situation}
 
 Pro unoquoque prospectu, nota:
 
@@ -37,7 +37,7 @@ Pro unoquoque prospectu, nota:
 - **Mala pagina interretialis**: Prospectus validus -- ostende eis qualis melior optio videatur
 - **Bona pagina interretialis**: Prospectus debilis -- iam hoc problema solverunt
 
-### Contactum Facere
+### Contactum Facere {#make-contact}
 
 Mitte epistulam electronicam vel nuntium personalem:
 
@@ -48,7 +48,7 @@ Mitte epistulam electronicam vel nuntium personalem:
 
 Noli epistulas electronicas massivas mittere. Appellatio personalis ad 20 prospectus bene investigatos melius eveniet quam emissio generica ad 2,000.
 
-## Canalis 2: Communitates Speciales
+## Canalis 2: Communitates Speciales {#channel-2-niche-communities}
 
 Domini studiorum exercitationis in locis certis interretialibus conveniunt:
 
@@ -57,7 +57,7 @@ Domini studiorum exercitationis in locis certis interretialibus conveniunt:
 - **Fora industriae** et tabulae disputationis
 - **Circuli LinkedIn** pro professionalibus exercitationis
 
-### Quomodo Participes
+### Quomodo Participes {#how-to-participate}
 
 Noli iungere et statim productum tuum proponere. Instead:
 
@@ -66,7 +66,7 @@ Noli iungere et statim productum tuum proponere. Instead:
 3. **Communica cum pertinet** -- cum aliquis de paginis interretialibus rogat, suggestam tuam naturaliter communica
 4. **Crea contentum utile** -- scribe publicationes de "quid magnam paginam interretialem studii exercitationis efficiat" quae naturaliter ad suggestam tuam ducunt
 
-## Canalis 3: Mercatura Contenti
+## Canalis 3: Mercatura Contenti {#channel-3-content-marketing}
 
 Crea contentum quod domini studiorum exercitationis quaerunt:
 
@@ -77,7 +77,7 @@ Crea contentum quod domini studiorum exercitationis quaerunt:
 
 Hoc in diario mercaturae FitSite tuo publica. Tempore procedente, hoc contentum in machinis quaerendi locum obtinet et commeatum organicum ab hominibus affert qui active quaerunt id quod offers.
 
-## Canalis 4: Societates
+## Canalis 4: Societates {#channel-4-partnerships}
 
 Consociare cum negotiis quae iam studiis exercitationis serviunt:
 
@@ -88,7 +88,7 @@ Consociare cum negotiis quae iam studiis exercitationis serviunt:
 
 Offer commissiones commendationum vel promotionem mutuam. [Additamentum AffiliateWP](/addons/affiliatewp) te adiuvare potest ut programma commendationum formale instituas.
 
-## Canalis 5: Eventus Industriales
+## Canalis 5: Eventus Industriales {#channel-5-industry-events}
 
 Eventus industriae exercitationis te ante centenos clientium potentialium ponunt:
 
@@ -99,7 +99,7 @@ Eventus industriae exercitationis te ante centenos clientium potentialium ponunt
 
 Magno sumptu non indiges. Etiam interesse ut participem et colloquia habere de eo quod facis ductus generare potest.
 
-## Canalis 6: Situs Ostentationis
+## Canalis 6: Situs Ostentationis {#channel-6-showcase-sites}
 
 Optima tua mercatura sunt situs clientium tuorum existentium. Cum licentia:
 
@@ -108,7 +108,7 @@ Optima tua mercatura sunt situs clientium tuorum existentium. Cum licentia:
 - Pete testimonia a clientibus satisfactis
 - Hortare clientes ut FitSite memorent cum de pagina interretiali sua rogantur
 
-## Programma Commendationum Instituere
+## Programma Commendationum Instituere {#setting-up-a-referral-program}
 
 Fama ore transmissa potentissimus canalis tuus in sectore speciali est. Id formaliza:
 
@@ -116,7 +116,7 @@ Fama ore transmissa potentissimus canalis tuus in sectore speciali est. Id forma
 2. Offer clientibus existentibus praemium pro commendationibus (unus mensis gratis, creditum rationis, etc.)
 3. Facile redde -- da eis nexum commendationis et nuntium simplicem quem transmittere possunt
 
-## Vestigare Quid Valeat
+## Vestigare Quid Valeat {#tracking-what-works}
 
 Pro unoquoque canale, vestiga:
 
@@ -126,7 +126,7 @@ Pro unoquoque canale, vestiga:
 
 Canales qui valent duplici studio prosequere. Canales qui non valent abscide.
 
-## Exspectationes Realisticae
+## Exspectationes Realisticae {#realistic-expectations}
 
 - **Mensis 1-3**: 5-20 clientes, plerumque ex appellatione directa et communitatibus
 - **Mensis 4-6**: 20-50 clientes, mercatura contenti conferre incipit
@@ -134,7 +134,7 @@ Canales qui valent duplici studio prosequere. Canales qui non valent abscide.
 
 Hi numeri variantur, sed forma constans est: primi clientes ex conatu directo veniunt, posteriores clientes ex effectibus cumulativis contenti, commendationum, et famae veniunt.
 
-## Quid Hac Lectione Aedificavimus
+## Quid Hac Lectione Aedificavimus {#what-we-built-this-lesson}
 
 - **Sex canales acquisitionis** ad angustum campum exercitationis corporalis aptati
 - **Processus directae prospectionis** ad primos emptores adipiscendos

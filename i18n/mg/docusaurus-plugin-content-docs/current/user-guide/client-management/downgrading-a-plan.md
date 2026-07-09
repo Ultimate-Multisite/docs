@@ -3,13 +3,13 @@ title: Fandresina ny Plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Fanaovana plan (v2)
+# Fanaovana plan (v2) {#downgrading-a-plan-v2}
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia manondro ny Ultimate Multisite version 2.x.**_
 
 Ny fanaovana fanaovana latsaka na fanavaozana ny subscription dia zavatra mahazatra ataon'ny mpanjifa raha manana tetibola voafetra izy na nanapa-kevitra fa tsy mila lohahevitra maro mba hanatanterahana ny subsite-ny.
 
-## Ahoana no fanaovana fanaovana latsaka (downgrade) ny plan
+## Ahoana no fanaovana fanaovana latsaka (downgrade) ny plan {#how-to-downgrade-a-plan}
 
 Afaka manao fanaovana latsaka ny plan ny mpanjifa amin'ny fotoana rehetra amin'ny alalan'ny miditra ao amin'ny admin dashboard an'ny subsite-ny ary tsindrio ny **Change** eo ambanin'ny pejy kaonty (account page).
 
@@ -25,7 +25,7 @@ Mba hanatratrarana izany ny mpampiasa dia mila tsindrio ny bokotra **Complete Ch
 
 ![Pejy kaonty mampiseho ny banner momba ny fanovana membership mbola tsy vita](/img/account-page/pending-change.png)
 
-### Inona no mitranga rehefa manao fanaovana latsaka (downgrade) ny plan ny mpampiasa
+### Inona no mitranga rehefa manao fanaovana latsaka (downgrade) ny plan ny mpampiasa {#what-happens-when-a-user-downgrades-their-plan}
 
 Zava-dehibe ny fahatakarana fa ny fanaovana fanaovana latsaka dia tsy manova ny fametrahana (configuration) efa misy ao amin'ny subsite an'ilay mpanjifa.
 
@@ -37,7 +37,7 @@ Ho an'ireo post izay mihoatra ny fetra napetraka ao amin'ny drafitra, dia misy s
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Inona no mitranga momba ny famatsiana (payment)
+### Inona no mitranga momba ny famatsiana (payment) {#what-happens-to-the-payment}
 
 Ao amin'ny dikan-teny 2.0, tsy mila fanitsiana intsony ny fomba fandoavana mifandraika amin'ny proration (fizarana araka fotoana).
 

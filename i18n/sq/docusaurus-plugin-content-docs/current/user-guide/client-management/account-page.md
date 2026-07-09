@@ -3,7 +3,7 @@ title: Paguna e Llogarisë së Klientit
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Faqja e Llogarisë së Klientit (v2)
+# Faqja e Llogarisë së Klientit (v2) {#your-clients-account-page-v2}
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 
@@ -11,7 +11,7 @@ Kur klientët abonojnë një plan në rrjetin tuaj, ata kanë akses në një faq
 
 Në këtë tutorial, ju do t'ju udhëzoni përmes faqes së llogarisë së klientit dhe do të shihni se çfarë mund të bëjnë klientët brenda saj.
 
-## Faqja e Llogarisë
+## Faqja e Llogarisë {#the-account-page}
 
 Faqja e llogarisë mund të akseshohet duke klikuar në **Account** (Llogari) brenda dashboard-it të klientit tuaj.
 
@@ -27,7 +27,7 @@ Pas kur klienti klikon, ata do të shohin një përmbledhje të anëtarësimit t
 
 Ata mund të ndryshojnë edhe anëtarësimin në një plan tjetër, ose të blin një paketë apo shërbim tjetër që ofroni. Le të shikojmë secilën seksion posaçërisht.
 
-### Përmbledhja e Aplikimit Tuaj:
+### Përmbledhja e Aplikimit Tuaj: {#your-membership-overview}
 
 Bloku i parë poshtë emrit të faqes së klientëve tona tregon një përmbledhje të planit dhe shërbimeve/paketave që janë blerë me atë. Bloku gjithashtu tregon numrin e aplikimit, shumën fillestare e paguar për të, sa kushton plani dhe çdo shërbim/paketë dhe sa herë është llogaritur (billed) për këtë aplikim. Ata mund të shohin edhe nëse aplikimi është **I Aktiv** , **I Skaduar** ose **I Ndaluar**.
 
@@ -43,7 +43,7 @@ Tani, nëse klientët zgjedhin të bllojnë paketa ose shërbime për këtë apl
 
 Vëreni se kodet kuponi nuk mund të shtojnë në faqen e ndryshimit të aplikimit këtij moment. Nëse klienti ka përdorur një kod kuponi në blerjen e parë të aplikimit, kodi do të aparë edhe për këtë aplikim të ri.
 
-### Përditësimi i Adresës së Llogarisë:
+### Përditësimi i Adresës së Llogarisë: {#updating-the-billing-address}
 
 N në faqen e kontos, klientët mund të përditësojnë edhe adresën e fakturimit. Ata thjesht duhet të klikojnë në **Update** pranë _Billing Address_.
 
@@ -53,7 +53,7 @@ Do të hapet një dritare e re për klientin tuaj. Gjithçka që duhet të bëni
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Ndryshimi i Shkemit të Saktë (Site Template):
+### Ndryshimi i Shkemit të Saktë (Site Template): {#changing-the-site-template}
 
 Për të lejuar klientët tuaj të ndryshojnë shkemet e tyre të saj, duhet të shkoni te **Ultimate Multisite > Settings > Sites** dhe të aktivizoni opsionin **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Pas se aktivizoni konfirmimin dhe klikoni në **Process Switch** (Procesi i Ndry
 
 Klientët gjithashtu mund të përdorin **Reset current template** (Rikthesh shabllonin aktual) nga ky panel kur duhet të rikthejnë faqen te shablloni i caktuar aktualisht. Si ndryshimi në një shabllon tjetër, rikuptimi i një shablloni mund të sovrasojë përmbajtjen e faquin; kështu që klientët duhet ta konfirmojnë vetëm kur kuptojnë veprimin e rikthimit.
 
-### Shtimi i Domenive Tuarë (Custom Domains):
+### Shtimi i Domenive Tuarë (Custom Domains): {#adding-custom-domains}
 
 Klientët tuaj do të kenë gjithashtu opsionin për të shtuar një domen tjetër personal për këtë plan në faqen e tyre të llogarisë. Për të lejuar klientët tuaj të përdorin domenime tuaja, shkoni te **Ultimate Multisite > Settings > Domain Mapping** (Mapele Domenet).
 
@@ -115,7 +115,7 @@ Pas klikimit te **Next Step**, klientët tu mund të shtojnë emrin e domeneve t
 
 Pas klikimit te **Add Domain**, domeni do të shtohet në konton e klientit tuaj. Të gjitha që duhet të bëni tani është të ndryshoni regjistrat DNS të këtij domeni të personalizuar tek registri i domenit (domain registrar) i tyre.
 
-### Ndryshimi i Fjalëkalimit:
+### Ndryshimi i Fjalëkalimit: {#changing-password}
 
 Brenda dashboard-it të kontos, klientët tu gjithashtu mund të ndryshojnë fjalëkalimin duke klikuar te **Change Password**.
 
@@ -125,7 +125,7 @@ Kjo do tregon një dritare të re ku klientët do të duhet të plotësojnë fja
 
 ![Forma e ndryshimit të fjalëkalimit me fushat për fjalën e vjetër dhe fjalën e re](/img/account-page/change-password-form.png)
 
-### Zonë e Rrezikut:
+### Zonë e Rrezikut: {#danger-zone}
 
 Kemi edhe dy opsione që janë të tregues në pjesën **Danger Zone**: **Fshi Siti** dhe **Fshi Llogarinë**. Këto dy veprime janë në zonën e rrezikut sepse këto dy veprime nuk mund të kthehen. Nëse klientët fshin faqen e tyre të internetit ose llogarinë, ata nuk mund ta kthejnë ato prapa.
 

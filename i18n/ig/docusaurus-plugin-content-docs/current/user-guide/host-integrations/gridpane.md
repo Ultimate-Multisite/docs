@@ -3,17 +3,17 @@ title: Nkwado Pane Integration
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integration GridPane
+# Integration GridPane {#gridpane-integration}
 
-## Nhìn Chung
+## Nhìn Chung {#overview}
 GridPane na ọkọ ọkọ đặc biệt nwere WordPress, được xây dựng cho những người làm WordPress chuyên nghiệp. Cái tích hợp này giúp đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và GridPane.
 
-## Các Tính Năng
+## Các Tính Năng {#features}
 - Đồng bộ tên miền tự động
 - Quản lý chứng chỉ SSL
 - Cấu hình tự động hằng số SUNRISE
 
-## Yêu Cầu
+## Yêu Cầu {#requirements}
 Các hằng số sau phải được định nghĩa trong tệp `wp-config.php` của bạn:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## Hướng Dẫn Thiết Lập
+## Hướng Dẫn Thiết Lập {#setup-instructions}
 
-### 1. Lấy Thông Tin API GridPane Của Bạn
+### 1. Lấy Thông Tin API GridPane Của Bạn {#1-get-your-gridpane-api-credentials}
 
 1. Đăng nhập vào bảng điều khiển (dashboard) GridPane của bạn
 2. Truy cập "Settings" > "API"
 3. Tạo một khóa API nếu bạn chưa có
 4. Sao chép khóa API của bạn
 
-### 2. Lấy ID Máy Chủ và Trang Web Của Bạn
+### 2. Lấy ID Máy Chủ và Trang Web Của Bạn {#2-get-your-server-and-site-ids}
 
 1. Trong bảng điều khiển GridPane, đi đến "Servers" (Máy chủ)
 2. Chọn máy chủ nơi WordPress multisite của bạn được lưu trữ
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. Đi đến "Sites" (Trang web) và chọn trang WordPress của bạn
 5. Ghi lại Site ID (có thể thấy trong URL hoặc trên trang chi tiết trang web)
 
-### 3. Thêm Hằng Số vào wp-config.php
+### 3. Thêm Hằng Số vào wp-config.php {#3-add-constants-to-wp-configphp}
 
 Thêm các hằng số sau vào tệp `wp-config.php` của bạn:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Bật Tích Hợp
+### 4. Bật Tích Hợp {#4-enable-the-integration}
 
 1. Trong trình quản trị WordPress của bạn, đi đến Ultimate Multisite > Settings (Cài đặt)
 2. Điều hướng đến tab "Domain Mapping" (Ánh xạ tên miền)
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Bật tích hợp GridPane
 5. Nhấn "Save Changes" (Lưu thay đổi)
 
-## Cách Nó Hoạt Động
+## Cách Nó Hoạt Động {#how-it-works}
 
 Khi một tên miền được ánh xạ trong Ultimate Multisite:
 
@@ -69,23 +69,23 @@ Khi một tên miền được ánh xạ trong Ultimate Multisite:
 
 Integration ah ga-eme handle constant SUNRISE na file wp-config.php gị ma ọ bụ automatic, nke a bụ ihe a dị m n'aka domain mapping ịrụ ọrụ maka site gị.
 
-## Management na Constant SUNRISE
+## Management na Constant SUNRISE {#sunrise-constant-management}
 
 Ihe dị Ọ dị Ọ dị m n'aka integration GridPane bụ na ọ ga-eme revert constant SUNRISE na wp-config.php ma ọ bụ prevent conflict na sistem ah domain mapping nke GridPane. Ige a na-eme ka oba ikiwa ọkụ na-arụrụ ọrụ n'obi anọ, ọ bụghị ọ dị m n'aka ịdịrị/ịdịrị ah domain mapping.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Issues na API Connection
+### Issues na API Connection {#api-connection-issues}
 - Jere ihe ọ bụ na API key gị bụ nke ọma
 - Check na server site gị ma IDs site gị bụ nke ọma
 - Ensure na akaunte GridPane gị nwere izin ndị dị m n'aka ịdịrị/ịdịrị ah.
 
-### Issues na SSL Certificate
+### Issues na SSL Certificate {#ssl-certificate-issues}
 - GridPane ga-eme take time maka ịdịrị/ịdịrị SSL
 - Verify na domain gị bụ nke ọma na-point na IP address server gị
 - Check settings SSL na GridPane maka site gị
 
-### Domain Not Added
+### Domain Not Added {#domain-not-added}
 - Check Ultimate Multisite logs maka ihe ndị dị m n'error messages
 - Verify na domain ah bụrụ na ọ bụ na-add na GridPane
 - Ensure na DNS records domain gị bụ nke ọma na-configure

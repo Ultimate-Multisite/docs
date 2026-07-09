@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 یہ عمل تصدیق کا کوکی (authentication cookie) سیٹ ہونے سے فوراً پہلے چلتا ہے۔
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | تصدیق کا طریقہ کار (Authentication scheme)۔ ویلیوز میں 'auth' یا 'secure_auth' شامل ہیں۔ |
 | $token | `string` | اس کوکی کے لیے استعمال ہونے والا صارف کا سیشن ٹوکن (User's session token)۔ |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> پیرامیٹر شامل کیا گیا۔
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) میں لائن 124 پر ڈیفائن کیا گیا ہے۔

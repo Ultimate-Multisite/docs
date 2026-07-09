@@ -3,7 +3,7 @@ title: Vad är WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Vad är WordPress Multisite?
+# Vad är WordPress Multisite? {#what-is-wordpress-multisite}
 
 WordPress har en inbyggd funktion som kallas "Multisite" och som har funnits sedan WordPress 3.0 lanserades 2010. Sedan dess har funktionen uppdaterats ett flertal gånger med nya funktioner och förbättrad säkerhet.
 
@@ -11,7 +11,7 @@ Ett WordPress multisite kan enklast förklaras så här: Ett universitet har en 
 
 ## 
 
-## Vad är egentligen WordPress Multisite?
+## Vad är egentligen WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite är en funktion i WordPress som gör att flera webbplatser kan dela på en och samma WordPress-installation. När multisite aktiveras omvandlas den ursprungliga WordPress-webbplatsen till det som brukar kallas ett **nätverk av webbplatser**.
 
@@ -23,7 +23,7 @@ Detta är en av de största fördelarna med multisite – du kan utöka antalet 
 
 ## 
 
-## Subdomän eller underkatalog?
+## Subdomän eller underkatalog? {#subdomain-or-subdirectory}
 
 Det finns två sätt att köra WordPress multisite – och du måste välja ett när du konverterar din vanliga WordPress-installation till en multisite-installation:
 
@@ -49,7 +49,7 @@ En av de största utmaningarna med att sätta upp subdomänläge är SSL-täckni
 
 Till skillnad från underkatalogläge betraktas underwebbplatser i ett subdomänbaserat nätverk av sökmotorer som separata webbplatser, vilket innebär att innehåll på en underwebbplats inte påverkar SEO-prestandan för andra underwebbplatser alls.
 
-## Superadministratören
+## Superadministratören {#the-super-admin}
 
 Vanliga WordPress-installationer med en enda webbplats låter dig lägga till obegränsat antal användare och ge dem olika användarroller med olika behörigheter.
 
@@ -63,7 +63,7 @@ Plugins och teman kan bara installeras eller avinstalleras från nätverkets adm
 
 _Observera: som du ser innebär det att bjuda in någon till ditt nätverk och ge dem superadministratörsstatus att denna användare får total kontroll över ditt nätverk. Exempelvis kan andra superadministratörer till och med ta bort din superadministratörsstatus, vilket i praktiken stänger ute dig från din egen nätverksadminpanel. För att ge Ultimate Multisite-kunder detaljerad kontroll över vad ytterligare superadministratörer kan göra har vi ett tillägg som heter Support Agents. Detta tillägg låter dig skapa ytterligare en typ av användare – en agent – med endast de behörigheter som behövs för att utföra sina uppgifter i nätverket._
 
-## Vad delas mellan underwebbplatser och vad delas inte
+## Vad delas mellan underwebbplatser och vad delas inte {#what-is-shared-among-subsites-and-what-is-not}
 
 Som vi nämnde tidigare är en av de stora fördelarna med WordPress multisite att alla underwebbplatser delar samma konfigurationer, kärnfiler, teman, plugins, WordPress kärnfiler, och så vidare.
 
@@ -75,7 +75,7 @@ Det finns dock element som är snyggt avgränsade per underwebbplats.
 
 \- De flesta databastabeller skapas för varje underwebbplats, vilket innebär att inlägg, kommentarer, sidor, inställningar med mera är avgränsade för varje underwebbplats.
 
-## Användarhantering i WordPress Multisite
+## Användarhantering i WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Ett känsligt ämne i WordPress multisite är användarhantering. WordPress användartabell är en av de få som delas mellan alla underwebbplatser.
 
@@ -99,7 +99,7 @@ _Observera: Vi förstår hur problematiskt detta kan vara beroende på ditt anv�
 
 Även om användartabellen delas kan användare läggas till och tas bort från underwebbplatser av underwebbplatsens administratörer eller superadministratören, och de kan till och med ha olika användarroller på olika underwebbplatser.
 
-## Prestandaöverväganden
+## Prestandaöverväganden {#performance-considerations}
 
 WordPress multisite är verkligen kraftfullt när det gäller antalet webbplatser det kan hantera. Detta bekräftas av att [WordPress.com](https://WordPress.com), Edublogs och Campuspress alla är multisite-baserade tjänster och var och en driftar tusentals webbplatser.
 

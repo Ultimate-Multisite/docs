@@ -3,7 +3,7 @@ title: ウェブフック
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) の概要
+# Webhooks (v2) の概要 {#a-first-look-on-webhooks-v2}
 
 _**注意: この機能または記事は上級ユーザー向けです。**_
 
@@ -11,7 +11,7 @@ _**注意: この機能または記事は上級ユーザー向けです。**_
 
 これは、イベントがトリガーされるたびに、Ultimate Multisite から別の CRM やシステムへ特定のデータを連携または渡す必要がある場合に便利です。たとえば、新しいユーザー Account が作成されるたびに、ユーザーの名前とメールアドレスをメーリングリストへ送信する必要がある場合です。
 
-## webhook の作成方法
+## webhook の作成方法 {#how-to-create-a-webhook}
 
 webhook を作成するには、ネットワーク管理者 Dashboard に移動します。**Ultimate Multisite > Webhooks > 新しい Webhook を追加** をクリックします。
 

@@ -4,10 +4,10 @@ title: Igikorwa - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Igikorwa: wu_domain_created
+# Igikorwa: wu_domain_created {#action-wudomaincreated}
 
 Bitangizwa iyo mapping nshya ya domain yongewemo.
 
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L436) ku murongo wa 436

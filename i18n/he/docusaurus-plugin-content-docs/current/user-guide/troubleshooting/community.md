@@ -3,7 +3,7 @@ title: קהילה
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# כיצד להצטרף לקהילת Ultimate Multisite
+# כיצד להצטרף לקהילת Ultimate Multisite {#how-to-join-ultimate-multisite-community}
 
 קהילת Ultimate Multisite היא מרחב שבו תוכלו ליצור קשר עם משתמשי Ultimate Multisite אחרים ולשתף טיפים, חוויות ועוד. כדי לגשת לקהילת Ultimate Multisite היכנסו לכתובת https://community.ultimatemultisite.com/home.
 

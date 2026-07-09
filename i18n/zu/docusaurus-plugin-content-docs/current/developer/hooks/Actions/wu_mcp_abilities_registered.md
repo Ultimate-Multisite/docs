@@ -4,11 +4,11 @@ title: Isenzo - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Isenzo: wu_mcp_abilities_registered
+# Isenzo: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Sisebenza ngemva kokuba amakhono e-MCP ebhaliselwe i-entity.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sisebenza ngemva kokuba amakhono e-MCP ebhaliselwe i-entity.
 | $model_name | `string` | Igama lemodeli. |
 | $this | `object` | I-instance yomphathi. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.5.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe ku-[`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) emgqeni 171

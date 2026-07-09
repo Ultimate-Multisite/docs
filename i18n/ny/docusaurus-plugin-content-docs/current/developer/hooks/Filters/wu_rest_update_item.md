@@ -4,11 +4,11 @@ title: Sefa - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item
+# Filter: wu_rest_update_item {#filter-wurestupdateitem}
 
 Imasefa ngati kuloledwa kupitiriza ndi request kapena ayi.
 
-## Ma Parameter
+## Ma Parameter {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Imasefa ngati kuloledwa kupitiriza ndi request kapena ayi.
 | $rest_base | `array` | Slug ya entity. |
 | $this | `\Base_Manager` | Instance ya object. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.0
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) pa mzere 414

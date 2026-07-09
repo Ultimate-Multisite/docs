@@ -3,13 +3,13 @@ title: Ukuthumela Ama-imeyili Nokusakaza
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ukuthumela Ama-imeyili Nokusebenzisa Ukusakaza (v2)
+# Ukuthumela Ama-imeyili Nokusebenzisa Ukusakaza (v2) {#sending-emails-and-broadcasts-v2}
 
 _**INOTHI ELIBALULEKILE: Le athikili ibhekisela ku-Ultimate Multisite inguqulo 2.x.**_
 
 Ultimate Multisite iza nesici esizokuvumela ukuthi uxhumane namakhasimende akho ngokuthumela i-imeyili kumsebenzisi oqondisiwe noma eqenjini labasebenzisi, kanye nokuthumela izaziso ku-admin dashboard yabo ukuze usakaze izimemezelo
 
-## Engeza izaziso ze-admin ku-dashboard yamakhasimende akho nge-Ukusakaza
+## Engeza izaziso ze-admin ku-dashboard yamakhasimende akho nge-Ukusakaza {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Usebenzisa isici sokusakaza se-Ultimate Multisite, ungakwazi ukwengeza **izaziso ze-admin** ku-admin dashboard ye-subsite yomsebenzisi wakho.
 
@@ -51,7 +51,7 @@ Ngemva kokudala umlayezo wakho, ungabe usucindezela inkinobho ethi **Thumela**.
 
 Futhi yilokho. Isaziso se-admin kufanele sivele ngokushesha ku-dashboard yomsebenzisi wakho.
 
-## Thumela ama-imeyili kumakhasimende akho
+## Thumela ama-imeyili kumakhasimende akho {#send-emails-to-your-customers}
 
 Usebenzisa isici sokusakaza se-Ultimate Multisite, ungathumela i-imeyili kubasebenzisi bakho. Unenketho yokuthumela i-imeyili kubasebenzisi abathile kuphela noma ukuqondisa iqembu elithile labasebenzisi ngokusekelwe kumkhiqizo noma ku-plan ababhalise ngaphansi kwayo.
 
@@ -81,11 +81,11 @@ Ngemva kokudala umlayezo wakho, ungacindezela inkinobho ethi **Thumela**.
 
 Futhi kulula kanjalo ukuthumela i-imeyili kubasebenzisi bakho bokugcina usebenzisa isici sokusakaza.
 
-## Ama-imeyili ohlelo
+## Ama-imeyili ohlelo {#system-emails}
 
 Ama-imeyili ohlelo ku-Ultimate Multisite yilawo **maziso azenzakalelayo** athunyelwa uhlelo ngemva kwezenzo ezithile njengokubhalisa, inkokhelo, ukuhlanganisa i-domain, njll. Lawa ma-imeyili angahlelwa noma alungiswe ezilungiselelweni ze-Ultimate Multisite. Iza futhi nesici esizokuvumela ukuthi usethe kabusha futhi ungenise izilungiselelo ezikhona kusuka kokunye ukufakwa kwe-Ultimate Multisite.
 
-### Ukusetha kabusha nokungenisa
+### Ukusetha kabusha nokungenisa {#resetting--importing}
 
 Izinhlobo ezintsha ze-Ultimate Multisite, kanye nama-add-on, zingakwazi futhi zizobhalisa ama-imeyili amasha ngezikhathi ezithile.
 
@@ -93,7 +93,7 @@ Ukuvimbela ukungqubuzana nezinye izinkinga, **ngeke sengeze ama-template amasha 
 
 Nokho, ama-super admin nama-agent angangenisa lawa ma-imeyili asanda kubhaliswa ngethuluzi lokungenisa. Leyo nqubo izodala i-imeyili entsha yohlelo enokuqukethwe nokumiswa kwe-template entsha ye-imeyili, ivumele i-super admin ukuthi yenze noma yiziphi izinguquko ezifisayo noma iwagcine njengoba enjalo.
 
-#### Indlela yokungenisa ama-imeyili ohlelo
+#### Indlela yokungenisa ama-imeyili ohlelo {#how-to-import-system-emails}
 
 Iya ekhasini lakho le-Ultimate Multisite Settings bese uya kuthebhu ethi **Ama-imeyili**.
 
@@ -111,7 +111,7 @@ Bese, ungaguqula izinketho zokungenisa ama-imeyili ukuze ubone ukuthi yimaphi am
 
 <!-- Isithombe-skrini asitholakali: Imodali Yokubuyisela Nokungenisa enezinketho Zokungenisa Ama-email ezinwetshiwe -->
 
-#### Ukubuyisela Ama-email Esistimu
+#### Ukubuyisela Ama-email Esistimu {#reseting-system-emails}
 
 Ngezinye izikhathi, uzobona ukuthi izinguquko ozenzile kusifanekiso se-email esithile azisakusebenzeli futhi ungathanda ukusibuyisela **esimweni saso sokuzenzakalelayo**.
 

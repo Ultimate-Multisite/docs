@@ -3,32 +3,32 @@ title: 'Ceacht 3: Do Líonra a Shocrú'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Ceacht 3: Do Líonra a Chur ar Bun
+# Ceacht 3: Do Líonra a Chur ar Bun {#lesson-3-setting-up-your-network}
 
 Tá sé in am tógáil. Sa cheacht seo, suiteálfaidh tú Ultimate Multisite agus cumróidh tú bunús líonra FitSite. Déantar gach cinneadh anseo agus nideoige na haclaíochta san áireamh.
 
-## An Áit ar Fhágamar É
+## An Áit ar Fhágamar É {#where-we-left-off}
 
 Roghnaíomar stiúideonna aclaíochta mar ár nideoige agus bhailíochtaíomar an deis. Anois déanaimid ardán oibre den smaoineamh sin.
 
-## Do Óstáil a Roghnú
+## Do Óstáil a Roghnú {#choosing-your-hosting}
 
 Tá do rogha óstála níos tábhachtaí d’ardán nideoige ná do shuíomh gréasáin aonair. Ní suíomh amháin atá á óstáil agat -- tá líonra á óstáil agat a fhásfaidh go dtí dosaenacha nó na céadta suíomhanna.
 
-### Cad ba Chóir a Lorg
+### Cad ba Chóir a Lorg {#what-to-look-for}
 
 - **Tacaíocht WordPress Multisite**: Ní láimhseálann gach óstach multisite go maith
 - **Wildcard SSL**: Riachtanach do líonraí bunaithe ar fho-fhearainn
 - **Acmhainní inscálaithe**: Teastaíonn spás uait chun fás gan imirce
 - **Comhtháthú Ultimate Multisite**: Sábhálann mapáil fearainn agus SSL uathoibrithe iarracht oibriúcháin shuntasach
 
-### Cur Chuige Molta
+### Cur Chuige Molta {#recommended-approach}
 
 Roghnaigh óstach ón liosta [Soláthraithe Comhoiriúnacha](/user-guide/host-integrations/closte). Tástáladh iad seo le Ultimate Multisite agus soláthraíonn siad na comhtháthuithe atá uait le haghaidh mapáil fearainn agus uathoibriú SSL.
 
 Do FitSite, úsáidfimid cumraíocht fho-fhearainn. Ciallaíonn sé seo go mbeidh suíomhanna custaiméirí le feiceáil ar dtús mar `studioname.fitsite.com` sula ndéanann siad a bhfearann féin a mhapáil go roghnach.
 
-## WordPress Multisite a Shuiteáil
+## WordPress Multisite a Shuiteáil {#installing-wordpress-multisite}
 
 Mura bhfuil suiteáil WordPress Multisite agat cheana féin:
 
@@ -40,7 +40,7 @@ Mura bhfuil suiteáil WordPress Multisite agat cheana féin:
 Tugann fo-fhearainn seoladh ar leith dá chuid féin do gach suíomh custaiméara (`studio.fitsite.com`) seachas cosán (`fitsite.com/studio`). Tá sé seo níos gairmiúla do do chustaiméirí agus seachnaíonn sé coinbhleachtaí permalink. Féach [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) le haghaidh comparáide mionsonraithe.
 :::
 
-## Ultimate Multisite a Shuiteáil
+## Ultimate Multisite a Shuiteáil {#installing-ultimate-multisite}
 
 Lean an treoir [Ultimate Multisite a Shuiteáil](/user-guide/getting-started/installing-ultimate-multisite) chun:
 
@@ -53,11 +53,11 @@ Le linn an treoraí socraithe, coinnigh nideoige FitSite san áireamh:
 - **Ainm cuideachta**: "FitSite" (nó ainm do bhranda roghnaithe)
 - **Lógó cuideachta**: Uaslódáil lógó do bhranda -- beidh sé seo le feiceáil ar shonraisc agus i ríomhphoist
 
-## Cumrú don Nideoige Aclaíochta
+## Cumrú don Nideoige Aclaíochta {#configuring-for-the-fitness-niche}
 
 Agus Ultimate Multisite suiteáilte, déan na roghanna cumraíochta nideoige-shonracha seo:
 
-### Socruithe Ginearálta
+### Socruithe Ginearálta {#general-settings}
 
 Téigh chuig **Ultimate Multisite > Settings** agus cumraigh:
 
@@ -65,7 +65,7 @@ Téigh chuig **Ultimate Multisite > Settings** agus cumraigh:
 - **Ról réamhshocraithe**: Riarthóir -- teastaíonn smacht iomlán ó úinéirí stiúideonna aclaíochta ar ábhar a suímh
 - **Clárú**: Cumasaigh clárú úsáideoirí ionas gur féidir le húinéirí stiúideonna clárú iad féin
 
-### Cumraíocht Ríomhphoist
+### Cumraíocht Ríomhphoist {#email-configuration}
 
 Ba chóir do ríomhphoist chórais teanga do nideoige a labhairt. Téigh chuig **Ultimate Multisite > Settings > Emails** agus saincheap:
 
@@ -75,7 +75,7 @@ Ba chóir do ríomhphoist chórais teanga do nideoige a labhairt. Téigh chuig *
 
 Déanfaidh muid iad seo a bheachtú tuilleadh i gCeacht 8 (Ionduchtú Custaiméirí), ach má shocraítear an ton anois, cinntítear go mothaíonn fiú clárúcháin tástála luatha nideoige-shonrach.
 
-### Cumraíocht Fearainn
+### Cumraíocht Fearainn {#domain-configuration}
 
 Má tá soláthraí óstála comhoiriúnach á úsáid agat, cumraigh mapáil fearainn anois:
 
@@ -85,7 +85,7 @@ Má tá soláthraí óstála comhoiriúnach á úsáid agat, cumraigh mapáil fe
 
 Cinntíonn sé seo, nuair a thosaímid ag cruthú teimpléad agus suíomhanna tástála sa chéad cheacht eile, go n-oibríonn gach rud ó cheann ceann.
 
-## Líonra FitSite Go dtí Seo
+## Líonra FitSite Go dtí Seo {#the-fitsite-network-so-far}
 
 Ag deireadh an cheachta seo, seo a bhfuil agat:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Ready for site templates (next lesson)
 ```
 
-## Cad a Thógamar sa Cheacht Seo
+## Cad a Thógamar sa Cheacht Seo {#what-we-built-this-lesson}
 
 - Suiteáil **WordPress Multisite atá ag obair** i mód fo-fhearainn
 - **Ultimate Multisite suiteáilte** agus cumraithe le brandáil FitSite

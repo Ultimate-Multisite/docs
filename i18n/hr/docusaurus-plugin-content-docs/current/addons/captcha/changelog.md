@@ -3,7 +3,7 @@ title: Dnevnik promjena za Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Dnevnik promjena za Captcha
+# Dnevnik promjena za Captcha {#captcha-changelog}
 
 Verzija: 1.5.0 - Objavljeno 2026-05-22
 * Novo: Konačni rate limiter — broji svaki GET i POST na površinama zaštićenima captchom (wp-login / registracija / izgubljena lozinka / komentari, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) i odgovara s HTTP 429, `Retry-After` headerom i nasumičnim tarpit mirovanjem (1–5 s, strogo ograničeno na 15 s).

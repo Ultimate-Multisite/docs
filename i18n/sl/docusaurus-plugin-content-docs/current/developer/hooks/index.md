@@ -3,11 +3,11 @@ title: Referenca za kljuke
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referenca za kljuke
+# Referenca za kljuke {#hooks-reference}
 
 Samodejno ustvarjena dokumentacija za vseh **59 dejanj** in **118 filtrov** v Ultimate Multisite.
 
-## Dejanja
+## Dejanja {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Sproži se pred preusmeritvijo za avtentikacijo.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Sproži se tik preden je nastavljen piškotek za avtentikacijo.
@@ -70,7 +70,7 @@ Samodejno ustvarjena dokumentacija za vseh **59 dejanj** in **118 filtrov** v Ul
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Sproži se po tem, ko je objekt shranjen v bazo podatkov.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Omogoči razvijalcem pluginov dodajanje dejanj v postopek odklepanja.
 
-## Filtri
+## Filtri {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrira trajanje obdobja poteka veljavnosti piškotka za avtentikacijo.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrira shemo preusmeritve za avtentikacijo.

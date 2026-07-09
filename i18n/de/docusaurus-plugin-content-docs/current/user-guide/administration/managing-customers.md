@@ -3,7 +3,7 @@ title: Kunden verwalten
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Kunden verwalten
+# Kunden verwalten {#managing-customers}
 
 Die Seite **Customers** zeigt die Liste der Mitglieder, die in Ihrem Netzwerk registriert sind. Diese Seite zeigt grundlegende Benutzerdaten wie Name, E-Mail-Adresse, letztes Login und einen **switch to** Link, mit dem Sie sich als Administrator in die Unterseite des Benutzers einloggen können.
 

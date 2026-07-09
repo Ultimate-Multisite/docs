@@ -3,17 +3,17 @@ title: 'Lectio 9: Pretium ad lucrum constituendum'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lectio 9: Pretium ad Lucrum
+# Lectio 9: Pretium ad Lucrum {#lesson-9-pricing-for-profit}
 
 In Lectione 5 pretia initialia pro rationibus FitSite constituimus. Nunc rationem pretiorum excolimus artibus quae reditus augent, promotiones ad rationes superiores incitant, et discessum clientium minuunt.
 
-## Ubi Desiimus
+## Ubi Desiimus {#where-we-left-off}
 
 FitSite rationes, exemplaria, processum solutionis, notam, et inductionem iam parata habet. Pretium initiale erat $49/$99/$199 per mensem. Nunc facimus ut illud pretium acrius operetur.
 
-## Principia Pretiorum pro Platformis Angustae Nichae
+## Principia Pretiorum pro Platformis Angustae Nichae {#pricing-principles-for-niche-platforms}
 
-### Pretia ex Valore, Non ex Sumptu
+### Pretia ex Valore, Non ex Sumptu {#price-on-value-not-cost}
 
 Sumptus tui hospitandi fortasse sunt $5-$15 pro situ cuiusque clientis. Id non significat pretium tuum esse debere $20. Non vendis hospitium. Vendis:
 
@@ -24,7 +24,7 @@ Sumptus tui hospitandi fortasse sunt $5-$15 pro situ cuiusque clientis. Id non s
 
 Pretium constitue secundum valorem quem praebes, non secundum sumptum eum praebendi.
 
-### Pretia ad Alternativa Ancorare
+### Pretia ad Alternativa Ancorare {#anchor-to-alternatives}
 
 Cum dominus studii exercitationis FitSite aestimat, id comparat cum:
 
@@ -34,7 +34,7 @@ Cum dominus studii exercitationis FitSite aestimat, id comparat cum:
 
 Ad $49-$199/mense, FitSite vilius est quam evolutor, aptius quam constructores generici, et infinite melius quam nullus situs interretialis.
 
-## Variationes Pretiorum Exsequendae
+## Variationes Pretiorum Exsequendae {#implementing-price-variations}
 
 Pretium annuum obligationem fovet et discessum minuit. Naviga ad tabulam **Variationes Pretiorum** cuiusque rationis et optiones annuas adde:
 
@@ -46,12 +46,12 @@ Pretium annuum obligationem fovet et discessum minuit. Naviga ad tabulam **Varia
 
 Adde campum **Selectio Periodi** formae solutionis tuae, ut clientes inter rationem menstruam et annuam commutare possint. Vide [Formae Solutionis](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Cur Pretium Annuum Efficax Sit
+### Cur Pretium Annuum Efficax Sit {#why-annual-pricing-works}
 
 - **Tibi**: Pecunia initio accepta, minor discessus (clientes qui annuatim solvunt minus verisimile est medio tempore rescindere)
 - **Illis**: Vera pars servata, praedictibilitas rationis pecuniariae
 
-## Merces Institutionis
+## Merces Institutionis {#setup-fees}
 
 Considera mercedem institutionis semel solvendam pro rationibus quae configurationem manu factam includunt:
 
@@ -61,7 +61,7 @@ Considera mercedem institutionis semel solvendam pro rationibus quae configurati
 
 Configura mercedes institutionis in sectione pretiorum cuiusque rationis. Vide [Creare Primum Productum Subscriptionis Tuum](/user-guide/configuration/creating-your-first-subscription-product) pro singulis.
 
-## Tempora Probationis
+## Tempora Probationis {#trial-periods}
 
 Probationem offerre difficultatem inscriptionis minuit, sed periculum non-conversionis introducit. Pro FitSite:
 
@@ -70,11 +70,11 @@ Probationem offerre difficultatem inscriptionis minuit, sed periculum non-conver
 
 Configura probationem in sectione pretiorum rationis Starter, commutatione **Offerre Probationem** activa et duratione ad 7 dies posita.
 
-### Quomodo Probationes Convertant
+### Quomodo Probationes Convertant {#making-trials-convert}
 
 Probatio tantum valet si cliens valorem intra tempus probationis experitur. Series inductionis tua (Lectio 8) hic critica est -- epistulae salutatoriae ita temporandae sunt ut implicationem intra fenestram 7 dierum impellant.
 
-## Codices Deductionis
+## Codices Deductionis {#discount-codes}
 
 Crea codices deductionis strategicos ad fines certos:
 
@@ -88,7 +88,7 @@ Naviga ad **Ultimate Multisite > Codices Deductionis** ut hos crees. Vide [Crear
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Administratio Tributorum
+## Administratio Tributorum {#tax-handling}
 
 Si operaris in iurisdictione quae collectionem tributorum requirit:
 
@@ -98,7 +98,7 @@ Si operaris in iurisdictione quae collectionem tributorum requirit:
 
 Vide [Administratio Tributorum](/user-guide/payment-gateways/tax-handling) pro configuratione accurata. Si clientes internationaliter servis, considera [VAT additamentum](/addons/vat) ad conformitatem UE.
 
-## Pretia Tua Recensere
+## Pretia Tua Recensere {#reviewing-your-pricing}
 
 Post inaugurationem, pretia singulis trimestribus revisita. Inspice:
 
@@ -107,7 +107,7 @@ Post inaugurationem, pretia singulis trimestribus revisita. Inspice:
 - **Discessus per rationem**: Si clientes annui minus discedunt, pretium annuum acrius promove
 - **Pretia competitorum**: Quantum alternativa exigunt? Recte locatus es?
 
-## Rete FitSite Usque Nunc
+## Rete FitSite Usque Nunc {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Quid Hac Lectione Aedificaverimus
+## Quid Hac Lectione Aedificaverimus {#what-we-built-this-lesson}
 
 - **Pretia annua** cum 20% deductione ad obligationem fovendam
 - **Mercedēs institutionis** in gradibus superioribus ad laborem initiationis tegendum

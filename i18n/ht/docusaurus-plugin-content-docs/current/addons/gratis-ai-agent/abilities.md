@@ -3,7 +3,7 @@ title: Referans Kapasite yo
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referans Kapasite yo
+# Referans Kapasite yo {#abilities-reference}
 
 Kapasite yo se aksyon atomik Gratis AI Agent ka envoke sou enstalasyon WordPress ou a. Chak kapasite se yon klas PHP ki anrejistre epi ki ekspoze yon chema JSON — ajan an li chema sa a pandan ekzekisyon pou konprann ki paramèt ki obligatwa ak sa kapasite a retounen.
 
@@ -11,11 +11,11 @@ Paj sa a dokimante tout kapasite ki vini ak Gratis AI Agent v1.9.0.
 
 ---
 
-## Kalite Pòs Pèsonalize
+## Kalite Pòs Pèsonalize {#custom-post-types}
 
 Kapasite sa yo jere kalite pòs pèsonalize (CPTs) ki anrejistre atravè ajan an. Anrejistreman yo konsève nan tablo opsyon WordPress la pou yo kontinye egziste apre dezaktivasyon ak reyaktivasyon plugin lan.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Anrejistre yon nouvo kalite pòs pèsonalize.
 
@@ -50,7 +50,7 @@ Anrejistre yon nouvo kalite pòs pèsonalize.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Retounen tout kalite pòs pèsonalize ajan an anrejistre.
 
@@ -73,7 +73,7 @@ Retounen tout kalite pòs pèsonalize ajan an anrejistre.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Dezanrejistre yon kalite pòs pèsonalize ajan an te anrejistre anvan. Pòs ki deja egziste nan kalite sa a rete nan baz done a men yo pa aksesib ankò atravè kalite pòs la.
 
@@ -87,11 +87,11 @@ Dezanrejistre yon kalite pòs pèsonalize ajan an te anrejistre anvan. Pòs ki d
 
 ---
 
-## Taksonomi Pèsonalize
+## Taksonomi Pèsonalize {#custom-taxonomies}
 
 Kapasite sa yo jere taksonomi pèsonalize. Menm jan ak CPTs, anrejistreman taksonomi yo konsève.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Anrejistre yon nouvo taksonomi pèsonalize.
 
@@ -123,7 +123,7 @@ Anrejistre yon nouvo taksonomi pèsonalize.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Retounen tout taksonomi pèsonalize ajan an anrejistre.
 
@@ -146,7 +146,7 @@ Retounen tout taksonomi pèsonalize ajan an anrejistre.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Dezanrejistre yon taksonomi pèsonalize ajan an te anrejistre anvan.
 
@@ -160,11 +160,11 @@ Dezanrejistre yon taksonomi pèsonalize ajan an te anrejistre anvan.
 
 ---
 
-## Sistèm Konsepsyon
+## Sistèm Konsepsyon {#design-system}
 
 Kapasite sistèm konsepsyon yo modifye prezantasyon vizyèl sit WordPress la — soti nan CSS pèsonalize rive nan modèl blòk ak logo sit la.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Ajoute CSS nan `<head>` sit la atravè `wp_add_inline_style`. CSS la estoke nan opsyon `gratis_ai_agent_custom_css` epi yo retire li pwòpman nan keu lè kapasite a reset.
 
@@ -190,7 +190,7 @@ Ajoute CSS nan `<head>` sit la atravè `wp_add_inline_style`. CSS la estoke nan 
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Anrejistre yon modèl blòk ki ka reyitilize nan bibliyotèk modèl WordPress la.
 
@@ -209,7 +209,7 @@ Anrejistre yon modèl blòk ki ka reyitilize nan bibliyotèk modèl WordPress la
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Fè lis tout modèl blòk ajan an anrejistre.
 
@@ -231,7 +231,7 @@ Fè lis tout modèl blòk ajan an anrejistre.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Mete logo sit WordPress la sou yon ID atachman yo bay oswa yon URL imaj aleka. Lè yo bay yon URL, yo telechaje imaj la epi yo enpòte li nan Bibliyotèk Medya a.
 
@@ -248,7 +248,7 @@ Youn nan `attachment_id` oswa `url` dwe bay.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Aplike yon preset koulè/tipografi ki gen non sou `theme.json` tèm aktif la (oswa `global-styles`). Preset yo se pake byen chwazi ekip Gratis AI Agent la kenbe.
 
@@ -273,11 +273,11 @@ Aplike yon preset koulè/tipografi ki gen non sou `theme.json` tèm aktif la (os
 
 ---
 
-## Estil Global
+## Estil Global {#global-styles}
 
 Kapasite Estil Global yo li epi ekri valè theme.json atravè WordPress Global Styles API a, sa ki afekte tout blòk ak modèl sou tout sit la.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Retounen konfigirasyon estil global aktyèl la.
 
@@ -291,7 +291,7 @@ Retounen konfigirasyon estil global aktyèl la.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Mete ajou youn oswa plis valè nan konfigirasyon estil global la.
 
@@ -318,7 +318,7 @@ Mete ajou youn oswa plis valè nan konfigirasyon estil global la.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Reyinisyalize tout chanjman estil global ajan an te aplike yo, epi retabli defo tèm nan.
 
@@ -328,11 +328,11 @@ Reyinisyalize tout chanjman estil global ajan an te aplike yo, epi retabli defo 
 
 ---
 
-## Meni Navigasyon
+## Meni Navigasyon {#navigation-menus}
 
 Kapasite Meni Navigasyon yo kreye epi jere meni navigasyon WordPress ak atik yo.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Kreye yon nouvo meni navigasyon WordPress.
 
@@ -347,7 +347,7 @@ Kreye yon nouvo meni navigasyon WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Chanje non yon meni oswa reasiyen li nan yon kote tèm.
 
@@ -363,7 +363,7 @@ Chanje non yon meni oswa reasiyen li nan yon kote tèm.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Ajoute yon atik nan yon meni navigasyon ki deja egziste.
 
@@ -383,7 +383,7 @@ Ajoute yon atik nan yon meni navigasyon ki deja egziste.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Retire yon atik nan yon meni navigasyon.
 
@@ -397,7 +397,7 @@ Retire yon atik nan yon meni navigasyon.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Lis tout meni navigasyon WordPress, ansanm ak kote tèm yo asiyen yo.
 
@@ -420,11 +420,11 @@ Lis tout meni navigasyon WordPress, ansanm ak kote tèm yo asiyen yo.
 
 ---
 
-## Jesyon Opsyon
+## Jesyon Opsyon {#options-management}
 
 Kapasite opsyon yo li epi ekri opsyon WordPress atravè `get_option` / `update_option`. Yon blocklist sekirite entegre anpeche modifikasyon aksidantèl paramèt kritik yo.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Li yon opsyon WordPress.
 
@@ -440,7 +440,7 @@ Retounen yon erè si `option_name` sou blocklist sekirite a.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Ekri yon opsyon WordPress.
 
@@ -458,7 +458,7 @@ Retounen yon erè si `option_name` sou lis blòk sekirite a.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Efase yon opsyon WordPress.
 
@@ -474,7 +474,7 @@ Retounen yon erè si `option_name` sou lis blòk sekirite a.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Lis opsyon WordPress ki matche ak yon modèl.
 
@@ -498,11 +498,11 @@ Lis opsyon WordPress ki matche ak yon modèl.
 
 ---
 
-## Jesyon Kontni
+## Jesyon Kontni {#content-management}
 
 Kapasite Jesyon Kontni yo kreye epi modifye pòs ak paj WordPress. Yo retounen ID pòs yo pou etap ki vin apre nan plan milti-kapasite yo ka refere ak kontni ki te kreye a.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Kreye yon nouvo pòs WordPress, paj, oswa antre kalite pòs pèsonalize.
 
@@ -537,7 +537,7 @@ Kreye yon nouvo pòs WordPress, paj, oswa antre kalite pòs pèsonalize.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Mete ajou yon pòs oswa paj WordPress ki deja egziste.
 
@@ -567,7 +567,7 @@ Mete ajou yon pòs oswa paj WordPress ki deja egziste.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Kreye plizyè pòs nan yon sèl apèl kapasite, sa ki diminye ale-vini pandan konstriksyon sit oswa enpòtasyon kontni an gwo. Pòs yo kreye youn apre lòt; si youn echwe, lòt yo kontinye epi echèk la rapòte nan array rezilta a.
 
@@ -619,7 +619,7 @@ Kreye plizyè pòs nan yon sèl apèl kapasite, sa ki diminye ale-vini pandan ko
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Asiyen yon imaj vedèt (miniati pòs) ak yon pòs oswa paj ki deja egziste. Aksepte yon ID atachman Media Library ki deja egziste oswa yon URL imaj aleka; lè yo bay yon URL, imaj la telechaje epi enpòte otomatikman.
 
@@ -638,7 +638,7 @@ Youn nan `attachment_id` oswa `url` dwe bay.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Kreye yon fòm kontak lè l sèvi ak plugin fòm aktif la (Contact Form 7, WPForms, Fluent Forms, oswa Gravity Forms, selon sa ki enstale). Retounen yon shortcode ki ka entegre nan nenpòt pòs oswa paj.
 
@@ -691,11 +691,11 @@ Kreye yon fòm kontak lè l sèvi ak plugin fòm aktif la (Contact Form 7, WPFor
 
 ---
 
-## Revizyon Vizyèl
+## Revizyon Vizyèl {#visual-review}
 
 Kapasite Revizyon Vizyèl yo pèmèt agent lan pran ekran paj an dirèk epi analize yo, sa ki rann posib revizyon konsepsyon otonòm, konparezon anvan/apre, ak verifikasyon regresyon vizyèl san mande okenn ekstansyon navigatè.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Pran yon ekran yon paj WordPress nan yon URL yo bay avèk yon navigatè headless bò sèvè. Imaj la sove nan Media Library epi yo retounen yon URL CDN.
 
@@ -724,7 +724,7 @@ Pran yon ekran yon paj WordPress nan yon URL yo bay avèk yon navigatè headless
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Pran de ekran epi retounen yon nòt diferans vizyèl ansanm ak yon imaj diferans ki mete aksan sou zòn ki chanje yo. Itil pou konfime yon chanjman konsepsyon bay rezilta yo te espere a oswa pou detekte regresyon ki pa t entansyonèl.
 
@@ -754,7 +754,7 @@ Yon `diff_score` ki se `0.0` vle di pa gen okenn chanjman vizib; `1.0` vle di ch
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Pran yon ekran yon paj epi voye li bay modèl lang lan pou analiz vizyèl. Retounen yon evalyasyon estriktire ki kouvri aranjman, tipografi, itilizasyon koulè, ak enkyetid aksesibilite.
 
@@ -785,11 +785,11 @@ Pran yon ekran yon paj epi voye li bay modèl lang lan pou analiz vizyèl. Retou
 
 ---
 
-## Kapasite ki ka Enstale
+## Kapasite ki ka Enstale {#installable-abilities}
 
 Rejis Kapasite ki ka Enstale a pèmèt ou elaji agent lan ak pake kapasite adisyonèl ki distribye kòm plugin WordPress. Chak pake anrejistre youn oswa plizyè kapasite lè l sèvi ak API kapasite estanda a.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Retounen katalòg pake kapasite ki disponib pou enstalasyon nan rejis la.
 
@@ -818,7 +818,7 @@ Retounen katalòg pake kapasite ki disponib pou enstalasyon nan rejis la.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Telechaje epi aktive yon pake kapasite depi rejis la.
 
@@ -832,7 +832,7 @@ Telechaje epi aktive yon pake kapasite depi rejis la.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Fè rechèch nan rejis kapasite a pou jwenn pi bon plugin pou yon ka itilizasyon ki dekri epi, si ou vle, enstale li.
 

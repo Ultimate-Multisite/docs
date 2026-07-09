@@ -4,11 +4,11 @@ title: Chochita - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 Imayambitsidwa nthawi yomweyo cookie yotsimikizira ya olowa ikangotsala pang'ono kukhazikitsidwa.
 
-## Ma Parameter
+## Ma Parameter {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Imayambitsidwa nthawi yomweyo cookie yotsimikizira ya olowa ikangotsala pang'ono
 | $scheme | `string` | Njira yotsimikizira. Zokhazikika 'logged_in'. |
 | $token | `string` | Token ya session ya wogwiritsa ntchito yogwiritsa ntchito pa cookie iyi. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) pa mzere 141

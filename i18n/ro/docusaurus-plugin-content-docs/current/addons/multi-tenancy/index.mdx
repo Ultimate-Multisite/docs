@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-tenancy
+# Multi-tenancy {#multi-tenancy}
 
 Distribuiți subsite-uri pe servere și baze de date pentru performanță și securitate
 
-## Reperele lansării versiunii 1.2.0
+## Reperele lansării versiunii 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 adaugă fundația pentru chiriași suverani pentru fluxuri de lucru de izolare în producție:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 adaugă fundația pentru chiriași suverani pentru fluxuri d
 
 Consultați ghidurile de utilizare pentru [fluxul de lucru al migrării suverane](/user-guide/getting-started/sovereign-migration-workflow), [izolarea multi-tenancy](/user-guide/configuration/multi-tenancy-isolation) și [operațiunile chiriașilor suverani](/user-guide/administration/sovereign-tenant-operations).
 
-## Cerințe
+## Cerințe {#requirements}
 
 - WordPress 5.3 sau mai recent
 - PHP 7.4 sau mai recent
 - Multisite Ultimate plugin (activ)
 
-## Instalare
+## Instalare {#installation}
 
 1. Încărcați fișierele addon-ului în directorul dvs. `/wp-content/plugins/`
 2. Activați plugin-ul prin meniul „Plugins” din WordPress
 3. Configurați setările addon-ului în administrarea rețelei
 
-## Dezvoltare
+## Dezvoltare {#development}
 
-### Configurare
+### Configurare {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structura proiectului
+### Structura proiectului {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Reguli de modernizare a codului
 ```
 
-### Testare
+### Testare {#testing}
 
 Addon-ul include un cadru de testare cuprinzător:
 
@@ -93,54 +93,54 @@ Addon-ul include un cadru de testare cuprinzător:
 - **Acoperire teste**: Configurat pentru a urmări acoperirea codului
 - **Testare Multisite**: Testele rulează într-un mediu multisite
 
-### Standarde de cod
+### Standarde de cod {#code-standards}
 
 - **Standarde de codare WordPress**: Impuse prin PHPCS
 - **Compatibilitate PHP 7.4+**: Funcționalități PHP moderne acceptate
 - **Analiză statică**: Integrare PHPStan pentru verificarea tipurilor
 - **Modernizare cod**: Reguli Rector pentru upgrade-uri PHP
 
-### Sistem de build
+### Sistem de build {#build-system}
 
 - **Procesare resurse**: Minificare pentru fișiere CSS/JS
 - **Traducere**: Generare fișier POT
 - **Împachetare**: Creare arhivă pentru distribuție
 - **Mod dezvoltare**: Resurse neminificate pentru depanare
 
-## Configurare
+## Configurare {#configuration}
 
 Addon-ul acceptă diverse opțiuni de configurare accesibile prin interfața de administrare a rețelei.
 
-### Configurarea chiriașului suveran
+### Configurarea chiriașului suveran {#sovereign-tenant-configuration}
 
 Pentru chiriași suverani, configurați baza de date a chiriașului, rădăcina sistemului de fișiere, legarea gazdei bazei de date și capacitatea gazdei înainte de a direcționa traficul către chiriaș. Rulați verificarea migrării după fiecare modificare care afectează credențialele bazei de date, legarea gazdei, rutarea sau provizionarea utilizatorilor.
 
 Folosiți `localhost` numai atunci când runtime-ul chiriașului și privilegiile bazei de date așteaptă acces prin socket local sau de pe aceeași mașină. Folosiți `127.0.0.1` sau un hostname de serviciu atunci când aceasta este gazda privilegiilor configurată de furnizorul dvs.
 
-### Capacitate Hostinger
+### Capacitate Hostinger {#hostinger-capability}
 
 Capacitatea Hostinger multi-tenancy funcționează cu tokenul de integrare Hostinger partajat. Confirmați că domeniul este prezent în hPanel, DNS indică spre contul Hostinger și setările bazei de date a chiriașului corespund cu hPanel înainte de verificare.
 
-## Hook-uri și filtre
+## Hook-uri și filtre {#hooks-and-filters}
 
-### Acțiuni
+### Acțiuni {#actions}
 
 - `ultimate-multisite-addon-template_init` - Declanșat după inițializarea addon-ului
 - `ultimate-multisite-addon-template_loaded` - Declanșat după ce toate fișierele addon-ului sunt încărcate
 
-### Filtre
+### Filtre {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modificați setările addon-ului
 - `ultimate-multisite-addon-template_enabled` - Suprascrieți starea de activare/dezactivare a addon-ului
 
-## Licență
+## Licență {#license}
 
 Acest addon este licențiat sub GPL v3 sau ulterior.
 
-## Suport
+## Suport {#support}
 
 Pentru suport și documentație, vizitați [MultisiteUltimate.com](https://multisiteultimate.com)
-## Jurnal de modificări
+## Jurnal de modificări {#changelog}
 
 - Versiunea 1.2.0 (2026-06-03): adaugă autologin pentru chiriași fără stare, capacitate Hostinger multi-tenancy, izolare per subsite a bazei de date și a sistemului de fișiere, porți de verificare a migrării suverane, îmbunătățiri pentru inițializarea chiriașului/scriitorul bazei de date, legare configurabilă a gazdei MySQL și dezafectare suverană mai sigură.
 

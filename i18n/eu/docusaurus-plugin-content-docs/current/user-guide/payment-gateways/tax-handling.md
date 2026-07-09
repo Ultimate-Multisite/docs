@@ -3,7 +3,7 @@ title: Zergen kudeaketa
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Zergen kudeaketa
+# Zergen kudeaketa {#tax-handling}
 
 Ultimate Multisite-k zergak biltzeko modulu bat dauka gure core plugin-ean integratuta; beraz, zure plan, pakete eta zerbitzuetan salmenta-zergak bildu behar badituzu, erraz egin dezakezu hori inolako add-on instalatu beharrik gabe.
 
@@ -11,7 +11,7 @@ Europan kokatutako enpresentzat, **add-on** bat eskaintzen dugu, **BEZaren** bet
 
 Ultimate Multisite-k ez ditu zergak zure izenean gobernuari aurkezten edo ordaintzen; transakzioaren unean dagozkion zergak biltzen laguntzen dizugu soilik. **Zergak zuk zeuk ordaindu beharko dituzu hala ere.**
 
-## Zergen bilketa gaitzea
+## Zergen bilketa gaitzea {#enabling-tax-collection}
 
 Zergen bilketa ez dago lehenespenez gaituta. Gaitzeko, **Ultimate Multisite > Ezarpenak > Zergak** atalera joan behar duzu eta Zergak gaitu ezarpena gaitzeko etengailua aktibatu.
 
@@ -25,7 +25,7 @@ Banakako produktuen zergen ezarpenak ere ikus ditzakezu:
 
 ![Produktuen zergen ezarpenak](/img/config/settings-taxes.png)
 
-### Zerga kanpo vs. zerga barne
+### Zerga kanpo vs. zerga barne {#tax-excluded-vs-tax-included}
 
 Lehenespenez, zure produktu-prezio guztiek zergak kanpo dituzte; horrek esan nahi du zergak **ez daudela sartuta** produktuaren prezioan. Bezero batek erosketa jakin batean zergak ordaindu behar dituela zehazten badugu, zergak subtotalaren **gainetik** gehituko ditugu.
 
@@ -37,7 +37,7 @@ Ez ahaztu egin dituzun aldaketak **gordetzea**.
 
 ###
 
-## Zerga-tasak sortzea
+## Zerga-tasak sortzea {#creating-tax-rates}
 
 Zergen bilketa gaitu ondoren, kokapen zehatzetarako zerga-tasak sortu beharko dituzu gure zerga-tasen editorea erabiliz.
 
@@ -51,7 +51,7 @@ Zerga-tasen editorearen orrian, zerga-tasa berriak gehi ditzakezu **Gehitu erren
 
 Zerga-tasa bakoitzari **izenburu** bat eman beharko diozu (fakturetan erabiltzen da). Ondoren, zerga hori kobratuko den **herrialdea** (nahitaezkoa), **estatua,** eta **hiria** (biak aukerakoak) hauta ditzakezu. Azkenik, gehitu **zerga-tasa ehunekotan**.
 
-### Zerga-kategoriak
+### Zerga-kategoriak {#tax-categories}
 
 Zerga-kategoria anitz ere sor ditzakezu, produktu mota desberdinetarako zerga-tasa desberdinak gehitzeko.
 
@@ -73,7 +73,7 @@ Produktu jakin baterako zerga-kategoria ezar dezakezu **Produktuaren edizio-orri
 
 Pantaila berean, **Zergapekoa da?** etengailua desaktiba dezakezu, Ultimate Multisite-ri produktu jakin horretan zergarik bildu behar ez duela jakinarazteko.
 
-## Europako BEZaren euskarria
+## Europako BEZaren euskarria {#european-vat-support}
 
 Lehen aipatu bezala, EBko bezeroentzat add-on bat dugu eskuragarri, Europako BEZaren araudiaren ondorioz betekizun gehigarriak dituztenentzat.
 
@@ -101,7 +101,7 @@ Ondoren, joan **Sareko administrazioa > Pluginak** atalera eta aktibatu add-on h
 
 <!-- Pantaila-argazkia ez dago eskuragarri: Gaitu BEZ euskarria etengailua Zergen ezarpenetan add-on-a aktibatu ondoren -->
 
-### BEZaren zerga-tasak eskuratzea
+### BEZaren zerga-tasak eskuratzea {#pulling-on-vat-tax-rates}
 
 Gure integrazioak gehitzen duen tresnetako bat EBko estatu kideen zerga-tasak kargatzeko gaitasuna da. Hori egin daiteke zerga-tasen editorearen orria bisitatuz EBko BEZ euskarria gaitu ondoren.
 
@@ -111,7 +111,7 @@ Orriaren behealdean, BEZ tasak eskuratzeko aukerak ikusiko dituzu. Tasa mota bat
 
 Balioak eskuratu ondoren ere edita ditzakezu. Horretarako, editatu behar duzun taularen lerroa eta egin klik balio berriak gordetzeko.
 
-### BEZaren balioztatzea
+### BEZaren balioztatzea {#vat-validation}
 
 BEZ euskarria gaituta dagoenean, Ultimate Multisite-k eremu gehigarri bat gehituko dio checkout inprimakiari, fakturazio-helbidearen eremuaren azpian. Eremua EBn kokatutako bezeroentzat soilik agertuko da.
 

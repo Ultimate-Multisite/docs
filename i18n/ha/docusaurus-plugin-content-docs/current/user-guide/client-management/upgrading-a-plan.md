@@ -3,7 +3,7 @@ title: Fara wani tsari
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Tarinke Wani (v2)
+# Tarinke Wani (v2) {#upgrading-a-plan-v2}
 
 _**MUHIMMIYA MAIYAR: wannan makala tana nufin Ultimate Multisite vershon 2.x.**_
 
@@ -41,7 +41,7 @@ Bayan an kammala biyan kuɗi (checkout), sabbin kayayyaki za su ƙara a cikin as
 
 ##
 
-## Shika da Canza Matakin Biya (Upgrade and Downgrade Paths)
+## Shika da Canza Matakin Biya (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 A kowane kayayyaki ku, za ku sami tab mai suna **Up & Downgrades**. Zaɓin farko a wannan tab yana wani makonshiya mai suna **Plan Group**.
 

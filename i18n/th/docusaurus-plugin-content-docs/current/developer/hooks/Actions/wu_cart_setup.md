@@ -4,19 +4,19 @@ title: การดำเนินการ - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Action: wu_cart_setup
+# Action: wu_cart_setup {#action-wucartsetup}
 
 ใช้สำหรับให้นักพัฒนาสามารถปรับแต่งอ็อบเจกต์ตะกร้าสินค้า (checkout object) ได้เพิ่มเติม
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $this | `` | \WP_Ultimo\Checkout\Cart อ็อบเจกต์ตะกร้าสินค้า |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 กำหนดไว้ใน [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L333) บรรทัดที่ 333

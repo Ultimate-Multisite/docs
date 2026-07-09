@@ -4,11 +4,11 @@ title: Filter - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status
+# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Filtert d'Objektdaten, ier se an der Datebank gespäichert ginn.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtert d'Objektdaten, ier se an der Datebank gespäichert ginn.
 | $post_type | `string` | De Post-Typ. |
 | $this | `\Base_Model` | D'Objektinstanz. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) op Linn 320

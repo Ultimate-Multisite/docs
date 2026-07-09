@@ -3,7 +3,7 @@ title: PRO තේමාව
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# ඔබේ Admin Panel එක PRO Theme එකෙන් වෙනස් කරගන්න
+# ඔබේ Admin Panel එක PRO Theme එකෙන් වෙනස් කරගන්න {#customizing-your-admin-panel-with-pro-theme}
 
 Client වැඩ කරනකොට බොහෝ වෙලාවට WordPress dashboard එකේ custom experience එකක් අපේ client ළඟ දෙන්න ඕනේ වගේ තත්ත්වයක් එනවා. ඔයාට වඩාත් වෘත්තීය පෙනුමක් සහ හැඟීමක් හොයන්නේ නම්, PRO Theme එක ඔබට උදව් කරන්න පුළුවන්.
 

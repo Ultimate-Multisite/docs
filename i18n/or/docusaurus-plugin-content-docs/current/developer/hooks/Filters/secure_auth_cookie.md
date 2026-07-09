@@ -4,20 +4,20 @@ title: ଫିଲ୍ଟର - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filter: secure_auth_cookie
+# Filter: secure_auth_cookie {#filter-secureauthcookie}
 
 auth cookie କେବଳ HTTPS ଉପରେ ପଠାଯିବ କି ନାହିଁ, ତାହା filter କରେ।
 
-## ପାରାମିଟରଗୁଡ଼ିକ
+## ପାରାମିଟରଗୁଡ଼ିକ {#parameters}
 
 | ନାମ | ପ୍ରକାର | ବିବରଣୀ |
 |------|------|-------------|
 | $secure | `bool` | cookie କେବଳ HTTPS ଉପରେ ପଠାଯିବ କି ନାହିଁ। |
 | $user_id | `int` | User ID. |
 
-### ଯେହେତୁ
+### ଯେହେତୁ {#since}
 
 - 3.1.0
-### ଉତ୍ସ
+### ଉତ୍ସ {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) ରେ 80 ନମ୍ବର ଲାଇନରେ ପରିଭାଷିତ।

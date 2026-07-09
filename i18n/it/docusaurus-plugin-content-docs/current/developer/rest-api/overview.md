@@ -3,28 +3,28 @@ title: Panoramica della REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Riferimento REST API
+# Riferimento REST API {#rest-api-reference}
 
-## Configurazione di base
+## Configurazione di base {#base-configuration}
 
 **URL di base:** `{site_url}/wp-json/wu/v2/`
 **Autenticazione:** API Key e Secret (HTTP Basic Auth o parametri URL)
 
-## Autenticazione
+## Autenticazione {#authentication}
 
-### Abilita API
+### Abilita API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Ottieni le credenziali API
+### Ottieni le credenziali API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metodi di autenticazione
+### Metodi di autenticazione {#authentication-methods}
 
 **HTTP Basic Auth (consigliato):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoint principali
+## Endpoint principali {#core-endpoints}
 
-### 1. API Clienti
+### 1. API Clienti {#1-customers-api}
 
 **Route di base:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Siti
+### 2. API Siti {#2-sites-api}
 
 **Route di base:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Membership
+### 3. API Membership {#3-memberships-api}
 
 **Route di base:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Prodotti
+### 4. API Prodotti {#4-products-api}
 
 **Route di base:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Pagamenti
+### 5. API Pagamenti {#5-payments-api}
 
 **Route di base:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Domini
+### 6. API Domini {#6-domains-api}
 
 **Route di base:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint di registrazione
+## Endpoint di registrazione {#registration-endpoint}
 
 L'endpoint `/register` fornisce un flusso completo di checkout/registrazione:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint tenant sovrani
+## Endpoint tenant sovrani {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 aggiunge la copertura REST per tenant sovrani per integrazioni che effettuano provisioning, ispezionano o verificano tenant isolati.
 
@@ -242,7 +242,7 @@ Le risposte tipiche dello stato di migrazione includono:
 
 Considera `ready: false` come un blocco pre-lancio. Controlla i dettagli della verifica, risolvi il problema di binding dell'host del database, coda, provisioning utente o routing, quindi riprova la verifica.
 
-## Risposte di errore
+## Risposte di errore {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Considera `ready: false` come un blocco pre-lancio. Controlla i dettagli della v
 }
 ```
 
-## Paginazione e filtri
+## Paginazione e filtri {#pagination-and-filtering}
 
 **Parametri query:**
 ```http

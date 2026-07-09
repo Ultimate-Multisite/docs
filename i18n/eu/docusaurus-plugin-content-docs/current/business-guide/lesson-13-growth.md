@@ -3,19 +3,19 @@ title: 'Lehen Udalak: Eskala Uparra'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ustea 13: Eskala
+# Ustea 13: Eskala {#lesson-13-scaling-up}
 
 Esku-er plataforma dagoen, iragailariak (paying customers) dut. Hau eskaia da zerrendatutako operazio bat txiki operazio bat bizitoriko negozio batean transformatzeko aukera jakostea — infraestruktura eskala egin, operazio automatikatu eta iragailari pertsona erabilgararen handiagoa.
 
-## Nondatu Zerriak
+## Nondatu Zerriak {#where-we-left-off}
 
 FitSite dagoen da, iragailariek emateko dut, eta eguneroko operazioak egiten duzu. Arriba aukera jakostea eskala gainditzean dago.
 
-## Jakitu Zerriak
+## Jakitu Zerriak {#know-your-numbers}
 
 Eskalatu aurretik, nola dagoen jakin:
 
-### Metrikak Nagusiak (Key Metrics)
+### Metrikak Nagusiak (Key Metrics) {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Mensual abonazioa erabilgarria heltzen duten diru
 - **Iragailariak ezartzeko kopurua**: Aktibo abonatutako iragailariek guztira
@@ -24,7 +24,7 @@ Eskalatu aurretik, nola dagoen jakin:
 - **LTV (Lifetime Value / Erpenaren Leburra)**: Iragailari bat pertsona erabilgarria abonazio guztia badirean zeharren arkatasuna
 - **CAC (Customer Acquisition Cost / Iragailari erabilgararen kostua)**: Iragailari bat erabilgarri hartzeko arkatasunea
 
-### Mendia: FitSite 50 Iragailariarekin
+### Mendia: FitSite 50 Iragailariarekin {#example-fitsite-at-50-customers}
 
 | Metrika | Arfia |
 |--------|-------|
@@ -36,9 +36,9 @@ Eskalatu aurretik, nola dagoen jakin:
 
 Metrikak hauek da zerren jakin behar duzu zer. Churn handi dago? Erretzen (retention) erregitu. ARPU txiki dago? Upgrade-ek emateko. CAC handia dago? Iragailari hartzeko kanalen optimizatu.
 
-## Infraestruktura Eskalatu
+## Infraestruktura Eskalatu {#scaling-infrastructure}
 
-### Eskala egin horrek
+### Eskala egin horrek {#when-to-scale}
 
 Eskala egin hostingan horrek:
 
@@ -47,7 +47,7 @@ Eskala egin hostingan horrek:
 - 100+ webgune gertu daude
 - Klientzak eragiketa handiaren artean eskaintzen duten
 
-### Ondo eta handitu (Scaling)
+### Ondo eta handitu (Scaling) {#how-to-scale}
 
 - **Vertical scaling**: Server lehenago bat (CPU, RAM gehiak) ere.
 - **Caching layers**: Object caching-ek piztu Redis/Memcached, estatik kontentuen cache-ek piztu page caching.
@@ -55,7 +55,7 @@ Eskala egin hostingan horrek:
 - **Database optimizazioa**: Ainetik handitu ondoren, database query-ak lento dira. Tabluek optimizatu, index-ek gehiago ematen, dedicated database server bat iruditu.
 - **Ezterpenak eskaintzea (Separate concerns)**: Media storage-ak object storage (S3-compatible) ere, email-ak transaksional email service batean ezarri.
 
-### Hosting migrazioa
+### Hosting migrazioa {#hosting-migration}
 
 Aktual host-ek handiago ez duenean, migrazio planatu behar da:
 
@@ -65,11 +65,11 @@ Aktual host-ek handiago ez duenean, migrazio planatu behar da:
 4. TTL-ek txikiak den bitartean DNS update egin
 5. Migrazioaren ondoren guztia funtzionatzen duen eragitu
 
-## Operazioak automatizatu
+## Operazioak automatizatu {#automating-operations}
 
 Handiago ondoren, manual process-ek bide-erri dira. Zerbait automatizatu dezakezu:
 
-### Webhooks eta Zapier
+### Webhooks eta Zapier {#webhooks-and-zapier}
 
 Automatizatzeko [Webhooks](/user-guide/integrations/webhooks) edo [Zapier](/user-guide/integrations/zapier) eratu:
 
@@ -78,7 +78,7 @@ Automatizatzeko [Webhooks](/user-guide/integrations/webhooks) edo [Zapier](/user
 - **Payment failures** → monitoring tool-an alert ematen
 - **Plan upgrades** → berria funtzioa gisa congratulations email
 
-### Email Automation
+### Email Automation {#email-automation}
 
 Manual emailak dari automated sequence-etako irikizitu:
 
@@ -87,23 +87,23 @@ Manual emailak dari automated sequence-etako irikizitu:
 - Plan limitara aprobetzen kliente berekin
 - Annual abonatuetarako berri egindura aldatzeko remindrialak
 
-### Support Automation
+### Support Automation {#support-automation}
 
 - **Canned responses** (Eskonaren erantzunak) común jardutza-gailuak
 - **Auto-replies** (Auto-erantzunak) suporta ticket-ek barkatu dutenean
 - **Knowledge base suggestions** (Mendataritza-baseko sugerentziak) klienteak artikulu ezberdinetan batzen duen ticket-ek iraditzen duenean
 
-## Revenue Gain
+## Revenue Gain {#increasing-revenue}
 
 Gainazioa berria kliuntzak gehiago ez da. Kliiente pertsona bat gaur eguneko erreguntzak gehiago da.
 
-### Existing Customers-ek Upselling (Gaur eguneko Kliente-ek Prozesu)
+### Existing Customers-ek Upselling (Gaur eguneko Kliente-ek Prozesu) {#upselling-existing-customers}
 
 - **Plan upgrades** (Plan-ak handitu): Starter kliente-ek Growth/Pro funtunaldeak erakusten duen kampainiak
 - **Order bumps** (Orden-gainazioa): Emailen bidez gaur eguneko kliente-ek beste produkzioak iraditzen dena
 - **Annual conversion** (Annual aldatu): Monthly abonatuetara diskontua teklatzea annual billing-era aldatzeko
 
-### New Revenue Streams (Berria Erreguntzak)
+### New Revenue Streams (Berria Erreguntzak) {#new-revenue-streams}
 
 - **Done-for-you setup** (Gaur eguneko instalazioa eta konfiguerazioa): Klientearen webguneak batzu eta personalizatu dezaintzeko premium ezarpenoa
 - **Custom design services** (Desizain-servisiak osoa): Template-aren gaineko desizain-erakunde teklatzea
@@ -111,7 +111,7 @@ Gainazioa berria kliuntzak gehiago ez da. Kliiente pertsona bat gaur eguneko err
 
 - **Premium plugins** (Plugin premium): Niche-spazio-gailuak erakusten duen premium pluginak diskontatutako ezarpenak (Adibidez, fitness klase-erregistro widget bat)
 
-### Prezio Handitu (Prezio handitu)
+### Prezio Handitu (Prezio handitu) {#raising-prices}
 
 Plataforma dauratsua eta balio gehiago emanez gero:
 
@@ -119,7 +119,7 @@ Plataforma dauratsua eta balio gehiago emanez gero:
 - Berria iraditzen dituzten kliente-ek prezio handitu
 - Funktunaldeiak eta hobekuntza-ekazko erreguntzak bidez handituak justifikatu
 
-## Equipoa itz
+## Equipoa itz {#building-a-team}
 
 Ez dago punt bat, guztia lekuan ez egin dezake. Lehen irudiak gaur eguneko kontratuak dira:
 
@@ -129,7 +129,7 @@ Ez dago punt bat, guztia lekuan ez egin dezake. Lehen irudiak gaur eguneko kontr
 
 Empleatuak behar ez duzu. Kontratuagileak eta freelancers-ek platorma negozio bat berezko dira.
 
-## Gipuztua Milestones (Growth Milestones)
+## Gipuztua Milestones (Growth Milestones) {#growth-milestones}
 
 | Gipuztua | Aproximatua MRR | Fokua |
 |-----------|-----------------|-------|
@@ -140,7 +140,7 @@ Empleatuak behar ez duzu. Kontratuagileak eta freelancers-ek platorma negozio ba
 | 250-500 kliunturri | $25,000-$50,000 | Equipoa itzilea, hasierako diru-fuetua, premium funtunaldiak |
 | 500+ kliunturri | $50,000+ | Platorma maduru, niza sektoreak, potensial exitu |
 
-## Zer egin dugu hori
+## Zer egin dugu hori {#what-we-built-this-lesson}
 
 - **Metrikak garrantzitsuak (A metrics framework)** negozioaren osasun zeharra begiratzeko
 - **Infrastruktura eskala planua** dozenaken lekuetatik cento eta cento lekuetara aukeratzeko

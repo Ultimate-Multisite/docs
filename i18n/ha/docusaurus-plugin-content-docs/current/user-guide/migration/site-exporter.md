@@ -3,7 +3,7 @@ title: Wurin Exportin Wuri
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# Exportin Wurin Gida (Site Exporter)
+# Exportin Wurin Gida (Site Exporter) {#site-exporter}
 
 Wannan ƙwarewa tana bayarwa ta hanyar addon ɗin **Site Exporter**.
 

@@ -3,11 +3,11 @@ title: Referenční příručka k hookům
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Reference hooků
+# Reference hooků {#hooks-reference}
 
 Automaticky generovaná dokumentace pro všech **59 akcí** a **118 filtrů** v Ultimate Multisite.
 
-## Akce
+## Akce {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Spouští se před přesměrováním ověření.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Spouští se bezprostředně před nastavením ověřovací cookie.
@@ -70,7 +70,7 @@ Automaticky generovaná dokumentace pro všech **59 akcí** a **118 filtrů** v 
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Spouští se po uložení objektu do databáze.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Umožňuje vývojářům pluginu přidat akce do procesu odemykání.
 
-## Filtry
+## Filtry {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtruje dobu trvání období expirace autentizační cookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtruje schéma přesměrování autentizace.

@@ -3,13 +3,13 @@ title: Menurunkan Taraf Pelan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Menurunkan taraf pelan (v2)
+# Menurunkan taraf pelan (v2) {#downgrading-a-plan-v2}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
 Menurunkan taraf pelan atau langganan ialah tindakan biasa yang mungkin dilakukan oleh klien anda jika mereka mempunyai bajet terhad atau mereka memutuskan bahawa mereka tidak memerlukan banyak sumber untuk menjalankan subsite mereka.
 
-## Cara menurunkan taraf pelan
+## Cara menurunkan taraf pelan {#how-to-downgrade-a-plan}
 
 Klien anda boleh menurunkan taraf pelan mereka pada bila-bila masa dengan log masuk ke dashboard pentadbir subsite mereka dan mengklik **Change** di bawah halaman Account mereka.
 
@@ -25,7 +25,7 @@ Untuk meneruskan, pengguna hanya perlu mengklik butang **Complete Checkout**. Ia
 
 ![Halaman Account yang menunjukkan sepanduk perubahan keahlian tertunda](/img/account-page/pending-change.png)
 
-### Apa yang berlaku apabila pengguna menurunkan taraf pelan mereka
+### Apa yang berlaku apabila pengguna menurunkan taraf pelan mereka {#what-happens-when-a-user-downgrades-their-plan}
 
 Penting untuk diingat bahawa menurunkan taraf pelan tidak mengubah konfigurasi sedia ada dalam subsite pengguna.
 
@@ -37,7 +37,7 @@ Untuk siaran yang melebihi had yang ditetapkan pada pelan, anda mempunyai 3 pili
 
 ![Halaman Network Admin Settings Sites yang menunjukkan pilihan tingkah laku post-limit-exceeded](/img/account-page/settings-sites-post-limit.png)
 
-### Apa yang berlaku kepada pembayaran
+### Apa yang berlaku kepada pembayaran {#what-happens-to-the-payment}
 
 Dalam versi 2.0, ia tidak lagi memerlukan sebarang pelarasan pada pembayaran dari segi prorata.
 

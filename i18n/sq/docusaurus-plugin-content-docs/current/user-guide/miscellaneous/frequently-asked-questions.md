@@ -3,7 +3,7 @@ title: Pyetje dhe përgjigje shpesh pyetëse
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Pyetë e Shpeshtë Kërkuar (FAQ)
+# Pyetë e Shpeshtë Kërkuar (FAQ) {#frequently-asked-questions}
 
 Këtu janë disa pyetje që shpesh vijojnë gjatë kërkesave për mbështetje.
 

@@ -3,7 +3,7 @@ title: WooCommerce integrasiýasynyň üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integrasiýa Üýtgeşmeler Ýazgysy
+# WooCommerce Integrasiýa Üýtgeşmeler Ýazgysy {#woocommerce-integration-changelog}
 
 Version 2.2.0 - 2026-07-01 senesinde çykaryldy
 * Täze: Ultimate Multisite salgyt mukdarlary indi töleg wagtynda aýratyn WooCommerce töleg setirleri hökmünde görünýär, bu tölegden öň salgyt jemlerini has düşnükli edýär.

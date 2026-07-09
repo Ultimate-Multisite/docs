@@ -3,13 +3,13 @@ title: Medan Checkout dan DNS Pelanggan
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field dan Pengurusan DNS Pelanggan
+# Checkout Field dan Pengurusan DNS Pelanggan {#checkout-field-and-customer-dns-management}
 
-## Field checkout Pemilihan Domain
+## Field checkout Pemilihan Domain {#the-domain-selection-checkout-field}
 
 Field **Domain Selection** ialah elemen checkout yang memberi pelanggan pilihan tentang cara mendapatkan domain tapak mereka. Tambahkannya pada mana-mana borang checkout untuk mendayakan penjualan domain.
 
-### Menambah field pada borang checkout
+### Menambah field pada borang checkout {#adding-the-field-to-a-checkout-form}
 
 1. Pergi ke **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Buka atau cipta borang checkout
@@ -18,7 +18,7 @@ Field **Domain Selection** ialah elemen checkout yang memberi pelanggan pilihan 
 5. Konfigurasikan pilihan field (lihat di bawah)
 6. Simpan borang
 
-### Pilihan field
+### Pilihan field {#field-options}
 
 **Mod domain** — Pilih tab yang pelanggan lihat. Setiap mod boleh didayakan atau dinyahdayakan secara berasingan:
 
@@ -32,7 +32,7 @@ Field **Domain Selection** ialah elemen checkout yang memberi pelanggan pilihan 
 
 **Produk domain** — Secara pilihan, pin field ini kepada produk domain tertentu. Jika tidak ditetapkan, addon memilih produk yang sepadan secara automatik berdasarkan TLD yang dicari oleh pelanggan.
 
-### Field hubungan pendaftar
+### Field hubungan pendaftar {#registrant-contact-fields}
 
 Apabila pelanggan memilih tab **Register New Domain**, borang checkout menambah field hubungan pendaftar secara sebaris:
 
@@ -43,11 +43,11 @@ Apabila pelanggan memilih tab **Register New Domain**, borang checkout menambah 
 
 Ini diperlukan oleh semua pendaftar dan disahkan sebelum panggilan API pendaftaran dibuat. Nombor telefon diformatkan secara automatik kepada format antarabangsa `+CC.NNN` yang dijangka oleh pendaftar.
 
-### URL tapak yang dijana automatik
+### URL tapak yang dijana automatik {#auto-generated-site-url}
 
 Apabila pelanggan mendaftarkan atau memetakan domain, field URL tapak diisi secara automatik daripada domain yang dipilih. Pelanggan tidak perlu mengisi field URL yang berasingan.
 
-### Tingkah laku carian
+### Tingkah laku carian {#search-behaviour}
 
 - Ketersediaan domain disemak secara masa nyata dengan AJAX semasa pelanggan menaip
 - Cadangan TLD alternatif ditunjukkan apabila domain pilihan tidak tersedia
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Pengurusan DNS pelanggan
+## Pengurusan DNS pelanggan {#customer-dns-management}
 
 Pelanggan boleh mengurus rekod DNS untuk domain berdaftar mereka daripada halaman **My Account**, di bawah entri domain mereka.
 
-### Jenis rekod yang disokong
+### Jenis rekod yang disokong {#supported-record-types}
 
 | Jenis | Kegunaan |
 |---|---|
@@ -91,11 +91,11 @@ Pelanggan boleh mengurus rekod DNS untuk domain berdaftar mereka daripada halama
 | **MX** | Tetapkan pelayan pertukaran mel |
 | **TXT** | Tambah SPF, DMARC, pengesahan, atau rekod teks lain |
 
-### Penyedia manakah yang menyokong pengurusan DNS?
+### Penyedia manakah yang menyokong pengurusan DNS? {#which-providers-support-dns-management}
 
 Pengurusan DNS (tambah, edit, padam rekod) tersedia dengan **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, dan **Openprovider**. Domain **Hostinger** boleh mengemas kini nameserver melalui Domain Seller; rekod DNS untuk domain yang dihoskan diurus oleh integrasi pemetaan domain Hostinger teras. Domain Namecheap, GoDaddy, dan NameSilo memaparkan status dan maklumat tamat tempoh tetapi DNS mesti diurus terus dalam panel kawalan pendaftar.
 
-### Rekod DNS lalai
+### Rekod DNS lalai {#default-dns-records}
 
 Anda boleh mengkonfigurasikan rekod DNS lalai yang digunakan secara automatik apabila domain didaftarkan. Pergi ke **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: melihat dan mengedit DNS
+### Admin: melihat dan mengedit DNS {#admin-viewing-and-editing-dns}
 
 Admin rangkaian boleh melihat dan mengedit rekod DNS untuk mana-mana domain pelanggan daripada halaman edit domain dalam **Network Admin › Ultimate Multisite › Domains**.

@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Sayt Qurucusu
+# AI Sayt Qurucusu {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Tələblər
+## Tələblər {#requirements}
 
 - WordPress 5.3 və ya daha yuxarı
 - PHP 7.4 və ya daha yuxarı
 - Multisite Ultimate plugin (aktiv)
 
-## Quraşdırma
+## Quraşdırma {#installation}
 
 1. Addon fayllarını `/wp-content/plugins/` kataloqunuzuna yükləyin
 2. WordPress-də 'Plugins' menyusu vasitəsilə plugin-i aktivləşdirin
 3. Addon parametrlərini şəbəkə administrator panelində (network admin) konfiqurasiya edin
 
-## İnkişaf
+## İnkişaf {#development}
 
-### Qurulma
+### Qurulma {#setup}
 
 ```bash
 # Asılılıqları quraşdırın
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Layihə Strukturu
+### Layihə Strukturu {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Kod müasirləşdirmə qaydaları
 ```
 
-### Testləmə
+### Testləmə {#testing}
 
 Addon genişləndirilmiş test çərçivəsi (testing framework) ilə gəlir:
 
@@ -79,44 +79,44 @@ Addon genişləndirilmiş test çərçivəsi (testing framework) ilə gəlir:
 - **Test Əhatəsi (Test Coverage)**: Kod əhatəsini izləmək üçün konfiqurasiya edilmişdir
 - **Multisite Testləmə**: Testlər multisite mühitində işləyir
 
-### Kod Standartları
+### Kod Standartları {#code-standards}
 
 - **WordPress Kod Standartları**: PHPCS vasitəsilə tətbiq edilir
 - **PHP 7.4+ Uyğunluğu**: Müasir PHP xüsusiyyətləri dəstəklənir
 - **Statik Analiz**: Tip yoxlaması üçün PHPStan inteqrasiyası
 - **Kod Müasirləşdirməsi**: PHP yüksəltmələri üçün Rector qaydaları
 
-### Qurulma Sistemi (Build System)
+### Qurulma Sistemi (Build System) {#build-system}
 
 - **Fayl Emalı (Asset Processing)**: CSS/JS faylları üçün minifikasiya
 - **Tərcümə**: POT faylı generasiyası
 - **Paketləmə (Packaging)**: Paylanma üçün arxiv yaratmaq
 - **İnkişaf Rejimi (Development Mode)**: Debugging üçün minifikasiya edilməmiş fayllar
 
-## Konfiqurasiya
+## Konfiqurasiya {#configuration}
 
 Addon, şəbəkə administrator interfeysi vasitəsilə əlçatan müxtəlif konfiqurasiya seçimlərini dəstəkləyir.
 
-## Hooks və Filterlər
+## Hooks və Filterlər {#hooks-and-filters}
 
-### Actions (Hərəkətlər)
+### Actions (Hərəkətlər) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Addon ilkinləşdirildikdən sonra işə düşür
 - `ultimate-multisite-ai-site-builder_loaded` - Bütün addon faylları yükləndikdən sonra işə düşür
 
-### Filters (Filtrlər)
+### Filters (Filtrlər) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Addon parametrlərini dəyişmək
 - `ultimate-multisite-ai-site-builder_enabled` - Addonun aktiv/deaktiv vəziyyətini üstələmək
 
-## Lisenziya
+## Lisenziya {#license}
 
 Bu addon GPL v3 və ya daha yeni versiyası altında lisenziyalanmışdır.
 
-## Dəstək
+## Dəstək {#support}
 
 Dəstək və sənədləşmə üçün [MultisiteUltimate.com](https://multisiteultimate.com) saytını ziyarət edin.
-## Dəyişikliklər (Changelog)
+## Dəyişikliklər (Changelog) {#changelog}
 
 - Versiya 1.0.1 (2025-09-28): prefiksi ultimate-multisite olaraq dəyişdi; mətn domenini yenilədi; versiya artırıldı.
 

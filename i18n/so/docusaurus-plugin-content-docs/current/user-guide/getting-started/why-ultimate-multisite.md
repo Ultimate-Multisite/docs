@@ -3,11 +3,11 @@ title: Maxay tahay sababta Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Maxaybaha Ujeedka Ultimate Multisite
+# Maxaybaha Ujeedka Ultimate Multisite {#why-ultimate-multisite}
 
 Haddii aad gaartay maqaalkan, waxaad u badan tahay inaad maqashay in plugin-keenna uu yahay xalka ah inuu hawsha ganacsigaaga la qabto. Waxaan rajaynaynaa inaad hesho jawaabaha aad u baahan tahay dhammaadka qoraalka.
 
-## Waa maxay Ultimate Multisite?
+## Waa maxay Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite waa plugin WordPress Multisite oo kuu oggolaanaya inaad siinaysid macaamiisha WaaS (Website as a Service). Waxaad lahayd plugin-keenna, waxaad leedahay heerarka guud ee subscription ah (subscription tiers) oo aad ka qaadi karto lacag isdiiwaangelinta (recurring fee) macaamiisha si ay isticmaalaan meel loo hosteyay shabakadaha Multisite-kaaga.
 
@@ -15,7 +15,7 @@ Ultimate Multisite wuxuu kuu oggolaanaya inaad hesho lacagtaada iyadoo la adeegs
 
 Waxaan sidoo kale ku sii socon karaa hababka ay leedahay add-ons iyo webhooks.
 
-## Waxyaabo kale
+## Waxyaabo kale {#other-features}
 
 Ultimate Multisite wuxuu si kaleugu bixiyaa:
 
@@ -33,11 +33,11 @@ Waxyaabo ka horumaray:
 
 * Search and Replace API: Waxaad sidoo kale ku qori kartaa templates-ka website-ka meelaha la isku dayay sida {{site_name}} (placeholder) adigoo isticmaalaya Search and Replace API si aad u buuxiso placeholder-yadaas macluumaadka ay bixiyaan macaamiishaaga isla markaaba ka dib markii ay isdiiwaangashada qabtaan, si toos ah.
 
-## Isticmaalka (Use cases)
+## Isticmaalka (Use cases) {#use-cases}
 
 Hadda waa waqtiga inaad aragto qaar ka mid ah isticmaalida suurtagalka ah ee Ultimate Multisite.
 
-### Tallaabada 1: Agent (Agency)
+### Tallaabada 1: Agent (Agency) {#case-1-an-agency}
 
 Guud ahaan, xirfadaha asaasiga ah ee agent-ka waxay ku jiraan naqshadaynta website-yada iyadoo la raacayo arrimaha sida hosting ama marketing oo loo qor yahay adeegyo dheeri ah.
 
@@ -47,7 +47,7 @@ Xakamaynta adag ee plugins iyo themes waxaa la ilaaliyaa iyadoo la adeegsanayo s
 
 Agencies-yadu waxay heshiis wanaagsan ka helayaan Ultimate Multisite oo u oggolaanaya inay galaan waxa ay ugu fiican yihiin - naqshadaynta website-yo aan la barbardhigi karin.
 
-### Ardhka 2: Bixiyaha Gaarka Ah (Niche Provider)
+### Ardhka 2: Bixiyaha Gaarka Ah (Niche Provider) {#case-2-niche-provider}
 
 Waxaa jira hadal qadiim ah oo leh, "Waxaad samee hal shay oo si fiican u samayso." Kuwa gaarka ah ee aqoonta badan, tani waxay ka dhigan tahay in la abuuro alaab ama adeeg ku salaysan fikrad muhiim ah.
 
@@ -57,7 +57,7 @@ Mid ka mid ah astaamaha cusub ee Ultimate Multisite-ka, website template waa mee
 
 Haddii aad tahay bixiyaha websites iyo adeegyada gaarka ah, tani waxay si aan la barbardhigi karin u siisaa awood weyn oo ah in la abuuro website degdeg ah oo diyaar u yahay iyadoo lagu darayo plugins iyo naqshado gaar ah. Macmiilku wuxuu kaliya u baahan yahay inuu bixiyo wax yar oo macquul ah si loo dhammaystiro adeeggaas.
 
-### Ardhka 3: Web Hosting-ga WordPress
+### Ardhka 3: Web Hosting-ga WordPress {#case-3-wordpress-web-hosting}
 
 Waxaa jira habab badan oo lagu hosting gareeyo websites-ka WordPress, laakiin si fudud ma aha in la siiyo meel internet (web space) macmiilka oo leh nooc hore loo soo saaray WordPress. Sababta ay sidaas tahay waa in go'aanno iyo tixgelinro badan ay isugu yimaadaan si loo bixiyo adeeg muhiim ah.
 

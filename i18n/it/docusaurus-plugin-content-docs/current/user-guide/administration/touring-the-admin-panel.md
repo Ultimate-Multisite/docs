@@ -3,11 +3,11 @@ title: Tour del pannello di amministrazione
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Tour del pannello Admin
+# Tour del pannello Admin {#touring-the-admin-panel}
 
 Ultimate Multisite mira a essere il più semplice e autoesplicativo possibile, ma con uno strumento così potente può essere utile avere una visita guidata. Esaminiamo le pagine admin per aiutarti a orientarti.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 La **Dashboard** di Ultimate Multisite mostra report e analisi di base, inclusi ricavi, attività dei site, crescita delle membership, conteggi dei visitatori e dati geografici.
 
@@ -25,61 +25,61 @@ Ecco anche una vista completa della dashboard di rete:
 
 ![Pagina completa della Network Dashboard](/img/admin/network-dashboard-full-page.png)
 
-## Moduli di checkout
+## Moduli di checkout {#checkout-forms}
 
 I **Moduli di checkout** ti offrono la flessibilità di creare pagine di registrazione personalizzate. Puoi personalizzare i campi, inserire classi e script personalizzati e limitare l'accesso in base al paese o alla posizione del visitatore.
 
 ![Elenco dei moduli di checkout](/img/admin/checkout-forms-list.png)
 
-## Prodotti
+## Prodotti {#products}
 
 La sezione **Prodotti** è dove crei diversi piani, pacchetti e servizi per la tua rete. Definisci prezzi, frequenze di fatturazione e limiti e quote a livello di prodotto.
 
 ![Elenco dei prodotti](/img/admin/products-list.png)
 
-## Membership
+## Membership {#memberships}
 
 La pagina **Membership** mostra tutte le sottoscrizioni nella tua rete. Controlla e modifica i dettagli delle sottoscrizioni, inclusi piani, prodotti, importi e frequenze di fatturazione, cronologia dei pagamenti e timestamp.
 
 ![Elenco delle membership](/img/admin/memberships-list.png)
 
-## Pagamenti
+## Pagamenti {#payments}
 
 La pagina **Pagamenti** fornisce una vista rapida della cronologia dei pagamenti in tutta la tua rete, con informazioni dettagliate sulle transazioni, inclusi prodotti e importi specifici.
 
 ![Elenco dei pagamenti](/img/admin/payments-list.png)
 
-## Clienti
+## Clienti {#customers}
 
 La pagina **Clienti** mostra tutti i membri registrati nella tua rete con informazioni utente di base, inclusi nome, indirizzo email, ultimo accesso e un link "passa a" per accedere al loro subsite.
 
 ![Elenco dei clienti](/img/admin/customers-list.png)
 
-## Site
+## Site {#sites}
 
 La pagina **Site** elenca tutti i subsite nella tua rete, inclusi template di site e site di proprietà dei clienti. Gestisci facilmente domini mappati, limiti e quote, plugin e temi, e miniature dei site.
 
 ![Elenco dei site](/img/admin/sites-list.png)
 
-## Domini
+## Domini {#domains}
 
 La pagina **Domini** è dedicata ai domini personalizzati mappati ai subsite. Come super admin, puoi aggiungere o mappare manualmente nomi di dominio personalizzati e visualizzare record DNS e log.
 
 ![Elenco dei domini](/img/admin/domains-list.png)
 
-## Codici sconto
+## Codici sconto {#discount-codes}
 
 I **Codici sconto** ti permettono di creare codici coupon per offrire sconti ai tuoi utenti finali. Specifica il valore dello sconto e indirizzalo a utenti o gruppi specifici.
 
 ![Elenco dei codici sconto](/img/admin/discount-codes-list.png)
 
-## Broadcast
+## Broadcast {#broadcasts}
 
 **Broadcast** è uno strumento per distribuire annunci o inviare messaggi privati agli utenti dei tuoi subsite. Indirizza gruppi di utenti specifici in base al piano o al prodotto a cui sono abbonati.
 
 ![Elenco dei broadcast](/img/admin/broadcasts-list.png)
 
-## Impostazioni
+## Impostazioni {#settings}
 
 La pagina **Impostazioni** è dove configuri Ultimate Multisite — impostazioni di registrazione, pagamenti, API e webhook, mappatura dei domini e altre integrazioni.
 
@@ -109,13 +109,13 @@ E la pagina delle impostazioni dei site:
 
 ![Pagina completa delle impostazioni dei site](/img/admin/settings-sites-full.png)
 
-## Eventi
+## Eventi {#events}
 
 La pagina **Eventi** conserva un registro di tutti gli eventi e i log nella tua rete. Tiene traccia di attività come cambi di piano, registrazioni e altri movimenti — utile per monitorare il tuo multisite.
 
 ![Elenco degli eventi](/img/admin/events-list.png)
 
-## Webhook
+## Webhook {#webhooks}
 
 I **Webhook** ti consentono di inviare dati a un'altra applicazione. Utile per inviare dati da Ultimate Multisite a piattaforme come Zapier.
 

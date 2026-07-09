@@ -4,13 +4,13 @@ title: Saringan - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Saringan: wu_sso_url
+# Saringan: wu_sso_url {#filter-wussourl}
 
 Nyaring URL SSO sing digawe sadurunge dibalekake kanggo tumindak pelanggan lintas-domain.
 
 Gunakake saringan iki nalika integrasi perlu nambah konteks kapercayan menyang pranala SSO tenant-berdaulat utawa ngganti URL broker kanthi tetep njaga validasi token Ultimate Multisite.
 
-## Parameter
+## Parameter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Gunakake saringan iki nalika integrasi perlu nambah konteks kapercayan menyang p
 | $site_id | `int` | ID situs tujuan kanggo kunjungan kasebut. |
 | $redirect_to | `string` | URL tujuan sawisé validasi SSO kasil. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.13.0
 
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing `inc/sso/class-sso.php`.
 
 
-## Ngasilake
+## Ngasilake {#returns}
 
 URL SSO sing wis disaring.

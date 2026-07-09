@@ -3,15 +3,15 @@ title: Jagorar Amfani da Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Jagoran Amfani da Hooks
+# Jagoran Amfani da Hooks {#hooks-usage-guide}
 
 Ultimate Multisite yana samar da action hooks 200+ da filter hooks 280+. Wannan shafi yana bayani kan hooks da aka fi amfani da su tare da misalai na aiki. Don cikakken kundin bayani da aka samar ta atomatik, duba sauran shafuka a wannan sashe.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Zagayen Rayuwar Abokin Ciniki
+### Zagayen Rayuwar Abokin Ciniki {#customer-lifecycle}
 
-#### Bayan Ƙirƙirar Abokin Ciniki
+#### Bayan Ƙirƙirar Abokin Ciniki {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Canjin Matsayin Abokin Ciniki
+#### Canjin Matsayin Abokin Ciniki {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks na Shafi
+### Hooks na Shafi {#site-hooks}
 
-#### Bayan An Buga Shafi
+#### Bayan An Buga Shafi {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Kafin Aiwatar da Template
+#### Kafin Aiwatar da Template {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooks na Membership
+### Hooks na Membership {#membership-hooks}
 
-#### Sauye-sauyen Matsayi
+#### Sauye-sauyen Matsayi {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooks na Biya
+### Hooks na Biya {#payment-hooks}
 
-#### An Kammala Biya / Ya Kasa
+#### An Kammala Biya / Ya Kasa {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooks na Checkout
+### Hooks na Checkout {#checkout-hooks}
 
-#### Kafin Sarrafawa / Bayan Kammalawa
+#### Kafin Sarrafawa / Bayan Kammalawa {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooks na Domain
+### Hooks na Domain {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Filters na Farashi
+### Filters na Farashi {#pricing-filters}
 
-#### Jimillar Cart
+#### Jimillar Cart {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Ƙimar Haraji
+#### Ƙimar Haraji {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Filters na Template
+### Filters na Template {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Filters na Iyakancewa
+### Filters na Iyakancewa {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Filters na Gateway
+### Filters na Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Filayen Form na Checkout
+### Filayen Form na Checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Abun Cikin Email
+### Abun Cikin Email {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

@@ -4,13 +4,13 @@ title: Akcia - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Akcia: wp_ultimo_captcha_deactivation
+# Akcia: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
 
 Umožňuje iným častiam pluginu pripojiť ich rutiny na deaktiváciu
 
-### Od verzie
+### Od verzie {#since}
 
 - 1.9.6
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-hooks.php#L101) na riadku 101

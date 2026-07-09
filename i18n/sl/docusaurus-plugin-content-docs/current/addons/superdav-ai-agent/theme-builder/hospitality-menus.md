@@ -3,15 +3,15 @@ title: Gostinski meniji
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gostinski meniji
+# Gostinski meniji {#hospitality-menus}
 
 Funkcija **Gostinski meniji** omogoča Theme Builder, da ustvari in vgradi strukturirane strani menijev hrane in pijače neposredno v vaše WordPress spletno mesto.
 
-## Pregled
+## Pregled {#overview}
 
 Theme Builder lahko zdaj ustvari profesionalne, strukturirane strani menijev za gostinska podjetja, vključno z restavracijami, kavarnami, bari in catering storitvami. Ti meniji so popolnoma integrirani v zasnovo vašega spletnega mesta ter jih je mogoče preprosto posodabljati in upravljati.
 
-## Podprte vrste gostinstva
+## Podprte vrste gostinstva {#supported-hospitality-types}
 
 - **Restavracije** — meniji za postreženo gostinsko ponudbo
 - **Kavarne** — meniji kave in lahkih jedi
@@ -21,9 +21,9 @@ Theme Builder lahko zdaj ustvari profesionalne, strukturirane strani menijev za 
 - **Food trucki** — meniji mobilne ponudbe hrane
 - **Pivovarne in vinske kleti** — meniji pijač z opisi
 
-## Struktura menija
+## Struktura menija {#menu-structure}
 
-### Kategorije menija
+### Kategorije menija {#menu-categories}
 
 Meniji so organizirani v kategorije:
 
@@ -34,7 +34,7 @@ Meniji so organizirani v kategorije:
 - **Pijače** — pijače (alkoholne in brezalkoholne)
 - **Posebne ponudbe** — dnevne ali sezonske posebne ponudbe
 
-### Oblika elementa menija
+### Oblika elementa menija {#menu-item-format}
 
 Vsak element menija vključuje:
 
@@ -49,7 +49,7 @@ Vsak element menija vključuje:
 }
 ```
 
-#### Polja elementa
+#### Polja elementa {#item-fields}
 
 | Polje | Vrsta | Opis |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Vsak element menija vključuje:
 | `allergens` | array | Pogosti alergeni (oreščki, školjke itd.) |
 | `availability` | string | Kdaj je na voljo (dnevno, sezonsko itd.) |
 
-## Ustvarjanje gostinskih menijev
+## Ustvarjanje gostinskih menijev {#creating-hospitality-menus}
 
-### 1. korak: Navedite informacije o meniju
+### 1. korak: Navedite informacije o meniju {#step-1-provide-menu-information}
 
 Povejte Theme Builder o svojem meniju:
 
@@ -71,7 +71,7 @@ Ustvari restavracijski meni za mojo italijansko restavracijo s predjedmi,
 testeninskimi jedmi, glavnimi jedmi in sladicami. Vključi cene in opise.
 ```
 
-### 2. korak: Theme Builder ustvari meni
+### 2. korak: Theme Builder ustvari meni {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Oblikuje cene in opise
 5. Doda prehranske informacije in informacije o alergenih
 
-### 3. korak: Preglejte in prilagodite
+### 3. korak: Preglejte in prilagodite {#step-3-review-and-customize}
 
 Lahko:
 
@@ -91,9 +91,9 @@ Lahko:
 4. Posodobite opise in prehranske informacije
 5. Prilagodite slog in postavitev
 
-## Možnosti prikaza menija
+## Možnosti prikaza menija {#menu-display-options}
 
-### Celotna stran menija
+### Celotna stran menija {#full-menu-page}
 
 Namenska stran, ki prikazuje vaš celoten meni:
 
@@ -102,7 +102,7 @@ Namenska stran, ki prikazuje vaš celoten meni:
 - Postavitev, prijazna za tiskanje
 - Mobilno odzivna zasnova
 
-### Gradnik menija
+### Gradnik menija {#menu-widget}
 
 Vdelajte odseke menija na druge strani:
 
@@ -111,7 +111,7 @@ Vdelajte odseke menija na druge strani:
 - Meni pijač na strani bara
 - Predstavitev sladic v nogi
 
-### Meni PDF
+### Meni PDF {#menu-pdf}
 
 Ustvarite prenosljiv PDF meni:
 
@@ -120,9 +120,9 @@ Ustvarite prenosljiv PDF meni:
 - Vključuje slike in opise
 - Preprosto za deljenje in pošiljanje po e-pošti
 
-## Prehranske informacije in informacije o alergenih
+## Prehranske informacije in informacije o alergenih {#dietary-and-allergen-information}
 
-### Prehranske lastnosti
+### Prehranske lastnosti {#dietary-attributes}
 
 Označite elemente s prehranskimi informacijami:
 
@@ -134,7 +134,7 @@ Označite elemente s prehranskimi informacijami:
 - **Z nizko vsebnostjo ogljikovih hidratov** — zmanjšana količina ogljikovih hidratov
 - **Z visoko vsebnostjo beljakovin** — bogato z beljakovinami
 
-### Opozorila o alergenih
+### Opozorila o alergenih {#allergen-warnings}
 
 Vključite pogoste alergene:
 
@@ -147,9 +147,9 @@ Vključite pogoste alergene:
 - **Gluten** — pšenica in žita, ki vsebujejo gluten
 - **Sezam** — sezamova semena in olje
 
-## Upravljanje menija
+## Upravljanje menija {#menu-management}
 
-### Posodabljanje cen
+### Posodabljanje cen {#updating-prices}
 
 Preprosto posodobite cene v meniju:
 
@@ -159,7 +159,7 @@ Preprosto posodobite cene v meniju:
 4. Shranite spremembe
 5. Spremembe se takoj prikažejo na vašem spletnem mestu
 
-### Dodajanje sezonskih elementov
+### Dodajanje sezonskih elementov {#adding-seasonal-items}
 
 Ustvarite sezonske različice menija:
 
@@ -169,7 +169,7 @@ Ustvarite sezonske različice menija:
 4. Načrtujte datume razpoložljivosti
 5. Samodejno prikažite med sezono
 
-### Upravljanje posebnih ponudb
+### Upravljanje posebnih ponudb {#managing-specials}
 
 Prikažite dnevne ali tedenske posebne ponudbe:
 
@@ -179,7 +179,7 @@ Prikažite dnevne ali tedenske posebne ponudbe:
 4. Posodabljajte dnevno ali tedensko
 5. Arhivirajte stare posebne ponudbe
 
-## Integracija s Theme Builder
+## Integracija s Theme Builder {#integration-with-theme-builder}
 
 Pri uporabi Theme Builder za gostinska spletna mesta:
 
@@ -189,9 +189,9 @@ Pri uporabi Theme Builder za gostinska spletna mesta:
 4. **Mobilna optimizacija** — meniji se lepo prikazujejo na telefonih
 5. **SEO optimizacija** — meniji so prijazni iskalnikom
 
-## Najboljše prakse
+## Najboljše prakse {#best-practices}
 
-### Oblikovanje menija
+### Oblikovanje menija {#menu-design}
 
 - **Jasna organizacija** — logična struktura kategorij
 - **Berljivi opisi** — vabljivi in informativni
@@ -199,7 +199,7 @@ Pri uporabi Theme Builder za gostinska spletna mesta:
 - **Profesionalne fotografije** — visokokakovostne slike hrane
 - **Prazen prostor** — ne prenatrpajte strani
 
-### Vsebina
+### Vsebina {#content}
 
 - **Natančni opisi** — natančno opišite elemente
 - **Izpostavite posebne ponudbe** — naj posebne ponudbe izstopajo
@@ -207,7 +207,7 @@ Pri uporabi Theme Builder za gostinska spletna mesta:
 - **Redno posodabljajte** — ohranjajte cene in elemente aktualne
 - **Uporabite vabljiv jezik** — naj elementi zvenijo okusno
 
-### Dostopnost
+### Dostopnost {#accessibility}
 
 - **Berljive pisave** — uporabljajte jasne, čitljive pisave
 - **Zadosten kontrast** — zagotovite, da je besedilo berljivo
@@ -215,9 +215,9 @@ Pri uporabi Theme Builder za gostinska spletna mesta:
 - **Opozorila o alergenih** — alergene prikažite na vidnem mestu
 - **Prijazno mobilnim napravam** — preizkusite na vseh napravah
 
-## Primeri
+## Primeri {#examples}
 
-### Struktura restavracijskega menija
+### Struktura restavracijskega menija {#restaurant-menu-structure}
 
 ```
 Predjedi
@@ -241,7 +241,7 @@ Sladice
 └── Izbor gelata
 ```
 
-### Struktura menija kavarne
+### Struktura menija kavarne {#cafe-menu-structure}
 
 ```
 Kava
@@ -260,7 +260,7 @@ Sendviči
 └── Vegetarijanski wrap
 ```
 
-## Povezane funkcije
+## Povezane funkcije {#related-features}
 
 - [Ustvari meni](../abilities/create-menu.md) — ustvarite navigacijske menije
 - [Oblikovalska usmeritev](./design-direction.md) — prilagodite zasnovo svojega spletnega mesta

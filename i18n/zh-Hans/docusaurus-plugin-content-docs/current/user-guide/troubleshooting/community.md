@@ -3,7 +3,7 @@ title: 社区
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# 如何加入 Ultimate Multisite Community
+# 如何加入 Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community 是一个空间，你可以在这里与其他 Ultimate Multisite 用户联系，并分享技巧、经验等内容。要访问 Ultimate Multisite Community，请前往 https://community.ultimatemultisite.com/home。
 

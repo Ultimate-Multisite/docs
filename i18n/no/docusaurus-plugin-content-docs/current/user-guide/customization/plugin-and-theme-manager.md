@@ -3,7 +3,7 @@ title: Plugin- og temabehandler
 sidebar_position: 11
 _i18n_hash: 12308e3f7d1aa025d7dc4088496e3ad8
 ---
-# Plugin- og temabehandler
+# Plugin- og temabehandler {#plugin-and-theme-manager}
 
 Denne funksjonen leveres av tillegget **Plugin & Theme Manager**.
 

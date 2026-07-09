@@ -3,7 +3,7 @@ title: Referenza tal-Abilitajiet
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenza tal-Abilitajiet
+# Referenza tal-Abilitajiet {#abilities-reference}
 
 L-abilitajiet huma l-azzjonijiet atomiċi li Gratis AI Agent jista' jsejjaħ fuq l-installazzjoni WordPress tiegħek. Kull abilità hija klassi PHP irreġistrata li tesponi skema JSON — l-aġent jaqra din l-iskema waqt l-eżekuzzjoni biex jifhem liema parametri huma meħtieġa u x'tirritorna l-abilità.
 
@@ -11,11 +11,11 @@ Din il-paġna tiddokumenta l-abilitajiet kollha li jiġu ma' Gratis AI Agent v1.
 
 ---
 
-## Tipi ta' Post Personalizzati
+## Tipi ta' Post Personalizzati {#custom-post-types}
 
 Dawn l-abilitajiet jimmaniġġjaw tipi ta' post personalizzati (CPTs) irreġistrati permezz tal-aġent. Ir-reġistrazzjonijiet jinżammu fit-tabella tal-għażliet ta' WordPress sabiex jibqgħu jeżistu wara d-diżattivazzjoni u r-riattivazzjoni tal-estensjoni.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Tirreġistra tip ta' post personalizzat ġdid.
 
@@ -50,7 +50,7 @@ Tirreġistra tip ta' post personalizzat ġdid.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Jirritorna t-tipi ta' post personalizzati kollha rreġistrati mill-aġent.
 
@@ -73,7 +73,7 @@ Jirritorna t-tipi ta' post personalizzati kollha rreġistrati mill-aġent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Ineħħi r-reġistrazzjoni ta' tip ta' post personalizzat irreġistrat qabel mill-aġent. Il-postijiet eżistenti ta' dak it-tip jibqgħu fid-database iżda ma jibqgħux aċċessibbli permezz tat-tip ta' post.
 
@@ -87,11 +87,11 @@ Ineħħi r-reġistrazzjoni ta' tip ta' post personalizzat irreġistrat qabel mil
 
 ---
 
-## Tassonomiji Personalizzati
+## Tassonomiji Personalizzati {#custom-taxonomies}
 
 Dawn l-abilitajiet jimmaniġġjaw tassonomiji personalizzati. Bħal CPTs, ir-reġistrazzjonijiet tat-tassonomiji jinżammu.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Tirreġistra tassonomija personalizzata ġdida.
 
@@ -123,7 +123,7 @@ Tirreġistra tassonomija personalizzata ġdida.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Jirritorna t-tassonomiji personalizzati kollha rreġistrati mill-aġent.
 
@@ -146,7 +146,7 @@ Jirritorna t-tassonomiji personalizzati kollha rreġistrati mill-aġent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Ineħħi r-reġistrazzjoni ta' tassonomija personalizzata rreġistrata qabel mill-aġent.
 
@@ -160,11 +160,11 @@ Ineħħi r-reġistrazzjoni ta' tassonomija personalizzata rreġistrata qabel mil
 
 ---
 
-## Sistema tad-Disinn
+## Sistema tad-Disinn {#design-system}
 
 L-abilitajiet tas-sistema tad-disinn jimmodifikaw il-preżentazzjoni viżwali tas-sit WordPress — minn CSS personalizzat sa mudelli ta' blokki u l-logo tas-sit.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Iżżid CSS mal-`<head>` tas-sit permezz ta' `wp_add_inline_style`. Is-CSS jinħażen fl-għażla `gratis_ai_agent_custom_css` u jitneħħa mill-kju b'mod nadif meta l-abilità tiġi ssettjata mill-ġdid.
 
@@ -190,7 +190,7 @@ Iżżid CSS mal-`<head>` tas-sit permezz ta' `wp_add_inline_style`. Is-CSS jinħ
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Tirreġistra mudell ta' blokki li jista' jerġa' jintuża fil-librerija tal-mudelli ta' WordPress.
 
@@ -209,7 +209,7 @@ Tirreġistra mudell ta' blokki li jista' jerġa' jintuża fil-librerija tal-mude
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Jelenka l-mudelli ta' blokki kollha rreġistrati mill-aġent.
 
@@ -231,7 +231,7 @@ Jelenka l-mudelli ta' blokki kollha rreġistrati mill-aġent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Issettja l-logo tas-sit WordPress għal ID ta’ attachment mogħti jew URL ta’ immaġni remota. Meta jiġi pprovdut URL, l-immaġni titniżżel u tiġi importata fil-Media Library.
 
@@ -248,7 +248,7 @@ Wieħed minn `attachment_id` jew `url` irid jiġi pprovdut.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Japplika preset imsemmi tal-kulur/tipografija għat-`theme.json` tat-tema attiva (jew `global-styles`). Il-presets huma pakketti kkurati miżmuma mit-tim ta’ Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Japplika preset imsemmi tal-kulur/tipografija għat-`theme.json` tat-tema attiva
 
 ---
 
-## Stili Globali
+## Stili Globali {#global-styles}
 
 Il-kapaċitajiet tal-Istili Globali jaqraw u jiktbu valuri ta’ theme.json permezz tal-WordPress Global Styles API, u jaffettwaw il-blokki u t-templates kollha fis-sit kollu.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Jirritorna l-konfigurazzjoni attwali tal-istili globali.
 
@@ -291,7 +291,7 @@ Jirritorna l-konfigurazzjoni attwali tal-istili globali.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Jaġġorna valur wieħed jew aktar fil-konfigurazzjoni tal-istili globali.
 
@@ -318,7 +318,7 @@ Jaġġorna valur wieħed jew aktar fil-konfigurazzjoni tal-istili globali.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Jirrisettja l-bidliet kollha fl-istili globali applikati mill-agent, u jerġa’ jġib id-defaults tat-tema.
 
@@ -328,11 +328,11 @@ Jirrisettja l-bidliet kollha fl-istili globali applikati mill-agent, u jerġa’
 
 ---
 
-## Menus tan-Navigazzjoni
+## Menus tan-Navigazzjoni {#navigation-menus}
 
 Il-kapaċitajiet tal-Menu tan-Navigazzjoni joħolqu u jimmaniġġjaw menus tan-nav ta’ WordPress u l-oġġetti tagħhom.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Joħloq menu ġdid tan-navigazzjoni ta’ WordPress.
 
@@ -347,7 +347,7 @@ Joħloq menu ġdid tan-navigazzjoni ta’ WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Ibiddel l-isem ta’ menu jew jerġa’ jassenjah għal post fit-tema.
 
@@ -363,7 +363,7 @@ Ibiddel l-isem ta’ menu jew jerġa’ jassenjah għal post fit-tema.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Iżid oġġett ma’ menu tan-navigazzjoni eżistenti.
 
@@ -383,7 +383,7 @@ Iżid oġġett ma’ menu tan-navigazzjoni eżistenti.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Ineħħi oġġett minn menu tan-navigazzjoni.
 
@@ -397,7 +397,7 @@ Ineħħi oġġett minn menu tan-navigazzjoni.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Jelenka l-menus kollha tan-navigazzjoni ta’ WordPress, inklużi l-postijiet tat-tema assenjati tagħhom.
 
@@ -420,11 +420,11 @@ Jelenka l-menus kollha tan-navigazzjoni ta’ WordPress, inklużi l-postijiet ta
 
 ---
 
-## Ġestjoni tal-Għażliet
+## Ġestjoni tal-Għażliet {#options-management}
 
 Il-kapaċitajiet tal-għażliet jaqraw u jiktbu għażliet ta’ WordPress permezz ta’ `get_option` / `update_option`. Blocklist tas-sigurtà mibnija fiha tipprevjeni modifika aċċidentali ta’ settings kritiċi.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Jaqra għażla ta’ WordPress.
 
@@ -440,7 +440,7 @@ Jirritorna żball jekk `option_name` tkun fuq il-blocklist tas-sigurtà.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Jikteb għażla ta’ WordPress.
 
@@ -458,7 +458,7 @@ Jirritorna żball jekk `option_name` ikun fuq il-lista ta' mblukkar tas-sigurtà
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Iħassar opzjoni ta' WordPress.
 
@@ -474,7 +474,7 @@ Jirritorna żball jekk `option_name` ikun fuq il-lista ta' mblukkar tas-sigurtà
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Jelenka opzjonijiet ta' WordPress li jaqblu ma' mudell.
 
@@ -498,11 +498,11 @@ Jelenka opzjonijiet ta' WordPress li jaqblu ma' mudell.
 
 ---
 
-## Ġestjoni tal-Kontenut
+## Ġestjoni tal-Kontenut {#content-management}
 
 Il-kapaċitajiet tal-Ġestjoni tal-Kontenut joħolqu u jeditjaw posts u paġni ta' WordPress. L-IDs tal-posts jiġu rritornati sabiex passi sussegwenti fi pjanijiet b'diversi kapaċitajiet ikunu jistgħu jirreferu għall-kontenut maħluq.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Joħloq post, paġna, jew entrata ta' tip ta' post personalizzat ġdida f'WordPress.
 
@@ -537,7 +537,7 @@ Joħloq post, paġna, jew entrata ta' tip ta' post personalizzat ġdida f'WordPr
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Jaġġorna post jew paġna eżistenti ta' WordPress.
 
@@ -567,7 +567,7 @@ Jaġġorna post jew paġna eżistenti ta' WordPress.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Joħloq diversi posts f'sejħa waħda ta' kapaċità, u jnaqqas il-vjaġġi 'l hemm u lura waqt bini ta' site jew importazzjoni ta' kontenut bl-ingrossa. Il-posts jinħolqu f'sekwenza; jekk wieħed ifalli, l-oħrajn ikomplu u l-falliment jiġi rrappurtat fl-array tar-riżultati.
 
@@ -619,7 +619,7 @@ Joħloq diversi posts f'sejħa waħda ta' kapaċità, u jnaqqas il-vjaġġi 'l h
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Jassenja immaġni enfasizzata (thumbnail tal-post) lil post jew paġna eżistenti. Jaċċetta ID ta' attachment eżistenti tal-Media Library jew URL ta' immaġni remota; meta jiġi pprovdut URL, l-immaġni titniżżel u tiġi importata awtomatikament.
 
@@ -638,7 +638,7 @@ Wieħed minn `attachment_id` jew `url` għandu jiġi pprovdut.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Joħloq formola ta' kuntatt bl-użu tal-plugin tal-formoli attiv (Contact Form 7, WPForms, Fluent Forms, jew Gravity Forms, skont liema huwa installat). Jirritorna shortcode li jista' jiġi inkorporat fi kwalunkwe post jew paġna.
 
@@ -691,11 +691,11 @@ Joħloq formola ta' kuntatt bl-użu tal-plugin tal-formoli attiv (Contact Form 7
 
 ---
 
-## Reviżjoni Viżwali
+## Reviżjoni Viżwali {#visual-review}
 
 Il-kapaċitajiet ta' Reviżjoni Viżwali jħallu lill-agent jaqbad screenshots ta' paġni live u janalizzahom, u b'hekk jippermettu reviżjoni tad-disinn awtonoma, paraguni qabel/wara, u kontrolli ta' rigressjoni viżwali mingħajr ma tkun meħtieġa xi browser extension.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Jaqbad screenshot ta' paġna WordPress f'URL mogħti bl-użu ta' browser headless fuq in-naħa tas-server. L-immaġni tiġi ssejvjata fil-Media Library u jintbagħat lura URL tas-CDN.
 
@@ -724,7 +724,7 @@ Jaqbad screenshot ta' paġna WordPress f'URL mogħti bl-użu ta' browser headles
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Jieħu żewġ screenshots u jirritorna punteġġ ta' differenza viżwali flimkien ma' immaġni tad-differenza li tenfasizza r-reġjuni mibdula. Utli biex tikkonferma li bidla fid-disinn ipproduċiet ir-riżultat mistenni jew biex tiskopri regressjonijiet mhux intenzjonati.
 
@@ -754,7 +754,7 @@ Jieħu żewġ screenshots u jirritorna punteġġ ta' differenza viżwali flimkie
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Jaqbad screenshot ta' paġna u jibgħatha lill-mudell tal-lingwa għal analiżi viżwali. Jirritorna valutazzjoni strutturata li tkopri t-tqassim, it-tipografija, l-użu tal-kulur, u tħassib dwar l-aċċessibbiltà.
 
@@ -785,11 +785,11 @@ Jaqbad screenshot ta' paġna u jibgħatha lill-mudell tal-lingwa għal analiżi 
 
 ---
 
-## Kapaċitajiet Installabbli
+## Kapaċitajiet Installabbli {#installable-abilities}
 
 Ir-Reġistru tal-Kapaċitajiet Installabbli jħallik testendi l-agent b'pakketti ta' kapaċitajiet addizzjonali mqassma bħala plugins ta' WordPress. Kull pakkett jirreġistra kapaċità waħda jew aktar bl-użu tal-API standard tal-kapaċitajiet.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Jirritorna l-katalgu ta' pakketti ta' kapaċitajiet disponibbli għall-installazzjoni mir-reġistru.
 
@@ -818,7 +818,7 @@ Jirritorna l-katalgu ta' pakketti ta' kapaċitajiet disponibbli għall-installaz
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Iniżżel u jattiva pakkett ta’ abilità mir-reġistru.
 
@@ -832,7 +832,7 @@ Iniżżel u jattiva pakkett ta’ abilità mir-reġistru.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Jistaqsi lir-reġistru tal-abilitajiet biex isib l-aħjar plugin għal każ ta’ użu deskritt u, b’mod fakultattiv, jinstallah.
 

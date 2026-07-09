@@ -3,13 +3,13 @@ title: Byg en niche-websidevirksomhed
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Byg en Niche Hjemmeside Virksomhed med Ultimate Multisite
+# Byg en Niche Hjemmeside Virksomhed med Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 De fleste mennesker, der prøver at sælge hjemmesider, konkurrerer på pris mod Wix, Squarespace og tusindvis af freelancere. De taber. De, der vinder, vælger et specifikt publikum, bygger en løsning skræddersyet til det publikum og opkræver for den værdi, de leverer.
 
 Dette kursus lærer dig præcis hvordan du gør det ved hjælp af Ultimate Multisite.
 
-## Hvad Du Vil Bygge
+## Hvad Du Vil Bygge {#what-you-will-build}
 
 Gennem dette kursus vil du bygge et rigtigt, fungerende netværk kaldet **FitSite** – en webplatform bygget specifikt til fitnessstudier, personal trainers og fitnesscentersejere.
 
@@ -23,7 +23,7 @@ Ved den sidste lektion vil FitSite være en komplet nicheplatform med:
 
 Du følger med trin for trin, og når du er færdig, har du både en fungerende platform og viden til at gentage processen for enhver niche, du vælger.
 
-## Hvorfor Fitnessstudier?
+## Hvorfor Fitnessstudier? {#why-fitness-studios}
 
 Vi havde brug for et konkret eksempel, som alle kan følge. Fitnessstudier virker, fordi:
 
@@ -34,7 +34,7 @@ Vi havde brug for et konkret eksempel, som alle kan følge. Fitnessstudier virke
 
 Alt, du lærer at bygge FitSite med, gælder direkte for den niche, du vælger: restauranter, ejendomsmæglere, advokatfirmaer, kirker, håndværkere eller enhver anden branche.
 
-## Kursusstruktur
+## Kursusstruktur {#course-structure}
 
 Hver lektion introducerer ét koncept, forklarer hvorfor det er vigtigt, og guider dig igennem implementeringen i FitSite-netværket. Hver lektion bygger videre på den forrige.
 
@@ -56,7 +56,7 @@ Hver lektion introducerer ét koncept, forklarer hvorfor det er vigtigt, og guid
 | [13. Skalering op] | Vækst fra de første kunder til en rigtig forretning | FitSite vækst- og automatiseringstrategi |
 | [14. Hvad nu?](lesson-14-whats-next) | Udvidet til nabonicher og nye muligheder | Din roadmap ud over FitSite |
 
-## Forudsætninger
+## Forudsætninger {#prerequisites}
 
 - En WordPress Multisite installation (eller vilje til at opsætte en)
 - En aktiv Ultimate Multisite licens
@@ -64,6 +64,6 @@ Hver lektion introducerer ét koncept, forklarer hvorfor det er vigtigt, og guid
 
 Ingen kodning er nødvendig. Hvis du aldrig har brugt Ultimate Multisite før, er det helt fint – Lektion 3 starter fra en frisk installation.
 
-## Klar?
+## Klar? {#ready}
 
 Start med [Lektion 1: Hvorfor niche vinder](lesson-1-why-niche).

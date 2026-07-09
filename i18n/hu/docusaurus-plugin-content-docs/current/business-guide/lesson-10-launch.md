@@ -3,19 +3,19 @@ title: 'Összhang 10: Indítási nap'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# 10. Lesson: Az elindítás napja
+# 10. Lesson: Az elindítás napja {#lesson-10-launch-day}
 
 Mindent felépítettünk. Mielőtt megnyitnákuk az ajtókat, ez a lesson áttekinti az elindítás előtti ellenőrzőlistát, hogy biztos benne, hogy semmi sem törött, hiányzik vagy szégyenemes.
 
-## Hol voltamek?
+## Hol voltamek? {#where-we-left-off}
 
 A FitSite rendelkezik sablonokkal, tervlerle, checkout folyamattal, brandinggel, onboarding-jal és árazással. Most ellenőrizzük, hogy minden működik-e, és elindítjuk a szolgáltatást.
 
-## Elindítás előtti ellenőrzőlista
+## Elindítás előtti ellenőrzőlista {#pre-launch-checklist}
 
 Állítsd át minden pontot. Ne hagyj ki semmit.
 
-### Platform infrastruktúra
+### Platform infrastruktúra {#platform-infrastructure}
 
 - [ ] A hosting stabil és jól teljesít terhelés alatt
 - [ ] Aktív a Wildcard SSL, és minden aldomain HTTPS-en keresztül elérhető
@@ -23,7 +23,7 @@ A FitSite rendelkezik sablonokkal, tervlerle, checkout folyamattal, brandinggel,
 - [ ] Beállítottak és tesztelték a backupokat (legalább egyet helyreállítva ellenőrzés céljából)
 - [ ] Megvan a monitoring – tudnod kell, ha a platform leáll
 
-### Sablonok
+### Sablonok {#templates}
 
 - [ ] Mindhárom sablon helyesen töltődik be az új oldalakon
 - [ ] A placeholder tartalom hasznos és hibátlan
@@ -32,7 +32,7 @@ A FitSite rendelkezik sablonokkal, tervlerle, checkout folyamattal, brandinggel,
 - [ ] Elfogadható az oldal betöltési sebessége (tesztelj egy olyan eszközzel, mint GTmetrix vagy PageSpeed Insights)
 - [ ] Nincs törött link vagy hiányzó asset semhangi sablonon
 
-### Tervletek és termékek
+### Tervletek és termékek {#plans-and-products}
 
 - [ ] Mindhárom terv aktív és látható
 - [ ] A tervleírások pontosak és a szegmenshez igazítottak
@@ -42,7 +42,7 @@ A FitSite rendelkezik sablonokkal, tervlerle, checkout folyamattal, brandinggel,
 - [ ] Az order bump-ok helyesen jelennek meg a checkout során
 - [ ] A plugin és theme korlátozásai helyesen kerülnek végrehajtásra minden terv szerint
 
-### Checkout folyamat
+### Checkout folyamat {#checkout-flow}
 
 - [ ] Teljes teszt regisztrációt végeznél minden terven (használj teszt fizetési módot)
 - [ ] A sablonválasztás megmutatja a megfelelő sablonokat minden tervhez
@@ -52,7 +52,7 @@ A FitSite rendelkezik sablonokkal, tervlerle, checkout folyamattal, brandinggel,
 - [ ] A kunde azonnal beléphet az új oldalára
 - [ ] A kedvezménykódok helyesen működnek
 
-### Branding
+### Branding {#branding}
 
 - [ ] A login oldal FitSite branding-jával mutatkozik
 - [ ] Az Admin dashboard FitSite branding-jával mutatkozik
@@ -60,7 +60,7 @@ A FitSite rendelkezik sablonokkal, tervlerle, checkout folyamattal, brandinggel,
 - [ ] A számlák helyesen jelennek meg a vállalkozás adataiddal
 - [ ] A marketing oldal online és linkel a checkout formhoz
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] A Quick Start widget megjelenik az új kunde dashboard-jain
 - [ ] Minden Quick Start link a megfelelő oldalra mutat
@@ -68,7 +68,7 @@ A FitSite rendelkezik sablonokkal, tervlerle, checkout folyamattal, brandinggel,
 - [ ] A Knowledge base cikkek publikáltak és elérhetőek
 - [ ] Az Account page megmutatja a megfelelő tervinformációkat és az upgrade lehetőségeket
 
-### Jogi és üzleti
+### Jogi és üzleti {#legal-and-business}
 
 - [ ] A szolgáltatási feltételek publikáltak és linkelhetők a checkout-ból
 - [ ] A adatvédelmi szabályzat publikált és elérhető
@@ -77,11 +77,11 @@ A FitSite rendelkezik sablonokkal, tervlerle, checkout folyamattal, brandinggel,
 - [ ] A Payment gateway élő (live) módban van (nem teszt módban)
 - [ ] Az adókonfiguráció helyes az illetékes joghatóságod szerint
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Fontos, hogy két fázisú elindítást düşünj:
 
-### 1. Fázis: Soft Launch
+### 1. Fázis: Soft Launch {#phase-1-soft-launch}
 
 Írd be 5-10 fitness stúdió tulajdonost, hogy regisztráljanak a nyilvános elindítás előtt. Ezek a beta kundeid. Ajánlott egy jelentős kedvezményt (életre szóló 50% kedvezmény, vagy 3 hónap ingyen) cseréjében, hogy:
 
@@ -91,7 +91,7 @@ Fontos, hogy két fázisú elindítást düşünj:
 
 Ez neked valódi kunde visszajelzést és élő oldalt ad a nyilvánosság előtt, mielőtt megnyitnád.
 
-### 2. Fázis: Public Launch
+### 2. Fázis: Public Launch {#phase-2-public-launch}
 
 Miután beépítettél a soft launch visszajelzéseit:
 
@@ -100,7 +100,7 @@ Miután beépítettél a soft launch visszajelzéseit:
 - Kezdj a kunde megszerzésével (11. Lesson)
 - Közöld a releváns fitness iparági csatornákokon
 
-## Az elindítás napján végrehajtandó lépések
+## Az elindítás napján végrehajtandó lépések {#launch-day-actions}
 
 Aznap, amikor nyilvánosok:
 
@@ -110,7 +110,7 @@ Aznap, amikor nyilvánosok:
 4. **Készülj rendelkezésre** – az első valódi kundeid segítséget igényelhet, és a gyors válasz a bizalmat építi
 5. **Ünnepelj rövid ideig** – majd térj vissza az munkádhoz
 
-## Mit lehet rosszra?
+## Mit lehet rosszra? {#what-can-go-wrong}
 
 Készülj felre:
 
@@ -120,7 +120,7 @@ Készülj felre:
 - **Teljesítmény terhelés alatt**: Ha forgalmi csúcspontot tapasztalsz, tudnod kell, hogyan növelheted a hostinged kapacitását
 - **Kunde zavar**: Készítsd fel a knowledge base-edet és az ügyfélszolgálati csatornáidat
 
-## A FitSite hálózata eddig
+## A FitSite hálózata eddig {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Mit építettünk ebben a lesson-ben
+## Mit építettünk ebben a lesson-ben {#what-we-built-this-lesson}
 
 - **Egy átfogó elindítás előtti ellenőrzőlista**, amely lefedi az infrastruktúrát, tartalmat, fizetéseket és jogi kérdéseket
 - **Egy soft launch stratégia**, hogy valódi visszajelzést kapj, mielőtt nyilvánosok leszel

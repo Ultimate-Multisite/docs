@@ -3,25 +3,25 @@ title: アドオンテンプレート
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template
+# Addon Template {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 or higher
 - PHP 7.4 or higher
 - Multisite Ultimate plugin (active)
 
-## Installation
+## Installation {#installation}
 
 1. addon ファイルを `/wp-content/plugins/` ディレクトリにアップロードしてください
 2. WordPress の 'Plugins' メニューからプラグインを有効化してください
 3. ネットワーク管理画面で addon の設定を構成してください
 
-## Development
+## Development {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Project Structure {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testing
+### Testing {#testing}
 
 addon には包括的なテストフレームワークが含まれています:
 
@@ -75,45 +75,45 @@ addon には包括的なテストフレームワークが含まれています:
 - **Test Coverage**: コードカバレッジを追跡するように設定
 - **Multisite Testing**: テストはマルチサイト環境で実行
 
-### Code Standards
+### Code Standards {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS を介して強制
 - **PHP 7.4+ Compatibility**: 最新の PHP 機能がサポート
 - **Static Analysis**: PHPStan を統合して型チェック
 - **Code Modernization**: PHP アップグレード用の Rector ルール
 
-### Build System
+### Build System {#build-system}
 
 - **Asset Processing**: CSS/JS ファイルのミニファイ
 - **Translation**: POT ファイル生成
 - **Packaging**: 配布用アーカイブ作成
 - **Development Mode**: デバッグ用にミニファイされていないアセット
 
-## Configuration
+## Configuration {#configuration}
 
 addon はネットワーク管理画面のインターフェースからアクセスできるさまざまな設定オプションをサポートしています。
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - addon の初期化後に発火
 - `ultimate-multisite-addon-template_loaded` - すべての addon ファイルが読み込まれた後に発火
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - addon の設定を変更
 - `ultimate-multisite-addon-template_enabled` - addon の有効/無効状態を上書き
 
-## License
+## License {#license}
 
 この addon は GPL v3 以上のライセンスで提供されています。
 
-## Support
+## Support {#support}
 
 サポートとドキュメントについては、[MultisiteUltimate.com](https://multisiteultimate.com) をご覧ください
 
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix を ultimate-multisite に変更; テキストドメインを更新; バージョンを更新。
 - Version (2025-09-28): prefix を ultimate-multisite に変更; テキストドメインを更新; バージョンを更新。

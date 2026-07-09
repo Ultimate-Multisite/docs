@@ -4,13 +4,13 @@ title: Action - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Action: wp_ultimo_host_providers_load
+# Action: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
 
 डेवलपर्स को wp प्लगइन्स के ज़रिए अपने खुद के होस्ट प्रोवाइडर इंटीग्रेशन जोड़ने की अनुमति देता है।
 
-### कब से उपलब्ध है
+### कब से उपलब्ध है {#since}
 
 - 2.0.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/managers/class-domain-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-domain-manager.php#L1107) में लाइन 1107 पर परिभाषित है

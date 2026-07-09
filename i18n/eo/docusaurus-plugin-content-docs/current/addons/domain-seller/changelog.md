@@ -3,7 +3,7 @@ title: Ŝanĝoprotokolo de Domajna Vendisto
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Ŝanĝoprotokolo
+# Domain Seller Ŝanĝoprotokolo {#domain-seller-changelog}
 
 Versio 1.3.0 - Eldonita je 2026-06-02
 - Nova: Aldonita averto por reta administranto kiam la saldo de HostAfrica revendisto fariĝas tro malalta
@@ -134,20 +134,20 @@ Versio 1.0.0 - Eldonita je 2025-09-28
 * **Korektita:** Ĉiu malaktuala v1-kodo ĝisdatigita al v2-normoj
 * **Forigita:** Hereda v1-kongrueco (rompa ŝanĝo)
 
-### Antaŭaj Versioj (v1 Hereda)
+### Antaŭaj Versioj (v1 Hereda) {#previous-versions-v1-legacy}
 
-### Versio 0.0.3 - 20/08/2019
+### Versio 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Korektita: Nekongrueco kun Groundhogg CRM
 * Noto: Ĉi tio estis la lasta v1-kongrua eldono
 
-### Versio 0.0.2 - 07/12/2018
+### Versio 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Korektita: Forigis la kampon License Key
 * Korektita: Plan-langetoj mankis kiam la funkcia plugin estas aktiva
 * Plibonigita: Aldonis preterpasan butonon en la registra kampo
 
-### Versio 0.0.1 - Komenca Eldono
+### Versio 0.0.1 - Komenca Eldono {#version-001---initial-release}
 
 * Baza OpenSRS-integriĝo por WP Ultimo v1
 * Simpla domajna serĉo kaj registrado

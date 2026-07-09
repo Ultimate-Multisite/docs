@@ -3,7 +3,7 @@ title: Upravljanje deljivih povezav za načrte
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Upravljanje deljivih povezav za načrte
+# Upravljanje deljivih povezav za načrte {#managing-shareable-links-for-plans}
 
 Ultimate Multisite vam omogoča možnost, da deljujete povezave na načrtje neposredno z vašimi strankami. Za to gre do v bilo kot enega iz vaših načrtov spremenljivk in kliknite gumb _Klikni za kopiranje deljive povezave_.
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM sjell inferencën AI natyrale në shfletues në rrjetin tuaj multisite WordPress. Ai ekzekuton modele të mëdha gjuhësore tërësisht në shfletues duke përdorur WebLLM dhe motorin MLC — pa API keys, pa thirrje të jashtme, pa të dhëna që largohen nga pajisja e përdoruesit.
 
-## Veçoritë Kryesore
+## Veçoritë Kryesore {#key-features}
 
 - **Inferencë në anën e shfletuesit**: LLM ekzekutohet lokalisht në shfletuesin e vizitorit përmes WebLLM/MLC — nuk kërkohet GPU serveri
 - **Widget chat-i lundrues**: Përdoruesit e identifikuar mund t’i japin prompt LLM-së në anën e shfletuesit drejtpërdrejt nga pjesa e përparme
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM sjell inferencën AI natyrale në shfletues në
 - **Cache IndexedDB**: Shkarkimet e peshave të modelit i mbijetojnë ridrejtimeve CDN që prishin shtegun e parazgjedhur të Cache API
 - **Integrim me filtrin wpai**: Lidhet me filtrin `wpai_preferred_text_models` në mënyrë që veçoria AI Experiments të drejtohet te motori i shfletuesit kur konfigurohet
 
-## Kërkesat
+## Kërkesat {#requirements}
 
 - WordPress 5.3 ose më i lartë
 - PHP 7.4 ose më i lartë
 - Plugin Ultimate Multisite (aktiv)
 - Një shfletues me mbështetje WebGPU (Chrome 113+, Edge 113+, ose Firefox Nightly me WebGPU të aktivizuar)
 
-## Instalimi
+## Instalimi {#installation}
 
 1. Ngarkoni skedarët e addon-it në direktoriumin tuaj `/wp-content/plugins/`
 2. Aktivizoni plugin-in përmes menusë 'Plugins' në WordPress
 3. Shkoni te **Ultimate Multisite → AI Connector** për të konfiguruar addon-in
 
-## Widget Chat-i Lundrues
+## Widget Chat-i Lundrues {#floating-chat-widget}
 
 Widget-i lundrues i chat-it i lejon çdo përdoruesi të identifikuar të ndërveprojë me LLM-në në anën e shfletuesit drejtpërdrejt nga pjesa juaj e përparme, pa u larguar nga faqja ku ndodhen.
 
-### Çfarë Bën
+### Çfarë Bën {#what-it-does}
 
 Kur aktivizohet, një ikonë chat-i shfaqet në cepin e çdo faqeje të pjesës së përparme për përdoruesit e identifikuar. Klikimi i ikonës hap një panel chat-i ku përdoruesi mund të shkruajë prompt-e dhe të marrë përgjigje nga modeli WebLLM që ekzekutohet lokalisht. Meqenëse modeli ekzekutohet tërësisht në shfletues, përgjigjet janë private dhe nuk përfshijnë asnjë përpunim në anën e serverit.
 
-### Treguesi i Statusit në Shiritin e Adminit
+### Treguesi i Statusit në Shiritin e Adminit {#admin-bar-status-indicator}
 
 Shiriti i adminit i WordPress përfshin një tregues statusi që shfaq gjendjen aktuale të motorit WebLLM:
 
@@ -56,7 +56,7 @@ Shiriti i adminit i WordPress përfshin një tregues statusi që shfaq gjendjen 
 
 Treguesi përditësohet në kohë reale pa kërkuar ringarkim të faqes.
 
-### Si ta Aktivizoni ose Çaktivizoni Widget-in
+### Si ta Aktivizoni ose Çaktivizoni Widget-in {#how-to-enable-or-disable-the-widget}
 
 1. Shkoni te **Ultimate Multisite → AI Connector** në adminin e rrjetit
 2. Gjeni panelin **Connector**
@@ -65,17 +65,17 @@ Treguesi përditësohet në kohë reale pa kërkuar ringarkim të faqes.
 
 Widget-i mund të aktivizohet ose çaktivizohet gjithashtu për çdo site nga admini i vetë site-it nëse administratori i rrjetit e ka dhënë atë aftësi.
 
-## Cilësimet e Widget-it
+## Cilësimet e Widget-it {#widget-settings}
 
 Paneli Connector në **Ultimate Multisite → AI Connector** përmban cilësimet e mëposhtme për widget-in lundrues të chat-it:
 
-### Aktivizo Widget-in Lundrues të Chat-it
+### Aktivizo Widget-in Lundrues të Chat-it {#enable-floating-chat-widget}
 
 Aktivizon ose çaktivizon widget-in e chat-it për të gjithë rrjetin. Kur është i çaktivizuar, widget-i nuk shfaqet në asnjë faqe të pjesës së përparme, pavarësisht rolit të përdoruesit.
 
 **Parazgjedhja:** Joaktiv
 
-### Sjellja e Auto-Prompt
+### Sjellja e Auto-Prompt {#auto-prompt-behaviour}
 
 Kontrollon nëse widget-i i chat-it dërgon automatikisht një prompt kur një përdorues e hap atë.
 
@@ -93,7 +93,7 @@ Kur vendoset në **Prompt i personalizuar**, shfaqet një fushë shtesë teksti 
 
 **Parazgjedhja:** I çaktivizuar
 
-## Runtime SharedWorker
+## Runtime SharedWorker {#sharedworker-runtime}
 
 Versioni 1.1.0 prezanton një runtime SharedWorker për motorin MLC. Më parë, çdo skedë shfletuesi që përdorte WebLLM ngarkonte instancën e vet të modelit, duke konkurruar për memorien GPU dhe duke shkaktuar probleme performance në pajisje me VRAM të kufizuar.
 
@@ -105,29 +105,29 @@ Me runtime-in SharedWorker, një skedë vepron si host i motorit. Të gjitha ske
 
 SharedWorker është transparent për përdoruesit. Treguesi i statusit në shiritin e adminit gjithmonë pasqyron gjendjen e motorit të përbashkët, jo të skedës individuale.
 
-## Middleware apiFetch
+## Middleware apiFetch {#apifetch-middleware}
 
 Addon-i instalon një middleware `apiFetch` që intercepton kërkesat WordPress REST API që përputhen me modelin AI Client SDK. Në vend që të bëhen kërkesa loopback HTTP te serveri, këto kërkesa drejtohen drejtpërdrejt te brokeri lokal WebLLM që ekzekutohet në SharedWorker.
 
 Kjo do të thotë se plugin-et dhe theme-et që përdorin API-n standarde `apiFetch` të WordPress për të thirrur endpoint-e AI do të përfitojnë automatikisht nga modeli në anën e shfletuesit kur ai është i disponueshëm, pa kërkuar ndryshime në kod.
 
-## Hooks dhe Filtra
+## Hooks dhe Filtra {#hooks-and-filters}
 
-### Filtra
+### Filtra {#filters}
 
 - `wpai_preferred_text_models` — Regjistron motorin e shfletuesit WebLLM si një model teksti të preferuar. Shtesa lidhet automatikisht me këtë filtër kur motori është i konfiguruar dhe i disponueshëm.
 - `ultimate_webllm_widget_enabled` — Mbishkruan gjendjen e aktivizimit të widget-it për një përdorues ose kontekst specifik. Kthe `true` ose `false`.
 - `ultimate_webllm_auto_prompt` — Modifikon tekstin e auto-prompt-it përpara se të dërgohet te widget-i. Merr vargun e prompt-it dhe objektin aktual `WP_Post`.
 
-## Zgjidhja e problemeve
+## Zgjidhja e problemeve {#troubleshooting}
 
-### Widget-i i chat-it nuk shfaqet
+### Widget-i i chat-it nuk shfaqet {#the-chat-widget-does-not-appear}
 
 - Konfirmo që përdoruesi është i identifikuar — widget-i shfaqet vetëm për përdoruesit e autentikuar
 - Kontrollo që **Enable floating chat widget** është i aktivizuar në panelin Connector
 - Verifiko që shfletuesi i përdoruesit mbështet WebGPU (shih Kërkesat më sipër)
 
-### Treguesi i shiritit të adminit tregon "Gabim"
+### Treguesi i shiritit të adminit tregon "Gabim" {#the-admin-bar-indicator-shows-error}
 
 Hap konsolën e zhvilluesit të shfletuesit (F12) dhe kërko gabime të lidhura me WebLLM. Shkaqe të zakonshme:
 
@@ -135,10 +135,10 @@ Hap konsolën e zhvilluesit të shfletuesit (F12) dhe kërko gabime të lidhura 
 - Shkarkimi i peshave të modelit dështoi — kontrollo lidhjen e rrjetit dhe provo të pastrosh cache-in IndexedDB në mjetet e zhvilluesit të shfletuesit (Application → IndexedDB)
 - Një extension i shfletuesit po bllokon SharedWorker
 
-### Peshat e modelit shkarkohen çdo herë
+### Peshat e modelit shkarkohen çdo herë {#model-weights-download-every-time}
 
 Shtesa përdor IndexedDB si backend cache për të siguruar që peshat e modelit t’u mbijetojnë ridrejtimeve CDN. Nëse peshat po rishkarkohen në çdo vizitë, kontrollo që IndexedDB të mos po pastrohet nga një cilësim privatësie i shfletuesit ose nga një extension.
 
-## Changelog
+## Changelog {#changelog}
 
 Shih [Changelog](./changelog) për historikun e plotë të versioneve.

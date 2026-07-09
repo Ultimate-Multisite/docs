@@ -3,13 +3,13 @@ title: Reġistru tal-bidliet tal-Biljetti ta’ Appoġġ
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Reġistru tal-Bidliet tat-Tickets ta' Appoġġ
+# Reġistru tal-Bidliet tat-Tickets ta' Appoġġ {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Imtejjeb: Tneħħa d-direttorju vendor/ mit-traċċar ta' Git (diġà kopert minn .gitignore), u b'hekk tnaqqas id-daqs tar-repożitorju
 * Imtejjeb: Ittestjat sa WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Tiswija: Aċċetta valuri null fis-setters tal-mudell tat-ticket li jista' jkun null
 * Tiswija: Aħżen it-tickets kollha f'tabelli globali madwar in-network kollu għal appoġġ multisite xieraq
 * Tiswija: Aħbi l-fields tal-persunal u sewwi r-ridirezzjoni għal paġna vojta fuq il-formola ta' ticket ġdid tal-klijent
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Imtejjeb: Tella' l-assi tal-frontend b'mod kundizzjonali biss fuq paġni tat-tickets ta' appoġġ
 * Imtejjeb: Aqbeż l-autoloader tal-plugin meta l-autoloader tal-għerq ta' Bedrock ikun diġà tella' d-dependencies
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Miżjud: Funzjonalità sħiħa tal-wiri tat-tickets għall-amministrazzjoni u l-frontend
 * Miżjud: Handler AJAX għas-sottomissjonijiet ta' tweġibiet tat-ticket
 * Miżjud: Appoġġ għall-funzjonalità tat-tweġibiet tat-ticket b'immaniġġjar xieraq tal-formola
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Imtejjeb: Struttura tad-database b'query u klassijiet tal-iskema xierqa għat-tweġibiet u l-attachments
 * Imtejjeb: Migrazzjoni għal proprjetajiet reali minflok attributes għall-mudelli tat-tickets
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Aġġornat: Il-prefix ingħata isem ġdid għal ultimate-multisite għall-konsistenza
 * Aġġornat: Standardizzazzjoni tat-text domain
 * Irranġat: Tiswijiet u titjib żgħar ta' bugs
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Ħarġa inizjali
 * Sistema kompleta ta' ġestjoni tat-tickets
 * Kontroll tal-aċċess fuq diversi livelli

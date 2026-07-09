@@ -3,7 +3,7 @@ title: Exportator situs
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# Exportare del Sito
+# Exportare del Sito {#site-exporter}
 
 Questa funzione è fornita dal plugin **Site Exporter**.
 

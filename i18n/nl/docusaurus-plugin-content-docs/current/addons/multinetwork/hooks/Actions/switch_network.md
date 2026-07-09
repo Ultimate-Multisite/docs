@@ -4,21 +4,21 @@ title: Actie - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Action: switch_network
+# Action: switch_network {#action-switchnetwork}
 
 Wordt geactiveerd wanneer de huidige netwerkcontext wordt gewijzigd.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $new_network_id | `int` | ID van het netwerk waarnaar wordt overgeschakeld. |
 | $old_network_id | `int` | ID van het voorgaande huidige netwerk. |
 
-### Sinds
+### Sinds {#since}
 
 - 1.3.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L859) op regel 859

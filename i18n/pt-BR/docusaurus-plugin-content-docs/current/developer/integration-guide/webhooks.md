@@ -3,11 +3,11 @@ title: Manipulação de Webhooks
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Manipulação de Webhooks
+# Manipulação de Webhooks {#webhook-handling}
 
 Crie endpoints de webhook personalizados para receber eventos de serviços externos e sincronizar dados com o Ultimate Multisite.
 
-## Endpoint de Webhook Personalizado
+## Endpoint de Webhook Personalizado {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Considerações de Segurança
+## Considerações de Segurança {#security-considerations}
 
 - Sempre verifique as assinaturas de webhook usando HMAC ou um segredo compartilhado
 - Use um `permission_callback` na sua rota REST — nunca defina como `__return_true` em produção

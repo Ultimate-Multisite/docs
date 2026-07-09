@@ -3,7 +3,7 @@ title: Àwọn Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Ìwòye Àkọ́kọ́ nípa Webhooks (v2)
+# Ìwòye Àkọ́kọ́ nípa Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**ÀKÍYÈSÍ: Kíyèsí pé ẹ̀yà yìí tàbí àpilẹ̀kọ yìí jẹ́ fún àwọn oníṣe tó ti ní ìmọ̀ gíga.**_
 
@@ -11,7 +11,7 @@ _**ÀKÍYÈSÍ: Kíyèsí pé ẹ̀yà yìí tàbí àpilẹ̀kọ yìí jẹ́ 
 
 Èyí wúlò bí o bá nílò láti so pọ̀ tàbí láti kọjá data kan láti Ultimate Multisite lọ sí CRM tàbí system mìíràn ní gbogbo ìgbà tí event bá jẹ́ kí ó ṣiṣẹ́. Fún àpẹẹrẹ, o nílò láti fi orúkọ olumulo àti adirẹsi email ránṣẹ́ sí àtòjọ ìfìwéránṣẹ́ ní gbogbo ìgbà tí Account olumulo tuntun bá dá sílẹ̀.
 
-## Bí a ṣe ń dá webhook ṣẹ̀dá
+## Bí a ṣe ń dá webhook ṣẹ̀dá {#how-to-create-a-webhook}
 
 Láti dá webhook ṣẹ̀dá, lọ sí dashboard alábòójútó nẹ́tíwọ́ọ̀kì rẹ. Tẹ **Ultimate Multisite > Webhooks > Add New Webhook.**
 

@@ -3,15 +3,15 @@ title: '14. nodarbība: Kas tālāk'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Nodarbība 14: Kas tālāk
+# Nodarbība 14: Kas tālāk {#lesson-14-what-comes-next}
 
 Jūs esat no nulles izveidojis nišas tīmekļa vietņu platformu. FitSite darbojas, apkalpo fitnesa studijas un ģenerē atkārtotus ieņēmumus. Šī noslēguma nodarbība aplūko, kur doties tālāk.
 
-## Kur mēs apstājāmies
+## Kur mēs apstājāmies {#where-we-left-off}
 
 FitSite ir strādājošs uzņēmums ar klientiem, darbībām un izaugsmes trajektoriju. Tagad domājam par to, kas būs tālāk.
 
-## Pilns FitSite tīkls
+## Pilns FitSite tīkls {#the-complete-fitsite-network}
 
 Šeit ir viss, ko izveidojām 14 nodarbībās:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## 1. opcija: iedziļinieties savā nišā
+## 1. opcija: iedziļinieties savā nišā {#option-1-go-deeper-in-your-niche}
 
 Pirms paplašināšanās uz jaunām nišām apsveriet iespēju iedziļināties fitnesā:
 
-### Apakšnišas
+### Apakšnišas {#sub-niches}
 
 - **Jogas studijas** -- specializētas veidnes ar meditācijas, retrītu un darbnīcu funkcijām
 - **CrossFit zāles** -- WOD izsekošana, sacensību rezultāti, kopienas funkcijas
@@ -59,7 +59,7 @@ Pirms paplašināšanās uz jaunām nišām apsveriet iespēju iedziļināties f
 
 Katrai apakšnišai var būt savas veidnes un, iespējams, savs zīmols, viss darbojoties tajā pašā Ultimate Multisite tīklā.
 
-### Premium funkcijas
+### Premium funkcijas {#premium-features}
 
 Veidojiet funkcijas, par kurām fitnesa studijas būs gatavas maksāt papildus:
 
@@ -68,14 +68,14 @@ Veidojiet funkcijas, par kurām fitnesa studijas būs gatavas maksāt papildus:
 - **Fitnesa bloga veidnes** -- iepriekš izveidotas satura struktūras fitnesa satura mārketingam
 - **Sociālo mediju integrācija** -- automātiska nodarbību grafiku un atjauninājumu publicēšana
 
-### Ģeogrāfiskā paplašināšanās
+### Ģeogrāfiskā paplašināšanās {#geographic-expansion}
 
 Ja sākāt lokāli, paplašinieties uz:
 
 - Citām pilsētām savā valstī
 - Citām valstīm (izmantojiet Ultimate Multisite [lokalizācijas funkcijas](/user-guide/localization/translating), lai atbalstītu vairākas valodas)
 
-## 2. opcija: paplašinieties uz blakus nišām
+## 2. opcija: paplašinieties uz blakus nišām {#option-2-expand-to-adjacent-niches}
 
 Process, ko izmantojāt fitnesa studijām, darbojas jebkurai nišai. Jūsu otrā niša ir vieglāka, jo jums jau ir:
 
@@ -83,7 +83,7 @@ Process, ko izmantojāt fitnesa studijām, darbojas jebkurai nišai. Jūsu otrā
 - Operacionālā pieredze
 - Pierādīta darbības shēma
 
-### Fitnesam blakus esošās nišas
+### Fitnesam blakus esošās nišas {#adjacent-niches-to-fitness}
 
 - **Labsajūta un spa** -- masāžas terapeiti, dienas spa, labsajūtas centri
 - **Sporta klubi** -- amatieru sporta komandas, līgas, atpūtas klubi
@@ -91,7 +91,7 @@ Process, ko izmantojāt fitnesa studijām, darbojas jebkurai nišai. Jūsu otrā
 
 Šīm nišām ir auditorijas pārklāšanās ar fitnesu, tāpēc jūsu mārketings un partnerības var būt pārnesamas.
 
-### Pilnīgi jaunas nišas
+### Pilnīgi jaunas nišas {#completely-new-niches}
 
 Izmantojiet 2. nodarbības ietvaru, lai novērtētu jebkuru nišu:
 
@@ -108,7 +108,7 @@ Katrai jaunai nišai nepieciešams:
 
 Platformas infrastruktūra, norēķini un operacionālie procesi paliek tie paši.
 
-## 3. opcija: izveidojiet platformu platformu
+## 3. opcija: izveidojiet platformu platformu {#option-3-build-a-platform-of-platforms}
 
 Mērogā varat darbināt vairākus nišas zīmolus vienā Ultimate Multisite tīklā:
 
@@ -118,11 +118,11 @@ Mērogā varat darbināt vairākus nišas zīmolus vienā Ultimate Multisite tī
 
 Katram zīmolam ir savas veidnes, tarifu plāni un mārketings, bet tie koplieto infrastruktūru, norēķinus un operacionālos procesus. Šeit Ultimate Multisite ekonomika kļūst spēcīga -- viena platforma, daudzas vertikāles.
 
-### Vairāku tīklu risinājums
+### Vairāku tīklu risinājums {#multi-network}
 
 Pilnīgai nišu nošķiršanai apsveriet [Multi-Network papildinājumu](/addons/multinetwork), kas ļauj darbināt vairākus WordPress tīklus no vienas instalācijas.
 
-## 4. opcija: pārdodiet uzņēmumu
+## 4. opcija: pārdodiet uzņēmumu {#option-4-sell-the-business}
 
 Nišas tīmekļa vietņu platforma ar atkārtotiem ieņēmumiem, zemu klientu aizplūšanu un skaidru pozīciju tirgū ir vērtīgs aktīvs. SaaS uzņēmumi parasti tiek pārdoti par 3-5x gada ieņēmumiem.
 
@@ -134,7 +134,7 @@ FitSite ar 200 klientiem pie $89 ARPU:
 
 Tas nav garantēts iznākums, bet tas ir reālistisks labi vadītai nišas platformai.
 
-## Ko jūs esat iemācījies
+## Ko jūs esat iemācījies {#what-you-have-learned}
 
 Šis kurss jums iemācīja atkārtojamu procesu:
 
@@ -150,7 +150,7 @@ Tas nav garantēts iznākums, bet tas ir reālistisks labi vadītai nišas platf
 
 Niša ir stratēģija. Platforma ir rīks. Ultimate Multisite padara rīku iespējamu. Jūsu izpratne par nišu padara to vērtīgu.
 
-## Sāciet būvēt
+## Sāciet būvēt {#start-building}
 
 Ja sekojāt līdzi FitSite, jums ir strādājoša platforma. Ja lasījāt, lai atrastu savu nišu, atgriezieties pie [2. nodarbība: savas nišas izvēle](lesson-2-picking-your-niche) un sāciet procesu savam izvēlētajam vertikālim.
 

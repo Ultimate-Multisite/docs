@@ -3,13 +3,13 @@ title: Alur Registrasi
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Alur Registrasi (v2)
+# Alur Registrasi (v2) {#the-registration-flow-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
 Pengguna bisa mendaftar ke jaringan Anda dengan cara yang berbeda. Mereka bisa pakai formulir registrasi Anda atau tautan yang bisa dibagikan untuk paket yang sudah dipilih sebelumnya. Di sini kami akan tunjukkan bagaimana pelanggan Anda bisa daftar di jaringan Anda menggunakan jalur yang tersedia dan apa yang terjadi setelah mereka mendaftar di jaringan Anda.
 
-## Menggunakan Formulir Registrasi:
+## Menggunakan Formulir Registrasi: {#using-the-registration-form}
 
 Ini adalah proses registrasi standar. Anda membuat halaman registrasi dengan **checkout form** (formulir pembayaran) dan ini tempat pelanggan Anda akan pergi untuk mendaftar di jaringan Anda dan berlangganan paket. Anda bisa punya banyak halaman registrasi, masing-masing dengan formulir registrasi yang berbeda kalau mau.
 
@@ -35,13 +35,13 @@ Lamun maranéhna geus registrasi dina paket berbayar atawa verifikasi email teu 
 
 ![Website aktif kalayan tautan pikeun login ka dashboard](/img/frontend/site-activated.png)
 
-## Ngagunake Tautan Shareable (Shareable Link):
+## Ngagunake Tautan Shareable (Shareable Link): {#using-a-shareable-link}
 
 Proses registrasi ngagunake tautan shareable téh intina sarua jeung formulir registrasi, ngan béda nyaéta ngagunake tautan shareable, pelanggan anjeun bisa milih produk atawa template website saméméh dina formulir checkout (refer ka bagian Pre-selecting products and templates via URL parameters) atawa mungkin nambahan kode kupon (refer ka bagian Using URL Parameters).
 
 Proses registrasina bakal sarua: maranéhna kudu ngisian nami, username, alamat email, nama website jeung judul, jsb... tapi paket atawa template situs geus dipilih saméméh pikeun maranéhna.
 
-### Registrasi Ngagunake Pembayaran Manual (Manual Payments):
+### Registrasi Ngagunake Pembayaran Manual (Manual Payments): {#registering-using-manual-payments}
 
 Lamun anjeun teu hayang ngagunake PayPal, Stripe atawa gerbang pembayaran séjén anu ditawarke ku Ultimate Multisite atawa integrasi add-onna, anjeun bisa ngagunake pembayaran manual pikeun pelanggan anjeun. Cara ieu, anjeun bisa ngajadikeun invoice keur maranéhna bayar ka processor pembayaran pilihan anjeun sanggeus maranéhna registrasi dina jaringan anjeun.
 

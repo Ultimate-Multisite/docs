@@ -3,17 +3,17 @@ title: 'Õppetund 12: Ettevõtte juhtimine'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Õppetund 12: Ettevõtte juhtimine
+# Õppetund 12: Ettevõtte juhtimine {#lesson-12-running-the-business}
 
 Platvorm ei ole projekt, mille sa lõpetad -- see on ettevõte, mida sa juhid. See õppetund käsitleb FitSite’i haldamise igapäevaseid toiminguid: tuge, arveldamist, hooldust ja klientide rahulolu hoidmist.
 
-## Kuhu pooleli jäime
+## Kuhu pooleli jäime {#where-we-left-off}
 
 FitSite on avalik ja kliendid registreeruvad. Nüüd pead tegevust jätkusuutlikult juhtima.
 
-## Igapäevased toimingud
+## Igapäevased toimingud {#daily-operations}
 
-### Jälgimine
+### Jälgimine {#monitoring}
 
 Kontrolli neid iga päev (või seadista teavitused):
 
@@ -22,7 +22,7 @@ Kontrolli neid iga päev (või seadista teavitused):
 - **Ebaõnnestunud maksed**: Kas on makse ebaõnnestumisi, mis vajavad tähelepanu?
 - **Tugipäringud**: Kas on vastamata kliendiküsimusi?
 
-### Klienditugi
+### Klienditugi {#customer-support}
 
 Sinu nišifookus on siin eelis. Kuna kõik sinu kliendid on fitnessistuudiod, näed samu küsimusi korduvalt:
 
@@ -36,7 +36,7 @@ Sinu nišifookus on siin eelis. Kuna kõik sinu kliendid on fitnessistuudiod, n�
 
 Ehita oma teadmistebaas (alustatud õppetunnis 8) nende korduvate küsimuste ümber. Iga tugipilet, millest oleks saanud teadmistebaasi artikkel, on signaal see artikkel kirjutada.
 
-### Toe tasemed
+### Toe tasemed {#support-tiers}
 
 Kasvades struktureeri tugi paketi järgi:
 
@@ -48,9 +48,9 @@ Kasvades struktureeri tugi paketi järgi:
 
 [Support Tickets lisamoodul](/addons/support-tickets) aitab hallata tugipäringuid platvormi sees.
 
-## Arveldamise toimingud
+## Arveldamise toimingud {#billing-operations}
 
-### Korduvad maksed
+### Korduvad maksed {#recurring-payments}
 
 Ultimate Multisite haldab korduvat arveldamist automaatselt sinu makselüüsi kaudu. Sinu ülesanne on jälgida:
 
@@ -58,7 +58,7 @@ Ultimate Multisite haldab korduvat arveldamist automaatselt sinu makselüüsi ka
 - **Võlgnevuste käsitlemine**: Seadista oma makselüüsi kaudu automaatne uuesti proovimise loogika (Stripe saab sellega hästi hakkama)
 - **Tühistamistaotlused**: Mõista, miks kliendid lahkuvad. Iga tühistamine on tagasiside.
 
-### Liikmesuste haldamine
+### Liikmesuste haldamine {#managing-memberships}
 
 Liigu jaotisse **Ultimate Multisite > Liikmesused**, et:
 
@@ -69,13 +69,13 @@ Liigu jaotisse **Ultimate Multisite > Liikmesused**, et:
 
 Täieliku viite leiad jaotisest [Liikmesuste haldamine](/user-guide/administration/managing-memberships).
 
-### Arved
+### Arved {#invoicing}
 
 Veendu, et arved luuakse iga makse jaoks õigesti. Klientidel võib olla arveid vaja ettevõtluskulude aruandluseks. Vaata [Maksete ja arvete haldamine](/user-guide/administration/managing-payments-and-invoices).
 
-## Platvormi hooldus
+## Platvormi hooldus {#platform-maintenance}
 
-### WordPressi ja pluginate uuendused
+### WordPressi ja pluginate uuendused {#wordpress-and-plugin-updates}
 
 Võrgu administraatorina vastutad sa järgmise eest:
 
@@ -88,14 +88,14 @@ Võrgu administraatorina vastutad sa järgmise eest:
 Katkine uuendus mõjutab iga kliendisaiti sinu võrgus. Testi uuendusi alati esmalt oma võrgu staging-koopial.
 :::
 
-### Turvalisus
+### Turvalisus {#security}
 
 - Hoia kogu tarkvara ajakohasena
 - Kasuta administraatorikontode jaoks tugevaid paroole ja kahefaktorilist autentimist
 - Jälgi kahtlast tegevust
 - Oma turvaintsidentide jaoks plaan
 
-### Jõudlus
+### Jõudlus {#performance}
 
 Kui sinu võrk kasvab, jälgi:
 
@@ -105,9 +105,9 @@ Kui sinu võrk kasvab, jälgi:
 
 Kaalu vahemällu salvestamise (lehevahemälu, objektivahemälu) ja CDN-i kasutuselevõttu, kui sa ei ole seda juba teinud. [Cloudflare integratsioon](/user-guide/host-integrations/cloudflare) haldab suurt osa sellest.
 
-## Kliendi elutsükli haldamine
+## Kliendi elutsükli haldamine {#customer-lifecycle-management}
 
-### Lahkumismäära vähendamine
+### Lahkumismäära vähendamine {#reducing-churn}
 
 Lahkumismäär on klientide protsent, kes iga kuu tühistavad. Tellimusäri puhul on lahkumismäära vähendamine sama oluline kui uute klientide hankimine.
 
@@ -119,7 +119,7 @@ Lahkumismäär on klientide protsent, kes iga kuu tühistavad. Tellimusäri puhu
 - Nad leidsid odavama alternatiivi → tugevda oma nišiväärtust
 - Nende ettevõte suleti → vältimatu, kuid jälgi seda eraldi
 
-### Uuendamise soodustamine
+### Uuendamise soodustamine {#encouraging-upgrades}
 
 Starteri kliendid, kellel läheb hästi, tuleks julgustada paketti uuendama:
 
@@ -127,7 +127,7 @@ Starteri kliendid, kellel läheb hästi, tuleks julgustada paketti uuendama:
 - Saada sihitud e-kirju, mis tõstavad esile Growth paketi funktsioone, millest neil oleks kasu
 - Näita, mida Growth/Pro kliendid on loonud
 
-### Tagasivõitmise kampaaniad
+### Tagasivõitmise kampaaniad {#win-back-campaigns}
 
 Kui klient tühistab:
 
@@ -135,30 +135,30 @@ Kui klient tühistab:
 2. Käsitle nende muret, kui võimalik
 3. Paku tagasitulekuks allahindlust (30–60 päeva pärast tühistamist)
 
-## Iganädalased ja igakuised rutiinid
+## Iganädalased ja igakuised rutiinid {#weekly-and-monthly-routines}
 
-### Iganädalaselt
+### Iganädalaselt {#weekly}
 
 - Vaata üle uued registreerumised ja tühistamised
 - Vasta kõigile avatud tugipiletitele
 - Kontrolli platvormi jõudlust ja tööaega
 - Vaata üle kõik ebaõnnestunud maksed
 
-### Igakuiselt
+### Igakuiselt {#monthly}
 
 - Analüüsi peamisi mõõdikuid (MRR, lahkumismäär, uued kliendid, paketiuuendused)
 - Rakenda WordPressi ja pluginate uuendused (pärast staging-testi)
 - Vaata üle ja uuenda teadmistebaasi tugimustrite põhjal
 - Saada klientidele uudiskiri või uuendus (uued funktsioonid, nõuanded, fitnessivaldkonna uudised)
 
-### Kvartaalselt
+### Kvartaalselt {#quarterly}
 
 - Vaata hinnastust üle konkurentide ja klienditagasiside põhjal
 - Hinda mallide kujundusi -- kas need vajavad värskendamist?
 - Hinda majutuse võimsust -- kas pead skaleerima?
 - Vaata üle ja paranda sisseelamist aktiveerimisandmete põhjal
 
-## Mida me selles õppetunnis ehitasime
+## Mida me selles õppetunnis ehitasime {#what-we-built-this-lesson}
 
 - **Igapäevased seirerutiinid** tööaja, registreerumiste, maksete ja toe jaoks
 - **Mitmetasemeline tugistruktuur**, mis vastab pakettide tasemetele

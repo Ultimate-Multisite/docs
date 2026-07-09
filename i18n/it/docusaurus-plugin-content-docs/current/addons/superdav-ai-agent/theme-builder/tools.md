@@ -3,17 +3,17 @@ title: Strumenti e configurazione
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Strumenti e configurazione
+# Strumenti e configurazione {#tools-and-configuration}
 
 Theme Builder usa un insieme di strumenti per analizzare, progettare e creare il tuo sito WordPress. Nella versione 1.16.0, **sd-ai-agent/site-scrape è ora uno strumento di Tier 1**, rendendolo disponibile per impostazione predefinita in Theme Builder. Superdav AI Agent v1.18.0 introduce anche un pacchetto companion Advanced distribuito separatamente per flussi di lavoro di sviluppatori fidati; questi strumenti non fanno parte del pacchetto core di WordPress.org e devono essere installati e autorizzati separatamente.
 
-## Strumenti disponibili
+## Strumenti disponibili {#available-tools}
 
-### Strumenti di Tier 1 (sempre disponibili)
+### Strumenti di Tier 1 (sempre disponibili) {#tier-1-tools-always-available}
 
 Gli strumenti di Tier 1 sono disponibili per impostazione predefinita in Theme Builder senza alcuna configurazione aggiuntiva.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Scopo:** analizzare siti web esistenti per estrarre ispirazione di design, struttura dei contenuti e funzionalità.
 
@@ -51,11 +51,11 @@ Analizza il design di example.com e usalo come ispirazione per il mio sito.
 - I siti con molto JavaScript potrebbero avere un’analisi limitata
 - I siti di grandi dimensioni potrebbero richiedere più tempo per l’analisi
 
-### Strumenti di Tier 2 (opzionali)
+### Strumenti di Tier 2 (opzionali) {#tier-2-tools-optional}
 
 Gli strumenti di Tier 2 sono disponibili quando vengono abilitati esplicitamente nelle impostazioni di Theme Builder.
 
-#### Analisi avanzata
+#### Analisi avanzata {#advanced-analytics}
 
 Fornisce metriche dettagliate sulle prestazioni:
 
@@ -65,7 +65,7 @@ Fornisce metriche dettagliate sulle prestazioni:
 - Punteggio di accessibilità
 - Punteggio delle best practice
 
-#### Ottimizzatore dei contenuti
+#### Ottimizzatore dei contenuti {#content-optimizer}
 
 Analizza e suggerisce miglioramenti per:
 
@@ -75,11 +75,11 @@ Analizza e suggerisce miglioramenti per:
 - Struttura dei contenuti
 - Posizionamento delle call-to-action
 
-### Strumenti di Tier 3 (Premium)
+### Strumenti di Tier 3 (Premium) {#tier-3-tools-premium}
 
 Gli strumenti di Tier 3 richiedono configurazione aggiuntiva o funzionalità premium.
 
-#### Generatore di contenuti AI
+#### Generatore di contenuti AI {#ai-content-generator}
 
 Genera contenuti per:
 
@@ -89,7 +89,7 @@ Genera contenuti per:
 - Meta descrizioni
 - Testi per call-to-action
 
-#### Strumenti di design avanzati
+#### Strumenti di design avanzati {#advanced-design-tools}
 
 Fornisce funzionalità di design avanzate:
 
@@ -99,7 +99,7 @@ Fornisce funzionalità di design avanzate:
 - Teoria avanzata del colore
 - Ottimizzazione della tipografia
 
-### Strumenti companion Advanced (pacchetto separato)
+### Strumenti companion Advanced (pacchetto separato) {#advanced-companion-tools-separate-package}
 
 Il pacchetto companion Advanced è distribuito separatamente dalla release core di Superdav AI Agent. È destinato ad ambienti di sviluppatori e proprietari di siti fidati in cui gli amministratori consentono esplicitamente all’agente di usare strumenti ad alto impatto.
 
@@ -116,9 +116,9 @@ Le funzionalità companion Advanced possono includere:
 
 Non documentare questi strumenti come strumenti Theme Builder generalmente disponibili per ogni installazione. Sono disponibili solo quando il pacchetto companion Advanced è installato, abilitato e limitato ad amministratori fidati.
 
-## Configurazione degli strumenti
+## Configurazione degli strumenti {#tool-configuration}
 
-### Abilitazione degli strumenti
+### Abilitazione degli strumenti {#enabling-tools}
 
 Per abilitare strumenti aggiuntivi in Theme Builder:
 
@@ -127,7 +127,7 @@ Per abilitare strumenti aggiuntivi in Theme Builder:
 3. Attiva/disattiva gli strumenti secondo necessità
 4. Salva le impostazioni
 
-### Autorizzazioni degli strumenti
+### Autorizzazioni degli strumenti {#tool-permissions}
 
 Alcuni strumenti richiedono autorizzazioni:
 
@@ -137,7 +137,7 @@ Alcuni strumenti richiedono autorizzazioni:
 - **Funzionalità avanzate** — potrebbero richiedere un abbonamento premium
 - **Strumenti companion Advanced** — richiedono il pacchetto Advanced distribuito separatamente e la fiducia esplicita dell’amministratore
 
-### Chiavi API e credenziali
+### Chiavi API e credenziali {#api-keys-and-credentials}
 
 Configura le chiavi API per gli strumenti che le richiedono:
 
@@ -146,13 +146,13 @@ Configura le chiavi API per gli strumenti che le richiedono:
 3. Testa la connessione
 4. Salva in modo sicuro
 
-### Installazione del pacchetto companion Advanced
+### Installazione del pacchetto companion Advanced {#installing-the-advanced-companion-package}
 
 Il pacchetto companion Advanced viene rilasciato separatamente dallo ZIP core di WordPress.org. Installalo solo dal canale ufficiale di distribuzione del progetto per la release, quindi limita l’accesso ad amministratori fidati. Esamina i gate di approvazione umana e il comportamento degli snapshot git prima di abilitare strumenti di filesystem, database, WP-CLI, REST dispatcher, creazione di plugin, gestione utenti o benchmark su un sito di produzione.
 
-## Uso di sd-ai-agent/site-scrape
+## Uso di sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Utilizzo di base
+### Utilizzo di base {#basic-usage}
 
 Chiedi a Theme Builder di analizzare un sito web:
 
@@ -161,7 +161,7 @@ Analizza il design del sito del mio concorrente su competitor.com
 e suggerisci miglioramenti di design per il mio sito.
 ```
 
-### Analisi specifica
+### Analisi specifica {#specific-analysis}
 
 Richiedi tipi specifici di analisi:
 
@@ -179,7 +179,7 @@ Controlla la responsività mobile di example.com e assicurati che il mio sito
 sia altrettanto responsive.
 ```
 
-### Analisi comparativa
+### Analisi comparativa {#comparison-analysis}
 
 Confronta più siti:
 
@@ -188,22 +188,22 @@ Confronta i design di site1.com e site2.com e crea un design
 che combini i migliori elementi di entrambi.
 ```
 
-## Limitazioni e considerazioni sugli strumenti
+## Limitazioni e considerazioni sugli strumenti {#tool-limitations-and-considerations}
 
-### Limitazione della frequenza
+### Limitazione della frequenza {#rate-limiting}
 
 - Lo scraping ha limiti di frequenza per prevenire il sovraccarico del server
 - Più richieste allo stesso sito possono essere limitate
 - I siti di grandi dimensioni possono richiedere più tempo per essere analizzati
 
-### Accuratezza dei contenuti
+### Accuratezza dei contenuti {#content-accuracy}
 
 - I contenuti dinamici potrebbero non essere acquisiti completamente
 - I contenuti renderizzati con JavaScript potrebbero essere incompleti
 - I dati in tempo reale potrebbero non essere riflessi
 - Alcuni contenuti potrebbero trovarsi dietro paywall
 
-### Considerazioni legali ed etiche
+### Considerazioni legali ed etiche {#legal-and-ethical-considerations}
 
 - Rispetta robots.txt e le policy del sito
 - Non effettuare scraping di contenuti protetti da copyright per la riproduzione
@@ -211,16 +211,16 @@ che combini i migliori elementi di entrambi.
 - Verifica di avere i diritti per usare i contenuti estratti
 - Segui i termini di servizio dei siti analizzati
 
-### Impatto sulle prestazioni
+### Impatto sulle prestazioni {#performance-impact}
 
 - Lo scraping di siti di grandi dimensioni può richiedere tempo
 - Più scraping simultanei possono essere più lenti
 - La connettività di rete influisce sulla velocità
 - Set di dati di grandi dimensioni possono richiedere più elaborazione
 
-## Best practice
+## Best practice {#best-practices}
 
-### Uso dell'analisi del sito
+### Uso dell'analisi del sito {#using-site-analysis}
 
 1. **Analizza più siti** — raccogli ispirazione da diverse fonti
 2. **Concentrati sulla struttura** — apprendi modelli di layout e organizzazione
@@ -228,7 +228,7 @@ che combini i migliori elementi di entrambi.
 4. **Studia la tipografia** — identifica le combinazioni di font che ti piacciono
 5. **Esamina la navigazione** — comprendi l'organizzazione dei menu
 
-### Scraping etico
+### Scraping etico {#ethical-scraping}
 
 1. **Rispetta robots.txt** — segui le linee guida del sito
 2. **Non copiare contenuti** — usa l'analisi solo come ispirazione
@@ -236,7 +236,7 @@ che combini i migliori elementi di entrambi.
 4. **Attribuisci le fonti** — accredita le fonti di ispirazione
 5. **Segui i termini** — rispetta i termini di servizio del sito
 
-### Massimizzare l'efficacia degli strumenti
+### Massimizzare l'efficacia degli strumenti {#maximizing-tool-effectiveness}
 
 1. **Sii specifico** — richiedi tipi specifici di analisi
 2. **Fornisci contesto** — spiega lo scopo del tuo sito
@@ -244,9 +244,9 @@ che combini i migliori elementi di entrambi.
 4. **Itera** — perfeziona in base ai risultati
 5. **Combina strumenti** — usa più strumenti per un'analisi completa
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
-### Il sito non viene sottoposto a scraping
+### Il sito non viene sottoposto a scraping {#site-wont-scrape}
 
 - Controlla se il sito è accessibile pubblicamente
 - Verifica che robots.txt consenta lo scraping
@@ -254,7 +254,7 @@ che combini i migliori elementi di entrambi.
 - Controlla la connessione internet
 - Contatta il supporto se il problema persiste
 
-### Analisi incompleta
+### Analisi incompleta {#incomplete-analysis}
 
 - Il sito potrebbe avere contenuti dinamici
 - JavaScript potrebbe non essere renderizzato completamente
@@ -262,7 +262,7 @@ che combini i migliori elementi di entrambi.
 - Prova invece ad analizzare pagine specifiche
 - Richiedi tipi specifici di analisi
 
-### Prestazioni lente
+### Prestazioni lente {#slow-performance}
 
 - I siti di grandi dimensioni richiedono più tempo per essere analizzati
 - Più scraping simultanei sono più lenti
@@ -270,7 +270,7 @@ che combini i migliori elementi di entrambi.
 - Prova durante le ore non di punta
 - Analizza prima sezioni più piccole
 
-## Documentazione correlata
+## Documentazione correlata {#related-documentation}
 
 - [Intervista di scoperta](./discovery-interview.md) — raccogli informazioni sul design
 - [Direzione del design](./design-direction.md) — perfeziona il tuo design

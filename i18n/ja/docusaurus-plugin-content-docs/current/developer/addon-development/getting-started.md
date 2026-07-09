@@ -3,9 +3,9 @@ title: Addon 開発の始め方
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon 開発
+# Addon 開発 {#addon-development}
 
-## Addon 構造
+## Addon 構造 {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # テンプレートファイル
 ```
 
-## メイン Addon ファイルテンプレート
+## メイン Addon ファイルテンプレート {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## カスタムモデルの例
+## カスタムモデルの例 {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## 管理ページ連携
+## 管理ページ連携 {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addon のテスト
+## Addon のテスト {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 の拡張ポイント
+## v2.13.0 の拡張ポイント {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 では、主権テナント、購入手続きドメイン、またはホストプロバイダーの DNS 自動化と連携する Addon に役立つ、いくつかの拡張ポイントが追加されています。
 
-### SSO とメインサイト管理 URL
+### SSO とメインサイト管理 URL {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### 購入手続きフォームのベースドメイン
+### 購入手続きフォームのベースドメイン {#checkout-form-base-domains}
 
 Addon が、サイトごとのカスタムマッピングではなく購入手続きフォームの **サイト URL** ドメインのように動作すべき追加の共有ベースドメインを提供する場合は、`wu_checkout_form_base_domains` を使用します。
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite はこれらのホストを正規化し、それらに対するサイトごとのマップ済みドメインレコードの自動作成をスキップします。
 
-### ドメインレコードの自動作成
+### ドメインレコードの自動作成 {#automatic-domain-record-creation}
 
 Addon で、新しく作成されたサイトに対するドメインレコードの自動作成を抑制または延期する必要がある場合は、`wu_should_create_domain_record_for_site` を使用します。
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` をリッスンするホストプロバイダー連携は、サイトが作成されたときにプロバイダー側の DNS レコードを作成できます。そのアクションに登録された連携がない場合、Ultimate Multisite は空のバックグラウンドジョブをスキップします。
 
-## 次のステップ
+## 次のステップ {#next-steps}
 
 - 利用可能なアクションとフィルターについては、[Hooks リファレンス](/developer/hooks) を確認してください
 - API 連携については、[REST API 概要](/developer/rest-api/overview) を確認してください

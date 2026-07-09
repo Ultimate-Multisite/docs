@@ -3,11 +3,11 @@ title: Klantfeedback en probleemrapportage
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback van Gebruikers en Probleemrapportage
+# Feedback van Gebruikers en Probleemrapportage {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 introduceert een ingebouwd systeem voor feedback en probleemrapportage waarmee eindgebruikers onjuiste antwoorden kunnen markeren en problemen direct vanuit de chatinterface kunnen melden. Dit systeem omvat toestemmingsbeheer, een geautomatiseerde rapportagecommando en AI-ondersteunde triage op de backend.
 
-## Duim-omlaag Knop
+## Duim-omlaag Knop {#thumbs-down-button}
 
 Elke bericht die door de AI-assistent wordt verzonden, toont een **duim-omlaag** (👎) knop. Wanneer een gebruiker hierop klikt, kan hij een antwoord markeren als onjuist of niet nuttig.
 
@@ -15,7 +15,7 @@ Elke bericht die door de AI-assistent wordt verzonden, toont een **duim-omlaag**
 - Door erop te klikken, opent de **Feedback Toestemmingsmodal**.
 - De feedback wordt gekoppeld aan het conversatiedraad en het specifieke bericht.
 
-## Feedback Toestemmingsmodal
+## Feedback Toestemmingsmodal {#feedback-consent-modal}
 
 Wanneer een gebruiker op de duim-omlaag knop klikt, verschijnt er een toestemmingsmodal voordat er gegevens worden verzonden. De modal:
 
@@ -26,13 +26,13 @@ Wanneer een gebruiker op de duim-omlaag knop klikt, verschijnt er een toestemmin
 
 Er wordt geen feedback geregistreerd totdat de gebruiker dit expliciet bevestigt.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Aan het einde van een conversatie kan de assistent een **auto-prompt feedback banner** weergeven — een niet-opdringerige melding die vraagt of de sessie nuttig was.
 
 Deze banner verschijnt automatisch op basis van de conversatielengte en uitkomstheuristieken. Het linkt naar dezelfde feedbackflow als de duim-omlaag knop. Gebruikers kunnen de banner sluiten zonder feedback te geven.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Gebruikers kunnen de feedbackflow direct activeren door `/report-issue` in het chat-inputveld te typen. Dit commando:
 
@@ -42,7 +42,7 @@ Gebruikers kunnen de feedbackflow direct activeren door `/report-issue` in het c
 
 Het `/report-issue` commando is beschikbaar in alle chatmodi (inline, zwevend widget, full-screen).
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 De ingediende feedback wordt doorgestuurd naar een AI-triage-laag die:
 

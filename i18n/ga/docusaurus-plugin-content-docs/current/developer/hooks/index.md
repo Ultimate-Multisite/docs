@@ -3,11 +3,11 @@ title: Tagairt do Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tagairt Hooks
+# Tagairt Hooks {#hooks-reference}
 
 Doiciméadú uathghinte do gach ceann de na **59 gníomh** agus **118 scagaire** in Ultimate Multisite.
 
-## Gníomhartha
+## Gníomhartha {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Ritheann sé roimh atreorú an fhíordheimhnithe.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Ritheann sé díreach sula socraítear fianán an fhíordheimhnithe.
@@ -70,7 +70,7 @@ Doiciméadú uathghinte do gach ceann de na **59 gníomh** agus **118 scagaire**
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Ritheann sé tar éis réad a stóráil sa bhunachar sonraí.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Lig d’fhorbróirí plugin gníomhartha a chur leis an bpróiseas díghlasála.
 
-## Scagairí
+## Scagairí {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Scagann sé fad thréimhse éaga an authentication cookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Scagann sé an scéim atreoraithe authentication.

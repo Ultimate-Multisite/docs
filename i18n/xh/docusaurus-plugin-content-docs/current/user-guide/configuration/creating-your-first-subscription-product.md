@@ -3,13 +3,13 @@ title: Ukudala imveliso yakho yokuqala yobhaliso
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ukwenza Imveliso yakho yokuqala yoMrhumo (v2)
+# Ukwenza Imveliso yakho yokuqala yoMrhumo (v2) {#creating-your-first-subscription-product-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku lelama abasebenzisi be-Ultimate Multisite inguqulelo 2.x kuphela. Ukuba usebenzisa inguqulelo 1.x,**_ **_**jonga eli nqaku**_**.
 
 Ukuqala ukuqhuba inethiwekhi yakho uze uqalise ukuthengisa iinkonzo zakho kubasebenzisi abanokubakho, kufuneka ube neendlela ezahlukeneyo zorhumo. Uzenza njani ezi mveliso? Zeziphi iintlobo zeemveliso onokuzinika? Kweli nqaku, siza kugubungela yonke into ekufuneka uyazi ngeemveliso.
 
-## Uhlobo Lwemveliso
+## Uhlobo Lwemveliso {#product-type}
 
 Nge-Ultimate Multisite unokunika abaxhasi bakho iindidi ezimbini zeemveliso: **izicwangciso** kunye **nezongezo** **(Order Bump)**. Izongezo zingahlulwa zibe ziintlobo ezimbini:**iipakethe** kunye **neenkonzo**. Siza kubona umahluko wazo neempawu zazo ezithile ngokulandelayo.
 
@@ -19,7 +19,7 @@ Nge-Ultimate Multisite unokunika abaxhasi bakho iindidi ezimbini zeemveliso: **i
 
   * **Iinkonzo:** izongezo ezingatshintshi ukusebenza kwe-Ultimate Multisite. Zizabelo oza kuzenzela umxhasi wakho ukongeza kwisicwangciso asithengileyo. Umzekelo, umthengi wakho angathenga isicwangciso esivumela isiza esinye aze ahlawule nenkonzo eyongezelelweyo eza kwenza uyilo lwesi siza.
 
-## Ukulawula Iimveliso
+## Ukulawula Iimveliso {#managing-products}
 
 Kwabaninzi ithebhu ethi **Iimveliso** kwi-Ultimate Multisite **(Ultimate Multisite > Iimveliso)** inokulinganiswa nezicwangciso kwimeko yesiqhelo yokubamba iisayithi.
 
@@ -29,7 +29,7 @@ Eli candelo liza kukukhokela ekuqondeni eli litye lembombo libalulekileyo le-Ult
 
 ![Iphepha loluhlu lweemveliso](/img/config/products-list.png)
 
-## Ukongeza Iimveliso
+## Ukongeza Iimveliso {#adding-products}
 
 Nokuba sisicwangciso, iphakethe, okanye inkonzo, indawo yokuqala yokuchaza into entsha ikwi-**Ultimate Multisite > Iimveliso > Yongeza Imveliso**.
 
@@ -39,13 +39,13 @@ Ujongano luqulethe amacandelo amabini aphambili. Ngasekhohlo kukho iithebhu ezin
 
 ![Ushwankathelo lwephepha lokuhlela imveliso](/img/config/product-edit-full.png)
 
-### Inkcazo
+### Inkcazo {#description}
 
 Ulwazi lwesiseko lwemveliso lunokuchazwa ngokubonelela ngegama lemveliso kunye nenkcazo. Ezi zazisi ziboniswa naphi na apho ulwazi lwemveliso lufunekayo, njengokukhethwa kwesicwangciso namaxabiso, ii-invoice, uphuculo, kunye nezinye ezinjalo.
 
 ![Icandelo lenkcazo yemveliso](/img/config/product-description.png)
 
-### Uhlobo Lwamaxabiso
+### Uhlobo Lwamaxabiso {#pricing-type}
 
 Kwicala lasekunene lojongano, amaxabiso esiseko anokuchazwa.
 
@@ -53,7 +53,7 @@ Kwicala lasekunene lojongano, amaxabiso esiseko anokuchazwa.
 
 Ultimate Multisite ixhasa iintlobo ezintathu ezahlukeneyo zamaxabiso. Ukhetho **oluhlawulwayo** lucela umlawuli wenethiwekhi ukuba anike ulwazi malunga nexabiso lemveliso kunye nokuphindaphinda kokuhlawulisa.
 
-### Amaxabiso
+### Amaxabiso {#pricing}
 
 Icandelo lexabiso lichaza ixabiso lesiseko lemveliso kunye nesithuba sokuhlawulisa.
 
@@ -61,7 +61,7 @@ Icandelo lexabiso lichaza ixabiso lesiseko lemveliso kunye nesithuba sokuhlawuli
 
 ngoko umzekelo wexabiso le-$29.99 kunye noseto lwenyanga e-1 uya kuhlawulisa i-$29.99 nyanga nganye. Ngokufanayo, ixabiso le-$89.97 kunye noseto lweenyanga ezi-3 liya kuhlawulisa elo xabiso qho ngekota.
 
-### Imijikelo Yokuhlawulisa
+### Imijikelo Yokuhlawulisa {#billing-cycles}
 
 Icandelo lemijikelo yokuhlawulisa lichaza ukuphindaphinda kwesithuba sokuhlawulisa esikhankanywe ngasentla kwaye ngokubanzi liqondwa ngokwemvumelwano okanye imiqathango emiselweyo.
 
@@ -69,7 +69,7 @@ Icandelo lemijikelo yokuhlawulisa lichaza ukuphindaphinda kwesithuba sokuhlawuli
 
 Umzekelo, ixabiso lemveliso le-$29.99 elinesithuba senyanga e-1 kunye nemijikelo yokuhlawulisa eli-12 liya kuhlawulisa i-$29.99 ngenyanga ngemveliso kwiinyanga ezili-12 ezilandelayo. Ngamanye amazwi, olo seto luya kuseka ixesha lexabiso elimiselweyo le-$29.99 ngenyanga kangangeenyanga ezili-12, emva koko liyeke ukuhlawulisa.
 
-### Ixesha Lovavanyo
+### Ixesha Lovavanyo {#trial-period}
 
 Ukuvula iswitshi yokunikezela ngovavanyo kuvumela umlawuli wenethiwekhi ukuba achaze ixesha lovavanyo lemveliso.
 
@@ -77,7 +77,7 @@ Ukuvula iswitshi yokunikezela ngovavanyo kuvumela umlawuli wenethiwekhi ukuba ac
 
 Ngexesha lovavanyo, abathengi bakhululekile ukusebenzisa imveliso kwaye abayi kuhlawuliswa de ixesha lovavanyo liphele.
 
-### Umrhumo Wokuseta
+### Umrhumo Wokuseta {#setup-fee}
 
 Ungafaka nomrhumo wokuseta kwisicwangciso sakho.
 
@@ -85,7 +85,7 @@ Ungafaka nomrhumo wokuseta kwisicwangciso sakho.
 
 Oku kuthetha ukuba umxhasi wakho uya kuhlawula isixa esongezelelweyo kwintlawulo yokuqala (ukongeza kwixabiso lesicwangciso) esihambelana nomrhumo owuchazile kweli candelo.
 
-### Iyasebenza
+### Iyasebenza {#active}
 
 Iswitshi yokusebenza ichaza ngokusebenzayo ukuba imveliso iyafumaneka na kubathengi ukuze babhalise ngokutsha.
 
@@ -93,13 +93,13 @@ Iswitshi yokusebenza ichaza ngokusebenzayo ukuba imveliso iyafumaneka na kubathe
 
 Ukuba kukho abathengi abakhoyo kwesi sicwangciso, ukuseta iswitshi kwimeko yayo evaliweyo kusenza ngokusebenzayo esi sicwangciso sigcinelwe abo sele besikuso, kusisusa kubhaliso lwexesha elizayo. **Abathengi abakhoyo kwisicwangciso baya kuqhubeka behlawuliswa** de batshintshelwe kwisicwangciso esitsha okanye basuswe kwisicwangciso.
 
-### Umfanekiso Wemveliso
+### Umfanekiso Wemveliso {#product-image}
 
 Iqhosha elithi **Layisha Umfanekiso** livumela umlawuli wenethiwekhi ukuba asebenzise ilayibrari yemidiya ukukhetha okanye ukulayisha umfanekiso wemveliso.
 
 ![Icandelo lomfanekiso wemveliso](/img/config/product-image.png)
 
-### Cima
+### Cima {#delete}
 
 Iqhosha elithi **Cima Imveliso** licima imveliso kwisistim. Livela xa imveliso sele ipapashiwe.
 
@@ -107,11 +107,11 @@ Iqhosha elithi **Cima Imveliso** licima imveliso kwisistim. Livela xa imveliso s
 
 Ngokungafaniyo nokunye ukucima, imveliso ayibekwa nakweyiphi imeko yenkunkuma. Ngoko ke xa sele icinyiwe, isenzo asinakubuyiselwa umva.
 
-### Iinketho Zemveliso
+### Iinketho Zemveliso {#product-options}
 
 Nje ukuba ulwazi lwemveliso olukwinqanaba lesiseko luchaziwe, iinketho zemveliso zinceda umlawuli wenethiwekhi ukuba achaze ngakumbi iimpawu ezithile zemveliso.
 
-#### Ngokubanzi
+#### Ngokubanzi {#general}
 
 I-tab ethi **Ngokubanzi** ichaza iimpawu ngokubanzi zemveliso ezingasebenziyo nakweyiphi na enye i-tab ethile yemveliso.
 
@@ -125,7 +125,7 @@ I-**Indima Yomthengi** ichaza indima eyabelwa umthengi xa isayithi yenziwe. Ngok
 
 ![Iisetingi zendima yomthengi](/img/config/product-customer-role-settings.png)
 
-#### Ukunyusa & Nokwehlisa
+#### Ukunyusa & Nokwehlisa {#up--downgrades}
 
 Le tab ichaza iindlela zokunyusa nokwehlisa ezifumanekayo kumthengi ngaphakathi kwinqanaba lakhe elithile.
 
@@ -143,7 +143,7 @@ Ukuchaza iqela lesicwangciso, chaza izicwangciso ezihambelanayo kuluhlu lwe-**iq
 
 Ultimate Multisite ikwaquka uphawu lwe-**order bump** apho iimveliso nezinkonzo ezongezelelekileyo ezifanelekileyo zinokongezwa kwizicwangciso. Ezi zinikezelwa kumthengi njengezinto ezongezelelekileyo ezinokongezwa kwizicwangciso ngexesha le-checkout okanye ngexesha lokunyusa.
 
-#### Iinguqu Zamaxabiso
+#### Iinguqu Zamaxabiso {#price-variations}
 
 Iinguqu zamaxabiso zivumela umlawuli wenethiwekhi ukuba achaze amanqanaba amaxabiso angamanye ngokuxhomekeke kubude bexesha. Le setingi yenza kube nokwenzeka ukuba ixesha lokubhatala lenyanga, lekota, lonyaka, okanye naliphi na elinye linikezelwe kwimveliso efanayo. Umzekelo, unokuseta imveliso nge-$29.99/ngenyanga kunye nenketho yonyaka enesaphulelo nge-$249.99/ngonyaka.
 
@@ -165,7 +165,7 @@ Umzekelo, ukuba ixabiso lemveliso yakho esisiseko yi-$29.99 ngenyanga, unokongez
 Iinguqu zamaxabiso zodwa azongezi i-toggle okanye iswitshi kwi-frontend checkout. Ukuvumela abathengi batshintshe phakathi kwamaxesha okubhatala (umz. Ngenyanga / Ngonyaka), kufuneka wongeze ifildi ye-**Ukukhetha Ixesha** kwifomu yakho ye-checkout. Jonga [Iifomu ze-Checkout: Ukongeza i-Toggle Yokukhetha Ixesha](checkout-forms#adding-a-period-selection-toggle) ukuze ufumane imiyalelo yenyathelo ngenyathelo.
 :::
 
-#### Iirhafu
+#### Iirhafu {#taxes}
 
 I-tab ethi **Iirhafu** ihambelana neesetingi zerhafu ezichazwe ku-**Ultimate Multisite > Settings > Taxes** kwaye ngakumbi amanqanaba erhafu achaziweyo. Ukuvula iirhafu nokuchaza amanqanaba erhafu asebenzayo nceda ubone amaxwebhu ku-**Ultimate Multisite: Settings**
 
@@ -179,7 +179,7 @@ Nje ukuba izinga lerhafu lichaziwe ku-**Ultimate Multisite > Settings > Manage T
 
 Ukubonisa ukuba imveliso yinto erhafiswayo, seta i-toggle ethi **Iyahlawuliswa Irhafu** ukuba isebenze uze ukhethe izinga lerhafu elisebenzayo kwi-dropdown yeCandelo Lerhafu.
 
-#### Iitemplate Zesayithi
+#### Iitemplate Zesayithi {#site-templates}
 
 Ngokwenene, iitemplate zesayithi ziwebhusayithi ze-WordPress ezipheleleyo ezikhutshelwa kwisayithi yomthengi ekuqaleni kobhaliso lwakhe.
 
@@ -201,7 +201,7 @@ Okokugqibela, **K** **hetha Iitemplate Zesayithi Ezikhoyo** kudlula iitemplate e
 
 Ekugqibeleni, ukuba umlawuli wenethiwekhi ufuna ukuba ukukhethwa kwetemplate kwenzeke kumanyathelo okuhlawula, useto luka-' _default_ ' luya kwanela. Kungenjalo, ukususa nokutshixa ukukhethwa kwetemplate nokudlulisela ukukhetha kuseto lwesicwangciso, iinketho ze-' _assign new template_ ' okanye ze-' _choose available site templates_ ' zinokunqweneleka.
 
-#### Iisayithi
+#### Iisayithi {#sites}
 
 Ithebhu ethi **Iisayithi** iyinxalenye yokusebenza kwemida kwe-Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Olu seto luchaza elona nani liphezulu leesayithi umthengi anokuzidala phantsi ko
 
 Ukuvumela umda, seta iswitshi ye-**misa umda kwiisayithi** kwimo esebenzayo uze uchaze elona nani liphezulu leesayithi kwi-field ye-**isibonelelo sesayithi**.
 
-#### Utyelelo
+#### Utyelelo {#visits}
 
 Ithebhu ethi **Utyelelo** yenye inxalenye yenkqubo yemida ye-Ultimate Multisite. Olu seto luvumela ukubalwa kunye nokuthotywa okulandelayo kweendwendwe ezizodwa kwisayithi yomthengi.
 
@@ -223,7 +223,7 @@ Ukuze usebenzise olu phawu, seta iswitshi ye-**misa umda kutyelelo oluzodwa** kw
 
 Xa lo mda ufikelelwe, Ultimate Multisite iya kuyeka ukusebenzela isayithi yomthengi endaweni yokubonisa umyalezo obonisa ukuba imida igqithiwe.
 
-#### Abasebenzisi
+#### Abasebenzisi {#users}
 
 Imida ye-'Abasebenzisi' ye-Ultimate Multisite ivumela umlawuli wenethiwekhi ukuba abeke imida kwinani labasebenzisi abanokudalwa baze babelwe iindima.
 
@@ -233,7 +233,7 @@ Ukuvumela uphawu lwemida, seta iswitshi ye-**misa umda kumsebenzisi** kwimo eseb
 
 Okulandelayo, kwindima nganye eza kumiselwa umda, seta iswitshi esecaleni kwayo kwimo esebenzayo uze uchaze owona mda uphezulu kwi-field efanelekileyo.
 
-#### Iintlobo Zeposti
+#### Iintlobo Zeposti {#post-types}
 
 Ithebhu ethi **Iintlobo Zeposti** ivumela umlawuli wenethiwekhi ukuba abeke imida eneenkcukacha kuluhlu olubanzi lweentlobo zeposti ngaphakathi kwe-WordPress.
 
@@ -245,7 +245,7 @@ Ukuvumela le nkqubo engaphantsi yemida, seta iswitshi ye-**misa umda kwiintlobo 
 
 Okulandelayo, kuhlobo ngalunye lweposti oluza kumiselwa umda, luvule ngokulutyibilikisa ukuya ekunene uze uchaze owona mda uphezulu kwi-field efanelekileyo.
 
-#### Isithuba Sediski
+#### Isithuba Sediski {#disk-space}
 
 Ithebhu ethi **Isithuba Sediski** ivumela abalawuli benethiwekhi ukuba banciphise isithuba esisetyenziswa ngabathengi.
 
@@ -257,13 +257,13 @@ Ukuvumela umda wokusetyenziswa kwediski, seta iswitshi ye-**misa umda kubungakan
 
 Okulandelayo, chaza owona mda uphezulu ngeemegabhayithi kwi-field ye-**isibonelelo sesithuba sediski**.
 
-#### IDomain Yesiko
+#### IDomain Yesiko {#custom-domain}
 
 Ngokutshintsha olu khetho ungavumela iidomain zesiko kwesi sicwangciso ngokukodwa.
 
 ![Ithebhu yeeDomain zesiko](/img/config/product-custom-domains.png)
 
-#### Imixholo
+#### Imixholo {#themes}
 
 Ithebhu ethi **Imixholo** ngaphakathi kweenketho zemveliso ivumela umlawuli wenethiwekhi ukuba enze imixholo ifumaneke kubathengi ukuze bayikhethe kwaye, ngokuzikhethela, anyanzelise imo yomxholo.
 
@@ -281,7 +281,7 @@ Ukhetho lwe-**behavior** luvumela umlawuli wenethiwekhi ukuba achaze imo yomxhol
 
 Kwimo **E** **khoyo** umxholo wenziwa ufumaneke kumthengi ukuze azivulele ngokwakhe. Ngokuchaseneyo, imo ethi **Ayifumaneki** isusa kumthengi amandla okuvula umxholo. Okokugqibela, inketho ethi **Nyanzelisa Ukuvula** inyanzelisa ukukhethwa nokuvulwa komxholo, ngaloo ndlela iwuseta njengowokuqala xa kusenziwa isayithi.
 
-#### Iiplagi
+#### Iiplagi {#plugins}
 
 Ngokufanayo nethebhu yeMixholo, Ultimate Multisite ivumela umlawuli wenethiwekhi ukuba achaze ukubonakala kweeplagi kubathengi kwakunye nemeko yazo xa kusenziwa isayithi entsha.
 
@@ -301,7 +301,7 @@ Useto **Nyanzela ukuSebenza & Tshixa** lusebenza ngendlela efanayo kodwa luthint
 
 Umlawuli wenethiwekhi unokufuna ukuqwalasela useto lweNyanzela ukuSebenza & Tshixa kunye neNyanzela ukungaSebenzi & Tshixa ngokudibeneyo neetempleyithi zesayithi, njengoko iiplagin kunye neemeko zeeplagin ngaphakathi kweetempleyithi zinokuchaphazeleka zezi seto ukuba zikhethiwe.
 
-#### Seta kwakhona iziThintelo
+#### Seta kwakhona iziThintelo {#reset-limitations}
 
 Ithebhu **Seta kwakhona iziThintelo** iseta kwakhona yonke imida eyenziwe ngokwezifiso echazwe kwimveliso. Ukuseta kwakhona izithintelo cofa iqhosha **seta kwakhona izithintelo**.
 
@@ -311,7 +311,7 @@ Ukuqinisekisa isenzo, tyibilikisa isitshintsheli **qinisekisa ukuseta kwakhona**
 
 ![Ithebhu yokuseta kwakhona izithintelo](/img/config/product-reset-limitations.png)
 
-## Hlela, Phinda, okanye Cima iMveliso
+## Hlela, Phinda, okanye Cima iMveliso {#edit-duplicate-or-delete-product}
 
 Iimveliso esele zikhona zingahlelwa, ziphindwe okanye zicinywe ngokuhamba uye ku-**Ultimate Multisite > Products** uze uhambise isalathisi phezu kwegama lemveliso esele ikhona.
 

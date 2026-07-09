@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite ndi plugin la WordPress lomwe limapangitsa kuti muli ndi ulemu wopereka WaaS kapena Websites as a Service kwa anthu. Mmodzi pano tikakhudza ndipo tikufunsa kuti Ultimate Multisite kuliwonse kutanthauza bwanji kwa bizinesi yanu ndi anthuwo. Koma pamene tikapambana ndi kupeza kuti Ultimate Multisite kuliwonse kutanthauza bwanji kwa bizinesi yanu ndi anthuwo, pali zinthu zofondera zomwe tikufunika kuyamba.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Potsimikizirani ndipo mukuwoneka ndi WordPress lomwe limapangidwa m'stock (mmodzi woperekedwa), muli ndi ulemu wopereka m'control panel ya hosting yanu kapena, kwa ena omwe ali ndi chiyembekezo, muli ndi server ndi database yanu yanu, mukuwoneka m'kuyesa files zomwe zikuyenera ndipo mukuwoneka m'kuyamba kupeza.
 
@@ -21,13 +21,13 @@ Mmodzi pano, WordPress multisite imakutanthauza monga izi: Njamba imodzi imapere
 
 Kuti monga kuti tusonyei maulendo omwe muli nawo, osati m'moyo wopangidwa ndi Ultimate Multisite komanso m'moyo wopangidwa pa WordPress.
 
-### The Network (M'moyo Wopangidwa)
+### The Network (M'moyo Wopangidwa) {#the-network}
 
 M'WordPress, multisite network ndi malo omwe m'moyo wosiyanasiyana womwe mungupereke kuti mumangeka m'dashboard yakali. Ngakhale kupanga multisite network kumakhudza kwambiri m'hosting providers, kukhala kulibe kuchokera kwa zinthu zingapo m'wp-config.php file kuti WordPress imveze kuti ikulimbikizidwa m'mode imeneyi.
 
 Kuli ndi kusiyanasiyana kwambiri pakati pa multisite network ndi installation ya WordPress yomwe imapangidwa pansi, komwe tidzindikire kwa inu m'maka.
 
-#### Subdomain vs. Subdirectory (Subdomain vs. Subdirectory)
+#### Subdomain vs. Subdirectory (Subdomain vs. Subdirectory) {#subdomain-vs-subdirectory}
 
 Modzi m'zinthu zomwe mukupeza kukhala ndi chifukwa cha m'maka kwambiri ndipo mukupeza kuti multisite installation idzakhala ndi _subdirectories_ kapena _subdomains_. Ultimate Multisite imapangidwa bwino ndi ziwili, koma kumakhale ndi kusiyanasiyana kuchokera kwa zinthu zomwe zikuyenera kudzipereka m'maka.
 
@@ -43,7 +43,7 @@ M'koleksyon ya _subdomain_, kulimbikitsa wildcard SSL certificate ndi monga momw
 
 Koma pali zinthu zina zomwe zimakhala, koma zimene zikuchepa m'moyo ndi kukhala kwambiri m'kufunika ndi kulimbikitsa kuti muli woyenera.
 
-#### Plugins ndi Themes
+#### Plugins ndi Themes {#plugins-and-themes}
 
 M'moyo wosiyenera (WordPress) imapereka nkhawa zomwe zimakhala, monga momwe muli woyenera. Kuti muli woyenera wosiyenera (site administrator) yomwe imalimbikitsa plugin yosiyenera kapena kulimbikitsa kuti muli ndi installation yanu yomwe imapereka, m'moyo wosiyenera lomwe lili woyenera ndi chifukwa cha iwo ndi iwo. Komabe, muli woyenera wosiyenera womwe imalimbikitsa plugin yosiyenera pa installation ya multisite imapereka woyenera kwa site lonse lomwe limapereka m'moyo wosiyenera.
 
@@ -53,7 +53,7 @@ Monga momwe muli ndiwo woperekera, pamene muliyeza kuti WordPress Multisite imap
 
 Monga momwe muliyeza, network administrator ali ndi luso la kupereka plugins ndi themes m'network ndikupeza ulemu kuti mupereke mwayiwo m'network sites. Site administrators siwanji mupereke plugins kapena themes zomwe siyezi ku site yanu.
 
-#### Users and Administrators (Mwayiwo ndi Administrators)
+#### Users and Administrators (Mwayiwo ndi Administrators) {#users-and-administrators}
 
 M'WordPress Multisite, onse mwayiwo wosiyanasiwa (network sites) imapereka database yomweyi yomweyo ndipo chifukwa cha iwo, imapereka users, roles, ndi capabilities zosiyanasiwa. Mwayi woperekera kuti mwayiwo onse ndi wone m'network komweye site yomweye.
 
@@ -65,13 +65,13 @@ Monga momwe muliyeza, ngakhale user accounts zimene zikuyenera kuwoleka ndi site
 
 Koma ndi chonde, pamene si chinthu chosavuta m'moyo kwa mfundo ya enterprise systems, kukhala chotsatira kuti anthu omwe ali ndi WordPress wosavuta kwambiri kuona. Koma, poyenera kusankha nkhani yomwe imaperekera m'njira yakatsopano (single source) yoperekera ndikukonza anthu, zimene zikuphatikizidwa kwambiri kwa anthu omwe ali ndi WordPress wosavuta kukhala ndi ulamuliro.
 
-#### Media
+#### Media {#media}
 
 Pamene sites zomwe zikugwiritsa ntchito database imodzi m'WordPress Multisite, zimapereka mitengo ya m'moyo (paths) osiyanasiyana pa filesystem kuti zikuperekere media files.
 
 M'lokaleri la WordPress lomaliza (wp-content/uploads) limakhalira; koma, nkhani yake imalimbikizidwa kuti ikumakumbutse ID yomwe ndi site ya network. Mwachidule, media files za site ya network zimapereka m'lokaleri la wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Tsimeneze kuti pali mafunso omwe a woperekera _subdomain_ ndi yomwe a _subdirectory_ kukhala osavuta, ndipo pano ndi zimene: paths.
 
@@ -85,7 +85,7 @@ Kuti zimene zidzakhale, WordPress imapereka njira yomwe mungupereke kuti muzilon
 
 M'moyo mu _subdomain_ configuration, kukhala kukhala kuti mavuto pa zolemba kumayamba akupitilira monga _subdomain_, chifukwa ndiwo ndi wosiyanasiyana kwa site la network ndipo siyo ndi kuyenera ndi main site.
 
-### Registration
+### Registration {#static-pages}
 
 M'moyo mu settings za network ya WordPress Multisite, kuli ndi mapulogolo atsopano a registration wa users omwe kumapereka kuti users atsopano ndi aliyense akugwiritse sites.
 
@@ -103,7 +103,7 @@ M'malo omwe muliye kumakhala ndi ulemu wosonyeza (control) wa plugins ndi themes
 
 Komabe, ngati ntchito ndi chifukwa cha multisite ndi kukhala ndi sites osiyanasiyana zomwe siyo m'malo omwe ali ndi ulendo, muliye mukuwoneka kuti muliye mukuwoneka kuti mupereke ulemu wosonyeza (user roles) m'njira yomwe imapereka plugins ena kapena zinthu zina.
 
-### Domain ndi SSL
+### Domain ndi SSL {#registration}
 
 Tiyenera kudziwa za WordPress Multisite lomwe limakwaniritsa kutoperekera kwake - Wordpress.com. Iyi ndi mfundo yomwe yomwe yomwe yomwe imapereka m'malo omwe ali ndi multisite ndipo imapereka ulemu wosonyeza (customization) wambiri kuti mupereke ntchito yake.
 
@@ -117,11 +117,11 @@ Kwa admin wote wa mtandao, hii inawapa kiwango cha ugumu kingine katika kupanga 
 
 Hata hivyo, ingawa WordPress Multisite inatoa njia ya kuruhusu [www.anotherdomain.com](http://www.anotherdomain.com) kuunganishwa na 'site1', admin wa mtandao anabaki na changamoto ya kusimamia DNS entries nje na kutekeleza vyeti vya SSL.
 
-## Ultimate Multisite
+## Ultimate Multisite {#domain-and-ssl}
 
 Kwa kuelewa tofauti kati ya usakinishaji wa WordPress unaokaa peke yako (stand-alone) na usakinishaji wa Multisite, hebu tuangalie jinsi Ultimate Multisite inavyokuwa silaha bora kwa kutoa Websites as a Service (WaaS).
 
-### Utangulizi
+### Utangulizi {#ultimate-multisite}
 
 Ultimate Multisite ni kama chiseti cha Swiss Army yako wakati wa kuunda Website as a Service (WaaS). Fikiria Wix.com, Squarespace, WordPress.com na kisha fikiria kuwa una mwenyewe huduma yako.
 
@@ -129,9 +129,9 @@ Chini ya eneo la ndani (under the hood), Ultimate Multisite inatumia WordPress M
 
 Katika sehemu zinazofuata tutachunguza mifano ya matumizi (use cases) na mambo muhimu yanayohitajika kusaidia mifano hiyo.
 
-### Mifano ya Matumizi (Use Cases)
+### Mifano ya Matumizi (Use Cases) {#introduction}
 
-#### Kesi 1: Kampuni ya Huduma (An Agency)
+#### Kesi 1: Kampuni ya Huduma (An Agency) {#use-cases}
 
 Kwa kawaida, ujuzi wa msingi wa kampuni ya huduma unajikita katika kubuni tovuti na vipengele kama vile hosting au masoko kuwekwa kama huduma za ziada.
 
@@ -157,7 +157,7 @@ Themes zikomo zilipeza zilipeza, zikufuna kuti themes zina zikugoneka kapena zik
 
 Agencies zikupatira kulumbulika ndi Ultimate Multisite komwe zimupatira kuti makhale ali ndi chiyembekezo chawo - kukhala ndi upatendere wosayera wogwiritsa ntchito kwa mpaka kupanga upatendere wa wamweru.
 
-#### Case 2: Mphamvu ya Chinthu Chimodzi (Niche Provider)
+#### Case 2: Mphamvu ya Chinthu Chimodzi (Niche Provider) {#case-1-an-agency}
 
 Kuli kulemba lero lomwe limakuti, “phuna chinthu chimodzi ndi yenera ndi kuyendetsa bwino.” Kwa anthu ambiri omwe ali ndi chitsanzo cha mtima, izi zimeneza kupanga wopangidwa kapena mfundo ya ntchito m'malo.
 
@@ -171,7 +171,7 @@ Poyamba wopereka niche sites ndi zolinga, izi zimapereka chifukwa cha mtima kwam
 
 Kupambana ndi zolemba zomwe muli nawo, kukhala kuti _subdirectory_ kapena _subdomain_ zikukwanira, ndipo m'malo omwe muli nawo ndi kuchokera kwa sertifika ya SSL yomwe imapereka _subdirectories_ kapena sertifika ya wildcard yomwe imapereka _subdomains_.
 
-#### Kazi 3: WordPress Web Hosting
+#### Kazi 3: WordPress Web Hosting {#case-2-niche-provider}
 
 Kukonza (host) WordPress sites kuli ndi njira zambiri, koma kimakku sikuti zimene zikukhala zimeneli kuti mupereke malo omwezi kwa munthu ndi WordPress yomwe imapereka m'malo. Izi ndikuphatikizidwa chifukwa kuti kuli ndi zinthu zingapo zomwe muli nawo kuti mupereke khalidwe yofunika.
 
@@ -183,11 +183,11 @@ Pamene developers amakufuna kupereka ndi Ultimate Multisite, njira iyi imapereka
 
 Pofunsa kuti muli nawo plugins ndi licenses zingapo zosiyanasiyana, Ultimate Multisite imapereka njira yomwe imapereka chithandizo chomwe chimene chokhudza Wix, Squarespace, WordPress.com ndi zina.
 
-### Zolemba za Mwayi (Architecture Considerations)
+### Zolemba za Mwayi (Architecture Considerations) {#case-3-wordpress-web-hosting}
 
 Koma osati ndi mwayi wosonyeza, zinthu zomwe zimenezo zikuyenera kukhala mwayi kuti mupereke chithandizo cha teknolojia chomwe chimene chokhudza kukonza Ultimate Multisite.
 
-#### Hosting Yosonyeza (Shared vs. Dedicated Hosting)
+#### Hosting Yosonyeza (Shared vs. Dedicated Hosting) {#architecture-considerations}
 
 Kutete kuti muli ndi wopereka hosting, ndipo kwa inu zambiri si zolembedwa. Kuchokera kwa inu zosangalatsa kukhala ndi server zambiri kwambiri. Kwa inu zomwe zimakhala zosangalatsa kutenga ndalama, zimakhala kuti Ultimate Multisite yanu imatha kukhala monga moyo wosangalatsa wa sita kapena zambiri pa server imodzi.
 
@@ -197,7 +197,7 @@ Monga wopereka hosting, mwayi wosangalatsa uliwonse mudzindikire kuti makatundu 
 
 Kuti muli ndi listi ya providers omwe amakubwera ndi maithawi omwe muli ndi mapulogolero omwe muli ndi sita lomwe liyenera, muli ndi chondeza kuona documentation ya Compatible Providers.
 
-#### Zinthu Zomwe Zikuyenera Kukhala Zolembedwa (Performance Considerations)
+#### Zinthu Zomwe Zikuyenera Kukhala Zolembedwa (Performance Considerations) {#shared-vs-dedicated-hosting}
 
 Ultimate Multisite si application yosoweka, koma imene yosoweka kwambiri. Komabe, imene yosoweka monga momwe application ndi infrastructure yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe y
 
@@ -213,7 +213,7 @@ Monga momwe, anthu odzindikira ntchito ya network amagwiritsa ntchito front-end 
 
 Ultimate Multisite imayenera Cloudflare add-on yomwe imapangitsa mwayi wamulitsa kuti anthu odzindikira ntchito ya network angathe sita lanu pa Cloudflare ndikugwiritsa ntchito osati kukhala ndi caching, koma kuyesa DNS hosting, SSL certificates, ndi zinthu zomwe zimapanga kuchepa.
 
-#### Backups
+#### Backups {#performance-considerations}
 
 Mwayi woyenera m'moyo wa backups (backups) ndi anthu 50 kuti awonjeza ntchito ya backups ndipo kupereka mapulogalamu 50 osiyanasiyana pa njira za backups. Mtendi ndi: kukhala ndi momwe.
 
@@ -227,7 +227,7 @@ M'mphindo imeneyi, tiliyeza kuti m'backup ndi kopitiriza kwa njira ya kusunga nt
 
 Kuti m'mphindo imeneyi, tiliyeza kuti m'backup ndi kopitiriza kwa njira ya kusunga ntchito ya system m'maka poyamba. Koma kodi m'maka poyamba, ndipo m'maka poyamba, ndiyense yomwe imapereka ntchito imeneyi ndi kupeza ndiyense yosiyanasiyana.
 
-#### Snapshots
+#### Snapshots {#backups}
 
 Snapshots ndi njira yomwe zimene zikukonza kukhala kofunika kwa backups chifukwa kuti zimene lina, zimene zisayenera, ndipo zimene zikugwira ntchito m'maka. Koma zimene zifuna kuti muli ndi madiningire kuchokera kwa wamene amapereka ntchito imeneyi, ndipo zimene zikugwira ntchito kwambiri ngati muli ndi VPS (Virtual Private Server) kapena njira yomwe yomwe. M'maka poyamba, anthu ambiri omwe ali m'documentation yathu ya ‘Compatible Providers’ amapereka backups zomwe si mwayi wosiyanasiyana kapena kuchokera kwa wamene amakuthandizira ntchito imeneyi.
 
@@ -235,7 +235,7 @@ Kuti zikomo zikomo za ku-backup, ziphatira kuti zikufuna files ndi databases, sn
 
 Snapshots mung kufunane chidziwitso chachikulu ndi hosting provider koma ndi chifukwa cha chinyama pa m'malo ya kusowa.
 
-#### External Scripts
+#### External Scripts {#snapshots}
 
 Kuti kukhala ndi scripts ndi zowonjezera zosiyanasiyana kuti ku-backup WordPress ndi MySQL resources si ndipo zimeneza kuthandizira kwa Ultimate Multisite koma ndi plugin ya WordPress yomwe imaperekera m'filesystem ndi database ya WordPress. Choncho, solution yomwe ikuperekera backup ya WordPress ikuperekera zikalengedwa za Ultimate Multisite.
 
@@ -243,7 +243,7 @@ Sati tikhale ndi script lolimba kuliyonse, chidziwitso chathu ndi kuti munaperek
 
 Kuti zimeneza kuti, pamene zikuyenda, zimaperekera kusintha kwa system load komwe kudzipereka.
 
-#### Plugins
+#### Plugins {#external-scripts}
 
 Kuti kukhala ndi WordPress zomwe sikupangidwa ndi plugin ndipo ngati mukufuna kuwongolera scripts zosiyanasiyana osati m'malo ya Java, mosati plugin ndi chifukwa cha chifukwa chachikulu.
 
@@ -251,7 +251,7 @@ Plugins muli ndi zinthu zina monga mapulogalamu (plugins) mukuwera, koma mukuwer
 
 Pofunsa plugin, muli kukhala ndi chondezera kuti muli kuyesa kuti imakubwera multisite. Choncho, chifukwa cha ntchito yake, muli kuyesa kuti muli ndi kusintha kwa server (load) m'maka poyamba pomwe njira ya backup ikupitilira mpaka yomwe imapereka ntchito yake.
 
-#### Domain ndi SSL
+#### Domain ndi SSL {#plugins}
 
 Kuti nthawi zina, kuli kutanthauza za domain names m'mode ya _subdomain_ ya multisite. Njira yomwe yomwe zimakhala yenera kwa administrators wa mtundu wosiyana (network administrators) ndi kuyesa kuti muli ndi DNS entries zokhudzana ndi wildcard.
 
@@ -273,7 +273,7 @@ Pansimwe, kwa ambiri, kuitumia Cloudflare ndi njira yosavuta. Mwanawo aliye kofu
 
 Pansi pa iwo, mwayi wopereka njira zina zikati ndi kukhala nkhani yomwe yofunika kutayire, ndipo ukuti Ultimate Multisite imalimbikitsa list ya Compatible Providers. Izi ndipo chifukwa chonde, kusankha DNS ndi SSL kuli ndi njira yosavuta. Komabe, ndi kuphatikiza kwa Ultimate Multisite ndi iwo providers, kusintha kuli kulimbikitsidwa kwambiri ndipo njira imapangidwa m'mwayi wopangidwa (automated).
 
-#### Plugins
+#### Plugins {#domain-and-ssl-1}
 
 Kuti muli ndi plugins zina kuti mupereke ulamuliro kwa anthu kapena sites ya network yanu, kuli kukhala kofunika kwambiri. Kodi onse iwo plugins kumakwanira WordPress Multisite ndi Ultimate Multisite? Kuti kulimbikitsidwe.
 

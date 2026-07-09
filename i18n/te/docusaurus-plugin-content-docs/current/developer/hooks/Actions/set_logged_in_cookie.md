@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 లాగిన్ అయిన యూజర్ యొక్క ఆథెంటికేషన్ కుకీ సెట్ అవ్వడానికి *వెంటనే* ఈ యాక్షన్ కాల్ చేయబడుతుంది.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | ఆథెంటికేషన్ స్కీమ్. డిఫాల్ట్‌గా 'logged_in'. |
 | $token | `string` | ఈ కుకీ కోసం ఉపయోగించాల్సిన యూజర్ సెషన్ టోకెన్. |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> పారామీటర్ జోడించబడింది.
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) లోని 141వ లైన్‌లో నిర్వచించబడింది.

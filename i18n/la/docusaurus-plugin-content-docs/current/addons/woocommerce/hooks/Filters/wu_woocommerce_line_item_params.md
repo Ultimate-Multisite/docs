@@ -4,11 +4,11 @@ title: Filtrum - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtrum: wu_woocommerce_line_item_params
+# Filtrum: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Filtra parametra adhibita ad elementa lineae in cophino WooCommerce creanda, antequam cliens ad solutionem WooCommerce redirigatur.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Filtra parametra adhibita ad elementa lineae in cophino WooCommerce creanda, ant
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Instantia elementi lineae Ultimate Multisite. |
 | $wc_product | `\WC_Product` | Productum WooCommerce. |
 
-### Ex
+### Ex {#since}
 
 - 2.0.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) ad lineam 662
 
 
-## Reddit
+## Reddit {#returns}
 Parametra elementi lineae mutata.

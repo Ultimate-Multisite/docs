@@ -3,11 +3,11 @@ title: Ανάπτυξη προσαρμοσμένης πύλης
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Ανάπτυξη προσαρμοσμένου Gateway
+# Ανάπτυξη προσαρμοσμένου Gateway {#custom-gateway-development}
 
 Μπορείτε να δημιουργήσετε προσαρμοσμένα gateway πληρωμών επεκτείνοντας την κλάση `Base_Gateway`.
 
-## Κλάση Gateway
+## Κλάση Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Καταχώριση του Gateway
+## Καταχώριση του Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Βασικές μέθοδοι
+## Βασικές μέθοδοι {#key-methods}
 
 | Μέθοδος | Σκοπός |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Χειρισμός αιτημάτων επιστροφής χρημάτων |
 | `get_payment_methods()` | Επιστροφή αποθηκευμένων μεθόδων πληρωμής για έναν πελάτη |
 
-## Διαπιστευτήρια ανανέωσης για επαναλαμβανόμενες memberships
+## Διαπιστευτήρια ανανέωσης για επαναλαμβανόμενες memberships {#renewal-credentials-for-recurring-memberships}
 
 Το Ultimate Multisite v2.13.0 επιτρέπει στις ενσωματώσεις gateway να αναφέρουν αν μια επαναλαμβανόμενη membership έχει επαναχρησιμοποιήσιμο διαπιστευτήριο ανανέωσης πριν αποθηκευτεί το `auto_renew`. Κάντε hook στο `wu_membership_has_renewal_credential` και επιστρέψτε:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Εκκαθαρίστε τον δείκτη ελλείποντος διαπιστευτηρίου ως μέρος της επιτυχημένης ροής επανα-εξουσιοδότησης του gateway σας, αφού αποθηκευτεί ένα νέο επαναχρησιμοποιήσιμο διαπιστευτήριο.
 
-## Συμβουλές
+## Συμβουλές {#tips}
 
 - Να επιστρέφετε πάντα `WP_Error` σε περίπτωση αποτυχίας, ώστε το Ultimate Multisite να μπορεί να χειριστεί την εμφάνιση σφαλμάτων
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Χρησιμοποιήστε το `wu_log_add()` για καταγραφή ειδική για το gateway
 
-## Δυνατότητες παρόχου AI connector
+## Δυνατότητες παρόχου AI connector {#ai-connector-provider-capabilities}
 
 Οι προσαρμοσμένες ενσωματώσεις που καλούν λειτουργίες που υποστηρίζονται από AI connector θα πρέπει να ευθυγραμμίζονται με το υποστηριζόμενο σύνολο παρόχων OAuth που εισήχθη με το AI Provider for Anthropic Max v1.3.0:
 

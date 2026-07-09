@@ -3,7 +3,7 @@ title: AffiliateWP ପରିବର୍ତ୍ତନ ତାଲିକା
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP ପରିବର୍ତ୍ତନ ତାଲିକା
+# AffiliateWP ପରିବର୍ତ୍ତନ ତାଲିକା {#affiliatewp-changelog}
 
 ସଂସ୍କରଣ: 2.0.1 - 2025-09-28 ରେ ପ୍ରକାଶିତ
 

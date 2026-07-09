@@ -3,9 +3,9 @@ title: Komme i gang med utvikling av tillegg
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Tilleggsutvikling
+# Tilleggsutvikling {#addon-development}
 
-## Tilleggsstruktur
+## Tilleggsstruktur {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Mal for hovedfil for tillegg
+## Mal for hovedfil for tillegg {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Eksempel på egendefinert modell
+## Eksempel på egendefinert modell {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrasjon av adminside
+## Integrasjon av adminside {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Testing av tillegget ditt
+## Testing av tillegget ditt {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 utvidelsespunkter
+## v2.13.0 utvidelsespunkter {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 legger til flere utvidelsespunkter som er nyttige for tillegg som integrerer med suverene leietakere, checkout-domener eller DNS-automatisering hos host-leverandør.
 
-### SSO og administrasjons-URL-er for hovednettsted
+### SSO og administrasjons-URL-er for hovednettsted {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Basedomener for checkout-skjema
+### Basedomener for checkout-skjema {#checkout-form-base-domains}
 
 Bruk `wu_checkout_form_base_domains` når tillegget ditt tilbyr flere delte basedomener som skal oppføre seg som checkout-skjemaets **Site URL**-domener i stedet for egendefinerte tilordninger per nettsted:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite normaliserer disse vertene og hopper over automatiske mapped-domain-oppføringer per nettsted for dem.
 
-### Automatisk opprettelse av domeneoppføringer
+### Automatisk opprettelse av domeneoppføringer {#automatic-domain-record-creation}
 
 Bruk `wu_should_create_domain_record_for_site` når tillegget ditt må undertrykke eller utsette automatisk opprettelse av domeneoppføringer for et nyopprettet nettsted:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Host-leverandørintegrasjoner som lytter til `wu_add_subdomain`, kan opprette DNS-oppføringer på leverandørsiden når nettsteder opprettes. Hvis ingen integrasjon er registrert for den handlingen, hopper Ultimate Multisite over den tomme bakgrunnsjobben.
 
-## Neste steg
+## Neste steg {#next-steps}
 
 - Se gjennom [Hooks Reference](/developer/hooks) for tilgjengelige handlinger og filtre
 - Sjekk [REST API Overview](/developer/rest-api/overview) for API-integrasjon

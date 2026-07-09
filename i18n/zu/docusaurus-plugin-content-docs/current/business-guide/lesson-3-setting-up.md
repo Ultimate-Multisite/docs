@@ -3,32 +3,32 @@ title: 'Isifundo 3: Ukusetha Inethiwekhi Yakho'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Isifundo 3: Ukusetha Inethiwekhi Yakho
+# Isifundo 3: Ukusetha Inethiwekhi Yakho {#lesson-3-setting-up-your-network}
 
 Sekuyisikhathi sokwakha. Kulesi sifundo uzofaka i-Ultimate Multisite futhi ulungise isisekelo senethiwekhi ye-FitSite. Zonke izinqumo lapha zenziwa kucatshangelwa umkhakha wokuzivocavoca.
 
-## Lapho Esigcine Khona
+## Lapho Esigcine Khona {#where-we-left-off}
 
 Sikhethe izitudiyo zokuzivocavoca njengomkhakha wethu oqondile futhi saqinisekisa ithuba. Manje siguqula lowo mbono ube yiplatifomu esebenzayo.
 
-## Ukukhetha Ukusingathwa Kwakho
+## Ukukhetha Ukusingathwa Kwakho {#choosing-your-hosting}
 
 Ukukhetha kwakho ukusingathwa kubaluleke kakhulu kuplatifomu yomkhakha oqondile kunakuwebhusayithi eyodwa. Awusingathi isayithi elilodwa -- usingatha inethiwekhi ezokhula ibe amashumi noma amakhulu amasayithi.
 
-### Okufanele Ukubheke
+### Okufanele Ukubheke {#what-to-look-for}
 
 - **Ukusekelwa kwe-WordPress Multisite**: Akubona bonke abasingathi abaphatha i-multisite kahle
 - **SSL ye-wildcard**: Ibalulekile kumanethiwekhi asekelwe kuma-subdomain
 - **Izinsiza ezikhulayo**: Udinga indawo yokukhula ngaphandle kokuthutha
 - **Ukuhlanganiswa kwe-Ultimate Multisite**: Ukuhlelwa okuzenzakalelayo kwama-domain kanye ne-SSL konga umzamo omkhulu wokusebenza
 
-### Indlela Enconywayo
+### Indlela Enconywayo {#recommended-approach}
 
 Khetha umsingathi ohlwini lwaba[Hlinzeki Abahambisanayo](/user-guide/host-integrations/closte). Laba bahloliwe nge-Ultimate Multisite futhi banikeza ukuhlanganiswa okudingayo ukuze uhlele ama-domain nokwenza i-SSL ngokuzenzakalelayo.
 
 Ku-FitSite, sizosebenzisa ukucushwa kwe-subdomain. Lokhu kusho ukuthi amasayithi amakhasimende azoqala ukuvela njenge-`studioname.fitsite.com` ngaphambi kokuthi ngokuzithandela ahlele i-domain yawo.
 
-## Ukufaka i-WordPress Multisite
+## Ukufaka i-WordPress Multisite {#installing-wordpress-multisite}
 
 Uma ungakabi nokufakwa kwe-WordPress Multisite:
 
@@ -40,7 +40,7 @@ Uma ungakabi nokufakwa kwe-WordPress Multisite:
 Ama-subdomain anikeza isayithi lekhasimende ngalinye ikheli lalo elihlukile (`studio.fitsite.com`) kunendlela (`fitsite.com/studio`). Lokhu kubukeka ngobungcweti kakhulu kumakhasimende akho futhi kugwema ukungqubuzana kwama-permalink. Bona [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) ukuze uthole ukuqhathanisa okunemininingwane.
 :::
 
-## Ukufaka i-Ultimate Multisite
+## Ukufaka i-Ultimate Multisite {#installing-ultimate-multisite}
 
 Landela umhlahlandlela othi [Ukufaka i-Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) ukuze:
 
@@ -53,11 +53,11 @@ Ngesikhathi se-setup wizard, gcina umkhakha we-FitSite engqondweni:
 - **Igama lenkampani**: "FitSite" (noma igama lomkhiqizo olikhethile)
 - **Ilogo yenkampani**: Layisha ilogo yomkhiqizo wakho -- lokhu kuvela kuma-invoice nakuma-imeyili
 
-## Ukucushwa Komkhakha Wokuzivocavoca
+## Ukucushwa Komkhakha Wokuzivocavoca {#configuring-for-the-fitness-niche}
 
 Njengoba i-Ultimate Multisite isifakiwe, yenza lezi zinqumo zokucushwa eziqondene nomkhakha:
 
-### Izilungiselelo Ezivamile
+### Izilungiselelo Ezivamile {#general-settings}
 
 Iya ku-**Ultimate Multisite > Settings** bese ulungisa:
 
@@ -65,7 +65,7 @@ Iya ku-**Ultimate Multisite > Settings** bese ulungisa:
 - **Indima ezenzakalelayo**: Administrator -- abanikazi bezitudiyo zokuzivocavoca badinga ukulawula ngokugcwele okuqukethwe kwesayithi labo
 - **Ukubhalisa**: Nika amandla ukubhaliswa kwabasebenzisi ukuze abanikazi bezitudiyo bakwazi ukuzibhalisela bona
 
-### Ukucushwa Kwe-imeyili
+### Ukucushwa Kwe-imeyili {#email-configuration}
 
 Ama-imeyili esistimu yakho kufanele akhulume ulimi lomkhakha wakho. Iya ku-**Ultimate Multisite > Settings > Emails** bese wenza ngokwezifiso:
 
@@ -75,7 +75,7 @@ Ama-imeyili esistimu yakho kufanele akhulume ulimi lomkhakha wakho. Iya ku-**Ult
 
 Sizokucwenga lokhu kabanzi eSifundweni 8 (Ukwamukelwa Kwekhasimende), kodwa ukusetha ithoni manje kuqinisekisa ukuthi ngisho nokubhalisa kokuhlola kwasekuqaleni kuzwakala kuqondene nomkhakha.
 
-### Ukucushwa Kwe-domain
+### Ukucushwa Kwe-domain {#domain-configuration}
 
 Uma usebenzisa umhlinzeki wokusingathwa ohambisanayo, lungisa ukuhlelwa kwe-domain manje:
 
@@ -85,7 +85,7 @@ Uma usebenzisa umhlinzeki wokusingathwa ohambisanayo, lungisa ukuhlelwa kwe-doma
 
 Lokhu kuqinisekisa ukuthi lapho siqala ukudala izifanekiso namasayithi okuhlola esifundweni esilandelayo, konke kusebenza kusukela ekuqaleni kuze kube sekugcineni.
 
-## Inethiwekhi ye-FitSite Kuze Kube Manje
+## Inethiwekhi ye-FitSite Kuze Kube Manje {#the-fitsite-network-so-far}
 
 Ekupheleni kwalesi sifundo, nakhu onakho:
 
@@ -99,7 +99,7 @@ Inethiwekhi ye-FitSite
 └── Ilungele izifanekiso zamasayithi (isifundo esilandelayo)
 ```
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - Ukufakwa kwe-**WordPress Multisite esebenzayo** kumodi ye-subdomain
 - **I-Ultimate Multisite ifakiwe** futhi ilungisiwe ngophawu lwe-FitSite

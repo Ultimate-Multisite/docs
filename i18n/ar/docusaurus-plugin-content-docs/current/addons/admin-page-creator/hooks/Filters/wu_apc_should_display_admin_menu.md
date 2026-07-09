@@ -4,21 +4,21 @@ title: مرشح - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# مرشح: wu_apc_should_display_admin_menu
+# مرشح: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
 
 السماح للمسؤولين بإخفاء صفحات القائمة الإدارية، إذا انتهوا من عملية التخصيص.
 
-## المعاملات
+## المعاملات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
 | $should_display_admin_menu | `bool` | إذا كنا بحاجة إلى عرض الصفحات. |
 | $network_active | `bool` | تحقق مما إذا كان الإضافة نشطة في إدارة الشبكة. |
 
-### منذ
+### منذ {#since}
 
 - 1.4.0
 
-### المصدر
+### المصدر {#source}
 
 مُعرَّف في [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L645) في السطر 645

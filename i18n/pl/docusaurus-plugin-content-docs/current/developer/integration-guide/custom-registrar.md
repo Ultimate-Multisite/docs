@@ -3,13 +3,13 @@ title: Tworzenie niestandardowej integracji rejestratora
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Tworzenie niestandardowej integracji rejestratora
+# Tworzenie niestandardowej integracji rejestratora {#building-a-custom-registrar-integration}
 
 Addon Domain Seller wykorzystuje wzorzec **Rejestru Integracji** (Integration Registry). Każdy rejestrator to klasa PHP, która implementuje `Domain_Selling_Capability` i rejestruje się za pomocą hooka akcji `wu_domain_seller_register_capabilities`.
 
 Ten poradnik pokazuje, jak podłączyć niestandardowego rejestratora.
 
-## Interfejs
+## Interfejs {#the-interface}
 
 Twoja klasa musi implementować `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` i dziedziczyć po `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Opcjonalne metody
+### Opcjonalne metody {#optional-methods}
 
 Zaimplementuj je, aby odblokować dodatkowe funkcje. Addon wykrywa wsparcie za pomocą `method_exists()`:
 
@@ -81,7 +81,7 @@ Zaimplementuj je, aby odblokować dodatkowe funkcje. Addon wykrywa wsparcie za p
 | `get_epp_code(string $domain_name): array` | Transfer domeny (wyjściowy) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transfer domeny (przychodzący) |
 
-### Konwencja wartości zwracanej
+### Konwencja wartości zwracanej {#return-value-convention}
 
 Wszystkie metody zwracają tablicę, która ma co najmniej klucz `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Błąd w języku naturalnym'];
 
 ---
 
-## Rejestrowanie funkcjonalności
+## Rejestrowanie funkcjonalności {#registering-your-capability}
 
 Zarejestruj swoją klasę za pomocą akcji `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Pierwszy argument w `add_capability()` to **ID dostawcy** (provider ID) — mał
 
 ---
 
-## Dodawanie pól poświadczeń do asystenta
+## Dodawanie pól poświadczeń do asystenta {#adding-credential-fields-to-the-wizard}
 
 Aby umożliwić administratorom wprowadzenie poświadczeń za pomocą asystenta konfiguracji, zarejestruj swoją integrację:
 
@@ -137,7 +137,7 @@ Poświadczenia są przechowywane jako opcje sieciowe, używając ID pól jako kl
 
 ---
 
-## Hooki dla akcji po rejestracji
+## Hooki dla akcji po rejestracji {#hooks-for-post-registration-actions}
 
 Użyj tych akcji do wyzwalania webhooków, uruchamiania usług (provisioning), powiadomień lub aktualizacji CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logowanie
+## Logowanie {#logging}
 
 Zapisuj do dedykowanego kanału logów dostawcy za pomocą `wu_log_add()`:
 

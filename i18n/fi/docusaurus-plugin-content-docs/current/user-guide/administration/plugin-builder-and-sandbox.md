@@ -3,11 +3,11 @@ title: Lisäosan rakentaja ja sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 tuo käyttöön **Plugin Builder & Sandbox System**, joka antaa tekoälyassistentille luoda, aktiivistaa ja hallita WordPress-lisäosia verkossasi — kaikki turvallisessa, eristetyssä sandbox-ympäristössä.
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 Plugin Builder mahdollistaa AI-assistentin kirjoittaa räätälöityjä WordPress-lisäosia vastauksena luonnollisiin kielen pyyntöihin. Luodut lisäosat validoidaan, tallennetaan ja aktivoidaan sandbox-kerroksen sisällä ennen kuin ne koskettavat live-sivuston toiminnallisuutta.
 
@@ -17,7 +17,7 @@ Käyttötapaukset ovat esimerkiksi:
 - Ominaisuuksien prototyyppaus, jotka vaativat WordPress hookeja tai räätälöityjä postityyppejä (custom post types).
 - Lyhytaikaisen automaatiokoodin luominen erätoimintoja varten.
 
-## Lisäosan luominen AI:n avulla
+## Lisäosan luominen AI:n avulla {#generating-a-plugin-via-ai}
 
 Lisäosan luomiseksi avaa Gratis AI Agent -chatkäyttöliittymän ja kuvaile, mitä tarvitset. Esimerkiksi:
 
@@ -32,7 +32,7 @@ AI tekee seuraavaa:
 
 Voit hioa tulosta jatkamalla samassa keskusteluketjussa ennen aktivoimista.
 
-## Sandboxin aktivoiminen
+## Sandboxin aktivoiminen {#sandbox-activation}
 
 Luodun lisäosan aktivoiminen sandboxissa on erillistä kuin sen aktivoiminen live-verkossa. Sandbox:
 
@@ -48,7 +48,7 @@ Lisäosan aktivoimiseksi sandboxissa klikkaa AI-chatvastauksessa olevaa **Aktivo
 
 Tila tila viestin vahvistaa, onko aktivoituminen onnistunut vai epäonnistunut. Epäonnistumisessa virheilmoitus näytetään keskusteluketjussa.
 
-## Generoitujen pluginien hallinta
+## Generoitujen pluginien hallinta {#managing-generated-plugins}
 
 Generoidut pluginit luetellaan **Gratis AI Agent → Plugin Builder → Manage Plugins** -osiossa. Tältä näytöltä voit:
 
@@ -64,7 +64,7 @@ Generoidut pluginit luetellaan **Gratis AI Agent → Plugin Builder → Manage P
 **Install on network** -toiminto deployaa generoidun pluginin suoraan elävään WordPress multisiteesi. Tarkastele pluginin koodia ennen jatkamista. Gratis AI Agent pyytää vahvistusta ennen live-asennuksen viimeistelyä.
 :::
 
-## Generoidun pluginin asennus verkkoon
+## Generoidun pluginin asennus verkkoon {#installing-a-generated-plugin-on-the-network}
 
 Kun olet tyytyväinen sandboxissa olevaan pluginiin, voit asentaa sen elävään verkkoon:
 
@@ -78,7 +78,7 @@ Vaihtoehtoisesti käytä slash-komentoa chat-rajapinnassa:
 /install-plugin <plugin-slug>
 ```
 
-## Pluginien päivitykset
+## Pluginien päivitykset {#plugin-updates}
 
 Generoidun pluginin päivittämiseksi kuvaile muutos AI-avustajalle uudessa keskustelussa:
 
@@ -86,7 +86,7 @@ Generoidun pluginin päivittämiseksi kuvaile muutos AI-avustajalle uudessa kesk
 
 AI luo uuden version, joka ilmestyy sandboxiin rinnalla nykyisen version kanssa. Tarkastelet diffin ja vahvistat ennen päivityksen soveltamista.
 
-## HookScanner -Integraatio
+## HookScanner -Integraatio {#hookscanner-integration}
 
 Plugin Builder käyttää integroitu **HookScanneria** analysoidakseen jokaiselta luodulta pluginilta rekisteröityjä hookkeja ja suodattimia. HookScannerin tuloste näytetään chat-vastauksessa ja sisältää:
 
@@ -96,7 +96,7 @@ Plugin Builder käyttää integroitu **HookScanneria** analysoidakseen jokaiselt
 
 Tämä auttaa ymmärtämään pluginin käyttäytymistä ennen sen aktivoimista.
 
-## Turvallisuusnäkökohdat
+## Turvallisuusnäkökohdat {#security-considerations}
 
 - Luodut pluginit tallennetaan erikseen manuaalisesti asennettujen pluginien joukosta ja niihin ei pääse käsiksi vakiomuotoisen WordPress-pluginhallintanäkymän kautta, ennen kuin asennat niitä nimenomaisesti verkkoon.
 - Sandbox käyttää polun validointia estää hakemistojen läpikäyntiä (directory traversal) pluginien tiedostojen kirjoitessa.

@@ -3,7 +3,7 @@ title: سجل تغييرات GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# سجل تغييرات GoCardless
+# سجل تغييرات GoCardless {#gocardless-changelog}
 
 الإصدار: 1.0.3 - صدر في 2026-05-05
 * إصلاح: يتم الآن تنظيف المواقع المعلّقة اليتيمة عند إلغاء عضوية GoCardless وهي في حالة معلّقة أو قيد الانتظار

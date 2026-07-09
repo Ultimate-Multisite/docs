@@ -3,18 +3,18 @@ title: Integracja z Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integracja Cloudways
+# Integracja Cloudways {#cloudways-integration}
 
-## Przegląd
+## Przegląd {#overview}
 Cloudways to zarządzana platforma hostingu w chmurze, która pozwala wdrażać strony WordPress u różnych dostawców chmury, takich jak DigitalOcean, AWS, Google Cloud i inni. Ta integracja umożliwia automatyczną synchronizację domen i zarządzanie certyfikatami SSL między Ultimate Multisite a Cloudways.
 
-## Funkcje
+## Funkcje {#features}
 - Automatyczna synchronizacja domen
 - Zarządzanie certyfikatami SSL
 - Obsługa dodatkowych domen
 - Walidacja DNS dla certyfikatów SSL
 
-## Wymagania
+## Wymagania {#requirements}
 Następujące stałe muszą być zdefiniowane w pliku `wp-config.php`:
 
 ```php
@@ -30,16 +30,16 @@ Opcjonalnie możesz również zdefiniować:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Instrukcje konfiguracji
+## Instrukcje konfiguracji {#setup-instructions}
 
-### 1. Uzyskaj dane uwierzytelniające API Cloudways
+### 1. Uzyskaj dane uwierzytelniające API Cloudways {#1-get-your-cloudways-api-credentials}
 
 1. Zaloguj się do swojego Cloudways dashboard
 2. Przejdź do "Account" > "API Keys"
 3. Wygeneruj klucz API, jeśli jeszcze go nie masz
 4. Skopiuj swój e-mail i klucz API
 
-### 2. Uzyskaj identyfikatory serwera i aplikacji
+### 2. Uzyskaj identyfikatory serwera i aplikacji {#2-get-your-server-and-application-ids}
 
 1. W swoim Cloudways dashboard przejdź do "Servers"
 2. Wybierz serwer, na którym hostowana jest twoja multisite WordPress
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Przejdź do "Applications" i wybierz swoją aplikację WordPress
 5. App ID jest widoczny w adresie URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Dodaj stałe do wp-config.php
+### 3. Dodaj stałe do wp-config.php {#3-add-constants-to-wp-configphp}
 
 Dodaj następujące stałe do pliku `wp-config.php`:
 
@@ -70,7 +70,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 poniżej, aby dowiedzieć się, dlaczego uniemożliwia to wydawanie certyfikatów SSL dla poszczególnych tenantów.
 :::
 
-### 4. Włącz integrację
+### 4. Włącz integrację {#4-enable-the-integration}
 
 1. W panelu administracyjnym WordPress przejdź do Ultimate Multisite > Settings
 2. Przejdź do karty "Domain Mapping"
@@ -78,9 +78,9 @@ poniżej, aby dowiedzieć się, dlaczego uniemożliwia to wydawanie certyfikató
 4. Włącz integrację Cloudways
 5. Kliknij "Save Changes"
 
-## Jak to działa
+## Jak to działa {#how-it-works}
 
-### Synchronizacja domen
+### Synchronizacja domen {#domain-syncing}
 
 Gdy domena jest mapowana w Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Gdy domena jest mapowana w Ultimate Multisite:
 
 Uwaga: Cloudways API wymaga każdorazowo wysyłania pełnej listy domen, a nie tylko dodawania lub usuwania pojedynczych domen.
 
-### Zarządzanie certyfikatami SSL
+### Zarządzanie certyfikatami SSL {#ssl-certificate-management}
 
 Po zsynchronizowaniu domen:
 
@@ -106,7 +106,7 @@ integrację. Aby użyć certyfikatu wildcard w Cloudways, trzeba zainstalować g
 ręcznie, ale zrobienie tego blokuje wydawanie Let's Encrypt dla poszczególnych domen dla zmapowanych domen niestandardowych
 (zobacz pułapkę poniżej).
 
-## Dodatkowe domeny
+## Dodatkowe domeny {#extra-domains}
 
 Stała `WU_CLOUDWAYS_EXTRA_DOMAINS` pozwala określić dodatkowe **zewnętrzne**
 domeny, które zawsze powinny być utrzymywane na liście aliasów aplikacji Cloudways. Użyj jej dla:
@@ -117,7 +117,7 @@ domeny, które zawsze powinny być utrzymywane na liście aliasów aplikacji Clo
 **Nie** używaj tej stałej dla wildcard subdomen własnej sieci
 (np. `*.your-network.com`). Zobacz poniżej pułapkę SSL wildcard.
 
-## Ważne — pułapka SSL wildcard
+## Ważne — pułapka SSL wildcard {#important--wildcard-ssl-pitfall}
 
 Częstym błędem podczas korzystania z domyślnej konfiguracji Cloudways jest dodanie wildcard, takiego jak
 `*.your-network.com`, do `WU_CLOUDWAYS_EXTRA_DOMAINS`, albo ręczna instalacja certyfikatu SSL wildcard Cloudways
@@ -128,7 +128,7 @@ niestandardowych domen poszczególnych tenantów, które mapuje Ultimate Multisi
 certyfikat SSL w aplikacji za każdym razem, a istniejący wcześniej certyfikat wildcard w
 aplikacji blokuje wydawanie Let's Encrypt dla poszczególnych domen, na którym polega integracja.
 
-### Zalecana konfiguracja SSL Cloudways dla sieci Ultimate Multisite
+### Zalecana konfiguracja SSL Cloudways dla sieci Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. W karcie **SSL Certificate** aplikacji Cloudways zainstaluj **standardowy
    certyfikat Let's Encrypt** obejmujący tylko `your-network.com` i `www.your-network.com`
@@ -142,20 +142,20 @@ aplikacji blokuje wydawanie Let's Encrypt dla poszczególnych domen, na którym 
 
 Jeśli niestandardowe domeny Twoich dzierżawców utknęły bez SSL, sprawdź kartę SSL w Cloudways. Jeśli jest tam aktywny certyfikat wildcard, usuń go, ponownie wydaj standardowy certyfikat Let's Encrypt tylko dla głównej domeny sieci i usuń wszystkie wpisy wildcard z `WU_CLOUDWAYS_EXTRA_DOMAINS`. Następnie ponownie uruchom mapowanie domeny (lub poczekaj na następne), a integracja znów zacznie wystawiać certyfikaty dla poszczególnych domen.
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
-### Problemy z połączeniem API
+### Problemy z połączeniem API {#api-connection-issues}
 - Sprawdź, czy Twój adres e-mail i klucz API są poprawne
 - Sprawdź, czy identyfikatory serwera i aplikacji są poprawne
 - Upewnij się, że Twoje konto Cloudways ma niezbędne uprawnienia
 
-### Problemy z certyfikatem SSL
+### Problemy z certyfikatem SSL {#ssl-certificate-issues}
 - Cloudways wymaga, aby domeny miały prawidłowe rekordy DNS wskazujące na Twój serwer przed wystawieniem certyfikatów SSL
 - Integracja sprawdza rekordy DNS przed zażądaniem certyfikatów SSL
 - Jeśli certyfikaty SSL nie są wystawiane, sprawdź, czy Twoje domeny prawidłowo wskazują adres IP Twojego serwera
 - **Niestandardowe domeny poszczególnych dzierżawców utknęły bez SSL?** Sprawdź kartę SSL Certificate aplikacji Cloudways. Jeśli aktywny jest certyfikat wildcard (zainstalowany ręcznie lub obejmujący `*.your-network.com`), Cloudways nie wystawi certyfikatów Let's Encrypt dla indywidualnie mapowanych domen niestandardowych. Zastąp go standardowym certyfikatem Let's Encrypt obejmującym tylko główną domenę sieci (`your-network.com`, `www.your-network.com`) i usuń wszystkie wpisy wildcard z `WU_CLOUDWAYS_EXTRA_DOMAINS`. Następnie ponownie uruchom mapowanie domeny (lub poczekaj na następne), a integracja zażąda certyfikatów dla poszczególnych domen.
 
-### Domena nie została dodana
+### Domena nie została dodana {#domain-not-added}
 - Sprawdź logi Ultimate Multisite pod kątem ewentualnych komunikatów o błędach
 - Sprawdź, czy domena nie została już dodana do Cloudways
 - Upewnij się, że Twój plan Cloudways obsługuje liczbę domen, które dodajesz

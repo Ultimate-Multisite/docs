@@ -3,11 +3,11 @@ title: Log newidiadau
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Cofnod newidiadau
+# Cofnod newidiadau {#changelog}
 
-## 1.9.0 — Rhyddhawyd ar 2026-04-28
+## 1.9.0 — Rhyddhawyd ar 2026-04-28 {#190--released-on-2026-04-28}
 
-### Newydd
+### Newydd {#new}
 
 - **Gallu `create_contact_form`** — yn creu ffurflen gyswllt gan ddefnyddio’r plugin ffurflenni gweithredol (Contact Form 7, WPForms, Fluent Forms, neu Gravity Forms) ac yn dychwelyd shortcode sy’n barod i’w ymgorffori mewn unrhyw bost neu dudalen.
 - **Gallu `set_featured_image`** — yn neilltuo delwedd nodwedd i bost neu dudalen o ID atodiad Media Library presennol neu URL o bell; yn mewnforio’r ddelwedd yn awtomatig pan ddarperir URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Adfer y sesiwn ddiwethaf** — mae’r panel sgwrs bellach yn ail-lwytho’r sgwrs fwyaf diweddar yn awtomatig wrth lwytho tudalen ac wrth agor y teclyn, felly ni chollir cyd-destun byth ar draws llywio tudalennau.
 - **Dolenni gweithredu plugin** — mae dolenni cyflym i Gosodiadau a’r Gofrestrfa Galluoedd bellach yn ymddangos ar sgrin **Plugins → Installed Plugins** WordPress o dan ddisgrifiad y plugin.
 
-### Gwell
+### Gwell {#improved}
 
 - **Ailgynnig ffynhonnell delwedd** — mae’r asiant bellach yn ailgynnig pob ffynhonnell delwedd am ddim sydd wedi’i ffurfweddu cyn syrthio’n ôl i ddelwedd wedi’i chynhyrchu gan AI ar fethiant lawrlwytho.
 - **Panel gwybodaeth model** — bob amser yn weladwy ym mhennyn y sgwrs; nid yw bellach yn cael ei guddio ar ôl y neges gyntaf.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ailgynllunio’r teclyn sgwrs** — mae eicon AI unedig yn disodli’r avatar personol blaenorol; yn gyson â’r system asiantau mewnol.
 - **Troi URLau yn ddolenni** — mae URLau sy’n ymddangos mewn negeseuon system a swigod negeseuon gwall bellach yn cael eu rendro fel dolenni cliciadwy.
 
-### Wedi’i drwsio
+### Wedi’i drwsio {#fixed}
 
 - **Canfyddadwyedd galluoedd** — cywirwyd disgrifiadau, cyfeiriadau system prompt, ac aliniad namespace fel bod pob gallu’n ymddangos yn rhestr offer yr asiant yn ddibynadwy.
 - **Cache darparwyr** — mae darparwyr bellach yn cael eu cacheio ar draws y safle drwy gownter fersiwn, gan atal problemau darparwyr hen ar rwydweithiau multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Rhyddhawyd ar 2026-04-09
+## 1.4.0 — Rhyddhawyd ar 2026-04-09 {#140--released-on-2026-04-09}
 
-### Newydd
+### Newydd {#new-1}
 
 - **Gorchymyn benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — yn rhedeg cyfres benchmark Agent Capabilities v1 o’r llinell orchymyn ar gyfer piblinellau CI a llifoedd gwaith gwerthuso modelau. Yn cefnogi rhediadau fesul cwestiwn, diystyriadau darparwr/model, ac allbwn JSON/CSV.
 - **Cyfres benchmark Agent Capabilities v1** — set strwythuredig o ysgogiadau cymhleth, aml-gam sy’n profi arwyneb llawn y gallu, gyda sgorio ac adrodd ar docynnau/hyd.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Cwestiwn benchmark gwefan bwyty** (`q-restaurant-website`) — prawf o’r dechrau i’r diwedd sy’n cwmpasu cofrestru CPT, system ddylunio, llywio, a darganfod pluginau.
 - **Pluginau cysylltydd darparwr AI** wedi’u hychwanegu at blueprints WordPress Playground ar gyfer gosod datblygu lleol yn gyflymach.
 
-### Wedi’i wella
+### Wedi’i wella {#improved-1}
 
 - README wedi’i ddiweddaru gyda dogfennaeth cysylltydd darparwr AI a chyfarwyddiadau gosod.
 
-### Wedi’i drwsio
+### Wedi’i drwsio {#fixed-1}
 
 - Datryswyd 25 methiant prawf PHPUnit ar gangen `main`.
 - Cywirwyd fformat URL rhyddhau GitHub yn `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Mae nodiadau rhyddhau blaenorol yn cael eu cynnal yng nghadwrfa’r plugin._

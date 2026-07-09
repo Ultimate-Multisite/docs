@@ -3,11 +3,11 @@ title: Cyfeirnod WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Cyfeirnod WP-CLI
+# Cyfeirnod WP-CLI {#wp-cli-reference}
 
 Mae Gratis AI Agent yn cynnwys teulu gorchmynion `wp gratis-ai-agent` ar gyfer meincnodi’r asiant, rheoli galluoedd, ac ymholi statws yr asiant o’r llinell orchymyn. Mae pob gorchymyn yn gofyn am WP-CLI 2.0 neu uwch.
 
-## Gosod
+## Gosod {#installation}
 
 Caiff y gorchmynion WP-CLI eu cofrestru’n awtomatig pan fydd y plugin yn weithredol. Gwiriwch gyda:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Yn rhedeg cyfres feincnodi Galluoedd yr Asiant — set o ysgogiadau cymhleth, aml-gam sy’n profi wyneb llawn y galluoedd. Defnyddiwch hyn i werthuso perfformiad model, cymharu darparwyr AI, neu ddilysu pecynnau gallu cyn eu defnyddio mewn cynhyrchu.
 
-### Crynodeb
+### Crynodeb {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Opsiynau
+### Opsiynau {#options}
 
 | Opsiwn | Disgrifiad |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Fformat allbwn: `table` (rhagosodedig), `json`, `csv` |
 | `--save` | Cadw canlyniadau’r meincnod i’r gronfa ddata ar gyfer cymhariaeth hanesyddol |
 
-### Enghreifftiau
+### Enghreifftiau {#examples}
 
 Rhedeg y gyfres feincnodi lawn gyda’r darparwr a’r model cyfredol:
 
@@ -57,7 +57,7 @@ Rhedeg yn erbyn model penodol a chadw canlyniadau:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Allbwn
+### Allbwn {#output}
 
 Mae’r meincnod yn allbynnu un rhes fesul cwestiwn gyda’r colofnau canlynol:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Cwestiynau Meincnodi
+### Cwestiynau Meincnodi {#benchmark-questions}
 
 Mae’r gyfres ragosodedig yn cynnwys:
 
@@ -95,11 +95,11 @@ Gellir cofrestru cwestiynau ychwanegol drwy’r hidlydd `gratis_ai_agent_benchma
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Yn rheoli galluoedd a phecynnau gallu sydd wedi’u gosod.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Yn rhestru pob gallu cofrestredig, ei ffynhonnell (craidd neu becyn), a’i statws cyfredol.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Yn lawrlwytho ac yn actifadu pecyn gallu o’r gofrestrfa.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Yn analluogi gallu penodol heb dynnu’r pecyn. Yn ddefnyddiol ar gyfer cyfyngu cwmpas yr asiant ar safle penodol.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Yn ail-alluogi gallu a analluogwyd yn flaenorol.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Yn dangos ffurfweddiad cyfredol yr asiant a statws cysylltedd.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Yn dangos gweithgarwch diweddar yr asiant o’r log dadfygio.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Yn ailosod cyflwr yr agent: yn clirio CSS wedi'i chwistrellu, yn dileu CPTs a thacsonomegau a gofrestrwyd gan yr agent, yn ailosod arddulliau byd-eang, ac yn gwagio cache opsiynau'r agent. Nid yw'n dileu'r plugin na'i osodiadau.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Codau Gadael
+## Codau Gadael {#exit-codes}
 
 Mae pob gorchymyn yn gadael gyda `0` ar lwyddiant. Codau gadael nad ydynt yn sero:
 

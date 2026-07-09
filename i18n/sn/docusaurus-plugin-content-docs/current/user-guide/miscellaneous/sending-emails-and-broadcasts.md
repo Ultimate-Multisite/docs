@@ -3,13 +3,13 @@ title: Kutumira Maemail neNhepfenyuro
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Kutumira Emails neBroadcasts (v2)
+# Kutumira Emails neBroadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**CHIZIVISO CHAKAKOSHA: Chinyorwa ichi chinoreva Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite inouya nechinhu chinokubvumira kutaurirana nevatengi vako nekutumira email kumushandisi akanangwa kana kuboka revashandisi, pamwe nekutumira zviziviso paadmin dashboard yavo kuti uparadzire zviziviso
 
-## Wedzera zviziviso zveadmin kudashboard yevatengi vako neBroadcasts
+## Wedzera zviziviso zveadmin kudashboard yevatengi vako neBroadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Uchishandisa chinhu chebroadcast cheUltimate Multisite, unogona kuwedzera **zviziviso zveadmin** kuadmin dashboard yesubsite yemushandisi wako.
 
@@ -51,7 +51,7 @@ Mushure mekugadzira meseji yako, unogona wobva warova bhatani re**Send**.
 
 Uye ndizvozvo. Chiziviso cheadmin chinofanira kuoneka pakarepo padashboard yemushandisi wako.
 
-## Tumira emails kuvatengi vako
+## Tumira emails kuvatengi vako {#send-emails-to-your-customers}
 
 Uchishandisa chinhu chebroadcast cheUltimate Multisite, unogona kutumira email kuvashandisi vako. Une sarudzo yekutumira email chete kuvashandisi vakati kana kunanga boka remushandisi rakati zvichienderana nechigadzirwa kana plan yavakanyoresa pasi payo.
 
@@ -81,11 +81,11 @@ Mushure mekugadzira meseji yako, unogona kurova bhatani re**Send**.
 
 Uye ndizvo zviri nyore kutumira email kuvashandisi vako vekupedzisira uchishandisa chinhu chebroadcast.
 
-## System emails
+## System emails {#system-emails}
 
 System emails muUltimate Multisite ndezviya **zviziviso zveotomatiki** zvinotumirwa nesystem mushure mezviito zvakati sekunyoresa, kubhadhara, domain mapping, nezvimwe. Emails idzi dzinogona kugadziriswa kana kuchinjwa kubva kuzvirongwa zveUltimate Multisite. Inouyawo nechinhu chinokubvumira kugadzirisa patsva uye kuunza marongero aripo kubva kune imwe installation yeUltimate Multisite.
 
-### Kugadzirisa patsva & Kuunza
+### Kugadzirisa patsva & Kuunza {#resetting--importing}
 
 Maversion matsva eUltimate Multisite, pamwe neadd-ons, anogona uye achanyoresa emails itsva nguva nenguva.
 
@@ -93,7 +93,7 @@ Kuti tidzivise kusawirirana nemamwe matambudziko, **hatizowedzeri matemplate mat
 
 Zvisinei, super admins nemaagents vanogona kuunza emails idzi dzichangonyoreswa kuburikidza nechishandiso cheimporter. Maitiro iwayo achagadzira system email itsva ine zvirimo uye configuration yetemplate itsva yeemail, zvichibvumira super admin kuita chero shanduko dzavanoda kana kuzvisiya sezvazviri.
 
-#### Maitiro ekuunza system emails
+#### Maitiro ekuunza system emails {#how-to-import-system-emails}
 
 Enda kupeji reSettings reUltimate Multisite rako uye uende kutab ye**Emails**.
 
@@ -111,7 +111,7 @@ Wobva wagona kutoggle sarudzo dzeImport Emails kuti uone kuti ndedzipi system em
 
 <!-- Mufananidzo wesikirini hauwanikwi: Modal yeSetazve uye Pinza ine sarudzo dzePinza Maemail dzakawedzerwa -->
 
-#### Kuseta Patsva Maemail eHurongwa
+#### Kuseta Patsva Maemail eHurongwa {#reseting-system-emails}
 
 Dzimwe nguva, unozoona kuti shanduko dzawakaita kune template yeemail yakati hadzichakushandiri uye ungada kuiseta patsva ku **mamiriro ayo ekutanga**.
 

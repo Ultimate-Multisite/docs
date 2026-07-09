@@ -3,11 +3,11 @@ title: Index Mutationum
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Index mutationum
+# Index mutationum {#changelog}
 
-## 1.9.0 — Editum die 2026-04-28
+## 1.9.0 — Editum die 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nova
+### Nova {#new}
 
 - **`create_contact_form` facultas** — formulam contactus creat utens activo formae plugin (Contact Form 7, WPForms, Fluent Forms, aut Gravity Forms) et reddit shortcode paratum inseri in quamlibet publicationem aut paginam.
 - **`set_featured_image` facultas** — imaginem eminentem publicationi aut paginae attribuit ex exsistente Media Library attachment ID aut remoto URL; imaginem automatice importat cum URL praebetur.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ultimam sessionem restituere** — tabula colloquii nunc recentissimum colloquium automatice in onere paginae et in apertione widget reonerat, ita contextus numquam amittitur inter navigationes paginarum.
 - **Nexus actionum plugin** — nexus celeres ad Settings et ad Registrum Facultatum nunc apparent in WordPress velo **Plugins → Installed Plugins** infra descriptionem plugin.
 
-### Emendata
+### Emendata {#improved}
 
 - **Iteratio fontis imaginum** — agens nunc omnes configuratos fontes imaginum gratuitos iterum temptat antequam ad imaginem ab AI generatam recidat, si deoneratio deficit.
 - **Tabula informationis exemplaris** — semper visibilis in capite colloquii; non iam post primum nuntium absconditur.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Redesignatio widget colloquii** — icon AI unificata priorem avatar proprium substituit; cum systemate agentium inclusorum congruens.
 - **Conversio URL in nexus** — URL quae in nuntiis systematis et bullis nuntiorum erroris apparent nunc redduntur ut nexus clicabiles.
 
-### Correcta
+### Correcta {#fixed}
 
 - **Reperiabilitas facultatum** — descriptiones, relationes moniti systematis, et congruentia namespace correcta sunt, ut omnes facultates in indice instrumentorum agentis fideliter appareant.
 - **Cache praebitorum** — praebitores nunc per numeratorem versionis per totum situm servantur, difficultates praebitorum obsoletorum in retibus multisitus prohibentes.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Editum die 2026-04-09
+## 1.4.0 — Editum die 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nova
+### Nova {#new-1}
 
 - **Mandatum WP-CLI ad mensuram exploratoriam** (`wp gratis-ai-agent benchmark`) — seriem exploratoriam Agent Capabilities v1 ex linea mandatorum pro meatibus CI et rationibus aestimationis exemplorum currit. Sustinet cursus per singulas quaestiones, mutationes provisoris/exempli, atque exitum JSON/CSV.
 - **Series exploratoria Agent Capabilities v1** — ordinata congeries suggestionum implicatarum et plurium graduum, quae totam superficiem facultatum exercet, cum aestimatione et relatione de token/duratione.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Quaestio exploratoria situs interretialis cauponae** (`q-restaurant-website`) — probatio ab initio ad finem, registrationem CPT, systema designationis, navigationem, et inventionem pluginorum tegens.
 - **Pluginorum conectorum provisoris AI** ad WordPress Playground blueprints addita sunt ad celeriorem praeparationem evolutionis localis.
 
-### Emendatum
+### Emendatum {#improved-1}
 
 - README renovatum cum documentis conectorum provisoris AI et instructionibus praeparationis.
 
-### Correctum
+### Correctum {#fixed-1}
 
 - 25 defectus probationum PHPUnit in ramo `main` soluti.
 - Forma URL emissionum GitHub in `blueprint.json` correcta.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Notae emissionum priorum in repositorio plugin servantur._

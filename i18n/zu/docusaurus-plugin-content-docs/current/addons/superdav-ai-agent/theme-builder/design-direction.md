@@ -3,17 +3,17 @@ title: Isiqondiso Sokuklama
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Isiqondiso Sokuklama
+# Isiqondiso Sokuklama {#design-direction}
 
 Isinyathelo se-**Design Direction** sikuvumela ukuthi ubuyekeze, ucije, futhi uqedele ukwakheka okubonakalayo kwe-theme yakho ngaphambi kokuthi Theme Builder ikhiqize i-theme ephelele.
 
-## Ukubuka konke
+## Ukubuka konke {#overview}
 
 Ngemva kokuqedela i-Discovery Interview, Theme Builder yethula isiqondiso sakho sokuklama nge-**desktop and mobile preview rendering**. Lokhu kukuvumela ukuthi ubone ngokunembile ukuthi ukwakheka kwakho kuzobukeka kanjani kumadivayisi ahlukene ngaphambi kokuzibophezela ku-theme.
 
-## Izingxenye ze-Design Direction
+## Izingxenye ze-Design Direction {#design-direction-components}
 
-### 1. Iphalethi lemibala
+### 1. Iphalethi lemibala {#1-color-palette}
 
 Uhlelo lwemibala lwe-theme yakho, okuhlanganisa:
 
@@ -23,7 +23,7 @@ Uhlelo lwemibala lwe-theme yakho, okuhlanganisa:
 - **Imibala engathathi hlangothi** — okumpunga nokumhlophe kwezizinda nombhalo
 - **Umbala wombhalo** — umbala oyinhloko wombhalo ukuze kufundeke kahle
 
-### 2. I-Typography
+### 2. I-Typography {#2-typography}
 
 Ukukhethwa kwamafonti kwe-:
 
@@ -33,14 +33,14 @@ Ukukhethwa kwamafonti kwe-:
 - **Ukuphakama komugqa** — isikhala phakathi kwemigqa ukuze kufundeke kahle
 - **Izisindo zamafonti** — izinhlobo ezijiyile, ezijwayelekile, nezilula
 
-### 3. Isakhiwo Nesikhala
+### 3. Isakhiwo Nesikhala {#3-layout-and-spacing}
 
 - **Ububanzi be-container** — ububanzi obukhulu bokuqukethwe
 - **I-padding nama-margins** — isikhala esizungeze izakhi
 - **Uhlelo lwe-grid** — isakhiwo samakholomu sokuklama okusabelayo
 - **Isikhala sezingxenye** — ibanga phakathi kwezakhi ze-UI
 
-### 4. Izakhi Ezibonakalayo
+### 4. Izakhi Ezibonakalayo {#4-visual-elements}
 
 - **Izitayela zezinkinobho** — imiklamo yezinkinobho eyinhloko, yesibili, neyesithathu
 - **Imiklamo yamakhadi** — izakhiwo zamabhulokhi wokuqukethwe
@@ -48,9 +48,9 @@ Ukukhethwa kwamafonti kwe-:
 - **Imingcele nezithunzi** — ukujula okubonakalayo okuncane
 - **Imiphumela ye-hover** — isitayela sesimo sokusebenzisana
 
-## Ukuboniswa Kokubuka kuqala
+## Ukuboniswa Kokubuka kuqala {#preview-rendering}
 
-### Ukubuka kuqala kwe-Desktop
+### Ukubuka kuqala kwe-Desktop {#desktop-preview}
 
 Ukubuka kuqala kwe-desktop kukhombisa ukwakheka kwakho ngobubanzi obugcwele (imvamisa 1200px noma ngaphezulu):
 
@@ -59,7 +59,7 @@ Ukubuka kuqala kwe-desktop kukhombisa ukwakheka kwakho ngobubanzi obugcwele (imv
 - I-typography enkulu nesikhala
 - Zonke izakhi ezibonakalayo ngosayizi ogcwele
 
-### Ukubuka kuqala kwe-Mobile
+### Ukubuka kuqala kwe-Mobile {#mobile-preview}
 
 Ukubuka kuqala kwe-mobile kukhombisa ukwakheka kwakho ngobubanzi be-mobile (imvamisa 375px):
 
@@ -68,7 +68,7 @@ Ukubuka kuqala kwe-mobile kukhombisa ukwakheka kwakho ngobubanzi be-mobile (imva
 - I-typography nesikhala okulungisiwe
 - Osayizi bezinkinobho abalungele ukuthintwa
 
-### Ama-Breakpoints Asabelayo
+### Ama-Breakpoints Asabelayo {#responsive-breakpoints}
 
 Theme Builder ibonisa ukubuka kuqala kulawa ma-breakpoints:
 
@@ -79,9 +79,9 @@ Theme Builder ibonisa ukubuka kuqala kulawa ma-breakpoints:
 | **Desktop** | 1200px | I-desktop enobubanzi obugcwele |
 | **Large Desktop** | 1920px | Isibonisi esibanzi kakhulu |
 
-## Ukucija Ukuklama Kwakho
+## Ukucija Ukuklama Kwakho {#refining-your-design}
 
-### Ukwenza Izilungiso
+### Ukwenza Izilungiso {#making-adjustments}
 
 Ungacija isiqondiso sakho sokuklama ngokuthi:
 
@@ -91,7 +91,7 @@ Ungacija isiqondiso sakho sokuklama ngokuthi:
 4. **Ukubuyekeza isakhiwo** — shintsha ububanzi be-container namakholomu e-grid
 5. **Ukwenza izakhi ngendlela oyifisayo** — guqula izitayela zezinkinobho, imiklamo yamakhadi, njll.
 
-### Izibuyekezo Zokubuka kuqala
+### Izibuyekezo Zokubuka kuqala {#preview-updates}
 
 Izinguquko zibonakala ngesikhathi sangempela:
 
@@ -100,7 +100,7 @@ Izinguquko zibonakala ngesikhathi sangempela:
 - Wonke ama-breakpoints asabelayo ayabuyekezwa
 - Ungashintsha phakathi kokubuka kuqala ukuze uqinisekise izinguquko
 
-### Ukubuka Kokuqhathanisa
+### Ukubuka Kokuqhathanisa {#comparison-view}
 
 Qhathanisa isiqondiso sakho sokuklama ne-:
 
@@ -108,7 +108,7 @@ Qhathanisa isiqondiso sakho sokuklama ne-:
 - **Imiklamo yabancintisana nabo** — qhathanisa namasayithi akugqugquzelayo
 - **Izinguqulo zangaphambilini** — buyela eziqondisweni zokuklama zangaphambilini
 
-## Ukuvunywa kwe-Design Direction
+## Ukuvunywa kwe-Design Direction {#design-direction-approval}
 
 Uma usenelisekile ngokuklama kwakho:
 
@@ -118,7 +118,7 @@ Uma usenelisekile ngokuklama kwakho:
 4. **Qinisekisa isakhiwo** — hlola isikhala nokuqondanisa
 5. **Vuma ukuklama** — qhubekela ekukhiqizweni kwe-theme
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 Ngemva kokuvuma isiqondiso sakho sokuklama:
 
@@ -127,7 +127,7 @@ Ngemva kokuvuma isiqondiso sakho sokuklama:
 3. Ungaqhubeka ukwenza ngokwezifiso usebenzisa i-customizer ye-WordPress
 4. Qhubekela ku-[Hospitality Menus](./hospitality-menus.md) noma ezinye izici
 
-## Imikhuba Engcono Kakhulu
+## Imikhuba Engcono Kakhulu {#best-practices}
 
 - **Hlola kumadivayisi angempela** — sebenzisa amafoni namathebhulethi angempela uma kungenzeka
 - **Hlola ukufundeka** — qinisekisa ukuthi umbhalo uyafundeka kuwo wonke osayizi
@@ -135,30 +135,30 @@ Ngemva kokuvuma isiqondiso sakho sokuklama:
 - **Cabanga ngokusebenza** — lungiselela izithombe namafonti ukuze kusheshe
 - **Hlela okuqukethwe** — qinisekisa ukuthi isakhiwo sisebenza nokuqukethwe kwakho kwangempela
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 
-### Ukubuka kuqala Akubuyekezwa
+### Ukubuka kuqala Akubuyekezwa {#preview-not-updating}
 
 - Vuselela ikhasi
 - Sula i-cache yesiphequluli
 - Zama isiphequluli esihlukile
 - Hlola ukuxhumeka kwe-inthanethi
 
-### Imibala Ibukeka Yehlukile
+### Imibala Ibukeka Yehlukile {#colors-look-different}
 
 - Hlola izilungiselelo zombala zesikrini
 - Zama kumadivayisi ahlukene
 - Qinisekisa ukugqama kombala ngamathuluzi okufinyeleleka
 - Cabanga ngezilingisi zokungaboni imibala
 
-### Izinkinga ze-Typography
+### Izinkinga ze-Typography {#typography-issues}
 
 - Qinisekisa ukuthi amafayela efonti ayalayisha
 - Hlola usayizi wefonti kuma-breakpoints ahlukene
 - Hlola ngokuqukethwe kwangempela
 - Cabanga ngobude bomugqa ukuze kufundeke kahle
 
-## Amadokhumenti Ahlobene
+## Amadokhumenti Ahlobene {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — qoqa ulwazi lokuklama
 - [Hospitality Menus](./hospitality-menus.md) — dala amakhasi emenyu ahlelekile

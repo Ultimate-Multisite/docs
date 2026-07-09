@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite ndiyo plugin ya WordPress inotenda kuweze kukupa WaaS kana Websites as a Service kune vakijuzi. Pasi ticishandisa uye kuti tinzwire sei Ultimate Multisite inogona kuita zvinhu kwemudzidzi wako nevanhu vakaro, kuna kuteerera kunzwire kunoita zvinhu zvakakosha zvinotarisirwa.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Ndingatano vose tinoziva nezveinstalls ya WordPress inotanga (stock-standard). Unogona kuita iye kubva munzira yakachengetedzo yechivimbo chekudziwa kwako nehoster, kana kuti, kune vanhu vakakwanisa, kunge unenge wateerera server ye web uye database, utaurira files dzacho uye kutanga kuratidza kuratidza.
 
@@ -17,13 +17,13 @@ Kudiwa kuti unogona kutanga iye WordPress site imwe kana hupenyu hupenyu hupenyu
 
 Kuti kuona zvinhu zvakakosha zvinogona kuone muupenyu weWordPress, uye kunoita kuti zvinhu zvakasiyana zvakawanda zvizivikaniswe zviri kuitika munzira yakachengetedza.
 
-### The Network (Mavandudzi)
+### The Network (Mavandudzi) {#the-network}
 
 Muupenyu weWordPress, multisite network inoratidza kuva nekuti mufanana nemashoko anonyanya vakaonekwa mumapuro dzakasiyana-nyaya pane WordPress. Kukana multisite network kunogona kuitika zvakasiyana nevedzi dzenyaya dzehosting, asi zvinhu zvinotevera ndizvo zviri kuita kuti WordPress zivone kuti inogona kutenderwa munzira iyi.
 
 Kune zvinhu zvakawanda zviri kuitika pakati pe multisite network uye installation yaWordPress inosanganisira (stand-alone), tiri kuzoti zvishandisa zvakasiyana zvakawanda.
 
-#### Subdomain vs. Subdirectory (Subdomain vs. Subdirectory)
+#### Subdomain vs. Subdirectory (Subdomain vs. Subdirectory) {#subdomain-vs-subdirectory}
 
 Chimwe chote chinotevera kuita ndicho unofanira kunzwisisa ndiko installation ya multisite inogona kutenderwa ne _subdirectories_ kana _subdomains_. Ultimate Multisite inogona kushanda zvakanaka nemazwi akaiyi, asi kuna zvinosanganisira dzinotsanangurwa pakati pei dziri kuitika.
 
@@ -43,7 +43,7 @@ Ndinembo iye, kana yakasi kana kuti WordPress Multisite inachera chote chinotora
 
 Kuti chii, network administrator ndiye anomira kuita plugins uye themes mu-network uye anopa rumbiko (permissions) kuti vaine kugona kutora uye kuparera plugins uye themes kune sites dzine network. Site administrators havanzi kuita plugins kana themes kana kuona plugins uye themes pane sita rava vavo.
 
-#### Users and Administrators
+#### Users and Administrators {#plugins-and-themes}
 
 Mu WordPress Multisite, sites dzese dzinogara nemabhurangi (database) anonyanya, uye saka dzinogara nemabhurangi akasimba (users), roles, uye capabilities dzenge dzinogara. Ndiri kuona zvakanaka kuti vese users vanogara munzvimbo yenyika (network) uye havanzi munzvimbo yakapfupi ye site dzine.
 
@@ -55,13 +55,13 @@ Kuti ndizivisa zvakare, kunge users vanogara kuona kuti vaine kuratidzidzika nes
 
 Kuti zvinhu zvakasiyana-nyaya munzvimbo hwe systems dzakachengetsi, iwe ndiri kune kunzwisisa kwemuno kuti chote chinogona kuonekwa zvakanaka kubabva nemunhu anoziva WordPress installations dzakanyanya, kungava kunzvimbo yakasiyana.
 
-#### Media
+#### Media {#users-and-administrators}
 
 Panguva nhaka dzakachengetsi dzinogona kushandisa database imwe munzvimbo hwe WordPress Multisite, dzine mitambo (paths) yakasiyana pamusoro pe media files pama filesystem.
 
 Moyo we standard WordPress (wp-content/uploads) ndiri rauri; asi path yake rinobva kuti rionekane rine ID yakasiyana ye network site. Nekuti izvi zvakaita, media files dzemwe network site dzonyanya kuonekwa se wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#media}
 
 Tiri kutaura nezvezvinhu zvinogona kuva zvakanaka pakati pe _subdomain_ ne _subdirectory_ configuration uye ndiri pano: paths.
 
@@ -75,7 +75,7 @@ Mune _subdomain_ configuration, chine kuitwa izvi pane nekuti mweya we network s
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#permalinks}
 
 Mu configuration ya _subdirectory_ inogona kuti kuna chokwadi kuti kune zvinhu zviri kuita kunge kuita matambudziko nemapanguri (naming conflicts) nekuti sita rine main site uye sita renetwork sites rinogona kuita zvinhu zvakasiita.
 
@@ -85,7 +85,7 @@ Kuti usawane iye, WordPress inopa nzira yekuti usawane zvinangwa (blacklist) zvi
 
 Mu configuration ya _subdomain_, kunge kuita matambudziko nekuti _subdomain_ inogona kukwanisa (mitigate) nekuti iye inoshandiswa sita renetwork site uye haine kuratidzidzera nenyaya yese nemain site.
 
-### Registration
+### Registration {#static-pages}
 
 Mune settings dzemakore we network ya WordPress Multisite, kuna zvinhu zvakawanda zvinobva dze registration dze users, zvinoita kuti users vakachena sita.
 
@@ -105,7 +105,7 @@ Kune zvinhu izvi, kana munhu anenge akasvika kwenye (logs in), anobva mune netwo
 
 Asi, kana iwe raine multisite yakanzwa kudzidzisa network sites dzinobva mumafungiro akasiyana-siyana uye hazvinogone kuita zvinhu dziri kubatanidza, zvakanyanya zvichitika kuti usina plugins dzakare (external plugins) zvinoda kushandiswa kuti uregure user roles.
 
-### Domain uye SSL
+### Domain uye SSL {#registration}
 
 Tiri kutaura nezve WordPress Multisite inenge isingazivikanwa - Wordpress.com. Iyi ndiyo nzira yakawanda kudziwa yekuti multisite yaWordPress, uye inonyanya zvinoita kuti iwe utange kuya necustom plugins uye themes kuti uita zvinhu dzakasiyana-siyana.
 
@@ -119,7 +119,7 @@ Kune vanhu vachikumbira kune network, izvi zvinhu zviri kuva kunge zvinoshandisa
 
 Kuti zvinhu izvi, pamwe nekuti WordPress Multisite inopa nzira yekuti [www.anotherdomain.com](http://www.anotherdomain.com) iwe itangise 'site1', munhu wenyorweri anenge ari kuita kunge kune zvinangwa zveDNS uye kutanga SSL certificates.
 
-## Ultimate Multisite
+## Ultimate Multisite {#domain-and-ssl}
 
 Nekuti zvinhu zvine kupfuura pakati pe WordPress installation yakapfuma neya Multisite, tiri kuona sei Ultimate Multisite inoshandiswa sekitambo chinotora nzira yekuti Websites as a Service (WaaS). Think of Wix.com, Squarespace, WordPress.com uye ndichida kuti iwe uone service wako wepamusoro.
 
@@ -127,9 +127,9 @@ Kune chakanikwa, Ultimate Multisite inoshandisa WordPress Multisite asi inoshand
 
 Mavhondso anotsanangurwa munzira dzinotsanangurwa, tiri kuona zvakanaka nezvinhu zvinosanganisira uye zvinhu zvine kukanganisa kune kuita izvi.
 
-### Use Cases (Zvinangwa zvekuita)
+### Use Cases (Zvinangwa zvekuita) {#ultimate-multisite}
 
-#### Case 1: An Agency (Kuzvikwanisa)
+#### Case 1: An Agency (Kuzvikwanisa) {#introduction}
 
 Nzira yakare, zvinhu zvakakosha pakati pe agency zviri kuita design ye websites nekuona kuti hosting kana marketing dzine kuita zvakawanda.
 
@@ -155,7 +155,7 @@ Themes dzine zvinhu zvakasiyi, zvinowanzova kuti themes dzinogone kuva kana kupe
 
 Agencies dzachida kuva nemoyo wakaoma neUltimate Multisite, kunyanya kuti zvibatsire kuti vave vachitenda zvinogona kutamba - kuita nzira yakare dzinogara dzakakwana.
 
-#### Case 2: Niche Provider (Mudzidzisi weNiche)
+#### Case 2: Niche Provider (Mudzidzisi weNiche) {#use-cases}
 
 Kuna chibvumirano chakare chinoti, “rita zvinhu zvimwe uye rita zvinhu zvakanaka.” Kune vose vanonakira (specialists), izvi rinoreva kuita product kana service yakachengetedza pfungwa imwe chete.
 
@@ -169,7 +169,7 @@ Kune provider wesites neservices yeNiche, izvi rinopa zvinokosha zvisingatitirwa
 
 Kuti zvinhu zvakakosha kuti zvinobva zvichine kuitika, kunyangwe zvinogona kuenda ne _subdirectory_ kana _subdomain_ configurations. Mune iye, nzira dzinogona kubva dzinogona kuenda ne sertifiketi ya SSL yakasiya (SSL certificate) yakanaka kuti dziri kuita _subdirectories_, kana sertifiketi ya wildcard SSL kuti dziri kuita _subdomains_.
 
-#### Case 3: WordPress Web Hosting
+#### Case 3: WordPress Web Hosting {#case-1-an-agency}
 
 Kune nzira dzakawanda dzinogona kuita hosting kweWordPress sites, asi zvakasiya kuitika kunenge kune kuratidza web space kune mwana wemakore neWordPress yakanaka. Izvi zvinhu zvinogona kuenda nekuti zvakawanda zvinoda kuita kuti zvishandane kuti zvipa zvinhu zvine maana zvibereki.
 
@@ -181,11 +181,11 @@ Kune developers vanoita integration neUltimate Multisite, inozivisa solution ine
 
 Nekuti hauna kutarisirwa kwemafungiro akawanda ek plugins uye licenses dzakare, Ultimate Multisite inopa solution inine zvinhu zvakawanda uye inogona kuita zvinhu zvakasiyana neWix, Squarespace, WordPress.com uye zvinhu zvakawanda.
 
-### Architecture Considerations
+### Architecture Considerations {#case-2-niche-provider}
 
 Kuti hauna guide yakawanda, izvi zvinogona kuteerera kuti vana vanhu vone chine chine (guidance) kuti vave vachigadzira teknolojia dzine kugona kuita Ultimate Multisite installation.
 
-#### Shared vs. Dedicated Hosting
+#### Shared vs. Dedicated Hosting {#case-3-wordpress-web-hosting}
 
 Kuti, pane pane hosting providers haina vese. Vese vanhu kuno vashandi zvinoreva kuita server density yakanyanya. Hosting providers vachidzidzera kune kukura revenue nekuita server density yakanyanya. Nguva iye, Ultimate Multisite yako inogona kuva chete chine mupfungwa wese we sites zvakawanda pamwe chete server.
 
@@ -199,7 +199,7 @@ Ultimate Multisite inoziva kuti inogona kushanda nemabasa akawanda anobva hostin
 
 Kuti usazve nemazwi anobva hosting providers vese vachine zvakodzera uye zvinoreva kuti ndikubatsira kuita set-up dzavo, ndichida ukubvura documentation ye Compatible Providers.
 
-#### Performance Considerations
+#### Performance Considerations {#architecture-considerations}
 
 Ultimate Multisite hairi application inosvika kasi, asi inosvika zvakanyanya. Iyi inosvika kunge yakasi, asi inogona kushanda chete zvakaita kuti inoziva zvakaita infrastructure uye inogona kuita chete chine access yayo.
 
@@ -215,7 +215,7 @@ Kuti unzwisisa iwe panguva iyi, unogona kuita iye nekuvaka server (upgrading the
 
 Ultimate Multisite inosanganisira Cloudflare add-on inoshandiswa neye network administrators kuti vakaipa iwe zvinhu hokuva pachikoro cheCloudflare uye kuita zvinhu zvakawanda pamusoro pe caching, DNS hosting, SSL certificates uye security mechanisms.
 
-#### Backups
+#### Backups {#shared-vs-dedicated-hosting}
 
 Unogona kundiwa vanhu 50 kuti avashandise mhinduro pamusoro pe backups uye utange vanenge vachigona kuita zvinangwa dzakasiyi dze backup. Mhinduro inosvika panguva iyi ndiyo: inoshandiswa zvinhu zvakawanda, kunge kune mapenyu anotsanangura backups akawanda.
 
@@ -225,7 +225,7 @@ Kuti tiri kuita iwe munzvimbo iyi, tiri kukwirira kuti backup ndiyo inopai copy 
 
 Nekuti tiri kuona zvakanaka iwe kune kuratidza backups uye chii chine kuenda zvakanaka kwauri environment, kunoita zvakasiyana nekuvimbisa kweprovider kuti vone zvinhu izvi. Asi, kubva pamusoro pezvinhu zvakakosha kupfuura zvinotariswa kune zvinhu zvakasiyana, iwe doro raunogona kuita zvishanduro zvakawanda.
 
-#### Snapshots
+#### Snapshots {#performance-considerations}
 
 Snapshots ndiyo nzira yakasiyana yekupai backups nekuti ndiyo yakapfuura, inosina kunge kuratidza zvakawanda (kuti unenge uchida kureva), uye "inogona kuenda". Asi, inoda kubatsirwa kweprovider yako uye inogona kutarisirwa pakati nemunhu anopara network administrator. Provider kadziro dzakasiyana dziri mumitambo yedu yakaita kuti zvinhu izvi zvinoreva hazvazovashandiswa nenetwork administrator.
 
@@ -233,7 +233,7 @@ Kuti backups zvinotenderera files uye databases, snapshot inotenderera disk yese
 
 Snapshots dzinogona kuva nekuita chiito chekuti hosting provider inenge inoda kukosha, asi ndiyo insurance policy yekuti usina kunge kuenda nguva dzose.
 
-#### External Scripts
+#### External Scripts {#backups}
 
 Ndinowanikwa kune scripts uye solutions dzakare kuti zivaka WordPress uye MySQL resources uye izviro zvandinogona kutenderwa kwazvo kwa Ultimate Multisite nekuti inoshandisa WordPress filesystem uye database. Saka solution inotanga backups ye WordPress sites inogona kuita zvinhu zvose zinoda Ultimate Multisite.
 
@@ -241,7 +241,7 @@ Hau tinokubatsira script yese kubva kune yese, asi chakanaka chete ndiri kuti mu
 
 Kuti kunzwisiseki kuti munenge unoziva, izvi scripts zvinoreva kuti dzichitamba system load, uye zvinozvaitwa kuti munenge unoziva.
 
-#### Plugins
+#### Plugins {#snapshots}
 
 Mune WordPress haichiri kunge kuita zvinhu kubva kune plugin, uye kana usina chokwadi kwekuita external scripts, saka perhaps plugin ndiyo option inotenderwa yakare.
 
@@ -249,7 +249,7 @@ Kunge plugins vese nekuone zvinhu uye zvinoreva, asi zvakanyanya inogadzira nguv
 
 Mungazvikira plugin yako, ndichida uone kuti inoziva kuti inosimbisa multisite. Nekuti inosimbisa inosimbisa, unogona kuona kuti kuna load yakapfuura (temporary load) pane server chiri kunyangwe process iyi inosimbisa inosimba.
 
-#### Domain uye SSL
+#### Domain uye SSL {#external-scripts}
 
 Kune zvakawanda zvinobva kubva pamusoro pe domain names munzira ya multisite _subdomain_. Chii chinogona kuita kune vadhiri ve network, ndiri kuti vanoreva wildcard DNS entries.
 
@@ -271,7 +271,7 @@ Pfungwa, kuive nemunhu vangeva Cloudflare ndiyo nzira yakapfuura. Mukwadi anoda 
 
 Kutare nemunhu wese, zvinhu izvi dzinoda kutenderwa, uye iwo ndivo vanoda kutaura nezvezvine vavo. Izvi ndiyo chii chinoda kuwedzera kuti muna zvinhu zvakasiyana-nyanya.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Zvinosimbisa kuti unoda plugins dzose kuti uwanise kufungadzwa (functionality) kwemunhu wako kana siti renetwe. Pane zvinhu zvose zvinogona kushanda neWordPress Multisite uye Ultimate Multisite? Izvi zvinhu zvichingova.
 

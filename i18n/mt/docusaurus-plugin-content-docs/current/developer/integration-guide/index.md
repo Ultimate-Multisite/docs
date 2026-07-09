@@ -3,13 +3,13 @@ title: Gwida għall-Integrazzjoni
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gwida għall-Integrazzjoni
+# Gwida għall-Integrazzjoni {#integration-guide}
 
 Din il-gwida tkopri mudelli komuni ta' integrazzjoni ma' Ultimate Multisite, inkluż il-konnessjoni ma' servizzi esterni, il-bini ta' gateways tal-ħlas personalizzati, u l-immaniġġjar ta' webhooks.
 
 Għal infrastruttura iżolata ta' tenant, ara [Integrazzjoni Multi-Tenancy](./multi-tenancy) għal gwida dwar bootstrap ta' tenant sovran, verifika tal-migrazzjoni, SSO, u teardown.
 
-## Integrazzjoni CRM
+## Integrazzjoni CRM {#crm-integration}
 
 Issinkronizza d-data tal-klijenti mas-CRM tiegħek meta klijenti ġodda jirreġistraw:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrazzjoni tal-Analitika
+## Integrazzjoni tal-Analitika {#analytics-integration}
 
 Segwi avvenimenti kummerċjali ewlenin matul iċ-ċiklu tal-ħajja tal-klijent:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Passi li Jmiss
+## Passi li Jmiss {#next-steps}
 
 - [Żvilupp ta' Gateway Personalizzat](./custom-gateway) — Ibni l-gateway tal-ħlas tiegħek stess
 - [Immaniġġjar ta' Webhooks](./webhooks) — Oħloq punti ta' tmiem tal-webhook personalizzati

@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Uwubaka Urubuga wa AI
+# Uwubaka Urubuga wa AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Ibisabwa
+## Ibisabwa {#requirements}
 
 - WordPress 5.3 cyangwa irenzeho
 - PHP 7.4 cyangwa irenzeho
 - icomekwaho rya Multisite Ultimate (rikora)
 
-## Kwinjiza
+## Kwinjiza {#installation}
 
 1. Ohereza amadosiye y’inyongera muri directory yawe ya `/wp-content/plugins/`
 2. Koresha icomekwaho unyuze muri menu ya 'Ibicomekwaho' muri WordPress
 3. Tunganya igenamiterere ry’inyongera mu buyobozi bwa network
 
-## Iterambere
+## Iterambere {#development}
 
-### Gutegura
+### Gutegura {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Imiterere y’Umushinga
+### Imiterere y’Umushinga {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Amategeko yo kuvugurura code
 ```
 
-### Kugerageza
+### Kugerageza {#testing}
 
 Iyi nyongera irimo urwego rwuzuye rwo kugerageza:
 
@@ -79,44 +79,44 @@ Iyi nyongera irimo urwego rwuzuye rwo kugerageza:
 - **Ubwishingizi bw’Ibizamini**: Byagenwe gukurikirana code coverage
 - **Kugerageza Multisite**: Ibizamini bikorerwa mu bidukikije bya multisite
 
-### Amahame ya Code
+### Amahame ya Code {#code-standards}
 
 - **Amahame ya Code ya WordPress**: Ashyirwa mu bikorwa hakoreshejwe PHPCS
 - **Guhuza na PHP 7.4+**: Ibiranga PHP bigezweho birashyigikiwe
 - **Isesengura Ridahinduka**: Guhuza PHPStan kugira ngo hagenzurwe ubwoko
 - **Kuvugurura Code**: Amategeko ya Rector yo kuzamura PHP
 
-### Sisitemu yo Kubaka
+### Sisitemu yo Kubaka {#build-system}
 
 - **Gutunganya Umutungo**: Kugabanya ingano y’amadosiye ya CSS/JS
 - **Ubusemuzi**: Gukora dosiye ya POT
 - **Gupakira**: Gukora archive yo gukwirakwiza
 - **Uburyo bw’Iterambere**: Umutungo utagabanyijwe mu ngano wo gukemura amakosa
 
-## Iboneza
+## Iboneza {#configuration}
 
 Iyi nyongera ishyigikira amahitamo atandukanye y’iboneza aboneka binyuze mu rubuga rw’ubuyobozi bwa network.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Itangizwa nyuma yo gutangiza inyongera
 - `ultimate-multisite-ai-site-builder_loaded` - Itangizwa nyuma y’uko amadosiye yose y’inyongera amaze gutangizwa
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Hindura igenamiterere ry’inyongera
 - `ultimate-multisite-ai-site-builder_enabled` - Simbura imimerere yo gufungura/gufunga inyongera
 
-## Uruhushya
+## Uruhushya {#license}
 
 Iyi nyongera ifite uruhushya rwa GPL v3 cyangwa uruyikurikira.
 
-## Ubufasha
+## Ubufasha {#support}
 
 Ku bufasha n’inyandiko, sura [MultisiteUltimate.com](https://multisiteultimate.com)
-## Amateka y’Impinduka
+## Amateka y’Impinduka {#changelog}
 
 - Verisiyo 1.0.1 (2025-09-28): hindura prefix ibe ultimate-multisite; vugurura text domain; kuzamura verisiyo.
 

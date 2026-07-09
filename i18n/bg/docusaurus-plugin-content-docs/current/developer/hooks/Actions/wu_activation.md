@@ -4,14 +4,14 @@ title: Действие - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Действие: wu_activation
+# Действие: wu_activation {#action-wuactivation}
 
 Позволява на други части от плагина да прикрепят своите функции, които трябва да се изпълнят при активиране.
 
-### От версия
+### От версия {#since}
 
 - 1.9.6
 
-### Източник
+### Източник {#source}
 
 Дефинирано в [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L91) на линия 91.

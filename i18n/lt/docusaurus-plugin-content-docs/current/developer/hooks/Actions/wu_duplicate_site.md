@@ -4,13 +4,13 @@ title: Veiksmas - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Veiksmas: wu_duplicate_site
+# Veiksmas: wu_duplicate_site {#action-wuduplicatesite}
 
 Leidžia kūrėjams prisijungti po to, kai įvyksta svetainės dubliavimas.
 
-### Nuo
+### Nuo {#since}
 
 - 1.9.4
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/helpers/class-site-duplicator.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/class-site-duplicator.php#L268) 268 eilutėje

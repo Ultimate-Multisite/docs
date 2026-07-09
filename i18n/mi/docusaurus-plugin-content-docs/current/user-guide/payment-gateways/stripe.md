@@ -3,19 +3,19 @@ title: Whakawhanainga Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Whakawhanaungatanga me te Gateway o Stripe (v2)
+# Whakawhanaungatanga me te Gateway o Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**Tohutohu WAIPA: Ko tēnei litanau e tino whakamahinga i Ultimate Multisite v2.x.**_
 
 Ko te mea, he taea ana koe ki te ativa upaere pai waenga i au pito i te whakataki o te Stripe, Stripe Checkout, PayPal me Manual i te puta mai o ngā whakaritenga o te waiata (payment settings) o tātou. I tēnei litanau, ka whakaatu atu tātou i te mea he taea ai te whai wāhi ana ki **Stripe**.
 
-## Whakawhanaungatanga Stripe
+## Whakawhanaungatanga Stripe {#enabling-stripe}
 
 Kia whakawhanaunga i te Stripe mōna gateway o waiata e pātaki ana i runga i tō whenua (network), pono ki te **Ultimate Multisite > Settings > Payments** ā, whakaatu i te toggle (switch) i runga i te **Stripe** me te **Stripe Checkout** i te whakataki o ngā Active Payment Gateways.
 
 ![Whakawhanaungatanga Stripe i ngā gateway o waiata e pātaki ana](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Ko tēnei wahi e whakaatu i te wāhi ki te whiriwhiri te nambere o te credit card i roto i te checkout.
 
@@ -47,7 +47,7 @@ Whakawatea te wāhi noa (value) mai i te **Publishable key** me te **Secret key*
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Whakawhanainga Stripe Webhook
+## Whakawhanainga Stripe Webhook {#setting-up-stripe-webhook}
 
 Ka tōnga i Stripe ngā webhook events (ngā pēpi whakaahu) ki te Ultimate Multisite ko te wāhi e whakahau ana i te mea e tūnga ana i runga i **koinei te account o koe i Stripe**.
 

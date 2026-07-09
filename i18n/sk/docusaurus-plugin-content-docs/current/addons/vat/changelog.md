@@ -3,7 +3,7 @@ title: Zoznam zmien DPH
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Zoznam zmien DPH
+# Zoznam zmien DPH {#vat-changelog}
 
 Verzia 1.0.7 - Vydané 2026-02-03
 

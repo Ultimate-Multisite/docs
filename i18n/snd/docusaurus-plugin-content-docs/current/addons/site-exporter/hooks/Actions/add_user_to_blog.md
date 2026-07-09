@@ -4,11 +4,11 @@ title: عمل - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# عمل: add_user_to_blog
+# عمل: add_user_to_blog {#action-addusertoblog}
 
 استعمال ڪندڙ کي سائيٽ ۾ شامل ڪرڻ کان فوراً پوءِ هلي ٿو.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 | $role | `string` | استعمال ڪندڙ جو ڪردار. |
 | $blog_id | `int` | بلاگ ID. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - MU: MU
-### ذريعو
+### ذريعو {#source}
 
 [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) ۾ قطار 174 تي بيان ٿيل آهي.

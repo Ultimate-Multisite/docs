@@ -4,11 +4,11 @@ title: Шүүлтүүр - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Шүүлтүүр: wu_post_count
+# Шүүлтүүр: wu_post_count {#filter-wupostcount}
 
 Plugin хөгжүүлэгчдэд нийт тоог өөрчлөх боломж олгоно
 
-## Параметрүүд
+## Параметрүүд {#parameters}
 
 | Нэр | Төрөл | Тайлбар |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Plugin хөгжүүлэгчдэд нийт тоог өөрчлөх боломж 
 | $post_counts | `object` | wp_count_posts функцээс буцаасан WordPress объект |
 | $post_type | `string` | Нийтлэлийн төрлийн slug |
 
-### Эхэлсэн хувилбар
+### Эхэлсэн хувилбар {#since}
 
 - 1.9.1
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136)-д 136-р мөрөнд тодорхойлсон
 
 
-## Буцаах утга
+## Буцаах утга {#returns}
 Шинэ нийт тоо

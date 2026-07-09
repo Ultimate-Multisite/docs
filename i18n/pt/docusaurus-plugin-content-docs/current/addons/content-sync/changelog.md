@@ -3,9 +3,9 @@ title: Registo de alterações da Sincronização de conteúdo
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Registo de alterações do Content Sync
+# Registo de alterações do Content Sync {#content-sync-changelog}
 
-### Versão 1.1.0 - Lançada em 2025-12-31
+### Versão 1.1.0 - Lançada em 2025-12-31 {#version-110---released-on-2025-12-31}
 * Novo: Suporte para sincronizar todos os tipos de publicações (publicações, páginas, tipos de publicação personalizados)
 * Novo: Filtragem por tipo de publicação no passo de seleção de conteúdo
 * Novo: Passo de seleção do site de origem - sincronize a partir de qualquer site, não apenas do site principal
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Alterado: Passo "Selecionar modelos" renomeado para "Selecionar dados"
 * Melhorado: O código específico do Elementor agora só é executado para o tipo de publicação elementor_library
 
-### Versão 1.0.0 - Lançada em 2025-12-19
+### Versão 1.0.0 - Lançada em 2025-12-19 {#version-100---released-on-2025-12-19}
 * Lançamento inicial
 * Assistente em vários passos para seleção de modelo e site
 * Processamento em lote com feedback de progresso em tempo real

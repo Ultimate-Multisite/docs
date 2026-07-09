@@ -3,18 +3,18 @@ title: Ho lula le Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Le Tšhoboho le Cloudways Integration
+# Le Tšhoboho le Cloudways Integration {#cloudways-integration}
 
-## Le Letsatsi la Morero (Overview)
+## Le Letsatsi la Morero (Overview) {#overview}
 Cloudways ke platform ya hosting e ebeletse (managed cloud hosting platform) e e tlhola ka sefapeng sa WordPress ka sefapeng sa cloud o fapaneng, ka DigitalOcean, AWS, Google Cloud, le ba bang. Ho na le ho fetoga haholo (automatic domain syncing) le ho fetoga certificate ya SSL molao (SSL certificate management) ho a re Ultimate Multisite le Cloudways.
 
-## Boitshwaro (Features)
+## Boitshwaro (Features) {#features}
 - Ho fetoga haholo la domain (Automatic domain syncing)
 - Ho fetoga certificate ya SSL (SSL certificate management)
 - Ho tlhola domains e fapaneng (Support for extra domains)
 - Ho tsamaisa DNS ho certificates ya SSL (DNS validation for SSL certificates)
 
-## Boitshwaro (Requirements)
+## Boitshwaro (Requirements) {#requirements}
 Ho batla le fa constants tse di tla fetoga mo file ya `wp-config.php` ya hau:
 
 ```php
@@ -30,16 +30,16 @@ Ho na le ho fetoga (Optionally), o ka fetoga:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Boitshwaro la Ho Setela (Setup Instructions)
+## Boitshwaro la Ho Setela (Setup Instructions) {#setup-instructions}
 
-### 1. Get Your Cloudways API Credentials
+### 1. Get Your Cloudways API Credentials {#1-get-your-cloudways-api-credentials}
 
 1. Leola mo dashboard ya Cloudways ya hau
 2. Laela "Account" > "API Keys"
 3. Fetoga API key ha o na le kae
 4. Kopya email ya hau le API key
 
-### 2. Get Your Server and Application IDs
+### 2. Get Your Server and Application IDs {#2-get-your-server-and-application-ids}
 
 1. Mo dashboard ya Cloudways ya hau, laela "Servers"
 2. Select server se sebeletse WordPress multisite ya hau
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Laela "Applications" le select application ya WordPress ya hau
 5. App ID o tla ba mo URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Add Constants to wp-config.php
+### 3. Add Constants to wp-config.php {#3-add-constants-to-wp-configphp}
 
 Na constants tse di fetoga mo file ya `wp-config.php` ya hau:
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 **A re ntlha** `*.your-network.com` (kgotla lefa la sub-domain ya setšhabeng sa lona) mo `WU_CLOUDWAYS_EXTRA_DOMAINS`. Re bona [Important — wildcard SSL pitfall](#important--wildcard-ssl-pitfall) kaofela gore o ka nngwe a re ntlha certificates tsa SSL tse di tswang mo setšhabeng sa mmele.
 :::
 
-### 4. Baile le Integration (Integration)
+### 4. Baile le Integration (Integration) {#4-enable-the-integration}
 
 1. Mo admin ya WordPress, fofa Ultimate Multisite > Settings
 2. Fofa tab ya "Domain Mapping" (Go ba lefa la domain)
@@ -76,9 +76,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Baile le integration ya Cloudways
 5. Fofa "Save Changes" (Baile di fetoga)
 
-## E re e tswang kae
+## E re e tswang kae {#how-it-works}
 
-### Domain Syncing (Ho tsamaisa domain)
+### Domain Syncing (Ho tsamaisa domain) {#domain-syncing}
 
 Pula domain o fihla mo Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Note: Cloudways API e hloka ho tšoa list efe ka nako e nngwe, e ka fela go ba l
 
 Ho fana le fa'aopo (integration) o le a tatou e te fa'amatalaga, o le a te talanoina **standard** (e le wildcard) Let's Encrypt mulao mai i Cloudways. O le a te fa'amatalaga wildcard pattern i `WU_CLOUDWAYS_EXTRA_DOMAINS`, o le a te fa'aopo le leading `*.` e fa'atatau i le SSL request — o le wildcard itu po'o se fa'aopo mai lona. E le a fa'aopo la'u fa'aopo lea e fa'amatalaga lea. O le a te fa'aopo fa'aopo wildcard certificate i Cloudways, o le a te fa'atatau ona fa'aopo manuia (manual), ae o le a te fa'atatau lea e fa'atatau ona fa'aopo Let's Encrypt mo oina-o-tua custom domains (fa'amatalaga o le pitfall i le tasi).
 
-## Extra Domains
+## Extra Domains {#ssl-certificate-management}
 
 O le constant `WU_CLOUDWAYS_EXTRA_DOMAINS` o lo'o mafai ai i ou fa'amatalaga domain e fa'aopo fa'aopo **external** e te fa'atatau ona fa'aopo i le aliases list o le application Cloudways. Fa'aopo lea i:
 
@@ -100,13 +100,13 @@ O le constant `WU_CLOUDWAYS_EXTRA_DOMAINS` o lo'o mafai ai i ou fa'amatalaga dom
 
 **E le a fa'aopo lea constant lea mo wildcard subdomain o la'u network (e.g. `*.your-network.com`).** Fa'amatalaga o le pitfall SSL wildcard i le tasi.
 
-## Important — Wildcard SSL Pitfall
+## Important — Wildcard SSL Pitfall {#extra-domains}
 
 O se fa'atatau e taua lava pe a tatou fa'aopo le setup default o Cloudways, o lo'o fa'aopo wildcard e pei o `*.your-network.com` i `WU_CLOUDWAYS_EXTRA_DOMAINS`, po'o o le a te fa'atatau ona fa'aopo wildcard SSL certificate i Cloudways mo lona wildcard.
 
 **O le a te fa'amatalaga lea, o le a Cloudways e fa'atatau ona fa'aopo Let's Encrypt certificates mo oina-o-tua custom domains e fa'aopo Ultimate Multisite.** O le a Cloudways fa'atatau ona SSL certificate i le application i luga o se tasi, po'o o le a wildcard certificate e fa'aopo i le application e fa'atatau ona fa'aopo Let's Encrypt mo oina-o-tua domains e te fa'aopo lea.
 
-### Recommended Cloudways SSL setup for an Ultimate Multisite network
+### Recommended Cloudways SSL setup for an Ultimate Multisite network {#important--wildcard-ssl-pitfall}
 
 1. Morago ka tabeng **SSL Certificate** ea tsoalo (standard) Let's Encrypt certificate, eona e fana fa `your-network.com` le `www.your-network.com` pele — **e se ke wildcard**.
 
@@ -116,14 +116,14 @@ O se fa'atatau e taua lava pe a tatou fa'aopo le setup default o Cloudways, o lo
 
 Ha seba domains ea hau ea per-tenant e le le le le le le le le le le le le le le le le le le le le le le le le le le le le le le le
 
-### Masimo a Sebopeho sa SSL Certificate
+### Masimo a Sebopeho sa SSL Certificate {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 - Cloudways e hloka hore domain ho ba le records ea DNS tse ba bonolo tse ba fanaang ka server ea hau haholo hore a bula SSL certificates.
 - Ho hlahloba (integration) e ba le bona records ea DNS haholo haholo hore e bula SSL certificates.
 - Ha SSL certificates a seng a bula, re le ho tsamaea hore domain ea hau e le e fanaang ka IP address ea server ea hau.
 - **Domain e fetileng e ntse e le teng without SSL?** Re le ho tsamaea tabeng ea SSL Certificate ea application ea Cloudways. Ha wildcard certificate (e fetileng manually, kapa e ba le e fanaang `*.your-network.com`) e le e le teng, Cloudways e tla seng bula Let's Encrypt certificates ho domain tse fetileng ka tsela e fetileng. Se fetola le certificate ea Let's Encrypt e le e le sebopeho (standard) e fanaang haholo hore a domain ea network (`your-network.com`, `www.your-network.com`) le sefetola sebopeho se fetileng se ba teng ka `WU_CLOUDWAYS_EXTRA_DOMAINS`. Ha re tloha ho bula mapping ea domain (or tsamaea ho e le e le sefalo) le integration e tla bula certificates tse ba fetileng ka domain.
 
-### Domain E Ntse E Le Fetileng
+### Domain E Ntse E Le Fetileng {#troubleshooting}
 - Re le ho tsamaea logs ea Ultimate Multisite ho bona messages ea botlase.
 - Re le ho tloha hore domain e le e le fetileng ka Cloudways.
 - Re le ho seba hore plan ea Cloudways ea hau e le e fanaang le sefalo sa domains o tla ba le fetileng.

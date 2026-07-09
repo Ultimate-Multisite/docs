@@ -3,11 +3,11 @@ title: Referenza tas-settings
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenza tas-Settings
+# Referenza tas-Settings {#settings-reference}
 
 Din il-paġna ssegwi settings li jaffettwaw l-amministrazzjoni ta’ kuljum u bidliet reċenti fl-imġiba f’Ultimate Multisite.
 
-## Għażliet Oħra
+## Għażliet Oħra {#other-options}
 
 Iż-żona **Għażliet Oħra** tidher taħt **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Iż-żona **Għażliet Oħra** tidher taħt **Ultimate Multisite > Settings > Lo
 |---|---|
 | **Enable Jumper** | Turi l-għodda ta’ navigazzjoni rapida Jumper fiż-żona tal-amministratur. Użaha biex taqbeż direttament għall-iskrins ta’ Ultimate Multisite, oġġetti tan-network, u destinazzjonijiet tal-amministratur appoġġjati. Iddiżattivaha jekk ma tridx li dan is-shortcut ikun viżibbli. |
 
-## Rappurtar ta’ żbalji u telemetrija
+## Rappurtar ta’ żbalji u telemetrija {#error-reporting-and-telemetry}
 
 Is-setting preċedenti ta’ opt-in għar-rappurtar ta’ żbalji tneħħa mill-paġna tas-settings. It-telemetrija anonima hija ddiżattivata u m’hemm l-ebda toggle tal-UI biex tattivaha.
 
 Jekk iżżomm runbooks interni jew screenshots għall-paġna tas-settings, neħħi referenzi għall-field il-qadim ta’ opt-in għar-rappurtar ta’ żbalji sabiex l-amministraturi ma jfittxux setting li m’għadux preżenti.
 
-## Settings ta’ Import/Export
+## Settings ta’ Import/Export {#importexport-settings}
 
 It-tab tas-settings **Import/Export** tiddeskrivi liema settings tikkontrolla u torbot direttament ma’ **Ultimate Multisite > Site Export** għall-arkivji tas-sit u tan-network. Uża t-tab tas-settings għall-konfigurazzjoni ta’ import/export, uża **Tools > Export & Import** għall-workflow ta’ esportazzjoni/importazzjoni għal sit wieħed, u uża l-għodda Site Export meta jkollok bżonn arkivju sħiħ ta’ Network Export.
 
-## Twissija dwar il-bilanċ ta’ Domain Seller HostAfrica
+## Twissija dwar il-bilanċ ta’ Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Meta l-addon Domain Seller ikun imqabbad ma’ HostAfrica, l-amministraturi tan-network issa jaraw twissija li tista’ titwarrab dwar bilanċ baxx meta l-bilanċ tal-account tar-reseller ikun baxx wisq għal proċessar affidabbli ta’ reġistrazzjoni jew tiġdid ta’ domains.
 
 Ittratta dan l-avviż bħala twissija operattiva: żid il-bilanċ tar-reseller HostAfrica qabel ma taċċetta aktar reġistrazzjonijiet ta’ domains imħallsa, imbagħad erġa’ lura għas-settings ta’ Domain Seller jew għall-iskrin tal-monitoraġġ tad-domains biex tikkonferma li r-reġistrazzjonijiet u t-tiġdid jistgħu jkomplu b’mod normali.
 
-## Settings tal-connectors tal-fornituri tal-AI
+## Settings tal-connectors tal-fornituri tal-AI {#ai-provider-connector-settings}
 
 Is-settings tal-connectors tal-fornituri tal-AI issa jesponu biss il-pools ta’ accounts OAuth appoġġjati:
 

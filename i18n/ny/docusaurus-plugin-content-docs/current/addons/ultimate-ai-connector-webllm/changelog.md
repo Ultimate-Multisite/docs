@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Mbiri ya Zosintha
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector ya WebLLM Changelog
+# Ultimate AI Connector ya WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Mtundu 1.1.0 — Yatulutsidwa pa 2026-04-09
+## Mtundu 1.1.0 — Yatulutsidwa pa 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Chatsopano: Chida cha macheza choyandama chokhala ndi chizindikiro cha mkhalidwe wa admin-bar — wogwiritsa ntchito aliyense amene walowa akhoza kufunsa LLM ya mbali ya browser mwachindunji kuchokera kutsogolo.
 * Chatsopano: SharedWorker runtime — engine ya MLC tsopano imayenda mu SharedWorker kotero ma tab angapo amagawana session imodzi ya GPU m'malo momenyana nayo.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Kukonza: Kulumikiza WebLLM mu filter ya wpai_preferred_text_models kuti mbali ya AI Experiments itumize ku engine ya browser model ikakonzedwa.
 * Zakonzedwa bwino: Kukonza cache-busting, content normalisation, ndi hardware-reference komwe kunawonekera pa kuyesa kwa end-to-end.
 
-## Mtundu 1.0.0 — Kutulutsidwa Koyamba
+## Mtundu 1.0.0 — Kutulutsidwa Koyamba {#version-100--initial-release}

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Pir-kirêdari
+# Pir-kirêdari {#multi-tenancy}
 
 Bin-malperan li ser server û danegehan belav bike ji bo performans û ewlehiyê
 
-## Nîşanên derketina guhertoya 1.2.0
+## Nîşanên derketina guhertoya 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 bingeha kirêdara serbixwe zêde dike ji bo herikên xebata veqetandina hilberînê:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 bingeha kirêdara serbixwe zêde dike ji bo herikên xebata 
 
 Ji bo [herika xebata koçberiya serbixwe](/user-guide/getting-started/sovereign-migration-workflow), [veqetandina pir-kirêdariyê](/user-guide/configuration/multi-tenancy-isolation), û [karên kirêdara serbixwe](/user-guide/administration/sovereign-tenant-operations) rêberên bikarhênerê bibîne.
 
-## Pêdivî
+## Pêdivî {#requirements}
 
 - WordPress 5.3 an bilindtir
 - PHP 7.4 an bilindtir
 - Multisite Ultimate plugin (çalak)
 
-## Sazkirin
+## Sazkirin {#installation}
 
 1. Pelên pêvekê bar bike nav peldanka xwe ya `/wp-content/plugins/`
 2. Pêvekê bi menuya 'Plugins' di WordPress de çalak bike
 3. Mîhengên pêvekê di rêveberiya torê de saz bike
 
-## Pêşvebirin
+## Pêşvebirin {#development}
 
-### Sazkirin
+### Sazkirin {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Avahiya Projeyê
+### Avahiya Projeyê {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Rêgezên nûjenkirina kodê
 ```
 
-### Testkirin
+### Testkirin {#testing}
 
 Pêvek çarçoveyeke testkirinê ya berfireh dihewîne:
 
@@ -93,54 +93,54 @@ Pêvek çarçoveyeke testkirinê ya berfireh dihewîne:
 - **Bergirtina Testê**: Ji bo şopandina bergirtina kodê hatî mîhengkirin
 - **Testkirina Multisite**: Test di jîngeha multisite de dimeşin
 
-### Standardên Kodê
+### Standardên Kodê {#code-standards}
 
 - **Standardên Kodnivîsîna WordPress**: Bi PHPCS têne ferzkirin
 - **Lihevhatina PHP 7.4+**: Taybetiyên nûjen ên PHP têne piştgirîkirin
 - **Analîza Statîk**: Yekgirtina PHPStan ji bo kontrolkirina cureyan
 - **Nûjenkirina Kodê**: Rêgezên Rector ji bo bilindkirinên PHP
 
-### Pergala Avakirinê
+### Pergala Avakirinê {#build-system}
 
 - **Pêvajokirina Heyberan**: Biçûkkirin ji bo pelên CSS/JS
 - **Werger**: Çêkirina pela POT
 - **Pakêt kirin**: Çêkirina arşîvê ji bo belavkirinê
 - **Moda Pêşvebirinê**: Heyberên nebiçûkkirî ji bo debugkirinê
 
-## Veavakirin
+## Veavakirin {#configuration}
 
 Pêvek gelek vebijarkên veavakirinê piştgirî dike ku bi rûyê rêveberiya torê dikarin werin gihîştin.
 
-### Veavakirina kirêdara serbixwe
+### Veavakirina kirêdara serbixwe {#sovereign-tenant-configuration}
 
 Ji bo kirêdarên serbixwe, berî rêkirina trafîkê ber bi kirêdarê ve, danegeha kirêdarê, kokê pergala pelan, girêdana hosta danegehê, û kapasîteya hostê saz bike. Piştrastkirina koçberiyê piştî her guhertinekê bimeşîne ku bandorê li bawernameyên danegehê, girêdana hostê, rêkirin, an amadekirina bikarhêneran dike.
 
 `localhost` tenê dema ku dem-çalakiya kirêdarê û destûrên danegehê gihîştina socket-a herêmî an heman makîneyê hêvî dikin bi kar bîne. `127.0.0.1` an navê hosta xizmetê bi kar bîne dema ku ew hosta destûrê ye ku ji aliyê peydakera te ve hatî veavakirin.
 
-### Kapasîteya Hostinger
+### Kapasîteya Hostinger {#hostinger-capability}
 
 Kapasîteya Hostinger pir-kirêdariyê bi token-a hevpar a yekgirtina Hostinger dixebite. Berî piştrastkirinê piştrast bike ku domain di hPanel de heye, DNS ber bi Account-a Hostinger ve nîşan dide, û mîhengên danegeha kirêdarê bi hPanel re li hev dikin.
 
-## Hooks û Filters
+## Hooks û Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Piştî destpêkirina pêvekê tê şewitandin
 - `ultimate-multisite-addon-template_loaded` - Piştî barkirina hemû pelên pêvekê tê şewitandin
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Mîhengên pêvekê biguherîne
 - `ultimate-multisite-addon-template_enabled` - Rewşa çalak/neçalak a pêvekê derbas bike
 
-## Lîsans
+## Lîsans {#license}
 
 Ev pêvek di bin GPL v3 an paşê de hatiye lîsanskirin.
 
-## Piştgirî
+## Piştgirî {#support}
 
 Ji bo piştgirî û belgekirinê, biçin [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Guhertoya 1.2.0 (2026-06-03): têketina xweser a kirêdarê ya bê-dewlet, kapasîteya Hostinger pir-kirêdariyê, veqetandina danegehê û pergala pelan a ji bo her bin-malperê, dergehên piştrastkirina koçberiya serbixwe, başkirinên destpêkirina kirêdarê/nivîskara danegehê, girêdana hosta MySQL ya dikare were mîhengkirin, û rakirina serbixwe ya ewletir zêde bike.
 

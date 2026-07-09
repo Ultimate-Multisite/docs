@@ -3,7 +3,7 @@ title: Rujukan Kamampuhan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Rujukan Abilities
+# Rujukan Abilities {#abilities-reference}
 
 Abilities nyaéta tindakan atomik anu bisa dipaké ku Gratis AI Agent dina instalasi WordPress anjeun. Unggal ability mangrupa kelas PHP anu kadaptar sarta nembongkeun skéma JSON — agent maca skéma ieu dina runtime pikeun ngartos parameter naon anu diperlukeun jeung naon anu dipulangkeun ku ability éta.
 
@@ -11,11 +11,11 @@ Kaca ieu ngadokuméntasikeun sakabéh abilities anu disertakeun jeung Gratis AI 
 
 ---
 
-## Custom Post Types
+## Custom Post Types {#custom-post-types}
 
 Abilities ieu ngatur custom post types (CPTs) anu didaptarkeun ngaliwatan agent. Pendaptaran disimpen kana tabel options WordPress supaya tetep aya sanajan plugin dinonaktipkeun jeung diaktipkeun deui.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Ngadaptarkeun custom post type anyar.
 
@@ -50,7 +50,7 @@ Ngadaptarkeun custom post type anyar.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Mulangkeun sakabéh custom post types anu didaptarkeun ku agent.
 
@@ -73,7 +73,7 @@ Mulangkeun sakabéh custom post types anu didaptarkeun ku agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Ngabolaykeun pendaptaran custom post type anu saméméhna didaptarkeun ku agent. Post anu geus aya tina tipe éta tetep aya dina database tapi henteu deui bisa diaksés ngaliwatan post type éta.
 
@@ -87,11 +87,11 @@ Ngabolaykeun pendaptaran custom post type anu saméméhna didaptarkeun ku agent.
 
 ---
 
-## Custom Taxonomies
+## Custom Taxonomies {#custom-taxonomies}
 
 Abilities ieu ngatur custom taxonomies. Saperti CPTs, pendaptaran taxonomy disimpen tetep.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Ngadaptarkeun custom taxonomy anyar.
 
@@ -123,7 +123,7 @@ Ngadaptarkeun custom taxonomy anyar.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Mulangkeun sakabéh custom taxonomies anu didaptarkeun ku agent.
 
@@ -146,7 +146,7 @@ Mulangkeun sakabéh custom taxonomies anu didaptarkeun ku agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Ngabolaykeun pendaptaran custom taxonomy anu saméméhna didaptarkeun ku agent.
 
@@ -160,11 +160,11 @@ Ngabolaykeun pendaptaran custom taxonomy anu saméméhna didaptarkeun ku agent.
 
 ---
 
-## Sistem Desain
+## Sistem Desain {#design-system}
 
 Abilities sistem desain ngarobah tampilan visual situs WordPress — ti CSS custom nepi ka pola block jeung logo situs.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Nambahkeun CSS kana `<head>` situs ngaliwatan `wp_add_inline_style`. CSS disimpen dina option `gratis_ai_agent_custom_css` sarta dipiceun tina antrian kalayan rapih nalika ability direset.
 
@@ -190,7 +190,7 @@ Nambahkeun CSS kana `<head>` situs ngaliwatan `wp_add_inline_style`. CSS disimpe
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Ngadaptarkeun pola block anu bisa dipaké deui dina pustaka pola WordPress.
 
@@ -209,7 +209,7 @@ Ngadaptarkeun pola block anu bisa dipaké deui dina pustaka pola WordPress.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Némbongkeun daptar sakabéh pola block anu didaptarkeun ku agent.
 
@@ -231,7 +231,7 @@ Némbongkeun daptar sakabéh pola block anu didaptarkeun ku agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Nyetél logo situs WordPress kana ID lampiran anu dibikeun atawa URL gambar jauh. Nalika URL disadiakeun, gambar diundeur sarta diimpor kana Media Library.
 
@@ -248,7 +248,7 @@ Salah sahiji tina `attachment_id` atawa `url` kudu disadiakeun.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Nerapkeun preset warna/tipografi anu dingaranan kana `theme.json` theme aktip (atawa `global-styles`). Preset nyaéta buntelan anu dikurasi jeung diriksa ku tim Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Nerapkeun preset warna/tipografi anu dingaranan kana `theme.json` theme aktip (a
 
 ---
 
-## Gaya Global
+## Gaya Global {#global-styles}
 
 Kamampuhan Global Styles maca jeung nulis nilai theme.json ngaliwatan WordPress Global Styles API, mangaruhan sakabéh blok jeung témplat di sakuliah situs.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Mulangkeun konfigurasi gaya global ayeuna.
 
@@ -291,7 +291,7 @@ Mulangkeun konfigurasi gaya global ayeuna.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Ngapdet hiji atawa leuwih nilai dina konfigurasi gaya global.
 
@@ -318,7 +318,7 @@ Ngapdet hiji atawa leuwih nilai dina konfigurasi gaya global.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Ngareset sakabéh parobahan gaya global anu diterapkeun ku agén, mulangkeun default theme.
 
@@ -328,11 +328,11 @@ Ngareset sakabéh parobahan gaya global anu diterapkeun ku agén, mulangkeun def
 
 ---
 
-## Menu Navigasi
+## Menu Navigasi {#navigation-menus}
 
 Kamampuhan Menu Navigasi nyieun jeung ngatur menu nav WordPress sarta item-itemna.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Nyieun menu navigasi WordPress anyar.
 
@@ -347,7 +347,7 @@ Nyieun menu navigasi WordPress anyar.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Ngaganti ngaran menu atawa masangkeun deui kana lokasi theme.
 
@@ -363,7 +363,7 @@ Ngaganti ngaran menu atawa masangkeun deui kana lokasi theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Nambahkeun item kana menu navigasi anu geus aya.
 
@@ -383,7 +383,7 @@ Nambahkeun item kana menu navigasi anu geus aya.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Mupus item tina menu navigasi.
 
@@ -397,7 +397,7 @@ Mupus item tina menu navigasi.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Daptar sakabéh menu navigasi WordPress, kaasup lokasi theme anu ditugaskeun.
 
@@ -420,11 +420,11 @@ Daptar sakabéh menu navigasi WordPress, kaasup lokasi theme anu ditugaskeun.
 
 ---
 
-## Pangaturan Options
+## Pangaturan Options {#options-management}
 
 Kamampuhan Options maca jeung nulis options WordPress via `get_option` / `update_option`. Blocklist kaamanan bawaan nyegah modifikasi teu kahaja kana setélan kritis.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Maca option WordPress.
 
@@ -440,7 +440,7 @@ Mulangkeun kasalahan lamun `option_name` aya dina blocklist kaamanan.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Nulis option WordPress.
 
@@ -458,7 +458,7 @@ Mulangkeun kasalahan lamun `option_name` aya dina safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Mupus hiji pilihan WordPress.
 
@@ -474,7 +474,7 @@ Mulangkeun kasalahan lamun `option_name` aya dina safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Mintonkeun daptar pilihan WordPress anu cocog jeung pola.
 
@@ -498,11 +498,11 @@ Mintonkeun daptar pilihan WordPress anu cocog jeung pola.
 
 ---
 
-## Pangaturan Eusi
+## Pangaturan Eusi {#content-management}
 
 Kamampuh Pangaturan Eusi nyieun jeung ngédit tulisan jeung kaca WordPress. ID tulisan dipulangkeun sangkan léngkah salajengna dina rarancang multi-kamampuh bisa ngarujuk kana eusi anu dijieun.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Nyieun tulisan WordPress anyar, kaca, atawa éntri tipe tulisan kustom.
 
@@ -537,7 +537,7 @@ Nyieun tulisan WordPress anyar, kaca, atawa éntri tipe tulisan kustom.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Ngamutahirkeun tulisan atawa kaca WordPress anu geus aya.
 
@@ -567,7 +567,7 @@ Ngamutahirkeun tulisan atawa kaca WordPress anu geus aya.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Nyieun sababaraha tulisan dina hiji panggero kamampuh, ngurangan bolak-balik nalika ngawangun situs atawa ngimpor eusi sacara masal. Tulisan dijieun sacara runtuyan; lamun hiji gagal, anu séjén neruskeun jeung kagagalan dilaporkeun dina array hasil.
 
@@ -619,7 +619,7 @@ Nyieun sababaraha tulisan dina hiji panggero kamampuh, ngurangan bolak-balik nal
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Masang gambar unggulan (thumbnail tulisan) ka tulisan atawa kaca anu geus aya. Narima ID lampiran Media Library anu geus aya atawa URL gambar jauh; lamun URL disayagikeun, gambar diundeur jeung diimpor sacara otomatis.
 
@@ -638,7 +638,7 @@ Salah sahiji tina `attachment_id` atawa `url` kudu disayagikeun.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Nyieun formulir kontak maké plugin formulir anu aktip (Contact Form 7, WPForms, Fluent Forms, atawa Gravity Forms, gumantung kana anu dipasang). Mulangkeun shortcode anu bisa diasupkeun kana tulisan atawa kaca naon waé.
 
@@ -691,11 +691,11 @@ Nyieun formulir kontak maké plugin formulir anu aktip (Contact Form 7, WPForms,
 
 ---
 
-## Tinjauan Visual
+## Tinjauan Visual {#visual-review}
 
 Kamampuh Tinjauan Visual ngamungkinkeun agent nyokot screenshot tina kaca live sarta nganalisisna, sangkan bisa tinjauan desain otonom, babandingan saméméh/sanggeus, jeung pamariksaan régrési visual tanpa merlukeun ekstensi browser naon waé.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Nyokot screenshot tina hiji kaca WordPress dina URL anu ditangtukeun maké browser headless sisi-server. Gambar disimpen ka Media Library sarta URL CDN dipulangkeun.
 
@@ -724,7 +724,7 @@ Nyokot screenshot tina hiji kaca WordPress dina URL anu ditangtukeun maké brows
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Nyokot dua screenshot sarta mulangkeun skor béda visual ditambah gambar béda anu nyorot wewengkon anu robah. Mangpaat pikeun mastikeun yén parobahan desain ngahasilkeun hasil anu diarepkeun atawa pikeun ngadeteksi régrési anu teu dihaja.
 
@@ -754,7 +754,7 @@ Nyokot dua screenshot sarta mulangkeun skor béda visual ditambah gambar béda a
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Nyokot screenshot tina kaca sarta ngirimkeunana ka modél basa pikeun analisis visual. Mulangkeun panilaian terstruktur anu ngawengku tata perenah, tipografi, pamakéan warna, jeung kahariwang aksésibilitas.
 
@@ -785,11 +785,11 @@ Nyokot screenshot tina kaca sarta ngirimkeunana ka modél basa pikeun analisis v
 
 ---
 
-## Kamampuh Anu Bisa Dipasang
+## Kamampuh Anu Bisa Dipasang {#installable-abilities}
 
 Registry Kamampuh Anu Bisa Dipasang ngamungkinkeun anjeun ngalegaan agent ku pakét kamampuh tambahan anu disebarkeun salaku plugin WordPress. Unggal pakét ngadaptarkeun hiji atawa leuwih kamampuh maké API kamampuh standar.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Mulangkeun katalog pakét kamampuh anu sadia pikeun dipasang ti registry.
 
@@ -818,7 +818,7 @@ Mulangkeun katalog pakét kamampuh anu sadia pikeun dipasang ti registry.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Ngundeur jeung ngaktipkeun hiji pakét kamampuhan ti réjistri.
 
@@ -832,7 +832,7 @@ Ngundeur jeung ngaktipkeun hiji pakét kamampuhan ti réjistri.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Naroskeun ka réjistri kamampuhan pikeun manggihan panyambung anu panghadéna pikeun kasus pamakéan anu dijelaskeun sarta, upami dipikahoyong, masangna.
 

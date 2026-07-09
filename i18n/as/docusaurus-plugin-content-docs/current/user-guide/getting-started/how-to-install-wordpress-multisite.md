@@ -3,7 +3,7 @@ title: WordPress Multisite কেনেকৈ ইনষ্টল কৰিব
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# মই কেনেকৈ WordPress Multisite ইনষ্টল কৰিম?
+# মই কেনেকৈ WordPress Multisite ইনষ্টল কৰিম? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ব্যৱস্থাৰ জৰিয়তে আপুনি এটা একক ইনষ্টলেচনত বহুতো সাইটৰ নেটৱৰ্ক (network) ৰাখিব পাৰে। এইটো এটা বিল্ট-ইন বৈশিষ্ট্য, কিন্তু ই ডিফল্টভাৱে সক্ৰিয় নহয়।
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 ফিল্ডবোৰ ভৰাই শেষ কৰাৰ পিছত, "Add site" বাটনটো ক্লিক কৰক। নতুন ছাৱ-সাইটটো সৃষ্টি হোৱাৰ লগে লগে, আপুনি নিশ্চিত কৰিবলৈ ইয়ালৈ গৈ ইয়াক অ্যাক্সেছ কৰক যে ছাৱ-সাইটটো কাৰ্যক্ষম (functional) আছে।
 
-## সাধাৰণ সমস্যাসমূহ:
+## সাধাৰণ সমস্যাসমূহ: {#common-problems}
 
-### 1. মই নতুন সাইট সৃষ্টি কৰিব পাওঁ, কিন্তু সেয়া অ্যাক্সেছ কৰিব নোৱাৰোঁ।
+### 1. মই নতুন সাইট সৃষ্টি কৰিব পাওঁ, কিন্তু সেয়া অ্যাক্সেছ কৰিব নোৱাৰোঁ। {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 যদি আপুনি ছাৱ-ডোমেইন বাছি লয়, তেন্তে আপুনি আপোনাৰ multisite নেটৱৰ্কৰ বাবে wildcard subdomains সেটআপ কৰিব লাগিব।
 

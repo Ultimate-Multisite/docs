@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Zastavte botov. Chráňte príjmy. Žiadne starosti s konfiguráciou.**
 
@@ -15,7 +15,7 @@ Prevádzkujete multisite sieť s vlastnými doménami? Poznáte tú bolesť: Goo
 
 **Ultimate Multisite: Captcha mení všetko.**
 
-## Cap Captcha: self-hosted ochrana, ktorá jednoducho funguje
+## Cap Captcha: self-hosted ochrana, ktorá jednoducho funguje {#cap-captcha-self-hosted-protection-that-just-works}
 
 Náš nový poskytovateľ **Cap Captcha** je zásadnou zmenou pre multisite siete:
 
@@ -25,7 +25,7 @@ Náš nový poskytovateľ **Cap Captcha** je zásadnou zmenou pre multisite siet
 * **Neviditeľný proof-of-work** — Používatelia riešia výpočtovú úlohu na pozadí. Žiadne klikanie na hydranty, žiadne frustrujúce mriežky obrázkov.
 * **Ľahké** — Iba 20 KB. Nespomalí váš checkout.
 
-## Ochrana pred testovaním kariet vo WooCommerce
+## Ochrana pred testovaním kariet vo WooCommerce {#woocommerce-card-testing-protection}
 
 Útoky testovania kariet stoja obchodníkov každoročne miliardy. Podvodníci používajú botov na overovanie ukradnutých kreditných kariet voči vášmu WooCommerce checkoutu — vy platíte poplatky za spracovanie, oni získajú platné čísla kariet.
 
@@ -35,7 +35,7 @@ Náš nový poskytovateľ **Cap Captcha** je zásadnou zmenou pre multisite siet
 * **Kompatibilné s PayPal Payments** — Funguje bez problémov s WooCommerce PayPal Payments
 * **Štatistiky v reálnom čase** — Presne vidíte, koľko útokov blokujete
 
-## Stále potrebujete Google reCAPTCHA alebo hCaptcha?
+## Stále potrebujete Google reCAPTCHA alebo hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
 
 Máme vás pokrytých. Plná podpora pre:
 
@@ -47,14 +47,14 @@ Máme vás pokrytých. Plná podpora pre:
 
 Medzi poskytovateľmi môžete kedykoľvek prepínať v nastaveniach siete.
 
-## Vytvorené pre škálovanie
+## Vytvorené pre škálovanie {#built-for-scale}
 
 * Nastavenia pre celú sieť s prepismi pre jednotlivé weby
 * Dashboard štatistík na monitorovanie ochrany
 * Nastaviteľné úrovne zabezpečenia (Rýchla, Stredná, Maximálna)
 * Vhodné pre vývojárov s rozšíriteľnou architektúrou poskytovateľov
 
-## Inštalácia
+## Inštalácia {#installation}
 
 1. Nahrajte `ultimate-multisite-captcha` do svojho adresára `/wp-content/plugins/`
 2. Aktivujte plugin v celej sieti
@@ -64,37 +64,37 @@ Cap Captcha sa aktivuje automaticky — žiadne nastavenia na konfiguráciu, ži
 
 **Voliteľné:** Ak chcete namiesto toho použiť Google reCAPTCHA alebo hCaptcha, prejdite na **Ultimate Multisite → Settings → Captcha** a vyberte preferovaného poskytovateľa.
 
-## Často kladené otázky
+## Často kladené otázky {#frequently-asked-questions}
 
-## Musím niečo konfigurovať?
+## Musím niečo konfigurovať? {#do-i-need-to-configure-anything}
 
 Nie! Cap Captcha sa zapne automaticky, keď aktivujete doplnok. Celá vaša sieť je okamžite chránená — žiadne nastavenia na konfiguráciu, žiadne API kľúče na zadanie.
 
-## Potrebujem API kľúče pre Cap Captcha?
+## Potrebujem API kľúče pre Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
 
 Nie. Cap Captcha je úplne self-hosted. Žiadne externé účty, žiadna registrácia domén, žiadne konfiguračné bolesti hlavy.
 
-## Spomalí to môj checkout?
+## Spomalí to môj checkout? {#will-this-slow-down-my-checkout}
 
 Cap Captcha má iba 20 KB a spúšťa proof-of-work výzvy na pozadí. Vaši zákazníci si nevšimnú žiadne oneskorenie.
 
-## Chráni to pred útokmi testovania kariet?
+## Chráni to pred útokmi testovania kariet? {#does-this-protect-against-card-testing-attacks}
 
 Áno! Na rozdiel od tradičných captcha, ktoré chránia iba HTML formuláre, naša integrácia s WooCommerce sa pripája priamo do Store API, aby blokovala útoky botov na úrovni API — tam, kde prebieha väčšina útokov testovania kariet.
 
-## Môžem používať rôznych poskytovateľov captcha na rôznych weboch?
+## Môžem používať rôznych poskytovateľov captcha na rôznych weboch? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Poskytovateľ captcha sa nastavuje pre celú sieť, ale nastavenia obtiažnosti môžete upraviť podľa svojich potrieb.
 
-## Je to v súlade s GDPR?
+## Je to v súlade s GDPR? {#is-this-gdpr-compliant}
 
 Cap Captcha je 100 % self-hosted bez odosielania údajov do externých služieb. Pri Google reCAPTCHA a hCaptcha si, prosím, prečítajte ich príslušné zásady ochrany súkromia.
 
-## Obmedzovanie frekvencie
+## Obmedzovanie frekvencie {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 zavádza nekompromisný obmedzovač frekvencie, ktorý chráni vašu sieť pred brute-force útokmi a útokmi testovania kariet.
 
-### Ako to funguje
+### Ako to funguje {#how-it-works}
 
 Obmedzovač frekvencie počíta každú GET a POST požiadavku na povrchoch chránených captcha:
 
@@ -108,9 +108,9 @@ Keď návštevník prekročí limit frekvencie, plugin odpovie s:
 * Hlavičkou **Retry-After** označujúcou, kedy skúsiť znova
 * **Náhodným tarpit uspáním** (predvolene 1 – 5 sekúnd, pevne obmedzené na 15 sekúnd) na spomalenie útočníkov
 
-### Konfigurácia
+### Konfigurácia {#configuration}
 
-#### Časovanie tarpit
+#### Časovanie tarpit {#tarpit-timing}
 
 Ovládajte náhodné oneskorenie aplikované na požiadavky obmedzené frekvenciou:
 
@@ -119,9 +119,9 @@ Ovládajte náhodné oneskorenie aplikované na požiadavky obmedzené frekvenci
 
 Tieto nastavenia sú dostupné v **Ultimate Multisite → Settings → Captcha**.
 
-### Rozšíriteľnosť
+### Rozšíriteľnosť {#extensibility}
 
-#### Filter whitelistu IP
+#### Filter whitelistu IP {#ip-whitelist-filter}
 
 Vyraďte dôveryhodné rozsahy IP z obmedzovania frekvencie:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Akcia pred blokovaním
+#### Akcia pred blokovaním {#pre-block-action}
 
 Vykonajte vlastnú logiku bezprostredne pred odoslaním bloku obmedzenia frekvencie:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Detekcia IP klienta a dôveryhodné proxy
+## Detekcia IP klienta a dôveryhodné proxy {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 zavádza detekciu IP klienta odolnú voči spoofingu. Metóda `Captcha_Core::get_client_ip()` je teraz jediným zdrojom pravdy pre priraďovanie IP návštevníkov naprieč:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 zavádza detekciu IP klienta odolnú voči sp
 * Captcha provider `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Hashe IP štatistík
 
-### Model dôvery
+### Model dôvery {#trust-model}
 
 Plugin vynucuje prísnu hierarchiu dôvery IP:
 
@@ -166,9 +166,9 @@ Plugin vynucuje prísnu hierarchiu dôvery IP:
    - Bezprostredný peer je vo vašom zozname dôveryhodných proxy nakonfigurovanom administrátorom
    - Header sa analyzuje sprava doľava, pričom sa preskakujú dôveryhodné/Cloudflare skoky
 
-### Konfigurácia
+### Konfigurácia {#configuration-1}
 
-#### Dôvera headera Cloudflare
+#### Dôvera headera Cloudflare {#cloudflare-header-trust}
 
 Povoľte dôveru headeru `CF-Connecting-IP` od Cloudflare:
 
@@ -178,7 +178,7 @@ Povoľte dôveru headeru `CF-Connecting-IP` od Cloudflare:
   - CIDR rozsahy sa obnovujú týždenne cez wp-cron
   - Ak obnovenie zlyhá, použije sa zabudovaná záloha
 
-#### Konfigurácia dôveryhodnej proxy
+#### Konfigurácia dôveryhodnej proxy {#trusted-proxy-configuration}
 
 Definujte svoje front-line proxy a load-balancery:
 
@@ -194,14 +194,14 @@ Definujte svoje front-line proxy a load-balancery:
     198.51.100.50
     ```
 
-#### Automatická detekcia pri prvom povolení
+#### Automatická detekcia pri prvom povolení {#first-enable-auto-detection}
 
 Keď prvýkrát povolíte rate limiter, plugin zistí vašu pravdepodobnú konfiguráciu Cloudflare a proxy a zobrazí administrátorské upozornenie na jedno kliknutie „Použiť zistené nastavenia“.
 
 * Plugin **nikdy neprepíše** vaše uložené hodnoty
 * Ak následná prevádzka naznačuje, že vaša konfigurácia už nezodpovedá realite (napr. Cloudflare zmenil CIDR rozsahy), nezrušiteľné upozornenie na nesúlad zobrazí odporúčanú aktualizáciu
 
-### Prečo je to dôležité
+### Prečo je to dôležité {#why-this-matters}
 
 Prísny model dôvery IP uzatvára kritický vektor spoofingu: priame požiadavky na origin-server nesúce sfalšovaný header `CF-Connecting-IP` by sa predtým zaraďovali do bucketov podľa sfalšovanej IP namiesto skutočného peeru. Je to obzvlášť dôležité pre:
 

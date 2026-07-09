@@ -3,7 +3,7 @@ title: Mettre à niveau une offre
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Mettre à niveau un plan (v2)
+# Mettre à niveau un plan (v2) {#upgrading-a-plan-v2}
 
 _**NOTE IMPORTANTE : cet article concerne Ultimate Multisite version 2.x.**_
 
@@ -41,7 +41,7 @@ Une fois le paiement terminé, le ou les nouveaux produits seront ajoutés au co
 
 ##
 
-## Chemins de mise à niveau et de rétrogradation
+## Chemins de mise à niveau et de rétrogradation {#upgrade-and-downgrade-paths}
 
 Sur chacun de vos produits, vous aurez un onglet **Up & Downgrades**. La première option de cet onglet est un champ appelé **Groupe de plans**.
 

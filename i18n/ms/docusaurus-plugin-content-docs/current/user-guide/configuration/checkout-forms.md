@@ -3,7 +3,7 @@ title: Borang Pembayaran
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Borang Pembayaran
+# Borang Pembayaran {#checkout-forms}
 
 Borang Pembayaran ialah cara yang mudah dan fleksibel untuk bereksperimen dengan pendekatan yang berbeza apabila cuba menukar pelanggan baharu.
 
@@ -36,13 +36,13 @@ Sebagai alternatif, anda boleh mengedit atau menduplikasi borang yang sudah anda
 
 ![Tindakan hover borang pembayaran](/img/config/checkout-form-hover-actions.png)
 
-#### Gambaran Keseluruhan Editor Borang Pembayaran
+#### Gambaran Keseluruhan Editor Borang Pembayaran {#checkout-form-editor-overview}
 
 Editor borang pembayaran menyediakan antara muka yang menyeluruh untuk membina borang pendaftaran anda. Berikut ialah gambaran keseluruhan susun atur editor:
 
 ![Gambaran keseluruhan editor Borang Pembayaran](/img/config/checkout-form-editor-overview.png)
 
-### Mengedit Borang Pembayaran
+### Mengedit Borang Pembayaran {#editing-a-checkout-form}
 
 Anda boleh mencipta borang pembayaran untuk tujuan yang berbeza. Dalam contoh ini, kami akan bekerja pada borang pendaftaran.
 
@@ -112,7 +112,7 @@ Untuk mendapatkan shortcode borang anda, klik untuk Jana Shortcode dan salin has
 
 ![Butang simpan dengan shortcode](/img/config/checkout-form-save.png)
 
-### Medan Jadual Harga
+### Medan Jadual Harga {#the-pricing-table-field}
 
 Medan **Jadual Harga** memaparkan produk anda pada borang pembayaran supaya pelanggan boleh memilih pelan. Apabila anda mengedit medan ini, anda boleh mengkonfigurasi beberapa pilihan:
 
@@ -130,17 +130,17 @@ Berikut ialah bagaimana jadual harga muncul pada borang pendaftaran frontend:
 
 Jika anda menambah produk pada Jadual Harga sebelum borang menyertakan medan yang diperlukan untuk melengkapkan aliran checkout produk tersebut, editor kini menunjukkan amaran. Gunakan amaran tersebut untuk menambah medan wajib yang hilang sebelum menerbitkan atau menyimpan perubahan untuk borang pendaftaran langsung.
 
-### Menambah Togol Pemilihan Tempoh
+### Menambah Togol Pemilihan Tempoh {#adding-a-period-selection-toggle}
 
 Jika anda telah mengkonfigurasi [Variasi Harga](creating-your-first-subscription-product#price-variations) pada produk anda (cth. harga bulanan dan tahunan), anda boleh menambah medan **Pemilihan Tempoh** pada borang checkout anda. Medan ini memaparkan togol yang membolehkan pelanggan bertukar antara tempoh pengebilan, dan jadual harga dikemas kini secara dinamik dalam masa nyata.
 
-#### Langkah 1: Sediakan Variasi Harga pada Produk Anda
+#### Langkah 1: Sediakan Variasi Harga pada Produk Anda {#step-1-set-up-price-variations-on-your-products}
 
 Sebelum menambah medan Pemilihan Tempoh, pastikan produk anda mempunyai variasi harga yang dikonfigurasi. Pergi ke **Ultimate Multisite > Produk**, edit produk, dan navigasi ke tab **Variasi Harga** untuk menambah tempoh pengebilan alternatif (cth. Tahunan pada harga diskaun).
 
 ![Tab Variasi Harga pada produk](/img/config/product-price-variations-tab.png)
 
-#### Langkah 2: Tambah Medan Pemilihan Tempoh pada Borang Checkout Anda
+#### Langkah 2: Tambah Medan Pemilihan Tempoh pada Borang Checkout Anda {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Pergi ke **Ultimate Multisite > Checkout Forms** dan edit borang checkout anda.
 
@@ -163,13 +163,13 @@ Sebelum menambah medan Pemilihan Tempoh, pastikan produk anda mempunyai variasi 
 
 7. Klik **Simpan Medan**.
 
-#### Langkah 3: Letakkan Medan di Atas Jadual Harga
+#### Langkah 3: Letakkan Medan di Atas Jadual Harga {#step-3-position-the-field-above-the-pricing-table}
 
 Untuk pengalaman pengguna terbaik, pastikan medan Pemilihan Tempoh muncul **sebelum** medan Jadual Harga dalam langkah checkout anda. Anda boleh menyeret medan untuk menyusun semulanya dalam editor borang checkout. Dengan cara ini, pelanggan mula-mula memilih tempoh pengebilan dan kemudian melihat harga untuk tempoh tersebut.
 
 ![Editor borang checkout yang menunjukkan susunan medan](/img/config/checkout-form-editor-with-fields.png)
 
-#### Cara Ia Berfungsi pada Frontend
+#### Cara Ia Berfungsi pada Frontend {#how-it-works-on-the-frontend}
 
 Setelah dikonfigurasi, pelanggan yang melawat halaman pendaftaran anda akan melihat pemilih tempoh di atas jadual harga. Apabila mereka mengklik tempoh pengebilan yang berbeza:
 
@@ -177,7 +177,7 @@ Setelah dikonfigurasi, pelanggan yang melawat halaman pendaftaran anda akan meli
   * Jika **Paksa Tempoh Berbeza** dinyahdayakan pada medan Jadual Harga, produk tanpa variasi harga untuk tempoh yang dipilih akan disembunyikan.
   * Jika **Paksa Tempoh Berbeza** didayakan, semua produk kekal kelihatan walaupun produk tersebut tidak mempunyai variasi untuk tempoh yang dipilih (produk tersebut akan menunjukkan harga lalainya).
 
-#### Prapilih Tempoh Pengebilan melalui URL
+#### Prapilih Tempoh Pengebilan melalui URL {#pre-selecting-a-billing-period-via-url}
 
 Anda juga boleh prapilih produk dan tempoh pengebilan melalui URL. Ultimate Multisite menyokong corak URL ini:
 
@@ -185,11 +185,11 @@ Anda juga boleh prapilih produk dan tempoh pengebilan melalui URL. Ultimate Mult
   * `/register/premium/12` — Prapilih produk dan tempoh 12 bulan
   * `/register/premium/1/year` — Prapilih produk dengan tempoh 1 tahun
 
-### Medan Pemilihan Templat
+### Medan Pemilihan Templat {#the-template-selection-field}
 
 Medan **Pemilihan Templat** membolehkan pelanggan memilih templat laman semasa checkout. Medan ini kini disertakan secara lalai dalam templat borang checkout **satu langkah** dan **berbilang langkah** yang ditambah dalam Ultimate Multisite v2.6.1.
 
-#### Menambah medan secara manual
+#### Menambah medan secara manual {#adding-the-field-manually}
 
 Jika anda bekerja dengan borang yang dicipta sebelum v2.6.1, atau bermula daripada templat kosong:
 
@@ -200,11 +200,11 @@ Jika anda bekerja dengan borang yang dicipta sebelum v2.6.1, atau bermula daripa
    - **Label** — Tajuk yang dilihat pelanggan di atas grid templat (cth. "Pilih templat laman").
    - **Wajib** — Sama ada pelanggan mesti memilih templat sebelum meneruskan.
 
-#### Cara ia berfungsi
+#### Cara ia berfungsi {#how-it-works}
 
 Apabila pelanggan memilih templat semasa checkout, Ultimate Multisite menggunakannya semasa menyediakan laman baharu mereka. Templat yang ditunjukkan datang daripada senarai **Templat Laman** anda (**Ultimate Multisite > Site Templates**). Hanya templat yang ditandakan sebagai tersedia kepada pelanggan muncul di sini.
 
-### Domain asas borang checkout
+### Domain asas borang checkout {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 menganggap domain yang dikonfigurasi pada medan **URL Laman** borang checkout sebagai domain asas rangkaian. Gunakan tetapan domain tersedia medan tersebut apabila anda mahu pelanggan mencipta laman di bawah satu atau lebih domain pendaftaran kongsi, seperti `example.com` dan `sites.example.com`.
 
@@ -212,6 +212,6 @@ Domain asas borang daftar keluar yang dikongsi tidak dianggap sebagai pemetaan d
 
 Kekalkan domain tersuai untuk hos dipetakan per pelanggan, seperti `customer-example.com`. Kekalkan domain asas borang daftar keluar untuk hos pendaftaran dikongsi yang boleh digunakan oleh banyak tapak.
 
-#### Mengalih keluar medan
+#### Mengalih keluar medan {#removing-the-field}
 
 Jika anda tidak menawarkan templat tapak, alih keluar medan Pemilihan Templat daripada borang anda. Pelanggan kemudian akan menerima mana-mana templat lalai yang dikonfigurasikan di bawah **Ultimate Multisite > Tetapan > Templat Tapak**.

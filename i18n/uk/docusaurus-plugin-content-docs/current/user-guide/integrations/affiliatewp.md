@@ -3,7 +3,7 @@ title: Інтеграція з AffiliateWP
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# Інтеграція з AffiliateWP
+# Інтеграція з AffiliateWP {#affiliatewp-integration}
 
 Ця функція доступна завдяки додатку **AffiliateWP**.
 

@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Első pillantás a Webhooks (v2) működésére
+# Első pillantás a Webhooks (v2) működésére {#a-first-look-on-webhooks-v2}
 
 _**FIGYELEM: Vedd figyelembe, hogy ez a funkció vagy cikk haladó felhasználóknak szól.**_
 
@@ -11,7 +11,7 @@ A **webhook** egy módja annak, hogy egy alkalmazás vagy szoftver, például az
 
 Ez akkor hasznos, ha bizonyos adatokat kell integrálnod vagy továbbítanod az Ultimate Multisite-ból egy másik CRM vagy rendszer felé minden alkalommal, amikor egy esemény aktiválódik. Például el kell küldened a felhasználó nevét és e-mail-címét egy levelezőlistára minden alkalommal, amikor új felhasználói fiók jön létre.
 
-## Hogyan hozz létre webhookot
+## Hogyan hozz létre webhookot {#how-to-create-a-webhook}
 
 Webhook létrehozásához lépj a hálózati admin dashboardra. Kattints a **Ultimate Multisite > Webhooks > Add New Webhook** elemre.
 

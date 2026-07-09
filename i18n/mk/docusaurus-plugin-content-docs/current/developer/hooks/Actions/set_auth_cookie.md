@@ -4,11 +4,11 @@ title: Дејство - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Дејство: set_auth_cookie
+# Дејство: set_auth_cookie {#action-setauthcookie}
 
 Се активира веднаш пред да се постави колачето за автентикација.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | Шема за автентикација. Вредностите вклучуваат 'auth' или 'secure_auth'. |
 | $token | `string` | Сесиски токен на корисникот што ќе се користи за ова колаче. |
 
-### Од
+### Од {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) на линија 124

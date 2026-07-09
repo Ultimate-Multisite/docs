@@ -3,11 +3,11 @@ title: Pakeitimų žurnalas
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Pakeitimų žurnalas
+# Pakeitimų žurnalas {#changelog}
 
-## 1.9.0 — Išleista 2026-04-28
+## 1.9.0 — Išleista 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nauja
+### Nauja {#new}
 
 - **`create_contact_form` galimybė** — sukuria kontaktinę formą naudodama aktyvų formų plugin (Contact Form 7, WPForms, Fluent Forms arba Gravity Forms) ir grąžina shortcode, paruoštą įterpti į bet kurį įrašą ar puslapį.
 - **`set_featured_image` galimybė** — priskiria pagrindinį paveikslėlį įrašui arba puslapiui iš esamo Media Library priedo ID arba nuotolinio URL; automatiškai importuoja paveikslėlį, kai pateikiamas URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Atkurti paskutinę sesiją** — pokalbio skydelis dabar automatiškai iš naujo įkelia naujausią pokalbį įkeliant puslapį ir atidarant valdiklį, todėl kontekstas niekada neprarandamas naršant tarp puslapių.
 - **Plugin veiksmų nuorodos** — greitosios nuorodos į Settings ir Abilities Registry dabar rodomos WordPress **Plugins → Installed Plugins** ekrane po plugin aprašymu.
 
-### Patobulinta
+### Patobulinta {#improved}
 
 - **Paveikslėlių šaltinio pakartotinis bandymas** — agentas dabar pakartotinai išbando visus sukonfigūruotus nemokamus paveikslėlių šaltinius prieš pereidamas prie AI sugeneruoto paveikslėlio, jei atsisiuntimas nepavyksta.
 - **Modelio informacijos skydelis** — visada matomas pokalbio antraštėje; po pirmos žinutės nebepaslėpiamas.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pokalbio valdiklio perdizainavimas** — ankstesnį tinkintą avatarą pakeičia suvienodinta AI piktograma; suderinta su įtaisytąja agentų sistema.
 - **URL pavertimas nuorodomis** — URL, rodomi sistemos žinutėse ir klaidų pranešimų burbuluose, dabar atvaizduojami kaip spustelėjamos nuorodos.
 
-### Ištaisyta
+### Ištaisyta {#fixed}
 
 - **Galimybių aptinkamumas** — pataisyti aprašymai, sistemos prompt nuorodos ir vardų erdvės suderinimas, kad visos galimybės patikimai būtų rodomos agento įrankių sąraše.
 - **Providers talpykla** — providers dabar talpinami viso site mastu per versijos skaitiklį, užkertant kelią pasenusių providers problemoms multisite tinkluose.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Išleista 2026-04-09
+## 1.4.0 — Išleista 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nauja
+### Nauja {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — paleidžia Agent Capabilities v1 benchmark suite iš komandinės eilutės CI konvejeriams ir modelių vertinimo darbo eigoms. Palaiko paleidimus pagal atskirus klausimus, provider/model perrašymus ir JSON/CSV išvestį.
 - **Agent Capabilities v1 benchmark suite** — struktūruotas sudėtingų, kelių žingsnių promptų rinkinys, išbandantis visą gebėjimų spektrą, su vertinimu ir tokenų / trukmės ataskaitomis.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restorano svetainės benchmark klausimas** (`q-restaurant-website`) — pilnas testas, apimantis CPT registraciją, dizaino sistemą, navigaciją ir pluginų paiešką.
 - **AI provider connector pluginai** pridėti prie WordPress Playground blueprintų, kad vietinio kūrimo aplinka būtų paruošiama greičiau.
 
-### Patobulinta
+### Patobulinta {#improved-1}
 
 - README atnaujintas su AI provider connector dokumentacija ir sąrankos instrukcijomis.
 
-### Ištaisyta
+### Ištaisyta {#fixed-1}
 
 - Išspręstos 25 PHPUnit testų nesėkmės `main` šakoje.
 - Ištaisytas GitHub laidų URL formatas faile `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Ankstesnių laidų pastabos saugomos plugino saugykloje._

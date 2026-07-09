@@ -4,20 +4,20 @@ title: Amal - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Action: wp_ultimo_ptm_page_edit_after_title
+# Action: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
 
 Plugin dasturchilariga tahrirlash sahifalariga qo‘shimcha tugmalar qo‘shishga ruxsat beradi
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
 | $ | `object` | Ma’lumotni saqlovchi obyekt |
 | $ | `\WU_Page` | Multisite Ultimate sahifa nusxasi |
 
-### Paydo bo‘lgan versiya
+### Paydo bo‘lgan versiya {#since}
 
 - 1.8.2
-### Manba
+### Manba {#source}
 
 [`views/base/edit.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/edit.php#L48) faylida 48-qatorda aniqlangan

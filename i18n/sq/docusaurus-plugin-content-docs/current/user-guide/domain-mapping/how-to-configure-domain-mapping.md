@@ -3,17 +3,17 @@ title: Si të konfiguroni hartëzimin e domenit
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Si të konfiguroni hartëzimin e domain-it (v2)
+# Si të konfiguroni hartëzimin e domain-it (v2) {#how-to-configure-domain-mapping-v2}
 
 _**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 
 Një nga veçoritë më të fuqishme të një rrjeti premium është aftësia për t’u ofruar klientëve tanë mundësinë të lidhin një domain të nivelit të lartë me sajtet e tyre. Në fund të fundit, cila duket më profesionale: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) apo [_**joesbikeshop.com**_](http://joesbikeshop.com)? Prandaj Ultimate Multisite e ofron këtë veçori të integruar, pa pasur nevojë të përdoren plugin-e të palëve të treta.
 
-## Çfarë është hartëzimi i domain-it?
+## Çfarë është hartëzimi i domain-it? {#whats-domain-mapping}
 
 Siç sugjeron emri, hartëzimi i domain-it është aftësia e ofruar nga Ultimate Multisite për të marrë një kërkesë për një domain të personalizuar dhe për ta hartëzuar atë kërkesë te sajti përkatës në rrjet, me atë domain të veçantë të bashkëngjitur.
 
-### Si të konfiguroni hartëzimin e domain-it në rrjetin tuaj Ultimate Multisite
+### Si të konfiguroni hartëzimin e domain-it në rrjetin tuaj Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Hartëzimi i domain-it kërkon disa konfigurime nga ana juaj që të funksionojë. Fatmirësisht, Ultimate Multisite automatizon punën e vështirë për ju, në mënyrë që t’i përmbushni lehtësisht kërkesat.
 
@@ -45,7 +45,7 @@ Por përpara se të filloni hartëzimin e domain-it të personalizuar te një ng
 
 ###
 
-### Si të siguroheni që cilësimet DNS të domain-it janë konfiguruar siç duhet
+### Si të siguroheni që cilësimet DNS të domain-it janë konfiguruar siç duhet {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Që një hartëzim të funksionojë, duhet të siguroheni që domain-i që planifikoni të hartëzoni po drejtohet te adresa IP e rrjetit tuaj. Vini re se ju duhet adresa IP e rrjetit - adresa IP e domain-it ku është instaluar Ultimate Multisite - jo adresa IP e domain-it të personalizuar që dëshironi të hartëzoni. Për të kërkuar adresën IP të një domain-i specifik, sugjerojmë të shkoni te [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), për shembull.
 
@@ -55,7 +55,7 @@ Nëse hasni vështirësi për ta bërë këtë të funksionojë, **kontaktoni mb
 
 Nëse planifikoni t’u lejoni klientëve tuaj të hartëzojnë domain-et e tyre, ata do të duhet ta bëjnë vetë punën për këtë pjesë. Drejtojini te sistemi i mbështetjes së regjistruesit të tyre nëse nuk arrijnë të krijojnë A Record.
 
-### Hartëzimi i emrit të domain-it të personalizuar si Super Administrator
+### Hartëzimi i emrit të domain-it të personalizuar si Super Administrator {#mapping-custom-domain-name-as-super-admin}
 
 Kur jeni të identifikuar si super administrator në rrjetin tuaj, mund të shtoni dhe menaxhoni lehtësisht emra domain-esh të personalizuar duke shkuar te **Ultimate Multisite > Domain-et**.
 
@@ -93,7 +93,7 @@ Nëse klikoni mbi emrin e domain-it, do të mund të shihni disa opsione brenda 
 
 **Is Secure?:** Edhe pse Ultimate Multisite kontrollon nëse domain-i ka një certifikatë SSL apo jo përpara se ta aktivizojë, ju mund të zgjidhni manualisht ta ngarkoni domain-in me ose pa certifikatë SSL. Vini re se nëse website-i nuk ka certifikatë SSL dhe përpiqeni ta detyroni të ngarkohet me SSL, mund t’ju japë gabime.
 
-### Mapimi i emrit të domain-it personal si përdorues Subsite
+### Mapimi i emrit të domain-it personal si përdorues Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Administratorët e subsite-it mund të mapojnë gjithashtu emra domain-esh personalë nga dashboard-i i administratorit të subsite-it të tyre.
 
@@ -121,7 +121,7 @@ Përdoruesi pastaj mund të klikojë **Next Step** dhe të vazhdojë të shtojë
 
 Klikimi te **Add Domain** do të nisë procesin e verifikimit dhe marrjes së informacionit DNS të domain-it personal.
 
-### Rreth sinkronizimit të domain-eve
+### Rreth sinkronizimit të domain-eve {#about-domain-syncing}
 
 Sinkronizimi i domain-eve është një proces ku Ultimate Multisite shton emrin personal të domain-it në llogarinë tuaj të hosting-ut si një domain shtesë **që domain mapping të funksionojë**.
 

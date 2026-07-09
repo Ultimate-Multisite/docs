@@ -3,13 +3,13 @@ title: Přizpůsobení registračního formuláře
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Přizpůsobení vašeho registračního formuláře
+# Přizpůsobení vašeho registračního formuláře {#customizing-your-registration-form}
 
 Aby vaše síť vypadala jedinečně oproti všem ostatním SaaS postaveným na platformě WordPress, Ultimate Multisite vám umožňuje přizpůsobit registrační a přihlašovací stránky pomocí naší funkce **Checkout Forms**.
 
 Ačkoli jde o snadný a flexibilní způsob, jak experimentovat s různými přístupy při snaze konvertovat nové zákazníky, nejčastěji se používají k vytváření personalizovaných registračních formulářů. Cílem tohoto článku je ukázat vám, jak to můžete udělat.
 
-## Přihlašovací a registrační stránky:
+## Přihlašovací a registrační stránky: {#login-and-registration-pages}
 
 Při instalaci Ultimate Multisite automaticky vytvoří vlastní přihlašovací a registrační stránky na vašem hlavním webu. Tyto výchozí stránky můžete kdykoli změnit na stránce **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Nyní se podívejme na další možnosti, které jsou stále relevantní pro pro
 
 A to jsou všechny možnosti související s přihlášením a registrací, které můžete přizpůsobit! Po dokončení úprav nezapomeňte nastavení uložit.
 
-## Používání více registračních formulářů:
+## Používání více registračních formulářů: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 nabízí editor checkout formulářů, který vám umožňuje vytvořit libovolný počet formulářů s různými poli, nabízenými produkty atd.
 
@@ -69,7 +69,7 @@ Případně můžete upravit nebo duplikovat formuláře, které už máte, klik
 
 Pokud vyberete jeden krok nebo více kroků, checkout formulář už bude předvyplněn základními kroky potřebnými k jeho fungování. Poté do něj můžete, pokud chcete, přidat další kroky.
 
-### Úprava Checkout Form:
+### Úprava Checkout Form: {#editing-a-checkout-form}
 
 Jak jsme už zmínili, checkout formuláře můžete vytvářet pro různé účely. V tomto příkladu budeme pracovat na registračním formuláři.
 
@@ -131,11 +131,11 @@ Chcete-li získat shortcode svého formuláře, klikněte na **Vygenerovat short
 
 _**Poznámka:** Tento shortcode budete muset přidat na svou registrační stránku, aby do ní byl tento pokladní formulář přidán._
 
-## Předvýběr produktů a šablon pomocí parametrů URL:
+## Předvýběr produktů a šablon pomocí parametrů URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Pokud chcete vytvořit přizpůsobené cenové tabulky pro své produkty a předvybrat v pokladním formuláři produkt nebo šablonu, kterou si váš zákazník vybere z vaší cenové tabulky nebo stránky se šablonami, můžete k tomu použít parametry URL.
 
-### **Pro plány:**
+### **Pro plány:** {#for-plans}
 
 Přejděte na **Ultimate Multisite > Produkty > Vyberte plán**. V horní části stránky byste měli vidět tlačítko **Kliknutím zkopírovat sdílitelný odkaz**. Toto je odkaz, který můžete použít k předvýběru tohoto konkrétního plánu ve svém pokladním formuláři.
 
@@ -143,7 +143,7 @@ Přejděte na **Ultimate Multisite > Produkty > Vyberte plán**. V horní část
 
 Upozorňujeme, že tento sdílitelný odkaz je platný pouze pro **Plány**. Sdílitelné odkazy nemůžete použít pro balíčky nebo služby.
 
-### Pro šablony:
+### Pro šablony: {#for-templates}
 
 Pokud chcete ve svém pokladním formuláři předvybrat šablony webu, můžete na URL své registrační stránky použít parametr: **?template_id=X**. „X“ je třeba nahradit **ID číslem šablony webu**. Toto číslo získáte tak, že přejdete na **Ultimate Multisite > Weby**.
 

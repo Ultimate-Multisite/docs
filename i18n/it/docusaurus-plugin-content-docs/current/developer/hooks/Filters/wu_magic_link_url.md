@@ -4,11 +4,11 @@ title: Filtro - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# Filtro: wu_magic_link_url
+# Filtro: wu_magic_link_url {#filter-wumagiclinkurl}
 
 Filtra l'URL del link magico generato.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Filtra l'URL del link magico generato.
 | $site_id | `int` | The site ID. |
 | $redirect_to | `string` | The redirect URL. |
 
-### Da
+### Da {#since}
 
 - 2.0.0
 
-### Fonte
+### Fonte {#source}
 
 Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L148) at line 148

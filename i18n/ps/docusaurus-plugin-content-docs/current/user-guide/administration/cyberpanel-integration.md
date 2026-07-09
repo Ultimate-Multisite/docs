@@ -3,25 +3,25 @@ title: سایبرپینل همغږي
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration
+# CyberPanel Integration {#cyberpanel-integration}
 
 دا راهنما توضیح ورکړم چې څنګه Ultimate Multisite CyberPanel integration تنظیم کړئ ترڅو د شبکې ته په موندل شوي دومینहरू (mapped domains) په CyberPanel کې د مجازی میزبانونو (virtual hosts) په توګه د خودکار اضافه کولو او اخیستنې لپاره تنظیم شي، او اختیاريweise له Let's Encrypt له لارې خودکار SSL ورکولو هم ممکن دی.
 
-## دا څه کوي؟
+## دا څه کوي؟ {#what-it-does}
 
 - کله چې یو دومین Ultimate Multisite کې موندل کیږي، دا integration CyberPanel API ته راغلی ترڅو د هغه دومین لپاره یو مجازی میزبان جوړ کړي.
 - کله چې دومین موندل کیږي، دا integration API ته راغلی ترڅو د ځانګړي مجازی میزبان پاک کړي.
 - کله چې خودکار SSL فعال وي، دا integration په دې صورت کې چې مجازی میزبان جوړ شوی وي، Let's Encrypt ډیگه (certificate) ورکولو عمل तुरुन्त شروعوي.
 - اختیاريweise، له مخکې د Domain Mapping تنظیماتو کې د "Auto-create www subdomain" تنظیم کولو سره `www.` کاپیل (alias) اضافه یا اخستل کیږي.
 
-## پیشینې شرایطو ته اړتیا دي (Prerequisites)
+## پیشینې شرایطو ته اړتیا دي (Prerequisites) {#prerequisites}
 
 - یو فعال CyberPanel instance (v2.3 او تر او لوړ توصیه کیږي) چې له WordPress سرور څخه رامنځته کېدای شي.
 - یوه موجوده ویب پاڼه په CyberPanel کې چې که قبلاً د ستاسو WordPress شبکې اصلي جذر (root) خدمت کوي. دا integration نوی مجازی میزبانونه به دې سرور ته اضافه کړي.
 - CyberPanel API ورته رامنځته کیږي. احراز هویت ستاسو د CyberPanel مدیر کاربری او 비밀번호 له لارې کار کوي.
 - تر SSL خودکار ورکولو وړاندې، ستاسو د موندل شوي دومینहरूको DNS رکوردونه باید قبلاً ستاسو سرورको IP ته اشاره کړي.
 
-## اړتیاوې (Requirements)
+## اړتیاوې (Requirements) {#requirements}
 
 د록ي چې په ستاسو `wp-config.php` فایل کې د زیرکارناوې (constants) تعریف شي:
 
@@ -40,15 +40,15 @@ define('WU_CYBERPANEL_PHP_VERSION', 'PHP 8.2');  // Default: PHP 8.2
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com'); // د SSL سند لپاره کارول کیږي
 ```
 
-## تنظیم کولو لارښوونې (Setup Instructions)
+## تنظیم کولو لارښوونې (Setup Instructions) {#setup-instructions}
 
-### ۱. CyberPanel API فعال کړئ
+### ۱. CyberPanel API فعال کړئ {#1-enable-the-cyberpanel-api}
 
 ۱. به عنوانadministrator като CyberPanel dashboard کې لاگ وکړئ.
 ۲. راده **Security** > **SSL** ته ورشي او ډاډ ترلاسه کړئ چې SSL په CyberPanel چارچوب ذاتي کې فعال دی (د API لپاره اړینه ده ترڅو secure API calls کار کړي).
 ۳. CyberPanel API په پیشټه `https://your-server-ip:8090/api/` کې موجود دی. यसलाई فعال کولوको लागि कुनै اضافي ګام کی ضرورت छैन — مدیر प्रयोगकर्ताहरूको लागि यो डिफोल्ट रूपमा فعال हुन्छ.
 
-### ۲. Constants اضافه کړئ به wp-config.php
+### ۲. Constants اضافه کړئ به wp-config.php {#2-add-constants-to-wp-configphp}
 
 د `/* That's all, stop editing! */` लाइन څخه अगाडि داسې constants ورس ورکړئ:
 
@@ -66,7 +66,7 @@ define('WU_CYBERPANEL_AUTO_SSL', true);
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 ```
 
-### ۳. Integration فعال کړئ
+### ۳. Integration فعال کړئ {#3-enable-the-integration}
 
 ۱. په خپل WordPress network admin کې، به عنوان **Ultimate Multisite** > **Settings** ته ورشي.
 ۲. **Domain Mapping** ټب ته ورشي.
@@ -74,7 +74,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 ۴. **CyberPanel** integration فعال کړئ.
 ۵. **Save Changes** باندې کلیک وکړئ.
 
-### ۴. اتصال کی تایید (Verify Connectivity)
+### ۴. اتصال کی تایید (Verify Connectivity) {#4-verify-connectivity}
 
 Settings wizard کې内置 गरिएको connection test प्रयोग کړئ:
 
@@ -82,9 +82,9 @@ Settings wizard کې内置 गरिएको connection test प्रयोग
 ۲. روی **Test Connection** کلیک وکړئ.
 ۳. یو ساکسس پیغام ډاډ ورکوي چې پلاگین می‌تواند CyberPanel API ته رسېد شي او په سمه توګه تصدیق (authenticate) وکړي.
 
-## کار څنګه کوي؟
+## کار څنګه کوي؟ {#how-it-works}
 
-### Domain Mapping (دامنه مَپینګ)
+### Domain Mapping (دامنه مَپینګ) {#domain-mapping}
 
 کله چې د Ultimate Multisite کې یو دامنه مَپ کیږي:
 
@@ -93,7 +93,7 @@ Settings wizard کې内置 गरिएको connection test प्रयोग
 ۳. د داکیومنت رুট (document root) ته د خپل WordPress شبکه ریشه دایرکتوري ته اشاره ورکول کیږي.
 ۴. کله چې دامنه مَپ کول منځ ته راشي، همغږي `/api/deleteWebsite` رافرهنګوي ترڅو مجازی میزبان پاک کړی شي.
 
-### Auto-SSL (د خودکار SSL)
+### Auto-SSL (د خودکار SSL) {#auto-ssl}
 
 کله چې `WU_CYBERPANEL_AUTO_SSL` `true` وي:
 
@@ -103,11 +103,11 @@ Settings wizard کې内置 गरिएको connection test प्रयोग
 
 > **مهم:** DNS باید د Let's Encrypt له خوا دامنه کیتایلو لپاره د خپل سرور IP ته پوره پراخ (fully propagated) شي. که SSL ورکول مَپ کولو وروسته तुरुन्तै ناکام وي، نو DNS پراختیا انتظار وکړئ او د **SSL** > **Manage SSL** अन्तर्गत CyberPanel ډش‌بورد له لارې بیا SSL رافرهنګ کړئ.
 
-### www Subdomain (www زیرمجموعه)
+### www Subdomain (www زیرمجموعه) {#www-subdomain}
 
 که د Domain Mapping تنظیماتو کې **Auto-create www subdomain** فعال وي، نو هم همغږي د `www.<domain>` لپاره یو مجازی میزبان کاپیټل (alias) جوړوي او کله چې Auto-SSL فعال وي، نو هغه سرتیفیکات چې Apex او www بدلونه کوربه کوي، رافرهنګوي.
 
-### Email Forwarders (ای میل پرېښودونکي)
+### Email Forwarders (ای میل پرېښودونکي) {#email-forwarders}
 
 کله چې [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) addon فعال وي، نو CyberPanel هم کولی شي کارندونکو د ای میل فورواردونکي (customer email forwarders) وړاندې کړي. فورواردونکي پیغامونه یو د دامنه عمي (domain address) څخه بل ځای ته رانده وي، پرته له دې چې یو پوره میله (mailbox) جوړه کړو، کوم چې د بدلونونو لپاره ګټور دی لکه `info@customer-domain.test` یا `support@customer-domain.test`.
 
@@ -120,7 +120,7 @@ Settings wizard کې内置 गरिएको connection test प्रयोग
 
 که د فورواردونکي جوړول ناکامه وي، په пърوونو Ultimate Multisite activity logs وګورئ، بیا CyberPanel کې چمتو کړئ چې سرچيني دامنه شته ده او چې API کاربری ته ای میل مدیریت (email-management) کیتنی حقوق دي.
 
-## تنظیم کولو مرجع (Configuration Reference)
+## تنظیم کولو مرجع (Configuration Reference) {#configuration-reference}
 
 | Constant | اړینه؟ | پیشټه (Default) | شرح |
 |---|---|---|---|
@@ -132,7 +132,7 @@ Settings wizard کې内置 गरिएको connection test प्रयोग
 | `WU_CYBERPANEL_PHP_VERSION` | نه | `PHP 8.2` | د نوي مجازی میزبانونو لپاره PHP نسخه (باید په CyberPanel کې تثبیت شوي نسخه سره مطابقت ولري) |
 | `WU_CYBERPANEL_EMAIL` | نه | — | SSL سرتیفیکات ثبت کولو لپاره اړیکه ای میل |
 
-## مهم ټکي
+## مهم ټکي {#important-notes}
 
 CyberPanel د ګډون لپاره د سیشن پر بنسټ ټوکن (session-based token) احرازوي اوتکاریت کار کوي. دا همغږي (integration) په هر API کال کې ټوکن ترلاسه کولو ته خودکار عمل کوي.
 د دې لپاره چې تاسو کولی شئ، باید د CyberPanel مدیر حساب باندې د ویب پاڼو جوړولو او منځته وړلو اجازه وي.
@@ -140,33 +140,33 @@ CyberPanel په پیشټه پورْت `8090` मा کار کوي. که ستاس
 دا همغږي د DNS رکود مدیریت نه کوي. تاسو باید د دامین د DNS ته خپل سرورको IP ठेوضنه وکړئ تر دې وړاندې چې په Ultimate Multisite کې د دامین نقشہ (mapping) جوړوئ.
 که تاسو OpenLiteSpeed (OLS) کار کوئ، نو د ورټچوال هاست (virtual host) بدلونونو وروسته خودکار ګرانه (graceful restart) کیږي. هیڅ manuāl مداخلې نه دي اړین.
 
-## مشکلي حل (Troubleshooting)
+## مشکلي حل (Troubleshooting) {#troubleshooting}
 
-### API Connection Refused (د API اتصال رد شوې)
+### API Connection Refused (د API اتصال رد شوې) {#api-connection-refused}
 
 - وګورئ چې په سرور فایروال کې پورْت `8090` खुڵه ده او نه.
 - ډاغه کیدای شي چې `WU_CYBERPANEL_HOST` ارزښت باید صحیح پروتوکول (`https://`) او پورْت شامل وي.
 - وګورئ چې ستاسو CyberPanel SSL سرتیفیکټ صالح دی؛ ځینې خود-تولید شوي (self-signed) سرتیفیکټ TLS کیتکارۍ کې ناکامۍ لامل شي. یوازې په اعتمادمنو پرایवट نټ ورکونو کې `WU_CYBERPANEL_VERIFY_SSL` ته `false` تنظیم کړئ.
 
-### Authentication Errors (احرازويي غلطۍ)
+### Authentication Errors (احرازويي غلطۍ) {#authentication-errors}
 
 - د CyberPanel سره مستقیم لاگین गरेर وګورئ چې ستاسو `WU_CYBERPANEL_USERNAME` او `WU_CYBERPANEL_PASSWORD` صحیح دي.
 - که تکرار شوي ناکام لاگین کوششونه وشي، نو CyberPanel حسابونو ته قفل کوي. که قفلونه کیږي، نو په CyberPanel کې **Security** > **Brute Force Monitor** وګورئ.
 
-### Domain Not Created (د دامین جوړ نه کیدي)
+### Domain Not Created (د دامین جوړ نه کیدي) {#domain-not-created}
 
 - د API غلط پیغامونو لپاره Ultimate Multisite فعالیت لاگ (**Ultimate Multisite** > **Activity Logs**) وګورئ.
 - ډاغه کیدای شي چې په `WU_CYBERPANEL_PACKAGE` کې تعریف شوی پېکاج CyberPanel کې شته وي ( **Packages** > **List Packages**).
 - ډاغه ډاګه چې د دامین په CyberPanel کې د ویب پاڼه په توګه پہلے ثبت شوای – دوپل ویب پاڼو جوړول غلطي ورکوي.
 
-### SSL Certificate Not Issued (SSL سرتیفیکټ ورکړل نه شوی)
+### SSL Certificate Not Issued (SSL سرتیفیکټ ورکړل نه شوی) {#ssl-certificate-not-issued}
 
 DNS پوره ٿي چڪو آهي ته: `dig +short your-domain.com` توهان جي سرور جي IP ڏيکاريو.
 Let's Encrypt رفتار جي حد (rate limits) لاڳو ڪري ٿو. جيڪڏهن توهان نے تازو ڪجهه سرٽيفڪيٽ هڪ ئي ڊومين لاءِ जारी ڪيا آهن، ته دوبار ڪوش ڪرڻ کان اڳ انتظار ڪريو.
 سرٽيفڪيٽ ڏناءن جي غلطين جي تفصيل لاءِ **Logs** > **Error Logs** تحت CyberPanel ۾ SSL لاگز (logs) کي چكهو.
 ٻئي حل طور تي، توهان CyberPanel کان SSL مانيو ڪري سگهو ٿا: **SSL** > **Manage SSL** > ڊومين چونڊيو > **Issue SSL**.
 
-## حوالا
+## حوالا {#references}
 
 - CyberPanel API Documentation: https://docs.cyberpanel.net/docs/category/api
 - CyberPanel SSL Management: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

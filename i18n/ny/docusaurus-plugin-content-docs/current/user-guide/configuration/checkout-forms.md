@@ -3,7 +3,7 @@ title: Mawu wa Kufunga
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms ndi njira yofunika komanso yofunika kuti muli ndi kuyesa njira zosiyanasiyana pamene mukugwiritse ntchito wamalo watsopano.
 
@@ -21,13 +21,13 @@ Malingana, muli ndi ulemu wanu wosiyanasiyana, muli ndi ulemu wanu womwe mwapere
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Kusonyeza Zomwe Kuli m'Editor ya Checkout Form
+#### Kusonyeza Zomwe Kuli m'Editor ya Checkout Form {#checkout-form-editor-overview}
 
 M'Editor ya checkout form imapereka mwayi wosiyanasiyana wopanga forms yanu za registration. Kodi ndi imeneyi ndiyo mwayi wosiyanasiyana wa editor:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Kusintha Checkout Form
+### Kusintha Checkout Form {#editing-a-checkout-form}
 
 Muli ndi ulemu wanu womwe mungagwiritse ntchito za zinthu zosiyanasiyana. M'malo omwe muli ndi imeneyi, mudzakhudza kuphunzira form ya registration.
 
@@ -97,7 +97,7 @@ Kuti utenge shortcode ya fomu yanu, chita "Generate Shortcode" (Tenga Shortcode)
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Fomu ya Mwayi wa Mapulogera (The Pricing Table Field)
+### Fomu ya Mwayi wa Mapulogera (The Pricing Table Field) {#the-pricing-table-field}
 
 Fomu ya **Pricing Table** (Mwayi wa Mapulogera) imwoneza mapulogera anu pa fomu ya checkout kuti makalata (customers) angathe chifukisa plan. Momwe muli kukhazikitsa fomu ino, muli ndi zochokera zambiri zomwe mungayesulure:
 
@@ -115,17 +115,17 @@ Izi ndiyo momwe Pricing Table imwoneka pa fomu ya registration ya m'moyo (fronte
 
 Ngati muli kukhazikitsa mapulogera pa Pricing Table poyenera fomu imene imayenera kuti muchezedwe (complete) mfundo ya checkout ya mapulogera, editor imalipira chisoni. Gumule chisoni lili ndi chisoni lokonza (warning) kuti muli ndi chifukisa chomwe chimaperekedwa poyenera mopereka chifukisa chofunikira poyenera kupereka mapulogera kapena kukhazikitsa machitidwe osati.
 
-### Kufamba Kufamba Ntchito Yoperekera Mfundo ya Mulungu
+### Kufamba Kufamba Ntchito Yoperekera Mfundo ya Mulungu {#adding-a-period-selection-toggle}
 
 Ngati muliye yelekeze [Price Variations](creating-your-first-subscription-product#price-variations) pa zerevu (mifano, kukhala kwa mwezi na mwaka), muliye mwayi **Period Selection** field ku form yanu ya checkout. Field iyi imaliza toggle iliyoperekera wamene kuti mwayiye m'maka ya kulipira, ndipo table ya bei imalimbikira kwa wakati wote.
 
-#### Kufamba Chombo 1: Kufamba Ntchito Yoperekera Mfundo pa Zerevu Zanu
+#### Kufamba Chombo 1: Kufamba Ntchito Yoperekera Mfundo pa Zerevu Zanu {#step-1-set-up-price-variations-on-your-products}
 
 Mmodzi mwa zerevu, mwayiye kuti zili ndi price variations zikufotokozedwa. Mwayiye ku **Ultimate Multisite > Products**, mwayiye product imodzi, ndipo mwayiye ku tab ya **Price Variations** kuti mwayiye billing periods zina (mifano: Annual kwa mphamvu yofunika).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Kufamba Chombo 2: Kufamba Ntchito Yoperekera Mfundo pa Form Yanu ya Checkout
+#### Kufamba Chombo 2: Kufamba Ntchito Yoperekera Mfundo pa Form Yanu ya Checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Mwayiye ku **Ultimate Multisite > Checkout Forms** ndipo mwayiye checkout form yanu.
 
@@ -148,13 +148,13 @@ Mmodzi mwa zerevu, mwayiye kuti zili ndi price variations zikufotokozedwa. Mwayi
 
 7. Click **Save Field**.
 
-#### Step 3: Panga Koma Field Upambira ya Pricing Table
+#### Step 3: Panga Koma Field Upambira ya Pricing Table {#step-3-position-the-field-above-the-pricing-table}
 
 Kuti mwanafunzi ampe uzozi woyelekeza, kuli mpe kuti Period Selection field ipereke **mbele** ya Pricing Table field m'checkout step yanu. Mungathe kudrag fields kuti muubadire mpaka m'checkout form editor. Izi zikukwera kuti abwino mwanafunzi ampole chifukwa cha m'billing period ndipo pamene anayamba kuona zinthu za bei za mwezi woyelekeza.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Kuti Zikufunika M'frontend
+#### Kuti Zikufunika M'frontend {#how-it-works-on-the-frontend}
 
 Puma muli ndi kukhazikitsa, abwino amene akulowa pa registration page yanu adzakhulupatsa period selector m'mbele ya pricing table. Pamene amayamba ku-click billing period yosiyanasiyana:
 
@@ -162,7 +162,7 @@ Puma muli ndi kukhazikitsa, abwino amene akulowa pa registration page yanu adzak
   * Ngati **Force Different Durations** imapangidwa kuti iye, zinthu zomwe sizi ndi variation ya bei kwa period yomwe yali yoperekedwa zimapangidwa kuti zikuyesa.
   * Ngati **Force Different Durations** imapangidwa kuti iye, zonse za products zimayeneza komwe sizi ndi variation kwa period yomwe yali yoperekedwa (zizakhulupatsa bei yomwe yali yoperekedwa).
 
-#### Kukhazikitsa Period Selection M'URL
+#### Kukhazikitsa Period Selection M'URL {#pre-selecting-a-billing-period-via-url}
 
 Mungathe kudzagwira pre-select product ndi billing period m'URL. Ultimate Multisite imapambana ndi URL patternsizi zimene:
 
@@ -170,11 +170,11 @@ Mungathe kudzagwira pre-select product ndi billing period m'URL. Ultimate Multis
   * `/register/premium/12` — Imapangidwa kuti iye product ndi mwezi woyelekeza wa 12 months
   * `/register/premium/1/year` — Imapangidwa kuti iye product ndi mwezi woyelekeza wa mwaka 1
 
-### Template Selection Field
+### Template Selection Field {#the-template-selection-field}
 
 Template Selection field limapangidwa kuti abwino amene akulowa ampole site template m'checkout. Iyi imapambana kwa default m'single step nd inu multi-step checkout form templates zomwe zimapambanira m'Ultimate Multisite v2.6.1.
 
-#### Kukhazikitsa field ndi chifukwa cha m'manual
+#### Kukhazikitsa field ndi chifukwa cha m'manual {#adding-the-field-manually}
 
 
 
@@ -187,11 +187,11 @@ Muli mukufuna ndi form yomwe imaperekedwa m'mene omwe uliyi m'mene wa v2.6.1, ka
    - **Label** — Izi ndi m'mene omwe anthu amakuthandizira m'mene wopereka template (mwachitsanzo "Chonza template ya site").
    - **Required** — Kuti anthu kukhala ndi kuyesa template poyamba pa chiyembekeza.
 
-#### Kodi imapereka bwanji?
+#### Kodi imapereka bwanji? {#how-it-works}
 
 Pamene munthu amapereka template m'mene wopereka, Ultimate Multisite imapereka kuti itimitsedwe pamene imaperekera site yanu yosiyanasiyana. Templates zomwe zimapereka zikuwoneka kuchokera kwa listi ya **Site Templates** yanu (**Ultimate Multisite > Site Templates**). Zomwe zimapereka zikuyenera kuti zikukhale zikuperekedwa kwa anthu.
 
-### Checkout-form base domains
+### Checkout-form base domains {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 imapereka kuti domains zomwe zimapereka m'mene wopereka **Site URL** zimapereka kuti ndi network base domains. Onesha settings ya available-domain yomwe imapereka muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli muli m
 

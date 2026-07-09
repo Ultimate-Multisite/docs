@@ -4,13 +4,13 @@ title: Filtre - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filtre: get_blogs_of_user
+# Filtre: get_blogs_of_user {#filter-getblogsofuser}
 
 Aquí teniu el filtre original de WP per referència, per estar segur.
 
 Filtra la llista de sites dels quals pertany un usuari.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tip | Descripció |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Filtra la llista de sites dels quals pertany un usuari.
 | $user_id | `int` | ID de l'usuari. |
 | $all | `bool` | Si el resultat (l'array de sites retornat) ha de contenir tots els sites, inclosos aquells marcats com 'deleted', 'archived' o 'spam'. Valor per defecte: false. |
 
-### Des de
+### Des de {#since}
 
 - 2.0.11
-### Font
+### Font {#source}
 
 Definit en [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851) a la línia 851

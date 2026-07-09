@@ -4,11 +4,11 @@ title: Фильтр - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Фильтр: wu_country_get_administrative_division_name
+# Фильтр: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Илнең административ бүленешләренең матур исемен кайтара.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | сүзләрне баш хәрефкә әйләндерәбезме. |
 | $current_country | `\WP_Ultimo\Country\Country` | Агымдагы класс экземпляры. |
 
-### Версиядән башлап
+### Версиядән башлап {#since}
 
 - 2.0.11
-### Чыганак
+### Чыганак {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) эчендә, 250 нче юлда билгеләнгән
 
 
-## Кайтара
+## Кайтара {#returns}
 Үзгәртелгән бүленеш исемен.

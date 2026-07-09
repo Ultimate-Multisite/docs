@@ -3,13 +3,13 @@ title: Ríomhphoist agus Craoltaí a Sheoladh
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ríomhphoist agus Craoltaí a Sheoladh (v2)
+# Ríomhphoist agus Craoltaí a Sheoladh (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do Ultimate Multisite leagan 2.x.**_
 
 Tagann Ultimate Multisite le gné a ligfidh duit cumarsáid a dhéanamh le do chustaiméirí trí ríomhphost a sheoladh chuig úsáideoir spriocdhírithe nó chuig grúpa úsáideoirí, chomh maith le fógraí a sheoladh ar a Dashboard riaracháin chun fógraí a chraoladh
 
-## Cuir fógraí riaracháin le Dashboard do chustaiméirí le Craoltaí
+## Cuir fógraí riaracháin le Dashboard do chustaiméirí le Craoltaí {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ag baint úsáid as gné chraolta Ultimate Multisite, is féidir leat **fógraí riaracháin** a chur le Dashboard riaracháin fho-shuíomh d’úsáideora.
 
@@ -51,7 +51,7 @@ Tar éis do theachtaireacht a chruthú, is féidir leat an cnaipe **Seol** a bhr
 
 Agus sin é. Ba cheart don fhógra riaracháin taispeáint láithreach ar Dashboard d’úsáideora.
 
-## Seol ríomhphoist chuig do chustaiméirí
+## Seol ríomhphoist chuig do chustaiméirí {#send-emails-to-your-customers}
 
 Ag baint úsáid as gné chraolta Ultimate Multisite, is féidir leat ríomhphost a sheoladh chuig d’úsáideoirí. Tá rogha agat an ríomhphost a sheoladh chuig úsáideoirí sonracha amháin nó spriocghrúpa úsáideoirí ar leith a aimsiú bunaithe ar an táirge nó ar an bplean faoina bhfuil siad suibscríofa.
 
@@ -81,11 +81,11 @@ Tar éis do theachtaireacht a chruthú, is féidir leat an cnaipe **Seol** a bhr
 
 Agus sin chomh héasca is atá sé ríomhphost a sheoladh chuig d’úsáideoirí deiridh ag baint úsáid as an ngné chraolta.
 
-## Ríomhphoist chórais
+## Ríomhphoist chórais {#system-emails}
 
 Is iad ríomhphoist chórais in Ultimate Multisite na **fógraí uathoibríocha** sin a sheolann an córas tar éis gníomhartha áirithe amhail clárú, íocaíocht, mapáil fearainn, srl. Is féidir na ríomhphoist seo a chur in eagar nó a mhodhnú ó shocruithe Ultimate Multisite. Tagann sé freisin le gné a ligfidh duit socruithe atá ann cheana a athshocrú agus a iompórtáil ó shuiteáil Ultimate Multisite eile.
 
-### Athshocrú & Iompórtáil
+### Athshocrú & Iompórtáil {#resetting--importing}
 
 Is féidir le leaganacha nua Ultimate Multisite, chomh maith le breiseáin, ríomhphoist nua a chlárú ó am go chéile agus déanfaidh siad amhlaidh.
 
@@ -93,7 +93,7 @@ Chun coinbhleachtaí agus saincheisteanna eile a chosc, **ní chuirfimid na teim
 
 Mar sin féin, is féidir le sár-riarthóirí agus gníomhairí na ríomhphoist nua-chláraithe seo a iompórtáil tríd an uirlis iompórtála. Cruthóidh an próiseas sin ríomhphost córais nua le hinneachar agus cumraíocht an teimpléid ríomhphoist nua, rud a ligeann don sár-riarthóir aon mhodhnuithe is mian leo a dhéanamh nó iad a choinneáil mar atá.
 
-#### Conas ríomhphoist chórais a iompórtáil
+#### Conas ríomhphoist chórais a iompórtáil {#how-to-import-system-emails}
 
 Téigh chuig do leathanach Socruithe Ultimate Multisite agus téigh chuig an gcluaisín **Ríomhphoist**.
 
@@ -111,7 +111,7 @@ Ansin, is féidir leat roghanna Iompórtáil Ríomhphoist a scoránú chun a fhe
 
 <!-- Gabháil scáileáin ar fáil: modhóg Athshocraigh agus Iompórtáil agus na roghanna Iompórtáil Ríomhphoist leathnaithe -->
 
-#### Ríomhphoist Chórais a Athshocrú
+#### Ríomhphoist Chórais a Athshocrú {#reseting-system-emails}
 
 Uaireanta eile, tuigfidh tú nach bhfuil na hathruithe a rinne tú ar theimpléad ríomhphoist ar leith ag obair duit a thuilleadh agus gur mhaith leat é a athshocrú chuig a **staid réamhshocraithe**.
 

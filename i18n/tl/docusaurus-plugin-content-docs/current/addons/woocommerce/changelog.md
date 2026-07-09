@@ -3,7 +3,7 @@ title: Changelog ng WooCommerce Integration
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Talaan ng Pagbabago ng WooCommerce Integration
+# Talaan ng Pagbabago ng WooCommerce Integration {#woocommerce-integration-changelog}
 
 Bersyon 2.2.0 - Inilabas noong 2026-07-01
 * Bago: Ang mga halaga ng buwis ng Ultimate Multisite ay lumalabas na ngayon bilang hiwalay na mga linya ng bayarin sa WooCommerce sa checkout, kaya mas malinaw ang kabuuan ng buwis bago ang pagbabayad.

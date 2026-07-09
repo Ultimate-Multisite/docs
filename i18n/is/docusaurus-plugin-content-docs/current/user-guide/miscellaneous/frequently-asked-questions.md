@@ -3,7 +3,7 @@ title: Vanlegar spurningar
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Mikildu spurningar
+# Mikildu spurningar {#frequently-asked-questions}
 
 Hér eru nokkar **Mikildu spurningar**, sem oftast kemur upp í viðbragðsmiðlunum.
 

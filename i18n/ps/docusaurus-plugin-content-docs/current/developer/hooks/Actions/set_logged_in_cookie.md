@@ -4,11 +4,11 @@ title: کړنه - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 سمدستي مخکې له دې فعالېږي چې د ننوتلي کارن د تصدیق cookie وټاکل شي.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | د تصدیق سکیم. تلواله 'logged_in'. |
 | $token | `string` | د دې cookie لپاره د کارن د ناستې token. |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Source
+### Source {#source}
 
 په [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) کې په ۱۴۱ کرښه تعریف شوی.

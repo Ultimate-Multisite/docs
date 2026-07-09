@@ -3,13 +3,13 @@ title: Að senda tölvupósta og fjöldasendingar
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Að senda tölvupósta og útsendingar (v2)
+# Að senda tölvupósta og útsendingar (v2) {#sending-emails-and-broadcasts-v2}
 
 _**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 
 Ultimate Multisite kemur með eiginleika sem gerir þér kleift að hafa samskipti við viðskiptavini þína með því að senda tölvupóst til marknotanda eða hóps notenda, ásamt því að senda tilkynningar á admin Dashboard þeirra til að senda út tilkynningar
 
-## Bættu admin-tilkynningum við Dashboard viðskiptavina þinna með útsendingum
+## Bættu admin-tilkynningum við Dashboard viðskiptavina þinna með útsendingum {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Með því að nota útsendingareiginleika Ultimate Multisite geturðu bætt **admin-tilkynningum** við admin Dashboard undirsíðu notandans þíns.
 
@@ -51,7 +51,7 @@ Eftir að hafa búið til skilaboðin þín geturðu síðan ýtt á **Senda** h
 
 Og þar með er það komið. Admin-tilkynningin ætti strax að birtast á Dashboard notandans þíns.
 
-## Sendu tölvupósta til viðskiptavina þinna
+## Sendu tölvupósta til viðskiptavina þinna {#send-emails-to-your-customers}
 
 Með því að nota útsendingareiginleika Ultimate Multisite geturðu sent tölvupóst til notenda þinna. Þú hefur val um að senda tölvupóstinn aðeins til tiltekinna notenda eða miða á tiltekinn notendahóp út frá vörunni eða áskriftarleiðinni sem þeir eru áskrifendur að.
 
@@ -81,11 +81,11 @@ Eftir að hafa búið til skilaboðin þín geturðu ýtt á **Senda** hnappinn.
 
 Og svona auðvelt er að senda tölvupóst til endanotenda þinna með útsendingareiginleikanum.
 
-## Kerfistölvupóstar
+## Kerfistölvupóstar {#system-emails}
 
 Kerfistölvupóstar í Ultimate Multisite eru þær **sjálfvirku tilkynningar** sem kerfið sendir eftir ákveðnar aðgerðir eins og skráningu, greiðslu, lénsvarpun o.s.frv. Hægt er að breyta eða aðlaga þessa tölvupósta úr stillingum Ultimate Multisite. Það kemur einnig með eiginleika sem gerir þér kleift að endurstilla og flytja inn núverandi stillingar úr annarri Ultimate Multisite uppsetningu.
 
-### Endurstilling og innflutningur
+### Endurstilling og innflutningur {#resetting--importing}
 
 Nýjar Ultimate Multisite útgáfur, sem og viðbætur, geta og munu skrá nýja tölvupósta af og til.
 
@@ -93,7 +93,7 @@ Til að koma í veg fyrir árekstra og önnur vandamál **munum við ekki bæta 
 
 Hins vegar geta super admin og umboðsaðilar flutt inn þessa nýskráðu tölvupósta með innflutningstólinu. Það ferli mun búa til nýjan kerfistölvupóst með innihaldi og stillingum nýja tölvupóstssniðmátsins, sem gerir super admin kleift að gera hvaða breytingar sem hann vill eða halda þeim óbreyttum.
 
-#### Hvernig á að flytja inn kerfistölvupósta
+#### Hvernig á að flytja inn kerfistölvupósta {#how-to-import-system-emails}
 
 Farðu á stillingasíðu Ultimate Multisite og opnaðu **Tölvupóstar** flipann.
 
@@ -111,7 +111,7 @@ Síðan geturðu kveikt eða slökkt á valkostunum Flytja inn tölvupósta til 
 
 <!-- Skjámynd ekki tiltæk: Reset and Import-gluggi með Import Emails-valkostina opna -->
 
-#### Endurstilling kerfistölvupósta
+#### Endurstilling kerfistölvupósta {#reseting-system-emails}
 
 Stundum áttarðu þig á því að breytingarnar sem þú gerðir á tilteknu tölvupóstsniðmáti virka ekki lengur fyrir þig og þú vilt endurstilla það í **sjálfgefna stöðu**.
 

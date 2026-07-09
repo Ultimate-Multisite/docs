@@ -3,15 +3,15 @@ title: Yeme-İçme Menüleri
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Otel/Restoran Menüleri
+# Otel/Restoran Menüleri {#hospitality-menus}
 
 **Otel/Restoran Menüleri** özelliği, Theme Builder'ın yapılandırılmış yiyecek ve içecek menü sayfalarını doğrudan WordPress sitenize oluşturmasına ve yerleştirmesine olanak tanır.
 
-## Genel Bakış
+## Genel Bakış {#overview}
 
 Theme Builder, artık restoranlar, kafeler, barlar ve catering hizmetleri gibi konaklama sektöründeki işletmeler için profesyonel, yapılandırılmış menü sayfaları oluşturabilir. Bu menüler sitenizin tasarımına tamamen entegre olur ve kolayca güncellenip yönetilebilir.
 
-## Desteklenen Konaklama Türleri
+## Desteklenen Konaklama Türleri {#supported-hospitality-types}
 
 - **Restoranlar** — tam hizmet veren yemek menüleri
 - **Kafeler** — kahve ve hafif atıştırmalık menüleri
@@ -21,9 +21,9 @@ Theme Builder, artık restoranlar, kafeler, barlar ve catering hizmetleri gibi k
 - **Food Truck'lar** — mobil yemek hizmeti menüleri
 - **Bira ve Şaraphaneler** — açıklamalara sahip içecek menüleri
 
-## Menü Yapısı
+## Menü Yapısı {#menu-structure}
 
-### Menü Kategorileri
+### Menü Kategorileri {#menu-categories}
 
 Menüler kategorilere ayrılmıştır:
 
@@ -34,7 +34,7 @@ Menüler kategorilere ayrılmıştır:
 - **İçecekler** — içecekler (alkollü ve alkolsüz)
 - **Özel Günler** — günlük veya mevsimlik özel menüler
 
-### Menü Öğesi Formatı
+### Menü Öğesi Formatı {#menu-item-format}
 
 Her menü öğesi şunları içerir:
 
@@ -49,7 +49,7 @@ Her menü öğesi şunları içerir:
 }
 ```
 
-#### Öğe Alanları
+#### Öğe Alanları {#item-fields}
 
 | Alan | Tip | Açıklama |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Her menü öğesi şunları içerir:
 | `allergens` | array | Yaygın alerjenler (Kuruyemiş, Kabuklu Deniz Ürünü vb.) |
 | `availability` | string | Ne zaman mevcut (Günlük, Mevsimlik vb.) |
 
-## Otel/Restoran Menüleri Oluşturma
+## Otel/Restoran Menüleri Oluşturma {#creating-hospitality-menus}
 
-### Adım 1: Menü Bilgisini Sağlayın
+### Adım 1: Menü Bilgisini Sağlayın {#step-1-provide-menu-information}
 
 Theme Builder'a menünüz hakkında bilgi verin:
 
@@ -70,7 +70,7 @@ Theme Builder'a menünüz hakkında bilgi verin:
 İtalyan restoranım için başlangıçlar, makarna yemekleri, ana yemekler ve tatlıları içeren bir restoran menüsü oluştur. Fiyatları ve açıklamaları ekle.
 ```
 
-### Adım 2: Theme Builder Menüyü Oluşturur
+### Adım 2: Theme Builder Menüyü Oluşturur {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -80,7 +80,7 @@ Theme Builder:
 4. Fiyatları ve açıklamaları biçimlendirir
 5. Diyet ve alerjen bilgilerini ekler
 
-### Adım 3: Gözden Geçirin ve Özelleştirin
+### Adım 3: Gözden Geçirin ve Özelleştirin {#step-3-review-and-customize}
 
 Şunları yapabilirsiniz:
 
@@ -90,9 +90,9 @@ Theme Builder:
 4. Açıklamaları ve diyet bilgilerini güncelleyebilirsiniz
 5. Stil ve düzenlemeyi ayarlayabilirsiniz
 
-## Menü Görüntüleme Seçenekleri
+## Menü Görüntüleme Seçenekleri {#menu-display-options}
 
-### Tam Menü Sayfası
+### Tam Menü Sayfası {#full-menu-page}
 
 Tüm menünüzü gösteren özel bir sayfa:
 
@@ -101,7 +101,7 @@ Tüm menünüzü gösteren özel bir sayfa:
 - Yazdırılabilir düzen
 - Mobil cihazlara uyumlu tasarım
 
-### Menü Widget'ı
+### Menü Widget'ı {#menu-widget}
 
 Menü bölümlerini diğer sayfalara gömün:
 
@@ -110,7 +110,7 @@ Menü bölümlerini diğer sayfalara gömün:
 - Bar sayfasında içecek menüsü
 - Altbilgide tatlı vitrini
 
-### Menü PDF'i
+### Menü PDF'i {#menu-pdf}
 
 İndirilebilir bir PDF menüsü oluşturun:
 
@@ -119,9 +119,9 @@ Menü bölümlerini diğer sayfalara gömün:
 - Görseller ve açıklamalar içerir
 - Paylaşması ve e-posta ile göndermesi kolay
 
-## Diyet ve Alerjen Bilgileri
+## Diyet ve Alerjen Bilgileri {#dietary-and-allergen-information}
 
-### Diyet Nitelikleri
+### Diyet Nitelikleri {#dietary-attributes}
 
 Öğeleri diyet bilgileriyle işaretleyin:
 
@@ -133,7 +133,7 @@ Menü bölümlerini diğer sayfalara gömün:
 - **Düşük Karbonhidratlı** — azaltılmış karbonhidrat
 - **Yüksek Protein** — protein açısından zengin
 
-### Alerjen Uyarıları
+### Alerjen Uyarıları {#allergen-warnings}
 
 Yaygın alerjenleri ekleyin:
 
@@ -146,9 +146,9 @@ Yaygın alerjenleri ekleyin:
 - **Gluten** — buğday ve gluten içeren tahıllar
 - **Susam** — susam tohumu ve yağı
 
-## Menü Yönetimi
+## Menü Yönetimi {#menu-management}
 
-### Fiyat Güncelleme
+### Fiyat Güncelleme {#updating-prices}
 
 Menü fiyatlarını kolayca güncelleyin:
 
@@ -158,7 +158,7 @@ Menü fiyatlarını kolayca güncelleyin:
 4. Değişiklikleri kaydedin
 5. Değişiklikler sitenizde anında görünür
 
-### Mevsimlik Öğeler Ekleme
+### Mevsimlik Öğeler Ekleme {#adding-seasonal-items}
 
 Mevsimlik menü varyasyonları oluşturun:
 
@@ -168,7 +168,7 @@ Mevsimlik menü varyasyonları oluşturun:
 4. Kullanılabilirlik tarihlerini planlayın
 5. Mevsim boyunca otomatik olarak gösterilir
 
-### Özel Günleri Yönetme
+### Özel Günleri Yönetme {#managing-specials}
 
 Günlük veya haftalık özel menüler sergileyin:
 
@@ -178,7 +178,7 @@ Günlük veya haftalık özel menüler sergileyin:
 4. Günlük veya haftalık güncelleyin
 5. Eski özel günleri arşivleyin
 
-## Theme Builder ile Entegrasyon
+## Theme Builder ile Entegrasyon {#integration-with-theme-builder}
 
 Otel/restoran siteleri için Theme Builder kullanırken:
 
@@ -188,9 +188,9 @@ Otel/restoran siteleri için Theme Builder kullanırken:
 4. **Mobil optimizasyon** — menüler telefonlarda güzel görünür
 5. **SEO optimizasyonu** — menüler arama motoru dostudur
 
-## En İyi Uygulamalar
+## En İyi Uygulamalar {#best-practices}
 
-### Menü Tasarımı
+### Menü Tasarımı {#menu-design}
 
 - **Net düzenleme** — mantıksal kategori yapısı
 - **Okunabilir açıklamalar** — iştah açıcı ve bilgilendirici
@@ -198,7 +198,7 @@ Otel/restoran siteleri için Theme Builder kullanırken:
 - **Profesyonel fotoğraflar** — yüksek kaliteli yiyecek görselleri
 - **Boşluk kullanımı** — sayfayı kalabalıklaştırmayın
 
-### İçerik
+### İçerik {#content}
 
 - **Doğru açıklamalar** — öğeleri doğru bir şekilde tanımlayın
 - **Özel günleri vurgulayın** — özel günleri öne çıkarın
@@ -206,7 +206,7 @@ Otel/restoran siteleri için Theme Builder kullanırken:
 - **Düzenli güncelleyin** — fiyatları ve öğeleri güncel tutun
 - **İştah açıcı dil kullanın** — öğeleri lezzetli gösterin
 
-### Erişilebilirlik
+### Erişilebilirlik {#accessibility}
 
 - **Okunabilir yazı tipleri** — net, okunabilir yazı tipleri kullanın
 - **Yeterli kontrast** — metnin okunabilir olduğundan emin olun
@@ -214,9 +214,9 @@ Otel/restoran siteleri için Theme Builder kullanırken:
 - **Alerjen uyarıları** — alerjenleri belirgin bir şekilde gösterin
 - **Mobil uyumlu** — tüm cihazlarda test edin
 
-## Örnekler
+## Örnekler {#examples}
 
-### Restoran Menü Yapısı
+### Restoran Menü Yapısı {#restaurant-menu-structure}
 
 ```
 Başlangıçlar
@@ -240,7 +240,7 @@ Tatlılar
 └── Gelato Selection
 ```
 
-### Kafe Menü Yapısı
+### Kafe Menü Yapısı {#cafe-menu-structure}
 
 ```
 Kahve
@@ -259,7 +259,7 @@ Sandviçler
 └── Vegetarian Wrap
 ```
 
-## İlgili Özellikler
+## İlgili Özellikler {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — navigasyon menüleri oluşturun
 - [Design Direction](./design-direction.md) — sitenizin tasarımını özelleştirin

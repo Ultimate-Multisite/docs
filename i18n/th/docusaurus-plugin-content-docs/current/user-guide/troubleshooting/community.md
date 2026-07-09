@@ -3,7 +3,7 @@ title: ชุมชน
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# วิธีเข้าร่วม Ultimate Multisite Community
+# วิธีเข้าร่วม Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community เป็นพื้นที่ที่คุณสามารถพูดคุยกับผู้ใช้ Ultimate Multisite คนอื่นๆ และแบ่งปันเคล็ดลับ ประสบการณ์ และอื่นๆ อีกมากมาย หากต้องการเข้าถึง Ultimate Multisite Community ให้ไปที่ https://community.ultimatemultisite.com/home
 

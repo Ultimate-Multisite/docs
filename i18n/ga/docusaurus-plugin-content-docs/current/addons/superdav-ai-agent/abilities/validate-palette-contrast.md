@@ -3,15 +3,15 @@ title: Bailíochtaigh Codarsnacht an Phailéid
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Codarsnacht Pailéid a Bhailíochtú
+# Codarsnacht Pailéid a Bhailíochtú {#validate-palette-contrast}
 
 Seiceálann an cumas **Codarsnacht Pailéid a Bhailíochtú** péirí dathanna i do phailéad dearaidh le haghaidh chomhlíonadh WCAG (Treoirlínte Inrochtaineachta Ábhair Gréasáin) sula gcuirtear i bhfeidhm iad ar do théama.
 
-## Forbhreathnú
+## Forbhreathnú {#overview}
 
 Cinntíonn an cumas seo go gcomhlíonann scéim dathanna do tsuímh caighdeáin inrochtaineachta trí chóimheasa codarsnachta idir téacs agus dathanna cúlra a bhailíochtú. Cabhraíonn sé le teaglamaí dathanna a d’fhéadfadh a bheith deacair le léamh d’úsáideoirí a bhfuil lagú radhairc orthu a chosc.
 
-## Formáid Ionchuir
+## Formáid Ionchuir {#input-format}
 
 Glacann an cumas le pailéad dathanna mar ionchur:
 
@@ -35,7 +35,7 @@ Glacann an cumas le pailéad dathanna mar ionchur:
 }
 ```
 
-### Paraiméadair
+### Paraiméadair {#parameters}
 
 | Paraiméadar | Cineál | Riachtanach | Cur síos |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Glacann an cumas le pailéad dathanna mar ionchur:
 | `wcag_level` | string | Níl | Leibhéal comhlíonta WCAG: "A", "AA" (réamhshocrú), nó "AAA" |
 | `pairs_to_check` | array | Níl | Péirí dathanna sonracha le bailíochtú (m.sh., `["primary-text", "background-text"]`) |
 
-## Leibhéil WCAG a Sheiceáiltear
+## Leibhéil WCAG a Sheiceáiltear {#wcag-levels-checked}
 
 Bailíochtaíonn an cumas cóimheasa codarsnachta de réir chaighdeáin WCAG:
 
@@ -56,7 +56,7 @@ Bailíochtaíonn an cumas cóimheasa codarsnachta de réir chaighdeáin WCAG:
 - **Gnáth-Théacs** — téacs níos lú ná 18pt (nó 14pt trom)
 - **Téacs Mór** — téacs 18pt nó níos mó (nó 14pt trom nó níos mó)
 
-## Scéimre Aschuir
+## Scéimre Aschuir {#output-schema}
 
 Filleann an cumas tuarascáil bhailíochtaithe mhionsonraithe:
 
@@ -95,7 +95,7 @@ Filleann an cumas tuarascáil bhailíochtaithe mhionsonraithe:
 }
 ```
 
-### Réimsí Aschuir
+### Réimsí Aschuir {#output-fields}
 
 | Réimse | Cineál | Cur síos |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Filleann an cumas tuarascáil bhailíochtaithe mhionsonraithe:
 | `status` | string | "pass" nó "fail" do gach péire |
 | `recommendations` | array | Moltaí chun péirí a theipeann orthu a fheabhsú |
 
-## Sampla Úsáide
+## Sampla Úsáide {#usage-example}
 
 **Leid:**
 ```
@@ -119,7 +119,7 @@ Bailíochtaíonn an cumas gach teaglaim dathanna agus filleann sé:
 - ✅ Cúlra + Téacs: cóimheas 12.1:1 (pasann WCAG AAA)
 - Tríd is tríd: Comhlíontach le WCAG AA
 
-## Comhtháthú le Theme Builder
+## Comhtháthú le Theme Builder {#integration-with-theme-builder}
 
 Agus roghnú treo dearaidh Theme Builder á úsáid, déanann an cumas Codarsnacht Pailéid a Bhailíochtú:
 
@@ -129,7 +129,7 @@ Agus roghnú treo dearaidh Theme Builder á úsáid, déanann an cumas Codarsnac
 4. Moltaí a sholáthar do phéirí neamhchomhlíontacha
 5. Cosc a chur ar scéimeanna dathanna neamh-inrochtana a chur i bhfeidhm
 
-## Dea-Chleachtais
+## Dea-Chleachtais {#best-practices}
 
 - **Tosaigh le leibhéal AA** — is é WCAG AA an caighdeán don chuid is mó de shuíomhanna gréasáin
 - **Tástáil roimh chur i bhfeidhm** — bailíochtaigh do phailéad sula ngeallann tú do dhearadh
@@ -137,7 +137,7 @@ Agus roghnú treo dearaidh Theme Builder á úsáid, déanann an cumas Codarsnac
 - **Cuir roghanna úsáideoirí san áireamh** — d’fhéadfadh íogaireacht bhreise do dhath a bheith ag úsáideoirí áirithe
 - **Úsáid seiceálaithe codarsnachta** — comhcheangail an cumas seo le huirlisí brabhsálaí le haghaidh fíoraithe
 
-## Péirí a Theipeann Orthu agus Moltaí
+## Péirí a Theipeann Orthu agus Moltaí {#failing-pairs-and-recommendations}
 
 Má theipeann ar phéire dathanna sa bhailíochtú, soláthraíonn an cumas moltaí:
 
@@ -155,7 +155,7 @@ Má theipeann ar phéire dathanna sa bhailíochtú, soláthraíonn an cumas molt
 }
 ```
 
-## Cumais Ghaolmhara
+## Cumais Ghaolmhara {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — cruthaigh lógónna le do phailéad dathanna bailíochtaithe
 - [Create Menu](./create-menu.md) — tóg nascleanúint le dathanna inrochtana

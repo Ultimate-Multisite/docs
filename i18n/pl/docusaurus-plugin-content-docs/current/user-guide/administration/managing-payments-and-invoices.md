@@ -3,9 +3,9 @@ title: Zarządzanie płatnościami i fakturami
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Zarządzanie płatnościami i fakturami
+# Zarządzanie płatnościami i fakturami {#managing-payments-and-invoices}
 
-## Ustawienia płatności
+## Ustawienia płatności {#payment-settings}
 
 Zanim zaczniesz otrzymywać płatności, musisz skonfigurować ustawienia związane z płatnościami. Przejdź do **Ultimate Multisite → Settings** i kliknij kartę **Payment**.
 
@@ -15,7 +15,7 @@ Oto pełny widok strony ustawień płatności:
 
 ![Pełna strona ustawień płatności](/img/admin/settings-payments-full.png)
 
-### Ogólne opcje płatności
+### Ogólne opcje płatności {#general-payment-options}
 
 W ustawieniach ogólnych możesz skonfigurować:
 
@@ -24,7 +24,7 @@ W ustawieniach ogólnych możesz skonfigurować:
 
 ![Ustawienia bramki płatności](/img/admin/settings-payments-options.png)
 
-### Bramki płatności
+### Bramki płatności {#payment-gateways}
 
 Ultimate Multisite obsługuje wiele bramek płatności. Możesz włączyć i skonfigurować każdą z nich na karcie ustawień Payment.
 
@@ -40,11 +40,11 @@ Każda bramka ma własną sekcję konfiguracji, w której wprowadzasz klucze API
 
 ![Dodatkowe ustawienia bramki](/img/admin/settings-payments-gateways-2.png)
 
-### Tryb Sandbox
+### Tryb Sandbox {#sandbox-mode}
 
 Możesz włączyć **Tryb Sandbox**, aby przetestować integrację płatności przed uruchomieniem produkcyjnym. Gdy tryb sandbox jest aktywny, nie zostaną naliczone żadne rzeczywiste opłaty.
 
-## Przeglądanie płatności
+## Przeglądanie płatności {#viewing-payments}
 
 Przejdź do strony **Płatności** w Ultimate Multisite, aby zobaczyć wszystkie transakcje w swojej sieci.
 
@@ -54,7 +54,7 @@ Możesz filtrować płatności według statusu (zakończone, oczekujące, nieuda
 
 Kliknij płatność, aby zobaczyć jej pełne szczegóły, w tym pozycje, powiązane członkostwo, informacje o kliencie oraz dane bramki płatności.
 
-## Faktury
+## Faktury {#invoices}
 
 Ultimate Multisite może automatycznie generować faktury dla płatności. Możesz dostosować szablon faktury i format numeracji w ustawieniach Payment.
 

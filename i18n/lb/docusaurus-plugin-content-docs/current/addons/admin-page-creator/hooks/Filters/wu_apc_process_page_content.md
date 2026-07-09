@@ -4,11 +4,11 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Erlaabt Entwéckler, mam finalen Inhalt ze spillen
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Name | Typ | Beschreiwung |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Erlaabt Entwéckler, mam finalen Inhalt ze spillen
 | $to_replace | `array` | Array mat de Platzhalteren. |
 | $placeholder_count | `int` | Unzuel vun de fonntene Platzhalteren. |
 
-### Zënter
+### Zënter {#since}
 
 - 1.4.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) op Zeil 46
 
 
-## Retouren
+## Retouren {#returns}
 Inhalt no der Ännerung.

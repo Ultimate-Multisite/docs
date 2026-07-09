@@ -3,15 +3,15 @@ title: 'Dysgu 5: Cyfathrebu eich cynlluniau'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lesiwn 5: Dyddiadau eich Planau
+# Lesiwn 5: Dyddiadau eich Planau {#lesson-5-designing-your-plans}
 
 Mae'r cyflenau eich planau nid yn rhywbethau o ddefnyddio neu gael, ond mae'n cyfleiwyd o beth sy'n gweithredu'n wirol gyda'u cyddeeion. Yn y lesen hwnnw, byddwch yn ddefnyddio dyddiadau o produsg sy'n gyfathogh â'r angenwirol o gweithgareddau fitness mewn cyflenau gwahanol.
 
-## Oedd Ni wedi Cynhaltio
+## Oedd Ni wedi Cynhaltio {#where-we-left-off}
 
 Mae FitSite gyda thri modelau paratoi (Studio Essential, Gym Pro, Fitness Chain). Mae'n ddim ond y planau sy'n darnau'r cyfathrebu beth sydd yn cael ei gael a beth sydd yn cael eu pwyll.
 
-## Mynddirolio mewn Cyfathrebu Cyddeeion
+## Mynddirolio mewn Cyfathrebu Cyddeeion {#thinking-in-customer-segments}
 
 Ymddangos y chyfeiriad mwyaf o bobl yw ddefnyddio planau ar gyfer ffeithiau teknig (stor, bandwidth, amserau). Nid yn meddwl eich cyddeeion yn y termau hyn. Mae'r rheolwr gym yn meddwl am beth sydd ei angen i gweithredu ei gweithredol.
 
@@ -25,11 +25,11 @@ Ar gyfer studio fitness, mae tri cyfathrebu natural yn dod:
 
 Dylai eich planau i gyd-fynd â'r cyfathrebu hyn, nid gyda chymrydion ffeithig.
 
-## Creu'r Planau FitSite
+## Creu'r Planau FitSite {#creating-the-fitsite-plans}
 
 Myndwch i **Ultimate Multisite > Products > Add Product** ar gyfer pob plan.
 
-### Plan 1: FitSite Starter -- $49/mthydawd
+### Plan 1: FitSite Starter -- $49/mthydawd {#plan-1-fitsite-starter----49month}
 
 **Cymryd:** Solo trainers a chwaraeau bach a styddiadau bach
 
@@ -59,7 +59,7 @@ Myndwch i **Ultimate Multisite > Products > Add Product** ar gyfer pob plan.
 - Y theim sydd wedi'i dewis: Mae'n cael ei chwarae yn llwyr
 - Penodol theimau eraill: Yn gwblhau
 
-### Plan 2: FitSite Growth -- $99/mth
+### Plan 2: FitSite Growth -- $99/mth {#plan-2-fitsite-growth----99month}
 **Cymryd:** Gymeddau unig wedi'u sefydlu
 
 **Tab Disgrif:**
@@ -84,7 +84,7 @@ Myndwch i **Ultimate Multisite > Products > Add Product** ar gyfer pob plan.
 - Grŵp planau: FitSite Plans
 - Bryd o barchnad: 2
 
-### Plan 3: FitSite Pro -- $199/mth
+### Plan 3: FitSite Pro -- $199/mth {#plan-3-fitsite-pro----199month}
 **Cymryd:** Chwaraeau fitness gyda chyfnodau aml
 
 **Tab Disgrif:**
@@ -107,7 +107,7 @@ Myndwch i **Ultimate Multisite > Products > Add Product** ar gyfer pob plan.
 - Grŵp cynlluniau: FitSite Plans
 - Cyfeiriad o dreddau: 3
 
-## Rheoli'r Grŵp Cynlluniau (Setting Up the Plan Group)
+## Rheoli'r Grŵp Cynlluniau (Setting Up the Plan Group) {#setting-up-the-plan-group}
 
 Mae'r grŵp cynlluniau yn sicr y bydd ei fod y golybusau yn gallu gwneud cyfathri neu isel yn y tebyg FitSite. Ar y **Tab Uwch a Isel** o bob cynllun:
 
@@ -116,7 +116,7 @@ Mae'r grŵp cynlluniau yn sicr y bydd ei fod y golybusau yn gallu gwneud cyfathr
 
 Mae hyn yn creu llwybr cyfathri'n llwyr: Starter → Growth → Pro.
 
-## Ymyddu Cyfeiriadau O Dreddau (Adding Order Bumps)
+## Ymyddu Cyfeiriadau O Dreddau (Adding Order Bumps) {#adding-order-bumps}
 
 Cyfeiriadau o dreddau yw produsau ychwanegol a cael eu cynnig yn ystod y cyflenau. Ar FitSite, meddwch am:
 
@@ -126,7 +126,7 @@ Cyfeiriadau o dreddau yw produsau ychwanegol a cael eu cynnig yn ystod y cyflena
 
 Creu'r hyn fel produsau mewn tyg **Package** yn Ultimate Multisite a chysylltu nhw â'r cynlluniau cyflwynig.
 
-## Pam Mae'r Estrwyll Hwn yn Gweithredu? (Why This Structure Works)
+## Pam Mae'r Estrwyll Hwn yn Gweithredu? (Why This Structure Works) {#why-this-structure-works}
 
 - **Starter** yn rhwystau i gael y bythau -- pris isel, cynnig simple, mae'n rhoi'r traineron ar-lein yn gyflym
 - **Gronau** yn ychwanegu'r ffeithiau sydd yn eu gwneud gymnalion -- cyflwyniadau, gallerïau, domennau cyfathrebu
@@ -134,7 +134,7 @@ Creu'r hyn fel produsau mewn tyg **Package** yn Ultimate Multisite a chysylltu n
 - **Order bumps** yn sylw i'r cydweithwyr gwneud ei chwarae heb ddatblygu'r planau cyflym
 - **Clir y llwybr o ddatblygu** mae'n golygu bod y cydweithwyr yn ddigwydd ar gyfer chi yn hytrudol heb gadael
 
-## Y FitSite Network Erioedd
+## Y FitSite Network Erioedd {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -150,7 +150,7 @@ FitSite Network
 └── Barod ar gyfer cyflwyniadau (dysg nesaf)
 ```
 
-## Beth Rydyn Ni wedi'i Gwnaeth Mae'r Dysgu Hwnnw
+## Beth Rydyn Ni wedi'i Gwnaeth Mae'r Dysgu Hwnnw {#what-we-built-this-lesson}
 
 - **Tri o ddeallau plan** a ddifynwyd i segmentau busnes ffitr yn reol
 - **Cyflwyniad ffeithiau** gan ddefnyddio'r plugin a rheoliadau templata Ultimate Multisite

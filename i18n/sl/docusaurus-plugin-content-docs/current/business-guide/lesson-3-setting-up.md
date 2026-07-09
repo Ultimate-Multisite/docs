@@ -3,32 +3,32 @@ title: 'Lekcija 3: Nastavitev vašega omrežja'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lekcija 3: Nastavitev vašega omrežja
+# Lekcija 3: Nastavitev vašega omrežja {#lesson-3-setting-up-your-network}
 
 Čas je za gradnjo. V tej lekciji boste namestili Ultimate Multisite in konfigurirali temelje omrežja FitSite. Vsaka odločitev tukaj je sprejeta z mislijo na fitnes nišo.
 
-## Kje smo ostali
+## Kje smo ostali {#where-we-left-off}
 
 Izbrali smo fitnes studie kot svojo nišo in potrdili priložnost. Zdaj bomo to idejo spremenili v delujočo platformo.
 
-## Izbira gostovanja
+## Izbira gostovanja {#choosing-your-hosting}
 
 Vaša izbira gostovanja je za nišno platformo pomembnejša kot za eno samo spletno mesto. Ne gostite enega mesta -- gostite omrežje, ki bo zraslo na desetine ali stotine mest.
 
-### Na kaj morate biti pozorni
+### Na kaj morate biti pozorni {#what-to-look-for}
 
 - **Podpora za WordPress Multisite**: Vsi ponudniki gostovanja ne obvladujejo multisite dobro
 - **Wildcard SSL**: Bistven za omrežja, ki temeljijo na poddomenah
 - **Prilagodljivi viri**: Potrebujete prostor za rast brez selitve
 - **Integracija Ultimate Multisite**: Avtomatizirano preslikavanje domen in SSL prihranita veliko operativnega dela
 
-### Priporočen pristop
+### Priporočen pristop {#recommended-approach}
 
 Izberite ponudnika gostovanja s seznama [združljivih ponudnikov](/user-guide/host-integrations/closte). Ti so bili preizkušeni z Ultimate Multisite in zagotavljajo integracije, ki jih potrebujete za preslikavanje domen in avtomatizacijo SSL.
 
 Za FitSite bomo uporabili konfiguracijo s poddomenami. To pomeni, da bodo spletna mesta strank sprva prikazana kot `studioname.fitsite.com`, preden po želji preslikajo svojo domeno.
 
-## Namestitev WordPress Multisite
+## Namestitev WordPress Multisite {#installing-wordpress-multisite}
 
 Če še nimate namestitve WordPress Multisite:
 
@@ -40,7 +40,7 @@ Za FitSite bomo uporabili konfiguracijo s poddomenami. To pomeni, da bodo spletn
 Poddomene vsakemu spletnemu mestu stranke dajo svoj ločen naslov (`studio.fitsite.com`) namesto poti (`fitsite.com/studio`). To je za vaše stranke bolj profesionalno in preprečuje konflikte s trajnimi povezavami. Za podrobno primerjavo si oglejte [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101).
 :::
 
-## Namestitev Ultimate Multisite
+## Namestitev Ultimate Multisite {#installing-ultimate-multisite}
 
 Sledite vodniku [Namestitev Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite), da:
 
@@ -53,11 +53,11 @@ Med čarovnikom za nastavitev imejte v mislih nišo FitSite:
 - **Ime podjetja**: "FitSite" (ali izbrano ime vaše blagovne znamke)
 - **Logotip podjetja**: Naložite logotip svoje blagovne znamke -- prikazan bo na računih in v e-poštnih sporočilih
 
-## Konfiguracija za fitnes nišo
+## Konfiguracija za fitnes nišo {#configuring-for-the-fitness-niche}
 
 Ko je Ultimate Multisite nameščen, izberite te niši prilagojene konfiguracijske možnosti:
 
-### Splošne nastavitve
+### Splošne nastavitve {#general-settings}
 
 Pojdite na **Ultimate Multisite > Nastavitve** in konfigurirajte:
 
@@ -65,7 +65,7 @@ Pojdite na **Ultimate Multisite > Nastavitve** in konfigurirajte:
 - **Privzeta vloga**: Administrator -- lastniki fitnes studiev potrebujejo popoln nadzor nad vsebino svojega spletnega mesta
 - **Registracija**: Omogočite registracijo uporabnikov, da se lahko lastniki studiev prijavijo sami
 
-### Konfiguracija e-pošte
+### Konfiguracija e-pošte {#email-configuration}
 
 Sistemska e-poštna sporočila naj govorijo jezik vaše niše. Pojdite na **Ultimate Multisite > Nastavitve > E-poštna sporočila** in prilagodite:
 
@@ -75,7 +75,7 @@ Sistemska e-poštna sporočila naj govorijo jezik vaše niše. Pojdite na **Ulti
 
 To bomo še izboljšali v lekciji 8 (Uvajanje strank), vendar nastavitev tona že zdaj zagotavlja, da se tudi zgodnje testne prijave zdijo prilagojene niši.
 
-### Konfiguracija domen
+### Konfiguracija domen {#domain-configuration}
 
 Če uporabljate združljivega ponudnika gostovanja, zdaj konfigurirajte preslikavanje domen:
 
@@ -85,7 +85,7 @@ To bomo še izboljšali v lekciji 8 (Uvajanje strank), vendar nastavitev tona ž
 
 To zagotavlja, da bo vse delovalo od začetka do konca, ko bomo v naslednji lekciji začeli ustvarjati predloge in testna spletna mesta.
 
-## Omrežje FitSite do zdaj
+## Omrežje FitSite do zdaj {#the-fitsite-network-so-far}
 
 Ob koncu te lekcije imate naslednje:
 
@@ -99,7 +99,7 @@ Omrežje FitSite
 └── Pripravljeno za predloge spletnih mest (naslednja lekcija)
 ```
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Delujočo namestitev WordPress Multisite** v načinu poddomen
 - **Nameščen Ultimate Multisite** in konfiguriran z blagovno znamko FitSite

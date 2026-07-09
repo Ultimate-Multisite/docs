@@ -3,15 +3,15 @@ title: Valider palettkontrast
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valider palettkontrast
+# Valider palettkontrast {#validate-palette-contrast}
 
 Funksjonen **Valider palettkontrast** sjekker fargeparene i designpaletten din for WCAG (Web Content Accessibility Guidelines) samsvar før de brukes i temaet ditt.
 
-## Oversikt
+## Oversikt {#overview}
 
 Denne funksjonen sikrer at nettstedets fargeskjema oppfyller tilgjengelighetsstandarder ved å validere kontrastforholdet mellom tekst- og bakgrunnsfarger. Dette hjelper til med å forhindre fargekombinasjoner som kan være vanskelige for brukere med synshemming å lese.
 
-## Inputformat
+## Inputformat {#input-format}
 
 Funksjonen tar imot en fargepalett som input:
 
@@ -35,7 +35,7 @@ Funksjonen tar imot en fargepalett som input:
 }
 ```
 
-### Parametere
+### Parametere {#parameters}
 
 | Parameter | Type | Påkrevd | Beskrivelse |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Funksjonen tar imot en fargepalett som input:
 | `wcag_level` | string | Nei | WCAG-samsvarsnivå: "A", "AA" (standard), eller "AAA" |
 | `pairs_to_check` | array | Nei | Spesifikke fargepar som skal valideres (f.eks. `["primary-text", "background-text"]`) |
 
-## WCAG-nivåer sjekket
+## WCAG-nivåer sjekket {#wcag-levels-checked}
 
 Funksjonen validerer kontrastforholdene i henhold til WCAG-standardene:
 
@@ -56,7 +56,7 @@ Funksjonen validerer kontrastforholdene i henhold til WCAG-standardene:
 - **Normal tekst** — tekst mindre enn 18pt (eller 14pt fet)
 - **Stor tekst** — tekst 18pt eller større (eller 14pt fet eller større)
 
-## Output-skjema
+## Output-skjema {#output-schema}
 
 Funksjonen returnerer en detaljert valideringsrapport:
 
@@ -95,7 +95,7 @@ Funksjonen returnerer en detaljert valideringsrapport:
 }
 ```
 
-### Felt i output
+### Felt i output {#output-fields}
 
 | Felt | Type | Beskrivelse |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Funksjonen returnerer en detaljert valideringsrapport:
 | `status` | string | "pass" eller "fail" for hvert par |
 | `recommendations` | array | Forslag for å forbedre feilaktige par |
 
-## Brukseksempel
+## Brukseksempel {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Funksjonen validerer alle fargekombinasjoner og returnerer:
 - ✅ Bakgrunn + Tekst: 12.1:1 forhold (består WCAG AAA)
 - Totalt: Samsvarer med WCAG AA
 
-## Integrasjon med Theme Builder
+## Integrasjon med Theme Builder {#integration-with-theme-builder}
 
 Når du bruker designretningsvalget i Theme Builder, vil funksjonen Valider palettkontrast:
 
@@ -129,7 +129,7 @@ Når du bruker designretningsvalget i Theme Builder, vil funksjonen Valider pale
 4. Gi anbefalinger for ikke-samsvarige par
 5. Forhindre at du anvender utilgjengelige fargeskjemaer
 
-## Beste praksis
+## Beste praksis {#best-practices}
 
 - **Start med AA-nivå** — WCAG AA er standarden for de fleste nettsteder
 - **Test før du anvender** — valider paletten din før du forplikter deg til et design
@@ -137,7 +137,7 @@ Når du bruker designretningsvalget i Theme Builder, vil funksjonen Valider pale
 - **Vurder brukerpreferanser** — noen brukere kan ha ekstra fargefølsomhet
 - **Bruk kontrastsjekkere** — kombiner denne funksjonen med nettleserverktøy for verifisering
 
-## Feilaktige par og anbefalinger
+## Feilaktige par og anbefalinger {#failing-pairs-and-recommendations}
 
 Hvis et fargepar feiler valideringen, gir funksjonen anbefalinger:
 
@@ -155,7 +155,7 @@ Hvis et fargepar feiler valideringen, gir funksjonen anbefalinger:
 }
 ```
 
-## Relaterte funksjoner
+## Relaterte funksjoner {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — lag logoer med din validerte fargepalett
 - [Create Menu](./create-menu.md) — bygg navigasjon med tilgjengelige farger

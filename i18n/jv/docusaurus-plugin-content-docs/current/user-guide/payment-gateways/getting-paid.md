@@ -3,13 +3,13 @@ title: Nampa Bayaran
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Nampa Bayaran (v2)
+# Nampa Bayaran (v2) {#getting-paid-v2}
 
 _**CATETAN PENTING: Artikel iki ngrujuk marang Ultimate Multisite versi 2.x.**_
 
 Ultimate Multisite nduwèni sistem keanggotaan lan tagihan sing wis kabangun. Supaya sistem tagihan kita bisa mlaku, kita wis nggabungake gateway pembayaran sing paling umum dienggo ing e-commerce. Gateway pembayaran bawaan ing Ultimate Multisite yaiku _Stripe_ , _PayPal_ , lan Pembayaran Manual. Sampeyan uga bisa migunakaké _WooCommerce_ , _GoCardless_ lan _Payfast_ kanggo nampa pembayaran kanthi nginstal add-oné dhewe-dhewe.
 
-## Setelan Dhasar
+## Setelan Dhasar {#basic-settings}
 
 Sampeyan bisa ngonfigurasi gateway pembayaran apa wae iki ing setelan pembayaran Ultimate Multisite. Sampeyan bisa nemokaké kanthi mlebu menyang **menu Ultimate Multisite > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Iki nyegah keanggotaan katon kaya bakal auto-renew nalika gateway mung bisa nari
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Panggonan kanggo nemokaké gateway:
+## Panggonan kanggo nemokaké gateway: {#where-to-find-the-gateways}
 
 Sampeyan bisa nyetel gateway pembayaran ing kaca sing padha ( **Ultimate Multisite > Settings > Payments**). Persis ing sangisoré **active payment gateways** , sampeyan bakal bisa ndeleng: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ lan _Manual_.
 
@@ -67,7 +67,7 @@ Iki uga tampilan lengkap setelan gateway pembayaran:
 
 Saiki, yen sampeyan pengin migunakaké _WooCommerce_ , _GoCardless_ utawa _Payfast_ minangka gateway pembayaran, sampeyan kudu **nginstal lan ngonfigurasi add-oné**.
 
-### Cara nginstal add-on WooCommerce:
+### Cara nginstal add-on WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Kita ngerti manawa _Stripe_ lan _PayPal_ ora kasedhiya ing sawetara negara, sing mbatesi utawa ngalangi panganggo Ultimate Multisite saka migunakaké plugin kita kanthi efektif. Mula kita nggawe add-on kanggo nggabungake _WooCommerce,_ yaiku plugin e-commerce sing misuwur banget. Para developer ing saindenging donya nggawe add-on kanggo nggabungake macem-macem gateway pembayaran menyang plugin kasebut. Kita njupuk kauntungan saka iki kanggo ngembangaké gateway pembayaran sing bisa sampeyan gunakaké karo sistem tagihan Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Sawise diaktifake, yen sampeyan isih durung masang lan ngaktifake plugin WooComm
 
 Kanggo maca luwih akeh babagan tambahan WooCommerce Integration, **klik ing kene**.
 
-### Cara masang tambahan GoCardless:
+### Cara masang tambahan GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Langkah-langkah kanggo masang tambahan _GoCardless_ meh padha karo tambahan _WooCommerce_. Mangga menyang kaca tambahan lan pilih tambahan **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Sawise instalasi rampung, sampeyan bakal dialihake menyang kaca plugin. Ing kene
 
 Kanggo sinau carane miwiti nganggo gateway _GoCardless_, **waca artikel iki**.
 
-### Cara masang tambahan Payfast:
+### Cara masang tambahan Payfast: {#how-to-install-the-payfast-add-on}
 
 Menyang kaca tambahan lan pilih tambahan **Ultimate Multisite: Payfast Gateway**.
 

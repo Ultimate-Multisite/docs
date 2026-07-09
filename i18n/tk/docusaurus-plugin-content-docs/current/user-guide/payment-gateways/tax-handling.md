@@ -3,7 +3,7 @@ title: Salgyt dolandyrylyşy
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Salgyt dolandyryşy
+# Salgyt dolandyryşy {#tax-handling}
 
 Ultimate Multisite esasy plaginimize salgyt ýygnamak moduly girizilendir, şonuň üçin planlaryňyz, paketleriňiz we hyzmatlaryňyz boýunça satuw salgytlaryny ýygnamak gerek bolsa, muny hiç hili goşmaça modul gurmazdan aňsatlyk bilen edip bilersiňiz.
 
@@ -11,7 +11,7 @@ Ultimate Multisite esasy plaginimize salgyt ýygnamak moduly girizilendir, şonu
 
 Ultimate Multisite siziň adyňyzdan hökümete salgyt tabşyrmaýar ýa-da geçirmeýär; biz diňe amalyň wagtynda degişli salgytlary ýygnamaga kömek edýäris. **Salgytlary özbaşdak geçirmeli bolarsyňyz.**
 
-## Salgyt ýygnamagy işletmek
+## Salgyt ýygnamagy işletmek {#enabling-tax-collection}
 
 Salgyt ýygnamak deslapky ýagdaýda işledilen däldir. Ony işletmek üçin **Ultimate Multisite > Sazlamalar > Salgytlar** bölümine geçip, Enable Taxes sazlamasyny işletmeli.
 
@@ -25,7 +25,7 @@ Aýry-aýry önümler üçin salgyt sazlamalaryny hem görüp bilersiňiz:
 
 ![Önümler üçin salgyt sazlamalary](/img/config/settings-taxes.png)
 
-### Salgyt goşulmadyk vs. Salgyt goşulan
+### Salgyt goşulmadyk vs. Salgyt goşulan {#tax-excluded-vs-tax-included}
 
 Deslapky ýagdaýda, ähli önüm bahalaryňyz salgyt goşulmadyk görnüşdedir, ýagny salgytlar önümiň bahasyna **goşulan däldir**. Eger müşderiniň belli bir satyn alyş boýunça salgyt tölemelidigini kesgitlesek, salgytlary aralyk jemiň **üstüne** goşarys.
 
@@ -37,7 +37,7 @@ Eden üýtgeşmeleriňizi **ýatdan çykarman saklaň**.
 
 ###
 
-## Salgyt möçberlerini döretmek
+## Salgyt möçberlerini döretmek {#creating-tax-rates}
 
 Salgyt ýygnamagy işledeniňizden soň, salgyt möçberleri redaktorymyzyň kömegi bilen anyk ýerler üçin salgyt möçberlerini döretmeli bolarsyňyz.
 
@@ -51,7 +51,7 @@ Salgyt möçberleri redaktory sahypasynda **Täze setir goş** düwmesine basyp 
 
 Her salgyt möçberine **at** bermeli bolarsyňyz (hasap-fakturalarda ulanylýar). Soňra bu salgytyň alynjak **ýurduny** (hökmany), **ştatyny,** we **şäherini** (ikisi hem islege bagly) saýlap bilersiňiz. Ahyrynda, **salgyt möçberini göterimlerde** goşuň.
 
-### Salgyt kategoriýalary
+### Salgyt kategoriýalary {#tax-categories}
 
 Dürli görnüşli önümler üçin dürli salgyt möçberlerini goşmak maksady bilen birnäçe salgyt kategoriýasyny hem döredip bilersiňiz.
 
@@ -73,7 +73,7 @@ Belli bir önüm üçin salgyt kategoriýasyny **Önüm redaktirleme sahypasyna*
 
 Şol bir ekranda, Ultimate Multisite-e şol berlen önüm boýunça salgyt ýygnamaly däldigini bildirmek üçin **Salgyt salynýarmy?** açyp-ýapgyjyny öçürip bilersiňiz.
 
-## Ýewropa VAT goldawy
+## Ýewropa VAT goldawy {#european-vat-support}
 
 Öň aýdylyşy ýaly, European VAT düzgünleri sebäpli goşmaça talaplary bolan EU-daky müşderiler üçin elýeterli goşmaça modulymyz bar.
 
@@ -101,7 +101,7 @@ Soňra **Tor administratory > Plaginler** bölümine geçiň we şol goşmaça m
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAT salgyt möçberlerini çekmek
+### VAT salgyt möçberlerini çekmek {#pulling-on-vat-tax-rates}
 
 Integrasiýamyzyň goşýan gurallarynyň biri EU agza döwletleri üçin salgyt möçberlerini ýüklemek ukybydyr. Muny EU VAT goldawyny işledeniňizden soň salgyt möçberleri redaktory sahypasyna baryp edip bolýar.
 
@@ -111,7 +111,7 @@ Sahypanyň aşagynda VAT çekmek opsiýalaryny görersiňiz. Möçber görnüşi
 
 Olary çekeniňizden soň bahalary hem redaktirläp bilersiňiz. Muny etmek üçin, diňe gerek bolan tablisa setiriňizi redaktirläň we täze bahalary saklamak üçin basyň.
 
-### VAT barlagy
+### VAT barlagy {#vat-validation}
 
 VAT goldawy işledilende, Ultimate Multisite töleg görnüşine, hasaplaşyk salgysy meýdanynyň aşagyna goşmaça meýdan goşar. Bu meýdan diňe EU-da ýerleşýän müşderiler üçin görkeziler.
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent, doğal dil komutları aracılığıyla tam WordPress siteleri planlayabilen, oluşturabilen ve yönetebilen otonom bir WordPress yapay zeka asistanıdır. İçerik yönetiminden tasarım sistemi özelleştirmeye kadar her şeyi kapsayan, ajanın çağırabileceği ayrık, test edilebilir eylemler olan yapılandırılmış bir dizi **yapabilirlik (abilities)** sunar. 1.9.0 sürümü, içerik oluşturma yapabilirlikleri, istemci tarafı ekran görüntüleri yoluyla görsel sayfa incelemesi, beş yerleşik ajan profili ve erişim kontrolü ile markalama için özellik bayrakları ekler.
 
-## Temel Özellikler
+## Temel Özellikler {#key-features}
 
 - **Yapabilirlik Sistemi (Abilities system)** — ajanın WordPress kurulumunuzda çağırabileceği modüler, genişletilebilir bir eylem kataloğu
 - **İçerik Yönetimi (Content Management)** — yazı ve sayfa oluşturma (sayfa şablonu atamayı dahil), birden fazla yazıyı tek bir çağrıda toplu oluşturma, öne çıkan görseller belirleme ve iletişim formu oluşturma
@@ -28,21 +28,21 @@ Gratis AI Agent, doğal dil komutları aracılığıyla tam WordPress siteleri p
 - **Site Oluşturucu Orkestrasyon v2 (Site Builder Orchestration v2)** — Eklenti keşfi, ilerleme takibi ve hata kurtarma içeren çok adımlı site oluşturma planları
 - **WP-CLI Benchmark Komutu** — CI ve model değerlendirmesi için ajan yetenek kıyaslama paketini komut satırından çalıştırma
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 - WordPress 6.0 veya üzeri
 - PHP 8.1 veya üzeri
 - WordPress Multisite (ağ düzeyinde etkinleştirilmiş) veya tek site kurulumu
 - Aktif bir yapay zeka sağlayıcı bağlantı eklentisi (Anthropic, OpenAI veya uyumlu)
 
-## Kurulum
+## Kurulum {#installation}
 
 1. Eklenti dosyalarını `/wp-content/plugins/gratis-ai-agent` konumuna yükleyin
 2. WordPress'te **Eklentiler** ekranından eklentiyi etkinleştirin
 3. **Gratis AI Agent → Ayarlar** bölümüne gidin ve yapay zeka sağlayıcınızı bağlayın
 4. (İsteğe bağlı) Ek yapabilirlik paketlerini kurmak için **Yapabilirlik Kaydı (Abilities Registry)**'ne göz atın
 
-## Hızlı Başlangıç
+## Hızlı Başlangıç {#quick-start}
 
 Etkinleştirildikten ve bir yapay zeka sağlayıcısına bağlandıktan sonra, WordPress yönetici kenar çubuğundaki **Gratis AI Agent** paneline gidin. Doğal dil komutu yazın ve ajan, mevcut yapabilirliklerini kullanarak gerekli adımları planlayacak ve yürütecektir.
 
@@ -60,7 +60,7 @@ Etkinleştirildikten ve bir yapay zeka sağlayıcısına bağlandıktan sonra, W
 "Online menü, rezervasyon formu ve iletişim sayfası içeren bir restoran web sitesi oluştur."
 ```
 
-## Yapabilirlikler Genel Bakış
+## Yapabilirlikler Genel Bakış {#abilities-overview}
 
 Yapabilirlikler, ajanın gerçekleştirebileceği atomik eylemlerdir. Her yapabilirlik, bir şema (parametreler ve dönüş tipleri) açığa çıkaran, ajanın çalışma zamanında okuduğu kayıtlı bir PHP sınıfıdır. Yapabilirlikler işlevsel alanlara ayrılmıştır:
 
@@ -79,7 +79,7 @@ Yapabilirlikler, ajanın gerçekleştirebileceği atomik eylemlerdir. Her yapabi
 
 Tüm parametre dokümantasyonu ve kullanım örnekleri için [Yapabilirlik Referansı](./abilities)'na bakın.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent, komut satırından kıyaslama çalıştırmak ve yapabilirlikleri yönetmek için bir `wp gratis-ai-agent` komut ailesi ile birlikte gelir. Tüm komut listesi için [WP-CLI Referansı](./wp-cli)'na bakın.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Yapılandırma
+## Yapılandırma {#configuration}
 
 Tüm ayarlar WordPress yönetici panelinde **Gratis AI Agent → Ayarlar** altında bulunur:
 
@@ -106,7 +106,7 @@ Tüm ayarlar WordPress yönetici panelinde **Gratis AI Agent → Ayarlar** altı
 | **Yapabilirlik Zaman Aşımı (Ability Timeout)** | Bir yapabilirlik için maksimum çalışma süresi (varsayılan 30 saniye) |
 | **Hata Ayıklama Günlüğü (Debug Logging)** | Yapabilirlik çağrılarını ve ajan muhakemesini WordPress hata ayıklama günlüğüne kaydet |
 
-## Seçenekler Yönetimi Güvenlik Kara Listesi
+## Seçenekler Yönetimi Güvenlik Kara Listesi {#options-management-safety-blocklist}
 
 Seçenekler Yönetimi yapabilirlik, ajanın hassas WordPress seçeneklerini okumasını veya yazmasını engelleyen yerleşik bir kara listesi içerir. Varsayılan kara liste şunları kapsar:
 
@@ -118,26 +118,26 @@ Seçenekler Yönetimi yapabilirlik, ajanın hassas WordPress seçeneklerini okum
 
 Ek girişler, `gratis_ai_agent_options_blocklist` filtresi aracılığıyla eklenebilir.
 
-## Hook'lar ve Filtreler
+## Hook'lar ve Filtreler {#hooks-and-filters}
 
-### Eylemler (Actions)
+### Eylemler (Actions) {#actions}
 
 - `gratis_ai_agent_ability_registered` — bir yapabilirlik kaydedildikten sonra tetiklenir, yapabilirlik sınıf adını alır
 - `gratis_ai_agent_plan_started` — bir site oluşturma planı yürütülmeye başladığında tetiklenir
 - `gratis_ai_agent_plan_completed` — bir plan başarıyla tamamlandığında tetiklenir
 - `gratis_ai_agent_plan_failed` — bir plan kurtarılamaz bir hata ile karşılaştığında tetiklenir
 
-### Filtreler (Filters)
+### Filtreler (Filters) {#filters}
 
 - `gratis_ai_agent_abilities` — ajanın yüklemesinden önce kaydedilmiş yapabilirlik listesini değiştirir
 - `gratis_ai_agent_options_blocklist` — seçenekler güvenlik kara listesini genişletir veya daraltır
 - `gratis_ai_agent_benchmark_questions` — değerlendirme paketine özel kıyaslama soruları ekler
 - `gratis_ai_agent_plan_plugins` — site planı oluşturulması sırasında eklenti keşif listesini değiştirir
 
-## Destek
+## Destek {#support}
 
 Destek için [ultimatemultisite.com](https://ultimatemultisite.com)'u ziyaret edin veya eklenti deposunda bir sorun açın.
 
-## Değişiklik Günlüğü
+## Değişiklik Günlüğü {#changelog}
 
 Tüm sürüm geçmişi için [Değişiklik Günlüğü](./changelog)'ne bakın.

@@ -4,11 +4,11 @@ title: Bộ lọc - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Bộ lọc: wu_setup_wizard
+# Bộ lọc: wu_setup_wizard {#filter-wusetupwizard}
 
 Cho phép các nhà phát triển thêm các bước tùy chỉnh vào quy trình hướng dẫn cài đặt (setup wizard).
 
-## Tham số
+## Tham số {#parameters}
 
 | Tên | Kiểu dữ liệu | Mô tả |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Cho phép các nhà phát triển thêm các bước tùy chỉnh vào quy trìn
 | $is_migration | `bool` | Xác định xem đây có phải là quá trình di chuyển dữ liệu (migration) hay không. |
 | $wizard | `object` | Thể hiện (instance) hiện tại của wizard. |
 
-### Từ phiên bản
+### Từ phiên bản {#since}
 
 - 2.0.0
-### Nguồn
+### Nguồn {#source}
 
 Được định nghĩa trong [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) tại dòng 525
 
 
-## Giá trị trả về
+## Giá trị trả về {#returns}

@@ -4,25 +4,25 @@ title: Sefa - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Fyuluta: wp_ultimo_skip_network_active_check
+# Fyuluta: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
 
 Lolani opanga mapulogalamu kuti adule mwachidule cheke cha kuyatsidwa pa netiweki.
 
 Izi ndi zothandiza mukamagwiritsa ntchito makonzedwe okhazikika pa composer ndi makonzedwe ena apadera, monga Bedrock, mwachitsanzo, komwe kugwiritsa ntchito mapulagini ngati mu-plugins ndi mwambo.
 
-## Magawo
+## Magawo {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
 | $skip_network_activation_check | `bool` | Ngati tiyenera kudumpha cheke kapena ayi, chokhazikika ndi false. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.0
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/class-requirements.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/class-requirements.php#L272) pa mzere 272
 
 
-## Zobweza
+## Zobweza {#returns}
 true ngati mukufuna kudumpha cheke, false ngati sichoncho.

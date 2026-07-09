@@ -3,21 +3,21 @@ title: Nastavení a konfigurace poskytovatele
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Nastavení a konfigurace poskytovatele
+# Domain Seller: Nastavení a konfigurace poskytovatele {#domain-seller-setup-and-provider-configuration}
 
 Addon Domain Seller se dodává s průvodcem nastavením, který vás provede každým vyžadovaným krokem. Tato stránka popisuje průběh průvodce a jak později nakonfigurovat nebo znovu nakonfigurovat poskytovatele.
 
-## Požadavky
+## Požadavky {#requirements}
 
 - **Multisite Ultimate** v2.4.12 nebo vyšší, aktivované v síti
 - **PHP** 7.4+
 - API přihlašovací údaje alespoň pro jednoho podporovaného registrátora
 
-## Průvodce prvotním nastavením
+## Průvodce prvotním nastavením {#first-run-setup-wizard}
 
 Průvodce nastavením se spustí automaticky při první síťové aktivaci pluginu. Je také kdykoli dostupný z **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Krok 1 — Vyberte poskytovatele
+### Krok 1 — Vyberte poskytovatele {#step-1--choose-a-provider}
 
 Vyberte registrátora, kterého chcete připojit. Podporované možnosti:
 
@@ -33,7 +33,7 @@ Vyberte registrátora, kterého chcete připojit. Podporované možnosti:
 | NameSilo | Ne | Ne |
 | Enom | Ano | Ne |
 
-### Krok 2 — Zadejte přihlašovací údaje
+### Krok 2 — Zadejte přihlašovací údaje {#step-2--enter-credentials}
 
 Každý poskytovatel má různá pole přihlašovacích údajů:
 
@@ -57,17 +57,17 @@ Každý poskytovatel má různá pole přihlašovacích údajů:
 
 Zaškrtněte **Sandbox mode**, kde je k dispozici, abyste mohli před spuštěním do ostrého provozu testovat proti testovacímu prostředí poskytovatele.
 
-### Krok 3 — Otestujte připojení
+### Krok 3 — Otestujte připojení {#step-3--test-the-connection}
 
 Klikněte na **Test Connection**. Průvodce odešle lehké volání API, aby ověřil přihlašovací údaje a konektivitu. Před pokračováním opravte případné problémy s přihlašovacími údaji.
 
-### Krok 4 — Importujte TLD
+### Krok 4 — Importujte TLD {#step-4--import-tlds}
 
 Klikněte na **Import TLDs**, chcete-li stáhnout všechny dostupné TLD a velkoobchodní ceny od připojeného poskytovatele. Tím se naplní seznam TLD používaný doménovými produkty. Import může u poskytovatelů s rozsáhlými katalogy TLD trvat 30–60 sekund.
 
 TLD se také automaticky znovu synchronizují jednou denně prostřednictvím naplánované cron úlohy.
 
-### Krok 5 — Vytvořte doménový produkt
+### Krok 5 — Vytvořte doménový produkt {#step-5--create-a-domain-product}
 
 Průvodce vytvoří výchozí univerzální doménový produkt s 10% přirážkou. Tento produkt můžete ihned upravit, nebo tento krok přeskočit a vytvořit produkty ručně v **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Průvodce vytvoří výchozí univerzální doménový produkt s 10% přirážko
 
 ---
 
-## Překonfigurování poskytovatele
+## Překonfigurování poskytovatele {#reconfiguring-a-provider}
 
 Přejděte na **Network Admin › Ultimate Multisite › Settings › Domain Seller** (nebo klikněte na **Settings** v seznamu pluginů).
 
@@ -88,17 +88,17 @@ Stránka nastavení obsahuje:
 - **Spravovat doménové produkty** — rychlý odkaz na seznam Products
 - **Konfigurovat poskytovatele** — otevře Integration Wizard pro přidání nebo překonfigurování poskytovatelů
 
-### Přidání druhého poskytovatele
+### Přidání druhého poskytovatele {#adding-a-second-provider}
 
 Klikněte na **Configure providers** a spusťte průvodce znovu pro nového registrátora. Můžete mít nakonfigurováno více poskytovatelů současně. Přiřaďte každý doménový produkt ke konkrétnímu poskytovateli, nebo jej ponechte na výchozím.
 
-### Ruční synchronizace TLD
+### Ruční synchronizace TLD {#syncing-tlds-manually}
 
 Na stránce nastavení klikněte na **Sync TLDs** vedle libovolného nakonfigurovaného poskytovatele, abyste stáhli nejnovější ceny. To je užitečné poté, co poskytovatel aktualizuje velkoobchodní ceny nebo přidá nové TLD.
 
 ---
 
-## Logy
+## Logy {#logs}
 
 Každý poskytovatel zapisuje do vlastního kanálu logů. Logy lze zobrazit v **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Každý poskytovatel zapisuje do vlastního kanálu logů. Logy lze zobrazit v *
 
 ---
 
-## Poznámky ke schopnostem poskytovatelů
+## Poznámky ke schopnostem poskytovatelů {#provider-capability-notes}
 
 Ne každé API registrátora zpřístupňuje stejné operace. Addon zobrazuje nepodporované operace s jasnými chybami určenými administrátorům místo toho, aby tiše selhal.
 

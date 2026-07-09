@@ -3,28 +3,28 @@ title: REST API-oversigt
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API-reference
+# REST API-reference {#rest-api-reference}
 
-## Basiskonfiguration
+## Basiskonfiguration {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Godkendelse:** API Key & Secret (HTTP Basic Auth eller URL-parametre)
 
-## Godkendelse
+## Godkendelse {#authentication}
 
-### Aktivér API
+### Aktivér API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Hent API-legitimationsoplysninger
+### Hent API-legitimationsoplysninger {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Godkendelsesmetoder
+### Godkendelsesmetoder {#authentication-methods}
 
 **HTTP Basic Auth (anbefalet):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kerne-endpoints
+## Kerne-endpoints {#core-endpoints}
 
-### 1. Kunde-API
+### 1. Kunde-API {#1-customers-api}
 
 **Basisrute:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Basisrute:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Basisrute:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Basisrute:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Basisrute:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Basisrute:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registrerings-endpoint
+## Registrerings-endpoint {#registration-endpoint}
 
 `/register`-endpointet giver et komplet checkout-/registreringsflow:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Sovereign Tenant-endpoints
+## Sovereign Tenant-endpoints {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 tilføjer sovereign tenant REST-dækning til integrationer, der provisionerer, inspicerer eller verificerer isolerede tenants.
 
@@ -242,7 +242,7 @@ Typiske svar for migrationsstatus omfatter:
 
 Behandl `ready: false` som en blokering før lancering. Tjek verifikationsdetaljerne, ret database-host-bindingen, køen, brugerprovisioneringen eller routing-problemet, og prøv derefter verifikation igen.
 
-## Fejlsvar
+## Fejlsvar {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Behandl `ready: false` som en blokering før lancering. Tjek verifikationsdetalj
 }
 ```
 
-## Paginering og filtrering
+## Paginering og filtrering {#pagination-and-filtering}
 
 **Forespørgselsparametre:**
 ```http

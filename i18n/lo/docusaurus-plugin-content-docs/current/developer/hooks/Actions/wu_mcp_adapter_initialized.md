@@ -4,21 +4,21 @@ title: ການກະທຳ - wu_mcp_adapter_initialized
 sidebar_label: wu_mcp_adapter_initialized
 _i18n_hash: 0d5224ab7efaa954ce3d5b5c20e7f8c1
 ---
-# ການກະທຳ: wu_mcp_adapter_initialized
+# ການກະທຳ: wu_mcp_adapter_initialized {#action-wumcpadapterinitialized}
 
 ເຮັດວຽກຫຼັງຈາກຕົວປັບ MCP ຖືກເລີ່ມຕົ້ນແລ້ວ.
 
 ອະນຸຍາດໃຫ້ plugin ແລະ theme ອື່ນໆ ລົງທະບຽນຄວາມສາມາດຂອງຕົນເອງ.
 
-## ພາລາມິເຕີ
+## ພາລາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
 | $mcp_adapter | `\MCP_Adapter` | ອິນສະແຕນຂອງຕົວປັບ MCP. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.5.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L98) ທີ່ບັນທັດ 98

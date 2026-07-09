@@ -3,15 +3,15 @@ title: 'Nkuzi 8: Ịnabata ndị ahịa ọhụrụ'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Ihe Ọmụmụ 8: Ịnabata Ndị Ahịa
+# Ihe Ọmụmụ 8: Ịnabata Ndị Ahịa {#lesson-8-customer-onboarding}
 
 Ime ka onye ahịa debanye aha bụ naanị ọkara ọrụ. Ọ bụrụ na ha abanye, nwee mgbagwoju anya, ma ghara ịlaghachi ọzọ, ị tufuo ha. Ihe ọmụmụ a na-emepụta ahụmịhe nke na-eme ka ndebanye aha ọhụrụ ghọọ onye ahịa na-arụsi ọrụ ike ma na-etinye aka.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 E tinyela akara FitSite nke ọma, ma usoro checkout na-arụ ọrụ. Ugbu a anyị na-elekwasị anya n’ihe na-eme mgbe onye nwe ụlọ mgbatị ahụ mechara ndebanye aha ma rute na saịtị ọhụrụ ha maka oge mbụ.
 
-## Ihe Mere Onboarding Ji Dị Mkpa
+## Ihe Mere Onboarding Ji Dị Mkpa {#why-onboarding-matters}
 
 Nkeji 30 mbụ mgbe ndebanye aha gasịrị na-ekpebi ma onye ahịa ga-anọ ma ọ bụ hapụ. Onye nwe ụlọ mgbatị ahụ nke:
 
@@ -21,9 +21,9 @@ Nkeji 30 mbụ mgbe ndebanye aha gasịrị na-ekpebi ma onye ahịa ga-anọ ma
 
 Ụdị niche gị (Ihe Ọmụmụ 4) na-elekọta isi okwu mbụ. Ihe ọmụmụ a na-elekọta nke abụọ.
 
-## Ahụmịhe Mbanye Mbụ
+## Ahụmịhe Mbanye Mbụ {#the-first-login-experience}
 
-### Widget Dashboard Nnabata
+### Widget Dashboard Nnabata {#welcome-dashboard-widget}
 
 Mepụta widget Dashboard ahaziri ahazi nke na-ekele ndị ahịa ọhụrụ ma na-eduzi ha n’usoro nhazi. Nke a kwesịrị ịpụta nke ọma mgbe ha banyere na mbụ.
 
@@ -37,7 +37,7 @@ Mepụta widget Dashboard ahaziri ahazi nke na-ekele ndị ahịa ọhụrụ ma
 
 Nzọụkwụ ọ bụla na-ejikọ ozugbo na peeji ma ọ bụ ntọala metụtara ya. Enweghị ịchọgharị n’ime menu.
 
-### Mee Ka Dashboard Dị Mfe
+### Mee Ka Dashboard Dị Mfe {#simplify-the-dashboard}
 
 Ndị ahịa ọhụrụ achọghị ịhụ ihe menu WordPress niile. Tụlee:
 
@@ -47,29 +47,29 @@ Ndị ahịa ọhụrụ achọghị ịhụ ihe menu WordPress niile. Tụlee:
 
 Addon [Njikwa Plugin & Theme](/addons/plugin-and-theme-manager) nwere ike inyere aka ijikwa ihe ndị ahịa na-ahụ.
 
-## Usoro Email Nnabata
+## Usoro Email Nnabata {#welcome-email-sequence}
 
 Otu email nnabata ezughị. Hazie usoro nke na-eduzi ndị ahịa n’izu mbụ ha:
 
-### Email 1: Nnabata (Ozugbo ndebanye aha gasịrị)
+### Email 1: Nnabata (Ozugbo ndebanye aha gasịrị) {#email-1-welcome-immediately-after-signup}
 
 - Isiokwu: "Nnọọ na FitSite -- weebụsaịtị ụlọ mgbatị gị dị ndụ"
 - Ọdịnaya: Njikọ mbanye, nzọụkwụ mmalite ngwa ngwa, njikọ gaa na enyemaka
 - Ụda: Obi ụtọ, na-agba ume, metụtara mgbatị ahụ kpọmkwem
 
-### Email 2: Mmeri Ngwa Ngwa (Ụbọchị 1)
+### Email 2: Mmeri Ngwa Ngwa (Ụbọchị 1) {#email-2-quick-wins-day-1}
 
 - Isiokwu: "Ihe 3 ị ga-eme mbụ na FitSite gị"
 - Ọdịnaya: Tinye logo gị, melite onyonyo hero nke homepage, tinye usoro klas gị
 - Gụnye screenshot na-egosi kpọmkwem ebe a ga-pịa
 
-### Email 3: Mee Ka Ọ Bụrụ Nke Gị (Ụbọchị 3)
+### Email 3: Mee Ka Ọ Bụrụ Nke Gị (Ụbọchị 3) {#email-3-make-it-yours-day-3}
 
 - Isiokwu: "Mee ka saịtị mgbatị gị pụta ìhè"
 - Ọdịnaya: Hazie agba, tinye foto ndị nkuzi, dee akụkọ ụlọ mgbatị gị
 - Njikọ gaa na ihe atụ nke saịtị mgbatị dị mma n’elu platform ahụ
 
-### Email 4: Gaa Live (Ụbọchị 7)
+### Email 4: Gaa Live (Ụbọchị 7) {#email-4-go-live-day-7}
 
 - Isiokwu: "Ị dị njikere ịkekọrịta FitSite gị na ụwa?"
 - Ọdịnaya: Ndepụta ihe ị ga-enyocha tupu ịkekọrịta, otu esi ejikọ custom domain (ma ọ bụrụ na ọ bụ Growth/Pro), ndụmọdụ ịkekọrịta na social
@@ -78,11 +78,11 @@ Otu email nnabata ezughị. Hazie usoro nke na-eduzi ndị ahịa n’izu mbụ 
 Jiri [Webhooks](/user-guide/integrations/webhooks) ma ọ bụ [Zapier](/user-guide/integrations/zapier) kpalite email ndị a site na platform email marketing gị. Nke a na-enye gị njikwa ka ukwuu n’oge izipu ma na-enye gị ohere iso engagement.
 :::
 
-## Ihe Enyemaka
+## Ihe Enyemaka {#help-resources}
 
 Mepụta ọdịnaya enyemaka metụtara niche kpọmkwem nke na-aza ajụjụ ndị nwe ụlọ mgbatị ahụ na-ajụ n’eziokwu:
 
-### Edemede Knowledge Base
+### Edemede Knowledge Base {#knowledge-base-articles}
 
 - "Otu esi emelite usoro klas gị"
 - "Ịgbakwunye na idezi profaịlụ ndị nkuzi"
@@ -92,7 +92,7 @@ Mepụta ọdịnaya enyemaka metụtara niche kpọmkwem nke na-aza ajụjụ n
 
 Dee ndị a maka ndị ọrụ na-abụghị ndị teknụzụ. Jiri screenshot. Zere jargon WordPress.
 
-### Njegharị Vidio
+### Njegharị Vidio {#video-walkthroughs}
 
 Ndekọ ihuenyo dị mkpirikpi (nkeji 2-3) na-egosi:
 
@@ -103,7 +103,7 @@ Ndekọ ihuenyo dị mkpirikpi (nkeji 2-3) na-egosi:
 
 Ihe ndị a achọghị ịbụ mmepụta a sachara nke ukwuu. Ihe dị mkpa bụ ka ọ doo anya, baa uru, ma bụrụ nke metụtara niche kpọmkwem.
 
-## Peeji Account
+## Peeji Account {#the-account-page}
 
 Ultimate Multisite gụnyere [Peeji Account](/user-guide/client-management/account-page) nke ndị ahịa na-ahụ, ebe ndị ahịa na-ejikwa subscription ha. Hazie nke a ka ọ:
 
@@ -112,7 +112,7 @@ Ultimate Multisite gụnyere [Peeji Account](/user-guide/client-management/accou
 - Nye akụkọ billing na nbudata invoice
 - Jikọọ gaa na ihe enyemaka
 
-## Ịlele Ihe Ịga nke Ọma Onboarding
+## Ịlele Ihe Ịga nke Ọma Onboarding {#measuring-onboarding-success}
 
 Soro ihe ngosi ndị a iji mara ma onboarding gị na-arụ ọrụ:
 
@@ -121,7 +121,7 @@ Soro ihe ngosi ndị a iji mara ma onboarding gị na-arụ ọrụ:
 - **Tiketi nkwado sitere n’aka ndị ahịa ọhụrụ**: Ọnụ ọgụgụ dị elu pụtara na onboarding gị nwere oghere
 - **Ntughari site na trial gaa na paid**: Ọ bụrụ na ị na-enye trial, pasent ole na-atụgharị?
 
-## Netwọkụ FitSite Ruo Ugbu A
+## Netwọkụ FitSite Ruo Ugbu A {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Ihe Anyị Wuru n’Ihe Ọmụmụ A
+## Ihe Anyị Wuru n’Ihe Ọmụmụ A {#what-we-built-this-lesson}
 
 - **Ahụmịhe mbanye mbụ nwere nduzi** nwere widget Quick Start
 - **Dashboard e mere ka ọ dị mfe** lekwasịrị anya n’ọrụ njikwa saịtị mgbatị ahụ

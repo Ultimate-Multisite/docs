@@ -3,11 +3,11 @@ title: Guteza imbere irembo ryihariye
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Gutegura irembo ryihariye
+# Gutegura irembo ryihariye {#custom-gateway-development}
 
 Ushobora gukora amarembo yihariye yo kwishyura wongerera ubushobozi class `Base_Gateway`.
 
-## Class y'irembo
+## Class y'irembo {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Kwandikisha irembo
+## Kwandikisha irembo {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Uburyo bw'ingenzi
+## Uburyo bw'ingenzi {#key-methods}
 
 | Method | Intego |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Gukemura ubusabe bwo gusubiza amafaranga |
 | `get_payment_methods()` | Gusubiza uburyo bwo kwishyura bwabitswe bw'umukiriya |
 
-## Ibyangombwa byo kuvugurura kuri memberships zisubiramo
+## Ibyangombwa byo kuvugurura kuri memberships zisubiramo {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 yemerera integrations z'amarembo gutangaza niba membership isubiramo ifite credential yo kuvugurura ishobora kongera gukoreshwa mbere y'uko `auto_renew` ibikwa. Koresha hook `wu_membership_has_renewal_credential` maze usubize:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Siba ikimenyetso cya credential ibura nk'igice cy'inzira y'irembo ryawe yagenze neza yo kongera gutanga uburenganzira nyuma y'uko credential nshya ishobora kongera gukoreshwa ibitswe.
 
-## Inama
+## Inama {#tips}
 
 - Buri gihe subiza `WP_Error` igihe habaye kunanirwa kugira ngo Ultimate Multisite ishobore gukemura iyerekanwa ry'ikosa
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Koresha `wu_log_add()` ku nyandiko za log zihariye z'irembo
 
-## Ubushobozi bw'abatanga serivisi b'umuhuza wa AI
+## Ubushobozi bw'abatanga serivisi b'umuhuza wa AI {#ai-connector-provider-capabilities}
 
 Integrations zihariye zihamagara ibikorwa bishyigikiwe n'umuhuza wa AI zikwiye guhuzwa n'urutonde rw'abatanga serivisi ba OAuth rushyigikiwe rwatangijwe na AI Provider for Anthropic Max v1.3.0:
 

@@ -3,7 +3,7 @@ title: Jounal chanjman Ajan Sipò
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# Jounal chanjman Ajan Sipò yo
+# Jounal chanjman Ajan Sipò yo {#support-agents-changelog}
 
 Vèsyon: 1.0.14 - Pibliye nan dat 2026-05-05
 * Koreksyon: Ajoute header Requires Plugins pou bon deklarasyon depandans ekstansyon WordPress

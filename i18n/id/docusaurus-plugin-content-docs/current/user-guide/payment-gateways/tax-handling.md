@@ -3,7 +3,7 @@ title: Penanganan Pajak
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Penanganan Pajak
+# Penanganan Pajak {#tax-handling}
 
 Ultimate Multisite memiliki modul pemungutan pajak yang terpasang di plugin inti kami, jadi jika Anda perlu memungut pajak penjualan pada paket, paket layanan, dan layanan Anda, Anda dapat melakukannya dengan mudah tanpa perlu memasang add-on apa pun.
 
@@ -11,7 +11,7 @@ Untuk perusahaan yang berlokasi di Eropa, kami menawarkan **add-on** yang menamb
 
 Ultimate Multisite tidak melaporkan atau menyetorkan pajak atas nama Anda kepada pemerintah; kami hanya membantu Anda memungut pajak yang sesuai pada saat transaksi. **Anda tetap perlu menyetorkan pajak sendiri.**
 
-## Mengaktifkan Pemungutan Pajak
+## Mengaktifkan Pemungutan Pajak {#enabling-tax-collection}
 
 Pemungutan pajak tidak diaktifkan secara default. Untuk mengaktifkannya, Anda perlu membuka **Ultimate Multisite > Pengaturan > Pajak** dan mengaktifkan pengaturan Aktifkan Pajak.
 
@@ -25,7 +25,7 @@ Anda juga dapat melihat pengaturan pajak untuk masing-masing produk:
 
 ![Pengaturan pajak untuk produk](/img/config/settings-taxes.png)
 
-### Pajak dikecualikan vs. Pajak termasuk
+### Pajak dikecualikan vs. Pajak termasuk {#tax-excluded-vs-tax-included}
 
 Secara default, semua harga produk Anda belum termasuk pajak, yang berarti pajak **tidak disertakan** dalam harga produk. Jika kami menentukan bahwa pelanggan harus membayar pajak untuk pembelian tertentu, kami akan menambahkan pajak **di atas** subtotal.
 
@@ -37,7 +37,7 @@ Jangan lupa untuk **menyimpan** perubahan yang telah Anda buat.
 
 ###
 
-## Membuat Tarif Pajak
+## Membuat Tarif Pajak {#creating-tax-rates}
 
 Setelah Anda mengaktifkan Pemungutan Pajak, Anda perlu membuat tarif pajak untuk lokasi tertentu menggunakan editor tarif pajak kami.
 
@@ -51,7 +51,7 @@ Pada halaman editor tarif pajak, Anda dapat menambahkan Tarif Pajak baru dengan 
 
 Anda perlu memberi setiap tarif pajak sebuah **judul** (digunakan pada faktur). Kemudian Anda dapat memilih **negara** (wajib), **provinsi/negara bagian,** dan **kota** (keduanya opsional) tempat pajak ini akan dikenakan. Terakhir, tambahkan **tarif pajak dalam persen**.
 
-### Kategori Pajak
+### Kategori Pajak {#tax-categories}
 
 Anda juga dapat membuat beberapa Kategori Pajak, untuk menambahkan tarif pajak yang berbeda bagi berbagai jenis produk.
 
@@ -73,7 +73,7 @@ Anda dapat mengatur kategori pajak untuk produk tertentu dengan membuka **halama
 
 Pada layar yang sama, Anda dapat menonaktifkan toggle **Kena Pajak?** untuk memberi tahu Ultimate Multisite bahwa pajak tidak boleh dipungut pada produk tersebut.
 
-## Dukungan VAT Eropa
+## Dukungan VAT Eropa {#european-vat-support}
 
 Seperti disebutkan sebelumnya, kami memiliki add-on yang tersedia untuk pelanggan di EU yang memiliki persyaratan tambahan karena peraturan VAT Eropa.
 
@@ -101,7 +101,7 @@ Jika Anda kembali ke **tab Pengaturan Pajak** , Anda akan melihat opsi baru yang
 
 <!-- Tangkapan layar tidak tersedia: toggle Aktifkan Dukungan VAT di pengaturan Pajak setelah aktivasi add-on -->
 
-### Mengambil Tarif Pajak VAT
+### Mengambil Tarif Pajak VAT {#pulling-on-vat-tax-rates}
 
 Salah satu alat yang ditambahkan oleh integrasi kami adalah kemampuan untuk memuat tarif pajak untuk negara anggota EU. Hal itu dapat dilakukan dengan mengunjungi halaman editor tarif pajak setelah mengaktifkan dukungan VAT EU.
 
@@ -111,7 +111,7 @@ Di bagian bawah halaman, Anda akan melihat opsi pengambilan VAT. Memilih jenis t
 
 Anda juga dapat mengedit nilai setelah mengambilnya. Untuk melakukannya, cukup edit baris tabel yang Anda perlukan dan klik untuk menyimpan nilai baru.
 
-### Validasi VAT
+### Validasi VAT {#vat-validation}
 
 Saat dukungan VAT diaktifkan, Ultimate Multisite akan menambahkan kolom tambahan ke formulir checkout, di bawah kolom alamat penagihan. Kolom tersebut hanya akan muncul untuk pelanggan yang berlokasi di EU.
 

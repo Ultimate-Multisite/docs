@@ -3,7 +3,7 @@ title: Pangurusan Pajeg
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Pangurusan Pajeg
+# Pangurusan Pajeg {#tax-handling}
 
 Ultimate Multisite nduwèni modul panglumpukan pajeg sing wis dibangun ing plugin inti kita, dadi yen panjenengan perlu nglumpukaké pajeg dodolan kanggo rencana, paket, lan layanan panjenengan, panjenengan bisa nindakake kanthi gampang tanpa kudu masang add-ons apa wae.
 
@@ -11,7 +11,7 @@ Kanggo perusahaan sing mapan ing Éropah, kita nyedhiyakake **add-on** sing namb
 
 Ultimate Multisite ora ngajukaké utawa nyetor pajeg kanggo panjenengan marang pamaréntah; kita mung mbantu panjenengan nglumpukaké pajeg sing cocog nalika transaksi. **Panjenengan isih kudu nyetor pajeg dhéwé.**
 
-## Ngaktifaké Panglumpukan Pajeg
+## Ngaktifaké Panglumpukan Pajeg {#enabling-tax-collection}
 
 Panglumpukan pajeg ora aktif kanthi gawan. Kanggo ngaktifaké, panjenengan kudu menyang **Ultimate Multisite > Settings > Taxes** banjur nguripaké setelan Enable Taxes.
 
@@ -25,7 +25,7 @@ Panjenengan uga bisa ndeleng setelan pajeg kanggo produk individu:
 
 ![Setelan pajeg kanggo produk](/img/config/settings-taxes.png)
 
-### Pajeg ora kalebu vs. pajeg kalebu
+### Pajeg ora kalebu vs. pajeg kalebu {#tax-excluded-vs-tax-included}
 
 Kanthi gawan, kabèh rega produk panjenengan ora kalebu pajeg, tegese pajeg **ora kalebu** ing rega produk. Yen kita nemtokaké manawa pelanggan kudu mbayar pajeg kanggo tuku tartamtu, kita bakal nambahaké pajeg **ing ndhuwur** subtotal.
 
@@ -37,7 +37,7 @@ Aja lali **nyimpen** owah-owahan sing wis panjenengan gawé.
 
 ###
 
-## Nggawe Tarif Pajeg
+## Nggawe Tarif Pajeg {#creating-tax-rates}
 
 Sawisé panjenengan ngaktifaké Panglumpukan Pajeg, panjenengan kudu nggawe tarif pajeg kanggo lokasi tartamtu nganggo editor tarif pajeg kita.
 
@@ -51,7 +51,7 @@ Ing kaca editor tarif pajeg, panjenengan bisa nambah Tax Rates anyar kanthi ngek
 
 Panjenengan kudu menehi saben tarif pajeg **irah-irahan** (digunakake ing faktur). Banjur panjenengan bisa milih **negara** (wajib), **negara bagéan,** lan **kutha** (kalorone opsional) panggonan pajeg iki bakal ditagih. Pungkasan, tambahaké **tarif pajeg ing persen**.
 
-### Kategori Pajeg
+### Kategori Pajeg {#tax-categories}
 
 Panjenengan uga bisa nggawe sawetara Kategori Pajeg, kanggo nambah tarif pajeg sing béda kanggo macem-macem jinis produk.
 
@@ -73,7 +73,7 @@ Panjenengan bisa nyetel kategori pajeg kanggo produk tartamtu kanthi menyang **k
 
 Ing layar sing padha, panjenengan bisa matèni tombol **Is Taxable?** kanggo ngandhani Ultimate Multisite manawa sistem ora kudu nglumpukaké pajeg kanggo produk tartamtu kuwi.
 
-## Dhukungan VAT Éropah
+## Dhukungan VAT Éropah {#european-vat-support}
 
 Kaya sing wis disebutaké sadurungé, kita nduwèni add-on sing kasedhiya kanggo pelanggan ing EU sing nduwèni syarat tambahan amarga aturan VAT Éropah.
 
@@ -101,7 +101,7 @@ Yen panjenengan bali menyang **tab Tax Settings** , panjenengan bakal weruh opsi
 
 <!-- Gambar layar ora kasedhiya: tombol Enable VAT Support ing setelan Pajeg sawisé add-on diaktifaké -->
 
-### Ngimpor Tarif Pajeg VAT
+### Ngimpor Tarif Pajeg VAT {#pulling-on-vat-tax-rates}
 
 Salah siji piranti sing ditambahaké déning integrasi kita yaiku kemampuan kanggo ngemot tarif pajeg kanggo negara anggota EU. Iki bisa ditindakake kanthi ngunjungi kaca editor tarif pajeg sawisé ngaktifaké dhukungan EU VAT.
 
@@ -111,7 +111,7 @@ Ing sisih ngisor kaca, panjenengan bakal weruh opsi narik VAT. Milih jinis tarif
 
 Panjenengan uga bisa nyunting nilai sawisé narik. Kanggo nindakake, cukup sunting larikan tabel sing dibutuhake lan klik kanggo nyimpen nilai anyar.
 
-### Validasi VAT
+### Validasi VAT {#vat-validation}
 
 Nalika dhukungan VAT diaktifaké, Ultimate Multisite bakal nambah kolom tambahan menyang formulir checkout, ing sangisoré kolom alamat tagihan. Kolom kasebut mung bakal katon kanggo pelanggan sing mapan ing EU.
 

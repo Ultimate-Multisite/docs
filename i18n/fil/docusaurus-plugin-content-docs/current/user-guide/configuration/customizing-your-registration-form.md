@@ -3,13 +3,13 @@ title: Pagpapasadya ng Iyong Form ng Pagpaparehistro
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pag-customize ng iyong Form sa Pagpaparehistro
+# Pag-customize ng iyong Form sa Pagpaparehistro {#customizing-your-registration-form}
 
 Upang magmukhang natatangi ang iyong network kumpara sa lahat ng iba pang SaaS na binuo sa WordPress platform, pinapayagan ka ng Ultimate Multisite na i-customize ang iyong mga pahina ng pagpaparehistro at pag-login gamit ang aming feature na **Mga Form sa Pag-checkout**.
 
 Bagama’t madali at flexible ang mga ito para sumubok ng iba’t ibang paraan kapag sinusubukang i-convert ang mga bagong customer, kadalasang ginagamit ang mga ito upang gumawa ng mga personalized na form sa pagpaparehistro. Layunin ng artikulong ito na ipakita kung paano mo ito magagawa.
 
-## Mga pahina ng pag-login at pagpaparehistro:
+## Mga pahina ng pag-login at pagpaparehistro: {#login-and-registration-pages}
 
 Sa pag-install ng Ultimate Multisite, awtomatiko itong gumagawa ng mga custom na pahina ng pag-login at pagpaparehistro sa iyong pangunahing website. Maaari mong baguhin ang mga default na pahinang ito anumang oras sa pamamagitan ng pagpunta sa iyong pahina na **Ultimate Multisite > Mga Setting > Pag-login at Pagpaparehistro**.
 
@@ -45,7 +45,7 @@ Ngayon, tingnan natin ang iba pang opsyon na may kaugnayan pa rin sa proseso ng 
 
 At iyon na ang lahat ng opsyong may kaugnayan sa pag-login at pagpaparehistro na maaari mong i-customize! Huwag kalimutang i-save ang iyong mga setting pagkatapos mong matapos i-edit ang mga ito.
 
-## Paggamit ng maraming form sa pagpaparehistro:
+## Paggamit ng maraming form sa pagpaparehistro: {#using-multiple-registration-forms}
 
 Nag-aalok ang Ultimate Multisite 2.0 ng checkout form editor na nagpapahintulot sa iyong gumawa ng kahit ilang form ayon sa gusto mo, na may iba’t ibang field, mga produktong iniaalok, atbp.
 
@@ -69,7 +69,7 @@ Bilang alternatibo, maaari mong i-edit o i-duplicate ang mga form na mayroon ka 
 
 Kung pipiliin mo ang single step o multi-step, ang checkout form ay naka-pre-populate na ng mga pangunahing hakbang upang gumana ito. Pagkatapos, kung gusto mo, maaari kang magdagdag ng mga karagdagang hakbang dito.
 
-### Pag-edit ng Checkout Form:
+### Pag-edit ng Checkout Form: {#editing-a-checkout-form}
 
 Gaya ng nabanggit namin dati, maaari kang gumawa ng mga checkout form para sa iba’t ibang layunin. Sa halimbawang ito, gagawa tayo sa isang form sa pagpaparehistro.
 
@@ -131,11 +131,11 @@ Para makuha ang shortcode ng iyong form, i-click ang **Generate Shortcode** at k
 
 _**Tala:** Kakailanganin mong idagdag ang shortcode na ito sa iyong registration page upang maidagdag dito ang checkout form na ito._
 
-## Paunang pagpili ng mga produkto at template gamit ang mga URL parameter:
+## Paunang pagpili ng mga produkto at template gamit ang mga URL parameter: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Kung gusto mong gumawa ng mga naka-customize na pricing table para sa iyong mga produkto at paunang piliin sa checkout form ang produkto o template na pipiliin ng iyong customer mula sa iyong pricing table o templates page, maaari kang gumamit ng mga URL parameter para rito.
 
-### **Para sa mga plan:**
+### **Para sa mga plan:** {#for-plans}
 
 Pumunta sa **Ultimate Multisite > Products > Select a plan**. Dapat mong makita ang button na **Click to copy Shareable Link** sa itaas ng page. Ito ang link na maaari mong gamitin para paunang piliin ang partikular na plan na ito sa iyong checkout form.
 
@@ -143,7 +143,7 @@ Pumunta sa **Ultimate Multisite > Products > Select a plan**. Dapat mong makita 
 
 Tandaan na valid lang ang shareable link na ito para sa **Plans**. Hindi mo magagamit ang mga shareable link para sa mga package o serbisyo.
 
-### Para sa mga template:
+### Para sa mga template: {#for-templates}
 
 Kung gusto mong paunang piliin ang mga template ng site sa iyong checkout form, maaari mong gamitin ang parameter na: **?template_id=X** sa URL ng iyong registration page. Kailangang palitan ang "X" ng **numero ng ID ng site template**. Para makuha ang numerong ito, pumunta sa **Ultimate Multisite > Sites**.
 

@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Zowonjezera za Ultimate Multisite
+# Zowonjezera za Ultimate Multisite {#ultimate-multisite-addons}
 
 Zowonjezera zimakulitsa Ultimate Multisite ndi mawonekedwe owonjezera ndi kuphatikizana. Zowonjezera zambiri ndi zolipiridwa ndipo zingagulidwe ku [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Kuyika
+## Kuyika {#installation}
 
 Zowonjezera zingayikidwe m'njira ziwiri:
 
 1. **Kudzera pa Tsamba la Zowonjezera** -- Pitani ku tsamba loyang'anira zowonjezera la tsamba lanu mu WordPress admin
 2. **Kutsitsa Pamanja** -- Tsitsani kuchokera ku [Account yanu](https://ultimatemultisite.com/my-account/downloads/) ndipo kwezani kudzera pa Mapulagini > Onjezani Chatsopano
 
-## Zowonjezera Zomwe Zilipo
+## Zowonjezera Zomwe Zilipo {#available-addons}
 
 | Chowonjezera | Kufotokozera |
 |-------|-------------|

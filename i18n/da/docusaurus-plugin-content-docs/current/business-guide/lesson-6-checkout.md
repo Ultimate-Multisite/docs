@@ -3,15 +3,15 @@ title: 'Lektion 6: Tilmeldingsoplevelsen'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lektion 6: Tilmeldingsoverblikket
+# Lektion 6: Tilmeldingsoverblikket {#lesson-6-the-signup-experience}
 
 Kassen er det sted, hvor interesse bliver til indtægt. En forvirrende eller generisk tilmeldingsproces mister kunder. En niche-specifik proces, der taler deres sprog og føles ubesværet, konverterer dem.
 
-## Hvor vi stoppede
+## Hvor vi stoppede {#where-we-left-off}
 
 FitSite har skabeloner og planer sat op. Nu bygger vi registrerings- og kasseoplevelsen, der forvandler fitnessstudieejere til betalende kunder.
 
-## Forståelse af Tilmeldingsflowet
+## Forståelse af Tilmeldingsflowet {#understanding-the-registration-flow}
 
 Ultimate Multisites kasseformularer er fuldt tilpasselige flertrinsformularer. For FitSite ønsker vi en proces, der:
 
@@ -21,11 +21,11 @@ Ultimate Multisites kasseformularer er fuldt tilpasselige flertrinsformularer. F
 
 Se [The Registration Flow](/user-guide/configuration/the-registration-flow) for den fulde tekniske reference.
 
-## Design af FitSite Kassen
+## Design af FitSite Kassen {#designing-the-fitsite-checkout}
 
 Gå til **Ultimate Multisite > Checkout Forms** og opret en ny formular.
 
-### Trin 1: Planvalg
+### Trin 1: Planvalg {#step-1-plan-selection}
 
 Det første, en fitnessstudieejer ser, skal være planer præsenteret på et sprog, de forstår.
 
@@ -37,7 +37,7 @@ Det første, en fitnessstudieejer ser, skal være planer præsenteret på et spr
 "1 GB lagerplads" betyder intet for en motionsstudieejer. "Alt, hvad du har brug for til en professionel studieside" betyder alt. Skriv planbeskrivelser i din kundes sprog.
 :::
 
-### Trin 2: Skabelonvalg
+### Trin 2: Skabelonvalg {#step-2-template-selection}
 
 Efter at kunden har valgt en plan, vælger de deres startskabelon.
 
@@ -45,7 +45,7 @@ Efter at kunden har valgt en plan, vælger de deres startskabelon.
 - De tilgængelige skabeloner filtreres efter den plan, de har valgt (konfigureret i Lektion 5)
 - Hver skabelon skal have et forhåndsvisningsbillede, der viser et fitness-specifikt design
 
-### Trin 3: Kontooprettelse
+### Trin 3: Kontooprettelse {#step-3-account-creation}
 
 Hold dette så simpelt som muligt. Indsaml kun følgende oplysninger:
 
@@ -55,27 +55,27 @@ Hold dette så simpelt som muligt. Indsaml kun følgende oplysninger:
 
 Spørg ikke om information, du ikke har brug for ved tilmeldingen. Hvert ekstra felt reducerer konverteringsraten.
 
-### Trin 4: Opsætning af hjemmeside
+### Trin 4: Opsætning af hjemmeside {#step-4-site-setup}
 
 - **Hjemmesidetitel**: Præ-fyld fra studio-navnet indtastet i trin 3
 - **Hjemmeside-URL**: Automatisk genereret fra studio-navnet (f.eks. `ironworks.fitsite.com`)
 
-### Trin 5: Betaling
+### Trin 5: Betaling {#step-5-payment}
 
 - Tilføj feltet til **Betaling**
 - Konfigurer din betalingsgateway ([Stripe](/user-guide/payment-gateways/stripe) anbefales til abonnementsbetaling)
 - Hvis du har oprettet order bumps i Lektion 5, så tilføj et felt til **Order Bump** før betalings trinnet
 
-### Trin 6: Bekræftelse
+### Trin 6: Bekræftelse {#step-6-confirmation}
 
 - Tilpas bekræftelsesbeskeden med fitness-specifik sprog
 - Eksempel: "Din fitnessstudio-hjemmeside bliver oprettet. Du vil blive omdirigeret til din nye side om få sekunder."
 
-## Tilføjelse af en Toggles for Periodevalg
+## Tilføjelse af en Toggles for Periodevalg {#adding-a-period-selection-toggle}
 
 Hvis du har indstillet prisvariationer i dine planer (månedlig vs. årlig), så tilføj et felt kaldet **Period Selection** til kassen, så kunder kan skifte mellem betalingsperioderne. Se [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) for instruktioner.
 
-## Konfiguration af betaling
+## Konfiguration af betaling {#configuring-payment}
 
 Hvis du endnu ikke har opsat en betalingsgateway:
 
@@ -85,7 +85,7 @@ Hvis du endnu ikke har opsat en betalingsgateway:
 
 Se [Getting Paid](/user-guide/payment-gateways/getting-paid) for detaljer om, hvordan betalinger flyder til din konto.
 
-## Test af flowet
+## Test af flowet {#testing-the-flow}
 
 Før du går videre, gennemfør en fuld testregistrering:
 
@@ -105,7 +105,7 @@ Tjek følgende:
 - [ ] Kunden lander på en fungerende side med den valgte skabelon
 - [ ] Bekræftelsesmails bruger fitness-specifik sprogbrug
 
-## FitSite Network Indtil Nu
+## FitSite Network Indtil Nu {#the-fitsite-network-so-far}
 
 FitSite Network
 ├── WordPress Multisite (subdom-tilgang)
@@ -121,7 +121,7 @@ FitSite Network
 │   └── Fitness-specifik bekræftelse
 └── Klar til branding (næste lektion)
 
-## Hvad Vi Har Bygget I Denne Lektion
+## Hvad Vi Har Bygget I Denne Lektion {#what-we-built-this-lesson}
 
 - **En flertrins checkout-formular**, skræddersyet til fitnessstudieejere
 - **Niche-specifikt sprog** gennem hele registreringsflowet

@@ -3,9 +3,9 @@ title: Ultimate AI Connector ho an'ny WebLLM Tantaran'ny fanovana
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Changelog
+# Ultimate AI Connector for WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Version 1.1.0 — Navoaka tamin'ny 2026-04-09
+## Version 1.1.0 — Navoaka tamin'ny 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Vaovao: Floating chat widget miaraka amin'ny admin-bar status indicator — izay mpampiasa efa niditra dia afaka mandefa prompt amin'ny LLM eo amin'ny browser mivantana avy amin'ny front end.
 * Vaovao: SharedWorker runtime — mandeha ao anaty SharedWorker izao ny MLC engine ka tabilao maro no mizara GPU session iray fa tsy mifandona amin'izany.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Fanitsiana: Ampifandraiso amin'ny wpai_preferred_text_models filter ny WebLLM mba handefasan'ny endri-javatra AI Experiments mankany amin'ny browser engine rehefa voakonfigura ny model.
 * Nohatsaraina: Fanarenana cache, fanajariana votoaty, ary fanitsiana hardware-reference nipoitra nandritra ny fitsapana end-to-end.
 
-## Version 1.0.0 — Famoahana voalohany
+## Version 1.0.0 — Famoahana voalohany {#version-100--initial-release}

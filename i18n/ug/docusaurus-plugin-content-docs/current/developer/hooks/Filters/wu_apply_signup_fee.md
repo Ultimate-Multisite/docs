@@ -4,11 +4,11 @@ title: سۈزگۈچ - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 تىزىملىتىش ھەققىنى قوللىنىش-قوللانماسلىقنى سۈزۈپ بەلگىلەيدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 | $product | `object` | ئەزالىق دەرىجىسى ئوبيېكتى. |
 | $this | `\WP_Ultimo\Checkout\Cart` | تىزىملىتىش ئوبيېكتى. |
 
-### دىن باشلاپ
+### دىن باشلاپ {#since}
 
 - 3.1
-### مەنبە
+### مەنبە {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) دا 1769-قۇردا بەلگىلەنگەن.

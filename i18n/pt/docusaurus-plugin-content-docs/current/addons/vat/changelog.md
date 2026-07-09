@@ -3,7 +3,7 @@ title: Registo de alterações do IVA
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Registo de alterações de IVA
+# Registo de alterações de IVA {#vat-changelog}
 
 Versão 1.0.7 - Lançada em 2026-02-03
 

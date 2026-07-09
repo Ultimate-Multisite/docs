@@ -4,11 +4,11 @@ title: Filtru - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtru: secure_logged_in_cookie
+# Filtru: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Jiffiltra jekk il-cookie tal-utent li jkun logged in għandhiex tintbagħat biss fuq HTTPS.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Jiffiltra jekk il-cookie tal-utent li jkun logged in għandhiex tintbagħat biss
 | $user_id | `int` | ID tal-utent. |
 | $secure | `bool` | Jekk il-cookie tal-awtentikazzjoni għandhiex tintbagħat biss fuq HTTPS. |
 
-### Minn
+### Minn {#since}
 
 - 3.1.0
-### Sors
+### Sors {#source}
 
 Iddefinit f’[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) fil-linja 91

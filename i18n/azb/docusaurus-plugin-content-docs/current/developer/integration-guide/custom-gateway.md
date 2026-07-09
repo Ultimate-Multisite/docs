@@ -3,11 +3,11 @@ title: اؤزل درگاه گلیشدیرمه‌سی
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# اؤزل اؤده‌نیش گئچیدی گلیشدیرمه‌سی
+# اؤزل اؤده‌نیش گئچیدی گلیشدیرمه‌سی {#custom-gateway-development}
 
 `Base_Gateway` کلاسینی گئنیشله‌دیره‌رک اؤزل اؤده‌نیش گئچیدلری یارادا بیله‌رسینیز.
 
-## گئچید کلاسی
+## گئچید کلاسی {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## گئچیدی قئید ائدین
+## گئچیدی قئید ائدین {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## اساس متودلار
+## اساس متودلار {#key-methods}
 
 | متود | مقصد |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | گئری اؤده‌مه ایسته‌کلرینی ایداره ائدیر |
 | `get_payment_methods()` | موشتری اوچون ساخلی اؤده‌نیش متودلارینی قایتاریر |
 
-## تکرارلانان عضویت‌لر اوچون یئنیله‌مه اعتبارلاری
+## تکرارلانان عضویت‌لر اوچون یئنیله‌مه اعتبارلاری {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 گئچید اینتگراسیالارینا ایمکان وئریر کی `auto_renew` ساخلامادان اؤنجه تکرارلانان عضویتین یئنی‌دن ایشله‌نه بیلن یئنیله‌مه اعتباری اولوب-اولمادیغینی بیلدیرسین. `wu_membership_has_renewal_credential` هوکونا قوشولون و بونو قایتارین:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 یئنی یئنی‌دن ایشله‌نه بیلن اعتبار ساخلامادان سونرا، گئچیدینیزین اوغورلو یئنی‌دن ایجازه آخیشینین بیر حیصه‌سی کیمی چاتیشمایان اعتبار نیشانینی سیلین.
 
-## ایپ‌اوجلاری
+## ایپ‌اوجلاری {#tips}
 
 - اوغورسوزلوق‌دا همیشه `WP_Error` قایتارین کی Ultimate Multisite خطا گؤسترمه‌سینی ایداره ائده بیلسین
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - گئچیده مخصوص قئیدلر اوچون `wu_log_add()` ایشلدین
 
-## AI connector provider قابلیّت‌لری
+## AI connector provider قابلیّت‌لری {#ai-connector-provider-capabilities}
 
 AI connector-ا دایانان عملیّاتلاری چاغیران اؤزل اینتگراسیالار، AI Provider for Anthropic Max v1.3.0 ایله تانیتدیریلَن ده‌ستکلنه‌ن OAuth provider مجموعه‌سی ایله اویغون اولمالیدیر:
 

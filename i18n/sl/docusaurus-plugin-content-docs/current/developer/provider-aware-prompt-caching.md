@@ -3,11 +3,11 @@ title: Predpomnjenje pozivov z zavedanjem ponudnika
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Predpomnjenje pozivov z zavedanjem ponudnika
+# Predpomnjenje pozivov z zavedanjem ponudnika {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 uvaja **predpomnjenje pozivov z zavedanjem ponudnika**, ki optimizira stroške API in zakasnitev s predpomnjenjem pozivov pri različnih ponudnikih LLM. Vsak ponudnik ima različne mehanizme in konfiguracije predpomnjenja.
 
-## Pregled
+## Pregled {#overview}
 
 Predpomnjenje pozivov vam omogoča, da:
 
@@ -23,11 +23,11 @@ Različni ponudniki predpomnjenje izvajajo različno:
 - **OpenRouter**: predpomnjenje, specifično za ponudnika
 - **Vertex Anthropic**: predpomnjenje pozivov z nadzorom predpomnilnika
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini zagotavlja izrecno upravljanje predpomnilnika prek `cachedContents` API.
 
-### Konfiguracija
+### Konfiguracija {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Ustvarjanje predpomnjenega poziva
+### Ustvarjanje predpomnjenega poziva {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Uporaba predpomnjenega poziva
+### Uporaba predpomnjenega poziva {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Življenjski cikel predpomnilnika
+### Življenjski cikel predpomnilnika {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Najboljše prakse za Gemini
+### Najboljše prakse za Gemini {#best-practices-for-gemini}
 
 - **Nastavite ustrezen TTL**: Uravnotežite prihranek stroškov in zastarelost predpomnilnika
 - **Predpomnite sistemske pozive**: Ponovno uporabite isti sistemski poziv v različnih zahtevah
 - **Spremljajte uporabo predpomnilnika**: Sledite, kateri predpomnilniki se uporabljajo največ
 - **Počistite potekle predpomnilnike**: Občasno izbrišite neuporabljene predpomnilnike
 
-## Azure OpenAI: predpomnjenje pozivov
+## Azure OpenAI: predpomnjenje pozivov {#azure-openai-prompt-caching}
 
 Azure OpenAI podpira predpomnjenje pozivov s samodejnim upravljanjem TTL.
 
-### Konfiguracija
+### Konfiguracija {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Omogočanje predpomnjenja
+### Omogočanje predpomnjenja {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Glave predpomnilnika
+### Glave predpomnilnika {#cache-headers}
 
 Azure OpenAI uporablja HTTP glave za nadzor predpomnilnika:
 
@@ -152,7 +152,7 @@ Podprte vrednosti:
 - `no_cache`: Ne predpomni te zahteve
 - `no_store`: Ne predpomni in ne uporabi ponovno
 
-### Spremljanje uporabe predpomnilnika
+### Spremljanje uporabe predpomnilnika {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Najboljše prakse za Azure OpenAI
+### Najboljše prakse za Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Uporabljajte dosledne pozive**: Enaki pozivi imajo koristi od predpomnjenja
 - **Nastavite razumen TTL**: Uravnotežite stroške in svežino
 - **Spremljajte metrike predpomnilnika**: Sledite ustvarjanju predpomnilnika v primerjavi z zadetki
 - **Združujte podobne zahteve**: Združite zahteve, da povečate število zadetkov predpomnilnika
 
-## OpenRouter: predpomnjenje, specifično za ponudnika
+## OpenRouter: predpomnjenje, specifično za ponudnika {#openrouter-provider-specific-caching}
 
 OpenRouter podpira predpomnjenje prek osnovnih ponudnikov (OpenAI, Anthropic itd.).
 
-### Konfiguracija
+### Konfiguracija {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Uporaba predpomnjenja OpenRouter
+### Uporaba predpomnjenja OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Možnosti, specifične za ponudnika
+### Možnosti, specifične za ponudnika {#provider-specific-options}
 
 Različni ponudniki imajo različne mehanizme predpomnjenja:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Najboljše prakse za OpenRouter
+### Najboljše prakse za OpenRouter {#best-practices-for-openrouter}
 
 - **Poznajte predpomnjenje svojega ponudnika**: Vsak ponudnik ima različne mehanizme
 - **Preizkusite obnašanje predpomnjenja**: Preverite, ali predpomnjenje deluje z vašim izbranim ponudnikom
 - **Spremljajte stroške**: Sledite prihrankom zaradi predpomnjenja
 - **Uporabljajte dosledne modele**: Menjava modelov prekine zadetke predpomnilnika
 
-## Vertex Anthropic: predpomnjenje pozivov z nadzorom predpomnilnika
+## Vertex Anthropic: predpomnjenje pozivov z nadzorom predpomnilnika {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) podpira predpomnjenje pozivov z izrecnim nadzorom predpomnilnika.
 
-### Konfiguracija
+### Konfiguracija {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Uporaba Vertex Anthropic predpomnjenja
+### Uporaba Vertex Anthropic predpomnjenja {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Vrste nadzora predpomnilnika
+### Vrste nadzora predpomnilnika {#cache-control-types}
 
 - **ephemeral**: Predpomnilnik za čas trajanja zahteve (privzeto)
 - **persistent**: Predpomnilnik za več zahtev (če je podprto)
 
-### Spremljanje uporabe predpomnilnika
+### Spremljanje uporabe predpomnilnika {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Najboljše prakse za Vertex Anthropic
+### Najboljše prakse za Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Uporabite ephemeral predpomnjenje**: Dobro za predpomnjenje v eni seji
 - **Ustrezno nastavite max_tokens**: Uravnotežite velikost predpomnilnika in stroške
 - **Spremljajte metrike predpomnilnika**: Sledite učinkovitosti predpomnilnika
 - **Preizkusite s svojo delovno obremenitvijo**: Preverite, ali predpomnjenje koristi vašemu primeru uporabe
 
-## Strategija predpomnjenja med ponudniki
+## Strategija predpomnjenja med ponudniki {#cross-provider-caching-strategy}
 
-### Poenotena konfiguracija
+### Poenotena konfiguracija {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Zaznavanje ponudnika
+### Zaznavanje ponudnika {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Nadomestna strategija
+### Nadomestna strategija {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Optimizacija stroškov
+## Optimizacija stroškov {#cost-optimization}
 
-### Izračun prihrankov
+### Izračun prihrankov {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Nasveti za optimizacijo
+### Nasveti za optimizacijo {#optimization-tips}
 
 - **Predpomnite velike sistemske pozive**: Največji prihranki pri stroških
 - **Ponovno uporabite kontekst**: Predpomnite pogosto uporabljene kontekstne dokumente
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Spremljajte učinkovitost predpomnilnika**: Sledite dejanskim prihrankom
 - **Prilagodite TTL**: Uravnotežite stroške in svežino
 
-## Odpravljanje težav
+## Odpravljanje težav {#troubleshooting}
 
-### Predpomnilnik se ne uporablja
+### Predpomnilnik se ne uporablja {#cache-not-being-used}
 
 - Preverite, ali je predpomnjenje omogočeno v konfiguraciji
 - Preverite, ali so pozivi identični (predpomnjenje zahteva natančno ujemanje)
 - Preverite, ali predpomnilnik ni potekel
 - Preverite omejitve predpomnilnika, specifične za ponudnika
 
-### Ustvarjanje predpomnilnika ne uspe
+### Ustvarjanje predpomnilnika ne uspe {#cache-creation-failing}
 
 - Preverite, ali je velikost predpomnilnika znotraj omejitev ponudnika
 - Preverite, ali je sintaksa nadzora predpomnilnika pravilna
 - Prepričajte se, da ponudnik podpira predpomnjenje za vaš model
 - Preglejte dokumentacijo ponudnika glede omejitev
 
-### Nepričakovani stroški
+### Nepričakovani stroški {#unexpected-costs}
 
 - Spremljajte ustvarjanje predpomnilnika v primerjavi z žetoni branja iz predpomnilnika
 - Preverite, ali se predpomnilnik dejansko uporablja
 - Preverite zgrešitve predpomnilnika zaradi različic pozivov
 - Razmislite o prilagoditvi TTL ali strategije predpomnjenja
 
-## Primerjava ponudnikov
+## Primerjava ponudnikov {#provider-comparison}
 
 | Funkcija | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Znižanje stroškov | 90% | 90% | Odvisno od ponudnika | 90% |
 | Spremljanje | Podrobno | Prek metrik | Odvisno od ponudnika | Prek uporabe |
 
-## Naslednji koraki
+## Naslednji koraki {#next-steps}
 
 1. **Izberite svojega ponudnika**: Izberite glede na svoje potrebe
 2. **Konfigurirajte predpomnjenje**: Nastavite predpomnjenje, specifično za ponudnika

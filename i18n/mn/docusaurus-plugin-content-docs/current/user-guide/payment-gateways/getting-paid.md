@@ -3,13 +3,13 @@ title: Төлбөрөө авах
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Төлбөр хүлээн авах (v2)
+# Төлбөр хүлээн авах (v2) {#getting-paid-v2}
 
 _**ЧУХАЛ ТЭМДЭГЛЭЛ: Энэ нийтлэл Ultimate Multisite 2.x хувилбарт хамаарна.**_
 
 Ultimate Multisite нь суурилуулсан гишүүнчлэл болон төлбөр тооцооны системтэй. Манай төлбөр тооцооны систем ажиллахын тулд бид цахим худалдаанд хамгийн түгээмэл ашиглагддаг төлбөрийн гарцуудыг нэгтгэсэн. Ultimate Multisite дахь үндсэн төлбөрийн гарцууд нь _Stripe_ , _PayPal_ , болон Manual Payment юм. Мөн та холбогдох add-on-уудыг суулгаснаар _WooCommerce_ , _GoCardless_ болон _Payfast_ ашиглан төлбөр хүлээн авах боломжтой.
 
-## Үндсэн тохиргоо
+## Үндсэн тохиргоо {#basic-settings}
 
 Та эдгээр төлбөрийн гарцуудын аль нэгийг Ultimate Multisite-ийн төлбөрийн тохиргоо дотроос тохируулах боломжтой. Үүнийг **Ultimate Multisite цэс > Settings > Payments** руу орж олно.
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0 нь auto-renewal идэвхжүүлсэн давта
 
 <!-- Дэлгэцийн зураг байхгүй: Sequential Number сонгогдсон үед харагдах Next invoice number болон invoice number prefix талбарууд -->
 
-## Гарцуудаа хаанаас олох вэ:
+## Гарцуудаа хаанаас олох вэ: {#where-to-find-the-gateways}
 
 Та төлбөрийн гарцуудыг ижил хуудсан дээр тохируулах боломжтой ( **Ultimate Multisite > Settings > Payments**). **active payment gateways**-ийн яг доор та дараахыг харах боломжтой: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ болон _Manual_.
 
@@ -67,7 +67,7 @@ Ultimate Multisite v2.13.0 нь auto-renewal идэвхжүүлсэн давта
 
 Одоо, хэрэв та _WooCommerce_ , _GoCardless_ эсвэл _Payfast_-ыг төлбөрийн гарц болгон ашиглахыг хүсвэл **тэдгээрийн add-on-уудыг суулгаж тохируулах** шаардлагатай.
 
-### WooCommerce add-on-ыг хэрхэн суулгах вэ:
+### WooCommerce add-on-ыг хэрхэн суулгах вэ: {#how-to-install-the-woocommerce-add-on}
 
 _Stripe_ болон _PayPal_ зарим улс оронд ашиглах боломжгүй байдаг бөгөөд энэ нь Ultimate Multisite хэрэглэгчдийг манай plugin-ыг үр дүнтэй ашиглахыг хязгаарлах эсвэл саатуулдаг гэдгийг бид ойлгож байна. Тиймээс бид маш алдартай цахим худалдааны plugin болох _WooCommerce,_-ийг нэгтгэх add-on бүтээсэн. Дэлхийн өнцөг булан бүрийн хөгжүүлэгчид өөр өөр төлбөрийн гарцуудыг түүнтэй нэгтгэх add-on-ууд бүтээсэн. Бид үүнийг ашиглан Ultimate Multisite-ийн төлбөр тооцооны системтэй ашиглаж болох төлбөрийн гарцуудыг өргөжүүлсэн.
 
@@ -95,7 +95,7 @@ Add-on-ийн дэлгэрэнгүй мэдээлэлтэй цонх гарч и
 
 WooCommerce Integration add-on-ийн талаар илүү ихийг уншихын тулд **энд дарна уу**.
 
-### GoCardless add-on-ийг хэрхэн суулгах вэ:
+### GoCardless add-on-ийг хэрхэн суулгах вэ: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ add-on-ийг суулгах алхмууд нь _WooCommerce_ add-on-той бараг адилхан. Add-ons хуудас руу орж, **Ultimate Multisite: GoCardless Gateway** add-on-ийг сонгоно уу.
 
@@ -111,7 +111,7 @@ Add-on цонх гарч ирнэ. **Install Now** дээр дарна уу.
 
 _GoCardless_ gateway-г хэрхэн эхлүүлэхийг мэдэхийн тулд **энэ нийтлэлийг уншина уу**.
 
-### Payfast add-on-ийг хэрхэн суулгах вэ:
+### Payfast add-on-ийг хэрхэн суулгах вэ: {#how-to-install-the-payfast-add-on}
 
 Add-ons хуудас руу орж, **Ultimate Multisite: Payfast Gateway** add-on-ийг сонгоно уу.
 

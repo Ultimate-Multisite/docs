@@ -3,13 +3,13 @@ title: Mbangun Integrasi Registrar Kustom
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Mbangun Integrasi Registrar Kustom
+# Mbangun Integrasi Registrar Kustom {#building-a-custom-registrar-integration}
 
 Addon Domain Seller nggunakake pola **Integration Registry**. Saben registrar yaiku kelas PHP sing ngetrapake `Domain_Selling_Capability` lan ndhaptar awake dhewe liwat hook tumindak `wu_domain_seller_register_capabilities`.
 
 Pandhuan iki nuduhake carane nyambungake registrar kustom.
 
-## Antarmuka
+## Antarmuka {#the-interface}
 
 Kelas sampeyan kudu ngetrapake `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` lan ngembangake `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Metode opsional
+### Metode opsional {#optional-methods}
 
 Terapake iki kanggo mbukak fitur tambahan. Addon ndeteksi dhukungan liwat `method_exists()`:
 
@@ -81,7 +81,7 @@ Terapake iki kanggo mbukak fitur tambahan. Addon ndeteksi dhukungan liwat `metho
 | `get_epp_code(string $domain_name): array` | Transfer domain (metu) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transfer domain (mlebu) |
 
-### Konvensi nilai bali
+### Konvensi nilai bali {#return-value-convention}
 
 Kabeh metode mbalekake array kanthi paling ora ana kunci `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Ndhaptar capability sampeyan
+## Ndhaptar capability sampeyan {#registering-your-capability}
 
 Dhaptar kelas sampeyan nganggo tumindak `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argumen kapisan kanggo `add_capability()` yaiku **provider ID** — slug huruf c
 
 ---
 
-## Nambah kolom kredensial menyang wizard
+## Nambah kolom kredensial menyang wizard {#adding-credential-fields-to-the-wizard}
 
 Supaya admin bisa ngetik kredensial liwat wizard persiyapan, dhaptar integrasi sampeyan:
 
@@ -137,7 +137,7 @@ Kredensial disimpen minangka opsi jaringan nganggo ID kolom minangka kunci. Jupu
 
 ---
 
-## Hook kanggo tumindak sawise registrasi
+## Hook kanggo tumindak sawise registrasi {#hooks-for-post-registration-actions}
 
 Gunakake tumindak iki kanggo micu webhook, provisioning, kabar, utawa nganyari CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Panyathetan Log
+## Panyathetan Log {#logging}
 
 Tulis menyang saluran log khusus panyedhiya sampeyan nganggo `wu_log_add()`:
 

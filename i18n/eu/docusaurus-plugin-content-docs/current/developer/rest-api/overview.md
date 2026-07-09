@@ -3,28 +3,28 @@ title: REST API ikuspegi orokorra
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API erreferentzia
+# REST API erreferentzia {#rest-api-reference}
 
-## Oinarrizko konfigurazioa
+## Oinarrizko konfigurazioa {#base-configuration}
 
 **Oinarrizko URL:** `{site_url}/wp-json/wu/v2/`
 **Autentifikazioa:** API gakoa eta sekretua (HTTP Basic Auth edo URL parametroak)
 
-## Autentifikazioa
+## Autentifikazioa {#authentication}
 
-### Gaitu APIa
+### Gaitu APIa {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Lortu API kredentzialak
+### Lortu API kredentzialak {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentifikazio metodoak
+### Autentifikazio metodoak {#authentication-methods}
 
 **HTTP Basic Auth (gomendatua):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Oinarrizko amaiera-puntuak
+## Oinarrizko amaiera-puntuak {#core-endpoints}
 
-### 1. Bezeroen APIa
+### 1. Bezeroen APIa {#1-customers-api}
 
 **Oinarrizko ibilbidea:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Guneen APIa
+### 2. Guneen APIa {#2-sites-api}
 
 **Oinarrizko ibilbidea:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Kidetzen APIa
+### 3. Kidetzen APIa {#3-memberships-api}
 
 **Oinarrizko ibilbidea:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produktuen APIa
+### 4. Produktuen APIa {#4-products-api}
 
 **Oinarrizko ibilbidea:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Ordainketen APIa
+### 5. Ordainketen APIa {#5-payments-api}
 
 **Oinarrizko ibilbidea:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domeinuen APIa
+### 6. Domeinuen APIa {#6-domains-api}
 
 **Oinarrizko ibilbidea:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Erregistro amaiera-puntua
+## Erregistro amaiera-puntua {#registration-endpoint}
 
 `/register` amaiera-puntuak checkout/erregistro fluxu osoa eskaintzen du:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Tenant subiranoen amaiera-puntuak
+## Tenant subiranoen amaiera-puntuak {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 bertsioak tenant subiranoentzako REST estaldura gehitzen du, tenant isolatuak hornitu, ikuskatu edo egiaztatzen dituzten integrazioetarako.
 
@@ -242,7 +242,7 @@ Migrazio-egoeraren ohiko erantzunek honako hau jasotzen dute:
 
 Tratatu `ready: false` abiaraztearen aurreko blokeatzaile gisa. Egiaztatu egiaztapenaren xehetasunak, konpondu datu-base ostalariaren lotura, ilara, erabiltzaileen hornikuntza edo bideratze arazoa, eta saiatu berriro egiaztatzen.
 
-## Errore erantzunak
+## Errore erantzunak {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tratatu `ready: false` abiaraztearen aurreko blokeatzaile gisa. Egiaztatu egiazt
 }
 ```
 
-## Orriaketa eta iragazketa
+## Orriaketa eta iragazketa {#pagination-and-filtering}
 
 **Kontsulta parametroak:**
 ```http

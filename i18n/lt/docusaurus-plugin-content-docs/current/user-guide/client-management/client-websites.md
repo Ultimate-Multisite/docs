@@ -3,7 +3,7 @@ title: Klientų svetainės
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Jūsų klientų svetainės (v2)
+# Jūsų klientų svetainės (v2) {#your-clients-websites-v2}
 
 Registruotinoje jūsų tinkluose, jūsų klientai gali pasiekti savo dashboardą.
 

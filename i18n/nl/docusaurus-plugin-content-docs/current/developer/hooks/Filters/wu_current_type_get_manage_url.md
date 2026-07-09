@@ -4,11 +4,11 @@ title: 'Filter - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Laat ontwikkelaars de URL-parameters van het beheersite aanpassen.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Laat ontwikkelaars de URL-parameters van het beheersite aanpassen.
 | $id | `int` | De site-ID. |
 | $site_hash | `string` | De site-hash. |
 
-### Since
+### Since {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 Defined in [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) at line 214
 
 
-## Returns
+## Returns {#returns}
 De aangepaste URL van het beheersite.

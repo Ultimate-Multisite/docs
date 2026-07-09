@@ -3,7 +3,7 @@ title: Tepo ea site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTE: Le tsela le this article e fana Ultimate Multisite version 2.x. Ha u batla le version 1.x,**_ **tsama se tsela le this article.**_
 
@@ -11,7 +11,7 @@ Le ntlha ya rona e le go dira network e fetang le Ultimate Multisite ke go dira 
 
 Se se le thata go dira tsela eo ke go dira gore re dirise fa go kae le go ba le bokao le go ba le dikgwetlho tse fapaneng tsa go dira websites tsa rona.
 
-## Ke eng Site Template?
+## Ke eng Site Template? {#what-is-a-site-template}
 
 Le tsela ya leela, Site Template e le site e fetang (boilerplate site) e e ka fetogela ho fetoga fa re tla dirisa e le mekgwa fa re tla dira sites tse ntlha ya rona.
 
@@ -19,7 +19,7 @@ Ena e bolela gore o ka dira site e fetang, go fana ka plugins tse fapaneng, go s
 
 Kea le thata, empa ke na le eng go dira site template e ntlha? E le se fetoga ka tsela e fetang.
 
-## Go dira le ho fetola Site Template e ntlha
+## Go dira le ho fetola Site Template e ntlha {#creating-and-editing-a-new-site-template}
 
 Site Templates ke sites tse ba leela fa network ea hau. Ho dira template e ntlha o ka fana ka ho laola **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -37,7 +37,7 @@ Mo le fa'aalo a le fomu, o tla bona se **Copy Site** toggle switch. O tla fanoa 
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Ho fetola bohlokoa ba Site Template
+### Ho fetola bohlokoa ba Site Template {#customizing-the-contents-of-a-site-template}
 
 Ho fetola site template haholo, o tla fana ka ho fihla panel ea hau ea dashboard le ho fetola se se hloka. O ka fetola posts tse ntlha, pages, ho fa plugins, le ho fetola theme e le e fetileng. O ka hiya ho fapaneng Customizer le ho fetola litšomo tsa ho fetola.
 
@@ -57,19 +57,19 @@ Pelo **Edit Product** page. Phela ka sefaka sa **Product Options**, upha le tab 
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form
+### Default Mode: Site template selection on the Checkout form {#advanced-options}
 
 Ha u batla go seiteiteka ka site templates tsa hau ka bona ka mofuta o o fetang, kapa ha u batla ho etse moruti oa ho ba le pele o tla ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le pele ho ba le
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opsa Template Options (Site Template Options)
+### Opsa Template Options (Site Template Options) {#using-site-templates}
 
 Goa le faongana a site templates e fanoa ka fanoa ho fanoa ka tsela la Ultimate Multisite settings.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Fanoa ho fanoa ka fanoa (Allow Template Switching)
+#### Fanoa ho fanoa ka fanoa (Allow Template Switching) {#mode-1-assign-site-template}
 
 Ka fanoa tsela ea seo ka e fanoa, ka tla ba le bone leba la bona ba bang ka tsela ea ho fana ka template ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba
 
@@ -93,7 +93,7 @@ O le Ultimate Multisite o le a fa'aopoaga ai au fa'aopoaga esa o le data ua tato
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Fa'amalosia o "template full of placeholders" o se fa'aopoaga
+### Fa'amalosia o "template full of placeholders" o se fa'aopoaga {#mode-2-choose-available-site-template}
 
 O le a tatou te fa'aopoaga telele lea, ae o le a tatou fa'aopoaga au fa'aopoaga esa o se fa'aopoaga e fua: o le a tatou site templates - o le a tatou fa'aopoaga ai i le customer - o le a tatou fa'aopoaga au fa'aopoaga esa o se curly braces (placeholders) e le fa'aopoaga telele ma e le fa'aopoaga tele.
 

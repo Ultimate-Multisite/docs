@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 Bu hərəkət, giriş etmiş autentifikasiya cookie-si təyin edilməzdən dərhal əvvəl işə düşür.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Name | Type | Təsvir |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Bu hərəkət, giriş etmiş autentifikasiya cookie-si təyin edilməzdən dərh
 | $scheme | `string` | Autentifikasiya sxemi. Default 'logged_in'. |
 | $token | `string` | Bu cookie üçün istifadə ediləcək istifadəçi sessiya token-ı. |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> parametri əlavə edilmişdir.
-### Mənbə
+### Mənbə {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) faylında 141-ci sətirdə təyin edilmişdir.

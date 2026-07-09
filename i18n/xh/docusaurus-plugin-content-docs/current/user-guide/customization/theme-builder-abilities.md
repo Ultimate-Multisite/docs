@@ -3,18 +3,18 @@ title: Izakhono ze-Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Izakhono ze Theme Builder: Ukuseka nokuvula imixholo yeebhloko
+# Izakhono ze Theme Builder: Ukuseka nokuvula imixholo yeebhloko {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 yazisa izakhono ezimbini ezinamandla ezikuvumela ukuba uvelise kwaye usasaze imixholo yeebhloko eyenzelwe wena ngqo kujongano lwencoko.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Izakhono ze **scaffold-block-theme** kunye ne **activate-theme** zivumela ii-agent ukuba:
 - Zivelise imixholo yeebhloko epheleleyo, elungele imveliso, esekelwe kwiinkcukacha ozinikezayo
 - Zivule ngokuzenzekelayo imixholo kwisayithi yakho ngaphandle kongenelelo olwenziwa ngesandla
 - Zenze izazisi ezibonakalayo ezihambelanayo ngezigqibo zoyilo ezikhokelwayo
 
-## Ukuseka Umxholo Webhloko
+## Ukuseka Umxholo Webhloko {#scaffold-block-theme}
 
 Isakhono se **scaffold-block-theme** sivelisa umxholo omtsha webhloko we WordPress onesakhiwo somxholo esipheleleyo, kuquka:
 
@@ -23,7 +23,7 @@ Isakhono se **scaffold-block-theme** sivelisa umxholo omtsha webhloko we WordPre
 - Izimbo zeebhloko ezenzelwe wena kunye neenguqulelo
 - Imethadatha yomxholo kunye nezibhengezo zenkxaso
 
-### Indlela Yokubiza
+### Indlela Yokubiza {#how-to-invoke}
 
 Kwincoko yakho ne Superdav AI Agent, ungacela ukuveliswa komxholo:
 
@@ -38,7 +38,7 @@ I-agent iza:
 3. Kwenza zonke iifayile zomxholo eziyimfuneko
 4. Kulungiselela umxholo ukuba uvulwe
 
-### Isiphumo Esilindelekileyo
+### Isiphumo Esilindelekileyo {#expected-output}
 
 Xa isakhono sisebenza ngempumelelo, uza kubona:
 
@@ -56,11 +56,11 @@ Umzekelo wesiphumo:
   Isimo: Ulungele ukuvulwa
 ```
 
-## Vula Umxholo
+## Vula Umxholo {#activate-theme}
 
 Isakhono se **activate-theme** sitshintsha isayithi yakho iye kumxholo webhloko omtsha osekiweyo okanye osele ukhona.
 
-### Indlela Yokubiza
+### Indlela Yokubiza {#how-to-invoke-1}
 
 Emva kokuseka umxholo, ungawuvula kwangoko:
 
@@ -74,7 +74,7 @@ Okanye uvule nawuphi na umxholo osele ukhona:
 "Tshintshela kumxholo we Twentytwentyfour"
 ```
 
-### Isiphumo Esilindelekileyo
+### Isiphumo Esilindelekileyo {#expected-output-1}
 
 Xa ukuvula kuphumelela:
 
@@ -92,7 +92,7 @@ Umzekelo wesiphumo:
   Qaphela: Jonga iphepha lakho lasekhaya ukuze uqinisekise ulungelelwaniso
 ```
 
-## Ukuhamba komsebenzi: Seka uze Uvule
+## Ukuhamba komsebenzi: Seka uze Uvule {#workflow-scaffold-and-activate}
 
 Ukuhamba komsebenzi okuqhelekileyo kudibanisa zombini izakhono:
 
@@ -102,7 +102,7 @@ Ukuhamba komsebenzi okuqhelekileyo kudibanisa zombini izakhono:
 4. **Vula**: "Vula umxholo ngoku"
 5. **Qinisekisa**: Ndwendwela isayithi yakho ukuze uqinisekise ukuba uyilo olutsha luphilayo
 
-## Ama-Design Tokens kunye Nokwenza Ngokwezifiso
+## Ama-Design Tokens kunye Nokwenza Ngokwezifiso {#design-tokens-and-customization}
 
 Imixholo esekiweyo isebenzisa ama-design tokens e WordPress (nge `theme.json`) kwezi zinto:
 
@@ -114,14 +114,14 @@ Imixholo esekiweyo isebenzisa ama-design tokens e WordPress (nge `theme.json`) k
 
 La ma-tokens abekwe embindini kwi `theme.json`, nto leyo eyenza kube lula ukulungisa yonke inkqubo yakho yoyilo kwifayile enye.
 
-## Imida kunye Namanqaku
+## Imida kunye Namanqaku {#limitations-and-notes}
 
 - Imixholo isekelwa kwi `/wp-content/themes/` kwaye kufuneka ilandele imigaqo yokubiza amagama ye WordPress
 - Ukuvula kufuna iimvume ezifanelekileyo kwisayithi yakho ye WordPress
 - Ikhowudi ye PHP eyenzelwe wena kwimixholo incinci; sebenzisa izongezo kwimisebenzi entsonkothileyo
 - Imixholo yeebhloko isebenza kakuhle kakhulu nge WordPress 5.9 nangaphezulu
 
-## Ukusombulula Iingxaki
+## Ukusombulula Iingxaki {#troubleshooting}
 
 **Umxholo awubonakali emva kokusekwa**
 - Qinisekisa ukuba uvimba womxholo ukhona kwaye uneemvume ezifanelekileyo
@@ -138,7 +138,7 @@ La ma-tokens abekwe embindini kwi `theme.json`, nto leyo eyenza kube lula ukulun
 - Coca naziphi na izongezo ze-caching
 - Jonga ukuba inguqulelo yakho ye WordPress iyawaxhasa ama-tokens owasebenzisayo
 
-## Amanyathelo Alandelayo
+## Amanyathelo Alandelayo {#next-steps}
 
 Emva kokuvula umxholo wakho, unga:
 - Sebenzisa **isakhono se-Design System Aesthetics** ukuphucula itypography, imibala, kunye nezithuba

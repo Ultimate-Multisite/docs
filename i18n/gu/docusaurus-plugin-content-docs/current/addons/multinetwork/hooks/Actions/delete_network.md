@@ -4,19 +4,19 @@ title: ક્રિયા - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Action: delete_network
+# Action: delete_network {#action-deletenetwork}
 
 જ્યારે કોઈ નેટવર્ક ડિલીટ થઈ જાય, ત્યારે આ એક્શન ચાલે છે.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $network | `\WP_Network` | ડિલીટ થયેલ નેટવર્ક ઓબ્જેક્ટ. |
 
-### Since
+### Since {#since}
 
 - 1.3.0
-### Source
+### Source {#source}
 
 [inc/functions/network.php](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1494) માં લાઇન ૧૪૯૪ પર વ્યાખ્યાયિત છે.

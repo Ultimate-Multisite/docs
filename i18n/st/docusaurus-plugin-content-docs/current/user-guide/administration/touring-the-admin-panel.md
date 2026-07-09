@@ -3,11 +3,11 @@ title: Ho lula le Morero ea Litso
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Hohoho hoho Admin Panel le hohoho
+# Hohoho hoho Admin Panel le hohoho {#touring-the-admin-panel}
 
 Ultimate Multisite e batla ho ba le ho hohoho hohoho, emakoe ho hohoho hohoho hohoho, emakoe ho hohoho hohoho. Le tsela e ntse a fana ka seka, emakoe ho hohoho hohoho hohoho, emakoe ho hohoho hohoho. Re tla fana ka lefa le fa ba le admin pages ho ba le bone.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 **Dashboard** ea Ultimate Multisite e bontša lipotso le litietsi tse kholo, li fali le litietsi tsa tsela, ho ntlha ea bohlokoa, litietsi tsa ba ba le moaka, le data ea mofuta oa lemoho.
 
@@ -25,7 +25,7 @@ Kea le bone lehle sa network dashboard:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Checkout Forms {#checkout-forms}
 
 **Checkout Forms** li ba le bohlokoa ho fana ka tsela ea ho fetola pages tsa registration tse fapaneng. U ka fetola fields, ho isa classes le scripts tse fapaneng, le ho hlokomela ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le ho
 
@@ -33,37 +33,37 @@ Le lapa la **Payments** (Tshwalo tsa Tlhaloso) le bontsha tsela efe ya tlhahlobo
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Customers (Mofuta a leba)
+## Customers (Mofuta a leba) {#products}
 
 Le lapa la **Customers** (Mofuta a leba) le bontša bohle ba batho ba leba ba leba ka mofuta o hlomphoa oa hau ka mofuta o hlomphoa, le li-information tsa mofuta e le basic tse di fapaneng ka lemoho la lemoho, email address, nako ya ho leba ka la ho leba (last login), le link ea "switch to" ho leba ka subsite ea bona.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Sites (Subsites)
+## Sites (Subsites) {#memberships}
 
 Le lapa la **Sites** (Subsites) le bontša bohle ba subsites ba leba ba leba ka mofuta o hlomphoa oa hau, ho fana ka site templates le subsites tse di leba ke batho. Ho na le seka seletse sa mapped domains, limits & quotas, plugins le themes, le site thumbnails.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domains (Domains)
+## Domains (Domains) {#payments}
 
 Le lapa la **Domains** (Domains) le hlompha ho subsites tse di leba ka mofuta o hlomphoa oa hau. Ka super admin, u ka nthela ho fana ka lemoho le mapping ea custom domain names le ho bona DNS records le logs.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Discount Codes (Coupon Codes)
+## Discount Codes (Coupon Codes) {#customers}
 
 **Discount Codes** (Coupon Codes) li reka ho fetola coupon codes ho fana ka discounts sa batho ba hau ba leba. Re nthela value ea discount le ho target specific users kapa groups.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Broadcasts (Tšwalo tsa Ho Ikhotso)
+## Broadcasts (Tšwalo tsa Ho Ikhotso) {#sites}
 
 **Broadcasts** (Tšwalo tsa Ho Ikhotso) ke seka sa ho fana ka announcements le ho tšoa messages tse di leba ho batho ba subsites ea hau. Re target specific user groups ka lebaka la plan kapa product e ba leba.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Settings (Tsela ea Ho Setso)
+## Settings (Tsela ea Ho Setso) {#domains}
 
 Le lapa la **Settings** (Tsela ea Ho Setso) ke leka le leka ho setse Ultimate Multisite — settings tsa registration, payments, API le webhooks, domain mapping, le seka sa ho fana ka tšwalo.
 
@@ -93,13 +93,13 @@ Ma o le sites settings page:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Events
+## Events {#discount-codes}
 
 O le **Events** page e fa'aalia ai se fa'amatalaga o so'o se fa'amaonia ma logs i le aiga o oe. E fa'atatau ai tagata fa'amaonia e tasi, o le fa'amalosia (plan changes), o le fa'asaoina (signups), ma se fa'aogā fa'apitoa — ua fa'atatau mo le fa'amatalaga o le multisite o oe.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#broadcasts}
 
 **Webhooks** e mafai i ou e fa'aalia ai data i se aiga fa'aogā (application). E fa'atatau mo le fa'amalosia data o Ultimate Multisite i se mga platforma e tasi, o le Zapier.
 

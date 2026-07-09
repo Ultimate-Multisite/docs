@@ -3,15 +3,15 @@ title: 'Pelajaran 14: Apa yang Selanjutnya'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Pelajaran 14: Apa Selanjutnya
+# Pelajaran 14: Apa Selanjutnya {#lesson-14-what-comes-next}
 
 Anda telah membangun platform situs khusus (niche) dari nol. FitSite sudah aktif, melayani studio kebugaran, dan menghasilkan pendapatan berulang. Pelajaran terakhir ini membahas langkah selanjutnya yang harus Anda ambil.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite adalah bisnis yang berjalan dengan pelanggan, operasional, dan lintasan pertumbuhan. Sekarang kita memikirkan apa yang harus dilakukan selanjutnya.
 
-## Jaringan FitSite yang Lengkap
+## Jaringan FitSite yang Lengkap {#the-complete-fitsite-network}
 
 Berikut adalah semua yang telah kita bangun selama 14 pelajaran:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Opsi 1: Mendalami Niche Anda
+## Opsi 1: Mendalami Niche Anda {#option-1-go-deeper-in-your-niche}
 
 Sebelum berekspansi ke niche baru, pertimbangkan untuk mendalami bidang kebugaran:
 
-### Sub-Niche
+### Sub-Niche {#sub-niches}
 
 - **Studio Yoga** -- template khusus dengan fitur meditasi, retret, dan lokakarya
 - **Kotak CrossFit** -- pelacakan WOD, hasil kompetisi, fitur komunitas
@@ -59,7 +59,7 @@ Sebelum berekspansi ke niche baru, pertimbangkan untuk mendalami bidang kebugara
 
 Setiap sub-niche dapat memiliki template sendiri dan berpotensi memiliki merek sendiri, semuanya berjalan di jaringan Ultimate Multisite yang sama.
 
-### Fitur Premium
+### Fitur Premium {#premium-features}
 
 Bangun fitur yang bersedia dibayar lebih oleh studio kebugaran:
 
@@ -68,14 +68,14 @@ Bangun fitur yang bersedia dibayar lebih oleh studio kebugaran:
 - **Template blog kebugaran** -- struktur konten siap pakai untuk pemasaran konten kebugaran
 - **Integrasi media sosial** -- posting otomatis jadwal kelas dan pembaruan
 
-### Ekspansi Geografis
+### Ekspansi Geografis {#geographic-expansion}
 
 Jika Anda memulai secara lokal, perluas ke:
 
 - Kota lain di negara Anda
 - Negara lain (gunakan [fitur lokalisasi](/user-guide/localization/translating) Ultimate Multisite untuk mendukung berbagai bahasa)
 
-## Opsi 2: Berekspansi ke Niche yang Berdekatan
+## Opsi 2: Berekspansi ke Niche yang Berdekatan {#option-2-expand-to-adjacent-niches}
 
 Proses yang Anda ikuti untuk studio kebugaran berlaku untuk niche apa pun. Niche kedua Anda lebih mudah karena Anda sudah memiliki:
 
@@ -83,7 +83,7 @@ Proses yang Anda ikuti untuk studio kebugaran berlaku untuk niche apa pun. Niche
 - Pengalaman operasional
 - Panduan operasional (playbook) yang terbukti
 
-### Niche yang Berdekatan dengan Kebugaran
+### Niche yang Berdekatan dengan Kebugaran {#adjacent-niches-to-fitness}
 
 - **Kesehatan dan spa** -- terapis pijat, spa harian, pusat kesehatan
 - **Klub olahraga** -- tim olahraga amatir, liga, klub rekreasi
@@ -91,7 +91,7 @@ Proses yang Anda ikuti untuk studio kebugaran berlaku untuk niche apa pun. Niche
 
 Ini memiliki tumpang tindih audiens dengan kebugaran, sehingga pemasaran dan kemitraan Anda mungkin dapat dilanjutkan.
 
-### Niche yang Benar-benar Baru
+### Niche yang Benar-benar Baru {#completely-new-niches}
 
 Terapkan kerangka kerja dari Pelajaran 2 untuk mengevaluasi niche apa pun:
 
@@ -108,7 +108,7 @@ Setiap niche baru membutuhkan:
 
 Infrastruktur platform, penagihan, dan proses operasional tetap sama.
 
-## Opsi 3: Membangun Platform dari Platform
+## Opsi 3: Membangun Platform dari Platform {#option-3-build-a-platform-of-platforms}
 
 Pada skala besar, Anda dapat menjalankan banyak merek niche pada satu jaringan Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Pada skala besar, Anda dapat menjalankan banyak merek niche pada satu jaringan U
 
 Setiap merek memiliki template, paket, dan pemasarannya sendiri, tetapi mereka berbagi infrastruktur, penagihan, dan proses operasional. Di sinilah ekonomi Ultimate Multisite menjadi kuat—satu platform, banyak vertikal.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Untuk pemisahan total antar niche, pertimbangkan [addon Multi-Network](/addons/multinetwork) yang memungkinkan Anda menjalankan banyak jaringan WordPress dari satu instalasi.
 
-## Opsi 4: Menjual Bisnis
+## Opsi 4: Menjual Bisnis {#option-4-sell-the-business}
 
 Platform situs khusus dengan pendapatan berulang, tingkat *churn* rendah, dan posisi pasar yang jelas adalah aset yang berharga. Bisnis SaaS biasanya dijual seharga 3-5x pendapatan tahunan.
 
@@ -134,7 +134,7 @@ FitSite dengan 200 pelanggan dengan ARPU $89:
 
 Ini bukan hasil yang dijamin, tetapi ini adalah hasil yang realistis untuk platform niche yang dikelola dengan baik.
 
-## Apa yang Sudah Anda Pelajari
+## Apa yang Sudah Anda Pelajari {#what-you-have-learned}
 
 Kursus ini mengajarkan Anda proses yang dapat diulang:
 
@@ -150,7 +150,7 @@ Kursus ini mengajarkan Anda proses yang dapat diulang:
 
 Niche adalah strateginya. Platform adalah alatnya. Ultimate Multisite membuat alat itu mungkin. Pemahaman Anda tentang niche yang membuatnya berharga.
 
-## Mulai Membangun
+## Mulai Membangun {#start-building}
 
 Jika Anda mengikuti FitSite, Anda memiliki platform yang berfungsi. Jika Anda membaca sampai akhir untuk menemukan niche Anda sendiri, kembali ke [Pelajaran 2: Memilih Niche Anda](lesson-2-picking-your-niche) dan mulai proses untuk vertikal pilihan Anda.
 

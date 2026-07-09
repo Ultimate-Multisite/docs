@@ -4,13 +4,13 @@ title: ຕົວກອງ - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# ຕົວກອງ: wu_contains_element
+# ຕົວກອງ: wu_contains_element {#filter-wucontainselement}
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາປ່ຽນຜົນລັບຂອງການຄົ້ນຫາເບື້ອງຕົ້ນ.
 
 ສິ່ງນີ້ມີປະໂຫຍດສຳລັບຕົວສ້າງຂອງບຸກຄົນທີສາມ ແລະອື່ນໆ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -19,9 +19,9 @@ _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 | $element | `self` | element ປັດຈຸບັນ. |
 | $post | `null\|\WP_Post` | ໂພສທີ່ຈະກວດສອບ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.0
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) ທີ່ບັນທັດ 534

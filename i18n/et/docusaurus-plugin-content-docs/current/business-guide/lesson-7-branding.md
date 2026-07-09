@@ -3,15 +3,15 @@ title: 'Õppetund 7: Selle enda omaks tegemine'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Õppetund 7: Tee see enda omaks
+# Õppetund 7: Tee see enda omaks {#lesson-7-making-it-yours}
 
 Sinu kliendid ei tohiks kunagi tunda, et nad kasutavad „mingit WordPressi pistikprogrammi“. Nad peaksid tundma, et nad kasutavad FitSite’i -- oma valdkonna jaoks loodud platvormi. See õppetund käsitleb brändingut, white-label-lahendust ja seda, kuidas panna platvorm tunduma tootena.
 
-## Kuhu me pooleli jäime
+## Kuhu me pooleli jäime {#where-we-left-off}
 
 FitSite’il on toimiv checkouti voog, mis viib fitnessistuudio omanikud plaani valikust toimiva saidini. Nüüd muudame kogu kogemuse terviklikuks, bränditud tooteks.
 
-## Sinu platvormi domeen
+## Sinu platvormi domeen {#your-platform-domain}
 
 Sinu brändi vundament on sinu domeen. FitSite’i puhul:
 
@@ -19,7 +19,7 @@ Sinu brändi vundament on sinu domeen. FitSite’i puhul:
 - **Kliendisaitid**: `studioname.fitsite.com` (alamdomeenid)
 - **Kohandatud domeenid**: Growth- ja Pro-plaanide kliendid saavad siduda oma domeeni
 
-### Domeeni seadistamine
+### Domeeni seadistamine {#setting-up-your-domain}
 
 1. Registreeri oma platvormi domeen
 2. Suuna see oma hostingupakkuja juurde
@@ -28,11 +28,11 @@ Sinu brändi vundament on sinu domeen. FitSite’i puhul:
 
 Üksikasjalikud juhised leiad jaotisest [Kuidas seadistada domeeni sidumist](/user-guide/domain-mapping/how-to-configure-domain-mapping).
 
-## Adminikogemuse white-label
+## Adminikogemuse white-label {#white-labeling-the-admin-experience}
 
 Kui fitnessistuudio omanik logib sisse oma saidi Dashboardile, peaks ta nägema sinu brändi, mitte WordPressi ega Ultimate Multisite’i brändingut.
 
-### Kohandatud sisselogimisleht
+### Kohandatud sisselogimisleht {#custom-login-page}
 
 Kohanda WordPressi sisselogimislehte nii, et see kuvaks:
 
@@ -40,7 +40,7 @@ Kohanda WordPressi sisselogimislehte nii, et see kuvaks:
 - Fitnessiga sobiva taustapildi
 - Sinu brändivärvid
 
-### Dashboardi bränding
+### Dashboardi bränding {#dashboard-branding}
 
 Kasuta [Admin Page Creator](/addons/admin-page-creator) lisamoodulit või kohandatud CSS-i, et:
 
@@ -48,7 +48,7 @@ Kasuta [Admin Page Creator](/addons/admin-page-creator) lisamoodulit või kohand
 - Kohandada admini värviskeem sinu brändiga sobivaks
 - Lisada kohandatud Dashboardi vidin fitnessispetsiifiliste kiirlinkide ja abiressurssidega
 
-### Kohandatud adminilehed
+### Kohandatud adminilehed {#custom-admin-pages}
 
 Kaalu kohandatud adminilehtede loomist, mis toovad fitnessistuudio omanike jaoks kõige asjakohasemad toimingud esile:
 
@@ -58,11 +58,11 @@ Kaalu kohandatud adminilehtede loomist, mis toovad fitnessistuudio omanike jaoks
 
 See vähendab õppimiskõverat, asetades nišiga seotud toimingud nähtavale kohale, selle asemel et peita need standardsesse WordPressi menüüsse.
 
-## Sinu suhtluse brändimine
+## Sinu suhtluse brändimine {#branding-your-communications}
 
 Iga e-kiri, arve ja teavitus peaks tugevdama sinu brändi.
 
-### Süsteemi e-kirjad
+### Süsteemi e-kirjad {#system-emails}
 
 Liigu jaotisse **Ultimate Multisite > Settings > Emails** ja kohanda kõik süsteemi e-kirjad:
 
@@ -79,7 +79,7 @@ Olulised e-kirjad, mida kohandada:
 | Maksekviitung | „Makse vastu võetud“ | „FitSite’i tellimuse makse kinnitatud“ |
 | Prooviperioodi lõpp | „Sinu prooviperiood lõpeb varsti“ | „Sinu FitSite’i prooviperiood lõpeb 3 päeva pärast -- hoia oma stuudio veebisait live’is“ |
 
-### Arved
+### Arved {#invoices}
 
 Kohanda arvemalle järgmisega:
 
@@ -87,7 +87,7 @@ Kohanda arvemalle järgmisega:
 - Sinu ettevõtte andmed
 - Fitnessispetsiifilised tootenimed (mitte üldised plaani ID-d)
 
-## Kliendile suunatud sait
+## Kliendile suunatud sait {#the-customer-facing-site}
 
 Sinu põhidomeen (`fitsite.com`) vajab turundussaiti, mis müüb platvormi. See on eraldi Ultimate Multisite’i võrgu administ -- see on sinu ettevõtte avalik nägu.
 
@@ -103,7 +103,7 @@ Olulised lehed:
 Loo oma turundussait saidina omaenda võrgus. See võimaldab sul seda hallata samalt Dashboardilt ja näitab sinu enda platvormi võimalusi.
 :::
 
-## Kohandatud domeen klientidele
+## Kohandatud domeen klientidele {#custom-domain-for-customers}
 
 Klientide puhul, kelle plaanid sisaldavad kohandatud domeene, dokumenteeri protsess selgelt:
 
@@ -113,7 +113,7 @@ Klientide puhul, kelle plaanid sisaldavad kohandatud domeene, dokumenteeri prots
 
 Loo spetsiaalselt selle protsessi jaoks abiartikkel või teadmistebaasi kirje, mis on kirjutatud mittetehnilistele fitnessistuudio omanikele.
 
-## FitSite’i võrk seni
+## FitSite’i võrk seni {#the-fitsite-network-so-far}
 
 ```
 FitSite’i võrk
@@ -132,7 +132,7 @@ FitSite’i võrk
 └── Valmis onboarding-voo jaoks (järgmine õppetund)
 ```
 
-## Mida me selles õppetunnis ehitasime
+## Mida me selles õppetunnis ehitasime {#what-we-built-this-lesson}
 
 - **Platvormi domeen ja DNS**, mis on seadistatud bränditud kogemuse jaoks
 - **White-label admin**, kus FitSite’i bränding on läbiv

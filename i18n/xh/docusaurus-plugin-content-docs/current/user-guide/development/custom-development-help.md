@@ -3,13 +3,13 @@ title: Uncedo loPhuhliso oluLungiselelweyo
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Ungalufumana Njani Uncedo Lophuhliso Olulungiselelweyo ku-Codeable?
+# Ungalufumana Njani Uncedo Lophuhliso Olulungiselelweyo ku-Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Ngamanye amaxesha, siyakufuna ngokwenene ulungiselelo oluhle kakhulu ukuze senze inethiwekhi yethu ihambe kanye ngendlela esiyifunayo. Ukuba yiloo nto uyikhangelayo, sicebisa [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), indawo apho unokufumana abaphuhlisi abanamava ngobungcali be-Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) liqonga elidibanisa abathengi nabaphuhlisi be-WordPress abazimeleyo abaqeqeshiweyo, abanokusebenza kwiiprojekthi zobuphi na ubungakanani. Banenkqubo yesicelo eneenkcukacha kakhulu ukuqinisekisa ukuba udityaniswa neengcali eziqeqeshelwe ngokukodwa umsebenzi onawo engqondweni.
 
-### Uyenza njani iprojekthi ku-Codeable?
+### Uyenza njani iprojekthi ku-Codeable? {#how-to-create-a-project-in-codeable}
 
 Okokuqala, yiya ku-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) kwaye ucofe iqhosha elithi **Start a Project**.
 

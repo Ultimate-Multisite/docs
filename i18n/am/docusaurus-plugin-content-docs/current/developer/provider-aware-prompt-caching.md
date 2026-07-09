@@ -3,11 +3,11 @@ title: አቅራቢን የሚያውቅ የፕሮምፕት ማከማቻ
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# በአቅራቢው ሁኔታ ላይ የተመሰረተ Prompt Caching
+# በአቅራቢው ሁኔታ ላይ የተመሰረተ Prompt Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 **በአቅራቢው ሁኔታ ላይ የተመሰረተ prompt caching**ን አስተዋውቋል፣ ይህም በተለያዩ LLM አቅራቢዎች (providers) መካከል promptsን በማስቀመጥ (caching) የAPI ወጪዎችን እና የጊዜ መጓጓዣን (latency) ያመቻቻል። እያንዳንዱ አቅራቢ የተለያየ የማስቀመጥ ዘዴ እና ውቅረት አለው።
 
-## አጠቃላይ እይታ (Overview)
+## አጠቃላይ እይታ (Overview) {#overview}
 
 Prompt caching የሚከተሉትን እንዲያደርጉ ያስችልዎታል፦
 
@@ -23,11 +23,11 @@ Prompt caching የሚከተሉትን እንዲያደርጉ ያስችልዎታል
 - **OpenRouter**: በአቅራቢው የተወሰነ caching
 - **Vertex Anthropic**: በcache control Prompt caching
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini በ`cachedContents` API አማካይነት ግልጽ የcache አስተዳደርን ያቀርባል።
 
-### ውቅረት (Configuration)
+### ውቅረት (Configuration) {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### የተቀመጠ Prompt መፍጠር (Creating a Cached Prompt)
+### የተቀመጠ Prompt መፍጠር (Creating a Cached Prompt) {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // ይመልሳል: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### የተቀመጠ Prompt መጠቀም (Using a Cached Prompt)
+### የተቀመጠ Prompt መጠቀም (Using a Cached Prompt) {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### የCache የህይወት ዑደት (Cache Lifecycle)
+### የCache የህይወት ዑደት (Cache Lifecycle) {#cache-lifecycle}
 
 ```php
 // የተቀመጡ ይዘቶችን መዘርዘር
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### ለGemini ምርጥ አሠራሮች (Best Practices for Gemini)
+### ለGemini ምርጥ አሠራሮች (Best Practices for Gemini) {#best-practices-for-gemini}
 
 - **ትክክለኛ TTLን ያዘጋጁ**: ወጪ ቁጠባን ከcache መበላሸት ጋር ሚዛን ይያዙ።
 - **የsystem promptsን ማስቀመጥ**: በተለያዩ ጥያቄዎች ላይ አንድ አይነት system promptን እንደገና ይጠቀሙ።
 - **የcache አጠቃቀምን መከታተል**: የትኞቹ caches በብዛት ጥቅም ላይ እንደሚውሉ ይከታተሉ።
 - **የማለቁ cachesን ማጽዳት**: ጥቅም ላይ ያልዋሉ cachesን በየጊዜው ይሰርዙ።
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI በራስ-ሰር TTL አስተዳደር (automatic TTL management) አማካይነት prompt cachingን ይደግፋል።
 
-### ውቅረት (Configuration)
+### ውቅረት (Configuration) {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### cachingን ማብራት (Enabling Caching)
+### cachingን ማብራት (Enabling Caching) {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### የCache Headers
+### የCache Headers {#cache-headers}
 
 Azure OpenAI ለcache ቁጥጥር HTTP headersን ይጠቀማል፦
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: ይህን ጥያቄ ማስቀመጥ የለብህም (Don't cache this request)
 - `no_store`: ማስቀመጥ የለብህም እና እንደገና መጠቀም የለብህም (Don't cache and don't reuse)
 
-### የCache አጠቃቀምን መከታተል (Monitoring Cache Usage)
+### የCache አጠቃቀምን መከታተል (Monitoring Cache Usage) {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### ለAzure OpenAI ምርጥ አሠራሮች (Best Practices for Azure OpenAI)
+### ለAzure OpenAI ምርጥ አሠራሮች (Best Practices for Azure OpenAI) {#best-practices-for-azure-openai}
 
 - **አንድ ወጥ prompts ይጠቀሙ**: ተመሳሳይ prompts በcaching ይጠቅማሉ።
 - **ተመጣጣኝ TTL ያዘጋጁ**: ወጪን ከቅ fraîche-ness ጋር ሚዛን ይያዙ።
 - **የcache መለኪያዎችን ይከታተሉ**: የcache መፍጠርን ከhits ጋር ያወዳድሩ።
 - **ተመሳሳይ ጥያቄዎችን በቡድን ያድርጉ**: የcache hitsን ከፍ ለማድረግ ጥያቄዎችን ይሰበስቡ።
 
-## OpenRouter: በአቅራቢው የተወሰነ Caching
+## OpenRouter: በአቅራቢው የተወሰነ Caching {#openrouter-provider-specific-caching}
 
 OpenRouter በየየአቅራቢዎቹ (OpenAI, Anthropic, ወዘተ) አማካይነት cachingን ይደግፋል።
 
-### ውቅረት (Configuration)
+### ውቅረት (Configuration) {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Cachingን መጠቀም (Using OpenRouter Caching)
+### OpenRouter Cachingን መጠቀም (Using OpenRouter Caching) {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### በአቅራቢው የተወሰኑ አማራጮች (Provider-Specific Options)
+### በአቅራቢው የተወሰኑ አማራጮች (Provider-Specific Options) {#provider-specific-options}
 
 የተለያዩ አቅራቢዎች የተለያዩ የማስቀመጥ ዘዴዎች አሏቸው፦
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### ለOpenRouter ምርጥ አሠራሮች (Best Practices for OpenRouter)
+### ለOpenRouter ምርጥ አሠራሮች (Best Practices for OpenRouter) {#best-practices-for-openrouter}
 
 - **የአቅራቢዎን caching ይወቁ**: እያንዳንዱ አቅራቢ የተለያየ ዘዴ አለው።
 - **የcaching ባህሪን ይፈትኑ**: የተመረጠው አቅራቢዎ caching እንደሚሰራ ያረጋግጡ።
 - **ወጪዎችን ይከታተሉ**: ከcaching የሚገኘውን ቁጠባ ይከታተሉ።
 - **አንድ ወጥ models ይጠቀሙ**: models መቀየር የcache hitsን ያቋርጣል።
 
-## Vertex Anthropic: Cache Control ባለው Prompt Caching
+## Vertex Anthropic: Cache Control ባለው Prompt Caching {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) ግልጽ የcache ቁጥጥር (explicit cache control) አማካይነት prompt cachingን ይደግፋል።
 
-### ውቅረት (Configuration)
+### ውቅረት (Configuration) {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic Cachingን መጠቀም (Using Vertex Anthropic Caching)
+### Vertex Anthropic Cachingን መጠቀም (Using Vertex Anthropic Caching) {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### የCache ቁጥጥር አይነቶች (Cache Control Types)
+### የCache ቁጥጥር አይነቶች (Cache Control Types) {#cache-control-types}
 
 - **ephemeral**: ለጥያቄው ጊዜ የሚቆይ cache (በቅድፋሚነት)
 - **persistent**: በተለያዩ ጥያቄዎች ላይ የሚቆይ cache (የሚደገፍ ከሆነ)
 
-### የCache አጠቃቀምን መከታተል (Monitoring Cache Usage)
+### የCache አጠቃቀምን መከታተል (Monitoring Cache Usage) {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### ለVertex Anthropic ምርጥ አሠራሮች (Best Practices for Vertex Anthropic)
+### ለVertex Anthropic ምርጥ አሠራሮች (Best Practices for Vertex Anthropic) {#best-practices-for-vertex-anthropic}
 
 - **ephemeral cachingን ይጠቀሙ**: ለአንድ የሰርሽ ክፍለ ጊዜ (single-session) ጥሩ ነው።
 - **max_tokensን በትክክል ያዘጋጁ**: የcache መጠንን ከወጪ ጋር ሚዛን ይያዙ።
 - **የcache መለኪያዎችን ይከታተሉ**: የcache ብቃትን ይከታተሉ።
 - **በስራዎ ይፈትኑ**: caching ለተጠቃሚዎ ሁኔታ እንደሚጠቅም ያረጋግጡ።
 
-## በሁሉም አቅራቢዎች ላይ የሚሰራ Cache ስትራቴጂ (Cross-Provider Caching Strategy)
+## በሁሉም አቅራቢዎች ላይ የሚሰራ Cache ስትራቴጂ (Cross-Provider Caching Strategy) {#cross-provider-caching-strategy}
 
-### አንድ ወጥ ውቅረት (Unified Configuration)
+### አንድ ወጥ ውቅረት (Unified Configuration) {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### የአቅራቢ መለየት (Provider Detection)
+### የአቅራቢ መለየት (Provider Detection) {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // በአቅራቢው የተወሰነ caching ውቅረትን መጠቀም
 ```
 
-### የመልቀቅ ስትራቴጂ (Fallback Strategy)
+### የመልቀቅ ስትራቴጂ (Fallback Strategy) {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## ወጪን ማመቻቸት (Cost Optimization)
+## ወጪን ማመቻቸት (Cost Optimization) {#cost-optimization}
 
-### ቁጠባን ማስላት (Calculate Savings)
+### ቁጠባን ማስላት (Calculate Savings) {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### የማመቻቸት ምክሮች (Optimization Tips)
+### የማመቻቸት ምክሮች (Optimization Tips) {#optimization-tips}
 
 - **ትልቅ system prompts ማስቀመጥ**: ትልቁ የወጪ ቁጠባ።
 - **contextን እንደገና መጠቀም**: በተደጋጋሚ ጥቅም ላይ የሚውሉ context documents ማስቀመጥ።
@@ -395,21 +395,21 @@ echo "Estimated savings: \$$savings\n";
 - **የcache ብቃትን መከታተል**: ትክክለኛ ቁጠባን ይከታተሉ።
 - **TTL ማስተካከል**: ወጪን ከቅ fraîche-ness ጋር ሚዛን ይያዙ።
 
-## ችግር መፍታት (Troubleshooting)
+## ችግር መፍታት (Troubleshooting) {#troubleshooting}
 
-### Cache ጥቅም ላይ አለመዋል (Cache not being used)
+### Cache ጥቅም ላይ አለመዋል (Cache not being used) {#cache-not-being-used}
 
 - caching በቅንብር (configuration) ውስጥ መብራቱን ያረጋግጡ።
 - prompts ተመሳሳይ መሆናቸውን ያረጋግጡ (caching ትክክለኛ ጥምረት ይጠይቃል)።
 - cache አልማለቀም (expired) መሆኑን ያረጋግጡ።
 - የአቅራቢውን የተወሰነ የcache ገደቦችን ይፈትሹ።
 
-### Cache መፍጠር መሳሳት (Cache creation failing)
+### Cache መፍጠር መሳሳት (Cache creation failing) {#cache-creation-failing}
 
 - የcache መጠኑ በአቅራቢው ገደብ ውስጥ መሆኑን ያረጋግጡ።
 - የትክክለኛውን አጠቃቀም (usage) ይፈጽሙ።
 
-### የውሂብ ፍሰት (Data Flow)
+### የውሂብ ፍሰት (Data Flow) {#unexpected-costs}
 
 ---
 

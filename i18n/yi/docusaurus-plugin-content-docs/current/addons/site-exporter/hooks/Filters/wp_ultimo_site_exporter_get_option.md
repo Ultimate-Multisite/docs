@@ -4,11 +4,11 @@ title: פֿילטער - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# פֿילטער: wp_ultimo_site_exporter_get_option
+# פֿילטער: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 גיט צוריק דעם slugfied נעצווערק־אָפּציע־ווערט.
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | דער אָפּציע־נאָמען. |
 | $default | `mixed` | דער סטאַנדאַרט־ווערט. |
 
-### זינט
+### זינט {#since}
 
 - 1.9.6
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) אויף שורה 126
 
 
-## גיט צוריק
+## גיט צוריק {#returns}
 דער slugfield נעצווערק־אָפּציע־ווערט.

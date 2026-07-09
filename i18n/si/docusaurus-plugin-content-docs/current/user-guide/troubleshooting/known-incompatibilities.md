@@ -3,7 +3,7 @@ title: දන්නා නොගැලපීම්
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# වෙනත් ප්ලග් (Plugins) සමඟ දැනට පවතින අනුකූල නොවනතා
+# වෙනත් ප්ලග් (Plugins) සමඟ දැනට පවතින අනුකූල නොවනතා {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite ස්ථාපනය කර සක්‍රිය කළ පසු, වෙනත් ප්ලග් වල ඇති විසඳා නොගත් අනුකූල නොවනතා නිසා ඔබට ගැටළු ඇති විය හැකියි.
 

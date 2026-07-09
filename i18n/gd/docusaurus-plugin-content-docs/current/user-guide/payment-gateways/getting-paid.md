@@ -3,13 +3,13 @@ title: A’ Faighinn Pàigheadh
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# A’ Faighinn Pàigheadh (v2)
+# A’ Faighinn Pàigheadh (v2) {#getting-paid-v2}
 
 _**NOTA CUDROMACH: Tha an artaigil seo a’ toirt iomradh air Ultimate Multisite tionndadh 2.x.**_
 
 Tha siostam ballrachd is bileachaidh togte aig Ultimate Multisite. Gus am bi an siostam bileachaidh againn ag obair, tha sinn air na geataichean pàighidh as cumanta a thathar a’ cleachdadh ann am malairt-dhealain a thoirt a-steach. ’S iad na geataichean pàighidh bunaiteach ann an Ultimate Multisite _Stripe_ , _PayPal_ , agus Pàigheadh Làimhe. Faodaidh tu _WooCommerce_ , _GoCardless_ agus _Payfast_ a chleachdadh cuideachd gus pàighidhean fhaighinn le bhith a’ stàladh nan tuilleadan aca fhèin.
 
-## Roghainnean Bunaiteach
+## Roghainnean Bunaiteach {#basic-settings}
 
 Faodaidh tu gin de na geataichean pàighidh seo a rèiteachadh fo roghainnean pàighidh Ultimate Multisite. Gheibh thu e le bhith a’ dol gu **clàr-taice Ultimate Multisite > Roghainnean > Pàighidhean.**
 
@@ -39,7 +39,7 @@ Bidh seo a’ cur casg air ballrachd bho bhith a’ nochdadh mar gum biodh i a�
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Far am faighear na geataichean:
+## Far am faighear na geataichean: {#where-to-find-the-gateways}
 
 Faodaidh tu na geataichean pàighidh a shuidheachadh air an aon duilleag ( **Ultimate Multisite > Roghainnean > Pàighidhean**). Dìreach fo **geataichean pàighidh gnìomhach** , chì thu: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ agus _Làimhe_.
 
@@ -67,7 +67,7 @@ Seo cuideachd sealladh slàn de roghainnean nan geataichean pàighidh:
 
 A-nis, ma tha thu airson _WooCommerce_ , _GoCardless_ no _Payfast_ a chleachdadh mar do gheata pàighidh, feumaidh tu **na tuilleadan aca a stàladh agus a rèiteachadh**.
 
-### Mar a stàlaicheas tu an tuilleadan WooCommerce:
+### Mar a stàlaicheas tu an tuilleadan WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Tha sinn a’ tuigsinn nach eil _Stripe_ agus _PayPal_ rim faighinn ann an cuid de dhùthchannan, rud a chuireas cuingealachadh air no a chuireas bacadh air luchd-cleachdaidh Ultimate Multisite bho bhith a’ cleachdadh ar plugin gu h-èifeachdach. Mar sin chruthaich sinn tuilleadan gus _WooCommerce,_ a thoirt a-steach, plugin malairt-dhealain a tha gu math mòr-chòrdte. Chruthaich luchd-leasachaidh air feadh an t-saoghail tuilleadan gus diofar gheataichean pàighidh a thoirt a-steach dha. Ghabh sinn brath air seo gus na geataichean pàighidh as urrainn dhut a chleachdadh le siostam bileachaidh Ultimate Multisite a leudachadh.
 
@@ -95,7 +95,7 @@ Nuair a bhios an stàladh deiseil, thèid do ath-stiùireadh gu duilleag nam plu
 
 Gus barrachd a leughadh mun tuilleadan WooCommerce Integration, **briog an seo**.
 
-### Mar a stàlaicheas tu an tuilleadan GoCardless:
+### Mar a stàlaicheas tu an tuilleadan GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Tha na ceumannan gus an tuilleadan _GoCardless_ a stàladh gu math coltach ris an tuilleadan _WooCommerce_. Rach gu duilleag nan tuilleadan agus tagh an tuilleadan **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Nuair a bhios an stàladh deiseil, thèid do ath-stiùireadh gu duilleag nam plu
 
 Gus ionnsachadh mar a thòisicheas tu leis a’ gheata _GoCardless_, **leugh an artaigil seo**.
 
-### Mar a stàlaicheas tu an tuilleadan Payfast:
+### Mar a stàlaicheas tu an tuilleadan Payfast: {#how-to-install-the-payfast-add-on}
 
 Rach gu duilleag nan tuilleadan agus tagh an tuilleadan **Ultimate Multisite: Payfast Gateway**.
 

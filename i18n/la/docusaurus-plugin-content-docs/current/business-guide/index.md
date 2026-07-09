@@ -3,13 +3,13 @@ title: Aedifica negotium situs interretialis ad certam provinciam spectantis
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Aedifica Negotium Sitium Specializatorum cum Ultimate Multisite
+# Aedifica Negotium Sitium Specializatorum cum Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Plurimi homines qui situs interretiales vendere conantur de pretio contra Wix, Squarespace, et milia operariorum liberorum certant. Perdunt. Qui vincunt certum auditorium eligunt, solutionem illi auditorio aptatam aedificant, et mercedem pro valore quem tradunt exigunt.
 
 Hic cursus te docet quomodo id ipsum facias utens Ultimate Multisite.
 
-## Quid Aedificabis
+## Quid Aedificabis {#what-you-will-build}
 
 Per totum hunc cursum aedificabis veram retis operantem nomine **FitSite** -- suggestum sitium interretialium specialiter aedificatum pro studiis exercitationis, institutoribus personalibus, et dominis gymnasiorum.
 
@@ -23,7 +23,7 @@ Lectione ultima confecta, FitSite erit suggestum speciale completum cum:
 
 Gradatim sequeris, et in fine habebis et suggestum operans et scientiam ad processum pro quocumque segmento speciali quod eligis repetendum.
 
-## Cur Studia Exercitationis?
+## Cur Studia Exercitationis? {#why-fitness-studios}
 
 Exemplum concretum nobis opus erat quod quilibet sequi posset. Studia exercitationis idonea sunt quia:
 
@@ -34,7 +34,7 @@ Exemplum concretum nobis opus erat quod quilibet sequi posset. Studia exercitati
 
 Omnia quae discis FitSite aedificando directe valent ad quodcumque segmentum speciale eligis: cauponas, agentes rerum immobilium, firmas iuridicas, ecclesias, conductores artificiorum, vel quodlibet aliud verticale.
 
-## Structura Cursus
+## Structura Cursus {#course-structure}
 
 Unaquaeque lectio unum conceptum introducit, explicat cur momenti sit, et te ducit per eius exsecutionem in rete FitSite. Omnis lectio super priorem aedificatur.
 
@@ -55,7 +55,7 @@ Unaquaeque lectio unum conceptum introducit, explicat cur momenti sit, et te duc
 | [13. Crescere](lesson-13-growth) | Crescere a primis clientibus ad verum negotium | Consilium incrementi et automationis FitSite |
 | [14. Quid Deinde Sequatur](lesson-14-whats-next) | In segmenta vicina et novas opportunitates expandere | Tabula itineris tua ultra FitSite |
 
-## Praerequisita
+## Praerequisita {#prerequisites}
 
 - Installatio WordPress Multisite (aut voluntas eam constituendi)
 - Licentia Ultimate Multisite activa
@@ -63,6 +63,6 @@ Unaquaeque lectio unum conceptum introducit, explicat cur momenti sit, et te duc
 
 Nulla codificatio requiritur. Si antea Ultimate Multisite numquam usus es, bene est -- Lectio 3 ab institutione nova incipit.
 
-## Paratus?
+## Paratus? {#ready}
 
 Incipe cum [Lectione 1: Cur Segmentum Speciale Vincat](lesson-1-why-niche).

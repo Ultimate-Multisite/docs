@@ -4,11 +4,11 @@ title: សកម្មភាព - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# សកម្មភាព: set_logged_in_cookie
+# សកម្មភាព: set_logged_in_cookie {#action-setloggedincookie}
 
 ដំណើរការភ្លាមៗ មុនពេលកំណត់ cookie ផ្ទៀងផ្ទាត់អ្នកបានចូល។
 
-## ប៉ារ៉ាម៉ែត្រ
+## ប៉ារ៉ាម៉ែត្រ {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | គ្រោងការណ៍ផ្ទៀងផ្ទាត់។ លំនាំដើម 'logged_in'។ |
 | $token | `string` | token សម័យរបស់អ្នកប្រើដែលត្រូវប្រើសម្រាប់ cookie នេះ។ |
 
-### ចាប់តាំងពី
+### ចាប់តាំងពី {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### ប្រភព
+### ប្រភព {#source}
 
 បានកំណត់ក្នុង [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) នៅបន្ទាត់ 141

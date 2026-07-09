@@ -3,15 +3,15 @@ title: Mindandanda ya Zakudya Zochereza Alendo
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ma Menyu a Malo Ochereza
+# Ma Menyu a Malo Ochereza {#hospitality-menus}
 
 Mbali ya **Ma Menyu a Malo Ochereza** imalola Theme Builder kupanga ndi kuyika masamba a menyu okonzedwa bwino a chakudya ndi zakumwa mwachindunji mu tsamba lanu la WordPress.
 
-## Chidule
+## Chidule {#overview}
 
 Theme Builder tsopano ingathe kupanga masamba a menyu aukadaulo, okonzedwa bwino a mabizinesi ochereza alendo kuphatikizapo ma restaurant, ma cafe, ma bar, ndi ntchito za catering. Ma menyu awa amalumikizidwa mokwanira ndi kapangidwe ka tsamba lanu ndipo amatha kusinthidwa ndi kuyang'aniridwa mosavuta.
 
-## Mitundu Yothandizidwa ya Malo Ochereza
+## Mitundu Yothandizidwa ya Malo Ochereza {#supported-hospitality-types}
 
 - **Ma restaurant** — ma menyu a chakudya chokhala ndi utumiki wonse
 - **Ma cafe** — ma menyu a khofi ndi zakudya zopepuka
@@ -21,9 +21,9 @@ Theme Builder tsopano ingathe kupanga masamba a menyu aukadaulo, okonzedwa bwino
 - **Food Trucks** — ma menyu a utumiki wa chakudya choyenda
 - **Ma brewery ndi ma winery** — ma menyu a zakumwa okhala ndi mafotokozedwe
 
-## Kapangidwe ka Menyu
+## Kapangidwe ka Menyu {#menu-structure}
 
-### Magulu a Menyu
+### Magulu a Menyu {#menu-categories}
 
 Ma menyu amakonzedwa m'magulu:
 
@@ -34,7 +34,7 @@ Ma menyu amakonzedwa m'magulu:
 - **Zakumwa** — zakumwa (zoledzeretsa ndi zosaledzeretsa)
 - **Zapadera** — zapadera za tsiku ndi tsiku kapena za nyengo
 
-### Mtundu wa Chinthu cha Menyu
+### Mtundu wa Chinthu cha Menyu {#menu-item-format}
 
 Chinthu chilichonse cha menyu chimaphatikizapo:
 
@@ -49,7 +49,7 @@ Chinthu chilichonse cha menyu chimaphatikizapo:
 }
 ```
 
-#### Magawo a Chinthu
+#### Magawo a Chinthu {#item-fields}
 
 | Gawo | Mtundu | Kufotokozera |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Chinthu chilichonse cha menyu chimaphatikizapo:
 | `allergens` | array | Zinthu zomwe zimayambitsa matupi kusagwirizana nazo zomwe zimadziwika (Nuts, Shellfish, ndi zina.) |
 | `availability` | string | Nthawi yomwe zilipo (Tsiku ndi tsiku, Za nyengo, ndi zina.) |
 
-## Kupanga Ma Menyu a Malo Ochereza
+## Kupanga Ma Menyu a Malo Ochereza {#creating-hospitality-menus}
 
-### Gawo 1: Perekani Zambiri za Menyu
+### Gawo 1: Perekani Zambiri za Menyu {#step-1-provide-menu-information}
 
 Uzani Theme Builder za menyu yanu:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Gawo 2: Theme Builder Imapanga Menyu
+### Gawo 2: Theme Builder Imapanga Menyu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Imafotokozera bwino mitengo ndi mafotokozedwe
 5. Imawonjezera zambiri za zakudya ndi zinthu zoyambitsa kusagwirizana kwa thupi
 
-### Gawo 3: Onani ndi Kusintha Mwamakonda
+### Gawo 3: Onani ndi Kusintha Mwamakonda {#step-3-review-and-customize}
 
 Mungathe:
 
@@ -91,9 +91,9 @@ Mungathe:
 4. Kusintha mafotokozedwe ndi zambiri za zakudya
 5. Kusintha masitayilo ndi masanjidwe
 
-## Zosankha Zowonetsera Menyu
+## Zosankha Zowonetsera Menyu {#menu-display-options}
 
-### Tsamba Lonse la Menyu
+### Tsamba Lonse la Menyu {#full-menu-page}
 
 Tsamba lapadera losonyeza menyu yanu yonse:
 
@@ -102,7 +102,7 @@ Tsamba lapadera losonyeza menyu yanu yonse:
 - Masanjidwe oyenera kusindikiza
 - Kapangidwe koyankha bwino pa mafoni
 
-### Widget ya Menyu
+### Widget ya Menyu {#menu-widget}
 
 Ikani magawo a menyu pa masamba ena:
 
@@ -111,7 +111,7 @@ Ikani magawo a menyu pa masamba ena:
 - Menyu ya zakumwa pa tsamba la bar
 - Kuwonetsa zakudya zotsekemera pa footer
 
-### PDF ya Menyu
+### PDF ya Menyu {#menu-pdf}
 
 Pangani menyu ya PDF yotsitsika:
 
@@ -120,9 +120,9 @@ Pangani menyu ya PDF yotsitsika:
 - Imaphatikizapo zithunzi ndi mafotokozedwe
 - Yosavuta kugawana ndi kutumiza pa email
 
-## Zambiri za Zakudya ndi Zinthu Zoyambitsa Kusagwirizana kwa Thupi
+## Zambiri za Zakudya ndi Zinthu Zoyambitsa Kusagwirizana kwa Thupi {#dietary-and-allergen-information}
 
-### Makhalidwe a Zakudya
+### Makhalidwe a Zakudya {#dietary-attributes}
 
 Lembani zinthu ndi zambiri za zakudya:
 
@@ -134,7 +134,7 @@ Lembani zinthu ndi zambiri za zakudya:
 - **Low-Carb** — ma carbohydrate ochepetsedwa
 - **High-Protein** — zokhala ndi protein yambiri
 
-### Machenjezo a Zinthu Zoyambitsa Kusagwirizana kwa Thupi
+### Machenjezo a Zinthu Zoyambitsa Kusagwirizana kwa Thupi {#allergen-warnings}
 
 Phatikizani zinthu zodziwika zomwe zimayambitsa kusagwirizana kwa thupi:
 
@@ -147,9 +147,9 @@ Phatikizani zinthu zodziwika zomwe zimayambitsa kusagwirizana kwa thupi:
 - **Gluten** — tirigu ndi mbewu zomwe zili ndi gluten
 - **Sesame** — nthanga za sesame ndi mafuta ake
 
-## Kuwongolera Menyu
+## Kuwongolera Menyu {#menu-management}
 
-### Kusintha Mitengo
+### Kusintha Mitengo {#updating-prices}
 
 Sinthani mitengo ya menyu mosavuta:
 
@@ -159,7 +159,7 @@ Sinthani mitengo ya menyu mosavuta:
 4. Sungani zosintha
 5. Zosintha zimaoneka nthawi yomweyo pa tsamba lanu
 
-### Kuwonjezera Zinthu za Nyengo
+### Kuwonjezera Zinthu za Nyengo {#adding-seasonal-items}
 
 Pangani mitundu ya menyu ya nyengo:
 
@@ -169,7 +169,7 @@ Pangani mitundu ya menyu ya nyengo:
 4. Konzani masiku omwe zizipezeka
 5. Ziwonetseni zokha pa nthawi ya nyengo
 
-### Kuwongolera Zapadera
+### Kuwongolera Zapadera {#managing-specials}
 
 Onetsani zapadera za tsiku ndi tsiku kapena za sabata:
 
@@ -179,7 +179,7 @@ Onetsani zapadera za tsiku ndi tsiku kapena za sabata:
 4. Sinthani tsiku ndi tsiku kapena sabata iliyonse
 5. Sungani zapadera zakale mu archive
 
-## Kulumikizana ndi Theme Builder
+## Kulumikizana ndi Theme Builder {#integration-with-theme-builder}
 
 Mukamagwiritsa ntchito Theme Builder pa masamba a malo ochereza:
 
@@ -189,9 +189,9 @@ Mukamagwiritsa ntchito Theme Builder pa masamba a malo ochereza:
 4. **Kukonza bwino pa mafoni** — ma menyu amaoneka bwino kwambiri pa mafoni
 5. **Kukonza SEO** — ma menyu amakhala oyenera ma search engine
 
-## Njira Zabwino Kwambiri
+## Njira Zabwino Kwambiri {#best-practices}
 
-### Kapangidwe ka Menyu
+### Kapangidwe ka Menyu {#menu-design}
 
 - **Kukonza komveka bwino** — kapangidwe ka magulu komveka
 - **Mafotokozedwe owerengeka** — okopa chilakolako ndi opereka zambiri
@@ -199,7 +199,7 @@ Mukamagwiritsa ntchito Theme Builder pa masamba a malo ochereza:
 - **Zithunzi zaukadaulo** — zithunzi zapamwamba za chakudya
 - **Malo opanda kanthu** — musadzaze kwambiri tsambalo
 
-### Zomwe Zili Mkati
+### Zomwe Zili Mkati {#content}
 
 - **Mafotokozedwe olondola** — fotokozani zinthu molondola
 - **Wonetsani zapadera** — pangitsani zapadera kuonekera
@@ -207,7 +207,7 @@ Mukamagwiritsa ntchito Theme Builder pa masamba a malo ochereza:
 - **Sinthani pafupipafupi** — sungani mitengo ndi zinthu kukhala zatsopano
 - **Gwiritsani ntchito mawu okopa chilakolako** — pangitsani zinthu kumveka zokoma
 
-### Kufikirika
+### Kufikirika {#accessibility}
 
 - **Mafonti owerengeka** — gwiritsani ntchito zilembo zomveka, zosavuta kuwerenga
 - **Kusiyana kokwanira** — onetsetsani kuti mawu akuwerengeka
@@ -215,9 +215,9 @@ Mukamagwiritsa ntchito Theme Builder pa masamba a malo ochereza:
 - **Machenjezo a zinthu zoyambitsa kusagwirizana kwa thupi** — onetsani bwino zinthu zoyambitsa kusagwirizana
 - **Zoyenera pa mafoni** — yesani pa zida zonse
 
-## Zitsanzo
+## Zitsanzo {#examples}
 
-### Kapangidwe ka Menyu ya Restaurant
+### Kapangidwe ka Menyu ya Restaurant {#restaurant-menu-structure}
 
 ```
 Zakudya Zoyambira
@@ -241,7 +241,7 @@ Zakudya Zotsekemera
 └── Kusankha kwa Gelato
 ```
 
-### Kapangidwe ka Menyu ya Cafe
+### Kapangidwe ka Menyu ya Cafe {#cafe-menu-structure}
 
 ```
 Khofi
@@ -260,7 +260,7 @@ Masangweji
 └── Vegetarian Wrap
 ```
 
-## Zinthu Zogwirizana
+## Zinthu Zogwirizana {#related-features}
 
 - [Panga Menyu](../abilities/create-menu.md) — pangani menyu oyendera
 - [Malangizo a Kapangidwe](./design-direction.md) — sinthani kapangidwe ka site yanu

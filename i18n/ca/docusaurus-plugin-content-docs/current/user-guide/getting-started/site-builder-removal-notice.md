@@ -3,13 +3,13 @@ title: Avís de Retirada del Mode de Constructor de Sites
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Avís de eliminació del mode Site Builder
+# Avís de eliminació del mode Site Builder {#site-builder-mode-removal-notice}
 
 **El mode Site Builder s'ha eliminat en Superdav AI Agent v1.12.0.** Si estaves utilitzant el mode Site Builder, hauràs de migrar a l'**agent Setup Assistant** per a la creació de temes i la configuració del lloc web.
 
-## Què ha passat?
+## Què ha passat? {#what-happened}
 
-### Mode Site Builder (Antic)
+### Mode Site Builder (Antic) {#site-builder-mode-legacy}
 
 El mode Site Builder era una interfície basada en un assistent (wizard) per a:
 
@@ -18,7 +18,7 @@ El mode Site Builder era una interfície basada en un assistent (wizard) per a:
 - Escollir un tema
 - Configurar contingut inicial
 
-### Què ho ha substituït?
+### Què ho ha substituït? {#what-replaced-it}
 
 L'**agent Setup Assistant** ara gestiona tota la funcionalitat de Site Builder amb:
 
@@ -27,15 +27,15 @@ L'**agent Setup Assistant** ara gestiona tota la funcionalitat de Site Builder a
 - Integració amb l'onboarding de Theme Builder
 - Memòria persistent de site_brief per a sessions futures
 
-## Si utilitzaves el mode Site Builder
+## Si utilitzaves el mode Site Builder {#if-you-were-using-site-builder-mode}
 
-### Els teus llocs web són segurs
+### Els teus llocs web són segurs {#your-sites-are-safe}
 
 - Els llocs web existents creats amb el mode Site Builder continuen de funcionar
 - Cap pèrdua de dades ni interrupció del lloc web
 - Pots continuar gestionant els teus llocs web normalment
 
-### Migra a l'Agent Setup Assistant
+### Migra a l'Agent Setup Assistant {#migrate-to-setup-assistant-agent}
 
 Per a la configuració de llocs web nous o canvis de tema, utilitza l'agent Setup Assistant:
 
@@ -51,7 +51,7 @@ o
 
 L'agent Setup Assistant proporciona la mateixa funcionalitat amb més flexibilitat.
 
-## Comparativa: Site Builder vs. Setup Assistant
+## Comparativa: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Funcionalitat | Site Builder (Eliminat) | Setup Assistant (Nou) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ L'agent Setup Assistant proporciona la mateixa funcionalitat amb més flexibilit
 | Sessions futures | Repetir la configuració | Utilitzar el site_brief guardat |
 | Flexibilitat | Flux de treball fix | Conversació adaptativa |
 
-## Migrar a l'Agent Setup Assistant
+## Migrar a l'Agent Setup Assistant {#migrating-to-setup-assistant-agent}
 
-### Per a llocs web nous
+### Per a llocs web nous {#for-new-sites}
 
 En lloc d'utilitzar el mode Site Builder:
 
@@ -76,7 +76,7 @@ En lloc d'utilitzar el mode Site Builder:
    - Generació de tema
    - Configuració inicial
 
-### Per a llocs web existents
+### Per a llocs web existents {#for-existing-sites}
 
 Si tens un lloc web existent creat amb el mode Site Builder:
 
@@ -85,7 +85,7 @@ Si tens un lloc web existent creat amb el mode Site Builder:
 3. L'agent Setup Assistant t'ajudarà a crear un nou tema
 4. Els teus dades del lloc web es mantenen inalterats
 
-### Per canvis de tema
+### Per canvis de tema {#for-theme-changes}
 
 En lloc de la selecció de tema del mode Site Builder:
 
@@ -95,9 +95,9 @@ En lloc de la selecció de tema del mode Site Builder:
    - Generarà un tema personalitzat
    - L'activarà al teu lloc web
 
-## Diferències clau
+## Diferències clau {#key-differences}
 
-### Mode Site Builder
+### Mode Site Builder {#site-builder-mode}
 
 ```
 1. Escollir un template
@@ -106,7 +106,7 @@ En lloc de la selecció de tema del mode Site Builder:
 4. Iniciat
 ```
 
-### Agent Setup Assistant
+### Agent Setup Assistant {#setup-assistant-agent}
 
 ```
 1. Descrever l'objectiu del teu lloc web
@@ -117,36 +117,36 @@ En lloc de la selecció de tema del mode Site Builder:
 6. Site brief guardat per sessions futures
 ```
 
-## Beneficis de l'Agent Setup Assistant
+## Beneficis de l'Agent Setup Assistant {#benefits-of-setup-assistant-agent}
 
-### Més flexible
+### Més flexible {#more-flexible}
 
 - Descriure el teu lloc web en llengua natural
 - Obtindre recomanacions personalitzades
 - Adaptar-se a les teves necessitats específiques
 
-### Millor personalització
+### Millor personalització {#better-customization}
 
 - Generació de temes personalitzats
 - Decisions del sistema de disseny
 - Tokens de disseny persistents
 
-### Memòria persistent
+### Memòria persistent {#persistent-memory}
 
 - El teu site_brief es guarda
 - Els agents futurs entenen el teu lloc web
 - No és necessari repetir la informació de configuració
 
-### Flux de treball integrat
+### Flux de treball integrat {#integrated-workflow}
 
 - Onboarding de Theme Builder
 - Habilitat de Estètica del Sistema de Disseny (Design System Aesthetics)
 - Controles de visibilitat de habilitats (Ability Visibility controls)
 - Tot treballa junts de manera fluida
 
-## Solucionar problemes
+## Solucionar problemes {#troubleshooting}
 
-### No trobo el mode Site Builder
+### No trobo el mode Site Builder {#i-cant-find-site-builder-mode}
 
 El mode Site Builder ha estat eliminat. Utilitza l'agent Setup Assistant en canvi:
 
@@ -154,7 +154,7 @@ El mode Site Builder ha estat eliminat. Utilitza l'agent Setup Assistant en canv
 "Help me set up a new site"
 ```
 
-### Vull recrear un lloc web de Site Builder
+### Vull recrear un lloc web de Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Pots recrearlo amb l'agent Setup Assistant:
 
@@ -163,7 +163,7 @@ Pots recrearlo amb l'agent Setup Assistant:
 3. L'agent generarà un tema similar
 4. El teu site_brief es guardarà per referència futura
 
-### El meu lloc web Site Builder existent no funciona
+### El meu lloc web Site Builder existent no funciona {#my-existing-site-builder-site-isnt-working}
 
 Els llocs web existents creats amb el mode Site Builder continuen de funcionar. Si estàs experimentant problemes:
 
@@ -172,7 +172,7 @@ Els llocs web existents creats amb el mode Site Builder continuen de funcionar. 
 3. Comprova els logs d'errors de WordPress
 4. Contacta amb suport si els problemes persisteixen
 
-### Incapacitat de usar els templates Site Builder antics?
+### Incapacitat de usar els templates Site Builder antics? {#can-i-still-use-my-old-site-builder-templates}
 
 Els templates Site Builder ja no estan disponibles. No obstant això:
 
@@ -180,14 +180,14 @@ Els templates Site Builder ja no estan disponibles. No obstant això:
 - Pots recrear llocs web similars amb l'agent Setup Assistant
 - L'agent Setup Assistant proporciona més opcions de personalització
 
-## Pròxims passos
+## Pròxims passos {#next-steps}
 
 1. **Per a llocs web nous**: Utilitza l'agent Setup Assistant
 2. **Per a llocs web existents**: Continua utilitzant-los tal com estan
 3. **Per canvis de tema**: Sol·licita ajuda a l'agent Setup Assistant
 4. **Per refinament del disseny**: Utilitza l'habilitat de Estètica del Sistema de Disseny
 
-## Temes relacionats
+## Temes relacionats {#related-topics}
 
 - **Theme Builder Onboarding**: Configuració guiada per a temes personalitzats
 - **Setup Assistant Agent**: Configuració de lloc web guiada per l'agent

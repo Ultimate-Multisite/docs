@@ -3,11 +3,11 @@ title: Kutheni i-Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kutheni Ultimate Multisite
+# Kutheni Ultimate Multisite {#why-ultimate-multisite}
 
 Ukuba ufike kweli nqaku, mhlawumbi uvile ukuba plugin yethu inokuba sisisombululo sokwenza umbono wakho weshishini ube yinyani. Sinethemba lokuba uya kuba neempendulo ozidingayo ekupheleni kweli candelo.
 
-## Yintoni Ultimate Multisite?
+## Yintoni Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite yi-WordPress Multisite plugin ekuvumela ukuba unike abathengi i-WaaS (Website as a Service). Nge-plugin yethu, ungaba namanqanaba ahlukeneyo obhaliso kwaye abathengi bakuhlawule umrhumo ophindaphindayo ukuze babe nesayithi ehostiweyo kwinethiwekhi yakho ye-Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite ikuvumela ukuba ufumane iintlawulo zakho ngeegateway ezahluke
 
 Kwaye oku kusekuqaleni nje kuba ungandisa imisebenzi yayo ngee-add-on kunye nee-webhooks.
 
-## Ezinye iimpawu
+## Ezinye iimpawu {#other-features}
 
 Ultimate Multisite ikwabonelela:
 
@@ -33,11 +33,11 @@ Kunye nezinto eziphambili ngakumbi:
 
   * Search and Replace API: Unokuphawula kwakhona iitemplate zesayithi ngee-placeholder ezifana ne-{{site_name}} kwaye usebenzise i-Search and Replace API ukuzalisa ngokuzenzekelayo ezo placeholder ngolwazi olunikezwe ngumthengi wakho kanye emva kokubhalisa, ngokuzenzekelayo.
 
-## Iimeko zokusetyenziswa
+## Iimeko zokusetyenziswa {#use-cases}
 
 Ngoku lixesha lokubona ezinye zeemeko zokusetyenziswa ezinokwenzeka ze-Ultimate Multisite.
 
-### Ityala 1: I-Arhente
+### Ityala 1: I-Arhente {#case-1-an-agency}
 
 Ngokuqhelekileyo izakhono ezingundoqo ze-arhente zikwiluyilo lweewebhusayithi, nemiba efana nokuhostwa kwazo okanye ukuthengisa idweliswe njengeenkonzo ezongezelelekileyo.
 
@@ -47,7 +47,7 @@ Ulawulo oluqinileyo phezu kwee-plugin nee-theme lugcinwa ngokwemveliso nganye ng
 
 Ii-arhente ziya kufumana uxolo lwengqondo nge-Ultimate Multisite ebavumela ukuba benze oko bakwenza kakuhle kakhulu - ukuyila iiwebhusayithi ezibalaseleyo.
 
-### Ityala 2: Umboneleli weNiche
+### Ityala 2: Umboneleli weNiche {#case-2-niche-provider}
 
 Kukho isaci esidala esithi, “Yenza into enye kwaye uyenze kakuhle”. Kwiingcali ezininzi, oku kuthetha ukudala imveliso okanye inkonzo ejikeleze umbono omnye ongundoqo.
 
@@ -57,7 +57,7 @@ Enye yeempawu ezintsha ze-Ultimate Multisite, isayithi yetemplate yileyo apho i-
 
 Kumboneleli weendawo ze-niche neenkonzo, oku kubonelela ngenzuzo engenakuthelekiswa kwisakhono sokudala kwangoko isayithi elungele ukuhamba ngee-plugin zesiko noyilo. Umthengi kufuneka anike igalelo elincinci kuphela ukuze agqibe inkonzo.
 
-### Ityala 3: WordPress Web Hosting
+### Ityala 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Kukho iindlela ezininzi kakhulu zokuhosta iisayithi ze-WordPress kodwa kunqabile ukuba kube lula njengokunika umthengi indawo yewebhu enenguqulelo ye-WordPress efakwe kwangaphambili. Oku kungenxa yokuba inani lezigqibo neengqwalasela kufuneka zidibane ukuze kubonelelwe ngenkonzo enentsingiselo.
 

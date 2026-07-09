@@ -3,7 +3,7 @@ title: একটি প্ল্যান আপগ্রেড করা
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# একটি Plan আপগ্রেড করা (v2)
+# একটি Plan আপগ্রেড করা (v2) {#upgrading-a-plan-v2}
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite version 2.x নিয়ে।**_
 
@@ -41,7 +41,7 @@ checkout সম্পন্ন হওয়ার পরে, নতুন produc
 
 ##
 
-## আপগ্রেড ও ডাউনগ্রেড পথ
+## আপগ্রেড ও ডাউনগ্রেড পথ {#upgrade-and-downgrade-paths}
 
 আপনার প্রতিটি product-এ একটি **Up & Downgrades** ট্যাব থাকবে। ওই ট্যাবের প্রথম অপশনটি হলো **Plan Group** নামের একটি field।
 

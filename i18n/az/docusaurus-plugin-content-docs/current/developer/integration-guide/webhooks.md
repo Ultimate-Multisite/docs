@@ -3,11 +3,11 @@ title: Webhook Emalı
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhooklarla İşləmək
+# Webhooklarla İşləmək {#webhook-handling}
 
 Xarici xidmətlərdən gələn hadisələri qəbul etmək və məlumatları Ultimate Multisite ilə sinxronlaşdırmaq üçün özəl webhook nöqtələri (endpoints) yaradın.
 
-## Özəl Webhook Nöqtəsi (Endpoint)
+## Özəl Webhook Nöqtəsi (Endpoint) {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Təhlükəsizlik Məsələləri
+## Təhlükəsizlik Məsələləri {#security-considerations}
 
 - Webhook imzalarını həmişə HMAC və ya paylaşılmış bir sirr (shared secret) istifadə edərək yoxlayın.
 - REST marşrutunuzda `permission_callback` istifadə edin — heç vaxt istehsal (production) mühitində bunu `__return_true` olaraq təyin etməyin.

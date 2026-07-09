@@ -3,7 +3,7 @@ title: ਕਮਿਊਨਿਟੀ
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community ਵਿੱਚ ਕਿਵੇਂ ਸ਼ਾਮਲ ਹੋਣਾ ਹੈ
+# Ultimate Multisite Community ਵਿੱਚ ਕਿਵੇਂ ਸ਼ਾਮਲ ਹੋਣਾ ਹੈ {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community ਇੱਕ ਅਜਿਹੀ ਥਾਂ ਹੈ ਜਿੱਥੇ ਤੁਸੀਂ ਹੋਰ Ultimate Multisite ਵਰਤਣ ਵਾਲਿਆਂ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਸੁਝਾਅ, ਤਜ਼ਰਬੇ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ ਸਾਂਝਾ ਕਰ ਸਕਦੇ ਹੋ। Ultimate Multisite Community ਤੱਕ ਪਹੁੰਚਣ ਲਈ https://community.ultimatemultisite.com/home 'ਤੇ ਜਾਓ।
 

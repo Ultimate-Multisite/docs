@@ -3,19 +3,19 @@ title: 'Leçon 10 : Jour du lancement'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leçon 10 : Jour du lancement
+# Leçon 10 : Jour du lancement {#lesson-10-launch-day}
 
 Tout est construit. Avant d'ouvrir les portes, cette leçon vous guide à travers la liste de contrôle de pré-lancement pour vous assurer que rien n'est cassé, manquant ou embarrassant.
 
-## Où nous nous étions arrêtés
+## Où nous nous étions arrêtés {#where-we-left-off}
 
 FitSite dispose des modèles, des plans, du processus de paiement, du branding, de l'intégration et de la tarification configurés. Maintenant, nous vérifions que tout fonctionne et nous passons en ligne.
 
-## Liste de contrôle de pré-lancement
+## Liste de contrôle de pré-lancement {#pre-launch-checklist}
 
 Traitez chaque élément. Ne sautez aucun.
 
-### Infrastructure de la plateforme
+### Infrastructure de la plateforme {#platform-infrastructure}
 
 - [ ] L'hébergement est stable et fonctionne bien sous charge
 - [ ] Le SSL avec caractère générique (Wildcard SSL) est actif et tous les sous-domaines sont servis via HTTPS
@@ -23,7 +23,7 @@ Traitez chaque élément. Ne sautez aucun.
 - [ ] Les sauvegardes sont configurées et testées (restaurez au moins une pour vérifier)
 - [ ] La surveillance est en place — vous saurez si la plateforme tombe en panne
 
-### Modèles (Templates)
+### Modèles (Templates) {#templates}
 
 - [ ] Les trois modèles se chargent correctement sur les nouveaux sites
 - [ ] Le contenu factice est utile et exempt de fautes de frappe
@@ -32,7 +32,7 @@ Traitez chaque élément. Ne sautez aucun.
 - [ ] La vitesse de chargement des pages est acceptable (testez avec un outil comme GTmetrix ou PageSpeed Insights)
 - [ ] Aucun lien cassé ou actif manquant sur aucun modèle
 
-### Plans et produits
+### Plans et produits {#plans-and-products}
 
 - [ ] Les trois plans sont actifs et visibles
 - [ ] Les descriptions de plans sont précises et spécifiques à la niche
@@ -42,7 +42,7 @@ Traitez chaque élément. Ne sautez aucun.
 - [ ] Les ajouts de commande (Order bumps) apparaissent correctement pendant le paiement
 - [ ] Les limitations de plugins et de thèmes sont appliquées correctement par plan
 
-### Flux de paiement (Checkout Flow)
+### Flux de paiement (Checkout Flow) {#checkout-flow}
 
 - [ ] Effectuez une inscription test complète pour chaque plan (utilisez le mode de paiement test)
 - [ ] La sélection de modèles affiche les modèles corrects par plan
@@ -52,7 +52,7 @@ Traitez chaque élément. Ne sautez aucun.
 - [ ] Le client peut se connecter à son nouveau site immédiatement
 - [ ] Les codes de réduction fonctionnent correctement
 
-### Branding
+### Branding {#branding}
 
 - [ ] La page de connexion affiche le branding FitSite
 - [ ] Le dashboard administrateur affiche le branding FitSite
@@ -60,7 +60,7 @@ Traitez chaque élément. Ne sautez aucun.
 - [ ] Les factures s'affichent correctement avec les détails de votre entreprise
 - [ ] Le site marketing est en ligne et renvoie vers le formulaire de paiement
 
-### Intégration (Onboarding)
+### Intégration (Onboarding) {#onboarding}
 
 - [ ] Le widget Quick Start apparaît sur les nouveaux dashboards clients
 - [ ] Tous les liens Quick Start pointent vers les pages correctes
@@ -68,7 +68,7 @@ Traitez chaque élément. Ne sautez aucun.
 - [ ] Les articles de la base de connaissances sont publiés et accessibles
 - [ ] La page de compte affiche les informations de plan et les options de mise à niveau correctes
 
-### Légal et affaires
+### Légal et affaires {#legal-and-business}
 
 - [ ] Les conditions d'utilisation sont publiées et liées depuis le paiement
 - [ ] La politique de confidentialité est publiée et accessible
@@ -77,11 +77,11 @@ Traitez chaque élément. Ne sautez aucun.
 - [ ] La passerelle de paiement est en mode live (et non en mode test)
 - [ ] La configuration fiscale est correcte pour votre juridiction
 
-## Lancement en douceur (Soft Launch) vs. Lancement public (Hard Launch)
+## Lancement en douceur (Soft Launch) vs. Lancement public (Hard Launch) {#soft-launch-vs-hard-launch}
 
 Envisagez un lancement en deux phases :
 
-### Phase 1 : Lancement en douceur
+### Phase 1 : Lancement en douceur {#phase-1-soft-launch}
 
 Invitez 5 à 10 propriétaires de studios de fitness à s'inscrire avant le lancement public. Ce sont vos clients bêta. Offrez-leur une réduction significative (50 % à vie, ou 3 mois gratuits) en échange de :
 
@@ -91,7 +91,7 @@ Invitez 5 à 10 propriétaires de studios de fitness à s'inscrire avant le lanc
 
 Cela vous fournit des retours clients réels et des sites actifs à présenter avant de vous ouvrir au public.
 
-### Phase 2 : Lancement public
+### Phase 2 : Lancement public {#phase-2-public-launch}
 
 Une fois que les retours du lancement en douceur sont intégrés :
 
@@ -100,7 +100,7 @@ Une fois que les retours du lancement en douceur sont intégrés :
 - Commencez l'acquisition de clients (Leçon 11)
 - Annoncez sur les canaux pertinents de l'industrie du fitness
 
-## Actions du jour du lancement
+## Actions du jour du lancement {#launch-day-actions}
 
 Le jour où vous devenez public :
 
@@ -110,7 +110,7 @@ Le jour où vous devenez public :
 4. **Soyez disponible** — vos premiers vrais clients pourraient avoir besoin d'aide, et une réponse rapide construit la confiance
 5. **Célébrez brièvement** — puis retournez au travail
 
-## Ce qui peut mal tourner
+## Ce qui peut mal tourner {#what-can-go-wrong}
 
 Soyez prêt pour :
 
@@ -120,7 +120,7 @@ Soyez prêt pour :
 - **Performance sous charge** : Si vous subissez un pic de trafic, sachez comment faire évoluer votre hébergement
 - **Confusion client** : Ayez votre base de connaissances et vos canaux de support prêts
 
-## Le réseau FitSite jusqu'à présent
+## Le réseau FitSite jusqu'à présent {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Ce que nous avons construit dans cette leçon
+## Ce que nous avons construit dans cette leçon {#what-we-built-this-lesson}
 
 - **Une liste de contrôle de pré-lancement complète** couvrant l'infrastructure, le contenu, les paiements et le juridique
 - **Une stratégie de lancement en douceur** pour obtenir des retours réels avant le lancement public

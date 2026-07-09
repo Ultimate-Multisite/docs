@@ -4,11 +4,11 @@ title: Filter - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filtre: wu_rest_delete_item
+# Filtre: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 İsteğin devam edip etmemesi gerektiğine dair bir filtreleme yapar.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 | $rest_base | `array` | Varlık (entity) slug'ı. |
 | $this | `\Base_Manager` | Nesne örneği. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) dosyasının 440. satırında tanımlanmıştır.

@@ -4,13 +4,13 @@ title: Darbība - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Darbība: wp_ultimo_payfast_activation
+# Darbība: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
 
 Ļaujiet citām plugin daļām pievienot savas aktivizācijas rutīnas
 
-### Kopš
+### Kopš {#since}
 
 - 1.9.6
-### Avots
+### Avots {#source}
 
 Definēts [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/class-hooks.php#L83) 83. rindā

@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Botlarni to‘xtating. Daromadni himoya qiling. Sozlash tashvishi yo‘q.**
 
@@ -15,7 +15,7 @@ Maxsus domenlar bilan multisite tarmog‘ini yurityapsizmi? Bu og‘riqni bilasi
 
 **Ultimate Multisite: Captcha hammasini o‘zgartiradi.**
 
-## Cap Captcha: Shunchaki ishlaydigan o‘z serveringizdagi himoya
+## Cap Captcha: Shunchaki ishlaydigan o‘z serveringizdagi himoya {#cap-captcha-self-hosted-protection-that-just-works}
 
 Bizning yangi **Cap Captcha** provayderimiz multisite tarmoqlari uchun o‘yinni o‘zgartiradi:
 
@@ -25,7 +25,7 @@ Bizning yangi **Cap Captcha** provayderimiz multisite tarmoqlari uchun o‘yinni
 * **Ko‘rinmas Proof-of-Work** — Foydalanuvchilar hisoblash jumboqini fonda yechadi. Yong‘in gidrantlarini bosish ham, asabiylashtiruvchi rasm panjaralari ham yo‘q.
 * **Yengil** — Atigi 20KB. Checkout’ingizni sekinlashtirmaydi.
 
-## WooCommerce karta sinovidan himoya
+## WooCommerce karta sinovidan himoya {#woocommerce-card-testing-protection}
 
 Karta sinovi hujumlari savdogarlarga har yili milliardlab zarar keltiradi. Firibgarlar o‘g‘irlangan kredit kartalarni WooCommerce checkout’ingiz orqali tekshirish uchun botlardan foydalanadi—qayta ishlash to‘lovlarini siz to‘laysiz, ular esa yaroqli karta raqamlarini oladi.
 
@@ -35,7 +35,7 @@ Karta sinovi hujumlari savdogarlarga har yili milliardlab zarar keltiradi. Firib
 * **PayPal Payments bilan mos** — WooCommerce PayPal Payments bilan muammosiz ishlaydi
 * **Real vaqt statistikasi** — Qancha hujumni bloklayotganingizni aniq ko‘ring
 
-## Hali ham Google reCAPTCHA yoki hCaptcha kerakmi?
+## Hali ham Google reCAPTCHA yoki hCaptcha kerakmi? {#still-need-google-recaptcha-or-hcaptcha}
 
 Biz buni ham ta’minlaymiz. Quyidagilar to‘liq qo‘llab-quvvatlanadi:
 
@@ -47,14 +47,14 @@ Biz buni ham ta’minlaymiz. Quyidagilar to‘liq qo‘llab-quvvatlanadi:
 
 Tarmoq sozlamalaringizdan istalgan vaqtda provayderlar o‘rtasida almashing.
 
-## Kengayish uchun yaratilgan
+## Kengayish uchun yaratilgan {#built-for-scale}
 
 * Har bir sayt uchun alohida sozlamalarni ustun qo‘yish imkoniyati bilan tarmoq bo‘ylab sozlamalar
 * Himoyani kuzatish uchun statistika dashboard’i
 * Moslanadigan xavfsizlik darajalari (Tez, O‘rta, Maksimal)
 * Kengaytiriladigan provayder arxitekturasi bilan dasturchilar uchun qulay
 
-## O‘rnatish
+## O‘rnatish {#installation}
 
 1. `ultimate-multisite-captcha` ni `/wp-content/plugins/` katalogingizga yuklang
 2. Pluginni tarmoq bo‘yicha faollashtiring
@@ -64,37 +64,37 @@ Cap Captcha avtomatik faollashadi—sozlanadigan parametrlar yo‘q, kiritiladig
 
 **Ixtiyoriy:** Buning o‘rniga Google reCAPTCHA yoki hCaptcha ishlatish uchun **Ultimate Multisite → Settings → Captcha** ga o‘ting va afzal ko‘rgan provayderingizni tanlang.
 
-## Tez-tez so‘raladigan savollar
+## Tez-tez so‘raladigan savollar {#frequently-asked-questions}
 
-## Biror narsani sozlashim kerakmi?
+## Biror narsani sozlashim kerakmi? {#do-i-need-to-configure-anything}
 
 Yo‘q! Addonni faollashtirganingizda Cap Captcha avtomatik yoqiladi. Butun tarmog‘ingiz darhol himoyalanadi—sozlanadigan parametrlar yo‘q, kiritiladigan API kalitlari yo‘q.
 
-## Cap Captcha uchun API kalitlari kerakmi?
+## Cap Captcha uchun API kalitlari kerakmi? {#do-i-need-api-keys-for-cap-captcha}
 
 Yo‘q. Cap Captcha to‘liq o‘z serveringizda ishlaydi. Tashqi hisoblar yo‘q, domen ro‘yxatdan o‘tkazish yo‘q, konfiguratsiya boshog‘riqlari yo‘q.
 
-## Bu checkout’imni sekinlashtiradimi?
+## Bu checkout’imni sekinlashtiradimi? {#will-this-slow-down-my-checkout}
 
 Cap Captcha atigi 20KB va proof-of-work sinovlarini fonda bajaradi. Mijozlaringiz hech qanday kechikishni sezmaydi.
 
-## Bu karta sinovi hujumlaridan himoya qiladimi?
+## Bu karta sinovi hujumlaridan himoya qiladimi? {#does-this-protect-against-card-testing-attacks}
 
 Ha! Faqat HTML formalarni himoya qiladigan an’anaviy captcha’lardan farqli ravishda, bizning WooCommerce integratsiyamiz bot hujumlarini API darajasida bloklash uchun bevosita Store API’ga ulanadi—karta sinovi hujumlarining aksariyati aynan shu yerda sodir bo‘ladi.
 
-## Turli saytlarda turli captcha provayderlaridan foydalana olamanmi?
+## Turli saytlarda turli captcha provayderlaridan foydalana olamanmi? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Captcha provayderi tarmoq bo‘yicha belgilanadi, lekin ehtiyojlaringizga qarab murakkablik sozlamalarini moslashingiz mumkin.
 
-## Bu GDPR talablariga mosmi?
+## Bu GDPR talablariga mosmi? {#is-this-gdpr-compliant}
 
 Cap Captcha tashqi xizmatlarga ma’lumot yubormasdan 100% o‘z serveringizda ishlaydi. Google reCAPTCHA va hCaptcha uchun ularning tegishli maxfiylik siyosatlarini ko‘rib chiqing.
 
-## Tezlikni cheklash
+## Tezlikni cheklash {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 tarmog‘ingizni brute-force va karta sinovi hujumlaridan himoya qiladigan qat’iy to‘xtatuvchi tezlik cheklagichini taqdim etadi.
 
-### Bu qanday ishlaydi
+### Bu qanday ishlaydi {#how-it-works}
 
 Tezlik cheklagichi captcha bilan himoyalangan yuzalardagi har bir GET va POST so‘rovini hisoblaydi:
 
@@ -108,9 +108,9 @@ Tashrifchi tezlik limitidan oshib ketganda, plugin quyidagicha javob beradi:
 * Qachon qayta urinilishini ko‘rsatuvchi **Retry-After** header
 * Hujumchilarni sekinlashtirish uchun **tasodifiy tarpit uyqusi** (standart bo‘yicha 1–5 soniya, qat’iy maksimum 15 soniya)
 
-### Konfiguratsiya
+### Konfiguratsiya {#configuration}
 
-#### Tarpit vaqti
+#### Tarpit vaqti {#tarpit-timing}
 
 Tezlik cheklangan so‘rovlarga qo‘llanadigan tasodifiy kechikishni boshqaring:
 
@@ -119,9 +119,9 @@ Tezlik cheklangan so‘rovlarga qo‘llanadigan tasodifiy kechikishni boshqaring
 
 Bu sozlamalar **Ultimate Multisite → Settings → Captcha** da mavjud.
 
-### Kengaytirish imkoniyati
+### Kengaytirish imkoniyati {#extensibility}
 
-#### IP oq ro‘yxat filtri
+#### IP oq ro‘yxat filtri {#ip-whitelist-filter}
 
 Ishonchli IP diapazonlarini tezlik cheklashdan ozod qiling:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Bloklashdan oldingi amal
+#### Bloklashdan oldingi amal {#pre-block-action}
 
 Tezlik limiti bloki yuborilishidan darhol oldin maxsus mantiqni bajaring:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Client IP aniqlash va ishonchli proksilar
+## Client IP aniqlash va ishonchli proksilar {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 soxtalashtirishga chidamli client-IP aniqlashni taqdim etadi. `Captcha_Core::get_client_ip()` metodi endi quyidagilar bo‘yicha tashrifchi IP manzilini belgilash uchun yagona haqiqat manbai hisoblanadi:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 soxtalashtirishga chidamli client-IP aniqlash
 * Captcha provayderi `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Statistika IP xeshlari
 
-### Ishonch modeli
+### Ishonch modeli {#trust-model}
 
 Plagin qat'iy IP ishonch ierarxiyasini majburiy qo'llaydi:
 
@@ -166,9 +166,9 @@ Plagin qat'iy IP ishonch ierarxiyasini majburiy qo'llaydi:
    - Bevosita ulanuvchi tomon admin tomonidan sozlangan ishonchli proksi ro'yxatingizda bo'lsa
    - Header o'ngdan chapga tahlil qilinib, ishonchli/Cloudflare o'tishlari o'tkazib yuborilsa
 
-### Konfiguratsiya
+### Konfiguratsiya {#configuration-1}
 
-#### Cloudflare Header ishonchi
+#### Cloudflare Header ishonchi {#cloudflare-header-trust}
 
 Cloudflare'ning `CF-Connecting-IP` header'iga ishonishni yoqing:
 
@@ -178,7 +178,7 @@ Cloudflare'ning `CF-Connecting-IP` header'iga ishonishni yoqing:
   - CIDR diapazonlari wp-cron orqali haftalik yangilanadi
   - Yangilash muvaffaqiyatsiz bo'lsa, ichki zaxira variant ishlatiladi
 
-#### Ishonchli proksi konfiguratsiyasi
+#### Ishonchli proksi konfiguratsiyasi {#trusted-proxy-configuration}
 
 Oldingi qatordagi proksilar va yuk balanslagichlaringizni belgilang:
 
@@ -194,14 +194,14 @@ Oldingi qatordagi proksilar va yuk balanslagichlaringizni belgilang:
     198.51.100.50
     ```
 
-#### Birinchi yoqishda avtomatik aniqlash
+#### Birinchi yoqishda avtomatik aniqlash {#first-enable-auto-detection}
 
 Tezlik cheklagichni birinchi marta yoqqaningizda, plagin ehtimoliy Cloudflare va proksi holatingizni aniqlaydi hamda bir bosishda ishlaydigan "Aniqlangan sozlamalarni qo'llash" admin bildirishnomasini ko'rsatadi.
 
 * Plagin saqlangan qiymatlaringizni **hech qachon ustidan yozmaydi**
 * Agar keyingi trafik konfiguratsiyangiz endi haqiqiy holatga mos kelmasligini ko'rsatsa (masalan, Cloudflare CIDR diapazonlarini o'zgartirgan bo'lsa), yopib bo'lmaydigan nomuvofiqlik bildirishnomasi tavsiya etilgan yangilanishni ko'rsatadi
 
-### Nega bu muhim
+### Nega bu muhim {#why-this-matters}
 
 Qat'iy IP ishonch modeli muhim soxtalashtirish vektorini yopadi: soxta `CF-Connecting-IP` header'i bilan yuborilgan to'g'ridan-to'g'ri origin-server so'rovlari avval haqiqiy ulanuvchi tomon o'rniga soxtalashtirilgan IP bo'yicha bucket'ga joylangan bo'lardi. Bu ayniqsa quyidagilar uchun muhim:
 

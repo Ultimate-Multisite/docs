@@ -4,11 +4,11 @@ title: Fyuluta - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Fyuluta: wu_country_get_cities
+# Fyuluta: wu_country_get_cities {#filter-wucountrygetcities}
 
 Imabweza mndandanda wa mizinda ya chigawo m'dziko.
 
-## Ma parameter
+## Ma parameter {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Imabweza mndandanda wa mizinda ya chigawo m'dziko.
 | $state_code | `string` | Khodi ya ISO ya zilembo ziwiri ya chigawo. |
 | $current_country | `\WP_Ultimo\Country\Country` | Chitsanzo cha kalasi yapano. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.11
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) pa mzere 146
 
 
-## Zobwezedwa
+## Zobwezedwa {#returns}
 Mndandanda wosefedwa wa zigawo.

@@ -4,11 +4,11 @@ title: Saringan - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filter: wu_rest_get_items
+# Filter: wu_rest_get_items {#filter-wurestgetitems}
 
 Bu filter'ın, isteğin devam edip edemeyeceğini kontrol etmesini sağlar.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Bu filter'ın, isteğin devam edip edemeyeceğini kontrol etmesini sağlar.
 | $rest_base | `array` | Varlık (entity) slug'ı. |
 | $this | `\Base_Manager` | Nesne örneği. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) dosyasında 336. satırda tanımlanmıştır.

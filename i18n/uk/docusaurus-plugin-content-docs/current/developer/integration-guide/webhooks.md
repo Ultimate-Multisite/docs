@@ -3,11 +3,11 @@ title: Обробка вебхуків
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Обробка Webhook
+# Обробка Webhook {#webhook-handling}
 
 Створіть власні кінцеві точки webhook, щоб отримувати події від зовнішніх сервісів та синхронізувати дані з Ultimate Multisite.
 
-## Власна кінцева точка Webhook
+## Власна кінцева точка Webhook {#custom-webhook-endpoint}
 
 ```php
 // Реєструємо кінцеву точку webhook
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Застереження щодо безпеки
+## Застереження щодо безпеки {#security-considerations}
 
 *   Завжди перевіряйте підписи webhook за допомогою HMAC або спільного секрету
 *   Використовуйте `permission_callback` для вашого REST route — ніколи не встановлюйте його на `__return_true` у production

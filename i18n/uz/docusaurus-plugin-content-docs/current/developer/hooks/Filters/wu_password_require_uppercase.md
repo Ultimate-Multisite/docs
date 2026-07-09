@@ -4,20 +4,20 @@ title: Filtr - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filtr: wu_password_require_uppercase
+# Filtr: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
 
 Parollarda katta harflar talab qilinish-qilinmasligini filtrlash.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
 | $require | `bool` | Katta harflarni talab qilish kerakmi. Qoidalar majburiy bo‘lganda standart qiymat true. |
 | $defender_active | `bool` | Defender Pro Strong Password faolmi. |
 
-### Dan boshlab
+### Dan boshlab {#since}
 
 - 2.4.0
-### Manba
+### Manba {#source}
 
 [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L553) faylida 553-qatorda aniqlangan.

@@ -3,7 +3,7 @@ title: Müştərilərlə İşləmək
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Müştərilərin İdarə Edilməsi
+# Müştərilərin İdarə Edilməsi {#managing-customers}
 
 **Customers** səhifəsi şəbəkənizdə qeydiyyatdan keçmiş üzvlərin siyahısını göstərir. Bu səhifə ad, e-poçt ünvanı, son daxil olma tarixi və istifadəçinin alt saytına sayt administratoru kimi daxil olmağa imkan verən bir **switch to** linki daxil olmaqla əsas istifadəçi məlumatlarını göstərir.
 

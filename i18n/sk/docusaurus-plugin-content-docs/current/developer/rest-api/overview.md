@@ -3,28 +3,28 @@ title: Prehľad REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referencia REST API
+# Referencia REST API {#rest-api-reference}
 
-## Základná konfigurácia
+## Základná konfigurácia {#base-configuration}
 
 **Základná URL:** `{site_url}/wp-json/wu/v2/`
 **Autentifikácia:** API kľúč a tajomstvo (HTTP Basic Auth alebo parametre URL)
 
-## Autentifikácia
+## Autentifikácia {#authentication}
 
-### Povoliť API
+### Povoliť API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Získať prihlasovacie údaje API
+### Získať prihlasovacie údaje API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metódy autentifikácie
+### Metódy autentifikácie {#authentication-methods}
 
 **HTTP Basic Auth (odporúčané):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Hlavné koncové body
+## Hlavné koncové body {#core-endpoints}
 
-### 1. API zákazníkov
+### 1. API zákazníkov {#1-customers-api}
 
 **Základná trasa:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API stránok
+### 2. API stránok {#2-sites-api}
 
 **Základná trasa:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API členstiev
+### 3. API členstiev {#3-memberships-api}
 
 **Základná trasa:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API produktov
+### 4. API produktov {#4-products-api}
 
 **Základná trasa:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API platieb
+### 5. API platieb {#5-payments-api}
 
 **Základná trasa:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API domén
+### 6. API domén {#6-domains-api}
 
 **Základná trasa:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registračný koncový bod
+## Registračný koncový bod {#registration-endpoint}
 
 Koncový bod `/register` poskytuje kompletný priebeh pokladne/registrácie:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Koncové body suverénneho tenanta
+## Koncové body suverénneho tenanta {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 pridáva REST pokrytie suverénneho tenanta pre integrácie, ktoré poskytujú, kontrolujú alebo overujú izolovaných tenantov.
 
@@ -242,7 +242,7 @@ Typické odpovede stavu migrácie zahŕňajú:
 
 Hodnotu `ready: false` považujte za blokátor pred spustením. Skontrolujte podrobnosti overenia, opravte väzbu databázového hostiteľa, front, poskytovanie používateľov alebo problém so smerovaním a potom overenie zopakujte.
 
-## Chybové odpovede
+## Chybové odpovede {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Hodnotu `ready: false` považujte za blokátor pred spustením. Skontrolujte pod
 }
 ```
 
-## Stránkovanie a filtrovanie
+## Stránkovanie a filtrovanie {#pagination-and-filtering}
 
 **Parametre dotazu:**
 ```http

@@ -3,11 +3,11 @@ title: Aftësitë e menaxhimit të shtojcave
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Aftësitë e Menaxhimit të Plugin
+# Aftësitë e Menaxhimit të Plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 vjen me **7 aftësi të menaxhimit të plugin** që asistenti AI mund t’i thërrasë gjatë një bisede. Këto aftësi ofrojnë kontroll programatik mbi plugin-et WordPress të instaluara përmes [Sistemit Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Përmbledhje e Aftësive
+## Përmbledhje e Aftësive {#abilities-overview}
 
 | Aftësia | Slug | Përshkrimi |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 vjen me **7 aftësi të menaxhimit të plugin** që asist
 | Instalo Plugin | `install_plugin` | Vendos një plugin të sandbox-uar në direktoriumin live të plugin-eve WordPress. |
 | Aktivizo Plugin | `activate_plugin` | Aktivizon një plugin të sandbox-uar në mjedisin sandbox wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Instaluesi i plugin-eve trajton operacionet e sistemit të skedarëve gjatë vendosjes ose heqjes së plugin-eve. Sjelljet kryesore:
 
@@ -28,7 +28,7 @@ Instaluesi i plugin-eve trajton operacionet e sistemit të skedarëve gjatë ven
 - **Përditësim**: Zëvendëson skedarët ekzistues të plugin-it. Çaktivizon plugin-in përpara shkrimit për të shmangur gabimet e gjendjes së pjesshme.
 - **Fshirje sipas slug**: Gjen direktoriumin e plugin-it sipas slug, e çaktivizon në të gjitha site-et, pastaj heq direktoriumin.
 
-### Regjistrimi i një Trajtuesi të Personalizuar Instalimi
+### Regjistrimi i një Trajtuesi të Personalizuar Instalimi {#registering-a-custom-install-handler}
 
 Mund të lidheni me ciklin jetësor të instalimit duke përdorur veprimet `gratis_ai_plugin_installer_before_install` dhe `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Regjistri i Ekosistemit
+## Regjistri i Ekosistemit {#ecosystem-registry}
 
 Aftësitë regjistrohen përmes **regjistrit të ekosistemit të plugin-eve**. Regjistri lidh slug-et e aftësive me klasat e tyre trajtuese dhe i ekspozon ato te shpërndarësi i mjeteve i AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integrimi me HookScanner
+## Integrimi me HookScanner {#hookscanner-integration}
 
 Aftësitë `create_plugin` dhe `update_plugin` ekzekutojnë automatikisht **HookScanner** mbi kodin e sapogjeneruar. HookScanner kthen një listë të hook-eve të veprimeve dhe filtrave WordPress të regjistruara nga plugin-i.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner anashkalon automatikisht direktoriumet `vendor/` dhe `node_modules/`.
 
-## Arkitektura e Punëve Async
+## Arkitektura e Punëve Async {#async-job-architecture}
 
 Operacionet e plugin-eve që zgjasin shumë (gjenerim, instalim) dërgohen si **punë async** me ndjekje të progresit në kohë reale. Ndërfaqja e chat-it AI kontrollon periodikisht progresin dhe transmeton përditësime statusi te përdoruesi:
 

@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite ist ein WordPress Multisite plugin, mit dem du Kunden ein WaaS oder Websites as a Service anbieten kannst. Bevor wir einsteigen und lernen, wie Ultimate Multisite deinem Unternehmen und deinen Kunden helfen kann, müssen wir uns einige Grundlagen aneignen.
 
-## Das WordPress Multisite
+## Das WordPress Multisite {#the-wordpress-multisite}
 
 Die meisten von uns sind mit der standardmäßigen WordPress-Installation vertraut. Du erstellst sie entweder über das Control Panel deines Hosting-Anbieters oder, für die Mutigen, richtest einen neuen Webserver und eine Datenbank ein, lädst die Core-Dateien herunter und beginnst mit dem Installationsprozess.
 
@@ -21,13 +21,13 @@ Im Wesentlichen kann man sich eine WordPress multisite so vorstellen: Eine Unive
 
 Um diese Aussage aufzuschlüsseln, sehen wir uns einige der grundlegenden Begriffe an, die nicht nur in der Dokumentation von Ultimate Multisite, sondern auch in der gesamten WordPress-Community vorkommen.
 
-### Das Network
+### Das Network {#the-network}
 
 Im Sinne von WordPress ist ein Multisite-Netzwerk der Ort, an dem eine Anzahl von Unterseiten über ein einzelnes Dashboard verwaltet werden kann. Obwohl sich das Erstellen eines Multisite-Netzwerks je nach Hosting-Anbieter unterscheidet, ist das Endergebnis in der Regel ein paar zusätzliche Direktiven in der Datei wp-config.php, damit WordPress weiß, dass es in diesem speziellen Modus betrieben wird.
 
 Es gibt eine Reihe deutlicher Unterschiede zwischen einem Multisite-Netzwerk und einer eigenständigen WordPress-Installation, die wir kurz besprechen werden.
 
-#### Subdomain vs. Unterverzeichnis
+#### Subdomain vs. Unterverzeichnis {#subdomain-vs-subdirectory}
 
 Eine der unmittelbarsten Entscheidungen, die du treffen musst, ist, ob die Multisite-Installation mit _Unterverzeichnissen_ oder _Subdomains_ betrieben wird. Ultimate Multisite funktioniert mit beiden Optionen gleichermaßen gut, aber es gibt einige architektonische Unterschiede zwischen den beiden Konfigurationen.
 
@@ -43,7 +43,7 @@ In der _Subdomain_-Konfiguration ist die Verwendung eines Wildcard-SSL-Zertifika
 
 Obwohl es andere Optionen gibt, sind diese oft in Umfang und Anwendung begrenzt und erfordern zusätzliche Konfiguration und Überlegungen hinsichtlich ihrer Eignung.
 
-#### Plugins und Themes
+#### Plugins und Themes {#plugins-and-themes}
 
 Was WordPress gibt, nimmt es auch wieder, zumindest aus der Perspektive des Kunden. In einer eigenständigen WordPress-Installation ist, wenn der Website-Administrator ein schlechtes Plugin installiert oder es versäumt, seine Installation aktuell zu halten, das einzige Opfer und der einzige Leidtragende dieser Handlung er selbst. Wenn jedoch ein Website-Administrator ein schlechtes Plugin in einer Multisite-Installation installiert, wird jede im Netzwerk installierte Website zum Opfer.
 
@@ -51,7 +51,7 @@ Aus diesem Grund entfernt WordPress, wenn es als Multisite konfiguriert ist, die
 
 In diesem Umfang ist der Netzwerkadministrator dafür verantwortlich, Plugins und Themes im Netzwerk zu installieren, und delegiert Berechtigungen zur Nutzung dieser Plugins und Themes an Netzwerk-Websites. Website-Administratoren können keine Plugins und Themes installieren oder auf Plugins und Themes zugreifen, die ihrer Website nicht zugewiesen sind.
 
-#### Benutzer und Administratoren
+#### Benutzer und Administratoren {#users-and-administrators}
 
 In einem WordPress Multisite teilen sich alle Netzwerk-Websites dieselbe Datenbank und daher dieselben Benutzer, Rollen und Berechtigungen. Am treffendsten kann man es sich so vorstellen, dass alle Benutzer Mitglieder des Netzwerks sind und nicht einer bestimmten Website.
 
@@ -63,13 +63,13 @@ Um die obige Aussage zu wiederholen: Obwohl die Benutzerkonten so erscheinen, al
 
 Obwohl dies in Unternehmenssystemen kein fremdes Konzept ist, ist diese zentrale Quelle für Benutzerregistrierung und Authentifizierung für Personen, die mit eigenständigen WordPress-Installationen vertraut sind, in denen die Benutzerverwaltung etwas einfacher ist, oft ein schwer verständliches Konzept.
 
-#### Medien
+#### Medien {#media}
 
 Wenn Netzwerk-Websites in einem WordPress Multisite eine einzelne Datenbank gemeinsam nutzen, behalten sie getrennte Pfade im Dateisystem für Mediendateien bei.
 
 Der Standard-Speicherort von WordPress (wp-content/uploads) bleibt bestehen; sein Pfad wird jedoch geändert, um die eindeutige ID der Netzwerk-Website widerzuspiegeln. Folglich erscheinen Mediendateien für eine Netzwerk-Website als wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Wir haben zuvor erwähnt, dass es deutliche Vorteile der _subdomain_- gegenüber der _subdirectory_-Konfiguration gibt, und hier ist einer davon: Pfade.
 
@@ -83,7 +83,7 @@ In einer _subdomain_-Konfiguration ist diese Maßnahme nicht notwendig, da jede 
 
 <!-- Screenshot nicht verfügbar: WordPress-Permalink-Einstellungen für Subdomain-Konfiguration -->
 
-#### Statische Seiten
+#### Statische Seiten {#static-pages}
 
 In der _subdirectory_-Konfiguration erstreckt sich das Potenzial für Namenskonflikte auf statische Seiten, da die Haupt-Website und die Netzwerk-Websites denselben Pfad gemeinsam nutzen.
 
@@ -93,7 +93,7 @@ Um dies zu verhindern, stellt WordPress eine Möglichkeit bereit, bestimmte Webs
 
 In der _subdomain_-Konfiguration wird die Möglichkeit von Namenskonflikten durch die _subdomain_ abgeschwächt, da sie für die Netzwerk-Website eindeutig ist und in keiner Weise mit der Haupt-Website verbunden ist.
 
-### Registrierung
+### Registrierung {#registration}
 
 Innerhalb der Netzwerkeinstellungen von WordPress Multisite stehen mehrere neue Optionen zur Benutzerregistrierung zur Verfügung, die es neuen und bestehenden Benutzern ermöglichen, Websites zu erstellen.
 
@@ -111,7 +111,7 @@ In diesem Sinne meldet sich ein Benutzer, wenn er sich anmeldet, beim Netzwerk a
 
 Wenn jedoch die beabsichtigte Art und der Zweck des Multisite darin bestünden, unterschiedliche Netzwerk-Websites anzubieten, die keine Beziehung zueinander haben, ist es fast immer der Fall, dass externe oder zusätzliche Erweiterungen erforderlich sind, um die Benutzerrollen zu manipulieren.
 
-### Domain und SSL
+### Domain und SSL {#domain-and-ssl}
 
 Sprechen wir über eine WordPress Multisite-Installation, die unserer Aufmerksamkeit fast entgeht – WordPress.com. Dies ist bei Weitem das umfangreichste Beispiel für ein WordPress Multisite und demonstriert dessen weitreichende Möglichkeiten, angepasst und geformt zu werden, um einen Zweck zu erfüllen.
 
@@ -125,11 +125,11 @@ Für Netzwerkadministratoren stellt dies eine zusätzliche Komplexitätsebene da
 
 In diesem Umfang bietet WordPress Multisite zwar eine Möglichkeit, [www.anotherdomain.com](http://www.anotherdomain.com) auf „site1“ abzubilden, der Netzwerkadministrator steht jedoch vor der Herausforderung, die DNS-Einträge und die Implementierung von SSL-Zertifikaten extern zu verwalten.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Nachdem die Unterschiede zwischen einer eigenständigen WordPress-Installation und einer Multisite-Installation verstanden sind, schauen wir uns an, wie Ultimate Multisite das ultimative Arsenal für die Bereitstellung von Websites as a Service ist.
 
-### Einführung
+### Einführung {#introduction}
 
 Ultimate Multisite ist dein Schweizer Taschenmesser, wenn es darum geht, eine Website as a Service (WaaS) zu erstellen. Denke an Wix.com, Squarespace, WordPress.com und dann daran, deinen eigenen Dienst zu besitzen.
 
@@ -137,9 +137,9 @@ Unter der Haube nutzt Ultimate Multisite WordPress Multisite, tut dies jedoch au
 
 In den folgenden Abschnitten werfen wir einen Blick auf einige häufige Anwendungsfälle und die Überlegungen, die erforderlich sind, um diese Fälle zu unterstützen.
 
-### Anwendungsfälle
+### Anwendungsfälle {#use-cases}
 
-#### Fall 1: Eine Agentur
+#### Fall 1: Eine Agentur {#case-1-an-agency}
 
 Typischerweise liegen die Kernkompetenzen einer Agentur im Design von Websites, wobei Aspekte wie deren Hosting oder Marketing als zusätzliche Dienstleistungen aufgeführt werden.
 
@@ -165,7 +165,7 @@ Themes bieten ähnliche Funktionalität und ermöglichen, dass bestimmte Themes 
 
 Agenturen werden mit Ultimate Multisite beruhigt sein, da es ihnen ermöglicht, das zu tun, was sie am besten können – außergewöhnliche Websites zu gestalten.
 
-#### Fall 2: Nischenanbieter
+#### Fall 2: Nischenanbieter {#case-2-niche-provider}
 
 Es gibt ein altes Sprichwort, das sagt: „Mach eine Sache und mach sie gut“. Für viele Spezialisten bedeutet dies, ein Produkt oder einen Dienst rund um eine einzelne Kernidee zu erstellen.
 
@@ -179,7 +179,7 @@ Für einen Anbieter von Nischen-Websites und -Diensten bietet dies einen beispie
 
 Je nach Anforderungen können sowohl _Unterverzeichnis_- als auch _Subdomain_-Konfigurationen geeignet sein; in diesem Fall lägen die Architekturentscheidungen zwischen einem einfachen SSL-Zertifikat für _Unterverzeichnisse_ oder einem Wildcard-SSL-Zertifikat für _Subdomains_.
 
-#### Fall 3: WordPress Webhosting
+#### Fall 3: WordPress Webhosting {#case-3-wordpress-web-hosting}
 
 Es gibt unzählige Möglichkeiten, WordPress-Websites zu hosten, aber selten ist es so einfach, einem Kunden Webspace mit einer vorinstallierten Version von WordPress bereitzustellen. Das liegt daran, dass eine Reihe von Entscheidungen und Überlegungen zusammenkommen müssen, um einen sinnvollen Dienst bereitzustellen.
 
@@ -191,11 +191,11 @@ Für Entwickler, die eine Integration mit Ultimate Multisite wünschen, bietet d
 
 Ohne Abhängigkeit von einer Vielzahl externer Plugins und Lizenzen bietet Ultimate Multisite eine funktionsreiche und vergleichbare Lösung zu Wix, Squarespace, WordPress.com und anderen.
 
-### Architekturüberlegungen
+### Architekturüberlegungen {#architecture-considerations}
 
 Auch wenn dies kein umfassender Leitfaden ist, sollen die folgenden Punkte als Orientierung für die richtige Auswahl von Technologien dienen, die eine Ultimate Multisite-Installation unterstützen.
 
-#### Shared vs. Dedicated Hosting
+#### Shared vs. Dedicated Hosting {#shared-vs-dedicated-hosting}
 
 Leider sind nicht alle Hosting-Anbieter gleich, und einige praktizieren extreme Serverdichten. Kostengünstige Anbieter erzielen in der Regel Einnahmen, indem sie die Serverdichte maximieren. Daher kann Ihre Ultimate Multisite-Installation nur eine von mehreren hundert Websites auf demselben Server sein.
 
@@ -209,7 +209,7 @@ Ultimate Multisite funktioniert nachweislich mit einer Reihe guter Hosting-Anbie
 
 Eine Liste kompatibler Anbieter und vollständige Einrichtungsanweisungen für jeden finden Sie in der Dokumentation der Compatible Providers.
 
-#### Leistungsüberlegungen
+#### Leistungsüberlegungen {#performance-considerations}
 
 Ultimate Multisite ist keine langsame Anwendung, vielmehr ist sie bemerkenswert schnell. Sie arbeitet jedoch nur so gut wie die zugrunde liegende Anwendung und Infrastruktur und kann nur das nutzen, worauf sie Zugriff hat.
 
@@ -227,7 +227,7 @@ Aus diesem Grund nutzen die meisten Netzwerkadministratoren Frontend-Caching-Lö
 
 Ultimate Multisite enthält ein ausgefeiltes Cloudflare-Add-on, das Netzwerkadministratoren ermöglicht, ihre Installationen hinter Cloudflare zu platzieren und nicht nur dessen Caching-Fähigkeiten, sondern auch DNS-Hosting, SSL-Zertifikate und Sicherheitsmechanismen zu nutzen.
 
-#### Backups
+#### Backups {#backups}
 
 Man könnte 50 Personen um Rat zu Backups bitten und 50 verschiedene Meinungen zu Backup-Strategien erhalten. Die Antwort lautet: Es kommt darauf an.
 
@@ -237,7 +237,7 @@ Für die Zwecke dieses Abschnitts einigen wir uns darauf, dass ein Backup eine Z
 
 Mit diesem Verständnis hängt die Antwort darauf, wie die Backups erreicht werden und was für Ihre Umgebung am besten ist, weitgehend von Ihren Anforderungen und der Fähigkeit des Hosting-Anbieters ab, diese Anforderungen zu erfüllen. Die folgenden Optionen sollten jedoch, in der Reihenfolge von am stärksten meinungsbehaftet bis am wenigsten meinungsbehaftet, etwas Orientierung bieten.
 
-#### Snapshots
+#### Snapshots {#snapshots}
 
 Snapshots sind die Wunderwaffe für Backups, weil sie einfach, unkompliziert (bis Sie wiederherstellen möchten) sind und „einfach funktionieren“. Dafür ist allerdings etwas Unterstützung von Ihrem Anbieter erforderlich, und es gilt meist nur, wenn Sie einen VPS (Virtual Private Server) oder Ähnliches haben. Mehrere Anbieter, die in unserer Dokumentation „Compatible Providers“ aufgeführt sind, bieten Backups an, die kein weiteres Eingreifen oder Nachdenken durch den Netzwerkadministrator erfordern.
 
@@ -245,7 +245,7 @@ Während traditionelle Backups auf Dateien und Datenbanken abzielen, zielt ein S
 
 Snapshots können beim Hosting-Anbieter zusätzliche Kosten verursachen, aber sie sind eine Versicherung gegen Unfälle.
 
-#### Externe Skripte
+#### Externe Skripte {#external-scripts}
 
 Es scheint keinen Mangel an externen Skripten und Lösungen zu geben, um WordPress- und MySQL-Ressourcen zu sichern, und diese würden gut für Ultimate Multisite funktionieren, da es ein WordPress-Plugin ist, das das WordPress-Dateisystem und die Datenbank nutzt. Daher würde eine Lösung, die WordPress-Websites sichert, die Anforderungen von Ultimate Multisite angemessen abdecken.
 
@@ -253,7 +253,7 @@ Wir können kein bestimmtes Skript gegenüber einem anderen empfehlen, aber unse
 
 Es sollte beachtet werden, dass diese Skripte während der Ausführung die Systemlast erhöhen, was berücksichtigt werden sollte.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Es gibt in WordPress fast kein Problem, das nicht mit einem Plugin gelöst werden kann, und wenn das Verwalten externer Skripte nicht Ihr Ding ist, dann ist vielleicht ein Plugin die nächstbeste Option.
 
@@ -261,7 +261,7 @@ Obwohl sich Plugins in Optionen und Funktionen unterscheiden, erfüllen sie meis
 
 Achten Sie bei der Auswahl Ihres Plugins darauf, zu überprüfen, dass es multisite-fähig ist. Aufgrund seiner Funktionsweise können Sie während der laufenden Sicherung mit einer vorübergehenden Last auf dem Server rechnen, bis der Prozess abgeschlossen ist.
 
-#### Domain und SSL
+#### Domain und SSL {#domain-and-ssl-1}
 
 Über Domainnamen im multisite-_subdomain_-Modus wurde bereits viel diskutiert. Eine nahezu universelle Lösung für Netzwerkadministratoren ist die Verwendung von Wildcard-DNS-Einträgen.
 
@@ -285,7 +285,7 @@ Für viele ist die Verwendung von Cloudflare eine einfache Option. Der Kunde mus
 
 Darüber hinaus müssen alternative Lösungen gesucht werden, weshalb Ultimate Multisite eine Liste kompatibler Anbieter empfiehlt. Das liegt daran, dass der Prozess der Einrichtung von DNS und SSL ein nicht trivialer Prozess sein kann. Mit der Integration von Ultimate Multisite in diese Anbieter wird die Komplexität jedoch weitgehend beseitigt und das Verfahren automatisiert.
 
-#### Plugins
+#### Plugins {#plugins-1}
 
 Es ist sehr wahrscheinlich, dass Sie zusätzliche Plugins benötigen, um Ihren Kunden oder Netzwerk-Websites Funktionalität bereitzustellen. Funktionieren alle Plugins mit WordPress Multisite und Ultimate Multisite? Nun, es kommt darauf an.
 

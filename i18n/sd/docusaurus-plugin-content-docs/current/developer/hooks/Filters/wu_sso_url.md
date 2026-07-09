@@ -4,13 +4,13 @@ title: فلٽر - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url
+# Filter: wu_sso_url {#filter-wussourl}
 
 ڪراس-ڊومين گراهڪ عملن لاءِ واپس ڪرڻ کان اڳ ٺاهيل SSO URLs کي فلٽر ڪري ٿو.
 
 هي فلٽر استعمال ڪريو جڏهن ڪنهن integration کي خودمختيار-tenant SSO link ۾ ڀروسي جوڳو context شامل ڪرڻو هجي يا broker URL کي بدلائڻو هجي، جڏهن ته Ultimate Multisite جي token validation کي برقرار رکيو وڃي.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -19,15 +19,15 @@ _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 | $site_id | `int` | visit لاءِ هدف site ID. |
 | $redirect_to | `string` | ڪامياب SSO validation کان پوءِ منزل URL. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.13.0
 
-### ذريعو
+### ذريعو {#source}
 
 `inc/sso/class-sso.php` ۾ بيان ٿيل.
 
 
-## واپسيون
+## واپسيون {#returns}
 
 فلٽر ٿيل SSO URL.

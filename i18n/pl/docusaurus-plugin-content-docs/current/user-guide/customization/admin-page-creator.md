@@ -3,7 +3,7 @@ title: Admin Page Creator
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Kreator stron administracyjnych
+# Kreator stron administracyjnych {#admin-page-creator}
 
 Ta funkcja jest dostępna dzięki dodatkowi **Admin Page Creator**.
 

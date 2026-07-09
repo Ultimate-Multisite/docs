@@ -3,15 +3,15 @@ title: Torolàlana momba ny fampiasana Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Torolalana Fampiasana Hooks
+# Torolalana Fampiasana Hooks {#hooks-usage-guide}
 
 Ultimate Multisite dia manome action hooks 200+ sy filter hooks 280+. Ity pejy ity dia mandrakotra ireo hooks ampiasaina matetika indrindra miaraka amin’ny ohatra azo ampiharina. Ho an’ny fanovozan-kevitra feno novokarina ho azy, tsidiho ireo pejy hafa ato amin’ity fizarana ity.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Tsingerin’ain’ny Mpanjifa
+### Tsingerin’ain’ny Mpanjifa {#customer-lifecycle}
 
-#### Aorian’ny Famoronana Mpanjifa
+#### Aorian’ny Famoronana Mpanjifa {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Fiovan’ny Satan’ny Mpanjifa
+#### Fiovan’ny Satan’ny Mpanjifa {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooks an’ny Tranonkala
+### Hooks an’ny Tranonkala {#site-hooks}
 
-#### Aorian’ny Namoahana ny Tranonkala
+#### Aorian’ny Namoahana ny Tranonkala {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Alohan’ny Fampiharana ny Template
+#### Alohan’ny Fampiharana ny Template {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership Hooks
+### Membership Hooks {#membership-hooks}
 
-#### Fifindran’ny Sata
+#### Fifindran’ny Sata {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Payment Hooks
+### Payment Hooks {#payment-hooks}
 
-#### Payment Vita / Tsy Nahomby
+#### Payment Vita / Tsy Nahomby {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### Alohan’ny Fanodinana / Aorian’ny Fahavitana
+#### Alohan’ny Fanodinana / Aorian’ny Fahavitana {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain Hooks
+### Domain Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Sivana momba ny Pricing
+### Sivana momba ny Pricing {#pricing-filters}
 
-#### Totalin’ny Cart
+#### Totalin’ny Cart {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Tax Rates
+#### Tax Rates {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Sivana Template
+### Sivana Template {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Sivana Limitation
+### Sivana Limitation {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Sivana Gateway
+### Sivana Gateway {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Sahan’ny Checkout Form
+### Sahan’ny Checkout Form {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Votoatin’ny Email
+### Votoatin’ny Email {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

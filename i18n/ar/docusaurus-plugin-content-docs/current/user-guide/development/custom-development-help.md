@@ -3,13 +3,13 @@ title: مساعدة في التطوير المخصص
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# كيف تحصل على مساعدة تطوير مخصص من Codeable؟
+# كيف تحصل على مساعدة تطوير مخصص من Codeable؟ {#how-to-get-custom-development-help-from-codeable}
 
 أحيانًا، نحتاج حقًا إلى تخصيص رائع لجعل تدفقات شبكتنا بالضبط كما نريد. إذا كان هذا ما تبحث عنه، نوصي بـ [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)، وهو مكان يمكنك فيه العثور على مطورين ذوي خبرة في Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) هو منصة تربط العملاء بمطورين مستقلين مؤهلين في WordPress، قادرين على العمل على مشاريع بأي حجم. لديهم عملية طلب دقيقة لضمان مطابقتك مع خبراء مؤهلين خصيصًا للمهمة التي تفكر فيها.
 
-### كيف تنشئ مشروعًا في Codeable؟
+### كيف تنشئ مشروعًا في Codeable؟ {#how-to-create-a-project-in-codeable}
 
 أولاً، اذهب إلى [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) وانقر على زر **Start a Project**.
 

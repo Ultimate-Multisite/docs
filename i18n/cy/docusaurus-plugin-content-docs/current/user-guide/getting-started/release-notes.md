@@ -3,9 +3,9 @@ title: Cyflwyniadau
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Cyflwyniadau y Cyfathrebu (Release Notes)
+# Cyflwyniadau y Cyfathrebu (Release Notes) {#release-notes}
 
-## Versi 2.13.0 — Cyflenwyd ar 2026-06-05
+## Versi 2.13.0 — Cyflenwyd ar 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 New: Ychwanu chymorthol (sovereign-tenant support) wedi cael ei ddefnyddio ar gyfer cyfathrebu cyflwyniadau (customer account), checynau (checkout), cyfrifau (billing), safle (site), ffurfiadau (invoice), newid templateau (template switching), a mapiad o domenaid (domain mapping) felly gall y rhwydweithiau tenantau rhoi'r cyddeeion yn ôl i'r safle cyflym ar gyfer gweithgareddau cael eu rheoli.
 New: Ychwanu gwylio cyfrifau atal (renewal-credential checks) ar gyfer cyflwyniadau allan (recurring memberships) felly gall y gateways neidio'r cyfathrebu autogynol pan nid oes gennych ei ddefnyddio cytuned cyfrifau wedi'i cadw, cyfleuster (subscription), neu token vault.
@@ -18,7 +18,7 @@ Fix: Mae e-bostau cyflwyniadol yn gwarchod y cyfathrebuon gyda'i ddefnyddwyr yn 
 Fix: Mae newidiadau allan (membership renewals), dangos y cyflym, a chyfyngedig o chymryd peidiad yn dod i'r ddeall o ddifyniadau yn dod i'r ddefnyddio yn gyflym, crwthau, neu peidiadau cyffredig sydd ei angen.
 Improved: Mae cyfathrebu WordPress wedi'i gwarchod hi i 7.0, mae asetau Vue o proddection wedi'u guberdio erredig o npm sources, ac mae cyflawni Cypress end-to-end yn chwarae mwy o ffordd checyn, setffroi (setup), SSO, a gateways.
 
-## Versi 2.12.0 — Rheoli ar gyferol ar 15-mawr 2026
+## Versi 2.12.0 — Rheoli ar gyferol ar 15-mawr 2026 {#version-2120--released-on-2026-05-15}
 
 - New: Ychwanegwyd Hostinger (hPanel) fel ychwanegur gweithredol gyda chymryd mappu domenaid
 - New: Mae Site Exporter yn gwneud cyfathrebu bundleau import cyd-llwybrion ar gyfer rhannu site'n cael ei ddatblygu'n llwyr i ddatblygu site'n cael ei ddatblygu'n llwyr
@@ -26,7 +26,7 @@ Improved: Mae cyfathrebu WordPress wedi'i gwarchod hi i 7.0, mae asetau Vue o pr
 - Fix: Nid yw dyddiadau deallt y cyfrifol yn cael eu cael eu ddatblygu pan mae'n cael eu cadw gyda gwerthau nid-dyddiadol
 - Fix: Mae cyfathrebu chwarae Stripe bellach yn gwneud ei ddatblygu'r cyd-llwybrion yn llwyr heb galw API deleteDiscount a ddifroddwyd
 
-## Versi 2.11.0 — Rheoli ar gyferol ar 11-mawr 2026
+## Versi 2.11.0 — Rheoli ar gyferol ar 11-mawr 2026 {#version-2110--released-on-2026-05-11}
 
 - New: Mae site exports yn cyfathrebu `index.php` sy'n cael ei ddatblygu yn autogynnu felly gallai'r ZIP cael ei ddatblygu ar host newydd heb ychwanegur plugin arall
 - New: Mae export cyd-llwybrion yn sylw i'r gynllunwyr eu allu ddatblygu pob site yn un archiw o'r llyfrgell Site Export admin page
@@ -34,7 +34,7 @@ Improved: Mae cyfathrebu WordPress wedi'i gwarchod hi i 7.0, mae asetau Vue o pr
 - New: Mae'r redytwr ffurf checkout yn dangos pan mae gennych chi wedi ychwanegu produs yn cael ei ddatblygu heb ffurf cyflwrdd sydd yn angen
 - New: Mae'r tab setegau Import/Export yn disgrifio'r cyfathrebu ei gyfoethau'n llwyr ac mae'n cysylltu'n dirir i'r tool Site Export
 
-## Versi 2.10.0 — Rheoli ar gyferol ar 5-mawr 2026
+## Versi 2.10.0 — Rheoli ar gyferol ar 5-mawr 2026 {#version-2100--released-on-2026-05-05}
 
 - New: Gweithro cyfarwyddyd PayPal ar gyfer cyflwyniad manwl gyda flag OAuth i sicrhau cyfathrebu gwylio sy'n ddefnyddio'r gateway yn llwyr.
 - New: Mae panel cyddeeau (customer panel) wedi'i redysain gyda chard y **current-template**, grid perwilio, a bot **Reset current template**.
@@ -47,7 +47,7 @@ Improved: Mae cyfathrebu WordPress wedi'i gwarchod hi i 7.0, mae asetau Vue o pr
 - Fix: Mae'r llwybr SSO wedi'i chynllunio arall dros pob llwybr cyflwyniad.
 - Fix: Mae opsiynau site gwblan wedi'u cadw ar gyfer cadw.
 
-## Versi 2.9.0 — Cyflwynwyd ar gyfer 30-04-2026
+## Versi 2.9.0 — Cyflwynwyd ar gyfer 30-04-2026 {#version-290--released-on-2026-04-30}
 
 - New: Mae ddefnyddio single-site export a import wedi'i ychwanegu o dan **Tools > Export & Import**.
 - Fix: Mae fyliau ZIP wedi'u serbu trwy ffenydd cadw wedi'i gyflwyno.
@@ -61,7 +61,7 @@ Improved: Mae cyfathrebu WordPress wedi'i gwarchod hi i 7.0, mae asetau Vue o pr
 - Fix: Mae Tour IDs wedi'u chynllunio i underscores mewn cyfrifau setegau user.
 - Improved: Mae ZipArchive wedi'i ddefnyddio yn lle Alchemy/Zippy ar gyfer cyfathrebu gwellter.
 
-## Versi 2.8.0 — Cyflwynwyd ar gyfer 29-04-2026
+## Versi 2.8.0 — Cyflwynwyd ar gyfer 29-04-2026 {#version-280--released-on-2026-04-29}
 
 New: Mae'n: Mae'r toggol Jumper wedi cael ei chynllunio yn y cyfathrebu Oesoedd (Other Options) UI.
 New: Mae'n: Mae'r collinell Statws wedi cael ei ddefnyddio ar gyfer y llyfrgell ffurfau checyniad (checkout forms list table).

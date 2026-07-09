@@ -3,15 +3,15 @@ title: 'Mësimi 11: Gjetja e klientëve'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Mësimi 11: Gjetja e klientëve
+# Mësimi 11: Gjetja e klientëve {#lesson-11-finding-customers}
 
 Një platformë e shkëlqyer pa klientë është thjesht një hobi. Ky mësim trajton si të fitoni klientë në një vertikale të specializuar -- strategji që funksionojnë posaçërisht sepse jeni të fokusuar në një industri.
 
-## Ku e lamë
+## Ku e lamë {#where-we-left-off}
 
 FitSite është live. Tani na duhet që pronarët e studiove fitness ta gjejnë dhe të regjistrohen.
 
-## Pse përvetësimi në një niche është ndryshe
+## Pse përvetësimi në një niche është ndryshe {#why-niche-acquisition-is-different}
 
 Kur u shisni të gjithëve, konkurroni për vëmendje në një treg të zhurmshëm. Kur i shisni një niche-i, keni avantazhe:
 
@@ -19,17 +19,17 @@ Kur u shisni të gjithëve, konkurroni për vëmendje në një treg të zhurmsh�
 - **Mesazhi juaj rezonon menjëherë** -- "website për studio fitness" e ndalon një pronar palestre në mes të shfletimit
 - **Referimet shumëfishohen** -- pronarët e studiove fitness njohin pronarë të tjerë studiosh fitness
 
-## Kanali 1: Kontaktimi i drejtpërdrejtë
+## Kanali 1: Kontaktimi i drejtpërdrejtë {#channel-1-direct-outreach}
 
 Rruga më e shpejtë drejt klientëve tuaj të parë është kontaktimi i drejtpërdrejtë dhe personal.
 
-### Gjeni prospekte
+### Gjeni prospekte {#find-prospects}
 
 - Kërkoni në Google Maps për studio fitness, palestra dhe trajnerë personalë në zonën tuaj
 - Vizitoni website-et e tyre aktuale (ose vini re që nuk kanë një të tillë)
 - Mblidhni informacion kontakti nga profilet e tyre Google Business ose mediat sociale
 
-### Vlerësoni situatën e tyre aktuale
+### Vlerësoni situatën e tyre aktuale {#evaluate-their-current-situation}
 
 Për çdo prospekt, shënoni:
 
@@ -37,7 +37,7 @@ Për çdo prospekt, shënoni:
 - **Website i dobët**: Prospekt i fortë -- tregojuni si duket një opsion më i mirë
 - **Website i mirë**: Prospekt i dobët -- ata tashmë e kanë zgjidhur këtë problem
 
-### Kontaktoni
+### Kontaktoni {#make-contact}
 
 Dërgoni një email ose mesazh të personalizuar:
 
@@ -48,7 +48,7 @@ Dërgoni një email ose mesazh të personalizuar:
 
 Mos dërgoni email-e masive. Kontaktimi i personalizuar i 20 prospekteve të hulumtuara mirë do të performojë më mirë se një shpërthim gjenerik drejt 2,000 personave.
 
-## Kanali 2: Komunitetet niche
+## Kanali 2: Komunitetet niche {#channel-2-niche-communities}
 
 Pronarët e studiove fitness mblidhen në vende specifike online:
 
@@ -57,7 +57,7 @@ Pronarët e studiove fitness mblidhen në vende specifike online:
 - **Forumet e industrisë** dhe tabelat e diskutimit
 - **Grupet LinkedIn** për profesionistë fitness
 
-### Si të merrni pjesë
+### Si të merrni pjesë {#how-to-participate}
 
 Mos u bashkoni dhe të prezantoni menjëherë produktin tuaj. Në vend të kësaj:
 
@@ -66,7 +66,7 @@ Mos u bashkoni dhe të prezantoni menjëherë produktin tuaj. Në vend të kësa
 3. **Ndani kur është relevante** -- kur dikush pyet për website-e, ndajeni platformën tuaj natyrshëm
 4. **Krijoni përmbajtje të dobishme** -- shkruani postime rreth "çfarë e bën të shkëlqyer një website studioje fitness" që çojnë natyrshëm te platforma juaj
 
-## Kanali 3: Marketingu i përmbajtjes
+## Kanali 3: Marketingu i përmbajtjes {#channel-3-content-marketing}
 
 Krijoni përmbajtje që pronarët e studiove fitness kërkojnë:
 
@@ -77,7 +77,7 @@ Krijoni përmbajtje që pronarët e studiove fitness kërkojnë:
 
 Publikojeni këtë në blogun e marketingut të FitSite. Me kalimin e kohës, kjo përmbajtje renditet në motorët e kërkimit dhe sjell trafik organik nga njerëz që kërkojnë aktivisht atë që ofroni.
 
-## Kanali 4: Partneritetet
+## Kanali 4: Partneritetet {#channel-4-partnerships}
 
 Bëhuni partnerë me biznese që tashmë u shërbejnë studiove fitness:
 
@@ -88,7 +88,7 @@ Bëhuni partnerë me biznese që tashmë u shërbejnë studiove fitness:
 
 Ofroni komisione referimi ose promovim të ndërsjellë. [AffiliateWP addon](/addons/affiliatewp) mund t'ju ndihmojë të ngrini një program formal referimesh.
 
-## Kanali 5: Evente të industrisë
+## Kanali 5: Evente të industrisë {#channel-5-industry-events}
 
 Eventet e industrisë fitness ju vendosin përpara qindra klientëve potencialë:
 
@@ -99,7 +99,7 @@ Eventet e industrisë fitness ju vendosin përpara qindra klientëve potencialë
 
 Nuk ju duhet një buxhet i madh. Edhe pjesëmarrja si pjesëmarrës dhe bisedat rreth asaj që bëni mund të gjenerojnë lead-e.
 
-## Kanali 6: Site prezantuese
+## Kanali 6: Site prezantuese {#channel-6-showcase-sites}
 
 Marketingu juaj më i mirë janë site-t e klientëve tuaj ekzistues. Me leje:
 
@@ -108,7 +108,7 @@ Marketingu juaj më i mirë janë site-t e klientëve tuaj ekzistues. Me leje:
 - Kërkojuni klientëve të kënaqur dëshmi
 - Inkurajoni klientët të përmendin FitSite kur pyeten për website-in e tyre
 
-## Ngritja e një programi referimi
+## Ngritja e një programi referimi {#setting-up-a-referral-program}
 
 Rekomandimi gojë më gojë është kanali juaj më i fuqishëm në një niche. Formalizojeni:
 
@@ -116,7 +116,7 @@ Rekomandimi gojë më gojë është kanali juaj më i fuqishëm në një niche. 
 2. Ofroni klientëve ekzistues një shpërblim për referime (një muaj falas, kredit në llogari, etj.)
 3. Bëjeni të lehtë -- jepuni një lidhje referimi dhe një mesazh të thjeshtë që mund ta përcjellin
 
-## Gjurmimi i asaj që funksionon
+## Gjurmimi i asaj që funksionon {#tracking-what-works}
 
 Për çdo kanal, gjurmoni:
 
@@ -126,7 +126,7 @@ Për çdo kanal, gjurmoni:
 
 Dyfishoni përpjekjet në kanalet që funksionojnë. Ndërpritni kanalet që nuk funksionojnë.
 
-## Pritshmëri realiste
+## Pritshmëri realiste {#realistic-expectations}
 
 - **Muaji 1-3**: 5-20 klientë, kryesisht nga kontaktimi i drejtpërdrejtë dhe komunitetet
 - **Muaji 4-6**: 20-50 klientë, marketingu i përmbajtjes fillon të kontribuojë
@@ -134,7 +134,7 @@ Dyfishoni përpjekjet në kanalet që funksionojnë. Ndërpritni kanalet që nuk
 
 Këta numra ndryshojnë, por modeli është i qëndrueshëm: klientët e hershëm vijnë nga përpjekja e drejtpërdrejtë, klientët e mëvonshëm vijnë nga efektet shumëfishuese të përmbajtjes, referimeve dhe reputacionit.
 
-## Çfarë ndërtuam në këtë mësim
+## Çfarë ndërtuam në këtë mësim {#what-we-built-this-lesson}
 
 - **Gjashtë kanale blerjeje** të përshtatura për nishin e fitnesit
 - **Një proces kontakti të drejtpërdrejtë** për të siguruar klientët e parë

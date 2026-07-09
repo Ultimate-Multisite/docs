@@ -3,11 +3,11 @@ title: ข้อมูลอ้างอิง Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# ข้อมูลอ้างอิง Hooks
+# ข้อมูลอ้างอิง Hooks {#hooks-reference}
 
 เอกสารที่สร้างโดยอัตโนมัติสำหรับ **59 แอ็กชัน** และ **118 ฟิลเตอร์** ทั้งหมดใน Ultimate Multisite
 
-## แอ็กชัน
+## แอ็กชัน {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — ทำงานก่อนการเปลี่ยนเส้นทางการยืนยันตัวตน
 - [set_auth_cookie](./Actions/set_auth_cookie) — ทำงานทันทีก่อนตั้งค่าคุกกี้การยืนยันตัวตน
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ทำงานหลังจากอ็อบเจกต์ถูกจัดเก็บลงในฐานข้อมูล
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — อนุญาตให้นักพัฒนา plugin เพิ่มการทำงานในกระบวนการปลดล็อกได้
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — กรองระยะเวลาของช่วงหมดอายุคุกกี้การยืนยันตัวตน
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — กรองรูปแบบการเปลี่ยนเส้นทางการยืนยันตัวตน

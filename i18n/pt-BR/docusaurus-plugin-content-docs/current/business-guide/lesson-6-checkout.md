@@ -3,15 +3,15 @@ title: 'Lição 6: A Experiência de Cadastro'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lição 6: A Experiência de Cadastro
+# Lição 6: A Experiência de Cadastro {#lesson-6-the-signup-experience}
 
 O fluxo de checkout é onde o interesse se transforma em receita. Um processo de cadastro confuso ou genérico faz com que os clientes desistam. Um fluxo específico para o nicho, que fale a língua deles e pareça natural, os converte.
 
-## Onde Paramos
+## Onde Paramos {#where-we-left-off}
 
 O FitSite já tem os templates e planos configurados. Agora vamos construir a experiência de cadastro e checkout que transforma donos de estúdios de fitness em clientes pagantes.
 
-## Entendendo o Fluxo de Cadastro
+## Entendendo o Fluxo de Cadastro {#understanding-the-registration-flow}
 
 Os formulários de checkout do Ultimate Multisite são formulários de múltiplas etapas totalmente personalizáveis. Para o FitSite, queremos um fluxo que:
 
@@ -21,11 +21,11 @@ Os formulários de checkout do Ultimate Multisite são formulários de múltipla
 
 Veja [O Fluxo de Cadastro](/user-guide/configuration/the-registration-flow) para a referência técnica completa.
 
-## Projetando o Checkout do FitSite
+## Projetando o Checkout do FitSite {#designing-the-fitsite-checkout}
 
 Navegue até **Ultimate Multisite > Checkout Forms** e crie um novo formulário.
 
-### Passo 1: Seleção de Plano
+### Passo 1: Seleção de Plano {#step-1-plan-selection}
 
 A primeira coisa que um dono de estúdio de fitness deve ver são os planos, apresentados em termos que ele entenda.
 
@@ -37,7 +37,7 @@ A primeira coisa que um dono de estúdio de fitness deve ver são os planos, apr
 "1 GB de armazenamento" não significa nada para um dono de academia. "Tudo o que você precisa para um site profissional de estúdio" significa tudo. Escreva as descrições dos planos na linguagem do seu cliente.
 :::
 
-### Passo 2: Seleção de Template
+### Passo 2: Seleção de Template {#step-2-template-selection}
 
 Depois de escolher um plano, o cliente escolhe o template inicial.
 
@@ -45,7 +45,7 @@ Depois de escolher um plano, o cliente escolhe o template inicial.
 - Os templates disponíveis são filtrados pelo plano que ele selecionou (configurado na Lição 5)
 - Cada template deve ter uma imagem de pré-visualização mostrando um design específico para fitness
 
-### Passo 3: Criação de Conta
+### Passo 3: Criação de Conta {#step-3-account-creation}
 
 Mantenha isso o mais simples possível. Colete apenas:
 
@@ -55,27 +55,27 @@ Mantenha isso o mais simples possível. Colete apenas:
 
 Não peça informações que você não precisa no cadastro. Cada campo extra diminui as conversões.
 
-### Passo 4: Configuração do Site
+### Passo 4: Configuração do Site {#step-4-site-setup}
 
 - **Site title**: Preencha automaticamente com o nome do estúdio inserido no Passo 3
 - **Site URL**: Gere automaticamente a partir do nome do estúdio (ex: `ironworks.fitsite.com`)
 
-### Passo 5: Pagamento
+### Passo 5: Pagamento {#step-5-payment}
 
 - Adicione o campo **Payment** (Pagamento)
 - Configure seu gateway de pagamento ([Stripe](/user-guide/payment-gateways/stripe) é recomendado para cobrança por assinatura)
 - Se você criou *order bumps* na Lição 5, adicione um campo **Order Bump** antes do passo de pagamento
 
-### Passo 6: Confirmação
+### Passo 6: Confirmação {#step-6-confirmation}
 
 - Personalize a mensagem de confirmação com linguagem específica para fitness
 - Exemplo: "O site do seu estúdio de fitness está sendo criado. Você será redirecionado para o seu novo site em alguns segundos."
 
-## Adicionando um Seletor de Período
+## Adicionando um Seletor de Período {#adding-a-period-selection-toggle}
 
 Se você configurou variações de preço em seus planos (mensal vs. anual), adicione um campo **Period Selection** (Seleção de Período) ao formulário de checkout para que os clientes possam alternar entre os períodos de cobrança. Veja [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) para as instruções.
 
-## Configurando o Pagamento
+## Configurando o Pagamento {#configuring-payment}
 
 Se você ainda não configurou um gateway de pagamento:
 
@@ -85,7 +85,7 @@ Se você ainda não configurou um gateway de pagamento:
 
 Veja [Getting Paid](/user-guide/payment-gateways/getting-paid) para detalhes sobre como os pagamentos chegam à sua conta.
 
-## Testando o Fluxo
+## Testando o Fluxo {#testing-the-flow}
 
 Antes de avançar, complete um teste de cadastro completo:
 
@@ -105,7 +105,7 @@ Verifique se:
 - [ ] O cliente é direcionado para um site funcional com o template selecionado
 - [ ] Os e-mails de confirmação usam linguagem específica para fitness
 
-## A Rede FitSite Até Agora
+## A Rede FitSite Até Agora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## O Que Construímos Nesta Lição
+## O Que Construímos Nesta Lição {#what-we-built-this-lesson}
 
 - **Um formulário de checkout de múltiplas etapas** adaptado para donos de estúdios de fitness
 - **Linguagem específica para o nicho** em todo o fluxo de cadastro

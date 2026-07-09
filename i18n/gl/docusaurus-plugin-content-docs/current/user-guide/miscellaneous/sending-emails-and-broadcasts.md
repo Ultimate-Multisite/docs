@@ -3,13 +3,13 @@ title: Envío de correos electrónicos e difusións
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviar correos electrónicos e difusións (v2)
+# Enviar correos electrónicos e difusións (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTA IMPORTANTE: Este artigo refírese á versión 2.x de Ultimate Multisite.**_
 
 Ultimate Multisite inclúe unha funcionalidade que che permitirá comunicarte cos teus clientes enviando un correo electrónico a un usuario obxectivo ou a un grupo de usuarios, así como enviar avisos no seu Dashboard de administración para difundir anuncios
 
-## Engadir avisos de administración ao Dashboard dos teus clientes con difusións
+## Engadir avisos de administración ao Dashboard dos teus clientes con difusións {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Usando a funcionalidade de difusión de Ultimate Multisite, podes engadir **avisos de administración** ao Dashboard de administración do subsitio do teu usuario.
 
@@ -51,7 +51,7 @@ Despois de crear a túa mensaxe, podes premer o botón **Enviar**.
 
 E iso é todo. O aviso de administración debería mostrarse inmediatamente no Dashboard do teu usuario.
 
-## Enviar correos electrónicos aos teus clientes
+## Enviar correos electrónicos aos teus clientes {#send-emails-to-your-customers}
 
 Usando a funcionalidade de difusión de Ultimate Multisite, podes enviar un correo electrónico aos teus usuarios. Tes a opción de enviar o correo electrónico só a usuarios específicos ou dirixilo a un grupo de usuarios específico segundo o produto ou plan ao que estean subscritos.
 
@@ -81,11 +81,11 @@ Despois de crear a túa mensaxe, podes premer o botón **Enviar**.
 
 E así de doado é enviar un correo electrónico aos teus usuarios finais usando a funcionalidade de difusión.
 
-## Correos electrónicos do sistema
+## Correos electrónicos do sistema {#system-emails}
 
 Os correos electrónicos do sistema en Ultimate Multisite son aquelas **notificacións automáticas** enviadas polo sistema despois de certas accións como rexistro, pagamento, mapeamento de dominio, etc. Estes correos electrónicos pódense editar ou modificar desde a configuración de Ultimate Multisite. Tamén inclúe unha funcionalidade que che permitirá restablecer e importar configuracións existentes desde outra instalación de Ultimate Multisite.
 
-### Restablecemento e importación
+### Restablecemento e importación {#resetting--importing}
 
 As novas versións de Ultimate Multisite, así como os complementos, poden rexistrar e rexistrarán novos correos electrónicos de cando en vez.
 
@@ -93,7 +93,7 @@ Para evitar conflitos e outros problemas, **non engadiremos automaticamente os n
 
 Porén, os superadministradores e axentes poden importar estes correos electrónicos recentemente rexistrados mediante a ferramenta de importación. Ese proceso creará un novo correo electrónico do sistema co contido e a configuración do novo modelo de correo electrónico, permitindo ao superadministrador facer as modificacións que queira ou mantelo tal como está.
 
-#### Como importar correos electrónicos do sistema
+#### Como importar correos electrónicos do sistema {#how-to-import-system-emails}
 
 Vai á túa páxina de configuración de Ultimate Multisite e diríxete á lapela **Correos electrónicos**.
 
@@ -111,7 +111,7 @@ Despois, podes alternar as opcións de Importar correos electrónicos para ver q
 
 <!-- Captura de pantalla non dispoñible: modal Reset and Import coas opcións de Import Emails expandidas -->
 
-#### Restablecemento dos correos electrónicos do sistema
+#### Restablecemento dos correos electrónicos do sistema {#reseting-system-emails}
 
 Outras veces, decataraste de que os cambios que fixeches nun determinado modelo de correo electrónico xa non che funcionan e quererás restablecelo ao seu **estado predeterminado**.
 

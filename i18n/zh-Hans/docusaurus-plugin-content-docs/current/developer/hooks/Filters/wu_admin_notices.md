@@ -4,11 +4,11 @@ title: 过滤器 - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices
+# Filter: wu_admin_notices {#filter-wuadminnotices}
 
 允许开发者过滤 Ultimate Multisite 添加的管理员通知。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | 如果已过滤可关闭的通知。 |
 | $dismissed_messages | `array` | 已关闭通知键的列表。 |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 在 inc/class-admin-notices.php 第 121 行定义
 
-## Returns
+## Returns {#returns}

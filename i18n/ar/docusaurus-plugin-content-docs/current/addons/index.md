@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# إضافات Ultimate Multisite
+# إضافات Ultimate Multisite {#ultimate-multisite-addons}
 
 توسّع الإضافات Ultimate Multisite بميزات وتكاملات إضافية. معظم الإضافات مدفوعة ويمكن شراؤها من [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## التثبيت
+## التثبيت {#installation}
 
 يمكن تثبيت الإضافات بطريقتين:
 
 1. **عبر صفحة الإضافات** -- انتقل إلى صفحة إدارة إضافات موقعك في لوحة إدارة WordPress
 2. **التنزيل اليدوي** -- نزّل من [حسابك](https://ultimatemultisite.com/my-account/downloads/) وارفع عبر الإضافات > إضافة جديد
 
-## الإضافات المتاحة
+## الإضافات المتاحة {#available-addons}
 
 | الإضافة | الوصف |
 |-------|-------------|

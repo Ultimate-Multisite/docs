@@ -3,17 +3,17 @@ title: Ìṣepọ̀ RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Ìṣepọ̀ RunCloud
+# Ìṣepọ̀ RunCloud {#runcloud-integration}
 
-## Àkótán
+## Àkótán {#overview}
 RunCloud jẹ́ pẹpẹ ìṣàkóso server tó dá lórí cloud tí ó jẹ́ kí o lè fi àwọn ìṣàfilọ́lẹ̀ web ránṣẹ́ àti ṣàkóso wọn rọrùn lórí àwọn server cloud tirẹ. Ìṣepọ̀ yìí ń jẹ́ kí ìmúdọ́gba domain laifọwọyi àti ìṣàkóso SSL certificate wà láàárín Ultimate Multisite àti RunCloud.
 
-## Àwọn Ẹ̀ya
+## Àwọn Ẹ̀ya {#features}
 - Ìmúdọ́gba domain laifọwọyi
 - Ìṣàkóso SSL certificate
 - Yíyọ domain kúrò nígbà tí a bá pa àwọn mapping rẹ́
 
-## Àwọn Ìbéèrè
+## Àwọn Ìbéèrè {#requirements}
 A gbọ́dọ̀ ṣàlàyé àwọn constant wọ̀nyí nínú fáìlì `wp-config.php` rẹ:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Ìtọ́nisọ́nà Ìṣètò
+## Ìtọ́nisọ́nà Ìṣètò {#setup-instructions}
 
-### 1. Gba Àwọn RunCloud API Credentials Rẹ
+### 1. Gba Àwọn RunCloud API Credentials Rẹ {#1-get-your-runcloud-api-credentials}
 
 1. Wọlé sí RunCloud dashboard rẹ
 2. Lọ sí "User Profile" (tẹ àwòrán profáìlì rẹ ní igun òkè-ọtún)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Tẹ "Generate API Key" bí o kò bá tíì ní ọ̀kan
 5. Da API Key àti API Secret rẹ kọ
 
-### 2. Gba Server àti App IDs Rẹ
+### 2. Gba Server àti App IDs Rẹ {#2-get-your-server-and-app-ids}
 
 1. Nínú RunCloud dashboard rẹ, lọ sí "Servers"
 2. Yan server tí WordPress multisite rẹ wà lórí rẹ
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Lọ sí "Web Applications" kí o sì yan ìṣàfilọ́lẹ̀ WordPress rẹ
 5. App ID hàn nínú URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Ṣàfikún Àwọn Constant sí wp-config.php
+### 3. Ṣàfikún Àwọn Constant sí wp-config.php {#3-add-constants-to-wp-configphp}
 
 Ṣàfikún àwọn constant wọ̀nyí sí fáìlì `wp-config.php` rẹ:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Mu Ìṣepọ̀ Náà Ṣíṣẹ́
+### 4. Mu Ìṣepọ̀ Náà Ṣíṣẹ́ {#4-enable-the-integration}
 
 1. Nínú admin WordPress rẹ, lọ sí Ultimate Multisite > Settings
 2. Lọ sí taabu "Domain Mapping"
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Mu ìṣepọ̀ RunCloud ṣiṣẹ́
 5. Tẹ "Save Changes"
 
-## Bí Ó Ṣe Ń Ṣiṣẹ́
+## Bí Ó Ṣe Ń Ṣiṣẹ́ {#how-it-works}
 
 Nígbà tí a bá ṣe mapping domain kan nínú Ultimate Multisite:
 
@@ -70,19 +70,19 @@ Nígbà tí a bá ṣe mapping domain kan nínú Ultimate Multisite:
 
 Fún àwọn fífi sori ẹrọ subdomain, ìṣepọ̀ náà yóò ṣàkóso dídá àwọn subdomain sílẹ̀ ní RunCloud laifọwọyi nígbà tí a bá ṣàfikún àwọn site tuntun sí network rẹ.
 
-## Ìtọ́jú Ìṣòro
+## Ìtọ́jú Ìṣòro {#troubleshooting}
 
-### Àwọn Ìṣòro Ìsopọ̀ API
+### Àwọn Ìṣòro Ìsopọ̀ API {#api-connection-issues}
 - Ṣàyẹ̀wò pé àwọn API credentials rẹ tọ́
 - Ṣàyẹ̀wò pé server àti app IDs rẹ tọ́
 - Rí dájú pé Account RunCloud rẹ ní àwọn ìyọ̀nda tó yẹ
 
-### Àwọn Ìṣòro SSL Certificate
+### Àwọn Ìṣòro SSL Certificate {#ssl-certificate-issues}
 - RunCloud lè gba àkókò díẹ̀ láti ṣe ìfúnni ní àwọn SSL certificate
 - Ṣàyẹ̀wò pé àwọn domain rẹ ń tọ́ka dáadáa sí IP address server rẹ
 - Ṣàyẹ̀wò àwọn settings SSL RunCloud fún ìṣàfilọ́lẹ̀ rẹ
 
-### A Kò Ṣàfikún Domain
+### A Kò Ṣàfikún Domain {#domain-not-added}
 - Ṣàyẹ̀wò àwọn log Ultimate Multisite fún ìfiránṣẹ́ aṣìṣe èyíkéyìí
 - Ṣàyẹ̀wò pé domain náà kò tíì wà ní RunCloud tẹ́lẹ̀
 - Rí dájú pé plan RunCloud rẹ ṣe àtìlẹ́yìn fún ọ̀pọ̀ domain

@@ -3,13 +3,13 @@ title: Avakirina Entegrasyoneke Registrar a Taybet
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Avakirina entegrasyona tomarkarekî taybet
+# Avakirina entegrasyona tomarkarekî taybet {#building-a-custom-registrar-integration}
 
 Pêveka Domain Seller şêwaza **Integration Registry** bi kar tîne. Her tomarkar class-eke PHP ye ku `Domain_Selling_Capability` pêk tîne û xwe bi rêya hook-a kiryarê `wu_domain_seller_register_capabilities` tomar dike.
 
 Ev rêber nîşan dide ka çawa tomarkarekî taybet girê bidî.
 
-## Rûkar
+## Rûkar {#the-interface}
 
 Class-a te divê `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` pêk bîne û `WP_Ultimo\Integrations\Base_Capability_Module` dirêj bike.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Rêbazên vebijarkî
+### Rêbazên vebijarkî {#optional-methods}
 
 Van pêk bîne da ku taybetmendiyên zêde vebin. Pêvek bi `method_exists()` piştgiriyê nas dike:
 
@@ -81,7 +81,7 @@ Van pêk bîne da ku taybetmendiyên zêde vebin. Pêvek bi `method_exists()` pi
 | `get_epp_code(string $domain_name): array` | Veguhestina domainê (derketî) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Veguhestina domainê (hatinî) |
 
-### Peymana nirxa vegerandinê
+### Peymana nirxa vegerandinê {#return-value-convention}
 
 Hemû rêbaz arrayekê vedigerînin ku herî kêm mifteya `success` tê de hebe:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Tomarkirina şiyana xwe
+## Tomarkirina şiyana xwe {#registering-your-capability}
 
 Class-a xwe bi kiryara `wu_domain_seller_register_capabilities` tomar bike:
 
@@ -109,7 +109,7 @@ Argûmana yekem a `add_capability()` **provider ID** ye — slug-ek bi tîpên b
 
 ---
 
-## Zêdekirina qadên agahiyên pejirandinê li wizardê
+## Zêdekirina qadên agahiyên pejirandinê li wizardê {#adding-credential-fields-to-the-wizard}
 
 Ji bo ku rêveber karibin agahiyên pejirandinê bi rêya wizard-a sazkarinê têxin, entegrasyona xwe tomar bike:
 
@@ -137,7 +137,7 @@ Agahiyên pejirandinê wekî vebijarkên torê bi ID-yên qadan wekî mifte tên
 
 ---
 
-## Hook ji bo kiryarên piştî-tomarkirinê
+## Hook ji bo kiryarên piştî-tomarkirinê {#hooks-for-post-registration-actions}
 
 Van kiryaran bi kar bîne da ku webhook, amade-kirin, agahdarkirin, an nûvekirinên CRMê bidî destpêkirin:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Tomarkirin
+## Tomarkirin {#logging}
 
 Bi karanîna `wu_log_add()` li kanala tomarê ya taybet a dabînkerê xwe binivîse:
 

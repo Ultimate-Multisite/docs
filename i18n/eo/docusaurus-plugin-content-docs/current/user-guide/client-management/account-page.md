@@ -3,7 +3,7 @@ title: Página de Konta Kliento
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Via de Konto de Sua Kliento (v2)
+# Via de Konto de Sua Kliento (v2) {#your-clients-account-page-v2}
 
 _**IMPORTANTE NOTA: Esta artikolo referas Ultimate Multisite versian 2.x.**_
 
@@ -11,7 +11,7 @@ Kiam klientoj subskribas plan sur via sian reto, ili akcesas al sita kaj sia das
 
 En ĉi tiu tutoro ni guidos vin per la konto de la klientoj kaj vi vidos kion via klientoj povas vidi kaj fari en ĝi.
 
-## La Konto Paĝo
+## La Konto Paĝo {#the-account-page}
 
 La konto paĝo estas akcesbla per kliki sur **Account** (Konto) en la dashboardo de via klientoj.
 
@@ -27,7 +27,7 @@ Post kiam klientas klikas sur ĝi, ili vidos supervizon de sia apleksoj, faktura
 
 Ili ankaŭ povas ŝanĝi la aplekson al alia planon, aŭ akiri aliajn paquetojn aŭ servojn, kiujn vi ofersas. Ĉu ni vidus ĉion apartan.
 
-### Ĉiua Via Membaria Suprazo:
+### Ĉiua Via Membaria Suprazo: {#your-membership-overview}
 
 La unua bloko tute en la malalte de la nom de la ĉeestantaj klientoj montras suprazo pri ilia nunaj planoj kaj servoj/pačkoj, kiuj estis aĉetitaj kun ili. La bloko ankaŭ montras la membarian numeron, la inicialan monton, pligande kuaj la plano kaj ĉiu serva/pačkaj kostas kaj kuaj fojojn ili estis fakturitaj por ĉi tiu membario. Ili ankaŭ povas vidi se la membario estas **Aktiva**, **Ekspirita** aŭ **Cancellita**.
 
@@ -43,7 +43,7 @@ Nove, se via klientoj elektas aĉeti pačkoj aŭ servojn por ĉi tiu nunaj memba
 
 Notu, ke kupon kodoj ne povas esti aldatigitaj sur ĉi tiu paĝo de malplenigo de membario. Se la klientu uzis kupon kodon pri la unua membaria aĉeto, la kodo ankaŭ alvidos por ĉi tiu nova membario.
 
-### Modernigo de Fakturaj Adreso:
+### Modernigo de Fakturaj Adreso: {#updating-the-billing-address}
 
 Sur la page de compte, vos clients peuvent également mettre à jour leur adresse de facturation. Ils n'ont qu'à cliquer sur **Mettre à jour** à côté de _Billing Address_.
 
@@ -53,7 +53,7 @@ Une nouvelle fenêtre apparaîtra pour votre client. Tout ce qu'il doit faire es
 
 ![Formulaire Mise à jour de l'adresse de facturation](/img/account-page/billing-address-form.png)
 
-### Changer le Modèle du Site :
+### Changer le Modèle du Site : {#changing-the-site-template}
 
 Pour permettre à vos clients de changer leurs modèles de site, vous devez aller dans **Ultimate Multisite > Settings > Sites** et activer l'option **Allow Template Switching** (Autoriser le changement de modèle).
 
@@ -81,7 +81,7 @@ Pas aktivizimit të konfirmimit dhe klikimit në **Process Switch** (Procesimi i
 
 Klientët mund të përdorin gjithashtu **Reset current template** (Riktheni modelin aktual) nga ky panel kur duhet të rikthejnë faqen në modelin që është i asignuar aktualisht. Si ndryshimi në një model tjetër, rikuptimi i një modeli mund të sovrasojë përmbajtjen e faqes; kështu që klientët duhet ta konfirmojnë vetëm kur kuptojnë veprimin e rikthimit.
 
-### Shtimi i Domenave Personalizuara:
+### Shtimi i Domenave Personalizuara: {#adding-custom-domains}
 
 Klientët tuaj do të kenë gjithashtu opsionin për të shtuar një domen personalizuar për këtë plan në faqen e tyre të llogarisë. Për të lejuar klientët tuaj të përdorin domen personalizuar, shkoni te **Ultimate Multisite > Settings > Domain Mapping** (Mapele Domenet).
 
@@ -115,7 +115,7 @@ Post klikiĝi sur **Proksma Paŝo** (Next Step), viaj klientoj povas aĉeti sian
 
 Post klikiĝi sur **Añadi Domenon** (Add Domain), la domeno wirdas aldatni al viaj klientas konto. Tio ĉio, kion ili nun devas fari, estas ŝanĝi la DNS-registroj de ĉi tiu personala domeno sur ilia domen registrianto.
 
-### Ŝanĝi la Senvion (Changing Password):
+### Ŝanĝi la Senvion (Changing Password): {#changing-password}
 
 In la dashboard de konto, viaj klientoj ankaŭ povas ŝanĝi sian senvion per klikiĝi sur **Ŝanĝi Senvion** (Change Password).
 
@@ -125,7 +125,7 @@ Tiu enshowas nova finestra, kie vos klientoj devas necesi in skiri sian senan pa
 
 ![Forma de ŝanĝi la ŝlosilon kun laj sian kaj novan parolaj kampojn](/img/account-page/change-password-form.png)
 
-### Perikleta Zona:
+### Perikleta Zona: {#danger-zone}
 
 Ni ankaŭ havas du opcion, kiuj estas montritaj en la partio **Perikleta Zona**: **Maksi Site** kaj **Maksi Konto**. Ili amba estas en la Perikleta Zona ĉar ĉi tij du agoj ne povas esti revirtaj. Se vos klientoj deletes sian ŝlosilon aŭ sian konton, ili ne povas rehaŭri ilin.
 

@@ -3,13 +3,13 @@ title: Fandefasana mailaka sy hafatra faobe
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Fandefasana mailaka sy Broadcasts (v2)
+# Fandefasana mailaka sy Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka momba ny Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite dia misy endri-javatra ahafahanao mifandray amin'ny mpanjifanao amin'ny fandefasana mailaka amin'ny mpampiasa kendrena na vondrona mpampiasa, ary koa amin'ny fandefasana filazana eo amin'ny dashboard admin-ny mba handefasana fanambarana
 
-## Ampio filazana admin amin'ny dashboard an'ny mpanjifanao amin'ny Broadcasts
+## Ampio filazana admin amin'ny dashboard an'ny mpanjifanao amin'ny Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Amin'ny fampiasana ny endri-javatra broadcast an'ny Ultimate Multisite, azonao ampiana **filazana admin** amin'ny dashboard admin an'ny subsite an'ny mpampiasanao.
 
@@ -51,7 +51,7 @@ Rehefa avy namorona ny hafatrao ianao, dia azonao tsindriana ny bokotra **Send**
 
 Ary izay ihany. Tokony hiseho avy hatrany eo amin'ny dashboard an'ny mpampiasanao ny filazana admin.
 
-## Mandefasa mailaka amin'ny mpanjifanao
+## Mandefasa mailaka amin'ny mpanjifanao {#send-emails-to-your-customers}
 
 Amin'ny fampiasana ny endri-javatra broadcast an'ny Ultimate Multisite, afaka mandefa mailaka amin'ny mpampiasanao ianao. Manana safidy handefa ny mailaka amin'ny mpampiasa manokana ihany ianao, na mikendry vondrona mpampiasa manokana mifototra amin'ny vokatra na plan izay anoratana azy ireo.
 
@@ -81,11 +81,11 @@ Rehefa avy namorona ny hafatrao ianao, azonao tsindriana ny bokotra **Send**.
 
 Ary izany no maha-mora ny fandefasana mailaka amin'ireo mpampiasa farany anao amin'ny fampiasana ny endri-javatra broadcast.
 
-## Mailaka rafitra
+## Mailaka rafitra {#system-emails}
 
 Ny mailaka rafitra ao amin'ny Ultimate Multisite dia ireo **fampilazana mandeha ho azy** alefan'ny rafitra aorian'ny hetsika sasany toy ny fisoratana anarana, fandoavam-bola, domain mapping, sns. Ireo mailaka ireo dia azo ovaina na amboarina avy amin'ny firafitry ny Ultimate Multisite. Misy endri-javatra ihany koa izy io ahafahanao mamerina sy manafatra firafitra efa misy avy amin'ny fametrahana Ultimate Multisite hafa.
 
-### Famerenana & Fanafarana
+### Famerenana & Fanafarana {#resetting--importing}
 
 Ny version Ultimate Multisite vaovao, ary koa ny add-ons, dia afaka misoratra ary hisoratra mailaka vaovao indraindray.
 
@@ -93,7 +93,7 @@ Mba hisorohana fifandonana sy olana hafa, **tsy hampiditra ho azy ireo modely ma
 
 Na izany aza, ny super admins sy agents dia afaka manafatra ireo mailaka vao nosoratana anarana ireo amin'ny alalan'ny fitaovana importer. Io dingana io dia hamorona mailaka rafitra vaovao miaraka amin'ny votoaty sy ny fanamboarana an'ilay modely mailaka vaovao, ka ahafahan'ny super admin manao izay fanovana tiany na mitazona azy ireo araka ny misy.
 
-#### Ahoana no hanafarana mailaka rafitra
+#### Ahoana no hanafarana mailaka rafitra {#how-to-import-system-emails}
 
 Mandehana any amin'ny pejy Settings an'ny Ultimate Multisite ary mankanesa any amin'ny takelaka **Emails**.
 
@@ -111,7 +111,7 @@ Avy eo, azonao avadika ny safidy Import Emails mba hahitana izay mailaka rafitra
 
 <!-- Pikantsary tsy azo aseho: modal Famerenana sy Fanafarana miaraka amin'ny safidy Fanafarana Mailaka nivelatra -->
 
-#### Famerenana ny Mailakan'ny Rafitra
+#### Famerenana ny Mailakan'ny Rafitra {#reseting-system-emails}
 
 Indraindray, ho tsapanao fa tsy mety aminao intsony ireo fanovana nataonao tamin'ny môdely mailaka iray, ka tianao haverina amin'ny **toerany mahazatra** izany.
 

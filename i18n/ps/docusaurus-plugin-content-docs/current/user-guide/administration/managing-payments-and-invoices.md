@@ -3,9 +3,9 @@ title: د بیاول او فاکټور مدیریت
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# پرداخت‌ها و فاکتورها را مدیریت کردن
+# پرداخت‌ها و فاکتورها را مدیریت کردن {#managing-payments-and-invoices}
 
-## تنظیمات پرداخت
+## تنظیمات پرداخت {#payment-settings}
 
 قبل از اینکه شروع به دریافت پول کنید، باید تنظیمات مربوط به پرداخت‌ها را پیکربندی کنید. به **Ultimate Multisite → Settings** بروید و روی تب **Payment** کلیک کنید.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### گزینه‌های عمومی پرداخت
+### گزینه‌های عمومی پرداخت {#general-payment-options}
 
 در تنظیمات عمومی می‌توانید موارد زیر را پیکربندی کنید:
 
@@ -24,7 +24,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### دروازه‌های پرداخت (Payment Gateways)
+### دروازه‌های پرداخت (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite از چندین دروازه پرداخت پشتیبانی می‌کند. شما می‌توانید هر کدام را از تب تنظیمات پرداخت فعال و پیکربندی کنید.
 
@@ -40,11 +40,11 @@ Ultimate Multisite از چندین دروازه پرداخت پشتیبانی م
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### حالت Sandbox (Sandbox Mode)
+### حالت Sandbox (Sandbox Mode) {#sandbox-mode}
 
 شما می‌توانید **Sandbox Mode** را فعال کنید تا قبل از اینکه سیستم را به صورت رسمی اجرا کنید، ادغام پرداخت خود را آزمایش کنید. وقتی حالت sandbox فعال باشد، هیچ هزینه واقعی انجام نخواهد شد.
 
-## مشاهده پرداخت‌ها
+## مشاهده پرداخت‌ها {#viewing-payments}
 
 برای دیدن تمام تراکنش‌ها در کل شبکه خود، به صفحه **Payments** زیر Ultimate Multisite بروید.
 
@@ -54,7 +54,7 @@ Ultimate Multisite از چندین دروازه پرداخت پشتیبانی م
 
 د پیسې باندې کلیک وکړئ ترڅو د پوره تفصیلات وګورئ، چې پکې سطرو برخې (line items)، تړلی MEMBERSHIP، کارندوی معلومات او فیس دروازې (payment gateway) dati هم شامل دي.
 
-## فاکتورونه (Invoices)
+## فاکتورونه (Invoices) {#invoices}
 
 Ultimate Multisite کولی شي د پیسې لپاره خودکار فاکتورونه جوړ کړي. تاسو کولی شئ د فاکټور قالب (invoice template) او نمبر کولو ډول له Payment settings څخه تنظیم کړئ.
 

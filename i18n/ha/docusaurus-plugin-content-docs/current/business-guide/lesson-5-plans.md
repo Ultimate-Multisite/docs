@@ -3,15 +3,15 @@ title: 'Darasi na 5: Tsara Tsare-tsarenku'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Darasi na 5: Tsara Tsare-tsarenka
+# Darasi na 5: Tsara Tsare-tsarenka {#lesson-5-designing-your-plans}
 
 Matakan tsare-tsarenka ba kawai matakan farashi ba ne -- suna nuna yadda abokan cinikin niche ɗinka suke aiki a zahiri. A wannan darasi za ka tsara matakan samfur da suka dace da ainihin bukatun kasuwancin motsa jiki a matakai daban-daban.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 FitSite yana da templates guda uku a shirye (Studio Essential, Gym Pro, Fitness Chain). Yanzu za mu ƙirƙiri tsare-tsaren da ke ƙayyade abin da abokan ciniki za su samu damar amfani da shi da abin da za su biya.
 
-## Tunani Cikin Rukunonin Abokan Ciniki
+## Tunani Cikin Rukunonin Abokan Ciniki {#thinking-in-customer-segments}
 
 Kuskuren da yawancin mutane ke yi shi ne tsara tsare-tsare bisa fasalolin fasaha (ma'ajiyar bayanai, bandwidth, yawan shafuka). Abokan cinikin niche ɗinka ba sa tunani da waɗannan kalmomi. Mai gidan motsa jiki yana tunanin abin da yake buƙata don gudanar da kasuwancinsa.
 
@@ -25,11 +25,11 @@ Ga studios na motsa jiki, akwai rukunoni uku na halitta:
 
 Ya kamata tsare-tsarenka su dace da waɗannan rukunoni, ba da tarin fasaloli na son rai ba.
 
-## Ƙirƙirar Tsare-tsaren FitSite
+## Ƙirƙirar Tsare-tsaren FitSite {#creating-the-fitsite-plans}
 
 Je zuwa **Ultimate Multisite > Products > Add Product** don kowane tsari.
 
-### Tsari na 1: FitSite Starter -- $49/wata
+### Tsari na 1: FitSite Starter -- $49/wata {#plan-1-fitsite-starter----49month}
 
 **Manufa**: Masu horarwa su kaɗai da ƙananan studios
 
@@ -59,7 +59,7 @@ Je zuwa **Ultimate Multisite > Products > Add Product** don kowane tsari.
 - Theme ɗinka da aka zaɓa: Tilasta Kunnawa
 - Duk sauran themes: An ɓoye
 
-### Tsari na 2: FitSite Growth -- $99/wata
+### Tsari na 2: FitSite Growth -- $99/wata {#plan-2-fitsite-growth----99month}
 
 **Manufa**: Gyms masu wuri guda da suka kafu
 
@@ -85,7 +85,7 @@ Je zuwa **Ultimate Multisite > Products > Add Product** don kowane tsari.
 - Rukunin tsari: FitSite Plans
 - Jerin samfur: 2
 
-### Tsari na 3: FitSite Pro -- $199/wata
+### Tsari na 3: FitSite Pro -- $199/wata {#plan-3-fitsite-pro----199month}
 
 **Manufa**: Sarkokin fitness masu wurare da yawa
 
@@ -109,7 +109,7 @@ Je zuwa **Ultimate Multisite > Products > Add Product** don kowane tsari.
 - Rukunin tsari: FitSite Plans
 - Jerin samfur: 3
 
-## Saita Rukunin Tsari
+## Saita Rukunin Tsari {#setting-up-the-plan-group}
 
 Rukunin tsari yana tabbatar da cewa abokan ciniki za su iya haɓaka ko rage tsari ne kawai a cikin iyalin tsare-tsaren FitSite. A shafin **Up & Downgrades** na kowane tsari:
 
@@ -118,7 +118,7 @@ Rukunin tsari yana tabbatar da cewa abokan ciniki za su iya haɓaka ko rage tsar
 
 Wannan yana ƙirƙirar hanya bayyananniya ta haɓakawa: Starter → Growth → Pro.
 
-## Ƙara Order Bumps
+## Ƙara Order Bumps {#adding-order-bumps}
 
 Order bumps ƙarin samfura ne da ake bayarwa yayin checkout. Ga FitSite, ka yi la'akari da:
 
@@ -128,7 +128,7 @@ Order bumps ƙarin samfura ne da ake bayarwa yayin checkout. Ga FitSite, ka yi l
 
 Ƙirƙiri waɗannan a matsayin samfuran nau'in **Package** a cikin Ultimate Multisite kuma haɗa su da tsare-tsaren da suka dace.
 
-## Dalilin da Ya Sa Wannan Tsarin Yake Aiki
+## Dalilin da Ya Sa Wannan Tsarin Yake Aiki {#why-this-structure-works}
 
 - **Starter** yana cire shingen shiga -- farashi mai rahusa, tayin mai sauƙi, yana sa masu horarwa su hau intanet da sauri
 - **Growth** yana ƙara fasalolin da gyms suke nema a zahiri -- booking, galleries, custom domains
@@ -136,7 +136,7 @@ Order bumps ƙarin samfura ne da ake bayarwa yayin checkout. Ga FitSite, ka yi l
 - **Order bumps** suna barin abokan ciniki su keɓance ba tare da rikitar da ainihin tsare-tsaren ba
 - **Hanya bayyananniya ta haɓakawa** tana nufin abokan ciniki suna girma tare da kai maimakon su tafi
 
-## Cibiyar Sadarwar FitSite Ya Zuwa Yanzu
+## Cibiyar Sadarwar FitSite Ya Zuwa Yanzu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Abin da Muka Gina a Wannan Darasi
+## Abin da Muka Gina a Wannan Darasi {#what-we-built-this-lesson}
 
 - **Matakan tsari guda uku** da aka daidaita da ainihin rukunonin kasuwancin fitness
 - **Toshe fasali bisa tsari** ta amfani da ikon sarrafa plugins da templates na Ultimate Multisite

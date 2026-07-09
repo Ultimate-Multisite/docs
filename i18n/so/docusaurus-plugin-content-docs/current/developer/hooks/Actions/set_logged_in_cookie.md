@@ -4,11 +4,11 @@ title: Ficil - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Ficil: set_logged_in_cookie
+# Ficil: set_logged_in_cookie {#action-setloggedincookie}
 
 Wuxuu dhacaa isla markiiba ka hor inta aan la dejin cookie-ga xaqiijinta ee logged-in.
 
-## Xuduudaha
+## Xuduudaha {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Wuxuu dhacaa isla markiiba ka hor inta aan la dejin cookie-ga xaqiijinta ee logg
 | $scheme | `string` | Habka xaqiijinta. Asal ahaan 'logged_in'. |
 | $token | `string` | Session token-ka isticmaalaha ee loo adeegsanayo cookie-gan. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) safka 141

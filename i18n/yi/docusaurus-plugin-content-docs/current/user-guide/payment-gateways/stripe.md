@@ -3,19 +3,19 @@ title: איינריכטן Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# אויפֿשטעלן דעם Stripe צאָלונג־טויער (v2)
+# אויפֿשטעלן דעם Stripe צאָלונג־טויער (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**וויכטיקע באַמערקונג: דער אַרטיקל באַציט זיך צו Ultimate Multisite ווערסיע 2.x.**_
 
 איר קענט אַקטיווירן ביז פֿיר צאָלונג־מעטאָדן אויף אונדזער צאָלונג־אײַנשטעלונגען־זײַט: Stripe, Stripe Checkout, PayPal און מאַנועל. אין דעם אַרטיקל וועלן מיר זען ווי אַזוי צו אינטעגרירן מיט **Stripe**.
 
-## אַקטיווירן Stripe
+## אַקטיווירן Stripe {#enabling-stripe}
 
 כּדי צו אַקטיווירן Stripe ווי אַ פֿאַראַנענעם צאָלונג־טויער אויף אײַער נעצווערק, גייט צו **Ultimate Multisite > אײַנשטעלונגען > צאָלונגען** און צייכנט אָן דעם איבערשלאַלטער לעבן **Stripe** אָדער **Stripe Checkout** אין דער אָפּטיילונג פֿון אַקטיווע צאָלונג־טויערן.
 
 ![אַקטיווירן Stripe אין אַקטיווע צאָלונג־טויערן](/img/config/settings-payment-gateways.png)
 
-### Stripe קעגן Stripe Checkout:
+### Stripe קעגן Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** דער מעטאָד וועט ווײַזן אַן אָרט אַרײַנצולייגן די קרעדיט־קאַרט־נומער בעת דער קויפֿ־אָפּשליסונג.
 
@@ -47,7 +47,7 @@ _**באַמערקונג:** איר קענט אַקטיווירן **זאַמדקא
 
 ![אַרײַנקלעפּן Stripe שליסלען אין Ultimate Multisite אײַנשטעלונגען](/img/config/settings-payment-gateways.png)
 
-## אויפֿשטעלן Stripe Webhook
+## אויפֿשטעלן Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe שיקט Webhook־געשעענישן וואָס מעלדן Ultimate Multisite יעדעס מאָל ווען אַ געשעעניש פּאַסירט אויף **אײַער Stripe Account**.
 

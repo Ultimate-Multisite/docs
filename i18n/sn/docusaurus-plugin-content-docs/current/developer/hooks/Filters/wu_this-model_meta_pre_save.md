@@ -4,11 +4,11 @@ title: 'Sefa - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Inosefa data re meta risati rashandurwa kuti richengetwe mudatabase.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Type | Tsananguro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Inosefa data re meta risati rashandurwa kuti richengetwe mudatabase.
 | $data_unserialized | `array` | Data rechinhu richachengetwa. |
 | $this | `\Base_Model` | Instance yechinhu. |
 
-### Kubvira
+### Kubvira {#since}
 
 - 2.0.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) pamutsetse 534

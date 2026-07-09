@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Kordhiye WordPress ah oo ku dara hagaajino iswaafajin ah oo loogu talagalay Tutor LMS gudaha deegaanada goobo-badan.
 
-## Sharaxaad
+## Sharaxaad {#description}
 
 Kordhiyahani wuxuu bixiyaa hagaajino iswaafajin muhiim ah oo loogu talagalay ku socodsiinta Tutor LMS shabakadaha WordPress ee goobo-badan. Wuxuu maareeyaa diiwaangelinta isticmaalaha, maamulka macallinka, xaddidaadaha koorsada, iyo hawlqabadyada kale ee gaar u ah goobo-badan.
 
-## Astaamaha
+## Astaamaha {#features}
 
 - **Maamulka Jadwalka Database**: Si toos ah ayuu u ogaadaa oo u abuuraa jadwallada Tutor LMS ee maqan ee ku guuldarraysta xannibaadaha foreign key ee goobo-badan awgood
 - **Diiwaangelinta Isticmaalaha Goobo-badan**: Maareeyayaal AJAX gaar ah oo lagu maareeyo diiwaangelinta isticmaalaha guud ahaan goobaha shabakadda
@@ -24,7 +24,7 @@ Kordhiyahani wuxuu bixiyaa hagaajino iswaafajin muhiim ah oo loogu talagalay ku 
 - **Muuqaallo Maamul oo Gaar ah**: Liiska macallimiinta iyo interface maamulka oo ka warqaba goobo-badan
 - **Qalabka Maamulka**: Interface maamulka Database ee loogu talagalay maamulayaasha shabakadda iyo goobta
 
-## Shuruudaha
+## Shuruudaha {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Kordhiyahani wuxuu bixiyaa hagaajino iswaafajin muhiim ah oo loogu talagalay ku 
 - Rakibid WordPress goobo-badan
 - Kordhiyaha Ultimate Multisite (loogu talagalay hawlqabadka xaddidaadaha koorsada)
 
-## Rakibid
+## Rakibid {#installation}
 
 1. Geli faylasha kordhiyaha gudaha `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Hubi in Tutor LMS la rakibay lana hawlgeliyay
 3. Ka hawlgeli kordhiyaha menu-ga 'Kordhiyeyaasha' ee WordPress
 4. Kordhiyuhu si toos ah ayuu ula midoobi doonaa Tutor LMS
 
-## Qaab-dhismeedka Faylka
+## Qaab-dhismeedka Faylka {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Hawlqabad laga raray MU Plugin
+## Hawlqabad laga raray MU Plugin {#functionality-moved-from-mu-plugin}
 
 Kordhiyahani wuxuu ka kooban yahay hawlqabad hore ugu jiray `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Kordhiyahani wuxuu ka kooban yahay hawlqabad hore ugu jiray `wp-content/mu-plugi
 - Maareynta diiwaangelinta isticmaalaha goobo-badan
 - Muujinta aqoonsiga alaabta koorsada
 
-## Maamulka Database
+## Maamulka Database {#database-management}
 
-### Dhibaatada
+### Dhibaatada {#the-problem}
 
 Gudaha deegaanada WordPress ee goobo-badan, abuurista jadwalka Tutor LMS way ku guuldarraystaa jadwallada leh xannibaadaha foreign key ee ku xiran jadwalka isticmaaleyaasha. Tani waxay dhacdaa sababtoo ah:
 
@@ -81,7 +81,7 @@ Gudaha deegaanada WordPress ee goobo-badan, abuurista jadwalka Tutor LMS way ku 
 - Foreign keys waxay tixraacaan `wp_2_users` (kaas oo aan jirin)
 - Jadwalka isticmaaleyaasha ee dhabta ah waa `wp_users` (oo laga wadaago shabakadda oo dhan)
 
-### Xalka
+### Xalka {#the-solution}
 
 Kordhiyahani si toos ah ayuu:
 
@@ -92,13 +92,13 @@ Kordhiyahani si toos ah ayuu:
    - Abuurista goob cusub gudaha shabakadda
    - Hubinta jadwalka ee gacanta ah iyada oo loo marayo interface maamulka
 
-### Jadwallada ay Saameyso
+### Jadwallada ay Saameyso {#affected-tables}
 
 - `tutor_coupon_usages` - Wuxuu ka kooban yahay foreign key ku socda jadwalka isticmaaleyaasha
 - `tutor_carts` - Wuxuu ka kooban yahay foreign key ku socda jadwalka isticmaaleyaasha
 - `tutor_notification_preferences` - Jadwal TutorPro ah oo leh foreign key ku socda jadwalka isticmaaleyaasha
 
-### Interface Maamulka
+### Interface Maamulka {#admin-interface}
 
 Ka gal qalabka maamulka database halkan:
 
@@ -111,6 +111,6 @@ Interface-ku wuxuu kuu oggolaanayaa inaad:
 - Hubiso qaabeynta database
 - Aragto macluumaad xaalad oo faahfaahsan
 
-## Taageero
+## Taageero {#support}
 
 Kordhiyahani waxaa si gaar ah loogu naqshadeeyay madasha KursoPro. Taageero farsamo, la xiriir kooxda horumarinta.

@@ -3,7 +3,7 @@ title: Ukuphatha Izixhumanisi Ezabelanekayo Zezinhlelo
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Ukuphatha Izixhumanisi Ezabelanekayo Zama-plan
+# Ukuphatha Izixhumanisi Ezabelanekayo Zama-plan {#managing-shareable-links-for-plans}
 
 Ultimate Multisite ikunikeza inketho yokwabelana ngezixhumanisi zama-plan ngokuqondile namakhasimende akho. Ukuze wenze lokhu, iya kunoma yiliphi ikhasi lokuhlela lama-plan akho bese uchofoza inkinobho ethi _Chofoza ukuze ukopishe i-Shareable Link_.
 

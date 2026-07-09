@@ -3,11 +3,11 @@ title: Vermogtheidssigbaarheid
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Sigbaarheid van Vermoë
+# Sigbaarheid van Vermoë {#ability-visibility}
 
 Superdav AI Agent v1.12.0 stel **Sigbaarheid van Vermoë**-beheer bekend wat bepaal watter oppervlaktes watter vermoë beskikbaar stel. Dit laat administrateurs toe om te verfyn watter agent-vermoë beskikbaar is via REST APIs, MCP-bedienerwoorde, WooCommerce-integrasies en ander koppelvlakke.
 
-## Wat is Sigbaarheid van Vermoë?
+## Wat is Sigbaarheid van Vermoë? {#what-is-ability-visibility}
 
 Sigbaarheid van Vermoë is 'n toestemmingsstelsel wat beheer oor:
 
@@ -18,9 +18,9 @@ Sigbaarheid van Vermoë is 'n toestemmingsstelsel wat beheer oor:
 
 Elke vermoë dra 'n sigbaarheidsvlak wat sy beskikbaarheid oor verskillende oppervlaktes bepaal.
 
-## Sigbaarheidsvlakke
+## Sigbaarheidsvlakke {#visibility-levels}
 
-### Openbaar
+### Openbaar {#public}
 
 **Openbare vermoë** is oral beskikbaar:
 
@@ -32,7 +32,7 @@ Elke vermoë dra 'n sigbaarheidsvlak wat sy beskikbaarheid oor verskillende oppe
 
 Voorbeeld: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Intern
+### Intern {#internal}
 
 **Interne vermoë** is slegs binne jou WordPress-installasie beskikbaar:
 
@@ -43,7 +43,7 @@ Voorbeeld: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Voorbeeld: `manage-settings`, `view-analytics`, `export-data`
 
-### Vennoot
+### Vennoot {#partner}
 
 **Vennootvermoë** is slegs beskikbaar vir witgelysde vennootrolle:
 
@@ -54,7 +54,7 @@ Voorbeeld: `manage-settings`, `view-analytics`, `export-data`
 
 Voorbeeld: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Uitgeskakel
+### Uitgeskakel {#disabled}
 
 **Uitgeskakelde vermoë** is nêrens beskikbaar nie:
 
@@ -63,15 +63,15 @@ Voorbeeld: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Nie beskikbaar in admin-panele nie
 - Nuttig vir verouderde of eksperimentele vermoë
 
-## Bestuur van Vermoësigbaarheid
+## Bestuur van Vermoësigbaarheid {#managing-ability-visibility}
 
-### Toegang tot Sigbaarheid van Vermoë-instellings
+### Toegang tot Sigbaarheid van Vermoë-instellings {#accessing-ability-visibility-settings}
 
 1. Gaan na **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klik op die **Abilities** tab
 3. Jy sal 'n lys van alle geïnstalleerde vermoë sien met hul sigbaarheidsvlakke
 
-### Bekyk Vermoë-besonderhede
+### Bekyk Vermoë-besonderhede {#viewing-ability-details}
 
 Klik op enige vermoë om te sien:
 
@@ -82,7 +82,7 @@ Klik op enige vermoë om te sien:
 - **Last updated**: Wanneer die sigbaarheid laas verander is
 - **Status**: Herken of Nie-geklassifiseer
 
-### Verander Sigbaarheidsvlakke
+### Verander Sigbaarheidsvlakke {#changing-visibility-levels}
 
 Om die sigbaarheid van 'n vermoë te verander:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Massa-operasies
+### Massa-operasies {#bulk-operations}
 
 Om sigbaarheid vir verskeie vermoë te verander:
 
@@ -108,11 +108,11 @@ Om sigbaarheid vir verskeie vermoë te verander:
 2. Kies 'n nuwe sigbaarheidsvlak uit die massa-aksie-afhangmenu
 3. Klik op **Apply**
 
-## Vennoot-Toelaatlys
+## Vennoot-Toelaatlys {#partner-allow-list}
 
 Die **vennoot-toelaatlys** bepaal watter eksterne vennootrolle toegang kan kry tot Vennoot-vlak vermoë.
 
-### Vennootrolle Byvoeg
+### Vennootrolle Byvoeg {#adding-partners}
 
 1. Gaan na **Superdav AI Agent** → **Settings** → **Partners**
 2. Klik op **Add Partner**
@@ -120,7 +120,7 @@ Die **vennoot-toelaatlys** bepaal watter eksterne vennootrolle toegang kan kry t
 4. Voeg opsioneel 'n vennootnaam en beskrywing by
 5. Klik op **Save**
 
-### Vermoë Toewys aan Vennootrolle
+### Vermoë Toewys aan Vennootrolle {#assigning-abilities-to-partners}
 
 Nadat 'n vennootrol bygevoeg is:
 
@@ -130,7 +130,7 @@ Nadat 'n vennootrol bygevoeg is:
 4. In die "Partner allow-list" afdeling, vat die blokkies vir die vennootrolle uit wat toegang moet hê
 5. Klik op **Save**
 
-### Vennoot-toegang Intrek
+### Vennoot-toegang Intrek {#revoking-partner-access}
 
 Om 'n vennootrol se toegang te verwyder:
 
@@ -140,11 +140,11 @@ Om 'n vennootrol se toegang te verwyder:
 
 Die vennootrol sal onmiddellik toegang tot daardie vermoë verloor.
 
-## Nie-geklassifiseerde Vermoë
+## Nie-geklassifiseerde Vermoë {#unclassified-abilities}
 
 Wanneer jy 'n derde party-vermoë installeer wat Superdav AI Agent nie herken nie, word dit gemerk as **Nie-geklassifiseer**.
 
-### Admin-waarskuwing vir Nie-geklassifiseerde Vermoë
+### Admin-waarskuwing vir Nie-geklassifiseerde Vermoë {#admin-notice-for-unclassified-abilities}
 
 Jy sal 'n admin-waarskuwing sien:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Hersiening van Nie-geklassifiseerde Vermoë
+### Hersiening van Nie-geklassifiseerde Vermoë {#reviewing-unclassified-abilities}
 
 1. Klik op **Review Abilities** in die waarskuwing
 2. Vir elke nie-geklassifiseerde vermoë, sal jy sien:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Klik op **Classify** om jou besluit te stoor
 
-### Hoekom Nie-geklassifiseerde Vermoë Klassifiseer?
+### Hoekom Nie-geklassifiseerde Vermoë Klassifiseer? {#why-classify-unclassified-abilities}
 
 Die klassifisering van vermoë:
 
@@ -187,9 +187,9 @@ Die klassifisering van vermoë:
 - **Maak funksionaliteit moontlik**: Sodra geklassifiseer, word die vermoë beskikbaar
 - **Dokumenteer besluite**: Jou keuses word vir ouditdoele doel opgeneem
 
-## Sigbaarheid in Verskillende Oppervlaktes
+## Sigbaarheid in Verskillende Oppervlaktes {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Openbare vermoë** is beskikbaar via REST-eindpunte:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Interne en Vennoot vermoë** is nie beskikbaar via REST API nie.
 
-### MCP-bedienerwoorde
+### MCP-bedienerwoorde {#mcp-servers}
 
 **Openbare vermoë** is beskikbaar via MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Vennoot vermoë** is slegs beskikbaar met vennoot-wagwoorde.
 
-### WooCommerce-integrasie
+### WooCommerce-integrasie {#woocommerce-integration}
 
 **Openbare vermoë** wat verband hou met WooCommerce is beskikbaar:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Interne vermoë** word nie aan WooCommerce beskikbaar gestel nie.
 
-### Chat-koppelvlak
+### Chat-koppelvlak {#chat-interface}
 
 **Alle vermoë** (Openbaar, Intern, Vennoot) is in die chat beskikbaar, afhangende van gebruikersvermoë:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Gewone gebruikers sien slegs Openbare vermoë
 - Vennootrolle sien Openbaar + Vennoot vermoë (indien witgelys)
 
-## Sekuriteitsbeste Praktyke
+## Sekuriteitsbeste Praktyke {#security-best-practices}
 
-### Prinsep van Minste Privilegie
+### Prinsep van Minste Privilegie {#principle-of-least-privilege}
 
 - Stel vermoë op na die mees beperkende sigbaarheid wat hul gebruik steeds toelaat
 - Gebruik Vennoot sigbaarheid vir sensitiewe operasies
 - Skakel vermoë uit wat jy nie gebruik nie
 
-### Gereelde Oudits
+### Gereelde Oudits {#regular-audits}
 
 - Hersien vermoësigbaarheid maandeliks
 - Kontroleer vir nie-geklassifiseerde vermoë
 - Verwyder toegang vir ongebruikte vennootrolle
 
-### Logboekregistrasie en Monitoring
+### Logboekregistrasie en Monitoring {#logging-and-monitoring}
 
 - Monitor watter vermoë die meeste gebruik word
 - Volg vennoot-toegangpatrone
 - Waarskuwing oor ongewone vermoëgebruik
 
-### Derde Party-Vermoë
+### Derde Party-Vermoë {#third-party-abilities}
 
 - Hersien derde party-vermoë voordat jy dit aktiveer
 - Klassifiseer dit eksplisiet
 - Begin met Interne of Vennoot sigbaarheid
 - Promoveer na Openbaar slegs nadat dit geëvalueer is
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
 **'n Vermoë word nie in die lys getoon nie**
 - Verifieer dat die vermoë geïnstalleer en aktief is
@@ -285,7 +285,7 @@ Available abilities:
 - Kontroleer dat jou klassifisering gestoor is
 - Verifieer dat die plugin wat die vermoë verskaf, op datum is
 
-## Migrasie van Legacy-modus
+## Migrasie van Legacy-modus {#migration-from-legacy-mode}
 
 As jy opgradeer van 'n ouer weergawe van Superdav AI Agent:
 
@@ -295,7 +295,7 @@ As jy opgradeer van 'n ouer weergawe van Superdav AI Agent:
 
 Kyk na **Third-Party Mode Migration** vir meer besonderhede oor die oorgang na die native Abilities API-integrasie.
 
-## Volgende Stappe
+## Volgende Stappe {#next-steps}
 
 Nadat jy die vermoësigbaarheid gekonfigureer het:
 

@@ -3,7 +3,7 @@ title: ګیت‌هاب اسنیپټس
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# دایرکتوري کې Ultimate Multisite snippets څنګه استعمال गर्ने
+# دایرکتوري کې Ultimate Multisite snippets څنګه استعمال गर्ने {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 GitHub repository ته کوڈ کے ٹکڑے موجود ہیں جنہیں Ultimate Multisite کے صارفین اکثر مانگتے ہیں جو چھوٹے فنکشنلٹی شامل کرنا چاہتے ہیں جیسے سائن اپ پیجز پر گوگل اینالیٹکس اسکرپٹ شامل کرنا یا ایڈمن ڈیش بورڈ سے کوئی میٹا باکس چھپانا۔
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# اپنے تھیم کی functions.php فائل پر اسنیپٹ کیسے شامل کریں
+# اپنے تھیم کی functions.php فائل پر اسنیپٹ کیسے شامل کریں {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. اپنے WordPress Network admin dashboard میں لاگ ان کریں اور Themes > Theme Editor پر جائیں (نیچے اسکرین شاٹ دیکھیں۔)
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Must-Use Plugins (mu-plugins) کیسے بنائیں
+# Must-Use Plugins (mu-plugins) کیسے بنائیں {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress میں ایک ایسی خصوصیت ہے جو آپ کو "Must-Use Plugins" یا مختصر نام "mu-plugins" کہا جاتا ہے، جسے کسٹم فنکشنلٹی لوڈ کرنے کی اجازت دیتی ہے۔
 

@@ -3,13 +3,13 @@ title: Integrācijas ceļvedis
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrācijas ceļvedis
+# Integrācijas ceļvedis {#integration-guide}
 
 Šis ceļvedis aptver biežākos integrācijas modeļus ar Ultimate Multisite, tostarp savienošanu ar ārējiem pakalpojumiem, pielāgotu maksājumu vārteju izveidi un webhook apstrādi.
 
 Izolētai tenant infrastruktūrai skatiet [Multi-Tenancy integrāciju](./multi-tenancy), lai iegūtu norādījumus par suverēna tenant sākotnējo iestatīšanu, migrācijas pārbaudi, SSO un noņemšanu.
 
-## CRM integrācija
+## CRM integrācija {#crm-integration}
 
 Sinhronizējiet klientu datus ar savu CRM, kad reģistrējas jauni klienti:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analītikas integrācija
+## Analītikas integrācija {#analytics-integration}
 
 Izsekojiet galvenos biznesa notikumus visā klienta dzīves ciklā:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Nākamās darbības
+## Nākamās darbības {#next-steps}
 
 - [Pielāgotas vārtejas izstrāde](./custom-gateway) — Izveidojiet savu maksājumu vārteju
 - [Webhook apstrāde](./webhooks) — Izveidojiet pielāgotus webhook endpointus

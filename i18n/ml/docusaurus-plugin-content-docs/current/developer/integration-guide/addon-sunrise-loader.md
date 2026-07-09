@@ -3,17 +3,17 @@ title: അഡോൺ സൺറൈസ് ഫയൽ ലോഡർ
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0, add-ons-നുള്ളതും കസ്റ്റം MU-plugin ഇന്റഗ്രേഷനുകൾക്കുമുള്ള ഒരു sunrise extension loader ആണ് ചേർക്കുന്നത്. ഇത്, `wp-content/sunrise.php` എന്ന ഫയൽ എഡിറ്റ് ചെയ്യാതെ, WordPress sunrise bootstrapping സമയത്ത് പ്രവർത്തിക്കാൻ സഹായിക്കുന്നു.
 
-## എപ്പോൾ ഉപയോഗിക്കണം
+## എപ്പോൾ ഉപയോഗിക്കണം {#when-to-use-it}
 
 കസ്റ്റം ഡൊമെയ്ൻ റൂട്ടിംഗ്, ഹോസ്റ്റ്-സ്പെസിഫിക് റിക്വസ്റ്റ് ഹാൻഡിലിംഗ്, അല്ലെങ്കിൽ early network bootstrap ക്രമീകരണങ്ങൾ പോലുള്ള കാര്യങ്ങൾ സാധാരണ പ്ലഗിനുകൾ ലോഡ് ചെയ്യുന്നതിന് മുമ്പ് പ്രവർത്തിക്കേണ്ട ഒരു ഇന്റഗ്രേഷൻ ആണെങ്കിൽ, ഒരു sunrise extension ഉപയോഗിക്കുക.
 
 സാധാരണ ഇന്റഗ്രേഷനുകൾക്ക്, സാധാരണ WordPress plugins, MU-plugins, കൂടാതെ ഡോക്യുമെന്റ് ചെയ്ത Ultimate Multisite hooks എന്നിവ ഉപയോഗിക്കുന്നതാണ് നല്ലത്. Sunrise കോഡ് വളരെ നേരത്തെ പ്രവർത്തിക്കുന്നതിനാൽ, അത് ചെറുതും, സുരക്ഷിതവും (defensive), മറ്റ് ഡിപൻഡൻസികളില്ലാത്തതുമായിരിക്കണം.
 
-## ഫയൽ നാമകരണ രീതി (File naming convention)
+## ഫയൽ നാമകരണ രീതി (File naming convention) {#file-naming-convention}
 
 `ultimate-multisite-` എന്ന പേരുകൊണ്ട് തുടങ്ങുന്ന ഒരു addon ഡയറക്‌ടറിയിൽ `sunrise.php` എന്ന് പേരുള്ള ഒരു PHP ഫയൽ ഉണ്ടാക്കുക:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 മാച്ച് ചെയ്യുന്ന ഫയലുകൾ addon പാത്തിന്റെ അക്ഷരമാലാ ക്രമമനുസരിച്ച് (alphabetical order) ലോഡ് ചെയ്യും.
 
-## ഫയൽ എവിടെ വെക്കണം
+## ഫയൽ എവിടെ വെക്കണം {#where-to-place-the-file}
 
 sunrise സ്വഭാവം (sunrise behaviour) ഉള്ള addon-ന്റെ റൂട്ട് ഡയറക്‌ടറിയിലാണ് ഫയൽ വെക്കേണ്ടത്:
 
@@ -45,7 +45,7 @@ wp-content/
 
 ഉണ്ടാക്കിയ `wp-content/sunrise.php` ഫയൽ നേരിട്ട് എഡിറ്റ് ചെയ്യരുത്. Ultimate Multisite ഇൻസ്റ്റാൾ ചെയ്യുകയും അപ്ഡേറ്റ് ചെയ്യുകയും ചെയ്യുന്ന core sunrise ഫയൽ ഫോർക്ക് ചെയ്യാതെ, കസ്റ്റം കോഡ് ഉപയോഗിച്ച് sunrise സ്വഭാവം വികസിപ്പിക്കാൻ loader ഇത് അനുവദിക്കുന്നു.
 
-## ലഭ്യമായ Hooks, Filters
+## ലഭ്യമായ Hooks, Filters {#hooks-and-filters-available}
 
 Addon sunrise ഫയലുകൾ Ultimate Multisite domain mapping ലോഡ് ചെയ്തതിന് ശേഷവും, WordPress `ms_loaded` വിടുകയും ചെയ്യുന്നതിന് മുമ്പുമാണ് പ്രവർത്തിക്കുന്നത്. ഈ സമയത്ത് ഒരു sunrise ഫയൽക്ക് ചെയ്യാൻ കഴിയുന്നത്:
 
@@ -58,7 +58,7 @@ sunrise loader പൂർത്തിയാക്കിയ ശേഷം Ultimate 
 
 sunrise ഘട്ടത്തിൽ ഇതിനകം ലോഡ് ചെയ്തിട്ടുള്ള ഫംഗ്ഷനുകൾ മാത്രമേ വിളിക്കാവൂ. ഡാറ്റാബേസ് ഉപയോഗം കൂടുതലുള്ള ജോലികൾ, template rendering, HTTP requests, സാധാരണ plugin load order പൂർത്തിയായി എന്ന് അനുമാനിക്കുന്ന കോഡ് എന്നിവ ഒഴിവാക്കുക.
 
-## ഏറ്റവും ലളിതമായ ഉദാഹരണം (Minimal example)
+## ഏറ്റവും ലളിതമായ ഉദാഹരണം (Minimal example) {#minimal-example}
 
 ```php
 <?php

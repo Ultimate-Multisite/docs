@@ -3,15 +3,15 @@ title: 'Casharka 7: Ka dhigista mid adiga kuu gaar ah'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Cashar 7: Ka Dhigista Mid Adiga Kuu Gaar Ah
+# Cashar 7: Ka Dhigista Mid Adiga Kuu Gaar Ah {#lesson-7-making-it-yours}
 
 Macaamiishaadu marnaba waa inaysan dareemin inay isticmaalayaan "plugin WordPress oo uun." Waa inay dareemaan inay isticmaalayaan FitSite -- madal loo dhisay warshaddooda. Casharkani wuxuu daboolayaa sumadeynta, white-labeling, iyo ka dhigista madasha inay u ekaato badeecad.
 
-## Halkii Aan Ku Joognay
+## Halkii Aan Ku Joognay {#where-we-left-off}
 
 FitSite wuxuu leeyahay socod checkout shaqaynaya oo milkiilayaasha xarumaha jimicsiga ka qaada xulashada qorshaha ilaa site nool. Hadda waxaan ka dhigaynaa waayo-aragnimada oo dhan inay u ekaato badeecad isku xidhan oo sumadaysan.
 
-## Domain-ka Madashaada
+## Domain-ka Madashaada {#your-platform-domain}
 
 Aasaaska sumaddaadu waa domain-kaaga. FitSite ahaan:
 
@@ -19,7 +19,7 @@ Aasaaska sumaddaadu waa domain-kaaga. FitSite ahaan:
 - **Site-yada macaamiisha**: `studioname.fitsite.com` (subdomains)
 - **Custom domains**: Macaamiisha ku jira qorshayaasha Growth iyo Pro waxay map-gareyn karaan domain-kooda
 
-### Dejinta Domain-kaaga
+### Dejinta Domain-kaaga {#setting-up-your-domain}
 
 1. Diiwaangeli domain-ka madashaada
 2. U tilmaam bixiyaha hosting-kaaga
@@ -28,11 +28,11 @@ Aasaaska sumaddaadu waa domain-kaaga. FitSite ahaan:
 
 Eeg [Sida Loo Habeeyo Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) si aad u hesho tilmaamo faahfaahsan.
 
-## White-Labeling-ka Waayo-aragnimada Admin
+## White-Labeling-ka Waayo-aragnimada Admin {#white-labeling-the-admin-experience}
 
 Marka milkiilaha studio jimicsi uu galo dashboard-ka site-kiisa, waa inuu arkaa sumaddaada, ee ma aha WordPress ama sumadeynta Ultimate Multisite.
 
-### Bogga Login-ka Gaarka ah
+### Bogga Login-ka Gaarka ah {#custom-login-page}
 
 Habee bogga login-ka WordPress si uu u muujiyo:
 
@@ -40,7 +40,7 @@ Habee bogga login-ka WordPress si uu u muujiyo:
 - Sawirro asal ah oo ku habboon jimicsiga
 - Midabbada sumaddaada
 
-### Sumadeynta Dashboard
+### Sumadeynta Dashboard {#dashboard-branding}
 
 Isticmaal addon-ka [Admin Page Creator](/addons/admin-page-creator) ama CSS gaar ah si aad u:
 
@@ -48,7 +48,7 @@ Isticmaal addon-ka [Admin Page Creator](/addons/admin-page-creator) ama CSS gaar
 - U habeyso nidaamka midabbada admin-ka si uu ula jaanqaado sumaddaada
 - Ugu darto widget dashboard gaar ah oo leh xiriirro degdeg ah iyo ilo caawimo oo u gaar ah jimicsiga
 
-### Bogagga Admin-ka Gaarka ah
+### Bogagga Admin-ka Gaarka ah {#custom-admin-pages}
 
 Tixgeli abuurista bogag admin gaar ah oo soo bandhiga ficillada ugu khuseeya milkiilayaasha studio-yada jimicsiga:
 
@@ -58,11 +58,11 @@ Tixgeli abuurista bogag admin gaar ah oo soo bandhiga ficillada ugu khuseeya mil
 
 Tani waxay yaraynaysaa qalooca barashada iyadoo ficillada ku habboon niche-ka la dhigayo meel muuqata halkii lagu qarin lahaa menu-ga caadiga ah ee WordPress.
 
-## Sumadeynta Isgaarsiintaada
+## Sumadeynta Isgaarsiintaada {#branding-your-communications}
 
 Email kasta, invoice kasta, iyo ogeysiis kasta waa inuu xoojiyo sumaddaada.
 
-### Emails-ka Nidaamka
+### Emails-ka Nidaamka {#system-emails}
 
 U gudub **Ultimate Multisite > Settings > Emails** oo habee dhammaan emails-ka nidaamka:
 
@@ -79,7 +79,7 @@ Emails muhiim ah oo la habeynayo:
 | Rasiidka lacag-bixinta | "Lacag-bixin waa la helay" | "Lacag-bixinta subscription-ka FitSite waa la xaqiijiyay" |
 | Tijaabo dhammaanaysa | "Tijaabadaadu goor dhow bay dhammaanaysaa" | "Tijaabadaada FitSite waxay dhammaanaysaa 3 maalmood gudahood -- website-ka studio-gaaga ha sii noolaado" |
 
-### Invoices
+### Invoices {#invoices}
 
 Habee templates-ka invoice-ka adigoo ku daraya:
 
@@ -87,7 +87,7 @@ Habee templates-ka invoice-ka adigoo ku daraya:
 - Faahfaahinta ganacsigaaga
 - Magacyada badeecadaha ee u gaar ah jimicsiga (ma aha IDs qorshe oo guud)
 
-## Site-ka U Muuqda Macaamiisha
+## Site-ka U Muuqda Macaamiisha {#the-customer-facing-site}
 
 Domain-kaaga ugu weyn (`fitsite.com`) wuxuu u baahan yahay site suuqgeyn oo iibinaya madasha. Tani way ka duwan tahay admin-ka shabakadda Ultimate Multisite -- waa wejiga dadweynaha ee ganacsigaaga.
 
@@ -103,7 +103,7 @@ Bogagga muhiimka ah:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Custom Domain ee Macaamiisha
+## Custom Domain ee Macaamiisha {#custom-domain-for-customers}
 
 Macaamiisha ku jira qorshayaasha ay ku jiraan custom domains, si cad u qora geeddi-socodka:
 
@@ -113,7 +113,7 @@ Macaamiisha ku jira qorshayaasha ay ku jiraan custom domains, si cad u qora geed
 
 Abuur maqaal caawimo ama gelin knowledge base ah oo gaar u ah geeddi-socodkan, oo loo qoray milkiilayaasha studio-yada jimicsiga ee aan farsamo-yaqaannada ahayn.
 
-## Shabakadda FitSite Ilaa Hadda
+## Shabakadda FitSite Ilaa Hadda {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Waxa Aan Ku Dhisnay Casharkan
+## Waxa Aan Ku Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Domain-ka madasha iyo DNS** oo loo habeeyay waayo-aragnimo sumadaysan
 - **Admin white-labeled ah** oo leh sumadeynta FitSite meel kasta

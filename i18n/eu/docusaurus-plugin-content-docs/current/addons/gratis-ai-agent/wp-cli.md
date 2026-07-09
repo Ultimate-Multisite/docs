@@ -3,11 +3,11 @@ title: WP-CLI Erreferentzia
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Erreferentzia
+# WP-CLI Erreferentzia {#wp-cli-reference}
 
 Gratis AI Agent-ek `wp gratis-ai-agent` komando-familia bat dakar, agentearen errendimendua neurtzeko, gaitasunak kudeatzeko eta agentearen egoera komando-lerrotik kontsultatzeko. Komando guztiek WP-CLI 2.0 edo berriagoa behar dute.
 
-## Instalazioa
+## Instalazioa {#installation}
 
 WP-CLI komandoak automatikoki erregistratzen dira plugin aktibo dagoenean. Egiaztatu honekin:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agentearen gaitasunen benchmark multzoa exekutatzen du — gaitasun-azalera osoa probatzen duten urrats anitzeko prompt konplexuen multzo bat. Erabili hau ereduaren errendimendua ebaluatzeko, AI hornitzaileak alderatzeko edo gaitasun-paketeak ekoizpenera hedatu aurretik baliozkotzeko.
 
-### Sinopsia
+### Sinopsia {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Aukerak
+### Aukerak {#options}
 
 | Aukera | Deskribapena |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Irteera-formatua: `table` (lehenetsia), `json`, `csv` |
 | `--save` | Gorde benchmark emaitzak datu-basean, konparazio historikorako |
 
-### Adibideak
+### Adibideak {#examples}
 
 Exekutatu benchmark multzo osoa uneko hornitzailearekin eta ereduarekin:
 
@@ -57,7 +57,7 @@ Exekutatu eredu zehatz baten aurka eta gorde emaitzak:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Irteera
+### Irteera {#output}
 
 Benchmark-ak galdera bakoitzeko errenkada bat ematen du, zutabe hauekin:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark galderak
+### Benchmark galderak {#benchmark-questions}
 
 Multzo lehenetsiak honako hauek biltzen ditu:
 
@@ -95,11 +95,11 @@ Galdera gehigarriak `gratis_ai_agent_benchmark_questions` iragazkiaren bidez err
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Instalatutako gaitasunak eta gaitasun-paketeak kudeatzen ditu.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Erregistratutako gaitasun guztiak, haien iturria (core edo paketea) eta uneko egoera zerrendatzen ditu.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Erregistroko gaitasun-pakete bat deskargatu eta aktibatzen du.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Gaitasun zehatz bat desgaitzen du paketea kendu gabe. Erabilgarria da gune jakin batean agentearen esparrua mugatzeko.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Aurrez desgaitutako gaitasun bat berriro gaitzen du.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Uneko agentearen konfigurazioa eta konektibitate-egoera bistaratzen ditu.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Debug erregistrotik azken agentearen jarduera bistaratzen du.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Agentearen egoera berrezartzen du: txertatutako CSSa garbitzen du, agenteak erregistratutako CPTak eta taxonomiak kentzen ditu, estilo globalak berrezartzen ditu, eta agentearen aukeren cachea husten du. Ez du plugina edo haren ezarpenak kentzen.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Irteera-kodeak
+## Irteera-kodeak {#exit-codes}
 
 Komando guztiek `0` irteera ematen dute arrakastan. Zero ez diren irteera-kodeak:
 

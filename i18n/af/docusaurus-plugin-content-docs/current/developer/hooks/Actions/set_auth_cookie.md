@@ -4,11 +4,11 @@ title: Aksie - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Aksie: set_auth_cookie
+# Aksie: set_auth_cookie {#action-setauthcookie}
 
 Word geaktiveer onmiddellik voor die autentikasiekoekie gestel word.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Word geaktiveer onmiddellik voor die autentikasiekoekie gestel word.
 | $scheme | `string` | Autentikasieskema. Waardes sluit 'auth' of 'secure_auth' in. |
 | $token | `string` | Gebruiker se sessie-token wat vir hierdie koekie gebruik word. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.5.0
 - 4.9.0: Die <code>$token</code> parameter is bygevoeg.
-### Bron
+### Bron {#source}
 
 Detyreer in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) op lyn 124

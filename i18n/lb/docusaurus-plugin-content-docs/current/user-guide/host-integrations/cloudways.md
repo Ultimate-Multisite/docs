@@ -3,18 +3,18 @@ title: Cloudways Integratioun
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration
+# Cloudways Integration {#cloudways-integration}
 
-## Überblick
+## Überblick {#overview}
 Cloudways isch e verwalteti Cloud-Hosting-Plattform, wo dir erlaubt, WordPress-Sites uf verschidene Cloud-Provider wie DigitalOcean, AWS, Google Cloud und meh z'deploye. Dä Integration ermöglicht automatische Domain-Synchronisation und SSL-Zertifikat-Management zwüsche Ultimate Multisite und Cloudways.
 
-## Features
+## Features {#features}
 - Automatische Domain-Synchronisation
 - SSL-Zertifikat-Management
 - Unterstützig für extra Domains
 - DNS-Validierig für SSL-Zertifikate
 
-## Anforderungen
+## Anforderungen {#requirements}
 D'folgende Konstante müend du in din `wp-config.php` Datei definiere:
 
 ```php
@@ -30,16 +30,16 @@ Optional chasch du au folgendes definiere:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'komma,getrennt,liste,vo,domains');
 ```
 
-## Setup-Anleitig
+## Setup-Anleitig {#setup-instructions}
 
-### 1. Hol dir dini Cloudways API Credentials
+### 1. Hol dir dini Cloudways API Credentials {#1-get-your-cloudways-api-credentials}
 
 1. Log dich i dim Cloudways Dashboard ii
 2. Gang zu "Account" > "API Keys"
 3. Generier en API-Key, falls du no kei hesch
 4. Kopier dini E-Mail und de API-Key
 
-### 2. Hol dir dini Server- und App-IDs
+### 2. Hol dir dini Server- und App-IDs {#2-get-your-server-and-application-ids}
 
 1. Im Cloudways Dashboard gang zu "Servers"
 2. Wähl de Server us, wo dini WordPress Multisite gehostet isch
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'komma,getrennt,liste,vo,domains');
 4. Gang zu "Applications" und wähl dini WordPress-App us
 5. D'App ID isch i de URL sichtbar: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Füeg Konstante zu wp-config.php hinzu
+### 3. Füeg Konstante zu wp-config.php hinzu {#3-add-constants-to-wp-configphp}
 
 Füeg d'folgende Konstante in dini `wp-config.php` Datei ii:
 
@@ -69,7 +69,7 @@ Füge `*.ihre-netzwerk.com` (oder jede Subdomain-Muster vo Ihrem eigene Netzwerk
 `WU_CLOUDWAYS_EXTRA_DOMAINS`. Lueg bitte unter [Wichtig — wildcard SSL Falle](#important--wildcard-ssl-pitfall) druf, warum das verhindert, dass pro Tenant SSL-Zertifikate usgstellt wärde.
 :::
 
-### 4. D'Integration aktiviere
+### 4. D'Integration aktiviere {#4-enable-the-integration}
 
 1. Im WordPress Admin-Bereich gahts zu Ultimate Multisite > Settings
 2. Navigiered zur Registerkarte "Domain Mapping" (Domän-Zuordnung)
@@ -77,9 +77,9 @@ Füge `*.ihre-netzwerk.com` (oder jede Subdomain-Muster vo Ihrem eigene Netzwerk
 4. Aktiviere d'Cloudways Integration
 5. Klicke Sie uf "Save Changes" (Änderige speichern)
 
-## Wie funktioniert das?
+## Wie funktioniert das? {#how-it-works}
 
-### Domain Syncing (Domän-Synchronisierig)
+### Domain Syncing (Domän-Synchronisierig) {#domain-syncing}
 
 Wenn e Domäne in Ultimate Multisite zuordnet wird:
 
@@ -90,7 +90,7 @@ Wenn e Domäne in Ultimate Multisite zuordnet wird:
 
 Hinweis: D'Cloudways API brucht jedes Mal d'ganzi Liste vo Domänen z'schicke, nöd nur einzelni Domäne hinzuzfüege oder z'entferne.
 
-### SSL Certificate Management (SSL-Zertifikat-Verwaltig)
+### SSL Certificate Management (SSL-Zertifikat-Verwaltig) {#ssl-certificate-management}
 
 Nachdem d'Domänen synchronisiert sind:
 
@@ -100,7 +100,7 @@ Nachdem d'Domänen synchronisiert sind:
 
 D'Integration fordert immer **standard** (nöd-wildcard) Let's Encrypt-Zertifikaten vo Cloudways a. Wenn e wildcard-Muster in `WU_CLOUDWAYS_EXTRA_DOMAINS` aggebotte wird, wird d'führendi `*.` vor de SSL-Aafrog entfernt – s'wildcard selber wird mit dere Integration nie installiert. Um es wildcard-Zertifikat uf Cloudways z'bruche, müesst du es manuell installiere, aber das blockiert d'Let's Encrypt-Ussgabe pro Domain für mappti benutzerdefinierti Domains (siehe Fallstrick unta).
 
-## Extra Domains
+## Extra Domains {#extra-domains}
 
 D'Konstante `WU_CLOUDWAYS_EXTRA_DOMAINS` erlaubt dir, zusätzlechi **externi** Domains z'spezifiziere, wo immer uf de Alias-Liste vo de Cloudways App blibe sölled. Bruchs sie für:
 
@@ -109,13 +109,13 @@ D'Konstante `WU_CLOUDWAYS_EXTRA_DOMAINS` erlaubt dir, zusätzlechi **externi** D
 
 Bruchs die Konstante **nöd** für d'Subdomain-Wildcard vo dim eigene Netzwerk (z.B. `*.your-network.com`). Sieh dir de Wildcard SSL Fallstrick unta a.
 
-## Wichtig — Wildcard SSL Fallstrick
+## Wichtig — Wildcard SSL Fallstrick {#important--wildcard-ssl-pitfall}
 
 E häufige Fehler bi de Folg vo de Standard-Iistellig vo Cloudways isch, e wildcard wie `*.your-network.com` i `WU_CLOUDWAYS_EXTRA_DOMAINS` z'füege oder es manuell Cloudways wildcard SSL-Zertifikat für die Wildcard z'installiere.
 
 **Wenn du das machsch, wird Cloudways d'Ussgabe vo Let's Encrypt-Zertifikaten für di pro-Tenant benutzerdefinierten Domains blockiere, wo Ultimate Multisite mappet.** Cloudways ersetzt s'aktivi SSL-Zertifikat uf de App jedes Mal neu, und es vorhär existierends wildcard-Zertifikat uf de App blockiert d'pro-Domain Let's Encrypt-Ussgabe, wo die Integration sich druf verlaast.
 
-### Empfohleni Cloudways SSL Iistellig für es Ultimate Multisite Netzwerk
+### Empfohleni Cloudways SSL Iistellig für es Ultimate Multisite Netzwerk {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Installier en Tab **SSL Certificate** vo de Cloudways applicatioun, installier en **standard Let's Encrypt certificate** wo nur `your-network.com` und `www.your-network.com` abdeckt — **nöd** e wildcard.
 2. Setet nöd `*.your-network.com` (oder irgendein Subdomain Muster vo Ihrer eigete Netzwerch) in `WU_CLOUDWAYS_EXTRA_DOMAINS`. Reservieret die Konstante nur für **externi** Domäne.
@@ -123,20 +123,20 @@ E häufige Fehler bi de Folg vo de Standard-Iistellig vo Cloudways isch, e wildc
 
 Wenn d'benutzerdefinierten Domäne vo Ihre Mieter ohni SSL feststeckt, überprüefet de Cloudways SSL Tab. Wenn dört en wildcard certificate aktiv isch, entferne sie, stell en standard Let's Encrypt certificate nur für d'Hauptnetzwerchdomäne neu und entferne alli wildcard Einträg us `WU_CLOUDWAYS_EXTRA_DOMAINS`. Denn triggeret en Domain Mapping (oder wartet uf de nöchsti) und d'Integration fangt a, per Domäne Zertifikate wieder uszstelle.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 - Überprüefet, ob Ihre E-Mail und API Key korrekt sind
 - Überprüefet, ob Ihre Server- und Application IDs korrekt sind
 - Stell sicher, dass Ihr Cloudways Account d'nötige Berechtigunge het
 
-### SSL Zertifikatsprobleme
+### SSL Zertifikatsprobleme {#ssl-certificate-issues}
 - Cloudways verlangt, dass Domänen gültigi DNS-Einträge uf Ihren Server zeige, bevor SSL-Zertifikate usgstellt werde chönne.
 - D Integration prüeft d DNS-Einträg vor de Aafrog nach SSL-Zertifikaten.
 - Wenn SSL-Zertifikate nöd usgstellt werde, überprüef, ob dini Domäne korrekt uf d IP-Adress vom Server zeigt.
 - **Per-tenant benutzerdefinierti Domänen ohni SSL feststecke?** Überprüef de Tab "SSL Certificate" i de Cloudways Applikation. Wenn es en Wildcard-Zertifikat (manuell installiert oder wo `*.your-network.com` abdeckt) aktiv isch, wird Cloudways Let's Encrypt Zertifikate für einzeln mappti benutzerdefinierti Domänen nöd usgäh. Ersetz das mit eme Standard Let's Encrypt Zertifikat, wo nur d Hauptnetzwerkdomäne (`your-network.com`, `www.your-network.com`) abdeckt, und entfern all Wildcard-Einträg us `WU_CLOUDWAYS_EXTRA_DOMAINS`. Start denn en Domänenmappig neu (oder warte uf d nächsti) und d Integration wird Zertifikate pro Domäne aafroge.
 
-### Domäne nöd hinzugefügt
+### Domäne nöd hinzugefügt {#domain-not-added}
 - Überprüef d Ultimate Multisite Logs uf irgendwelchi Fehlermeldige.
 - Bestätig, dass d Domäne nöd scho zu Cloudways hinzugefügt isch.
 - Stell sicher, dass din Cloudways Plan d Anzahl Domänen unterstützt, wo du hinzufüegsch.

@@ -3,13 +3,13 @@ title: Rêbernameya Entegrasyonê
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Rêbernameya Integration
+# Rêbernameya Integration {#integration-guide}
 
 Ev rêbername şêweyên hevpar ên integration bi Ultimate Multisite vedigire, di nav de girêdana bi xizmetên derveyî re, avakirina dergehên dravdanê yên taybet, û rêvebirina webhookan.
 
 Ji bo jêrxaneya tenant a veqetandî, ji bo destpêkirina tenant a serwer, piştrastkirina veguhastinê, SSO, û rêberiya rakirinê, binêre [Integration ya Multi-Tenancy](./multi-tenancy).
 
-## Integration ya CRM
+## Integration ya CRM {#crm-integration}
 
 Dema xerîdarên nû xwe tomar dikin, daneyên xerîdar bi CRM-a xwe re sync bike:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integration ya Analytics
+## Integration ya Analytics {#analytics-integration}
 
 Bûyerên karsaziya sereke li seranserî çerxa jiyana xerîdar bişopîne:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Gavên Piştre
+## Gavên Piştre {#next-steps}
 
 - [Pêşxistina Gateway-a Taybet](./custom-gateway) — Gateway-a dravdanê ya xwe ava bike
 - [Rêvebirina Webhookan](./webhooks) — Endpointên webhook ên taybet biafirîne

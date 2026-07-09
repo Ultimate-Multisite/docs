@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Cái nhìn đầu tiên về Webhooks (v2)
+# Cái nhìn đầu tiên về Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**CHÚ Ý: Lưu ý rằng tính năng hoặc bài viết này dành cho người dùng nâng cao.**_
 
@@ -11,7 +11,7 @@ _**CHÚ Ý: Lưu ý rằng tính năng hoặc bài viết này dành cho ngườ
 
 Điều này hữu ích nếu bạn cần tích hợp hoặc chuyển một số dữ liệu nhất định từ Ultimate Multisite sang một CRM hoặc hệ thống khác mỗi khi một sự kiện được kích hoạt. Ví dụ, bạn cần gửi tên và địa chỉ email của người dùng đến một danh sách gửi thư mỗi khi một tài khoản người dùng mới được tạo.
 
-## Cách tạo webhook
+## Cách tạo webhook {#how-to-create-a-webhook}
 
 Để tạo webhook, hãy vào dashboard quản trị mạng của bạn. Nhấp vào **Ultimate Multisite > Webhooks > Add New Webhook.**
 

@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# B Ga'a Farko Game da Webhooks (v2)
+# B Ga'a Farko Game da Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**GABARDA: Ka kunya wannan ƙarin ko rubutun ya dace ga masu amfani da girma.**_
 
@@ -11,7 +11,7 @@ Wannan **webhook** wajen in samar da wata manhaja ko software kamar Ultimate Mul
 
 Wannan zai taimaka maka idan kana buƙatar haɗa ko tura wani abu daga Ultimate Multisite zuwa CRM ko tsarin wani kowace lokacin da wata matsala ta faru. Misali, kana buƙatar a tura sunan amfanin da aka yi wa kai da imel ɗin sa ga babban jerin masu karɓar imel kowace lokacin da aka ƙirƙira sabon asusun amfani.
 
-## Yadda ake ƙirƙirar webhook
+## Yadda ake ƙirƙirar webhook {#how-to-create-a-webhook}
 
 Don ƙirƙirar webhook, tafiya zuwa dashboard na gudanar da ayyukan ku (network admin dashboard). Danna kan **Ultimate Multisite > Webhooks > Add New Webhook.**
 

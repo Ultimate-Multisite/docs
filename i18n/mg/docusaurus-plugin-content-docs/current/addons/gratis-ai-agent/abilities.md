@@ -3,7 +3,7 @@ title: Fanondroana ny fahaiza-manao
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Fanondroana Abilities
+# Fanondroana Abilities {#abilities-reference}
 
 Ny Abilities dia asa fototra azon'ny Gratis AI Agent antsoina ao amin'ny fametrahana WordPress anao. Ny ability tsirairay dia kilasy PHP voasoratra anarana izay mampiseho JSON schema — mamaky ity schema ity amin'ny runtime ny agent mba hahatakatra izay parameters ilaina sy izay averin'ilay ability.
 
@@ -11,11 +11,11 @@ Ity pejy ity dia manoratra ny abilities rehetra miaraka amin'ny Gratis AI Agent 
 
 ---
 
-## Karazana Lahatsoratra Manokana
+## Karazana Lahatsoratra Manokana {#custom-post-types}
 
 Ireo abilities ireo dia mitantana karazana lahatsoratra manokana (CPTs) voasoratra anarana amin'ny alalan'ny agent. Tehirizina ao amin'ny tabilao safidy WordPress ny fisoratana anarana ka mitoetra na dia esorina sy averina ampandehanana aza ny plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Manoratra anarana karazana lahatsoratra manokana vaovao.
 
@@ -50,7 +50,7 @@ Manoratra anarana karazana lahatsoratra manokana vaovao.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Mamerina ny karazana lahatsoratra manokana rehetra nosoratan'ny agent anarana.
 
@@ -73,7 +73,7 @@ Mamerina ny karazana lahatsoratra manokana rehetra nosoratan'ny agent anarana.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Manafoana ny fisoratana anarana karazana lahatsoratra manokana efa nosoratan'ny agent anarana teo aloha. Mijanona ao amin'ny database ny lahatsoratra efa misy amin'io karazana io, saingy tsy azo idirana intsony amin'ny alalan'ilay karazana lahatsoratra.
 
@@ -87,11 +87,11 @@ Manafoana ny fisoratana anarana karazana lahatsoratra manokana efa nosoratan'ny 
 
 ---
 
-## Taxonomies Manokana
+## Taxonomies Manokana {#custom-taxonomies}
 
 Ireo abilities ireo dia mitantana taxonomies manokana. Toy ny CPTs, tehirizina ny fisoratana anarana taxonomy.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Manoratra anarana taxonomy manokana vaovao.
 
@@ -123,7 +123,7 @@ Manoratra anarana taxonomy manokana vaovao.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Mamerina ny taxonomies manokana rehetra nosoratan'ny agent anarana.
 
@@ -146,7 +146,7 @@ Mamerina ny taxonomies manokana rehetra nosoratan'ny agent anarana.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Manafoana ny fisoratana anarana taxonomy manokana efa nosoratan'ny agent anarana teo aloha.
 
@@ -160,11 +160,11 @@ Manafoana ny fisoratana anarana taxonomy manokana efa nosoratan'ny agent anarana
 
 ---
 
-## Rafitra Famolavolana
+## Rafitra Famolavolana {#design-system}
 
 Ny abilities an'ny rafitra famolavolana dia manova ny fanehoana hita maso ny site WordPress — manomboka amin'ny CSS manokana ka hatramin'ny block patterns sy ny logo-n'ny site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Manampy CSS ao amin'ny `<head>` an'ny site amin'ny alalan'ny `wp_add_inline_style`. Tehirizina ao amin'ny safidy `gratis_ai_agent_custom_css` ny CSS ary esorina amin'ny fomba madio rehefa averina amin'ny voalohany ilay ability.
 
@@ -190,7 +190,7 @@ Manampy CSS ao amin'ny `<head>` an'ny site amin'ny alalan'ny `wp_add_inline_styl
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Manoratra anarana block pattern azo ampiasaina indray ao amin'ny tranombokin'ny pattern WordPress.
 
@@ -209,7 +209,7 @@ Manoratra anarana block pattern azo ampiasaina indray ao amin'ny tranombokin'ny 
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Mitanisa ny block patterns rehetra nosoratan'ny agent anarana.
 
@@ -231,7 +231,7 @@ Mitanisa ny block patterns rehetra nosoratan'ny agent anarana.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Mametraka ny logo an'ny tranonkala WordPress ho attachment ID nomena na URL sary lavitra. Rehefa URL no omena dia alaina ilay sary ary ampidirina ao amin'ny Media Library.
 
@@ -248,7 +248,7 @@ Tsy maintsy omena ny iray amin'ny `attachment_id` na `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Mampihatra preset loko/typography voatonona amin'ny `theme.json` (na `global-styles`) an'ny theme mavitrika. Ny preset dia fonosana voafantina tantanin'ny ekipan'ny Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Mampihatra preset loko/typography voatonona amin'ny `theme.json` (na `global-sty
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Ny fahaizan'ny Global Styles dia mamaky sy manoratra sanda theme.json amin'ny alalan'ny WordPress Global Styles API, ka misy fiantraikany amin'ny blocks sy templates rehetra manerana ny tranonkala.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Mamerina ny fikirakirana global styles amin'izao fotoana izao.
 
@@ -291,7 +291,7 @@ Mamerina ny fikirakirana global styles amin'izao fotoana izao.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Manavao sanda iray na maromaro ao amin'ny fikirakirana global styles.
 
@@ -318,7 +318,7 @@ Manavao sanda iray na maromaro ao amin'ny fikirakirana global styles.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Mamerina amin'ny voalohany ny fanovana global styles rehetra nampiharin'ny agent, ka mamerina ny default an'ny theme.
 
@@ -328,11 +328,11 @@ Mamerina amin'ny voalohany ny fanovana global styles rehetra nampiharin'ny agent
 
 ---
 
-## Menio Fivezivezena
+## Menio Fivezivezena {#navigation-menus}
 
 Ny fahaizan'ny Menio Fivezivezena dia mamorona sy mitantana menio nav WordPress sy ny item ao anatiny.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Mamorona menio fivezivezena WordPress vaovao.
 
@@ -347,7 +347,7 @@ Mamorona menio fivezivezena WordPress vaovao.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Manova anaran'ny menio na manendry azy indray amin'ny toerana theme.
 
@@ -363,7 +363,7 @@ Manova anaran'ny menio na manendry azy indray amin'ny toerana theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Manampy item amin'ny menio fivezivezena efa misy.
 
@@ -383,7 +383,7 @@ Manampy item amin'ny menio fivezivezena efa misy.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Manala item iray amin'ny menio fivezivezena.
 
@@ -397,7 +397,7 @@ Manala item iray amin'ny menio fivezivezena.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Mitanisa ny menio fivezivezena WordPress rehetra, anisan'izany ny toerana theme nanendrena azy.
 
@@ -420,11 +420,11 @@ Mitanisa ny menio fivezivezena WordPress rehetra, anisan'izany ny toerana theme 
 
 ---
 
-## Fitantanana Options
+## Fitantanana Options {#options-management}
 
 Ny fahaizan'ny Options dia mamaky sy manoratra options WordPress amin'ny alalan'ny `get_option` / `update_option`. Blocklist fiarovana efa ao anatiny no misoroka fanovana tsy nahy amin'ny fikirana manan-danja.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Mamaky option WordPress iray.
 
@@ -440,7 +440,7 @@ Mamerina hadisoana raha ao amin'ny blocklist fiarovana ny `option_name`.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Manoratra option WordPress iray.
 
@@ -458,7 +458,7 @@ Mamerina hadisoana raha ao amin'ny safety blocklist ny `option_name`.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Mamafa option WordPress iray.
 
@@ -474,7 +474,7 @@ Mamerina hadisoana raha ao amin'ny safety blocklist ny `option_name`.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Mitanisa options WordPress mifanaraka amin'ny lamina iray.
 
@@ -498,11 +498,11 @@ Mitanisa options WordPress mifanaraka amin'ny lamina iray.
 
 ---
 
-## Fitantanana Votoaty
+## Fitantanana Votoaty {#content-management}
 
 Ny fahaiza-manao Fitantanana Votoaty dia mamorona sy manitsy lahatsoratra sy pejy WordPress. Averina ny ID-n'ny lahatsoratra mba hahafahan'ny dingana manaraka ao amin'ny drafitra misy fahaiza-manao maro manondro ilay votoaty noforonina.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Mamorona lahatsoratra WordPress vaovao, pejy, na fidirana karazana lahatsoratra manokana.
 
@@ -537,7 +537,7 @@ Mamorona lahatsoratra WordPress vaovao, pejy, na fidirana karazana lahatsoratra 
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Manavao lahatsoratra na pejy WordPress efa misy.
 
@@ -567,7 +567,7 @@ Manavao lahatsoratra na pejy WordPress efa misy.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Mamorona lahatsoratra maro ao anatin'ny antso fahaiza-manao tokana, mampihena ny fifanakalozana mandritra ny fananganana tranonkala na fanafarana votoaty betsaka. Foronina misesy ny lahatsoratra; raha tsy mahomby ny iray dia mitohy ny hafa ary taterina ao amin'ny array valiny ilay tsy fahombiazana.
 
@@ -619,7 +619,7 @@ Mamorona lahatsoratra maro ao anatin'ny antso fahaiza-manao tokana, mampihena ny
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Manendry sary asongadina (thumbnail-n'ny lahatsoratra) amin'ny lahatsoratra na pejy efa misy. Manaiky ID-n'ny attachment efa misy ao amin'ny Media Library na URL sary lavitra; rehefa URL no omena, dia alaina sy ampidirina ho azy ilay sary.
 
@@ -638,7 +638,7 @@ Tsy maintsy omena ny iray amin'ny `attachment_id` na `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Mamorona contact form amin'ny alalan'ny plugin form mavitrika (Contact Form 7, WPForms, Fluent Forms, na Gravity Forms, arakaraka izay napetraka). Mamerina shortcode azo ampidirina ao amin'izay lahatsoratra na pejy rehetra.
 
@@ -691,11 +691,11 @@ Mamorona contact form amin'ny alalan'ny plugin form mavitrika (Contact Form 7, W
 
 ---
 
-## Fanamarinana ara-pijery
+## Fanamarinana ara-pijery {#visual-review}
 
 Ny fahaizan'ny Fanamarinana ara-pijery dia mamela ny agent haka screenshots amin'ny pejy mivantana sy hamakafaka azy ireo, ahafahana manao fanamarinana famolavolana mahaleo tena, fampitahana taloha/aoriana, ary fanamarinana visual regression tsy mila browser extension.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Maka screenshot amin'ny pejy WordPress amin'ny URL nomena amin'ny alalan'ny browser headless eo amin'ny server. Tehirizina ao amin'ny Media Library ny sary ary averina ny URL CDN.
 
@@ -724,7 +724,7 @@ Maka screenshot amin'ny pejy WordPress amin'ny URL nomena amin'ny alalan'ny brow
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Maka screenshot roa ary mamerina isa diff ara-pijery miampy sary diff manasongadina faritra niova. Ilaina amin'ny fanamafisana fa namokatra ny vokatra nandrasana ny fiovana famolavolana na amin'ny fitadiavana regression tsy nokasaina.
 
@@ -754,7 +754,7 @@ Ny `diff_score` mitentina `0.0` dia midika fa tsy misy fiovana hita maso; `1.0` 
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Maka screenshot amin'ny pejy iray ary mandefa azy amin'ny maodely fiteny ho an'ny famakafakana ara-pijery. Mamerina fanombanana voarindra mandrakotra firafitra, typographie, fampiasana loko, ary ahiahy momba ny fahazoana idirana.
 
@@ -785,11 +785,11 @@ Maka screenshot amin'ny pejy iray ary mandefa azy amin'ny maodely fiteny ho an'n
 
 ---
 
-## Fahaiza-manao azo apetraka
+## Fahaiza-manao azo apetraka {#installable-abilities}
 
 Ny Registry Fahaiza-manao azo apetraka dia mamela anao hanitatra ny agent amin'ny fonosana fahaiza-manao fanampiny zaraina ho WordPress plugins. Ny fonosana tsirairay dia manoratra fahaiza-manao iray na maromaro amin'ny fampiasana ny API fahaiza-manao mahazatra.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Mamerina ny katalaogin'ny fonosana fahaiza-manao azo apetraka avy amin'ny registry.
 
@@ -818,7 +818,7 @@ Mamerina ny katalaogin'ny fonosana fahaiza-manao azo apetraka avy amin'ny regist
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Misintona sy mampihetsika fonosana fahaiza-manao avy amin’ny rejistra.
 
@@ -832,7 +832,7 @@ Misintona sy mampihetsika fonosana fahaiza-manao avy amin’ny rejistra.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Manontany ny rejistra fahaiza-manao mba hahitana ny plugin tsara indrindra ho an’ny tranga fampiasana voafaritra ary, raha ilaina, mametraka azy.
 

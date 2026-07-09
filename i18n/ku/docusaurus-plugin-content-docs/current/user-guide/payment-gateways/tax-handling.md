@@ -3,7 +3,7 @@ title: Rêvebirina Bacê
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Rêvebirina Bacê
+# Rêvebirina Bacê {#tax-handling}
 
 Ultimate Multisite di plugin-a me ya bingehîn de moduleke berhevkirina bacê heye, ji ber vê yekê heke hûn hewce ne ku bacên firotanê li ser plan, paket û xizmetên xwe berhev bikin, hûn dikarin bi hêsanî vê bikin bêyî ku pêvekên din saz bikin.
 
@@ -11,7 +11,7 @@ Ji bo şirketên ku li Ewropayê ne, em **pêvekek** pêşkêş dikin ku amûr �
 
 Ultimate Multisite li şûna we bacan ji hukûmetê re radest an şandin nake; em tenê alîkariya we dikin ku di dema danûstandinê de bacên guncaw berhev bikin. **Hûn hîn jî divê bacan bi xwe radest bikin.**
 
-## Çalakkirina Berhevkirina Bacê
+## Çalakkirina Berhevkirina Bacê {#enabling-tax-collection}
 
 Berhevkirina bacê wekî standard neçalak e. Ji bo çalakkirina wê, divê biçin **Ultimate Multisite > Mîheng > Bac** û guheroka mîhenga Çalakkirina Bacan çalak bikin.
 
@@ -25,7 +25,7 @@ Hûn dikarin mîhengên bacê ji bo hilberên takekesî jî bibînin:
 
 ![Mîhengên bacê ji bo hilberan](/img/config/settings-taxes.png)
 
-### Bac derveyî nirxê vs. bac di nav nirxê de
+### Bac derveyî nirxê vs. bac di nav nirxê de {#tax-excluded-vs-tax-included}
 
 Wekî standard, hemû nirxên hilberên we bac derveyî ne, ango bac **di nav** nirxa hilberê de **nehatiye hesibandin**. Heke em diyar bikin ku divê kiryarek li ser kirînek diyarkirî bac bide, em ê bacan **li ser** subtotal zêde bikin.
 
@@ -37,7 +37,7 @@ Ji bîr nekin ku guhartinên ku we kirine **tomar** bikin.
 
 ###
 
-## Afirandina Rêjeyên Bacê
+## Afirandina Rêjeyên Bacê {#creating-tax-rates}
 
 Piştî ku hûn Berhevkirina Bacê çalak bikin, divê hûn bi karanîna edîtora rêjeyên bacê ya me ji bo cihên taybet rêjeyên bacê biafirînin.
 
@@ -51,7 +51,7 @@ Li rûpela edîtora rêjeyên bacê, hûn dikarin bi klîkkirina bişkoka **Rêz
 
 Divê hûn ji bo her rêjeya bacê **sernavek** bidin (li ser faturan tê bikaranîn). Paşê hûn dikarin **welat** (pêwîst), **eyalet,** û **bajar** (herdu jî vebijêrkî) hilbijêrin ku ev bac lê were standin. Di dawiyê de, **rêjeya bacê bi sedî** zêde bikin.
 
-### Kategoriyên Bacê
+### Kategoriyên Bacê {#tax-categories}
 
 Hûn dikarin çend Kategoriyên Bacê jî biafirînin, da ku ji bo cureyên cuda yên hilberan rêjeyên bacê yên cuda zêde bikin.
 
@@ -73,7 +73,7 @@ Hûn dikarin kategoriya bacê ji bo hilbereke taybet bi çûna **rûpela sereras
 
 Li ser heman ekranê, hûn dikarin guheroka **Bacbar e?** neçalak bikin da ku Ultimate Multisite bizane ku divê li ser wê hilbera diyarkirî bac berhev neke.
 
-## Piştgiriya VAT ya Ewropayê
+## Piştgiriya VAT ya Ewropayê {#european-vat-support}
 
 Wekî berê hate gotin, me pêvekek ji bo kiryarên li EU heye ku ji ber rêzikên VAT yên Ewropayê hewcedariyên zêdetir hene.
 
@@ -101,7 +101,7 @@ Heke hûn vegerin **taba Mîhengên Bacê** , hûn ê vebijêrkên nû yên berd
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Anîna Rêjeyên Bacê yên VAT
+### Anîna Rêjeyên Bacê yên VAT {#pulling-on-vat-tax-rates}
 
 Yek ji amûrên ku entegrasyona me zêde dike ev e ku dikare rêjeyên bacê ji bo welatên endamên EU bar bike. Ev dikare piştî çalakkirina piştgiriya EU VAT bi serdana rûpela edîtora rêjeyên bacê were kirin.
 
@@ -111,7 +111,7 @@ Li binê rûpelê, hûn ê vebijêrkên anîna VAT bibînin. Hilbijartina curey�
 
 Hûn dikarin nirxan piştî anîna wan jî sererast bikin. Ji bo vê, tenê rêza tabloyê ya ku hewce ye sererast bikin û klîk bikin da ku nirxên nû tomar bibin.
 
-### Pejirandina VAT
+### Pejirandina VAT {#vat-validation}
 
 Dema ku piştgiriya VAT çalak be, Ultimate Multisite dê qadeke zêde li forma checkout zêde bike, li bin qada navnîşana fatûreyê. Ev qada tenê ji bo kiryarên ku li EU ne xuya dibe.
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multitenència
+# Multitenència {#multi-tenancy}
 
 Distribueix subllocs entre servidors i bases de dades per millorar el rendiment i la seguretat
 
-## Aspectes destacats de la versió 1.2.0
+## Aspectes destacats de la versió 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 afegeix la base d’arrendatari sobirà per als fluxos de treball d’aïllament en producció:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 afegeix la base d’arrendatari sobirà per als fluxos de tr
 
 Consulta les guies d’usuari per al [flux de treball de migració sobirana](/user-guide/getting-started/sovereign-migration-workflow), l’[aïllament de multitenència](/user-guide/configuration/multi-tenancy-isolation) i les [operacions d’arrendatari sobirà](/user-guide/administration/sovereign-tenant-operations).
 
-## Requisits
+## Requisits {#requirements}
 
 - WordPress 5.3 o superior
 - PHP 7.4 o superior
 - plugin Multisite Ultimate (actiu)
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Puja els fitxers del complement al directori `/wp-content/plugins/`
 2. Activa el plugin a través del menú 'Plugins' de WordPress
 3. Configura els paràmetres del complement a l’administració de xarxa
 
-## Desenvolupament
+## Desenvolupament {#development}
 
-### Configuració
+### Configuració {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estructura del projecte
+### Estructura del projecte {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regles de modernització del codi
 ```
 
-### Proves
+### Proves {#testing}
 
 El complement inclou un marc de proves complet:
 
@@ -93,54 +93,54 @@ El complement inclou un marc de proves complet:
 - **Cobertura de proves**: Configurada per fer el seguiment de la cobertura del codi
 - **Proves multisite**: Les proves s’executen en un entorn multisite
 
-### Estàndards de codi
+### Estàndards de codi {#code-standards}
 
 - **Estàndards de codificació de WordPress**: Aplicats mitjançant PHPCS
 - **Compatibilitat amb PHP 7.4+**: Funcions modernes de PHP compatibles
 - **Anàlisi estàtica**: Integració de PHPStan per a la comprovació de tipus
 - **Modernització del codi**: Regles de Rector per a actualitzacions de PHP
 
-### Sistema de compilació
+### Sistema de compilació {#build-system}
 
 - **Processament d’actius**: Minificació per a fitxers CSS/JS
 - **Traducció**: Generació de fitxer POT
 - **Empaquetament**: Creació d’arxiu per a la distribució
 - **Mode de desenvolupament**: Actius no minificats per a la depuració
 
-## Configuració
+## Configuració {#configuration}
 
 El complement admet diverses opcions de configuració accessibles a través de la interfície d’administració de xarxa.
 
-### Configuració d’arrendatari sobirà
+### Configuració d’arrendatari sobirà {#sovereign-tenant-configuration}
 
 Per als arrendataris sobirans, configura la base de dades de l’arrendatari, l’arrel del sistema de fitxers, l’enllaç de l’amfitrió de base de dades i la capacitat de l’amfitrió abans d’encaminar el trànsit cap a l’arrendatari. Executa la verificació de migració després de cada canvi que afecti les credencials de la base de dades, l’enllaç de l’amfitrió, l’encaminament o l’aprovisionament d’usuaris.
 
 Utilitza `localhost` només quan el temps d’execució de l’arrendatari i les concessions de la base de dades esperin accés per sòcol local o a la mateixa màquina. Utilitza `127.0.0.1` o un nom d’amfitrió de servei quan aquest sigui l’amfitrió de concessió configurat pel teu proveïdor.
 
-### Capacitat de Hostinger
+### Capacitat de Hostinger {#hostinger-capability}
 
 La capacitat de multitenència de Hostinger funciona amb el token d’integració compartit de Hostinger. Confirma que el domini és present a hPanel, que el DNS apunta al compte de Hostinger i que els paràmetres de la base de dades de l’arrendatari coincideixen amb hPanel abans de la verificació.
 
-## Hooks i filtres
+## Hooks i filtres {#hooks-and-filters}
 
-### Accions
+### Accions {#actions}
 
 - `ultimate-multisite-addon-template_init` - S’activa després de la inicialització del complement
 - `ultimate-multisite-addon-template_loaded` - S’activa després que tots els fitxers del complement s’hagin carregat
 
-### Filtres
+### Filtres {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifica els paràmetres del complement
 - `ultimate-multisite-addon-template_enabled` - Sobreescriu l’estat d’activació/desactivació del complement
 
-## Llicència
+## Llicència {#license}
 
 Aquest complement està llicenciat sota la GPL v3 o posterior.
 
-## Suport
+## Suport {#support}
 
 Per a suport i documentació, visita [MultisiteUltimate.com](https://multisiteultimate.com)
-## Registre de canvis
+## Registre de canvis {#changelog}
 
 - Versió 1.2.0 (2026-06-03): afegeix autoinici de sessió d’arrendatari sense estat, capacitat de multitenència de Hostinger, aïllament de base de dades i sistema de fitxers per sublloc, portes de verificació de migració sobirana, millores en l’arrencada de l’arrendatari/escriptor de base de dades, enllaç configurable de l’amfitrió MySQL i desmuntatge sobirà més segur.
 

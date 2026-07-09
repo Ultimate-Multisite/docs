@@ -3,11 +3,11 @@ title: Webhook־באַהאַנדלונג
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# וועבהוק־באַהאַנדלונג
+# וועבהוק־באַהאַנדלונג {#webhook-handling}
 
 שאַפֿט אייגענע וועבהוק־ענדפּונקטן צו באַקומען געשעענישן פֿון אויסנווייניקע באַדינונגען און סינכראָניזירן דאַטן מיט Ultimate Multisite.
 
-## אייגענער וועבהוק־ענדפּונקט
+## אייגענער וועבהוק־ענדפּונקט {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## זיכערהייט־באַטראַכטונגען
+## זיכערהייט־באַטראַכטונגען {#security-considerations}
 
 - באַשטעטיקט שטענדיק וועבהוק־אונטערשריפטן ניצנדיק HMAC אָדער אַ געטיילטן סוד
 - ניצט אַ `permission_callback` אויף אייער REST־רוט — שטעלט עס קיינמאָל נישט אויף `__return_true` אין פּראָדוקציע

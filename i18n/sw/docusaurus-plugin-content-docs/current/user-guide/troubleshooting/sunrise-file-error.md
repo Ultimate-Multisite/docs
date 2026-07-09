@@ -3,7 +3,7 @@ title: Kosa la Faili la Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Hitilafu ya Kusakinisha Faili ya Sunrise
+# Hitilafu ya Kusakinisha Faili ya Sunrise {#error-installing-the-sunrise-file}
 
 Faili ya sunrise.php ni faili maalum ambayo WordPress inaitafuta wakati inapojiandaa kuanza kufanya kazi. Ili WordPress iweze kugundua faili ya sunrise.php, inahitaji kuwekwa ndani ya **folda ya wp-content**.
 

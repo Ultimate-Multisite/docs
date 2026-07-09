@@ -3,13 +3,13 @@ title: Opbygning af en brugerdefineret registrar-integration
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Opbygning af en brugerdefineret registrar-integration
+# Opbygning af en brugerdefineret registrar-integration {#building-a-custom-registrar-integration}
 
 Domain Seller addon bruger et **Integration Registry**-mønster. Hver registrar er en PHP-klasse, der implementerer `Domain_Selling_Capability` og registrerer sig selv via action hooket `wu_domain_seller_register_capabilities`.
 
 Denne guide viser, hvordan du tilslutter en brugerdefineret registrar.
 
-## Interfacet
+## Interfacet {#the-interface}
 
 Din klasse skal implementere `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` og udvide `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Valgfri metoder
+### Valgfri metoder {#optional-methods}
 
 Implementér disse for at låse op for yderligere funktioner. Addon'et registrerer understøttelse via `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementér disse for at låse op for yderligere funktioner. Addon'et registrer
 | `get_epp_code(string $domain_name): array` | Domæneoverførsel (udgående) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domæneoverførsel (indgående) |
 
-### Konvention for returværdi
+### Konvention for returværdi {#return-value-convention}
 
 Alle metoder returnerer et array med mindst en `success`-nøgle:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Registrering af din capability
+## Registrering af din capability {#registering-your-capability}
 
 Registrér din klasse ved hjælp af actionen `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Det første argument til `add_capability()` er **provider ID** — en slug med s
 
 ---
 
-## Tilføjelse af credential-felter til wizarden
+## Tilføjelse af credential-felter til wizarden {#adding-credential-fields-to-the-wizard}
 
 For at lade admins indtaste credentials via setup wizarden skal du registrere din integration:
 
@@ -137,7 +137,7 @@ Credentials gemmes som netværksindstillinger med felt-ID'erne som nøgler. Hent
 
 ---
 
-## Hooks til handlinger efter registrering
+## Hooks til handlinger efter registrering {#hooks-for-post-registration-actions}
 
 Brug disse actions til at udløse webhooks, provisionering, notifikationer eller CRM-opdateringer:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logning
+## Logning {#logging}
 
 Skriv til din udbyderspecifikke logkanal med `wu_log_add()`:
 

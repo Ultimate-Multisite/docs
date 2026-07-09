@@ -3,19 +3,19 @@ title: 'Lektion 10: Launch Day'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lektion 10: Der Starttag
+# Lektion 10: Der Starttag {#lesson-10-launch-day}
 
 Alles ist fertiggestellt. Bevor Sie die Türen öffnen, führt diese Lektion durch die Pre-Launch-Checkliste, um sicherzustellen, dass nichts kaputt, fehlt oder peinlich ist.
 
-## Wo wir aufgehört haben
+## Wo wir aufgehört haben {#where-we-left-off}
 
 FitSite hat Templates, Pläne, den Checkout, das Branding, das Onboarding und die Preisgestaltung konfiguriert. Jetzt überprüfen wir, ob alles funktioniert, und gehen live.
 
-## Pre-Launch-Checkliste
+## Pre-Launch-Checkliste {#pre-launch-checklist}
 
 Gehen Sie jeden Punkt durch. Lassen Sie nichts aus.
 
-### Plattform-Infrastruktur
+### Plattform-Infrastruktur {#platform-infrastructure}
 
 - [ ] Das Hosting ist stabil und hält der Last stand
 - [ ] Wildcard SSL ist aktiv und alle Subdomains werden über HTTPS bedient
@@ -23,7 +23,7 @@ Gehen Sie jeden Punkt durch. Lassen Sie nichts aus.
 - [ ] Backups sind konfiguriert und getestet (restaurieren Sie mindestens eines, um dies zu überprüfen)
 - [ ] Monitoring ist eingerichtet – Sie wissen, wenn die Plattform ausfällt
 
-### Templates
+### Templates {#templates}
 
 - [ ] Alle drei Templates laden auf neuen Websites korrekt
 - [ ] Der Platzhalter-Inhalt ist hilfreich und frei von Tippfehlern
@@ -32,7 +32,7 @@ Gehen Sie jeden Punkt durch. Lassen Sie nichts aus.
 - [ ] Die Ladegeschwindigkeit der Seite ist akzeptabel (testen Sie dies mit einem Tool wie GTmetrix oder PageSpeed Insights)
 - [ ] Es gibt keine fehlerhaften Links oder fehlende Assets auf irgendeinem Template
 
-### Pläne und Produkte
+### Pläne und Produkte {#plans-and-products}
 
 - [ ] Alle drei Pläne sind aktiv und sichtbar
 - [ ] Die Planbeschreibungen sind korrekt und nischenspezifisch
@@ -42,7 +42,7 @@ Gehen Sie jeden Punkt durch. Lassen Sie nichts aus.
 - [ ] Order Bumps erscheinen während des Checkouts korrekt
 - [ ] Die Einschränkungen für Plugins und Themes werden pro Plan korrekt durchgesetzt
 
-### Checkout-Flow
+### Checkout-Flow {#checkout-flow}
 
 - [ ] Führen Sie eine vollständige Testanmeldung für jeden Plan durch (verwenden Sie den Testzahlungsmodus)
 - [ ] Die Template-Auswahl zeigt die korrekten Templates pro Plan
@@ -52,7 +52,7 @@ Gehen Sie jeden Punkt durch. Lassen Sie nichts aus.
 - [ ] Der Kunde kann sich sofort auf seiner neuen Website anmelden
 - [ ] Rabattcodes funktionieren korrekt
 
-### Branding
+### Branding {#branding}
 
 - [ ] Die Login-Seite zeigt das FitSite-Branding
 - [ ] Das Admin-Dashboard zeigt das FitSite-Branding
@@ -60,7 +60,7 @@ Gehen Sie jeden Punkt durch. Lassen Sie nichts aus.
 - [ ] Rechnungen werden korrekt mit Ihren Geschäftsdaten angezeigt
 - [ ] Die Marketing-Seite ist live und verlinkt auf das Checkout-Formular
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Das Quick Start Widget erscheint auf den Dashboards neuer Kunden
 - [ ] Alle Quick Start Links führen zu den korrekten Seiten
@@ -68,7 +68,7 @@ Gehen Sie jeden Punkt durch. Lassen Sie nichts aus.
 - [ ] Knowledge Base Artikel sind veröffentlicht und zugänglich
 - [ ] Die Kontoseite zeigt die korrekten Planinformationen und Upgrade-Optionen
 
-### Rechtliches und Geschäftliches
+### Rechtliches und Geschäftliches {#legal-and-business}
 
 - [ ] Die Nutzungsbedingungen sind veröffentlicht und vom Checkout aus verlinkt
 - [ ] Die Datenschutzrichtlinie ist veröffentlicht und zugänglich
@@ -77,11 +77,11 @@ Gehen Sie jeden Punkt durch. Lassen Sie nichts aus.
 - [ ] Das Payment Gateway ist im Live-Modus (nicht im Testmodus)
 - [ ] Die Steuerkonfiguration ist für Ihre Gerichtsbarkeit korrekt
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Betrachten Sie einen zweistufigen Launch:
 
-### Phase 1: Soft Launch
+### Phase 1: Soft Launch {#phase-1-soft-launch}
 
 Laden Sie 5–10 Besitzer von Fitnessstudios ein, sich vor dem öffentlichen Start anzumelden. Das sind Ihre Beta-Kunden. Bieten Sie ihnen im Gegenzug für:
 
@@ -93,7 +93,7 @@ Laden Sie 5–10 Besitzer von Fitnessstudios ein, sich vor dem öffentlichen Sta
 
 Dies gibt Ihnen echtes Kundenfeedback und Live-Websites, die Sie vor der Öffnung für die Öffentlichkeit zeigen können.
 
-### Phase 2: Public Launch
+### Phase 2: Public Launch {#phase-2-public-launch}
 
 Sobald das Feedback aus dem Soft Launch integriert wurde:
 
@@ -102,7 +102,7 @@ Sobald das Feedback aus dem Soft Launch integriert wurde:
 - Beginnen Sie mit der Kundengewinnung (Lektion 11)
 - Kündigen Sie es auf relevanten Branchenkanälen an
 
-## Maßnahmen für den Starttag
+## Maßnahmen für den Starttag {#launch-day-actions}
 
 Am Tag des öffentlichen Starts:
 
@@ -112,7 +112,7 @@ Am Tag des öffentlichen Starts:
 4. **Erreichbar sein** – Ihre ersten echten Kunden benötigen möglicherweise Hilfe, und eine schnelle Reaktion schafft Vertrauen
 5. **Kurz feiern** – und dann wieder mit der Arbeit beginnen
 
-## Was schiefgehen kann
+## Was schiefgehen kann {#what-can-go-wrong}
 
 Seien Sie auf Folgendes vorbereitet:
 
@@ -122,7 +122,7 @@ Seien Sie auf Folgendes vorbereitet:
 - **Leistung unter Last**: Wenn Sie einen Traffic-Anstieg erleben, wissen Sie, wie Sie Ihr Hosting skalieren können
 - **Verwirrung des Kunden**: Halten Sie Ihre Knowledge Base und Support-Kanäle bereit
 
-## Das FitSite Network bisher
+## Das FitSite Network bisher {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -140,7 +140,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Was wir in dieser Lektion aufgebaut haben
+## Was wir in dieser Lektion aufgebaut haben {#what-we-built-this-lesson}
 
 - **Eine umfassende Pre-Launch-Checkliste**, die Infrastruktur, Inhalte, Zahlungen und rechtliche Aspekte abdeckt
 - **Eine Soft-Launch-Strategie**, um vor dem öffentlichen Start echtes Feedback zu erhalten

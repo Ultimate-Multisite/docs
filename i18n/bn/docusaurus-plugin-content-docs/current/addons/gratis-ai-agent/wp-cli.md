@@ -3,11 +3,11 @@ title: WP-CLI Reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI রেফারেন্স
+# WP-CLI রেফারেন্স {#wp-cli-reference}
 
 Gratis AI Agent ব্যবহার করার জন্য `wp gratis-ai-agent` কমান্ড ফ্যামিলিটি দেওয়া হয়েছে। এটি ব্যবহার করে আপনি কমান্ড লাইন থেকে এজেন্টকে পরীক্ষা করতে, এর ক্ষমতা (abilities) পরিচালনা করতে এবং এজেন্টের বর্তমান অবস্থা জানতে পারবেন। সমস্ত কমান্ডের জন্য WP-CLI ২.০ বা তার বেশি সংস্করণ প্রয়োজন।
 
-## ইনস্টলেশন
+## ইনস্টলেশন {#installation}
 
 প্লাগইনটি সক্রিয় করার সাথে সাথে WP-CLI কমান্ডগুলি স্বয়ংক্রিয়ভাবে রেজিস্টার হয়ে যায়। এটি যাচাই করতে নিচের কমান্ডটি ব্যবহার করুন:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 এটি এজেন্ট ক্যাপাবিলিটি বেঞ্চমার্ক স্যুট (Agent Capabilities benchmark suite) চালায়। এটি এমন এক সেট জটিল, বহু-ধাপের প্রম্পট যা এজেন্টের সমস্ত ক্ষমতা পরীক্ষা করে। মডেলের পারফরম্যান্স মূল্যায়ন করতে, বিভিন্ন AI প্রোভাইডারের মধ্যে তুলনা করতে, বা প্রোডাকশনে ব্যবহারের আগে ক্ষমতা প্যাকগুলি যাচাই করতে এটি ব্যবহার করুন।
 
-### সংক্ষিপ্ত বিবরণ (Synopsis)
+### সংক্ষিপ্ত বিবরণ (Synopsis) {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### অপশনসমূহ (Options)
+### অপশনসমূহ (Options) {#options}
 
 | অপশন | বিবরণ |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | আউটপুট ফরম্যাট: `table` (ডিফল্ট), `json`, `csv` |
 | `--save` | ঐতিহাসিক তুলনার জন্য বেঞ্চমার্ক ফলাফল ডেটাবেসে সংরক্ষণ করুন |
 
-### উদাহরণ (Examples)
+### উদাহরণ (Examples) {#examples}
 
 বর্তমান প্রোভাইডার এবং মডেল ব্যবহার করে সম্পূর্ণ বেঞ্চমার্ক স্যুটটি চালান:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### আউটপুট (Output)
+### আউটপুট (Output) {#output}
 
 বেঞ্চমার্কটি প্রতিটি প্রশ্নের জন্য একটি করে সারি (row) আউটপুট করে, যেখানে নিম্নলিখিত কলামগুলি থাকে:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### বেঞ্চমার্ক প্রশ্নসমূহ (Benchmark Questions)
+### বেঞ্চমার্ক প্রশ্নসমূহ (Benchmark Questions) {#benchmark-questions}
 
 ডিফল্ট স্যুটটিতে নিম্নলিখিত প্রশ্নগুলি অন্তর্ভুক্ত:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 ইনস্টল করা ক্ষমতা এবং ক্ষমতা প্যাকগুলি পরিচালনা করে।
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 রেজিস্টার্ড সমস্ত ক্ষমতা, তাদের উৎস (core নাকি pack), এবং তাদের বর্তমান স্থিতি তালিকাভুক্ত করে।
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 রেজিস্ট্রি থেকে একটি ক্ষমতা প্যাক ডাউনলোড করে সক্রিয় করে।
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 প্যাকটি সরিয়ে না দিয়ে একটি নির্দিষ্ট ক্ষমতা নিষ্ক্রিয় করে দেয়। এটি কোনো নির্দিষ্ট সাইটে এজেন্টের পরিধি সীমিত করার জন্য উপযোগী।
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 আগে থেকে নিষ্ক্রিয় করা একটি ক্ষমতা পুনরায় সক্রিয় করে।
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 বর্তমান এজেন্ট কনফিগারেশন এবং কানেক্টিভিটি স্থিতি প্রদর্শন করে।
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 ডিবাগ লগ থেকে সাম্প্রতিক এজেন্টের কার্যকলাপ প্রদর্শন করে।
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 এজেন্টের অবস্থা রিসেট করে: ইনজেক্ট করা CSS পরিষ্কার করে, এজেন্ট দ্বারা রেজিস্টার করা CPT এবং ট্যাক্সোনমি সরিয়ে দেয়, গ্লোবাল স্টাইল রিসেট করে এবং এজেন্টের অপশন ক্যাশে খালি করে। এটি প্লাগইন বা এর সেটিংস সরিয়ে দেয় না।
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## এক্সিট কোড (Exit Codes)
+## এক্সিট কোড (Exit Codes) {#exit-codes}
 
 সমস্ত কমান্ড সফল হলে `0` এক্সিট করে। নন-জিরো এক্সিট কোডগুলি:
 

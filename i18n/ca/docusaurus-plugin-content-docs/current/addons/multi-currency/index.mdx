@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency permet que la teva xarxa accepti pagaments en múltiples divises. Converteix els preus automàticament utilitzant tipus de canvi en temps real o manuals, et permet establir preus exactes per producte per a qualsevol divisa i detecta la divisa preferida de cada visitant mitjançant geolocalització, tot gestionat des d'un únic *dashboard* d'administració.
 
-## Funcionalitats Clau
+## Funcionalitats Clau {#key-features}
 
 - **Conversió automàtica de tipus de canvi** — els preus es converteixen des de la teva divisa base utilitzant tipus de canvi obtinguts del proveïdor que hagis triat.
 - **Derogacions de preus per producte** — configura preus exactes específiques de divisa en qualsevol producte per saltar la conversió automàtica.
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency permet que la teva xarxa accepti pagaments en
 - **Detecció de divisa basada en geolocalització** — preselecciona automàticament la divisa que coincideixi amb el país del visitant.
 - **Dashboard d'administració** — gestiona les divises actives, els tipus de canvi i la configuració dels proveïdors des d'un únic lloc.
 
-## Requisits
+## Requisits {#requirements}
 
 - Ultimate Multisite 2.0.0 o més recent
 - Instal·lació de WordPress Multisite
 - PHP 7.4 o més recent
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Carrega els fitxers del *plugin* a `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Activa el *plugin* a través de la pantalla de **Plugins** de WordPress (Activació de Xarxa)
 3. Navega a **Ultimate Multisite → Multi-Currency** per obrir el *dashboard* d'administració.
 4. Afafeu les divises que voleu acceptar i configureu el vostre proveïdor de tipus de canvi.
 
-## Configuració
+## Configuració {#configuration}
 
-### Dashboard d'Administració
+### Dashboard d'Administració {#admin-dashboard}
 
 El *dashboard* d'administració de Multi-Currency (**Ultimate Multisite → Multi-Currency**) és el lloc central per:
 
@@ -44,7 +44,7 @@ El *dashboard* d'administració de Multi-Currency (**Ultimate Multisite → Mult
 - Revisar els tipus actuals de totes les divises actives.
 - Establir tipus manuals quan els proveïdors automàtics no són adequats.
 
-### Proveïdors de Tipus de Canvi
+### Proveïdors de Tipus de Canvi {#exchange-rate-providers}
 
 | Proveïdor | Descripció |
 |---|---|
@@ -55,7 +55,7 @@ El *dashboard* d'administració de Multi-Currency (**Ultimate Multisite → Mult
 
 Seleccioneu el vostre proveïdor sota **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Els tipus poden refrescar-se manualment en qualsevol moment o programar-se per actualitzar-se automàticament.
 
-### Derogacions de Preus per Producte
+### Derogacions de Preus per Producte {#per-product-pricing-overrides}
 
 Quan la conversió automàtica no és prou precisa, podeu establir un preu exact per a una divisa específica en qualsevol producte:
 
@@ -66,7 +66,7 @@ Quan la conversió automàtica no és prou precisa, podeu establir un preu exact
 
 Els productes sense derogació utilitzen el preu convertit de la vostra divisa base.
 
-### Camp de Selector de Divisa al Registre
+### Camp de Selector de Divisa al Registre {#currency-selector-signup-field}
 
 El camp de selector de divisa es pot afegir al vostre flux de registre/checkout perquè els clients trien la divisa que prefereixen al registrar-se:
 
@@ -76,7 +76,7 @@ El camp de selector de divisa es pot afegir al vostre flux de registre/checkout 
 
 La divisa seleccionada es guarda amb la subscripció i s'utilitza per a tota la facturació posterior.
 
-### Detecció de Divisa basada en Geolocalització
+### Detecció de Divisa basada en Geolocalització {#geolocation-based-currency-detection}
 
 Quan la detecció de geolocalització està activada, l'addon mapeja el país del visitant a una divisa i la preselecciona al camp de selector de divisa. Per activar-ho:
 
@@ -86,27 +86,27 @@ Quan la detecció de geolocalització està activada, l'addon mapeja el país de
 
 Si no hi ha mapeig per un país visitant, es fa servir la divisa base de la xarxa com a alternativa.
 
-## Preguntes Freqüents
+## Preguntes Freqüents {#frequently-asked-questions}
 
-### Què passa si un proveïdor de tipus de canvi no està disponible?
+### Què passa si un proveïdor de tipus de canvi no està disponible? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 L'addon es retira als últims tipus obtinguts amb èxit. Si mai no s'han obtingut tipus, es retira als tipus manuals que heu configurat. Es recomana configurar tipus manuals com a net de seguretat.
 
-### Estic a la voluntat d'utilitzar proveïdors diferents per a divises diferents?
+### Estic a la voluntat d'utilitzar proveïdors diferents per a divises diferents? {#can-i-use-different-providers-for-different-currencies}
 
 No — un proveïdor és actiu a la vegada per a totes les divises. Utitzeu **Manual** si necessiteu control complet sobre els tipus individuals.
 
-### La geolocalització requereix un *plugin* separat?
+### La geolocalització requereix un *plugin* separat? {#does-geolocation-require-a-separate-plugin}
 
 No és necessari cap *plugin* de geolocalització extern. L'addon utilitza la detecció IP-a-país integrada de WordPress. Per a una major precisió, es pot integrar un servei de geolocalització dedicat mitjançant els *hooks* de filtre proporcionats.
 
-### Les derogacions per producte es compleixen abans o després de l'impost?
+### Les derogacions per producte es compleixen abans o després de l'impost? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Les derogacions per producte estableixen el preu abans de l'impost en la divisa objectiu. L'impost es calcula sobre el preu de la derogació utilitzant la vostra configuració d'impostos existent.
 
-## Historial de Versió
+## Historial de Versió {#changelog}
 
-### Versió 1.0.0 — Llibertat el 2026-04-02
+### Versió 1.0.0 — Llibertat el 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nou: Suport a múltiples divises amb conversió automàtica de tipus de canvi.
 - Nou: Derogacions de preus per producte per a preus exactes específics de divisa.

@@ -3,7 +3,7 @@ title: Ακύρωση συνδρομής
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Ακύρωση συνδρομής μέλους (v2)
+# Ακύρωση συνδρομής μέλους (v2) {#canceling-a-membership-v2}
 
 _**ΣΗΜΑΝΤΙΚΗ ΣΗΜΕΙΩΣΗ: Αυτό το άρθρο αναφέρεται στο Ultimate Multisite έκδοση 2.x.**_
 

@@ -3,7 +3,7 @@ title: Ukulawula amakhonkco ekwabelwana ngawo ezicwangciso
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Ukulawula Amakhonkco Anokwabelwana Ngawo Ezicwangciso
+# Ukulawula Amakhonkco Anokwabelwana Ngawo Ezicwangciso {#managing-shareable-links-for-plans}
 
 Ultimate Multisite ikunika ukhetho lokwabelana ngamakhonkco esicwangciso ngqo nabathengi bakho. Ukuze wenze oku, yiya nakweliphi na iphepha lokuhlela lezicwangciso zakho uze ucofe iqhosha elithi _Cofa ukukopa iKhonkco elinokwabelwana ngalo_.
 

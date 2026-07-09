@@ -3,19 +3,19 @@ title: '13. nodarbība: Mērogošana'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# 13. nodarbība: Mērogošana
+# 13. nodarbība: Mērogošana {#lesson-13-scaling-up}
 
 Jums ir strādājoša platforma ar maksājošiem klientiem. Šī nodarbība aptver, kā izaugt no nelielas darbības līdz ilgtspējīgam biznesam -- mērogojot infrastruktūru, automatizējot darbības un palielinot ieņēmumus no katra klienta.
 
-## Kur mēs palikām
+## Kur mēs palikām {#where-we-left-off}
 
 FitSite darbojas, klienti reģistrējas, un jūs veicat ikdienas darbības. Tagad koncentrējamies uz izaugsmi.
 
-## Pārziniet savus skaitļus
+## Pārziniet savus skaitļus {#know-your-numbers}
 
 Pirms mērogošanas saprotiet, kur atrodaties:
 
-### Galvenie rādītāji
+### Galvenie rādītāji {#key-metrics}
 
 - **MRR (ikmēneša atkārtotie ieņēmumi)**: Kopējie mēneša abonementu ieņēmumi
 - **Klientu skaits**: Kopējais aktīvo abonentu skaits
@@ -24,7 +24,7 @@ Pirms mērogošanas saprotiet, kur atrodaties:
 - **LTV (klienta dzīves cikla vērtība)**: Vidējie ieņēmumi no klienta visā viņa abonementa laikā
 - **CAC (klienta piesaistes izmaksas)**: Vidējās izmaksas viena klienta piesaistei
 
-### Piemērs: FitSite ar 50 klientiem
+### Piemērs: FitSite ar 50 klientiem {#example-fitsite-at-50-customers}
 
 | Rādītājs | Vērtība |
 |--------|-------|
@@ -36,9 +36,9 @@ Pirms mērogošanas saprotiet, kur atrodaties:
 
 Šie skaitļi norāda, kam pievērst uzmanību. Augsta atteikšanās? Uzlabojiet noturēšanu. Zems ARPU? Virziet jauninājumus. Augsts CAC? Optimizējiet piesaistes kanālus.
 
-## Infrastruktūras mērogošana
+## Infrastruktūras mērogošana {#scaling-infrastructure}
 
-### Kad mērogot
+### Kad mērogot {#when-to-scale}
 
 Mērogojiet hostingu, kad:
 
@@ -47,7 +47,7 @@ Mērogojiet hostingu, kad:
 - Jūs tuvojaties 100+ aktīvām vietnēm
 - Palielinās klientu sūdzības par ātrumu
 
-### Kā mērogot
+### Kā mērogot {#how-to-scale}
 
 - **Vertikālā mērogošana**: Jauniniet uz lielāku serveri (vairāk CPU, RAM)
 - **Kešatmiņas slāņi**: Pievienojiet Redis/Memcached objektu kešatmiņai, lapu kešatmiņu statiskam saturam
@@ -55,7 +55,7 @@ Mērogojiet hostingu, kad:
 - **Datubāzes optimizācija**: Tīklam augot, datubāzes vaicājumi palēninās. Optimizējiet tabulas, pievienojiet indeksus, apsveriet atsevišķu datubāzes serveri.
 - **Atdaliet atbildības jomas**: Pārvietojiet multivides glabāšanu uz objektu glabātuvi (S3 saderīgu), nododiet e-pastu transakcionāla e-pasta pakalpojumam
 
-### Hostinga migrācija
+### Hostinga migrācija {#hosting-migration}
 
 Ja jūsu pašreizējais hostings vairs nevar mērogoties, plānojiet migrāciju:
 
@@ -65,11 +65,11 @@ Ja jūsu pašreizējais hostings vairs nevar mērogoties, plānojiet migrāciju:
 4. Iepriekš atjauniniet DNS ar minimālu TTL
 5. Pārbaudiet, vai pēc migrācijas viss darbojas
 
-## Darbību automatizēšana
+## Darbību automatizēšana {#automating-operations}
 
 Augot manuālie procesi kļūst par šaurajām vietām. Automatizējiet, ko varat:
 
-### Webhooks un Zapier
+### Webhooks un Zapier {#webhooks-and-zapier}
 
 Izmantojiet [Webhooks](/user-guide/integrations/webhooks) vai [Zapier](/user-guide/integrations/zapier), lai automatizētu:
 
@@ -78,7 +78,7 @@ Izmantojiet [Webhooks](/user-guide/integrations/webhooks) vai [Zapier](/user-gui
 - **Maksājumu kļūmes** → brīdinājums jūsu uzraudzības rīkā
 - **Plānu jauninājumi** → apsveikuma e-pasts ar jauno funkciju ceļvedi
 
-### E-pasta automatizācija
+### E-pasta automatizācija {#email-automation}
 
 Pārejiet no manuāliem e-pastiem uz automatizētām secībām:
 
@@ -87,30 +87,30 @@ Pārejiet no manuāliem e-pastiem uz automatizētām secībām:
 - Jaunināšanas aicinājumi, kad klienti tuvojas plāna limitiem
 - Atjaunošanas atgādinājumi gada abonentiem
 
-### Atbalsta automatizācija
+### Atbalsta automatizācija {#support-automation}
 
 - **Sagatavotas atbildes** biežiem jautājumiem
 - **Automātiskas atbildes**, kas apstiprina atbalsta pieteikumu saņemšanu
 - **Zināšanu bāzes ieteikumi**, kad klienti iesniedz pieteikumus, kas atbilst esošiem rakstiem
 
-## Ieņēmumu palielināšana
+## Ieņēmumu palielināšana {#increasing-revenue}
 
 Izaugsme nav tikai par vairāk klientiem. Tā ir arī par lielākiem ieņēmumiem no katra klienta.
 
-### Papildu pārdošana esošajiem klientiem
+### Papildu pārdošana esošajiem klientiem {#upselling-existing-customers}
 
 - **Plānu jauninājumi**: Mērķētas kampaņas, kas Starter klientiem rāda Growth/Pro funkcijas
 - **Pasūtījuma papildpiedāvājumi**: Reklamējiet papildproduktus esošajiem klientiem e-pastā
 - **Pāreja uz gada maksājumu**: Piedāvājiet mēneša klientiem atlaidi, lai pārietu uz gada norēķiniem
 
-### Jaunas ieņēmumu plūsmas
+### Jaunas ieņēmumu plūsmas {#new-revenue-streams}
 
 - **Iestatīšana jūsu vietā**: Iekasējiet piemaksu par klienta vietnes iestatīšanu un pielāgošanu viņa vietā
 - **Pielāgota dizaina pakalpojumi**: Piedāvājiet individuālu dizaina darbu papildus veidnei
 - **Apmācību sesijas**: Maksas individuāli praktiski ievadi klientiem, kuri vēlas palīdzību darbā ar sistēmu
 - **Premium plugins**: Piedāvājiet nišai specifiskus premium plugins kā maksas papildinājumus (piem., fitnesa nodarbību rezervēšanas logrīku)
 
-### Cenu paaugstināšana
+### Cenu paaugstināšana {#raising-prices}
 
 Kad jūsu platforma nobriest un pievieno vērtību:
 
@@ -118,7 +118,7 @@ Kad jūsu platforma nobriest un pievieno vērtību:
 - Paaugstiniet cenas jaunām reģistrācijām
 - Pamatojiet paaugstinājumus ar jaunām funkcijām un uzlabojumiem
 
-## Komandas veidošana
+## Komandas veidošana {#building-a-team}
 
 Kādā brīdī jūs nevarēsiet visu darīt viens. Biežākās pirmās pieņemšanas darbā:
 
@@ -128,7 +128,7 @@ Kādā brīdī jūs nevarēsiet visu darīt viens. Biežākās pirmās pieņemš
 
 Jums nav obligāti vajadzīgi darbinieki. Līgumdarbinieki un ārštata speciālisti labi darbojas platformas biznesā.
 
-## Izaugsmes atskaites punkti
+## Izaugsmes atskaites punkti {#growth-milestones}
 
 | Atskaites punkts | Aptuvenais MRR | Fokuss |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Jums nav obligāti vajadzīgi darbinieki. Līgumdarbinieki un ārštata speciāl
 | 250-500 klienti | $25,000-$50,000 | Komandas veidošana, jaunas ieņēmumu plūsmas, premium funkcijas |
 | 500+ klienti | $50,000+ | Platformas briedums, blakus nišas, potenciāla pārdošana |
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Rādītāju ietvaru**, lai saprastu biznesa veselību
 - **Infrastruktūras mērogošanas plānu** izaugsmei no desmitiem līdz simtiem vietņu

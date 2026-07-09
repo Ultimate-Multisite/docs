@@ -4,11 +4,11 @@ title: Criathrag - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Criathrag: auth_cookie_expiration
+# Criathrag: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Criathraichidh seo fad ùine crìochnachaidh a’ bhriosgaid dearbhaidh.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Criathraichidh seo fad ùine crìochnachaidh a’ bhriosgaid dearbhaidh.
 | $user_id | `int` | ID a’ chleachdaiche. |
 | $remember | `bool` | Am bu chòir logadh a-steach a’ chleachdaiche a chuimhneachadh. Bun-roghainn false. |
 
-### Bho
+### Bho {#since}
 
 - 2.8.0
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) aig loidhne 52

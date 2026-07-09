@@ -3,11 +3,11 @@ title: Référence des paramètres
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Référence des réglages
+# Référence des réglages {#settings-reference}
 
 Cette page suit les réglages qui affectent l’administration quotidienne et les changements récents de comportement dans Ultimate Multisite.
 
-## Autres options
+## Autres options {#other-options}
 
 La zone **Other Options** apparaît sous **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ La zone **Other Options** apparaît sous **Ultimate Multisite > Settings > Login
 |---|---|
 | **Enable Jumper** | Affiche l’outil de navigation rapide Jumper dans la zone d’administration. Utilisez-le pour accéder directement aux écrans Ultimate Multisite, aux objets du réseau et aux destinations d’administration prises en charge. Désactivez-le si vous ne voulez pas que ce raccourci soit visible. |
 
-## Signalement des erreurs et télémétrie
+## Signalement des erreurs et télémétrie {#error-reporting-and-telemetry}
 
 L’ancien réglage d’adhésion au signalement des erreurs a été supprimé de la page des réglages. La télémétrie anonyme est désactivée et il n’existe aucun bouton dans l’UI pour l’activer.
 
 Si vous maintenez des runbooks internes ou des captures d’écran pour la page des réglages, supprimez les références à l’ancien champ d’adhésion au signalement des erreurs afin que les administrateurs ne cherchent pas un réglage qui n’est plus présent.
 
-## Réglages d’importation/exportation
+## Réglages d’importation/exportation {#importexport-settings}
 
 L’onglet de réglages **Import/Export** décrit les réglages qu’il contrôle et fournit un lien direct vers **Ultimate Multisite > Site Export** pour les archives de site et de réseau. Utilisez l’onglet des réglages pour la configuration d’importation/exportation, utilisez **Tools > Export & Import** pour le flux de travail d’exportation/importation d’un seul site, et utilisez l’outil Site Export lorsque vous avez besoin d’une archive complète Network Export.
 
-## Avertissement de solde Domain Seller HostAfrica
+## Avertissement de solde Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Lorsque l’addon Domain Seller est connecté à HostAfrica, les administrateurs réseau voient désormais un avertissement de solde faible pouvant être ignoré lorsque le solde du compte revendeur est trop bas pour un traitement fiable des enregistrements ou des renouvellements de domaines.
 
 Traitez cet avis comme un avertissement opérationnel : rechargez le solde revendeur HostAfrica avant d’accepter davantage d’enregistrements de domaines payants, puis revenez aux réglages Domain Seller ou à l’écran de surveillance des domaines pour confirmer que les enregistrements et les renouvellements peuvent continuer normalement.
 
-## Réglages des connecteurs de fournisseurs d’IA
+## Réglages des connecteurs de fournisseurs d’IA {#ai-provider-connector-settings}
 
 Les réglages des connecteurs de fournisseurs d’IA exposent désormais uniquement les pools de comptes OAuth pris en charge :
 

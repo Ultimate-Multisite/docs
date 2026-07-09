@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI سائيٽ بلڊر
+# AI سائيٽ بلڊر {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## گهرجون
+## گهرجون {#requirements}
 
 - WordPress 5.3 يا وڌيڪ
 - PHP 7.4 يا وڌيڪ
 - Multisite Ultimate پلگ اِن (فعال)
 
-## انسٽاليشن
+## انسٽاليشن {#installation}
 
 1. addon فائلون پنهنجي `/wp-content/plugins/` ڊائريڪٽري ۾ اپلوڊ ڪريو
 2. WordPress ۾ 'Plugins' مينيو ذريعي پلگ اِن فعال ڪريو
 3. نيٽ ورڪ ايڊمن ۾ addon سيٽنگون ترتيب ڏيو
 
-## ڊولپمينٽ
+## ڊولپمينٽ {#development}
 
-### سيٽ اپ
+### سيٽ اپ {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### منصوبي جي جوڙجڪ
+### منصوبي جي جوڙجڪ {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # ڪوڊ جديد ڪرڻ جا قاعدا
 ```
 
-### ٽيسٽنگ
+### ٽيسٽنگ {#testing}
 
 addon ۾ هڪ جامع ٽيسٽنگ فريم ورڪ شامل آهي:
 
@@ -79,44 +79,44 @@ addon ۾ هڪ جامع ٽيسٽنگ فريم ورڪ شامل آهي:
 - **ٽيسٽ ڪوريج**: ڪوڊ ڪوريج ٽريڪ ڪرڻ لاءِ ترتيب ڏنل
 - **ملٽي سائيٽ ٽيسٽنگ**: ٽيسٽ ملٽي سائيٽ ماحول ۾ هلن ٿا
 
-### ڪوڊ معيار
+### ڪوڊ معيار {#code-standards}
 
 - **WordPress ڪوڊنگ معيار**: PHPCS ذريعي لاڳو ڪيل
 - **PHP 7.4+ مطابقت**: جديد PHP خاصيتون سپورٽ ٿيل
 - **جامد تجزيو**: قسم چيڪنگ لاءِ PHPStan انٽيگريشن
 - **ڪوڊ جديد ڪرڻ**: PHP اپگريڊن لاءِ Rector قاعدا
 
-### بلڊ سسٽم
+### بلڊ سسٽم {#build-system}
 
 - **اثاثن جي پروسيسنگ**: CSS/JS فائلن لاءِ منيفڪيشن
 - **ترجمو**: POT فائل ٺاهڻ
 - **پيڪيجنگ**: ورڇ لاءِ آرڪائيو ٺاهڻ
 - **ڊولپمينٽ موڊ**: ڊيبگنگ لاءِ اڻ منيفاءِ ٿيل اثاثا
 
-## ترتيب
+## ترتيب {#configuration}
 
 addon مختلف ترتيب اختيارن کي سپورٽ ڪري ٿو، جيڪي نيٽ ورڪ ايڊمن انٽرفيس ذريعي پهچ لائق آهن.
 
-## Hooks ۽ Filters
+## Hooks ۽ Filters {#hooks-and-filters}
 
-### عمل
+### عمل {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - addon جي شروعات کان پوءِ هلندو آهي
 - `ultimate-multisite-ai-site-builder_loaded` - سڀ addon فائلون لوڊ ٿيڻ کان پوءِ هلندو آهي
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - addon سيٽنگون تبديل ڪريو
 - `ultimate-multisite-ai-site-builder_enabled` - addon جي فعال/غير فعال حالت کي اوور رائيڊ ڪريو
 
-## لائسنس
+## لائسنس {#license}
 
 هي addon GPL v3 يا ان کان پوءِ واري لائسنس تحت لائسنس ٿيل آهي.
 
-## سپورٽ
+## سپورٽ {#support}
 
 سپورٽ ۽ دستاويزن لاءِ، [MultisiteUltimate.com](https://multisiteultimate.com) تي وڃو
-## تبديلي لاگ
+## تبديلي لاگ {#changelog}
 
 - ورزن 1.0.1 (2025-09-28): prefix کي ultimate-multisite ۾ نالو مٽايو؛ text domain اپڊيٽ ڪريو؛ ورزن وڌايو.
 

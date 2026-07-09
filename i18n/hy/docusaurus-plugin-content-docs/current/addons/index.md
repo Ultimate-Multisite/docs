@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite հավելումներ
+# Ultimate Multisite հավելումներ {#ultimate-multisite-addons}
 
 Հավելումները ընդլայնում են Ultimate Multisite-ը՝ ավելացնելով լրացուցիչ գործառույթներ և ինտեգրումներ։ Հավելումների մեծ մասը վճարովի է և կարելի է գնել [ultimatemultisite.com](https://ultimatemultisite.com)-ից։
 
-## Տեղադրում
+## Տեղադրում {#installation}
 
 Հավելումները կարող են տեղադրվել երկու եղանակով՝
 
 1. **Հավելումների էջի միջոցով** -- Գնացեք ձեր կայքի հավելումների կառավարման էջը WordPress ադմինում
 2. **Ձեռքով ներբեռնում** -- Ներբեռնեք [ձեր Account-ից](https://ultimatemultisite.com/my-account/downloads/) և վերբեռնեք Պլագիններ > Ավելացնել նոր բաժնի միջոցով
 
-## Հասանելի հավելումներ
+## Հասանելի հավելումներ {#available-addons}
 
 | Հավելում | Նկարագրություն |
 |-------|-------------|

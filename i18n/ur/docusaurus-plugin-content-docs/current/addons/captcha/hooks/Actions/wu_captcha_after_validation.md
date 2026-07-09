@@ -4,20 +4,20 @@ title: عمل - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# Action: wu_captcha_after_validation
+# Action: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
 
 کیپچا کی تصدیق (validation) کے بعد یہ عمل (action) چلتا ہے۔
 
-## پیرامیٹرز (Parameters)
+## پیرامیٹرز (Parameters) {#parameters}
 
 | نام (Name) | قسم (Type) | تفصیل (Description) |
 |------|------|-------------|
 | $result | `array` | تصدیق کا نتیجہ (validation result)۔ |
 | $token | `string` | وہ ٹوکن جو تصدیق کیا گیا تھا۔ |
 
-### سے (Since)
+### سے (Since) {#since}
 
 - 1.2.0
-### ماخذ (Source)
+### ماخذ (Source) {#source}
 
 [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L224) میں لائن 224 پر بیان کیا گیا ہے۔

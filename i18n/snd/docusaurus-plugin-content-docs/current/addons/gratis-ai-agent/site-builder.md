@@ -3,15 +3,15 @@ title: سائيٽ ٺاهيندڙ جي هم آهنگي v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# سائيٽ بلڊر آرڪيسٽريشن v2
+# سائيٽ بلڊر آرڪيسٽريشن v2 {#site-builder-orchestration-v2}
 
 سائيٽ بلڊر آرڪيسٽريشن v2 (Gratis AI Agent v1.4.0 ۾ متعارف ڪرايل) اهو انجڻ آهي جيڪو گهڻن مرحلن واري ويب سائيٽ ٺاهڻ کي طاقت ڏئي ٿو. جڏهن توهان agent کي "ريسٽورنٽ ويب سائيٽ ٺاهيو" يا "بلاگ سان گڏ پورٽ فوليو ٺاهيو" چوندا آهيو، orchestrator انهيٰ اعليٰ سطح جي مقصد کي هڪ منظم **رٿا** ۾ ورهائي ٿو، ان کي پورو ڪرڻ لاءِ گهربل plugins ڳولي ٿو، هر قدم کي ترتيب سان هلائي ٿو، اڳڀرائي کي ٽريڪ ڪري ٿو، ۽ غلطين مان خودمختيار طور بحال ٿئي ٿو.
 
 ---
 
-## اهو ڪيئن ڪم ڪري ٿو
+## اهو ڪيئن ڪم ڪري ٿو {#how-it-works}
 
-### 1. رٿا جي تياري
+### 1. رٿا جي تياري {#1-plan-generation}
 
 جڏهن agent کي سائيٽ ٺاهڻ جي هدايت ملي ٿي، اهو JSON **سائيٽ رٿا** پيدا ڪرڻ لاءِ `create_site_plan` صلاحيت کي سڏي ٿو. رٿا بيان ڪري ٿي:
 
@@ -61,7 +61,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 }
 ```
 
-### 2. Plugin جي ڳولا
+### 2. Plugin جي ڳولا {#2-plugin-discovery}
 
 عمل شروع ٿيڻ کان اڳ، orchestrator رٿا جي `plugin_requirements` کي اسڪين ڪري ٿو ۽ چيڪ ڪري ٿو ته ڪهڙا plugins اڳ ۾ ئي فعال آهن. غائب plugins لاءِ، اهو:
 
@@ -71,7 +71,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 
 Plugin ڳولا جون ناڪاميون موتمار ناهن — orchestrator متاثر قدمن کي `skipped` طور نشان لڳائي ٿو ۽ رٿا جي باقي حصي سان جاري رهي ٿو.
 
-### 3. رٿا جو عملدرآمد
+### 3. رٿا جو عملدرآمد {#3-plan-execution}
 
 orchestrator رٿا ID سان `execute_site_plan` کي سڏي ٿو. عملدرآمد مرحلو بہ مرحلو، قدم بہ قدم اڳتي وڌي ٿو:
 
@@ -79,7 +79,7 @@ orchestrator رٿا ID سان `execute_site_plan` کي سڏي ٿو. عملدرآ
 - **متوازي قدم** — ساڳئي مرحلي اندر اهي قدم جن ۾ پاڻ ۾ انحصار نه هجي، جڏهن `parallel` flag سيٽ هجي ته ساڳئي وقت موڪليا وڃن ٿا.
 - **قدم timeout** — هر قدم وٽ انفرادي timeout هوندو آهي (default: `Ability Timeout` setting). وقت ختم ٿيل قدم کي `failed` طور نشان لڳايو وڃي ٿو ۽ رٿا جاري رهي ٿي.
 
-### 4. اڳڀرائي جي ٽريڪنگ
+### 4. اڳڀرائي جي ٽريڪنگ {#4-progress-tracking}
 
 عملدرآمد جي حالت چيڪ ڪرڻ لاءِ ڪنهن به وقت `get_plan_progress` کي سڏيو:
 
@@ -104,7 +104,7 @@ WP-CLI استعمال ڪندڙ اڳڀرائي کي هن سان مانيٽر ڪر
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. غلطي مان بحالي
+### 5. غلطي مان بحالي {#5-error-recovery}
 
 جڏهن ڪو قدم ناڪام ٿئي ٿو، orchestrator رٿا ۾ بيان ڪيل **fallback** قدم چيڪ ڪري ٿو:
 
@@ -115,9 +115,9 @@ agent آخري رٿا جي خلاصو ۾ سڀ ناڪاميون رپورٽ ڪري
 
 ---
 
-## سائيٽ رٿا جون صلاحيتون
+## سائيٽ رٿا جون صلاحيتون {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 قدرتي ٻولي واري مقصد جي وضاحت مان منظم سائيٽ رٿا ٺاهي ٿو.
 
@@ -134,7 +134,7 @@ agent آخري رٿا جي خلاصو ۾ سڀ ناڪاميون رپورٽ ڪري
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 اڳ ۾ ٺاهيل سائيٽ رٿا جو عملدرآمد شروع ڪري ٿو.
 
@@ -150,7 +150,7 @@ agent آخري رٿا جي خلاصو ۾ سڀ ناڪاميون رپورٽ ڪري
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 سائيٽ جي منصوبي جي موجوده عملدرآمد حيثيت واپس ڪري ٿو.
 
@@ -164,7 +164,7 @@ agent آخري رٿا جي خلاصو ۾ سڀ ناڪاميون رپورٽ ڪري
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 ناڪام قدم کي هٿرادو حل ڪري ٿو ۽ منصوبي جو عملدرآمد ايندڙ قدم کان ٻيهر شروع ڪري ٿو. هي تڏهن استعمال ڪريو جڏهن پاڻمرادو بحالي ممڪن نه هجي ۽ توهان مداخلت ڪرڻ چاهيو.
 
@@ -180,7 +180,7 @@ agent آخري رٿا جي خلاصو ۾ سڀ ناڪاميون رپورٽ ڪري
 
 ---
 
-## v1 ۽ v2 جو مقابلو
+## v1 ۽ v2 جو مقابلو {#comparing-v1-and-v2}
 
 | خصوصيت | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ agent آخري رٿا جي خلاصو ۾ سڀ ناڪاميون رپورٽ ڪري
 
 ---
 
-## WP-CLI منصوبي جا حڪم
+## WP-CLI منصوبي جا حڪم {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 مقصد جي وضاحت مان سائيٽ جو منصوبو ٺاهي ٿو.
 
@@ -205,7 +205,7 @@ agent آخري رٿا جي خلاصو ۾ سڀ ناڪاميون رپورٽ ڪري
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 اڳ ۾ ٺاهيل منصوبو عمل ۾ آڻي ٿو.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 هلندڙ يا مڪمل ٿيل منصوبي لاءِ موجوده ترقي ڏيکاري ٿو.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 سڀ سائيٽ منصوبا (انتظار ۾، جاري، ۽ مڪمل ٿيل) لسٽ ڪري ٿو.
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 ناڪام منصوبي کي `pending` تي ري سيٽ ڪري ٿو ته جيئن اهو شروع کان ٻيهر عمل ۾ آڻي سگهجي.
 

@@ -3,11 +3,11 @@ title: Ingero za kode ziteye imbere
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ingero za Code Ziteye Imbere
+# Ingero za Code Ziteye Imbere {#advanced-code-examples}
 
 Izi ngero zigaragaza uburyo bwo guhuza ibintu buteye imbere na Ultimate Multisite.
 
-## Moteri y'Ibiciro Ihinduka
+## Moteri y'Ibiciro Ihinduka {#dynamic-pricing-engine}
 
 Moteri y'ibiciro ishingiye ku mategeko ishyiraho discounts zishingiye ku bwinshi, ubudahemuka, n'ibihe by'umwaka:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Gutegura Imbuga Biteye Imbere
+## Gutegura Imbuga Biteye Imbere {#advanced-site-provisioning}
 
 Hita ugena imbuga nshya hamwe na plugins, SSL, CDN, backups, n'igenzura hashingiwe ku biranga plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sisitemu y'Imipaka Yihariye
+## Sisitemu y'Imipaka Yihariye {#custom-limitations-system}
 
 Kurikirana kandi ushyire mu bikorwa imipaka y'ibikoresho hamwe n'imbuzi z'imikoreshereze:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter hamwe na `increment_item()`
+## BerlinDB Atomic Counter hamwe na `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 yongeyemo uburyo bwa `increment_item()` muri class ya BerlinDB `Query`. Buyikoreshe mu gukora kongera imibare mu nkingi z’imibare mu buryo butekanye kandi bwa atomic, nta masiganwa ya read-modify-write — bifite akamaro kuri counters, usage quotas, na rate-limiting checks zikora mu gihe hari requests nyinshi icyarimwe.
 
-### Umukono w’uburyo
+### Umukono w’uburyo {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 yongeyemo uburyo bwa `increment_item()` muri class ya 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Imikoreshereze y’ibanze
+### Imikoreshereze y’ibanze {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Gukurikirana imikoreshereze ya API kuri membership
+### Gukurikirana imikoreshereze ya API kuri membership {#tracking-api-usage-per-membership}
 
 Uburyo ngiro bwo gushyiraho imipaka ya API rate limits kuri buri membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Impamvu ukoresha `increment_item()` aho gukoresha `update_item()`
+### Impamvu ukoresha `increment_item()` aho gukoresha `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Uburyo busanzwe bwa read-modify-write ntabwo butekanye mu gihe hari requests nyinshi icyarimwe:
 

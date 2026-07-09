@@ -3,15 +3,15 @@ title: Txheeb Xyuas Kev Sib Piv Xim hauv Pawg Xim
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Xyuas Palette Contrast Kom Raug
+# Xyuas Palette Contrast Kom Raug {#validate-palette-contrast}
 
 Lub peev xwm **Xyuas Palette Contrast Kom Raug** xyuas cov khub xim hauv koj lub palette tsim kom ua raws WCAG (Web Content Accessibility Guidelines) ua ntej muab siv rau koj lub theme.
 
-## Kev Piav Qhia Dav
+## Kev Piav Qhia Dav {#overview}
 
 Lub peev xwm no xyuas kom koj lub site cov xim ua raws cov qauv accessibility los ntawm kev tshuaj xyuas contrast ratios ntawm xim ntawv thiab xim tom qab. Nws pab tiv thaiv cov kev sib xyaw xim uas tej zaum yuav ua rau cov neeg siv uas muaj teeb meem pom kev nyeem nyuaj.
 
-## Hom Ntaub Ntawv Nkag
+## Hom Ntaub Ntawv Nkag {#input-format}
 
 Lub peev xwm txais ib lub palette xim ua ntaub ntawv nkag:
 
@@ -35,7 +35,7 @@ Lub peev xwm txais ib lub palette xim ua ntaub ntawv nkag:
 }
 ```
 
-### Parameters
+### Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Lub peev xwm txais ib lub palette xim ua ntaub ntawv nkag:
 | `wcag_level` | string | No | Qib ua raws WCAG: "A", "AA" (default), lossis "AAA" |
 | `pairs_to_check` | array | No | Cov khub xim tshwj xeeb uas yuav xyuas kom raug (piv txwv, `["primary-text", "background-text"]`) |
 
-## Cov Qib WCAG Uas Tau Xyuas
+## Cov Qib WCAG Uas Tau Xyuas {#wcag-levels-checked}
 
 Lub peev xwm tshuaj xyuas contrast ratios raws li WCAG cov qauv:
 
@@ -56,7 +56,7 @@ Lub peev xwm tshuaj xyuas contrast ratios raws li WCAG cov qauv:
 - **Ntawv Ib Txwm** — ntawv me dua 18pt (lossis 14pt bold)
 - **Ntawv Loj** — ntawv 18pt lossis loj dua (lossis 14pt bold lossis loj dua)
 
-## Output Schema
+## Output Schema {#output-schema}
 
 Lub peev xwm xa rov qab ib daim ntawv ceeb toom kev xyuas kom raug uas muaj ncauj lus kom ntxaws:
 
@@ -95,7 +95,7 @@ Lub peev xwm xa rov qab ib daim ntawv ceeb toom kev xyuas kom raug uas muaj ncau
 }
 ```
 
-### Output Fields
+### Output Fields {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Lub peev xwm xa rov qab ib daim ntawv ceeb toom kev xyuas kom raug uas muaj ncau
 | `status` | string | "pass" lossis "fail" rau txhua khub |
 | `recommendations` | array | Cov lus pom zoo los txhim kho cov khub uas tsis dhau |
 
-## Piv Txwv Kev Siv
+## Piv Txwv Kev Siv {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Lub peev xwm xyuas txhua qhov kev sib xyaw xim thiab xa rov qab:
 - ✅ Background + Text: 12.1:1 ratio (dhau WCAG AAA)
 - Tag nrho: Ua raws WCAG AA
 
-## Kev Koom Nrog Theme Builder
+## Kev Koom Nrog Theme Builder {#integration-with-theme-builder}
 
 Thaum siv Theme Builder txoj kev xaiv design-direction, lub peev xwm Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Thaum siv Theme Builder txoj kev xaiv design-direction, lub peev xwm Validate Pa
 4. Muab cov lus pom zoo rau cov khub uas tsis ua raws
 5. Tiv thaiv tsis pub siv cov kev teeb xim uas tsis accessible
 
-## Kev Ua Zoo Tshaj
+## Kev Ua Zoo Tshaj {#best-practices}
 
 - **Pib nrog qib AA** — WCAG AA yog tus qauv rau feem ntau cov website
 - **Sim ua ntej siv** — xyuas koj lub palette kom raug ua ntej cog lus rau ib qho design
@@ -137,7 +137,7 @@ Thaum siv Theme Builder txoj kev xaiv design-direction, lub peev xwm Validate Pa
 - **Xav txog cov neeg siv cov kev nyiam** — qee tus neeg siv tej zaum yuav muaj kev rhiab rau xim ntxiv
 - **Siv contrast checkers** — muab lub peev xwm no koom nrog browser tools rau kev txheeb xyuas
 
-## Cov Khub Tsis Dhau thiab Cov Lus Pom Zoo
+## Cov Khub Tsis Dhau thiab Cov Lus Pom Zoo {#failing-pairs-and-recommendations}
 
 Yog ib khub xim tsis dhau kev xyuas kom raug, lub peev xwm muab cov lus pom zoo:
 
@@ -155,7 +155,7 @@ Yog ib khub xim tsis dhau kev xyuas kom raug, lub peev xwm muab cov lus pom zoo:
 }
 ```
 
-## Cov Peev Xwm Muaj Feem Xyuam
+## Cov Peev Xwm Muaj Feem Xyuam {#related-abilities}
 
 - [Tsim Logo SVG](./generate-logo-svg.md) — tsim logos nrog koj lub palette xim uas twb xyuas kom raug lawm
 - [Tsim Menu](./create-menu.md) — tsim kev taw qhia nrog cov xim uas accessible

@@ -4,11 +4,11 @@ title: 'Hetsika - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Mamela ny mpamorona plugin hanampy hooks fanampiny amin’ny pejintsika.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Mamela ny mpamorona plugin hanampy hooks fanampiny amin’ny pejintsika.
 | $page_hook | `string` | Ny page hook an’ity pejy ity. |
 | $admin_page | `self` | Ny instance an’ilay pejy. |
 
-### Nanomboka
+### Nanomboka {#since}
 
 - 1.8.2
 - 2.0.4: Nampiana masontsivana fahatelo: ny instance an’ilay pejy.
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin’ny [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) amin’ny andalana 332

@@ -4,22 +4,22 @@ title: 'Ação - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Permite que programadores de plugin adicionem hooks adicionais a uma página específica.
 
 Utilização: A parte dinâmica precisa de ser substituída por um ID de página válido, por exemplo, add_action('wu_page_events_load', 'callback_with_aditional_hook', 10, 2);
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | O ID desta página. |
 | $page_hook | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | O hook gerado para esta página. |
 
-### Desde
+### Desde {#since}
 
 - 1.8.2
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L301) na linha 301

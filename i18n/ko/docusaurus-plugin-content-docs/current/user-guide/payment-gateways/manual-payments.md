@@ -3,13 +3,13 @@ title: 수동 결제 설정
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Payments 설정하기 (v2)
+# Manual Payments 설정하기 (v2) {#setting-up-manual-payments-v2}
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x에 해당합니다.**_
 
 Manual payments는 사용자가 **Stripe** 또는 **PayPal**을 사용할 수 없을 때 다른 결제 방법을 제공할 수 있는 방식입니다. 전신 송금이나 은행 이체, 또는 사용자의 지역에서 이용 가능한 다른 결제 방법이 될 수 있습니다.
 
-## Manual Payments 활성화 방법
+## Manual Payments 활성화 방법 {#how-to-enable-manual-payments}
 
 Manual payment 설정은 매우 쉽습니다. 결제 게이트웨이에서 활성화하고, 사용자가 결제를 보내는 방법에 대한 자세한 안내를 입력하기만 하면 됩니다.
 
@@ -31,7 +31,7 @@ Manual gateway 설정 인터페이스는 다음과 같습니다.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manual payments 확인하기
+## Manual payments 확인하기 {#confirming-manual-payments}
 
 Manual payment를 확인하려면 왼쪽 바의 **Payments** 메뉴로 이동합니다. 여기에서 네트워크의 모든 결제와 **status**를 포함한 세부 정보를 볼 수 있습니다. Manual payment는 직접 변경하기 전까지 항상 **Pending** 상태입니다.
 

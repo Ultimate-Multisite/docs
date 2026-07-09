@@ -3,11 +3,11 @@ title: Plugin Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Ang Gratis AI Agent v1.5.0 nagpaila sa **Plugin Builder & Sandbox System**, nga nagtugot sa AI assistant nga maghimo, mag-activate, ug magdumala og WordPress plugins sa imong network — tanan pinaagi sa usa ka luwas ug gipahinay nga sandbox environment.
 
-## Overview
+## Overview {#overview}
 
 Ang Plugin Builder nagtugot sa AI assistant nga magsulat og custom WordPress plugins tubag sa mga natural language requests. Ang mga nahimo nga plugins gi-validate, gi-store, ug gi-activate sulod sa usa ka sandbox layer sa dili pa kini makaapekto sa functionality sa live site.
 
@@ -17,7 +17,7 @@ Mga gamit niini naglakip sa:
 - Prototyping sa mga features nga nanginahanglan og WordPress hooks o custom post types.
 - Paggawa og short-lived automation scripts para sa batch operations.
 
-## Generating a Plugin via AI
+## Generating a Plugin via AI {#generating-a-plugin-via-ai}
 
 Aron maghimo og plugin, buksan ang Gratis AI Agent chat interface ug i-describe kung unsa ang imong gikinahanglan. Pananglitan:
 
@@ -32,7 +32,7 @@ Ang AI magbuhat niini:
 
 Mahimo nimong pino ang resulta pinaagi sa pagpadayon sa istorya sulod sa parehas nga conversation thread sa dili pa kini ma-activate.
 
-## Sandbox Activation
+## Sandbox Activation {#sandbox-activation}
 
 Ang pag-activate og nahimong plugin sa sandbox lain gikan sa pag-activate niini sa live network. Ang sandbox:
 
@@ -48,7 +48,7 @@ Aron ma-activate ang usa ka plugin sa sandbox, i-click ang **Activate in Sandbox
 
 Ang mensahe ng status magpamatud-an kung malampuson o mapakyas ang pag-activate. Kung mapakyas, ipakikita ang error log sa chat thread.
 
-## Pamamahala sa mga Nabubuhat nga Plugin (Managing Generated Plugins)
+## Pamamahala sa mga Nabubuhat nga Plugin (Managing Generated Plugins) {#managing-generated-plugins}
 
 Ang mga nabubuhat nga plugin makita sa **Gratis AI Agent → Plugin Builder → Manage Plugins**. Gikan niini mahimo nimo:
 
@@ -64,7 +64,7 @@ Ang mga nabubuhat nga plugin makita sa **Gratis AI Agent → Plugin Builder → 
 Ang **Install on network** nag-deploy sa nabubuhat nga plugin ngadto sa imong live WordPress multisite. Huntaha ang code sa plugin sa dili pa magpadayon. Ang Gratis AI Agent magaputana og confirmation sa dili pa makompleto ang live install.
 :::
 
-## Pag-install sa Nabubuhat nga Plugin sa Network (Installing a Generated Plugin on the Network)
+## Pag-install sa Nabubuhat nga Plugin sa Network (Installing a Generated Plugin on the Network) {#installing-a-generated-plugin-on-the-network}
 
 Kung malipayon ka na sa usa ka sandboxed plugin, mahimo nimo kining i-install sa live network:
 
@@ -78,7 +78,7 @@ Alternatibo, gamita ang slash command sa chat interface:
 /install-plugin <plugin-slug>
 ```
 
-## Mga Update sa Plugin (Plugin Updates)
+## Mga Update sa Plugin (Plugin Updates) {#plugin-updates}
 
 Aron ma-update ang usa ka nabubuhat nga plugin, i-describe ang pagbag-o ngadto sa AI assistant sa bag-ong panag-istoryahanay:
 
@@ -86,7 +86,7 @@ Aron ma-update ang usa ka nabubuhat nga plugin, i-describe ang pagbag-o ngadto s
 
 Ang AI maghimo og bag-ong bersyon, nga modapad sa sandbox uban sa kasamtang nga bersyon. I-review nimo ang diff ug i-confirm kini sa dili pa maaplay ang update.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Ang Plugin Builder naggamit og integrated nga **HookScanner** para ma-analyze ang mga hooks ug filters nga gi-register sa matag plugin nga gihimo. Ang output sa HookScanner ipakita sa chat response ug naglakip kini sa:
 
@@ -96,7 +96,7 @@ Ang Plugin Builder naggamit og integrated nga **HookScanner** para ma-analyze an
 
 Kini makatabang nimo nga masabtan kung unsa ang pamaagi sa paglihok sa usa ka plugin sa dili pa kini i-activate.
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - Ang mga gihatag nga plugins gipundo la sa lain gikan sa mga manually na-install nga plugins ug dili ma-access pinaagi sa standard WordPress plugin management screen hangtod nga ikaw mismo ang nag-install niini sa network.
 - Ang sandbox naggamit og path validation para mapugngan ang directory traversal kung magmosulat og plugin files.

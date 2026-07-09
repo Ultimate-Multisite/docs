@@ -3,7 +3,7 @@ title: Pag-set up sa PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Pag-set Up sa PayPal Gateway (v2)
+# Pag-set Up sa PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**MAHINUNGAN: Kini nga article nagtumong sa Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Parehas sama sa Stripe, gigamit sab og daghan ang PayPal para sa online payments
 
 Palihug hinumdumi nga kinahanglan nimo og **PayPal Business account** aron makakuha sa API credential nga gikinahanglan para niini nga integration.
 
-## Pag-enable sa PayPal sa imong network
+## Pag-enable sa PayPal sa imong network {#enabling-paypal-on-your-network}
 
 Aron ma-enable ang PayPal isip pamaagi sa pagbayad nga available sa imong network, pumunta sa **Ultimate Multisite > Settings > Payments** tab ug i-tick ang kahon sa sunod sa PayPal.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Paggamit sa guided setup wizard
+## Paggamit sa guided setup wizard {#using-the-guided-setup-wizard}
 
 Ang Ultimate Multisite 2.10.0 nagdugang og guided PayPal setup wizard sa payment gateway settings. Human ma-enable nimo ang PayPal, gamita ang wizard sa **Ultimate Multisite > Settings > Payments** aron piliun kung unsaon nimo pag-connect sa gateway ug kumpirmahon kung unsang credentials ang gihangyo pa nga kinahanglan una sa pag-save.
 
@@ -30,7 +30,7 @@ Ang wizard nagsuporta sa duha ka mga dalan sa setup:
 
 Kung wala nimo makita ang OAuth option sa wizard, tapuson ang manual credential entry flow sa ubos. Ang gateway nagtrabaho gamit sa parehas nga PayPal Business API credentials sama sa mga miaging Ultimate Multisite 2.x releases.
 
-## Pagkuha sa PayPal API credentials
+## Pagkuha sa PayPal API credentials {#getting-the-paypal-api-credentials}
 
 Pag-enable na sa PayPal isip payment gateway, kinahanglan nimo pun-on ang mga field para sa PayPal API **Username**, PayPal API **Password** ug PayPal API **Signature**.
 

@@ -3,17 +3,17 @@ title: Arah Desain
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Arah Desain
+# Arah Desain {#design-direction}
 
 Léngkah **Arah Desain** ngamungkinkeun anjeun marios, nyaluyukeun, jeung ngaréngsékeun desain visual theme anjeun saméméh Theme Builder ngahasilkeun theme lengkep.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Sanggeus ngaréngsékeun Discovery Interview, Theme Builder nampilkeun arah desain anjeun kalayan **rendering sawangan desktop jeung mobile**. Ieu ngamungkinkeun anjeun ningali persis kumaha desain anjeun bakal katingali dina alat anu béda saméméh netepkeun kana theme.
 
-## Komponén Arah Desain
+## Komponén Arah Desain {#design-direction-components}
 
-### 1. Palét Warna
+### 1. Palét Warna {#1-color-palette}
 
 Skéma warna theme anjeun, kaasup:
 
@@ -23,7 +23,7 @@ Skéma warna theme anjeun, kaasup:
 - **Warna nétral** — kulawu jeung bodas pikeun latar jeung téks
 - **Warna téks** — warna téks utama pikeun kabacaan
 
-### 2. Tipografi
+### 2. Tipografi {#2-typography}
 
 Pilihan font pikeun:
 
@@ -33,14 +33,14 @@ Pilihan font pikeun:
 - **Jangkungna garis** — jarak antara garis pikeun kabacaan
 - **Beurat font** — variasi kandel, biasa, jeung hampang
 
-### 3. Tata Letak jeung Jarak
+### 3. Tata Letak jeung Jarak {#3-layout-and-spacing}
 
 - **Rubak wadah** — rubak maksimum pikeun eusi
 - **Padding jeung margin** — jarak di sabudeureun unsur
 - **Sistem grid** — tata letak kolom pikeun desain responsif
 - **Jarak komponén** — jarak antara unsur UI
 
-### 4. Unsur Visual
+### 4. Unsur Visual {#4-visual-elements}
 
 - **Gaya tombol** — desain tombol utama, sekundér, jeung tersiér
 - **Desain kartu** — tata letak pikeun blok eusi
@@ -48,9 +48,9 @@ Pilihan font pikeun:
 - **Wates jeung kalangkang** — jero visual anu halus
 - **Éfék hover** — gaya kaayaan interaktif
 
-## Rendering Sawangan
+## Rendering Sawangan {#preview-rendering}
 
-### Sawangan Desktop
+### Sawangan Desktop {#desktop-preview}
 
 Sawangan desktop némbongkeun desain anjeun dina rubak pinuh (biasana 1200px atawa leuwih lega):
 
@@ -59,7 +59,7 @@ Sawangan desktop némbongkeun desain anjeun dina rubak pinuh (biasana 1200px ata
 - Tipografi jeung jarak anu gedé
 - Sakabéh unsur visual dina ukuran pinuh
 
-### Sawangan Mobile
+### Sawangan Mobile {#mobile-preview}
 
 Sawangan mobile némbongkeun desain anjeun dina rubak mobile (biasana 375px):
 
@@ -68,7 +68,7 @@ Sawangan mobile némbongkeun desain anjeun dina rubak mobile (biasana 375px):
 - Tipografi jeung jarak anu disaluyukeun
 - Ukuran tombol anu ramah pikeun rampa
 
-### Breakpoint Responsif
+### Breakpoint Responsif {#responsive-breakpoints}
 
 Theme Builder ngarender sawangan dina breakpoint ieu:
 
@@ -79,9 +79,9 @@ Theme Builder ngarender sawangan dina breakpoint ieu:
 | **Desktop** | 1200px | Desktop rubak pinuh |
 | **Desktop Gedé** | 1920px | Tampilan ultra-lega |
 
-## Nyaluyukeun Desain Anjeun
+## Nyaluyukeun Desain Anjeun {#refining-your-design}
 
-### Nyieun Pangaluyuan
+### Nyieun Pangaluyuan {#making-adjustments}
 
 Anjeun tiasa nyaluyukeun arah desain anjeun ku cara:
 
@@ -91,7 +91,7 @@ Anjeun tiasa nyaluyukeun arah desain anjeun ku cara:
 4. **Ngapdet tata letak** — ngarobah rubak wadah jeung kolom grid
 5. **Ngaropéa unsur** — ngarobah gaya tombol, desain kartu, jsb.
 
-### Apdet Sawangan
+### Apdet Sawangan {#preview-updates}
 
 Parobahan kacerminkeun sacara real-time:
 
@@ -100,7 +100,7 @@ Parobahan kacerminkeun sacara real-time:
 - Sakabéh breakpoint responsif diapdet
 - Anjeun tiasa pindah antara sawangan pikeun mastikeun parobahan
 
-### Tampilan Babandingan
+### Tampilan Babandingan {#comparison-view}
 
 Bandingkeun arah desain anjeun jeung:
 
@@ -108,7 +108,7 @@ Bandingkeun arah desain anjeun jeung:
 - **Desain pesaing** — bandingkeun jeung situs inspirasi
 - **Vérsi saméméhna** — balikkeun ka arah desain anu leuwih awal
 
-## Persetujuan Arah Desain
+## Persetujuan Arah Desain {#design-direction-approval}
 
 Sanggeus anjeun sugema jeung desain anjeun:
 
@@ -118,7 +118,7 @@ Sanggeus anjeun sugema jeung desain anjeun:
 4. **Mastikeun tata letak** — pariksa jarak jeung alignment
 5. **Nyatujuan desain** — lajengkeun ka ngahasilkeun theme
 
-## Léngkah Salajengna
+## Léngkah Salajengna {#next-steps}
 
 Sanggeus nyatujuan arah desain anjeun:
 
@@ -127,7 +127,7 @@ Sanggeus nyatujuan arah desain anjeun:
 3. Anjeun tiasa ngaropéa deui nganggo customizer WordPress
 4. Lajengkeun ka [Ménu Hospitality](./hospitality-menus.md) atawa fitur séjén
 
-## Prakték Pangsaéna
+## Prakték Pangsaéna {#best-practices}
 
 - **Uji dina alat nyata** — pake telepon jeung tablet sabenerna lamun mungkin
 - **Pariksa kabacaan** — pastikeun téks kabaca dina sakabéh ukuran
@@ -135,30 +135,30 @@ Sanggeus nyatujuan arah desain anjeun:
 - **Pertimbangkeun kinerja** — optimalkeun gambar jeung font pikeun kagancangan
 - **Rencanakeun pikeun eusi** — pastikeun tata letak jalan jeung eusi nyata anjeun
 
-## Ngungkulan Masalah
+## Ngungkulan Masalah {#troubleshooting}
 
-### Sawangan Teu Ngapdet
+### Sawangan Teu Ngapdet {#preview-not-updating}
 
 - Segerkeun kaca
 - Bersihkeun cache browser
 - Coba browser anu béda
 - Pariksa sambungan internét
 
-### Warna Katingali Béda
+### Warna Katingali Béda {#colors-look-different}
 
 - Pariksa setélan warna monitor
 - Coba dina alat anu béda
 - Pastikeun kontras warna ku alat aksésibilitas
 - Pertimbangkeun simulator buta warna
 
-### Masalah Tipografi
+### Masalah Tipografi {#typography-issues}
 
 - Pastikeun file font keur dimuat
 - Pariksa ukuran font dina breakpoint anu béda
 - Uji jeung eusi nyata
 - Pertimbangkeun panjang garis pikeun kabacaan
 
-## Dokuméntasi Patali
+## Dokuméntasi Patali {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — ngumpulkeun inpormasi desain
 - [Ménu Hospitality](./hospitality-menus.md) — nyieun kaca ménu terstruktur

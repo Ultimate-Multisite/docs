@@ -3,17 +3,17 @@ title: ServerPilot-integration
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot-integration
+# ServerPilot-integration {#serverpilot-integration}
 
-## Översikt
+## Översikt {#overview}
 ServerPilot är en molntjänst för att hosta WordPress och andra PHP-webbplatser på servrar hos DigitalOcean, Amazon, Google eller någon annan serverleverantör. Den här integrationen möjliggör automatisk domänsynkronisering och hantering av SSL-certifikat mellan Ultimate Multisite och ServerPilot.
 
-## Funktioner
+## Funktioner {#features}
 - Automatisk domänsynkronisering
 - Hantering av SSL-certifikat med Let's Encrypt
 - Automatisk förnyelse av SSL-certifikat
 
-## Krav
+## Krav {#requirements}
 Följande konstanter måste definieras i din `wp-config.php`-fil:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## Installationsinstruktioner
+## Installationsinstruktioner {#setup-instructions}
 
-### 1. Hämta dina ServerPilot API-uppgifter
+### 1. Hämta dina ServerPilot API-uppgifter {#1-get-your-serverpilot-api-credentials}
 
 1. Logga in på din ServerPilot-dashboard
 2. Gå till "Account" > "API"
 3. Skapa en ny API-nyckel om du inte redan har en
 4. Kopiera ditt Client ID och din API Key
 
-### 2. Hämta ditt App ID
+### 2. Hämta ditt App ID {#2-get-your-app-id}
 
 1. I din ServerPilot-dashboard, gå till "Apps"
 2. Välj den app där din WordPress multisite är hostad
 3. App ID syns i URL:en: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Lägg till konstanter i wp-config.php
+### 3. Lägg till konstanter i wp-config.php {#3-add-constants-to-wp-configphp}
 
 Lägg till följande konstanter i din `wp-config.php`-fil:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. Aktivera integrationen
+### 4. Aktivera integrationen {#4-enable-the-integration}
 
 1. I din WordPress-admin, gå till Ultimate Multisite > Settings
 2. Navigera till fliken "Domain Mapping"
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. Aktivera ServerPilot-integrationen
 5. Klicka på "Save Changes"
 
-## Så fungerar det
+## Så fungerar det {#how-it-works}
 
-### Domänsynkronisering
+### Domänsynkronisering {#domain-syncing}
 
 När en domän mappas i Ultimate Multisite:
 
@@ -66,7 +66,7 @@ När en domän mappas i Ultimate Multisite:
 3. Den skickar den uppdaterade listan till ServerPilot via API:et
 4. ServerPilot uppdaterar domänlistan för din applikation
 
-### Hantering av SSL-certifikat
+### Hantering av SSL-certifikat {#ssl-certificate-management}
 
 Efter att domäner har synkroniserats:
 
@@ -74,27 +74,27 @@ Efter att domäner har synkroniserats:
 2. ServerPilot hanterar utfärdandet och installationen av SSL-certifikat med Let's Encrypt
 3. ServerPilot hanterar också automatisk förnyelse av SSL-certifikat
 
-## Verifiering av SSL-certifikat
+## Verifiering av SSL-certifikat {#ssl-certificate-verification}
 
 Integrationen är konfigurerad för att öka antalet verifieringsförsök för SSL-certifikat hos ServerPilot, eftersom det kan ta tid innan ServerPilot utfärdar och installerar SSL-certifikat. Som standard görs upp till 5 försök, men detta kan justeras med filter.
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
-### Problem med API-anslutning
+### Problem med API-anslutning {#api-connection-issues}
 - Kontrollera att ditt Client ID och din API Key är korrekta
 - Kontrollera att ditt App ID är korrekt
 - Säkerställ att ditt ServerPilot-konto har nödvändiga behörigheter
 
-### Problem med SSL-certifikat
+### Problem med SSL-certifikat {#ssl-certificate-issues}
 - ServerPilot kräver att domäner har giltiga DNS-poster som pekar mot din server innan SSL-certifikat kan utfärdas
 - Om SSL-certifikat inte utfärdas, kontrollera att dina domäner pekar korrekt mot din servers IP-adress
 - Det kan ta tid för ServerPilot att utfärda och installera SSL-certifikat (vanligtvis 5-15 minuter)
 
-### Domän läggs inte till
+### Domän läggs inte till {#domain-not-added}
 - Kontrollera loggarna i Ultimate Multisite för eventuella felmeddelanden
 - Verifiera att domänen inte redan är tillagd i ServerPilot
 - Säkerställ att ditt ServerPilot-abonnemang stöder antalet domäner du försöker lägga till
 
-### Borttagning av domän
+### Borttagning av domän {#domain-removal}
 - För närvarande erbjuder ServerPilots API inte något sätt att ta bort enskilda domäner
 - När en domänmappning tas bort i Ultimate Multisite uppdaterar integrationen domänlistan i ServerPilot för att utesluta den borttagna domänen

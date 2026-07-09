@@ -3,17 +3,17 @@ title: Sida loo habeeyo khariidaynta domain-ka
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Sida loo Habeeyo Khariidaynta Domain-ka (v2)
+# Sida loo Habeeyo Khariidaynta Domain-ka (v2) {#how-to-configure-domain-mapping-v2}
 
 _**OGEYSIIS MUHIIM AH: Maqaalkani wuxuu tixraacayaa Ultimate Multisite nooca 2.x.**_
 
 Mid ka mid ah astaamaha ugu awoodda badan ee shabakad premium ah waa awoodda lagu siinayo macaamiisheena fursad ay domain heer-sare ah ugu xiraan goobahooda. Ugu dambayntii, kee baa u muuqda mid xirfadaysan: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) mise [_**joesbikeshop.com**_](http://joesbikeshop.com)? Taasi waa sababta Ultimate Multisite u bixiso astaantaas oo ku dhex dhisan, iyada oo aan loo baahnayn in la isticmaalo plugins dhinac saddexaad ah.
 
-## Waa maxay khariidaynta domain-ku?
+## Waa maxay khariidaynta domain-ku? {#whats-domain-mapping}
 
 Sida magaca ka muuqata, khariidaynta domain-ku waa awoodda ay bixiso Ultimate Multisite si ay u qaadato codsi domain gaar ah oo ay codsigaas ugu khariidayso goobta u dhiganta ee ku jirta shabakadda, taas oo domain-kaas gaarka ahi ku xiran yahay.
 
-### Sida loogu diyaariyo khariidaynta domain-ka Shabakaddaada Ultimate Multisite
+### Sida loogu diyaariyo khariidaynta domain-ka Shabakaddaada Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Khariidaynta domain-ku waxay u baahan tahay habayn dhinacaaga ah si ay u shaqeyso. Nasiib wanaag, Ultimate Multisite ayaa kuu otomaatig-gareeya shaqada adag si aad si fudud ugu buuxiso shuruudaha.
 
@@ -45,7 +45,7 @@ Laakiin ka hor intaadan bilaabin khariidaynta domain-ka gaarka ah mid ka mid ah 
 
 ###
 
-### Hubinta in dejimaha DNS ee domain-ka si sax ah loo habeeyay
+### Hubinta in dejimaha DNS ee domain-ka si sax ah loo habeeyay {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Si khariidayn u shaqeyso, waxaad u baahan tahay inaad hubiso in domain-ka aad qorshaynayso inaad khariidayso uu tilmaamayo cinwaanka IP ee Shabakaddaada. Ogow inaad u baahan tahay cinwaanka IP ee Shabakadda - cinwaanka IP ee domain-ka halka Ultimate Multisite lagu rakibay - ma aha cinwaanka IP ee domain-ka gaarka ah ee aad rabto inaad khariidayso. Si aad u raadiso cinwaanka IP ee domain gaar ah, waxaan kugula talinaynaa inaad tagto [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), tusaale ahaan.
 
@@ -55,7 +55,7 @@ Haddii aad la kulanto dhibaato sidii tan loo shaqaysiin lahaa, **la xiriir taage
 
 Haddii aad qorshaynayso inaad u oggolaato macaamiishaada inay khariidaystaan domain-nadooda, iyaga laftoodu waa inay shaqada qaybtan qabtaan. U tilmaam nidaamka taageerada diiwaangeliyehooda haddii ay awoodi waayaan inay abuuraan A Record.
 
-### Khariidaynta magaca domain gaar ah adigoo ah Super Admin
+### Khariidaynta magaca domain gaar ah adigoo ah Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Markaad ku soo gasho adigoo ah super admin shabakaddaada, waxaad si fudud ugu dari kartaa oo u maamuli kartaa magacyada domain-nada gaarka ah adigoo tagaya hoosta **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Haddii aad gujiso magaca domain-ka, waxaad awoodi doontaa inaad aragto qaar ka m
 
 **Is Secure?:** Inkastoo Ultimate Multisite uu hubiyo in domain-ku leeyahay shahaado SSL iyo in kale ka hor inta aan la enable-gareyn, waxaad si gacanta ah u dooran kartaa in domain-ka lagu raro shahaado SSL ama la'aanteed. Ogow haddii website-ku uusan lahayn shahaado SSL oo aad isku daydo inaad khasab ugu rarto SSL, waxay kuu keeni kartaa errors.
 
-### U map-gareynta magaca domain-ka gaarka ah sidii isticmaale Subsite
+### U map-gareynta magaca domain-ka gaarka ah sidii isticmaale Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Maamulayaasha subsite sidoo kale waxay ka map-gareyn karaan magacyo domain gaar ah dashboard-ka admin ee subsite-kooda.
 
@@ -121,7 +121,7 @@ Kadib isticmaaluhu wuxuu gujin karaa **Next Step** wuxuuna sii wadi karaa ku dar
 
 Gujinta **Add Domain** waxay bilaabi doontaa hab-socodka xaqiijinta iyo soo qaadista macluumaadka DNS ee domain-ka gaarka ah.
 
-### Ku saabsan Domain Syncing
+### Ku saabsan Domain Syncing {#about-domain-syncing}
 
 Domain Syncing waa hab-socod uu Ultimate Multisite ku daro magaca domain-ka gaarka ah Account-kaaga hosting ahaan add-on domain **si domain mapping-ku u shaqeeyo**.
 

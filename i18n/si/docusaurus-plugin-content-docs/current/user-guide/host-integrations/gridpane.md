@@ -3,17 +3,17 @@ title: GridPane ඒකාබද්ධ කිරීම
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ඒකාබද්ධ කිරීම (GridPane Integration)
+# GridPane ඒකාබද්ධ කිරීම (GridPane Integration) {#gridpane-integration}
 
-## දළ විශ්ලේෂණය (Overview)
+## දළ විශ්ලේෂණය (Overview) {#overview}
 GridPane කියන්නේ බැරෑරුම් WordPress වෘත්තිකයන් සඳහා නිර්මාණය කරන ලද විශේෂිත WordPress hosting control panel එකක්. මේකෙන් Ultimate Multisite සහ GridPane අතර Automatic domain syncing සහ SSL certificate management පහසු කරයි.
 
-## විශේෂාංග (Features)
+## විශේෂාංග (Features) {#features}
 - ස්වයංක්‍රීය ડોමේන් සමමුහුර්ත කිරීම (Automatic domain syncing)
 - SSL සහතික කළමනාකරණය (SSL certificate management)
 - SUNRISE constant එක ස්වයංක්‍රීයව වින්‍යාස කිරීම (Automatic configuration of SUNRISE constant)
 
-## අවශ්‍යතා (Requirements)
+## අවශ්‍යතා (Requirements) {#requirements}
 පහත constant එක ඔබේ `wp-config.php` ගොනුවේ නිර්වචනය කළ යුතුයි:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## සැකසීමේ උපදෙස් (Setup Instructions)
+## සැකසීමේ උපදෙස් (Setup Instructions) {#setup-instructions}
 
-### 1. ඔබේ GridPane API Credentials ලබා ගැනීම
+### 1. ඔබේ GridPane API Credentials ලබා ගැනීම {#1-get-your-gridpane-api-credentials}
 
 1. ඔබේ GridPane dashboard එකට ලොග් වෙන්න.
 2. "Settings" > "API" වෙත යන්න.
 3. ඔබට API key එකක් නැත්නම්, එය ජනනය කරන්න (Generate).
 4. ඔබේ API key එක පිටපත් කරන්න (Copy).
 
-### 2. ඔබේ Server සහ Site ID ලබා ගැනීම
+### 2. ඔබේ Server සහ Site ID ලබා ගැනීම {#2-get-your-server-and-site-ids}
 
 1. ඔබේ GridPane dashboard එකේ, "Servers" වෙත යන්න.
 2. ඔබේ WordPress multisite ස්ථාපනය කර ඇති server එක තෝරන්න.
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. "Sites" වෙත ගොස් ඔබේ WordPress site එක තෝරන්න.
 5. Site ID එක සටහන් කරන්න (URL එකේ හෝ site details page එකේ පෙනෙන).
 
-### 3. wp-config.php වල Constant එකතු කිරීම
+### 3. wp-config.php වල Constant එකතු කිරීම {#3-add-constants-to-wp-configphp}
 
 පහත constant එක ඔබේ `wp-config.php` ගොනුවේ එක් කරන්න:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. ඒකාබද්ධ කිරීම සක්‍රීය කිරීම (Enable the Integration)
+### 4. ඒකාබද්ධ කිරීම සක්‍රීය කිරීම (Enable the Integration) {#4-enable-the-integration}
 
 1. ඔබේ WordPress admin එකේ, Ultimate Multisite > Settings වෙත යන්න.
 2. "Domain Mapping" tab එකට යන්න.
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. GridPane integration එක සක්‍රීය කරන්න (Enable).
 5. "Save Changes" ක්ලික් කරන්න.
 
-## එය ක්‍රියා කරන ආකාරය (How It Works)
+## එය ක්‍රියා කරන ආකාරය (How It Works) {#how-it-works}
 
 Ultimate Multisite එකේ යම් domain එකක් map කර ඇති විට:
 
@@ -69,23 +69,23 @@ Ultimate Multisite එකේ යම් domain එකක් map කර ඇති 
 
 ඒකාබද්ධ කිරීම ඔබේ wp-config.php ගොනුවේ ඇති SUNRISE constant එක ස්වයංක්‍රීයව හැසිරවීම ද සිදු කරයි. මෙය ප්‍රදේශ සිතියම්කරණය නිවැරදිව ක්‍රියාත්මක වීමට අවශ්‍ය වේ.
 
-## SUNRISE Constant කළමනාකරණය
+## SUNRISE Constant කළමනාකරණය {#sunrise-constant-management}
 
 GridPane ඒකාබද්ධ කිරීමේ අද්විතීය විශේෂාංගයක් නම්, එය GridPane හිම ප්‍රදේශ සිතියම්කරණ පද්ධතිය සමඟ ගැටුම් ඇතිවීම වැළැක්වීම සඳහා wp-config.php ගොනුවේ ඇති SUNRISE constant එක ස්වයංක්‍රීයව නැවත යොදනු ලබන බවයි. මෙය දෙයාකාර පද්ධති කිසිදු ගැටලුවකින් තොරව එක්ව ක්‍රියා කිරීමට සහතික කරයි.
 
-## ගැටළු නිරාකරණය (Troubleshooting)
+## ගැටළු නිරාකරණය (Troubleshooting) {#troubleshooting}
 
-### API සම්බන්ධතා ගැටළු
+### API සම්බන්ධතා ගැටළු {#api-connection-issues}
 - ඔබේ API key නිවැරදි දැයි තහවුරු කරන්න.
 - ඔබේ සේවාදායකය (server) සහ වෙබ් අඩවි ID නිවැරදි දැයි පරීක්ෂා කරන්න.
 - ඔබගේ GridPane ගිණුමට අවශ්‍ය අවසරයන් තිබේදැයි තහවුරු කරන්න.
 
-### SSL සහතිකපත් ගැටළු
+### SSL සහතිකපත් ගැටළු {#ssl-certificate-issues}
 - GridPane විසින් SSL සහතිකපත් නිකුත් කිරීමට යම් කාලයක් ගත විය හැකිය.
 - ඔබේ ප්‍රදේශ නිවැරදිව ඔබේ සේවාදායකයේ IP ලිපිනයට යොමු වී ඇත්දැයි පරීක්ෂා කරන්න.
 - ඔබේ වෙබ් අඩවිය සඳහා GridPane හි SSL සැකසුම් පරීක්ෂා කරන්න.
 
-### ප්‍රදේශ එකතු නොවීම
+### ප්‍රදේශ එකතු නොවීම {#domain-not-added}
 - Ultimate Multisite logs තුළ ඇති ඕනෑම දෝෂ පණිවිඩ පරීක්ෂා කරන්න.
 - එම ප්‍රදේශය දැනටමත් GridPane වෙත එකතු වී ඇත්දැයි තහවුරු කරන්න.
 - ඔබේ ප්‍රදේශයේ DNS වාර්තා නිවැරදිව වින්‍යාස කර ඇති බව සහතික කරන්න.

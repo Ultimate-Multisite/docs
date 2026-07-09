@@ -3,17 +3,17 @@ title: 'Darasi na 9: Tsara Farashi don Samun Riba'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Darasi 9: Saita Farashi don Riba
+# Darasi 9: Saita Farashi don Riba {#lesson-9-pricing-for-profit}
 
 A Darasi 5 mun saita farashin farko na tsare-tsaren FitSite. Yanzu za mu inganta dabarar farashi da dabaru da ke ƙara kuɗin shiga, ƙarfafa haɓakawa, da rage barin sabis.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 FitSite yana da tsare-tsare, samfura, kammala saye, alama, da shigar da sababbin masu amfani a shirye. Farashin farko ya kasance $49/$99/$199 a wata. Yanzu za mu sa wannan farashi ya yi aiki sosai.
 
-## Ka'idodin Farashi don Dandamalin Niche
+## Ka'idodin Farashi don Dandamalin Niche {#pricing-principles-for-niche-platforms}
 
-### Saita Farashi Bisa Ƙima, Ba Kuɗin Samarwa Ba
+### Saita Farashi Bisa Ƙima, Ba Kuɗin Samarwa Ba {#price-on-value-not-cost}
 
 Kuɗin hosting ɗinka na iya zama $5-$15 ga kowane shafin abokin ciniki. Wannan ba yana nufin farashinka ya kamata ya zama $20 ba. Ba hosting kake sayarwa ba. Kana sayar da:
 
@@ -24,7 +24,7 @@ Kuɗin hosting ɗinka na iya zama $5-$15 ga kowane shafin abokin ciniki. Wannan 
 
 Saita farashi bisa ƙimar da kake bayarwa, ba bisa kuɗin samar da ita ba.
 
-### Daidaita da Madadin Zaɓuɓɓuka
+### Daidaita da Madadin Zaɓuɓɓuka {#anchor-to-alternatives}
 
 Lokacin da mai fitness studio yake tantance FitSite, yana kwatanta shi da:
 
@@ -34,7 +34,7 @@ Lokacin da mai fitness studio yake tantance FitSite, yana kwatanta shi da:
 
 A $49-$199/wata, FitSite ya fi developer sauƙin kuɗi, ya fi masu gini na gama-gari ƙarfi, kuma ya fi rashin gidan yanar gizo nesa ba kusa ba.
 
-## Aiwar da Bambance-bambancen Farashi
+## Aiwar da Bambance-bambancen Farashi {#implementing-price-variations}
 
 Farashin shekara-shekara yana ƙarfafa sadaukarwa kuma yana rage barin sabis. Je zuwa shafin **Bambance-bambancen Farashi** na kowane tsari kuma ƙara zaɓuɓɓukan shekara-shekara:
 
@@ -46,12 +46,12 @@ Farashin shekara-shekara yana ƙarfafa sadaukarwa kuma yana rage barin sabis. Je
 
 Ƙara filin **Zaɓin Lokaci** zuwa fom ɗin kammala sayenka domin abokan ciniki su iya sauyawa tsakanin biyan kuɗi na wata-wata da na shekara-shekara. Duba [Fom ɗin Kammala Saye](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Dalilin da Yasa Farashin Shekara-shekara ke Aiki
+### Dalilin da Yasa Farashin Shekara-shekara ke Aiki {#why-annual-pricing-works}
 
 - **A gare ka**: Kuɗi a gaba, ƙarancin barin sabis (abokan cinikin da ke biya shekara-shekara ba sa saurin soke sabis a tsakiyar lokaci)
 - **A gare su**: Tanadi na gaskiya, hasashen kasafin kuɗi
 
-## Kuɗin Saitawa
+## Kuɗin Saitawa {#setup-fees}
 
 Yi la'akari da kuɗin saitawa na sau ɗaya ga tsare-tsaren da suka haɗa da daidaitawa da hannu:
 
@@ -61,7 +61,7 @@ Yi la'akari da kuɗin saitawa na sau ɗaya ga tsare-tsaren da suka haɗa da daid
 
 Daidaita kuɗin saitawa a sashen farashi na kowane tsari. Duba [Ƙirƙirar Subscription Product ɗinka na Farko](/user-guide/configuration/creating-your-first-subscription-product) don cikakkun bayanai.
 
-## Lokutan Gwaji
+## Lokutan Gwaji {#trial-periods}
 
 Bayar da gwaji yana rage wahalar yin rajista amma yana kawo haɗarin rashin juyawa zuwa mai biyan kuɗi. Ga FitSite:
 
@@ -70,11 +70,11 @@ Bayar da gwaji yana rage wahalar yin rajista amma yana kawo haɗarin rashin juya
 
 Daidaita gwajin a sashen farashi na tsarIn Starter ta kunna maɓallin **Offer Trial** da saita tsawon lokaci zuwa kwanaki 7.
 
-### Sa Gwaje-gwaje su Juyar da Masu Amfani
+### Sa Gwaje-gwaje su Juyar da Masu Amfani {#making-trials-convert}
 
 Gwaji yana aiki ne kawai idan abokin ciniki ya ji ƙima a lokacin gwajin. Jerin onboarding ɗinka (Darasi 8) yana da matuƙar muhimmanci a nan -- ya kamata a tsara lokacin imel na maraba domin ƙarfafa amfani cikin taga ta kwanaki 7.
 
-## Lambobin Rangwame
+## Lambobin Rangwame {#discount-codes}
 
 Ƙirƙiri lambobin rangwame na dabaru don takamaiman manufofi:
 
@@ -88,7 +88,7 @@ Je zuwa **Ultimate Multisite > Lambobin Rangwame** don ƙirƙirar waɗannan. Dub
 Ya kamata rangwame ya zama kayan aikin dabara, ba abubuwan dindindin ba. Idan kowa yana samun rangwame, ba rangwame ba ne -- shi ne ainihin farashinka. Yi amfani da su don kamfen na musamman, turawa, da tallace-tallace masu iyakacin lokaci.
 :::
 
-## Sarrafa Haraji
+## Sarrafa Haraji {#tax-handling}
 
 Idan kana aiki a yankin da ke buƙatar tara haraji:
 
@@ -98,7 +98,7 @@ Idan kana aiki a yankin da ke buƙatar tara haraji:
 
 Duba [Sarrafa Haraji](/user-guide/payment-gateways/tax-handling) don cikakken daidaitawa. Idan kana hidimtawa abokan ciniki a ƙasashen duniya, yi la'akari da [VAT addon](/addons/vat) don bin ƙa'idodin EU.
 
-## Binciken Farashinka
+## Binciken Farashinka {#reviewing-your-pricing}
 
 Bayan ƙaddamarwa, sake duba farashi duk kwata-kwata. Duba:
 
@@ -107,7 +107,7 @@ Bayan ƙaddamarwa, sake duba farashi duk kwata-kwata. Duba:
 - **Barin sabis ta tsari**: Idan abokan cinikin shekara-shekara suna barin sabis ƙasa, ƙara tura farashin shekara-shekara
 - **Farashin masu gasa**: Nawa madadin zaɓuɓɓuka ke cajin? Matsayinka ya dace?
 
-## FitSite Network Ya Zuwa Yanzu
+## FitSite Network Ya Zuwa Yanzu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── A shirye don ƙaddamarwa (darasi na gaba)
 ```
 
-## Abin da Muka Gina a Wannan Darasi
+## Abin da Muka Gina a Wannan Darasi {#what-we-built-this-lesson}
 
 - **Farashin shekara-shekara** tare da rangwame 20% don ƙarfafa jajircewa
 - **Kuɗaɗen Setup** a matakai mafi girma don rufe ƙoƙarin onboarding

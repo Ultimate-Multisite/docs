@@ -4,11 +4,11 @@ title: Hohenga - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Mahi: wu_membership_post_renew
+# Mahi: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Ka whakaoho i muri i te whakahoutanga o te mematanga.
 
-## Ngā Tawhā
+## Ngā Tawhā {#parameters}
 
 | Ingoa | Momo | Whakaahuatanga |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Ka whakaoho i muri i te whakahoutanga o te mematanga.
 | $membership_id | `int` | Te ID o te mematanga. |
 | $membership | `\Membership` | Ahanoa mematanga. |
 
-### Mai i
+### Mai i {#since}
 
 - 2.0
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia ki [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) i te rārangi 2235

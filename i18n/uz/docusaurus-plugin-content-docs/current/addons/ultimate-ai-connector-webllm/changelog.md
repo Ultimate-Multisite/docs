@@ -3,9 +3,9 @@ title: WebLLM uchun Ultimate AI Connector o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# WebLLM uchun Ultimate AI Connector o‘zgarishlar jurnali
+# WebLLM uchun Ultimate AI Connector o‘zgarishlar jurnali {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versiya 1.1.0 — 2026-04-09 da chiqarilgan
+## Versiya 1.1.0 — 2026-04-09 da chiqarilgan {#version-110--released-on-2026-04-09}
 
 * Yangi: Admin-bar holat ko‘rsatkichi bilan suzuvchi chat vidjeti — tizimga kirgan har qanday foydalanuvchi front end orqali brauzer tomonidagi LLMga bevosita so‘rov yuborishi mumkin.
 * Yangi: SharedWorker runtime — MLC dvigateli endi SharedWorker ichida ishlaydi, shuning uchun bir nechta tablar bitta GPU sessiyasini o‘zaro ulashadi va bir-biri bilan raqobatlashmaydi.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Tuzatish: Model sozlanganida AI Experiments funksiyasi brauzer dvigateliga yo‘naltirilishi uchun WebLLMni wpai_preferred_text_models filtriga ulash.
 * Yaxshilandi: End-to-end test paytida aniqlangan cache-busting, kontentni normallashtirish va apparat ma’lumotlariga oid tuzatishlar.
 
-## Versiya 1.0.0 — Dastlabki reliz
+## Versiya 1.0.0 — Dastlabki reliz {#version-100--initial-release}

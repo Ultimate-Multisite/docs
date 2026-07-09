@@ -3,15 +3,15 @@ title: 'Ders 4: Avakirina Şablonên Nişeyê'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ders 4: Avakirina Şablonên Nîş
+# Ders 4: Avakirina Şablonên Nîş {#lesson-4-building-niche-templates}
 
 Şablon navenda pêşniyara nirxa nîşa te ne. Xwediyê stûdyoyek fitness ku qeyd dibe û malperek dibîne ku jixwe wek malperek fitness dixuye -- bi demjimêrên dersan, profîlên rahêneran, û wêneyên rast -- pir zêdetir îhtîmal e ku bimîne, ji kesê ku kenaveke vala dibîne.
 
-## Em Li Ku Derê Mabûn
+## Em Li Ku Derê Mabûn {#where-we-left-off}
 
 Me tora FitSite ya kar dike heye, ku Ultimate Multisite lê hatiye saz kirin û veavakirin. Niha em şablonan ava dikin ku dihêlin FitSite ji bo karsaziyên fitness bi taybetî hatî çêkirin xuya bike.
 
-## Çima Şablonên Nîş Girîng In
+## Çima Şablonên Nîş Girîng In {#why-niche-templates-matter}
 
 Şablonên giştî xerîdarên te neçar dikin ku karê dijwar bikin: fêm bikin kîjan rûpelan pêwîst in, kîjan avahiya naverokê baş dixebite, û çawa wê ji bo pîşesaziya xwe rast xuya bikin. Şablonên nîş vê astengiyê ji holê radikin.
 
@@ -24,11 +24,11 @@ Xwediyê stûdyoyek fitness ku li FitSite qeyd dibe divê bibîne:
 
 Ew hûrguliyên xwe tê de tijî dikin. Ew ji sifirê dest pê nakin.
 
-## Plansazkirina Şablonên Te
+## Plansazkirina Şablonên Te {#planning-your-templates}
 
 Berî avakirinê, biryar bide ka tu dixwazî kîjan şablonan pêşkêş bikî. Ji bo FitSite, em sê heban çêdikin:
 
-### Şablon 1: Studio Essential
+### Şablon 1: Studio Essential {#template-1-studio-essential}
 
 Ji bo stûdyoyên biçûk û rahênerên kesane.
 
@@ -39,7 +39,7 @@ Ji bo stûdyoyên biçûk û rahênerên kesane.
 - Rûpela **Têkilî** bi nexşeya cih û formê
 - **Dîzaynek paqij û nûjen** bi pergala rengên guncaw ji bo fitness
 
-### Şablon 2: Gym Pro
+### Şablon 2: Gym Pro {#template-2-gym-pro}
 
 Ji bo gymên ava bûyî ku xizmetên zêdetir hene.
 
@@ -50,7 +50,7 @@ Ji bo gymên ava bûyî ku xizmetên zêdetir hene.
 - Beşa **Şahidî** li ser rûpela sereke
 - Vebijarkên **brandkirina zêdetir berbiçav**
 
-### Şablon 3: Fitness Chain
+### Şablon 3: Fitness Chain {#template-3-fitness-chain}
 
 Ji bo xebatên bi gelek cihan.
 
@@ -60,17 +60,17 @@ Ji bo xebatên bi gelek cihan.
 - **Brandkirina navendî** bi hûrguliyên taybet ji bo her cihî
 - **Pirtûka karmendan** li seranserê cihan
 
-## Avakirina Malpereke Şablon
+## Avakirina Malpereke Şablon {#building-a-template-site}
 
 Di Ultimate Multisite de, şablon tenê malperek WordPress e ku bi awayê ku tu dixwazî malperên nû yên xerîdaran xuya bikin hatiye veavakirin. Ev e awayê çêkirina wê:
 
-### Gav 1: Malpera Şablonê Çêbike
+### Gav 1: Malpera Şablonê Çêbike {#step-1-create-the-template-site}
 
 1. Di rêveberiya tora xwe de here **Malper > Nû Lê Zêde Bike**
 2. Malperek bi navê `template-studio-essential` çêbike
 3. Ev malper dibe kenava xebata te
 
-### Gav 2: Theme Saz Bike û Veava Bike
+### Gav 2: Theme Saz Bike û Veava Bike {#step-2-install-and-configure-the-theme}
 
 Here Dashboard a malpera şablonê û:
 
@@ -82,7 +82,7 @@ Here Dashboard a malpera şablonê û:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Gav 3: Rûpelan Çêbike
+### Gav 3: Rûpelan Çêbike {#step-3-create-the-pages}
 
 Her rûpelê bi van tiştan ava bike:
 
@@ -92,7 +92,7 @@ Her rûpelê bi van tiştan ava bike:
 
 Li ku derê gengaz be naveroka cihgir bike rêberîker. Li şûna nivîsa tijîker a giştî, naverokek wisa binivîse: "Vê bi danasînek kurt a stûdyoya xwe û tiştê ku wê taybet dike biguherîne. Felsefeya rahênana xwe, salên ezmûnê, an tiştê ku client dikarin hêvî bikin bibêje."
 
-### Gav 4: Pluginan Veava Bike
+### Gav 4: Pluginan Veava Bike {#step-4-configure-plugins}
 
 Pluginên ku stûdyoyên fitness pêwîst dibînin saz bike û çalak bike:
 
@@ -100,7 +100,7 @@ Pluginên ku stûdyoyên fitness pêwîst dibînin saz bike û çalak bike:
 - Pluginek forma têkiliyê
 - Pluginek SEO (bi mîhengên destpêkê yên têkildarî fitness pêş-veavakirî)
 
-### Gav 5: Wek Şablon Nîşan Bike
+### Gav 5: Wek Şablon Nîşan Bike {#step-5-mark-as-template}
 
 1. Here **Ultimate Multisite > Malper**
 2. Malpera şablonê sererast bike
@@ -108,7 +108,7 @@ Pluginên ku stûdyoyên fitness pêwîst dibînin saz bike û çalak bike:
 
 Vê pêvajoyê ji bo her şablonek ku dixwazî pêşkêş bikî dubare bike.
 
-## Lîsteya Kontrola Kalîteya Şablonê
+## Lîsteya Kontrola Kalîteya Şablonê {#template-quality-checklist}
 
 Berî ku şablonek berdest bikî, piştrast bike:
 
@@ -121,7 +121,7 @@ Berî ku şablonek berdest bikî, piştrast bike:
 - [ ] Tu girêdanên şikestî an assetên winda tune ne
 - [ ] Leza barkirina rûpelê qebûlkirî ye
 
-## Tora FitSite Heta Niha
+## Tora FitSite Heta Niha {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Me Di Vê Dersê De Çi Ava Kir
+## Me Di Vê Dersê De Çi Ava Kir {#what-we-built-this-lesson}
 
 - **Sê şablonên taybet ji nîşê re** ku ji bo mezinahiyên cuda yên karsaziyên fitness hatine dîzayn kirin
 - **Naverok û wêneyên guncaw ji bo fitness** ku dihêlin platform wek bi taybetî hatî çêkirin xuya bike

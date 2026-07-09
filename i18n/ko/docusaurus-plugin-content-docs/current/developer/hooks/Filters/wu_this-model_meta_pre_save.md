@@ -9,6 +9,6 @@ title: >-
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# 필터: wu_${this->model}_meta_pre_save
+# 필터: wu_${this->model}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 데이터 메타를 직렬화하여 데이터베이스에 저장하기 전에 필터링합니다.

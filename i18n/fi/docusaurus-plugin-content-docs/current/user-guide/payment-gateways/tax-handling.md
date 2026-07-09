@@ -3,7 +3,7 @@ title: Verojen käsittely
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Verojen käsittely
+# Verojen käsittely {#tax-handling}
 
 Ultimate Multisite sisältää verojen keräysmoduulin ydinpluginissamme, joten jos sinun täytyy kerätä myyntiveroja paketeistasi, kokonaisuuksistasi ja palveluistasi, voit tehdä sen helposti ilman lisäosien asentamista.
 
@@ -11,7 +11,7 @@ Euroopassa sijaitseville yrityksille tarjoamme **lisäosan**, joka lisää työk
 
 Ultimate Multisite ei ilmoita tai tilitä veroja puolestasi viranomaisille; autamme sinua vain keräämään asianmukaiset verot tapahtuman yhteydessä. **Sinun täytyy silti tilittää verot itse.**
 
-## Verojen keräämisen käyttöönotto
+## Verojen keräämisen käyttöönotto {#enabling-tax-collection}
 
 Verojen kerääminen ei ole oletuksena käytössä. Ottaaksesi sen käyttöön sinun täytyy siirtyä kohtaan **Ultimate Multisite > Asetukset > Verot** ja ottaa käyttöön Ota verot käyttöön -asetus.
 
@@ -25,7 +25,7 @@ Voit myös tarkastella yksittäisten tuotteiden veroasetuksia:
 
 ![Tuotteiden veroasetukset](/img/config/settings-taxes.png)
 
-### Veroton vs. verollinen
+### Veroton vs. verollinen {#tax-excluded-vs-tax-included}
 
 Oletuksena kaikki tuotteidesi hinnat ovat verottomia, mikä tarkoittaa, että verot **eivät sisälly** tuotteen hintaan. Jos määritämme, että asiakkaan tulee maksaa veroja tietystä ostosta, lisäämme verot **välisumman päälle**.
 
@@ -37,7 +37,7 @@ Jos haluat, että verot sisältyvät tuotteesi hintaan, voit tehdä sen ottamall
 
 ###
 
-## Verokantojen luominen
+## Verokantojen luominen {#creating-tax-rates}
 
 Kun olet ottanut verojen keräämisen käyttöön, sinun täytyy luoda verokantoja tietyille sijainneille verokantojen muokkaimellamme.
 
@@ -51,7 +51,7 @@ Verokantojen muokkaussivulla voit lisätä uusia verokantoja napsauttamalla **Li
 
 Sinun täytyy antaa jokaiselle verokannalle **otsikko** (käytetään laskuissa). Sen jälkeen voit valita **maan** (pakollinen), **osavaltion/alueen** ja **kaupungin** (molemmat valinnaisia), joissa tätä veroa veloitetaan. Lisää lopuksi **verokanta prosentteina**.
 
-### Verokategoriat
+### Verokategoriat {#tax-categories}
 
 Voit myös luoda useita verokategorioita, jotta voit lisätä erilaisia verokantoja erilaisille tuotteille.
 
@@ -73,7 +73,7 @@ Voit asettaa tietyn tuotteen verokategorian siirtymällä **Tuotteen muokkaussiv
 
 Samalla näytöllä voit poistaa **Onko veronalainen?** -kytkimen käytöstä, jotta Ultimate Multisite tietää, ettei sen tule kerätä veroja kyseisestä tuotteesta.
 
-## Euroopan ALV-tuki
+## Euroopan ALV-tuki {#european-vat-support}
 
 Kuten aiemmin mainittiin, meillä on saatavilla lisäosa EU:ssa oleville asiakkaille, joilla on Euroopan ALV-säädöksistä johtuvia lisävaatimuksia.
 
@@ -101,7 +101,7 @@ Jos palaat **Veroasetukset-välilehdelle** , näet uusia vaihtoehtoja. Ota uudet
 
 <!-- Kuvakaappaus ei saatavilla: Ota ALV-tuki käyttöön -kytkin Veroasetuksissa lisäosan aktivoinnin jälkeen -->
 
-### ALV-verokantojen noutaminen
+### ALV-verokantojen noutaminen {#pulling-on-vat-tax-rates}
 
 Yksi integraatiomme lisäämistä työkaluista on mahdollisuus ladata EU:n jäsenvaltioiden verokannat. Tämä voidaan tehdä käymällä verokantojen muokkaussivulla EU:n ALV-tuen käyttöönoton jälkeen.
 
@@ -111,7 +111,7 @@ Sivun alareunassa näet ALV:n noutovaihtoehdot. Kannan tyypin valitseminen ja **
 
 Voit myös muokata arvoja niiden noutamisen jälkeen. Tee se yksinkertaisesti muokkaamalla tarvitsemaasi taulukon riviä ja napsauttamalla tallennusta uusille arvoille.
 
-### ALV-validointi
+### ALV-validointi {#vat-validation}
 
 Kun ALV-tuki on käytössä, Ultimate Multisite lisää checkout-lomakkeeseen lisäkentän laskutusosoitekentän alle. Kenttä näytetään vain EU:ssa sijaitseville asiakkaille.
 

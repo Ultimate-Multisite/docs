@@ -3,7 +3,7 @@ title: Àkọsílẹ̀ àwọn ìyípadà Ìṣepọ̀ WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration Changelog
+# WooCommerce Integration Changelog {#woocommerce-integration-changelog}
 
 Version 2.2.0 - Ti tu silẹ ni 2026-07-01
 * Tuntun: Awọn iye owo-ori Ultimate Multisite bayi han gẹgẹ bi awọn ila owo WooCommerce lọtọ ni checkout, ti o jẹ ki apapọ owo-ori han kedere ṣaaju sisanwo.

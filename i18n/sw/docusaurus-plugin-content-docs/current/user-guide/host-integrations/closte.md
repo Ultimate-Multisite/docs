@@ -3,18 +3,18 @@ title: Ujumuishaji wa Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Muunganisho wa Closte
+# Muunganisho wa Closte {#closte-integration}
 
-## Muhtasari
+## Muhtasari {#overview}
 Closte ni jukwaa la hosting ya WordPress linalodhibitiwa lililojengwa kwenye miundombinu ya Google Cloud. Muunganisho huu unawezesha usawazishaji wa kiotomatiki wa vikoa na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na Closte.
 
-## Vipengele
+## Vipengele {#features}
 - Usawazishaji wa kiotomatiki wa vikoa
 - Usimamizi wa cheti cha SSL
 - Msaada wa vikoa vya wildcard
 - Hakuna usanidi unaohitajika ukitumia Closte
 
-## Mahitaji
+## Mahitaji {#requirements}
 Kigezo kifuatacho lazima kiwekwe kwenye faili yako ya `wp-config.php` ukitumia Closte:
 
 ```php
@@ -23,13 +23,13 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 Kigezo hiki kwa kawaida tayari kimewekwa ukihifadhi kwenye Closte.
 
-## Maelekezo ya Usanidi
+## Maelekezo ya Usanidi {#setup-instructions}
 
-### 1. Thibitisha Ufunguo wako wa API wa Closte
+### 1. Thibitisha Ufunguo wako wa API wa Closte {#1-verify-your-closte-api-key}
 
 Ukihifadhi kwenye Closte, kigezo cha `CLOSTE_CLIENT_API_KEY` kinapaswa kuwa tayari kimewekwa kwenye faili yako ya `wp-config.php`. Unaweza kuthibitisha hili kwa kuangalia faili yako ya `wp-config.php`.
 
-### 2. Wezesha Muunganisho
+### 2. Wezesha Muunganisho {#2-enable-the-integration}
 
 1. Kwenye paneli ya msimamizi wa WordPress, nenda Ultimate Multisite > Settings
 2. Nenda kwenye kichupo cha "Domain Mapping"
@@ -37,7 +37,7 @@ Ukihifadhi kwenye Closte, kigezo cha `CLOSTE_CLIENT_API_KEY` kinapaswa kuwa taya
 4. Wezesha muunganisho wa Closte
 5. Bofya "Save Changes"
 
-## Jinsi Inavyofanya Kazi
+## Jinsi Inavyofanya Kazi {#how-it-works}
 
 Kikoa kinapounganishwa kwenye Ultimate Multisite:
 
@@ -47,26 +47,26 @@ Kikoa kinapounganishwa kwenye Ultimate Multisite:
 
 Muunganisho huu pia unafanya kazi na mipangilio ya muda wa kuangalia DNS katika Ultimate Multisite, ikikuruhusu kusanidi mara ngapi mfumo unaangalia usambazaji wa DNS na utoaji wa cheti cha SSL.
 
-## Uundaji wa Rekodi ya Kikoa
+## Uundaji wa Rekodi ya Kikoa {#domain-record-creation}
 
 Muunganisho huu unahakikisha kwamba tovuti inapotengenezwa au kunakiliwa, rekodi ya kikoa inaundwa kiotomatiki. Hii ni muhimu hasa kwa muunganisho wa Closte, kwani uundaji wa rekodi ya kikoa unachochea API ya Closte kuunda kikoa na cheti cha SSL.
 
-## Utatuzi wa Matatizo
+## Utatuzi wa Matatizo {#troubleshooting}
 
-### Matatizo ya Muunganisho wa API
+### Matatizo ya Muunganisho wa API {#api-connection-issues}
 - Thibitisha kuwa ufunguo wako wa API wa Closte ni sahihi
 - Hakikisha kuwa akaunti yako ya Closte ina ruhusa zinazohitajika
 
-### Matatizo ya Cheti cha SSL
+### Matatizo ya Cheti cha SSL {#ssl-certificate-issues}
 - Closte inaweza kuchukua muda kutoa vyeti vya SSL (kwa kawaida dakika 5-10)
 - Thibitisha kuwa vikoa vyako vinaelekeza vizuri kwenye anwani ya IP ya seva yako ya Closte
 - Angalia rekodi za DNS za kikoa chako kuhakikisha zimesanidiwa vizuri
 
-### Kikoa Hakijaongezwa
+### Kikoa Hakijaongezwa {#domain-not-added}
 - Angalia kumbukumbu za Ultimate Multisite kwa ujumbe wowote wa hitilafu
 - Thibitisha kuwa kikoa hakijaongezwa tayari kwenye Closte
 - Hakikisha kuwa rekodi za DNS za kikoa chako zimesanidiwa vizuri
 
-### Muda wa Kuangalia DNS
+### Muda wa Kuangalia DNS {#dns-check-interval}
 - Vyeti vya SSL vikichukua muda mrefu sana kutolewa, unaweza kurekebisha muda wa kuangalia DNS katika mipangilio ya Domain Mapping
 - Muda wa kawaida ni sekunde 300 (dakika 5), lakini unaweza kuuweka chini hadi sekunde 10 kwa kuangalia haraka wakati wa majaribio

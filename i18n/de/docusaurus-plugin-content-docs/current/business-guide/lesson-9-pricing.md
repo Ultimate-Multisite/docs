@@ -3,17 +3,17 @@ title: 'Lektion 9: Preisgestaltung für den Gewinn'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lektion 9: Preisgestaltung für Profit
+# Lektion 9: Preisgestaltung für Profit {#lesson-9-pricing-for-profit}
 
 In Lektion 5 haben wir die anfänglichen Preise für die FitSite-Pläne festgelegt. Jetzt verfeinern wir die Preisstrategie mit Techniken, die den Umsatz steigern, Upgrades fördern und die Abwanderung reduzieren.
 
-## Wo wir aufgehört haben
+## Wo wir aufgehört haben {#where-we-left-off}
 
 FitSite verfügt über Pläne, Templates, Checkout, Branding und Onboarding. Die anfängliche Preisgestaltung betrug 49 $/99 $/199 pro Monat. Jetzt sorgen wir dafür, dass diese Preise noch effektiver arbeiten.
 
-## Preisgrundsätze für Nischenplattformen
+## Preisgrundsätze für Nischenplattformen {#pricing-principles-for-niche-platforms}
 
-### Preis nach Wert, nicht nach Kosten
+### Preis nach Wert, nicht nach Kosten {#price-on-value-not-cost}
 
 Ihre Hosting-Kosten könnten zwischen 5 $ und 15 $ pro Kunden-Website liegen. Das bedeutet jedoch nicht, dass Ihr Preis 20 $ betragen sollte. Sie verkaufen kein Hosting. Sie verkaufen:
 
@@ -24,7 +24,7 @@ Ihre Hosting-Kosten könnten zwischen 5 $ und 15 $ pro Kunden-Website liegen. Da
 
 Preissetzen Sie basierend auf dem Wert, den Sie liefern, nicht auf den Kosten, die Sie dafür haben.
 
-### Verankerung durch Alternativen
+### Verankerung durch Alternativen {#anchor-to-alternatives}
 
 Wenn ein Fitnessstudio-Betreiber FitSite evaluiert, vergleicht er es mit:
 
@@ -34,7 +34,7 @@ Wenn ein Fitnessstudio-Betreiber FitSite evaluiert, vergleicht er es mit:
 
 Mit 49 $ bis 199 $ pro Monat ist FitSite günstiger als ein Entwickler, leistungsfähiger als allgemeine Builder und unendlich besser als keine Website.
 
-## Implementierung von Preisvariationen
+## Implementierung von Preisvariationen {#implementing-price-variations}
 
 Jährliche Preise fördern die Bindung und reduzieren die Abwanderung. Navigieren Sie zum Tab **Price Variations** jedes Plans und fügen Sie jährliche Optionen hinzu:
 
@@ -46,12 +46,12 @@ Jährliche Preise fördern die Bindung und reduzieren die Abwanderung. Navigiere
 
 Fügen Sie ein Feld **Period Selection** zu Ihrem Checkout-Formular hinzu, damit Kunden zwischen monatlicher und jährlicher Abrechnung umschalten können. Sehen Sie sich [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) an.
 
-### Warum jährliche Preise funktionieren
+### Warum jährliche Preise funktionieren {#why-annual-pricing-works}
 
 - **Für Sie**: Sofortiges Bargeld, geringere Abwanderung (Kunden, die jährlich bezahlen, kündigen eher nicht mittelfristig)
 - **Für sie**: Echte Einsparungen, planbare Budgets
 
-## Setup-Gebühren
+## Setup-Gebühren {#setup-fees}
 
 Erwägen Sie eine einmalige Setup-Gebühr für Pläne, die eine manuelle Konfiguration beinhalten:
 
@@ -61,7 +61,7 @@ Erwägen Sie eine einmalige Setup-Gebühr für Pläne, die eine manuelle Konfigu
 
 Konfigurieren Sie die Setup-Gebühren im Preissegment jedes Plans. Für Details siehe [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Testzeiträume
+## Testzeiträume {#trial-periods}
 
 Das Angebot eines Testzeitraums reduziert die Einstiegshürde, birgt aber das Risiko der Nicht-Konversion. Für FitSite:
 
@@ -70,11 +70,11 @@ Das Angebot eines Testzeitraums reduziert die Einstiegshürde, birgt aber das Ri
 
 Konfigurieren Sie den Testzeitraum im Preissegment des Starter-Plans, indem Sie den Toggle **Offer Trial** aktivieren und die Dauer auf 7 Tage einstellen.
 
-### Wie man Testzeiträume zur Konversion bringt
+### Wie man Testzeiträume zur Konversion bringt {#making-trials-convert}
 
 Ein Testzeitraum funktioniert nur, wenn der Kunde während dieser Zeit einen Mehrwert erlebt. Ihre Onboarding-Sequenz (Lektion 8) ist hier entscheidend – die Willkommens-E-Mails sollten so getaktet sein, dass sie die Interaktion innerhalb des 7-tägigen Zeitfensters fördern.
 
-## Rabattcodes
+## Rabattcodes {#discount-codes}
 
 Erstellen Sie strategische Rabattcodes für spezifische Zwecke:
 
@@ -88,7 +88,7 @@ Navigieren Sie zu **Ultimate Multisite > Discount Codes**, um diese zu erstellen
 Rabatte sollten strategische Werkzeuge sein, keine dauerhaften Bestandteile. Wenn jeder einen Rabatt erhält, ist es kein Rabatt – es ist Ihr tatsächlicher Preis. Verwenden Sie sie für spezifische Kampagnen, Empfehlungen und zeitlich begrenzte Aktionen.
 :::
 
-## Steuerabwicklung
+## Steuerabwicklung {#tax-handling}
 
 Wenn Sie in einer Gerichtsbarkeit tätig sind, die die Steuererhebung vorschreibt:
 
@@ -98,7 +98,7 @@ Wenn Sie in einer Gerichtsbarkeit tätig sind, die die Steuererhebung vorschreib
 
 Für die detaillierte Konfiguration siehe [Tax Handling](/user-guide/payment-gateways/tax-handling). Wenn Sie internationale Kunden bedienen, ziehen Sie das [VAT addon](/addons/vat) für die EU-Konformität in Betracht.
 
-## Überprüfung Ihrer Preisgestaltung
+## Überprüfung Ihrer Preisgestaltung {#reviewing-your-pricing}
 
 Überprüfen Sie die Preise nach dem Launch vierteljährlich. Achten Sie auf:
 
@@ -107,7 +107,7 @@ Für die detaillierte Konfiguration siehe [Tax Handling](/user-guide/payment-gat
 - **Abwanderung pro Plan**: Wenn Jahreskunden weniger abwandern, betonen Sie die jährliche Preisgestaltung stärker
 - **Wettbewerberpreise**: Was verlangen Alternativen? Sind Sie richtig positioniert?
 
-## Das FitSite Network bisher
+## Das FitSite Network bisher {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Bereit für den Launch (nächste Lektion)
 ```
 
-## Was wir in dieser Lektion aufgebaut haben
+## Was wir in dieser Lektion aufgebaut haben {#what-we-built-this-lesson}
 
 - **Jährliche Preisgestaltung** mit 20 % Rabatt, um die Bindung zu fördern
 - **Setup-Gebühren** für höhere Stufen, um den Onboarding-Aufwand abzudecken

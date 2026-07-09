@@ -3,11 +3,11 @@ title: Mehlala e Tsoetseng Pele ea Khoutu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mehlala ea Khoutu e Tsoetseng Pele
+# Mehlala ea Khoutu e Tsoetseng Pele {#advanced-code-examples}
 
 Mehlala ena e bontša mekhoa e tsoetseng pele ea kopanyo le Ultimate Multisite.
 
-## Enjene ea Ditheko e Fetohang
+## Enjene ea Ditheko e Fetohang {#dynamic-pricing-engine}
 
 Enjene ea ditheko e thehiloeng melaong e sebelisang litheolelo tsa bongata, botšepehi, le tsa linako tsa selemo:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Tlhophiso e Tsoetseng Pele ea Dibaka tsa Webo
+## Tlhophiso e Tsoetseng Pele ea Dibaka tsa Webo {#advanced-site-provisioning}
 
 Hlophisa dibaka tse ncha tsa webo ka bo eona ka ditlatsetso, SSL, CDN, dikopi tsa polokeho, le tlhokomelo ho latela likarolo tsa plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistimi e Ikgethileng ea Meedi
+## Sistimi e Ikgethileng ea Meedi {#custom-limitations-system}
 
 Latela le ho qobella meedi ea lisebelisoa ka ditemoso tsa tshebediso:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Sebadi sa Atomic sa BerlinDB ka `increment_item()`
+## Sebadi sa Atomic sa BerlinDB ka `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 e kentse mokgwa wa `increment_item()` sehlopheng sa BerlinDB `Query`. Se sebedise ho etsa dikeketso tse bolokehileng, tsa atomic dikholomong tsa dinomoro ntle le dikgohlano tsa read-modify-write — se molemo bakeng sa dibadi, dikarolo tsa tshebediso, le diteko tsa rate-limiting tse sebetsang tlasa dikopo tse tsamaelanang ka nako e le nngwe.
 
-### Saena ya mokgwa
+### Saena ya mokgwa {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 e kentse mokgwa wa `increment_item()` sehlopheng sa Be
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Tshebediso ya motheo
+### Tshebediso ya motheo {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Ho sala morao tshebediso ya API ka membership ka nngwe
+### Ho sala morao tshebediso ya API ka membership ka nngwe {#tracking-api-usage-per-membership}
 
 Mohlala o sebetsang wa ho qobella meedi ya sekgahla sa API ka membership ka nngwe:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Hobaneng `increment_item()` ho ena le `update_item()`
+### Hobaneng `increment_item()` ho ena le `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Mokgwa o bonolo wa read-modify-write ha o bolokehe tlasa dikopo tse tsamaelanang ka nako e le nngwe:
 

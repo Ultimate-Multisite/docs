@@ -4,19 +4,19 @@ title: Gweithred - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Gweithred: wu_centered_content
+# Gweithred: wu_centered_content {#action-wucenteredcontent}
 
 Caniatáu i ddatblygwyr plugin ychwanegu cynnwys ychwanegol y tu mewn i'r golofn ganolog.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
 | $page | `object` | Enghraifft tudalen. |
 
-### Ers
+### Ers {#since}
 
 - 2.1.0
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Diffinnir yn [`views/admin/register-domain-centered.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/views/admin/register-domain-centered.php#L141) ar linell 141

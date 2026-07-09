@@ -3,13 +3,13 @@ title: Kassandik ja kliendi DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Kassand ja kliendi DNS-juhtimise juhtimine
+# Kassand ja kliendi DNS-juhtimise juhtimine {#checkout-field-and-customer-dns-management}
 
-## Domeeni valikukirjenduse checkout-väljeldus
+## Domeeni valikukirjenduse checkout-väljeldus {#the-domain-selection-checkout-field}
 
 **Domeeni valikukirjenduse (Domain Selection)** väljeldus on checkout-element, mis annab klientide võimaluse välja, kuidas saada oma veebile toome domeen. Lisage see igale checkout-formulele domeen müügi aktiveerimiseks.
 
-### Välje väljelduse checkout-formulele
+### Välje väljelduse checkout-formulele {#adding-the-field-to-a-checkout-form}
 
 1. Minenda **Network Admin › Ultimate Multisite › Checkout Forms** menüüpunktisse
 2. Avage või luute uue checkout-formule
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Konfigureerige väljelduse valikud (vaata all)
 6. Salvestage formaal
 
-### Väljelduse valikud
+### Väljelduse valikud {#field-options}
 
 **Domeeni režiimid** — Valige, millise tabid klient näeb. Iga režiim saab aktiveerida või deaktiveerida eraldi:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domeenproduktsioon** — Valige võimaluse korral see väljeldus kinnitama konkreetse domeenproduktsiooniga. Kui seda ei seeta, lisamoodilis modul valib automaatselt vastava produktsiooni klientide otsimata kasutamata TLD-i (Top-Level Domain).
 
-### Registrantkontaktiväljelduse
+### Registrantkontaktiväljelduse {#registrant-contact-fields}
 
 Kui klient valib **Register New Domain** tabist, lisa checkout-formulele registrantkontaktiväljelduse linjalikult:
 
@@ -43,11 +43,11 @@ Kui klient valib **Register New Domain** tabist, lisa checkout-formulele registr
 
 Need on kõik registreerijad ja validatsioon toimub enne API-kutse tegemist. Telefoninumbrid on automaatselt formatseeritud `+CC.NNN` rahvusvaheliseks formaadiks, mida registreerijad odavad.
 
-### Automaatiliselt genereeritud veebilehe URL
+### Automaatiliselt genereeritud veebilehe URL {#auto-generated-site-url}
 
 Kui klient registreerub või asendab domeeni, veebilehe URL-välja on automaatselt täidetud valitud domeenist. Klient ei vaja eraldi URL-välja täita.
 
-### Otsimise käitumine
+### Otsimise käitumine {#search-behaviour}
 
 - Domeeni saadaval olevate olekuse kontrolli teostatakse reaaliajal AJAX abil klienti tekstivõtua ajal
 - Kui lemmak domeen on eemal, näidatakse alternatiivseid TLD (top-level domain) ettepaneku
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Klientide DNS-juhtimine
+## Klientide DNS-juhtimine {#customer-dns-management}
 
 Klientid saavad domeenide DNS-registreid hallata oma **Minu konto** lehel, domeeni sisse osutatud registreerimise all.
 
-### Toetud registriiditüübid
+### Toetud registriiditüübid {#supported-record-types}
 
 | Tüüp | Kasutus |
 |---|---|
@@ -91,11 +91,11 @@ Klientid saavad domeenide DNS-registreid hallata oma **Minu konto** lehel, domee
 | **MX** | Sähköpostvahetusservere seadistamine |
 | **TXT** | SPF, DMARC, kinnituse või muud tekstregistreid lisamine |
 
-### Millised tarjojad toetavad DNS-juhtimist?
+### Millised tarjojad toetavad DNS-juhtimist? {#which-providers-support-dns-management}
 
 DNS-juhtimine (rekordide lisamine, muutmise, eemaldamise) on saadaval **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** ja **Openprovider** abil. **Hostinger** domeenid saab nimetajavere kaudu nimetajahte uuendada; hooldatud domeenide DNS-rekordid on halvist core Hostinger domeen-mapping integreerimise poolt. Namecheap, GoDaddy ja NameSilo domeenid näitavad staatust ja lisuajalugu, kuid DNS tuleb juhtida otse registri kontrollpaneli abil.
 
-### Pooldud DNS-rekordid
+### Pooldud DNS-rekordid {#default-dns-records}
 
 Saate konfigurida pooldud DNS-rekordid, mis aktiveeruvad automaatselt domeeni registreerimise ajal. Minimeerige **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS-rekordide vaatamine ja muutmise
+### Admin: DNS-rekordide vaatamine ja muutmise {#admin-viewing-and-editing-dns}
 
 Võrrejaadministraatorid saavad vaadata ja muuta kõigile klientide domeenide DNS-rekorde domeeni mueditava lehtest **Network Admin › Ultimate Multisite › Domains**.

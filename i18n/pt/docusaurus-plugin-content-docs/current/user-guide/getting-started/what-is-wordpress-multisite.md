@@ -3,7 +3,7 @@ title: O que é WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# O que é WordPress Multisite?
+# O que é WordPress Multisite? {#what-is-wordpress-multisite}
 
 No núcleo do WordPress, existe um recurso chamado ‘Multisite’ que remonta a 2010, com o lançamento do WordPress 3.0. Desde então, ele passou por várias revisões com o objetivo de introduzir novos recursos e aumentar a segurança.
 
@@ -11,7 +11,7 @@ Em essência, um multisite do WordPress pode ser pensado assim: Uma Universidade
 
 ##
 
-## O que é exatamente o WordPress Multisite?
+## O que é exatamente o WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite é um recurso do WordPress que permite que vários sites compartilhem uma única instalação do WordPress. Quando o multisite é ativado, o site WordPress original é convertido para suportar o que geralmente é chamado de **rede de sites**.
 
@@ -23,7 +23,7 @@ Este fato é uma das grandes vantagens do multisite, pois permite que você aume
 
 ##
 
-## Subdomínio ou Subdiretório?
+## Subdomínio ou Subdiretório? {#subdomain-or-subdirectory}
 
 Existem dois modos de rodar um WordPress multisite – e você precisa escolher um quando converte sua instalação regular do WordPress em uma instalação multisite:
 
@@ -49,7 +49,7 @@ Um dos principais desafios ao configurar o modo de subdomínio é a cobertura SS
 
 Em contraste com o modo de subdiretório (subdirectory mode), os subsites em uma rede baseada em subdomínios são considerados pelos mecanismos de busca como sites separados, o que significa que o conteúdo presente em um subsite não interfere no desempenho de SEO dos outros subsites.
 
-## O Super Administrador
+## O Super Administrador {#the-super-admin}
 
 Instalações do WordPress de site único permitem que você adicione um número ilimitado de usuários e dê a esses usuários diferentes funções com permissões distintas.
 
@@ -63,7 +63,7 @@ Plugins e temas só podem ser instalados ou desinstalados pelo painel de adminis
 
 _Nota: como você pode ver, convidar alguém para sua rede e conceder a ela o status de super administrador dá a esse usuário controle total sobre sua rede. Por exemplo, outros super administradores podem até remover seu status de super administrador, efetivamente bloqueando você do painel de administração da sua própria rede. Para permitir que os clientes Ultimate Multisite tenham um controle granular sobre o que outros super administradores podem fazer, temos um add-on chamado Support Agents (Agentes de Suporte). Este add-on permite que você crie outro tipo de usuário – um agente – com apenas as permissões que ele pode precisar para realizar suas tarefas na rede._
 
-## O que é compartilhado entre subsites e o que não é
+## O que é compartilhado entre subsites e o que não é {#what-is-shared-among-subsites-and-what-is-not}
 
 Como mencionamos antes, uma das grandes vantagens do WordPress multisite é que todos os subsites compartilham as mesmas configurações, arquivos principais, temas, plugins, arquivos principais do WordPress, etc.
 
@@ -73,7 +73,7 @@ No entanto, existem elementos que são bem definidos para cada subsite.
 - Cada subsite tem seu próprio painel de administração dedicado e pode ativar ou desativar plugins ou temas, a menos que eles estejam ativos na rede por um super administrador.
 - A maioria das tabelas do banco de dados é criada para cada subsite, o que significa que posts, comentários, páginas, configurações e muito mais são definidos para cada subsite.
 
-## Gerenciamento de usuários no WordPress Multisite
+## Gerenciamento de usuários no WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Um assunto delicado no WordPress multisite é o gerenciamento de usuários. A tabela de usuários do WordPress é uma das poucas que é compartilhada entre todos os subsites.
 
@@ -97,7 +97,7 @@ _Nota: Percebemos o quão ruim isso pode ser dependendo do seu caso de uso, ent�
 
 Mesmo que a tabela de usuários seja compartilhada, os administradores dos subsites ou o super administrador podem adicionar e remover usuários dos subsites, e eles podem ter papéis de usuário diferentes em subsites diferentes.
 
-## Considerações de desempenho
+## Considerações de desempenho {#performance-considerations}
 
 O WordPress multisite é realmente poderoso quando se trata do número de sites que ele pode suportar. Isso pode ser testado pelo fato de que [WordPress.com](https://WordPress.com), Edublogs e Campuspress são serviços baseados em multisite, e cada um hospeda milhares de sites.
 

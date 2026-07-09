@@ -3,11 +3,11 @@ title: Webhook-ի մշակում
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Վեբհուքերի մշակում
+# Վեբհուքերի մշակում {#webhook-handling}
 
 Ստեղծեք անհատական վեբհուք վերջնակետեր՝ արտաքին ծառայություններից իրադարձություններ ստանալու և տվյալները Ultimate Multisite-ի հետ համաժամացնելու համար։
 
-## Անհատական վեբհուք վերջնակետ
+## Անհատական վեբհուք վերջնակետ {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Անվտանգության նկատառումներ
+## Անվտանգության նկատառումներ {#security-considerations}
 
 - Միշտ ստուգեք վեբհուքերի ստորագրությունները՝ օգտագործելով HMAC կամ ընդհանուր գաղտնիք
 - Ձեր REST երթուղու վրա օգտագործեք `permission_callback` — արտադրական միջավայրում այն երբեք մի սահմանեք որպես `__return_true`

@@ -4,11 +4,11 @@ title: Shaandhee - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Shaandheeye: wu_apc_process_page_content
+# Shaandheeye: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 U oggolow horumariyeyaasha inay wax ka beddelaan nuxurka ugu dambeeya
 
-## Halbeegyada
+## Halbeegyada {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -17,13 +17,13 @@ U oggolow horumariyeyaasha inay wax ka beddelaan nuxurka ugu dambeeya
 | $to_replace | `array` | Array ka kooban placeholders-ka la hayo. |
 | $placeholder_count | `int` | Tirada placeholders-ka la helay. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 1.4.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) khadka 46
 
 
-## Soo celinta
+## Soo celinta {#returns}
 Nuxurka ka dib wax-ka-beddelka.

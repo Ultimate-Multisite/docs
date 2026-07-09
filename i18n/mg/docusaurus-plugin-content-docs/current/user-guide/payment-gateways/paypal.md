@@ -3,7 +3,7 @@ title: Fanomezana an-tanana ny PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Fanamboana ny Gateway PayPal (v2)
+# Fanamboana ny Gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**FANAMARIANA MANAN-DANJA: Ity lahatsoratra ity dia manondro ny Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Tahaka ny Stripe, tena be mpampiasa ny PayPal ho fandoavam-bola an-tserasera, in
 
 Tandremo fa mila manana **kaonty Business PayPal** ianao mba hahazoana ny API credential ilainao ho an'ity fifandraisana ity.
 
-## Fanondroana ny PayPal eo amin'ny tambajakanareo
+## Fanondroana ny PayPal eo amin'ny tambajakanareo {#enabling-paypal-on-your-network}
 
 Mba hampandehanana ny PayPal ho fomba fandoavam-bola azo ampiasaina ao amin'ny tambajakanareo, dia mandehin'ny **Ultimate Multisite > Settings > Payments** ary tsindrio ilay boky (box) eo anilan'ny PayPal.
 
 ![Fanondroana ny PayPal ao amin'ny gateway fandoavam-bola mavitrika](/img/config/settings-payment-gateways.png)
 
-## Fampiasana ny wizard fanamboarana natoraly (guided setup wizard)
+## Fampiasana ny wizard fanamboarana natoraly (guided setup wizard) {#using-the-guided-setup-wizard}
 
 Ny Ultimate Multisite 2.10.0 dia manampy wizard fanamboarana PayPal natoraly eo amin'ny fandrindrana gateway fandoavam-bola. Rehefa mampandeha ianao, dia ampiasao ilay wizard ao amin'ny **Ultimate Multisite > Settings > Payments** mba hisafidianana ny fomba tianao hampifandraisana ny gateway ary hanamafisana ireo credential izay mila anao mbola alohan'ny hitahirizana (saving).
 
@@ -30,7 +30,7 @@ Maneho lalana fanamboarana roa ity wizard ity:
 
 Raha tsy mahita ny safidy OAuth ao amin'ny wizard ianao, dia vita aloha ny fomba fampidirana antontan-taratasy manokana eto. Ny gateway dia miasa mampiasa ireo antontan-taratasy PayPal Business API mitovy amin'ireo fiverenana Ultimate Multisite 2.x teo aloha.
 
-## Fandraisana ny antontan-taratasy PayPal API
+## Fandraisana ny antontan-taratasy PayPal API {#getting-the-paypal-api-credentials}
 
 Rehefa voafidy ho gateway famatsiana (payment gateway) ny PayPal, dia mila mameno ireo toerana ho an'ny **Username** an'ny PayPal API , **Password** an'ny PayPal API ary **Signature** an'ny PayPal API ianao.
 

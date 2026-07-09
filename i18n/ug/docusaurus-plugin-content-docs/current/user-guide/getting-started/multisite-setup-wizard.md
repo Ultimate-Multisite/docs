@@ -3,7 +3,7 @@ title: Çoklu sayt Kurulum Sihirbazı
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite راه‌اندازی راهنما
+# Multisite راه‌اندازی راهنما {#multisite-setup-wizard}
 
 Ultimate Multisite شامل یک راهنمای داخلی است که نصب استاندارد وردپرس شما را به طور خودکار به یک شبکه وردپرس Multisite تبدیل می‌کند. این کار نیاز به ویرایش دستی فایل `wp-config.php` یا اجرای دستورات دیتابیس را از بین می‌برد.
 
@@ -11,13 +11,13 @@ Ultimate Multisite شامل یک راهنمای داخلی است که نصب ا
 اگر نصب وردپرس شما از قبل به عنوان یک شبکه Multisite در حال اجراست، می‌توانید این مرحله را کاملاً رد کنید. راهنما فقط زمانی ظاهر می‌شود که هنوز Multisite فعال نشده باشد.
 :::
 
-## راهنما چه زمانی ظاهر می‌شود؟
+## راهنما چه زمانی ظاهر می‌شود؟ {#when-does-the-wizard-appear}
 
 وقتی Ultimate Multisite را روی یک نصب استاندارد (غیر Multisite) وردپرس فعال می‌کنید، افزونه متوجه می‌شود که Multisite فعال نیست و به جای راهنمای تنظیمات معمولی، شما را مستقیماً به راهنمای راه‌اندازی Multisite هدایت می‌کند.
 
 همچنین می‌توانید مستقیماً از طریق **WP Admin > Ultimate Multisite > Multisite Setup** به آن دسترسی پیدا کنید.
 
-## پیش‌نیازها
+## پیش‌نیازها {#prerequisites}
 
 قبل از اجرای راهنما، مطمئن شوید:
 
@@ -29,7 +29,7 @@ Ultimate Multisite شامل یک راهنمای داخلی است که نصب ا
 این راهنما فایل `wp-config.php` شما را تغییر می‌دهد و جداول پایگاه داده جدید ایجاد می‌کند. همیشه قبل از ادامه کار، یک نسخه پشتیبان تهیه کنید.
 :::
 
-## مرحله ۱: خوش‌آمدگویی (Welcome)
+## مرحله ۱: خوش‌آمدگویی (Welcome) {#step-1-welcome}
 
 صفحه اول توضیح می‌دهد که وردپرس Multisite چیست و راهنما چه کارهایی انجام خواهد داد:
 
@@ -42,11 +42,11 @@ Ultimate Multisite شامل یک راهنمای داخلی است که نصب ا
 
 برای ادامه، روی **Continue** کلیک کنید.
 
-## مرحله ۲: پیکربندی شبکه (Network Configuration)
+## مرحله ۲: پیکربندی شبکه (Network Configuration) {#step-2-network-configuration}
 
 این مرحله از شما می‌خواهد تنظیمات شبکه خود را پیکربندی کنید.
 
-### ساختار سایت (Site Structure)
+### ساختار سایت (Site Structure) {#site-structure}
 
 شما شبکه سایتleriniz nasıl organize etmek istediğinizi seçin:
 
@@ -57,11 +57,11 @@ Ultimate Multisite شامل یک راهنمای داخلی است که نصب ا
 Eğer alt alan adları seçerseniz, alan adınız için **wildcard DNS** ve bir **wildcard SSL sertifikası** yapılandırmanız gerekecek. Çoğu yönetilen WordPress barındırma hizmeti bunu otomatik olarak halleder. Detaylı karşılaştırma için [Ultimate Multisite 101](https://ultimate-multisite-101) adresine bakın.
 :::
 
-### Ağ Başlığı (Network Title)
+### Ağ Başlığı (Network Title) {#network-title}
 
 Ağınız için bir isim girin. Bu, varsayılan olarak mevcut site başlığınızın sonuna "Network" eklenir. Bunu daha sonra ağ ayarlarından değiştirebilirsiniz.
 
-### Ağ Yönetici E-postası (Network Admin Email)
+### Ağ Yönetici E-postası (Network Admin Email) {#network-admin-email}
 
 Ağ yönetimi bildirimleri için kullanılan e-posta adresi. Bu, varsayılan olarak mevcut kullanıcının e-posta adresidir.
 
@@ -69,7 +69,7 @@ Ağ yönetimi bildirimleri için kullanılan e-posta adresi. Bu, varsayılan ola
 
 Alanları doldurduktan sonra ilerlemek için **Devam et (Continue)** butonuna tıklayın.
 
-## Adım 3: Kurulum (Installation)
+## Adım 3: Kurulum (Installation) {#step-3-installation}
 
 Başlamak için **Kur (Install)** butonuna tıklayın. Sihirbaz, her bir adımın ilerlemesini gerçek zamanlı olarak göstererek beş otomatik adımı sırayla gerçekleştirir:
 
@@ -96,7 +96,7 @@ Barcha qadamlar muvaffaqiyatli tugagandan so'ng, har bir element uchun yashil "S
 
 Keyin wizard avtomatik ravishda yakunlash ekraniga o'tadi.
 
-## 4-Шаг: Yakunlash
+## 4-Шаг: Yakunlash {#step-4-complete}
 
 O'rnatish tugagach, WordPress Multisite faollashtirilganini tasdiqlaydigan muvaffaqiyat xabari ko'rasiz.
 
@@ -108,7 +108,7 @@ Endi siz Ultimate Multisite sozlash wizardidan foydalanib WaaS platformangizni (
 Multisite kurulumu bittikten sonra tarayıcınız yeni etkinleştirilen ağ yöneticisi üzerinden yönlendirilecektir. Multisite ortamı için kimlik doğrulama çerezleri güncellendiği için tekrar giriş yapmanız gerekebilir.
 :::
 
-## Manuel Kurulum Yedek Planı (Manual Setup Fallback)
+## Manuel Kurulum Yedek Planı (Manual Setup Fallback) {#manual-setup-fallback}
 
 Eğer sihirbaz (`wizard`) `wp-config.php` dosyanıza yazı yazamıyorsa (dosya izinleri veya sunucu kısıtlamaları nedeniyle), size manuel olarak eklemeniz gereken tam kodu gösterecektir:
 
@@ -117,9 +117,9 @@ Eğer sihirbaz (`wizard`) `wp-config.php` dosyanıza yazı yazamıyorsa (dosya i
 
 Manuel değişiklikleri yaptıktan sonra sayfayı yenileyin ve sihirbazın multisite'ın artık aktif olduğunu algılamasını sağlayın.
 
-## Sorun Giderme (Troubleshooting)
+## Sorun Giderme (Troubleshooting) {#troubleshooting}
 
-### Sihirbaz `wp-config.php` yazılamaz diyor
+### Sihirbaz `wp-config.php` yazılamaz diyor {#the-wizard-says-wp-configphp-is-not-writable}
 
 Web sunucusu işleminin `wp-config.php` dosyasına yazma iznine ihtiyacı var. Bunu şu yollardan biriyle çözebilirsiniz:
 
@@ -127,7 +127,7 @@ Web sunucusu işleminin `wp-config.php` dosyasına yazma iznine ihtiyacı var. B
 - Sihirbaz tarafından sağlanan manuel kurulum yedek planı talimatlarını kullanın
 - Barındırma sağlayıcınızdan yardım isteyin
 
-### Kurulumdan sonra sitelere erişilemiyor (alt alan adları)
+### Kurulumdan sonra sitelere erişilemiyor (alt alan adları) {#sites-are-not-accessible-after-setup-subdomains}
 
 Eğer alt alan adı yapısını seçtiyseniz, alan adınız için **wildcard DNS** yapılandırmanız gerekiyor. Bir DNS kaydı ekleyin:
 
@@ -139,7 +139,7 @@ Value: [sunucu IP adresiniz]
 
 Bu nasıl yapılandırılacağını bilmiyorsanız lütfen barındırma sağlayıcınızla kontrol edin.
 
-### Kurulumdan sonra kimlik doğrulama sorunları
+### Kurulumdan sonra kimlik doğrulama sorunları {#authentication-issues-after-setup}
 
 Multisite kurulumundan sonra çıkış yaparsanız veya çerez hataları alırsanız:
 
@@ -147,7 +147,7 @@ Multisite kurulumundan sonra çıkış yaparsanız veya çerez hataları alırsa
 2. `yourdomain.com/wp-login.php` adresinden tekrar giriş yapın
 3. Sorun devam ederse, `wp-config.php` dosyanızda `COOKIE_DOMAIN` ayarının `false` olarak ayarlanmadığından emin olun — bu alt alan adı multisite kurulumlarında bilinen bir sorundur.
 
-### Kurulum sırasında bir adım başarısız oldu
+### Kurulum sırasında bir adım başarısız oldu {#a-step-failed-during-installation}
 
 اگر نصب مراحل از یکی خطا داد:
 

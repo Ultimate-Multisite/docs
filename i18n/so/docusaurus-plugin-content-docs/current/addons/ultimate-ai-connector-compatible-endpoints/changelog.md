@@ -3,9 +3,9 @@ title: Diiwaanka isbeddellada ee Ultimate AI Connector ee Endpoint-yada ku habbo
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector ee Changelog-ka Endpoints La Jaanqaadi Kara
+# Ultimate AI Connector ee Changelog-ka Endpoints La Jaanqaadi Kara {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — La sii daayay 2026-04-24
+## Version 2.0.0 — La sii daayay 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Cusub: Taageero bixiyeyaal badan — habee endpoints AI badan oo codsiyada u jihay fallback otomaatig ah oo dhex mara bixiyeyaasha.
 * Hagaajin: Isdhexgalka SDK ee bixiyeyaal badan oo leh provider IDs sax ah, registration URLs, iyo xadidaynta HTTP filter ee bixiye kasta.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Hagaajin: Waxaa la tirtiray codsi HTTP oo xannibaya kaas oo kici jiray mar kasta oo bog la raro.
 * La hagaajiyay: GitHub Actions workflows waxaa loo cusboonaysiiyay Node.js 24.
 
-## Version 1.0.0 — Sii-dayntii Ugu Horreysay
+## Version 1.0.0 — Sii-dayntii Ugu Horreysay {#version-100--initial-release}

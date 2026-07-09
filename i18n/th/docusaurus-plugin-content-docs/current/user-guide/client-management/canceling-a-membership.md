@@ -3,7 +3,7 @@ title: การยกเลิกการเป็นสมาชิก
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# การยกเลิกสมาชิกภาพ (v2)
+# การยกเลิกสมาชิกภาพ (v2) {#canceling-a-membership-v2}
 
 _**หมายเหตุสำคัญ: บทความนี้อ้างอิงถึง Ultimate Multisite เวอร์ชัน 2.x**_
 

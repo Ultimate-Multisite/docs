@@ -4,10 +4,10 @@ title: Aiki - wu_flush_known_caches
 sidebar_label: wu_flush_known_caches
 _i18n_hash: bfe84286e3bd8d31846f6800c0954148
 ---
-# Mataki: wu_flush_known_caches
+# Mataki: wu_flush_known_caches {#action-wuflushknowncaches}
 
 Ƙugiya zuwa ƙarin tsaftacewa
 
-### Tushe
+### Tushe {#source}
 
 An ayyana shi a cikin [`inc/managers/class-cache-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-cache-manager.php#L49) a layi na 49

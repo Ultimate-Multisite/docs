@@ -3,13 +3,13 @@ title: Gid Entegrasyon
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gid Entegrasyon
+# Gid Entegrasyon {#integration-guide}
 
 Gid sa a kouvri modèl entegrasyon komen ak Ultimate Multisite, tankou konekte ak sèvis ekstèn, konstwi passerelles peman pèsonalize, epi jere webhooks.
 
 Pou enfrastrikti lokatè izole, gade [Entegrasyon Multi-Tenancy](./multi-tenancy) pou gid sou demaraj lokatè souveren, verifikasyon migrasyon, SSO, ak demantèlman.
 
-## Entegrasyon CRM
+## Entegrasyon CRM {#crm-integration}
 
 Senkronize done kliyan ak CRM ou lè nouvo kliyan enskri:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Entegrasyon Analytics
+## Entegrasyon Analytics {#analytics-integration}
 
 Swiv evènman biznis kle atravè sik lavi kliyan an:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Pwochen Etap
+## Pwochen Etap {#next-steps}
 
 - [Devlopman Gateway Pèsonalize](./custom-gateway) — Konstwi pwòp passerelle peman ou
 - [Jesyon Webhook](./webhooks) — Kreye endpoints webhook pèsonalize

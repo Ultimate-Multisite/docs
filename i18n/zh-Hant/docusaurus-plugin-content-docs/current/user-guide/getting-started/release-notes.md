@@ -3,9 +3,9 @@ title: 發行說明
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# 發行說明
+# 發行說明 {#release-notes}
 
-## 版本 2.13.0 — 發行於 2026-06-05
+## 版本 2.13.0 — 發行於 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - 新增：為客戶 Account、checkout、billing、網站、發票、template 切換與網域對應流程新增 sovereign-tenant 支援，讓租戶網路可將客戶導回主網站以進行受管理的操作。
 - 新增：為週期性 membership 新增續約憑證檢查，讓 gateway 可在缺少已儲存的 billing agreement、subscription 或 vault token 時停用自動續約。
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 修正：membership 續約、到期顯示與付款收取的邊界情況現在可避免立即到期、當機或遺漏必要付款。
 - 改進：WordPress 相容性已測試至 7.0，正式環境 Vue 資產已從 npm 來源重建，且 Cypress 端對端涵蓋範圍現在會測試更多 checkout、setup、SSO 與 gateway 流程。
 
-## 版本 2.12.0 — 發行於 2026-05-15
+## 版本 2.12.0 — 發行於 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - 新增：新增 Hostinger (hPanel) 作為支援的主機供應商，並具備網域對應整合
 - 新增：Site Exporter 現在可處理網路匯入套件，以簡化整個網路的網站還原
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 修正：Site Exporter CLI 現在會保留正確的預設網路網站選取
 - 改進：從 plugin 套件移除隨附的 wp-cli，減少 plugin 大小
 
-## 版本 2.11.0 — 發行於 2026-05-11
+## 版本 2.11.0 — 發行於 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - 新增：網站匯出現在會打包一個可自行啟動的 `index.php`，因此 ZIP 可安裝在全新的主機上，而不需要另外安裝 plugin。
 - 新增：網路匯出讓管理員可從 Site Export 管理頁面將所有子網站匯出到單一封存檔。
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 新增：checkout 表單編輯器會在新增產品但未設定必要欄位時發出警告。
 - 新增：匯入／匯出設定分頁現在清楚說明其範圍，並直接連結到 Site Export 工具。
 
-## 版本 2.10.0 — 發行於 2026-05-05
+## 版本 2.10.0 — 發行於 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - 新增：PayPal 引導式設定精靈，用於手動輸入憑證，並透過 OAuth 旗標閘門提供無縫 gateway 設定。
 - 新增：template 切換客戶面板重新設計，包含目前 template 卡片、持續顯示的格狀檢視，以及 **重設目前 template** 按鈕。
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 修正：所有登入流程都會遵循已篩選的 SSO 路徑。
 - 修正：空白網站識別選項在儲存時會被保留。
 
-## 版本 2.9.0 — 發行於 2026-04-30
+## 版本 2.9.0 — 發行於 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - 新增：在 **工具 > 匯出與匯入** 下新增單一網站匯出與匯入。
 - 修正：匯出 ZIP 檔案現在透過已驗證的下載 endpoint 提供。
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - 修正：導覽教學 ID 在使用者設定鍵中已正規化為底線。
 - 改進：現在使用 ZipArchive 取代 Alchemy/Zippy，以提升相容性。
 
-## 版本 2.8.0 — 發行於 2026-04-29
+## 版本 2.8.0 — 發行於 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - 新增：在 Other Options 設定 UI 新增 Enable Jumper 切換開關。
 - 新增：在結帳表單清單表格新增狀態欄。

@@ -3,13 +3,13 @@ title: Lacag qaadashada
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Lacag Helid (v2)
+# Lacag Helid (v2) {#getting-paid-v2}
 
 _**XUSUUSIN MUHIIM AH: Maqaalkani wuxuu khuseeyaa Ultimate Multisite nooca 2.x.**_
 
 Ultimate Multisite wuxuu leeyahay nidaam membership iyo billing oo ku dhex-dhisan. Si nidaamkeenna billing u shaqeeyo, waxaan ku darnay payment gateways-ka ugu badan ee laga isticmaalo e-commerce. Payment gateways-ka caadiga ah ee Ultimate Multisite waa _Stripe_ , _PayPal_ , iyo Manual Payment. Sidoo kale waxaad isticmaali kartaa _WooCommerce_ , _GoCardless_ iyo _Payfast_ si aad lacag-bixinno u hesho adigoo rakibaya add-ons-kooda u gaarka ah.
 
-## Dejinnada Aasaasiga ah
+## Dejinnada Aasaasiga ah {#basic-settings}
 
 Waxaad payment gateways-kan midkood ku habayn kartaa hoosta dejinnada lacag-bixinta ee Ultimate Multisite. Waxaad ka heli kartaa adigoo tagaya **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Tani waxay ka hortagtaa in membership uu u muuqdo inuu auto-renew sameynayo mark
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Meesha laga helo gateways-ka:
+## Meesha laga helo gateways-ka: {#where-to-find-the-gateways}
 
 Waxaad payment gateways-ka ku dejin kartaa isla boggaas ( **Ultimate Multisite > Settings > Payments**). Si toos ah hoosta **active payment gateways** , waxaad arki doontaa: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ iyo _Manual_.
 
@@ -67,7 +67,7 @@ Halkan sidoo kale waxaa ku yaal muuqaal buuxa oo dejinnada payment gateways-ka a
 
 Hadda, haddii aad rabto inaad _WooCommerce_ , _GoCardless_ ama _Payfast_ u isticmaasho payment gateway-gaaga, waxaad u baahan doontaa inaad **rakibto oo habayso add-ons-kooda**.
 
-### Sida loo rakibo WooCommerce add-on:
+### Sida loo rakibo WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Waxaan fahamsanahay in _Stripe_ iyo _PayPal_ aan laga heli karin dalal qaarkood, taas oo xaddidaysa ama carqaladaynaysa isticmaalayaasha Ultimate Multisite inay si wax ku ool ah u isticmaalaan plugin-keena. Sidaas darteed waxaan abuurnay add-on si loo dhexgeliyo _WooCommerce,_ kaas oo ah plugin e-commerce aad loo jecel yahay. Developers-ka adduunka oo dhan waxay abuureen add-ons si ay ugu dhexgeliyaan payment gateways kala duwan. Waxaan ka faa'iidaysannay tan si aan u ballaarinno payment gateways-ka aad ku isticmaali karto nidaamka billing ee Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Kadib markaad hawlgeliso, haddii aadan weli ku rakibin oo ku hawlgelin kordhinta
 
 Si aad wax badan uga akhrido ku-darka Isdhexgalka WooCommerce, **halkan guji**.
 
-### Sida loo rakibo ku-darka GoCardless:
+### Sida loo rakibo ku-darka GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Tallaabooyinka lagu rakibo ku-darka _GoCardless_ waxay aad ugu egyihiin kuwa ku-darka _WooCommerce_. Fadlan tag bogga ku-darrada oo dooro ku-darka **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Kadib marka rakibiddu dhammaato, waxaa laguu wareejin doonaa bogga kordhinnada. 
 
 Si aad u barato sida loogu bilaabo gateway-ga _GoCardless_, **akhri maqaalkan**.
 
-### Sida loo rakibo ku-darka Payfast:
+### Sida loo rakibo ku-darka Payfast: {#how-to-install-the-payfast-add-on}
 
 Tag bogga ku-darrada oo dooro ku-darka **Ultimate Multisite: Payfast Gateway**.
 

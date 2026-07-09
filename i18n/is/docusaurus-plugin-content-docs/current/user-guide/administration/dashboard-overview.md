@@ -3,11 +3,11 @@ title: Översikt yfir nýtingar
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Översikt yfir Dashboard
+# Översikt yfir Dashboard {#dashboard-overview}
 
 Ultimate Multisite hefur sérstaklega **Dashboard** undir menyann Ultimate Multisite, og það leggur saman við vísurðum á Network Dashboard. Þessi grein vegur um það sem þú sjá í bæði staðum.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite leggur gagnleg vísurðum í network-level dashboardinn sem finnst undir **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Hér er það hvað hver vísurður býður upp:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Þótt network dashboardinn sýni heilbrigðar upplýsingar um netinu, sýnir Ultimate Multisite dashboardur (á topphæðu menyann Ultimate Multisite) upplýsingar um sjálft þjónustuna.
 

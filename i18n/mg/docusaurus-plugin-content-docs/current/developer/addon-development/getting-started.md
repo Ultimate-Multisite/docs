@@ -3,9 +3,9 @@ title: Manomboka amin’ny Fampivoarana Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Fampivoarana fanampiny
+# Fampivoarana fanampiny {#addon-development}
 
-## Rafitry ny fanampiny
+## Rafitry ny fanampiny {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Rakitra môdely
 ```
 
-## Môdely rakitra fototry ny fanampiny
+## Môdely rakitra fototry ny fanampiny {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Ohatra modely manokana
+## Ohatra modely manokana {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Fampidirana pejin’ny mpitantana
+## Fampidirana pejin’ny mpitantana {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Fitsapana ny Addon-nao
+## Fitsapana ny Addon-nao {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Toerana fanitarana v2.13.0
+## Toerana fanitarana v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 dia manampy toerana fanitarana maromaro izay ilaina ho an'ny addons izay mifandray amin'ny tenants mahaleo tena, sehatra checkout, na automatique DNS an'ny mpamatsy fampiantranoana.
 
-### SSO sy URL fitantanana ny tranonkala lehibe
+### SSO sy URL fitantanana ny tranonkala lehibe {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Sehatra fototra ho an'ny checkout-form
+### Sehatra fototra ho an'ny checkout-form {#checkout-form-base-domains}
 
 Ampiasao `wu_checkout_form_base_domains` rehefa manome sehatra fototra iombonana fanampiny ny addon-nao izay tokony hiasa toy ny sehatra **Site URL** amin'ny checkout-form fa tsy toy ny sarintany manokana isaky ny tranonkala:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite dia manara-penitra ireo hosts ireo ary mandingana firaketana mapped-domain mandeha ho azy isaky ny tranonkala ho azy ireo.
 
-### Famoronana firaketana sehatra mandeha ho azy
+### Famoronana firaketana sehatra mandeha ho azy {#automatic-domain-record-creation}
 
 Ampiasao `wu_should_create_domain_record_for_site` rehefa mila manakana na manemotra ny famoronana firaketana sehatra mandeha ho azy ho an'ny tranonkala vao noforonina ny addon-nao:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Ny fampidirana mpamatsy fampiantranoana izay mihaino `wu_add_subdomain` dia afaka mamorona firaketana DNS eo amin'ny lafin'ny mpamatsy rehefa foronina ny tranonkala. Raha tsy misy fampidirana voasoratra ho an'io action io, dia mandingana ilay asa background banga ny Ultimate Multisite.
 
-## Dingana Manaraka
+## Dingana Manaraka {#next-steps}
 
 - Avereno jerena ny [Torolalana Hooks](/developer/hooks) ho an'ireo actions sy filters misy
 - Jereo ny [Topimaso REST API](/developer/rest-api/overview) ho an'ny fampidirana API

@@ -3,18 +3,18 @@ title: Integrare Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integrarea cu Closte
+# Integrarea cu Closte {#closte-integration}
 
-## Prezentare generală
+## Prezentare generală {#overview}
 Closte este o platformă de hosting WordPress administrat, construită pe infrastructura Google Cloud. Această integrare permite sincronizarea automată a domeniilor și gestionarea certificatelor SSL între Ultimate Multisite și Closte.
 
-## Funcționalități
+## Funcționalități {#features}
 - Sincronizare automată a domeniilor
 - Gestionarea certificatelor SSL
 - Suport pentru domenii wildcard
 - Nu necesită configurare dacă rulezi pe Closte
 
-## Cerințe
+## Cerințe {#requirements}
 Următoarea constantă trebuie definită în fișierul tău `wp-config.php` dacă folosești Closte:
 
 ```php
@@ -23,13 +23,13 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 Această constantă este de obicei deja definită dacă ai găzduirea pe Closte.
 
-## Instrucțiuni de configurare
+## Instrucțiuni de configurare {#setup-instructions}
 
-### 1. Verifică cheia API Closte
+### 1. Verifică cheia API Closte {#1-verify-your-closte-api-key}
 
 Dacă ai găzduirea pe Closte, constanta `CLOSTE_CLIENT_API_KEY` ar trebui să fie deja definită în fișierul tău `wp-config.php`. Poți verifica acest lucru deschizând fișierul `wp-config.php`.
 
-### 2. Activează integrarea
+### 2. Activează integrarea {#2-enable-the-integration}
 
 1. În panoul de administrare WordPress, mergi la Ultimate Multisite > Settings
 2. Navighează la tab-ul „Domain Mapping"
@@ -37,7 +37,7 @@ Dacă ai găzduirea pe Closte, constanta `CLOSTE_CLIENT_API_KEY` ar trebui să f
 4. Activează integrarea Closte
 5. Apasă „Save Changes"
 
-## Cum funcționează
+## Cum funcționează {#how-it-works}
 
 Când un domeniu este mapat în Ultimate Multisite:
 
@@ -47,26 +47,26 @@ Când un domeniu este mapat în Ultimate Multisite:
 
 Integrarea funcționează și cu setarea intervalului de verificare DNS din Ultimate Multisite, permițându-ți să configurezi cât de frecvent verifică sistemul propagarea DNS și emiterea certificatului SSL.
 
-## Crearea înregistrării de domeniu
+## Crearea înregistrării de domeniu {#domain-record-creation}
 
 Această integrare se asigură că atunci când un site este creat sau duplicat, se creează automat o înregistrare de domeniu. Acest lucru este deosebit de important pentru integrarea cu Closte, deoarece crearea înregistrării de domeniu declanșează API-ul Closte pentru a crea domeniul și certificatul SSL.
 
-## Depanare
+## Depanare {#troubleshooting}
 
-### Probleme de conexiune la API
+### Probleme de conexiune la API {#api-connection-issues}
 - Verifică dacă cheia API Closte este corectă
 - Asigură-te că contul tău Closte are permisiunile necesare
 
-### Probleme cu certificatul SSL
+### Probleme cu certificatul SSL {#ssl-certificate-issues}
 - Closte poate avea nevoie de ceva timp pentru a emite certificatele SSL (de obicei 5-10 minute)
 - Verifică dacă domeniile tale sunt direcționate corect către adresa IP a serverului Closte
 - Verifică înregistrările DNS ale domeniului tău pentru a te asigura că sunt configurate corect
 
-### Domeniul nu a fost adăugat
+### Domeniul nu a fost adăugat {#domain-not-added}
 - Verifică jurnalele Ultimate Multisite pentru eventuale mesaje de eroare
 - Verifică dacă domeniul nu este deja adăugat în Closte
 - Asigură-te că înregistrările DNS ale domeniului tău sunt configurate corect
 
-### Intervalul de verificare DNS
+### Intervalul de verificare DNS {#dns-check-interval}
 - Dacă emiterea certificatelor SSL durează prea mult, poți ajusta intervalul de verificare DNS în setările Domain Mapping
 - Intervalul implicit este de 300 de secunde (5 minute), dar îl poți seta la minimum 10 secunde pentru verificări mai rapide în timpul testării

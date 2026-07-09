@@ -3,7 +3,7 @@ title: Loga atharrachaidhean Taghadair Cànain
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Clàr-atharrachaidhean Taghadair Cànain
+# Clàr-atharrachaidhean Taghadair Cànain {#language-selector-changelog}
 
 Tionndadh: 1.1.3 - Air fhoillseachadh air 2026-05-05
 * Ceartachadh: Tha caochladairean ion-chuir a-nis air an glanadh agus tha ro-leasachan air ainmean hook gnàthaichte gus còmhstri le plugain treas-phàrtaidh a sheachnadh

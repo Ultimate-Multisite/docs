@@ -3,9 +3,9 @@ title: Ag Tosú le Forbairt Breiseán
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Forbairt Bhreiseáin
+# Forbairt Bhreiseáin {#addon-development}
 
-## Struchtúr an Bhreiseáin
+## Struchtúr an Bhreiseáin {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Teimpléad Phríomhchomhaid an Bhreiseáin
+## Teimpléad Phríomhchomhaid an Bhreiseáin {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Sampla de Mhúnla Saincheaptha
+## Sampla de Mhúnla Saincheaptha {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Comhtháthú Leathanach Riaracháin
+## Comhtháthú Leathanach Riaracháin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Do Addon a Thástáil
+## Do Addon a Thástáil {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Pointí sínte v2.13.0
+## Pointí sínte v2.13.0 {#v2130-extension-points}
 
 Cuireann Ultimate Multisite v2.13.0 roinnt pointí sínte leis atá úsáideach d’addons a chomhtháthaíonn le tionóntaí ceannasacha, fearainn checkout, nó uathoibriú DNS soláthraí óstaigh.
 
-### SSO agus URLanna bainistíochta an phríomhshuímh
+### SSO agus URLanna bainistíochta an phríomhshuímh {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Bunfhearainn fhoirm checkout
+### Bunfhearainn fhoirm checkout {#checkout-form-base-domains}
 
 Úsáid `wu_checkout_form_base_domains` nuair a sholáthraíonn d’addon bunfhearainn chomhroinnte bhreise ar cheart dóibh iompar mar fhearainn **Site URL** na foirme checkout in ionad mapálacha saincheaptha in aghaidh an tsuímh:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Déanann Ultimate Multisite na hóstain seo a normalú agus scipeálann sé taifid uathoibríocha fearainn mhapáilte in aghaidh an tsuímh dóibh.
 
-### Cruthú uathoibríoch taifead fearainn
+### Cruthú uathoibríoch taifead fearainn {#automatic-domain-record-creation}
 
 Úsáid `wu_should_create_domain_record_for_site` nuair is gá do d’addon cruthú uathoibríoch taifead fearainn a chur faoi chois nó a chur siar do shuíomh nuachruthaithe:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Is féidir le comhtháthuithe soláthraí óstaigh a éisteann le `wu_add_subdomain` taifid DNS ar thaobh an tsoláthraí a chruthú nuair a chruthaítear suíomhanna. Mura bhfuil aon chomhtháthú cláraithe don ghníomh sin, scipeálann Ultimate Multisite an post cúlra folamh.
 
-## Na Chéad Chéimeanna Eile
+## Na Chéad Chéimeanna Eile {#next-steps}
 
 - Athbhreithnigh an [Tagairt Hooks](/developer/hooks) le haghaidh gníomhartha agus scagairí atá ar fáil
 - Seiceáil an [Forléargas REST API](/developer/rest-api/overview) le haghaidh chomhtháthú API

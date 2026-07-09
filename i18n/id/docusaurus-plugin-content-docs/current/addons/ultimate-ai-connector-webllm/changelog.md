@@ -3,9 +3,9 @@ title: Catatan Perubahan Ultimate AI Connector untuk WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Catatan Perubahan Ultimate AI Connector untuk WebLLM
+# Catatan Perubahan Ultimate AI Connector untuk WebLLM {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versi 1.1.0 — Dirilis pada 2026-04-09
+## Versi 1.1.0 — Dirilis pada 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Baru: Widget obrolan mengambang dengan indikator status bilah admin — Pengguna yang sudah login dapat memberikan perintah (prompt) langsung ke LLM sisi browser dari tampilan depan (front end).
 * Baru: Runtime SharedWorker — Mesin MLC kini berjalan di SharedWorker sehingga banyak tab dapat berbagi satu sesi GPU alih-alih berebut sesi tersebut.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Perbaikan: Menghubungkan WebLLM ke filter wpai_preferred_text_models agar fitur AI Experiments diarahkan ke mesin browser ketika model dikonfigurasi.
 * Peningkatan: Perbaikan cache-busting, normalisasi konten, dan referensi perangkat keras yang muncul selama pengujian ujung ke ujung (end-to-end testing).
 
-## Versi 1.0.0 — Rilis Awal
+## Versi 1.0.0 — Rilis Awal {#version-100--initial-release}

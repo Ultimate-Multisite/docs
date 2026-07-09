@@ -4,19 +4,19 @@ title: Sefe - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Sefe: auth_redirect_scheme
+# Sefe: auth_redirect_scheme {#filter-authredirectscheme}
 
 E sefa moralo oa redirect oa netefatso.
 
-## Dipharamithara
+## Dipharamithara {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
 | $scheme | `string` | Moralo oa redirect oa netefatso. Ka kamehla ha ho letho. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.9.0
-### Mohloli
+### Mohloli {#source}
 
 E hlalositsoe ho [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212) moleng oa 212

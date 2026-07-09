@@ -3,28 +3,28 @@ title: Przegląd REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Dokumentacja REST API
+# Dokumentacja REST API {#rest-api-reference}
 
-## Konfiguracja bazowa
+## Konfiguracja bazowa {#base-configuration}
 
 **Bazowy URL:** `{site_url}/wp-json/wu/v2/`
 **Uwierzytelnianie:** klucz API i sekret (HTTP Basic Auth lub parametry URL)
 
-## Uwierzytelnianie
+## Uwierzytelnianie {#authentication}
 
-### Włącz API
+### Włącz API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Uzyskaj dane uwierzytelniające API
+### Uzyskaj dane uwierzytelniające API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metody uwierzytelniania
+### Metody uwierzytelniania {#authentication-methods}
 
 **HTTP Basic Auth (zalecane):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Główne endpointy
+## Główne endpointy {#core-endpoints}
 
-### 1. API klientów
+### 1. API klientów {#1-customers-api}
 
 **Trasa bazowa:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API witryn
+### 2. API witryn {#2-sites-api}
 
 **Trasa bazowa:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API członkostw
+### 3. API członkostw {#3-memberships-api}
 
 **Trasa bazowa:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API produktów
+### 4. API produktów {#4-products-api}
 
 **Trasa bazowa:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API płatności
+### 5. API płatności {#5-payments-api}
 
 **Trasa bazowa:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API domen
+### 6. API domen {#6-domains-api}
 
 **Trasa bazowa:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint rejestracji
+## Endpoint rejestracji {#registration-endpoint}
 
 Endpoint `/register` zapewnia kompletny przepływ finalizacji zakupu/rejestracji:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpointy suwerennego dzierżawcy
+## Endpointy suwerennego dzierżawcy {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje obsługę REST dla suwerennego dzierżawcy na potrzeby integracji, które provisionują, sprawdzają lub weryfikują izolowanych dzierżawców.
 
@@ -242,7 +242,7 @@ Typowe odpowiedzi statusu migracji obejmują:
 
 Traktuj `ready: false` jako blokadę przed uruchomieniem. Sprawdź szczegóły weryfikacji, napraw powiązanie hosta bazy danych, kolejkę, provisionowanie użytkowników lub problem z routingiem, a następnie ponów weryfikację.
 
-## Odpowiedzi błędów
+## Odpowiedzi błędów {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Traktuj `ready: false` jako blokadę przed uruchomieniem. Sprawdź szczegóły w
 }
 ```
 
-## Paginacja i filtrowanie
+## Paginacja i filtrowanie {#pagination-and-filtering}
 
 **Parametry zapytania:**
 ```http

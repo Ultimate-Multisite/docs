@@ -3,17 +3,17 @@ title: 'Lektioun 9: Präisgestaltung fir Gewënn'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lektioun 9: Präisgestaltung fir Gewënn
+# Lektioun 9: Präisgestaltung fir Gewënn {#lesson-9-pricing-for-profit}
 
 An der Lektioun 5 hu mir Ufankspräisser fir FitSite-Pläng festgeluecht. Elo verfeinere mir d'Präisstrategie mat Techniken, déi d'Recetten erhéijen, Upgrades encouragéieren an d'Kënnegungsquot reduzéieren.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 FitSite huet Pläng, Schablounen, Checkout, Branding an Onboarding am Asaz. Déi initial Präisgestaltung war $49/$99/$199 pro Mount. Elo maache mir, datt dës Präisser méi leeschten.
 
-## Präisprinzipie fir Nisch-Plattformen
+## Präisprinzipie fir Nisch-Plattformen {#pricing-principles-for-niche-platforms}
 
-### Präis no Wäert, net no Käschten
+### Präis no Wäert, net no Käschten {#price-on-value-not-cost}
 
 Deng Hosting-Käschte kéinte $5-$15 pro Clients-Site sinn. Dat heescht net, datt däi Präis $20 soll sinn. Du verkeefs kee Hosting. Du verkeefs:
 
@@ -24,7 +24,7 @@ Deng Hosting-Käschte kéinte $5-$15 pro Clients-Site sinn. Dat heescht net, dat
 
 Setz de Präis op Basis vum Wäert, deen s du liwwers, net op Basis vun de Käschten, fir en ze liwweren.
 
-### Un Alternativen uknäppen
+### Un Alternativen uknäppen {#anchor-to-alternatives}
 
 Wann e Besëtzer vun engem Fitnessstudio FitSite evaluéiert, vergläicht en et mat:
 
@@ -34,7 +34,7 @@ Wann e Besëtzer vun engem Fitnessstudio FitSite evaluéiert, vergläicht en et 
 
 Mat $49-$199/Mount ass FitSite méi bëlleg wéi en Entwéckler, méi leeschtungsfäeg wéi generesch Builder, an onendlech besser wéi keng Websäit.
 
-## Präisvariatiounen ëmsetzen
+## Präisvariatiounen ëmsetzen {#implementing-price-variations}
 
 Jorespräisser encouragéieren Engagement a reduzéieren d'Kënnegungsquot. Navigéier bei all Plang op den **Price Variations**-Tab a füüg Joresoptiounen derbäi:
 
@@ -46,12 +46,12 @@ Jorespräisser encouragéieren Engagement a reduzéieren d'Kënnegungsquot. Navi
 
 Füügt e **Period Selection**-Feld an däi Checkout-Formular derbäi, fir datt Clienten tëscht monatlecher a jäerlecher Rechnung ëmschalte kënnen. Kuck [Checkout-Formulairen](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Firwat Jorespräisser funktionéieren
+### Firwat Jorespräisser funktionéieren {#why-annual-pricing-works}
 
 - **Fir dech**: Cash am Viraus, méi niddreg Kënnegungsquot (Clienten, déi jäerlech bezuelen, kënne manner wahrscheinlech an der Mëtt vun der Lafzäit kënnegen)
 - **Fir si**: Reell Erspuernisser, virauszegesi Budgetéierung
 
-## Ariichtungsfraisen
+## Ariichtungsfraisen {#setup-fees}
 
 Bedenk eng eemoleg Ariichtungsfrais fir Pläng, déi praktesch Konfiguratioun enthalen:
 
@@ -61,7 +61,7 @@ Bedenk eng eemoleg Ariichtungsfrais fir Pläng, déi praktesch Konfiguratioun en
 
 Konfiguréier Ariichtungsfraisen an der Präissektioun vun all Plang. Kuck [Däi éischt Abonnementsprodukt erstellen](/user-guide/configuration/creating-your-first-subscription-product) fir Detailer.
 
-## Testperioden
+## Testperioden {#trial-periods}
 
 Eng Testperiod ubidden reduzéiert d'Reiwung beim Umellen, bréngt awer de Risiko mat sech, datt net konvertéiert gëtt. Fir FitSite:
 
@@ -70,11 +70,11 @@ Eng Testperiod ubidden reduzéiert d'Reiwung beim Umellen, bréngt awer de Risik
 
 Konfiguréier d'Testperiod an der Präissektioun vum Starter-Plang, andeems s du den **Offer Trial**-Toggle aktivéiers an d'Dauer op 7 Deeg setz.
 
-### Testperioden zur Konversioun bréngen
+### Testperioden zur Konversioun bréngen {#making-trials-convert}
 
 Eng Testperiod funktionéiert nëmmen, wann de Client wärend der Testperiod Wäert erlieft. Deng Onboarding-Sequenz (Lektioun 8) ass hei kritesch -- d'Wëllkomm-E-Maile sollten esou getimt sinn, datt se Engagement bannent der 7-Deeg-Fënster fërderen.
 
-## Rabattcoden
+## Rabattcoden {#discount-codes}
 
 Erstell strategesch Rabattcoden fir spezifesch Zwecker:
 
@@ -88,7 +88,7 @@ Navigéier op **Ultimate Multisite > Discount Codes**, fir dës ze erstellen. Ku
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Steierbehandlung
+## Steierbehandlung {#tax-handling}
 
 Wann s du an enger Juridictioun operéiers, déi d'Steiererhiewung verlaangt:
 
@@ -98,7 +98,7 @@ Wann s du an enger Juridictioun operéiers, déi d'Steiererhiewung verlaangt:
 
 Kuck [Steierbehandlung](/user-guide/payment-gateways/tax-handling) fir detailléiert Konfiguratioun. Wann s du Clienten international bedéngs, bedenk den [VAT addon](/addons/vat) fir EU-Konformitéit.
 
-## Deng Präisser iwwerpréiwen
+## Deng Präisser iwwerpréiwen {#reviewing-your-pricing}
 
 No der Lancéierung solls du d'Präisser all Véierel nei kucken. Kuck op:
 
@@ -107,7 +107,7 @@ No der Lancéierung solls du d'Präisser all Véierel nei kucken. Kuck op:
 - **Kënnegungsquot pro Plang**: Wann Joresclienten manner kënnegen, dréck Jorespräisser méi staark
 - **Konkurrenzpräisser**: Wat verrechnen Alternativen? Bass du richteg positionéiert?
 
-## De FitSite-Netzwierk bis elo
+## De FitSite-Netzwierk bis elo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Wat mir an dëser Lektioun gebaut hunn
+## Wat mir an dëser Lektioun gebaut hunn {#what-we-built-this-lesson}
 
 - **Jorespräisser** mat 20% Remise, fir Engagement ze fërderen
 - **Setup-Gebühren** op méi héijen Tieren, fir den Onboarding-Opwand ze decken

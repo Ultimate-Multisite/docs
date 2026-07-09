@@ -4,20 +4,20 @@ title: Hành động - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# Action: wu_captcha_after_validation
+# Action: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
 
 Được kích hoạt sau khi xác thực captcha.
 
-## Tham số
+## Tham số {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $result | `array` | Kết quả xác thực. |
 | $token | `string` | Token đã được xác thực. |
 
-### Kể từ
+### Kể từ {#since}
 
 - 1.2.0
-### Nguồn
+### Nguồn {#source}
 
 Được định nghĩa tại [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L224) ở dòng 224

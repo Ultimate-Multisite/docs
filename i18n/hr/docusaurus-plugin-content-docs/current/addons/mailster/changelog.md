@@ -3,9 +3,9 @@ title: Mailster Dnevnik promjena
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster dnevnik promjena
+# Mailster dnevnik promjena {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * Početno izdanje
 * Automatska sinkronizacija pretplatnika pri registraciji ili plaćanju
 * Dodjele popisa specifične za proizvod

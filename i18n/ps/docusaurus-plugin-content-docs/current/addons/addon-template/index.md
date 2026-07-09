@@ -3,25 +3,25 @@ title: د اضافې کينډۍ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# د اضافې کينډۍ
+# د اضافې کينډۍ {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## اړتیاوې
+## اړتیاوې {#requirements}
 
 - WordPress 5.3 یا لوړ
 - PHP 7.4 یا لوړ
 - Multisite Ultimate plugin (فعال)
 
-## نصب
+## نصب {#installation}
 
 1. د اضافې فایلونه خپل `/wp-content/plugins/` ډایرکټرۍ ته پورته کړئ
 2. plugin په WordPress کې د 'Plugins' مېنو له لارې فعال کړئ
 3. د شبکې د اډمين په برخه کې د اضافې امستنې عیارې کړئ
 
-## پراختیا
+## پراختیا {#development}
 
-### چمتووالی
+### چمتووالی {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### د پروژې جوړښت
+### د پروژې جوړښت {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # د کوډ عصري کولو قواعد
 ```
 
-### ازموینه
+### ازموینه {#testing}
 
 اضافه د ازموینې یو هر اړخیز چوکاټ لري:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **د ازموینې پوښښ**: د کوډ پوښښ د څارلو لپاره عیار شوی
 - **Multisite ازموینه**: ازموینې په multisite چاپېریال کې چلېږي
 
-### د کوډ معیارونه
+### د کوډ معیارونه {#code-standards}
 
 - **د WordPress د کوډ لیکلو معیارونه**: د PHPCS له لارې پلي کېږي
 - **د PHP 7.4+ سازګاري**: د PHP عصري ځانګړنې ملاتړ کېږي
 - **ثابته شننه**: د ډول کتنې لپاره د PHPStan ادغام
 - **د کوډ عصري کول**: د PHP لوړونو لپاره د Rector قواعد
 
-### د جوړولو سیستم
+### د جوړولو سیستم {#build-system}
 
 - **د شتمنیو پروسس**: د CSS/JS فایلونو کمول
 - **ژباړه**: د POT فایل جوړول
 - **بسته‌بندي**: د وېش لپاره د ارشیف جوړول
 - **د پراختیا حالت**: د ستونزو موندلو لپاره نه‌کمې شوې شتمنۍ
 
-## سازونه
+## سازونه {#configuration}
 
 دا اضافه بېلابېل سازندوی غوراوي ملاتړ کوي چې د شبکې د اډمين مخ‌لید له لارې لاسرسی ورته کېږي.
 
-## Hooks او Filters
+## Hooks او Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - د اضافې له پيلېدو وروسته فعالېږي
 - `ultimate-multisite-addon-template_loaded` - وروسته له دې فعالېږي چې د اضافې ټول فایلونه پورته شي
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - د اضافې امستنې بدل کړئ
 - `ultimate-multisite-addon-template_enabled` - د اضافې د فعال/غیرفعال حالت ځایناستی کړئ
 
-## جواز
+## جواز {#license}
 
 دا اضافه د GPL v3 یا وروسته نسخې لاندې جواز لري.
 
-## ملاتړ
+## ملاتړ {#support}
 
 د ملاتړ او مستنداتو لپاره، [MultisiteUltimate.com](https://multisiteultimate.com) ته ورشئ
-## د بدلونونو یادښت
+## د بدلونونو یادښت {#changelog}
 
 - نسخه 1.0.1 (2025-09-28): prefix ultimate-multisite ته بدلول؛ text domain تازه کول؛ د نسخې لوړول.
 

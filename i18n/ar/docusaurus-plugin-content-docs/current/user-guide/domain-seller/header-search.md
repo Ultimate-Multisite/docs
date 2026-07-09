@@ -3,11 +3,11 @@ title: بحث النطاق في الرأس
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# بحث النطاق من Header
+# بحث النطاق من Header {#header-domain-search}
 
 استخدم هذا الإعداد عندما تريد نموذجًا صغيرًا في Header يبدأ بحثًا عن نطاق، ثم يتيح للعميل الاختيار من النطاقات المتاحة داخل checkout الخاص بـ Ultimate Multisite.
 
-## المتطلبات
+## المتطلبات {#requirements}
 
 - Ultimate Multisite مفعّل على الشبكة.
 - Multisite Ultimate Domain Seller مفعّل على الشبكة.
@@ -16,7 +16,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
   - TLDs مدعومة مُعدّة، على سبيل المثال `com` و`net` و`org`.
 - نموذج checkout صالح يحتوي على حقل **اختيار النطاق**.
 
-## نموذج checkout
+## نموذج checkout {#checkout-form}
 
 1. أنشئ نموذج checkout المستخدم في صفحة التسجيل أو حرّره.
 2. أضف حقول checkout/Account العادية المطلوبة، بما في ذلك **اسم المستخدم**. يرفض تحقق Ultimate Multisite نموذج checkout الذي يحتوي على حقل النطاق فقط.
@@ -30,7 +30,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 [wu_checkout slug="domain-form"]
 ```
 
-## نموذج Header
+## نموذج Header {#header-form}
 
 أضف نموذج `GET` صغيرًا في Header الخاص بالموقع يرسل مصطلح البحث المُدخل إلى صفحة checkout باسم `domain_name`:
 
@@ -44,7 +44,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 
 لا تحدد نطاقًا مسبقًا في JavaScript مخصص لـ Header. يجب أن يمرّر Header مصطلح البحث فقط. يقرأ سكربت checkout الخاص بـ Domain Seller القيمة `?domain_name=example`، ويملأ مربع بحث checkout، ويُشغّل بحث التوفر بحيث يمكن للعميل الاختيار من النطاقات المُعادة.
 
-## السلوك المتوقع
+## السلوك المتوقع {#expected-behaviour}
 
 يجب أن يفتح البحث عن `example` في Header:
 
@@ -61,7 +61,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 
 بعد اختيار نتيجة متاحة، يجب أن يتضمن ملخص الطلب منتج تسجيل النطاق واسم النطاق المحدد.
 
-## التحقق
+## التحقق {#verification}
 
 1. افتح الصفحة الرئيسية.
 2. ابحث عن اسم مجرد، على سبيل المثال `example`.
@@ -71,7 +71,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 6. انقر على **تحديد** لنطاق متاح.
 7. تأكد من أن ملخص الطلب يحتوي على `Domain Registration - example.com` أو النطاق المحدد.
 
-## استكشاف الأخطاء وإصلاحها
+## استكشاف الأخطاء وإصلاحها {#troubleshooting}
 
 - إذا لم تظهر أي قائمة، فتحقق من تبويب الشبكة في المتصفح بحثًا عن `admin-ajax.php?action=wu_domain_search` وتأكد من أنه يعيد `domains` أو `results` غير فارغة.
 - إذا فشل تحقق نموذج checkout أثناء الحفظ، فأضف حقول Account المطلوبة مثل **اسم المستخدم**.

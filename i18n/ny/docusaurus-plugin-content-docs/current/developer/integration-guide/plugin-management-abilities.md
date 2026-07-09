@@ -3,11 +3,11 @@ title: Kuthekera Koyang'anira Ma Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kuthekera Koyang'anira Mapulogalamu Owonjezera
+# Kuthekera Koyang'anira Mapulogalamu Owonjezera {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 imabwera ndi **kuthekera 7 koyang'anira mapulogalamu owonjezera** komwe wothandizira wa AI angayambitse pa zokambirana. Kuthekera kumeneku kumapereka ulamuliro wa mapulogalamu pa mapulogalamu owonjezera a WordPress omwe aikidwa kudzera mu [Dongosolo Lopangira Mapulogalamu Owonjezera ndi Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Chidule cha Kuthekera
+## Chidule cha Kuthekera {#abilities-overview}
 
 | Kuthekera | Slug | Kufotokozera |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 imabwera ndi **kuthekera 7 koyang'anira mapulogalamu owon
 | Ikani Pulogalamu Yowonjezera | `install_plugin` | Imatumiza pulogalamu yowonjezera ya mu sandbox ku directory ya mapulogalamu owonjezera a WordPress omwe akugwira ntchito. |
 | Yambitsani Pulogalamu Yowonjezera | `activate_plugin` | Imayambitsa pulogalamu yowonjezera ya mu sandbox m'malo a wp-env sandbox. |
 
-## API Yoikira Mapulogalamu Owonjezera
+## API Yoikira Mapulogalamu Owonjezera {#plugin-installer-api}
 
 Woikira mapulogalamu owonjezera amasamalira ntchito za file system pamene akutumiza kapena kuchotsa mapulogalamu owonjezera. Makhalidwe ofunika:
 
@@ -28,7 +28,7 @@ Woikira mapulogalamu owonjezera amasamalira ntchito za file system pamene akutum
 - **Kusintha**: Imalowetsa mafayilo a pulogalamu yowonjezera omwe alipo. Imayimitsa pulogalamu yowonjezera musanalembe kuti mupewe zolakwika za mkhalidwe wosakwanira.
 - **Kuchotsa pogwiritsa ntchito slug**: Imapeza directory ya pulogalamu yowonjezera pogwiritsa ntchito slug, imayimitsa pa masaiti onse, kenako imachotsa directory.
 
-### Kulembetsa Wosamalira Kuyika Wanu
+### Kulembetsa Wosamalira Kuyika Wanu {#registering-a-custom-install-handler}
 
 Mutha kulumikizana ndi lifecycle ya kuyika pogwiritsa ntchito ma action a `gratis_ai_plugin_installer_before_install` ndi `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registry ya Ecosystem
+## Registry ya Ecosystem {#ecosystem-registry}
 
 Kuthekera kumalembetsedwa kudzera mu **registry ya ecosystem ya mapulogalamu owonjezera**. Registry imalumikiza ma slug a kuthekera ndi ma class awo osamalira ndipo imawawonetsa ku tool dispatcher ya agent wa AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Kuphatikizana kwa HookScanner
+## Kuphatikizana kwa HookScanner {#hookscanner-integration}
 
 Kuthekera kwa `create_plugin` ndi `update_plugin` kumayendetsa **HookScanner** mwadzidzidzi pa code yomwe yangopangidwa kumene. HookScanner imabweza mndandanda wa ma hook a action ndi filter a WordPress omwe alembetsedwa ndi pulogalamu yowonjezera.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner imadumpha ma directory a `vendor/` ndi `node_modules/` mwadzidzidzi.
 
-## Kamangidwe ka Ntchito za Async
+## Kamangidwe ka Ntchito za Async {#async-job-architecture}
 
 Ntchito za mapulogalamu owonjezera zomwe zimatenga nthawi yaitali (kupanga, kuyika) zimatumizidwa ngati **ntchito za async** zokhala ndi kutsatira patsogolo pompopompo. Chat interface ya AI imafufuza patsogolo ndipo imatumiza zosintha za mkhalidwe kwa wogwiritsa ntchito:
 

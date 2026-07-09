@@ -4,19 +4,19 @@ title: Ago - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Ago: wu_enqueue_extra_hooks
+# Ago: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
 
 Permesas al plugin-programistoj aldoni pliajn hooks.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
 | $page_hook | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | La hook generita por ĉi tiu paĝo. |
 
-### Ekde
+### Ekde {#since}
 
 - 1.8.2
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L614) ĉe linio 614

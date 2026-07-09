@@ -3,11 +3,11 @@ title: Daxili Agentlər
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Daxili Agentlər
+# Daxili Agentlər {#built-in-agents}
 
 Gratis AI Agent v1.9.0 beş daxili agentlə gəlir; hər biri fokuslanmış alətlər dəsti, uyğunlaşdırılmış system prompt və həmin sahədə ümumi tapşırıqlara uyğun başlanğıc təklifləri ilə əvvəlcədən konfiqurasiya olunub. Agentlər arasında keçid köməkçinin nə edə bildiyini və necə cavab verdiyini dəyişir — sizin tərəfinizdən heç bir konfiqurasiya olmadan. Superdav AI Agent v1.18.0 əlaqəli inteqrasiyalar konfiqurasiya edildikdə bu iş axınlarına cədvəldən xəbərdar alətlər, xatırlatma qeydləri, təsdiq keçidləri və SMS bildirişləri əlavə edə bilər.
 
-## Agent nədir?
+## Agent nədir? {#what-is-an-agent}
 
 Hər agent bunları birləşdirən adlı konfiqurasiya profilidir:
 
@@ -15,7 +15,7 @@ Hər agent bunları birləşdirən adlı konfiqurasiya profilidir:
 - **System prompt** — agentin tonunu, prioritetlərini və məhdudiyyətlərini müəyyən edən təlimatlar
 - **Təkliflər** — tez başlamağınıza kömək etmək üçün chat interfeysində göstərilən əvvəlcədən yazılmış prompt-lar
 
-## Agent Picker-ə giriş
+## Agent Picker-ə giriş {#accessing-the-agent-picker}
 
 1. WordPress admin yan panelində **Gratis AI Agent** panelini açın.
 2. Chat başlığının yuxarı sol hissəsində **agent ikonuna** klikləyin (ikon aktiv agenti əks etdirmək üçün dəyişir).
@@ -24,9 +24,9 @@ Hər agent bunları birləşdirən adlı konfiqurasiya profilidir:
 
 Söhbətin ortasında da agentləri dəyişə bilərsiniz — yeni agentin system prompt-u növbəti mesajdan etibarən qüvvəyə minir.
 
-## Beş Daxili Agent
+## Beş Daxili Agent {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fokus:** Yazıların, səhifələrin və əlaqə formalarının yaradılması və redaktəsi.
 
@@ -47,7 +47,7 @@ Söhbətin ortasında da agentləri dəyişə bilərsiniz — yeni agentin syste
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fokus:** Tək bir prompt-dan başdan-sona vebsayt yaradılması.
 
@@ -70,7 +70,7 @@ Söhbətin ortasında da agentləri dəyişə bilərsiniz — yeni agentin syste
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fokus:** Vizual fərdiləşdirmə — rənglər, tipoqrafiya, CSS və blok nümunələri.
 
@@ -87,7 +87,7 @@ Söhbətin ortasında da agentləri dəyişə bilərsiniz — yeni agentin syste
 - *Ana səhifənin screenshot-ını çək və mənə nəyi yaxşılaşdıracağını de.*
 - *Tam enli fon şəkli və mərkəzləşdirilmiş başlığı olan təkrar istifadə edilə bilən hero blok nümunəsi yarat.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokus:** WordPress plugin-lərinin kəşfi, quraşdırılması və idarə edilməsi.
 
@@ -105,7 +105,7 @@ Söhbətin ortasında da agentləri dəyişə bilərsiniz — yeni agentin syste
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fokus:** Sayt məzmunu, ayarlar və WordPress konfiqurasiyası haqqında sualların cavablandırılması.
 
@@ -124,7 +124,7 @@ Söhbətin ortasında da agentləri dəyişə bilərsiniz — yeni agentin syste
 
 ---
 
-## Superdav Avtomatlaşdırma İnteqrasiyaları
+## Superdav Avtomatlaşdırma İnteqrasiyaları {#superdav-automation-integrations}
 
 Superdav AI Agent v1.18.0 inteqrasiyaları konfiqurasiya edildikdə, daxili agentlər daha təhlükəsiz, cədvəldən xəbərdar avtomatlaşdırma iş axınlarında iştirak edə bilər:
 
@@ -138,11 +138,11 @@ Tövsiyə olunan iş axını: agentdən mesajı və ya əməliyyatı hazırlamas
 
 ---
 
-## Agentlərin Fərdiləşdirilməsi
+## Agentlərin Fərdiləşdirilməsi {#customising-agents}
 
 Hər bir daxili agent `gratis_ai_agent_agents` filter-i vasitəsilə genişləndirilə və ya əvəz edilə bilər.
 
-### Mövcud agentə fərdi sistem sorğusu əlavə etmək
+### Mövcud agentə fərdi sistem sorğusu əlavə etmək {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Yeni agentin qeydiyyatdan keçirilməsi
+### Yeni agentin qeydiyyatdan keçirilməsi {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Yeni agent filter işə düşdükdən dərhal sonra Agent Seçicisində görünür.
 
-### Daxili agentin silinməsi
+### Daxili agentin silinməsi {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

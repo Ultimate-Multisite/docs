@@ -3,11 +3,11 @@ title: Ŝanĝprotokolo
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Ŝanĝoprotokolo
+# Ŝanĝoprotokolo {#changelog}
 
-## 1.9.0 — Eldonita je 2026-04-28
+## 1.9.0 — Eldonita je 2026-04-28 {#190--released-on-2026-04-28}
 
-### Novaĵoj
+### Novaĵoj {#new}
 
 - **`create_contact_form` kapablo** — kreas kontaktformularon uzante la aktivan formularan kromprogramon (Contact Form 7, WPForms, Fluent Forms, aŭ Gravity Forms) kaj redonas mallongan kodon pretan por enkorpigi en ajnan afiŝon aŭ paĝon.
 - **`set_featured_image` kapablo** — asignas elstaran bildon al afiŝo aŭ paĝo el ekzistanta aldonaĵa ID de la Aŭdvida Biblioteko aŭ el fora URL; aŭtomate importas la bildon kiam URL estas provizita.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restarigi lastan seancon** — la babila panelo nun aŭtomate reŝargas la plej freŝan konversacion ĉe paĝŝargo kaj ĉe malfermo de la fenestraĵo, tiel ke kunteksto neniam perdiĝas inter paĝnavigadoj.
 - **Agoligiloj de kromprogramo** — rapidaj ligiloj al Agordoj kaj la Registro de Kapabloj nun aperas sur la ekrano **Kromprogramoj → Instalitaj Kromprogramoj** de WordPress sub la priskribo de la kromprogramo.
 
-### Plibonigita
+### Plibonigita {#improved}
 
 - **Reprovo de bildfonto** — la agento nun reprovas ĉiujn agorditajn senpagajn bildfontojn antaŭ ol rezigni al AI-generita bildo ĉe elŝuta malsukceso.
 - **Panelo de modelaj informoj** — ĉiam videbla en la babila kaplinio; ne plu kaŝita post la unua mesaĝo.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Redezajno de babila fenestraĵo** — unuigita AI-ikono anstataŭas la antaŭan propran avataron; kongrua kun la enkonstruita agentsistemo.
 - **URL-ligigado** — URL-oj aperantaj en sistemaj mesaĝoj kaj erarmesaĝaj vezikoj nun estas montrataj kiel alklakeblaj ligiloj.
 
-### Korektita
+### Korektita {#fixed}
 
 - **Malkovrebleco de kapabloj** — korektitaj priskriboj, sistemaj promptaj referencoj, kaj nomspaca akordigo por ke ĉiuj kapabloj aperu fidinde en la illisto de la agento.
 - **Kaŝmemoro de provizantoj** — provizantoj nun estas kaŝmemoritaj tutreteje per versiokalkulilo, malhelpante problemojn de malaktualaj provizantoj en plurretejaj retoj.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Eldonita je 2026-04-09
+## 1.4.0 — Eldonita je 2026-04-09 {#140--released-on-2026-04-09}
 
-### Novaĵoj
+### Novaĵoj {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — rulas la Agent Capabilities v1 benchmark suite el la komandlinio por CI-duktoj kaj laborfluoj de modelo-taksado. Subtenas laŭdemande laŭ-demando-rulojn, anstataŭigojn de provider/model, kaj JSON/CSV-eligon.
 - **Agent Capabilities v1 benchmark suite** — strukturita aro de kompleksaj, plurpaŝaj instigoj, kiuj ekzercas la plenan surfacon de kapabloj, kun poentado kaj raportado pri tokenoj/daŭro.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Benchmark-demando pri restoracia retejo** (`q-restaurant-website`) — kompleta dekomenca-ĝis-fina testo kovranta CPT-registradon, dezajnan sistemon, navigadon, kaj plugin-malkovron.
 - **AI provider connector plugins** aldonitaj al WordPress Playground-skizoj por pli rapida loka disvolva agordo.
 
-### Plibonigita
+### Plibonigita {#improved-1}
 
 - README ĝisdatigita kun dokumentaro pri AI provider connector kaj agordaj instrukcioj.
 
-### Riparita
+### Riparita {#fixed-1}
 
 - 25 PHPUnit-testaj malsukcesoj en la branĉo `main` solvitaj.
 - Formato de GitHub releases URL en `blueprint.json` korektita.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Antaŭaj eldonaj notoj estas konservataj en la plugin-deponejo._

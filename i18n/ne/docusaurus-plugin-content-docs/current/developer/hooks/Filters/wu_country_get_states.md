@@ -4,11 +4,11 @@ title: फिल्टर - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# फिल्टर: wu_country_get_states
+# फिल्टर: wu_country_get_states {#filter-wucountrygetstates}
 
 यस देशका लागि राज्यहरूको सूची फर्काउँछ।
 
-## प्यारामिटरहरू
+## प्यारामिटरहरू {#parameters}
 
 | नाम | प्रकार | विवरण |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 | $country_code | `string` | देशका लागि दुई-अक्षरको ISO कोड। |
 | $current_country | `\WP_Ultimo\Country\Country` | हालको class को instance। |
 
-### संस्करणदेखि
+### संस्करणदेखि {#since}
 
 - 2.0.11
-### स्रोत
+### स्रोत {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) मा 86औँ पङ्क्तिमा परिभाषित
 
 
-## फर्काउने
+## फर्काउने {#returns}
 राज्यहरूको फिल्टर गरिएको सूची।

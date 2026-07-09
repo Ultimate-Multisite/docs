@@ -3,15 +3,15 @@ title: 'Lektioun 14: Wat kënnt als Nächst'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lektioun 14: Wat als Nächst kënnt
+# Lektioun 14: Wat als Nächst kënnt {#lesson-14-what-comes-next}
 
 Du hues eng Nische-Websäit-Plattform vun Null opgebaut. FitSite ass live, zerwéiert Fitnessstudioen a generéiert widderhuelend Akommes. Dës lescht Lektioun kuckt, wou et vun hei aus higeet.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 FitSite ass e lafend Geschäft mat Clienten, Operatiounen an enger Wuesstemsrichtung. Elo denke mir driwwer no, wat als Nächst kënnt.
 
-## Dat komplett FitSite-Netzwierk
+## Dat komplett FitSite-Netzwierk {#the-complete-fitsite-network}
 
 Hei ass alles, wat mir iwwer 14 Lektiounen opgebaut hunn:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Optioun 1: Géi méi déif an deng Nisch
+## Optioun 1: Géi méi déif an deng Nisch {#option-1-go-deeper-in-your-niche}
 
 Ier s du op nei Nischen ausbaus, iwwerlee, méi déif an de Fitnessberäich ze goen:
 
-### Ënner-Nischen
+### Ënner-Nischen {#sub-niches}
 
 - **Yogastudioen** -- spezialiséiert Schabloune mat Meditatiouns-, Retreat- a Workshop-Funktiounen
 - **CrossFit-Boxen** -- WOD-Tracking, Concoursresultater, Gemeinschaftsfunktiounen
@@ -59,7 +59,7 @@ Ier s du op nei Nischen ausbaus, iwwerlee, méi déif an de Fitnessberäich ze g
 
 All Ënner-Nisch kann hir eege Schablounen a méiglecherweis hir eege Mark hunn, alles um selwechten Ultimate Multisite-Netzwierk lafend.
 
-### Premium-Funktiounen
+### Premium-Funktiounen {#premium-features}
 
 Bau Funktiounen, fir déi Fitnessstudioen extra bezuele wäerten:
 
@@ -68,14 +68,14 @@ Bau Funktiounen, fir déi Fitnessstudioen extra bezuele wäerten:
 - **Fitness-Blog-Schablounen** -- virgebaute Inhaltsstrukture fir Fitness-Content-Marketing
 - **Social-Media-Integratioun** -- automatescht Poste vu Courspläng an Aktualiséierungen
 
-### Geografesch Expansioun
+### Geografesch Expansioun {#geographic-expansion}
 
 Wann s du lokal ugefaang hues, erweider op:
 
 - Aner Stied an dengem Land
 - Aner Länner (benotz Ultimate Multisite seng [Lokaliséierungsfunktiounen](/user-guide/localization/translating), fir méi Sproochen z'ënnerstëtzen)
 
-## Optioun 2: Erweider op no Nischen
+## Optioun 2: Erweider op no Nischen {#option-2-expand-to-adjacent-niches}
 
 De Prozess, deem s du fir Fitnessstudioe gefollegt bass, funktionéiert fir all Nisch. Deng zweet Nisch ass méi einfach, well s du schonn hues:
 
@@ -83,7 +83,7 @@ De Prozess, deem s du fir Fitnessstudioe gefollegt bass, funktionéiert fir all 
 - Operativ Erfarung
 - En nogewise Playbook
 
-### No Nischen zu Fitness
+### No Nischen zu Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness a Spa** -- Massagetherapeuten, Day Spas, Wellnesszentren
 - **Sportsveräiner** -- Amateur-Sportsekippen, Ligen, Fräizäitveräiner
@@ -91,7 +91,7 @@ De Prozess, deem s du fir Fitnessstudioe gefollegt bass, funktionéiert fir all 
 
 Dës hunn eng Iwwerschneidung beim Publikum mat Fitness, sou datt däi Marketing an deng Partnerschafte sech eventuell iwwerdroe loossen.
 
-### Komplett nei Nischen
+### Komplett nei Nischen {#completely-new-niches}
 
 Wenn de Kader aus Lektioun 2 un, fir all Nisch ze bewäerten:
 
@@ -108,7 +108,7 @@ All nei Nisch brauch:
 
 D'Plattform-Infrastruktur, d'Fakturatioun an d'operativ Prozesser bleiwen déiselwecht.
 
-## Optioun 3: Bau eng Plattform vu Plattformen
+## Optioun 3: Bau eng Plattform vu Plattformen {#option-3-build-a-platform-of-platforms}
 
 Op Skala kanns du méi Nische-Marken op engem eenzegen Ultimate Multisite-Netzwierk bedreiwen:
 
@@ -118,11 +118,11 @@ Op Skala kanns du méi Nische-Marken op engem eenzegen Ultimate Multisite-Netzwi
 
 All Mark huet hir eege Schablounen, Pläng a Marketing, mee si deelen Infrastruktur, Fakturatioun an operativ Prozesser. Hei ginn d'Wirtschaftlechkeete vun Ultimate Multisite staark -- eng Plattform, vill Vertikalen.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Fir eng komplett Trennung tëscht Nischen, kuck den [Multi-Network-Add-on](/addons/multinetwork), deen dir erlaabt, méi WordPress-Netzwierker aus enger eenzeger Installatioun ze bedreiwen.
 
-## Optioun 4: Verkaaf d'Geschäft
+## Optioun 4: Verkaaf d'Geschäft {#option-4-sell-the-business}
 
 Eng Nische-Websäit-Plattform mat widderhuelendem Akommes, niddreger Ofwanderung an enger kloerer Maartpositioun ass e wäertvollen Asset. SaaS-Geschäfter gi typescherweis fir 3-5x jäerlecht Akommes verkaaft.
 
@@ -134,7 +134,7 @@ E FitSite mat 200 Clienten bei $89 ARPU:
 
 Dat ass kee garantéiert Resultat, mee et ass e realistescht fir eng gutt gefouert Nische-Plattform.
 
-## Wat s du geléiert hues
+## Wat s du geléiert hues {#what-you-have-learned}
 
 Dëse Cours huet dir e widderhuelbare Prozess bäibruecht:
 
@@ -150,7 +150,7 @@ Dëse Cours huet dir e widderhuelbare Prozess bäibruecht:
 
 D'Nisch ass d'Strategie. D'Plattform ass d'Instrument. Ultimate Multisite mécht d'Instrument méiglech. Däi Verständnis vun der Nisch mécht et wäertvoll.
 
-## Fänk un ze bauen
+## Fänk un ze bauen {#start-building}
 
 Wann s du mat FitSite matgemaach hues, hues du eng funktionéierend Plattform. Wann s du der alles duerchgelies hues, fir deng eege Nisch ze fannen, géi zréck op [Lektioun 2: Deng Nisch auswielen](lesson-2-picking-your-niche) a start de Prozess fir deng gewielte Vertikal.
 

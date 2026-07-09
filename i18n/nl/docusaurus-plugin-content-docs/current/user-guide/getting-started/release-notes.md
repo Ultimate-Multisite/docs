@@ -3,9 +3,9 @@ title: Releaseopmerkingen
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Release-opmerkingen
+# Release-opmerkingen {#release-notes}
 
-## Versie 2.13.0 — Uitgebracht op 2026-06-05
+## Versie 2.13.0 — Uitgebracht op 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nieuw: Ondersteuning voor sovereign-tenants toegevoegd voor klantaccount-, checkout-, facturering-, site-, factuur-, templatewissel- en domeinkoppelingsflows, zodat tenantnetwerken klanten kunnen terugsturen naar de hoofdsite voor beheerde acties.
 - Nieuw: Controles voor vernieuwingsreferenties toegevoegd voor terugkerende memberships, zodat gateways automatische verlenging kunnen uitschakelen wanneer een opgeslagen factureringsovereenkomst, subscription of vault-token ontbreekt.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Oplossing: Randgevallen bij membershipverlengingen, vervaldatumweergave en betalingsinning voorkomen nu onmiddellijke vervaldatums, crashes of gemiste vereiste betalingen.
 - Verbeterd: WordPress-compatibiliteit is getest tot en met 7.0, productie-Vue-assets zijn opnieuw gebouwd vanuit npm-bronnen, en Cypress-end-to-enddekking test nu meer checkout-, setup-, SSO- en gatewayflows.
 
-## Versie 2.12.0 — Uitgebracht op 2026-05-15
+## Versie 2.12.0 — Uitgebracht op 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nieuw: Hostinger (hPanel) toegevoegd als ondersteunde hostprovider met integratie voor domeinkoppeling
 - Nieuw: Site Exporter verwerkt nu netwerkimportbundels voor gestroomlijnd siteherstel in het hele netwerk
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Oplossing: Site Exporter CLI behoudt nu de juiste selectie van de standaard netwerksite
 - Verbeterd: Meegeleverde wp-cli verwijderd uit het pluginpakket, waardoor de plugin kleiner is
 
-## Versie 2.11.0 — Uitgebracht op 2026-05-11
+## Versie 2.11.0 — Uitgebracht op 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nieuw: Site-exports bundelen nu een zelfstartende `index.php`, zodat de ZIP op een nieuwe host kan worden geïnstalleerd zonder aparte plugininstallatie.
 - Nieuw: Met netwerkexport kunnen beheerders alle subsites exporteren in één archief vanaf de beheerpagina Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nieuw: De editor voor checkout-formulieren waarschuwt wanneer een product wordt toegevoegd zonder een verplicht veld dat is geconfigureerd.
 - Nieuw: Het tabblad Import-/exportinstellingen beschrijft nu duidelijk het bereik en linkt rechtstreeks naar de Site Export-tool.
 
-## Versie 2.10.0 — Uitgebracht op 2026-05-05
+## Versie 2.10.0 — Uitgebracht op 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nieuw: Begeleide PayPal-setupwizard voor handmatige invoer van referenties met OAuth-vlagpoort voor naadloze gatewayconfiguratie.
 - Nieuw: Klantpaneel voor templatewisseling opnieuw ontworpen met huidige-templatekaart, blijvend raster en knop **Huidige template resetten**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Oplossing: Gefilterd SSO-pad gerespecteerd in alle loginflows.
 - Oplossing: Lege opties voor site-identiteit blijven behouden bij opslaan.
 
-## Versie 2.9.0 — Uitgebracht op 2026-04-30
+## Versie 2.9.0 — Uitgebracht op 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nieuw: Export en import voor één site toegevoegd onder **Gereedschap > Exporteren & importeren**.
 - Oplossing: Export-ZIP-bestanden worden nu aangeboden via een geauthenticeerd downloadendpoint.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Oplossing: Tour-ID's genormaliseerd naar underscores in sleutels voor gebruikersinstellingen.
 - Verbeterd: ZipArchive wordt nu gebruikt in plaats van Alchemy/Zippy voor betere compatibiliteit.
 
-## Versie 2.8.0 — Uitgebracht op 2026-04-29
+## Versie 2.8.0 — Uitgebracht op 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nieuw: Enable Jumper-schakelaar toegevoegd aan de Other Options-instellingen-UI.
 - Nieuw: Statuskolom toegevoegd aan de lijsttabel met checkout-formulieren.

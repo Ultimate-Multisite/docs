@@ -3,11 +3,11 @@ title: Razvoj plačilnega prehoda po meri
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Razvoj Custom Gateway
+# Razvoj Custom Gateway {#custom-gateway-development}
 
 Ustvarite lahko prilagojene plačilne prehode z razširitvijo razreda `Base_Gateway`.
 
-## Razred Gateway
+## Razred Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrirajte Gateway
+## Registrirajte Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ključne metode
+## Ključne metode {#key-methods}
 
 | Metoda | Namen |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Obdelajte zahtevke za vračilo |
 | `get_payment_methods()` | Vrnite shranjene plačilne metode za stranko |
 
-## Poverilnice za obnovitev pri ponavljajočih se članstvih
+## Poverilnice za obnovitev pri ponavljajočih se članstvih {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 integracijam gateway omogoča poročanje, ali ima ponavljajoče se članstvo ponovno uporabljivo poverilnico za obnovitev, preden se `auto_renew` shrani. Uporabite hook `wu_membership_has_renewal_credential` in vrnite:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Po uspešnem poteku ponovne avtorizacije vašega gateway, ko je shranjena nova ponovno uporabna poverilnica, počistite oznako manjkajoče poverilnice.
 
-## Nasveti
+## Nasveti {#tips}
 
 - Ob napaki vedno vrnite `WP_Error`, da lahko Ultimate Multisite obravnava prikaz napak
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Uporabite `wu_log_add()` za beleženje, specifično za gateway
 
-## Zmožnosti ponudnika AI connector
+## Zmožnosti ponudnika AI connector {#ai-connector-provider-capabilities}
 
 Prilagojene integracije, ki kličejo operacije, podprte z AI connector, morajo biti usklajene s podprtim naborom ponudnikov OAuth, uvedenim z AI Provider for Anthropic Max v1.3.0:
 

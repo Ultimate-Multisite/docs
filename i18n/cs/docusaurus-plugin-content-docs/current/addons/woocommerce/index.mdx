@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# Integrace WooCommerce
+# Integrace WooCommerce {#woocommerce-integration}
 
 Integrace WooCommerce funguje velmi podobně jako naše manuální brána. Nabízí vašim uživatelům spoustu flexibility a umožňuje jim zvolit si kterýkoli z platebních formulářů dostupných ve vaší instalaci WooCommerce. A je to jednoduché: jakmile skončí fakturační období uživatele, předplatné uživatele se pozastaví. Zároveň se v instalaci WooCommerce hlavního webu sítě vytvoří objednávka. Uživatel poté obdrží e-mailem fakturu s odkazem pro provedení platby. Jakmile je platba přijata, předplatné se obnoví.
 
-## Funkce
+## Funkce {#features}
 
 - Snadná integrace mezi Ultimate Multisite a WooCommerce
 - Několik dostupných platebních metod
 - Automatizovaná opakovaná fakturace pomocí vestavěného jádra předplatných, s volitelnými vylepšeními pluginu WooCommerce Subscriptions
 - Součty v pokladně zahrnují daně Ultimate Multisite jako samostatné nezdanitelné řádky poplatků WooCommerce, aby si zákazníci mohli před platbou zkontrolovat částky daní
 
-## Dokumentace
+## Dokumentace {#documentation}
 
 **Nastavení integrace WooCommerce**
 
 **Rozšíření vašich platebních možností pomocí Ultimate Multisite: integrace WooCommerce**
 
-## Instalace
+## Instalace {#installation}
 
 1. Nahrajte 'ultimate-multisite-woocommerce' do adresáře '/wp-content/plugins/'
 2. Aktivujte plugin přes nabídku 'Pluginy' ve WordPress
 3. Postupujte podle průvodce krok za krokem a plugin nastavte
 
-## Průvodce použitím
+## Průvodce použitím {#usage-guide}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se týká verze Ultimate Multisite 2.x.**_
 
@@ -40,7 +40,7 @@ Chápeme, že _Stripe_ a _PayPal_ nejsou v některých zemích dostupné, což o
 
 _WooCommerce_ je velmi populární eCommerce plugin. Vývojáři po celém světě vytvořili doplňky pro integraci různých platebních bran. Využili jsme toho k rozšíření platebních bran, které můžete používat ve fakturačním systému Ultimate Multisite.
 
-## Nastavení
+## Nastavení {#setting-it-up}
 
 Nejprve musíte nainstalovat doplněk integrace WooCommerce, který je **zdarma pro licencované uživatele**. Chcete-li jej nainstalovat, klikněte na Ultimate Multisite ve svém super admin dashboardu a vyberte **Doplňky**.
 
@@ -68,11 +68,11 @@ Po instalaci uvidíte v nastavení plateb Ultimate Multisite další možnost. O
 
 Můžete nakonfigurovat některá základní nastavení, například zobrazovaný název, který se zobrazí na front endu, a pokyny, které uživatele provedou procesem checkoutu. Poté můžete přejít do **nastavení _WooCommerce_ hlavního webu** a povolit a nakonfigurovat platební bránu, kterou chcete používat.
 
-### Řádky daňových poplatků v checkoutu
+### Řádky daňových poplatků v checkoutu {#checkout-tax-fee-lines}
 
 Když checkout Ultimate Multisite zahrnuje daně, integrace přidá každou částku daně Ultimate Multisite do checkoutu WooCommerce jako samostatný nezdanitelný řádek poplatku. Díky tomu zůstane celková daň viditelná před platbou a zároveň se zabrání tomu, aby WooCommerce znovu zdanil daňový poplatek.
 
-## Jak spravovat platbu
+## Jak spravovat platbu {#how-to-manage-the-payment}
 
 Integrace WooCommerce funguje velmi podobně jako naše **manuální brána**. Nevýhodou je, že každá platba musí být na konci fakturačního období zaplacena ručně. Takto proces funguje:
 
@@ -82,13 +82,13 @@ Integrace WooCommerce funguje velmi podobně jako naše **manuální brána**. N
 
   * Jakmile je platba přijata, členství je **obnoveno** , platba je zaznamenána v Ultimate Multisite a objednávka je nastavena jako dokončená.
 
-### Několik důležitých poznámek:
+### Několik důležitých poznámek: {#some-important-notes}
 
   * Výchozí funkce Ultimate Multisite s touto formou integrace stále funguje. Například **vystavování refundací** z obrazovky **Správa předplatného** bude komunikovat s WooCommerce a vystaví refundaci pomocí vybraného platebního formuláře.
 
   * Ultimate Multisite: integrace WooCommerce spoléhá na WP-Cron. Většinou to funguje velmi dobře, ale pokud má web nízkou návštěvnost, cron není vyvolán ke kontrole naplánovaných událostí a událost se zmešká, což může způsobit zpoždění provedení.
 
-## Plugin WooCommerce Subscriptions
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
 
 Ruční zahajování platby každý měsíc není pro koncové uživatele ideální, protože se očekává, že se subscriptions budou automaticky opakovat v každém fakturačním cyklu. Add-on WooCommerce Integration nyní obsahuje základní kód subscriptions, takže opakující se produkty vždy používají subscriptions pro opakovanou fakturaci.
 
@@ -100,7 +100,7 @@ A to je vše. Vaši koncoví uživatelé už nebudou muset na konci svého faktu
 
 Kromě objednávky vytvořené na vašem hlavním webu v části _WooCommerce_ se pro každý Account vytvoří také subscription.
 
-### Chování pozastavení při neúspěšném obnovení
+### Chování pozastavení při neúspěšném obnovení {#failed-renewal-suspension-behavior}
 
 Ve výchozím nastavení zůstávají memberships aktivní, zatímco WooCommerce Subscriptions zpracovává svůj plán opakování po neúspěšné platbě. Tím se zachová běžné ochranné období WooCommerce Subscriptions, takže obnovení, které se podaří dodatečně, může znovu sladit subscription a membership, aniž by byl přístup předčasně přerušen.
 

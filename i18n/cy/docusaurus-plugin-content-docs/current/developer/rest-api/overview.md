@@ -3,28 +3,28 @@ title: Trosolwg REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Cyfeirnod REST API
+# Cyfeirnod REST API {#rest-api-reference}
 
-## Ffurfweddiad Sylfaenol
+## Ffurfweddiad Sylfaenol {#base-configuration}
 
 **URL Sylfaenol:** `{site_url}/wp-json/wu/v2/`
 **Dilysu:** API Key a Secret (HTTP Basic Auth neu Baramedrau URL)
 
-## Dilysu
+## Dilysu {#authentication}
 
-### Galluogi API
+### Galluogi API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Cael Manylion Dilysu API
+### Cael Manylion Dilysu API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Dulliau Dilysu
+### Dulliau Dilysu {#authentication-methods}
 
 **HTTP Basic Auth (Argymhellir):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Terfynbwyntiau Craidd
+## Terfynbwyntiau Craidd {#core-endpoints}
 
-### 1. API Cwsmeriaid
+### 1. API Cwsmeriaid {#1-customers-api}
 
 **Llwybr Sylfaenol:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Gwefannau
+### 2. API Gwefannau {#2-sites-api}
 
 **Llwybr Sylfaenol:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Aelodaethau
+### 3. API Aelodaethau {#3-memberships-api}
 
 **Llwybr Sylfaenol:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Cynhyrchion
+### 4. API Cynhyrchion {#4-products-api}
 
 **Llwybr Sylfaenol:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Taliadau
+### 5. API Taliadau {#5-payments-api}
 
 **Llwybr Sylfaenol:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Parthau
+### 6. API Parthau {#6-domains-api}
 
 **Llwybr Sylfaenol:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Terfynbwynt Cofrestru
+## Terfynbwynt Cofrestru {#registration-endpoint}
 
 Mae’r terfynbwynt `/register` yn darparu llif talu/cofrestru cyflawn:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Terfynbwyntiau Tenantiaid Sofran
+## Terfynbwyntiau Tenantiaid Sofran {#sovereign-tenant-endpoints}
 
 Mae Ultimate Multisite: Multi-Tenancy 1.2.0 yn ychwanegu cwmpas REST i denantiaid sofran ar gyfer integreiddiadau sy’n darparu, archwilio, neu wirio tenantiaid ynysig.
 
@@ -242,7 +242,7 @@ Mae ymatebion statws mudo nodweddiadol yn cynnwys:
 
 Triniwch `ready: false` fel rhwystr cyn lansio. Gwiriwch fanylion y gwirio, trwsiwch rwymiad gwesteiwr y gronfa ddata, y ciw, darparu defnyddwyr, neu’r broblem llwybro, yna ailgeisiwch wirio.
 
-## Ymatebion Gwall
+## Ymatebion Gwall {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Triniwch `ready: false` fel rhwystr cyn lansio. Gwiriwch fanylion y gwirio, trws
 }
 ```
 
-## Tudaleniad a Hidlo
+## Tudaleniad a Hidlo {#pagination-and-filtering}
 
 **Paramedrau Ymholiad:**
 ```http

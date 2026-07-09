@@ -4,19 +4,19 @@ title: Acción - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Acción: wu_admin_pages_display_content
+# Acción: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
 
 Mostra os contidos personalizados do editor.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
 | $ | `\WU_Admin_Page` | O obxecto da páxina de administración |
 
-### Desde
+### Desde {#since}
 
 - 1.0.1
-### Fonte
+### Fonte {#source}
 
 Definido en [`views/template/page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/template/page.php#L53) na liña 53

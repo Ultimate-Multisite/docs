@@ -3,7 +3,7 @@ title: Àkọọlẹ Ìyípadà Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Àkọsílẹ̀ Àyípadà Captcha
+# Àkọsílẹ̀ Àyípadà Captcha {#captcha-changelog}
 
 Ẹ̀yà: 1.5.0 - Tu sílẹ̀ ní 2026-05-22
 * Tuntun: Olùdín ìyára hard-stop — ń ka gbogbo GET àti POST lórí àwọn ojú ibi tí captcha dáàbò bò (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ó sì ń dáhùn pẹ̀lú HTTP 429, header `Retry-After`, àti ìsun tarpit aláìlẹ́sẹ̀ (1–5s, tí a fi ààlà líle sí 15s).

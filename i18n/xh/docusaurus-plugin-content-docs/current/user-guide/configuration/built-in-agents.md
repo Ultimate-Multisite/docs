@@ -3,11 +3,11 @@ title: Ii-arhente ezakhelwe ngaphakathi
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents ezakhelwe ngaphakathi
+# Agents ezakhelwe ngaphakathi {#built-in-agents}
 
 Gratis AI Agent v1.9.0 iza neearhente ezintlanu ezakhelwe ngaphakathi, nganye ilungiselelwe kwangaphambili ngeseti egxininisiweyo yezixhobo, system prompt elungiselelweyo, kunye neengcebiso zokuqalisa ezihambelana nemisebenzi eqhelekileyo kuloo ndawo. Ukutshintsha phakathi kweearhente kutshintsha into anokuyenza umncedisi nendlela aphendula ngayo — ngaphandle kwalo naluphi na uqwalaselo oluvela kuwe. Superdav AI Agent v1.18.0 inokongeza izixhobo eziqonda ishedyuli, iirekhodi zezikhumbuzo, amasango okuvunywa, kunye nezaziso zeSMS kwezi nkqubo xa udibaniso olunxulumeneyo luqwalaselwe.
 
-## Yintoni i-Agent?
+## Yintoni i-Agent? {#what-is-an-agent}
 
 I-agent nganye yiprofayili yoqwalaselo enegama edibanisa:
 
@@ -15,7 +15,7 @@ I-agent nganye yiprofayili yoqwalaselo enegama edibanisa:
 - **System prompt** — imiyalelo emisela ithoni ye-agent, izinto eziphambili, kunye nemida
 - **Iingcebiso** — ii-prompts ezibhaliweyo kwangaphambili eziboniswa kujongano lwencoko ukukunceda uqalise ngokukhawuleza
 
-## Ukufikelela kwi-Agent Picker
+## Ukufikelela kwi-Agent Picker {#accessing-the-agent-picker}
 
 1. Vula iphaneli ye-**Gratis AI Agent** kwibar esecaleni yolawulo lwe-WordPress.
 2. Cofa **i-icon ye-agent** kwikona ephezulu ekhohlo ye-header yencoko (i-icon iyatshintsha ukubonisa i-agent esebenzayo).
@@ -24,9 +24,9 @@ I-agent nganye yiprofayili yoqwalaselo enegama edibanisa:
 
 Unokutshintsha iiarhente naphakathi kwencoko — i-system prompt ye-agent entsha iqala ukusebenza kumyalezo olandelayo.
 
-## Iiarhente ezintlanu ezakhelwe ngaphakathi
+## Iiarhente ezintlanu ezakhelwe ngaphakathi {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Ugxininiso:** Ukudala nokuhlela izithuba, amaphepha, kunye neefomu zonxibelelwano.
 
@@ -47,7 +47,7 @@ Unokutshintsha iiarhente naphakathi kwencoko — i-system prompt ye-agent entsha
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Ugxininiso:** Ukudala iwebhusayithi ukusuka ekuqaleni ukuya ekugqibeleni ngomyalezo omnye.
 
@@ -70,7 +70,7 @@ Unokutshintsha iiarhente naphakathi kwencoko — i-system prompt ye-agent entsha
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Ugxininiso:** Ukwenza ngokwezifiso okubonakalayo — imibala, itypography, CSS, kunye neepateni zeebhloko.
 
@@ -87,7 +87,7 @@ Unokutshintsha iiarhente naphakathi kwencoko — i-system prompt ye-agent entsha
 - *Thatha umfanekiso-skrini wekhasi lasekhaya uze undixelele into onokuyiphucula.*
 - *Yenza ipateni yebhloko ye-hero enokusetyenziswa kwakhona enomfanekiso ongasemva wobubanzi obupheleleyo kunye nesihloko esibekwe embindini.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Ugxininiso:** Ukufumanisa, ukufaka, nokulawula ii-plugins ze-WordPress.
 
@@ -105,7 +105,7 @@ Unokutshintsha iiarhente naphakathi kwencoko — i-system prompt ye-agent entsha
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Ugxininiso:** Ukuphendula imibuzo malunga nomxholo wesayithi, iisetingi, kunye noqwalaselo lwe-WordPress.
 
@@ -124,7 +124,7 @@ Unokutshintsha iiarhente naphakathi kwencoko — i-system prompt ye-agent entsha
 
 ---
 
-## Iindibaniselwano zokuzenzekelayo ze-Superdav
+## Iindibaniselwano zokuzenzekelayo ze-Superdav {#superdav-automation-integrations}
 
 Xa iindibaniselwano ze-Superdav AI Agent v1.18.0 zilungiselelwe, ii-arhente ezakhelwe ngaphakathi zinokuthatha inxaxheba kwiinkqubo zokuzenzekelayo ezikhuselekileyo nezazi ishedyuli:
 
@@ -138,11 +138,11 @@ Inkqubo yokusebenza ecetyiswayo: cela iarhente ukuba ilungiselele umyalezo okany
 
 ---
 
-## Ukwenza ii-arhente ngokwezifiso
+## Ukwenza ii-arhente ngokwezifiso {#customising-agents}
 
 Iarhente nganye eyakhelwe ngaphakathi inokwandiswa okanye itshintshwe nge-`gratis_ai_agent_agents` filter.
 
-### Ukongeza umyalelo wenkqubo olungiselelweyo kwiarhente esele ikhona
+### Ukongeza umyalelo wenkqubo olungiselelweyo kwiarhente esele ikhona {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Ukubhalisa iarhente entsha
+### Ukubhalisa iarhente entsha {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Iarhente entsha ibonakala kwiSikhethi seArhente kwangoko emva kokuba i-filter isebenzile.
 
-### Ukususa iarhente eyakhelwe ngaphakathi
+### Ukususa iarhente eyakhelwe ngaphakathi {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

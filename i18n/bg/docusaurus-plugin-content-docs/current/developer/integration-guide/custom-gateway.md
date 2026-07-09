@@ -3,11 +3,11 @@ title: Разработка на персонализиран шлюз
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Разработка на Custom Gateway
+# Разработка на Custom Gateway {#custom-gateway-development}
 
 Можете да създавате персонализирани платежни gateway-и, като разширите класа `Base_Gateway`.
 
-## Клас на gateway
+## Клас на gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Регистриране на gateway
+## Регистриране на gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Основни методи
+## Основни методи {#key-methods}
 
 | Метод | Предназначение |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Обработва заявки за възстановяване на средства |
 | `get_payment_methods()` | Връща запазените методи на плащане за клиент |
 
-## Данни за подновяване за повтарящи се членства
+## Данни за подновяване за повтарящи се членства {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 позволява на gateway интеграциите да докладват дали повтарящо се членство има повторно използваеми данни за подновяване, преди `auto_renew` да бъде запазено. Закачете се към `wu_membership_has_renewal_credential` и върнете:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Изчистете маркера за липсващи данни като част от успешния поток за повторно упълномощаване на вашия gateway, след като бъдат съхранени нови повторно използваеми данни.
 
-## Съвети
+## Съвети {#tips}
 
 - Винаги връщайте `WP_Error` при неуспех, за да може Ultimate Multisite да обработи показването на грешката
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Използвайте `wu_log_add()` за специфично за gateway регистриране в лог
 
-## Възможности на доставчик на AI connector
+## Възможности на доставчик на AI connector {#ai-connector-provider-capabilities}
 
 Персонализираните интеграции, които извикват операции, базирани на AI connector, трябва да бъдат съобразени с поддържания набор OAuth доставчици, въведен с AI Provider for Anthropic Max v1.3.0:
 

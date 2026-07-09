@@ -3,9 +3,9 @@ title: Registro de Alterações de Múltiplas Redes
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Changelog de Multi-Network
+# Changelog de Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Novo: Visualizador de modelos de rede — navegue e visualize modelos de rede com um painel ao vivo antes de comprar.
 * Novo: Seletor de modelo de rede no checkout — clientes podem selecionar um modelo de rede durante o fluxo de checkout de inscrição.
 * Novo: SSO por magic link entre redes — clientes podem acessar sub-redes de forma integrada via autenticação por magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Correção: Proteção contra chave `network_id` indefinida no escopo de consulta do site.
 * Correção: A verificação de permissão de rede antes da troca de contexto evita erros de propriedade de tabela `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Correção: Criação de nova rede.
 * Correção: Renderização de menus.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Atualizado para Plugin Update Checker v5
 * Adicionados cabeçalhos modernos de plugin WordPress
 * Compatibilidade aprimorada com as versões mais recentes do WordPress
 
-### 1.0.2
+### 1.0.2 {#102}
 * Correções de bugs e melhorias de desempenho
 * Isolamento de rede aprimorado
 
-### 1.0.0
+### 1.0.0 {#100}
 * Lançamento inicial
 * Funcionalidade principal de multirrede
 * Integração com Multisite Ultimate

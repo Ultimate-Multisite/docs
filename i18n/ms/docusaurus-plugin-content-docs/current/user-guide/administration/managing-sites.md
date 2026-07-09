@@ -3,7 +3,7 @@ title: Menguruskan Laman
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Mengurus Laman
+# Mengurus Laman {#managing-sites}
 
 Laman (atau sublaman) adalah teras perniagaan WaaS anda. Ultimate Multisite mempunyai 3 jenis laman:
 
@@ -11,13 +11,13 @@ Laman (atau sublaman) adalah teras perniagaan WaaS anda. Ultimate Multisite memp
 - **Templat Laman** — Laman yang telah ditetapkan sebagai pilihan permulaan untuk pelanggan
 - **Laman Utama** — Laman rangkaian utama anda
 
-## Melihat Laman
+## Melihat Laman {#viewing-sites}
 
 Pergi ke **Ultimate Multisite → Sites** untuk melihat semua sublaman dalam rangkaian anda. Setiap laman dilabelkan mengikut jenis dan anda boleh menapis mengikut All Sites, Customer-Owned, Templates, atau Pending.
 
 ![Halaman senarai laman](/img/admin/sites-list.png)
 
-## Menambah Laman Baharu
+## Menambah Laman Baharu {#adding-a-new-site}
 
 Klik butang **Add Site** untuk mencipta laman baharu. Anda perlu menyediakan:
 
@@ -27,15 +27,15 @@ Klik butang **Add Site** untuk mencipta laman baharu. Anda perlu menyediakan:
 
 Pilihan **Copy Site** membolehkan anda mencipta laman baharu berdasarkan templat laman sedia ada. Apabila diaktifkan, anda boleh memilih templat mana yang ingin digunakan sebagai titik permulaan. Pastikan **Copy Media on Duplication** diaktifkan untuk menyertakan fail media.
 
-## Mengurus Laman Sedia Ada
+## Mengurus Laman Sedia Ada {#managing-an-existing-site}
 
 Klik **Manage** pada mana-mana laman untuk membuka halaman **Edit Site**. Di sini anda akan menemui:
 
-### Maklumat Asas
+### Maklumat Asas {#basic-information}
 
 Nama laman, jenis, ID laman, dan penerangan. Anda juga akan melihat domain yang dipetakan, keahlian yang dikaitkan, dan akaun pelanggan yang memiliki laman tersebut.
 
-### Pilihan Laman
+### Pilihan Laman {#site-options}
 
 Konfigurasikan keupayaan dan had laman:
 
@@ -47,7 +47,7 @@ Konfigurasikan keupayaan dan had laman:
 
 Secara lalai, laman mengikut had yang ditetapkan pada peringkat keahlian. Menetapkan had pada peringkat laman akan mengatasi tetapan keahlian.
 
-### Perkaitan
+### Perkaitan {#associations}
 
 Di bawah pilihan laman, anda akan menemui maklumat tentang:
 
@@ -55,7 +55,7 @@ Di bawah pilihan laman, anda akan menemui maklumat tentang:
 - **Keahlian** yang meliputi laman tersebut
 - **Akaun pelanggan** yang dipautkan kepada laman
 
-### Bar Sisi Kanan
+### Bar Sisi Kanan {#right-sidebar}
 
 Di sebelah kanan anda boleh:
 

@@ -3,17 +3,17 @@ title: Diseinuaren norabidea
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Diseinuaren norabidea
+# Diseinuaren norabidea {#design-direction}
 
 **Diseinuaren norabidea** urratsak zure theme-aren diseinu bisuala berrikusi, findu eta amaitzeko aukera ematen dizu, Theme Builder-ek theme osoa sortu aurretik.
 
-## Ikuspegi orokorra
+## Ikuspegi orokorra {#overview}
 
 Discovery Interview osatu ondoren, Theme Builder-ek zure diseinuaren norabidea aurkezten du **desktop eta mobile aurrebistaren errendatzearekin**. Horri esker, theme-a onartu aurretik zure diseinua gailu desberdinetan zehazki nola ikusiko den ikus dezakezu.
 
-## Diseinuaren norabidearen osagaiak
+## Diseinuaren norabidearen osagaiak {#design-direction-components}
 
-### 1. Kolore-paleta
+### 1. Kolore-paleta {#1-color-palette}
 
 Zure theme-aren kolore-eskema, honako hauek barne:
 
@@ -23,7 +23,7 @@ Zure theme-aren kolore-eskema, honako hauek barne:
 - **Kolore neutroak** — atzeko planoetarako eta testurako grisak eta zuriak
 - **Testu-kolorea** — irakurgarritasunerako testu-kolore nagusia
 
-### 2. Tipografia
+### 2. Tipografia {#2-typography}
 
 Letra-tipoen hautaketak honako hauetarako:
 
@@ -33,14 +33,14 @@ Letra-tipoen hautaketak honako hauetarako:
 - **Lerro-altuera** — irakurgarritasunerako lerroen arteko tartea
 - **Letra-lodierak** — aldaera lodiak, arruntak eta arinak
 
-### 3. Diseinua eta tarteak
+### 3. Diseinua eta tarteak {#3-layout-and-spacing}
 
 - **Edukiontziaren zabalera** — edukiaren gehieneko zabalera
 - **Padding eta marjinak** — elementuen inguruko tartea
 - **Sare-sistema** — diseinu moldakorrerako zutabe-diseinua
 - **Osagaien arteko tartea** — UI elementuen arteko distantzia
 
-### 4. Elementu bisualak
+### 4. Elementu bisualak {#4-visual-elements}
 
 - **Botoi-estiloak** — botoi nagusi, bigarren mailako eta hirugarren mailakoen diseinuak
 - **Txartel-diseinuak** — eduki-blokeetarako diseinuak
@@ -48,9 +48,9 @@ Letra-tipoen hautaketak honako hauetarako:
 - **Ertzak eta itzalak** — sakontasun bisual sotila
 - **Hover efektuak** — egoera interaktiboaren estiloa
 
-## Aurrebistaren errendatzea
+## Aurrebistaren errendatzea {#preview-rendering}
 
-### Desktop aurrebista
+### Desktop aurrebista {#desktop-preview}
 
 Desktop aurrebistak zure diseinua zabalera osoan erakusten du (normalean 1200px edo zabalagoa):
 
@@ -59,7 +59,7 @@ Desktop aurrebistak zure diseinua zabalera osoan erakusten du (normalean 1200px 
 - Tipografia eta tarte handiak
 - Elementu bisual guztiak tamaina osoan
 
-### Mobile aurrebista
+### Mobile aurrebista {#mobile-preview}
 
 Mobile aurrebistak zure diseinua mobile zabaleran erakusten du (normalean 375px):
 
@@ -68,7 +68,7 @@ Mobile aurrebistak zure diseinua mobile zabaleran erakusten du (normalean 375px)
 - Egokitutako tipografia eta tarteak
 - Ukitzeko egokiak diren botoi-tamainak
 
-### Breakpoint moldakorrak
+### Breakpoint moldakorrak {#responsive-breakpoints}
 
 Theme Builder-ek breakpoint hauetan errendatzen ditu aurrebistak:
 
@@ -79,9 +79,9 @@ Theme Builder-ek breakpoint hauetan errendatzen ditu aurrebistak:
 | **Desktop** | 1200px | Zabalera osoko desktop |
 | **Large Desktop** | 1920px | Pantaila ultra-zabala |
 
-## Zure diseinua fintzea
+## Zure diseinua fintzea {#refining-your-design}
 
-### Doikuntzak egitea
+### Doikuntzak egitea {#making-adjustments}
 
 Zure diseinuaren norabidea honela findu dezakezu:
 
@@ -91,7 +91,7 @@ Zure diseinuaren norabidea honela findu dezakezu:
 4. **Diseinua eguneratuz** — edukiontzi-zabalerak eta sare-zutabeak aldatu
 5. **Elementuak pertsonalizatuz** — botoi-estiloak, txartel-diseinuak, etab. aldatu
 
-### Aurrebisten eguneraketak
+### Aurrebisten eguneraketak {#preview-updates}
 
 Aldaketak denbora errealean islatzen dira:
 
@@ -100,7 +100,7 @@ Aldaketak denbora errealean islatzen dira:
 - Breakpoint moldakor guztiak eguneratzen dira
 - Aurrebisten artean alda dezakezu aldaketak egiaztatzeko
 
-### Konparazio-ikuspegia
+### Konparazio-ikuspegia {#comparison-view}
 
 Konparatu zure diseinuaren norabidea honekin:
 
@@ -108,7 +108,7 @@ Konparatu zure diseinuaren norabidea honekin:
 - **Lehiakideen diseinuak** — alderatu inspirazio-guneekin
 - **Aurreko bertsioak** — itzuli lehenagoko diseinu-norabideetara
 
-## Diseinuaren norabidearen onarpena
+## Diseinuaren norabidearen onarpena {#design-direction-approval}
 
 Zure diseinuarekin pozik zaudenean:
 
@@ -118,7 +118,7 @@ Zure diseinuarekin pozik zaudenean:
 4. **Berretsi diseinua** — egiaztatu tarteak eta lerrokatzea
 5. **Onartu diseinua** — jarraitu theme-a sortzera
 
-## Hurrengo urratsak
+## Hurrengo urratsak {#next-steps}
 
 Zure diseinuaren norabidea onartu ondoren:
 
@@ -127,7 +127,7 @@ Zure diseinuaren norabidea onartu ondoren:
 3. Gehiago pertsonaliza dezakezu WordPress customizer erabiliz
 4. Jarraitu [Ostalaritzako menuak](./hospitality-menus.md) atalera edo beste eginbide batzuetara
 
-## Jardunbide egokiak
+## Jardunbide egokiak {#best-practices}
 
 - **Probatu benetako gailuetan** — erabili benetako telefonoak eta tabletak ahal bada
 - **Egiaztatu irakurgarritasuna** — ziurtatu testua tamaina guztietan irakurgarria dela
@@ -135,30 +135,30 @@ Zure diseinuaren norabidea onartu ondoren:
 - **Kontuan hartu errendimendua** — optimizatu irudiak eta letra-tipoak abiadurarako
 - **Planifikatu edukia kontuan hartuta** — ziurtatu diseinuak zure benetako edukiarekin funtzionatzen duela
 
-## Arazoak konpontzea
+## Arazoak konpontzea {#troubleshooting}
 
-### Aurrebista ez da eguneratzen
+### Aurrebista ez da eguneratzen {#preview-not-updating}
 
 - Freskatu orrialdea
 - Garbitu nabigatzailearen cachea
 - Saiatu beste nabigatzaile batekin
 - Egiaztatu interneteko konexioa
 
-### Koloreek itxura desberdina dute
+### Koloreek itxura desberdina dute {#colors-look-different}
 
 - Egiaztatu monitorearen kolore-ezarpenak
 - Probatu gailu desberdinetan
 - Egiaztatu kolore-kontrastea irisgarritasun-tresnekin
 - Kontuan hartu daltonismo-simulagailuak
 
-### Tipografia-arazoak
+### Tipografia-arazoak {#typography-issues}
 
 - Egiaztatu letra-tipoen fitxategiak kargatzen ari direla
 - Egiaztatu letra-tamaina breakpoint desberdinetan
 - Probatu benetako edukiarekin
 - Kontuan hartu lerro-luzera irakurgarritasunerako
 
-## Lotutako dokumentazioa
+## Lotutako dokumentazioa {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — diseinu-informazioa bildu
 - [Ostalaritzako menuak](./hospitality-menus.md) — sortu menu-orri egituratuak

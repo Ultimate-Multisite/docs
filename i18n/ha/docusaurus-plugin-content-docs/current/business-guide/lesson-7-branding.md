@@ -3,15 +3,15 @@ title: 'Darasi na 7: Mai da Shi Naka'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Darasi na 7: Mayar da Shi Naka
+# Darasi na 7: Mayar da Shi Naka {#lesson-7-making-it-yours}
 
 Kada abokan cinikinka su taba jin kamar suna amfani da "wani kari na WordPress." Ya kamata su ji kamar suna amfani da FitSite -- dandali da aka gina domin masana'antarsu. Wannan darasin ya ƙunshi alama, sanya alamar kamfaninka, da sa dandali ya ji kamar samfur.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 FitSite yana da tsarin biya mai aiki wanda ke kai masu gidajen studio na fitness daga zaɓin tsari zuwa shafi mai aiki. Yanzu za mu sa dukkan gogewar ta ji kamar samfur guda ɗaya mai alama.
 
-## Domain na Dandalinka
+## Domain na Dandalinka {#your-platform-domain}
 
 Tushen alamarka shi ne domain ɗinka. Ga FitSite:
 
@@ -19,7 +19,7 @@ Tushen alamarka shi ne domain ɗinka. Ga FitSite:
 - **Shafukan abokan ciniki**: `studioname.fitsite.com` (subdomains)
 - **Domains na musamman**: Abokan ciniki a tsare-tsaren Growth da Pro za su iya haɗa nasu domain
 
-### Saita Domain Ɗinka
+### Saita Domain Ɗinka {#setting-up-your-domain}
 
 1. Yi rijistar domain na dandalinka
 2. Nuna shi zuwa mai ba da hosting ɗinka
@@ -28,11 +28,11 @@ Tushen alamarka shi ne domain ɗinka. Ga FitSite:
 
 Duba [Yadda ake Saita Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) don cikakkun umarni.
 
-## Sanya Alamar Kamfaninka a Gogewar Admin
+## Sanya Alamar Kamfaninka a Gogewar Admin {#white-labeling-the-admin-experience}
 
 Lokacin da mai gidan studio na fitness ya shiga dashboard na shafinsa, ya kamata ya ga alamarka, ba alamar WordPress ko Ultimate Multisite ba.
 
-### Shafin Shiga na Musamman
+### Shafin Shiga na Musamman {#custom-login-page}
 
 Keɓance shafin shiga na WordPress don ya nuna:
 
@@ -40,7 +40,7 @@ Keɓance shafin shiga na WordPress don ya nuna:
 - Hotunan bango da suka dace da fitness
 - Launukan alamarka
 
-### Alamar Dashboard
+### Alamar Dashboard {#dashboard-branding}
 
 Yi amfani da addon [Admin Page Creator](/addons/admin-page-creator) ko CSS na musamman don:
 
@@ -48,7 +48,7 @@ Yi amfani da addon [Admin Page Creator](/addons/admin-page-creator) ko CSS na mu
 - Keɓance tsarin launukan admin don ya dace da alamarka
 - Ƙara widget na dashboard na musamman da hanyoyin sauri da albarkatun taimako na musamman ga fitness
 
-### Shafukan Admin na Musamman
+### Shafukan Admin na Musamman {#custom-admin-pages}
 
 Yi la'akari da ƙirƙirar shafukan admin na musamman waɗanda ke fito da ayyukan da suka fi dacewa ga masu gidajen studio na fitness:
 
@@ -58,11 +58,11 @@ Yi la'akari da ƙirƙirar shafukan admin na musamman waɗanda ke fito da ayyukan
 
 Wannan yana rage wahalar koyo ta hanyar sanya ayyukan da suka dace da wannan fanni a gaba da tsakiya maimakon ɓoye su a cikin menu na WordPress na yau da kullum.
 
-## Sanya Alama a Sadarwarka
+## Sanya Alama a Sadarwarka {#branding-your-communications}
 
 Kowane imel, rasit, da sanarwa ya kamata ya ƙarfafa alamarka.
 
-### Imel na Tsari
+### Imel na Tsari {#system-emails}
 
 Je zuwa **Ultimate Multisite > Settings > Emails** ka keɓance dukkan imel na tsari:
 
@@ -79,7 +79,7 @@ Muhimman imel da za a keɓance:
 | Rasitin biya | "An karɓi biya" | "An tabbatar da biyan subscription na FitSite" |
 | Ƙarshen gwaji | "Gwajinka zai ƙare nan ba da daɗewa ba" | "Gwajin FitSite ɗinka zai ƙare cikin kwanaki 3 -- ci gaba da sa gidan yanar gizon studio ɗinka ya kasance a raye" |
 
-### Rasitoci
+### Rasitoci {#invoices}
 
 Keɓance samfuran rasiti da:
 
@@ -87,7 +87,7 @@ Keɓance samfuran rasiti da:
 - Bayanai na kasuwancinka
 - Sunayen samfur na musamman ga fitness (ba IDs na tsari na gabaɗaya ba)
 
-## Shafin da Abokin Ciniki ke Gani
+## Shafin da Abokin Ciniki ke Gani {#the-customer-facing-site}
 
 Babban domain ɗinka (`fitsite.com`) yana buƙatar shafin talla da ke sayar da dandalin. Wannan ya bambanta da admin na network na Ultimate Multisite -- shi ne fuskar jama'a ta kasuwancinka.
 
@@ -103,7 +103,7 @@ Muhimman shafuka:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Domain na Musamman ga Abokan Ciniki
+## Domain na Musamman ga Abokan Ciniki {#custom-domain-for-customers}
 
 Ga abokan ciniki a kan tsare-tsaren da suka haɗa da domains na musamman, rubuta tsarin a fili:
 
@@ -113,7 +113,7 @@ Ga abokan ciniki a kan tsare-tsaren da suka haɗa da domains na musamman, rubuta
 
 Ƙirƙiri labarin taimako ko shigarwa a knowledge base musamman don wannan tsari, a rubuce ga masu gidajen studio na fitness da ba su da ƙwarewar fasaha.
 
-## Network na FitSite Zuwa Yanzu
+## Network na FitSite Zuwa Yanzu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Abin da Muka Gina a Wannan Darasin
+## Abin da Muka Gina a Wannan Darasin {#what-we-built-this-lesson}
 
 - **Domain na dandali da DNS** da aka saita don gogewa mai alama
 - **Admin mai alamar kamfaninka** tare da alamar FitSite a ko'ina

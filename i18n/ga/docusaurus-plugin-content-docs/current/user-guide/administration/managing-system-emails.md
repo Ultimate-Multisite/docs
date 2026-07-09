@@ -3,11 +3,11 @@ title: Curmhaíochta E-mailí Sistéimaithe
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Déanamh ar Emailí Sistim
+# Déanamh ar Emailí Sistim {#managing-system-emails}
 
 Ultimate Multisite seachaint emailí sistim gheallt ar cheannasacha mar chuid féachfaíochta, spriocais de chuid aistriúcháin, agus pearsánacha oibríochta. Is féidir leat an t-amaisce seo a athrú chun é sin a bheith ag cur isteach ar chuid bránda.
 
-## Aileamh ar Emailí Sistim
+## Aileamh ar Emailí Sistim {#viewing-system-emails}
 
 Anois, cur isteach i **Ultimate Multisite → Settings** agus cliceáil ar an tab **Emails** chun na réiteach emailí a fheiceáil.
 
@@ -21,7 +21,7 @@ Is féidir leat hefyd athrú individual email templates a bheith agat trí d'ema
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Inneadh Nua Email Templates
+## Inneadh Nua Email Templates {#importing-new-email-templates}
 
 Le linn na fhéidrigh nua de Ultimate Multisite agus add-ons, is féidir leis na réiteach emailí nua a bheith ag cur isteach. Chun caomadh ar chuid éifeachtach, níltear na templates nua ag cur isteach go dtí an t-amaisce — iarraidh tú iarrthio iad manualmente.
 
@@ -32,7 +32,7 @@ Chun inneadh new email templates:
 3. Athrú an option **Import Emails** chun na templates a fágáil a fheiceáil
 4. Déan seirbhísí a bhfuil tú ag cur isteach agus féachfigh
 
-## Athrú Email Templates
+## Athrú Email Templates {#resetting-email-templates}
 
 Má tá tú ag athrú email template agus tú ag iarraidh athrann go dtí an curteoir de chuid féachfaíochta, tá do chuid optionaí de dhá:
 

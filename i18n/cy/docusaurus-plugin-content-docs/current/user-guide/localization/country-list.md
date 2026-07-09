@@ -3,7 +3,7 @@ title: Llyfrgell Talaith
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Atgofyn y rheoliad o ddrws y gwyliau Ultimate Multisite
+# Atgofyn y rheoliad o ddrws y gwyliau Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Mae'r draddol i wybलेक्टio gwyl (dropdown) yn cael ei ordyn ar gyferol allweddol ar gyfer y ffurfau Cymraeg o'r enw y gwyliau Cymreig. Gall hynny golygu bod y drefn y cwmni eich cyfrifol a/neu amser yn cael ei gael yn canol i'r rheol y gwyliau mawr.
 

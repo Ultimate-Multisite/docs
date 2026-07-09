@@ -3,7 +3,7 @@ title: Qobiliyatlar maʼlumotnomasi
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Imkoniyatlar ma'lumotnomasi
+# Imkoniyatlar ma'lumotnomasi {#abilities-reference}
 
 Imkoniyatlar — Gratis AI Agent sizning WordPress o‘rnatmangizda chaqira oladigan atomar amallardir. Har bir imkoniyat JSON sxemasini taqdim etadigan ro‘yxatdan o‘tgan PHP klassidir — agent ish vaqtida ushbu sxemani o‘qib, qanday parametrlar talab qilinishini va imkoniyat nima qaytarishini tushunadi.
 
@@ -11,11 +11,11 @@ Bu sahifada Gratis AI Agent v1.9.0 bilan birga keladigan barcha imkoniyatlar huj
 
 ---
 
-## Maxsus post turlari
+## Maxsus post turlari {#custom-post-types}
 
 Bu imkoniyatlar agent orqali ro‘yxatdan o‘tkazilgan maxsus post turlarini (CPT) boshqaradi. Ro‘yxatga olishlar WordPress options jadvalida saqlanadi, shuning uchun ular plugin o‘chirib qo‘yilishi va qayta faollashtirilishidan keyin ham saqlanib qoladi.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Yangi maxsus post turini ro‘yxatdan o‘tkazadi.
 
@@ -50,7 +50,7 @@ Yangi maxsus post turini ro‘yxatdan o‘tkazadi.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Agent tomonidan ro‘yxatdan o‘tkazilgan barcha maxsus post turlarini qaytaradi.
 
@@ -73,7 +73,7 @@ Agent tomonidan ro‘yxatdan o‘tkazilgan barcha maxsus post turlarini qaytarad
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Agent tomonidan avval ro‘yxatdan o‘tkazilgan maxsus post turini ro‘yxatdan chiqaradi. Ushbu turdagi mavjud postlar ma'lumotlar bazasida qoladi, ammo endi post turi orqali ularga kirib bo‘lmaydi.
 
@@ -87,11 +87,11 @@ Agent tomonidan avval ro‘yxatdan o‘tkazilgan maxsus post turini ro‘yxatdan
 
 ---
 
-## Maxsus taksonomiyalar
+## Maxsus taksonomiyalar {#custom-taxonomies}
 
 Bu imkoniyatlar maxsus taksonomiyalarni boshqaradi. CPTlar kabi, taksonomiya ro‘yxatga olishlari ham saqlanadi.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Yangi maxsus taksonomiyani ro‘yxatdan o‘tkazadi.
 
@@ -123,7 +123,7 @@ Yangi maxsus taksonomiyani ro‘yxatdan o‘tkazadi.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Agent tomonidan ro‘yxatdan o‘tkazilgan barcha maxsus taksonomiyalarni qaytaradi.
 
@@ -146,7 +146,7 @@ Agent tomonidan ro‘yxatdan o‘tkazilgan barcha maxsus taksonomiyalarni qaytar
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Agent tomonidan avval ro‘yxatdan o‘tkazilgan maxsus taksonomiyani ro‘yxatdan chiqaradi.
 
@@ -160,11 +160,11 @@ Agent tomonidan avval ro‘yxatdan o‘tkazilgan maxsus taksonomiyani ro‘yxatd
 
 ---
 
-## Dizayn tizimi
+## Dizayn tizimi {#design-system}
 
 Dizayn tizimi imkoniyatlari WordPress saytining vizual ko‘rinishini o‘zgartiradi — maxsus CSSdan tortib blok andozalari va sayt logosigacha.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 `wp_add_inline_style` orqali saytning `<head>` qismiga CSS qo‘shadi. CSS `gratis_ai_agent_custom_css` optionida saqlanadi va imkoniyat reset qilinganda toza tarzda dequeued qilinadi.
 
@@ -190,7 +190,7 @@ Dizayn tizimi imkoniyatlari WordPress saytining vizual ko‘rinishini o‘zgarti
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 WordPress andoza kutubxonasida qayta foydalaniladigan blok andozasini ro‘yxatdan o‘tkazadi.
 
@@ -209,7 +209,7 @@ WordPress andoza kutubxonasida qayta foydalaniladigan blok andozasini ro‘yxatd
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Agent tomonidan ro‘yxatdan o‘tkazilgan barcha blok andozalarini ro‘yxatlaydi.
 
@@ -231,7 +231,7 @@ Agent tomonidan ro‘yxatdan o‘tkazilgan barcha blok andozalarini ro‘yxatlay
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 WordPress sayt logosini berilgan biriktirma IDsi yoki masofaviy rasm URLiga sozlaydi. URL taqdim etilganda, rasm yuklab olinadi va Media Libraryga import qilinadi.
 
@@ -248,7 +248,7 @@ WordPress sayt logosini berilgan biriktirma IDsi yoki masofaviy rasm URLiga sozl
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Nomlangan rang/tipografiya presetini faol themening `theme.json` (yoki `global-styles`)iga qo‘llaydi. Presetlar Gratis AI Agent jamoasi tomonidan yuritiladigan saralangan to‘plamlardir.
 
@@ -273,11 +273,11 @@ Nomlangan rang/tipografiya presetini faol themening `theme.json` (yoki `global-s
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Global Styles imkoniyatlari WordPress Global Styles API orqali theme.json qiymatlarini o‘qiydi va yozadi, butun sayt bo‘ylab barcha bloklar va shablonlarga ta’sir qiladi.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Joriy global uslublar konfiguratsiyasini qaytaradi.
 
@@ -291,7 +291,7 @@ Joriy global uslublar konfiguratsiyasini qaytaradi.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Global uslublar konfiguratsiyasidagi bir yoki bir nechta qiymatni yangilaydi.
 
@@ -318,7 +318,7 @@ Global uslublar konfiguratsiyasidagi bir yoki bir nechta qiymatni yangilaydi.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Agent tomonidan qo‘llangan barcha global uslublar o‘zgarishlarini qayta tiklaydi va themening standart qiymatlarini tiklaydi.
 
@@ -328,11 +328,11 @@ Agent tomonidan qo‘llangan barcha global uslublar o‘zgarishlarini qayta tikl
 
 ---
 
-## Navigatsiya menyulari
+## Navigatsiya menyulari {#navigation-menus}
 
 Navigation Menu imkoniyatlari WordPress navigatsiya menyularini va ularning elementlarini yaratadi hamda boshqaradi.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Yangi WordPress navigatsiya menyusini yaratadi.
 
@@ -347,7 +347,7 @@ Yangi WordPress navigatsiya menyusini yaratadi.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Menyu nomini o‘zgartiradi yoki uni theme joylashuviga qayta tayinlaydi.
 
@@ -363,7 +363,7 @@ Menyu nomini o‘zgartiradi yoki uni theme joylashuviga qayta tayinlaydi.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Mavjud navigatsiya menyusiga element qo‘shadi.
 
@@ -383,7 +383,7 @@ Mavjud navigatsiya menyusiga element qo‘shadi.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Navigatsiya menyusidan elementni olib tashlaydi.
 
@@ -397,7 +397,7 @@ Navigatsiya menyusidan elementni olib tashlaydi.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Barcha WordPress navigatsiya menyularini, jumladan ularga tayinlangan theme joylashuvlarini ro‘yxatlaydi.
 
@@ -420,11 +420,11 @@ Barcha WordPress navigatsiya menyularini, jumladan ularga tayinlangan theme joyl
 
 ---
 
-## Options boshqaruvi
+## Options boshqaruvi {#options-management}
 
 Options imkoniyatlari WordPress optionsni `get_option` / `update_option` orqali o‘qiydi va yozadi. Ichki xavfsizlik blok ro‘yxati muhim sozlamalarning tasodifiy o‘zgartirilishini oldini oladi.
 
-### `get_option`
+### `get_option` {#getoption}
 
 WordPress optionni o‘qiydi.
 
@@ -440,7 +440,7 @@ Agar `option_name` xavfsizlik blok ro‘yxatida bo‘lsa, xatolik qaytaradi.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 WordPress optionni yozadi.
 
@@ -458,7 +458,7 @@ Agar `option_name` xavfsizlik blocklistida bo‘lsa, xato qaytaradi.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 WordPress opsiyasini o‘chiradi.
 
@@ -474,7 +474,7 @@ Agar `option_name` xavfsizlik blocklistida bo‘lsa, xato qaytaradi.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Andozaga mos keladigan WordPress opsiyalarini ro‘yxatlaydi.
 
@@ -498,11 +498,11 @@ Andozaga mos keladigan WordPress opsiyalarini ro‘yxatlaydi.
 
 ---
 
-## Kontent boshqaruvi
+## Kontent boshqaruvi {#content-management}
 
 Kontent boshqaruvi imkoniyatlari WordPress postlari va sahifalarini yaratadi hamda tahrirlaydi. Post IDlari qaytariladi, shunda ko‘p imkoniyatli rejalardagi keyingi qadamlar yaratilgan kontentga murojaat qila oladi.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Yangi WordPress posti, sahifasi yoki maxsus post turi yozuvini yaratadi.
 
@@ -537,7 +537,7 @@ Yangi WordPress posti, sahifasi yoki maxsus post turi yozuvini yaratadi.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Mavjud WordPress posti yoki sahifasini yangilaydi.
 
@@ -567,7 +567,7 @@ Mavjud WordPress posti yoki sahifasini yangilaydi.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Bitta imkoniyat chaqiruvida bir nechta post yaratadi, site qurish yoki ommaviy kontent importi vaqtida borib-kelishlarni kamaytiradi. Postlar ketma-ket yaratiladi; agar bittasi muvaffaqiyatsiz tugasa, boshqalari davom etadi va muvaffaqiyatsizlik natijalar massivida xabar qilinadi.
 
@@ -619,7 +619,7 @@ Bitta imkoniyat chaqiruvida bir nechta post yaratadi, site qurish yoki ommaviy k
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Mavjud post yoki sahifaga ajratilgan rasmni (post miniatyurasini) tayinlaydi. Mavjud Media Library biriktirma IDsi yoki masofaviy rasm URLini qabul qiladi; URL berilganda, rasm avtomatik yuklab olinadi va import qilinadi.
 
@@ -638,7 +638,7 @@ Mavjud post yoki sahifaga ajratilgan rasmni (post miniatyurasini) tayinlaydi. Ma
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Faol forma pluginidan (qaysi biri o‘rnatilganiga qarab Contact Form 7, WPForms, Fluent Forms yoki Gravity Forms) foydalanib kontakt formasini yaratadi. Istalgan post yoki sahifaga joylashtirilishi mumkin bo‘lgan shortcode qaytaradi.
 
@@ -691,11 +691,11 @@ Faol forma pluginidan (qaysi biri o‘rnatilganiga qarab Contact Form 7, WPForms
 
 ---
 
-## Vizual ko‘rib chiqish
+## Vizual ko‘rib chiqish {#visual-review}
 
 Visual Review imkoniyatlari agentga jonli sahifalarning skrinshotlarini olish va ularni tahlil qilish imkonini beradi, bu esa hech qanday brauzer kengaytmasini talab qilmasdan avtonom dizayn ko‘rib chiqishi, oldin/keyin taqqoslashlari va vizual regressiya tekshiruvlarini amalga oshirishga imkon yaratadi.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Server tomonidagi headless brauzer yordamida berilgan URL manzilidagi WordPress sahifasining skrinshotini oladi. Rasm Media Libraryga saqlanadi va CDN URL qaytariladi.
 
@@ -724,7 +724,7 @@ Server tomonidagi headless brauzer yordamida berilgan URL manzilidagi WordPress 
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Ikki skrinshotni oladi va vizual farq ballini hamda o‘zgargan hududlarni ajratib ko‘rsatadigan farq rasmini qaytaradi. Dizayn o‘zgarishi kutilgan natijani berganini tasdiqlash yoki kutilmagan regressiyalarni aniqlash uchun foydali.
 
@@ -754,7 +754,7 @@ Ikki skrinshotni oladi va vizual farq ballini hamda o‘zgargan hududlarni ajrat
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Sahifaning skrinshotini oladi va uni vizual tahlil uchun til modeliga yuboradi. Joylashuv, tipografiya, ranglardan foydalanish va accessibility muammolarini qamrab olgan tuzilmali baholashni qaytaradi.
 
@@ -785,11 +785,11 @@ Sahifaning skrinshotini oladi va uni vizual tahlil uchun til modeliga yuboradi. 
 
 ---
 
-## O‘rnatiladigan imkoniyatlar
+## O‘rnatiladigan imkoniyatlar {#installable-abilities}
 
 O‘rnatiladigan imkoniyatlar Registry agentni WordPress pluginlari sifatida tarqatiladigan qo‘shimcha imkoniyat paketlari bilan kengaytirishga imkon beradi. Har bir paket standart imkoniyat API yordamida bir yoki bir nechta imkoniyatni ro‘yxatdan o‘tkazadi.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Registrydan o‘rnatish uchun mavjud bo‘lgan imkoniyat paketlari katalogini qaytaradi.
 
@@ -818,7 +818,7 @@ Registrydan o‘rnatish uchun mavjud bo‘lgan imkoniyat paketlari katalogini qa
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Reyestrdan qobiliyat paketini yuklab oladi va faollashtiradi.
 
@@ -832,7 +832,7 @@ Reyestrdan qobiliyat paketini yuklab oladi va faollashtiradi.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Ta’riflangan foydalanish holati uchun eng yaxshi pluginni topish maqsadida qobiliyatlar reyestriga so‘rov yuboradi va, ixtiyoriy ravishda, uni o‘rnatadi.
 

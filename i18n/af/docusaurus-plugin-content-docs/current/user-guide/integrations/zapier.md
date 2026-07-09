@@ -3,7 +3,7 @@ title: Zapier-integrasie
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrasie van Ultimate Multisite met Zapier
+# Integrasie van Ultimate Multisite met Zapier {#integrating-ultimate-multisite-with-zapier}
 
 In een van die artikels het ons [Webhooks](webhooks.md) bespreek en hoe dit gebruik kan word om met derdeparty-toepassings te integreer.
 
@@ -15,7 +15,7 @@ Jy kan **Triggers** skep wat geaktiveer sal word wanneer gebeure op jou netwerk 
 
 Dit is moontlik omdat **Ultimate Multisite Zapier se triggers** en actions deur die [REST API](https://developer.ultimatemultisite.com/api/docs/) aangedryf word.
 
-## Hoe om te begin
+## Hoe om te begin {#how-to-start}
 
 Soek eers na Ultimate Multisite in die Zapier-applys. Alternatiewelik kan jy op [hierdie skakel](https://zapier.com/apps/wp-ultimo/integrations) klik.
 
@@ -51,7 +51,7 @@ In die URL-veld, plaas jou netwerk se volledige URL, insluitend die protokol (HT
 
 Klik die **Yes, Continue**-knoppie om na die volgende stap te gaan. As alles reg werk, behoort jy deur jou nuwe gekoppelde Account begroet te word! Klik **Continue** om ’n nuwe trigger te skep.
 
-## Hoe om ’n nuwe Trigger te skep
+## Hoe om ’n nuwe Trigger te skep {#how-to-create-a-new-trigger}
 
 Noudat jou Account gekoppel is, kan jy beskikbare gebeure sien. Kom ons kies die **payment_received**-gebeurtenis vir hierdie tutoriaal.
 
@@ -67,7 +67,7 @@ In hierdie stadium sal Zapier toets of jou Zap die **spesifieke payload vir daar
 
 In ons tutoriaal is die toets **suksesvol voltooi** en het die payload-voorbeeldinligting teruggestuur. Hierdie voorbeeldinligting sal nuttig wees om ons te lei terwyl ons actions skep. Jou trigger is nou geskep en gereed om aan ander toepassings gekoppel te word.
 
-## Hoe om Actions te skep
+## Hoe om Actions te skep {#how-to-create-actions}
 
 Actions gebruik inligting van ander triggers om nuwe inskrywings in jou netwerk te skep.
 
@@ -79,7 +79,7 @@ In die volgende stap sal jy óf jou verifikasie skep, net soos ons in **Hoe om t
 
 ![Kies verifikasie vir die Zapier-action](/img/admin/webhooks-list.png)
 
-### Stel die Action op
+### Stel die Action op {#setting-up-the-action}
 
 Dit is die **hoofstap van die action** en hier is dinge ’n bietjie anders. Die eerste inligting wat jy sal kies, is die **Item**. Item is die **inligtingsmodel** van jou netwerk, soos **Customers, Payments, Sites, Emails** en ander.
 

@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Un plugin WordPress care adaugă soluții de compatibilitate pentru Tutor LMS în mediile multisite.
 
-## Descriere
+## Descriere {#description}
 
 Acest plugin oferă soluții esențiale de compatibilitate pentru rularea Tutor LMS pe rețelele WordPress multisite. El gestionează înscrierea utilizatorilor, administrarea instructorilor, limitările de cursuri și alte funcționalități specifice mediilor multisite.
 
-## Funcționalități
+## Funcționalități {#features}
 
 - **Managementul Tabelelor de Bază de Date**: Detectează și creează automat tabelele lipsă ale Tutor LMS care eșuează din cauza restricțiilor de cheie străină (foreign key constraints) specifice mediilor multisite.
 - **Înscrierea Utilizatorilor Multisite**: Handler-e AJAX personalizate pentru gestionarea înscrierii utilizatorilor pe site-urile din rețea.
@@ -24,7 +24,7 @@ Acest plugin oferă soluții esențiale de compatibilitate pentru rularea Tutor 
 - **Vederi Admin Personalizate**: Interfață de listă și management a instructorilor, conștientă de structura multisite.
 - **Instrumente Admin**: Interfață de management al bazei de date pentru administratorii de rețea și de site.
 
-## Cerințe
+## Cerințe {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Acest plugin oferă soluții esențiale de compatibilitate pentru rularea Tutor 
 - Instalare WordPress Multisite
 - Plugin Ultimate Multisite (pentru funcționalitatea limitărilor de cursuri)
 
-## Instalare
+## Instalare {#installation}
 
 1. Urcați fișierele plugin-ului în directorul `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Asigurați-vă că Tutor LMS este instalat și activat
 3. Activați plugin-ul prin meniul 'Plugins' din WordPress
 4. Plugin-ul va integra automat cu Tutor LMS
 
-## Structura Fișierelor
+## Structura Fișierelor {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funcționalități Mutate de la Plugin-ul MU
+## Funcționalități Mutate de la Plugin-ul MU {#functionality-moved-from-mu-plugin}
 
 Acest plugin conține funcționalități care erau anterior în `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Acest plugin conține funcționalități care erau anterior în `wp-content/mu-p
 - Gestionarea înscrierii utilizatorilor multisite
 - Afișarea ID-ului produsului de curs
 
-## Managementul Bazei de Date
+## Managementul Bazei de Date {#database-management}
 
-### Problema
+### Problema {#the-problem}
 
 În mediile WordPress multisite, crearea tabelelor Tutor LMS eșuează pentru tabelele care au restricții de cheie străină către tabela de utilizatori. Acest lucru se întâmplă deoarece:
 
@@ -81,7 +81,7 @@ Acest plugin conține funcționalități care erau anterior în `wp-content/mu-p
 - Cheile străine fac referire la `wp_2_users` (care nu există)
 - Tabela reală de utilizatori este `wp_users` (care este partajată pe întreaga rețea)
 
-### Soluția
+### Soluția {#the-solution}
 
 Acest plugin face automat următoarele:
 
@@ -92,13 +92,13 @@ Acest plugin face automat următoarele:
    - Crearea unui site nou în rețea
    - Verificarea manuală a tabelelor prin interfața admin
 
-### Tabelele Afectate
+### Tabelele Afectate {#affected-tables}
 
 - `tutor_coupon_usages` - Conține o cheie străină către tabela de utilizatori
 - `tutor_carts` - Conține o cheie străină către tabela de utilizatori
 - `tutor_notification_preferences` - Tabela TutorPro cu o cheie străină către tabela de utilizatori
 
-### Interfața Admin
+### Interfața Admin {#admin-interface}
 
 Accesați instrumentele de management al bazei de date la:
 
@@ -111,6 +111,6 @@ Interfața vă permite să:
 - Verificați configurația bazei de date
 - Vizualizați informații detaliate de stare
 
-## Suport
+## Suport {#support}
 
 Acest plugin este conceput în mod specific pentru platforma KursoPro. Pentru suport tehnic, vă rugăm să contactați echipa de dezvoltare.

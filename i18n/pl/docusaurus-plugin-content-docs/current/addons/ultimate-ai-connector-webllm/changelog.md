@@ -3,9 +3,9 @@ title: Ultimate AI Connector dla WebLLM Dziennik zmian
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector dla WebLLM — Dziennik zmian
+# Ultimate AI Connector dla WebLLM — Dziennik zmian {#ultimate-ai-connector-for-webllm-changelog}
 
-## Wersja 1.1.0 — Wydano 2026-04-09
+## Wersja 1.1.0 — Wydano 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Nowość: Pływający widget czatu ze wskaźnikiem statusu na pasku administracyjnym — każdy zalogowany użytkownik może bezpośrednio generować polecenia (prompt) dla LLM działającego w przeglądarce, prosto z front endu.
 * Nowość: Środowisko uruchomieniowe SharedWorker — silnik MLC działa teraz w SharedWorker, dzięki czemu wiele zakładek dzieli jedną sesję GPU, zamiast konkurować o nią.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Poprawka: Podłączenie WebLLM do filtra wpai_preferred_text_models, aby funkcja Eksperymenty AI kierowała do silnika przeglądarki, gdy model jest skonfigurowany.
 * Ulepszenie: Poprawki związane z cache-bustingiem, normalizacją treści i referencjami sprzętowymi, które ujawniły się podczas testów end-to-end.
 
-## Wersja 1.0.0 — Wydanie początkowe
+## Wersja 1.0.0 — Wydanie początkowe {#version-100--initial-release}

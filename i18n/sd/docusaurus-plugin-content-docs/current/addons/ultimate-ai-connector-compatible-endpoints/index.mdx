@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# مطابقت رکندڙ ڇيڙن لاءِ Ultimate AI Connector
+# مطابقت رکندڙ ڇيڙن لاءِ Ultimate AI Connector {#ultimate-ai-connector-for-compatible-endpoints}
 
 مطابقت رکندڙ ڇيڙن لاءِ Ultimate AI Connector، OpenAI-مطابقت رکندڙ AI مهيا ڪندڙن جي APIs کي توهان جي WordPress multisite نيٽ ورڪ سان ضم ڪري ٿو. ڪيترائي AI مهيا ڪندڙ ترتيب ڏيو — هر هڪ پنهنجي endpoint URL، API چاٻي، ۽ ڊفالٽ ماڊل سان — ۽ جڏهن ڪو مهيا ڪندڙ موجود نه هجي ته خودڪار fallback سان درخواستن کي روٽ ڪريو.
 
-## اهم خاصيتون
+## اهم خاصيتون {#key-features}
 
 - **گهڻن مهيا ڪندڙن جي حمايت**: ڪيترائي AI مهيا ڪندڙ ڪارڊ شامل ڪريو، هر هڪ پنهنجي endpoint URL، API چاٻي، ۽ ڊفالٽ ماڊل سان
 - **ڇڪي ٻيهر ترتيب ڏيڻ**: هر ڪارڊ تي grip handle استعمال ڪري مهيا ڪندڙن کي ترجيح موجب ترتيب ڏيو؛ درخواستون ترتيب موجب مهيا ڪندڙ استعمال ڪن ٿيون
@@ -21,26 +21,26 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **شامل ڪرڻ تي خودڪار کولڻ**: نوان مهيا ڪندڙ ڪارڊ خودڪار طور کلي وڃن ٿا ته جيئن توهان فوري طور تفصيل ڀري سگهو
 - **اسڪرپٽ cache busting**: plugin update تي مهيا ڪندڙ اسڪرپٽس کي cache-busted ڪيو وڃي ٿو ته جيئن تازو نسخو لوڊ ٿيڻ کي يقيني بڻايو وڃي
 
-## گهرجون
+## گهرجون {#requirements}
 
 - WordPress 5.3 يا وڌيڪ
 - PHP 7.4 يا وڌيڪ
 - Ultimate Multisite plugin (فعال)
 - هڪ OpenAI-مطابقت رکندڙ API endpoint (پاڻ ميزبان ڪيل يا ٽئين ڌر جو)
 
-## انسٽاليشن
+## انسٽاليشن {#installation}
 
 1. addon فائلون پنهنجي `/wp-content/plugins/` ڊاريڪٽري ۾ اپلوڊ ڪريو
 2. WordPress ۾ 'Plugins' مينيو ذريعي plugin فعال ڪريو
 3. addon ترتيب ڏيڻ لاءِ **Ultimate Multisite → AI Connector** ڏانهن وڃو
 
-## ترتيب
+## ترتيب {#configuration}
 
-### گهڻن مهيا ڪندڙن جي سيٽ اپ
+### گهڻن مهيا ڪندڙن جي سيٽ اپ {#multi-provider-setup}
 
 ترتيب واري اسڪرين ڪارڊ تي ٻڌل ترتيب استعمال ڪري ٿي، جتي هر ڪارڊ هڪ AI مهيا ڪندڙ جي نمائندگي ڪري ٿو. توهان پنهنجي ضرورت موجب اوترا مهيا ڪندڙ شامل ڪري سگهو ٿا.
 
-#### مهيا ڪندڙ شامل ڪرڻ
+#### مهيا ڪندڙ شامل ڪرڻ {#adding-a-provider}
 
 1. نيٽ ورڪ admin ۾ **Ultimate Multisite → AI Connector** ڏانهن وڃو
 2. **مهيا ڪندڙ شامل ڪريو** تي ڪلڪ ڪريو
@@ -52,15 +52,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
    - **ڊفالٽ ماڊل** — هن مهيا ڪندڙ لاءِ ڊفالٽ طور استعمال ٿيڻ وارو ماڊل سڃاڻپ ڪندڙ (مثال طور `gpt-4o`، `mistral-small`)
 5. **سيٽنگون محفوظ ڪريو** تي ڪلڪ ڪريو
 
-#### مهيا ڪندڙ هٽائڻ
+#### مهيا ڪندڙ هٽائڻ {#removing-a-provider}
 
 ڪنهن به مهيا ڪندڙ ڪارڊ تي **هٽايو** بٽڻ تي ڪلڪ ڪري ان کي حذف ڪريو. تبديلي لاڳو ڪرڻ لاءِ سيٽنگون محفوظ ڪريو.
 
-#### مهيا ڪندڙن کي ٻيهر ترتيب ڏيڻ
+#### مهيا ڪندڙن کي ٻيهر ترتيب ڏيڻ {#reordering-providers}
 
 ڪنهن به مهيا ڪندڙ ڪارڊ جي کاٻي پاسي grip icon (⣿) کي ڇڪي ان کي ٻيهر ترتيب ڏيو. ترتيب fallback ترجيح طئي ڪري ٿي: درخواستون پهرين مهيا ڪندڙ ڏانهن موڪليون وڃن ٿيون ۽ جيڪڏهن درخواست ناڪام ٿئي ته پوءِ ايندڙ مهيا ڪندڙن ڏانهن fallback ٿين ٿيون.
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 جڏهن بنيادي مهيا ڪندڙ ڏانهن درخواست ناڪام ٿئي — timeout، rate limit، يا service outage سبب — connector خودڪار طور فهرست ۾ ايندڙ مهيا ڪندڙ سان ٻيهر ڪوشش ڪري ٿو. اهو فهرست ۾ هيٺ هلندو رهي ٿو جيستائين ڪو مهيا ڪندڙ ڪامياب ٿئي يا سڀ مهيا ڪندڙ آزمائجي وڃن.
 
@@ -72,7 +72,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 Fallback سڏيندڙ plugin يا theme لاءِ شفاف آهي — انهن کي يا ته ڪامياب جواب ملي ٿو يا آخري غلطي، قطع نظر ته ڪيترا مهيا ڪندڙ آزمايا ويا.
 
-### مهيا ڪندڙ جي ترتيب جو حوالو
+### مهيا ڪندڙ جي ترتيب جو حوالو {#provider-configuration-reference}
 
 | فيلڊ | گهربل | وضاحت |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Fallback سڏيندڙ plugin يا theme لاءِ شفاف آهي — انهن ک
 | API چاٻي | ها | هن مهيا ڪندڙ لاءِ تصديق واري چاٻي |
 | ڊفالٽ ماڊل | ها | جڏهن درخواست ۾ ڪو ماڊل بيان نه ڪيو وڃي ته استعمال ٿيندڙ ماڊل سڃاڻپ ڪندڙ |
 
-## مسئلا حل ڪرڻ
+## مسئلا حل ڪرڻ {#troubleshooting}
 
-### ڪو به مهيا ڪندڙ فهرست ۾ نه آهي
+### ڪو به مهيا ڪندڙ فهرست ۾ نه آهي {#no-providers-are-listed}
 
 جيڪڏهن محفوظ ڪرڻ کان پوءِ مهيا ڪندڙن جي فهرست خالي هجي، ته تصديق ڪريو ته:
 
@@ -91,21 +91,21 @@ Fallback سڏيندڙ plugin يا theme لاءِ شفاف آهي — انهن ک
 - توهان جي browser سيٽنگن واري صفحي کي محفوظ ٿيڻ کان نه روڪيو (JavaScript غلطين لاءِ browser console چيڪ ڪريو)
 - plugin فعال آهي ۽ توهان نيٽ ورڪ admin اسڪرين تي آهيو
 
-### سڀني مهيا ڪندڙن لاءِ درخواستون ناڪام ٿي رهيون آهن
+### سڀني مهيا ڪندڙن لاءِ درخواستون ناڪام ٿي رهيون آهن {#requests-are-failing-for-all-providers}
 
 - تصديق ڪريو ته هر مهيا ڪندڙ جو endpoint URL توهان جي server مان پهچ ۾ آهي (رڳو توهان جي browser مان نه)
 - چيڪ ڪريو ته هر API چاٻي صحيح آهي ۽ ختم نه ٿي آهي
 - انهن جي dashboard ۾ مهيا ڪندڙ جي rate-limit ۽ quota حالت جو جائزو وٺو
 - connector مان تفصيلي غلطي پيغام پڪڙڻ لاءِ WordPress debug logging (`WP_DEBUG_LOG`) فعال ڪريو
 
-### ڪو مهيا ڪندڙ fallback لاءِ استعمال نه ٿي رهيو آهي
+### ڪو مهيا ڪندڙ fallback لاءِ استعمال نه ٿي رهيو آهي {#a-provider-is-not-being-used-for-fallback}
 
 Drag-to-reorder fallback ترتيب تبديل ڪري ٿو. تصديق ڪريو ته جنهن مهيا ڪندڙ کي توهان fallback درخواستون حاصل ڪرڻ جي اميد رکو ٿا، اهو فهرست ۾ صحيح جاءِ تي آهي ۽ ان جو endpoint URL ۽ API چاٻي صحيح آهن.
 
-### نئون مهيا ڪندڙ ڪارڊ خودڪار طور نٿو کلي
+### نئون مهيا ڪندڙ ڪارڊ خودڪار طور نٿو کلي {#new-provider-card-does-not-expand-automatically}
 
 خودڪار کولڻ لاءِ توهان جي browser ۾ JavaScript فعال هجڻ ضروري آهي. جيڪڏهن ڪارڊ ڪلڪ ڪرڻ تي نه کلي، ته غلطين لاءِ browser console چيڪ ڪريو. ڪارڊ جو مواد هميشه ڪارڊ header تي ڪلڪ ڪري رسائي ۾ هوندو آهي، ڀلي auto-expand trigger نه ٿئي.
 
-## تبديلي لاگ
+## تبديلي لاگ {#changelog}
 
 مڪمل نسخي جي تاريخ لاءِ [تبديلي لاگ](./changelog) ڏسو.

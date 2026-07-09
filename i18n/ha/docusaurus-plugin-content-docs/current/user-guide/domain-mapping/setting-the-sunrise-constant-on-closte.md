@@ -3,13 +3,13 @@ title: Sanya ƙaramin ƙaramin Rana a Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Shiga constant-yi a gaskiya a Closte
+# Shiga constant-yi a gaskiya a Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Wasu wasu na masu gudanar da sabon wurare (host providers) suna ƙona fayil <code>wp-config.php</code> don tsaro. Wannan yana nufin Ultimate Multisite ba zai iya gyara wannan fayil ne kai tsaye don shigar da ƙa'idodin da ake bukata don samar da haske na domain (domain mapping) da wasu ƙarin ƙwarewa su ya yi aiki. Closte ɗaya daga cikin waɗannan masu gudanarwa ne.
 
 Dukansu, Closte yana ba hanyar shigar da ƙa'idodin (constants) zuwa <code>wp-config.php</code> cikin kyakkyawan tsaro. Ka bi matakan da ke a kan nan:
 
-## A kan dashboard na Closte
+## A kan dashboard na Closte {#on-the-closte-dashboard}
 
 Farko, [ka shiga asusunka na Closte](https://app.closte.com/), ka danna menunya na Sites, sannan ka danna link ɗin Dashboard a wurin wajen da kake aiki a yanzu:
 

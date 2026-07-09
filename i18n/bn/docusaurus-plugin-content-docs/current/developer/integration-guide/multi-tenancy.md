@@ -3,11 +3,11 @@ title: মাল্টি-টেন্যান্সি সমন্বয়
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy ইন্টিগ্রেশন
+# Multi-Tenancy ইন্টিগ্রেশন {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 সার্বভৌম টেন্যান্ট, মাইগ্রেশন যাচাই এবং টেন্যান্ট লাইফসাইকেল অটোমেশনের জন্য কয়েকটি ইন্টিগ্রেশন টাচপয়েন্ট পরিবর্তন করে।
 
-## টেন্যান্ট বুটস্ট্র্যাপ প্রবাহ
+## টেন্যান্ট বুটস্ট্র্যাপ প্রবাহ {#tenant-bootstrap-flow}
 
 যে ইন্টিগ্রেশনগুলো টেন্যান্ট তৈরি বা পরিবর্তন করে, সেগুলোর এই ক্রম অনুসরণ করা উচিত:
 
@@ -20,13 +20,13 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 সার্বভৌম টেন্য
 
 ধরে নেবেন না যে একটি সার্বভৌম টেন্যান্ট নেটওয়ার্ক ডাটাবেস সংযোগ পুনরায় ব্যবহার করতে পারে। addon-প্রদত্ত টেন্যান্ট রেজিস্ট্রি এবং writer abstraction ব্যবহার করুন।
 
-## SSO এবং REST hook
+## SSO এবং REST hook {#sso-and-rest-hooks}
 
 স্টেটলেস টেন্যান্ট autologin স্বল্পমেয়াদি token ব্যবহার করে, যার মধ্যে purpose claim, JTI replay protection, expiry cap এবং origin pinning থাকে। যে ইন্টিগ্রেশনগুলো লগইন বাটন বা রিমোট ম্যানেজমেন্ট লিংক যোগ করে, তাদের সরাসরি টেন্যান্ট লগইন URL বানানোর বদলে সমর্থিত SSO প্রবাহের মাধ্যমে টেন্যান্ট ভিজিট তৈরি করা উচিত।
 
 সার্বভৌম টেন্যান্ট gateway-এর জন্য নেটওয়ার্ক-পক্ষের API audit event এবং দৈনিক সারাংশ উপলভ্য। টেন্যান্ট লাইফসাইকেল endpoint-এ কল করা বাহ্যিক সিস্টেম ডিবাগ করার সময় এই লগগুলো ব্যবহার করুন।
 
-## সার্বভৌম গ্রাহক অ্যাকশন URL
+## সার্বভৌম গ্রাহক অ্যাকশন URL {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 সার্বভৌম-টেন্যান্ট গ্রাহক অ্যাকশনগুলোকে Account, checkout, billing, invoice, site, template-switching এবং domain-mapping প্রবাহের জন্য মূল সাইটে ফিরিয়ে রাউট করে। যে ইন্টিগ্রেশনগুলো টেন্যান্ট-পক্ষের ম্যানেজমেন্ট লিংক রেন্ডার করে, তাদের সেই অ্যাকশনগুলো মূল-সাইট গ্রাহক প্যানেলের দিকে নির্দেশ করা উচিত এবং অ্যাকশন শেষ করার পর ব্যবহারকারী যেন টেন্যান্টে ফিরে যেতে পারে, সে ক্ষেত্রে একটি যাচাইকৃত return target অন্তর্ভুক্ত করা উচিত।
 
@@ -40,7 +40,7 @@ $url = wu_with_sso($main_site_customer_url);
 
 সার্বভৌম টেন্যান্টের ভেতরে membership, invoice, billing-address, template বা domain-management state নকল করবেন না। টেন্যান্ট Dashboard-কে launcher হিসেবে এবং মূল-সাইট গ্রাহক প্যানেলকে পরিচালিত অ্যাকশনের system of record হিসেবে বিবেচনা করুন।
 
-## মাইগ্রেশন যাচাই
+## মাইগ্রেশন যাচাই {#migration-verification}
 
 কোনো মাইগ্রেশন বা লাইফসাইকেল ইন্টিগ্রেশন টেন্যান্ট ডাটা পরিবর্তন করার পর verification gate চালান:
 
@@ -49,10 +49,10 @@ $url = wu_with_sso($main_site_customer_url);
 
 ইন্টিগ্রেশনগুলোর উচিত ব্যর্থ যাচাইকে deployment blocker হিসেবে বিবেচনা করা এবং ব্যর্থতা সমাধান না হওয়া পর্যন্ত টেন্যান্টকে live হিসেবে চিহ্নিত না করা।
 
-## টেন্যান্ট মুছে ফেলা
+## টেন্যান্ট মুছে ফেলা {#tenant-deletion}
 
 Deletion flow-গুলোতে addon teardown path কল করা উচিত, যাতে টেন্যান্ট ডাটাবেস credential পরিষ্কার করা হয়। Teardown সফল হওয়ার পর বাহ্যিক ইন্টিগ্রেশন provider resource সরাতে পারে, কিন্তু verification বা async push job এখনও চলতে থাকলে host database বা folder মুছে ফেলা উচিত নয়।
 
-## অবচয়িত ডাটাবেস router
+## অবচয়িত ডাটাবেস router {#deprecated-database-router}
 
 পুরনো `Database_Router` একটি deprecation stub দিয়ে প্রতিস্থাপিত হয়েছে। নতুন ইন্টিগ্রেশনগুলোর উচিত পুরনো router class-এর ওপর নির্ভর না করে বর্তমান সাইট router এবং টেন্যান্ট registry API-এর মাধ্যমে টেন্যান্ট নির্ধারণ করা।

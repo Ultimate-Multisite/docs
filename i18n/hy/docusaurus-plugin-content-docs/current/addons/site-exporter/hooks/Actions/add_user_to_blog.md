@@ -4,11 +4,11 @@ title: Գործողություն - ավելացնել օգտատիրոջը բլ
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Գործողություն՝ add_user_to_blog
+# Գործողություն՝ add_user_to_blog {#action-addusertoblog}
 
 Գործարկվում է անմիջապես այն բանից հետո, երբ օգտատերը ավելացվում է կայքին։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 | $role | `string` | Օգտատիրոջ դերը։ |
 | $blog_id | `int` | Բլոգի ID։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - MU: MU
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174)-ում՝ 174-րդ տողում։

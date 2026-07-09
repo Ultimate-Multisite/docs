@@ -3,11 +3,11 @@ title: Pielāgotas vārtejas izstrāde
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pielāgotas maksājumu vārtejas izstrāde
+# Pielāgotas maksājumu vārtejas izstrāde {#custom-gateway-development}
 
 Varat izveidot pielāgotas maksājumu vārtejas, paplašinot `Base_Gateway` klasi.
 
-## Vārtejas klase
+## Vārtejas klase {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Reģistrēt vārteju
+## Reģistrēt vārteju {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Galvenās metodes
+## Galvenās metodes {#key-methods}
 
 | Metode | Mērķis |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Apstrādāt atmaksas pieprasījumus |
 | `get_payment_methods()` | Atgriezt saglabātās maksājumu metodes klientam |
 
-## Atjaunošanas akreditācijas dati periodiskām dalībām
+## Atjaunošanas akreditācijas dati periodiskām dalībām {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ļauj vārtejas integrācijām ziņot, vai periodiskai dalībai ir atkārtoti izmantojami atjaunošanas akreditācijas dati, pirms tiek saglabāts `auto_renew`. Piesaistiet `wu_membership_has_renewal_credential` un atgrieziet:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Notīriet trūkstošu akreditācijas datu marķieri kā daļu no jūsu vārtejas veiksmīgas atkārtotas autorizācijas plūsmas pēc tam, kad ir saglabāti jauni atkārtoti izmantojami akreditācijas dati.
 
-## Padomi
+## Padomi {#tips}
 
 - Kļūmes gadījumā vienmēr atgrieziet `WP_Error`, lai Ultimate Multisite varētu apstrādāt kļūdas attēlošanu
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Izmantojiet `wu_log_add()` vārtejai specifiskai žurnalēšanai
 
-## AI savienotāja nodrošinātāja iespējas
+## AI savienotāja nodrošinātāja iespējas {#ai-connector-provider-capabilities}
 
 Pielāgotām integrācijām, kas izsauc AI savienotāja nodrošinātas darbības, jābūt saskaņotām ar atbalstīto OAuth nodrošinātāju kopu, kas ieviesta ar AI Provider for Anthropic Max v1.3.0:
 

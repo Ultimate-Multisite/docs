@@ -3,7 +3,7 @@ title: Jurnal de modificări pentru integrarea WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Jurnal de modificări pentru integrarea WooCommerce
+# Jurnal de modificări pentru integrarea WooCommerce {#woocommerce-integration-changelog}
 
 Versiunea 2.2.0 - Lansată pe 2026-07-01
 * Nou: Sumele taxelor Ultimate Multisite apar acum ca linii de taxe WooCommerce separate la checkout, făcând totalurile taxelor mai clare înainte de plată.

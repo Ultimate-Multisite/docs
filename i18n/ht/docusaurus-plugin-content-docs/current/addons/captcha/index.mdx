@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Sispann Bot yo. Pwoteje Revni. Zewo Traka Konfigirasyon.**
 
@@ -15,7 +15,7 @@ W ap jere yon rezo plizyè sit ak domèn pèsonalize? Ou konnen doulè a: Google
 
 **Ultimate Multisite: Captcha chanje tout bagay.**
 
-## Cap Captcha: Pwoteksyon Self-Hosted Ki Jis Mache
+## Cap Captcha: Pwoteksyon Self-Hosted Ki Jis Mache {#cap-captcha-self-hosted-protection-that-just-works}
 
 Nouvo founisè **Cap Captcha** nou an se yon gwo chanjman pou rezo plizyè sit yo:
 
@@ -25,7 +25,7 @@ Nouvo founisè **Cap Captcha** nou an se yon gwo chanjman pou rezo plizyè sit y
 * **Prèv Travay Envizib** — Itilizatè yo rezoud yon devinèt enfòmatik an aryè-plan. Pa gen klike sou bouch ensandi, pa gen griy imaj ki fristre moun.
 * **Lejè** — Sèlman 20KB. Li p ap ralanti checkout ou.
 
-## Pwoteksyon Kont Tès Kat WooCommerce
+## Pwoteksyon Kont Tès Kat WooCommerce {#woocommerce-card-testing-protection}
 
 Atak tès kat koute machann yo plizyè milya chak ane. Fwodè yo itilize bot pou valide kat kredi yo vòlè sou checkout WooCommerce ou—ou peye frè pwosesis yo, yo jwenn nimewo kat ki valid.
 
@@ -35,7 +35,7 @@ Atak tès kat koute machann yo plizyè milya chak ane. Fwodè yo itilize bot pou
 * **Konpatib ak PayPal Payments** — Mache san pwoblèm ak WooCommerce PayPal Payments
 * **Estatistik An Tan Reyèl** — Wè egzakteman konbyen atak w ap bloke
 
-## Ou Toujou Bezwen Google reCAPTCHA oswa hCaptcha?
+## Ou Toujou Bezwen Google reCAPTCHA oswa hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
 
 Nou gen sa ou bezwen. Sipò konplè pou:
 
@@ -47,14 +47,14 @@ Nou gen sa ou bezwen. Sipò konplè pou:
 
 Chanje ant founisè yo nenpòt lè nan paramèt rezo ou.
 
-## Bati pou Echèl
+## Bati pou Echèl {#built-for-scale}
 
 * Paramèt pou tout rezo a ak ranplasman pou chak sit
 * Dashboard estatistik pou siveye pwoteksyon
 * Nivo sekirite ajistab (Rapid, Mwayen, Maksimòm)
 * Zanmitay pou devlopè ak achitekti founisè ki ka elaji
 
-## Enstalasyon
+## Enstalasyon {#installation}
 
 1. Telechaje `ultimate-multisite-captcha` nan repètwa `/wp-content/plugins/` ou
 2. Aktive plugin nan sou rezo a
@@ -64,37 +64,37 @@ Cap Captcha aktive otomatikman—pa gen paramèt pou konfigire, pa gen API keys 
 
 **Opsyonèl:** Pou itilize Google reCAPTCHA oswa hCaptcha pito, ale nan **Ultimate Multisite → Settings → Captcha** epi chwazi founisè ou prefere a.
 
-## Kesyon Yo Poze Souvan
+## Kesyon Yo Poze Souvan {#frequently-asked-questions}
 
-## Èske mwen bezwen konfigire anyen?
+## Èske mwen bezwen konfigire anyen? {#do-i-need-to-configure-anything}
 
 Non! Cap Captcha aktive otomatikman lè ou aktive addon an. Tout rezo ou a pwoteje imedyatman—pa gen paramèt pou konfigire, pa gen API keys pou antre.
 
-## Èske mwen bezwen API keys pou Cap Captcha?
+## Èske mwen bezwen API keys pou Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
 
 Non. Cap Captcha konplètman self-hosted. Pa gen kont ekstèn, pa gen anrejistreman domèn, pa gen tètchaje konfigirasyon.
 
-## Èske sa ap ralanti checkout mwen?
+## Èske sa ap ralanti checkout mwen? {#will-this-slow-down-my-checkout}
 
 Cap Captcha gen sèlman 20KB epi li lanse defi prèv travay an aryè-plan. Kliyan ou yo p ap remake okenn reta.
 
-## Èske sa pwoteje kont atak tès kat?
+## Èske sa pwoteje kont atak tès kat? {#does-this-protect-against-card-testing-attacks}
 
 Wi! Kontrèman ak captcha tradisyonèl ki sèlman pwoteje fòm HTML, entegrasyon WooCommerce nou an konekte dirèkteman nan Store API pou bloke atak bot nan nivo API a—kote pifò atak tès kat rive.
 
-## Èske mwen ka itilize diferan founisè captcha sou diferan sit?
+## Èske mwen ka itilize diferan founisè captcha sou diferan sit? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Founisè captcha a fikse pou tout rezo a, men ou ka ajiste paramèt difikilte yo selon bezwen ou.
 
-## Èske sa konfòm ak GDPR?
+## Èske sa konfòm ak GDPR? {#is-this-gdpr-compliant}
 
 Cap Captcha se 100% self-hosted san okenn done pa voye bay sèvis ekstèn. Pou Google reCAPTCHA ak hCaptcha, tanpri revize règleman konfidansyalite respektif yo.
 
-## Limitasyon To
+## Limitasyon To {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 prezante yon limiteur to ki kanpe nèt pou pwoteje rezo ou kont atak brute-force ak card-testing.
 
-### Kijan Li Mache
+### Kijan Li Mache {#how-it-works}
 
 Limiteur to a konte chak demann GET ak POST sou sifas ki pwoteje ak captcha:
 
@@ -108,9 +108,9 @@ Lè yon vizitè depase limit to a, plugin nan reponn ak:
 * Header **Retry-After** ki endike kilè pou eseye ankò
 * **Dòmi tarpit owaza** (1–5 segonn pa defo, ak limit di nan 15 segonn) pou ralanti atakan yo
 
-### Konfigirasyon
+### Konfigirasyon {#configuration}
 
-#### Distribisyon Tarpit
+#### Distribisyon Tarpit {#tarpit-timing}
 
 Kontwole reta owaza ki aplike sou demann ki limite pa to:
 
@@ -119,9 +119,9 @@ Kontwole reta owaza ki aplike sou demann ki limite pa to:
 
 Paramèt sa yo disponib nan **Ultimate Multisite → Settings → Captcha**.
 
-### Kapasite pou Elaji
+### Kapasite pou Elaji {#extensibility}
 
-#### Filtè Lis Blan IP
+#### Filtè Lis Blan IP {#ip-whitelist-filter}
 
 Egzante seri IP ou fè konfyans yo de limitasyon to:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Aksyon Anvan Blokaj
+#### Aksyon Anvan Blokaj {#pre-block-action}
 
 Egzekite lojik pèsonalize imedyatman anvan yo voye yon blokaj limit to:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Deteksyon IP Client & Proxy Ou Fè Konfyans
+## Deteksyon IP Client & Proxy Ou Fè Konfyans {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 prezante deteksyon IP client ki rezistan kont fo idantite. Metòd `Captcha_Core::get_client_ip()` la kounye a se sèl sous verite pou atribisyon IP vizitè atravè:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 prezante deteksyon IP client ki rezistan kont
 * Founisè Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Ach IP estatistik yo
 
-### Modèl Konfyans
+### Modèl Konfyans {#trust-model}
 
 plugin nan aplike yon yerachi konfyans IP ki strik:
 
@@ -166,9 +166,9 @@ plugin nan aplike yon yerachi konfyans IP ki strik:
    - Kanmarad imedya a nan lis proxy ou fè konfyans ou te konfigire nan admin nan
    - Header la analize soti adwat pou ale agoch, pandan li sote etap proxy/Cloudflare ki fè konfyans yo
 
-### Konfigirasyon
+### Konfigirasyon {#configuration-1}
 
-#### Konfyans Header Cloudflare
+#### Konfyans Header Cloudflare {#cloudflare-header-trust}
 
 Aktive konfyans pou header `CF-Connecting-IP` Cloudflare la:
 
@@ -178,7 +178,7 @@ Aktive konfyans pou header `CF-Connecting-IP` Cloudflare la:
   - Seri CIDR yo rafrechi chak semèn atravè wp-cron
   - Yo itilize fallback ki enkli a si rafrechisman an echwe
 
-#### Konfigirasyon Proxy ki Fè Konfyans
+#### Konfigirasyon Proxy ki Fè Konfyans {#trusted-proxy-configuration}
 
 Defini proxy premye liy ou yo ak load-balancers ou yo:
 
@@ -194,14 +194,14 @@ Defini proxy premye liy ou yo ak load-balancers ou yo:
     198.51.100.50
     ```
 
-#### Deteksyon Otomatik Lè Aktive Premye Fwa
+#### Deteksyon Otomatik Lè Aktive Premye Fwa {#first-enable-auto-detection}
 
 Lè ou aktive limitè pousantaj la pou premye fwa, plugin nan detekte pozisyon Cloudflare ak proxy ou gen plis chans genyen an epi li montre yon avi admin "Aplike paramèt yo detekte yo" ak yon sèl klik.
 
 * plugin nan **pa janm ranplase** valè ou te sove yo
 * Si trafik ki vin apre montre config ou a pa koresponn ak reyalite ankò (pa egzanp, Cloudflare te chanje seri CIDR yo), yon avi dezakò ki pa ka retire ap parèt ak mizajou yo rekòmande a
 
-### Poukisa Sa Enpòtan
+### Poukisa Sa Enpòtan {#why-this-matters}
 
 Yon modèl konfyans IP ki strik fèmen yon vektè fo idantite kritik: demann dirèk sou sèvè orijin ki pote yon header `CF-Connecting-IP` fo ta deja klase nan bokit dapre IP fo a olye de kanmarad reyèl la. Sa espesyalman enpòtan pou:
 

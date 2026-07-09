@@ -3,7 +3,7 @@ title: Cuplikan Kode
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Cuplikan Kode kanggo v2
+# Cuplikan Kode kanggo v2 {#code-snippets-for-v2}
 
 Intine, cuplikan kode kanggo **WordPress** iku digunakake kanggo nindakake tumindak tartamtu sing biasane butuh plugin cilik dhewe. Cuplikan kode kaya ngene iki ditempatake ing salah siji file inti WordPress utawa tema (biasane file functions.php saka tema sampeyan) utawa bisa uga dienggo minangka MU plugin.
 
@@ -15,7 +15,7 @@ Ing artikel iki kita bakal nunjukake telung cuplikan kode sing bisa digunakake k
 
   * [**Ngarap masalah CORS karo Font-Icons ing domain sing dipetakan**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Ngubah posisi item menu Account
+## Ngubah posisi item menu Account {#changing-the-position-of-the-account-menu-item}
 
 Kanggo ngubah posisi item menu Account ing Dashboard klienmu, cukup tambahkan cuplikan kode iki menyang file functions.php saka tema utama situsmu sing aktif. Sampeyan uga bisa nempatake cuplikan kasebut ing salah siji mu-plugin utawa custom plugin sampeyan.
 
@@ -37,8 +37,8 @@ Cathet yen pengguna mung bisa langganan **Paket** (_Plan_), ora bisa Paket utawa
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Nggolek Solusi Masalah CORS karo Font-Icons ing domain sing dipetakan
-## Nggolek Solusi Masalah CORS karo Font-Icons ing domain sing dipetakan
+## Nggolek Solusi Masalah CORS karo Font-Icons ing domain sing dipetakan {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Nggolek Solusi Masalah CORS karo Font-Icons ing domain sing dipetakan {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Sawise maperang domain menyang sub-site, sampeyan bisa nemokake yen situs kasebut angel muat font khusus. Iku disebabkan oleh blok lintas-asal (_cross-origin block_) ing pengaturan server sampeyan.
 
@@ -46,13 +46,13 @@ Amarga file font hampir selalu dimuat langsung saka CSS, plugin pemetaan domain 
 
 Kanggo kanggo ngatasi masalah iki kanggo Apache lan NGINX. Perubahan iki butuh ilmu sing luwih jero babagan file konfigurasi server (.htaccess lan file config NGINX). Yen sampeyan ora nyaman nggawe perubahan kasebut dhewe, kirim wae halaman iki menyang agen dukungan penyedia hosting nalika butuh bantuan.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Ing file .htaccess sampeyan, tambahkan:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Ing file config server (lokasine beda saka server menyang server), tambahkan:
 

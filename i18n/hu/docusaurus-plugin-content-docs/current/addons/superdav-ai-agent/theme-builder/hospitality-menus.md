@@ -3,15 +3,15 @@ title: Vendéglátó Menüpontok
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Étteremmenük
+# Étteremmenük {#hospitality-menus}
 
 A **Hospitality Menus** funkciója lehetővé teszi a Theme Builder számára, hogy strukturált élelmiszer- és italmenüoldalakat generáljon és beépítsen közvetlenül a WordPress weboldalára.
 
-## Áttekintő
+## Áttekintő {#overview}
 
 A Theme Builder most professzionális, strukturált menüoldalakat hoz létre az étyszolgáltatások számára, beleértve a restaurációkat, kávézókat, bárókat és katering szolgáltatásokat. Ezek a menük teljesen összehangoltak a weboldalának dizájnjához, és könnyedén frissíthetők és kezelhetők.
 
-## Támogatott Étyszolgáltatási Típusok
+## Támogatott Étyszolgáltatási Típusok {#supported-hospitality-types}
 
 - **Restaurációk** — teljes körű étkezési menük
 - **Kávézók** — kávé és könnyű étel menük
@@ -21,9 +21,9 @@ A Theme Builder most professzionális, strukturált menüoldalakat hoz létre az
 - **Food Truck-ok** — mozgó étel szolgáltatás menük
 - **Bárók és Borraktárak** — italmenük leírással
 
-## Menüstruktúra
+## Menüstruktúra {#menu-structure}
 
-### Menükategóriák
+### Menükategóriák {#menu-categories}
 
 A menüket kategóriákba rendezzük:
 
@@ -34,7 +34,7 @@ A menüket kategóriákba rendezzük:
 - **Italok** — italok (alkoholos és nem alkoholos)
 - **Specials** — napi vagy szezonális ajánlatok
 
-### Menüelem Formátuma
+### Menüelem Formátuma {#menu-item-format}
 
 Minden menüelem tartalmazza:
 
@@ -49,7 +49,7 @@ Minden menüelem tartalmazza:
 }
 ```
 
-#### Elemmezők
+#### Elemmezők {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Minden menüelem tartalmazza:
 | `allergens` | array | Gyakori allerének (Nagyökerek, Tepcsőzet, stb.) |
 | `availability` | string | Mikor elérhető (Napi, Szezonális, stb.) |
 
-## Étyszolgáltatási Menüek Létrehozása
+## Étyszolgáltatási Menüek Létrehozása {#creating-hospitality-menus}
 
-### 1. Lépés: Adja meg a menü információit
+### 1. Lépés: Adja meg a menü információit {#step-1-provide-menu-information}
 
 Tudassa el a Theme Builder-től a menüjéről:
 
@@ -71,7 +71,7 @@ Létrehoz egy olasz étteremmenüt előételekkel,
 tésztaételekkel, főételekkel és desszertekkel. Tartalmazza az árakat és leírásokat.
 ```
 
-### 2. Lépés: A Theme Builder generálja a menüt
+### 2. Lépés: A Theme Builder generálja a menüt {#step-2-theme-builder-generates-menu}
 
 A Theme Builder:
 
@@ -81,7 +81,7 @@ A Theme Builder:
 4. Formázza az árakat és leírásokat
 5. Ad hozzá diétás és allergenergiás információkat
 
-### 3. Lépés: Felülvizsgálat és Testre szabás
+### 3. Lépés: Felülvizsgálat és Testre szabás {#step-3-review-and-customize}
 
 Ezzel tudja:
 
@@ -91,9 +91,9 @@ Ezzel tudja:
 4. Frissíteni a leírásokat és a diétás információkat
 5. Beállítani a stílust és a felépítést
 
-## Menü Megjelenítési Opciók
+## Menü Megjelenítési Opciók {#menu-display-options}
 
-### Teljes Menüoldal
+### Teljes Menüoldal {#full-menu-page}
 
 Egy dedikált oldal, amely a teljes menüjét mutatja:
 
@@ -102,7 +102,7 @@ Egy dedikált oldal, amely a teljes menüjét mutatja:
 - Nyomtatásra alkalmas felépítés
 - Mobilra optimalizált dizájn
 
-### Menü Widget
+### Menü Widget {#menu-widget}
 
 Beépíthet menüszekciókat más oldalakra:
 
@@ -111,7 +111,7 @@ Beépíthet menüszekciókat más oldalakra:
 - Italmenü a bároldalon
 - Dessert kiállítás a láblécben
 
-### Menü PDF
+### Menü PDF {#menu-pdf}
 
 Generálható letölthető PDF menü:
 
@@ -120,9 +120,9 @@ Generálható letölthető PDF menü:
 - Tartalmaz képeket és leírásokat
 - Könnyen megosztható és elküldhető e-mailben
 
-## Diétás és Allergenergiás Információk
+## Diétás és Allergenergiás Információk {#dietary-and-allergen-information}
 
-### Diétás Attribútumok
+### Diétás Attribútumok {#dietary-attributes}
 
 Markolja jelölésen az elemeket diétás információkkal:
 
@@ -134,7 +134,7 @@ Markolja jelölésen az elemeket diétás információkkal:
 - **Alacsony szénhidrát tartalmú** — csökkentált szénhidrát tartalommal
 - **Magas fehérjetartalmú** — fehérjetípusú
 
-### Allergenergiás Figyelem
+### Allergenergiás Figyelem {#allergen-warnings}
 
 Tartalmazza a gyakori allerének:
 
@@ -147,9 +147,9 @@ Tartalmazza a gyakori allerének:
 - **Glutén** —小麦 és gluténmentes gabonák
 - **Mogyoró** — mogyorómag és olaj
 
-## Menőkezelés
+## Menőkezelés {#menu-management}
 
-### Árak Frissítése
+### Árak Frissítése {#updating-prices}
 
 Könnyen frissíthető a menüárak:
 
@@ -159,7 +159,7 @@ Könnyen frissíthető a menüárak:
 4. Mentse a változásokat
 5. A változások azonnal megjelennek a weboldalán
 
-### Szezonális Elemek Hozzáadása
+### Szezonális Elemek Hozzáadása {#adding-seasonal-items}
 
 Létrehozható szezonális menüvariációk:
 
@@ -169,7 +169,7 @@ Létrehozható szezonális menüvariációk:
 4. Programozza be az elérhetőségi dátumokat
 5. Automatikusan megjelenik a szezon alatt
 
-### Specials Kezelése
+### Specials Kezelése {#managing-specials}
 
 Napi vagy heti ajánlatok megjelenítése:
 
@@ -179,7 +179,7 @@ Napi vagy heti ajánlatok megjelenítése:
 4. Frissíteni napi vagy heti
 5. Archiválja az elavult ajánlatokat
 
-## Integráció a Theme Builder-rel
+## Integráció a Theme Builder-rel {#integration-with-theme-builder}
 
 Ha a Theme Builder-t használja étyszolgáltatási weboldalakhoz:
 
@@ -189,9 +189,9 @@ Ha a Theme Builder-t használja étyszolgáltatási weboldalakhoz:
 4. **Mobil optimalizálás** — a menük szépnek mutatnak a telefonokon
 5. **SEO optimalizálás** — a menük keresőmotor-barátok
 
-## Jó Gyakorlatok
+## Jó Gyakorlatok {#best-practices}
 
-### Menü Dizájnja
+### Menü Dizájnja {#menu-design}
 
 - **Tiszta szerkezet** — logikus kategóriastruktúra
 - **Olvasható leírások** — iştkhagyó és tájékoztató
@@ -199,7 +199,7 @@ Ha a Theme Builder-t használja étyszolgáltatási weboldalakhoz:
 - **Professzionális képek** — magas minőségű élelmiszerképek
 - **Fehér tér** — ne túláldozza a lapot
 
-### Tartalom
+### Tartalom {#content}
 
 - **Pontos leírások** — pontosan írja le az elemeket
 - **Kiemelt ajánlatok** — emelje ki az ajánlatokat
@@ -207,7 +207,7 @@ Ha a Theme Builder-t használja étyszolgáltatási weboldalakhoz:
 - **Rendszeres frissítés** — tartsa aktuálisak az árakat és az elemeket
 - **Iştkhagyó nyelvhasználat** — tegye ki az elemeket finomnak
 
-### Elérhetőség
+### Elérhetőség {#accessibility}
 
 - **Olvasható betűtípusok** — használjon világos, könnyen olvasható betűtípusokat
 - **Elég kontraszt** — biztosítsa, hogy a szöveg olvasható legyen
@@ -215,9 +215,9 @@ Ha a Theme Builder-t használja étyszolgáltatási weboldalakhoz:
 - **Allergenergiás figyelmeztetések** — emelkedően láthatóan jelenítse meg az allergenergeket
 - **Mobilbarát** — tesztelje minden eszközön
 
-## Péletek
+## Péletek {#examples}
 
-### Étteremmenü Struktúra
+### Étteremmenü Struktúra {#restaurant-menu-structure}
 
 ```
 Előétel
@@ -241,7 +241,7 @@ Dessert
 └── Gelato Selection
 ```
 
-### Kávézók Menü Struktúra
+### Kávézók Menü Struktúra {#cafe-menu-structure}
 
 ```
 Kávé
@@ -260,7 +260,7 @@ Szendvicsek
 └── Vegetarian Wrap
 ```
 
-## Kapcsolódó Funkciók
+## Kapcsolódó Funkciók {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — navigációs menüek létrehozása
 - [Design Direction](./design-direction.md) — a weboldal dizájnának testre szabása

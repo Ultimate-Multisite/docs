@@ -3,11 +3,11 @@ title: Menaxhimi i email-eve të sistemit
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Menaxhimi i Email-eve të Sistemit
+# Menaxhimi i Email-eve të Sistemit {#managing-system-emails}
 
 Ultimate Multisite dërgon disa email-e sistemore për ngjarje si konfirmimet e regjistrimit, marrjet e pagesave dhe ndryshimet e anëtarëve. Mund t'i personalizosh këto template email duke i përshtatur me markën tuaj.
 
-## Shikimi i Email-eve të Sistemit
+## Shikimi i Email-eve të Sistemit {#viewing-system-emails}
 
 Shkoni te **Ultimate Multisite → Settings** dhe klikoni te tabu **Emails** për të parë cilësimet që lidhen me emaile.
 
@@ -21,7 +21,7 @@ Ndonjëherë mund të redaktoni shabllone specifike të emaileve duke përdorur 
 
 ![Editor i emailit sistemit](/img/admin/system-email-editor.png)
 
-## Importimi i Templateve të Ri të Emailit
+## Importimi i Templateve të Ri të Emailit {#importing-new-email-templates}
 
 Për të shtuar një template të ri për email, ndiq këto hapa:
 
@@ -41,7 +41,7 @@ Për të importuar template të ri të email:
 3. Aktivizo opsionin **Import Emails** për të parë shabllonet e disponueshme.
 4. Zgjidh shabllonat që dëshiron të importosh dhe konfirmo.
 
-## Ristim i Shablloneve të Email-eve
+## Ristim i Shablloneve të Email-eve {#resetting-email-templates}
 
 Nëse keni personalizuar një shablon email dhe dëshironi të ktheheni tek përmbajtja e parë (default), keni dy opsione:
 

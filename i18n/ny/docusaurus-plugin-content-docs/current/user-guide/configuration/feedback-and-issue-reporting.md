@@ -3,11 +3,11 @@ title: Chikwera ya Mwana wa M'moyo ndi Kufotokozera Nkhani za M'moyo
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kufumbutso ndi Kufotokoza Masomo (Customer Feedback & Issue Reporting)
+# Kufumbutso ndi Kufotokoza Masomo (Customer Feedback & Issue Reporting) {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 imaperekera monga system ya kufotokoza masomo ndi kupotsa mato (feedback and issue reporting) yomwe imaphatikizira anthu omwe ali ndi mfundo kuti apotsere mavuto ndi kuteteza zinthu zomwe si zofunika, ndipo imapotsa mavuto monga momwe muli m'chat interface. System imeneyi imapambana ndi ulamulira (consent management), komando la kupotsa lomaliza bwino (automated reporting command), ndi kukhazikitsa kwa AI pa backend.
 
-## Button ya Kupotsa (Thumbs-Down Button)
+## Button ya Kupotsa (Thumbs-Down Button) {#thumbs-down-button}
 
 Msonkhoto aliyense limene AI assistant imapereka limapereka button ya **thumbs-down** (👎). Pamene muntu amapereka, akhoza kupotsa msonkhoto monga si zofunika kapena si woyenera.
 
@@ -15,7 +15,7 @@ Msonkhoto aliyense limene AI assistant imapereka limapereka button ya **thumbs-d
 - Pamene amapereka, imaphatikizira **Feedback Consent Modal**.
 - Kufotokoza lili lomwe limaperekedwa ndi m'conversation thread ndipo msonkhoto woyenera.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Pamene muntu amapereka button ya thumbs-down, modal ya ulamulira imaperekedwa pansi pa kulimbikitsa data. Modal imeneyi:
 
@@ -26,13 +26,13 @@ Pamene muntu amapereka button ya thumbs-down, modal ya ulamulira imaperekedwa pa
 
 Sikuperekedwa kufotokoza mpaka muntu amakumbutsa woyenera bwino.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Pansi pa m'conversation, assistant imapangidwa kuti ipereke **auto-prompt feedback banner** — ndi message yomwe si yofunika yomwe imapangidwa kuti kodi session imeneyi iliyonseza.
 
 Banner imeneyi imaperekedwa monga momwezi m'conversation imapereka ndi kuyenera (heuristics). Imaphatikizira ku msonkhoto woyenera wosonyeza pansi pa button ya thumbs-down. Anthu amakhoza kulimbikitsa banner imeneyi pamene si yofotokoza kufotokoza.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Anthu amakhoza kuperekera flow ya feedback monga momwezi m'chat input imapereka `/report-issue`. Komando imeneyi:
 
@@ -42,7 +42,7 @@ Anthu amakhoza kuperekera flow ya feedback monga momwezi m'chat input imapereka 
 
 Amri `/report-issue` inapatikana katika mitindo yote ya picha (inline, floating widget, full-screen).
 
-## AI-Assisted Triage (Usimamizi wa Awali unaosaidiawa na AI)
+## AI-Assisted Triage (Usimamizi wa Awali unaosaidiawa na AI) {#ai-assisted-triage}
 
 Feedback iliyowasilishwa inatolewa kwenye kiwango cha usimamizi wa awali (triage layer) kinachofanya yafuatayo:
 

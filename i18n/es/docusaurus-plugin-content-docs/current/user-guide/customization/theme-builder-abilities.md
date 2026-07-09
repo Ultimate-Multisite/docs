@@ -3,18 +3,18 @@ title: Habilidades del Constructor de Temas
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacidades del Constructor de Temas: Estructurar y Activar Temas de Bloques
+# Capacidades del Constructor de Temas: Estructurar y Activar Temas de Bloques {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introduce dos potentes capacidades que te permiten generar y desplegar temas de bloques personalizados directamente desde la interfaz de chat.
 
-## Resumen
+## Resumen {#overview}
 
 Las capacidades **scaffold-block-theme** y **activate-theme** permiten a los agentes:
 - Generar temas de bloques completos y listos para producción basados en tus especificaciones
 - Activar temas automáticamente en tu sitio sin intervención manual
 - Crear identidades visuales coherentes a través de decisiones de diseño guiadas
 
-## Estructurar Tema de Bloques (Scaffold Block Theme)
+## Estructurar Tema de Bloques (Scaffold Block Theme) {#scaffold-block-theme}
 
 La capacidad **scaffold-block-theme** genera un nuevo tema de bloques de WordPress con una estructura completa, incluyendo:
 
@@ -23,7 +23,7 @@ La capacidad **scaffold-block-theme** genera un nuevo tema de bloques de WordPre
 - Estilos y variaciones de bloques personalizados
 - Metadatos del tema y declaraciones de soporte
 
-### Cómo invocarlo
+### Cómo invocarlo {#how-to-invoke}
 
 En tu chat con Superdav AI Agent, puedes solicitar la generación de un tema:
 
@@ -38,7 +38,7 @@ El agente hará lo siguiente:
 3. Creará todos los archivos de tema necesarios
 4. Preparará el tema para su activación
 
-### Salida esperada
+### Salida esperada {#expected-output}
 
 Cuando la capacidad se ejecute con éxito, verás:
 
@@ -56,11 +56,11 @@ Ejemplo de salida:
   Status: Ready to activate
 ```
 
-## Activar Tema (Activate Theme)
+## Activar Tema (Activate Theme) {#activate-theme}
 
 La capacidad **activate-theme** cambia tu sitio a un tema de bloques recién estructurado o existente.
 
-### Cómo invocarlo
+### Cómo invocarlo {#how-to-invoke-1}
 
 Después de estructurar un tema, puedes activarlo inmediatamente:
 
@@ -74,7 +74,7 @@ O activar cualquier tema existente:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Salida esperada
+### Salida esperada {#expected-output-1}
 
 Cuando la activación tiene éxito:
 
@@ -92,7 +92,7 @@ Ejemplo de salida:
   Note: Check your homepage to verify the layout
 ```
 
-## Flujo de trabajo: Estructurar y Activar
+## Flujo de trabajo: Estructurar y Activar {#workflow-scaffold-and-activate}
 
 Un flujo de trabajo típico combina ambas capacidades:
 
@@ -102,7 +102,7 @@ Un flujo de trabajo típico combina ambas capacidades:
 4. **Activar**: "Activate the theme now"
 5. **Verificar**: Visitar tu sitio para confirmar que el nuevo diseño está activo
 
-## Tokens de Diseño y Personalización
+## Tokens de Diseño y Personalización {#design-tokens-and-customization}
 
 Los temas estructurados utilizan los tokens de diseño de WordPress (a través de `theme.json`) para:
 
@@ -114,14 +114,14 @@ Los temas estructurados utilizan los tokens de diseño de WordPress (a través d
 
 Estos tokens están centralizados en `theme.json`, lo que facilita ajustar todo tu sistema de diseño desde un solo archivo.
 
-## Limitaciones y Notas
+## Limitaciones y Notas {#limitations-and-notes}
 
 - Los temas se estructuran en `/wp-content/themes/` y deben seguir las convenciones de nomenclatura de WordPress
 - La activación requiere permisos apropiados en tu sitio de WordPress
 - El código PHP personalizado en los temas es mínimo; usa plugins para funcionalidades complejas
 - Los temas de bloques funcionan mejor con WordPress 5.9 o posterior
 
-## Solución de problemas
+## Solución de problemas {#troubleshooting}
 
 **El tema no aparece después de estructurarlo**
 - Verifica que el directorio del tema exista y tenga los permisos adecuados
@@ -138,7 +138,7 @@ Estos tokens están centralizados en `theme.json`, lo que facilita ajustar todo 
 - Borra cualquier plugin de caché
 - Asegúrate de que tu versión de WordPress soporte los tokens que estás utilizando
 
-## Próximos pasos
+## Próximos pasos {#next-steps}
 
 Después de activar tu tema, puedes:
 - Usar la habilidad **Design System Aesthetics** para refinar tipografía, colores y espaciado

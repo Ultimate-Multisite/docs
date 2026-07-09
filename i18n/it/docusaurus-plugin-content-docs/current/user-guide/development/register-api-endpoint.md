@@ -3,7 +3,7 @@ title: Registra endpoint API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# L'endpoint API Register di Ultimate Multisite
+# L'endpoint API Register di Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 In questo tutorial imparerai come usare l'endpoint API /register di Ultimate Multisite per creare l'intero processo di onboarding per un nuovo cliente nella tua rete e come farlo con Zapier.
 
@@ -29,11 +29,11 @@ Seleziona **Abilita API** e ottieni le tue credenziali API.
 
 Ora esploriamo l'endpoint e poi creiamo un'azione di registrazione in Zapier.
 
-## Parametri del corpo dell'endpoint
+## Parametri del corpo dell'endpoint {#endpoint-body-parameters}
 
 Facciamo una panoramica delle informazioni minime che dobbiamo inviare all'endpoint. Alla fine di questo articolo troverai la chiamata completa.
 
-### Cliente
+### Cliente {#customer}
 
 Queste sono le informazioni necessarie per il processo di creazione dell'Utente e del Cliente Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Queste sono le informazioni necessarie per il processo di creazione dell'Utente 
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 L'unica informazione di cui abbiamo bisogno all'interno di questo oggetto è lo Stato della Membership.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Prodotti**
+### **Prodotti** {#products}
 
 Ai prodotti viene fornito un array con 1 o più ID prodotto dalla tua rete. Attenzione, questo endpoint non crea prodotti. Consulta la documentazione di Ultimate Multisite per comprendere meglio l'endpoint di creazione dei prodotti.
 
 **"products" : [1,2],**
 
-### Pagamento
+### Pagamento {#payment}
 
 Come per la Membership, abbiamo bisogno solo dello stato.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Sito
+### Sito {#site}
 
 E per chiudere il corpo abbiamo bisogno dell'URL e del Titolo del sito, entrambi all'interno dell'oggetto Sito.
 
@@ -69,13 +69,13 @@ E per chiudere il corpo abbiamo bisogno dell'URL e del Titolo del sito, entrambi
 
 Il ritorno dell'endpoint register sarà un array con le informazioni della membership appena creata.
 
-## Creazione di un'azione in Zapier
+## Creazione di un'azione in Zapier {#creating-an-action-in-zapier}
 
 Con l'introduzione di questo nuovo e più robusto endpoint per la creazione dell'Account, avrai anche accesso a una nuova azione in Zapier.
 
 Sai come usare e sfruttare tutto ciò che la nuova versione di Zapier offre? Scopri di più qui. (link?)
 
-### Creazione di un'azione
+### Creazione di un'azione {#creating-an-action}
 
 Per illustrare meglio come usare l'endpoint di registrazione con Zapier, creiamo un'integrazione con Google Forms. Ogni volta che questo modulo viene compilato e le informazioni vengono salvate nel foglio delle risposte del modulo, verrà creata una nuova membership nella rete Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Con le informazioni configurate, procedi al test finale. Nell'ultima schermata p
 
 Testa il tuo nuovo Zap e dovrebbe completarsi correttamente. Se si verifica un errore, controlla tutti i campi e verifica che vengano inviati correttamente. Poiché ci sono molte informazioni, alcune cose possono passare inosservate.
 
-### Parametri completi dell'endpoint
+### Parametri completi dell'endpoint {#complete-endpoint-parameters}
 
 Ecco la chiamata completa e tutte le possibilità di campi che possono essere inviati.
 

@@ -3,11 +3,11 @@ title: Napredni primjeri koda
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Napredni primjeri koda
+# Napredni primjeri koda {#advanced-code-examples}
 
 Ovi primjeri ilustriraju napredne obrasce integracije sa Ultimate Multisite.
 
-## Motor dinamičnog određivanja cijena
+## Motor dinamičnog određivanja cijena {#dynamic-pricing-engine}
 
 Motor određivanja cijena zasnovan na pravilima koji primjenjuje popuste za količinu, lojalnost i godišnje doba:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Napredno dodjeljivanje lokacija (Site Provisioning)
+## Napredno dodjeljivanje lokacija (Site Provisioning) {#advanced-site-provisioning}
 
 Automatski konfigurirajte nove lokacije sa pluginovima, SSL-om, CDN-om, sigurnosnim kopijama i nadzorom, bazirano na značajkama paketa:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistem ograničenja po mjeri (Custom Limitations System)
+## Sistem ograničenja po mjeri (Custom Limitations System) {#custom-limitations-system}
 
 Pratite i sprovodite ograničenja resursa sa upozorenjima o korištenju:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomični brojač sa `increment_item()`
+## BerlinDB Atomični brojač sa `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 dodao je metodu `increment_item()` u klasu `Query` za BerlinDB. Koristite je za sigurno, atomično povećanje numeričkih kolona bez takmičenja čitanja-modifikovanja-pisanja (read-modify-write races) — korisno za brojače, kvote korištenja i provjere ograničenja brzine koje se izvršavaju pod istovremenim zahtjevima.
 
-### Potpis metode
+### Potpis metode {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 dodao je metodu `increment_item()` u klasu `Query` za 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Osnovna upotreba
+### Osnovna upotreba {#basic-usage}
 
 ```php
 // Dodaj 1 u kolonu `api_calls` za članstvo ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Praćenje korištenja API-ja po članstvu
+### Praćenje korištenja API-ja po članstvu {#tracking-api-usage-per-membership}
 
 Praktičan obrazac za sprovođenje ograničenja brzine API-ja po članstvu:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Zašto `increment_item()` umjesto `update_item()`
+### Zašto `increment_item()` umjesto `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Jednostavan pristup čitanja-modifikovanja-pisanja (read-modify-write) nije siguran pod istovremenim zahtjevima:
 

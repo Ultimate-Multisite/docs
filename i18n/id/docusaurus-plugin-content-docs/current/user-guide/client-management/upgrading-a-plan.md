@@ -3,7 +3,7 @@ title: Meningkatkan Paket
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Meningkatkan Plan (v2)
+# Meningkatkan Plan (v2) {#upgrading-a-plan-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
@@ -41,7 +41,7 @@ Setelah checkout selesai, produk baru akan ditambahkan ke account pelanggan Anda
 
 ##
 
-## Jalur Peningkatan dan Penurunan
+## Jalur Peningkatan dan Penurunan {#upgrade-and-downgrade-paths}
 
 Pada setiap produk Anda, Anda akan memiliki tab **Up & Downgrades**. Opsi pertama pada tab tersebut adalah field yang disebut **Plan Group**.
 

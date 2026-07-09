@@ -4,22 +4,22 @@ title: Actio - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# Actio: wu_maybe_create_customer
+# Actio: wu_maybe_create_customer {#action-wumaybecreatecustomer}
 
 Sine evolutoribus additamentorum res additas facere cum emptor additur.
 
 Hic est locus ubi hamulos addimus ad customer-&gt;user etiam ad situm principalem addendum, exempli gratia.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nomen | Genus | Descriptio |
 |------|------|-------------|
 | $customer | `\Customer` | Emptor qui fortasse creatus est. |
 | $checkout | `\Checkout` | Classis solutionis hodiernae. |
 
-### Inde ab
+### Inde ab {#since}
 
 - 2.0.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1156) ad lineam 1156

@@ -3,11 +3,11 @@ title: Exigences
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Exigences
+# Ultimate Multisite Exigences {#ultimate-multisite-requirements}
 
 La première chose que vous pourriez vous demander avant d'acheter Ultimate Multisite est quelles sont les exigences pour faire fonctionner notre plugin. Eh bien, heureusement, il n'y a que quelques exigences de base pour exécuter Ultimate Multisite : un **domain name**, un bon **hosting provider** et une installation WordPress **Multisite**. C'est tout ce dont vous avez besoin !
 
-## Nom de domaine
+## Nom de domaine {#domain-name}
 
 Tout d'abord, parlons du nom de domaine.
 
@@ -17,7 +17,7 @@ Notre plugin fournit des services d'abonnement, la collecte de paiements, des fo
 
 N'importe quel créneau que vous choisissez peut être géré à l'aide de notre plugin tant que vous vendez des sites web en tant que service ! Assurez-vous de choisir un nom de domaine qui correspond à votre plan d'affaires.
 
-## Fournisseur d'hébergement
+## Fournisseur d'hébergement {#hosting-provider}
 
 Maintenant que vous avez un nom de domaine accrocheur qui représente votre créneau et votre entreprise, vous devrez choisir une bonne société d'hébergement web pour héberger votre réseau avec Ultimate Multisite. Il existe de bonnes options sur le marché. Certains fournisseurs d'hébergement s'intègrent bien avec Ultimate Multisite, ce qui peut être un facteur décisif selon ce que vous prévoyez de construire.
 
@@ -25,7 +25,7 @@ Ultimate Multisite devrait fonctionner sur n'importe quel fournisseur d'héberge
 
 En ce qui concerne les spécifications du serveur, il n'y a pas de formule spécifique car cela dépendra des fonctionnalités et des fonctions que vous offrirez ainsi que de la taille de votre réseau. Un hébergement partagé peut être un bon point de départ, mais dès que votre réseau commence à se développer, vous aurez probablement besoin d'un VPS dédié.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Maintenant, parlons un peu d'une installation WordPress Multisite.
 

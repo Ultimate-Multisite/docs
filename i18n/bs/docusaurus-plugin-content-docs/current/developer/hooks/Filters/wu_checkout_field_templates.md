@@ -4,24 +4,24 @@ title: Filter - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filter: wu_checkout_field_templates
+# Filter: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
 
 Na ovaj filter se spajaju naše API-je za dodavanje novih šablona polja.
 
 Ne koristite ovaj filter direktno. Umjesto toga, koristite funkciju `wu_register_field_template()`.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Tip | Opis |
 |------|------|-------------|
 | $field_templates | `array` | |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definisano u [`inc/managers/class-field-templates-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-field-templates-manager.php#L162) na liniji 162
 
 
-## Vraća (Returns)
+## Vraća (Returns) {#returns}

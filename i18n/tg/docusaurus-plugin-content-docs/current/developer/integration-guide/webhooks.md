@@ -3,11 +3,11 @@ title: Коркарди Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Коркарди webhook
+# Коркарди webhook {#webhook-handling}
 
 Нуқтаҳои ниҳоии webhook-и фармоишӣ эҷод кунед, то рӯйдодҳоро аз хидматҳои беруна қабул карда, додаҳоро бо Ultimate Multisite ҳамоҳанг созед.
 
-## Нуқтаи ниҳоии webhook-и фармоишӣ
+## Нуқтаи ниҳоии webhook-и фармоишӣ {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Мулоҳизаҳои амниятӣ
+## Мулоҳизаҳои амниятӣ {#security-considerations}
 
 - Ҳамеша имзоҳои webhook-ро бо истифода аз HMAC ё сирри муштарак санҷед
 - Дар масири REST-и худ `permission_callback`-ро истифода баред — дар муҳити истеҳсолӣ онро ҳеҷ гоҳ ба `__return_true` таъин накунед

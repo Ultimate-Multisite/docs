@@ -3,19 +3,19 @@ title: 'Palajaran 13: Ningkatkeun Skala'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Palajaran 13: Ngagedékeun Skala
+# Palajaran 13: Ngagedékeun Skala {#lesson-13-scaling-up}
 
 Anjeun geus boga platform anu jalan jeung palanggan anu mayar. Palajaran ieu ngabahas kumaha tumuwuh tina operasi leutik jadi bisnis anu lestari -- ngagedékeun skala infrastruktur, ngaotomatisasi operasi, jeung ningkatkeun panghasilan per palanggan.
 
-## Di Mana Urang Eureun
+## Di Mana Urang Eureun {#where-we-left-off}
 
 FitSite geus live, palanggan mimiti daptar, jeung anjeun ngajalankeun operasi sapopoé. Ayeuna urang fokus kana tumuwuh.
 
-## Nyaho Angka-Anjeun
+## Nyaho Angka-Anjeun {#know-your-numbers}
 
 Saméméh ngagedékeun skala, pahami posisi anjeun ayeuna:
 
-### Métrik Konci
+### Métrik Konci {#key-metrics}
 
 - **MRR (Panghasilan Bulanan Berulang)**: Total panghasilan langganan bulanan
 - **Jumlah palanggan**: Total palanggan aktif
@@ -24,7 +24,7 @@ Saméméh ngagedékeun skala, pahami posisi anjeun ayeuna:
 - **LTV (Nilai Saumur Hirup)**: Rata-rata panghasilan per palanggan salila sakabéh langgananana
 - **CAC (Biaya Ngakuisisi Palanggan)**: Rata-rata biaya pikeun meunangkeun hiji palanggan
 
-### Conto: FitSite dina 50 Palanggan
+### Conto: FitSite dina 50 Palanggan {#example-fitsite-at-50-customers}
 
 | Métrik | Nilai |
 |--------|-------|
@@ -36,9 +36,9 @@ Saméméh ngagedékeun skala, pahami posisi anjeun ayeuna:
 
 Angka-angka ieu nuduhkeun naon anu kudu difokuskeun. Churn luhur? Benerkeun retensi. ARPU handap? Dorong upgrade. CAC luhur? Optimalkeun kanal akuisisi.
 
-## Ngagedékeun Skala Infrastruktur
+## Ngagedékeun Skala Infrastruktur {#scaling-infrastructure}
 
-### Iraha Kudu Ngagedékeun Skala
+### Iraha Kudu Ngagedékeun Skala {#when-to-scale}
 
 Gedékeun skala hosting nalika:
 
@@ -47,7 +47,7 @@ Gedékeun skala hosting nalika:
 - Anjeun ngadeukeutan 100+ situs aktif
 - Keluhan palanggan ngeunaan kagancangan ningkat
 
-### Kumaha Ngagedékeun Skala
+### Kumaha Ngagedékeun Skala {#how-to-scale}
 
 - **Skala vertikal**: Upgrade ka server anu leuwih gedé (CPU, RAM leuwih loba)
 - **Lapisan caching**: Tambahkeun Redis/Memcached pikeun object caching, page caching pikeun eusi statis
@@ -55,7 +55,7 @@ Gedékeun skala hosting nalika:
 - **Optimasi database**: Nalika jaringan tumuwuh, query database ngalambat. Optimalkeun tabel, tambahkeun indeks, pertimbangkeun server database dedicated.
 - **Pisahkeun tanggung jawab**: Pindahkeun panyimpenan média ka object storage (cocog jeung S3), pindahkeun email ka layanan email transaksional
 
-### Migrasi Hosting
+### Migrasi Hosting {#hosting-migration}
 
 Lamun host ayeuna teu bisa digedékeun deui skalana, rencanakeun migrasi:
 
@@ -65,11 +65,11 @@ Lamun host ayeuna teu bisa digedékeun deui skalana, rencanakeun migrasi:
 4. Apdet DNS kalayan TTL minimal saméméhna
 5. Pastikeun sagalana jalan saatos migrasi
 
-## Ngaotomatisasi Operasi
+## Ngaotomatisasi Operasi {#automating-operations}
 
 Nalika anjeun tumuwuh, prosés manual jadi bottleneck. Otomatisasikeun naon anu bisa:
 
-### Webhooks jeung Zapier
+### Webhooks jeung Zapier {#webhooks-and-zapier}
 
 Paké [Webhooks](/user-guide/integrations/webhooks) atawa [Zapier](/user-guide/integrations/zapier) pikeun ngaotomatisasi:
 
@@ -78,7 +78,7 @@ Paké [Webhooks](/user-guide/integrations/webhooks) atawa [Zapier](/user-guide/i
 - **Gagal mayar** → peringatan dina alat monitoring anjeun
 - **Upgrade rencana** → email ucapan salamet jeung pituduh fitur anyar
 
-### Otomatisasi Email
+### Otomatisasi Email {#email-automation}
 
 Pindah tina email manual ka runtuyan otomatis:
 
@@ -87,30 +87,30 @@ Pindah tina email manual ka runtuyan otomatis:
 - Ajakan upgrade nalika palanggan ngadeukeutan wates rencana
 - Pangéling renewal pikeun palanggan taunan
 
-### Otomatisasi Rojongan
+### Otomatisasi Rojongan {#support-automation}
 
 - **Jawaban siap paké** pikeun patarosan umum
 - **Balesan otomatis** anu ngaku narima tikét rojongan
 - **Saran basis pangaweruh** nalika palanggan ngirim tikét anu cocog jeung artikel anu geus aya
 
-## Ningkatkeun Panghasilan
+## Ningkatkeun Panghasilan {#increasing-revenue}
 
 Tumuwuh lain ngan saukur ngeunaan palanggan leuwih loba. Ieu ogé ngeunaan panghasilan leuwih loba per palanggan.
 
-### Upselling Palanggan Anu Geus Aya
+### Upselling Palanggan Anu Geus Aya {#upselling-existing-customers}
 
 - **Upgrade rencana**: Kampanye sasaran anu némbongkeun fitur Growth/Pro ka palanggan Starter
 - **Tawaran tambahan pesenan**: Promosikeun produk tambahan ka palanggan anu geus aya ngaliwatan email
 - **Konversi taunan**: Tawarkeun diskon ka palanggan bulanan pikeun pindah ka tagihan taunan
 
-### Aliran Panghasilan Anyar
+### Aliran Panghasilan Anyar {#new-revenue-streams}
 
 - **Setup siap-paké**: Tarik biaya premium pikeun nyetél jeung ngaropéa situs palanggan pikeun aranjeunna
 - **Layanan desain kustom**: Tawarkeun pagawéan desain husus di luhur template
 - **Sesi palatihan**: Walkthrough hiji-ka-hiji berbayar pikeun palanggan anu hayang bantuan langsung
 - **Plugin premium**: Tawarkeun plugin premium khusus niche minangka add-on berbayar (mis., widget booking kelas fitness)
 
-### Naékkeun Harga
+### Naékkeun Harga {#raising-prices}
 
 Nalika platform anjeun beuki asak jeung nambahan nilai:
 
@@ -118,7 +118,7 @@ Nalika platform anjeun beuki asak jeung nambahan nilai:
 - Naékkeun harga pikeun signup anyar
 - Benerkeun kanaékan ku fitur anyar jeung perbaikan
 
-## Ngawangun Tim
+## Ngawangun Tim {#building-a-team}
 
 Dina hiji waktos, anjeun moal bisa ngalakukeun sagalana sorangan. Rekrutan mimiti anu umum:
 
@@ -128,7 +128,7 @@ Dina hiji waktos, anjeun moal bisa ngalakukeun sagalana sorangan. Rekrutan mimit
 
 Anjeun teu kudu boga karyawan. Kontraktor jeung freelancer jalan alus pikeun bisnis platform.
 
-## Tonggak Tumuwuh
+## Tonggak Tumuwuh {#growth-milestones}
 
 | Tonggak | MRR Kira-kira | Fokus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Anjeun teu kudu boga karyawan. Kontraktor jeung freelancer jalan alus pikeun bis
 | 250-500 palanggan | $25,000-$50,000 | Ngawangun tim, aliran panghasilan anyar, fitur premium |
 | 500+ palanggan | $50,000+ | Kadewasaan platform, niche anu padeukeut, poténsi exit |
 
-## Naon Anu Urang Wangun Dina Palajaran Ieu
+## Naon Anu Urang Wangun Dina Palajaran Ieu {#what-we-built-this-lesson}
 
 - **Kerangka métrik** pikeun ngartos kaséhatan bisnis
 - **Rencana ngagedékeun skala infrastruktur** pikeun tumuwuh tina puluhan jadi ratusan situs

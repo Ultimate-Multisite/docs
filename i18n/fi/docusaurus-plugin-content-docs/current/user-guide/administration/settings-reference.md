@@ -3,11 +3,11 @@ title: Asetusten viite
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Asetusten viite
+# Asetusten viite {#settings-reference}
 
 Tämä sivu seuraa asetuksia, jotka vaikuttavat päivittäiseen ylläpitoon ja viimeaikaisiin käyttäytymismuutoksiin Ultimate Multisite -palvelussa.
 
-## Muut asetukset
+## Muut asetukset {#other-options}
 
 **Muut asetukset** -alue näkyy kohdassa **Ultimate Multisite > Asetukset > Kirjautuminen ja rekisteröityminen**.
 
@@ -15,23 +15,23 @@ Tämä sivu seuraa asetuksia, jotka vaikuttavat päivittäiseen ylläpitoon ja v
 |---|---|
 | **Ota Jumper käyttöön** | Näyttää Jumper-pikanavigointityökalun ylläpitoalueella. Käytä sitä siirtyäksesi suoraan Ultimate Multisite -näkymiin, verkko-objekteihin ja tuettuihin ylläpitokohteisiin. Poista se käytöstä, jos et halua tämän pikakuvakkeen näkyvän. |
 
-## Virheraportointi ja telemetria
+## Virheraportointi ja telemetria {#error-reporting-and-telemetry}
 
 Aiempi virheraportoinnin suostumusasetus on poistettu asetussivulta. Anonyymi telemetria on poistettu käytöstä, eikä sen käyttöönottoon ole UI-valitsinta.
 
 Jos ylläpidät sisäisiä ohjeistoja tai kuvakaappauksia asetussivusta, poista viittaukset vanhaan virheraportoinnin suostumuskenttään, jotta ylläpitäjät eivät etsi asetusta, jota ei enää ole.
 
-## Tuonti-/vientiasetukset
+## Tuonti-/vientiasetukset {#importexport-settings}
 
 **Tuonti/vienti**-asetusten välilehti kuvaa, mitä asetuksia se hallitsee, ja linkittää suoraan kohtaan **Ultimate Multisite > Sivuston vienti** sivusto- ja verkkoarkistoja varten. Käytä asetusten välilehteä tuonti-/vientimäärityksiin, käytä kohtaa **Työkalut > Vienti ja tuonti** yksittäisen sivuston vienti-/tuontityönkulkuun ja käytä Sivuston vienti -työkalua, kun tarvitset täyden verkon vientiarkiston.
 
-## Domain Seller HostAfrica -saldovaroitus
+## Domain Seller HostAfrica -saldovaroitus {#domain-seller-hostafrica-balance-warning}
 
 Kun Domain Seller -lisäosa on yhdistetty HostAfricaan, verkon ylläpitäjät näkevät nyt kuitattavan alhaisen saldon varoituksen, kun jälleenmyyjätilin saldo on liian pieni luotettavaan verkkotunnusten rekisteröintiin tai uusimisten käsittelyyn.
 
 Käsittele tätä ilmoitusta operatiivisena varoituksena: lisää HostAfrica-jälleenmyyjäsaldoa ennen kuin hyväksyt lisää maksullisia verkkotunnusrekisteröintejä, ja palaa sitten Domain Seller -asetuksiin tai verkkotunnusten valvontanäkymään varmistaaksesi, että rekisteröinnit ja uusimiset voivat jatkua normaalisti.
 
-## AI-palveluntarjoajan liitinasetukset
+## AI-palveluntarjoajan liitinasetukset {#ai-provider-connector-settings}
 
 AI-palveluntarjoajan liitinasetukset näyttävät nyt vain tuetut OAuth-tilipoolit:
 

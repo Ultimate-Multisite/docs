@@ -3,13 +3,13 @@ title: A’ cur pàighidhean làimhe air dòigh
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# A’ stèidheachadh phàighidhean làimhe (v2)
+# A’ stèidheachadh phàighidhean làimhe (v2) {#setting-up-manual-payments-v2}
 
 _**NOTA CUDROMACH: Tha an t-artaigil seo a’ toirt iomradh air Ultimate Multisite tionndadh 2.x.**_
 
 Tha pàighidhean làimhe nan dòigh dhut dòighean pàighidh eile a thabhann ma tha **Stripe** no **PayPal** nach eil ri fhaighinn do na cleachdaichean agad. Faodaidh e a bhith na ghluasad uèir no banca, no dòigh pàighidh sam bith eile a tha ri fhaighinn do na cleachdaichean agad gu h-ionadail.
 
-## Mar a chuireas tu pàighidhean làimhe an comas
+## Mar a chuireas tu pàighidhean làimhe an comas {#how-to-enable-manual-payments}
 
 Tha stèidheachadh pàighidh làimhe glè fhurasta. Chan fheum thu ach a chur an comas fo gheataichean pàighidh agus stiùireadh mionaideach a chur a-steach air mar a bu chòir don chleachdaiche am pàigheadh a chur.
 
@@ -31,7 +31,7 @@ Agus gheibh iad teachdaireachd cuideachd air an duilleag **Tapadh Leat** agad le
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## A’ dearbhadh phàighidhean làimhe
+## A’ dearbhadh phàighidhean làimhe {#confirming-manual-payments}
 
 Gus pàigheadh làimhe a dhearbhadh, rach chun chlàr-taice **Pàighidhean** air a’ bhàr chlì. An sin chì thu na pàighidhean uile air an lìonra agad agus am mion-fhiosrachadh, a’ gabhail a-steach an **inbhe**. Bidh inbhe **Ri Fheitheamh** aig pàigheadh làimhe an-còmhnaidh gus an atharraich thu e le làimh.
 

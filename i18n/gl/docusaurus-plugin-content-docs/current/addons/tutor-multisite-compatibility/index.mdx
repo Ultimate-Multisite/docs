@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Un complemento de WordPress que engade correccións de compatibilidade para Tutor LMS en contornos multisitio.
 
-## Descrición
+## Descrición {#description}
 
 Este complemento proporciona correccións de compatibilidade esenciais para executar Tutor LMS en redes multisitio de WordPress. Xestiona a inscrición de usuarios, a xestión de instrutores, as limitacións de cursos e outras funcionalidades específicas de multisitio.
 
-## Funcionalidades
+## Funcionalidades {#features}
 
 - **Xestión de táboas da base de datos**: Detecta e crea automaticamente as táboas de Tutor LMS que faltan e que fallan debido ás restricións de claves foráneas en multisitio
 - **Inscrición de usuarios en multisitio**: Controladores AJAX personalizados para xestionar a inscrición de usuarios en sitios da rede
@@ -24,7 +24,7 @@ Este complemento proporciona correccións de compatibilidade esenciais para exec
 - **Vistas de administración personalizadas**: Lista de instrutores e interface de xestión compatibles con multisitio
 - **Ferramentas de administración**: Interface de xestión da base de datos para administradores de rede e de sitio
 
-## Requisitos
+## Requisitos {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Este complemento proporciona correccións de compatibilidade esenciais para exec
 - Instalación multisitio de WordPress
 - Complemento Ultimate Multisite (para a funcionalidade de limitacións de cursos)
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube os ficheiros do complemento a `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Asegúrate de que Tutor LMS estea instalado e activado
 3. Activa o complemento a través do menú «Plugins» en WordPress
 4. O complemento integrarase automaticamente con Tutor LMS
 
-## Estrutura de ficheiros
+## Estrutura de ficheiros {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funcionalidade trasladada desde MU plugin
+## Funcionalidade trasladada desde MU plugin {#functionality-moved-from-mu-plugin}
 
 Este complemento contén funcionalidade que antes estaba en `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Este complemento contén funcionalidade que antes estaba en `wp-content/mu-plugi
 - Xestión da inscrición de usuarios en multisitio
 - Visualización do ID de produto do curso
 
-## Xestión da base de datos
+## Xestión da base de datos {#database-management}
 
-### O problema
+### O problema {#the-problem}
 
 En contornos multisitio de WordPress, a creación de táboas de Tutor LMS falla para as táboas con restricións de clave foránea á táboa de usuarios. Isto ocorre porque:
 
@@ -81,7 +81,7 @@ En contornos multisitio de WordPress, a creación de táboas de Tutor LMS falla 
 - As claves foráneas fan referencia a `wp_2_users` (que non existe)
 - A táboa de usuarios real é `wp_users` (compartida en toda a rede)
 
-### A solución
+### A solución {#the-solution}
 
 Este complemento automaticamente:
 
@@ -92,13 +92,13 @@ Este complemento automaticamente:
    - Creación dun novo sitio na rede
    - Comprobación manual de táboas mediante a interface de administración
 
-### Táboas afectadas
+### Táboas afectadas {#affected-tables}
 
 - `tutor_coupon_usages` - Contén unha clave foránea á táboa de usuarios
 - `tutor_carts` - Contén unha clave foránea á táboa de usuarios
 - `tutor_notification_preferences` - Táboa de TutorPro cunha clave foránea á táboa de usuarios
 
-### Interface de administración
+### Interface de administración {#admin-interface}
 
 Accede ás ferramentas de xestión da base de datos en:
 
@@ -111,6 +111,6 @@ A interface permíteche:
 - Comprobar a configuración da base de datos
 - Ver información de estado detallada
 
-## Soporte
+## Soporte {#support}
 
 Este complemento está deseñado especificamente para a plataforma KursoPro. Para soporte técnico, contacta co equipo de desenvolvemento.

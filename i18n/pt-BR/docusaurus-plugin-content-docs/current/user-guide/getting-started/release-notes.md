@@ -3,9 +3,9 @@ title: Notas de versão
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Notas de lançamento
+# Notas de lançamento {#release-notes}
 
-## Versão 2.13.0 — Lançada em 2026-06-05
+## Versão 2.13.0 — Lançada em 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Novo: Adicionado suporte a tenants soberanos para fluxos de conta de cliente, finalização de compra, faturamento, site, fatura, troca de modelo e mapeamento de domínio, para que redes de tenants possam direcionar clientes de volta ao site principal para ações gerenciadas.
 - Novo: Adicionadas verificações de credenciais de renovação para associações recorrentes, para que gateways possam desativar a renovação automática quando um contrato de cobrança salvo, assinatura ou token de cofre estiver ausente.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correção: Renovações de associação, exibição de expiração e casos extremos de cobrança de pagamento agora evitam expirações imediatas, falhas ou pagamentos obrigatórios perdidos.
 - Melhorado: A compatibilidade com WordPress é testada até a versão 7.0, os assets Vue de produção são recompilados a partir das fontes npm, e a cobertura ponta a ponta do Cypress agora exercita mais fluxos de finalização de compra, configuração, SSO e gateways.
 
-## Versão 2.12.0 — Lançada em 2026-05-15
+## Versão 2.12.0 — Lançada em 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Novo: Adicionado Hostinger (hPanel) como provedor de host compatível com integração de mapeamento de domínio
 - Novo: O Exportador de Sites agora lida com pacotes de importação de rede para restauração simplificada de sites em toda a rede
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correção: A CLI do Exportador de Sites agora preserva a seleção correta do site de rede padrão
 - Melhorado: Removido o wp-cli empacotado do pacote do plugin, reduzindo o tamanho do plugin
 
-## Versão 2.11.0 — Lançada em 2026-05-11
+## Versão 2.11.0 — Lançada em 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Novo: Exportações de site agora incluem um `index.php` auto-inicializável, para que o ZIP possa ser instalado em um host novo sem uma instalação separada de plugin.
 - Novo: A exportação de rede permite que administradores exportem todos os subsites em um único arquivo a partir da página administrativa de Exportação de Site.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Novo: O editor de formulário de finalização de compra avisa quando um produto é adicionado sem um campo obrigatório configurado.
 - Novo: A aba de configurações de Importação/Exportação agora descreve claramente seu escopo e vincula diretamente à ferramenta de Exportação de Site.
 
-## Versão 2.10.0 — Lançada em 2026-05-05
+## Versão 2.10.0 — Lançada em 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Novo: Assistente de configuração guiada do PayPal para entrada manual de credenciais com controle por sinalizador OAuth para configuração perfeita do gateway.
 - Novo: Painel do cliente para troca de modelo redesenhado com cartão de modelo atual, grade persistente e botão **Redefinir modelo atual**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correção: Caminho de SSO filtrado respeitado em todos os fluxos de login.
 - Correção: Opções de identidade de site em branco preservadas ao salvar.
 
-## Versão 2.9.0 — Lançada em 2026-04-30
+## Versão 2.9.0 — Lançada em 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Novo: Exportação e importação de site único adicionadas em **Ferramentas > Exportar e Importar**.
 - Correção: Arquivos ZIP de exportação agora servidos por meio de um endpoint de download autenticado.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correção: IDs de tour normalizados para sublinhados nas chaves de configurações de usuário.
 - Melhorado: ZipArchive agora usado em vez de Alchemy/Zippy para melhor compatibilidade.
 
-## Versão 2.8.0 — Lançada em 2026-04-29
+## Versão 2.8.0 — Lançada em 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Novo: Alternância Enable Jumper adicionada à UI de configurações de Other Options.
 - Novo: Coluna de status adicionada à tabela de lista de formulários de checkout.

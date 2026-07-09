@@ -4,11 +4,11 @@ title: Filter – wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Filter: wu_pre_save_settings
+# Filter: wu_pre_save_settings {#filter-wupresavesettings}
 
 Võimaldab arendajatel filtreerida sätteid enne salvestamist Ultimate Multisite poolt.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Võimaldab arendajatel filtreerida sätteid enne salvestamist Ultimate Multisite
 | $settings_to_save | `array` | Uued lisatavad sätted. |
 | $saved_settings | `array` | Praegu salvestatud sätted. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.18
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) real 296

@@ -3,11 +3,11 @@ title: Tuladha Kode Tingkat Lanjut
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Tuladha Kode Lanjut
+# Tuladha Kode Lanjut {#advanced-code-examples}
 
 Tuladha iki nuduhake pola integrasi lanjut karo Ultimate Multisite.
 
-## Mesin Rega Dinamis
+## Mesin Rega Dinamis {#dynamic-pricing-engine}
 
 Mesin rega adhedhasar aturan sing ngetrapake diskon volume, kasetyan, lan mangsan:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Panyiyapan Situs Lanjut
+## Panyiyapan Situs Lanjut {#advanced-site-provisioning}
 
 Kanthi otomatis ngatur situs anyar nganggo piranti tambahan, SSL, CDN, serepan, lan ngawasi adhedhasar fitur paket:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistem Watesan Kustom
+## Sistem Watesan Kustom {#custom-limitations-system}
 
 Lacak lan terapake wates sumber daya nganggo pepeling panggunaan:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter nganggo `increment_item()`
+## BerlinDB Atomic Counter nganggo `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 nambahake metode `increment_item()` menyang kelas BerlinDB `Query`. Gunakna kanggo nindakake panambahan sing aman lan atomik ing kolom numerik tanpa risiko read-modify-write — migunani kanggo pangétung, kuota panggunaan, lan pamriksan rate-limiting sing mlaku ing sangisoring panjaluk bebarengan.
 
-### Tandha metode
+### Tandha metode {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 nambahake metode `increment_item()` menyang kelas Berl
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Panggunaan dhasar
+### Panggunaan dhasar {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Nglacak panggunaan API saben membership
+### Nglacak panggunaan API saben membership {#tracking-api-usage-per-membership}
 
 Pola praktis kanggo ngetrapake watesan laju API saben membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Napa `increment_item()` tinimbang `update_item()`
+### Napa `increment_item()` tinimbang `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Pendekatan read-modify-write sing prasaja ora aman ing sangisoring panjaluk bebarengan:
 

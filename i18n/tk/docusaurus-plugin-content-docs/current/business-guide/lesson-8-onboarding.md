@@ -3,15 +3,15 @@ title: '8-nji sapak: Müşderileri başlangyç ugrukdyrmak'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Sapak 8: Müşderini başlangyçdan geçirmek
+# Sapak 8: Müşderini başlangyçdan geçirmek {#lesson-8-customer-onboarding}
 
 Müşderini hasaba ýazylmaga getirmek işiň diňe ýarysy. Eger olar girip, özüni aljyraňňy duýup, hiç haçan gaýdyp gelmese, siz olary ýitirdiňiz. Bu sapak täze hasaba ýazylany işjeň we gyzyklanýan müşderä öwürýän tejribäni dizaýn edýär.
 
-## Nirede saklanypdyk
+## Nirede saklanypdyk {#where-we-left-off}
 
 FitSite işleýän checkout akymy bilen doly brendleşdirildi. Indi fitness studiýasynyň eýesi hasaba ýazylmagy tamamlandan soň, täze saýtyna ilkinji gezek düşende näme bolýandygyna üns berýäris.
 
-## Näme üçin başlangyçdan geçirmek möhüm
+## Näme üçin başlangyçdan geçirmek möhüm {#why-onboarding-matters}
 
 Hasaba ýazylmadan soňky ilkinji 30 minut müşderiniň galjakdygyny ýa-da gitjekdigini kesgitleýär. Fitness studiýasynyň eýesi:
 
@@ -21,9 +21,9 @@ Hasaba ýazylmadan soňky ilkinji 30 minut müşderiniň galjakdygyny ýa-da git
 
 Siziň ugurlaýyn şablonlaryňyz (Sapak 4) birinji meseläni çözýär. Bu sapak ikinjisini çözýär.
 
-## Ilkinji giriş tejribesi
+## Ilkinji giriş tejribesi {#the-first-login-experience}
 
-### Hoş geldiňiz Dashboard widjeti
+### Hoş geldiňiz Dashboard widjeti {#welcome-dashboard-widget}
 
 Täze müşderileri garşylaýan we olary sazlamadan geçirýän ýörite Dashboard widjetini dörediň. Bu olar ilkinji gezek girende görnükli ýerde peýda bolmaly.
 
@@ -37,7 +37,7 @@ Täze müşderileri garşylaýan we olary sazlamadan geçirýän ýörite Dashbo
 
 Her ädim degişli sahypa ýa-da sazlama göni baglanýar. Menýularda gözleg ýok.
 
-### Dashboard-y ýönekeýleşdiriň
+### Dashboard-y ýönekeýleşdiriň {#simplify-the-dashboard}
 
 Täze müşderilere WordPress-iň her bir menýu elementini görmek gerek däl. Şulary göz öňünde tutuň:
 
@@ -47,29 +47,29 @@ Täze müşderilere WordPress-iň her bir menýu elementini görmek gerek däl. 
 
 [Plugin & Theme Manager](/addons/plugin-and-theme-manager) goşmaçasy müşderileriň näme görýändigini dolandyrmaga kömek edip biler.
 
-## Hoş geldiňiz e-poçta yzygiderligi
+## Hoş geldiňiz e-poçta yzygiderligi {#welcome-email-sequence}
 
 Bir sany hoş geldiňiz e-poçtasy ýeterlik däl. Müşderileri ilkinji hepdesinden geçirýän yzygiderligi sazlaň:
 
-### E-poçta 1: Hoş geldiňiz (Hasaba ýazylmadan dessine soň)
+### E-poçta 1: Hoş geldiňiz (Hasaba ýazylmadan dessine soň) {#email-1-welcome-immediately-after-signup}
 
 - Tema: "FitSite-e hoş geldiňiz -- studiýa websaýtyňyz işjeň"
 - Mazmun: Giriş baglanyşygy, çalt başlangyç ädimleri, kömek çeşmelerine baglanyşyk
 - Äheň: Tolgundyryjy, höweslendiriji, fitness-e mahsus
 
-### E-poçta 2: Çalt üstünlikler (1-nji gün)
+### E-poçta 2: Çalt üstünlikler (1-nji gün) {#email-2-quick-wins-day-1}
 
 - Tema: "FitSite-iňizde ilki edilmeli 3 zat"
 - Mazmun: Logotipiňizi goşuň, baş sahypanyň hero suratyny täzeläň, sapak tertibiňizi goşuň
 - Nire basmalydygyny anyk görkezýän ekran suratlaryny goşuň
 
-### E-poçta 3: Öz stiliňizi beriň (3-nji gün)
+### E-poçta 3: Öz stiliňizi beriň (3-nji gün) {#email-3-make-it-yours-day-3}
 
 - Tema: "Fitness saýtyňyzy tapawutlandyryň"
 - Mazmun: Reňkleri sazlaň, tälimçi suratlaryny goşuň, studiýa hekaýaňyzy ýazyň
 - Platformadaky ajaýyp fitness saýtlarynyň mysallaryna baglanyşyk beriň
 
-### E-poçta 4: Işe goýberiň (7-nji gün)
+### E-poçta 4: Işe goýberiň (7-nji gün) {#email-4-go-live-day-7}
 
 - Tema: "FitSite-iňizi dünýä bilen paýlaşmaga taýýarmy?"
 - Mazmun: Paýlaşmazdan öň barlamaly zatlaryň sanawy, ýörite domeni nädip birikdirmeli (Growth/Pro-da bolsa), sosial paýlaşma maslahatlary
@@ -78,11 +78,11 @@ Bir sany hoş geldiňiz e-poçtasy ýeterlik däl. Müşderileri ilkinji hepdesi
 Bu e-poçtalary e-poçta marketing platformaňyz arkaly işe girizmek üçin [Webhooks](/user-guide/integrations/webhooks) ýa-da [Zapier](/user-guide/integrations/zapier) ulanyň. Bu size wagty has gowy dolandyrmaga mümkinçilik berýär we gatnaşygyny yzarlamaga ýol açýar.
 :::
 
-## Kömek çeşmeleri
+## Kömek çeşmeleri {#help-resources}
 
 Fitness studiýasynyň eýeleriniň hakykatdan sorajak soraglaryna jogap berýän ugurlaýyn kömek mazmunyny dörediň:
 
-### Bilim binýady makalalary
+### Bilim binýady makalalary {#knowledge-base-articles}
 
 - "Sapak tertibiňizi nädip täzelemeli"
 - "Tälimçi profillerini goşmak we redaktirlemek"
@@ -92,7 +92,7 @@ Fitness studiýasynyň eýeleriniň hakykatdan sorajak soraglaryna jogap berýä
 
 Bulary tehniki däl ulanyjylar üçin ýazyň. Ekran suratlaryny ulanyň. WordPress žargonynyň öňüni alyň.
 
-### Wideo görkezmeler
+### Wideo görkezmeler {#video-walkthroughs}
 
 Şulary görkezýän gysga (2-3 minutlyk) ekran ýazgylary:
 
@@ -103,7 +103,7 @@ Bulary tehniki däl ulanyjylar üçin ýazyň. Ekran suratlaryny ulanyň. WordPr
 
 Bular ýylmanan önümçilikler bolmaly däl. Aýdyň, peýdaly we ugurlaýyn bolmagy möhümdir.
 
-## Account sahypasy
+## Account sahypasy {#the-account-page}
 
 Ultimate Multisite müşderileriň öz subscription-yny dolandyrýan müşderä gönükdirilen [Account Page](/user-guide/client-management/account-page) öz içine alýar. Muny şular üçin sazlaň:
 
@@ -112,7 +112,7 @@ Ultimate Multisite müşderileriň öz subscription-yny dolandyrýan müşderä 
 - Töleg taryhyny we hasap-faktura ýüklemelerini bermek
 - Kömek çeşmelerine baglanyşyk bermek
 
-## Başlangyçdan geçirmegiň üstünligini ölçemek
+## Başlangyçdan geçirmegiň üstünligini ölçemek {#measuring-onboarding-success}
 
 Başlangyçdan geçirmegiňiziň işleýändigini bilmek üçin şu görkezijileri yzarlaň:
 
@@ -121,7 +121,7 @@ Başlangyçdan geçirmegiňiziň işleýändigini bilmek üçin şu görkezijile
 - **Täze müşderilerden goldaw biletleri**: Köp möçber başlangyçdan geçirmegiňizde boşluklaryň bardygyny aňladýar
 - **Synagdan töleglä geçiş**: Synag hödürleýän bolsaňyz, näçe göterimi geçýär?
 
-## Häzire çenli FitSite tory
+## Häzire çenli FitSite tory {#the-fitsite-network-so-far}
 
 ```
 FitSite tory
@@ -142,7 +142,7 @@ FitSite tory
 └── Nyrh strategiýasy üçin taýýar (indiki sapak)
 ```
 
-## Bu sapakda näme gurduk
+## Bu sapakda näme gurduk {#what-we-built-this-lesson}
 
 - **Ugrukdyrylýan ilkinji giriş tejribesi** Quick Start widjeti bilen
 - **Ýönekeýleşdirilen Dashboard** fitness saýtyny dolandyrmak meselelerine gönükdirilen

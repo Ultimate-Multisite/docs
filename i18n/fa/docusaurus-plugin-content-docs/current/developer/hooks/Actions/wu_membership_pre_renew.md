@@ -4,11 +4,11 @@ title: Action - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# اکشن: wu_membership_pre_renew
+# اکشن: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 این اکشن قبل از تمدید عضویت اجرا می‌شود.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 | $membership_id | `int` | شناسه (ID) عضویت. |
 | $membership | `\Membership` | شیء (Object) عضویت. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0
-### منبع
+### منبع {#source}
 
 در [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) در خط ۲۲۰۴ تعریف شده است.

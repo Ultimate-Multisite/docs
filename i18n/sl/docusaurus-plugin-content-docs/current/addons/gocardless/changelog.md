@@ -3,7 +3,7 @@ title: GoCardless dnevnik sprememb
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless dnevnik sprememb
+# GoCardless dnevnik sprememb {#gocardless-changelog}
 
 Različica: 1.0.3 - Izdano 2026-05-05
 * Popravek: Osirotele čakajoče strani se zdaj počistijo, ko je GoCardless članstvo preklicano, medtem ko je v čakajočem ali zadržanem stanju

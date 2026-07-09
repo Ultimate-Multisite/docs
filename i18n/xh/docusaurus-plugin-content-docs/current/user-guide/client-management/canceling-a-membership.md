@@ -3,7 +3,7 @@ title: Ukurhoxisa ubulungu
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Ukurhoxisa Ubulungu (v2)
+# Ukurhoxisa Ubulungu (v2) {#canceling-a-membership-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite version 2.x.**_
 

@@ -3,11 +3,11 @@ title: Vertalen van Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Translating Ultimate Multisite
+# Translating Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite is ontwikkeld in het Engels, maar de plugin is volledig vertaalbaar en we verwelkomen actief vertaalbijdragen.
 
-## Core Plugin Translations
+## Core Plugin Translations {#core-plugin-translations}
 
 De kernplugin van Ultimate Multisite wordt vertaald via het officiële **WordPress.org vertalingsplatform**:
 
@@ -24,7 +24,7 @@ Dit is het standaard WordPress-community vertaalplatform. Wanneer vertalingen ee
 
 Als u een vertaaleditor voor uw taal wilt worden (in staat om vertalingen goed te keuren), neem contact op via [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Addon Translations
+## Addon Translations {#addon-translations}
 
 Addon-plugins worden afzonderlijk vertaald op:
 
@@ -32,11 +32,11 @@ Addon-plugins worden afzonderlijk vertaald op:
 
 De addon-vertalingen zijn momenteel AI-gegenereerd als uitgangspunt. Ze dekken alle ondersteunde talen, maar kunnen ongemakkelijke formuleringen of onnauwkeurigheden bevatten. We verwelkomen menselijke vertalers om te beoordelen en suggesties te doen om ze natuurlijker en nauwkeuriger te maken.
 
-## Local Translations
+## Local Translations {#local-translations}
 
 Als u liever lokaal vertalingen maakt voor uw eigen project in plaats van upstream bij te dragen, zijn er twee opties:
 
-### Using Poedit
+### Using Poedit {#using-poedit}
 
 U kunt de desktopapplicatie **[Poedit](https://poedit.net)** gebruiken om het `.pot`-bestand te vertalen:
 
@@ -46,6 +46,6 @@ U kunt de desktopapplicatie **[Poedit](https://poedit.net)** gebruiken om het `.
 4. Sla op -- Poedit genereert `.po` en `.mo`-bestanden
 5. Plaats de outputbestanden in de `lang`-map
 
-### Using Loco Translate
+### Using Loco Translate {#using-loco-translate}
 
 De **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress-plugin laat u rechtstreeks vanuit het adminpaneel vertalen zonder desktoptools. Het zorgt voor het aanmaken en compileren van vertaalbestanden voor u.

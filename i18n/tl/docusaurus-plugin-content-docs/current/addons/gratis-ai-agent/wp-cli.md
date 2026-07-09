@@ -3,11 +3,11 @@ title: Sanggunian ng WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Sanggunian ng WP-CLI
+# Sanggunian ng WP-CLI {#wp-cli-reference}
 
 Ang Gratis AI Agent ay may kasamang pamilya ng command na `wp gratis-ai-agent` para sa pag-benchmark ng agent, pamamahala ng mga kakayahan, at pagtatanong ng status ng agent mula sa command line. Lahat ng command ay nangangailangan ng WP-CLI 2.0 o mas mataas.
 
-## Pag-install
+## Pag-install {#installation}
 
 Awtomatikong nirerehistro ang mga WP-CLI command kapag aktibo ang plugin. Beripikahin gamit ang:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Pinapatakbo ang benchmark suite ng Mga Kakayahan ng Agent — isang hanay ng kumplikado at maraming-hakbang na prompt na sumusubok sa buong saklaw ng kakayahan. Gamitin ito para suriin ang pagganap ng model, paghambingin ang mga AI provider, o patunayan ang mga ability pack bago i-deploy sa production.
 
-### Buod
+### Buod {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Mga Opsyon
+### Mga Opsyon {#options}
 
 | Opsyon | Paglalarawan |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Format ng output: `table` (default), `json`, `csv` |
 | `--save` | I-save ang mga resulta ng benchmark sa database para sa makasaysayang paghahambing |
 
-### Mga Halimbawa
+### Mga Halimbawa {#examples}
 
 Patakbuhin ang buong benchmark suite gamit ang kasalukuyang provider at model:
 
@@ -57,7 +57,7 @@ Patakbuhin laban sa partikular na model at i-save ang mga resulta:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 Naglalabas ang benchmark ng isang row kada question na may sumusunod na mga column:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Mga Benchmark Question
+### Mga Benchmark Question {#benchmark-questions}
 
 Kasama sa default suite ang:
 
@@ -95,11 +95,11 @@ Maaaring magrehistro ng karagdagang mga question sa pamamagitan ng filter na `gr
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Pinamamahalaan ang mga naka-install na kakayahan at ability pack.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Inililista ang lahat ng nakarehistrong kakayahan, ang pinagmulan ng mga ito (core o pack), at ang kasalukuyang status ng mga ito.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Dina-download at ina-activate ang isang ability pack mula sa registry.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Dini-disable ang partikular na kakayahan nang hindi inaalis ang pack. Kapaki-pakinabang para limitahan ang saklaw ng agent sa isang ibinigay na site.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Muling ini-enable ang dating na-disable na kakayahan.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Ipinapakita ang kasalukuyang configuration ng agent at status ng connectivity.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Ipinapakita ang kamakailang aktibidad ng agent mula sa debug log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Nire-reset ang estado ng agent: nililinis ang na-inject na CSS, inaalis ang mga CPT at taxonomy na nairehistro ng agent, nire-reset ang global styles, at inaalisan ng laman ang options cache ng agent. Hindi nito inaalis ang plugin o ang mga setting nito.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Mga Exit Code
+## Mga Exit Code {#exit-codes}
 
 Lahat ng command ay nag-e-exit ng `0` kapag matagumpay. Mga non-zero exit code:
 

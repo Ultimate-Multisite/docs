@@ -3,15 +3,15 @@ title: Validoi paletin kontrasti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validoi paletin kontrasti
+# Validoi paletin kontrasti {#validate-palette-contrast}
 
 **Validate Palette Contrast** -kyky tarkistaa suunnittelupalettisi väriparit WCAG (Web Content Accessibility Guidelines) -vaatimustenmukaisuuden osalta ennen niiden käyttämistä teemassasi.
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 Tämä kyky varmistaa, että sivustosi värimaailma täyttää saavutettavuusstandardit validoimalla tekstin ja taustavärien väliset kontrastisuhteet. Se auttaa estämään väriyhdistelmiä, joita näkörajoitteisten käyttäjien voi olla vaikea lukea.
 
-## Syötemuoto
+## Syötemuoto {#input-format}
 
 Kyky hyväksyy syötteenä väripaletin:
 
@@ -35,7 +35,7 @@ Kyky hyväksyy syötteenä väripaletin:
 }
 ```
 
-### Parametrit
+### Parametrit {#parameters}
 
 | Parametri | Tyyppi | Pakollinen | Kuvaus |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Kyky hyväksyy syötteenä väripaletin:
 | `wcag_level` | string | Ei | WCAG-vaatimustenmukaisuuden taso: "A", "AA" (oletus) tai "AAA" |
 | `pairs_to_check` | array | Ei | Tietyt validoitavat väriparit (esim. `["primary-text", "background-text"]`) |
 
-## Tarkistettavat WCAG-tasot
+## Tarkistettavat WCAG-tasot {#wcag-levels-checked}
 
 Kyky validoi kontrastisuhteet WCAG-standardien mukaisesti:
 
@@ -56,7 +56,7 @@ Kyky validoi kontrastisuhteet WCAG-standardien mukaisesti:
 - **Normaali teksti** — teksti, joka on pienempi kuin 18 pt (tai 14 pt lihavoituna)
 - **Suuri teksti** — teksti, joka on 18 pt tai suurempi (tai 14 pt lihavoituna tai suurempi)
 
-## Tulosskeema
+## Tulosskeema {#output-schema}
 
 Kyky palauttaa yksityiskohtaisen validointiraportin:
 
@@ -95,7 +95,7 @@ Kyky palauttaa yksityiskohtaisen validointiraportin:
 }
 ```
 
-### Tulosteen kentät
+### Tulosteen kentät {#output-fields}
 
 | Kenttä | Tyyppi | Kuvaus |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Kyky palauttaa yksityiskohtaisen validointiraportin:
 | `status` | string | "pass" tai "fail" jokaiselle parille |
 | `recommendations` | array | Ehdotukset hylättyjen parien parantamiseksi |
 
-## Käyttöesimerkki
+## Käyttöesimerkki {#usage-example}
 
 **Kehote:**
 ```
@@ -119,7 +119,7 @@ Kyky validoi kaikki väriyhdistelmät ja palauttaa:
 - ✅ Tausta + teksti: suhde 12.1:1 (läpäisee WCAG AAA:n)
 - Kokonaisuutena: WCAG AA -yhteensopiva
 
-## Integrointi Theme Builderiin
+## Integrointi Theme Builderiin {#integration-with-theme-builder}
 
 Kun käytät Theme Builderin suunnittelusuunnan valintaa, Validate Palette Contrast -kyky:
 
@@ -129,7 +129,7 @@ Kun käytät Theme Builderin suunnittelusuunnan valintaa, Validate Palette Contr
 4. Tarjoaa suosituksia vaatimustenvastaisille pareille
 5. Estää saavuttamattomien värimaailmojen käyttämisen
 
-## Parhaat käytännöt
+## Parhaat käytännöt {#best-practices}
 
 - **Aloita AA-tasosta** — WCAG AA on standardi useimmille verkkosivustoille
 - **Testaa ennen käyttämistä** — validoi palettisi ennen sitoutumista suunnitteluun
@@ -137,7 +137,7 @@ Kun käytät Theme Builderin suunnittelusuunnan valintaa, Validate Palette Contr
 - **Huomioi käyttäjien mieltymykset** — joillakin käyttäjillä voi olla lisäherkkyyttä väreille
 - **Käytä kontrastintarkistimia** — yhdistä tämä kyky selaintyökaluihin todentamista varten
 
-## Hylätyt parit ja suositukset
+## Hylätyt parit ja suositukset {#failing-pairs-and-recommendations}
 
 Jos väripari ei läpäise validointia, kyky tarjoaa suosituksia:
 
@@ -155,7 +155,7 @@ Jos väripari ei läpäise validointia, kyky tarjoaa suosituksia:
 }
 ```
 
-## Liittyvät kyvyt
+## Liittyvät kyvyt {#related-abilities}
 
 - [Luo Logo SVG](./generate-logo-svg.md) — luo logoja validoidulla väripaletillasi
 - [Luo valikko](./create-menu.md) — rakenna navigointi saavutettavilla väreillä

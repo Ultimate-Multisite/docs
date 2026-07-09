@@ -3,9 +3,9 @@ title: Ultimate AI Connector WebLLM-ի համար փոփոխություններ
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM փոփոխությունների մատյան
+# Ultimate AI Connector for WebLLM փոփոխությունների մատյան {#ultimate-ai-connector-for-webllm-changelog}
 
-## Տարբերակ 1.1.0 — Թողարկվել է 2026-04-09-ին
+## Տարբերակ 1.1.0 — Թողարկվել է 2026-04-09-ին {#version-110--released-on-2026-04-09}
 
 * Նոր՝ լողացող զրույցի widget՝ admin-bar կարգավիճակի ցուցիչով — ցանկացած մուտք գործած օգտատեր կարող է browser-side LLM-ին հուշում ուղարկել անմիջապես front end-ից։
 * Նոր՝ SharedWorker runtime — MLC շարժիչն այժմ աշխատում է SharedWorker-ում, որպեսզի մի քանի ներդիրներ կիսեն մեկ GPU session՝ դրա համար մրցելու փոխարեն։
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Ուղղում՝ WebLLM-ը միացնել wpai_preferred_text_models filter-ին, որպեսզի AI Experiments հատկությունը ուղղորդվի դեպի browser engine, երբ մոդել է կազմաձևված։
 * Բարելավված՝ cache-busting, բովանդակության նորմալացում և hardware-reference ուղղումներ, որոնք ի հայտ են եկել end-to-end փորձարկման ընթացքում։
 
-## Տարբերակ 1.0.0 — Սկզբնական թողարկում
+## Տարբերակ 1.0.0 — Սկզբնական թողարկում {#version-100--initial-release}

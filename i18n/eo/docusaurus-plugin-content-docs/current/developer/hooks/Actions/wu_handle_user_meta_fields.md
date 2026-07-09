@@ -4,11 +4,11 @@ title: Ago - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Ago: wu_handle_user_meta_fields
+# Ago: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Permesas al plugin-programistoj konservi uzantajn metadatumojn en malsamaj manieroj, se ili bezonas.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Permesas al plugin-programistoj konservi uzantajn metadatumojn en malsamaj manie
 | $customer | `\Customer` | La Ultimate Multisite-kliento-objekto. |
 | $checkout | `\Checkout` | La checkout-klaso. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.0.4
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) ĉe linio 1244

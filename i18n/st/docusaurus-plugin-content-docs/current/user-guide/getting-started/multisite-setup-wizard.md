@@ -3,7 +3,7 @@ title: Mokotso o lebo ea ho setso oa multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Setso ea Hohoho ho Multisite
+# Setso ea Hohoho ho Multisite {#multisite-setup-wizard}
 
 Kea leboha la setso (Setup Wizard) sa tloha.
 
@@ -13,13 +13,13 @@ Ultimate Multisite e na le wizard o tsamaisang (built-in) o tla fana ka tsela e 
 Ha ho na lefa ka ho fana ka WordPress e le multisite network, u ka tloha le tsela ena. Leza (wizard) ha a hlalosa fa multisite ha a fana a fihla.
 :::
 
-## Lefa Leza Ho Fana?
+## Lefa Leza Ho Fana? {#when-does-the-wizard-appear}
 
 Ha o fana ka u fana Ultimate Multisite ka ho ba le WordPress e le se le fetileng (se se ne se le Multisite), bo plugin ya bona hore Multisite ha se lefetileng, ho ba le ho hlalosa u ka tloha ka Multisite Setup Wizard le ho hlalosa le ho hlalosa le ho hlalosa le ho hlalosa le ho hlalosa.
 
 U ka ho fana ka ho fetola ka se se se ka **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Ho Baile (Prerequisites)
+## Ho Baile (Prerequisites) {#prerequisites}
 
 Ha ntsa ho fana le se se se ka ho fana ka ho baile:
 
@@ -31,7 +31,7 @@ Ha ntsa ho fana le se se se ka ho fana ka ho baile:
 Le wizard o fetola lipoti la hau la `wp-config.php` le ho fetola table e ntlha ea database. Ho ba le backup hantle ka ntlha ya ho tsamaea.
 :::
 
-## Step 1: Welamale
+## Step 1: Welamale {#step-1-welcome}
 
 Mokhoa oa wena o tla reka hore na lefa WordPress Multisite ke eng le hore na le wizard o tla etsa eng:
 
@@ -44,11 +44,11 @@ Mokhoa oa wena o tla reka hore na lefa WordPress Multisite ke eng le hore na le 
 
 Hloka **Continue** ho haholo ho laola.
 
-## Step 2: Configuration ea Network (Network Configuration)
+## Step 2: Configuration ea Network (Network Configuration) {#step-2-network-configuration}
 
 Tse taba ena e bua ka ho setsoa litlhahiselo tsa hau tsa network.
 
-### Ho Setso ea Structure ea Site (Site Structure)
+### Ho Setso ea Structure ea Site (Site Structure) {#site-structure}
 
 U-thabela hore o baithuti ba lona ba leba kae:
 
@@ -57,11 +57,11 @@ U-thabela hore o baithuti ba lona ba leba kae:
 :::note
 Ha uba ka uba sub-domains, o tla hloka ho setsoa **wildcard DNS** le **wildcard SSL certificate** ho domain ea hau. Baibua [Ultimate Multisite 101](./ultimate-multisite-101) ho bona lipaolo tse ntlha ho ba le bohlokoa.
 
-### Leetso la Netwaka (Network Title)
+### Leetso la Netwaka (Network Title) {#network-title}
 
 Ho fana ka leela la netwaka la hau. Ho tsamaiso ho fetoga leela la site la hau le "Network" ho fana. U ka fetola lehlelo lehlelo la ho feta ka tsela efe mo settings tsa netwaka.
 
-### Email ea Admin ea Netwaka (Network Admin Email)
+### Email ea Admin ea Netwaka (Network Admin Email) {#network-admin-email}
 
 Lefatse leletse la email e o tšoa ho fanaelang ho litšoa tsa litiro tsa litiro tsa netefika. Le tla fanaana le email ea morao o neng a sebelisang.
 
@@ -69,7 +69,7 @@ Lefatse leletse la email e o tšoa ho fanaelang ho litšoa tsa litiro tsa litiro
 
 Ho feta fa u fana ka ba le litlhaka tsa hau, u tsamaetsa ka **Continue**.
 
-## Step 3: Ho Installisa
+## Step 3: Ho Installisa {#step-3-installation}
 
 U tsamaetsa ka bojhwe la **Install** ho haholo. Bojhwe lebo le dira tsela lima tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pampano tse pamp
 
@@ -97,7 +97,7 @@ Ha o ka sebope ka sebope sa tsela hantle, u tla bona litlhahlo tsa "Success!" le
 
 Ho fana'a ka ho tsamaea go tloha kwa morao wa ho fihla.
 
-## Step 4: Ho Fihla
+## Step 4: Ho Fihla {#step-4-complete}
 
 Ha o fihle fa ho fihla, o tla bona litshobo tsa boikotso le seo se bua sa ho ntlha hore WordPress Multisite e ne e tsamaisa.
 
@@ -109,7 +109,7 @@ U ka seka ho fana ka setshwantshwa sa Ultimate Multisite ho fana le ho lula (con
 Ha o ka hlobo ha ho fihla lehle la multisite efeletse, sefomohong sa hau se tla fihla ka admin ya network e fetileng. Ho ka hloka ho fihla fa u tla fihla fa cookies ea authentication di fetileng ho tloha ho multisite environment.
 :::
 
-## Setso Se Sebebehang Se Letsatsi Le Letsoho
+## Setso Se Sebebehang Se Letsatsi Le Letsoho {#manual-setup-fallback}
 
 Ha re ka seba hore le wizzard (wizard) se ka tsamaya ho liketsoeng sa `wp-config.php` ea hau (ka sebelelinga tsa litšomo kapa tsela e tsoang ea server), e tla ba le code e hloka ho fana ka manu:
 
@@ -117,13 +117,13 @@ Ha re ka seba hore le wizzard (wizard) se ka tsamaya ho liketsoeng sa `wp-config
 
 Ho lapa lehlelo la ho tsoela (Troubleshooting)
 
-### Le wizzard a re kea hore wp-config.php ha se ka tsamaisang
+### Le wizzard a re kea hore wp-config.php ha se ka tsamaisang {#troubleshooting}
 
 Ha u fetole litshobelo tse di dirileng, u reka le page lefa, le wizzard o tla bona hore multisite e neng e tsamaile (active).
 
-## Ho tsoela (Troubleshooting)
+## Ho tsoela (Troubleshooting) {#the-wizard-says-wp-configphp-is-not-writable}
 
-### Le wizzard a re kea hore wp-config.php ha se ka tsamaisang
+### Le wizzard a re kea hore wp-config.php ha se ka tsamaisang {#sites-are-not-accessible-after-setup-subdomains}
 
 Ha u fetole litshobelo tse di dirileng, u reka le page lefa, le wizzard o tla bona hore multisite e neng e tsamaile (active).
 
@@ -132,7 +132,7 @@ Ho fana'a, sehlopha sa web server (web server process) se hloka litlhokomelo tsa
 - Ho fana ka tšhaba le tšhaba tsa lofile ho ba le `644` kapa `666`
 - Usa le litšomo tsa ho setso tse di dirwang le liho tse di hohomang kea le liho tse di hohomang
 
-### Sites haholo ho ba lelelo (subdomains)
+### Sites haholo ho ba lelelo (subdomains) {#authentication-issues-after-setup}
 
 Ha o ne u ba leboho ka ho ba leka le tšhobo ea subdomain structure, u hloka ho setso **wildcard DNS** ho domain ea hau. Re tshepa record ea DNS:
 
@@ -144,7 +144,7 @@ Value: [your server IP]
 
 Re tla tsamaea le baotang ba hau ha u le bohle ka ho tseba hore o ka setseha kae.
 
-### Morero ea ho fihlela haholo ka ho setso
+### Morero ea ho fihlela haholo ka ho setso {#a-step-failed-during-installation}
 
 Ha u le thabela (logged out) kapa u leboha li-cookie (cookie errors) haholo ka ho setsoa multisite:
 

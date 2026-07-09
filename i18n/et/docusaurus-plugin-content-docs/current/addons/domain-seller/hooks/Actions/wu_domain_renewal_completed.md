@@ -4,11 +4,11 @@ title: Toiming - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Tegevus: wu_domain_renewal_completed
+# Tegevus: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Käivitatakse pärast seda, kui domeen on edukalt uuendatud.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Käivitatakse pärast seda, kui domeen on edukalt uuendatud.
 | $renewal_data | `array&lt;string,mixed&gt;` | Uuendamise metaandmed (domain_name, years, customer_id jne). |
 | $result | `array&lt;string,mixed&gt;` | Registripidaja tagastatud töötlemata tulemuste massiiv, sealhulgas uus expiry_date. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) real 594

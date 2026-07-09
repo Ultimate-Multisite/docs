@@ -4,11 +4,11 @@ title: Nzacha - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Kwe ka ndị mmepe gbanwee ọdịnaya ikpeazụ
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Kwe ka ndị mmepe gbanwee ọdịnaya ikpeazụ
 | $to_replace | `array` | Array nwere placeholders echekwara. |
 | $placeholder_count | `int` | Ọnụọgụ placeholders achọtara. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 1.4.0
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) na ahịrị 46
 
 
-## Returns
+## Returns {#returns}
 Ọdịnaya mgbe emechara mgbanwe.

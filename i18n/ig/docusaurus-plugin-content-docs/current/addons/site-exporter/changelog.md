@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe nke Onye Mbupụ Saịtị
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Ndekọ Mgbanwe Site Exporter
+# Ndekọ Mgbanwe Site Exporter {#site-exporter-changelog}
 
 Ụdị: 1.0.6 - Ewepụtara na 2026-05-11
 * Ọhụrụ: Mbupụ saịtị ugbu a na-agbakọta index.php na-amalite onwe ya ka ZIP wee nwee ike itinye na host ọhụrụ na-enweghị itinye plugin iche
@@ -20,19 +20,19 @@ _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 
 * Gbanwee prefix ka ọ bụrụ ultimate-multisite; melite text domain; bulie ụdị.
 
-### Ụdị 1.0.1 - Ewepụtara na 2023-08-09
+### Ụdị 1.0.1 - Ewepụtara na 2023-08-09 {#version-101---released-on-2023-08-09}
 
 * Emeziwanye: Ugbu a na-ahụ na enwetara file path ziri ezi nke faịlụ importer.
 * Edoziri: Gbanyụrụ object cache iji gbochie njehie n’oge import.
 * Edoziri: Edoziri nsogbu nke njikọ nbudata plugin importer na-adịghị arụ ọrụ.
 
-### Ụdị 1.0.0 - Ewepụtara na 2022-12-23
+### Ụdị 1.0.0 - Ewepụtara na 2022-12-23 {#version-100---released-on-2022-12-23}
 
 * Edoziri: Popup fọm export anaghị ebudata;
 * Edoziri: Faịlụ Javascript anaghị ebudata na peeji export;
 * N'ime: Usoro build ọhụrụ;
 
-### Ụdị 1.0.0-beta.4 - Ewepụtara na 2022-01-13
+### Ụdị 1.0.0-beta.4 - Ewepụtara na 2022-01-13 {#version-100-beta4---released-on-2022-01-13}
 
 * N'ime: Agbakwunyere hooks na filters generator;
 * N'ime: Agbakwunyere WP Ultimo stubs maka ịdị mma ndụ onye mmepe;

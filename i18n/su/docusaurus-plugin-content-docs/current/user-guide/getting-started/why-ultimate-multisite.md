@@ -3,11 +3,11 @@ title: Naha Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Nahaun Naon Alasanna Ultimate Multisite
+# Nahaun Naon Alasanna Ultimate Multisite {#why-ultimate-multisite}
 
 Lamun anjeun maca artikel ieu, kamungkinan anjeun geus ngadéngkeun yén plugin urang bisa jadi solusi pikeun ngajantenkeun ide bisnis anjeun jadi nyata. Kami ngarepkeun anjeun bakal meunang jawaban anu dipikahoyong ku ahirna tulisan ieu.
 
-## Naon éta Ultimate Multisite?
+## Naon éta Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite téh plugin WordPress Multisite anu bisa ngabantu anjeun nawarkeun layanan WaaS (Website as a Service) ka pelanggan. Kalayan plugin urang, anjeun bisa nyiapkeun sababaraha tingkatan langganan jeung ngajadikeun pelanggan bayar biaya rutin pikeun ngagunakeun situs di jaringan Multisite anjeun.
 
@@ -15,7 +15,7 @@ Ultimate Multisite ngabantu anjeun nampa pembayaran ku berbagai gateway (saperti
 
 Jeung ieu mah ngan ukur mimiti, sabab anjeun bisa nambahan fungsiana ku add-ons jeung webhook.
 
-## Fitur séjén
+## Fitur séjén {#other-features}
 
 Ultimate Multisite ogé nawiskeun:
 
@@ -33,11 +33,11 @@ Jeung hal-hal leuwih canggih deui:
 
 * Search and Replace API: Anjeun ogé bisa ngajadikeun anotasi kana template situs kalawan placeholder saperti {{site_name}} jeung maké Search and Replace API pikeun ngaganti placeholder éta ku informasi anu dipasihkeun ku pelanggan sorangan sanggeus pendaan, otomatis.
 
-## Kasus Pake (Use cases)
+## Kasus Pake (Use cases) {#use-cases}
 
 Ayeuna waktuna pikeun ningali sababaraha kasus pangguna Ultimate Multisite.
 
-### Kasus 1: Agensi
+### Kasus 1: Agensi {#case-1-an-agency}
 
 Biasana kaparigelan inti hiji agensi nyaéta desain situs web kalawan aspek saperti hosting atawa marketingna dicaritakeun salaku jasa tambahan.
 
@@ -47,7 +47,7 @@ Kontrol anu ketat kana plugin je tema dipertahankeun dumasar kana unggal produk 
 
 Agensi bakal tenang makanya nganggo Ultimate Multisite bisa ngalakukeun hal panghadéna - mendesain website anu luar biasa.
 
-### Kasus 2: Penyedia Niche (Spesialis)
+### Kasus 2: Penyedia Niche (Spesialis) {#case-2-niche-provider}
 
 Ada paribasa baheul anu nyarios, “Laksanake hiji hal jeung jalanke kalawan saé.” Pikeun loba spesialis, éta hartina ngadamel produk atawa jasa diwarungkeun kana hiji ide utama.
 
@@ -57,7 +57,7 @@ Salah sahiji fitur inovatif Ultimate Multisite nyaéta template site. Ieu téh t
 
 Pikeun penyedia situs je jasa niche, ieu mangrupa keuntungan luar biasa dina kemampuan pikeun langsung nyiptake situs anu siap diluncurkeun kalawan plugin je desain khusus. Pelanggan ngan ukur perlu ngahasilkeun input minimal pikeun ngalengkepan jasa éta.
 
-### Kasus 3: Web Hosting WordPress
+### Kasus 3: Web Hosting WordPress {#case-3-wordpress-web-hosting}
 
 Ada loba cara pikeun hosting situs WordPress, tapi jarang pisan gampang saperti nawarkeun ruang web ka pelanggan kalawan versi WordPress anu geus dipasang. Ieu sabab aya sababaraha keputusan je pertimbangan anu kudu digabungkeun pikeun ngahasilkeun jasa anu bermakna.
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-poçtlar
+# E-poçtlar {#emails}
 
 Ultimate Multisite: Emails goşmaçasy tor eýelerine sahypalar we agzalyklar bilen bilelikde müşderi e-poçt accountlaryny döretmäge we dolandyrmaga mümkinçilik berýär. 1.1.0 wersiýasy müşderä niýetlenen e-poçt account dolandyryşyny, webmail üçin bir gezeklik girişini, CyberPanel ugradyjy goldawyny we checkout wagtyndaky üpjünçiligiň gowulandyrmalaryny goşýar.
 
-## Esasy aýratynlyklar
+## Esasy aýratynlyklar {#key-features}
 
 * **Müşderi e-poçt account widjeti**: Müşderiler işjeň e-poçt agzalygy bolandan soň öz account sahypasyndan poçta gutularyny döredip we dolandyryp bilerler.
 * **Webmail SSO we magic linkler**: Üznüksiz hyzmat üpjün ediji muny goldaýan bolsa, müşderiler account sahypasyndan bir basyşly tassyklama bilen webmail-i gönüden-göni açyp bilerler.
@@ -20,14 +20,14 @@ Ultimate Multisite: Emails goşmaçasy tor eýelerine sahypalar we agzalyklar bi
 * **CyberPanel ugradyjylary**: CyberPanel bilen işleýän torlar e-poçt hyzmat akymynyň bir bölegi hökmünde e-poçt ugradyjylaryny döredip we dolandyryp bilerler.
 * **Üznüksiz hyzmat üpjün edijä görä sazlamalar**: Sazlamalar sahypasy üpjün edijileri işjeň, sazlanan integrasiýalara görä süzýär, şonuň üçin administratorlar diňe ulanyp bolýan opsiýalary görýärler.
 
-## Talaplar
+## Talaplar {#requirements}
 
 * Ultimate Multisite 2.0.0 ýa-da has ýokary
 * WordPress Multisite gurnamasy
 * Iň azyndan bir sazlanan e-poçt üpjün ediji integrasiýasy
 * Poçta gutularyny döretmäge, parollary üýtgetmäge we goldanylýan ýerlerde webmail giriş linklerini bermäge rugsady bolan üpjün ediji API maglumatlary
 
-## Gurnama
+## Gurnama {#installation}
 
 1. Plugin faýllaryny `/wp-content/plugins/ultimate-multisite-emails` içine ýükläň.
 2. WordPress tor administratoryndaky **Pluginler** bölüminden goşmaçany tor derejesinde işjeňleşdiriň.
@@ -35,7 +35,7 @@ Ultimate Multisite: Emails goşmaçasy tor eýelerine sahypalar we agzalyklar bi
 4. Müşderileriň ulanmagyny isleýän e-poçt üpjün ediji integrasiýalaryňyzy işjeňleşdiriň.
 5. Sazlamalary saklaň, soňra önümçilik däl müşderi ýa-da staging sahypasy bilen account döretmegi synap görüň.
 
-## E-poçt satyjy akymy nähili işleýär
+## E-poçt satyjy akymy nähili işleýär {#how-the-email-seller-flow-works}
 
 E-poçt satmagyň iki aýratyn gatlagy bar:
 
@@ -53,7 +53,7 @@ Bu adaty müşderi akymynyň şeýle bolýandygyny aňladýar:
 5. Şol işjeň e-poçt agzalygy üçin **E-poçt Accountlary** paneli peýda bolýar.
 6. Müşderi **Account döret** düwmesine basýar, `info` ýaly ýerli bölegi girizýär, parol belleýär we goşmaça sazlanan üpjün edijide `info@their-domain.com` döredýär.
 
-## E-poçt önümini sazlaň
+## E-poçt önümini sazlaň {#configure-an-email-product}
 
 Satmak ýa-da mugt bermek isleýän her e-poçt paketiňiz üçin bir e-poçt önümini dörediň. Önüm sazlamasyna täze bolsaňyz, [Ilkinji abuna önümňizi döretmek](../../user-guide/configuration/creating-your-first-subscription-product) bilen başlaň, soňra e-poçta mahsus sazlamalar üçin şu ýere gaýdyp geliň.
 
@@ -67,7 +67,7 @@ Satmak ýa-da mugt bermek isleýän her e-poçt paketiňiz üçin bir e-poçt ö
 
 Üpjün ediji saýlaýjyda diňe **Integrasiýalar** sahypasynda işjeňleşdirilen we doly sazlanan üpjün edijiler görkezilýär. Saýlaýjy boş bolsa, ilki üpjün edijini sazlaň we synap görüň.
 
-## Checkout-a e-poçt goşuň
+## Checkout-a e-poçt goşuň {#add-email-to-checkout}
 
 E-poçt önümleri köplenç sahypa planyna goşmaça hökmünde hödürlenýär. Umumy checkout redaktorynyň iş akymy üçin [Checkout formalary](../../user-guide/configuration/checkout-forms) serediň.
 
@@ -79,7 +79,7 @@ E-poçt önümleri köplenç sahypa planyna goşmaça hökmünde hödürlenýär
 
 E-poçt domeni müşderiniň sahypa domeninden alynýar. Müşderiler e-poçt önümi ädiminde e-poçt domenini girizmeýärler.
 
-## Müşderi Account e-poçt dolandyryşy
+## Müşderi Account e-poçt dolandyryşy {#customer-account-email-management}
 
 1.1.0 wersiýasy müşderi account sahypasyna e-poçt dolandyryş widjetini goşýar. Müşderiler öz sahypalary üçin poçta gutusyny döretmegi we hyzmat etmegi özbaşdak ýerine ýetirmeli bolanda ony ulanyň.
 
@@ -94,7 +94,7 @@ Widjet Ultimate Multisite account sahypasynyň currents ulgamyny ulanýar, şonu
 
 Müşderi e-poçta panelini görmese, onuň **işjeň e-poçta önüm agzalygynyň** bardygyny, agzalygyň saýtyň domenine baglanandygyny we önümiň sazlanan üpjün edijisiniň bardygyny barlaň.
 
-## Müşderä Mugt E-poçta Planyny Bermek
+## Müşderä Mugt E-poçta Planyny Bermek {#giving-a-customer-a-free-email-plan}
 
 Müşderä töleg almazdan e-poçta bermek üçin ilki **e-poçta hukugyny** beriň, soňra poçta gutusyny dörediň ýa-da müşderiniň döretmegine rugsat beriň.
 
@@ -106,7 +106,7 @@ Maslahat berilýän mümkinçilikler:
 
 Müşderiniň poçta gutusyny account sahypasyndan özi dolandyrmagyny isleýän bolsaňyz, onuň domen üçin işjeň e-poçta agzalygynyň bardygyna göz ýetiriň. Şol agzalyksyz el bilen döredilen üpjün ediji poçta gutusy bolup biler, emma müşderi onuň üçin öz-özüne hyzmat edýän e-poçta panelini görmän biler.
 
-## Admin Tarapyndan Döredilen Account-lar we "Sargyt Belgisi Ýok"
+## Admin Tarapyndan Döredilen Account-lar we "Sargyt Belgisi Ýok" {#admin-created-accounts-and-no-order-number}
 
 **E-poçta Account-lary** admin sahypasy üpjün ediji poçta gutusyny döredýär ýa-da redaktirleýär. Bu e-poçta planyny satmak ýa-da bermek üçin ilkinji ädim däl.
 
@@ -122,7 +122,7 @@ Munuň ýerine şu iş tertibini ulanyň:
 
 Diňe müşderi üçin üpjün ediji poçta gutusyny döretmek gerek bolsa we öz-özüne hyzmat edýän account sahypasyndan dolandyryş gerek däl bolsa, admin tarapyndan döredilen account ýeterlik bolup biler. Müşderiniň ony Ultimate Multisite-de görmegini we dolandyrmagyny isleýän bolsaňyz, e-poçta agzalygyny hem dörediň.
 
-## Webmail SSO we Magic-Link bilen Giriş
+## Webmail SSO we Magic-Link bilen Giriş {#webmail-sso-and-magic-link-login}
 
 Webmail SSO müşderilere account sahypasyndan göni **webmail aç** hereketini berýär. Işjeň üpjün ediji tarapyndan goldananda, addon gysga möhletli giriş URL-ni soraýar we müşderiden poçta gutusy maglumatlaryny göçürmegi talap etmezden ony webmail-e ugrukdyrýar.
 
@@ -134,7 +134,7 @@ Webmail SSO müşderilere account sahypasyndan göni **webmail aç** hereketini 
 
 Webmail girişini diňe zerur API maglumatlaryny sazlan üpjün edijileriňiz üçin işlediň. Eger bir üpjün ediji üçin hereket ýok bolsa, ilki üpjün edijiniň işjeňdigini, sazlanandygyny we webmail giriş baglanyşyklaryny goldaýandygyny tassyklaň.
 
-## Checkout Üsti Bilen Provisioning
+## Checkout Üsti Bilen Provisioning {#checkout-provisioning}
 
 Addon checkout wagtynda e-poçta **agzalyk kontekstini** provisioning edýär. Ol üpjün edijini, account çägini, kwotany we saýtyň domenini ýazga alýar, şeýlelikde müşderiler satyn alyşdan soň account sahypasyndan öz poçta gutusy atlaryny döredip bilerler.
 
@@ -148,15 +148,15 @@ Maslahat berilýän işe girizme:
 
 Provisioning şowsuz bolsa, e-poçta agzalygy ýa-da üpjün ediji poçta gutusy administrator tarapyndan yzarlamagy talap edýän wagtynda müşderi account-y we agzalyk şonda-da bar bolup biler. Gaýtadan synanyşmazdan öň Ultimate Multisite işjeňlik žurnallaryny we üpjün ediji žurnallaryny barlaň.
 
-## CyberPanel E-poçta Ugradyjylary
+## CyberPanel E-poçta Ugradyjylary {#cyberpanel-email-forwarders}
 
 CyberPanel bilen goldanýan torlar üçin 1.1.0 wersiýasy e-poçta ugradyjy goldawyny goşýar. Müşderilere doly poçta gutusyny döretmezden `info@customer-domain.test` ýaly salgylary başga bir gutyja ugratmak gerek bolanda ugradyjylary ulanyň.
 
 Ugradyjylary hödürlemezden öň CyberPanel integrasiýasynyň sazlanandygyny we elýeterlidigini tassyklaň. Zerur host, ulanyjy ady, parol we paket konstantalary üçin [CyberPanel Integrasiýasy](../../user-guide/administration/cyberpanel-integration) gollanmasyna serediň.
 
-## Üýtgeşmeler Žurnaly
+## Üýtgeşmeler Žurnaly {#changelog}
 
-### Wersiýa 1.1.0 - 2026-05-05 senesinde çykaryldy
+### Wersiýa 1.1.0 - 2026-05-05 senesinde çykaryldy {#version-110---released-on-2026-05-05}
 
 * Täze: Webmail SSO we magic-link giriş — müşderiler bir basyşly tassyklama bilen öz Accountyndan webmail-e göni girip bilerler.
 * Täze: E-poçta Account dolandyryş widgetyna paroly üýtgetmek funksiýasy goşuldy.
@@ -170,28 +170,28 @@ Ugradyjylary hödürlemezden öň CyberPanel integrasiýasynyň sazlanandygyny w
 * Düzetme: Email_Account_Manager başlangyjyndan her haýyş boýunça log spam aýryldy.
 * Kämilleşdirildi: Settings sahypasy indi diňe işjeň we sazlanan e-poçta üpjün edijileri görkezmek üçin süzgüçleýär.
 
-## Ýygy-ýygydan soralýan soraglar
+## Ýygy-ýygydan soralýan soraglar {#frequently-asked-questions}
 
-### Müşderiler öz e-poçta Accountlaryny döredip bilermi?
+### Müşderiler öz e-poçta Accountlaryny döredip bilermi? {#can-customers-create-their-own-email-accounts}
 
 Hawa. Müşderiniň bir domen üçin işjeň e-poçta agzalygy bar bolsa we önüm goşmaça Accountlara rugsat berýän bolsa, müşderiler Account sahypasyndan öz poçta gutularyny döredip we dolandyryp bilerler.
 
-### Her üpjün ediji webmail SSO goldaýarmy?
+### Her üpjün ediji webmail SSO goldaýarmy? {#does-every-provider-support-webmail-sso}
 
 Ýok. SSO we magic-link goldawy işjeň e-poçta üpjün edijisine bagly. Access-link API bolmadyk üpjün edijiler hem poçta gutusy döretmegi we parol üýtgetmegi goldap bilerler.
 
-### Administratorlar müşderiler üçin e-poçta Accountlaryny döredip bilermi?
+### Administratorlar müşderiler üçin e-poçta Accountlaryny döredip bilermi? {#can-administrators-create-email-accounts-for-customers}
 
 Hawa. Administratorlar admin interfeýsinden e-poçta Accountlaryny döredip bilerler, şol sanda Account döredilende başlangyç paroly bellemek hem. Müşderiniň öz-özüňe hyzmat dolandyryşy üçin, müşderiniň domen üçin işjeň e-poçta agzalygynyň bardygyna hem göz ýetiriň.
 
-### E-poçta Accountyny mugt berip bilerinmi?
+### E-poçta Accountyny mugt berip bilerinmi? {#can-i-give-an-email-account-away-for-free}
 
 Hawa. Mugt/nol bahaly Email önümini dörediň we ony müşderi üçin işjeň agzalyk hökmünde goşuň, ýa-da müşderä 100% arzanladyş bilen checkout tamamlamaga rugsat beriň. E-poçta agzalygy bar bolandan soň, müşderi ýa-da administrator hakyky poçta gutusyny döredip biler.
 
-### Näme üçin e-poçta Accountyny bellemek sargyt belgisini soraýar?
+### Näme üçin e-poçta Accountyny bellemek sargyt belgisini soraýar? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Membership meýdany bar bolan Ultimate Multisite agzalygyny onuň salgylanma/sargyt belgisi boýunça gözleýär. Eger müşderi e-poçta önümini satyn almadyk bolsa we siz e-poçta agzalygyny el bilen döretmedik bolsaňyz, bellemek üçin e-poçta agzalygy/sargydy ýok. Ilki e-poçta agzalygyny dörediň, soňra poçta gutusyny dörediň ýa-da belläň.
 
-### Forwarderler poçta gutulary bilen birmeňzeşmi?
+### Forwarderler poçta gutulary bilen birmeňzeşmi? {#are-forwarders-the-same-as-mailboxes}
 
 Ýok. Poçta gutusy poçtany saklaýar we giriş maglumatlary bar. Forwarder poçtany başga salgyga gönükdirýär we aýratyn inbox üpjün etmeýär.

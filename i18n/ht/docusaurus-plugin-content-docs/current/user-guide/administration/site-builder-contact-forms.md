@@ -3,11 +3,11 @@ title: Fòm Kontak Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Fòms Kontak Site Builder
+# Fòms Kontak Site Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 ajoute la kapasite de kreye fòm kontak dirèkt nan entèfas chat la itilize agent Site Builder. Sa pèmèt ou ajoute fòm kontak ki fonksyone byen sou nenpòt paj san ou pa kite chat la.
 
-## Aperçu
+## Aperçu {#overview}
 
 Kapasite fòm kontak Site Builder (`create_contact_form`) otomatikman detekte plugin fòm ou genyen epi kreye yon fòm kontak itilize kapasite natif plugin la. Plugin fòm ki sipòte yo gen ladan:
 
@@ -18,7 +18,7 @@ Kapasite fòm kontak Site Builder (`create_contact_form`) otomatikman detekte pl
 
 Asistan an otomatikman chwazi pi bon plugin fòm ki disponib sou sit ou a epi li jenere yon fòm kontak ki adapte pou sa plugin la.
 
-## Kreye Yon Fòm Kontak
+## Kreye Yon Fòm Kontak {#creating-a-contact-form}
 
 Pou kreye yon fòm kontak itilize Site Builder:
 
@@ -34,7 +34,7 @@ Pou kreye yon fòm kontak itilize Site Builder:
 
 4. Site Builder la pral jenere fòm kontak a epi li tounen yon shortcode ki pare pou mete l anba (embed).
 
-## Itilize Shortcode Jenere a
+## Itilize Shortcode Jenere a {#using-the-generated-shortcode}
 
 ApSite Builder kreye fòm kontak a, li tounen yon shortcode (pa egzanp, `[contact-form-7 id="123"]`). Ou ka:
 
@@ -45,11 +45,11 @@ ApSite Builder kreye fòm kontak a, li tounen yon shortcode (pa egzanp, `[contac
 
 3. **Sè li itilize nan yon template** — Si ou konfòtab ak PHP, ou ka ajoute shortcode a nan yon fichye template thèm ou an.
 
-## Kòmanize Fòm Kontak la
+## Kòmanize Fòm Kontak la {#customizing-the-contact-form}
 
 Malgre Site Builder la kreye fòm kontak a, ou ka kòmanize l pi l:
 
-### Fò Mid Chat Interface la
+### Fò Mid Chat Interface la {#via-the-chat-interface}
 
 Mandate Site Builder la modifye fòm la:
 
@@ -57,7 +57,7 @@ Mandate Site Builder la modifye fòm la:
 
 Site Builder la ap mete ajou sou fòm lan epi li pral retounen ak shortcode ki te mete ajou a.
 
-### Fò Mid Admin Interface plaj Plugin Fòm la
+### Fò Mid Admin Interface plaj Plugin Fòm la {#via-the-form-plugins-admin-interface}
 
 Ou ka kòmanize fòm nan dirèkteman nan tout konfigirasyon plugin fòm ou an:
 
@@ -65,7 +65,7 @@ Ou ka kòmanize fòm nan dirèkteman nan tout konfigirasyon plugin fòm ou an:
 2. Jwenn fòm ki te kreye pa Site Builder la.
 3. Edite chak chat fòm, règ validasyon, ak notifikasyon imèl yo jan ou bezwen.
 
-## Plugin Fòm ak Konpatibilite
+## Plugin Fòm ak Konpatibilite {#form-plugins-and-compatibility}
 
 Site Builder la otomatikman detekte ki plugin fòm ki enstale sou sit ou an epi li itilize l pou kreye fòm kontak a. Si gen plizyè plugin fòm enstale, Site Builder la ap bay priyorite yo nan lòd sa a:
 
@@ -76,7 +76,7 @@ Site Builder la otomatikman detekte ki plugin fòm ki enstale sou sit ou an epi 
 
 Si okenn nan plugin sa yo pa enstale, Site Builder la pral rekòmande pou ou enstale youn an anvan li kreye fòm kontak a.
 
-## Notifikasyon Imèl
+## Notifikasyon Imèl {#email-notifications}
 
 Fòm kontak ki te kreye pa Site Builder la konfigire pou voye notifikasyon imèl bay administrateur sit la pa default. Ou ka kòmanize adrès imèl reseptè ak mesaj notifikasyon an:
 
@@ -91,21 +91,21 @@ Pou enstriksyon detaye, referans dokiman plugin fòm ou a:
 - [Notifikasyon Email Fluent Forms](https://fluentforms.com/docs/)
 - [Notifikasyon Email Gravity Forms](https://docs.gravityforms.com/)
 
-## Egzanp Itilizasyon
+## Egzanp Itilizasyon {#example-use-cases}
 
-### Contact Form Senp
+### Contact Form Senp {#simple-contact-form}
 
 > "Kreye yon contact form senp ki gen chèf non, email, ak mesaj."
 
-### Form Ki Anpil Etap
+### Form Ki Anpil Etap {#multi-step-form}
 
 > "Kreye yon contact form ki gen yon etap premye pou enfòmasyon kontak epi yon etap de pou mesaj la ak metòd kontak pèfò."
 
-### Form Ak Lojik Kondisyonèl
+### Form Ak Lojik Kondisyonèl {#form-with-conditional-logic}
 
 > "Kreye yon contact form ki montre diferan chèf selon chwazi itilizat la nan yon dropdown."
 
-### Form Ak Lòt Chèf Fichye (File Upload)
+### Form Ak Lòt Chèf Fichye (File Upload) {#form-with-file-upload}
 
 > "Kreye yon contact form ki pèmèt itilizat yo telechaje yon fichye oswa yon atachman."
 

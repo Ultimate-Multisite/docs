@@ -3,31 +3,31 @@ title: Integratio WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integratio WPMU DEV
+# Integratio WPMU DEV {#wpmu-dev-integration}
 
-## Visio
+## Visio {#overview}
 WPMU DEV est platforma WordPress completa quae hostium, pluginus et servitia ad sita WordPress offerit. Ha integratio permittit sincronizandum automaticum domini et gestionem certificatibus SSL inter Ultimate Multisite et hosting WPMU DEV.
 
-## Caracteres
+## Caracteres {#features}
 - Sincronizatio dominii automatica
 - Gestionem certificatorum SSL
 - Tentamina verificandi certificatei SSL extendentia
 
-## Requisitos
+## Requisitos {#requirements}
 Integratio automaticiter detegit si tu hostis in WPMU DEV et API incorporatam usus facit. Nulla configuration addita requiritur si hostis in WPMU DEV es.
 
 Integratio verifica praesentiam constantiae `WPMUDEV_HOSTING_SITE_ID`, quae automatico definitur cum hostis in WPMU DEV es.
 
-## Instructiones Configurandi
+## Instructiones Configurandi {#setup-instructions}
 
-### 1. Verificatio Hosting WPMU DEV
+### 1. Verificatio Hosting WPMU DEV {#1-verify-wpmu-dev-hosting}
 
 Si hostis in WPMU DEV es, constants necessarias iam debent definita esse. Verifica quod:
 
 1. Constantia `WPMUDEV_HOSTING_SITE_ID` est definita in tuo ambiente
 2. Habes membresiam activa WPMU DEV cum accessu API
 
-### 2. Activatio Integrationis
+### 2. Activatio Integrationis {#2-enable-the-integration}
 
 1. In admin WordPress tuo, ad Ultimate Multisite > Settings adere
 2. Ad tabulam "Domain Mapping" (Mappatio Dominii) naviga
@@ -35,8 +35,8 @@ Si hostis in WPMU DEV es, constants necessarias iam debent definita esse. Verifi
 4. Integracionem WPMU DEV activa fac
 5. "Save Changes" (Salva Cambia) clica
 
-## Quommodo Opera
-### Sincronizatio Dominii
+## Quommodo Opera {#how-it-works}
+### Sincronizatio Dominii {#domain-syncing}
 
 Cum dominium in Ultimate Multisite mappatur:
 
@@ -44,33 +44,33 @@ Cum dominium in Ultimate Multisite mappatur:
 2. Etiam versionem www dominii automaticam addit
 3. WPMU DEV configuration dominii et issuance certificatuum SSL maneat
 
-### Gestionem Certificatorum SSL
+### Gestionem Certificatorum SSL {#ssl-certificate-management}
 
 La integratio est configurata ad incrementum numerus tentationum verificandi certificatuum SSL pro hébergement WPMU DEV, quia temporis potest esse longus ad emissio et installationem certificatorum SSL. Per default, probabit usque ad 10 tentationes ad verificandum certificatuum SSL, comparatum cum normais 5 tentationibus.
 
-## Notae Importantes
+## Notae Importantes {#important-notes}
 
-### Removetur Dominium
+### Removetur Dominium {#domain-removal}
 
 Actualmente, API WPMU DEV non daret viam ad remotionem domiorum. Cum mappula dominii in Ultimate Multisite removetur, dominium in tuo computo hébergement WPMU DEV manebit. Necessaris manuque e itino removi si necesse.
 
-### Authentica API
+### Authentica API {#api-authentication}
 
 Integratio usus facit clave API WPMU DEV quae in database WordPress tua optione `wpmudev_apikey` est. Hoc automatico est configuratum cum situm tuum connectis ad WPMU DEV.
 
-## Solutio Problematum
+## Solutio Problematum {#troubleshooting}
 
-### Problema Connectionis API
+### Problema Connectionis API {#api-connection-issues}
 - Verifica si situm tuum propert connecti ad WPMU DEV
 - Verifica si option `wpmudev_apikey` in database WordPress tua est posta
 - Assure te quod membres WPMU DEV tuus activi sunt
 
-### Problema Certificatorum SSL
+### Problema Certificatorum SSL {#ssl-certificate-issues}
 - WPMU DEV temporis alicui ad emissio certificatuum SSL potest esse (solitunque 5-15 minutarum)
 - Integratio configurata est ut usque ad 10 times certifica SSL verificetur
 - Si certifica SSL non emissi sunt post multas tentationes, contacta support WPMU DEV
 
-### Dominium Non Aditum
+### Dominium Non Aditum {#domain-not-added}
 - Verifica logs Ultimate Multisite ad quosdam errores
 - Verifica si dominium iam in WPMU DEV additum est
 - Assure te quod plan hébergement WPMU DEV tuus numerum domiorum quae addebis suportat

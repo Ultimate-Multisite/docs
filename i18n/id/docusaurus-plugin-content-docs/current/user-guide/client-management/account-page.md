@@ -3,7 +3,7 @@ title: Halaman Account Klien
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Halaman Account Klien Anda (v2)
+# Halaman Account Klien Anda (v2) {#your-clients-account-page-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
@@ -11,7 +11,7 @@ Ketika pelanggan berlangganan sebuah paket di jaringan Anda, mereka mendapatkan 
 
 Dalam tutorial ini, kami akan memandu Anda melalui halaman Account pelanggan dan Anda akan melihat apa yang dapat dilihat dan dilakukan pelanggan Anda di dalamnya.
 
-## Halaman Account
+## Halaman Account {#the-account-page}
 
 Halaman Account dapat diakses dengan mengeklik **Account** di dalam Dashboard pelanggan Anda.
 
@@ -27,7 +27,7 @@ Setelah pelanggan mengekliknya, mereka akan melihat ikhtisar keanggotaan, alamat
 
 Mereka juga dapat mengubah keanggotaan ke paket lain, atau membeli paket atau layanan lain yang Anda tawarkan. Mari kita lihat setiap bagian secara terpisah.
 
-### Ikhtisar Keanggotaan Anda:
+### Ikhtisar Keanggotaan Anda: {#your-membership-overview}
 
 Blok pertama tepat di bawah nama situs web pelanggan Anda menampilkan ikhtisar paket saat ini dan layanan/paket yang dibeli bersamanya. Blok ini juga menampilkan nomor keanggotaan, jumlah awal yang dibayarkan untuknya, berapa biaya paket dan layanan/paket apa pun, serta berapa kali mereka ditagih untuk keanggotaan ini. Mereka juga dapat melihat apakah keanggotaan tersebut **Aktif** , **Kedaluwarsa** atau **Dibatalkan**.
 
@@ -43,7 +43,7 @@ Sekarang, jika pelanggan Anda memilih untuk membeli paket atau layanan untuk kea
 
 Perhatikan bahwa kode kupon tidak dapat ditambahkan di halaman perubahan keanggotaan ini. Jika pelanggan menggunakan kode kupon pada pembelian keanggotaan pertama, kode tersebut juga akan berlaku untuk keanggotaan baru ini.
 
-### Memperbarui Alamat Penagihan:
+### Memperbarui Alamat Penagihan: {#updating-the-billing-address}
 
 Pada halaman Account, pelanggan Anda juga dapat memperbarui alamat penagihan mereka. Mereka hanya perlu mengeklik **Perbarui** di sebelah _Alamat Penagihan_.
 
@@ -53,7 +53,7 @@ Jendela baru akan muncul untuk pelanggan Anda. Yang perlu ia lakukan hanyalah me
 
 ![Formulir pembaruan alamat penagihan](/img/account-page/billing-address-form.png)
 
-### Mengubah Template Situs:
+### Mengubah Template Situs: {#changing-the-site-template}
 
 Untuk mengizinkan pelanggan Anda mengubah template situs mereka, Anda perlu membuka **Ultimate Multisite > Pengaturan > Situs** dan mengaktifkan opsi **Izinkan Pergantian Template**.
 
@@ -81,7 +81,7 @@ Setelah mengaktifkan konfirmasi dan mengeklik **Proses Pergantian** , template s
 
 Pelanggan juga dapat menggunakan **Reset current template** dari panel ini ketika mereka perlu mengatur ulang situs kembali ke template yang saat ini ditetapkan. Seperti beralih ke template lain, mengatur ulang template dapat menimpa konten situs, jadi pelanggan hanya boleh mengonfirmasinya ketika mereka memahami tindakan reset tersebut.
 
-### Menambahkan Domain Kustom:
+### Menambahkan Domain Kustom: {#adding-custom-domains}
 
 Pelanggan Anda juga akan memiliki opsi untuk menambahkan domain kustom untuk paket ini di halaman Account mereka. Untuk mengizinkan pelanggan Anda menggunakan domain kustom, buka **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Setelah mengklik **Next Step** , pelanggan Anda dapat menambahkan nama domain ku
 
 Setelah mengklik **Add Domain** , domain tersebut akan ditambahkan ke akun pelanggan Anda. Yang perlu mereka lakukan sekarang adalah mengubah catatan DNS domain kustom ini di registrar domain mereka.
 
-### Mengubah Kata Sandi:
+### Mengubah Kata Sandi: {#changing-password}
 
 Di dalam Dashboard account, pelanggan Anda juga dapat mengubah kata sandi mereka dengan mengklik **Change Password**.
 
@@ -125,7 +125,7 @@ Ini akan menampilkan jendela baru tempat pelanggan Anda perlu mengisi kata sandi
 
 ![Formulir ubah kata sandi dengan bidang kata sandi saat ini dan baru](/img/account-page/change-password-form.png)
 
-### Danger Zone:
+### Danger Zone: {#danger-zone}
 
 Kami juga memiliki dua opsi yang ditampilkan di bagian **Danger Zone**: **Delete Site** dan **Delete Account**. Keduanya berada di bagian Danger Zone karena dua tindakan ini tidak dapat dibatalkan. Jika pelanggan Anda menghapus situs web mereka atau akun mereka, mereka tidak dapat memulihkannya kembali.
 

@@ -3,7 +3,7 @@ title: Ukuphatha Amasayithi
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ukuphatha Amasayithi
+# Ukuphatha Amasayithi {#managing-sites}
 
 Amasayithi (noma amasayithi angaphansi) awumongo webhizinisi lakho le-WaaS. Ultimate Multisite inezinhlobo ezi-3 zamasayithi:
 
@@ -11,13 +11,13 @@ Amasayithi (noma amasayithi angaphansi) awumongo webhizinisi lakho le-WaaS. Ulti
 - **Amathempulethi Esayithi** — Amasayithi achazwe kusengaphambili amakhasimende angawakhetha njengesiqalo
 - **Isayithi Eliyinhloko** — Isayithi lakho eliyinhloko lenethiwekhi
 
-## Ukubuka Amasayithi
+## Ukubuka Amasayithi {#viewing-sites}
 
 Yiya ku-**Ultimate Multisite → Amasayithi** ukuze ubone wonke amasayithi angaphansi kunethiwekhi yakho. Isayithi ngalinye limakwe ngohlobo futhi ungahlunga ngokuthi Wonke Amasayithi, Aphethwe Yikhasimende, Amathempulethi, noma Alindile.
 
 ![Ikhasi lohlu lwamasayithi](/img/admin/sites-list.png)
 
-## Ukwengeza Isayithi Elisha
+## Ukwengeza Isayithi Elisha {#adding-a-new-site}
 
 Chofoza inkinobho ethi **Engeza Isayithi** ukuze udale isayithi elisha. Kuzodingeka unikeze:
 
@@ -27,15 +27,15 @@ Chofoza inkinobho ethi **Engeza Isayithi** ukuze udale isayithi elisha. Kuzoding
 
 Inketho ethi **Kopisha Isayithi** ikuvumela ukuthi udale isayithi elisha elisekelwe kuthempulethi yesayithi ekhona. Uma inikwe amandla, ungakhetha ukuthi iyiphi ithempulethi ozoyisebenzisa njengesiqalo. Qiniseka ukuthi **Kopisha Imidiya Ekuphindaphindeni** inikwe amandla ukuze kufakwe amafayela emidiya.
 
-## Ukuphatha Isayithi Elikhona
+## Ukuphatha Isayithi Elikhona {#managing-an-existing-site}
 
 Chofoza **Phatha** kunoma yiliphi isayithi ukuze uvule ikhasi elithi **Hlela Isayithi**. Lapha uzothola:
 
-### Ulwazi Oluyisisekelo
+### Ulwazi Oluyisisekelo {#basic-information}
 
 Igama lesayithi, uhlobo, i-ID yesayithi, nencazelo. Uzobona futhi isizinda esixhunywe kulo, ubulungu obuhlobene, kanye ne-akhawunti yekhasimende ephethe isayithi.
 
-### Izinketho Zesayithi
+### Izinketho Zesayithi {#site-options}
 
 Lungiselela amakhono nemikhawulo yesayithi:
 
@@ -47,7 +47,7 @@ Lungiselela amakhono nemikhawulo yesayithi:
 
 Ngokuzenzakalelayo, amasayithi alandela imikhawulo esethwe ezingeni lobulungu. Ukusetha imikhawulo ezingeni lesayithi kuzokhipha izilungiselelo zobulungu.
 
-### Ukuhlotshaniswa
+### Ukuhlotshaniswa {#associations}
 
 Ngezansi kwezinketho zesayithi uzothola ulwazi mayelana:
 
@@ -55,7 +55,7 @@ Ngezansi kwezinketho zesayithi uzothola ulwazi mayelana:
 - **Ubulungu** isayithi elingaphansi kwabo
 - **I-akhawunti yekhasimende** exhunywe nesayithi
 
-### Ibha Eseceleni Yesokudla
+### Ibha Eseceleni Yesokudla {#right-sidebar}
 
 Ohlangothini lwesokudla ungakwazi:
 

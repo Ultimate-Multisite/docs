@@ -3,7 +3,7 @@ title: サブスクリプションを解約する方法
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# サブスクリプションを解約するには？
+# サブスクリプションを解約するには？ {#how-can-i-cancel-my-subscription}
 
 Ultimate Multisite ライセンスをお持ちの場合、いつでも更新をキャンセルできます。以下の手順に従ってください。
 

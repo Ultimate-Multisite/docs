@@ -3,15 +3,15 @@ title: 'Lekcija 11: Iskanje strank'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lekcija 11: Iskanje strank
+# Lekcija 11: Iskanje strank {#lesson-11-finding-customers}
 
 Odlična platforma brez strank je samo hobi. Ta lekcija obravnava, kako pridobivati stranke v nišni vertikali -- strategije, ki delujejo posebej zato, ker ste osredotočeni na eno panogo.
 
-## Kje smo ostali
+## Kje smo ostali {#where-we-left-off}
 
 FitSite je objavljen. Zdaj potrebujemo, da ga lastniki fitnes studiev najdejo in se prijavijo.
 
-## Zakaj je nišno pridobivanje drugačno
+## Zakaj je nišno pridobivanje drugačno {#why-niche-acquisition-is-different}
 
 Ko prodajate vsem, tekmujete za pozornost na hrupnem trgu. Ko prodajate niši, imate prednosti:
 
@@ -19,17 +19,17 @@ Ko prodajate vsem, tekmujete za pozornost na hrupnem trgu. Ko prodajate niši, i
 - **Vaše sporočilo takoj odmeva** -- "spletna mesta za fitnes studie" ustavi lastnika telovadnice med pomikanjem
 - **Priporočila se seštevajo** -- lastniki fitnes studiev poznajo druge lastnike fitnes studiev
 
-## Kanal 1: Neposreden stik
+## Kanal 1: Neposreden stik {#channel-1-direct-outreach}
 
 Najhitrejša pot do vaših prvih strank je neposreden, oseben stik.
 
-### Poiščite potencialne stranke
+### Poiščite potencialne stranke {#find-prospects}
 
 - V Google Maps poiščite fitnes studie, telovadnice in osebne trenerje na svojem območju
 - Obiščite njihova trenutna spletna mesta (ali zabeležite, da ga nimajo)
 - Zberite kontaktne podatke iz njihovih profilov Google Business ali družbenih omrežij
 
-### Ocenite njihovo trenutno stanje
+### Ocenite njihovo trenutno stanje {#evaluate-their-current-situation}
 
 Za vsako potencialno stranko zabeležite:
 
@@ -37,7 +37,7 @@ Za vsako potencialno stranko zabeležite:
 - **Slabo spletno mesto**: Močna potencialna stranka -- pokažite jim, kako je videti boljša možnost
 - **Dobro spletno mesto**: Šibka potencialna stranka -- ta problem so že rešili
 
-### Vzpostavite stik
+### Vzpostavite stik {#make-contact}
 
 Pošljite personalizirano e-pošto ali sporočilo:
 
@@ -48,7 +48,7 @@ Pošljite personalizirano e-pošto ali sporočilo:
 
 Ne pošiljajte množične e-pošte. Personaliziran stik z 20 dobro raziskanimi potencialnimi strankami bo presegel generično množično pošiljanje 2.000 prejemnikom.
 
-## Kanal 2: Nišne skupnosti
+## Kanal 2: Nišne skupnosti {#channel-2-niche-communities}
 
 Lastniki fitnes studiev se na spletu zbirajo na specifičnih mestih:
 
@@ -57,7 +57,7 @@ Lastniki fitnes studiev se na spletu zbirajo na specifičnih mestih:
 - **Panožni forumi** in razpravne table
 - **LinkedIn skupine** za fitnes strokovnjake
 
-### Kako sodelovati
+### Kako sodelovati {#how-to-participate}
 
 Ne pridružite se in takoj predstavljajte svojega izdelka. Namesto tega:
 
@@ -66,7 +66,7 @@ Ne pridružite se in takoj predstavljajte svojega izdelka. Namesto tega:
 3. **Delite, ko je relevantno** -- ko nekdo vpraša o spletnih mestih, naravno delite svojo platformo
 4. **Ustvarjajte koristno vsebino** -- pišite objave o tem, "kaj naredi odlično spletno mesto fitnes studia", ki naravno vodijo do vaše platforme
 
-## Kanal 3: Vsebinski marketing
+## Kanal 3: Vsebinski marketing {#channel-3-content-marketing}
 
 Ustvarjajte vsebino, ki jo lastniki fitnes studiev iščejo:
 
@@ -77,7 +77,7 @@ Ustvarjajte vsebino, ki jo lastniki fitnes studiev iščejo:
 
 Objavite to na svojem marketinškem blogu FitSite. Sčasoma se ta vsebina uvrsti v iskalnikih in prinaša organski promet od ljudi, ki aktivno iščejo to, kar ponujate.
 
-## Kanal 4: Partnerstva
+## Kanal 4: Partnerstva {#channel-4-partnerships}
 
 Povežite se s podjetji, ki že služijo fitnes studiem:
 
@@ -88,7 +88,7 @@ Povežite se s podjetji, ki že služijo fitnes studiem:
 
 Ponudite provizije za priporočila ali vzajemno promocijo. [AffiliateWP addon](/addons/affiliatewp) vam lahko pomaga vzpostaviti formalni program priporočil.
 
-## Kanal 5: Panožni dogodki
+## Kanal 5: Panožni dogodki {#channel-5-industry-events}
 
 Dogodki fitnes panoge vas postavijo pred stotine potencialnih strank:
 
@@ -99,7 +99,7 @@ Dogodki fitnes panoge vas postavijo pred stotine potencialnih strank:
 
 Ne potrebujete velikega proračuna. Že udeležba kot udeleženec in pogovori o tem, kaj počnete, lahko ustvarijo potencialne stranke.
 
-## Kanal 6: Prikazna spletna mesta
+## Kanal 6: Prikazna spletna mesta {#channel-6-showcase-sites}
 
 Vaš najboljši marketing so spletna mesta vaših obstoječih strank. Z dovoljenjem:
 
@@ -108,7 +108,7 @@ Vaš najboljši marketing so spletna mesta vaših obstoječih strank. Z dovoljen
 - Zadovoljne stranke prosite za pričevanja
 - Spodbudite stranke, naj omenijo FitSite, ko jih vprašajo o njihovem spletnem mestu
 
-## Nastavitev programa priporočil
+## Nastavitev programa priporočil {#setting-up-a-referral-program}
 
 Ustno priporočilo je vaš najmočnejši kanal v niši. Formalizirajte ga:
 
@@ -116,7 +116,7 @@ Ustno priporočilo je vaš najmočnejši kanal v niši. Formalizirajte ga:
 2. Obstoječim strankam ponudite nagrado za priporočila (en mesec brezplačno, dobroimetje na računu itd.)
 3. Naj bo preprosto -- dajte jim referenčno povezavo in preprosto sporočilo, ki ga lahko posredujejo
 
-## Spremljanje, kaj deluje
+## Spremljanje, kaj deluje {#tracking-what-works}
 
 Za vsak kanal spremljajte:
 
@@ -126,7 +126,7 @@ Za vsak kanal spremljajte:
 
 Podvojite prizadevanja v kanalih, ki delujejo. Opustite kanale, ki ne delujejo.
 
-## Realistična pričakovanja
+## Realistična pričakovanja {#realistic-expectations}
 
 - **Mesec 1-3**: 5-20 strank, večinoma iz neposrednega stika in skupnosti
 - **Mesec 4-6**: 20-50 strank, vsebinski marketing začne prispevati
@@ -134,7 +134,7 @@ Podvojite prizadevanja v kanalih, ki delujejo. Opustite kanale, ki ne delujejo.
 
 Te številke se razlikujejo, vendar je vzorec dosleden: zgodnje stranke pridejo iz neposrednega truda, poznejše stranke pridejo iz sestavljenih učinkov vsebine, priporočil in ugleda.
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Šest kanalov za pridobivanje strank**, prilagojenih fitnes niši
 - **Postopek neposrednega nagovarjanja** za pridobitev prvih strank

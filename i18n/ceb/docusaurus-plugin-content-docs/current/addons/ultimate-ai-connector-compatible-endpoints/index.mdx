@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ang Ultimate AI Connector para sa mga Compatible Endpoints nag-integrate sa OpenAI-compatible AI provider APIs ng inyong WordPress multisite network. Mag-configure og daghang AI providers — ang matag usa adunay kaugalingon nga endpoint URL, API key, ug default model — ug mag-route og requests uban sa automatic fallback kung wala'y provider nga available.
 
-## Mga Panguna nga Features
+## Mga Panguna nga Features {#key-features}
 
 - **Multi-provider support**: Magdugang og dagkong mga card sa AI provider, ang matag usa adunay kaugalingon nga endpoint URL, API key, ug default model
 - **Drag-to-reorder**: Ayusin ang providers base sa prayoridad gamit ang grip handle sa matag card; ang requests mogamit sa providers sa order.
@@ -21,21 +21,21 @@ Ang Ultimate AI Connector para sa mga Compatible Endpoints nag-integrate sa Open
 - **Auto-expand on add**: Ang bag-ong provider cards awtomatikong molapad aron mahimong pun-on dayon ang mga detalye.
 - **Script cache busting**: Ang mga scripts sa provider gi-cache bust kung mag-update ang plugin aron masiguro nga ang pinakabag-ong bersyon ang ma-load.
 
-## Mga Kinahanglanon
+## Mga Kinahanglanon {#requirements}
 
-## Installation
+## Installation {#installation}
 
 1. I-upload ang mga files sa addon sa imong `/wp-content/plugins/` directory
 2. I-activate ang plugin pinaagi sa 'Plugins' menu sa WordPress
 3. Mag-navigate sa **Ultimate Multisite → AI Connector** para i-configure ang addon
 
-## Configuration
+## Configuration {#configuration}
 
-### Multi-Provider Setup
+### Multi-Provider Setup {#multi-provider-setup}
 
 Ang configuration screen naggamit og card-based layout diin ang matag card nagrepresentar sa usa ka AI provider. Mahimo nimong magdugang og daghang providers kutob sa imong panginahanglan.
 
-#### Pagdugang og Provider
+#### Pagdugang og Provider {#adding-a-provider}
 
 1. Mag-adto sa **Ultimate Multisite → AI Connector** sa network admin
 2. I-click ang **Add Provider**
@@ -47,15 +47,15 @@ Ang configuration screen naggamit og card-based layout diin ang matag card nagre
    - **Default Model** — ang model identifier nga gamiton isip default para ni provider (pananglitan, `gpt-4o`, `mistral-small`)
 5. I-click ang **Save Settings**
 
-#### Pag-alis og Provider
+#### Pag-alis og Provider {#removing-a-provider}
 
 I-click ang **Remove** button sa bisan unsang provider card aron ma-delete kini. I-save ang settings para i-apply ang kausaban.
 
-#### Pag-reorder sa mga Providers
+#### Pag-reorder sa mga Providers {#reordering-providers}
 
 I-drag ang grip icon (⣿) sa wala nga bahin sa provider card sa tibuok side aron ma-reorder nimo kini. Ang order mao ang maghatag og priority kung asa unang ipadala ang request: ipadala una sa unang provider ug mosugod sa sunod nga mga provider kung mapakyas ang usa ka request.
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 Kung mapakyas ang request ngadto sa primary provider — tungod sa timeout, rate limit, o service outage — ang connector awtomatikong mag-retry gamit ang sunod nga provider sa listahan. Magpadayon kini pa ubos sa listahan hangtod nga magmalampuson ang usa ka provider o gisulod na tanan nga mga provider.
 
@@ -67,7 +67,7 @@ Kung mapakyas ang request ngadto sa primary provider — tungod sa timeout, rate
 
 Ang fallback kay transparent (walay makita) para sa calling plugin o theme — makadawat sila og malampusong tubag o usa ka katapusang error, bisan pila pa ka providers ang gisulod.
 
-### Provider Configuration Reference
+### Provider Configuration Reference {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -76,9 +76,9 @@ Ang fallback kay transparent (walay makita) para sa calling plugin o theme — m
 | API Key | Yes | Ang authentication key para niining provider |
 | Default Model | Yes | Ang model identifier nga gigamit kung walay model ang giisip sa request |
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Walay mga provider ang gisulod
+### Walay mga provider ang gisulod {#no-providers-are-listed}
 
 Kung wala'y listahan sa provider human nasave, siguruha nga:
 
@@ -86,20 +86,20 @@ Nipis **Save Settings** pagkahuman nimo sa pag-add og providers
 Dili gihaplos sa imong browser ang settings page nga magsave (tan-aw sa browser console para sa JavaScript errors)
 Aktibo na ang plugin ug naa ka sa network admin screen
 
-### Nagkaproblema ang mga request para sa tanang providers
+### Nagkaproblema ang mga request para sa tanang providers {#requests-are-failing-for-all-providers}
 
 - Siguraduhon nga ang endpoint URL sa matag provider kay makaabot gikan sa imong server (dili lang gikan sa imong browser)
 - Siguraduhon nga ang matag API key valid ug wala pa expired
 - Tan-awa ang rate-limit ug quota status sa dashboard sa provider
 
-### Usa ka provider dili gigamit para sa fallback
+### Usa ka provider dili gigamit para sa fallback {#a-provider-is-not-being-used-for-fallback}
 
 Ang pag-drag-to-reorder nag-usab sa order sa fallback. Siguraduha nga ang provider nga imong gipaabot nga makadawat og fallback requests kay tama ang posisyon sa listahan ug tama ang iyang endpoint URL ug API key.
 
-### Bag-ong provider card dili awtomatik mag-expand
+### Bag-ong provider card dili awtomatik mag-expand {#new-provider-card-does-not-expand-automatically}
 
 Ang auto-expand nagkinahanglan og JavaScript nga aktibo sa imong browser. Kung wala mag-expand ang card paggi-click, tan-awa sa browser console para sa mga errors. Ang sulod sa card kay kanunay ma-access pinaagi sa pag-click sa header sa card bisan dili mag-trigger ang auto-expand.
 
-## Changelog
+## Changelog {#changelog}
 
 Tan-awa ang [Changelog](./changelog) para sa tibuok kasaysayan sa bersyon.

@@ -3,15 +3,15 @@ title: Qinisekisa umahluko wephalethi
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Qinisekisa Umahluko wePalette
+# Qinisekisa Umahluko wePalette {#validate-palette-contrast}
 
 Isakhono se-**Validate Palette Contrast** sijonga izibini zemibala kwi-palette yoyilo lwakho ukuze zihambelane ne-WCAG (Web Content Accessibility Guidelines) ngaphambi kokuzisebenzisa kwi-theme yakho.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Esi sakhono siqinisekisa ukuba iskimu semibala sesayithi yakho siyahlangabezana nemigangatho yokufikeleleka ngokuvavanya imilinganiselo yomahluko phakathi kombala wombhalo nombala ongasemva. Sinceda ukunqanda indibaniselwano yemibala enokuba nzima ukuyifunda kubasebenzisi abanokuphazamiseka kokubona.
 
-## Ifomathi yeNgeniso
+## Ifomathi yeNgeniso {#input-format}
 
 Esi sakhono samkela i-palette yemibala njengengeniso:
 
@@ -35,7 +35,7 @@ Esi sakhono samkela i-palette yemibala njengengeniso:
 }
 ```
 
-### Iiparamitha
+### Iiparamitha {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Esi sakhono samkela i-palette yemibala njengengeniso:
 | `wcag_level` | string | No | Inqanaba lokuhambelana ne-WCAG: "A", "AA" (elisisiseko), okanye "AAA" |
 | `pairs_to_check` | array | No | Izibini ezithile zemibala ekufuneka ziqinisekiswe (umz., `["primary-text", "background-text"]`) |
 
-## Amanqanaba e-WCAG Ajongiweyo
+## Amanqanaba e-WCAG Ajongiweyo {#wcag-levels-checked}
 
 Esi sakhono siqinisekisa imilinganiselo yomahluko ngokwemigangatho ye-WCAG:
 
@@ -56,7 +56,7 @@ Esi sakhono siqinisekisa imilinganiselo yomahluko ngokwemigangatho ye-WCAG:
 - **Umbhalo Oqhelekileyo** — umbhalo omncinci kune-18pt (okanye 14pt bold)
 - **Umbhalo Omkhulu** — umbhalo oyi-18pt okanye omkhulu (okanye 14pt bold okanye omkhulu)
 
-## Isikimu seMveliso
+## Isikimu seMveliso {#output-schema}
 
 Esi sakhono sibuyisa ingxelo eneenkcukacha yokuqinisekisa:
 
@@ -95,7 +95,7 @@ Esi sakhono sibuyisa ingxelo eneenkcukacha yokuqinisekisa:
 }
 ```
 
-### Iindawo zeMveliso
+### Iindawo zeMveliso {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Esi sakhono sibuyisa ingxelo eneenkcukacha yokuqinisekisa:
 | `status` | string | "pass" okanye "fail" kwisibini ngasinye |
 | `recommendations` | array | Iingcebiso zokuphucula izibini ezingaphumeleliyo |
 
-## Umzekelo Wokusetyenziswa
+## Umzekelo Wokusetyenziswa {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Esi sakhono siqinisekisa zonke iindibaniselwano zemibala size sibuyise:
 - ✅ Umva + Umbhalo: umlinganiselo 12.1:1 (uyapasa i-WCAG AAA)
 - Ngokubanzi: Iyahambelana ne-WCAG AA
 
-## Udibaniso ne-Theme Builder
+## Udibaniso ne-Theme Builder {#integration-with-theme-builder}
 
 Xa usebenzisa ukhetho lwendlela-yoyilo lwe-Theme Builder, isakhono se-Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Xa usebenzisa ukhetho lwendlela-yoyilo lwe-Theme Builder, isakhono se-Validate P
 4. Sinika iingcebiso ngezibini ezingahambelaniyo
 5. Sithintela ukusetyenziswa kwezikimu zemibala ezingafikelelekiyo
 
-## Iindlela Ezilungileyo
+## Iindlela Ezilungileyo {#best-practices}
 
 - **Qala ngenqanaba le-AA** — i-WCAG AA ngumgangatho wezona webhusayithi zininzi
 - **Vavanya ngaphambi kokusebenzisa** — qinisekisa i-palette yakho ngaphambi kokuzibophelela kuyilo
@@ -137,7 +137,7 @@ Xa usebenzisa ukhetho lwendlela-yoyilo lwe-Theme Builder, isakhono se-Validate P
 - **Qwalasela izinto ezikhethwa ngabasebenzisi** — abanye abasebenzisi banokuba novakalelo olongezelelekileyo kumbala
 - **Sebenzisa izixhobo zokujonga umahluko** — dibanisa esi sakhono nezixhobo zebhrawuza ukuze uqinisekise
 
-## Izibini Ezingaphumeleliyo kunye neZingcebiso
+## Izibini Ezingaphumeleliyo kunye neZingcebiso {#failing-pairs-and-recommendations}
 
 Ukuba isibini semibala siyasilela ukuqinisekiswa, esi sakhono sinika iingcebiso:
 
@@ -155,7 +155,7 @@ Ukuba isibini semibala siyasilela ukuqinisekiswa, esi sakhono sinika iingcebiso:
 }
 ```
 
-## Izakhono Ezihambelanayo
+## Izakhono Ezihambelanayo {#related-abilities}
 
 - [Yenza i-Logo SVG](./generate-logo-svg.md) — dala iilogo usebenzisa i-palette yakho yemibala eqinisekisiweyo
 - [Yenza iMenu](./create-menu.md) — yakha ukuhamba ngembala efikelelekayo

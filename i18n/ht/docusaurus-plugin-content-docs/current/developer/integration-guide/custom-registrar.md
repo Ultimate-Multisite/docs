@@ -3,13 +3,13 @@ title: Bati yon Entegrasyon Rejistrè Pèsonalize
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Konstwi yon Entegrasyon Rejis Pèsonalize
+# Konstwi yon Entegrasyon Rejis Pèsonalize {#building-a-custom-registrar-integration}
 
 Addon Domain Seller la itilize yon modèl **Integration Registry**. Chak rejis se yon klas PHP ki aplike `Domain_Selling_Capability` epi ki anrejistre tèt li atravè action hook `wu_domain_seller_register_capabilities`.
 
 Gid sa a montre kijan pou konekte yon rejis pèsonalize.
 
-## Entèfas la
+## Entèfas la {#the-interface}
 
 Klas ou a dwe aplike `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` epi pwolonje `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Metòd opsyonèl
+### Metòd opsyonèl {#optional-methods}
 
 Aplike sa yo pou debloke fonksyonalite anplis. Addon la detekte sipò atravè `method_exists()`:
 
@@ -81,7 +81,7 @@ Aplike sa yo pou debloke fonksyonalite anplis. Addon la detekte sipò atravè `m
 | `get_epp_code(string $domain_name): array` | Transfè domèn (sòtan) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transfè domèn (antre) |
 
-### Konvansyon valè retounen
+### Konvansyon valè retounen {#return-value-convention}
 
 Tout metòd yo retounen yon tablo ki gen omwen yon kle `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Anrejistre kapasite ou
+## Anrejistre kapasite ou {#registering-your-capability}
 
 Anrejistre klas ou a avèk aksyon `wu_domain_seller_register_capabilities` la:
 
@@ -109,7 +109,7 @@ Premye agiman pou `add_capability()` se **ID founisè** a — yon slug an minisk
 
 ---
 
-## Ajoute chan kalifikasyon nan wizard la
+## Ajoute chan kalifikasyon nan wizard la {#adding-credential-fields-to-the-wizard}
 
 Pou pèmèt admin yo antre kalifikasyon atravè setup wizard la, anrejistre entegrasyon ou:
 
@@ -137,7 +137,7 @@ Kalifikasyon yo estoke kòm opsyon rezo avèk ID chan yo kòm kle. Rekipere yo n
 
 ---
 
-## Hooks pou aksyon apre enskripsyon
+## Hooks pou aksyon apre enskripsyon {#hooks-for-post-registration-actions}
 
 Itilize aksyon sa yo pou deklanche webhooks, provisioning, notifikasyon, oswa mizajou CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Anrejistreman
+## Anrejistreman {#logging}
 
 Ekri nan chanèl jounal espesifik founisè ou a lè w sèvi ak `wu_log_add()`:
 

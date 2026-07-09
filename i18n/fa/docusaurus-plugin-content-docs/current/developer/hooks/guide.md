@@ -3,15 +3,15 @@ title: راهنمای استفاده از هوک‌ها
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# راهنمای استفاده از هوک‌ها
+# راهنمای استفاده از هوک‌ها {#hooks-usage-guide}
 
 Ultimate Multisite بیش از ۲۰۰ هوک اکشن و ۲۸۰ هوک فیلتر ارائه می‌دهد. این صفحه به پوشش هوک‌های پرکاربردتر با مثال‌های عملی می‌پردازد. برای مرجع کامل و خودکار، صفحات دیگر این بخش را مرور کنید.
 
-## هوک‌های اکشن (Action Hooks)
+## هوک‌های اکشن (Action Hooks) {#action-hooks}
 
-### چرخه عمر مشتری (Customer Lifecycle)
+### چرخه عمر مشتری (Customer Lifecycle) {#customer-lifecycle}
 
-#### پس از ایجاد مشتری (After Customer Creation)
+#### پس از ایجاد مشتری (After Customer Creation) {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### تغییر وضعیت مشتری (Customer Status Change)
+#### تغییر وضعیت مشتری (Customer Status Change) {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### هوک‌های سایت (Site Hooks)
+### هوک‌های سایت (Site Hooks) {#site-hooks}
 
-#### پس از انتشار سایت (After Site Published)
+#### پس از انتشار سایت (After Site Published) {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### قبل از اعمال قالب (Before Template Application)
+#### قبل از اعمال قالب (Before Template Application) {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### هوک‌های عضویت (Membership Hooks)
+### هوک‌های عضویت (Membership Hooks) {#membership-hooks}
 
-#### تغییر وضعیت (Status Transitions)
+#### تغییر وضعیت (Status Transitions) {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### هوک‌های پرداخت (Payment Hooks)
+### هوک‌های پرداخت (Payment Hooks) {#payment-hooks}
 
-#### تکمیل / ناموفق بودن پرداخت (Payment Completed / Failed)
+#### تکمیل / ناموفق بودن پرداخت (Payment Completed / Failed) {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### هوک‌های تسویه حساب (Checkout Hooks)
+### هوک‌های تسویه حساب (Checkout Hooks) {#checkout-hooks}
 
-#### قبل از پردازش / پس از تکمیل (Before Processing / After Completion)
+#### قبل از پردازش / پس از تکمیل (Before Processing / After Completion) {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### هوک‌های دامنه (Domain Hooks)
+### هوک‌های دامنه (Domain Hooks) {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## هوک‌های فیلتر (Filter Hooks)
+## هوک‌های فیلتر (Filter Hooks) {#filter-hooks}
 
-### فیلترهای قیمت‌گذاری (Pricing Filters)
+### فیلترهای قیمت‌گذاری (Pricing Filters) {#pricing-filters}
 
-#### کل سبد خرید (Cart Total)
+#### کل سبد خرید (Cart Total) {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### نرخ مالیات (Tax Rates)
+#### نرخ مالیات (Tax Rates) {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### فیلترهای قالب (Template Filters)
+### فیلترهای قالب (Template Filters) {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### فیلترهای محدودیت (Limitation Filters)
+### فیلترهای محدودیت (Limitation Filters) {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### فیلترهای درگاه پرداخت (Gateway Filters)
+### فیلترهای درگاه پرداخت (Gateway Filters) {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### فیلدهای فرم تسویه حساب (Checkout Form Fields)
+### فیلدهای فرم تسویه حساب (Checkout Form Fields) {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### محتوای ایمیل (Email Content)
+### محتوای ایمیل (Email Content) {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

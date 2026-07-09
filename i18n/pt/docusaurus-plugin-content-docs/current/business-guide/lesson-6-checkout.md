@@ -3,15 +3,15 @@ title: 'Lição 6: A Experiência de Inscrição'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lição 6: A experiência de cadastro
+# Lição 6: A experiência de cadastro {#lesson-6-the-signup-experience}
 
 O fluxo de finalização de compra é onde o interesse se transforma em receita. Um processo de cadastro confuso ou genérico perde clientes. Um fluxo específico para o nicho, que fala a língua deles e parece simples, converte-os.
 
-## Onde ficámos
+## Onde ficámos {#where-we-left-off}
 
 FitSite tem modelos e planos configurados. Agora vamos criar a experiência de registo e finalização de compra que transforma proprietários de estúdios de fitness em clientes pagantes.
 
-## Compreender o fluxo de registo
+## Compreender o fluxo de registo {#understanding-the-registration-flow}
 
 Os formulários de finalização de compra do Ultimate Multisite são formulários de várias etapas totalmente personalizáveis. Para o FitSite, queremos um fluxo que:
 
@@ -21,11 +21,11 @@ Os formulários de finalização de compra do Ultimate Multisite são formulári
 
 Consulte [O fluxo de registo](/user-guide/configuration/the-registration-flow) para a referência técnica completa.
 
-## Criar a finalização de compra do FitSite
+## Criar a finalização de compra do FitSite {#designing-the-fitsite-checkout}
 
 Navegue até **Ultimate Multisite > Formulários de finalização de compra** e crie um novo formulário.
 
-### Etapa 1: Seleção de plano
+### Etapa 1: Seleção de plano {#step-1-plan-selection}
 
 A primeira coisa que um proprietário de estúdio de fitness deve ver são os planos, apresentados em termos que ele compreende.
 
@@ -37,7 +37,7 @@ A primeira coisa que um proprietário de estúdio de fitness deve ver são os pl
 "1 GB de armazenamento" não significa nada para o proprietário de um ginásio. "Tudo o que precisa para um site profissional de estúdio" significa tudo. Escreva descrições de planos na linguagem do seu cliente.
 :::
 
-### Etapa 2: Seleção de modelo
+### Etapa 2: Seleção de modelo {#step-2-template-selection}
 
 Depois de escolher um plano, o cliente escolhe o seu modelo inicial.
 
@@ -45,7 +45,7 @@ Depois de escolher um plano, o cliente escolhe o seu modelo inicial.
 - Os modelos disponíveis são filtrados pelo plano que selecionaram (configurado na Lição 5)
 - Cada modelo deve ter uma imagem de pré-visualização que mostre um design específico para fitness
 
-### Etapa 3: Criação de Account
+### Etapa 3: Criação de Account {#step-3-account-creation}
 
 Mantenha isto no mínimo. Recolha apenas:
 
@@ -55,27 +55,27 @@ Mantenha isto no mínimo. Recolha apenas:
 
 Não peça informações de que não precisa no cadastro. Cada campo extra reduz as conversões.
 
-### Etapa 4: Configuração do site
+### Etapa 4: Configuração do site {#step-4-site-setup}
 
 - **Título do site**: Pré-preencha a partir do nome do estúdio introduzido na Etapa 3
 - **URL do site**: Gere automaticamente a partir do nome do estúdio (por exemplo, `ironworks.fitsite.com`)
 
-### Etapa 5: Pagamento
+### Etapa 5: Pagamento {#step-5-payment}
 
 - Adicione o campo **Pagamento**
 - Configure o seu gateway de pagamento ([Stripe](/user-guide/payment-gateways/stripe) é recomendado para faturação por subscrição)
 - Se criou ofertas adicionais de pedido na Lição 5, adicione um campo **Oferta adicional de pedido** antes da etapa de pagamento
 
-### Etapa 6: Confirmação
+### Etapa 6: Confirmação {#step-6-confirmation}
 
 - Personalize a mensagem de confirmação com linguagem específica para fitness
 - Exemplo: "O site do seu estúdio de fitness está a ser criado. Será redirecionado para o seu novo site dentro de alguns segundos."
 
-## Adicionar um seletor de período
+## Adicionar um seletor de período {#adding-a-period-selection-toggle}
 
 Se configurou variações de preço nos seus planos (mensal vs. anual), adicione um campo **Seleção de período** ao formulário de finalização de compra para que os clientes possam alternar entre períodos de faturação. Consulte [Formulários de finalização de compra](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) para obter instruções.
 
-## Configurar o pagamento
+## Configurar o pagamento {#configuring-payment}
 
 Se ainda não configurou um gateway de pagamento:
 
@@ -85,7 +85,7 @@ Se ainda não configurou um gateway de pagamento:
 
 Consulte [Receber pagamentos](/user-guide/payment-gateways/getting-paid) para obter detalhes sobre como os pagamentos fluem para a sua Account.
 
-## Testar o fluxo
+## Testar o fluxo {#testing-the-flow}
 
 Antes de avançar, conclua um cadastro de teste completo:
 
@@ -105,7 +105,7 @@ Verifique se:
 - [ ] O cliente chega a um site funcional com o modelo selecionado
 - [ ] Os emails de confirmação usam linguagem específica para fitness
 
-## A rede FitSite até agora
+## A rede FitSite até agora {#the-fitsite-network-so-far}
 
 ```
 Rede FitSite
@@ -123,7 +123,7 @@ Rede FitSite
 └── Pronto para branding (próxima lição)
 ```
 
-## O que criámos nesta lição
+## O que criámos nesta lição {#what-we-built-this-lesson}
 
 - **Um formulário de finalização de compra de várias etapas** adaptado a proprietários de estúdios de fitness
 - **Linguagem específica para o nicho** ao longo de todo o fluxo de cadastro

@@ -4,11 +4,11 @@ title: Handling - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog
+# Action: add_user_to_blog {#action-addusertoblog}
 
 Utløses umiddelbart etter at en bruker er lagt til et nettsted.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Utløses umiddelbart etter at en bruker er lagt til et nettsted.
 | $role | `string` | Brukerrolle. |
 | $blog_id | `int` | Blogg-ID. |
 
-### Siden
+### Siden {#since}
 
 - MU: MU
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) på linje 174

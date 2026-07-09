@@ -3,9 +3,9 @@ title: Notes de la versió
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Notes de la versió
+# Notes de la versió {#release-notes}
 
-## Versió 2.13.0 — Publicada el 2026-06-05
+## Versió 2.13.0 — Publicada el 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nou: S’ha afegit suport per a inquilins sobirans per als fluxos de compte de client, checkout, facturació, lloc, factura, canvi de plantilla i mapatge de dominis, perquè les xarxes d’inquilins puguin redirigir els clients al lloc principal per a accions gestionades.
 - Nou: S’han afegit comprovacions de credencials de renovació per a membresies recurrents, perquè les passarel·les puguin desactivar la renovació automàtica quan falta un acord de facturació desat, una subscripció o un token de volta.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correcció: Els casos límit de renovacions de membresia, visualització de caducitat i cobrament de pagaments ara eviten caducitats immediates, bloquejos o pagaments obligatoris omesos.
 - Millorat: La compatibilitat amb WordPress s’ha provat fins a la versió 7.0, els recursos Vue de producció s’han reconstruït a partir de fonts npm i la cobertura end-to-end de Cypress ara exercita més fluxos de checkout, configuració, SSO i passarel·la.
 
-## Versió 2.12.0 — Publicada el 2026-05-15
+## Versió 2.12.0 — Publicada el 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nou: S’ha afegit Hostinger (hPanel) com a proveïdor d’allotjament compatible amb integració de mapatge de dominis
 - Nou: Site Exporter ara gestiona paquets d’importació de xarxa per a una restauració de llocs simplificada a tota la xarxa
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correcció: La CLI de Site Exporter ara conserva la selecció correcta del lloc de xarxa per defecte
 - Millorat: S’ha eliminat el wp-cli inclòs del paquet del plugin, reduint la mida del plugin
 
-## Versió 2.11.0 — Publicada el 2026-05-11
+## Versió 2.11.0 — Publicada el 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nou: Les exportacions de lloc ara inclouen un `index.php` d’arrencada automàtica, perquè el ZIP es pugui instal·lar en un allotjament nou sense instal·lar cap plugin separat.
 - Nou: L’exportació de xarxa permet als administradors exportar tots els subllocs en un únic arxiu des de la pàgina d’administració Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nou: L’editor de formularis de checkout avisa quan s’afegeix un producte sense un camp obligatori configurat.
 - Nou: La pestanya de configuració d’importació/exportació ara descriu clarament el seu abast i enllaça directament amb l’eina Site Export.
 
-## Versió 2.10.0 — Publicada el 2026-05-05
+## Versió 2.10.0 — Publicada el 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nou: Assistent de configuració guiada de PayPal per a l’entrada manual de credencials amb porta de marca OAuth per a una configuració fluida de la passarel·la.
 - Nou: Panell de client de canvi de plantilla redissenyat amb targeta de plantilla actual, quadrícula persistent i botó **Restableix la plantilla actual**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correcció: El camí SSO filtrat es respecta en tots els fluxos d’inici de sessió.
 - Correcció: Les opcions d’identitat de lloc en blanc es conserven en desar.
 
-## Versió 2.9.0 — Publicada el 2026-04-30
+## Versió 2.9.0 — Publicada el 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nou: S’han afegit l’exportació i la importació d’un sol lloc a **Eines > Exporta i importa**.
 - Correcció: Els fitxers ZIP d’exportació ara se serveixen mitjançant un endpoint de baixada autenticat.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correcció: Els ID de recorregut s’han normalitzat amb guions baixos a les claus de configuració d’usuari.
 - Millorat: Ara s’utilitza ZipArchive en lloc d’Alchemy/Zippy per a una millor compatibilitat.
 
-## Versió 2.8.0 — Publicada el 2026-04-29
+## Versió 2.8.0 — Publicada el 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nou: s'ha afegit el commutador Enable Jumper a la interfície d'usuari de la configuració Other Options.
 - Nou: s'ha afegit la columna d'estat a la taula de llista de formularis de checkout.

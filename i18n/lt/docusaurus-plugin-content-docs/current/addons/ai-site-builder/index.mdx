@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI svetainių kūrimo įrankis
+# AI svetainių kūrimo įrankis {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Reikalavimai
+## Reikalavimai {#requirements}
 
 - WordPress 5.3 arba naujesnė
 - PHP 7.4 arba naujesnė
 - Multisite Ultimate įskiepis (aktyvus)
 
-## Diegimas
+## Diegimas {#installation}
 
 1. Įkelkite priedo failus į savo `/wp-content/plugins/` katalogą
 2. Aktyvuokite įskiepį per WordPress meniu „Įskiepiai“
 3. Sukonfigūruokite priedo nustatymus tinklo administravimo srityje
 
-## Kūrimas
+## Kūrimas {#development}
 
-### Sąranka
+### Sąranka {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projekto struktūra
+### Projekto struktūra {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Kodo modernizavimo taisyklės
 ```
 
-### Testavimas
+### Testavimas {#testing}
 
 Priede yra išsami testavimo sistema:
 
@@ -79,44 +79,44 @@ Priede yra išsami testavimo sistema:
 - **Testų aprėptis**: Sukonfigūruota kodo aprėpčiai sekti
 - **Multisite testavimas**: Testai vykdomi multisite aplinkoje
 
-### Kodo standartai
+### Kodo standartai {#code-standards}
 
 - **WordPress kodavimo standartai**: Užtikrinami naudojant PHPCS
 - **PHP 7.4+ suderinamumas**: Palaikomos modernios PHP funkcijos
 - **Statinė analizė**: PHPStan integracija tipų tikrinimui
 - **Kodo modernizavimas**: Rector taisyklės PHP atnaujinimams
 
-### Kompiliavimo sistema
+### Kompiliavimo sistema {#build-system}
 
 - **Išteklių apdorojimas**: CSS/JS failų sumažinimas
 - **Vertimas**: POT failo generavimas
 - **Pakavimas**: Archyvo kūrimas platinimui
 - **Kūrimo režimas**: Nesumažinti ištekliai derinimui
 
-## Konfigūracija
+## Konfigūracija {#configuration}
 
 Priedas palaiko įvairias konfigūracijos parinktis, pasiekiamas per tinklo administravimo sąsają.
 
-## Hook’ai ir filtrai
+## Hook’ai ir filtrai {#hooks-and-filters}
 
-### Veiksmai
+### Veiksmai {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Paleidžiama po priedo inicijavimo
 - `ultimate-multisite-ai-site-builder_loaded` - Paleidžiama, kai įkeliami visi priedo failai
 
-### Filtrai
+### Filtrai {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Keisti priedo nustatymus
 - `ultimate-multisite-ai-site-builder_enabled` - Perrašyti priedo įjungimo / išjungimo būseną
 
-## Licencija
+## Licencija {#license}
 
 Šis priedas licencijuojamas pagal GPL v3 arba naujesnę versiją.
 
-## Palaikymas
+## Palaikymas {#support}
 
 Palaikymui ir dokumentacijai apsilankykite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Pakeitimų žurnalas
+## Pakeitimų žurnalas {#changelog}
 
 - Versija 1.0.1 (2025-09-28): priešdėlis pervadintas į ultimate-multisite; atnaujintas teksto domenas; padidinta versija.
 

@@ -3,11 +3,11 @@ title: Alur Orientasi Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Alur Onboarding Theme Builder
+# Alur Onboarding Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 nggawa **alur onboarding Theme Builder** sing dipandu supaya sampeyan bisa nggawe tema blok kustom pas setup awal. Iki ngumbah mode Site Builder lawas karo cara sing luwih fleksibel lan dibantu agen.
 
-## Apa iku Alur Onboarding Theme Builder?
+## Apa iku Alur Onboarding Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Alur onboarding Theme Builder kuwi kaya wizard setup interaktif sing:
 
@@ -18,9 +18,9 @@ Alur onboarding Theme Builder kuwi kaya wizard setup interaktif sing:
 
 Alur iki didukung dening **Setup Assistant agent**, sing bakal nanya pitakon kanggo njelasake lan mbangun tema sampeyan langkah-langkah.
 
-## Mulai Onboarding Theme Builder
+## Mulai Onboarding Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Setup Pertama Kali Pakai
+### Setup Pertama Kali Pakai {#first-run-setup}
 
 Pas sampeyan pertama kali njalankan Superdav AI Agent ing instalasi WordPress anyar, sampeyan bakal weruh:
 
@@ -35,7 +35,7 @@ Apa yang ingin Anda lakukan?
 
 Pilih **"Bangun tema kustom"** kanggo mlebu alur onboarding Theme Builder.
 
-### Aktivasi Manual
+### Aktivasi Manual {#manual-activation}
 
 Sampeyan uga bisa mulai onboarding Theme Builder kapan wae kan njaluk:
 
@@ -49,9 +49,9 @@ utawa
 "Bantu saya membuat tema kustom"
 ```
 
-## Langkah-Langkah Onboarding
+## Langkah-Langkah Onboarding {#the-onboarding-steps}
 
-### Langkah 1: Pemilihan Mode
+### Langkah 1: Pemilihan Mode {#step-1-mode-selection}
 
 Setup Assistant agent bakal nanya babagan pilihan sampeyan:
 
@@ -63,7 +63,7 @@ Bagaimana Anda ingin membangun tema Anda?
 
 **Mode Terpandu (Guided mode)** direkomendasikake kanggo sabarane pengguna; agent bakal menehi rekomendasi desain adhedhasar industri lan tujuan sampeyan.
 
-### Langkah 2: Spesifikasi Situs
+### Langkah 2: Spesifikasi Situs {#step-2-site-specification}
 
 Sampeyan bakal ditanya babagan situs sampeyan:
 
@@ -74,7 +74,7 @@ Sampeyan bakal ditanya babagan situs sampeyan:
 
 Informasi iki disimpen ing memori **site_brief**-mu, sing diacu dening agen ing sesi-sesi sabanjure.
 
-### Langkah 3: Keputusan Sistem Desain (Design System Decisions)
+### Langkah 3: Keputusan Sistem Desain (Design System Decisions) {#step-3-design-system-decisions}
 
 Agen bakal nuntun sampeyan milih elemen desain kaya ngene:
 
@@ -83,7 +83,7 @@ Agen bakal nuntun sampeyan milih elemen desain kaya ngene:
 - **Jarak (Spacing)**: Tata letak sing padhet (compact), biasa (normal), utawa lega (spacious)
 - **Gerakan (Motion)**: Animasi lan transisi (yen arep).
 
-### Langkah 4: Pembuatan Tema (Theme Generation)
+### Langkah 4: Pembuatan Tema (Theme Generation) {#step-4-theme-generation}
 
 Agen Setup Assistant bakal mbangun tema blok kustommu kanthi nggunakake:
 
@@ -92,7 +92,7 @@ Agen Setup Assistant bakal mbangun tema blok kustommu kanthi nggunakake:
 - Gaya blok kustom sing cocog karo sistem desainmu
 - Metadata tema lan deklarasi dukungan WordPress
 
-### Langkah 5: Aktivasi lan Verifikasi (Activation and Verification)
+### Langkah 5: Aktivasi lan Verifikasi (Activation and Verification) {#step-5-activation-and-verification}
 
 Tema bakal otomatis aktif, lan sampeyan bakal weruh:
 
@@ -107,7 +107,7 @@ Tema bakal otomatis aktif, lan sampeyan bakal weruh:
 
 Saiki sampeyan bisa mampir menyang situsmu kanggo mastiake tema kuwi tampil kanthi bener.
 
-## Spesifikasi Situs lan Memori site_brief
+## Spesifikasi Situs lan Memori site_brief {#site-specification-and-sitebrief-memory}
 
 Wektu nggawe akun (onboarding), agen bakal nyimpen spesifikasi situsmu ing kategori memori **site_brief**. Iki kalebu:
 
@@ -117,18 +117,18 @@ Wektu nggawe akun (onboarding), agen bakal nyimpen spesifikasi situsmu ing kateg
 - Preferensi desain
 - Struktur konten
 
-### Kenapa site_brief Penting
+### Kenapa site_brief Penting {#why-sitebrief-matters}
 
 Ing sesi sabanjure, agen bakal ngacu marang site_brief-mu kanggo:
 
-### Menjaga Konsistensi Desain Saat Ada Perubahan
+### Menjaga Konsistensi Desain Saat Ada Perubahan {#viewing-your-sitebrief}
 
 *   Jaga tampilan desain tetap serasi meskipun ada perubahan.
 *   Saran fitur yang sesuai dengan tujuan situs Anda.
 *   Berikan rekomendasi yang pas dengan konteksnya.
 *   Hindari mengulang pertanyaan pengaturan yang sudah pernah ditanyakan.
 
-### Melihat Ringkasan Situs_brief Anda
+### Melihat Ringkasan Situs_brief Anda {#customizing-after-onboarding}
 
 Anda bisa tanya agen:
 
@@ -144,11 +144,11 @@ atau
 
 Agen akan menampilkan spesifikasi situs yang sudah tersimpan.
 
-## Mengubah Setelah Onboarding Selesai
+## Mengubah Setelah Onboarding Selesai {#use-the-design-system-aesthetics-skill}
 
 Setelah proses onboarding Theme Builder selesai, Anda bisa melakukan hal-hal berikut:
 
-### Gunakan Skill Estetika Sistem Desain (Design System Aesthetics)
+### Gunakan Skill Estetika Sistem Desain (Design System Aesthetics) {#edit-themejson-directly}
 
 Minta perbaikan desain seperti ini:
 
@@ -164,7 +164,7 @@ atau
 
 **Skill Design System Aesthetics** akan memandu Anda untuk melakukan pembaruan desain yang spesifik.
 
-### Edit theme.json Secara Langsung
+### Edit theme.json Secara Langsung {#create-custom-block-templates}
 
 Untuk pengguna yang mahir, edit file `/wp-content/themes/[theme-name]/theme.json` untuk menyesuaikan:
 
@@ -173,7 +173,7 @@ Untuk pengguna yang mahir, edit file `/wp-content/themes/[theme-name]/theme.json
 *   Nilai jarak antar elemen (spacing values)
 *   Definisi batas (border) dan bayangan (shadow)
 
-### Buat Template Blok Kustom
+### Buat Template Blok Kustom {#comparison-old-vs-new-onboarding}
 
 Gunakan editor blok WordPress untuk membuat template khusus untuk:
 
@@ -182,7 +182,7 @@ Gunakan editor blok WordPress untuk membuat template khusus untuk:
 *   Halaman produk (Product pages)
 *   Form kontak (Contact forms)
 
-## Perbandingan: Onboarding Lama vs. Baru
+## Perbandingan: Onboarding Lama vs. Baru {#troubleshooting}
 
 | Fitur | Site Builder (Lama) | Theme Builder (Baru) |
 | :--- | :--- | :--- |
@@ -192,7 +192,7 @@ Gunakan editor blok WordPress untuk membuat template khusus untuk:
 | Fleksibilitas | Pilihan tetap | Dapat disesuaikan |
 | Pembaruan Masa Depan | Tidak dirujuk | Tersimpan di site_brief |
 
-## Pemecahan Masalah (Troubleshooting)
+## Pemecahan Masalah (Troubleshooting) {#next-steps}
 
 **Alur onboarding tidak selesai**
 *   Mulai ulang alurnya: "Start the Theme Builder onboarding"

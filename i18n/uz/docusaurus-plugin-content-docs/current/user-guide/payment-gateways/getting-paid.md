@@ -3,13 +3,13 @@ title: To‘lov olish
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# To‘lovlarni qabul qilish (v2)
+# To‘lovlarni qabul qilish (v2) {#getting-paid-v2}
 
 _**MUHIM ESLATMA: Ushbu maqola Ultimate Multisite 2.x versiyasiga taalluqli.**_
 
 Ultimate Multisite ichki a’zolik va hisob-kitob tizimiga ega. Hisob-kitob tizimimiz ishlashi uchun biz e-tijoratda ishlatiladigan eng keng tarqalgan to‘lov shlyuzlarini integratsiya qilganmiz. Ultimate Multisite’dagi standart to‘lov shlyuzlari _Stripe_ , _PayPal_ va qo‘lda to‘lovdir. Shuningdek, tegishli add-on’larini o‘rnatish orqali to‘lovlarni qabul qilish uchun _WooCommerce_ , _GoCardless_ va _Payfast_ dan ham foydalanishingiz mumkin.
 
-## Asosiy sozlamalar
+## Asosiy sozlamalar {#basic-settings}
 
 Ushbu to‘lov shlyuzlarining istalgan birini Ultimate Multisite to‘lov sozlamalari ostida sozlashingiz mumkin. Uni **Ultimate Multisite menyusi > Settings > Payments** orqali topishingiz mumkin.
 
@@ -39,7 +39,7 @@ Bu shlyuz faqat bir martalik to‘lovlarni undira olganida a’zolik avtomatik y
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Shlyuzlarni qayerdan topish mumkin:
+## Shlyuzlarni qayerdan topish mumkin: {#where-to-find-the-gateways}
 
 To‘lov shlyuzlarini o‘sha sahifaning o‘zida sozlashingiz mumkin ( **Ultimate Multisite > Settings > Payments**). **Faol to‘lov shlyuzlari** ostida siz quyidagilarni ko‘rishingiz mumkin: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ va _Manual_.
 
@@ -67,7 +67,7 @@ Shuningdek, to‘lov shlyuzlari sozlamalarining to‘liq ko‘rinishi ham shu ye
 
 Endi, agar siz to‘lov shlyuzi sifatida _WooCommerce_ , _GoCardless_ yoki _Payfast_ dan foydalanmoqchi bo‘lsangiz, ularning add-on’larini **o‘rnatishingiz va sozlashingiz** kerak bo‘ladi.
 
-### WooCommerce add-on’ini qanday o‘rnatish mumkin:
+### WooCommerce add-on’ini qanday o‘rnatish mumkin: {#how-to-install-the-woocommerce-add-on}
 
 Biz _Stripe_ va _PayPal_ ayrim mamlakatlarda mavjud emasligini, bu esa Ultimate Multisite foydalanuvchilarining plugin’imizdan samarali foydalanishini cheklashi yoki qiyinlashtirishini tushunamiz. Shuning uchun biz juda mashhur e-tijorat plugin’i bo‘lgan _WooCommerce,_ ni integratsiya qilish uchun add-on yaratdik. Dunyo bo‘ylab dasturchilar unga turli to‘lov shlyuzlarini integratsiya qilish uchun add-on’lar yaratgan. Biz bundan foydalanib, Ultimate Multisite hisob-kitob tizimi bilan ishlatishingiz mumkin bo‘lgan to‘lov shlyuzlarini kengaytirdik.
 
@@ -95,7 +95,7 @@ Uni faollashtirgandan so‘ng, agar veb-saytingizda WooCommerce plugin hali o‘
 
 WooCommerce Integration qo‘shimchasi haqida ko‘proq o‘qish uchun **shu yerni bosing**.
 
-### GoCardless qo‘shimchasini qanday o‘rnatish mumkin:
+### GoCardless qo‘shimchasini qanday o‘rnatish mumkin: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ qo‘shimchasini o‘rnatish bosqichlari _WooCommerce_ qo‘shimchasi bilan deyarli bir xil. Iltimos, qo‘shimchalar sahifasiga o‘ting va **Ultimate Multisite: GoCardless Gateway** qo‘shimchasini tanlang.
 
@@ -111,7 +111,7 @@ O‘rnatish tugagach, siz pluginlar sahifasiga yo‘naltirilasiz. Bu yerda shunc
 
 _GoCardless_ gateway bilan qanday boshlashni o‘rganish uchun **ushbu maqolani o‘qing**.
 
-### Payfast qo‘shimchasini qanday o‘rnatish mumkin:
+### Payfast qo‘shimchasini qanday o‘rnatish mumkin: {#how-to-install-the-payfast-add-on}
 
 Qo‘shimchalar sahifasiga o‘ting va **Ultimate Multisite: Payfast Gateway** qo‘shimchasini tanlang.
 

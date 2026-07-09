@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent arîkarekî AI yê xweser ê WordPress e ku dikare bi rêwerzên zimanê xwezayî malperên WordPress ên temam plan bike, ava bike û rêve bibe. Ew komeke rêkûpêk a **şiyanên** pêşkêş dike — kiryarên cuda û ceribandinbar ku agent dikare bang bike — ji rêvebirina naverokê heta taybetkirina pergala sêwiranê. Guhertoya 1.9.0 şiyanên afirandina naverokê, nirxandina rûpelê ya dîtbar bi screenshots ji aliyê client, pênc profîlên agent ên amade, û feature flags ji bo kontrola gihîştinê û brandingê zêde dike.
 
-## Taybetmendiyên Girîng
+## Taybetmendiyên Girîng {#key-features}
 
 - **Pergala şiyanên** — katalogeke moduler û firehbar a kiryarên ku agent dikare li ser sazkirina te ya WordPress bang bike
 - **Rêvebirina Naverokê** — nivîs û rûpelan biafirîne (tevî tayînkirina şablonên rûpelê), di yek bangê de çend nivîsan bi komî biafirîne, wêneyên featured saz bike, û formên têkiliyê ava bike
@@ -28,21 +28,21 @@ Gratis AI Agent arîkarekî AI yê xweser ê WordPress e ku dikare bi rêwerzên
 - **Orkestrasyona Site Builder v2** — planên çend-gavî yên avakirina malperê bi dîtina plugin, şopandina pêşveçûnê, û başkirina çewtiyan
 - **Fermana benchmark a WP-CLI** — ji rêza fermanê suite a benchmark a şiyana agent bixebitîne ji bo CI û nirxandina modelê
 
-## Pêdivî
+## Pêdivî {#requirements}
 
 - WordPress 6.0 an jor
 - PHP 8.1 an jor
 - WordPress Multisite (network-activated) an sazkirina single-site
 - Pluginek connector a dabînkerê AI ya çalak (Anthropic, OpenAI, an hevaheng)
 
-## Sazkirin
+## Sazkirin {#installation}
 
 1. Pelên plugin bar bike bo `/wp-content/plugins/gratis-ai-agent`
 2. Plugin ji rêya dîmendera **Plugins** di WordPress de çalak bike
 3. Biçe **Gratis AI Agent → Settings** û dabînkerê AI yê xwe girê bide
 4. (Vebijarkî) **Abilities Registry** bigere da ku pakêtên şiyanên zêde saz bikî
 
-## Destpêka Bilez
+## Destpêka Bilez {#quick-start}
 
 Piştî çalakbûnê û girêdana bi dabînkerê AI re, panela **Gratis AI Agent** di sidebar a rêveberiya WordPress de veke. Rêwerzeke zimanê xwezayî binivîse û agent dê gavên pêdivî bi karanîna şiyanên berdest ên xwe plan bike û pêk bîne.
 
@@ -60,7 +60,7 @@ Paleteke rengê ya dark-mode têxe theme û rengê sereke bike #1a1a2e.
 Malpereke xwaringehê ava bike bi menuyeke online, forma veqetandinê, û rûpela têkiliyê.
 ```
 
-## Kurtenêrîna Şiyanên
+## Kurtenêrîna Şiyanên {#abilities-overview}
 
 Şiyan kiryarên atomîk in ku agent dikare pêk bîne. Her şiyan klaseke PHP ya tomarkirî ye ku schemayekê (parameter û cureyên vegerê) pêşkêş dike ku agent di dema xebitandinê de dixwîne. Şiyan li gorî qadên fonksiyonel kom dibin:
 
@@ -79,7 +79,7 @@ Malpereke xwaringehê ava bike bi menuyeke online, forma veqetandinê, û rûpel
 
 Ji bo belgekirina parameteran a temam û mînakên karanînê, li [Referansa Şiyanên](./abilities) binêre.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent malbata fermanên `wp gratis-ai-agent` pê re tîne ji bo xebitandina benchmarkan û rêvebirina şiyanên ji rêza fermanê. Ji bo lîsteya fermanên temam, li [Referansa WP-CLI](./wp-cli) binêre.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Veavakirin
+## Veavakirin {#configuration}
 
 Hemû mîheng di bin **Gratis AI Agent → Settings** de ne di rêveberiya WordPress de:
 
@@ -106,7 +106,7 @@ Hemû mîheng di bin **Gratis AI Agent → Settings** de ne di rêveberiya WordP
 | **Ability Timeout** | Zêdetirîn çirkeyên ku şiyaneke takekesî dikare bixebite (default 30) |
 | **Debug Logging** | Bangên şiyanên û aqilmendiya agent têxe loga debug a WordPress |
 
-## Blocklist a Ewlehiyê ya Rêvebirina Options
+## Blocklist a Ewlehiyê ya Rêvebirina Options {#options-management-safety-blocklist}
 
 Hêza rêveberiya vebijarkan blocklistek xwemalî dihewîne ku nahêle agent vebijarkên hestiyar ên WordPress bixwîne an binivîse. Blocklista standard van dihewîne:
 
@@ -118,26 +118,26 @@ Hêza rêveberiya vebijarkan blocklistek xwemalî dihewîne ku nahêle agent veb
 
 Têketinên zêde dikarin bi rêya filtera `gratis_ai_agent_options_blocklist` werin zêdekirin.
 
-## Hook û Filter
+## Hook û Filter {#hooks-and-filters}
 
-### Çalakî
+### Çalakî {#actions}
 
 - `gratis_ai_agent_ability_registered` — piştî ku hêzek tê tomarkirin tê şandin, navê pola hêzê distîne
 - `gratis_ai_agent_plan_started` — dema plana avakirina malperê dest bi bicihanînê dike tê şandin
 - `gratis_ai_agent_plan_completed` — dema planek bi serkeftî diqede tê şandin
 - `gratis_ai_agent_plan_failed` — dema planek rastî çewtiyek neguhêzbar tê tê şandin
 
-### Filter
+### Filter {#filters}
 
 - `gratis_ai_agent_abilities` — berî ku agent wê bar bike, lîsteya hêzên tomarkirî biguherîne
 - `gratis_ai_agent_options_blocklist` — blocklista ewlekariya vebijarkan fireh bike an kêm bike
 - `gratis_ai_agent_benchmark_questions` — pirsên benchmark ên xweser li komika nirxandinê zêde bike
 - `gratis_ai_agent_plan_plugins` — di dema çêkirina plana malperê de lîsteya dîtina pluginan biguherîne
 
-## Piştgirî
+## Piştgirî {#support}
 
 Ji bo piştgiriyê, biçin [ultimatemultisite.com](https://ultimatemultisite.com) an di depoya pluginê de pirsgirêkek vekin.
 
-## Changelog
+## Changelog {#changelog}
 
 Ji bo dîroka tevahî ya guhertoyan, li [Changelog](./changelog) binêre.

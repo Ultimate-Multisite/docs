@@ -3,13 +3,13 @@ title: Kohandatud registripidaja integratsiooni loomine
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kohandatud registripidaja integratsiooni loomine
+# Kohandatud registripidaja integratsiooni loomine {#building-a-custom-registrar-integration}
 
 Domain Seller addon kasutab **Integration Registry** mustrit. Iga registripidaja on PHP klass, mis rakendab `Domain_Selling_Capability` ja registreerib end `wu_domain_seller_register_capabilities` action hooki kaudu.
 
 See juhend näitab, kuidas ühendada kohandatud registripidaja.
 
-## Liides
+## Liides {#the-interface}
 
 Sinu klass peab rakendama `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ja laiendama `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Valikulised meetodid
+### Valikulised meetodid {#optional-methods}
 
 Rakenda need, et avada lisafunktsioone. Addon tuvastab toe `method_exists()` kaudu:
 
@@ -81,7 +81,7 @@ Rakenda need, et avada lisafunktsioone. Addon tuvastab toe `method_exists()` kau
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### Tagastusväärtuse konventsioon
+### Tagastusväärtuse konventsioon {#return-value-convention}
 
 Kõik meetodid tagastavad massiivi, milles on vähemalt `success` võti:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Sinu võimekuse registreerimine
+## Sinu võimekuse registreerimine {#registering-your-capability}
 
 Registreeri oma klass `wu_domain_seller_register_capabilities` actioni abil:
 
@@ -109,7 +109,7 @@ Esimene argument `add_capability()` jaoks on **pakkuja ID** — väiketähtedega
 
 ---
 
-## Volituste väljade lisamine viisardisse
+## Volituste väljade lisamine viisardisse {#adding-credential-fields-to-the-wizard}
 
 Et administraatorid saaksid sisestada volitusi seadistusviisardi kaudu, registreeri oma integratsioon:
 
@@ -137,7 +137,7 @@ Volitused salvestatakse võrgu valikutena, kasutades välja ID-sid võtmetena. T
 
 ---
 
-## Hookid registreerimisjärgsete toimingute jaoks
+## Hookid registreerimisjärgsete toimingute jaoks {#hooks-for-post-registration-actions}
 
 Kasuta neid actioneid webhookide, provisionimise, teavituste või CRM-i uuenduste käivitamiseks:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logimine
+## Logimine {#logging}
 
 Kirjuta oma teenusepakkujapõhisesse logikanalisse, kasutades `wu_log_add()`:
 

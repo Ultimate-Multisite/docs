@@ -3,7 +3,7 @@ title: Loga nan atharrachaidhean Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Log nan Atharrachaidhean Material WP
+# Log nan Atharrachaidhean Material WP {#material-wp-changelog}
 
 Tionndadh 1.1.15 - 01/26/2026
 * Leasaichte: Stoidhle còd agus fòrmatadh;

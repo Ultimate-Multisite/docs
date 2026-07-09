@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Ioma-mhàladaireachd
+# Ioma-mhàladaireachd {#multi-tenancy}
 
 Sgaoil fo-làraichean thar fhrithealaichean is stòran-dàta airson dèanadas agus tèarainteachd
 
-## Prìomh nithean ann an sgaoileadh tionndaidh 1.2.0
+## Prìomh nithean ann an sgaoileadh tionndaidh 1.2.0 {#version-120-release-highlights}
 
 Tha Multi-Tenancy 1.2.0 a’ cur bun-stèidh màladair uachdaranach ris airson sruthan-obrach aonrachaidh riochdachaidh:
 
@@ -25,21 +25,21 @@ Tha Multi-Tenancy 1.2.0 a’ cur bun-stèidh màladair uachdaranach ris airson s
 
 Faic na stiùiridhean cleachdaiche airson [sruth-obrach imrich uachdaranaich](/user-guide/getting-started/sovereign-migration-workflow), [aonrachadh ioma-mhàladaireachd](/user-guide/configuration/multi-tenancy-isolation), agus [obrachaidhean màladair uachdaranaich](/user-guide/administration/sovereign-tenant-operations).
 
-## Riatanasan
+## Riatanasan {#requirements}
 
 - WordPress 5.3 no nas àirde
 - PHP 7.4 no nas àirde
 - Plugan Multisite Ultimate (gnìomhach)
 
-## Stàladh
+## Stàladh {#installation}
 
 1. Luchdaich suas faidhlichean an tuilleadain don eòlaire `/wp-content/plugins/` agad
 2. Cuir an gnìomh am plugan tron chlàr-taice 'Plugins' ann an WordPress
 3. Rèitich roghainnean an tuilleadain ann an rianaire an lìonraidh
 
-## Leasachadh
+## Leasachadh {#development}
 
-### Suidheachadh
+### Suidheachadh {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structar a’ phròiseict
+### Structar a’ phròiseict {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Riaghailtean ùrachadh còd
 ```
 
-### Deuchainn
+### Deuchainn {#testing}
 
 Tha frèam-obrach deuchainn coileanta san tuilleadan:
 
@@ -93,54 +93,54 @@ Tha frèam-obrach deuchainn coileanta san tuilleadan:
 - **Còmhdach Deuchainn**: Air a rèiteachadh gus còmhdach còd a leantainn
 - **Deuchainn Multisite**: Ruithidh deuchainnean ann an àrainneachd multisite
 
-### Inbhean Còd
+### Inbhean Còd {#code-standards}
 
 - **Inbhean Còdaidh WordPress**: Air an cur an sàs tro PHPCS
 - **Co-chòrdalachd PHP 7.4+**: Taic do fheartan PHP nuadh
 - **Mion-sgrùdadh Statach**: Amalachadh PHPStan airson sgrùdadh sheòrsaichean
 - **Ùrachadh Còd**: Riaghailtean Rector airson ùrachaidhean PHP
 
-### Siostam Togail
+### Siostam Togail {#build-system}
 
 - **Làimhseachadh Maoin**: Mionachadh airson faidhlichean CSS/JS
 - **Eadar-theangachadh**: Gineadh faidhle POT
 - **Pacaigeadh**: Cruthachadh tasglainn airson sgaoileadh
 - **Modh Leasachaidh**: Maoin gun mhionachadh airson dì-bhugachadh
 
-## Rèiteachadh
+## Rèiteachadh {#configuration}
 
 Tha an tuilleadan a’ cur taic ri diofar roghainnean rèiteachaidh a gheibhear tro eadar-aghaidh rianaire an lìonraidh.
 
-### Rèiteachadh màladair uachdaranaich
+### Rèiteachadh màladair uachdaranaich {#sovereign-tenant-configuration}
 
 Airson màladairean uachdaranach, rèitich stòr-dàta a’ mhàladair, freumh an t-siostaim-fhaidhlichean, ceangal òsta an stòr-dàta, agus comas an òsta mus stiùir thu trafaig chun a’ mhàladair. Ruith dearbhadh imrich às dèidh gach atharrachaidh a bheir buaidh air teisteanasan stòr-dàta, ceangal òsta, stiùireadh, no ullachadh chleachdaichean.
 
 Cleachd `localhost` a-mhàin nuair a tha runtime a’ mhàladair agus tabhartasan an stòr-dàta an dùil ri socaid ionadail no ruigsinneachd air an aon inneal. Cleachd `127.0.0.1` no ainm-òsta seirbheise nuair is e sin òsta an tabhartais a tha air a rèiteachadh leis an t-solaraiche agad.
 
-### Comas Hostinger
+### Comas Hostinger {#hostinger-capability}
 
 Bidh comas ioma-mhàladaireachd Hostinger ag obair leis an tòcan amalachaidh Hostinger co-roinnte. Dearbhaich gu bheil an àrainn an làthair ann an hPanel, gu bheil DNS a’ comharrachadh gu Account Hostinger, agus gu bheil roghainnean stòr-dàta a’ mhàladair a’ freagairt ri hPanel mus tèid dearbhadh a dhèanamh.
 
-## Hooks agus Filters
+## Hooks agus Filters {#hooks-and-filters}
 
-### Gnìomhan
+### Gnìomhan {#actions}
 
 - `ultimate-multisite-addon-template_init` - Air a losgadh às dèidh tòiseachadh an tuilleadain
 - `ultimate-multisite-addon-template_loaded` - Air a losgadh às dèidh do gach faidhle tuilleadain a bhith air a luchdadh
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Atharraich roghainnean an tuilleadain
 - `ultimate-multisite-addon-template_enabled` - Tar-àithnich inbhe comasachaidh/dì-chomasachaidh an tuilleadain
 
-## Ceadachas
+## Ceadachas {#license}
 
 Tha an tuilleadan seo fo cheadachas GPL v3 no nas ùire.
 
-## Taic
+## Taic {#support}
 
 Airson taic agus sgrìobhainnean, tadhail air [MultisiteUltimate.com](https://multisiteultimate.com)
-## Loga atharrachaidhean
+## Loga atharrachaidhean {#changelog}
 
 - Tionndadh 1.2.0 (2026-06-03): cuir ris fèin-logadh a-steach màladair gun staid, comas ioma-mhàladaireachd Hostinger, aonrachadh stòr-dàta is siostam-fhaidhlichean gach fo-làraich, geataichean dearbhaidh imrich uachdaranaich, leasachaidhean air bootstrap màladair/sgrìobhadair stòr-dàta, ceangal òsta MySQL a ghabhas rèiteachadh, agus teardown uachdaranach nas sàbhailte.
 

@@ -3,7 +3,7 @@ title: Temă PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Personalizarea panoului de administrare cu PRO Theme
+# Personalizarea panoului de administrare cu PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Adesea, când lucrăm pentru clienți, avem nevoie să le oferim o experiență personalizată în panoul de administrare WordPress. Dacă vrei un aspect mai profesional, PRO Theme te poate ajuta.
 

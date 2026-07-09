@@ -3,9 +3,9 @@ title: విడుదల గమనికలు
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# విడుదల గమనికలు
+# విడుదల గమనికలు {#release-notes}
 
-## వెర్షన్ 2.13.0 — 2026-06-05న విడుదలైంది
+## వెర్షన్ 2.13.0 — 2026-06-05న విడుదలైంది {#version-2130--released-on-2026-06-05}
 
 - కొత్తది: కస్టమర్ Account, checkout, billing, సైట్, ఇన్వాయిస్, టెంప్లేట్ మార్పు, డొమైన్ మ్యాపింగ్ ప్రవాహాలకు sovereign-tenant మద్దతు జోడించబడింది. దీని ద్వారా tenant నెట్‌వర్క్‌లు నిర్వహిత చర్యల కోసం కస్టమర్లను ప్రధాన సైట్‌కు తిరిగి పంపగలవు.
 - కొత్తది: పునరావృత membershipల కోసం renewal-credential తనిఖీలు జోడించబడ్డాయి. సేవ్ చేసిన billing ఒప్పందం, subscription, లేదా vault token లేకపోతే gateways ఆటో-renewalను నిలిపివేయగలవు.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - పరిష్కారం: Membership renewals, expiration display, మరియు payment collection అంచు పరిస్థితులు ఇప్పుడు తక్షణ expirationలు, crashes, లేదా తప్పిపోయిన అవసరమైన చెల్లింపులను నివారిస్తాయి.
 - మెరుగుపరచబడింది: WordPress అనుకూలత 7.0 వరకు పరీక్షించబడింది, production Vue assets npm sources నుంచి మళ్లీ నిర్మించబడ్డాయి, మరియు Cypress end-to-end coverage ఇప్పుడు మరిన్ని checkout, setup, SSO, మరియు gateway ప్రవాహాలను పరీక్షిస్తుంది.
 
-## వెర్షన్ 2.12.0 — 2026-05-15న విడుదలైంది
+## వెర్షన్ 2.12.0 — 2026-05-15న విడుదలైంది {#version-2120--released-on-2026-05-15}
 
 - కొత్తది: domain mapping integrationతో మద్దతు ఉన్న host providerగా Hostinger (hPanel) జోడించబడింది
 - కొత్తది: నెట్‌వర్క్ అంతటా సులభమైన సైట్ పునరుద్ధరణ కోసం Site Exporter ఇప్పుడు network import bundlesను నిర్వహిస్తుంది
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - పరిష్కారం: Site Exporter CLI ఇప్పుడు సరైన default network site selectionను కాపాడుతుంది
 - మెరుగుపరచబడింది: plugin package నుంచి bundled wp-cli తీసివేయబడింది, దాంతో plugin పరిమాణం తగ్గింది
 
-## వెర్షన్ 2.11.0 — 2026-05-11న విడుదలైంది
+## వెర్షన్ 2.11.0 — 2026-05-11న విడుదలైంది {#version-2110--released-on-2026-05-11}
 
 - కొత్తది: సైట్ exports ఇప్పుడు self-booting `index.php`ను bundle చేస్తాయి. కాబట్టి ZIPను వేరే plugin install లేకుండా కొత్త hostపై install చేయవచ్చు.
 - కొత్తది: Network export ద్వారా administrators Site Export admin page నుంచి అన్ని subsitesను ఒకే archiveలో export చేయగలరు.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - కొత్తది: అవసరమైన field configure చేయకుండా product జోడించినప్పుడు Checkout form editor హెచ్చరిస్తుంది.
 - కొత్తది: Import/Export settings tab ఇప్పుడు తన పరిధిని స్పష్టంగా వివరిస్తుంది మరియు Site Export toolకు నేరుగా link చేస్తుంది.
 
-## వెర్షన్ 2.10.0 — 2026-05-05న విడుదలైంది
+## వెర్షన్ 2.10.0 — 2026-05-05న విడుదలైంది {#version-2100--released-on-2026-05-05}
 
 - కొత్తది: నిరాఘాటమైన gateway configuration కోసం OAuth flag gateతో manual credential entryకి PayPal guided setup wizard.
 - కొత్తది: current-template card, persistent grid, మరియు **ప్రస్తుత templateను reset చేయి** buttonతో Template switch customer panel మళ్లీ రూపకల్పన చేయబడింది.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - పరిష్కారం: అన్ని login flowsలో filtered SSO path గౌరవించబడింది.
 - పరిష్కారం: ఖాళీ site identity options సేవ్ సమయంలో కాపాడబడ్డాయి.
 
-## వెర్షన్ 2.9.0 — 2026-04-30న విడుదలైంది
+## వెర్షన్ 2.9.0 — 2026-04-30న విడుదలైంది {#version-290--released-on-2026-04-30}
 
 - కొత్తది: **Tools > Export & Import** కింద single-site export మరియు import జోడించబడ్డాయి.
 - పరిష్కారం: Export ZIP files ఇప్పుడు authenticated download endpoint ద్వారా అందించబడతాయి.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - పరిష్కారం: user settings keysలో Tour IDs underscoresకి normalise చేయబడ్డాయి.
 - మెరుగుపరచబడింది: మెరుగైన అనుకూలత కోసం Alchemy/Zippyకు బదులుగా ZipArchive ఇప్పుడు ఉపయోగించబడుతుంది.
 
-## వెర్షన్ 2.8.0 — 2026-04-29
+## వెర్షన్ 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - కొత్తది: Other Options సెట్టింగ్‌ల UIకి Jumper toggle ప్రారంభించే ఎంపిక జోడించబడింది.
 - కొత్తది: Checkout ఫారమ్‌ల జాబితా పట్టికకు స్థితి కాలమ్ జోడించబడింది.

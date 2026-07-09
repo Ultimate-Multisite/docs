@@ -4,19 +4,19 @@ title: Filter - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies
+# Filter: send_auth_cookies {#filter-sendauthcookies}
 
 Umožňuje zabrániť tomu, aby sa auth cookies skutočne odoslali klientovi.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
 | $send | `bool` | Či sa majú auth cookies odoslať klientovi. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 4.7.4
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L150) na riadku 150

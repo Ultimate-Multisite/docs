@@ -3,7 +3,7 @@ title: Stjórnaraferð fyrir multisítuuppsetning
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Uppsetar
+# Multisite Uppsetar {#multisite-setup-wizard}
 
 Ultimate Multisite hefur innbyggt uppsetar sem sjálfskiptir breytur almenna WordPress-innstallsannferð í nýja WordPress Multisite netverk. Þetta fjölstyrkir þarf manulega að breyta `wp-config.php` eða framkvæma skjalaskiljanlegar fyrirmönnum í MySQL.
 
@@ -11,13 +11,13 @@ Ultimate Multisite hefur innbyggt uppsetar sem sjálfskiptir breytur almenna Wor
 Ef WordPress-innstallsinn þitt er ekki enn framkvæmt sem Multisite netverk, geturðu skoða þennan skref ekkert. Uppsetarið sýnist aðeins þegar Multisite hefur ekki verið aktivert.
 :::
 
-## Hér sýnist uppsetarið?
+## Hér sýnist uppsetarið? {#when-does-the-wizard-appear}
 
 Þegar þú aktiverir Ultimate Multisite á almennum (einnig ekki Multisite) WordPress-innstallsannferð, mæler pluginurinn með því að Multisite sé ekki framkvæmt og leiðir þig sjálfskiptilega til Multisite Uppsetar í stað reglulegs uppsetar.
 
 Þú getur einnig hurið þessum beint í **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Skilyrði fyrir uppsetuna
+## Skilyrði fyrir uppsetuna {#prerequisites}
 
 Fyrir að byrja með uppsetunni, saksara:
 
@@ -29,7 +29,7 @@ Fyrir að byrja með uppsetunni, saksara:
 Uppsetarið breytur `wp-config.php` lausninn þinn og skapar nýja grunnitablar í grunninum. Skapa alltaf bakgrunn áður en þú byrjar með uppsetunni.
 :::
 
-## Skref 1: Velkomið
+## Skref 1: Velkomið {#step-1-welcome}
 
 Fyrsta skjá sýnir hvað WordPress Multisite er og hvað uppsetarið mun gera:
 
@@ -42,11 +42,11 @@ Fyrsta skjá sýnir hvað WordPress Multisite er og hvað uppsetarið mun gera:
 
 Klikka á **Continue** til að halda fram.
 
-## Skref 2: Netverkarsetning
+## Skref 2: Netverkarsetning {#step-2-network-configuration}
 
 Þessi skrefur mæler þig með því að setja upp settningar fyrir netverkið þitt.
 
-### Site Structure
+### Site Structure {#site-structure}
 
 Velduðu hvernig þú vilt að netsveitirna þín sé sést:
 
@@ -57,11 +57,11 @@ Velduðu hvernig þú vilt að netsveitirna þín sé sést:
 Ef þú valdar sub-domains, þurfaðu að settja upp **wildcard DNS** og **wildcard SSL certificate** fyrir domænnann þinn. Stóra hluti stýrðar WordPress hosta hannað þetta sjálf. Sjá [Ultimate Multisite 101](./ultimate-multisite-101) fyrir nánari samanburði.
 :::
 
-### Nettititel
+### Nettititel {#network-title}
 
 Skrifa nafn fyrir netið þitt. Þetta er sett á þann sem titil þínna núverandi staðar með orðinu "Network" við brennandi. Þú getur breytt þetta seinara í nettinnstillingum.
 
-### Nettitil Administrað E-mail
+### Nettitil Administrað E-mail {#network-admin-email}
 
 E-mail hugsanlega notaður fyrir tilkynningarnir um stjórnun netlandsins. Þetta er sett á e-mail hugsanlega notandans núverandi e-mail.
 
@@ -69,7 +69,7 @@ E-mail hugsanlega notaður fyrir tilkynningarnir um stjórnun netlandsins. Þett
 
 Eft sem þú hefur fyllt í feldi, klikkaðu á **Continue** til að halda fram.
 
-## Stig 3: Inntök
+## Stig 3: Inntök {#step-3-installation}
 
 Klikkaðu á knappa **Install** til að byrja. Wizardurinn gerir fimm sjálfsháttar stefnuferli í nákvæm röð, þar sem hann sýnir framgang hans í sanntíma:
 
@@ -96,7 +96,7 @@ Eftir að allar skref sé fylgdu ánan villur, sjáðu þú grænt "Success!" st
 
 Þá mun uppsetningarsjávar sjálf ánar fram til fullferðar.
 
-## Skref 4: Fullferð
+## Skref 4: Fullferð {#step-4-complete}
 
 Eftir að uppsetningin sé fylgdu, sjáðu þú stað fyrir árangur sem staðfestir að WordPress Multisite hafi verið aktivaður.
 
@@ -108,7 +108,7 @@ Eftir að uppsetningin sé fylgdu, sjáðu þú stað fyrir árangur sem staðfe
 Þegar multisite-innstillingin er fullfærð, mun brauzerrið þitt leita áfram í nýlega ensettu netni stjórnarskrá. Þú gætir þurft að logga inn aftur þar sem auðkenningartakinsmið (authentication cookies) eru uppfærð fyrir multisite-umhverfið.
 :::
 
-## Manuell uppsetning sem vafn
+## Manuell uppsetning sem vafn {#manual-setup-fallback}
 
 Ef vafninn ekki geti skrifað í `wp-config.php` lausnar (vegna réttkvæmdar á lausnum eða þess að serverinn hætrar því), mun hann sýna nákvæma kóðann sem þú þarft að bæta í handbók:
 
@@ -117,9 +117,9 @@ Ef vafninn ekki geti skrifað í `wp-config.php` lausnar (vegna réttkvæmdar á
 
 Eftir að hafa skipti í handbókinni, uppfrisðu síðuna og vafninn mun skilja að multisite er nú á hjá.
 
-## Feilfellingar
+## Feilfellingar {#troubleshooting}
 
-### Vafninn segir að wp-config.php sé ekki skrifað í
+### Vafninn segir að wp-config.php sé ekki skrifað í {#the-wizard-says-wp-configphp-is-not-writable}
 
 Webbserviþjónustinn þinn þarf skrifa réttkvæmd til `wp-config.php` lausnum. Þú getur eða:
 
@@ -127,7 +127,7 @@ Webbserviþjónustinn þinn þarf skrifa réttkvæmd til `wp-config.php` lausnum
 - Notið huleðar uppsetningu sem er í vafni
 - Spyr þjónustufara þinn um hjálp
 
-### Síður eru ekki aðgengilegar eftir uppsetningu (subdomains)
+### Síður eru ekki aðgengilegar eftir uppsetningu (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Ef þú valdið subdomain stjórnun, þarfurðu að sett **wildcard DNS** fyrir domænnina þína. Bæta í DNS-skrá:
 
@@ -139,7 +139,7 @@ Value: [þinn server IP]
 
 Skildu við þjónustufara þinn ef þú ert ekki viss um hvernig þú getur sett upp þetta.
 
-### Auðkenningartakinsmið á eftir uppsetningu
+### Auðkenningartakinsmið á eftir uppsetningu {#authentication-issues-after-setup}
 
 Ef þú ert ekki loggað inn eða upplifir cookie-feil eftir multisite uppsetninguna:
 
@@ -147,7 +147,7 @@ Ef þú ert ekki loggað inn eða upplifir cookie-feil eftir multisite uppsetnin
 2. Logga in aftur í `yourdomain.com/wp-login.php`
 3. Ef því áhætta er áfram, skoða að `wp-config.php` þitt ekki sé sett með `COOKIE_DOMAIN` setningu `false` — þetta er þekkt hugbúnaðarferli á multisite uppsetningum með subdomain.
 
-### Ein skref felið í uppsetningu
+### Ein skref felið í uppsetningu {#a-step-failed-during-installation}
 
 Ef einn af innreiðsluferlum sýnir villu:
 

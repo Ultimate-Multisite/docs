@@ -3,7 +3,7 @@ title: Καταγραφή αλλαγών ενσωμάτωσης WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Αρχείο αλλαγών WooCommerce Integration
+# Αρχείο αλλαγών WooCommerce Integration {#woocommerce-integration-changelog}
 
 Έκδοση 2.2.0 - Κυκλοφόρησε στις 2026-07-01
 * Νέο: Τα ποσά φόρων του Ultimate Multisite εμφανίζονται πλέον ως ξεχωριστές γραμμές χρέωσης WooCommerce στο checkout, κάνοντας τα σύνολα φόρων πιο σαφή πριν από την πληρωμή.

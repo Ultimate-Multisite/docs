@@ -3,11 +3,11 @@ title: Referensi Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referensi Hooks
+# Referensi Hooks {#hooks-reference}
 
 Dokumentasi yang dibuat otomatis untuk semua **59 aksi** dan **118 filter** di Ultimate Multisite.
 
-## Aksi
+## Aksi {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Dipicu sebelum redirect autentikasi.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Dipicu tepat sebelum cookie autentikasi diatur.
@@ -70,7 +70,7 @@ Dokumentasi yang dibuat otomatis untuk semua **59 aksi** dan **118 filter** di U
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Dipicu setelah sebuah objek disimpan ke database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Memungkinkan pengembang plugin menambahkan action ke proses pembukaan kunci.
 
-## Filter
+## Filter {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Memfilter durasi periode kedaluwarsa cookie autentikasi.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Memfilter skema pengalihan autentikasi.

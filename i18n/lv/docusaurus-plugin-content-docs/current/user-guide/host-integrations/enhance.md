@@ -3,33 +3,33 @@ title: Pālabdīt kontrol panelas integrāciju
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Uzlabot kontrol panelas integrāciju
+# Uzlabot kontrol panelas integrāciju {#enhance-control-panel-integration}
 
-## Īsszums
+## Īsszums {#overview}
 Enhance ir mūsdienu kontrol panelas, kas sniedz spēcīgas hostings automātiskās un pārvaldības iespējas. Šī integrācija ļauj automātiski sincronizēt domānos un pārvaldīt SSL sertifikātu starp Ultimate Multisite un Enhance Control Panel.
 
 **Saistīta diskusija:** Skatieties [GitHub Diskusi #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) pirms, lai saņemtu kopienas padomus un papildu informāciju.
 
-## Funkcionalitātes
+## Funkcionalitātes {#features}
 - Automātiskais domānu sincronizēšana, kad domāni ir mapeti Ultimate Multisite
 - Automātiskais SSL sertifikāta sniegšana ar LetsEncrypt, kad DNS atrisinās
 - Subdomēnu atbalsts tīklām, kas darbojas subdomēnu režīmā
 - Domāna izslēgšana, kad tiek noņemtas mape
 - Savienojuma tests API kredenci pārbaudīšanai
 
-## Prasības
+## Prasības {#requirements}
 
-### Sistēmas prasības
+### Sistēmas prasības {#system-requirements}
 - Enhance Control Panel ir instalēta un pieejama
 - WordPress Multisite instalācija hostēta vai savienota ar Enhance serveri
 - Apache vebservera (Enhance pašlaik atbalsta Apache konfigurācijas; LiteSpeed Enterprise ir pieejams samazinātā cenā)
 
-### API piekļuve
+### API piekļuve {#api-access}
 Jums jābūt administratoram piekļuvei Enhance Control Panel, lai izdarītu API tokenus.
 
-## Jums API kredenci iegūšana
+## Jums API kredenci iegūšana {#getting-your-api-credentials}
 
-### 1. Izveidot API tokenu
+### 1. Izveidot API tokenu {#1-create-an-api-token}
 
 1. Loginieties uz savu Enhance Control Panel kā administratoris
 2. Nospressiet **Settings** (Iestatījumi) navigācijas menüs
@@ -44,7 +44,7 @@ Jums jābūt administratoram piekļuvei Enhance Control Panel, lai izdarītu API
 
 Pēc izveidošanas jums tiks redzami **Access Token** un **Organization ID**. **Saglabājiet tos neatkarīgi**, jo token parādīsies tikai reizi.
 
-### 2. Saņemiet savu Organization ID
+### 2. Saņemiet savu Organization ID {#2-get-your-organization-id}
 
 Organization ID redzams Access Tokens lapā, kur ir zils informācijas bloks ar rakstu "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Jūs varat atrast klienta Organization ID šādi:
 2. Nospressiet **Manage customer** attiecīgajam klientam
 3. Skatieties URL adresi - Organization ID ir alfanumeriskie raksti pēc `/customers/`
 
-### 3. Saņemiet savu Server ID
+### 3. Saņemiet savu Server ID {#3-get-your-server-id}
 
 Lai atrastu savu Server ID (kas ir nepieciešams domānu operācijām):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID seko UUID formātam: `00000000-0000-0000-0000-000000000000`
 
-### 4. Saņemiet savu API URL
+### 4. Saņemiet savu API URL {#4-get-your-api-url}
 
 Jūsu API URL ir jūsu Enhance Control Panel URL ar pievienotu `/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Izmantot tikai domānu bez `/api/`
 - Izmantot HTTP vietā HTTPS (HTTPS ir nepieciešams drošības dēļ)
 
-## Konfigurācija
+## Konfigurācija {#configuration}
 
-### Nepieciešami konstantes
+### Nepieciešami konstantes {#required-constants}
 
 Pievienojiet šo konstantes savam `wp-config.php` failam:
 
@@ -95,7 +95,7 @@ define('WU_ENHANCE_API_TOKEN', 'jūsu-bearer-token-lūk- šeit');
 define('WU_ENHANCE_API_URL', 'https://jūsu-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'jūsu-servera-uuid-lūk- šeit');
 
-### Iestatījumi ar integrācijas palīdzību (Wizard)
+### Iestatījumi ar integrācijas palīdzību (Wizard) {#setup-via-integration-wizard}
 
 1. Jūrējieties savā WordPress admin panelā uz **Ultimate Multisite** > **Settings**.
 2. Navigējiet uz tabuli **Integrations**.
@@ -110,17 +110,17 @@ Jūs varat izvēlēties:
 - Laistiet palīdzību automātiski ieviekt konstantes jūsu `wp-config.php` failā
 - Kopēt konstantu definīcijas un pievienot tās maniski
 
-## Papildu WordPress iestatījumi
+## Papildu WordPress iestatījumi {#additional-wordpress-configuration}
 
 Atbildot uz saimnieku atsauksmēm ([Diskussija #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), jums var būt nepieciešams konfigurēt šos papildu iestatījumi:
 
-### .htaccess Konfigurācija
+### .htaccess Konfigurācija {#htaccess-configuration}
 
 Ja jums ir problēmas ar domānu mapi (mapping):
 1. Izslēdziet oriģinālo Enhance `.htaccess` failu
 2. Atstājiet to vietā standarta WordPress Multisite `.htaccess` faila
 
-### Cookie konstantes
+### Cookie konstantes {#cookie-constants}
 
 Pievienojiet šīs konstantes `wp-config.php` failam, lai nodrošinātu pareizu cookie pārvaldību mapeju domānu:
 
@@ -130,9 +130,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Kā tas darbojas
+## Kā tas darbojas {#how-it-works}
 
-### Kad tiek mapi (mapping) domāns
+### Kad tiek mapi (mapping) domāns {#when-a-domain-is-mapped}
 
 1. Lietotājs mapē ir personālajām domēniem Ultimate Multisite (vai tiek izveidots jauns sites subdomēnu režīmā).
 2. Integrācija sūta POST pieprasījumu Enhance API: `/servers/{server_id}/domains`.
@@ -140,14 +140,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Kad DNS atrisinās uz jūsu serveru, Enhance automātiski sniedz SSL sertifikātu ar LetsEncrypt.
 5. Domēns kļūst aktīva ar HTTPS.
 
-### Kad domēnu noņemšana
+### Kad domēnu noņemšana {#when-a-domain-is-removed}
 
 1. Ultimate Multisite-ā tiek izslēgta domēna mapēšana.
 2. Integrācija jautā Enhance, lai atrastu domēnas ID.
 3. Sūta DELETE pieprasījumu uz: `/servers/{server_id}/domains/{domain_id}`.
 4. Enhance noņem domēnu jūsu servera konfigurācijai.
 
-### DNS un SSL pārbaude
+### DNS un SSL pārbaude {#dns-and-ssl-checking}
 
 Ultimate Multisite ietver integrētu DNS un SSL pārbaudi:
 - Jūs varat konfigūriju intervali pārbaudes **Domain Mapping Settings** (default: 300 sekund/5 minūtes).
@@ -155,9 +155,9 @@ Ultimate Multisite ietver integrētu DNS un SSL pārbaudi:
 - SSL sertifikāta saskaņas ir automātiski pārbaudītas.
 - Enhance automātiski sniedz SSL, tāpēc man nepieciešams manuāli konfigūruēt SSL.
 
-## Konfigurācijas apstiprināšana
+## Konfigurācijas apstiprināšana {#verifying-setup}
 
-### Pārbaude savienojumu
+### Pārbaude savienojumu {#test-the-connection}
 
 1. Integrācijas wizardā izmantojiet **Test Connection** solīti.
 2. Plugin mēģina sarakstīt domēnus jūsu serverā.
@@ -167,7 +167,7 @@ Ultimate Multisite ietver integrētu DNS un SSL pārbaudi:
    - Servera ID ir pareizs
    - Uzliekumi ir labi iestati
 
-### Domēnas mapēšanas pēc domēnas mapēšanas
+### Domēnas mapēšanas pēc domēnas mapēšanas {#after-mapping-a-domain}
 
 1. Mapējiet tests domēnu Ultimate Multisite-ā.
 2. Pārbaudiet Ultimate Multisite logus (**Ultimate Multisite** > **Logs** > **integration-enhance**).
@@ -176,9 +176,9 @@ Ultimate Multisite ietver integrētu DNS un SSL pārbaudi:
    - Jauns domēns jāparādās sarakstā.
 4. Kad DNS propagējas, pārbaudiet, vai SSL ir automātiski sniegts.
 
-## Kļūdu likums (Troubleshooting)
+## Kļūdu likums (Troubleshooting) {#troubleshooting}
 
-### API savienojumu problēmas
+### API savienojumu problēmas {#api-connection-issues}
 
 **Kļūda: "Enhance API savienojuma neizveidots" (Failed to connect to Enhance API)**
 - Pārbaudiet, vai `WU_ENHANCE_API_URL` beidzjas `/api/` rakstiem.
@@ -196,7 +196,7 @@ Ultimate Multisite ietver integrētu DNS un SSL pārbaudi:
 - Nodrošiniet, ka Server ID ir pareizais UUID formātāts.
 - Confirmējiet, ka serveri ir pieejams jūsu Enhance panelī.
 
-### Domen nepievienots (Domain Not Added)
+### Domen nepievienots (Domain Not Added) {#domain-not-added}
 
 **Pārbaudiet logus:**
 1. Dodieties uz **Ultimate Multisite** > **Logs**.
@@ -209,7 +209,7 @@ Ultimate Multisite ietver integrētu DNS un SSL pārbaudi:
 - Neatkarīgi API atļaujas (nodrošiniet, ka tokenam ir "System Administrator" loma).
 - Servera ID nepiemērojams ar patiekošu serveri Enhance panelī.
 
-### SSL sertifikāta problēmas
+### SSL sertifikāta problēmas {#ssl-certificate-issues}
 
 **SSL nekonfigūrots:**
 - Pārbaudiet, vai DNS punkti norāda uz jūsu servera IP adresi.
@@ -223,7 +223,7 @@ Ultimate Multisite ietver integrētu DNS un SSL pārbaudi:
 2. Atrodiet savu domēnu un pārbaudiet tās SSL statusu.
 3. Ja nepieciešams, varat manuāli izraisīt SSL sertifikāta konfigūraciju.
 
-### DNS pārbaudes intervāls (DNS Check Interval)
+### DNS pārbaudes intervāls (DNS Check Interval) {#dns-check-interval}
 
 Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja!
 
@@ -242,13 +242,13 @@ Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, 
 ---
 Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja!
 
-### Jaunojumi domenus vai SSL sertifikāti attivēšanai ir pārāk ilgi:
+### Jaunojumi domenus vai SSL sertifikāti attivēšanai ir pārāk ilgi: {#authentication-errors}
 1. Ieiet uz **Ultimate Multisite** > **Settings** > **Domain Mapping**.
 2. Atrodiet iestatījumu **DNS Check Interval**.
 3. Pārējiet no defaulta 300 sekundiem uz mazāku vērtību (minimāls: 10 sekundes).
 4. **Piezīme:** Mazākas atkarības laikas nozīmē biežākus pārbaudes, bet augstāka servera slodze.
 
-### Autentifikācijas kļūdas
+### Autentifikācijas kļūdas {#log-analysis}
 
 **HTTP 401/403 kļūdas:**
 - Pievienojiet (regenerējiet) savu API tokeni Enhance sistemā.
@@ -256,7 +256,7 @@ Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, 
 - Pārbaudiet, vai tokenis nav pēdējais.
 - Nodrošinieties, ka izmantojat pareizu Organizācijas ID (lai gan tas parasti nav nepieciešams URL adresē).
 
-### Log analīze
+### Log analīze {#api-reference}
 
 Iespējiet detalizētu logu:
 ```php
@@ -270,15 +270,15 @@ Pēc tam pārbaudiet logus šajos vietās:
 - WordPress debug log: `wp-content/debug.log`.
 - Enhance panela logi: Pieejami Enhance admin interfejsā.
 
-## API referance
+## API referance {#authentication}
 
-### Autentifikācija
+### Autentifikācija {#common-endpoints-used}
 Visas API pieprasījumus izmanto Bearer token autentifikāciju:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Parasti lietotie endpoints
+### Parasti lietotie endpoints {#full-api-documentation}
 
 **Sarakstīt serverus:**
 ```
@@ -301,30 +301,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Pilna API dokumentācija
+### Pilna API dokumentācija {#best-practices}
 Pilna API dokumentācija: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Labākās praktikas
+## Labākās praktikas {#security}
 
-### Drošums (Security)
+### Drošums (Security) {#performance}
 - **Nekad neietot API tokenus versiju kontrolē**
 - Tokenus glabāt `wp-config.php` failā, kas jāizņem no Gita
 - Izmantojiet tokenus ar atbilstošām iestatas (Sistēmas administratoris, ja vajadzīgs pilns integrācija)
 - Iestati tokenu izkārtojumu datumu produktīvās vidi
 - Periodiski mainiet tokenus
 
-### Darba veiksmi (Performance)
+### Darba veiksmi (Performance) {#monitoring}
 - Izmantojiet default DNS pārbaudes intervālu (300 sekund), lai izvairītos no pārāk daudz API attiecībām
 - Uzraudziet Enhance serveru resursus, ja veiciet lielas domēnu operācijas
 - Izvēlieties atsevišķi domēnu pievienošanos, ja vienlaikus mapejojat vairākus domēnus
 
-### Uzraudzība (Monitoring)
+### Uzraudzība (Monitoring) {#additional-resources}
 - Regulāri pārbaudiet Ultimate Multisite logus integrācijas kļūdu noteikšanai
 - Iestati uzraudzību neizveidoto domēnu pievienošanos
 - Noteiciet, vai SSL sertifikāti tiek izveidoti pareizi
 - Uzraudziet Enhance servera kapacitāti un domēnu ierobežojumus
 
-## Papildu resursi (Additional Resources)
+## Papildu resursi (Additional Resources) {#support}
 
 - **Enhance oficiālais dokuments:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API dokuments:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -332,7 +332,7 @@ Pilna API dokumentācija: [https://apidocs.enhance.com](https://apidocs.enhance.
 - **GitHub diskusija:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite domēnu mapejošanas gida:** Skatīt wiki lapu "How to Configure Domain Mapping v2"
 
-## Atbalsts (Support)
+## Atbalsts (Support) {#notes}
 
 Ja jums radīsies problēmas:
 1. Pārbaudiet iepriekšminēto Kļūdu likumu (Troubleshooting) sadaļu

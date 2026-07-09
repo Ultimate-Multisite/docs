@@ -3,7 +3,7 @@ title: 管理會員資格
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# 管理會員資格
+# 管理會員資格 {#managing-memberships}
 
 在 Ultimate Multisite 中，你可以管理會員資格，並存取你網路上的所有訂閱。檢視並編輯訂閱詳細資料，例如方案和產品、網站數量、帳單金額與頻率、付款紀錄，以及時間戳記。
 

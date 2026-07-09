@@ -4,11 +4,11 @@ title: Salain - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie
+# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Sinasala kung ang logged in cookie ay dapat lamang ipadala sa pamamagitan ng HTTPS.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sinasala kung ang logged in cookie ay dapat lamang ipadala sa pamamagitan ng HTT
 | $user_id | `int` | User ID. |
 | $secure | `bool` | Kung ang auth cookie ay dapat lamang ipadala sa pamamagitan ng HTTPS. |
 
-### Mula Noong
+### Mula Noong {#since}
 
 - 3.1.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) sa linya 91

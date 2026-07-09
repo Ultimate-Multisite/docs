@@ -3,11 +3,11 @@ title: Üýtgeşmeler sanawy
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Üýtgeşmeler gündeligi
+# Üýtgeşmeler gündeligi {#changelog}
 
-## 1.9.0 — 2026-04-28 senesinde çykaryldy
+## 1.9.0 — 2026-04-28 senesinde çykaryldy {#190--released-on-2026-04-28}
 
-### Täze
+### Täze {#new}
 
 - **`create_contact_form` ukyby** — işjeň forma plugin-ini (Contact Form 7, WPForms, Fluent Forms ýa-da Gravity Forms) ulanyp habarlaşma formasyny döredýär we islendik ýazga ýa-da sahypa ýerleşdirmäge taýýar shortcode gaýtarýar.
 - **`set_featured_image` ukyby** — bar bolan Media Library goşundysynyň ID-si ýa-da uzakdaky URL arkaly ýazga ýa-da sahypa esasy surat belleýär; URL berilende suraty awtomatiki import edýär.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Soňky sessiýany dikeltmek** — chat paneli indi sahypa ýüklenende we widget açylanda iň soňky gepleşigi awtomatiki täzeden ýükleýär, şonuň üçin sahypalar arasyndaky geçişlerde kontekst hiç wagt ýitmeýär.
 - **Plugin amal linkleri** — Settings we Abilities Registry üçin çalt linkler indi WordPress **Plugins → Installed Plugins** ekranynda plugin düşündirişiniň aşagynda peýda bolýar.
 
-### Kämilleşdirildi
+### Kämilleşdirildi {#improved}
 
 - **Surat çeşmesini gaýtadan synanyşmak** — agent indi göçürip almak şowsuz bolanda AI tarapyndan döredilen surata geçmezden öň ähli sazlanan mugt surat çeşmelerini gaýtadan synap görýär.
 - **Model maglumat paneli** — chat sözbaşysynda hemişe görünýär; indi ilkinji habardan soň gizlenmeýär.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget täzeden dizaýny** — bitewi AI nyşany öňki ýörite awataryň ornuny tutýar; içinde gurlan agent ulgamy bilen yzygiderli.
 - **URL linkleşdirme** — ulgam habarlarynda we säwlik habary köpürjiklerinde peýda bolýan URL-ler indi basyp bolýan linkler hökmünde görkezilýär.
 
-### Düzedildi
+### Düzedildi {#fixed}
 
 - **Ukybyň tapylmagy** — ähli ukyplaryň agentiň gurallar sanawynda ygtybarly peýda bolmagy üçin düşündirişler, ulgam prompt salgylanmalary we namespace gabat gelmegi düzedildi.
 - **Üstünlik berijiler keşi** — üstünlük berijiler indi wersiýa sanawy arkaly tutuş sahypa boýunça keşlenýär, bu multisite torlarynda könelen-üstünlük beriji meseleleriniň öňüni alýar.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — 2026-04-09 senesinde çykaryldy
+## 1.4.0 — 2026-04-09 senesinde çykaryldy {#140--released-on-2026-04-09}
 
-### Täze
+### Täze {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI pipelines we model bahalandyrma iş akymlary üçin buýruk setirinden Agent Capabilities v1 benchmark toplumyny işledýär. Her sorag boýunça işledişleri, provider/model çalşyrmalaryny we JSON/CSV çykyşyny goldaýar.
 - **Agent Capabilities v1 benchmark toplumy** — bahalandyrma we token/dowamlylyk hasabaty bilen, doly ukyp gerimini synaýan çylşyrymly, köp ädimli promptlaryň gurluşly toplumy.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restoran web sahypasy benchmark soragy** (`q-restaurant-website`) — CPT bellige almak, design system, navigasiýa we plugin tapmagy öz içine alýan başdan-aýak test.
 - Has çalt ýerli işläp düzme sazlamasy üçin WordPress Playground blueprintlerine **AI provider connector pluginleri** goşuldy.
 
-### Kämilleşdirildi
+### Kämilleşdirildi {#improved-1}
 
 - README AI provider connector resminamalary we sazlama görkezmeleri bilen täzelendi.
 
-### Düzedildi
+### Düzedildi {#fixed-1}
 
 - `main` şahasyndaky 25 PHPUnit test şowsuzlygy çözüldi.
 - `blueprint.json` içindäki GitHub releases URL formaty düzedildi.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Öňki release bellikleri plugin repozitoriýasynda saklanýar._

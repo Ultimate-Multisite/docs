@@ -3,7 +3,7 @@ title: ڪوڊ سنيپٽس
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 لاءِ کوڈ سنيپٹس
+# v2 لاءِ کوڈ سنيپٹس {#code-snippets-for-v2}
 
 بنیادی طور تي، **WordPress** لاءِ کوڈ سنيپٹس ان ڪنهن ڪنهن عمل ڪرڻ لاءِ استعمال ٿين ٿا جيڪي عام طور تي هڪ مخصوص ننڍڙي plugin جي ضرورت پوندا هوندو. اهڙيون سنيپٹس WordPress جو ڪنهن هميشه (core) يا ٺهي ويو ٿيل theme جي ملف (file) ۾ (عام طور تي توهان جي theme جي functions.php فائل ۾) رکيل هونديون آهن، يا انهن کي MU plugin جي صورت ۾ استعمال ڪيو ويندو آهي.
 
@@ -15,13 +15,13 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**Mapped domains ۾ Font-Icons سان CORS مسئلن کي ختم ڪرڻ**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Account menu item جو پيغير بدلائڻ
+## Account menu item جو پيغير بدلائڻ {#changing-the-position-of-the-account-menu-item}
 
 توهان جي ڪلائين جي Dashboard تي Account menu item جو پيغير بدلڻ لاءِ، بس هي سنيپٽ توهان جي main site جي active theme جي functions.php ۾ شامل ڪريو. توهان ان سنيپٽ کي انهن مان هڪ ۾ به رکي سگهو ٿا جيڪي توهان جا mu-plugins يا custom plugins آهن.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // هي value tweak ڪريو ته جيئن menu کي مطلوب پيغير تي رکيو ويندو.
 
-## صارف ڪنهن پلان تي آهي يا نه، ۽/يا ڪو فعال سبسڪريپشن رکي ٿو ان کي چيڪ ڪرڻ كيف
+## صارف ڪنهن پلان تي آهي يا نه، ۽/يا ڪو فعال سبسڪريپشن رکي ٿو ان کي چيڪ ڪرڻ كيف {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 هڪ network admin جي طور تي، توهان کي custom functions banaڻ گهرجي جيڪي بنيادي عمل انجام ڏين يا ڪنه مخصوص گروپ جو سبسڪريبرز يا end-users لاءِ ڪنهن سروس/feature کي انهن جي سبسڪريپشن ۽ ان پلان جي حالت جي بنياد تي موجود بنائون.
 
@@ -47,8 +47,8 @@ wu_has_plan($user_id, $plan_id)
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## म्याप्ड डोमेनमा Font-Icons को कारण हुने CORS समस्या समाधान गर्ने
-## म्याप्ड डोमेनमा Font-Icons को कारण हुने CORS समस्या समाधान गर्ने
+## म्याप्ड डोमेनमा Font-Icons को कारण हुने CORS समस्या समाधान गर्ने {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## म्याप्ड डोमेनमा Font-Icons को कारण हुने CORS समस्या समाधान गर्ने {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 एउटा डोमेनलाई सब-साइटसँग जोड्ने (mapping) पछि तपाईंले साइटमा कस्टम फन्ट लोड गर्न गाह्रो भएको देख्न सक्नुहुन्छ। यो तपाईंको सर्भर सेटिङहरूमा रहेको cross-origin ब्लकका कारण हुन्छ।
 
@@ -60,7 +60,7 @@ Apache
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 توهان جي سرور config فائل (جنهن جو مقام سرور تائين مختلف ٿئي ٿو)، ۾ هي شي شامل ڪريو:
 

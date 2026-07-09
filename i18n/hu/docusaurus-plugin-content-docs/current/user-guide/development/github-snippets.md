@@ -3,7 +3,7 @@ title: GitHub kódrészletek
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Az Ultimate Multisite kódrészletek használata a GitHub tárolónkban
+# Az Ultimate Multisite kódrészletek használata a GitHub tárolónkban {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 A GitHub tárolónkban olyan kódrészleteket találsz, amelyeket gyakran kérnek azok az Ultimate Multisite felhasználók, akik kisebb funkciókat szeretnének hozzáadni – például Google Analytics szkriptet a regisztrációs oldalakhoz, vagy egy meta box elrejtését az admin felületen.
 
@@ -19,7 +19,7 @@ Kétféleképpen adhatod hozzá a kódot:
 
   2. Must-Use Plugins (mu-plugins) használatával.
 
-# Hogyan add hozzá a kódrészletet a sablon functions.php fájljához
+# Hogyan add hozzá a kódrészletet a sablon functions.php fájljához {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Jelentkezz be a WordPress hálózat admin felületére, és navigálj a Megjelenés > Sablonszerkesztő menüpontra (lásd az alábbi képernyőképet).
 
@@ -29,7 +29,7 @@ Kétféleképpen adhatod hozzá a kódot:
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Hogyan hozz létre Must-Use Plugins (mu-plugins) bővítményt
+# Hogyan hozz létre Must-Use Plugins (mu-plugins) bővítményt {#how-to-create-must-use-plugins-mu-plugins}
 
 A WordPress rendelkezik egy funkcióval, amely lehetővé teszi egyéni funkciók betöltését „Must-Use Plugins" vagy röviden „mu-plugins" néven.
 

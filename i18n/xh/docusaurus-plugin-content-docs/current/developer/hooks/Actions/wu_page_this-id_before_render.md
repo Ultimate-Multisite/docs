@@ -4,20 +4,20 @@ title: 'Isenzo - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_\{$this->id\}_before_render
+# Action: wu_page_\{$this->id\}_before_render {#action-wupagethis-idbeforerender}
 
 Vumela abaphuhlisi be-plugin bongeze umxholo owongezelelweyo phambi kokuba siprinte iphepha.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page_id | `string` | I-id yeli phepha. |
 | $page | `object` | I-objekthi yephepha. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 1.8.2
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-[`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L398) kumgca 398

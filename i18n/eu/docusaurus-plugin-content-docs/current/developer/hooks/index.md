@@ -3,11 +3,11 @@ title: Hook-en erreferentzia
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks erreferentzia
+# Hooks erreferentzia {#hooks-reference}
 
 Ultimate Multisite-ko **59 ekintza** eta **118 iragazki** guztien automatikoki sortutako dokumentazioa.
 
-## Ekintzak
+## Ekintzak {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Autentifikazio-birbideratzearen aurretik abiarazten da.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Autentifikazio-cookiea ezarri baino berehala lehenago abiarazten da.
@@ -70,7 +70,7 @@ Ultimate Multisite-ko **59 ekintza** eta **118 iragazki** guztien automatikoki s
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Objektu bat datu-basean gorde ondoren abiarazten da.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Plugin garatzaileei desblokeatze-prozesuari ekintzak gehitzea ahalbidetzen die.
 
-## Iragazkiak
+## Iragazkiak {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Autentifikazio-cookiearen iraungitze-epearen iraupena iragazten du.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Autentifikazio-birbideratzearen eskema iragazten du.

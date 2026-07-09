@@ -3,7 +3,7 @@ title: مواقع العملاء
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# مواقع عميلك (v2)
+# مواقع عميلك (v2) {#your-clients-websites-v2}
 
 بعد التسجيل على شبكتك، يمكن لعملائك الوصول إلى Dashboard الخاص بهم.
 

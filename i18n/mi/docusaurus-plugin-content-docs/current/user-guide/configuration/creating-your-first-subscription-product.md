@@ -6,13 +6,13 @@ title: |-
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Whakawhanaungatanga Pākehā (v2)
+# Whakawhanaungatanga Pākehā (v2) {#creating-your-first-subscription-product-v2}
 
 _**AHA! He tino mō te whakamahi Ultimate Multisite v2.x ko tēnei article. Ko te mea,**_ **_**he tino mō te whiti i tēnei article**_**.
 
 Kia kaha ki te whakawhanaunga o tō wāhi (network) ā, ka pūrongo i tō mahi ki ngā mea e taea e ngā mea e tika ana. He tino pai ahau ki te whakaatu i tō mahi ki ngā mea e tika ana. Ka waiho mātou i te whakatika i te mea katoa e toa i te wāhi (products).
 
-## Tau utu o te Pākehā (Product Type)
+## Tau utu o te Pākehā (Product Type) {#product-type}
 
 Me Ultimate Multisite, ka taea e koe te ofiri tau iki (subscription) mō ngā mea toru ki tō wāhi: **plans** me **add-ons (Order Bump)**. Ka taea te whakahoki i ngā add-ons ki te tauira rua: **packages** me **services**. Ka whakaatu mātou i ngā whakamārama o ngā rātou whakamahinga me ngā mea e tika ana i roto i te ao.
 
@@ -22,7 +22,7 @@ Me Ultimate Multisite, ka taea e koe te ofiri tau iki (subscription) mō ngā me
 
   * **Services:** Ngā add-ons e kāore e paku i ngā mahi o Ultimate Multisite. He mahi (tasks) e toa i tō wāhi mo tō wāhi e tika ana i roto i te mea kua oti koe i te plan e toa i tō wāhi. Ko te pēpi, he taea ai i tō wāhi te whai i te membership, engari ka puta koe i te service e pai i tēnei design o te wāhi.
 
-## Whakawātea ngā Products (Managing Products)
+## Whakawātea ngā Products (Managing Products) {#managing-products}
 
 Muitia irau i te **Products** tab i Ultimate Multisite **(Ultimate Multisite > Products)** he taea te whakatira ki ngā plānē (plans) i te ao o te hosting mōhio.
 
@@ -32,7 +32,7 @@ Ko tēnei wiki e whakamana ana i tō whakamārama mō tēnei pānuku nui o Ultim
 
 ![Products list page](/img/config/products-list.png)
 
-## Whāinga Products (Adding Products)
+## Whāinga Products (Adding Products) {#adding-products}
 
 Mā te **Ultimate Multisite > Products > Add Product** he te whakataki ki te whakamahi i te plan, package, ahau service ahau e whakaaro ana i te whakamahinga o item hou.
 
@@ -42,13 +42,13 @@ Ko te interface he whero tūāhi rua. I te tangata tangata (left), he ngā tabs 
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Whakataki (Description)
+### Whakataki (Description) {#description}
 
 Ko te information base product ahau e taea te whakaaro ana mō te whero name me te description. Ko ngā identifiers ei puta mai i te wā e pēnei i te plan me te pricing selection, invoices, upgrades, me ngā mea katoa e pēnei.
 
 ![Product description section](/img/config/product-description.png)
 
-### Ngā Mahi o Pricing (Pricing Type)
+### Ngā Mahi o Pricing (Pricing Type) {#pricing-type}
 
 I te tangata tangata (right side) o te interface, he taea te whakaaro ana i te base pricing ahau.
 
@@ -56,7 +56,7 @@ I te tangata tangata (right side) o te interface, he taea te whakaaro ana i te b
 
 Ko Ultimate Multisite e puta mai i ngā mahi pricing tino whero. Ko te option **paid** e pōtiki ai te network administrator mō te information mō te price o te product me te aua billing frequency.
 
-### Pricing (Pricing)
+### Pricing (Pricing) {#pricing}
 
 Ko te component o price e whakaaro ana i te base product price ahau me te interval o te billing.
 
@@ -64,7 +64,7 @@ Ko te component o price e whakaaro ana i te base product price ahau me te interv
 
 kia whakamāhi, he mea tino nui ki te whakaahuatanga o te whakaingoa o te whaiaro (price). i roto i te whakamāhi, he pēpi o te whakaingoa o te $29.99 me te whakaritenga o 1 mōtuhake, ka whakawhanaunga ai i te $29.99 i roto i te mea e whaiaro ana i tona mōtuhake ko i roto i te mōtuhake o mōtuhake. ā, he pēpi o te whakaingoa o $89.97 me te whakaritenga o 3 mōtuhake, ka whakawhanaunga ai i te whakahaupūā tuina i tona mōtuhake ko i roto i te mōtuhake tuina.
 
-### Whakamāhi Tuina (Billing Cycles)
+### Whakamāhi Tuina (Billing Cycles) {#billing-cycles}
 
 Ko te whakamāhi tuina e whaiaro ana i te āhuatanga o te whakahaupūā o te mōtuhake whakahaupūā tuina, ā, he tino tika te whakaaro i tēnei i runga i ngā te pakihi poari (contracts) me ngā wā tuina.
 
@@ -72,7 +72,7 @@ Ko te whakamāhi tuina e whaiaro ana i te āhuatanga o te whakahaupūā o te mō
 
 E roto i tēnei, he pēpi o te whakahaupūā o te whaiaro $29.99 me te mōtuhake o 1 mōtuhake me 12 whakahaupūā tuina, ka whakawhanaunga ai i te $29.99 ko i roto i te mōtuhake o mōtuhake mo te puku i te mea e whaiaro ana i tēnei i te mōtuhake 12 mōtuhake. i roto i ngā kupu, ka whakatutaku i tēnei whakaritenga he wā tuina o $29.99 ko i roto i te mōtuhake mo mōtuhake mo 12 mōtuhake ā, ā, ka whakahoki i te whakahaupūā.
 
-### Wā Whakawhiti (Trial Period)
+### Wā Whakawhiti (Trial Period) {#trial-period}
 
 Ka taea e te whakamahi i te toggle o te offer trial te tino administrator o te wāwhara ki te whakatau i te wā whakawhiti mo te puku.
 
@@ -80,7 +80,7 @@ Ka taea e te whakamahi i te toggle o te offer trial te tino administrator o te w
 
 I roto i te wā whakawhiti, ka tino ātaahua ai ngā mea mō te mea e hoki mai ana ki te whakamahi i te puku e ka whakahaupūā i a koe i te wāwhara i te whakatutaku i te wā whakawhiti.
 
-### Whakamāhi Pākehā (Setup Fee)
+### Whakamāhi Pākehā (Setup Fee) {#setup-fee}
 
 Ka taea ai i a koe te whaiwhero he whakamāhi pākehā ki tō plan.
 
@@ -88,7 +88,7 @@ Ka taea ai i a koe te whaiwhero he whakamāhi pākehā ki tō plan.
 
 he tino whakamārama ana ko ka whakawhanaunga ai i tō mea e hoki mai ana ki te pēpi o te whakahaupūā tuina (in addition to the price plan) he mea nui ki te wāwhara tuina i runga i te whakamāhi kua whakatutaku i tō mōtuhake i tēnei kotahi, e tino whakahou ana i tō whakamāhi kua whakatutaku i tēnei kotahi.
 
-### Aktīva (Active)
+### Aktīva (Active) {#active}
 
 Ka tino whakamārama ai te toggle o active he pēpi o te mea ka hoki mai ana ki te whaiaro mo ngā mea e hou mō te whakatū.
 
@@ -98,13 +98,13 @@ Kāore i ngā mea e whai ake ana:
 
 Ko mō te mea e pai anō i ngā mea e pēnei i te plan, ko te toggling ki te 'disabled' (whakawātea) he tino whakamahinga ki te whakatū i te plan, ka whakatū ai i a ia katoa (grandfathers), ka whakatū i a ia mō te whai whakaaro i ngā whai whaiaro (future sign-ups). **Ko ngā mea e pai anō i te plan e pai ana ki te whai whakaaro i ngā whaiwhakaaro (billed) i noa** ko i roto i te whakatū i a ia ki te plan hou pei i te whakatū i a ia mō te whakatū i a ia.
 
-### Pēpi Whakahaere (Product Image)
+### Pēpi Whakahaere (Product Image) {#product-image}
 
 Ko te **Upload Image** button e hiahia ai te administrator o te wāhi (network administrator) kia whakamahi i te media library ki te whiri i te whakaahua pēpi (product image) pei i te whakapūmau ana.
 
 ![Product image section](/img/config/product-image.png)
 
-### Whakawātea (Delete)
+### Whakawātea (Delete) {#delete}
 
 Ko te **Delete Product** button e whakatika ai te puta mai o te mea i te system. Ko ia e pōutu i te wā ko ka whakahou i te puta mai o te mea.
 
@@ -112,11 +112,11 @@ Ko te **Delete Product** button e whakatika ai te puta mai o te mea i te system.
 
 Kaha i roto i te whakawātea katoa, he mea nui ana i te mea ko ko te puta mai o te mea i te 'trash state' (state o te pōutu). Ko ia e whakatika ai i te mea ka whakahou i te puta mai o te mea.
 
-### Whakawātea Pēpi (Product Options)
+### Whakawātea Pēpi (Product Options) {#product-options}
 
 I raro i te mea kua whakahou i ngā whakamohana pēpi (base-level product information), ko ngā option pēpi e hiahia ai te administrator o te wāhi kia whakatū i ngā āhuatanga tika o te pēpi.
 
-#### Whānui (General)
+#### Whānui (General) {#general}
 
 Ko te tab **General** e whakahou i ngā āhuatanga whānui o te pēpi, ko kengingi ana ki te puta mai o ngā tab-specific (pēpi-whakaaro) katoa.
 
@@ -130,7 +130,7 @@ Ko te **Customer Role** e whakatū ana i te roa (role) e whai ake ai ko te mea e
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Up & Downgrades (Whakaaro me Whakamutunga)
+#### Up & Downgrades (Whakaaro me Whakamutunga) {#up--downgrades}
 
 I tēnei tab he tino mōhiomi i ngā puta mai me ngā whakatū (upgrade and downgrade paths) e taea ki te whai ake ai te mea whānau (customer) i roto i te rārangi (tier) o ia.
 
@@ -156,7 +156,7 @@ Mōhiamo, ko, ko te pēri o te puku i $29.99/mōhiamo, he taea ai koe te whero:
 Ko te pēri o te whakaingoa (price variations) anake he kāore e hihia koe i te checkout o te frontend. Mō te hoatu i ngā mea hei whero i te wā o te whakaingoa (billing periods) (he tino pai tēnei mō te puku, mā te matiti), ka taea e koe te whero he **Period Selection** field ki te form checkout mo te puku. He tino pai tēnei mō te whakamahi i ngā manatū (step-by-step instructions) i [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle).
 :::
 
-#### Ngā Pēri (Taxes)
+#### Ngā Pēri (Taxes) {#price-variations}
 
 Ko te **Taxes** tab he whai ake ana ki ngā whakaritenga o te pēri e whakahirahira i **Ultimate Multisite > Settings > Taxes** me te tino tika, ngā pēri o te pēri e whakahirahira. Mō te whero i ngā pēri me te hoahoa i ngā pēri o te pēri e whakahirahira, he tino pai tēnei mō te whakamahi i te whaiaro (documentation) i **Ultimate Multisite: Settings**.
 
@@ -170,7 +170,7 @@ I tōna wā, i tōna wā, ko te rāote tax e whakatau ana i **Ultimate Multisite
 
 Mo te whakaatu i te mea he mea e taea te whakahaere rāote, kia whakatau i te **Is Taxable** toggle ki te active (whakaahua) me te whiriwhiri i te rāote tax e puta mai ana mo te dropdown o Tax Category.
 
-#### Site Templates
+#### Site Templates {#taxes}
 
 I te tino, ko site templates he website WordPress paku katoa kua oti te clone ki te wāpehi o te customer i tōna whakataunga (subscription).
 
@@ -192,7 +192,7 @@ I te whakamutunga, ko **C** **hoose Available Site Templates** e whakahou mai ng
 
 I te whakamutunga, ko te mea, ko te administrator o te wāhi network e tino whakaatu ana he te selection o templates e tū i ngā apa checkout steps, ko te setting ' _default_ ' tekau mai. He pēnei, hei whakatū i te whakatau selection template me te whakahaere i te whakatau ki ngā plan settings, ko ngā option ' _assign new template_ ' he tino pai, ko ' _choose available site templates_ ' hoki.
 
-#### Sites
+#### Sites {#site-templates}
 
 Ko te tab **Sites** he pēterero o te mahi whakatutuki (limitations functionality) o Ultimate Multisite.
 
@@ -202,7 +202,7 @@ Ko tēnei setting e tino whakatau ana te whakapapa maximum number of sites (whak
 
 Ko te mea, ko te mea e tika ana hei whakatau i te limitation, kia whakatō i te toggle **limit sites** ki te akorua (active state) me te tino whakahau i te maximum number of sites i te field **site allowance**.
 
-#### Visits
+#### Visits {#sites}
 
 Ko te tab **Visits** he pēterero mō te system o whakamārama (limitations system) o Ultimate Multisite. Ko tēnei setting e tino whakatū ana te accounting me te throttling subsequent unique visitors ki te site o te mea e whaiaro ana koe.
 
@@ -214,7 +214,7 @@ Mō te whakamahi i tēnei āhuatanga, whakatika te **limit unique visits** toggl
 
 I raro i te limit ko e whaiaro Ultimate Multisite ka whawhai atu ki te hoatu i te wāhi o te mea wāhi (customer's site) i tētahi waiata, i runga i te whakaatu i he pēke mō te hāpai nui.
 
-#### Users
+#### Users {#visits}
 
 He pēke 'Users' o Ultimate Multisite e hakoa ngā wāhi whakahau ki te administrator o te network kia whakatika ngā wāhi mō te whakaputa me te whaiaro i ngā manawa (roles) he taea ai.
 
@@ -224,7 +224,7 @@ Mō te whakamahi i tēnei āhuatanga whakahau, whakatika te **limit user** toggl
 
 I raro i te roa mō ngā manawa (roles) he taea ai te whakahau, whakatika te toggle i runga i tēnei me te tino whakatau te limit nui hoki i te field ingoa.
 
-#### Post Types
+#### Post Types {#users}
 
 He pēke 'Post Types' e hakoa ngā wāhi whakahau ki te administrator o te network kia whakatika ngā wāhi mō te post types katoa he nui ake i WordPress.
 
@@ -236,7 +236,7 @@ Mō te whakamahi i tēnei subsystem whakahau, whakatika te **limit post types** 
 
 He aha, mō taku whakamārama: Mo te ao Māori, he tino tika tēnei whakamārama.
 
-#### Whakawātea Whainga (Disk Space)
+#### Whakawātea Whainga (Disk Space) {#post-types}
 
 Ko te **Disk Space** tab e hiahia ana i ngā administrator o te wānanga (network administrators) kia whakatū i te wāhi e pēnei i te whaiaro o ngā mea e whakamahinehia e ngā mea mō te whānau.
 
@@ -248,13 +248,13 @@ Kia whero i te whakamārama o te disk usage limitation, kia whero i te **limit d
 
 Engari, whakatō i te mahinga mō te whakatū ake (maximum upper limit) i megabytes i te field **disk space allowance**.
 
-#### Domain Whaiaro (Custom Domain)
+#### Domain Whaiaro (Custom Domain) {#disk-space}
 
 E ngā whakamārama, i te toggling tēnei option, e taea ai koe te whero i ngā domain whaiaro (custom domains) mō tēnei plan anara.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes (Ngā Whānau)
+#### Themes (Ngā Whānau) {#custom-domain}
 
 Ko te **Themes** tab i roto i ngā option o te puku (product options) e hiahia ana i ngā administrator o te wānanga kia whero i ngā themes mō ngā mea e taea ai ngā customer mō te whirihi, ā, he tino tika, hei whakatū i te state (whakahaere) o te theme.
 
@@ -272,7 +272,7 @@ Ko te selection **behavior** e tino whakamārama ana i te mea he tika au te stat
 
 I roto i te au **A vailable**, ka taea e te theme whakamahi atu he tino pai ki te mea mo te mea e whakapāoa ana (self-activation) e te mea mua. I roto i te au **Not Available** (Kua nei nei), ka whakatū atu i te mea mai i te mea mua i te mea e taea ai te whakaatu i te theme. I te awhi, ko te rito **Force Activate** ka whakatō i te pēpi me te whakamahi i te theme, ā, ka whai ake ana i te theme he mea nui (default) i roto i te whakamaoritanga o te wāhi.
 
-#### Plugins
+#### Plugins {#themes}
 
 Mā te au Themes, ka taea e Ultimate Multisite ki te administrator o te wāhi te tōtō atu i te whakaaturanga o ngā plugins ki ngā mea mua ahau me te mea e pēpi ana i te whakatō i te wāhi hou.
 
@@ -292,7 +292,7 @@ Te whakaritea i te **Force Activate & Lock** setting pēnei i te whakatika, enga
 
 He mea nui ana ki te administrator o te wāwhara (network administrator) na te whakaaro i te Force Activate & Lock me te Force Inactivate & Lock settings i runga i te site templates, he mea e taea te whakatika i te plugin, ā, ka taea te whakawhanake i te plugin state i roto i ngā templates hei pēnei i ko te setting e whai ake nei.
 
-#### Whakamutunga o te Whakawhiti (Reset Limitations)
+#### Whakamutunga o te Whakawhiti (Reset Limitations) {#plugins}
 
 Ka whakatika i te **Reset Limitations** tab i te whakatika katoa i ngā mea he tino whaiora ana (custom limits) e whakahou ana i te taonga. Hei whakamoteutake i te whakamaoritanga, whakatika i te button o **reset limitations**.
 
@@ -302,7 +302,7 @@ Hei tiaki i te mahi, whakatika i te toggle o **confirm reset** ki te wā active 
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Whakawhanaunga, Whakamutunga, he Whakarāua Taonga (Edit, Duplicate, or Delete Product)
+## Whakawhanaunga, Whakamutunga, he Whakarāua Taonga (Edit, Duplicate, or Delete Product) {#reset-limitations}
 
 Ka taea te whakawhanaunga, whakarāua, he whakatika, he whakatika i te taonga eke ana i **Ultimate Multisite > Products** me te whakamārama i te tētahi taonga e noho ana.
 

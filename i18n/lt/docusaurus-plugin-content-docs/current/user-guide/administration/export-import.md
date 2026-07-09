@@ -3,17 +3,17 @@ title: Išvaizduoti ir įvaizduoti
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksportavimas ir importavimas
+# Eksportavimas ir importavimas {#export--import}
 
 Ultimate Multisite 2.9.0 pridėjo vieną vienytį **Eksportavimo ir importavimo** įrankį, esantįje meniu **Tools > Export & Import**. Naudokite jį, kai jums reikia paketuoti vieną WordPress svetainę kaip ZIP failą, atnaujinti tą ZIP arba pereiti svetainę tarp sujungtų Ultimate Multisite ir vienytinių WordPress įrenginių.
 
-## Reikalaujami teisės
+## Reikalaujami teisės {#required-permissions}
 
 Jums reikia prisiųsti kaip administratorius, kuriam privalo turėti prieigą prie meniu **Tools** WordPress ant to svetainės, kurią eksportuojate ar importuojate. Multisite tinklu naudokite tinklo administratoriaus paskyrą eksportuodami arba importuodami subsvetų iš tinklo-nivelio Ultimate Multisite įrankių.
 
 Eksportavimo ZIP žymybės teikiamos per autentifikuotą atsisiųsinimo punktą, todėl turėkite aktyvų administratoriaus sesiją iki to, kol atsisiųsinimas baigs, ir ne dalinkite generuotais atsisiųsinimo URL adresais viešai.
 
-## Svetainės eksportavimas į ZIP
+## Svetainės eksportavimas į ZIP {#exporting-a-site-to-a-zip}
 
 1. WordPress admin'yje svetaine, kurią norite kopijuoti, eikite į **Tools > Export & Import**.
 2. Atidarykite eksportavimo vietą ir pasirinkite svetainę, kurią norite paketuoti.
@@ -23,7 +23,7 @@ Eksportavimo ZIP žymybės teikiamos per autentifikuotą atsisiųsinimo punktą,
 
 Laikykite ZIP failą sauguje. Jis gali turėti svetainės turinį, nustatymus, medijos failus ir pasirinktus kodą aktyvumo elementus.
 
-## Kas įskaitoma eksportavimas
+## Kas įskaitoma eksportavimas {#what-the-export-includes}
 
 Eksportavimo ZIP failas gali įtraukti:
 
@@ -34,7 +34,7 @@ Eksportavimo ZIP failas gali įtraukti:
 
 Tikslus ZIP failų dydis priklauso nuo medya kiekio, pasirinktų pluginų ir temų taip pat kaip ir naujų vietos duomenų bazės santraukų dydis.
 
-## Vietos įvaizdymo (Importavimo) atvedimas iš ZIP
+## Vietos įvaizdymo (Importavimo) atvedimas iš ZIP {#importing-a-site-from-a-zip}
 
 1. Perjunkite į **Tools > Export & Import** (Įveskite ir eksportuokite) ant jūsų tikslinės WordPress svetainės.
 2. Atidarykite importavimo vietą ir įkiškite ZIP failą, kurį pateikė Eksportų ir importavimo įrankis.
@@ -46,7 +46,7 @@ Tikslus ZIP failų dydis priklauso nuo medya kiekio, pasirinktų pluginų ir tem
 
 Tik vienoje svetainėje kurto WordPress instalacijoje ZIP failas pakeičia dabartinę svetainę importuotu svetaine. Prieš pradėdami, sukurkite visą rezervą (backup) tikslinės svetainės ir vengite pradėti vienu metu kelios importavimo operacijų tą pačia svetaine.
 
-## Apribojimai ir tinkamumo nuostatos
+## Apribojimai ir tinkamumo nuostatos {#limitations-and-compatibility-notes}
 
 * Labai didelių įkrovimo katalogai ar medijos bibliotekos gali generuoti didelius ZIP failus. Patikrinkite PHP įkrovimo limitus, vykdymo limitus, diskų vietą, RAM ir serverio laiko nustatymus prieš eksportuojant arba importuojant didelius svetainis.*
 * Labai didelių medijos bibliotekos gali reikėti pernešti metu su mažais trafikais.

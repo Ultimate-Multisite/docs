@@ -4,11 +4,11 @@ title: Shaandheeye - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Shaandheeye: wu_apc_get_meta_content_default_content
+# Shaandheeye: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 U oggolow horumariyeyaasha inay shaandheeyaan qiimayaasha caadiga ah
 
-## Parameters
+## Parameters {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -16,13 +16,13 @@ U oggolow horumariyeyaasha inay shaandheeyaan qiimayaasha caadiga ah
 | $meta_type | `string` | Nooca meta data ee la soo celinayo. |
 | $meta_key | `string` | Magaca meta field-ka. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 1.4.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) khadka 68
 
 
-## Returns
+## Returns {#returns}
 Qiime cusub oo caadi ah.

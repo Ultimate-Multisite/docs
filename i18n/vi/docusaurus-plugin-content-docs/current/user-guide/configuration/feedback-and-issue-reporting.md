@@ -3,11 +3,11 @@ title: Phản hồi và Báo cáo Sự cố của Khách hàng
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Phản hồi và Báo cáo Sự cố của Khách hàng
+# Phản hồi và Báo cáo Sự cố của Khách hàng {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 giới thiệu hệ thống phản hồi và báo cáo sự cố tích hợp, cho phép người dùng cuối đánh dấu các phản hồi không hữu ích và báo cáo các vấn đề trực tiếp từ giao diện chat. Hệ thống này bao gồm quản lý sự đồng ý (consent management), lệnh báo cáo tự động, và phân loại sự cố (triage) bằng AI ở phía backend.
 
-## Nút Thích/Không Thích (Thumbs-Down Button)
+## Nút Thích/Không Thích (Thumbs-Down Button) {#thumbs-down-button}
 
 Mọi tin nhắn do trợ lý AI gửi đều hiển thị một nút **thích/không thích** (👎). Khi người dùng nhấp vào nút này, họ có thể đánh dấu một phản hồi là không hữu ích hoặc không chính xác.
 
@@ -15,7 +15,7 @@ Mọi tin nhắn do trợ lý AI gửi đều hiển thị một nút **thích/k
 - Nhấp vào nó sẽ mở **Modal Đồng ý Phản hồi (Feedback Consent Modal)**.
 - Phản hồi được liên kết với luồng hội thoại và tin nhắn cụ thể.
 
-## Modal Đồng ý Phản hồi (Feedback Consent Modal)
+## Modal Đồng ý Phản hồi (Feedback Consent Modal) {#feedback-consent-modal}
 
 Khi người dùng nhấp vào nút thích/không thích, một modal đồng ý sẽ xuất hiện trước khi bất kỳ dữ liệu nào được gửi đi. Modal này:
 
@@ -26,13 +26,13 @@ Khi người dùng nhấp vào nút thích/không thích, một modal đồng ý
 
 Sẽ không có phản hồi nào được ghi lại cho đến khi người dùng xác nhận rõ ràng.
 
-## Banner Phản hồi Tự động (Auto-Prompt Feedback Banner)
+## Banner Phản hồi Tự động (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 Khi kết thúc một cuộc trò chuyện, trợ lý có thể hiển thị một **banner phản hồi tự động** — một thông báo không gây gián đoạn hỏi xem phiên làm việc đó có hữu ích hay không.
 
 Banner này xuất hiện tự động dựa trên độ dài và các quy tắc kinh nghiệm về kết quả của cuộc trò chuyện. Nó liên kết đến quy trình phản hồi tương tự như nút thích/không thích. Người dùng có thể bỏ qua banner mà không cần cung cấp phản hồi.
 
-## Lệnh Gạch chéo /report-issue (Slash Command)
+## Lệnh Gạch chéo /report-issue (Slash Command) {#report-issue-slash-command}
 
 Người dùng có thể kích hoạt quy trình phản hồi trực tiếp bằng cách gõ `/report-issue` vào ô nhập chat. Lệnh này:
 
@@ -42,7 +42,7 @@ Người dùng có thể kích hoạt quy trình phản hồi trực tiếp bằ
 
 Lệnh `/report-issue` khả dụng trong tất cả các chế độ chat (inline, floating widget, full-screen).
 
-## Phân loại Sự cố bằng AI (AI-Assisted Triage)
+## Phân loại Sự cố bằng AI (AI-Assisted Triage) {#ai-assisted-triage}
 
 Phản hồi được gửi đi sẽ được chuyển đến lớp phân loại sự cố bằng AI, nơi nó sẽ:
 

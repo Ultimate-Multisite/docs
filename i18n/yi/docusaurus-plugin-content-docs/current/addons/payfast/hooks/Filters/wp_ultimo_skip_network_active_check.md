@@ -4,18 +4,18 @@ title: פֿילטער - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0b11e9dd91ab7c817aae511e044f8d33
 ---
-# פֿילטער: wp_ultimo_skip_network_active_check
+# פֿילטער: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
 
 דערלויבט אַנטוויקלער צו קורץ־שליסן דעם קאָנטראָל.
 
 דאָס איז נוצלעך ווען מען ניצט composer־באַזירטע און אַנדערע אייגענע אויפֿשטעלונגען, ווי Bedrock, צום בײַשפּיל, וווּ ניצן plugins ווי mu-plugins איז דער נאָרמאַלער אופֿן.
 
-### זינט
+### זינט {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/class-requirements.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/class-requirements.php#L229) אויף שורה 229
 
 
-## גיט צוריק
+## גיט צוריק {#returns}

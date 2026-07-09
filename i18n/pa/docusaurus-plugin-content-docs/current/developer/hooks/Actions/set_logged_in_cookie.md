@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 ਇਹ `logged-in` authentication cookie set ਹੋਣ ਤੋਂ ਥੋੜ੍ਹੀ ਦੇਰ ਪਹਿਲਾਂ ਚੱਲਦਾ ਹੈ।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | Authentication scheme। ਡਿਫਾਲਟ 'logged_in' ਹੈ। |
 | $token | `string` | ਇਸ cookie ਲਈ ਵਰਤਣ ਲਈ ਯੂਜ਼ਰ ਦਾ session token। |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> ਪੈਰਾਮੀਟਰ ਜੋੜਿਆ ਗਿਆ ਸੀ।
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) ਵਿੱਚ ਲਾਈਨ 141 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਹੈ।

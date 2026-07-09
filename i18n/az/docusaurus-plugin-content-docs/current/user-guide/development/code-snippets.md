@@ -3,7 +3,7 @@ title: Kod parçaları
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 üçün Kod Parçaları
+# v2 üçün Kod Parçaları {#code-snippets-for-v2}
 
 Əsasən, **WordPress** üçün kod parçaları, əks halda xüsusi kiçik bir plugin tələb edə biləcək müəyyən əməliyyatları yerinə yetirmək üçün istifadə olunur. Belə kod parçaları WordPress çekirdek və ya mövzu fayllarından birinə (adətən mövzunuzun functions.php faylı) yerləşdirilə bilər və ya MU plugin kimi istifadə edilə bilər.
 
@@ -15,13 +15,13 @@ Bu məqalədə **Ultimate Multisite v2** ilə istifadə edilə biləcək üç ko
 
   * [**Xəritələnmiş domenlərdə Font-Icons ilə CORS problemlərini həll etmək**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Hesab menyu maddəsinin yerini dəyişmək
+## Hesab menyu maddəsinin yerini dəyişmək {#changing-the-position-of-the-account-menu-item}
 
 Müştərinizin Dashboard-unda (Nəzarət Paneli) Hesab menyu maddəsinin yerini dəyişmək üçün sadəcə aşağıdakı kod parçasını əsas saytınızın aktiv mövzəsinin functions.php faylına əlavə edin. Bu parçanı həm də mu-plugin və ya xüsusi plugin-lərdən birinin içinə yerləşdirə bilərsiniz.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## İstifadəçinin müəyyən bir plan altında olub-olmadığını və/və ya aktiv abunəlik olub-olmadığını necə yoxlamaq
+## İstifadəçinin müəyyən bir plan altında olub-olmadığını və/və ya aktiv abunəlik olub-olmadığını necə yoxlamaq {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Bir şəbəkə administratoru kimi, abunəlik vəziyyətindən və abunə olduqları plandan asılı olaraq, sadə əməliyyatlar yerinə yetirəcək və ya birbaşa seçilmiş abunəçilərə və ya son istifadəçilərə bir xidməti/funksiyanı təqdim edəcək xüsusi funksiyalar yaratmağınız lazım gələ bilər.
 
@@ -47,8 +47,8 @@ Qeyd edin ki, istifadəçilər yalnız bir **Plan**-a abunə ola bilərlər, Pak
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Xəritələnmiş domenlərdə Font-Icons ilə CORS problemlərini həll etmək
-## Xəritələnmiş domenlərdə Font-Icons ilə CORS problemlərini həll etmək
+## Xəritələnmiş domenlərdə Font-Icons ilə CORS problemlərini həll etmək {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Xəritələnmiş domenlərdə Font-Icons ilə CORS problemlərini həll etmək {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Bir domenü alt-sayta xəritələdikdən sonra, saytın xüsusi fontları yükləməkdə çətinlik çəkdiyini müşahidə edə bilərsiniz. Bu, server parametrlərinizdəki bir cross-origin blokundan qaynaqlanır.
 
@@ -56,13 +56,13 @@ Font faylları demək olar ki, həmişə birbaşa CSS-dən yüklənirsə, domen 
 
 Aşağıda Apache və NGINX üçün problemi həll etmək kod parçaları verilmişdir. Bu dəyişikliklər server konfiqurasiya faylları (.htaccess faylları və NGINX konfiq faylları) haqqında təcrübə tələb edir. Əgər bu dəyişiklikləri özünüz etməkdən narahat olursunuzsa, köməyə ehtiyac duyduğunuz zaman bu səhifəni hosting provayderinizin dəstək agentlərinə göndərin.
 
-### Apache
+### Apache {#apache}
 
 .htaccess faylınızda əlavə edin:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 Server konfiq faylınızda (yerləşmə serverdən serverə dəyişir), əlavə edin:
 

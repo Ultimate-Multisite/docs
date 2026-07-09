@@ -4,10 +4,10 @@ title: Filter - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Filter: wu_sites_column_limit
+# Filter: wu_sites_column_limit {#filter-wusitescolumnlimit}
 
 Filter, millega muuta võrgus get pluginssites väärtust.
 
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/admin/class-network-usage-columns.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin/class-network-usage-columns.php#L77) real 77

@@ -3,11 +3,11 @@ title: 页眉域名搜索
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header 域名搜索
+# Header 域名搜索 {#header-domain-search}
 
 当你需要一个小型 Header 表单来启动域名搜索，然后让客户在 Ultimate Multisite 结账中从可用域名里选择时，请使用此设置。
 
-## 要求
+## 要求 {#requirements}
 
 - Ultimate Multisite 已在网络中启用。
 - Multisite Ultimate Domain Seller 已在网络中启用。
@@ -16,7 +16,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
   - 已配置支持的 TLD，例如 `com`、`net` 和 `org`。
 - 一个包含 **域名选择** 字段的有效结账表单。
 
-## 结账表单
+## 结账表单 {#checkout-form}
 
 1. 创建或编辑注册页面使用的结账表单。
 2. 添加正常必需的结账/Account 字段，包括 **Username**。只包含域名字段的结账表单会被 Ultimate Multisite 验证拒绝。
@@ -30,7 +30,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 [wu_checkout slug="domain-form"]
 ```
 
-## Header 表单
+## Header 表单 {#header-form}
 
 在网站 Header 中添加一个小型 `GET` 表单，将输入的搜索词作为 `domain_name` 发送到结账页面：
 
@@ -44,7 +44,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 
 不要在自定义 Header JavaScript 中预选域名。Header 只应传递搜索词。Domain Seller 结账脚本会读取 `?domain_name=example`，填充结账搜索框，并运行可用性搜索，让客户从返回的域名中选择。
 
-## 预期行为
+## 预期行为 {#expected-behaviour}
 
 在 Header 中搜索 `example` 应打开：
 
@@ -61,7 +61,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 
 选择可用结果后，订单摘要应包含域名注册产品和所选域名。
 
-## 验证
+## 验证 {#verification}
 
 1. 打开首页。
 2. 搜索一个裸名称，例如 `example`。
@@ -71,7 +71,7 @@ _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 6. 对可用域名点击 **选择**。
 7. 确认订单摘要包含 `Domain Registration - example.com` 或所选域名。
 
-## 故障排除
+## 故障排除 {#troubleshooting}
 
 - 如果没有出现列表，请检查浏览器网络选项卡中的 `admin-ajax.php?action=wu_domain_search`，并确认它返回非空的 `domains` 或 `results`。
 - 如果结账表单在保存时验证失败，请添加必需的 Account 字段，例如 **Username**。

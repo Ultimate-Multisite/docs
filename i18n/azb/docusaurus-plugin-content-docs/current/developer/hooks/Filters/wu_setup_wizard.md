@@ -4,11 +4,11 @@ title: Filter - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard
+# Filter: wu_setup_wizard {#filter-wusetupwizard}
 
 Developerlere ek kurulum sihirbazı adımları eklemesine olanak tanır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Developerlere ek kurulum sihirbazı adımları eklemesine olanak tanır.
 | $is_migration | `bool` | Bu bir geçiş (migration) mi, değil mi? |
 | $wizard | `object` | Mevcut örnek (instance). |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) dosyasındaki 525. satırda tanımlanmıştır.
 
 
-## Returns
+## Returns {#returns}

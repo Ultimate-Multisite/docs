@@ -8,21 +8,21 @@ title: |-
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Set-up agus Coimisiúch an Provider
+# Domain Seller: Set-up agus Coimisiúch an Provider {#domain-seller-setup-and-provider-configuration}
 
 Tha an add-on Domain Seller a' chluainteachd le seòlas set-up gu leathanach a tha a' tighinn agad gu linn a' tighinn uile stiùir. Tha an seachdainn seo a' tighinn air a' chluainteachadh agus faic a bhfaidh thu a' chluainteachadh mar a tha e a' chluainteachadh no a' chluainteachadh ar fáil air a sonrainn.
 
-## Cùineadh
+## Cùineadh {#requirements}
 
 - **Multisite Ultimate** v2.4.12 nó níos fearr, a' tighinn air an t-nàdh (network-activated)
 - **PHP** 7.4+
 - Creidheann API airson càil seachdaidh aon registrar a tha a' tighinn air.
 
-## Seachdainn set-up ar an uair a bha an t-am bith
+## Seachdainn set-up ar an uair a bha an t-am bith {#first-run-setup-wizard}
 
 Tha seachdainn set-up a' chluainteachadh gu leathanach an uair atá thu a' tighinn air an plugin. Tha e a' tighinn air a chanach air deàrraich **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Seachdainn 1 — Tóg an provider
+### Seachdainn 1 — Tóg an provider {#step-1--choose-a-provider}
 
 Taisg an registrar a tha thu a' tighinn air a chluainteachadh. Eisimpleir:
 
@@ -38,7 +38,7 @@ Taisg an registrar a tha thu a' tighinn air a chluainteachadh. Eisimpleir:
 | NameSilo | Cha | Cha |
 | Enom | Bidh e | Cha |
 
-### Seachdainn 2 — Ghearr creidheann
+### Seachdainn 2 — Ghearr creidheann {#step-2--enter-credentials}
 
 Tha chùineadh creidheann a' tighinn air uile provider:
 
@@ -62,17 +62,17 @@ Tha chùineadh creidheann a' tighinn air uile provider:
 
 Thoir seachdaidh **Sandbox mode** mar a tha e faisg, chun a shreinn air an tòiseil de test a ge colladh gu leòr.
 
-### Step 3 — Test an t-sìth
+### Step 3 — Test an t-sìth {#step-3--test-the-connection}
 
 Cloich **Test Connection**. A th'ann seo an fhuilich API beag airson a shreinn na chuidine agus an tòiseil. Fhàg an tòiseil air seachdaidh earrachdan de chuidine a bhith agad air a leughadh a dimint a' chomh ma tha e faisg a' fhéin.
 
-### Step 4 — Import TLDs
+### Step 4 — Import TLDs {#step-4--import-tlds}
 
 Cloich **Import TLDs** chun a ghràdh an tòiseil gu lunnach na stiùiriche (TLDs) agus prìsan wholesale a tha'nneachd air a thaoinneachadh. A tha seo a' leughadh an liosta TLDs a tha'nneachd air a thaoinneachadh airson eògan domain. Aer thuir an t-sìth a' chùlchnaich 30–60 secca airson tòiseil sin a tha'nneachd air a thaoinneachadh.
 
 Aer thuir an t-sìth a' leughadh an liosta TLDs gu lunnach mar a tha e faisg a' fhéin a' chùlchnaich cron.
 
-### Step 5 — Creach domain product
+### Step 5 — Creach domain product {#step-5--create-a-domain-product}
 
 A th'ann seo an fhuilich a creach domain product de chùlchnaich le 10% markup. Is e faisg agad a' leughadh an product sin gu leòr no a' tòiseil agus a creach sảnaiche gu lunnach air **Ultimate Multisite › Products**.
 
@@ -80,7 +80,7 @@ Sealltainn [Domain Products and Pricing](./domain-products) airson an t-seòl de
 
 ---
 
-## Reconfiguring a provider
+## Reconfiguring a provider {#reconfiguring-a-provider}
 
 Thoir air **Network Admin › Ultimate Multisite › Settings › Domain Seller** (no lochloich **Settings** anns an liosta de plugin).
 
@@ -93,17 +93,17 @@ Tha an seachdaidh a' leughadh:
 - **Manage domain products** — lìn dìreach air an list a'n seachdainn
 - **Configure providers** — a' chlàradh a' fhaighinn an Wizard airson a' chùl a' nàch a' chùl a' chluin
 
-### A' chùl dìbeidh eile a gineadh
+### A' chùl dìbeidh eile a gineadh {#adding-a-second-provider}
 
 Chlàradh air **Configure providers** agus runn an wizard gu leòd airson an tòiseil ùr. Is e cheann a tha a' chùl a' nàch a' chùl a' chluin a' fhaighinn. Tha e a' chùl a' nàch a' chùl a' chluin a' fhaighinn, no leugh an dòigh dìreach.
 
-### A' chùl TLDs a' chluin gu mheinteach
+### A' chùl TLDs a' chluin gu mheinteach {#syncing-tlds-manually}
 
 Air an seachdainn a' chùl, chlàradh **Sync TLDs** a' chluin a' nàch a' chùl a' chluin airson earrachdan a' chluin a' fhaighinn. Tha seo a' tòiseil air a' chùl a' nàch a' chùl a' chluin an uair a tha an tòiseil a' nàch a' chùl a' chluin a' chluin ùr no a' chùl ùra a gineadh.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Tha chùl a' chluin a' tòiseil air seachdainn a' chùl a' nàch a' chùl a' chluin. Tha an loga'n fhaighinn air **Network Admin › Ultimate Multisite › Logs**:
 
@@ -123,7 +123,7 @@ Tha chùl a' chluin a' tòiseil air seachdainn a' chùl a' nàch a' chùl a' chl
 
 ---
 
-## Notean ar eadar aithreachan an t-saobar (Provider capability notes)
+## Notean ar eadar aithreachan an t-saobar (Provider capability notes) {#provider-capability-notes}
 
 Nì a' chùl mhath air a' chùl API de dhutha a' leatamach. A' chùl add-on a thèid a' chùl a tha fadaichdair (unsupported operations) gu earrach, agus a' chùl a thèid a' chùl a tha fadaichdair (unsupported operations) gu earrach, gu earrach, gu earrach.
 

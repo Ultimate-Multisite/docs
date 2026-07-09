@@ -3,15 +3,15 @@ title: 'Thuto ea 4: Ho aha dithempleite tse ikhethileng'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Thuto 4: Ho Aha Dithempleite tsa Lekala le Ikgethileng
+# Thuto 4: Ho Aha Dithempleite tsa Lekala le Ikgethileng {#lesson-4-building-niche-templates}
 
 Dithempleite ke motheo wa boleng boo o bo tshepisang lekaleng la hao le ikgethileng. Mong wa studio ya boikoetliso ya ingodisang mme a bona saete e seng e shebahala jwalo ka websaete ya boikoetliso -- e nang le mananeo a dithuto, diprofaele tsa bakoetlisi, le ditshwantsho tse nepahetseng -- o ka nna a dula haholo ho feta ya bonang sebaka se se nang letho.
 
-## Moo re Ileng ra Emisa Teng
+## Moo re Ileng ra Emisa Teng {#where-we-left-off}
 
 Re na le marangrang a FitSite a sebetsang, Ultimate Multisite e kentse mme e hlophisitswe. Jwale re aha dithempleite tse etsang hore FitSite e utlwahale e etseditswe dikgwebo tsa boikoetliso ka ho kgetheha.
 
-## Hobaneng Dithempleite tsa Lekala le Ikgethileng di le Bohlokwa
+## Hobaneng Dithempleite tsa Lekala le Ikgethileng di le Bohlokwa {#why-niche-templates-matter}
 
 Dithempleite tse akaretsang di qobella bareki ba hao ho etsa mosebetsi o boima: ho fumana hore na ba hloka maqephe afe, sebopeho sefe sa dikahare se sebetsang, le hore na ba ka se etsa jwang hore se shebahale se nepahetse bakeng sa indasteri ya bona. Dithempleite tsa lekala le ikgethileng di fedisa kgohlano eo.
 
@@ -24,11 +24,11 @@ Mong wa studio ya boikoetliso ya ingodisang ho FitSite o lokela ho bona:
 
 Ba kenya dintlha tsa bona. Ha ba qale qalong.
 
-## Ho Rala Dithempleite tsa Hao
+## Ho Rala Dithempleite tsa Hao {#planning-your-templates}
 
 Pele o aha, etsa qeto ya hore na o tla fana ka dithempleite dife. Bakeng sa FitSite, re tla etsa tse tharo:
 
-### Thempleite 1: Studio Essential
+### Thempleite 1: Studio Essential {#template-1-studio-essential}
 
 Bakeng sa distudio tse nyane le bakoetlisi ba botho.
 
@@ -39,7 +39,7 @@ Bakeng sa distudio tse nyane le bakoetlisi ba botho.
 - Leqephe la **Ikopanye** le nang le mmapa wa sebaka le foromo
 - **Moralo o hlwekileng, wa sejwalejwale** o nang le sekema sa mebala se loketseng boikoetliso
 
-### Thempleite 2: Gym Pro
+### Thempleite 2: Gym Pro {#template-2-gym-pro}
 
 Bakeng sa di-gym tse seng di tsitsitse tse nang le ditshebeletso tse ngata.
 
@@ -50,7 +50,7 @@ Bakeng sa di-gym tse seng di tsitsitse tse nang le ditshebeletso tse ngata.
 - Karolo ya **Dipaki** leqepheng la lehae
 - Dikgetho tsa **ho totobatsa lebitso haholoanyane**
 
-### Thempleite 3: Fitness Chain
+### Thempleite 3: Fitness Chain {#template-3-fitness-chain}
 
 Bakeng sa ditshebetso tse nang le dibaka tse ngata.
 
@@ -60,17 +60,17 @@ Bakeng sa ditshebetso tse nang le dibaka tse ngata.
 - **Ho kopanya lebitso bohareng** ka dintlha tse ikgethileng tsa sebaka
 - **Bukana ya basebetsi** ho phatlalla le dibaka
 
-## Ho Aha Saete ya Thempleite
+## Ho Aha Saete ya Thempleite {#building-a-template-site}
 
 Ho Ultimate Multisite, thempleite ke feela saete ya WordPress e hlophisitsweng ka tsela eo o batlang hore disaete tse ntjha tsa bareki di shebahale ka yona. Ena ke tsela ya ho e etsa:
 
-### Mohato 1: Etsa Saete ya Thempleite
+### Mohato 1: Etsa Saete ya Thempleite {#step-1-create-the-template-site}
 
 1. Eya ho **Disaete > Eketsa e Ntjha** ho molaodi wa marangrang wa hao
 2. Etsa saete e bitswang `template-studio-essential`
 3. Saete ena e ba sebaka sa hao sa mosebetsi
 
-### Mohato 2: Kenya le ho Hlophisa Moralo wa Ponahalo
+### Mohato 2: Kenya le ho Hlophisa Moralo wa Ponahalo {#step-2-install-and-configure-the-theme}
 
 Fetela ho Dashboard ya saete ya thempleite mme:
 
@@ -82,7 +82,7 @@ Fetela ho Dashboard ya saete ya thempleite mme:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Mohato 3: Etsa Maqephe
+### Mohato 3: Etsa Maqephe {#step-3-create-the-pages}
 
 Aha leqephe ka leng ka:
 
@@ -92,7 +92,7 @@ Aha leqephe ka leng ka:
 
 Etsa hore dikahare tsa sebaka sa nakwana di fane ka ditaelo moo ho kgonehang. Sebakeng sa mongolo wa ho tlatsa o akaretsang, ngola dikahare tse kang: "Fetola sena ka tlhaloso e kgutshwane ya studio ya hao le se etsang hore e ikgethe. Bua ka filosofi ya hao ya koetliso, dilemo tsa boiphihlelo, kapa seo bareki ba ka se lebellang."
 
-### Mohato 4: Hlophisa Ditlatsetso
+### Mohato 4: Hlophisa Ditlatsetso {#step-4-configure-plugins}
 
 Kenya le ho kenya tshebetsong ditlatsetso tseo distudio tsa boikoetliso di di hlokang:
 
@@ -100,7 +100,7 @@ Kenya le ho kenya tshebetsong ditlatsetso tseo distudio tsa boikoetliso di di hl
 - Tlatsetso ya foromo ya kgokahano
 - Tlatsetso ya SEO (e hlophisitsweng esale pele ka ditlhophiso tsa kamehla tse amanang le boikoetliso)
 
-### Mohato 5: Tshwaya e le Thempleite
+### Mohato 5: Tshwaya e le Thempleite {#step-5-mark-as-template}
 
 1. Eya ho **Ultimate Multisite > Disaete**
 2. Fetola saete ya thempleite
@@ -108,7 +108,7 @@ Kenya le ho kenya tshebetsong ditlatsetso tseo distudio tsa boikoetliso di di hl
 
 Pheta tshebetso ena bakeng sa thempleite ka nngwe eo o batlang ho fana ka yona.
 
-## Lenane la Tlhahlobo la Boleng ba Thempleite
+## Lenane la Tlhahlobo la Boleng ba Thempleite {#template-quality-checklist}
 
 Pele o etsa hore thempleite e fumanehe, netefatsa:
 
@@ -121,7 +121,7 @@ Pele o etsa hore thempleite e fumanehe, netefatsa:
 - [ ] Ha ho dilinki tse robehileng kapa dithoto tse haellang
 - [ ] Lebelo la ho laela leqephe le a amoheleha
 
-## Marangrang a FitSite ho Fihlela Jwale
+## Marangrang a FitSite ho Fihlela Jwale {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Seo re se Ahileng Thutong Ena
+## Seo re se Ahileng Thutong Ena {#what-we-built-this-lesson}
 
 - **Dithempleite tse tharo tse ikgethileng bakeng sa lekala** tse etseditsweng boholo bo fapaneng ba dikgwebo tsa boikoetliso
 - **Dikahare le ditshwantsho tse loketseng boikoetliso** tse etsang hore sethala se utlwahale se etseditswe morero ona ka ho kgetheha

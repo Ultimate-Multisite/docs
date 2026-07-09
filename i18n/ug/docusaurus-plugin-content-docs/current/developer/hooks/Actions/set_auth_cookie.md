@@ -4,11 +4,11 @@ title: ئەمەل - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# ھەرىكەت: set_auth_cookie
+# ھەرىكەت: set_auth_cookie {#action-setauthcookie}
 
 دەلىللەش cookie سى تەڭشىلىشتىن دەرھال بۇرۇن ئىجرا بولىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | نامى | تىپى | چۈشەندۈرۈشى |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | دەلىللەش سىخېمىسى. قىممەتلىرى 'auth' ياكى 'secure_auth' نى ئۆز ئىچىگە ئالىدۇ. |
 | $token | `string` | بۇ cookie ئۈچۈن ئىشلىتىلىدىغان ئىشلەتكۈچىنىڭ سېسىيە token ى. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### مەنبە
+### مەنبە {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ئىچىدە 124-قۇردا ئېنىقلانغان.

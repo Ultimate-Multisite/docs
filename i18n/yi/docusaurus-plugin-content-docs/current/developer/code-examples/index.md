@@ -3,11 +3,11 @@ title: אַוואַנסירטע קאָד־בײַשפּילן
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# אַוואַנסירטע קאָד־ביישפילן
+# אַוואַנסירטע קאָד־ביישפילן {#advanced-code-examples}
 
 די ביישפילן ווײַזן אַוואַנסירטע אינטעגראַציע־מוסטערן מיט Ultimate Multisite.
 
-## דינאַמישער פּרײַז־מאָטאָר
+## דינאַמישער פּרײַז־מאָטאָר {#dynamic-pricing-engine}
 
 אַ כּללים־באזירטער פּרײַז־מאָטאָר וואָס לייגט אָן באַנד־, געטרײַשאַפֿט־, און סעזאָנאַלע אַראָפּלאָזונגען:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## אַוואַנסירטע וועבזײַט־צושטעלונג
+## אַוואַנסירטע וועבזײַט־צושטעלונג {#advanced-site-provisioning}
 
 קאָנפֿיגורירט אויטאָמאַטיש נײַע וועבזײַטן מיט פּלאַגינס, SSL, CDN, באַקאַפּס, און מאָניטאָרינג לויט פּלאַן־פֿעיִקייטן:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## אייגענע באַגרענעצונגען־סיסטעם
+## אייגענע באַגרענעצונגען־סיסטעם {#custom-limitations-system}
 
 נאָכפֿאָלגן און דורכפֿירן רעסורס־באַגרענעצונגען מיט באַניץ־וואָרענונגען:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB אַטאָמישער ציילער מיט `increment_item()`
+## BerlinDB אַטאָמישער ציילער מיט `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 האָט צוגעגעבן אַן `increment_item()` מעטאָד צו דער BerlinDB `Query` קלאַס. ניצט עס צו דורכפֿירן זיכערע, אַטאָמישע פֿאַרגרעסערונגען אויף נומערישע קאָלומנס אָן לייענען־ענדערן־שרײַבן רענערײַען — נוצלעך פֿאַר ציילערס, באַניץ־קוואָטעס, און קורס־באַגרענעצונג־קאָנטראָלן וואָס לויפֿן אונטער גלײַכצײַטיקע בקשות.
 
-### מעטאָד־סיגנאַטור
+### מעטאָד־סיגנאַטור {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 האָט צוגעגעבן אַן `increment_item()` מ
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### גרונט־באַניץ
+### גרונט־באַניץ {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### נאָכפֿאָלגן API־באַניץ פּער מיטגלידשאַפֿט
+### נאָכפֿאָלגן API־באַניץ פּער מיטגלידשאַפֿט {#tracking-api-usage-per-membership}
 
 אַ פּראַקטישער מוסטער פֿאַר דורכפֿירן API קורס־באַגרענעצונגען פּער מיטגלידשאַפֿט:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### פֿאַרוואָס `increment_item()` אַנשטאָט `update_item()`
+### פֿאַרוואָס `increment_item()` אַנשטאָט `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 אַ נאַיִווער לייענען־ענדערן־שרײַבן צוגאַנג איז אומזיכער אונטער גלײַכצײַטיקע בקשות:
 

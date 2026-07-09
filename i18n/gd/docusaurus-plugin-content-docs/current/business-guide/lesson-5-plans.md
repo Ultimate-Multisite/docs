@@ -3,15 +3,15 @@ title: 'Leasan 5: A’ dealbhadh do phlanaichean'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leasan 5: Dealbhadh nam Planaichean agad
+# Leasan 5: Dealbhadh nam Planaichean agad {#lesson-5-designing-your-plans}
 
 Chan e dìreach ìrean prìse a th’ anns na h-ìrean plana agad -- tha iad nan sgàthan air mar a bhios luchd-ceannach na niche agad ag obair ann an da-rìribh. San leasan seo dealbhaichidh tu ìrean toraidh a fhreagras air fìor fheumalachdan ghnìomhachasan fallaineachd aig diofar ìrean.
 
-## Far an do Stad Sinn
+## Far an do Stad Sinn {#where-we-left-off}
 
 Tha trì teamplaidean deiseil aig FitSite (Studio Essential, Gym Pro, Fitness Chain). A-nis cruthaichidh sinn na planaichean a shocraicheas dè gheibh luchd-ceannach cothrom air agus dè phàigheas iad.
 
-## Smaoineachadh ann an Roinnean Luchd-ceannach
+## Smaoineachadh ann an Roinnean Luchd-ceannach {#thinking-in-customer-segments}
 
 ’S e am mearachd a nì a’ mhòr-chuid de dhaoine planaichean a dhealbhadh timcheall air feartan teicnigeach (stòradh, leud-bhann, àireamh dhuilleagan). Chan eil luchd-ceannach na niche agad a’ smaoineachadh anns na briathran sin. Bidh sealbhadair gym a’ smaoineachadh air na tha a dhìth orra gus an gnìomhachas aca a ruith.
 
@@ -25,11 +25,11 @@ Airson stiùideothan fallaineachd, tha trì roinnean nàdarra ann:
 
 Bu chòir do phlanaichean mapadh ris na roinnean seo, chan ann ri pasganan feartan air thuaiream.
 
-## Cruthachadh Phlanaichean FitSite
+## Cruthachadh Phlanaichean FitSite {#creating-the-fitsite-plans}
 
 Rach gu **Ultimate Multisite > Products > Add Product** airson gach plana.
 
-### Plana 1: FitSite Starter -- $49/mìos
+### Plana 1: FitSite Starter -- $49/mìos {#plan-1-fitsite-starter----49month}
 
 **Targaid**: Trèanaichean leotha fhèin agus stiùideothan beaga
 
@@ -59,7 +59,7 @@ Rach gu **Ultimate Multisite > Products > Add Product** airson gach plana.
 - An t-ùrlar a thagh thu: Cuir an gnìomh gu h-èigneachail
 - Gach ùrlar eile: Falaichte
 
-### Plana 2: FitSite Growth -- $99/mìos
+### Plana 2: FitSite Growth -- $99/mìos {#plan-2-fitsite-growth----99month}
 
 **Targaid**: Gyms stèidhichte le aon àite
 
@@ -85,7 +85,7 @@ Rach gu **Ultimate Multisite > Products > Add Product** airson gach plana.
 - Buidheann plana: FitSite Plans
 - Òrdugh toraidh: 2
 
-### Plana 3: FitSite Pro -- $199/mìos
+### Plana 3: FitSite Pro -- $199/mìos {#plan-3-fitsite-pro----199month}
 
 **Targaid**: Sreathan fallaineachd le iomadh àite
 
@@ -109,7 +109,7 @@ Rach gu **Ultimate Multisite > Products > Add Product** airson gach plana.
 - Buidheann plana: FitSite Plans
 - Òrdugh toraidh: 3
 
-## A’ Stèidheachadh Buidheann a’ Phlana
+## A’ Stèidheachadh Buidheann a’ Phlana {#setting-up-the-plan-group}
 
 Nì buidheann a’ phlana cinnteach nach urrainn do luchd-ceannach ach ùrachadh no ìsleachadh taobh a-staigh teaghlach phlanaichean FitSite. Air taba **Up & Downgrades** gach plana:
 
@@ -118,7 +118,7 @@ Nì buidheann a’ phlana cinnteach nach urrainn do luchd-ceannach ach ùrachadh
 
 Cruthaichidh seo slighe ùrachaidh shoilleir: Starter → Growth → Pro.
 
-## A’ Cur Brosnachaidhean Òrduigh ris
+## A’ Cur Brosnachaidhean Òrduigh ris {#adding-order-bumps}
 
 ’S e toraidhean cur-ris a th’ ann am brosnachaidhean òrduigh a thèid a thabhann aig àm pàighidh. Airson FitSite, beachdaich air:
 
@@ -128,7 +128,7 @@ Cruthaichidh seo slighe ùrachaidh shoilleir: Starter → Growth → Pro.
 
 Cruthaich iad seo mar thoraidhean den t-seòrsa **Package** ann an Ultimate Multisite agus ceangail iad ris na planaichean iomchaidh.
 
-## Carson a tha an Structar Seo ag Obrachadh
+## Carson a tha an Structar Seo ag Obrachadh {#why-this-structure-works}
 
 - Tha **Starter** a’ toirt air falbh cnapan-starra inntrigidh -- prìs ìosal, tairgse shìmplidh, a’ faighinn trèanaichean air-loidhne gu luath
 - Tha **Growth** a’ cur ris na feartan a bhios gyms ag iarraidh ann an da-rìribh -- gleidheadh, gailearaidhean, àrainnean gnàthaichte
@@ -136,7 +136,7 @@ Cruthaich iad seo mar thoraidhean den t-seòrsa **Package** ann an Ultimate Mult
 - Leigidh **brosnachaidhean òrduigh** le luchd-ceannach gnàthachadh gun na planaichean bunaiteach a dhèanamh ro iom-fhillte
 - Tha **slighe ùrachaidh shoilleir** a’ ciallachadh gum fàs luchd-ceannach còmhla riut an àite falbh
 
-## Lìonra FitSite gu Ruige Seo
+## Lìonra FitSite gu Ruige Seo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Na Thog Sinn san Leasan Seo
+## Na Thog Sinn san Leasan Seo {#what-we-built-this-lesson}
 
 - **Trì ìrean plana** air am mapadh ri fìor roinnean gnìomhachais fallaineachd
 - **Geatadh fheartan** a’ cleachdadh smachdan plugin agus teamplaid Ultimate Multisite

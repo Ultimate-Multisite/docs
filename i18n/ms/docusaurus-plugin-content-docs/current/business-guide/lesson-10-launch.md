@@ -3,19 +3,19 @@ title: 'Pelajaran 10: Hari Pelancaran'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Pelajaran 10: Hari Pelancaran
+# Pelajaran 10: Hari Pelancaran {#lesson-10-launch-day}
 
 Semuanya sudah siap. Sebelum anda membuka pintu, pelajaran ini akan membimbing anda melalui senarai semak pra-pelancaran untuk memastikan tiada apa yang rosak, tertinggal, atau memalukan.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite kini mempunyai templat, pelan, pembayaran (checkout), penjenamaan (branding), pendaftaran (onboarding), dan penetapan harga yang telah dikonfigurasi. Sekarang, kita akan mengesahkan semuanya berfungsi dan bersedia untuk dilancarkan.
 
-## Senarai Semak Pra-Pelancaran
+## Senarai Semak Pra-Pelancaran {#pre-launch-checklist}
 
 Sila semak setiap item. Jangan tinggalkan sebarang item.
 
-### Infrastruktur Platform
+### Infrastruktur Platform {#platform-infrastructure}
 
 - [ ] Hosting stabil dan berfungsi dengan baik di bawah beban trafik
 - [ ] SSL Wildcard aktif dan semua subdomain berfungsi melalui HTTPS
@@ -23,7 +23,7 @@ Sila semak setiap item. Jangan tinggalkan sebarang item.
 - [ ] Sandaran (Backups) telah dikonfigurasi dan diuji (pulihkan sekurang-kurangnya satu untuk pengesahan)
 - [ ] Pemantauan (Monitoring) telah disediakan – anda akan tahu jika platform tergendala
 
-### Templat
+### Templat {#templates}
 
 - [ ] Ketiga-tiga templat dimuatkan dengan betul pada laman web baharu
 - [ ] Kandungan sementara (placeholder content) adalah membantu dan bebas daripada kesilapan ejaan
@@ -32,7 +32,7 @@ Sila semak setiap item. Jangan tinggalkan sebarang item.
 - [ ] Kelajuan muat halaman boleh diterima (uji dengan alat seperti GTmetrix atau PageSpeed Insights)
 - [ ] Tiada pautan rosak atau aset yang hilang pada mana-mana templat
 
-### Pelan dan Produk
+### Pelan dan Produk {#plans-and-products}
 
 - [ ] Ketiga-tiga pelan aktif dan kelihatan
 - [ ] Penerangan pelan adalah tepat dan spesifik kepada niche
@@ -42,7 +42,7 @@ Sila semak setiap item. Jangan tinggalkan sebarang item.
 - [ ] Peningkatan pesanan (Order bumps) muncul dengan betul semasa checkout
 - [ ] Had plugin dan tema dikuatkuasakan dengan betul mengikut pelan
 
-### Aliran Pembayaran (Checkout Flow)
+### Aliran Pembayaran (Checkout Flow) {#checkout-flow}
 
 - [ ] Lengkapkan pendaftaran ujian penuh pada setiap pelan (gunakan mod pembayaran ujian)
 - [ ] Pemilihan templat menunjukkan templat yang betul mengikut pelan
@@ -52,7 +52,7 @@ Sila semak setiap item. Jangan tinggalkan sebarang item.
 - [ ] Pelanggan boleh log masuk ke laman web baharu mereka dengan serta-merta
 - [ ] Kod diskaun berfungsi dengan betul
 
-### Penjenamaan (Branding)
+### Penjenamaan (Branding) {#branding}
 
 - [ ] Halaman log masuk memaparkan penjenamaan FitSite
 - [ ] Dashboard admin memaparkan penjenamaan FitSite
@@ -60,7 +60,7 @@ Sila semak setiap item. Jangan tinggalkan sebarang item.
 - [ ] Invois dipaparkan dengan betul bersama butiran perniagaan anda
 - [ ] Laman pemasaran (marketing site) sedia dan dipautkan ke borang checkout
 
-### Pendaftaran (Onboarding)
+### Pendaftaran (Onboarding) {#onboarding}
 
 - [ ] Widget Quick Start muncul pada dashboard pelanggan baharu
 - [ ] Semua pautan Quick Start merujuk kepada halaman yang betul
@@ -68,7 +68,7 @@ Sila semak setiap item. Jangan tinggalkan sebarang item.
 - [ ] Artikel pangkalan pengetahuan (Knowledge base) diterbitkan dan boleh diakses
 - [ ] Halaman akaun menunjukkan maklumat pelan dan pilihan peningkatan yang betul
 
-### Undang-undang dan Perniagaan
+### Undang-undang dan Perniagaan {#legal-and-business}
 
 - [ ] Terma perkhidmatan diterbitkan dan dipautkan dari checkout
 - [ ] Dasar privasi diterbitkan dan boleh diakses
@@ -77,11 +77,11 @@ Sila semak setiap item. Jangan tinggalkan sebarang item.
 - [ ] Payment gateway berada dalam mod langsung (bukan mod ujian)
 - [ ] Konfigurasi cukai adalah betul untuk bidang kuasa anda
 
-## Pelancaran Lembut vs. Pelancaran Penuh
+## Pelancaran Lembut vs. Pelancaran Penuh {#soft-launch-vs-hard-launch}
 
 Pertimbangkan pelancaran dua fasa:
 
-### Fasa 1: Pelancaran Lembut (Soft Launch)
+### Fasa 1: Pelancaran Lembut (Soft Launch) {#phase-1-soft-launch}
 
 Jemput 5-10 pemilik studio kecergasan untuk mendaftar sebelum pelancaran awam. Mereka adalah pelanggan beta anda. Tawarkan diskaun yang signifikan (diskaun 50% seumur hidup, atau 3 bulan percuma) sebagai pertukaran untuk:
 
@@ -91,7 +91,7 @@ Jemput 5-10 pemilik studio kecergasan untuk mendaftar sebelum pelancaran awam. M
 
 Ini memberi anda maklum balas pelanggan sebenar dan laman web langsung untuk dipamerkan sebelum anda dibuka kepada umum.
 
-### Fasa 2: Pelancaran Penuh (Public Launch)
+### Fasa 2: Pelancaran Penuh (Public Launch) {#phase-2-public-launch}
 
 Setelah maklum balas pelancaran lembut digabungkan:
 
@@ -100,7 +100,7 @@ Setelah maklum balas pelancaran lembut digabungkan:
 - Mulakan pemerolehan pelanggan (Pelajaran 11)
 - Umumkan di saluran industri kecergasan yang berkaitan
 
-## Tindakan Hari Pelancaran
+## Tindakan Hari Pelancaran {#launch-day-actions}
 
 Pada hari anda menjadi awam:
 
@@ -110,7 +110,7 @@ Pada hari anda menjadi awam:
 4. **Sentiasa bersedia** – pelanggan sebenar pertama anda mungkin memerlukan bantuan, dan respons pantas membina kepercayaan
 5. **Sambutan ringkas** – kemudian kembali bekerja
 
-## Apa yang Boleh Salah
+## Apa yang Boleh Salah {#what-can-go-wrong}
 
 Bersedia untuk:
 
@@ -120,7 +120,7 @@ Bersedia untuk:
 - **Prestasi di bawah beban**: Jika anda mendapat lonjakan trafik, ketahui cara meningkatkan hosting anda
 - **Kekeliruan pelanggan**: Sediakan pangkalan pengetahuan dan saluran sokongan anda
 
-## Rangkaian FitSite Setakat Ini
+## Rangkaian FitSite Setakat Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Apa Yang Kita Bina Dalam Pelajaran Ini
+## Apa Yang Kita Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Senarai semak pra-pelancaran yang komprehensif** meliputi infrastruktur, kandungan, pembayaran, dan undang-undang
 - **Strategi pelancaran lembut** untuk mendapatkan maklum balas sebenar sebelum menjadi awam

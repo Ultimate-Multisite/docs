@@ -4,16 +4,16 @@ title: Filter - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Filter: wu_users_membership_limit_message
+# Filter: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
 
 Umožňuje vývojárom zmeniť správu o limite používateľov členstva
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
 | $message | `string` | Správa, ktorá sa má zobraziť na obrazovke. |
 
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72) na riadku 72

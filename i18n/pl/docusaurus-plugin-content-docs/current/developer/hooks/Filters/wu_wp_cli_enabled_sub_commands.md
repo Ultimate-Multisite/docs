@@ -4,11 +4,11 @@ title: Filtry - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filtry: wu_wp_cli_enabled_sub_commands
+# Filtry: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 Filtruje, które podpolecenia są włączone dla danej encji.
 
-## Parametry
+## Parametry {#parameters}
 
 | Name | Type | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtruje, które podpolecenia są włączone dla danej encji.
 | $command_base | `string` | Podstawa używana w poleceniu, tuż po głównym (root). |
 | $this | `\Base_Manager` | Instancja obiektu. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Źródło
+### Źródło {#source}
 
 Zdefiniowane w [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) w linii 198

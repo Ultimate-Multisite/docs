@@ -4,11 +4,11 @@ title: 抱歉，我没有收到需要翻译的具体内容。请把要翻译的 
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# 过滤器: wu_setup_wizard
+# 过滤器: wu_setup_wizard {#filter-wusetupwizard}
 
 允许开发者添加额外的设置向导步骤。
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|------|
@@ -16,12 +16,12 @@ _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 | $is_migration | `bool` | 是否为迁移。 |
 | $wizard | `object` | 当前实例。 |
 
-### 自
+### 自 {#since}
 
 - 2.0.0
 
-### 来源
+### 来源 {#source}
 
 定义于 [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) 的第 525 行
 
-## 返回
+## 返回 {#returns}

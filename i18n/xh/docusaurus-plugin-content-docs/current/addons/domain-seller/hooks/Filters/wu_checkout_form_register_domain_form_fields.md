@@ -4,23 +4,23 @@ title: Isihluzi - wu_checkout_form_register_domain_form_fields
 sidebar_label: wu_checkout_form_register_domain_form_fields
 _i18n_hash: 6d1f2eeb3abc57d82e1b8e4b949501c3
 ---
-# Isihluzi: wu_checkout_form_register_domain_form_fields
+# Isihluzi: wu_checkout_form_register_domain_form_fields {#filter-wucheckoutformregisterdomainformfields}
 
 Hluza imihlaba yefom yokubhalisa idomeyini xa kugqitywa ukuthenga.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
 | $steps | `array` | Amanyathelo efom. |
 | $membership | `\WP_Ultimo\Models\Membership` | Ubulungu bangoku. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 2.1.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-[`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L431) kumgca 431
 
 
-## Okubuyiswayo
+## Okubuyiswayo {#returns}

@@ -3,7 +3,7 @@ title: Loga athruithe AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Loga athruithe AffiliateWP
+# Loga athruithe AffiliateWP {#affiliatewp-changelog}
 
 Leagan: 2.0.1 - Eisithe ar 2025-09-28
 

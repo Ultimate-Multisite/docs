@@ -3,11 +3,11 @@ title: Cache de Prompts Sensível ao Provedor
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cache de prompts com reconhecimento de fornecedor
+# Cache de prompts com reconhecimento de fornecedor {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 introduz **cache de prompts com reconhecimento de fornecedor**, que otimiza os custos de API e a latência ao armazenar prompts em cache entre diferentes fornecedores de LLM. Cada fornecedor tem mecanismos e configurações de cache diferentes.
 
-## Visão geral
+## Visão geral {#overview}
 
 O cache de prompts permite-lhe:
 
@@ -23,11 +23,11 @@ Diferentes fornecedores implementam o cache de formas diferentes:
 - **OpenRouter**: cache específico do fornecedor
 - **Vertex Anthropic**: cache de prompts com controlo de cache
 
-## Google Gemini: API cachedContents
+## Google Gemini: API cachedContents {#google-gemini-cachedcontents-api}
 
 Google Gemini fornece gestão explícita de cache através da API `cachedContents`.
 
-### Configuração
+### Configuração {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Criar um prompt em cache
+### Criar um prompt em cache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Usar um prompt em cache
+### Usar um prompt em cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Ciclo de vida do cache
+### Ciclo de vida do cache {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Boas práticas para Gemini
+### Boas práticas para Gemini {#best-practices-for-gemini}
 
 - **Defina um TTL adequado**: Equilibre a poupança de custos com a desatualização do cache
 - **Armazene prompts de sistema em cache**: Reutilize o mesmo prompt de sistema entre pedidos
 - **Monitorize o uso do cache**: Acompanhe quais caches são mais usados
 - **Limpe caches expirados**: Elimine periodicamente caches não usados
 
-## Azure OpenAI: cache de prompts
+## Azure OpenAI: cache de prompts {#azure-openai-prompt-caching}
 
 Azure OpenAI suporta cache de prompts com gestão automática de TTL.
 
-### Configuração
+### Configuração {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Ativar o cache
+### Ativar o cache {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Headers de cache
+### Headers de cache {#cache-headers}
 
 Azure OpenAI usa headers HTTP para controlo de cache:
 
@@ -152,7 +152,7 @@ Valores suportados:
 - `no_cache`: Não armazenar este pedido em cache
 - `no_store`: Não armazenar em cache e não reutilizar
 
-### Monitorizar o uso do cache
+### Monitorizar o uso do cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Boas práticas para Azure OpenAI
+### Boas práticas para Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Use prompts consistentes**: Prompts idênticos beneficiam do cache
 - **Defina um TTL razoável**: Equilibre custo e atualidade
 - **Monitorize métricas de cache**: Acompanhe a criação de cache em comparação com acertos
 - **Agrupe pedidos semelhantes**: Agrupe pedidos para maximizar acertos de cache
 
-## OpenRouter: cache específico do fornecedor
+## OpenRouter: cache específico do fornecedor {#openrouter-provider-specific-caching}
 
 OpenRouter suporta cache através dos fornecedores subjacentes (OpenAI, Anthropic, etc.).
 
-### Configuração
+### Configuração {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Usar o cache do OpenRouter
+### Usar o cache do OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Opções específicas do fornecedor
+### Opções específicas do fornecedor {#provider-specific-options}
 
 Diferentes fornecedores têm diferentes mecanismos de cache:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Boas práticas para OpenRouter
+### Boas práticas para OpenRouter {#best-practices-for-openrouter}
 
 - **Conheça o cache do seu fornecedor**: Cada fornecedor tem mecanismos diferentes
 - **Teste o comportamento do cache**: Verifique se o cache funciona com o fornecedor escolhido
 - **Monitorize os custos**: Acompanhe a poupança obtida com o cache
 - **Use modelos consistentes**: Mudar de modelo impede acertos de cache
 
-## Vertex Anthropic: cache de prompts com controlo de cache
+## Vertex Anthropic: cache de prompts com controlo de cache {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) suporta cache de prompts com controlo explícito de cache.
 
-### Configuração
+### Configuração {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Usar Vertex Anthropic Caching
+### Usar Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Tipos de Cache Control
+### Tipos de Cache Control {#cache-control-types}
 
 - **ephemeral**: Cache durante a duração do pedido (predefinição)
 - **persistent**: Cache em vários pedidos (se suportado)
 
-### Monitorizar a utilização de cache
+### Monitorizar a utilização de cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Boas práticas para Vertex Anthropic
+### Boas práticas para Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Usar cache ephemeral**: Bom para cache de sessão única
 - **Definir max_tokens apropriadamente**: Equilibre o tamanho da cache vs. custo
 - **Monitorizar métricas de cache**: Acompanhe a eficácia da cache
 - **Testar com a sua carga de trabalho**: Verifique se a cache beneficia o seu caso de uso
 
-## Estratégia de cache entre fornecedores
+## Estratégia de cache entre fornecedores {#cross-provider-caching-strategy}
 
-### Configuração unificada
+### Configuração unificada {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Deteção de fornecedor
+### Deteção de fornecedor {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Estratégia de fallback
+### Estratégia de fallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Otimização de custos
+## Otimização de custos {#cost-optimization}
 
-### Calcular poupanças
+### Calcular poupanças {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Dicas de otimização
+### Dicas de otimização {#optimization-tips}
 
 - **Colocar em cache prompts de sistema grandes**: Maior poupança de custos
 - **Reutilizar contexto**: Coloque em cache documentos de contexto usados frequentemente
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Monitorizar a eficácia da cache**: Acompanhe as poupanças reais
 - **Ajustar TTL**: Equilibre custo vs. atualidade
 
-## Resolução de problemas
+## Resolução de problemas {#troubleshooting}
 
-### A cache não está a ser usada
+### A cache não está a ser usada {#cache-not-being-used}
 
 - Verifique se a cache está ativada na configuração
 - Verifique se os prompts são idênticos (a cache requer correspondência exata)
 - Verifique se a cache não expirou
 - Verifique os limites de cache específicos do fornecedor
 
-### A criação da cache está a falhar
+### A criação da cache está a falhar {#cache-creation-failing}
 
 - Verifique se o tamanho da cache está dentro dos limites do fornecedor
 - Verifique se a sintaxe de cache control está correta
 - Garanta que o fornecedor suporta cache para o seu modelo
 - Reveja a documentação do fornecedor quanto a limitações
 
-### Custos inesperados
+### Custos inesperados {#unexpected-costs}
 
 - Monitorize a criação de cache vs. tokens de leitura de cache
 - Verifique se a cache está realmente a ser usada
 - Verifique falhas de cache devido a variações dos prompts
 - Considere ajustar o TTL ou a estratégia de cache
 
-## Comparação de fornecedores
+## Comparação de fornecedores {#provider-comparison}
 
 | Funcionalidade | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Redução de custos | 90% | 90% | Dependente do fornecedor | 90% |
 | Monitorização | Detalhada | Via métricas | Dependente do fornecedor | Via utilização |
 
-## Próximos passos
+## Próximos passos {#next-steps}
 
 1. **Escolha o seu fornecedor**: Selecione com base nas suas necessidades
 2. **Configure a cache**: Configure cache específica do fornecedor

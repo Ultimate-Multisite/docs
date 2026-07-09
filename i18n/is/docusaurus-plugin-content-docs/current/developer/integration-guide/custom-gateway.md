@@ -3,11 +3,11 @@ title: Þróun sérsniðinnar greiðslugáttar
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Sérsniðin þróun greiðslugáttar
+# Sérsniðin þróun greiðslugáttar {#custom-gateway-development}
 
 Þú getur búið til sérsniðnar greiðslugáttir með því að útvíkka `Base_Gateway` klasann.
 
-## Greiðslugáttarklasi
+## Greiðslugáttarklasi {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Skrá greiðslugáttina
+## Skrá greiðslugáttina {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Lykilaðferðir
+## Lykilaðferðir {#key-methods}
 
 | Aðferð | Tilgangur |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Meðhöndla endurgreiðslubeiðnir |
 | `get_payment_methods()` | Skila vistuðum greiðslumátum fyrir viðskiptavin |
 
-## Endurnýjunarskilríki fyrir endurteknar memberships
+## Endurnýjunarskilríki fyrir endurteknar memberships {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gerir samþættingum greiðslugátta kleift að tilkynna hvort endurtekin membership hafi endurnýtanlegt endurnýjunarskilríki áður en `auto_renew` er vistað. Tengdu við `wu_membership_has_renewal_credential` og skilaðu:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Hreinsaðu merkið um skilríki sem vantar sem hluta af vel heppnuðu endurheimildarferli greiðslugáttarinnar þinnar eftir að nýtt endurnýtanlegt skilríki hefur verið vistað.
 
-## Ábendingar
+## Ábendingar {#tips}
 
 - Skilaðu alltaf `WP_Error` við bilun svo Ultimate Multisite geti séð um birtingu villna
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Notaðu `wu_log_add()` fyrir skráningu sem er sértæk fyrir greiðslugáttina
 
-## Geta AI-tengilsveitenda
+## Geta AI-tengilsveitenda {#ai-connector-provider-capabilities}
 
 Sérsniðnar samþættingar sem kalla á aðgerðir studdar af AI-tengli ættu að samræmast studda OAuth-veitendasettinu sem kynnt var með AI Provider for Anthropic Max v1.3.0:
 

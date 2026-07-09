@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Plans con medición
+# Plans con medición {#metered-plans}
 
 O complemento Ultimate Multisite: Plans con medición transforma como facturas aos teus clientes introducindo capacidades flexibles de facturación medida. En lugar de límites ríxidos que bloquean os usuarios cando se superan, activa cargos por exceso que facturan automaticamente aos clientes polo uso adicional.
 
-## Características principais
+## Características principais {#key-features}
 
 * **Facturación medida**: Cobra aos clientes segundo o uso real en vez de niveis fixos
 * **Xestión de excesos**: Factura automaticamente o uso que supera os límites do plan
@@ -21,14 +21,14 @@ O complemento Ultimate Multisite: Plans con medición transforma como facturas a
 * **Facturación automática**: Xera facturas automaticamente cando se superan os limiares de uso
 * **Informes de uso**: Analíticas e informes de uso detallados para clientes e administradores
 
-## Perfecto para
+## Perfecto para {#perfect-for}
 
 * **Provedores de aloxamento**: Ofrece plans escalables que medran coas necesidades dos clientes
 * **Plataformas SaaS**: Factura segundo o consumo real de recursos
 * **Redes de axencias**: Modelos de prezos flexibles para proxectos de clientes
 * **Aloxamento para revendedores**: Permite que os socios ofrezan prezos baseados no uso
 
-## Como funciona
+## Como funciona {#how-it-works}
 
 1. Configura recursos medidos (espazo en disco, ancho de banda, número de sitios, etc.)
 2. Define límites do plan base e tarifas por exceso
@@ -37,13 +37,13 @@ O complemento Ultimate Multisite: Plans con medición transforma como facturas a
 5. As facturas xéranse automaticamente segundo o ciclo de facturación
 6. Os clientes poden ver o seu uso e os próximos cargos en tempo real
 
-## Facturación de tokens de AI
+## Facturación de tokens de AI {#ai-token-billing}
 
 A versión 1.1.0 engade facturación de tokens de AI para redes que ofrecen funcións de AI a través do WordPress AI Client SDK. Plans con medición escoita as solicitudes completadas de xeración de AI, rexistra os recontos de tokens de entrada e saída para o subsite actual, e converte eses tokens en gasto de AI facturable para o período de facturación actual do cliente.
 
 Usa a facturación de tokens de AI cando queiras ofrecer ferramentas de AI nos sitios dos clientes sen asumir custos de modelo imprevisibles. Cada solicitude atribúese ao subsite, cliente, subscrición, provedor e modelo para que os administradores poidan auditar o uso mentres os clientes poden ver como o seu consumo de AI afecta á súa conta.
 
-### Configurar tarifas por token
+### Configurar tarifas por token {#configure-per-token-rates}
 
 As tarifas de AI configúranse por modelo como tarifas de entrada e saída separadas. As tarifas calcúlanse por 1 millón de tokens, o que coincide coas páxinas de prezos habituais dos provedores de AI.
 
@@ -55,7 +55,7 @@ As tarifas de AI configúranse por modelo como tarifas de entrada e saída separ
 
 Cando non se configura un ID de modelo exacto, Plans con medición pode coincidir por prefixo de modelo. Por exemplo, unha tarifa configurada para `claude-sonnet-4` pode aplicarse a IDs de modelo con marca temporal que comezan con ese prefixo. Os desenvolvedores tamén poden axustar a táboa final de tarifas co filtro [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Conectores de AI compatibles
+### Conectores de AI compatibles {#supported-ai-connectors}
 
 A facturación de tokens de AI funciona con conectores que emiten eventos de xeración do WordPress AI Client SDK e inclúen o uso de tokens nos metadatos da resposta. Isto inclúe a familia de conectores de AI de Ultimate Multisite documentada aquí:
 
@@ -65,13 +65,13 @@ A facturación de tokens de AI funciona con conectores que emiten eventos de xer
 
 Os conectores personalizados poden participar disparando os eventos estándar `wp_ai_client_before_generate_result` e `wp_ai_client_after_generate_result` con metadatos de modelo, provedor e uso de tokens. A configuración do conector aplícase desde o sitio principal aos subsitios para que os sitios dos clientes usen os provedores e límites aprobados pola rede.
 
-### Uso da conta do cliente
+### Uso da conta do cliente {#customer-account-usage}
 
 Os clientes ven o uso de AI xunto cos seus outros recursos medidos na súa área de conta. A fila de gasto de AI mostra o total do período de facturación actual derivado dos tokens de prompt e completado rexistrados, das tarifas de modelo configuradas e de calquera asignación incluída no plan.
 
 Se un cliente ten un método de pagamento gardado, o uso por riba da asignación incluída trátase como exceso facturable. Se o plan está configurado cun corte estrito e o cliente non ten ningún método de pagamento dispoñible, as solicitudes de AI poden bloquearse unha vez acadada a asignación e solicítaselle ao cliente que engada os detalles de pagamento antes de continuar.
 
-## Recursos compatibles
+## Recursos compatibles {#supported-resources}
 
 * Almacenamento en disco
 * Ancho de banda/transferencia de datos
@@ -80,13 +80,13 @@ Se un cliente ten un método de pagamento gardado, o uso por riba da asignación
 * Uso de tokens de AI e gasto de AI
 * Tipos de recursos personalizados
 
-## Requisitos
+## Requisitos {#requirements}
 
 * Multisite Ultimate 2.0.0 ou superior
 * Instalación de WordPress Multisite
 * PHP 7.4 ou superior
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube os ficheiros do plugin a `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Activa o plugin a través da pantalla "Plugins" en WordPress
@@ -94,24 +94,24 @@ Se un cliente ten un método de pagamento gardado, o uso por riba da asignación
 4. Configura os teus recursos medidos e prezos
 5. Activa a facturación medida para produtos no editor de produtos
 
-## Preguntas frecuentes
+## Preguntas frecuentes {#frequently-asked-questions}
 
-## Que ocorre cando un cliente supera o seu límite?
+## Que ocorre cando un cliente supera o seu límite? {#what-happens-when-a-customer-exceeds-their-limit}
 
 En vez de bloquear o acceso, o sistema rexistra o exceso e engádeo á súa seguinte factura segundo as tarifas que configuraches.
 
-## Podo establecer tarifas de exceso diferentes para distintos produtos?
+## Podo establecer tarifas de exceso diferentes para distintos produtos? {#can-i-set-different-overage-rates-for-different-products}
 
 Si, cada produto pode ter recursos medidos e prezos por exceso únicos.
 
-## Como se notifica aos clientes sobre o uso?
+## Como se notifica aos clientes sobre o uso? {#how-are-customers-notified-about-usage}
 
 Os clientes poden ver o seu uso actual no seu panel de control e recibir notificacións opcionais cando se acheguen aos límites ou os superen.
 
-## Como se tarifica o uso de tokens de IA?
+## Como se tarifica o uso de tokens de IA? {#how-is-ai-token-usage-priced}
 
 O uso de tokens de IA tarífícase a partir das tarifas de entrada e saída configuradas do modelo por cada 1 millón de tokens. Os plans medidos multiplican os recontos de tokens de prompt e de finalización de cada solicitude por esas tarifas, engaden o resultado ao gasto de IA do cliente no período de facturación actual e aplican a asignación ou as regras de exceso do plan.
 
-## Aínda podo usar límites estritos?
+## Aínda podo usar límites estritos? {#can-i-still-use-hard-limits}
 
 Si, a facturación medida é opcional por produto. Podes combinar produtos tradicionais con límites estritos con produtos medidos.

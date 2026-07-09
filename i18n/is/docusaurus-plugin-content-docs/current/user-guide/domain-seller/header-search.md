@@ -3,11 +3,11 @@ title: Lénsleit í haus
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search
+# Header Domain Search {#header-domain-search}
 
 Notaðu þessa uppsetningu þegar þú vilt lítið eyðublað í haus sem byrjar lénaleit og leyfir síðan viðskiptavininum að velja úr tiltækum lénum inni í Ultimate Multisite checkout.
 
-## Kröfur
+## Kröfur {#requirements}
 
 - Ultimate Multisite virkt á neti.
 - Multisite Ultimate Domain Seller virkt á neti.
@@ -16,7 +16,7 @@ Notaðu þessa uppsetningu þegar þú vilt lítið eyðublað í haus sem byrja
   - Studd TLDs stillt, til dæmis `com`, `net` og `org`.
 - Gilt checkout-eyðublað sem inniheldur **Lénsvals** reitinn.
 
-## Checkout-eyðublað
+## Checkout-eyðublað {#checkout-form}
 
 1. Búðu til eða breyttu checkout-eyðublaðinu sem skráningarsíðan notar.
 2. Bættu við venjulegum nauðsynlegum checkout/account-reitum, þar á meðal **Notandanafn**. Checkout-eyðublaði sem inniheldur aðeins lénsreitinn er hafnað af Ultimate Multisite staðfestingu.
@@ -30,7 +30,7 @@ Skráningarsíðan ætti að birta checkout-eyðublaðið, til dæmis:
 [wu_checkout slug="domain-form"]
 ```
 
-## Haus-eyðublað
+## Haus-eyðublað {#header-form}
 
 Bættu við litlu `GET` eyðublaði í haus síðunnar sem sendir innslátt leitarorðsins á checkout-síðuna sem `domain_name`:
 
@@ -44,7 +44,7 @@ Bættu við litlu `GET` eyðublaði í haus síðunnar sem sendir innslátt leit
 
 Forveldu ekki lén í sérsniðnu JavaScripti í haus. Hausinn ætti aðeins að senda leitarorðið. Domain Seller checkout-forritið les `?domain_name=example`, fyllir út leitarreitinn í checkout og keyrir tiltækileikaleitina svo viðskiptavinurinn geti valið úr lénunum sem skilað er.
 
-## Vænt hegðun
+## Vænt hegðun {#expected-behaviour}
 
 Leit að `example` í hausnum ætti að opna:
 
@@ -61,7 +61,7 @@ Checkout ætti þá að birta niðurstöður sem hægt er að velja, svo sem:
 
 Eftir að tiltæk niðurstaða hefur verið valin ætti pöntunaryfirlitið að innihalda lénaskráningarvöruna og valið lén.
 
-## Staðfesting
+## Staðfesting {#verification}
 
 1. Opnaðu heimasíðuna.
 2. Leitaðu að beru nafni, til dæmis `example`.
@@ -71,7 +71,7 @@ Eftir að tiltæk niðurstaða hefur verið valin ætti pöntunaryfirlitið að 
 6. Smelltu á **Velja** fyrir tiltækt lén.
 7. Staðfestu að pöntunaryfirlitið innihaldi `Domain Registration - example.com` eða valið lén.
 
-## Úrræðaleit
+## Úrræðaleit {#troubleshooting}
 
 - Ef enginn listi birtist skaltu athuga netflipa vafrans fyrir `admin-ajax.php?action=wu_domain_search` og staðfesta að það skili ekki-tómum `domains` eða `results`.
 - Ef checkout-eyðublaðið stenst ekki staðfestingu við vistun skaltu bæta við nauðsynlegum account-reitum eins og **Notandanafn**.

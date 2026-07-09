@@ -3,7 +3,7 @@ title: Erro r-fil Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Erro Installazzjoni tal-Sunrise File
+# Erro Installazzjoni tal-Sunrise File {#error-installing-the-sunrise-file}
 
 Il-file `sunrise.php` huwa file speċjali li WordPress jipprovvdi għalih meta jidabbir (bootstraps). Biex WordPress jkun qabel li jiskopri l-file `sunrise.php`, hu għandu jkun posizjonat fid-dent bl-folder **wp-content**.
 

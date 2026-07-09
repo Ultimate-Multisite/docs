@@ -3,15 +3,15 @@ title: Staðfesta birtuskil litaspjalds
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Staðfesta birtuskil litatöflu
+# Staðfesta birtuskil litatöflu {#validate-palette-contrast}
 
 Getan **Validate Palette Contrast** athugar litapör í hönnunarlitatöflunni þinni með tilliti til samræmis við WCAG (Web Content Accessibility Guidelines) áður en þau eru notuð í þemað þitt.
 
-## Yfirlit
+## Yfirlit {#overview}
 
 Þessi geta tryggir að litasamsetning vefsins þíns uppfylli aðgengisstaðla með því að staðfesta birtuskilahlutföll milli texta- og bakgrunnslita. Hún hjálpar til við að koma í veg fyrir litasamsetningar sem gætu verið erfiðar aflestrar fyrir notendur með sjónskerðingu.
 
-## Inntakssnið
+## Inntakssnið {#input-format}
 
 Getan tekur við litatöflu sem inntaki:
 
@@ -35,7 +35,7 @@ Getan tekur við litatöflu sem inntaki:
 }
 ```
 
-### Færibreytur
+### Færibreytur {#parameters}
 
 | Færibreyta | Tegund | Nauðsynlegt | Lýsing |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Getan tekur við litatöflu sem inntaki:
 | `wcag_level` | string | Nei | WCAG-samræmisstig: "A", "AA" (sjálfgefið) eða "AAA" |
 | `pairs_to_check` | array | Nei | Sérstök litapör til að staðfesta (t.d. `["primary-text", "background-text"]`) |
 
-## WCAG-stig sem eru athuguð
+## WCAG-stig sem eru athuguð {#wcag-levels-checked}
 
 Getan staðfestir birtuskilahlutföll samkvæmt WCAG-stöðlum:
 
@@ -56,7 +56,7 @@ Getan staðfestir birtuskilahlutföll samkvæmt WCAG-stöðlum:
 - **Venjulegur texti** — texti minni en 18pt (eða 14pt feitletraður)
 - **Stór texti** — texti 18pt eða stærri (eða 14pt feitletraður eða stærri)
 
-## Úttaksskema
+## Úttaksskema {#output-schema}
 
 Getan skilar ítarlegri staðfestingarskýrslu:
 
@@ -95,7 +95,7 @@ Getan skilar ítarlegri staðfestingarskýrslu:
 }
 ```
 
-### Úttaksreitir
+### Úttaksreitir {#output-fields}
 
 | Reitur | Tegund | Lýsing |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Getan skilar ítarlegri staðfestingarskýrslu:
 | `status` | string | "pass" eða "fail" fyrir hvert par |
 | `recommendations` | array | Tillögur til að bæta pör sem standast ekki |
 
-## Notkunardæmi
+## Notkunardæmi {#usage-example}
 
 **Kvaðning:**
 ```
@@ -119,7 +119,7 @@ Getan staðfestir allar litasamsetningar og skilar:
 - ✅ Bakgrunnur + texti: 12.1:1 hlutfall (stenst WCAG AAA)
 - Heildarniðurstaða: Samræmist WCAG AA
 
-## Samþætting við Theme Builder
+## Samþætting við Theme Builder {#integration-with-theme-builder}
 
 Þegar val á hönnunarstefnu í Theme Builder er notað, gerir Validate Palette Contrast-getan eftirfarandi:
 
@@ -129,7 +129,7 @@ Getan staðfestir allar litasamsetningar og skilar:
 4. Veitir tillögur fyrir pör sem uppfylla ekki kröfur
 5. Kemur í veg fyrir að óaðgengilegar litasamsetningar séu notaðar
 
-## Bestu starfsvenjur
+## Bestu starfsvenjur {#best-practices}
 
 - **Byrjaðu á AA-stigi** — WCAG AA er staðallinn fyrir flesta vefi
 - **Prófaðu áður en þú notar** — staðfestu litatöfluna áður en þú skuldbindur þig til hönnunar
@@ -137,7 +137,7 @@ Getan staðfestir allar litasamsetningar og skilar:
 - **Taktu tillit til notendastillinga** — sumir notendur geta haft aukið litanæmi
 - **Notaðu birtuskilaprófara** — sameinaðu þessa getu með vafraverkfærum til staðfestingar
 
-## Pör sem standast ekki og tillögur
+## Pör sem standast ekki og tillögur {#failing-pairs-and-recommendations}
 
 Ef litapar stenst ekki staðfestingu veitir getan tillögur:
 
@@ -155,7 +155,7 @@ Ef litapar stenst ekki staðfestingu veitir getan tillögur:
 }
 ```
 
-## Tengdar getu
+## Tengdar getu {#related-abilities}
 
 - [Búa til Logo SVG](./generate-logo-svg.md) — búðu til merki með staðfestri litatöflu þinni
 - [Búa til valmynd](./create-menu.md) — byggðu upp leiðarkerfi með aðgengilegum litum

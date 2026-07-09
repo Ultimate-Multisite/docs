@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Monivaluutta
+# Monivaluutta {#multi-currency}
 
 Ultimate Multisite: Monivaluutta mahdollistaa verkostollesi maksujen vastaanottamisen useissa valuutoissa. Se muuntaa hinnat automaattisesti reaaliaikaisten tai manuaalisten valuuttakurssien avulla, antaa sinun asettaa tarkat tuotekohtaiset hinnat mille tahansa valuutalle ja tunnistaa jokaisen kävijän ensisijaisen valuutan geopaikannuksen perusteella — kaikki hallitaan yhdestä admin Dashboardista.
 
-## Keskeiset ominaisuudet
+## Keskeiset ominaisuudet {#key-features}
 
 - **Automaattinen valuuttakurssimuunnos** — hinnat muunnetaan perusvaluutastasi valitsemaltasi palveluntarjoajalta haettujen kurssien avulla
 - **Tuotekohtaiset hinnoittelun ohitukset** — aseta tarkat valuuttakohtaiset hinnat mille tahansa tuotteelle ohittaaksesi automaattisen muunnoksen
@@ -20,22 +20,22 @@ Ultimate Multisite: Monivaluutta mahdollistaa verkostollesi maksujen vastaanotta
 - **Geopaikannukseen perustuva valuutan tunnistus** — esivalitsee automaattisesti valuutan, joka vastaa kävijän maata
 - **Admin Dashboard** — hallitse aktiivisia valuuttoja, valuuttakursseja ja palveluntarjoajan asetuksia yhdestä paikasta
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 
 - Ultimate Multisite 2.0.0 tai uudempi
 - WordPress Multisite -asennus
 - PHP 7.4 tai uudempi
 
-## Asennus
+## Asennus {#installation}
 
 1. Lataa lisäosan tiedostot kansioon `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktivoi lisäosa WordPressin **Lisäosat**-näkymässä (verkostoaktivointi)
 3. Siirry kohtaan **Ultimate Multisite → Monivaluutta** avataksesi admin Dashboardin
 4. Lisää valuutat, joita haluat hyväksyä, ja määritä valuuttakurssipalveluntarjoajasi
 
-## Määritys
+## Määritys {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Monivaluutta-admin Dashboard (**Ultimate Multisite → Monivaluutta**) on keskitetty paikka, jossa voit:
 
@@ -44,7 +44,7 @@ Monivaluutta-admin Dashboard (**Ultimate Multisite → Monivaluutta**) on keskit
 - Tarkistaa kaikkien aktiivisten valuuttojen nykyiset kurssit
 - Asettaa manuaaliset kurssit, kun automaattiset palveluntarjoajat eivät sovellu
 
-### Valuuttakurssipalveluntarjoajat
+### Valuuttakurssipalveluntarjoajat {#exchange-rate-providers}
 
 | Palveluntarjoaja | Kuvaus |
 |---|---|
@@ -55,7 +55,7 @@ Monivaluutta-admin Dashboard (**Ultimate Multisite → Monivaluutta**) on keskit
 
 Valitse palveluntarjoajasi kohdassa **Ultimate Multisite → Monivaluutta → Asetukset → Valuuttakurssipalveluntarjoaja**. Kurssit voidaan päivittää manuaalisesti milloin tahansa tai ajastaa päivittymään automaattisesti.
 
-### Tuotekohtaiset hinnoittelun ohitukset
+### Tuotekohtaiset hinnoittelun ohitukset {#per-product-pricing-overrides}
 
 Kun automaattinen muunnos ei ole riittävän tarkka, voit asettaa tarkan hinnan tietylle valuutalle missä tahansa tuotteessa:
 
@@ -66,7 +66,7 @@ Kun automaattinen muunnos ei ole riittävän tarkka, voit asettaa tarkan hinnan 
 
 Tuotteet, joilla ei ole ohitusta, käyttävät perusvaluutastasi muunnettua hintaa.
 
-### Valuutan valitsimen rekisteröitymiskenttä
+### Valuutan valitsimen rekisteröitymiskenttä {#currency-selector-signup-field}
 
 Valuutan valitsinkenttä voidaan lisätä rekisteröitymis-/kassaprosessiin, jotta asiakkaat valitsevat ensisijaisen valuuttansa rekisteröitymisen yhteydessä:
 
@@ -76,7 +76,7 @@ Valuutan valitsinkenttä voidaan lisätä rekisteröitymis-/kassaprosessiin, jot
 
 Valittu valuutta tallennetaan tilauksen yhteyteen ja sitä käytetään kaikessa myöhemmässä laskutuksessa.
 
-### Geopaikannukseen perustuva valuutan tunnistus
+### Geopaikannukseen perustuva valuutan tunnistus {#geolocation-based-currency-detection}
 
 Kun geopaikannustunnistus on käytössä, lisäosa yhdistää kävijän maan valuuttaan ja esivalitsee sen valuutan valitsinkentässä. Ota käyttöön näin:
 
@@ -86,27 +86,27 @@ Kun geopaikannustunnistus on käytössä, lisäosa yhdistää kävijän maan val
 
 Jos kävijän maalle ei ole kartoitusta, varavaihtoehtona käytetään verkoston perusvaluuttaa.
 
-## Usein kysytyt kysymykset
+## Usein kysytyt kysymykset {#frequently-asked-questions}
 
-### Mitä tapahtuu, jos valuuttakurssipalveluntarjoaja ei ole käytettävissä?
+### Mitä tapahtuu, jos valuuttakurssipalveluntarjoaja ei ole käytettävissä? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Lisäosa käyttää varavaihtoehtona viimeksi onnistuneesti haettuja kursseja. Jos kursseja ei ole koskaan haettu, se käyttää varavaihtoehtona määrittämiäsi manuaalisia kursseja. Manuaalisten kurssien määrittäminen turvaverkoksi on suositeltavaa.
 
-### Voinko käyttää eri palveluntarjoajia eri valuutoille?
+### Voinko käyttää eri palveluntarjoajia eri valuutoille? {#can-i-use-different-providers-for-different-currencies}
 
 Et — yksi palveluntarjoaja on aktiivinen kerrallaan kaikille valuutoille. Käytä **Manuaalinen**-vaihtoehtoa, jos tarvitset täyden hallinnan yksittäisiin kursseihin.
 
-### Vaatiiko geopaikannus erillisen lisäosan?
+### Vaatiiko geopaikannus erillisen lisäosan? {#does-geolocation-require-a-separate-plugin}
 
 Ulkoista geopaikannuslisäosaa ei tarvita. Lisäosa käyttää WordPressin sisäänrakennettua IP-osoitteesta maahan -tunnistusta. Parempaa tarkkuutta varten erillinen geopaikannuspalvelu voidaan integroida tarjottujen suodatinkoukkujen avulla.
 
-### Sovelletaanko tuotekohtaiset ohitukset ennen veroa vai veron jälkeen?
+### Sovelletaanko tuotekohtaiset ohitukset ennen veroa vai veron jälkeen? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Tuotekohtaiset ohitukset asettavat verottoman hinnan kohdevaluutassa. Vero lasketaan ohitushinnan päälle käyttäen olemassa olevia veroasetuksiasi.
 
-## Muutosloki
+## Muutosloki {#changelog}
 
-### Versio 1.0.0 — Julkaistu 2026-04-02
+### Versio 1.0.0 — Julkaistu 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Uutta: Monivaluuttatuki automaattisella valuuttakurssimuunnoksella
 - Uutta: Tuotekohtaiset hinnoittelun ohitukset tarkkoja valuuttakohtaisia hintoja varten

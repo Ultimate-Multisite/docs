@@ -4,23 +4,23 @@ title: Isihlungi - wu_stripe_create_payment_intent_args
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# Isihlungi: wu_stripe_create_payment_intent_args
+# Isihlungi: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
 
 Ihlunga ama-argument e-payment intent.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
 | $intent_args | `array` | Uhlu lwama-args e-intent. |
 | $stripe_gateway | `\Stripe_Gateway` | . |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/gateways/class-stripe-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-stripe-gateway.php#L377) kulayini 377
 
 
-## Okubuyiswayo
+## Okubuyiswayo {#returns}

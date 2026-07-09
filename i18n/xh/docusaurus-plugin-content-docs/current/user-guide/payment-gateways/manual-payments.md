@@ -3,13 +3,13 @@ title: Ukumisela iiNtlawulo ezenziwa ngesandla
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ukumisela Iintlawulo Zezandla (v2)
+# Ukumisela Iintlawulo Zezandla (v2) {#setting-up-manual-payments-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa kwi-Ultimate Multisite version 2.x.**_
 
 Iintlawulo zezandla yindlela yokukunika ithuba lokubonelela ngezinye iindlela zentlawulo ukuba **Stripe** okanye **PayPal** ayifumaneki kubasebenzisi bakho. Inokuba yi-wire transfer okanye ugqithiselo lwebhanki, okanye nayiphi na enye indlela yentlawulo efumanekayo kubasebenzisi bakho ekuhlaleni.
 
-## Indlela yokuvula Iintlawulo Zezandla
+## Indlela yokuvula Iintlawulo Zezandla {#how-to-enable-manual-payments}
 
 Ukumisela intlawulo yezandla kulula kakhulu. Kufuneka nje uyivule phantsi kwee-gateway zentlawulo uze ufake imiyalelo eneenkcukacha yokuba umsebenzisi kufuneka ayithumele njani intlawulo.
 
@@ -31,7 +31,7 @@ Kwaye baya kufumana nomyalezo kwiphepha lakho le-**Thank You** onemiyalelo yakho
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Ukuqinisekisa iintlawulo zezandla
+## Ukuqinisekisa iintlawulo zezandla {#confirming-manual-payments}
 
 Ukuqinisekisa intlawulo yezandla, yiya kwimenyu ye-**Payments** kwibar yasekhohlo. Apho ungabona zonke iintlawulo kwinethiwekhi yakho kunye neenkcukacha zazo, kuquka **status** yazo. Intlawulo yezandla iya kuhlala ine-**Pending** status de uyitshintshe ngesandla.
 

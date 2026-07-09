@@ -3,17 +3,17 @@ title: Cyfeiriad Dylunio
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Cyfeiriad Dylunio
+# Cyfeiriad Dylunio {#design-direction}
 
 Mae cam **Cyfeiriad Dylunio** yn eich galluogi i adolygu, mireinio, a chwblhau dyluniad gweledol eich theme cyn i Theme Builder gynhyrchu'r theme cyflawn.
 
-## Trosolwg
+## Trosolwg {#overview}
 
 Ar ôl cwblhau'r Cyfweliad Darganfod, mae Theme Builder yn cyflwyno eich cyfeiriad dylunio gyda **rendro rhagolwg desktop a mobile**. Mae hyn yn eich galluogi i weld yn union sut bydd eich dyluniad yn edrych ar wahanol ddyfeisiau cyn ymrwymo i'r theme.
 
-## Cydrannau Cyfeiriad Dylunio
+## Cydrannau Cyfeiriad Dylunio {#design-direction-components}
 
-### 1. Palet Lliwiau
+### 1. Palet Lliwiau {#1-color-palette}
 
 Cynllun lliwiau eich theme, gan gynnwys:
 
@@ -23,7 +23,7 @@ Cynllun lliwiau eich theme, gan gynnwys:
 - **Lliwiau niwtral** — llwydion a gwynion ar gyfer cefndiroedd a thestun
 - **Lliw testun** — lliw testun cynradd ar gyfer darllenadwyedd
 
-### 2. Teipograffeg
+### 2. Teipograffeg {#2-typography}
 
 Dewisiadau ffont ar gyfer:
 
@@ -33,14 +33,14 @@ Dewisiadau ffont ar gyfer:
 - **Uchder llinell** — bylchau rhwng llinellau ar gyfer darllenadwyedd
 - **Pwysau ffont** — amrywiadau trwm, rheolaidd, ac ysgafn
 
-### 3. Cynllun a Bylchau
+### 3. Cynllun a Bylchau {#3-layout-and-spacing}
 
 - **Lled cynhwysydd** — lled mwyaf ar gyfer cynnwys
 - **Padding ac ymylon** — bylchau o amgylch elfennau
 - **System grid** — cynllun colofnau ar gyfer dylunio ymatebol
 - **Bylchau cydrannau** — pellter rhwng elfennau UI
 
-### 4. Elfennau Gweledol
+### 4. Elfennau Gweledol {#4-visual-elements}
 
 - **Arddulliau botymau** — dyluniadau botymau cynradd, eilaidd, a thrydyddol
 - **Dyluniadau cardiau** — cynlluniau ar gyfer blociau cynnwys
@@ -48,9 +48,9 @@ Dewisiadau ffont ar gyfer:
 - **Borderi a chysgodion** — dyfnder gweledol cynnil
 - **Effeithiau hover** — steilio cyflwr rhyngweithiol
 
-## Rendro Rhagolwg
+## Rendro Rhagolwg {#preview-rendering}
 
-### Rhagolwg Desktop
+### Rhagolwg Desktop {#desktop-preview}
 
 Mae'r rhagolwg desktop yn dangos eich dyluniad ar led llawn (yn nodweddiadol 1200px neu'n ehangach):
 
@@ -59,7 +59,7 @@ Mae'r rhagolwg desktop yn dangos eich dyluniad ar led llawn (yn nodweddiadol 120
 - Teipograffeg a bylchau mawr
 - Pob elfen weledol ar faint llawn
 
-### Rhagolwg Mobile
+### Rhagolwg Mobile {#mobile-preview}
 
 Mae'r rhagolwg mobile yn dangos eich dyluniad ar led mobile (yn nodweddiadol 375px):
 
@@ -68,7 +68,7 @@ Mae'r rhagolwg mobile yn dangos eich dyluniad ar led mobile (yn nodweddiadol 375
 - Teipograffeg a bylchau wedi'u haddasu
 - Meintiau botymau cyfeillgar i gyffwrdd
 
-### Torbwyntiau Ymatebol
+### Torbwyntiau Ymatebol {#responsive-breakpoints}
 
 Mae Theme Builder yn rendro rhagolygon ar y torbwyntiau hyn:
 
@@ -79,9 +79,9 @@ Mae Theme Builder yn rendro rhagolygon ar y torbwyntiau hyn:
 | **Desktop** | 1200px | Desktop lled llawn |
 | **Large Desktop** | 1920px | Dangosydd uwch-lydan |
 
-## Mireinio Eich Dyluniad
+## Mireinio Eich Dyluniad {#refining-your-design}
 
-### Gwneud Addasiadau
+### Gwneud Addasiadau {#making-adjustments}
 
 Gallwch fireinio eich cyfeiriad dylunio drwy:
 
@@ -91,7 +91,7 @@ Gallwch fireinio eich cyfeiriad dylunio drwy:
 4. **Diweddaru cynllun** — newid lledau cynwysyddion a cholofnau grid
 5. **Addasu elfennau** — newid arddulliau botymau, dyluniadau cardiau, ac ati.
 
-### Diweddariadau Rhagolwg
+### Diweddariadau Rhagolwg {#preview-updates}
 
 Mae newidiadau'n cael eu hadlewyrchu mewn amser real:
 
@@ -100,7 +100,7 @@ Mae newidiadau'n cael eu hadlewyrchu mewn amser real:
 - Mae pob torbwynt ymatebol yn cael ei ddiweddaru
 - Gallwch newid rhwng rhagolygon i wirio newidiadau
 
-### Golwg Gymharu
+### Golwg Gymharu {#comparison-view}
 
 Cymharwch eich cyfeiriad dylunio â:
 
@@ -108,7 +108,7 @@ Cymharwch eich cyfeiriad dylunio â:
 - **Dyluniadau cystadleuwyr** — cymharu â safleoedd ysbrydoliaeth
 - **Fersiynau blaenorol** — dychwelyd at gyfeiriadau dylunio cynharach
 
-## Cymeradwyo Cyfeiriad Dylunio
+## Cymeradwyo Cyfeiriad Dylunio {#design-direction-approval}
 
 Unwaith y byddwch yn fodlon â'ch dyluniad:
 
@@ -118,7 +118,7 @@ Unwaith y byddwch yn fodlon â'ch dyluniad:
 4. **Cadarnhau cynllun** — gwirio bylchau ac aliniad
 5. **Cymeradwyo dyluniad** — symud ymlaen i gynhyrchu theme
 
-## Camau Nesaf
+## Camau Nesaf {#next-steps}
 
 Ar ôl cymeradwyo eich cyfeiriad dylunio:
 
@@ -127,7 +127,7 @@ Ar ôl cymeradwyo eich cyfeiriad dylunio:
 3. Gallwch addasu ymhellach gan ddefnyddio addasydd WordPress
 4. Symudwch ymlaen i [Fwydlenni Lletygarwch](./hospitality-menus.md) neu nodweddion eraill
 
-## Arferion Gorau
+## Arferion Gorau {#best-practices}
 
 - **Profi ar ddyfeisiau go iawn** — defnyddiwch ffonau a thabledi go iawn os yw'n bosibl
 - **Gwirio darllenadwyedd** — sicrhau bod testun yn ddarllenadwy ar bob maint
@@ -135,30 +135,30 @@ Ar ôl cymeradwyo eich cyfeiriad dylunio:
 - **Ystyried perfformiad** — optimeiddiwch ddelweddau a ffontiau ar gyfer cyflymder
 - **Cynllunio ar gyfer cynnwys** — sicrhau bod y cynllun yn gweithio gyda'ch cynnwys gwirioneddol
 
-## Datrys Problemau
+## Datrys Problemau {#troubleshooting}
 
-### Rhagolwg Ddim yn Diweddaru
+### Rhagolwg Ddim yn Diweddaru {#preview-not-updating}
 
 - Adnewyddwch y dudalen
 - Cliriwch storfa'r porwr
 - Rhowch gynnig ar borwr gwahanol
 - Gwiriwch y cysylltiad rhyngrwyd
 
-### Lliwiau'n Edrych yn Wahanol
+### Lliwiau'n Edrych yn Wahanol {#colors-look-different}
 
 - Gwiriwch osodiadau lliw'r monitor
 - Rhowch gynnig ar wahanol ddyfeisiau
 - Gwiriwch gyferbyniad lliw gydag offer hygyrchedd
 - Ystyriwch efelychwyr dallineb lliw
 
-### Problemau Teipograffeg
+### Problemau Teipograffeg {#typography-issues}
 
 - Gwiriwch fod ffeiliau ffont yn llwytho
 - Gwiriwch faint ffont ar wahanol dorbwyntiau
 - Profwch gyda chynnwys gwirioneddol
 - Ystyriwch hyd llinell ar gyfer darllenadwyedd
 
-## Dogfennaeth Gysylltiedig
+## Dogfennaeth Gysylltiedig {#related-documentation}
 
 - [Cyfweliad Darganfod](./discovery-interview.md) — casglu gwybodaeth ddylunio
 - [Fwydlenni Lletygarwch](./hospitality-menus.md) — creu tudalennau bwydlen strwythuredig

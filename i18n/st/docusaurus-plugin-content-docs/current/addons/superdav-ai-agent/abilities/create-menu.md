@@ -3,15 +3,15 @@ title: Theha Lenane
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Etsa Lenane
+# Etsa Lenane {#create-menu}
 
 Bokhoni ba **Etsa Lenane** bo etsa manane a tsamaiso a WordPress ka tšehetso bakeng sa dileibole tsa tsamaiso tse arohaneng le dihlooho tsa maqephe.
 
-## Kakaretso
+## Kakaretso {#overview}
 
 Bokhoni bona bo atolosa tshebetso e tlwaelehileng ya ho etsa lenane ka bokhoni ba ho hlakisa paramethara ya `navigation_label`. Sena se o dumella ho etsa manane moo leibole e bontshwang tsamaisong e fapaneng le sehlooho sa leqephe, se fanang ka ho tenyetseha ho hoholo sebopehong sa sebaka le boiphihlelong ba mosebedisi.
 
-## Diparamethara
+## Diparamethara {#parameters}
 
 | Paramethara | Mofuta | E a hlokahala | Tlhaloso |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Bokhoni bona bo atolosa tshebetso e tlwaelehileng ya ho etsa lenane ka bokhoni b
 | `location` | string | Che | Sebaka sa moralo seo lenane lena le abelwang ho sona, mohl. `primary` |
 | `navigation_label` | string | Che | Leibole e bontshwang tsamaisong (e fapaneng le sehlooho sa leqephe) |
 
-## Boleng bo Khutlisitsweng
+## Boleng bo Khutlisitsweng {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Bokhoni bona bo atolosa tshebetso e tlwaelehileng ya ho etsa lenane ka bokhoni b
 }
 ```
 
-## Leibole ya Tsamaiso kgahlanong le Sehlooho sa Leqephe
+## Leibole ya Tsamaiso kgahlanong le Sehlooho sa Leqephe {#navigation-label-vs-page-title}
 
 Paramethara ya `navigation_label` e o dumella ho arola lebitso la lenane la kahare ho leibole e bontshwang basebedisi:
 
@@ -43,9 +43,9 @@ Sena se molemo ha:
 - O hloka ho tshehetsa dipuo tse ngata tse nang le bolelele bo fapaneng ba dileibole
 - O haha manane bakeng sa dibaka tse itseng kapa dihlopha tsa basebedisi
 
-## Mehlala ya Tshebediso
+## Mehlala ya Tshebediso {#usage-examples}
 
-### Mohlala wa 1: Lenane le Bonolo le nang le Leibole ya Tsamaiso
+### Mohlala wa 1: Lenane le Bonolo le nang le Leibole ya Tsamaiso {#example-1-simple-menu-with-navigation-label}
 
 **Tlhahiso:**
 ```
@@ -62,7 +62,7 @@ Etsa lenane la tsamaiso ya motheo le bitswang "Tsamaiso e Kgolo" le leibole ya t
 }
 ```
 
-### Mohlala wa 2: Lenane bakeng sa Sebaka se Itseng sa Moralo
+### Mohlala wa 2: Lenane bakeng sa Sebaka se Itseng sa Moralo {#example-2-menu-for-specific-theme-location}
 
 **Tlhahiso:**
 ```
@@ -80,7 +80,7 @@ Etsa lenane la maoto le bitswang "Dihokelo tsa Maoto" le leibole ya tsamaiso "Di
 }
 ```
 
-## Kopanyo le Theme Builder
+## Kopanyo le Theme Builder {#integration-with-theme-builder}
 
 Ha o sebedisa Theme Builder, bokhoni ba Etsa Lenane bo:
 
@@ -89,13 +89,13 @@ Ha o sebedisa Theme Builder, bokhoni ba Etsa Lenane bo:
 3. Abela manane dibakeng tse nepahetseng tsa moralo
 4. Tshehetsa ho eketsa dintho tsa lenane ka mora ho etswa
 
-## Bokgoni bo Amanang
+## Bokgoni bo Amanang {#related-abilities}
 
 - **`add_menu_item`** — Eketsa dintho lenaneng le seng le le teng
 - **`update_menu`** — Reha lenane hape kapa o le abele hape sebakeng sa moralo
 - **`delete_menu`** — Tlosa lenane sebakeng sa hao
 
-## Mekgwa e Metle ka ho Fetisisa
+## Mekgwa e Metle ka ho Fetisisa {#best-practices}
 
 - **Sebedisa dileibole tsa tsamaiso tse hlakileng** — boloka dileibole di le kgutshwane ebile di hlalosa bakeng sa basebedisi
 - **Tsamaisana le dibaka tsa moralo** — abela manane sebakeng se nepahetseng sa moralo bakeng sa pontsho e loketseng
@@ -103,14 +103,14 @@ Ha o sebedisa Theme Builder, bokhoni ba Etsa Lenane bo:
 - **Lekola karabelo** — netefatsa hore manane a bontshwa ka nepo disebedisweng tsa selefouno
 - **Etsa dileibole tsa lehae** — sebedisa dileibole tse fapaneng tsa tsamaiso bakeng sa mefuta e fapaneng ya dipuo
 
-## Meedi
+## Meedi {#limitations}
 
 - Dileibole tsa tsamaiso ke tsa pontsho feela; `name` ya kahare e ntse e sebediswa bakeng sa boitsebahatso ba WordPress
 - Tshehetso ya moralo ya fapana; ha se meralo yohle e tshehetsang dibaka tsohle tsa manane
 - Dintho tsa lenane di tlameha ho eketswa ka thoko ka mora hore lenane le etswe
 - Ho fetola leibole ya tsamaiso ho hloka ho ntjhafatsa lenane
 
-## Bokgoni bo Amanang
+## Bokgoni bo Amanang {#related-abilities-1}
 
 - [Hlahisa Logo SVG](./generate-logo-svg.md) — etsa dilogo bakeng sa hlooho ya sebaka sa hao
 - [Netefatsa Phapang ya Palette](./validate-palette-contrast.md) — netefatsa meralo ya mebala e fihlellehang

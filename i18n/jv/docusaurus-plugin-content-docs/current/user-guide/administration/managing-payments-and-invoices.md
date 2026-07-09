@@ -3,9 +3,9 @@ title: Ngatur Pembayaran lan Faktur
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ngelola Pembayaran lan Faktur
+# Ngelola Pembayaran lan Faktur {#managing-payments-and-invoices}
 
-## Pengaturan Pembayaran
+## Pengaturan Pembayaran {#payment-settings}
 
 Saben sampeyan arep mulai nampa pembayaran, sampeyan kudu ngatur pengaturan sing ana gandheng karo pembayaran. Tindakake **Ultimate Multisite → Settings** lan klik tab **Payment**.
 
@@ -15,7 +15,7 @@ Iki tampilan lengkap saka halaman pengaturan pembayaran:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Opsi Pembayaran Umum
+### Opsi Pembayaran Umum {#general-payment-options}
 
 Ing pengaturan umum sampeyan bisa ngatur:
 
@@ -24,7 +24,7 @@ Ing pengaturan umum sampeyan bisa ngatur:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Payment Gateways
+### Payment Gateways {#payment-gateways}
 
 Ultimate Multisite ndukung pirang-pirang payment gateway. Sampeyan bisa ngaktifake lan ngatur saben salah siji saka tab Pengaturan Pembayaran.
 
@@ -40,11 +40,11 @@ Sabowah gateway duwe bagian konfigurasi dhewe kanggo mlebu API keys lan pengatur
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Sampeyan bisa ngaktifake **Sandbox Mode** kanggo nyoba integrasi pembayaran sampeyan sadurunge diwenehake (live). Nalika sandbox mode aktif, ora bakal ana dhuwit nyata sing ditagih.
 
-## Melihat Pembayaran
+## Melihat Pembayaran {#viewing-payments}
 
 Tindakake menyang halaman **Payments** ing bawah Ultimate Multisite kanggo ndeleng kabeh transaksi ing jaringan sampeyan.
 
@@ -54,7 +54,7 @@ Sampeyan bisa filter pembayaran miturut status (selesai, pending, gagal, dibalik
 
 Klik pada pembayaran untuk melihat detail lengkapnya termasuk barang yang dibeli, keanggotaan terkait, informasi pelanggan, dan data payment gateway.
 
-## Invoice
+## Invoice {#invoices}
 
 Ultimate Multisite bisa otomatis bikin invoice buat pembayaran. Kamu bisa sesuaikan template invoice dan format penomoran dari pengaturan Payment.
 

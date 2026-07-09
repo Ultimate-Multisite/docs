@@ -4,11 +4,11 @@ title: 抱歉，我没有收到要翻译的具体内容。请提供该 Markdown/
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# 过滤器: wu_apc_process_page_content
+# 过滤器: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 允许开发者修改最终内容
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|------|
@@ -17,14 +17,14 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | 包含占位符的数组。 |
 | $placeholder_count | `int` | 找到的占位符数量。 |
 
-### 版本
+### 版本 {#since}
 
 - 1.4.0
 
-### 源码
+### 源码 {#source}
 
 在 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) 的第 46 行定义
 
-## 返回值
+## 返回值 {#returns}
 
 修改后的内容。

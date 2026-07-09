@@ -4,11 +4,11 @@ title: Çalakî - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Çalakî: set_auth_cookie
+# Çalakî: set_auth_cookie {#action-setauthcookie}
 
 Rast berî ku cookie-ya piştrastkirinê were danîn tê xebitandin.
 
-## Parametre
+## Parametre {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Rast berî ku cookie-ya piştrastkirinê were danîn tê xebitandin.
 | $scheme | `string` | Şemaya piştrastkirinê. Nirx tê de 'auth' an 'secure_auth' hene. |
 | $token | `string` | Token-a danişîna bikarhênerê ku ji bo vê cookie-yê were bikaranîn. |
 
-### Ji
+### Ji {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Çavkanî
+### Çavkanî {#source}
 
 Di [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) de li rêza 124 hatiye danasîn.

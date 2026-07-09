@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
 
-# Multi-Network
+# Multi-Network {#multi-network}
 
 L’addon Ultimate Multisite: Multinetwork étend votre plateforme Ultimate Multisite avec de puissantes fonctionnalités multinetwork. Cet addon permet à vos clients d’acheter et de gérer des réseaux multisites WordPress entiers, et pas seulement des sites individuels.
 
-## Fonctionnalités clés
+## Fonctionnalités clés {#key-features}
 
 * **Provisionnement de réseau**: Créez et configurez automatiquement des réseaux multisites WordPress complets pour vos clients
 * **Modèles de réseau**: Permettez aux clients de parcourir, prévisualiser et choisir un modèle de réseau prédéfini avant l’inscription
@@ -21,31 +21,31 @@ L’addon Ultimate Multisite: Multinetwork étend votre plateforme Ultimate Mult
 * **Architecture évolutive**: Gérez efficacement plusieurs réseaux grâce à une allocation des ressources optimisée
 * **Intégration**: S’intègre de manière transparente aux systèmes d’abonnement et de facturation d’Ultimate Multisite
 
-## Cas d’utilisation
+## Cas d’utilisation {#use-cases}
 
 * **Hébergement en marque blanche**: Fournissez aux clients leurs propres réseaux multisites à leur marque
 * **Solutions pour agences**: Permettez aux agences de gérer plusieurs réseaux de clients depuis une seule plateforme
 * **Déploiements d’entreprise**: Prenez en charge les grandes organisations ayant des exigences multi-réseaux complexes
 * **Plateformes éducatives**: Créez des réseaux séparés pour différentes écoles ou différents départements
 
-## Exigences
+## Exigences {#requirements}
 
 * Ultimate Multisite 2.0.0 ou supérieur
 * Installation WordPress Multisite
 * PHP 7.4 ou supérieur
 * MySQL 5.6 ou supérieur
 
-## Installation
+## Installation {#installation}
 
 1. Téléversez les fichiers du plugin dans le répertoire `/wp-content/plugins/ultimate-multisite-multinetwork`
 2. Activez le plugin via l’écran « Plugins » dans WordPress
 3. Configurez les réglages multinetwork via Ultimate Multisite → Réglages
 
-## Modèles de réseau
+## Modèles de réseau {#network-templates}
 
 La version 1.3.0 ajoute un flux de découverte et de sélection de modèles pour les clients qui achètent de nouveaux réseaux. Utilisez des modèles de réseau lorsque vous souhaitez que chaque nouveau réseau client démarre à partir d’une structure, d’un design, d’une bibliothèque de contenu ou d’une configuration spécifique à un secteur déjà préparés.
 
-### Outil de prévisualisation des modèles
+### Outil de prévisualisation des modèles {#template-previewer}
 
 L’outil de prévisualisation des modèles de réseau permet aux clients de parcourir les modèles disponibles avant le checkout. Chaque modèle peut être ouvert dans un panneau de prévisualisation en direct, afin que les clients puissent comparer les mises en page et le contenu avant d’acheter un réseau.
 
@@ -57,7 +57,7 @@ Utilisez l’outil de prévisualisation pour aider les clients à :
 
 Gardez les noms et descriptions de modèles faciles à comprendre pour les clients. L’outil de prévisualisation est plus utile lorsque les clients peuvent comprendre le cas d’utilisation prévu, comme les réseaux d’agence, les réseaux scolaires, les réseaux de franchise ou les offres d’hébergement en marque blanche.
 
-### Sélecteur de modèle au checkout
+### Sélecteur de modèle au checkout {#template-picker-at-checkout}
 
 Le sélecteur de modèle peut être ajouté au flux de checkout d’inscription en tant que champ. Lorsqu’il est configuré, les clients sélectionnent le modèle de réseau qu’ils souhaitent pendant le checkout, et le modèle sélectionné est utilisé lorsque leur nouveau réseau est provisionné.
 
@@ -70,7 +70,7 @@ Pour utiliser le sélecteur dans un flux de checkout :
 
 Si un flux de checkout ne propose qu’un seul produit de réseau, le sélecteur peut tout de même être utile comme étape d’onboarding guidée. Pour les tunnels multi-plans, exposez uniquement les modèles compatibles avec le produit ou le plan sélectionné.
 
-## SSO par lien magique inter-réseaux
+## SSO par lien magique inter-réseaux {#cross-network-magic-link-sso}
 
 Le SSO par lien magique inter-réseaux permet aux clients de passer de leur zone de compte principale à leurs sous-réseaux sans avoir à se connecter manuellement à nouveau. Lorsqu’un client suit un lien d’accès inter-réseaux, Ultimate Multisite génère un lien magique à durée limitée et authentifie le client dans le réseau de destination.
 
@@ -85,16 +85,16 @@ Liste de vérification pour l’administrateur :
 
 Les liens magiques doivent être traités comme des liens de connexion. Ils sont conçus pour un accès client fluide et ne doivent pas être transférés ni réutilisés en dehors de la session prévue.
 
-## Questions fréquentes
+## Questions fréquentes {#frequently-asked-questions}
 
-### Qu’est-ce que multinetwork ?
+### Qu’est-ce que multinetwork ? {#what-is-multinetwork}
 
 Multinetwork est une fonctionnalité WordPress qui vous permet d’exécuter plusieurs réseaux multisites indépendants sur une seule installation WordPress.
 
-### En quoi est-ce différent du multisite classique ?
+### En quoi est-ce différent du multisite classique ? {#how-is-this-different-from-regular-multisite}
 
 Le multisite classique permet plusieurs sites au sein d’un seul réseau. Multinetwork permet plusieurs réseaux, chacun avec ses propres sites, tous au sein d’une seule installation WordPress.
 
-### Cela nécessite-t-il une configuration serveur spéciale ?
+### Cela nécessite-t-il une configuration serveur spéciale ? {#does-this-require-special-server-configuration}
 
 Oui, multinetwork nécessite une installation et une configuration serveur spécifiques. Veuillez consulter la documentation pour obtenir des instructions de configuration détaillées.

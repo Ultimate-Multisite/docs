@@ -3,13 +3,13 @@ title: የውህደት መመሪያ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# የማዋሃድ መመሪያ
+# የማዋሃድ መመሪያ {#integration-guide}
 
 ይህ መመሪያ ከUltimate Multisite ጋር የተለመዱ የማዋሃድ ንድፎችን ይሸፍናል፣ ወደ ውጫዊ አገልግሎቶች መገናኘትን፣ ብጁ የክፍያ መግቢያዎችን መገንባትን፣ እና webhooks መቆጣጠርን ጨምሮ።
 
 ለተለየ የተከራይ መሠረተ ልማት፣ ለሉዓላዊ ተከራይ መጀመሪያ ማዘጋጀት፣ የማዛወር ማረጋገጫ፣ SSO፣ እና የማፍረስ መመሪያ [የብዙ ተከራይነት ማዋሃድ](./multi-tenancy) ይመልከቱ።
 
-## CRM ማዋሃድ
+## CRM ማዋሃድ {#crm-integration}
 
 አዲስ ደንበኞች ሲመዘገቡ የደንበኛ ውሂብን ወደ የእርስዎ CRM ያመሳስሉ፦
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## የትንታኔ ማዋሃድ
+## የትንታኔ ማዋሃድ {#analytics-integration}
 
 በደንበኛ የሕይወት ዑደት ላይ ቁልፍ የንግድ ክስተቶችን ይከታተሉ፦
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## ቀጣይ እርምጃዎች
+## ቀጣይ እርምጃዎች {#next-steps}
 
 - [ብጁ የGateway ልማት](./custom-gateway) — የራስዎን የክፍያ መግቢያ ይገንቡ
 - [Webhook አያያዝ](./webhooks) — ብጁ webhook endpoints ይፍጠሩ

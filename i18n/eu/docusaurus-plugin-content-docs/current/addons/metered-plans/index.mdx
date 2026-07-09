@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Neurtutako Planak
+# Neurtutako Planak {#metered-plans}
 
 Ultimate Multisite: Neurtutako Planak addonak zure bezeroei nola kobratzen diezun eraldatzen du, neurtutako fakturazio-gaitasun malguak sartuz. Erabiltzaileak gainditzean blokeatzen dituzten muga zurrun finkoen ordez, gaitu gehiegizko erabileragatiko karguak, bezeroei erabilera gehigarria automatikoki fakturatzeko.
 
-## Ezaugarri nagusiak
+## Ezaugarri nagusiak {#key-features}
 
 * **Neurtutako fakturazioa**: Kobratzea bezeroei benetako erabileraren arabera, maila finkoen ordez
 * **Gehiegizko erabileraren kudeaketa**: Automatikoki fakturatu planaren mugak gainditzen dituen erabilera
@@ -21,14 +21,14 @@ Ultimate Multisite: Neurtutako Planak addonak zure bezeroei nola kobratzen diezu
 * **Fakturazio automatikoa**: Sortu fakturak automatikoki erabilera-atalaseak gainditzen direnean
 * **Erabilera-txostenak**: Erabileraren analitika eta txosten zehatzak bezeroentzat eta administratzaileentzat
 
-## Ezin hobea honetarako
+## Ezin hobea honetarako {#perfect-for}
 
 * **Hosting hornitzaileak**: Eskaini bezeroen beharrekin hazten diren plan eskalagarriak
 * **SaaS plataformak**: Fakturatu benetako baliabide-kontsumoaren arabera
 * **Agentzia-sareak**: Prezio-eredu malguak bezeroen proiektuetarako
 * **Reseller Hosting**: Gaitu bazkideek erabileran oinarritutako prezioak eskaintzea
 
-## Nola funtzionatzen duen
+## Nola funtzionatzen duen {#how-it-works}
 
 1. Konfiguratu neurtutako baliabideak (disko-espazioa, banda-zabalera, gune kopurua, etab.)
 2. Ezarri oinarrizko planaren mugak eta gehiegizko erabileraren tarifak
@@ -37,13 +37,13 @@ Ultimate Multisite: Neurtutako Planak addonak zure bezeroei nola kobratzen diezu
 5. Fakturak automatikoki sortzen dira fakturazio-zikloaren arabera
 6. Bezeroek beren erabilera eta datozen karguak denbora errealean ikus ditzakete
 
-## AI token fakturazioa
+## AI token fakturazioa {#ai-token-billing}
 
 1.1.0 bertsioak AI token fakturazioa gehitzen du WordPress AI Client SDK bidez AI ezaugarriak eskaintzen dituzten sareentzat. Neurtutako Planak addonak amaitutako AI sorkuntza-eskaerak entzuten ditu, uneko azpigunerako sarrerako eta irteerako token kopuruak erregistratzen ditu, eta token horiek bezeroaren uneko fakturazio-aldirako fakturagarri den AI gastu bihurtzen ditu.
 
 Erabili AI token fakturazioa bezeroen guneetan AI tresnak eskaini nahi dituzunean, eredu-kostu aurreikusezinak zure gain hartu gabe. Eskaera bakoitza azpiguneari, bezeroari, kidetzari, hornitzaileari eta ereduari egozten zaio, administratzaileek erabilera auditatu ahal izan dezaten eta bezeroek beren AI kontsumoak beren kontuan nola eragiten duen ikus dezaten.
 
-### Konfiguratu token bakoitzeko tarifak
+### Konfiguratu token bakoitzeko tarifak {#configure-per-token-rates}
 
 AI tarifak eredu bakoitzeko konfiguratzen dira, sarrerako eta irteerako tarifa bereizi gisa. Tarifak milioi bat tokeneko kalkulatzen dira, AI hornitzaileen ohiko prezio-orrietara egokituz.
 
@@ -55,7 +55,7 @@ AI tarifak eredu bakoitzeko konfiguratzen dira, sarrerako eta irteerako tarifa b
 
 Eredu ID zehatz bat konfiguratuta ez dagoenean, Neurtutako Planak addonak eredu-aurrizkiaren arabera pareka dezake. Adibidez, `claude-sonnet-4`-rako konfiguratutako tarifa bat aurrizki horrekin hasten diren denbora-zigiludun eredu ID-ei aplika dakieke. Garatzaileek azken tarifa-taula ere doitu dezakete [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) iragazkiarekin.
 
-### Onartutako AI konektoreak
+### Onartutako AI konektoreak {#supported-ai-connectors}
 
 AI token fakturazioak WordPress AI Client SDK sorkuntza-gertaerak igortzen dituzten eta erantzunaren metadatuetan token-erabilera sartzen duten konektoreekin funtzionatzen du. Honek hemen dokumentatutako Ultimate Multisite AI konektore-familia barne hartzen du:
 
@@ -65,13 +65,13 @@ AI token fakturazioak WordPress AI Client SDK sorkuntza-gertaerak igortzen dituz
 
 Konektore pertsonalizatuek parte har dezakete `wp_ai_client_before_generate_result` eta `wp_ai_client_after_generate_result` gertaera estandarrak jaurtiz, ereduaren, hornitzailearen eta token-erabileraren metadatuekin. Konektore-ezarpenak gune nagusitik azpiguneetara ezartzen dira, bezeroen guneek sareak onartutako hornitzaileak eta mugak erabil ditzaten.
 
-### Bezeroaren Account erabilera
+### Bezeroaren Account erabilera {#customer-account-usage}
 
 Bezeroek AI erabilera beren beste baliabide neurtuekin batera ikusten dute beren kontu-eremuan. AI gastuaren errenkadak uneko fakturazio-aldiaren guztizkoa erakusten du, erregistratutako prompt eta completion tokenetatik, konfiguratutako eredu-tarifetatik eta planeko edozein barne hartutako hobaritatik eratorria.
 
 Bezero batek ordainketa-metodo bat fitxategian badu, barne hartutako hobaria gainditzen duen erabilera fakturagarri den gehiegizko erabileratzat hartzen da. Plana mozketa zorrotzerako konfiguratuta badago eta bezeroak ez badu ordainketa-metodorik erabilgarri, AI eskaerak blokeatu daitezke hobaria iritsitakoan, eta bezeroari ordainketa-xehetasunak gehitzeko eskatzen zaio jarraitu aurretik.
 
-## Onartutako baliabideak
+## Onartutako baliabideak {#supported-resources}
 
 * Disko-biltegiratzea
 * Banda-zabalera/Datu-transferentzia
@@ -80,13 +80,13 @@ Bezero batek ordainketa-metodo bat fitxategian badu, barne hartutako hobaria gai
 * AI token erabilera eta AI gastua
 * Baliabide mota pertsonalizatuak
 
-## Eskakizunak
+## Eskakizunak {#requirements}
 
 * Multisite Ultimate 2.0.0 edo berriagoa
 * WordPress Multisite instalazioa
 * PHP 7.4 edo berriagoa
 
-## Instalazioa
+## Instalazioa {#installation}
 
 1. Igo plugin fitxategiak `/wp-content/plugins/ultimate-multisite-metered-plans`-era
 2. Aktibatu plugin WordPress-eko 'Plugins' pantailaren bidez
@@ -94,24 +94,24 @@ Bezero batek ordainketa-metodo bat fitxategian badu, barne hartutako hobaria gai
 4. Konfiguratu zure neurtutako baliabideak eta prezioak
 5. Gaitu neurtutako fakturazioa produktuetarako produktu-editorean
 
-## Maiz egiten diren galderak
+## Maiz egiten diren galderak {#frequently-asked-questions}
 
-## Zer gertatzen da bezero batek bere muga gainditzen duenean?
+## Zer gertatzen da bezero batek bere muga gainditzen duenean? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Sarbidea blokeatu beharrean, sistemak gaindikinaren jarraipena egiten du eta hurrengo fakturan gehitzen du, zuk konfiguratutako tarifen arabera.
 
-## Ezar ditzaket gaindikin-tasa desberdinak produktu desberdinetarako?
+## Ezar ditzaket gaindikin-tasa desberdinak produktu desberdinetarako? {#can-i-set-different-overage-rates-for-different-products}
 
 Bai, produktu bakoitzak baliabide neurtu eta gaindikin-prezio bereziak izan ditzake.
 
-## Nola jakinarazten zaie bezeroei erabilerari buruz?
+## Nola jakinarazten zaie bezeroei erabilerari buruz? {#how-are-customers-notified-about-usage}
 
 Bezeroek beren uneko erabilera ikus dezakete dashboard-ean, eta aukerako jakinarazpenak jaso ditzakete mugetara hurbiltzean edo horiek gainditzean.
 
-## Nola prezatzen da AI token-en erabilera?
+## Nola prezatzen da AI token-en erabilera? {#how-is-ai-token-usage-priced}
 
 AI token-en erabilera modeloaren konfiguratutako sarrera- eta irteera-tasen arabera prezatzen da, milioi 1 token bakoitzeko. Neurtutako Planek eskaera bakoitzaren prompt eta completion token kopuruak tasa horiekin biderkatzen dituzte, emaitza bezeroaren uneko fakturazio-aldiko AI gastuari gehitzen diote, eta planaren hobaria edo gaindikin-arauak aplikatzen dituzte.
 
-## Oraindik erabil ditzaket muga zorrotzak?
+## Oraindik erabil ditzaket muga zorrotzak? {#can-i-still-use-hard-limits}
 
 Bai, fakturazio neurtua aukerakoa da produktu bakoitzeko. Muga zorrotzeko produktu tradizionalak produktu neurtuekin nahas ditzakezu.

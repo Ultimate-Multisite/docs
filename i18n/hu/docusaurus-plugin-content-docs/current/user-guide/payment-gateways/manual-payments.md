@@ -3,13 +3,13 @@ title: Manuális fizetések beállítása
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Kézi fizetések beállítása (v2)
+# Kézi fizetések beállítása (v2) {#setting-up-manual-payments-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
 A kézi fizetések lehetőséget adnak arra, hogy más fizetési módokat kínálj, ha a **Stripe** vagy a **PayPal** nem érhető el a felhasználóid számára. Ez lehet átutalás vagy banki átutalás, illetve bármely más, a felhasználóid számára helyben elérhető fizetési mód.
 
-## A kézi fizetések engedélyezése
+## A kézi fizetések engedélyezése {#how-to-enable-manual-payments}
 
 A kézi fizetés beállítása nagyon egyszerű. Csak engedélyezned kell a fizetési átjárók alatt, és részletes utasításokat kell megadnod arról, hogyan küldje el a felhasználó a fizetést.
 
@@ -31,7 +31,7 @@ Emellett a **Köszönjük** oldaladon is kapnak egy üzenetet a fizetési utasí
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Kézi fizetések megerősítése
+## Kézi fizetések megerősítése {#confirming-manual-payments}
 
 Egy kézi fizetés megerősítéséhez menj a bal oldali sávban található **Fizetések** menübe. Ott láthatod a hálózatod összes fizetését és azok részleteit, beleértve az **állapotukat** is. Egy kézi fizetés mindig **Függőben** állapotú lesz, amíg manuálisan meg nem változtatod.
 

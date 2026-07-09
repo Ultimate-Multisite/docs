@@ -3,19 +3,19 @@ title: Stripe-ты орнату
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway-ті Құрылғыны Орнату (v2)
+# Stripe Gateway-ті Құрылғыны Орнату (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**МАҢЫЗДЫ ЕЛЕМ: Бұл мақала Ultimate Multisite 2.x нұсқасына қатысты.**_
 
 Сіз төлем параметрлері бетінде төрт түрлі төлем әдісін белсендіруге болады: Stripe, Stripe Checkout, PayPal және Қолдану арқылы (Manual). Бұл мақалада біз **Stripe**-пен интеграциялауды қалай жасау керектігін көреміз.
 
-## Stripe-ті Қолжетімді Төлем Құрылғысы Режимде Алу
+## Stripe-ті Қолжетімді Төлем Құрылғысы Режимде Алу {#enabling-stripe}
 
 Stripe-ті сіздің желіңізде қолжетімді төлем құрылғысы ретінде белсендіру үшін **Ultimate Multisite > Settings > Payments** бетіне өтіп, Active Payment Gateways бөліміндегі **Stripe** немесе **Stripe Checkout** сөзінің жанындағы туылдырғышты (toggle) белсендіріңіз.
 
 ![Active payment gateways-те Stripe-ті белсендіру](/img/config/settings-payment-gateways.png)
 
-### Stripe және Stripe Checkout:
+### Stripe және Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Бұл әдіс төлем кезінде кредит карта нөмірін енгізуге арналған орын көрсетеді.
 
@@ -25,7 +25,7 @@ Stripe-ті сіздің желіңізде қолжетімді төлем құ
 
 ![Checkout кезіндегі Stripe Checkout ауысу парағы](/img/config/settings-payment-gateways.png)
 
-### Stripe API кілттеріңізді алу
+### Stripe API кілттеріңізді алу {#setting-up-stripe-webhook}
 
 Stripe төлем құрылғысы ретінде белсендірілгеннен кейін, сізге **Stripe Publishable Key** және **Stripe Secret Key** өрістерін толтыру қажет болады. Бұл ақпаратты Stripe есебіңізге кіріп кірген кезде алуға болады.
 

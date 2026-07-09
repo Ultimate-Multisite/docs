@@ -3,25 +3,25 @@ title: Muundo wa Ongezeko
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Muundo wa Addon
+# Muundo wa Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 - WordPress 5.3 au zaidi
 - PHP 7.4 au zaidi
 - Plugin ya Ultimate Multisite (imefunguliwa)
 
-## Usakinishaji
+## Usakinishaji {#installation}
 
 1. Pakia faili za addon kwenye saraka yako ya `/wp-content/plugins/`
 2. Fungulia plugin kupitia menyu ya 'Plugins' ndani ya WordPress
 3. Sanifisha mipangilio ya addon kwenye network admin
 
-## Uendelezaji
+## Uendelezaji {#development}
 
-### Kuandaa (Setup)
+### Kuandaa (Setup) {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Muundo wa Mradi (Project Structure)
+### Muundo wa Mradi (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kanuni za kuboresha msimbo
 ```
 
-### Vipimo (Testing)
+### Vipimo (Testing) {#testing}
 
 Addon inajumuisha mfumo kamili wa kufanya vipimo:
 
@@ -75,44 +75,44 @@ Addon inajumuisha mfumo kamili wa kufanya vipimo:
 - **Test Coverage**: Imewekwa kufuatilia kiwango cha kufunikwa kwa msimbo
 - **Multisite Testing**: Vipimo vinatendeka katika mazingira ya multisite
 
-### Viwango vya Msimbo (Code Standards)
+### Viwango vya Msimbo (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: Vinatunzwa kupitia PHPCS
 - **PHP 7.4+ Compatibility**: Vipengele vya kisasa vya PHP vinasaudiwa
 - **Static Analysis**: Ujumuishaji wa PHPStan kwa ajili ya kuangalia aina za data (type checking)
 - **Code Modernization**: Kanuni za Rector kwa ajili ya kuboresha PHP
 
-### Mfumo wa Kuunda (Build System)
+### Mfumo wa Kuunda (Build System) {#build-system}
 
 - **Asset Processing**: Kupunguza ukubwa (Minification) kwa faili za CSS/JS
 - **Translation**: Kuunda faili za POT
 - **Packaging**: Kuunda hifadhi (Archive) kwa ajili ya usambazaji
 - **Development Mode**: Rasilimali zisizopunguzwa kwa ajili ya kutatua matatizo (debugging)
 
-## Mipangilio (Configuration)
+## Mipangilio (Configuration) {#configuration}
 
 Addon inasaidia chaguo mbalimbali za mipangilio ambazo zinaweza kufikiwa kupitia interface ya network admin.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Inatokea baada ya kuanzishwa kwa addon
 - `ultimate-multisite-addon-template_loaded` - Inatokea baada ya kuingizwa kwa faili zote za addon
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Kubadilisha mipangilio ya addon
 - `ultimate-multisite-addon-template_enabled` - Kubatilisha hali ya kuwepo/kutowepo kwa addon
 
-## Leseni (License)
+## Leseni (License) {#license}
 
 Addon hii inasimamiwa chini ya GPL v3 au baadaye.
 
-## Msaada (Support)
+## Msaada (Support) {#support}
 
 Kwa msaada na waraka, tembelea [MultisiteUltimate.com](https://multisiteultimate.com)
-## Historia ya Mabadiliko (Changelog)
+## Historia ya Mabadiliko (Changelog) {#changelog}
 
 - Version 1.0.1 (2025-09-28): kubadilisha kiambatanisho (prefix) kuwa ultimate-multisite; kuboresha eneo la maandishi (text domain); kuongeza namba ya toleo.
 

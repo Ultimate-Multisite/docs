@@ -3,11 +3,11 @@ title: Qabiliyyət Görünürlüyü
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# قابلیت دیدن توانایی‌ها (Ability Visibility)
+# قابلیت دیدن توانایی‌ها (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0، کنترل‌های **قابلیت دیدن توانایی‌ها (Ability Visibility)** را معرفی می‌کند که تعیین می‌کنند کدام سطوح (surfaces) هر توانایی را نمایش دهند. این کار به مدیران اجازه می‌دهد تنظیم کنند که قابلیت‌های کدام ایجنت از طریق REST APIها، سرورهای MCP، ادغام‌های WooCommerce و سایر رابط‌ها در دسترس باشند.
 
-## قابلیت دیدن توانایی چیست؟
+## قابلیت دیدن توانایی چیست؟ {#what-is-ability-visibility}
 
 قابلیت دیدن توانایی (Ability Visibility) یک سیستم مجوزدهی است که موارد زیر را کنترل می‌کند:
 
@@ -18,9 +18,9 @@ Superdav AI Agent v1.12.0، کنترل‌های **قابلیت دیدن توان
 
 هر توانایی یک سطح دیدن دارد که تعیین می‌کند در سطوح مختلف چه زمانی قابل دسترس است.
 
-## سطوح دیدن
+## سطوح دیدن {#visibility-levels}
 
-### عمومی (Public)
+### عمومی (Public) {#public}
 
 **توانایی‌های عمومی** همه جا در دسترس هستند:
 
@@ -32,7 +32,7 @@ Superdav AI Agent v1.12.0، کنترل‌های **قابلیت دیدن توان
 
 مثال: `scaffold-block-theme`، `activate-theme`، `send-email`
 
-### داخلی (Internal)
+### داخلی (Internal) {#internal}
 
 **توانایی‌های داخلی** فقط در نصب وردپرس شما قابل دسترس هستند:
 
@@ -43,7 +43,7 @@ Superdav AI Agent v1.12.0، کنترل‌های **قابلیت دیدن توان
 
 مثال: `manage-settings`، `view-analytics`، `export-data`
 
-### شریک (Partner)
+### شریک (Partner) {#partner}
 
 **توانایی‌های شریک** فقط برای شرکای لیست سفید (whitelisted partners) در دسترس هستند:
 
@@ -54,7 +54,7 @@ Superdav AI Agent v1.12.0، کنترل‌های **قابلیت دیدن توان
 
 مثال: `bulk-import-users`، `modify-billing`، `access-analytics`
 
-### غیرفعال (Disabled)
+### غیرفعال (Disabled) {#disabled}
 
 **توانایی‌های غیرفعال** هیچ کجا در دسترس نیستند:
 
@@ -63,15 +63,15 @@ Superdav AI Agent v1.12.0، کنترل‌های **قابلیت دیدن توان
 - در پنل‌های مدیریت قابل دسترسی نیستند
 - برای قابلیت‌های منسوخ شده یا آزمایشی مفید است
 
-## Ability Görünürlüğünü Yönetme
+## Ability Görünürlüğünü Yönetme {#managing-ability-visibility}
 
-### Yetenek Görünürlük Ayarlarına Erişim
+### Yetenek Görünürlük Ayarlarına Erişim {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** yolunu izleyin.
 2. **Abilities** (Yetenekler) sekmesine tıklayın.
 3. Burada kurulu tüm yeteneklerin görünürlük seviyeleriyle birlikte bir listesini göreceksiniz.
 
-### Yetenek Detaylarını Görüntüleme
+### Yetenek Detaylarını Görüntüleme {#viewing-ability-details}
 
 Bir yeteneğe tıklayarak şunları görebilirsiniz:
 
@@ -82,7 +82,7 @@ Bir yeteneğe tıklayarak şunları görebilirsiniz:
 - **Last updated** (Son güncelleme): Görünürlüğün en son ne zaman değiştirildiği.
 - **Status** (Durum): Recognized (Tanınmış) veya Unclassified (Sınıflandırılmamış).
 
-### Görünürlük Seviyelerini Değiştirme
+### Görünürlük Seviyelerini Değiştirme {#changing-visibility-levels}
 
 Bir yeteneğin görünürlüğünü değiştirmek için:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Toplu İşlemler
+### Toplu İşlemler {#bulk-operations}
 
 Birden fazla yeteneğin görünürlüğünü değiştirmek için:
 
@@ -108,11 +108,11 @@ Birden fazla yeteneğin görünürlüğünü değiştirmek için:
 2. Toplu işlem açılır menüsünden yeni bir görünürlük seviyesi seçin.
 3. **Apply** (Uygula) butonuna tıklayın.
 
-## Ortak İzin Listesi (Partner Allow-List)
+## Ortak İzin Listesi (Partner Allow-List) {#partner-allow-list}
 
 **Partner allow-list**, harici ortakların Partner düzeyindeki yeteneklere erişip erişemeyeceğini kontrol eder.
 
-### Ortak Ekleme
+### Ortak Ekleme {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** → **Partners** yolunu izleyin.
 2. **Add Partner** (Ortak Ekle) butonuna tıklayın.
@@ -120,7 +120,7 @@ Birden fazla yeteneğin görünürlüğünü değiştirmek için:
 4. İsteğe bağlı olarak bir ortak adı ve açıklamasını ekleyebilirsiniz.
 5. **Save** (Kaydet) butonuna tıklayın.
 
-### Yetenekleri Ortaklara Atama
+### Yetenekleri Ortaklara Atama {#assigning-abilities-to-partners}
 
 Bir ortak ekledikten sonra:
 
@@ -130,7 +130,7 @@ Bir ortak ekledikten sonra:
 ۴. "Partner allow-list" (شریک izin listesi) bölümünde, erişimi olması gereken partnerler için kutucukları işaretleyin
 ۵. **Save** (Kaydet) butonuna tıklayın
 
-### Partner Erişimini Kaldırma
+### Partner Erişimini Kaldırma {#revoking-partner-access}
 
 Bir partnerin erişimini kaldırmak için:
 
@@ -140,11 +140,11 @@ Bir partnerin erişimini kaldırmak için:
 
 Partner, o yeteneğe anında erişimi kaybedecektir.
 
-## Sınıflandırılmamış Yetenekler
+## Sınıflandırılmamış Yetenekler {#unclassified-abilities}
 
 Superdav AI Agent'in tanımadığı üçüncü taraf bir yetenek kurduğunuzda, bu yetenek **Unclassified** (Sınıflandırılmamış) olarak işaretlenir.
 
-### Sınıflandırılmamış Yetenekler İçin Yönetici Bildirimi
+### Sınıflandırılmamış Yetenekler İçin Yönetici Bildirimi {#admin-notice-for-unclassified-abilities}
 
 Bir yönetici bildirimi göreceksiniz:
 
@@ -161,7 +161,7 @@ Lütfen inceleyin ve sınıflandırın.
 [Review Abilities] [Dismiss]
 ```
 
-### Sınıflandırılmamış Yetenekleri İnceleme
+### Sınıflandırılmamış Yetenekleri İnceleme {#reviewing-unclassified-abilities}
 
 ۱. Bildirimdeki **Review Abilities** (Yetenekleri İncele) seçeneğine tıklayın
 ۲. Her sınıflandırılmamış yetenek için şunları göreceksiniz:
@@ -178,7 +178,7 @@ Lütfen inceleyin ve sınıflandırın.
 
 ۴. Kararınızı kaydetmek için **Classify** (Sınıflandır) butonuna tıklayın
 
-### Sınıflandırılmamış Yetenekleri Neden Sınıflandırıyoruz?
+### Sınıflandırılmamış Yetenekleri Neden Sınıflandırıyoruz? {#why-classify-unclassified-abilities}
 
 Yetenekleri sınıflandırmak:
 
@@ -187,9 +187,9 @@ Yetenekleri sınıflandırmak:
 - **Özellikleri etkinleştirir**: Sınıflandırıldıktan sonra yetenek kullanılabilir hale gelir
 - **Kararları belgelemek**: Seçimleriniz denetim amaçlı kaydedilir
 
-## مختلف سطوح (Surfaces) üzerinde görünürlük
+## مختلف سطوح (Surfaces) üzerinde görünürlük {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **عمومي قابلیت‌ها** از طریق REST endpoints در دسترس هستند:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **درون‌ساز و شرکتی قابلیت‌ها** از طریق REST API در دسترس نیستند.
 
-### سرورهای MCP
+### سرورهای MCP {#mcp-servers}
 
 **عمومی قابلیت‌ها** از طریق MCP در دسترس هستند:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **قابلیت‌های شرکتی** فقط با اعتبارنامه‌های شرکتی در دسترس هستند.
 
-### یکپارچه‌سازی ووکامرس (WooCommerce Integration)
+### یکپارچه‌سازی ووکامرس (WooCommerce Integration) {#woocommerce-integration}
 
 **قابلیت‌های عمومی** مربوط به ووکامرس در دسترس هستند:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **قابلیت‌های داخلی** به ووکامرس نمایش داده نمی‌شوند.
 
-### رابط چت (Chat Interface)
+### رابط چت (Chat Interface) {#chat-interface}
 
 **تمام قابلیت‌ها** (عمومی، داخلی، شرکتی) بسته به مجوزهای کاربر در چت در دسترس هستند:
 
@@ -235,34 +235,34 @@ Available abilities:
 - کاربران عادی فقط قابلیت‌های عمومی را می‌بینند
 - شرکا قابلیت‌های عمومی + شرکتی (اگر لیست سفید شده باشند) را می‌بینند
 
-## بهترین شیوه‌های امنیتی (Security Best Practices)
+## بهترین شیوه‌های امنیتی (Security Best Practices) {#security-best-practices}
 
-### اصل حداقل امتیاز (Principle of Least Privilege)
+### اصل حداقل امتیاز (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - قابلیت‌ها را روی محدودترین سطح دید تنظیم کنید که همچنان اجازه استفاده از آن‌ها را بدهد.
 - برای عملیات حساس از دید شرکتی استفاده کنید.
 - قابلیت‌هایی را غیرفعال کنید که از آن‌ها استفاده نمی‌کنید.
 
-### ممیزی‌های منظم (Regular Audits)
+### ممیزی‌های منظم (Regular Audits) {#regular-audits}
 
 - هر ماه دید قابلیت‌ها را بررسی کنید.
 - به دنبال قابلیت‌های بدون دسته‌بندی باشید.
 - دسترسی برای شرکای غیرفعال شده را حذف کنید.
 
-### لاگ‌برداری و نظارت (Logging and Monitoring)
+### لاگ‌برداری و نظارت (Logging and Monitoring) {#logging-and-monitoring}
 
 - پایش کنید کدام قابلیت‌ها بیشتر استفاده می‌شوند.
 - الگوهای دسترسی شرکا را ردیابی کنید.
 - در مورد استفاده غیرمعمول از قابلیت‌ها هشدار دهید.
 
-### قابلیت‌های شخص ثالث (Third-Party Abilities)
+### قابلیت‌های شخص ثالث (Third-Party Abilities) {#third-party-abilities}
 
 - قبل از فعال کردن، قابلیت‌های شخص ثالث را بررسی کنید.
 - آن‌ها را به صراحت طبقه‌بندی کنید.
 - با دید داخلی یا شرکتی شروع کنید.
 - فقط پس از تأیید و بررسی، به عمومی ارتقا دهید.
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
 **Bir yetenek listede görünmüyor**
 - Yeteneğin kurulu ve aktif olup olmadığını kontrol edin.
@@ -285,7 +285,7 @@ Available abilities:
 - Sınıflandırmanızın kaydedildiğinden emin olun.
 - Yeteneği sağlayan eklentinin güncel olduğundan emin olun.
 
-## Eski Moddan Taşıma (Migration from Legacy Mode)
+## Eski Moddan Taşıma (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Eğer Superdav AI Agent'in eski bir sürümünden yükseltme yapıyorsanız:
 
@@ -295,7 +295,7 @@ Eğer Superdav AI Agent'in eski bir sürümünden yükseltme yapıyorsanız:
 
 Yerel Yetenek API entegrasyonuna geçişle ilgili daha fazla ayrıntı için **Üçüncü Taraf Modu Taşımasına (Third-Party Mode Migration)** bakın.
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 Yetenek görünürlüğünü yapılandırdıktan sonra:
 

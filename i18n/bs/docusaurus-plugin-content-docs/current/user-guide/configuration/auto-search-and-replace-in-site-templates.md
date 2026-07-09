@@ -3,7 +3,7 @@ title: Automatsko pretraživanje i zamjena u predlošcima web-lokacija
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatsko pretraživanje i zamjena u predlošcima stranice (v2)
+# Automatsko pretraživanje i zamjena u predlošcima stranice (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ovaj vodič zahtijeva WP UItimo verziju 2.x.**_
 
@@ -17,7 +17,7 @@ Vaš kupac će zatim moći popuniti to polje tokom registracije.
 
 Ultimate Multisite će zatim automatski zamijeniti rezervisana mjesta podacima koje je kupac naveo.
 
-## **Rješavanje problema "predložak pun rezervisanih mjesta"**
+## **Rješavanje problema "predložak pun rezervisanih mjesta"** {#solving-the-template-full-of-placeholders-problem}
 
 Sve je to odlično, ali nailazimo na ružan problem: sada su naši predlošci stranica - koje naši kupci mogu posjetiti - puni ružnih rezervisanih mjesta koja ne govore mnogo.
 

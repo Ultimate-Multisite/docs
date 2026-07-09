@@ -3,11 +3,11 @@ title: Feedback sa Kliyente ug Pag-report sa Isyu
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback ug Pag-report sa Problema sa Customer
+# Feedback ug Pag-report sa Problema sa Customer {#customer-feedback--issue-reporting}
 
 Ang Gratis AI Agent v1.5.0 naghatag og built-in nga sistema para sa paghatag og feedback ug pag-report sa mga problema, diin ang mga end-user makapahimangno sa dili makatabang nga mga tubag ug direktang mag-report og mga problema gikan sa chat interface. Kini nga sistema naglakip sa consent management, usa ka automated reporting command, ug AI-assisted triage sa backend.
 
-## Thumbs-Down Button
+## Thumbs-Down Button {#thumbs-down-button}
 
 Ang matag mensahe nga ipadala sa AI assistant adunay **thumbs-down** (👎) button. Kung gi-click kini sa user, mahimo nila i-marka ang tubag isip dili makatabang o sayop.
 
@@ -15,7 +15,7 @@ Ang matag mensahe nga ipadala sa AI assistant adunay **thumbs-down** (👎) butt
 - Ang pag-click niini magbukas sa **Feedback Consent Modal**.
 - Ang feedback konektado sa conversation thread ug sa piho nga mensahe.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Kung gi-click sa user ang thumbs-down button, adunay modal sa consent nga mo-appear sa dili pa mahimong ipadala ang bisan unsang data. Ang modal:
 
@@ -26,13 +26,13 @@ Kung gi-click sa user ang thumbs-down button, adunay modal sa consent nga mo-app
 
 Walay feedback ang irekord hangtod nga aktibo gyud kumpirmar sa user.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Sa katapusan sa usa ka conversation, mahimong ipakita sa assistant ang usa ka **auto-prompt feedback banner** — usa ka message nga dili makaguba (non-intrusive) nga nagpangutana kung ang session nakatabang ba.
 
 Kini nga banner awtomatikong mo-appear base sa gitas-on sa conversation ug sa mga pamaagi (heuristics). Nag-link kini sa parehas nga feedback flow sama sa thumbs-down button. Mahimo kining mawala sa banner bisan wala maghatag og feedback.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Mahimong mag-trigger ang mga user sa feedback flow direkta pinaagi sa pag-type og `/report-issue` sa chat input. Kini nga command:
 
@@ -42,7 +42,7 @@ Nagtugot kini sa mga user nga magdugang og dugang detalye sa dili pa mosubmit.
 
 Ang `/report-issue` command anaa sa tanang chat modes (inline, floating widget, full-screen).
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 Ang gihatag nga feedback kay i-route sa usa ka AI triage layer nga:
 

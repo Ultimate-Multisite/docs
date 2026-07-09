@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent je autonomni WordPress AI asistent koji može planirati, izgraditi i upravljati kompletnim WordPress sajtovima samo na osnovu uputa prirodnim jezikom. On eksponira strukturirani set **sposobnosti** (abilities) — diskretne, testabilne akcije koje agent može aktivirati — pokrivajući sve, od upravljanja sadržajem do prilagođavanja dizajnerskog sistema. Verzija 1.9.0 dodaje sposobnosti kreiranja sadržaja, vizuelni pregled stranica putem snimaka zaslona na strani klijenta, pet ugrađenih profila agenta i feature flags za kontrolu pristupa i brendiranje.
 
-## Ključne značajke
+## Ključne značajke {#key-features}
 
 - **Sistem sposobnosti (Abilities system)** — modularan, proširiv katalog akcija koje agent može aktivirati na vašoj WordPress instalaciji.
 - **Upravljanje sadržajem (Content Management)** — kreiranje postova i stranica (uključujući dodjelu šablona stranica), masovno kreiranje više postova u jednom pozivu, postavljanje glavnih slika i izrada kontakt formulara.
@@ -28,21 +28,21 @@ Gratis AI Agent je autonomni WordPress AI asistent koji može planirati, izgradi
 - **Site Builder Orchestration v2** — planovi izgradnje sa sajta u više koraka sa otkrivanjem pluginova, praćenjem napretka i oporavkom od grešaka.
 - **WP-CLI benchmark komanda** — pokretanje paketa testiranja sposobnosti agenta sa komandne linije za CI i evaluaciju modela.
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - WordPress 6.0 ili noviji
 - PHP 8.1 ili noviji
 - WordPress Multisite (aktivirano na nivou mreže) ili instalacija sa jednim sajtom
 - Aktivan plugin konektor AI provajdera (Anthropic, OpenAI ili kompatibilan)
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Postavite plugin datoteke u `/wp-content/plugins/gratis-ai-agent`
 2. Aktivizujte plugin putem ekrana **Plugins** u WordPressu.
 3. Idite na **Gratis AI Agent → Settings** i povežite svoj AI provajder.
 4. (Opcionalno) Pregledajte **Abilities Registry** radi instalacije dodatnih paketa sposobnosti.
 
-## Brzo početak
+## Brzo početak {#quick-start}
 
 Nakon aktivacije i povezivanja sa AI provajderom, otvorite panel **Gratis AI Agent** u bočnom meniju WordPress administracije. Ukucajte uput prirodnim jezikom, a agent će planirati i izvršiti potrebne korake koristeći dostupne sposobnosti.
 
@@ -60,7 +60,7 @@ Injectuj paletu boja za tamni režim u temu i postavi primarnu boju na #1a1a2e.
 Izgradi restoran sajt sa online menijem, formularom za rezervaciju i stranicom za kontakt.
 ```
 
-## Pregled sposobnosti (Abilities Overview)
+## Pregled sposobnosti (Abilities Overview) {#abilities-overview}
 
 Sposobnosti su atomične akcije koje agent može izvršiti. Svaka sposobnost je registrovana PHP klasa koja eksponira shemu (parametri i tipove povrata) koju agent čita u radnom vremenu. Sposobnosti su grupisane po funkcionalnim oblastima:
 
@@ -79,7 +79,7 @@ Sposobnosti su atomične akcije koje agent može izvršiti. Svaka sposobnost je 
 
 Pogledajte [Abilities Reference](./abilities) za kompletnu dokumentaciju parametara i primjere upotrebe.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent dolazi sa familijom komandi `wp gratis-ai-agent` za pokretanje testiranja i upravljanje sposobnostima sa komandne linije. Pogledajte [WP-CLI Reference](./wp-cli) za kompletnu listu komandi.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
 Sve postavke se nalaze pod **Gratis AI Agent → Settings** u WordPress administraciji:
 
@@ -106,7 +106,7 @@ Sve postavke se nalaze pod **Gratis AI Agent → Settings** u WordPress administ
 | **Ability Timeout** | Maksimalno sekundi koliko jedna sposobnost može trajati (podrazumevano 30) |
 | **Debug Logging** | Loguje pozive sposobnosti i razmišljanje agenta u WordPress debug log |
 
-## Sigurnosna bloklista za upravljanje opcijama
+## Sigurnosna bloklista za upravljanje opcijama {#options-management-safety-blocklist}
 
 Sposobnost Upravljanja opcijama uključuje ugrađenu bloklistu koja sprečava agenta da čita ili piše osetljive WordPress opcije. Podrazumevana bloklista pokriva:
 
@@ -118,26 +118,26 @@ Sposobnost Upravljanja opcijama uključuje ugrađenu bloklistu koja sprečava ag
 
 Dodatne unose možete dodati putem filtera `gratis_ai_agent_options_blocklist`.
 
-## Hooks i Filteri
+## Hooks i Filteri {#hooks-and-filters}
 
-### Akcije (Actions)
+### Akcije (Actions) {#actions}
 
 - `gratis_ai_agent_ability_registered` — aktivira se nakon registracije sposobnosti, prima naziv klase sposobnosti
 - `gratis_ai_agent_plan_started` — aktivira se kada počinje izvršavanje plana izgradnje sajta
 - `gratis_ai_agent_plan_completed` — aktivira se kada plan uspješno završi
 - `gratis_ai_agent_plan_failed` — aktivira se kada plan naiđe na neopravljivu grešku
 
-### Filteri (Filters)
+### Filteri (Filters) {#filters}
 
 - `gratis_ai_agent_abilities` — mijenja listu registrovane sposobnosti prije nego što je agent učita
 - `gratis_ai_agent_options_blocklist` — proširuje ili smanjuje sigurnosnu bloklistu opcija
 - `gratis_ai_agent_benchmark_questions` — dodaje prilagođena pitanja za set testiranja
 - `gratis_ai_agent_plan_plugins` — mijenja listu otkrivenih pluginova tokom generisanja plana sajta
 
-## Podrška
+## Podrška {#support}
 
 Za podršku, posjetite [ultimatemultisite.com](https://ultimatemultisite.com) ili otvorite issue u repozitorijumu plugin-a.
 
-## Changelog
+## Changelog {#changelog}
 
 Pogledajte [Changelog](./changelog) za kompletnu historiju verzija.

@@ -3,11 +3,11 @@ title: Tshupiso ea Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tshupiso ya di-Hooks
+# Tshupiso ya di-Hooks {#hooks-reference}
 
 Ditokomane tse iketseditsweng bakeng sa **liketso tse 59** tsohle le **difeilthara tse 118** ho Ultimate Multisite.
 
-## Liketso
+## Liketso {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — E qala pele ho phetisetso ya netefatso.
 - [set_auth_cookie](./Actions/set_auth_cookie) — E qala hanghang pele cookie ya netefatso e behwa.
@@ -70,7 +70,7 @@ Ditokomane tse iketseditsweng bakeng sa **liketso tse 59** tsohle le **difeiltha
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — E qala ka mora hore ntho e bolokwe ka hara database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Dumella baetsi ba dikeketso ho kenya diketso tshebetsong ya ho notlolla.
 
-## Disefe
+## Disefe {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — E sefa bolelele ba nako ea ho felloa ke nako ha cookie ea netefatso.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — E sefa sekema sa ho lebisa hape sa netefatso.

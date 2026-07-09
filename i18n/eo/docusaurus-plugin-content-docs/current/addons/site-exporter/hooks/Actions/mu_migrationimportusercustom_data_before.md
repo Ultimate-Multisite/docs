@@ -4,20 +4,20 @@ title: Ago - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Ago: mu_migration/import/user/custom_data_before
+# Ago: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
 
 Ekfunkcias antaŭ eksportado de la propraj uzantdatenoj.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
 | $user_data | `array` | La tabelo de uzantdatenoj. |
 | $user | `\WP_User` | La uzantobjekto. |
 
-### Ekde
+### Ekde {#since}
 
 - 0.1.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L139) ĉe linio 139

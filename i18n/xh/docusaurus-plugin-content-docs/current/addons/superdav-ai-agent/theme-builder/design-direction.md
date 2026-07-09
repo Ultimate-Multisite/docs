@@ -3,17 +3,17 @@ title: Umkhombandlela woyilo
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Icala Loyilo
+# Icala Loyilo {#design-direction}
 
 Inyathelo le-**Design Direction** likuvumela ukuba uphonononge, uphucule, kwaye ugqibezele uyilo olubonakalayo lwe-theme yakho phambi kokuba Theme Builder ivelise i-theme epheleleyo.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Emva kokugqiba i-Discovery Interview, Theme Builder ibonisa icala loyilo lwakho kunye **nokuboniswa kwangaphambili kwe-desktop ne-mobile**. Oku kukuvumela ukuba ubone kanye indlela uyilo lwakho oluya kubonakala ngayo kwizixhobo ezahlukeneyo phambi kokuzibophelela kwi-theme.
 
-## Amacandelo eCala Loyilo
+## Amacandelo eCala Loyilo {#design-direction-components}
 
-### 1. Iphalethi Yemibala
+### 1. Iphalethi Yemibala {#1-color-palette}
 
 Inkqubo yemibala ye-theme yakho, kuquka:
 
@@ -23,7 +23,7 @@ Inkqubo yemibala ye-theme yakho, kuquka:
 - **Imibala engathathi cala** — iigrey nemhlophe yeemvelaphi kunye nombhalo
 - **Umbala wombhalo** — umbala wombhalo ophambili ukwenzela ukufundeka
 
-### 2. Uchwethezo
+### 2. Uchwethezo {#2-typography}
 
 Ukhetho lweefonti ze:
 
@@ -33,14 +33,14 @@ Ukhetho lweefonti ze:
 - **Ukuphakama komgca** — isithuba phakathi kwemigca ukwenzela ukufundeka
 - **Ubunzima beefonti** — iinguqulelo ezingqindilili, eziqhelekileyo, nezikhanyayo
 
-### 3. Uyilo kunye Nezithuba
+### 3. Uyilo kunye Nezithuba {#3-layout-and-spacing}
 
 - **Ububanzi be-container** — ububanzi obukhulu bomxholo
 - **I-padding ne-margins** — izithuba ezijikeleze izinto
 - **Inkqubo ye-grid** — uyilo lweekholamu loyilo oluphendulayo
 - **Izithuba zamacandelo** — umgama phakathi kwezinto ze-UI
 
-### 4. Izinto Ezibonakalayo
+### 4. Izinto Ezibonakalayo {#4-visual-elements}
 
 - **Izimbo zamaqhosha** — uyilo lwamaqhosha aphambili, esibini, nawesithathu
 - **Uyilo lwamakhadi** — ulwakhiwo lweebhloko zomxholo
@@ -48,9 +48,9 @@ Ukhetho lweefonti ze:
 - **Imida nezithunzi** — ubunzulu obubonakalayo obuthambileyo
 - **Iziphumo ze-hover** — isimbo semeko esisebenzisanayo
 
-## Ukuboniswa Kwangaphambili
+## Ukuboniswa Kwangaphambili {#preview-rendering}
 
-### Ukuboniswa Kwangaphambili kwe-Desktop
+### Ukuboniswa Kwangaphambili kwe-Desktop {#desktop-preview}
 
 Ukuboniswa kwangaphambili kwe-desktop kubonisa uyilo lwakho kububanzi obupheleleyo (ngokuqhelekileyo 1200px okanye ngaphezulu):
 
@@ -59,7 +59,7 @@ Ukuboniswa kwangaphambili kwe-desktop kubonisa uyilo lwakho kububanzi obuphelele
 - Uchwethezo olukhulu nezithuba
 - Zonke izinto ezibonakalayo ngobungakanani obupheleleyo
 
-### Ukuboniswa Kwangaphambili kwe-Mobile
+### Ukuboniswa Kwangaphambili kwe-Mobile {#mobile-preview}
 
 Ukuboniswa kwangaphambili kwe-mobile kubonisa uyilo lwakho kububanzi be-mobile (ngokuqhelekileyo 375px):
 
@@ -68,7 +68,7 @@ Ukuboniswa kwangaphambili kwe-mobile kubonisa uyilo lwakho kububanzi be-mobile (
 - Uchwethezo nezithuba ezilungisiweyo
 - Ubungakanani bamaqhosha obulungele ukuchukumisa
 
-### Ii-Breakpoint Ezisabelayo
+### Ii-Breakpoint Ezisabelayo {#responsive-breakpoints}
 
 Theme Builder ibonisa ukuboniswa kwangaphambili kwezi breakpoint:
 
@@ -79,9 +79,9 @@ Theme Builder ibonisa ukuboniswa kwangaphambili kwezi breakpoint:
 | **Desktop** | 1200px | Desktop enobubanzi obupheleleyo |
 | **Large Desktop** | 1920px | Umboniso obanzi kakhulu |
 
-## Ukuphucula Uyilo Lwakho
+## Ukuphucula Uyilo Lwakho {#refining-your-design}
 
-### Ukwenza Uhlengahlengiso
+### Ukwenza Uhlengahlengiso {#making-adjustments}
 
 Ungaluphucula icala loyilo lwakho ngoku:
 
@@ -91,7 +91,7 @@ Ungaluphucula icala loyilo lwakho ngoku:
 4. **Ukuhlaziya uyilo** — tshintsha ububanzi be-container neekholamu ze-grid
 5. **Ukwenza izinto ngokwezifiso** — lungisa izimbo zamaqhosha, uyilo lwamakhadi, njl.
 
-### Uhlaziyo Lokuboniswa Kwangaphambili
+### Uhlaziyo Lokuboniswa Kwangaphambili {#preview-updates}
 
 Utshintsho lubonakala ngexesha lokwenyani:
 
@@ -100,7 +100,7 @@ Utshintsho lubonakala ngexesha lokwenyani:
 - Zonke ii-breakpoint ezisabelayo ziyahlaziywa
 - Ungatshintsha phakathi kokuboniswa kwangaphambili ukuqinisekisa utshintsho
 
-### Umbono Wokuthelekisa
+### Umbono Wokuthelekisa {#comparison-view}
 
 Thelekisa icala loyilo lwakho kunye:
 
@@ -108,7 +108,7 @@ Thelekisa icala loyilo lwakho kunye:
 - **Uyilo lwabakhuphisani** — thelekisa neendawo zokuphefumlelwa
 - **Iinguqulelo zangaphambili** — buyela kumacala oyilo angaphambili
 
-## Ukuvunywa kweCala Loyilo
+## Ukuvunywa kweCala Loyilo {#design-direction-approval}
 
 Nje ukuba waneliseke ngoyilo lwakho:
 
@@ -118,7 +118,7 @@ Nje ukuba waneliseke ngoyilo lwakho:
 4. **Qinisekisa uyilo** — jonga izithuba kunye nolungelelaniso
 5. **Vuma uyilo** — qhubekela ekuvelisweni kwe-theme
 
-## Amanyathelo Alandelayo
+## Amanyathelo Alandelayo {#next-steps}
 
 Emva kokuvuma icala loyilo lwakho:
 
@@ -127,7 +127,7 @@ Emva kokuvuma icala loyilo lwakho:
 3. Ungaqhubeka wenze ngokwezifiso usebenzisa i-WordPress customizer
 4. Qhubekela ku-[Iimenyu Zokwamkela Iindwendwe](./hospitality-menus.md) okanye ezinye iimpawu
 
-## Ezona Ndlela Zilungileyo
+## Ezona Ndlela Zilungileyo {#best-practices}
 
 - **Vavanya kwizixhobo zokwenene** — sebenzisa iifowuni kunye nee-tablet zokwenene ukuba kunokwenzeka
 - **Jonga ukufundeka** — qinisekisa ukuba umbhalo uyafundeka kuzo zonke iisayizi
@@ -135,30 +135,30 @@ Emva kokuvuma icala loyilo lwakho:
 - **Qwalasela ukusebenza** — lungiselela imifanekiso neefonti ukwenzela isantya
 - **Cwangcisela umxholo** — qinisekisa ukuba uyilo lusebenza nomxholo wakho wokwenene
 
-## Ukusombulula Iingxaki
+## Ukusombulula Iingxaki {#troubleshooting}
 
-### Ukuboniswa Kwangaphambili Akukahlaziywa
+### Ukuboniswa Kwangaphambili Akukahlaziywa {#preview-not-updating}
 
 - Hlaziya iphepha
 - Coca i-cache yesikhangeli
 - Zama isikhangeli esahlukileyo
 - Jonga uqhagamshelo lwe-intanethi
 
-### Imibala Ibonakala Yahlukile
+### Imibala Ibonakala Yahlukile {#colors-look-different}
 
 - Jonga izicwangciso zombala zesikrini
 - Zama kwizixhobo ezahlukeneyo
 - Qinisekisa umahluko wombala ngezixhobo zokufikeleleka
 - Qwalasela izilinganisi zobumfama bemibala
 
-### Iingxaki zoChwethezo
+### Iingxaki zoChwethezo {#typography-issues}
 
 - Qinisekisa ukuba iifayile zeefonti ziyalayisha
 - Jonga ubungakanani beefonti kwii-breakpoint ezahlukeneyo
 - Vavanya ngomxholo wokwenene
 - Qwalasela ubude bomgca ukwenzela ukufundeka
 
-## Amaxwebhu Ahlobene
+## Amaxwebhu Ahlobene {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — qokelela ulwazi loyilo
 - [Iimenyu Zokwamkela Iindwendwe](./hospitality-menus.md) — dala amaphepha emenyu acwangcisiweyo

@@ -3,11 +3,11 @@ title: హుక్స్ సూచన
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks సూచిక
+# Hooks సూచిక {#hooks-reference}
 
 Ultimate Multisite లోని అన్ని **59 చర్యలు** మరియు **118 ఫిల్టర్ల** కోసం స్వయంచాలకంగా రూపొందించిన డాక్యుమెంటేషన్.
 
-## చర్యలు
+## చర్యలు {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — ధృవీకరణ రీడైరెక్ట్‌కు ముందు అమలవుతుంది.
 - [set_auth_cookie](./Actions/set_auth_cookie) — ధృవీకరణ cookie సెట్ చేయబడే ముందు వెంటనే అమలవుతుంది.
@@ -70,7 +70,7 @@ Ultimate Multisite లోని అన్ని **59 చర్యలు** మర
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — object database లో నిల్వైన తర్వాత నడుస్తుంది.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — అన్‌లాక్ చేసే ప్రక్రియకు actions జోడించడానికి plugin డెవలపర్లను అనుమతించండి.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ప్రామాణీకరణ cookie గడువు ముగింపు వ్యవధిని ఫిల్టర్ చేస్తుంది.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — ప్రామాణీకరణ redirect scheme‌ను ఫిల్టర్ చేస్తుంది.

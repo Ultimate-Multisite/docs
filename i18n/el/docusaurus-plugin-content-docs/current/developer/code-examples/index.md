@@ -3,11 +3,11 @@ title: Προηγμένα Παραδείγματα Κώδικα
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Προηγμένα Παραδείγματα Κώδικα
+# Προηγμένα Παραδείγματα Κώδικα {#advanced-code-examples}
 
 Αυτά τα παραδείγματα καταδεικνύουν προηγμένα μοτίβα ενσωμάτωσης με το Ultimate Multisite.
 
-## Μηχανή Δυναμικής Τιμολόγησης
+## Μηχανή Δυναμικής Τιμολόγησης {#dynamic-pricing-engine}
 
 Μια μηχανή τιμολόγησης βασισμένη σε κανόνες που εφαρμόζει εκπτώσεις όγκου, αφοσίωσης και εποχιακές:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Προηγμένη Διαθεσιμότητα Σίτ (Advanced Site Provisioning)
+## Προηγμένη Διαθεσιμότητα Σίτ (Advanced Site Provisioning) {#advanced-site-provisioning}
 
 Διαμορφώνετε αυτόματα νέες σελίδες (sites) με plugins, SSL, CDN, backups και monitoring, βάσει των χαρακτηριστικών του plan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Σύστημα Προσαρμοστικών Περιορισμών (Custom Limitations System)
+## Σύστημα Προσαρμοστικών Περιορισμών (Custom Limitations System) {#custom-limitations-system}
 
 Παρακολουθείτε και επιβάλλετε περιορισμούς πόρων με προειδοποιήσεις χρήσης:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Ατομικός Μετρητής BerlinDB με το `increment_item()`
+## Ατομικός Μετρητής BerlinDB με το `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Το Ultimate Multisite v2.6.1 πρόσθεσε τη μέθοδο `increment_item()` στην κλάση `Query` του BerlinDB. Χρησιμοποιήστε την για να εκτελέσετε ασφαλείς, ατομικές αυξήσεις σε αριθμητικές στήλες χωρίς προβλήματα 'read-modify-write' — κάτι που είναι χρήσιμο για μετρητές, κвоτάς χρήσης και ελέγχους περιορισμού ρυθμού που εκτελούνται υπό ταυτόχρονες αιτήματα.
 
-### Υπογραφή της μέθοδου
+### Υπογραφή της μέθοδου {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ new Advanced_Limitations();
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Βασική χρήση
+### Βασική χρήση {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Παρακολούθηση χρήσης API ανά membership
+### Παρακολούθηση χρήσης API ανά membership {#tracking-api-usage-per-membership}
 
 Ένα πρακτικό μοτίβο για την επιβολή περιορισμών ρυθμού API ανά membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Γιατί `increment_item()` αντί για `update_item()`
+### Γιατί `increment_item()` αντί για `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Μια απλή προσέγγιση 'read-modify-write' είναι επικίνδυνη υπό ταυτόχρονα αιτήματα:
 

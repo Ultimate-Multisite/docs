@@ -4,19 +4,19 @@ title: Gníomh - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Action: wu_after_switch_template
+# Action: wu_after_switch_template {#action-wuafterswitchtemplate}
 
 Ligeann sé d’fhorbróirí plugin feidhmeanna a cheangal tar éis d’úsáideoir nó super admin teimpléad an tsuímh a athrú
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
 | $id | `int` | ID an tsuímh |
 
-### Ó
+### Ó {#since}
 
 - 1.9.8
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/ui/class-template-switching-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-switching-element.php#L296) ag líne 296

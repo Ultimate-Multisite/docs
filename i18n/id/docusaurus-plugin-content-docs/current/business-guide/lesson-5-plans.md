@@ -3,15 +3,15 @@ title: 'Pelajaran 5: Merancang Rencana Anda'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Pelajaran 5: Merancang Paket Anda
+# Pelajaran 5: Merancang Paket Anda {#lesson-5-designing-your-plans}
 
 Tingkatan paket Anda bukan hanya sekadar level harga—tetapi cerminan bagaimana pelanggan spesifik Anda benar-benar beroperasi. Dalam pelajaran ini, Anda akan merancang tingkatan produk yang sesuai dengan kebutuhan nyata bisnis kebugaran di berbagai tahap.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah memiliki tiga template siap pakai (Studio Essential, Gym Pro, Fitness Chain). Sekarang kita akan membuat paket yang menentukan apa yang dapat diakses pelanggan dan berapa yang harus mereka bayar.
 
-## Berpikir dalam Segmen Pelanggan
+## Berpikir dalam Segmen Pelanggan {#thinking-in-customer-segments}
 
 Kesalahan yang paling sering dilakukan orang adalah merancang paket berdasarkan fitur teknis (penyimpanan, bandwidth, jumlah halaman). Pelanggan spesifik Anda tidak berpikir dengan istilah-istilah tersebut. Pemilik gym berpikir tentang apa yang mereka butuhkan untuk menjalankan bisnis mereka.
 
@@ -25,11 +25,11 @@ Untuk studio kebugaran, ada tiga segmen alami:
 
 Paket Anda harus dipetakan ke segmen-segmen ini, bukan ke kumpulan fitur yang sembarangan.
 
-## Membuat Paket FitSite
+## Membuat Paket FitSite {#creating-the-fitsite-plans}
 
 Arahkan ke **Ultimate Multisite > Products > Add Product** untuk setiap paket.
 
-### Paket 1: FitSite Starter -- $49/bulan
+### Paket 1: FitSite Starter -- $49/bulan {#plan-1-fitsite-starter----49month}
 
 **Target**: Pelatih solo dan studio kecil
 
@@ -59,7 +59,7 @@ Arahkan ke **Ultimate Multisite > Products > Add Product** untuk setiap paket.
 - Tema pilihan Anda: Force Activate
 - Semua tema lainnya: Hidden
 
-### Paket 2: FitSite Growth -- $99/bulan
+### Paket 2: FitSite Growth -- $99/bulan {#plan-2-fitsite-growth----99month}
 
 **Target**: Gym satu lokasi yang sudah mapan
 
@@ -85,7 +85,7 @@ Arahkan ke **Ultimate Multisite > Products > Add Product** untuk setiap paket.
 - Grup paket: FitSite Plans
 - Urutan produk: 2
 
-### Paket 3: FitSite Pro -- $199/bulan
+### Paket 3: FitSite Pro -- $199/bulan {#plan-3-fitsite-pro----199month}
 
 **Target**: Rantai kebugaran multi-lokasi
 
@@ -109,7 +109,7 @@ Arahkan ke **Ultimate Multisite > Products > Add Product** untuk setiap paket.
 - Grup paket: FitSite Plans
 - Urutan produk: 3
 
-## Mengatur Grup Paket
+## Mengatur Grup Paket {#setting-up-the-plan-group}
 
 Grup paket memastikan pelanggan hanya dapat meningkatkan atau menurunkan paket dalam keluarga paket FitSite. Di tab **Peningkatan & Penurunan (Up & Downgrades)** setiap paket:
 
@@ -118,7 +118,7 @@ Grup paket memastikan pelanggan hanya dapat meningkatkan atau menurunkan paket d
 
 Ini menciptakan jalur peningkatan yang jelas: Starter → Growth → Pro.
 
-## Menambahkan Order Bumps
+## Menambahkan Order Bumps {#adding-order-bumps}
 
 Order bumps adalah produk tambahan yang ditawarkan saat checkout. Untuk FitSite, pertimbangkan:
 
@@ -128,7 +128,7 @@ Order bumps adalah produk tambahan yang ditawarkan saat checkout. Untuk FitSite,
 
 Buat ini sebagai produk tipe **Package** di Ultimate Multisite dan kaitkan dengan paket yang relevan.
 
-## Mengapa Struktur Ini Berhasil
+## Mengapa Struktur Ini Berhasil {#why-this-structure-works}
 
 - **Starter** menghilangkan hambatan masuk — harga rendah, penawaran sederhana, membuat pelatih online dengan cepat
 - **Growth** menambahkan fitur yang benar-benar diminta oleh gym — pemesanan, galeri, domain kustom
@@ -136,7 +136,7 @@ Buat ini sebagai produk tipe **Package** di Ultimate Multisite dan kaitkan denga
 - **Order bumps** memungkinkan pelanggan menyesuaikan tanpa memperumit paket inti
 - **Jalur peningkatan yang jelas** berarti pelanggan tumbuh bersama Anda alih-alih pergi
 
-## Jaringan FitSite Sejauh Ini
+## Jaringan FitSite Sejauh Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Siap untuk konfigurasi checkout (pelajaran berikutnya)
 ```
 
-## Apa yang Kita Bangun di Pelajaran Ini
+## Apa yang Kita Bangun di Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Tiga tingkatan paket** yang dipetakan ke segmen bisnis kebugaran nyata
 - **Pembatasan fitur (Feature gating)** menggunakan kontrol plugin dan template Ultimate Multisite

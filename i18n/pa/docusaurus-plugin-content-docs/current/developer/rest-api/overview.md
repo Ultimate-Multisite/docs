@@ -3,28 +3,28 @@ title: REST API ਸੰਖੇਪ ਜਾਣਕਾਰੀ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ਹਵਾਲਾ
+# REST API ਹਵਾਲਾ {#rest-api-reference}
 
-## ਆਧਾਰ ਸੰਰਚਨਾ
+## ਆਧਾਰ ਸੰਰਚਨਾ {#base-configuration}
 
 **ਆਧਾਰ URL:** `{site_url}/wp-json/wu/v2/`
 **ਪ੍ਰਮਾਣੀਕਰਨ:** API ਕੁੰਜੀ ਅਤੇ ਰਾਜ਼ (HTTP Basic Auth ਜਾਂ URL ਪੈਰਾਮੀਟਰ)
 
-## ਪ੍ਰਮਾਣੀਕਰਨ
+## ਪ੍ਰਮਾਣੀਕਰਨ {#authentication}
 
-### API ਸਮਰੱਥ ਕਰੋ
+### API ਸਮਰੱਥ ਕਰੋ {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ਪ੍ਰਮਾਣ-ਪੱਤਰ ਪ੍ਰਾਪਤ ਕਰੋ
+### API ਪ੍ਰਮਾਣ-ਪੱਤਰ ਪ੍ਰਾਪਤ ਕਰੋ {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### ਪ੍ਰਮਾਣੀਕਰਨ ਢੰਗ
+### ਪ੍ਰਮਾਣੀਕਰਨ ਢੰਗ {#authentication-methods}
 
 **HTTP Basic Auth (ਸਿਫ਼ਾਰਸ਼ੀ):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ਮੁੱਖ ਅੰਤ-ਬਿੰਦੂ
+## ਮੁੱਖ ਅੰਤ-ਬਿੰਦੂ {#core-endpoints}
 
-### 1. ਗਾਹਕ API
+### 1. ਗਾਹਕ API {#1-customers-api}
 
 **ਆਧਾਰ ਰੂਟ:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. ਸਾਈਟਾਂ API
+### 2. ਸਾਈਟਾਂ API {#2-sites-api}
 
 **ਆਧਾਰ ਰੂਟ:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. ਮੈਂਬਰਸ਼ਿਪਾਂ API
+### 3. ਮੈਂਬਰਸ਼ਿਪਾਂ API {#3-memberships-api}
 
 **ਆਧਾਰ ਰੂਟ:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. ਉਤਪਾਦ API
+### 4. ਉਤਪਾਦ API {#4-products-api}
 
 **ਆਧਾਰ ਰੂਟ:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. ਭੁਗਤਾਨ API
+### 5. ਭੁਗਤਾਨ API {#5-payments-api}
 
 **ਆਧਾਰ ਰੂਟ:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ਡੋਮੇਨ API
+### 6. ਡੋਮੇਨ API {#6-domains-api}
 
 **ਆਧਾਰ ਰੂਟ:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅੰਤ-ਬਿੰਦੂ
+## ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅੰਤ-ਬਿੰਦੂ {#registration-endpoint}
 
 `/register` ਅੰਤ-ਬਿੰਦੂ ਪੂਰਾ checkout/ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਪ੍ਰਵਾਹ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## ਸਵੈ-ਸਰਬਭੌਮ ਕਿਰਾਏਦਾਰ ਅੰਤ-ਬਿੰਦੂ
+## ਸਵੈ-ਸਰਬਭੌਮ ਕਿਰਾਏਦਾਰ ਅੰਤ-ਬਿੰਦੂ {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ਉਹਨਾਂ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਲਈ ਸਵੈ-ਸਰਬਭੌਮ ਕਿਰਾਏਦਾਰ REST ਕਵਰੇਜ ਜੋੜਦਾ ਹੈ ਜੋ ਅਲੱਗ-ਥਲੱਗ ਕਿਰਾਏਦਾਰਾਂ ਨੂੰ ਪ੍ਰਾਵਿਜ਼ਨ, ਜਾਂਚ ਜਾਂ ਤਸਦੀਕ ਕਰਦੇ ਹਨ।
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` ਨੂੰ ਪ੍ਰੀ-ਲਾਂਚ ਰੋਕ ਵਜੋਂ ਮੰਨੋ। verification ਵੇਰਵਿਆਂ ਦੀ ਜਾਂਚ ਕਰੋ, ਡਾਟਾਬੇਸ ਹੋਸਟ ਬਾਈਂਡਿੰਗ, ਕਤਾਰ, ਵਰਤੋਂਕਾਰ ਪ੍ਰਾਵਿਜ਼ਨਿੰਗ ਜਾਂ ਰੂਟਿੰਗ ਸਮੱਸਿਆ ਠੀਕ ਕਰੋ, ਫਿਰ verification ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।
 
-## ਗਲਤੀ ਜਵਾਬ
+## ਗਲਤੀ ਜਵਾਬ {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## ਪੇਜੀਨੇਸ਼ਨ ਅਤੇ ਫਿਲਟਰਿੰਗ
+## ਪੇਜੀਨੇਸ਼ਨ ਅਤੇ ਫਿਲਟਰਿੰਗ {#pagination-and-filtering}
 
 **ਕੁਐਰੀ ਪੈਰਾਮੀਟਰ:**
 ```http

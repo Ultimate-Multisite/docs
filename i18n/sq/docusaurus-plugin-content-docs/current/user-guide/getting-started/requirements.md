@@ -3,11 +3,11 @@ title: Kërkesat
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Kërkesat për Ultimate Multisite
+# Kërkesat për Ultimate Multisite {#ultimate-multisite-requirements}
 
 E para që mund ta pyesni veten para se të nisni me blerjen e Ultimate Multisite është çfarë janë kërkesat për të ekzeguar plugin-in ton. Mirë, fatkeqësisht, ka vetëm disa kërkesa bazë për të ekzeguar Ultimate Multisite: një **emër domen** , një **provejues hosting** i mirë dhe një instalim WordPress **Multisite**. Kjo është gjithçka që ju nevojitet!
 
-## Emri Domeni
+## Emri Domeni {#domain-name}
 
 Meqenëse, le të flasim për emrin domen.
 
@@ -17,7 +17,7 @@ Plugin-i ynë ofron shërbime abonimi, mbledhje pagesash, formular për checkout
 
 Çdo nisje që zgjidhni mund të menaxhohet duke përdorur plugin-in ton, për sa kohë se ju shijoni faqe interneti si shërbim! Sigurohuni që të zgjidhni një emër domen që i përshtatet planit tuaj biznesi.
 
-## Provejues Hosting
+## Provejues Hosting {#hosting-provider}
 
 Tani që keni një emër domen tërheqës që përfaqëson nisjen dhe biznesin tuaj, do të duhet të zgjidhni një kompani hostinge web të mirë për të hostuar rrjetin tuaj me Ultimate Multisite. Ka disa opsione të mira në treg. Disa provejues hostinge integruen mirë me Ultimate Multisite, gjë që mund të jetë një faktor vendimtar në varësi të asaj që planifikoni të ndërtoni.
 
@@ -25,7 +25,7 @@ Ultimate Multisite mund të funksionojë në çdo ofrues hosting. Vetmia është
 
 Në çështjen specifikimeve të serverit, nuk ka një formulë specifike sepse do të varet nga funksionet dhe aftësitë që do të ofroni dhe madhësia e rrjetit tuaj. Hosting i ndarë (shared hosting) mund të jetë një fillestar i mirë, por sa herë që rrjeti juaj fillon të rritet, do të keni nevojë për një VPS dedikuar.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Tani, le të flasim pak për instalimin e WordPress Multisite.
 

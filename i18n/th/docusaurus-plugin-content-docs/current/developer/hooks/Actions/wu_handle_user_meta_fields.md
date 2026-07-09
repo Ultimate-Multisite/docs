@@ -4,11 +4,11 @@ title: Action - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields
+# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 ให้ผู้พัฒนาปลั๊กอินสามารถบันทึกข้อมูลเมตา (meta data) ของผู้ใช้ได้หลายรูปแบบตามความจำเป็น
 
-## พารามิเตอร์ (Parameters)
+## พารามิเตอร์ (Parameters) {#parameters}
 
 | Name | Type | คำอธิบาย |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 | $customer | `\Customer` | อ็อบเจกต์ลูกค้า (customer object) ของ Ultimate Multisite |
 | $checkout | `\Checkout` | คลาส (class) สำหรับการชำระเงิน (checkout) |
 
-### ตั้งแต่
+### ตั้งแต่ {#since}
 
 - 2.0.4
-### แหล่งที่มา
+### แหล่งที่มา {#source}
 
 กำหนดไว้ใน [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) บรรทัดที่ 1244

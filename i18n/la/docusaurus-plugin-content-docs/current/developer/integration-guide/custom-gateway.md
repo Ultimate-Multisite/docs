@@ -3,11 +3,11 @@ title: Progressio Portae ad Mensuram
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Explicatio Portae Consuetudinariae
+# Explicatio Portae Consuetudinariae {#custom-gateway-development}
 
 Portas solutionis consuetudinarias creare potes extendendo classem `Base_Gateway`.
 
-## Classis Portae
+## Classis Portae {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Portam Inscribe
+## Portam Inscribe {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Methodi Praecipui
+## Methodi Praecipui {#key-methods}
 
 | Methodus | Propositum |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Petitiones restitutionis tractare |
 | `get_payment_methods()` | Methodos solutionis servatos pro cliente reddere |
 
-## Documenta renovationis pro sodaliciis recurrentibus
+## Documenta renovationis pro sodaliciis recurrentibus {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 integrationibus portae permittit referre utrum sodalicium recurrens documentum renovationis iterum utibile habeat antequam `auto_renew` persistatur. Adiunge `wu_membership_has_renewal_credential` et redde:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Signum documenti deficientis dele ut partem felicis cursus re-authorizationis tuae portae postquam novum documentum iterum utibile repositum est.
 
-## Consilia
+## Consilia {#tips}
 
 - Semper redde `WP_Error` in defectu, ut Ultimate Multisite ostensionem erroris tractare possit
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Utere `wu_log_add()` ad acta portae propria
 
-## Facultates provisoris coniunctionis AI
+## Facultates provisoris coniunctionis AI {#ai-connector-provider-capabilities}
 
 Integrationes consuetudinariae quae operationes coniunctione AI suffultas vocant congruere debent cum copia provisorum OAuth sustentata, inducta cum AI Provider for Anthropic Max v1.3.0:
 

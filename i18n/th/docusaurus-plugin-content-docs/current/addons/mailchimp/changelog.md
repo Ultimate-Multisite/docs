@@ -3,7 +3,7 @@ title: Mailchimp บันทึกการเปลี่ยนแปลง
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# บันทึกการเปลี่ยนแปลงของ Mailchimp
+# บันทึกการเปลี่ยนแปลงของ Mailchimp {#mailchimp-changelog}
 
 เวอร์ชัน: 1.1.1 - เผยแพร่เมื่อ 2025-09-28
 

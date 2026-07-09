@@ -3,15 +3,15 @@ title: '7. nodarbība: Padariet to par savu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 7. nodarbība: Padariet to par savu
+# 7. nodarbība: Padariet to par savu {#lesson-7-making-it-yours}
 
 Jūsu klientiem nekad nevajadzētu justies tā, it kā viņi izmantotu "kādu WordPress plugin". Viņiem vajadzētu justies tā, it kā viņi izmantotu FitSite -- platformu, kas izveidota viņu nozarei. Šajā nodarbībā apskatīta zīmola veidošana, white-labeling un tas, kā panākt, lai platforma šķistu kā produkts.
 
-## Kur mēs apstājāmies
+## Kur mēs apstājāmies {#where-we-left-off}
 
 FitSite ir strādājoša checkout plūsma, kas fitnesa studiju īpašniekus aizved no plāna izvēles līdz aktīvai vietnei. Tagad mēs panāksim, lai visa pieredze šķistu vienota, ar zīmolu saistīta produkta pieredze.
 
-## Jūsu platformas domēns
+## Jūsu platformas domēns {#your-platform-domain}
 
 Jūsu zīmola pamats ir jūsu domēns. FitSite gadījumā:
 
@@ -19,7 +19,7 @@ Jūsu zīmola pamats ir jūsu domēns. FitSite gadījumā:
 - **Klientu vietnes**: `studioname.fitsite.com` (apakšdomēni)
 - **Pielāgoti domēni**: klienti Growth un Pro plānos var piesaistīt savu domēnu
 
-### Domēna iestatīšana
+### Domēna iestatīšana {#setting-up-your-domain}
 
 1. Reģistrējiet savas platformas domēnu
 2. Norādiet to uz savu mitināšanas pakalpojumu sniedzēju
@@ -28,11 +28,11 @@ Jūsu zīmola pamats ir jūsu domēns. FitSite gadījumā:
 
 Detalizētas instrukcijas skatiet sadaļā [Kā konfigurēt domēnu kartēšanu](/user-guide/domain-mapping/how-to-configure-domain-mapping).
 
-## Admin pieredzes white-labeling
+## Admin pieredzes white-labeling {#white-labeling-the-admin-experience}
 
 Kad fitnesa studijas īpašnieks piesakās savas vietnes dashboard, viņam vajadzētu redzēt jūsu zīmolu, nevis WordPress vai Ultimate Multisite zīmolu.
 
-### Pielāgota pieteikšanās lapa
+### Pielāgota pieteikšanās lapa {#custom-login-page}
 
 Pielāgojiet WordPress pieteikšanās lapu, lai tajā būtu redzams:
 
@@ -40,7 +40,7 @@ Pielāgojiet WordPress pieteikšanās lapu, lai tajā būtu redzams:
 - Fitnesam piemēroti fona attēli
 - Jūsu zīmola krāsas
 
-### Dashboard zīmološana
+### Dashboard zīmološana {#dashboard-branding}
 
 Izmantojiet [Admin Page Creator](/addons/admin-page-creator) addon vai pielāgotu CSS, lai:
 
@@ -48,7 +48,7 @@ Izmantojiet [Admin Page Creator](/addons/admin-page-creator) addon vai pielāgot
 - Pielāgotu admin krāsu shēmu atbilstoši jūsu zīmolam
 - Pievienotu pielāgotu dashboard logrīku ar fitnesam specifiskām ātrajām saitēm un palīdzības resursiem
 
-### Pielāgotas admin lapas
+### Pielāgotas admin lapas {#custom-admin-pages}
 
 Apsveriet iespēju izveidot pielāgotas admin lapas, kas izceļ fitnesa studiju īpašniekiem visatbilstošākās darbības:
 
@@ -58,11 +58,11 @@ Apsveriet iespēju izveidot pielāgotas admin lapas, kas izceļ fitnesa studiju 
 
 Tas samazina apgūšanas grūtības, priekšplānā izceļot nišai atbilstošas darbības, nevis paslēpjot tās standarta WordPress izvēlnē.
 
-## Jūsu saziņas zīmološana
+## Jūsu saziņas zīmološana {#branding-your-communications}
 
 Katram e-pastam, rēķinam un paziņojumam vajadzētu stiprināt jūsu zīmolu.
 
-### Sistēmas e-pasti
+### Sistēmas e-pasti {#system-emails}
 
 Dodieties uz **Ultimate Multisite > Settings > Emails** un pielāgojiet visus sistēmas e-pastus:
 
@@ -79,7 +79,7 @@ Galvenie e-pasti, ko pielāgot:
 | Maksājuma kvīts | "Maksājums saņemts" | "FitSite abonementa maksājums apstiprināts" |
 | Izmēģinājuma perioda beigas | "Jūsu izmēģinājuma periods drīz beigsies" | "Jūsu FitSite izmēģinājuma periods beidzas pēc 3 dienām -- saglabājiet savas studijas tīmekļa vietni aktīvu" |
 
-### Rēķini
+### Rēķini {#invoices}
 
 Pielāgojiet rēķinu veidnes ar:
 
@@ -87,7 +87,7 @@ Pielāgojiet rēķinu veidnes ar:
 - Jūsu uzņēmuma informāciju
 - Fitnesam specifiskiem produktu nosaukumiem (nevis vispārīgiem plānu ID)
 
-## Klientiem redzamā vietne
+## Klientiem redzamā vietne {#the-customer-facing-site}
 
 Jūsu galvenajam domēnam (`fitsite.com`) nepieciešama mārketinga vietne, kas pārdod platformu. Tā ir atsevišķa no Ultimate Multisite tīkla admin -- tā ir jūsu uzņēmuma publiskā seja.
 
@@ -103,7 +103,7 @@ Galvenās lapas:
 Izveidojiet savu mārketinga vietni kā vietni savā tīklā. Tas ļauj to pārvaldīt no tā paša dashboard un demonstrē jūsu pašu platformas iespējas.
 :::
 
-## Pielāgots domēns klientiem
+## Pielāgots domēns klientiem {#custom-domain-for-customers}
 
 Klientiem plānos, kas ietver pielāgotus domēnus, skaidri dokumentējiet procesu:
 
@@ -113,7 +113,7 @@ Klientiem plānos, kas ietver pielāgotus domēnus, skaidri dokumentējiet proce
 
 Izveidojiet palīdzības rakstu vai zināšanu bāzes ierakstu tieši šim procesam, rakstītu netehniskiem fitnesa studiju īpašniekiem.
 
-## FitSite tīkls līdz šim
+## FitSite tīkls līdz šim {#the-fitsite-network-so-far}
 
 ```
 FitSite tīkls
@@ -132,7 +132,7 @@ FitSite tīkls
 └── Gatavs onboarding plūsmai (nākamā nodarbība)
 ```
 
-## Ko mēs izveidojām šajā nodarbībā
+## Ko mēs izveidojām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Platformas domēns un DNS**, konfigurēti zīmolotai pieredzei
 - **White-labeled admin** ar FitSite zīmolu viscaur

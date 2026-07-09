@@ -3,32 +3,32 @@ title: 'Thuto ea 3: Ho Seta Netweke ea Hao'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Thuto 3: Ho Hlophisa Marang-rang a Hao
+# Thuto 3: Ho Hlophisa Marang-rang a Hao {#lesson-3-setting-up-your-network}
 
 Ke nako ya ho aha. Thutong ena o tla kenya Ultimate Multisite mme o lokise motheo wa marang-rang a FitSite. Qeto e nngwe le e nngwe mona e etswa ho nahannwe ka lekala la boikoetliso.
 
-## Moo re Ileng ra Emisa Teng
+## Moo re Ileng ra Emisa Teng {#where-we-left-off}
 
 Re kgethile ditudio tsa boikoetliso e le lekala la rona mme ra netefatsa monyetla. Jwale re fetola mohopolo oo hore e be sethala se sebetsang.
 
-## Ho Kgetha Tshebeletso ya Hao ya Hosting
+## Ho Kgetha Tshebeletso ya Hao ya Hosting {#choosing-your-hosting}
 
 Kgetho ya hao ya hosting e bohlokwa haholo bakeng sa sethala sa lekala le itseng ho feta bakeng sa sebaka se le seng sa marang-rang. Ha o amohele sebaka se le seng -- o amohela marang-rang a tla hola ho ya ho dibaka tse mashome kapa tse makgolo.
 
-### Seo o Lokelang ho se Sheba
+### Seo o Lokelang ho se Sheba {#what-to-look-for}
 
 - **Tshehetso ya WordPress Multisite**: Ha se bafani bohle ba hosting ba sebetsanang hantle le multisite
 - **Wildcard SSL**: E bohlokwa bakeng sa marang-rang a thehilweng hodima subdomain
 - **Disebediswa tse kgonang ho hola**: O hloka sebaka sa ho hola ntle le ho fallisa
 - **Kopanyo ya Ultimate Multisite**: Ho hokahanya domain le SSL ka boiketsetso ho boloka boiteko bo boholo ba tshebetso
 
-### Mokgwa o Kgothaletswang
+### Mokgwa o Kgothaletswang {#recommended-approach}
 
 Kgetha mofani wa hosting lenaneng la [Bafani ba Tshwanelehang](/user-guide/host-integrations/closte). Bana ba lekilwe ka Ultimate Multisite mme ba fana ka dikopanyo tseo o di hlokang bakeng sa ho hokahanya domain le boiketsetso ba SSL.
 
 Bakeng sa FitSite, re tla sebedisa tlhophiso ya subdomain. Sena se bolela hore dibaka tsa bareki qalong di tla hlaha jwalo ka `studioname.fitsite.com` pele ba ka ikgethela ho hokahanya domain ya bona.
 
-## Ho Kenya WordPress Multisite
+## Ho Kenya WordPress Multisite {#installing-wordpress-multisite}
 
 Haeba ha o eso be le tshebediso ya WordPress Multisite:
 
@@ -40,7 +40,7 @@ Haeba ha o eso be le tshebediso ya WordPress Multisite:
 Subdomains di fa sebaka se seng le se seng sa moreki aterese ya sona e ikgethileng (`studio.fitsite.com`) ho ena le tsela (`fitsite.com/studio`). Sena se bonahala se le setsebi ho feta bakeng sa bareki ba hao mme se qoba dikgohlano tsa permalink. Sheba [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) bakeng sa papiso e qaqileng.
 :::
 
-## Ho Kenya Ultimate Multisite
+## Ho Kenya Ultimate Multisite {#installing-ultimate-multisite}
 
 Latela tataiso ya [Ho Kenya Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) ho:
 
@@ -53,11 +53,11 @@ Nakong ya setup wizard, hopola lekala la FitSite:
 - **Lebitso la khamphani**: "FitSite" (kapa lebitso la brand leo o le kgethileng)
 - **Letshwao la khamphani**: Kenya letshwao la brand ya hao -- sena se hlaha ho di-invoice le di-imeile
 
-## Ho Lokisetsa Lekala la Boikoetliso
+## Ho Lokisetsa Lekala la Boikoetliso {#configuring-for-the-fitness-niche}
 
 Ha Ultimate Multisite e se e kentsoe, etsa dikgetho tsena tsa tlhophiso tse ikgethileng bakeng sa lekala lena:
 
-### Dipeakanyo tse Akaretsang
+### Dipeakanyo tse Akaretsang {#general-settings}
 
 Eya ho **Ultimate Multisite > Settings** mme o lokise:
 
@@ -65,7 +65,7 @@ Eya ho **Ultimate Multisite > Settings** mme o lokise:
 - **Karolo ya kamehla**: Administrator -- beng ba ditudio tsa boikoetliso ba hloka taolo e felletseng ya dikahare tsa sebaka sa bona
 - **Ngodiso**: Dumella ngodiso ya basebedisi hore beng ba ditudio ba kgone ho ingodisa ka bobona
 
-### Tlhophiso ya Imeile
+### Tlhophiso ya Imeile {#email-configuration}
 
 Di-imeile tsa sistimi ya hao di lokela ho bua puo ya lekala la hao. Eya ho **Ultimate Multisite > Settings > Emails** mme o iketsetse:
 
@@ -75,7 +75,7 @@ Di-imeile tsa sistimi ya hao di lokela ho bua puo ya lekala la hao. Eya ho **Ult
 
 Re tla ntlafatsa tsena haholoanyane Thutong 8 (Ho Amohela Bareki), empa ho beha modumo hona jwale ho netefatsa hore esita le dingodiso tsa teko tsa pele di ikutlwa di ikgethile bakeng sa lekala lena.
 
-### Tlhophiso ya Domain
+### Tlhophiso ya Domain {#domain-configuration}
 
 Haeba o sebedisa mofani wa hosting ya tshwanelehang, lokisa ho hokahanya domain hona jwale:
 
@@ -85,7 +85,7 @@ Haeba o sebedisa mofani wa hosting ya tshwanelehang, lokisa ho hokahanya domain 
 
 Sena se netefatsa hore ha re qala ho bopa ditemplate le dibaka tsa teko thutong e latelang, tsohle di sebetsa ho tloha qalong ho isa qetellong.
 
-## Marang-rang a FitSite ho Fihlela Jwale
+## Marang-rang a FitSite ho Fihlela Jwale {#the-fitsite-network-so-far}
 
 Qetellong ya thuto ena, sena ke seo o nang le sona:
 
@@ -99,7 +99,7 @@ Marang-rang a FitSite
 └── E loketse ditemplate tsa sebaka (thuto e latelang)
 ```
 
-## Seo re se Ahileng Thutong Ena
+## Seo re se Ahileng Thutong Ena {#what-we-built-this-lesson}
 
 - Ho kenya **WordPress Multisite e sebetsang** ka mokgwa wa subdomain
 - **Ultimate Multisite e kentsoe** mme ya lokiswa ka branding ya FitSite

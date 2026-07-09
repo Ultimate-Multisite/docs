@@ -3,7 +3,7 @@ title: Configurarea PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configurarea gateway-ului PayPal (v2)
+# Configurarea gateway-ului PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
@@ -13,13 +13,13 @@ La fel ca Stripe, PayPal este utilizat pe scară largă pentru plăți online, m
 
 Reține că trebuie să ai un **cont PayPal Business** pentru a obține credențialele API necesare pentru această integrare.
 
-## Activarea PayPal în rețeaua ta
+## Activarea PayPal în rețeaua ta {#enabling-paypal-on-your-network}
 
 Pentru a activa PayPal ca metodă de plată disponibilă în rețeaua ta, mergi la fila **Ultimate Multisite > Settings > Payments** și bifează caseta de lângă PayPal.
 
 ![Activarea PayPal în gateway-urile de plată active](/img/config/settings-payment-gateways.png)
 
-## Utilizarea asistentului de configurare ghidată
+## Utilizarea asistentului de configurare ghidată {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 adaugă un asistent de configurare ghidată PayPal la setările gateway-ului de plată. După ce activezi PayPal, folosește asistentul din **Ultimate Multisite > Settings > Payments** pentru a alege cum vrei să conectezi gateway-ul și pentru a confirma ce credențiale mai sunt necesare înainte de salvare.
 
@@ -30,7 +30,7 @@ Asistentul acceptă două căi de configurare:
 
 Dacă nu vezi opțiunea OAuth în asistent, finalizează fluxul de introducere manuală a credențialelor de mai jos. Gateway-ul funcționează cu aceleași credențiale API PayPal Business ca versiunile anterioare Ultimate Multisite 2.x.
 
-## Obținerea credențialelor PayPal API
+## Obținerea credențialelor PayPal API {#getting-the-paypal-api-credentials}
 
 După ce PayPal este activat ca gateway de plată, va trebui să completezi câmpurile pentru PayPal API **Username** , PayPal API **Password** și PayPal API **Signature**.
 

@@ -3,9 +3,9 @@ title: Multi-Nätverksändringslogg
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network Ändringslogg
+# Multi-Network Ändringslogg {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nytt: Förhandsgranskare för nätverkstemplates – bläddra och förhandsgranska nätverkstemplates med en live-panel innan köp.
 * Nytt: Val av nätverkstemplate i kassan – kunder kan välja en nätverkstemplate under registreringsflödet i kassan.
 * Nytt: SSO med magisk länk över nätverk – kunder kan komma åt undernätverk smidigt via magisk länk-autentisering.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Fix: Skydd mot okänd `network_id`-nyckel i scope för webbplatsfrågan.
 * Fix: Kontroll av nätverkstillstånd innan kontextbyte förhindrar `wpdb`-tabellfel.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Fix: Skapa nytt nätverk.
 * Fix: Rendera menyer.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Uppdaterad till Plugin Update Checker v5
 * Tillagda moderna WordPress-plugin-huvuden
 * Förbättrad kompatibilitet med senaste WordPress-versionerna
 
-### 1.0.2
+### 1.0.2 {#102}
 * Buggfixar och prestandaförbättringar
 * Förbättrad nätverksisolering
 
-### 1.0.0
+### 1.0.0 {#100}
 * Initial utgivning
 * Kärnfunktionalitet för flera nätverk
 * Integration med Multisite Ultimate

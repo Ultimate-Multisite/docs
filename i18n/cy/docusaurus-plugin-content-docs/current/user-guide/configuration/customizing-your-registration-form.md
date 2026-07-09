@@ -3,13 +3,13 @@ title: Addasu eich ffurflen gofrestru
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Addasu eich Ffurflen Gofrestru
+# Addasu eich Ffurflen Gofrestru {#customizing-your-registration-form}
 
 I wneud i’ch rhwydwaith edrych yn unigryw o’i gymharu â’r holl SaaS eraill sydd wedi’u hadeiladu ar blatfform WordPress, mae Ultimate Multisite yn caniatáu i chi addasu eich tudalennau cofrestru a mewngofnodi gyda’n nodwedd **Checkout Forms**.
 
 Er eu bod yn ffordd hawdd a hyblyg o arbrofi â gwahanol ddulliau wrth geisio trosi cwsmeriaid newydd, cânt eu defnyddio’n bennaf i greu ffurflenni cofrestru personol. Nod yr erthygl hon yw dangos i chi sut y gallwch wneud hynny.
 
-## Tudalennau mewngofnodi a chofrestru:
+## Tudalennau mewngofnodi a chofrestru: {#login-and-registration-pages}
 
 Wrth osod Ultimate Multisite, mae’n creu tudalennau mewngofnodi a chofrestru personol yn awtomatig ar eich prif wefan. Gallwch newid y tudalennau diofyn hyn unrhyw bryd drwy fynd i’ch tudalen **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Nawr, gadewch i ni weld opsiynau eraill sy’n dal yn berthnasol i’r broses me
 
 A dyna’r holl opsiynau sy’n ymwneud â mewngofnodi a chofrestru y gallwch eu haddasu! Peidiwch ag anghofio cadw eich gosodiadau ar ôl i chi orffen eu golygu.
 
-## Defnyddio ffurflenni cofrestru lluosog:
+## Defnyddio ffurflenni cofrestru lluosog: {#using-multiple-registration-forms}
 
 Mae Ultimate Multisite 2.0 yn cynnig golygydd ffurflen dalu sy’n caniatáu i chi greu cymaint o ffurflenni ag y dymunwch, gyda gwahanol feysydd, cynhyrchion ar gynnig, ac ati.
 
@@ -69,7 +69,7 @@ Fel arall, gallwch olygu neu ddyblygu’r ffurflenni sydd gennych eisoes drwy gl
 
 Os dewiswch un cam neu aml-gam, bydd y ffurflen dalu eisoes wedi’i rhag-boblogi â’r camau sylfaenol sydd eu hangen iddi weithio. Yna, os dymunwch, gallwch ychwanegu camau ychwanegol ati.
 
-### Golygu Checkout Form:
+### Golygu Checkout Form: {#editing-a-checkout-form}
 
 Fel y soniasom o’r blaen, gallwch greu ffurflenni talu at wahanol ddibenion. Yn yr enghraifft hon byddwn yn gweithio ar ffurflen gofrestru.
 
@@ -131,11 +131,11 @@ I gael cod byr eich ffurflen, cliciwch **Cynhyrchu Cod Byr** a chopïwch y canly
 
 _**Nodyn:** Bydd angen i chi ychwanegu’r cod byr hwn at eich tudalen gofrestru er mwyn ychwanegu’r ffurflen dalu hon ati._
 
-## Rhag-ddewis cynhyrchion a thempledi drwy baramedrau URL:
+## Rhag-ddewis cynhyrchion a thempledi drwy baramedrau URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Os ydych am greu tablau prisiau wedi’u teilwra ar gyfer eich cynhyrchion a rhag-ddewis ar y ffurflen dalu y cynnyrch neu’r templed y mae eich cwsmer yn ei ddewis o’ch tabl prisiau neu’ch tudalen templedi, gallwch ddefnyddio paramedrau URL ar gyfer hyn.
 
-### **Ar gyfer cynlluniau:**
+### **Ar gyfer cynlluniau:** {#for-plans}
 
 Ewch i **Ultimate Multisite > Cynhyrchion > Dewiswch gynllun**. Dylech weld y botwm **Cliciwch i gopïo Dolen Rannadwy** ar frig y dudalen. Dyma’r ddolen y gallwch ei defnyddio i rag-ddewis y cynllun penodol hwn ar eich ffurflen dalu.
 
@@ -143,7 +143,7 @@ Ewch i **Ultimate Multisite > Cynhyrchion > Dewiswch gynllun**. Dylech weld y bo
 
 Sylwch fod y ddolen rannadwy hon yn ddilys ar gyfer **Cynlluniau** yn unig. Ni allwch ddefnyddio dolenni rannadwy ar gyfer pecynnau neu wasanaethau.
 
-### Ar gyfer templedi:
+### Ar gyfer templedi: {#for-templates}
 
 Os ydych am rag-ddewis templedi safle ar eich ffurflen dalu, gallwch ddefnyddio’r paramedr: **?template_id=X** ar URL eich tudalen gofrestru. Mae angen disodli’r "X" â’r **rhif ID templed safle**. I gael y rhif hwn, ewch i **Ultimate Multisite > Safleoedd**.
 

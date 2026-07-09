@@ -4,11 +4,11 @@ title: Амал - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Амал: wu_mcp_abilities_registered
+# Амал: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Пас аз сабти қобилиятҳои MCP барои як мавҷудият иҷро мешавад.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 | $model_name | `string` | Номи модел. |
 | $this | `object` | Намунаи мудир. |
 
-### Аз версияи
+### Аз версияи {#since}
 
 - 2.5.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) дар сатри 171 муайян шудааст

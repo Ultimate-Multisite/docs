@@ -3,11 +3,11 @@ title: Nega Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Nima uchun Ultimate Multisite
+# Nima uchun Ultimate Multisite {#why-ultimate-multisite}
 
 Agar siz ushbu maqolaga yetib kelsa bo'lsangiz, ehtimol bizning pluginimiz biznes g'oyangizni amalga oshirish uchun yechim bo'lishi mumkinligini eshitgan bo'lishingiz mumkin. Biz umid qilamizki, bu matn oxirida sizga kerakli javoblarni topasiz.
 
-## Ultimate Multisite nima?
+## Ultimate Multisite nima? {#what-is-ultimate-multisite}
 
 Ultimate Multisite — bu WordPress Multisite pluginidir va u sizga mijozlarga WaaS (Website as a Service) taklif qilish imkonini beradi. Bizning pluginimiz bilan turli obuna darajalarini yaratishingiz mumkin va mijozlar sizning Multisite tarmog'ingizda sayt joylashgan bo'lishi uchun sizga qayta to'lov haqida muntazam to'lovni amalga oshirishlari kerak bo'ladi.
 
@@ -15,7 +15,7 @@ Ultimate Multisite sizga turli portalardan (masalan, WooCommerce yoki Stripe) to
 
 Va bu faqat boshlanishdir, chunki siz uni add-onlar va webhooks bilan funksiyalarini kengaytirish imkoniga ega bo'lasiz.
 
-## Boshqa xususiyatlar
+## Boshqa xususiyatlar {#other-features}
 
 Ultimate Multisite quyidagilarni ham taklif qiladi:
 
@@ -33,11 +33,11 @@ Va undan ko'ra ilgariroq narsalar:
 
 * Qidirish va Almashtirish API: Shuningdek, siz sayt shablonlarini {{site_name}} kabi joylashuvchilar (placeholders) bilan belgilashingiz va mijoz tomonidan ro'yxatdan o'tganidan keyin avtomatik ravishda bu joylashuvchilarni ularning ma'lumotlari bilan to'ldirish uchun Qidirish va Almashtirish API dan foydalanishingiz mumkin.
 
-## Foydalanish holatlari (Use cases)
+## Foydalanish holatlari (Use cases) {#use-cases}
 
 Endi Ultimate Multisite ning mumkin bo'lgan ba'zi foydalanish holatlarini ko'rish vaqti keldi.
 
-### Holat 1: Agentura
+### Holat 1: Agentura {#case-1-an-agency}
 
 Odatda agenturaning asosiy ko'nikmalari ularning hosting yoki marketingni qo'shimcha xizmatlar sifatida ro'yxatdan o'tgan holda veb-saytlarni loyihalash bilan bog'liq bo'ladi.
 
@@ -47,7 +47,7 @@ Ultimate Multisite sozlamalari orqali pluginlar va temalar uchun har bir yangi s
 
 Aгентлик Ultimate Multisite bilan ishlash orqida xotirjamlik topadi va ular eng yaxshi qiladigan ishni — ajoyib veb-saytlar loyihalashni — qilishlari mumkin.
 
-### 2-holat: Niche (mutaxassis) provayderi
+### 2-holat: Niche (mutaxassis) provayderi {#case-2-niche-provider}
 
 "Bir narsani yaxshi qilish" degan eski maqol mavjud. Ko'plab mutaxassislar uchun bu, bitta asosiy g'oya atrofida mahsulot yoki xizmat yaratishni anglatadi.
 
@@ -57,7 +57,7 @@ Ultimate Multisite’ning innovatsion xususiyatlaridan biri — shablonli sayt. 
 
 Niche saytlar va xizmatlarini provayderi uchun bu, maxsus pluginlar va dizayn bilan tayyor bo'lgan saytni darhol yaratish imkoniyatida bir qatlamli ustunlik beradi. Mijoz faqatgina xizmatni yakunlash uchun minimal ma'lumotlarni taqdim etishi kerak bo'ladi.
 
-### 3-holat: WordPress veb-hosting
+### 3-holat: WordPress veb-hosting {#case-3-wordpress-web-hosting}
 
 WordPress saytlarini joylashtirishning ko'plab yo'llari bor, ammo ularni mijozga WordPress ning oldindan o'rnatilgan versiyasini berishdan ko'ra oddiyroq narsa juda kam. Bu shundaki, ma'noli xizmat ko'rsatish uchun bir nechta qarorlar va hisob-kitoblarni birlashtirish kerak bo'ladi.
 

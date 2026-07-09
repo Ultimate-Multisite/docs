@@ -3,13 +3,13 @@ title: Kupunguza kiwango cha mpango
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Kushusha plan (v2)
+# Kushusha plan (v2) {#downgrading-a-plan-v2}
 
 _**DOKEZO MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
 
 Kushusha plan au subscription ni kitendo cha kawaida ambacho clients wako wanaweza kufanya ikiwa wana bajeti ndogo au wameamua kwamba hawatahitaji rasilimali nyingi kuendesha subsite yao.
 
-## Jinsi ya kushusha plan
+## Jinsi ya kushusha plan {#how-to-downgrade-a-plan}
 
 Clients wako wanaweza kushusha plan yao wakati wowote kwa kuingia kwenye dashboard ya msimamizi wa subsite yao na kubofya **Change** chini ya ukurasa wao wa Account.
 
@@ -25,7 +25,7 @@ Ili kuendelea, user anahitaji tu kubofya kitufe cha **Complete Checkout**. Kisha
 
 ![Ukurasa wa Account unaoonyesha bango la mabadiliko ya membership yanayosubiri](/img/account-page/pending-change.png)
 
-### Kinachotokea user anaposhusha plan yake
+### Kinachotokea user anaposhusha plan yake {#what-happens-when-a-user-downgrades-their-plan}
 
 Ni muhimu kutambua kwamba kushusha plan hakubadilishi usanidi uliopo kwenye subsite ya user.
 
@@ -37,7 +37,7 @@ Kwa posts zinazozidi limit iliyowekwa kwenye plan, una chaguo 3 tofauti: **Weka 
 
 ![Ukurasa wa Network Admin Settings Sites unaoonyesha chaguo za tabia ya post-limit-exceeded](/img/account-page/settings-sites-post-limit.png)
 
-### Kinachotokea kwa malipo
+### Kinachotokea kwa malipo {#what-happens-to-the-payment}
 
 Katika toleo la 2.0, halihitaji tena marekebisho yoyote kwenye malipo kwa upande wa proration.
 

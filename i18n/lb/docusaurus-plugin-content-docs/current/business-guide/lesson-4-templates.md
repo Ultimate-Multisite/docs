@@ -3,15 +3,15 @@ title: 'Lektioun 4: Nisch-Virlagen erstellen'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lektioun 4: Nisch-Schabloune bauen
+# Lektioun 4: Nisch-Schabloune bauen {#lesson-4-building-niche-templates}
 
 Schabloune sinn de Kär vun denger Nisch-Wäertpropositioun. E Fitnessstudio-Besëtzer, dee sech umellt an eng Websäit gesäit, déi schonn ausgesäit wéi eng Fitness-Websäit -- mat Kurspläng, Trainerprofiller an de richtege Biller -- bleift vill méi wahrscheinlech wéi een, deen eng eidel Fläch gesäit.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 Mir hunn e funktionéierend FitSite-Netzwierk mat Ultimate Multisite installéiert a konfiguréiert. Elo baue mir d'Schablounen, déi FitSite esou wierke loossen, wéi wann et speziell fir Fitnessbetriber gemaach wier.
 
-## Firwat Nisch-Schabloune wichteg sinn
+## Firwat Nisch-Schabloune wichteg sinn {#why-niche-templates-matter}
 
 Generesch Schablounen zwéngen deng Clienten, déi schwéier Aarbecht ze maachen: erauszefannen, wéi eng Säite si brauchen, wéi eng Inhaltsstruktur funktionéiert a wéi se et fir hir Branche richteg ausgesi loossen. Nisch-Schablounen eliminéieren déi Reiwung.
 
@@ -24,11 +24,11 @@ E Fitnessstudio-Besëtzer, dee sech bei FitSite umellt, soll gesinn:
 
 Si fëllen hir Detailer aus. Si fänken net bei Null un.
 
-## Deng Schabloune plangen
+## Deng Schabloune plangen {#planning-your-templates}
 
 Ier s du ufänks ze bauen, entscheet, wéi eng Schablounen s du ubidde wëlls. Fir FitSite erstelle mir dräi:
 
-### Schabloun 1: Studio Essential
+### Schabloun 1: Studio Essential {#template-1-studio-essential}
 
 Fir kleng Studioen a Personal Trainer.
 
@@ -39,7 +39,7 @@ Fir kleng Studioen a Personal Trainer.
 - **Kontakt**-Säit mat Standuertkaart a Formulaire
 - **Propperen, modernen Design** mat engem fir Fitness passende Faarfschema
 
-### Schabloun 2: Gym Pro
+### Schabloun 2: Gym Pro {#template-2-gym-pro}
 
 Fir etabléiert Fitnessstudioe mat méi Servicer.
 
@@ -50,7 +50,7 @@ Fir etabléiert Fitnessstudioe mat méi Servicer.
 - **Referenzen**-Beräich op der Startsäit
 - **Méi prominent Branding**-Optiounen
 
-### Schabloun 3: Fitness Chain
+### Schabloun 3: Fitness Chain {#template-3-fitness-chain}
 
 Fir Betriber mat méi Standuerter.
 
@@ -60,17 +60,17 @@ Fir Betriber mat méi Standuerter.
 - **Zentraliséiert Branding** mat standuertspezifeschen Detailer
 - **Mataarbechterverzeechnes** iwwer Standuerter ewech
 
-## Eng Schabloun-Websäit bauen
+## Eng Schabloun-Websäit bauen {#building-a-template-site}
 
 An Ultimate Multisite ass eng Schabloun einfach eng WordPress-Websäit, déi esou konfiguréiert ass, wéi s du wëlls, datt nei Client-Websäiten ausgesinn. Esou erstellts du eng:
 
-### Schrëtt 1: D'Schabloun-Websäit erstellen
+### Schrëtt 1: D'Schabloun-Websäit erstellen {#step-1-create-the-template-site}
 
 1. Géi op **Säiten > Nei derbäisetzen** an denger Netzwierk-Administratioun
 2. Erstell eng Websäit mam Numm `template-studio-essential`
 3. Dës Websäit gëtt deng Aarbechtsfläch
 
-### Schrëtt 2: D'Thema installéieren a konfiguréieren
+### Schrëtt 2: D'Thema installéieren a konfiguréieren {#step-2-install-and-configure-the-theme}
 
 Wiessel op den Dashboard vun der Schabloun-Websäit a:
 
@@ -82,7 +82,7 @@ Wiessel op den Dashboard vun der Schabloun-Websäit a:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Schrëtt 3: D'Säiten erstellen
+### Schrëtt 3: D'Säiten erstellen {#step-3-create-the-pages}
 
 Bau all Säit mat:
 
@@ -92,7 +92,7 @@ Bau all Säit mat:
 
 Maach de Platzhalter-Inhalt, wou méiglech, instruktiv. Amplaz genereschem Fëlltext, schreiw Inhalt wéi: "Ersetz dëst duerch eng kuerz Beschreiwung vun dengem Studio a wat en besonnesch mécht. Ernim deng Trainingsphilosophie, Joer Erfarung oder wat Clienten erwaarde kënnen."
 
-### Schrëtt 4: Erweiderunge konfiguréieren
+### Schrëtt 4: Erweiderunge konfiguréieren {#step-4-configure-plugins}
 
 Installéier an aktivéier Erweiderungen, déi Fitnessstudioe brauchen:
 
@@ -100,7 +100,7 @@ Installéier an aktivéier Erweiderungen, déi Fitnessstudioe brauchen:
 - Eng Kontaktformulaire-Erweiderung
 - Eng SEO-Erweiderung (virkonfiguréiert mat fitness-relevante Standardastellungen)
 
-### Schrëtt 5: Als Schabloun markéieren
+### Schrëtt 5: Als Schabloun markéieren {#step-5-mark-as-template}
 
 1. Géi op **Ultimate Multisite > Säiten**
 2. Änner d'Schabloun-Websäit
@@ -108,7 +108,7 @@ Installéier an aktivéier Erweiderungen, déi Fitnessstudioe brauchen:
 
 Widderhuel dëse Prozess fir all Schabloun, déi s du ubidde wëlls.
 
-## Qualitéits-Checklëscht fir Schablounen
+## Qualitéits-Checklëscht fir Schablounen {#template-quality-checklist}
 
 Ier s du eng Schabloun verfügbar méchs, iwwerpréif:
 
@@ -121,7 +121,7 @@ Ier s du eng Schabloun verfügbar méchs, iwwerpréif:
 - [ ] Keng futtis Linken oder feelend Ressourcen
 - [ ] Säiteluedgeschwindegkeet ass akzeptabel
 
-## De FitSite-Netzwierk bis elo
+## De FitSite-Netzwierk bis elo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Wat mir an dëser Lektioun gebaut hunn
+## Wat mir an dëser Lektioun gebaut hunn {#what-we-built-this-lesson}
 
 - **Dräi nisch-spezifesch Schablounen**, designt fir verschidde Gréisste vu Fitnessbetriber
 - **Fitness-passenden Inhalt a Biller**, déi d'Plattform esou wierke loossen, wéi wann se speziell dofir gemaach wier

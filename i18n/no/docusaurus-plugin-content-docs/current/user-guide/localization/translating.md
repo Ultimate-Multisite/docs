@@ -3,11 +3,11 @@ title: Oversette Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Oversette Ultimate Multisite
+# Oversette Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite er utviklet på engelsk, men programtillegget er fullt oversettbart, og vi tar gjerne imot bidrag til oversettelser.
 
-## Oversettelser av hovedtillegget
+## Oversettelser av hovedtillegget {#core-plugin-translations}
 
 Hovedtillegget Ultimate Multisite oversettes via den offisielle **oversettelsesplattformen på WordPress.org**:
 
@@ -24,7 +24,7 @@ Dette er det vanlige oversettelsessystemet for WordPress-fellesskapet. Når over
 
 Hvis du ønsker å bli oversettelsesredaktør for språket ditt (med mulighet til å godkjenne oversettelser), ta kontakt via [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Oversettelser av tillegg
+## Oversettelser av tillegg {#addon-translations}
 
 Tilleggene oversettes separat på:
 
@@ -32,11 +32,11 @@ Tilleggene oversettes separat på:
 
 Oversettelsene av tilleggene er foreløpig AI-genererte som et utgangspunkt. De dekker alle støttede språk, men kan inneholde klønete formuleringer eller unøyaktigheter. Vi setter pris på om menneskelige oversettere vil gjennomgå og foreslå forbedringer for å gjøre dem mer naturlige og presise.
 
-## Lokale oversettelser
+## Lokale oversettelser {#local-translations}
 
 Hvis du foretrekker å lage oversettelser lokalt for ditt eget prosjekt i stedet for å bidra oppstrøms, finnes det to alternativer:
 
-### Bruke Poedit
+### Bruke Poedit {#using-poedit}
 
 Du kan bruke skrivebordsprogrammet **[Poedit](https://poedit.net)** til å oversette `.pot`-filen:
 
@@ -46,6 +46,6 @@ Du kan bruke skrivebordsprogrammet **[Poedit](https://poedit.net)** til å overs
 4. Lagre – Poedit genererer `.po`- og `.mo`-filer
 5. Legg de ferdige filene i `lang`-mappen
 
-### Bruke Loco Translate
+### Bruke Loco Translate {#using-loco-translate}
 
 WordPress-tillegget **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** lar deg oversette direkte fra administrasjonspanelet uten å bruke skrivebordsverktøy. Det håndterer oppretting og kompilering av oversettelsesfiler for deg.

@@ -3,11 +3,11 @@ title: Webhook apstrāde
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook apstrāde
+# Webhook apstrāde {#webhook-handling}
 
 Izveidojiet pielāgotus webhook galapunktus, lai saņemtu notikumus no ārējiem pakalpojumiem un sinhronizētu datus ar Ultimate Multisite.
 
-## Pielāgots webhook galapunkts
+## Pielāgots webhook galapunkts {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Drošības apsvērumi
+## Drošības apsvērumi {#security-considerations}
 
 - Vienmēr pārbaudiet webhook parakstus, izmantojot HMAC vai koplietotu noslēpumu
 - Izmantojiet `permission_callback` savā REST maršrutā — nekad neiestatiet to uz `__return_true` produkcijas vidē

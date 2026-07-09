@@ -3,11 +3,11 @@ title: Mahitaji
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Mahitaji ya Ultimate Multisite
+# Mahitaji ya Ultimate Multisite {#ultimate-multisite-requirements}
 
 Jambo la kwanza unaloweza kujiuliza kabla ya kununua Ultimate Multisite ni mahitaji gani yanahitajika ili kuendesha plugin yetu. Kwa bahati nzuri, kuna mahitaji machache tu ya msingi ya kuendesha Ultimate Multisite: **jina la domain**, **mtoaji mzuri wa hosting** na usakinishaji wa WordPress **Multisite**. Hiyo ndiyo yote unayohitaji!
 
-## Jina la Domain
+## Jina la Domain {#domain-name}
 
 Kwanza, hebu tuzungumze kuhusu jina la domain.
 
@@ -17,7 +17,7 @@ Plugin yetu inatoa huduma za usajili, ukusanyaji wa malipo, fomu za checkout, vo
 
 Eneo lolote unalochagua linaweza kusimamiwa kwa kutumia plugin yetu mradi tu unauza tovuti kama huduma! Hakikisha unachagua jina la domain linalolingana na mpango wako wa biashara.
 
-## Mtoaji wa Hosting
+## Mtoaji wa Hosting {#hosting-provider}
 
 Sasa kwa kuwa una jina la domain linalovutia linalowakilisha eneo na biashara yako, utahitaji kuchagua kampuni nzuri ya hosting ili kuweka mtandao wako na Ultimate Multisite. Kuna chaguzi nzuri kadhaa sokoni. Baadhi ya watoaji wa hosting wanaunganika vizuri na Ultimate Multisite, ambayo inaweza kuwa sababu muhimu kulingana na unachopanga kuunda.
 
@@ -25,7 +25,7 @@ Ultimate Multisite inapaswa kufanya kazi kwa mtoaji yeyote wa hosting. Tofauti p
 
 Kuhusu vipimo vya seva, hakuna fomula maalum kwani itategemea vipengele na kazi utakazotoa na ukubwa wa mtandao wako. Hosting ya pamoja inaweza kuwa mwanzo mzuri, lakini mara mtandao wako unapoanza kukua, labda utahitaji VPS ya peke yako.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Sasa, hebu tuzungumze kidogo kuhusu usakinishaji wa WordPress Multisite.
 

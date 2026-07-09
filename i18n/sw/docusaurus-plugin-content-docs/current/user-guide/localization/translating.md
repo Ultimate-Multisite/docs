@@ -3,11 +3,11 @@ title: Kutafsiri Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Kutafsiri Ultimate Multisite
+# Kutafsiri Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite imetengenezwa kwa Kiingereza, lakini plugin hii inaweza kutafsiriwa kikamilifu na tunakaribisha michango ya tafsiri kwa moyo wote.
 
-## Tafsiri za Plugin Kuu
+## Tafsiri za Plugin Kuu {#core-plugin-translations}
 
 Plugin kuu ya Ultimate Multisite inatafsiriwa kupitia **jukwaa rasmi la tafsiri la WordPress.org**:
 
@@ -24,7 +24,7 @@ Huu ni mfumo wa kawaida wa tafsiri wa jamii ya WordPress. Tafsiri zinapofika kiw
 
 Ikiwa ungependa kuwa mhariri wa tafsiri kwa lugha yako (kuweza kuidhinisha tafsiri), wasiliana nasi kupitia [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Tafsiri za Addon
+## Tafsiri za Addon {#addon-translations}
 
 Plugin za addon zinatafsiriwa kando kwenye:
 
@@ -32,11 +32,11 @@ Plugin za addon zinatafsiriwa kando kwenye:
 
 Tafsiri za addon kwa sasa zimetengenezwa na AI kama hatua ya kuanzia. Zinashughulikia lugha zote zinazotumika lakini zinaweza kuwa na maneno yasiyosikika vizuri au makosa. Tunakaribisha watafsiri wa kibinadamu kukagua na kupendekeza maboresho ili zisikike asilia na sahihi zaidi.
 
-## Tafsiri za Ndani
+## Tafsiri za Ndani {#local-translations}
 
 Ikiwa unapendelea kuunda tafsiri za ndani kwa mradi wako mwenyewe badala ya kuchangia kwa jamii, kuna njia mbili:
 
-### Kutumia Poedit
+### Kutumia Poedit {#using-poedit}
 
 Unaweza kutumia programu ya kompyuta **[Poedit](https://poedit.net)** kutafsiri faili ya `.pot`:
 
@@ -46,6 +46,6 @@ Unaweza kutumia programu ya kompyuta **[Poedit](https://poedit.net)** kutafsiri 
 4. Hifadhi -- Poedit itazalisha faili za `.po` na `.mo`
 5. Weka faili zilizotolewa kwenye folda ya `lang`
 
-### Kutumia Loco Translate
+### Kutumia Loco Translate {#using-loco-translate}
 
 Plugin ya WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** inakuwezesha kutafsiri moja kwa moja kutoka kwenye paneli ya msimamizi bila zana yoyote ya kompyuta. Inashughulikia kuunda na kukusanya faili za tafsiri kwa ajili yako.

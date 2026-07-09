@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Cynlluniau â Mesurydd
+# Cynlluniau â Mesurydd {#metered-plans}
 
 Mae ychwanegyn Ultimate Multisite: Cynlluniau â Mesurydd yn trawsnewid sut rydych yn bilio eich cwsmeriaid drwy gyflwyno galluoedd bilio â mesurydd hyblyg. Yn lle terfynau caled anhyblyg sy’n rhwystro defnyddwyr pan gânt eu rhagori, galluogwch daliadau defnydd ychwanegol sy’n bilio cwsmeriaid yn awtomatig am ddefnydd ychwanegol.
 
-## Nodweddion Allweddol
+## Nodweddion Allweddol {#key-features}
 
 * **Bilio â Mesurydd**: Codwch dâl ar gwsmeriaid yn seiliedig ar ddefnydd gwirioneddol yn hytrach na haenau sefydlog
 * **Rheoli Defnydd Ychwanegol**: Biliwch yn awtomatig am ddefnydd sy’n rhagori ar derfynau cynllun
@@ -21,14 +21,14 @@ Mae ychwanegyn Ultimate Multisite: Cynlluniau â Mesurydd yn trawsnewid sut rydy
 * **Anfonebu Awtomatig**: Cynhyrchwch anfonebau yn awtomatig pan ragorir ar drothwyon defnydd
 * **Adroddiadau Defnydd**: Dadansoddeg defnydd ac adrodd manwl ar gyfer cwsmeriaid a gweinyddwyr
 
-## Perffaith Ar Gyfer
+## Perffaith Ar Gyfer {#perfect-for}
 
 * **Darparwyr Lletya**: Cynigiwch gynlluniau graddadwy sy’n tyfu gydag anghenion cwsmeriaid
 * **Llwyfannau SaaS**: Biliwch yn seiliedig ar ddefnydd adnoddau gwirioneddol
 * **Rhwydweithiau Asiantaethau**: Modelau prisio hyblyg ar gyfer prosiectau cleientiaid
 * **Lletya Ailwerthwyr**: Galluogwch bartneriaid i gynnig prisio sy’n seiliedig ar ddefnydd
 
-## Sut Mae’n Gweithio
+## Sut Mae’n Gweithio {#how-it-works}
 
 1. Ffurfweddwch adnoddau â mesurydd (gofod disg, lled band, nifer y safleoedd, ac ati)
 2. Gosodwch derfynau cynllun sylfaenol a chyfraddau defnydd ychwanegol
@@ -37,13 +37,13 @@ Mae ychwanegyn Ultimate Multisite: Cynlluniau â Mesurydd yn trawsnewid sut rydy
 5. Cynhyrchir anfonebau yn awtomatig yn seiliedig ar y cylch bilio
 6. Gall cwsmeriaid weld eu defnydd a’u taliadau sydd ar ddod mewn amser real
 
-## Bilio Tocynnau AI
+## Bilio Tocynnau AI {#ai-token-billing}
 
 Mae fersiwn 1.1.0 yn ychwanegu bilio tocynnau AI ar gyfer rhwydweithiau sy’n cynnig nodweddion AI drwy WordPress AI Client SDK. Mae Cynlluniau â Mesurydd yn gwrando am geisiadau cynhyrchu AI sydd wedi’u cwblhau, yn cofnodi cyfrifon tocynnau mewnbwn ac allbwn ar gyfer yr is-safle cyfredol, ac yn trosi’r tocynnau hynny’n wariant AI y gellir ei filio ar gyfer cyfnod bilio cyfredol y cwsmer.
 
 Defnyddiwch filio tocynnau AI pan fyddwch am gynnig offer AI ar safleoedd cwsmeriaid heb amsugno costau model anrhagweladwy. Priodolir pob cais i’r is-safle, y cwsmer, yr aelodaeth, y darparwr, a’r model fel y gall gweinyddwyr archwilio defnydd tra gall cwsmeriaid weld sut mae eu defnydd AI yn effeithio ar eu cyfrif.
 
-### Ffurfweddu Cyfraddau fesul Tocyn
+### Ffurfweddu Cyfraddau fesul Tocyn {#configure-per-token-rates}
 
 Ffurfweddir cyfraddau AI fesul model fel cyfraddau mewnbwn ac allbwn ar wahân. Cyfrifir cyfraddau fesul 1 miliwn o docynnau, sy’n cyfateb i dudalennau prisio darparwyr AI cyffredin.
 
@@ -55,7 +55,7 @@ Ffurfweddir cyfraddau AI fesul model fel cyfraddau mewnbwn ac allbwn ar wahân. 
 
 Pan nad yw union ID model wedi’i ffurfweddu, gall Cynlluniau â Mesurydd baru yn ôl rhagddodiad model. Er enghraifft, gall cyfradd sydd wedi’i ffurfweddu ar gyfer `claude-sonnet-4` fod yn berthnasol i IDau model â stamp amser sy’n dechrau gyda’r rhagddodiad hwnnw. Gall datblygwyr hefyd addasu’r tabl cyfraddau terfynol gyda’r hidlydd [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Cysylltwyr AI a Gefnogir
+### Cysylltwyr AI a Gefnogir {#supported-ai-connectors}
 
 Mae bilio tocynnau AI yn gweithio gyda chysylltwyr sy’n allyrru digwyddiadau cynhyrchu WordPress AI Client SDK ac yn cynnwys defnydd tocynnau ym metadata’r ymateb. Mae hyn yn cynnwys teulu cysylltwyr AI Ultimate Multisite a ddogfennir yma:
 
@@ -65,13 +65,13 @@ Mae bilio tocynnau AI yn gweithio gyda chysylltwyr sy’n allyrru digwyddiadau c
 
 Gall cysylltwyr personol gymryd rhan drwy danio’r digwyddiadau safonol `wp_ai_client_before_generate_result` a `wp_ai_client_after_generate_result` gyda metadata model, darparwr, a defnydd tocynnau. Gorfodir gosodiadau cysylltydd o’r prif safle i is-safleoedd fel bod safleoedd cwsmeriaid yn defnyddio’r darparwyr a’r terfynau a gymeradwywyd gan y rhwydwaith.
 
-### Defnydd Account Cwsmer
+### Defnydd Account Cwsmer {#customer-account-usage}
 
 Mae cwsmeriaid yn gweld defnydd AI ochr yn ochr â’u hadnoddau eraill â mesurydd yn ardal eu cyfrif. Mae’r rhes gwariant AI yn dangos cyfanswm y cyfnod bilio cyfredol sy’n deillio o docynnau anogwr a chwblhau wedi’u cofnodi, y cyfraddau model wedi’u ffurfweddu, ac unrhyw lwfans sydd wedi’i gynnwys ar y cynllun.
 
 Os oes gan gwsmer ddull talu ar ffeil, caiff defnydd uwchlaw’r lwfans sydd wedi’i gynnwys ei drin fel defnydd ychwanegol y gellir ei filio. Os yw’r cynllun wedi’i ffurfweddu ar gyfer toriad caled ac nad oes dull talu ar gael i’r cwsmer, gellir rhwystro ceisiadau AI unwaith y cyrhaeddir y lwfans a gofynnir i’r cwsmer ychwanegu manylion talu cyn parhau.
 
-## Adnoddau a Gefnogir
+## Adnoddau a Gefnogir {#supported-resources}
 
 * Storio disg
 * Lled band/Trosglwyddo data
@@ -80,13 +80,13 @@ Os oes gan gwsmer ddull talu ar ffeil, caiff defnydd uwchlaw’r lwfans sydd wed
 * Defnydd tocynnau AI a gwariant AI
 * Mathau o adnoddau personol
 
-## Gofynion
+## Gofynion {#requirements}
 
 * Multisite Ultimate 2.0.0 neu uwch
 * Gosodiad WordPress Multisite
 * PHP 7.4 neu uwch
 
-## Gosod
+## Gosod {#installation}
 
 1. Uwchlwythwch ffeiliau’r plugin i `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Gweithredwch y plugin drwy’r sgrin 'Plugins' yn WordPress
@@ -94,24 +94,24 @@ Os oes gan gwsmer ddull talu ar ffeil, caiff defnydd uwchlaw’r lwfans sydd wed
 4. Ffurfweddwch eich adnoddau â mesurydd a’ch prisiau
 5. Galluogwch filio â mesurydd ar gyfer cynhyrchion yn y golygydd cynnyrch
 
-## Cwestiynau Cyffredin
+## Cwestiynau Cyffredin {#frequently-asked-questions}
 
-## Beth sy’n digwydd pan fydd cwsmer yn rhagori ar ei derfyn?
+## Beth sy’n digwydd pan fydd cwsmer yn rhagori ar ei derfyn? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Yn hytrach na rhwystro mynediad, mae'r system yn olrhain y gorymdaith ac yn ei hychwanegu at eu hanfoneb nesaf yn seiliedig ar y cyfraddau rydych chi wedi'u ffurfweddu.
 
-## A allaf osod cyfraddau gorymdaith gwahanol ar gyfer cynhyrchion gwahanol?
+## A allaf osod cyfraddau gorymdaith gwahanol ar gyfer cynhyrchion gwahanol? {#can-i-set-different-overage-rates-for-different-products}
 
 Gallwch, gall pob cynnyrch gael adnoddau mesuredig unigryw a phrisio gorymdaith.
 
-## Sut mae cwsmeriaid yn cael gwybod am ddefnydd?
+## Sut mae cwsmeriaid yn cael gwybod am ddefnydd? {#how-are-customers-notified-about-usage}
 
 Gall cwsmeriaid weld eu defnydd presennol yn eu dashboard a derbyn hysbysiadau dewisol wrth agosáu at derfynau neu eu rhagori.
 
-## Sut mae defnydd token AI yn cael ei brisio?
+## Sut mae defnydd token AI yn cael ei brisio? {#how-is-ai-token-usage-priced}
 
 Mae defnydd token AI yn cael ei brisio o gyfraddau mewnbwn ac allbwn wedi'u ffurfweddu'r model fesul 1 miliwn o tokens. Mae Metered Plans yn lluosi cyfrifiadau token prompt a completion pob cais â'r cyfraddau hynny, yn ychwanegu'r canlyniad at wariant AI cyfnod bilio presennol y cwsmer, ac yn cymhwyso lwfans neu reolau gorymdaith y plan.
 
-## A allaf barhau i ddefnyddio terfynau caled?
+## A allaf barhau i ddefnyddio terfynau caled? {#can-i-still-use-hard-limits}
 
 Gallwch, mae bilio mesuredig yn ddewisol fesul cynnyrch. Gallwch gymysgu cynhyrchion terfyn caled traddodiadol â chynhyrchion mesuredig.

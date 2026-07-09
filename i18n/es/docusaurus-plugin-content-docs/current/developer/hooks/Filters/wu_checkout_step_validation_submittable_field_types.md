@@ -4,22 +4,22 @@ title: Filtro - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types
+# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
 
 Permite a los desarrolladores omitir la verificación si un campo es auto-enviable.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
 | $submittable_field_types | `array` | La lista de tipos de campo. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/helpers/validation-rules/class-checkout-steps.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/validation-rules/class-checkout-steps.php#L92) en la línea 92
 
 
-## Devuelve
+## Devuelve {#returns}

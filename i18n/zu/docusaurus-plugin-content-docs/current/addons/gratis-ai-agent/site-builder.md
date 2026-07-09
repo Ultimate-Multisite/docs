@@ -3,15 +3,15 @@ title: Ukuhlelwa Kokwakhiwa Kwesayithi v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (eyethulwe ku-Gratis AI Agent v1.4.0) iyinjini enika amandla ukwakhiwa kwamawebhusayithi okunezinyathelo eziningi. Lapho ucela agent ukuthi "yakha iwebhusayithi yokudlela" noma "dala iphothifoliyo ene-blog", orchestrator ihlukanisa lowo mgomo osezingeni eliphezulu ube **uhlelo** oluhlelekile, ithole ama-plugin adingekayo ukuwufeza, isebenzise isinyathelo ngasinye ngokulandelana, ilandelele inqubekela phambili, futhi ilulame emaphutheni ngokuzimela.
 
 ---
 
-## Indlela Okusebenza Ngayo
+## Indlela Okusebenza Ngayo {#how-it-works}
 
-### 1. Ukwakhiwa Kohlelo
+### 1. Ukwakhiwa Kohlelo {#1-plan-generation}
 
 Lapho agent ithola umyalelo wokwakha isayithi, ibiza ikhono le-`create_site_plan` ukuze ikhiqize **uhlelo lwesayithi** lwe-JSON. Uhlelo luchaza:
 
@@ -61,7 +61,7 @@ Lapho agent ithola umyalelo wokwakha isayithi, ibiza ikhono le-`create_site_plan
 }
 ```
 
-### 2. Ukutholwa Kwama-plugin
+### 2. Ukutholwa Kwama-plugin {#2-plugin-discovery}
 
 Ngaphambi kokuthi ukuqaliswa kuqale, orchestrator iskena ama-`plugin_requirements` ohlelo futhi ihlole ukuthi yimaphi ama-plugin asevele esebenza. Kuma-plugin angekho, yona:
 
@@ -71,7 +71,7 @@ Ngaphambi kokuthi ukuqaliswa kuqale, orchestrator iskena ama-`plugin_requirement
 
 Ukwehluleka kokutholwa kwama-plugin akubulali — orchestrator imaka izinyathelo ezithintekile njenge-`skipped` bese iqhubeka nengxenye esele yohlelo.
 
-### 3. Ukuqaliswa Kohlelo
+### 3. Ukuqaliswa Kohlelo {#3-plan-execution}
 
 Orchestrator ibiza `execute_site_plan` nge-ID yohlelo. Ukuqaliswa kuqhubeka isigaba ngesigaba, isinyathelo ngesinyathelo:
 
@@ -79,7 +79,7 @@ Orchestrator ibiza `execute_site_plan` nge-ID yohlelo. Ukuqaliswa kuqhubeka isig
 - **Izinyathelo ezihambisana ngesikhathi esisodwa** — izinyathelo ngaphakathi kwesigaba esifanayo ezingenabo ubudlelwano bokuthembelana zithunyelwa ngesikhathi esisodwa lapho ifulegi le-`parallel` lisethiwe.
 - **Ukuphelelwa isikhathi kwesinyathelo** — isinyathelo ngasinye sinesikhathi saso sokuphelelwa (okuzenzakalelayo: isilungiselelo se-`Ability Timeout`). Isinyathelo esiphelelwe isikhathi simakwa njenge-`failed` bese uhlelo luqhubeka.
 
-### 4. Ukulandelela Inqubekela Phambili
+### 4. Ukulandelela Inqubekela Phambili {#4-progress-tracking}
 
 Biza `get_plan_progress` nganoma yisiphi isikhathi ukuze uhlole isimo sokuqaliswa:
 
@@ -104,7 +104,7 @@ Abasebenzisi be-WP-CLI bangalandelela inqubekela phambili nge:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Ukululama Emaphutheni
+### 5. Ukululama Emaphutheni {#5-error-recovery}
 
 Lapho isinyathelo sehluleka, orchestrator ihlola **esinye isinyathelo** esichazwe ohlelweni:
 
@@ -115,9 +115,9 @@ Agent ibika konke ukwehluleka esifingqweni sokugcina sohlelo futhi ingase iphaka
 
 ---
 
-## Amakhono Ohlelo Lwesayithi
+## Amakhono Ohlelo Lwesayithi {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Ikhiqiza uhlelo lwesayithi oluhlelekile kusuka encazelweni yomgomo yolimi lwemvelo.
 
@@ -134,7 +134,7 @@ Ikhiqiza uhlelo lwesayithi oluhlelekile kusuka encazelweni yomgomo yolimi lwemve
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Iqala ukuqaliswa kohlelo lwesayithi olwakhiwe ngaphambilini.
 
@@ -150,7 +150,7 @@ Iqala ukuqaliswa kohlelo lwesayithi olwakhiwe ngaphambilini.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Ibuyisa isimo samanje sokuqaliswa kohlelo lwesayithi.
 
@@ -164,7 +164,7 @@ Ibuyisa isimo samanje sokuqaliswa kohlelo lwesayithi.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ixazulula mathupha isinyathelo esihlulekile bese iqhubeka nokuqaliswa kohlelo kusukela esinyathelweni esilandelayo. Sebenzisa lokhu lapho ukululama okuzenzakalelayo bekungenzeki futhi ufuna ukungenelela.
 
@@ -180,7 +180,7 @@ Ixazulula mathupha isinyathelo esihlulekile bese iqhubeka nokuqaliswa kohlelo ku
 
 ---
 
-## Ukuqhathanisa i-v1 ne-v2
+## Ukuqhathanisa i-v1 ne-v2 {#comparing-v1-and-v2}
 
 | Isici | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Ixazulula mathupha isinyathelo esihlulekile bese iqhubeka nokuqaliswa kohlelo ku
 
 ---
 
-## Imiyalo Yohlelo lwe-WP-CLI
+## Imiyalo Yohlelo lwe-WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Ikhiqiza uhlelo lwesayithi kusuka encazelweni yomgomo.
 
@@ -205,7 +205,7 @@ Ikhiqiza uhlelo lwesayithi kusuka encazelweni yomgomo.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Iqalisa uhlelo olwakhiwe ngaphambilini.
 
@@ -213,7 +213,7 @@ Iqalisa uhlelo olwakhiwe ngaphambilini.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Ibonisa inqubekela phambili yamanje yohlelo oluqaliswayo noma oluqediwe.
 
@@ -221,7 +221,7 @@ Ibonisa inqubekela phambili yamanje yohlelo oluqaliswayo noma oluqediwe.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Ibala zonke izinhlelo zamasayithi (ezisalindile, eziqhubekayo, neziqediwe).
 
@@ -229,7 +229,7 @@ Ibala zonke izinhlelo zamasayithi (ezisalindile, eziqhubekayo, neziqediwe).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Isetha kabusha uhlelo oluhlulekile lube `pending` ukuze luqaliswe futhi kusukela ekuqaleni.
 

@@ -4,20 +4,20 @@ title: کړنه - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# کړنه: wp_ultimo_ptm_page_wizard_footer
+# کړنه: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
 
 د پلگین جوړوونکو ته اجازه ورکوي چې د پاڼې په ښکته برخه کې سکرېپټونه زیات کړي
 
-## پارامیټرونه
+## پارامیټرونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
 | $ | `\WU_Page` | د Multisite Ultimate پاڼې نمونه |
 
-### له
+### له {#since}
 
 - 1.8.2
-### سرچینه
+### سرچینه {#source}
 
 - په [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L163) کې په ۱۶۳ کرښه تعریف شوی
 - په [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L137) کې په ۱۳۷ کرښه تعریف شوی

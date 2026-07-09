@@ -3,11 +3,11 @@ title: Gevorderde Kodevoorbeelde
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Gevorderde Kodevoorbeelde
+# Gevorderde Kodevoorbeelde {#advanced-code-examples}
 
 Hierdie voorbeelde demonstreer gevorderde integrasiëpatrone met Ultimate Multisite.
 
-## Dinamiese Prysgestel Motoriese
+## Dinamiese Prysgestel Motoriese {#dynamic-pricing-engine}
 
 'n Reëlsgebaseerde prysgestel wat volume-, lojaliteits- en seisoenale afslag toepas:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Gevorderde Site-Verskaffing
+## Gevorderde Site-Verskaffing {#advanced-site-provisioning}
 
 Konfigureer nuwe sites outomaties met plugins, SSL, CDN, back-ups en monitoring op grond van plan-kenmerke:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Aangepaste Beperkingsstelsel
+## Aangepaste Beperkingsstelsel {#custom-limitations-system}
 
 Spoor en handhaaf hulpbronbeperkings met gebruikerswaarskuwings:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atoomtelmer met `increment_item()`
+## BerlinDB Atoomtelmer met `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 het 'n `increment_item()` metode bygevoeg aan die BerlinDB `Query` klas. Gebruik dit om veilige, atoom-verhogings op numeriese kolomme uit te voer sonder lees-verander-skryf-wedloopkondiges (read-modify-write races) — nuttig vir telmers, gebruikkvote en rate-beperkingskontrolle wat onder gelyktydige versoek word uitgevoer word.
 
-### Metodehandtekening
+### Metodehandtekening {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 het 'n `increment_item()` metode bygevoeg aan die Berl
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Basiese gebruik
+### Basiese gebruik {#basic-usage}
 
 ```php
 // Voeg 1 by die `api_calls` kolom vir lidmaatskap ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Naspoor van API-gebruik per lidmaatskap
+### Naspoor van API-gebruik per lidmaatskap {#tracking-api-usage-per-membership}
 
 'n Praktiese patroon vir die handhawing van per-lidmaatskap API-ratebeperkings:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Hoekom `increment_item()` en nie `update_item()` nie
+### Hoekom `increment_item()` en nie `update_item()` nie {#why-incrementitem-instead-of-updateitem}
 
 'n Naïef lees-verander-skryf-benadering is onveilig onder gelyktydige versoeke:
 

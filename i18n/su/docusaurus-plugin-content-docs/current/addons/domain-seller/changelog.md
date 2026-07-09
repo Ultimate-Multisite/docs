@@ -3,7 +3,7 @@ title: Log Parobahan Penjual Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Catetan Parobahan Domain Seller
+# Catetan Parobahan Domain Seller {#domain-seller-changelog}
 
 Vérsi 1.3.0 - Dileupaskeun dina 2026-06-02
 - Anyar: Nambahkeun pépéling network-admin nalika saldo reseller HostAfrica jadi teuing handap
@@ -134,20 +134,20 @@ Vérsi 1.0.0 - Dirilis dina 2025-09-28
 * **Dibereskeun:** Sadaya kode v1 anu deprecated diropéa kana standar v2
 * **Dipiceun:** Kasaluyuan v1 warisan (parobahan anu megatkeun)
 
-### Vérsi Saméméhna (v1 Warisan)
+### Vérsi Saméméhna (v1 Warisan) {#previous-versions-v1-legacy}
 
-### Vérsi 0.0.3 - 20/08/2019
+### Vérsi 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Dibereskeun: Teu cocog jeung Groundhogg CRM
 * Catetan: Ieu téh rilis panungtung anu cocog jeung v1
 
-### Vérsi 0.0.2 - 07/12/2018
+### Vérsi 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Dibereskeun: Ngaleungitkeun widang License Key
 * Dibereskeun: Tab rencana leungit nalika plugin fitur aktip
 * Dironjatkeun: Nambihan tombol lewatan dina widang pendaptaran
 
-### Vérsi 0.0.1 - Rilis Mimiti
+### Vérsi 0.0.1 - Rilis Mimiti {#version-001---initial-release}
 
 * Integrasi OpenSRS dasar pikeun WP Ultimo v1
 * Pilarian jeung pendaptaran domain basajan

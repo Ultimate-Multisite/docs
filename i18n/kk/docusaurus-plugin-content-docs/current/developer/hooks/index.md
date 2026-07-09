@@ -3,11 +3,11 @@ title: Хуктар анықтамалығы
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks анықтамалығы
+# Hooks анықтамалығы {#hooks-reference}
 
 Ultimate Multisite ішіндегі барлық **59 әрекет** және **118 сүзгі** үшін автоматты түрде жасалған құжаттама.
 
-## Әрекеттер
+## Әрекеттер {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Аутентификацияны қайта бағыттау алдында іске қосылады.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Аутентификация cookie-і орнатылардың дәл алдында іске қосылады.
@@ -70,7 +70,7 @@ Ultimate Multisite ішіндегі барлық **59 әрекет** және **
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — нысан дерекқорға сақталғаннан кейін іске қосылады.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin әзірлеушілеріне құлыптан шығару процесіне әрекеттер қосуға мүмкіндік береді.
 
-## Сүзгілер
+## Сүзгілер {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Аутентификация cookie файлының мерзімі аяқталу кезеңінің ұзақтығын сүзеді.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Аутентификацияны қайта бағыттау схемасын сүзеді.

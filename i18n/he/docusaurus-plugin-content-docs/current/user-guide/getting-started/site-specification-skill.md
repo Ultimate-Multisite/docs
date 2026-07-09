@@ -3,11 +3,11 @@ title: מיומנות מפרט אתר
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# מיומנות אפיון האתר (Site Specification Skill)
+# מיומנות אפיון האתר (Site Specification Skill) {#site-specification-skill}
 
 **מיומנות אפיון האתר** היא גישה מובנית לאיסוף המטרות, קהל היעד ומותג של האתר שלך. מידע זה נשמר בזיכרון **site_brief** שלך, ואג'נטים (Agents) מתייחסים אליו לאורך סשנים שונים כדי לספק סיוע עקבי ומותאם להקשר.
 
-## מהו אפיון האתר?
+## מהו אפיון האתר? {#what-is-site-specification}
 
 אפיון האתר הוא תהליך תיעוד של:
 
@@ -19,9 +19,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 מפרט זה הופך ל-**site_brief** שלך, זיכרון קבוע שאג'נטים משתמשים בו כדי להבין את ההקשר של האתר שלך.
 
-## למה להשתמש באפיון האתר?
+## למה להשתמש באפיון האתר? {#why-use-site-specification}
 
-### עקביות בין סשנים
+### עקביות בין סשנים {#consistency-across-sessions}
 
 בלי site_brief, היית צריך להסביר מחדש את מטרת האתר בכל פעם שאתה מתחיל סשן חדש. עם site_brief, האג'נטים מבינים מיד:
 
@@ -30,7 +30,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - את מבנה התוכן שלך
 - את המטרות העסקיות שלך
 
-### המלצות טובות יותר
+### המלצות טובות יותר {#better-recommendations}
 
 האג'נטים משתמשים ב-site_brief שלך כדי:
 
@@ -39,17 +39,17 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - להציע עיצובים עקביים עם המותג שלך
 - להימנע מהצעת פיצ'רים שאינם תואמים
 
-### קליטה מהירה יותר
+### קליטה מהירה יותר {#faster-onboarding}
 
 אג'נטים חדשים (או אג'נטים בסשנים חדשים) יכולים להגיע לרמה גבוהה במהירות על ידי קריאת ה-site_brief שלך, במקום לשאול שאלות הבהרה.
 
-## אתחול אפיון האתר
+## אתחול אפיון האתר {#initiating-site-specification}
 
-### במהלך ה-Onboarding של Theme Builder
+### במהלך ה-Onboarding של Theme Builder {#during-theme-builder-onboarding}
 
 מיומנות אפיון האתר מאותחלת אוטומטית במהלך תהליך ה-onboarding של **Theme Builder**. אג'נט ה-Setup Assistant שואל שאלות ובונה את ה-site_brief שלך.
 
-### אתחול ידני
+### אתחול ידני {#manual-initiation}
 
 אתה יכול להתחיל אפיון אתר בכל עת:
 
@@ -63,9 +63,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 "Help me create a site brief"
 ```
 
-## תהליך אפיון האתר
+## תהליך אפיון האתר {#the-site-specification-process}
 
-### שלב 1: מטרת האתר
+### שלב 1: מטרת האתר {#step-1-site-purpose}
 
 האג'נט שואל:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 אתה יכול לבחור קטגוריה או לתאר את המטרה שלך.
 
-### שלב 2: קהל היעד
+### שלב 2: קהל היעד {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### שלב 3: זהות המותג
+### שלב 3: זהות המותג {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### שלב 4: מטרות עסקיות
+### שלב 4: מטרות עסקיות {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### שלב 5: מבנה התוכן
+### שלב 5: מבנה התוכן {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## זיכרון site_brief שלך
+## זיכרון site_brief שלך {#your-sitebrief-memory}
 
 לאחר השלמת אפיון האתר, המידע שלך נשמר כ-**site_brief** בזיכרון האג'נט. זהו רשומה מובנית המכילה:
 
@@ -169,9 +169,9 @@ What content types do you use?
 }
 ```
 
-## צפייה ועדכון ה-site_brief שלך
+## צפייה ועדכון ה-site_brief שלך {#viewing-and-updating-your-sitebrief}
 
-### צפייה ב-site_brief שלך
+### צפייה ב-site_brief שלך {#view-your-sitebrief}
 
 שאל את האג'נט:
 
@@ -187,7 +187,7 @@ What content types do you use?
 
 האג'נט יציג את המפרט השמור שלך.
 
-### עדכון ה-site_brief שלך
+### עדכון ה-site_brief שלך {#update-your-sitebrief}
 
 אם האתר שלך מתפתח, אתה יכול לעדכן אותו:
 
@@ -203,9 +203,9 @@ What content types do you use?
 
 פעולה זו תריץ מחדש את מיומנות אפיון האתר עם המידע הקיים שלך כנקודת התחלה.
 
-## איך האג'נטים משתמשים ב-site_brief
+## איך האג'נטים משתמשים ב-site_brief {#how-agents-use-sitebrief}
 
-### המלצות עיצוב
+### המלצות עיצוב {#design-recommendations}
 
 כאשר אתה מבקש שינויים בעיצוב, האג'נטים מתייחסים ל-site_brief שלך:
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### הצעות פיצ'רים
+### הצעות פיצ'רים {#feature-suggestions}
 
 האג'נטים מציעים פיצ'רים שמתיישרים עם המטרות שלך:
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### מבנה תוכן
+### מבנה תוכן {#content-structure}
 
 האג'נטים מציעים ארגון תוכן בהתבסס על המבנה שלך:
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## שיטות עבודה מומלצות
+## שיטות עבודה מומלצות {#best-practices}
 
-### להיות ספציפי
+### להיות ספציפי {#be-specific}
 
 במקום "קהל כללי," תאר את קהל היעד האמיתי שלך:
 
 - ✓ "Women aged 25-45, interested in sustainable fashion"
 - ✗ "Everyone"
 
-### לעדכן באופן קבוע
+### לעדכן באופן קבוע {#update-regularly}
 
 ככל שהאתר שלך מתפתח, עדכן את ה-site_brief שלך:
 
@@ -256,14 +256,14 @@ that showcase multiple products together."
 - כשזהות המותג שלך משתנה
 - כשמטרות העסקיות שלך משתנות
 
-### להשתמש בטרמינולוגיה עקבית
+### להשתמש בטרמינולוגיה עקבית {#use-consistent-terminology}
 
 השתמש באותם מונחים לאורך הסשנים:
 
 - ✓ תמיד אמור "sustainable jewelry" (ולא "eco-friendly jewelry" ו-"green products")
 - ✓ התייחס באופן עקבי לקהל היעד שלך באותו אופן
 
-### לכלול הקשר
+### לכלול הקשר {#include-context}
 
 ספק רקע שעוזר לאג'נטים להבין את ההחלטות שלך:
 
@@ -271,7 +271,7 @@ that showcase multiple products together."
 - "הקהל שלנו טכנולוגי ומצפה לעיצוב מודרני"
 - "אנחנו סטארט-אפ שמומן עצמאית, אז אנחנו צריכים פתרונות חסכוניים"
 
-## קשר ל-Theme Builder Onboarding
+## קשר ל-Theme Builder Onboarding {#relationship-to-theme-builder-onboarding}
 
 מיומנות אפיון האתר משולבת בתהליך ה-onboarding של **Theme Builder**. כאשר אתה משלים את ה-onboarding, ה-site_brief שלך נוצר אוטומטית עם המידע שסיפקת.
 
@@ -281,7 +281,7 @@ that showcase multiple products together."
 - לעדכן את ה-site_brief שלך ככל שהאתר מתפתח
 - ליצור מפרט מפורט לפני תחילת ה-Theme Builder
 
-## פתרון תקלות
+## פתרון תקלות {#troubleshooting}
 
 **ה-site_brief שלי לא נמצא בשימוש**
 - ודא שהאג'נט יכול לגשת לזיכרון
@@ -297,7 +297,7 @@ that showcase multiple products together."
 - עדכן את ה-site_brief שלך אם הוא מיושן
 - ספק הקשר נוסף בבקשות שלך
 
-## צעדים הבאים
+## צעדים הבאים {#next-steps}
 
 לאחר הגדרת מפרט האתר שלך:
 

@@ -3,7 +3,7 @@ title: Hva er WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Hva er WordPress Multisite?
+# Hva er WordPress Multisite? {#what-is-wordpress-multisite}
 
 WordPress har en innebygd funksjon kalt «Multisite» som stammer helt tilbake til 2010, da WordPress 3.0 ble lansert. Siden den gang har funksjonen blitt oppdatert flere ganger med nye muligheter og bedre sikkerhet.
 
@@ -11,7 +11,7 @@ I korte trekk kan du tenke på WordPress multisite slik: Et universitet har én 
 
 ## 
 
-## Hva er egentlig WordPress Multisite?
+## Hva er egentlig WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite er en funksjon i WordPress som lar flere nettsteder dele én og samme WordPress-installasjon. Når multisite aktiveres, blir den opprinnelige WordPress-siden gjort om til det som ofte kalles et **nettverk av nettsteder**.
 
@@ -23,7 +23,7 @@ Dette er en av de største fordelene med multisite – du kan utvide antall nett
 
 ## 
 
-## Subdomene eller underkatalog?
+## Subdomene eller underkatalog? {#subdomain-or-subdirectory}
 
 Det finnes to måter å kjøre WordPress multisite på – og du må velge én av dem når du gjør om den vanlige WordPress-installasjonen din til en multisite-installasjon:
 
@@ -49,7 +49,7 @@ En av hovedutfordringene med subdomene-modus er SSL-dekning (HTTPS) for hele net
 
 I motsetning til underkatalog-modus blir undernettstedene i et subdomene-basert nettverk betraktet av søkemotorer som separate nettsteder. Det betyr at innhold på ett undernettsted ikke påvirker SEO-ytelsen til andre undernettsted i det hele tatt.
 
-## Superadministratoren
+## Superadministratoren {#the-super-admin}
 
 Vanlige WordPress-installasjoner med ett enkelt nettsted lar deg legge til ubegrenset antall brukere og gi dem ulike brukerroller med forskjellige tillatelser.
 
@@ -63,7 +63,7 @@ Utvidelser og temaer kan bare installeres eller avinstalleres fra nettverksadmin
 
 _Merk: Som du ser, gir du en bruker full kontroll over nettverket ditt når du inviterer noen og gir dem superadministratorstatus. Andre superadministratorer kan for eksempel til og med fjerne din superadministratorstatus, noe som effektivt låser deg ute fra ditt eget nettverksadministrasjonspanel. For å gi Ultimate Multisite-kunder finmasket kontroll over hva andre superadministratorer kan gjøre, har vi en tilleggsfunksjon som heter Support Agents. Denne tilleggsfunksjonen lar deg opprette enda en type bruker – en agent – med bare de tillatelsene de trenger for å utføre oppgavene sine i nettverket._
 
-## Hva deles mellom undernettstedene og hva deles ikke
+## Hva deles mellom undernettstedene og hva deles ikke {#what-is-shared-among-subsites-and-what-is-not}
 
 Som vi nevnte tidligere, er en av de viktigste fordelene med WordPress multisite at alle undernettstedene deler de samme konfigurasjonene, kjernefilene, temaene, utvidelsene, WordPress-kjernefilene, osv.
 
@@ -75,7 +75,7 @@ Det finnes imidlertid elementer som er pent avgrenset per undernettsted.
 
 \- De fleste databasetabellene opprettes for hvert undernettsted, noe som betyr at innlegg, kommentarer, sider, innstillinger og mer er avgrenset til hvert undernettsted.
 
-## Brukeradministrasjon i WordPress Multisite
+## Brukeradministrasjon i WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Et krevende tema i WordPress multisite er brukeradministrasjon. WordPress-brukertabellen er en av de få tabellene som deles mellom alle undernettstedene.
 
@@ -99,7 +99,7 @@ _Merk: Vi forstår hvor problematisk dette kan være avhengig av bruksområdet d
 
 Selv om brukertabellen er delt, kan brukere legges til og fjernes fra undernettsted av undernettstedsadministratorer eller superadministratoren, og de kan til og med ha ulike brukerroller på forskjellige undernettsted.
 
-## Ytelsesvurderinger
+## Ytelsesvurderinger {#performance-considerations}
 
 WordPress multisite er virkelig kraftig når det gjelder antall nettsteder det kan støtte. Dette bekreftes av at [WordPress.com](https://WordPress.com), Edublogs og Campuspress alle er multisite-baserte tjenester, og hver av dem hoster tusenvis av nettsteder.
 

@@ -4,11 +4,11 @@ title: Ֆիլտր - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Զտիչ՝ wu_pre_save_settings
+# Զտիչ՝ wu_pre_save_settings {#filter-wupresavesettings}
 
 Թույլ է տալիս մշակողներին զտել կարգավորումները նախքան Ultimate Multisite-ի կողմից պահպանումը։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 | $settings_to_save | `array` | Ավելացվելիք նոր կարգավորումները։ |
 | $saved_settings | `array` | Ներկայում պահպանված կարգավորումները։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.0.18
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296)-ում՝ 296-րդ տողում

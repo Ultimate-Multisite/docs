@@ -3,9 +3,9 @@ title: Ho na le ho tsoela le ho fana ka tšhobo le li-invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ho Morero Le Tlhaloso Le Tlhaloso
+# Ho Morero Le Tlhaloso Le Tlhaloso {#managing-payments-and-invoices}
 
-## Setso Sa Tlhaloso
+## Setso Sa Tlhaloso {#payment-settings}
 
 Go a tlo ka **Ultimate Multisite → Settings** le tla tsamaya ka tab ya **Payment**.
 
@@ -15,7 +15,7 @@ Kea fa lefa la fanaeng tsa setso sa tlhaloso:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Boitshwaro Ba Tlhaloso Le Tlhaloso
+### Boitshwaro Ba Tlhaloso Le Tlhaloso {#general-payment-options}
 
 Mo setso se fetang, u ka fana ka ho setse:
 
@@ -24,7 +24,7 @@ Mo setso se fetang, u ka fana ka ho setse:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Tlhaloso Le Tlhaloso La Tlhaloso
+### Tlhaloso Le Tlhaloso La Tlhaloso {#payment-gateways}
 
 Ultimate Multisite e tšoa le mekgwa e fapaneng tsa ditswalo tsa mokgwa o tsamaisang (multiple payment gateways). U ka ukhutafisa le u rata motho ka seka le seka ka tab ya Payment settings.
 
@@ -40,11 +40,11 @@ Ka mekgwa e tšoa, go na le seketso se se fapaneng se leng o tla ithuta API keys
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode (Mokgwa wa ho lula)
+### Sandbox Mode (Mokgwa wa ho lula) {#sandbox-mode}
 
 U ka ukhutafisa **Sandbox Mode** ho rata motho ka go ithuta ditswalo tsa motho lehle ha o tla fana ka tšoa e fapaneng. Ha Sandbox mode e le e tsamaile, ha ho tla fana ka tšoa e fapaneng.
 
-## Ho bona Ditswalo tsa Motho (Viewing Payments)
+## Ho bona Ditswalo tsa Motho (Viewing Payments) {#viewing-payments}
 
 Hloka ka **Payments** page ho Ultimate Multisite ho ba leboho bohle ba tšepetso tsa hau ka netefe ya hau.
 
@@ -54,7 +54,7 @@ U ka seleketsa tšepetso ka tsela (status) (e ne efe, e le teng, e ile e faka, e
 
 Hloka ka tšepetso ho bona ditlhogo tsa yo o tla li-tšepetso tsa hae tse di fetang, di leboho tsa membership, litlhahlo tsa morao, le ditiro tsa payment gateway.
 
-## Invoices (Litlhogo)
+## Invoices (Litlhogo) {#invoices}
 
 Ultimate Multisite e ka dira litlhogo tsa tšepetso ka tsela. U ka u rata template ya litlhogo le fōma ea ho numera ho fetoga ho setso sa Payments.
 

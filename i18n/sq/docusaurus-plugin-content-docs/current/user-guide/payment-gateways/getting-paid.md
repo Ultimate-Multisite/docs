@@ -3,13 +3,13 @@ title: Marrja e pagesës
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Marrja e pagesave (v2)
+# Marrja e pagesave (v2) {#getting-paid-v2}
 
 _**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 
 Ultimate Multisite ka një sistem të integruar anëtarësimi dhe faturimi. Që sistemi ynë i faturimit të funksionojë, kemi integruar portat më të zakonshme të pagesave të përdorura në tregtinë elektronike. Portat e parazgjedhura të pagesave në Ultimate Multisite janë _Stripe_ , _PayPal_ , dhe Pagesa Manuale. Mund të përdorni gjithashtu _WooCommerce_ , _GoCardless_ dhe _Payfast_ për të marrë pagesa duke instaluar add-on-et e tyre përkatëse.
 
-## Cilësimet bazë
+## Cilësimet bazë {#basic-settings}
 
 Mund të konfiguroni cilëndo nga këto porta pagesash te cilësimet e pagesave të Ultimate Multisite. Mund ta gjeni duke shkuar te **menuja Ultimate Multisite > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Kjo parandalon që një anëtarësim të duket sikur rinovohet automatikisht kur
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Ku të gjeni portat:
+## Ku të gjeni portat: {#where-to-find-the-gateways}
 
 Mund t’i konfiguroni portat e pagesave në të njëjtën faqe ( **Ultimate Multisite > Settings > Payments**). Menjëherë poshtë **portave aktive të pagesave** , do të mund të shihni: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ dhe _Manual_.
 
@@ -67,7 +67,7 @@ Ja gjithashtu një pamje e plotë e cilësimeve të portave të pagesave:
 
 Tani, nëse dëshironi të përdorni _WooCommerce_ , _GoCardless_ ose _Payfast_ si portën tuaj të pagesave, do t’ju duhet të **instaloni dhe konfiguroni add-on-et e tyre**.
 
-### Si të instaloni add-on-in WooCommerce:
+### Si të instaloni add-on-in WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 E kuptojmë që _Stripe_ dhe _PayPal_ nuk janë të disponueshme në disa vende, gjë që kufizon ose pengon përdoruesit e Ultimate Multisite ta përdorin në mënyrë efektive plugin-in tonë. Prandaj krijuam një add-on për të integruar _WooCommerce,_ që është një plugin shumë i popullarizuar për tregti elektronike. Zhvillues nga e gjithë bota krijuan add-on-e për të integruar porta të ndryshme pagesash me të. Ne përfituam nga kjo për të zgjeruar portat e pagesave që mund të përdorni me sistemin e faturimit të Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Pasi ta aktivizoni, nëse ende nuk e keni shtojcën WooCommerce të instaluar dh
 
 Për të lexuar më shumë rreth shtesës WooCommerce Integration, **klikoni këtu**.
 
-### Si të instaloni shtesën GoCardless:
+### Si të instaloni shtesën GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Hapat për të instaluar shtesën _GoCardless_ janë pothuajse të njëjtë si për shtesën _WooCommerce_. Ju lutemi shkoni te faqja e shtesave dhe zgjidhni shtesën **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Pasi instalimi të përfundojë, do të ridrejtoheni te faqja e shtojcave. Këtu
 
 Për të mësuar si të filloni me gateway-n _GoCardless_, **lexoni këtë artikull**.
 
-### Si të instaloni shtesën Payfast:
+### Si të instaloni shtesën Payfast: {#how-to-install-the-payfast-add-on}
 
 Shkoni te faqja e shtesave dhe zgjidhni shtesën **Ultimate Multisite: Payfast Gateway**.
 

@@ -3,11 +3,11 @@ title: Referans Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referans Hooks
+# Referans Hooks {#hooks-reference}
 
 Dokimantasyon ki pwodwi otomatikman pou tout **59 actions** ak **118 filters** nan Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Deklanche anvan redireksyon otantifikasyon an.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Deklanche touswit anvan yo fikse cookie otantifikasyon an.
@@ -70,7 +70,7 @@ Dokimantasyon ki pwodwi otomatikman pou tout **59 actions** ak **118 filters** n
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Deklanche apre yo fin estoke yon objè nan baz done a.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Pèmèt devlopè plugin ajoute aksyon nan pwosesis deblokaj la.
 
-## Filtè
+## Filtè {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtre dire peryòd ekspirasyon cookie otantifikasyon an.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtre plan redireksyon otantifikasyon an.

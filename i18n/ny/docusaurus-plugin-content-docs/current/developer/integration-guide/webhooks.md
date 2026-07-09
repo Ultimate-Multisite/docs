@@ -3,11 +3,11 @@ title: Kusamalira Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Kusamalira Webhook
+# Kusamalira Webhook {#webhook-handling}
 
 Pangani malo olandirira webhook achikhalidwe kuti mulandire zochitika kuchokera ku mautumiki akunja ndi kulunzanitsa data ndi Ultimate Multisite.
 
-## Malo Olandirira Webhook Achikhalidwe
+## Malo Olandirira Webhook Achikhalidwe {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Zinthu Zofunika pa Chitetezo
+## Zinthu Zofunika pa Chitetezo {#security-considerations}
 
 - Nthawi zonse tsimikizirani ma siginecha a webhook pogwiritsa ntchito HMAC kapena chinsinsi chogawana
 - Gwiritsani ntchito `permission_callback` pa njira yanu ya REST — musayiyike kukhala `__return_true` pa malo opanga

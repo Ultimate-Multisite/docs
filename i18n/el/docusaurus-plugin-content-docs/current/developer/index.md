@@ -3,11 +3,11 @@ title: Τεκμηρίωση για Developers
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Τεκμηρίωση για Developers
+# Τεκμηρίωση για Developers {#developer-documentation}
 
 Αυτό το εγχειρίδιο παρέχει στους developers όλα τα απαραίτητα για να ενσωματώσουν, να επεκτείνουν ή να αναπτύξουν addons για το Ultimate Multisite. Το Ultimate Multisite μετατρέπει ένα WordPress Multisite network σε μια πλατφόρμα Website-as-a-Service (WaaS).
 
-## Τι είναι διαθέσιμο
+## Τι είναι διαθέσιμο {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Πλήρεις λειτουργίες CRUD για όλες τις οντότητες (πελάτες, sites, memberships, payments, products, domains) με authentication μέσω API key
 - **[Hooks Reference](./hooks/guide)** — 200+ action hooks και 280+ filter hooks για εκδηλώσεις κύκλου ζωής (lifecycle events) και προσαρμογή
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Code Examples](./code-examples/)** — Προηγμένα patterns για dynamic pricing, site provisioning, custom limitations και multi-gateway processing
 - **[Addon Development](./addon-development/getting-started)** — Δομημένο framework για τη δημιουργία addon plugins
 
-## Απαιτήσεις
+## Απαιτήσεις {#requirements}
 
 - Εγκατάσταση WordPress Multisite
 - PHP 7.4 ή νεότερη
 - Ενεργοποιημένο plugin Ultimate Multisite
 
-## Εγκατάσταση μέσω Composer / Bedrock
+## Εγκατάσταση μέσω Composer / Bedrock {#composer--bedrock-installation}
 
 Το Ultimate Multisite είναι διαθέσιμο στο [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) ως `ultimate-multisite/ultimate-multisite`. Αυτή είναι η προτεινόμενη μέθοδος εγκατάστασης για setups WordPress που βασίζονται στο [Bedrock](https://roots.io/bedrock/) και άλλες περιβάλλοντα που διαχειρίζονται μέσω Composer.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Γρήγορη Εκκίνηση
+## Γρήγορη Εκκίνηση {#quick-start}
 
-### Χρήση του REST API
+### Χρήση του REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Hooking σε Events
+### Hooking σε Events {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {

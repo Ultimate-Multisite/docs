@@ -3,7 +3,7 @@ title: Bhalisa i-Account nge-Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Umcimbi: Bhalisa i-akhawunti nge-Zapier
+# Umcimbi: Bhalisa i-akhawunti nge-Zapier {#event-register-an-account-via-zapier}
 
 Esihlokweni [Ukuhlanganisa Ultimate Multisite ne-Zapier](zapier.md), sixoxe ngokuthi ungayisebenzisa kanjani i-Zapier ukwenza izenzo ezahlukene ngaphakathi kwe-Ultimate Multisite ngokusekelwe kuma-triggers nemicimbi. Kulesi sihloko, sizobonisa ukuthi ungazihlanganisa kanjani izinhlelo zokusebenza zezinkampani zangaphandle. Sizosebenzisa i-Google Sheets njengomthombo wedatha bese sithumela ulwazi ku-Ultimate Multisite ukuze kubhaliswe i-akhawunti.
 

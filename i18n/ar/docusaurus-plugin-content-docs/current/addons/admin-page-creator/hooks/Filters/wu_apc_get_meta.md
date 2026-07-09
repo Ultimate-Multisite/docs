@@ -4,11 +4,11 @@ title: مرشح - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# عامل التصفية: wu_apc_get_meta
+# عامل التصفية: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 يتيح للمطورين تصفية القيم النهائية، وإضافة حالات معالجة جديدة.
 
-## المعاملات
+## المعاملات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 | $meta_type | `string` | نوع بيانات الميتا التي سيتم استرجاعها. |
 | $meta_key | `string` | اسم حقل الميتا. |
 
-### منذ
+### منذ {#since}
 
 - 1.4.0
 
-### المصدر
+### المصدر {#source}
 
 تم تعريفه في [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) في السطر 93
 
-## يعيد
+## يعيد {#returns}
 
 قيمة افتراضية جديدة.

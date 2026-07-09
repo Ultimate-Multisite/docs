@@ -3,11 +3,11 @@ title: Provedor-aware prompt caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching
+# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 introduce **provider-aware prompt caching**, ze optimizatzen API kostuak eta latentez (latency) gisa, prompt-ak erabiltzaileko LLM provider-ek artean cache egiten da. Provider guztiek desberdinetik cache mekanismo eta konfiguratura hauek ditu.
 
-## Deskurtsoa
+## Deskurtsoa {#overview}
 
 Prompt caching-ek lehen daitezke:
 
@@ -23,11 +23,11 @@ Provider desberdinak cache egiten hasieraz:
 - **OpenRouter**: Provider-eko cachea
 - **Vertex Anthropic**: Cache kontrolu duen prompt caching
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini-ak `cachedContents` API bidez cache administrazio eragiketa ematen du.
 
-### Konfigurazioa
+### Konfigurazioa {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Cache Egina Prompt bat
+### Cache Egina Prompt bat {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Indartzen du: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Promptaren Cachea Erri
+### Promptaren Cachea Erri {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cachearen Bidea (Cache Lifecycle)
+### Cachearen Bidea (Cache Lifecycle) {#cache-lifecycle}
 
 ```php
 // Cachearen kontuan listatu
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini-ren Best Practiceak
+### Gemini-ren Best Practiceak {#best-practices-for-gemini}
 
 - **TTL-a ondo ematen**: Kostu ahorau eta cachearen batzu edo ezbatzen artean balansa egin.
 - **System promptaren cachea**: Beste eskaera bere oneskatu (Reuse the same system prompt across requests).
 - **Cachearen erabilera monitorizatu**: Nola cacheak gehiago erabiltzen dira, eta nolan da.
 - **Hautatutako cacheak asekitu**: Ez erabiltzen cacheak periodicoki hautatzea.
 
-## Azure OpenAI: Prompt Caching (Promptaren Cachea)
+## Azure OpenAI: Prompt Caching (Promptaren Cachea) {#azure-openai-prompt-caching}
 
 Azure OpenAI-k TTL-aren automatikoko manehoarekin prompt cachinga suportatzen du.
 
-### Konfigurazioa (Configuration)
+### Konfigurazioa (Configuration) {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Cachearen Aktiboa Ekitzea (Enabling Caching)
+### Cachearen Aktiboa Ekitzea (Enabling Caching) {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Headerak
+### Cache Headerak {#cache-headers}
 
 Azure OpenAI-k cache kontrola erantzunak (HTTP headers) erabiltzen du:
 
@@ -152,7 +152,7 @@ Eskurtatu dituen jarduerak:
 - `no_cache`: Erantzunak ez cacheatzi behar da.
 - `no_store`: Ez cacheatzi eta ez gogoratzen du.
 
-### Cache Erabenduaren Erakunde Egitzena
+### Cache Erabenduaren Erakunde Egitzena {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache erabendu: $cache_tokens token\n";
 echo "Cache hitak: $cache_hits token\n";
 ```
 
-### Azure OpenAI-ko Best Practiceak
+### Azure OpenAI-ko Best Practiceak {#best-practices-for-azure-openai}
 
 - **Erabendu batzuk erabiltu**: Identiko iradokizunak cachea onartzen du.
 - **TTL erabili**: Kostua eta freskurtasunaren bilduan balansa egin.
 - **Cache metrikak egitu**: Cache erabendu eta hitak ikustu.
 - **Erreur esku batzuk agertu**: Cache hitak maximizatzeko iradokizunak grupatu.
 
-## OpenRouter: Provider-eko Cachea
+## OpenRouter: Provider-eko Cachea {#openrouter-provider-specific-caching}
 
 OpenRouter-ek osasunaren (OpenAI, Anthropic, etc.) ondoriozko provider-ek bidez cachea onartzen du.
 
-### Konfigurazioa
+### Konfigurazioa {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Caching Erabiltzea
+### OpenRouter Caching Erabiltzea {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Provider-eko Erabilgar Opcionesak
+### Provider-eko Erabilgar Opcionesak {#provider-specific-options}
 
 Provider-ek ezberdina cachea mekanismoak ditu:
 
@@ -230,20 +230,20 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter-eko Best Practicesak
+### OpenRouter-eko Best Practicesak {#best-practices-for-openrouter}
 
 - **Zure provider-ren cachea jakatu**: Provider guzti mekanismo ezberdinetu ditu.
 - **Cachearen erakunde testatu**: Cachea zure aukeratutako providerarekin onartzen da.
 - **Kostuak erakunde**: Cachearen erabilera gertatzen duen aurrezkedune ikusi.
 - **Modelak onartu**: Modelak aldatzea cache hit-ek eskaintzen du.
 
-## Vertex Anthropic: Prompt Caching eta Cache Controla
+## Vertex Anthropic: Prompt Caching eta Cache Controla {#vertex-anthropic-prompt-caching-with-cache-control}
 
 (Eski testu hau ez da, baina itxura dago.)
 
 Vertex Anthropic (Google Cloud) prompt caching-a suporta cache explicit control.
 
-### Konfigurazioa
+### Konfigurazioa {#configuration-3}
 
 ```php
 $config = [
@@ -261,7 +261,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic Caching Erabiltzen
+### Vertex Anthropic Caching Erabiltzen {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -291,12 +291,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache Control Tipaketa
+### Cache Control Tipaketa {#cache-control-types}
 
 - **ephemeral**: Cache requestaren zeharraren bitartean (default)
 - **persistent**: Multiple requestetan cachea (supportatzen bada)
 
-### Cache Erabiltzen Monitorizazioa
+### Cache Erabiltzen Monitorizazioa {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -309,16 +309,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic-eko Praktikak
+### Vertex Anthropic-eko Praktikak {#best-practices-for-vertex-anthropic}
 
 - **Erabatu cache ephemeral (eg. edo sesio bat daiteko)**: Ez dago irudien cache-a itxarako.
 - **Max_tokensa ondo ezartu**: Cache-aren diseinazioa eta kostuan balansa egin behar duzu.
 - **Cache metrikak eratu**: Cache-aren eraginkoritatea egiaztatu.
 - **Itxarpenak workload-arekin erakustu**: Cache-ak uso-arekin onartzen duen jakinarazteko.
 
-## Provider-ek Arrakastapen Estrategia (Cross-Provider Caching Strategy)
+## Provider-ek Arrakastapen Estrategia (Cross-Provider Caching Strategy) {#cross-provider-caching-strategy}
 
-### Konfigurazioa Batua (Unified Configuration)
+### Konfigurazioa Batua (Unified Configuration) {#unified-configuration}
 
 ```php
 $config = [
@@ -344,7 +344,7 @@ $config = [
 ];
 ```
 
-### Provider-ek Ahan-dendua (Provider Detection)
+### Provider-ek Ahan-dendua (Provider Detection) {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -355,7 +355,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Provider-eko cache konfiguratazioa eratu
 ```
 
-### Itxarpenak (Fallback Strategy)
+### Itxarpenak (Fallback Strategy) {#fallback-strategy}
 
 ```php
 try {
@@ -369,9 +369,9 @@ try {
 }
 ```
 
-## Kostu optimizazioa
+## Kostu optimizazioa {#cost-optimization}
 
-### Aurreratu ahorazioak
+### Aurreratu ahorazioak {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -389,7 +389,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Eskaintzen dituen ahorazioa: \$$savings\n";
 ```
 
-### Optimazio aukerak
+### Optimazio aukerak {#optimization-tips}
 
 - **Cacheatu prompt funtsezkoak**: Madari ahorazio handiak dira
 - **Gaitatu kontekstua**: Lehen erabiltzen dituen dokumentuak cacheatu
@@ -397,30 +397,30 @@ echo "Eskaintzen dituen ahorazioa: \$$savings\n";
 - **Cachearen eraginkoritatea eratu**: Astea ahorazioak egia zuzendu
 - **TTL aukeratu**: Kostu eta freskurtasunaren balansa egin
 
-## Erreguntzak
+## Erreguntzak {#troubleshooting}
 
-### Cache ez dago erabiltzen
+### Cache ez dago erabiltzen {#cache-not-being-used}
 
 - Konfigurazioran cachearekin ondo ireki da?
 - Prompt funtsezkoak parehas egin behar dira (cacheari erabilera eskatzen du parehas edo lapurtu)
 - Cachearen eduki ez dagoela eratu
 - Proveedoraren konponbideko limiteak eratu
 
-### Cachearekin ondo ireki ez da
+### Cachearekin ondo ireki ez da {#cache-creation-failing}
 
 Cache-aizua ze kontrolatu, prozesuraren limitazioak edo kontratuaren bat ez da.
 Kontrollatu, cache control sintaksia (syntax) barne dagoela.
 Eskerrikun, provider-ek modelaren artean cache-aizketa suportatzen duen jakin.
 Limitazioak bidez provider-en dokumentazioa ikusi.
 
-### Kostuak ezberdinetasunak
+### Kostuak ezberdinetasunak {#unexpected-costs}
 
 - Cache-aizketa kontrako cache read tokens eta kontratuaren bilatu.
 - Cache-aizketa gurean erabiltzen duen jakin.
 - Prompt-ek ondo aldaketa egin dezake den cache misses (cache-aizketa ez duten) kontrolatu.
 - TTL edo cache strategya aldaketara iruki.
 
-## Provider-ek zehaztasuna
+## Provider-ek zehaztasuna {#provider-comparison}
 
 | Karakteristika | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---|---|---|---|---|
@@ -430,7 +430,7 @@ Limitazioak bidez provider-en dokumentazioa ikusi.
 | Kostuak reduktzea | 90% | 90% | Provider-dependent | 90% |
 | Monitorizazioa | Detallatuta | Metrikak bidez | Provider-dependent | Erabendu bidez (Usage) |
 
-## Irudiak gaur eguneko
+## Irudiak gaur eguneko {#next-steps}
 
 1. **Providera aukeratu**: Bezatz da beharrezko alegiaren arabera.
 2. **Cache-aizketa konfiguratatu**: Provider-ek bere cache-aizketa aipatzen.

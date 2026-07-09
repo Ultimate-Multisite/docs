@@ -3,17 +3,17 @@ title: cPanel Integration
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Entegrasyonu
+# cPanel Entegrasyonu {#cpanel-integration}
 
-## Genel Bakış
+## Genel Bakış {#overview}
 cPanel, birçok paylaşımlı ve özel barındırma sağlayıcısı tarafından kullanılan en popüler web barındırma kontrol panellerinden biridir. Bu entegrasyon, Ultimate Multisite ile cPanel arasında otomatik alan adı senkronizasyonu sağlayarak, alan adı takma adlarını (domain aliases) ve alt alan adlarını (subdomains) cPanel hesabınıza otomatik olarak eklemenize olanak tanır.
 
-## Özellikler
+## Özellikler {#features}
 - cPanel'de otomatik takma alan adı (addon domain) oluşturma
 - cPanel'de otomatik alt alan adı oluşturma (alt alan adı multisite kurulumları için)
 - Eşlemeler silindiğinde alan adı kaldırma
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 Aşağıdaki sabitlerin `wp-config.php` dosyanızda tanımlanması gerekir:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Varsayılan 2083'tür
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Varsayılan /public_html'dir
 ```
 
-## Kurulum Talimatları
+## Kurulum Talimatları {#setup-instructions}
 
-### 1. cPanel Kimlik Bilgilerinizi Alın
+### 1. cPanel Kimlik Bilgilerinizi Alın {#1-get-your-cpanel-credentials}
 
 1. cPanel kullanıcı adınızı ve şifrenizi barındırma sağlayıcınızdan edinin.
 2. cPanel ana bilgisayarınızı (genellikle `cpanel.alanadiniz.com` veya `alanadiniz.com:2083`) belirleyin.
 
-### 2. wp-config.php'ye Sabitler Ekleyin
+### 2. wp-config.php'ye Sabitler Ekleyin {#2-add-constants-to-wp-configphp}
 
 Aşağıdaki sabitleri `wp-config.php` dosyanıza ekleyin:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // cPanel farklı bir port kullanıyorsa değiş
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Belge kök dizininiz farklıysa değiştirin
 ```
 
-### 3. Entegrasyonu Etkinleştirin
+### 3. Entegrasyonu Etkinleştirin {#3-enable-the-integration}
 
 1. WordPress yöneticinizde, Ultimate Multisite > Ayarlar'a gidin.
 2. "Alan Adı Eşleme" sekmesine gidin.
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Belge kök dizininiz farklıysa
 4. cPanel entegrasyonunu etkinleştirin.
 5. "Değişiklikleri Kaydet" düğmesine tıklayın.
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
-### Takma Alan Adları (Addon Domains)
+### Takma Alan Adları (Addon Domains) {#addon-domains}
 
 Bir alan adı Ultimate Multisite'de eşlendiğinde:
 
@@ -71,7 +71,7 @@ Bir alan adı Ultimate Multisite'de eşlendiğinde:
 2. Alan adı, kök dizininize işaret edecek şekilde yapılandırılır.
 3. Bir alan adı eşlemesi kaldırıldığında, entegrasyon takma alan adını cPanel'den kaldırır.
 
-### Alt Alan Adları (Subdomains)
+### Alt Alan Adları (Subdomains) {#subdomains}
 
 Alt alan adı multisite kurulumları için, yeni bir site oluşturulduğunda:
 
@@ -79,27 +79,27 @@ Alt alan adı multisite kurulumları için, yeni bir site oluşturulduğunda:
 2. Alt alan adı eklemek için cPanel'in API'sine bir istek gönderir.
 3. Alt alan adı, kök dizininize işaret edecek şekilde yapılandırılır.
 
-## Önemli Notlar
+## Önemli Notlar {#important-notes}
 
 - Entegrasyon, cPanel hesabınızla iletişim kurmak için cPanel'in API2'sini kullanır.
 - cPanel hesabınızın takma alan adları ve alt alan adları ekleme izinlerine sahip olması gerekir.
 - Bazı barındırma sağlayıcıları oluşturabileceğiniz takma alan adı veya alt alan adı sayısını sınırlayabilir.
 - Entegrasyon DNS yapılandırmasını yapmaz; alan adlarınızı hala sunucunuzun IP adresine yönlendirmeniz gerekir.
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### API Bağlantı Sorunları
+### API Bağlantı Sorunları {#api-connection-issues}
 - cPanel kullanıcı adınızın ve şifrenizin doğru olduğundan emin olun.
 - cPanel ana bilgisayarınızın doğru ve erişilebilir olduğundan emin olun.
 - cPanel hesabınızın gerekli izinlere sahip olduğundan emin olun.
 - Ana bilgisayar için tam URL kullanmayı deneyin (örneğin, `https://cpanel.alanadiniz.com`).
 
-### Alan Adı Eklenmedi
+### Alan Adı Eklenmedi {#domain-not-added}
 - Herhangi bir hata mesajı için Ultimate Multisite günlüklerini kontrol edin.
 - Alan adının zaten cPanel'e eklenmediğinden emin olun.
 - cPanel hesabınızın takma alan adları veya alt alan adları için limitine ulaşmadığından emin olun.
 
-### SSL Sertifikası Sorunları
+### SSL Sertifikası Sorunları {#ssl-certificate-issues}
 - Entegrasyon SSL sertifikası düzenlemesini yapmaz.
 - Alan adlarınız için SSL sertifikası düzenlemek amacıyla cPanel'in SSL/TLS araçlarını veya AutoSSL özelliğini kullanmanız gerekir.
 - Alternatif olarak, cPanel'in AutoSSL'si ile Let's Encrypt gibi bir hizmet kullanabilirsiniz.

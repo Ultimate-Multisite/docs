@@ -3,11 +3,11 @@ title: Tòiseachadh Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite a' Chlàradhach
+# Ultimate Multisite a' Chlàradhach {#translating-ultimate-multisite}
 
 Se roinnseachda Ultimate Multisite, tha a' chlàradhachda gu Gàidhlig, ach tha an plugin a' chlàradhachda gu fhuil, agus tha sinn a' gathachda a' chlàradhach.
 
-## Chlàradhachda na Plugin a' Chùl
+## Chlàradhachda na Plugin a' Chùl {#core-plugin-translations}
 
 Tha an plugin Ultimate Multisite a' chlàradhachda a las a' leat a' chlàradhachda **WordPress.org translation platform** eile:
 
@@ -26,7 +26,7 @@ Tha eadar-dheargadh a' chlàradh ach tha eadar-dheargadh a' chlàradhach. Má th
 
 Má thug thu a' chlàradhach a' chluar de Gàidhlig (a bheil thu a' gathachda na chlàradhach), tha thu a' ghaothachda a' chlàradhachda a' chlàradhach.
 
-## Chlàradhachda Addon
+## Chlàradhachda Addon {#addon-translations}
 
 Tha plugin add-on a' chlàradhachda gu seachda air:
 
@@ -34,13 +34,13 @@ Tha plugin add-on a' chlàradhachda gu seachda air:
 
 Tha na chlàradhachda add-on a' chlàradhachda a' chlàradhachda AI a' gathachda gu seachda air airson an tòisichid. Tha iad a' chlàradh ach tha thu a' ghaothachda a' chlàradhachda a' chlàradhach. Tha sinn a' gathachda chlàradhachda fhuil a' chlàradhach a' leat a' chlàradhach a' gathachda a' chlàradhach.
 
-## Chlàradhachda Lòchlaidh
+## Chlàradhachda Lòchlaidh {#local-translations}
 
 Tha an tòisichid na chlàradhachda lòchlaidh.
 
 Tha thu a' tuairidh a bhith a' creachadh tòiseachadh air earaireachd airson earaireachd fhaighinn, gu sònraichte, mar a tha thu a' tuairidh air earaireachd fhaighinn. Tha eadar beag am prìomh chùinneachadh:
 
-### A' chluas Poedit (Poedit) a' uileachd
+### A' chluas Poedit (Poedit) a' uileachd {#using-poedit}
 
 Is eadar féidir leat a' uileachadh an lathaidhean `.pot` a' uileachadh a' chluas desktop **[Poedit](https://poedit.net)**:
 
@@ -50,6 +50,6 @@ Is eadar féidir leat a' uileachadh an lathaidhean `.pot` a' uileachadh a' chlua
 4. Sealltain -- Poedit a' tòiseachadh na lathaidhean `.po` agus `.mo`
 5. Leag an tòiseachadh a' chluas anns an lathaidhean `lang`
 
-### A' chluas Loco Translate
+### A' chluas Loco Translate {#using-loco-translate}
 
 Tha **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** plugin WordPress a' tuileachadh gu sònraichte frum an panel admin gu leòr, gu sònraichte, gu sònraichte, gu sònraichte, gu sònraichte, gu sònraichte, gu sònraichte. A tha e a' tuiteach a' creachadh agus a' tòiseachadh na lathaidhean fhaighinn airson ùine.

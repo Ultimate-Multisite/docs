@@ -3,11 +3,11 @@ title: Onboarding-flyt for Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Onboarding for Theme Builder
+# Onboarding for Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introduserer en veiledet **Theme Builder onboarding flow** som hjelper deg med å lage et tilpasset block theme under den første oppsettet. Dette erstatter det eldre Site Builder-moduset med en mer fleksibel, agent-assistert tilnærming.
 
-## Hva er Theme Builder Onboarding Flow?
+## Hva er Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow er en interaktiv oppsettveiviser som:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow er en interaktiv oppsettveiviser som:
 
 Flowet drives av **Setup Assistant agent**, som stiller avklarende spørsmål og bygger temaet ditt inkrementelt.
 
-## Starte Theme Builder Onboarding
+## Starte Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Første gangs oppsett
+### Første gangs oppsett {#first-run-setup}
 
 Når du starter Superdav AI Agent på en ny WordPress-installasjon, vil du se:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Velg **"Build a custom theme"** for å starte Theme Builder onboarding flow.
 
-### Manuell aktivering
+### Manuell aktivering {#manual-activation}
 
 Du kan også starte Theme Builder onboarding når som helst ved å be om:
 
@@ -49,9 +49,9 @@ eller
 "Help me create a custom theme"
 ```
 
-## Onboarding-trinnene
+## Onboarding-trinnene {#the-onboarding-steps}
 
-### Trinn 1: Valg av modus
+### Trinn 1: Valg av modus {#step-1-mode-selection}
 
 Setup Assistant agent spør om din preferanse:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** anbefales for de fleste brukere; agenten gir designanbefalinger basert på din bransje og dine mål.
 
-### Trinn 2: Spesifikasjon av nettstedet
+### Trinn 2: Spesifikasjon av nettstedet {#step-2-site-specification}
 
 Du vil bli spurt om nettstedet ditt:
 
@@ -74,7 +74,7 @@ Du vil bli spurt om nettstedet ditt:
 
 Denne informasjonen lagres i din **site_brief** hukommelse, som agentene refererer til i fremtidige økter.
 
-### Trinn 3: Designsystembeslutninger
+### Trinn 3: Designsystembeslutninger {#step-3-design-system-decisions}
 
 Agenten veileder deg gjennom valg av design-tokens:
 
@@ -83,7 +83,7 @@ Agenten veileder deg gjennom valg av design-tokens:
 - **Spacing**: Kompakte, normale eller luftige layouter
 - **Motion**: Animasjoner og overganger (hvis ønskelig)
 
-### Trinn 4: Tema-generering
+### Trinn 4: Tema-generering {#step-4-theme-generation}
 
 Setup Assistant agent setter opp ditt tilpassede block theme med:
 
@@ -92,7 +92,7 @@ Setup Assistant agent setter opp ditt tilpassede block theme med:
 - Tilpassede block-stiler som matcher ditt designsystem
 - Tema-metadata og WordPress support-erklæringer
 
-### Trinn 5: Aktivering og verifisering
+### Trinn 5: Aktivering og verifisering {#step-5-activation-and-verification}
 
 Temaet aktiveres automatisk, og du vil se:
 
@@ -107,7 +107,7 @@ Temaet aktiveres automatisk, og du vil se:
 
 Du kan deretter besøke nettstedet ditt for å bekrefte at temaet vises korrekt.
 
-## Site Specification og site_brief Hukommelse
+## Site Specification og site_brief Hukommelse {#site-specification-and-sitebrief-memory}
 
 Under onboarding fanger agenten nettstedspesifikasjonen din i en **site_brief** hukommelseskategori. Dette inkluderer:
 
@@ -117,7 +117,7 @@ Under onboarding fanger agenten nettstedspesifikasjonen din i en **site_brief** 
 - Designpreferanser
 - Innholdsstruktur
 
-### Hvorfor site_brief betyr noe
+### Hvorfor site_brief betyr noe {#why-sitebrief-matters}
 
 I fremtidige økter refererer agentene til din site_brief for å:
 
@@ -126,7 +126,7 @@ I fremtidige økter refererer agentene til din site_brief for å:
 - Gi kontekstbevisste anbefalinger
 - Unngå å gjenta oppsettspørsmål
 
-### Se din site_brief
+### Se din site_brief {#viewing-your-sitebrief}
 
 Du kan spørre agenten:
 
@@ -142,11 +142,11 @@ eller
 
 Agenten vil vise din lagrede nettstedspesifikasjon.
 
-## Tilpasning etter onboarding
+## Tilpasning etter onboarding {#customizing-after-onboarding}
 
 Etter at Theme Builder onboarding er fullført, kan du:
 
-### Bruke Design System Aesthetics Skill
+### Bruke Design System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Be om designforbedringer:
 
@@ -162,7 +162,7 @@ eller
 
 **Design System Aesthetics skill** veileder deg gjennom målrettede designoppdateringer.
 
-### Redigere theme.json direkte
+### Redigere theme.json direkte {#edit-themejson-directly}
 
 For avanserte brukere, rediger `/wp-content/themes/[theme-name]/theme.json` for å justere:
 
@@ -171,7 +171,7 @@ For avanserte brukere, rediger `/wp-content/themes/[theme-name]/theme.json` for 
 - Spacing values
 - Border and shadow definitions
 
-### Opprette tilpassede block templates
+### Opprette tilpassede block templates {#create-custom-block-templates}
 
 Bruk WordPress block editor til å lage tilpassede maler for:
 
@@ -180,7 +180,7 @@ Bruk WordPress block editor til å lage tilpassede maler for:
 - Produktsider
 - Kontakt-skjemaer
 
-## Sammenligning: Gammelt vs. Nytt Onboarding
+## Sammenligning: Gammelt vs. Nytt Onboarding {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Bruk WordPress block editor til å lage tilpassede maler for:
 | Flexibility | Fixed options | Customizable |
 | Future updates | Not referenced | Stored in site_brief |
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
 **Onboarding flow fullførte ikke**
 - Start flowet på nytt: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Bruk WordPress block editor til å lage tilpassede maler for:
 - Be agenten om å "regenerate the theme with [specific changes]"
 - Rediger theme.json direkte for presis kontroll
 
-## Neste skritt
+## Neste skritt {#next-steps}
 
 Etter at Theme Builder onboarding er fullført:
 

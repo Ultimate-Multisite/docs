@@ -3,11 +3,11 @@ title: Kwa Nini Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kwa Nini Ultimate Multisite
+# Kwa Nini Ultimate Multisite {#why-ultimate-multisite}
 
 Ikiwa umefika kwenye makala hii, labda umesikia kuwa plugin yetu inaweza kuwa suluhisho la kufanikisha wazo lako la biashara. Tunatumai utapata majibu unayohitaji kufikia mwisho wa makala hii.
 
-## Ultimate Multisite ni Nini?
+## Ultimate Multisite ni Nini? {#what-is-ultimate-multisite}
 
 Ultimate Multisite ni plugin ya WordPress Multisite inayokuwezesha kuwapa wateja WaaS (Tovuti kama Huduma). Kwa plugin yetu, unaweza kuwa na viwango mbalimbali vya usajili na kuwafanya wateja wakulipe ada ya mara kwa mara ili wawe na tovuti inayohifadhiwa kwenye mtandao wako wa Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite inakuruhusu kupokea malipo yako kupitia njia mbalimbali za ma
 
 Na hii ni mwanzo tu kwani unaweza kupanua kazi zake kwa kutumia add-ons na webhooks.
 
-## Vipengele Vingine
+## Vipengele Vingine {#other-features}
 
 Ultimate Multisite pia inatoa:
 
@@ -33,11 +33,11 @@ Na mambo ya hali ya juu zaidi:
 
   * Search and Replace API: Unaweza pia kuweka alama kwenye violezo vya tovuti kwa kutumia vishikizo kama {{site_name}} na kutumia Search and Replace API kujaza kiotomatiki vishikizo hivyo na taarifa zinazotolewa na mteja wako mara baada ya kujisajili, kiotomatiki.
 
-## Matumizi ya Kawaida
+## Matumizi ya Kawaida {#use-cases}
 
 Sasa ni wakati wa kuona baadhi ya matumizi yanayowezekana ya Ultimate Multisite.
 
-### Kesi ya 1: Shirika la Ubunifu
+### Kesi ya 1: Shirika la Ubunifu {#case-1-an-agency}
 
 Kawaida ujuzi wa msingi wa shirika la ubunifu upo katika kubuni tovuti na mambo kama hosting au masoko yakiorodheshwa kama huduma za ziada.
 
@@ -47,7 +47,7 @@ Udhibiti mkali wa plugins na themes unadumishwa kwa kila bidhaa kupitia mipangil
 
 Mashirika ya ubunifu yatapata utulivu na Ultimate Multisite inayowaruhusu kufanya wanachokifanya vizuri zaidi - kubuni tovuti za kipekee.
 
-### Kesi ya 2: Mtoa Huduma Maalum
+### Kesi ya 2: Mtoa Huduma Maalum {#case-2-niche-provider}
 
 Kuna msemo wa zamani unaosema, "Fanya kitu kimoja na ukifanye vizuri". Kwa wataalamu wengi, hii inamaanisha kuunda bidhaa au huduma inayozunguka wazo moja la msingi.
 
@@ -57,7 +57,7 @@ Mojawapo ya vipengele vya kibunifu vya Ultimate Multisite, tovuti ya kiolezo ni 
 
 Kwa mtoa huduma wa tovuti na huduma maalum, hii inatoa faida isiyolingana katika uwezo wa kuunda mara moja tovuti iliyoandaliwa na plugins na muundo maalum. Mteja anahitaji tu kutoa maelezo machache kukamilisha huduma.
 
-### Kesi ya 3: Uhifadhi wa Wavuti wa WordPress
+### Kesi ya 3: Uhifadhi wa Wavuti wa WordPress {#case-3-wordpress-web-hosting}
 
 Kuna njia nyingi za kuhifadhi tovuti za WordPress lakini mara chache ni rahisi kama kutoa nafasi ya wavuti kwa mteja na toleo la WordPress lililowekwa tayari. Hii ni kwa sababu maamuzi na mazingatio kadhaa yanahitaji kuungana pamoja kutoa huduma yenye maana.
 

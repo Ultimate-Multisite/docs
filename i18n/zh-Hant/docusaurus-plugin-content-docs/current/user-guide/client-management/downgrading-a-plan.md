@@ -3,13 +3,13 @@ title: 降級方案
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# 降級方案（v2）
+# 降級方案（v2） {#downgrading-a-plan-v2}
 
 _**重要注意事項：本文適用於 Ultimate Multisite 版本 2.x。**_
 
 降級方案或訂閱是您的客戶在預算有限，或決定不需要太多資源來執行其子網站時可能會進行的常見動作。
 
-## 如何降級方案
+## 如何降級方案 {#how-to-downgrade-a-plan}
 
 您的客戶可以隨時登入其子網站管理 Dashboard，並在其 Account 頁面下點擊 **變更** 來降級其方案。
 
@@ -25,7 +25,7 @@ _**重要注意事項：本文適用於 Ultimate Multisite 版本 2.x。**_
 
 ![顯示待處理會員資格變更橫幅的 Account 頁面](/img/account-page/pending-change.png)
 
-### 使用者降級其方案時會發生什麼事
+### 使用者降級其方案時會發生什麼事 {#what-happens-when-a-user-downgrades-their-plan}
 
 請務必注意，降級方案不會改變使用者子網站中的現有設定。
 
@@ -37,7 +37,7 @@ _**重要注意事項：本文適用於 Ultimate Multisite 版本 2.x。**_
 
 ![Network Admin 設定網站頁面，顯示超過文章限制時的行為選項](/img/account-page/settings-sites-post-limit.png)
 
-### 付款會發生什麼事
+### 付款會發生什麼事 {#what-happens-to-the-payment}
 
 在版本 2.0 中，就按比例計費而言，不再需要對付款進行任何調整。
 

@@ -3,17 +3,17 @@ title: WP Engine Integratioun
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Integration
+# WP Engine Integration {#wp-engine-integration}
 
-## Überblick
+## Überblick {#overview}
 WP Engine isch e Premium Managed WordPress Hosting Plattform, wo optimierti Performance, Sicherheit und Skalierbarkeit für WordPress-Sites bietet. D'Integration ermöglicht automatisch Domain-Synchronisation zwüsche Ultimate Multisite und WP Engine.
 
-## Features
+## Features {#features}
 - Automatisch Domain-Synchronisation
 - Subdomain-Unterstützig für Multisite-Installations
 - Nahtlosi Integration mit de bestehende System vo WP Engine
 
-## Requirements
+## Requirements {#requirements}
 D'Integration erkennt automatisch, ob Sie uf WP Engine hostet sind, und brucht d'eingebauti WP Engine API. Es bruucht kei zusätzlechi Konfigurationsarbeit, wenn s'WP Engine Plugin aktiv und richtig konfiguriert isch.
 
 Allerdings, wenn Sie d'Integration manuell konfiguriere müend, chönne Sie eine vo dene Konstante i Ihrer `wp-config.php` Datei definierä:
@@ -24,16 +24,16 @@ define('WPE_APIKEY', 'your_api_key'); // Bevorzugti Methode
 define('WPE_API', 'your_api_key'); // Alternativi Methode
 ```
 
-## Setup Instructions
+## Setup Instructions {#setup-instructions}
 
-### 1. WP Engine Plugin überprüefe
+### 1. WP Engine Plugin überprüefe {#1-verify-wp-engine-plugin}
 
 Wenn Sie uf WP Engine hostet sind, söll s'WP Engine Plugin scho installiert und aktiviert si. Überprüefed bitte:
 
 1. S'WP Engine Plugin isch aktiv
 2. D'Datei `wp-content/mu-plugins/wpengine-common/class-wpeapi.php` existiert
 
-### 2. Integration aktiviere
+### 2. Integration aktiviere {#2-enable-the-integration}
 
 1. Im WordPress Admin, gaht zu Ultimate Multisite > Settings
 2. Navigiered zur Register "Domain Mapping" (Domain-Zuordnung)
@@ -41,9 +41,9 @@ Wenn Sie uf WP Engine hostet sind, söll s'WP Engine Plugin scho installiert und
 4. Aktiviered d'WP Engine Integration
 5. Klicked uf "Save Changes" (Änderige speichern)
 
-## Wie es funktioniert
+## Wie es funktioniert {#how-it-works}
 
-### Domain-Synchronisation
+### Domain-Synchronisation {#domain-syncing}
 
 Wenn e Domain in Ultimate Multisite abgmapped wird:
 
@@ -57,28 +57,28 @@ Für Multisite-Installationen mit Subdomains:
 2. WP Engine verwaltet d'Subdomain-Konfiguration.
 3. Wenn e Site gelöscht wird, entfernt d'Integration d'Subdomain vo WP Engine.
 
-## Wichtigi Notize
+## Wichtigi Notize {#subdomain-support}
 
-### Wildcard Domains
+### Wildcard Domains {#important-notes}
 
 Für Multisite-Installationen mit Subdomains empfiehlt sich, de Support vo WP Engine z'kontaktiere und e Wildcard Domain-Konfiguration aazfordere. Das ermöglicht allne Subdomains automatisch z'funktione, ohni dass mer jede einzeln hinzufüge müesse.
 
-### SSL-Zertifikat
+### SSL-Zertifikat {#wildcard-domains}
 
 WP Engine verwaltet automatisch d'Ausstellig und Erneuerung vo SSL-Zertifikaten für alli Domains, wo über die Integration hinzugefügt werdet. Es brucht kei zusätzle Konfiguration.
 
-## Fehlerbehebung
+## Fehlerbehebung {#ssl-certificates}
 
-### API-Verbindigssprobleme
+### API-Verbindigssprobleme {#troubleshooting}
 - Überprüef, ob de WP Engine plugin aktiv isch und richtig konfiguriert isch.
 - Wenn Sie d'API-Schlüssel manuell definiert händ, überprüef, ob die korrekt sind.
 - Kontaktier de WP Engine Support, wenn Sie Problem mit de API händ.
 
-### Domain nöd hinzugefügt
+### Domain nöd hinzugefügt {#api-connection-issues}
 - Überprüef d'Ultimate Multisite Logs uf Fehlermeldige.
 - Verifiziere, dass d'Domain nöd scho zu WP Engine hinzugefügt isch.
 - Stell sicher, dass Ihr WP Engine Plan d'Anzahl vo Domains unterstützt, wo Sie hinzufüegt.
 
-### Subdomain-Probleme
+### Subdomain-Probleme {#domain-not-added}
 - Wenn d'Subdomains nöd funktioniere, kontaktier de WP Engine Support und fordere e Wildcard Domain-Konfiguration a.
 - Verifiziere, dass dini DNS-Iistellige für d'Hauptdomain und d'Subdomains korrekt konfiguriert sind.

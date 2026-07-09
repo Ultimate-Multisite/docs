@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 WordPress įskiepis, pridedantis suderinamumo pataisas Tutor LMS multisite aplinkose.
 
-## Aprašymas
+## Aprašymas {#description}
 
 Šis įskiepis suteikia būtinas suderinamumo pataisas, skirtas Tutor LMS paleisti WordPress multisite tinkluose. Jis tvarko naudotojų registravimą į kursus, instruktorių valdymą, kursų apribojimus ir kitas multisite specifines funkcijas.
 
-## Funkcijos
+## Funkcijos {#features}
 
 - **Duomenų bazės lentelių valdymas**: Automatiškai aptinka ir sukuria trūkstamas Tutor LMS lenteles, kurių nepavyksta sukurti dėl multisite išorinių raktų apribojimų
 - **Multisite naudotojų registravimas į kursus**: Pasirinktinės AJAX apdoroklės, skirtos naudotojų registravimui į kursus valdyti tinklo svetainėse
@@ -24,7 +24,7 @@ WordPress įskiepis, pridedantis suderinamumo pataisas Tutor LMS multisite aplin
 - **Pasirinktiniai administratoriaus vaizdai**: Multisite pritaikytas instruktorių sąrašas ir valdymo sąsaja
 - **Administratoriaus įrankiai**: Duomenų bazės valdymo sąsaja tinklo ir svetainių administratoriams
 
-## Reikalavimai
+## Reikalavimai {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ WordPress įskiepis, pridedantis suderinamumo pataisas Tutor LMS multisite aplin
 - WordPress Multisite diegimas
 - Ultimate Multisite įskiepis (kursų apribojimų funkcionalumui)
 
-## Diegimas
+## Diegimas {#installation}
 
 1. Įkelkite įskiepio failus į `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Įsitikinkite, kad Tutor LMS yra įdiegtas ir aktyvuotas
 3. Aktyvuokite įskiepį per WordPress meniu „Įskiepiai“
 4. Įskiepis automatiškai integruosis su Tutor LMS
 
-## Failų struktūra
+## Failų struktūra {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funkcionalumas, perkeltas iš MU plugin
+## Funkcionalumas, perkeltas iš MU plugin {#functionality-moved-from-mu-plugin}
 
 Šiame įskiepyje yra funkcionalumas, kuris anksčiau buvo `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - Multisite naudotojų registravimo į kursus tvarkymas
 - Kurso produkto ID rodymas
 
-## Duomenų bazės valdymas
+## Duomenų bazės valdymas {#database-management}
 
-### Problema
+### Problema {#the-problem}
 
 WordPress multisite aplinkose Tutor LMS lentelių kūrimas nepavyksta toms lentelėms, kurios turi išorinių raktų apribojimus į naudotojų lentelę. Taip nutinka todėl, kad:
 
@@ -81,7 +81,7 @@ WordPress multisite aplinkose Tutor LMS lentelių kūrimas nepavyksta toms lente
 - Išoriniai raktai nurodo į `wp_2_users` (kurios nėra)
 - Tikroji naudotojų lentelė yra `wp_users` (bendrinama visame tinkle)
 
-### Sprendimas
+### Sprendimas {#the-solution}
 
 Šis įskiepis automatiškai:
 
@@ -92,13 +92,13 @@ WordPress multisite aplinkose Tutor LMS lentelių kūrimas nepavyksta toms lente
    - Naujos svetainės kūrimas tinkle
    - Rankinis lentelių tikrinimas per administratoriaus sąsają
 
-### Paveiktos lentelės
+### Paveiktos lentelės {#affected-tables}
 
 - `tutor_coupon_usages` - Turi išorinį raktą į naudotojų lentelę
 - `tutor_carts` - Turi išorinį raktą į naudotojų lentelę
 - `tutor_notification_preferences` - TutorPro lentelė su išoriniu raktu į naudotojų lentelę
 
-### Administratoriaus sąsaja
+### Administratoriaus sąsaja {#admin-interface}
 
 Duomenų bazės valdymo įrankius pasieksite čia:
 
@@ -111,6 +111,6 @@ Sąsaja leidžia:
 - Patikrinti duomenų bazės konfigūraciją
 - Peržiūrėti išsamią būsenos informaciją
 
-## Palaikymas
+## Palaikymas {#support}
 
 Šis įskiepis specialiai sukurtas KursoPro platformai. Dėl techninio palaikymo kreipkitės į kūrimo komandą.

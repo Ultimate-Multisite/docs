@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-mel
+# E-mel {#emails}
 
 Addon Ultimate Multisite: Emails membolehkan pemilik rangkaian menyediakan dan mengurus akaun e-mel pelanggan bersama-sama dengan laman dan keahlian. Versi 1.1.0 menambah pengurusan akaun e-mel yang berhadapan pelanggan, daftar masuk tunggal webmail, sokongan pemaju CyberPanel, dan penambahbaikan penyediaan semasa checkout.
 
-## Ciri Utama
+## Ciri Utama {#key-features}
 
 * **Widget akaun e-mel pelanggan**: Pelanggan boleh mencipta dan mengurus mailbox daripada halaman akaun mereka selepas mereka mempunyai keahlian e-mel yang aktif.
 * **Webmail SSO dan pautan ajaib**: Pelanggan boleh membuka webmail terus daripada halaman akaun dengan pengesahan satu klik apabila penyedia menyokongnya.
@@ -20,14 +20,14 @@ Addon Ultimate Multisite: Emails membolehkan pemilik rangkaian menyediakan dan m
 * **Pemaju CyberPanel**: Rangkaian yang disokong CyberPanel boleh mencipta dan mengurus pemaju e-mel sebagai sebahagian daripada aliran perkhidmatan e-mel.
 * **Tetapan sedar penyedia**: Halaman tetapan menapis penyedia kepada integrasi yang aktif dan dikonfigurasikan supaya pentadbir hanya melihat pilihan yang boleh digunakan.
 
-## Keperluan
+## Keperluan {#requirements}
 
 * Ultimate Multisite 2.0.0 atau lebih tinggi
 * Pemasangan WordPress Multisite
 * Sekurang-kurangnya satu integrasi penyedia e-mel yang dikonfigurasikan
 * Kelayakan API penyedia dengan kebenaran untuk mencipta mailbox, menukar kata laluan, dan mengeluarkan pautan akses webmail jika disokong
 
-## Pemasangan
+## Pemasangan {#installation}
 
 1. Muat naik fail plugin ke `/wp-content/plugins/ultimate-multisite-emails`.
 2. Aktifkan addon pada rangkaian daripada **Plugin** dalam pentadbir rangkaian WordPress.
@@ -35,7 +35,7 @@ Addon Ultimate Multisite: Emails membolehkan pemilik rangkaian menyediakan dan m
 4. Dayakan integrasi penyedia e-mel yang anda mahu pelanggan gunakan.
 5. Simpan tetapan, kemudian uji penciptaan akaun dengan pelanggan bukan produksi atau laman staging.
 
-## Cara Aliran Penjual E-mel Berfungsi
+## Cara Aliran Penjual E-mel Berfungsi {#how-the-email-seller-flow-works}
 
 Penjualan e-mel mempunyai dua lapisan berasingan:
 
@@ -53,7 +53,7 @@ Ini bermakna aliran pelanggan biasa ialah:
 5. Panel **Akaun E-mel** muncul untuk keahlian e-mel aktif itu.
 6. Pelanggan mengklik **Cipta Akaun**, memasukkan bahagian setempat seperti `info`, menetapkan kata laluan, dan addon mencipta `info@their-domain.com` pada penyedia yang dikonfigurasikan.
 
-## Konfigurasikan Produk E-mel
+## Konfigurasikan Produk E-mel {#configure-an-email-product}
 
 Cipta satu produk e-mel untuk setiap pakej e-mel yang anda mahu jual atau berikan. Jika anda baharu dalam persediaan produk, mulakan dengan [Mencipta Produk Langganan Pertama Anda](../../user-guide/configuration/creating-your-first-subscription-product) dan kemudian kembali ke sini untuk tetapan khusus e-mel.
 
@@ -67,7 +67,7 @@ Cipta satu produk e-mel untuk setiap pakej e-mel yang anda mahu jual atau berika
 
 Hanya penyedia yang didayakan dan dikonfigurasikan sepenuhnya pada halaman **Integrasi** muncul dalam pemilih penyedia. Jika pemilih kosong, konfigurasikan dan uji penyedia dahulu.
 
-## Tambah E-mel ke Checkout
+## Tambah E-mel ke Checkout {#add-email-to-checkout}
 
 Produk e-mel biasanya ditawarkan sebagai tambahan kepada pelan laman. Lihat [Borang Checkout](../../user-guide/configuration/checkout-forms) untuk aliran kerja editor checkout umum.
 
@@ -79,7 +79,7 @@ Produk e-mel biasanya ditawarkan sebagai tambahan kepada pelan laman. Lihat [Bor
 
 Domain e-mel diambil daripada domain laman pelanggan. Pelanggan tidak memasukkan domain e-mel dalam langkah produk e-mel.
 
-## Pengurusan E-mel Akaun Pelanggan
+## Pengurusan E-mel Akaun Pelanggan {#customer-account-email-management}
 
 Versi 1.1.0 menambah widget pengurusan e-mel pada halaman akaun pelanggan. Gunakannya apabila pelanggan patut melayan sendiri penciptaan dan penyelenggaraan mailbox untuk laman mereka sendiri.
 
@@ -94,7 +94,7 @@ Widget menggunakan sistem semasa halaman akaun Ultimate Multisite, jadi tindakan
 
 Jika pelanggan tidak melihat panel email, semak bahawa mereka mempunyai **keahlian produk Email yang aktif**, bahawa keahlian telah dipautkan kepada domain laman, dan bahawa produk mempunyai penyedia yang dikonfigurasikan.
 
-## Memberikan Pelanggan Pelan Email Percuma
+## Memberikan Pelanggan Pelan Email Percuma {#giving-a-customer-a-free-email-plan}
 
 Untuk memberikan pelanggan email tanpa mengenakan bayaran kepada mereka, berikan **kelayakan email** dahulu, kemudian cipta atau biarkan pelanggan mencipta peti mel.
 
@@ -106,7 +106,7 @@ Pilihan yang disyorkan:
 
 Jika anda mahu pelanggan mengurus peti mel sendiri daripada halaman akaun, pastikan mereka mempunyai keahlian email aktif untuk domain. Peti mel penyedia yang dicipta secara manual tanpa keahlian itu boleh wujud, tetapi pelanggan mungkin tidak melihat panel email layan diri untuknya.
 
-## Akaun yang Dicipta Admin dan "Tiada Nombor Pesanan"
+## Akaun yang Dicipta Admin dan "Tiada Nombor Pesanan" {#admin-created-accounts-and-no-order-number}
 
 Halaman admin **Email Accounts** mencipta atau mengedit peti mel penyedia. Ia bukan langkah pertama untuk menjual atau memberikan pelan email.
 
@@ -122,7 +122,7 @@ Gunakan urutan operasi ini sebaliknya:
 
 Jika anda hanya perlu mencipta peti mel penyedia untuk pelanggan dan tidak memerlukan pengurusan halaman akaun layan diri, akaun yang dicipta admin boleh mencukupi. Jika anda mahu pelanggan melihat dan menguruskannya dalam Ultimate Multisite, cipta keahlian email juga.
 
-## Webmail SSO dan Log Masuk Magic-Link
+## Webmail SSO dan Log Masuk Magic-Link {#webmail-sso-and-magic-link-login}
 
 Webmail SSO memberikan pelanggan tindakan **Open webmail** terus daripada halaman akaun. Apabila disokong oleh penyedia aktif, addon meminta URL akses jangka pendek dan mengubah hala pelanggan ke dalam webmail tanpa meminta mereka menyalin kelayakan peti mel.
 
@@ -134,7 +134,7 @@ Tingkah laku penyedia boleh berbeza-beza:
 
 Dayakan akses webmail hanya untuk penyedia yang anda telah konfigurasikan kelayakan API yang diperlukan. Jika tindakan tiada untuk sesuatu penyedia, sahkan dahulu bahawa penyedia aktif, dikonfigurasikan, dan menyokong pautan log masuk webmail.
 
-## Penyediaan Checkout
+## Penyediaan Checkout {#checkout-provisioning}
 
 Addon menyediakan **konteks keahlian** email semasa checkout. Ia merekodkan penyedia, had akaun, kuota, dan domain laman supaya pelanggan boleh mencipta nama peti mel mereka sendiri daripada halaman akaun selepas pembelian.
 
@@ -148,15 +148,15 @@ Pelancaran yang disyorkan:
 
 Jika penyediaan gagal, akaun pelanggan dan keahlian masih boleh wujud sementara keahlian email atau peti mel penyedia memerlukan tindakan susulan pentadbir. Semak log aktiviti Ultimate Multisite dan log penyedia sebelum mencuba semula.
 
-## Forwarder Email CyberPanel
+## Forwarder Email CyberPanel {#cyberpanel-email-forwarders}
 
 Untuk rangkaian yang disokong CyberPanel, versi 1.1.0 menambah sokongan forwarder email. Gunakan forwarder apabila pelanggan memerlukan alamat seperti `info@customer-domain.test` untuk mengubah hala mel ke peti masuk lain tanpa mencipta peti mel penuh.
 
 Sebelum menawarkan forwarder, sahkan bahawa integrasi CyberPanel dikonfigurasikan dan boleh dicapai. Lihat panduan [Integrasi CyberPanel](../../user-guide/administration/cyberpanel-integration) untuk host, nama pengguna, kata laluan, dan pemalar pakej yang diperlukan.
 
-## Changelog
+## Changelog {#changelog}
 
-### Versi 1.1.0 - Dikeluarkan pada 2026-05-05
+### Versi 1.1.0 - Dikeluarkan pada 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Baharu: Webmail SSO dan log masuk magic-link — pelanggan boleh mengakses webmail terus daripada Account mereka dengan pengesahan satu klik.
 * Baharu: Fungsi tukar kata laluan ditambahkan pada widget pengurusan Account e-mel.
@@ -170,28 +170,28 @@ Sebelum menawarkan forwarder, sahkan bahawa integrasi CyberPanel dikonfigurasika
 * Pembetulan: Spam log setiap permintaan dialih keluar daripada permulaan Email_Account_Manager.
 * Ditambah baik: Halaman tetapan kini menapis untuk hanya menunjukkan penyedia e-mel yang aktif dan dikonfigurasikan.
 
-## Soalan Lazim
+## Soalan Lazim {#frequently-asked-questions}
 
-### Bolehkah pelanggan mencipta Account e-mel mereka sendiri?
+### Bolehkah pelanggan mencipta Account e-mel mereka sendiri? {#can-customers-create-their-own-email-accounts}
 
 Ya. Apabila pelanggan mempunyai membership e-mel aktif untuk domain dan produk membenarkan Account tambahan, pelanggan boleh mencipta dan mengurus peti mel mereka sendiri daripada halaman Account.
 
-### Adakah setiap penyedia menyokong webmail SSO?
+### Adakah setiap penyedia menyokong webmail SSO? {#does-every-provider-support-webmail-sso}
 
 Tidak. Sokongan SSO dan magic-link bergantung pada penyedia e-mel aktif. Penyedia tanpa API pautan akses masih boleh menyokong penciptaan peti mel dan perubahan kata laluan.
 
-### Bolehkah pentadbir mencipta Account e-mel untuk pelanggan?
+### Bolehkah pentadbir mencipta Account e-mel untuk pelanggan? {#can-administrators-create-email-accounts-for-customers}
 
 Ya. Pentadbir boleh mencipta Account e-mel daripada antara muka admin, termasuk menetapkan kata laluan awal semasa mencipta Account. Untuk pengurusan layan diri pelanggan, pastikan juga pelanggan mempunyai membership e-mel aktif untuk domain tersebut.
 
-### Bolehkah saya memberikan Account e-mel secara percuma?
+### Bolehkah saya memberikan Account e-mel secara percuma? {#can-i-give-an-email-account-away-for-free}
 
 Ya. Cipta produk E-mel percuma/berharga sifar dan tambahkannya sebagai membership aktif untuk pelanggan, atau biarkan pelanggan melengkapkan checkout dengan diskaun 100%. Selepas membership e-mel wujud, pelanggan atau pentadbir boleh mencipta peti mel sebenar.
 
-### Mengapa pemberian Account e-mel meminta nombor pesanan?
+### Mengapa pemberian Account e-mel meminta nombor pesanan? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Medan Membership mencari membership Ultimate Multisite sedia ada mengikut nombor rujukan/pesanannya. Jika pelanggan tidak membeli produk e-mel dan anda belum mencipta membership e-mel secara manual, tiada membership/pesanan e-mel untuk diberikan. Cipta membership e-mel dahulu, kemudian cipta atau berikan peti mel.
 
-### Adakah pemaju sama seperti peti mel?
+### Adakah pemaju sama seperti peti mel? {#are-forwarders-the-same-as-mailboxes}
 
 Tidak. Peti mel menyimpan mel dan mempunyai kelayakan log masuk. Pemaju mengubah hala mel ke alamat lain dan tidak menyediakan peti masuk berasingan.

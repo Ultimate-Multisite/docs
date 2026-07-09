@@ -4,11 +4,11 @@ title: Veprim - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Action: wu_membership_pre_renew
+# Action: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Shkaktohet para rinovimit të anëtarësimit.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Lloji | Përshkrimi |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Shkaktohet para rinovimit të anëtarësimit.
 | $membership_id | `int` | ID-ja e anëtarësimit. |
 | $membership | `\Membership` | Objekti i anëtarësimit. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) në rreshtin 2204

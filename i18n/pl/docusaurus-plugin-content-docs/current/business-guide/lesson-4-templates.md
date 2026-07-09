@@ -3,15 +3,15 @@ title: 'Lekcja 4: Tworzenie szablonów niszowych'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekcja 4: Tworzenie szablonów niszowych
+# Lekcja 4: Tworzenie szablonów niszowych {#lesson-4-building-niche-templates}
 
 Szablony stanowią rdzeń Twojej oferty dla niszowej grupy klientów. Właściciel studia fitness, który rejestruje się i widzi stronę, która już wygląda jak strona studia fitness — z grafikami zajęć, profilami trenerów i odpowiednią kolorystyką — jest znacznie bardziej skłonny zostać, niż ten, który widzi pustą kartę.
 
-## Skąd jesteśmy
+## Skąd jesteśmy {#where-we-left-off}
 
 Mamy działającą sieć FitSite z zainstalowanym i skonfigurowanym Ultimate Multisite. Teraz stworzymy szablony, dzięki którym FitSite będzie wyglądał tak, jakby był stworzony specjalnie dla biznesów fitness.
 
-## Dlaczego szablony niszowe są ważne
+## Dlaczego szablony niszowe są ważne {#why-niche-templates-matter}
 
 Ogólne szablony zmuszają Twoich klientów do wykonania ciężkiej pracy: muszą sami ustalić, jakich stron potrzebują, jaka struktura treści będzie działać i jak sprawić, by strona wyglądała odpowiednio dla ich branży. Szablony niszowe eliminują ten opór.
 
@@ -24,11 +24,11 @@ Właściciel studia fitness, który rejestruje się w FitSite, powinien zobaczy�
 
 Oni tylko uzupełniają swoje dane. Nie zaczynają od zera.
 
-## Planowanie szablonów
+## Planowanie szablonów {#planning-your-templates}
 
 Zanim zaczniesz budować, zdecyduj, jakie szablony chcesz zaoferować. Dla FitSite stworzymy trzy:
 
-### Szablon 1: Studio Essential
+### Szablon 1: Studio Essential {#template-1-studio-essential}
 
 Dla małych studiów i trenerów personalnych.
 
@@ -39,7 +39,7 @@ Dla małych studiów i trenerów personalnych.
 - Strona **Kontakt** z mapą lokalizacji i formularzem
 - **Czysty, nowoczesny design** z paletą barw pasującą do fitness
 
-### Szablon 2: Gym Pro
+### Szablon 2: Gym Pro {#template-2-gym-pro}
 
 Dla ugruntowanych siłowni z większą liczbą usług.
 
@@ -50,7 +50,7 @@ Dla ugruntowanych siłowni z większą liczbą usług.
 - Sekcja **Opinie** na stronie głównej
 - **Bardziej widoczne opcje brandingu**
 
-### Szablon 3: Fitness Chain
+### Szablon 3: Fitness Chain {#template-3-fitness-chain}
 
 Dla działalności z wieloma lokalizacjami.
 
@@ -60,17 +60,17 @@ Dla działalności z wieloma lokalizacjami.
 - **Centralny branding** z danymi specyficznymi dla lokalizacji
 - **Książka adresowa personelu** dla wszystkich lokalizacji
 
-## Budowanie strony szablonowej
+## Budowanie strony szablonowej {#building-a-template-site}
 
 W Ultimate Multisite szablon to po prostu strona WordPress skonfigurowana tak, aby nowe strony klientów wyglądały pożądany sposób. Oto jak to zrobić:
 
-### Krok 1: Utwórz stronę szablonową
+### Krok 1: Utwórz stronę szablonową {#step-1-create-the-template-site}
 
 1. Przejdź do **Sites > Add New** w panelu administracyjnym sieci
 2. Utwórz stronę o nazwie `template-studio-essential`
 3. Ta strona stanie się Twoim działającym płótnem
 
-### Krok 2: Zainstaluj i skonfiguruj motyw
+### Krok 2: Zainstaluj i skonfiguruj motyw {#step-2-install-and-configure-the-theme}
 
 Przełącz się na panel administracyjny strony szablonowej i:
 
@@ -82,7 +82,7 @@ Przełącz się na panel administracyjny strony szablonowej i:
 Wybierz motyw, który jest wystarczająco elastyczny, aby dobrze wyglądać dla fitness, ale nie jest zbyt skomplikowany, by Twoi klienci nie mogli go zarządzać. Motywy takie jak Astra, GeneratePress lub Kadence sprawdzają się dobrze, ponieważ są lekkie, konfigurowalne i dobrze wspierane.
 :::
 
-### Krok 3: Utwórz strony
+### Krok 3: Utwórz strony {#step-3-create-the-pages}
 
 Wybuduj każdą stronę, dodając:
 
@@ -92,7 +92,7 @@ Wybuduj każdą stronę, dodając:
 
 Uczyń treści zastępcze instruktażowe, jeśli to możliwe. Zamiast ogólnego tekstu wypełniającego, napisz treści typu: "Zastąp to krótkim opisem Twojego studia i tego, co czyni je wyjątkowym. Wspomnij o swojej filozofii treningowej, latach doświadczenia lub czego mogą oczekiwać klienci."
 
-### Krok 4: Skonfiguruj wtyczki
+### Krok 4: Skonfiguruj wtyczki {#step-4-configure-plugins}
 
 Zainstaluj i aktywuj wtyczki, których potrzebują studia fitness:
 
@@ -100,7 +100,7 @@ Zainstaluj i aktywuj wtyczki, których potrzebują studia fitness:
 - Wtyczka do formularzy kontaktowych
 - Wtyczka SEO (wstępnie skonfigurowana z domyślnymi ustawieniami pasującymi do fitness)
 
-### Krok 5: Oznacz jako szablon
+### Krok 5: Oznacz jako szablon {#step-5-mark-as-template}
 
 1. Przejdź do **Ultimate Multisite > Sites**
 2. Edytuj stronę szablonową
@@ -108,7 +108,7 @@ Zainstaluj i aktywuj wtyczki, których potrzebują studia fitness:
 
 Powtórz ten proces dla każdego szablonu, który chcesz zaoferować.
 
-## Lista kontrolna jakości szablonu
+## Lista kontrolna jakości szablonu {#template-quality-checklist}
 
 Zanim szablon zostanie udostępniony, zweryfikuj:
 
@@ -121,7 +121,7 @@ Zanim szablon zostanie udostępniony, zweryfikuj:
 - [ ] Brak uszkodzonych linków lub brakujących zasobów
 - [ ] Prędkość ładowania strony jest akceptowalna
 
-## Sieć FitSite do tej pory
+## Sieć FitSite do tej pory {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Gotowy do konfiguracji planów (następna lekcja)
 ```
 
-## Co zbudowaliśmy w tej lekcji
+## Co zbudowaliśmy w tej lekcji {#what-we-built-this-lesson}
 
 - **Trzy szablony niszowe** zaprojektowane dla różnych rozmiarów biznesów fitness
 - **Treści i grafiki pasujące do branży fitness**, dzięki czemu platforma wydaje się stworzona na specjalne potrzeby

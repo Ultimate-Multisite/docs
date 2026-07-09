@@ -3,13 +3,13 @@ title: Abuurista Qorshahaaga Subscription-ka Koowaad
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Abuuristaaga Koowaad ee Subscription-kaaga (v2)
+# Abuuristaaga Koowaad ee Subscription-kaaga (v2) {#creating-your-first-subscription-product-v2}
 
 _**Fadlan ogeysiis muhiim ah: Maqaalkan wuxuu u jeedaa isticmaalayaasha Ultimate Multisite nooca 2.x. Haddii aad isticmaalayso nooca 1.x,**_ **__oo eeg maqaalkan kale**_ .
 
 Si aad u bilaaw shaqada shabkaddaada oo aad u bilow inaad adeegyadaada u iibiso isticmaalayaasha suurtagalka ah, waxaad u baahan tahay doorooyin subscription-ka kala duwan. Sidee ayaad samayn kartaa badeecadahaas? Noocyada badeecadaha ee aad bixin karto waa kuwo nooc ah. Maqaalkan, waxaan ka sheegi doonaa dhammaan waxyaabaha aad u baahan tahay inaad ogaato oo ku saabsan badeecadaha.
 
-## Nooca Badeecadda (Product Type)
+## Nooca Badeecadda (Product Type) {#product-type}
 
 Ultimate Multisite-kaaga, waxaad u bixin kartaa laba nooc oo badeeco ah ee macaamiishaada: **plans** (qorsoshaha) iyo **add-ons** (waxyaabaha dheeraadka ah ama Order Bump). Add-ons-ka waxaa loo qaybin karaa laba nooc: **packages** (miisaano/kooxor) iyo **services** (adeegyo). Waxaan dib u eegi doonaa kala duwanaanshaha iyo waxyaabaha gaarka ah ee ay leeyihiin xilligan.
 
@@ -19,7 +19,7 @@ Ultimate Multisite-kaaga, waxaad u bixin kartaa laba nooc oo badeeco ah ee macaa
 
   * **Services:** Waa add-ons-ka aan isbeddelin hab-dhaqanka Ultimate Multisite. Waxay yihiin hawlo aad u qabato macaamiishaada oo ka baxsan qorsoshaha ay iibsadeen. Tusaale ahaan, macmiilkaaga wuxuu iibsan karaa qorshe u oggolaanaya hal website (site) iyo sidoo kale uu bixin doono adeeg dheeri ah oo samayn doona design-ka website-kan.
 
-## Maareynta Badeecadaha (Managing Products)
+## Maareynta Badeecadaha (Managing Products) {#managing-products}
 
 Башка Somali, inta badan **Products** tab-ka Ultimate Multisite (**Ultimate Multisite > Products**) waxaa la barbardhinaa qorshayaasha (plans) ee deegaanka hosting-ka caadiga ah.
 
@@ -29,7 +29,7 @@ Qaybtaani waxay kaa caawin doontaa inaad fahanto qaybta muhiimka ah ee Ultimate 
 
 ![Products list page](/img/config/products-list.png)
 
-## Bixinta Alaabaha (Adding Products)
+## Bixinta Alaabaha (Adding Products) {#adding-products}
 
 Haddii ay tahay qorshe, package, ama adeeg in la bilaabo samaynta shay cusub, waxay ku jirtaa **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Interface-ka waxaa ka kooban laba qayb oo muhiim ah. Dhageerada (left side) waxa
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Sharraxaad (Description)
+### Sharraxaad (Description) {#description}
 
 Macluumaadka asaasiga ah ee alaabta waxaa lagu qeexi karaa iyadoo la bixiyo magaca alaabta iyo sharraxaadda. Magacyadaas ayaa la soo bandhigaa halka ay loo baahan yihiin macluumaadka alaabta sida doorashada qorshaha iyo qiimaha, furaashada (invoices), koritaanka adeegyada (upgrades), iwm.
 
 ![Product description section](/img/config/product-description.png)
 
-### Nooca Qiimaha (Pricing Type)
+### Nooca Qiimaha (Pricing Type) {#pricing-type}
 
 Dhanka rabitaanka interface-ka ah, waxaa lagu qeexi karaa qiimaha asaasiga ah.
 
@@ -53,7 +53,7 @@ Dhanka rabitaanka interface-ka ah, waxaa lagu qeexi karaa qiimaha asaasiga ah.
 
 Ultimate Multisite wuxuu taageera saddex nooc oo qiimeed ah. Doorashada **paid** waxay u weydiisataa maamulaha shirkadda (network administrator) macluumaad ku saabsan qiimaha alaabta iyo inta lagu jiro lacag bixinta (billing frequency).
 
-### Qiimaha (Pricing)
+### Qiimaha (Pricing) {#pricing}
 
 Qaybta qiimaha waxay qeexaa qiimaha asaasiga ah ee alaabta iyo mudada lacag bixinta.
 
@@ -61,7 +61,7 @@ Qaybta qiimaha waxay qeexaa qiimaha asaasiga ah ee alaabta iyo mudada lacag bixi
 
 sidaas, qiimaha tusaale $29.99 oo si 1 bilood ah loo qeexay ayaa la bixin doonaa $29.99 hal bilood kasta. Si la mid ah, qiime $89.97 oo si 3 bilood ah loo qeexay ayaa la bixin doonaa lacagtaas qayb kasta (quarterly).
 
-### Billing Cycles
+### Billing Cycles {#billing-cycles}
 
 Qaybta "Billing Cycles" waxay qeexaysaa mar walba lagu bixiyo mudada la sheegay ee qiimaha iyo inta badan waxaa loo fahmi kara qeyb ka mid ah heshiisyada ama mudo cayiman.
 
@@ -69,7 +69,7 @@ Qaybta "Billing Cycles" waxay qeexaysaa mar walba lagu bixiyo mudada la sheegay 
 
 Tusaale ahaan, qiimaha alaabta $29.99 oo muddo 1 bilood ah iyo 12 wareeg la sheegay ayaa la bixin doonaa $29.99 hal bilood kasta oo loogu talagalay alaabta inta lagu jiro 12 bilood ee soo socda. Si kale haddii loo dhigo, qaabkan wuxuu samaynayaa mudo cayiman oo qiimo la qeexay oo ah $29.99 hal bilood oo ay dhammaan doonto bixinta.
 
-### Trial Period
+### Trial Period {#trial-period}
 
 In la iibsado badhanka "offer trial toggle" waxay u oggolaanaysaa maamulaha shirkadda inuu dejiyo muddo lagu baranayo alaabta (trial period).
 
@@ -77,7 +77,7 @@ In la iibsado badhanka "offer trial toggle" waxay u oggolaanaysaa maamulaha shir
 
 Inta lagu jiro mudo barashada, macaamiishu waxay si bilaash ah u isticmaali karaan alaabta oo aan la bixin doonin ilaa mudada barashada ay dhammaato.
 
-### Setup Fee
+### Setup Fee {#setup-fee}
 
 Waxaad sidoo kale ku dari kartaa kharashka aasaasid (setup fee) qorshahaaga.
 
@@ -85,7 +85,7 @@ Waxaad sidoo kale ku dari kartaa kharashka aasaasid (setup fee) qorshahaaga.
 
 Tani waxay ka dhigan tahay in macaamiishaada ay bixiyaan lacag dheeri ah markii ugu horreysay (iyadoo la socota qorshaha qiimaha) oo la jaanqaadaya kharashka aad dejisay qaybtaas.
 
-### Active
+### Active {#active}
 
 Badhanka "active toggle" wuxuu si hufan u qeexayaa in alaabtu ay u noqon doonto macaamiisha inay isticmaalaan haddii ay cusub yihiin (new sign-ups).
 
@@ -93,13 +93,13 @@ Badhanka "active toggle" wuxuu si hufan u qeexayaa in alaabtu ay u noqon doonto 
 
 Haddii ay jiraan macaamiil la'aan ah oo ku jira qorshe (plan) kan, in la badbaado toggle-ka si uu u noqdo dibadda ah (disabled), waxay si waxtarsan u ka saaraysaa qorshaha isbeddelka mustaqbalka. **Macaamiisha la'aan ah ee qorshaha ayaa sii socon doona inay la rabo** ilaa ay u qaadaan qorshe cusub ama laga saaro qorshaha.
 
-### Sawirka Alaabta (Product Image)
+### Sawirka Alaabta (Product Image) {#product-image}
 
 Bad button-ka **Upload Image** wuxuu u oggolaanaya maamulaha shirkadda inuu isticmaalo makhaadka media si uu doorto ama u soo galiyo sawirka alaabta.
 
 ![Sawirka alaabta section](/img/config/product-image.png)
 
-### Tutinta (Delete)
+### Tutinta (Delete) {#delete}
 
 Bad button-ka **Delete Product** wuxuu ka saaraa alaabta nidaamka. Wuxuu si muuqda marka la soo bandhigo alaabta.
 
@@ -107,11 +107,11 @@ Bad button-ka **Delete Product** wuxuu ka saaraa alaabta nidaamka. Wuxuu si muuq
 
 Ka duwan tutinta kale, alaabta ma lagu dhigayo xaaladda "trash" (waxa laga saaray). Sidaas darteed markii la tutiyo, ficilka ma la hagaajin karo.
 
-### Doorashada Alaabta (Product Options)
+### Doorashada Alaabta (Product Options) {#product-options}
 
 Marka macluumaadka asaasiga ah ee alaabta la qeexdo, doorashada alaabta waxay caawiyaan maamulaha shirkadda inuu si dheeri ah u qeexo astaamaha gaarka ah ee alaabta.
 
-#### Guud (General)
+#### Guud (General) {#general}
 
 Tab-ka **General** wuxuu qeexaa astaamaha guud ee alaabta oo aan kuugu xiriirin wax kasta oo tabka kale ee gaarka ah ee alaabta ah.
 
@@ -125,7 +125,7 @@ Ultimate Multisite wuxuu taageera noocyo kala duwan oo alaabo ah sida Plan, Pack
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Waxita iyo Hoos-waxid (Up & Downgrades)
+#### Waxita iyo Hoos-waxid (Up & Downgrades) {#up--downgrades}
 
 Tabkan wuxuu qeexaa hababka koritaanka iyo hoos u dhaca ee ay macmiilku ku heli karo heerkiisa gaarka ah.
 
@@ -143,7 +143,7 @@ Si aad u qeexdo koox qorshe, waxaad qeexaysaa qorshayaashii la jaanqaaday ee ku 
 
 Ultimate Multisite wuxuu sidoo kale leeyahay muuqaal **order bump** (koritaanka qiimaha), halkaas oo alaabta iyo adeegyada dheeri ah ee ku habboon ayaa lagu darayaa qorshayaashii. Kuwaas waxaa loo bixiya macaamiisha inay yihiin shayro dheeri ah oo la dari karo qorshayaasha marka la bilaabo lacag-bixinta (checkout) ama inta lagu guda jiro koritaanka.
 
-#### Isbeddellada Qiimaha (Price Variations)
+#### Isbeddellada Qiimaha (Price Variations) {#price-variations}
 
 Farqeynta qiimaha waxay u oggolaan maamulaha shabakadda inuu qeexdo heerarka qiimaha kale ee kala duwan iyadoo ku xiran muddooyinka. Dejintaani waxay kuu oggolaanaysaa in waxa la iibiyo hal bil, afar bilood, sanno, ama inta badan oo muddooyin kale lagu bixiyo alaab isku mid ah. Tusaale ahaan, waxaad dejin kartaa alaab oo qiimaha ay yahay $29.99/bil, halka aad ku siin lahayd dooro sanahorti oo qiimo ay yahay $249.99/sanno.
 
@@ -165,7 +165,7 @@ Tusaale ahaan, haddii qiimaha alaabta aad haysato ee bil kasta uu yahay $29.99, 
 Farqeynta qiimaha kaliya ma ku daro toggle ama switch-ka bixinta ee frontend-ka. Si macaamiisha ay u beddelaan muddooyinka bixinta (tusaale ahaan: Bil kasta / Sanno), waxaad u baahan tahay inaad ku dari lahayd qaybta **Period Selection** (Dooro Muddooyinka) qaabka foomka bixinta ee aad samaynaysid. Waxaad ka heli kartaa tilmaamaha tallaabo-tallaabo ah halkan: [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle).
 :::
 
-#### Cansarka (Taxes)
+#### Cansarka (Taxes) {#taxes}
 
 Tabka **Taxes** (Cansarka) wuxuu la jaanqaadaa dejinta cansarka ee laga qabtay **Ultimate Multisite > Settings > Taxes** iyo si gaar ah heerarka cansarka loo qeexay. Si aad u furto cansarka oo aad dejiso heerarka cansarka la salaynayo, fadlan eeg dukumeentiga halkan: **Ultimate Multisite: Settings**.
 
@@ -181,7 +181,7 @@ Marka aad dejisid heer tax-kaas ee **Ultimate Multisite > Settings > Manage Tax 
 
 Si aad u muujiso in alaabta ay tahay mid la taxayn karo, ku hagaaji badhanka **Is Taxable** si uu u noqdo mid firfircoon (active) oo dooro heer tax-kaugu ah ka soo qaadista liiska Tax Category.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Si kooban, site templates-ku waa website-yada WordPress-ka oo dhammaystiran ee la samaynayo (cloned) dhanka macaamiisha markii ay bilaabaan guurkaas.
 
@@ -203,7 +203,7 @@ Ugu dambayntii, **Choose Available Site Templates** (Dooro Template-yada Website
 
 Ugu dambayntii, haddii maamul xogta uu rabto in doorashada template-ka ay dhacdo tallaabooyinka checkout-ka, dejinta ' _default_ ' (default) ayaa ku filan. Sida kale oo la doonayo in la ka saaro iyo la xirmo doorashada template-ka si loo wareejiyo doorashada dejinta qorsheynka (plan settings), waxaa laga yaabaa inay wanaagsan tahay in la isticmaalo doorashooyinka ' _assign new template_ ' ama ' _choose available site templates_ '.
 
-#### Sites (Website-yada)
+#### Sites (Website-yada) {#sites}
 
 Tab-ka **Sites** (Website-yada) waa qayb ka mid ah habka xaddidda (limitations functionality) ee Ultimate Multisite.
 
@@ -213,7 +213,7 @@ Dejintaas waxay qeexaysaa tirada ugu badan ee website-yada macaamiishu ay samayn
 
 Si aad u furto xaddidda, dejinta **limit sites** (xaddidka websites) siiso xaaladda firfircoon (active state) oo ku qor tirada ugu badan ee websites-ka qaybta **site allowance** (oohin website-yada).
 
-#### Visits (Wax-raacitaanka)
+#### Visits (Wax-raacitaanka) {#visits}
 
 Tab-ka **Visits** (Wax-raacitaanka) waa qayb kale oo ka mid ah nidaamka xaddidda ee Ultimate Multisite. Dejintaas waxay u oggolaanaysaa in la isku xiro iyo in la xaddido tirada macaamiisha gaarka ah ee booqanaya website-ka macmiilka.
 
@@ -225,7 +225,7 @@ Tab-ka **Visits** (Wax-raacitaanka) waa qayb kale oo ka mid ah nidaamka xaddidda
 
 کاتێک ئەم سنوورەتا گەیشت، Ultimate Multisite لە جیاتی ئەوەی سایتەکە بەکاردێت، پەیامێک دەدات کە سنوورەکان زیاتر بوون.
 
-#### بەکارهێنەران (Users)
+#### بەکارهێنەران (Users) {#users}
 
 محدودییەکانی 'Users' لە Ultimate Multisite ڕێگە بدەن بەڕێوەبەر تۆڕ بۆ دیاریکردنی سنوور بۆ ئەو ژمارەی یەکێک لە بەکارهێنەران کە دەتوانرێت دروست بکرێن و ڕۆڵەکان پێ بدەن.
 
@@ -235,7 +235,7 @@ Tab-ka **Visits** (Wax-raacitaanka) waa qayb kale oo ka mid ah nidaamka xaddidda
 
 پاشان بۆ هەر ڕۆڵێک کە سنوور دەبێت، دۆخی لەو کاتدا دیاری بکە و سنووری گەورەترین سنوور لە فیلدی گونجاو دیاری بکە.
 
-#### پۆستەکان (Post Types)
+#### پۆستەکان (Post Types) {#post-types}
 
 دۆخی **Post Types** ڕێگە بدات بەڕێوەبەر تۆڕ بۆ دیاریکردنی سنوورە ورد و تایبەت بۆ ئەو جۆرە پۆستە زۆرەی لە WordPress دایە.
 
@@ -247,7 +247,7 @@ Tab-ka **Visits** (Wax-raacitaanka) waa qayb kale oo ka mid ah nidaamka xaddidda
 
 خataa, haddii aad rabto inaad liis kasta oo post type ah si loogu xaddido, waxaad u baahan tahay inaad dib u socoto (toggle) adigoo u soo saaraya dhanka midig, ka dibna aad qeexdo inta ugu badan ee koontada sare ee loo oggolaan yahay qaybta saxda ah.
 
-#### Meelka Disk-ga (Disk Space)
+#### Meelka Disk-ga (Disk Space) {#disk-space}
 
 Tab-ka **Disk Space** wuxuu u oggolaanaya maamulayaasha shabakad inay xaddidan yihiin meesha ay macaamiishu isticmaalaan.
 
@@ -259,13 +259,13 @@ Si aad u fuliso xaddidda isticmaalka disk-ga, u beddel **limit disk size per sit
 
 Markaas, qeex inta ugu badan ee sare ee megabytes (MB) ee qaybta **disk space allowance** ee meel kasta.
 
-#### Domain-ka Gaarka Ah (Custom Domain)
+#### Domain-ka Gaarka Ah (Custom Domain) {#custom-domain}
 
 Adigoo dib u socota (toggling) dooro kan, waxaad u oggolaanaysaa domain-yada gaarka ah (custom domains) inay ku jiraan qorshahaas si gaar ah.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes (Qaybaha Muuqaalka - Themes)
+#### Themes (Qaybaha Muuqaalka - Themes) {#themes}
 
 Tab-ka **Themes** ee gudaha dooro bixinta alaabta (product options) wuxuu u oggolaanaya maamulaha shabakad inuu theme-yada macaamiisha u soo bandhigo si ay isku doorbadaan, iyo sidoo kale inuu doorbidaa xaaladda theme-ka.
 
@@ -283,7 +283,7 @@ Doorashada **behavior** waxay u oggolaanaysaa maamulaha shabakad inuu qeexo xaal
 
 Halkii **A** **Available** (La helita), theme-ka waxaa loo siinayaa macmiilka inuu is-kordiyo (self-activation). Ka soo horjeed, **Not Available** (Ma la helin) waxay ka saartaa awoodda macmiilka inuu theme-ka kordiyo. Ugu dambayntii, doorashada **Force Activate** (Cilicsi Kordinta) waxay xoogga saartaa waxa kale oo ay dooratay iyo kordinta theme-ka, taasoo ka dhigaysa mid default marka la abuuro website-ka.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Sida tab-ka Themes, Ultimate Multisite wuxuu u oggolaanayaa maamulaha shirkadda (network administrator) inuu qorsheeyo keliya meesha plugin-yada ay arki karaan macmiilka iyo xaaladooda marka la abuuro website cusub.
 
@@ -303,7 +303,7 @@ Setting-ka **Force Activate & Lock** waxay u shaqaysaa si la mid ah, laakiin wax
 
 Maamulaha shabakad ayaa laga yaabaa inuu tixgeliyo badhanka Force Activate & Lock iyo Force Inactivate & Lock isagoo la mid ah qoraallada (site templates) sida plugins, waxaana ay xaaladaha plugin-ka ee ku jira qoraallada ay saamaynta ka leeyihiin badhanka haddii la doorbiyay.
 
-#### Waxyaabaha La Dib U Dhigista Xaddidda (Reset Limitations)
+#### Waxyaabaha La Dib U Dhigista Xaddidda (Reset Limitations) {#reset-limitations}
 
 Tab-ka **Reset Limitations** wuxuu dib u dhigaa dhammaan xaddidaha gaarka ah ee lagu qorsheeyay alaabta. Si aad dib u dhigto xaddidaha, guji badhanka **reset limitations**.
 
@@ -313,7 +313,7 @@ Si aad u xaqiijiso ficilka, si toos ah u qaado badhanka **confirm reset** oo ku 
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Wax Ka Beddelid, Duubid, ama Dejinta Alaabta (Edit, Duplicate, or Delete Product)
+## Wax Ka Beddelid, Duubid, ama Dejinta Alaabta (Edit, Duplicate, or Delete Product) {#edit-duplicate-or-delete-product}
 
 Alaabta hore ee la haysto waxaa lagu wax ka beddeli karaa, duubiya (duplicate), ama la deji karaa iyadoo la socdo **Ultimate Multisite > Products** oo la dhigayo magaca alaabta horta.
 

@@ -3,7 +3,7 @@ title: Tantaran'ny fanovana VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Tantan’ny fanovana VAT
+# Tantan’ny fanovana VAT {#vat-changelog}
 
 Version 1.0.7 - Navoaka tamin’ny 2026-02-03
 

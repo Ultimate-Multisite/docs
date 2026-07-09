@@ -3,19 +3,19 @@ title: 'Casharka 10: Maalinta Daahfurka'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Casharka 10: Maalinta Daahfurka
+# Casharka 10: Maalinta Daahfurka {#lesson-10-launch-day}
 
 Wax walba waa la dhisay. Ka hor intaadan albaabbada furin, casharkani wuxuu dulmarayaa liiska hubinta ka hor daahfurka si loo xaqiijiyo inaysan jirin wax jaban, maqan, ama ceeb keeni kara.
 
-## Halkii Aan Ku Joognay
+## Halkii Aan Ku Joognay {#where-we-left-off}
 
 FitSite wuxuu leeyahay naqshado, qorshayaal, habka bixinta, astayn, hagidda bilowga, iyo qiimeyn dhammaantood la habeeyey. Hadda waxaan xaqiijineynaa in wax walba shaqeeyaan, kadibna waan daahfuraynaa.
 
-## Liiska Hubinta Ka Hor Daahfurka
+## Liiska Hubinta Ka Hor Daahfurka {#pre-launch-checklist}
 
 Ka shaqee shay kasta. Midna ha ka boodin.
 
-### Kaabayaasha Platform-ka
+### Kaabayaasha Platform-ka {#platform-infrastructure}
 
 - [ ] Martigelintu waa deggan tahay oo si fiican ayey u shaqaynaysaa marka culays jiro
 - [ ] Wildcard SSL waa firfircoon yahay, dhammaan subdomain-yaduna waxay ku shaqeeyaan HTTPS
@@ -23,7 +23,7 @@ Ka shaqee shay kasta. Midna ha ka boodin.
 - [ ] Kayd-celinnada waa la habeeyey oo la tijaabiyey (ugu yaraan mid soo celi si aad u xaqiijiso)
 - [ ] Kormeer ayaa jira -- waad ogaan doontaa haddii platform-ku hoos u dhaco
 
-### Naqshadaha
+### Naqshadaha {#templates}
 
 - [ ] Saddexda naqshadood dhammaantood si sax ah ayey ugu soo baxaan site-yo cusub
 - [ ] Waxyaabaha meel-ku-hayaha ah waa faa'iido leh oo ka madhan khaladaad qoraal
@@ -32,7 +32,7 @@ Ka shaqee shay kasta. Midna ha ka boodin.
 - [ ] Xawaaraha rarista boggu waa la aqbali karaa (ku tijaabi qalab sida GTmetrix ama PageSpeed Insights)
 - [ ] Ma jiraan linkiyo jaban ama assets maqan oo ku jira naqshad kasta
 
-### Qorshayaasha iyo Alaabaha
+### Qorshayaasha iyo Alaabaha {#plans-and-products}
 
 - [ ] Saddexda qorshe dhammaantood waa firfircoon yihiin oo muuqdaan
 - [ ] Sharaxaadaha qorshayaashu waa sax oo ku gaar ah niche-ka
@@ -42,7 +42,7 @@ Ka shaqee shay kasta. Midna ha ka boodin.
 - [ ] Dalab-kordhinadu si sax ah ayey u muuqdaan inta lagu jiro habka bixinta
 - [ ] Xaddidaadaha plugin-ka iyo theme-ka si sax ah ayaa loo dhaqan-geliyaa qorshe kasta
 
-### Habka Bixinta
+### Habka Bixinta {#checkout-flow}
 
 - [ ] Dhammaystir is-diiwaangelin tijaabo oo buuxda qorshe kasta (isticmaal qaabka lacag-bixinta tijaabada)
 - [ ] Xulashada naqshaddu waxay muujisaa naqshadaha saxda ah ee qorshe kasta
@@ -52,7 +52,7 @@ Ka shaqee shay kasta. Midna ha ka boodin.
 - [ ] Macmiilku isla markiiba wuu geli karaa site-kiisa cusub
 - [ ] Koodhadhka dhimistu si sax ah ayey u shaqeeyaan
 
-### Astaynta
+### Astaynta {#branding}
 
 - [ ] Bogga gelitaanku wuxuu muujinayaa astaynta FitSite
 - [ ] Admin dashboard wuxuu muujinayaa astaynta FitSite
@@ -60,7 +60,7 @@ Ka shaqee shay kasta. Midna ha ka boodin.
 - [ ] Qaansheegadyadu si sax ah ayey ula muuqdaan faahfaahinta ganacsigaaga
 - [ ] Site-ka suuqgeyntu waa live wuxuuna ku xiran yahay foomka bixinta
 
-### Hagidda Bilowga
+### Hagidda Bilowga {#onboarding}
 
 - [ ] Widget-ka Quick Start wuxuu ka muuqdaa dashboard-yada macaamiisha cusub
 - [ ] Dhammaan linkiyada Quick Start waxay tilmaamayaan bogagga saxda ah
@@ -68,7 +68,7 @@ Ka shaqee shay kasta. Midna ha ka boodin.
 - [ ] Maqaallada saldhigga aqoonta waa la daabacay oo waa la heli karaa
 - [ ] Bogga Account wuxuu muujinayaa macluumaadka qorshaha saxda ah iyo xulashooyinka upgrade-ka
 
-### Sharciga iyo Ganacsiga
+### Sharciga iyo Ganacsiga {#legal-and-business}
 
 - [ ] Shuruudaha adeegga waa la daabacay waxaana laga link-gareeyey habka bixinta
 - [ ] Siyaasadda asturnaanta waa la daabacay waana la heli karaa
@@ -77,11 +77,11 @@ Ka shaqee shay kasta. Midna ha ka boodin.
 - [ ] Payment gateway-gu wuxuu ku jiraa qaabka live (ma aha qaabka tijaabada)
 - [ ] Habaynta canshuurtu waa sax marka loo eego deegaankaaga sharci
 
-## Daahfur Jilicsan vs. Daahfur Buuxa
+## Daahfur Jilicsan vs. Daahfur Buuxa {#soft-launch-vs-hard-launch}
 
 Tixgeli daahfur laba waji ah:
 
-### Wajiga 1: Daahfur Jilicsan
+### Wajiga 1: Daahfur Jilicsan {#phase-1-soft-launch}
 
 Ku casuun 5-10 milkiile studio jimicsi inay is-diiwaangeliyaan ka hor daahfurka dadweynaha. Kuwani waa macaamiishaada beta. U fidi dhimis weyn (50% ka dhimis nolosha oo dhan, ama 3 bilood oo bilaash ah) beddelkeeda:
 
@@ -91,7 +91,7 @@ Ku casuun 5-10 milkiile studio jimicsi inay is-diiwaangeliyaan ka hor daahfurka 
 
 Tani waxay ku siinaysaa jawaab-celin macaamiil dhab ah iyo site-yo live ah oo aad soo bandhigto ka hor intaadan dadweynaha u furin.
 
-### Wajiga 2: Daahfur Dadweyne
+### Wajiga 2: Daahfur Dadweyne {#phase-2-public-launch}
 
 Marka jawaab-celinta daahfurka jilicsan lagu daro:
 
@@ -100,7 +100,7 @@ Marka jawaab-celinta daahfurka jilicsan lagu daro:
 - Bilow helitaanka macaamiisha (Casharka 11)
 - Ku dhawaaq kanaallada khuseeya warshadaha jimicsiga
 
-## Ficillada Maalinta Daahfurka
+## Ficillada Maalinta Daahfurka {#launch-day-actions}
 
 Maalinta aad dadweynaha u furayso:
 
@@ -110,7 +110,7 @@ Maalinta aad dadweynaha u furayso:
 4. **Diyaar u noqo** -- macaamiishaada dhabta ah ee ugu horreeya waxay u baahan karaan caawimo, jawaab degdeg ahna waxay dhistaa kalsooni
 5. **Si kooban u dabaaldeg** -- kadibna shaqada ku noqo
 
-## Waxa Qaldami Kara
+## Waxa Qaldami Kara {#what-can-go-wrong}
 
 U diyaar garow:
 
@@ -120,7 +120,7 @@ U diyaar garow:
 - **Waxqabadka marka culays jiro**: Haddii aad hesho koror taraafik ah, ogow sida loo ballaariyo martigelintaada
 - **Jahawareerka macaamiisha**: Diyaari saldhiggaaga aqoonta iyo kanaallada taageerada
 
-## Shabakadda FitSite Ilaa Hadda
+## Shabakadda FitSite Ilaa Hadda {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Waxa Aan Ku Dhisnay Casharkan
+## Waxa Aan Ku Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Liis hubin dhammaystiran oo ka hor daahfurka** oo daboolaya kaabayaasha, nuxurka, lacag-bixinnada, iyo sharciga
 - **Istaraatijiyad daahfur jilicsan** si loo helo jawaab-celin dhab ah ka hor inta aan dadweynaha loo furin

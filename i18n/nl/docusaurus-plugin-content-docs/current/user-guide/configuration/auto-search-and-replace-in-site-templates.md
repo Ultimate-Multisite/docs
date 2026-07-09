@@ -3,7 +3,7 @@ title: Automatisch zoeken en vervangen in sitesjablonen
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisch zoeken en vervangen in site-templates (v2)
+# Automatisch zoeken en vervangen in site-templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Deze tutorial vereist WP UItimo versie 2.x.**_
 
@@ -17,7 +17,7 @@ Je klant kan dat veld dan invullen tijdens de registratie.
 
 Ultimate Multisite vervangt de tijdelijke aanduidingen vervolgens automatisch door de gegevens die door de klant zijn opgegeven.
 
-## **Het probleem van de "template vol tijdelijke aanduidingen" oplossen**
+## **Het probleem van de "template vol tijdelijke aanduidingen" oplossen** {#solving-the-template-full-of-placeholders-problem}
 
 Dat is allemaal geweldig, maar we lopen wel tegen een lelijk probleem aan: onze site-templates - die door onze klanten kunnen worden bezocht - staan nu vol met lelijke tijdelijke aanduidingen die niet veel zeggen.
 

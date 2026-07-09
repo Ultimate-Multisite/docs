@@ -3,11 +3,11 @@ title: Ushughulikiaji wa Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Kushughulikia Webhook
+# Kushughulikia Webhook {#webhook-handling}
 
 Tengeneza sehemu maalum za webhook ili kupokea matukio kutoka huduma za nje na kuunganisha data na Ultimate Multisite.
 
-## Sehemu Maalum ya Webhook
+## Sehemu Maalum ya Webhook {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Mambo ya Kuzingatia Usalama
+## Mambo ya Kuzingatia Usalama {#security-considerations}
 
 - Daima angalia saini za webhook kwa kutumia HMAC au siri ya pamoja
 - Tumia `permission_callback` kwenye njia yako ya REST — kamwe usuiweke `__return_true` katika hali halisi (production)

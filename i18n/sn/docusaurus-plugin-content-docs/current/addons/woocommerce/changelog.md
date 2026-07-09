@@ -3,7 +3,7 @@ title: WooCommerce Kubatanidzwa Nhoroondo yeshanduko
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Nhoroondo Yeshanduko yeWooCommerce Integration
+# Nhoroondo Yeshanduko yeWooCommerce Integration {#woocommerce-integration-changelog}
 
 Shanduro 2.2.0 - Yakaburitswa musi wa2026-07-01
 * Zvitsva: Mari dzemutero dzeUltimate Multisite dzava kuoneka semitsetse yakaparadzana yemari dzeWooCommerce pakubhadhara, zvichiita kuti huwandu hwemutero hujekerere usati wabhadhara.

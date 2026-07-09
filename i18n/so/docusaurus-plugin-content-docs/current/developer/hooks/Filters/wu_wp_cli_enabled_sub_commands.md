@@ -4,11 +4,11 @@ title: Sifeeye - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands
+# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 Wuxuu shaandheeyaa sub_commands-ka loo hawlgeliyay entity-gan.
 
-## Parameters
+## Parameters {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Wuxuu shaandheeyaa sub_commands-ka loo hawlgeliyay entity-gan.
 | $command_base | `string` | Saldhigga lagu isticmaalo command-ka isla ka dib root-ka. |
 | $this | `\Base_Manager` | Instance-ka object-ka. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 2.0.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) safka 198

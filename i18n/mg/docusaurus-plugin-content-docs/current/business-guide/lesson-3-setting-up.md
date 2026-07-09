@@ -3,32 +3,32 @@ title: 'Lesona 3: Fametrahana ny tambajotranao'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesona 3: Fametrahana ny tambajotranao
+# Lesona 3: Fametrahana ny tambajotranao {#lesson-3-setting-up-your-network}
 
 Fotoana hanorenana izao. Amin’ity lesona ity dia hametraka Ultimate Multisite ianao ary handrindra ny fototry ny tambajotra FitSite. Ny fanapahan-kevitra rehetra eto dia natao ho an’ny sehatra ara-panatanjahan-tena.
 
-## Teo amin’izay nijanonantsika
+## Teo amin’izay nijanonantsika {#where-we-left-off}
 
 Nisafidy studio ara-panatanjahan-tena ho sehatra kendrena isika ary nanamarina ny fahafahana. Ankehitriny dia avadintsika ho sehatra miasa izany hevitra izany.
 
-## Fifidianana ny fampiantranoana
+## Fifidianana ny fampiantranoana {#choosing-your-hosting}
 
 Ny safidinao amin’ny fampiantranoana dia manan-danja kokoa ho an’ny sehatra kendrena noho ny ho an’ny tranonkala tokana. Tsy tranonkala iray no ampiantranoinao -- tambajotra hitombo ho am-polony na an-jatony amin’ny tranonkala no ampiantranoinao.
 
-### Zavatra hotadiavina
+### Zavatra hotadiavina {#what-to-look-for}
 
 - **Fanohanana WordPress Multisite**: Tsy ny mpampiantrano rehetra no mahavita mitantana multisite tsara
 - **SSL wildcard**: Tena ilaina ho an’ny tambajotra mifototra amin’ny zana-sehatra
 - **Loharano azo ampitomboina**: Mila toerana hitomboana ianao nefa tsy mifindra
 - **Fampidirana Ultimate Multisite**: Mitsitsy ezaka ara-pitantanana betsaka ny domain mapping sy SSL mandeha ho azy
 
-### Fomba atolotra
+### Fomba atolotra {#recommended-approach}
 
 Misafidiana mpampiantrano avy amin’ny lisitry ny [Mpamatsy mifanaraka](/user-guide/host-integrations/closte). Efa notsapaina niaraka tamin’ny Ultimate Multisite ireo ary manome ny fampidirana ilainao ho an’ny domain mapping sy ny automatique SSL.
 
 Ho an’ny FitSite, hampiasa fandrindrana zana-sehatra isika. Midika izany fa hiseho voalohany ho `studioname.fitsite.com` ny tranonkalan’ny mpanjifa alohan’ny ahafahany mampifandray ny sehatra azy manokana raha tiany.
 
-## Fametrahana WordPress Multisite
+## Fametrahana WordPress Multisite {#installing-wordpress-multisite}
 
 Raha mbola tsy manana fametrahana WordPress Multisite ianao:
 
@@ -40,7 +40,7 @@ Raha mbola tsy manana fametrahana WordPress Multisite ianao:
 Ny zana-sehatra dia manome adiresy miavaka ho an’ny tranonkalan’ny mpanjifa tsirairay (`studio.fitsite.com`) fa tsy lalana (`fitsite.com/studio`). Matihanina kokoa ho an’ny mpanjifanao izany ary misoroka fifandonan’ny permalink. Jereo ny [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) ho an’ny fampitahana amin’ny antsipiriany.
 :::
 
-## Fametrahana Ultimate Multisite
+## Fametrahana Ultimate Multisite {#installing-ultimate-multisite}
 
 Araho ny torolàlana [Fametrahana Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) mba:
 
@@ -53,11 +53,11 @@ Mandritra ny setup wizard, tadidio ny sehatra FitSite:
 - **Anaran’ny orinasa**: "FitSite" (na ny anaran’ny marika nofidinao)
 - **Logo-n’ny orinasa**: Ampidiro ny logo-n’ny marikao -- miseho amin’ny faktiora sy mailaka izany
 
-## Fandrindrana ho an’ny sehatra ara-panatanjahan-tena
+## Fandrindrana ho an’ny sehatra ara-panatanjahan-tena {#configuring-for-the-fitness-niche}
 
 Rehefa voapetraka ny Ultimate Multisite, ataovy ireto safidy fandrindrana manokana ho an’ny sehatra ireto:
 
-### Fikirana ankapobeny
+### Fikirana ankapobeny {#general-settings}
 
 Mankanesa any amin’ny **Ultimate Multisite > Settings** ary arindrao:
 
@@ -65,7 +65,7 @@ Mankanesa any amin’ny **Ultimate Multisite > Settings** ary arindrao:
 - **Anjara toerana mahazatra**: Administrator -- mila fifehezana feno ny votoatin’ny tranonkalany ny tompon’ny studio ara-panatanjahan-tena
 - **Fisoratana anarana**: Alefaso ny fisoratana anaran’ny mpampiasa mba hahafahan’ny tompon’ny studio misoratra anarana samirery
 
-### Fandrindrana mailaka
+### Fandrindrana mailaka {#email-configuration}
 
 Tokony hiresaka amin’ny fitenin’ny sehatra kendrenao ny mailakan’ny rafitrao. Mankanesa any amin’ny **Ultimate Multisite > Settings > Emails** ary amboary:
 
@@ -75,7 +75,7 @@ Tokony hiresaka amin’ny fitenin’ny sehatra kendrenao ny mailakan’ny rafitr
 
 Hanatsara bebe kokoa ireo isika amin’ny Lesona 8 (Fampidirana mpanjifa), fa ny fametrahana ny tonony dieny izao dia miantoka fa na dia ny fisoratana andrana voalohany aza dia mahatsapa ho mifanaraka amin’ny sehatra kendrena.
 
-### Fandrindrana sehatra
+### Fandrindrana sehatra {#domain-configuration}
 
 Raha mampiasa mpamatsy fampiantranoana mifanaraka ianao, arindrao izao ny domain mapping:
 
@@ -85,7 +85,7 @@ Raha mampiasa mpamatsy fampiantranoana mifanaraka ianao, arindrao izao ny domain
 
 Izany dia miantoka fa rehefa manomboka mamorona môdely sy tranonkala fitsapana amin’ny lesona manaraka isika, dia mandeha hatramin’ny farany ny zava-drehetra.
 
-## Ny tambajotra FitSite hatreto
+## Ny tambajotra FitSite hatreto {#the-fitsite-network-so-far}
 
 Amin’ny faran’ity lesona ity, izao no anananao:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Ready for site templates (next lesson)
 ```
 
-## Izay naorintsika tamin’ity lesona ity
+## Izay naorintsika tamin’ity lesona ity {#what-we-built-this-lesson}
 
 - Fametrahana **WordPress Multisite miasa** amin’ny maody zana-sehatra
 - **Ultimate Multisite voapetraka** sy voarindra miaraka amin’ny marika FitSite

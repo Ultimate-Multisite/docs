@@ -4,11 +4,11 @@ title: Filtre - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item
+# Filter: wu_rest_update_item {#filter-wurestupdateitem}
 
 Filtre pour déterminer si la requête peut être traitée ou non.
 
-## Parameters
+## Parameters {#parameters}
 
 | Nom | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filtre pour déterminer si la requête peut être traitée ou non.
 | $rest_base | `array` | Slug d'entité. |
 | $this | `\Base_Manager` | L'instance d'objet. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) à la ligne 414

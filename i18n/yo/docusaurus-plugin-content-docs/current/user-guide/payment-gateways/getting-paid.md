@@ -3,13 +3,13 @@ title: Gbigba Owó Sísan
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Gbigba Owo Sisan (v2)
+# Gbigba Owo Sisan (v2) {#getting-paid-v2}
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 
 Ultimate Multisite ní ètò ìmọ̀ ẹgbẹ́ àti ìsanwó tí a kọ́ sínú rẹ̀. Kí ètò ìsanwó wa lè ṣiṣẹ́, a ti so pọ̀ mọ́ àwọn ọ̀nà ẹnu-ọ̀nà ìsanwó tí a máa ń lò jù lọ nínú e-commerce. Àwọn ọ̀nà ẹnu-ọ̀nà ìsanwó àiyipada nínú Ultimate Multisite ni _Stripe_ , _PayPal_ , àti Ìsanwó Ọwọ́. O tún lè lo _WooCommerce_ , _GoCardless_ àti _Payfast_ láti gba àwọn ìsanwó nípa fífi àwọn add-ons tiwọn sori ẹrọ.
 
-## Àwọn Ètò Ìpìlẹ̀
+## Àwọn Ètò Ìpìlẹ̀ {#basic-settings}
 
 O lè ṣètò èyíkéyìí nínú àwọn ọ̀nà ẹnu-ọ̀nà ìsanwó wọ̀nyí lábẹ́ àwọn ètò ìsanwó Ultimate Multisite. O lè rí i nípa lílọ sí **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0 ń ṣàyẹ̀wò bóyá gateway tí ń ṣiṣẹ́ 
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Ibi tí a ti lè rí àwọn gateways:
+## Ibi tí a ti lè rí àwọn gateways: {#where-to-find-the-gateways}
 
 O lè ṣètò àwọn ọ̀nà ẹnu-ọ̀nà ìsanwó lórí ojú-ewé kan náà ( **Ultimate Multisite > Settings > Payments**). Ní ìsàlẹ̀ **active payment gateways** gan-an, o máa lè rí: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ àti _Manual_.
 
@@ -67,7 +67,7 @@ O lè wo àti ṣàtúnṣe àwọn àlàyé ìsanwó:
 
 Ní báyìí, tí o bá fẹ́ lo _WooCommerce_ , _GoCardless_ tàbí _Payfast_ gẹ́gẹ́ bí ọ̀nà ẹnu-ọ̀nà ìsanwó rẹ, o máa nílò láti **fi àwọn add-ons wọn sori ẹrọ kí o sì ṣètò wọn**.
 
-### Bí a ṣe ń fi add-on WooCommerce sori ẹrọ:
+### Bí a ṣe ń fi add-on WooCommerce sori ẹrọ: {#how-to-install-the-woocommerce-add-on}
 
 A lóye pé _Stripe_ àti _PayPal_ kò sí ní àwọn orílẹ̀-èdè kan, èyí tí ó ń dí tàbí ń ṣe ìdènà fún àwọn oníṣe Ultimate Multisite láti lo plugin wa dáadáa. Nítorí náà, a dá add-on kan láti so _WooCommerce,_ pọ̀ mọ́ ọn, èyí tí ó jẹ́ plugin e-commerce tó gbajúmọ̀ gan-an. Àwọn olùdàgbàsókè káàkiri ayé dá àwọn add-ons láti so àwọn ọ̀nà ẹnu-ọ̀nà ìsanwó ọ̀tọ̀ọ̀tọ̀ pọ̀ mọ́ ọn. A lo àǹfààní èyí láti faagun àwọn ọ̀nà ẹnu-ọ̀nà ìsanwó tí o lè lò pẹ̀lú ètò ìsanwó Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Lẹ́yìn mímú un ṣiṣẹ́, bí o kò bá tíì fi plugin WooCommerce sí
 
 Láti ka síi nípa àfikún Ìṣepọ̀ WooCommerce, **tẹ ibi**.
 
-### Bí a ṣe ń fi àfikún GoCardless sílẹ̀:
+### Bí a ṣe ń fi àfikún GoCardless sílẹ̀: {#how-to-install-the-gocardless-add-on}
 
 Àwọn ìgbésẹ̀ láti fi àfikún _GoCardless_ sílẹ̀ fẹ́rẹ̀ẹ́ jẹ́ ohun kan náà pẹ̀lú àfikún _WooCommerce_. Jọ̀wọ́ lọ sí ojú-ìwé àwọn àfikún kí o sì yan àfikún **Ultimate Multisite: Ẹnu-ọ̀nà GoCardless**.
 
@@ -111,7 +111,7 @@ Lẹ́yìn tí fífi sílẹ̀ bá parí, a ó darí rẹ lọ sí ojú-ìwé à
 
 Láti kọ́ bí a ṣe lè bẹ̀rẹ̀ pẹ̀lú ẹnu-ọ̀nà _GoCardless_, **ka àpilẹ̀kọ yìí**.
 
-### Bí a ṣe ń fi àfikún Payfast sílẹ̀:
+### Bí a ṣe ń fi àfikún Payfast sílẹ̀: {#how-to-install-the-payfast-add-on}
 
 Lọ sí ojú-ìwé àwọn àfikún kí o sì yan àfikún **Ultimate Multisite: Ẹnu-ọ̀nà Payfast**.
 

@@ -3,9 +3,9 @@ title: प्रकाशन नोंदी
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# प्रकाशन नोंदी
+# प्रकाशन नोंदी {#release-notes}
 
-## आवृत्ती 2.13.0 — 2026-06-05 रोजी प्रकाशित
+## आवृत्ती 2.13.0 — 2026-06-05 रोजी प्रकाशित {#version-2130--released-on-2026-06-05}
 
 - नवीन: ग्राहक Account, checkout, billing, साइट, invoice, template switching, आणि domain mapping प्रवाहांसाठी sovereign-tenant समर्थन जोडले, जेणेकरून tenant networks ग्राहकांना व्यवस्थापित कृतींसाठी मुख्य साइटकडे परत पाठवू शकतील.
 - नवीन: आवर्ती सदस्यत्वांसाठी renewal-credential तपासण्या जोडल्या, जेणेकरून जतन केलेला billing agreement, subscription, किंवा vault token नसल्यास gateways auto-renewal निष्क्रिय करू शकतील.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - दुरुस्ती: Membership renewals, expiration display, आणि payment collection मधील edge cases आता तात्काळ expirations, crashes, किंवा चुकलेली आवश्यक payments टाळतात.
 - सुधारित: WordPress सुसंगतता 7.0 पर्यंत तपासली आहे, production Vue assets npm sources मधून पुन्हा तयार केले आहेत, आणि Cypress end-to-end coverage आता अधिक checkout, setup, SSO, आणि gateway flows तपासते.
 
-## आवृत्ती 2.12.0 — 2026-05-15 रोजी प्रकाशित
+## आवृत्ती 2.12.0 — 2026-05-15 रोजी प्रकाशित {#version-2120--released-on-2026-05-15}
 
 - नवीन: Hostinger (hPanel) domain mapping integration सह समर्थित host provider म्हणून जोडले
 - नवीन: Site Exporter आता streamlined network-wide साइट पुनर्संचयनेसाठी network import bundles हाताळतो
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - दुरुस्ती: Site Exporter CLI आता योग्य default network site selection जतन करते
 - सुधारित: plugin package मधून bundled wp-cli काढले, ज्यामुळे plugin आकार कमी झाला
 
-## आवृत्ती 2.11.0 — 2026-05-11 रोजी प्रकाशित
+## आवृत्ती 2.11.0 — 2026-05-11 रोजी प्रकाशित {#version-2110--released-on-2026-05-11}
 
 - नवीन: साइट exports आता self-booting `index.php` bundle करतात, त्यामुळे ZIP स्वतंत्र plugin install शिवाय fresh host वर install करता येते.
 - नवीन: Network export प्रशासकांना Site Export admin page वरून सर्व subsites एकाच archive मध्ये export करू देते.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - नवीन: आवश्यक field configured नसताना product जोडल्यास Checkout form editor चेतावणी देतो.
 - नवीन: Import/Export settings tab आता त्याची व्याप्ती स्पष्टपणे वर्णन करतो आणि थेट Site Export tool ला link करतो.
 
-## आवृत्ती 2.10.0 — 2026-05-05 रोजी प्रकाशित
+## आवृत्ती 2.10.0 — 2026-05-05 रोजी प्रकाशित {#version-2100--released-on-2026-05-05}
 
 - नवीन: seamless gateway configuration साठी OAuth flag gate सह manual credential entry साठी PayPal guided setup wizard.
 - नवीन: Template switch customer panel वर्तमान-template card, persistent grid, आणि **वर्तमान template रीसेट करा** button सह पुन्हा डिझाइन केले.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - दुरुस्ती: सर्व login flows मध्ये filtered SSO path पाळला जातो.
 - दुरुस्ती: रिकामे site identity options save करताना जतन केले.
 
-## आवृत्ती 2.9.0 — 2026-04-30 रोजी प्रकाशित
+## आवृत्ती 2.9.0 — 2026-04-30 रोजी प्रकाशित {#version-290--released-on-2026-04-30}
 
 - नवीन: Single-site export आणि import **Tools > Export & Import** अंतर्गत जोडले.
 - दुरुस्ती: Export ZIP files आता authenticated download endpoint द्वारे दिल्या जातात.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - दुरुस्ती: user settings keys मध्ये Tour IDs underscores मध्ये normalise केले.
 - सुधारित: अधिक चांगल्या compatibility साठी Alchemy/Zippy ऐवजी ZipArchive आता वापरले जाते.
 
-## आवृत्ती 2.8.0 — 2026-04-29
+## आवृत्ती 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - नवीन: Other Options सेटिंग्ज UI मध्ये Enable Jumper toggle जोडला.
 - नवीन: checkout forms यादी table मध्ये Status स्तंभ जोडला.

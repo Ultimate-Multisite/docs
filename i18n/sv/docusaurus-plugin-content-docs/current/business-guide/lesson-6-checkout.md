@@ -3,15 +3,15 @@ title: 'Lektion 6: Registreringsupplevelsen'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lektion 6: Registreringsupplevelsen
+# Lektion 6: Registreringsupplevelsen {#lesson-6-the-signup-experience}
 
 Kassaproceduren är där intresset blir intäkt. En förvirrande eller generisk registreringsprocess får bort kunder. Ett flöde som är nischspecifikt, talar deras språk och känns smärtfritt konverterar dem.
 
-## Var vi slutade
+## Var vi slutade {#where-we-left-off}
 
 FitSite har konfigurerade mallar och planer. Nu bygger vi registrerings- och kassaproceduren som förvandlar träningsstudieägare till betalande kunder.
 
-## Förstå registreringsflödet
+## Förstå registreringsflödet {#understanding-the-registration-flow}
 
 Ultimate Multisites kassaformulär är helt anpassningsbara flerstegsformulär. För FitSite vill vi ha ett flöde som:
 
@@ -21,11 +21,11 @@ Ultimate Multisites kassaformulär är helt anpassningsbara flerstegsformulär. 
 
 Se [The Registration Flow](/user-guide/configuration/the-registration-flow) för den fullständiga tekniska referensen.
 
-## Designa FitSite-kassan
+## Designa FitSite-kassan {#designing-the-fitsite-checkout}
 
 Navigera till **Ultimate Multisite > Checkout Forms** och skapa ett nytt formulär.
 
-### Steg 1: Planval
+### Steg 1: Planval {#step-1-plan-selection}
 
 Det första en träningsstudieägare ska se är planerna, presenterade i termer de förstår.
 
@@ -37,7 +37,7 @@ Det första en träningsstudieägare ska se är planerna, presenterade i termer 
 "1 GB lagring" betyder ingenting för en gymägare. "Allt du behöver för en professionell studiosida" betyder allt. Skriv produktbeskrivningar i dina kunders språk.
 :::
 
-### Steg 2: Mallval
+### Steg 2: Mallval {#step-2-template-selection}
 
 Efter att ha valt en plan väljer kunden sin startmall.
 
@@ -45,7 +45,7 @@ Efter att ha valt en plan väljer kunden sin startmall.
 - De tillgängliga mallarna filtreras baserat på den plan de valde (konfigurerat i Lektion 5)
 - Varje mall bör ha en förhandsgranskningsbild som visar en träningsspecifik design
 
-### Steg 3: Kontoskapande
+### Steg 3: Kontoskapande {#step-3-account-creation}
 
 Håll detta minimalt. Samla endast in:
 
@@ -55,27 +55,27 @@ Håll detta minimalt. Samla endast in:
 
 Fråga inte efter information du inte behöver vid registreringen. Varje extra fält minskar konverteringarna.
 
-### Steg 4: Webbplatsuppsättning
+### Steg 4: Webbplatsuppsättning {#step-4-site-setup}
 
 - **Site title**: Fyll i automatiskt från studienamnet som angavs i Steg 3
 - **Site URL**: Genereras automatiskt från studienamnet (t.ex. `ironworks.fitsite.com`)
 
-### Steg 5: Betalning
+### Steg 5: Betalning {#step-5-payment}
 
 - Lägg till fältet **Payment**
 - Konfigurera din betalningsgateway ([Stripe](/user-guide/payment-gateways/stripe) rekommenderas för prenumerationsfakturering)
 - Om du skapade order bumps i Lektion 5, lägg till ett fält för **Order Bump** före betalningssteget
 
-### Steg 6: Bekräftelse
+### Steg 6: Bekräftelse {#step-6-confirmation}
 
 - Anpassa bekräftelsemeddelandet med träningsspecifikt språk
 - Exempel: "Din träningsstudie-webbplats skapas. Du kommer att omdirigeras till din nya sajt om några sekunder."
 
-## Lägga till en periodval-toggle
+## Lägga till en periodval-toggle {#adding-a-period-selection-toggle}
 
 Om du har ställt in prisvariationer i dina planer (månadsvis vs. årligen), lägg till ett fält för **Period Selection** på kassan så att kunderna kan växla mellan faktureringsperioder. Se [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) för instruktioner.
 
-## Konfigurera betalning
+## Konfigurera betalning {#configuring-payment}
 
 Om du ännu inte har ställt in en betalningsgateway:
 
@@ -85,7 +85,7 @@ Om du ännu inte har ställt in en betalningsgateway:
 
 Se [Getting Paid](/user-guide/payment-gateways/getting-paid) för detaljer om hur betalningar når ditt konto.
 
-## Testa flödet
+## Testa flödet {#testing-the-flow}
 
 Innan du går vidare, slutför en fullständig testregistrering:
 
@@ -105,7 +105,7 @@ Kontrollera att:
 - [ ] Kunden landar på en fungerande webbplats med den valda mallen
 - [ ] Bekräftelsemailen använder träningsspecifikt språk
 
-## FitSite Network hittills
+## FitSite Network hittills {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Vad vi byggde i denna lektion
+## Vad vi byggde i denna lektion {#what-we-built-this-lesson}
 
 - **Ett flerstegs kassaformulär** anpassat för träningsstudieägare
 - **Nischspecifikt språk** genom hela registreringsflödet

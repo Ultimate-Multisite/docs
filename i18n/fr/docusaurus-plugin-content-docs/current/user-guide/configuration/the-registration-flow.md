@@ -3,13 +3,13 @@ title: Le flux d’inscription
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Le flux d’inscription (v2)
+# Le flux d’inscription (v2) {#the-registration-flow-v2}
 
 _**NOTE IMPORTANTE : Cet article concerne Ultimate Multisite version 2.x.**_
 
 Les utilisateurs peuvent s’inscrire à votre réseau de différentes manières. Ils peuvent utiliser votre formulaire d’inscription ou un lien partageable vers un forfait présélectionné. Nous allons vous montrer ici comment vos clients peuvent s’inscrire sur votre réseau en utilisant les parcours disponibles et ce qui se passe après leur inscription sur votre réseau.
 
-## Utiliser le formulaire d’inscription :
+## Utiliser le formulaire d’inscription : {#using-the-registration-form}
 
 Il s’agit du processus d’inscription standard. Vous créez une page d’inscription avec un **formulaire de paiement** et c’est là que vos clients iront pour s’inscrire sur votre réseau et s’abonner à un forfait. Vous pouvez avoir plusieurs pages d’inscription, chacune avec un formulaire d’inscription différent si vous le souhaitez.
 
@@ -35,13 +35,13 @@ S’ils se sont inscrits à un forfait payant ou si la vérification de l’e-ma
 
 ![Site activé avec un lien pour se connecter au dashboard](/img/frontend/site-activated.png)
 
-## Utiliser un lien partageable :
+## Utiliser un lien partageable : {#using-a-shareable-link}
 
 Le processus d’inscription avec un lien partageable est globalement le même que pour le formulaire d’inscription ; la seule différence est qu’avec un lien partageable, vos clients peuvent avoir un produit ou un modèle de site web présélectionné dans le formulaire de paiement (voir la section Présélectionner des produits et des modèles via les paramètres d’URL), ou éventuellement un code promo ajouté (voir la section Utiliser les paramètres d’URL).
 
 Le processus d’inscription sera le même : ils devront renseigner leur nom, nom d’utilisateur, adresse e-mail, nom et titre du site web, etc., mais le forfait ou le modèle de site sera déjà présélectionné pour eux.
 
-### S’inscrire avec des paiements manuels :
+### S’inscrire avec des paiements manuels : {#registering-using-manual-payments}
 
 Si vous ne souhaitez pas utiliser PayPal, Stripe ou toute autre passerelle de paiement proposée par Ultimate Multisite ou ses intégrations d’extensions, vous pouvez utiliser les paiements manuels pour vos clients. Ainsi, vous pouvez générer une facture qu’ils paieront via le processeur de paiement de votre choix après leur inscription sur votre réseau.
 

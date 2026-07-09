@@ -3,15 +3,15 @@ title: Vodič za upotrebu hookova
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Vodič za upotrebu hooks
+# Vodič za upotrebu hooks {#hooks-usage-guide}
 
 Ultimate Multisite pruža 200+ action hooks i 280+ filter hooks. Ova stranica pokriva najčešće korištene hooks s praktičnim primjerima. Za potpunu automatski generiranu referencu pregledajte ostale stranice u ovom odjeljku.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Životni ciklus korisnika
+### Životni ciklus korisnika {#customer-lifecycle}
 
-#### Nakon stvaranja korisnika
+#### Nakon stvaranja korisnika {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Promjena statusa korisnika
+#### Promjena statusa korisnika {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Site Hooks
+### Site Hooks {#site-hooks}
 
-#### Nakon objave site
+#### Nakon objave site {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Prije primjene predloška
+#### Prije primjene predloška {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership Hooks
+### Membership Hooks {#membership-hooks}
 
-#### Prijelazi statusa
+#### Prijelazi statusa {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Payment Hooks
+### Payment Hooks {#payment-hooks}
 
-#### Plaćanje dovršeno / neuspjelo
+#### Plaćanje dovršeno / neuspjelo {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### Prije obrade / nakon dovršetka
+#### Prije obrade / nakon dovršetka {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain Hooks
+### Domain Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Filtri cijena
+### Filtri cijena {#pricing-filters}
 
-#### Ukupno u košarici
+#### Ukupno u košarici {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Porezne stope
+#### Porezne stope {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Filtri predložaka
+### Filtri predložaka {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Filtri ograničenja
+### Filtri ograničenja {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Filtri gatewaya
+### Filtri gatewaya {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Polja obrasca checkout
+### Polja obrasca checkout {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Sadržaj e-pošte
+### Sadržaj e-pošte {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

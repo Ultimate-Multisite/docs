@@ -4,21 +4,21 @@ title: Actio - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Actio: wu_mt_providers_registered
+# Actio: wu_mt_providers_registered {#action-wumtprovidersregistered}
 
 Excitatur postquam praebitores praedefiniti registrantur.
 
 Hoc hook utere ut praebitores proprios registres.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
 | $manager | `\Provider_Manager` | Instantia moderatoris praebitorum. |
 
-### Ab
+### Ab {#since}
 
 - 1.0.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/managers/class-provider-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/managers/class-provider-manager.php#L93) ad lineam 93

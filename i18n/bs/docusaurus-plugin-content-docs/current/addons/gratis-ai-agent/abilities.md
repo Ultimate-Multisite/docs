@@ -3,7 +3,7 @@ title: Referenca sposobnosti
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenca sposobnosti
+# Referenca sposobnosti {#abilities-reference}
 
 Sposobnosti su atomski akcije koje Gratis AI Agent može pozvati na vaš WordPress instalaciji. Svaka sposobnost je registrovana PHP klasa koja prikazuje JSON šemu — agent čita tu šemu u toku rada kako bi razumio koje parametre su potrebni i što sposobnost vraća.
 
@@ -11,11 +11,11 @@ Ova stranica dokumentira sve sposobnosti koje se isporučuju sa Gratis AI Agent 
 
 ---
 
-## Custom Post Types (Prilagođeni tipovi postova)
+## Custom Post Types (Prilagođeni tipovi postova) {#custom-post-types}
 
 Ove sposobnosti upravljaju prilagođenim tipovima postova (CPT-ovima) registrovanim putem agenta. Registracije se čuvaju u tabeli opcija WordPressa tako da przivode čak i ako plugin prestane raditi ili ponovo aktivira.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registruje novi prilagođeni tip postova.
 
@@ -50,7 +50,7 @@ Registruje novi prilagođeni tip postova.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Vraća sve prilagođene tipove postova registrovane od strane agenta.
 
@@ -73,7 +73,7 @@ Vraća sve prilagođene tipove postova registrovane od strane agenta.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 De-registruje prilagođeni tip postova koji je prethodno registrovao agent. Postovi tog tipa ostaju u bazi podataka, ali više nisu dostupni putem tipa postova.
 
@@ -87,11 +87,11 @@ De-registruje prilagođeni tip postova koji je prethodno registrovao agent. Post
 
 ---
 
-## Custom Taxonomies (Prilagođene taksonomije)
+## Custom Taxonomies (Prilagođene taksonomije) {#custom-taxonomies}
 
 Ove sposobnosti upravljaju prilagođenim taksonomijama. Kao i CPT-ovi, registracije taksonomija se čuvaju.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registruje novu prilagođenu taksonomiju.
 
@@ -123,7 +123,7 @@ Registruje novu prilagođenu taksonomiju.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Vraća sve prilagođene taksonomije registrovane od strane agenta.
 
@@ -146,7 +146,7 @@ Vraća sve prilagođene taksonomije registrovane od strane agenta.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 De-registruje prilagođenu taksonomiju koja je prethodno registrovana od strane agenta.
 
@@ -160,11 +160,11 @@ De-registruje prilagođenu taksonomiju koja je prethodno registrovana od strane 
 
 ---
 
-## Design System (Dizajns sistem)
+## Design System (Dizajns sistem) {#design-system}
 
 Sposobnosti dizajna sistema modifikuju vizuelni prikaz WordPress stranice — od prilagođenog CSS-a do obrazaca blokova i logotipa stranice.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Dodaje CSS u `<head>` stranice putem funkcije `wp_add_inline_style`. CSS se čuva u opciji `gratis_ai_agent_custom_css` i čistije se uklanja kada se sposobnost resetuje.
 
@@ -190,7 +190,7 @@ Dodaje CSS u `<head>` stranice putem funkcije `wp_add_inline_style`. CSS se čuv
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registruje ponovljiv obrazac blokova u biblioteci obrazaca WordPressa.
 
@@ -209,13 +209,13 @@ Registruje ponovljiv obrazac blokova u biblioteci obrazaca WordPressa.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Lista sve obrasce blokova registrovane od strane agenta.
 
 **Parametri** — nijedan
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 WordPress sajt logotipini određenom attachment ID-u ili udaljenog URL-a za uvođenje. Kada se pruži URL, slika se preuzima i u Media Library uvozi.
 
@@ -232,7 +232,7 @@ Morate priložiti jedan od `attachment_id` ili `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Primjenjuje imenovani predložak boja/tipografije na `theme.json` (ili `global-styles`) aktivnog tema. Predlošci su grupisane pakete koje održava tim Gratis AI Agent tima.
 
@@ -257,11 +257,11 @@ Primjenjuje imenovani predložak boja/tipografije na `theme.json` (ili `global-s
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Global Styles sposobnosti čitaju i pišu vrijednosti `theme.json` putem WordPress Global Styles API-ja, utječući na sve blokove i šablone sita.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Vraća trenutnu konfiguraciju globalnih stilova.
 
@@ -275,7 +275,7 @@ Vraća trenutnu konfiguraciju globalnih stilova.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Ažurira jednu ili više vrijednosti u konfiguraciji globalnih stilova.
 
@@ -302,7 +302,7 @@ Ažurira jednu ili više vrijednosti u konfiguraciji globalnih stilova.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Resetira sve promjene globalnih stilova primijenjenih od strane agenta, vraćajući podrazumne postavke tema.
 
@@ -312,11 +312,11 @@ Resetira sve promjene globalnih stilova primijenjenih od strane agenta, vraćaju
 
 ---
 
-## Navigation Menus
+## Navigation Menus {#navigation-menus}
 
 Sposobnosti Navigacionih menija kreiraju i upravljaju WordPress nav menijima i njihovim stavkama.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Kreira novi WordPress navigacijski meni.
 
@@ -331,7 +331,7 @@ Kreira novi WordPress navigacijski meni.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Promjenjuje naziv menija ili ga ponovo dodjeljuje lokaciji u temi.
 
@@ -347,7 +347,7 @@ Promjenjuje naziv menija ili ga ponovo dodjeljuje lokaciji u temi.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Dodaje stavku u postojeći navigacijski meni.
 
@@ -367,7 +367,7 @@ Dodaje stavku u postojeći navigacijski meni.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Uklanja stavku iz navigacijskog menija.
 
@@ -381,7 +381,7 @@ Uklanja stavku iz navigacijskog menija.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Lista sve WordPress navigacijskih menija, uključujući imenovane lokacije u temi.
 
@@ -404,11 +404,11 @@ Lista sve WordPress navigacijskih menija, uključujući imenovane lokacije u tem
 
 ---
 
-## Options Management
+## Options Management {#options-management}
 
 Sposobnosti Upravljanja opcijama čitaju i pišu WordPress opcije putem `get_option` / `update_option`. Ugrađena sigurnosna bloklista sprečava slučajnu izmjenu kritičnih postavki.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Čita WordPress opciju.
 
@@ -424,7 +424,7 @@ Vraća grešku ako je `option_name` na sigurnosnoj bloklisti.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Piše WordPress opciju.
 
@@ -442,7 +442,7 @@ Vraća grešku ako je `option_name` na blok listi sigurnosti.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Briše WordPress opciju.
 
@@ -458,7 +458,7 @@ Vraća grešku ako je `option_name` na blok listi sigurnosti.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Lista WordPress opcija koje odgovaraju određenom obrascu.
 
@@ -482,11 +482,11 @@ Lista WordPress opcija koje odgovaraju određenom obrascu.
 
 ---
 
-## Upravljanje sadržajem (Content Management)
+## Upravljanje sadržajem (Content Management) {#content-management}
 
 Sposobnosti upravljanja sadržajem omogućavaju kreiranje i uređivanje WordPress postova i stranica. Vraća se ID posta kako bi sljedeći koraci u planovima sa više sposobnosti mogli referencirati kreirani sadržaj.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Kreira novi WordPress post, stranicu ili unos tipa prilagođenog postova (custom post type).
 
@@ -521,7 +521,7 @@ Kreira novi WordPress post, stranicu ili unos tipa prilagođenog postova (custom
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Ažurira postojeći WordPress post ili stranicu.
 
@@ -551,7 +551,7 @@ Ažurira postojeći WordPress post ili stranicu.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Kreira više postova u jednoj pozivu sposobnosti (ability call), smanjujući broj zahtjeva tokom izgradnje sajta ili masovne uvoze sadržaja. Postovi se kreiraju sekvencijalno; ako jedan ne uspije, ostali nastavljaju rad i neuspjeh se izvještava u nizu rezultata.
 
@@ -603,7 +603,7 @@ Kreira više postova u jednoj pozivu sposobnosti (ability call), smanjujući bro
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Dodjeljuje vizualnu sliku (thumbnail posta) postojećem postu ili stranici. Prihvaća ID priloška iz Media Library-ja ili udaljenu URL sliku; kada se dostavi URL, slika se automatski preuzima i uvozi.
 
@@ -622,17 +622,17 @@ Morate priložiti ili `attachment_id` ili `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Kreira kontakt obrazac koristeći aktivni plugin za forme (Contact Form 7, WPForms, Fluent Forms ili Gravity Forms, ovisno o tome koji je instaliran). Vraća kratki kod (shortcode) koji se može ugraditi u bilo koji post ili stranicu.
 
 **Parametri**
 
-## Vizual Pregled
+## Vizual Pregled {#visual-review}
 
 Vizual Review yetenekleri, ajanın canlı sayfaların ekran görüntülerini almasını ve analiz etmesini sağlar; bu sayede herhangi bir tarayıcı eklentisine ihtiyaç duymadan otonom tasarım incelemesi, öncesi/sonrası karşılaştırmaları ve görsel regresyon kontrolleri yapabilirsiniz.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Belirtilen bir URL'deki WordPress sayfasının ekran görüntüsünü sunucu tarafında çalışan başsız (headless) tarayıcı kullanarak alır. Görüntü Medya Kütüphanesine kaydedilir ve bir CDN URL'si döndürülür.
 
@@ -661,7 +661,7 @@ Belirtilen bir URL'deki WordPress sayfasının ekran görüntüsünü sunucu tar
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 İki ekran görüntüsünü alır ve bir görsel fark puanı ile değiştirilen bölgeleri vurgulayan bir fark görüntüsü döndürür. Bir tasarım değişikliğinin beklenen sonucu üretip üretmediğini doğrulamak veya istenmeyen geri dönüşleri tespit etmek için kullanışlıdır.
 
@@ -691,7 +691,7 @@ Belirtilen bir URL'deki WordPress sayfasının ekran görüntüsünü sunucu tar
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Bir sayfanın ekran görüntüsünü alır ve görsel analiz için dil modeline gönderir. Düzen, tipografi, renk kullanımı ve erişilebilirlik konularını kapsayan yapılandırılmış bir değerlendirme döndürür.
 
@@ -722,11 +722,11 @@ Bir sayfanın ekran görüntüsünü alır ve görsel analiz için dil modeline 
 
 ---
 
-## Kurulabilir Yetenekler
+## Kurulabilir Yetenekler {#installable-abilities}
 
 Kurulabilir Yetenekler Kaydı, ajanı WordPress eklentileri olarak dağıtılan ek yetenek paketleriyle genişletmenize olanak tanır. Her paket, standart yetenek API'sini kullanarak bir veya daha fazla yeteneği kaydeder.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Kayıttan kurulabilecek yetenek paketlerinin kataloğunu döndürür.
 
@@ -755,7 +755,7 @@ Kayıttan kurulabilecek yetenek paketlerinin kataloğunu döndürür.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Preuzima i aktivira paket sposobnosti iz registara.
 
@@ -769,7 +769,7 @@ Preuzima i aktivira paket sposobnosti iz registara.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Pretražuje registar sposobnosti da pronađe najbolji plugin za opisan slučaj upotrebe i, opciono, ga instalira.
 

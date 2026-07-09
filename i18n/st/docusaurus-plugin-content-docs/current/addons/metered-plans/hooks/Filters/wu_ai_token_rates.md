@@ -4,19 +4,19 @@ title: Sefe - wu_ai_token_rates
 sidebar_label: wu_ai_token_rates
 _i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
 ---
-# Sefe: wu_ai_token_rates
+# Sefe: wu_ai_token_rates {#filter-wuaitokenrates}
 
 Sefa ditefiso tsa tefiso ya AI token.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
 | $rates | `array` | Ditefiso tsa mohlala tse tswang kgethong ya netweke. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 1.1.0
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/managers/class-ai-usage-listener.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-metered-plans/blob/main/inc/managers/class-ai-usage-listener.php#L266) moleng wa 266

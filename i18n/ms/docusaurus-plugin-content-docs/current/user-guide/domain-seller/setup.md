@@ -3,21 +3,21 @@ title: Persediaan dan Konfigurasi Penyedia
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Persediaan dan Konfigurasi Penyedia
+# Domain Seller: Persediaan dan Konfigurasi Penyedia {#domain-seller-setup-and-provider-configuration}
 
 Addon Domain Seller disertakan dengan wizard persediaan berpandu yang membimbing anda melalui setiap langkah yang diperlukan. Halaman ini merangkumi aliran wizard dan cara mengkonfigurasi atau mengkonfigurasi semula penyedia selepas itu.
 
-## Keperluan
+## Keperluan {#requirements}
 
 - **Multisite Ultimate** v2.4.12 atau lebih tinggi, diaktifkan rangkaian
 - **PHP** 7.4+
 - Kelayakan API untuk sekurang-kurangnya satu pendaftar yang disokong
 
-## Wizard persediaan kali pertama
+## Wizard persediaan kali pertama {#first-run-setup-wizard}
 
 Wizard persediaan dilancarkan secara automatik pada kali pertama anda mengaktifkan plugin pada rangkaian. Ia juga tersedia pada bila-bila masa daripada **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Langkah 1 — Pilih penyedia
+### Langkah 1 — Pilih penyedia {#step-1--choose-a-provider}
 
 Pilih pendaftar yang ingin anda sambungkan. Pilihan yang disokong:
 
@@ -33,7 +33,7 @@ Pilih pendaftar yang ingin anda sambungkan. Pilihan yang disokong:
 | NameSilo | Tidak | Tidak |
 | Enom | Ya | Tidak |
 
-### Langkah 2 — Masukkan kelayakan
+### Langkah 2 — Masukkan kelayakan {#step-2--enter-credentials}
 
 Setiap penyedia mempunyai medan kelayakan yang berbeza:
 
@@ -57,17 +57,17 @@ Setiap penyedia mempunyai medan kelayakan yang berbeza:
 
 Tandakan **Mod sandbox** jika tersedia untuk menguji terhadap persekitaran ujian penyedia sebelum disiarkan secara langsung.
 
-### Langkah 3 — Uji sambungan
+### Langkah 3 — Uji sambungan {#step-3--test-the-connection}
 
 Klik **Test Connection**. Wizard menghantar panggilan API ringan untuk mengesahkan kelayakan dan kesambungan. Betulkan sebarang isu kelayakan sebelum meneruskan.
 
-### Langkah 4 — Import TLD
+### Langkah 4 — Import TLD {#step-4--import-tlds}
 
 Klik **Import TLDs** untuk mengambil semua TLD yang tersedia dan harga borong daripada penyedia yang disambungkan. Ini mengisi senarai TLD yang digunakan oleh produk domain. Import mungkin mengambil masa 30–60 saat untuk penyedia dengan katalog TLD yang besar.
 
 TLD juga disegerakkan semula secara automatik sekali sehari melalui kerja cron berjadual.
 
-### Langkah 5 — Cipta produk domain
+### Langkah 5 — Cipta produk domain {#step-5--create-a-domain-product}
 
 Wizard mencipta produk domain lalai tangkap-semua dengan markup 10%. Anda boleh mengedit produk ini dengan serta-merta atau langkau dan cipta produk secara manual di bawah **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Lihat [Produk Domain dan Harga](./domain-products) untuk panduan konfigurasi pro
 
 ---
 
-## Mengkonfigurasi semula penyedia
+## Mengkonfigurasi semula penyedia {#reconfiguring-a-provider}
 
 Pergi ke **Network Admin › Ultimate Multisite › Settings › Domain Seller** (atau klik **Settings** dalam senarai plugin).
 
@@ -88,17 +88,17 @@ Halaman tetapan mengandungi:
 - **Urus produk domain** — pautan pantas ke senarai Products
 - **Konfigurasi penyedia** — membuka Integration Wizard untuk menambah atau mengkonfigurasi semula penyedia
 
-### Menambah penyedia kedua
+### Menambah penyedia kedua {#adding-a-second-provider}
 
 Klik **Configure providers** dan jalankan wizard sekali lagi untuk pendaftar baharu. Anda boleh mempunyai berbilang penyedia yang dikonfigurasi serentak. Tetapkan setiap produk domain kepada penyedia tertentu, atau biarkan pada lalai.
 
-### Menyegerakkan TLD secara manual
+### Menyegerakkan TLD secara manual {#syncing-tlds-manually}
 
 Pada halaman tetapan, klik **Sync TLDs** di sebelah mana-mana penyedia yang dikonfigurasi untuk mengambil harga terkini. Ini berguna selepas penyedia mengemas kini harga borong atau menambah TLD baharu.
 
 ---
 
-## Log
+## Log {#logs}
 
 Setiap penyedia menulis ke saluran lognya sendiri. Log boleh dilihat di bawah **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Setiap penyedia menulis ke saluran lognya sendiri. Log boleh dilihat di bawah **
 
 ---
 
-## Nota keupayaan penyedia
+## Nota keupayaan penyedia {#provider-capability-notes}
 
 Tidak setiap API pendaftar mendedahkan operasi yang sama. Addon memaparkan operasi yang tidak disokong dengan ralat jelas yang menghadap admin dan bukannya gagal secara senyap.
 

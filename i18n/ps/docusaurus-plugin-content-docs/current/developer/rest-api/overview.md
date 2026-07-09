@@ -3,28 +3,28 @@ title: د REST API عمومي کتنه
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# د REST API ماخذ
+# د REST API ماخذ {#rest-api-reference}
 
-## بنسټیزه امستنه
+## بنسټیزه امستنه {#base-configuration}
 
 **بنسټیز URL:** `{site_url}/wp-json/wu/v2/`
 **کره‌کتنه:** API Key او Secret (HTTP Basic Auth یا URL Parameters)
 
-## کره‌کتنه
+## کره‌کتنه {#authentication}
 
-### API فعال کړئ
+### API فعال کړئ {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### د API اسناد ترلاسه کړئ
+### د API اسناد ترلاسه کړئ {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### د کره‌کتنې طریقې
+### د کره‌کتنې طریقې {#authentication-methods}
 
 **HTTP Basic Auth (سپارښتل شوی):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## اصلي endpoints
+## اصلي endpoints {#core-endpoints}
 
-### 1. د پېرودونکو API
+### 1. د پېرودونکو API {#1-customers-api}
 
 **بنسټیزه لار:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. د وېبپاڼو API
+### 2. د وېبپاڼو API {#2-sites-api}
 
 **بنسټیزه لار:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. د غړیتوبونو API
+### 3. د غړیتوبونو API {#3-memberships-api}
 
 **بنسټیزه لار:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. د محصولاتو API
+### 4. د محصولاتو API {#4-products-api}
 
 **بنسټیزه لار:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. د تادیاتو API
+### 5. د تادیاتو API {#5-payments-api}
 
 **بنسټیزه لار:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. د ډومېنونو API
+### 6. د ډومېنونو API {#6-domains-api}
 
 **بنسټیزه لار:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## د نوم‌لیکنې endpoint
+## د نوم‌لیکنې endpoint {#registration-endpoint}
 
 د `/register` endpoint د checkout/نوم‌لیکنې بشپړ جریان برابروي:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## د خپلواک کرایه‌دار endpoints
+## د خپلواک کرایه‌دار endpoints {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 د هغو ادغامونو لپاره د خپلواک کرایه‌دار REST پوښښ زیاتوي چې جلا کرایه‌داران برابروي، معاینه کوي، یا تاییدوي.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` د مخکې له پیل خنډ په توګه وګڼئ. د تایید جزئیات وګورئ، د ډیټابېس کوربه تړاو، کتار، د کاروونکي برابرول، یا routing ستونزه حل کړئ، بیا تایید بیا وازمویئ.
 
-## د تېروتنې ځوابونه
+## د تېروتنې ځوابونه {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## پاڼې‌وېش او چاڼ
+## پاڼې‌وېش او چاڼ {#pagination-and-filtering}
 
 **د پوښتنې پارامترونه:**
 ```http

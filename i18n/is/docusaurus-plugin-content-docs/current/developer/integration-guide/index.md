@@ -3,13 +3,13 @@ title: Samþættingarleiðbeiningar
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Samþættingarleiðbeiningar
+# Samþættingarleiðbeiningar {#integration-guide}
 
 Þessar leiðbeiningar fjalla um algeng samþættingarmynstur með Ultimate Multisite, þar á meðal tengingu við ytri þjónustur, smíði sérsniðinna greiðslugátta og meðhöndlun vefkróka.
 
 Fyrir einangraða innviði leigjenda, sjá [Samþætting fjölleigjendakerfa](./multi-tenancy) fyrir leiðbeiningar um ræsingu sjálfstæðra leigjenda, staðfestingu flutnings, SSO og niðurrif.
 
-## CRM-samþætting
+## CRM-samþætting {#crm-integration}
 
 Samstilltu gögn viðskiptavina við CRM-kerfið þitt þegar nýir viðskiptavinir skrá sig:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Greiningarsamþætting
+## Greiningarsamþætting {#analytics-integration}
 
 Fylgstu með lykilviðburðum í rekstri yfir allan líftíma viðskiptavinarins:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Næstu skref
+## Næstu skref {#next-steps}
 
 - [Þróun sérsniðinnar greiðslugáttar](./custom-gateway) — Smíðaðu þína eigin greiðslugátt
 - [Meðhöndlun vefkróka](./webhooks) — Búðu til sérsniðna endapunkta fyrir vefkróka

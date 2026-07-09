@@ -3,11 +3,11 @@ title: Multi-Tenant Isolering
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isolering
+# Multi-Tenancy Isolering {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ondersteun per-subsite database en filesie-isolering vir soevereine huurders. Dit hou huurderdata geskei terwyl dit netwerkvlak-provisioning, fakturering en administrasie behou.
 
-## Isoleringstrategie
+## Isoleringstrategie {#isolation-strategy}
 
 Gebruik soevereine isolering vir kliënte wat sterkere data-separasie, toegewyde filesiesieopslag of 'n aparte hoesgren vereis.
 
@@ -18,7 +18,7 @@ Elke soevereine huurder moet hê:
 - 'n Huurderregistrasie-inskrywing wat die site met sy database, wortelpad, hostname en isoleringsmodel kappel.
 - 'n Migrasieverifikasie-result voor die huurder as lewend beskou word.
 
-## Databasehoesbinding
+## Databasehoesbinding {#database-host-binding}
 
 Versie 1.2.0 verander die standaard hoesbinding gedrag vir soevereine installeerings op dieselfde masjien. Op dieselfde masjien waardes soos `localhost` word genormaliseer sodat Bedrock, FrankenPHP en containeriseerde WordPress-installeerings toestemming kan gee en verifieer teen die hoesstring wat MySQL werklik sien.
 
@@ -31,11 +31,11 @@ Wanneer jy 'n soevereine huurder konfiguure:
 
 As verifikasie mislukte toestemmings rapporteer, vergelyk die huurder-DB-gebruikerstoestemming met die konfiguureerde hoesbinding. 'n Gebruiker wat vir `user@localhost` toegestaan is, is anders as `user@127.0.0.1` of `user@%`.
 
-## Filesiesiewortel
+## Filesiesiewortel {#filesystem-root}
 
 Die root van die huurder moet stabiel wees oor herlaaies en deployments heen. Vermy tydelike mount padpunte. Vir Bedrock-styl installeer, bevestig dat die huurder root na die WordPress webroot wys wat deur die huurder bootstrap verwag, nie net die projek root nie.
 
-## Provisioneringsvolgorde
+## Provisioneringsvolgorde {#provisioning-order}
 
 Vir nuwe soevereine huurders gebruik hierdie volgorde:
 
@@ -49,7 +49,7 @@ Vir nuwe soevereine huurders gebruik hierdie volgorde:
 
 Hierdie volgorde voorkom dat gedeeltelik geïsoleerde huurders verkeer ontvang voordat die database skrywer, gebruikers en lêerspunte gereed is.
 
-## Soevereine kliëntbestuurstrome
+## Soevereine kliëntbestuurstrome {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 hou kliëntbestuuraksies op die hoofsite wanneer soevereine modus ingeskakel is. 'n Huurder kan steeds as 'n geïsoleerde WordPress-install funksioneer, maar kliëntgerigte aksies wat van netwerkfakturaasie, lidmaatskap of gedeelde rekeningdata afhang, moet die kliënt terugstuur na die hoofsite in plaas daarvan om die aksie binne die huurder runtime te voltooi.
 

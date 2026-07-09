@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite he i te WordPress Multisite plugin, e tino whaiaroa ana ki ahau hei tino whakamahi ai ngā WaaS (Website as a Service) me Websites mō ngā mea wahi. I roto i te whakawhanake mātou ko te pūrere kua tino pai, he mea nui te mōhaka tūnga e tātou kua whakarite ake mō. I roto i te whakatika ki te whakamārama ahau i te waiata ko Ultimate Multisite ka tino whakamohahau ai i tō mahi me ngā mea wahi, he mea nui te mōhaka tūnga e tātou kua whakarite ake mō.
 
-## Te WordPress Multisite
+## Te WordPress Multisite {#the-wordpress-multisite}
 
 Ko teitei mātou katoa mō te installation o WordPress kua mau ana. Ko koe ka tino whakatō i te i roto i te control panel o tō hosting provider, he tino kaha, ka tino whakatō i te web server me te database hou, ka tino whakatō i ngā core files me te whakaatu i te whakataunga.
 
@@ -17,13 +17,13 @@ Ko i roto i te whakatō i te wahi WordPress paku, ko i roto i te automated contr
 
 I te tino, he pēnei i teitei mō te whakamārama ahau i te waiata ko Ultimate Multisite ka tino whakamohahau ai i tō mahi me ngā mea wahi.
 
-### Te Whānau (The Network)
+### Te Whānau (The Network) {#the-network}
 
 I roto i WordPress, he whānau multisite ahau te mea e pēnei ana, ko he tino whānui o ngā sub-sites (sub-sites) kua kaha ki te whakamaoritia mai i te dashboard paku. Engari he pēnei te kaha atu ki te whaiaro i te whakamahi o te multisite network e rite ki te whaiaro i te whakaaturanga.
 
 He pēnei ngā whakaaro tino āriki (distinct differences) he mea nui kohekoheko i antara he multisite network me he wahi WordPress e pēnei ana, kia kaha atu tātou whakamārama i tēnei mea.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#subdomain-vs-subdirectory}
 
 He pēnei te whikitaki tino āriki e kitea mo koe: mō te installation multisite, he whakawhiti kohekoheko ahau e pēnei ana ki ngā _subdirectories_ (whakahaere i wahi) pei o ngā _subdomains_ (whakahaere i domain). Ka kaha te Ultimate Multisite ki te whaiaro i kuitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruitiruit
 
@@ -35,7 +35,7 @@ I te configuration o _subdomain_, he whiriwhiri wildcard SSL certificate he tino
 
 Engari he whiriwhiri hou katoa, ko tino pōtanga i te wāhi me te whakamahi ana, ā, e hiahia ana i te configuration ahau anō me te whakaaro mō te tika o te mea.
 
-#### Plugins me Themes
+#### Plugins me Themes {#plugins-and-themes}
 
 He tino takawa i te WordPress, he tino takawa ana ahau, ko mō te mea o te mea whai whenua (customer). I te installation o WordPress e tōtōtō, ko ahau administrator o te wāhi, ko he plugin pēru he tino whakamahinga apo he pēru i te whakatipu i te installation ana. Engari, he admin o te wāhi e installing he plugin pēru he tino whakamahinga i te installation multisite e tino whai whenua mō every site ana i te network.
 
@@ -43,7 +43,7 @@ Mā te mea he mea nui ki te whaiaro i tēnei: i roto i WordPress Multisite, ka w
 
 I tēnei wā, ko te pakihi administrator ahau e tino whaiako ana ki te whakauru plugin me theme ki te network, ā, ka whakatika i ngā manawaratanga kia taea ai ngā administrators o ngā site o te network te whakamahi aua plugin me theme. Ka nui te mea he mea nui: ko ngā site administrators hei pakihi e kore ana i te mea he tino nui ki te whakauru plugin me theme, ka taea hoki te whaiaro i ngā plugin me theme nga ana i te site o rā.
 
-#### Users and Administrators (Ngā Hua me ngā Pakihi)
+#### Users and Administrators (Ngā Hua me ngā Pakihi) {#users-and-administrators}
 
 I WordPress Multisite, ko ngā site katoa o te network e whare i te database tōna, ā, he tino whare i ngā users, roles, me ngā capabilities. Ko te mea mō te whakaaro nui ki tēnei, ko ko ngā users katoa he ngā mema o te network ahau, ka tino pakihi i te site-pakihi tika.
 
@@ -55,13 +55,13 @@ Kia whakatika anō tēnei mea, he tino nui ana ko me ngā user accounts he hoki 
 
 Māori, he mea e noho ana i te ao o te whakamahi, engari he mea pēnei tēnei te whakatō i te whakamahi wakamāhi me te whakamaoritanga (user registration and authentication) katoa i te wāhi, he mea tino whakahaupūake ki ngā kaiwhakaahua e whai i WordPress installation-sere.
 
-#### Media
+#### Media {#media}
 
 Iroha i te wāhi e whare whene (network sites) e whare pēnei ana i database tahi i WordPress Multisite, ka whakatō ngā rāhui (paths) ā-filesystem e whero mō ngā file media.
 
 Ko te wāhi standard o WordPress (wp-content/uploads) ka noho; engari ka whakawātea i tō rāhui i te whakaahua i te ID tahi o te whene. I roto i te mea, ka purine ngā file media mō te whene pēnei i wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 I whakatakita mātou i te wāhi e tino kaha o _subdomain_ i te whakamahi i _subdirectory_, me te mea he pēnei tēnei: ngā rāhui (paths).
 
@@ -75,7 +75,7 @@ I te configuration _subdomain_, he mea e tūwhiti ana ko te whakatō tēnei, eng
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 I roto i te whakaritenga _subdirectory_ (sub-directory), he mea e taea te whakahau i ngā ingoa, ā, he tino nui tēnei mō ngā pages static (static pages) ahau te wāhi nui o te site ana me ngā site network. Ka whai ake ngā site network ngā samea (path) puta mai i te site ana.
 
@@ -85,7 +85,7 @@ Kia whakaheke i tēnei mea, e hihia WordPress he mea hei whakawhiti i ngā ingoa
 
 I te whakaritenga _subdomain_ (sub-domain), he mea e whakaheke ai te mea e taea te whakahau i ngā ingoa site ahau, ko te _subdomain_ ahau he tino pai ana ki te site network me ā-āhi ana i te site ana. He tino whai ake i te site ana.
 
-### Registration (Whakawhiti)
+### Registration (Whakawhiti) {#registration}
 
 I roto i ngā whakaritenga o te network settings o WordPress Multisite, he mea nui tēnei, he pōwhiri ahau ki ngā wahi whakamahinga user registration hou, e hihia i ngā user hou me ngā user eke i te whakatika site.
 
@@ -105,7 +105,7 @@ I tēnei wā, i roto i te wā ko te user e mōhio ana, he mōhio ana i te networ
 
 Engari, he tino whakamārama ana i te tika o te multisite he mea hei whai i te mahi me te whaiaro, he mea nui ahau ki te whakawātea i ngā site network katoa e hāpai i ngā mahi katoa. Ko i tēnei wā, ko he tino whakamārama ana i te tika o te multisite he mea hei whai i te mahi me te whaiaro, he mea nui ahau ki te whakawātea i ngā site network katoa e hāpai i ngā mahi katoa. Ko i tēnei wā, ko he tino whakamārama ana i te tika o te multisite he mea hei whai i te mahi me te whaiaro, he mea nui ahau ki te whakawātea i ngā site network katoa e hāpai i ngā mahi katoa.
 
-### Domain me SSL
+### Domain me SSL {#domain-and-ssl}
 
 He pātaki atu ki te whakamārama mō te installation o WordPress Multisite, he mea tino whakamārama ana i te onua o WordPress.com – ko he tino whakatutuki ahau i te multisite acai me te whakaatu i ngā kaha nui o ia hei whakawātea me te whakatū ki te whaiaro tō mahi.
 
@@ -119,7 +119,7 @@ Mō ngā administrator o te network, he pēke whakahou (additional layer of comp
 
 I tēnei mea, ahakoa he whānau WordPress Multisite ka puta mai he onua mō te whakamahi o [www.anotherdomain.com](http://www.anotherdomain.com) ki te mapping ki 'site1', ko te administrator o te network e pēke ana i te whakatau o ngā DNS entries me te whakamahi o SSL certificates ki te ao.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Me tino whakatika ahau i te whakamārama, he tino whakahou (ultimate arsenal) he hoki mai mō te whaiaro o Websites as a Service (WaaS). Kei te whakaaro i Wix.com, Squarespace, WordPress.com me te whakataki ki te mua o te tino whonua o koe.
 
@@ -127,9 +127,9 @@ I te pito o te whakamahi Ultimate Multisite, he fa'aoritanga ana i te WordPress 
 
 I ngā seks mō muri, ka kite ahau i ngā use cases (ngā wāwha whaiutu) whakahou me ngā whakaaro e tino nui ki te whakamohoho i oi ngā use cases ei whaiutu.
 
-### Use Cases
+### Use Cases {#introduction}
 
-#### Case 1: He Agency
+#### Case 1: He Agency {#use-cases}
 
 E tōtōtō, he tino mōhiotanga o te agency kei te whakatō i ngā website me ngā mea ka puta ake i te hosting (hosting) me te marketing ka whakahou ana i ngā mea e tika ana.
 
@@ -155,7 +155,7 @@ Themes mārama atu i te mahi, e hiahia ana ki te whaiaro i ngā theme (themes) m
 
 E whaiaro ai ngā agency mārie me Ultimate Multisite, e hiahia ana ki te tino mahi katoa—te whai whakaaro i te whero (design) o ngā waka ahau.
 
-#### Case 2: Pūmanawa Whānui (Niche Provider)
+#### Case 2: Pūmanawa Whānui (Niche Provider) {#case-1-an-agency}
 
 He kupu purini he ahua, "taku te pēke me aku te whakamahi." Mō ngā mātanga katoa, he te mea e whai ake ana ko te whakatō i āhuatanga tahi ki te whakaaro pūrākau tahi.
 
@@ -169,7 +169,7 @@ Mō he provider o niche sites me services, he pūmanawa tino kaha ana i te mea e
 
 Kua ngā tino āhua e tika ana, he taea te whakamahi te _subdirectory_ (subdirectory) ahau, heitahe (subdomain). I tēnei wā, ko te whiriwhiri i te arki-te-kaha (architecture choices) e hoki mai ki te whiriwhiri certificate SSL simple mō _subdirectories_ ahau, hetahe wildcard SSL certificate mō _subdomains_.
 
-#### Case 3: Hosting Web WordPress
+#### Case 3: Hosting Web WordPress {#case-2-niche-provider}
 
 He tino pai ngā puta noa o te rātou i whakauru (host) mga waka WordPress, engari hānei he tino paha ana te whakamahi i te wero ki te whai whakaaro ki te hoatu wāhi web ki te mea e pēnei i heke WordPress pre-installed. Ko ko te mea i te tino āhua ana, he tino pātai me whakaaro ake kia whai i te mahi nui mō te hoatu whakamana.
 
@@ -181,11 +181,11 @@ Mō ngā developer e te pēhea te whai i Ultimate Multisite, ko te whakataunga k
 
 He tino pai te whakamahi Ultimate Multisite i te whakataunga e tino pai me he hoki mai ki te rātou, he hoki mai ki te Wix, Squarespace, WordPress.com me ngā mea katoa, i roto i te whakawhanake o plugin me license e tino nui ana.
 
-### Whakawhitiwhiti Arki-te-kaha (Architecture Considerations)
+### Whakawhitiwhiti Arki-te-kaha (Architecture Considerations) {#case-3-wordpress-web-hosting}
 
 He tino pai ahau mō te whai whakaaro ki te whiriwhiri teknologi tika mō te whakamahi Ultimate Multisite, engari he tino pai ahau i te hoki mai ki ngā mea e pēnei.
 
-#### Shared vs. Dedicated Hosting
+#### Shared vs. Dedicated Hosting {#architecture-considerations}
 
 He aha, nā ko katoa whānau hosting he tōna kaha, ā, ka tino whakamahi ngā kētia nekehanga te kaiwhakahaere server. Ngā kētia rā, ka whai i te pūmanawa ki te whero ake te kaha o te server. Ko te mea e hoki ana ki tēnei, he taea te whakatō te installation Ultimate Multisite ki te wāhi i roto i ngā rohani site whānui i te server tēnei.
 
@@ -239,7 +239,7 @@ Mō tēnei whāinga, he tino whai ake ana: he pēnei te kaha ki te whakaae, he p
 
 He mea nui ana i te whāinga o tēnei taiao: he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae. He pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae.
 
-#### Snapshots (Pānga Whakamahinga)
+#### Snapshots (Pānga Whakamahinga) {#shared-vs-dedicated-hosting}
 
 He snapshots he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae. He pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae, he pēnei te kaha ki te whakaae.
 
@@ -249,7 +249,7 @@ I tēnei whakamārama: i roto i te whakatūpono (backup) tuku iho, e whawhai ana
 
 He tino pai hoki akorua o te utu mō te whānau (hosting provider) ahau, engari he pēpi tēnei i te waipuna (insurance policy) mo ngā pēpi.
 
-#### External Scripts
+#### External Scripts {#performance-considerations}
 
 He tino nui te whakamahi o mga script me āhuatanga katoa e hoki ana ki te whakatūpono WordPress me ngā manawa MySQL, ko hei whaiaro mō Ultimate Multisite he tino pai ahau, ko he plugin o WordPress e fa'anau i te filesystem me te database o WordPress. Ko te mea he, he whakataunga e whakatūpono ngā waka web e hoki ana ki ngā pēpi o Ultimate Multisite.
 
@@ -257,13 +257,13 @@ Ko ahau ka whaiaro i tētahi script mō tētahi, engari ko te whakaahuatanga aha
 
 He tino nui te whakamārama ki tēnei: i roto i te wahe, ka whai whakaaro ahau ki te pūmanawa (system load) e whaumaru ai ngā script-ngā-whakatika.
 
-#### Plugins
+#### Plugins {#backups}
 
 He tino pai hoki ahau i WordPress ko he mea e taea te whawhai ana me tētahi plugin, ā, ko he heke ahau mō te whakahaere i mga script kē ko he heke ahau mō te plugin.
 
 Kua whakatika i te plugin, he tino tika ana kia whakačaka akua e ko multisite aware ia. I te mea he pēnei te mahi, i roto i te wā e pēnei te whakamahinga o te backup, e taea te whakarite he whakawhiti (load) ki te server i te wā e whakatōa ai te mahi.
 
-#### Domain me SSL
+#### Domain me SSL {#snapshots}
 
 He tino whai whakaaro ake ana mō ngā domain names i te mode _subdomain_ o multisite. He whakataunga mā te reo katoa mō ngā network administrators he whakamahi i wildcard DNS entries.
 
@@ -287,7 +287,7 @@ Muitiahi, he tino āta mātairo te whakamahi o Cloudflare. Ka pēnei te mea, ka 
 
 E taro atu i tēnei, ka mea e tika ana te whawhai mō whakaaro ā-alternative, he tēnei te mea e tino whai ake ai Ultimate Multisite ki te whakatū rāwā o mga Compatible Providers (whakamahi). He tino pēnei te mea, he tino whakamīharo te mahi i te DNS me SSL. Engari, mōwhiti, me te whai i te whakatika o Ultimate Multisite ki ngā provider-whakaaro mōna, ka whurangi te tino āta mātairo ko te mahi, ka whakahou (automate) te whakataunga.
 
-#### Plugins
+#### Plugins {#external-scripts}
 
 He tino tika ana te mea eke i te mea ka tino pai te whakamahi plugin whero kia puta he mahi mō tō mga wāhi o ngā customer me ngā network sites. He pēnei ko katoa ngā plugins ka tino pai ki WordPress Multisite me Ultimate Multisite? He tino whakatika ana.
 

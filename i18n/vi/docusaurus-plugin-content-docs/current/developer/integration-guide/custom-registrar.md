@@ -3,13 +3,13 @@ title: Xây dựng tích hợp Registrar tùy chỉnh
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Xây dựng Tích hợp Registrar Tùy chỉnh
+# Xây dựng Tích hợp Registrar Tùy chỉnh {#building-a-custom-registrar-integration}
 
 Addon Domain Seller sử dụng mô hình **Integration Registry** (Sổ đăng ký Tích hợp). Mỗi registrar là một class PHP triển khai `Domain_Selling_Capability` và tự đăng ký thông qua action hook `wu_domain_seller_register_capabilities`.
 
 Hướng dẫn này sẽ chỉ cho bạn cách kết nối một registrar tùy chỉnh.
 
-## Giao diện (The interface)
+## Giao diện (The interface) {#the-interface}
 
 Class của bạn phải triển khai `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` và kế thừa (extend) từ `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Các phương thức tùy chọn (Optional methods)
+### Các phương thức tùy chọn (Optional methods) {#optional-methods}
 
 Triển khai các phương thức này để mở khóa các tính năng bổ sung. Addon sẽ phát hiện hỗ trợ thông qua `method_exists()`:
 
@@ -81,7 +81,7 @@ Triển khai các phương thức này để mở khóa các tính năng bổ su
 | `get_epp_code(string $domain_name): array` | Chuyển giao domain (đi) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Chuyển giao domain (đến) |
 
-### Quy ước giá trị trả về (Return value convention)
+### Quy ước giá trị trả về (Return value convention) {#return-value-convention}
 
 Tất cả các phương thức đều trả về một mảng (array) với ít nhất một key là `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Lỗi dễ đọc bằng ngôn ngữ c
 
 ---
 
-## Đăng ký Capability của bạn
+## Đăng ký Capability của bạn {#registering-your-capability}
 
 Hãy đăng ký class của bạn bằng action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Thêm các trường thông tin xác thực vào Wizard
+## Thêm các trường thông tin xác thực vào Wizard {#adding-credential-fields-to-the-wizard}
 
 Để cho phép quản trị viên nhập thông tin xác thực qua wizard thiết lập, hãy đăng ký integration của bạn:
 
@@ -137,7 +137,7 @@ Thông tin xác thực được lưu dưới dạng network options, sử dụng
 
 ---
 
-## Hooks cho các hành động sau khi đăng ký
+## Hooks cho các hành động sau khi đăng ký {#hooks-for-post-registration-actions}
 
 Sử dụng các action này để kích hoạt webhooks, quy trình cấp phát (provisioning), thông báo, hoặc cập nhật CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging (Ghi nhật ký)
+## Logging (Ghi nhật ký) {#logging}
 
 Hãy ghi vào kênh log dành riêng cho provider của bạn bằng `wu_log_add()`:
 

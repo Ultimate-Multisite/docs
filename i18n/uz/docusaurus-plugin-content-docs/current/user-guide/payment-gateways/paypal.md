@@ -3,7 +3,7 @@ title: PayPal'ni sozlash
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway'ni Sozlash (v2)
+# PayPal Gateway'ni Sozlash (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**MUHIM Eslatma: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 
@@ -13,13 +13,13 @@ Stripe kabi, PayPal ham onlayn to‘lovlar uchun keng qo‘llaniladi, ayniqsa Wo
 
 Bu yerda eslatib o‘tish kerakki, bu integratsiya uchun zarur bo‘lgan API kredensialini olish uchun sizda **PayPal Business hisobingiz** bo‘lishi kerak.
 
-## PayPalni tarmoqqa faollashtirish
+## PayPalni tarmoqqa faollashtirish {#enabling-paypal-on-your-network}
 
 PayPalni tarmoqqa mavjud to‘lov usuli sifatida faollashtirish uchun **Ultimate Multisite > Settings > Payments** yorlig‘iga o‘ting va PayPal yonidagi qutini belgilang (tick).
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Yo‘naltirilgan sozlash wizardidan foydalanish
+## Yo‘naltirilgan sozlash wizardidan foydalanish {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 to‘lov gateway sozlamalariga yo‘naltirilgan PayPal sozlash wizardini qo‘shadi. PayPalni faollashtirgandan so‘ng, gatewayni qanday ulashmoqchi ekanligingizni tanlash va saqlashdan oldin qaysi kredensiallarga hali ehtiyoj borligini tasdiqlashingiz uchun **Ultimate Multisite > Settings > Payments** da wizarddan foydalaning.
 
@@ -30,7 +30,7 @@ Wizard ikkita sozlash yo‘lini qo‘llab-quvvatlaydi:
 
 Agar wizardda OAuth opsiyasini ko'rmasangiz, quyidagi qo'lda учётdan foydalanish jarayonini yakunlang. Bu gateway avvalgi Ultimate Multisite 2.x versiyalari bilan bir xil PayPal Business API ma'lumotlari bilan ishlaydi.
 
-## PayPal API ma'lumotlarini olish
+## PayPal API ma'lumotlarini olish {#getting-the-paypal-api-credentials}
 
 PayPal to'lov eshigi sifatida faollashtirilganidan so'ng, siz PayPal API **Foydalanuvchisi** (Username), PayPal API **Parol** (Password) va PayPal API **Imzosi** (Signature) maydonlarini to'ldirishingiz kerak bo'ladi.
 

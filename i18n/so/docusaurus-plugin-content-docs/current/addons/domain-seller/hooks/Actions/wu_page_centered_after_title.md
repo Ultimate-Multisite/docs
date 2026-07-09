@@ -4,19 +4,19 @@ title: Ficil - wu_page_centered_after_title
 sidebar_label: wu_page_centered_after_title
 _i18n_hash: e00e718846a29b24c7032dec188e557b
 ---
-# Fal: wu_page_centered_after_title
+# Fal: wu_page_centered_after_title {#action-wupagecenteredaftertitle}
 
 U oggolow horumariyeyaasha kordhinta inay ku daraan badhamo dheeraad ah.
 
-## Halbeegyada
+## Halbeegyada {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
 | $page | `object` | Tusaalaha bogga. |
 
-### Laga bilaabo
+### Laga bilaabo {#since}
 
 - 2.1.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`views/admin/register-domain-centered.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/views/admin/register-domain-centered.php#L66) safka 66

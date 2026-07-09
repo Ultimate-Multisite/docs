@@ -3,13 +3,13 @@ title: Paagi sa Pag-alis sa Site Builder Mode
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Pahibalo sa Pag-alis sa Site Builder Mode
+# Pahibalo sa Pag-alis sa Site Builder Mode {#site-builder-mode-removal-notice}
 
 **Gipahimuslan na ang Site Builder mode sa Superdav AI Agent v1.12.0.** Kung nagamit ninyo ang Site Builder mode, kinahanglan ninyong mag-migrate ngadto sa **Setup Assistant agent** para sa paghimo og theme ug pag-set up sa site.
 
-## Unsa ang Nahitabo?
+## Unsa ang Nahitabo? {#what-happened}
 
-### Site Builder Mode (Legacy)
+### Site Builder Mode (Legacy) {#site-builder-mode-legacy}
 
 Ang Site Builder mode usa ka interface nga base sa wizard para sa:
 
@@ -18,7 +18,7 @@ Ang Site Builder mode usa ka interface nga base sa wizard para sa:
 - Pagpili og theme
 - Pag-set up sa initial content
 
-### Unsa ang Nagpuli Niini?
+### Unsa ang Nagpuli Niini? {#what-replaced-it}
 
 Ang **Setup Assistant agent** karon maoy magtrabaho sa tanang functionality sa Site Builder uban ang:
 
@@ -27,15 +27,15 @@ Ang **Setup Assistant agent** karon maoy magtrabaho sa tanang functionality sa S
 - Integrasyon sa Theme Builder onboarding
 - Persistent site_brief memory para sa umaabot nga mga session
 
-## Kung Nagamit Ninyo ang Site Builder Mode
+## Kung Nagamit Ninyo ang Site Builder Mode {#if-you-were-using-site-builder-mode}
 
-### Ang Inyong Mga Site Luwas
+### Ang Inyong Mga Site Luwas {#your-sites-are-safe}
 
 - Ang mga existing sites nga gihimo gamit ang Site Builder mode nagpadayon sa pagtrabaho
 - Walay pagkawala og data o pagka-disrupt sa site
 - Mahimo ninyong ipadayon ang normal nga pag-manage sa inyong mga site
 
-### Migrate ngadto sa Setup Assistant Agent
+### Migrate ngadto sa Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Para sa bag-ong setup sa site o mga kausaban sa theme, gamita ang Setup Assistant agent:
 
@@ -51,7 +51,7 @@ o
 
 Ang Setup Assistant agent naghatag sa parehas nga functionality apan mas flexible.
 
-## Pagkompara: Site Builder vs. Setup Assistant
+## Pagkompara: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Feature | Site Builder (Gipahimuslan) | Setup Assistant (Bago) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Ang Setup Assistant agent naghatag sa parehas nga functionality apan mas flexibl
 | Future sessions | Pag-usab sa setup | Paggamit sa stored site_brief |
 | Flexibility | Fixed workflow | Adaptive conversation |
 
-## Migrasyon ngadto sa Setup Assistant Agent
+## Migrasyon ngadto sa Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Para sa Bag-ong Mga Site
+### Para sa Bag-ong Mga Site {#for-new-sites}
 
 Imbis nga gamiton ang Site Builder mode:
 
@@ -76,7 +76,7 @@ Imbis nga gamiton ang Site Builder mode:
    - Theme generation
    - Initial configuration
 
-### Para sa Nagigikan nga Sites
+### Para sa Nagigikan nga Sites {#for-existing-sites}
 
 Kung naa kay existing site gikan sa Site Builder mode:
 
@@ -85,7 +85,7 @@ Kung naa kay existing site gikan sa Site Builder mode:
 3. Ang Setup Assistant agent motabang kanimo sa paghimo og bag-ong theme.
 4. Ang data sa imong site nagpabilin nga walay kausaban.
 
-### Para sa mga Pagbag-o sa Theme
+### Para sa mga Pagbag-o sa Theme {#for-theme-changes}
 
 Imbis sa pagpili sa theme sa Site Builder mode:
 
@@ -95,9 +95,9 @@ Imbis sa pagpili sa theme sa Site Builder mode:
    - Mogenerate og custom theme
    - I-activate kini sa imong site
 
-## Mga Lahi nga Kalainan (Key Differences)
+## Mga Lahi nga Kalainan (Key Differences) {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Pilia ang template
@@ -106,7 +106,7 @@ Imbis sa pagpili sa theme sa Site Builder mode:
 4. Tapos na
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Ihulagway ang tumong sa imong site
@@ -117,42 +117,42 @@ Imbis sa pagpili sa theme sa Site Builder mode:
 6. Ang site brief i-store para sa umaabot nga mga sesyon
 ```
 
-## Mga Benepisyo sa Setup Assistant Agent
+## Mga Benepisyo sa Setup Assistant Agent {#benefits-of-setup-assistant-agent}
 
-### Mas Flexible
+### Mas Flexible {#more-flexible}
 
 - Ihulagway imong site gamit ang natural language
 - Makakuha og custom recommendations
 - Mag-adapt sa imong espesipikong panginahanglan
 
-### Mas Maayo nga Customization
+### Mas Maayo nga Customization {#better-customization}
 
 - Paghimo og custom theme
 - Mga desisyon bahin sa design system
 - Persistent design tokens
 
-### Persistent Memory
+### Persistent Memory {#persistent-memory}
 
 - Ang imong site_brief i-store
 - Ang mga umaabot nga agents makasabot sa imong site
 - Walay kinahanglan nga mag-repeat sa impormasyon sa setup
 
-### Integrated Workflow
+### Integrated Workflow {#integrated-workflow}
 
 - Theme Builder onboarding
 - Design System Aesthetics skill
 - Ability Visibility controls
 - Ang tanan nagtrabaho nga magkadugtong (seamless)
 
-## Mga Problema ug Solusyon (Troubleshooting)
+## Mga Problema ug Solusyon (Troubleshooting) {#troubleshooting}
 
-### Dili nako makit ang Site Builder mode
+### Dili nako makit ang Site Builder mode {#i-cant-find-site-builder-mode}
 
 Ang Site Builder mode gipahimo na. Gamita ang Setup Assistant agent imbis niini:
 
 "Tabangi ko mag-set up og bag-ong site"
 
-### Gusto nako i-recreate ang usa ka site gikan sa Site Builder
+### Gusto nako i-recreate ang usa ka site gikan sa Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Mahimo nimo kini i-recreate gamit ang Setup Assistant agent:
 
@@ -161,7 +161,7 @@ Mahimo nimo kini i-recreate gamit ang Setup Assistant agent:
 3. Ang agent maghimo og usa ka magkalahi nga theme
 4. Ang imong site_brief ma-save para sa umaabot
 
-### Wala na motrabaho akong Site Builder site
+### Wala na motrabaho akong Site Builder site {#my-existing-site-builder-site-isnt-working}
 
 Ang mga site nga gihimo gamit ang Site Builder mode nagpadayon sa pagtrabaho. Kung naa kay problema:
 
@@ -170,7 +170,7 @@ Ang mga site nga gihimo gamit ang Site Builder mode nagpadayon sa pagtrabaho. Ku
 3. Suriin ang WordPress error logs
 4. Kontaka ang suporta kung magpabilin ang problema
 
-### Pwede pa ba nako gamiton ang akong daan nga Site Builder templates?
+### Pwede pa ba nako gamiton ang akong daan nga Site Builder templates? {#can-i-still-use-my-old-site-builder-templates}
 
 Wala na kini available. Bisan pa niana:
 
@@ -178,14 +178,14 @@ Wala na kini available. Bisan pa niana:
 - Mahimo nimong i-recreate ang mga susama nga sites gamit ang Setup Assistant agent
 - Ang Setup Assistant agent naghatag og mas daghang opsyon sa customization
 
-## Sunod nga mga Lakang
+## Sunod nga mga Lakang {#next-steps}
 
 1. **Para sa bag-ong sites**: Gamita ang Setup Assistant agent
 2. **Para sa existing sites**: Padayon sa paggamit niini sama na lang
 3. **Para sa mga kausaban sa theme**: Pangayo og tabang gikan sa Setup Assistant agent
 4. **Para sa pagpaayo sa disenyo**: Gamita ang Design System Aesthetics skill
 
-## Mga May Kalabotan nga Topics
+## Mga May Kalabotan nga Topics {#related-topics}
 
 - **Theme Builder Onboarding**: Giya nga setup para sa custom themes
 - **Setup Assistant Agent**: Site setup nga gi-guide sa agent

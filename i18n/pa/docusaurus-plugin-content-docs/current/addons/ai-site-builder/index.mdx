@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## ਲੋੜੀਂਦੀਆਂ ਚੀਜ਼ਾਂ (Requirements)
+## ਲੋੜੀਂਦੀਆਂ ਚੀਜ਼ਾਂ (Requirements) {#requirements}
 
 - WordPress 5.3 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
 - PHP 7.4 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
 - Multisite Ultimate plugin (active)
 
-## ਇੰਸਟਾਲੇਸ਼ਨ (Installation)
+## ਇੰਸਟਾਲੇਸ਼ਨ (Installation) {#installation}
 
 1. ਐਡਨ ਫਾਈਲਾਂ ਨੂੰ ਆਪਣੀ `/wp-content/plugins/` ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਅਪਲੋਡ ਕਰੋ।
 2. WordPress ਵਿੱਚ 'Plugins' ਮੀਨੂ ਰਾਹੀਂ plugin ਨੂੰ ਐਕਟਿਵੇਟ ਕਰੋ।
 3. ਨੈਟਵਰਕ ਐਡਮਿਨ ਵਿੱਚ ਐਡਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਕੰフィਗਰ ਕਰੋ।
 
-## ਡਿਵੈਲਪਮੈਂਟ (Development)
+## ਡਿਵੈਲਪਮੈਂਟ (Development) {#development}
 
-### ਸੈਟਅਪ (Setup)
+### ਸੈਟਅਪ (Setup) {#setup}
 
 ```bash
 # Dependencies ਇੰਸਟਾਲ ਕਰੋ
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ਪ੍ਰੋਜੈਕਟ ਸਟਰਕਚਰ (Project Structure)
+### ਪ੍ਰੋਜੈਕਟ ਸਟਰਕਚਰ (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # ਕੋਡ ਮਾਡਰਨਾਈਜ਼ੇਸ਼ਨ ਨਿਯਮ
 ```
 
-### ਟੈਸਟਿੰਗ (Testing)
+### ਟੈਸਟਿੰਗ (Testing) {#testing}
 
 ਇਸ ਐਡਨ ਵਿੱਚ ਇੱਕ ਪੂਰਾ ਟੈਸਟਿੰਗ ਫਰੇਮਵਰਕ ਸ਼ਾਮਲ ਹੈ:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Test Coverage**: ਕੋਡ ਕਵਰੇਜ ਨੂੰ ਟਰੈਕ ਕਰਨ ਲਈ ਕੰフィਗਰ ਕੀਤਾ ਗਿਆ ਹੈ।
 - **Multisite Testing**: ਟੈਸਟ ਮਲਟੀਸਾਈਟ (multisite) ماحول ਵਿੱਚ ਚੱਲਦੇ ਹਨ।
 
-### ਕੋਡ ਸਟੈਂਡਰਡਸ (Code Standards)
+### ਕੋਡ ਸਟੈਂਡਰਡਸ (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS ਰਾਹੀਂ ਲਾਗੂ ਕੀਤਾ ਗਿਆ।
 - **PHP 7.4+ Compatibility**: ਆਧੁਨਿਕ PHP ਫੀਚਰ ਸਪੋਰਟ ਕੀਤੇ ਗਏ।
 - **Static Analysis**: ਟਾਈਪ ਚੈਕਿੰਗ ਲਈ PHPStan ইন্ਟੀਗ੍ਰੇਸ਼ਨ।
 - **Code Modernization**: PHP ਅਗ੍ਰੇਡ ਲਈ Rector ਨਿਯਮ।
 
-### ਬਿਲਡ ਸਿਸਟਮ (Build System)
+### ਬਿਲਡ ਸਿਸਟਮ (Build System) {#build-system}
 
 - **Asset Processing**: CSS/JS ਫਾਈਲਾਂ ਲਈ ਮਿਨੀਫਿਕੇਸ਼ਨ।
 - **Translation**: POT ਫਾਈਲ ਜਨਰੇਸ਼ਨ।
 - **Packaging**: ਡਿਸਟ੍ਰੀਬਿਊਸ਼ਨ ਲਈ ਆਰਕਾਈਵ ਕ੍ਰिएशन।
 - **Development Mode**: ਡੀਬੱਗਿੰਗ ਲਈ ਅਨਮਿਨੀਫਾਈਡ ਐਸੈਟਸ।
 
-## ਕੰフィਗਰੇਸ਼ਨ (Configuration)
+## ਕੰフィਗਰੇਸ਼ਨ (Configuration) {#configuration}
 
 ਇਹ ਐਡਨ ਨੈਟਵਰਕ ਐਡਮਿਨ ਇੰਟਰਫੇਸ ਰਾਹੀਂ ਪਹੁੰਚਣ ਵਾਲੇ ਕਈ ਕੰフィਗਰੇਸ਼ਨ ਵਿਕਲਪਾਂ ਦਾ ਸਹਾਰਾ ਦਿੰਦਾ ਹੈ।
 
-## Hooks ਅਤੇ Filters
+## Hooks ਅਤੇ Filters {#hooks-and-filters}
 
-### Actions (ਐਕਸ਼ਨ)
+### Actions (ਐਕਸ਼ਨ) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - ਐਡਨ ਇਨੀਸ਼ੀਅਲਾਈਜ਼ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
 - `ultimate-multisite-ai-site-builder_loaded` - ਸਾਰੇ ਐਡਨ ਫਾਈਲਾਂ ਲੋਡ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
 
-### Filters (ਫਿਲਟਰ)
+### Filters (ਫਿਲਟਰ) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - ਐਡਨ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲਣ ਲਈ।
 - `ultimate-multisite-ai-site-builder_enabled` - ਐਡਨ ਦੇ enable/disable ਸਟੇਟਸ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰਨ ਲਈ।
 
-## ਲਾਇਸੈਂਸ (License)
+## ਲਾਇਸੈਂਸ (License) {#license}
 
 ਇਹ ਐਡਨ GPL v3 ਜਾਂ ਇਸ ਤੋਂ ਬਾਅਦ ਦੇ ਲਾਇਸੈਂਸ ਹੇਠ ਲਾਇਸੈਂਸ ਕੀਤਾ ਗਿਆ ਹੈ।
 
-## ਸਪੋਰਟ (Support)
+## ਸਪੋਰਟ (Support) {#support}
 
 ਸਪੋਰਟ ਅਤੇ ਡਾਕੂਮੈਂਟੇਸ਼ਨ ਲਈ, [MultisiteUltimate.com](https://multisiteultimate.com) 'ਤੇ ਜਾਓ।
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix ਨੂੰ ultimate-multisite ਵਿੱਚ ਰੀਨੇਮ ਕੀਤਾ; text domain ਅਪਡੇਟ ਕੀਤਾ; version ਵੰਪ।
 

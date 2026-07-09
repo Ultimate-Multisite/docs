@@ -4,11 +4,11 @@ title: Filtar - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtar: secure_logged_in_cookie
+# Filtar: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtrira treba li se kolačić prijavljenog korisnika slati samo putem HTTPS-a.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrira treba li se kolačić prijavljenog korisnika slati samo putem HTTPS-a.
 | $user_id | `int` | ID korisnika. |
 | $secure | `bool` | Treba li se autentikacijski kolačić slati samo putem HTTPS-a. |
 
-### Od
+### Od {#since}
 
 - 3.1.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) u retku 91

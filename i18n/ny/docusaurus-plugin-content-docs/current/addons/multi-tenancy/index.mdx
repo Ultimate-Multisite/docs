@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Kugwiritsa Ntchito ndi Magulu Ambiri
+# Kugwiritsa Ntchito ndi Magulu Ambiri {#multi-tenancy}
 
 Gawirani ma subsite pa ma seva ndi ma database kuti ntchito iziyenda bwino komanso ikhale yotetezeka
 
-## Zinthu zazikulu za kutulutsidwa kwa Version 1.2.0
+## Zinthu zazikulu za kutulutsidwa kwa Version 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 imawonjezera maziko a wogwiritsa ntchito wodziyimira pawokha a mayendedwe olekanitsa ntchito za production:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 imawonjezera maziko a wogwiritsa ntchito wodziyimira pawokha
 
 Onani malangizo a ogwiritsa ntchito pa [mayendedwe a kusamuka kwa wodziyimira pawokha](/user-guide/getting-started/sovereign-migration-workflow), [kulekanitsa kwa multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), ndi [ntchito za wogwiritsa ntchito wodziyimira pawokha](/user-guide/administration/sovereign-tenant-operations).
 
-## Zofunikira
+## Zofunikira {#requirements}
 
 - WordPress 5.3 kapena yapamwamba
 - PHP 7.4 kapena yapamwamba
 - Pulogalamu yowonjezera ya Ultimate Multisite (yoyatsidwa)
 
-## Kuyika
+## Kuyika {#installation}
 
 1. Kwezani mafayilo a chowonjezera ku chikwatu chanu cha `/wp-content/plugins/`
 2. Yatsani pulogalamu yowonjezera kudzera mu menyu ya 'Zowonjezera' mu WordPress
 3. Konzani makonda a chowonjezera mu admin wa network
 
-## Kupanga
+## Kupanga {#development}
 
-### Kukonzekera
+### Kukonzekera {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Kapangidwe ka Pulojekiti
+### Kapangidwe ka Pulojekiti {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Malamulo osinthira code kukhala yamakono
 ```
 
-### Kuyesa
+### Kuyesa {#testing}
 
 Chowonjezerachi chili ndi dongosolo loyesera lokwanira:
 
@@ -93,54 +93,54 @@ Chowonjezerachi chili ndi dongosolo loyesera lokwanira:
 - **Kuphimba kwa Mayeso**: Kwakonzedwa kuti kutsate kuphimba kwa code
 - **Kuyesa kwa Multisite**: Mayeso amayendetsedwa mu malo a multisite
 
-### Miyezo ya Code
+### Miyezo ya Code {#code-standards}
 
 - **Miyezo ya Kulemba Code ya WordPress**: Imakakamizidwa kudzera mu PHPCS
 - **Kugwirizana ndi PHP 7.4+**: Zinthu zamakono za PHP zimathandizidwa
 - **Kusanthula Kosasunthika**: Kuphatikizana kwa PHPStan pa kuyang'ana ma type
 - **Kusintha Code Kukhala Yamakono**: Malamulo a Rector pa kukweza PHP
 
-### Dongosolo Lomanga
+### Dongosolo Lomanga {#build-system}
 
 - **Kukonza Katundu**: Kuchepetsa mafayilo a CSS/JS
 - **Kutanthauzira**: Kupanga fayilo ya POT
 - **Kupakira**: Kupanga archive kuti igawidwe
 - **Njira ya Kupanga**: Katundu wosachepetsedwa pa kusaka zolakwika
 
-## Makonzedwe
+## Makonzedwe {#configuration}
 
 Chowonjezerachi chimathandiza zosankha zosiyanasiyana za makonzedwe zomwe zimapezeka kudzera mu mawonekedwe a admin wa network.
 
-### Makonzedwe a wogwiritsa ntchito wodziyimira pawokha
+### Makonzedwe a wogwiritsa ntchito wodziyimira pawokha {#sovereign-tenant-configuration}
 
 Kwa ogwiritsa ntchito odziyimira pawokha, konzani database ya wogwiritsa ntchito, muzu wa filesystem, kumangirira host ya database, ndi kuthekera kwa host musanayambe kutumiza traffic kwa wogwiritsa ntchito. Yendetsani kutsimikizira kusamuka pambuyo pa kusintha kulikonse komwe kumakhudza zinsinsi za database, kumangirira host, routing, kapena kukonza ogwiritsa ntchito.
 
 Gwiritsani ntchito `localhost` pokhapokha runtime ya wogwiritsa ntchito ndi zilolezo za database zikuyembekezera socket yakomweko kapena kufikira pa makina omwewo. Gwiritsani ntchito `127.0.0.1` kapena dzina la host la service pamene limenelo ndi grant host lokonzedwa ndi provider wanu.
 
-### Kuthekera kwa Hostinger
+### Kuthekera kwa Hostinger {#hostinger-capability}
 
 Kuthekera kwa Hostinger multi-tenancy kumagwira ntchito ndi token yophatikizira ya Hostinger yogawana. Tsimikizirani kuti domain ilipo mu hPanel, DNS ikulozera ku Account ya Hostinger, ndipo makonda a database ya wogwiritsa ntchito akugwirizana ndi hPanel musanatsimikizire.
 
-## Ma Hooks ndi Zosefera
+## Ma Hooks ndi Zosefera {#hooks-and-filters}
 
-### Zochita
+### Zochita {#actions}
 
 - `ultimate-multisite-addon-template_init` - Imayatsidwa pambuyo pa kuyambitsidwa kwa chowonjezera
 - `ultimate-multisite-addon-template_loaded` - Imayatsidwa mafayilo onse a chowonjezera akatsegulidwa
 
-### Zosefera
+### Zosefera {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Sinthani makonda a chowonjezera
 - `ultimate-multisite-addon-template_enabled` - Dulani udindo woyatsa/kuzimitsa chowonjezera
 
-## License
+## License {#license}
 
 Chowonjezerachi chili ndi license pansi pa GPL v3 kapena yapambuyo pake.
 
-## Thandizo
+## Thandizo {#support}
 
 Kuti mupeze thandizo ndi zolemba, pitani ku [MultisiteUltimate.com](https://multisiteultimate.com)
-## Mbiri ya Zosintha
+## Mbiri ya Zosintha {#changelog}
 
 - Version 1.2.0 (2026-06-03): onjezani kulowa kwa wogwiritsa ntchito popanda state, kuthekera kwa Hostinger multi-tenancy, kulekanitsa database ndi filesystem pa subsite iliyonse, zipata zotsimikizira kusamuka kwa wodziyimira pawokha, kusintha pa kuyambitsa wogwiritsa ntchito/wolemba database, kumangirira host ya MySQL kosinthika, ndi kuchotsa kwa wodziyimira pawokha kotetezeka kwambiri.
 

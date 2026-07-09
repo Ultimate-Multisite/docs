@@ -3,13 +3,13 @@ title: Manuell Bezuelungen ariichten
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuell Bezuelungen ariichten (v2)
+# Manuell Bezuelungen ariichten (v2) {#setting-up-manual-payments-v2}
 
 _**WICHTEGEN HINWEIS: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 
 Manuell Bezuelunge sinn eng Méiglechkeet, fir aner Bezuelmethoden unzebidden, falls **Stripe** oder **PayPal** fir Är Benotzer net verfügbar sinn. Et kann eng Iwwerweisung oder Bankiwwerweisung sinn oder all aner Bezuelmethod, déi lokal fir Är Benotzer verfügbar ass.
 
-## Wéi een Manuell Bezuelungen aktivéiert
+## Wéi een Manuell Bezuelungen aktivéiert {#how-to-enable-manual-payments}
 
 Eng manuell Bezuelung ariichten ass ganz einfach. Dir musst se just ënner de Bezuel-Gateways aktivéieren an detailléiert Instruktiounen aginn, wéi de Benotzer d'Bezuelung schécke soll.
 
@@ -31,7 +31,7 @@ A si kréien och e Message op Ärer **Thank You**-Säit mat Äre Bezuelinstrukti
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manuell Bezuelunge bestätegen
+## Manuell Bezuelunge bestätegen {#confirming-manual-payments}
 
 Fir eng manuell Bezuelung ze bestätegen, gitt op de **Payments**-Menü an der lénkser Leesch. Do kënnt Dir all d'Bezuelungen an Ärem Netzwierk an hir Detailer gesinn, inklusiv hirem **Status**. Eng manuell Bezuelung huet ëmmer de Status **Pending**, bis Dir en manuell ännert.
 

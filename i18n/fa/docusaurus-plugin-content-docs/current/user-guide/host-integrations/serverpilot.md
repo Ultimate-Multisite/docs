@@ -3,17 +3,17 @@ title: یکپارچه‌سازی ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# یکپارچه‌سازی با ServerPilot
+# یکپارچه‌سازی با ServerPilot {#serverpilot-integration}
 
-## معرفی
+## معرفی {#overview}
 ServerPilot یک سرویس ابری برای میزبانی وردپرس و سایر وب‌سایت‌های PHP روی سرورهای DigitalOcean، Amazon، Google یا هر ارائه‌دهنده سرور دیگری است. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL بین Ultimate Multisite و ServerPilot را فراهم می‌کند.
 
-## امکانات
+## امکانات {#features}
 - همگام‌سازی خودکار دامنه
 - مدیریت گواهی SSL با Let's Encrypt
 - تمدید خودکار SSL
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 ثابت‌های زیر باید در فایل `wp-config.php` شما تعریف شوند:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## راهنمای راه‌اندازی
+## راهنمای راه‌اندازی {#setup-instructions}
 
-### ۱. دریافت اطلاعات API از ServerPilot
+### ۱. دریافت اطلاعات API از ServerPilot {#1-get-your-serverpilot-api-credentials}
 
 1. وارد داشبورد ServerPilot خود شوید
 2. به بخش "Account" > "API" بروید
 3. اگر کلید API ندارید، یک کلید جدید بسازید
 4. Client ID و API Key خود را کپی کنید
 
-### ۲. دریافت App ID
+### ۲. دریافت App ID {#2-get-your-app-id}
 
 1. در داشبورد ServerPilot، به بخش "Apps" بروید
 2. اپلیکیشنی که وردپرس چندسایته شما روی آن میزبانی می‌شود را انتخاب کنید
 3. App ID در آدرس URL قابل مشاهده است: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### ۳. افزودن ثابت‌ها به wp-config.php
+### ۳. افزودن ثابت‌ها به wp-config.php {#3-add-constants-to-wp-configphp}
 
 ثابت‌های زیر را به فایل `wp-config.php` خود اضافه کنید:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### ۴. فعال‌سازی یکپارچه‌سازی
+### ۴. فعال‌سازی یکپارچه‌سازی {#4-enable-the-integration}
 
 1. در پیشخوان وردپرس، به Ultimate Multisite > Settings بروید
 2. به تب "Domain Mapping" بروید
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. یکپارچه‌سازی ServerPilot را فعال کنید
 5. روی "Save Changes" کلیک کنید
 
-## نحوه کار
+## نحوه کار {#how-it-works}
 
-### همگام‌سازی دامنه
+### همگام‌سازی دامنه {#domain-syncing}
 
 وقتی یک دامنه در Ultimate Multisite نگاشت می‌شود:
 
@@ -66,7 +66,7 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 3. لیست به‌روزشده را از طریق API به ServerPilot ارسال می‌کند
 4. ServerPilot لیست دامنه‌های اپلیکیشن شما را به‌روزرسانی می‌کند
 
-### مدیریت گواهی SSL
+### مدیریت گواهی SSL {#ssl-certificate-management}
 
 پس از همگام‌سازی دامنه‌ها:
 
@@ -74,27 +74,27 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 2. ServerPilot صدور و نصب گواهی SSL را با استفاده از Let's Encrypt انجام می‌دهد
 3. ServerPilot همچنین تمدید خودکار گواهی‌های SSL را مدیریت می‌کند
 
-## تأیید گواهی SSL
+## تأیید گواهی SSL {#ssl-certificate-verification}
 
 این یکپارچه‌سازی طوری پیکربندی شده که تعداد تلاش‌های تأیید گواهی SSL برای ServerPilot را افزایش دهد، زیرا ممکن است صدور و نصب گواهی SSL توسط ServerPilot کمی زمان ببرد. به‌صورت پیش‌فرض، تا ۵ بار تلاش می‌کند، اما می‌توانید این مقدار را با استفاده از فیلترها تنظیم کنید.
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
-### مشکلات اتصال به API
+### مشکلات اتصال به API {#api-connection-issues}
 - مطمئن شوید که Client ID و API Key شما صحیح هستند
 - بررسی کنید که App ID شما درست باشد
 - اطمینان حاصل کنید که حساب ServerPilot شما مجوزهای لازم را دارد
 
-### مشکلات گواهی SSL
+### مشکلات گواهی SSL {#ssl-certificate-issues}
 - ServerPilot نیاز دارد که دامنه‌ها قبل از صدور گواهی SSL، رکوردهای DNS معتبری داشته باشند که به سرور شما اشاره کنند
 - اگر گواهی‌های SSL صادر نمی‌شوند، بررسی کنید که دامنه‌های شما به‌درستی به آدرس IP سرورتان اشاره می‌کنند
 - صدور و نصب گواهی SSL توسط ServerPilot ممکن است کمی زمان ببرد (معمولاً ۵ تا ۱۵ دقیقه)
 
-### دامنه اضافه نشده است
+### دامنه اضافه نشده است {#domain-not-added}
 - لاگ‌های Ultimate Multisite را برای پیام‌های خطا بررسی کنید
 - مطمئن شوید که دامنه قبلاً به ServerPilot اضافه نشده باشد
 - اطمینان حاصل کنید که پلن ServerPilot شما از تعداد دامنه‌هایی که می‌خواهید اضافه کنید پشتیبانی می‌کند
 
-### حذف دامنه
+### حذف دامنه {#domain-removal}
 - در حال حاضر، API مربوط به ServerPilot امکان حذف دامنه‌های جداگانه را ندارد
 - وقتی یک نگاشت دامنه در Ultimate Multisite حذف می‌شود، یکپارچه‌سازی لیست دامنه‌ها را در ServerPilot به‌روزرسانی می‌کند تا دامنه حذف‌شده را شامل نشود

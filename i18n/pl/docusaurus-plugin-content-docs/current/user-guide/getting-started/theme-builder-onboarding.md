@@ -3,11 +3,11 @@ title: Przepływ wprowadzający do Theme Buildera
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Proces Wprowadzający do Theme Buildera
+# Proces Wprowadzający do Theme Buildera {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 wprowadza prowadzony **proces wprowadzający do Theme Buildera**, który pomaga stworzyć niestandardowy blokowy motyw (block theme) podczas początkowej konfiguracji. Zastępuje on stary tryb Site Builder bardziej elastycznym podejściem wspomaganym przez agenta.
 
-## Co to jest Proces Wprowadzający do Theme Buildera?
+## Co to jest Proces Wprowadzający do Theme Buildera? {#what-is-the-theme-builder-onboarding-flow}
 
 Proces wprowadzający do Theme Buildera to interaktywny kreator konfiguracji, który:
 
@@ -18,9 +18,9 @@ Proces wprowadzający do Theme Buildera to interaktywny kreator konfiguracji, kt
 
 Proces jest napędzany przez **Setup Assistant agenta**, który zadaje pytania wyjaśniające i stopniowo buduje Twój motyw.
 
-## Rozpoczęcie Procesu Wprowadzającego do Theme Buildera
+## Rozpoczęcie Procesu Wprowadzającego do Theme Buildera {#starting-the-theme-builder-onboarding}
 
-### Konfiguracja przy pierwszym uruchomieniu
+### Konfiguracja przy pierwszym uruchomieniu {#first-run-setup}
 
 Gdy po raz pierwszy uruchomisz Superdav AI Agent na nowej instalacji WordPress, zobaczysz:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Wybierz **"Build a custom theme"**, aby wejść do procesu wprowadzającego do Theme Buildera.
 
-### Ręczna aktywacja
+### Ręczna aktywacja {#manual-activation}
 
 Możesz również rozpocząć proces wprowadzający do Theme Buildera w dowolnym momencie, żądając:
 
@@ -49,9 +49,9 @@ lub
 "Help me create a custom theme"
 ```
 
-## Kroki Wprowadzające
+## Kroki Wprowadzające {#the-onboarding-steps}
 
-### Krok 1: Wybór trybu
+### Krok 1: Wybór trybu {#step-1-mode-selection}
 
 Setup Assistant agent pyta o Twoje preferencje:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Tryb Guided** jest zalecany dla większości użytkowników; agent przedstawia rekomendacje projektowe na podstawie Twojej branży i celów.
 
-### Krok 2: Specyfikacja witryny
+### Krok 2: Specyfikacja witryny {#step-2-site-specification}
 
 Zostaniesz poproszony o informacje o swojej witrynie:
 
@@ -74,7 +74,7 @@ Zostaniesz poproszony o informacje o swojej witrynie:
 
 Te informacje są zapisywane w pamięci **site_brief**, do której agentzy odwołują się w przyszłych sesjach.
 
-### Krok 3: Decyzje dotyczące systemu projektowego
+### Krok 3: Decyzje dotyczące systemu projektowego {#step-3-design-system-decisions}
 
 Agent poprowadzi Cię przez wybór tokenów projektowych:
 
@@ -83,7 +83,7 @@ Agent poprowadzi Cię przez wybór tokenów projektowych:
 - **Odstępy**: Układy zwarte, normalne lub przestronne
 - **Animacja**: Animacje i przejścia (jeśli są pożądane)
 
-### Krok 4: Generowanie motywu
+### Krok 4: Generowanie motywu {#step-4-theme-generation}
 
 Setup Assistant agent tworzy szkielet Twojego niestandardowego blokowego motywu, zawierający:
 
@@ -92,7 +92,7 @@ Setup Assistant agent tworzy szkielet Twojego niestandardowego blokowego motywu,
 - Niestandardowe style bloków pasujące do Twojego systemu projektowego
 - Metadane motywu i deklaracje wsparcia WordPress
 
-### Krok 5: Aktywacja i weryfikacja
+### Krok 5: Aktywacja i weryfikacja {#step-5-activation-and-verification}
 
 Motyw jest automatycznie aktywowany, a Ty zobaczysz:
 
@@ -107,7 +107,7 @@ Motyw jest automatycznie aktywowany, a Ty zobaczysz:
 
 Następnie możesz odwiedzić swoją witrynę, aby zweryfikować, czy motyw wyświetla się poprawnie.
 
-## Specyfikacja witryny i pamięć site_brief
+## Specyfikacja witryny i pamięć site_brief {#site-specification-and-sitebrief-memory}
 
 Podczas procesu wprowadzającego agent przechwytuje specyfikację Twojej witryny w kategorii pamięci **site_brief**. Obejmuje to:
 
@@ -117,7 +117,7 @@ Podczas procesu wprowadzającego agent przechwytuje specyfikację Twojej witryny
 - Preferencje projektowe
 - Struktura treści
 
-### Dlaczego site_brief jest ważny
+### Dlaczego site_brief jest ważny {#why-sitebrief-matters}
 
 W przyszłych sesjach agentzy odwołują się do Twojego site_brief, aby:
 
@@ -126,7 +126,7 @@ W przyszłych sesjach agentzy odwołują się do Twojego site_brief, aby:
 - Dostarczać rekomendacje uwzględniające kontekst
 - Unikać powtarzania pytań konfiguracyjnych
 
-### Podgląd site_brief
+### Podgląd site_brief {#viewing-your-sitebrief}
 
 Możesz poprosić agenta:
 
@@ -142,11 +142,11 @@ lub
 
 Agent wyświetli Twoją zapisaną specyfikację witryny.
 
-## Dostosowywanie po zakończeniu procesu wprowadzającego
+## Dostosowywanie po zakończeniu procesu wprowadzającego {#customizing-after-onboarding}
 
 Po zakończeniu procesu wprowadzającego do Theme Buildera możesz:
 
-### Używać umiejętności Design System Aesthetics
+### Używać umiejętności Design System Aesthetics {#use-the-design-system-aesthetics-skill}
 
 Poprosić o ulepszenia projektowe:
 
@@ -162,7 +162,7 @@ lub
 
 **Design System Aesthetics skill** poprowadzi Cię przez celowane aktualizacje projektowe.
 
-### Edytowanie theme.json bezpośrednio
+### Edytowanie theme.json bezpośrednio {#edit-themejson-directly}
 
 Dla zaawansowanych użytkowników edytuj plik `/wp-content/themes/[theme-name]/theme.json`, aby dostosować:
 
@@ -171,7 +171,7 @@ Dla zaawansowanych użytkowników edytuj plik `/wp-content/themes/[theme-name]/t
 - Wartości odstępów
 - Definicje ramek i cieni
 
-### Tworzenie niestandardowych szablonów bloków
+### Tworzenie niestandardowych szablonów bloków {#create-custom-block-templates}
 
 Użyj edytora bloków WordPress, aby stworzyć niestandardowe szablony dla:
 
@@ -180,7 +180,7 @@ Użyj edytora bloków WordPress, aby stworzyć niestandardowe szablony dla:
 - Stron produktów
 - Formularzy kontaktowych
 
-## Porównanie: Stary vs. Nowy proces wprowadzający
+## Porównanie: Stary vs. Nowy proces wprowadzający {#comparison-old-vs-new-onboarding}
 
 | Funkcja | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|---------------------|
@@ -190,7 +190,7 @@ Użyj edytora bloków WordPress, aby stworzyć niestandardowe szablony dla:
 | Elastyczność | Ustalowane opcje | Możliwość dostosowania |
 | Aktualizacje w przyszłości | Nie są odwoływane | Zapisywane w site_brief |
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
 **Proces wprowadzający nie został ukończony**
 - Uruchom ponownie proces: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Użyj edytora bloków WordPress, aby stworzyć niestandardowe szablony dla:
 - Poproś agenta o "regenerate the theme with [specific changes]"
 - Edytuj theme.json bezpośrednio, aby uzyskać precyzyjną kontrolę
 
-## Następne kroki
+## Następne kroki {#next-steps}
 
 Po zakończeniu procesu wprowadzającego do Theme Buildera:
 

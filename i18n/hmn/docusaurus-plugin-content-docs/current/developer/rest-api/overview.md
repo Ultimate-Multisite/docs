@@ -3,28 +3,28 @@ title: REST API Kev Saib Dav
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Phau ntawv siv REST API
+# Phau ntawv siv REST API {#rest-api-reference}
 
-## Kev teeb tsa hauv paus
+## Kev teeb tsa hauv paus {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Kev lees paub tus kheej:** API Key & Secret (HTTP Basic Auth lossis URL Parameters)
 
-## Kev lees paub tus kheej
+## Kev lees paub tus kheej {#authentication}
 
-### Qhib API
+### Qhib API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Tau txais API Credentials
+### Tau txais API Credentials {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Cov kev lees paub tus kheej
+### Cov kev lees paub tus kheej {#authentication-methods}
 
 **HTTP Basic Auth (Pom zoo):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Cov endpoint tseem ceeb
+## Cov endpoint tseem ceeb {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **Txoj kev hauv paus:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Txoj kev hauv paus:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Txoj kev hauv paus:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Txoj kev hauv paus:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Txoj kev hauv paus:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Txoj kev hauv paus:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint rau kev sau npe
+## Endpoint rau kev sau npe {#registration-endpoint}
 
 Endpoint `/register` muab ib qho checkout/kev sau npe tiav hlo:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Cov endpoint rau Sovereign Tenant
+## Cov endpoint rau Sovereign Tenant {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ntxiv sovereign tenant REST coverage rau cov kev sib txuas uas provision, tshuaj xyuas, lossis verify cov tenant uas cais nyias.
 
@@ -242,7 +242,7 @@ Cov migration status responses uas ib txwm muaj xws li:
 
 Saib `ready: false` ua ib yam uas thaiv ua ntej launch. Tshuaj xyuas verification details, kho database host binding, queue, user provisioning, lossis routing issue, ces sim verification dua.
 
-## Error Responses
+## Error Responses {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Saib `ready: false` ua ib yam uas thaiv ua ntej launch. Tshuaj xyuas verificatio
 }
 ```
 
-## Pagination thiab Filtering
+## Pagination thiab Filtering {#pagination-and-filtering}
 
 **Query Parameters:**
 ```http

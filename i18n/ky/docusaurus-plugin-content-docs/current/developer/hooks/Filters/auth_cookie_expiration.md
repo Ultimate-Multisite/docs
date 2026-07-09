@@ -4,11 +4,11 @@ title: Чыпка - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Чыпка: auth_cookie_expiration
+# Чыпка: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Аутентификация cookie мөөнөтүнүн аяктоо мезгилинин узактыгын чыпкалайт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 | $user_id | `int` | Колдонуучунун ID'си. |
 | $remember | `bool` | Колдонуучунун кирүүсүн эстеп калуу керекпи. Демейкиси false. |
 
-### Качандан бери
+### Качандан бери {#since}
 
 - 2.8.0
-### Булак
+### Булак {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) ичинде 52-сапта аныкталган

@@ -3,18 +3,18 @@ title: Integracija s Cloudflareom
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integracja z Cloudflare
+# Integracja z Cloudflare {#cloudflare-integration}
 
-## Przegląd
+## Przegląd {#overview}
 Cloudflare to wiodący dostawca sieci CDN (Content Delivery Network) i usług bezpieczeństwa, który pomaga chronić i przyspieszać strony internetowe. Ta integracja umożliwia automatyczne zarządzanie domenami między Ultimate Multisite a Cloudflare, szczególnie przy instalacjach multisite na poddomenach.
 
-## Funkcje
+## Funkcje {#features}
 - Automatyczne tworzenie poddomen w Cloudflare
 - Wsparcie dla poddomen proxyowanych
 - Zarządzanie rekordami DNS
 - Rozszerzone wyświetlanie rekordów DNS w panelu administracyjnym Ultimate Multisite
 
-## Wymagania
+## Wymagania {#requirements}
 Poniższe stałe muszą być zdefiniowane w pliku `wp-config.php`:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'twoja_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'twoj_zone_id');
 ```
 
-## Instrukcje konfiguracji
+## Instrukcje konfiguracji {#setup-instructions}
 
-### 1. Uzyskaj swój klucz API Cloudflare
+### 1. Uzyskaj swój klucz API Cloudflare {#1-get-your-cloudflare-api-key}
 
 1. Zaloguj się do swojego panelu Cloudflare
 2. Przejdź do "Moje konto" (kliknij na swój e-mail w prawym górnym rogu)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'twoj_zone_id');
    - Zone.DNS: Edytuj (Edit)
 5. Skopiuj swój klucz API
 
-### 2. Uzyskaj swój ID strefy (Zone ID)
+### 2. Uzyskaj swój ID strefy (Zone ID) {#2-get-your-zone-id}
 
 1. W panelu Cloudflare wybierz domenę, którą chcesz użyć
 2. ID strefy jest widoczne w zakładce "Przegląd" (Overview), w prawym pasku bocznym pod sekcją "API"
 3. Skopiuj ID strefy
 
-### 3. Dodaj stałe do wp-config.php
+### 3. Dodaj stałe do wp-config.php {#3-add-constants-to-wp-configphp}
 
 Dodaj następujące stałe do pliku `wp-config.php`:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'twoj_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'twoj_zone_id');
 ```
 
-### 4. Włącz integrację
+### 4. Włącz integrację {#4-enable-the-integration}
 
 1. W panelu administracyjnym WordPress przejdź do Ultimate Multisite > Ustawienia (Settings)
 2. Przejdź do zakładki "Domain Mapping"
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'twoj_zone_id');
 4. Włącz integrację Cloudflare
 5. Kliknij "Save Changes"
 
-## Jak to działa
+## Jak to działa {#how-it-works}
 
-### Zarządzanie poddomenami
+### Zarządzanie poddomenami {#subdomain-management}
 
 Gdy tworzysz nową stronę w instalacji multisite na poddomenach:
 
@@ -67,7 +67,7 @@ Gdy tworzysz nową stronę w instalacji multisite na poddomenach:
 2. Poddomen je po defaultu konfiguriran da se proksira putem Cloudflare-a (ovo se može promijeniti pomoću filtera).
 3. Kada se stranica obriše, integracija će ukloniti poddomen iz Cloudflare-a.
 
-### Prikaz DNS zapisa
+### Prikaz DNS zapisa {#dns-record-display}
 
 Integracija poboljšava prikaz DNS zapisa u admin paneli Ultimate Multisite tako što:
 
@@ -75,11 +75,11 @@ Integracija poboljšava prikaz DNS zapisa u admin paneli Ultimate Multisite tako
 2. Prikazuje je li zapis proksiran ili ne
 3. Prikazuje dodatne informacije o DNS zapisima
 
-## Cloudflare Custom Hostnames (Prilagođeni hostnaji Cloudflare-a)
+## Cloudflare Custom Hostnames (Prilagođeni hostnaji Cloudflare-a) {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (ranije zvan "Cloudflare for SaaS") je značajka Cloudflare-a koja omogućuje vašim kupcima da koriste vlastita domena s SSL-om na vašoj multisite mreži. To je preporučeni pristup za instalacije multisite mapirane na domen koje koriste Cloudflare, jer Cloudflare automatski upravlja izdavanjem i obnavljivanjem SSL certifikata za svaki prilagođeni domen.
 
-### Kako se razlikuje od standardne integracije Cloudflare-a
+### Kako se razlikuje od standardne integracije Cloudflare-a {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Standardna integracija | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ Integracija poboljšava prikaz DNS zapisa u admin paneli Ultimate Multisite tako
 | **Najbolje za** | Multisite na poddomenima | Multisite mapirane na domen |
 | **SSL** | Upravlja se zasebno | Automatski upravlja od strane Cloudflare-a |
 
-### Postavljanje Cloudflare Custom Hostnames
+### Postavljanje Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. U svom Cloudflare dashboardu, otvorite zonu za vaš glavni domen.
 2. Idite na **SSL/TLS > Custom Hostnames**.
@@ -101,23 +101,23 @@ Za kompletnu referencu API-ja, pogledajte [Cloudflare Custom Hostnames documenta
 Od verzije Ultimate Multisite v2.6.1, ova značajka se naziva **Cloudflare Custom Hostnames** u svim podešavanjima i etiketama dodatka. Ranije verzije su koristile naziv "Cloudflare for SaaS", što je ime osnovnog Cloudflare proizvoda.
 :::
 
-## Važne napomene
+## Važne napomene {#important-notes}
 
 Od novijih ažuriranja Cloudflare-a, wildcard proxying je sada dostupan za sve klijente. To znači da standardna integracija DNS-a Cloudflare-a manje je ključna za instalacije multisite poddomenima nego što je bilo prije, jer možete jednostavno postaviti wildcard DNS zapis u Cloudflare-u.
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
-### Problemi s povezivanjem API-ja
+### Problemi s povezivanjem API-ja {#api-connection-issues}
 - Provjerite da li je vaš API token ispravan i ima potrebne dozvole
 - Provjerite da li je vaš Zone ID ispravan
 - Osigurajte da vaš Cloudflare račun ima potrebne dozvole
 
-### Poddomen nije dodan
+### Poddomen nije dodan {#subdomain-not-added}
 - Provjerite Ultimate Multisite logove na bilo kakve poruke o greškama
 - Provjerite da li poddomen već postoji u Cloudflare-u
 - Osigurajte da je vaš Cloudflare plan kompatibilan s brojem DNS zapisa koje kreirate
 
-### Problemi s proxyjanjem
+### Problemi s proxyjanjem {#proxying-issues}
 - Ako ne želite da se poddomeni proxyju, možete koristiti filter `wu_cloudflare_should_proxy`.
 - Neke značajke možda neće raditi ispravno kada su proxyane (npr. određene WordPress administrativne funkcije).
 - Razmislite o korištenju Cloudflare Page Rules-a kako biste zaobišli keširanje za admin stranice.

@@ -4,23 +4,23 @@ title: Àlẹmọ - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Àlẹmọ: mu_migration/export/user/data
+# Àlẹmọ: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
 
 Ó ń ṣe àlẹmọ àkójọpọ̀ dátà olumulo aiyipada tí a máa gbe jáde/gbé wọlé.
 
-## Àwọn Parameter
+## Àwọn Parameter {#parameters}
 
 | Orúkọ | Iru | Àpèjúwe |
 |------|------|-------------|
 | $custom_user_data | `array` | Array dátà olumulo àṣà. |
 | $user | `\WP_User` | Object olumulo náà. |
 
-### Láti
+### Láti {#since}
 
 - 0.1.0
-### Orísun
+### Orísun {#source}
 
 - Ṣàlàyé nínú [`inc/mu-migration/includes/commands/class-mu-migration-export.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-export.php#L335) ní ìlà 335
 - Ṣàlàyé nínú [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L147) ní ìlà 147
-## Ìpadà
+## Ìpadà {#returns}
 Dátà array olumulo.

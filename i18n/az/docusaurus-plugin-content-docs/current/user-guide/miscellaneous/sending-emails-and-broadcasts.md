@@ -3,13 +3,13 @@ title: E-poçtlar və Yayım mesajları göndərilməsi
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-poçtların və yayımların göndərilməsi (v2)
+# E-poçtların və yayımların göndərilməsi (v2) {#sending-emails-and-broadcasts-v2}
 
 _**VACİB QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
 Ultimate Multisite, hədəflənmiş istifadəçiyə və ya istifadəçi qrupuna e-poçt göndərməklə, həmçinin elanları yayımlamaq üçün onların admin Dashboard-ında bildirişlər göndərməklə müştərilərinizlə əlaqə saxlamağa imkan verən xüsusiyyətlə gəlir
 
-## Yayımlar vasitəsilə müştərilərinizin Dashboard-ına admin bildirişləri əlavə edin
+## Yayımlar vasitəsilə müştərilərinizin Dashboard-ına admin bildirişləri əlavə edin {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ultimate Multisite yayım xüsusiyyətindən istifadə edərək, istifadəçinizin alt sayt admin Dashboard-ına **admin bildirişləri** əlavə edə bilərsiniz.
 
@@ -51,7 +51,7 @@ Mesajınızı yaratdıqdan sonra **Göndər** düyməsinə basa bilərsiniz.
 
 Və bu qədər. Admin bildirişi dərhal istifadəçinizin Dashboard-ında görünməlidir.
 
-## Müştərilərinizə e-poçt göndərin
+## Müştərilərinizə e-poçt göndərin {#send-emails-to-your-customers}
 
 Ultimate Multisite yayım xüsusiyyətindən istifadə edərək, istifadəçilərinizə e-poçt göndərə bilərsiniz. E-poçtu yalnız müəyyən istifadəçilərə göndərmək və ya abunə olduqları məhsul və ya plan əsasında müəyyən istifadəçi qrupunu hədəfləmək seçiminiz var.
 
@@ -81,11 +81,11 @@ Mesajınızı yaratdıqdan sonra **Göndər** düyməsinə basa bilərsiniz.
 
 Yayım xüsusiyyətindən istifadə edərək son istifadəçilərinizə e-poçt göndərmək bu qədər asandır.
 
-## Sistem e-poçtları
+## Sistem e-poçtları {#system-emails}
 
 Ultimate Multisite-də sistem e-poçtları qeydiyyat, ödəniş, domen xəritələnməsi və s. kimi müəyyən əməliyyatlardan sonra sistem tərəfindən göndərilən **avtomatik bildirişlərdir**. Bu e-poçtlar Ultimate Multisite ayarlarından redaktə edilə və ya dəyişdirilə bilər. O, həmçinin başqa bir Ultimate Multisite quraşdırmasından mövcud ayarları sıfırlamağa və idxal etməyə imkan verən xüsusiyyətlə gəlir.
 
-### Sıfırlama və idxal etmə
+### Sıfırlama və idxal etmə {#resetting--importing}
 
 Yeni Ultimate Multisite versiyaları, eləcə də əlavələr, zaman-zaman yeni e-poçtları qeydiyyatdan keçirə bilər və keçirəcək.
 
@@ -93,7 +93,7 @@ Ziddiyyətlərin və digər problemlərin qarşısını almaq üçün, verilmiş
 
 Bununla belə, super adminlər və agentlər bu yeni qeydiyyatdan keçirilmiş e-poçtları idxal aləti vasitəsilə idxal edə bilərlər. Bu proses yeni e-poçt şablonunun məzmunu və konfiqurasiyası ilə yeni sistem e-poçtu yaradacaq, super adminə istədiyi dəyişiklikləri etməyə və ya onları olduğu kimi saxlamağa imkan verəcək.
 
-#### Sistem e-poçtlarını necə idxal etmək olar
+#### Sistem e-poçtlarını necə idxal etmək olar {#how-to-import-system-emails}
 
 Ultimate Multisite Ayarları səhifənizə keçin və **E-poçtlar** tabına daxil olun.
 
@@ -111,7 +111,7 @@ Sonra idxal üçün hansı sistem e-poçtlarının əlçatan olduğunu görmək 
 
 <!-- Ekran görüntüsü əlçatan deyil: E-poçtları İdxal Et seçimləri genişləndirilmiş Sıfırla və İdxal Et modalı -->
 
-#### Sistem E-poçtlarının Sıfırlanması
+#### Sistem E-poçtlarının Sıfırlanması {#reseting-system-emails}
 
 Bəzən müəyyən bir e-poçt şablonunda etdiyiniz dəyişikliklərin artıq sizə uyğun olmadığını anlayacaqsınız və onu **standart vəziyyətinə** sıfırlamaq istəyəcəksiniz.
 

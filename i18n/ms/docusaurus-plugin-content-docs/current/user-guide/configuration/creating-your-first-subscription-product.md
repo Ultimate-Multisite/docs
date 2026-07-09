@@ -3,13 +3,13 @@ title: Mencipta Produk Langganan Pertama Anda
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Mencipta Produk Langganan Pertama anda (v2)
+# Mencipta Produk Langganan Pertama anda (v2) {#creating-your-first-subscription-product-v2}
 
 _**NOTA PENTING: Artikel ini hanya untuk pengguna Ultimate Multisite versi 2.x. Jika anda menggunakan versi 1.x,**_ **_**lihat artikel ini**_**.
 
 Untuk mula menjalankan rangkaian anda dan mula menjual perkhidmatan anda kepada pengguna berpotensi, anda perlu mempunyai pilihan langganan yang berbeza. Bagaimanakah anda mencipta produk ini? Apakah jenis produk yang boleh anda tawarkan? Dalam artikel ini, kami akan merangkumi semua perkara yang perlu anda ketahui tentang produk.
 
-## Jenis Produk
+## Jenis Produk {#product-type}
 
 Dengan Ultimate Multisite anda boleh menawarkan dua kategori produk kepada pelanggan anda: **pelan** dan **add-on** **(Tawaran Tambahan Pesanan)**. Add-on boleh dibahagikan kepada dua jenis:**pakej** dan **perkhidmatan**. Kita akan melihat perbezaan dan ciri khususnya seterusnya.
 
@@ -19,7 +19,7 @@ Dengan Ultimate Multisite anda boleh menawarkan dua kategori produk kepada pelan
 
   * **Perkhidmatan:** add-on yang tidak mengubah fungsi Ultimate Multisite. Ia ialah tugasan yang akan anda laksanakan untuk pelanggan anda sebagai tambahan kepada pelan yang mereka beli. Contohnya, pelanggan anda mungkin membeli pelan yang membenarkan satu laman dan juga membayar perkhidmatan tambahan yang akan membuat reka bentuk laman ini.
 
-## Mengurus Produk
+## Mengurus Produk {#managing-products}
 
 Bagi ramai orang, tab **Produk** dalam Ultimate Multisite **(Ultimate Multisite > Produk)** boleh disamakan dengan pelan dalam persekitaran pengehosan tradisional.
 
@@ -29,7 +29,7 @@ Bahagian ini akan membimbing pemahaman anda tentang asas penting Ultimate Multis
 
 ![Halaman senarai produk](/img/config/products-list.png)
 
-## Menambah Produk
+## Menambah Produk {#adding-products}
 
 Sama ada pelan, pakej, atau perkhidmatan, titik masuk untuk mentakrifkan item baharu adalah melalui **Ultimate Multisite > Produk > Tambah Produk**.
 
@@ -39,13 +39,13 @@ Antara muka mengandungi dua bahagian utama. Di sebelah kiri terdapat beberapa ta
 
 ![Gambaran keseluruhan halaman sunting produk](/img/config/product-edit-full.png)
 
-### Perihalan
+### Perihalan {#description}
 
 Maklumat produk asas boleh ditakrifkan dengan menyediakan nama dan perihalan produk. Pengecam ini dipaparkan di mana-mana sahaja maklumat produk diperlukan seperti pemilihan pelan dan harga, invois, naik taraf, dan sebagainya.
 
 ![Bahagian perihalan produk](/img/config/product-description.png)
 
-### Jenis Harga
+### Jenis Harga {#pricing-type}
 
 Di sebelah kanan antara muka, harga asas boleh ditakrifkan.
 
@@ -53,7 +53,7 @@ Di sebelah kanan antara muka, harga asas boleh ditakrifkan.
 
 Ultimate Multisite menyokong tiga jenis harga yang berbeza. Pilihan **berbayar** meminta pentadbir rangkaian memberikan maklumat berkenaan harga produk dan kekerapan pengebilan.
 
-### Harga
+### Harga {#pricing}
 
 Komponen harga mentakrifkan harga produk asas dan selang pengebilan.
 
@@ -61,7 +61,7 @@ Komponen harga mentakrifkan harga produk asas dan selang pengebilan.
 
 maka contoh harga $29.99 dengan tetapan 1 bulan akan mengebil $29.99 setiap bulan. Begitu juga, harga $89.97 dengan tetapan 3 bulan akan mengebil jumlah tersebut setiap suku tahun.
 
-### Kitaran Pengebilan
+### Kitaran Pengebilan {#billing-cycles}
 
 Bahagian kitaran pengebilan menentukan kekerapan selang pengebilan yang disebutkan sebelum ini dan secara umum difahami dalam konteks kontrak atau tempoh tetap.
 
@@ -69,7 +69,7 @@ Bahagian kitaran pengebilan menentukan kekerapan selang pengebilan yang disebutk
 
 Contohnya, harga produk $29.99 dengan selang 1 bulan dan 12 kitaran pengebilan akan mengebil $29.99 sebulan untuk produk tersebut sepanjang 12 bulan berikutnya. Dengan kata lain, tetapan sedemikian akan menetapkan tempoh harga tetap $29.99 sebulan selama 12 bulan dan kemudian menghentikan pengebilan.
 
-### Tempoh Percubaan
+### Tempoh Percubaan {#trial-period}
 
 Mengaktifkan togol tawaran percubaan membolehkan pentadbir rangkaian mentakrifkan tempoh percubaan untuk produk.
 
@@ -77,7 +77,7 @@ Mengaktifkan togol tawaran percubaan membolehkan pentadbir rangkaian mentakrifka
 
 Sepanjang tempoh percubaan, pelanggan bebas menggunakan produk dan tidak akan dibilkan sehingga tempoh percubaan telah tamat.
 
-### Yuran Persediaan
+### Yuran Persediaan {#setup-fee}
 
 Anda juga boleh mengenakan yuran persediaan pada pelan anda.
 
@@ -85,7 +85,7 @@ Anda juga boleh mengenakan yuran persediaan pada pelan anda.
 
 Ini bermaksud pelanggan anda akan membayar jumlah tambahan pada caj pertama (sebagai tambahan kepada harga pelan) yang sepadan dengan yuran yang anda tetapkan dalam bahagian ini.
 
-### Aktif
+### Aktif {#active}
 
 Togol aktif secara berkesan mentakrifkan sama ada produk tersedia kepada pelanggan untuk pendaftaran baharu.
 
@@ -93,13 +93,13 @@ Togol aktif secara berkesan mentakrifkan sama ada produk tersedia kepada pelangg
 
 Jika terdapat pelanggan sedia ada pada pelan ini, menetapkan togol kepada keadaan dilumpuhkan secara berkesan mengekalkan pelan lama dengan mengeluarkannya daripada pendaftaran akan datang. **Pelanggan sedia ada pada pelan akan terus dibilkan** sehingga mereka dipindahkan kepada pelan baharu atau dikeluarkan daripada pelan tersebut.
 
-### Imej Produk
+### Imej Produk {#product-image}
 
 Butang **Muat Naik Imej** membolehkan pentadbir rangkaian menggunakan pustaka media untuk memilih atau memuat naik imej produk.
 
 ![Bahagian imej produk](/img/config/product-image.png)
 
-### Padam
+### Padam {#delete}
 
 Butang **Padam Produk** memadam produk daripada sistem. Ia muncul setelah produk diterbitkan.
 
@@ -107,11 +107,11 @@ Butang **Padam Produk** memadam produk daripada sistem. Ia muncul setelah produk
 
 Tidak seperti pemadaman lain, produk tidak diletakkan dalam sebarang keadaan sampah. Oleh itu, setelah dipadamkan, tindakan tersebut tidak boleh diundurkan.
 
-### Pilihan Produk
+### Pilihan Produk {#product-options}
 
 Setelah maklumat produk peringkat asas ditakrifkan, pilihan produk membantu pentadbir rangkaian mentakrifkan lagi atribut khusus produk tersebut.
 
-#### Umum
+#### Umum {#general}
 
 Tab **Umum** mentakrifkan atribut umum produk yang tidak terpakai kepada mana-mana tab khusus produk yang lain.
 
@@ -125,7 +125,7 @@ Ultimate Multisite menyokong beberapa jenis produk iaitu Pelan, Pakej, dan Perkh
 
 ![Tetapan peranan pelanggan](/img/config/product-customer-role-settings.png)
 
-#### Naik Taraf & Turun Taraf
+#### Naik Taraf & Turun Taraf {#up--downgrades}
 
 Tab ini menentukan laluan naik taraf dan turun taraf yang tersedia kepada pelanggan dalam peringkat khusus mereka.
 
@@ -143,7 +143,7 @@ Untuk mentakrifkan kumpulan pelan, tentukan pelan yang serasi dalam senarai **ku
 
 Ultimate Multisite juga termasuk ciri **order bump** di mana produk dan perkhidmatan tambahan yang sesuai boleh ditambahkan kepada pelan. Ini ditawarkan kepada pelanggan sebagai item tambahan yang boleh ditambahkan kepada pelan semasa checkout atau semasa naik taraf.
 
-#### Variasi Harga
+#### Variasi Harga {#price-variations}
 
 Variasi harga membolehkan pentadbir rangkaian menentukan peringkat harga alternatif bergantung pada tempoh. Tetapan ini membolehkan tempoh bil bulanan, suku tahunan, tahunan, atau mana-mana tempoh bil lain ditawarkan untuk produk yang sama. Contohnya, anda boleh menyediakan produk pada $29.99/bulan dengan pilihan tahunan berdiskaun pada $249.99/tahun.
 
@@ -165,7 +165,7 @@ Sebagai contoh, jika harga produk asas anda ialah $29.99 sebulan, anda mungkin m
 Variasi harga sahaja tidak menambah togol atau suis pada checkout frontend. Untuk membolehkan pelanggan bertukar antara tempoh bil (cth. Bulanan / Tahunan), anda perlu menambah medan **Pemilihan Tempoh** pada borang checkout anda. Lihat [Borang Checkout: Menambah Togol Pemilihan Tempoh](checkout-forms#adding-a-period-selection-toggle) untuk arahan langkah demi langkah.
 :::
 
-#### Cukai
+#### Cukai {#taxes}
 
 Tab **Cukai** sejajar dengan tetapan cukai yang ditentukan dalam **Ultimate Multisite > Settings > Taxes** dan lebih khusus lagi kadar cukai yang ditakrifkan. Untuk mendayakan cukai dan mentakrifkan kadar cukai yang berkenaan, sila lihat dokumentasi di **Ultimate Multisite: Settings**
 
@@ -179,7 +179,7 @@ Setelah kadar cukai ditakrifkan dalam **Ultimate Multisite > Settings > Manage T
 
 Untuk menunjukkan bahawa produk ialah item bercukai, tetapkan togol **Boleh Dikenakan Cukai** kepada aktif dan pilih kadar cukai yang berkenaan daripada dropdown Kategori Cukai.
 
-#### Templat Tapak
+#### Templat Tapak {#site-templates}
 
 Pada asasnya, templat tapak ialah laman web WordPress lengkap yang diklonkan ke tapak pelanggan pada permulaan subscription mereka.
 
@@ -201,7 +201,7 @@ Akhir sekali, **C** **hoose Available Site Templates** mengatasi templat yang di
 
 Akhirnya, jika pentadbir rangkaian mahu pemilihan templat berlaku dalam langkah checkout, tetapan ' _default_ ' sudah memadai. Sebagai alternatif, untuk mengalih keluar dan mengunci pemilihan templat serta menyerahkan pemilihan kepada tetapan pelan, pilihan ' _assign new template_ ' atau ' _choose available site templates_ ' mungkin sesuai.
 
-#### Tapak
+#### Tapak {#sites}
 
 Tab **Tapak** ialah sebahagian daripada fungsi had Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Tetapan ini menentukan bilangan maksimum tapak yang boleh dicipta oleh pelanggan
 
 Untuk mendayakan had, tetapkan togol **hadkan tapak** kepada keadaan aktif dan tentukan bilangan maksimum tapak dalam medan **peruntukan tapak**.
 
-#### Lawatan
+#### Lawatan {#visits}
 
 Tab **Lawatan** ialah satu lagi bahagian sistem had Ultimate Multisite. Tetapan ini membolehkan perakaunan dan pengehadan seterusnya bagi pelawat unik ke tapak pelanggan.
 
@@ -223,7 +223,7 @@ Untuk menggunakan ciri ini, tetapkan togol **hadkan lawatan unik** kepada keadaa
 
 Sebaik sahaja had ini dicapai, Ultimate Multisite akan berhenti menyajikan tapak pelanggan dan bukannya memaparkan mesej untuk menunjukkan bahawa had telah dilebihi.
 
-#### Pengguna
+#### Pengguna {#users}
 
 Had 'Pengguna' Ultimate Multisite membolehkan pentadbir rangkaian mengenakan had pada bilangan pengguna yang boleh dicipta dan diberikan kepada peranan.
 
@@ -233,7 +233,7 @@ Untuk mendayakan ciri had, tetapkan togol **hadkan pengguna** kepada keadaan akt
 
 Seterusnya, untuk setiap peranan yang perlu dihadkan, tetapkan togol di sebelahnya kepada keadaan aktif dan tentukan had atas maksimum dalam medan yang sesuai.
 
-#### Jenis Kiriman
+#### Jenis Kiriman {#post-types}
 
 Tab **Jenis Kiriman** membolehkan pentadbir rangkaian mengenakan had terperinci pada pelbagai jenis kiriman yang luas dalam WordPress.
 
@@ -245,7 +245,7 @@ Untuk mendayakan subsistem had ini, tetapkan togol **hadkan jenis kiriman** kepa
 
 Seterusnya, untuk setiap jenis kiriman yang perlu dihadkan, hidupkan togolnya dengan menggelongsorkannya ke kanan dan tentukan had atas maksimum dalam medan yang sesuai.
 
-#### Ruang Cakera
+#### Ruang Cakera {#disk-space}
 
 Tab **Ruang Cakera** membolehkan pentadbir rangkaian mengehadkan ruang yang digunakan oleh pelanggan.
 
@@ -257,13 +257,13 @@ Untuk mendayakan had penggunaan cakera, tetapkan togol **hadkan saiz cakera bagi
 
 Seterusnya, tentukan had atas maksimum dalam megabait dalam medan **peruntukan ruang cakera**.
 
-#### Domain Tersuai
+#### Domain Tersuai {#custom-domain}
 
 Dengan menogol pilihan ini, anda boleh membenarkan domain tersuai pada pelan ini secara khusus.
 
 ![Tab Domain Tersuai](/img/config/product-custom-domains.png)
 
-#### Tema
+#### Tema {#themes}
 
 Tab **Tema** dalam pilihan produk membolehkan pentadbir rangkaian menyediakan tema kepada pelanggan untuk dipilih dan secara pilihan memaksa keadaan tema tersebut.
 
@@ -281,7 +281,7 @@ Pemilihan **tingkah laku** membolehkan pentadbir rangkaian mentakrifkan keadaan 
 
 Dalam keadaan **A** **vailable**, tema disediakan kepada pelanggan untuk pengaktifan sendiri. Sebaliknya, keadaan **Tidak Tersedia** mengalih keluar keupayaan pelanggan untuk mengaktifkan tema. Akhir sekali, pilihan **Paksa Aktifkan** memaksa pemilihan dan pengaktifan tema lalu menetapkannya sebagai lalai semasa penciptaan tapak.
 
-#### Plugin
+#### Plugin {#plugins}
 
 Sama seperti tab Tema, Ultimate Multisite membolehkan pentadbir rangkaian mentakrifkan keterlihatan plugin kepada pelanggan serta keadaannya semasa penciptaan tapak baharu.
 
@@ -301,7 +301,7 @@ Tetapan **Force Activate & Lock** beroperasi dengan cara yang serupa tetapi meng
 
 Pentadbir rangkaian mungkin ingin mempertimbangkan tetapan Force Activate & Lock dan Force Inactivate & Lock bersama-sama dengan templat laman kerana plugin dan keadaan plugin dalam templat mungkin terjejas oleh tetapan ini jika dipilih.
 
-#### Tetapkan Semula Batasan
+#### Tetapkan Semula Batasan {#reset-limitations}
 
 Tab **Reset Limitations** menetapkan semula semua had tersuai yang ditakrifkan pada produk. Untuk menetapkan semula batasan, klik butang **reset limitations**.
 
@@ -311,7 +311,7 @@ Untuk mengesahkan tindakan, luncurkan togol **confirm reset** ke keadaan aktifny
 
 ![Tab Reset Limitations](/img/config/product-reset-limitations.png)
 
-## Edit, Gandakan, atau Padam Produk
+## Edit, Gandakan, atau Padam Produk {#edit-duplicate-or-delete-product}
 
 Produk sedia ada boleh diedit, digandakan atau dipadam dengan menavigasi ke **Ultimate Multisite > Products** dan meletakkan penuding di atas nama produk sedia ada.
 

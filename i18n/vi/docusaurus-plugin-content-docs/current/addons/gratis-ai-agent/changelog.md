@@ -3,11 +3,11 @@ title: Nhật ký thay đổi
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Nhật ký thay đổi (Changelog)
+# Nhật ký thay đổi (Changelog) {#changelog}
 
-## 1.9.0 — Phát hành ngày 2026-04-28
+## 1.9.0 — Phát hành ngày 2026-04-28 {#190--released-on-2026-04-28}
 
-### Tính năng mới
+### Tính năng mới {#new}
 
 - **Khả năng `create_contact_form`** — tạo biểu mẫu liên hệ bằng plugin form đang hoạt động (Contact Form 7, WPForms, Fluent Forms, hoặc Gravity Forms) và trả về một shortcode sẵn sàng nhúng vào bất kỳ bài viết hoặc trang nào.
 - **Khả năng `set_featured_image`** — gán ảnh đại diện (featured image) cho bài viết hoặc trang từ một ID đính kèm có sẵn trong Media Library hoặc một URL từ xa; tự động nhập ảnh khi được cung cấp URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Khôi phục phiên làm việc cuối cùng** — bảng chat giờ đây tự động tải lại cuộc trò chuyện gần nhất khi tải trang và khi mở widget, do đó ngữ cảnh sẽ không bao giờ bị mất qua các lần điều hướng trang.
 - **Liên kết hành động của Plugin** — các liên kết nhanh đến Settings và Abilities Registry giờ đây xuất hiện trên màn hình **Plugins → Installed Plugins** của WordPress, ngay bên dưới mô tả plugin.
 
-### Cải tiến
+### Cải tiến {#improved}
 
 - **Thử lại nguồn ảnh** — agent hiện giờ sẽ thử lại tất cả các nguồn ảnh miễn phí đã cấu hình trước khi chuyển sang ảnh do AI tạo ra khi tải xuống thất bại.
 - **Bảng thông tin Model** — luôn hiển thị ở tiêu đề chat; không còn bị ẩn sau tin nhắn đầu tiên.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Thiết kế lại widget chat** — icon AI thống nhất thay thế cho avatar tùy chỉnh trước đây; nhất quán với hệ thống agent tích hợp sẵn.
 - **Liên kết hóa URL** — Các URL xuất hiện trong tin nhắn hệ thống và bong bóng tin nhắn lỗi giờ được hiển thị dưới dạng liên kết có thể nhấp.
 
-### Sửa lỗi
+### Sửa lỗi {#fixed}
 
 - **Khả năng khám phá Ability** — đã sửa các mô tả, tham chiếu system prompt và căn chỉnh namespace để tất cả các ability hiển thị đáng tin cậy trong danh sách công cụ của agent.
 - **Bộ nhớ đệm Provider** — các provider hiện được lưu vào bộ nhớ đệm toàn trang thông qua bộ đếm phiên bản, ngăn chặn các vấn đề về provider cũ trên mạng multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Phát hành ngày 2026-04-09
+## 1.4.0 — Phát hành ngày 2026-04-09 {#140--released-on-2026-04-09}
 
-### Tính năng mới
+### Tính năng mới {#new-1}
 
 - **Lệnh benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — chạy bộ kiểm tra (benchmark suite) Agent Capabilities v1 từ dòng lệnh cho các quy trình CI và quy trình đánh giá model. Hỗ trợ chạy theo từng câu hỏi, ghi đè provider/model, và xuất kết quả JSON/CSV.
 - **Bộ kiểm tra Agent Capabilities v1** — một bộ prompts phức tạp, có cấu trúc, nhiều bước để kiểm tra toàn bộ bề mặt ability, kèm theo tính điểm và báo cáo token/thời gian.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Câu hỏi benchmark trang web nhà hàng** (`q-restaurant-website`) — kiểm tra end-to-end bao gồm đăng ký CPT, design system, navigation, và khám phá plugin.
 - **Các plugin kết nối AI provider** được thêm vào các blueprint của WordPress Playground để thiết lập môi trường phát triển cục bộ nhanh hơn.
 
-### Cải tiến
+### Cải tiến {#improved-1}
 
 - README được cập nhật với tài liệu và hướng dẫn thiết lập AI provider connector.
 
-### Sửa lỗi
+### Sửa lỗi {#fixed-1}
 
 - 25 lỗi kiểm thử PHPUnit trên nhánh `main` đã được giải quyết.
 - Định dạng URL GitHub releases trong `blueprint.json` đã được sửa.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Các ghi chú phát hành trước đó được duy trì trong kho lưu trữ plugin._

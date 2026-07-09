@@ -3,13 +3,13 @@ title: Eskuzko ordainketak konfiguratzea
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Eskuzko ordainketak konfiguratzea (v2)
+# Eskuzko ordainketak konfiguratzea (v2) {#setting-up-manual-payments-v2}
 
 _**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 
 Eskuzko ordainketak zure erabiltzaileei beste ordainketa-metodo batzuk eskaintzeko modu bat dira, **Stripe** edo **PayPal** erabilgarri ez daudenean. Transferentzia telegrafikoa edo banku-transferentzia izan daiteke, edo zure erabiltzaileek tokian tokiko eskuragarri duten beste edozein ordainketa-metodo.
 
-## Nola gaitu eskuzko ordainketak
+## Nola gaitu eskuzko ordainketak {#how-to-enable-manual-payments}
 
 Eskuzko ordainketa konfiguratzea oso erraza da. Ordainketa-pasabideetan gaitu besterik ez duzu egin behar, eta erabiltzaileak ordainketa nola bidali behar duen azaltzen duten jarraibide zehatzak sartu.
 
@@ -31,7 +31,7 @@ Eta zure **Eskerrik asko** orrian ere mezu bat jasoko dute, zure ordainketa-jarr
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Eskuzko ordainketak berrestea
+## Eskuzko ordainketak berrestea {#confirming-manual-payments}
 
 Eskuzko ordainketa bat berresteko, joan ezkerreko barrako **Ordainketak** menura. Han zure sareko ordainketa guztiak eta haien xehetasunak ikus ditzakezu, haien **egoera** barne. Eskuzko ordainketa batek beti izango du **Zain** egoera, zuk eskuz aldatu arte.
 

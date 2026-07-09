@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Sebarkeun subsitus ka sababaraha server jeung basis data pikeun kinerja jeung kaamanan
 
-## Sorotan rilis Vérsi 1.2.0
+## Sorotan rilis Vérsi 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 nambahkeun pondasi tenant daulat pikeun alur kerja isolasi produksi:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 nambahkeun pondasi tenant daulat pikeun alur kerja isolasi p
 
 Tingali pituduh pamaké pikeun [alur kerja migrasi daulat](/user-guide/getting-started/sovereign-migration-workflow), [isolasi multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), jeung [operasi tenant daulat](/user-guide/administration/sovereign-tenant-operations).
 
-## Sarat
+## Sarat {#requirements}
 
 - WordPress 5.3 atawa leuwih luhur
 - PHP 7.4 atawa leuwih luhur
 - plugin Multisite Ultimate (aktip)
 
-## Pamasangan
+## Pamasangan {#installation}
 
 1. Unggah berkas addon ka diréktori `/wp-content/plugins/` anjeun
 2. Aktipkeun plugin ngaliwatan ménu 'Plugins' dina WordPress
 3. Konpigurasikeun setélan addon dina admin jaringan
 
-## Pamekaran
+## Pamekaran {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktur Proyék
+### Struktur Proyék {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Aturan modernisasi kode
 ```
 
-### Pangujian
+### Pangujian {#testing}
 
 Addon ieu ngawengku kerangka pangujian anu komprehensif:
 
@@ -93,54 +93,54 @@ Addon ieu ngawengku kerangka pangujian anu komprehensif:
 - **Cakupan Tés**: Dikonpigurasikeun pikeun ngalacak cakupan kode
 - **Pangujian Multisite**: Tés dijalankeun dina lingkungan multisite
 
-### Standar Kode
+### Standar Kode {#code-standards}
 
 - **Standar Koding WordPress**: Ditegakeun ngaliwatan PHPCS
 - **Kasaluyuan PHP 7.4+**: Fitur PHP modéren dirojong
 - **Analisis Statis**: Integrasi PHPStan pikeun pamariksaan tipe
 - **Modernisasi Kode**: Aturan Rector pikeun paningkatan PHP
 
-### Sistem Build
+### Sistem Build {#build-system}
 
 - **Pamrosésan Aset**: Minifikasi pikeun berkas CSS/JS
 - **Tarjamahan**: Nyieun berkas POT
 - **Pangemasan**: Nyieun arsip pikeun distribusi
 - **Mode Pamekaran**: Aset henteu diminifikasi pikeun debugging
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Addon ieu ngarojong rupa-rupa pilihan konfigurasi anu bisa diaksés ngaliwatan antarmuka admin jaringan.
 
-### Konfigurasi tenant daulat
+### Konfigurasi tenant daulat {#sovereign-tenant-configuration}
 
 Pikeun tenant daulat, konpigurasikeun basis data tenant, root sistem berkas, patalian host basis data, jeung kamampuhan host saméméh ngarutekan lalu lintas ka tenant. Jalankeun vérifikasi migrasi sanggeus unggal parobahan anu mangaruhan kredensial basis data, patalian host, routing, atawa provisioning pamaké.
 
 Paké `localhost` ngan lamun runtime tenant jeung grant basis data ngarepkeun aksés socket lokal atawa mesin-sarua. Paké `127.0.0.1` atawa hostname jasa lamun éta téh host grant anu dikonpigurasikeun ku panyadia anjeun.
 
-### Kamampuhan Hostinger
+### Kamampuhan Hostinger {#hostinger-capability}
 
 Kamampuhan multi-tenancy Hostinger jalan jeung token integrasi Hostinger babarengan. Pastikeun domain aya dina hPanel, DNS nunjuk ka Account Hostinger, jeung setélan basis data tenant cocog jeung hPanel saméméh vérifikasi.
 
-## Hook jeung Filter
+## Hook jeung Filter {#hooks-and-filters}
 
-### Action
+### Action {#actions}
 
 - `ultimate-multisite-addon-template_init` - Dipicu sanggeus inisialisasi addon
 - `ultimate-multisite-addon-template_loaded` - Dipicu sanggeus sakabéh berkas addon dimuat
 
-### Filter
+### Filter {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Robah setélan addon
 - `ultimate-multisite-addon-template_enabled` - Override status enable/disable addon
 
-## Lisénsi
+## Lisénsi {#license}
 
 Addon ieu dilisénsikeun dina GPL v3 atawa leuwih anyar.
 
-## Pangrojong
+## Pangrojong {#support}
 
 Pikeun pangrojong jeung dokuméntasi, buka [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.2.0 (2026-06-03): nambahkeun autologin tenant tanpa status, kamampuhan multi-tenancy Hostinger, isolasi basis data jeung sistem berkas per-subsitus, gerbang vérifikasi migrasi daulat, pangaronjat bootstrap tenant/panulis basis data, patalian host MySQL anu bisa dikonfigurasi, jeung teardown daulat anu leuwih aman.
 

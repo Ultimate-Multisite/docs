@@ -3,9 +3,9 @@ title: Nota Keluaran
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Nota Keluaran
+# Nota Keluaran {#release-notes}
 
-## Versi 2.13.0 — Dikeluarkan pada 2026-06-05
+## Versi 2.13.0 — Dikeluarkan pada 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Baharu: Menambah sokongan penyewa berdaulat untuk aliran Account pelanggan, checkout, pengebilan, tapak, invois, pertukaran templat, dan pemetaan domain supaya rangkaian penyewa boleh mengarahkan pelanggan kembali ke tapak utama untuk tindakan terurus.
 - Baharu: Menambah semakan kelayakan pembaharuan untuk keahlian berulang supaya gateway boleh melumpuhkan pembaharuan automatik apabila perjanjian pengebilan tersimpan, langganan, atau token vault tiada.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Baiki: Pembaharuan keahlian, paparan tamat tempoh, dan kes pinggir kutipan bayaran kini mengelakkan tamat tempoh serta-merta, ranap, atau bayaran wajib yang terlepas.
 - Dipertingkat: Keserasian WordPress diuji sehingga 7.0, aset Vue produksi dibina semula daripada sumber npm, dan liputan hujung-ke-hujung Cypress kini menguji lebih banyak aliran checkout, persediaan, SSO, dan gateway.
 
-## Versi 2.12.0 — Dikeluarkan pada 2026-05-15
+## Versi 2.12.0 — Dikeluarkan pada 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Baharu: Menambah Hostinger (hPanel) sebagai penyedia host yang disokong dengan integrasi pemetaan domain
 - Baharu: Site Exporter kini mengendalikan berkas import rangkaian untuk pemulihan tapak seluruh rangkaian yang diperkemas
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Baiki: CLI Site Exporter kini mengekalkan pemilihan tapak rangkaian lalai yang betul
 - Dipertingkat: Mengalih keluar wp-cli yang dibundel daripada pakej plugin, mengurangkan saiz plugin
 
-## Versi 2.11.0 — Dikeluarkan pada 2026-05-11
+## Versi 2.11.0 — Dikeluarkan pada 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Baharu: Eksport tapak kini membundel `index.php` yang boleh but sendiri supaya ZIP boleh dipasang pada host baharu tanpa pemasangan plugin berasingan.
 - Baharu: Eksport rangkaian membolehkan pentadbir mengeksport semua subtapak dalam satu arkib daripada halaman pentadbir Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Baharu: Editor borang checkout memberi amaran apabila produk ditambah tanpa medan wajib dikonfigurasikan.
 - Baharu: Tab tetapan Import/Export kini menerangkan skopnya dengan jelas dan memaut terus ke alat Site Export.
 
-## Versi 2.10.0 — Dikeluarkan pada 2026-05-05
+## Versi 2.10.0 — Dikeluarkan pada 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Baharu: Wizard persediaan berpandu PayPal untuk kemasukan kelayakan manual dengan gerbang bendera OAuth untuk konfigurasi gateway yang lancar.
 - Baharu: Panel pelanggan pertukaran templat direka bentuk semula dengan kad templat semasa, grid berterusan, dan butang **Tetapkan semula templat semasa**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Baiki: Laluan SSO ditapis dihormati merentas semua aliran log masuk.
 - Baiki: Pilihan identiti tapak kosong dikekalkan semasa simpan.
 
-## Versi 2.9.0 — Dikeluarkan pada 2026-04-30
+## Versi 2.9.0 — Dikeluarkan pada 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Baharu: Eksport dan import tapak tunggal ditambah di bawah **Tools > Export & Import**.
 - Baiki: Fail ZIP eksport kini disajikan melalui endpoint muat turun yang disahkan.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Baiki: ID lawatan dinormalkan kepada garis bawah dalam kunci tetapan pengguna.
 - Dipertingkat: ZipArchive kini digunakan dan bukannya Alchemy/Zippy untuk keserasian yang lebih baik.
 
-## Versi 2.8.0 — Dikeluarkan pada 2026-04-29
+## Versi 2.8.0 — Dikeluarkan pada 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Baharu: Toggle Enable Jumper ditambah pada UI tetapan Other Options.
 - Baharu: Lajur status ditambah pada jadual senarai borang checkout.

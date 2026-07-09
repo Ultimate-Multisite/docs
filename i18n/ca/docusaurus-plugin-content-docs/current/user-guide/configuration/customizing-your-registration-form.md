@@ -3,13 +3,13 @@ title: Personalització del vostre formulari de registre
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalització del vostre formulari de registre
+# Personalització del vostre formulari de registre {#customizing-your-registration-form}
 
 Per fer que la vostra xarxa tingui un aspecte únic respecte de tots els altres SaaS creats sobre la plataforma WordPress, Ultimate Multisite us permet personalitzar les vostres pàgines de registre i d’inici de sessió amb la nostra funcionalitat **Formularis de checkout**.
 
 Tot i que són una manera fàcil i flexible d’experimentar amb diferents enfocaments quan intenteu convertir nous clients, s’utilitzen principalment per crear formularis de registre personalitzats. Aquest article té com a objectiu mostrar-vos com ho podeu fer.
 
-## Pàgines d’inici de sessió i de registre:
+## Pàgines d’inici de sessió i de registre: {#login-and-registration-pages}
 
 En instal·lar Ultimate Multisite, crea automàticament pàgines d’inici de sessió i de registre personalitzades al vostre lloc principal. Podeu canviar aquestes pàgines predeterminades en qualsevol moment anant a la pàgina **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Ara, vegem altres opcions que encara són rellevants per al procés d’inici de
 
 I aquestes són totes les opcions relacionades amb l’inici de sessió i el registre que podeu personalitzar! No oblideu desar la configuració després d’acabar d’editar-la.
 
-## Ús de diversos formularis de registre:
+## Ús de diversos formularis de registre: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 ofereix un editor de formularis de checkout que us permet crear tants formularis com vulgueu, amb diferents camps, productes en oferta, etc.
 
@@ -69,7 +69,7 @@ Alternativament, podeu editar o duplicar els formularis que ja teniu fent clic a
 
 Si seleccioneu un sol pas o diversos passos, el formulari de checkout ja estarà preomplert amb els passos bàsics perquè funcioni. Després, si voleu, podeu afegir-hi passos addicionals.
 
-### Edició d’un formulari de checkout:
+### Edició d’un formulari de checkout: {#editing-a-checkout-form}
 
 Com hem esmentat abans, podeu crear formularis de checkout per a diferents finalitats. En aquest exemple treballarem en un formulari de registre.
 
@@ -131,11 +131,11 @@ Per obtenir el shortcode del teu formulari, fes clic a **Genera shortcode** i co
 
 _**Nota:** Hauràs d’afegir aquest shortcode a la teva pàgina de registre per tal que aquest formulari de checkout s’hi afegeixi._
 
-## Preselecció de productes i plantilles mitjançant paràmetres d’URL:
+## Preselecció de productes i plantilles mitjançant paràmetres d’URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Si vols crear taules de preus personalitzades per als teus productes i preseleccionar al formulari de checkout el producte o la plantilla que el teu client triï des de la teva taula de preus o pàgina de plantilles, pots utilitzar paràmetres d’URL per fer-ho.
 
-### **Per als plans:**
+### **Per als plans:** {#for-plans}
 
 Ves a **Ultimate Multisite > Productes > Selecciona un pla**. Hauries de veure el botó **Fes clic per copiar l’enllaç compartible** a la part superior de la pàgina. Aquest és l’enllaç que pots utilitzar per preseleccionar aquest pla específic al teu formulari de checkout.
 
@@ -143,7 +143,7 @@ Ves a **Ultimate Multisite > Productes > Selecciona un pla**. Hauries de veure e
 
 Tingues en compte que aquest enllaç compartible només és vàlid per als **Plans**. No pots utilitzar enllaços compartibles per a paquets o serveis.
 
-### Per a les plantilles:
+### Per a les plantilles: {#for-templates}
 
 Si vols preseleccionar plantilles de lloc al teu formulari de checkout, pots utilitzar el paràmetre: **?template_id=X** a l’URL de la teva pàgina de registre. La "X" s’ha de substituir pel **número d’ID de la plantilla de lloc**. Per obtenir aquest número, ves a **Ultimate Multisite > Llocs**.
 

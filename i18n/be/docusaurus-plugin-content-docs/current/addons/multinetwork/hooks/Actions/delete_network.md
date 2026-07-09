@@ -4,19 +4,19 @@ title: Дзейніца - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Дзея: delete_network
+# Дзея: delete_network {#action-deletenetwork}
 
 Выклікаецца пасля выдалення сеткі.
 
-## Параметры
+## Параметры {#parameters}
 
 | Назва | Тып | Апісан |
 |------|------|-------------|
 | $network | `\WP_Network` | Объект выдаленай сеткі. |
 
-### З версіі
+### З версіі {#since}
 
 - 1.3.0
-### Выказчык
+### Выказчык {#source}
 
 Вызначаны ў [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1494) на 1494-й кропцы

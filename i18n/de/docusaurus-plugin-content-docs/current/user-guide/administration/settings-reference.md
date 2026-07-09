@@ -3,11 +3,11 @@ title: Einstellungsreferenz
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Einstellungen-Referenz
+# Einstellungen-Referenz {#settings-reference}
 
 Diese Seite erfasst Einstellungen, die die tägliche Administration und jüngste Verhaltensänderungen in Ultimate Multisite betreffen.
 
-## Weitere Optionen
+## Weitere Optionen {#other-options}
 
 Der Bereich **Weitere Optionen** erscheint unter **Ultimate Multisite > Einstellungen > Anmeldung & Registrierung**.
 
@@ -15,23 +15,23 @@ Der Bereich **Weitere Optionen** erscheint unter **Ultimate Multisite > Einstell
 |---|---|
 | **Jumper aktivieren** | Zeigt das Jumper-Schnellnavigationstool im Admin-Bereich an. Verwenden Sie es, um direkt zu Ultimate Multisite-Bildschirmen, Netzwerkobjekten und unterstützten Admin-Zielen zu springen. Deaktivieren Sie es, wenn Sie diese Verknüpfung nicht sichtbar haben möchten. |
 
-## Fehlerberichterstattung und Telemetrie
+## Fehlerberichterstattung und Telemetrie {#error-reporting-and-telemetry}
 
 Die frühere Opt-in-Einstellung für Fehlerberichterstattung wurde von der Einstellungsseite entfernt. Anonyme Telemetrie ist deaktiviert, und es gibt keinen UI-Schalter, um sie zu aktivieren.
 
 Wenn Sie interne Runbooks oder Screenshots für die Einstellungsseite pflegen, entfernen Sie Verweise auf das alte Opt-in-Feld für Fehlerberichterstattung, damit Administratoren nicht nach einer Einstellung suchen, die nicht mehr vorhanden ist.
 
-## Import/Export-Einstellungen
+## Import/Export-Einstellungen {#importexport-settings}
 
 Der Tab **Import/Export**-Einstellungen beschreibt, welche Einstellungen er steuert, und verlinkt direkt zu **Ultimate Multisite > Website-Export** für Website- und Netzwerkarchive. Verwenden Sie den Einstellungstab für die Import/Export-Konfiguration, **Werkzeuge > Export & Import** für den Export/Import-Workflow einer einzelnen Website und das Website-Export-Tool, wenn Sie ein vollständiges Netzwerk-Exportarchiv benötigen.
 
-## Domain Seller HostAfrica-Saldenwarnung
+## Domain Seller HostAfrica-Saldenwarnung {#domain-seller-hostafrica-balance-warning}
 
 Wenn das Domain Seller-Addon mit HostAfrica verbunden ist, sehen Netzwerkadministratoren jetzt eine ausblendbare Warnung bei niedrigem Saldo, wenn der Saldo des Reseller-Accounts zu niedrig für eine zuverlässige Domain-Registrierung oder Verlängerungsverarbeitung ist.
 
 Behandeln Sie diesen Hinweis als betriebliche Warnung: Laden Sie den HostAfrica-Reseller-Saldo auf, bevor Sie weitere bezahlte Domain-Registrierungen annehmen, und kehren Sie dann zu den Domain Seller-Einstellungen oder dem Domain-Überwachungsbildschirm zurück, um zu bestätigen, dass Registrierungen und Verlängerungen normal fortgesetzt werden können.
 
-## Einstellungen für AI-Anbieter-Connectoren
+## Einstellungen für AI-Anbieter-Connectoren {#ai-provider-connector-settings}
 
 Einstellungen für AI-Anbieter-Connectoren zeigen jetzt nur noch die unterstützten OAuth-Account-Pools an:
 

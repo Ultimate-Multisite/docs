@@ -3,7 +3,7 @@ title: AffiliateWP Catetan Parobahan
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Catetan Parobahan AffiliateWP
+# Catetan Parobahan AffiliateWP {#affiliatewp-changelog}
 
 Vérsi: 2.0.1 - Dirilis dina 2025-09-28
 

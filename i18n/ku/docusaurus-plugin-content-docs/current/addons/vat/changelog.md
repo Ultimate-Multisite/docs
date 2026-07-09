@@ -3,7 +3,7 @@ title: Tomara guhertinên VATê
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Guhertinên VAT
+# Guhertinên VAT {#vat-changelog}
 
 Guherto 1.0.7 - Di 2026-02-03 de hate berdan
 

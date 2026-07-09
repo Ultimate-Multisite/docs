@@ -3,11 +3,11 @@ title: Kachaj prompt ki konsyan de founisè a
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Kach Prompt ki Konsyan de Provider
+# Kach Prompt ki Konsyan de Provider {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 prezante **kach prompt ki konsyan de provider**, ki optimize depans API ak latans lè li mete prompt yo an kach atravè diferan provider LLM. Chak provider gen mekanis ak konfigirasyon kach diferan.
 
-## Apèsi
+## Apèsi {#overview}
 
 Kach prompt pèmèt ou:
 
@@ -23,11 +23,11 @@ Diferan provider aplike kach yon fason diferan:
 - **OpenRouter**: Kach espesifik pou provider
 - **Vertex Anthropic**: Kach prompt ak kontwòl kach
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini bay jesyon kach klè atravè `cachedContents` API.
 
-### Konfigirasyon
+### Konfigirasyon {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Kreye yon Prompt ki an Kach
+### Kreye yon Prompt ki an Kach {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Itilize yon Prompt ki an Kach
+### Itilize yon Prompt ki an Kach {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Sik Lavi Kach
+### Sik Lavi Kach {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Pi Bon Pratik pou Gemini
+### Pi Bon Pratik pou Gemini {#best-practices-for-gemini}
 
 - **Mete TTL ki apwopriye**: Balanse ekonomi depans ak kach ki ka vin demode
 - **Mete system prompts an kach**: Reyitilize menm system prompt la atravè demann yo
 - **Siveye itilizasyon kach**: Swiv ki kach yo itilize plis
 - **Netwaye kach ki ekspire**: Efase kach ki pa itilize yo detanzantan
 
-## Azure OpenAI: Kach Prompt
+## Azure OpenAI: Kach Prompt {#azure-openai-prompt-caching}
 
 Azure OpenAI sipòte kach prompt ak jesyon TTL otomatik.
 
-### Konfigirasyon
+### Konfigirasyon {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Aktive Kach
+### Aktive Kach {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Header Kach
+### Header Kach {#cache-headers}
 
 Azure OpenAI itilize header HTTP pou kontwòl kach:
 
@@ -152,7 +152,7 @@ Valè ki sipòte yo:
 - `no_cache`: Pa mete demann sa a an kach
 - `no_store`: Pa mete an kach epi pa reyitilize
 
-### Siveye Itilizasyon Kach
+### Siveye Itilizasyon Kach {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Pi Bon Pratik pou Azure OpenAI
+### Pi Bon Pratik pou Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Itilize prompt ki konsistan**: Prompt ki idantik benefisye de kach
 - **Mete TTL ki rezonab**: Balanse depans ak frechè
 - **Siveye metrik kach**: Swiv kreyasyon kach kont hits
 - **Gwoupe demann ki sanble**: Gwoupe demann yo pou maksimize hits kach
 
-## OpenRouter: Kach Espesifik pou Provider
+## OpenRouter: Kach Espesifik pou Provider {#openrouter-provider-specific-caching}
 
 OpenRouter sipòte kach atravè provider ki anba yo (OpenAI, Anthropic, elatriye).
 
-### Konfigirasyon
+### Konfigirasyon {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Itilize Kach OpenRouter
+### Itilize Kach OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Opsyon Espesifik pou Provider
+### Opsyon Espesifik pou Provider {#provider-specific-options}
 
 Diferan provider gen mekanis kach diferan:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Pi Bon Pratik pou OpenRouter
+### Pi Bon Pratik pou OpenRouter {#best-practices-for-openrouter}
 
 - **Konnen kach provider ou a**: Chak provider gen mekanis diferan
 - **Teste konpòtman kach**: Verifye kach la mache ak provider ou chwazi a
 - **Siveye depans yo**: Swiv ekonomi ki soti nan kach
 - **Itilize modèl ki konsistan**: Chanje modèl kraze hits kach yo
 
-## Vertex Anthropic: Kach Prompt ak Kontwòl Kach
+## Vertex Anthropic: Kach Prompt ak Kontwòl Kach {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) sipòte kach prompt ak kontwòl kach klè.
 
-### Konfigirasyon
+### Konfigirasyon {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Sèvi ak Vertex Anthropic Caching
+### Sèvi ak Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Kalite Kontwòl Cache
+### Kalite Kontwòl Cache {#cache-control-types}
 
 - **ephemeral**: Cache pou dire demann nan (default)
 - **persistent**: Cache atravè plizyè demann (si li sipòte)
 
-### Siveyans Itilizasyon Cache
+### Siveyans Itilizasyon Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Pi Bon Pratik pou Vertex Anthropic
+### Pi Bon Pratik pou Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Sèvi ak caching ephemeral**: Bon pou caching nan yon sèl sesyon
 - **Mete max_tokens jan sa apwopriye**: Balanse gwosè cache ak pri
 - **Siveye metrik cache yo**: Swiv efikasite cache la
 - **Teste ak chaj travay ou**: Verifye caching bay avantaj pou ka itilizasyon ou
 
-## Estrateji Caching Ant Founisè
+## Estrateji Caching Ant Founisè {#cross-provider-caching-strategy}
 
-### Konfigirasyon Inifye
+### Konfigirasyon Inifye {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Deteksyon Founisè
+### Deteksyon Founisè {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Estrateji Fallback
+### Estrateji Fallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Optimizasyon Pri
+## Optimizasyon Pri {#cost-optimization}
 
-### Kalkile Ekonomi
+### Kalkile Ekonomi {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Konsèy Optimizasyon
+### Konsèy Optimizasyon {#optimization-tips}
 
 - **Cache gwo system prompts**: Pi gwo ekonomi pri
 - **Reitilize kontèks**: Cache dokiman kontèks yo itilize souvan
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Siveye efikasite cache la**: Swiv ekonomi reyèl yo
 - **Ajiste TTL**: Balanse pri ak fraîcheur
 
-## Depanaj
+## Depanaj {#troubleshooting}
 
-### Cache pa itilize
+### Cache pa itilize {#cache-not-being-used}
 
 - Verifye caching aktive nan konfigirasyon an
 - Tcheke prompts yo idantik (caching mande korespondans egzak)
 - Verifye cache la pa ekspire
 - Tcheke limit cache espesifik pou founisè a
 
-### Kreyasyon cache ap echwe
+### Kreyasyon cache ap echwe {#cache-creation-failing}
 
 - Verifye gwosè cache la nan limit founisè a
 - Tcheke sentaks kontwòl cache la kòrèk
 - Asire founisè a sipòte caching pou modèl ou a
 - Revize dokimantasyon founisè a pou limit yo
 
-### Pri inatandi
+### Pri inatandi {#unexpected-costs}
 
 - Siveye kreyasyon cache kont cache read tokens
 - Verifye cache la vrèman ap itilize
 - Tcheke pou cache misses akòz varyasyon nan prompt yo
 - Konsidere ajiste TTL oswa estrateji cache
 
-## Konparezon Founisè
+## Konparezon Founisè {#provider-comparison}
 
 | Fonksyonalite | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Rediksyon pri | 90% | 90% | Depann de founisè | 90% |
 | Siveyans | Detaye | Atravè metrik | Depann de founisè | Atravè itilizasyon |
 
-## Pwochen Etap yo
+## Pwochen Etap yo {#next-steps}
 
 1. **Chwazi founisè ou**: Chwazi selon bezwen ou yo
 2. **Konfigire caching**: Mete caching espesifik pou founisè a an plas

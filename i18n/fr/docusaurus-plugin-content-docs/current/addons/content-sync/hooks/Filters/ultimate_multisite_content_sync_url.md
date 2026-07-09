@@ -4,24 +4,24 @@ title: Filtre - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# Filtre: ultimate_multisite_content_sync_url
+# Filtre: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
 
 Permet aux développeurs de gérer le chemin relatif vers la racine du plugin.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $dir | `string` | Chemin relatif à la racine du plugin que vous souhaitez accéder. |
 
-### Depuis
+### Depuis {#since}
 
 - 1.0.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L52) à la ligne 52
 
-## Retour
+## Retour {#returns}
 
 Chemin relatif à la racine du plugin.

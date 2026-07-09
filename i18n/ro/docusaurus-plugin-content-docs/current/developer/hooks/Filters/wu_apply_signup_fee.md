@@ -4,11 +4,11 @@ title: Filtru - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filtru: wu_apply_signup_fee
+# Filtru: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Determină dacă taxele de înscriere trebuie aplicate sau nu.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Determină dacă taxele de înscriere trebuie aplicate sau nu.
 | $product | `object` | Obiectul nivelului de membru. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Obiectul de înregistrare. |
 
-### De la versiunea
+### De la versiunea {#since}
 
 - 3.1
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) la linia 1769

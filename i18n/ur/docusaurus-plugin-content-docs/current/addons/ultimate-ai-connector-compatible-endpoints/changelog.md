@@ -3,9 +3,9 @@ title: Ultimate AI Connector for Compatible Endpoints کا Changelog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints کی تبدیلیوں کی فہرست (Changelog)
+# Ultimate AI Connector for Compatible Endpoints کی تبدیلیوں کی فہرست (Changelog) {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## ورژن 2.0.0 — جاری کیا گیا: 2026-04-24
+## ورژن 2.0.0 — جاری کیا گیا: 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * **نیا:** کثیر فراہم کنندہ سپورٹ (Multi-provider support) — اب آپ ایک سے زیادہ AI اینڈ پوائنٹس کو ترتیب دے سکتے ہیں اور درخواستوں کو فراہم کنندہ کے درمیان خودکار طریقے سے بھیجنے (automatic fallback) کا انتظام کر سکتے ہیں۔
 * **درست کیا گیا:** ہر فراہم کنندہ کے لیے صحیح فراہم کنندہ IDs، رجسٹریشن URLs، اور HTTP فلٹر کی دائرہ کار (scoping) کے ساتھ کثیر فراہم کنندہ SDK کا انضمام (integration) کیا گیا ہے۔
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * **درست کیا گیا:** ایک بلاک کرنے والی HTTP درخواست کو ختم کیا گیا جو ہر پیج لوڈ پر چل رہی تھی۔
 * **بہتر کیا گیا:** GitHub Actions ورک فلو کو Node.js 24 تک اپ گریڈ کیا گیا ہے۔
 
-## ورژن 1.0.0 — ابتدائی ریلیز
+## ورژن 1.0.0 — ابتدائی ریلیز {#version-100--initial-release}

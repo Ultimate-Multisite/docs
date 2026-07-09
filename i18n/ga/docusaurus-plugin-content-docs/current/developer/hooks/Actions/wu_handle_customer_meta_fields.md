@@ -4,11 +4,11 @@ title: Gníomh - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Gníomh: wu_handle_customer_meta_fields
+# Gníomh: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Lig d’fhorbróirí breiseán meiteashonraí a shábháil ar bhealaí éagsúla más gá dóibh.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Lig d’fhorbróirí breiseán meiteashonraí a shábháil ar bhealaí éagsúla
 | $customer | `\Customer` | Oibiacht custaiméara Ultimate Multisite. |
 | $checkout | `\Checkout` | An aicme seiceála amach. |
 
-### Ó
+### Ó {#since}
 
 - 2.0.0
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) ag líne 1211

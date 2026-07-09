@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# MailChimp
+# MailChimp {#mailchimp}
 
 Multisite Ultimate: Integració amb MailChimp
 
 Vincula la teva xarxa Multisite Ultimate a MailChimp. Pots vincular plans específics a les Llistes de MailChimp i afegir automàticament els subscriptors a aquestes llistes quan es registren.
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Carrega 'ultimate-multisite-mailchimp' al directori '/wp-content/plugins/'
 2. Activa el plugin des del menú 'Plugins' de l'Administració de la Xarxa de WordPress
 
-## Guia d'ús
+## Guia d'ús {#usage-guide}
 
 Sincronitzar els correus electrònics dels subscriptors amb les teves llistes de MailChimp és molt fàcil amb el nostre Add-on d'Integració Ultimate Multisite: MailChimp. Aquest tutorial et ajudarà a configurar-ho tot!
 
-## Obtenció d'una clau API
+## Obtenció d'una clau API {#getting-an-api-key}
 
 Abans de començar a veure les diferents configuracions disponibles, necessitem una clau API de MailChimp. Això permetrà a Ultimate Multisite comunicar-se amb l'API de MailChimp per recuperar llistes, grups i afegir adreces de correu electrònic a aquestes llistes i grups quan els usuaris es registren.
 
@@ -32,7 +32,7 @@ Segueix aquest tutorial per obtenir la teva pròpia clau API de MailChimp: [Abou
 
 _Afegir la teva clau API de MailChimp a_ _**Configuració de Ultimate Multisite - > Configuració de l'Add-on -> MailChimp**_
 
-## Mode d'integració
+## Mode d'integració {#integration-mode}
 
 L'add-on d'Integració de MailChimp ofereix dos "modes d'integració", cosa que significa que hi ha dues maneres diferents de potre utilitzar l'add-on per sincronitzar adreces de correu electrònic.
 
@@ -40,7 +40,7 @@ L'add-on d'Integració de MailChimp ofereix dos "modes d'integració", cosa que 
 
 _Dos modes d'integració per a una flexibilitat més gran!_
 
-### Mode 1: Múltiples Llistes
+### Mode 1: Múltiples Llistes {#mode-1-multiple-lists}
 
 El mode per defecte utilitza **Múltiples Llistes**. Aquest mode et permet seleccionar múltiples llistes de MailChimp per a cada pla. És la millor opció si segmentes els teus usuaris en diferents llistes.
 
@@ -52,7 +52,7 @@ Per aconseguir-ho, pots utilitzar el mode de Múltiples Llistes per afegir les l
 
 _Selecciona les llistes per defecte per comptes nous i per comptes cancel·lats_
 
-### Mode 2: Llista única + Múltiples Grups
+### Mode 2: Llista única + Múltiples Grups {#mode-2-single-list--multiple-groups}
 
 MailChimp et permet segmentar la teva llista en grups més petits d'usuàri appellats **Grups**. Això et permet tenir més control, ja que pots enviar una campanya a un subconjunt específic dels teus subscriptors sense haver de crear múltiples còpies de la mateixa campanya a MailChimp (cosa que dificulta l'anàlisi de les mètriques d'aquesta campanya més tard).
 
@@ -62,13 +62,13 @@ Per exemple, pots tenir una llista única anomenada **Subscriptors de la meva Xa
 
 _Selecciona les llistes i grups per defecte, si utilitzes el mode d'integració "llista única + múltiples grups"_
 
-## Llistes i Grups per defecte
+## Llistes i Grups per defecte {#default-lists-and-groups}
 
 Després de seleccionar quin mode d'integració té més sentit per al teu cas d'ús concret, és hora de seleccionar les llistes (i grups, depenent del mode) per defecte. La llista per defecte es trigarà quan un pla concret no té una Llista específica seleccionada.
 
 També pots seleccionar la llista per defecte per comptes cancel·lats. Quan un usuari termini la seva subscripció i elimini el seu compte de la teva xarxa, la seva adreça de correu electrònic es trencarà a la llista configurada per comptes cancel·lats.
 
-## Activar la Subscripció Dupla
+## Activar la Subscripció Dupla {#enabling-double-subscription}
 
 A la mateixa pàgina de configuració, podràs activar la **Subscripció Dupla**. Aquesta opció afegirà l'usuari tant a la llista per defecte seleccionada COM A a la llista seleccionada per al pla de l'usuari. Si aquesta opció no està activada, l'usuari només s'afegirà a la llista seleccionada per al pla. Si no hi ha cap llista configurada per aquest pla en particular, l'usuari s'afegirà a la llista per defecte seleccionada.
 
@@ -76,7 +76,7 @@ A la mateixa pàgina de configuració, podràs activar la **Subscripció Dupla**
 
 _Pots tenir els teus usuaris subscriptos tant a la llista per defecte com a la llista del pla al registrar-se_
 
-## Seleccionar Llistes i Grups per cada pla
+## Seleccionar Llistes i Grups per cada pla {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Veu a **Plans** i selecciona el pla que vols editar. Nota que a la meta-caja **Opcions avançades** hi haurà una nova pestanya anomenada MailChimp.
 

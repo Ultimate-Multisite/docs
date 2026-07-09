@@ -3,11 +3,11 @@ title: Referência de configurações
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referência de configurações
+# Referência de configurações {#settings-reference}
 
 Esta página acompanha configurações que afetam a administração diária e mudanças recentes de comportamento no Ultimate Multisite.
 
-## Outras opções
+## Outras opções {#other-options}
 
 A área **Outras opções** aparece em **Ultimate Multisite > Configurações > Login e cadastro**.
 
@@ -15,23 +15,23 @@ A área **Outras opções** aparece em **Ultimate Multisite > Configurações > 
 |---|---|
 | **Enable Jumper** | Mostra a ferramenta de navegação rápida Jumper na área de administração. Use-a para ir diretamente para telas do Ultimate Multisite, objetos de rede e destinos de administração compatíveis. Desative-a se você não quiser que este atalho fique visível. |
 
-## Relatório de erros e telemetria
+## Relatório de erros e telemetria {#error-reporting-and-telemetry}
 
 A configuração anterior de adesão ao relatório de erros foi removida da página de configurações. A telemetria anônima está desativada e não há alternância na UI para ativá-la.
 
 Se você mantém runbooks internos ou capturas de tela para a página de configurações, remova referências ao antigo campo de adesão ao relatório de erros para que os administradores não procurem uma configuração que não está mais presente.
 
-## Configurações de importação/exportação
+## Configurações de importação/exportação {#importexport-settings}
 
 A aba de configurações **Importação/Exportação** descreve quais configurações ela controla e vincula diretamente a **Ultimate Multisite > Exportação de site** para arquivos de site e rede. Use a aba de configurações para configuração de importação/exportação, use **Ferramentas > Exportar e importar** para o fluxo de trabalho de exportação/importação de site único e use a ferramenta Site Export quando precisar de um arquivo completo de Network Export.
 
-## Aviso de saldo do Domain Seller HostAfrica
+## Aviso de saldo do Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Quando o addon Domain Seller está conectado à HostAfrica, os administradores de rede agora veem um aviso dispensável de saldo baixo quando o saldo da conta de revendedor está baixo demais para o processamento confiável de registro ou renovação de domínios.
 
 Trate este aviso como um alerta operacional: recarregue o saldo de revendedor da HostAfrica antes de aceitar mais registros de domínios pagos e, em seguida, retorne às configurações do Domain Seller ou à tela de monitoramento de domínios para confirmar que registros e renovações podem continuar normalmente.
 
-## Configurações do conector de provedor de AI
+## Configurações do conector de provedor de AI {#ai-provider-connector-settings}
 
 As configurações do conector de provedor de AI agora expõem apenas os pools de Account OAuth compatíveis:
 

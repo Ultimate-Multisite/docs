@@ -4,11 +4,11 @@ title: පෙරහන - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item
+# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 ඉල්ලීම සමඟ ඉදිරියට යාමට අවසරද නැද්ද යන්න filter කරයි.
 
-## පරාමිතීන්
+## පරාමිතීන් {#parameters}
 
 | නම | වර්ගය | විස්තරය |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 | $rest_base | `array` | entity slug. |
 | $this | `\Base_Manager` | object instance එක. |
 
-### සිට
+### සිට {#since}
 
 - 2.0.0
-### මූලාශ්‍රය
+### මූලාශ්‍රය {#source}
 
 440 වන පේළියේ [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) තුළ අර්ථ දක්වා ඇත.

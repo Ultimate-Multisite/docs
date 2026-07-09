@@ -3,15 +3,15 @@ title: Logo-SVG generéieren
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG generéieren
+# Logo SVG generéieren {#generate-logo-svg}
 
 D'Fäegkeet **Generate Logo SVG** erlaabt dem Theme Builder, personaliséiert Logo-SVGs direkt an deng WordPress-Säit ze erstellen an anzebetten, mat automatescher namespace-sécherer Sanitiséierung.
 
-## Iwwersiicht
+## Iwwersiicht {#overview}
 
 Dës Fäegkeet generéiert skaléierbar Vektorgrafiken (SVG) Logoen op Basis vun der Branding-Richtung an den Design-Virléiften vun denger Säit. Déi generéiert SVGs ginn automatesch sanitiséiert, fir sécherzestellen, datt se sécher fir d'Benotzung a WordPress sinn, wärend déi visuell Integritéit erhale bleift.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Parameter | Typ | Erfuerderlech | Beschreiwung |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Dës Fäegkeet generéiert skaléierbar Vektorgrafiken (SVG) Logoen op Basis vun
 | `height` | number | Nee | SVG-Héicht a Pixel (Standard: 200) |
 | `include_text` | boolean | Nee | Ob den Numm vun der Säit als Text am Logo enthale soll sinn (Standard: true) |
 
-## Ausgabformat
+## Ausgabformat {#output-format}
 
 D'Fäegkeet gëtt eng SVG-Zeecheketten mat folgender Struktur zeréck:
 
@@ -36,7 +36,7 @@ D'Fäegkeet gëtt eng SVG-Zeecheketten mat folgender Struktur zeréck:
 }
 ```
 
-## SVG-Sanitiséierungsverhalen
+## SVG-Sanitiséierungsverhalen {#svg-sanitisation-behaviour}
 
 Déi generéiert SVGs ginn enger automatescher namespace-sécherer Sanitiséierung ënnerzunn, fir:
 
@@ -48,7 +48,7 @@ Déi generéiert SVGs ginn enger automatescher namespace-sécherer Sanitiséieru
 
 Dëst stellt sécher, datt den SVG sécher direkt a WordPress agebett ka ginn, ouni zousätzlech Sanitiséierung ze erfuerderen.
 
-## Benotzungsbeispill
+## Benotzungsbeispill {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ D'Fäegkeet erstellt en SVG-Logo, deen:
 - Moderne Design-Prinzipie follegt
 - Automatesch sanitiséiert a prett fir d'Benotzung ass
 
-## Integratioun mam Theme Builder
+## Integratioun mam Theme Builder {#integration-with-theme-builder}
 
 Wann s du d'Design-Richtungs-Auswiel vum Theme Builder benotz, mécht d'Generate Logo SVG-Fäegkeet Folgendes:
 
@@ -71,21 +71,21 @@ Wann s du d'Design-Richtungs-Auswiel vum Theme Builder benotz, mécht d'Generate
 3. Bett de Logo automatesch an den Header-/Branding-Beräich vun denger Säit an
 4. Späichert den SVG als personaliséierte Logo an de WordPress-Medien
 
-## Bescht Praktiken
+## Bescht Praktiken {#best-practices}
 
 - **Gëff kloer Stil-Virléiften un** — beschreif den Design-Stil, deen s du wëlls (modern, classic, playful, asw.)
 - **Gëff Faarwen un** — enthale deng Markefaarwe fir Konsistenz
 - **Test d'Duerstellung** — iwwerpréif, ob de Logo iwwer verschidden Écransgréissten korrekt ugewise gëtt
 - **Personaliséier weider** — benotz d'Logo-Personaliséierungsinstrumenter vu WordPress, fir Gréisst a Placéierung unzepassen
 
-## Aschränkungen
+## Aschränkungen {#limitations}
 
 - SVG-Logoe ginn als statesch Grafike generéiert (net animéiert)
 - Komplex Logoen mat ville Elementer kënnen eng manuell Verfeinerung erfuerderen
 - Personaliséiert Schrëften ginn net ënnerstëtzt; Text benotzt Systemschrëften
 - Ganz grouss oder ganz kleng Dimensioune kënnen d'Qualitéit beaflossen
 
-## Verbonnen Fäegkeeten
+## Verbonnen Fäegkeeten {#related-abilities}
 
 - [Palette-Kontrast validéieren](./validate-palette-contrast.md) — Faarfkontrast fir Accessibilitéit iwwerpréiwen
 - [Menü erstellen](./create-menu.md) — Navigatiounsmenüe fir deng Säit erstellen

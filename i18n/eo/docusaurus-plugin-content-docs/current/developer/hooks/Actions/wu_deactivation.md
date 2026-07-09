@@ -4,13 +4,13 @@ title: Ago - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Ago: wu_deactivation
+# Ago: wu_deactivation {#action-wudeactivation}
 
 Lasas aliajn partojn de la plugin alkroĉi siajn rutinojn por malaktivigo
 
-### Ekde
+### Ekde {#since}
 
 - 1.9.6
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L116) ĉe linio 116

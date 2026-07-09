@@ -3,11 +3,11 @@ title: د ګمرکي Gateway پراختیا
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# د Custom Gateway جوړول
+# د Custom Gateway جوړول {#custom-gateway-development}
 
 تاسو کولی شئ د `Base_Gateway` کلاس په غځولو سره د تادیې دودیزې دروازې جوړې کړئ.
 
-## د Gateway کلاس
+## د Gateway کلاس {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway ثبت کړئ
+## Gateway ثبت کړئ {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## مهمې طریقې
+## مهمې طریقې {#key-methods}
 
 | طریقه | موخه |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | د بېرته ورکړې غوښتنې سمبالول |
 | `get_payment_methods()` | د یو پیرودونکي لپاره خوندي شوي د تادیې طریقې بېرته ورکول |
 
-## د تکراري غړیتوبونو لپاره د نوي کولو اعتبارلیکونه
+## د تکراري غړیتوبونو لپاره د نوي کولو اعتبارلیکونه {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 د gateway ادغامونو ته اجازه ورکوي چې راپور ورکړي ایا یو تکراري غړیتوب، مخکې له دې چې `auto_renew` خوندي شي، د بیا کارېدونکي نوي کولو اعتبارلیک لري که نه. `wu_membership_has_renewal_credential` هوک کړئ او بېرته ورکړئ:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 وروسته له دې چې نوی بیا کارېدونکی اعتبارلیک خوندي شي، د خپل gateway د بریالي بیا-اجازې جریان د یوې برخې په توګه د ورک اعتبارلیک نښه پاکه کړئ.
 
-## لارښوونې
+## لارښوونې {#tips}
 
 - د ناکامۍ پر مهال تل `WP_Error` بېرته ورکړئ، څو Ultimate Multisite د تېروتنې ښکاره کول سمبال کړي
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - د gateway-ځانګړي ثبتولو لپاره `wu_log_add()` وکاروئ
 
-## د AI connector provider وړتیاوې
+## د AI connector provider وړتیاوې {#ai-connector-provider-capabilities}
 
 دودیز ادغامونه چې د AI connector پر بنسټ عملیات رابولي، باید د Anthropic Max v1.3.0 لپاره له AI Provider سره معرفي شوي ملاتړ شوي OAuth provider ټولګې سره سمون ولري:
 

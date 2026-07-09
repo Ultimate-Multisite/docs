@@ -3,11 +3,11 @@ title: Utvikling av tilpasset betalingsgateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Utvikling av tilpasset gateway
+# Utvikling av tilpasset gateway {#custom-gateway-development}
 
 Du kan opprette tilpassede betalingsgateways ved å utvide klassen `Base_Gateway`.
 
-## Gateway-klasse
+## Gateway-klasse {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrer gatewayen
+## Registrer gatewayen {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Nøkkelmetoder
+## Nøkkelmetoder {#key-methods}
 
 | Metode | Formål |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Håndter refusjonsforespørsler |
 | `get_payment_methods()` | Returner lagrede betalingsmetoder for en kunde |
 
-## Fornyelseslegitimasjon for gjentakende medlemskap
+## Fornyelseslegitimasjon for gjentakende medlemskap {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 lar gateway-integrasjoner rapportere om et gjentakende medlemskap har en gjenbrukbar fornyelseslegitimasjon før `auto_renew` lagres. Hook `wu_membership_has_renewal_credential` og returner:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Fjern markøren for manglende legitimasjon som en del av gatewayens vellykkede nye autoriseringsflyt etter at en ny gjenbrukbar legitimasjon er lagret.
 
-## Tips
+## Tips {#tips}
 
 - Returner alltid `WP_Error` ved feil slik at Ultimate Multisite kan håndtere feilvisning
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Bruk `wu_log_add()` for gateway-spesifikk logging
 
-## Funksjoner for AI connector-leverandører
+## Funksjoner for AI connector-leverandører {#ai-connector-provider-capabilities}
 
 Tilpassede integrasjoner som kaller operasjoner støttet av AI connector, bør samsvare med det støttede settet av OAuth-leverandører introdusert med AI Provider for Anthropic Max v1.3.0:
 

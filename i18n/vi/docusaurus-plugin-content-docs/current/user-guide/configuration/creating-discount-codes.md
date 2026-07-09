@@ -3,13 +3,13 @@ title: Tạo mã giảm giá
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Tạo mã giảm giá (v2)
+# Tạo mã giảm giá (v2) {#creating-discount-codes-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
 Với Ultimate Multisite, bạn có thể tạo mã giảm giá để giảm giá cho khách hàng của mình trên các gói đăng ký của họ. Và việc tạo chúng rất dễ dàng!
 
-## Tạo và chỉnh sửa mã giảm giá
+## Tạo và chỉnh sửa mã giảm giá {#creating-and-editing-discount-codes}
 
 Để tạo hoặc chỉnh sửa mã giảm giá, hãy đi tới **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Phiếu giảm giá hiện đã có trong danh sách của bạn và từ đó, 
 
 ###
 
-### Sử dụng tham số URL:
+### Sử dụng tham số URL: {#using-url-parameters}
 
 Nếu bạn muốn tùy chỉnh bảng giá hoặc xây dựng một trang mã phiếu giảm giá đẹp cho website của mình và muốn tự động áp dụng mã giảm giá vào biểu mẫu thanh toán, bạn có thể thực hiện việc này thông qua tham số URL.
 

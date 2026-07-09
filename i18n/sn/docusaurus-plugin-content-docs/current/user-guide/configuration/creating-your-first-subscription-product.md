@@ -3,13 +3,13 @@ title: Kugadzira Upfungudzi Wako WoMweya
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kuita Product Yako Rako Chinhu Chako (v2)
+# Kuita Product Yako Rako Chinhu Chako (v2) {#creating-your-first-subscription-product-v2}
 
 _**CHINHU CHINHU: Iriro iyi ndiyo kunoita Ultimate Multisite version 2.x chete. Kana uchiti iri version 1.x,**_ **_ _ _ta uri muiro article iyu._**
 
 Kuti uanze kuenda nemapurojekiti yako uye uanze kuenda kuita zvinhodi kwako kune vanhu vachiri kuti vashandise zvinhodi dzako, unofanira kuva nechinangwa cheduku. Ndiri kuita iwo purojekiti sei? Kuona nzira dzinogona dzinogara? Mu article iyi, tichakwanisa kuona zvose zvinodzidzwa nezvepurojekiti.
 
-## Chinhu Chepurojekiti (Product Type)
+## Chinhu Chepurojekiti (Product Type) {#product-type}
 
 Ndiri Ultimate Multisite unogona kuita purojekiti mazuva maviri kune vanhu vachiri kuti vashandise: **plans** uye **add-ons (Order Bump)**. Add-ons dzinogone kuva mazuva maviri: **packages** uye **services**. Tichakwanisa kuona zvinhu zvinodzidzwa nezvinhu zvine kuratidzo zvinotevera pangu.
 
@@ -23,7 +23,7 @@ Nheki iyi ichakubatsira kuona zvakanaka iwe nezvechinhu chinotevera kwazvo mu Ul
 
 ![Products list page](/img/config/products-list.png)
 
-## Kuenzanisa Products (Adding Products)
+## Kuenzanisa Products (Adding Products) {#managing-products}
 
 Kana uri kuenzanisa plan, package, kana service yakagadzirwa, unogona kuitira iye kupi **Ultimate Multisite > Products > Add Product**.
 
@@ -33,13 +33,13 @@ Mhando inotevera inoratidza mabhara maviri makakosha. Pamakore, pane tabu dzakaw
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Description (Chinyorwa)
+### Description (Chinyorwa) {#adding-products}
 
 Mabhari ekurisa product anogona kuenzwa nekubuda zvinangwa reproduct uye chinyorwa chekugadzirwa. Izvi zvinhu zviri kunge kudzidziswa pamwe neproduct information inoshandiswa, seplan uye mari, invoices (invoices), upgrades (kuwedzera), uye zvinhu zvakawanda.
 
 ![Product description section](/img/config/product-description.png)
 
-### Pricing Type (Mhando Yekurisa Mari)
+### Pricing Type (Mhando Yekurisa Mari) {#description}
 
 Pamakore pane mari ekurisa anogona kuenzwa pamwe neinterface.
 
@@ -47,7 +47,7 @@ Pamakore pane mari ekurisa anogona kuenzwa pamwe neinterface.
 
 Ultimate Multisite inoshandisa mari mamakore maviri. Mhando ya **paid** inokumbira administrator we network kuti akubatsire nemabhari ekurisa ya product uye nguva yakagadzirwa yekugadzirisa (billing frequency).
 
-### Pricing (Kukurisa Mari)
+### Pricing (Kukurisa Mari) {#pricing-type}
 
 Mabhari anogona kuita mari ekurisa ya base product uye nguva yakagadzirwa yekugadzirisa.
 
@@ -55,7 +55,7 @@ Mabhari anogona kuita mari ekurisa ya base product uye nguva yakagadzirwa yekuga
 
 izviro, zvinhu rupa rechinangwa chepazhi rimwe, zvichiri kuita kuti upazhi we $29.99 uri kupazwa $29.99 muna munhu. Vachishandisa zvakasiyi, zvichiri kudzidza kuti upazhi we $89.97 uri kupazwa iquarter.
 
-### Billing Cycles (Mavhiki Ekupazwa)
+### Billing Cycles (Mavhiki Ekupazwa) {#pricing}
 
 Section ya Billing Cycles inotsanangura kuratidza kuratidza kwemviri yakasiyi yechipazhi uye inogona kuoneka mune zvinhajji kana zvinoreva kuti kuna contract kana nguva yakasiyi.
 
@@ -63,7 +63,7 @@ Section ya Billing Cycles inotsanangura kuratidza kuratidza kwemviri yakasiyi ye
 
 Zvakare, upazhi we product we $29.99 neinterval ya munhu uye 12 billing cycles zvichizvikanwa kupazwa $29.99 muna munhu kuti product iwe over succeeding 12 months. Nekuti, setting iyi ichiri kuita fixed-price term ye $29.99 muna munhu kuti 12 months uye ndokuti upazhi uri kuita zvakasiyi.
 
-### Trial Period (Nguva YeKutsvaga)
+### Trial Period (Nguva YeKutsvaga) {#billing-cycles}
 
 Kubvumira offer trial toggle kunoita kuti network administrator anogone kuita nguva ye trial yechipazhi.
 
@@ -71,7 +71,7 @@ Kubvumira offer trial toggle kunoita kuti network administrator anogone kuita ng
 
 Panguva ye trial, customers vanogona kuita product uye havi vachipazwa mpaka nguva ye trial isingatsanana.
 
-### Setup Fee (Chipazhi Chekupedzisira)
+### Setup Fee (Chipazhi Chekupedzisira) {#trial-period}
 
 Unogona kuitira setup fee kuplan yakowo.
 
@@ -79,7 +79,7 @@ Unogona kuitira setup fee kuplan yakowo.
 
 Izviro rinoreva kuti client yako ichiri kupazwa zvakawanda pamusoro pechipazhi chiri (pazuva pazviri) panguva yakasiyi (kuti upazhi we plan) inoshandiswa, uye inogona kuita fee iwe yakasimbisa munzvimbo iyi.
 
-### Active (Chikuru Chiri Kuti Upazhi)
+### Active (Chikuru Chiri Kuti Upazhi) {#setup-fee}
 
 Active toggle ichiri kudzidzisa zvakasiyi kuti product inozivikanwa kuita kwa customers vachipfuma.
 
@@ -87,19 +87,19 @@ Active toggle ichiri kudzidzisa zvakasiyi kuti product inozivikanwa kuita kwa cu
 
 Kana vana mwana wese anogona kuva zvinhu. Kana kune mamwe vanhu anogona vakachengetedza pano, kuva toggle (switch) kubva mu state ya "disabled" kunoita kuti plan iwe iwe iwe (i.e., inozuva) iwe iwe (i.e., iwe iwe). **Vanhu vese vanogona vakachengetedza panhu iwe (on the plan) vanodzivirwa kuva mu state ya "disabled" iwe iwe (i.e., iwe iwe), uye vanogona kuenda mberi nekuti vanogone kuva mu state ya "disabled".** **Vanhu vese vanogona vakachengetedza panhu iwe (on the plan) vanodzivirwa kuva mu state ya "disabled" iwe iwe (i.e., iwe iwe), uye vanogone kuenda mberi nekuti vanogone kuva mu state ya "disabled".**
 
-### Product Image
+### Product Image {#active}
 
 Button ye **Upload Image** inozovalira administrator we network kuti anogone kutora kana kuupload product image kubva munyumba we media.
 
 ![Product image section](/img/config/product-image.png)
 
-### Delete
+### Delete {#product-image}
 
 Button ye **Delete Product** inodzivisa product iwe (i.e., iwe iwe) kubva mu system. Inogona kuone kana product iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe iwe i
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Up & Downgrades (Kutanga neKupfuura/Kupfuura)
+#### Up & Downgrades (Kutanga neKupfuura/Kupfuura) {#delete}
 
 Iri tab iyi rinore kana zvinoreva kuti upano uye kupfuura (upgrade) zvichiri kuita kune mutenda wese wekuti munhu akaita mupfiro wake wose.
 
@@ -117,7 +117,7 @@ Kuti uone plan group, unogona kuita **plan group** list yakaita plans dzakasiyan
 
 Ultimate Multisite inosanganisirawowo **order bump**, unogona kuita zvinhu izvi (add-on products and services) dzinobva kuti dzine kugadzirwa kana zvinoreva kuti zvinhu izvi zvinogone kuwedzera plans. Izvi zinopetswa kune mutenda sezvinhu zvakawanda zvichiri kubva pamweya kuno kupfuura kana mumwe munhu akaita checkout.
 
-#### Price Variations (Kutanga kwemupfiro)
+#### Price Variations (Kutanga kwemupfiro) {#product-options}
 
 Zuvaure dzinovhu dzinovhu (Price variations) kuno vadhiri administrator wekudzidzwa kuti aive zvinhu zvakasiyana dzinogona kuita kune nguva dzakasiyana. Izvi zvinokubvira kuti munenge uchipa pfungwa dzakare dzine zvinhu zvakasiyana dzinogone kuwera (billing periods) izvo, sekuita kuti chishandisiwe mwezi, kwemwezi, mwaka, kana nguva yose. Zvinogona kuita iwe product yakapfuma ne$29.99/mwezi uye kune option ya mwaka inotevera ne$249.99/mwaka.
 
@@ -139,7 +139,7 @@ Zvinogona kuita iwe product yakapfuma ne$29.99/mwezi, unogona kuita izvi:
 Price variations chete hazvanyisa toggle kana switch kufrontend checkout. Kuti munenge uchipa kuti vagare zvinhu zvakasiyana dzinogone kuwera (billing periods) (semuenzaniso Monthly / Annual), unofanira kuita **Period Selection** field mucheckout form yako. Shandisa [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) kuti uone mari dzakare dzinogona kuita zvinhu.
 :::
 
-#### Taxes (Kuteka)
+#### Taxes (Kuteka) {#general}
 
 Tab ya **Taxes** inosimbisa nezvinhu zvinotevera zvetaxes zvakasiyana zvakakosha mumapuro dzakasiyana mu **Ultimate Multisite > Settings > Taxes** uye zvinhu zvakasiyana dzinogone kuita. Kuti ushure taxes uye ufanane rates dzakasiyana dzinogone kuita, unofanira kuona documentation pa **Ultimate Multisite: Settings**.
 
@@ -153,7 +153,7 @@ Ngeva rate ya kudhanisa iwe ine definira mu **Ultimate Multisite > Settings > Ma
 
 Kuti utanise kuti product inenge inoshandiswa kune kudhanisa, ndichivaka (set) toggle ya **Is Taxable** iwe ine active uye utange rate ya kudhanisa yakakosha kubva mu dropdown ya Tax Category.
 
-#### Site Templates
+#### Site Templates {#up--downgrades}
 
 Mune chokwadi, site templates ndiyo WordPress websites dzakakwana kuti dzinogone kuonekwa kune site ya munhu apo anowanikira (customer) panguva achatanga subscription yavo.
 
@@ -175,7 +175,7 @@ Mune nguva yakare, **C** **Choose Available Site Templates** inenge inenge inoba
 
 Muviri, kana administrator we network anoda kuti dingindiro dzeutapuro dzine ku checkout steps dzizove kuonekwa, setting ye ' _default_ ' inenge inokosha. Nekuti chii chinobva kune kukoresa ' _assign new template_ ' kana ' _choose available site templates_ ' zvinoregerera kukosha kwetemplates dzakavandiswa mu plan settings kuti mutenda wekuti dingindiro dzeutapuro dzine ku checkout steps dzizove kuonekwa.
 
-#### Sites
+#### Sites {#price-variations}
 
 Tabo ye **Sites** inenge yakaita chete kubva kune zvinhu zvinoregererwa (limitations) zveUltimate Multisite.
 
@@ -185,7 +185,7 @@ Setting iye rinoregerera kuita kuti mutenda wekuonawo (maximum number of sites) 
 
 Kuti utange zvinhu zvekusimudzira, ndaivandisa toggle ye **limit sites** kune iye inenge yakaita kuti itange kuenda mberi uye vave nemaximum number of sites mu field ye **site allowance**.
 
-#### Visits
+#### Visits {#taxes}
 
 Tabo ye **Visits** inenge yakaita chete kubva kune system ye limitations yaUltimate Multisite. Setting iye rinoregerera kuti mutenda wekuti munhu anogona kuenda (unique visitors) kwenye site yavo uye kusimudzira kweve (throttling) kwemutenda weve wese.
 
@@ -197,7 +197,7 @@ Kuti unogone kuita iye feature, ndichida uingise **limit unique visits** toggle 
 
 Ngekuramba limit iyi, Ultimate Multisite haizovada site yavo kubva nekuti inozvada message yakatidzidzera kuti limits zvakakosha zvakazara.
 
-#### Users
+#### Users {#site-templates}
 
 Kusarudza zvinokosha zve 'Users' mu Ultimate Multisite kunoita kuti administrator we network anogone kuita limit pamusoro pe kuita uye kuita users vachireva roles.
 
@@ -207,7 +207,7 @@ Kuti unogone kuita feature ya limits, ndichida uingise **limit user** toggle kun
 
 Mune zvinhu zvakawanda zvinokosha kuti vave vachireva roles, ndichida uningise toggle inozvionawo pangu nekuita active uye utore limit yakawanda mumapuro anobva munzira dzinobva dziri mweya.
 
-#### Post Types
+#### Post Types {#sites}
 
 Tabo ya **Post Types** inogona kuita kuti administrator we network akupfume zvinhu zvinokosha pamusoro pe post types dzakawanda dzinowanikwa mu WordPress.
 
@@ -219,7 +219,7 @@ Kuti unogone kuita subsystem yey limits iyi, ndichida uingise **limit post types
 
 Kuti, kuenda kunei, kuti kwa kila aina ya post (post type) utapereka, chibvumira (toggle) kuti uwe mufanana nekuva kune upenyu (sliding it to the right) uye utipa limitino (maximum upper limit) mu chivimbo chinotevera.
 
-#### Disk Space (Maviri Eruvo)
+#### Disk Space (Maviri Eruvo) {#visits}
 
 Chivimbo che**Disk Space** chinopfungwa nekubatsira vatsara vanopereka kuti vave nemakore anogona kuva nekuvaka space.
 
@@ -231,13 +231,13 @@ Kuti utange kuita limitino rekuti space inogona kutangwa, shandisa chivimbo che*
 
 Zvedzo, shandisa chivimbo che**disk space allowance** kuti utipa limitino rekuti space inogona kuva pangu megabytes.
 
-#### Custom Domain (Domain Yakanaka)
+#### Custom Domain (Domain Yakanaka) {#users}
 
 Nechitera chivimbo ichi, unogona kuratidza kuti domain yakanaka (custom domains) inogone kune iplan ya iye chete.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes (Maviri Eruvo)
+#### Themes (Maviri Eruvo) {#post-types}
 
 Chivimbo che**Themes** chiri munzvimbo dzinopfungwa dzakawanda (product options), uye administrator we network anogona kuita kuti themes zvine kugona kune vatsara kuti vave vachigadzirwa nekuti vave vanogona kutamba, uye unogonawo utsvaka iwe state ya theme.
 
@@ -255,7 +255,7 @@ Chivimbo che**behavior** chinopfungwa nekuti administrator we network anogona ku
 
 Muitawezi wese, mweya we (theme) unogona kuwanzika nekuva kwawe chete. Kwa upande we, iwe unengei kunge kuva kwawe chete. Pamwe, chine cha **Force Activate** chinogona kudzidza uye kuva kwawe chete, zvichizara kuti iwe iwe ine mweya wese (default) kana iweita site.
 
-#### Plugins
+#### Plugins {#disk-space}
 
 Sei chine chine nemweya we Themes, Ultimate Multisite inozova kunenge administrator we network anogona kuenda kutaura kuti plugins dziri kuone kana dzinenge dzakavara nekuva kwecustomers kana mune kuratidza kwenye yese.
 
@@ -275,7 +275,7 @@ Sikati ya **Force Activate & Lock** inogona zvakasiyana asi inopara kupera kuti 
 
 Mudzidzisi we network anogona kuona kuti setting ya Force Activate & Lock na Force Inactivate & Lock kubva pfungwa nemapuro (site templates) ekuti zvinhu zviri kugadzirwa se plugins uye states dzine plugin dzinogone kutamburwa nesettings iyi kana zvinosarudzirwa.
 
-#### Kusarudza Mhinduro (Reset Limitations)
+#### Kusarudza Mhinduro (Reset Limitations) {#custom-domain}
 
 Tabwo ya **Reset Limitations** inosarudza zvakasiyana kuti zvinhu zvakagadzirwa pamusoro pe product zvose. Kuti usarudze limitations, ndichida uchitambura button ya **reset limitations**.
 
@@ -285,7 +285,7 @@ Kuti utiwarise kuti chine zvakasiyana, ndichida ukumbira toggle ya **confirm res
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Kusarudza, Kuona Kuti (Duplicate), kana Kupada Product
+## Kusarudza, Kuona Kuti (Duplicate), kana Kupada Product {#themes}
 
 Products dzakaita zvinogone kusarudzirwa, kuona kuti (duplicate), kana kupadwa nekuita **Ultimate Multisite > Products** uye kuita hover pamusoro pe product yakaita.
 

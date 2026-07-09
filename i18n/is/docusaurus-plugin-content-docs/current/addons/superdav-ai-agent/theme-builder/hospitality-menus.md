@@ -3,15 +3,15 @@ title: Matseðlar fyrir veitinga- og gistigeirann
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality matseðlar
+# Hospitality matseðlar {#hospitality-menus}
 
 **Hospitality matseðlar** eiginleikinn gerir Theme Builder kleift að búa til og fella inn skipulagðar matar- og drykkjarmatseðilssíður beint inn á WordPress vefinn þinn.
 
-## Yfirlit
+## Yfirlit {#overview}
 
 Theme Builder getur nú búið til faglegar, skipulagðar matseðilssíður fyrir hospitality fyrirtæki, þar á meðal veitingastaði, kaffihús, bari og veisluþjónustur. Þessir matseðlar eru að fullu samþættir hönnun vefsins þíns og auðvelt er að uppfæra þá og stjórna þeim.
 
-## Studdar tegundir hospitality
+## Studdar tegundir hospitality {#supported-hospitality-types}
 
 - **Veitingastaðir** — matseðlar fyrir veitingastaði með fullri þjónustu
 - **Kaffihús** — matseðlar fyrir kaffi og léttan mat
@@ -21,9 +21,9 @@ Theme Builder getur nú búið til faglegar, skipulagðar matseðilssíður fyri
 - **Matarbílar** — matseðlar fyrir færanlega matarþjónustu
 - **Brugghús og víngerðir** — drykkjarmatseðlar með lýsingum
 
-## Uppbygging matseðils
+## Uppbygging matseðils {#menu-structure}
 
-### Flokkar matseðils
+### Flokkar matseðils {#menu-categories}
 
 Matseðlar eru skipulagðir í flokka:
 
@@ -34,7 +34,7 @@ Matseðlar eru skipulagðir í flokka:
 - **Drykkir** — drykkir (áfengir og óáfengir)
 - **Sértilboð** — dagleg eða árstíðabundin sértilboð
 
-### Snið matseðilsatriðis
+### Snið matseðilsatriðis {#menu-item-format}
 
 Hvert matseðilsatriði inniheldur:
 
@@ -49,7 +49,7 @@ Hvert matseðilsatriði inniheldur:
 }
 ```
 
-#### Reitir atriðis
+#### Reitir atriðis {#item-fields}
 
 | Reitur | Tegund | Lýsing |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Hvert matseðilsatriði inniheldur:
 | `allergens` | array | Algengir ofnæmisvaldar (hnetur, skelfiskur o.s.frv.) |
 | `availability` | string | Hvenær í boði (daglega, árstíðabundið o.s.frv.) |
 
-## Að búa til hospitality matseðla
+## Að búa til hospitality matseðla {#creating-hospitality-menus}
 
-### Skref 1: Gefðu upp upplýsingar um matseðil
+### Skref 1: Gefðu upp upplýsingar um matseðil {#step-1-provide-menu-information}
 
 Segðu Theme Builder frá matseðlinum þínum:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Skref 2: Theme Builder býr til matseðil
+### Skref 2: Theme Builder býr til matseðil {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Sníður verð og lýsingar
 5. Bætir við mataræðis- og ofnæmisupplýsingum
 
-### Skref 3: Yfirfarðu og sérsníddu
+### Skref 3: Yfirfarðu og sérsníddu {#step-3-review-and-customize}
 
 Þú getur:
 
@@ -91,9 +91,9 @@ Theme Builder:
 4. Uppfært lýsingar og mataræðisupplýsingar
 5. Aðlagað stíl og útlit
 
-## Birtingarvalkostir matseðils
+## Birtingarvalkostir matseðils {#menu-display-options}
 
-### Heildarmatseðilssíða
+### Heildarmatseðilssíða {#full-menu-page}
 
 Sérstök síða sem sýnir allan matseðilinn þinn:
 
@@ -102,7 +102,7 @@ Sérstök síða sem sýnir allan matseðilinn þinn:
 - Prentvænt útlit
 - Farsímavæn hönnun
 
-### Matseðilsgræja
+### Matseðilsgræja {#menu-widget}
 
 Felldu matseðilshluta inn á aðrar síður:
 
@@ -111,7 +111,7 @@ Felldu matseðilshluta inn á aðrar síður:
 - Drykkjarmatseðill á barsíðu
 - Eftirréttasýning í footer
 
-### Matseðils-PDF
+### Matseðils-PDF {#menu-pdf}
 
 Búðu til niðurhalanlegan PDF-matseðil:
 
@@ -120,9 +120,9 @@ Búðu til niðurhalanlegan PDF-matseðil:
 - Inniheldur myndir og lýsingar
 - Auðvelt að deila og senda í tölvupósti
 
-## Upplýsingar um mataræði og ofnæmisvalda
+## Upplýsingar um mataræði og ofnæmisvalda {#dietary-and-allergen-information}
 
-### Mataræðiseiginleikar
+### Mataræðiseiginleikar {#dietary-attributes}
 
 Merktu atriði með mataræðisupplýsingum:
 
@@ -134,7 +134,7 @@ Merktu atriði með mataræðisupplýsingum:
 - **Kolvetnasnautt** — minna af kolvetnum
 - **Próteinríkt** — próteinríkt
 
-### Ofnæmisviðvaranir
+### Ofnæmisviðvaranir {#allergen-warnings}
 
 Láttu algenga ofnæmisvalda fylgja:
 
@@ -147,9 +147,9 @@ Láttu algenga ofnæmisvalda fylgja:
 - **Glúten** — hveiti og korntegundir sem innihalda glúten
 - **Sesam** — sesamfræ og olía
 
-## Umsjón með matseðli
+## Umsjón með matseðli {#menu-management}
 
-### Uppfærsla verðs
+### Uppfærsla verðs {#updating-prices}
 
 Uppfærðu verð á matseðli auðveldlega:
 
@@ -159,7 +159,7 @@ Uppfærðu verð á matseðli auðveldlega:
 4. Vistaðu breytingar
 5. Breytingar birtast strax á vefnum þínum
 
-### Að bæta við árstíðabundnum atriðum
+### Að bæta við árstíðabundnum atriðum {#adding-seasonal-items}
 
 Búðu til árstíðabundnar útgáfur af matseðli:
 
@@ -169,7 +169,7 @@ Búðu til árstíðabundnar útgáfur af matseðli:
 4. Tímasettu dagsetningar fyrir framboð
 5. Birtu sjálfkrafa yfir tímabilið
 
-### Umsjón með sértilboðum
+### Umsjón með sértilboðum {#managing-specials}
 
 Sýndu dagleg eða vikuleg sértilboð:
 
@@ -179,7 +179,7 @@ Sýndu dagleg eða vikuleg sértilboð:
 4. Uppfærðu daglega eða vikulega
 5. Settu gömul sértilboð í safn
 
-## Samþætting við Theme Builder
+## Samþætting við Theme Builder {#integration-with-theme-builder}
 
 Þegar Theme Builder er notað fyrir hospitality vefi:
 
@@ -189,9 +189,9 @@ Sýndu dagleg eða vikuleg sértilboð:
 4. **Farsímabestun** — matseðlar birtast fallega í símum
 5. **SEO-bestun** — matseðlar eru leitarvélavænir
 
-## Bestu starfsvenjur
+## Bestu starfsvenjur {#best-practices}
 
-### Hönnun matseðils
+### Hönnun matseðils {#menu-design}
 
 - **Skýrt skipulag** — rökrétt flokkauppbygging
 - **Læsilegar lýsingar** — girnilegar og upplýsandi
@@ -199,7 +199,7 @@ Sýndu dagleg eða vikuleg sértilboð:
 - **Faglegar myndir** — hágæða matarmyndir
 - **Hvítt rými** — ekki yfirfylla síðuna
 
-### Efni
+### Efni {#content}
 
 - **Nákvæmar lýsingar** — lýstu atriðum nákvæmlega
 - **Auðkenndu sértilboð** — láttu sértilboð skera sig úr
@@ -207,7 +207,7 @@ Sýndu dagleg eða vikuleg sértilboð:
 - **Uppfærðu reglulega** — haltu verðum og atriðum uppfærðum
 - **Notaðu girnilegt málfar** — láttu atriði hljóma ljúffeng
 
-### Aðgengi
+### Aðgengi {#accessibility}
 
 - **Læsilegt letur** — notaðu skýrar, læsilegar leturgerðir
 - **Nægileg birtuskil** — tryggðu að texti sé læsilegur
@@ -215,9 +215,9 @@ Sýndu dagleg eða vikuleg sértilboð:
 - **Ofnæmisviðvaranir** — birtu ofnæmisvalda á áberandi hátt
 - **Farsímavænt** — prófaðu á öllum tækjum
 
-## Dæmi
+## Dæmi {#examples}
 
-### Uppbygging veitingastaðarmatseðils
+### Uppbygging veitingastaðarmatseðils {#restaurant-menu-structure}
 
 ```
 Forréttir
@@ -241,7 +241,7 @@ Eftirréttir
 └── Gelato-úrval
 ```
 
-### Uppbygging kaffihúsamatseðils
+### Uppbygging kaffihúsamatseðils {#cafe-menu-structure}
 
 ```
 Kaffi
@@ -260,7 +260,7 @@ Samlokur
 └── Grænmetisvafningur
 ```
 
-## Tengdir eiginleikar
+## Tengdir eiginleikar {#related-features}
 
 - [Búa til valmynd](../abilities/create-menu.md) — búa til leiðarvalmyndir
 - [Hönnunarstefna](./design-direction.md) — sérsníða hönnun síðunnar þinnar

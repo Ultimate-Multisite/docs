@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 May kasamang built-in wizard ang Ultimate Multisite na awtomatikong nagko-convert ng standard WordPress installation papuntang WordPress Multisite network. Hindi mo na kailangang mag-edit ng `wp-config.php` o mag-run ng database commands nang manu-mano.
 
@@ -11,13 +11,13 @@ May kasamang built-in wizard ang Ultimate Multisite na awtomatikong nagko-conver
 Kung ang iyong WordPress installation ay gumagana na bilang Multisite network, maaari mong laktawan ang hakbang na ito. Ang wizard ay lalabas lamang kapag hindi pa naka-enable ang Multisite.
 :::
 
-## Kailan Lalabas ang Wizard?
+## Kailan Lalabas ang Wizard? {#when-does-the-wizard-appear}
 
 Kapag na-activate mo ang Ultimate Multisite sa isang standard (non-Multisite) na WordPress installation, made-detect ng plugin na hindi pa naka-enable ang Multisite at awtomatiko kang ire-redirect sa Multisite Setup Wizard imbes na sa regular na setup wizard.
 
 Maaari mo rin itong direktang i-access sa **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Mga Kinakailangan
+## Mga Kinakailangan {#prerequisites}
 
 Bago mo i-run ang wizard, siguraduhing:
 
@@ -29,7 +29,7 @@ Bago mo i-run ang wizard, siguraduhing:
 Binabago ng wizard ang iyong `wp-config.php` file at gumagawa ng mga bagong database table. Palaging gumawa ng backup bago magpatuloy.
 :::
 
-## Hakbang 1: Maligayang Pagdating
+## Hakbang 1: Maligayang Pagdating {#step-1-welcome}
 
 Ang unang screen ay nagpapaliwanag kung ano ang WordPress Multisite at kung ano ang gagawin ng wizard:
 
@@ -42,11 +42,11 @@ Ang unang screen ay nagpapaliwanag kung ano ang WordPress Multisite at kung ano 
 
 I-click ang **Continue** para magpatuloy.
 
-## Hakbang 2: Network Configuration
+## Hakbang 2: Network Configuration {#step-2-network-configuration}
 
 Sa hakbang na ito, kailangan mong i-configure ang iyong network settings.
 
-### Site Structure
+### Site Structure {#site-structure}
 
 Piliin kung paano magiging organisado ang mga site sa iyong network:
 
@@ -57,11 +57,11 @@ Piliin kung paano magiging organisado ang mga site sa iyong network:
 Kung pipiliin mo ang sub-domains, kakailanganin mong i-configure ang **wildcard DNS** at **wildcard SSL certificate** para sa iyong domain. Karamihan ng managed WordPress host ay awtomatikong nag-aasikaso nito. Tingnan ang [Ultimate Multisite 101](./ultimate-multisite-101) para sa detalyadong paghahambing.
 :::
 
-### Network Title
+### Network Title {#network-title}
 
 Maglagay ng pangalan para sa iyong network. Ang default nito ay ang kasalukuyang site title mo na may dagdag na "Network". Maaari mo itong baguhin mamaya sa network settings.
 
-### Network Admin Email
+### Network Admin Email {#network-admin-email}
 
 Ang email address na ginagamit para sa mga network administration notification. Ang default nito ay ang email address ng kasalukuyang user.
 
@@ -69,7 +69,7 @@ Ang email address na ginagamit para sa mga network administration notification. 
 
 Pagkatapos punan ang mga field, i-click ang **Continue** para magpatuloy.
 
-## Hakbang 3: Installation
+## Hakbang 3: Installation {#step-3-installation}
 
 I-click ang **Install** button para magsimula. Ang wizard ay nagsasagawa ng limang automated step nang sunud-sunod, bawat isa ay nagpapakita ng progress nito sa real-time:
 
@@ -96,7 +96,7 @@ Kapag matagumpay na natapos ang lahat ng hakbang, makikita mo ang berdeng "Succe
 
 Awtomatikong magpapatuloy ang wizard sa completion screen.
 
-## Hakbang 4: Kumpleto
+## Hakbang 4: Kumpleto {#step-4-complete}
 
 Kapag kumpleto na ang installation, makikita mo ang success message na nagko-confirm na na-enable na ang WordPress Multisite.
 
@@ -108,7 +108,7 @@ Maaari ka nang magpatuloy sa Ultimate Multisite setup wizard para i-configure an
 Pagkatapos makumpleto ang multisite installation, magre-redirect ang iyong browser sa bagong-enable na network admin. Maaaring kailanganin mong mag-log in ulit dahil ina-update ang authentication cookie para sa multisite environment.
 :::
 
-## Manual Setup Fallback
+## Manual Setup Fallback {#manual-setup-fallback}
 
 Kung hindi makapag-sulat ang wizard sa iyong `wp-config.php` file (dahil sa file permission o server restriction), ipapakita nito ang eksaktong code na kailangan mong idagdag nang manu-mano:
 
@@ -117,9 +117,9 @@ Kung hindi makapag-sulat ang wizard sa iyong `wp-config.php` file (dahil sa file
 
 Pagkatapos gawin ang mga manu-manong pagbabago, i-refresh ang page at made-detect ng wizard na aktibo na ang multisite.
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
-### Sinasabi ng wizard na hindi writable ang wp-config.php
+### Sinasabi ng wizard na hindi writable ang wp-config.php {#the-wizard-says-wp-configphp-is-not-writable}
 
 Kailangan ng iyong web server process ng write permission sa `wp-config.php` file. Maaari mong:
 
@@ -127,7 +127,7 @@ Kailangan ng iyong web server process ng write permission sa `wp-config.php` fil
 - Gamitin ang manual setup fallback instruction na ibinibigay ng wizard
 - Humingi ng tulong sa iyong hosting provider
 
-### Hindi ma-access ang mga site pagkatapos ng setup (subdomains)
+### Hindi ma-access ang mga site pagkatapos ng setup (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Kung pinili mo ang subdomain structure, kailangan mong i-configure ang **wildcard DNS** para sa iyong domain. Magdagdag ng DNS record:
 
@@ -139,7 +139,7 @@ Value: [IP ng iyong server]
 
 Kumonsulta sa iyong hosting provider kung hindi ka sigurado kung paano ito i-configure.
 
-### Mga authentication issue pagkatapos ng setup
+### Mga authentication issue pagkatapos ng setup {#authentication-issues-after-setup}
 
 Kung na-log out ka o nakakaranas ng cookie error pagkatapos ng multisite setup:
 
@@ -147,7 +147,7 @@ Kung na-log out ka o nakakaranas ng cookie error pagkatapos ng multisite setup:
 2. Mag-log in ulit sa `yourdomain.com/wp-login.php`
 3. Kung magpatuloy ang problema, tingnan kung ang iyong `wp-config.php` ay walang `COOKIE_DOMAIN` na naka-set sa `false` — ito ay isang kilalang issue sa subdomain multisite installation
 
-### May nabigong hakbang sa installation
+### May nabigong hakbang sa installation {#a-step-failed-during-installation}
 
 Kung may hakbang sa installation na nagpakita ng error:
 

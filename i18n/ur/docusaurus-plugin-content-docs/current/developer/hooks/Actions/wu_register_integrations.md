@@ -4,21 +4,21 @@ title: عمل - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations
+# Action: wu_register_integrations {#action-wuregisterintegrations}
 
 یہ فنکشن (hook) اس لیے چلتا ہے تاکہ مختلف انٹیگریشنز کو خود کو رجسٹر کرنے کی اجازت مل سکے۔
 
 Core یہاں اپنی انٹیگریشنز کو رجسٹر کرتا ہے۔
 
-## پیرامیٹرز (Parameters)
+## پیرامیٹرز (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | رجسٹرری کا انسٹنس (instance)۔ |
 
-### Since
+### Since {#since}
 
 - 2.5.0
-### Source
+### Source {#source}
 
 [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L113) میں لائن 113 پر ڈیفائن کیا گیا ہے۔

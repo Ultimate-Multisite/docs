@@ -3,17 +3,17 @@ title: Zvishandiso uye Kumisikidza
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Zvishandiso uye Kugadzirisa
+# Zvishandiso uye Kugadzirisa {#tools-and-configuration}
 
 Theme Builder inoshandisa seti yezvishandiso kuongorora, kudhizaina, uye kuvaka site yako yeWordPress. Mushanduro 1.16.0, **sd-ai-agent/site-scrape yava chishandiso cheTier 1**, ichiita kuti chiwanikwe nekusarudzika muTheme Builder. Superdav AI Agent v1.18.0 inounzawo pasuru yeAdvanced companion inogoverwa yakaparadzana yemafambisirwo ebasa evagadziri vanovimbwa; zvishandiso izvozvo hazvisi chikamu chepasuru huru yeWordPress.org uye zvinofanira kuiswa uye kupihwa mvumo zvakasiyana.
 
-## Zvishandiso Zviripo
+## Zvishandiso Zviripo {#available-tools}
 
-### Zvishandiso zveTier 1 (Zvinogara Zviripo)
+### Zvishandiso zveTier 1 (Zvinogara Zviripo) {#tier-1-tools-always-available}
 
 Zvishandiso zveTier 1 zvinowanikwa nekusarudzika muTheme Builder pasina kumwe kugadzirisa kwekuwedzera.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Chinangwa:** Kuongorora mawebsite aripo kuti ubvise kurudziro yedhizaini, chimiro chezviri mukati, uye mashandiro.
 
@@ -51,11 +51,11 @@ Ongorora dhizaini yeexample.com uye uishandise sekurudziro yesite yangu.
 - Masite ane JavaScript yakawanda anogona kuva neongororo shoma
 - Masite makuru anogona kutora nguva yakareba kuongororwa
 
-### Zvishandiso zveTier 2 (Zvekusarudza)
+### Zvishandiso zveTier 2 (Zvekusarudza) {#tier-2-tools-optional}
 
 Zvishandiso zveTier 2 zvinowanikwa kana zvagoneswa pachena mumasetting eTheme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
 Inopa zviyero zvakadzama zvemashandiro:
 
@@ -65,7 +65,7 @@ Inopa zviyero zvakadzama zvemashandiro:
 - Chibodzwa chekuwanikwa
 - Chibodzwa chemaitiro akanakisa
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
 Inoongorora uye inokurudzira kuvandudzwa kwe:
 
@@ -75,11 +75,11 @@ Inoongorora uye inokurudzira kuvandudzwa kwe:
 - Chimiro chezviri mukati
 - Kuiswa kwecall-to-action
 
-### Zvishandiso zveTier 3 (Premium)
+### Zvishandiso zveTier 3 (Premium) {#tier-3-tools-premium}
 
 Zvishandiso zveTier 3 zvinoda kugadzirisa kwekuwedzera kana maficha epremium.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Inogadzira zvirimo zve:
 
@@ -89,7 +89,7 @@ Inogadzira zvirimo zve:
 - Tsananguro dzemeta
 - Mashoko ecall-to-action
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
 Inopa kugona kwepamusoro kwedhizaini:
 
@@ -99,7 +99,7 @@ Inopa kugona kwepamusoro kwedhizaini:
 - Dzidziso yepamusoro yemavara
 - Kuvandudzwa kweTypography
 
-### Zvishandiso zveAdvanced Companion (Pasuru Yakaparadzana)
+### Zvishandiso zveAdvanced Companion (Pasuru Yakaparadzana) {#advanced-companion-tools-separate-package}
 
 Pasuru yeAdvanced companion inogoverwa yakaparadzana nekuburitswa kukuru kweSuperdav AI Agent. Yakagadzirirwa nzvimbo dzevagadziri vanovimbwa nevaridzi vesite uko maadministrator anotendera pachena agent kushandisa maturusi ane simba guru.
 
@@ -116,9 +116,9 @@ Kugona kweAdvanced companion kunogona kusanganisira:
 
 Usanyora izvi sezvishandiso zveTheme Builder zvinowanikwa kazhinji pakuiswa kwese. Zvinowanikwa chete kana pasuru yeAdvanced companion yaiswa, yagoneswa, uye yarambidzwa kumaadministrator anovimbwa.
 
-## Kugadzirisa Zvishandiso
+## Kugadzirisa Zvishandiso {#tool-configuration}
 
-### Kugonesa Zvishandiso
+### Kugonesa Zvishandiso {#enabling-tools}
 
 Kuti ugonese zvishandiso zvekuwedzera muTheme Builder:
 
@@ -127,7 +127,7 @@ Kuti ugonese zvishandiso zvekuwedzera muTheme Builder:
 3. Batidza/dzima zvishandiso sezvinodiwa
 4. Sevha masetting
 
-### Mvumo dzeZvishandiso
+### Mvumo dzeZvishandiso {#tool-permissions}
 
 Zvimwe zvishandiso zvinoda mvumo:
 
@@ -137,7 +137,7 @@ Zvimwe zvishandiso zvinoda mvumo:
 - **Maficha epamusoro** — anogona kuda kunyoresa kwepremium
 - **Zvishandiso zveAdvanced companion** — zvinoda pasuru yeAdvanced inogoverwa yakaparadzana uye kuvimba pachena kweadministrator
 
-### API Keys neCredentials
+### API Keys neCredentials {#api-keys-and-credentials}
 
 Gadzirisa API keys yezvishandiso zvinozvida:
 
@@ -146,13 +146,13 @@ Gadzirisa API keys yezvishandiso zvinozvida:
 3. Edza kubatana
 4. Sevha zvakachengeteka
 
-### Kuisa Pasuru yeAdvanced Companion
+### Kuisa Pasuru yeAdvanced Companion {#installing-the-advanced-companion-package}
 
 Pasuru yeAdvanced companion inoburitswa yakaparadzana neZIP huru yeWordPress.org. Iise chete kubva kuchiteshi chepamutemo chekugovera chirongwa chekuburitswa kwacho, wobva warambidza kuwana kumaadministrator anovimbwa. Ongorora magedhi ekubvumidzwa nemunhu uye maitiro eGit snapshot usati wagonesa filesystem, database, WP-CLI, REST dispatcher, plugin builder, user-management, kana benchmark tools pasite yekugadzira.
 
-## Kushandisa sd-ai-agent/site-scrape
+## Kushandisa sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Mashandisirwo Ekutanga
+### Mashandisirwo Ekutanga {#basic-usage}
 
 Kumbira Theme Builder kuongorora website:
 
@@ -161,7 +161,7 @@ Ongorora dhizaini yesite yemukwikwidzi wangu pa competitor.com
 uye kurudzira kuvandudzwa kwedhizaini yesite yangu.
 ```
 
-### Kuongorora Kwakananga
+### Kuongorora Kwakananga {#specific-analysis}
 
 Kumbira mhando dzakananga dzeongororo:
 
@@ -179,7 +179,7 @@ Tarisa kupindura kwemobile kweexample.com uye iva nechokwadi chekuti site yangu
 inopindura zvakafanana.
 ```
 
-### Kuongorora kweKuenzanisa
+### Kuongorora kweKuenzanisa {#comparison-analysis}
 
 Enzanisa masite akawanda:
 
@@ -188,22 +188,22 @@ Enzanisa madhizaini e site1.com ne site2.com uye gadzira dhizaini
 inosanganisa zvinhu zvakanakisa zvezvose zviri zviviri.
 ```
 
-## Miganhu yeZvishandiso uye Zvekufunga
+## Miganhu yeZvishandiso uye Zvekufunga {#tool-limitations-and-considerations}
 
-### Kudzikamisa Mwero
+### Kudzikamisa Mwero {#rate-limiting}
 
 - Kutora data pasaiti kunoisirwa muganhu wekumhanya kudzivirira kuremerwa kweseva
 - Zvikumbiro zvakawanda kusaiti imwe chete zvinogona kuderedzwa kumhanya
 - Masaiti makuru anogona kutora nguva yakareba kuongorora
 
-### Kururama kweZvirimo
+### Kururama kweZvirimo {#content-accuracy}
 
 - Zvirimo zvinoshanduka zvinogona kusatorwa zvizere
 - Zvirimo zvinoratidzwa neJavaScript zvinogona kusakwana
 - Data yenguva chaiyo inogona kusaratidzwa
 - Zvimwe zvirimo zvinogona kunge zviri kuseri kwemabhadharo
 
-### Zvinotarisirwa Pamutemo nePahunhu
+### Zvinotarisirwa Pamutemo nePahunhu {#legal-and-ethical-considerations}
 
 - Remekedza robots.txt nemitemo yesaiti
 - Usatore zvirimo zvine copyright kuti uzvibudise zvakare
@@ -211,16 +211,16 @@ inosanganisa zvinhu zvakanakisa zvezvose zviri zviviri.
 - Simbisa kuti une kodzero dzekushandisa zvirimo zvabviswa
 - Tevera mitemo yekushandisa yemasaiti akaongororwa
 
-### Kukanganisa paPerformance
+### Kukanganisa paPerformance {#performance-impact}
 
 - Kutora data pamasaiti makuru kunogona kutora nguva
 - Kutora data kwakawanda panguva imwe chete kunogona kunonoka
 - Kubatana kwenetiweki kunokanganisa kumhanya
 - Madataset makuru anogona kuda kugadziriswa kwakawanda
 
-## Maitiro Akanakisa
+## Maitiro Akanakisa {#best-practices}
 
-### Kushandisa Ongororo yeSaiti
+### Kushandisa Ongororo yeSaiti {#using-site-analysis}
 
 1. **Ongorora masaiti akawanda** — unganidza kufemerwa kubva kuzvitubu zvakati wandei
 2. **Tarisa pachimiro** — dzidza mapatani ekurongeka nekugadzirwa
@@ -228,7 +228,7 @@ inosanganisa zvinhu zvakanakisa zvezvose zviri zviviri.
 4. **Dzidza typography** — ziva misanganiswa yemafonti yaunofarira
 5. **Ongorora kufamba** — nzwisisa kurongeka kwemenu
 
-### Kutora Data Pahunhu
+### Kutora Data Pahunhu {#ethical-scraping}
 
 1. **Remekedza robots.txt** — tevera nhungamiro dzesaiti
 2. **Usakopa zvirimo** — shandisa ongororo kuti uwane kufemerwa chete
@@ -236,7 +236,7 @@ inosanganisa zvinhu zvakanakisa zvezvose zviri zviviri.
 4. **Taura zvitubu** — ipa rukudzo kuzvitubu zvekufemerwa
 5. **Tevera mitemo** — tevedzera mitemo yekushandisa yesaiti
 
-### Kuwedzera Kushanda kweChishandiso
+### Kuwedzera Kushanda kweChishandiso {#maximizing-tool-effectiveness}
 
 1. **Nyatsotaura chaunoda** — kumbira mhando dzakananga dzeongororo
 2. **Ipa mamiriro** — tsanangura chinangwa chesaiti yako
@@ -244,9 +244,9 @@ inosanganisa zvinhu zvakanakisa zvezvose zviri zviviri.
 4. **Dzokorora nekuvandudza** — natsiridza zvichibva pamigumisiro
 5. **Sanganisa zvishandiso** — shandisa zvishandiso zvakawanda kuti uwane ongororo yakazara
 
-## Kugadzirisa Matambudziko
+## Kugadzirisa Matambudziko {#troubleshooting}
 
-### Saiti Haisi Kutora Data
+### Saiti Haisi Kutora Data {#site-wont-scrape}
 
 - Tarisa kana saiti ichiwanikwa neruzhinji
 - Simbisa kuti robots.txt inobvumira kutora data
@@ -254,7 +254,7 @@ inosanganisa zvinhu zvakanakisa zvezvose zviri zviviri.
 - Tarisa kubatana kweinternet
 - Bata rutsigiro kana dambudziko rikaramba riripo
 
-### Ongororo Isina Kukwana
+### Ongororo Isina Kukwana {#incomplete-analysis}
 
 - Saiti inogona kunge iine zvirimo zvinoshanduka
 - JavaScript inogona kusaratidzwa zvizere
@@ -262,7 +262,7 @@ inosanganisa zvinhu zvakanakisa zvezvose zviri zviviri.
 - Edza kuongorora mapeji chaiwo pachinzvimbo
 - Kumbira mhando dzakananga dzeongororo
 
-### Performance Inononoka
+### Performance Inononoka {#slow-performance}
 
 - Masaiti makuru anotora nguva yakareba kuongorora
 - Kutora data kwakawanda panguva imwe chete kunononoka
@@ -270,7 +270,7 @@ inosanganisa zvinhu zvakanakisa zvezvose zviri zviviri.
 - Edza panguva dzisiri dzepamusoro
 - Ongorora zvikamu zvidiki kutanga
 
-## Zvinyorwa Zvinoenderana
+## Zvinyorwa Zvinoenderana {#related-documentation}
 
 - [Hurukuro yeKuziva](./discovery-interview.md) — unganidza ruzivo rwekugadzira
 - [Gwaro reKugadzira](./design-direction.md) — natsiridza kugadzira kwako

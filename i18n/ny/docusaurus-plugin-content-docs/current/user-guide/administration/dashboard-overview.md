@@ -3,11 +3,11 @@ title: Mwayi wopolo wa mwayi
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Zomwezi ya Dashboard
+# Zomwezi ya Dashboard {#dashboard-overview}
 
 Ultimate Multisite inalipanga **Dashboard** iliyonkhulupanga m'malo wa Ultimate Multisite, ndipo inalimbikisa widgets ku Network Dashboard. Iyi article inalipanga kuti muli ndi chiyambira m'malowowo.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite inalimbikisa widgets zofunika ku dashboard ya network yomwe imayendera m'My Sites → Network Admin → Dashboard.
 
@@ -35,7 +35,7 @@ Iyi ndi chiyambira chomwe kukhala m'malowo:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Pamene network dashboard imalimbikisa malingaliro omwe ali m'malozo wa network, Ultimate Multisite dashboard (m'malo wosavuta wa Ultimate Multisite) imalimbikisa malingaliro a service yomwe imayendera.
 

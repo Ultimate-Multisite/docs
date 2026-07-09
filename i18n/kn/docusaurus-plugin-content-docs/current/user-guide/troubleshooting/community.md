@@ -3,7 +3,7 @@ title: ಸಮುದಾಯ
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite ಸಮುದಾಯಕ್ಕೆ ಸೇರುವುದು ಹೇಗೆ
+# Ultimate Multisite ಸಮುದಾಯಕ್ಕೆ ಸೇರುವುದು ಹೇಗೆ {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite ಸಮುದಾಯವು ಇತರ Ultimate Multisite ಬಳಕೆದಾರರೊಂದಿಗೆ ಸಂಪರ್ಕದಲ್ಲಿರಲು ಮತ್ತು ಸಲಹೆಗಳು, ಅನುಭವಗಳು ಮತ್ತು ಇನ್ನಷ್ಟು ವಿಷಯಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಒಂದು ವೇದಿಕೆಯಾಗಿದೆ. Ultimate Multisite ಸಮುದಾಯವನ್ನು ಪ್ರವೇಶಿಸಲು https://community.ultimatemultisite.com/home ಗೆ ಹೋಗಿ.
 

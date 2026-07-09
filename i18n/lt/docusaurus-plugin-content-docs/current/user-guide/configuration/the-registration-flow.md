@@ -3,13 +3,13 @@ title: Registracijos procesas
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registracijos procesas (v2)
+# Registracijos procesas (v2) {#the-registration-flow-v2}
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 
 Visi vartotojai gali registruotis į jūsų tinklą skirtingais būdais. Jie gali naudoti jūsų registracijos formą arba pasidalinamos nuorodą pre-išpasirštu planui. Šiuo metu pateiksime, kaip jūsų klientai gali registruotis jūsų tinklyje naudojant turimus būdus ir ką sužysti po registracijos įvykimo jūsų tinklyje.
 
-## Registracijos formos naudojimas:
+## Registracijos formos naudojimas: {#using-the-registration-form}
 
 Tai yra standartinis registracijos procesas. Jūs kuriate registracijos puslapį su **checkout forma** (pirkimo/registracijos forma), ir tai bus vieta, kur vartotojai eina registruotis jūsų tinklyje ir užsiprenasti planą. Galite turėti kelis registracijos puslapis, kiekviena su skirta skirtinga registracijos forma, jei norite.
 
@@ -35,13 +35,13 @@ Jei jie suregistoje mokamyje plane ar el. pašto patvirtinimas nėra privalomas 
 
 ![Svetainė aktyvuota su nuorodą į dashboardo priscrieti](/img/frontend/site-activated.png)
 
-## Shareable Link naudojimas:
+## Shareable Link naudojimas: {#using-a-shareable-link}
 
 Registracijos procesas naudojant shareable link yra pagrindinis tas pats kaip registracijos forma, vienintelis skirtumas to, kad naudojant shareable link, jūsų klientai galės prekę ar svetainės šablono iš anksto pasirinkti kasamos užsakymo formoje (pateikta skyriui Pre-selecting products and templates via URL parameters) arba galbūt pridėti kupono kodą (pateikta skyriui Using URL Parameters).
 
 Registracijos procesas bus tas pats: jie turės įvesti savo vardą, vartotojo vardą, el. pašto adresą, svetainės pavadinimą ir pavadinimą, o plan ar svetainės šablonas jau bus iš anksto pasirinktas jums.
 
-### Registracija naudojant manualias mokėjimą:
+### Registracija naudojant manualias mokėjimą: {#registering-using-manual-payments}
 
 Jei jūs ne norite naudoti PayPal, Stripe ar kitą mokėjimo įgaitą, kurį siūlo Ultimate Multisite arba jo papildomai integracijos, galite naudoti manualias mokėjimą jūsų klientams. Šiu būdu galite pateikti jiems paskolos skaičių, kuriuos jie bus mokėti savo mėgstamajam mokėjimo procesoriui po to, kai suregistoje jūsų tinkluose.
 

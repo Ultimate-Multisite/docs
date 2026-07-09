@@ -3,11 +3,11 @@ title: Riferimento agli hook
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Riferimento degli hook
+# Riferimento degli hook {#hooks-reference}
 
 Documentazione generata automaticamente per tutte le **59 azioni** e i **118 filtri** in Ultimate Multisite.
 
-## Azioni
+## Azioni {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Si attiva prima del reindirizzamento di autenticazione.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Si attiva immediatamente prima che venga impostato il cookie di autenticazione.
@@ -70,7 +70,7 @@ Documentazione generata automaticamente per tutte le **59 azioni** e i **118 fil
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Si attiva dopo che un oggetto viene memorizzato nel database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Consente agli sviluppatori di plugin di aggiungere azioni al processo di sblocco.
 
-## Filtri
+## Filtri {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtra la durata del periodo di scadenza del cookie di autenticazione.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtra lo schema di reindirizzamento dell'autenticazione.

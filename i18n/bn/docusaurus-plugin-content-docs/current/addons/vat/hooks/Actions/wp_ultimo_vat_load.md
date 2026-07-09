@@ -4,15 +4,15 @@ title: কার্যক্রম - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Action: wp_ultimo_vat_load
+# Action: wp_ultimo_vat_load {#action-wpultimovatload}
 
 যখন সমস্ত নির্ভরতা (dependencies) লোড হয়ে যায় তখন এটি ট্রিগার হয়।
 
 প্লাগইন ডেভেলপারদের নতুন কার্যকারিতা যোগ করতে এটি সাহায্য করে। উদাহরণস্বরূপ, নতুন হোস্টিং প্রোভাইডারের জন্য সাপোর্ট যোগ করা যেতে পারে।
 
-### Since
+### Since {#since}
 
 - 1.0.0
-### Source
+### Source {#source}
 
 [`inc/class-wp-ultimo-vat.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-vat/blob/main/inc/class-wp-ultimo-vat.php#L95) ফাইলে লাইন ৯৫-এ সংজ্ঞায়িত।

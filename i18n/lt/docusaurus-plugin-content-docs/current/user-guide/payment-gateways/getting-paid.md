@@ -3,13 +3,13 @@ title: Mokėjimų gavimas
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Mokėjimų gavimas (v2)
+# Mokėjimų gavimas (v2) {#getting-paid-v2}
 
 _**SVARBI PASTABA: šiame straipsnyje kalbama apie Ultimate Multisite 2.x versiją.**_
 
 Ultimate Multisite turi integruotą narystės ir atsiskaitymo sistemą. Kad mūsų atsiskaitymo sistema veiktų, integravome dažniausiai e. prekyboje naudojamus mokėjimo šliuzus. Numatytieji mokėjimo šliuzai Ultimate Multisite yra _Stripe_ , _PayPal_ ir Manual Payment. Taip pat galite naudoti _WooCommerce_ , _GoCardless_ ir _Payfast_ mokėjimams gauti, įdiegę atitinkamus jų priedus.
 
-## Pagrindiniai nustatymai
+## Pagrindiniai nustatymai {#basic-settings}
 
 Bet kurį iš šių mokėjimo šliuzų galite konfigūruoti Ultimate Multisite mokėjimų nustatymuose. Juos rasite eidami į **Ultimate Multisite meniu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Tai neleidžia narystei atrodyti kaip automatiškai atnaujinamai, kai šliuzas g
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kur rasti šliuzus:
+## Kur rasti šliuzus: {#where-to-find-the-gateways}
 
 Mokėjimo šliuzus galite nustatyti tame pačiame puslapyje ( **Ultimate Multisite > Settings > Payments**). Iš karto po **aktyviais mokėjimo šliuzais** galėsite matyti: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ir _Manual_.
 
@@ -67,7 +67,7 @@ Taip pat štai visas mokėjimo šliuzų nustatymų vaizdas:
 
 Dabar, jei norite naudoti _WooCommerce_ , _GoCardless_ arba _Payfast_ kaip savo mokėjimo šliuzą, turėsite **įdiegti ir sukonfigūruoti jų priedus**.
 
-### Kaip įdiegti WooCommerce priedą:
+### Kaip įdiegti WooCommerce priedą: {#how-to-install-the-woocommerce-add-on}
 
 Suprantame, kad _Stripe_ ir _PayPal_ kai kuriose šalyse nėra prieinami, o tai riboja arba trukdo Ultimate Multisite naudotojams veiksmingai naudoti mūsų plugin. Todėl sukūrėme priedą, kad integruotume _WooCommerce,_ kuris yra labai populiarus e. prekybos plugin. Kūrėjai visame pasaulyje sukūrė priedus, kad integruotų į jį skirtingus mokėjimo šliuzus. Pasinaudojome tuo, kad išplėstume mokėjimo šliuzus, kuriuos galite naudoti su Ultimate Multisite atsiskaitymo sistema.
 
@@ -95,7 +95,7 @@ Aktyvavę jį, jei savo svetainėje vis dar neturite įdiegto ir aktyvuoto WooCo
 
 Norėdami daugiau sužinoti apie WooCommerce Integration priedą, **spustelėkite čia**.
 
-### Kaip įdiegti GoCardless priedą:
+### Kaip įdiegti GoCardless priedą: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ priedo diegimo veiksmai iš esmės yra tokie patys kaip _WooCommerce_ priedo. Eikite į priedų puslapį ir pasirinkite **Ultimate Multisite: GoCardless Gateway** priedą.
 
@@ -111,7 +111,7 @@ Kai diegimas bus baigtas, būsite nukreipti į plugins puslapį. Čia tiesiog sp
 
 Norėdami sužinoti, kaip pradėti naudotis _GoCardless_ gateway, **perskaitykite šį straipsnį**.
 
-### Kaip įdiegti Payfast priedą:
+### Kaip įdiegti Payfast priedą: {#how-to-install-the-payfast-add-on}
 
 Eikite į priedų puslapį ir pasirinkite **Ultimate Multisite: Payfast Gateway** priedą.
 

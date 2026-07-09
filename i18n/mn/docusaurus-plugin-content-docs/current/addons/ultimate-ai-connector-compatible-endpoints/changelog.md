@@ -5,9 +5,9 @@ title: >-
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints өөрчлөлтийн тэмдэглэл
+# Ultimate AI Connector for Compatible Endpoints өөрчлөлтийн тэмдэглэл {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Хувилбар 2.0.0 — 2026-04-24-нд гарсан
+## Хувилбар 2.0.0 — 2026-04-24-нд гарсан {#version-200--released-on-2026-04-24}
 
 * Шинэ: Олон үйлчилгээ үзүүлэгчийн дэмжлэг — олон AI endpoint тохируулж, үйлчилгээ үзүүлэгчид хооронд автомат нөөц шилжилтээр хүсэлтүүдийг чиглүүлнэ.
 * Засвар: Зөв үйлчилгээ үзүүлэгчийн ID, бүртгэлийн URL болон үйлчилгээ үзүүлэгч тус бүрийн HTTP шүүлтүүрийн хамрах хүрээтэй олон үйлчилгээ үзүүлэгчийн SDK интеграц.
@@ -18,4 +18,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Засвар: Хуудас ачаалах бүрд ажилладаг байсан блоклох HTTP хүсэлтийг устгасан.
 * Сайжруулсан: GitHub Actions workflow-уудыг Node.js 24 болгон шинэчилсэн.
 
-## Хувилбар 1.0.0 — Анхны хувилбар
+## Хувилбар 1.0.0 — Анхны хувилбар {#version-100--initial-release}

@@ -3,13 +3,13 @@ title: O fluxo de registro
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# O Fluxo de Registro (v2)
+# O Fluxo de Registro (v2) {#the-registration-flow-v2}
 
 _**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 
 Os usuários podem se registrar de diferentes maneiras na sua rede. Eles podem usar seu formulário de registro ou um link compartilhável para um plano pré-selecionado. Aqui mostraremos como seus clientes podem se registrar na sua rede usando os caminhos disponíveis e o que acontece depois que eles se registram na sua rede.
 
-## Usando o Formulário de Registro:
+## Usando o Formulário de Registro: {#using-the-registration-form}
 
 Este é o processo de registro padrão. Você cria uma página de registro com um **formulário de finalização de compra** e será nela que seus clientes irão se registrar na sua rede e assinar um plano. Você pode ter várias páginas de registro, cada uma com um formulário de registro diferente, se quiser.
 
@@ -35,13 +35,13 @@ Se eles se registraram em um plano pago ou se a verificação de email não for 
 
 ![Site ativado com link para entrar no dashboard](/img/frontend/site-activated.png)
 
-## Usando um Link Compartilhável:
+## Usando um Link Compartilhável: {#using-a-shareable-link}
 
 O processo de registro usando um link compartilhável é basicamente o mesmo do formulário de registro; a única diferença é que, usando um link compartilhável, seus clientes podem ter um produto ou modelo de site pré-selecionado no formulário de finalização de compra (consulte a seção Pré-selecionando produtos e modelos via parâmetros de URL) ou talvez um código de cupom adicionado (consulte a seção Usando Parâmetros de URL).
 
 O processo de registro será o mesmo: eles precisarão preencher nome, nome de usuário, endereço de email, nome e título do site etc... mas o plano ou modelo de site já estará pré-selecionado para eles.
 
-### Registrando Usando Pagamentos Manuais:
+### Registrando Usando Pagamentos Manuais: {#registering-using-manual-payments}
 
 Se você não quiser usar PayPal, Stripe ou qualquer outro gateway de pagamento oferecido pelo Ultimate Multisite ou por suas integrações de add-ons, você pode usar pagamentos manuais para seus clientes. Dessa forma, você pode gerar uma fatura para eles pagarem no processador de pagamento de sua preferência depois que eles se registrarem na sua rede.
 

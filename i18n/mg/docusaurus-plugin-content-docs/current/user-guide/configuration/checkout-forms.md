@@ -3,7 +3,7 @@ title: Fomba Fandefasana
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms dia fomba mora sy malalaka mba hanandrana fomba samihafa rehefa mitady hanovana mpanjifa vaovao.
 
@@ -36,13 +36,13 @@ Mba hafa, azonao manova na manao miverimberina ireo forms efa anananao amin'ny a
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Fampahafantarana ny Checkout Form Editor
+#### Fampahafantarana ny Checkout Form Editor {#checkout-form-editor-overview}
 
 Ny checkout form editor dia manome fitaovana feno ho an'ny fanamboarana ireo registration forms anareo. Ireto misy famintinana momba ny endriky ny editor:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Fanovana Checkout Form
+### Fanovana Checkout Form {#editing-a-checkout-form}
 
 Afaka mamorona checkout forms isan-karazany ho an'ny tanjona samihafa ianao. Amin'ity ohatra ity dia hiasa amin'ny registration form isika.
 
@@ -112,7 +112,7 @@ Mba hahazoana ny shortcode an'ilay form dia tsindrio ny "Generate Shortcode" ary
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Ny Champin'ny Tabilao Vidiny (The Pricing Table Field)
+### Ny Champin'ny Tabilao Vidiny (The Pricing Table Field) {#the-pricing-table-field}
 
 Ny champin'ny **Pricing Table** dia mampiseho ny vokatrao eo amin'ny checkout form mba hahafahana misafidy toromarika iray ny mpanjifa. Rehefa manova ity champin'ity ity ianao, dia afaka mametraka safidy maromaro ianao:
 
@@ -130,17 +130,17 @@ Ity misy fomba miseho an'ilay pricing table eo amin'ny frontend registration for
 
 Raha ampiana vokatra iray ao amin'ny Pricing Table ianao mialoha fa tsy misy ireo champin'ilay ilaina mba hanatanterahana ny fomba fandraisana vola an'io vokatra io, dia hiseho famantarana (warning) eo amin'ny editor. Ampiasao io famantarana io mba hanampiana ny champin'ny ilaina alohan'ny famoahana na fanovana ho an'ny registration form mivantana.
 
-### Fanampana ny Fandrefesana ny Fotoana
+### Fanampana ny Fandrefesana ny Fotoana {#adding-a-period-selection-toggle}
 
 Raha efa nanamboarina [Price Variations](creating-your-first-subscription-product#price-variations) ianao eo amin'ny vokatrao (ohatra, vidiny isam-bolana sy isan-taona), dia afaka manampy **Period Selection** (Fanomezana safidy fotoana) iray ao amin'ny *checkout form* anao ianao. Ity fampisehoana ity dia mampiseho toggle izay ahafahan'ny mpanjifa mifindra eo amin'ireo fotoana fandoavam-bola samihafa, ary ny tabilao vidiny dia miova mandeha amin'ny fotoana tena izy (dynamically) rehefa misy fiovana.
 
-#### Dingana 1: Fametrahana Price Variations eo amin'ny Vokatrao
+#### Dingana 1: Fametrahana Price Variations eo amin'ny Vokatrao {#step-1-set-up-price-variations-on-your-products}
 
 Alohan'ny hanampiana ny *Period Selection* ianao, dia ataovy antoka fa efa voafetra ny vokatrao ireo amin'ny *price variations*. Mandehana any amin'i **Ultimate Multisite > Products**, ovain-teny (edit) ny vokatra iray ary mandehana any amin'ny tabilao **Price Variations** mba hanampiana fotoana fandoavam-bola hafa (ohatra, isan-taona amin'ny vidiny latsaky ny tsena).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Dingana 2: Fametrahana ny Period Selection ao amin'ny Checkout Form anao
+#### Dingana 2: Fametrahana ny Period Selection ao amin'ny Checkout Form anao {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Mandehana any amin'i **Ultimate Multisite > Checkout Forms** ary ovain-teny (edit) ny *checkout form* anao.
 
@@ -163,13 +163,13 @@ Alohan'ny hanampiana ny *Period Selection* ianao, dia ataovy antoka fa efa voafe
 
 7. Keteza ny **Save Field**.
 
-#### Dingana 3: Apetaho eo ambony ny tabilao vidiny (Pricing Table) ilay champ
+#### Dingana 3: Apetaho eo ambony ny tabilao vidiny (Pricing Table) ilay champ {#step-3-position-the-field-above-the-pricing-table}
 
 Mba hahazoana traikefa tsara indrindra ho an'ny mpampiasa, dia ataovy antoka fa miseho aloha ny champ Period Selection **alohan'ny** Pricing Table ao amin'ny dingana checkout anareo. Afaka manodina (drag) ireo champs ianao mba hanovana ny filaharany ao amin'ny checkout form editor. Amin'izay fomba, safidy ny mpividy aloha ny fotoana fandraisana vola ary avy eo dia hitaky vidiny ho an'io fotoana io izy.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Ahoana no miasa amin'ny Frontend (Eo anatrehan'ny mpanjifa)
+#### Ahoana no miasa amin'ny Frontend (Eo anatrehan'ny mpanjifa) {#how-it-works-on-the-frontend}
 
 Rehefa vita ny fametrahana azy, ireo mpampiasa mijery ny pejy fandraisana anareo dia hahita ny safidy fotoana (period selector) eo ambony ny tabilao vidiny. Rehefa tsindrin'izy ireo ny fotoana fandraisana vola hafa:
 
@@ -177,7 +177,7 @@ Rehefa vita ny fametrahana azy, ireo mpampiasa mijery ny pejy fandraisana anareo
   * Raha tsy voafetra ny **Force Different Durations** ao amin'ny champ Pricing Table dia ho afaka hiditra an-tsokosoko ireo vokatra izay tsy misy fahasamihafana amin'ny vidiny ho an'io fotoana io.
   * Raha voafetra ny **Force Different Durations** dia ho hita foana avy ireo vokatra rehetra na dia tsy misy fahasamihafana amin'ny vidiny ho an'io fotoana io aza (hoaneho ny vidiny fototra azy izy).
 
-#### Fametrahana aloha ny Fotoana Fandraisana Vola amin'ny alalan'ny URL
+#### Fametrahana aloha ny Fotoana Fandraisana Vola amin'ny alalan'ny URL {#pre-selecting-a-billing-period-via-url}
 
 Afaka manome safidy mialoha ny vokatra sy ny fotoana fandraisana vola ianao amin'ny alalan'ny URL. Manohana ireo format URL ireo ny Ultimate Multisite:
 
@@ -185,11 +185,11 @@ Afaka manome safidy mialoha ny vokatra sy ny fotoana fandraisana vola ianao amin
   * `/register/premium/12` — Mampiditra mialoha ny vokatra sy ny faharetana 12 volana
   * `/register/premium/1/year` — Mampiditra mialoha ny vokatra miaraka amin'ny faharetana 1 taona
 
-### Ny Champ Fafana Template (Template Selection Field)
+### Ny Champ Fafana Template (Template Selection Field) {#the-template-selection-field}
 
 Ny champ **Template Selection** dia mamela ny mpividy misafidy template ho an'ny tranokala mandritra ny checkout. Eto anio dia voarakitra ao anatin'ny **single step** sy ny **multi-step** checkout form templates izay ampiana ao amin'ny Ultimate Multisite v2.6.1.
 
-#### Fampidirana azy manokana (Adding the field manually)
+#### Fampidirana azy manokana (Adding the field manually) {#adding-the-field-manually}
 
 Raha ianao mitarika amin'ny form izay natao talohan'ny v2.6.1, na nanomboka tamin'ny template fotsiny:
 
@@ -200,11 +200,11 @@ Raha ianao mitarika amin'ny form izay natao talohan'ny v2.6.1, na nanomboka tami
    - **Label** — Io lohateny izay hitan'ny mpanjifa eo ambony tamin'ny grid an'ny template ianao (ohatra: "Safidio ny template toerana").
    - **Required** — Raha tsy maintsy misafidy template alohan'ny hanohy ny mpanjifa.
 
-#### Ahoana no fiasany
+#### Ahoana no fiasany {#how-it-works}
 
 Rehefa misafidy template iray ny mpanjifa mandritra ny checkout dia ampiasain'i Ultimate Multisite izany rehefa mamorona ny toerany vaovao ho azy. Ireo template haseho dia avy amin'ny lisitry ny **Site Templates** anao (**Ultimate Multisite > Site Templates**). Ny template izay voamarina fa azo ampiasaina ho an'ny mpanjifa ihany no hita eto.
 
-### Checkout-form base domains
+### Checkout-form base domains {#checkout-form-base-domains}
 
 Ny Ultimate Multisite v2.13.0 dia manao ny domain voatendry ao amin'ny champs **Site URL** amin'ny checkout form ho toy ny network base domains (domain fototra an'ny tambajotra). Ampiasao ny fepetra momba ny available-domain an'ilay field rehefa te-handray ny mpanjifa hamorona toerana eo ambanin'ny domain famerenana iombonana iray na maromaro, toy ny `example.com` sy `sites.example.com`.
 
@@ -212,6 +212,6 @@ Tsy voatendry ho mapping an'ny domain manokana isaky ny toerana ireo checkout-fo
 
 Ataovy ho domain manokana (custom domains) ireo ho an'ny host mifandray amin'ny mpanjifa isaky ny toerana, toy ny `customer-example.com`. Avelao ho domain fototra an'ny checkout form ho an'ny host famerenana iombonana izay azo ampiasain'ny toerana maro.
 
-#### Famoahana ilay field
+#### Famoahana ilay field {#removing-the-field}
 
 Raha tsy manolotra site templates ianao, esory ny champ "Template Selection" amin'ny forms-nao. Ny mpanjifa dia handray ilay template fa voafidy ao anatin'ny **Ultimate Multisite > Settings > Site Templates** no voatendry azy.

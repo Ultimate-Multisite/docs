@@ -3,11 +3,11 @@ title: Kabliukų žinynas
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook’ų nuoroda
+# Hook’ų nuoroda {#hooks-reference}
 
 Automatiškai sugeneruota dokumentacija visiems **59 veiksmams** ir **118 filtrams** Ultimate Multisite.
 
-## Veiksmai
+## Veiksmai {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Suveikia prieš autentifikavimo peradresavimą.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Suveikia iškart prieš nustatant autentifikavimo slapuką.
@@ -70,7 +70,7 @@ Automatiškai sugeneruota dokumentacija visiems **59 veiksmams** ir **118 filtra
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Suveikia po to, kai objektas įrašomas į duomenų bazę.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Leidžia plugin kūrėjams pridėti veiksmus prie atrakinimo proceso.
 
-## Filtrai
+## Filtrai {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtruoja autentifikavimo slapuko galiojimo laikotarpio trukmę.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtruoja autentifikavimo peradresavimo schemą.

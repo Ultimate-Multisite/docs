@@ -3,9 +3,9 @@ title: Primers passos amb el desenvolupament de complements
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Desenvolupament de complements
+# Desenvolupament de complements {#addon-development}
 
-## Estructura del complement
+## Estructura del complement {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Plantilla del fitxer principal del complement
+## Plantilla del fitxer principal del complement {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Exemple de model personalitzat
+## Exemple de model personalitzat {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integració de la pàgina d'administració
+## Integració de la pàgina d'administració {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Provar el vostre addon
+## Provar el vostre addon {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Punts d’extensió de v2.13.0
+## Punts d’extensió de v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 afegeix diversos punts d’extensió que són útils per a addons que s’integren amb inquilins sobirans, dominis de checkout o automatització de DNS del proveïdor d’allotjament.
 
-### URL de gestió de SSO i del lloc principal
+### URL de gestió de SSO i del lloc principal {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Dominis base del formulari de checkout
+### Dominis base del formulari de checkout {#checkout-form-base-domains}
 
 Useu `wu_checkout_form_base_domains` quan el vostre addon proporcioni dominis base compartits addicionals que s’haurien de comportar com a dominis de **Site URL** del formulari de checkout en lloc de mapatges personalitzats per lloc:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite normalitza aquests hosts i omet els registres automàtics de dominis mapats per lloc per a ells.
 
-### Creació automàtica de registres de domini
+### Creació automàtica de registres de domini {#automatic-domain-record-creation}
 
 Useu `wu_should_create_domain_record_for_site` quan el vostre addon hagi de suprimir o ajornar la creació automàtica de registres de domini per a un lloc acabat de crear:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Les integracions amb proveïdors d’allotjament que escolten `wu_add_subdomain` poden crear registres DNS al costat del proveïdor quan es creen llocs. Si no hi ha cap integració registrada per a aquesta acció, Ultimate Multisite omet la tasca en segon pla buida.
 
-## Passos següents
+## Passos següents {#next-steps}
 
 - Reviseu la [Referència de hooks](/developer/hooks) per veure les accions i els filtres disponibles
 - Consulteu la [Visió general de REST API](/developer/rest-api/overview) per a la integració amb l’API

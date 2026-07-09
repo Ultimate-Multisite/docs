@@ -3,9 +3,9 @@ title: एडअन विकास सुरु गर्दै
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon विकास
+# Addon विकास {#addon-development}
 
-## Addon संरचना
+## Addon संरचना {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## मुख्य Addon फाइल टेम्प्लेट
+## मुख्य Addon फाइल टेम्प्लेट {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## कस्टम मोडेल उदाहरण
+## कस्टम मोडेल उदाहरण {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin पृष्ठ एकीकरण
+## Admin पृष्ठ एकीकरण {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## तपाईंको Addon परीक्षण गर्दै
+## तपाईंको Addon परीक्षण गर्दै {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 विस्तार बिन्दुहरू
+## v2.13.0 विस्तार बिन्दुहरू {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 ले sovereign tenants, checkout domains, वा host-provider DNS automation सँग एकीकृत हुने addons का लागि उपयोगी हुने धेरै विस्तार बिन्दुहरू थप्छ।
 
-### SSO र मुख्य-साइट व्यवस्थापन URLहरू
+### SSO र मुख्य-साइट व्यवस्थापन URLहरू {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-form आधार domains
+### Checkout-form आधार domains {#checkout-form-base-domains}
 
 तपाईंको addon ले प्रति-साइट custom mappings को सट्टा checkout-form **Site URL** domains जस्तै व्यवहार गर्नुपर्ने थप shared base domains प्रदान गर्दा `wu_checkout_form_base_domains` प्रयोग गर्नुहोस्:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite ले यी hosts लाई normalizes गर्छ र तिनका लागि स्वचालित प्रति-साइट mapped-domain records छोड्छ।
 
-### स्वचालित domain-record सिर्जना
+### स्वचालित domain-record सिर्जना {#automatic-domain-record-creation}
 
 तपाईंको addon ले भर्खरै सिर्जना गरिएको साइटका लागि स्वचालित domain-record सिर्जनालाई रोक्न वा पछि सार्न आवश्यक हुँदा `wu_should_create_domain_record_for_site` प्रयोग गर्नुहोस्:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` सुन्ने host-provider integrations ले साइटहरू सिर्जना हुँदा provider-side DNS records सिर्जना गर्न सक्छन्। यदि त्यो action का लागि कुनै integration दर्ता गरिएको छैन भने, Ultimate Multisite ले खाली background job छोड्छ।
 
-## अर्को चरणहरू
+## अर्को चरणहरू {#next-steps}
 
 - उपलब्ध actions र filters का लागि [Hooks Reference](/developer/hooks) समीक्षा गर्नुहोस्
 - API integration का लागि [REST API Overview](/developer/rest-api/overview) हेर्नुहोस्

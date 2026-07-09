@@ -3,13 +3,13 @@ title: Te Whiwhi Utu
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Te Whiwhi Utu (v2)
+# Te Whiwhi Utu (v2) {#getting-paid-v2}
 
 _**TUHIPOKA NUI: E kōrero ana tēnei tuhinga mō Ultimate Multisite putanga 2.x.**_
 
 He pūnaha mematanga me te pire kua hangaia ki roto i Ultimate Multisite. Kia mahi ai tā mātou pūnaha pire, kua whakaurua e mātou ngā kuwaha utu e tino whakamahia ana i te tauhokohoko tuihono. Ko ngā kuwaha utu taunoa i Ultimate Multisite ko _Stripe_ , _PayPal_ , me te Utu ā-ringa. Ka taea hoki e koe te whakamahi i _WooCommerce_ , _GoCardless_ me _Payfast_ ki te whiwhi utu mā te tāuta i ā rātou tāpiritanga motuhake.
 
-## Ngā Tautuhinga Taketake
+## Ngā Tautuhinga Taketake {#basic-settings}
 
 Ka taea e koe te whirihora i tētahi o ēnei kuwaha utu i raro i ngā tautuhinga utu o Ultimate Multisite. Ka kitea mā te haere ki **tahua Ultimate Multisite > Tautuhinga > Ngā Utu.**
 
@@ -39,7 +39,7 @@ Ka ārai tēnei i te āhua o tētahi mematanga me te mea nei ka whakahou-aunoa, 
 
 <!-- Kāore he whakaahuamata: Ngā āpure tau nama pire e whai ake nei me te kuhimua tau nama pire e whakaaturia ana ina tīpakohia te Tau Raupapa -->
 
-## Kei hea kitea ai ngā kuwaha:
+## Kei hea kitea ai ngā kuwaha: {#where-to-find-the-gateways}
 
 Ka taea e koe te whakarite i ngā kuwaha utu i taua whārangi anō ( **Ultimate Multisite > Tautuhinga > Ngā Utu**). Kei raro tonu iho i **ngā kuwaha utu hohe** , ka taea e koe te kite i: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ me _Ā-ringa_.
 
@@ -67,7 +67,7 @@ Anei hoki tētahi tirohanga katoa o ngā tautuhinga kuwaha utu:
 
 Inaianei, ki te hiahia koe ki te whakamahi i _WooCommerce_ , _GoCardless_ rānei, _Payfast_ rānei hei tō kuwaha utu, me **tāuta me te whirihora i ā rātou tāpiritanga**.
 
-### Me pēhea te tāuta i te tāpiritanga WooCommerce:
+### Me pēhea te tāuta i te tāpiritanga WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 E mārama ana mātou kāore a _Stripe_ me _PayPal_ i te wātea i ētahi whenua, ā, ka whakawhāiti, ka aukati rānei i ngā kaiwhakamahi Ultimate Multisite kia kore e whakamahi tōtika i tā mātou plugin. Nō reira i hangaia e mātou tētahi tāpiritanga hei whakauru i _WooCommerce,_ he plugin tauhokohoko tuihono tino rongonui. Kua hangaia e ngā kaiwhakawhanake huri noa i te ao ngā tāpiritanga hei whakauru i ngā kuwaha utu rerekē ki reira. I whakamahia e mātou tēnei painga hei whakawhānui i ngā kuwaha utu ka taea e koe te whakamahi me te pūnaha pire Ultimate Multisite.
 
@@ -95,7 +95,7 @@ I muri i te whakahohe, mēnā kāore tonu te mono WooCommerce kia tāutatia, kia
 
 Hei pānui anō mō te tāpiritanga WooCommerce Integration, **pāwhiritia ki konei**.
 
-### Me pēhea te tāuta i te tāpiritanga GoCardless:
+### Me pēhea te tāuta i te tāpiritanga GoCardless: {#how-to-install-the-gocardless-add-on}
 
 He ōrite tonu ngā hipanga hei tāuta i te tāpiritanga _GoCardless_ ki ērā mō te tāpiritanga _WooCommerce_. Tēnā haere ki te whārangi tāpiritanga, ā, tīpakohia te tāpiritanga **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Ina oti te tāutanga, ka tukuna anō koe ki te whārangi mono. I konei, pāwhiri
 
 Hei ako me pēhea te tīmata ki te kūwaha _GoCardless_, **pānuitia tēnei tuhinga**.
 
-### Me pēhea te tāuta i te tāpiritanga Payfast:
+### Me pēhea te tāuta i te tāpiritanga Payfast: {#how-to-install-the-payfast-add-on}
 
 Haere ki te whārangi tāpiritanga, ā, tīpakohia te tāpiritanga **Ultimate Multisite: Payfast Gateway**.
 

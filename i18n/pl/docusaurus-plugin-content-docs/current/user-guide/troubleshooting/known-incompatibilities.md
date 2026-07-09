@@ -3,7 +3,7 @@ title: Znane niekompatybilności
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Znane niekompatybilności z innymi wtyczkami
+# Znane niekompatybilności z innymi wtyczkami {#known-incompatibilities-with-other-plugins}
 
 Po zainstalowaniu i aktywacji Ultimate Multisite możesz napotkać problemy wynikające z nierozwiązanych niekompatybilności z innymi wtyczkami.
 

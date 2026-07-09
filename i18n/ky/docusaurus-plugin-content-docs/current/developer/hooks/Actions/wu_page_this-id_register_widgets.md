@@ -4,13 +4,13 @@ title: 'Аракет - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Action: wu_page_\{$this->id\}_register_widgets
+# Action: wu_page_\{$this->id\}_register_widgets {#action-wupagethis-idregisterwidgets}
 
 Бул барак үчүн виджеттер катталгандан кийин иштейт.
 
 The dynamic portion of the hook name, `$this-&gt;id`, refers to the page id.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -18,9 +18,9 @@ The dynamic portion of the hook name, `$this-&gt;id`, refers to the page id.
 | $page_hook | `string` | Барактын hook'у. |
 | $page | `object` | Барактын объекти. |
 
-### Чыгарылган версиясы
+### Чыгарылган версиясы {#since}
 
 - 2.4.10
-### Булак
+### Булак {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L755) ичинде 755-сапта аныкталган

@@ -3,7 +3,7 @@ title: Tema PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Ngatur Panel Adminmu nganggo PRO Theme
+# Ngatur Panel Adminmu nganggo PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Sering nalika nggawe kerja kanggo klien, kita butuh menehi pengalaman khusus marang klien ing dashboard admin WordPress. Yen sampeyan lagi nyari tampilan lan rasa sing luwih profesional, PRO Theme bisa mbantu sampeyan.
 

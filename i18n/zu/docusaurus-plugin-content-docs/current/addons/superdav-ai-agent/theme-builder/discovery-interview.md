@@ -3,35 +3,35 @@ title: Inhlolokhono Yokuthola Ulwazi
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Ingxoxo Yokuthola Ulwazi
+# Ingxoxo Yokuthola Ulwazi {#discovery-interview}
 
 I-**Ingxoxo Yokuthola Ulwazi** iyisinyathelo sokuqala enqubweni yokuklama ye-Theme Builder. Iqoqa ulwazi mayelana nesayithi lakho, ibhizinisi lakho, nezintandokazi zakho zokuklama ukuze kwakhiwe itimu eyenzelwe wena.
 
-## Ukubuka konke
+## Ukubuka konke {#overview}
 
 Ingxoxo Yokuthola Ulwazi ikuqondisa ochungechungeni lwemibuzo ukuze kuqondwe uhlobo lomkhiqizo wakho, izethameli ozihlosile, nemigomo yokuklama. Enguqulweni 1.16.0, ingxoxo manje ifaka **isinyathelo sokulayisha izithombe** esikuvumela ukuthi unikeze ugqozi olubonakalayo lomklamo wakho.
 
-## Izinyathelo Zengxoxo
+## Izinyathelo Zengxoxo {#interview-steps}
 
-### 1. Ulwazi Lwebhizinisi
+### 1. Ulwazi Lwebhizinisi {#1-business-information}
 
 - Igama lesayithi nesiqubulo
 - Uhlobo lwebhizinisi noma imboni
 - Imigomo eyinhloko yebhizinisi
 - Incazelo yezethameli ezihlosiwe
 
-### 2. Izintandokazi Zokuklama
+### 2. Izintandokazi Zokuklama {#2-design-preferences}
 
 - Isikimu semibala osithandayo
 - Isitayela sokuklama (sesimanje, sakudala, esilula, esidlalayo, njll.)
 - Amawebhusayithi noma izinhlobo zemikhiqizo ezikugqugquzelayo
 - Izinto zomklamo okufanele zibe khona
 
-### 3. Ukulayisha Izithombe (Okusha ku-v1.16.0)
+### 3. Ukulayisha Izithombe (Okusha ku-v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Layisha isithombe esisodwa noma ngaphezulu ukuze kuthinte indlela yokuklama:
 
-#### Amafomethi Amukelwayo
+#### Amafomethi Amukelwayo {#accepted-formats}
 
 | Ifomethi | Isandiso | Imininingwane |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Layisha isithombe esisodwa noma ngaphezulu ukuze kuthinte indlela yokuklama:
 | **WebP** | `.webp` | Ifomethi yesimanje, usayizi wefayela omncane |
 | **GIF** | `.gif` | Izithombe ezimile kuphela (akukho ukunyakaza) |
 
-#### Izidingo Zefayela
+#### Izidingo Zefayela {#file-requirements}
 
 - **Usayizi omkhulu wefayela:** 10 MB
 - **Ubukhulu obuncane:** 400 × 300 pixels
 - **Ubukhulu obunconywayo:** 1200 × 800 pixels noma ngaphezulu
 - **Isilinganiso sobubanzi nobude:** Noma yisiphi isilinganiso siyamukeleka
 
-#### Indlela Izithombe Ezithinta Ngayo Indlela Yokuklama
+#### Indlela Izithombe Ezithinta Ngayo Indlela Yokuklama {#how-photos-influence-design-direction}
 
 Izithombe ozilayishayo zisiza Theme Builder ukuqonda:
 
@@ -57,21 +57,21 @@ Izithombe ozilayishayo zisiza Theme Builder ukuqonda:
 - **Izinto zomklamo** — amaphethini, ukuthungwa, nezitayela zokuhlelwa
 - **Ugqozi lwe-typography** — izitayela zamafonti ezihambisana netimu ebonakalayo
 
-### 4. Isakhiwo Sokuqukethwe
+### 4. Isakhiwo Sokuqukethwe {#4-content-structure}
 
 - Amakhasi ayinhloko adingekayo (Ikhaya, Mayelana, Izinsizakalo, Xhumana, njll.)
 - Kudingeka isigaba sebhulogi noma sezindaba
 - Kudingeka ukusebenza kokuhweba nge-inthanethi
 - Izici ezikhethekile noma ukuhlanganiswa
 
-### 5. Ukubuyekeza Nokuqinisekisa
+### 5. Ukubuyekeza Nokuqinisekisa {#5-review-and-confirmation}
 
 - Isifinyezo salo lonke ulwazi olunikeziwe
 - Ukuqinisekisa ngaphambi kokuthi ukukhiqizwa komklamo kuqale
 
-## Izindlela Ezingcono Kakhulu Zokulayisha Izithombe
+## Izindlela Ezingcono Kakhulu Zokulayisha Izithombe {#photo-upload-best-practices}
 
-### Okufanele Ukulayishe
+### Okufanele Ukulayishe {#what-to-upload}
 
 - **Ugqozi lomkhiqizo** — amalogo, amasampula emibala, noma imihlahlandlela yomkhiqizo
 - **Amasayithi ezimbangi** — izithombe-skrini zamasayithi owathandayo
@@ -80,7 +80,7 @@ Izithombe ozilayishayo zisiza Theme Builder ukuqonda:
 - **Izithombe zeqembu noma zehhovisi** — zokwakha ubunikazi bomuntu siqu noma bobuchwepheshe
 - **Izithombe zendlela yokuphila** — ezimele izethameli ozihlosile
 
-### Okufanele Ukugweme
+### Okufanele Ukugweme {#what-to-avoid}
 
 - **Izithombe zekhwalithi ephansi** — izithombe ezifiphele noma ezinama-pixel abonakalayo
 - **Izithombe ezingahlobene** — izithombe ezingamele uhlobo lomkhiqizo wakho
@@ -88,7 +88,7 @@ Izithombe ozilayishayo zisiza Theme Builder ukuqonda:
 - **Izinto ezinamalungelo obunikazi** — qinisekisa ukuthi unamalungelo okusebenzisa izithombe
 - **Ama-GIF anyakazayo** — kucutshungulwa kuphela izithombe ezimile
 
-### Amathiphu Emiphumela Engcono Kakhulu
+### Amathiphu Emiphumela Engcono Kakhulu {#tips-for-best-results}
 
 1. **Layisha izithombe ezi-2-3** — izithombe eziningi zinikeza umongo ongcono
 2. **Sebenzisa izithombe zekhwalithi ephezulu** — izithombe ezicacile, ezikhanyiswe kahle zisebenza kangcono
@@ -96,7 +96,7 @@ Izithombe ozilayishayo zisiza Theme Builder ukuqonda:
 4. **Nikeza umongo** — chaza kafushane ukuthi kungani ukhethe isithombe ngasinye
 5. **Cacisa** — uma uthanda into ethile, yikhombe
 
-## Okukhishwayo Kwendlela Yokuklama
+## Okukhishwayo Kwendlela Yokuklama {#design-direction-output}
 
 Ngemuva kweNgxoxo Yokuthola Ulwazi, Theme Builder ikhiqiza:
 
@@ -106,7 +106,7 @@ Ngemuva kweNgxoxo Yokuthola Ulwazi, Theme Builder ikhiqiza:
 - **Izinto ezibonakalayo** — izithonjana, amaphethini, nezinto zokuhlobisa
 - **Ibhodi lomuzwa** — ukumelwa okubonakalayo kwendlela yokuklama
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 Ngemuva kokuqedela Ingxoxo Yokuthola Ulwazi:
 
@@ -115,7 +115,7 @@ Ngemuva kokuqedela Ingxoxo Yokuthola Ulwazi:
 3. Qhubekela esinyathelweni se-[Ndlela Yokuklama](./design-direction.md)
 4. Theme Builder idala itimu yakho yangokwezifiso
 
-## Imibhalo Ehlobene
+## Imibhalo Ehlobene {#related-documentation}
 
 - [Indlela Yokuklama](./design-direction.md) — buyekeza futhi ucije umklamo wakho
 - [Amamenyu Ezokwamukela Izihambi](./hospitality-menus.md) — dala amakhasi emenyu ahlelekile

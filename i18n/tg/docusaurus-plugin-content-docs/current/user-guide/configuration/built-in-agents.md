@@ -3,11 +3,11 @@ title: Агентҳои дарунсохт
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agent-ҳои дарунсохт
+# Agent-ҳои дарунсохт {#built-in-agents}
 
 Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод мекунад, ки ҳар кадом бо маҷмӯаи мутамаркази абзорҳо, system prompt-и мутобиқшуда ва пешниҳодҳои оғозӣ барои вазифаҳои маъмул дар он соҳа пешакӣ танзим шудаанд. Гузариш байни agent-ҳо он чизеро, ки ёвар метавонад анҷом диҳад ва тарзи посухдиҳии онро тағйир медиҳад — бе ҳеҷ гуна танзим аз ҷониби шумо. Superdav AI Agent v1.18.0 метавонад ба ин равандҳои корӣ абзорҳои вобаста ба ҷадвал, сабтҳои ёдрасӣ, дарвозаҳои тасдиқ ва огоҳиномаҳои SMS илова кунад, вақте ки ҳамгироиҳои марбут танзим шудаанд.
 
-## Agent чист?
+## Agent чист? {#what-is-an-agent}
 
 Ҳар agent як профили танзимоти номдор аст, ки инҳоро муттаҳид мекунад:
 
@@ -15,7 +15,7 @@ Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод
 - **System prompt** — дастурҳое, ки оҳанг, афзалиятҳо ва маҳдудиятҳои agent-ро муқаррар мекунанд
 - **Пешниҳодҳо** — prompt-ҳои пешакӣ навишташуда, ки дар интерфейси чат нишон дода мешаванд, то ба шумо барои зуд оғоз кардан кумак кунанд
 
-## Дастрасӣ ба Agent Picker
+## Дастрасӣ ба Agent Picker {#accessing-the-agent-picker}
 
 1. Панели **Gratis AI Agent**-ро дар панели канории мудири WordPress кушоед.
 2. Дар кунҷи болоии чапи сарлавҳаи чат **нишонаи agent**-ро клик кунед (нишона барои инъикоси agent-и фаъол тағйир меёбад).
@@ -24,9 +24,9 @@ Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод
 
 Шумо инчунин метавонед дар миёни суҳбат agent-ҳоро иваз кунед — system prompt-и agent-и нав аз паёми навбатӣ эътибор пайдо мекунад.
 
-## Панҷ Agent-и дарунсохт
+## Панҷ Agent-и дарунсохт {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Тамаркуз:** Эҷод ва таҳрири навиштаҳо, саҳифаҳо ва формаҳои тамос.
 
@@ -47,7 +47,7 @@ Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Тамаркуз:** Эҷоди вебсайт аз аввал то охир аз як prompt.
 
@@ -70,7 +70,7 @@ Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Тамаркуз:** Фармоишисозии визуалӣ — рангҳо, типография, CSS ва намунаҳои блок.
 
@@ -87,7 +87,7 @@ Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод
 - *Аз саҳифаи асосӣ screenshot гиред ва бигӯед, ки чиро беҳтар мекардед.*
 - *Як намунаи блоки hero-и аз нав истифодашаванда бо тасвири пасзаминаи пурпаҳно ва сарлавҳаи марказшуда эҷод кунед.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Тамаркуз:** Кашф, насб ва идоракунии WordPress plugin-ҳо.
 
@@ -105,7 +105,7 @@ Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Тамаркуз:** Посух додан ба саволҳо дар бораи муҳтавои сайт, танзимот ва конфигуратсияи WordPress.
 
@@ -124,7 +124,7 @@ Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод
 
 ---
 
-## Ҳамгироиҳои автоматсозии Superdav
+## Ҳамгироиҳои автоматсозии Superdav {#superdav-automation-integrations}
 
 Вақте ки ҳамгироиҳои Superdav AI Agent v1.18.0 танзим шудаанд, агентҳои дарунсохт метавонанд дар ҷараёнҳои кории автоматсозии бехатартари бо ҷадвал огоҳ иштирок кунанд:
 
@@ -138,11 +138,11 @@ Gratis AI Agent v1.9.0 панҷ agent-и дарунсохтро пешниҳод
 
 ---
 
-## Фармоишии агентҳо
+## Фармоишии агентҳо {#customising-agents}
 
 Ҳар як агенти дарунсохт метавонад тавассути филтри `gratis_ai_agent_agents` васеъ ё иваз карда шавад.
 
-### Илова кардани дастури системавии фармоишӣ ба агенти мавҷуда
+### Илова кардани дастури системавии фармоишӣ ба агенти мавҷуда {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Сабт кардани агенти нав
+### Сабт кардани агенти нав {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Агенти нав фавран пас аз иҷро шудани филтр дар Agent Picker пайдо мешавад.
 
-### Хориҷ кардани агенти дарунсохт
+### Хориҷ кардани агенти дарунсохт {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

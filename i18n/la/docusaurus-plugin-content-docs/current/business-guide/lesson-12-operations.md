@@ -3,17 +3,17 @@ title: 'Lectio 12: Negotium administrare'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lectio 12: Negotium Gerere
+# Lectio 12: Negotium Gerere {#lesson-12-running-the-business}
 
 Suggestum non est propositum quod perficis -- est negotium quod geris. Haec lectio operationes cotidianas administrandi FitSite tractat: auxilium, rationes solvendi, sustentationem, et clientes laetos servandos.
 
-## Ubi Desivimus
+## Ubi Desivimus {#where-we-left-off}
 
 FitSite publice operatur et clientes se inscribunt. Nunc operationem sustinenter gerere debes.
 
-## Operationes Cotidianae
+## Operationes Cotidianae {#daily-operations}
 
-### Observatio
+### Observatio {#monitoring}
 
 Haec cotidie inspice (aut monitiones constitue):
 
@@ -22,7 +22,7 @@ Haec cotidie inspice (aut monitiones constitue):
 - **Solutiones frustratae**: Suntne solutionis defectus qui attentione indigent?
 - **Postulationes auxilii**: Suntne quaestiones clientium nondum responsae?
 
-### Auxilium Clientibus
+### Auxilium Clientibus {#customer-support}
 
 Intentio tua in angusto mercatu hic commodum est. Quia omnes clientes tui sunt exercitationis studia, easdem quaestiones iterum atque iterum videbis:
 
@@ -36,7 +36,7 @@ Intentio tua in angusto mercatu hic commodum est. Quia omnes clientes tui sunt e
 
 Aedifica basim scientiae tuam (in Lectione 8 coeptam) circa has quaestiones recurrentes. Omne auxilium ticket quod articulus basis scientiae esse potuisset signum est illum articulum scribendi.
 
-### Gradus Auxilii
+### Gradus Auxilii {#support-tiers}
 
 Dum crescis, auxilium secundum planum ordina:
 
@@ -48,9 +48,9 @@ Dum crescis, auxilium secundum planum ordina:
 
 [Support Tickets addon](/addons/support-tickets) adiuvare potest ad postulationes auxilii intra suggestum administrandas.
 
-## Operationes Rationum Solvendarum
+## Operationes Rationum Solvendarum {#billing-operations}
 
-### Solutiones Recurrentes
+### Solutiones Recurrentes {#recurring-payments}
 
 Ultimate Multisite rationes recurrentes automatice per portam solutionis tuam administrat. Munus tuum est observare:
 
@@ -58,7 +58,7 @@ Ultimate Multisite rationes recurrentes automatice per portam solutionis tuam ad
 - **Dunning**: Constitue logicam automatice iterandi per portam solutionis tuam (Stripe hoc bene tractat)
 - **Postulationes abrogationis**: Intellege cur clientes discedant. Omnis abrogatio est feedback.
 
-### Memberships Administrare
+### Memberships Administrare {#managing-memberships}
 
 Naviga ad **Ultimate Multisite > Memberships** ut:
 
@@ -69,13 +69,13 @@ Naviga ad **Ultimate Multisite > Memberships** ut:
 
 Vide [Memberships Administrare](/user-guide/administration/managing-memberships) ad plenam relationem.
 
-### Invoicing
+### Invoicing {#invoicing}
 
 Cura ut invoices recte pro omni solutione generentur. Clientes invoices egere possunt ad relationem sumptuum negotii. Vide [Solutiones et Invoices Administrare](/user-guide/administration/managing-payments-and-invoices).
 
-## Sustentatio Suggesti
+## Sustentatio Suggesti {#platform-maintenance}
 
-### WordPress et Plugin Updates
+### WordPress et Plugin Updates {#wordpress-and-plugin-updates}
 
 Ut administrator retis, responsabilis es pro:
 
@@ -88,14 +88,14 @@ Ut administrator retis, responsabilis es pro:
 Renovatio fracta omnem situm clientis in rete tuo afficit. Semper renovationes in exemplari staging retis tui primum proba.
 :::
 
-### Securitas
+### Securitas {#security}
 
 - Omne software renovatum serva
 - Utere tesseris validis et authenticatione duorum factorum pro admin accounts
 - Activitatem suspectam observa
 - Habe consilium pro incidentibus securitatis
 
-### Effectus
+### Effectus {#performance}
 
 Dum rete tuum crescit, observa:
 
@@ -105,9 +105,9 @@ Dum rete tuum crescit, observa:
 
 Considera caching (page cache, object cache) et CDN instituere, si nondum fecisti. [Cloudflare integratio](/user-guide/host-integrations/cloudflare) multum huius tractat.
 
-## Administratio Circuli Vitae Clientium
+## Administratio Circuli Vitae Clientium {#customer-lifecycle-management}
 
-### Churn Minuere
+### Churn Minuere {#reducing-churn}
 
 Churn est centesima clientium qui quolibet mense abrogant. Pro negotio subscriptionis, churn minuere tam magni momenti est quam novos clientes acquirere.
 
@@ -119,7 +119,7 @@ Churn est centesima clientium qui quolibet mense abrogant. Pro negotio subscript
 - Alternativam viliorem invenerunt → valorem angusti mercatus tui confirma
 - Negotium eorum clausum est → inevitabile, sed hoc separatim vestiga
 
-### Upgrades Fovere
+### Upgrades Fovere {#encouraging-upgrades}
 
 Clientes in Starter qui prospere procedunt ad upgrade incitandi sunt:
 
@@ -127,7 +127,7 @@ Clientes in Starter qui prospere procedunt ad upgrade incitandi sunt:
 - Mitte emails directa proprietates plani Growth illustrantia quibus prodessent
 - Ostende quid clientes Growth/Pro aedificaverint
 
-### Expeditiones ad Recipiendos Clientes
+### Expeditiones ad Recipiendos Clientes {#win-back-campaigns}
 
 Cum cliens abrogat:
 
@@ -135,30 +135,30 @@ Cum cliens abrogat:
 2. Curationem eius, si fieri potest, tracta
 3. Offer remissionem pretii ut redeat (30-60 dies post abrogationem)
 
-## Routines Hebdomadales et Menstruae
+## Routines Hebdomadales et Menstruae {#weekly-and-monthly-routines}
 
-### Hebdomadaliter
+### Hebdomadaliter {#weekly}
 
 - Recognosce novas inscriptiones et abrogationes
 - Responde omnibus apertis auxilii tickets
 - Inspice effectum suggesti et uptime
 - Recognosce quaslibet solutiones frustratas
 
-### Menstrue
+### Menstrue {#monthly}
 
 - Analysa metrica principalia (MRR, churn, novi clientes, upgrades)
 - Applica WordPress et plugin updates (post probationem staging)
 - Recognosce et renova basim scientiae secundum exemplaria auxilii
 - Mitte nuntium periodicum aut renovationem clientibus (novae proprietates, consilia, nuntii industriae exercitationis)
 
-### Trimestri
+### Trimestri {#quarterly}
 
 - Recognosce pretia contra competitores et feedback clientium
 - Aestima consilia exemplarium -- egentne renovatione?
 - Examina capacitatem hosting -- debesne ampliari?
 - Recognosce et meliorem fac initiationem secundum data activationis
 
-## Quid Hac Lectione Aedificavimus
+## Quid Hac Lectione Aedificavimus {#what-we-built-this-lesson}
 
 - **Cotidianae observationis consuetudines** pro uptime, inscriptionibus, solutionibus, et auxilio
 - **Auxilii structura per gradus disposita** gradibus plan congruens

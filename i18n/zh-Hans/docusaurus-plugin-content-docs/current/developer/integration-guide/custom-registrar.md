@@ -3,13 +3,13 @@ title: 构建自定义注册商集成
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# 构建自定义注册商集成
+# 构建自定义注册商集成 {#building-a-custom-registrar-integration}
 
 Domain Seller 附加组件使用了 **集成注册表** (Integration Registry) 模式。每个注册商都是一个实现了 `Domain_Selling_Capability` 接口的 PHP 类，并通过 `wu_domain_seller_register_capabilities` action hook 进行注册。
 
 本指南将展示如何接入自定义的注册商。
 
-## 接口要求
+## 接口要求 {#the-interface}
 
 您的类必须实现 `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` 接口，并继承 `WP_Ultimo\Integrations\Base_Capability_Module` 类。
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### 可选方法
+### 可选方法 {#optional-methods}
 
 实现这些方法可以解锁额外的功能。附加组件通过 `method_exists()` 来检测支持情况：
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | 域名转出（Outgoing） |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | 域名转入（Incoming） |
 
-### 返回值约定
+### 返回值约定 {#return-value-convention}
 
 所有方法都返回一个数组，至少包含一个 `success` 键：
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => '人类可读的错误信息'];
 
 ---
 
-## 注册您的能力
+## 注册您的能力 {#registering-your-capability}
 
 使用 `wu_domain_seller_register_capabilities` action 注册您的类：
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## 为向导添加凭证字段
+## 为向导添加凭证字段 {#adding-credential-fields-to-the-wizard}
 
 要让管理员通过设置向导输入凭证，请注册您的集成：
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## 后注册操作的 Hooks
+## 后注册操作的 Hooks {#hooks-for-post-registration-actions}
 
 使用这些 action 来触发 Webhook、资源配置 (provisioning)、通知或 CRM 更新：
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## 日志记录
+## 日志记录 {#logging}
 
 使用 `wu_log_add()` 写入您提供商特定的日志通道：
 

@@ -3,11 +3,11 @@ title: Krav
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Krav til Ultimate Multisite
+# Krav til Ultimate Multisite {#ultimate-multisite-requirements}
 
 Det første, du må spørge dig selv om, før du køber Ultimate Multisite, er hvilke krav der er for at køre vores plugin. Held og lykke, der er kun få grundlæggende krav til at køre Ultimate Multisite: et **domænenavn**, en god **hostingudbyder** og en WordPress **Multisite** installation. Det er alt, du skal bruge!
 
-## Domænenavn
+## Domænenavn {#domain-name}
 
 Lad os starte med domænenavnet.
 
@@ -17,7 +17,7 @@ Vores plugin tilbyder abonnementsservices, betalingsopsamling, checkout-formular
 
 Enhver niche, du vælger, kan styres ved hjælp af vores plugin, så længe du sælger websteder som en service! Sørg for at vælge et domænenavn, der matcher din forretningsplan.
 
-## Hostingudbyder
+## Hostingudbyder {#hosting-provider}
 
 Nu hvor du har et iøjnefaldende domænenavn, der repræsenterer din niche og virksomhed, skal du vælge en god webhostingvirksomhed til at hoste dit netværk med Ultimate Multisite. Der er nogle gode muligheder på markedet. Nogle hostingudbydere integreres godt med Ultimate Multisite, hvilket kan være en afgørende faktor afhængigt af, hvad du planlægger at bygge.
 
@@ -25,7 +25,7 @@ Ultimate Multisite skal fungere på enhver hostingudbyder. Den eneste forskel er
 
 Når det kommer til serverspecifikationer, findes der ingen specifik formel, da det vil afhænge af de funktioner og formål, du tilbyder, samt størrelsen på dit netværk. En delt hosting kan være en god start, men så snart dit netværk begynder at vokse, vil du sandsynligvis skulle have en dedikeret VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nu skal vi tale lidt om en WordPress Multisite installation.
 

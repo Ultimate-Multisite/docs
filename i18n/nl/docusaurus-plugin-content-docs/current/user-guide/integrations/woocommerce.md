@@ -3,7 +3,7 @@ title: WooCommerce Integratie
 sidebar_position: 9
 _i18n_hash: 64e2517a66a209111e1cdb519a920b37
 ---
-# WooCommerce Integration
+# WooCommerce Integration {#woocommerce-integration}
 
 Deze functie wordt geleverd door de **WooCommerce Integration** addon.
 

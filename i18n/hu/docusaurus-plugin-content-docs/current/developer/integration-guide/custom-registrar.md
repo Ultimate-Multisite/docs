@@ -3,13 +3,13 @@ title: Egy Saját Regisztrátor Integrációépítése
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Saját Regisztrátor Integrációépítés
+# Saját Regisztrátor Integrációépítés {#building-a-custom-registrar-integration}
 
 A Domain Seller addon egy **Integration Registry** (Integrációs Regisztrátor) mintát használja. Minden regisztrátor egy PHP osztály, amely implementálja a `Domain_Selling_Capability`-t, és a `wu_domain_seller_register_capabilities` action hook segítségével regisztrálja magát.
 
 Ez az útmutató mutatja be, hogyan lehet hozzáadni egy saját regisztrátort.
 
-## Az interfész
+## Az interfész {#the-interface}
 
 Az osztályának implementálnia kell a `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability`-t, és örökíteni kell a `WP_Ultimo\Integrations\Base_Capability_Module`-tól.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Opcionális metódusok
+### Opcionális metódusok {#optional-methods}
 
 Implementálja ezeket a metódusokat, hogy további funkciókat szabadíts fel. Az addon a `method_exists()` segítségével érzékeli az támogatást:
 
@@ -81,7 +81,7 @@ Implementálja ezeket a metódusokat, hogy további funkciókat szabadíts fel. 
 | `get_epp_code(string $domain_name): array` | Domain átadás (kilépő) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain átadás (beérkező) |
 
-### Visszaadási érték konvenció
+### Visszaadási érték konvenció {#return-value-convention}
 
 Az összes metódus egy olyan tömböt ad vissza, amely legalább egy `success` kulcsot tartalmaz:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Olvasandó hibaüzenet'];
 
 ---
 
-## A funkció regisztrálása
+## A funkció regisztrálása {#registering-your-capability}
 
 Regisztrálja az osztályát a `wu_domain_seller_register_capabilities` action segítségével:
 
@@ -109,7 +109,7 @@ Az `add_capability()` első argumentuma a **provider ID** (kihívó azonosító)
 
 ---
 
-## Hitelesítő mezők hozzáadása a wizardhoz
+## Hitelesítő mezők hozzáadása a wizardhoz {#adding-credential-fields-to-the-wizard}
 
 Ha adminoknak szeretnénk hitelesítő adatok megadására a beállítási wizardban, regisztrálja az integrációját:
 
@@ -137,7 +137,7 @@ A hitelesítő adatok a network optionsként kerülnek tárolásra, a mező ID-j
 
 ---
 
-## Hooks a regisztráció utáni műveletekhez
+## Hooks a regisztráció utáni műveletekhez {#hooks-for-post-registration-actions}
 
 Használja ezeket az action-okat, hogy triggereljen webhook-okat, provisioning-okat, értesítéseket vagy CRM frissítéseket:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logozás
+## Logozás {#logging}
 
 Írjon a szolgáltató-specifikus log kanalba a `wu_log_add()` segítségével:
 

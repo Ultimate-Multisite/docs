@@ -3,15 +3,15 @@ title: Baliozkotu paletaren kontrastea
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Balioztatu paletaren kontrastea
+# Balioztatu paletaren kontrastea {#validate-palette-contrast}
 
 **Validate Palette Contrast** gaitasunak zure diseinu-paletan dauden kolore-bikoteak WCAG (Web Content Accessibility Guidelines) betetzen duten egiaztatzen du, zure theme-n aplikatu aurretik.
 
-## Ikuspegi orokorra
+## Ikuspegi orokorra {#overview}
 
 Gaitasun honek zure site-ren kolore-eskemak irisgarritasun-estandarrak betetzen dituela ziurtatzen du, testuaren eta atzeko planoaren koloreen arteko kontraste-ratioak balioztatuz. Ikusmen-urritasuna duten erabiltzaileentzat irakurtzeko zailak izan daitezkeen kolore-konbinazioak saihesten laguntzen du.
 
-## Sarrera-formatua
+## Sarrera-formatua {#input-format}
 
 Gaitasunak kolore-paleta bat onartzen du sarrera gisa:
 
@@ -35,7 +35,7 @@ Gaitasunak kolore-paleta bat onartzen du sarrera gisa:
 }
 ```
 
-### Parametroak
+### Parametroak {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Gaitasunak kolore-paleta bat onartzen du sarrera gisa:
 | `wcag_level` | string | Ez | WCAG betetze-maila: "A", "AA" (lehenetsia), edo "AAA" |
 | `pairs_to_check` | array | Ez | Balioztatu beharreko kolore-bikote zehatzak (adib., `["primary-text", "background-text"]`) |
 
-## Egiaztatutako WCAG mailak
+## Egiaztatutako WCAG mailak {#wcag-levels-checked}
 
 Gaitasunak kontraste-ratioak WCAG estandarren arabera balioztatzen ditu:
 
@@ -56,7 +56,7 @@ Gaitasunak kontraste-ratioak WCAG estandarren arabera balioztatzen ditu:
 - **Testu normala** — 18pt baino txikiagoa den testua (edo 14pt lodia)
 - **Testu handia** — 18pt edo handiagoa den testua (edo 14pt lodia edo handiagoa)
 
-## Irteera-eskema
+## Irteera-eskema {#output-schema}
 
 Gaitasunak balioztatze-txosten xehea itzultzen du:
 
@@ -95,7 +95,7 @@ Gaitasunak balioztatze-txosten xehea itzultzen du:
 }
 ```
 
-### Irteerako eremuak
+### Irteerako eremuak {#output-fields}
 
 | Eremua | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Gaitasunak balioztatze-txosten xehea itzultzen du:
 | `status` | string | Bikote bakoitzerako "pass" edo "fail" |
 | `recommendations` | array | Huts egiten duten bikoteak hobetzeko iradokizunak |
 
-## Erabilera-adibidea
+## Erabilera-adibidea {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Gaitasunak kolore-konbinazio guztiak balioztatzen ditu eta hau itzultzen du:
 - ✅ Atzeko planoa + testua: 12.1:1 ratioa (WCAG AAA gainditzen du)
 - Orokorra: WCAG AA betetzen du
 
-## Integrazioa Theme Builder-ekin
+## Integrazioa Theme Builder-ekin {#integration-with-theme-builder}
 
 Theme Builder-en diseinu-norabidearen hautaketa erabiltzean, Validate Palette Contrast gaitasunak:
 
@@ -129,7 +129,7 @@ Theme Builder-en diseinu-norabidearen hautaketa erabiltzean, Validate Palette Co
 4. Betetzen ez duten bikoteetarako gomendioak ematen ditu
 5. Irisgarriak ez diren kolore-eskemak aplikatzea eragozten du
 
-## Jardunbide egokiak
+## Jardunbide egokiak {#best-practices}
 
 - **Hasi AA mailarekin** — WCAG AA da webgune gehienetarako estandarra
 - **Probatu aplikatu aurretik** — balioztatu zure paleta diseinu batekin konpromisoa hartu aurretik
@@ -137,7 +137,7 @@ Theme Builder-en diseinu-norabidearen hautaketa erabiltzean, Validate Palette Co
 - **Kontuan hartu erabiltzaileen lehentasunak** — erabiltzaile batzuek koloreekiko sentikortasun gehigarria izan dezakete
 - **Erabili kontraste-egiaztatzaileak** — konbinatu gaitasun hau nabigatzaileko tresnekin egiaztapenerako
 
-## Huts egiten duten bikoteak eta gomendioak
+## Huts egiten duten bikoteak eta gomendioak {#failing-pairs-and-recommendations}
 
 Kolore-bikote batek balioztatzea gainditzen ez badu, gaitasunak gomendioak ematen ditu:
 
@@ -155,7 +155,7 @@ Kolore-bikote batek balioztatzea gainditzen ez badu, gaitasunak gomendioak emate
 }
 ```
 
-## Lotutako gaitasunak
+## Lotutako gaitasunak {#related-abilities}
 
 - [Sortu logo SVG](./generate-logo-svg.md) — sortu logoak balioztatutako kolore-paletarekin
 - [Sortu menua](./create-menu.md) — eraiki nabigazioa kolore irisgarriekin

@@ -3,11 +3,11 @@ title: Dokumentacioni për Zhvilluesit
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentacioni për zhvilluesit
+# Dokumentacioni për zhvilluesit {#developer-documentation}
 
 Ky udhëzues u ofron zhvilluesve gjithçka që nevojitet për t’u integruar me Ultimate Multisite, për ta zgjeruar ose për të zhvilluar addon-e për të. Ultimate Multisite e transformon një rrjet WordPress Multisite në një platformë Website-as-a-Service (WaaS).
 
-## Çfarë është në dispozicion
+## Çfarë është në dispozicion {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Operacione të plota CRUD për të gjitha entitetet (klientë, sajte, anëtarësime, pagesa, produkte, domene) me autentikim me API key
 - **[Referenca e Hooks](./hooks/guide)** — Mbi 200 action hooks dhe mbi 280 filter hooks për ngjarje të ciklit të jetës dhe personalizim
@@ -15,13 +15,13 @@ Ky udhëzues u ofron zhvilluesve gjithçka që nevojitet për t’u integruar me
 - **[Shembuj kodi](./code-examples/)** — Modele të avancuara për çmime dinamike, krijim sajtesh, kufizime të personalizuara dhe përpunim me shumë porta pagese
 - **[Zhvillimi i addon-eve](./addon-development/getting-started)** — Kornizë e strukturuar për ndërtimin e plugin-eve addon
 
-## Kërkesat
+## Kërkesat {#requirements}
 
 - Instalimi WordPress Multisite
 - PHP 7.4 ose më i lartë
 - Plugin-i Ultimate Multisite i aktivizuar
 
-## Instalimi me Composer / Bedrock
+## Instalimi me Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite është i disponueshëm në [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) si `ultimate-multisite/ultimate-multisite`. Kjo është metoda e rekomanduar e instalimit për konfigurimet WordPress të bazuara në [Bedrock](https://roots.io/bedrock/) dhe mjedise të tjera të menaxhuara me Composer.
 
@@ -45,15 +45,15 @@ Ose, nëse po e ngarkoni plugin-in si një plugin must-use përmes autoloader-it
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Fillim i shpejtë
+## Fillim i shpejtë {#quick-start}
 
-### Përdorni REST API
+### Përdorni REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Lidhuni me ngjarjet
+### Lidhuni me ngjarjet {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Ndërtoni një Addon
+### Ndërtoni një Addon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

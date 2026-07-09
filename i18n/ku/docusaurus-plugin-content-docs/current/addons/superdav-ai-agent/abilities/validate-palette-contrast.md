@@ -3,15 +3,15 @@ title: Kontrasta paletê piştrast bike
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Berevajîtiya Paletê Erê Bike
+# Berevajîtiya Paletê Erê Bike {#validate-palette-contrast}
 
 Şiyana **Berevajîtiya Paletê Erê Bike** cotên rengî di paleta sêwirana te de ji bo lihevhatina WCAG (Rêbernameyên Gihîştinê yên Naveroka Webê) kontrol dike berî ku wan li theme-a te bi kar bîne.
 
-## Nêrîna Giştî
+## Nêrîna Giştî {#overview}
 
 Ev şiyan piştrast dike ku pergala rengên malpera te bi standardên gihîştinê re li hev tê, bi erêkirina rêjeyên berevajîtiyê di navbera nivîs û rengên paşxaneyê de. Ew alîkar dike ku têkelên rengî yên ku dibe ji bo bikarhênerên xwedî astengiyên dîtinê xwendina wan zehmet be neyên çêkirin.
 
-## Forma Têketinê
+## Forma Têketinê {#input-format}
 
 Ev şiyan paletek rengî wek têketin qebûl dike:
 
@@ -35,7 +35,7 @@ Ev şiyan paletek rengî wek têketin qebûl dike:
 }
 ```
 
-### Parametre
+### Parametre {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Ev şiyan paletek rengî wek têketin qebûl dike:
 | `wcag_level` | string | Na | Asta lihevhatina WCAG: "A", "AA" (standard), an "AAA" |
 | `pairs_to_check` | array | Na | Cotên rengî yên taybet ji bo erêkirinê (mînak, `["primary-text", "background-text"]`) |
 
-## Astên WCAG Yên Têne Kontrolkirin
+## Astên WCAG Yên Têne Kontrolkirin {#wcag-levels-checked}
 
 Ev şiyan rêjeyên berevajîtiyê li gor standardên WCAG erê dike:
 
@@ -56,7 +56,7 @@ Ev şiyan rêjeyên berevajîtiyê li gor standardên WCAG erê dike:
 - **Nivîsa Asayî** — nivîsa ji 18pt biçûktir (an 14pt qelew)
 - **Nivîsa Mezin** — nivîsa 18pt an mezintir (an 14pt qelew an mezintir)
 
-## Şemaya Derketinê
+## Şemaya Derketinê {#output-schema}
 
 Ev şiyan raporek erêkirinê ya bi hûrgilî vedigerîne:
 
@@ -95,7 +95,7 @@ Ev şiyan raporek erêkirinê ya bi hûrgilî vedigerîne:
 }
 ```
 
-### Qadên Derketinê
+### Qadên Derketinê {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Ev şiyan raporek erêkirinê ya bi hûrgilî vedigerîne:
 | `status` | string | Ji bo her cotê "pass" an "fail" |
 | `recommendations` | array | Pêşniyar ji bo baştirkirina cotên têkçûyî |
 
-## Mînaka Bikaranînê
+## Mînaka Bikaranînê {#usage-example}
 
 **Daxwaz:**
 ```
@@ -119,7 +119,7 @@ Ev şiyan hemû têkelên rengî erê dike û vedigerîne:
 - ✅ Paşxane + Nivîs: rêjeya 12.1:1 (WCAG AAA derbas dike)
 - Giştî: Bi WCAG AA re lihevhatî ye
 
-## Yekbûn bi Theme Builder re
+## Yekbûn bi Theme Builder re {#integration-with-theme-builder}
 
 Dema hilbijartina arasteya-sêwiranê ya Theme Builder bi kar tînî, şiyana Berevajîtiya Paletê Erê Bike:
 
@@ -129,7 +129,7 @@ Dema hilbijartina arasteya-sêwiranê ya Theme Builder bi kar tînî, şiyana Be
 4. Ji bo cotên ne-lihevhatî pêşniyaran dide
 5. Pêşî li bikaranîna pergalên rengî yên negihîştbar digire
 
-## Kiryarên Herî Baş
+## Kiryarên Herî Baş {#best-practices}
 
 - **Bi asta AA dest pê bike** — WCAG AA ji bo piraniya malperan standard e
 - **Berî bikaranînê test bike** — berî ku bi sêwiranê ve girêdayî bibî, paleta xwe erê bike
@@ -137,7 +137,7 @@ Dema hilbijartina arasteya-sêwiranê ya Theme Builder bi kar tînî, şiyana Be
 - **Vebijarkên bikarhêneran li ber çavan bigire** — hinek bikarhêner dibe hestiyariya rengî ya zêdetir hebin
 - **Kontrolkerên berevajîtiyê bi kar bîne** — vê şiyanê bi amûrên gerokê re ji bo piştrastkirinê bikar bîne
 
-## Cotên Têkçûyî û Pêşniyar
+## Cotên Têkçûyî û Pêşniyar {#failing-pairs-and-recommendations}
 
 Heke cotek rengî erêkirinê têk bibe, ev şiyan pêşniyaran dide:
 
@@ -155,7 +155,7 @@ Heke cotek rengî erêkirinê têk bibe, ev şiyan pêşniyaran dide:
 }
 ```
 
-## Şiyanên Têkildar
+## Şiyanên Têkildar {#related-abilities}
 
 - [SVG-ya Logo-yê Çêke](./generate-logo-svg.md) — bi paleta rengî ya erêkirî logo çêke
 - [Menu Çêke](./create-menu.md) — bi rengên gihîştbar navîgasyon ava bike

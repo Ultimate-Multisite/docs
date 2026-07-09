@@ -3,9 +3,9 @@ title: 웹훅 처리
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# 웹훅 처리
+# 웹훅 처리 {#webhook-handling}
 
-## 사용자 정의 웹훅 엔드포인트
+## 사용자 정의 웹훅 엔드포인트 {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -49,7 +49,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## 보안 고려사항
+## 보안 고려사항 {#security-considerations}
 
 - 항상 HMAC 또는 공유 비밀을 사용하여 웹훅 서명을 확인하세요  
 - REST 라우트에서 `permission_callback`을 사용하세요 — 프로덕션에서는 `__return_true`로 설정하지 마세요  

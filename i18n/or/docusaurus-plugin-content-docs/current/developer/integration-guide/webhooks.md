@@ -3,11 +3,11 @@ title: Webhook ପରିଚାଳନା
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ପରିଚାଳନା
+# Webhook ପରିଚାଳନା {#webhook-handling}
 
 ବାହ୍ୟ ସେବାଗୁଡ଼ିକରୁ ଘଟଣା ପାଇବା ଏବଂ Ultimate Multisite ସହିତ ତଥ୍ୟ ସମନ୍ୱୟ କରିବା ପାଇଁ କଷ୍ଟମ Webhook ଏଣ୍ଡପଏଣ୍ଟ ସୃଷ୍ଟି କରନ୍ତୁ।
 
-## କଷ୍ଟମ Webhook ଏଣ୍ଡପଏଣ୍ଟ
+## କଷ୍ଟମ Webhook ଏଣ୍ଡପଏଣ୍ଟ {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## ସୁରକ୍ଷା ସମ୍ବନ୍ଧୀୟ ବିଚାର
+## ସୁରକ୍ଷା ସମ୍ବନ୍ଧୀୟ ବିଚାର {#security-considerations}
 
 - ସଦା HMAC କିମ୍ବା ସହଭାଗୀ ଗୁପ୍ତ କି ବ୍ୟବହାର କରି Webhook ସହି ଯାଞ୍ଚ କରନ୍ତୁ
 - ଆପଣଙ୍କ REST route ରେ `permission_callback` ବ୍ୟବହାର କରନ୍ତୁ — production ରେ ଏହାକୁ କେବେ `__return_true` କରନ୍ତୁ ନାହିଁ

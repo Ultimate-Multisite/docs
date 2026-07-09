@@ -3,11 +3,11 @@ title: خاس دەرۋازا ئېچىش
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ئىختىيارىي Gateway ئىجاد قىلىش
+# ئىختىيارىي Gateway ئىجاد قىلىش {#custom-gateway-development}
 
 `Base_Gateway` class نى كېڭەيتىش ئارقىلىق ئىختىيارىي ھەق تۆلەش gatewayلىرىنى قۇرالايسىز.
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway نى تىزىملاش
+## Gateway نى تىزىملاش {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## مۇھىم ئۇسۇللار
+## مۇھىم ئۇسۇللار {#key-methods}
 
 | Method | مەقسەت |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | پۇل قايتۇرۇش تەلەپلىرىنى بىر تەرەپ قىلىدۇ |
 | `get_payment_methods()` | خېرىدار ئۈچۈن ساقلانغان ھەق تۆلەش ئۇسۇللىرىنى قايتۇرىدۇ |
 
-## تەكرارلىنىدىغان ئەزالىقلار ئۈچۈن يېڭىلاش ئىسپات ئۇچۇرى
+## تەكرارلىنىدىغان ئەزالىقلار ئۈچۈن يېڭىلاش ئىسپات ئۇچۇرى {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway بىرلەشتۈرۈشلىرىگە، `auto_renew` ساقلىنىشتىن بۇرۇن، تەكرارلىنىدىغان ئەزالىقتا قايتا ئىشلىتىلىدىغان يېڭىلاش ئىسپات ئۇچۇرىنىڭ بار-يوقلۇقىنى مەلۇم قىلىش ئىمكانىنى بېرىدۇ. `wu_membership_has_renewal_credential` نى hook قىلىپ، تۆۋەندىكىلەرنى قايتۇرۇڭ:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 يېڭى قايتا ئىشلىتىلىدىغان ئىسپات ئۇچۇرى ساقلانغاندىن كېيىن، gatewayىڭىزنىڭ مۇۋەپپەقىيەتلىك قايتا ھوقۇقلاندۇرۇش ئېقىمىنىڭ بىر قىسمى سۈپىتىدە يوق ئىسپات ئۇچۇرى بەلگىسىنى تازىلاڭ.
 
-## تەكلىپلەر
+## تەكلىپلەر {#tips}
 
 - مەغلۇب بولغاندا ھەمىشە `WP_Error` قايتۇرۇڭ، شۇنداق بولغاندا Ultimate Multisite خاتالىق كۆرسىتىشنى بىر تەرەپ قىلالايدۇ
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway غا خاس خاتىرىلەش ئۈچۈن `wu_log_add()` نى ئىشلىتىڭ
 
-## AI ئۇلىغۇچ تەمىنلىگۈچى ئىقتىدارلىرى
+## AI ئۇلىغۇچ تەمىنلىگۈچى ئىقتىدارلىرى {#ai-connector-provider-capabilities}
 
 AI ئۇلىغۇچ قوللايدىغان مەشغۇلاتلارنى چاقىرىدىغان ئىختىيارىي بىرلەشتۈرۈشلەر AI Provider for Anthropic Max v1.3.0 بىلەن تونۇشتۇرۇلغان قوللايدىغان OAuth تەمىنلىگۈچى توپلىمىغا ماس كېلىشى كېرەك:
 

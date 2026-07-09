@@ -3,13 +3,13 @@ title: Pomoč pri prilagodi
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kako dobiti prilagočeno razvojno pomoč od Codeable?
+# Kako dobiti prilagočeno razvojno pomoč od Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Ponekad nam je potrebna prava prilagodba, da bi naši mreže tekčno te same kako želimo. Če ste to iščete, priporočamo [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), mesto kjer lahko najdete izkušene razvijalce s posebnim znanjištem o Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) je platforma ki povezuje stranke z kvalificiranimi WordPress freelancami, ki so sposobni delati projekte v vsakih velikostih. Imajo natančen proces prijav, da se osigurate, da ste pravilno povezani z eksperti, ki so specifično kvalificirani za zadatek, ki ga imate na umu.
 
-### Kako ustvariti projekt v Codeable?
+### Kako ustvariti projekt v Codeable? {#how-to-create-a-project-in-codeable}
 
 Prvi korak je obiščite [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) in kliknite gumb **Start a Project** (Začetek projekta).
 

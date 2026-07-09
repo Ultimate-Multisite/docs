@@ -3,15 +3,15 @@ title: 'Lektioun 5: Är Pläng gestalten'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lektioun 5: Deng Pläng designen
+# Lektioun 5: Deng Pläng designen {#lesson-5-designing-your-plans}
 
 Deng Plan-Niveaue sinn net nëmme Präisniveauen -- si sinn eng Reflexioun dovun, wéi deng Nische-Clienten tatsächlech schaffen. An dëser Lektioun designs du Produit-Niveaue, déi de reelle Besoine vu Fitness-Betriber a verschiddene Phasen entspriechen.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 FitSite huet dräi Templates prett (Studio Essential, Gym Pro, Fitness Chain). Elo erstelle mir d'Pläng, déi bestëmmen, op wat Clienten Zougang kréien a wat si bezuelen.
 
-## A Client-Segmenter denken
+## A Client-Segmenter denken {#thinking-in-customer-segments}
 
 De Feeler, deen déi meescht Leit maachen, ass Pläng ronderëm technesch Funktiounen ze designen (Späicher, Bandbreed, Zuel vu Säiten). Deng Nische-Clienten denken net an dëse Begrëffer. E Fitnessstudio-Besëtzer denkt driwwer no, wat hie brauch, fir säi Betrib ze féieren.
 
@@ -25,11 +25,11 @@ Fir Fitness-Studioe ginn et dräi natierlech Segmenter:
 
 Deng Pläng solle mat dëse Segmenter iwwerenee stëmmen, net mat arbiträren Feature-Päck.
 
-## D'FitSite-Pläng erstellen
+## D'FitSite-Pläng erstellen {#creating-the-fitsite-plans}
 
 Navigéier op **Ultimate Multisite > Products > Add Product** fir all Plan.
 
-### Plan 1: FitSite Starter -- $49/Mount
+### Plan 1: FitSite Starter -- $49/Mount {#plan-1-fitsite-starter----49month}
 
 **Zilgrupp**: Solo-Trainer a kleng Studioen
 
@@ -59,7 +59,7 @@ Navigéier op **Ultimate Multisite > Products > Add Product** fir all Plan.
 - Däin ausgewielten Theme: Force Activate
 - All aner Themes: Verstoppt
 
-### Plan 2: FitSite Growth -- $99/Mount
+### Plan 2: FitSite Growth -- $99/Mount {#plan-2-fitsite-growth----99month}
 
 **Zilgrupp**: Etabléiert Fitnessstudioe mat engem Standuert
 
@@ -85,7 +85,7 @@ Navigéier op **Ultimate Multisite > Products > Add Product** fir all Plan.
 - Plan-Grupp: FitSite Plans
 - Produit-Reiefolleg: 2
 
-### Plan 3: FitSite Pro -- $199/Mount
+### Plan 3: FitSite Pro -- $199/Mount {#plan-3-fitsite-pro----199month}
 
 **Zilgrupp**: Fitness-Ketten mat méi Standuerter
 
@@ -109,7 +109,7 @@ Navigéier op **Ultimate Multisite > Products > Add Product** fir all Plan.
 - Plan-Grupp: FitSite Plans
 - Produit-Reiefolleg: 3
 
-## De Plan-Grupp ariichten
+## De Plan-Grupp ariichten {#setting-up-the-plan-group}
 
 De Plan-Grupp suergt dofir, datt Clienten nëmmen innerhalb vun der FitSite-Plan-Famill kënnen upgraden oder downgraden. Op all Plan sengem **Up & Downgrades** Tab:
 
@@ -118,7 +118,7 @@ De Plan-Grupp suergt dofir, datt Clienten nëmmen innerhalb vun der FitSite-Plan
 
 Dat erstellt e kloeren Upgrade-Wee: Starter → Growth → Pro.
 
-## Order Bumps derbäisetzen
+## Order Bumps derbäisetzen {#adding-order-bumps}
 
 Order bumps sinn Zousaz-Produiten, déi wärend dem Checkout ugebuede ginn. Fir FitSite, betruecht:
 
@@ -128,7 +128,7 @@ Order bumps sinn Zousaz-Produiten, déi wärend dem Checkout ugebuede ginn. Fir 
 
 Erstell dës als **Package**-Typ Produiten an Ultimate Multisite a verbann se mat de relevante Pläng.
 
-## Firwat dës Struktur funktionéiert
+## Firwat dës Struktur funktionéiert {#why-this-structure-works}
 
 - **Starter** hëlt Barrièren fir den Ufank ewech -- niddrege Präis, einfach Offer, bréngt Trainer séier online
 - **Growth** setzt déi Funktiounen derbäi, déi Fitnessstudioen tatsächlech nofroen -- Buchung, Galerien, personaliséiert Domainen
@@ -136,7 +136,7 @@ Erstell dës als **Package**-Typ Produiten an Ultimate Multisite a verbann se ma
 - **Order bumps** loossen Clienten personaliséieren, ouni d'Kärpläng ze komplizéieren
 - **Kloeren Upgrade-Wee** bedeit, datt Clienten zesumme mat dir wuessen amplaz fortzegoen
 
-## De FitSite Network bis elo
+## De FitSite Network bis elo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Wat mir an dëser Lektioun gebaut hunn
+## Wat mir an dëser Lektioun gebaut hunn {#what-we-built-this-lesson}
 
 - **Dräi Plan-Niveaue** op reell Fitness-Betribssegmenter ofgestëmmt
 - **Feature-Gating** mat Ultimate Multisite sengem Plugin- an Template-Kontrollen

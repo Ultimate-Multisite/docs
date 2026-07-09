@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 កម្មវិធីបន្ថែម WordPress ដែលបន្ថែមការកែសម្រួលភាពឆបគ្នាសម្រាប់ Tutor LMS នៅក្នុងបរិស្ថាន multisite។
 
-## ការពិពណ៌នា
+## ការពិពណ៌នា {#description}
 
 កម្មវិធីបន្ថែមនេះផ្តល់ការកែសម្រួលភាពឆបគ្នាសំខាន់ៗសម្រាប់ដំណើរការ Tutor LMS លើបណ្តាញ WordPress multisite។ វាគ្រប់គ្រងការចុះឈ្មោះអ្នកប្រើ ការគ្រប់គ្រងគ្រូបង្រៀន ការកំណត់វគ្គសិក្សា និងមុខងារផ្សេងៗដែលពាក់ព័ន្ធនឹង multisite។
 
-## លក្ខណៈពិសេស
+## លក្ខណៈពិសេស {#features}
 
 - **ការគ្រប់គ្រងតារាងមូលដ្ឋានទិន្នន័យ**: រកឃើញ និងបង្កើតតារាង Tutor LMS ដែលបាត់ដោយស្វ័យប្រវត្តិ នៅពេលបរាជ័យដោយសារការកំណត់ foreign key ក្នុង multisite
 - **ការចុះឈ្មោះអ្នកប្រើក្នុង Multisite**: កម្មវិធីគ្រប់គ្រង AJAX ផ្ទាល់ខ្លួនសម្រាប់គ្រប់គ្រងការចុះឈ្មោះអ្នកប្រើនៅទូទាំង site ក្នុងបណ្តាញ
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **ទិដ្ឋភាពគ្រប់គ្រងផ្ទាល់ខ្លួន**: បញ្ជីគ្រូបង្រៀន និងចំណុចប្រទាក់គ្រប់គ្រងដែលយល់ដឹងពី multisite
 - **ឧបករណ៍គ្រប់គ្រង**: ចំណុចប្រទាក់គ្រប់គ្រងមូលដ្ឋានទិន្នន័យសម្រាប់អ្នកគ្រប់គ្រងបណ្តាញ និង site
 
-## តម្រូវការ
+## តម្រូវការ {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - ការដំឡើង WordPress Multisite
 - កម្មវិធីបន្ថែម Ultimate Multisite (សម្រាប់មុខងារកំណត់វគ្គសិក្សា)
 
-## ការដំឡើង
+## ការដំឡើង {#installation}
 
 1. ផ្ទុកឡើងឯកសារកម្មវិធីបន្ថែមទៅ `/wp-content/plugins/tutor-multisite-compatibility/`
 2. ត្រូវប្រាកដថា Tutor LMS ត្រូវបានដំឡើង និងធ្វើឱ្យសកម្ម
 3. ធ្វើឱ្យកម្មវិធីបន្ថែមសកម្មតាមម៉ឺនុយ 'កម្មវិធីបន្ថែម' ក្នុង WordPress
 4. កម្មវិធីបន្ថែមនឹងរួមបញ្ចូលជាមួយ Tutor LMS ដោយស្វ័យប្រវត្តិ
 
-## រចនាសម្ព័ន្ធឯកសារ
+## រចនាសម្ព័ន្ធឯកសារ {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## មុខងារដែលបានផ្លាស់ទីពី MU plugin
+## មុខងារដែលបានផ្លាស់ទីពី MU plugin {#functionality-moved-from-mu-plugin}
 
 កម្មវិធីបន្ថែមនេះមានមុខងារដែលពីមុនស្ថិតនៅក្នុង `wp-content/mu-plugins/daves.php`៖
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - ការគ្រប់គ្រងការចុះឈ្មោះអ្នកប្រើ multisite
 - ការបង្ហាញ ID ផលិតផលវគ្គសិក្សា
 
-## ការគ្រប់គ្រងមូលដ្ឋានទិន្នន័យ
+## ការគ្រប់គ្រងមូលដ្ឋានទិន្នន័យ {#database-management}
 
-### បញ្ហា
+### បញ្ហា {#the-problem}
 
 នៅក្នុងបរិស្ថាន WordPress multisite ការបង្កើតតារាង Tutor LMS បរាជ័យសម្រាប់តារាងដែលមានការកំណត់ foreign key ទៅតារាងអ្នកប្រើ។ វាកើតឡើងដោយសារ៖
 
@@ -81,7 +81,7 @@ tutor-multisite-compatibility/
 - Foreign key យោងទៅ `wp_2_users` (ដែលមិនមាន)
 - តារាងអ្នកប្រើពិតប្រាកដគឺ `wp_users` (ចែករំលែកទូទាំងបណ្តាញ)
 
-### ដំណោះស្រាយ
+### ដំណោះស្រាយ {#the-solution}
 
 កម្មវិធីបន្ថែមនេះធ្វើដោយស្វ័យប្រវត្តិ៖
 
@@ -92,13 +92,13 @@ tutor-multisite-compatibility/
    - ការបង្កើត site ថ្មីក្នុងបណ្តាញ
    - ការពិនិត្យតារាងដោយដៃតាមចំណុចប្រទាក់គ្រប់គ្រង
 
-### តារាងដែលរងផលប៉ះពាល់
+### តារាងដែលរងផលប៉ះពាល់ {#affected-tables}
 
 - `tutor_coupon_usages` - មាន foreign key ទៅតារាងអ្នកប្រើ
 - `tutor_carts` - មាន foreign key ទៅតារាងអ្នកប្រើ
 - `tutor_notification_preferences` - តារាង TutorPro ដែលមាន foreign key ទៅតារាងអ្នកប្រើ
 
-### ចំណុចប្រទាក់គ្រប់គ្រង
+### ចំណុចប្រទាក់គ្រប់គ្រង {#admin-interface}
 
 ចូលប្រើឧបករណ៍គ្រប់គ្រងមូលដ្ឋានទិន្នន័យនៅ៖
 
@@ -111,6 +111,6 @@ tutor-multisite-compatibility/
 - ពិនិត្យការកំណត់រចនាសម្ព័ន្ធមូលដ្ឋានទិន្នន័យ
 - មើលព័ត៌មានស្ថានភាពលម្អិត
 
-## ការគាំទ្រ
+## ការគាំទ្រ {#support}
 
 កម្មវិធីបន្ថែមនេះត្រូវបានរចនាឡើងជាពិសេសសម្រាប់វេទិកា KursoPro។ សម្រាប់ការគាំទ្របច្ចេកទេស សូមទាក់ទងក្រុមអភិវឌ្ឍន៍។

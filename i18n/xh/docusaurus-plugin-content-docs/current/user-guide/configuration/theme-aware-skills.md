@@ -3,11 +3,11 @@ title: Izakhono eziqonda umxholo
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Izakhono Eziqonda Umxholo
+# Izakhono Eziqonda Umxholo {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 iza nezakhono ezine ezintsha ezakhelwe ngaphakathi eziqonda umxholo, ezizilungelelanisa ngokuzenzekelayo nomxholo wakho osebenzayo we-WordPress. Ezi zakhono zibonelela ngesikhokelo esikhethekileyo kunye namandla alungiselelwe uyilo kunye neempawu zomxholo wakho.
 
-## Zintoni Izakhono Eziqonda Umxholo?
+## Zintoni Izakhono Eziqonda Umxholo? {#what-are-theme-aware-skills}
 
 Izakhono eziqonda umxholo ziisiseko zolwazi kunye neeseti zezixhobo ezilungiselelwe kwangaphambili, ezikhethwa ngokuzenzekelayo ngumncedisi we-AI ngokusekelwe kumxholo we-WordPress osebenzayo ngoku kwisiza sakho. Xa utshintsha imixholo, izakhono ezifumanekayo zomncedisi zihlaziywa ngokuzenzekelayo — akukho kulungiselela ngesandla kufunekayo.
 
@@ -18,9 +18,9 @@ Isakhono ngasinye siquka:
 - **Imizekelo yokwenza ngokwezifiso** — iziqwengana zekhowudi kunye neepatheni zolungiselelo lwemisebenzi eqhelekileyo
 - **Iindlela ezingcono zokusebenza** — iingcebiso zoyilo kunye nendlela yokusebenza yomxholo
 
-## Izakhono Eziqonda Umxholo Ezifumanekayo
+## Izakhono Eziqonda Umxholo Ezifumanekayo {#available-theme-aware-skills}
 
-### Imixholo Yeebhloko
+### Imixholo Yeebhloko {#block-themes}
 
 **Isebenza ku:** Mixholo esebenzisa uyilo lwe-WordPress olusekelwe kwiibhloko (Ukuhlela Isiza Sonke).
 
@@ -34,7 +34,7 @@ Isakhono seMxholo Yeebhloko sibonelela ngesikhokelo malunga noku:
 
 **Sivulwa ngokuzenzekelayo xa:** Umxholo wakho osebenzayo ngumxholo weebhloko (uxhasa uphawu lwe-`block-templates`).
 
-### Imixholo Yakudala
+### Imixholo Yakudala {#classic-themes}
 
 **Isebenza ku:** Mixholo yesiqhelo ye-WordPress esebenzisa iitemplate ze-PHP kunye nomhleli wakudala.
 
@@ -48,7 +48,7 @@ Isakhono seMxholo Yakudala sibonelela ngesikhokelo malunga noku:
 
 **Sivulwa ngokuzenzekelayo xa:** Umxholo wakho osebenzayo ngumxholo wakudala (ongeyiyo ibhloko).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Isebenza ku:** Ziza ezisebenzisa plugin ye-Kadence Blocks yoyilo oluphambili olusekelwe kwiibhloko.
 
@@ -62,7 +62,7 @@ Isakhono se-Kadence Blocks sibonelela ngesikhokelo malunga noku:
 
 **Sivulwa ngokuzenzekelayo xa:** plugin ye-Kadence Blocks isebenza kwisiza sakho.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Isebenza ku:** Ziza ezisebenzisa umxholo we-Kadence kuyilo olusekelwe kwiibhloko kunye nokwenza ngokwezifiso.
 
@@ -76,15 +76,15 @@ Isakhono se-Kadence Theme sibonelela ngesikhokelo malunga noku:
 
 **Sivulwa ngokuzenzekelayo xa:** Umxholo we-Kadence ngumxholo wakho osebenzayo.
 
-## Indlela Izakhono Ezichongwa Ngayo
+## Indlela Izakhono Ezichongwa Ngayo {#how-skills-are-selected}
 
 Umncedisi ufumanisa ngokuzenzekelayo umxholo wakho osebenzayo kunye nee-plugin ezifakiweyo kumyalezo ngamnye. Ukuba isakhono esiqonda umxholo esihambelanayo siyafumaneka, silayishwa ngokuzenzekelayo kumxholo womncedisi. Akudingeki ukuba uvule okanye utshintshe izakhono ngesandla.
 
-### Izakhono Ezininzi
+### Izakhono Ezininzi {#multiple-skills}
 
 Ukuba izakhono ezininzi ziyasebenza kwisiza sakho (umzekelo, ukuba une-Kadence Blocks kunye ne-Kadence Theme zombini zisebenza), umncedisi unokufikelela kuzo zonke izakhono ezifanelekileyo kwaye angabhekisa kwisikhokelo esivela kuzo zonke.
 
-### Ukutshintsha Imixholo
+### Ukutshintsha Imixholo {#switching-themes}
 
 Xa utshintsha umxholo wakho osebenzayo, izakhono ezifumanekayo zomncedisi zihlaziywa ngokuzenzekelayo kumyalezo olandelayo. Umzekelo:
 
@@ -92,11 +92,11 @@ Xa utshintsha umxholo wakho osebenzayo, izakhono ezifumanekayo zomncedisi zihlaz
 2. Utshintshela kumxholo wakudala.
 3. Kumyalezo wakho olandelayo, isakhono se-**Classic Themes** silayishwa ngokuzenzekelayo, kwaye isakhono se-**Block Themes** asisafumaneki.
 
-## Ukusebenzisa Izakhono Eziqonda Umxholo
+## Ukusebenzisa Izakhono Eziqonda Umxholo {#using-theme-aware-skills}
 
 Ukuze usebenzise isakhono esiqonda umxholo, chaza nje into ofuna ukuyenza kujongano lwencoko. Umncedisi uya kubhekisa ngokuzenzekelayo kwisikhokelo esifanelekileyo sesakhono.
 
-### Imizekelo Yemiyalelo
+### Imizekelo Yemiyalelo {#example-prompts}
 
 **Ye-Block Themes:**
 > "Yenza icandelo le-hero elinomfanekiso ongasemva kunye nombhalo ophakathi usebenzisa iipatheni zeebhloko."

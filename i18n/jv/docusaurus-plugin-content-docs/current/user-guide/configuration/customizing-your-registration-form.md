@@ -3,13 +3,13 @@ title: Ngatur Formulir Registrasi Panjenengan
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ngatur Formulir Registrasi sampeyan
+# Ngatur Formulir Registrasi sampeyan {#customizing-your-registration-form}
 
 Kanggo nggawe jaringan sampeyan katon unik saka kabeh SaaS liyane sing dibangun ing platform WordPress, Ultimate Multisite ngidini sampeyan ngatur kaca registrasi lan mlebu nganggo fitur **Formulir Pambayaran** saka kita.
 
 Sanajan iki minangka cara sing gampang lan fleksibel kanggo nyoba macem-macem pendekatan nalika arep ngowahi pelanggan anyar, biasane fitur iki digunakake kanggo nggawe formulir registrasi sing dipersonalisasi. Artikel iki tujuane nuduhake carane sampeyan bisa nindakake iku.
 
-## Kaca mlebu lan registrasi:
+## Kaca mlebu lan registrasi: {#login-and-registration-pages}
 
 Nalika Ultimate Multisite dipasang, sistem iki kanthi otomatis nggawe kaca mlebu lan registrasi khusus ing situs utama sampeyan. Sampeyan bisa ngganti kaca standar iki kapan wae kanthi mlebu menyang kaca **Ultimate Multisite > Setelan > Mlebu & Registrasi**.
 
@@ -45,7 +45,7 @@ Saiki, ayo ndeleng pilihan liyane sing isih ana gandhengane karo proses mlebu la
 
 Lan iku kabeh pilihan sing ana gandhengane karo mlebu lan registrasi sing bisa sampeyan atur! Aja lali nyimpen setelan sawise rampung nyunting.
 
-## Nggunakake pirang-pirang formulir registrasi:
+## Nggunakake pirang-pirang formulir registrasi: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 nawakake editor formulir pambayaran sing ngidini sampeyan nggawe formulir sakakehe sing dikarepake, nganggo field beda, produk sing ditawakake, lsp.
 
@@ -69,7 +69,7 @@ Minangka alternatif, sampeyan bisa nyunting utawa nggandakake formulir sing wis 
 
 Yen sampeyan milih siji langkah utawa multi-langkah, formulir pambayaran wis bakal diisi sadurunge nganggo langkah-langkah dhasar supaya bisa mlaku. Banjur, yen sampeyan pengin, sampeyan bisa nambah langkah ekstra menyang formulir kasebut.
 
-### Nyunting Formulir Pambayaran:
+### Nyunting Formulir Pambayaran: {#editing-a-checkout-form}
 
 Kaya sing wis kasebut sadurunge, sampeyan bisa nggawe formulir pambayaran kanggo macem-macem tujuan. Ing conto iki kita bakal nggarap formulir registrasi.
 
@@ -131,11 +131,11 @@ Kanggo njupuk shortcode formulir sampeyan, klik **Gawe Shortcode** lan salin asi
 
 _**Cathetan:** Sampeyan kudu nambahake shortcode iki menyang kaca registrasi supaya formulir pembayaran iki ditambahake menyang kana._
 
-## Milih produk lan cithakan luwih dhisik liwat parameter URL:
+## Milih produk lan cithakan luwih dhisik liwat parameter URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Yen sampeyan pengin nggawe tabel rega sing dikustomisasi kanggo produk sampeyan lan milih luwih dhisik ing formulir pembayaran produk utawa cithakan sing dipilih pelanggan saka tabel rega utawa kaca cithakan sampeyan, sampeyan bisa nggunakake parameter URL kanggo iki.
 
-### **Kanggo paket:**
+### **Kanggo paket:** {#for-plans}
 
 Menyanga **Ultimate Multisite > Products > Select a plan**. Sampeyan kudune ndeleng tombol **Klik kanggo nyalin Tautan sing Bisa Dibagi** ing sisih ndhuwur kaca. Iki tautan sing bisa sampeyan gunakake kanggo milih paket tartamtu iki luwih dhisik ing formulir pembayaran sampeyan.
 
@@ -143,7 +143,7 @@ Menyanga **Ultimate Multisite > Products > Select a plan**. Sampeyan kudune ndel
 
 Elinga yen tautan sing bisa dibagi iki mung valid kanggo **Paket**. Sampeyan ora bisa nggunakake tautan sing bisa dibagi kanggo paket bundel utawa layanan.
 
-### Kanggo cithakan:
+### Kanggo cithakan: {#for-templates}
 
 Yen sampeyan pengin milih luwih dhisik cithakan situs ing formulir pembayaran, sampeyan bisa nggunakake parameter: **?template_id=X** ing URL kaca registrasi sampeyan. "X" kudu diganti nganggo **nomer ID cithakan situs**. Kanggo njupuk nomer iki, menyanga **Ultimate Multisite > Sites**.
 

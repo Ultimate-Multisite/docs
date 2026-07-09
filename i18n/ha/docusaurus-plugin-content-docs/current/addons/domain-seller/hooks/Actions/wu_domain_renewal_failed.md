@@ -4,11 +4,11 @@ title: Aiki - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Aiki: wu_domain_renewal_failed
+# Aiki: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Yana kunna bayan ƙoƙarin sabunta domain ya gaza.
 
-## Parameters
+## Parameters {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Yana kunna bayan ƙoƙarin sabunta domain ya gaza.
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadata na sabuntawa (domain_name, shekaru, da sauransu). |
 | $error_message | `string` | Saƙon kuskure mai karantawa ga mutum daga registrar. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 2.0.0
-### Tushe
+### Tushe {#source}
 
 An ayyana a cikin [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) a layi na 630

@@ -3,9 +3,9 @@ title: Loga athruithe Ultimate AI Connector do WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Loga Athruithe Ultimate AI Connector do WebLLM
+# Loga Athruithe Ultimate AI Connector do WebLLM {#ultimate-ai-connector-for-webllm-changelog}
 
-## Leagan 1.1.0 — Eisithe ar 2026-04-09
+## Leagan 1.1.0 — Eisithe ar 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Nua: Giuirléid chomhrá ar snámh le táscaire stádais sa bharra riaracháin — is féidir le haon úsáideoir logáilte isteach leid a thabhairt don LLM ar thaobh an bhrabhsálaí go díreach ón gceann tosaigh.
 * Nua: Am rite SharedWorker — ritheann inneall MLC anois i SharedWorker ionas go roinneann ilchluaisíní seisiún GPU amháin in ionad dul in iomaíocht faoina choinne.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Ceartú: Ceangail WebLLM leis an scagaire wpai_preferred_text_models ionas go seolann an ghné AI Experiments iarratais chuig inneall an bhrabhsálaí nuair atá samhail cumraithe.
 * Feabhsaithe: Ceartúcháin maidir le sárú taisce, normalú ábhair, agus tagairtí crua-earraí a tháinig chun solais le linn tástála ó cheann go ceann.
 
-## Leagan 1.0.0 — Eisiúint Tosaigh
+## Leagan 1.0.0 — Eisiúint Tosaigh {#version-100--initial-release}

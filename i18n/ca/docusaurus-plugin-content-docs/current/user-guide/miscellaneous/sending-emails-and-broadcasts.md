@@ -3,13 +3,13 @@ title: Enviament de correus electrònics i difusions
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviament de correus electrònics i difusions (v2)
+# Enviament de correus electrònics i difusions (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 
 Ultimate Multisite inclou una funció que et permetrà comunicar-te amb els teus clients enviant un correu electrònic a un usuari concret o a un grup d’usuaris, així com enviant avisos al seu Dashboard d’administració per difondre anuncis
 
-## Afegeix avisos d’administració al Dashboard dels teus clients amb difusions
+## Afegeix avisos d’administració al Dashboard dels teus clients amb difusions {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Amb la funció de difusió d’Ultimate Multisite, pots afegir **avisos d’administració** al Dashboard d’administració del sublloc del teu usuari.
 
@@ -51,7 +51,7 @@ Després de crear el missatge, pots prémer el botó **Envia**.
 
 I això és tot. L’avís d’administració hauria d’aparèixer immediatament al Dashboard del teu usuari.
 
-## Envia correus electrònics als teus clients
+## Envia correus electrònics als teus clients {#send-emails-to-your-customers}
 
 Amb la funció de difusió d’Ultimate Multisite, pots enviar un correu electrònic als teus usuaris. Tens l’opció d’enviar el correu electrònic només a usuaris específics o d’adreçar-lo a un grup d’usuaris concret en funció del producte o pla al qual estan subscrits.
 
@@ -81,11 +81,11 @@ Després de crear el missatge, pots prémer el botó **Envia**.
 
 I així de fàcil és enviar un correu electrònic als teus usuaris finals mitjançant la funció de difusió.
 
-## Correus electrònics del sistema
+## Correus electrònics del sistema {#system-emails}
 
 Els correus electrònics del sistema a Ultimate Multisite són aquelles **notificacions automàtiques** enviades pel sistema després de determinades accions com ara el registre, el pagament, el mapatge de dominis, etc. Aquests correus electrònics es poden editar o modificar des de la configuració d’Ultimate Multisite. També inclou una funció que et permet restablir i importar configuracions existents d’una altra instal·lació d’Ultimate Multisite.
 
-### Restablir i importar
+### Restablir i importar {#resetting--importing}
 
 Les noves versions d’Ultimate Multisite, així com els complements, poden registrar i registraran nous correus electrònics de tant en tant.
 
@@ -93,7 +93,7 @@ Per evitar conflictes i altres problemes, **no afegirem automàticament les nove
 
 Tanmateix, els superadministradors i els agents poden importar aquests correus electrònics acabats de registrar mitjançant l’eina d’importació. Aquest procés crearà un nou correu electrònic del sistema amb el contingut i la configuració de la nova plantilla de correu electrònic, cosa que permetrà al superadministrador fer-hi qualsevol modificació que vulgui o mantenir-los tal com estan.
 
-#### Com importar correus electrònics del sistema
+#### Com importar correus electrònics del sistema {#how-to-import-system-emails}
 
 Ves a la pàgina de configuració d’Ultimate Multisite i dirigeix-te a la pestanya **Correus electrònics**.
 
@@ -111,7 +111,7 @@ Després, pots activar o desactivar les opcions d’importació de correus elect
 
 <!-- Captura de pantalla no disponible: modal Restableix i importa amb les opcions Importa correus electrònics desplegades -->
 
-#### Restabliment dels correus electrònics del sistema
+#### Restabliment dels correus electrònics del sistema {#reseting-system-emails}
 
 En altres ocasions, t'adonaràs que els canvis que has fet en una plantilla de correu electrònic determinada ja no et funcionen i voldràs restablir-la al seu **estat predeterminat**.
 

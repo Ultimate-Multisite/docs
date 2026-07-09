@@ -3,13 +3,13 @@ title: Proces registracije
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Proces registracije (v2)
+# Proces registracije (v2) {#the-registration-flow-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
 Korisnici mogu se registrirati na vašu mrežu na različite načine. Mogu koristiti vaš obrazac za registraciju ili link koji je dijeljiv za unaprijed odabranu plan. Ovako ćemo vam pokazati kako vaši kupci mogu se registrirati na vašoj mreži koristeći dostupne putanje i što se događa nakon njihove registracije na vašoj mreži.
 
-## Korištenje obrazca za registraciju:
+## Korištenje obrazca za registraciju: {#using-the-registration-form}
 
 Ovo je standardni proces registracije. Kreirate stranicu za registraciju s **obrazcem za plaćanje (checkout form)**, i to će biti mjesto gdje će vaši kupci otići da se registriraju na vašoj mreži i pretplatiti plan. Možete imati više stranica za registraciju, svaka sa različitim obrazcem za registraciju ako želite.
 
@@ -35,13 +35,13 @@ Ako su se registrirali na plaćeni plan ili nije obavezna e-mail provjera na va�
 
 ![Stranica aktivirana s linkom za prijavu na dashboard](/img/frontend/site-activated.png)
 
-## Korištenje dijeljive veze (Shareable Link):
+## Korištenje dijeljive veze (Shareable Link): {#using-a-shareable-link}
 
 Proces registracije pomoću dijeljive veze je u osnovi isti kao i formular za registraciju, jedina razlika je što korištenjem dijeljive veze, vaši kupci mogu imati unaprijed odabrani proizvod ili šablon web stranice na formularu kolačića (referencirajte se na odjeljak Pre-selecting products and templates via URL parameters) ili možda dodan kupon kod (referencirajte se na odjeljak Using URL Parameters).
 
 Proces registracije će biti isti: morat će unijeti ime, korisničko ime, e-mail adresu, naziv web stranice i naslov itd... ali plan ili šablon web stranice će im već biti unaprijed odabrani.
 
-### Registracija pomoću ručnih plaćanja (Manual Payments):
+### Registracija pomoću ručnih plaćanja (Manual Payments): {#registering-using-manual-payments}
 
 Ako ne želite koristiti PayPal, Stripe ili bilo koji drugi platni gateway ponuđen Ultimate Multisiteom ili njegovim dodacima, možete koristiti ručna plaćanja za svoje kupce. Na taj način, možete generirati račun za njih da ga plati na vašem preferiranom procesoru plaćanja nakon što se prijave na vašoj mreži.
 

@@ -3,9 +3,9 @@ title: Tomara guherînan a Hevdemkirina Naverokê
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Guhertinên Content Sync
+# Guhertinên Content Sync {#content-sync-changelog}
 
-### Guherto 1.1.0 - Di 2025-12-31 de hate berdan
+### Guherto 1.1.0 - Di 2025-12-31 de hate berdan {#version-110---released-on-2025-12-31}
 * Nû: Piştgiriya synckirina hemû cureyên nivîsan (nivîs, rûpel, cureyên nivîsên taybet)
 * Nû: Parzûnkirina cureyê nivîsê di gava hilbijartina naverokê de
 * Nû: Gava hilbijartina malpera çavkanî - ji her malperê sync bike, ne tenê ji malpera sereke
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Hate guhertin: Gava "Select Templates" hate navkirin wek "Select Data"
 * Başkirî: Koda taybet a Elementor êdî tenê ji bo cureyê nivîsê elementor_library dimeşe
 
-### Guherto 1.0.0 - Di 2025-12-19 de hate berdan
+### Guherto 1.0.0 - Di 2025-12-19 de hate berdan {#version-100---released-on-2025-12-19}
 * Berdana destpêkê
 * Wizard a çend-gavî ji bo hilbijartina şablon û malperê
 * Pêvajoya komî bi paşvegerandina pêşketina dem-rast

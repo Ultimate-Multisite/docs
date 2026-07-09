@@ -3,11 +3,11 @@ title: Rok za članstvo in blokiranje spletnega mesta
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Končanje članstva in blokiranje spletnih strani
+# Končanje članstva in blokiranje spletnih strani {#membership-expiration-and-site-blocking}
 
 Ta vodič pojasnjuje, kako Ultimate Multisite obravnava potek končanja članskih obdobij, konca vprašanj za probne obdobja in blokiranja spletnih strani na fron end. Pokriva celotno življenjsko obdobje članstva od aktivnega do izteklega, nastavitve, ki kontrolirajo, ali so strani blokirane, ter kaj preveriti, če strani ostajajo dostopne po končanju članskega obdobja.
 
-## Življenjsko obdobje statusa članstva
+## Življenjsko obdobje statusa članstva {#membership-status-lifecycle}
 
 Vsako članstvo v Ultimate Multisite ima en od naslednjih statusov:
 
@@ -24,7 +24,7 @@ Brezplačna članstva se ne iztekle samodejno. Ultimate Multisite jih tretira ko
 | **Expired** (Istekelo) | Prešel je datum končanja in obdobje prilagodljivosti brez obnove |
 | **Cancelled** (Prekinjeno) | Eksplicitno prekinjeno strankom ali administratorjem |
 
-### Kako se članstva spremenjajo v iztekle
+### Kako se članstva spremenjajo v iztekle {#how-memberships-transition-to-expired}
 
 Ultimate Multisite vsako uro izvaja zadnje preverjanje, ki išče člansko obdobja, ki bi moralo biti označeno kot iztekle. Ta preverjanje uporablja [Action Scheduler](https://actionscheduler.org/) (ne WP-Cron neposredno) in se izvaja kot načrtovano dejanje `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Preverjanje končanja obdobja ima **vgrajeno obdobje prilagodljivosti od 3 dni**
 Period za odlašanje do isteka trajanja (expiration grace period) je oddaje na zasebno odločitev od postavke Perioda odlašanja bloka sprednje strani (Frontend Block Grace Period). Period za odlašanje upravlja zmanjšanjem **statusov** s aktivnega/na zadržanju na istekle. Period odlašanja bloka sprednje strani upravlja zmanjšanjem, ko se **splet blokira**, po tem ko je status že spremenil.
 :::
 
-#### Avtomatsko obnovljive vs. Ne-avtomatsko obnovljive naročnine
+#### Avtomatsko obnovljive vs. Ne-avtomatsko obnovljive naročnine {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Ta razlika je ključna za razumevanje vedenja isteka trajanja:
 
@@ -42,7 +42,7 @@ Ta razlika je ključna za razumevanje vedenja isteka trajanja:
 
 - **Avtomatsko obnovljive naročnine** (`auto_renew = true`): Preverjanje isteka trajanja v cronu **to popolnoma preskače**. Očekuje se, da je payment gateway (Stripe, PayPal itd.) Ultimate Multisite obvestil preko webhookov, ko ne uspe naročnina ali jo prekine. Če webhook ni prejelo – zaradi napake v konfiguraciji endpointa, izpadnega gatewayja ali če je naročnina prekrita zunaj sistema – lahko naročnina ostane `active` (aktivna) neomejeno čez datum isteka trajanja.
 
-### Kako se končajo probni obdobja (Trials End)
+### Kako se končajo probni obdobja (Trials End) {#how-trials-end}
 
 Ko se probno obdobje naročnine konča, sistem:
 
@@ -52,11 +52,11 @@ Ko se probno obdobje naročnine konča, sistem:
 
 Ta proces se odvija na isti urski načrt kot redno preverjanje isteka trajanja, vendar **le za ne-avtomatsko obnovljive naročnine**. Za avtomatske probne obdobja upravlja payment gateway preklop z probnega na plačljivo naročnino.
 
-## Blokiranje dostopa sprednje strani
+## Blokiranje dostopa sprednje strani {#block-frontend-access}
 
 Po podrazlo, ko se članstvo izbriše ali postane na pauzo, je **omejen samo dashboard wp-admin**. Javna sprednja stran mesta ostaja dostopna za obiskovalce. Če želite tudi blokirati javni dostop, morate vključiti nastavitvo **Block Frontend Access**.
 
-### Konfiguracija nastavitve
+### Konfiguracija nastavitve {#configuring-the-setting}
 
 Navigirajte do **Ultimate Multisite > Settings > Memberships** in vključite **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Tri povezane nastavitve upravljajo to vedenje:
 | **Frontend Block Grace Period** | Število dni čakanja po deaktivaciji članstva pred blokiranjem. Postavite na `0`, da se blokira takoj. | 0 |
 | **Frontend Block Page** | Stranica na glavnem mestu, ki usmerja obiskovalce, ko je stran blokirana. Če ni postavljena, obiskovalci vidijo splošno sporočilo "Stranje ni trenutno na voljo" z povezavo na stran za prijavu admina strani. | None |
 
-### Kaj vidijo obiskovalci, ko je stran blokirana
+### Kaj vidijo obiskovalci, ko je stran blokirana {#what-visitors-see-when-a-site-is-blocked}
 
 Ko je dostop do sprednje strani blokiran, obiskovalci strani bodo:
 
@@ -83,7 +83,7 @@ Ko je dostop do sprednje strani blokiran, obiskovalci strani bodo:
 
 Admini strani lahko še vedno prijajo – stran za prijavu nikoli ni blokirana.
 
-### Kaj je blokirano in kdaj
+### Kaj je blokirano in kdaj {#what-gets-blocked-and-when}
 
 Vedenje blokiranja se odloča na podlagi statusa članstva:
 
@@ -104,21 +104,21 @@ Vedenje blokiranja se odloča na podlagi statusa članstva:
 Odančena članstva so vedno blokirana takoj ko je poteklo datum istechanja, ne glede na to ali je Block Frontend Access vklopljen. Prilagodljivo obdobje blokiranja na frontendu **ne se uporablja** za odančena članstva.
 :::
 
-## Reševanje težav: Svoji domovni strani ostajajo dostopne po istehanju
+## Reševanje težav: Svoji domovni strani ostajajo dostopne po istehanju {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Če so domovni strani nadaljnje javno dostopne, ko poteka isteklo članstvo, preverite sledeče stvari v naslednji vrstvi:
 
-### 1. Preverite, da je nastavitva Block Frontend Access vklopljena
+### 1. Preverite, da je nastavitva Block Frontend Access vklopljena {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Idi na **Ultimate Multisite > Settings > Memberships** in potrdite, da je preklicna gumba (toggle) **Block Frontend Access** vklopljen. Ta nastavitva je **po podrazmerju izklopena**, kar pomeni, da so omejeni le `wp-admin` stranjo, ko postane članstvo neaktivno.
 
-### 2. Preverite prilagodljivo obdobje blokiranja na frontendu
+### 2. Preverite prilagodljivo obdobje blokiranja na frontendu {#2-check-the-frontend-block-grace-period}
 
 Na istoj nastavi na strani zamenjalnih nastavitev preverite vrednost **Frontend Block Grace Period**. Če je ta postavljeno na 7 dni, na primer, frontend se ne bo blokiral do 7 dni po datumu izteka članstva – tudi če je status članstva že `expired`.
 
 Postavite ga na `0`, če želite takojno blokiranje ko postane članstvo neaktivno.
 
-### 3. Potrdite, da se Status Članstva Obra genuinely spremenil
+### 3. Potrdite, da se Status Članstva Obra genuinely spremenil {#3-confirm-the-membership-status-has-actually-changed}
 
 Idi na **Ultimate Multisite > Memberships** in preverite status vplivnega članstva. Če še vedno prikazuje `active` nonostante datuma izteka, je prehod statusa ni nastal. Pogojne vzroki:
 
@@ -126,7 +126,7 @@ Idi na **Ultimate Multisite > Memberships** in preverite status vplivnega člans
 
 - **Cron zadostnik ni deloval**: Predvsem naslednjem koraku.
 
-### 4. Preverite, da Action Scheduler deluje
+### 4. Preverite, da Action Scheduler deluje {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite uporablja Action Scheduler za svoje cron zadotnike. Idi na **Tools > Scheduled Actions** v adminu omrežja in poiščite:
 
@@ -148,7 +148,7 @@ Da bi zagotovili zanesljivo izvrševanje crona, nastavi sistemni cron job:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Preverite težave z Gateway Webhookom (Avtomatsko obnavljanje članstev)
+### 5. Preverite težave z Gateway Webhookom (Avtomatsko obnavljanje članstev) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Če je članstvo avtomatsko obnavljeno, vendar je pretplava gatewaya bila odstopljena ali ni uspešna, a Ultimate Multisite ga še vedno prikazuje kot `active`:
 
@@ -157,7 +157,7 @@ Da bi zagotovili zanesljivo izvrševanje crona, nastavi sistemni cron job:
 
 Če gateway prikazuje pretplavo kot odstopljeno, vendar Ultimate Multisite ne, je verjetno izgubljena obvestila preko webhooka. Možete ručno spremeniti status članstva v **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Preverite obdobje brezplačne obdelave (Cron nivo)
+### 6. Preverite obdobje brezplačne obdelave (Cron nivo) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron preverjanje ima svoje obdobje brezplačne obdelave (standard: 3 dni) pred označevanjem članstva kot izteklega. To je ločeno od obdobja brezplačne obdelave na spletni strani. Celotno čas do blokiranja strani lahko doseže:
 
@@ -165,7 +165,7 @@ Cron preverjanje ima svoje obdobje brezplačne obdelave (standard: 3 dni) pred o
 
 Na primer, z podrazmebnimi nastavitvami in 7-dnevnim obdobjem za prednjo stran (frontend grace period) lahko dojdemo do tega, da se spletna stran zapravo blokira le po približno 10 dneh po datumu `date_expiration`.
 
-### 7. Ručno iztekanje članstva
+### 7. Ručno iztekanje članstva {#7-manually-expire-a-membership}
 
 Če potrebujete takoj blokirati spletno mesto brez čakanja na ciklus crona, lahko ručno spremenite status članstva:
 
@@ -176,7 +176,7 @@ Na primer, z podrazmebnimi nastavitvami in 7-dnevnim obdobjem za prednjo stran (
 
 Blokiranje prednje strani bo začelo delovati pri naslednji nalopeni strani (z obzirom na obdobje za blokiranje prednje strani za iztekačja članstev, ali takoj za odizvane članstva).
 
-## Povzetek
+## Povzetek {#summary}
 
 Celotna časovna okvire od datuma iztekanja do blokiranja spletne strani:
 
@@ -208,7 +208,7 @@ Za odizvane membership, pot je kračji:
   Prednja stran spletne strani je takoj blokirana
 ```
 
-## Referenca za razvijalce
+## Referenca za razvijalce {#developer-reference}
 
 Naslednji hooks in filters vam omogočajo prilagoditi vedenje iztekanja in blokiranja:
 

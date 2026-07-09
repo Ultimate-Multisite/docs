@@ -3,19 +3,19 @@ title: Configurando o Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Configurando o Gateway Stripe (v2)
+# Configurando o Gateway Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 
 Você pode ativar até quatro métodos de pagamento na página de configurações de pagamento: Stripe, Stripe Checkout, PayPal e Manual. Neste artigo, veremos como integrar com o **Stripe**.
 
-## Habilitando o Stripe
+## Habilitando o Stripe {#enabling-stripe}
 
 Para habilitar o Stripe como um gateway de pagamento disponível na sua rede, vá para **Ultimate Multisite > Configurações > Pagamentos** e marque a chave ao lado de **Stripe** ou **Stripe Checkout** na seção Gateway de Pagamento Ativo.
 
 ![Habilitando o Stripe nos gateways de pagamento ativos](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Este método mostrará um espaço para inserir o número do cartão de crédito durante o checkout.
 
@@ -47,7 +47,7 @@ Copie o valor da chave **Publishable key** e da chave **Secret key**, na coluna 
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Configurando o Webhook do Stripe
+## Configurando o Webhook do Stripe {#setting-up-stripe-webhook}
 
 O Stripe envia eventos de webhook que notificam o Ultimate Multisite sempre que algo acontece na **sua conta do stripe**.
 

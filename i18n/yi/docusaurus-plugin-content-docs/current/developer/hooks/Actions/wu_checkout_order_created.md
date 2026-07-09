@@ -4,13 +4,13 @@ title: אַקציע - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Action: wu_checkout_order_created
+# Action: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 לויפֿט נאָך דעם ווי די checkout באַשטעלונג איז גאָר צונויפֿגעשטעלט.
 
 Addons קענען דאָס נוצן צו שאַפֿן צווייטיקע memberships פֿאַר products מיט אומאָפּהענגיקע רעכענונג־ציקלען.
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | Name | Type | באַשרײַבונג |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Addons קענען דאָס נוצן צו שאַפֿן צווייטיקע members
 | $membership | `\WP_Ultimo\Models\Membership` | די הויפּט־membership. |
 | $payment | `\WP_Ultimo\Models\Payment` | די צאָלונג. |
 
-### זינט
+### זינט {#since}
 
 - 2.5.0
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) אין שורה 891

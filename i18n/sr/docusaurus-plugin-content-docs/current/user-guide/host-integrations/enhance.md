@@ -3,33 +3,33 @@ title: Poboljšajte integraciju kontrolne ploče
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Povećajte Integraciju sa Control Panelom
+# Povećajte Integraciju sa Control Panelom {#enhance-control-panel-integration}
 
-## Pregled
+## Pregled {#overview}
 Enhance je moderni control panel koji pruža moćne mogućnosti automatizacije i upravljanja hostingom. Ova integracija omogućava automatsku sinhronizaciju domena i upravljanje SSL sertifikatima između Ultimate Multisite-a i Enhance Control Panel-a.
 
 **Povezana diskusija:** Pogledajte [GitHub Diskusiju #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) za savete zajednice i dodatne informacije.
 
-## Karakteristike
+## Karakteristike {#features}
 - Automatska sinhronizacija domena kada su domeni mapirani u Ultimate Multisite-u
 - Automatsko dodeljivanje SSL sertifikata putem LetsEncrypta kada DNS rešava
 - Podrška poddomena za mreže koje rade u modu poddomene
 - Uklanjanje domena kada se uklone mape
 - Testiranje konekcije za proveru API kredencijala
 
-## Zahtevi
+## Zahtevi {#requirements}
 
-### Zahtevi sistema
+### Zahtevi sistema {#system-requirements}
 - Instaliran i dostupan Enhance Control Panel
 - Instalacija WordPress Multisite-a hostovana na ili povezana sa serverom Enhance-a
 - Apache web server (Enhance trenutno podržava konfiguracije Apache; LiteSpeed Enterprise je dostupan po smanjenoj ceni)
 
-### Pristup API-ju
+### Pristup API-ju {#api-access}
 Morate imati administratorski pristup Enhance Control Panelu da biste kreirali API tokene.
 
-## Dobijanje Vaših API Kredencijala
+## Dobijanje Vaših API Kredencijala {#getting-your-api-credentials}
 
-### 1. Kreiranje API Tokena
+### 1. Kreiranje API Tokena {#1-create-an-api-token}
 
 1. Prijavite se na svoj Enhance Control Panel kao administrator
 2. Kliknite na **Settings** (Podešavanja) u meniju navigacije
@@ -44,7 +44,7 @@ Morate imati administratorski pristup Enhance Control Panelu da biste kreirali A
 
 Након креирања, ће вам бити prikazан **Access Token** и **Organization ID**. **Сачувајте их одмах**, јер токен се приказује само jednom.
 
-### 2. Пронађи Организациодни ИД (Organization ID)
+### 2. Пронађи Организациодни ИД (Organization ID) {#2-get-your-organization-id}
 
 Организациодни ИД се наводи на страници Access Tokens у синовом информационом блоку означеном "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Morate imati administratorski pristup Enhance Control Panelu da biste kreirali A
 2. Кликнути на **Manage customer** (Управљај клијентом) за релевантног клијента
 3. Погледати URL - Организациодни ИД су алфанумерички знаци који се налазију након `/customers/`
 
-### 3. Пронађи Ваш Серверни ИД (Server ID)
+### 3. Пронађи Ваш Серверни ИД (Server ID) {#3-get-your-server-id}
 
 Да бисте пронашли Ваш Серверни ИД (неопходно за операције домена):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Серверни ИД следи UUID формат: `00000000-0000-0000-0000-000000000000`
 
-### 4. Пронађи Ваш API URL
+### 4. Пронађи Ваш API URL {#4-get-your-api-url}
 
 Ваш API URL је URL ваше Enhance Control Panel-а са допуњеним `/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Коришћење само домена без `/api/`
 - Коришћење HTTP-а уместо HTTPS-а (HTTPS је неопходно за безбедност)
 
-## Конфигурација
+## Конфигурација {#configuration}
 
-### Неопходне константне вредности (Required Constants)
+### Неопходне константне вредности (Required Constants) {#required-constants}
 
 Додајте следеће константне вредности у ваш `wp-config.php` датотеку:
 
@@ -95,7 +95,7 @@ define('WU_ENHANCE_API_TOKEN', 'vaš-bearer-token-ovde');
 define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'vaš-server-uuid-ovde');
 
-### Podešavanje putem Integracionog magičnog alata (Integration Wizard)
+### Podešavanje putem Integracionog magičnog alata (Integration Wizard) {#setup-via-integration-wizard}
 
 1. U WordPress adminu, idite na **Ultimate Multisite** > **Settings**
 2. Idite na karticu **Integrations**
@@ -110,17 +110,17 @@ Možete da izaberete:
 - Da magični alat automatski ubaci konstante u vaš `wp-config.php` fajl
 - Da kopirate definicije konstanti i dodate ih ručno
 
-## Dodatna WordPress konfiguracija
+## Dodatna WordPress konfiguracija {#additional-wordpress-configuration}
 
 Na osnovu povratnih informacija zajednice ([Diskusija #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), možda ćete morati da podešite ove dodatne postavke:
 
-### Konfiguracija .htaccess fajla
+### Konfiguracija .htaccess fajla {#htaccess-configuration}
 
 Ako imate problema sa mapiranjem domena:
 1. Obrišite originalni Enhance `.htaccess` fajl
 2. Zamenite ga standardnim WordPress Multisite `.htaccess` fajlom
 
-### Konstante za kolačiće (Cookie Constants)
+### Konstante za kolačiće (Cookie Constants) {#cookie-constants}
 
 Dodajte ove konstante u `wp-config.php` kako biste osigurali ispravno rukovanje kolačićima na mapiranim domenima:
 
@@ -130,9 +130,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Kako to funkcioniše
+## Kako to funkcioniše {#how-it-works}
 
-### Kada se domena mapiraju
+### Kada se domena mapiraju {#when-a-domain-is-mapped}
 
 1. Korisnik mapuje prilagođeni domen u Ultimate Multisite (ili se na poddomenu kreira nova lokacija)
 2. Integracija šalje POST zahtev API-ju Enhance: `/servers/{server_id}/domains`
@@ -140,14 +140,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Kada DNS resolved bude na vašem serveru, Enhance automatski proviziše SSL sertifikat putem LetsEncrypta
 5. Domen postaje aktivan sa HTTPS-om
 
-### Kada se Domen Ukloni
+### Kada se Domen Ukloni {#when-a-domain-is-removed}
 
 1. Brisanje mape domena u Ultimate Multisite
 2. Integracija upita Enhance da pronađe ID domena
 3. Slanje DELETE zahteva na: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance uklanja domen iz vaše server konfiguracije
 
-### Provera DNS-a i SSL-a
+### Provera DNS-a i SSL-a {#dns-and-ssl-checking}
 
 Ultimate Multisite uključuje ugrađenu promenu DNS-a i SSL-a:
 - Možete podesiti interval provere u **Domain Mapping Settings** (podrazumevano: 300 sekundi/5 minuta)
@@ -155,9 +155,9 @@ Ultimate Multisite uključuje ugrađenu promenu DNS-a i SSL-a:
 - Važi li je SSL sertifikat se automatski proverava
 - Enhance upravlja provizijom SSL-a automatski, tako da ručna konfiguracija SSL-a nije potrebna
 
-## Provera Podešavanja
+## Provera Podešavanja {#verifying-setup}
 
-### Testiranje Povezivanja
+### Testiranje Povezivanja {#test-the-connection}
 
 1. U Wizardu Integracije, koristite korak **Test Connection** (Testiraj vezu)
 2. Plugin će pokušati da prikaže domene na vašem serveru
@@ -167,7 +167,7 @@ Ultimate Multisite uključuje ugrađenu promenu DNS-a i SSL-a:
    - Server ID je validan
    - Dostižna imanja (Permissions) su pravilno postavljena
 
-### Nakon Mapiranja Domena
+### Nakon Mapiranja Domena {#after-mapping-a-domain}
 
 1. Mapirajte test domen u Ultimate Multisite
 2. Proverite logove Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -176,9 +176,9 @@ Ultimate Multisite uključuje ugrađenu promenu DNS-a i SSL-a:
    - Novi domen bi trebalo da se pojavi u listi
 4. Kada DNS prođe, proverite da je SSL automatski provizovan
 
-## Rešavanje problema
+## Rešavanje problema {#troubleshooting}
 
-### Problemi sa povezivanjem API-ja
+### Problemi sa povezivanjem API-ja {#api-connection-issues}
 
 **Greška: "Neuspešno se povezao sa Enhance API-jem"**
 - Proverite da li `WU_ENHANCE_API_URL` završava sa `/api/`
@@ -196,7 +196,7 @@ Ultimate Multisite uključuje ugrađenu promenu DNS-a i SSL-a:
 - Uverite se da Server ID ima ispravan format UUID-ja
 - Potvrdite da postoji server u vašem Enhance panelu
 
-### Domen ne dodaje se
+### Domen ne dodaje se {#domain-not-added}
 
 **Proverite logove:**
 1. Idite na **Ultimate Multisite** > **Logs**
@@ -209,7 +209,7 @@ Ultimate Multisite uključuje ugrađenu promenu DNS-a i SSL-a:
 - Nedovoljna API dozvola (proverite da li token ima ulogu System Administrator)
 - Server ID se ne poklapa sa stvarnim serverom u Enhance-u
 
-### Problemi sa SSL sertifikatom
+### Problemi sa SSL sertifikatom {#ssl-certificate-issues}
 
 **SSL se ne generiše:**
 - Proverite da li DNS pokazuje na IP adresu vašeg servera
@@ -223,7 +223,7 @@ Ultimate Multisite uključuje ugrađenu promenu DNS-a i SSL-a:
 2. Pronađite svoj domen i proverite njegov status SSL-a
 3. Možete ručno pokrenuti generisanje SSL-a ako je potrebno
 
-### Interval provere DNS-a
+### Interval provere DNS-a {#dns-check-interval}
 
 Ako domen ili SSL sertifikati duže od uobičajenog vremena traju za aktivaciju:
 1. Idite na **Ultimate Multisite** > **Settings** > **Domain Mapping** (Mapiranje domena)
@@ -231,7 +231,7 @@ Ako domen ili SSL sertifikati duže od uobičajenog vremena traju za aktivaciju:
 3. Prilagodite ga sa podrazmeDefault vrednosti od 300 sekunde na nižu vrednost (minimalno: 10 sekundi)
 4. **Napomena:** Niži interval znači češće provere, ali to dovodi do većeg opterećenja servera
 
-### Greške pri autentifikaciji
+### Greške pri autentifikaciji {#authentication-errors}
 
 **HTTP 401/403 greške:**
 - Generišite novi API token u Enhance-u
@@ -239,7 +239,7 @@ Ako domen ili SSL sertifikati duže od uobičajenog vremena traju za aktivaciju:
 - Proverite da li token nije istekao
 - Uverite se da koristite ispravan Organization ID (iako obično nije potreban u URL-u)
 
-### Analiza logova
+### Analiza logova {#log-analysis}
 
 Omogućite detaljno logovanje:
 ```php
@@ -253,15 +253,15 @@ Zatim proverite logove na sledećim mestima:
 - WordPress debug log: `wp-content/debug.log`
 - Logovi Enhance panela: Dostupni u admin interfejsu Enhance
 
-## API Referenca
+## API Referenca {#api-reference}
 
-### Autentifikacija
+### Autentifikacija {#authentication}
 Sve API zahtevi koriste autentifikaciju Bearer tokenom:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Česte endpointove koji se koriste
+### Česte endpointove koji se koriste {#common-endpoints-used}
 
 **Lista servera:**
 ```
@@ -284,30 +284,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Potpuna API dokumentacija
+### Potpuna API dokumentacija {#full-api-documentation}
 Potpuna API dokumentacija: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Najbolje prakse
+## Najbolje prakse {#best-practices}
 
-### Безбедност
+### Безбедност {#security}
 - **Nikada ne komitujte API tokene u verziju kontrole**
 - Spremite tokene u `wp-config.php` fajlu koji treba isključiti iz Gita
 - Koristite tokene sa odgovarajućim dozvolama (System Administrator za punu integraciju)
 - Postavite datume isteka tokena za produkcione okruženja
 - Periodično rotirajte tokene
 
-### Performanse
+### Performanse {#performance}
 - Koristite podrazumevan interval provere DNS-a (300 sekundi) kako biste izbegli prekomerno pozivanje API-ja
 - Prati resurse servera Enhance kada se izvode operacije na domenima velikog obima
 - Razmislite o podešavanju dodavanja domena u razmacima ako mapirate mnogo domena odjednom
 
-### Praćenje (Monitoring)
+### Praćenje (Monitoring) {#monitoring}
 - Redovno proveravajte logove Ultimate Multisite za greške integracije
 - Postavite praćenje za neuspešno dodavanje domena
 - Proverite da li su SSL sertifikati ispravno postavljeni
 - Prati kapacitet servera Enhance i granice domena
 
-## Dodatne resurse
+## Dodatne resurse {#additional-resources}
 
 - **Zvanična dokumentacija Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Dokumentacija API-ja Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -315,7 +315,7 @@ Potpuna API dokumentacija: [https://apidocs.enhance.com](https://apidocs.enhance
 - **GitHub diskusija:** [Issue #265 - Saveti za integraciju Enhance](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Vodič za mapiranje domena Ultimate Multisite:** Pogledajte wiki stranicu "Kako konfigurirati mapiranje domena v2"
 
-## Podrška
+## Podrška {#support}
 
 Ako naiđete na probleme:
 1. Proverite sekciju Rešavanja problema iznad
@@ -324,7 +324,7 @@ Ako naiđete na probleme:
 4. Kontaktirajte podršku Enhance za probleme specifične za panel
 5. Kreirajte novu diskusiju sa detaljnim logovima grešaka za pomoć zajednice
 
-## Napomene
+## Napomene {#notes}
 
 Ova integracija obrađuje samo alase domena; Extend automatski upravlja SSL sertifikatima.
 Integracija podržava i prilagođene mape domena (custom domain mappings) kao i sajtove bazirane na poddomenu.

@@ -3,15 +3,15 @@ title: Cydgysylltu Adeiladwr Safle v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Trefniant Adeiladydd Gwefan v2
+# Trefniant Adeiladydd Gwefan v2 {#site-builder-orchestration-v2}
 
 Trefniant Adeiladydd Gwefan v2 (a gyflwynwyd yn Gratis AI Agent v1.4.0) yw'r peiriant sy'n pweru creu gwefannau aml-gam. Pan ofynnwch i'r agent "adeiladu gwefan bwyty" neu "creu portffolio gyda blog", mae'r orchestrator yn torri'r nod lefel uchel hwnnw'n **gynllun** strwythuredig, yn darganfod y plugins sydd eu hangen i'w gyflawni, yn gweithredu pob cam mewn trefn, yn olrhain cynnydd, ac yn adfer o wallau'n annibynnol.
 
 ---
 
-## Sut Mae'n Gweithio
+## Sut Mae'n Gweithio {#how-it-works}
 
-### 1. Cynhyrchu Cynllun
+### 1. Cynhyrchu Cynllun {#1-plan-generation}
 
 Pan fydd yr agent yn derbyn cyfarwyddyd adeiladu gwefan, mae'n galw'r gallu `create_site_plan` i gynhyrchu **cynllun gwefan** JSON. Mae'r cynllun yn disgrifio:
 
@@ -61,7 +61,7 @@ Pan fydd yr agent yn derbyn cyfarwyddyd adeiladu gwefan, mae'n galw'r gallu `cre
 }
 ```
 
-### 2. Darganfod Plugin
+### 2. Darganfod Plugin {#2-plugin-discovery}
 
 Cyn i weithredu ddechrau, mae'r orchestrator yn sganio `plugin_requirements` y cynllun ac yn gwirio pa plugins sydd eisoes yn weithredol. Ar gyfer plugins coll, mae'n:
 
@@ -71,7 +71,7 @@ Cyn i weithredu ddechrau, mae'r orchestrator yn sganio `plugin_requirements` y c
 
 Nid yw methiannau darganfod plugin yn angheuol — mae'r orchestrator yn marcio'r camau yr effeithir arnynt fel `skipped` ac yn parhau gyda gweddill y cynllun.
 
-### 3. Gweithredu'r Cynllun
+### 3. Gweithredu'r Cynllun {#3-plan-execution}
 
 Mae'r orchestrator yn galw `execute_site_plan` gyda ID y cynllun. Mae gweithredu'n mynd rhagddo fesul cyfnod, fesul cam:
 
@@ -79,7 +79,7 @@ Mae'r orchestrator yn galw `execute_site_plan` gyda ID y cynllun. Mae gweithredu
 - **Camau cyfochrog** — caiff camau o fewn yr un cyfnod nad oes ganddynt gyd-ddibyniaethau eu hanfon ar yr un pryd pan fydd y faner `parallel` wedi'i gosod.
 - **Terfyn amser cam** — mae gan bob cam derfyn amser unigol (diofyn: y gosodiad `Ability Timeout`). Caiff cam sydd wedi dod i ben o ran amser ei farcio'n `failed` ac mae'r cynllun yn parhau.
 
-### 4. Olrhain Cynnydd
+### 4. Olrhain Cynnydd {#4-progress-tracking}
 
 Galwch `get_plan_progress` ar unrhyw adeg i wirio statws gweithredu:
 
@@ -104,7 +104,7 @@ Gall defnyddwyr WP-CLI fonitro cynnydd gyda:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Adfer o Wallau
+### 5. Adfer o Wallau {#5-error-recovery}
 
 Pan fydd cam yn methu, mae'r orchestrator yn gwirio am gam **wrth gefn** a ddiffinnir yn y cynllun:
 
@@ -115,9 +115,9 @@ Mae'r agent yn adrodd am bob methiant yng nghrynodeb terfynol y cynllun a gall a
 
 ---
 
-## Galluoedd Cynllun Gwefan
+## Galluoedd Cynllun Gwefan {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Yn cynhyrchu cynllun gwefan strwythuredig o ddisgrifiad nod mewn iaith naturiol.
 
@@ -134,7 +134,7 @@ Yn cynhyrchu cynllun gwefan strwythuredig o ddisgrifiad nod mewn iaith naturiol.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Yn dechrau gweithredu cynllun gwefan a gynhyrchwyd yn flaenorol.
 
@@ -150,7 +150,7 @@ Yn dechrau gweithredu cynllun gwefan a gynhyrchwyd yn flaenorol.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Yn dychwelyd statws gweithredu cyfredol cynllun safle.
 
@@ -164,7 +164,7 @@ Yn dychwelyd statws gweithredu cyfredol cynllun safle.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Yn datrys cam a fethodd â llaw ac yn ailddechrau gweithredu'r cynllun o'r cam nesaf. Defnyddiwch hyn pan nad oedd adferiad awtomatig yn bosibl ac rydych am ymyrryd.
 
@@ -180,7 +180,7 @@ Yn datrys cam a fethodd â llaw ac yn ailddechrau gweithredu'r cynllun o'r cam n
 
 ---
 
-## Cymharu v1 a v2
+## Cymharu v1 a v2 {#comparing-v1-and-v2}
 
 | Nodwedd | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Yn datrys cam a fethodd â llaw ac yn ailddechrau gweithredu'r cynllun o'r cam n
 
 ---
 
-## Gorchmynion Cynllun WP-CLI
+## Gorchmynion Cynllun WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Yn cynhyrchu cynllun safle o ddisgrifiad nod.
 
@@ -205,7 +205,7 @@ Yn cynhyrchu cynllun safle o ddisgrifiad nod.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Yn gweithredu cynllun a gynhyrchwyd yn flaenorol.
 
@@ -213,7 +213,7 @@ Yn gweithredu cynllun a gynhyrchwyd yn flaenorol.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Yn dangos cynnydd cyfredol ar gyfer cynllun sy'n cael ei weithredu neu sydd wedi'i gwblhau.
 
@@ -221,7 +221,7 @@ Yn dangos cynnydd cyfredol ar gyfer cynllun sy'n cael ei weithredu neu sydd wedi
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Yn rhestru pob cynllun safle (yn aros, ar y gweill, ac wedi'u cwblhau).
 
@@ -229,7 +229,7 @@ Yn rhestru pob cynllun safle (yn aros, ar y gweill, ac wedi'u cwblhau).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Yn ailosod cynllun a fethodd i `pending` fel y gellir ei ailweithredu o'r dechrau.
 

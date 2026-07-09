@@ -4,11 +4,11 @@ title: Veprim - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Veprim: wu_handle_user_meta_fields
+# Veprim: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Lejoni zhvilluesit e plugin të ruajnë të dhënat meta të përdoruesit në mënyra të ndryshme nëse u nevojitet.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Tipi | Përshkrimi |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Lejoni zhvilluesit e plugin të ruajnë të dhënat meta të përdoruesit në m�
 | $customer | `\Customer` | Objekti i klientit Ultimate Multisite. |
 | $checkout | `\Checkout` | Klasa e checkout. |
 
-### Që prej
+### Që prej {#since}
 
 - 2.0.4
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) në rreshtin 1244

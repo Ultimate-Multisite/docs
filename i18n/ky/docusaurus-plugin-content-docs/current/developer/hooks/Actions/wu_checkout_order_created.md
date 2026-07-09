@@ -4,13 +4,13 @@ title: Аракет - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Аракет: wu_checkout_order_created
+# Аракет: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 Төлөө процесси боюнча буйрутма толук түзүлгөндөн кийин иштейт.
 
 Кошумчалар муну көз карандысыз төлөм циклдери бар өнүмдөр үчүн кошумча мүчөлүктөрдү түзүүгө колдоно алат.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аталышы | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -19,9 +19,9 @@ _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 | $membership | `\WP_Ultimo\Models\Membership` | Негизги мүчөлүк. |
 | $payment | `\WP_Ultimo\Models\Payment` | Төлөм. |
 
-### Чыгарылган версия
+### Чыгарылган версия {#since}
 
 - 2.5.0
-### Булак
+### Булак {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) ичинде 891-сапта аныкталган

@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Womanga Tsamba wa AI
+# Womanga Tsamba wa AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Zofunikira
+## Zofunikira {#requirements}
 
 - WordPress 5.3 kapena yapamwamba
 - PHP 7.4 kapena yapamwamba
 - pulogalamu yowonjezera ya Multisite Ultimate (yogwira ntchito)
 
-## Kuyika
+## Kuyika {#installation}
 
 1. Kwezani mafayilo a chowonjezeracho ku chikwatu chanu cha `/wp-content/plugins/`
 2. Yambitsani pulogalamu yowonjezerayo kudzera mu menyu ya 'Plugins' mu WordPress
 3. Konzani makonda a chowonjezeracho mu woyang'anira network
 
-## Kupanga
+## Kupanga {#development}
 
-### Kukhazikitsa
+### Kukhazikitsa {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Kapangidwe ka Pulojekiti
+### Kapangidwe ka Pulojekiti {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Malamulo okonzanso code kukhala yamakono
 ```
 
-### Kuyesa
+### Kuyesa {#testing}
 
 Chowonjezerachi chili ndi dongosolo loyesera lokwanira:
 
@@ -79,44 +79,44 @@ Chowonjezerachi chili ndi dongosolo loyesera lokwanira:
 - **Kuphimbidwa kwa Mayeso**: Kwakonzedwa kuti kutsate kuchuluka kwa code yomwe yayesedwa
 - **Kuyesa kwa Multisite**: Mayeso amayenda mu chilengedwe cha multisite
 
-### Miyezo ya Code
+### Miyezo ya Code {#code-standards}
 
 - **Miyezo ya Kulemba Code ya WordPress**: Imakakamizidwa kudzera pa PHPCS
 - **Kugwirizana ndi PHP 7.4+**: Zinthu zamakono za PHP zimathandizidwa
 - **Kusanthula Kosasunthika**: Kuphatikizidwa kwa PHPStan kuti muwone mitundu
 - **Kukonzanso Code Kukhala Yamakono**: Malamulo a Rector a kukweza PHP
 
-### Dongosolo Lomangira
+### Dongosolo Lomangira {#build-system}
 
 - **Kukonza Katundu**: Kuchepetsa mafayilo a CSS/JS
 - **Kumasulira**: Kupanga fayilo ya POT
 - **Kupakira**: Kupanga archive kuti igawidwe
 - **Njira ya Kupanga**: Katundu wosachepetsedwa kuti athandize kuthetsa zolakwika
 
-## Kasinthidwe
+## Kasinthidwe {#configuration}
 
 Chowonjezerachi chimathandiza zosankha zosiyanasiyana za kasinthidwe zomwe zimapezeka kudzera mu mawonekedwe a woyang'anira network.
 
-## Ma Hooks ndi Ma Filters
+## Ma Hooks ndi Ma Filters {#hooks-and-filters}
 
-### Zochita
+### Zochita {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Imayambitsidwa pambuyo poyambitsa chowonjezera
 - `ultimate-multisite-ai-site-builder_loaded` - Imayambitsidwa mafayilo onse a chowonjezera atakwezedwa
 
-### Ma Filters
+### Ma Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Sinthani makonda a chowonjezera
 - `ultimate-multisite-ai-site-builder_enabled` - Pitirirani pa momwe chowonjezera chiyenera kuyatsidwa/kuzimitsidwa
 
-## Layisensi
+## Layisensi {#license}
 
 Chowonjezerachi chili ndi layisensi ya GPL v3 kapena yapambuyo pake.
 
-## Thandizo
+## Thandizo {#support}
 
 Kuti mupeze thandizo ndi zolemba, pitani ku [MultisiteUltimate.com](https://multisiteultimate.com)
-## Mbiri ya Zosintha
+## Mbiri ya Zosintha {#changelog}
 
 - Version 1.0.1 (2025-09-28): sinthani dzina la prefix kukhala ultimate-multisite; sinthani text domain; kwezani version.
 

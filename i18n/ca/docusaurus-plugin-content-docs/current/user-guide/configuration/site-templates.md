@@ -3,13 +3,13 @@ title: Plantilles de lloc
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Plantilles de lloc (v2)
+# Plantilles de lloc (v2) {#site-templates-v2}
 
 _**NOTA: Aquest article fa referència a Ultimate Multisite versió 2.x. Si feu servir la versió 1.x,**_ **vegeu aquest article** _**.**_
 
 El nostre objectiu en crear una xarxa premium amb Ultimate Multisite és automatitzar tants processos com sigui possible, alhora que oferim als nostres clients flexibilitat i diferents opcions per triar quan creen els seus llocs web. Una manera senzilla d’aconseguir aquest equilibri és fer ús de la funcionalitat de plantilles de lloc d’Ultimate Multisite.
 
-## Què és una plantilla de lloc?
+## Què és una plantilla de lloc? {#what-is-a-site-template}
 
 Com el seu nom indica, una plantilla de lloc és un lloc base que es pot utilitzar com a punt de partida quan es creen llocs nous a la vostra xarxa.
 
@@ -17,7 +17,7 @@ Això vol dir que podeu crear un lloc base, activar diferents plugins, establir 
 
 Això sona fantàstic, però com creo una plantilla de lloc nova? És tan senzill com pot arribar a ser.
 
-## Creació i edició d’una plantilla de lloc nova
+## Creació i edició d’una plantilla de lloc nova {#creating-and-editing-a-new-site-template}
 
 Les plantilles de lloc són simplement llocs normals de la vostra xarxa. Per crear una plantilla nova, simplement podeu anar a **Administració de la xarxa > Ultimate Multisite > Llocs > Afegeix lloc.**
 
@@ -35,7 +35,7 @@ A la part inferior del formulari, veureu un commutador **Copia el lloc**. Això 
 
 ![Modal per afegir una plantilla de lloc amb commutador de còpia de lloc](/img/config/site-templates-list.png)
 
-### Personalització dels continguts d’una plantilla de lloc
+### Personalització dels continguts d’una plantilla de lloc {#customizing-the-contents-of-a-site-template}
 
 Per personalitzar la vostra plantilla de lloc, simplement navegueu fins al seu panell de Dashboard i feu els canvis que necessiteu. Podeu crear publicacions noves, pàgines, activar plugins i canviar el theme actiu. Fins i tot podeu anar al personalitzador i canviar tota mena d’opcions de personalització.
 
@@ -43,11 +43,11 @@ Per personalitzar la vostra plantilla de lloc, simplement navegueu fins al seu p
 
 Totes aquestes dades es copiaran quan un client creï un lloc nou basat en aquesta plantilla de lloc.
 
-### Opcions avançades
+### Opcions avançades {#advanced-options}
 
 Si us moveu bé amb una mica de codi personalitzat, podeu fer ús de la nostra API de cerca i substitució per substituir automàticament informació al lloc nou després de crear-lo. Això és útil per a coses com substituir noms d’empresa en una pàgina Sobre nosaltres, substituir el correu electrònic de contacte a la pàgina de contacte, etc.
 
-### Ús de plantilles de lloc
+### Ús de plantilles de lloc {#using-site-templates}
 
 D’acord, heu creat un munt de plantilles de lloc diferents amb dissenys, themes i configuracions diferents. Com les feu útils ara a la vostra xarxa?
 
@@ -59,7 +59,7 @@ Bàsicament, hi ha dos enfocaments que podeu utilitzar ara (no simultàniament):
 
   * Permetre que els vostres clients triïn les plantilles de lloc ells mateixos durant el registre.
 
-#### Mode 1: Assigna una plantilla de lloc
+#### Mode 1: Assigna una plantilla de lloc {#mode-1-assign-site-template}
 
 En aquest mode, els vostres clients no podran triar una plantilla quan creïn un Account, sinó que sereu vosaltres qui definireu quina plantilla s’ha d’utilitzar en cadascun dels vostres plans.
 
@@ -71,7 +71,7 @@ Això us portarà a la pàgina **Edita el producte**. A la secció **Opcions del
 
 ![Pestanya de plantilla de lloc del producte amb l’opció d’assignar plantilla de lloc](/img/config/product-site-templates.png)
 
-#### Mode 2: Tria una plantilla de lloc disponible
+#### Mode 2: Tria una plantilla de lloc disponible {#mode-2-choose-available-site-template}
 
 En aquest mode, donareu als vostres clients una opció durant el procés de registre. Podran seleccionar entre diferents plantilles de lloc que definiu a la configuració del producte. Teniu l’opció de limitar les plantilles de lloc entre les quals poden triar dins del producte seleccionat. Això us permetrà tenir conjunts diferents de plantilles de lloc per a cada producte, cosa ideal per destacar funcions i característiques diferents en un producte de preu més alt.
 
@@ -79,7 +79,7 @@ A la pàgina **Edita el producte**. A la secció **Opcions del producte**, cerqu
 
 ![Tria plantilles de lloc disponibles amb opcions de comportament](/img/config/product-site-templates.png)
 
-### Mode per defecte: selecció de plantilla de lloc al formulari de pagament
+### Mode per defecte: selecció de plantilla de lloc al formulari de pagament {#default-mode-site-template-selection-on-the-checkout-form}
 
 Si voleu que totes les vostres plantilles de lloc estiguin disponibles durant el registre, o potser no preferiu fer la feina extra d’assignar o especificar plantilles de lloc sota cada producte que creeu, podeu configurar simplement la selecció de plantilla de lloc al vostre **formulari de pagament**. Per fer-ho, aneu a **Ultimate Multisite > Formularis de pagament** i feu clic a **Edita** sota el formulari que voleu configurar.
 
@@ -93,29 +93,29 @@ Al frontend, els clients veuen el selector de plantilles durant el checkout i po
 
 ![Selector de plantilles al frontend durant el registre](/img/config/frontend-template-chooser.png)
 
-### Opcions de plantilla de lloc
+### Opcions de plantilla de lloc {#site-template-options}
 
 Hi ha altres funcions de plantilles de lloc disponibles que pots activar o desactivar a la configuració d’Ultimate Multisite.
 
 ![Opcions de plantilla de lloc a la configuració d’Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Permet el canvi de plantilla
+#### Permet el canvi de plantilla {#allow-template-switching}
 
 Activar aquesta opció permetrà als teus clients canviar la plantilla que trien durant el procés de registre després que s’hagin creat el Account i el lloc. Això és útil des del punt de vista del client, ja que els permet tornar a seleccionar una plantilla si més endavant descobreixen que la seva elecció original no era la millor per a les seves necessitats particulars.
 
-#### Permet als usuaris utilitzar el seu lloc com a plantilles
+#### Permet als usuaris utilitzar el seu lloc com a plantilles {#allow-users-to-use-their-site-as-templates}
 
 Com que els usuaris de subllocs han dedicat temps a construir i dissenyar el seu propi lloc, potser voldran clonar-lo i utilitzar-lo com una de les plantilles de lloc disponibles en crear un altre sublloc a la teva xarxa. Aquesta opció els permetrà aconseguir-ho.
 
-#### Copia els mitjans en duplicar la plantilla
+#### Copia els mitjans en duplicar la plantilla {#copy-media-on-template-duplication}
 
 Marcar aquesta opció copiarà els mitjans pujats al lloc de plantilla al lloc creat recentment. Això es pot sobreescriure en cadascun dels plans.
 
-#### **Evita que els motors de cerca indexin les plantilles de lloc**
+#### **Evita que els motors de cerca indexin les plantilles de lloc** {#prevent-search-engines-from-indexing-site-templates}
 
 Les plantilles de lloc, tal com s’expliquen en aquest article, són plantilles base, però continuen formant part de la teva xarxa, cosa que vol dir que encara estan disponibles perquè els motors de cerca les trobin. Aquesta opció et permetrà amagar les plantilles de lloc perquè els motors de cerca les puguin indexar.
 
-## Preomplir plantilles de lloc amb cerca i substitució automàtiques
+## Preomplir plantilles de lloc amb cerca i substitució automàtiques {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Una de les funcions més potents d’Ultimate Multisite és la possibilitat d’afegir camps arbitraris de text, color i selecció al formulari de registre. Un cop hem capturat aquestes dades, les podem utilitzar per preomplir el contingut en certes parts de la plantilla de lloc seleccionada. Aleshores, quan es publiqui el nou lloc, Ultimate Multisite substituirà els marcadors de posició per la informació real introduïda durant el registre.
 
@@ -135,7 +135,7 @@ Ultimate Multisite substituirà llavors automàticament els marcadors de posici�
 
 ![Marcadors de posició substituïts per dades del client al lloc](/img/config/site-templates-list.png)
 
-### Resoldre el problema de la "plantilla plena de marcadors de posició"
+### Resoldre el problema de la "plantilla plena de marcadors de posició" {#solving-the-template-full-of-placeholders-problem}
 
 Tot això està molt bé, però ens trobem amb un problema poc estètic: ara les nostres plantilles de lloc —que poden ser visitades pels nostres clients— estan plenes de marcadors de posició poc atractius que no diuen gaire.
 

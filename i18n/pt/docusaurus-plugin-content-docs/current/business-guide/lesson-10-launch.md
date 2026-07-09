@@ -3,19 +3,19 @@ title: 'Lição 10: Dia de Lançamento'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lição 10: Dia de Lançamento
+# Lição 10: Dia de Lançamento {#lesson-10-launch-day}
 
 Tudo está construído. Antes de abrir as portas, esta lição percorre a lista de verificação pré-lançamento para garantir que nada está partido, em falta ou embaraçoso.
 
-## Onde Ficámos
+## Onde Ficámos {#where-we-left-off}
 
 FitSite tem templates, planos, finalização de compra, branding, integração e preços todos configurados. Agora verificamos se tudo funciona e lançamos.
 
-## Lista de Verificação Pré-Lançamento
+## Lista de Verificação Pré-Lançamento {#pre-launch-checklist}
 
 Passe por todos os itens. Não salte nenhum.
 
-### Infraestrutura da Plataforma
+### Infraestrutura da Plataforma {#platform-infrastructure}
 
 - [ ] O alojamento está estável e com bom desempenho sob carga
 - [ ] O SSL wildcard está ativo e todos os subdomínios são servidos por HTTPS
@@ -23,7 +23,7 @@ Passe por todos os itens. Não salte nenhum.
 - [ ] As cópias de segurança estão configuradas e testadas (restaure pelo menos uma para verificar)
 - [ ] A monitorização está implementada -- saberá se a plataforma ficar indisponível
 
-### Templates
+### Templates {#templates}
 
 - [ ] Todos os três templates carregam corretamente em novos sites
 - [ ] O conteúdo de placeholder é útil e não tem erros ortográficos
@@ -32,7 +32,7 @@ Passe por todos os itens. Não salte nenhum.
 - [ ] A velocidade de carregamento das páginas é aceitável (teste com uma ferramenta como GTmetrix ou PageSpeed Insights)
 - [ ] Não há links quebrados nem recursos em falta em nenhum template
 
-### Planos e Produtos
+### Planos e Produtos {#plans-and-products}
 
 - [ ] Todos os três planos estão ativos e visíveis
 - [ ] As descrições dos planos são precisas e específicas do nicho
@@ -42,7 +42,7 @@ Passe por todos os itens. Não salte nenhum.
 - [ ] As ofertas adicionais no pedido aparecem corretamente durante a finalização de compra
 - [ ] As limitações de plugins e temas são aplicadas corretamente por plano
 
-### Fluxo de Finalização de Compra
+### Fluxo de Finalização de Compra {#checkout-flow}
 
 - [ ] Conclua uma inscrição de teste completa em cada plano (use o modo de pagamento de teste)
 - [ ] A seleção de template mostra os templates corretos por plano
@@ -52,7 +52,7 @@ Passe por todos os itens. Não salte nenhum.
 - [ ] O cliente consegue iniciar sessão no seu novo site imediatamente
 - [ ] Os códigos de desconto funcionam corretamente
 
-### Branding
+### Branding {#branding}
 
 - [ ] A página de login mostra o branding da FitSite
 - [ ] O admin dashboard mostra o branding da FitSite
@@ -60,7 +60,7 @@ Passe por todos os itens. Não salte nenhum.
 - [ ] As faturas são apresentadas corretamente com os detalhes da sua empresa
 - [ ] O site de marketing está online e liga ao formulário de finalização de compra
 
-### Integração
+### Integração {#onboarding}
 
 - [ ] O widget Início Rápido aparece nos dashboards de novos clientes
 - [ ] Todos os links do Início Rápido apontam para as páginas corretas
@@ -68,7 +68,7 @@ Passe por todos os itens. Não salte nenhum.
 - [ ] Os artigos da base de conhecimento estão publicados e acessíveis
 - [ ] A página Account mostra as informações corretas do plano e opções de upgrade
 
-### Legal e Negócio
+### Legal e Negócio {#legal-and-business}
 
 - [ ] Os termos de serviço estão publicados e ligados a partir da finalização de compra
 - [ ] A política de privacidade está publicada e acessível
@@ -77,11 +77,11 @@ Passe por todos os itens. Não salte nenhum.
 - [ ] O gateway de pagamento está em modo live (não em modo de teste)
 - [ ] A configuração fiscal está correta para a sua jurisdição
 
-## Lançamento Suave vs. Lançamento Completo
+## Lançamento Suave vs. Lançamento Completo {#soft-launch-vs-hard-launch}
 
 Considere um lançamento em duas fases:
 
-### Fase 1: Lançamento Suave
+### Fase 1: Lançamento Suave {#phase-1-soft-launch}
 
 Convide 5-10 proprietários de estúdios de fitness a inscreverem-se antes do lançamento público. Estes são os seus clientes beta. Ofereça-lhes um desconto significativo (50% de desconto vitalício, ou 3 meses grátis) em troca de:
 
@@ -91,7 +91,7 @@ Convide 5-10 proprietários de estúdios de fitness a inscreverem-se antes do la
 
 Isto dá-lhe feedback real de clientes e sites live para mostrar antes de abrir ao público.
 
-### Fase 2: Lançamento Público
+### Fase 2: Lançamento Público {#phase-2-public-launch}
 
 Depois de incorporar o feedback do lançamento suave:
 
@@ -100,7 +100,7 @@ Depois de incorporar o feedback do lançamento suave:
 - Comece a aquisição de clientes (Lição 11)
 - Anuncie em canais relevantes da indústria de fitness
 
-## Ações no Dia de Lançamento
+## Ações no Dia de Lançamento {#launch-day-actions}
 
 No dia em que se torna público:
 
@@ -110,7 +110,7 @@ No dia em que se torna público:
 4. **Esteja disponível** -- os seus primeiros clientes reais podem precisar de ajuda, e uma resposta rápida gera confiança
 5. **Celebre brevemente** -- depois volte ao trabalho
 
-## O Que Pode Correr Mal
+## O Que Pode Correr Mal {#what-can-go-wrong}
 
 Esteja preparado para:
 
@@ -120,7 +120,7 @@ Esteja preparado para:
 - **Desempenho sob carga**: Se tiver um pico de tráfego, saiba como escalar o seu alojamento
 - **Confusão dos clientes**: Tenha a sua base de conhecimento e canais de suporte prontos
 
-## A Rede FitSite Até Agora
+## A Rede FitSite Até Agora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## O Que Construímos Nesta Lição
+## O Que Construímos Nesta Lição {#what-we-built-this-lesson}
 
 - **Uma lista de verificação pré-lançamento abrangente** que cobre infraestrutura, conteúdo, pagamentos e questões legais
 - **Uma estratégia de lançamento suave** para obter feedback real antes de se tornar público

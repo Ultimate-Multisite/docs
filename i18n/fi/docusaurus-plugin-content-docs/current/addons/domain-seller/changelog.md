@@ -3,7 +3,7 @@ title: Verkkotunnusten myyjän muutosloki
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller -muutosloki
+# Domain Seller -muutosloki {#domain-seller-changelog}
 
 Versio 1.3.0 - Julkaistu 2026-06-02
 - Uusi: Lisätty network-admin-varoitus, kun HostAfrica-jälleenmyyjän saldo laskee liian alas
@@ -134,20 +134,20 @@ Versio 1.0.0 - Julkaistu 2025-09-28
 * **Korjattu:** Kaikki vanhentunut v1-koodi päivitetty v2-standardeihin
 * **Poistettu:** Vanha v1-yhteensopivuus (rikkova muutos)
 
-### Aiemmat versiot (v1 Legacy)
+### Aiemmat versiot (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Versio 0.0.3 - 20/08/2019
+### Versio 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Korjattu: Yhteensopimattomuus Groundhogg CRM:n kanssa
 * Huomautus: Tämä oli viimeinen v1-yhteensopiva julkaisu
 
-### Versio 0.0.2 - 07/12/2018
+### Versio 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Korjattu: License Key -kenttä poistettu
 * Korjattu: Plan-välilehdet puuttuivat, kun ominaisuus-plugin on aktiivinen
 * Parannettu: Rekisteröintikenttään lisätty ohituspainike
 
-### Versio 0.0.1 - Ensimmäinen julkaisu
+### Versio 0.0.1 - Ensimmäinen julkaisu {#version-001---initial-release}
 
 * OpenSRS-perusintegraatio WP Ultimo v1:lle
 * Yksinkertainen verkkotunnuksen haku ja rekisteröinti

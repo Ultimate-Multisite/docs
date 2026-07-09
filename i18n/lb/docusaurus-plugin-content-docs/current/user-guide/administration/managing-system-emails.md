@@ -3,11 +3,11 @@ title: Management vo System E-Mails
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# System-E-Mails verwalte
+# System-E-Mails verwalte {#managing-system-emails}
 
 Ultimate Multisite schickt verschidni System-E-Mails für Ereignis wie Anmeldebestätigungen, Zahlungsbelege und Mitgliedschaftsänderige. Dir chasch die E-Mail-Vorlage a dini Marke apasse.
 
-## System-E-Mails aaluege
+## System-E-Mails aaluege {#viewing-system-emails}
 
 Geh zu **Ultimate Multisite → Settings** und klick uf de Tab **Emails**, um d'E-Mail-Zuefällige z'gseh.
 
@@ -21,7 +21,7 @@ Du chasch au einzelni E-Mail-Vorlagene mit em System-E-Mail-Editor bearbeite:
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Neu E-Mail-Vorlagene importiere
+## Neu E-Mail-Vorlagene importiere {#importing-new-email-templates}
 
 Neui Versionen vo Ultimate Multisite und Addons chönne neui E-Mail-Vorlagene registriere. Um Konflikte z'verhindere, wärde neui Vorlage nöd automatisch agfüegt – du mues si manuell importiere.
 
@@ -32,7 +32,7 @@ Um neui E-Mail-Vorlagene z'importiere:
 3. Schalte d'Option **Import Emails** i, um verfügbari Vorlage z'gseh
 4. Wähl die Vorlage us, wo du importiere wetsch und bestätig
 
-## E-Mail-Vorlagene zurücksetze
+## E-Mail-Vorlagene zurücksetze {#resetting-email-templates}
 
 Wenn du e E-Mail-Vorlage personalisiert hesch und uf de Standardinhalt wetsch zrugg, häsch zwei Möglichkeite:
 

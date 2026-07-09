@@ -4,11 +4,11 @@ title: Ketso - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Ketso: set_auth_cookie
+# Ketso: set_auth_cookie {#action-setauthcookie}
 
 E sebetsa hang-hang pele cookie ya netefatso e behwa.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
@@ -19,10 +19,10 @@ E sebetsa hang-hang pele cookie ya netefatso e behwa.
 | $scheme | `string` | Mokgwa wa netefatso. Maboleng ho kenyeletswa 'auth' kapa 'secure_auth'. |
 | $token | `string` | Token ya session ya mosebedisi e tla sebediswa bakeng sa cookie ena. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) moleng wa 124

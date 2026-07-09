@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Webgune Eraikitzailea
+# AI Webgune Eraikitzailea {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Eskakizunak
+## Eskakizunak {#requirements}
 
 - WordPress 5.3 edo berriagoa
 - PHP 7.4 edo berriagoa
 - Multisite Ultimate plugin-a (aktibo)
 
-## Instalazioa
+## Instalazioa {#installation}
 
 1. Igo addon fitxategiak zure `/wp-content/plugins/` direktoriora
 2. Aktibatu plugin-a WordPress-eko 'Plugins' menuaren bidez
 3. Konfiguratu addon-aren ezarpenak sareko administrazioan
 
-## Garapena
+## Garapena {#development}
 
-### Konfigurazioa
+### Konfigurazioa {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Proiektuaren egitura
+### Proiektuaren egitura {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Kodea modernizatzeko arauak
 ```
 
-### Probak
+### Probak {#testing}
 
 Addon-ak proba-esparru oso bat barne hartzen du:
 
@@ -79,44 +79,44 @@ Addon-ak proba-esparru oso bat barne hartzen du:
 - **Proba-estaldura**: Kode-estaldura jarraitzeko konfiguratuta
 - **Multisite probak**: Probak multisite ingurunean exekutatzen dira
 
-### Kode-estandarrak
+### Kode-estandarrak {#code-standards}
 
 - **WordPress kode-estandarrak**: PHPCS bidez betearazita
 - **PHP 7.4+ bateragarritasuna**: PHP ezaugarri modernoak onartuta
 - **Analisi estatikoa**: PHPStan integrazioa mota-egiaztapenerako
 - **Kodearen modernizazioa**: PHP eguneratzeetarako Rector arauak
 
-### Eraikitze-sistema
+### Eraikitze-sistema {#build-system}
 
 - **Asset-en prozesamendua**: CSS/JS fitxategietarako minifikazioa
 - **Itzulpena**: POT fitxategiaren sorrera
 - **Paketatzea**: Banaketarako artxibo-sorrera
 - **Garapen modua**: Minifikatu gabeko asset-ak arazketarako
 
-## Konfigurazioa
+## Konfigurazioa {#configuration}
 
 Addon-ak sareko administrazio-interfazearen bidez eskuragarri dauden hainbat konfigurazio-aukera onartzen ditu.
 
-## Hook-ak eta iragazkiak
+## Hook-ak eta iragazkiak {#hooks-and-filters}
 
-### Ekintzak
+### Ekintzak {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Addon-aren hasieratzearen ondoren abiarazten da
 - `ultimate-multisite-ai-site-builder_loaded` - Addon fitxategi guztiak kargatu ondoren abiarazten da
 
-### Iragazkiak
+### Iragazkiak {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Aldatu addon-aren ezarpenak
 - `ultimate-multisite-ai-site-builder_enabled` - Gainidatzi addon-a gaitzeko/desgaitzeko egoera
 
-## Lizentzia
+## Lizentzia {#license}
 
 Addon honek GPL v3 edo berriagoaren lizentzia du.
 
-## Euskarria
+## Euskarria {#support}
 
 Euskarrirako eta dokumentaziorako, bisitatu [MultisiteUltimate.com](https://multisiteultimate.com)
-## Aldaketen erregistroa
+## Aldaketen erregistroa {#changelog}
 
 - 1.0.1 bertsioa (2025-09-28): aldatu aurrizkia ultimate-multisite-ra; eguneratu testu-domeinua; bertsio-igoera.
 

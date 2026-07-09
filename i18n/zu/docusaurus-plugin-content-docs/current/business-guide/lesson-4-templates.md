@@ -3,15 +3,15 @@ title: 'Isifundo 4: Ukwakha Amathempulethi Akhethekile'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Isifundo 4: Ukwakha Izifanekiso Zomkhakha Othile
+# Isifundo 4: Ukwakha Izifanekiso Zomkhakha Othile {#lesson-4-building-niche-templates}
 
 Izifanekiso ziyisisekelo sesiphakamiso sakho senani lomkhakha othile. Umnikazi we-studio yokuzivocavoca obhalisayo abone isayithi esivele ibukeka njengewebhusayithi yokuzivocavoca -- enamashejuli amakilasi, amaphrofayela abaqeqeshi, nezithombe ezifanele -- maningi kakhulu amathuba okuthi ahlale kunalowo obona ikhasi elingenalutho.
 
-## Lapho Esigcine Khona
+## Lapho Esigcine Khona {#where-we-left-off}
 
 Sinenethiwekhi ye-FitSite esebenzayo ene-Ultimate Multisite efakiwe futhi elungisiwe. Manje sakha izifanekiso ezenza i-FitSite izwakale yakhelwe ngokukhethekile amabhizinisi okuzivocavoca.
 
-## Kungani Izifanekiso Zomkhakha Othile Zibalulekile
+## Kungani Izifanekiso Zomkhakha Othile Zibalulekile {#why-niche-templates-matter}
 
 Izifanekiso ezijwayelekile ziphoqa amakhasimende akho ukuba enze umsebenzi onzima: ukuthola ukuthi yimaphi amakhasi awadingayo, isakhiwo sokuqukethwe esisebenzayo, nokuthi angakwenza kanjani kubukeke kahle embonini yawo. Izifanekiso zomkhakha othile zisusa lokho kungqubuzana.
 
@@ -24,11 +24,11 @@ Umnikazi we-studio yokuzivocavoca obhalisela i-FitSite kufanele abone:
 
 Bagcwalisa imininingwane yabo. Abaqali ekuqaleni.
 
-## Ukuhlela Izifanekiso Zakho
+## Ukuhlela Izifanekiso Zakho {#planning-your-templates}
 
 Ngaphambi kokwakha, nquma ukuthi yiziphi izifanekiso ozozinikeza. Ku-FitSite, sizodala ezintathu:
 
-### Isifanekiso 1: Studio Essential
+### Isifanekiso 1: Studio Essential {#template-1-studio-essential}
 
 Sezitudiyo ezincane nabaqeqeshi bomuntu siqu.
 
@@ -39,7 +39,7 @@ Sezitudiyo ezincane nabaqeqeshi bomuntu siqu.
 - Ikhasi elithi **Xhumana** elinemephu yendawo nefomu
 - **Idizayini ehlanzekile, yesimanje** enohlelo lwemibala olufanele ukuzivocavoca
 
-### Isifanekiso 2: Gym Pro
+### Isifanekiso 2: Gym Pro {#template-2-gym-pro}
 
 Sama-gym asunguliwe anezinsizakalo eziningi.
 
@@ -50,7 +50,7 @@ Sama-gym asunguliwe anezinsizakalo eziningi.
 - Ingxenye ye-**Ubufakazi** ekhasini lasekhaya
 - Izinketho **zokumaketha umkhiqizo ezigqamile kakhulu**
 
-### Isifanekiso 3: Fitness Chain
+### Isifanekiso 3: Fitness Chain {#template-3-fitness-chain}
 
 Semisebenzi enezindawo eziningi.
 
@@ -60,17 +60,17 @@ Semisebenzi enezindawo eziningi.
 - **Ukumaketha umkhiqizo okumaphakathi** okunemininingwane eqondene nendawo
 - **Uhlu lwabasebenzi** ezindaweni ezahlukene
 
-## Ukwakha Isayithi Lesifanekiso
+## Ukwakha Isayithi Lesifanekiso {#building-a-template-site}
 
 Ku-Ultimate Multisite, isifanekiso simane siyisayithi ye-WordPress elungiswe ngendlela ofuna amasayithi amakhasimende amasha abukeke ngayo. Nansi indlela yokudala eyodwa:
 
-### Isinyathelo 1: Dala Isayithi Lesifanekiso
+### Isinyathelo 1: Dala Isayithi Lesifanekiso {#step-1-create-the-template-site}
 
 1. Zulazula uye ku-**Sites > Add New** kumlawuli wenethiwekhi yakho
 2. Dala isayithi ebizwa ngokuthi `template-studio-essential`
 3. Le sayithi iba indawo yakho yokusebenza
 
-### Isinyathelo 2: Faka futhi Ulungise Itimu
+### Isinyathelo 2: Faka futhi Ulungise Itimu {#step-2-install-and-configure-the-theme}
 
 Shintshela ku-dashboard yesayithi yesifanekiso bese:
 
@@ -82,7 +82,7 @@ Shintshela ku-dashboard yesayithi yesifanekiso bese:
 Khetha itimu eguquguqukayo ngokwanele ukuze ibukeke kahle kokuzivocavoca kodwa ingabi yinkimbinkimbi kakhulu kangangokuthi amakhasimende akho angeke akwazi ukuyiphatha. Amatimu afana ne-Astra, GeneratePress, noma Kadence asebenza kahle ngoba alula, ayalungiseka, futhi asekelwa kahle.
 :::
 
-### Isinyathelo 3: Dala Amakhasi
+### Isinyathelo 3: Dala Amakhasi {#step-3-create-the-pages}
 
 Yakha ikhasi ngalinye nge:
 
@@ -92,7 +92,7 @@ Yakha ikhasi ngalinye nge:
 
 Yenza okuqukethwe okuyisibambi-ndawo kube okufundisayo lapho kungenzeka khona. Esikhundleni sombhalo ojwayelekile wokugcwalisa, bhala okuqukethwe okufana nokuthi: "Faka esikhundleni salokhu incazelo emfushane ye-studio yakho nalokho okuyenza ikhetheke. Yisho ifilosofi yakho yokuqeqesha, iminyaka yesipiliyoni, noma lokho amaklayenti angakulindela."
 
-### Isinyathelo 4: Lungisa Ama-plugin
+### Isinyathelo 4: Lungisa Ama-plugin {#step-4-configure-plugins}
 
 Faka futhi uvule ama-plugin adingwa yizitudiyo zokuzivocavoca:
 
@@ -100,7 +100,7 @@ Faka futhi uvule ama-plugin adingwa yizitudiyo zokuzivocavoca:
 - I-plugin yefomu lokuxhumana
 - I-plugin ye-SEO (elungiswe kusengaphambili ngezinketho ezizenzakalelayo ezifanele ukuzivocavoca)
 
-### Isinyathelo 5: Maka Njengesifanekiso
+### Isinyathelo 5: Maka Njengesifanekiso {#step-5-mark-as-template}
 
 1. Zulazula uye ku-**Ultimate Multisite > Sites**
 2. Hlela isayithi yesifanekiso
@@ -108,7 +108,7 @@ Faka futhi uvule ama-plugin adingwa yizitudiyo zokuzivocavoca:
 
 Phinda le nqubo ngesifanekiso ngasinye ofuna ukusinikeza.
 
-## Uhlu Lokuhlola Ikhwalithi Yesifanekiso
+## Uhlu Lokuhlola Ikhwalithi Yesifanekiso {#template-quality-checklist}
 
 Ngaphambi kokwenza isifanekiso sitholakale, qinisekisa:
 
@@ -121,7 +121,7 @@ Ngaphambi kokwenza isifanekiso sitholakale, qinisekisa:
 - [ ] Azikho izixhumanisi eziphukile noma amafayela angekho
 - [ ] Isivinini sokulayisha ikhasi siyamukeleka
 
-## Inethiwekhi Ye-FitSite Kuze Kube Manje
+## Inethiwekhi Ye-FitSite Kuze Kube Manje {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Izifanekiso ezintathu eziqondene nomkhakha othile** eziklanyelwe osayizi abahlukene bamabhizinisi okuzivocavoca
 - **Okuqukethwe nezithombe ezifanele ukuzivocavoca** ezenza inkundla izwakale yakhelwe injongo ethile

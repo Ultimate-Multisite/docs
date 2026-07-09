@@ -3,11 +3,11 @@ title: Ultima Multisitio 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite estas WordPress Multisite plugin, kiu permesas al viŝi WaaS aŭ Websites as a Service al klientoj. Kiel ni komencas kaj lernas, kiel Ultimate Multisite povas helpi vian biznes kaj klientojn, ni bezonas certan bazan konsciencon.
 
-## La WordPress Multisite
+## La WordPress Multisite {#the-wordpress-multisite}
 
 Ni ĉiuj estas familian kun la standarda instalado de WordPress. Vi aŭ kreas ĝin per la kontrolpanelo de via hospedilo aŭ, por la valiantaj, vi montras novan webserveron kaj bazadon de datumoj, senpliigi la kernajn fajlon kaj komencas la instaliron.
 
@@ -21,13 +21,13 @@ En esence, WordPress multisite povas esti pensita kiel ĉi tio: Univerzo konserv
 
 Kaj ni ĉi tiu deklaro dividiĝu, mi rajt farus rigardi certan bazan terminologio, ne nur en la dokumentado de Ultimate Multisite, sed ankaŭ ĉe la WordPress komunumo.
 
-### La Rete (The Network)
+### La Rete (The Network) {#the-network}
 
 En la termino de WordPress, multisite network estas tio, kie pluraj subsitoj povas esti administriitaj el unuja dashboardo. Se la kreo de multisite network diferencas inter alojantoj, la finaj rezultoj usuale estas pli da direkto en la wp-config.php fakte por informi WordPress, ke ĝi operacis en ĉi tiu specifita modo.
 
 Ekzistas pluraj klare diferencoj inter multisite network kaj independente WordPress instalado, kiujn ni brize diskutis.
 
-#### Subdomajno kontraŭ Subdirektorio (Subdomain vs. Subdirectory)
+#### Subdomajno kontraŭ Subdirektorio (Subdomain vs. Subdirectory) {#subdomain-vs-subdirectory}
 
 Una de la plej tujaj decisionoj, kiun vi bezonas fari, estas ĉu la multisite instalado operos per _subdirektoroj_ aŭ _subdomajn_. Ultimate Multisite funkcias egalne bone kun amba elchaj elektadoj, sed ekzistas certaj arkitektura diferencoj inter la du konfiguracioj.
 
@@ -43,7 +43,7 @@ En _subdomain_ konfiguracio la uzo de wildcard SSL-sertifikato estas unu el la p
 
 Eĉ aliaj opcioj ekzistas, ili ofte estas limitaj en rajtado kaj aplikado kaj bezonas pli da konfiguracio kaj konsideriĝo pri la boneco.
 
-#### Plugins kaj Temoj
+#### Plugins kaj Temoj {#plugins-and-themes}
 
 Kion WordPress donas, ti ankaŭ maligas, almenaŭ de la perspektivo de la klastro. En independente WordPress instalita, se la administrator de la sita instalas malan pluginon aŭ ne sekvas ĝian instalacion ĝis nuntemaj, la única vikto kaj rezulto de ĉi tiu agado estas li mem. Tial, se la administrator de la sita instalas malan pluginon sur klastro instalita, ĝi kreas vikton por ĉion siton instalitan en la reto.
 
@@ -51,7 +51,7 @@ Pro tio ĉi tiu kialo, kiam ĝi estas konfigurita kiel multisite WordPress, la s
 
 En ĉi tiu sentido la administratoro de la retoj estas responsable por instalado de pluginoj kaj temoj en la reto kaj delegas permesojn por uzi tiuj pluginoj kaj temoj en retaj sitioj. Administratoroj de sitioj ne povas instali pluginojn aŭ temojn aŭ akcesi pluginojn kaj temojn, kiuj ne estas asignitaj al sia sitio.
 
-#### Uzantoj kaj Administratoroj
+#### Uzantoj kaj Administratoroj {#users-and-administrators}
 
 En WordPress Multisite ĉiuj retaj sitioj partoprenas la saman bazan databazon kaj tiel partoprenas la saman uzantojn, rolojn kaj kapablon. La plej adekva maniero pensi pri tio estas ke ĉiuj uzantoj estas memberoj de la reto kaj ne de partikula sitio.
 
@@ -63,13 +63,13 @@ Reiterante la deklaron above, kun malsamaj uzantaj kontoj ŝajnas esti rilata al
 
 Although it is not a foreign concept in enterprise systems, this single source of user registration and authentication is often a difficult concept to understand for people familiar with stand-alone WordPress installations where user administration is somewhat easier.
 
-#### Media
+#### Media {#media}
 
 Where network sites share a single database in a WordPress Multisite, they maintain separate paths on the filesystem for media files.
 
 The standard WordPress location (wp-content/uploads) remains; however, its path is altered to reflect the network site’s unique ID. Consequently media files for a network site appear as wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 We mentioned before that there are distinctive advantages of _subdomain_ over _subdirectory_ configuration and here it is: paths.
 
@@ -83,7 +83,7 @@ In a _subdomain_ configuration this action is not necessary because each network
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 I konfiguracio de _subdirectory_ la potencial por konflikto de nombro se estende hasta las páxinas estáticas como sitio principal e los sitios de rede comparten a la mesma ruta.
 
@@ -93,7 +93,7 @@ Para prevenir esto, WordPress proporciona un método para poner en lista negra c
 
 Na konfiguracio de _subdomain_ a possibilidade de konflikto de nombro se atenua pola _subdomain_, ya que é única para o sitio de rede e non está relacionada de ninguna manera coa do sitio principal.
 
-### Registo
+### Registo {#registration}
 
 Dentro das configuracións de rede de WordPress Multisite están dispoñibles varias opcións novas de registo de usuarios, que permiten a novos e existentes usuarios crear sitios.
 
@@ -111,7 +111,7 @@ En ĉi tiu sens, kiam uzanto logas in, li logas in al la retoj kaj finvive logas
 
 Se tamen la intenda natura kaj celo de la multisite estis oferi disparaj retoj kiuj ne havas rilaton al unu la alia, tio estas prate malfacile necesas eksteraj aŭ pli da plugin-oj por manipuli uzanto-rolojn.
 
-### Domeno kaj SSL
+### Domeno kaj SSL {#domain-and-ssl}
 
 Kies vi parolas pri instalado de WordPress Multisite, kiu prate subiras nian atenton – Wordpress.com. Tio estas la plej vasta ekzemplo de WordPress multisite kaj demonstras ĝia vastajn kapablon por esti personaligita kaj moldita por plenumi celon.
 
@@ -125,7 +125,7 @@ Por administratoroj de retoj tio prezentas alian nivel kompleksa, tiaz en konfig
 
 En tia grado, ĉambon WordPress Multisite donas la medio por permemi [www.anotherdomain.com](http://www.anotherdomain.com) mappi al ‘site1’, sed la administrator de retoj restas kun la tio, ke li devas eksterne administra DNS-entroj kaj implementado de SSL-sertifikatoj.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Kiam la diferenco inter independente WordPress instalado kaj Multisite instalado estas komprenita, mi ŝanĝu alvokon de kiel Ultimate Multisite estas la ultim la arsenal por doni Vikto kiel Servico (Website as a Service - WaaS). Pensi pri Wix.com, Squarespace, WordPress.com kaj tiam pensi pri propra servco.
 
@@ -133,9 +133,9 @@ Sub la ĉapo, Ultimate Multisite uzas WordPress Multisite, sed li faras tio en m
 
 En la sekvaj sekcioj ni rigardos multajn uzutilojn kaj necesajn konsideracojn por subteni tiuj kazoj.
 
-### Uzutiloj
+### Uzutiloj {#introduction}
 
-#### Kazo 1: Agenzio
+#### Kazo 1: Agenzio {#use-cases}
 
 Tipike la bazaj skilibraj de agencio estas en la dezajno de Vikto kun aspektoj kiel sia hospedado aŭ marketado listita kiel alian servco.
 
@@ -161,7 +161,7 @@ Temoj ofertas similajn funkcionon, pernek ke temoj partikaj temi akivita aŭ sur
 
 Agencoj atingos paŝan timenton kun Ultimate Multisite, permi infiniti al ili fari tion, kion ili plej bone faras – dezajni ekseciajn web-sitaĉiojn.
 
-#### Caso 2: Niche Provedanto
+#### Caso 2: Niche Provedanto {#case-1-an-agency}
 
 E existe malalta frazo kiu diras: „faro unu thing kaj faru ĝin bone“. Por multaj specialistoj tio signifas krei produkton aŭ servon ĉirkaŭ unu baziga ideyo.
 
@@ -175,7 +175,7 @@ Por provedanto de niche-sitaĉioj kaj servoj tio donas neparignian avantajon en 
 
 Depende de la necesoj, tanto la configuración de _subdirecciones_ como la de _subdominios_ pueden ser adecuadas; en cuyo caso las opciones arquitectónicas estarían entre un certificado SSL simple para _subdirectorios_ o un certificado SSL comodín (wildcard) para _subdominios_.
 
-#### Caso 3: Alojamiento Web de WordPress
+#### Caso 3: Alojamiento Web de WordPress {#case-2-niche-provider}
 
 Hay muchísimas maneras de alojar sitios de WordPress, pero rara vez es tan simple como proporcionar espacio web a un cliente con una versión preinstalada de WordPress. Esto se debe a que muchas decisiones y consideraciones deben juntarse para ofrecer un servicio significativo.
 
@@ -187,11 +187,11 @@ Para los desarrolladores que desean integrarse con Ultimate Multisite, la soluci
 
 Sin depender de una miríada de plugins y licencias externas, Ultimate Multisite proporciona una solución rica en funciones y comparable a la de Wix, Squarespace, WordPress.com y otros.
 
-### Consideraciones Arquitectónicas
+### Consideraciones Arquitectónicas {#case-3-wordpress-web-hosting}
 
 Aunque no es una guía completa, los siguientes puntos deben servir como orientación para la selección correcta de tecnologías que soporten una instalación de Ultimate Multisite.
 
-#### Alojamiento Compartido vs. Dedicado
+#### Alojamiento Compartido vs. Dedicado {#architecture-considerations}
 
 Malheureusement, ne ĉiuj alojigantoj estas egalaj kaj certaj praktikantaj ekstremajn servern densojn. La malgrava-costaj alojigantoj tipike generas revenon per la maksimado de servern densaĵo. Tial via Ultimate Multisite instalado povas esti nur unu el pluraj centaj sitoj sur la sama servero.
 
@@ -205,7 +205,7 @@ Ultimate Multisite estas konata per laborado kun pluraj bonaj alojigantoj kaj in
 
 Por liston kompatibilaj alojigantoj kaj kompletan instruojn por ĉiu, kontrolu la dokumentadon de Kompatiblaj Aloigantoj.
 
-#### Performaj Konsideroj
+#### Performaj Konsideroj {#shared-vs-dedicated-hosting}
 
 Ultimate Multisite ne estas lenta aplikeco; ŝajne, ĝi estas remarkable bone. Tial, tamen ĝi funkcias nur kiel bone kiel la bazala aplikeco kaj infrastrukturo kaj povas uzi nur tijn, al kiuj ĝi havas alparencon.
 
@@ -223,7 +223,7 @@ Pro tio la plej multaj retoj administratoroj uzas front-end caching solutionojn 
 
 Ultimate Multisite inkluzas sofistikitan Cloudflare add-on, kiu permesas retoj administratoroj plazmi sin malhaŭte de Cloudflare kaj uzi ne nur ĝiaj caching kapabilitojn, sed ankaŭ DNS-hostadon, SSL-sertifikatojn kaj sekureco mekanismojn.
 
-#### Backup'oj
+#### Backup'oj {#performance-considerations}
 
 Unu povus peti 50 homojn konsilo pri backup'oj kaj ricevi 50 malsamaj opiniojn pri backup strategioj. La respondo estas: ĝi dependas.
 
@@ -233,7 +233,7 @@ Por la caŭzo de ĉi tiu sekcio, la ni akceptas, ke rezervoj estas momentaj kopi
 
 Con ĉi tiu kompreniĝo, respondo pri kiel atingi la rezervojn kaj kio plej bone por via aĉeta ĉirkaŭa (environment) dependos el viaj bezonoj kaj el la kapablo de la alojiganto provizi tijn bezonojn. Tial, en ordino de plej opinvia al plej malopinvia, la sekvaj opcioj devas doni certan gvidon.
 
-#### Snapshots (Kapturoj)
+#### Snapshots (Kapturoj) {#backups}
 
 Snapshots estas la argentaj bulletoj por rezervoj ĉar ili estas facila, nekomplika (finankomita pri restorado) kaj "simple funkcias". Tial ili bezonas jaka helpon de via providanto kaj pli aplika nur se vi havas VPS (Virtual Private Server) aŭ similajn. Diversaj providantoj listitaj en nia dokumento "Compatible Providers" oferas rezervojn, kiuj bezonas ne plu intervenado aŭ konsiderado de la retoj administratoro.
 
@@ -241,7 +241,7 @@ Kiel tradicionale backup'oj atingas filoj kaj bazojn, snapshot atingas la tutan 
 
 Snapshot pli povas attiraj plian koston de la alojigo providanto, sed ĝi estas seguropoliso kontraŭ akcidentoj.
 
-#### Eksteraj Skriptoj
+#### Eksteraj Skriptoj {#snapshots}
 
 Pare ŝajnas ne fari manko de eksteraj skriptoj kaj solvoj por backupi WordPress kaj MySQL resurs, kaj tiĝi bone por Ultimate Multisite ĉar ĝi estas WordPress plugino, kiu uzas la filesystem kaj bazon de WordPress. Tiel solvo kiu backupas WordPress sitojn tute konvencas la bezonojn de Ultimate Multisite.
 
@@ -249,7 +249,7 @@ Ni ne povas rekomendas unu skripton super alian, sed nia ĝenerala konsilo estas
 
 Ĝi devas noti, ke ĉi ti skriptoj, dum ili funkcias, plibendas sistemn beban, kion bezonas konsideri.
 
-#### Pluginoj
+#### Pluginoj {#external-scripts}
 
 Pratiquement ne ekzistas problemi en WordPress, kiun ne povas esti solvita per plugino, kaj se la administri eksterajn skriptojn ne estas via kompetenco, tio eble estas la plej bona opcio.
 
@@ -257,7 +257,7 @@ Kiel pluginaj varian estas en opcio kaj funkcio, sed ili faras la same function:
 
 Kie vi selektas vian pluginon, zorguĝu pri la verigo ke li estas multisite-kompata. Laŭ tio, dum la rezervado funkcias, vi povas esperi temporan ŝarĝon sur la servero ĝis ke la proceso finas.
 
-#### Domeno kaj SSL
+#### Domeno kaj SSL {#plugins}
 
 Multa estis diskita pri domeno nomoj en multisite _subdomajno_ modo. Pratiquement universala solvo por retoj administratoroj estas uzui wildcard DNS-entrojn.
 
@@ -281,7 +281,7 @@ Por multaj, la uso de Cloudflare estas facila opcio. La kliento nur devas plazar
 
 Ekziste ekaj laŭ tiu ĉi situacio, alternativo solviĝas necesiĝas, kio kial Ultimate Multisite rekomendas liston Kompatibilaj Providantoj. Tio ĉar la procezo de konfigurado de DNS kaj SSL povas esti nefacila proceso. Tamen, kun la integriĝo de Ultimate Multisite kun ĉi ti providantoj, la kompleksaĵo estas multe malita kaj la procedura estas automatigita.
 
-#### Plugins
+#### Plugins {#domain-and-ssl-1}
 
 Ĝi estas bone probable, ke vi necesas pli da plugins por doni funkcionon al viaj klientoj aŭ retoj de sitoj. Ĉu ĉiuj plugins laboras kun WordPress Multisite kaj Ultimate Multisite? Tio dependas.
 

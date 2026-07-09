@@ -4,20 +4,20 @@ title: Фильтр - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme
+# Filter: auth_redirect_scheme {#filter-authredirectscheme}
 
 Фильтрует схему перенаправления аутентификации.
 
-## Parameters
+## Parameters {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $scheme | `string` | Схема перенаправления аутентификации. По умолчанию пустая. |
 
-### Since
+### Since {#since}
 
 - 2.9.0
 
-### Source
+### Source {#source}
 
 Определено в [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212) на строке 212

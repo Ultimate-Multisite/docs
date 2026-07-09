@@ -3,11 +3,11 @@ title: 设置参考
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# 设置参考
+# 设置参考 {#settings-reference}
 
 本页跟踪会影响日常管理以及 Ultimate Multisite 中近期行为变更的设置。
 
-## 其他选项
+## 其他选项 {#other-options}
 
 **其他选项**区域显示在 **Ultimate Multisite > Settings > Login & Registration** 下。
 
@@ -15,23 +15,23 @@ _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 |---|---|
 | **启用 Jumper** | 在管理区域显示 Jumper 快速导航工具。可用它直接跳转到 Ultimate Multisite 页面、网络对象和受支持的管理目标。如果你不希望显示此快捷入口，可将其禁用。 |
 
-## 错误报告和遥测
+## 错误报告和遥测 {#error-reporting-and-telemetry}
 
 之前的错误报告选择加入设置已从设置页面移除。匿名遥测已禁用，并且没有可启用它的 UI 开关。
 
 如果你维护设置页面的内部运行手册或截图，请移除对旧错误报告选择加入字段的引用，以免管理员寻找已不存在的设置。
 
-## 导入/导出设置
+## 导入/导出设置 {#importexport-settings}
 
 **导入/导出**设置标签页说明其控制哪些设置，并直接链接到 **Ultimate Multisite > Site Export**，用于站点和网络归档。使用该设置标签页进行导入/导出配置；使用 **Tools > Export & Import** 执行单站点导出/导入工作流；当你需要完整的 Network Export 归档时，请使用 Site Export 工具。
 
-## Domain Seller HostAfrica 余额警告
+## Domain Seller HostAfrica 余额警告 {#domain-seller-hostafrica-balance-warning}
 
 当 Domain Seller addon 连接到 HostAfrica 时，如果经销商 Account 余额过低，无法可靠处理域名注册或续费，网络管理员现在会看到可关闭的余额不足警告。
 
 请将此通知视为运营警告：在接受更多付费域名注册之前，为 HostAfrica 经销商余额充值，然后返回 Domain Seller 设置或域名监控页面，以确认注册和续费可以正常继续。
 
-## AI provider connector 设置
+## AI provider connector 设置 {#ai-provider-connector-settings}
 
 AI provider connector 设置现在仅公开受支持的 OAuth Account 池：
 

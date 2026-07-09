@@ -4,13 +4,13 @@ title: Action - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Action: wp_ultimo_payfast_activation
+# Action: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
 
 Permite celorlalte părți ale pluginului să adauge logica lor de activare.
 
-### Începând cu
+### Începând cu {#since}
 
 - 1.9.6
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/class-hooks.php#L83) la linia 83

@@ -4,11 +4,11 @@ title: אַקציע - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# אַקציע: set_logged_in_cookie
+# אַקציע: set_logged_in_cookie {#action-setloggedincookie}
 
 ווערט אויסגעפֿירט גלייך איידער דער אײַנגע־לאָגטער אויטענטיפֿיקאַציע־cookie ווערט באַשטימט.
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | אויטענטיפֿיקאַציע־סכעמע. סטאַנדאַרט 'logged_in'. |
 | $token | `string` | דעם באַניצערס סעסיע־token צו ניצן פֿאַר דעם cookie. |
 
-### זינט
+### זינט {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) אויף שורה 141

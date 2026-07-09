@@ -3,9 +3,9 @@ title: Çoklu Ağ Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Çok Ağ Değişiklik Günlüğü
+# Çok Ağ Değişiklik Günlüğü {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Yeni: Ağ şablon önizleyicisi — satın almadan önce ağ şablonlarını canlı bir panelde göz atıp önizleyebilme.
 * Yeni: Ödeme sırasında ağ şablonu seçici — müşteriler, kayıt olma ödeme akışı sırasında bir ağ şablonu seçebilir.
 * Yeni: Ağlar arası sihirli bağlantı SSO — müşteriler, sihirli bağlantı kimlik doğrulaması yoluyla alt ağlara sorunsuz erişebilir.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Düzeltme: Site sorgu kapsamındaki tanımsız `network_id` anahtarına karşı koruma eklendi.
 * Düzeltme: Bağlam değiştirilmeden önce ağ izin kontrolü, `wpdb` tablo özelliği hatalarını önlüyor.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Düzeltme: Yeni ağ oluşturma.
 * Düzeltme: Menülerin oluşturulması.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Plugin Update Checker v5'e güncellendi
 * Modern WordPress eklenti başlıkları eklendi
 * En son WordPress sürümleriyle uyumluluk iyileştirildi
 
-### 1.0.2
+### 1.0.2 {#102}
 * Hata düzeltmeleri ve performans iyileştirmeleri
 * Ağ izolasyonu geliştirildi
 
-### 1.0.0
+### 1.0.0 {#100}
 * İlk sürüm
 * Temel çok ağ işlevi
 * Multisite Ultimate ile entegrasyon

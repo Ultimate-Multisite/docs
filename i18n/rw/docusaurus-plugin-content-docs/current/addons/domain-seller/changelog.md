@@ -3,7 +3,7 @@ title: Urutonde rw'Impinduka z'Umugurisha wa Domeni
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Amateka y'impinduka ya Domain Seller
+# Amateka y'impinduka ya Domain Seller {#domain-seller-changelog}
 
 Version 1.3.0 - Yasohotse ku wa 2026-06-02
 - Gishya: Hyongewemo umuburo wa network-admin igihe amafaranga asigaye kuri konti y'umucuruzi wa HostAfrica abaye make cyane
@@ -134,20 +134,20 @@ Verisiyo 1.0.0 - Yasohotse ku wa 2025-09-28
 * **Byakosowe:** Code yose ya v1 itagikoreshwa yavuguruwe ku bipimo bya v2
 * **Byakuweho:** Guhuza na v1 ya kera (impinduka isenya ibihari)
 
-### Verisiyo Zabanjirijeho (v1 ya Kera)
+### Verisiyo Zabanjirijeho (v1 ya Kera) {#previous-versions-v1-legacy}
 
-### Verisiyo 0.0.3 - 20/08/2019
+### Verisiyo 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Byakosowe: Kudahuza na Groundhogg CRM
 * Icyitonderwa: Iyi ni yo yasohotse bwa nyuma ihuza na v1
 
-### Verisiyo 0.0.2 - 07/12/2018
+### Verisiyo 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Byakosowe: Umwanya wa License Key wakuweho
 * Byakosowe: Tabs za gahunda zaburaga igihe feature plugin iba ifunguye
 * Byanonosowe: Hyongewemo buto yo gusimbuka ku mwanya wo kwiyandikisha
 
-### Verisiyo 0.0.1 - Isohora rya Mbere
+### Verisiyo 0.0.1 - Isohora rya Mbere {#version-001---initial-release}
 
 * Kwihuza kw’ibanze kwa OpenSRS kuri WP Ultimo v1
 * Gushakisha no kwandikisha domaine byoroshye

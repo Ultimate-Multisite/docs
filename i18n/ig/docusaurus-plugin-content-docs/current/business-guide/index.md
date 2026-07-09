@@ -3,13 +3,13 @@ title: Wulite Azụmahịa Webụsaịtị Niche
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Wulite Azụmahịa Weebụsaịtị Maka Otu Ndị Ahịa Pụrụ Iche site na Ultimate Multisite
+# Wulite Azụmahịa Weebụsaịtị Maka Otu Ndị Ahịa Pụrụ Iche site na Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Ọtụtụ ndị na-agbalị ire weebụsaịtị na-asọmpi n’ọnụahịa megide Wix, Squarespace, na puku kwuru puku freelancers. Ha na-ada. Ndị na-emeri na-ahọrọ otu ndị ahịa kpọmkwem, wulite ngwọta ahaziri maka ndị ahụ, wee kwụọ ụgwọ maka uru ha na-enye.
 
 Nkuzi a na-akụziri gị otu esi eme nke ahụ kpọmkwem site na Ultimate Multisite.
 
-## Ihe Ị Ga-ewulite
+## Ihe Ị Ga-ewulite {#what-you-will-build}
 
 N’ime nkuzi a niile, ị ga-ewulite netwọkụ dị adị, na-arụ ọrụ, a na-akpọ **FitSite** -- ikpo okwu weebụsaịtị e wuru kpọmkwem maka ụlọ mgbatị ahụ, ndị nkuzi mgbatị onwe onye, na ndị nwe gym.
 
@@ -23,7 +23,7 @@ Ruo nkuzi ikpeazụ, FitSite ga-abụ ikpo okwu zuru oke maka otu ndị ahịa p
 
 Ị ga-eso nzọụkwụ site na nzọụkwụ, ma n’ikpeazụ ị ga-enwe ma ikpo okwu na-arụ ọrụ ma ihe ọmụma iji megharịa usoro ahụ maka ụdị ndị ahịa ọ bụla ị họrọ.
 
-## Gịnị Mere Ụlọ Mgbatị Ahụ?
+## Gịnị Mere Ụlọ Mgbatị Ahụ? {#why-fitness-studios}
 
 Anyị chọrọ ihe atụ doro anya nke onye ọ bụla nwere ike iso. Ụlọ mgbatị ahụ na-arụ ọrụ dị ka ihe atụ n’ihi na:
 
@@ -34,7 +34,7 @@ Anyị chọrọ ihe atụ doro anya nke onye ọ bụla nwere ike iso. Ụlọ 
 
 Ihe niile ị na-amụta n’iwulite FitSite metụtara kpọmkwem ụdị ndị ahịa ọ bụla ị họrọ: ụlọ nri, ndị nnọchi anya ụlọ na ala, ụlọ ọrụ iwu, ụka, ndị ọrụ nkwekọrịta aka ọrụ, ma ọ bụ ngalaba ọ bụla ọzọ.
 
-## Nhazi Nkuzi
+## Nhazi Nkuzi {#course-structure}
 
 Nkuzi ọ bụla na-ewebata otu echiche, na-akọwa ihe mere o ji dị mkpa, ma na-eduga gị n’ịmejuputa ya na netwọkụ FitSite. Nkuzi ọ bụla na-ewulite n’elu nke gara aga.
 
@@ -55,7 +55,7 @@ Nkuzi ọ bụla na-ewebata otu echiche, na-akọwa ihe mere o ji dị mkpa, ma 
 | [13. Ịgbasa Elu](lesson-13-growth) | Ito site na ndị ahịa mbụ ruo ezigbo azụmahịa | Atụmatụ uto na akpaaka FitSite |
 | [14. Ihe Na-abịa Ọzọ](lesson-14-whats-next) | Ịgbasa ruo ụdị ndị ahịa dị nso na ohere ọhụrụ | Maapụ ụzọ gị gafere FitSite |
 
-## Ihe Ndị A Chọrọ Tupu Ịmalite
+## Ihe Ndị A Chọrọ Tupu Ịmalite {#prerequisites}
 
 - Ntinye WordPress Multisite (ma ọ bụ ịdị njikere ịtọlite otu)
 - License Ultimate Multisite na-arụ ọrụ
@@ -63,6 +63,6 @@ Nkuzi ọ bụla na-ewebata otu echiche, na-akọwa ihe mere o ji dị mkpa, ma 
 
 Achọghị ide code. Ọ bụrụ na i jibeghị Ultimate Multisite mbụ, nke ahụ dị mma -- Nkuzi 3 na-amalite site na ntinye ọhụrụ.
 
-## Ị Dị Njikere?
+## Ị Dị Njikere? {#ready}
 
 Malite na [Nkuzi 1: Gịnị Mere Otu Ndị Ahịa Pụrụ Iche Ji Emeri](lesson-1-why-niche).

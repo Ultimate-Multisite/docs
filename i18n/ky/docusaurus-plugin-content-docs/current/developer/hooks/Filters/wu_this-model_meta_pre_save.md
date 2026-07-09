@@ -4,11 +4,11 @@ title: 'Чыпка - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Маалымат базасына сактоо үчүн сериялаштыруудан мурун маалыматтын мета берилиштерин чыпкалайт.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 | $data_unserialized | `array` | Сактала турган объекттин берилиштери. |
 | $this | `\Base_Model` | Объекттин нускасы. |
 
-### Чыккандан бери
+### Чыккандан бери {#since}
 
 - 2.0.0
-### Булак
+### Булак {#source}
 
 [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) файлында, 534-сапта аныкталган.

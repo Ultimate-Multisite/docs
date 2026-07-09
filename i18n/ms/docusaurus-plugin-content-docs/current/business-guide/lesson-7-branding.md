@@ -3,15 +3,15 @@ title: 'Pelajaran 7: Menjadikannya Milik Anda'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Pelajaran 7: Menjadikannya Milik Anda
+# Pelajaran 7: Menjadikannya Milik Anda {#lesson-7-making-it-yours}
 
 Pelanggan anda tidak seharusnya rasa seperti mereka menggunakan "satu plugin WordPress." Mereka seharusnya rasa seperti mereka menggunakan FitSite — sebuah platform yang dibina khas untuk industri mereka. Pelajaran ini merangkumi penjenamaan (branding), *white-labeling*, dan cara menjadikan platform ini terasa seperti sebuah produk yang lengkap.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah mempunyai aliran *checkout* yang berfungsi, yang membawa pemilik studio kecergasan dari pemilihan pelan kepada laman web yang aktif. Sekarang, kita akan menjadikan keseluruhan pengalaman ini terasa seperti produk berjenama yang padu.
 
-## Domain Platform Anda
+## Domain Platform Anda {#your-platform-domain}
 
 Asas jenama anda adalah domain anda. Untuk FitSite:
 
@@ -19,7 +19,7 @@ Asas jenama anda adalah domain anda. Untuk FitSite:
 - **Laman pelanggan**: `studioname.fitsite.com` (subdomain)
 - **Domain tersuai**: Pelanggan pada pelan Growth dan Pro boleh memetakan domain mereka sendiri
 
-### Menetapkan Domain Anda
+### Menetapkan Domain Anda {#setting-up-your-domain}
 
 1. Daftar domain platform anda
 2. Arahkannya ke penyedia hosting anda
@@ -28,11 +28,11 @@ Asas jenama anda adalah domain anda. Untuk FitSite:
 
 Sila lihat [Cara Mengkonfigurasi Pemetaan Domain](/user-guide/domain-mapping/how-to-configure-domain-mapping) untuk arahan terperinci.
 
-## *White-Labeling* Pengalaman Admin
+## *White-Labeling* Pengalaman Admin {#white-labeling-the-admin-experience}
 
 Apabila pemilik studio kecergasan log masuk ke *dashboard* laman mereka, mereka seharusnya melihat jenama anda, bukan jenama WordPress atau Ultimate Multisite.
 
-### Halaman Log Masuk Tersuai
+### Halaman Log Masuk Tersuai {#custom-login-page}
 
 Sesuaikan halaman log masuk WordPress untuk memaparkan:
 
@@ -40,7 +40,7 @@ Sesuaikan halaman log masuk WordPress untuk memaparkan:
 - Imej latar belakang yang sesuai untuk kecergasan
 - Warna jenama anda
 
-### Penjenamaan Dashboard
+### Penjenamaan Dashboard {#dashboard-branding}
 
 Gunakan *addon* [Admin Page Creator](/addons/admin-page-creator) atau CSS tersuai untuk:
 
@@ -48,7 +48,7 @@ Gunakan *addon* [Admin Page Creator](/addons/admin-page-creator) atau CSS tersua
 - Menyesuaikan skema warna admin agar sepadan dengan jenama anda
 - Menambah *widget* *dashboard* tersuai dengan pautan pantas dan sumber bantuan khusus kecergasan
 
-### Halaman Admin Tersuai
+### Halaman Admin Tersuai {#custom-admin-pages}
 
 Pertimbangkan untuk mencipta halaman admin tersuai yang memaparkan tindakan yang paling relevan untuk pemilik studio kecergasan:
 
@@ -58,11 +58,11 @@ Pertimbangkan untuk mencipta halaman admin tersuai yang memaparkan tindakan yang
 
 Ini mengurangkan lengkungan pembelajaran dengan meletakkan tindakan yang sangat relevan di hadapan, berbanding menyembunyikannya dalam menu standard WordPress.
 
-## Menjenamakan Komunikasi Anda
+## Menjenamakan Komunikasi Anda {#branding-your-communications}
 
 Setiap e-mel, invois, dan notifikasi harus mengukuhkan jenama anda.
 
-### E-mel Sistem
+### E-mel Sistem {#system-emails}
 
 Navigasi ke **Ultimate Multisite > Settings > Emails** dan sesuaikan semua e-mel sistem:
 
@@ -79,7 +79,7 @@ E-mel utama yang perlu disesuaikan:
 | Resit Pembayaran | "Pembayaran diterima" | "Pembayaran langganan FitSite disahkan" |
 | Percubaan Tamat | "Percubaan anda akan tamat tidak lama lagi" | "Percubaan FitSite anda tamat dalam 3 hari — kekalkan laman web studio anda aktif" |
 
-### Invois
+### Invois {#invoices}
 
 Sesuaikan templat invois dengan:
 
@@ -87,7 +87,7 @@ Sesuaikan templat invois dengan:
 - Butiran perniagaan anda
 - Nama produk khusus kecergasan (bukan ID pelan umum)
 
-## Laman Web Berhadapan Pelanggan
+## Laman Web Berhadapan Pelanggan {#the-customer-facing-site}
 
 Domain utama anda (`fitsite.com`) memerlukan laman pemasaran yang menjual platform ini. Ini berbeza daripada admin rangkaian Ultimate Multisite — ia adalah wajah awam perniagaan anda.
 
@@ -103,7 +103,7 @@ Halaman utama:
 Cipta laman pemasaran anda sebagai laman dalam rangkaian anda sendiri. Ini membolehkan anda mengurusnya dari *dashboard* yang sama dan menunjukkan keupayaan platform anda sendiri.
 :::
 
-## Domain Tersuai untuk Pelanggan
+## Domain Tersuai untuk Pelanggan {#custom-domain-for-customers}
 
 Bagi pelanggan yang menggunakan pelan yang merangkumi domain tersuai, dokumentasikan proses ini dengan jelas:
 
@@ -113,7 +113,7 @@ Bagi pelanggan yang menggunakan pelan yang merangkumi domain tersuai, dokumentas
 
 Cipta artikel bantuan atau entri pangkalan pengetahuan khusus untuk proses ini, ditulis untuk pemilik studio kecergasan yang bukan teknikal.
 
-## Rangkaian FitSite Setakat Ini
+## Rangkaian FitSite Setakat Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Apa Yang Kita Bina Dalam Pelajaran Ini
+## Apa Yang Kita Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Domain platform dan DNS** dikonfigurasi untuk pengalaman berjenama
 - **Admin *white-label*** dengan jenama FitSite di seluruh tempat

@@ -4,21 +4,21 @@ title: Action - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations
+# Action: wu_register_integrations {#action-wuregisterintegrations}
 
 ใช้สำหรับให้ส่วนเสริม (integrations) สามารถลงทะเบียนตัวเองได้
 
 ระบบหลักจะลงทะเบียนส่วนเสริมของตัวเองที่นี่
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | อินสแตนซ์ของ registry |
 
-### Since
+### Since {#since}
 
 - 2.5.0
-### Source
+### Source {#source}
 
 กำหนดไว้ใน [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L113) บรรทัดที่ 113

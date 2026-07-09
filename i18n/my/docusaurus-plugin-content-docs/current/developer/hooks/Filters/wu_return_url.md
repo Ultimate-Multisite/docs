@@ -4,11 +4,11 @@ title: Filter - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filter: wu_return_url
+# Filter: wu_return_url {#filter-wureturnurl}
 
 Developer များအနေဖြင့် Checkout လုပ်ငန်းစဉ်များ ပြီးဆုံးပြီးနောက် အသုံးပြုမည့် Payment gateway ၏ ပြန်လာမည့် URL ကို ပြောင်းလဲခွင့်ပေးပါသည်။
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Developer များအနေဖြင့် Checkout လုပ်ငန်း
 | $payment | `\WP_Ultimo\Models\Payment` | Ultimate Multisite ငွေပေးချေမှု အကောင်အထည်ဖော်မှု။ |
 | $cart | `\WP_Ultimo\Checkout\Cart` | လက်ရှိ Ultimate Multisite cart မှာယူမှု။ |
 
-### Since
+### Since {#since}
 
 - 2.0.20
-### Source
+### Source {#source}
 
 Defined in [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) at line 683
 
 
-## Returns
+## Returns {#returns}

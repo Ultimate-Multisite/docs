@@ -3,13 +3,13 @@ title: ಪಾವತಿ ಪಡೆಯುವುದು
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ಪಾವತಿ ಪಡೆಯುವುದು (v2)
+# ಪಾವತಿ ಪಡೆಯುವುದು (v2) {#getting-paid-v2}
 
 _**ಮುಖ್ಯ ಟಿಪ್ಪಣಿ: ಈ ಲೇಖನವು Ultimate Multisite ಆವೃತ್ತಿ 2.x ಅನ್ನು ಸೂಚಿಸುತ್ತದೆ.**_
 
 Ultimate Multisite ನಲ್ಲಿ ಅಂತರ್ನಿರ್ಮಿತ ಸದಸ್ಯತ್ವ ಮತ್ತು ಬಿಲ್ಲಿಂಗ್ ವ್ಯವಸ್ಥೆ ಇದೆ. ನಮ್ಮ ಬಿಲ್ಲಿಂಗ್ ವ್ಯವಸ್ಥೆ ಕಾರ್ಯನಿರ್ವಹಿಸಲು, ಇ-ಕಾಮರ್ಸ್‌ನಲ್ಲಿ ಹೆಚ್ಚು ಬಳಕೆಯಾಗುವ ಸಾಮಾನ್ಯ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ನಾವು ಸಂಯೋಜಿಸಿದ್ದೇವೆ. Ultimate Multisite ನ ಡಿಫಾಲ್ಟ್ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳು _Stripe_ , _PayPal_ , ಮತ್ತು Manual Payment. ಸಂಬಂಧಿತ add-ons ಸ್ಥಾಪಿಸುವ ಮೂಲಕ ಪಾವತಿಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ನೀವು _WooCommerce_ , _GoCardless_ ಮತ್ತು _Payfast_ ಅನ್ನು ಸಹ ಬಳಸಬಹುದು.
 
-## ಮೂಲ ಸೆಟ್ಟಿಂಗ್‌ಗಳು
+## ಮೂಲ ಸೆಟ್ಟಿಂಗ್‌ಗಳು {#basic-settings}
 
 Ultimate Multisite ಪಾವತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಅಡಿಯಲ್ಲಿ ಈ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳಲ್ಲಿ ಯಾವುದನ್ನಾದರೂ ನೀವು ಸಂರಚಿಸಬಹುದು. **Ultimate Multisite ಮೆನು > Settings > Payments** ಗೆ ಹೋಗುವ ಮೂಲಕ ಅದನ್ನು ಕಂಡುಹಿಡಿಯಬಹುದು.
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0 ಸ್ವಯಂ ನವೀಕರಣ ಸಕ್ರಿಯ
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## ಗೇಟ್‌ವೇಗಳನ್ನು ಎಲ್ಲಿ ಕಂಡುಹಿಡಿಯುವುದು:
+## ಗೇಟ್‌ವೇಗಳನ್ನು ಎಲ್ಲಿ ಕಂಡುಹಿಡಿಯುವುದು: {#where-to-find-the-gateways}
 
 ನೀವು ಅದೇ ಪುಟದಲ್ಲಿ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ಹೊಂದಿಸಬಹುದು ( **Ultimate Multisite > Settings > Payments**). **ಸಕ್ರಿಯ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳು** ಕೆಳಗೆ, ನೀವು ಇವುಗಳನ್ನು ನೋಡಬಹುದು: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ಮತ್ತು _Manual_.
 
@@ -67,7 +67,7 @@ Ultimate Multisite v2.13.0 ಸ್ವಯಂ ನವೀಕರಣ ಸಕ್ರಿಯ
 
 ಈಗ, ನೀವು _WooCommerce_ , _GoCardless_ ಅಥವಾ _Payfast_ ಅನ್ನು ನಿಮ್ಮ ಪಾವತಿ ಗೇಟ್‌ವೇಯಾಗಿ ಬಳಸಲು ಬಯಸಿದರೆ, ನೀವು ಅವುಗಳ **add-ons ಸ್ಥಾಪಿಸಿ ಸಂರಚಿಸಬೇಕು**.
 
-### WooCommerce add-on ಅನ್ನು ಹೇಗೆ ಸ್ಥಾಪಿಸುವುದು:
+### WooCommerce add-on ಅನ್ನು ಹೇಗೆ ಸ್ಥಾಪಿಸುವುದು: {#how-to-install-the-woocommerce-add-on}
 
 ಕೆಲವು ದೇಶಗಳಲ್ಲಿ _Stripe_ ಮತ್ತು _PayPal_ ಲಭ್ಯವಿಲ್ಲ ಎಂಬುದನ್ನು ನಾವು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇವೆ. ಇದರಿಂದ Ultimate Multisite ಬಳಕೆದಾರರು ನಮ್ಮ plugin ಅನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಬಳಸುವುದು ಸೀಮಿತವಾಗುತ್ತದೆ ಅಥವಾ ಅಡ್ಡಿಯಾಗುತ್ತದೆ. ಆದ್ದರಿಂದ ನಾವು _WooCommerce,_ ಅನ್ನು ಸಂಯೋಜಿಸಲು add-on ರಚಿಸಿದ್ದೇವೆ. ಇದು ಬಹಳ ಜನಪ್ರಿಯ ಇ-ಕಾಮರ್ಸ್ plugin ಆಗಿದೆ. ವಿಶ್ವದಾದ್ಯಂತದ ಡೆವಲಪರ್‌ಗಳು ಅದರಲ್ಲಿ ವಿಭಿನ್ನ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ಸಂಯೋಜಿಸಲು add-ons ರಚಿಸಿದ್ದಾರೆ. Ultimate Multisite ಬಿಲ್ಲಿಂಗ್ ವ್ಯವಸ್ಥೆಯೊಂದಿಗೆ ನೀವು ಬಳಸಬಹುದಾದ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ವಿಸ್ತರಿಸಲು ನಾವು ಇದನ್ನು ಬಳಸಿಕೊಂಡಿದ್ದೇವೆ.
 
@@ -95,7 +95,7 @@ _**ಮುಖ್ಯ:** Ultimate Multisite: WooCommerce Integration ಗೆ WooComm
 
 WooCommerce Integration ಆಡ್-ಆನ್ ಕುರಿತು ಇನ್ನಷ್ಟು ಓದಲು, **ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ**.
 
-### GoCardless ಆಡ್-ಆನ್ ಅನ್ನು ಹೇಗೆ ಸ್ಥಾಪಿಸುವುದು:
+### GoCardless ಆಡ್-ಆನ್ ಅನ್ನು ಹೇಗೆ ಸ್ಥಾಪಿಸುವುದು: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ ಆಡ್-ಆನ್ ಅನ್ನು ಸ್ಥಾಪಿಸುವ ಹಂತಗಳು _WooCommerce_ ಆಡ್-ಆನ್‌ನಂತೆಯೇ ಇವೆ. ದಯವಿಟ್ಟು ಆಡ್-ಆನ್‌ಗಳ ಪುಟಕ್ಕೆ ಹೋಗಿ **Ultimate Multisite: GoCardless Gateway** ಆಡ್-ಆನ್ ಆಯ್ಕೆಮಾಡಿ.
 
@@ -111,7 +111,7 @@ _GoCardless_ ಆಡ್-ಆನ್ ಅನ್ನು ಸ್ಥಾಪಿಸುವ ಹ
 
 _GoCardless_ ಗೇಟ್‌ವೇಯೊಂದಿಗೆ ಹೇಗೆ ಪ್ರಾರಂಭಿಸುವುದು ಎಂದು ತಿಳಿಯಲು, **ಈ ಲೇಖನವನ್ನು ಓದಿ**.
 
-### Payfast ಆಡ್-ಆನ್ ಅನ್ನು ಹೇಗೆ ಸ್ಥಾಪಿಸುವುದು:
+### Payfast ಆಡ್-ಆನ್ ಅನ್ನು ಹೇಗೆ ಸ್ಥಾಪಿಸುವುದು: {#how-to-install-the-payfast-add-on}
 
 ಆಡ್-ಆನ್‌ಗಳ ಪುಟಕ್ಕೆ ಹೋಗಿ **Ultimate Multisite: Payfast Gateway** ಆಡ್-ಆನ್ ಆಯ್ಕೆಮಾಡಿ.
 

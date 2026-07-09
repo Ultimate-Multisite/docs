@@ -3,15 +3,15 @@ title: 'Dysgu 4: Gynllunio Templa Niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leses 4: Gynedau Modelion Niche
+# Leses 4: Gynedau Modelion Niche {#lesson-4-building-niche-templates}
 
 Ynethau (Templates) yw cyd-fyddol o'r gwerth sydd yn eich niche. Mae'r rheolwr studio ffitnes sy'n cyflwyno a weld siâd sy'n edrych fel wefan ffitnes -- gyda rhaglenni clas, profifau trainwyr, a y lluniau i gyd yn iawn -- yn fwy yn sicr eu bod yn parhau naid yw un sy'n gweld canol.
 
-## Oes yma ydym wedi dod
+## Oes yma ydym wedi dod {#where-we-left-off}
 
 Rydym yn gael siâd FitSite weithredol gyda Ultimate Multisite wedi'i chwarae a chwarae. Mae'n ddimailau (templates) yr ydym yn ei ddynnu sy'n gwneud i FitSite fod yn cael ei ddefnyddio yn llwyr ar gyfer busnesau ffitnes.
 
-## Pam mae tymblau niche yn bwysig
+## Pam mae tymblau niche yn bwysig {#why-niche-templates-matter}
 
 Yn tymblau aml, mae eich cyddeeau'r cyddeeau i'r cyddeeau i wneud y gwaith mor ddwfn: gweld beth yw'r peïaedd sydd eu angen, beth yw'r stratig o'r cynnwys sy'n gweithredu, a sut i'w gwneud yn iawn ar gyfer eu dyfodol. Mae tymblau niche yn cael y fwy o ddrwg gennych.
 
@@ -24,11 +24,11 @@ Rydyn rheolwr studio ffitnes sy'n cyflwyno i FitSite yn weld:
 
 Mae nhw yn gwneud y detaliadau eu. Nid yw'n dechrau o'r gwaith newydd.
 
-## Cyflenwi eich tymblau
+## Cyflenwi eich tymblau {#planning-your-templates}
 
 Ar ôl i ddynnu, gweld beth yw tymblau i offeru. Ar FitSite, byddom yn creu tri:
 
-### Tymblau 1: Studio Essential
+### Tymblau 1: Studio Essential {#template-1-studio-essential}
 
 Ar gyfer studio bach a trainwyr personol.
 
@@ -39,7 +39,7 @@ Ar gyfer studio bach a trainwyr personol.
 - **Pejyn Contact** gyda map lleoliad ac ffurf
 - **Dyluniad glir, modern** gyda chyflenau coloryddig i'r gym
 
-### Templat 2: Gym Pro
+### Templat 2: Gym Pro {#template-2-gym-pro}
 
 Ar gyfer gym sydd wedi'i sefydlu â chwaraeau mwy.
 
@@ -49,7 +49,7 @@ Ar gyfer gym sydd wedi'i sefydlu â chwaraeau mwy.
 - **Sectwr Blog** ar gyfer cysylltiadau fithrin a newyddion
 - **Sectwr Testimonialau** ar y pejyn gartref
 
-### Templat 3: Fitness Chain
+### Templat 3: Fitness Chain {#template-3-fitness-chain}
 
 Ar gyfer gweithredinol gyda chwaraeau am y lleoliadau aml.
 
@@ -59,17 +59,17 @@ Ar gyfer gweithredinol gyda chwaraeau am y lleoliadau aml.
 - **Chwaraeau gyflenwiol** gyda diffygiau penodol i'r lleoliad
 - **Ddiriad staff** arall lleoliadau
 
-## Cynllunio Site Templat
+## Cynllunio Site Templat {#building-a-template-site}
 
 Yn Ultimate Multisite, mae templat yn un site WordPress a'i gaeledig yn y ffordd eich bod eisiau fod y cyfathrebu newydd o ddefnyddwyr. Dyma sut i sicrnu ei creu:
 
-### Cynllun 1: Creu'r Site Templat
+### Cynllun 1: Creu'r Site Templat {#step-1-create-the-template-site}
 
 1. Rhewch **Sites > Add New** yn admin y rheol eich cyd-gynllun
 2. Creu site gyda'r enw `template-studio-essential`
 3. Mae’r site hwn yn dod yn canlynol eich canlynol gweithredol
 
-### Cynllun 2: Installio a Cyflenwi'r Theme
+### Cynllun 2: Installio a Cyflenwi'r Theme {#step-2-install-and-configure-the-theme}
 
 Troswch i'r dashboard y site templat ac gwneud yr holl ddefnyddiau hyn:
 
@@ -81,7 +81,7 @@ Troswch i'r dashboard y site templat ac gwneud yr holl ddefnyddiau hyn:
 Dechrau'r thema sydd yn llwyblygol yn ddigon i fod yn dda ar gyfer fithresigol ond nid yn rhy cymhleth i'r cyddeeau eich cleientau ei gael yn ddefnyddio. Mae thema fel Astra, GeneratePress, neu Kadence'n gweithredu'n dda oherwydd ei fod yn llawn, allweddol, a chynllunol well.
 :::
 
-### Cynllun 3: Creu y Peidiadau (Pages)
+### Cynllun 3: Creu y Peidiadau (Pages) {#step-3-create-the-pages}
 
 Bynllunwch pob peidiad gyda:
 
@@ -91,7 +91,7 @@ Bynllunwch pob peidiad gyda:
 
 Gwylio'r cynnwys cyflwyniad i gydol y gallwch. Nid eich gwneud text amgylcheddol, ond ysgrifwch cynnwys fel: "Cyflwynwch hyn gyda disgrifiad byndlynu o'ch studio a beth sydd yn ei wneud rhyfeddol. Cyflwynwch eich f filosofi gweithredol, y flynyddoedd eich gyfrifol, neu beth gallai'r cleientau dod agor."
 
-### Cynllun 4: Cyfluniad y Pluginau (Plugins)
+### Cynllun 4: Cyfluniad y Pluginau (Plugins) {#step-4-configure-plugins}
 
 Cyfluniwch a chynllunwch y pluginau sydd angen i fithresigoliadau:
 
@@ -99,7 +99,7 @@ Cyfluniwch a chynllunwch y pluginau sydd angen i fithresigoliadau:
 - Un plugin o ffurf cyflwyniadau (contact form)
 - Un plugin SEO (cyfluniwyd gyda chyd-fyddiau sydd yn gysylltiedig â fithresigol)
 
-### Cynllun 5: Marw'n Template
+### Cynllun 5: Marw'n Template {#step-5-mark-as-template}
 
 1. Mae gan **Ultimate Multisite > Sites**
 2. Redig y site template
@@ -107,7 +107,7 @@ Cyfluniwch a chynllunwch y pluginau sydd angen i fithresigoliadau:
 
 Chynllunwch y proses hwn ar gyfer pob template sydd yn eich bod eisiau cynnig.
 
-## Gwylch Ychwanegau Templat
+## Gwylch Ychwanegau Templat {#template-quality-checklist}
 
 Ynno mae'r gwylch ychwanegau ar gyfer ychwanegu templat i fod yn ar gael, gwirchwch:
 
@@ -120,7 +120,7 @@ Ynno mae'r gwylch ychwanegau ar gyfer ychwanegu templat i fod yn ar gael, gwirch
 - [ ] Nid oes unrhyw lwybr wedi'i breisio neu asgellau mwyaf anodd
 - [ ] Mae cyflym y lladd ar gael yn dda
 
-## Y Cyd-gyfeiriad FitSite Erioedd
+## Y Cyd-gyfeiriad FitSite Erioedd {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -135,7 +135,7 @@ FitSite Network
 └── Parioedd ar gael i gyflwyno y plan (y dysgu nesaf)
 ```
 
-## Beth Rydyn Niantwn Ysoddiad Hwn
+## Beth Rydyn Niantwn Ysoddiad Hwn {#what-we-built-this-lesson}
 
 - **Tri o templat yn cywir i'r niche** a ddynolwyd ar gyfer cyfathregau busnes ffitnes yn rhywbethol
 - **Cynnwys ac amgylcheddau ddefnyddiol i'r ffitnes** sy'n gwneud y platform yn cael ei adeiladu oherwydd yr angen

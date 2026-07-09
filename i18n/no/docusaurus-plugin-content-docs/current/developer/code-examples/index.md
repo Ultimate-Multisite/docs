@@ -3,11 +3,11 @@ title: Avanserte kodeeksempler
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Avanserte kodeeksempler
+# Avanserte kodeeksempler {#advanced-code-examples}
 
 Disse eksemplene viser avanserte integrasjonsmønstre med Ultimate Multisite.
 
-## Dynamisk prisingmotor
+## Dynamisk prisingmotor {#dynamic-pricing-engine}
 
 En regelbasert prisingmotor som anvender volum-, lojalitets- og sesongrabatter:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Avansert sideprovisjonering
+## Avansert sideprovisjonering {#advanced-site-provisioning}
 
 Konfigurerer automatisk nye nettsteder med plugins, SSL, CDN, sikkerhetskopiering og overvåking basert på planfunksjoner:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Tilpasset begrensingssystem
+## Tilpasset begrensingssystem {#custom-limitations-system}
 
 Sporer og håndhever ressursgrenser med varsler om forbruk:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB atomisk teller med `increment_item()`
+## BerlinDB atomisk teller med `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 la til en `increment_item()`-metode i BerlinDB `Query`-klassen. Bruk den til å utføre sikre, atomiske inkrementer på numeriske kolonner uten "read-modify-write"-løp (race conditions) – nyttig for tellere, brukskvoter og rate-limiting-sjekker som kjører under samtidige forespørsler.
 
-### Metode-signatur
+### Metode-signatur {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 la til en `increment_item()`-metode i BerlinDB `Query`
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Grunnleggende bruk
+### Grunnleggende bruk {#basic-usage}
 
 ```php
 // Legger til 1 i kolonnen `api_calls` for medlemskaps-ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Sporing av API-bruk per medlemskap
+### Sporing av API-bruk per medlemskap {#tracking-api-usage-per-membership}
 
 Et praktisk mønster for å håndheve API-rate-begrensninger per medlemskap:
 
@@ -356,6 +356,6 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Hvorfor `increment_item()` i stedet for `update_item()`
+### Hvorfor `increment_item()` i stedet for `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 En naiv "les-skriv"-tilnærming er utsatt for race conditions. Å bruke `increment()` sikrer at operasjonen utføres atomisk, noe som betyr at den ikke kan avbrytes av andre prosesser. Dette er kritisk for å opprettholde dataintegriteten i høyt samtidige miljøer.

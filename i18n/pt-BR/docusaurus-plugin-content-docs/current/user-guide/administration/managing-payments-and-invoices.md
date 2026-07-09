@@ -3,9 +3,9 @@ title: Gerenciamento de pagamentos e faturas
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gerenciando pagamentos e faturas
+# Gerenciando pagamentos e faturas {#managing-payments-and-invoices}
 
-## Configurações de pagamento
+## Configurações de pagamento {#payment-settings}
 
 Antes de começar a receber pagamentos, você precisará configurar as opções relacionadas a pagamento. Navegue até **Ultimate Multisite → Settings** e clique na aba **Payment**.
 
@@ -15,7 +15,7 @@ Aqui está uma visão completa da página de configurações de pagamento:
 
 ![Página completa de configurações de pagamento](/img/admin/settings-payments-full.png)
 
-### Opções gerais de pagamento
+### Opções gerais de pagamento {#general-payment-options}
 
 Nas configurações gerais, você pode configurar:
 
@@ -24,7 +24,7 @@ Nas configurações gerais, você pode configurar:
 
 ![Configurações de gateway de pagamento](/img/admin/settings-payments-options.png)
 
-### Gateways de pagamento
+### Gateways de pagamento {#payment-gateways}
 
 Ultimate Multisite oferece suporte a múltiplos gateways de pagamento. Você pode ativar e configurar cada um deles pela aba de configurações de Payment.
 
@@ -40,11 +40,11 @@ Cada gateway tem sua própria seção de configuração, onde você insere chave
 
 ![Configurações adicionais de gateway](/img/admin/settings-payments-gateways-2.png)
 
-### Modo Sandbox
+### Modo Sandbox {#sandbox-mode}
 
 Você pode ativar o **Modo Sandbox** para testar sua integração de pagamento antes de colocá-la em produção. Quando o modo sandbox está ativo, nenhuma cobrança real será feita.
 
-## Visualizando pagamentos
+## Visualizando pagamentos {#viewing-payments}
 
 Navegue até a página **Payments** em Ultimate Multisite para ver todas as transações em sua rede.
 
@@ -54,7 +54,7 @@ Você pode filtrar pagamentos por status (concluído, pendente, falhou, reembols
 
 Clique em um pagamento para ver todos os seus detalhes, incluindo os itens de linha, a membership associada, informações do cliente e dados do gateway de pagamento.
 
-## Faturas
+## Faturas {#invoices}
 
 Ultimate Multisite pode gerar faturas automaticamente para pagamentos. Você pode personalizar o modelo da fatura e o formato de numeração nas configurações de Payment.
 

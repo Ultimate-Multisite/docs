@@ -4,11 +4,11 @@ title: Actio - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Actio: set_auth_cookie
+# Actio: set_auth_cookie {#action-setauthcookie}
 
 Incenditur statim antequam crustulum authenticationis constituatur.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Incenditur statim antequam crustulum authenticationis constituatur.
 | $scheme | `string` | Schema authenticationis. Valores includunt 'auth' vel 'secure_auth'. |
 | $token | `string` | Signum sessionis usoris quod ad hoc crustulum adhibeatur. |
 
-### Ex quo
+### Ex quo {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ad lineam 124

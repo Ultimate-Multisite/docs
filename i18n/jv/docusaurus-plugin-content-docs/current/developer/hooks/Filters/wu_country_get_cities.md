@@ -4,11 +4,11 @@ title: Saringan - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Saringan: wu_country_get_cities
+# Saringan: wu_country_get_cities {#filter-wucountrygetcities}
 
 Mbalèkaké dhaptar kutha kanggo sawijining negara bagian ing sawijining negara.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Tipe | Katrangan |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Mbalèkaké dhaptar kutha kanggo sawijining negara bagian ing sawijining negara.
 | $state_code | `string` | Kode ISO rong aksara kanggo negara bagian. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance saka class saiki. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.11
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) ing baris 146
 
 
-## Mbalèkaké
+## Mbalèkaké {#returns}
 Dhaptar negara bagian sing wis disaring.

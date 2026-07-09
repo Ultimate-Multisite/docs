@@ -3,7 +3,7 @@ title: கணக்கு பக்கத்தை அணுகுதல்
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# எனது கணக்கு பக்கத்தை முதல் முறையாக எப்படி அணுகுவது?
+# எனது கணக்கு பக்கத்தை முதல் முறையாக எப்படி அணுகுவது? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Ultimate Multisite-க்கு வரவேற்கிறோம்!
 

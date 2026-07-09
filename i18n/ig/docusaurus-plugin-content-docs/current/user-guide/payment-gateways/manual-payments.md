@@ -3,13 +3,13 @@ title: Ịtọlite ịkwụ ụgwọ aka
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ịtọlite Ịkwụ Ụgwọ Aka (v2)
+# Ịtọlite Ịkwụ Ụgwọ Aka (v2) {#setting-up-manual-payments-v2}
 
 _**IHE NDỊ DỊ MKPA: Edemede a na-ezo aka na Ultimate Multisite ụdị 2.x.**_
 
 Ịkwụ ụgwọ aka bụ ụzọ ị ga-esi nye ụzọ ịkwụ ụgwọ ndị ọzọ ma ọ bụrụ na **Stripe** ma ọ bụ **PayPal** adịghị maka ndị ọrụ gị. Ọ nwere ike ịbụ nnyefe ego site na waya ma ọ bụ ụlọ akụ ma ọ bụ ụzọ ịkwụ ụgwọ ọ bụla ọzọ dịịrị ndị ọrụ gị n’ógbè ha.
 
-## Otu esi mee ka Ịkwụ Ụgwọ Aka rụọ ọrụ
+## Otu esi mee ka Ịkwụ Ụgwọ Aka rụọ ọrụ {#how-to-enable-manual-payments}
 
 Ịtọlite ịkwụ ụgwọ aka dị mfe nke ukwuu. Naanị ihe ị ga-eme bụ ime ka ọ rụọ ọrụ n’okpuru ụzọ ịkwụ ụgwọ ma tinye ntuziaka zuru ezu gbasara otu onye ọrụ ga-esi zipu ịkwụ ụgwọ ahụ.
 
@@ -31,7 +31,7 @@ Ha ga-enwetakwa ozi na peeji **Daalụ** gị nwere ntuziaka ịkwụ ụgwọ g
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Ịkwado ịkwụ ụgwọ aka
+## Ịkwado ịkwụ ụgwọ aka {#confirming-manual-payments}
 
 Iji kwado ịkwụ ụgwọ aka, gaa na menu **Ịkwụ Ụgwọ** dị na ogwe aka ekpe. N’ebe ahụ ị nwere ike ịhụ ịkwụ ụgwọ niile dị na netwọkụ gị na nkọwa ha, gụnyere **ọnọdụ** ha. Ịkwụ ụgwọ aka ga-enwe ọnọdụ **Na-eche** mgbe niile ruo mgbe ị gbanwere ya n’onwe gị.
 

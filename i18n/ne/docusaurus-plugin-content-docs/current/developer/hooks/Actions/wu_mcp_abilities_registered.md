@@ -4,11 +4,11 @@ title: कार्य - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# कार्य: wu_mcp_abilities_registered
+# कार्य: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 कुनै इकाइका लागि MCP क्षमताहरू दर्ता भएपछि चल्छ।
 
-## प्यारामिटरहरू
+## प्यारामिटरहरू {#parameters}
 
 | नाम | प्रकार | विवरण |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 | $model_name | `string` | मोडेलको नाम। |
 | $this | `object` | प्रबन्धक instance। |
 
-### देखि
+### देखि {#since}
 
 - 2.5.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) मा लाइन 171 मा परिभाषित गरिएको छ।

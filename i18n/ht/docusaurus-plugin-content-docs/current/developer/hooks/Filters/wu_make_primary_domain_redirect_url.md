@@ -4,13 +4,13 @@ title: Filtè - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filtè: wu_make_primary_domain_redirect_url
+# Filtè: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Filtre URL redireksyon an apre yo fin fè yon domèn vin prensipal.
 
 Pèmèt devlopè yo pèsonalize kote yo redirije itilizatè yo apre yo fin mete yon domèn kòm prensipal avèk siksè. Pa default, li redirije nan URL aktyèl la sou sit prensipal la, oswa nan URL administrasyon sit y ap modifye a.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Non | Tip | Deskripsyon |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Pèmèt devlopè yo pèsonalize kote yo redirije itilizatè yo apre yo fin mete 
 | $domain | `\Domain` | Objè domèn ki te vin prensipal la. |
 | $old_primary_domains | `array` | Tablo ID domèn ki te prensipal deja. |
 
-### Depi
+### Depi {#since}
 
 - 2.0.0
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) nan liy 639
 
 
-## Retounen
+## Retounen {#returns}
 URL redireksyon filtre a.

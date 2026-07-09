@@ -4,11 +4,11 @@ title: Akció - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Action: wu_domain_renewal_completed
+# Action: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Elkettődik, ha egy domain sikeresen megújításra került.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Elkettődik, ha egy domain sikeresen megújításra került.
 | $renewal_data | `array&lt;string,mixed&gt;` | Megújítási metadaták (domain_name, years, customer_id stb.). |
 | $result | `array&lt;string,mixed&gt;` | A regisztrátortól érkező, eredeti eredmény tömb, amely tartalmazza az új `expiry_date`-et. |
 
-### Elkövetkezés
+### Elkövetkezés {#since}
 
 - 2.0.0
-### Forrás
+### Forrás {#source}
 
 Meghatározva a [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) fájlban, 594-sorban.

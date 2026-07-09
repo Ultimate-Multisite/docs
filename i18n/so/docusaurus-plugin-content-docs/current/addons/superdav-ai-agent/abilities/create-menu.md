@@ -3,15 +3,15 @@ title: Abuur Liis
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Abuur Menu
+# Abuur Menu {#create-menu}
 
 Awoodda **Abuur Menu** waxay abuurtaa menu-yada hagidda ee WordPress iyadoo taageeraysa calaamado hagid oo ka duwan cinwaannada bogagga.
 
-## Guudmar
+## Guudmar {#overview}
 
 Awooddani waxay ballaarisaa shaqeynta caadiga ah ee abuurista menu iyadoo lagu darayo awoodda lagu cayimi karo parameter-ka `navigation_label`. Tani waxay kuu oggolaanaysaa inaad abuurto menu-yo halka calaamadda lagu muujiyo hagiddu ay ka duwan tahay cinwaanka bogga, taasoo siinaysa dabacsanaan badan qaab-dhismeedka site-ka iyo khibradda isticmaalaha.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Awooddani waxay ballaarisaa shaqeynta caadiga ah ee abuurista menu iyadoo lagu d
 | `location` | string | Maya | Goobta theme-ka ee menu-gan loo qoondeynayo, tusaale `primary` |
 | `navigation_label` | string | Maya | Calaamadda lagu muujinayo hagidda (ka duwan cinwaanka bogga) |
 
-## Qiimaha Soo Noqoshada
+## Qiimaha Soo Noqoshada {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Awooddani waxay ballaarisaa shaqeynta caadiga ah ee abuurista menu iyadoo lagu d
 }
 ```
 
-## Calaamadda Hagidda vs Cinwaanka Bogga
+## Calaamadda Hagidda vs Cinwaanka Bogga {#navigation-label-vs-page-title}
 
 Parameter-ka `navigation_label` wuxuu kuu oggolaanayaa inaad kala saarto magaca menu-ga gudaha iyo calaamadda loo muujiyo isticmaalayaasha:
 
@@ -43,9 +43,9 @@ Tani waxay faa'iido leedahay marka:
 - Aad u baahan tahay inaad taageerto luqado badan oo leh dherer calaamadeed oo kala duwan
 - Aad u dhisayso menu-yo loogu talagalay gobollo ama kooxo isticmaale oo gaar ah
 
-## Tusaalooyinka Isticmaalka
+## Tusaalooyinka Isticmaalka {#usage-examples}
 
-### Tusaale 1: Menu Fudud oo leh Calaamad Hagid
+### Tusaale 1: Menu Fudud oo leh Calaamad Hagid {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Abuur menu hagid aasaasi ah oo la yiraahdo "Main Navigation" oo leh calaamadda h
 }
 ```
 
-### Tusaale 2: Menu loogu talagalay Goob Theme Gaar ah
+### Tusaale 2: Menu loogu talagalay Goob Theme Gaar ah {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Abuur menu footer ah oo la yiraahdo "Footer Links" oo leh calaamadda hagidda "Qu
 }
 ```
 
-## La-qabsiga Theme Builder
+## La-qabsiga Theme Builder {#integration-with-theme-builder}
 
 Marka la isticmaalayo Theme Builder, awoodda Abuur Menu waxay:
 
@@ -89,13 +89,13 @@ Marka la isticmaalayo Theme Builder, awoodda Abuur Menu waxay:
 3. U qoondeysaa menu-yada goobaha theme-ka ee saxda ah
 4. Taageertaa ku darista walxaha menu-ga kadib abuurista
 
-## Awoodaha La Xiriira
+## Awoodaha La Xiriira {#related-abilities}
 
 - **`add_menu_item`** — Ku dar walxo menu jira
 - **`update_menu`** — Dib u magacow menu ama dib ugu qoondee goob theme
 - **`delete_menu`** — Ka saar menu site-kaaga
 
-## Hababka Ugu Fiican
+## Hababka Ugu Fiican {#best-practices}
 
 - **Isticmaal calaamado hagid oo cad** — calaamadaha ka dhig kooban oo sharraxaad leh isticmaalayaasha
 - **La jaanqaad goobaha theme-ka** — menu-yada u qoondee goobta theme-ka ee saxda ah si si habboon loo muujiyo
@@ -103,14 +103,14 @@ Marka la isticmaalayo Theme Builder, awoodda Abuur Menu waxay:
 - **Tijaabi la-qabsiga shaashadaha** — xaqiiji in menu-yadu si sax ah uga muuqdaan aaladaha moobaylka
 - **Deegaanee calaamadaha** — isticmaal calaamado hagid oo kala duwan noocyada luqadaha kala duwan
 
-## Xaddidaadaha
+## Xaddidaadaha {#limitations}
 
 - Calaamadaha hagiddu waa muujin-kaliya; `name`-ka gudaha weli waxaa loo isticmaalaa aqoonsiga WordPress
 - Taageerada theme-ku way kala duwan tahay; dhammaan theme-yadu ma taageeraan dhammaan goobaha menu-ga
 - Walxaha menu-ga waa in si gooni ah loogu daraa kadib abuurista menu-ga
 - Beddelidda calaamadda hagidda waxay u baahan tahay cusboonaysiinta menu-ga
 
-## Awoodaha La Xiriira
+## Awoodaha La Xiriira {#related-abilities-1}
 
 - [Soo saar Logo SVG](./generate-logo-svg.md) — u abuur logos header-ka site-kaaga
 - [Xaqiiji Isbarbardhigga Palette-ka](./validate-palette-contrast.md) — hubi qorshayaal midab oo la heli karo

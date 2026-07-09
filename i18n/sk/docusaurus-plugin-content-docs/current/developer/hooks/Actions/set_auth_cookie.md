@@ -4,11 +4,11 @@ title: Akcia - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Spustí sa bezprostredne pred nastavením autentifikačného cookie.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Spustí sa bezprostredne pred nastavením autentifikačného cookie.
 | $scheme | `string` | Autentifikačná schéma. Hodnoty zahŕňajú 'auth' alebo 'secure_auth'. |
 | $token | `string` | Token relácie používateľa, ktorý sa má použiť pre toto cookie. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) na riadku 124

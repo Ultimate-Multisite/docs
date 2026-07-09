@@ -3,11 +3,11 @@ title: Istoric de modificări
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Lansat pe 2026-04-28
+## 1.9.0 — Lansat pe 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nou
+### Nou {#new}
 
 - **Funcționalitatea `create_contact_form`** — creează un formular de contact folosind plugin-ul de formulare activ (Contact Form 7, WPForms, Fluent Forms sau Gravity Forms) și returnează un shortcode gata de încorporat în orice postare sau pagină.
 - **Funcționalitatea `set_featured_image`** — atribuie o imagine în evidență unui post sau unei pagini, fie dintr-un ID de atașament existent din Media Library, fie dintr-un URL de la distanță; importă automat imaginea atunci când este furnizat un URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurarea ultimei sesiuni** — panoul de chat reîncarcă acum automat conversația cea mai recentă la încărcarea paginii și la deschiderea widget-ului, astfel încât contextul nu este pierdut niciodată în timpul navigării paginilor.
 - **Link-uri de acțiune pentru plugin-uri** — link-uri rapide către Settings și către Abilities Registry apar acum pe ecranul WordPress **Plugins → Installed Plugins**, sub descrierea plugin-ului.
 
-### Îmbunătățit
+### Îmbunătățit {#improved}
 
 - **Reprierea sursei imaginii** — agentul încearcă acum toate sursele de imagini gratuite configurate înainte de a recurge la o imagine generată de AI în cazul eșecului descărcării.
 - **Panoul cu informații despre model** — vizibil în permanență în antetul chat-ului; nu mai este ascuns după primul mesaj.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Reproiectarea widget-ului de chat** — iconița AI unificată înlocuiește avatarul personalizat anterior; este în armonie cu sistemul de agenți încorporați.
 - **Linkificarea URL-urilor** — URL-urile care apar în mesajele sistemului și în bulele de mesaje de eroare sunt acum afișate ca link-uri clicabile.
 
-### Corectat
+### Corectat {#fixed}
 
 - **Descoperirea funcționalităților (Abilities)** — descrierile, referințele la prompt-ul sistemului și alinierea namespace-urilor au fost corectate, astfel încât toate funcționalitățile să apară în lista de instrumente a agentului în mod fiabil.
 - **Cache-ul furnizorilor (Providers)** — furnizorii sunt acum cache-uizați la nivel de site printr-un contor de versiune, prevenind problemele de furnizori învețiți pe rețelele multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Lansat pe 2026-04-09
+## 1.4.0 — Lansat pe 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nou
+### Nou {#new-1}
 
 - **Comanda de benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — rulează suite-ul de benchmark Agent Capabilities v1 de pe linia de comandă pentru pipeline-uri CI și fluxuri de lucru de evaluare a modelelor. Suportă rulări per întrebare, suprascrieri de furnizori/modele și ieșiri JSON/CSV.
 - **Suite-ul de benchmark Agent Capabilities v1** — un set structurat de prompt-uri complexe, multi-pas, care exersă suprafața completă a funcționalităților, cu scorare și raportare de token/durată.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Întrebarea de benchmark pentru site-uri de restaurante** (`q-restaurant-website`) — test end-to-end care acoperă înregistrarea CPT, sistemul de design, navigarea și descoperirea plugin-urilor.
 - **Plugin-uri de conector AI provider** adăugate în blueprint-urile WordPress Playground pentru o configurare locală mai rapidă.
 
-### Îmbunătățit
+### Îmbunătățit {#improved-1}
 
 - README actualizat cu documentația și instrucțiunile de configurare pentru conectorii AI provider.
 
-### Corectat
+### Corectat {#fixed-1}
 
 - 25 eșecuri de test PHPUnit pe branch-ul `main` rezolvate.
 - Formatul URL-ului de lansare GitHub în `blueprint.json` corectat.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Notele de lansare anterioare sunt menținute în repository-ul plugin-ului._

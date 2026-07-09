@@ -3,11 +3,11 @@ title: WP-CLI референца
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI референца
+# WP-CLI референца {#wp-cli-reference}
 
 Gratis AI Agent испоручује породицу команди `wp gratis-ai-agent` за мерење перформанси агента, управљање способностима и упит статуса агента из командне линије. Све команде захтевају WP-CLI 2.0 или новији.
 
-## Инсталација
+## Инсталација {#installation}
 
 WP-CLI команде се аутоматски региструју када је plugin активан. Проверите помоћу:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Покреће пакет за мерење перформанси Agent Capabilities — скуп сложених, вишекорачних упита који користе целу површину способности. Користите ово да процените перформансе модела, упоредите AI провајдере или потврдите пакете способности пре постављања у продукцију.
 
-### Синопсис
+### Синопсис {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Опције
+### Опције {#options}
 
 | Опција | Опис |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Формат излаза: `table` (подразумевано), `json`, `csv` |
 | `--save` | Сачувај резултате мерења перформанси у базу података за историјско поређење |
 
-### Примери
+### Примери {#examples}
 
 Покрените цео пакет за мерење перформанси са тренутним провајдером и моделом:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Излаз
+### Излаз {#output}
 
 Мерење перформанси исписује један ред по питању са следећим колонама:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Питања за мерење перформанси
+### Питања за мерење перформанси {#benchmark-questions}
 
 Подразумевани пакет укључује:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Управља инсталираним способностима и пакетима способности.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Наводи све регистроване способности, њихов извор (језгро или пакет) и њихов тренутни статус.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Преузима и активира пакет способности из регистра.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Онемогућава одређену способност без уклањања пакета. Корисно за ограничавање опсега агента на датом сајту.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Поново омогућава претходно онемогућену способност.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Приказује тренутну конфигурацију агента и статус повезаности.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Приказује недавну активност агента из дневника за отклањање грешака.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Ресетује стање агента: чисти уметнути CSS, уклања CPT-ове и таксономије које је агент регистровао, ресетује глобалне стилове и празни кеш опција агента. Не уклања plugin нити његова подешавања.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Излазни кодови
+## Излазни кодови {#exit-codes}
 
 Све команде враћају `0` при успеху. Излазни кодови различити од нуле:
 

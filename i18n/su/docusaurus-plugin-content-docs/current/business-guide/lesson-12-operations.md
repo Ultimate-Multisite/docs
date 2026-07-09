@@ -3,17 +3,17 @@ title: 'Palajaran 12: Ngajalankeun Usaha'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Palajaran 12: Ngajalankeun Usaha
+# Palajaran 12: Ngajalankeun Usaha {#lesson-12-running-the-business}
 
 Platform lain proyék anu réngsé ku anjeun -- éta téh usaha anu anjeun jalankeun. Palajaran ieu ngabahas operasi sapopoé pikeun ngatur FitSite: dukungan, tagihan, pangropéa, jeung ngajaga konsumén tetep bagja.
 
-## Tempat Urang Eureun Saméméhna
+## Tempat Urang Eureun Saméméhna {#where-we-left-off}
 
 FitSite geus live jeung konsumén mimiti ngadaptar. Ayeuna anjeun kudu ngajalankeun operasi sacara lestari.
 
-## Operasi Sapopoé
+## Operasi Sapopoé {#daily-operations}
 
-### Monitoring
+### Monitoring {#monitoring}
 
 Pariksa ieu unggal poé (atawa atur béwara):
 
@@ -22,7 +22,7 @@ Pariksa ieu unggal poé (atawa atur béwara):
 - **Pamayaran gagal**: Naha aya kagagalan pamayaran anu perlu diperhatikeun?
 - **Paménta dukungan**: Naha aya patarosan konsumén anu can kajawab?
 
-### Dukungan Konsumén
+### Dukungan Konsumén {#customer-support}
 
 Fokus niche anjeun jadi kaunggulan di dieu. Kusabab sakabéh konsumén anjeun studio kabugaran, anjeun bakal ningali patarosan anu sarua sacara terus-terusan:
 
@@ -36,7 +36,7 @@ Fokus niche anjeun jadi kaunggulan di dieu. Kusabab sakabéh konsumén anjeun st
 
 Bangun pangkalan pangaweruh anjeun (dimimitian dina Palajaran 8) dumasar kana patarosan anu terus muncul ieu. Unggal tiket dukungan anu sabenerna bisa jadi artikel pangkalan pangaweruh téh sinyal pikeun nulis artikel éta.
 
-### Tingkatan Dukungan
+### Tingkatan Dukungan {#support-tiers}
 
 Nalika anjeun tumuwuh, susun dukungan dumasar kana plan:
 
@@ -48,9 +48,9 @@ Nalika anjeun tumuwuh, susun dukungan dumasar kana plan:
 
 [Addon Tiket Dukungan](/addons/support-tickets) bisa ngabantu ngatur paménta dukungan dina platform.
 
-## Operasi Tagihan
+## Operasi Tagihan {#billing-operations}
 
-### Pamayaran Berulang
+### Pamayaran Berulang {#recurring-payments}
 
 Ultimate Multisite ngurus tagihan berulang sacara otomatis ngaliwatan gateway pamayaran anjeun. Tugas anjeun nyaéta monitoring pikeun:
 
@@ -58,7 +58,7 @@ Ultimate Multisite ngurus tagihan berulang sacara otomatis ngaliwatan gateway pa
 - **Dunning**: Atur logika coba deui otomatis ngaliwatan gateway pamayaran anjeun (Stripe ngurus ieu kalayan alus)
 - **Paménta pembatalan**: Paham kunaon konsumén ninggalkeun. Unggal pembatalan téh eupan balik.
 
-### Ngatur Memberships
+### Ngatur Memberships {#managing-memberships}
 
 Arahkeun ka **Ultimate Multisite > Memberships** pikeun:
 
@@ -69,13 +69,13 @@ Arahkeun ka **Ultimate Multisite > Memberships** pikeun:
 
 Tingali [Ngatur Memberships](/user-guide/administration/managing-memberships) pikeun rujukan lengkep.
 
-### Invoice
+### Invoice {#invoicing}
 
 Pastikeun invoice dijieun kalayan bener pikeun unggal pamayaran. Konsumén bisa butuh invoice pikeun laporan waragad usaha. Tingali [Ngatur Pamayaran jeung Invoice](/user-guide/administration/managing-payments-and-invoices).
 
-## Pangropéa Platform
+## Pangropéa Platform {#platform-maintenance}
 
-### Apdet WordPress jeung Plugin
+### Apdet WordPress jeung Plugin {#wordpress-and-plugin-updates}
 
 Salaku administrator jaringan, anjeun tanggung jawab pikeun:
 
@@ -88,14 +88,14 @@ Salaku administrator jaringan, anjeun tanggung jawab pikeun:
 Apdet anu ruksak mangaruhan unggal site konsumén dina jaringan anjeun. Salawasna uji apdet dina salinan staging jaringan anjeun heula.
 :::
 
-### Kaamanan
+### Kaamanan {#security}
 
 - Jaga sakabéh software tetep panganyarna
 - Paké kecap akses anu kuat jeung autentikasi dua-faktor pikeun Account admin
 - Monitoring kagiatan anu curiga
 - Boga rencana pikeun kajadian kaamanan
 
-### Kinerja
+### Kinerja {#performance}
 
 Nalika jaringan anjeun tumuwuh, monitor:
 
@@ -105,9 +105,9 @@ Nalika jaringan anjeun tumuwuh, monitor:
 
 Pertimbangkeun pikeun nerapkeun caching (cache kaca, cache objék) jeung CDN lamun anjeun can ngalakukeunana. [Integrasi Cloudflare](/user-guide/host-integrations/cloudflare) ngurus loba bagian tina ieu.
 
-## Ngatur Daur Hirup Konsumén
+## Ngatur Daur Hirup Konsumén {#customer-lifecycle-management}
 
-### Ngurangan Churn
+### Ngurangan Churn {#reducing-churn}
 
 Churn nyaéta perséntase konsumén anu ngabatalkeun unggal bulan. Pikeun usaha langganan, ngurangan churn sarua pentingna jeung meunangkeun konsumén anyar.
 
@@ -119,7 +119,7 @@ Churn nyaéta perséntase konsumén anu ngabatalkeun unggal bulan. Pikeun usaha 
 - Maranéhna manggihan alternatif anu leuwih murah → pertegas niléy niche anjeun
 - Usaha maranéhna tutup → teu bisa dihindari, tapi lacak ieu sacara misah
 
-### Ngadorong Upgrade
+### Ngadorong Upgrade {#encouraging-upgrades}
 
 Konsumén dina Starter anu keur hasil kudu didorong pikeun upgrade:
 
@@ -127,7 +127,7 @@ Konsumén dina Starter anu keur hasil kudu didorong pikeun upgrade:
 - Kirim email anu ditargétkeun pikeun nyorot fitur plan Growth anu bakal mangpaat pikeun maranéhna
 - Tampilkeun naon anu geus diwangun ku konsumén Growth/Pro
 
-### Kampanye Win-Back
+### Kampanye Win-Back {#win-back-campaigns}
 
 Nalika konsumén ngabatalkeun:
 
@@ -135,30 +135,30 @@ Nalika konsumén ngabatalkeun:
 2. Tangani kahariwang maranéhna lamun mungkin
 3. Tawarkeun diskon pikeun balik deui (30-60 poé sanggeus pembatalan)
 
-## Rutinitas Mingguan jeung Bulanan
+## Rutinitas Mingguan jeung Bulanan {#weekly-and-monthly-routines}
 
-### Mingguan
+### Mingguan {#weekly}
 
 - Tinjau pangdaftaran anyar jeung pembatalan
 - Bales sakabéh tiket dukungan anu kabuka
 - Pariksa kinerja platform jeung uptime
 - Tinjau sagala pamayaran gagal
 
-### Bulanan
+### Bulanan {#monthly}
 
 - Analisis métrik konci (MRR, churn, konsumén anyar, upgrade)
 - Terapkeun apdet WordPress jeung plugin (sanggeus uji staging)
 - Tinjau jeung apdet pangkalan pangaweruh dumasar kana pola dukungan
 - Kirim newsletter atawa apdet ka konsumén (fitur anyar, tips, warta industri kabugaran)
 
-### Triwulanan
+### Triwulanan {#quarterly}
 
 - Tinjau harga dibandingkeun jeung pesaing jeung eupan balik konsumén
 - Évaluasi desain template -- naha perlu disegerkeun?
 - Nilai kapasitas hosting -- naha anjeun kudu scale?
 - Tinjau jeung tingkatkeun onboarding dumasar kana data aktivasi
 
-## Naon Anu Urang Bangun dina Palajaran Ieu
+## Naon Anu Urang Bangun dina Palajaran Ieu {#what-we-built-this-lesson}
 
 - **Rutinitas pangawasan sapopoé** pikeun uptime, pendaptaran, pamayaran, jeung dukungan
 - **Struktur dukungan bertingkat** anu dicocogkeun jeung tingkat rarancang

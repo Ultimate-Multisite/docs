@@ -3,11 +3,11 @@ title: Tohutoro Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tohutoro Hooks
+# Tohutoro Hooks {#hooks-reference}
 
 He tuhinga i hanga-aunoa mō ngā **action 59** katoa me ngā **filter 118** katoa i Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Ka whakahohe i mua i te anga whakamana.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Ka whakahohe tonu i mua i te whakatakotanga o te pihikete whakamana.
@@ -70,7 +70,7 @@ He tuhinga i hanga-aunoa mō ngā **action 59** katoa me ngā **filter 118** kat
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Ka whakaoho i muri i te rokirokitanga o tētahi ahanoa ki te pātengi raraunga.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Whakaaetia ngā kaiwhakawhanake plugin ki te tāpiri i ngā actions ki te tukanga wetewete.
 
-## Ngā Tātari
+## Ngā Tātari {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Ka tātari i te roanga o te wā paunga o te cookie motuhēhēnga.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Ka tātari i te kaupapa whakawhiti motuhēhēnga.

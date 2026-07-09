@@ -4,11 +4,11 @@ title: Аракет - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Аракет: wu_membership_post_renew
+# Аракет: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Мүчөлүк узартылгандан кийин ишке кирет.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аталышы | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 | $membership_id | `int` | Мүчөлүктүн IDси. |
 | $membership | `\Membership` | Мүчөлүк объектиси. |
 
-### Баштап
+### Баштап {#since}
 
 - 2.0
-### Булак
+### Булак {#source}
 
 [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) ичинде 2235-сапта аныкталган

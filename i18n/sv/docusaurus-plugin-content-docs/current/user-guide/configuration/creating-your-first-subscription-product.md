@@ -3,13 +3,13 @@ title: Skapa din första prenumerationsprodukt
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Skapa din första prenumerationsprodukt (v2)
+# Skapa din första prenumerationsprodukt (v2) {#creating-your-first-subscription-product-v2}
 
 _**VIKTIGT MEDDELANDE: Den här artikeln är endast för användare av Ultimate Multisite version 2.x. Om du använder version 1.x,**_ **_**se den här artikeln**_**.
 
 För att börja driva ditt nätverk och börja sälja dina tjänster till potentiella användare behöver du ha olika prenumerationsalternativ. Hur skapar du dessa produkter? Vilka typer av produkter kan du erbjuda? I den här artikeln går vi igenom allt du behöver veta om produkter.
 
-## Produkttyp
+## Produkttyp {#product-type}
 
 Med Ultimate Multisite kan du erbjuda två kategorier av produkter till dina klienter: **planer** och **tillägg** **(Order Bump)**. Tillägg kan delas in i två typer:**paket** och **tjänster**. Vi går igenom deras skillnader och särdrag härnäst.
 
@@ -19,7 +19,7 @@ Med Ultimate Multisite kan du erbjuda två kategorier av produkter till dina kli
 
   * **Tjänster:** tillägg som inte ändrar Ultimate Multisite-funktioner. De är uppgifter som du utför för din klient utöver den plan de köpte. Till exempel kan din kund köpa en plan som tillåter en enda webbplats och även betala för en extra tjänst som skapar designen för denna webbplats.
 
-## Hantera produkter
+## Hantera produkter {#managing-products}
 
 För många kan fliken **Produkter** i Ultimate Multisite **(Ultimate Multisite > Products)** likställas med planer i en traditionell hostingmiljö.
 
@@ -29,7 +29,7 @@ Det här avsnittet hjälper dig att förstå denna viktiga hörnsten i Ultimate 
 
 ![Sida med produktlista](/img/config/products-list.png)
 
-## Lägga till produkter
+## Lägga till produkter {#adding-products}
 
 Oavsett om det är en plan, ett paket eller en tjänst är startpunkten för att definiera en ny artikel via **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Gränssnittet innehåller två framträdande avsnitt. Till vänster finns flera 
 
 ![Översikt över produktredigeringssida](/img/config/product-edit-full.png)
 
-### Beskrivning
+### Beskrivning {#description}
 
 Den grundläggande produktinformationen kan definieras genom att ange ett produktnamn och en beskrivning. Dessa identifierare visas överallt där produktinformationen krävs, såsom val av plan och prissättning, fakturor, uppgraderingar och liknande.
 
 ![Avsnitt för produktbeskrivning](/img/config/product-description.png)
 
-### Prissättningstyp
+### Prissättningstyp {#pricing-type}
 
 På höger sida av gränssnittet kan basprissättningen definieras.
 
@@ -53,7 +53,7 @@ På höger sida av gränssnittet kan basprissättningen definieras.
 
 Ultimate Multisite stöder tre olika prissättningstyper. Alternativet **betald** uppmanar nätverksadministratören att ange information om produktens pris och faktureringsfrekvens.
 
-### Prissättning
+### Prissättning {#pricing}
 
 Priskomponenten definierar produktens baspris och faktureringsintervall.
 
@@ -61,7 +61,7 @@ Priskomponenten definierar produktens baspris och faktureringsintervall.
 
 alltså kommer ett exempelpris på $29.99 med en inställning på 1 månad att fakturera $29.99 varje månad. På samma sätt kommer ett pris på $89.97 med en inställning på 3 månader att fakturera det beloppet varje kvartal.
 
-### Faktureringscykler
+### Faktureringscykler {#billing-cycles}
 
 Avsnittet för faktureringscykler anger frekvensen för det ovannämnda faktureringsintervallet och förstås i allmänhet i ljuset av avtal eller fasta perioder.
 
@@ -69,7 +69,7 @@ Avsnittet för faktureringscykler anger frekvensen för det ovannämnda fakturer
 
 Till exempel skulle ett produktpris på $29.99 med ett intervall på 1 månad och 12 faktureringscykler fakturera $29.99 per månad för produkten under de följande 12 månaderna. Med andra ord skulle en sådan inställning fastställa en fastprisperiod på $29.99 per månad i 12 månader och därefter upphöra med faktureringen.
 
-### Provperiod
+### Provperiod {#trial-period}
 
 Att aktivera reglaget för erbjud provperiod gör det möjligt för nätverksadministratören att definiera en provperiod för produkten.
 
@@ -77,7 +77,7 @@ Att aktivera reglaget för erbjud provperiod gör det möjligt för nätverksadm
 
 Under provperioden kan kunderna använda produkten gratis och kommer inte att faktureras förrän provperioden har löpt ut.
 
-### Startavgift
+### Startavgift {#setup-fee}
 
 Du kan också tillämpa en startavgift på din plan.
 
@@ -85,7 +85,7 @@ Du kan också tillämpa en startavgift på din plan.
 
 Detta innebär att din klient betalar ett extra belopp vid den första debiteringen (utöver planpriset) som motsvarar avgiften du definierade i detta avsnitt.
 
-### Aktiv
+### Aktiv {#active}
 
 Reglaget för aktiv definierar i praktiken om produkten är tillgänglig för kunder vid nya registreringar.
 
@@ -93,13 +93,13 @@ Reglaget för aktiv definierar i praktiken om produkten är tillgänglig för ku
 
 Om det finns befintliga kunder på denna plan innebär det att sätta reglaget i inaktiverat läge att planen i praktiken blir ärvd och tas bort från framtida registreringar. **Befintliga kunder på planen kommer att fortsätta faktureras** tills de flyttas till en ny plan eller tas bort från planen.
 
-### Produktbild
+### Produktbild {#product-image}
 
 Knappen **Ladda upp bild** gör det möjligt för nätverksadministratören att använda mediebiblioteket för att välja eller ladda upp en produktbild.
 
 ![Avsnitt för produktbild](/img/config/product-image.png)
 
-### Ta bort
+### Ta bort {#delete}
 
 Knappen **Ta bort produkt** tar bort produkten från systemet. Den visas när produkten har publicerats.
 
@@ -107,11 +107,11 @@ Knappen **Ta bort produkt** tar bort produkten från systemet. Den visas när pr
 
 Till skillnad från andra borttagningar placeras produkten inte i något papperskorgsläge. När den väl har tagits bort är åtgärden därför oåterkallelig.
 
-### Produktalternativ
+### Produktalternativ {#product-options}
 
 När produktinformationen på basnivå har definierats hjälper produktalternativen nätverksadministratören att ytterligare definiera produktens specifika attribut.
 
-#### Allmänt
+#### Allmänt {#general}
 
 Fliken **Allmänt** definierar produktens allmänna attribut som inte gäller för någon av de andra produktspecifika flikarna.
 
@@ -125,7 +125,7 @@ Ultimate Multisite stöder flera produkttyper, nämligen plan, paket och tjänst
 
 ![Inställningar för kundroll](/img/config/product-customer-role-settings.png)
 
-#### Upp- och nedgraderingar
+#### Upp- och nedgraderingar {#up--downgrades}
 
 Den här fliken anger de uppgraderings- och nedgraderingsvägar som är tillgängliga för en kund inom deras specifika nivå.
 
@@ -143,7 +143,7 @@ För att definiera en plangrupp anger du de kompatibla planerna i listan **plang
 
 Ultimate Multisite inkluderar också en **order bump**-funktion där lämpliga tilläggsprodukter och tjänster kan läggas till i planer. Dessa erbjuds kunden som ytterligare objekt som kan läggas till i planer i kassan eller under en uppgradering.
 
-#### Prisvariationer
+#### Prisvariationer {#price-variations}
 
 Prisvariationer låter nätverksadministratören ange alternativa prisnivåer beroende på varaktighet. Den här inställningen gör det möjligt att erbjuda månadsvis, kvartalsvis, årsvis eller någon annan faktureringsperiod för samma produkt. Till exempel kan du konfigurera en produkt för 29,99 USD/månad med ett rabatterat årligt alternativ för 249,99 USD/år.
 
@@ -165,7 +165,7 @@ Om ditt basproduktpris till exempel är 29,99 USD per månad kan du lägga till:
 Enbart prisvariationer lägger inte till ett reglage eller en omkopplare i frontend-kassan. För att låta kunder växla mellan faktureringsperioder (t.ex. månadsvis / årsvis) behöver du lägga till ett **Periodval**-fält i ditt kassformulär. Se [Kassformulär: Lägga till ett reglage för periodval](checkout-forms#adding-a-period-selection-toggle) för steg-för-steg-instruktioner.
 :::
 
-#### Skatter
+#### Skatter {#taxes}
 
 Fliken **Skatter** överensstämmer med skatteinställningarna som anges i **Ultimate Multisite > Inställningar > Skatter** och mer specifikt de definierade skattesatserna. För att aktivera skatter och definiera tillämpliga skattesatser, se dokumentationen på **Ultimate Multisite: Inställningar**
 
@@ -179,7 +179,7 @@ När skattesatsen har definierats i **Ultimate Multisite > Inställningar > Hant
 
 För att ange att en produkt är en skattepliktig vara ställer du reglaget **Är skattepliktig** till aktivt och väljer den tillämpliga skattesatsen från rullgardinsmenyn Skattekategori.
 
-#### Webbplatsmallar
+#### Webbplatsmallar {#site-templates}
 
 I grund och botten är webbplatsmallar kompletta WordPress-webbplatser som klonas till en kunds webbplats i början av deras prenumeration.
 
@@ -201,7 +201,7 @@ Slutligen åsidosätter **V** **älj tillgängliga webbplatsmallar** mallarna so
 
 I slutändan, om nätverksadministratören vill att mallval ska ske i checkout-stegen, räcker inställningen ' _standard_ '. Alternativt, för att ta bort och låsa mallval och delegera valet till planinställningarna, kan alternativen ' _tilldela ny mall_ ' eller ' _välj tillgängliga webbplatsmallar_ ' vara önskvärda.
 
-#### Webbplatser
+#### Webbplatser {#sites}
 
 Fliken **Webbplatser** är en del av Ultimate Multisite:s begränsningsfunktionalitet.
 
@@ -211,7 +211,7 @@ Denna inställning anger det maximala antalet webbplatser som en kund kan skapa 
 
 För att aktivera begränsningen, ställ växeln **begränsa webbplatser** i aktivt läge och ange det maximala antalet webbplatser i fältet **webbplatstilldelning**.
 
-#### Besök
+#### Besök {#visits}
 
 Fliken **Besök** är ytterligare en del av Ultimate Multisite:s begränsningssystem. Denna inställning möjliggör bokföring och efterföljande strypning av unika besökare till en kunds webbplats.
 
@@ -223,7 +223,7 @@ För att använda denna funktion, ställ växeln **begränsa unika besök** i ak
 
 När denna gräns har nåtts kommer Ultimate Multisite att sluta leverera kundens webbplats i stället för att visa ett meddelande som anger att gränserna har överskridits.
 
-#### Användare
+#### Användare {#users}
 
 Ultimate Multisite:s begränsningar för 'Användare' gör det möjligt för nätverksadministratören att införa gränser för antalet användare som kan skapas och tilldelas roller.
 
@@ -233,7 +233,7 @@ För att aktivera begränsningsfunktionen, ställ växeln **begränsa användare
 
 Därefter, för varje roll som ska begränsas, ställ växeln bredvid den i aktivt läge och definiera den maximala övre gränsen i lämpligt fält.
 
-#### Inläggstyper
+#### Inläggstyper {#post-types}
 
 Fliken **Inläggstyper** gör det möjligt för nätverksadministratören att införa detaljerade gränser för det omfattande utbudet av inläggstyper inom WordPress.
 
@@ -245,7 +245,7 @@ För att aktivera detta begränsningsundersystem, ställ växeln **begränsa inl
 
 Därefter, för varje inläggstyp som ska begränsas, aktivera den genom att skjuta den åt höger och ange den maximala övre gränsen i lämpligt fält.
 
-#### Diskutrymme
+#### Diskutrymme {#disk-space}
 
 Fliken **Diskutrymme** gör det möjligt för nätverksadministratörer att begränsa det utrymme som förbrukas av kunder.
 
@@ -257,13 +257,13 @@ För att aktivera begränsningen av diskanvändning, ställ växeln **begränsa 
 
 Ange därefter den maximala övre gränsen i megabyte i fältet **tilldelning av diskutrymm** e.
 
-#### Anpassad domän
+#### Anpassad domän {#custom-domain}
 
 Genom att växla detta alternativ kan du tillåta anpassade domäner specifikt för denna plan.
 
 ![Fliken Anpassade domäner](/img/config/product-custom-domains.png)
 
-#### Teman
+#### Teman {#themes}
 
 Fliken **Teman** inom produktalternativen gör det möjligt för nätverksadministratören att göra teman tillgängliga för kunder för val och att valfritt tvinga temats tillstånd.
 
@@ -281,7 +281,7 @@ Valet **beteende** gör det möjligt för nätverksadministratören att definier
 
 I tillståndet **T** **illgänglig** görs temat tillgängligt för kunden för självaktivering. Omvänt tar tillståndet **Inte tillgänglig** bort kundens möjlighet att aktivera temat. Slutligen tvingar alternativet **Tvinga aktivering** valet och aktiveringen av temat och ställer därmed in det som standard när webbplatsen skapas.
 
-#### Plugins
+#### Plugins {#plugins}
 
 På liknande sätt som fliken Teman gör Ultimate Multisite det möjligt för nätverksadministratören att definiera synligheten för plugins för kunder samt deras tillstånd när en ny webbplats skapas.
 
@@ -301,7 +301,7 @@ Inställningen **Force Activate & Lock** fungerar på liknande sätt men förhin
 
 Nätverksadministratören kan vilja överväga inställningarna Force Activate & Lock och Force Inactivate & Lock tillsammans med webbplatsmallar, eftersom plugin och plugin-tillstånd inom mallarna kan påverkas av dessa inställningar om de väljs.
 
-#### Återställ begränsningar
+#### Återställ begränsningar {#reset-limitations}
 
 Fliken **Reset Limitations** återställer alla anpassade gränser som definierats för produkten. Klicka på knappen **reset limitations** för att återställa begränsningar.
 
@@ -311,7 +311,7 @@ För att bekräfta åtgärden skjuter du reglaget **confirm reset** till dess ak
 
 ![Fliken Återställ begränsningar](/img/config/product-reset-limitations.png)
 
-## Redigera, duplicera eller ta bort produkt
+## Redigera, duplicera eller ta bort produkt {#edit-duplicate-or-delete-product}
 
 Befintliga produkter kan redigeras, dupliceras eller tas bort genom att navigera till **Ultimate Multisite > Products** och hovra över det befintliga produktnamnet.
 

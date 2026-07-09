@@ -4,11 +4,11 @@ title: Chiito - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Chiito: set_auth_cookie
+# Chiito: set_auth_cookie {#action-setauthcookie}
 
 Chinoitika pakarepo authentication cookie isati yaiswa.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Chinoitika pakarepo authentication cookie isati yaiswa.
 | $scheme | `string` | Authentication scheme. Zvikosha zvinosanganisira 'auth' kana 'secure_auth'. |
 | $token | `string` | Session token yemushandisi yekushandisa pa cookie iyi. |
 
-### Kubva
+### Kubva {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) pamutsetse 124

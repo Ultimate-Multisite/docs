@@ -3,7 +3,7 @@ title: Veelgestelde vragen
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Veelgestelde vragen
+# Veelgestelde vragen {#frequently-asked-questions}
 
 Hier zijn enkele **Veelgestelde vragen** die vaak naar voren komen tijdens supportverzoeken.
 

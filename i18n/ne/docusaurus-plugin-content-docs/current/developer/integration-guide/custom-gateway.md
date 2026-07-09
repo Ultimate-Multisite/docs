@@ -3,11 +3,11 @@ title: अनुकूलित गेटवे विकास
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway विकास
+# Custom Gateway विकास {#custom-gateway-development}
 
 तपाईं `Base_Gateway` class विस्तार गरेर custom payment gatewayहरू सिर्जना गर्न सक्नुहुन्छ।
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway दर्ता गर्नुहोस्
+## Gateway दर्ता गर्नुहोस् {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## मुख्य Methods
+## मुख्य Methods {#key-methods}
 
 | Method | उद्देश्य |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | refund अनुरोधहरू ह्यान्डल गर्नुहोस् |
 | `get_payment_methods()` | customer का लागि सुरक्षित गरिएका payment methods फर्काउनुहोस् |
 
-## recurring memberships का लागि Renewal credentials
+## recurring memberships का लागि Renewal credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ले gateway integrations लाई `auto_renew` कायम गरिनुअघि recurring membership सँग पुनःप्रयोगयोग्य renewal credential छ कि छैन भनेर रिपोर्ट गर्न दिन्छ। `wu_membership_has_renewal_credential` hook गर्नुहोस् र फर्काउनुहोस्:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 नयाँ पुनःप्रयोगयोग्य credential भण्डारण भएपछि तपाईंको gateway को सफल re-authorization flow को भागका रूपमा missing-credential marker हटाउनुहोस्।
 
-## सुझावहरू
+## सुझावहरू {#tips}
 
 - असफल हुँदा सधैं `WP_Error` फर्काउनुहोस् ताकि Ultimate Multisite ले error display ह्यान्डल गर्न सकोस्
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway-specific logging का लागि `wu_log_add()` प्रयोग गर्नुहोस्
 
-## AI connector provider क्षमताहरू
+## AI connector provider क्षमताहरू {#ai-connector-provider-capabilities}
 
 AI connector-backed operations call गर्ने custom integrations ले AI Provider for Anthropic Max v1.3.0 सँग परिचय गराइएको समर्थित OAuth provider set सँग मिल्नुपर्छ:
 

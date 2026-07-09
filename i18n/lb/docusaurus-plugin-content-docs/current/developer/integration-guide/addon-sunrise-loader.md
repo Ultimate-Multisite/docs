@@ -3,17 +3,17 @@ title: Zousazmodul Sunrise-Dateilader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise-Datei-Loader
+# Addon Sunrise-Datei-Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 füügt e sunrise-Erweiderungs-Loader fir Add-ons a personaliséiert MU-plugin-Integratiounen dobäi, déi wärend dem WordPress sunrise-Bootstrapping lafe mussen, ouni déi generéiert `wp-content/sunrise.php`-Datei z'änneren.
 
-## Wéini en ze benotzen
+## Wéini en ze benotzen {#when-to-use-it}
 
 Benotz eng sunrise-Erweiderung, wann deng Integratioun lafe muss, éier regulär Plugine geluede ginn, wéi personaliséiert Domain-Routing, host-spezifesch Ufroveraarbechtung oder fréi Netzwierk-Bootstrap-Upassungen.
 
 Fir normal Integratiounen, benotz léiwer regulär WordPress Plugine, MU-plugins an déi dokumentéiert Ultimate Multisite Hooks. Sunrise-Code leeft ganz fréi a soll kleng, defensiv an ouni Ofhängegkeete bleiwen.
 
-## Dateibenennungs-Konventioun
+## Dateibenennungs-Konventioun {#file-naming-convention}
 
 Erstell eng PHP-Datei mam Numm `sunrise.php` an engem Add-on-Verzeechnes, deem säin Numm mat `ultimate-multisite-` ufänkt:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Passend Dateie ginn an alphabetescher Reiefolleg nom Add-on-Pad gelueden.
 
-## Wou d'Datei ze placéieren
+## Wou d'Datei ze placéieren {#where-to-place-the-file}
 
 Placéier d'Datei am Stammverzeechnes vum Add-on, deen d'sunrise-Verhalen besëtzt:
 
@@ -45,7 +45,7 @@ D'Sich gëtt relativ zu `WP_CONTENT_DIR` opgeléist, net zum aktuelle Wäert vu 
 
 Änner déi generéiert `wp-content/sunrise.php`-Datei net direkt. De Loader erlaabt personaliséiertem Code, d'sunrise-Verhalen z'erweideren, ouni d'Kär-sunrise-Datei ze forken, déi Ultimate Multisite installéiert an aktualiséiert.
 
-## Verfügbar Hooks a Filteren
+## Verfügbar Hooks a Filteren {#hooks-and-filters-available}
 
 Addon-sunrise-Dateie lafen nodeems d'Domain-Mapping vun Ultimate Multisite geluede gouf an éier WordPress `ms_loaded` ausléist. Zu dësem Zäitpunkt kann eng sunrise-Datei:
 
@@ -58,7 +58,7 @@ Ultimate Multisite léist `wu_sunrise_loaded` aus, nodeems säi sunrise-Loader f
 
 Ruff nëmme Funktiounen op, déi an der sunrise-Phas scho geluede sinn. Vermeid datebank-intensiv Aarbecht, Template-Rendering, HTTP-Ufroen a Code, deen dovun ausgeet, datt déi normal Plugin-Luedereiefolleg ofgeschloss ass.
 
-## Minimal Beispill
+## Minimal Beispill {#minimal-example}
 
 ```php
 <?php

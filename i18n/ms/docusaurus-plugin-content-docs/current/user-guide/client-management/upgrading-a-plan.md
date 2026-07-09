@@ -3,7 +3,7 @@ title: Menaik Taraf Pelan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Menaik Taraf Pelan (v2)
+# Menaik Taraf Pelan (v2) {#upgrading-a-plan-v2}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
@@ -41,7 +41,7 @@ Selepas checkout selesai, produk baharu akan ditambahkan ke account pelanggan an
 
 ##
 
-## Laluan Naik Taraf dan Turun Taraf
+## Laluan Naik Taraf dan Turun Taraf {#upgrade-and-downgrade-paths}
 
 Pada setiap produk anda, anda akan mempunyai tab **Up & Downgrades**. Pilihan pertama pada tab itu ialah medan yang dipanggil **Plan Group**.
 

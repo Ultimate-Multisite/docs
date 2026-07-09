@@ -3,9 +3,9 @@ title: Changelog ng Mailster
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Talaan ng Pagbabago ng Mailster
+# Talaan ng Pagbabago ng Mailster {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * Unang paglabas (Initial release)
 * Awtomatikong pag-sync ng subscriber pag nag-sign up o nagbayad
 * Pag-assign ng list na specific sa bawat produkto

@@ -3,13 +3,13 @@ title: Štiri za spletne strani
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site šabloni (v2)
+# Site šabloni (v2) {#site-templates-v2}
 
 _**OPOMENKA: Ta članek se nanaša na Ultimate Multisite verzijo 2.x. Če uporabljate verzijo 1.x,**_ **pogledajte ta članek.**_
 
 Naš cilj pri ustvarjanju premium mreže z Ultimate Multisite je automatizirati čim več procesov, hkrati pa ponuditi našim strankam fleksibilnost in različne možnosti za izbiro ob ustvarjanju njihovih spletnih strani. En način doseganja tega uravnoteženja je uporaba funkcije Site Templates v Ultimate Multisite.
 
-## Kaj je Site Template?
+## Kaj je Site Template? {#what-is-a-site-template}
 
 Kot kaže ime, Site Template je osnovna stran (boilerplate site), ki lahko služi kot podlaga pri ustvarjanju novih strani v vašoj mreži.
 
@@ -17,7 +17,7 @@ To pomeni, da lahko ustvarite osnovno stran, aktivirate različne pluginove, pos
 
 To zvuči super, vendar kako ustvariti novo site template? Je to čim bolj preprosto kot je mogoče.
 
-## Ustvarjanje in ureditev nove Site Template
+## Ustvarjanje in ureditev nove Site Template {#creating-and-editing-a-new-site-template}
 Site Templates so le običajne strani na vaši mreži. Novo šablon ustvarite lahko preprosto idete do **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
 **![Gumb za dodaj stran v seznamu strani](/img/config/site-templates-list.png)**
@@ -34,7 +34,7 @@ Na dnu oblika boste videli preklopnik **Copy Site** (Kopiraj stran). Ta vam omog
 
 ![Modal za dodajanje šablona z preklopnikom kopiranja strani](/img/config/site-templates-list.png)
 
-### Uporaba vsebine Šablona Stranje
+### Uporaba vsebine Šablona Stranje {#customizing-the-contents-of-a-site-template}
 
 Da bi prilagodili svoj šablon stran, le navigirajte do njegove dashboard panel in vnesite spremembe, ki jih potrebujete. Lahko ustvarjate nove objave, strani, aktivirate pluginove in spremenite aktivno temo. Lahko čakate tudi na Customizerju in spremenite vse vrste opcija za prilagoditev.
 
@@ -42,11 +42,11 @@ Da bi prilagodili svoj šablon stran, le navigirajte do njegove dashboard panel 
 
 Vsota ta podatkovna podlaga bo prenesena, ko kupec ustvari novo stran na podlagi tega Šablona Stranje.
 
-### Napredne možnosti
+### Napredne možnosti {#advanced-options}
 
 Če imate nekaj znanja o prilagajanju koda, lahko uporabite naš Search and Replace API za avtomatizirano nadomestitev informacij na novem spletnem mestu po njegovem ustvarjanju. To je koristno za stvari kot so nadomestitev imen podjetja na strani "O nas", nadomestitev e-pošte za stik na strani za stike in tako naprej.
 
-### Uporaba Šablonov Stranj
+### Uporaba Šablonov Stranj {#using-site-templates}
 Dobro, ste ustvarili veliko različnih Šablonov Stranj z različnimi dizajni, temami in nastavitvami. Kako jih lahko zdaj naredite uporabne v svoji mreži?
 
 Osnovno je, da lahko zdaj uporabite dve pristopu (ne hkrati):
@@ -57,7 +57,7 @@ Osnovno je, da lahko zdaj uporabite dve pristopu (ne hkrati):
 
   * Dajte svojim strankam možnost sami izbrati šablone strani med registracijo.
 
-#### Mode 1: Načrtovanje Šablona Stranje
+#### Mode 1: Načrtovanje Šablona Stranje {#mode-1-assign-site-template}
 
 V tem načinu ne bodo vaši klienci mogli izbrati šablon pri kreiranju računa, ampak vi boste sami določili kateri šablon naj se uporabi na vsakem od vaših Planov.
 
@@ -69,14 +69,14 @@ To vas bo peljalo do strani **Edit Product**. Pod razdelkom **Product Options** 
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Način 2: Izberite na voljo šablon
+#### Način 2: Izberite na voljo šablon {#mode-2-choose-available-site-template}
 V tem načinu boste kliencem dali možnost izbire med procesom registracije. Bodo lahko izbirali med različnimi šabloni za spletne strani, ki jih določite pod nastavitvami produkta. Imate možnost omejiti šablone, iz katerih lahko izbrete, pod izbranim produktom. To vam omogoča, da imate različne skupine šablonov za vsako produkt, kar je idealno za poudarjanje različnih funkcij in lastnosti pri bolj cenjenih izdelkih.
 
 Na strani **Uredbe izdelka**. Pod razdelkom **Product Options** najdete tabu **Site template** in izberite možnost **Choose Available Site Template** iz spiska. To vam bo prikazal seznam na voljo templatov in boste lahko izbrali templat, ki želite biti na voljo. Lahko to storite tako, da izberete njegovo vedenje: **Available** (Na voljo), če želite, da je templat v seznamu. _**Not Available**_ (Ne na voljo), če ne želite, da se templat prikazuje kot možnost. In **Pre-selected** (Predizbran), če želite, da je ena iz templatov na seznamu predizbrana kot zadnja.
 
 ![Izberite na voljo templete z opcijami vedenja](/img/config/product-site-templates.png)
 
-### Predvoljni način: Izbira templatov na strani za plačilo (Checkout form)
+### Predvoljni način: Izbira templatov na strani za plačilo (Checkout form) {#default-mode-site-template-selection-on-the-checkout-form}
 
 Če želite, da so vsi vaši templatovi na voljo med registracijo ali morda ne želite dodatnega dela pri dodelovanju ali določanju templatov pod vsako izdelek, lahko preprosto nastavite izbiro templatov pod vašo **Checkout Form**. Za to gre do **Ultimate Multisite > Checkout Forms** in kliknite na **Edit** pod formo, ki jo želite konfigurirati.
 
@@ -90,29 +90,29 @@ Na spletni strani vidijo kupci izberovalec templatov med plačilom in lahko izbr
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opcje šablona za spletno stran
+### Opcje šablona za spletno stran {#site-template-options}
 
 Na voljo je še druga funkcije šablonov za spletne strani, ki jih lahko vklopite ali izklopite pod nastavitvami Ultimate Multisite.
 
 ![Opcje šablonov za spletne strani v nastavitvah Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Omogočite spremembo šablona
+#### Omogočite spremembo šablona {#allow-template-switching}
 
 Vklop te opcije omogoča vašim strankam, da lahko spremenijo šablon, ki ga izbirajo med procesom registracije, po ustvaritvi računa in spletne strani. To je koristno zanj perspektive stranke, ker jim omogoča ponovno izbiro šablona, če pozne odkrijeta, da je prvotna izbira ni bila najboljša za njihove specifične potrebe.
 
-#### Omogočite uporabnikom uporabo svoje strani kot šablonov
+#### Omogočite uporabnikom uporabo svoje strani kot šablonov {#allow-users-to-use-their-site-as-templates}
 
 Ker uporabniki podstrani splej (subsite) posvetijo čas gradnji in oblikovanja lastne strani, bodo morda želeli klonirati in uporabiti jo kot eno od na voljo šablonov pri ustvarjanju druge podstrane v vašeta omrežju. Ta opcija jim bo omogočila to.
 
-#### Kopiranje medijev pri duplikiranju šablona
+#### Kopiranje medijev pri duplikiranju šablona {#copy-media-on-template-duplication}
 
 Preverjanje te opcije bo kopiralo medije, ki so bili obdelani na šablonski strani, na novo ustvarjene strani. To lahko prenašanje nadomeščajo na vsakih načrtah (plans).
 
-#### **Preprečite iskanje motorjev za iskalni shablone za spletne strani**
+#### **Preprečite iskanje motorjev za iskalni shablone za spletne strani** {#prevent-search-engines-from-indexing-site-templates}
 
 Šabloni za spletne strani, kot je pogosto opisano v tej članku, so osnovna struktura (boilerplate), vendar pa so še vedno del vašega omrežja, kar pomeni, da jih iskanje motorjev lahko najde. Ta opcija vam bo omogočila skritanje šablona za spletne strani tako, da ga iskanje motorjev ne more iskal.
 
-## Prednapredno popunjavanje šablona za spletne strani z avtomatizirano iskanjem in nadomestitvijo
+## Prednapredno popunjavanje šablona za spletne strani z avtomatizirano iskanjem in nadomestitvijo {#pre-populating-site-templates-with-auto-search-and-replace}
 
 En ena najmo močnih funkcij Ultimate Multisite je možnost dodajanja proizvoljnega besedila, barv in polja na registracijski obrazec. Ko imamo te podatke zbrani, lahko uporabimo jih za predpopolnjenje vsebine v določenih delih izbran šablonske teme. Nato, ko se nov spletni dom dodaja, Ultimate Multisite bo nadomestil mestne zamenske (placeholders) z dejanskimi informacijami, ki so vnosjene med registracijo.
 
@@ -132,7 +132,7 @@ Ultimate Multisite bo nato mestne zamenske nadomestil z pododatki, ki jih je pri
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Reševanje problema "šablona polna mestnih zamensk"
+### Reševanje problema "šablona polna mestnih zamensk" {#solving-the-template-full-of-placeholders-problem}
 
 Vse to je super, vendar imamo neugodo: našim šablonim stranem - ki jih lahko obiščejo naši kupci - so popolnoma polni mestne zamenske, ki ne povejo veliko.
 

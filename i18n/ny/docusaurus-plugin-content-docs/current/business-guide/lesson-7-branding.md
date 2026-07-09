@@ -3,15 +3,15 @@ title: 'Phunziro 7: Kuchipanga Kukhala Chanu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Phunziro 7: Kupangitsa Kukhala Kwanu
+# Phunziro 7: Kupangitsa Kukhala Kwanu {#lesson-7-making-it-yours}
 
 Makasitomala anu asamamve ngati akugwiritsa ntchito "plugin inayake ya WordPress." Ayenera kumva ngati akugwiritsa ntchito FitSite -- pulatifomu yomangidwa kwa makampani awo. Phunziroli limafotokoza za branding, white-labeling, ndi kupangitsa pulatifomu kumveka ngati chinthu chathunthu.
 
-## Kumene Tinathera
+## Kumene Tinathera {#where-we-left-off}
 
 FitSite ili ndi njira ya checkout yomwe ikugwira ntchito, yomwe imatenga eni ma studio a fitness kuchokera posankha plan mpaka ku site yamoyo. Tsopano tikupangitsa chidziwitso chonse kumveka ngati chinthu chimodzi chogwirizana, chokhala ndi brand.
 
-## Domain ya Pulatifomu Yanu
+## Domain ya Pulatifomu Yanu {#your-platform-domain}
 
 Maziko a brand yanu ndi domain yanu. Kwa FitSite:
 
@@ -19,7 +19,7 @@ Maziko a brand yanu ndi domain yanu. Kwa FitSite:
 - **Ma site a makasitomala**: `studioname.fitsite.com` (ma subdomain)
 - **Ma domain apadera**: Makasitomala pa ma plan a Growth ndi Pro angathe kulumikiza domain yawo
 
-### Kukhazikitsa Domain Yanu
+### Kukhazikitsa Domain Yanu {#setting-up-your-domain}
 
 1. Lembetsani domain ya pulatifomu yanu
 2. Ilozetseni kwa hosting provider wanu
@@ -28,11 +28,11 @@ Maziko a brand yanu ndi domain yanu. Kwa FitSite:
 
 Onani [Momwe Mungakonzere Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) kuti mupeze malangizo atsatanetsatane.
 
-## White-Labeling Chidziwitso cha Admin
+## White-Labeling Chidziwitso cha Admin {#white-labeling-the-admin-experience}
 
 Mwini studio ya fitness akalowa mu dashboard ya site yawo, ayenera kuona brand yanu, osati WordPress kapena branding ya Ultimate Multisite.
 
-### Tsamba la Login Lapadera
+### Tsamba la Login Lapadera {#custom-login-page}
 
 Sinthani tsamba la login la WordPress kuti liwonetse:
 
@@ -40,7 +40,7 @@ Sinthani tsamba la login la WordPress kuti liwonetse:
 - Zithunzi zakumbuyo zoyenerera fitness
 - Mitundu ya brand yanu
 
-### Branding ya Dashboard
+### Branding ya Dashboard {#dashboard-branding}
 
 Gwiritsani ntchito addon ya [Wopanga Tsamba la Admin](/addons/admin-page-creator) kapena CSS yapadera kuti:
 
@@ -48,7 +48,7 @@ Gwiritsani ntchito addon ya [Wopanga Tsamba la Admin](/addons/admin-page-creator
 - Sinthani dongosolo la mitundu ya admin kuti lifanane ndi brand yanu
 - Onjezani widget yapadera ya dashboard yokhala ndi ma link achangu okhudzana ndi fitness ndi zothandizira za thandizo
 
-### Masamba Apadera a Admin
+### Masamba Apadera a Admin {#custom-admin-pages}
 
 Ganizirani kupanga masamba apadera a admin omwe amaonetsa zochita zofunika kwambiri kwa eni ma studio a fitness:
 
@@ -58,11 +58,11 @@ Ganizirani kupanga masamba apadera a admin omwe amaonetsa zochita zofunika kwamb
 
 Izi zimachepetsa zovuta zophunzirira poika zochita zofunikira ku niche patsogolo ndi pakati m'malo mozibisa mu menyu yokhazikika ya WordPress.
 
-## Branding ya Mauthenga Anu
+## Branding ya Mauthenga Anu {#branding-your-communications}
 
 Imelo iliyonse, invoice iliyonse, ndi notification iliyonse ziyenera kulimbikitsa brand yanu.
 
-### Maimelo a System
+### Maimelo a System {#system-emails}
 
 Pitani ku **Ultimate Multisite > Settings > Emails** ndipo sinthani maimelo onse a system:
 
@@ -79,7 +79,7 @@ Maimelo ofunika kusintha:
 | Risiti ya malipiro | "Malipiro alandiridwa" | "Malipiro a subscription ya FitSite atsimikiziridwa" |
 | Trial ikutha | "Trial yanu ikutha posachedwa" | "Trial yanu ya FitSite imatha m'masiku 3 -- sungani webusayiti ya studio yanu ili live" |
 
-### Ma Invoice
+### Ma Invoice {#invoices}
 
 Sinthani ma template a invoice ndi:
 
@@ -87,7 +87,7 @@ Sinthani ma template a invoice ndi:
 - Tsatanetsatane wa bizinesi yanu
 - Mayina a zinthu okhudzana ndi fitness (osati ma ID a plan wamba)
 
-## Site Yomwe Makasitomala Amaiona
+## Site Yomwe Makasitomala Amaiona {#the-customer-facing-site}
 
 Domain yanu yayikulu (`fitsite.com`) imafunika site ya marketing yomwe imagulitsa pulatifomu. Izi ndi zosiyana ndi network admin ya Ultimate Multisite -- ndi nkhope yapagulu ya bizinesi yanu.
 
@@ -103,7 +103,7 @@ Masamba ofunika:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Custom Domain ya Makasitomala
+## Custom Domain ya Makasitomala {#custom-domain-for-customers}
 
 Kwa makasitomala omwe ali pa ma plan omwe akuphatikiza ma custom domain, lembani ndondomekoyi momveka bwino:
 
@@ -113,7 +113,7 @@ Kwa makasitomala omwe ali pa ma plan omwe akuphatikiza ma custom domain, lembani
 
 Pangani nkhani ya thandizo kapena cholemba cha knowledge base makamaka cha ndondomekoyi, cholembedwa kwa eni ma studio a fitness omwe si a technical.
 
-## Network ya FitSite Mpaka Pano
+## Network ya FitSite Mpaka Pano {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Zomwe Tamanga mu Phunziroli
+## Zomwe Tamanga mu Phunziroli {#what-we-built-this-lesson}
 
 - **Domain ya pulatifomu ndi DNS** zakonzedwa kuti zipereke chidziwitso chokhala ndi brand
 - **Admin ya white-labeled** yokhala ndi branding ya FitSite ponseponse

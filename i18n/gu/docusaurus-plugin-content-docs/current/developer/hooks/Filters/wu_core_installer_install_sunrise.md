@@ -4,21 +4,21 @@ title: ફિલ્ટર - wu_core_installer_install_sunrise
 sidebar_label: wu_core_installer_install_sunrise
 _i18n_hash: 9750f0fbfe9f02249e4e1d17e585bdb6
 ---
-# Filter: wu_core_installer_install_sunrise
+# Filter: wu_core_installer_install_sunrise {#filter-wucoreinstallerinstallsunrise}
 
 હોસ્ટ પ્રોવાઇડર્સને કન્સ્ટન્ટને અલગ રીતે ઇન્સ્ટોલ કરવાની મંજૂરી આપે છે.
 
 જો તમે `true` પરત કરો છો, તો તે Ultimate Multisite ને `wp-config` ફાઇલમાં લખવાનો પ્રયાસ કરવાથી અટકાવશે.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $short_circuit | `bool` | |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/installers/class-core-installer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/installers/class-core-installer.php#L148) at line 148

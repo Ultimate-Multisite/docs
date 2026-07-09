@@ -3,9 +3,9 @@ title: Notas de la versión
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Notas de la versión
+# Notas de la versión {#release-notes}
 
-## Versión 2.13.0 — Publicada el 2026-06-05
+## Versión 2.13.0 — Publicada el 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nuevo: Se añadió compatibilidad con tenants soberanos para flujos de cuenta de cliente, checkout, facturación, sitio, factura, cambio de plantilla y mapeo de dominios, de modo que las redes de tenants puedan dirigir a los clientes de vuelta al sitio principal para acciones gestionadas.
 - Nuevo: Se añadieron comprobaciones de credenciales de renovación para membresías recurrentes, de modo que las pasarelas puedan desactivar la renovación automática cuando falte un acuerdo de facturación guardado, una suscripción o un token de bóveda.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corrección: Las renovaciones de membresía, la visualización de caducidad y los casos límite de cobro de pagos ahora evitan caducidades inmediatas, fallos o pagos obligatorios omitidos.
 - Mejorado: La compatibilidad con WordPress se prueba hasta la versión 7.0, los recursos de Vue de producción se reconstruyen desde fuentes npm, y la cobertura end-to-end de Cypress ahora ejercita más flujos de checkout, configuración, SSO y pasarela.
 
-## Versión 2.12.0 — Publicada el 2026-05-15
+## Versión 2.12.0 — Publicada el 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nuevo: Se añadió Hostinger (hPanel) como proveedor de host compatible con integración de mapeo de dominios
 - Nuevo: El Exportador de sitios ahora gestiona paquetes de importación de red para una restauración de sitios en toda la red más simplificada
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corrección: La CLI del Exportador de sitios ahora conserva la selección correcta del sitio de red predeterminado
 - Mejorado: Se eliminó wp-cli incluido del paquete del plugin, reduciendo el tamaño del plugin
 
-## Versión 2.11.0 — Publicada el 2026-05-11
+## Versión 2.11.0 — Publicada el 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nuevo: Las exportaciones de sitios ahora incluyen un `index.php` de arranque automático para que el ZIP pueda instalarse en un host nuevo sin una instalación separada del plugin.
 - Nuevo: La exportación de red permite a los administradores exportar todos los subsitios en un único archivo desde la página de administración de Exportación de sitios.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nuevo: El editor de formularios de checkout advierte cuando se añade un producto sin un campo obligatorio configurado.
 - Nuevo: La pestaña de ajustes de Importación/Exportación ahora describe claramente su alcance y enlaza directamente con la herramienta de Exportación de sitios.
 
-## Versión 2.10.0 — Publicada el 2026-05-05
+## Versión 2.10.0 — Publicada el 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nuevo: Asistente de configuración guiada de PayPal para la introducción manual de credenciales con puerta de indicador OAuth para una configuración fluida de la pasarela.
 - Nuevo: Panel de cliente para cambio de plantilla rediseñado con tarjeta de plantilla actual, cuadrícula persistente y botón **Restablecer plantilla actual**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corrección: La ruta SSO filtrada se respeta en todos los flujos de inicio de sesión.
 - Corrección: Las opciones de identidad de sitio en blanco se conservan al guardar.
 
-## Versión 2.9.0 — Publicada el 2026-04-30
+## Versión 2.9.0 — Publicada el 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nuevo: Exportación e importación de sitio único añadidas en **Herramientas > Exportar e importar**.
 - Corrección: Los archivos ZIP de exportación ahora se sirven a través de un endpoint de descarga autenticado.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Corrección: Los ID de recorrido se normalizan a guiones bajos en las claves de ajustes de usuario.
 - Mejorado: Ahora se usa ZipArchive en lugar de Alchemy/Zippy para una mejor compatibilidad.
 
-## Versión 2.8.0 — Publicada el 2026-04-29
+## Versión 2.8.0 — Publicada el 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nuevo: Se añadió el interruptor Activar Jumper a la interfaz de ajustes de Otras opciones.
 - Nuevo: Se añadió la columna de estado a la tabla de lista de formularios de pago.

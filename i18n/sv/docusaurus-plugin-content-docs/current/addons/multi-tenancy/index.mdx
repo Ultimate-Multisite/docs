@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Distribuera underwebbplatser över servrar och databaser för prestanda och säkerhet
 
-## Höjdpunkter i Version 1.2.0
+## Höjdpunkter i Version 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 lägger till den suveräna klientgrunden för isoleringsarbetsflöden i produktion:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 lägger till den suveräna klientgrunden för isoleringsarbe
 
 Se användarguiderna för [arbetsflöde för suverän migrering](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy-isolering](/user-guide/configuration/multi-tenancy-isolation) och [åtgärder för suveräna klienter](/user-guide/administration/sovereign-tenant-operations).
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller högre
 - PHP 7.4 eller högre
 - Multisite Ultimate-tillägg (aktivt)
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp tilläggsfilerna till din `/wp-content/plugins/`-katalog
 2. Aktivera tillägget via menyn 'Tillägg' i WordPress
 3. Konfigurera tilläggsinställningarna i nätverksadministrationen
 
-## Utveckling
+## Utveckling {#development}
 
-### Konfiguration
+### Konfiguration {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektstruktur
+### Projektstruktur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regler för kodmodernisering
 ```
 
-### Testning
+### Testning {#testing}
 
 Tillägget inkluderar ett omfattande testramverk:
 
@@ -93,54 +93,54 @@ Tillägget inkluderar ett omfattande testramverk:
 - **Testtäckning**: Konfigurerad för att spåra kodtäckning
 - **Multisite-testning**: Tester körs i multisite-miljö
 
-### Kodstandarder
+### Kodstandarder {#code-standards}
 
 - **WordPress Coding Standards**: Upprätthålls via PHPCS
 - **PHP 7.4+-kompatibilitet**: Moderna PHP-funktioner stöds
 - **Statisk analys**: PHPStan-integration för typkontroll
 - **Kodmodernisering**: Rector-regler för PHP-uppgraderingar
 
-### Byggsystem
+### Byggsystem {#build-system}
 
 - **Bearbetning av tillgångar**: Minifiering för CSS/JS-filer
 - **Översättning**: Generering av POT-fil
 - **Paketering**: Skapande av arkiv för distribution
 - **Utvecklingsläge**: Ominifierade tillgångar för felsökning
 
-## Konfiguration
+## Konfiguration {#configuration}
 
 Tillägget stöder olika konfigurationsalternativ som är åtkomliga via nätverksadministrationsgränssnittet.
 
-### Konfiguration av suverän klient
+### Konfiguration av suverän klient {#sovereign-tenant-configuration}
 
 För suveräna klienter, konfigurera klientdatabasen, filsystemets rot, databasvärdsbindning och värdkapacitet innan trafik dirigeras till klienten. Kör migreringsverifiering efter varje ändring som påverkar databasuppgifter, värdbindning, dirigering eller användarprovisionering.
 
 Använd `localhost` endast när klientens körningsmiljö och databasbehörigheter förväntar sig lokal socket eller åtkomst på samma maskin. Använd `127.0.0.1` eller ett tjänstvärdnamn när det är behörighetsvärden som konfigurerats av din leverantör.
 
-### Hostinger-kapacitet
+### Hostinger-kapacitet {#hostinger-capability}
 
 Hostinger multi-tenancy-kapaciteten fungerar med den delade Hostinger-integrationstokenen. Bekräfta att domänen finns i hPanel, att DNS pekar till Hostinger-kontot och att klientens databasinställningar matchar hPanel före verifiering.
 
-## Hooks och filter
+## Hooks och filter {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Utlöses efter initiering av tillägget
 - `ultimate-multisite-addon-template_loaded` - Utlöses efter att alla tilläggsfiler har laddats
 
-### Filter
+### Filter {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ändra tilläggsinställningar
 - `ultimate-multisite-addon-template_enabled` - Åsidosätt aktivera/inaktivera-status för tillägget
 
-## Licens
+## Licens {#license}
 
 Detta tillägg är licensierat under GPL v3 eller senare.
 
-## Support
+## Support {#support}
 
 För support och dokumentation, besök [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ändringslogg
+## Ändringslogg {#changelog}
 
 - Version 1.2.0 (2026-06-03): lägg till tillståndslös automatisk inloggning för klienter, Hostinger multi-tenancy-kapacitet, databas- och filsystemsisolering per underwebbplats, verifieringsgrindar för suverän migrering, förbättringar av klientbootstrap/databasskrivare, konfigurerbar MySQL-värdsbindning och säkrare suverän nedmontering.
 

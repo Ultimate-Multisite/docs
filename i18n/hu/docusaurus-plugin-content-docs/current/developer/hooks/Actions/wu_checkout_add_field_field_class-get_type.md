@@ -4,19 +4,19 @@ title: 'Akció - wu_checkout_add_field_{$field_class->get_type()}'
 sidebar_label: 'wu_checkout_add_field_{$field_class->get_type()}'
 _i18n_hash: 2cac4ddcc6228d9da73b73f6a58f3d2a
 ---
-# Action: wu_checkout_add_field_\{$field_class->get_type()\}
+# Action: wu_checkout_add_field_\{$field_class->get_type()\} {#action-wucheckoutaddfieldfieldclass-gettype}
 
 Elkészülése előtt fut egy mező hozzáadása a fizetési űrlaphoz.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
 | $field_array | `array` | Az elhelyezendő mező. |
 
-### Desde
+### Desde {#since}
 
 - 2.1.1
-### Forrás
+### Forrás {#source}
 
 Meghatározva a [`inc/functions/checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/checkout.php#L134) fájlban, 134-sorban.

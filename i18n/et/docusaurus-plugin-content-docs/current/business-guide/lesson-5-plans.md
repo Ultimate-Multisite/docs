@@ -3,15 +3,15 @@ title: 'Õppetund 5: oma plaanide kujundamine'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Õppetund 5: oma plaanide kujundamine
+# Õppetund 5: oma plaanide kujundamine {#lesson-5-designing-your-plans}
 
 Sinu plaanitasemed ei ole lihtsalt hinnatasemed -- need peegeldavad seda, kuidas sinu nišikliendid tegelikult tegutsevad. Selles õppetunnis kujundad tootetasemed, mis vastavad eri arenguetappides olevate fitness-ettevõtete tegelikele vajadustele.
 
-## Kus me pooleli jäime
+## Kus me pooleli jäime {#where-we-left-off}
 
 FitSite’il on valmis kolm malli (Studio Essential, Gym Pro, Fitness Chain). Nüüd loome plaanid, mis määravad, millele kliendid ligipääsu saavad ja mille eest nad maksavad.
 
-## Kliendisegmentides mõtlemine
+## Kliendisegmentides mõtlemine {#thinking-in-customer-segments}
 
 Viga, mida enamik inimesi teeb, on plaanide kujundamine tehniliste funktsioonide ümber (salvestusruum, ribalaius, lehtede arv). Sinu nišikliendid ei mõtle nendes terminites. Jõusaali omanik mõtleb sellele, mida tal on vaja oma ettevõtte juhtimiseks.
 
@@ -25,11 +25,11 @@ Fitness-stuudiote puhul on olemas kolm loomulikku segmenti:
 
 Sinu plaanid peaksid vastama neile segmentidele, mitte suvalistele funktsioonipakettidele.
 
-## FitSite’i plaanide loomine
+## FitSite’i plaanide loomine {#creating-the-fitsite-plans}
 
 Liigu jaotisse **Ultimate Multisite > Tooted > Lisa toode** iga plaani jaoks.
 
-### Plaan 1: FitSite Starter -- $49/kuus
+### Plaan 1: FitSite Starter -- $49/kuus {#plan-1-fitsite-starter----49month}
 
 **Sihtgrupp**: üksiktreenerid ja väikesed stuudiod
 
@@ -59,7 +59,7 @@ Liigu jaotisse **Ultimate Multisite > Tooted > Lisa toode** iga plaani jaoks.
 - Sinu valitud teema: aktiveeri kohustuslikult
 - Kõik muud teemad: peidetud
 
-### Plaan 2: FitSite Growth -- $99/kuus
+### Plaan 2: FitSite Growth -- $99/kuus {#plan-2-fitsite-growth----99month}
 
 **Sihtgrupp**: väljakujunenud ühe asukohaga jõusaalid
 
@@ -85,7 +85,7 @@ Liigu jaotisse **Ultimate Multisite > Tooted > Lisa toode** iga plaani jaoks.
 - Plaanigrupp: FitSite Plans
 - Toote järjestus: 2
 
-### Plaan 3: FitSite Pro -- $199/kuus
+### Plaan 3: FitSite Pro -- $199/kuus {#plan-3-fitsite-pro----199month}
 
 **Sihtgrupp**: mitme asukohaga fitness-ketid
 
@@ -109,7 +109,7 @@ Liigu jaotisse **Ultimate Multisite > Tooted > Lisa toode** iga plaani jaoks.
 - Plaanigrupp: FitSite Plans
 - Toote järjestus: 3
 
-## Plaanigrupi seadistamine
+## Plaanigrupi seadistamine {#setting-up-the-plan-group}
 
 Plaanigrupp tagab, et kliendid saavad uuendada või madalamale plaanile liikuda ainult FitSite’i plaaniperekonna sees. Iga plaani vahekaardil **Üles- ja allavahetused**:
 
@@ -118,7 +118,7 @@ Plaanigrupp tagab, et kliendid saavad uuendada või madalamale plaanile liikuda 
 
 See loob selge uuendustee: Starter → Growth → Pro.
 
-## Tellimuse lisapakkumiste lisamine
+## Tellimuse lisapakkumiste lisamine {#adding-order-bumps}
 
 Tellimuse lisapakkumised on lisatooted, mida pakutakse ostu vormistamise ajal. FitSite’i puhul kaalu järgmisi:
 
@@ -128,7 +128,7 @@ Tellimuse lisapakkumised on lisatooted, mida pakutakse ostu vormistamise ajal. F
 
 Loo need Ultimate Multisite’is **paketi** tüüpi toodetena ja seo need asjakohaste plaanidega.
 
-## Miks see struktuur toimib
+## Miks see struktuur toimib {#why-this-structure-works}
 
 - **Starter** eemaldab sisenemistõkked -- madal hind, lihtne pakkumine, aitab treenerid kiiresti veebi
 - **Growth** lisab funktsioonid, mida jõusaalid tegelikult küsivad -- broneerimine, galeriid, kohandatud domeenid
@@ -136,7 +136,7 @@ Loo need Ultimate Multisite’is **paketi** tüüpi toodetena ja seo need asjako
 - **Tellimuse lisapakkumised** võimaldavad klientidel kohandada ilma põhiplaane keerulisemaks muutmata
 - **Selge uuendustee** tähendab, et kliendid kasvavad koos sinuga, selle asemel et lahkuda
 
-## FitSite’i võrgustik seni
+## FitSite’i võrgustik seni {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Mida me selles õppetunnis ehitasime
+## Mida me selles õppetunnis ehitasime {#what-we-built-this-lesson}
 
 - **Kolm plaanitaset**, mis on seotud tegelike fitness-ettevõtete segmentidega
 - **Funktsioonidele ligipääsu piiramine**, kasutades Ultimate Multisite’i lisamoodulite ja mallide juhtimist

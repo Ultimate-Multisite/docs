@@ -3,13 +3,13 @@ title: Nedskráning staðar
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Nedskráning staðans (v2)
+# Nedskráning staðans (v2) {#downgrading-a-plan-v2}
 
 _**VIÐVÖGUN: Þessi grein er tengd Ultimate Multisite v2.x.**_
 
 Nedskráning staðans eða skýrslu er almenn aðgerð sem það getur sést fyrir viðskiptavili þar sem þeir hafa lítið fjármagn eða ákveðið að þeir ekki þurfa mikið að rauna subsite.
 
-## Hvernig nedskrána staðann
+## Hvernig nedskrána staðann {#how-to-downgrade-a-plan}
 Viðskiptavinir geta nedskráningu staðans nýtt anytime með því að logga inn í administrasjónuna fyrir subsite sitt og klikka á **Change** (Breyta) undir sínum reikningurshlutina.
 
 ![Sérstakleiki reikningurshlutans viðskiptavina og Breyta-knapp](/img/account-page/membership-change-button.png)
@@ -24,7 +24,7 @@ Til að halda fram þarf notandinn bara að klikka á **Complete Checkout** (Ful
 
 ![Reikningurshluti sem sýnir undirskráningu með undirskráningu](/img/account-page/pending-change.png)
 
-### Hvað gerist þegar notandi nedskráir staðann sitt
+### Hvað gerist þegar notandi nedskráir staðann sitt {#what-happens-when-a-user-downgrades-their-plan}
 Það er mikilvægt að merka, að nedskráning staðans sjálfa ekki breytur núverandi uppsetningu í subsite sín.
 
 Það breytur ekki sjálf skýrslunna þar sem breyting á skýrslunni getur hefði fullkomlega sýnt og nullstilt subsite-inn. Þetta er til að fórna ónefndri gögnum. Því eru diskaspa, themes, plugins osaförð, nema postar.
@@ -35,7 +35,7 @@ Fyrir fréttagrunninn sem er yfir takmarkunni sem planið setur, hefurðu þú 3
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Hvað gerist með betalningu
+### Hvað gerist með betalningu {#what-happens-to-the-payment}
 
 Í útgáfu 2.0 þarf ekki lengur nokkrar breytingar á betalningu varðandi proration (eins og að reikna út eftir notkun).
 

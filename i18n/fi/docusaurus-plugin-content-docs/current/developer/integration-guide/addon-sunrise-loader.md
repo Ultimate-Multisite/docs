@@ -3,17 +3,17 @@ title: Lisäosan Sunrise-tiedoston lataaja
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Lisäosan Sunrise-tiedoston lataaja
+# Lisäosan Sunrise-tiedoston lataaja {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 lisää sunrise-laajennuslataajan lisäosille ja mukautetuille MU-plugin-integraatioille, joiden täytyy suorittua WordPressin sunrise-käynnistyksen aikana muokkaamatta luotua `wp-content/sunrise.php`-tiedostoa.
 
-## Milloin sitä käytetään
+## Milloin sitä käytetään {#when-to-use-it}
 
 Käytä sunrise-laajennusta, kun integraatiosi täytyy suorittua ennen tavallisten pluginien lataamista, kuten mukautetussa verkkotunnusten reitityksessä, isäntäkohtaisessa pyyntöjen käsittelyssä tai varhaisissa verkon käynnistyksen säädöissä.
 
 Tavallisissa integraatioissa suosi tavallisia WordPress-plugineja, MU-plugineja ja dokumentoituja Ultimate Multisite -koukkuja. Sunrise-koodi suoritetaan hyvin aikaisin, ja sen tulee pysyä pienenä, varovaisena ja riippuvuuksista vapaana.
 
-## Tiedoston nimeämiskäytäntö
+## Tiedoston nimeämiskäytäntö {#file-naming-convention}
 
 Luo PHP-tiedosto nimeltä `sunrise.php` lisäosahakemistoon, jonka nimi alkaa muodolla `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Vastaavat tiedostot ladataan aakkosjärjestyksessä lisäosan polun mukaan.
 
-## Mihin tiedosto sijoitetaan
+## Mihin tiedosto sijoitetaan {#where-to-place-the-file}
 
 Sijoita tiedosto sen lisäosan juurihakemistoon, joka omistaa sunrise-toiminnan:
 
@@ -45,7 +45,7 @@ Haku ratkaistaan suhteessa `WP_CONTENT_DIR`-arvoon, ei `WP_PLUGIN_DIR`-arvon nyk
 
 Älä muokkaa luotua `wp-content/sunrise.php`-tiedostoa suoraan. Lataaja antaa mukautetun koodin laajentaa sunrise-toimintaa ilman, että haaroitetaan Ultimate Multisite -asentamaa ja päivittämää ytimen sunrise-tiedostoa.
 
-## Käytettävissä olevat koukut ja suodattimet
+## Käytettävissä olevat koukut ja suodattimet {#hooks-and-filters-available}
 
 Lisäosan sunrise-tiedostot suoritetaan sen jälkeen, kun Ultimate Multisite -verkkotunnusmääritys on latautunut, ja ennen kuin WordPress suorittaa `ms_loaded`-toiminnon. Tässä vaiheessa sunrise-tiedosto voi:
 
@@ -58,7 +58,7 @@ Ultimate Multisite suorittaa `wu_sunrise_loaded`-toiminnon sen jälkeen, kun sen
 
 Kutsu vain funktioita, jotka on jo ladattu sunrise-vaiheessa. Vältä tietokantaraskasta työtä, mallien renderöintiä, HTTP-pyyntöjä ja koodia, joka olettaa tavallisen pluginien latausjärjestyksen valmistuneen.
 
-## Minimaalinen esimerkki
+## Minimaalinen esimerkki {#minimal-example}
 
 ```php
 <?php

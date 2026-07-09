@@ -4,13 +4,13 @@ title: Action - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Aksie: wp_ultimo_host_providers_load
+# Aksie: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
 
 Dit laat ontwikkelaars toe om hul eie honde-verskaffer-integrasies by te voeg via wp-plugins.
 
-### Sedert
+### Sedert {#since}
 
 - 2.0.0
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/managers/class-domain-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-domain-manager.php#L1107) op lyn 1107

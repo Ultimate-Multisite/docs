@@ -4,11 +4,11 @@ title: Chochita - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Imayamba nthawi yomweyo cookie yotsimikizira isanakhazikitsidwe.
 
-## Ma Parameter
+## Ma Parameter {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Imayamba nthawi yomweyo cookie yotsimikizira isanakhazikitsidwe.
 | $scheme | `string` | Dongosolo lotsimikizira. Mitengo imaphatikizapo 'auth' kapena 'secure_auth'. |
 | $token | `string` | Token ya session ya wogwiritsa ntchito yogwiritsidwa ntchito pa cookie iyi. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) pa mzere 124

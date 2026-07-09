@@ -3,13 +3,13 @@ title: Inyandiko y’impinduka z’amatike y’ubufasha
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Impinduka za Support Tickets
+# Impinduka za Support Tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Byanonosowe: Hakuwemo ububiko vendor/ muri Git tracking (busanzwe buri muri .gitignore), bigabanya ingano ya repository
 * Byanonosowe: Byageragejwe kugeza kuri WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Byakosowe: Kwemera indangagaciro null muri nullable ticket model setters
 * Byakosowe: Kubika amatike yose mu mbonerahamwe rusange zikwira network yose kugira ngo multisite ikorwe neza
 * Byakosowe: Guhisha staff fields no gukosora redirect y’urupapuro rwera kuri form ya customer new-ticket
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Byanonosowe: Gushyira frontend assets gusa kuri pages za support ticket bitewe n’uko bikenewe
 * Byanonosowe: Gusimbuka plugin autoloader igihe Bedrock root autoloader yamaze gushyiramo dependencies
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Byongeweho: Imikorere yuzuye yo kureba ticket kuri admin na frontend
 * Byongeweho: AJAX handler ku kohereza ibisubizo bya ticket
 * Byongeweho: Ubufasha bw’imikorere yo gusubiza ticket hamwe no gucunga form bikwiye
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Byanonosowe: Imiterere ya database hamwe na query na schema classes bikwiye ku bisubizo n’attachments
 * Byanonosowe: Kwimukira kuri properties nyazo aho gukoresha attributes kuri ticket models
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Byavuguruwe: Prefix yahinduwe ultimate-multisite kugira ngo habeho guhuzagurika
 * Byavuguruwe: Gushyira text domain ku murongo umwe
 * Byakosowe: Gukosora udukosa duto no kunonosora
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Isohora rya mbere
 * Sisitemu yuzuye yo gucunga tickets
 * Igenzura ry’uburenganzira rifite ibyiciro byinshi

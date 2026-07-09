@@ -3,13 +3,13 @@ title: Njoftim për heqjen e Modit të Ndërtuesit të Siti
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Njoftimi i Heqimit të Modeve të Ndërtimit të Siti
+# Njoftimi i Heqimit të Modeve të Ndërtimit të Siti {#site-builder-mode-removal-notice}
 
 **Mode Ndërtimi i Siti është hequr në Superdav AI Agent v1.12.0.** Nëse po përdornit mode Ndërtimi të Siti, duhet të migroni te **Setup Assistant agent** për krijimin e temave dhe konfigurimin e shitjes së faqes (site setup).
 
-## Çfarë ndodhi?
+## Çfarë ndodhi? {#what-happened}
 
-### Mode Ndërtimi i Siti (Legacy)
+### Mode Ndërtimi i Siti (Legacy) {#site-builder-mode-legacy}
 
 Mode Ndërtimi i Siti ishte një interfejs bazuar në wizard për:
 
@@ -18,7 +18,7 @@ Mode Ndërtimi i Siti ishte një interfejs bazuar në wizard për:
 - Zgjidhjen e një teme
 - Përcaktimin e përmbajtjes fillestare
 
-### Çfarë e zëvendësoi?
+### Çfarë e zëvendësoi? {#what-replaced-it}
 
 **Setup Assistant agent** tani menaxhon të gjitha funksionet e Mode Ndërtimit të Siti me:
 
@@ -27,15 +27,15 @@ Mode Ndërtimi i Siti ishte një interfejs bazuar në wizard për:
 - Integrim me onboarding (faqen e hyrjes) të Theme Builder
 - Memori e qëndrueshme `site_brief` për seancat e ardhshme
 
-## Nëse po përdornit Mode Ndërtimi i Siti
+## Nëse po përdornit Mode Ndërtimi i Siti {#if-you-were-using-site-builder-mode}
 
-### Sitet tuaja janë të sigurta
+### Sitet tuaja janë të sigurta {#your-sites-are-safe}
 
 - Sitët ekzistues krijuar me Mode Ndërtimi të Siti vazhdojnë të funksionojnë
 - Nuk ka humbje të të dhënave ose ndërprerje në faqe
 - Ju mund të vazhdoni menaxhimin e sitëve tuaja në mënyrë normale
 
-### Migroni te Setup Assistant agent
+### Migroni te Setup Assistant agent {#migrate-to-setup-assistant-agent}
 
 Për krijimin e një faqeje të re ose ndryshimeve të temës, përdorni Setup Assistant agent:
 
@@ -51,7 +51,7 @@ ose
 
 Setup Assistant agent ofron të njëjtat funksionalitete me më shumë fleksibilitet.
 
-## Krahasim: Site Builder vs. Setup Assistant
+## Krahasim: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Karakteristika | Site Builder (Hequr) | Setup Assistant (I Ri) |
 |---|---|---|
@@ -62,9 +62,9 @@ Setup Assistant agent ofron të njëjtat funksionalitete me më shumë fleksibil
 | Seancat e ardhshme | Konfigurim i përsëritur | Përdorimi i site_brief të ruajtur |
 | Fleksibiliteti | Proces fiksuar | Bisedë adaptuese |
 
-## Migrimi te Setup Assistant agent
+## Migrimi te Setup Assistant agent {#migrating-to-setup-assistant-agent}
 
-### Për Sitet e Reja
+### Për Sitet e Reja {#for-new-sites}
 
 Në vend që të përdorni modin e Site Builder:
 
@@ -76,7 +76,7 @@ Në vend që të përdorni modin e Site Builder:
    - Generimin e temës
    - Konfigurimin fillestar
 
-### Për Faqet Ekzistuese
+### Për Faqet Ekzistuese {#for-existing-sites}
 
 Nëse keni një faqe ekzistuese nga modifikimi i Site Builder:
 
@@ -85,7 +85,7 @@ Nëse keni një faqe ekzistuese nga modifikimi i Site Builder:
 3. Agjenti i Asistentit për Konfigurim do ju ndihmo të krijoni një temë të re
 4. Të dhënat e faqes suaj mbeten të ndryshme
 
-### Për Ndryshime në Temë
+### Për Ndryshime në Temë {#for-theme-changes}
 
 Në vend të zgjedhjes së temës nga modifikimi i Site Builder:
 
@@ -95,9 +95,9 @@ Në vend të zgjedhjes së temës nga modifikimi i Site Builder:
    - Gjeneroj një temë të personalizuar
    - E aktivizoj atë në faqe
 
-## Ndryshimet Kryesore
+## Ndryshimet Kryesore {#key-differences}
 
-### Modi i Site Builder
+### Modi i Site Builder {#site-builder-mode}
 
 ```
 1. Zgjidh një shabllon (template)
@@ -106,7 +106,7 @@ Në vend të zgjedhjes së temës nga modifikimi i Site Builder:
 4. Përfundim
 ```
 
-### Agjenti i Asistentit për Konfigurim (Setup Assistant Agent)
+### Agjenti i Asistentit për Konfigurim (Setup Assistant Agent) {#setup-assistant-agent}
 
 ```
 1. Përshkruani qëllimin e faqes suaj
@@ -117,40 +117,40 @@ Në vend të zgjedhjes së temës nga modifikimi i Site Builder:
 6. Përmbledhja e faqes ruhet për seancat e ardhshme
 ```
 
-## Përfitimet e Agjentit të Asistentit për Konfigurim (Setup Assistant Agent)
+## Përfitimet e Agjentit të Asistentit për Konfigurim (Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Më Fleksueshmëri
+### Më Fleksueshmëri {#more-flexible}
 
 - Përshkruani faquin tuaj në gjuhën natyrale
 - Merrni rekomandime të personalizuara
 - Adaptohuni nevojave tuaja specifike
 
-### Personalizim më i Mirë
+### Personalizim më i Mirë {#better-customization}
 
 - Gjenerimi i temës së personalizuar
 - Vendimet e sistemit dizajni (Design System)
 - Tokenet e qëndrueshme të dizajnit
 
-### Memoria Qëndruese
+### Memoria Qëndruese {#persistent-memory}
 
 - `site_brief` ju ruhet
 - Agjentët e ardhshëm kuptojnë faquin tuaj
 - Nuk keni nevojë të përsërisni informacionin e konfigurimit
 
-### Proces i Integruar
+### Proces i Integruar {#integrated-workflow}
 
 - Onboarding i Theme Builder
 - Aftësia e Estetikës së Sistemit Dizajni (Design System Aesthetics)
 - Aftësia për kontrollin e vizibilitetit (Visibility controls)
 - Të gjitha punojnë së bashku pa ndërprerje
 
-## Zgjidhja e Problemeve (Troubleshooting)
+## Zgjidhja e Problemeve (Troubleshooting) {#troubleshooting}
 
-### Nuk gjej modin e Site Builder
+### Nuk gjej modin e Site Builder {#i-cant-find-site-builder-mode}
 
 Modi i Site Builder është hequr. Përdorni në vend të tij agjentin e Asistentit për Konfigurim (Setup Assistant agent):
 
-### Unë dua të krijoj sërish një faqe nga Site Builder
+### Unë dua të krijoj sërish një faqe nga Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Mund ta bësh këtë me ndihmën e agentit Setup Assistant:
 
@@ -159,7 +159,7 @@ Mund ta bësh këtë me ndihmën e agentit Setup Assistant:
 3. Agent-i do të gjeneroj një temë të ngjashme
 4. `site_brief` i yt do ruhet për referencë në të ardhmen
 
-### Faqet e mia ekzistuese me Site Builder nuk funksionojnë
+### Faqet e mia ekzistuese me Site Builder nuk funksionojnë {#my-existing-site-builder-site-isnt-working}
 
 Faqet e krijuara më parë me mode Site Builder vazhdojnë të punojnë. Nëse po haset probleme:
 
@@ -168,7 +168,7 @@ Faqet e krijuara më parë me mode Site Builder vazhdojnë të punojnë. Nëse p
 3. Kontrollo logjet e gabimeve të WordPress
 4. Kontaktoni mbështetjen nëse problemet vazhdojnë
 
-### A mund t'i përdorim ende shabllonet e vjetra Site Builder?
+### A mund t'i përdorim ende shabllonet e vjetra Site Builder? {#can-i-still-use-my-old-site-builder-templates}
 
 Shabllonet e Site Builder nuk janë më të disponueshme. Megjithatë:
 
@@ -176,14 +176,14 @@ Shabllonet e Site Builder nuk janë më të disponueshme. Megjithatë:
 - Mund ta krijoni faqe të ngjashme me agentin Setup Assistant
 - Agent-i Setup Assistant ofron opsione më të shumta për personalizim
 
-## Hapat e Ardhshëm
+## Hapat e Ardhshëm {#next-steps}
 
 1. **Për faqe të reja**: Përdorni agentin Setup Assistant
 2. **Për faqe ekzistuese**: Vazhdoni të përdorni siç janë
 3. **Për ndryshime në temë**: Kërkoni ndihmë nga agenti Setup Assistant
 4. **Për përmirësim dizajni**: Përdorni aftësinë Design System Aesthetics
 
-## Tema të Lidhur
+## Tema të Lidhur {#related-topics}
 
 - **Onboarding i Theme Builder**: Vendosje e udhëhequr për tema personalizuara
 - **Setup Assistant Agent**: Vendosje e faqes me udhëzime nga agenti

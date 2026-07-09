@@ -4,11 +4,11 @@ title: '작업 - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_${this->tab}_widgets
+# Action: wu_dashboard_${this->tab}_widgets {#action-wudashboardthis-tabwidgets}
 
 플러그인 개발자가 네트워크 대시보드 패널에 위젯을 추가할 수 있도록 허용합니다.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: 375d02727169a29da6237374f0ad979a
 | $screen | `\WP_Screen` | 화면 객체입니다. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ultimate Multisite 관리자 페이지 인스턴스입니다. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 정의된 위치: [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) 라인 214에서

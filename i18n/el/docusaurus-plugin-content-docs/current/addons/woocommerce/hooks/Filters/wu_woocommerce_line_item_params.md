@@ -4,11 +4,11 @@ title: Φίλτρο - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params
+# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Αυτό το filter φιλτράρει τους παραμέτρους που χρησιμοποιούνται για τη δημιουργία των γραμμών στο WooCommerce Cart, πριν ο πελάτης ανακατευθυνθεί στο WooCommerce checkout.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Η εντολή (instance) της γραμμής στο Ultimate Multisite. |
 | $wc_product | `\WC_Product` | Το προϊόν του WooCommerce. |
 
-### Από
+### Από {#since}
 
 - 2.0.0
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) στην γραμμή 662
 
-## Επιστρέφει
+## Επιστρέφει {#returns}
 Οι τροποποιημένοι παράμετροι της γραμμής στο item.

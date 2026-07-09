@@ -3,7 +3,7 @@ title: Sites beheren
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Beheren van Sites
+# Beheren van Sites {#managing-sites}
 
 Sites (of subsites) zijn de kern van uw WaaS-bedrijf. Ultimate Multisite heeft 3 soorten sites:
 
@@ -11,13 +11,13 @@ Sites (of subsites) zijn de kern van uw WaaS-bedrijf. Ultimate Multisite heeft 3
 - **Site Templates** — Vooraf gedefinieerde sites die klanten kunnen selecteren als startpunt
 - **Main Site** — Uw primaire netwerk site
 
-## Sites bekijken
+## Sites bekijken {#viewing-sites}
 
 Navigeer naar **Ultimate Multisite → Sites** om alle subsites in uw netwerk te bekijken. Elke site is gelabeld op type en u kunt filteren op All Sites, Customer-Owned, Templates, of Pending.
 
 ![Site lijst pagina](/img/admin/sites-list.png)
 
-## Een nieuwe site toevoegen
+## Een nieuwe site toevoegen {#adding-a-new-site}
 
 Klik op de **Add Site** knop om een nieuwe site te maken. U moet het volgende opgeven:
 
@@ -27,15 +27,15 @@ Klik op de **Add Site** knop om een nieuwe site te maken. U moet het volgende op
 
 De optie **Copy Site** laat u een nieuwe site maken op basis van een bestaande site template. Wanneer ingeschakeld, kunt u kiezen welke template als startpunt gebruikt moet worden. Zorg ervoor dat **Copy Media on Duplication** is ingeschakeld om mediabestanden op te nemen.
 
-## Een bestaande site beheren
+## Een bestaande site beheren {#managing-an-existing-site}
 
 Klik op **Manage** op elke site om de **Edit Site** pagina te openen. Hier vindt u:
 
-### Basisinformatie
+### Basisinformatie {#basic-information}
 
 De site naam, type, site ID en beschrijving. U ziet ook het gemapte domein, de bijbehorende membership en het klantaccount dat de site bezit.
 
-### Siteopties
+### Siteopties {#site-options}
 
 Configureer de mogelijkheden en limieten van de site:
 
@@ -47,7 +47,7 @@ Configureer de mogelijkheden en limieten van de site:
 
 Standaard volgen sites de limieten die op het membershipniveau zijn ingesteld. Het instellen van limieten op het site niveau overschrijft de membershipinstellingen.
 
-### Associaties
+### Associaties {#associations}
 
 Onder de siteopties vindt u informatie over:
 
@@ -55,7 +55,7 @@ Onder de siteopties vindt u informatie over:
 - **Membership** onder welke de site valt
 - **Customer account** gekoppeld aan de site
 
-### Rechterzijbalk
+### Rechterzijbalk {#right-sidebar}
 
 Aan de rechterkant kunt u:
 

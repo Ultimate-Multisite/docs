@@ -3,13 +3,13 @@ title: Xa Emails thiab Kev Tshaj Tawm
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Xa Emails thiab Kev Tshaj Tawm (v2)
+# Xa Emails thiab Kev Tshaj Tawm (v2) {#sending-emails-and-broadcasts-v2}
 
 _**CEEB TOOM TSEEM CEEB: Kab lus no hais txog Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite muaj ib qho feature uas yuav cia koj sib txuas lus nrog koj cov customers los ntawm kev xa email mus rau ib tug user tshwj xeeb lossis ib pab users, thiab tseem xa cov lus ceeb toom rau lawv admin dashboard los tshaj tawm xov xwm
 
-## Ntxiv admin notices rau koj cov customers’ dashboard nrog Kev Tshaj Tawm
+## Ntxiv admin notices rau koj cov customers’ dashboard nrog Kev Tshaj Tawm {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Siv Ultimate Multisite kev tshaj tawm feature, koj tuaj yeem ntxiv **admin notices** rau koj tus user lub subsite admin dashboard.
 
@@ -51,7 +51,7 @@ Tom qab tsim koj cov lus lawm, ces koj tuaj yeem nias lub pob **Xa**.
 
 Thiab ces yog li ntawd xwb. Admin notice yuav tsum tshwm tam sim ntawd rau ntawm koj tus user lub dashboard.
 
-## Xa emails rau koj cov customers
+## Xa emails rau koj cov customers {#send-emails-to-your-customers}
 
 Siv Ultimate Multisite kev tshaj tawm feature, koj tuaj yeem xa email rau koj cov users. Koj muaj kev xaiv xa email tsuas yog rau cov users tshwj xeeb xwb lossis tsom rau ib pab user tshwj xeeb raws li yam khoom lossis pob kev pab uas lawv tau subscribe rau hauv qab.
 
@@ -81,11 +81,11 @@ Tom qab tsim koj cov lus lawm, koj tuaj yeem nias lub pob **Xa**.
 
 Thiab qhov ntawd qhia tias kev xa email rau koj cov end-users siv kev tshaj tawm feature yooj yim npaum li cas.
 
-## System emails
+## System emails {#system-emails}
 
 System emails hauv Ultimate Multisite yog cov **automatic notifications** uas system xa tom qab muaj qee yam kev ua xws li registration, payment, domain mapping, thiab lwm yam. Cov emails no tuaj yeem kho lossis hloov tau los ntawm Ultimate Multisite settings. Nws kuj los nrog ib qho feature uas yuav cia koj reset thiab import cov settings uas twb muaj lawm los ntawm lwm qhov Ultimate Multisite installation.
 
-### Resetting & Importing
+### Resetting & Importing {#resetting--importing}
 
 Cov Ultimate Multisite versions tshiab, nrog rau add-ons, tuaj yeem thiab yuav register cov emails tshiab ib ntus.
 
@@ -93,7 +93,7 @@ Txhawm rau tiv thaiv conflicts thiab lwm yam teeb meem, **peb yuav tsis ntxiv co
 
 Txawm li cas los, super admins thiab agents tuaj yeem import cov emails uas nyuam qhuav registered no los ntawm importer tool. Qhov txheej txheem ntawd yuav tsim ib system email tshiab nrog cov ntsiab lus thiab configuration ntawm email template tshiab, cia super admin hloov tau txhua yam uas lawv xav hloov lossis khaws cia li qub.
 
-#### Yuav import system emails li cas
+#### Yuav import system emails li cas {#how-to-import-system-emails}
 
 Mus rau koj nplooj Ultimate Multisite Settings thiab mus rau tab **Emails**.
 
@@ -111,7 +111,7 @@ Ces, koj tuaj yeem toggle cov kev xaiv Import Emails kom saib seb cov system ema
 
 <!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
-#### Rov Tsa System Emails Dua
+#### Rov Tsa System Emails Dua {#reseting-system-emails}
 
 Lwm zaus, koj yuav pom tias cov kev hloov uas koj tau ua rau ib qho email template twg tsis haum rau koj siv lawm, thiab koj xav rov tsa nws mus rau nws **xeev qub pib**.
 

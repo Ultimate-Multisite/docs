@@ -4,13 +4,13 @@ title: Saringan - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Filter naha rék maksa aturan sandi tambahan.
 
 Lamun true, maksa panjang minimum jeung sarat karakter. Otomatis diaktipkeun pikeun setélan "Super Strong" atawa nalika fitur Strong Password ti Defender Pro aktip.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Lamun true, maksa panjang minimum jeung sarat karakter. Otomatis diaktipkeun pik
 | $strength_setting | `string` | Nilai setélan admin. |
 | $defender_active | `bool` | Naha Defender Pro Strong Password aktip. |
 
-### Ti saprak
+### Ti saprak {#since}
 
 - 2.4.0
-### Sumber
+### Sumber {#source}
 
 Didefinisikeun dina [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) dina baris 531

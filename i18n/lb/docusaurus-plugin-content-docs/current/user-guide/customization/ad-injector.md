@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Werbemittel uf Ihrem Netzwerk mit Ultimate Multisite: Ad Injector
+# Werbemittel uf Ihrem Netzwerk mit Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector isch en **kostenlose Add-on**, wo dir d'Werkzüg git, um Werbemittel direkt vo de Edit-Seite dini Plän z'plaziere.
 
@@ -35,7 +35,7 @@ Du chasch au Werbemittel im Header vo Admin-Pages für Benutzer vo däm Plan iib
 
 _Ga zu de Option Admin Panel Ad Code, wenn du Werbemittel uf de Back-End vo dine Benutzer aazeige wetsch._
 
-### Über d'Werbig use
+### Über d'Werbig use {#beyond-advertising}
 
 Du chasch Ultimate Multisite: Ad Injector au bruche, um Support für hochrangigi Plän anzbiete.
 

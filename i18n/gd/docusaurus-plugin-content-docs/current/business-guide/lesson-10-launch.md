@@ -3,19 +3,19 @@ title: 'Leasan 10: Latha a’ Chuir air Bhog'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leasan 10: Latha an Fhoillseachaidh
+# Leasan 10: Latha an Fhoillseachaidh {#lesson-10-launch-day}
 
 Tha a h-uile càil air a thogail. Mus fosgail thu na dorsan, bheir an leasan seo thu tron liosta-sgrùdaidh ro-fhoillseachaidh gus dèanamh cinnteach nach eil dad briste, a dhìth, no tàmailteach.
 
-## Far an do Sguir Sinn
+## Far an do Sguir Sinn {#where-we-left-off}
 
 Tha teamplaidean, planaichean, pàigheadh, branndadh, treòrachadh-tòiseachaidh, agus prìsean uile air an rèiteachadh aig FitSite. A-nis dearbhaichidh sinn gu bheil a h-uile càil ag obair agus thèid sinn beò.
 
-## Liosta-sgrùdaidh Ro-fhoillseachaidh
+## Liosta-sgrùdaidh Ro-fhoillseachaidh {#pre-launch-checklist}
 
 Obraich tro gach nì. Na leum thairis air gin dhiubh.
 
-### Bun-structar an Àrd-ùrlair
+### Bun-structar an Àrd-ùrlair {#platform-infrastructure}
 
 - [ ] Tha an aoigheachd seasmhach agus ag obair gu math fo luchd
 - [ ] Tha Wildcard SSL gnìomhach agus tha na fo-àrainnean uile gan frithealadh thairis air HTTPS
@@ -23,7 +23,7 @@ Obraich tro gach nì. Na leum thairis air gin dhiubh.
 - [ ] Tha cùl-taicean air an rèiteachadh agus air an deuchainn (ath-shuidhich co-dhiù aon dhiubh gus dearbhadh)
 - [ ] Tha sgrùdadh na àite -- bidh fios agad ma thèid an t-àrd-ùrlar sìos
 
-### Teamplaidean
+### Teamplaidean {#templates}
 
 - [ ] Luchdaichidh na trì teamplaidean uile gu ceart air làraichean ùra
 - [ ] Tha susbaint nan ionadan-glèidhidh cuideachail agus saor bho mhearachdan-sgrìobhaidh
@@ -32,7 +32,7 @@ Obraich tro gach nì. Na leum thairis air gin dhiubh.
 - [ ] Tha astar luchdachadh dhuilleagan iomchaidh (deuchainn le inneal mar GTmetrix no PageSpeed Insights)
 - [ ] Chan eil ceanglaichean briste no so-mhaoin a dhìth air teamplaid sam bith
 
-### Planaichean agus Batharan
+### Planaichean agus Batharan {#plans-and-products}
 
 - [ ] Tha na trì planaichean uile gnìomhach agus ri am faicinn
 - [ ] Tha tuairisgeulan nam planaichean ceart agus sònraichte don niche
@@ -42,7 +42,7 @@ Obraich tro gach nì. Na leum thairis air gin dhiubh.
 - [ ] Nochdaidh tairgsean a bharrachd gu ceart rè pàighidh
 - [ ] Tha cuingealachaidhean plugin agus theme gan cur an gnìomh gu ceart a rèir plana
 
-### Sruth Pàighidh
+### Sruth Pàighidh {#checkout-flow}
 
 - [ ] Cuir crìoch air clàradh deuchainn slàn air gach plana (cleachd modh pàighidh deuchainn)
 - [ ] Tha taghadh teamplaid a’ sealltainn nan teamplaidean ceart a rèir plana
@@ -52,7 +52,7 @@ Obraich tro gach nì. Na leum thairis air gin dhiubh.
 - [ ] Faodaidh an neach-ceannach logadh a-steach don làrach ùr aca sa bhad
 - [ ] Tha còdan lasachaidh ag obair gu ceart
 
-### Branndadh
+### Branndadh {#branding}
 
 - [ ] Tha duilleag logaidh a-steach a’ sealltainn branndadh FitSite
 - [ ] Tha Dashboard rianachd a’ sealltainn branndadh FitSite
@@ -60,7 +60,7 @@ Obraich tro gach nì. Na leum thairis air gin dhiubh.
 - [ ] Tha fàirdealan gan sealltainn gu ceart leis na mion-fhiosrachadh gnìomhachais agad
 - [ ] Tha làrach mhargaidheachd beò agus a’ ceangal ris an fhoirm pàighidh
 
-### Treòrachadh-tòiseachaidh
+### Treòrachadh-tòiseachaidh {#onboarding}
 
 - [ ] Nochdaidh widget Tòiseachadh Luath air Dashboardan luchd-ceannach ùra
 - [ ] Tha na ceanglaichean Tòiseachadh Luath uile a’ dol gu na duilleagan ceart
@@ -68,7 +68,7 @@ Obraich tro gach nì. Na leum thairis air gin dhiubh.
 - [ ] Tha artaigilean bunait-eòlais air am foillseachadh agus ruigsinneach
 - [ ] Tha duilleag Account a’ sealltainn fiosrachadh plana ceart agus roghainnean ùrachadh
 
-### Laghail agus Gnìomhachas
+### Laghail agus Gnìomhachas {#legal-and-business}
 
 - [ ] Tha teirmichean seirbheis air am foillseachadh agus ceangailte bhon phàigheadh
 - [ ] Tha poileasaidh prìobhaideachd air fhoillseachadh agus ruigsinneach
@@ -77,11 +77,11 @@ Obraich tro gach nì. Na leum thairis air gin dhiubh.
 - [ ] Tha an geata-pàighidh ann am modh beò (chan ann am modh deuchainn)
 - [ ] Tha rèiteachadh na cìse ceart airson do dh’uachdranas
 
-## Foillseachadh Bog vs. Foillseachadh Cruaidh
+## Foillseachadh Bog vs. Foillseachadh Cruaidh {#soft-launch-vs-hard-launch}
 
 Beachdaich air foillseachadh dà-ìre:
 
-### Ìre 1: Foillseachadh Bog
+### Ìre 1: Foillseachadh Bog {#phase-1-soft-launch}
 
 Thoir cuireadh do 5-10 sealbhadairean stiùidio fallaineachd clàradh ron fhoillseachadh phoblach. Seo na luchd-ceannach beta agad. Tairg lasachadh mòr dhaibh (50% dheth fad am beatha, no 3 mìosan an-asgaidh) mar mhalairt air:
 
@@ -91,7 +91,7 @@ Thoir cuireadh do 5-10 sealbhadairean stiùidio fallaineachd clàradh ron fhoill
 
 Bheir seo dhut fios-air-ais fìor bho luchd-ceannach agus làraichean beò ri an taisbeanadh mus fosgail thu don phoball.
 
-### Ìre 2: Foillseachadh Poblach
+### Ìre 2: Foillseachadh Poblach {#phase-2-public-launch}
 
 Aon uair ’s gu bheil fios-air-ais an fhoillseachaidh bhog air a chur an sàs:
 
@@ -100,7 +100,7 @@ Aon uair ’s gu bheil fios-air-ais an fhoillseachaidh bhog air a chur an sàs:
 - Tòisich air luchd-ceannach fhaighinn (Leasan 11)
 - Foillsich na naidheachdan air seanalan buntainneach gnìomhachas na fallaineachd
 
-## Gnìomhan Latha an Fhoillseachaidh
+## Gnìomhan Latha an Fhoillseachaidh {#launch-day-actions}
 
 Air an latha a thèid thu poblach:
 
@@ -110,7 +110,7 @@ Air an latha a thèid thu poblach:
 4. **Bi ri fhaighinn** -- dh’fhaodadh gum bi feum aig a’ chiad luchd-ceannach fìor agad air cuideachadh, agus togaidh freagairt luath earbsa
 5. **Dèan gàirdeachas goirid** -- an uair sin till dhan obair
 
-## Dè Dh’fhaodadh a Dhol Ceàrr
+## Dè Dh’fhaodadh a Dhol Ceàrr {#what-can-go-wrong}
 
 Bi deiseil airson:
 
@@ -120,7 +120,7 @@ Bi deiseil airson:
 - **Coileanadh fo luchd**: Ma gheibh thu spreadhadh trafaig, biodh fios agad mar a mheudaicheas tu an aoigheachd agad
 - **Troimh-chèile luchd-ceannach**: Biodh do bhunait-eòlais agus na seanalan taice agad deiseil
 
-## Lìonra FitSite Gu Ruige Seo
+## Lìonra FitSite Gu Ruige Seo {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Na Thog Sinn san Leasan Seo
+## Na Thog Sinn san Leasan Seo {#what-we-built-this-lesson}
 
 - **Liosta-sgrùdaidh ro-fhoillseachaidh choileanta** a’ còmhdach bun-structair, susbaint, pàighidhean, agus cùisean laghail
 - **Ro-innleachd foillseachaidh bhog** gus fios-air-ais fìor fhaighinn mus tèid thu poblach

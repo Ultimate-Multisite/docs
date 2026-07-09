@@ -3,11 +3,11 @@ title: Hooks-referentie
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks-referentie
+# Hooks-referentie {#hooks-reference}
 
 Automatisch gegenereerde documentatie voor alle **59 acties** en **118 filters** in Ultimate Multisite.
 
-## Acties
+## Acties {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Wordt uitgevoerd vóór de authenticatie-omleiding.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Wordt direct uitgevoerd voordat de authenticatie-cookie wordt ingesteld.
@@ -70,7 +70,7 @@ Automatisch gegenereerde documentatie voor alle **59 acties** en **118 filters**
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Wordt uitgevoerd nadat een object in de database is opgeslagen.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Sta plugin-ontwikkelaars toe acties aan het ontgrendelingsproces toe te voegen.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtert de duur van de vervalperiode van de authenticatiecookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtert het authenticatie-redirectschema.

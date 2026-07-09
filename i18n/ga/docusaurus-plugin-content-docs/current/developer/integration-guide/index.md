@@ -3,13 +3,13 @@ title: Treoir Chomhtháthaithe
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Treoir Comhtháthaithe
+# Treoir Comhtháthaithe {#integration-guide}
 
 Clúdaíonn an treoir seo patrúin choitianta comhtháthaithe le Ultimate Multisite, lena n-áirítear nascadh le seirbhísí seachtracha, geataí íocaíochta saincheaptha a thógáil, agus webhooks a láimhseáil.
 
 Maidir le bonneagar tionónta aonraithe, féach [Comhtháthú Iltionóntachta](./multi-tenancy) le haghaidh bootstrap tionónta ceannasaigh, fíorú imirce, SSO, agus treoir maidir le díchóimeáil.
 
-## Comhtháthú CRM
+## Comhtháthú CRM {#crm-integration}
 
 Sioncrónaigh sonraí custaiméirí le do CRM nuair a chláraíonn custaiméirí nua:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Comhtháthú Anailísíochta
+## Comhtháthú Anailísíochta {#analytics-integration}
 
 Rianaigh príomhimeachtaí gnó ar fud shaolré an chustaiméara:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Na Chéad Chéimeanna Eile
+## Na Chéad Chéimeanna Eile {#next-steps}
 
 - [Forbairt Geata Saincheaptha](./custom-gateway) — Tóg do gheata íocaíochta féin
 - [Láimhseáil Webhook](./webhooks) — Cruthaigh endpoints webhook saincheaptha

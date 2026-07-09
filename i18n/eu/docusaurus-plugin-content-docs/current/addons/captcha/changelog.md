@@ -3,7 +3,7 @@ title: Captcha-ren aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha aldaketa-erregistroa
+# Captcha aldaketa-erregistroa {#captcha-changelog}
 
 Bertsioa: 1.5.0 - 2026-05-22an argitaratua
 * Berria: Hard-stop tasa-mugatzailea — GET eta POST guztiak zenbatzen ditu captchaz babestutako gainazaletan (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite ordainketa / inline-login) eta HTTP 429 batekin, `Retry-After` header batekin eta ausazko tarpit loaldi batekin (1–5s, gehienez 15s-ko muga gogorrarekin) erantzuten du.

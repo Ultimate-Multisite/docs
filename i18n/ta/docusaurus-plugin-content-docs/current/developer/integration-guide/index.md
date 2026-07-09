@@ -3,13 +3,13 @@ title: ஒருங்கிணைப்பு வழிகாட்டி
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ஒருங்கிணைப்பு வழிகாட்டி
+# ஒருங்கிணைப்பு வழிகாட்டி {#integration-guide}
 
 இந்த வழிகாட்டி Ultimate Multisite உடனான பொதுவான ஒருங்கிணைப்பு முறைகளை விளக்குகிறது. வெளிப்புற சேவைகளுடன் இணைதல், தனிப்பயன் கட்டண gateways உருவாக்குதல், webhooks கையாளுதல் ஆகியவை இதில் அடங்கும்.
 
 தனிமைப்படுத்தப்பட்ட tenant உள்கட்டமைப்புக்கு, sovereign tenant bootstrap, migration verification, SSO, மற்றும் teardown வழிகாட்டலுக்காக [Multi-Tenancy ஒருங்கிணைப்பு](./multi-tenancy) பார்க்கவும்.
 
-## CRM ஒருங்கிணைப்பு
+## CRM ஒருங்கிணைப்பு {#crm-integration}
 
 புதிய வாடிக்கையாளர்கள் பதிவு செய்யும் போது, வாடிக்கையாளர் தரவை உங்கள் CRM-க்கு ஒத்திசைக்கவும்:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics ஒருங்கிணைப்பு
+## Analytics ஒருங்கிணைப்பு {#analytics-integration}
 
 வாடிக்கையாளர் வாழ்நாள் சுழற்சி முழுவதிலும் முக்கிய வணிக நிகழ்வுகளை கண்காணிக்கவும்:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## அடுத்த படிகள்
+## அடுத்த படிகள் {#next-steps}
 
 - [தனிப்பயன் Gateway உருவாக்கம்](./custom-gateway) — உங்கள் சொந்த கட்டண gateway-ஐ உருவாக்கவும்
 - [Webhook கையாளுதல்](./webhooks) — தனிப்பயன் webhook endpoints உருவாக்கவும்

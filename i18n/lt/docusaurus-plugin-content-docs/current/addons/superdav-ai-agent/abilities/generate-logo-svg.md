@@ -3,15 +3,15 @@ title: Generuoti logotipo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generuoti logotipo SVG
+# Generuoti logotipo SVG {#generate-logo-svg}
 
 **Generuoti logotipo SVG** galimybė leidžia Theme Builder kurti ir įterpti pasirinktinius logotipų SVG tiesiai į jūsų WordPress svetainę, taikant automatinį vardų erdvei saugų sanitizavimą.
 
-## Apžvalga
+## Apžvalga {#overview}
 
 Ši galimybė generuoja keičiamo mastelio vektorinės grafikos (SVG) logotipus pagal jūsų svetainės prekės ženklo kryptį ir dizaino nuostatas. Sugeneruoti SVG automatiškai sanitizuojami, kad būtų saugūs naudoti WordPress, kartu išlaikant vizualinį vientisumą.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Parametras | Tipas | Privaloma | Aprašymas |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 | `height` | number | Ne | SVG aukštis pikseliais (numatytoji reikšmė: 200) |
 | `include_text` | boolean | Ne | Ar į logotipą įtraukti svetainės pavadinimą kaip tekstą (numatytoji reikšmė: true) |
 
-## Išvesties formatas
+## Išvesties formatas {#output-format}
 
 Galimybė grąžina SVG eilutę su tokia struktūra:
 
@@ -36,7 +36,7 @@ Galimybė grąžina SVG eilutę su tokia struktūra:
 }
 ```
 
-## SVG sanitizavimo elgsena
+## SVG sanitizavimo elgsena {#svg-sanitisation-behaviour}
 
 Sugeneruotiems SVG automatiškai taikomas vardų erdvei saugus sanitizavimas, siekiant:
 
@@ -48,7 +48,7 @@ Sugeneruotiems SVG automatiškai taikomas vardų erdvei saugus sanitizavimas, si
 
 Tai užtikrina, kad SVG būtų saugu įterpti tiesiai į WordPress be papildomo sanitizavimo.
 
-## Naudojimo pavyzdys
+## Naudojimo pavyzdys {#usage-example}
 
 **Užklausa:**
 ```
@@ -62,7 +62,7 @@ Galimybė sukuria SVG logotipą, kuris:
 - Atitinka modernaus dizaino principus
 - Yra automatiškai sanitizuotas ir paruoštas naudoti
 
-## Integracija su Theme Builder
+## Integracija su Theme Builder {#integration-with-theme-builder}
 
 Naudojant Theme Builder dizaino krypties pasirinkimą, Generuoti logotipo SVG galimybė:
 
@@ -71,21 +71,21 @@ Naudojant Theme Builder dizaino krypties pasirinkimą, Generuoti logotipo SVG ga
 3. Automatiškai įterpia logotipą į jūsų svetainės antraštės / prekės ženklo sritį
 4. Išsaugo SVG kaip pasirinktinį logotipą WordPress medijoje
 
-## Geriausios praktikos
+## Geriausios praktikos {#best-practices}
 
 - **Pateikite aiškias stiliaus nuostatas** — apibūdinkite norimą dizaino stilių (modernus, klasikinis, žaismingas ir t. t.)
 - **Nurodykite spalvas** — įtraukite savo prekės ženklo spalvas, kad būtų išlaikytas nuoseklumas
 - **Patikrinkite atvaizdavimą** — įsitikinkite, kad logotipas tinkamai rodomas įvairiuose ekrano dydžiuose
 - **Toliau tinkinkite** — naudokite WordPress logotipo tinkinimo įrankius dydžiui ir vietai koreguoti
 
-## Apribojimai
+## Apribojimai {#limitations}
 
 - SVG logotipai generuojami kaip statinė grafika (ne animuoti)
 - Sudėtingiems logotipams su daug elementų gali prireikti rankinio patobulinimo
 - Pasirinktiniai šriftai nepalaikomi; tekstui naudojami sistemos šriftai
 - Labai dideli arba labai maži matmenys gali paveikti kokybę
 
-## Susijusios galimybės
+## Susijusios galimybės {#related-abilities}
 
 - [Patikrinti paletės kontrastą](./validate-palette-contrast.md) — patikrinti spalvų kontrastą dėl prieinamumo
 - [Sukurti meniu](./create-menu.md) — sukurti navigacijos meniu jūsų svetainei

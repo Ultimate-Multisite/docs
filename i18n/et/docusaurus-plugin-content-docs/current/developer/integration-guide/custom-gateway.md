@@ -3,11 +3,11 @@ title: Kohandatud maksevärava arendus
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Kohandatud makselüüsi arendus
+# Kohandatud makselüüsi arendus {#custom-gateway-development}
 
 Saate luua kohandatud makselüüse, laiendades `Base_Gateway` klassi.
 
-## Lüüsi klass
+## Lüüsi klass {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registreeri lüüs
+## Registreeri lüüs {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Peamised meetodid
+## Peamised meetodid {#key-methods}
 
 | Meetod | Eesmärk |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Käsitle tagasimaksetaotlusi |
 | `get_payment_methods()` | Tagasta kliendi salvestatud makseviisid |
 
-## Uuendamise mandaadid korduvatele liikmesustele
+## Uuendamise mandaadid korduvatele liikmesustele {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 võimaldab lüüsi integratsioonidel teatada, kas korduval liikmesusel on korduskasutatav uuendamise mandaat enne, kui `auto_renew` salvestatakse. Haagi `wu_membership_has_renewal_credential` külge ja tagasta:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Eemaldage puuduva mandaadi märgis oma lüüsi eduka uuesti autoriseerimise voo osana pärast uue korduskasutatava mandaadi salvestamist.
 
-## Näpunäited
+## Näpunäited {#tips}
 
 - Tagastage ebaõnnestumise korral alati `WP_Error`, et Ultimate Multisite saaks veateate kuvamist käsitleda
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Kasutage lüüsipõhiseks logimiseks `wu_log_add()`
 
-## AI connectori teenusepakkuja võimekused
+## AI connectori teenusepakkuja võimekused {#ai-connector-provider-capabilities}
 
 Kohandatud integratsioonid, mis kutsuvad AI connectori toetatud toiminguid, peaksid joonduma toetatud OAuth teenusepakkujate kogumiga, mis tutvustati AI Provider for Anthropic Max v1.3.0-ga:
 

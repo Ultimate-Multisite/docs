@@ -3,11 +3,11 @@ title: טיפול בוו-בק
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# טיפול ב-Webhook
+# טיפול ב-Webhook {#webhook-handling}
 
 צור נקודות קצה (endpoints) של Webhook מותאמות אישית כדי לקבל אירועים משירותים חיצוניים ולסנכרן נתונים עם Ultimate Multisite.
 
-## נקודת קצה (Endpoint) Webhook מותאמת אישית
+## נקודת קצה (Endpoint) Webhook מותאמת אישית {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## שיקולי אבטחה
+## שיקולי אבטחה {#security-considerations}
 
 - תמיד ודא את חתימות ה-webhook באמצעות HMAC או סוד משותף.
 - השתמש ב-`permission_callback` בנתיב ה-REST שלך — לעולם אל תגדיר אותו ל-`__return_true` בסביבת הפקה (production).

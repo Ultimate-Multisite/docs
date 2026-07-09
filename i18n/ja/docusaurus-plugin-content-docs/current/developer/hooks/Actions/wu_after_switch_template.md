@@ -25,20 +25,20 @@ title: |
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# アクション: wu_after_switch_template
+# アクション: wu_after_switch_template {#action-wuafterswitchtemplate}
 
 ユーザーまたはスーパー管理者がサイトテンプレートを切り替えた後に、プラグイン開発者が関数をフックできるようにします。
 
-## Parameters
+## Parameters {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
 | $id | `int` | サイトID |
 
-### バージョン
+### バージョン {#since}
 
 - 1.9.8
 
-### ソース
+### ソース {#source}
 
 定義済み: [`inc/ui/class-template-switching-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-switching-element.php#L296) 行 296

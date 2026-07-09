@@ -3,15 +3,15 @@ title: האָקס באנוץ־וועגווייזער
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# באַניץ־גייד פֿאַר Hooks
+# באַניץ־גייד פֿאַר Hooks {#hooks-usage-guide}
 
 Ultimate Multisite גיט 200+ אַקציע־Hooks און 280+ פילטער־Hooks. די זײַט באַהאַנדלט די מערסט אָפֿט געניצטע Hooks מיט פּראַקטישע בײַשפּילן. פֿאַר אַ פולשטענדיקע אויטאָמאַטיש־גענערירטע רעפֿערענץ, בלעטערט די אַנדערע זײַטן אין דעם אָפּטייל.
 
-## אַקציע־Hooks
+## אַקציע־Hooks {#action-hooks}
 
-### קונה־לעבנסציקל
+### קונה־לעבנסציקל {#customer-lifecycle}
 
-#### נאָך קונה־שאַפונג
+#### נאָך קונה־שאַפונג {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### ענדערונג פֿון קונה־סטאַטוס
+#### ענדערונג פֿון קונה־סטאַטוס {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### וועבזײַט־Hooks
+### וועבזײַט־Hooks {#site-hooks}
 
-#### נאָך דעם וואָס די וועבזײַט איז פּובליקירט געוואָרן
+#### נאָך דעם וואָס די וועבזײַט איז פּובליקירט געוואָרן {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### פֿאַר מוסטער־אָנווענדונג
+#### פֿאַר מוסטער־אָנווענדונג {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### מיטגלידערשאַפֿט־Hooks
+### מיטגלידערשאַפֿט־Hooks {#membership-hooks}
 
-#### סטאַטוס־איבערגאַנגען
+#### סטאַטוס־איבערגאַנגען {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### צאָלונג־Hooks
+### צאָלונג־Hooks {#payment-hooks}
 
-#### צאָלונג פֿאַרענדיקט / דורכגעפֿאַלן
+#### צאָלונג פֿאַרענדיקט / דורכגעפֿאַלן {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### קאַסע־Hooks
+### קאַסע־Hooks {#checkout-hooks}
 
-#### פֿאַרן פֿאַראַרבעטן / נאָך פֿאַרענדיקונג
+#### פֿאַרן פֿאַראַרבעטן / נאָך פֿאַרענדיקונג {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### דאָמיין־Hooks
+### דאָמיין־Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## פילטער־Hooks
+## פילטער־Hooks {#filter-hooks}
 
-### פּרײַז־פילטערס
+### פּרײַז־פילטערס {#pricing-filters}
 
-#### קאָרב־סך־הכול
+#### קאָרב־סך־הכול {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### שטײַער־ראַטעס
+#### שטײַער־ראַטעס {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### מוסטער־פילטערס
+### מוסטער־פילטערס {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### באַגרענעצונג־פילטערס
+### באַגרענעצונג־פילטערס {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### צאָלונגס־טויער־פילטערס
+### צאָלונגס־טויער־פילטערס {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### קאַסע־פֿאָרעם־פעלדער
+### קאַסע־פֿאָרעם־פעלדער {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### בליצפּאָסט־אינהאַלט
+### בליצפּאָסט־אינהאַלט {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

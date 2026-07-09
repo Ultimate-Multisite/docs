@@ -3,7 +3,7 @@ title: Integrasi Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ngajukeun Ultimate Multisite sareng Zapier
+# Ngajukeun Ultimate Multisite sareng Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Dina salah sahiji artikel, urang ngabahas ngeunaan [Webhooks](webhooks.md) jeung kumaha éta bisa dipaké pikeun ngajalin hubungan jeung aplikasi pihak katilu (3rd party applications).
 
@@ -15,7 +15,7 @@ Anjeun bisa nyiptake **Triggers** anu bakal dipicu lamun aya kajadian dina jarin
 
 Ieu bisa dilakukeun sabab **triggers** jeung **actions Zapier Ultimate Multisite** dipasihan tenaga ku [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kumaha mimiti
+## Kumaha mimiti {#how-to-start}
 
 Éta, cari Ultimate Multisite dina daftar aplikasi Zapier. Atanapi, anjeun bisa klik [link ieu](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Di kolom URL, masukkan URL jaringan anjeun anu lengkep, kaasup protokolna (HTTP 
 
 Klik tombol **Yes, Continue** pikeun lanjut ka langkah salajengna. Lamun sagala aya nu lancar, anjeun bakal disambut ku akun anyar anu geus terhubung! Klik **Continue** pikeun nyiptake pemicu (trigger) anyar.
 
-## Kumaha cara nyiptake Trigger anyar
+## Kumaha cara nyiptake Trigger anyar {#how-to-create-a-new-trigger}
 
 Ayeuna sabab akun anjeun geus terhubung, anjeun bisa ningali acara-acara (events) anu aya. Hayu pilih acara **payment_received** kanggo tutorial ieu.
 
@@ -67,7 +67,7 @@ Dina tahap ieu, Zapier bakal nguji upami Zap anjeun bisa **ngahontal payload anu
 
 Di tutorial urang, tesna geus **selesai sukses** jeung ngirimkeun conto informasi payload. Informasi conto ieu bakal mantuan urang nalika nyiptake aksi-aksi. Trigger anjeun ayeuna geus aya jeung siap dihubungkeun ka aplikasi séjén.
 
-## Kumaha cara nyiptake Actions
+## Kumaha cara nyiptake Actions {#how-to-create-actions}
 
 Actions ngagunake informasi tina trigger séjén pikeun nyiptake entri anyar dina jaringan anjeun.
 
@@ -79,7 +79,7 @@ Di langkah salajengna, anjeun bakal nyiptake otentikasi anjeun, saperti anu uran
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Ngatur Action
+### Ngatur Action {#setting-up-the-action}
 
 Ieu mangrupake **langkah utama tina action**, jeung di dieu sagala rupa rada béda. Informasi kahiji anu bakal anjeun milih nyaéta **Item**. Item téh mangrupa **model informasi** jaringan anjeun saperti **Customers, Payments, Sites, Emails** jeung séjénna.
 

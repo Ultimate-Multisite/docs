@@ -3,11 +3,11 @@ title: Soevereine Migrasie-stroombaan
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Soevereine Migrasiewerkstroom
+# Soevereine Migrasiewerkstroom {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 voeg migrasiebevestigingspoortjies by vir die oorskryf van 'n standaard subsite na soevereine huurderinfrastruktuur by.
 
-## Voordat jy begin
+## Voordat jy begin {#before-you-start}
 
 Bevest dat jy het:
 
@@ -17,7 +17,7 @@ Bevest dat jy het:
 - 'n Database-hoosterbinding wat ooreenstem met die bestemmingomgewing.
 - Toegang om WP-CLI commando's vir die netwerk uit te voer.
 
-## Aanbeveel gerigte werkstroom
+## Aanbeveel gerigte werkstroom {#recommended-workflow}
 
 1. Berei die bestemming huurderdatabasis en lêersisteem voor.
 2. Registreer of opdateer die huurder-isoleringinstellings.
@@ -28,7 +28,7 @@ Bevest dat jy het:
 7. Besoek die huurder met SSO.
 8. Skakel DNS of roer netwerk slegs nadat bevestiging suksesvol gepas het.
 
-## Bevestigingspoorte
+## Bevestigingspoorte {#verification-gates}
 
 Die bevestigingswerkstroom toets die migrasie vanuit verskeie hoeke:
 
@@ -40,6 +40,6 @@ Die bevestigingswerkstroom toets die migrasie vanuit verskeie hoeke:
 
 Behandel bevestigingsfoute as blokkerende faktore voor die lansering. Herstel die gemelde databasis-, gebruiker-, riël of roerprobleem, en voer dan weer die bevestiging uit voordat jy die huurder aan kliënte blootstel.
 
-## Eerste produksiebesoek
+## Eerste produksiebesoek {#first-production-visit}
 
 Nadat bevestiging suksesvol gepas het, gebruik **Besluit (SSO)** vanaf die bladsybestuur-skerm vir die eerste administrasiebesoek. Dit bevestig huurderroering, SSO token-handhabings, oorsprongpinnings en huurder-syd gebruiker-provisioning in een gecontroleerde stap.

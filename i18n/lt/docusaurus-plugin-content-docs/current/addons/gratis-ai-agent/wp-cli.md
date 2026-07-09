@@ -3,11 +3,11 @@ title: WP-CLI nuoroda
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI nuoroda
+# WP-CLI nuoroda {#wp-cli-reference}
 
 Gratis AI Agent pateikia `wp gratis-ai-agent` komandų šeimą agento našumui testuoti, gebėjimams valdyti ir agento būsenai užklausti iš komandinės eilutės. Visoms komandoms reikia WP-CLI 2.0 arba naujesnės versijos.
 
-## Diegimas
+## Diegimas {#installation}
 
 WP-CLI komandos registruojamos automatiškai, kai plugin yra aktyvus. Patikrinkite su:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Paleidžia Agent Capabilities našumo testų rinkinį — sudėtingų, kelių žingsnių užklausų rinkinį, kuris išbando visą gebėjimų spektrą. Naudokite tai modelio našumui įvertinti, AI teikėjams palyginti arba gebėjimų paketams patikrinti prieš diegiant į produkcinę aplinką.
 
-### Santrauka
+### Santrauka {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Parinktys
+### Parinktys {#options}
 
 | Parinktis | Aprašymas |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Išvesties formatas: `table` (numatytasis), `json`, `csv` |
 | `--save` | Išsaugoti našumo testo rezultatus duomenų bazėje istoriniam palyginimui |
 
-### Pavyzdžiai
+### Pavyzdžiai {#examples}
 
 Paleisti visą našumo testų rinkinį su dabartiniu teikėju ir modeliu:
 
@@ -57,7 +57,7 @@ Paleisti su konkrečiu modeliu ir išsaugoti rezultatus:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Išvestis
+### Išvestis {#output}
 
 Našumo testas išveda po vieną eilutę kiekvienam klausimui su šiais stulpeliais:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Našumo testo klausimai
+### Našumo testo klausimai {#benchmark-questions}
 
 Numatytasis rinkinys apima:
 
@@ -95,11 +95,11 @@ Papildomus klausimus galima užregistruoti per `gratis_ai_agent_benchmark_questi
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Valdo įdiegtus gebėjimus ir gebėjimų paketus.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Išvardija visus užregistruotus gebėjimus, jų šaltinį (branduolį arba paketą) ir dabartinę būseną.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Atsiunčia ir aktyvuoja gebėjimų paketą iš registro.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Išjungia konkretų gebėjimą nepašalindama paketo. Naudinga ribojant agento veikimo sritį konkrečioje svetainėje.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Iš naujo įjungia anksčiau išjungtą gebėjimą.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Rodo dabartinę agento konfigūraciją ir ryšio būseną.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Rodo naujausią agento veiklą iš derinimo žurnalo.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Iš naujo nustato agento būseną: išvalo įterptą CSS, pašalina agento užregistruotus CPT ir taksonomijas, iš naujo nustato globalius stilius ir ištuština agento parinkčių podėlį. Nepašalina plugin ar jo nustatymų.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Išėjimo kodai
+## Išėjimo kodai {#exit-codes}
 
 Visos komandos sėkmės atveju grąžina `0`. Nenuliniai išėjimo kodai:
 

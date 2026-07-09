@@ -3,28 +3,28 @@ title: REST API ಅವಲೋಕನ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ಉಲ್ಲೇಖ
+# REST API ಉಲ್ಲೇಖ {#rest-api-reference}
 
-## ಮೂಲ ಸಂರಚನೆ
+## ಮೂಲ ಸಂರಚನೆ {#base-configuration}
 
 **ಮೂಲ URL:** `{site_url}/wp-json/wu/v2/`
 **ದೃಢೀಕರಣ:** API Key ಮತ್ತು Secret (HTTP Basic Auth ಅಥವಾ URL ಪರಿಮಾಣಗಳು)
 
-## ದೃಢೀಕರಣ
+## ದೃಢೀಕರಣ {#authentication}
 
-### API ಸಕ್ರಿಯಗೊಳಿಸಿ
+### API ಸಕ್ರಿಯಗೊಳಿಸಿ {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಪಡೆಯಿರಿ
+### API ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಪಡೆಯಿರಿ {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### ದೃಢೀಕರಣ ವಿಧಾನಗಳು
+### ದೃಢೀಕರಣ ವಿಧಾನಗಳು {#authentication-methods}
 
 **HTTP Basic Auth (ಶಿಫಾರಸು):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ಮುಖ್ಯ ಅಂತಿಮ ಬಿಂದುಗಳು
+## ಮುಖ್ಯ ಅಂತಿಮ ಬಿಂದುಗಳು {#core-endpoints}
 
-### 1. ಗ್ರಾಹಕರ API
+### 1. ಗ್ರಾಹಕರ API {#1-customers-api}
 
 **ಮೂಲ ಮಾರ್ಗ:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. ತಾಣಗಳ API
+### 2. ತಾಣಗಳ API {#2-sites-api}
 
 **ಮೂಲ ಮಾರ್ಗ:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. ಸದಸ್ಯತ್ವಗಳ API
+### 3. ಸದಸ್ಯತ್ವಗಳ API {#3-memberships-api}
 
 **ಮೂಲ ಮಾರ್ಗ:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. ಉತ್ಪನ್ನಗಳ API
+### 4. ಉತ್ಪನ್ನಗಳ API {#4-products-api}
 
 **ಮೂಲ ಮಾರ್ಗ:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. ಪಾವತಿಗಳ API
+### 5. ಪಾವತಿಗಳ API {#5-payments-api}
 
 **ಮೂಲ ಮಾರ್ಗ:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ಡೊಮೇನ್‌ಗಳ API
+### 6. ಡೊಮೇನ್‌ಗಳ API {#6-domains-api}
 
 **ಮೂಲ ಮಾರ್ಗ:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## ನೋಂದಣಿ ಅಂತಿಮ ಬಿಂದು
+## ನೋಂದಣಿ ಅಂತಿಮ ಬಿಂದು {#registration-endpoint}
 
 `/register` ಅಂತಿಮ ಬಿಂದುವು ಸಂಪೂರ್ಣ ಚೆಕ್‌ಔಟ್/ನೋಂದಣಿ ಹರಿವನ್ನು ಒದಗಿಸುತ್ತದೆ:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## ಸ್ವಾಯತ್ತ ಟೆನಂಟ್ ಅಂತಿಮ ಬಿಂದುಗಳು
+## ಸ್ವಾಯತ್ತ ಟೆನಂಟ್ ಅಂತಿಮ ಬಿಂದುಗಳು {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ಪ್ರತ್ಯೇಕ ಟೆನಂಟ್‌ಗಳನ್ನು ಒದಗಿಸುವ, ಪರಿಶೀಲಿಸುವ ಅಥವಾ ದೃಢಪಡಿಸುವ ಏಕೀಕರಣಗಳಿಗಾಗಿ ಸ್ವಾಯತ್ತ ಟೆನಂಟ್ REST ವ್ಯಾಪ್ತಿಯನ್ನು ಸೇರಿಸುತ್ತದೆ.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` ಅನ್ನು ಬಿಡುಗಡೆಗೂ ಮುಂಚಿನ ತಡೆ ಎಂದು ಪರಿಗಣಿಸಿ. ದೃಢೀಕರಣ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ, ಡೇಟಾಬೇಸ್ ಹೋಸ್ಟ್ ಬೈಂಡಿಂಗ್, ಕ್ಯೂ, ಬಳಕೆದಾರ ಒದಗಿಸುವಿಕೆ ಅಥವಾ ರೌಟಿಂಗ್ ಸಮಸ್ಯೆಯನ್ನು ಸರಿಪಡಿಸಿ, ನಂತರ ದೃಢೀಕರಣವನ್ನು ಮರುಪ್ರಯತ್ನಿಸಿ.
 
-## ದೋಷ ಪ್ರತಿಕ್ರಿಯೆಗಳು
+## ದೋಷ ಪ್ರತಿಕ್ರಿಯೆಗಳು {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## ಪುಟೀಕರಣ ಮತ್ತು ಶೋಧನೆ
+## ಪುಟೀಕರಣ ಮತ್ತು ಶೋಧನೆ {#pagination-and-filtering}
 
 **ಪ್ರಶ್ನಾ ಪರಿಮಾಣಗಳು:**
 ```http

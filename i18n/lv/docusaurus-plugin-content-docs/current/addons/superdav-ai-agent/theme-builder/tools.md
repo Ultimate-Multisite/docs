@@ -3,17 +3,17 @@ title: Rīki un konfigurācija
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Rīki un konfigurācija
+# Rīki un konfigurācija {#tools-and-configuration}
 
 Theme Builder izmanto rīku kopu, lai analizētu, projektētu un izveidotu jūsu WordPress vietni. Versijā 1.16.0 **sd-ai-agent/site-scrape tagad ir 1. līmeņa rīks**, padarot to pēc noklusējuma pieejamu Theme Builder. Superdav AI Agent v1.18.0 arī ievieš atsevišķi izplatītu Advanced pavadošo pakotni uzticamām izstrādātāju darbplūsmām; šie rīki nav daļa no WordPress.org pamata pakotnes un ir jāinstalē un jāautorizē atsevišķi.
 
-## Pieejamie rīki
+## Pieejamie rīki {#available-tools}
 
-### 1. līmeņa rīki (vienmēr pieejami)
+### 1. līmeņa rīki (vienmēr pieejami) {#tier-1-tools-always-available}
 
 1. līmeņa rīki pēc noklusējuma ir pieejami Theme Builder bez jebkādas papildu konfigurācijas.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Mērķis:** Analizēt esošas tīmekļa vietnes, lai iegūtu dizaina iedvesmu, satura struktūru un funkcionalitāti.
 
@@ -51,11 +51,11 @@ Analizē example.com dizainu un izmanto to kā iedvesmu manai vietnei.
 - Vietnēm ar lielu JavaScript daudzumu analīze var būt ierobežota
 - Lielu vietņu analīze var aizņemt ilgāku laiku
 
-### 2. līmeņa rīki (pēc izvēles)
+### 2. līmeņa rīki (pēc izvēles) {#tier-2-tools-optional}
 
 2. līmeņa rīki ir pieejami, kad tie ir skaidri iespējoti Theme Builder iestatījumos.
 
-#### Paplašinātā analītika
+#### Paplašinātā analītika {#advanced-analytics}
 
 Nodrošina detalizētus veiktspējas rādītājus:
 
@@ -65,7 +65,7 @@ Nodrošina detalizētus veiktspējas rādītājus:
 - Pieejamības vērtējums
 - Labāko prakšu vērtējums
 
-#### Satura optimizētājs
+#### Satura optimizētājs {#content-optimizer}
 
 Analizē un iesaka uzlabojumus šādiem aspektiem:
 
@@ -75,11 +75,11 @@ Analizē un iesaka uzlabojumus šādiem aspektiem:
 - Satura struktūra
 - Aicinājuma uz darbību izvietojums
 
-### 3. līmeņa rīki (Premium)
+### 3. līmeņa rīki (Premium) {#tier-3-tools-premium}
 
 3. līmeņa rīkiem nepieciešama papildu konfigurācija vai Premium funkcijas.
 
-#### AI satura ģenerators
+#### AI satura ģenerators {#ai-content-generator}
 
 Ģenerē saturu šādiem nolūkiem:
 
@@ -89,7 +89,7 @@ Analizē un iesaka uzlabojumus šādiem aspektiem:
 - Meta apraksti
 - Aicinājuma uz darbību teksts
 
-#### Paplašinātie dizaina rīki
+#### Paplašinātie dizaina rīki {#advanced-design-tools}
 
 Nodrošina paplašinātas dizaina iespējas:
 
@@ -99,7 +99,7 @@ Nodrošina paplašinātas dizaina iespējas:
 - Paplašināta krāsu teorija
 - Tipogrāfijas optimizācija
 
-### Advanced pavadošie rīki (atsevišķa pakotne)
+### Advanced pavadošie rīki (atsevišķa pakotne) {#advanced-companion-tools-separate-package}
 
 Advanced pavadošā pakotne tiek izplatīta atsevišķi no Superdav AI Agent pamata laidiena. Tā ir paredzēta uzticamām izstrādātāju un vietņu īpašnieku vidēm, kur administratori skaidri atļauj agentam izmantot augstas ietekmes rīkus.
 
@@ -116,9 +116,9 @@ Advanced pavadošās iespējas var ietvert:
 
 Nedokumentējiet tos kā vispārēji pieejamus Theme Builder rīkus katrai instalācijai. Tie ir pieejami tikai tad, kad Advanced pavadošā pakotne ir instalēta, iespējota un ierobežota uzticamiem administratoriem.
 
-## Rīku konfigurācija
+## Rīku konfigurācija {#tool-configuration}
 
-### Rīku iespējošana
+### Rīku iespējošana {#enabling-tools}
 
 Lai iespējotu papildu rīkus Theme Builder:
 
@@ -127,7 +127,7 @@ Lai iespējotu papildu rīkus Theme Builder:
 3. Pēc vajadzības ieslēdziet/izslēdziet rīkus
 4. Saglabājiet iestatījumus
 
-### Rīku atļaujas
+### Rīku atļaujas {#tool-permissions}
 
 Dažiem rīkiem nepieciešamas atļaujas:
 
@@ -137,7 +137,7 @@ Dažiem rīkiem nepieciešamas atļaujas:
 - **Paplašinātās funkcijas** — var būt nepieciešams Premium abonements
 - **Advanced pavadošie rīki** — nepieciešama atsevišķi izplatītā Advanced pakotne un skaidra administratora uzticība
 
-### API atslēgas un akreditācijas dati
+### API atslēgas un akreditācijas dati {#api-keys-and-credentials}
 
 Konfigurējiet API atslēgas rīkiem, kuriem tās nepieciešamas:
 
@@ -146,13 +146,13 @@ Konfigurējiet API atslēgas rīkiem, kuriem tās nepieciešamas:
 3. Pārbaudiet savienojumu
 4. Droši saglabājiet
 
-### Advanced pavadošās pakotnes instalēšana
+### Advanced pavadošās pakotnes instalēšana {#installing-the-advanced-companion-package}
 
 Advanced pavadošā pakotne tiek izlaista atsevišķi no WordPress.org pamata ZIP. Instalējiet to tikai no oficiālā projekta izplatīšanas kanāla attiecīgajam laidienam, pēc tam ierobežojiet piekļuvi uzticamiem administratoriem. Pirms failu sistēmas, datubāzes, WP-CLI, REST dispečera, pluginu veidotāja, lietotāju pārvaldības vai etalontestu rīku iespējošanas production vietnē pārskatiet cilvēka apstiprinājuma vārtus un git momentuzņēmumu darbību.
 
-## sd-ai-agent/site-scrape lietošana
+## sd-ai-agent/site-scrape lietošana {#using-sd-ai-agentsite-scrape}
 
-### Pamata lietošana
+### Pamata lietošana {#basic-usage}
 
 Palūdziet Theme Builder analizēt tīmekļa vietni:
 
@@ -161,7 +161,7 @@ Analizē mana konkurenta vietnes dizainu vietnē competitor.com
 un iesaki dizaina uzlabojumus manai vietnei.
 ```
 
-### Konkrēta analīze
+### Konkrēta analīze {#specific-analysis}
 
 Pieprasiet konkrētus analīzes veidus:
 
@@ -179,7 +179,7 @@ Pārbaudi example.com pielāgojamību mobilajām ierīcēm un nodrošini, ka man
 ir tikpat pielāgojama.
 ```
 
-### Salīdzinājuma analīze
+### Salīdzinājuma analīze {#comparison-analysis}
 
 Salīdziniet vairākas vietnes:
 
@@ -188,22 +188,22 @@ Salīdzini site1.com un site2.com dizainus un izveido dizainu,
 kas apvieno abu labākos elementus.
 ```
 
-## Rīku ierobežojumi un apsvērumi
+## Rīku ierobežojumi un apsvērumi {#tool-limitations-and-considerations}
 
-### Ātruma ierobežošana
+### Ātruma ierobežošana {#rate-limiting}
 
 - Scraping ātrums ir ierobežots, lai novērstu servera pārslodzi
 - Vairāki pieprasījumi uz to pašu vietni var tikt ierobežoti
 - Lielu vietņu analīze var aizņemt vairāk laika
 
-### Satura precizitāte
+### Satura precizitāte {#content-accuracy}
 
 - Dinamisks saturs var netikt pilnībā uztverts
 - Ar JavaScript renderēts saturs var būt nepilnīgs
 - Reāllaika dati var netikt atspoguļoti
 - Daļa satura var atrasties aiz maksas piekļuves sienām
 
-### Juridiskie un ētiskie apsvērumi
+### Juridiskie un ētiskie apsvērumi {#legal-and-ethical-considerations}
 
 - Ievērojiet robots.txt un vietnes politikas
 - Neveiciet ar autortiesībām aizsargāta satura scraping reproducēšanai
@@ -211,16 +211,16 @@ kas apvieno abu labākos elementus.
 - Pārliecinieties, ka jums ir tiesības izmantot iegūto saturu
 - Ievērojiet analizēto vietņu pakalpojumu noteikumus
 
-### Veiktspējas ietekme
+### Veiktspējas ietekme {#performance-impact}
 
 - Lielu vietņu scraping var aizņemt laiku
 - Vairāki vienlaicīgi scraping procesi var būt lēnāki
 - Tīkla savienojamība ietekmē ātrumu
 - Lielām datu kopām var būt nepieciešama papildu apstrāde
 
-## Labākā prakse
+## Labākā prakse {#best-practices}
 
-### Vietnes analīzes izmantošana
+### Vietnes analīzes izmantošana {#using-site-analysis}
 
 1. **Analizējiet vairākas vietnes** — iegūstiet iedvesmu no vairākiem avotiem
 2. **Koncentrējieties uz struktūru** — apgūstiet izkārtojuma un organizācijas modeļus
@@ -228,7 +228,7 @@ kas apvieno abu labākos elementus.
 4. **Izpētiet tipogrāfiju** — identificējiet fontu kombinācijas, kas jums patīk
 5. **Pārskatiet navigāciju** — izprotiet izvēlnes organizāciju
 
-### Ētisks scraping
+### Ētisks scraping {#ethical-scraping}
 
 1. **Ievērojiet robots.txt** — sekojiet vietnes vadlīnijām
 2. **Nekopējiet saturu** — izmantojiet analīzi tikai iedvesmai
@@ -236,7 +236,7 @@ kas apvieno abu labākos elementus.
 4. **Norādiet avotus** — norādiet iedvesmas avotus
 5. **Ievērojiet noteikumus** — ievērojiet vietnes pakalpojumu noteikumus
 
-### Rīka efektivitātes maksimizēšana
+### Rīka efektivitātes maksimizēšana {#maximizing-tool-effectiveness}
 
 1. **Esiet konkrēti** — pieprasiet konkrētus analīzes veidus
 2. **Sniedziet kontekstu** — izskaidrojiet savas vietnes mērķi
@@ -244,9 +244,9 @@ kas apvieno abu labākos elementus.
 4. **Iterējiet** — precizējiet, balstoties uz rezultātiem
 5. **Apvienojiet rīkus** — izmantojiet vairākus rīkus visaptverošai analīzei
 
-## Problēmu novēršana
+## Problēmu novēršana {#troubleshooting}
 
-### Vietni nevar noscrapēt
+### Vietni nevar noscrapēt {#site-wont-scrape}
 
 - Pārbaudiet, vai vietne ir publiski pieejama
 - Pārliecinieties, vai robots.txt atļauj scraping
@@ -254,7 +254,7 @@ kas apvieno abu labākos elementus.
 - Pārbaudiet interneta savienojumu
 - Sazinieties ar atbalstu, ja problēma saglabājas
 
-### Nepilnīga analīze
+### Nepilnīga analīze {#incomplete-analysis}
 
 - Vietnē var būt dinamisks saturs
 - JavaScript var netikt pilnībā renderēts
@@ -262,7 +262,7 @@ kas apvieno abu labākos elementus.
 - Tā vietā mēģiniet analizēt konkrētas lapas
 - Pieprasiet konkrētus analīzes veidus
 
-### Lēna veiktspēja
+### Lēna veiktspēja {#slow-performance}
 
 - Lielu vietņu analīze aizņem vairāk laika
 - Vairāki vienlaicīgi scraping procesi ir lēnāki
@@ -270,7 +270,7 @@ kas apvieno abu labākos elementus.
 - Mēģiniet ārpus noslodzes stundām
 - Vispirms analizējiet mazākas sadaļas
 
-## Saistītā dokumentācija
+## Saistītā dokumentācija {#related-documentation}
 
 - [Atklāšanas intervija](./discovery-interview.md) — apkopojiet dizaina informāciju
 - [Dizaina virziens](./design-direction.md) — pilnveidojiet savu dizainu

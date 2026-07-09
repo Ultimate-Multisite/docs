@@ -3,11 +3,11 @@ title: ഹുക്കുകളുടെ റഫറൻസ്
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks റഫറൻസ്
+# Hooks റഫറൻസ് {#hooks-reference}
 
 Ultimate Multisite-യിലെ എല്ലാ **59 actions**-ക്കും **118 filters**-ക്കും സ്വയം സൃഷ്ടിച്ച ഡോക്യുമെന്റേഷൻ.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — പ്രാമാണീകരണ റീഡയറക്ടിന് മുമ്പ് പ്രവർത്തിക്കുന്നു.
 - [set_auth_cookie](./Actions/set_auth_cookie) — പ്രാമാണീകരണ കുക്കി സജ്ജമാക്കുന്നതിന് തൊട്ടുമുമ്പ് പ്രവർത്തിക്കുന്നു.
@@ -70,7 +70,7 @@ Ultimate Multisite-യിലെ എല്ലാ **59 actions**-ക്കും *
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ഒരു object database-ലേക്ക് സംഭരിച്ചതിന് ശേഷം പ്രവർത്തിക്കുന്നു.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — unlocking പ്രക്രിയയിലേക്ക് പ്രവർത്തനങ്ങൾ ചേർക്കാൻ plugin ഡെവലപ്പർമാരെ അനുവദിക്കുക.
 
-## ഫിൽട്ടറുകൾ
+## ഫിൽട്ടറുകൾ {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — പ്രാമാണീകരണ കുക്കിയുടെ കാലഹരണ കാലയളവിന്റെ ദൈർഘ്യം ഫിൽട്ടർ ചെയ്യുന്നു.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — പ്രാമാണീകരണ റീഡയറക്ട് സ്കീം ഫിൽട്ടർ ചെയ്യുന്നു.

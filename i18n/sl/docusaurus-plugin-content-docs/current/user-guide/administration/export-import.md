@@ -3,17 +3,17 @@ title: Izvoz in uvoz
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Izvoz in import
+# Izvoz in import {#export--import}
 
 Ultimate Multisite 2.9.0 dodaja enostavno orodje za **Izvoz in import** pod menijem **Tools > Export & Import**. Uporabite ga, če potrebujete paketirati eno WordPress spletno mesto v ZIP datoteko, obnoviti ta ZIP ali premestiti spletno mesto med kompatibilnimi instalacijami Ultimate Multisite in single-site WordPress.
 
-## Potrebna dovoljenja
+## Potrebna dovoljenja {#required-permissions}
 
 Morate se prijaviti kot administrator, ki ima dostop do menija **Tools** na spletnem mestu, ki ga izvozite ali importirate. Na mreži multisite uporabite račun administratorja mreže ob izvozu ali importiranju podspletnih strani z orodji Ultimate Multisite na ravni mreže.
 
 Izvozne ZIP datoteke se služe preko avtentificiranega endpointa za prenos, zato ostanite aktivno v adminsem sestanku do dokončanja prenosov in ne delite javno generirane URL-e za prenos.
 
-## Izvoz spletnega mesta v ZIP
+## Izvoz spletnega mesta v ZIP {#exporting-a-site-to-a-zip}
 
 1. V WordPress adminu za spletno mesto, ki ga želite kopirati, gre do **Tools > Export & Import**.
 2. Odprite območje za izvoz in izberite spletno mesto, ki ga želite paketirati.
@@ -23,7 +23,7 @@ Izvozne ZIP datoteke se služe preko avtentificiranega endpointa za prenos, zato
 
 Ohranite ZIP datoteko na varnem mestu. Lahko vsebuje vsebino spletnega mesta, nastavitve, medije in izbrane kode.
 
-## Kaj je vključeno pri izvozu
+## Kaj je vključeno pri izvozu {#what-the-export-includes}
 
 ZIP datoteka za izvoz lahko vsebuje:
 
@@ -34,7 +34,7 @@ ZIP datoteka za izvoz lahko vsebuje:
 
 Točna velikost ZIP arhive je odvisna od količine medijev, izbranih pluginov in tem, ter velikosti baze podatkov strani.
 
-## Import strani iz ZIP arhive
+## Import strani iz ZIP arhive {#importing-a-site-from-a-zip}
 
 1. Na ciljni WordPress strani gre do **Tools > Export & Import**.
 2. Odprite prostor za import in vnesite ZIP arhiv, ki ste ga ustvarili z orodjem Export & Import.
@@ -46,7 +46,7 @@ Točna velikost ZIP arhive je odvisna od količine medijev, izbranih pluginov in
 
 Pri instalaciji WordPressa z eno stranjo, import ZIP arhive zamenja trenutno stran s vneseno stranjo. Pred začetkom preverite popoln rezervni kopič (backup) ciljne strani in izogibajte se začetku večjem importiranja iste strani hkrati.
 
-## Omejitve in opombe o kompatibilnosti
+## Omejitve in opombe o kompatibilnosti {#limitations-and-compatibility-notes}
 
 Veliko napolnjevanja direktoriji ali medijskih knjižnic lahko povzročijo velike ZIP datoteke. Pred izvozem ali uvozom velikih spletnikov je preverite omejitve PHP naložb, omejitve izvrševanja, prostori na disku, memorijo in nastavitve časovnega roka serverja.
 Velike medijske knjižnice se lahko morajo premestiti med obdobje nizke obremenjenosti za vzdrževanje.

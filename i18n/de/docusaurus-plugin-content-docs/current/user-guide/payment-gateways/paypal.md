@@ -3,7 +3,7 @@ title: PayPal einrichten
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Einrichtung des PayPal-Gateways (v2)
+# Einrichtung des PayPal-Gateways (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
@@ -13,13 +13,13 @@ Genau wie Stripe wird PayPal häufig für Online-Zahlungen verwendet, insbesonde
 
 Beachten Sie, dass Sie ein **PayPal Business Account** benötigen, um die für diese Integration erforderlichen API-Zugangsdaten zu erhalten.
 
-## PayPal in Ihrem Netzwerk aktivieren
+## PayPal in Ihrem Netzwerk aktivieren {#enabling-paypal-on-your-network}
 
 Um PayPal als verfügbare Zahlungsmethode in Ihrem Netzwerk zu aktivieren, gehen Sie zum Tab **Ultimate Multisite > Einstellungen > Zahlungen** und aktivieren Sie das Kontrollkästchen neben PayPal.
 
 ![PayPal in aktiven Zahlungsgateways aktivieren](/img/config/settings-payment-gateways.png)
 
-## Den geführten Einrichtungsassistenten verwenden
+## Den geführten Einrichtungsassistenten verwenden {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 fügt den Zahlungsgateway-Einstellungen einen geführten PayPal-Einrichtungsassistenten hinzu. Nachdem Sie PayPal aktiviert haben, verwenden Sie den Assistenten unter **Ultimate Multisite > Einstellungen > Zahlungen**, um auszuwählen, wie Sie das Gateway verbinden möchten, und zu bestätigen, welche Zugangsdaten vor dem Speichern noch benötigt werden.
 
@@ -30,7 +30,7 @@ Der Assistent unterstützt zwei Einrichtungswege:
 
 Wenn Sie die OAuth-Option im Assistenten nicht sehen, schließen Sie den unten beschriebenen Ablauf zur manuellen Eingabe der Zugangsdaten ab. Das Gateway funktioniert mit denselben PayPal Business API-Zugangsdaten wie frühere Ultimate Multisite 2.x-Versionen.
 
-## Die PayPal-API-Zugangsdaten erhalten
+## Die PayPal-API-Zugangsdaten erhalten {#getting-the-paypal-api-credentials}
 
 Sobald PayPal als Zahlungsgateway aktiviert ist, müssen Sie die Felder für PayPal API **Username** , PayPal API **Password** und PayPal API **Signature** ausfüllen.
 

@@ -3,11 +3,11 @@ title: Zaawansowane przykłady kodu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Zaawansowane Przykłady Kodów
+# Zaawansowane Przykłady Kodów {#advanced-code-examples}
 
 Te przykłady demonstrują zaawansowane wzorce integracji z Ultimate Multisite.
 
-## Silnik Dynamicznego Ustalania Cen
+## Silnik Dynamicznego Ustalania Cen {#dynamic-pricing-engine}
 
 Silnik cenowy oparty na regułach, który stosuje zniżki za ilość, lojalność i sezonowe:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Zaawansowane Uruchamianie Strony (Site Provisioning)
+## Zaawansowane Uruchamianie Strony (Site Provisioning) {#advanced-site-provisioning}
 
 Automatyczne konfigurowanie nowych stron za pomocą pluginów, SSL, CDN, backupów i monitoringu, bazując na funkcjach planu:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## System Ograniczeń (Custom Limitations System)
+## System Ograniczeń (Custom Limitations System) {#custom-limitations-system}
 
 Śledź i egzekwuj limity zasobów z ostrzeżeniami o wykorzystaniu:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Atomic Counter BerlinDB z `increment_item()`
+## Atomic Counter BerlinDB z `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 dodał metodę `increment_item()` do klasy `Query` BerlinDB. Użyj jej do bezpiecznego, atomowego zwiększania wartości w kolumnach numerycznych, bez ryzyka wyścigu (race condition) typu odczyt-modyfikacja-zapis — jest to przydatne do liczników, kwot użycia i sprawdzania limitów żądań, które działają w przypadku równoczesnych żądań.
 
-### Sygnatura metody
+### Sygnatura metody {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 dodał metodę `increment_item()` do klasy `Query` Ber
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Podstawowe użycie
+### Podstawowe użycie {#basic-usage}
 
 ```php
 // Dodaj 1 do kolumny `api_calls` dla ID członkostwa 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Śledzenie użycia API dla każdego członkostwa
+### Śledzenie użycia API dla każdego członkostwa {#tracking-api-usage-per-membership}
 
 Praktyczny wzorzec egzekwowania limitów żądań API na poziomie członkostwa:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Dlaczego `increment_item()` zamiast `update_item()`
+### Dlaczego `increment_item()` zamiast `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Proste podejście odczyt-modyfikacja-zapis jest niebezpieczne w przypadku równoczesnych żądań:
 

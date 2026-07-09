@@ -3,7 +3,7 @@ title: Ukulawula ubulungu
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Ukulawula Ubulungu
+# Ukulawula Ubulungu {#managing-memberships}
 
 Kwi-Ultimate Multisite ungalawula ubulungu kwaye ufikelele kuyo yonke imirhumo kwinethiwekhi yakho. Hlola uze uhlele iinkcukacha zomrhumo ezifana nezicwangciso neemveliso, inani leewebhusayithi, isixa sentlawulo nokuphindaphinda kwayo, imbali yeentlawulo, kunye nezitampu zexesha.
 

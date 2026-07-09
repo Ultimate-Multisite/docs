@@ -3,28 +3,28 @@ title: Ychwanegiad y Panel Cwilio Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Ymystriedion Cwilio Hestia
+# Ymystriedion Cwilio Hestia {#hestia-control-panel-integration}
 
 Mae'r cyfarwyddyd hwn yn esbonio sut i sicrwy'r y cynnig Ultimate Multisite Hestia felly mae domenau a mapiad mewn rheoltain eich rheolyn yn cael eu cytriau (a cael eu tystiolaeth) fel Aliases Web Domain yn Hestia.
 
 - Cyfeiriad CLI Hestia: v-add-web-domain-alias / v-delete-web-domain-alias
 - Ddoci REST API ofisiylol: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Beth yw'r Cynllun?
+## Beth yw'r Cynllun? {#what-it-does}
 - Pan mae domenaid yn cael eu mapiad mewn Ultimate Multisite, mae'r cynnig yn cyflwyno'r API Hestia i chwarae:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Pan mae mapiad domenaid yn cael ei ffwrdd, mae'n chwarae:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Mae'n ychwanegu/ffwrdd'r alias `www.` yn ddefnyddiol yn ôl eich sethedig "Auto-create www subdomain" mewn sethedigo Mapiad Domenaid.
 
-## Prifysgolion
+## Prifysgolion {#prerequisites}
 - Un Hestia Web Domain sydd wedi'i gynnwys y eich installiad WordPress. Bydd y cynnig yn cytriau aliases i'r domenaid iself.
 - Mae cyffredinol API Hestia wedi'i chwarae. Gallwch gyfeiriant gan ddefnyddio pwysiciar neu hash/token API.
 
 Gweld ddefnyddio doci REST API Hestia i sicrwy'r cyffredinol API a ddefnyddio data gyfeiriant:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Cynllunio (Wizard → Integrations → Hestia)
+## Cynllunio (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Cyflwynwch y cyflwyniadau canlynol:
 
 - `WU_HESTIA_API_URL` (rhaid)
@@ -42,16 +42,16 @@ Cyflwynwch y cyflwyniadau canlynol:
 
 Gallwch rhoi'r constantau hyn i `wp-config.php`, neu ddynnu nhw yn manwl.
 
-## Cynllunio y Rheoliad
+## Cynllunio y Rheoliad {#verifying-setup}
 - Yn y stad "Testing" o'r wizard, mae'r plugin yn cyflwyno `v-list-web-domains <WU_HESTIA_ACCOUNT> json` drwy'r API. Mae ateb cyfathrebu'n llwyddiannus yn cadarnhau'r cysylltiad a'r cyfrifoldeb.
 - Ar ôl cyflwyno ddaill, gwch yn Hestia: Web > y ddaill gyntaf > Aliases. Doddiwch yn gweld y alias newydd wedi'i cyflwyno.
 
-## Nodau & Cynlluniau
+## Nodau & Cynlluniau {#notes--tips}
 - Sicrhewch bod `WU_HESTIA_WEB_DOMAIN` sydd ar gael a'r cyfrifoldeb o'r `WU_HESTIA_ACCOUNT`.
 - Os oes angen SSL, reolwch y certyddion yn Hestia. Mae'r cysylltiad hwn yn gwarchod aliasau yn unig ar hyn o bryd.
 - Gallai'r plugin hefyd ychwanegu/talybu `www.<domain>` yn ôl y sethedd "www subdomain" o'ch Cyflwyniad Ddaill (Domain Mapping).
 
-## Rheol API (cURL)
+## Rheol API (cURL) {#example-api-call-curl}
 Dyma enweth cyfathrebu (rheol i'r ddefnyddi eich gweithredol). Cynllunwch y ddogfenniad cyffredinol ar gyfer parametrau cywir.
 
 POST https://your-hestia-host:8083/api/
@@ -68,11 +68,11 @@ cmd=v-add-web-domain-alias
 
 Ar gyf ddelio, defnyddiwwch `cmd=v-delete-web-domain-alias` a'r unigol argau.
 
-## Cynllunio (Troubleshooting)
+## Cynllunio (Troubleshooting) {#troubleshooting}
 - Err HTTP o'r API: gwirioneddwch bod `WU_HESTIA_API_URL` yn cyffredinol ac yn cynnwys `/api`.
 - Err authengiad (Auth errors): gwirioneddwch `WU_HESTIA_API_USER` a'r unigol `WU_HESTIA_API_PASSWORD` neu `WU_HESTIA_API_HASH`.
 - “Missing account/base domain” yn y logau: sicrhewch bod `WU_HESTIA_ACCOUNT` a `WU_HESTIA_WEB_DOMAIN` wedi'u setio ac yn gywir mewn Hestia.
 
-## Cyfeiriadau (References)
+## Cyfeiriadau (References) {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Cyfeiriad Hestia CLI (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

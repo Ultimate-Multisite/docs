@@ -4,11 +4,11 @@ title: Filtër - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Filter: wu_generated_username_from_email
+# Filter: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Filtron emrin e gjeneruar të përdoruesit të klientit.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Lloji | Përshkrimi |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtron emrin e gjeneruar të përdoruesit të klientit.
 | $new_user_args | `array` | Array me argumente të përdoruesit të ri, ndoshta duke përfshirë emrin dhe mbiemrin. |
 | $suffix | `string` | Shto string te emri i përdoruesit për ta bërë unik. |
 
-### Që prej
+### Që prej {#since}
 
 - 3.7.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) në rreshtin 488

@@ -4,23 +4,23 @@ title: Filtre - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# Filter: ultimate_multisite_content_sync_url
+# Filter: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
 
 Geliştiricilerin, eklenti kök dizinine göre olan göreceli yolu yönetmesine olanak tanır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Ad | Tip | Açıklama |
 |------|------|-------------|
 | $dir | `string` | Erişmek istediğiniz eklenti kök dizinine göre yol. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 1.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L52) dosyasının 52. satırında tanımlanmıştır.
 
 
-## Dönüş Değeri
+## Dönüş Değeri {#returns}
 Eklenti kök dizinine göre yol.

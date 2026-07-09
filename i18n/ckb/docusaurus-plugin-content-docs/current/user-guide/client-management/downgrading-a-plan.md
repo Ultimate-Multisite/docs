@@ -3,13 +3,13 @@ title: کەمکردنەوەی پلانی کارپێکردن
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# گۆڕینی پلاندان (v2)
+# گۆڕینی پلاندان (v2) {#downgrading-a-plan-v2}
 
 _**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Multisite وەرگرتنی 2.x.**_
 
 گۆڕینی پلاندان یان ئەبۆنمنتی شتێکی باوە لە کارلێنان کە مامەڵەی کێمیان هەیە یان بڕیار داوە کە پێویستیان بە سەرچاوە زۆرێک نییە بۆ بەڕێوەبردنی subsite.
 
-## چۆنیەتی گۆڕینی پلاندان
+## چۆنیەتی گۆڕینی پلاندان {#how-to-downgrade-a-plan}
 
 کارلێن دەتوانن هەر کاتێک Login بکەن بۆ داشبۆردی admin ی subsite و لەسەر لاپەڕەی account (حساب) هەڵبژاردنی **Change** (گۆڕین).
 
@@ -25,7 +25,7 @@ _**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Mul
 
 ![صفحة حساب کە بانر گۆڕینی ئەبۆنمتنی پاشەکەوتراوی هەیە نیشان دەدات](/img/account-page/pending-change.png)
 
-### چی ڕوودەدات کاتێک کارلێنان پلاندانەکەی گۆڕێتەوە؟
+### چی ڕوودەدات کاتێک کارلێنان پلاندانەکەی گۆڕێتەوە؟ {#what-happens-when-a-user-downgrades-their-plan}
 
 گرنگە بڵێین کە گۆڕینی پلاندانەکە هیچ کاریگەریی لەسەر پێکهاتەی ئێستای subsite ی کارلێن ناکات.
 
@@ -37,7 +37,7 @@ _**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Mul
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### چی دەبێت بە پامێرەکە (payment)؟
+### چی دەبێت بە پامێرەکە (payment)؟ {#what-happens-to-the-payment}
 
 لە وەرگرتنی 2.0، دوو پێویستییەکیش نییە کە لە ڕێگەی گۆڕینی پاشکردنەوە (proration) بێت.
 

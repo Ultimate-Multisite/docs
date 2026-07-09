@@ -6,24 +6,24 @@ _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
 **Filter: Allow developers to override the current user**
 
-## Description
+## Description {#filter-wucurrentsetmembership}
 
 This filter lets developers override the default behavior of the current user. By default, the current user is determined by the `wp_get_current_user()` function. However, developers can use this filter to override the current user with a custom user ID.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$user_id` | int | The ID of the user to override the current user with. |
 | `$user` | WP_User | The current user object. |
 
-## Return
+## Return {#since}
 
 | Type | Description |
 |------|-------------|
 | WP_User | The overridden user object. |
 
-## Example
+## Example {#source}
 
 ```php
 add_filter( 'wp_get_current_user', function( $user, $user_id ) {
@@ -32,7 +32,7 @@ add_filter( 'wp_get_current_user', function( $user, $user_id ) {
 }, 10, 2 );
 ```
 
-## Notes
+## Notes {#returns}
 
 - This filter is only available in WordPress 5.0 and later.
 - The filter is only applied when the `wp_get_current_user()` function is called.

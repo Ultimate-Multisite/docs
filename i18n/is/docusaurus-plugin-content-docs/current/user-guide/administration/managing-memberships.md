@@ -3,7 +3,7 @@ title: Styring medlemmskap
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Stjórnun medlemmskapna
+# Stjórnun medlemmskapna {#managing-memberships}
 
 Í Ultimate Multisite geturðu stjóra viðskipti og aðgang allra skráningar á nýtingarnetinu þínum. Sjáðu og breytingu upplýsingar um nýtinguna eins og plan og vörur, fjölda staðna, reikningarsummi og hönnun, tengingu og tímastig.
 

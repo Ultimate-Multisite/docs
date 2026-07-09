@@ -3,7 +3,7 @@ title: កំណត់ហេតុការផ្លាស់ប្តូរ Mai
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# កំណត់ហេតុផ្លាស់ប្តូរ Mailchimp
+# កំណត់ហេតុផ្លាស់ប្តូរ Mailchimp {#mailchimp-changelog}
 
 កំណែ៖ 1.1.1 - ចេញផ្សាយនៅ 2025-09-28
 

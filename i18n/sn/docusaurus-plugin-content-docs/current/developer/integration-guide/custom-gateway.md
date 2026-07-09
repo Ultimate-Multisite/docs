@@ -3,11 +3,11 @@ title: Kuvandudzwa kweGateway Yakagadzirirwa
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Kuvandudza Gedhi Rakagadziridzwa
+# Kuvandudza Gedhi Rakagadziridzwa {#custom-gateway-development}
 
 Unogona kugadzira magedhi ekubhadhara akagadziridzwa nekuwedzera kirasi ye`Base_Gateway`.
 
-## Kirasi yeGedhi
+## Kirasi yeGedhi {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Nyoresa Gedhi
+## Nyoresa Gedhi {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Nzira Dzakakosha
+## Nzira Dzakakosha {#key-methods}
 
 | Nzira | Chinangwa |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Bata zvikumbiro zvekudzoserwa mari |
 | `get_payment_methods()` | Dzosa nzira dzekubhadhara dzakachengetwa dzemutengi |
 
-## Magwaro ekumutsiridza ehunhengo hunodzokororwa
+## Magwaro ekumutsiridza ehunhengo hunodzokororwa {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 inobvumira kubatanidzwa kwemagedhi kuzivisa kana hunhengo hunodzokororwa huine gwaro rekumutsiridza rinogona kushandiswazve `auto_renew` isati yachengetedzwa. Hook `wu_membership_has_renewal_credential` uye dzosa:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Bvisa mucherechedzo wegwaro risipo sechikamu chenzira yegedhi rako yakabudirira yekubvumidza zvakare mushure mekunge gwaro idzva rinogona kushandiswazve rachengetwa.
 
-## Mazano
+## Mazano {#tips}
 
 - Gara uchidzosa `WP_Error` pakundikana kuitira kuti Ultimate Multisite ikwanise kubata kuratidzwa kwemhosho
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Shandisa `wu_log_add()` pakunyora zvinyorwa zvakanangana negedhi
 
-## Kugona kwevanopa AI connector
+## Kugona kwevanopa AI connector {#ai-connector-provider-capabilities}
 
 Kubatanidzwa kwakagadziridzwa kunodaidza mashandiro anotsigirwa neAI connector kunofanira kuenderana neseti yevanopa OAuth inotsigirwa yakaunzwa neAI Provider for Anthropic Max v1.3.0:
 

@@ -3,33 +3,33 @@ title: Optimize Control Panel Integration
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kontrol Paneli Entegrasyonunu Geliştirme
+# Kontrol Paneli Entegrasyonunu Geliştirme {#enhance-control-panel-integration}
 
-## Genel Bakış
+## Genel Bakış {#overview}
 Enhance, güçlü barındırma otomasyonu ve yönetim yetenekleri sunan modern bir kontrol panelidir. Bu entegrasyon, Ultimate Multisite ile Enhance Control Panel arasında otomatik alan adı senkronizasyonu ve SSL sertifikası yönetimi sağlar.
 
 **İlgili Tartışma:** Topluluk ipuçları ve ek bilgiler için [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)'e bakın.
 
-## Özellikler
+## Özellikler {#features}
 - Ultimate Multisite'ta alan adları eşleştirildiğinde otomatik alan adı senkronizasyonu
 - DNS çözümlendiğinde LetsEncrypt aracılığıyla otomatik SSL sertifikası sağlanması
 - Alt alan adı modunda çalışan ağlar için alt alan adı desteği
 - Eşleştirmeler silindiğinde alan adı kaldırma
 - API kimlik bilgilerini doğrulamak için bağlantı testi
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
-### Sistem Gereksinimleri
+### Sistem Gereksinimleri {#system-requirements}
 - Kurulmuş ve erişilebilir Enhance Control Panel
 - Ultimate Multisite kurulumu, bir Enhance sunucusunda barındırılan veya ona bağlı
 - Apache web sunucusu (Enhance şu anda Apache yapılandırmalarını desteklemektedir; LiteSpeed Enterprise daha düşük maliyetle mevcuttur)
 
-### API Erişimi
+### API Erişimi {#api-access}
 API token'ları oluşturmak için Enhance Control Panel'e yönetici erişiminiz olmalıdır.
 
-## API Kimlik Bilgilerinizi Alma
+## API Kimlik Bilgilerinizi Alma {#getting-your-api-credentials}
 
-### 1. Bir API Token Oluşturma
+### 1. Bir API Token Oluşturma {#1-create-an-api-token}
 
 1. Yönetici olarak Enhance Control Panel'e giriş yapın
 2. Navigasyon menüsünde **Settings**'e tıklayın
@@ -44,7 +44,7 @@ API token'ları oluşturmak için Enhance Control Panel'e yönetici erişiminiz 
 
 Oluşturulduktan sonra, **Access Token** ve **Organization ID**'niz görüntülenecektir. Token yalnızca bir kez gösterileceği için **bunları hemen kaydedin**.
 
-### 2. Organization ID'nizi Alma
+### 2. Organization ID'nizi Alma {#2-get-your-organization-id}
 
 Organization ID, "Org ID: {your_id}" etiketli mavi bir bilgi kutusunda Access Tokens sayfasında görüntülenir.
 
@@ -55,7 +55,7 @@ Ayrıca bir müşterinin Organization ID'sini şu şekilde bulabilirsiniz:
 2. İlgili müşteri için **Manage customer**'a tıklayın
 3. URL'ye bakın - Organization ID, `/customers/` sonrasındaki alfanümerik karakterlerdir.
 
-### 3. Server ID'nizi Alma
+### 3. Server ID'nizi Alma {#3-get-your-server-id}
 
 Server ID'nizi (alan adı işlemleri için gerekli) bulmak için:
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID, UUID formatını takip eder: `00000000-0000-0000-0000-000000000000`
 
-### 4. API URL'nizi Alma
+### 4. API URL'nizi Alma {#4-get-your-api-url}
 
 API URL'niz, `/api/` eklenmiş Enhance Control Panel URL'nizdir:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Sadece `/api/` olmadan alan adını kullanmak
 - Güvenlik için HTTPS yerine HTTP kullanmak (HTTPS gereklidir)
 
-## Yapılandırma
+## Yapılandırma {#configuration}
 
-### Gerekli Sabitler
+### Gerekli Sabitler {#required-constants}
 
 Aşağıdaki sabitleri `wp-config.php` dosyanıza ekleyin:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Entegrasyon Sihirbazı ile Kurulum
+### Entegrasyon Sihirbazı ile Kurulum {#setup-via-integration-wizard}
 
 1. WordPress yöneticinizde **Ultimate Multisite** > **Settings**'e gidin
 2. **Integrations** sekmesine gidin
@@ -112,17 +112,17 @@ Aşağıdakilerden birini seçebilirsiniz:
 - Sihirbazın sabitleri otomatik olarak `wp-config.php` dosyanıza enjekte etmesine izin vermek
 - Sabit tanımlarını kopyalayıp manuel olarak eklemek
 
-## Ek WordPress Yapılandırması
+## Ek WordPress Yapılandırması {#additional-wordpress-configuration}
 
 Topluluk geri bildirimlerine ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)) dayanarak, aşağıdaki ek ayarları yapılandırmanız gerekebilir:
 
-### .htaccess Yapılandırması
+### .htaccess Yapılandırması {#htaccess-configuration}
 
 Alan adı eşleştirme sorunları yaşarsanız:
 1. Orijinal Enhance `.htaccess` dosyasını silin
 2. Yerine standart WordPress Multisite `.htaccess` dosyasını koyun
 
-### Cookie Sabitleri
+### Cookie Sabitleri {#cookie-constants}
 
 Eşleştirilen alan adları genelinde doğru çerez işleme sağlamak için bu sabitleri `wp-config.php` dosyasına ekleyin:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
-### Bir Alan Adı Eşleştirildiğinde
+### Bir Alan Adı Eşleştirildiğinde {#when-a-domain-is-mapped}
 
 1. Bir kullanıcı Ultimate Multisite'ta özel bir alan adı eşleştirir (veya yeni bir site alt alan adı modunda oluşturulur)
 2. Entegrasyon, Enhance'in API'sine bir POST isteği gönderir: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. DNS sunucunuza çözümlendiğinde, Enhance otomatik olarak LetsEncrypt aracılığıyla bir SSL sertifikası sağlar
 5. Alan adı HTTPS ile aktif hale gelir
 
-### Bir Alan Adı Kaldırıldığında
+### Bir Alan Adı Kaldırıldığında {#when-a-domain-is-removed}
 
 1. Ultimate Multisite'ta bir alan adı eşleştirmesi silinir
 2. Entegrasyon, alan adının ID'sini bulmak için Enhance'i sorgular
 3. Şu adrese bir DELETE isteği gönderilir: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance, alan adı'nızı sunucu yapılandırmasından kaldırır
 
-### DNS ve SSL Kontrolü
+### DNS ve SSL Kontrolü {#dns-and-ssl-checking}
 
 Ultimate Multisite, yerleşik DNS ve SSL kontrolü içerir:
 - Kontrol aralığını **Domain Mapping Settings**'te yapılandırabilirsiniz (varsayılan: 300 saniye/5 dakika)
@@ -157,9 +157,9 @@ Ultimate Multisite, yerleşik DNS ve SSL kontrolü içerir:
 - SSL sertifikası geçerliliği otomatik olarak kontrol edilir
 - Enhance, SSL sağlamayı otomatik olarak hallettiği için manuel SSL yapılandırmasına gerek yoktur
 
-## Kurulumu Doğrulama
+## Kurulumu Doğrulama {#verifying-setup}
 
-### Bağlantıyı Test Etme
+### Bağlantıyı Test Etme {#test-the-connection}
 
 1. Entegrasyon Sihirbazı'nda **Test Connection** adımını kullanın
 2. Eklenti, sunucunuzdaki alan adlarını listelemeyi deneyecektir
@@ -169,7 +169,7 @@ Ultimate Multisite, yerleşik DNS ve SSL kontrolü içerir:
    - Server ID geçerli
    - İzinler düzgün ayarlanmış
 
-### Bir Alan Adı Eşleştirildikten Sonra
+### Bir Alan Adı Eşleştirildikten Sonra {#after-mapping-a-domain}
 
 1. Ultimate Multisite'ta test bir alan adı eşleştirin
 2. Ultimate Multisite günlüklerini (**Ultimate Multisite** > **Logs** > **integration-enhance**) kontrol edin
@@ -178,9 +178,9 @@ Ultimate Multisite, yerleşik DNS ve SSL kontrolü içerir:
    - Yeni alan adı listede görünmelidir
 4. DNS yayıldıktan sonra, SSL'in otomatik olarak sağlanıp sağlanmadığını doğrulayın
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### API Bağlantı Sorunları
+### API Bağlantı Sorunları {#api-connection-issues}
 
 **Hata: "Enhance API'sine bağlanılamadı"**
 - `WU_ENHANCE_API_URL`'nin sonunda `/api/` içerdiğini doğrulayın
@@ -198,7 +198,7 @@ Ultimate Multisite, yerleşik DNS ve SSL kontrolü içerir:
 - Server ID'nin geçerli bir UUID formatı olduğundan emin olun
 - Sunucunun Enhance panelinizde mevcut olduğunu onaylayın
 
-### Alan Adı Eklenmedi
+### Alan Adı Eklenmedi {#domain-not-added}
 
 **Günlükleri kontrol edin:**
 1. **Ultimate Multisite** > **Logs**'a gidin
@@ -211,7 +211,7 @@ Ultimate Multisite, yerleşik DNS ve SSL kontrolü içerir:
 - Yetersiz API izinleri (token'ın System Administrator rolüne sahip olduğundan emin olun)
 - Server ID, Enhance'teki gerçek sunucuyla eşleşmiyor
 
-### SSL Sertifikası Sorunları
+### SSL Sertifikası Sorunları {#ssl-certificate-issues}
 
 **SSL sağlanmıyor:**
 - DNS'in sunucunuzun IP adresine işaret ettiğini doğrulayın
@@ -225,7 +225,7 @@ Ultimate Multisite, yerleşik DNS ve SSL kontrolü içerir:
 2. Alan adınızı bulun ve SSL durumunu kontrol edin
 3. Gerekirse SSL sağlamayı manuel olarak tetikleyebilirsiniz
 
-### DNS Kontrol Aralığı
+### DNS Kontrol Aralığı {#dns-check-interval}
 
 Alan adları veya SSL sertifikaları etkinleşmekte çok uzun sürüyorsa:
 1. **Ultimate Multisite** > **Settings** > **Domain Mapping**'e gidin
@@ -233,7 +233,7 @@ Alan adları veya SSL sertifikaları etkinleşmekte çok uzun sürüyorsa:
 3. Varsayılan 300 saniyeden daha düşük bir değere ayarlayın (minimum: 10 saniye)
 4. **Not:** Daha düşük aralıklar daha sık kontrol anlamına gelir ancak daha yüksek sunucu yükü demektir
 
-### Kimlik Doğrulama Hataları
+### Kimlik Doğrulama Hataları {#authentication-errors}
 
 **HTTP 401/403 hataları:**
 - Enhance'te API token'ınızı yeniden oluşturun
@@ -241,7 +241,7 @@ Alan adları veya SSL sertifikaları etkinleşmekte çok uzun sürüyorsa:
 - Token'ın süresinin dolmadığını kontrol edin
 - Doğru Organization ID'yi kullandığınızdan emin olun (ancak genellikle URL'de gerekli değildir)
 
-### Günlük Analizi
+### Günlük Analizi {#log-analysis}
 
 Detaylı günlük kaydı etkinleştirin:
 ```php
@@ -255,15 +255,15 @@ Ardından günlükleri şu yerlerde kontrol edin:
 - WordPress hata ayıklama günlükleri: `wp-content/debug.log`
 - Enhance panel günlükleri: Enhance'in yönetici arayüzünde mevcuttur
 
-## API Referansı
+## API Referansı {#api-reference}
 
-### Kimlik Doğrulama
+### Kimlik Doğrulama {#authentication}
 Tüm API istekleri Bearer token kimlik doğrulaması kullanır:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Kullanılan Yaygın Endpoint'ler
+### Kullanılan Yaygın Endpoint'ler {#common-endpoints-used}
 
 **Sunucuları Listeleme:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Tam API Dokümantasyonu
+### Tam API Dokümantasyonu {#full-api-documentation}
 Tam API dokümantasyonu: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## En İyi Uygulamalar
+## En İyi Uygulamalar {#best-practices}
 
-### Güvenlik
+### Güvenlik {#security}
 - **Asla API token'larını sürüm kontrolüne eklemeyin**
 - Token'ları Git'ten hariç tutulması gereken `wp-config.php` içinde saklayın
 - Uygun izinlere sahip token'lar kullanın (tam entegrasyon için System Administrator)
 - Üretim ortamları için token bitiş tarihleri belirleyin
 - Token'ları periyodik olarak değiştirin
 
-### Performans
+### Performans {#performance}
 - Aşırı API çağrılarından kaçınmak için varsayılan DNS kontrol aralığını (300 saniye) kullanın
 - Büyük ölçekli alan adı işlemleri çalıştırırken Enhance sunucu kaynaklarını izleyin
 - Bir anda çok fazla alan adı eşleştiriyorsanız, eklemeleri aşamalı yapmayı düşünün
 
-### İzleme
+### İzleme {#monitoring}
 - Entegrasyon hataları için Ultimate Multisite günlüklerini düzenli olarak kontrol edin
 - Alan adı eklenmemesi durumları için izleme kurun
 - SSL sertifikalarının doğru şekilde sağlanıp sağlanmadığını doğrulayın
 - Enhance sunucu kapasitesi ve alan adı limitleri üzerinde gözünüzü dört açın
 
-## Ek Kaynaklar
+## Ek Kaynaklar {#additional-resources}
 
 - **Enhance Resmi Dokümantasyonu:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Dokümantasyonu:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ Tam API dokümantasyonu: [https://apidocs.enhance.com](https://apidocs.enhance.c
 - **GitHub Tartışması:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Alan Adı Eşleştirme Rehberi:** Wiki sayfasında "How to Configure Domain Mapping v2" bölümüne bakın
 
-## Destek
+## Destek {#support}
 
 Sorunlarla karşılaşırsanız:
 1. Yukarıdaki Sorun Giderme bölümünü kontrol edin
@@ -326,7 +326,7 @@ Sorunlarla karşılaşırsanız:
 4. Panel'e özel sorunlar için Enhance desteğiyle iletişime geçin
 5. Topluluk yardımı için ayrıntılı hata günlükleriyle yeni bir tartışma oluşturun
 
-## Notlar
+## Notlar {#notes}
 
 - Bu entegrasyon yalnızca alan adı takma adlarını (alias) yönetir; SSL'i Enhance otomatik yönetir
 - Entegrasyon hem özel alan adı eşleştirmelerini hem de alt alan adına dayalı siteleri destekler

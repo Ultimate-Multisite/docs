@@ -3,11 +3,11 @@ title: Site Specification Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sailaren Kontseilua Jainazioa
+# Sailaren Kontseilua Jainazioa {#site-specification-skill}
 
 **Sailaren kontseilua (Site Specification) jugakundia** da irudiatu, diseinatzeko eta marka-identitatea (brand identity) hartzeko estruktura bat. Horrek **site_brief** memori horretan ematen da, zehalduetan arteko agente-ek erabiltzen dute kontestu-eraketa eta ondo jakinarazten laguntzeko.
 
-## Sailaren Kontseilua Zer da?
+## Sailaren Kontseilua Zer da? {#what-is-site-specification}
 
 Sailaren kontseilua da dokumentatu edo eskatzen da:
 
@@ -19,9 +19,9 @@ Sailaren kontseilua da dokumentatu edo eskatzen da:
 
 Hau kontseilua da zure **site_brief**, memori ezberdina (persistent memory) den agente-ek erabiltzen dute site-aren kontestuak zein jakinarazten.
 
-## Sailaren Kontseilua Nondatez Erabiltzea?
+## Sailaren Kontseilua Nondatez Erabiltzea? {#why-use-site-specification}
 
-### Zehalduetan Arteko Kontsustua (Consistency Across Sessions)
+### Zehalduetan Arteko Kontsustua (Consistency Across Sessions) {#consistency-across-sessions}
 
 site_brief ez dutenean, leku berri bat gaur duenean, site-aren objektua irudiatu behar duzu. Horrek dutenean, agente-ek hemen egiten dute:
 
@@ -30,7 +30,7 @@ site_brief ez dutenean, leku berri bat gaur duenean, site-aren objektua irudiatu
 - Kontuentu-estruktura
 - Zure biznesko ondo egindutako jarduerak
 
-### Hobitzak Kontseilua (Better Recommendations)
+### Hobitzak Kontseilua (Better Recommendations) {#better-recommendations}
 
 Agente-ek site_brief erabilten dute:
 
@@ -39,17 +39,17 @@ Agente-ek site_brief erabilten dute:
 - Zure marka-identitatearekin pareatu diseinazioak
 - Pareatu ez duzun funtunaldeak ematzea
 
-### Alda Ondo Egindua (Faster Onboarding)
+### Alda Ondo Egindua (Faster Onboarding) {#faster-onboarding}
 
 Agente-ek berriak (aldeko edo zehalduetan berriagatik) site_brief ikusten duenean, aukerak galdiztezkari jardutik lehen aurrera egin dezakete.
 
-## Sailaren Kontseilua Aurreratzea
+## Sailaren Kontseilua Aurreratzea {#initiating-site-specification}
 
-### Theme Builder Onboardingan
+### Theme Builder Onboardingan {#during-theme-builder-onboarding}
 
 Site Specification jugakundia **Theme Builder onboarding flow**-aren parte batean automatikoki aurreratzen da. Setup Assistant agenteak galdizteak egiten du eta zure site_briefa sortzen du.
 
-### Manual Aurreratzea
+### Manual Aurreratzea {#manual-initiation}
 
 Ezin ir lehen Site Specificationa gure daiteko:
 
@@ -63,9 +63,9 @@ noki
 "Mendia site-aren briefa egokitzeko lagundu"
 ```
 
-## Site Specification Prosesua
+## Site Specification Prosesua {#the-site-specification-process}
 
-### Irrenditua 1: Site-aren Amaia
+### Irrenditua 1: Site-aren Amaia {#step-1-site-purpose}
 
 Agenteak galdetzen du:
 
@@ -81,7 +81,7 @@ Nola daiteke site-aren amaia?
 
 Kategori bat aukeratu du edo amaia deszkiritu du.
 
-### Irrenditua 2: Target Publikoa
+### Irrenditua 2: Target Publikoa {#step-2-target-audience}
 
 ```
 Nola daiteke target publikoa?
@@ -96,7 +96,7 @@ Zer da irudiaren beharrak garrantzitsuak?
 
 Zer da irudiaren beharrak garrantzitsuak?
 
-### Irrenditua 3: Brand Identitatea
+### Irrenditua 3: Brand Identitatea {#step-3-brand-identity}
 
 ```
 Nola daiteke brandaren kolorrak?
@@ -113,7 +113,7 @@ Nola adierazpen egin daiteke brandaren tonoa?
 
 ```
 
-### Irrenditua 4: Biznesko Amaiak
+### Irrenditua 4: Biznesko Amaiak {#step-4-business-goals}
 
 ```
 Site-aren amaia zer eskatzen da?
@@ -132,7 +132,7 @@ Zer da amaia garrantzitsuak metrikoa?
 - Beste
 ```
 
-### Irrenditua 5: Kontentuen Estruktura
+### Irrenditua 5: Kontentuen Estruktura {#step-5-content-structure}
 
 ```
 Nola daiteke kontentua organizatuta?
@@ -151,13 +151,13 @@ Zer kontentuen bidez erabiltzen du?
 - Beste
 ```
 
-## Site_brief Memorya Zure
+## Site_brief Memorya Zure {#your-sitebrief-memory}
 
 Site Specificationa amaitu ondoren, informazioak **site_brief** gisa saioz daiteke agentearen memoryan. Horren da irudialko emateko:
 
-## Site-brief-enpatu eta jartzea
+## Site-brief-enpatu eta jartzea {#viewing-and-updating-your-sitebrief}
 
-### Site-briefa ikuspe
+### Site-briefa ikuspe {#view-your-sitebrief}
 Gaitzi agentariari:
 
 ```
@@ -172,7 +172,7 @@ noki
 
 Agentariak informazioa saioa izango du.
 
-### Site-briefa updateatzea
+### Site-briefa updateatzea {#update-your-sitebrief}
 Sitea ondorioz handitu eta gehiago dauden, updatea dezakezu:
 
 ```
@@ -187,9 +187,9 @@ noki
 
 Hau Site Specification skilla berri ezartuko da, jakin dituen informazioa lehen puntak izateko.
 
-## Agentariek site-briefa erabiltzen dira
+## Agentariek site-briefa erabiltzen dira {#how-agents-use-sitebrief}
 
-### Dizainio rekomendazioak
+### Dizainio rekomendazioak {#design-recommendations}
 Dizainio hasierako erantzunak gautela site-briefan dagoen:
 
 ```
@@ -197,7 +197,7 @@ Zure: "Meni homepagea redizain"
 Agentari: "Site-briefan dagoen informazioaren arabera, 25-45 urteko women irudietatik aurkitzen dira eta gertu-arteski tono bat daude. Handmade jewelry eta erabilgarritasun arloak emateko dizainio bat ezarri egingo."
 ```
 
-### Funktionalitatearen jendera
+### Funktionalitatearen jendera {#feature-suggestions}
 Agentariek zure objektuetan ondo egon dituzten funtzioak saioatzen dute:
 
 ```
@@ -205,22 +205,22 @@ Zure: "Nola funtazioak gehiago ematea dauden?"
 Agentari: "Klientziaren fideltasunarekin fokatu duen e-commerce store bat dela, fideltasun programa, klientziaren irudien lekuak (reviews), email newsletter eta produkzio rekomendazioak saioatzen dut."
 ```
 
-### Kontuentuaren jendera
+### Kontuentuaren jendera {#content-structure}
 Agentariek zure estruktura eskatuta kontuentuaren organizazioa saioatzen dute:
 
 Sagitale: "Zer moduan ez da blogu bide?"
 Agentea: "WordPress-ek product catalogdiare blogu erabiltzen du, non postezak produkt kategorian sortzeko eta 'styling guides' egiteko ematen dut."
 
-## Praktikak Hobola
+## Praktikak Hobola {#best-practices}
 
-### Ezin da Ezpiritu
+### Ezin da Ezpiritu {#be-specific}
 
 "Ez dago guztiaren" edo "general audience" ez baduzu, zure publikoa deskribatu:
 
 - ✓ "Emezak 25-45 urtean, errespetu eta moda eskaintzen interes dituztenak"
 - ✗ "Guztia"
 
-### Aurreratuta Updatea
+### Aurreratuta Updatea {#update-regularly}
 
 Zure webu aurrekin handitu ondorioz, zure `site_brief` updateatu:
 
@@ -229,14 +229,14 @@ Zure webu aurrekin handitu ondorioz, zure `site_brief` updateatu:
 - Zure brand identitatea aldatuenean
 - Zure negozioa partebaitzak aldatuenean
 
-### Terminologia Ondoan Mantitu
+### Terminologia Ondoan Mantitu {#use-consistent-terminology}
 
 Sesio guztietan beste termino ezberdinetatik erabiliz:
 
 - ✓ "sustainable jewelry" (ez "eco-friendly jewelry" eta "green products") esaten ditu
 - ✓ Publikoa bere felpena egiteko kontinua erabiltu
 
-### Kontestu Inkluditu
+### Kontestu Inkluditu {#include-context}
 
 Agenteak informazioa zehazteko kontestuak emitu:
 
@@ -244,7 +244,7 @@ Agenteak informazioa zehazteko kontestuak emitu:
 - "Publikoa teknologiazko eta diseinu modern bat eskatzen dituz."
 - "Bootstrapped startup batzuk dira, gertatzen da soluzioak kostu-efektiboa izan behar dute."
 
-## Theme Builder Onboardingarekin Hautak
+## Theme Builder Onboardingarekin Hautak {#relationship-to-theme-builder-onboarding}
 
 Site Specification skill-ek **Theme Builder onboarding flow**-re integratu dago. Onboardinga amaitu ondoren, zure `site_brief` informazioak ematen duten beti sortuta da.
 
@@ -254,7 +254,7 @@ Zure spesifikazioa independentean ere eratu dezakezu, hori nahi du:
 - Zure webu aurrekin handitu ondoren `site_brief` updateatzea
 - Theme Builder gaur egindian hasten den artean detallatuta spesifikazioa sortzeko
 
-## Problema Eratu
+## Problema Eratu {#troubleshooting}
 
 **Mezuak ez da erabiltzen ari dela**
 - Agenteak memoria (memory) erabiliz lehenengatik kontrolatu
@@ -270,7 +270,7 @@ Zure spesifikazioa independentean ere eratu dezakezu, hori nahi du:
 - Hau daiteke site_brief-ak eguneratuta dagoenean jarri
 - Proposak berri kontekstua ematen dituzteko
 
-## Irudiak
+## Irudiak {#next-steps}
 
 Site specification-ak definitu egin ondoren:
 

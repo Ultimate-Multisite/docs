@@ -4,23 +4,23 @@ title: පෙරහන - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Filter: wu_current_set_site
+# Filter: wu_current_set_site {#filter-wucurrentsetsite}
 
 සංවර්ධකයන්ට පෙරනිමි හැසිරීම වෙනස් කර වත්මන් අඩවිය වෙනස් ලෙස සැකසීමට ඉඩ දෙයි.
 
-## පරාමිතීන්
+## පරාමිතීන් {#parameters}
 
 | නම | වර්ගය | විස්තරය |
 |------|------|-------------|
 | $site | `\WP_Ultimo\Models\Site` | සැකසිය යුතු වත්මන් අඩවිය. |
 | $ | `self` | Current class instance එක. |
 
-### සිට
+### සිට {#since}
 
 - 2.0.9
-### මූලාශ්‍රය
+### මූලාශ්‍රය {#source}
 
 [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L331) හි 331 වන පේළියේ අර්ථ දක්වා ඇත
 
 
-## ආපසු ලබාදේ
+## ආපසු ලබාදේ {#returns}

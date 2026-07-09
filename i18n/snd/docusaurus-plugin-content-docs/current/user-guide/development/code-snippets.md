@@ -3,7 +3,7 @@ title: ڪوڊ سنيپٽس
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 لاءِ کوڈ سنيپٹس
+# v2 لاءِ کوڈ سنيپٹس {#code-snippets-for-v2}
 
 بنیادی طور تے، **WordPress** لکو کوڈ سنيپٹس وہ کام کرن واسطے استعمال کی جاتی ہیں جن کے لیے شاید کوئی الگ چھوٹی پگئنٹ (plugin) درکار ہو سکے۔ یہ کوڈ سنيپٹس WordPress کے کور یا تھیم فائل میں سے کسی ایک میں رکھے جاتے ہیں (عام طور پر آپ کے تھیم کی functions.php فائل میں)، یا انہیں MU پگئنٹ کے طور پر استعمال کیا جا سکتا ہے۔
 
@@ -15,7 +15,7 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**매پڈ ڈومینز میں Font-Icons کے ساتھ CORS مسائل کو ٹھیک کرنا**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Account مینو آئٹم کی جگہ تبدیل کرنا
+## Account مینو آئٹم کی جگہ تبدیل کرنا {#changing-the-position-of-the-account-menu-item}
 
 اپنے کلائنٹ کے ڈیش بورڈ پر Account مینو آئٹم کی جگہ بدلنے کے لیے، بس درج ذیل کوڈ سنيپٹ کو اپنے مین سائٹ کے فعال تھیم کی functions.php میں شامل کر دیں۔ آپ اس سنيپٹ کو اپنی کسی mu-plugin یا کسٹم پگئنٹ کے اندر بھی رکھ سکتے ہیں۔
 
@@ -37,8 +37,8 @@ add_filter('wu_my_account_menu_position', function() { return 10; // اس ویل
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## میپ شدہ ڈومینز میں Font-Icons کے ساتھ CORS مسائل کو ٹھیک کرنا
-## میپ شدہ ڈومینز میں Font-Icons کے ساتھ CORS مسائل کو ٹھیک کرنا
+## میپ شدہ ڈومینز میں Font-Icons کے ساتھ CORS مسائل کو ٹھیک کرنا {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## میپ شدہ ڈومینز میں Font-Icons کے ساتھ CORS مسائل کو ٹھیک کرنا {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 کسی ڈومین کو سب-سائٹ پر میپ کرنے کے بعد آپ کو یہ پتہ چل سکتا ہے کہ سائٹ کو کسٹم فونٹس لوڈ کرنے میں دشواری ہو رہی ہے۔ یہ آپ کے سرور کی سیٹنگز پر ایک کراس-اوورنگ بلاک (cross-origin block) کی وجہ سے ہوتا ہے۔
 
@@ -50,7 +50,7 @@ Apache
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 توهان جي سرور جي ڪيپشن فائل (جنهن جو مقام هر سرور تي مختلف ٿيندو آهي)، هي شي شامل ڪريو:
 

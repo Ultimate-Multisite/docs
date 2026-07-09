@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 जेव्हा लॉग-इन प्रमाणीकरण (authentication) कुकी सेट केली जाते, तेव्हा या ॲक्शनला लगेच कार्यान्वित केले जाते.
 
-## पॅरामीटर्स (Parameters)
+## पॅरामीटर्स (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | प्रमाणीकरण योजना (Authentication scheme). डीफॉल्ट 'logged_in' आहे. |
 | $token | `string` | या कुकीसाठी वापरण्यासाठी वापरकर्त्याचा सेशन टोकन (session token). |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> पॅरामीटर जोडण्यात आला.
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) मध्ये लाइन १४१ वर परिभाषित केले आहे.

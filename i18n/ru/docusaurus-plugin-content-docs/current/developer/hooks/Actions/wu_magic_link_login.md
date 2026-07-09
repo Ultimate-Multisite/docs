@@ -4,21 +4,21 @@ title: Действие - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Действие: wu_magic_link_login
+# Действие: wu_magic_link_login {#action-wumagiclinklogin}
 
 Вызывается после того, как пользователь вошёл в систему через магическую ссылку.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $user_id | `int` | Идентификатор пользователя. |
 | $site_id | `int` | Идентификатор сайта. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L240) на строке 240

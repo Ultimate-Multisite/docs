@@ -3,31 +3,31 @@ title: Ukuqonda i-Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ukuqonda i-Ultimate Multisite Dashboard
+# Ukuqonda i-Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
 
 Ngaphambi kokuba singene ngokujulile ezinkethweni zokuhlela ezithuthuke kakhulu nasezicini zokusebenza ze-Ultimate Multisite, ake sibheke i-dashboard.
 
 Njengama-plugin amaningi e-WordPress, i-Ultimate Multisite yakha okufakiwe kwemenyu ezingeni lenethiwekhi okunesihloko esithi **Ultimate Multisite** okunokufakiwe kwemenyu engaphansi okuningi ngaphansi kwakho.
 
-## Amawijethi e-Network Dashboard
+## Amawijethi e-Network Dashboard {#network-dashboard-widgets}
 
 I-Ultimate Multisite ifaka amawijethi ambalwa awusizo ku-dashboard yezinga lenethiwekhi. Le dashboard itholakala ngokuzulazula uye ku-**My Sites → Network Admin → Dashboard**. Amawijethi aklanyelwe ukunikeza umlawuli wenethiwekhi ukufinyelela okulula olwazini nasezenzweni ezivamile.
 
 ![I-Network Dashboard enamawijethi e-Ultimate Multisite](/img/admin/network-dashboard-full.png)
 
-### Izinyathelo Zokuqala
+### Izinyathelo Zokuqala {#first-steps}
 
 ![Iwijethi ethi Izinyathelo Zokuqala](/img/admin/network-dashboard-first-steps.png)
 
 Le wijethi ivela ekufakweni okusha kwe-Ultimate Multisite futhi ikhumbuza umlawuli wenethiwekhi ukuthi aqedele imisebenzi eyengeziwe njengokuhlela indlela yokukhokha nokwakha i-akhawunti yokuhlola.
 
-### Isifinyezo
+### Isifinyezo {#summary}
 
 ![Iwijethi yesifinyezo](/img/admin/network-dashboard-summary.png)
 
 Iwijethi yeSifinyezo ibika ngenani lokubhalisa kanye nemali engenayo yalo ngalolo suku. I-MRR (Monthly Recurring Revenue) ikhombisa inani eliphelele elilindelekile kumakhasimende anobulungu obukhiqiza imali engenayo.
 
-### Ukusakazwa Komsebenzi
+### Ukusakazwa Komsebenzi {#activity-stream}
 
 ![Iwijethi yokusakazwa komsebenzi](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Le wijethi ibika ngezehlakalo kuyo yonke i-Ultimate Multisite. Izehlakalo zihlan
 
 Sicela ubheke isigaba sezehlakalo semibhalo ukuze uthole incazelo enemininingwane eyengeziwe.
 
-### Njengamanje
+### Njengamanje {#right-now}
 
 ![Iwijethi ethi Njengamanje](/img/admin/network-dashboard-right-now.png)
 
 Le wijethi ewusizo ibonisa isifinyezo esifushane sabasebenzisi namasayithi kunethiwekhi. Izinqamuleli ezisebenziseka kalula phezulu zivumela ukufinyelela ngokuchofoza okukodwa ukuze kwakhiwe amasayithi amasha noma abasebenzisi.
 
-### Izindaba Nezingxoxo
+### Izindaba Nezingxoxo {#news-and-discussions}
 
 ![Iwijethi yezindaba nezingxoxo](/img/admin/network-dashboard-news.png)
 
 Le wijethi ilanda futhi ibonise izindaba zakamuva ze-Ultimate Multisite. Hlala uyibhekile le wijethi ukuze uthole ulwazi mayelana nezibuyekezo, amaphutha abalulekile, nezilungiso zokuphepha.
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#ultimate-multisite-dashboard}
 
 Lapho i-dashboard yezinga lenethiwekhi yethula ulwazi oluphelele mayelana nenethiwekhi, i-Ultimate Multisite dashboard (etholakala ezingeni eliphezulu lemenyu ye-Ultimate Multisite) yethula ulwazi mayelana nesevisi.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-### Ukukhula kwe-Monthly Recurring Revenue
+### Ukukhula kwe-Monthly Recurring Revenue {#monthly-recurring-revenue-growth}
 
 Ishadi le-MRR (Monthly Recurring Revenue) libonisa ukuhlukaniswa kwemali engenayo kwanyanga zonke esikhathini sekhalenda sezinyanga eziyi-12.
 
@@ -61,7 +61,7 @@ Ishadi le-MRR (Monthly Recurring Revenue) libonisa ukuhlukaniswa kwemali engenay
 
 Imali engenayo entsha ilandelwa ngombala oluhlaza okwesibhakabhaka kuyilapho ukukhansela kuboniswa ngombala obomvu.
 
-### Ukusekelwa Kwebanga Losuku
+### Ukusekelwa Kwebanga Losuku {#date-range-support}
 
 Kuye ngenani lamakhasimende nomsebenzi, izibalo zingaba ziningi kakhulu. Ukusekelwa kwebanga losuku okwakhelwe ku-dashboard kuvumela umlawuli wenethiwekhi ukuthi agxile kuphela olwazini nangesikhathi esidingekayo.
 

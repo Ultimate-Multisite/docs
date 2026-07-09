@@ -4,11 +4,11 @@ title: Iragazkia - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Iragazkia: wu_mt_url_replacements
+# Iragazkia: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 Iragazi URL ordezkapen-bikoteak.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Iragazi URL ordezkapen-bikoteak.
 | $new_url | `string` | URL berria. |
 | $blog_id | `int` | Blogaren IDa. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 1.0.0
-### Iturria
+### Iturria {#source}
 
 [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) fitxategian definitua, 151. lerroan

@@ -3,7 +3,7 @@ title: Actualis planum
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan Actualizándote (v2)
+# Plan Actualizándote (v2) {#upgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
@@ -39,7 +39,7 @@ Después de completar el pago, los nuevos producto(s) se añadirán a la cuenta 
 
 ##
 
-## Rutas de Actualización y Desactualización (Upgrade and Downgrade Paths)
+## Rutas de Actualización y Desactualización (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 En cada uno de tus productos, tendrás una pestaña llamada **Up & Downgrades**. La primera opción en esa pestaña es un campo llamado **Plan Group** (Grupo de Plan).
 

@@ -3,11 +3,11 @@ title: Innebygde agenter
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Innebygde agenter
+# Innebygde agenter {#built-in-agents}
 
 Gratis AI Agent v1.9.0 leveres med fem innebygde agenter, hver forhåndskonfigurert med et fokusert sett med verktøy, en tilpasset systemprompt og startforslag som passer til vanlige oppgaver innenfor det området. Å bytte mellom agenter endrer hva assistenten kan gjøre og hvordan den svarer — uten noen konfigurasjon fra din side. Superdav AI Agent v1.18.0 kan legge til tidsplanbevisste verktøy, påminnelsesoppføringer, godkjenningsporter og SMS-varsler i disse arbeidsflytene når de relaterte integrasjonene er konfigurert.
 
-## Hva er en agent?
+## Hva er en agent? {#what-is-an-agent}
 
 Hver agent er en navngitt konfigurasjonsprofil som kombinerer:
 
@@ -15,7 +15,7 @@ Hver agent er en navngitt konfigurasjonsprofil som kombinerer:
 - **Systemprompt** — instruksjoner som angir agentens tone, prioriteringer og begrensninger
 - **Forslag** — forhåndsskrevne prompter som vises i chattegrensesnittet for å hjelpe deg raskt i gang
 
-## Tilgang til agentvelgeren
+## Tilgang til agentvelgeren {#accessing-the-agent-picker}
 
 1. Åpne **Gratis AI Agent**-panelet i WordPress-adminsidefeltet.
 2. Klikk på **agentikonet** øverst til venstre i chatteoverskriften (ikonet endres for å gjenspeile den aktive agenten).
@@ -24,9 +24,9 @@ Hver agent er en navngitt konfigurasjonsprofil som kombinerer:
 
 Du kan også bytte agenter midt i en samtale — den nye agentens systemprompt trer i kraft fra neste melding.
 
-## De fem innebygde agentene
+## De fem innebygde agentene {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fokus:** Opprette og redigere innlegg, sider og kontaktskjemaer.
 
@@ -47,7 +47,7 @@ Du kan også bytte agenter midt i en samtale — den nye agentens systemprompt t
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fokus:** Ende-til-ende-oppretting av nettsted fra én enkelt prompt.
 
@@ -70,7 +70,7 @@ Du kan også bytte agenter midt i en samtale — den nye agentens systemprompt t
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fokus:** Visuell tilpasning — farger, typografi, CSS og blokkmønstre.
 
@@ -87,7 +87,7 @@ Du kan også bytte agenter midt i en samtale — den nye agentens systemprompt t
 - *Ta et skjermbilde av forsiden og fortell meg hva du ville forbedret.*
 - *Opprett et gjenbrukbart hero-blokkmønster med et heldekkende bakgrunnsbilde og sentrert overskrift.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokus:** Finne, installere og administrere WordPress plugins.
 
@@ -105,7 +105,7 @@ Du kan også bytte agenter midt i en samtale — den nye agentens systemprompt t
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fokus:** Svare på spørsmål om nettstedsinnhold, innstillinger og WordPress-konfigurasjon.
 
@@ -124,7 +124,7 @@ Du kan også bytte agenter midt i en samtale — den nye agentens systemprompt t
 
 ---
 
-## Superdav-automatiseringsintegrasjoner
+## Superdav-automatiseringsintegrasjoner {#superdav-automation-integrations}
 
 Når Superdav AI Agent v1.18.0-integrasjoner er konfigurert, kan innebygde agenter delta i tryggere automatiseringsarbeidsflyter som tar hensyn til tidsplaner:
 
@@ -138,11 +138,11 @@ Anbefalt arbeidsflyt: be agenten om å forberede meldingen eller handlingen, gje
 
 ---
 
-## Tilpasse agenter
+## Tilpasse agenter {#customising-agents}
 
 Hver innebygd agent kan utvides eller erstattes gjennom `gratis_ai_agent_agents`-filteret.
 
-### Legge til en egendefinert systemprompt i en eksisterende agent
+### Legge til en egendefinert systemprompt i en eksisterende agent {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Registrere en ny agent
+### Registrere en ny agent {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Den nye agenten vises i agentvelgeren umiddelbart etter at filteret kjører.
 
-### Fjerne en innebygd agent
+### Fjerne en innebygd agent {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

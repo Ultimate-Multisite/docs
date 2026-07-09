@@ -4,23 +4,23 @@ title: Filter - wu_stripe_create_payment_intent_args
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# Filter: wu_stripe_create_payment_intent_args
+# Filter: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
 
 Filtert d'Payment-Intent-Argumenter.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
 | $intent_args | `array` | D'Lëscht vun den Intent-Argumenter. |
 | $stripe_gateway | `\Stripe_Gateway` | . |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/gateways/class-stripe-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-stripe-gateway.php#L377) op Zeil 377
 
 
-## Retourwäerter
+## Retourwäerter {#returns}

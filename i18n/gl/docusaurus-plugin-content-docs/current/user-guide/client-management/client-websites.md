@@ -3,7 +3,7 @@ title: Webs dos clientes
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Os Webs do Nosos Clientes (v2)
+# Os Webs do Nosos Clientes (v2) {#your-clients-websites-v2}
 
 Depois de se registar na nosa rede, os vuestros clientes poden acceder ao seu dashboard.
 

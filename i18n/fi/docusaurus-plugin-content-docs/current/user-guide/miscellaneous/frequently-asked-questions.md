@@ -3,7 +3,7 @@ title: Usein kysytyt kysymykset
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Usein kysytyt kysymykset
+# Usein kysytyt kysymykset {#frequently-asked-questions}
 
 Tässä on joitakin yleisimpiä **Usein kysyttyjä kysymyksiä**, jotka esiin tulevat usein tukipyynnöissä.
 

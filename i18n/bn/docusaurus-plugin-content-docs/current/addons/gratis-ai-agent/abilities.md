@@ -3,7 +3,7 @@ title: ক্ষমতা নির্দেশিকা
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities Reference (ক্ষমতা নির্দেশিকা)
+# Abilities Reference (ক্ষমতা নির্দেশিকা) {#abilities-reference}
 
 Abilities হলো সেই মৌলিক কাজগুলো (atomic actions) যা Gratis AI Agent আপনার WordPress ইনস্টলেশনে ব্যবহার করতে পারে। প্রতিটি ability একটি রেজিস্টার্ড PHP class যা একটি JSON schema প্রকাশ করে — এজেন্ট রানটাইমে এই schema পড়ে বুঝতে পারে যে কী কী প্যারামিটার প্রয়োজন এবং ability টি কী ধরনের ডেটা ফেরত দেবে।
 
@@ -11,11 +11,11 @@ Abilities হলো সেই মৌলিক কাজগুলো (atomic acti
 
 ---
 
-## Custom Post Types (কাস্টম পোস্ট টাইপ)
+## Custom Post Types (কাস্টম পোস্ট টাইপ) {#custom-post-types}
 
 এই ability গুলো এজেন্ট দ্বারা রেজিস্টার করা কাস্টম পোস্ট টাইপ (CPTs) পরিচালনা করে। এই রেজিস্ট্রেশনগুলো WordPress options টেবিলে সেভ করা হয়, যাতে প্লাগইন নিষ্ক্রিয় (deactivate) এবং পুনরায় সক্রিয় (reactivate) হলেও এগুলো টিকে থাকে।
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 একটি নতুন কাস্টম পোস্ট টাইপ রেজিস্টার করে।
 
@@ -28,127 +28,127 @@ Abilities হলো সেই মৌলিক কাজগুলো (atomic acti
 | `plural_label` | string | Yes (হ্যাঁ) | মানুষের পড়ার উপযোগী বহুবচন নাম, যেমন: `Portfolio` |
 | `public` | bool | (Optional) | Whether the post type should be visible on the front end. |
 
-### `delete_post_type`
+### `delete_post_type` {#listposttypes}
 Deletes a post type.
 
-### `get_post_type`
+### `get_post_type` {#deleteposttype}
 Retrieves information about a post type.
 
-### `register_post_type`
+### `register_post_type` {#custom-taxonomies}
 Registers a new post type.
 
-### `unregister_post_type`
+### `unregister_post_type` {#registertaxonomy}
 Unregisters a post type.
 
-### `get_all_post_types`
+### `get_all_post_types` {#listtaxonomies}
 Retrieves a list of all registered post types.
 
-### `get_post_type_details`
+### `get_post_type_details` {#deletetaxonomy}
 Retrieves detailed information for a specific post type.
 
-### `create_post_type`
+### `create_post_type` {#design-system}
 Creates a new post type with specified arguments.
 
-### `update_post_type`
+### `update_post_type` {#injectcustomcss}
 Updates an existing post type.
 
-### `delete_post_type_by_slug`
+### `delete_post_type_by_slug` {#addblockpattern}
 Deletes a post type using its slug.
 
-### `get_post_type_by_slug`
+### `get_post_type_by_slug` {#listblockpatterns}
 Retrieves a post type by its slug.
 
-### `list_all_post_types`
+### `list_all_post_types` {#setsitelogo}
 Lists all available post types.
 
-### `get_post_type_info`
+### `get_post_type_info` {#applythemejsonpreset}
 Gets detailed info for a post type.
 
-### `create_post_type_with_args`
+### `create_post_type_with_args` {#global-styles}
 Creates a post type using arguments.
 
-### `update_post_type_with_args`
+### `update_post_type_with_args` {#getglobalstyles}
 Updates a post type using arguments.
 
-### `delete_post_type_by_slug_with_args`
+### `delete_post_type_by_slug_with_args` {#setglobalstyles}
 Deletes a post type using slug and arguments.
 
-### `get_post_type_by_slug_with_args`
+### `get_post_type_by_slug_with_args` {#resetglobalstyles}
 Retrieves a post type using slug and arguments.
 
-### `list_post_types_with_args`
+### `list_post_types_with_args` {#navigation-menus}
 Lists post types using arguments.
 
-### `get_post_type_details_with_args`
+### `get_post_type_details_with_args` {#createmenu}
 Gets detailed post type info using arguments.
 
-### `create_post_type_with_args_and_capability`
+### `create_post_type_with_args_and_capability` {#updatemenu}
 Creates a post type with arguments and capabilities.
 
-### `update_post_type_with_args_and_capability`
+### `update_post_type_with_args_and_capability` {#addmenuitem}
 Updates a post type with arguments and capabilities.
 
-### `delete_post_type_by_slug_with_args_and_capability`
+### `delete_post_type_by_slug_with_args_and_capability` {#removemenuitem}
 Deletes a post type with arguments and capabilities.
 
-### `get_post_type_by_slug_with_args_and_capability`
+### `get_post_type_by_slug_with_args_and_capability` {#listmenus}
 Retrieves a post type with arguments and capabilities.
 
-### `list_post_types_with_args_and_capability`
+### `list_post_types_with_args_and_capability` {#options-management}
 Lists post types with arguments and capabilities.
 
-### `get_post_type_details_with_args_and_capability`
+### `get_post_type_details_with_args_and_capability` {#getoption}
 Gets detailed post type info with arguments and capabilities.
 
-### `create_post_type_with_args_and_capability_and_supports`
+### `create_post_type_with_args_and_capability_and_supports` {#setoption}
 Creates a post type with arguments, capabilities, and supports.
 
-### `update_post_type_with_args_and_capability_and_supports`
+### `update_post_type_with_args_and_capability_and_supports` {#deleteoption}
 Updates a post type with arguments, capabilities, and supports.
 
-### `delete_post_type_by_slug_with_args_and_capability_and_supports`
+### `delete_post_type_by_slug_with_args_and_capability_and_supports` {#listoptions}
 Deletes a post type with arguments, capabilities, and supports.
 
-### `get_post_type_by_slug_with_args_and_capability_and_supports`
+### `get_post_type_by_slug_with_args_and_capability_and_supports` {#content-management}
 Retrieves a post type with arguments, capabilities, and supports.
 
-### `list_post_types_with_args_and_capability_and_supports`
+### `list_post_types_with_args_and_capability_and_supports` {#createpost}
 Lists post types with arguments, capabilities, and supports.
 
-### `get_post_type_details_with_args_and_capability_and_supports`
+### `get_post_type_details_with_args_and_capability_and_supports` {#updatepost}
 Gets detailed post type info with arguments, capabilities, and supports.
 
-### `create_post_type_with_all_args`
+### `create_post_type_with_all_args` {#batchcreateposts}
 Creates a post type using all available arguments.
 
-### `update_post_type_with_all_args`
+### `update_post_type_with_all_args` {#setfeaturedimage}
 Updates a post type using all available arguments.
 
-### `delete_post_type_with_all_args`
+### `delete_post_type_with_all_args` {#createcontactform}
 Deletes a post type using all available arguments.
 
-### `get_post_type_with_all_args`
+### `get_post_type_with_all_args` {#visual-review}
 Retrieves a post type using all available arguments.
 
-### `list_post_types_with_all_args`
+### `list_post_types_with_all_args` {#capturescreenshot}
 Lists post types using all available arguments.
 
-### `get_post_type_details_with_all_args`
+### `get_post_type_details_with_all_args` {#comparescreenshots}
 Gets detailed post type info using all available arguments.
 
-### `create_post_type_with_all_args_and_meta`
+### `create_post_type_with_all_args_and_meta` {#reviewpagedesign}
 Creates a post type using all arguments and meta.
 
-### `update_post_type_with_all_args_and_meta`
+### `update_post_type_with_all_args_and_meta` {#installable-abilities}
 Updates a post type using all arguments and meta.
 
-### `delete_post_type_with_all_args_and_meta`
+### `delete_post_type_with_all_args_and_meta` {#listavailableabilities}
 Deletes a post type using all arguments and meta.
 
-### `get_post_type_with_all_args_and_meta`
+### `get_post_type_with_all_args_and_meta` {#installability}
 Retrieves a post type using all arguments and meta.
 
-### `list_post_types_with_all_args_and_meta`
+### `list_post_types_with_all_args_and_meta` {#recommendplugin}
 Lists post types using all arguments and meta.
 
 ### `get_post_type_details_with_all_args_and_meta`

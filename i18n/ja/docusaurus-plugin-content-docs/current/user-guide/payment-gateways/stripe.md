@@ -3,19 +3,19 @@ title: Stripe の設定
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway の設定（v2）
+# Stripe Gateway の設定（v2） {#setting-up-the-stripe-gateway-v2}
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
 支払い設定ページでは、Stripe、Stripe Checkout、PayPal、手動の最大 4 つの支払い方法を有効化できます。この記事では、**Stripe** との連携方法を説明します。
 
-## Stripe の有効化
+## Stripe の有効化 {#enabling-stripe}
 
 ネットワークで Stripe を利用可能な支払いゲートウェイとして有効化するには、**Ultimate Multisite > 設定 > 支払い** に移動し、有効な支払いゲートウェイセクションで **Stripe** または **Stripe Checkout** の横にあるトグルにチェックを入れます。
 
 ![有効な支払いゲートウェイで Stripe を有効化](/img/config/settings-payment-gateways.png)
 
-### Stripe と Stripe Checkout の違い:
+### Stripe と Stripe Checkout の違い: {#stripe-vs-stripe-checkout}
 
 **Stripe:** この方法では、支払い手続き中にクレジットカード番号を入力する欄が表示されます。
 
@@ -47,7 +47,7 @@ Stripe Dashboard で、右上の **開発者** をクリックし、左メニュ
 
 ![Ultimate Multisite 設定に Stripe キーを貼り付け](/img/config/settings-payment-gateways.png)
 
-## Stripe Webhook の設定
+## Stripe Webhook の設定 {#setting-up-stripe-webhook}
 
 Stripe は、**あなたの Stripe Account** でイベントが発生するたびに Ultimate Multisite へ通知する Webhook イベントを送信します。
 

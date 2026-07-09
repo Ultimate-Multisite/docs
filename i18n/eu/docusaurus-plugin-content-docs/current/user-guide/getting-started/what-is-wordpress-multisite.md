@@ -3,7 +3,7 @@ title: Zer da WordPress Multisite-ak?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Zer da WordPress Multisite-ak?
+# Zer da WordPress Multisite-ak? {#what-is-wordpress-multisite}
 
 WordPress-en bestearen bateneko funtazioa da 'Multisite', eta hori bere lehen erabilera 2010an, WordPress 3.0 iradokizunean dagoela. Horrek indaritzak batzuk hartu du, nahiz eta horiek berri funtazioak introduzi dezaten eta segurtasunaren jarduera hobetzeko.
 
@@ -11,7 +11,7 @@ Espeziatik, WordPress Multisite-a irudi ez da hau: Unikuntza bat du WordPress in
 
 ##
 
-## Zer da WordPress Multisite-ak?
+## Zer da WordPress Multisite-ak? {#what-exactly-is-wordpress-multisite}
 
 Multisite-ak da WordPress funtazio bat, eta horrek asko webgunei iruditzen duen WordPress instalazio batzuk irudi egiteko ematen du. Multisite aktibatu denean, orihala WordPress webgunea iruditzen du "webgunei network" (network of sites) gisa ematutako funtazioa suportatzeko.
 
@@ -23,7 +23,7 @@ Hau da multisitearen garrantzitsuena bat, honerek ematen du zerbait webguneiak g
 
 ##
 
-## Subdomain edo Subdirectory?
+## Subdomain edo Subdirectory? {#subdomain-or-subdirectory}
 
 WordPress Multisite-ak erabilera ikiak dira – eta bere instalazio normala multisite-ra iruditzen duenean, bat ere elezio behar duzu:
 
@@ -49,7 +49,7 @@ WordPress-en subdomain modua kon konprobitzailearen bat da SSL cobertura (HTTPS)
 
 Subdirektori modua kontrako, subsiteak subdomeniu-baziko nettorekinari erreguntzen dira gixona webgailuak, zehatz, eta horrek bere subsitearen kontuerdia SEO performantia ez eskaintzen duela euskarri da.
 
-## Super Admina
+## Super Admina {#the-super-admin}
 
 WordPress-en bat-web instalazioak leku bat pertsonalak gehiago ematean eta hori pertsonalek erabilera eta berri bertsegina ondira ematean aukeratzen dute.
 
@@ -63,7 +63,7 @@ Pluginak eta temak network admin panelaren bat super adminek dira instalatzeko e
 
 _Nota: oler ez da, batzuk ir network-a emate eta super admin status ematen dio erabiltzaileari lehen kontrol guztia ematen dio. Adibidez, beste super adminak ere eskatzen dituzteko zure super admin statusa hartzea, eta horrek zure propio network admin panel-a itxarri ezarri du. Ultimate Multisite klientak erabiliziek bere super adminak zer egin dezatatzen duen guztia kontrolatzeko, "Support Agents" (Agente Ofizioko) dela gitzeko add-on bat da. Horrek erabiltzaile batekin beste baten kindu lehiak emate du – agente bat – eta hori lehen network-an bere jarduerak egin behar dituzten espezialitate edo permiños ez duten.
 
-## Zer joan irki eta zer ez joan subsites-ean
+## Zer joan irki eta zer ez joan subsites-ean {#what-is-shared-among-subsites-and-what-is-not}
 
 Lehen aipatutakoaren bezala, WordPress multisite-aren garrantzitsuena bat da hori guztietako subsites-ek beste konfigurasioak, core fileak, themes, plugins, WordPress core fileak, eta beste batzuk irki egiten dute.
 
@@ -75,7 +75,7 @@ Honek baina, per subsite-ari espeziatu dezakeko elementuak dira.
 
 \- Beste database tables-ek lehen subsitearen bitartean ematen dira, zehandriak, comments, pages, settings eta beste batzuk subsite guztietako espeziatua da.
 
-## Erabilgarriari emateko gestiona WordPress Multisite-an
+## Erabilgarriari emateko gestiona WordPress Multisite-an {#user-management-on-wordpress-multisite}
 
 WordPress multisite-aren garrantzitsuena bat da erabiltzailearen gestiona. WordPress user table-ak subsites guztietan irki egiten diren oso txiki bat da.
 
@@ -99,7 +99,7 @@ _Horren opszioa "Enable Multiple Accounts" (Kontuak Ez Aurreratzea) nezu den, et
 
 Bestea da, baino da, user-ak dira irikusten daukatu, baina subsite admin edo super adminak ez dute erabiltzeko eta eliminatzeko. Bestatik, subsites arlaitzian erabilera ondo izango du, eta subsites batean bestelako user roles (rolak) izan dezake.
 
-## Errendimendu-gaindoko iragailuak
+## Errendimendu-gaindoko iragailuak {#performance-considerations}
 
 WordPress multisitea site guztietu ez daitezkeen kopurua eskatzen duen oso potentziala du. Horrek [WordPress.com](https://WordPress.com), Edublogs eta Campuspress garrantzitsia da, horiek guztiz multisite-baziko serbisioak dira eta lehen hostea site pertsona urte bat zuzen juta siteak dut.
 

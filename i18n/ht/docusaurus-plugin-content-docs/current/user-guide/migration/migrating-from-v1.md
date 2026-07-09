@@ -3,9 +3,9 @@ title: Migre de V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrasyon soti nan V1
+# Migrasyon soti nan V1 {#migrating-from-v1}
 
-## Ultimate Multisite a chanje depi seri lansman 1.x orijinal li li 2.x.
+## Ultimate Multisite a chanje depi seri lansman 1.x orijinal li li 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite vèsyon 2.0 ak pi wo se yon total refè (complete rewrite) kòd la, sa vle di gen trè piti bagay ki pataje ant vèsyon anvan an ak nouvo a. Pou rezon sa a, lè ou ap fè upgrade soti nan 1.x pou rive nan 2.x, done ou pral bezwen migre (transferi) nan yon fòma ke nouvo vèsyon yo ka konprann li.
 
@@ -15,7 +15,7 @@ Leson sa a ap montre kijan migratè a fonksyone, kisa pou w fè si gen yon erè,
 
 _**ENPÒTAN: Anvan ou kòmanse upgrade soti nan vèsyon 1.x pou rive nan vèsyon 2.0, asire w ke ou fè yon backup ba baz done sit ou an.**_
 
-## Premye etap
+## Premye etap {#first-steps}
 
 Premye etap la se telechaje fichye .zip plugin la epi enstale vèsyon 2.0 sou dashboard administrasyon rezo ou a.
 
@@ -49,19 +49,19 @@ Apou mete key ou la, klike sou **Agree & Activate**.
 
 Apou aprè aktive lisans la, ou ka kòmanse enstalasyon an reyèl la lè w klike sou **Install** sou paj ankò a. Sa ap kreye otomatikman fichye ak baz done ki nesesè pou vèsyon 2.0 fonksyone.
 
-## Kounye, migrasyon an
+## Kounye, migrasyon an {#now-the-migration}
 
 Migrator la gen yon fonksyon sekirite ki ap kontni li k ap verifi tout multisite ou pou asire ke tout done Ultimate Multisite ou ka migre san okenn pwoblèm. Klike sou bouton **Run Check** pou kòmanse pwosesis la.
 
 Ap fini ranpli check la, ou gen de posiblite: rezilta a ka genyen yon erè oswa li pa gen anyen erè.
 
-### Ak Erè
+### Ak Erè {#with-error}
 
 Si ou jwenn yon mesaj erè, ou pral bezwen kontakte ekip sipò nou an pou yo ka ede w reponn erè a. Asire w **bay log erè a** lè ou ap kreye yon ticket. Ou ka telechaje log la oswa ou ka klike sou link ki di "contact our support team". Li pral ouvri widget èd la nan bò dwat paj ou ak fòm yo deja rempli pou ou, ki genyen log erè anba deskripsyon an.
 
 _**Puis ke sistèm nan fin jwenn yon erè, ou p ap ka kontinye migre nan vèsyon 2.0. Ou ka demenke (roll back) nan vèsyon 1.x pou w ka kontinye itilize rezo ou jiskaske erè a fini fikse.**_
 
-### San Erè
+### San Erè {#without-error}
 
 Si sistèm nan pa jwenn okenn erè, ou pral wè yon mesaj siksè epi gen yon bouton **Migrate** anba ki p ap pèmèt ou kontinye migrasyon an. Sou paj sa a, li pral raple ou pou ou kreye yon backup ba baz done ou anvan ou monte l, nou rekouvèman ankouraje ou fè sa. Klike sou **Migrate** si ou genyen deja yon backup.
 

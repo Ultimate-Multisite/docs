@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons waxay Ultimate Multisite ku kordhiyaan astaamo iyo isku-dhexgalyo dheeraad ah. Inta badan addons waa lacag-bixin waxaana laga iibsan karaa [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Rakibid
+## Rakibid {#installation}
 
 Addons waxaa lagu rakibi karaa laba hab:
 
 1. **Iyada oo loo marayo Bogga Addon** -- U gudub bogga maaraynta addon-ka ee site-kaaga ee maamulka WordPress
 2. **Soo-dejin Gacan-ku-samays ah** -- Ka soo deji [Account-kaaga](https://ultimatemultisite.com/my-account/downloads/) oo ku soo rar Plugins > Add New
 
-## Addons La Heli Karo
+## Addons La Heli Karo {#available-addons}
 
 | Addon | Sharaxaad |
 |-------|-------------|

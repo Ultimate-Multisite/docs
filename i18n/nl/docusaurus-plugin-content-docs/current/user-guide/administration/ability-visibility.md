@@ -3,11 +3,11 @@ title: Mogelijkheidszichtbaarheid
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Zichtbaarheid van Functionaliteiten (Ability Visibility)
+# Zichtbaarheid van Functionaliteiten (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introduceert **Ability Visibility** (Zichtbaarheid van Functionaliteiten) besturingselementen die bepalen welke interfaces elke functionaliteit blootstellen. Dit stelt beheerders in staat om nauwkeurig in te stellen welke agent-mogelijkheden beschikbaar zijn via REST APIs, MCP servers, WooCommerce-integraties en andere interfaces.
 
-## Wat is Ability Visibility?
+## Wat is Ability Visibility? {#what-is-ability-visibility}
 
 Ability Visibility is een toegangsbeheersysteem dat controleert over:
 
@@ -18,9 +18,9 @@ Ability Visibility is een toegangsbeheersysteem dat controleert over:
 
 Elke functionaliteit heeft een zichtbaarheidsniveau dat bepaalt hoe deze beschikbaar is op verschillende interfaces.
 
-## Zichtbaarheidsniveaus
+## Zichtbaarheidsniveaus {#visibility-levels}
 
-### Public (Openbaar)
+### Public (Openbaar) {#public}
 
 **Openbare functionaliteiten** zijn overal beschikbaar:
 
@@ -32,7 +32,7 @@ Elke functionaliteit heeft een zichtbaarheidsniveau dat bepaalt hoe deze beschik
 
 Voorbeeld: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Intern)
+### Internal (Intern) {#internal}
 
 **Interne functionaliteiten** zijn alleen beschikbaar binnen uw WordPress-installatie:
 
@@ -43,7 +43,7 @@ Voorbeeld: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Voorbeeld: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner
+### Partner {#partner}
 
 **Partnerfunctionaliteiten** zijn alleen beschikbaar voor geautoriseerde partners:
 
@@ -54,7 +54,7 @@ Voorbeeld: `manage-settings`, `view-analytics`, `export-data`
 
 Voorbeeld: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Uitgeschakeld)
+### Disabled (Uitgeschakeld) {#disabled}
 
 **Uitgeschakelde functionaliteiten** zijn nergens beschikbaar:
 
@@ -63,15 +63,15 @@ Voorbeeld: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Niet beschikbaar in admin panels
 - Handig voor verouderde of experimentele functionaliteiten
 
-## Beheer van Ability Visibility
+## Beheer van Ability Visibility {#managing-ability-visibility}
 
-### Toegang tot Ability Visibility Instellingen
+### Toegang tot Ability Visibility Instellingen {#accessing-ability-visibility-settings}
 
 1. Ga naar **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klik op het tabblad **Abilities**
 3. U ziet een lijst van alle geïnstalleerde functionaliteiten met hun zichtbaarheidsniveaus
 
-### Bekijken van Functionaliteitsdetails
+### Bekijken van Functionaliteitsdetails {#viewing-ability-details}
 
 Klik op een functionaliteit om te zien:
 
@@ -82,7 +82,7 @@ Klik op een functionaliteit om te zien:
 - **Last updated**: Wanneer de zichtbaarheid voor het laatst is gewijzigd
 - **Status**: Recognized of Unclassified
 
-### Wijzigen van Zichtbaarheidsniveaus
+### Wijzigen van Zichtbaarheidsniveaus {#changing-visibility-levels}
 
 Om de zichtbaarheid van een functionaliteit te wijzigen:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Groepsonderhoud (Bulk Operations)
+### Groepsonderhoud (Bulk Operations) {#bulk-operations}
 
 Om de zichtbaarheid van meerdere functionaliteiten te wijzigen:
 
@@ -108,11 +108,11 @@ Om de zichtbaarheid van meerdere functionaliteiten te wijzigen:
 2. Selecteer een nieuw zichtbaarheidsniveau uit het bulk actie dropdownmenu
 3. Klik op **Apply**
 
-## Partner Allow-List
+## Partner Allow-List {#partner-allow-list}
 
 De **partner allow-list** bepaalt welke externe partners toegang krijgen tot Partner-niveau functionaliteiten.
 
-### Partners Toevoegen
+### Partners Toevoegen {#adding-partners}
 
 1. Ga naar **Superdav AI Agent** → **Settings** → **Partners**
 2. Klik op **Add Partner**
@@ -120,7 +120,7 @@ De **partner allow-list** bepaalt welke externe partners toegang krijgen tot Par
 4. Voeg optioneel een partnernaam en beschrijving toe
 5. Klik op **Save**
 
-### Functionaliteiten Toewijzen aan Partners
+### Functionaliteiten Toewijzen aan Partners {#assigning-abilities-to-partners}
 
 Nadat u een partner heeft toegevoegd:
 
@@ -130,7 +130,7 @@ Nadat u een partner heeft toegevoegd:
 4. In de sectie "Partner allow-list", vink de vakjes aan voor de partners die toegang moeten hebben
 5. Klik op **Save**
 
-### Partner Toegang Intrekken
+### Partner Toegang Intrekken {#revoking-partner-access}
 
 Om de toegang van een partner te verwijderen:
 
@@ -140,11 +140,11 @@ Om de toegang van een partner te verwijderen:
 
 De partner verliest onmiddellijk toegang tot die functionaliteit.
 
-## Niet-geclassificeerde Functionaliteiten (Unclassified Abilities)
+## Niet-geclassificeerde Functionaliteiten (Unclassified Abilities) {#unclassified-abilities}
 
 Wanneer u een third-party functionaliteit installeert die Superdav AI Agent niet herkent, wordt deze gemarkeerd als **Unclassified**.
 
-### Admin Melding voor Unclassified Abilities
+### Admin Melding voor Unclassified Abilities {#admin-notice-for-unclassified-abilities}
 
 U ziet een admin melding:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Unclassified Abilities Bekijken
+### Unclassified Abilities Bekijken {#reviewing-unclassified-abilities}
 
 1. Klik op **Review Abilities** in de melding
 2. Voor elke niet-geclassificeerde functionaliteit ziet u:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Klik op **Classify** om uw beslissing op te slaan
 
-### Waarom Unclassified Abilities Classificeren?
+### Waarom Unclassified Abilities Classificeren? {#why-classify-unclassified-abilities}
 
 Het classificeren van functionaliteiten:
 
@@ -187,9 +187,9 @@ Het classificeren van functionaliteiten:
 - **Maakt functies mogelijk**: Zodra geclassificeerd, is de functionaliteit beschikbaar
 - **Documenteert beslissingen**: Uw keuzes worden gelogd voor auditdoeleinden
 
-## Zichtbaarheid in Verschillende Interfaces
+## Zichtbaarheid in Verschillende Interfaces {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Openbare functionaliteiten** zijn beschikbaar via REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Interne en Partnerfunctionaliteiten** zijn niet beschikbaar via REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Openbare functionaliteiten** zijn beschikbaar via MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partnerfunctionaliteiten** zijn alleen beschikbaar met partnergegevens.
 
-### WooCommerce Integratie
+### WooCommerce Integratie {#woocommerce-integration}
 
 **Openbare functionaliteiten** gerelateerd aan WooCommerce zijn beschikbaar:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Interne functionaliteiten** worden niet blootgesteld aan WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Alle functionaliteiten** (Public, Internal, Partner) zijn beschikbaar in chat, afhankelijk van de gebruikersrechten:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Gewone gebruikers zien alleen Openbare functionaliteiten
 - Partners zien Openbare + Partnerfunctionaliteiten (indien geautoriseerd)
 
-## Beveiligingsbest Practices
+## Beveiligingsbest Practices {#security-best-practices}
 
-### Principe van Minste Privileges (Principle of Least Privilege)
+### Principe van Minste Privileges (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Stel functionaliteiten in op het meest beperkende zichtbaarheidsniveau dat hun gebruik nog toestaat
 - Gebruik Partner zichtbaarheid voor gevoelige operaties
 - Schakel functionaliteiten uit die u niet gebruikt
 
-### Regelmatige Audits
+### Regelmatige Audits {#regular-audits}
 
 - Controleer maandelijks de zichtbaarheid van functionaliteiten
 - Controleer op niet-geclassificeerde functionaliteiten
 - Neem toegang in voor niet-gebruikte partners
 
-### Logging en Monitoring
+### Logging en Monitoring {#logging-and-monitoring}
 
 - Monitor welke functionaliteiten het meest worden gebruikt
 - Houd het toegangspatroon van partners bij
 - Waarschuw bij ongebruikelijk gebruik van functionaliteiten
 
-### Third-Party Functionaliteiten
+### Third-Party Functionaliteiten {#third-party-abilities}
 
 - Controleer third-party functionaliteiten voordat u ze activeert
 - Classificeer ze expliciet
 - Begin met Internal of Partner zichtbaarheid
 - Promoveer naar Public pas nadat u ze grondig heeft gecontroleerd
 
-## Probleemoplossing (Troubleshooting)
+## Probleemoplossing (Troubleshooting) {#troubleshooting}
 
 **Een functionaliteit wordt niet in de lijst getoond**
 - Controleer of de functionaliteit is geïnstalleerd en actief
@@ -285,7 +285,7 @@ Available abilities:
 - Controleer of uw classificatie is opgeslagen
 - Bevestig dat de plugin die de functionaliteit levert up-to-date is
 
-## Migratie vanuit Legacy Mode
+## Migratie vanuit Legacy Mode {#migration-from-legacy-mode}
 
 Als u upgradeert van een oudere versie van Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Als u upgradeert van een oudere versie van Superdav AI Agent:
 
 Zie **Third-Party Mode Migration** voor meer details over de overgang naar de native Abilities API-integratie.
 
-## Volgende Stappen
+## Volgende Stappen {#next-steps}
 
 Nadat u de zichtbaarheid van functionaliteiten heeft geconfigureerd:
 

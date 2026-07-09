@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 WordPress plugin sem bætir við samhæfingarleiðréttingum fyrir Tutor LMS í multisite-umhverfum.
 
-## Lýsing
+## Lýsing {#description}
 
 Þetta plugin veitir nauðsynlegar samhæfingarleiðréttingar til að keyra Tutor LMS á WordPress multisite-netum. Það sér um skráningu notenda, umsjón með leiðbeinendum, takmarkanir á námskeiðum og aðra virkni sem er sértæk fyrir multisite.
 
-## Eiginleikar
+## Eiginleikar {#features}
 
 - **Umsjón með gagnagrunnstöflum**: Greinir sjálfkrafa og býr til vantar Tutor LMS töflur sem mistakast vegna takmarkana á erlendum lyklum í multisite
 - **Notendaskráning í multisite**: Sérsniðnir AJAX-meðhöndlarar til að stjórna skráningu notenda þvert á vefi í neti
@@ -24,7 +24,7 @@ WordPress plugin sem bætir við samhæfingarleiðréttingum fyrir Tutor LMS í 
 - **Sérsniðnar stjórnendayfirlitsmyndir**: Listi yfir leiðbeinendur og umsjónarviðmót sem taka mið af multisite
 - **Stjórnendaverkfæri**: Umsjónarviðmót gagnagrunns fyrir net- og vefstjórnendur
 
-## Kröfur
+## Kröfur {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ WordPress plugin sem bætir við samhæfingarleiðréttingum fyrir Tutor LMS í 
 - WordPress Multisite uppsetning
 - Ultimate Multisite plugin (fyrir virkni takmarkana á námskeiðum)
 
-## Uppsetning
+## Uppsetning {#installation}
 
 1. Hladdu plugin-skránum upp í `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Gakktu úr skugga um að Tutor LMS sé uppsett og virkjað
 3. Virkjaðu plugin-ið í gegnum valmyndina „Plugins“ í WordPress
 4. Plugin-ið mun sjálfkrafa samþættast Tutor LMS
 
-## Skráauppbygging
+## Skráauppbygging {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Virkni flutt úr MU plugin
+## Virkni flutt úr MU plugin {#functionality-moved-from-mu-plugin}
 
 Þetta plugin inniheldur virkni sem var áður í `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - Meðhöndlun notendaskráningar í multisite
 - Birting á vöruauðkenni námskeiðs
 
-## Umsjón með gagnagrunni
+## Umsjón með gagnagrunni {#database-management}
 
-### Vandamálið
+### Vandamálið {#the-problem}
 
 Í WordPress multisite-umhverfum mistekst stofnun Tutor LMS taflna fyrir töflur með erlenda lykla í notendatöfluna. Þetta gerist vegna þess að:
 
@@ -81,7 +81,7 @@ tutor-multisite-compatibility/
 - Erlendir lyklar vísa í `wp_2_users` (sem er ekki til)
 - Raunverulega notendataflan er `wp_users` (deild yfir allt netið)
 
-### Lausnin
+### Lausnin {#the-solution}
 
 Þetta plugin gerir sjálfkrafa eftirfarandi:
 
@@ -92,13 +92,13 @@ tutor-multisite-compatibility/
    - Stofnun nýs vefs í neti
    - Handvirk athugun á töflum í gegnum stjórnendaviðmót
 
-### Töflur sem verða fyrir áhrifum
+### Töflur sem verða fyrir áhrifum {#affected-tables}
 
 - `tutor_coupon_usages` - Inniheldur erlendan lykil í notendatöfluna
 - `tutor_carts` - Inniheldur erlendan lykil í notendatöfluna
 - `tutor_notification_preferences` - TutorPro tafla með erlendum lykli í notendatöfluna
 
-### Stjórnendaviðmót
+### Stjórnendaviðmót {#admin-interface}
 
 Fáðu aðgang að gagnagrunnsverkfærunum á:
 
@@ -111,6 +111,6 @@ Viðmótið gerir þér kleift að:
 - Athuga uppsetningu gagnagrunns
 - Skoða ítarlegar stöðuupplýsingar
 
-## Aðstoð
+## Aðstoð {#support}
 
 Þetta plugin er sérstaklega hannað fyrir KursoPro-vettvanginn. Fyrir tæknilega aðstoð skaltu hafa samband við þróunarteymið.

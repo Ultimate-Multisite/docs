@@ -4,11 +4,11 @@ title: عمل - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# عمل: wu_page_load
+# عمل: wu_page_load {#action-wupageload}
 
 پلگ اِن ترقيڪارن کي اجازت ڏيو ته اسان جي صفحن ۾ اضافي هُڪَ شامل ڪن.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 | $page_hook | `string` | هن صفحي جو صفحي وارو هُڪ. |
 | $admin_page | `self` | صفحي جو نمونو. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 1.8.2
 - 2.0.4: ٽيون پيرا ميٽر شامل ڪيو ويو: صفحي جو نمونو.
-### ذريعو
+### ذريعو {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L318) ۾ ليڪ 318 تي بيان ٿيل.

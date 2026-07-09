@@ -3,11 +3,11 @@ title: Aldaketen erregistroa
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Aldaketen erregistroa
+# Aldaketen erregistroa {#changelog}
 
-## 1.9.0 — 2026-04-28an argitaratua
+## 1.9.0 — 2026-04-28an argitaratua {#190--released-on-2026-04-28}
 
-### Berria
+### Berria {#new}
 
 - **`create_contact_form` gaitasuna** — kontaktu-inprimaki bat sortzen du inprimaki-plugin aktiboa erabiliz (Contact Form 7, WPForms, Fluent Forms edo Gravity Forms), eta edozein sarrera edo orritan txertatzeko prest dagoen shortcode bat itzultzen du.
 - **`set_featured_image` gaitasuna** — sarrera edo orri bati irudi nabarmendu bat esleitzen dio, lehendik dagoen Media Library eranskin-ID batetik edo urruneko URL batetik; URL bat ematen denean, irudia automatikoki inportatzen du.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Berrezarri azken saioa** — txat-panela orain automatikoki berriro kargatzen du azken elkarrizketa orria kargatzean eta widget-a irekitzean; beraz, testuingurua ez da inoiz galtzen orrien arteko nabigazioetan.
 - **Plugin ekintza-estekak** — Ezarpenetara eta Gaitasunen Erregistrora joateko esteka azkarrak orain WordPress-eko **Pluginak → Instalatutako pluginak** pantailan agertzen dira pluginaren deskribapenaren azpian.
 
-### Hobetua
+### Hobetua {#improved}
 
 - **Irudi-iturburuaren berriro saiatzea** — agenteak orain konfiguratutako doako irudi-iturburu guztiak berriro saiatzen ditu deskarga-hutsegitean AI bidez sortutako irudi batera jo aurretik.
 - **Ereduaren informazio-panela** — beti ikusgai txataren goiburuan; ez da gehiago ezkutatzen lehen mezuaren ondoren.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Txat-widgetaren birdiseinua** — AI ikono bateratuak aurreko avatar pertsonalizatua ordezkatzen du; agente integratuen sistemarekin koherentea da.
 - **URL esteka-bihurketa** — sistema-mezuetan eta errore-mezuen burbuiletan agertzen diren URLak orain klikagarri diren esteka gisa errendatzen dira.
 
-### Konponduta
+### Konponduta {#fixed}
 
 - **Gaitasunen aurkigarritasuna** — deskribapenak, sistema-prompten erreferentziak eta namespace lerrokatzea zuzendu dira, gaitasun guztiak agentearen tresna-zerrendan fidagarritasunez ager daitezen.
 - **Hornitzaileen cachea** — hornitzaileak orain gune osoan cacheatzen dira bertsio-kontagailu baten bidez, multisite sareetan hornitzaile zaharkituen arazoak saihestuz.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — 2026-04-09an argitaratua
+## 1.4.0 — 2026-04-09an argitaratua {#140--released-on-2026-04-09}
 
-### Berria
+### Berria {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — Agent Capabilities v1 benchmark multzoa komando-lerrotik exekutatzen du, CI kanalizazioetarako eta modeloen ebaluazio-lan-fluxuetarako. Galdera bakoitzeko exekuzioak, hornitzaile/modelo gainidazketak eta JSON/CSV irteera onartzen ditu.
 - **Agent Capabilities v1 benchmark suite** — gaitasunen azalera osoa lantzen duten urrats anitzeko prompt konplexuen multzo egituratua, puntuazioarekin eta token/iraupen txostenarekin.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Jatetxe webgunearen benchmark galdera** (`q-restaurant-website`) — muturretik muturrerako proba, CPT erregistroa, design system, nabigazioa eta plugin aurkikuntza estaltzen dituena.
 - **AI hornitzaile-konektore pluginak** gehitu dira WordPress Playground blueprint-etara, tokiko garapen-konfigurazio azkarragorako.
 
-### Hobetua
+### Hobetua {#improved-1}
 
 - README eguneratu da AI hornitzaile-konektoreen dokumentazioarekin eta konfigurazio-argibideekin.
 
-### Konpondua
+### Konpondua {#fixed-1}
 
 - `main` adarreko 25 PHPUnit proba-hutsegite konpondu dira.
 - GitHub releases URL formatua `blueprint.json`-en zuzendu da.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Aurreko argitalpen-oharrak pluginaren biltegian mantentzen dira._

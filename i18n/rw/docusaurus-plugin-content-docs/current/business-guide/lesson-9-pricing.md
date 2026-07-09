@@ -3,17 +3,17 @@ title: 'Isomo rya 9: Gushyiraho ibiciro hagamijwe inyungu'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Isomo rya 9: Ibiciro Bigamije Inyungu
+# Isomo rya 9: Ibiciro Bigamije Inyungu {#lesson-9-pricing-for-profit}
 
 Mu Isomo rya 5 twashyizeho ibiciro by'ibanze bya gahunda za FitSite. Ubu turanoza ingamba z'ibiciro dukoresheje tekiniki zongera amafaranga yinjira, zishishikariza kuzamura gahunda, kandi zigabanya guhagarika serivisi.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 FitSite ifite gahunda, inyandikorugero, uburyo bwo kwishyura, ishusho y'ikirango, n'igikorwa cyo kwakira abakiriya bishyizweho. Ibiciro by'ibanze byari $49/$99/$199 ku kwezi. Ubu turatuma ibyo biciro bikora kurushaho.
 
-## Amahame y'Ibiciro ku Mbuga Zibanda ku Cyiciro Runaka
+## Amahame y'Ibiciro ku Mbuga Zibanda ku Cyiciro Runaka {#pricing-principles-for-niche-platforms}
 
-### Shyira Igiciro ku Gaciro, Si ku Kiguzi
+### Shyira Igiciro ku Gaciro, Si ku Kiguzi {#price-on-value-not-cost}
 
 Ikiguzi cyawe cyo gucumbikira gishobora kuba $5-$15 kuri site y'umukiriya. Ibyo ntibivuze ko igiciro cyawe kigomba kuba $20. Ntabwo ugurisha hosting. Ugurisha:
 
@@ -24,7 +24,7 @@ Ikiguzi cyawe cyo gucumbikira gishobora kuba $5-$15 kuri site y'umukiriya. Ibyo 
 
 Shyira igiciro hashingiwe ku gaciro utanga, si ku kiguzi cyo kukageza ku mukiriya.
 
-### Huza n'Ubundi Buryo Bushoboka
+### Huza n'Ubundi Buryo Bushoboka {#anchor-to-alternatives}
 
 Iyo nyiri studio ya fitness asuzuma FitSite, ayigereranya na:
 
@@ -34,7 +34,7 @@ Iyo nyiri studio ya fitness asuzuma FitSite, ayigereranya na:
 
 Ku $49-$199/ukwezi, FitSite ihendutse kurusha developer, ifite ubushobozi burenze generic builders, kandi iruta cyane kutagira urubuga.
 
-## Gushyira mu Bikorwa Itandukaniro ry'Ibiciro
+## Gushyira mu Bikorwa Itandukaniro ry'Ibiciro {#implementing-price-variations}
 
 Ibiciro by'umwaka bishishikariza kwiyemeza kandi bigabanya guhagarika serivisi. Jya kuri tab ya **Itandukaniro ry'Ibiciro** ya buri gahunda wongeremo amahitamo y'umwaka:
 
@@ -46,12 +46,12 @@ Ibiciro by'umwaka bishishikariza kwiyemeza kandi bigabanya guhagarika serivisi. 
 
 Ongeramo umwanya wa **Guhitamo Igihe** ku ifishi yawe yo kwishyura kugira ngo abakiriya bashobore guhinduranya hagati yo kwishyura ku kwezi no ku mwaka. Reba [Amafishi yo Kwishyura](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Impamvu Ibiciro by'Umwaka Bikora
+### Impamvu Ibiciro by'Umwaka Bikora {#why-annual-pricing-works}
 
 - **Kuri wowe**: Amafaranga yishyurwa mbere, guhagarika serivisi guke (abakiriya bishyura umwaka ntibakunze guhagarika hagati mu gihe)
 - **Kuri bo**: Kuzigama nyakuri, kumenya neza ingengo y'imari
 
-## Amafaranga yo Gutangiza
+## Amafaranga yo Gutangiza {#setup-fees}
 
 Tekereza amafaranga y'igihe kimwe yo gutangiza kuri gahunda zirimo kubafasha mu ishyirwaho:
 
@@ -61,7 +61,7 @@ Tekereza amafaranga y'igihe kimwe yo gutangiza kuri gahunda zirimo kubafasha mu 
 
 Tunganya amafaranga yo gutangiza mu gice cy'ibiciro cya buri gahunda. Reba [Gukora Subscription Product Yawe ya Mbere](/user-guide/configuration/creating-your-first-subscription-product) ku bisobanuro.
 
-## Ibihe by'Igerageza
+## Ibihe by'Igerageza {#trial-periods}
 
 Gutanga igerageza bigabanya imbogamizi zo kwiyandikisha ariko bizana ibyago byo kutahinduka umukiriya wishyura. Kuri FitSite:
 
@@ -70,11 +70,11 @@ Gutanga igerageza bigabanya imbogamizi zo kwiyandikisha ariko bizana ibyago byo 
 
 Tunganya igerageza mu gice cy'ibiciro cya gahunda ya Starter ukoresheje gufungura toggle ya **Tanga Igerageza** no gushyiraho igihe cy'iminsi 7.
 
-### Gutuma Igerageza Rihindura Abakiriya
+### Gutuma Igerageza Rihindura Abakiriya {#making-trials-convert}
 
 Igerageza rikora gusa iyo umukiriya abonye agaciro mu gihe cy'igerageza. Urutonde rwawe rwo kwakira umukiriya (Isomo rya 8) ni ingenzi hano -- emails zo kumwakira zigomba gutegurwa ku gihe kugira ngo zishishikarize gukoresha serivisi muri ya minsi 7.
 
-## Kode z'Igabanyirizwa
+## Kode z'Igabanyirizwa {#discount-codes}
 
 Kora kode z'igabanyirizwa zifite ingamba ku mpamvu zihariye:
 
@@ -88,7 +88,7 @@ Jya kuri **Ultimate Multisite > Kode z'Igabanyirizwa** kugira ngo uzikore. Reba 
 Amagabanyirizwa agomba kuba ibikoresho by'ingamba, si ibintu bihoraho. Niba buri wese abona igabanyirizwa, si igabanyirizwa -- ni cyo giciro cyawe nyakuri. Yikoreshe ku bukangurambaga bwihariye, abazanywe n'abakiriya, n'amasoko agira igihe gito.
 :::
 
-## Gukemura Imisoro
+## Gukemura Imisoro {#tax-handling}
 
 Niba ukorera mu karere gasaba gukusanya umusoro:
 
@@ -98,7 +98,7 @@ Niba ukorera mu karere gasaba gukusanya umusoro:
 
 Reba [Gukemura Imisoro](/user-guide/payment-gateways/tax-handling) ku ishyirwaho rirambuye. Niba ukorera abakiriya mpuzamahanga, tekereza kuri [VAT addon](/addons/vat) kugira ngo wubahirize amategeko ya EU.
 
-## Gusubiramo Ibiciro Byawe
+## Gusubiramo Ibiciro Byawe {#reviewing-your-pricing}
 
 Nyuma yo gutangiza, ongera usuzume ibiciro buri gihembwe. Reba:
 
@@ -107,7 +107,7 @@ Nyuma yo gutangiza, ongera usuzume ibiciro buri gihembwe. Reba:
 - **Guhagarika serivisi kuri buri gahunda**: Niba abakiriya b'umwaka bahagarika gake, shyira imbaraga nyinshi ku biciro by'umwaka
 - **Ibiciro by'abahatana**: Ubundi buryo bushoboka busaba angahe? Wihagazeho neza?
 
-## FitSite Network Kugeza Ubu
+## FitSite Network Kugeza Ubu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Biteguye gutangizwa (isomo rikurikira)
 ```
 
-## Ibyo Twubatse muri Iri Somo
+## Ibyo Twubatse muri Iri Somo {#what-we-built-this-lesson}
 
 - **Ibiciro by’umwaka** bifite igabanyirizwa rya 20% kugira ngo bishishikarize kwiyemeza
 - **Amafaranga yo gutangira** ku nzego zo hejuru kugira ngo yishyure imbaraga zo kwinjiza abakiriya bashya

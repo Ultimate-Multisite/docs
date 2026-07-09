@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Cerințe
+## Cerințe {#requirements}
 
 - WordPress 5.3 sau versiune mai nouă
 - PHP 7.4 sau versiune mai nouă
 - Plugin-ul Ultimate Multisite (activ)
 
-## Instalare
+## Instalare {#installation}
 
 1. Încarcă fișierele addon-ului în directorul tău `/wp-content/plugins/`
 2. Activează plugin-ul din meniul „Plugins” din WordPress
 3. Configurează setările addon-ului în administratorul rețelei
 
-## Dezvoltare
+## Dezvoltare {#development}
 
-### Configurare
+### Configurare {#setup}
 
 ```bash
 # Instalează dependențele
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structura proiectului
+### Structura proiectului {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Regulile de modernizare a codului
 ```
 
-### Testare
+### Testare {#testing}
 
 Addon-ul include un cadru de testare cuprinzător:
 
@@ -79,44 +79,44 @@ Addon-ul include un cadru de testare cuprinzător:
 - **Acoperirea testelor**: Configurat pentru a urmări acoperirea codului
 - **Testare Multisite**: Testele rulează într-un mediu multisite
 
-### Standarde de codare
+### Standarde de codare {#code-standards}
 
 - **Standarde de codare WordPress**: Aplicat prin PHPCS
 - **Compatibilitate PHP 7.4+**: Suport pentru funcționalități moderne PHP
 - **Analiză statică**: Integrarea PHPStan pentru verificare de tip
 - **Modernizare cod**: Regulile Rector pentru actualizările PHP
 
-### Sistemul de build
+### Sistemul de build {#build-system}
 
 - **Procesarea asset-urilor**: Minificare pentru fișierele CSS/JS
 - **Traducere**: Generarea fișierelor POT
 - **Ambalarea**: Crearea unui arhiv pentru distribuție
 - **Mod de dezvoltare**: Asset-uri ne-minificate pentru depanare
 
-## Configurare
+## Configurare {#configuration}
 
 Addon-ul suportă diverse opțiuni de configurare, accesibile prin interfața administratorului rețelei.
 
-## Hooks și Filtre
+## Hooks și Filtre {#hooks-and-filters}
 
-### Acțiuni (Actions)
+### Acțiuni (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Se declanșează după inițializarea addon-ului
 - `ultimate-multisite-ai-site-builder_loaded` - Se declanșează după încărcarea tuturor fișierelor addon-ului
 
-### Filtre (Filters)
+### Filtre (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modifică setările addon-ului
 - `ultimate-multisite-ai-site-builder_enabled` - Anulează statutul de activare/dezactivare al addon-ului
 
-## Licență
+## Licență {#license}
 
 Acest addon este licențiat sub GPL v3 sau o versiune mai nouă.
 
-## Suport
+## Suport {#support}
 
 Pentru suport și documentație, vizitează [MultisiteUltimate.com](https://multisiteultimate.com)
-## Istoric de modificări
+## Istoric de modificări {#changelog}
 
 - Versiunea 1.0.1 (2025-09-28): se redenumește prefixul în ultimate-multisite; se actualizează domeniul de text; creștere a versiunii.
 

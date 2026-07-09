@@ -3,9 +3,9 @@ title: Menaxhimi i pagesave dhe fakturave
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Menaxhimi i Pagesave dhe Fakturave
+# Menaxhimi i Pagesave dhe Fakturave {#managing-payments-and-invoices}
 
-## Caktimet e Pagesave
+## Caktimet e Pagesave {#payment-settings}
 
 Para se të filloni të merrni pagesa, do të duhet të konfigurosh cilësimet që lidhen me pagesat. Shko te **Ultimate Multisite → Settings** dhe kliko te tab-i **Payment**.
 
@@ -15,7 +15,7 @@ Këtu është një pamje e plotë e faqes së cilësimeve të pagesave:
 
 ![Faqja e plotë e cilësimeve të pagesave](/img/admin/settings-payments-full.png)
 
-### Opsionet e Përgjithshme të Pagesave
+### Opsionet e Përgjithshme të Pagesave {#general-payment-options}
 
 Në cilësimet e përgjithshme mund të konfigurosh:
 
@@ -24,7 +24,7 @@ Në cilësimet e përgjithshme mund të konfigurosh:
 
 ![Përgjithësimi i opsioneve të pagesave](/img/admin/settings-payments-options.png)
 
-### Pikat e Pagesave (Payment Gateways)
+### Pikat e Pagesave (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite mbështet disa metoda pagesash (payment gateways). Mund t'i aktivizoni dhe t'i konfigurosh çdo një nga ato nga tab-i i cilësimeve të pagesave (Payment settings).
 
@@ -40,11 +40,11 @@ Rrjetat e disponueshme janë:
 
 ![Settings for additional gateways](/img/admin/settings-payments-gateways-2.png)
 
-### Rrënia Sandbox (Sandbox Mode)
+### Rrënia Sandbox (Sandbox Mode) {#sandbox-mode}
 
 Mund të aktivizoni **Sandbox Mode** për të testuar integrimin tuaj të pagesave para se ta lëreni në prodhim (live). Kur sandbox mode është i aktivizuar, nuk do të bëhen asnjë pagesa reale.
 
-## Shikimi i Pagesave
+## Shikimi i Pagesave {#viewing-payments}
 
 Shkoni te faqja **Payments** nën Ultimate Multisite për të parë të gjitha transaksionet e ndodura në rrjetin tuaj.
 
@@ -54,7 +54,7 @@ Mund të filtroni pagesat sipas statusit (përfunduar, në pritje, dështuar, t�
 
 Klikoni mbi një pagesë për të parë detajet e saj të plotë, duke përfshirë artikujt, anëtarinë që lidhet, informacionin e klientit dhe të dhënat e rrjetit të pagesave.
 
-## Fatura
+## Fatura {#invoices}
 
 Ultimate Multisite mund të gjenerojë automatikisht faturat për pagesat. Mund të personalizoni shablonin e faturës dhe formatin e numërimit nga cilësimet e pagesave (Payment settings).
 

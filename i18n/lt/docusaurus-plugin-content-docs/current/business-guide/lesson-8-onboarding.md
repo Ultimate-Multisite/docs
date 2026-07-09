@@ -3,15 +3,15 @@ title: '8 pamoka: Klientų įvedimas'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# 8 pamoka: klientų supažindinimas
+# 8 pamoka: klientų supažindinimas {#lesson-8-customer-onboarding}
 
 Priversti klientą užsiregistruoti yra tik pusė darbo. Jei jis prisijungia, pasijunta priblokštas ir niekada nebegrįžta, jūs jį praradote. Šioje pamokoje kuriama patirtis, kuri naują registraciją paverčia aktyviu, įsitraukusiu klientu.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite yra visiškai pritaikytas prekės ženklui ir turi veikiantį atsiskaitymo srautą. Dabar sutelkiame dėmesį į tai, kas vyksta po to, kai fitneso studijos savininkas užbaigia registraciją ir pirmą kartą patenka į savo naują svetainę.
 
-## Kodėl supažindinimas svarbus
+## Kodėl supažindinimas svarbus {#why-onboarding-matters}
 
 Pirmosios 30 minučių po registracijos lemia, ar klientas pasiliks, ar pasitrauks. Fitneso studijos savininkas, kuris:
 
@@ -21,9 +21,9 @@ Pirmosios 30 minučių po registracijos lemia, ar klientas pasiliks, ar pasitrau
 
 Jūsų nišiniai šablonai (4 pamoka) išsprendžia pirmą punktą. Ši pamoka išsprendžia antrą.
 
-## Pirmojo prisijungimo patirtis
+## Pirmojo prisijungimo patirtis {#the-first-login-experience}
 
-### Pasveikinimo Dashboard valdiklis
+### Pasveikinimo Dashboard valdiklis {#welcome-dashboard-widget}
 
 Sukurkite pasirinktinį Dashboard valdiklį, kuris pasveikina naujus klientus ir veda juos per konfigūravimą. Jis turėtų būti aiškiai matomas, kai jie pirmą kartą prisijungia.
 
@@ -37,7 +37,7 @@ Sukurkite pasirinktinį Dashboard valdiklį, kuris pasveikina naujus klientus ir
 
 Kiekvienas žingsnis veda tiesiai į atitinkamą puslapį arba nustatymą. Jokio klaidžiojimo po meniu.
 
-### Supaprastinkite Dashboard
+### Supaprastinkite Dashboard {#simplify-the-dashboard}
 
 Naujiems klientams nereikia matyti kiekvieno WordPress meniu elemento. Apsvarstykite:
 
@@ -47,29 +47,29 @@ Naujiems klientams nereikia matyti kiekvieno WordPress meniu elemento. Apsvarsty
 
 [Plugin & Theme Manager](/addons/plugin-and-theme-manager) papildinys gali padėti kontroliuoti, ką klientai mato.
 
-## Pasveikinimo el. laiškų seka
+## Pasveikinimo el. laiškų seka {#welcome-email-sequence}
 
 Vieno pasveikinimo el. laiško nepakanka. Sukurkite seką, kuri veda klientus per jų pirmąją savaitę:
 
-### 1 el. laiškas: pasveikinimas (iškart po registracijos)
+### 1 el. laiškas: pasveikinimas (iškart po registracijos) {#email-1-welcome-immediately-after-signup}
 
 - Tema: „Sveiki atvykę į FitSite -- jūsų studijos svetainė veikia“
 - Turinys: prisijungimo nuoroda, greitos pradžios žingsniai, nuoroda į pagalbos išteklius
 - Tonas: entuziastingas, padrąsinantis, pritaikytas fitnesui
 
-### 2 el. laiškas: greiti laimėjimai (1 diena)
+### 2 el. laiškas: greiti laimėjimai (1 diena) {#email-2-quick-wins-day-1}
 
 - Tema: „3 dalykai, kuriuos pirmiausia reikia padaryti savo FitSite“
 - Turinys: pridėkite logotipą, atnaujinkite pagrindinio puslapio hero paveikslėlį, pridėkite užsiėmimų tvarkaraštį
 - Įtraukite ekrano kopijas, tiksliai rodančias, kur spustelėti
 
-### 3 el. laiškas: paverskite ją sava (3 diena)
+### 3 el. laiškas: paverskite ją sava (3 diena) {#email-3-make-it-yours-day-3}
 
 - Tema: „Išskirkite savo fitneso svetainę“
 - Turinys: pritaikykite spalvas, pridėkite trenerių nuotraukas, parašykite savo studijos istoriją
 - Nuoroda į puikių fitneso svetainių platformoje pavyzdžius
 
-### 4 el. laiškas: paleiskite viešai (7 diena)
+### 4 el. laiškas: paleiskite viešai (7 diena) {#email-4-go-live-day-7}
 
 - Tema: „Pasiruošę pasidalyti savo FitSite su pasauliu?“
 - Turinys: kontrolinis sąrašas, ką patikrinti prieš dalijantis, kaip prijungti pasirinktinį domeną (jei naudojamas Growth/Pro), dalijimosi socialiniuose tinkluose patarimai
@@ -78,11 +78,11 @@ Vieno pasveikinimo el. laiško nepakanka. Sukurkite seką, kuri veda klientus pe
 Use [Webhooks](/user-guide/integrations/webhooks) or [Zapier](/user-guide/integrations/zapier) to trigger these emails through your email marketing platform. This gives you more control over timing and allows you to track engagement.
 :::
 
-## Pagalbos ištekliai
+## Pagalbos ištekliai {#help-resources}
 
 Sukurkite nišai pritaikytą pagalbos turinį, kuris atsako į klausimus, kuriuos fitneso studijų savininkai iš tikrųjų užduoda:
 
-### Žinių bazės straipsniai
+### Žinių bazės straipsniai {#knowledge-base-articles}
 
 - „Kaip atnaujinti užsiėmimų tvarkaraštį“
 - „Trenerių profilių pridėjimas ir redagavimas“
@@ -92,7 +92,7 @@ Sukurkite nišai pritaikytą pagalbos turinį, kuris atsako į klausimus, kuriuo
 
 Rašykite juos ne techniniams naudotojams. Naudokite ekrano kopijas. Venkite WordPress žargono.
 
-### Vaizdo apžvalgos
+### Vaizdo apžvalgos {#video-walkthroughs}
 
 Trumpos (2–3 minučių) ekrano įrašų apžvalgos, rodančios:
 
@@ -103,7 +103,7 @@ Trumpos (2–3 minučių) ekrano įrašų apžvalgos, rodančios:
 
 Tai neturi būti nugludinti kūriniai. Svarbiausia, kad būtų aišku, naudinga ir pritaikyta nišai.
 
-## Account puslapis
+## Account puslapis {#the-account-page}
 
 Ultimate Multisite apima klientams skirtą [Account puslapį](/user-guide/client-management/account-page), kuriame klientai valdo savo prenumeratą. Pritaikykite jį taip, kad:
 
@@ -112,7 +112,7 @@ Ultimate Multisite apima klientams skirtą [Account puslapį](/user-guide/client
 - Pateiktų atsiskaitymų istoriją ir sąskaitų atsisiuntimus
 - Pateiktų nuorodas į pagalbos išteklius
 
-## Supažindinimo sėkmės matavimas
+## Supažindinimo sėkmės matavimas {#measuring-onboarding-success}
 
 Stebėkite šiuos rodiklius, kad žinotumėte, ar jūsų supažindinimas veikia:
 
@@ -121,7 +121,7 @@ Stebėkite šiuos rodiklius, kad žinotumėte, ar jūsų supažindinimas veikia:
 - **Naujų klientų pagalbos užklausos**: didelis kiekis reiškia, kad jūsų supažindinime yra spragų
 - **Bandomosios versijos konversija į mokamą**: jei siūlote bandomuosius laikotarpius, kokia dalis pereina į mokamą planą?
 
-## FitSite tinklas iki šiol
+## FitSite tinklas iki šiol {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Vedamą pirmojo prisijungimo patirtį** su greitos pradžios valdikliu
 - **Supaprastintą Dashboard**, orientuotą į fitneso svetainės valdymo užduotis

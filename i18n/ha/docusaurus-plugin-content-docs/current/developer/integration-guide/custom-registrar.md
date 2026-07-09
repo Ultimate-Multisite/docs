@@ -3,13 +3,13 @@ title: Gina Haɗin Kai na Mai Rajista na Musamman
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Gina Haɗin Registrar na Musamman
+# Gina Haɗin Registrar na Musamman {#building-a-custom-registrar-integration}
 
 Addon na Domain Seller yana amfani da tsarin **Integration Registry**. Kowane registrar aji ne na PHP da ke aiwatar da `Domain_Selling_Capability` kuma yana yin rajistar kansa ta hanyar action hook na `wu_domain_seller_register_capabilities`.
 
 Wannan jagorar tana nuna yadda ake haɗa registrar na musamman.
 
-## Interface ɗin
+## Interface ɗin {#the-interface}
 
 Ajinku dole ne ya aiwatar da `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` kuma ya faɗaɗa `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Hanyoyin zaɓi
+### Hanyoyin zaɓi {#optional-methods}
 
 Aiwatar da waɗannan don buɗe ƙarin fasaloli. Addon ɗin yana gano tallafi ta hanyar `method_exists()`:
 
@@ -81,7 +81,7 @@ Aiwatar da waɗannan don buɗe ƙarin fasaloli. Addon ɗin yana gano tallafi ta 
 | `get_epp_code(string $domain_name): array` | Canja wurin domain (mai fita) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Canja wurin domain (mai shigowa) |
 
-### Ka’idar ƙimar da ake mayarwa
+### Ka’idar ƙimar da ake mayarwa {#return-value-convention}
 
 Duk hanyoyi suna mayar da array tare da aƙalla maɓallin `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Yin rajistar capability ɗinku
+## Yin rajistar capability ɗinku {#registering-your-capability}
 
 Yi rajistar ajinku ta amfani da action na `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Muhawara ta farko ga `add_capability()` ita ce **provider ID** — slug mai ƙan
 
 ---
 
-## Ƙara filayen bayanan shaida zuwa wizard
+## Ƙara filayen bayanan shaida zuwa wizard {#adding-credential-fields-to-the-wizard}
 
 Don barin admins su shigar da bayanan shaida ta hanyar setup wizard, yi rajistar haɗinku:
 
@@ -137,7 +137,7 @@ Ana adana bayanan shaida a matsayin network options ta amfani da ID na filaye a 
 
 ---
 
-## Hooks don ayyuka bayan rajista
+## Hooks don ayyuka bayan rajista {#hooks-for-post-registration-actions}
 
 Yi amfani da waɗannan actions don kunna webhooks, provisioning, sanarwa, ko sabuntawar CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Rajistar Ayyuka
+## Rajistar Ayyuka {#logging}
 
 Rubuta zuwa tashar rajistar aiki ta musamman ga mai bayarwarka ta amfani da `wu_log_add()`:
 

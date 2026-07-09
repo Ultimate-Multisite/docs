@@ -3,7 +3,7 @@ title: 升級方案
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# 升級方案 (v2)
+# 升級方案 (v2) {#upgrading-a-plan-v2}
 
 _**重要注意事項：本文指的是 Ultimate Multisite 版本 2.x。**_
 
@@ -41,7 +41,7 @@ _**重要注意事項：本文指的是 Ultimate Multisite 版本 2.x。**_
 
 ##
 
-## 升級與降級路徑
+## 升級與降級路徑 {#upgrade-and-downgrade-paths}
 
 在您的每個產品中，都會有一個 **升級與降級** 分頁。該分頁上的第一個選項是一個名為 **方案群組** 的欄位。
 

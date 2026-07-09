@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM prinaša AI sklepanje neposredno v brskalniku v vaše WordPress multisite omrežje. Velike jezikovne modele izvaja v celoti v brskalniku z uporabo WebLLM in pogona MLC — brez API ključev, brez zunanjih klicev, brez zapuščanja podatkov uporabnikove naprave.
 
-## Ključne funkcije
+## Ključne funkcije {#key-features}
 
 - **Sklepanje na strani brskalnika**: LLM se izvaja lokalno v obiskovalčevem brskalniku prek WebLLM/MLC — strežniški GPU ni potreben
 - **Plavajoči klepetalni gradnik**: Prijavljeni uporabniki lahko pošiljajo pozive LLM-ju na strani brskalnika neposredno iz sprednjega dela
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM prinaša AI sklepanje neposredno v brskalniku v
 - **IndexedDB predpomnilnik**: Prenosi uteži modela preživijo CDN preusmeritve, ki prekinejo privzeto pot Cache API
 - **Integracija filtra wpai**: Poveže se s filtrom `wpai_preferred_text_models`, tako da funkcija AI Experiments usmerja k brskalniškemu pogonu, ko je konfigurirano
 
-## Zahteve
+## Zahteve {#requirements}
 
 - WordPress 5.3 ali novejši
 - PHP 7.4 ali novejši
 - Ultimate Multisite plugin (aktiven)
 - Brskalnik s podporo za WebGPU (Chrome 113+, Edge 113+ ali Firefox Nightly z omogočenim WebGPU)
 
-## Namestitev
+## Namestitev {#installation}
 
 1. Naložite datoteke dodatka v svoj imenik `/wp-content/plugins/`
 2. Aktivirajte plugin prek menija 'Plugins' v WordPress
 3. Pojdite na **Ultimate Multisite → AI Connector**, da konfigurirate dodatek
 
-## Plavajoči klepetalni gradnik
+## Plavajoči klepetalni gradnik {#floating-chat-widget}
 
 Plavajoči klepetalni gradnik omogoča kateremu koli prijavljenemu uporabniku interakcijo z LLM-jem na strani brskalnika neposredno iz vašega sprednjega dela, ne da bi zapustil stran, na kateri je.
 
-### Kaj počne
+### Kaj počne {#what-it-does}
 
 Ko je omogočen, se v kotu vsake strani sprednjega dela za prijavljene uporabnike prikaže ikona klepeta. S klikom na ikono se odpre klepetalna plošča, kjer lahko uporabnik vnaša pozive in prejema odgovore od lokalno delujočega modela WebLLM. Ker se model v celoti izvaja v brskalniku, so odgovori zasebni in ne vključujejo nobene obdelave na strani strežnika.
 
-### Kazalnik stanja v skrbniški vrstici
+### Kazalnik stanja v skrbniški vrstici {#admin-bar-status-indicator}
 
 WordPress skrbniška vrstica vključuje kazalnik stanja, ki prikazuje trenutno stanje pogona WebLLM:
 
@@ -56,7 +56,7 @@ WordPress skrbniška vrstica vključuje kazalnik stanja, ki prikazuje trenutno s
 
 Kazalnik se posodablja v realnem času, brez potrebe po ponovnem nalaganju strani.
 
-### Kako omogočiti ali onemogočiti gradnik
+### Kako omogočiti ali onemogočiti gradnik {#how-to-enable-or-disable-the-widget}
 
 1. Pojdite na **Ultimate Multisite → AI Connector** v skrbništvu omrežja
 2. Poiščite ploščo **Connector**
@@ -65,17 +65,17 @@ Kazalnik se posodablja v realnem času, brez potrebe po ponovnem nalaganju stran
 
 Gradnik je mogoče omogočiti ali onemogočiti tudi za posamezno mesto iz lastnega skrbništva mesta, če je skrbnik omrežja dodelil to zmožnost.
 
-## Nastavitve gradnika
+## Nastavitve gradnika {#widget-settings}
 
 Plošča Connector v **Ultimate Multisite → AI Connector** vsebuje naslednje nastavitve za plavajoči klepetalni gradnik:
 
-### Omogoči plavajoči klepetalni gradnik
+### Omogoči plavajoči klepetalni gradnik {#enable-floating-chat-widget}
 
 Vklopi ali izklopi klepetalni gradnik za celotno omrežje. Ko je onemogočen, se gradnik ne prikaže na nobeni strani sprednjega dela, ne glede na vlogo uporabnika.
 
 **Privzeto:** Izklopljeno
 
-### Vedenje samodejnega poziva
+### Vedenje samodejnega poziva {#auto-prompt-behaviour}
 
 Nadzoruje, ali klepetalni gradnik samodejno pošlje poziv, ko ga uporabnik odpre.
 
@@ -93,7 +93,7 @@ Ko je nastavljeno na **Poziv po meri**, se prikaže dodatno besedilno polje, kam
 
 **Privzeto:** Onemogočeno
 
-## Izvajalno okolje SharedWorker
+## Izvajalno okolje SharedWorker {#sharedworker-runtime}
 
 Različica 1.1.0 uvaja izvajalno okolje SharedWorker za pogon MLC. Prej je vsak zavihek brskalnika, ki je uporabljal WebLLM, naložil svojo instanco modela, tekmoval za GPU pomnilnik in povzročal težave z zmogljivostjo na napravah z omejenim VRAM.
 
@@ -105,29 +105,29 @@ Z izvajalnim okoljem SharedWorker en zavihek deluje kot gostitelj pogona. Vsi dr
 
 SharedWorker je za uporabnike pregleden. Kazalnik stanja v skrbniški vrstici vedno odraža stanje deljenega pogona, ne posameznega zavihka.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Dodatek namesti `apiFetch` middleware, ki prestreza WordPress REST API zahteve, ki ustrezajo vzorcu AI Client SDK. Namesto izvedbe povratne HTTP zahteve na strežnik so te zahteve usmerjene neposredno k lokalnemu posredniku WebLLM, ki teče v SharedWorker.
 
 To pomeni, da bodo plugini in teme, ki uporabljajo standardni WordPress `apiFetch` API za klicanje AI endpointov, samodejno izkoristili model na strani brskalnika, ko je na voljo, brez potrebnih sprememb kode.
 
-## Hooks in filtri
+## Hooks in filtri {#hooks-and-filters}
 
-### Filtri
+### Filtri {#filters}
 
 - `wpai_preferred_text_models` — Registrirajte brskalniški pogon WebLLM kot prednostni besedilni model. Dodatek se samodejno priklopi na ta filter, ko je pogon konfiguriran in na voljo.
 - `ultimate_webllm_widget_enabled` — Prepišite omogočeno stanje gradnika za določenega uporabnika ali kontekst. Vrnite `true` ali `false`.
 - `ultimate_webllm_auto_prompt` — Spremenite besedilo samodejnega poziva, preden se pošlje gradniku. Prejme niz poziva in trenutni objekt `WP_Post`.
 
-## Odpravljanje težav
+## Odpravljanje težav {#troubleshooting}
 
-### Gradnik za klepet se ne prikaže
+### Gradnik za klepet se ne prikaže {#the-chat-widget-does-not-appear}
 
 - Potrdite, da je uporabnik prijavljen — gradnik je prikazan samo overjenim uporabnikom
 - Preverite, da je **Enable floating chat widget** vklopljeno na plošči Connector
 - Preverite, ali uporabnikov brskalnik podpira WebGPU (glejte zgornje Zahteve)
 
-### Indikator v skrbniški vrstici prikazuje "Error"
+### Indikator v skrbniški vrstici prikazuje "Error" {#the-admin-bar-indicator-shows-error}
 
 Odprite konzolo za razvijalce v brskalniku (F12) in poiščite napake, povezane z WebLLM. Pogosti vzroki:
 
@@ -135,10 +135,10 @@ Odprite konzolo za razvijalce v brskalniku (F12) in poiščite napake, povezane 
 - Prenos uteži modela ni uspel — preverite omrežno povezljivost in poskusite počistiti predpomnilnik IndexedDB v orodjih za razvijalce brskalnika (Application → IndexedDB)
 - Razširitev brskalnika blokira SharedWorker
 
-### Uteži modela se prenašajo vsakič
+### Uteži modela se prenašajo vsakič {#model-weights-download-every-time}
 
 Dodatek uporablja IndexedDB kot zaledje predpomnilnika, da zagotovi, da uteži modela preživijo preusmeritve CDN. Če se uteži znova prenašajo ob vsakem obisku, preverite, da IndexedDB ne briše nastavitev zasebnosti brskalnika ali razširitev.
 
-## Dnevnik sprememb
+## Dnevnik sprememb {#changelog}
 
 Za celotno zgodovino različic glejte [Dnevnik sprememb](./changelog).

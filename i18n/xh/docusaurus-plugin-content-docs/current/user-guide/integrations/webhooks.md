@@ -3,7 +3,7 @@ title: Ii-Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Ukujonga Okokuqala kwi-Webhooks (v2)
+# Ukujonga Okokuqala kwi-Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**QAPHELA: Qaphela ukuba eli nqaku okanye eli nqaku lolabasebenzisi abaphambili.**_
 
@@ -11,7 +11,7 @@ I-**webhook** yindlela yokuba i-app okanye isoftware efana ne-Ultimate Multisite
 
 Oku kuyanceda ukuba kufuneka udibanise okanye udlulise idatha ethile esuka kwi-Ultimate Multisite iye kwenye i-CRM okanye isistim ngalo lonke ixesha isiganeko siqaliswa. Umzekelo, kufuneka uthumele igama lomsebenzisi kunye nedilesi ye-imeyile kuluhlu lokuposa ngalo lonke ixesha kusenziwa i-akhawunti entsha yomsebenzisi.
 
-## Uyenza njani i-webhook
+## Uyenza njani i-webhook {#how-to-create-a-webhook}
 
 Ukwenza i-webhook, yiya kwi-dashboard yakho yomlawuli wenethiwekhi. Cofa ku-**Ultimate Multisite > Webhooks > Add New Webhook.**
 

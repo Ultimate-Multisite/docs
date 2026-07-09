@@ -3,11 +3,11 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite'yi Çevirme
+# Ultimate Multisite'yi Çevirme {#translating-ultimate-multisite}
 
 Ultimate Multisite İngilizce geliştirilmiş olsa da, eklenti tamamen çevrilebilir ve çeviri katkılarını aktif olarak bekliyoruz.
 
-## Çekirdek Eklenti Çevirileri
+## Çekirdek Eklenti Çevirileri {#core-plugin-translations}
 
 Çekirdek Ultimate Multisite eklentisi, resmi **WordPress.org çeviri platformu** üzerinden çevrilmektedir:
 
@@ -24,7 +24,7 @@ Bu, standart WordPress topluluğu çeviri sistemidir. Çeviriler yeterli onay e�
 
 Diliniz için bir çeviri editörü olmak isterseniz (yani çevirileri onaylayabilmek), lütfen [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) üzerinden ulaşın.
 
-## Eklenti (Addon) Çevirileri
+## Eklenti (Addon) Çevirileri {#addon-translations}
 
 Eklenti eklentileri ayrı bir adreste çevrilmektedir:
 
@@ -32,11 +32,11 @@ Eklenti eklentileri ayrı bir adreste çevrilmektedir:
 
 Eklenti çevirileri şu anda bir başlangıç noktası olarak yapay zeka (AI) tarafından oluşturulmuştur. Desteklenen tüm dilleri kapsarlar ancak garip ifadeler veya yanlışlıklar içerebilirler. Daha doğal ve doğru olmaları için insan çevirmenlerin incelemesini ve önerilerini memnuniyetle karşılıyoruz.
 
-## Yerel Çeviriler
+## Yerel Çeviriler {#local-translations}
 
 Eğer yukarı akışa (upstream) katkıda bulunmak yerine kendi projeniz için yerel olarak çeviri yapmayı tercih ediyorsanız, iki seçeneğiniz var:
 
-### Poedit Kullanarak
+### Poedit Kullanarak {#using-poedit}
 
 Masaüstü uygulaması **[Poedit](https://poedit.net)** kullanarak `.pot` dosyasını çevirebilirsiniz:
 
@@ -46,6 +46,6 @@ Masaüstü uygulaması **[Poedit](https://poedit.net)** kullanarak `.pot` dosyas
 4. Kaydedin -- Poedit, `.po` ve `.mo` dosyaları oluşturur
 5. Çıktı dosyalarını `lang` klasörüne yerleştirin
 
-### Loco Translate Kullanarak
+### Loco Translate Kullanarak {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress eklentisi, herhangi bir masaüstü aracı kullanmadan doğrudan admin panelinden çeviri yapmanızı sağlar. Çeviri dosyalarını oluşturma ve derleme işini sizin yerinize halleder.

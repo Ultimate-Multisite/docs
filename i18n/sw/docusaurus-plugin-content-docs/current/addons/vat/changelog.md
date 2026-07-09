@@ -3,7 +3,7 @@ title: Historia ya Mabadiliko ya VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Historia ya Mabadiliko za VAT
+# Historia ya Mabadiliko za VAT {#vat-changelog}
 
 Version 1.0.7 - Ili kutolewa tarehe 2026-02-03
 

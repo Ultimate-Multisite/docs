@@ -3,11 +3,11 @@ title: WP-CLI เอกสารอ้างอิง
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference
+# WP-CLI Reference {#wp-cli-reference}
 
 Gratis AI Agent มาพร้อมกับกลุ่มคำสั่ง `wp gratis-ai-agent` สำหรับการทดสอบประสิทธิภาพของ Agent, การจัดการความสามารถ (abilities), และการตรวจสอบสถานะของ Agent ผ่าน Command Line คำสั่งทั้งหมดจำเป็นต้องใช้ WP-CLI เวอร์ชัน 2.0 ขึ้นไป
 
-## Installation
+## Installation {#installation}
 
 คำสั่ง WP-CLI จะลงทะเบียนโดยอัตโนมัติเมื่อปลั๊กอินทำงานอยู่ คุณสามารถตรวจสอบได้โดยใช้:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 ใช้สำหรับรันชุดการทดสอบประสิทธิภาพของ Agent Capabilities ซึ่งเป็นชุดของ prompts ที่ซับซ้อนและมีหลายขั้นตอน เพื่อทดสอบขีดความสามารถทั้งหมด คุณสามารถใช้คำสั่งนี้เพื่อประเมินประสิทธิภาพของโมเดล, เปรียบเทียบผู้ให้บริการ AI ต่างๆ, หรือตรวจสอบชุดความสามารถก่อนนำไปใช้งานจริง (production)
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Options
+### Options {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | รูปแบบผลลัพธ์: `table` (ค่าเริ่มต้น), `json`, `csv` |
 | `--save` | บันทึกผลการทดสอบประสิทธิภาพลงในฐานข้อมูลเพื่อเปรียบเทียบในภายหลัง |
 
-### Examples
+### Examples {#examples}
 
 รันชุดการทดสอบประสิทธิภาพทั้งหมดโดยใช้ผู้ให้บริการและโมเดลปัจจุบัน:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 การทดสอบประสิทธิภาพจะแสดงผลลัพธ์หนึ่งแถวต่อหนึ่งคำถาม โดยมีคอลัมน์ดังนี้:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark Questions
+### Benchmark Questions {#benchmark-questions}
 
 ชุดค่าเริ่มต้นประกอบด้วย:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 ใช้สำหรับจัดการความสามารถ (abilities) และชุดความสามารถ (ability packs) ที่ติดตั้งไว้
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 แสดงรายการความสามารถทั้งหมดที่ลงทะเบียน, แหล่งที่มา (core หรือ pack), และสถานะปัจจุบัน
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 ดาวน์โหลดและเปิดใช้งานชุดความสามารถ (ability pack) จาก registry
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 ปิดใช้งานความสามารถเฉพาะตัวโดยไม่ลบชุดความสามารถนั้นออก มีประโยชน์ในการจำกัดขอบเขตการทำงานของ Agent ในเว็บไซต์ที่กำหนด
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 เปิดใช้งานความสามารถที่เคยถูกปิดไว้
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 แสดงการตั้งค่า Agent ปัจจุบันและสถานะการเชื่อมต่อ
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 แสดงกิจกรรมล่าสุดของ Agent จาก debug log
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 รีเซ็ตสถานะของ Agent: ล้าง CSS ที่ถูกแทรก, ลบ CPTs และ Taxonomies ที่ Agent ลงทะเบียน, รีเซ็ต global styles, และล้างแคช options ของ Agent จะไม่ลบปลั๊กอินหรือการตั้งค่าของมัน
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 คำสั่งทั้งหมดจะออกโค้ด `0` เมื่อสำเร็จ โค้ดที่ไม่ใช่ศูนย์:
 

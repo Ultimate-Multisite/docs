@@ -3,7 +3,7 @@ title: Rekisteröi API-päätepiste
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite -rekister API-päätepiste
+# Ultimate Multisite -rekister API-päätepiste {#the-ultimate-multisite-register-api-endpoint}
 
 Tässä ohjeessa opit, miten käyttää Ultimate Multisite /register API-päätepistettä luodaksesi koko uuden asiakkaan sisäänkirjautumisprosessin verkostosi ja miten tehdä se Zapierillä.
 
@@ -29,11 +29,11 @@ Valitse **Enable API** ja saat API-tunnisteesi.
 
 Nyt tutustuimme päätepisteeseen ja luomme sen jälkeen rekisteraustoiminnon Zapierissä.
 
-## Päätepisteen runko-parametrit
+## Päätepisteen runko-parametrit {#endpoint-body-parameters}
 
 Katsotaan yleiskuva minimitiedoista, joita meidän täytyy lähettää päätepisteelle. Tämän artikkelin lopussa löydät koko kutsun.
 
-### Customer (Asiakas)
+### Customer (Asiakas) {#customer}
 
 Tämä on tieto, joka on tarpeen käyttäjän ja Ultimate Multisite -asiakkaan luomiseen:
 
@@ -43,25 +43,25 @@ Onko mahdollista lähettää verkostossasi luotu asiakas-ID. Jos sitä ei lähet
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Jäsenyys**
+### **Jäsenyys** {#membership}
 
 Ainoa tieto, jota tarvitsemme tässä objektissa, on jäsenyyden tila.
 
 "membership" { "status" : "string", // yksi seuraavista: "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Tuotteet**
+### **Tuotteet** {#products}
 
 Tuotteille annetaan taulukko (array) yhdestä tai useammasta tuotteen ID:stä verkostossasi. Huomioi, että tämä päätepiste ei luo tuotteita. Tarkista Ultimate Multisiten dokumentaatio saadaksesi paremman ymmärryksen tuote-epäonnistumisen luomiseen liittyvästä päätepisteestä.
 
 **"products" : [1,2],**
 
-### Maksu
+### Maksu {#payment}
 
 Kuten jäsenyydessä, tarvitsemme vain tilan.
 
 **"payment" { "status" : "string", // yksi seuraavista: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Sivu
+### Sivu {#site}
 
 Ja sulkeaksemme tiedon, tarvitsemme sivuston URL-osoitteen ja nimen Site-objektin sisällä.
 
@@ -69,13 +69,13 @@ Ja sulkeaksemme tiedon, tarvitsemme sivuston URL-osoitteen ja nimen Site-objekti
 
 Rekisteröintipäätteen palautus on taulukko, joka sisältää uuden luodun jäsenyyden tiedot.
 
-## Toiminnon luominen Zapierissä
+## Toiminnon luominen Zapierissä {#creating-an-action-in-zapier}
 
 Tämän uuden ja vankemman tili-luontipäätteen mukana saat myös uuden toiminnon Zapierissä.
 
 Tiedätkö, miten käyttää ja nauttia kaikesta, mitä uusi versio Zapier tarjoaa? Lue lisää tästä. (link?)
 
-### Toiminnon luominen
+### Toiminnon luominen {#creating-an-action}
 
 Selitetään paremmin, miten rekisteröintipistettä käytetään Zapierin kanssa luomalla integraation Google Forms -tyyppiseen sovellukseen. Jokaisen lomakkeen täyttämisen ja tiedon tallentamisen muodossa uusi jäsen luodaan Ultimate Multisite -verkkoon.
 
@@ -105,7 +105,7 @@ Kun tiedot on asetettu, siirry viimeiseen testiin. Viimeisellä näytöllä näe
 
 Testaa uutta Zapisiasi ja se pitäisi suorittaa onnistuneesti. Jos ilmenee virhe, tarkista kaikki kentät ja varmista, että ne lähetetään oikein. Koska tietoa on paljon, jotkin asiat voivat jäädä huomaamatta.
 
-### Täydelliset endpoint-parametrit
+### Täydelliset endpoint-parametrit {#complete-endpoint-parameters}
 
 Tässä on koko kutsu ja kaikki mahdolliset kentät, jotka voidaan lähettää:
 

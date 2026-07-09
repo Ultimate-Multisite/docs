@@ -3,25 +3,25 @@ title: Șablon de Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Șablon de Addon
+# Șablon de Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Cerințe
+## Cerințe {#requirements}
 
 - WordPress 5.3 sau versiune mai nouă
 - PHP 7.4 sau versiune mai nouă
 - Plugin-ul Ultimate Multisite (activ)
 
-## Instalare
+## Instalare {#installation}
 
 1. Urcați fișierele addon-ului în directorul dvs. `/wp-content/plugins/`
 2. Activați plugin-ul prin meniul „Plugins” din WordPress
 3. Configurați setările addon-ului în zona de administrare a rețelei (network admin)
 
-## Dezvoltare
+## Dezvoltare {#development}
 
-### Configurare (Setup)
+### Configurare (Setup) {#setup}
 
 ```bash
 # Instalează dependențele
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Structura proiectului
+### Structura proiectului {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regulile de modernizare a codului
 ```
 
-### Testare
+### Testare {#testing}
 
 Addon-ul include un cadru de testare cuprinzător:
 
@@ -75,44 +75,44 @@ Addon-ul include un cadru de testare cuprinzător:
 - **Acoperirea Testelor (Test Coverage)**: Configurată pentru a urmări acoperirea codului
 - **Testarea Multisite**: Testele rulează într-un mediu multisite
 
-### Standarde de Cod
+### Standarde de Cod {#code-standards}
 
 - **Standardele de Cod WordPress**: Aplicate prin PHPCS
 - **Compatibilitate PHP 7.4+**: Suport pentru funcționalitățile moderne PHP
 - **Analiză Statică**: Integrarea PHPStan pentru verificare de tipuri (type checking)
 - **Modernizarea Codului**: Regulile Rector pentru actualizări PHP
 
-### Sistemul de Build
+### Sistemul de Build {#build-system}
 
 - **Procesarea Resurselor (Asset Processing)**: Minificare pentru fișierele CSS/JS
 - **Traducere (Translation)**: Generarea fișierelor POT
 - **Ambalarea (Packaging)**: Crearea unui arhiv pentru distribuție
 - **Modul de Dezvoltare (Development Mode)**: Resurse ne-minificate pentru depanare
 
-## Configurare
+## Configurare {#configuration}
 
 Addon-ul suportă diverse opțiuni de configurare, accesibile prin interfața de administrare a rețelei (network admin).
 
-## Hooks și Filtre
+## Hooks și Filtre {#hooks-and-filters}
 
-### Acțiuni (Actions)
+### Acțiuni (Actions) {#actions}
 
 - `ultimate-multisite-addon-template_init` - Se declanșează după inițializarea addon-ului
 - `ultimate-multisite-addon-template_loaded` - Se declanșează după încărcarea tuturor fișierelor addon-ului
 
-### Filtre (Filters)
+### Filtre (Filters) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifică setările addon-ului
 - `ultimate-multisite-addon-template_enabled` - Anulează statutul de activare/dezactivare al addon-ului
 
-## Licență
+## Licență {#license}
 
 Acest addon este licențiat sub GPL v3 sau o versiune mai nouă.
 
-## Suport
+## Suport {#support}
 
 Pentru suport și documentație, vizitați [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Versiunea 1.0.1 (2025-09-28): schimbarea prefixului în ultimate-multisite; actualizarea domeniului de text; creșterea versiunii.
 

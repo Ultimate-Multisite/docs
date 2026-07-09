@@ -3,13 +3,13 @@ title: Loga atharrachaidhean Tiogaidean Taice
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Log atharrachaidhean thiogaidean taice
+# Log atharrachaidhean thiogaidean taice {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Leasaichte: Chaidh an t-eòlaire vendor/ a thoirt air falbh bho thracadh Git (air a chòmhdach mu thràth le .gitignore), a’ lùghdachadh meud an repository
 * Leasaichte: Deuchainn suas gu WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Càradh: Gabh ri luachan null ann an setters modail tiogaid nullable
 * Càradh: Stòr gach tiogaid ann an clàran cruinneil air feadh an lìonra airson taic multisite cheart
 * Càradh: Falaich raointean luchd-obrach agus càraich ath-stiùireadh duilleig bhàin air foirm tiogaid ùr a’ chustamaiche
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Leasaichte: Luchdaich assets frontend gu cumhach a-mhàin air duilleagan thiogaidean taice
 * Leasaichte: Leum seachad air autoloader a’ plugin nuair a tha autoloader freumh Bedrock air dependencies a luchdadh mu thràth
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Air a chur ris: Làn-ghnìomhachd sealladh thiogaidean airson admin agus frontend
 * Air a chur ris: Handler AJAX airson cur a-steach fhreagairtean thiogaidean
 * Air a chur ris: Taic airson gnìomhachd fhreagairtean thiogaidean le làimhseachadh foirm cheart
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Leasaichte: Structar database le clasaichean query agus schema ceart airson freagairtean agus ceanglachain
 * Leasaichte: Imrich gu fìor properties an àite attributes airson modailean thiogaidean
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Ùraichte: Chaidh an ro-leasachan ath-ainmeachadh gu ultimate-multisite airson cunbhalachd
 * Ùraichte: Coitcheannachadh text domain
 * Càraichte: Càraidhean beaga air bugs agus leasachaidhean
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Foillseachadh tùsail
 * Siostam slàn rianachd thiogaidean
 * Smachd-ruigsinneachd ioma-ìre

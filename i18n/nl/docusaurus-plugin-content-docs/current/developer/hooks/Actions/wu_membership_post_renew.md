@@ -4,11 +4,11 @@ title: Actie - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Actie: wu_membership_post_renew
+# Actie: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Wordt geactiveerd na de verlenging van het lidmaatschap.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Wordt geactiveerd na de verlenging van het lidmaatschap.
 | $membership_id | `int` | The ID of the membership. |
 | $membership | `\Membership` | Membership object. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.0
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) op regel 2235

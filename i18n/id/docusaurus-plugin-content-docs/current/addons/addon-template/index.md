@@ -3,25 +3,25 @@ title: Template Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Template Addon
+# Template Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 - WordPress 5.3 atau yang lebih tinggi
 - PHP 7.4 atau yang lebih tinggi
 - Plugin Ultimate Multisite (aktif)
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah file addon ke direktori `/wp-content/plugins/` Anda
 2. Aktifkan plugin melalui menu 'Plugins' di WordPress
 3. Konfigurasikan pengaturan addon di admin jaringan
 
-## Pengembangan
+## Pengembangan {#development}
 
-### Pengaturan Awal
+### Pengaturan Awal {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktur Proyek
+### Struktur Proyek {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Aturan modernisasi kode
 ```
 
-### Pengujian
+### Pengujian {#testing}
 
 Addon ini dilengkapi dengan kerangka kerja pengujian yang lengkap:
 
@@ -75,44 +75,44 @@ Addon ini dilengkapi dengan kerangka kerja pengujian yang lengkap:
 - **Test Coverage**: Dikonfigurasi untuk melacak cakupan kode
 - **Multisite Testing**: Pengujian berjalan di lingkungan multisite
 
-### Standar Kode
+### Standar Kode {#code-standards}
 
 - **WordPress Coding Standards**: Diterapkan melalui PHPCS
 - **Kompatibilitas PHP 7.4+**: Mendukung fitur PHP modern
 - **Static Analysis**: Integrasi PHPStan untuk pemeriksaan tipe data
 - **Code Modernization**: Aturan Rector untuk peningkatan versi PHP
 
-### Sistem Build
+### Sistem Build {#build-system}
 
 - **Asset Processing**: Minifikasi untuk file CSS/JS
 - **Translation**: Pembuatan file POT
 - **Packaging**: Pembuatan arsip untuk distribusi
 - **Development Mode**: Aset yang tidak diminifikasi untuk *debugging*
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Addon ini mendukung berbagai opsi konfigurasi yang dapat diakses melalui antarmuka admin jaringan.
 
-## Hooks dan Filters
+## Hooks dan Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Dipicu setelah inisialisasi addon
 - `ultimate-multisite-addon-template_loaded` - Dipicu setelah semua file addon dimuat
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Mengubah pengaturan addon
 - `ultimate-multisite-addon-template_enabled` - Mengganti status aktif/nonaktif addon
 
-## Lisensi
+## Lisensi {#license}
 
 Addon ini dilisensikan di bawah GPL v3 atau yang lebih baru.
 
-## Dukungan
+## Dukungan {#support}
 
 Untuk dukungan dan dokumentasi, kunjungi [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Versi 1.0.1 (2025-09-28): ganti awalan menjadi ultimate-multisite; perbarui domain teks; peningkatan versi.
 

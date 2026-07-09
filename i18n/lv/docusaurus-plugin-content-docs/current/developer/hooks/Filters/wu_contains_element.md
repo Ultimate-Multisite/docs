@@ -4,13 +4,13 @@ title: Filtrs - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filtrs: wu_contains_element
+# Filtrs: wu_contains_element {#filter-wucontainselement}
 
 Ļauj izstrādātājiem mainīt sākotnējās meklēšanas rezultātus.
 
 Tas ir noderīgi trešo pušu būvētājiem un tamlīdzīgi.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Tas ir noderīgi trešo pušu būvētājiem un tamlīdzīgi.
 | $element | `self` | Pašreizējais elements. |
 | $post | `null\|\WP_Post` | pārbaudāmā ziņa. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) 534. rindā

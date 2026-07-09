@@ -3,7 +3,7 @@ title: Ngatur Situs
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ngelola Situs
+# Ngelola Situs {#managing-sites}
 
 Situs (atau subsitus) téh inti tina bisnis WaaS anjeun. Ultimate Multisite miboga 3 jenis situs:
 
@@ -11,13 +11,13 @@ Situs (atau subsitus) téh inti tina bisnis WaaS anjeun. Ultimate Multisite mibo
 - **Site Templates** — Situs anu geus aya saméméah anu bisa dipilih ku pelanggan salaku titik awal
 - **Main Site** — Situs jaringan utama anjeun
 
-## Ngajak Situs
+## Ngajak Situs {#viewing-sites}
 
 Pindah ka **Ultimate Multisite → Sites** pikeun ningali sadaya subsitus di jaringan anjeun. Unggal situs dibedake ku jenisna jeung anjeun bisa filter ku Sadaya Situs, Customer-Owned, Templates, atawa Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Nambah Situs Anyar
+## Nambah Situs Anyar {#adding-a-new-site}
 
 Klik tombol **Add Site** pikeun ngadamel situs anyar. Anjeun bakal butuh nyadiake:
 
@@ -27,15 +27,15 @@ Klik tombol **Add Site** pikeun ngadamel situs anyar. Anjeun bakal butuh nyadiak
 
 Pilihan **Copy Site** ngabagékeun anjeun bisa nyieun situs anyar dumasar template situs anu geus aya. Lamun diaktifkeun, anjeun bisa milih template mana anu rék dipaké salaku titik awal. Pastikeun **Copy Media on Duplication** diaktifkeun sangkan file media ogé kaasup.
 
-## Ngelola Situs Anu Geus Aya
+## Ngelola Situs Anu Geus Aya {#managing-an-existing-site}
 
 Klik **Manage** dina situs mana waé pikeun muka halaman **Edit Site**. Di dieu anjeun bakal nempo:
 
-### Informasi Dasar
+### Informasi Dasar {#basic-information}
 
 Ngaran situs, jenisna, site ID, jeung deskripsi. Anjeun ogé bakal ningali domain anu dipetikeun, keanggotaan anu patali, sarta akun pelanggan anu ngawasa situs éta.
 
-### Pilihan Situs
+### Pilihan Situs {#site-options}
 
 Ngatur kemampuan je batasan situs:
 
@@ -49,7 +49,7 @@ Ngatur kemampuan je batasan situs:
 
 Secara *default*, situs bakal ngikut batasan anu diatur dina level keanggotaan (*membership*). Ngaturan batasan di level situs bakal ngalimpahkeun (override) pengaturan keanggotaan.
 
-### Asosiasi
+### Asosiasi {#associations}
 
 Di handap pilihan situs, anjeun bakal manggihan informasi ngeunaan:
 
@@ -57,7 +57,7 @@ Di handap pilihan situs, anjeun bakal manggihan informasi ngeunaan:
 - **Membership** tempat situs éta aya
 - **Customer account** anu patali jeung situs
 
-### Sidebar Kanan
+### Sidebar Kanan {#right-sidebar}
 
 Di sisi kanan anjeun bisa:
 

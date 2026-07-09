@@ -3,13 +3,13 @@ title: Ghid de integrare
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Ghid de integrare
+# Ghid de integrare {#integration-guide}
 
 Acest ghid acoperă tipare comune de integrare cu Ultimate Multisite, inclusiv conectarea la servicii externe, construirea de gateway-uri de plată personalizate și gestionarea webhook-urilor.
 
 Pentru infrastructura de tenant izolată, consultați [Integrarea Multi-Tenancy](./multi-tenancy) pentru bootstrap-ul tenant-ului suveran, verificarea migrării, SSO și îndrumări pentru teardown.
 
-## Integrare CRM
+## Integrare CRM {#crm-integration}
 
 Sincronizați datele clienților cu CRM-ul dvs. atunci când clienții noi se înregistrează:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrare analytics
+## Integrare analytics {#analytics-integration}
 
 Urmăriți evenimentele-cheie de business pe parcursul ciclului de viață al clientului:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Pașii următori
+## Pașii următori {#next-steps}
 
 - [Dezvoltare gateway personalizat](./custom-gateway) — Construiți-vă propriul gateway de plată
 - [Gestionarea webhook-urilor](./webhooks) — Creați endpoint-uri webhook personalizate

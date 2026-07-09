@@ -3,7 +3,7 @@ title: Kutanga Peji ya Akaunti
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Ungava kuenda pa ukunguva kwawo pa account yako?
+# Ungava kuenda pa ukunguva kwawo pa account yako? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Muliye kuamukana mu Ultimate Multisite!
 

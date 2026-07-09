@@ -4,11 +4,11 @@ title: 'Handling - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Gør det muligt for udviklere af udvidelser at føje yderligere hooks til vores sider.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Gør det muligt for udviklere af udvidelser at føje yderligere hooks til vores 
 | $page_hook | `string` | Side-hooket for denne side. |
 | $admin_page | `self` | Sideinstansen. |
 
-### Siden
+### Siden {#since}
 
 - 1.8.2
 - 2.0.4: Tilføjede tredje parameter: sideinstansen.
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) på linje 332

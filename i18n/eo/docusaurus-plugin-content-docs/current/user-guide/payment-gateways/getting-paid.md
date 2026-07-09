@@ -3,13 +3,13 @@ title: Ricevado de pagoj
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ricevi pagon (v2)
+# Ricevi pagon (v2) {#getting-paid-v2}
 
 _**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 
 Ultimate Multisite havas enkonstruitan membrecan kaj fakturan sistemon. Por ke nia faktura sistemo funkciu, ni integris la plej oftajn pagajn enirejojn uzatajn en reta komerco. La defaŭltaj pagaj enirejoj en Ultimate Multisite estas _Stripe_ , _PayPal_ , kaj Mana Pago. Vi ankaŭ povas uzi _WooCommerce_ , _GoCardless_ kaj _Payfast_ por ricevi pagojn instalante iliajn respektivajn aldonaĵojn.
 
-## Bazaj Agordoj
+## Bazaj Agordoj {#basic-settings}
 
 Vi povas agordi iun ajn el ĉi tiuj pagaj enirejoj sub la pagaj agordoj de Ultimate Multisite. Vi povas trovi ĝin irante al **Ultimate Multisite menuo > Agordoj > Pagoj.**
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0 kontrolas ĉu la aktiva enirejo havas reuzeblan renov
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kie trovi la enirejojn:
+## Kie trovi la enirejojn: {#where-to-find-the-gateways}
 
 Vi povas agordi la pagajn enirejojn sur la sama paĝo ( **Ultimate Multisite > Agordoj > Pagoj**). Tuj sub **aktivaj pagaj enirejoj** , vi povos vidi: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ kaj _Mana_.
 
@@ -67,7 +67,7 @@ Jen ankaŭ plena vido de la agordoj de pagaj enirejoj:
 
 Nun, se vi volas uzi _WooCommerce_ , _GoCardless_ aŭ _Payfast_ kiel vian pagan enirejon, vi devos **instali kaj agordi iliajn aldonaĵojn**.
 
-### Kiel instali la WooCommerce-aldonaĵon:
+### Kiel instali la WooCommerce-aldonaĵon: {#how-to-install-the-woocommerce-add-on}
 
 Ni komprenas, ke _Stripe_ kaj _PayPal_ ne disponeblas en kelkaj landoj, kio limigas aŭ malhelpas uzantojn de Ultimate Multisite efike uzi nian plugin. Do ni kreis aldonaĵon por integri _WooCommerce,_ kiu estas tre populara reta-komerca plugin. Programistoj tra la mondo kreis aldonaĵojn por integri malsamajn pagajn enirejojn al ĝi. Ni profitis tion por etendi la pagajn enirejojn, kiujn vi povas uzi kun la faktura sistemo de Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Post ĝia aktivigo, se vi ankoraŭ ne havas la WooCommerce-kromprogramon instali
 
 Por legi pli pri la aldonaĵo WooCommerce Integration, **alklaku ĉi tie**.
 
-### Kiel instali la aldonaĵon GoCardless:
+### Kiel instali la aldonaĵon GoCardless: {#how-to-install-the-gocardless-add-on}
 
 La paŝoj por instali la aldonaĵon _GoCardless_ estas preskaŭ la samaj kiel por la aldonaĵo _WooCommerce_. Bonvolu iri al la paĝo de aldonaĵoj kaj elekti la aldonaĵon **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Post kiam la instalado finiĝos, vi estos redirektita al la paĝo de kromprogram
 
 Por lerni kiel komenci uzi la pordejon _GoCardless_, **legu ĉi tiun artikolon**.
 
-### Kiel instali la aldonaĵon Payfast:
+### Kiel instali la aldonaĵon Payfast: {#how-to-install-the-payfast-add-on}
 
 Iru al la paĝo de aldonaĵoj kaj elektu la aldonaĵon **Ultimate Multisite: Payfast Gateway**.
 

@@ -3,19 +3,19 @@ title: 'Darasi na 2: Zaɓar Fanninka'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Darasi na 2: Zaɓar Kasuwarka ta Musamman
+# Darasi na 2: Zaɓar Kasuwarka ta Musamman {#lesson-2-picking-your-niche}
 
 A Darasi na 1 mun tabbatar da dalilin da ya sa kasuwa ta musamman ta fi ta gama-gari. Yanzu kana buƙatar zaɓar taka. Wannan darasi yana ba ka tsari don gano da tabbatar da kasuwa ta musamman kafin ka saka lokaci wajen gina mata abu.
 
-## Inda Muka Tsaya
+## Inda Muka Tsaya {#where-we-left-off}
 
 Mun bayyana manufar FitSite: wani dandali na yanar gizo don ɗakunan motsa jiki. Amma ta yaya muka kai ga zaɓar ɗakunan motsa jiki musamman? Wannan darasi yana bi da kai ta cikin tsarin domin ka iya amfani da shi wajen gano kasuwarka ta musamman.
 
-## Ka'idoji Uku
+## Ka'idoji Uku {#the-three-criteria}
 
 Kyakkyawar kasuwa ta musamman don dandali na yanar gizo tana cika sharuɗɗa uku:
 
-### 1. Suna Buƙatar Shafukan Yanar Gizo Amma Suna Fama Wajen Samun Masu Kyau
+### 1. Suna Buƙatar Shafukan Yanar Gizo Amma Suna Fama Wajen Samun Masu Kyau {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Nemo masana'antu inda:
 
@@ -26,7 +26,7 @@ Nemo masana'antu inda:
 
 **Ɗakunan motsa jiki sun dace**: membobi suna sa ran samun jadawalin azuzuwa, farashi, da yin rajista a yanar gizo. Yawancin shafukan ɗakunan motsa jiki sun tsufa ko an gina su kan samfuran gama-gari da ba sa biyan manufa.
 
-### 2. Kasuwancin Za Su Iya Biyan Kuɗin Rijistar Wata-wata
+### 2. Kasuwancin Za Su Iya Biyan Kuɗin Rijistar Wata-wata {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Abokan cinikinka da kake nufi suna buƙatar kasancewa:
 
@@ -36,7 +36,7 @@ Abokan cinikinka da kake nufi suna buƙatar kasancewa:
 
 **Ɗakunan motsa jiki sun dace**: tuni suna biyan kuɗin software na booking, sarrafa biyan kuɗi, da kayan aikin tallace-tallace. Subscription na shafin yanar gizo ƙari ne na halitta.
 
-### 3. Suna Tattaunawa da Juna
+### 3. Suna Tattaunawa da Juna {#3-they-talk-to-each-other}
 
 Mafi kyawun kasuwanni na musamman suna da:
 
@@ -46,9 +46,9 @@ Mafi kyawun kasuwanni na musamman suna da:
 
 **Ɗakunan motsa jiki sun dace**: masu studio suna halartar abubuwan masana'antar motsa jiki, suna shiga al'ummomin kan layi, kuma akai-akai suna raba kayan aiki da ayyuka tare da takwarorinsu.
 
-## Yadda Ake Gano 'Yan Takara na Kasuwa ta Musamman
+## Yadda Ake Gano 'Yan Takara na Kasuwa ta Musamman {#how-to-find-niche-candidates}
 
-### Fara da Abin da Ka Sani
+### Fara da Abin da Ka Sani {#start-with-what-you-know}
 
 Gogewarka ta yanzu fa'ida ce. Yi la'akari da:
 
@@ -56,7 +56,7 @@ Gogewarka ta yanzu fa'ida ce. Yi la'akari da:
 - Sha'awoyi ko abubuwan nishaɗi inda ka fahimci al'umma
 - Cibiyoyin ƙwararru da ka riga ka shiga
 
-### Nemo Alamomin Ciwo
+### Nemo Alamomin Ciwo {#look-for-pain-signals}
 
 Nemi hujja cewa kasuwanci a wata kasuwa ta musamman suna fama da shafukan yanar gizo:
 
@@ -65,7 +65,7 @@ Nemi hujja cewa kasuwanci a wata kasuwa ta musamman suna fama da shafukan yanar 
 - Kalli ainihin shafukan yanar gizo a kasuwar -- shin yawancinsu marasa kyau ne?
 - Duba ko masu fafatawa suna nan da yadda suke hidimtawa kasuwar sosai
 
-### Tantance Tattalin Arziki
+### Tantance Tattalin Arziki {#evaluate-the-economics}
 
 Ga kowace kasuwa ta musamman da ake la'akari da ita, kimanta:
 
@@ -73,11 +73,11 @@ Ga kowace kasuwa ta musamman da ake la'akari da ita, kimanta:
 - **Yarda da biya**: Me suke kashewa a yanzu kan makamantan kayan aiki?
 - **Yiwuwar ƙimar rayuwar abokin ciniki**: Shin waɗannan kasuwanci masu ɗorewa ne, ko suna barin sabis da sauri?
 
-## Tabbatar da Kasuwarka ta Musamman
+## Tabbatar da Kasuwarka ta Musamman {#validating-your-niche}
 
 Kafin gina komai, tabbatar da buƙata:
 
-### Yi Magana da Abokan Ciniki Masu Yiwuwar Zama
+### Yi Magana da Abokan Ciniki Masu Yiwuwar Zama {#talk-to-potential-customers}
 
 Tuntuɓi masu kasuwanci 10-15 a kasuwarka ta musamman da kake nufi. Tambaya:
 
@@ -88,17 +88,17 @@ Tuntuɓi masu kasuwanci 10-15 a kasuwarka ta musamman da kake nufi. Tambaya:
 
 Ba ka fara sayarwa ba tukuna. Kana saurare.
 
-### Duba Yanayin Masu Fafatawa
+### Duba Yanayin Masu Fafatawa {#check-competitor-landscape}
 
 - **Babu masu fafatawa**: Na iya nufin babu buƙata, ko kuma na iya nufin damar da ba a taɓa amfani da ita ba. Tattaunawa da abokan ciniki za ta gaya maka wanne.
 - **'Yan kaɗan masu fafatawa**: Alama ce mai kyau. Yana tabbatar da buƙata. Nazari abin da suke yi da kyau da inda suke gaza.
 - **Masu fafatawa da yawa**: Ya fi wahalar shiga, amma har yanzu yana yiwuwa idan kana iya bambanta kanka a sarari.
 
-### Gina Shafin Sauka
+### Gina Shafin Sauka {#build-a-landing-page}
 
 Kafin gina dandalin, ƙirƙiri shafin sauka mai sauƙi da ke bayyana maganinka na kasuwa ta musamman kuma ka tattara rajistar imel. Gudanar da ƙaramin adadin tallace-tallace da aka nufa don gwada sha'awa. Idan mutane sun yi rajista, kana da tabbaci.
 
-## Aiwatar da Wannan ga FitSite
+## Aiwatar da Wannan ga FitSite {#applying-this-to-fitsite}
 
 Ga yadda FitSite ya samu sakamako bisa ka'idojin:
 
@@ -112,7 +112,7 @@ Ga yadda FitSite ya samu sakamako bisa ka'idojin:
 
 Tabbatarwa ta tabbatar da damar. Yanzu mu gina.
 
-## Ra'ayoyin Kasuwa ta Musamman da Za a Yi La'akari da Su
+## Ra'ayoyin Kasuwa ta Musamman da Za a Yi La'akari da Su {#niche-ideas-to-consider}
 
 Idan motsa jiki ba kasuwarka ba ce, ga wasu kasuwanni na musamman da ke cika ka'idojin:
 
@@ -127,7 +127,7 @@ Idan motsa jiki ba kasuwarka ba ce, ga wasu kasuwanni na musamman da ke cika ka'
 
 Kowane ɗaya daga cikin waɗannan yana da halaye iri ɗaya: buƙatun shafin yanar gizo bayyanannu, ikon biya, da yaɗuwar labari ta baki a cikin al'umma.
 
-## Abin da Muka Gina a Wannan Darasi
+## Abin da Muka Gina a Wannan Darasi {#what-we-built-this-lesson}
 
 - **Tsarin zaɓen kasuwa ta musamman**: ka'idoji uku don tantance kowace kasuwa ta musamman
 - **Hanyoyin tabbatarwa**: tattaunawa da abokan ciniki, nazarin masu fafatawa, gwajin shafin sauka

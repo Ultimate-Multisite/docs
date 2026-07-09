@@ -4,11 +4,11 @@ title: Iragazkia - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Slug bihurtutako sareko aukeraren balioa itzultzen du.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Slug bihurtutako sareko aukeraren balioa itzultzen du.
 | $option_name | `string` | Aukeraren izena. |
 | $default | `mixed` | Balio lehenetsia. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 1.9.6
-### Iturburua
+### Iturburua {#source}
 
 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) fitxategian definitua, 126. lerroan
 
 
-## Itzulera
+## Itzulera {#returns}
 Slug bihurtutako sareko aukeraren balioa.

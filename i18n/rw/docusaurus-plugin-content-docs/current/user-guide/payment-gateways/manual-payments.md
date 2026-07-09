@@ -3,13 +3,13 @@ title: Gushyiraho Kwishyura mu buryo bwa Manual
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Gushyiraho Ubwishyu Bukorwa N'intoki (v2)
+# Gushyiraho Ubwishyu Bukorwa N'intoki (v2) {#setting-up-manual-payments-v2}
 
 _**ICYITONDERWA CY'INGENZI: Iyi nyandiko ireba Ultimate Multisite version 2.x.**_
 
 Ubwishyu bukorwa n'intoki ni uburyo bwo guha abakoresha bawe ubundi buryo bwo kwishyura igihe **Stripe** cyangwa **PayPal** bitabonetse kuri bo. Bushobora kuba kohereza amafaranga kuri banki cyangwa ubundi buryo ubwo ari bwo bwose bwo kwishyura buboneka aho abakoresha bawe bari.
 
-## Uko wafungura Ubwishyu Bukorwa N'intoki
+## Uko wafungura Ubwishyu Bukorwa N'intoki {#how-to-enable-manual-payments}
 
 Gushyiraho ubwishyu bukorwa n'intoki biroroshye cyane. Ukeneye gusa kubufungurira munsi y'amarembo yo kwishyura no gushyiramo amabwiriza arambuye y'uko umukoresha agomba kohereza ubwishyu.
 
@@ -31,7 +31,7 @@ Kandi bazakira n'ubutumwa ku rupapuro rwawe rwa **Thank You** ruriho amabwiriza 
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Kwemeza ubwishyu bukorwa n'intoki
+## Kwemeza ubwishyu bukorwa n'intoki {#confirming-manual-payments}
 
 Kugira ngo wemeze ubwishyu bukorwa n'intoki, jya kuri menu ya **Payments** ku ruhande rw'ibumoso. Aho ushobora kubona ubwishyu bwose buri kuri network yawe n'ibisobanuro byabwo, harimo na **status** yabwo. Ubwishyu bukorwa n'intoki buzahorana status ya **Pending** kugeza igihe ubuhinduye n'intoki.
 

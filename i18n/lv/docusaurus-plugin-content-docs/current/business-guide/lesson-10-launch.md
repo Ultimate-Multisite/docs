@@ -3,19 +3,19 @@ title: '10. nodarbība: Palaišanas diena'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Nodarbība 10: Palaišanas diena
+# Nodarbība 10: Palaišanas diena {#lesson-10-launch-day}
 
 Viss ir uzbūvēts. Pirms atverat durvis, šī nodarbība izved cauri pirms palaišanas pārbaudes sarakstam, lai pārliecinātos, ka nekas nav sabojāts, trūkstošs vai apkaunojošs.
 
-## Kur mēs palikām
+## Kur mēs palikām {#where-we-left-off}
 
 FitSite ir konfigurētas veidnes, plāni, norēķināšanās, zīmolvedība, ievadapmācība un cenu noteikšana. Tagad pārbaudām, vai viss darbojas, un palaižam publiski.
 
-## Pirms palaišanas pārbaudes saraksts
+## Pirms palaišanas pārbaudes saraksts {#pre-launch-checklist}
 
 Izpildiet katru punktu. Neizlaidiet nevienu.
 
-### Platformas infrastruktūra
+### Platformas infrastruktūra {#platform-infrastructure}
 
 - [ ] Hostings ir stabils un labi darbojas pie slodzes
 - [ ] Wildcard SSL ir aktīvs, un visi apakšdomēni tiek apkalpoti caur HTTPS
@@ -23,7 +23,7 @@ Izpildiet katru punktu. Neizlaidiet nevienu.
 - [ ] Dublējumi ir konfigurēti un pārbaudīti (atjaunojiet vismaz vienu, lai pārliecinātos)
 - [ ] Uzraudzība ir ieviesta -- jūs zināsiet, ja platforma pārstās darboties
 
-### Veidnes
+### Veidnes {#templates}
 
 - [ ] Visas trīs veidnes jaunās vietnēs ielādējas pareizi
 - [ ] Aizstājteksts ir noderīgs un bez drukas kļūdām
@@ -32,7 +32,7 @@ Izpildiet katru punktu. Neizlaidiet nevienu.
 - [ ] Lapu ielādes ātrums ir pieņemams (pārbaudiet ar tādu rīku kā GTmetrix vai PageSpeed Insights)
 - [ ] Nevienā veidnē nav bojātu saišu vai trūkstošu resursu
 
-### Plāni un produkti
+### Plāni un produkti {#plans-and-products}
 
 - [ ] Visi trīs plāni ir aktīvi un redzami
 - [ ] Plānu apraksti ir precīzi un nišai specifiski
@@ -42,7 +42,7 @@ Izpildiet katru punktu. Neizlaidiet nevienu.
 - [ ] Pasūtījuma papildpiedāvājumi norēķināšanās laikā parādās pareizi
 - [ ] Spraudņu un tēmu ierobežojumi tiek pareizi piemēroti katram plānam
 
-### Norēķināšanās plūsma
+### Norēķināšanās plūsma {#checkout-flow}
 
 - [ ] Pabeidziet pilnu testa reģistrāciju katram plānam (izmantojiet testa maksājumu režīmu)
 - [ ] Veidnes izvēle rāda pareizās veidnes katram plānam
@@ -52,7 +52,7 @@ Izpildiet katru punktu. Neizlaidiet nevienu.
 - [ ] Klients var nekavējoties pieteikties savā jaunajā vietnē
 - [ ] Atlaižu kodi darbojas pareizi
 
-### Zīmolvedība
+### Zīmolvedība {#branding}
 
 - [ ] Pieteikšanās lapā redzama FitSite zīmolvedība
 - [ ] Admin Dashboard redzama FitSite zīmolvedība
@@ -60,7 +60,7 @@ Izpildiet katru punktu. Neizlaidiet nevienu.
 - [ ] Rēķini tiek parādīti pareizi ar jūsu uzņēmuma informāciju
 - [ ] Mārketinga vietne ir tiešsaistē un saistīta ar norēķināšanās veidlapu
 
-### Ievadapmācība
+### Ievadapmācība {#onboarding}
 
 - [ ] Quick Start logrīks parādās jauno klientu Dashboard
 - [ ] Visas Quick Start saites ved uz pareizajām lapām
@@ -68,7 +68,7 @@ Izpildiet katru punktu. Neizlaidiet nevienu.
 - [ ] Zināšanu bāzes raksti ir publicēti un pieejami
 - [ ] Account lapa rāda pareizu plāna informāciju un jaunināšanas iespējas
 
-### Juridiskie un uzņēmējdarbības jautājumi
+### Juridiskie un uzņēmējdarbības jautājumi {#legal-and-business}
 
 - [ ] Pakalpojuma noteikumi ir publicēti un saistīti no norēķināšanās lapas
 - [ ] Privātuma politika ir publicēta un pieejama
@@ -77,11 +77,11 @@ Izpildiet katru punktu. Neizlaidiet nevienu.
 - [ ] Maksājumu vārteja ir tiešajā režīmā (nevis testa režīmā)
 - [ ] Nodokļu konfigurācija ir pareiza jūsu jurisdikcijai
 
-## Klusā palaišana pret pilno palaišanu
+## Klusā palaišana pret pilno palaišanu {#soft-launch-vs-hard-launch}
 
 Apsveriet divu posmu palaišanu:
 
-### 1. posms: Klusā palaišana
+### 1. posms: Klusā palaišana {#phase-1-soft-launch}
 
 Uzaiciniet 5–10 fitnesa studiju īpašniekus reģistrēties pirms publiskās palaišanas. Tie ir jūsu beta klienti. Piedāvājiet viņiem ievērojamu atlaidi (50% atlaidi uz mūžu vai 3 mēnešus bez maksas) apmaiņā pret:
 
@@ -91,7 +91,7 @@ Uzaiciniet 5–10 fitnesa studiju īpašniekus reģistrēties pirms publiskās p
 
 Tas jums sniedz īstu klientu atgriezenisko saiti un aktīvas vietnes, ko demonstrēt, pirms atveraties publikai.
 
-### 2. posms: Publiskā palaišana
+### 2. posms: Publiskā palaišana {#phase-2-public-launch}
 
 Kad klusās palaišanas atgriezeniskā saite ir iestrādāta:
 
@@ -100,7 +100,7 @@ Kad klusās palaišanas atgriezeniskā saite ir iestrādāta:
 - Sāciet klientu piesaisti (11. nodarbība)
 - Paziņojiet atbilstošos fitnesa nozares kanālos
 
-## Palaišanas dienas darbības
+## Palaišanas dienas darbības {#launch-day-actions}
 
 Dienā, kad kļūstat publiski pieejami:
 
@@ -110,7 +110,7 @@ Dienā, kad kļūstat publiski pieejami:
 4. **Esiet pieejami** -- jūsu pirmajiem īstajiem klientiem var būt nepieciešama palīdzība, un ātra atbilde veido uzticēšanos
 5. **Īsi nosviniet** -- pēc tam atgriezieties pie darba
 
-## Kas var noiet greizi
+## Kas var noiet greizi {#what-can-go-wrong}
 
 Esiet gatavi:
 
@@ -120,7 +120,7 @@ Esiet gatavi:
 - **Veiktspējai pie slodzes**: Ja saņemat datplūsmas kāpumu, ziniet, kā mērogot savu hostingu
 - **Klientu apjukumam**: Turiet gatavu zināšanu bāzi un atbalsta kanālus
 
-## FitSite tīkls līdz šim
+## FitSite tīkls līdz šim {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Ko mēs uzbūvējām šajā nodarbībā
+## Ko mēs uzbūvējām šajā nodarbībā {#what-we-built-this-lesson}
 
 - **Visaptverošu pirms palaišanas pārbaudes sarakstu**, kas aptver infrastruktūru, saturu, maksājumus un juridiskos jautājumus
 - **Klusās palaišanas stratēģiju**, lai iegūtu īstu atgriezenisko saiti pirms publiskās palaišanas

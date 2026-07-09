@@ -3,11 +3,11 @@ title: Desarrollo de pasarela personalizada
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Desarrollo de pasarelas personalizadas
+# Desarrollo de pasarelas personalizadas {#custom-gateway-development}
 
 Puedes crear pasarelas de pago personalizadas extendiendo la clase `Base_Gateway`.
 
-## Clase de pasarela
+## Clase de pasarela {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrar la pasarela
+## Registrar la pasarela {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Métodos clave
+## Métodos clave {#key-methods}
 
 | Método | Propósito |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Gestionar solicitudes de reembolso |
 | `get_payment_methods()` | Devolver métodos de pago guardados para un cliente |
 
-## Credenciales de renovación para membresías recurrentes
+## Credenciales de renovación para membresías recurrentes {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 permite que las integraciones de pasarelas informen si una membresía recurrente tiene una credencial de renovación reutilizable antes de que `auto_renew` se persista. Usa el hook `wu_membership_has_renewal_credential` y devuelve:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Elimina el marcador de credencial faltante como parte del flujo de reautorización correcto de tu pasarela después de almacenar una nueva credencial reutilizable.
 
-## Consejos
+## Consejos {#tips}
 
 - Devuelve siempre `WP_Error` en caso de fallo para que Ultimate Multisite pueda gestionar la visualización de errores
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Usa `wu_log_add()` para el registro específico de la pasarela
 
-## Capacidades del proveedor de conector de IA
+## Capacidades del proveedor de conector de IA {#ai-connector-provider-capabilities}
 
 Las integraciones personalizadas que llaman a operaciones respaldadas por conectores de IA deben alinearse con el conjunto de proveedores OAuth admitidos introducido con AI Provider for Anthropic Max v1.3.0:
 

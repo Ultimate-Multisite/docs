@@ -4,11 +4,11 @@ title: Aktioun - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Aktioun: wu_membership_post_renew
+# Aktioun: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Gëtt no der Verlängerung vun der Memberschaft ausgeléist.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gëtt no der Verlängerung vun der Memberschaft ausgeléist.
 | $membership_id | `int` | D'ID vun der Memberschaft. |
 | $membership | `\Membership` | Memberschaftsobjet. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) op der Linn 2235

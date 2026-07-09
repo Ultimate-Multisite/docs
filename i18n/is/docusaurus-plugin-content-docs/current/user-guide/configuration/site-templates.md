@@ -3,13 +3,13 @@ title: Sítastafli
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Stöðvar (v2)
+# Stöðvar (v2) {#site-templates-v2}
 
 _**LÝSING: Þessi grein er tengd Ultimate Multisite útgáfu 2.x. Ef þú notar útgáfu 1.x,**_ **sjá þennan grein** _**.**_
 
 Þær markmið okkar þegar við byggjum framúrskarandi nýnet (network) með Ultimate Multisite er að sjálfskipta hvaða mögulega flest ferli sem mögulegt er, en við gefum okkur viðskiptavinum fjarlag og tengsl fyrir val á því hvernig þeir vilja byggja sína vísitalmyndir (websites). Eitt einfalt hátt að ná þessum jafnvel samhengi er að nota eiginleika Site Templates í Ultimate Multisite.
 
-## Hvað er Site Template?
+## Hvað er Site Template? {#what-is-a-site-template}
 
 Eins og nafnið sýnir, er Site Template einn grunnur-sítinn sem getur verið nota sem grundvallarmiðann þegar þú byggir ný vísitalmyndir í netinu þínu.
 
@@ -17,7 +17,7 @@ Eins og nafnið sýnir, er Site Template einn grunnur-sítinn sem getur verið n
 
 Það høyrist svo ótrúlega vel, en hvernig get ég skráð nýja site template? Þetta er eins einfalt sem gæti verið.
 
-## Skapandi og breytingar í nýri Site Template
+## Skapandi og breytingar í nýri Site Template {#creating-and-editing-a-new-site-template}
 
 Site Templates eru bara almennar síddar á netinu þínu. Til að skapa ný template geturðu bara ferð til **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,17 +35,17 @@ _![Modal til að bæta síti template með site type drop-down](/img/config/site
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Innstilla innihaldi Site Template
+### Innstilla innihaldi Site Template {#customizing-the-contents-of-a-site-template}
 Til að innstilla site template þitt, farðu bara yfir á dashboard panel þess og gerðu breytingarnar sem þú þurft. Þú getur skapað nýja posts, pages, aktivert plugins og breytt aktivt theme. Þú getur sógnað í Customizer og breytt allsorgulagningstendur.
 
 ![Site template edit interface](/img/config/site-template-edit.png)
 
 Allt þetta data verður kopyað yfir þegar viðskiptavinur skapar nýtt site á byggingu á þessum Site Template.
 
-### Framkvæmdarstafan
+### Framkvæmdarstafan {#advanced-options}
 Ef þú hefur jákvileg upphaf í nokkrum sérstökum kóða, geturðu notað Search and Replace API okkar til að sjálfskipta skipti upplýsingum á nýtt síti eftir að það er skráð. Þetta er hulega fyrir þær hlutina sem þú vilt skipta, eins og að skipta fyrirtærsnafn á About page, eða að skipta tölvupóstfanni í Contact page, sýnilegt texti okkar.
 
-### Notkun Site Templates
+### Notkun Site Templates {#using-site-templates}
 Ok, þú hefur skapað fjölda af sínum site templates með ólíkum hlutum og innstillingum. Hvernig geturðu nú notað þau á netinu?
 
 Í grunninn eru tveir aðferðir sem þú getur notað (ekki samkvæmt sama tíma):
@@ -54,7 +54,7 @@ Ok, þú hefur skapað fjölda af sínum site templates með ólíkum hlutum og 
 **EINN ELLER**
   * Leita fyrir að viðskiptavinir þín velji site templates sjálfur á meðan þeir eru skráðir.
 
-#### Tilstand 1: Skipta Site Template
+#### Tilstand 1: Skipta Site Template {#mode-1-assign-site-template}
 
 Í þessum modi geta ekki viðkomandi viðskiptavinir velja mallinn (template) þegar þeir skapa reikning, heldur þú sjálfur ákveður hvern mallinn skal nota í hverjum einum af þínum Plans.
 
@@ -66,7 +66,7 @@ Til að gera þetta þarftu að ferðast yfir **Ultimate Multisite > Products > 
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Modur 2: Veldu tilfelli mallar (Choose Available Site Template)
+#### Modur 2: Veldu tilfelli mallar (Choose Available Site Template) {#mode-2-choose-available-site-template}
 
 Í þessum modi geturðu gefið viðskiptavinum val í samkvæði þess sem þeir skapa reikning. Þeir geta veldur frammæli frá öllum mallum sem þú hefur sést undir vöguþáttum (product settings). Þar er möguleiki að takast til þess að þeir geti veldur frammæli frá sérstökum setnum mallanna sem eru settir undir valinn vögu. Þetta gerir þér kleift að hafa annar set mallanna undir hverjum vögu, sem er yfirburðar fyrir það að sýna annar möguleika og eiginleikar fyrir vögu með hærri verði.
 
@@ -74,7 +74,7 @@ Til að gera þetta þarftu að ferðast yfir **Ultimate Multisite > Products > 
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form (Staðleikastaflival á færðarformum)
+### Default Mode: Site template selection on the Checkout form (Staðleikastaflival á færðarformum) {#default-mode-site-template-selection-on-the-checkout-form}
 
 Ef þú vilt að allir staðleikastafli þín séu tilfylltir í samkvæði þess sem notandi er registreið, eða ef þú ekki vilt gera extra vinnu með því að þú sést eða sést staðleikastafli undir hvert vöndun sem þú skapar. Þá geturðu bara sett val á staðleikastafli í **Checkout Form** (Færðarform) þínu. Til að gera þetta, ferðu yfir til **Ultimate Multisite > Checkout Forms** og klikka á **Edit** undir formann sem þú vilt að hleðja.
 
@@ -88,29 +88,29 @@ Ein modal window (hlutfél) mun sýna sig. Undir feltinu **Template Sites** (Sta
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Valg á netstafurval (Site Template Options)
+### Valg á netstafurval (Site Template Options) {#site-template-options}
 
 Þar eru aðeins öðrum netstafurfunksjonum til að slá úr, sem þú getur sést í innstillingum Ultimate Multisite.
 
 ![Netstafurval i innstillingum Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Leitað á skipti netstafur (Allow Template Switching)
+#### Leitað á skipti netstafur (Allow Template Switching) {#allow-template-switching}
 
 Þegar þú sláttir þennan val á, getur viðskiptavinir þín breytt netstafurinn sem þeir velja í samkvæði þess að reikningurinn og netstafurinn eru skráðar. Þetta er hulega gagnlegt fyrir viðskiptavinann þar sem hann getur valdi aftur netstafur eftir því sem hann finnur, að það var ekki bestur val fyrir sérstakna þættindi hans.
 
-#### Leitað á að nota netstafurinn sem netstafur (Allow Users to use their Site as templates)
+#### Leitað á að nota netstafurinn sem netstafur (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Eftir að notendur subsite-a hefja tíma í byggingu og hönnun sinna eiga þeir gæti vilja að klona það og nota það sem einn af netstafurvalnum er til við skráning nánar subsite á netverk þínum. Þessi val getur þeim leitt til þess.
 
-#### Kopja miðla á upplýsingastafur (Copy Media on Template Duplication)
+#### Kopja miðla á upplýsingastafur (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Þegar þú sláttir þennan val á, verður miðlar sem eru upplýst á netstafurinn kopya ykkur í nýskráðan netstafur. Þetta getur breytt á hverjum eina plani.
 
-#### **Verndu leitarhjálpar fyrir netstafur (Prevent Search Engines from indexing Site Templates)**
+#### **Verndu leitarhjálpar fyrir netstafur (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Netstafurval sem er nefndur í þessum greininni er einnig hluti af netverk þínum, sjaldanir það er að leita eftir þeim með leitarhjálpar. Þessi val getur laukið netstafurvalinn svo að leitarhjálpar geta ekki fundið hann.
 
-## Fyrirhaldandi netstafurval með sjálfskiptum leitingar og skiftingu (Pre-populating Site Templates with auto search-and-replace)
+## Fyrirhaldandi netstafurval með sjálfskiptum leitingar og skiftingu (Pre-populating Site Templates with auto search-and-replace) {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Eitt af sterkastum eiginleika Ultimate Multisite er nýting á að bæta við friðgjöfstext, farga og valandi feldi í skráningarskjalann. Eftir að við höfum fanga þetta upplýsingar getum við notað þær til að fyrirfram fylla inn innihald í sérstökum hlutu á valinn templatilfelli. Þegar nýtt svið er beinga, mun Ultimate Multisite skipta staðnum með staðhaldi sem var fanga í skráningu.
 
@@ -130,7 +130,7 @@ Ultimate Multisite mun þá skipta staðhaldi með upplýsingum sem viðskiptavi
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Lösun á því að "templatilfelli er fullt af staðhaldi"
+### Lösun á því að "templatilfelli er fullt af staðhaldi" {#solving-the-template-full-of-placeholders-problem}
 
 Allt það er glæp, en við komum í ólíklega ólíka hugmynd: nú eru templatilfelli okkar - sem viðskiptavinir okkar geta beityð á - fullt af ólíklegum staðhaldi sem ekki segja mikið.
 

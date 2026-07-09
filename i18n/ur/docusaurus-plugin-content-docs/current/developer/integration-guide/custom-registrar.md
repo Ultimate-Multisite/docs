@@ -3,13 +3,13 @@ title: ایک کسٹم رجسٹرار انٹیگریشن بنانا
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# ایک کسٹم رجسٹرار انٹیگریشن بنانا
+# ایک کسٹم رجسٹرار انٹیگریشن بنانا {#building-a-custom-registrar-integration}
 
 Domain Seller addon ایک **Integration Registry** پیٹرن استعمال کرتا ہے۔ ہر رجسٹرار ایک PHP کلاس ہوتی ہے جو `Domain_Selling_Capability` کو نافذ (implement) کرتی ہے اور `wu_domain_seller_register_capabilities` action hook کے ذریعے خود کو رجسٹر کرتی ہے۔
 
 یہ گائیڈ بتاتی ہے کہ ایک کسٹم رجسٹرار کو کیسے جوڑنا ہے۔
 
-## انٹرفیس (The interface)
+## انٹرفیس (The interface) {#the-interface}
 
 آپ کی کلاس کو `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` کو نافذ کرنا چاہیے اور `WP_Ultimo\Integrations\Base_Capability_Module` کو extend کرنا چاہیے۔
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### اختیاری طریقے (Optional methods)
+### اختیاری طریقے (Optional methods) {#optional-methods}
 
 اضافی خصوصیات کو فعال کرنے کے لیے ان کو نافذ کریں۔ addon `method_exists()` کے ذریعے سپورٹ کا پتہ لگاتا ہے:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### ریٹرن ویلیو کنونشن (Return value convention)
+### ریٹرن ویلیو کنونشن (Return value convention) {#return-value-convention}
 
 تمام طریقے ایک ایسا array ریٹرن کرتے ہیں جس میں کم از کم ایک `success` key ہو:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## اپنی کیپیبلٹی کو رجسٹر کرنا (Registering your capability)
+## اپنی کیپیبلٹی کو رجسٹر کرنا (Registering your capability) {#registering-your-capability}
 
 اپنی کلاس کو `wu_domain_seller_register_capabilities` action کا استعمال کرتے ہوئے رجسٹر کریں:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## ویزرڈ میں کریڈینشیل فیلڈز شامل کرنا (Adding credential fields to the wizard)
+## ویزرڈ میں کریڈینشیل فیلڈز شامل کرنا (Adding credential fields to the wizard) {#adding-credential-fields-to-the-wizard}
 
 ایڈمنز کو سیٹ اپ ویزرڈ کے ذریعے کریڈینشیلز داخل کرنے کی اجازت دینے کے لیے، اپنی انٹیگریشن کو رجسٹر کریں:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## پوسٹ-رجسٹریشن ایکشنز کے لیے Hooks (Hooks for post-registration actions)
+## پوسٹ-رجسٹریشن ایکشنز کے لیے Hooks (Hooks for post-registration actions) {#hooks-for-post-registration-actions}
 
 webhooks، provisioning، نوٹیفیکیشنز، یا CRM اپڈیٹس کو ٹرگر کرنے کے لیے ان actions کا استعمال کریں:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## لاگنگ (Logging)
+## لاگنگ (Logging) {#logging}
 
 `wu_log_add()` کا استعمال کرتے ہوئے اپنے provider-specific log channel میں لکھیں:
 

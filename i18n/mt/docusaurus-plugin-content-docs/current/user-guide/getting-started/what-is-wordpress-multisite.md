@@ -3,7 +3,7 @@ title: X what huwa WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# X what è WordPress Multisite?
+# X what è WordPress Multisite? {#what-is-wordpress-multisite}
 
 Fornit l-core tiegħu, WordPress joffrirt funtjonalità chiamata ‘Multisite’ li tajjeb i suoi origini fin 2010, meta l-l launch ta WordPress 3.0. Minħabba dan, għandu is-revisioni tal-qasir biex jinkludi funzjonijiet nuovi u jgħatti s-segwità.
 
@@ -11,7 +11,7 @@ F'essenza, WordPress multisite jista' ifhisser bħal dan: Un Università tħalli
 
 ##
 
-## X xieq WordPress Multisite?
+## X xieq WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite huwa funtjonalità ta WordPress li tista' tippassja l-molti siti li jgħattu installazzjoni waħda ta WordPress. Meta si attiva multisite, is-sit oriġinali ta WordPress jgħatti biex jsupport xieq jkun minnnu jkun **network ta siti**.
 
@@ -23,7 +23,7 @@ Dan l-fatt huwa minn il-vantaċi ewlenin ta multisite, u jippermettiklek tgħmli
 
 ##
 
-## Subdomain jew Subdirectory?
+## Subdomain jew Subdirectory? {#subdomain-or-subdirectory}
 
 Jum haja żgħira ta modi biex jkun WordPress multisite – u għandi tagħżirx li tixxjo minnu waħad meta tikkonswerta l-installazzjoni regolari tiegħek ta WordPress b'installazzjoni multisite:
 
@@ -49,7 +49,7 @@ Il-problema li prumettil l-setup tal-subdomain mode huwa l-copertura SSL (HTTPS)
 
 B'kontrast għal subdirectory mode, is-subsites fuq reġistrazzjoni basata fuq subdomain jitqassmuhom is-search engines bħala siti web separati, li jkun ma x'xabbirx l-perfjal tal-SEO ta subsite oħra.
 
-## Il-Super Admin
+## Il-Super Admin {#the-super-admin}
 
 Installazzjonijiet WordPress single-site jagħlik l-possibbiltà ta aġixxi num illimitat ta utenti u tiddawwar għal il-utenti differenti ruoli u permessuri differenti.
 
@@ -63,7 +63,7 @@ Pluginijiet u temi jistgħu jiġu installati jew ma jistgħux jiġu uninstallati
 
 _Nota: come vedi, invitare qualcuno nella tua rete e concedere loro lo status di super admin dà a quell'utente il controllo totale sulla tua rete. Ad esempio, altri super admin possono anche rimuovere il tuo status di super admin, bloccandoti di fatto dal pannello di amministrazione della tua rete. Per permettere ai clienti Ultimate Multisite di avere un controllo granulare su cosa possano fare gli altri super admin aggiuntivi, abbiamo un add-on chiamato Support Agents. Questo add-on ti permette di creare un altro tipo di utente – un agente – con solo i permessi di cui potrebbero aver bisogno per svolgere i loro compiti sulla rete._
 
-## Cosa è condiviso tra i subsites e cosa no
+## Cosa è condiviso tra i subsites e cosa no {#what-is-shared-among-subsites-and-what-is-not}
 
 Come abbiamo detto prima, uno dei vantaggi chiave di WordPress multisite è che tutti i subsites condividono le stesse configurazioni, file core, temi, plugin, file core di WordPress, ecc.
 
@@ -73,7 +73,7 @@ Tuttavia, ci sono elementi che sono ben definiti per ogni subsite.
 - Ogni subsite ha il proprio pannello di amministrazione dedicato e può attivare o disattivare plugin o temi a meno che non siano attivi nella rete da un super admin.
 - La maggior parte delle tabelle del database viene creata per ogni subsite, il che significa che post, commenti, pagine, impostazioni e altro sono definiti per ogni subsite.
 
-## Gestione utenti su WordPress Multisite
+## Gestione utenti su WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Un argomento delicato su WordPress multisite è la gestione degli utenti. La tabella utente di WordPress è una delle poche che viene condivisa tra tutti i subsites.
 
@@ -97,7 +97,7 @@ _הערה: אנחנו מבינים כמה זה יכול להיות גרוע תל
 
 Anche se l'elenco degli utenti è condiviso, gli amministratori dei subsiti o il super amministratore possono aggiungere e rimuovere gli utenti dai subsiti, e possono avere ruoli utente diversi su diversi subsiti.
 
-## Considerazioni sulle prestazioni
+## Considerazioni sulle prestazioni {#performance-considerations}
 
 WordPress multisite è davvero potente per quanto riguarda il numero di siti che può supportare. Questo si può testare dal fatto che [WordPress.com](https://WordPress.com), Edublogs e Campuspress sono tutti servizi basati su multisite e ogni host ospita migliaia di siti.
 

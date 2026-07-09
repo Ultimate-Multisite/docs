@@ -4,11 +4,11 @@ title: ფილტრი - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# ფილტრი: wu_limits_is_fluent_form_above_limit
+# ფილტრი: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
 
 ამოწმებს, დაშვებულია თუ არა მოცემული ფორმის ტიპი ამ გეგმაზე. საშუალებას აძლევს პლაგინის დეველოპერებს გაფილტრონ დაბრუნებული მნიშვნელობა
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
@@ -17,10 +17,10 @@ _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 | $form_count | `int` | ფორმების მიმდინარე რაოდენობა |
 | $quota | `int` | დაშვებული კვოტა |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 1.0.0
-### წყარო
+### წყარო {#source}
 
 - განსაზღვრულია [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L56)-ში, 56-ე ხაზზე
 - განსაზღვრულია [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L89)-ში, 89-ე ხაზზე

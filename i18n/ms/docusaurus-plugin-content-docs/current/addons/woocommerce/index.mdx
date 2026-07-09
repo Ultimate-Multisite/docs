@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# Integrasi WooCommerce
+# Integrasi WooCommerce {#woocommerce-integration}
 
 Integrasi WooCommerce berfungsi dengan cara yang sangat serupa dengan cara Manual Gateway kami berfungsi. Ia menawarkan banyak fleksibiliti kepada pengguna anda, membolehkan mereka memilih mana-mana borang pembayaran yang tersedia pada pemasangan WooCommerce anda. Dan ia mudah: sebaik sahaja tempoh pengebilan pengguna tamat, langganan pengguna akan ditangguhkan. Pada masa yang sama, satu pesanan akan dibuat pada pemasangan WooCommerce bagi laman utama rangkaian. Pengguna kemudian menerima invois dalam e-mel mereka, dengan pautan untuk melakukan pembayaran. Setelah pembayaran diterima, langganan akan diperbaharui.
 
-## Ciri-ciri
+## Ciri-ciri {#features}
 
 - Integrasi mudah antara Ultimate Multisite dan WooCommerce
 - Beberapa kaedah pembayaran tersedia
 - Pengebilan berulang automatik menggunakan teras langganan yang disertakan, dengan penambahbaikan plugin WooCommerce Subscriptions pilihan
 - Jumlah checkout termasuk cukai Ultimate Multisite sebagai baris yuran WooCommerce yang berasingan dan tidak boleh dikenakan cukai supaya pelanggan boleh menyemak jumlah cukai sebelum pembayaran
 
-## Dokumentasi
+## Dokumentasi {#documentation}
 
 **Menyediakan Integrasi WooCommerce**
 
 **Memperluas Pilihan Pembayaran anda dengan Ultimate Multisite: Integrasi WooCommerce**
 
-## Pemasangan
+## Pemasangan {#installation}
 
 1. Muat naik 'ultimate-multisite-woocommerce' ke direktori '/wp-content/plugins/'
 2. Aktifkan plugin melalui menu 'Plugins' dalam WordPress
 3. Ikuti Wizard langkah demi langkah untuk menyediakan plugin
 
-## Panduan Penggunaan
+## Panduan Penggunaan {#usage-guide}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
@@ -40,7 +40,7 @@ Kami memahami bahawa _Stripe_ dan _PayPal_ tidak tersedia di sesetengah negara, 
 
 _WooCommerce_ ialah plugin eCommerce yang sangat popular. Pembangun di seluruh dunia mencipta add-on untuk mengintegrasikan gateway pembayaran yang berbeza dengannya. Kami memanfaatkan perkara ini untuk memperluas gateway pembayaran yang boleh anda gunakan dalam sistem pengebilan Ultimate Multisite.
 
-## Menyediakannya
+## Menyediakannya {#setting-it-up}
 
 Pertama, anda perlu memasang add-on Integrasi WooCommerce yang **percuma untuk pengguna berlesen**. Untuk memasangnya, klik pada Ultimate Multisite pada dashboard super admin anda dan pilih **Add-ons**.
 
@@ -68,11 +68,11 @@ Setelah dipasang, anda akan melihat pilihan tambahan di bawah tetapan pembayaran
 
 Anda boleh mengkonfigurasi beberapa tetapan asas seperti nama paparan yang akan ditunjukkan di bahagian front end dan arahan untuk membimbing pengguna anda dalam aliran checkout mereka. Kemudian anda boleh pergi ke **tetapan _WooCommerce_ laman utama anda** untuk mengaktifkan dan mengkonfigurasi gateway pembayaran yang anda pilih untuk digunakan.
 
-### Baris yuran cukai checkout
+### Baris yuran cukai checkout {#checkout-tax-fee-lines}
 
 Apabila checkout Ultimate Multisite termasuk cukai, integrasi ini menambah setiap jumlah cukai Ultimate Multisite ke checkout WooCommerce sebagai baris yuran yang berasingan dan tidak boleh dikenakan cukai. Ini memastikan jumlah cukai kelihatan sebelum pembayaran sambil menghalang WooCommerce daripada mengenakan cukai ke atas yuran cukai sekali lagi.
 
-## Cara mengurus pembayaran
+## Cara mengurus pembayaran {#how-to-manage-the-payment}
 
 Integrasi WooCommerce berfungsi dengan cara yang sangat serupa dengan cara **Manual Gateway** kami berfungsi. Kekurangannya ialah setiap pembayaran mesti dibayar secara manual pada akhir tempoh pengebilan. Begini cara aliran tersebut berfungsi:
 
@@ -82,13 +82,13 @@ Integrasi WooCommerce berfungsi dengan cara yang sangat serupa dengan cara **Man
 
   * Setelah pembayaran diterima, keahlian **diperbaharui** , pembayaran direkodkan dalam Ultimate Multisite dan pesanan ditetapkan sebagai selesai.
 
-### Beberapa Nota Penting:
+### Beberapa Nota Penting: {#some-important-notes}
 
   * Fungsi lalai Ultimate Multisite masih berfungsi dengan borang integrasi ini. Contohnya, **mengeluarkan bayaran balik** dari skrin **Subscription Management** akan berkomunikasi dengan WooCommerce untuk mengeluarkan bayaran balik menggunakan borang pembayaran yang dipilih.
 
   * Ultimate Multisite: Integrasi WooCommerce bergantung pada WP-Cron untuk berfungsi. Ini berfungsi dengan sangat baik pada kebanyakan masa, tetapi jika laman mempunyai trafik rendah maka cron tidak dicetuskan untuk menyemak acara berjadual dan acara tersebut terlepas, yang boleh menyebabkan kelewatan pelaksanaan.
 
-## Plugin WooCommerce Subscriptions
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
 
 Memulakan pembayaran secara manual setiap bulan bukanlah ideal untuk pengguna akhir kerana langganan dijangka berulang secara automatik pada setiap kitaran pengebilan. Add-on WooCommerce Integration kini menggabungkan kod langganan teras, jadi produk berulang sentiasa menggunakan langganan untuk pengebilan berulang.
 
@@ -100,7 +100,7 @@ Dan itu sahaja. Pengguna akhir anda tidak lagi perlu membuat pembayaran secara m
 
 Selain daripada pesanan dibuat pada tapak utama anda di bawah _WooCommerce_, ia juga akan mencipta langganan untuk setiap Account.
 
-### Tingkah laku penggantungan pembaharuan yang gagal
+### Tingkah laku penggantungan pembaharuan yang gagal {#failed-renewal-suspension-behavior}
 
 Secara lalai, keahlian kekal aktif sementara WooCommerce Subscriptions memproses jadual percubaan semula pembayaran gagalnya. Ini mengekalkan tempoh ihsan WooCommerce Subscriptions yang biasa supaya pembaharuan yang berjaya dipulihkan boleh menyelaraskan semula langganan dan keahlian tanpa mengganggu akses terlalu awal.
 

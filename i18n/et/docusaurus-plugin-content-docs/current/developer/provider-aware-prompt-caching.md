@@ -3,11 +3,11 @@ title: Teenusepakkujapõhine viibapuhverdamine
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Teenusepakkuja-teadlik promptide vahemällu salvestamine
+# Teenusepakkuja-teadlik promptide vahemällu salvestamine {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 tutvustab **teenusepakkuja-teadlikku promptide vahemällu salvestamist**, mis optimeerib API kulusid ja latentsust, salvestades prompte vahemällu eri LLM-teenusepakkujate vahel. Igal teenusepakkujal on erinevad vahemällu salvestamise mehhanismid ja seadistused.
 
-## Ülevaade
+## Ülevaade {#overview}
 
 Promptide vahemällu salvestamine võimaldab teil:
 
@@ -23,11 +23,11 @@ Eri teenusepakkujad rakendavad vahemällu salvestamist erinevalt:
 - **OpenRouter**: teenusepakkuja-põhine vahemällu salvestamine
 - **Vertex Anthropic**: promptide vahemällu salvestamine vahemälu juhtimisega
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini pakub selgesõnalist vahemälu haldust `cachedContents` API kaudu.
 
-### Seadistus
+### Seadistus {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Vahemällu salvestatud prompti loomine
+### Vahemällu salvestatud prompti loomine {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Vahemällu salvestatud prompti kasutamine
+### Vahemällu salvestatud prompti kasutamine {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Vahemälu elutsükkel
+### Vahemälu elutsükkel {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini parimad tavad
+### Gemini parimad tavad {#best-practices-for-gemini}
 
 - **Määrake sobiv TTL**: tasakaalustage kulude kokkuhoid ja vahemälu aegumine
 - **Salvestage süsteemipromptid vahemällu**: kasutage sama süsteemiprompti päringute vahel uuesti
 - **Jälgige vahemälu kasutust**: jälgige, milliseid vahemälusid kasutatakse kõige rohkem
 - **Puhastage aegunud vahemälud**: kustutage perioodiliselt kasutamata vahemälud
 
-## Azure OpenAI: promptide vahemällu salvestamine
+## Azure OpenAI: promptide vahemällu salvestamine {#azure-openai-prompt-caching}
 
 Azure OpenAI toetab promptide vahemällu salvestamist automaatse TTL-i haldusega.
 
-### Seadistus
+### Seadistus {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Vahemällu salvestamise lubamine
+### Vahemällu salvestamise lubamine {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Vahemälu päised
+### Vahemälu päised {#cache-headers}
 
 Azure OpenAI kasutab vahemälu juhtimiseks HTTP päiseid:
 
@@ -152,7 +152,7 @@ Toetatud väärtused:
 - `no_cache`: ära salvesta seda päringut vahemällu
 - `no_store`: ära salvesta vahemällu ega kasuta uuesti
 
-### Vahemälu kasutuse jälgimine
+### Vahemälu kasutuse jälgimine {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Azure OpenAI parimad tavad
+### Azure OpenAI parimad tavad {#best-practices-for-azure-openai}
 
 - **Kasutage järjepidevaid prompte**: identsed promptid saavad vahemällu salvestamisest kasu
 - **Määrake mõistlik TTL**: tasakaalustage kulu ja värskus
 - **Jälgige vahemälu mõõdikuid**: jälgige vahemälu loomise ja tabamuste suhet
 - **Rühmitage sarnased päringud**: koondage päringud, et maksimeerida vahemälu tabamusi
 
-## OpenRouter: teenusepakkuja-põhine vahemällu salvestamine
+## OpenRouter: teenusepakkuja-põhine vahemällu salvestamine {#openrouter-provider-specific-caching}
 
 OpenRouter toetab vahemällu salvestamist aluseks olevate teenusepakkujate kaudu (OpenAI, Anthropic jne).
 
-### Seadistus
+### Seadistus {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouteri vahemällu salvestamise kasutamine
+### OpenRouteri vahemällu salvestamise kasutamine {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Teenusepakkuja-põhised valikud
+### Teenusepakkuja-põhised valikud {#provider-specific-options}
 
 Eri teenusepakkujatel on erinevad vahemällu salvestamise mehhanismid:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouteri parimad tavad
+### OpenRouteri parimad tavad {#best-practices-for-openrouter}
 
 - **Tundke oma teenusepakkuja vahemällu salvestamist**: igal teenusepakkujal on erinevad mehhanismid
 - **Testige vahemällu salvestamise käitumist**: kontrollige, et vahemällu salvestamine töötaks teie valitud teenusepakkujaga
 - **Jälgige kulusid**: jälgige vahemällu salvestamisest saadavat kokkuhoidu
 - **Kasutage järjepidevaid mudeleid**: mudelite vahetamine katkestab vahemälu tabamused
 
-## Vertex Anthropic: promptide vahemällu salvestamine vahemälu juhtimisega
+## Vertex Anthropic: promptide vahemällu salvestamine vahemälu juhtimisega {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) toetab promptide vahemällu salvestamist selgesõnalise vahemälu juhtimisega.
 
-### Seadistus
+### Seadistus {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropicu vahemällu salvestamise kasutamine
+### Vertex Anthropicu vahemällu salvestamise kasutamine {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Vahemälu juhtimise tüübid
+### Vahemälu juhtimise tüübid {#cache-control-types}
 
 - **ephemeral**: Vahemälu päringu kestuse ajaks (vaikimisi)
 - **persistent**: Vahemälu mitme päringu vahel (kui toetatud)
 
-### Vahemälu kasutuse jälgimine
+### Vahemälu kasutuse jälgimine {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Vertex Anthropic parimad praktikad
+### Vertex Anthropic parimad praktikad {#best-practices-for-vertex-anthropic}
 
 - **Kasuta ephemeral vahemällu salvestamist**: Hea ühe seansi vahemällu salvestamiseks
 - **Määra max_tokens sobivalt**: Tasakaalusta vahemälu suurust ja kulu
 - **Jälgi vahemälu mõõdikuid**: Jälgi vahemälu tõhusust
 - **Testi oma töökoormusega**: Veendu, et vahemällu salvestamine toob sinu kasutusjuhule kasu
 
-## Teenusepakkujateülene vahemällu salvestamise strateegia
+## Teenusepakkujateülene vahemällu salvestamise strateegia {#cross-provider-caching-strategy}
 
-### Ühtne konfiguratsioon
+### Ühtne konfiguratsioon {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Teenusepakkuja tuvastamine
+### Teenusepakkuja tuvastamine {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Varustrateegia
+### Varustrateegia {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kulude optimeerimine
+## Kulude optimeerimine {#cost-optimization}
 
-### Säästu arvutamine
+### Säästu arvutamine {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimeerimisnõuanded
+### Optimeerimisnõuanded {#optimization-tips}
 
 - **Salvesta suured süsteemiviibad vahemällu**: Suurim kulude kokkuhoid
 - **Kasuta konteksti uuesti**: Salvesta sageli kasutatavad kontekstidokumendid vahemällu
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Jälgi vahemälu tõhusust**: Jälgi tegelikku säästu
 - **Kohanda TTL-i**: Tasakaalusta kulu ja värskust
 
-## Tõrkeotsing
+## Tõrkeotsing {#troubleshooting}
 
-### Vahemälu ei kasutata
+### Vahemälu ei kasutata {#cache-not-being-used}
 
 - Veendu, et vahemällu salvestamine on konfiguratsioonis lubatud
 - Kontrolli, et viibad oleksid identsed (vahemällu salvestamine nõuab täpset vastet)
 - Veendu, et vahemälu pole aegunud
 - Kontrolli teenusepakkujaspetsiifilisi vahemälu piiranguid
 
-### Vahemälu loomine ebaõnnestub
+### Vahemälu loomine ebaõnnestub {#cache-creation-failing}
 
 - Veendu, et vahemälu suurus jääb teenusepakkuja piirangute sisse
 - Kontrolli, et vahemälu juhtimise süntaks oleks korrektne
 - Veendu, et teenusepakkuja toetab sinu mudeli jaoks vahemällu salvestamist
 - Vaata piirangute kohta teenusepakkuja dokumentatsiooni
 
-### Ootamatud kulud
+### Ootamatud kulud {#unexpected-costs}
 
 - Jälgi vahemälu loomise ja vahemälust lugemise token’eid
 - Veendu, et vahemälu tegelikult kasutatakse
 - Kontrolli viipade variatsioonidest tingitud vahemälu möödalaskmisi
 - Kaalu TTL-i või vahemälu strateegia kohandamist
 
-## Teenusepakkujate võrdlus
+## Teenusepakkujate võrdlus {#provider-comparison}
 
 | Funktsioon | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Kulude vähendamine | 90% | 90% | Sõltub teenusepakkujast | 90% |
 | Jälgimine | Üksikasjalik | Mõõdikute kaudu | Sõltub teenusepakkujast | Kasutuse kaudu |
 
-## Järgmised sammud
+## Järgmised sammud {#next-steps}
 
 1. **Vali oma teenusepakkuja**: Vali oma vajaduste põhjal
 2. **Konfigureeri vahemällu salvestamine**: Seadista teenusepakkujaspetsiifiline vahemällu salvestamine

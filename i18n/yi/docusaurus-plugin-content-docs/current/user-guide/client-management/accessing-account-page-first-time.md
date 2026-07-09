@@ -3,7 +3,7 @@ title: צוטריט צו דער Account־זײַט
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# ווי קען איך צוקומען צו מײַן Account-זײַט צום ערשטן מאָל?
+# ווי קען איך צוקומען צו מײַן Account-זײַט צום ערשטן מאָל? {#how-can-i-access-my-account-page-for-the-first-time}
 
 ברוכים־הבאים צו Ultimate Multisite!
 

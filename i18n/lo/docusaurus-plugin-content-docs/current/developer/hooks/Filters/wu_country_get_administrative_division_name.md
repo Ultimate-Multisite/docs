@@ -4,11 +4,11 @@ title: ຕົວກອງ - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# ຕົວກອງ: wu_country_get_administrative_division_name
+# ຕົວກອງ: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 ສົ່ງຄືນຊື່ທີ່ສວຍງາມຂອງການແບ່ງເຂດບໍລິຫານຂອງປະເທດ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | ຖ້າເຮົາປ່ຽນຄຳໃຫ້ເປັນຕົວພິມໃຫຍ່. |
 | $current_country | `\WP_Ultimo\Country\Country` | ອິນສະແຕນຂອງຄລາສປັດຈຸບັນ. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.0.11
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ທີ່ບັນທັດ 250
 
 
-## ສົ່ງຄືນ
+## ສົ່ງຄືນ {#returns}
 ຊື່ເຂດແບ່ງທີ່ຖືກປັບແກ້.

@@ -3,13 +3,13 @@ title: Taybetkirina forma xwe ya qeydkirinê
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Formê Qeydkirinê yê xwe taybet bike
+# Formê Qeydkirinê yê xwe taybet bike {#customizing-your-registration-form}
 
 Ji bo ku tora te ji hemû SaaSên din ên li ser platforma WordPress hatine çêkirin cuda xuya bike, Ultimate Multisite bi taybetmendiya me ya **Formên Checkout** dihêle tu rûpelên qeydkirin û têketinê taybet bikî.
 
 Her çend ew rêyek hêsan û nerm in ji bo ceribandina nêzîkatiyên cuda dema hewl didî xerîdarên nû veguherînî, ew bi piranî ji bo çêkirina formên qeydkirinê yên kesane tên bikaranîn. Armanca vê gotarê ew e ku nîşanî te bide tu çawa dikarî vê bikî.
 
-## Rûpelên têketin û qeydkirinê:
+## Rûpelên têketin û qeydkirinê: {#login-and-registration-pages}
 
 Dema Ultimate Multisite tê sazkirin, ew bixweber rûpelên têketin û qeydkirinê yên taybet li ser malpera sereke ya te çêdike. Tu dikarî van rûpelên standard her dem biguherînî bi çûna rûpela **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Niha, ka em vebijarkên din bibînin ku hîn jî bi pêvajoya têketin û qeydki
 
 Û ev hemû vebijarkên têkildar bi têketin û qeydkirinê ne ku tu dikarî taybet bikî! Piştî ku guherandinên xwe qedandî, jibîr neke mîhengên xwe tomar bikî.
 
-## Bikaranîna çend formên qeydkirinê:
+## Bikaranîna çend formên qeydkirinê: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 edîtorek formê checkoutê pêşkêş dike ku dihêle tu çend formên dixwazî, bi qadên cuda, berhemên pêşkêşkirî, hwd. çêkî.
 
@@ -69,7 +69,7 @@ Wek alternatîf, tu dikarî formên ku jixwe te hene biguherînî an ducarî bik
 
 Ger tu gavek tenê an çend-gav hilbijêrî, formê checkoutê dê jixwe bi gavên bingehîn ên ji bo xebitîna wê were dagirtin. Paşê, ger tu bixwazî, dikarî gavên zêde lê zêde bikî.
 
-### Guherandina Formek Checkout:
+### Guherandina Formek Checkout: {#editing-a-checkout-form}
 
 Wek me berê got, tu dikarî formên checkoutê ji bo armancên cuda çêkî. Di vê mînakê de em ê li ser formek qeydkirinê bixebitin.
 
@@ -131,11 +131,11 @@ Ji bo wergirtina shortcode a forma xwe, klîk bike li **Shortcode Çêbike** û 
 
 _**Têbînî:** Divê tu vê shortcode li rûpela qeydkirina xwe zêde bikî da ku ev forma checkout lê zêde bibe._
 
-## Pêş-hilbijartina berhem û şablonan bi parameterên URL:
+## Pêş-hilbijartina berhem û şablonan bi parameterên URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Heke tu dixwazî tabloyên nirxan ên xweser ji bo berhemên xwe çêkî û li forma checkout berhem an şablona ku mişteriyê te ji rûpela tabloya nirxan an şablonan hilbijartiye pêş-hilbijêrî, tu dikarî ji bo vê parameterên URL bi kar bînî.
 
-### **Ji bo planan:**
+### **Ji bo planan:** {#for-plans}
 
 Here **Ultimate Multisite > Berhem > Planek hilbijêre**. Divê tu bişkoka **Klîk bike ji bo kopîkirina Girêdana Parvebar** li serê rûpelê bibînî. Ev ew girêdan e ku tu dikarî bi kar bînî da ku ev plana taybetî li forma checkout a te pêş-hilbijartî be.
 
@@ -143,7 +143,7 @@ Here **Ultimate Multisite > Berhem > Planek hilbijêre**. Divê tu bişkoka **Kl
 
 Bizane ku ev girêdana parvebar tenê ji bo **Plan** derbasdar e. Tu nikarî girêdanên parvebar ji bo paket an xizmetan bi kar bînî.
 
-### Ji bo şablonan:
+### Ji bo şablonan: {#for-templates}
 
 Heke tu dixwazî şablonên malperê li forma checkout a xwe pêş-hilbijêrî, tu dikarî parameterê bi kar bînî: **?template_id=X** li URL ya rûpela qeydkirinê. Divê "X" bi **hejmara ID ya şablona malperê** were guhertin. Ji bo wergirtina vê hejmarê, here **Ultimate Multisite > Malper**.
 

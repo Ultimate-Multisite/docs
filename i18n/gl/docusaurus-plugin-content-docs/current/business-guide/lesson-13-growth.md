@@ -3,19 +3,19 @@ title: 'Lección 13: Escalado'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lección 13: Escalar
+# Lección 13: Escalar {#lesson-13-scaling-up}
 
 Tes unha plataforma funcionando con clientes de pago. Esta lección cobre como medrar desde unha pequena operación ata un negocio sostible: escalar a infraestrutura, automatizar operacións e aumentar os ingresos por cliente.
 
-## Onde o deixamos
+## Onde o deixamos {#where-we-left-off}
 
 FitSite está en directo, os clientes están rexistrándose e ti estás xestionando as operacións diarias. Agora centrámonos no crecemento.
 
-## Coñece os teus números
+## Coñece os teus números {#know-your-numbers}
 
 Antes de escalar, entende onde estás:
 
-### Métricas clave
+### Métricas clave {#key-metrics}
 
 - **MRR (ingresos recorrentes mensuais)**: Ingresos totais mensuais por subscrición
 - **Número de clientes**: Total de subscritores activos
@@ -24,7 +24,7 @@ Antes de escalar, entende onde estás:
 - **LTV (valor de vida do cliente)**: Ingreso medio por cliente ao longo de toda a súa subscrición
 - **CAC (custo de adquisición de cliente)**: Custo medio para adquirir un cliente
 
-### Exemplo: FitSite con 50 clientes
+### Exemplo: FitSite con 50 clientes {#example-fitsite-at-50-customers}
 
 | Métrica | Valor |
 |--------|-------|
@@ -36,9 +36,9 @@ Antes de escalar, entende onde estás:
 
 Estes números dinche en que centrarte. Abandono alto? Mellora a retención. ARPU baixo? Impulsa as actualizacións. CAC alto? Optimiza as canles de adquisición.
 
-## Escalar a infraestrutura
+## Escalar a infraestrutura {#scaling-infrastructure}
 
-### Cando escalar
+### Cando escalar {#when-to-scale}
 
 Escala o aloxamento cando:
 
@@ -47,7 +47,7 @@ Escala o aloxamento cando:
 - Estás achegándote a máis de 100 sitios activos
 - Aumentan as queixas dos clientes sobre a velocidade
 
-### Como escalar
+### Como escalar {#how-to-scale}
 
 - **Escalado vertical**: Actualiza a un servidor máis grande (máis CPU, RAM)
 - **Capas de caché**: Engade Redis/Memcached para caché de obxectos, caché de páxina para contido estático
@@ -55,7 +55,7 @@ Escala o aloxamento cando:
 - **Optimización da base de datos**: A medida que a rede medra, as consultas á base de datos ralentízanse. Optimiza táboas, engade índices, considera un servidor de base de datos dedicado.
 - **Separar responsabilidades**: Move o almacenamento multimedia a almacenamento de obxectos (compatible con S3), descarga o correo electrónico nun servizo de correo transaccional
 
-### Migración de aloxamento
+### Migración de aloxamento {#hosting-migration}
 
 Se o teu provedor actual non pode escalar máis, planifica unha migración:
 
@@ -65,11 +65,11 @@ Se o teu provedor actual non pode escalar máis, planifica unha migración:
 4. Actualiza o DNS cun TTL mínimo de antemán
 5. Verifica que todo funciona despois da migración
 
-## Automatizar operacións
+## Automatizar operacións {#automating-operations}
 
 A medida que medras, os procesos manuais convértense en pescozos de botella. Automatiza o que poidas:
 
-### Webhooks e Zapier
+### Webhooks e Zapier {#webhooks-and-zapier}
 
 Usa [Webhooks](/user-guide/integrations/webhooks) ou [Zapier](/user-guide/integrations/zapier) para automatizar:
 
@@ -78,7 +78,7 @@ Usa [Webhooks](/user-guide/integrations/webhooks) ou [Zapier](/user-guide/integr
 - **Fallos de pagamento** → alerta na túa ferramenta de monitorización
 - **Actualizacións de plan** → correo de felicitación cunha guía das novas funcionalidades
 
-### Automatización de correo electrónico
+### Automatización de correo electrónico {#email-automation}
 
 Pasa de correos manuais a secuencias automatizadas:
 
@@ -87,30 +87,30 @@ Pasa de correos manuais a secuencias automatizadas:
 - Avisos de actualización cando os clientes se achegan aos límites do plan
 - Recordatorios de renovación para subscritores anuais
 
-### Automatización de soporte
+### Automatización de soporte {#support-automation}
 
 - **Respostas predefinidas** para preguntas comúns
 - **Respostas automáticas** confirmando a recepción de tickets de soporte
 - **Suxestións da base de coñecemento** cando os clientes envían tickets que coinciden con artigos existentes
 
-## Aumentar os ingresos
+## Aumentar os ingresos {#increasing-revenue}
 
 O crecemento non vai só de conseguir máis clientes. Tamén vai de obter máis ingresos por cliente.
 
-### Venda adicional a clientes existentes
+### Venda adicional a clientes existentes {#upselling-existing-customers}
 
 - **Actualizacións de plan**: Campañas segmentadas que amosan funcionalidades de Crecemento/Pro a clientes de Inicial
 - **Order bumps**: Promociona produtos complementarios a clientes existentes por correo electrónico
 - **Conversión anual**: Ofrece aos clientes mensuais un desconto para cambiar á facturación anual
 
-### Novas fontes de ingresos
+### Novas fontes de ingresos {#new-revenue-streams}
 
 - **Configuración feita por ti**: Cobra un prezo premium por configurar e personalizar o sitio dun cliente por el
 - **Servizos de deseño personalizado**: Ofrece traballo de deseño á medida enriba do modelo
 - **Sesións de formación**: Percorridos individuais de pago para clientes que queren axuda práctica
 - **Plugins premium**: Ofrece plugins premium específicos do nicho como complementos de pago (por exemplo, un widget de reserva de clases de fitness)
 
-### Subir prezos
+### Subir prezos {#raising-prices}
 
 A medida que a túa plataforma madura e engade valor:
 
@@ -118,7 +118,7 @@ A medida que a túa plataforma madura e engade valor:
 - Sobe os prezos para os novos rexistros
 - Xustifica os aumentos con novas funcionalidades e melloras
 
-## Construír un equipo
+## Construír un equipo {#building-a-team}
 
 Nalgún momento, non poderás facelo todo só. Primeiras contratacións habituais:
 
@@ -128,7 +128,7 @@ Nalgún momento, non poderás facelo todo só. Primeiras contratacións habituai
 
 Non necesitas empregados. Contratistas e freelancers funcionan ben para un negocio de plataforma.
 
-## Fitos de crecemento
+## Fitos de crecemento {#growth-milestones}
 
 | Fito | MRR aproximado | Foco |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Non necesitas empregados. Contratistas e freelancers funcionan ben para un negoc
 | 250-500 clientes | $25,000-$50,000 | Construír equipo, novas fontes de ingresos, funcionalidades premium |
 | 500+ clientes | $50,000+ | Madurez da plataforma, nichos adxacentes, saída potencial |
 
-## O que construímos nesta lección
+## O que construímos nesta lección {#what-we-built-this-lesson}
 
 - **Un marco de métricas** para entender a saúde do negocio
 - **Plan de escalado de infraestrutura** para medrar de ducias a centos de sitios

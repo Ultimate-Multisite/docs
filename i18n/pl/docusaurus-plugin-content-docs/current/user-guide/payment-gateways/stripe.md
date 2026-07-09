@@ -3,19 +3,19 @@ title: Konfiguracja Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Konfiguracja bramki Stripe (v2)
+# Konfiguracja bramki Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
 Na stronie ustawień płatności możesz aktywować do czterech metod płatności: Stripe, Stripe Checkout, PayPal i płatność ręczną. W tym artykule pokażemy, jak zintegrować bramkę **Stripe**.
 
-## Włączanie Stripe
+## Włączanie Stripe {#enabling-stripe}
 
 Aby włączyć Stripe jako dostępną bramkę płatności w Twojej sieci, przejdź do **Ultimate Multisite > Ustawienia > Płatności** i zaznacz przełącznik obok **Stripe** lub **Stripe Checkout** w sekcji Aktywne bramki płatności.
 
 ![Włączanie Stripe w aktywnych bramkach płatności](/img/config/settings-payment-gateways.png)
 
-### Stripe a Stripe Checkout:
+### Stripe a Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Ta metoda wyświetla pole do wpisania numeru karty kredytowej podczas realizacji zamówienia.
 
@@ -47,7 +47,7 @@ Skopiuj wartości **Publishable key** i **Secret key** z kolumny **Token** i wkl
 
 ![Wklejanie kluczy Stripe w ustawieniach Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Konfiguracja webhooka Stripe
+## Konfiguracja webhooka Stripe {#setting-up-stripe-webhook}
 
 Stripe wysyła zdarzenia webhook, które powiadamiają Ultimate Multisite za każdym razem, gdy na **Twoim koncie Stripe** coś się wydarzy.
 

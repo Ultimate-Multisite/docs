@@ -3,7 +3,7 @@ title: Error File Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Error Pasang File Sunrise
+# Error Pasang File Sunrise {#error-installing-the-sunrise-file}
 
 File sunrise.php téh file istimé anu dicari ku WordPress nalika WordPress ngahandaan diri (bootstraps). Supaya WordPress bisa manggihan file sunrise.php, éta kudu aya di jero folder **wp-content**.
 

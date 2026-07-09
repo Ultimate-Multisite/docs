@@ -3,11 +3,11 @@ title: Uluhlu lotshintsho
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Ingxelo yotshintsho
+# Ingxelo yotshintsho {#changelog}
 
-## 1.9.0 — Ikhutshwe nge-2026-04-28
+## 1.9.0 — Ikhutshwe nge-2026-04-28 {#190--released-on-2026-04-28}
 
-### Entsha
+### Entsha {#new}
 
 - **ubuchule be-`create_contact_form`** — budala ifom yoqhagamshelwano kusetyenziswa iplugin yeefom esebenzayo (Contact Form 7, WPForms, Fluent Forms, okanye Gravity Forms) kwaye bubuyisela i-shortcode elungele ukufakwa nakweyiphi iposti okanye iphepha.
 - **ubuchule be-`set_featured_image`** — bunika iposti okanye iphepha umfanekiso ophambili ukusuka kwi-ID yoncamathiselo ekhoyo kwiMedia Library okanye kwi-URL ekude; bungenisa ngokuzenzekelayo umfanekiso xa kunikwe i-URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Buyisela iseshoni yokugqibela** — iphaneli yencoko ngoku ilayisha ngokuzenzekelayo incoko yakutshanje xa iphepha lilayishwa naxa iwidget ivulwa, ukuze umxholo ungaze ulahleke xa kujongwa amaphepha ahlukeneyo.
 - **Amakhonkco ezenzo zeplugin** — amakhonkco akhawulezayo aya kwi-Settings nakwi-Abilities Registry ngoku avela kwiscreen se-WordPress **Plugins → Installed Plugins** ngezantsi kwenkcazelo yeplugin.
 
-### Kuphuculwe
+### Kuphuculwe {#improved}
 
 - **Ukuzama kwakhona umthombo womfanekiso** — i-agent ngoku izama kwakhona yonke imithombo yemifanekiso yasimahla emiselweyo ngaphambi kokubuyela kumfanekiso oveliswe yi-AI xa ukukhuphela kusilela.
 - **Iphaneli yolwazi lwemodeli** — ihlala ibonakala kwintloko yencoko; ayisafihlwa emva komyalezo wokuqala.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Uyilo ngokutsha lwewidget yencoko** — i-ayikhoni ye-AI emanyeneyo ithatha indawo ye-avatar yangaphambili eyayilungiselelwe; iyahambelana nenkqubo yee-agent ezakhelwe ngaphakathi.
 - **Ukwenziwa kwe-URL ibe likhonkco** — ii-URL ezivela kwimiyalezo yenkqubo nakwiibhamuza zemiyalezo yempazamo ngoku ziboniswa njengamakhonkco acofekayo.
 
-### Kulungisiwe
+### Kulungisiwe {#fixed}
 
 - **Ukufumaneka kobuchule** — kulungiswe iinkcazelo, izalathiso ze-system prompt, kunye nolungelelwaniso lwe-namespace ukuze bonke ubuchule buvele ngokuthembekileyo kuluhlu lwezixhobo ze-agent.
 - **I-cache yababoneleli** — ababoneleli ngoku bagcinwa kwi-cache kwinqanaba lesayithi yonke kusetyenziswa ikhawunta yenguqulelo, kuthintelwa iingxaki zababoneleli abaphelelwe lixesha kwiinethewokhi ze-multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Ikhutshwe nge-2026-04-09
+## 1.4.0 — Ikhutshwe nge-2026-04-09 {#140--released-on-2026-04-09}
 
-### Entsha
+### Entsha {#new-1}
 
 - **Umyalelo webenchmark we-WP-CLI** (`wp gratis-ai-agent benchmark`) — uqhuba iseti yovavanyo lwe-Agent Capabilities v1 ukusuka kumgca womyalelo kwiipayiphlayini ze-CI nakwiindlela zomsebenzi zokuvavanya iimodeli. Uxhasa ukuqhubeka ngombuzo ngamnye, ukugqitha ababoneleli/iimodeli, kunye nemveliso ye-JSON/CSV.
 - **Iseti yovavanyo lwe-Agent Capabilities v1** — iseti ecwangcisiweyo yee-prompt ezinzima, ezinamanyathelo amaninzi, ezivavanya wonke ummandla wobuchule, kunye nokunika amanqaku nengxelo yeetoken/ubude bexesha.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Umbuzo webenchmark wewebhusayithi yerestyu** (`q-restaurant-website`) — uvavanyo oluphela-ekupheleni olugubungela ubhaliso lwe-CPT, inkqubo yoyilo, ukuhamba, kunye nokufunyanwa kweplugin.
 - **Iiplugin zokudibanisa ababoneleli be-AI** zongezwe kwiiblueprint ze-WordPress Playground ukuze kusetwe uphuhliso lwasekhaya ngokukhawuleza.
 
-### Kuphuculwe
+### Kuphuculwe {#improved-1}
 
 - I-README ihlaziywe ngamaxwebhu okudibanisa ababoneleli be-AI kunye nemiyalelo yokuseta.
 
-### Kulungisiwe
+### Kulungisiwe {#fixed-1}
 
 - Ukusilela kovavanyo lwe-PHPUnit okungama-25 kwibranch ye-`main` kusonjululwe.
 - Ifomathi ye-URL yokukhutshwa kwe-GitHub kwi-`blueprint.json` ilungisiwe.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Amanqaku okukhutshwa angaphambili agcinwe kwindawo yokugcina yeplugin._

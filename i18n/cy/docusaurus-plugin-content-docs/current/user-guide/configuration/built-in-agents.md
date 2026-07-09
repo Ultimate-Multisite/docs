@@ -3,11 +3,11 @@ title: Asiantau adeiledig
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Asiantau mewnol
+# Asiantau mewnol {#built-in-agents}
 
 Mae Gratis AI Agent v1.9.0 yn cynnwys pum asiant mewnol, pob un wedi’i rag-ffurfweddu â set benodol o offer, prompt system wedi’i deilwra, ac awgrymiadau cychwynnol sy’n cyfateb i dasgau cyffredin yn yr ardal honno. Mae newid rhwng asiantau yn newid beth gall y cynorthwyydd ei wneud a sut mae’n ymateb — heb unrhyw ffurfweddu ar eich rhan chi. Gall Superdav AI Agent v1.18.0 ychwanegu offer sy’n ymwybodol o amserlenni, cofnodion atgoffa, gatiau cymeradwyo, a hysbysiadau SMS at y llifoedd gwaith hyn pan fydd yr integreiddiadau cysylltiedig wedi’u ffurfweddu.
 
-## Beth Yw Asiant?
+## Beth Yw Asiant? {#what-is-an-agent}
 
 Mae pob asiant yn broffil ffurfweddu ag enw sy’n cyfuno:
 
@@ -15,7 +15,7 @@ Mae pob asiant yn broffil ffurfweddu ag enw sy’n cyfuno:
 - **Prompt system** — cyfarwyddiadau sy’n gosod tôn, blaenoriaethau a chyfyngiadau’r asiant
 - **Awgrymiadau** — prompts wedi’u hysgrifennu ymlaen llaw a ddangosir yn y rhyngwyneb sgwrs i’ch helpu i ddechrau’n gyflym
 
-## Cyrchu’r Dewisydd Asiant
+## Cyrchu’r Dewisydd Asiant {#accessing-the-agent-picker}
 
 1. Agorwch y panel **Gratis AI Agent** yn far ochr gweinyddol WordPress.
 2. Cliciwch yr **eicon asiant** yng nghornel chwith uchaf pennyn y sgwrs (mae’r eicon yn newid i adlewyrchu’r asiant gweithredol).
@@ -24,9 +24,9 @@ Mae pob asiant yn broffil ffurfweddu ag enw sy’n cyfuno:
 
 Gallwch hefyd newid asiantau yng nghanol sgwrs — bydd prompt system yr asiant newydd yn dod i rym o’r neges nesaf.
 
-## Y Pum Asiant Mewnol
+## Y Pum Asiant Mewnol {#the-five-built-in-agents}
 
-### Ysgrifennwr Cynnwys
+### Ysgrifennwr Cynnwys {#content-writer}
 
 **Ffocws:** Creu a golygu erthyglau, tudalennau, a ffurflenni cyswllt.
 
@@ -47,7 +47,7 @@ Gallwch hefyd newid asiantau yng nghanol sgwrs — bydd prompt system yr asiant 
 
 ---
 
-### Adeiladwr Gwefan
+### Adeiladwr Gwefan {#site-builder}
 
 **Ffocws:** Creu gwefan o’r dechrau i’r diwedd o un prompt.
 
@@ -70,7 +70,7 @@ Gallwch hefyd newid asiantau yng nghanol sgwrs — bydd prompt system yr asiant 
 
 ---
 
-### Stiwdio Ddylunio
+### Stiwdio Ddylunio {#design-studio}
 
 **Ffocws:** Addasu gweledol — lliwiau, teipograffeg, CSS, a phatrymau bloc.
 
@@ -87,7 +87,7 @@ Gallwch hefyd newid asiantau yng nghanol sgwrs — bydd prompt system yr asiant 
 - *Tynnwch sgrinlun o’r hafan a dywedwch wrthyf beth fyddech chi’n ei wella.*
 - *Crëwch batrwm bloc hero ailddefnyddiadwy gyda delwedd gefndir lled llawn a phennawd wedi’i ganoli.*
 
-### Rheolwr Plugin
+### Rheolwr Plugin {#plugin-manager}
 
 **Ffocws:** Darganfod, gosod, a rheoli plugins WordPress.
 
@@ -105,7 +105,7 @@ Gallwch hefyd newid asiantau yng nghanol sgwrs — bydd prompt system yr asiant 
 
 ---
 
-### Cynorthwyydd Cymorth
+### Cynorthwyydd Cymorth {#support-assistant}
 
 **Ffocws:** Ateb cwestiynau am gynnwys gwefan, gosodiadau, a ffurfweddiad WordPress.
 
@@ -124,7 +124,7 @@ Gallwch hefyd newid asiantau yng nghanol sgwrs — bydd prompt system yr asiant 
 
 ---
 
-## Integreiddiadau Awtomeiddio Superdav
+## Integreiddiadau Awtomeiddio Superdav {#superdav-automation-integrations}
 
 Pan fydd integreiddiadau Superdav AI Agent v1.18.0 wedi'u ffurfweddu, gall asiantau adeiledig gymryd rhan mewn llifoedd gwaith awtomeiddio mwy diogel sy'n ymwybodol o amserlenni:
 
@@ -138,11 +138,11 @@ Llif gwaith a argymhellir: gofynnwch i'r asiant baratoi'r neges neu'r weithred, 
 
 ---
 
-## Addasu Asiantau
+## Addasu Asiantau {#customising-agents}
 
 Gellir ymestyn neu ddisodli pob asiant adeiledig drwy'r hidlydd `gratis_ai_agent_agents`.
 
-### Ychwanegu anogiad system personol at asiant presennol
+### Ychwanegu anogiad system personol at asiant presennol {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Cofrestru asiant newydd
+### Cofrestru asiant newydd {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Mae'r asiant newydd yn ymddangos yn y Agent Picker yn syth ar ôl i'r hidlydd redeg.
 
-### Dileu asiant adeiledig
+### Dileu asiant adeiledig {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

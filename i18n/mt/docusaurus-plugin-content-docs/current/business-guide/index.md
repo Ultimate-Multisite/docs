@@ -3,13 +3,13 @@ title: Ibni Negozju ta’ Websajt ta’ Niċċa
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ibni Negozju ta' Websajts għal Niċċa b'Ultimate Multisite
+# Ibni Negozju ta' Websajts għal Niċċa b'Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Ħafna nies li jippruvaw ibigħu websajts jikkompetu fuq il-prezz kontra Wix, Squarespace, u eluf ta' freelancers. Jitilfu. Dawk li jirbħu jagħżlu udjenza speċifika, jibnu soluzzjoni mfassla għal dik l-udjenza, u jitolbu ħlas għall-valur li jwasslu.
 
 Dan il-kors jgħallmek kif tagħmel eżattament dan billi tuża Ultimate Multisite.
 
-## X'Se Tibni
+## X'Se Tibni {#what-you-will-build}
 
 Matul dan il-kors se tibni network reali u li jaħdem imsejjaħ **FitSite** -- pjattaforma ta' websajts mibnija speċifikament għal studios tal-fitness, trainers personali, u sidien ta' gyms.
 
@@ -23,7 +23,7 @@ Sal-aħħar lezzjoni, FitSite se tkun pjattaforma kompleta għal niċċa b':
 
 Se ssegwi pass pass, u sal-aħħar ikollok kemm pjattaforma li taħdem kif ukoll l-għarfien biex tirreplika l-proċess għal kwalunkwe niċċa li tagħżel.
 
-## Għaliex Studios tal-Fitness?
+## Għaliex Studios tal-Fitness? {#why-fitness-studios}
 
 Kellna bżonn eżempju konkret li kulħadd jista' jsegwi. Studios tal-fitness jaħdmu għax:
 
@@ -34,7 +34,7 @@ Kellna bżonn eżempju konkret li kulħadd jista' jsegwi. Studios tal-fitness ja
 
 Dak kollu li titgħallem waqt li tibni FitSite japplika direttament għal kwalunkwe niċċa li tagħżel: ristoranti, aġenti tal-proprjetà, ditti legali, knejjes, kuntratturi tas-snajja', jew kwalunkwe vertikali ieħor.
 
-## Struttura tal-Kors
+## Struttura tal-Kors {#course-structure}
 
 Kull lezzjoni tintroduċi kunċett wieħed, tispjega għaliex huwa importanti, u tmexxik fl-implimentazzjoni tiegħu fin-network FitSite. Kull lezzjoni tibni fuq dik ta' qabilha.
 
@@ -55,7 +55,7 @@ Kull lezzjoni tintroduċi kunċett wieħed, tispjega għaliex huwa importanti, u
 | [13. Teskala 'l Fuq](lesson-13-growth) | Tikber mill-ewwel klijenti għal negozju reali | Strateġija ta' tkabbir u awtomazzjoni ta' FitSite |
 | [14. X'Jiġi Wara](lesson-14-whats-next) | Tespandi għal niċeċ relatati u opportunitajiet ġodda | Ir-roadmap tiegħek lil hinn minn FitSite |
 
-## Prerekwiżiti
+## Prerekwiżiti {#prerequisites}
 
 - Installazzjoni ta' WordPress Multisite (jew ir-rieda li twaqqaf waħda)
 - Liċenzja attiva ta' Ultimate Multisite
@@ -63,6 +63,6 @@ Kull lezzjoni tintroduċi kunċett wieħed, tispjega għaliex huwa importanti, u
 
 M'hemmx bżonn coding. Jekk qatt ma użajt Ultimate Multisite qabel, m'hemmx problema -- Lezzjoni 3 tibda minn installazzjoni friska.
 
-## Lest?
+## Lest? {#ready}
 
 Ibda b'[Lezzjoni 1: Għaliex in-Niċċa Tirbaħ](lesson-1-why-niche).

@@ -3,11 +3,11 @@ title: Formulari de contacti ad constructorem sititii
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formulario de Contacto del Constructor de Sitios
+# Formulario de Contacto del Constructor de Sitios {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 añade la capacidad de crear formularios de contacto directamente desde la interfaz de chat usando el agente Site Builder. Esto te permite añadir formularios de contacto totalmente funcionales a cualquier página sin salir del chat.
 
-## Resumen
+## Resumen {#overview}
 
 La capacidad de formulario de contacto del Site Builder (`create_contact_form`) detecta automáticamente tu plugin de formulario instalado y crea un formulario de contacto utilizando las capacidades nativas de ese plugin. Los plugins de formulario compatibles incluyen:
 
@@ -18,7 +18,7 @@ La capacidad de formulario de contacto del Site Builder (`create_contact_form`) 
 
 El asistente selecciona automáticamente el mejor plugin de formulario disponible en tu sitio y genera un formulario de contacto adaptado a ese plugin.
 
-## Creación de un Formulario de Contacto
+## Creación de un Formulario de Contacto {#creating-a-contact-form}
 
 Para crear un formulario de contacto usando el Site Builder:
 
@@ -34,7 +34,7 @@ Para crear un formulario de contacto usando el Site Builder:
 
 4. El Site Builder generará el formulario de contacto y devolverá un shortcode listo para incrustar.
 
-## Uso del Shortcode Generado
+## Uso del Shortcode Generado {#using-the-generated-shortcode}
 
 Después de que el Site Builder crea el formulario de contacto, devuelve un shortcode (por ejemplo, `[contact-form-7 id="123"]`). Puedes:
 
@@ -45,11 +45,11 @@ Después de que el Site Builder crea el formulario de contacto, devuelve un shor
 
 3. **Usare in un template** — Se ti senti a tuo agio con PHP, puoi aggiungere lo shortcode al file del template del tema.
 
-## Personalizzare il modulo di contatto
+## Personalizzare il modulo di contatto {#customizing-the-contact-form}
 
 Dopo che il Site Builder crea il modulo di contatto, puoi personalizzarlo ulteriormente:
 
-### Tramite l'Interfaccia Chat
+### Tramite l'Interfaccia Chat {#via-the-chat-interface}
 
 Chiedi al Site Builder di modificare il modulo:
 
@@ -57,7 +57,7 @@ Chiedi al Site Builder di modificare il modulo:
 
 Il Site Builder aggiornerà il modulo e restituirà lo shortcode aggiornato.
 
-### Tramite l'Interfaccia Admin del Plugin del Modulo
+### Tramite l'Interfaccia Admin del Plugin del Modulo {#via-the-form-plugins-admin-interface}
 
 Puoi anche personalizzare direttamente il modulo nelle impostazioni del tuo plugin del modulo:
 
@@ -65,7 +65,7 @@ Puoi anche personalizzare direttamente il modulo nelle impostazioni del tuo plug
 2. Trova il modulo creato dal Site Builder.
 3. Modifica i campi del modulo, le regole di validazione e le notifiche email come necessario.
 
-## Plugin dei Moduli e Compatibilità
+## Plugin dei Moduli e Compatibilità {#form-plugins-and-compatibility}
 
 Il Site Builder rileva automaticamente quale plugin del modulo è installato sul tuo sito e lo utilizza per creare il modulo di contatto. Se sono installati più plugin del modulo, il Site Builder li dà la priorità in questo ordine:
 
@@ -76,7 +76,7 @@ Il Site Builder rileva automaticamente quale plugin del modulo è installato sul
 
 Se nessuno di questi plugin è installato, il Site Builder ti consiglierà di installarne uno prima di creare il modulo di contatto.
 
-## Notifiche Email
+## Notifiche Email {#email-notifications}
 
 I moduli di contatto creati dal Site Builder sono configurati per inviare notifiche email all'amministratore del sito di default. Puoi personalizzare l'indirizzo email del destinatario e il messaggio della notifica:
 
@@ -91,21 +91,21 @@ Per istruzioni dettagliate, consulta la documentazione del tuo plugin del modulo
 - [Notificatio Email Fluent Forms](https://fluentforms.com/docs/)
 - [Notificatio Email Gravity Forms](https://docs.gravityforms.com/)
 
-## Exempla Usus
+## Exempla Usus {#example-use-cases}
 
-### Formulario de Contacto Simple
+### Formulario de Contacto Simple {#simple-contact-form}
 
 > "Crea un formulario de contacto simple con campos para nombre, correo electrónico y mensaje."
 
-### Formulario de Múltiples Pasos
+### Formulario de Múltiples Pasos {#multi-step-form}
 
 > "Crea un formulario de contacto con un primer paso para la información de contacto y un segundo paso para el mensaje y el método de contacto preferido."
 
-### Formulario con Lógica Condicional
+### Formulario con Lógica Condicional {#form-with-conditional-logic}
 
 > "Crea un formulario de contacto que muestre campos diferentes según la selección del usuario en un menú desplegable."
 
-### Formulario con Carga de Archivos
+### Formulario con Carga de Archivos {#form-with-file-upload}
 
 > "Crea un formulario de contacto que permita a los usuarios subir un archivo o adjunto."
 

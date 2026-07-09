@@ -3,11 +3,11 @@ title: Webhookide käsitlemine
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhookide käsitlemine
+# Webhookide käsitlemine {#webhook-handling}
 
 Loo kohandatud webhookide lõpp-punktid, et võtta vastu sündmusi välistest teenustest ja sünkroonida andmeid Ultimate Multisite’iga.
 
-## Kohandatud webhooki lõpp-punkt
+## Kohandatud webhooki lõpp-punkt {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Turvakaalutlused
+## Turvakaalutlused {#security-considerations}
 
 - Kontrolli alati webhookide allkirju HMAC-i või jagatud saladuse abil
 - Kasuta oma REST-marsruudil `permission_callback`-i — ära kunagi määra selleks tootmiskeskkonnas `__return_true`

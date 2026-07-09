@@ -3,7 +3,7 @@ title: Ricerca e sostituzione automatiche nei modelli del sito
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Ricerca e sostituzione automatica nei template del sito (v2)
+# Ricerca e sostituzione automatica nei template del sito (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Questo tutorial richiede WP UItimo versione 2.x.**_
 
@@ -17,7 +17,7 @@ Il tuo cliente potrà quindi compilare quel campo durante la registrazione.
 
 Ultimate Multisite sostituirà quindi automaticamente i segnaposto con i dati forniti dal cliente.
 
-## **Risolvere il problema del "template pieno di segnaposto"**
+## **Risolvere il problema del "template pieno di segnaposto"** {#solving-the-template-full-of-placeholders-problem}
 
 Tutto questo è ottimo, ma ci imbattiamo in un problema sgradevole: ora i nostri template del sito - che possono essere visitati dai nostri clienti - sono pieni di brutti segnaposto che non dicono molto.
 

@@ -4,11 +4,11 @@ title: Filtras - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filtras: wu_admin_notices
+# Filtras: wu_admin_notices {#filter-wuadminnotices}
 
 Leidžia kūrėjams filtruoti admin pranešimus, pridėtus Ultimate Multisite.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Leidžia kūrėjams filtruoti admin pranešimus, pridėtus Ultimate Multisite.
 | $filter | `string` | Ar atmetami pranešimai buvo išfiltruoti. |
 | $dismissed_messages | `array` | Atmestų pranešimų raktų sąrašas. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121), 121 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}

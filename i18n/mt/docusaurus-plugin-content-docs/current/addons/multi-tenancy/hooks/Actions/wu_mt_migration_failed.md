@@ -4,20 +4,20 @@ title: Azzjoni - wu_mt_migration_failed
 sidebar_label: wu_mt_migration_failed
 _i18n_hash: 81c7e8bef0b593fcc8369a666fa8799a
 ---
-# Azzjoni: wu_mt_migration_failed
+# Azzjoni: wu_mt_migration_failed {#action-wumtmigrationfailed}
 
 Jiskatta meta migrazzjoni tfalli.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
 | $job | `\Migration_Job` | Ix-xogħol tal-migrazzjoni li falla. |
 | $message | `string` | Messaġġ ta' żball. |
 
-### Minn
+### Minn {#since}
 
 - 1.0.0
-### Sors
+### Sors {#source}
 
 Iddefinit f'[`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L720) fil-linja 720

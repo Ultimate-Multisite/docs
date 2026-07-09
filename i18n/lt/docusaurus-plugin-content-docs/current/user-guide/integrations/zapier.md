@@ -3,7 +3,7 @@ title: Zapier integracija
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integracija Ultimate Multisite su Zapieriu
+# Integracija Ultimate Multisite su Zapieriu {#integrating-ultimate-multisite-with-zapier}
 
 Viename viename meselėje mes diskutavome apie [Webhooks](webhooks.md) ir kaip juos galima naudoti integracijai su trečiosiomis programomis.
 
@@ -15,7 +15,7 @@ Jūs galite sukurti **Triggers**, kurie bus įvykti, kai įvyksios jūsų tinklu
 
 Tai yra įmanoma, nes **Ultimate Multisite Zapier's triggers** ir actions veikia pagal [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kaip pradėti
+## Kaip pradėti {#how-to-start}
 
 Pirmiausia ieškokite Ultimate Multisite Zapier aplikacijų sąraše. Alternatyviai galite paspausti į [šią nuorodą](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ URL lauke įveskite savo tinklo pilną URL adresą, įskaitant protokolus (HTTP 
 
 Spauskite mygtuką **Yes, Continue**, kad tęstumėte kitą žingsnį. Jei viskas veiks tinkamai, jūsų naujas susijęs paskyra jus sveikins! Spauskite **Continue**, kad sukurintumėte naują trigger.
 
-## Kaip sukurti naują Trigger'ą
+## Kaip sukurti naują Trigger'ą {#how-to-create-a-new-trigger}
 
 Dabar, kai jūsų paskyra bus susijusi, galite pamatyti pasirinktus įvykius. Šiuose tutoriale pasirinkime įvykį **payment_received**.
 
@@ -67,7 +67,7 @@ Kai įvykis bus pasirinktas ir paspausite **continue**, pasirodys **test step**.
 
 In mūsų tutoriale testas buvo **sėkmingai atliktas** ir atsiųsė pavyzdį informacijos įkrovimą (payload). Ši pavyzdinė informacija bus naudinga mums, kol kursimos veiksmus. Jūsų trigger dabar yra sukurtas ir pasiruošęs būti sujungtas su kitais programomis.
 
-## Kaip sukurti Actions
+## Kaip sukurti Actions {#how-to-create-actions}
 
 Actions naudo informaciją iš kitų trigger'ų, kad sukurtų naujus įrašus jūsų tinkluose.
 
@@ -79,7 +79,7 @@ Kito pasekimo metu arba sukurtosite savo autentifikavimą, kaip padaryme mygtuke
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Action nustatymas (Setting up the Action)
+### Action nustatymas (Setting up the Action) {#setting-up-the-action}
 
 Tai yra **action'o pagrindinis žingsnis**, ir čia dalykai yra aštrę skirtingi. Pirmą informaciją, kurią pasirinksite, bus **Item**. Item yra jūsų tinklo **informacijos modelis**, pavyzdžiui **Klientai (Customers), Mokėjimai (Payments), Svetai (Sites), El. laišai** ir kiti.
 

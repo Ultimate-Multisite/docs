@@ -3,15 +3,15 @@ title: 'Leson 11: Jwenn kliyan'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leson 11: Jwenn Kliyan
+# Leson 11: Jwenn Kliyan {#lesson-11-finding-customers}
 
 Yon gwo platfòm san kliyan se jis yon pastan. Leson sa a kouvri kijan pou jwenn kliyan nan yon vètikal nich -- estrateji ki mache espesyalman paske ou konsantre sou yon sèl endistri.
 
-## Kote Nou Te Rete
+## Kote Nou Te Rete {#where-we-left-off}
 
 FitSite an liy. Kounye a nou bezwen pwopriyetè estidyo fitness yo jwenn li epi enskri.
 
-## Poukisa Akizisyon Nich Diferan
+## Poukisa Akizisyon Nich Diferan {#why-niche-acquisition-is-different}
 
 Lè ou vann bay tout moun, ou konpetisyon pou atansyon nan yon mache ki gen anpil bri. Lè ou vann bay yon nich, ou gen avantaj:
 
@@ -19,17 +19,17 @@ Lè ou vann bay tout moun, ou konpetisyon pou atansyon nan yon mache ki gen anpi
 - **Mesaj ou a fè sans touswit** -- "sit entènèt pou estidyo fitness" kanpe yon pwopriyetè jimnaz pandan l ap defile
 - **Referans yo miltipliye** -- pwopriyetè estidyo fitness yo konnen lòt pwopriyetè estidyo fitness
 
-## Chanèl 1: Kontak Dirèk
+## Chanèl 1: Kontak Dirèk {#channel-1-direct-outreach}
 
 Chemen ki pi rapid pou jwenn premye kliyan ou yo se kontak dirèk, pèsonèl.
 
-### Jwenn Pwospè
+### Jwenn Pwospè {#find-prospects}
 
 - Chèche sou Google Maps pou estidyo fitness, jimnaz, ak antrenè pèsonèl nan zòn ou an
 - Vizite sit entènèt aktyèl yo (oswa note ke yo pa gen youn)
 - Kolekte enfòmasyon kontak nan pwofil Google Business yo oswa sou rezo sosyal
 
-### Evalye Sitiyasyon Aktyèl Yo
+### Evalye Sitiyasyon Aktyèl Yo {#evaluate-their-current-situation}
 
 Pou chak pwospè, note:
 
@@ -37,7 +37,7 @@ Pou chak pwospè, note:
 - **Move sit entènèt**: Gwo pwospè -- montre yo kijan yon pi bon opsyon sanble
 - **Bon sit entènèt**: Pwospè fèb -- yo deja rezoud pwoblèm sa a
 
-### Pran Kontak
+### Pran Kontak {#make-contact}
 
 Voye yon imèl oswa mesaj pèsonalize:
 
@@ -48,7 +48,7 @@ Voye yon imèl oswa mesaj pèsonalize:
 
 Pa voye imèl an mas. Kontak pèsonalize ak 20 pwospè byen rechèchè ap bay pi bon rezilta pase yon mesaj jenerik bay 2,000 moun.
 
-## Chanèl 2: Kominote Nich
+## Chanèl 2: Kominote Nich {#channel-2-niche-communities}
 
 Pwopriyetè estidyo fitness yo rasanble nan kote espesifik sou entènèt:
 
@@ -57,7 +57,7 @@ Pwopriyetè estidyo fitness yo rasanble nan kote espesifik sou entènèt:
 - **Fowòm endistri** ak tablo diskisyon
 - **Gwoup LinkedIn** pou pwofesyonèl fitness
 
-### Kijan pou Patisipe
+### Kijan pou Patisipe {#how-to-participate}
 
 Pa antre epi imedyatman fè pwomosyon pou pwodwi ou. Olye de sa:
 
@@ -66,7 +66,7 @@ Pa antre epi imedyatman fè pwomosyon pou pwodwi ou. Olye de sa:
 3. **Pataje lè sa enpòtan** -- lè yon moun mande sou sit entènèt, pataje platfòm ou a natirèlman
 4. **Kreye kontni itil** -- ekri pòs sou "sa ki fè yon sit entènèt estidyo fitness ekselan" ki natirèlman mennen nan platfòm ou a
 
-## Chanèl 3: Maketing Kontni
+## Chanèl 3: Maketing Kontni {#channel-3-content-marketing}
 
 Kreye kontni pwopriyetè estidyo fitness yo ap chèche:
 
@@ -77,7 +77,7 @@ Kreye kontni pwopriyetè estidyo fitness yo ap chèche:
 
 Pibliye sa sou blog maketing FitSite ou a. Apre yon tan, kontni sa a klase nan motè rechèch yo epi li pote trafik òganik soti nan moun k ap chèche aktivman sa ou ofri.
 
-## Chanèl 4: Patenarya
+## Chanèl 4: Patenarya {#channel-4-partnerships}
 
 Fè patenarya ak biznis ki deja sèvi estidyo fitness yo:
 
@@ -88,7 +88,7 @@ Fè patenarya ak biznis ki deja sèvi estidyo fitness yo:
 
 Ofri komisyon referans oswa pwomosyon resipwòk. [Addon AffiliateWP](/addons/affiliatewp) a ka ede ou mete yon pwogram referans fòmèl.
 
-## Chanèl 5: Evènman Endistri
+## Chanèl 5: Evènman Endistri {#channel-5-industry-events}
 
 Evènman endistri fitness mete ou devan dè santèn kliyan potansyèl:
 
@@ -99,7 +99,7 @@ Evènman endistri fitness mete ou devan dè santèn kliyan potansyèl:
 
 Ou pa bezwen yon gwo bidjè. Menm patisipe kòm yon patisipan epi fè konvèsasyon sou sa ou fè ka jenere leads.
 
-## Chanèl 6: Sit Ekspozisyon
+## Chanèl 6: Sit Ekspozisyon {#channel-6-showcase-sites}
 
 Pi bon maketing ou se sit kliyan ki deja egziste yo. Avèk pèmisyon:
 
@@ -108,7 +108,7 @@ Pi bon maketing ou se sit kliyan ki deja egziste yo. Avèk pèmisyon:
 - Mande kliyan ki satisfè yo pou temwayaj
 - Ankouraje kliyan yo pou mansyone FitSite lè yo mande yo sou sit entènèt yo
 
-## Mete Kanpe yon Pwogram Referans
+## Mete Kanpe yon Pwogram Referans {#setting-up-a-referral-program}
 
 Pawòl ki soti nan bouch se chanèl ki pi pwisan ou nan yon nich. Fòmalize li:
 
@@ -116,7 +116,7 @@ Pawòl ki soti nan bouch se chanèl ki pi pwisan ou nan yon nich. Fòmalize li:
 2. Ofri kliyan ki deja egziste yo yon rekonpans pou referans (yon mwa gratis, kredi Account, elatriye)
 3. Fè li fasil -- ba yo yon lyen referans ak yon mesaj senp yo ka voye bay lòt moun
 
-## Swiv Sa Ki Mache
+## Swiv Sa Ki Mache {#tracking-what-works}
 
 Pou chak chanèl, swiv:
 
@@ -126,7 +126,7 @@ Pou chak chanèl, swiv:
 
 Mete plis efò sou chanèl ki mache yo. Koupe chanèl ki pa mache yo.
 
-## Atant Reyalis
+## Atant Reyalis {#realistic-expectations}
 
 - **Mwa 1-3**: 5-20 kliyan, sitou nan kontak dirèk ak kominote yo
 - **Mwa 4-6**: 20-50 kliyan, maketing kontni kòmanse kontribye
@@ -134,7 +134,7 @@ Mete plis efò sou chanèl ki mache yo. Koupe chanèl ki pa mache yo.
 
 Chif sa yo varye, men modèl la konsistan: premye kliyan yo soti nan efò dirèk, kliyan ki vin apre yo soti nan efè ki akimile nan kontni, referans, ak repitasyon.
 
-## Sa Nou Te Bati nan Leson Sa a
+## Sa Nou Te Bati nan Leson Sa a {#what-we-built-this-lesson}
 
 - **Sis chanèl akizisyon** ki adapte pou nich fitness la
 - **Yon pwosesis kontak dirèk** pou jwenn premye kliyan yo

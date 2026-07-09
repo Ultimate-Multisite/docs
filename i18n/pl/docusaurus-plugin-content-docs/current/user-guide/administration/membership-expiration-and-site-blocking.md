@@ -3,11 +3,11 @@ title: Wygaśnięcie członkostwa i blokowanie strony
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Wygaśnięcie członkostwa i blokowanie strony
+# Wygaśnięcie członkostwa i blokowanie strony {#membership-expiration-and-site-blocking}
 
 Ten przewodnik wyjaśnia, jak Ultimate Multisite obsługuje wygaśnięcie członkostwa, zakończenie okresów próbnych oraz blokowanie strony na froncie. Omówione zostaną cykl życia członkostwa – od aktywnego do wygaśniętego – ustawienia kontrolujące, czy strony są blokowane, oraz co sprawdzić, jeśli strony pozostają dostępne po wygaśnięciu członkostwa.
 
-## Cykl życia statusu członkostwa
+## Cykl życia statusu członkostwa {#membership-status-lifecycle}
 
 Każde członkostwo w Ultimate Multisite ma jeden ze statusów:
 
@@ -24,7 +24,7 @@ Członkostwa darmowe nie wygasają automatycznie. Ultimate Multisite traktuje je
 | **Expired** | Minął termin wygaśnięcia i okres łaski bez odnowienia |
 | **Cancelled** | Wyraźnie anulowane przez klienta lub administratora |
 
-### Jak członkostwa przechodzą w stan wygaśnięcia
+### Jak członkostwa przechodzą w stan wygaśnięcia {#how-memberships-transition-to-expired}
 
 Ultimate Multisite uruchamia **sprawdzenie w tle co godzinę**, które szuka członkostw, które powinny zostać oznaczone jako wygaśnione. Sprawdzenie to wykorzystuje [Action Scheduler](https://actionscheduler.org/) (nie bezpośrednio WP-Cron) i działa jako zaplanowana akcja `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Sprawdzenie wygaśnięcia ma domyślnie **wbudowany okres łaski wynoszący 3 dn
 3-dniowy okres łaski wygaśnięcia jest oddzielny od ustawienia Okresu Łaski Blokowania Frontendu, opisanego poniżej. Okres łaski wygaśnięcia kontroluje, kiedy **status zmienia się** z aktywnego/wstrzymanego na wygaśnięty. Okres łaski blokowania frontendu kontroluje, kiedy **strona jest blokowana**, po tym jak status już się zmienił.
 :::
 
-#### Członkostwa z automatycznym odnawianiem vs. bez automatycznego odnawiania
+#### Członkostwa z automatycznym odnawianiem vs. bez automatycznego odnawiania {#auto-renewing-vs-non-auto-renewing-memberships}
 
 To rozróżnienie jest kluczowe dla zrozumienia zachowania wygaśnięcia:
 
@@ -42,7 +42,7 @@ To rozróżnienie jest kluczowe dla zrozumienia zachowania wygaśnięcia:
 
 - **Członkostwa z automatycznym odnawianiem** (`auto_renew = true`): Sprawdzenie wygaśnięcia cron **całkowicie je pomija**. Oczekuje się, że bramka płatnicza (Stripe, PayPal itp.) powiadomi Ultimate Multisite za pomocą webhooków, gdy subskrypcja ulegnie awarii lub zostanie anulowana. Jeśli webhook nie zostanie otrzymany – z powodu źle skonfigurowanego endpointu, awarii bramki płatniczej lub subskrypcji anulowanej poza systemem – członkostwo może pozostać `active` w nieskończoność, nawet po upływie daty wygaśnięcia.
 
-### Jak kończą się okresy próbne
+### Jak kończą się okresy próbne {#how-trials-end}
 
 Kiedy okres próbny członkostwa dobiega końca, system:
 
@@ -52,11 +52,11 @@ Kiedy okres próbny członkostwa dobiega końca, system:
 
 Ten proces działa w tym samym harmonogramie godzinowym co regularne sprawdzenie wygaśnięcia, ale **tylko dla członkostw bez automatycznego odnawiania**. W przypadku prób z automatycznym odnawianiem, bramka płatnicza obsługuje przejście z okresu próbnego na płatną subskrypcję.
 
-## Blokowanie dostępu do frontendu
+## Blokowanie dostępu do frontendu {#block-frontend-access}
 
 Domyślnie, gdy członkostwo wygaśnie lub zostanie wstrzymane, **ograniczony jest tylko dashboard wp-admin**. Publiczny frontend strony pozostaje dostępny dla odwiedzających. Aby również zablokować dostęp publiczny, należy włączyć ustawienie **Block Frontend Access**.
 
-### Konfigurowanie ustawienia
+### Konfigurowanie ustawienia {#configuring-the-setting}
 
 Przejdź do **Ultimate Multisite > Settings > Memberships** i włącz **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Trzy powiązane ustawienia kontrolują to zachowanie:
 | **Frontend Block Grace Period** | Liczba dni oczekiwania po nieaktywności członkostwa przed zablokowaniem. Ustawienie na `0` blokuje natychmiast. | 0 |
 | **Frontend Block Page** | Strona na głównej witrynie, do której przekierowuje odwiedzających, gdy strona jest zablokowana. Jeśli nie jest ustawiona, odwiedzający widzą ogólny komunikat „Site not available”. | None |
 
-### Co widzą odwiedzający, gdy strona jest zablokowana
+### Co widzą odwiedzający, gdy strona jest zablokowana {#what-visitors-see-when-a-site-is-blocked}
 
 Gdy dostęp do frontendu jest zablokowany, odwiedzający stronę mogą:
 
@@ -83,7 +83,7 @@ Gdy dostęp do frontendu jest zablokowany, odwiedzający stronę mogą:
 
 Administratorzy stron nadal mogą się logować – strona logowania nigdy nie jest blokowana.
 
-### Co i kiedy jest blokowane
+### Co i kiedy jest blokowane {#what-gets-blocked-and-when}
 
 Zachowanie blokowania zależy od statusu członkostwa:
 
@@ -104,21 +104,21 @@ Nawet jeśli okres próbny się zakończył, członkostwo ze statusem `trialing`
 Członkostwa anulowane są zawsze blokowane po upływie daty wygaśnięcia, niezależnie od tego, czy Block Frontend Access jest włączony. Okres łaski blokowania frontendu **nie** ma zastosowania do anulowanych członkostw.
 :::
 
-## Rozwiązywanie problemów: Strony pozostające dostępne po wygaśnięciu
+## Rozwiązywanie problemów: Strony pozostające dostępne po wygaśnięciu {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Jeśli strony pozostają publicznie dostępne po wygaśnięciu członkostwa, przejdź przez następujące sprawdzenia po kolei:
 
-### 1. Sprawdź, czy ustawienie Block Frontend Access jest włączone
+### 1. Sprawdź, czy ustawienie Block Frontend Access jest włączone {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Przejdź do **Ultimate Multisite > Settings > Memberships** i upewnij się, że przełącznik **Block Frontend Access** jest włączony. Ustawienie to jest **domyślnie wyłączone**, co oznacza, że gdy członkostwo staje się nieaktywne, ograniczony jest tylko wp-admin.
 
-### 2. Sprawdź Okres Łaski Blokowania Frontendu
+### 2. Sprawdź Okres Łaski Blokowania Frontendu {#2-check-the-frontend-block-grace-period}
 
 Na tej samej stronie ustawień sprawdź wartość **Frontend Block Grace Period**. Jeśli jest ustawione na 7 dni, na frontend nie zostanie zablokowane aż 7 dni po dacie wygaśnięcia członkostwa – nawet jeśli status członkostwa jest już `expired`.
 
 Ustaw to na `0`, jeśli chcesz natychmiastowe blokowanie po nieaktywności członkostwa.
 
-### 3. Potwierdź, że status członkostwa faktycznie się zmienił
+### 3. Potwierdź, że status członkostwa faktycznie się zmienił {#3-confirm-the-membership-status-has-actually-changed}
 
 Przejdź do **Ultimate Multisite > Memberships** i sprawdź status dotkniętego członkostwa. Jeśli nadal wyświetla `active` pomimo upływu daty wygaśnięcia, przejście statusu nie nastąpiło. Typowe przyczyny:
 
@@ -126,7 +126,7 @@ Przejdź do **Ultimate Multisite > Memberships** i sprawdź status dotkniętego 
 
 - **Cron nie uruchomił się**: Zobacz następny krok.
 
-### 4. Sprawdź, czy Action Scheduler działa
+### 4. Sprawdź, czy Action Scheduler działa {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite używa Action Scheduler do swoich zadań cron. Przejdź do **Tools > Scheduled Actions** w panelu administracyjnym sieci i poszukaj:
 
@@ -148,7 +148,7 @@ Aby zapewnić niezawodne wykonywanie crona, skonfiguruj zadanie cron na poziomie
 */5 * * * * cd /ścieżka/do/wordpress && wp cron event run --due-now --url=https://twoj-adres-sieci.com
 ```
 
-### 5. Sprawdź problemy z webhookami bramki płatniczej (Członkostwa z automatycznym odnawianiem)
+### 5. Sprawdź problemy z webhookami bramki płatniczej (Członkostwa z automatycznym odnawianiem) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Jeśli członkostwo ma automatyczne odnawianie, a subskrypcja bramki została anulowana lub uległa awarii, ale Ultimate Multisite nadal wyświetla je jako `active`:
 
@@ -157,7 +157,7 @@ Jeśli członkostwo ma automatyczne odnawianie, a subskrypcja bramki została an
 
 Jeśli bramka pokazuje, że subskrypcja została anulowana, ale Ultimate Multisite nie, prawdopodobnie zgłoszenie webhook zostało utracone. Możesz ręcznie zmienić status członkostwa w **Ultimate Multisite > Memberships > [Edytuj Członkostwo]**.
 
-### 6. Sprawdź Okres Łaski Wygaśnięcia (Poziom Cron)
+### 6. Sprawdź Okres Łaski Wygaśnięcia (Poziom Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Sprawdzenie cron ma własny okres łaski (domyślnie: 3 dni) przed oznaczeniem członkostwa jako wygaśnione. Jest to oddzielne od okresu łaski blokowania frontendu. Całkowity czas przed zablokowaniem strony może wynosić:
 
@@ -165,7 +165,7 @@ Sprawdzenie cron ma własny okres łaski (domyślnie: 3 dni) przed oznaczeniem c
 
 Na przykład, przy domyślnych ustawieniach i 7-dniowym okresie łaski frontendu, może to potrwać nawet 10 dni od `date_expiration`, zanim strona zostanie faktycznie zablokowana.
 
-### 7. Ręczne wygaśnienie członkostwa
+### 7. Ręczne wygaśnienie członkostwa {#7-manually-expire-a-membership}
 
 Jeśli chcesz natychmiast zablokować stronę, nie czekając na cykl cron, możesz ręcznie zmienić status członkostwa:
 
@@ -176,7 +176,7 @@ Jeśli chcesz natychmiast zablokować stronę, nie czekając na cykl cron, może
 
 Blokowanie frontendu wejdzie w życie przy następnym ładowaniu strony (z zastrzeżeniem Okresu Łaski Blokowania Frontendu dla wygaśnionych członkostw lub natychmiast dla anulowanych).
 
-## Podsumowanie
+## Podsumowanie {#summary}
 
 Pełny harmonogram od daty wygaśnięcia do zablokowania strony:
 
@@ -208,7 +208,7 @@ Dla anulowanych członkostw ścieżka jest krótsza:
   Frontend strony jest blokowany natychmiast
 ```
 
-## Odniesienie dla deweloperów
+## Odniesienie dla deweloperów {#developer-reference}
 
 Poniższe hooki i filtry pozwalają dostosować zachowanie wygaśniania i blokowania:
 

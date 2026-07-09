@@ -3,13 +3,13 @@ title: Tataiso ea Khokahanyo
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Tataiso ea Kopanyo
+# Tataiso ea Kopanyo {#integration-guide}
 
 Tataiso ena e akaretsa mekhoa e tloaelehileng ea kopanyo le Ultimate Multisite, ho kenyeletsa ho hokela lits'ebeletso tsa kantle, ho haha dikgoro tsa tefo tse ikhethileng, le ho sebetsana le di-webhook.
 
 Bakeng sa motheo wa mohiri ya arohaneng, bona [Kopanyo ya Multi-Tenancy](./multi-tenancy) bakeng sa tataiso ya ho qala mohiri ya ikemetseng, netefatso ya phalliso, SSO, le ho qhaqha.
 
-## Kopanyo ya CRM
+## Kopanyo ya CRM {#crm-integration}
 
 Amahanya data ya bareki ho CRM ya hao ha bareki ba batjha ba ingodisa:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Kopanyo ya Analytics
+## Kopanyo ya Analytics {#analytics-integration}
 
 Latela diketsahalo tsa bohlokwa tsa kgwebo ho pholletsa le potoloho ya bophelo ya moreki:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Mehato e Latelang
+## Mehato e Latelang {#next-steps}
 
 - [Ntshetsopele ya Gateway e Ikgethileng](./custom-gateway) — Haha kgoro ya hao ya tefo
 - [Ho Sebetsana le Webhook](./webhooks) — Theha di-endpoint tsa webhook tse ikgethileng

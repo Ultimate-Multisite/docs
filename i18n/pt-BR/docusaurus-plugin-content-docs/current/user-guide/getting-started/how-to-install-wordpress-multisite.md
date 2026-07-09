@@ -3,7 +3,7 @@ title: Como instalar o WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Como instalo o WordPress Multisite?
+# Como instalo o WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 O WordPress Multisite permite que você tenha uma rede de sites em uma única instalação. Este é um recurso integrado, mas não vem ativo por padrão.
 
@@ -61,7 +61,7 @@ E este código, também fornecido pelo WordPress, ao seu arquivo _**.htaccess**_
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Para criar um subsite:
 
 Depois de preencher os campos, clique no botão "Adicionar site". Assim que o novo subsite for criado, prossiga e acesse-o para garantir que o subsite esteja funcionando.
 
-## Problemas comuns:
+## Problemas comuns: {#common-problems}
 
-### 1\. Consigo criar novos sites, mas eles não estão acessíveis.
+### 1\. Consigo criar novos sites, mas eles não estão acessíveis. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Se você escolheu subdomínios, também precisa configurar subdomínios curinga para sua rede multisite.
 

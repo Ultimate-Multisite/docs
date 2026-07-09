@@ -3,13 +3,13 @@ title: Tilpasse registreringsskjemaet ditt
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Tilpasse registreringsskjemaet ditt
+# Tilpasse registreringsskjemaet ditt {#customizing-your-registration-form}
 
 For å få nettverket ditt til å se unikt ut sammenlignet med alle andre SaaS bygget på WordPress-plattformen, lar Ultimate Multisite deg tilpasse registrerings- og innloggingssidene dine med vår **Checkout Forms**-funksjon.
 
 Selv om de er en enkel og fleksibel måte å eksperimentere med ulike tilnærminger på når du prøver å konvertere nye kunder, brukes de hovedsakelig til å lage personlige registreringsskjemaer. Denne artikkelen har som mål å vise deg hvordan du kan gjøre det.
 
-## Innloggings- og registreringssider:
+## Innloggings- og registreringssider: {#login-and-registration-pages}
 
 Ved installasjon av Ultimate Multisite oppretter den automatisk egendefinerte innloggings- og registreringssider på hovednettstedet ditt. Du kan endre disse standardsidene når som helst ved å gå til siden **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ La oss nå se på andre alternativer som fortsatt er relevante for innloggings- 
 
 Og det er alle alternativene knyttet til innlogging og registrering som du kan tilpasse! Ikke glem å lagre innstillingene dine etter at du er ferdig med å redigere dem.
 
-## Bruke flere registreringsskjemaer:
+## Bruke flere registreringsskjemaer: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 tilbyr en editor for checkout-skjemaer som lar deg opprette så mange skjemaer du vil, med ulike felt, produkter på tilbud osv.
 
@@ -69,7 +69,7 @@ Alternativt kan du redigere eller duplisere skjemaene du allerede har ved å kli
 
 Hvis du velger enkeltsteg eller flersteg, vil checkout-skjemaet allerede være forhåndsutfylt med de grunnleggende stegene som trengs for at det skal fungere. Deretter kan du, hvis du vil, legge til ekstra steg i det.
 
-### Redigere et Checkout Form:
+### Redigere et Checkout Form: {#editing-a-checkout-form}
 
 Som vi nevnte tidligere, kan du opprette checkout-skjemaer for ulike formål. I dette eksempelet skal vi jobbe med et registreringsskjema.
 
@@ -131,11 +131,11 @@ For å hente skjemakortkoden din klikker du på **Generer kortkode** og kopierer
 
 _**Merk:** Du må legge til denne kortkoden på registreringssiden din for å få dette checkout-skjemaet lagt til der._
 
-## Forhåndsvalg av produkter og maler via URL-parametere:
+## Forhåndsvalg av produkter og maler via URL-parametere: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Hvis du vil opprette tilpassede pristabeller for produktene dine og forhåndsvelge produktet eller malen kunden velger fra pristabellen eller malsiden din i checkout-skjemaet, kan du bruke URL-parametere til dette.
 
-### **For planer:**
+### **For planer:** {#for-plans}
 
 Gå til **Ultimate Multisite > Produkter > Velg en plan**. Du skal se knappen **Klikk for å kopiere delbar lenke** øverst på siden. Dette er lenken du kan bruke for å forhåndsvelge denne spesifikke planen i checkout-skjemaet ditt.
 
@@ -143,7 +143,7 @@ Gå til **Ultimate Multisite > Produkter > Velg en plan**. Du skal se knappen **
 
 Merk at denne delbare lenken bare er gyldig for **Planer**. Du kan ikke bruke delbare lenker for pakker eller tjenester.
 
-### For maler:
+### For maler: {#for-templates}
 
 Hvis du vil forhåndsvelge nettstedsmaler i checkout-skjemaet ditt, kan du bruke parameteren: **?template_id=X** i URL-en til registreringssiden din. "X" må erstattes av **ID-nummeret til nettstedsmalen**. For å hente dette nummeret går du til **Ultimate Multisite > Nettsteder**.
 

@@ -3,9 +3,9 @@ title: Log Parobahan Ultimate AI Connector pikeun WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector pikeun WebLLM Changelog
+# Ultimate AI Connector pikeun WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Vérsi 1.1.0 — Dileupaskeun dina 2026-04-09
+## Vérsi 1.1.0 — Dileupaskeun dina 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Anyar: Widget obrolan ngambang kalayan indikator status admin-bar — pamaké mana waé anu geus asup tiasa masihan prompt ka LLM sisi peramban langsung ti front end.
 * Anyar: Runtime SharedWorker — mesin MLC ayeuna jalan dina SharedWorker sangkan sababaraha tab ngabagi hiji sési GPU tibatan silih rebut.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Beneran: Kaitkeun WebLLM kana filter wpai_preferred_text_models sangkan fitur AI Experiments dialihkeun ka mesin peramban nalika modél dikonpigurasikeun.
 * Dironjatkeun: Cache-busting, normalisasi eusi, jeung beneran rujukan hardware anu kapanggih salila uji tungtung-ka-tungtung.
 
-## Vérsi 1.0.0 — Rilis Mimiti
+## Vérsi 1.0.0 — Rilis Mimiti {#version-100--initial-release}

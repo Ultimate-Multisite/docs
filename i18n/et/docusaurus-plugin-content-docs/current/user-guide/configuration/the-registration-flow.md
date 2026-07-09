@@ -3,13 +3,13 @@ title: Registreerimise protsess
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registreerimisviis (v2)
+# Registreerimisviis (v2) {#the-registration-flow-v2}
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 
 Kliendid saavad registreeruda oma võrku erinevate viisil. Nad võivad kasutada teie registreerimispilti või jagatavale linkile eelvalitud plaanile. Siin näitamme, kuidas teie kliendid saavad registreeruda oma võrkule kasutades saadaval olevate teeadega ja mida saab pärast registreerimist teha.
 
-## Registreerimise formaati kasutamine:
+## Registreerimise formaati kasutamine: {#using-the-registration-form}
 
 See on standard registreerimeprotsess. Te luute registreerimislehtiga **checkout form** (salduvorm), ja siia kliendid lähen oma võrku registreerimiseks ja plaanile pereks. Saate olla mitme registreerimise lehti, igaüks erineva registreerimise formaadiga, kui soovite.
 
@@ -35,13 +35,13 @@ Kui kasutaja on registreerunud maksulise plaani all või e-posti kinnitamine ei 
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Jaotatava linki kasutamine:
+## Jaotatava linki kasutamine: {#using-a-shareable-link}
 
 Jaotatava linkiga registreerimise protsess on põhjalikult sama kui registreiseerimisform, erinevus on see, et jaotatava linkiga saate oma klientidele ostaoleku vormis eelvalitud toote või veebilehttemplaati (vaata osakku Pre-selecting products and templates via URL parameters) või võib lisada kuponikoodi (vaata osakku Using URL Parameters).
 
 Registreerimise protsess on sama: peavad täitmend oma nime, kasutaja-nime, e-posti aadressi, veebilehtnime ja otsingut, jne... kuid plaani või veebilehttemplaati on juba eelvalitud.
 
-### Manuaalsete maksude abil registreerimine:
+### Manuaalsete maksude abil registreerimine: {#registering-using-manual-payments}
 
 Kui te ei soovi kasutada PayPalit, Stripe'i või Ultimate Multisite'ilt või selle lisamoodulest pakutud muid maksuportaalid, saate klientidele manuaalseid makse kasutada. See võimaldab teil neile veidi lahenduse (invoice) genereerida, mida nad võivad maksuda teie lehe registreerumise pärast oma eelmiselt valitud maksuprotsessoril.
 

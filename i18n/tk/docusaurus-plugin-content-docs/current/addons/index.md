@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Goşmaçalary
+# Ultimate Multisite Goşmaçalary {#ultimate-multisite-addons}
 
 Goşmaçalar Ultimate Multisite-i goşmaça aýratynlyklar we integrasiýalar bilen giňeldýär. Goşmaçalaryň köpüsi töleglidir we [ultimatemultisite.com](https://ultimatemultisite.com) saýtyndan satyn alyp bolýar.
 
-## Gurnama
+## Gurnama {#installation}
 
 Goşmaçalary iki usul bilen gurnap bolýar:
 
 1. **Goşmaça sahypasy arkaly** -- WordPress adminindäki saýtyňyzyň goşmaça dolandyryş sahypasyna geçiň
 2. **El bilen ýükleme** -- [Account-yňyzdan](https://ultimatemultisite.com/my-account/downloads/) ýükläp alyň we Pluginler > Täze goş arkaly ýükläň
 
-## Elýeterli goşmaçalar
+## Elýeterli goşmaçalar {#available-addons}
 
 | Goşmaça | Beýan |
 |-------|-------------|

@@ -3,17 +3,17 @@ title: Alat dan Konfigurasi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Alat dan Konfigurasi
+# Alat dan Konfigurasi {#tools-and-configuration}
 
 Theme Builder menggunakan serangkaian alat untuk menganalisis, merancang, dan membangun situs WordPress Anda. Dalam versi 1.16.0, **sd-ai-agent/site-scrape kini menjadi alat Tingkat 1**, sehingga tersedia secara default di Theme Builder. Superdav AI Agent v1.18.0 juga memperkenalkan paket pendamping Advanced yang didistribusikan secara terpisah untuk alur kerja developer tepercaya; alat-alat tersebut bukan bagian dari paket inti WordPress.org dan harus diinstal serta diotorisasi secara terpisah.
 
-## Alat yang Tersedia
+## Alat yang Tersedia {#available-tools}
 
-### Alat Tingkat 1 (Selalu Tersedia)
+### Alat Tingkat 1 (Selalu Tersedia) {#tier-1-tools-always-available}
 
 Alat Tingkat 1 tersedia secara default di Theme Builder tanpa konfigurasi tambahan apa pun.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Tujuan:** Menganalisis situs web yang sudah ada untuk mengekstrak inspirasi desain, struktur konten, dan fungsionalitas.
 
@@ -51,11 +51,11 @@ Analisis desain example.com dan gunakan sebagai inspirasi untuk situs saya.
 - Situs yang sangat bergantung pada JavaScript mungkin memiliki analisis terbatas
 - Situs besar mungkin membutuhkan waktu lebih lama untuk dianalisis
 
-### Alat Tingkat 2 (Opsional)
+### Alat Tingkat 2 (Opsional) {#tier-2-tools-optional}
 
 Alat Tingkat 2 tersedia ketika diaktifkan secara eksplisit di pengaturan Theme Builder.
 
-#### Analitik Lanjutan
+#### Analitik Lanjutan {#advanced-analytics}
 
 Menyediakan metrik performa terperinci:
 
@@ -65,7 +65,7 @@ Menyediakan metrik performa terperinci:
 - Skor aksesibilitas
 - Skor praktik terbaik
 
-#### Pengoptimal Konten
+#### Pengoptimal Konten {#content-optimizer}
 
 Menganalisis dan menyarankan peningkatan untuk:
 
@@ -75,11 +75,11 @@ Menganalisis dan menyarankan peningkatan untuk:
 - Struktur konten
 - Penempatan ajakan bertindak
 
-### Alat Tingkat 3 (Premium)
+### Alat Tingkat 3 (Premium) {#tier-3-tools-premium}
 
 Alat Tingkat 3 memerlukan konfigurasi tambahan atau fitur premium.
 
-#### Generator Konten AI
+#### Generator Konten AI {#ai-content-generator}
 
 Menghasilkan konten untuk:
 
@@ -89,7 +89,7 @@ Menghasilkan konten untuk:
 - Deskripsi meta
 - Teks ajakan bertindak
 
-#### Alat Desain Lanjutan
+#### Alat Desain Lanjutan {#advanced-design-tools}
 
 Menyediakan kemampuan desain lanjutan:
 
@@ -99,7 +99,7 @@ Menyediakan kemampuan desain lanjutan:
 - Teori warna lanjutan
 - Optimisasi tipografi
 
-### Alat Pendamping Advanced (Paket Terpisah)
+### Alat Pendamping Advanced (Paket Terpisah) {#advanced-companion-tools-separate-package}
 
 Paket pendamping Advanced didistribusikan secara terpisah dari rilis inti Superdav AI Agent. Paket ini ditujukan untuk lingkungan developer dan pemilik situs tepercaya, tempat administrator secara eksplisit mengizinkan agent menggunakan perkakas berdampak tinggi.
 
@@ -116,9 +116,9 @@ Kemampuan pendamping Advanced dapat mencakup:
 
 Jangan dokumentasikan alat-alat ini sebagai alat Theme Builder yang tersedia secara umum untuk setiap instalasi. Alat-alat ini hanya tersedia ketika paket pendamping Advanced diinstal, diaktifkan, dan dibatasi untuk administrator tepercaya.
 
-## Konfigurasi Alat
+## Konfigurasi Alat {#tool-configuration}
 
-### Mengaktifkan Alat
+### Mengaktifkan Alat {#enabling-tools}
 
 Untuk mengaktifkan alat tambahan di Theme Builder:
 
@@ -127,7 +127,7 @@ Untuk mengaktifkan alat tambahan di Theme Builder:
 3. Aktifkan/nonaktifkan alat sesuai kebutuhan
 4. Simpan pengaturan
 
-### Izin Alat
+### Izin Alat {#tool-permissions}
 
 Beberapa alat memerlukan izin:
 
@@ -137,7 +137,7 @@ Beberapa alat memerlukan izin:
 - **Fitur lanjutan** — mungkin memerlukan langganan premium
 - **Alat pendamping Advanced** — memerlukan paket Advanced yang didistribusikan secara terpisah dan kepercayaan administrator yang eksplisit
 
-### API Key dan Kredensial
+### API Key dan Kredensial {#api-keys-and-credentials}
 
 Konfigurasikan API key untuk alat yang memerlukannya:
 
@@ -146,13 +146,13 @@ Konfigurasikan API key untuk alat yang memerlukannya:
 3. Uji koneksi
 4. Simpan dengan aman
 
-### Menginstal Paket Pendamping Advanced
+### Menginstal Paket Pendamping Advanced {#installing-the-advanced-companion-package}
 
 Paket pendamping Advanced dirilis secara terpisah dari ZIP inti WordPress.org. Instal hanya dari saluran distribusi proyek resmi untuk rilis tersebut, lalu batasi akses ke administrator tepercaya. Tinjau gerbang persetujuan manusia dan perilaku snapshot git sebelum mengaktifkan alat filesystem, database, WP-CLI, dispatcher REST, pembuat plugin, manajemen pengguna, atau benchmark di situs produksi.
 
-## Menggunakan sd-ai-agent/site-scrape
+## Menggunakan sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Penggunaan Dasar
+### Penggunaan Dasar {#basic-usage}
 
 Minta Theme Builder menganalisis sebuah situs web:
 
@@ -161,7 +161,7 @@ Analisis desain situs pesaing saya di competitor.com
 dan sarankan peningkatan desain untuk situs saya.
 ```
 
-### Analisis Spesifik
+### Analisis Spesifik {#specific-analysis}
 
 Minta jenis analisis tertentu:
 
@@ -179,7 +179,7 @@ Periksa responsivitas seluler example.com dan pastikan situs saya
 sama responsifnya.
 ```
 
-### Analisis Perbandingan
+### Analisis Perbandingan {#comparison-analysis}
 
 Bandingkan beberapa situs:
 
@@ -188,22 +188,22 @@ Bandingkan desain site1.com dan site2.com lalu buat desain
 yang menggabungkan elemen terbaik dari keduanya.
 ```
 
-## Batasan dan Pertimbangan Alat
+## Batasan dan Pertimbangan Alat {#tool-limitations-and-considerations}
 
-### Pembatasan Laju
+### Pembatasan Laju {#rate-limiting}
 
 - Scraping dibatasi lajunya untuk mencegah server kelebihan beban
 - Beberapa permintaan ke site yang sama dapat dibatasi
 - Site besar mungkin membutuhkan waktu lebih lama untuk dianalisis
 
-### Akurasi Konten
+### Akurasi Konten {#content-accuracy}
 
 - Konten dinamis mungkin tidak tertangkap sepenuhnya
 - Konten yang dirender JavaScript mungkin tidak lengkap
 - Data real-time mungkin tidak tercermin
 - Beberapa konten mungkin berada di balik paywall
 
-### Pertimbangan Hukum dan Etika
+### Pertimbangan Hukum dan Etika {#legal-and-ethical-considerations}
 
 - Hormati robots.txt dan kebijakan site
 - Jangan scrape konten berhak cipta untuk direproduksi
@@ -211,16 +211,16 @@ yang menggabungkan elemen terbaik dari keduanya.
 - Verifikasi bahwa Anda memiliki hak untuk menggunakan konten yang diekstrak
 - Ikuti terms of service dari site yang dianalisis
 
-### Dampak Kinerja
+### Dampak Kinerja {#performance-impact}
 
 - Scraping site besar mungkin memakan waktu
 - Beberapa scrape simultan mungkin lebih lambat
 - Konektivitas jaringan memengaruhi kecepatan
 - Dataset besar mungkin memerlukan lebih banyak pemrosesan
 
-## Praktik Terbaik
+## Praktik Terbaik {#best-practices}
 
-### Menggunakan Analisis Site
+### Menggunakan Analisis Site {#using-site-analysis}
 
 1. **Analisis beberapa site** — kumpulkan inspirasi dari beberapa sumber
 2. **Fokus pada struktur** — pelajari pola tata letak dan organisasi
@@ -228,7 +228,7 @@ yang menggabungkan elemen terbaik dari keduanya.
 4. **Pelajari tipografi** — identifikasi kombinasi font yang Anda sukai
 5. **Tinjau navigasi** — pahami organisasi menu
 
-### Scraping Etis
+### Scraping Etis {#ethical-scraping}
 
 1. **Hormati robots.txt** — ikuti panduan site
 2. **Jangan salin konten** — gunakan analisis hanya sebagai inspirasi
@@ -236,7 +236,7 @@ yang menggabungkan elemen terbaik dari keduanya.
 4. **Cantumkan sumber** — beri kredit pada sumber inspirasi
 5. **Ikuti ketentuan** — patuhi terms of service site
 
-### Memaksimalkan Efektivitas Alat
+### Memaksimalkan Efektivitas Alat {#maximizing-tool-effectiveness}
 
 1. **Spesifiklah** — minta jenis analisis tertentu
 2. **Berikan konteks** — jelaskan tujuan site Anda
@@ -244,9 +244,9 @@ yang menggabungkan elemen terbaik dari keduanya.
 4. **Iterasi** — sempurnakan berdasarkan hasil
 5. **Gabungkan alat** — gunakan beberapa alat untuk analisis komprehensif
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
-### Site Tidak Dapat Di-scrape
+### Site Tidak Dapat Di-scrape {#site-wont-scrape}
 
 - Periksa apakah site dapat diakses publik
 - Verifikasi robots.txt mengizinkan scraping
@@ -254,7 +254,7 @@ yang menggabungkan elemen terbaik dari keduanya.
 - Periksa koneksi internet
 - Hubungi dukungan jika masalah berlanjut
 
-### Analisis Tidak Lengkap
+### Analisis Tidak Lengkap {#incomplete-analysis}
 
 - Site mungkin memiliki konten dinamis
 - JavaScript mungkin tidak dirender sepenuhnya
@@ -262,7 +262,7 @@ yang menggabungkan elemen terbaik dari keduanya.
 - Coba analisis halaman tertentu sebagai gantinya
 - Minta jenis analisis tertentu
 
-### Kinerja Lambat
+### Kinerja Lambat {#slow-performance}
 
 - Site besar membutuhkan waktu lebih lama untuk dianalisis
 - Beberapa scrape simultan lebih lambat
@@ -270,7 +270,7 @@ yang menggabungkan elemen terbaik dari keduanya.
 - Coba selama jam sepi
 - Analisis bagian yang lebih kecil terlebih dahulu
 
-## Dokumentasi Terkait
+## Dokumentasi Terkait {#related-documentation}
 
 - [Wawancara Penemuan](./discovery-interview.md) — kumpulkan informasi desain
 - [Arah Desain](./design-direction.md) — sempurnakan desain Anda

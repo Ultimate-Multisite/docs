@@ -3,7 +3,7 @@ title: GoCardless د بدلونونو لاګ
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless بدلون‌لیک
+# GoCardless بدلون‌لیک {#gocardless-changelog}
 
 نسخه: 1.0.3 - په 2026-05-05 خپره شوې
 * سمون: بې‌سرپرسته پاتې وېب‌پاڼې اوس هغه وخت پاکېږي کله چې د GoCardless غړیتوب د پاتې یا ځنډول شوي حالت پر مهال لغوه شي

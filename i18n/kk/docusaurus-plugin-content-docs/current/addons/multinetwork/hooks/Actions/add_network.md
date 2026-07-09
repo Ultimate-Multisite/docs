@@ -4,20 +4,20 @@ title: Әрекет - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Әрекет: add_network
+# Әрекет: add_network {#action-addnetwork}
 
 Жаңа желі қосылғаннан кейін іске қосылады.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
 | $new_network_id | `int` | Қосылған желінің ID-і. |
 | $r | `array` | Желі аргументтерінің толық ассоциативті массиві. |
 
-### Бастап
+### Бастап {#since}
 
 - 1.3.0
-### Дереккөзі
+### Дереккөзі {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1304) ішінде 1304-жолда анықталған.

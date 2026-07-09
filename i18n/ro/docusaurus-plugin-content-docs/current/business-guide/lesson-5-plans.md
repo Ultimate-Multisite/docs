@@ -3,15 +3,15 @@ title: 'Lecția 5: Proiectarea Planurilor Tale'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lecția 5: Crearea Nivelurilor de Plan
+# Lecția 5: Crearea Nivelurilor de Plan {#lesson-5-designing-your-plans}
 
 Nivelurile de plan pe care le creezi nu sunt doar simple niveluri de preț — ele reflectă modul în care clienții tăi de nișă funcționează cu adevărat. În această lecție, vei proiecta pachete de produse care să se potrivească nevoilor reale ale afacerilor din domeniul fitness, indiferent de etapa în care se află.
 
-## Unde ne-am oprit
+## Unde ne-am oprit {#where-we-left-off}
 
 FitSite are deja trei șabloane gata de utilizare (Studio Essential, Gym Pro, Fitness Chain). Acum vom crea planurile care determină accesul pe care îl primesc clienții și ce plătesc.
 
-## Gândirea în Segmente de Clienți
+## Gândirea în Segmente de Clienți {#thinking-in-customer-segments}
 
 Greșeala pe care o fac majoritatea oamenilor este de a proiecta planurile în jurul caracteristicilor tehnice (stocare, lățime de bandă, număr de pagini). Clienții tăi de nișă nu gândesc în acești termeni. Un proprietar de sală de fitness se gândește la ce are nevoie pentru a-și rula afacerea.
 
@@ -25,11 +25,11 @@ Pentru studiouri de fitness, există trei segmente naturale:
 
 Planurile tale ar trebui să corespundă acestor segmente, nu unor pachete de funcționalități arbitrare.
 
-## Crearea Planurilor FitSite
+## Crearea Planurilor FitSite {#creating-the-fitsite-plans}
 
 Navighează la **Ultimate Multisite > Products > Add Product** pentru fiecare plan.
 
-### Planul 1: FitSite Starter — $49/lună
+### Planul 1: FitSite Starter — $49/lună {#plan-1-fitsite-starter----49month}
 
 **Țintă**: Traineri solo și studiouri mici
 
@@ -59,7 +59,7 @@ Navighează la **Ultimate Multisite > Products > Add Product** pentru fiecare pl
 - Tema selectată: Force Activate
 - Alte teme: Ascuns
 
-### Planul 2: FitSite Growth — $99/lună
+### Planul 2: FitSite Growth — $99/lună {#plan-2-fitsite-growth----99month}
 
 **Țintă**: Salile de fitness stabilite, cu o singură locație
 
@@ -85,7 +85,7 @@ Navighează la **Ultimate Multisite > Products > Add Product** pentru fiecare pl
 - Grupa de planuri: FitSite Plans
 - Ordinea produsului: 2
 
-### Planul 3: FitSite Pro — $199/lună
+### Planul 3: FitSite Pro — $199/lună {#plan-3-fitsite-pro----199month}
 
 **Țintă**: Franhaze de fitness cu multiple locații
 
@@ -109,7 +109,7 @@ Navighează la **Ultimate Multisite > Products > Add Product** pentru fiecare pl
 - Grupa de planuri: FitSite Plans
 - Ordinea produsului: 3
 
-## Configurarea Grupului de Planuri
+## Configurarea Grupului de Planuri {#setting-up-the-plan-group}
 
 Grupul de planuri asigură că clienții pot face upgrade-uri sau downgrade-uri doar în cadrul familiei de planuri FitSite. Pe tab-ul **Up & Downgrades** al fiecărui plan:
 
@@ -118,7 +118,7 @@ Grupul de planuri asigură că clienții pot face upgrade-uri sau downgrade-uri 
 
 Acest lucru creează o cale de upgrade clară: Starter → Growth → Pro.
 
-## Adăugarea Boostere de Comandă (Order Bumps)
+## Adăugarea Boostere de Comandă (Order Bumps) {#adding-order-bumps}
 
 Boosterele de comandă sunt produse suplimentare oferite la checkout. Pentru FitSite, ia în considerare:
 
@@ -128,7 +128,7 @@ Boosterele de comandă sunt produse suplimentare oferite la checkout. Pentru Fit
 
 Creează acestea ca produse de tip **Package** în Ultimate Multisite și asoci-le cu planurile relevante.
 
-## De ce funcționează această structură
+## De ce funcționează această structură {#why-this-structure-works}
 
 - **Starter** elimină barierele de intrare — preț mic, ofertă simplă, ajută trainerii să fie online rapid
 - **Growth** adaugă funcționalitățile pe care le cer de fapt salile — rezervări, galerii, domenii personalizate
@@ -136,7 +136,7 @@ Creează acestea ca produse de tip **Package** în Ultimate Multisite și asoci-
 - **Boosterele de comandă** permit clienților să își personalizeze fără a complica planurile de bază
 - **Calea de upgrade clară** înseamnă că clienții cresc cu tine, în loc să plece
 
-## Rețeaua FitSite până acum
+## Rețeaua FitSite până acum {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Ce am construit în această lecție
+## Ce am construit în această lecție {#what-we-built-this-lesson}
 
 - **Trei niveluri de plan** mapate pe segmente reale de afaceri din fitness
 - **Blocarea funcționalităților** folosind controlurile de plugin și șablon ale Ultimate Multisite

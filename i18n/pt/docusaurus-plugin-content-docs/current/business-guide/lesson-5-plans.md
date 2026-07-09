@@ -3,15 +3,15 @@ title: 'Lição 5: Conceber os seus planos'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lição 5: Desenhar os Seus Planos
+# Lição 5: Desenhar os Seus Planos {#lesson-5-designing-your-plans}
 
 Os níveis dos seus planos não são apenas níveis de preços -- são um reflexo de como os clientes do seu nicho realmente operam. Nesta lição, vai desenhar níveis de produto que correspondem às necessidades reais de negócios de fitness em diferentes fases.
 
-## Onde Ficámos
+## Onde Ficámos {#where-we-left-off}
 
 A FitSite tem três modelos prontos (Studio Essential, Gym Pro, Fitness Chain). Agora criamos os planos que determinam a que os clientes têm acesso e quanto pagam.
 
-## Pensar em Segmentos de Clientes
+## Pensar em Segmentos de Clientes {#thinking-in-customer-segments}
 
 O erro que a maioria das pessoas comete é desenhar planos em torno de funcionalidades técnicas (armazenamento, largura de banda, número de páginas). Os clientes do seu nicho não pensam nesses termos. O proprietário de um ginásio pensa no que precisa para gerir o seu negócio.
 
@@ -25,11 +25,11 @@ Para estúdios de fitness, existem três segmentos naturais:
 
 Os seus planos devem corresponder a estes segmentos, não a pacotes arbitrários de funcionalidades.
 
-## Criar os Planos FitSite
+## Criar os Planos FitSite {#creating-the-fitsite-plans}
 
 Navegue até **Ultimate Multisite > Produtos > Adicionar Produto** para cada plano.
 
-### Plano 1: FitSite Starter -- $49/mês
+### Plano 1: FitSite Starter -- $49/mês {#plan-1-fitsite-starter----49month}
 
 **Alvo**: Treinadores individuais e pequenos estúdios
 
@@ -59,7 +59,7 @@ Navegue até **Ultimate Multisite > Produtos > Adicionar Produto** para cada pla
 - O seu tema selecionado: Forçar Ativação
 - Todos os outros temas: Ocultos
 
-### Plano 2: FitSite Growth -- $99/mês
+### Plano 2: FitSite Growth -- $99/mês {#plan-2-fitsite-growth----99month}
 
 **Alvo**: Ginásios estabelecidos com uma única localização
 
@@ -85,7 +85,7 @@ Navegue até **Ultimate Multisite > Produtos > Adicionar Produto** para cada pla
 - Grupo de planos: FitSite Plans
 - Ordem do produto: 2
 
-### Plano 3: FitSite Pro -- $199/mês
+### Plano 3: FitSite Pro -- $199/mês {#plan-3-fitsite-pro----199month}
 
 **Alvo**: Cadeias de fitness com várias localizações
 
@@ -109,7 +109,7 @@ Navegue até **Ultimate Multisite > Produtos > Adicionar Produto** para cada pla
 - Grupo de planos: FitSite Plans
 - Ordem do produto: 3
 
-## Configurar o Grupo de Planos
+## Configurar o Grupo de Planos {#setting-up-the-plan-group}
 
 O grupo de planos garante que os clientes só podem fazer upgrade ou downgrade dentro da família de planos FitSite. No separador **Upgrades e Downgrades** de cada plano:
 
@@ -118,7 +118,7 @@ O grupo de planos garante que os clientes só podem fazer upgrade ou downgrade d
 
 Isto cria um caminho de upgrade claro: Starter → Growth → Pro.
 
-## Adicionar Order Bumps
+## Adicionar Order Bumps {#adding-order-bumps}
 
 Order bumps são produtos adicionais oferecidos durante o checkout. Para a FitSite, considere:
 
@@ -128,7 +128,7 @@ Order bumps são produtos adicionais oferecidos durante o checkout. Para a FitSi
 
 Crie estes como produtos do tipo **Pacote** no Ultimate Multisite e associe-os aos planos relevantes.
 
-## Porque Esta Estrutura Funciona
+## Porque Esta Estrutura Funciona {#why-this-structure-works}
 
 - **Starter** remove barreiras à entrada -- preço baixo, oferta simples, coloca treinadores online rapidamente
 - **Growth** adiciona as funcionalidades que os ginásios realmente pedem -- reservas, galerias, domínios personalizados
@@ -136,7 +136,7 @@ Crie estes como produtos do tipo **Pacote** no Ultimate Multisite e associe-os a
 - **Order bumps** permitem que os clientes personalizem sem complicar os planos principais
 - **Caminho de upgrade claro** significa que os clientes crescem consigo em vez de irem embora
 
-## A Rede FitSite Até Agora
+## A Rede FitSite Até Agora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## O Que Construímos Nesta Lição
+## O Que Construímos Nesta Lição {#what-we-built-this-lesson}
 
 - **Três níveis de planos** mapeados para segmentos reais de negócios de fitness
 - **Restrição de funcionalidades** usando os controlos de plugin e modelos do Ultimate Multisite

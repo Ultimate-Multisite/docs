@@ -3,13 +3,13 @@ title: Paggawa ng Iyong Unang Produkto ng Subscription
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Paglikha ng Iyong Unang Subscription Product (v2)
+# Paglikha ng Iyong Unang Subscription Product (v2) {#creating-your-first-subscription-product-v2}
 
 _**MAHALAGANG PAUNAWA: Ang artikulong ito ay para lamang sa mga gumagamit ng Ultimate Multisite version 2.x. Kung gumagamit ka pa ng version 1.x,**_ **_tingnan mo itong artikulo**_**.
 
 Para simulan ang pagpapatakbo ng iyong network at magsimulang magbenta ng iyong serbisyo sa mga potensyal na user, kailangan mo ng iba't ibang subscription options. Paano mo gagawin ang mga produktong ito? Anong uri ng mga produkto ang maaari mong ialok? Sa artikulong ito, tatalakayin natin ang lahat ng impormasyong kailangan mo tungkol sa mga produkto.
 
-## Uri ng Produkto
+## Uri ng Produkto {#product-type}
 
 Sa Ultimate Multisite, maaari kang mag-alok ng dalawang kategorya ng produkto sa iyong mga kliyente: **plans** at **add-ons (Order Bump)**. Ang add-ons ay maaaring hatiin sa dalawang uri: **packages** at **services**. Titingnan natin ang kanilang pagkakaiba at espesyal na katangian pagkatapos nito.
 
@@ -19,7 +19,7 @@ Sa Ultimate Multisite, maaari kang mag-alok ng dalawang kategorya ng produkto sa
 
   * **Services**: Ito ay mga add-on na hindi nagbabago sa mga functionality ng Ultimate Multisite. Ang mga ito ay mga gawain na gagawin mo para sa iyong kliyente bukod pa sa plan na kanilang binili. Halimbawa, maaaring bumili ang iyong customer ng plan na nagpapahintulot lamang ng isang site at magbayad din para sa karagdagang serbisyo na gagawin ang disenyo ng site na iyon.
 
-## Pamamahala ng mga Produkto
+## Pamamahala ng mga Produkto {#managing-products}
 
 Para sa marami, ang tab na **Products** sa Ultimate Multisite **(Ultimate Multisite > Products)** ay parang mga plano sa tradisyonal na hosting environment.
 
@@ -29,7 +29,7 @@ Ang bahaging ito ang gagabay sa iyong pag-unawa sa mahalagang pundasyon ng Ultim
 
 ![Products list page](/img/config/products-list.png)
 
-## Pagdaragdag ng Produkto (Adding Products)
+## Pagdaragdag ng Produkto (Adding Products) {#adding-products}
 
 Maging plano man, package, o serbisyo, ang paraan para magsimula sa pagtukoy ng bagong item ay sa **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Ang interface ay may dalawang pangunahing bahagi. Sa kaliwa ay may ilang mga tab
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Deskripsyon (Description)
+### Deskripsyon (Description) {#description}
 
 Ang pangunahing impormasyon ng produkto ay maaaring tukuyin sa pamamagitan ng pagbibigay ng pangalan at deskripsyon ng produkto. Ang mga identifier na ito ay ipinapakita kahit saan kailangan ang impormasyon ng produkto, tulad ng pagpili ng plano at presyo, mga invoice, upgrades, at iba pa.
 
 ![Product description section](/img/config/product-description.png)
 
-### Uri ng Pagpepresyo (Pricing Type)
+### Uri ng Pagpepresyo (Pricing Type) {#pricing-type}
 
 Sa kanang bahagi ng interface, maaaring tukuyin ang batayang presyo.
 
@@ -53,7 +53,7 @@ Sa kanang bahagi ng interface, maaaring tukuyin ang batayang presyo.
 
 Sinusuportahan ng Ultimate Multisite ang tatlong magkakaibang uri ng pagpepresyo. Ang opsyong **paid** ay humihingi sa network administrator para sa impormasyon tungkol sa presyo at dalas ng pagbabayad ng produkto.
 
-### Presyo (Pricing)
+### Presyo (Pricing) {#pricing}
 
 Ang bahagi ng presyo ay tumutukoy sa batayang presyo ng produkto at ang interval ng pagbabayad.
 
@@ -61,7 +61,7 @@ Ang bahagi ng presyo ay tumutukoy sa batayang presyo ng produkto at ang interval
 
 kaya halimbawa, ang presyong $29.99 na may setting na 1 buwan ay babayaran ng $29.99 bawat buwan. Katulad nito, ang presyong $89.97 na may setting na 3 buwan ay babayaran sa halagang iyon kada quarter.
 
-### Billing Cycles
+### Billing Cycles {#billing-cycles}
 
 Ang seksyong Billing Cycles ay nagsasabi kung gaano kadalas mangyayari ang nabanggit na billing interval at karaniwang nauunawaan ito batay sa mga kontrata o fixed terms.
 
@@ -69,7 +69,7 @@ Ang seksyong Billing Cycles ay nagsasabi kung gaano kadalas mangyayari ang naban
 
 Halimbawa, ang presyo ng produkto na $29.99 na may interval na 1 buwan at 12 billing cycles ay babayaran ang $29.99 bawat buwan para sa produkto sa loob ng susunod na 12 buwan. Sa madaling salita, ang ganitong setting ay magtatatag ng fixed-price term na $29.99 bawat buwan sa loob ng 12 buwan at pagkatapos ay titigil ang pagbili.
 
-### Trial Period
+### Trial Period {#trial-period}
 
 Ang pag-enable ng offer trial toggle ay nagpapahintulot sa network administrator na magtakda ng trial period para sa produkto.
 
@@ -77,7 +77,7 @@ Ang pag-enable ng offer trial toggle ay nagpapahintulot sa network administrator
 
 Sa panahon ng trial period, malaya ang mga customer na gamitin ang produkto at hindi sila babayaran hangga't hindi natatapos ang trial period.
 
-### Setup Fee
+### Setup Fee {#setup-fee}
 
 Maaari mo ring maglagay ng setup fee sa iyong plan.
 
@@ -85,7 +85,7 @@ Maaari mo ring maglagay ng setup fee sa iyong plan.
 
 Ibig sabihin, ang iyong kliyente ay magbabayad ng dagdag na halaga sa unang bayad (bukod sa price plan) na tumutugma sa fee na itinakda mo sa seksyong ito.
 
-### Active
+### Active {#active}
 
 Ang active toggle ay epektibong nagtatakda kung ang produkto ay available ba sa mga customer para sa bagong pag-sign up.
 
@@ -93,13 +93,13 @@ Ang active toggle ay epektibong nagtatakda kung ang produkto ay available ba sa 
 
 Kung mayroon nang mga customer sa plan na ito, ang pag-toggle nito sa disabled state ay epektibong magpapawalang-bisa (grandfathers) ng plan para alisin ito sa mga susunod na pagpaparehistro. **Ang mga existing customers sa plan ay patuloy na bibili** hanggang sa sila ay lumipat sa bagong plan o tanggalin mula sa plan.
 
-### Larawan ng Produkto
+### Larawan ng Produkto {#product-image}
 
 Pinapayagan ng **Upload Image** button ang network administrator na gamitin ang media library para pumili o mag-upload ng larawan ng produkto.
 
 ![Product image section](/img/config/product-image.png)
 
-### Tanggalin (Delete)
+### Tanggalin (Delete) {#delete}
 
 Ang **Delete Product** button ay nagtatanggal ng produkto mula sa system. Lumilitaw ito kapag na-publish na ang produkto.
 
@@ -107,11 +107,11 @@ Ang **Delete Product** button ay nagtatanggal ng produkto mula sa system. Lumili
 
 Hindi tulad ng ibang pagtanggal, ang produkto ay hindi inilalagay sa anumang trash state. Kaya kapag tinanggal na, ang aksyong iyon ay hindi na mababawi (irreversible).
 
-### Mga Opsyon ng Produkto (Product Options)
+### Mga Opsyon ng Produkto (Product Options) {#product-options}
 
 Kapag na-define na ang pangunahing impormasyon ng produkto, ang mga product options ay tumutulong sa network administrator na tukuyin pa ang mga tiyak na katangian ng produkto.
 
-#### Pangkalahatan (General)
+#### Pangkalahatan (General) {#general}
 
 Ang tab na **General** ay nagtatakda ng pangkalahatang mga katangian ng produkto na hindi naaangkop sa alinman sa ibang product-specific tabs.
 
@@ -125,7 +125,7 @@ Ang **Customer Role** ay tumutukoy sa papel (role) na ibinibigay sa customer kap
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Pag-angat at Pagbaba (Up & Downgrades)
+#### Pag-angat at Pagbaba (Up & Downgrades) {#up--downgrades}
 
 Ang tab na ito ay nagpapakita ng mga opsyon para mag-upgrade o bumaba ang isang customer sa loob ng kanilang partikular na tier.
 
@@ -143,7 +143,7 @@ Upang tukuyin ang isang plan group, tukuyin ang mga compatible na plano sa lista
 
 Kasama rin sa Ultimate Multisite ang feature na **order bump**, kung saan ang mga add-on product at serbisyo ay maaaring idagdag sa mga plano kung naaangkop. Inaalok ito sa customer bilang karagdagang item na pwedeng idagdag sa mga plano sa checkout o habang nag-u-upgrade.
 
-#### Pagbabago ng Presyo (Price Variations)
+#### Pagbabago ng Presyo (Price Variations) {#price-variations}
 
 Pinapayagan ng Price variations ang network administrator na magtakda ng iba't ibang antas ng presyo depende sa tagal ng panahon. Ginagawa nitong posible na maaalok ang buwanan, quarterly, taunan, o anumang ibang panahon ng pagbabayad para sa iisang produkto. Halimbawa, maaari kang mag-set up ng produkto sa $29.99/buwan na may discounted annual option sa $249.99/taon.
 
@@ -165,7 +165,7 @@ Halimbawa, kung ang base product price mo ay $29.99 bawat buwan, maaari kang mag
 Ang price variations lang ay hindi nagdaragdag ng toggle o switch sa frontend checkout. Para mapili ng mga customer ang pagitan ng billing periods (halimbawa: Buwanan / Taunan), kailangan mong magdagdag ng **Period Selection** field sa iyong checkout form. Tingnan ang [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) para sa step-by-step na mga tagubilin.
 :::
 
-#### Buwis (Taxes)
+#### Buwis (Taxes) {#taxes}
 
 Ang **Taxes** tab ay naaayon sa mga setting ng buwis na tinukoy sa **Ultimate Multisite > Settings > Taxes** at mas partikular ang mga rate ng buwis na itinakda. Para i-enable ang buwis at tukuyin ang mga applicable tax rates, tingnan ang dokumentasyon sa **Ultimate Multisite: Settings**.
 
@@ -179,7 +179,7 @@ Kapag itinakda na ang tax rate sa **Ultimate Multisite > Settings > Manage Tax R
 
 Para ipahiwatig na ang isang produkto ay may buwis, gawing aktibo ang toggle na **Is Taxable** at piliin ang naaangkop na tax rate mula sa dropdown ng Tax Category.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Sa madaling salita, ang site templates ay mga kumpletong WordPress website na kinokopya (cloned) sa site ng customer simula sa simula ng kanilang subscription.
 
@@ -201,7 +201,7 @@ Sa huli, ang **C** **hoose Available Site Templates** ay nag-o-override sa mga t
 
 Sa huli, kung nais ng network administrator na mangyari ang pagpili ng template sa mga checkout step, sapat na ang setting na ' _default_ '. Bilang alternatibo upang alisin at i-lock ang pagpili ng template at ipasa ang pagpili sa mga plan settings, maaaring maging kanais-nais ang mga opsyon na ' _assign new template_ ' o ' _choose available site templates_ '.
 
-#### Sites
+#### Sites {#sites}
 
 Ang tab na **Sites** ay bahagi ng functionality ng limitasyon ng Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Tinutukoy ng setting na ito ang pinakamaraming bilang ng mga site na maaaring ga
 
 Upang i-enable ang limitasyon, itakda ang toggle na **limit sites** sa aktibong estado at tukuyin ang pinakamataas na bilang ng mga site sa field na **site allowance**.
 
-#### Visits
+#### Visits {#visits}
 
 Ang tab na **Visits** ay isa pang bahagi ng sistema ng limitasyon ng Ultimate Multisite. Pinapayagan ng setting na ito ang pag-account at kasunod na throttling ng mga unique visitor sa site ng customer.
 
@@ -223,7 +223,7 @@ Para gamitin ang feature na ito, i-set ang **limit unique visits** toggle sa act
 
 Kapag naabot na ang limitasyon na ito, titigil ang Ultimate Multisite sa pag-serve ng site ng customer sa halip na magpakita ng mensahe na lumampas na ang limit.
 
-#### Users
+#### Users {#users}
 
 Pinapayagan ng 'Users' limitations ng Ultimate Multisite ang network administrator na magtakda ng mga limitasyon sa bilang ng mga user na maaaring gawin at italaga sa iba't ibang roles.
 
@@ -233,7 +233,7 @@ Para i-enable ang feature ng limitasyon, i-set ang **limit user** toggle sa acti
 
 Pagkatapos para sa bawat role na bibigyan ng limitasyon, i-set ang toggle sa tabi nito sa active state at tukuyin ang pinakamataas na limit sa tamang field.
 
-#### Post Types
+#### Post Types {#post-types}
 
 Pinapayagan ng **Post Types** tab ang network administrator na magtakda ng mas detalyadong limitasyon sa malawak na hanay ng mga post type sa loob ng WordPress.
 
@@ -245,7 +245,7 @@ Para i-enable ang subsystem na ito ng limitasyon, i-set ang **limit post types**
 
 Susunod, para sa bawat post type na gusto mong limitahan, i-toggle ito sa pamamagitan ng pag-slide nito sa kanan at tukuyin ang pinakamataas na limitasyon sa tamang field.
 
-#### Disk Space
+#### Disk Space {#disk-space}
 
 Pinapayagan ng tab na **Disk Space** ang mga network administrator na limitahan ang espasyong kinokonsumo ng mga customer.
 
@@ -257,13 +257,13 @@ Para i-enable ang limitasyon sa paggamit ng disk, itakda ang **limit disk size p
 
 Pagkatapos, tukuyin ang pinakamataas na limitasyon sa megabytes sa field na **disk space allowance**.
 
-#### Custom Domain
+#### Custom Domain {#custom-domain}
 
 Sa pamamagitan ng pag-toggle ng opsyong ito, maaari mong payagan ang mga custom domain para sa plan na ito.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes
+#### Themes {#themes}
 
 Ang tab na **Themes** sa loob ng product options ay nagpapahintulot sa network administrator na gawing available ang mga theme sa mga customer para sa pagpili at upang pilitin (optionally force) ang estado ng theme.
 
@@ -281,7 +281,7 @@ Ang pagpili sa **behavior** ay nagpapahintulot sa network administrator na tukuy
 
 Sa **Available** na estado, ang theme ay ibinibigay sa customer para sila mismo ang mag-activate. Sa kabilang banda, ang **Not Available** na estado naman ay inaalis sa customer ang kakayahang i-activate ang theme. Panghuli, ang opsyon na **Force Activate** ay pinipilit ang pagpili at pag-activate ng theme kaya ito ang itatakoy bilang default kapag ginawa ang site.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Katulad ng Themes tab, pinapayagan ng Ultimate Multisite ang network administrator na tukuyin kung paano makikita (visibility) ang mga plugin sa mga customer pati na rin ang kanilang estado pagkatapos gumawa ng bagong site.
 
@@ -301,7 +301,7 @@ Ang setting na **Force Activate & Lock** ay gumagana nang katulad pero pinipigil
 
 Maaaring isaalang-alang ng network administrator ang Force Activate & Lock at Force Inactivate & Lock settings kasabay ng site templates bilang plugins, dahil maaapektuhan ng mga setting na ito sa loob ng templates kung piliin ang mga ito.
 
-#### Limitasyon sa Pag-reset
+#### Limitasyon sa Pag-reset {#reset-limitations}
 
 Ang tab na **Reset Limitations** ay nagre-reset ng lahat ng custom limits na itinakda sa produkto. Para mag-reset ng limitasyon, i-click ang button na **reset limitations**.
 
@@ -311,7 +311,7 @@ Para kumpirmahin ang aksyon, i-slide ang toggle na **confirm reset** patungo sa 
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## I-edit, Kopyahin, o Burahin ang Produkto
+## I-edit, Kopyahin, o Burahin ang Produkto {#edit-duplicate-or-delete-product}
 
 Ang mga kasalukuyang produkto ay maaaring i-edit, kopyahin, o burahin sa pamamagitan ng pagpunta sa **Ultimate Multisite > Products** at pag-hover sa pangalan ng umiiral na produkto.
 

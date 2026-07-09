@@ -4,11 +4,11 @@ title: Filter - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filtre: wu_apc_get_meta
+# Filtre: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Geliştiricilerin nihai değerleri filtrelemesine ve yeni işleme senaryoları eklemesine olanak tanır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | İsim | Tip | Açıklama |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Geliştiricilerin nihai değerleri filtrelemesine ve yeni işleme senaryoları e
 | $meta_type | `string` | Alınacak meta verinin tipi. |
 | $meta_key | `string` | Meta alanının adı. |
 
-### Kullanılmaya Başladığı
+### Kullanılmaya Başladığı {#since}
 
 - 1.4.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) dosyasında 93. satırda tanımlanmıştır.
 
 
-## Dönüş Değeri
+## Dönüş Değeri {#returns}
 Yeni varsayılan değer.

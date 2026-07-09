@@ -4,20 +4,20 @@ title: Filtro - wu_before_ . $this->slug . _api_arguments
 sidebar_label: wu_before_ . $this->slug . _api_arguments
 _i18n_hash: ee800d8a03702733cd3a08863f0de17c
 ---
-# Filter: wu_before_ . $this->slug . _api_arguments
+# Filter: wu_before_ . $this->slug . _api_arguments {#filter-wubefore--this-slug--apiarguments}
 
 Filtra os argumentos orixinais da API.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $args | `array` | Argumentos da API para este xestor. |
 | $this | `object` | Este xestor. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L522) na liña 522

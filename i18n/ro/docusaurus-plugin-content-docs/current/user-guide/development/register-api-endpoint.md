@@ -3,7 +3,7 @@ title: Înregistrează endpointul API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Punctul final API /register Ultimate Multisite
+# Punctul final API /register Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 În acest tutorial, vei învăța cum să folosești punctul final API /register Ultimate Multisite pentru a crea întregul proces de onboarding pentru un client nou în rețeaua ta și cum să faci asta cu Zapier.
 
@@ -29,11 +29,11 @@ Selectează **Activează API** și obține datele tale de autentificare API.
 
 Acum, hai să explorăm punctul final și apoi să creăm o acțiune de înregistrare în Zapier.
 
-## Parametrii corpului punctului final
+## Parametrii corpului punctului final {#endpoint-body-parameters}
 
 Hai să facem o prezentare generală a informațiilor minime pe care trebuie să le trimitem către punctul final. La finalul acestui articol, vei găsi apelul complet.
 
-### Client
+### Client {#customer}
 
 Acestea sunt informațiile necesare pentru procesul de creare a utilizatorului și a clientului Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Este posibil să trimiți ID-ul clientului creat în rețeaua ta. Dacă nu este 
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Abonament**
+### **Abonament** {#membership}
 
 Singura informație de care avem nevoie în interiorul acestui obiect este starea abonamentului.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produse**
+### **Produse** {#products}
 
 Produsele primesc un array cu 1 sau mai multe ID-uri de produs din rețeaua ta. Atenție, acest punct final nu creează produse. Consultă documentația Ultimate Multisite pentru a înțelege mai bine punctul final de creare a produselor.
 
 **"products" : [1,2],**
 
-### Plată
+### Plată {#payment}
 
 Ca și în cazul abonamentului, avem nevoie doar de stare.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Și pentru a închide corpul, avem nevoie de URL-ul și titlul site-ului, ambele în interiorul obiectului site.
 
@@ -69,13 +69,13 @@ Ca și în cazul abonamentului, avem nevoie doar de stare.
 
 Răspunsul punctului final register va fi un array cu informațiile abonamentului nou creat.
 
-## Crearea unei acțiuni în Zapier
+## Crearea unei acțiuni în Zapier {#creating-an-action-in-zapier}
 
 Odată cu introducerea acestui punct final nou și mai robust pentru crearea de conturi, vei avea acces și la o acțiune nouă în Zapier.
 
 Știi cum să folosești și să te bucuri de tot ce oferă noua versiune de Zapier? Află mai multe aici. (link?)
 
-### Crearea unei acțiuni
+### Crearea unei acțiuni {#creating-an-action}
 
 Pentru a ilustra mai bine cum să folosești punctul final de înregistrare cu Zapier, hai să creăm o integrare cu Google Forms. De fiecare dată când acest formular este completat și informațiile sunt salvate în foaia de răspunsuri a formularului, va fi creat un nou abonament în rețeaua Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Cu informațiile configurate, treci la testul final. Pe ultimul ecran poți vede
 
 Testează noul tău Zap și ar trebui să se finalizeze cu succes. Dacă apare vreo eroare, verifică toate câmpurile și dacă sunt trimise corect. Deoarece există multe informații, unele lucruri pot trece neobservate.
 
-### Parametrii compleți ai punctului final
+### Parametrii compleți ai punctului final {#complete-endpoint-parameters}
 
 Iată apelul complet și toate posibilitățile de câmpuri care pot fi trimise.
 

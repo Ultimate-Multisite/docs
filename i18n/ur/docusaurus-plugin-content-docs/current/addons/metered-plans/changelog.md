@@ -3,7 +3,7 @@ title: پیمائش پر مبنی منصوبوں کی تبدیلیوں کا خا
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans Changelog
+# Metered Plans Changelog {#metered-plans-changelog}
 
 Version 1.1.0 - Released on 2026-05-05
 - New: Multisite subsites کے لیے AI token billing — کسٹمر سائٹس پر AI ٹوکن کے استعمال کو ٹریک کریں اور بل کریں، جس میں ہر ٹوکن کے لیے قابل ترتیب (configurable) ریٹس شامل ہیں۔
@@ -14,17 +14,17 @@ Version 1.1.0 - Released on 2026-05-05
 - Fix: Plugin load پر fatal errors اور double-initialization issues کو حل کیا گیا ہے۔
 - Improved: check-env npm script شامل کیا گیا ہے تاکہ developer environments پہلی بار چلنے پر خود کو configure کر سکیں۔
 
-### 1.0.3
+### 1.0.3 {#103}
 * Plugin Update Checker v5 میں اپ ڈیٹ کیا گیا
 * جدید WordPress plugin headers شامل کیے گئے
 * تازہ ترین WordPress versions کے ساتھ compatibility بہتر بنائی گئی
 * usage tracking کی کارکردگی (performance) کو بہتر بنایا گیا
 
-### 1.0.2
+### 1.0.2 {#102}
 * Bug fixes اور performance improvements
 * usage reporting کو بہتر بنایا گیا
 
-### 1.0.0
+### 1.0.0 {#100}
 * ابتدائی ریلیز
 * Core metered billing functionality
 * Usage tracking اور overage calculation

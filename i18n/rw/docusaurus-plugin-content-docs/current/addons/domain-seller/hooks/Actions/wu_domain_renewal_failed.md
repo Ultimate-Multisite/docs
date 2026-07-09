@@ -4,11 +4,11 @@ title: Igikorwa - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Igikorwa: wu_domain_renewal_failed
+# Igikorwa: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Gikora nyuma y’uko igerageza ryo kongera igihe cya domain rinaniranye.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Gikora nyuma y’uko igerageza ryo kongera igihe cya domain rinaniranye.
 | $renewal_data | `array&lt;string,mixed&gt;` | Amakuru ajyanye no kongera igihe (domain_name, imyaka, n’ibindi). |
 | $error_message | `string` | Ubutumwa bw’ikosa busomeka n’abantu buturutse ku registrar. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.0.0
-### Inkomoko
+### Inkomoko {#source}
 
 Bisobanuwe muri [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) ku murongo wa 630

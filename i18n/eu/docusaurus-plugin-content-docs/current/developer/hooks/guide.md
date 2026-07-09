@@ -3,15 +3,15 @@ title: Hooken erabilera-gida
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks erabilera-gida
+# Hooks erabilera-gida {#hooks-usage-guide}
 
 Ultimate Multisite-k 200+ action hooks eta 280+ filter hooks eskaintzen ditu. Orri honek gehien erabiltzen diren hooks-ak lantzen ditu, adibide praktikoekin. Automatikoki sortutako erreferentzia osoa ikusteko, arakatu atal honetako gainerako orriak.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Bezeroaren bizi-zikloa
+### Bezeroaren bizi-zikloa {#customer-lifecycle}
 
-#### Bezeroa sortu ondoren
+#### Bezeroa sortu ondoren {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Bezeroaren egoera-aldaketa
+#### Bezeroaren egoera-aldaketa {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Gunearen hooks-ak
+### Gunearen hooks-ak {#site-hooks}
 
-#### Gunea argitaratu ondoren
+#### Gunea argitaratu ondoren {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Txantiloia aplikatu aurretik
+#### Txantiloia aplikatu aurretik {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Kidetza-hooks-ak
+### Kidetza-hooks-ak {#membership-hooks}
 
-#### Egoera-trantsizioak
+#### Egoera-trantsizioak {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Ordainketa-hooks-ak
+### Ordainketa-hooks-ak {#payment-hooks}
 
-#### Ordainketa osatua / huts egina
+#### Ordainketa osatua / huts egina {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout hooks-ak
+### Checkout hooks-ak {#checkout-hooks}
 
-#### Prozesatu aurretik / Osatu ondoren
+#### Prozesatu aurretik / Osatu ondoren {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domeinu-hooks-ak
+### Domeinu-hooks-ak {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Prezio-iragazkiak
+### Prezio-iragazkiak {#pricing-filters}
 
-#### Saskiaren guztizkoa
+#### Saskiaren guztizkoa {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Zerga-tasak
+#### Zerga-tasak {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Txantiloi-iragazkiak
+### Txantiloi-iragazkiak {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Muga-iragazkiak
+### Muga-iragazkiak {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway iragazkiak
+### Gateway iragazkiak {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout inprimaki-eremuak
+### Checkout inprimaki-eremuak {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Email edukia
+### Email edukia {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

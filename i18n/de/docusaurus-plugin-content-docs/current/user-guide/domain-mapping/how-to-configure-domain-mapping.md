@@ -3,17 +3,17 @@ title: So konfigurieren Sie die Domain-Zuordnung
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# So konfigurierst du Domain Mapping (v2)
+# So konfigurierst du Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
 Eine der leistungsstärksten Funktionen eines Premium-Netzwerks ist die Möglichkeit, unseren Kunden anzubieten, eine Top-Level-Domain mit ihren Websites zu verbinden. Was wirkt schließlich professioneller: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) oder [_**joesbikeshop.com**_](http://joesbikeshop.com)? Deshalb bietet Ultimate Multisite diese Funktion integriert an, ohne dass Plugins von Drittanbietern erforderlich sind.
 
-## Was ist Domain Mapping?
+## Was ist Domain Mapping? {#whats-domain-mapping}
 
 Wie der Name schon sagt, ist Domain Mapping die von Ultimate Multisite angebotene Möglichkeit, eine Anfrage für eine benutzerdefinierte Domain entgegenzunehmen und diese Anfrage der entsprechenden Website im Netzwerk zuzuordnen, mit der diese bestimmte Domain verbunden ist.
 
-### So richtest du Domain Mapping in deinem Ultimate Multisite-Netzwerk ein
+### So richtest du Domain Mapping in deinem Ultimate Multisite-Netzwerk ein {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domain Mapping erfordert einige Einrichtungsschritte deinerseits, damit es funktioniert. Glücklicherweise automatisiert Ultimate Multisite die harte Arbeit für dich, sodass du die Anforderungen leicht erfüllen kannst.
 
@@ -45,7 +45,7 @@ Bevor du jedoch mit dem Mapping der benutzerdefinierten Domain auf eine der Subs
 
 ###
 
-### Sicherstellen, dass die DNS-Einstellungen der Domain korrekt konfiguriert sind
+### Sicherstellen, dass die DNS-Einstellungen der Domain korrekt konfiguriert sind {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Damit ein Mapping funktioniert, musst du sicherstellen, dass die Domain, die du mappen möchtest, auf die IP-Adresse deines Netzwerks zeigt. Beachte, dass du die Netzwerk-IP-Adresse benötigst – die IP-Adresse der Domain, auf der Ultimate Multisite installiert ist – nicht die IP-Adresse der benutzerdefinierten Domain, die du mappen möchtest. Um die IP-Adresse einer bestimmten Domain zu suchen, empfehlen wir zum Beispiel [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Wenn du Schwierigkeiten hast, dies zum Laufen zu bringen, **kontaktiere den Supp
 
 Wenn du deinen Kunden erlauben möchtest, ihre eigenen Domains zu mappen, müssen sie diesen Teil selbst erledigen. Verweise sie an das Support-System ihres Registrars, wenn sie nicht in der Lage sind, den A Record zu erstellen.
 
-### Benutzerdefinierten Domainnamen als Super Admin mappen
+### Benutzerdefinierten Domainnamen als Super Admin mappen {#mapping-custom-domain-name-as-super-admin}
 
 Wenn du in deinem Netzwerk als Super Admin angemeldet bist, kannst du benutzerdefinierte Domainnamen einfach hinzufügen und verwalten, indem du zu **Ultimate Multisite > Domains** gehst.
 
@@ -93,7 +93,7 @@ Wenn du auf den Domainnamen klickst, kannst du darin einige Optionen sehen. Werf
 
 **Is Secure?:** Auch wenn Ultimate Multisite prüft, ob die Domain ein SSL-Zertifikat hat oder nicht, bevor sie aktiviert wird, kannst du manuell auswählen, ob die Domain mit oder ohne SSL-Zertifikat geladen werden soll. Beachte, dass es zu Fehlern kommen kann, wenn die Website kein SSL-Zertifikat hat und du versuchst, sie mit SSL zwangsweise zu laden.
 
-### Benutzerdefinierten Domainnamen als Subsite-Benutzer zuordnen
+### Benutzerdefinierten Domainnamen als Subsite-Benutzer zuordnen {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite-Administratoren können benutzerdefinierte Domainnamen auch über ihr Subsite-Admin-Dashboard zuordnen.
 
@@ -121,7 +121,7 @@ Der Benutzer kann dann auf **Next Step** klicken und fortfahren, den benutzerdef
 
 Ein Klick auf **Add Domain** startet den Prozess zur Überprüfung und zum Abrufen der DNS-Informationen der benutzerdefinierten Domain.
 
-### Über Domain Syncing
+### Über Domain Syncing {#about-domain-syncing}
 
 Domain Syncing ist ein Prozess, bei dem Ultimate Multisite den benutzerdefinierten Domainnamen deinem Hosting-Account als Add-on-Domain hinzufügt, **damit das Domain-Mapping funktioniert**.
 

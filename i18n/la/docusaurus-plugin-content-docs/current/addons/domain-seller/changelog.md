@@ -3,7 +3,7 @@ title: Diarium mutationum Venditoris Dominiorum
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Index Mutationum Venditoris Dominiorum
+# Index Mutationum Venditoris Dominiorum {#domain-seller-changelog}
 
 Versio 1.3.0 - Edita die 2026-06-02
 - Novum: Addita est monitio administratoris retis cum statera venditoris HostAfrica nimis humilis fit
@@ -134,20 +134,20 @@ Versio 1.0.0 - Emissa die 2025-09-28
 * **Correctum:** Omnis codex v1 obsoletus ad normas v2 renovatus
 * **Remotum:** Compatibilitas v1 vetus (mutatio frangens)
 
-### Versiones Priores (v1 Legacy)
+### Versiones Priores (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Versio 0.0.3 - 20/08/2019
+### Versio 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Correctum: Incompatibilitas cum Groundhogg CRM
 * Nota: Haec fuit ultima emissio compatibilis cum v1
 
-### Versio 0.0.2 - 07/12/2018
+### Versio 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Correctum: Campus License Key remotus
 * Correctum: Tabulae consilii deerant cum plugin functionis activum est
 * Melius: Globulus praetereundi in campo registrationis additus
 
-### Versio 0.0.1 - Emissio Initialis
+### Versio 0.0.1 - Emissio Initialis {#version-001---initial-release}
 
 * Integratio fundamentalis OpenSRS pro WP Ultimo v1
 * Simplex quaestio et registratio dominii

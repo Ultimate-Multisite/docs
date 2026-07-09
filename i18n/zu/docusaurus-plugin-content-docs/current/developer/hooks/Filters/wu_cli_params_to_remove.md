@@ -4,10 +4,10 @@ title: Isihlungi - wu_cli_params_to_remove
 sidebar_label: wu_cli_params_to_remove
 _i18n_hash: a8c5fd0763e8c7dbbdd4ce507bfb8538
 ---
-# Isihlungi: wu_cli_params_to_remove
+# Isihlungi: wu_cli_params_to_remove {#filter-wucliparamstoremove}
 
 Susa ama-Params angafuneki.
 
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L104) emgqeni 104

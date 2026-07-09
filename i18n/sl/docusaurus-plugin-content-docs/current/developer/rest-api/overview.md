@@ -3,28 +3,28 @@ title: Pregled REST API-ja
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referenca REST API
+# Referenca REST API {#rest-api-reference}
 
-## Osnovna konfiguracija
+## Osnovna konfiguracija {#base-configuration}
 
 **Osnovni URL:** `{site_url}/wp-json/wu/v2/`
 **Avtentikacija:** API ključ in skrivnost (HTTP Basic Auth ali URL parametri)
 
-## Avtentikacija
+## Avtentikacija {#authentication}
 
-### Omogoči API
+### Omogoči API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Pridobi API poverilnice
+### Pridobi API poverilnice {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metode avtentikacije
+### Metode avtentikacije {#authentication-methods}
 
 **HTTP Basic Auth (priporočeno):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Osnovni endpointi
+## Osnovni endpointi {#core-endpoints}
 
-### 1. API za stranke
+### 1. API za stranke {#1-customers-api}
 
 **Osnovna pot:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API za spletna mesta
+### 2. API za spletna mesta {#2-sites-api}
 
 **Osnovna pot:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API za članstva
+### 3. API za članstva {#3-memberships-api}
 
 **Osnovna pot:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API za izdelke
+### 4. API za izdelke {#4-products-api}
 
 **Osnovna pot:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API za plačila
+### 5. API za plačila {#5-payments-api}
 
 **Osnovna pot:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API za domene
+### 6. API za domene {#6-domains-api}
 
 **Osnovna pot:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint za registracijo
+## Endpoint za registracijo {#registration-endpoint}
 
 Endpoint `/register` zagotavlja celoten potek zaključka nakupa/registracije:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpointi za suverene najemnike
+## Endpointi za suverene najemnike {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dodaja REST podporo za suverene najemnike za integracije, ki zagotavljajo, pregledujejo ali preverjajo izolirane najemnike.
 
@@ -242,7 +242,7 @@ Tipični odgovori stanja migracije vključujejo:
 
 `ready: false` obravnavajte kot blokado pred zagonom. Preverite podrobnosti preverjanja, odpravite težavo z vezavo gostitelja podatkovne zbirke, čakalno vrsto, zagotavljanjem uporabnikov ali usmerjanjem, nato znova poskusite preverjanje.
 
-## Odgovori o napakah
+## Odgovori o napakah {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tipični odgovori stanja migracije vključujejo:
 }
 ```
 
-## Paginacija in filtriranje
+## Paginacija in filtriranje {#pagination-and-filtering}
 
 **Parametri poizvedbe:**
 ```http

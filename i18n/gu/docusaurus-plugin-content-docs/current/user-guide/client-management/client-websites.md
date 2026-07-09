@@ -3,7 +3,7 @@ title: ક્લાયન્ટ વેબસાઇટ્સ
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# તમારા Clientની Websites (v2)
+# તમારા Clientની Websites (v2) {#your-clients-websites-v2}
 
 તમારા network પર register કર્યા પછી, તમારા customers તેમના dashboard ઍક્સેસ કરી શકે છે.
 

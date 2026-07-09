@@ -4,13 +4,13 @@ title: Salain - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site
+# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Gumagana bago tanggalin ang naulilang nakabinbing site para sa kinanselang GoCardless membership.
 
 Magbalik ng false mula sa filter na ito upang pigilan ang pagtanggal.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Magbalik ng false mula sa filter na ito upang pigilan ang pagtanggal.
 | $membership | `\WP_Ultimo\Models\Membership` | Ang kinanselang membership. |
 | $old_status | `string` | Ang status bago ang pagkansela. |
 
-### Mula Noong
+### Mula Noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) sa linya 1086

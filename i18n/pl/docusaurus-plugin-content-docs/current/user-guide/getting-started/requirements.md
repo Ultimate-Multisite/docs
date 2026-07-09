@@ -3,11 +3,11 @@ title: Wymagania
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Wymagania Ultimate Multisite
+# Wymagania Ultimate Multisite {#ultimate-multisite-requirements}
 
 Zanim zdecydujesz się na zakup Ultimate Multisite, prawdopodobnie zastanawiasz się, jakie są wymagania do uruchomienia naszej wtyczki. Na szczęście wymagań jest niewiele: **nazwa domeny**, dobry **dostawca hostingu** oraz instalacja WordPress **Multisite**. To wszystko, czego potrzebujesz!
 
-## Nazwa domeny
+## Nazwa domeny {#domain-name}
 
 Zacznijmy od nazwy domeny.
 
@@ -17,7 +17,7 @@ Nasza wtyczka zapewnia usługi subskrypcyjne, obsługę płatności, formularze 
 
 Możesz wybrać dowolną niszę, o ile Twój model biznesowy opiera się na sprzedaży stron internetowych jako usługi! Upewnij się, że nazwa domeny pasuje do Twojego planu biznesowego.
 
-## Dostawca hostingu
+## Dostawca hostingu {#hosting-provider}
 
 Masz już chwytliwą nazwę domeny, która odzwierciedla Twoją niszę i działalność. Teraz musisz wybrać dobrego dostawcę hostingu dla swojej sieci z Ultimate Multisite. Na rynku znajdziesz wiele dobrych opcji. Niektórzy dostawcy hostingu lepiej integrują się z Ultimate Multisite, co może być decydującym czynnikiem w zależności od Twoich planów.
 
@@ -25,7 +25,7 @@ Ultimate Multisite powinien działać u każdego dostawcy hostingu. Różnica po
 
 Jeśli chodzi o specyfikację serwera, nie ma uniwersalnej formuły — wszystko zależy od funkcji, które będziesz oferować, oraz od wielkości Twojej sieci. Hosting współdzielony może być dobrym punktem wyjścia, ale gdy Twoja sieć zacznie rosnąć, prawdopodobnie będziesz potrzebować dedykowanego VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Porozmawiajmy teraz o instalacji WordPress Multisite.
 

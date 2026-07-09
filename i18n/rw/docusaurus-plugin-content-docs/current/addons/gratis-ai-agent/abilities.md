@@ -3,7 +3,7 @@ title: Igitabo cyifashishwa cy’Ubushobozi
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Igitabo cy'Ubushobozi
+# Igitabo cy'Ubushobozi {#abilities-reference}
 
 Ubushobozi ni ibikorwa fatizo Gratis AI Agent ishobora gukoresha ku ishyirwaho ryawe rya WordPress. Buri bushobozi ni PHP class yanditswe igaragaza JSON schema — agent isoma iyi schema mu gihe cyo gukora kugira ngo yumve parameter zisabwa n'ibyo ubushobozi bugarura.
 
@@ -11,11 +11,11 @@ Uru rupapuro rusobanura ubushobozi bwose buzanwa na Gratis AI Agent v1.9.0.
 
 ---
 
-## Ubwoko bw'Inyandiko Bwihariye
+## Ubwoko bw'Inyandiko Bwihariye {#custom-post-types}
 
 Ubu bushobozi bucunga ubwoko bw'inyandiko bwihariye (CPTs) bwanditswe binyuze muri agent. Iyandikwa ribikwa muri table ya options ya WordPress kugira ngo rikomeze kubaho n'iyo plugin ihagaritswe ikongera igakoreshwa.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Yandika ubwoko bushya bw'inyandiko bwihariye.
 
@@ -50,7 +50,7 @@ Yandika ubwoko bushya bw'inyandiko bwihariye.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Igarura ubwoko bwose bw'inyandiko bwihariye bwanditswe na agent.
 
@@ -73,7 +73,7 @@ Igarura ubwoko bwose bw'inyandiko bwihariye bwanditswe na agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Ihanagura iyandikwa ry'ubwoko bw'inyandiko bwihariye bwari bwaranditswe na agent. Inyandiko zisanzwe z'ubwo bwoko ziguma muri database ariko ntiziba zikigerwaho binyuze muri ubwo bwoko bw'inyandiko.
 
@@ -87,11 +87,11 @@ Ihanagura iyandikwa ry'ubwoko bw'inyandiko bwihariye bwari bwaranditswe na agent
 
 ---
 
-## Taxonomy Zihariye
+## Taxonomy Zihariye {#custom-taxonomies}
 
 Ubu bushobozi bucunga taxonomy zihariye. Kimwe na CPTs, iyandikwa rya taxonomy rirabikwa.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Yandika taxonomy nshya yihariye.
 
@@ -123,7 +123,7 @@ Yandika taxonomy nshya yihariye.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Igarura taxonomy zose zihariye zanditswe na agent.
 
@@ -146,7 +146,7 @@ Igarura taxonomy zose zihariye zanditswe na agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Ihanagura iyandikwa rya taxonomy yihariye yari yaranditswe na agent.
 
@@ -160,11 +160,11 @@ Ihanagura iyandikwa rya taxonomy yihariye yari yaranditswe na agent.
 
 ---
 
-## Sisitemu y'Igishushanyo
+## Sisitemu y'Igishushanyo {#design-system}
 
 Ubushobozi bwa sisitemu y'igishushanyo buhindura uko site ya WordPress igaragara — kuva kuri CSS yihariye kugeza kuri block patterns na logo ya site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Yongeraho CSS muri `<head>` ya site binyuze muri `wp_add_inline_style`. CSS ibikwa muri option ya `gratis_ai_agent_custom_css` kandi ikavanwaho neza igihe ubushobozi busubijwe ku ntangiriro.
 
@@ -190,7 +190,7 @@ Yongeraho CSS muri `<head>` ya site binyuze muri `wp_add_inline_style`. CSS ibik
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Yandika block pattern ishobora kongera gukoreshwa muri pattern library ya WordPress.
 
@@ -209,7 +209,7 @@ Yandika block pattern ishobora kongera gukoreshwa muri pattern library ya WordPr
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Itondeka block patterns zose zanditswe na agent.
 
@@ -231,7 +231,7 @@ Itondeka block patterns zose zanditswe na agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Ishyiraho logo y’urubuga rwa WordPress ikoresheje ID y’umugereka watanzwe cyangwa URL y’ishusho iri kure. Iyo URL itanzwe, ishusho irakururwa ikinjizwa muri Media Library.
 
@@ -248,7 +248,7 @@ Kimwe muri `attachment_id` cyangwa `url` kigomba gutangwa.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Ikoresha preset y’amabara/imyandikire ifite izina kuri `theme.json` ya theme iri gukoreshwa (cyangwa `global-styles`). Presets ni amapaki yatoranyijwe kandi acungwa n’itsinda rya Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Ikoresha preset y’amabara/imyandikire ifite izina kuri `theme.json` ya theme i
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Ubushobozi bwa Global Styles busoma kandi bukandika indangagaciro za theme.json binyuze muri WordPress Global Styles API, bikagira ingaruka kuri blocks na templates byose ku rubuga rwose.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Isubiza igenamiterere rya global styles ririho ubu.
 
@@ -291,7 +291,7 @@ Isubiza igenamiterere rya global styles ririho ubu.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Ivugurura indangagaciro imwe cyangwa nyinshi mu igenamiterere rya global styles.
 
@@ -318,7 +318,7 @@ Ivugurura indangagaciro imwe cyangwa nyinshi mu igenamiterere rya global styles.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Isubizaho impinduka zose za global styles zashyizweho na agent, igasubiza defaults za theme.
 
@@ -328,11 +328,11 @@ Isubizaho impinduka zose za global styles zashyizweho na agent, igasubiza defaul
 
 ---
 
-## Menus z’Inzira z’Urubuga
+## Menus z’Inzira z’Urubuga {#navigation-menus}
 
 Ubushobozi bwa Navigation Menu burema kandi bugacunga menus za nav za WordPress n’ibintu byazo.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Irema menu nshya y’inzira z’urubuga ya WordPress.
 
@@ -347,7 +347,7 @@ Irema menu nshya y’inzira z’urubuga ya WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Ihindura izina rya menu cyangwa ikongera kuyohereza ku hantu muri theme.
 
@@ -363,7 +363,7 @@ Ihindura izina rya menu cyangwa ikongera kuyohereza ku hantu muri theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Yongeramo ikintu muri menu y’inzira z’urubuga isanzwe ihari.
 
@@ -383,7 +383,7 @@ Yongeramo ikintu muri menu y’inzira z’urubuga isanzwe ihari.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Ikuraho ikintu muri menu y’inzira z’urubuga.
 
@@ -397,7 +397,7 @@ Ikuraho ikintu muri menu y’inzira z’urubuga.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Itondeka menus zose z’inzira z’urubuga za WordPress, harimo n’aho zahawe muri theme.
 
@@ -420,11 +420,11 @@ Itondeka menus zose z’inzira z’urubuga za WordPress, harimo n’aho zahawe m
 
 ---
 
-## Gucunga Options
+## Gucunga Options {#options-management}
 
 Ubushobozi bwa Options busoma kandi bukandika options za WordPress binyuze muri `get_option` / `update_option`. Blocklist y’umutekano yubatswemo ibuza guhindura igenamiterere rikomeye ku bw’impanuka.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Isoma option ya WordPress.
 
@@ -440,7 +440,7 @@ Isubiza ikosa niba `option_name` iri kuri blocklist y’umutekano.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Yandika option ya WordPress.
 
@@ -458,7 +458,7 @@ Isubiza ikosa niba `option_name` iri kuri safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Isiba option ya WordPress.
 
@@ -474,7 +474,7 @@ Isubiza ikosa niba `option_name` iri kuri safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Itondeka options za WordPress zihura n'icyitegererezo.
 
@@ -498,11 +498,11 @@ Itondeka options za WordPress zihura n'icyitegererezo.
 
 ---
 
-## Gucunga Ibirimo
+## Gucunga Ibirimo {#content-management}
 
 Ubushobozi bwo Gucunga Ibirimo bukora kandi bugahindura posts na pages za WordPress. Post IDs zisubizwa kugira ngo intambwe zikurikiraho muri plans z'ubushobozi bwinshi zishobore kwifashisha ibirimo byakozwe.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Ikora post nshya ya WordPress, page, cyangwa inyandiko ya custom post type.
 
@@ -537,7 +537,7 @@ Ikora post nshya ya WordPress, page, cyangwa inyandiko ya custom post type.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Ivugurura post cyangwa page ya WordPress isanzweho.
 
@@ -567,7 +567,7 @@ Ivugurura post cyangwa page ya WordPress isanzweho.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Ikora posts nyinshi mu guhamagara ubushobozi rimwe, bikagabanya ingendo zo gusubira no kugaruka mu gihe cyo kubaka site cyangwa kwinjiza ibirimo byinshi. Posts zikorwa zikurikiranye; niba imwe inaniwe izindi zirakomeza kandi kunanirwa bikamenyeshwa muri array y'ibisubizo.
 
@@ -619,7 +619,7 @@ Ikora posts nyinshi mu guhamagara ubushobozi rimwe, bikagabanya ingendo zo gusub
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Igenera featured image (post thumbnail) post cyangwa page isanzweho. Yemera attachment ID isanzweho muri Media Library cyangwa URL y'ishusho iri kure; iyo URL itanzwe, ishusho irakururwa ikinjizwa mu buryo bwikora.
 
@@ -638,7 +638,7 @@ Kimwe muri `attachment_id` cyangwa `url` kigomba gutangwa.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Ikora contact form ikoresheje plugin ya form ikora (Contact Form 7, WPForms, Fluent Forms, cyangwa Gravity Forms, bitewe n'iyashyizwemo). Isubiza shortcode ishobora gushyirwa muri post cyangwa page iyo ari yo yose.
 
@@ -691,11 +691,11 @@ Ikora contact form ikoresheje plugin ya form ikora (Contact Form 7, WPForms, Flu
 
 ---
 
-## Isuzuma ry’Amashusho
+## Isuzuma ry’Amashusho {#visual-review}
 
 Ubushobozi bwa Isuzuma ry’Amashusho butuma agent ifata amashusho ya paji ziri live ikanayasesengura, bigafasha isuzuma ry’igishushanyo ryikora, kugereranya mbere/nyuma, n’igenzura ry’isubira inyuma rishingiye ku mashusho nta kwaka browser extension iyo ari yo yose.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Ifata screenshot ya paji ya WordPress kuri URL yatanzwe ikoresheje browser idafite umutwe ku ruhande rwa server. Ishusho ibikwa muri Media Library hanyuma URL ya CDN igasubizwa.
 
@@ -724,7 +724,7 @@ Ifata screenshot ya paji ya WordPress kuri URL yatanzwe ikoresheje browser idafi
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Ifata screenshots ebyiri igasubiza igipimo cya visual diff hamwe n’ishusho ya diff igaragaza ahahindutse. Bifasha kwemeza ko ihinduka ry’igishushanyo ryatanze igisubizo cyari gitegerejwe cyangwa gutahura regressions zitateganyijwe.
 
@@ -754,7 +754,7 @@ Ifata screenshots ebyiri igasubiza igipimo cya visual diff hamwe n’ishusho ya 
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Ifata screenshot ya paji ikayohereza kuri language model kugira ngo isesengurwe mu buryo bw’amashusho. Isubiza isuzuma rifite imiterere rikubiyemo layout, typography, ikoreshwa ry’amabara, n’ibibazo by’accessibility.
 
@@ -785,11 +785,11 @@ Ifata screenshot ya paji ikayohereza kuri language model kugira ngo isesengurwe 
 
 ---
 
-## Ubushobozi Bushyirwamo
+## Ubushobozi Bushyirwamo {#installable-abilities}
 
 Installable Abilities Registry igufasha kwagura agent ukoresheje amapaki y’ubushobozi y’inyongera akwirakwizwa nka WordPress plugins. Buri paki yandikisha ubushobozi bumwe cyangwa bwinshi ikoresheje ability API isanzwe.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Isubiza katalogu y’amapaki y’ubushobozi aboneka yo gushyirwamo avuye muri registry.
 
@@ -818,7 +818,7 @@ Isubiza katalogu y’amapaki y’ubushobozi aboneka yo gushyirwamo avuye muri re
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Ikurura kandi igakora paketi y'ubushobozi ivuye mu bubiko.
 
@@ -832,7 +832,7 @@ Ikurura kandi igakora paketi y'ubushobozi ivuye mu bubiko.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Ibaza ububiko bw'ubushobozi kugira ngo ibone umugereka mwiza cyane ku buryo bwo gukoresha bwasobanuwe, kandi, ku bushake, ikawushyiraho.
 

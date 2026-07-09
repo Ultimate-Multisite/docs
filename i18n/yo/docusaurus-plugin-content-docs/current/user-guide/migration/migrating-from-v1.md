@@ -3,9 +3,9 @@ title: Gbigbe kuro lati V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Gbigbe láti V1
+# Gbigbe láti V1 {#migrating-from-v1}
 
-## Ultimate Multisite ti yí padà láti ẹbí ìtújáde 1.x atilẹba rẹ sí ẹbí ìtújáde 2.x.
+## Ultimate Multisite ti yí padà láti ẹbí ìtújáde 1.x atilẹba rẹ sí ẹbí ìtújáde 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite ẹ̀yà 2.0 àti lókè jẹ́ àtunkọ pátápátá ti ìpilẹ̀ kóòdù, èyí túmọ̀ sí pé díẹ̀ gan-an ni a pín láàárín ẹ̀yà atijọ́ àti tuntun. Nítorí ìdí yẹn, nígbà tí o bá ń ṣe ìgbélárugẹ láti 1.x sí 2.x, a ó ní láti gbe dátà rẹ lọ sí ọna kika tí àwọn ẹ̀yà tuntun lè lóye.
 
@@ -15,7 +15,7 @@ A dúpẹ́, Ultimate Multisite 2.0+ **wá pẹ̀lú ohun-ìgbéyípadà** tí a
 
 _**PÀTÀKÌ: Kí o tó bẹ̀rẹ̀ ìgbélárugẹ láti ẹ̀yà 1.x sí ẹ̀yà 2.0 jọ̀wọ́ rí i dájú pé o dá àfipamọ́ ti ibi ìpamọ́ dátà sáịtị rẹ sílẹ̀**_
 
-## Àwọn ìgbésẹ̀ àkọ́kọ́
+## Àwọn ìgbésẹ̀ àkọ́kọ́ {#first-steps}
 
 Ìgbésẹ̀ àkọ́kọ́ ni láti ṣe ìgbàsílẹ̀ fáìlì .zip ti afikun náà kí o sì fi ẹ̀yà 2.0 sí Dashboard alábòójútó nẹ́tíwọ́ọ̀kì rẹ.
 
@@ -51,7 +51,7 @@ Lẹ́yìn mímú ìwé-àṣẹ ṣiṣẹ́, o lè bẹ̀rẹ̀ ìfisílẹ̀ 
 
 <!-- Àwòrán iboju kò sí: Ojúewé ìfisílẹ̀ tí ń fi ohun tí a ó mú dojuiwọn hàn pẹ̀lú bọ́tìnì Fi sílẹ̀ -->
 
-## Ní báyìí, ìgbéyípadà náà
+## Ní báyìí, ìgbéyípadà náà {#now-the-migration}
 
 Ohun-ìgbéyípadà náà ní àfidámọ̀ ààbò tí a kọ sínú rẹ, níbi tí yóò ti yẹ gbogbo multisite rẹ wò láti rí i dájú pé gbogbo dátà Ultimate Multisite rẹ lè jẹ́ gbígbéyípadà láìsí ìṣòro kankan. Tẹ bọ́tìnì **Ṣe Ìyẹ̀wò** láti bẹ̀rẹ̀ ìlànà náà.
 
@@ -59,13 +59,13 @@ Ohun-ìgbéyípadà náà ní àfidámọ̀ ààbò tí a kọ sínú rẹ, níb
 
 Lẹ́yìn ṣíṣe ìyẹ̀wò náà, o ní àṣàyàn méjì: èsì náà lè jẹ́ bóyá **pẹ̀lú** àṣìṣe tàbí **láìsí àṣìṣe**.
 
-### Pẹ̀lú Àṣìṣe
+### Pẹ̀lú Àṣìṣe {#with-error}
 
 Tí o bá rí ìfẹ́ránṣẹ́ àṣìṣe, ìwọ yóò nílò láti kàn sí ẹgbẹ́ àtìlẹ́yìn wa kí wọ́n lè ràn ọ́ lọ́wọ́ láti tún àṣìṣe náà ṣe. Rí i dájú pé o **pèsè àkọsílẹ̀ àṣìṣe náà** nígbà tí o bá dá tikẹ́ẹ̀tì sílẹ̀. O lè ṣe ìgbàsílẹ̀ àkọsílẹ̀ náà tàbí o lè tẹ líńkì tí ó sọ kàn sí ẹgbẹ́ àtìlẹ́yìn wa. Yóò ṣí wíjẹ́ẹ̀tì ìrànlọ́wọ́ ní apá ọ̀tún ojúewé rẹ pẹ̀lú àwọn ààyè tí a ti kún tẹ́lẹ̀ fún ọ, tí ó ní àwọn àkọsílẹ̀ àṣìṣe lábẹ́ àpejuwe.
 
 _**Níwọ̀n bí sístẹ́ẹ̀mù ti rí àṣìṣe, ìwọ kò ní lè tẹ̀ síwájú láti gbe lọ sí ẹ̀yà 2.0. Lẹ́yìn náà, o lè yí padà sí ẹ̀yà 1.x láti tẹ̀síwájú fífi nẹ́tíwọ́ọ̀kì rẹ ṣiṣẹ́ títí di ìgbà tí a ó fi tún àṣìṣe náà ṣe.**_
 
-### Láìsí Àṣìṣe
+### Láìsí Àṣìṣe {#without-error}
 
 Tí sístẹ́ẹ̀mù kò bá rí àṣìṣe kankan, ìwọ yóò rí ìfẹ́ránṣẹ́ àṣeyọrí àti bọ́tìnì **Gbe yípadà** ní ìsàlẹ̀ tí yóò jẹ́ kí o tẹ̀ síwájú pẹ̀lú ìgbéyípadà náà. Lórí ojúewé yìí, a ó rán ọ létí láti dá àfipamọ́ ti ibi ìpamọ́ dátà rẹ sílẹ̀ kí o tó tẹ̀ síwájú, èyí tí a ṣedábàá gan-an. Tẹ **Gbe yípadà** tí o bá ti ní àfipamọ́.
 

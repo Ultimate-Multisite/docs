@@ -3,11 +3,11 @@ title: Produse și Prețuri pentru Domenii
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produse de domenii și prețuri
+# Produse de domenii și prețuri {#domain-products-and-pricing}
 
 Produsele de domenii vă permit să gestionați prețurile, TLD-urile, confidențialitatea WHOIS și selectarea furnizorului. Fiecare produs de domeniu este un produs standard Ultimate Multisite, dar cu un tab separat numit **Domain Settings**.
 
-## Crearea unui produs de domeniu
+## Crearea unui produs de domeniu {#creating-a-domain-product}
 
 1. Mergeți la **Network Admin › Ultimate Multisite › Products**
 2. Faceți clic pe **Add New**
@@ -17,13 +17,13 @@ Produsele de domenii vă permit să gestionați prețurile, TLD-urile, confiden�
 
 Produsele de domenii apar cu un badge **Domain** de culoare mov în lista de produse și pot fi filtrate folosind tab-ul **Domain Products**.
 
-## Tab-ul cu setările domeniului
+## Tab-ul cu setările domeniului {#domain-settings-tab}
 
-### Furnizor (Provider)
+### Furnizor (Provider) {#provider}
 
 Alegeți ce registrar se ocupă de înregistrarea acestui produs. Implicit este setat **Default provider** la nivel global în setările Domain Seller.
 
-### TLD-uri suportate (Supported TLDs)
+### TLD-uri suportate (Supported TLDs) {#supported-tlds}
 
 Lăsați câmpul gol pentru a crea un **produs universal (catch-all)** care se aplică tuturor TLD-urilor care nu sunt acoperite de alt produs.
 
@@ -31,7 +31,7 @@ Introduceți o listă separată prin virgulă de TLD-uri (ex: `.com, .net, .org`
 
 **Cum funcționează potrivirea produselor:** Când un client caută un domeniu, addon-ul selectează produsul cel mai specific care se potrivește. Un produs cu `.com` în lista sa de TLD-uri are prioritate față de un produs universal. Dacă niciun produs specific TLD-ului nu se potrivește, se folosește produsul universal. Dacă nu există produse, căutarea domeniului nu este afișată.
 
-### Tip de marjă (Markup type)
+### Tip de marjă (Markup type) {#markup-type}
 
 Cele trei moduri controlează cum vă este calculat prețul retail în raport cu costul de gros:
 
@@ -41,11 +41,11 @@ Cele trei moduri controlează cum vă este calculat prețul retail în raport cu
 | **Fixed markup** | Adaugă un anumit sumă fixă în dolari. O marjă de $5 pe un domeniu de $10 oferă $15. |
 | **Fixed price** | Ignorează complet costul de gros. Încarcă întotdeauna suma pe care o introduceți. |
 
-### Preț inițial (Introductory pricing)
+### Preț inițial (Introductory pricing) {#introductory-pricing}
 
 Activați această opțiune pentru a oferi un preț redus pentru prima lună. Setați un **Introductory price** separat (prețul pentru anul 1) alături de **Renewal price** (prețul pentru anul 2 și următor). Clientul vede ambele prețuri afișate în timpul checkout-ului, astfel că știe ce să aștepte la reînnoire.
 
-### Confidențialitatea WHOIS (WHOIS privacy)
+### Confidențialitatea WHOIS (WHOIS privacy) {#whois-privacy}
 
 Controlează dacă confidențialitatea WHOIS este oferită pentru domeniile înregistrate prin acest produs.
 
@@ -59,7 +59,7 @@ Pentru Namecheap, confidențialitatea WHOIS folosește WhoisGuard (întotdeauna 
 
 ---
 
-## Importarea și sincronizarea TLD-urilor
+## Importarea și sincronizarea TLD-urilor {#tld-import-and-sync}
 
 Produsele de domenii afișează prețuri de gros în timp real, prelevate de la furnizorul conectat. Pentru ca acest lucru să funcționeze, TLD-urile trebuie importate.
 
@@ -70,7 +70,7 @@ După o sincronizare, mergeți la tab-ul Domain Settings al oricărui produs de 
 
 ---
 
-## Reînnoirea automată (Auto-renewal)
+## Reînnoirea automată (Auto-renewal) {#auto-renewal}
 
 Reînnoirea domeniilor este legată de statutul de membru al clientului:
 
@@ -90,7 +90,7 @@ ID-urile de șablon pentru evenimentele ciclului de viață ale domeniului:
 
 ---
 
-## Admin: Înregistrarea manuală a domeniului
+## Admin: Înregistrarea manuală a domeniului {#admin-manual-domain-registration}
 
 Pentru a înregistra un domeniu în numele unui client, fără ca acesta să treacă prin checkout:
 

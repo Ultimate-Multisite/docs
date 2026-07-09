@@ -3,11 +3,11 @@ title: Плагин Билдер ва Сандбокс
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# پلاتین Builder & Sandbox (ساخت و آزمایش محیط)
+# پلاتین Builder & Sandbox (ساخت و آزمایش محیط) {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0-ی با سیستم **Plugin Builder & Sandbox System** رو معرفی می‌کنه که به شما اجازه می‌ده هوش مصنوعی، افزونه‌های وردپرس رو توی یک محیط ایزوله و امن روی شبکه خودتون بسازه، فعال کنه و مدیریت کنه.
 
-## مروری کلی (Overview)
+## مروری کلی (Overview) {#overview}
 
 Plugin Builder به دستیار هوش مصنوعی اجازه می‌ده که بر اساس درخواست‌های زبان طبیعی، افزونه‌های سفارشی وردپرسی بنویسه. افزونه‌های تولید شده قبل از اینکه حتی روی سایت زنده تأثیر بگذارند، در یک لایه sandbox اعتبارسنجی، ذخیره و فعال می‌شوند.
 
@@ -17,7 +17,7 @@ Plugin Builder به دستیار هوش مصنوعی اجازه می‌ده که
 - ویژگی‌هایی که نیاز به هوک‌های وردپرس یا انواع پست سفارشی دارند را نمونه‌سازی (prototyping) کردن.
 - اسکریپت‌های اتوماسیون کوتاه‌مدت برای عملیات دسته‌ای (batch operations) ایجاد کردن.
 
-## تولید افزونه از طریق هوش مصنوعی (Generating a Plugin via AI)
+## تولید افزونه از طریق هوش مصنوعی (Generating a Plugin via AI) {#generating-a-plugin-via-ai}
 
 برای ساختن یک افزونه، رابط چت Gratis AI Agent رو باز کنید و توضیح بدید که به چه چیزی نیاز دارید. مثلاً:
 
@@ -32,7 +32,7 @@ Plugin Builder به دستیار هوش مصنوعی اجازه می‌ده که
 
 شما می‌توانید قبل از فعال کردن، در همان رشته گفتگو با پرسیدن سوالات بعدی نتیجه را اصلاح کنید.
 
-## فعال‌سازی در sandbox (Sandbox Activation)
+## فعال‌سازی در sandbox (Sandbox Activation) {#sandbox-activation}
 
 فعال کردن یک افزونه تولید شده در sandbox با فعال کردن آن روی شبکه زنده فرق داره. محیط sandbox:
 
@@ -48,7 +48,7 @@ Plugin Builder به دستیار هوش مصنوعی اجازه می‌ده که
 
 A status message confirms whether activation succeeded or failed. If it fails, the error log will be shown in the chat thread.
 
-## Generated Plugins' Management (Generated Plugins-i Yönetimi)
+## Generated Plugins' Management (Generated Plugins-i Yönetimi) {#managing-generated-plugins}
 
 Sizin yarattığınız pluginler **Gratis AI Agent → Plugin Builder → Manage Plugins** menüsünde listelenir. Bu ekrandan şunları yapabilirsiniz:
 
@@ -64,7 +64,7 @@ Sizin yarattığınız pluginler **Gratis AI Agent → Plugin Builder → Manage
 **Ağda Kurulum (Install on network)** yarattığınız plugin'i canlı WordPress multisite'ınıza dağıtır. Devam etmeden önce lütfen plugin kodunu kontrol edin. Gratis AI Agent, canlı kurulumu tamamlamadan önce onay istemiş olacaktır.
 :::
 
-## Ağ Üzerinde Yarattığınız Bir Plugin Nasıl Kurulur (Installing a Generated Plugin on the Network)
+## Ağ Üzerinde Yarattığınız Bir Plugin Nasıl Kurulur (Installing a Generated Plugin on the Network) {#installing-a-generated-plugin-on-the-network}
 
 Sandbox'ta bir plugin ile memnun kaldığınızda, onu canlı ağınıza kurabilirsiniz:
 
@@ -78,7 +78,7 @@ Alternatif olarak, sohbet arayüzündeki slash komutunu kullanabilirsiniz:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin Güncellemeleri (Plugin Updates)
+## Plugin Güncellemeleri (Plugin Updates) {#plugin-updates}
 
 Yarattığınız bir plugin'i güncellemek için yeni bir sohbette AI asistanına değişikliği tarif edin:
 
@@ -86,7 +86,7 @@ Yarattığınız bir plugin'i güncellemek için yeni bir sohbette AI asistanın
 
 AI, mevcut sürümün yanında sandbox içinde yeni bir sürümü oluşturur. Farkı (diff) inceleyip güncelleme uygulanmadan önce onaylamanız gerekir.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Plugin Builder, هر yeni oluşturulan eklentinin kayıtlı hook'larını ve filter'larını analiz etmek için entegre bir **HookScanner** kullanır. HookScanner çıktısı sohbet yanıtında gösterilir ve şunları içerir:
 
@@ -96,7 +96,7 @@ Plugin Builder, هر yeni oluşturulan eklentinin kayıtlı hook'larını ve fil
 
 Bu, bir eklentiyi etkinleştirmeden önce onun nasıl davranacağını anlamanı sağlar.
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - Oluşturulan eklentiler, manuel olarak kurulan eklentilerden ayrı bir yerde saklanır ve bunları ağda açıkça kurmadığınız sürece standart WordPress eklenti yönetim ekranından erişilemezler.
 - Sandbox, eklenti dosyaları yazılırken dizin geçişini (directory traversal) önlemek için yol doğrulaması kullanır.

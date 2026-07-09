@@ -3,13 +3,13 @@ title: Интеграция нұсқаулығы
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Интеграция нұсқаулығы
+# Интеграция нұсқаулығы {#integration-guide}
 
 Бұл нұсқаулық Ultimate Multisite-пен жиі қолданылатын интеграция үлгілерін, соның ішінде сыртқы қызметтерге қосылуды, жеке төлем шлюздерін жасауды және webhooks өңдеуді қамтиды.
 
 Оқшауланған tenant инфрақұрылымы үшін sovereign tenant bootstrap, көшіруді тексеру, SSO және teardown бойынша нұсқаулықты [Multi-Tenancy Integration](./multi-tenancy) бөлімінен қараңыз.
 
-## CRM интеграциясы
+## CRM интеграциясы {#crm-integration}
 
 Жаңа клиенттер тіркелген кезде клиент деректерін CRM-ге синхрондаңыз:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics интеграциясы
+## Analytics интеграциясы {#analytics-integration}
 
 Клиенттің өмірлік циклі бойынша негізгі бизнес оқиғаларын қадағалаңыз:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Келесі қадамдар
+## Келесі қадамдар {#next-steps}
 
 - [Жеке Gateway әзірлеу](./custom-gateway) — Өз төлем шлюзіңізді жасаңыз
 - [Webhook өңдеу](./webhooks) — Жеке webhook endpoint-терін жасаңыз

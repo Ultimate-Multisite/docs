@@ -3,9 +3,9 @@ title: Poznámky k vydání
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Poznámky k vydání
+# Poznámky k vydání {#release-notes}
 
-## Verze 2.13.0 — Vydáno dne 2026-06-05
+## Verze 2.13.0 — Vydáno dne 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nové: Přidána podpora sovereign-tenant pro toky zákaznického Account, checkoutu, fakturace, webu, faktury, přepínání šablon a mapování domén, aby tenant sítě mohly zákazníky u spravovaných akcí směrovat zpět na hlavní web.
 - Nové: Přidány kontroly obnovovacích přihlašovacích údajů pro opakující se členství, aby brány mohly vypnout automatické obnovení, když chybí uložená fakturační dohoda, předplatné nebo vault token.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Oprava: Obnovení členství, zobrazení expirace a okrajové případy vybírání plateb se nyní vyhýbají okamžitým expiracím, pádům nebo opomenutým povinným platbám.
 - Vylepšeno: Kompatibilita s WordPress je testována až do verze 7.0, produkční Vue assety jsou znovu sestaveny ze zdrojů npm a end-to-end pokrytí Cypress nyní procvičuje více toků checkoutu, nastavení, SSO a bran.
 
-## Verze 2.12.0 — Vydáno dne 2026-05-15
+## Verze 2.12.0 — Vydáno dne 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nové: Přidán Hostinger (hPanel) jako podporovaný poskytovatel hostingu s integrací mapování domén
 - Nové: Site Exporter nyní zpracovává balíčky importu sítě pro zjednodušené obnovení webů v celé síti
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Oprava: Site Exporter CLI nyní zachovává správný výběr výchozího síťového webu
 - Vylepšeno: Odebrán přibalený wp-cli z balíčku pluginu, čímž se zmenšila velikost pluginu
 
-## Verze 2.11.0 — Vydáno dne 2026-05-11
+## Verze 2.11.0 — Vydáno dne 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nové: Exporty webu nyní přibalují samo-spouštěcí `index.php`, takže ZIP lze nainstalovat na čerstvý hosting bez samostatné instalace pluginu.
 - Nové: Export sítě umožňuje administrátorům exportovat všechny podweby v jednom archivu z administrační stránky exportu webu.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nové: Editor checkout formuláře varuje, když je produkt přidán bez nakonfigurovaného povinného pole.
 - Nové: Karta nastavení Import/Export nyní jasně popisuje svůj rozsah a odkazuje přímo na nástroj exportu webu.
 
-## Verze 2.10.0 — Vydáno dne 2026-05-05
+## Verze 2.10.0 — Vydáno dne 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nové: Průvodce nastavením PayPal pro ruční zadání přihlašovacích údajů s OAuth flag gate pro hladkou konfiguraci brány.
 - Nové: Zákaznický panel přepínání šablon byl přepracován s kartou aktuální šablony, trvalou mřížkou a tlačítkem **Resetovat aktuální šablonu**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Oprava: Filtrovaná cesta SSO respektována napříč všemi přihlašovacími toky.
 - Oprava: Prázdné možnosti identity webu zachovány při uložení.
 
-## Verze 2.9.0 — Vydáno dne 2026-04-30
+## Verze 2.9.0 — Vydáno dne 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nové: Export a import jednoho webu přidán pod **Nástroje > Export a import**.
 - Oprava: Exportní ZIP soubory jsou nyní poskytovány přes ověřený endpoint pro stažení.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Oprava: ID prohlídek normalizována na podtržítka v klíčích uživatelských nastavení.
 - Vylepšeno: Nyní se místo Alchemy/Zippy používá ZipArchive pro lepší kompatibilitu.
 
-## Verze 2.8.0 — Vydáno dne 2026-04-29
+## Verze 2.8.0 — Vydáno dne 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nové: Přepínač Enable Jumper přidán do UI nastavení Other Options.
 - Nové: Sloupec stavu přidán do tabulky seznamu formulářů checkoutu.

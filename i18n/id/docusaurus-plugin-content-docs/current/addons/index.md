@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons memperluas Ultimate Multisite dengan fitur dan integrasi tambahan. Sebagian besar addon berbayar dan dapat dibeli dari [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Instalasi
+## Instalasi {#installation}
 
 Addons dapat diinstal dengan dua cara:
 
 1. **Melalui Halaman Addon** -- Arahkan ke halaman manajemen addon situs Anda di admin WordPress
 2. **Unduhan Manual** -- Unduh dari [akun Anda](https://ultimatemultisite.com/my-account/downloads/) dan unggah melalui Plugins > Add New
 
-## Addons yang Tersedia
+## Addons yang Tersedia {#available-addons}
 
 | Addon | Deskripsi |
 |-------|-------------|

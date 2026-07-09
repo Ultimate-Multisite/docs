@@ -4,11 +4,11 @@ title: Scagaire - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Scagaire: wu_country_get_cities
+# Scagaire: wu_country_get_cities {#filter-wucountrygetcities}
 
 Filleann sé liosta na gcathracha do stát i dtír.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Filleann sé liosta na gcathracha do stát i dtír.
 | $state_code | `string` | Cód ISO dhá litir don stát. |
 | $current_country | `\WP_Ultimo\Country\Country` | Ásc den aicme reatha. |
 
-### Ó
+### Ó {#since}
 
 - 2.0.11
-### Foinse
+### Foinse {#source}
 
 Sainmhínithe in [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) ag líne 146
 
 
-## Filleann sé
+## Filleann sé {#returns}
 Liosta scagtha na stát.

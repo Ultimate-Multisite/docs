@@ -4,11 +4,11 @@ title: Радња - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered
+# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Покреће се након што су MCP способности регистроване за ентитет.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 | $model_name | `string` | Назив модела. |
 | $this | `object` | Инстанца менаџера. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.5.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) у линији 171

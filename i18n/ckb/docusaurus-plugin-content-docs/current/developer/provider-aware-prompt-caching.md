@@ -3,11 +3,11 @@ title: کاشکردنی پرۆمپت بە ئاگاداری لە دابینکەر
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# کەشکردنی پرۆمپت بە ئاگاداری دابینکەر
+# کەشکردنی پرۆمپت بە ئاگاداری دابینکەر {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 **کەشکردنی پرۆمپت بە ئاگاداری دابینکەر** دەناسێنێت، کە تێچووی API و کاتی دواکەوتن باشتر دەکات بە کەشکردنی پرۆمپتەکان لە نێوان دابینکەرانی جیاوازی LLM. هەر دابینکەرێک میکانیزم و ڕێکخستنەکانی کەشکردنی جیاوازی هەیە.
 
-## تێڕوانینێکی گشتی
+## تێڕوانینێکی گشتی {#overview}
 
 کەشکردنی پرۆمپت ڕێگەت پێدەدات:
 
@@ -23,11 +23,11 @@ Superdav AI Agent v1.12.0 **کەشکردنی پرۆمپت بە ئاگاداری 
 - **OpenRouter**: کەشکردنی تایبەت بە دابینکەر
 - **Vertex Anthropic**: کەشکردنی پرۆمپت لەگەڵ کۆنترۆڵی کەش
 
-## Google Gemini: `cachedContents` API
+## Google Gemini: `cachedContents` API {#google-gemini-cachedcontents-api}
 
 Google Gemini بەڕێوەبردنی ڕوونی کەش لە ڕێگەی `cachedContents` API دابین دەکات.
 
-### ڕێکخستن
+### ڕێکخستن {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### دروستکردنی پرۆمپتێکی کەشکراو
+### دروستکردنی پرۆمپتێکی کەشکراو {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### بەکارهێنانی پرۆمپتێکی کەشکراو
+### بەکارهێنانی پرۆمپتێکی کەشکراو {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### سووڕی ژیانی کەش
+### سووڕی ژیانی کەش {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### باشترین کردارەکان بۆ Gemini
+### باشترین کردارەکان بۆ Gemini {#best-practices-for-gemini}
 
 - **TTLی گونجاو دابنێ**: هاوسەنگی بکە لە نێوان پاشەکەوتی تێچوو و کۆنبوونی کەش
 - **پرۆمپتی سیستەم کەش بکە**: هەمان پرۆمپتی سیستەم لە داواکارییەکاندا دووبارە بەکاربهێنە
 - **بەکارهێنانی کەش چاودێری بکە**: بەدواداچوون بکە کە کام کەشەکان زۆرترین بەکارهێنانیان هەیە
 - **کەشە بەسەرچووەکان پاک بکەرەوە**: بە ماوەماوە کەشە بەکارنەهاتووەکان بسڕەوە
 
-## Azure OpenAI: کەشکردنی پرۆمپت
+## Azure OpenAI: کەشکردنی پرۆمپت {#azure-openai-prompt-caching}
 
 Azure OpenAI پشتگیری کەشکردنی پرۆمپت دەکات لەگەڵ بەڕێوەبردنی ئۆتۆماتیکی TTL.
 
-### ڕێکخستن
+### ڕێکخستن {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### چالاککردنی کەشکردن
+### چالاککردنی کەشکردن {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### سەرپەڕەکانی کەش
+### سەرپەڕەکانی کەش {#cache-headers}
 
 Azure OpenAI سەرپەڕەکانی HTTP بۆ کۆنترۆڵی کەش بەکاردەهێنێت:
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: ئەم داواکارییە کەش مەکە
 - `no_store`: کەش مەکە و دووبارە بەکاری مەهێنە
 
-### چاودێریکردنی بەکارهێنانی کەش
+### چاودێریکردنی بەکارهێنانی کەش {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### باشترین کردارەکان بۆ Azure OpenAI
+### باشترین کردارەکان بۆ Azure OpenAI {#best-practices-for-azure-openai}
 
 - **پرۆمپتی یەکسان بەکاربهێنە**: پرۆمپتە وەک‌یەکەکان سوود لە کەشکردن وەردەگرن
 - **TTLی گونجاو دابنێ**: هاوسەنگی بکە لە نێوان تێچوو و تازەیی
 - **پێوانەکانی کەش چاودێری بکە**: دروستکردنی کەش بەراورد بە لێدانەکانی کەش بەدواداچوون بکە
 - **داواکارییە هاوشێوەکان بە کۆمەڵ بکە**: داواکارییەکان کۆ بکەرەوە بۆ زۆرترینکردنی لێدانەکانی کەش
 
-## OpenRouter: کەشکردنی تایبەت بە دابینکەر
+## OpenRouter: کەشکردنی تایبەت بە دابینکەر {#openrouter-provider-specific-caching}
 
 OpenRouter لە ڕێگەی دابینکەرە بنەڕەتییەکانەوە پشتگیری کەشکردن دەکات (OpenAI, Anthropic, هتد.).
 
-### ڕێکخستن
+### ڕێکخستن {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### بەکارهێنانی کەشکردنی OpenRouter
+### بەکارهێنانی کەشکردنی OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### هەڵبژاردە تایبەتەکانی دابینکەر
+### هەڵبژاردە تایبەتەکانی دابینکەر {#provider-specific-options}
 
 دابینکەرە جیاوازەکان میکانیزمی کەشکردنی جیاوازیان هەیە:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### باشترین کردارەکان بۆ OpenRouter
+### باشترین کردارەکان بۆ OpenRouter {#best-practices-for-openrouter}
 
 - **کەشکردنی دابینکەرەکەت بناسە**: هەر دابینکەرێک میکانیزمی جیاوازی هەیە
 - **ڕەفتاری کەشکردن تاقی بکەرەوە**: دڵنیا ببە کە کەشکردن لەگەڵ دابینکەری هەڵبژێردراوت کار دەکات
 - **تێچووەکان چاودێری بکە**: پاشەکەوتەکانی کەشکردن بەدواداچوون بکە
 - **مۆدێلی یەکسان بەکاربهێنە**: گۆڕینی مۆدێل لێدانەکانی کەش دەشکێنێت
 
-## Vertex Anthropic: کەشکردنی پرۆمپت لەگەڵ کۆنترۆڵی کەش
+## Vertex Anthropic: کەشکردنی پرۆمپت لەگەڵ کۆنترۆڵی کەش {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) پشتگیری کەشکردنی پرۆمپت دەکات لەگەڵ کۆنترۆڵی ڕوونی کەش.
 
-### ڕێکخستن
+### ڕێکخستن {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### بەکارهێنانی Vertex Anthropic Caching
+### بەکارهێنانی Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### جۆرەکانی کۆنترۆڵی Cache
+### جۆرەکانی کۆنترۆڵی Cache {#cache-control-types}
 
 - **ephemeral**: Cache بۆ ماوەی داواکارییەکە (بنەڕەت)
 - **persistent**: Cache لە چەندین داواکارییدا (ئەگەر پشتگیری بکرێت)
 
-### چاودێریکردنی بەکارهێنانی Cache
+### چاودێریکردنی بەکارهێنانی Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### باشترین شێوازەکان بۆ Vertex Anthropic
+### باشترین شێوازەکان بۆ Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Cacheـی ephemeral بەکاربهێنە**: باشە بۆ Cacheـکردنی تاک-دانیشتن
 - **max_tokens بە شێوەی گونجاو دابنێ**: هاوسەنگی بکە لە نێوان قەبارەی Cache و تێچوو
 - **چاودێری پێوەرەکانی Cache بکە**: کاریگەری Cache بەدواداچوون بکە
 - **لەگەڵ بارکارییەکەت تاقی بکەرەوە**: دڵنیابە کە Cache سوود بە حاڵەتی بەکارهێنانت دەگەیەنێت
 
-## ستراتیژی Cacheکردن لە نێوان دابینکەرەکان
+## ستراتیژی Cacheکردن لە نێوان دابینکەرەکان {#cross-provider-caching-strategy}
 
-### ڕێکخستنی یەکگرتوو
+### ڕێکخستنی یەکگرتوو {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### دۆزینەوەی دابینکەر
+### دۆزینەوەی دابینکەر {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### ستراتیژی جێگرەوە
+### ستراتیژی جێگرەوە {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## باشترکردنی تێچوو
+## باشترکردنی تێچوو {#cost-optimization}
 
-### ژماردنی پاشەکەوت
+### ژماردنی پاشەکەوت {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### ئامۆژگارییەکانی باشترکردن
+### ئامۆژگارییەکانی باشترکردن {#optimization-tips}
 
 - **پرۆمپتە گەورەکانی سیستەم Cache بکە**: گەورەترین پاشەکەوتی تێچوو
 - **کۆنتێکست دووبارە بەکاربهێنەوە**: بەڵگەنامە کۆنتێکستە زۆر بەکارهێنراوەکان Cache بکە
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **چاودێری کاریگەری Cache بکە**: پاشەکەوتە ڕاستەقینەکان بەدواداچوون بکە
 - **TTL ڕێکبخە**: هاوسەنگی بکە لە نێوان تێچوو و تازەیی
 
-## چارەسەرکردنی کێشەکان
+## چارەسەرکردنی کێشەکان {#troubleshooting}
 
-### Cache بەکارناهێنرێت
+### Cache بەکارناهێنرێت {#cache-not-being-used}
 
 - پشتڕاستی بکەرەوە کە caching لە ڕێکخستنەکاندا چالاککراوە
 - پشکنین بکە کە پرۆمپتەکان وەک یەکن (caching هاوتایی تەواو دەوێت)
 - پشتڕاستی بکەرەوە کە cache بەسەرنەچووە
 - سنوورە تایبەتەکانی cacheـی دابینکەر بپشکنە
 
-### دروستکردنی Cache سەرکەوتوو نابێت
+### دروستکردنی Cache سەرکەوتوو نابێت {#cache-creation-failing}
 
 - پشتڕاستی بکەرەوە کە قەبارەی cache لە ناو سنوورەکانی دابینکەردایە
 - پشکنین بکە کە سینتاکسی کۆنترۆڵی cache ڕاستە
 - دڵنیابە کە دابینکەر پشتگیری caching بۆ مۆدێلەکەت دەکات
 - بەڵگەنامەکانی دابینکەر بۆ سنووردارکردنەکان پێداچوونەوە بکە
 
-### تێچووی چاوەڕواننەکراو
+### تێچووی چاوەڕواننەکراو {#unexpected-costs}
 
 - چاودێری tokenـەکانی دروستکردنی cache بەرامبەر خوێندنەوەی cache بکە
 - پشتڕاستی بکەرەوە کە cache بەڕاستی بەکاردەهێنرێت
 - پشکنین بکە بۆ cache miss بەهۆی جیاوازیی پرۆمپتەکان
 - بیر لە ڕێکخستنی TTL یان ستراتیژی cache بکەرەوە
 
-## بەراوردی دابینکەر
+## بەراوردی دابینکەر {#provider-comparison}
 
 | تایبەتمەندی | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | کەمکردنەوەی تێچوو | 90% | 90% | پەیوەست بە دابینکەر | 90% |
 | چاودێری | ورد | لە ڕێگەی metrics | پەیوەست بە دابینکەر | لە ڕێگەی usage |
 
-## هەنگاوەکانی دواتر
+## هەنگاوەکانی دواتر {#next-steps}
 
 1. **دابینکەرەکەت هەڵبژێرە**: لەسەر بنەمای پێویستییەکانت هەڵبژێرە
 2. **caching ڕێکبخە**: cachingـی تایبەت بە دابینکەر دابنێ

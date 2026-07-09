@@ -3,7 +3,7 @@ title: Auto Search and Replace na Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2)
+# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Tutorial này yêu cầu WP UItimo phiên bản 2.x.**_
 
@@ -17,7 +17,7 @@ Khách hàng của bạn sau đó sẽ có thể điền vào trường đó tro
 
 Ultimate Multisite sẽ tự động thay thế các chỗ giữ chỗ bằng dữ liệu do khách hàng cung cấp.
 
-## **Giải quyết vấn đề "template đầy chỗ giữ chỗ"**
+## **Giải quyết vấn đề "template đầy chỗ giữ chỗ"** {#solving-the-template-full-of-placeholders-problem}
 
 Tất cả những điều trên đều tuyệt vời, nhưng chúng ta gặp một vấn đề khó chịu: bây giờ các template trang web của chúng ta - mà khách hàng có thể truy cập được - lại đầy rẫy các chỗ giữ chỗ xấu xí không nói lên nhiều điều.
 

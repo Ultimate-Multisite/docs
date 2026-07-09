@@ -4,19 +4,19 @@ title: Nzacha - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Nzacha: secure_auth_redirect
+# Nzacha: secure_auth_redirect {#filter-secureauthredirect}
 
 Na-enyocha ma a ga-eji redirect nkwenye njirimara echekwara.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
 | $secure | `bool` | Ma a ga-eji redirect nkwenye njirimara echekwara. Ndabara bụ false. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 3.1.0
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L190) n’ahịrị 190

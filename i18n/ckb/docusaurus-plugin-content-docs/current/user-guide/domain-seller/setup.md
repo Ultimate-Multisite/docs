@@ -3,21 +3,21 @@ title: راستکردن و پێکهێنانی پڕۆڤایدرەکان
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# فروشنده دامنه: راه‌اندازی و پیکربندی ارائه‌دهنده
+# فروشنده دامنه: راه‌اندازی و پیکربندی ارائه‌دهنده {#domain-seller-setup-and-provider-configuration}
 
 افزونه Domain Seller با یک راهنمای تنظیمات هدایت‌کننده عرضه می‌شود که شما را از تمام مراحل مورد نیاز عبور می‌دهد. این صفحه در مورد جریان این wizard و نحوه پیکربندی یا پیکربندی مجدد ارائه‌دهندگان بعد از آن توضیح می‌دهد.
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 
 - **Multisite Ultimate** نسخه v2.4.12 یا بالاتر، فعال شده در شبکه
 - **PHP** 7.4+
 - اعتبارنامه‌های API برای حداقل یک رجیستر پشتیبانی شده
 
-## wizard راه‌اندازی اولیه
+## wizard راه‌اندازی اولیه {#first-run-setup-wizard}
 
 این wizard به محض اولین بار که افزونه را فعال می‌کنید، به صورت خودکار اجرا می‌شود. همچنین می‌توانید هر زمان از مسیر **Network Admin › Ultimate Multisite › Domain Seller Setup** آن را پیدا کنید.
 
-### مرحله ۱ — انتخاب ارائه‌دهنده
+### مرحله ۱ — انتخاب ارائه‌دهنده {#step-1--choose-a-provider}
 
 رجیستری را که می‌خواهید متصل کنید، انتخاب کنید. گزینه‌های پشتیبانی شده:
 
@@ -33,7 +33,7 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 | NameSilo | خیر | خیر |
 | Enom | بله | خیر |
 
-### مرحله ۲ — وارد کردن اعتبارنامه‌ها
+### مرحله ۲ — وارد کردن اعتبارنامه‌ها {#step-2--enter-credentials}
 
 هر ارائه‌دهنده فیلدهای اعتبارنامه متفاوتی دارد:
 
@@ -57,17 +57,17 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 
 Ji bo tespîtarina li **Sandbox mode** ku hewce ye, ji bo tespîtkarin a karşıya mîmarê pênivîsî (provider's test environment) pêştekirin.
 
-### Qeybesê 3 — Pêşveçkirina porsê
+### Qeybesê 3 — Pêşveçkirina porsê {#step-3--test-the-connection}
 
 Li **Test Connection** klik bikin. Wizard yek carê API call ji bo taybetbûna credentials û hatîna berxwedan (connectivity) dike. Piriyên hatine hatin dîtin pirskirînên credentials ji bo davamkirin.
 
-### Qeybesê 4 — Import kirina TLDs
+### Qeybesê 4 — Import kirina TLDs {#step-4--import-tlds}
 
 Li **Import TLDs** klik bikin ku hemû TLDs û biroborinên piyasî (wholesale pricing) ji pênivîsî ya hatine hatin vebêjin, çêrîya domên yên karê. Ev import dikare 30–60 sekûnd dike ji bo pênivîsî yên ku kataloga TLDs mezin in.
 
 TLDs hemû caran bi taybetbûna rojêyek ji bergotina cron job (scheduled cron job) hatin resync kirin.
 
-### Qeybesê 5 — Çêkirina yekûna domên (domain product)
+### Qeybesê 5 — Çêkirina yekûna domên (domain product) {#step-5--create-a-domain-product}
 
 Wizard yekûna domênyek pêştekî (default catch-all domain product) bi 10% markup dike. Tu dikarin ev yekûn hatine vîgirtin an jî ji bo taybetbûna manavî (manually) li bajarê **Ultimate Multisite › Products** çêkirin.
 
@@ -75,7 +75,7 @@ Ji bo rêgeha gelek konfigurasyon a yekûna karê, [Domain Products and Pricing]
 
 ---
 
-## Pêştekirina pênivîsî (Reconfiguring a provider)
+## Pêştekirina pênivîsî (Reconfiguring a provider) {#reconfiguring-a-provider}
 
 Ji **Network Admin › Ultimate Multisite › Settings › Domain Seller** bi rêwîtiye (veya li paneli plugin ji bo Settings klik bikin).
 
@@ -88,17 +88,17 @@ Pajeya settings ser digire:
 - **Manage domain products** — a quick link that takes you to the Products list.
 - **Configure providers** — opens the Integration Wizard so you can add or change your providers.
 
-### Adding a second provider
+### Adding a second provider {#adding-a-second-provider}
 
 Click on **Configure providers** and run the wizard again for the new registrar. You can have several providers set up at the same time. Assign each domain product to a specific provider, or just leave it on the default setting.
 
-### Syncing TLDs manually
+### Syncing TLDs manually {#syncing-tlds-manually}
 
 On the settings page, click **Sync TLDs** next to any configured provider to get the latest pricing. This is helpful after a provider updates wholesale prices or adds new TLDs.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Each provider writes its own log channel. You can view these logs under **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Each provider writes its own log channel. You can view these logs under **Networ
 
 ---
 
-## تێبینیی تواناکانی پڕۆڤایدر (Provider capability notes)
+## تێبینیی تواناکانی پڕۆڤایدر (Provider capability notes) {#provider-capability-notes}
 
 نەخستن هەموو APIی تۆمارگرنی یەک کارکردن و ئامراز دەدات. ئەپڵۆگەکە ئەو کارانەی کە پشتگیران نییە بە هەڵەکانی بەڕێوەبەری دیار دەکات، لەبری ئەوەی بە خەفەکی بێت بەسلاح ڕەتکارد.
 

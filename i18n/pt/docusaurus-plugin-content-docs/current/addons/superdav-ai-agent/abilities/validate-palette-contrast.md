@@ -3,15 +3,15 @@ title: Validar contraste da paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validar Contraste da Paleta
+# Validar Contraste da Paleta {#validate-palette-contrast}
 
 A capacidade **Validate Palette Contrast** verifica pares de cores na sua paleta de design quanto à conformidade com WCAG (Web Content Accessibility Guidelines) antes de os aplicar ao seu tema.
 
-## Visão geral
+## Visão geral {#overview}
 
 Esta capacidade garante que o esquema de cores do seu site cumpre as normas de acessibilidade ao validar as proporções de contraste entre texto e cores de fundo. Ajuda a prevenir combinações de cores que possam ser difíceis de ler para utilizadores com deficiências visuais.
 
-## Formato de entrada
+## Formato de entrada {#input-format}
 
 A capacidade aceita uma paleta de cores como entrada:
 
@@ -35,7 +35,7 @@ A capacidade aceita uma paleta de cores como entrada:
 }
 ```
 
-### Parâmetros
+### Parâmetros {#parameters}
 
 | Parâmetro | Tipo | Obrigatório | Descrição |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ A capacidade aceita uma paleta de cores como entrada:
 | `wcag_level` | string | Não | Nível de conformidade WCAG: "A", "AA" (predefinição), ou "AAA" |
 | `pairs_to_check` | array | Não | Pares de cores específicos a validar (por exemplo, `["primary-text", "background-text"]`) |
 
-## Níveis WCAG verificados
+## Níveis WCAG verificados {#wcag-levels-checked}
 
 A capacidade valida as proporções de contraste de acordo com as normas WCAG:
 
@@ -56,7 +56,7 @@ A capacidade valida as proporções de contraste de acordo com as normas WCAG:
 - **Texto normal** — texto menor que 18pt (ou 14pt em negrito)
 - **Texto grande** — texto de 18pt ou maior (ou 14pt em negrito ou maior)
 
-## Esquema de saída
+## Esquema de saída {#output-schema}
 
 A capacidade devolve um relatório de validação detalhado:
 
@@ -95,7 +95,7 @@ A capacidade devolve um relatório de validação detalhado:
 }
 ```
 
-### Campos de saída
+### Campos de saída {#output-fields}
 
 | Campo | Tipo | Descrição |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ A capacidade devolve um relatório de validação detalhado:
 | `status` | string | "pass" ou "fail" para cada par |
 | `recommendations` | array | Sugestões para melhorar pares que falham |
 
-## Exemplo de utilização
+## Exemplo de utilização {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ A capacidade valida todas as combinações de cores e devolve:
 - ✅ Fundo + Texto: proporção de 12.1:1 (passa WCAG AAA)
 - Geral: Em conformidade com WCAG AA
 
-## Integração com Theme Builder
+## Integração com Theme Builder {#integration-with-theme-builder}
 
 Ao usar a seleção de direção de design do Theme Builder, a capacidade Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Ao usar a seleção de direção de design do Theme Builder, a capacidade Valida
 4. Fornece recomendações para pares não conformes
 5. Impede a aplicação de esquemas de cores inacessíveis
 
-## Boas práticas
+## Boas práticas {#best-practices}
 
 - **Comece pelo nível AA** — WCAG AA é a norma para a maioria dos sites
 - **Teste antes de aplicar** — valide a sua paleta antes de se comprometer com um design
@@ -137,7 +137,7 @@ Ao usar a seleção de direção de design do Theme Builder, a capacidade Valida
 - **Considere as preferências dos utilizadores** — alguns utilizadores podem ter sensibilidade adicional à cor
 - **Use verificadores de contraste** — combine esta capacidade com ferramentas do navegador para verificação
 
-## Pares que falham e recomendações
+## Pares que falham e recomendações {#failing-pairs-and-recommendations}
 
 Se um par de cores falhar a validação, a capacidade fornece recomendações:
 
@@ -155,7 +155,7 @@ Se um par de cores falhar a validação, a capacidade fornece recomendações:
 }
 ```
 
-## Capacidades relacionadas
+## Capacidades relacionadas {#related-abilities}
 
 - [Gerar Logo SVG](./generate-logo-svg.md) — crie logótipos com a sua paleta de cores validada
 - [Criar Menu](./create-menu.md) — construa navegação com cores acessíveis

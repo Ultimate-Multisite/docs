@@ -3,13 +3,13 @@ title: Pridėti įrinktą priežiūrą
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kaip pritaikyti savo projektą su Codeable?
+# Kaip pritaikyti savo projektą su Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Kai kurtai mums reikalinga puiki individualizavimas, kad mūsų tinklo srautai būtų tikėtiai taip, kaip mes norime. Jei tai yra tas, kas jums reikia, mes siunčiame [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), vietą, kur galite rasti patirties turiančius programavimus specialistus su Ultimate Multisite patirtimi.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) yra platforma, diegti klientus su kvalifikuoti WordPress freelancerius, kurie gali dirbti projektų bet kokio dydžio. Jie turi atsargų pateikimo procesą, kad užtikrintų, kad būsite su specialistais, tiesiogiai kvalifikuoti jūsų planuotam užduobiui.
 
-### Kaip nustatyti projektą Codeable?
+### Kaip nustatyti projektą Codeable? {#how-to-create-a-project-in-codeable}
 
 Pirmiausia, eikite į [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ir paspauskite mygtuką **Start a Project** (Pradėti projektą).
 

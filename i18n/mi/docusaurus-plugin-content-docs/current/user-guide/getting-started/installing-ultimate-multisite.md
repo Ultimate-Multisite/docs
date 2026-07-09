@@ -3,13 +3,13 @@ title: Te whakauru Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Te Whakaurunga o te Ultimate Multisite
+# Te Whakaurunga o te Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Ka whakaarohia e tēnei akoranga kua whakaurua, kua whakaritea rānei e koe te WordPress Multisite. Hei ako mō tēnei, tirohia [tēnei akoranga](https://www.wpbeginner.com/glossary/multisite/) a WP Beginner.
 :::
 
-## Te Whakaurunga o te Pūnaha Tautoko
+## Te Whakaurunga o te Pūnaha Tautoko {#installing-the-plugin}
 
 Kei te wātea te Ultimate Multisite mō te kore utu ki [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ I muri i te whakahohe, ka hurihia koe aunoatia ki te Setup Wizard.
 
 ![Kua whakahohea te pūnaha tautoko, kua hurihia ki te wizard](/img/installation/plugin-activated.png)
 
-## Te Setup Wizard
+## Te Setup Wizard {#setup-wizard}
 
 Ka ārahi ake te Setup Wizard i a koe mā te whakarite i te Ultimate Multisite i roto i ngā meneti 10.
 
-### Nau mai
+### Nau mai {#welcome}
 
 Pāwhiri **Get Started** hei tīmata.
 
 ![Te mata nau mai o te Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Ngā Patu Tirohanga Muri-mua
+### Ngā Patu Tirohanga Muri-mua {#pre-install-checks}
 
 Ka tirohia e tēnei hīkoi i ngā mōhiohio pūnaha me te whakaurunga WordPress kia mōhio ai he hāngai ki ngā here o te Ultimate Multisite. Ki te pai katoa, pāwhiri **Go to the Next Step**.
 
@@ -51,31 +51,31 @@ Ki te kore anō kia whakahohea a Ultimate Multisite puta noa i te rārangi — h
 Mā te pāwhiri ki te **Network Activate** ka whakahohea aunoatia te pūnaha tautoko puta noa i tō rārangi multisite katoa. I muri i te whakahohe, ka haere tonu te wizard ki te hīkoi whakaurunga. Kāore he mea e hiahiatia ana kia waiho e koe te wizard hei whakatika i te āhua whakahohe.
 :::
 
-### Te Whakaurunga
+### Te Whakaurunga {#installation}
 
 Ka hangaia e te kaiwhakauru ngā ripanga raraunga e hiahiatia ana, ka whakaurua rānei te kōnae `sunrise.php` e hiahiatia ana e te Ultimate Multisite kia mahi pai. Pāwhiri **Install** hei haere tonu.
 
 ![Te hīkoi whakaurunga e whakaatu ana i ngā ripanga raraunga me te sunrise.php](/img/installation/wizard-installation.png)
 
-### Tō Kamupene
+### Tō Kamupene {#your-company}
 
 Whakakiia ngā mōhiohio kamupene, whakaritea rānei tō moni taketake. Ka whakamahia ēnei mōhiohio puta noa i tō papa WaaS. Pāwhiri **Continue** ina oti.
 
 ![Te hīkoi whakaritenga Tō Kamupene](/img/installation/wizard-your-company.png)
 
-### Ngā Taipitopito Taketake
+### Ngā Taipitopito Taketake {#default-content}
 
 Ka taea e tēnei hīkoi te whakauru i ngā tauira, hua, me ētahi atu taipitopito tīmatanga kua whakaritea. He huarahi pai tēnei hei mōhio ki ngā āhuatanga o te Ultimate Multisite. Pāwhiri **Install** hei tāpiri i ngā taipitopito taketake, ka waiho rānei tēnei hīkoi ki te hiahia koe ki te tīmata mai i te kore.
 
 ![Te hīkoi whakaurunga o ngā taipitopito taketake](/img/installation/wizard-default-content.png)
 
-### Ngā Pūnaha Tautoko I Whakaarohia
+### Ngā Pūnaha Tautoko I Whakaarohia {#recommended-plugins}
 
 Tōna whakauru i ngā pūnaha tautoko kua whakaarohia hei hoa. Pāwhiri **Install** hei tāpiri, ka waiho rānei hei haere tonu.
 
 ![Te hīkoi o ngā pūnaha tautoko i whakaarohia](/img/installation/wizard-recommended-plugins.png)
 
-### Kua Rite!
+### Kua Rite! {#ready}
 
 Kua oti! Kua kapi tō whakaurunga Ultimate Multisite. Ka taea e koe ināianei te tīmata i te hanga i tō papa Website as a Service mai i te **Network Admin Dashboard**.
 

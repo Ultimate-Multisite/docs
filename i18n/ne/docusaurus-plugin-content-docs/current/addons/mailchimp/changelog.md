@@ -3,7 +3,7 @@ title: Mailchimp परिवर्तन विवरण
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp परिवर्तन अभिलेख
+# Mailchimp परिवर्तन अभिलेख {#mailchimp-changelog}
 
 संस्करण: 1.1.1 - 2025-09-28 मा जारी गरियो
 

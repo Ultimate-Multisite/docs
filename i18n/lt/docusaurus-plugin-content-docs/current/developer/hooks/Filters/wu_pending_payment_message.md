@@ -4,11 +4,11 @@ title: Filtras - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filtras: wu_pending_payment_message
+# Filtras: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Leidžia vartotojui pakeisti pranešimą apie laukiančius mokėjimus.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Leidžia vartotojui pakeisti pranešimą apie laukiančius mokėjimus.
 | $customer | `\WP_Ultimo\Models\Customer` | Dabartinis klientas. |
 | $pending_payments | `array` | Sąrašas su laukiančiais mokėjimais. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.19
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) 244 eilutėje

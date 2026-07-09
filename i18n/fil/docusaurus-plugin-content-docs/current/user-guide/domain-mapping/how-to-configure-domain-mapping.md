@@ -3,17 +3,17 @@ title: Paano I-configure ang Domain Mapping
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Paano I-configure ang Pagmamapa ng Domain (v2)
+# Paano I-configure ang Pagmamapa ng Domain (v2) {#how-to-configure-domain-mapping-v2}
 
 _**MAHALAGANG TALA: Tinutukoy ng artikulong ito ang Ultimate Multisite bersyon 2.x.**_
 
 Isa sa pinakamakapangyarihang tampok ng isang premium na network ay ang kakayahang mag-alok sa ating mga kliyente ng pagkakataong mag-attach ng top-level domain sa kanilang mga sityo. Pagkatapos ng lahat, alin ang mas mukhang propesyonal: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) o [_**joesbikeshop.com**_](http://joesbikeshop.com)? Kaya iniaalok ng Ultimate Multisite ang tampok na iyon na built-in, nang hindi kailangang gumamit ng mga pandagdag mula sa third party.
 
-## Ano ang pagmamapa ng domain?
+## Ano ang pagmamapa ng domain? {#whats-domain-mapping}
 
 Gaya ng ipinahihiwatig ng pangalan, ang pagmamapa ng domain ay ang kakayahang iniaalok ng Ultimate Multisite na tumanggap ng kahilingan para sa isang custom na domain at imapa ang kahilingang iyon sa kaukulang sityo sa network na may naka-attach na partikular na domain na iyon.
 
-### Paano i-setup ang pagmamapa ng domain sa iyong Ultimate Multisite Network
+### Paano i-setup ang pagmamapa ng domain sa iyong Ultimate Multisite Network {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Nangangailangan ng ilang pagse-setup mula sa iyo ang pagmamapa ng domain para gumana. Mabuti na lang, ino-automate ng Ultimate Multisite ang mahirap na gawain para madali mong matugunan ang mga kinakailangan.
 
@@ -45,7 +45,7 @@ Ngunit bago mo simulang imapa ang custom na domain sa isa sa mga subsityo sa iyo
 
 ###
 
-### Pagtiyak na maayos na naka-configure ang mga setting ng DNS ng domain
+### Pagtiyak na maayos na naka-configure ang mga setting ng DNS ng domain {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Para gumana ang pagmamapa, kailangan mong tiyaking nakaturo ang domain na plano mong imapa sa IP address ng iyong Network. Tandaan na kailangan mo ang IP address ng Network - ang IP address ng domain kung saan naka-install ang Ultimate Multisite - hindi ang IP address ng custom na domain na gusto mong imapa. Para hanapin ang IP address ng isang partikular na domain, iminumungkahi naming pumunta sa [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), halimbawa.
 
@@ -55,7 +55,7 @@ Kung nahihirapan kang paandarin ito, **makipag-ugnayan sa support ng iyong domai
 
 Kung plano mong payagan ang iyong mga kliyente na imapa ang sarili nilang mga domain, sila mismo ang kailangang gumawa ng trabaho sa bahaging ito. Ituro sila sa support system ng kanilang registrar kung hindi nila magawang lumikha ng A Record.
 
-### Pagmamapa ng custom na domain name bilang Super Admin
+### Pagmamapa ng custom na domain name bilang Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Kapag naka-log in ka bilang super admin sa iyong network, madali kang makakapagdagdag at makakapamahala ng mga custom na domain name sa pamamagitan ng pagpunta sa ilalim ng **Ultimate Multisite > Mga Domain**.
 
@@ -93,7 +93,7 @@ Kung iki-click mo ang pangalan ng domain, makikita mo ang ilang opsyon sa loob n
 
 **Secure ba?:** Kahit sinusuri ng Ultimate Multisite kung may SSL certificate ang domain o wala bago ito i-enable, maaari mong manu-manong piliing i-load ang domain nang may SSL certificate o wala. Tandaan na kung walang SSL certificate ang website at susubukan mong piliting i-load ito gamit ang SSL, maaari itong magbigay sa iyo ng mga error.
 
-### Pagmamapa ng custom na pangalan ng domain bilang user ng subsite
+### Pagmamapa ng custom na pangalan ng domain bilang user ng subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Maaari ring mag-map ang mga administrator ng subsite ng mga custom na pangalan ng domain mula sa kanilang subsite admin dashboard.
 
@@ -121,7 +121,7 @@ Pagkatapos ay maaaring i-click ng user ang **Susunod na Hakbang** at magpatuloy 
 
 Ang pag-click sa **Magdagdag ng Domain** ay magsisimula sa proseso ng pag-verify at pagkuha ng impormasyon ng DNS ng custom na domain.
 
-### Tungkol sa Pag-sync ng Domain
+### Tungkol sa Pag-sync ng Domain {#about-domain-syncing}
 
 Ang Pag-sync ng Domain ay isang proseso kung saan idinaragdag ng Ultimate Multisite ang custom na pangalan ng domain sa iyong hosting account bilang add-on domain **upang gumana ang pagmamapa ng domain**.
 

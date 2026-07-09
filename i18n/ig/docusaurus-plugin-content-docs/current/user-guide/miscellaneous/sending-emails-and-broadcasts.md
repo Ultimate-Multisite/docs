@@ -3,13 +3,13 @@ title: Izipụ ozi-e na mgbasa ozi
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Izipụ Ozi-e na Mgbasa ozi (v2)
+# Izipụ Ozi-e na Mgbasa ozi (v2) {#sending-emails-and-broadcasts-v2}
 
 _**IHE NDỊ DỊ MKPA: Edemede a na-ekwu maka Ultimate Multisite ụdị 2.x.**_
 
 Ultimate Multisite na-abịa na njirimara ga-enye gị ohere ikwurịta okwu na ndị ahịa gị site n'iziga ozi-e nye onye ọrụ e lekwasịrị anya ma ọ bụ otu ndị ọrụ, yana iziga ọkwa na Dashboard nchịkwa ha iji gbasaa ọkwa
 
-## Tinye ọkwa nchịkwa na Dashboard ndị ahịa gị site na Mgbasa ozi
+## Tinye ọkwa nchịkwa na Dashboard ndị ahịa gị site na Mgbasa ozi {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Site n'iji njirimara mgbasa ozi Ultimate Multisite, ị nwere ike itinye **ọkwa nchịkwa** na Dashboard nchịkwa subsite nke onye ọrụ gị.
 
@@ -51,7 +51,7 @@ Mgbe ịmepụtara ozi gị, ị nwere ike pịa bọtịnụ **Zipụ**.
 
 Ọ bụkwa nke ahụ. Ọkwa nchịkwa kwesịrị igosi ozugbo na Dashboard onye ọrụ gị.
 
-## Zigara ndị ahịa gị ozi-e
+## Zigara ndị ahịa gị ozi-e {#send-emails-to-your-customers}
 
 Site n'iji njirimara mgbasa ozi Ultimate Multisite, ị nwere ike izigara ndị ọrụ gị ozi-e. Ị nwere nhọrọ iziga ozi-e naanị nye ndị ọrụ ụfọdụ ma ọ bụ lekwasị anya n'otu otu ndị ọrụ dabere na ngwaahịa ma ọ bụ atụmatụ ha debanyere aha n'okpuru ya.
 
@@ -81,11 +81,11 @@ Mgbe ịmepụtara ozi gị, ị nwere ike pịa bọtịnụ **Zipụ**.
 
 Ọ bụkwa otú ọ dị mfe izigara ndị ọrụ ikpeazụ gị ozi-e site n'iji njirimara mgbasa ozi.
 
-## Ozi-e sistemụ
+## Ozi-e sistemụ {#system-emails}
 
 Ozi-e sistemụ na Ultimate Multisite bụ **ọkwa akpaka** ndị sistemụ na-eziga mgbe emechara ụfọdụ omume dịka ndebanye aha, ịkwụ ụgwọ, ijikọ domain, wdg. Enwere ike idezi ma ọ bụ gbanwee ozi-e ndị a site na ntọala Ultimate Multisite. Ọ na-abịakwa na njirimara ga-enye gị ohere ịtọgharịa na ibubata ntọala dị ugbu a site na nrụnye Ultimate Multisite ọzọ.
 
-### Ịtọgharịa & Ibubata
+### Ịtọgharịa & Ibubata {#resetting--importing}
 
 Ụdị Ultimate Multisite ọhụrụ, yana add-ons, nwere ike ma ga-edebanye ozi-e ọhụrụ site n'oge ruo n'oge.
 
@@ -93,7 +93,7 @@ Iji gbochie esemokwu na nsogbu ndị ọzọ, **anyị agaghị etinye templates
 
 Agbanyeghị, super admins na agents nwere ike ibubata ozi-e ndị a edebanyere ọhụrụ site na ngwá ọrụ mbubata. Usoro ahụ ga-emepụta ozi-e sistemụ ọhụrụ nwere ọdịnaya na nhazi nke template ozi-e ọhụrụ ahụ, na-enye super admin ohere ime mgbanwe ọ bụla ha chọrọ ma ọ bụ hapụ ha dịka ha dị.
 
-#### Otu esi ebubata ozi-e sistemụ
+#### Otu esi ebubata ozi-e sistemụ {#how-to-import-system-emails}
 
 Gaa na peeji Ntọala Ultimate Multisite gị ma gaa na taabụ **Ozi-e**.
 
@@ -111,7 +111,7 @@ Mgbe ahụ, ị nwere ike ịgbanwuo nhọrọ Bubata Ozi-e iji hụ ozi-e siste
 
 <!-- Nseta ihuenyo adịghị: modal Tọgharịa na Bubata nwere nhọrọ Bubata Ozi-e agbasawanyere -->
 
-#### Ịtọgharị Ozi-e Sistemụ
+#### Ịtọgharị Ozi-e Sistemụ {#reseting-system-emails}
 
 N'oge ndị ọzọ, ị ga-achọpụta na mgbanwe ndị i mere na ndebiri ozi-e enyere anaghịzị arụ ọrụ maka gị, ma ịchọrọ ịtọgharịa ya n'**ọnọdụ ndabara** ya.
 

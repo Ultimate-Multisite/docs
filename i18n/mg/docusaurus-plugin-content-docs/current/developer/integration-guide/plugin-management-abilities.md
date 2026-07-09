@@ -3,11 +3,11 @@ title: Fahaiza-mitantana plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Fahaiza-mitantana fanitarana
+# Fahaiza-mitantana fanitarana {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 dia miaraka amin'ny **fahaiza-mitantana fanitarana 7** izay azon'ny mpanampy AI antsoina mandritra ny resaka. Ireo fahaiza-manao ireo dia manome fanaraha-maso ara-programa amin'ireo fanitarana WordPress napetraka amin'ny alalan'ny [Mpanamboatra Fanitarana sy Rafitra Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Topimaso momba ny fahaiza-manao
+## Topimaso momba ny fahaiza-manao {#abilities-overview}
 
 | Fahaiza-manao | Slug | Famaritana |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 dia miaraka amin'ny **fahaiza-mitantana fanitarana 7** iz
 | Apetraho ny fanitarana | `install_plugin` | Mandefa fanitarana sandboxed mankany amin'ny lahatahiry fanitarana WordPress mivantana. |
 | Alefaso ny fanitarana | `activate_plugin` | Mampandeha fanitarana sandboxed ao amin'ny tontolo sandbox wp-env. |
 
-## API Mpametraka Fanitarana
+## API Mpametraka Fanitarana {#plugin-installer-api}
 
 Ny mpametraka fanitarana dia mikarakara ny asa amin'ny rafitra rakitra rehefa mandefa na manala fanitarana. Fitondran-tena fototra:
 
@@ -28,7 +28,7 @@ Ny mpametraka fanitarana dia mikarakara ny asa amin'ny rafitra rakitra rehefa ma
 - **Fanavaozana**: Manolo ireo rakitra fanitarana efa misy. Atsahatra aloha ny fanitarana alohan'ny hanoratana mba hisorohana hadisoana amin'ny toe-javatra ampahany.
 - **Famafana amin'ny slug**: Mitady ny lahatahiry fanitarana amin'ny alalan'ny slug, mampiato azy manerana ny site rehetra, avy eo manala ilay lahatahiry.
 
-### Fisoratana Handler Fametrahana Manokana
+### Fisoratana Handler Fametrahana Manokana {#registering-a-custom-install-handler}
 
 Afaka miditra amin'ny lifecycle fametrahana ianao amin'ny alalan'ny actions `gratis_ai_plugin_installer_before_install` sy `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Rejisitry ny Ekosistema
+## Rejisitry ny Ekosistema {#ecosystem-registry}
 
 Ny fahaiza-manao dia soratana amin'ny alalan'ny **rejisitry ny ekosisteman'ny fanitarana**. Ny rejisitra dia mampifandray ny slug an'ny fahaiza-manao amin'ny kilasy handler-ny ary mampiseho azy ireo amin'ny mpandefa fitaovan'ny agent AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Fampidirana HookScanner
+## Fampidirana HookScanner {#hookscanner-integration}
 
 Ny fahaiza-manao `create_plugin` sy `update_plugin` dia mampandeha ho azy ny **HookScanner** amin'ny kaody vao novokarina. HookScanner dia mamerina lisitry ny hook action sy filter WordPress nosoratan'ny fanitarana.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner dia mandingana ho azy ireo lahatahiry `vendor/` sy `node_modules/`.
 
-## Maritranon'ny Asa Async
+## Maritranon'ny Asa Async {#async-job-architecture}
 
 Ny asa fanitarana maharitra ela (mamorona, mametraka) dia alefa ho **asa async** miaraka amin'ny fanarahana fandrosoana mivantana. Ny interface chat AI dia manao poll ny fandrosoana ary mandefa fanavaozam-pisatahana amin'ny mpampiasa:
 

@@ -3,13 +3,13 @@ title: Diarin'ny fanovana amin'ny Tikety fanohanana
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Tantaran'ny fanovana Support Tickets
+# Tantaran'ny fanovana Support Tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Nohatsaraina: Nesorina tamin'ny fanarahan'ny Git ny lahatahiry vendor/ (efa voarakotry ny .gitignore), ka nampihena ny haben'ny repository
 * Nohatsaraina: Notsapaina hatramin'ny WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Fanamboarana: Manaiky sanda null ao amin'ireo nullable ticket model setters
 * Fanamboarana: Tehirizo ao amin'ny tabilao global manerana ny tambajotra ny ticket rehetra ho an'ny fanohanana multisite mety
 * Fanamboarana: Afeno ny staff fields ary amboary ny redirect pejy banga amin'ny customer new-ticket form
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Nohatsaraina: Ampidiro araka ny fepetra ny frontend assets raha amin'ny pejin'ny support ticket ihany
 * Nohatsaraina: Dingano ny plugin autoloader rehefa efa nampiditra dependencies ny autoloader an'ny Bedrock root
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Nampiana: Fiasa feno hijerena ticket ho an'ny admin sy frontend
 * Nampiana: AJAX handler ho an'ny fandefasana reply amin'ny ticket
 * Nampiana: Fanohanana ny fiasa reply amin'ny ticket miaraka amin'ny fitantanana form mety
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Nohatsaraina: Firafitry ny database miaraka amin'ny query sy schema classes mety ho an'ny responses sy attachments
 * Nohatsaraina: Fifindrana amin'ny properties tena izy fa tsy attributes ho an'ny ticket models
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Nohavaozina: Novana anarana ho ultimate-multisite ny prefix mba hifanaraka
 * Nohavaozina: Fanamafisana fenitra text domain
 * Namboarina: Fanamboarana bug madinika sy fanatsarana
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Famoahana voalohany
 * Rafitra fitantanana ticket feno
 * Fanaraha-maso fidirana ambaratonga maro

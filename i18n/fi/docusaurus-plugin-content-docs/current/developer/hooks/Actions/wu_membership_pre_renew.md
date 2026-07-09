@@ -4,11 +4,11 @@ title: Toiminto - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Action: wu_membership_pre_renew
+# Action: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Käynnistyy ennen membershipin uusimista.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Käynnistyy ennen membershipin uusimista.
 | $membership_id | `int` | Membershipin ID. |
 | $membership | `\Membership` | Membership-objekti. |
 
-### Alkaen
+### Alkaen {#since}
 
 - 2.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) rivillä 2204

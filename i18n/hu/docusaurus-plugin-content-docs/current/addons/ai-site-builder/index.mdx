@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Előfeltételek
+## Előfeltételek {#requirements}
 
 - WordPress 5.3 vagy magasabb
 - PHP 7.4 vagy magasabb
 - Multisite Ultimate plugin (aktiválva)
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltse fel az addon fájljait a `/wp-content/plugins/` könyvtárába
 2. Aktiválja a plugin-t a WordPress 'Plugins' menüpontján keresztül
 3. Konfigurálja az addon beállításait a hálózat adminisztrációjában
 
-## Fejlesztés
+## Fejlesztés {#development}
 
-### Beállítás
+### Beállítás {#setup}
 
 ```bash
 # Telepíti a függőségeket
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektstruktúra
+### Projektstruktúra {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Kódmodernizációs szabályok
 ```
 
-### Tesztelés
+### Tesztelés {#testing}
 
 Az addon egy átfogó tesztelő keretet tartalmaz:
 
@@ -79,44 +79,44 @@ Az addon egy átfogó tesztelő keretet tartalmaz:
 - **Tesztfedettség (Test Coverage)**: Konfigurálva a kódfedettség nyomon követésére
 - **Multisite Tesztelés**: A tesztek multisite környezetben futnak
 
-### Kódstandardok
+### Kódstandardok {#code-standards}
 
 - **WordPress Kódstandardok**: PHPCS segítségével biztosított
 - **PHP 7.4+ Kompatibilitás**: Támogatott modern PHP funkciók
 - **Statisztikus Elemzés (Static Analysis)**: PHPStan integráció típusellenőrzéshez
 - **Kódmodernizáció**: Rector szabályok PHP frissítéshez
 
-### Összerelési Rendszer (Build System)
+### Összerelési Rendszer (Build System) {#build-system}
 
 - **Asset Kezelés**: Minifikáció a CSS/JS fájlokhoz
 - **Fordítás**: POT fájl generálás
 - **Csomagolás**: Archív létrehozása a kiosztáshoz
 - **Fejlesztési Mód**: Nem minifikált assetek hibakerőzéshez
 
-## Konfiguráció
+## Konfiguráció {#configuration}
 
 Az addon számos konfigurációs opciót támogat, amelyek a hálózat adminisztrációs felületen érhetők el.
 
-## Hooks és Szűrők
+## Hooks és Szűrők {#hooks-and-filters}
 
-### Akciók (Actions)
+### Akciók (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Elküldődik az addon inicializációja után
 - `ultimate-multisite-ai-site-builder_loaded` - Elküldődik az addon összes fájljának betöltése után
 
-### Szűrők (Filters)
+### Szűrők (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Megváltoztatja az addon beállításait
 - `ultimate-multisite-ai-site-builder_enabled` - Áthullja az addon aktiválás/deaktiválás állapotát
 
-## Licenc
+## Licenc {#license}
 
 Ez az addon a GPL v3 vagy annál újabb licenc alatt áll.
 
-## Támogatás
+## Támogatás {#support}
 
 Támogatás és dokumentációért látogasson el ide: [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Verzió 1.0.1 (2025-09-28): a prefix átnevezése ultimate-multisite-re; szövegdomén átfrissítése; verzió emelése.
 

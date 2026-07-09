@@ -4,23 +4,23 @@ title: Nzacha - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Nzacha: wu_site_exporter_plugin_exclusion_list
+# Nzacha: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
 
 Na-enye ndị mmepe ohere ijikwa ndepụta mgbakwunye a pụrụ iwepụ na zip emepụtara.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
 | $plugin_list | `array` | Mgbakwunye ndị a ga-ewepụ. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 2.0.0
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/class-wp-ultimo-site-exporter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-wp-ultimo-site-exporter.php#L210) n'ahịrị 210
 
 
-## Nloghachi
+## Nloghachi {#returns}
 Ndepụta mgbakwunye ahụ.

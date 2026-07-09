@@ -3,11 +3,11 @@ title: Pagpalambo sa Pasadyang Gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway Development
+# Custom Gateway Development {#custom-gateway-development}
 
 Makahimo ka og custom nga mga payment gateway pinaagi sa pag-extend sa `Base_Gateway` class.
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## I-register ang Gateway
+## I-register ang Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Pangunang mga Method
+## Pangunang mga Method {#key-methods}
 
 | Method | Katuyoan |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Modumala sa mga hangyo sa refund |
 | `get_payment_methods()` | Ibalik ang na-save nga mga payment method para sa usa ka customer |
 
-## Mga credential sa renewal para sa nagbalikbalik nga mga membership
+## Mga credential sa renewal para sa nagbalikbalik nga mga membership {#renewal-credentials-for-recurring-memberships}
 
 Ang Ultimate Multisite v2.13.0 nagtugot sa mga gateway integration nga magreport kon ang usa ka nagbalikbalik nga membership adunay magamit pag-usab nga renewal credential sa dili pa ma-persist ang `auto_renew`. I-hook ang `wu_membership_has_renewal_credential` ug ibalik:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Kuhaa ang missing-credential marker isip bahin sa malampusong re-authorization flow sa imong gateway human matipig ang bag-ong magamit pag-usab nga credential.
 
-## Mga Tip
+## Mga Tip {#tips}
 
 - Kanunay ibalik ang `WP_Error` kung mapakyas aron makadumala ang Ultimate Multisite sa pagpakita sa sayop
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Gamita ang `wu_log_add()` para sa logging nga espesipiko sa gateway
 
-## Mga abilidad sa AI connector provider
+## Mga abilidad sa AI connector provider {#ai-connector-provider-capabilities}
 
 Ang custom nga mga integration nga motawag sa mga operasyon nga gisuportahan sa AI connector kinahanglang motakdo sa gisuportahang OAuth provider set nga gipaila uban sa AI Provider for Anthropic Max v1.3.0:
 

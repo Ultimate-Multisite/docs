@@ -3,13 +3,13 @@ title: E-poçtalary we ýaýlymlary ibermek
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-poçtalary we Broadcastlary ibermek (v2)
+# E-poçtalary we Broadcastlary ibermek (v2) {#sending-emails-and-broadcasts-v2}
 
 _**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 
 Ultimate Multisite, belli bir ulanyja ýa-da ulanyjylar toparyna e-poçta ibermek, şeýle hem bildirişleri ýaýratmak üçin olaryň admin dashboard-ynda habarnamalar ibermek arkaly müşderileriňiz bilen aragatnaşyk saklamaga mümkinçilik berýän aýratynlyk bilen gelýär
 
-## Broadcasts bilen müşderileriňiziň dashboard-yna admin habarnamalary goşuň
+## Broadcasts bilen müşderileriňiziň dashboard-yna admin habarnamalary goşuň {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ultimate Multisite broadcast aýratynlygyny ulanyp, ulanyjyňyzyň subsite admin dashboard-yna **admin habarnamalaryny** goşup bilersiňiz.
 
@@ -51,7 +51,7 @@ Habaryňyzy döredeniňizden soň, **Send** düwmesine basyp bilersiňiz.
 
 Ine, şeýledir. Admin habarnamasy derrew ulanyjyňyzyň dashboard-ynda görünmeli.
 
-## Müşderileriňize e-poçta iberiň
+## Müşderileriňize e-poçta iberiň {#send-emails-to-your-customers}
 
 Ultimate Multisite broadcast aýratynlygyny ulanyp, ulanyjylaryňyza e-poçta iberip bilersiňiz. E-poçtany diňe belli ulanyjylara ibermek ýa-da olaryň abuna bolan önümi ýa-da meýilnamasy esasynda belli ulanyjy toparyny nyşana almak opsiýaňyz bar.
 
@@ -81,11 +81,11 @@ Habaryňyzy döredeniňizden soň, **Send** düwmesine basyp bilersiňiz.
 
 Broadcast aýratynlygyny ulanyp ahyrky ulanyjylaryňyza e-poçta ibermek şeýle aňsatdyr.
 
-## Ulgam e-poçtalary
+## Ulgam e-poçtalary {#system-emails}
 
 Ultimate Multisite-daky ulgam e-poçtalary, hasaba alyş, töleg, domen kartalaşdyrma we ş.m. ýaly belli hereketlerden soň ulgam tarapyndan iberilýän **awtomatik habarnamalardyr**. Bu e-poçtalar Ultimate Multisite sazlamalaryndan redaktirlenip ýa-da üýtgedilip bilner. Ol şeýle hem başga bir Ultimate Multisite gurnamasynyň bar bolan sazlamalaryny täzeden dikeltmäge we import etmäge mümkinçilik berýän aýratynlyk bilen gelýär.
 
-### Täzeden dikeltmek we import etmek
+### Täzeden dikeltmek we import etmek {#resetting--importing}
 
 Täze Ultimate Multisite wersiýalary, şeýle hem goşmaçalar, wagtal-wagtal täze e-poçtalary bellige alyp biler we alar.
 
@@ -93,7 +93,7 @@ Gapma-garşylyklaryň we beýleki meseleleriň öňüni almak üçin, belli bir 
 
 Şeýle-de bolsa, super adminler we agentler bu täze bellige alnan e-poçtalary importer guraly arkaly import edip bilerler. Bu proses täze e-poçta şablonynyň mazmuny we konfigurasiýasy bilen täze ulgam e-poçtasyny döreder we super admin-e islän üýtgetmelerini etmäge ýa-da olary bolşy ýaly saklamaga mümkinçilik berer.
 
-#### Ulgam e-poçtalaryny nädip import etmeli
+#### Ulgam e-poçtalaryny nädip import etmeli {#how-to-import-system-emails}
 
 Ultimate Multisite Settings sahypaňyza gidiň we **Emails** tab-yna geçiň.
 
@@ -111,7 +111,7 @@ Soňra, haýsy ulgam e-poçtalarynyň import edilmäge elýeterlidigini görmek 
 
 <!-- Ekran suraty elýeterli däl: E-poçtalary import etmek opsiýalary giňeldilen Täzeden düzmek we Import modal penjiresi -->
 
-#### Ulgam e-poçtalaryny täzeden düzmek
+#### Ulgam e-poçtalaryny täzeden düzmek {#reseting-system-emails}
 
 Käwagt belli bir e-poçta şablonyna girizen üýtgetmeleriňiziň indi size laýyk gelmeýändigine düşünersiňiz we ony **deslapky ýagdaýyna** täzeden düzmek islärsiňiz.
 

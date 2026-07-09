@@ -4,11 +4,11 @@ title: Filtar - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filtar: wu_domain_has_correct_dns
+# Filtar: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Omogućuje programerima dodataka dodavanje novih provjera radi definiranja rezultata.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Omogućuje programerima dodataka dodavanje novih provjera radi definiranja rezul
 | $domain | `self` | Trenutačna instanca domene. |
 | $domains_and_ips | `array` | Popis domena i IP adresa pronađenih pri DNS pretraživanju. |
 
-### Od
+### Od {#since}
 
 - 2.0.4
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) u retku 455
 
 
-## Povratna vrijednost
+## Povratna vrijednost {#returns}
 Je li DNS ispravno postavljen ili nije.

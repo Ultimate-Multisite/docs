@@ -3,28 +3,28 @@ title: REST API-oversikt
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API-referanse
+# REST API-referanse {#rest-api-reference}
 
-## Grunnkonfigurasjon
+## Grunnkonfigurasjon {#base-configuration}
 
 **Basis-URL:** `{site_url}/wp-json/wu/v2/`
 **Autentisering:** API-nøkkel og hemmelighet (HTTP Basic Auth eller URL-parametere)
 
-## Autentisering
+## Autentisering {#authentication}
 
-### Aktiver API
+### Aktiver API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Hent API-legitimasjon
+### Hent API-legitimasjon {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentiseringsmetoder
+### Autentiseringsmetoder {#authentication-methods}
 
 **HTTP Basic Auth (anbefalt):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kjerneendepunkter
+## Kjerneendepunkter {#core-endpoints}
 
-### 1. Kunde-API
+### 1. Kunde-API {#1-customers-api}
 
 **Basisrute:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Nettsteds-API
+### 2. Nettsteds-API {#2-sites-api}
 
 **Basisrute:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Medlemskaps-API
+### 3. Medlemskaps-API {#3-memberships-api}
 
 **Basisrute:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produkt-API
+### 4. Produkt-API {#4-products-api}
 
 **Basisrute:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Betalings-API
+### 5. Betalings-API {#5-payments-api}
 
 **Basisrute:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domene-API
+### 6. Domene-API {#6-domains-api}
 
 **Basisrute:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registreringsendepunkt
+## Registreringsendepunkt {#registration-endpoint}
 
 Endepunktet `/register` gir en komplett betalings- og registreringsflyt:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endepunkter for suveren leietaker
+## Endepunkter for suveren leietaker {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 legger til REST-dekning for suverene leietakere for integrasjoner som klargjør, inspiserer eller verifiserer isolerte leietakere.
 
@@ -242,7 +242,7 @@ Typiske svar for migreringsstatus inkluderer:
 
 Behandle `ready: false` som en blokkering før lansering. Kontroller verifiseringsdetaljene, fiks databasevertbindingen, køen, brukerklargjøringen eller rutingproblemet, og prøv deretter verifisering på nytt.
 
-## Feilsvar
+## Feilsvar {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Behandle `ready: false` som en blokkering før lansering. Kontroller verifiserin
 }
 ```
 
-## Paginering og filtrering
+## Paginering og filtrering {#pagination-and-filtering}
 
 **Spørringsparametere:**
 ```http

@@ -4,11 +4,11 @@ title: Филтр - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Филтр: wu_pre_save_settings
+# Филтр: wu_pre_save_settings {#filter-wupresavesettings}
 
 Ба таҳиягарон иҷозат медиҳад, ки танзимотро пеш аз захиракунӣ тавассути Ultimate Multisite филтр кунанд.
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 | $settings_to_save | `array` | Танзимоти нав барои илова кардан. |
 | $saved_settings | `array` | Танзимоти ҷории захирашуда. |
 
-### Аз нашр
+### Аз нашр {#since}
 
 - 2.0.18
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) дар сатри 296 муайян шудааст.

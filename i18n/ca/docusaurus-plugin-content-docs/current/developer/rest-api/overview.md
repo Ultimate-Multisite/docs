@@ -3,28 +3,28 @@ title: Visió general de l'API REST
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referència de l'API REST
+# Referència de l'API REST {#rest-api-reference}
 
-## Configuració base
+## Configuració base {#base-configuration}
 
 **URL base:** `{site_url}/wp-json/wu/v2/`
 **Autenticació:** clau i secret de l'API (HTTP Basic Auth o paràmetres d'URL)
 
-## Autenticació
+## Autenticació {#authentication}
 
-### Activa l'API
+### Activa l'API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Obté les credencials de l'API
+### Obté les credencials de l'API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Mètodes d'autenticació
+### Mètodes d'autenticació {#authentication-methods}
 
 **HTTP Basic Auth (recomanat):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Punts d'accés principals
+## Punts d'accés principals {#core-endpoints}
 
-### 1. API de clients
+### 1. API de clients {#1-customers-api}
 
 **Ruta base:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API de llocs
+### 2. API de llocs {#2-sites-api}
 
 **Ruta base:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API de membresies
+### 3. API de membresies {#3-memberships-api}
 
 **Ruta base:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API de productes
+### 4. API de productes {#4-products-api}
 
 **Ruta base:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API de pagaments
+### 5. API de pagaments {#5-payments-api}
 
 **Ruta base:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API de dominis
+### 6. API de dominis {#6-domains-api}
 
 **Ruta base:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Punt d'accés de registre
+## Punt d'accés de registre {#registration-endpoint}
 
 El punt d'accés `/register` proporciona un flux complet de pagament/registre:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Punts d'accés d'inquilí sobirà
+## Punts d'accés d'inquilí sobirà {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 afegeix cobertura REST d'inquilí sobirà per a integracions que proveeixen, inspeccionen o verifiquen inquilins aïllats.
 
@@ -242,7 +242,7 @@ Les respostes típiques d'estat de migració inclouen:
 
 Tracta `ready: false` com un bloquejador previ al llançament. Comprova els detalls de verificació, corregeix l'associació de l'amfitrió de la base de dades, la cua, el proveïment d'usuaris o el problema d'encaminament, i després torna a provar la verificació.
 
-## Respostes d'error
+## Respostes d'error {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tracta `ready: false` com un bloquejador previ al llançament. Comprova els deta
 }
 ```
 
-## Paginació i filtratge
+## Paginació i filtratge {#pagination-and-filtering}
 
 **Paràmetres de consulta:**
 ```http

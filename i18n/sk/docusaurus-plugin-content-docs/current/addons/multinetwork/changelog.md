@@ -3,9 +3,9 @@ title: Zoznam zmien pre viacero sietí
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Zoznam zmien Multi-Network
+# Zoznam zmien Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nové: Náhľadávač sieťových šablón — prehliadajte a zobrazujte náhľady sieťových šablón so živým panelom pred nákupom.
 * Nové: Výber sieťovej šablóny pri checkout — zákazníci si môžu vybrať sieťovú šablónu počas procesu registrácie v checkout.
 * Nové: Cross-network magic link SSO — zákazníci môžu bez problémov pristupovať k podsieťam cez overenie pomocou magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Oprava: Ochrana pred nedefinovaným kľúčom `network_id` v rozsahu dotazu lokality.
 * Oprava: Kontrola oprávnení siete pred prepnutím kontextu zabraňuje chybám vlastnosti tabuľky `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Oprava: Vytváranie novej siete.
 * Oprava: Vykresľovanie menu.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Aktualizované na Plugin Update Checker v5
 * Pridané moderné hlavičky pluginu WordPress
 * Vylepšená kompatibilita s najnovšími verziami WordPress
 
-### 1.0.2
+### 1.0.2 {#102}
 * Opravy chýb a zlepšenia výkonu
 * Vylepšená izolácia siete
 
-### 1.0.0
+### 1.0.0 {#100}
 * Počiatočné vydanie
 * Základná funkcionalita multinetwork
 * Integrácia s Multisite Ultimate

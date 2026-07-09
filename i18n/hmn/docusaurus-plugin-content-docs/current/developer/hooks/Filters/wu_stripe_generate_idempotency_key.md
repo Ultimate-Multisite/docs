@@ -4,11 +4,11 @@ title: Lim - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Lim: wu_stripe_generate_idempotency_key
+# Lim: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
 
 Lim tus nqi idempotency_key uas xa nrog Stripe charge options.
 
-## Cov Parameter
+## Cov Parameter {#parameters}
 
 | Npe | Hom | Kev piav qhia |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Lim tus nqi idempotency_key uas xa nrog Stripe charge options.
 | $args | `array` | Cov lus sib cav uas siv los pab tsim tus key. |
 | $context | `string` | Lub ntsiab lus uas idempotency key raug tsim nyob rau hauv. |
 
-### Txij thaum
+### Txij thaum {#since}
 
 - 3.5.0
-### Qhov chaw
+### Qhov chaw {#source}
 
 Teev tseg hauv [`inc/functions/checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/checkout.php#L54) ntawm kab 54

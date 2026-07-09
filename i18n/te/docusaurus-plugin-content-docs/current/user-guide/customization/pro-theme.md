@@ -3,7 +3,7 @@ title: PRO థీమ్
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme తో మీ Admin Panel ని అనుకూలీకరించడం
+# PRO Theme తో మీ Admin Panel ని అనుకూలీకరించడం {#customizing-your-admin-panel-with-pro-theme}
 
 క్లయింట్ పని చేసేటప్పుడు, WordPress యొక్క admin dashboard లో మా క్లయింట్లకు అనుకూల అనుభవాన్ని అందించాల్సిన అవసరం తరచుగా వస్తుంది. మీరు మరింత ప్రొఫెషనల్ లుక్ మరియు ఫీల్ కోసం వెతుకుతుంటే, PRO Theme మీకు సహాయపడవచ్చు.
 

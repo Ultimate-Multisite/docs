@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints 将 OpenAI 兼容的 AI 提供商 API 与您的 WordPress 多站点网络集成。您可以配置多个 AI 提供商——每个提供商都有其独立的端点 URL、API 密钥和默认模型——并实现请求路由，当某个提供商不可用时会自动回退（fallback）。
 
-## Key Features
+## Key Features {#key-features}
 
 - **多提供商支持**: 可以添加多个 AI 提供商卡片，每个卡片都有独立的端点 URL、API 密钥和默认模型
 - **拖拽重新排序**: 使用每个卡片上的握柄（grip handle）按优先级排列提供商；请求将按照顺序使用这些提供商
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints 将 OpenAI 兼容的 AI 提供商
 - **添加时自动展开**: 新的提供商卡片会自动展开，让您可以立即填写详细信息
 - **脚本缓存清除**: 在插件更新时，提供商脚本会进行缓存清除（cache-busting），确保加载的是最新版本
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 或更高版本
 - PHP 7.4 或更高版本
 - Ultimate Multisite 插件（已激活）
 - 一个 OpenAI 兼容的 API 端点（自托管或第三方）
 
-## Installation
+## Installation {#installation}
 
 1. 将插件文件上传到您的 `/wp-content/plugins/` 目录
 2. 通过 WordPress 的“插件”菜单激活插件
 3. 导航到 **Ultimate Multisite → AI Connector** 来配置插件
 
-## Configuration
+## Configuration {#configuration}
 
-### Multi-Provider Setup
+### Multi-Provider Setup {#multi-provider-setup}
 
 配置界面采用卡片式布局，每个卡片代表一个 AI 提供商。您可以添加所需的任何数量的提供商。
 
-#### Adding a Provider
+#### Adding a Provider {#adding-a-provider}
 
 1. 在网络管理员界面，转到 **Ultimate Multisite → AI Connector**
 2. 点击 **Add Provider**
@@ -52,15 +52,15 @@ Ultimate AI Connector for Compatible Endpoints 将 OpenAI 兼容的 AI 提供商
    - **Default Model** — 默认使用的模型标识符（例如：`gpt-4o`、`mistral-small`）
 5. 点击 **Save Settings**
 
-#### Removing a Provider
+#### Removing a Provider {#removing-a-provider}
 
 点击任何提供商卡片上的 **Remove** 按钮即可删除它。请保存设置以应用更改。
 
-#### Reordering Providers
+#### Reordering Providers {#reordering-providers}
 
 拖动任何提供商卡片左侧的握柄图标（⣿）即可重新排序。顺序决定了回退的优先级：请求会发送给第一个提供商，如果请求失败，则会回退到后续的提供商。
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 当向主要提供商的请求失败时——可能是由于超时、速率限制或服务中断——连接器会自动使用列表中的下一个提供商重试。这个过程会持续进行，直到某个提供商成功，或者所有提供商都已尝试完毕。
 
@@ -72,7 +72,7 @@ Ultimate AI Connector for Compatible Endpoints 将 OpenAI 兼容的 AI 提供商
 
 回退机制对调用插件或主题是透明的——无论尝试了多少提供商，它们最终只会收到一个成功的响应或一个最终的错误。
 
-### Provider Configuration Reference
+### Provider Configuration Reference {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Ultimate AI Connector for Compatible Endpoints 将 OpenAI 兼容的 AI 提供商
 | API Key | Yes | 此提供商的认证密钥 |
 | Default Model | Yes | 当请求中未指定模型时使用的模型标识符 |
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### No providers are listed
+### No providers are listed {#no-providers-are-listed}
 
 如果保存后提供商列表为空，请确认以下几点：
 
@@ -91,21 +91,21 @@ Ultimate AI Connector for Compatible Endpoints 将 OpenAI 兼容的 AI 提供商
 - 您的浏览器是否阻止了设置页面的保存（请检查浏览器控制台是否有 JavaScript 错误）
 - 插件是否已激活，并且您是否位于网络管理员界面
 
-### Requests are failing for all providers
+### Requests are failing for all providers {#requests-are-failing-for-all-providers}
 
 - 验证每个提供商的端点 URL 是否可以从您的服务器访问（而不仅仅是从您的浏览器访问）
 - 检查每个 API 密钥是否有效且未过期
 - 在提供商的控制台中查看其速率限制和配额状态
 - 启用 WordPress 调试日志 (`WP_DEBUG_LOG`) 以捕获连接器详细的错误消息
 
-### A provider is not being used for fallback
+### A provider is not being used for fallback {#a-provider-is-not-being-used-for-fallback}
 
 拖拽重新排序会改变回退的顺序。请确认您期望接收回退请求的提供商是否已正确放置在列表中，并且其端点 URL 和 API 密钥是否正确。
 
-### New provider card does not expand automatically
+### New provider card does not expand automatically {#new-provider-card-does-not-expand-automatically}
 
 自动展开功能要求浏览器启用 JavaScript。如果卡片没有在点击时展开，请检查浏览器控制台是否有错误。即使自动展开没有触发，您仍然可以通过点击卡片头部访问卡片内容。
 
-## Changelog
+## Changelog {#changelog}
 
 请参阅 [Changelog](./changelog) 查看完整的版本历史记录。

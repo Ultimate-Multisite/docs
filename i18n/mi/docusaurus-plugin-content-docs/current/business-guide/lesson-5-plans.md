@@ -3,15 +3,15 @@ title: 'Akoranga 5: Te Hoahoa i Āu Mahere'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Akoranga 5: Te Hoahoa i Ō Mahere
+# Akoranga 5: Te Hoahoa i Ō Mahere {#lesson-5-designing-your-plans}
 
 Ehara ō taumata mahere i te taumata utu noa iho -- he whakaata ēnei i te āhua mahi tūturu a ngā kiritaki o tō mākete motuhake. I tēnei akoranga ka hoahoa koe i ngā taumata hua e hāngai ana ki ngā hiahia tūturu o ngā pakihi whakapakari tinana i ngā wāhanga rerekē.
 
-## Te Wāhi i Mahue Mai Ai Tātou
+## Te Wāhi i Mahue Mai Ai Tātou {#where-we-left-off}
 
 Kua rite ngā tātauira e toru a FitSite (Studio Essential, Gym Pro, Fitness Chain). Inaianei ka waihanga tātou i ngā mahere e whakatau ana he aha ngā mea ka taea e ngā kiritaki te uru atu, ā, he aha hoki tā rātou utu.
 
-## Te Whakaaro ki ngā Wāhanga Kiritaki
+## Te Whakaaro ki ngā Wāhanga Kiritaki {#thinking-in-customer-segments}
 
 Ko te hapa e mahia nuitia ana e te nuinga, ko te hoahoa mahere huri noa i ngā āhuatanga hangarau (rokiroki, bandwidth, maha o ngā whārangi). Kāore ō kiritaki motuhake e whakaaro pēnā. Ka whakaaro te rangatira whare whakapakari tinana ki ngā mea e hiahiatia ana hei whakahaere i tana pakihi.
 
@@ -25,11 +25,11 @@ Mō ngā taiwhanga whakapakari tinana, e toru ngā wāhanga māori:
 
 Me hāngai ō mahere ki ēnei wāhanga, kaua ki ngā paihere āhuatanga matapōkere.
 
-## Te Waihanga i ngā Mahere FitSite
+## Te Waihanga i ngā Mahere FitSite {#creating-the-fitsite-plans}
 
 Whakatere ki **Ultimate Multisite > Hua > Tāpiri Hua** mō ia mahere.
 
-### Mahere 1: FitSite Starter -- $49/marama
+### Mahere 1: FitSite Starter -- $49/marama {#plan-1-fitsite-starter----49month}
 
 **Whāinga**: Ngā kaiwhakangungu takitahi me ngā taiwhanga iti
 
@@ -59,7 +59,7 @@ Whakatere ki **Ultimate Multisite > Hua > Tāpiri Hua** mō ia mahere.
 - Tō kaupapa kua tīpakohia: Whakahohe ā-kaha
 - Ētahi atu kaupapa katoa: Huna
 
-### Mahere 2: FitSite Growth -- $99/marama
+### Mahere 2: FitSite Growth -- $99/marama {#plan-2-fitsite-growth----99month}
 
 **Whāinga**: Ngā whare whakapakari tinana kua ū, kotahi te wāhi
 
@@ -85,7 +85,7 @@ Whakatere ki **Ultimate Multisite > Hua > Tāpiri Hua** mō ia mahere.
 - Rōpū mahere: FitSite Plans
 - Raupapa hua: 2
 
-### Mahere 3: FitSite Pro -- $199/marama
+### Mahere 3: FitSite Pro -- $199/marama {#plan-3-fitsite-pro----199month}
 
 **Whāinga**: Ngā mekameka whakapakari tinana wāhi-maha
 
@@ -109,7 +109,7 @@ Whakatere ki **Ultimate Multisite > Hua > Tāpiri Hua** mō ia mahere.
 - Rōpū mahere: FitSite Plans
 - Raupapa hua: 3
 
-## Te Whakatakoto i te Rōpū Mahere
+## Te Whakatakoto i te Rōpū Mahere {#setting-up-the-plan-group}
 
 Mā te rōpū mahere e whakarite ka taea anake e ngā kiritaki te whakapai, te whakaheke rānei i roto i te whānau mahere FitSite. I te ripa **Whakapai & Whakaheke** o ia mahere:
 
@@ -118,7 +118,7 @@ Mā te rōpū mahere e whakarite ka taea anake e ngā kiritaki te whakapai, te w
 
 Ka waihangatia e tēnei he ara whakapai mārama: Starter → Growth → Pro.
 
-## Te Tāpiri i ngā Tāpiringa Ota
+## Te Tāpiri i ngā Tāpiringa Ota {#adding-order-bumps}
 
 Ko ngā tāpiringa ota he hua tāpiri e tukuna ana i te wā utu whakamutunga. Mō FitSite, whakaarohia:
 
@@ -128,7 +128,7 @@ Ko ngā tāpiringa ota he hua tāpiri e tukuna ana i te wā utu whakamutunga. M�
 
 Waihangatia ēnei hei hua momo **Pōkai** i Ultimate Multisite, ā, herea ki ngā mahere hāngai.
 
-## He Aha i Mahi Ai Tēnei Hanganga
+## He Aha i Mahi Ai Tēnei Hanganga {#why-this-structure-works}
 
 - Ka tango a **Starter** i ngā ārai ki te kuhu mai -- he utu iti, he tuku māmā, ka tere te tae o ngā kaiwhakangungu ki te ipurangi
 - Ka tāpiri a **Growth** i ngā āhuatanga e tino tonoa ana e ngā whare whakapakari tinana -- tāpui, taiwhanga whakaahua, rohe ritenga
@@ -136,7 +136,7 @@ Waihangatia ēnei hei hua momo **Pōkai** i Ultimate Multisite, ā, herea ki ng�
 - Mā ngā **tāpiringa ota** ka taea e ngā kiritaki te whakarite ritenga, me te kore e whakapōauau i ngā mahere matua
 - Ko te **ara whakapai mārama** ka tipu ngā kiritaki i tō taha, kaua e wehe atu
 
-## Te Whatunga FitSite Tae Noa Mai ki Nāianei
+## Te Whatunga FitSite Tae Noa Mai ki Nāianei {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Ngā Mea i Hangaia e Tātou i Tēnei Akoranga
+## Ngā Mea i Hangaia e Tātou i Tēnei Akoranga {#what-we-built-this-lesson}
 
 - **E toru ngā taumata mahere** kua hāngai ki ngā wāhanga pakihi whakapakari tinana tūturu
 - **Te aukati āhuatanga** mā ngā mana monomai me ngā mana tātauira a Ultimate Multisite

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-tenancy
+# Multi-tenancy {#multi-tenancy}
 
 Fordel undersider på tværs af servere og databaser for ydeevne og sikkerhed
 
-## Højdepunkter i version 1.2.0-udgivelsen
+## Højdepunkter i version 1.2.0-udgivelsen {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 tilføjer det suveræne lejerfundament til produktionsisolerings-workflows:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 tilføjer det suveræne lejerfundament til produktionsisoler
 
 Se brugervejledningerne for [workflow til suveræn migrering](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy-isolering](/user-guide/configuration/multi-tenancy-isolation) og [operationer for suveræne lejere](/user-guide/administration/sovereign-tenant-operations).
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller nyere
 - PHP 7.4 eller nyere
 - Multisite Ultimate plugin (aktiv)
 
-## Installation
+## Installation {#installation}
 
 1. Upload addon-filerne til din `/wp-content/plugins/`-mappe
 2. Aktivér plugin'et via menuen 'Plugins' i WordPress
 3. Konfigurer addon-indstillingerne i netværksadministrationen
 
-## Udvikling
+## Udvikling {#development}
 
-### Opsætning
+### Opsætning {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektstruktur
+### Projektstruktur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Test
+### Test {#testing}
 
 Addon'et indeholder et omfattende testframework:
 
@@ -93,54 +93,54 @@ Addon'et indeholder et omfattende testframework:
 - **Testdækning**: Konfigureret til at spore kodedækning
 - **Multisite-test**: Test køres i multisite-miljø
 
-### Kodestandarder
+### Kodestandarder {#code-standards}
 
 - **WordPress-kodestandarder**: Håndhæves via PHPCS
 - **PHP 7.4+-kompatibilitet**: Moderne PHP-funktioner understøttes
 - **Statisk analyse**: PHPStan-integration til typekontrol
 - **Kodernisering**: Rector-regler til PHP-opgraderinger
 
-### Build-system
+### Build-system {#build-system}
 
 - **Asset-behandling**: Minificering af CSS/JS-filer
 - **Oversættelse**: Generering af POT-fil
 - **Pakning**: Oprettelse af arkiv til distribution
 - **Udviklingstilstand**: Ikke-minificerede assets til debugging
 
-## Konfiguration
+## Konfiguration {#configuration}
 
 Addon'et understøtter forskellige konfigurationsmuligheder, der er tilgængelige via netværksadministrationsgrænsefladen.
 
-### Konfiguration af suveræn lejer
+### Konfiguration af suveræn lejer {#sovereign-tenant-configuration}
 
 For suveræne lejere skal du konfigurere lejerdatabasen, filsystemroden, binding af databasehost og host-kapacitet, før trafik routes til lejeren. Kør migreringsverifikation efter hver ændring, der påvirker databaseoplysninger, host-binding, routing eller brugerprovisionering.
 
 Brug kun `localhost`, når lejerens runtime og database grants forventer adgang via lokal socket eller samme maskine. Brug `127.0.0.1` eller et service-hostnavn, når det er den grant-host, der er konfigureret af din udbyder.
 
-### Hostinger-kapacitet
+### Hostinger-kapacitet {#hostinger-capability}
 
 Hostinger multi-tenancy-kapaciteten fungerer med det delte Hostinger-integrationstoken. Bekræft, at domænet findes i hPanel, at DNS peger på Hostinger-kontoen, og at lejerdatabaseindstillingerne matcher hPanel før verifikation.
 
-## Hooks og filtre
+## Hooks og filtre {#hooks-and-filters}
 
-### Handlinger
+### Handlinger {#actions}
 
 - `ultimate-multisite-addon-template_init` - Udløses efter initialisering af addon'et
 - `ultimate-multisite-addon-template_loaded` - Udløses efter, at alle addon-filer er indlæst
 
-### Filtre
+### Filtre {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Rediger addon-indstillinger
 - `ultimate-multisite-addon-template_enabled` - Tilsidesæt addon'ets aktiver/deaktiver-status
 
-## Licens
+## Licens {#license}
 
 Dette addon er licenseret under GPL v3 eller nyere.
 
-## Support
+## Support {#support}
 
 For support og dokumentation, besøg [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ændringslog
+## Ændringslog {#changelog}
 
 - Version 1.2.0 (2026-06-03): tilføj stateless lejer-autologin, Hostinger multi-tenancy-kapacitet, database- og filsystemisolering pr. underside, verifikationsporte for suveræn migrering, forbedringer af lejer-bootstrap/databaseskriver, konfigurerbar MySQL host-binding og sikrere suveræn nedtagning.
 

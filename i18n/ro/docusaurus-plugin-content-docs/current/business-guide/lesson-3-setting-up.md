@@ -3,32 +3,32 @@ title: 'Lecția 3: Configurarea Rețelei Tale'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lecția 3: Configurarea Rețelei Tale
+# Lecția 3: Configurarea Rețelei Tale {#lesson-3-setting-up-your-network}
 
 E timpul să construim. În această lecție, veți instala Ultimate Multisite și veți configura fundația rețelei FitSite. Fiecare decizie aici este luată având în vedere nișa fitness.
 
-## Unde Am Rămas
+## Unde Am Rămas {#where-we-left-off}
 
 Am ales studiourile de fitness ca nișă și am validat oportunitatea. Acum, transformăm această idee într-o platformă funcțională.
 
-## Alegerea Hosting-ului
+## Alegerea Hosting-ului {#choosing-your-hosting}
 
 Alegerea hosting-ului contează mai mult pentru o platformă de nișă decât pentru un singur website. Nu găzduiți un singur site — găzduiți o rețea care va crește până la zeci sau sute de site-uri.
 
-### Ce să Căutați
+### Ce să Căutați {#what-to-look-for}
 
 - **Suport WordPress Multisite**: Nu toți providerii de hosting gestionează bine multisite-ul
 - **Wildcard SSL**: Esențial pentru rețele bazate pe subdomenii
 - **Resurse scalabile**: Aveți nevoie de spațiu pentru a crește fără a migra
 - **Integrarea Ultimate Multisite**: Maparea automată a domeniilor și SSL-ul economisesc un efort operațional semnificativ
 
-### Abordarea Recomandată
+### Abordarea Recomandată {#recommended-approach}
 
 Alegeți un host din lista de [Provideri Compatibili](/user-guide/host-integrations/closte). Aceștia au fost testați cu Ultimate Multisite și oferă integrările de care aveți nevoie pentru maparea domeniilor și automatizarea SSL-ului.
 
 Pentru FitSite, vom folosi o configurare cu subdomenii. Acest lucru înseamnă că site-urile clienților vor apărea inițial ca `studioname.fitsite.com` înainte ca aceștia să își mapeze opțional propriul domeniu.
 
-## Instalarea WordPress Multisite
+## Instalarea WordPress Multisite {#installing-wordpress-multisite}
 
 Dacă nu aveți deja o instalare WordPress Multisite:
 
@@ -40,7 +40,7 @@ Dacă nu aveți deja o instalare WordPress Multisite:
 Subdomenile oferă fiecărui site al clientului o adresă distinctă (`studio.fitsite.com`) în loc de un cărăuș (`fitsite.com/studio`). Acest lucru este mai profesionist pentru clienții dumneavoastră și evită conflictele de permalink. Vedeți [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) pentru o comparație detaliată.
 :::
 
-## Instalarea Ultimate Multisite
+## Instalarea Ultimate Multisite {#installing-ultimate-multisite}
 
 Urmați ghidul [Instalarea Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) pentru a:
 
@@ -53,11 +53,11 @@ Urmați ghidul [Instalarea Ultimate Multisite](/user-guide/getting-started/insta
 - **Company name**: "FitSite" (sau numele de brand ales de dumneavoastră)
 - **Company logo**: Uploadați logo-ul brandului dumneavoastră — acesta va apărea pe facturi și e-mailuri
 
-## Configurarea pentru Nișa Fitness
+## Configurarea pentru Nișa Fitness {#configuring-for-the-fitness-niche}
 
 Cu Ultimate Multisite instalat, faceți aceste alegeri de configurare specifice nișei:
 
-### Setări Generale
+### Setări Generale {#general-settings}
 
 Navigați la **Ultimate Multisite > Settings** și configurați:
 
@@ -65,7 +65,7 @@ Navigați la **Ultimate Multisite > Settings** și configurați:
 - **Default role**: Administrator — proprietarii studiilor de fitness au nevoie de control total asupra conținutului site-ului lor
 - **Registration**: Activați înregistrarea utilizatorilor pentru ca proprietarii studiilor să se poată înregistra singuri
 
-### Configurația E-mailului
+### Configurația E-mailului {#email-configuration}
 
 E-mailurile sistemului dumneavoastră ar trebui să vorbească limba nișei. Navigați la **Ultimate Multisite > Settings > Emails** și personalizați:
 
@@ -75,7 +75,7 @@ E-mailurile sistemului dumneavoastră ar trebui să vorbească limba nișei. Nav
 
 Vom rafina aceste aspecte în continuare în Lecția 8 (Onboarding-ul Clienților), dar stabilirea tonului acum asigură că chiar și primele înregistrări de test se simt specifice nișei.
 
-### Configurația Domeniului
+### Configurația Domeniului {#domain-configuration}
 
 Dacă folosiți un provider de hosting compatibil, configurați maparea domeniilor acum:
 
@@ -85,7 +85,7 @@ Dacă folosiți un provider de hosting compatibil, configurați maparea domeniil
 
 Acest lucru asigură că, atunci când vom începe să creăm șabloane și site-uri de test în lecția următoare, totul funcționează de la capăt la capăt.
 
-## Rețeaua FitSite Până Acum
+## Rețeaua FitSite Până Acum {#the-fitsite-network-so-far}
 
 La sfârșitul acestei lecții, iată ce aveți:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Gata pentru șabloane de site (lecția următoare)
 ```
 
-## Ce Am Construit în Această Lecție
+## Ce Am Construit în Această Lecție {#what-we-built-this-lesson}
 
 - **O instalare funcțională WordPress Multisite** în modul subdomeniu
 - **Ultimate Multisite instalat** și configurat cu branding-ul FitSite

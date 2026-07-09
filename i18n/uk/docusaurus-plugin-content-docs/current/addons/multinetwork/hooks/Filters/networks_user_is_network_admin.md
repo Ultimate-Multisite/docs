@@ -4,20 +4,20 @@ title: Фільтр - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# Фільтр: networks_user_is_network_admin
+# Фільтр: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
 
 Фільтрує мережі, які користувач адмініструє.
 
-## Параметри
+## Параметри {#parameters}
 
 | Ім'я | Тип | Опис |
 |------|------|-------------|
 | $ | `array\|bool` | Список ID мереж або `false`, якщо мереж для користувача немає. |
 | $ | `int` | ID користувача, для якого потрібно повернути мережі. |
 
-### Зверніть увагу
+### Зверніть увагу {#since}
 
 - 2.0.0
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L703) на рядку 703

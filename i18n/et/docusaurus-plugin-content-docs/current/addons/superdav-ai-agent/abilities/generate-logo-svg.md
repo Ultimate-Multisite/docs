@@ -3,15 +3,15 @@ title: Genereeri logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Genereeri Logo SVG
+# Genereeri Logo SVG {#generate-logo-svg}
 
 **Generate Logo SVG** võime võimaldab Theme Builderil luua ja manustada kohandatud logo SVG-sid otse sinu WordPress saidile automaatse nimeruumiturvalise sanitiseerimisega.
 
-## Ülevaade
+## Ülevaade {#overview}
 
 See võime genereerib skaleeritavaid vektorgraafika (SVG) logosid sinu saidi brändingu suuna ja disainieelistuste põhjal. Genereeritud SVG-d sanitiseeritakse automaatselt, et tagada nende ohutu kasutamine WordPressis, säilitades samal ajal visuaalse terviklikkuse.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Parameeter | Tüüp | Nõutav | Kirjeldus |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ See võime genereerib skaleeritavaid vektorgraafika (SVG) logosid sinu saidi br�
 | `height` | number | Ei | SVG kõrgus pikslites (vaikimisi: 200) |
 | `include_text` | boolean | Ei | Kas lisada saidi nimi logos tekstina (vaikimisi: true) |
 
-## Väljundvorming
+## Väljundvorming {#output-format}
 
 See võime tagastab SVG stringi järgmise struktuuriga:
 
@@ -36,7 +36,7 @@ See võime tagastab SVG stringi järgmise struktuuriga:
 }
 ```
 
-## SVG sanitiseerimise käitumine
+## SVG sanitiseerimise käitumine {#svg-sanitisation-behaviour}
 
 Genereeritud SVG-d läbivad automaatse nimeruumiturvalise sanitiseerimise, et:
 
@@ -48,7 +48,7 @@ Genereeritud SVG-d läbivad automaatse nimeruumiturvalise sanitiseerimise, et:
 
 See tagab, et SVG-d saab turvaliselt otse WordPressi manustada ilma täiendavat sanitiseerimist nõudmata.
 
-## Kasutusnäide
+## Kasutusnäide {#usage-example}
 
 **Viip:**
 ```
@@ -62,7 +62,7 @@ See võime loob SVG logo, mis:
 - Järgib moodsaid disainipõhimõtteid
 - On automaatselt sanitiseeritud ja kasutusvalmis
 
-## Integratsioon Theme Builderiga
+## Integratsioon Theme Builderiga {#integration-with-theme-builder}
 
 Kui kasutad Theme Builderi disainisuuna valikut, teeb Generate Logo SVG võime järgmist:
 
@@ -71,21 +71,21 @@ Kui kasutad Theme Builderi disainisuuna valikut, teeb Generate Logo SVG võime j
 3. Manustab logo automaatselt sinu saidi päise/brändingu alasse
 4. Salvestab SVG WordPress meedias kohandatud logona
 
-## Parimad tavad
+## Parimad tavad {#best-practices}
 
 - **Esita selged stiilieelistused** — kirjelda soovitud disainistiili (modernne, klassikaline, mänguline jne)
 - **Määra värvid** — järjepidevuse tagamiseks lisa oma brändivärvid
 - **Testi renderdamist** — kontrolli, et logo kuvatakse eri ekraanisuurustel õigesti
 - **Kohanda edasi** — kasuta WordPressi logo kohandamise tööriistu suuruse ja paigutuse reguleerimiseks
 
-## Piirangud
+## Piirangud {#limitations}
 
 - SVG logod genereeritakse staatilise graafikana (mitte animeerituna)
 - Keerukad logod, millel on palju elemente, võivad vajada käsitsi viimistlemist
 - Kohandatud fonte ei toetata; tekst kasutab süsteemifonte
 - Väga suured või väga väikesed mõõtmed võivad kvaliteeti mõjutada
 
-## Seotud võimed
+## Seotud võimed {#related-abilities}
 
 - [Valideeri paleti kontrastsust](./validate-palette-contrast.md) — kontrolli värvikontrasti ligipääsetavuse jaoks
 - [Loo menüü](./create-menu.md) — loo oma saidile navigeerimismenüüsid

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM coj AI inference uas khiav ncaj qha hauv browser los rau koj WordPress multisite network. Nws khiav cov qauv lus loj tag nrho hauv browser siv WebLLM thiab MLC engine — tsis tas muaj API keys, tsis muaj kev hu mus sab nraud, thiab tsis muaj ntaub ntawv tawm ntawm tus neeg siv lub cuab yeej.
 
-## Cov Nta Tseem Ceeb
+## Cov Nta Tseem Ceeb {#key-features}
 
 - **Inference sab browser**: LLM khiav hauv zos hauv tus qhua lub browser dhau WebLLM/MLC — tsis tas yuav muaj server GPU
 - **Chat widget ntab**: Cov neeg siv uas login lawm tuaj yeem sau prompt rau LLM sab browser ncaj qha ntawm front end
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM coj AI inference uas khiav ncaj qha hauv browse
 - **IndexedDB cache**: Model weight downloads tseem nyob txawm CDN redirects ua rau default Cache API path tawg
 - **wpai filter integration**: Hook rau hauv `wpai_preferred_text_models` filter kom AI Experiments feature xa mus rau browser engine thaum teeb tsa lawm
 
-## Yam Yuav Tsum Muaj
+## Yam Yuav Tsum Muaj {#requirements}
 
 - WordPress 5.3 lossis siab dua
 - PHP 7.4 lossis siab dua
 - Ultimate Multisite plugin (qhib)
 - Browser uas muaj WebGPU support (Chrome 113+, Edge 113+, lossis Firefox Nightly uas qhib WebGPU lawm)
 
-## Kev Txhim Kho
+## Kev Txhim Kho {#installation}
 
 1. Upload cov addon files mus rau koj `/wp-content/plugins/` directory
 2. Qhib plugin dhau ntawm 'Plugins' menu hauv WordPress
 3. Mus rau **Ultimate Multisite → AI Connector** los teeb tsa addon
 
-## Chat Widget Ntab
+## Chat Widget Ntab {#floating-chat-widget}
 
 Chat widget ntab tso cai rau txhua tus neeg siv uas login lawm los sib tham nrog LLM sab browser ncaj qha ntawm koj front end, yam tsis tas tawm ntawm nplooj ntawv uas lawv tab tom nyob.
 
-### Nws Ua Dab Tsi
+### Nws Ua Dab Tsi {#what-it-does}
 
 Thaum qhib lawm, ib lub chat icon yuav tshwm nyob rau kaum ntawm txhua front-end page rau cov neeg siv uas login lawm. Nias lub icon yuav qhib ib lub chat panel uas tus neeg siv tuaj yeem ntaus prompts thiab tau txais cov lus teb los ntawm WebLLM model uas khiav hauv zos. Vim model khiav tag nrho hauv browser, cov lus teb yog ntiag tug thiab tsis muaj kev ua haujlwm sab server.
 
-### Admin-Bar Status Indicator
+### Admin-Bar Status Indicator {#admin-bar-status-indicator}
 
 WordPress admin bar muaj ib lub status indicator uas qhia lub xeev tam sim no ntawm WebLLM engine:
 
@@ -56,7 +56,7 @@ WordPress admin bar muaj ib lub status indicator uas qhia lub xeev tam sim no nt
 
 Lub indicator hloov tshiab tiag-sijhawm yam tsis tas reload nplooj ntawv.
 
-### Yuav Qhib lossis Kaw Widget Li Cas
+### Yuav Qhib lossis Kaw Widget Li Cas {#how-to-enable-or-disable-the-widget}
 
 1. Mus rau **Ultimate Multisite → AI Connector** hauv network admin
 2. Nrhiav **Connector** panel
@@ -65,17 +65,17 @@ Lub indicator hloov tshiab tiag-sijhawm yam tsis tas reload nplooj ntawv.
 
 Widget kuj qhib lossis kaw tau per-site los ntawm site tus kheej admin yog network administrator tau tso cai ntawd lawm.
 
-## Widget Settings
+## Widget Settings {#widget-settings}
 
 Connector panel hauv **Ultimate Multisite → AI Connector** muaj cov settings hauv qab no rau chat widget ntab:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 Toggle chat widget qhib lossis kaw rau tag nrho network. Thaum kaw lawm, widget yuav tsis tshwm rau ib nplooj front-end page twg, txawm tus neeg siv muaj role dab tsi los xij.
 
 **Default:** Kaw
 
-### Auto-Prompt Behaviour
+### Auto-Prompt Behaviour {#auto-prompt-behaviour}
 
 Tswj seb chat widget puas xa prompt cia li thaum tus neeg siv qhib nws.
 
@@ -93,7 +93,7 @@ Thaum teeb rau **Custom prompt**, ib text field ntxiv yuav tshwm uas koj tuaj ye
 
 **Default:** Disabled
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 Version 1.1.0 qhia SharedWorker runtime rau MLC engine. Yav dhau los, txhua browser tab uas siv WebLLM load nws tus kheej instance ntawm model, sib tw rau GPU memory thiab ua rau muaj performance issues ntawm cov cuab yeej uas muaj VRAM tsawg.
 
@@ -105,29 +105,29 @@ Nrog SharedWorker runtime, ib tab ua tus engine host. Tag nrho lwm tabs sib txua
 
 SharedWorker yog pob tshab rau cov neeg siv. Admin-bar status indicator yeej qhia lub xeev ntawm shared engine tas li, tsis yog ib tab xwb.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Addon txhim kho ib `apiFetch` middleware uas intercept WordPress REST API requests uas phim AI Client SDK pattern. Es tsis txhob ua loopback HTTP request mus rau server, cov requests no raug xa ncaj qha mus rau local WebLLM broker uas khiav hauv SharedWorker.
 
 Qhov no txhais tias plugins thiab themes uas siv WordPress `apiFetch` API standard los hu AI endpoints yuav tau txais txiaj ntsig ntawm model sab browser cia li thaum muaj, tsis tas hloov code li.
 
-## Hooks thiab Filters
+## Hooks thiab Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — Sau npe WebLLM browser engine ua ib qho text model uas nyiam siv. Lub addon txuas rau filter no cia li thaum engine raug teeb tsa thiab muaj siv tau.
 - `ultimate_webllm_widget_enabled` — Hloov override qhov widget enabled state rau ib tug user lossis context tshwj xeeb. Xa rov qab `true` lossis `false`.
 - `ultimate_webllm_auto_prompt` — Kho auto-prompt text ua ntej nws raug xa mus rau widget. Txais prompt string thiab `WP_Post` object tam sim no.
 
-## Kev daws teeb meem
+## Kev daws teeb meem {#troubleshooting}
 
-### Lub chat widget tsis tshwm
+### Lub chat widget tsis tshwm {#the-chat-widget-does-not-appear}
 
 - Xyuas kom meej tias user tau logged in — widget tsuas qhia rau cov user uas twb authenticate lawm xwb
 - Xyuas tias **Enable floating chat widget** raug toggle on hauv Connector panel
 - Tshawb xyuas tias user lub browser txhawb WebGPU (saib Requirements saum toj)
 
-### Qhov admin-bar indicator qhia "Yuam kev"
+### Qhov admin-bar indicator qhia "Yuam kev" {#the-admin-bar-indicator-shows-error}
 
 Qhib browser developer console (F12) thiab nrhiav cov yuam kev uas cuam tshuam nrog WebLLM. Cov laj thawj uas nquag muaj:
 
@@ -135,10 +135,10 @@ Qhib browser developer console (F12) thiab nrhiav cov yuam kev uas cuam tshuam n
 - Model weight download poob — xyuas network connectivity thiab sim clear IndexedDB cache hauv browser developer tools (Application → IndexedDB)
 - Ib qho browser extension tab tom thaiv SharedWorker
 
-### Model weights download txhua zaus
+### Model weights download txhua zaus {#model-weights-download-every-time}
 
 Lub addon siv IndexedDB ua cache backend kom paub tseeb tias model weights tseem nyob txawm muaj CDN redirects. Yog weights rov download dua txhua zaus mus saib, xyuas tias IndexedDB tsis raug clear los ntawm ib qho browser privacy setting lossis extension.
 
-## Changelog
+## Changelog {#changelog}
 
 Saib [Changelog](./changelog) rau keeb kwm version tag nrho.

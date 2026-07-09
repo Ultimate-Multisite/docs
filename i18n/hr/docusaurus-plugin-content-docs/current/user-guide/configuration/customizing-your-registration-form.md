@@ -3,13 +3,13 @@ title: Prilagodba vašeg obrasca za registraciju
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Prilagodba vašeg obrasca za registraciju
+# Prilagodba vašeg obrasca za registraciju {#customizing-your-registration-form}
 
 Kako bi vaša mreža izgledala jedinstveno u odnosu na sve ostale SaaS sustave izgrađene na WordPress platformi, Ultimate Multisite omogućuje vam prilagodbu stranica za registraciju i prijavu pomoću naše značajke **Checkout Forms**.
 
 Iako su jednostavan i fleksibilan način za eksperimentiranje s različitim pristupima pri pokušaju pretvaranja novih korisnika u kupce, uglavnom se koriste za izradu personaliziranih obrazaca za registraciju. Cilj ovog članka je pokazati vam kako to možete učiniti.
 
-## Stranice za prijavu i registraciju:
+## Stranice za prijavu i registraciju: {#login-and-registration-pages}
 
 Nakon instalacije Ultimate Multisite, automatski stvara prilagođene stranice za prijavu i registraciju na vašoj glavnoj web-stranici. Te zadane stranice možete promijeniti u bilo kojem trenutku tako da odete na stranicu **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Sada pogledajmo druge opcije koje su još uvijek relevantne za proces prijave i 
 
 I to su sve opcije povezane s prijavom i registracijom koje možete prilagoditi! Ne zaboravite spremiti svoje postavke nakon što ih završite uređivati.
 
-## Korištenje više obrazaca za registraciju:
+## Korištenje više obrazaca za registraciju: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 nudi uređivač checkout form koji vam omogućuje izradu koliko god obrazaca želite, s različitim poljima, proizvodima u ponudi itd.
 
@@ -69,7 +69,7 @@ Alternativno, možete urediti ili duplicirati obrasce koje već imate klikom na 
 
 Ako odaberete jedan korak ili više koraka, checkout form već će biti unaprijed popunjen osnovnim koracima potrebnima za rad. Zatim, ako želite, možete mu dodati dodatne korake.
 
-### Uređivanje Checkout Form:
+### Uređivanje Checkout Form: {#editing-a-checkout-form}
 
 Kao što smo ranije spomenuli, možete izraditi checkout forms za različite svrhe. U ovom primjeru radit ćemo na obrascu za registraciju.
 
@@ -131,11 +131,11 @@ Da biste dobili shortcode svojeg obrasca, kliknite **Generiraj shortcode** i kop
 
 _**Napomena:** Morat ćete dodati ovaj shortcode na svoju stranicu za registraciju kako bi se ovaj obrazac za checkout dodao na nju._
 
-## Unaprijed odabiranje proizvoda i predložaka putem URL parametara:
+## Unaprijed odabiranje proizvoda i predložaka putem URL parametara: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ako želite izraditi prilagođene tablice cijena za svoje proizvode i unaprijed odabrati na obrascu za checkout proizvod ili predložak koji vaš kupac odabere s vaše stranice tablice cijena ili predložaka, za to možete upotrijebiti URL parametre.
 
-### **Za planove:**
+### **Za planove:** {#for-plans}
 
 Idite na **Ultimate Multisite > Proizvodi > Odaberite plan**. Trebali biste vidjeti gumb **Kliknite za kopiranje dijeljive poveznice** na vrhu stranice. To je poveznica koju možete upotrijebiti za unaprijed odabiranje ovog određenog plana na svojem obrascu za checkout.
 
@@ -143,7 +143,7 @@ Idite na **Ultimate Multisite > Proizvodi > Odaberite plan**. Trebali biste vidj
 
 Imajte na umu da je ova dijeljiva poveznica valjana samo za **Planove**. Dijeljive poveznice ne možete koristiti za pakete ili usluge.
 
-### Za predloške:
+### Za predloške: {#for-templates}
 
 Ako želite unaprijed odabrati predloške sitea na svojem obrascu za checkout, možete upotrijebiti parametar: **?template_id=X** na URL-u svoje stranice za registraciju. "X" treba zamijeniti **ID brojem predloška sitea**. Da biste dobili taj broj, idite na **Ultimate Multisite > Siteovi**.
 

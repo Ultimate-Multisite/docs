@@ -4,13 +4,13 @@ title: 'Action - wu_delete_{$this->object_id}'
 sidebar_label: 'wu_delete_{$this->object_id}'
 _i18n_hash: 8525ca1e747ac6a29314c90b0a52b3bb
 ---
-# Action: wu_delete_{$this->object_id}
+# Action: wu_delete_{$this->object_id} {#action-wudeletethis-objectid}
 
 प्लगइन डेवलपर्स को डिलीट करने की प्रक्रिया में एक्शन जोड़ने की अनुमति देता है
 
-### कब से
+### कब से {#since}
 
 - 1.8.2
-### स्रोत
+### स्रोत {#source}
 
 [`inc/admin-pages/class-edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-edit-admin-page.php#L251) में लाइन 251 पर परिभाषित किया गया है

@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ AffiliateWP
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# ການເຊື່ອມຕໍ່ AffiliateWP
+# ການເຊື່ອມຕໍ່ AffiliateWP {#affiliatewp-integration}
 
 ຟີເຈີນີ້ແມ່ນມາຈາກ Addon ທີ່ຊື່ວ່າ **AffiliateWP**.
 

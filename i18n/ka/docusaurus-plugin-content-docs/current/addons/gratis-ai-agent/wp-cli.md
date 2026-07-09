@@ -3,11 +3,11 @@ title: WP-CLI ცნობარი
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ცნობარი
+# WP-CLI ცნობარი {#wp-cli-reference}
 
 Gratis AI Agent მოყვება `wp gratis-ai-agent` ბრძანებების ოჯახი აგენტის ბენჩმარკინგისთვის, შესაძლებლობების მართვისთვის და ბრძანების ხაზიდან აგენტის სტატუსის გამოსაკითხად. ყველა ბრძანებას სჭირდება WP-CLI 2.0 ან უფრო ახალი.
 
-## ინსტალაცია
+## ინსტალაცია {#installation}
 
 WP-CLI ბრძანებები ავტომატურად რეგისტრირდება, როცა plugin აქტიურია. გადაამოწმეთ:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 უშვებს Agent Capabilities ბენჩმარკების ნაკრებს — რთული, მრავალსაფეხურიანი prompt-ების ერთობლიობას, რომლებიც ამოწმებს შესაძლებლობების სრულ არეალს. გამოიყენეთ ეს მოდელის წარმადობის შესაფასებლად, AI პროვაიდერების შესადარებლად ან შესაძლებლობების პაკეტების production-ში გაშვებამდე დასადასტურებლად.
 
-### სინოფსისი
+### სინოფსისი {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### პარამეტრები
+### პარამეტრები {#options}
 
 | Option | აღწერა |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | გამოტანის ფორმატი: `table` (ნაგულისხმევი), `json`, `csv` |
 | `--save` | შეინახეთ ბენჩმარკის შედეგები მონაცემთა ბაზაში ისტორიული შედარებისთვის |
 
-### მაგალითები
+### მაგალითები {#examples}
 
 გაუშვით სრული ბენჩმარკების ნაკრები მიმდინარე პროვაიდერითა და მოდელით:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### გამოტანა
+### გამოტანა {#output}
 
 ბენჩმარკი თითო კითხვაზე გამოიტანს ერთ სტრიქონს შემდეგი სვეტებით:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### ბენჩმარკ-კითხვები
+### ბენჩმარკ-კითხვები {#benchmark-questions}
 
 ნაგულისხმევი ნაკრები მოიცავს:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 მართავს დაინსტალირებულ შესაძლებლობებსა და შესაძლებლობების პაკეტებს.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 აჩვენებს ყველა რეგისტრირებულ შესაძლებლობას, მათ წყაროს (ბირთვი ან პაკეტი) და მიმდინარე სტატუსს.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 ჩამოტვირთავს და ააქტიურებს შესაძლებლობების პაკეტს registry-დან.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 გამორთავს კონკრეტულ შესაძლებლობას პაკეტის წაშლის გარეშე. სასარგებლოა მოცემულ საიტზე აგენტის მოქმედების არეალის შესაზღუდად.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 ხელახლა ააქტიურებს ადრე გამორთულ შესაძლებლობას.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 აჩვენებს აგენტის მიმდინარე კონფიგურაციას და კავშირის სტატუსს.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 აჩვენებს აგენტის ბოლო აქტივობას debug log-იდან.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 აღადგენს agent-ის მდგომარეობას: ასუფთავებს ინიექტირებულ CSS-ს, შლის agent-ის მიერ რეგისტრირებულ CPT-ებსა და ტაქსონომიებს, აღადგენს გლობალურ სტილებს და ცარიელებს agent-ის პარამეტრების ქეშს. არ შლის plugin-ს ან მის პარამეტრებს.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## გასვლის კოდები
+## გასვლის კოდები {#exit-codes}
 
 ყველა ბრძანება წარმატების შემთხვევაში აბრუნებს `0`-ს. არანულოვანი გასვლის კოდები:
 

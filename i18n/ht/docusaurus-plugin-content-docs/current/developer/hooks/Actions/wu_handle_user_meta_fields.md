@@ -4,11 +4,11 @@ title: Aksyon - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Aksyon: wu_handle_user_meta_fields
+# Aksyon: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Pèmèt devlopè plugin yo sove meta done itilizatè yo nan diferan fason si yo bezwen sa.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Non | Kalite | Deskripsyon |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Pèmèt devlopè plugin yo sove meta done itilizatè yo nan diferan fason si yo 
 | $customer | `\Customer` | Objè kliyan Ultimate Multisite la. |
 | $checkout | `\Checkout` | Klas checkout la. |
 
-### Depi
+### Depi {#since}
 
 - 2.0.4
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) nan liy 1244

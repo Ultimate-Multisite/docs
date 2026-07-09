@@ -3,13 +3,13 @@ title: ຄູ່ມືການຜະສານລະບົບ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ຄູ່ມືການເຊື່ອມຕໍ່
+# ຄູ່ມືການເຊື່ອມຕໍ່ {#integration-guide}
 
 ຄູ່ມືນີ້ຄອບຄຸມຮູບແບບການເຊື່ອມຕໍ່ທົ່ວໄປກັບ Ultimate Multisite, ລວມທັງການເຊື່ອມຕໍ່ໄປຫາບໍລິການພາຍນອກ, ການສ້າງ payment gateway ແບບກຳນົດເອງ, ແລະການຈັດການ webhooks.
 
 ສຳລັບໂຄງສ້າງພື້ນຖານ tenant ແບບແຍກຕ່າງຫາກ, ເບິ່ງ [ການເຊື່ອມຕໍ່ Multi-Tenancy](./multi-tenancy) ສຳລັບຄຳແນະນຳການເລີ່ມຕົ້ນ tenant ແບບອະທິປະໄຕ, ການກວດສອບການຍ້າຍ, SSO, ແລະການຖອນອອກ.
 
-## ການເຊື່ອມຕໍ່ CRM
+## ການເຊື່ອມຕໍ່ CRM {#crm-integration}
 
 ຊິງຂໍ້ມູນລູກຄ້າໄປຫາ CRM ຂອງທ່ານເມື່ອລູກຄ້າໃໝ່ລົງທະບຽນ:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## ການເຊື່ອມຕໍ່ Analytics
+## ການເຊື່ອມຕໍ່ Analytics {#analytics-integration}
 
 ຕິດຕາມເຫດການທາງທຸລະກິດສຳຄັນຕະຫຼອດວົງຈອນຊີວິດລູກຄ້າ:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## ຂັ້ນຕອນຕໍ່ໄປ
+## ຂັ້ນຕອນຕໍ່ໄປ {#next-steps}
 
 - [ການພັດທະນາ Gateway ແບບກຳນົດເອງ](./custom-gateway) — ສ້າງ payment gateway ຂອງທ່ານເອງ
 - [ການຈັດການ Webhook](./webhooks) — ສ້າງ webhook endpoints ແບບກຳນົດເອງ

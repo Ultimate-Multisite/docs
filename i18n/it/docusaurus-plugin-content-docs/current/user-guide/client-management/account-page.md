@@ -3,7 +3,7 @@ title: Pagina Account cliente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# La pagina Account del tuo cliente (v2)
+# La pagina Account del tuo cliente (v2) {#your-clients-account-page-v2}
 
 _**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
@@ -11,7 +11,7 @@ Quando i clienti si iscrivono a un piano sulla tua rete, ottengono accesso a un 
 
 In questo tutorial, ti guideremo attraverso la pagina Account del cliente e vedrai cosa i tuoi clienti possono vedere e fare al suo interno.
 
-## La pagina Account
+## La pagina Account {#the-account-page}
 
 La pagina Account è accessibile facendo clic su **Account** all'interno del Dashboard del tuo cliente.
 
@@ -27,7 +27,7 @@ Dopo che un cliente fa clic su di essa, vedrà una panoramica del suo abbonament
 
 Può anche cambiare l'abbonamento passando a un altro piano, oppure acquistare un altro pacchetto o servizio che offri. Diamo un'occhiata a ciascuna sezione separatamente.
 
-### Panoramica del tuo abbonamento:
+### Panoramica del tuo abbonamento: {#your-membership-overview}
 
 Il primo blocco subito sotto il nome del sito web dei tuoi clienti mostra una panoramica del loro piano attuale e dei servizi/pacchetti acquistati insieme a esso. Il blocco mostra anche il numero dell'abbonamento, l'importo iniziale pagato, quanto costano il piano ed eventuali servizi/pacchetti e quante volte sono stati addebitati per questo abbonamento. Possono anche vedere se l'abbonamento è **Attivo** , **Scaduto** o **Annullato**.
 
@@ -43,7 +43,7 @@ Ora, se i tuoi clienti scelgono di acquistare pacchetti o servizi per questo abb
 
 Nota che i codici coupon non possono essere aggiunti in questa pagina di modifica dell'abbonamento. Se il cliente ha utilizzato un codice coupon al primo acquisto dell'abbonamento, il codice si applicherà anche a questo nuovo abbonamento.
 
-### Aggiornamento dell'indirizzo di fatturazione:
+### Aggiornamento dell'indirizzo di fatturazione: {#updating-the-billing-address}
 
 Nella pagina Account, i tuoi clienti possono anche aggiornare il loro indirizzo di fatturazione. Devono semplicemente fare clic su **Aggiorna** accanto a _Indirizzo di fatturazione_.
 
@@ -53,7 +53,7 @@ Al tuo cliente apparirà una nuova finestra. Tutto ciò che deve fare è inserir
 
 ![Modulo per aggiornare l'indirizzo di fatturazione](/img/account-page/billing-address-form.png)
 
-### Modifica del template del sito:
+### Modifica del template del sito: {#changing-the-site-template}
 
 Per consentire ai tuoi clienti di modificare i template dei loro siti, devi andare su **Ultimate Multisite > Impostazioni > Siti** e attivare l'opzione **Consenti cambio template**.
 
@@ -81,7 +81,7 @@ Dopo aver attivato la conferma e fatto clic su **Elabora cambio** , il nuovo tem
 
 I clienti possono anche usare **Reset current template** da questo pannello quando devono reimpostare il sito al template attualmente assegnato. Come quando si passa a un altro template, reimpostare un template può sovrascrivere il contenuto del sito, quindi i clienti dovrebbero confermarlo solo quando comprendono l'azione di reimpostazione.
 
-### Aggiunta di domini personalizzati:
+### Aggiunta di domini personalizzati: {#adding-custom-domains}
 
 I tuoi clienti avranno anche la possibilità di aggiungere un dominio personalizzato per questo piano nella pagina del loro account. Per consentire ai tuoi clienti di usare domini personalizzati, vai su **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Dopo aver fatto clic su **Next Step** , i tuoi clienti possono aggiungere il nom
 
 Dopo aver fatto clic su **Add Domain** , il dominio verrà aggiunto all'account del tuo cliente. Ora devono solo modificare i record DNS di questo dominio personalizzato presso il loro registrar di domini.
 
-### Modifica della password:
+### Modifica della password: {#changing-password}
 
 All'interno della dashboard dell'account, i tuoi clienti possono anche modificare la loro password facendo clic su **Change Password**.
 
@@ -125,7 +125,7 @@ Questo mostrerà una nuova finestra in cui i tuoi clienti dovranno inserire la l
 
 ![Modulo di modifica password con campi password attuale e nuova password](/img/account-page/change-password-form.png)
 
-### Zona di pericolo:
+### Zona di pericolo: {#danger-zone}
 
 Abbiamo anche due opzioni che vengono mostrate nella parte **Danger Zone**: **Delete Site** e **Delete Account**. Entrambe si trovano nella parte Danger Zone perché queste due azioni sono irreversibili. Se i tuoi clienti eliminano il loro sito web o il loro account, non possono recuperarli.
 

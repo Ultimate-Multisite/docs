@@ -3,7 +3,7 @@ title: Kesalahan File Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Error Saat Menginstal File Sunrise
+# Error Saat Menginstal File Sunrise {#error-installing-the-sunrise-file}
 
 File sunrise.php adalah file khusus yang dicari oleh WordPress saat proses bootstrap berlangsung. Agar WordPress dapat mendeteksi file sunrise.php, file ini harus berada di dalam **folder wp-content**.
 

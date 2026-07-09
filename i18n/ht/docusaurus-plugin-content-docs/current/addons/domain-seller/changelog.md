@@ -3,7 +3,7 @@ title: Jounal chanjman Vandè Domèn
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Changelog Domain Seller
+# Changelog Domain Seller {#domain-seller-changelog}
 
 Vèsyon 1.3.0 - Lage 2026-06-02
 - Nouvo: Ajoute yon avètisman network-admin lè balans revandè HostAfrica vin twò ba
@@ -134,20 +134,20 @@ Vèsyon 1.0.0 - Pibliye 2025-09-28
 * **Korije:** Tout kòd v1 demode mete ajou ak estanda v2 yo
 * **Retire:** Konpatibilite ansyen v1 (chanjman ki kraze konpatibilite)
 
-### Vèsyon anvan yo (v1 ansyen)
+### Vèsyon anvan yo (v1 ansyen) {#previous-versions-v1-legacy}
 
-### Vèsyon 0.0.3 - 20/08/2019
+### Vèsyon 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Korije: Enkonpatibilite ak Groundhogg CRM
 * Nòt: Sa a te dènye piblikasyon ki konpatib ak v1
 
-### Vèsyon 0.0.2 - 07/12/2018
+### Vèsyon 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Korije: Retire chan License Key la
 * Korije: Onglè plan yo manke lè plugin fonksyonalite a aktif
 * Amelyore: Ajoute yon bouton sote sou chan enskripsyon an
 
-### Vèsyon 0.0.1 - Premye Piblikasyon
+### Vèsyon 0.0.1 - Premye Piblikasyon {#version-001---initial-release}
 
 * Entegrasyon OpenSRS debaz pou WP Ultimo v1
 * Rechèch ak enskripsyon domèn senp

@@ -3,7 +3,7 @@ title: Fluent Forms மாற்றப் பதிவேடு
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms மாற்றங்கள் பட்டியல்
+# Fluent Forms மாற்றங்கள் பட்டியல் {#fluent-forms-changelog}
 
 பதிப்பு: 2.0.1 - வெளியிட்ட தேதி: 2025-09-28
 

@@ -3,13 +3,13 @@ title: Aedificatio Integrationis Registrarii Consuetudinariae
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Aedificatio Integrationis Registratoris Consuetudinariae
+# Aedificatio Integrationis Registratoris Consuetudinariae {#building-a-custom-registrar-integration}
 
 Additamentum Venditoris Dominiorum utitur forma **Registri Integrationum**. Unusquisque registrator est classis PHP quae `Domain_Selling_Capability` implet et se ipsam per hamum actionis `wu_domain_seller_register_capabilities` registrat.
 
 Hic dux ostendit quomodo registratorem consuetudinarium conectere possis.
 
-## Interfacies
+## Interfacies {#the-interface}
 
 Classis tua `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` implere et `WP_Ultimo\Integrations\Base_Capability_Module` extendere debet.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Methodi optionales
+### Methodi optionales {#optional-methods}
 
 Has imple ut proprietates additas reseres. Additamentum subsidium per `method_exists()` detegit:
 
@@ -81,7 +81,7 @@ Has imple ut proprietates additas reseres. Additamentum subsidium per `method_ex
 | `get_epp_code(string $domain_name): array` | Translatio dominii (exiens) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Translatio dominii (iniens) |
 
-### Conventio valoris redditi
+### Conventio valoris redditi {#return-value-convention}
 
 Omnes methodi indicem reddunt qui saltem clavem `success` continet:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Facultatem tuam registrare
+## Facultatem tuam registrare {#registering-your-capability}
 
 Classim tuam registra actione `wu_domain_seller_register_capabilities` utens:
 
@@ -109,7 +109,7 @@ Primum argumentum ad `add_capability()` est **ID praebitoris** — slug litteris
 
 ---
 
-## Campis credentialium ad magum additis
+## Campis credentialium ad magum additis {#adding-credential-fields-to-the-wizard}
 
 Ut administratores credentialia per magum configurationis inserere possint, integrationem tuam registra:
 
@@ -137,7 +137,7 @@ Credentialia servantur ut optiones retiaculi, IDs camporum pro clavibus adhibiti
 
 ---
 
-## Hami pro actionibus post-registrationem
+## Hami pro actionibus post-registrationem {#hooks-for-post-registration-actions}
 
 Utere his actionibus ut webhooks, apparatum, notificationes, aut renovationes CRM excites:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Actorum conscriptio
+## Actorum conscriptio {#logging}
 
 Scribe in canalem actorum provisori tuo proprium per `wu_log_add()`:
 

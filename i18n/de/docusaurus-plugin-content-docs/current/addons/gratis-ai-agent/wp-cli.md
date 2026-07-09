@@ -3,11 +3,11 @@ title: WP-CLI Reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Referenz
+# WP-CLI Referenz {#wp-cli-reference}
 
 Gratis AI Agent bringt eine Kommando-Familie `wp gratis-ai-agent` mit, mit der Sie den Agenten testen, Fähigkeiten verwalten und den Status des Agenten direkt über die Kommandozeile abfragen können. Alle Befehle erfordern WP-CLI 2.0 oder höher.
 
-## Installation
+## Installation {#installation}
 
 Die WP-CLI-Befehle werden automatisch registriert, sobald das Plugin aktiviert ist. Überprüfen Sie dies mit:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Führt die Agent Capabilities Benchmark Suite aus – ein Set komplexer, mehrstufiger Prompts, die die gesamte Bandbreite der Fähigkeiten testen. Nutzen Sie dies, um die Modellleistung zu bewerten, AI-Anbieter zu vergleichen oder Fähigkeitspakete zu validieren, bevor Sie sie in die Produktion einsetzen.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Optionen
+### Optionen {#options}
 
 | Option | Beschreibung |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Ausgabeformat: `table` (Standard), `json`, `csv` |
 | `--save` | Speichert die Benchmark-Ergebnisse in der Datenbank für den historischen Vergleich |
 
-### Beispiele
+### Beispiele {#examples}
 
 Führt die gesamte Benchmark-Suite mit dem aktuellen Anbieter und Modell aus:
 
@@ -57,7 +57,7 @@ Führt gegen ein spezifisches Modell aus und speichert die Ergebnisse:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Ausgabe
+### Ausgabe {#output}
 
 Die Benchmark gibt pro Frage eine Zeile mit den folgenden Spalten aus:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark-Fragen
+### Benchmark-Fragen {#benchmark-questions}
 
 Die Standard-Suite enthält:
 
@@ -95,11 +95,11 @@ Zusätzliche Fragen können über den Filter `gratis_ai_agent_benchmark_question
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Verwaltet installierte Fähigkeiten und Fähigkeitspakete.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Listet alle registrierten Fähigkeiten, deren Quelle (Core oder Pack) und deren aktuellen Status auf.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Lädt und aktiviert ein Fähigkeitspaket aus dem Register.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Deaktiviert eine bestimmte Fähigkeit, ohne das Paket zu entfernen. Nützlich, um den Umfang des Agenten auf einer bestimmten Website einzuschränken.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Aktiviert eine zuvor deaktivierte Fähigkeit wieder.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Zeigt die aktuelle Agentenkonfiguration und den Verbindungsstatus an.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Zeigt die jüngsten Agentenaktivitäten aus dem Debug-Log.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Setzt den Agentenzustand zurück: löscht injiziertes CSS, entfernt vom Agenten registrierte CPTs und Taxonomien, setzt globale Styles zurück und leert den Options-Cache des Agenten. Entfernt das Plugin oder seine Einstellungen nicht.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 Alle Befehle verlassen bei Erfolg den Status `0`. Nicht-null Exit Codes:
 

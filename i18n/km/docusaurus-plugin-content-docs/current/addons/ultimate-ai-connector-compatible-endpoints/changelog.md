@@ -3,9 +3,9 @@ title: កំណត់ហេតុការផ្លាស់ប្តូរ Ult
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector សម្រាប់កំណត់ហេតុការផ្លាស់ប្តូរ Endpoints ដែលអាចប្រើជាមួយគ្នា
+# Ultimate AI Connector សម្រាប់កំណត់ហេតុការផ្លាស់ប្តូរ Endpoints ដែលអាចប្រើជាមួយគ្នា {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## កំណែ 2.0.0 — ចេញផ្សាយនៅ 2026-04-24
+## កំណែ 2.0.0 — ចេញផ្សាយនៅ 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * ថ្មី៖ គាំទ្រ provider ច្រើន — កំណត់រចនាសម្ព័ន្ធ AI endpoints ច្រើន ហើយបញ្ជូនសំណើដោយមាន fallback ស្វ័យប្រវត្តិឆ្លងកាត់ providers។
 * កែ៖ ការរួមបញ្ចូល SDK សម្រាប់ provider ច្រើន ជាមួយ provider IDs, registration URLs និងការកំណត់វិសាលភាព HTTP filter ត្រឹមត្រូវតាម provider នីមួយៗ។
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * កែ៖ បានលុបសំណើ HTTP ដែលរារាំង ដែលដំណើរការរាល់ពេលផ្ទុកទំព័រ។
 * កែលម្អ៖ GitHub Actions workflows បានដំឡើងទៅ Node.js 24។
 
-## កំណែ 1.0.0 — ការចេញផ្សាយដំបូង
+## កំណែ 1.0.0 — ការចេញផ្សាយដំបូង {#version-100--initial-release}

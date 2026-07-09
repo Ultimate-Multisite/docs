@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Dikeketso tsa Ultimate Multisite
+# Dikeketso tsa Ultimate Multisite {#ultimate-multisite-addons}
 
 Dikeketso di atolosa Ultimate Multisite ka ditshebetso le dikgokahanyo tse eketsehileng. Dikeketso tse ngata di a lefellwa mme di ka rekwa ho [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Ho Kenya
+## Ho Kenya {#installation}
 
 Dikeketso di ka kenngwa ka ditsela tse pedi:
 
 1. **Ka Leqephe la Keketso** -- Eya leqepheng la taolo ya dikeketso la sebaka sa hao tsamaisong ya WordPress
 2. **Ho Jarolla ka Letsoho** -- Jarolla ho [Account ya hao](https://ultimatemultisite.com/my-account/downloads/) mme o e kenye ka Plugins > Add New
 
-## Dikeketso tse Fumanehang
+## Dikeketso tse Fumanehang {#available-addons}
 
 | Keketso | Tlhaloso |
 |-------|-------------|

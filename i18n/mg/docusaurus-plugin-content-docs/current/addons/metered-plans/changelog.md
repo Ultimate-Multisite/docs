@@ -3,7 +3,7 @@ title: Diarin'ny fanovana ny Drafitra voarefy
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Tantaran'ny fanovana ho an'ny Drafitra Voarefy
+# Tantaran'ny fanovana ho an'ny Drafitra Voarefy {#metered-plans-changelog}
 
 Dikan-teny 1.1.0 - Navoaka tamin'ny 2026-05-05
 - Vaovao: Fandoavana araka ny AI token ho an'ny subsite multisite — araho sy ampidiro faktiora ny fampiasana AI token manerana ny tranokalan'ny mpanjifa miaraka amin'ny tahan'ny vidiny azo amboarina isaky ny token
@@ -14,17 +14,17 @@ Dikan-teny 1.1.0 - Navoaka tamin'ny 2026-05-05
 - Fanamboarana: Voavaha ny hadisoana mahafaty sy ny olana double-initialization rehefa mampiditra plugin
 - Nohatsaraina: Nampiana script npm check-env mba hahafahan'ny tontolon'ny mpamorona manamboatra tena amin'ny fandefasana voalohany
 
-### 1.0.3
+### 1.0.3 {#103}
 * Nohavaozina ho Plugin Update Checker v5
 * Nampiana lohateny plugin WordPress maoderina
 * Nohatsaraina ny fifanarahana amin'ireo dikan-teny WordPress farany
 * Nohatsaraina ny fahombiazan'ny fanarahana fampiasana
 
-### 1.0.2
+### 1.0.2 {#102}
 * Fanamboarana bug sy fanatsarana fahombiazana
 * Nohatsaraina ny tatitra fampiasana
 
-### 1.0.0
+### 1.0.0 {#100}
 * Famoahana voalohany
 * Fiasa fototra amin'ny fandoavana voarefy
 * Fanarahana fampiasana sy kajy overage

@@ -3,7 +3,7 @@ title: Inona no WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Inona ny WordPress Multisite?
+# Inona ny WordPress Multisite? {#what-is-wordpress-multisite}
 
 Ao anatin'ny fototra (core) dia manome fitaovana iray antsoina hoe ‘Multisite’ ny WordPress, izay mamerina ny fiandohany tamin'ny 2010 rehefa nivoaka ny WordPress 3.0. Hatramin'izany dia nahazo fanavaozana maro izy mba hampidirana fepetra vaovao sy hanamafisana ny fiarovana.
 
@@ -11,7 +11,7 @@ Amin'ny fototra, azo heverina fa: Ny Oniversita iray dia mitazona fametrahana Wo
 
 ##
 
-## Inona marina no atao hoe WordPress Multisite?
+## Inona marina no atao hoe WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Ny Multisite dia fitaovana ao amin'ny WordPress izay mamela ireo tranokala maro hiara-miasa amin'ny fametrahana WordPress tokana iray. Rehefa voasokajy (activated) ny multisite, dia ovaina ho toerana manohana izay matetika antsoina hoe **"tambajotra tranokala"** (network of sites) ilay toerana WordPress orishina.
 
@@ -23,7 +23,7 @@ Ity zava-nitranga ity dia iray amin'ireo tombony lehibe indrindra amin'ny multis
 
 ##
 
-## Subdomain ve na Subdirectory?
+## Subdomain ve na Subdirectory? {#subdomain-or-subdirectory}
 
 Misy fomba roa amin'ny fiasana WordPress multisite – ary mila misafidy iray rehefa manova fametrahana WordPress mahazatra ho multisite:
 
@@ -49,7 +49,7 @@ Ny fanamby lehibe indrindra amin'ny fametrahana ny mode subdomain dia ny fandrai
 
 Mifanohitra amin'ny mode subdirectory, ireo subsite ao anatin'ny tambajotra mifototra amin'ny subdomain dia heverin'ny search engine ho tranonkala hafa, izay midika fa ny votoaty ao amin'ny subsite iray dia tsy miara-miasa amin'ny fahombiazan'ny SEO (SEO performance) an'ireo subsite hafa mihitsy.
 
-## Ny Super Admin
+## Ny Super Admin {#the-super-admin}
 
 Ny fametrahana WordPress iray ihany dia ahafahanao manampy mpampiasa tsy misy isan-jato ary manome ireo mpampiasa ireo andraikitra samihafa sy alalana samihafa.
 
@@ -63,7 +63,7 @@ Ny plugins sy themes dia azo apetraka na esorina amin'ny alalan'ny network admin
 
 _Fanamari: toa ny fampidirana olona iray ao anatin'ny tambajotra iainana (network) sy ny fanomezana azy ho super admin dia manome fahefana tanteraka amin'ny tambajotranareo izany. Ohatra, ireo super admin hafa dia afaka manala ny maha-super admin anao, izay tena manakana anao tsy hiditra ao anatin'ny panel fitantanana tambajotra iainanao mihitsy. Mba ahafahana mamela ny mpanjifa Ultimate Multisite hanana fifehezana tsara (granular control) momba izay ataon'ireo super admin fanampiny, dia misy add-on iray antsoina hoe Support Agents. Ity add-on ity dia ahafahanao mamorona karazana mpampiasa hafa – agent – izay manana alalana ilaina ihany mba hanatanterahana ny asa ataony ao anatin'ny tambajotra iainana._
 
-## Inona no miaraka eo amin'ny subsites sy tsy miaraka?
+## Inona no miaraka eo amin'ny subsites sy tsy miaraka? {#what-is-shared-among-subsites-and-what-is-not}
 
 Tsy niresahantsika teo aloha, iray amin'ireo tombony lehibe indrindra amin'ny WordPress multisite dia ny hoe ny subsites rehetra dia mizara ireo fepetra (configurations), rakitra fototra (core files), themes, plugins, ary ireo rakitra fototra an'ny WordPress.
 
@@ -73,7 +73,7 @@ Na izany aza, misy zavatra izay voafetra tsara isaky ny subsite.
 - Ny subsite tsirairay dia manana panel admin manokana ary afaka mampandeha na manakana plugins na themes raha tsy voafetra ho aktiva tao amin'ny tambajotra iainana izy avy amin'ny super admin iray.
 - Ny ankamaro ny database tables dia vita isaky ny subsite, izay midika fa ny posts, comments, pages, settings ary zavatra maro hafa dia voafetra isaky ny subsite.
 
-## Fitantanana mpampiasa ao amin'ny WordPress Multisite
+## Fitantanana mpampiasa ao amin'ny WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Ny lohahevitra sarotra iray momba ny WordPress multisite dia ny fitantanana mpampiasa (user management). Ny user table an'ny WordPress dia iray amin'ireo vitsivitsy izay mizara eo amin'ny subsites rehetra.
 
@@ -97,7 +97,7 @@ _Fanamarihana: Fantatsika hoe ratsy loatra izany raha jerena ny fomba fiasanao, 
 
 Na dia e na dia iantso, na dia misy ny tabilao ho an'ny mpampiasa iombonana, afaka manampy ireo administrator an'ny subsite na ny super admin no afaka manampy sy mamoaka mpampiasa amin'ireo subsite ireo, ary azo atao koa fa manana andraikitra (roles) samihafa ireo mpampiasa eo amin'ireo subsite hafa.
 
-## Fandraisana an-tsaina momba ny fahombiazana (Performance considerations)
+## Fandraisana an-tsaina momba ny fahombiazana (Performance considerations) {#performance-considerations}
 
 Ny WordPress multisite dia tena mahery rehefa miresaka momba ny isan'ny toerana azo iantohana azy. Azo andrana izany amin'ny fomba ahitana fa ireo serivisy toy ny [WordPress.com](https://WordPress.com), Edublogs ary Campuspress dia mifototra amin'ny multisite ary misy host anisan'izy ireo manome isan-karazaman toerana an'ilay hosting.
 

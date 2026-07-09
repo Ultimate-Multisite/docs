@@ -4,11 +4,11 @@ title: फ़िल्टर - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 यह फ़िल्टर गणना की गई समाप्ति तिथि (expiration date) को नवीनीकरण (renewal) के बाद सेट करने के लिए फ़िल्टर करता है।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 | $membership_id | `int` | सदस्यता की ID। |
 | $membership | `\Membership` | सदस्यता ऑब्जेक्ट। |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) में लाइन 2192 पर परिभाषित।

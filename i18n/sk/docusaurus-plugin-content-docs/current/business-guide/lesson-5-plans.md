@@ -3,15 +3,15 @@ title: 'Lekcia 5: Navrhovanie vašich plánov'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lekcia 5: Navrhovanie vašich plánov
+# Lekcia 5: Navrhovanie vašich plánov {#lesson-5-designing-your-plans}
 
 Úrovne vašich plánov nie sú len cenové úrovne -- sú odrazom toho, ako vaši špecializovaní zákazníci skutočne fungujú. V tejto lekcii navrhnete úrovne produktov, ktoré zodpovedajú reálnym potrebám fitness podnikov v rôznych fázach.
 
-## Kde sme skončili
+## Kde sme skončili {#where-we-left-off}
 
 FitSite má pripravené tri šablóny (Studio Essential, Gym Pro, Fitness Chain). Teraz vytvoríme plány, ktoré určujú, k čomu zákazníci získajú prístup a koľko zaplatia.
 
-## Premýšľanie v zákazníckych segmentoch
+## Premýšľanie v zákazníckych segmentoch {#thinking-in-customer-segments}
 
 Chybou, ktorú robí väčšina ľudí, je navrhovanie plánov okolo technických funkcií (úložisko, šírka pásma, počet stránok). Vaši špecializovaní zákazníci v týchto pojmoch nepremýšľajú. Majiteľ posilňovne premýšľa o tom, čo potrebuje na prevádzkovanie svojho podniku.
 
@@ -25,11 +25,11 @@ Pre fitness štúdiá existujú tri prirodzené segmenty:
 
 Vaše plány by mali zodpovedať týmto segmentom, nie svojvoľným balíkom funkcií.
 
-## Vytváranie plánov FitSite
+## Vytváranie plánov FitSite {#creating-the-fitsite-plans}
 
 Pre každý plán prejdite na **Ultimate Multisite > Products > Add Product**.
 
-### Plán 1: FitSite Starter -- 49 USD/mesiac
+### Plán 1: FitSite Starter -- 49 USD/mesiac {#plan-1-fitsite-starter----49month}
 
 **Cieľ**: Sólo tréneri a malé štúdiá
 
@@ -59,7 +59,7 @@ Pre každý plán prejdite na **Ultimate Multisite > Products > Add Product**.
 - Vami vybratá téma: Force Activate
 - Všetky ostatné témy: Hidden
 
-### Plán 2: FitSite Growth -- 99 USD/mesiac
+### Plán 2: FitSite Growth -- 99 USD/mesiac {#plan-2-fitsite-growth----99month}
 
 **Cieľ**: Zavedené posilňovne s jednou lokalitou
 
@@ -85,7 +85,7 @@ Pre každý plán prejdite na **Ultimate Multisite > Products > Add Product**.
 - Skupina plánov: FitSite Plans
 - Poradie produktu: 2
 
-### Plán 3: FitSite Pro -- 199 USD/mesiac
+### Plán 3: FitSite Pro -- 199 USD/mesiac {#plan-3-fitsite-pro----199month}
 
 **Cieľ**: Fitness reťazce s viacerými lokalitami
 
@@ -109,7 +109,7 @@ Pre každý plán prejdite na **Ultimate Multisite > Products > Add Product**.
 - Skupina plánov: FitSite Plans
 - Poradie produktu: 3
 
-## Nastavenie skupiny plánov
+## Nastavenie skupiny plánov {#setting-up-the-plan-group}
 
 Skupina plánov zabezpečuje, že zákazníci môžu prejsť na vyšší alebo nižší plán iba v rámci rodiny plánov FitSite. Na karte **Up & Downgrades** každého plánu:
 
@@ -118,7 +118,7 @@ Skupina plánov zabezpečuje, že zákazníci môžu prejsť na vyšší alebo n
 
 Tým sa vytvorí jasná cesta upgradu: Starter → Growth → Pro.
 
-## Pridanie Order bumps
+## Pridanie Order bumps {#adding-order-bumps}
 
 Order bumps sú doplnkové produkty ponúkané počas checkout. Pre FitSite zvážte:
 
@@ -128,7 +128,7 @@ Order bumps sú doplnkové produkty ponúkané počas checkout. Pre FitSite zvá
 
 Vytvorte ich ako produkty typu **Package** v Ultimate Multisite a priraďte ich k relevantným plánom.
 
-## Prečo táto štruktúra funguje
+## Prečo táto štruktúra funguje {#why-this-structure-works}
 
 - **Starter** odstraňuje bariéry vstupu -- nízka cena, jednoduchá ponuka, rýchlo dostane trénerov online
 - **Growth** pridáva funkcie, o ktoré posilňovne skutočne žiadajú -- rezervácie, galérie, vlastné domény
@@ -136,7 +136,7 @@ Vytvorte ich ako produkty typu **Package** v Ultimate Multisite a priraďte ich 
 - **Order bumps** umožňujú zákazníkom prispôsobiť si ponuku bez komplikovania základných plánov
 - **Jasná cesta upgradu** znamená, že zákazníci rastú s vami namiesto toho, aby odišli
 
-## Sieť FitSite doteraz
+## Sieť FitSite doteraz {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Čo sme v tejto lekcii vytvorili
+## Čo sme v tejto lekcii vytvorili {#what-we-built-this-lesson}
 
 - **Tri úrovne plánov** priradené k reálnym segmentom fitness podnikov
 - **Obmedzovanie funkcií** pomocou ovládacích prvkov pluginov a šablón v Ultimate Multisite

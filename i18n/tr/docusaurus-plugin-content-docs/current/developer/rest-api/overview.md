@@ -3,28 +3,28 @@ title: REST API Genel Bakış
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Referansı
+# REST API Referansı {#rest-api-reference}
 
-## Temel Yapılandırma
+## Temel Yapılandırma {#base-configuration}
 
 **Temel URL:** `{site_url}/wp-json/wu/v2/`
 **Kimlik Doğrulama:** API Anahtarı ve Gizli Anahtar (HTTP Basic Auth veya URL Parametreleri)
 
-## Kimlik Doğrulama
+## Kimlik Doğrulama {#authentication}
 
-### API'yi Etkinleştir
+### API'yi Etkinleştir {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Kimlik Bilgilerini Al
+### API Kimlik Bilgilerini Al {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Kimlik Doğrulama Yöntemleri
+### Kimlik Doğrulama Yöntemleri {#authentication-methods}
 
 **HTTP Basic Auth (Önerilen):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Temel Uç Noktalar
+## Temel Uç Noktalar {#core-endpoints}
 
-### 1. Müşteriler API
+### 1. Müşteriler API {#1-customers-api}
 
 **Temel Rota:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Siteler API
+### 2. Siteler API {#2-sites-api}
 
 **Temel Rota:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Üyelikler API
+### 3. Üyelikler API {#3-memberships-api}
 
 **Temel Rota:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Ürünler API
+### 4. Ürünler API {#4-products-api}
 
 **Temel Rota:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Ödemeler API
+### 5. Ödemeler API {#5-payments-api}
 
 **Temel Rota:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Alan Adları API
+### 6. Alan Adları API {#6-domains-api}
 
 **Temel Rota:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Kayıt Uç Noktası
+## Kayıt Uç Noktası {#registration-endpoint}
 
 `/register` uç noktası eksiksiz bir ödeme/kayıt akışı sağlar:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Egemen Kiracı Uç Noktaları
+## Egemen Kiracı Uç Noktaları {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, yalıtılmış kiracıları sağlayan, inceleyen veya doğrulayan entegrasyonlar için egemen kiracı REST kapsamı ekler.
 
@@ -242,7 +242,7 @@ Tipik geçiş durumu yanıtları şunları içerir:
 
 `ready: false` değerini yayın öncesi engelleyici olarak ele alın. Doğrulama ayrıntılarını kontrol edin; veritabanı host bağlamasını, kuyruğu, kullanıcı sağlamayı veya yönlendirme sorununu düzeltin, ardından doğrulamayı yeniden deneyin.
 
-## Hata Yanıtları
+## Hata Yanıtları {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tipik geçiş durumu yanıtları şunları içerir:
 }
 ```
 
-## Sayfalama ve Filtreleme
+## Sayfalama ve Filtreleme {#pagination-and-filtering}
 
 **Sorgu Parametreleri:**
 ```http

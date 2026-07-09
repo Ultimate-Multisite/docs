@@ -3,15 +3,15 @@ title: '7-dars: Uni o‘zingizniki qilish'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 7-dars: Uni o'zingizniki qilish
+# 7-dars: Uni o'zingizniki qilish {#lesson-7-making-it-yours}
 
 Mijozlaringiz hech qachon "qandaydir WordPress plaginidan" foydalanayotgandek his qilmasligi kerak. Ular FitSite'dan -- o'z sohasi uchun qurilgan platformadan foydalanayotgandek his qilishi kerak. Bu dars brendlash, white-label qilish va platformani mahsulotdek his qildirishni qamrab oladi.
 
-## Qayerda to'xtagan edik
+## Qayerda to'xtagan edik {#where-we-left-off}
 
 FitSite fitness studiya egalarini reja tanlashdan jonli saytgacha olib boradigan ishlaydigan to'lovni rasmiylashtirish oqimiga ega. Endi butun tajribani yaxlit, brendlangan mahsulotdek his qildiramiz.
 
-## Platformangiz domeni
+## Platformangiz domeni {#your-platform-domain}
 
 Brendingizning poydevori — domeningiz. FitSite uchun:
 
@@ -19,7 +19,7 @@ Brendingizning poydevori — domeningiz. FitSite uchun:
 - **Mijoz saytlari**: `studioname.fitsite.com` (subdomenlar)
 - **Maxsus domenlar**: Growth va Pro rejalaridagi mijozlar o'z domenlarini ulashi mumkin
 
-### Domeningizni sozlash
+### Domeningizni sozlash {#setting-up-your-domain}
 
 1. Platforma domeningizni ro'yxatdan o'tkazing
 2. Uni hosting provayderingizga yo'naltiring
@@ -28,11 +28,11 @@ Brendingizning poydevori — domeningiz. FitSite uchun:
 
 Batafsil ko'rsatmalar uchun [Domen mappingini qanday sozlash](/user-guide/domain-mapping/how-to-configure-domain-mapping) sahifasiga qarang.
 
-## Admin tajribasini white-label qilish
+## Admin tajribasini white-label qilish {#white-labeling-the-admin-experience}
 
 Fitness studiya egasi o'z sayt Dashboard'iga kirganda, WordPress yoki Ultimate Multisite brendingini emas, sizning brendingizni ko'rishi kerak.
 
-### Maxsus kirish sahifasi
+### Maxsus kirish sahifasi {#custom-login-page}
 
 WordPress kirish sahifasini quyidagilarni ko'rsatadigan qilib moslang:
 
@@ -40,7 +40,7 @@ WordPress kirish sahifasini quyidagilarni ko'rsatadigan qilib moslang:
 - Fitnessga mos fon tasvirlari
 - Brend ranglaringiz
 
-### Dashboard brendingi
+### Dashboard brendingi {#dashboard-branding}
 
 Quyidagilar uchun [Admin Page Creator](/addons/admin-page-creator) addonidan yoki maxsus CSS'dan foydalaning:
 
@@ -48,7 +48,7 @@ Quyidagilar uchun [Admin Page Creator](/addons/admin-page-creator) addonidan yok
 - Admin rang sxemasini brendingizga moslab sozlash
 - Fitnessga xos tezkor havolalar va yordam resurslari bilan maxsus dashboard vidjeti qo'shish
 
-### Maxsus admin sahifalari
+### Maxsus admin sahifalari {#custom-admin-pages}
 
 Fitness studiya egalari uchun eng muhim amallarni ko'rsatadigan maxsus admin sahifalarini yaratishni ko'rib chiqing:
 
@@ -58,11 +58,11 @@ Fitness studiya egalari uchun eng muhim amallarni ko'rsatadigan maxsus admin sah
 
 Bu standart WordPress menyusida yashirish o'rniga, sohaga mos amallarni markazga olib chiqib, o'rganish jarayonini osonlashtiradi.
 
-## Kommunikatsiyalaringizni brendlash
+## Kommunikatsiyalaringizni brendlash {#branding-your-communications}
 
 Har bir email, invoice va bildirishnoma brendingizni mustahkamlashi kerak.
 
-### Tizim emaillari
+### Tizim emaillari {#system-emails}
 
 **Ultimate Multisite > Settings > Emails** bo'limiga o'ting va barcha tizim emaillarini moslang:
 
@@ -79,7 +79,7 @@ Moslash kerak bo'lgan asosiy emaillar:
 | To'lov kvitansiyasi | "To'lov qabul qilindi" | "FitSite obuna to'lovi tasdiqlandi" |
 | Sinov muddati tugashi | "Sinov muddatingiz tez orada tugaydi" | "FitSite sinov muddatingiz 3 kundan keyin tugaydi -- studiyangiz veb-saytini jonli saqlang" |
 
-### Invoicelar
+### Invoicelar {#invoices}
 
 Invoice shablonlarini quyidagilar bilan moslang:
 
@@ -87,7 +87,7 @@ Invoice shablonlarini quyidagilar bilan moslang:
 - Biznes ma'lumotlaringiz
 - Fitnessga xos mahsulot nomlari (umumiy reja ID'lari emas)
 
-## Mijozlarga ko'rinadigan sayt
+## Mijozlarga ko'rinadigan sayt {#the-customer-facing-site}
 
 Asosiy domeningiz (`fitsite.com`) platformani sotadigan marketing saytiga muhtoj. Bu Ultimate Multisite tarmoq adminidan alohida -- biznesingizning ommaviy yuzi.
 
@@ -103,7 +103,7 @@ Asosiy sahifalar:
 Create your marketing site as a site within your own network. This lets you manage it from the same dashboard and demonstrates your own platform's capabilities.
 :::
 
-## Mijozlar uchun maxsus domen
+## Mijozlar uchun maxsus domen {#custom-domain-for-customers}
 
 Maxsus domenlarni o'z ichiga olgan rejalardagi mijozlar uchun jarayonni aniq hujjatlashtiring:
 
@@ -113,7 +113,7 @@ Maxsus domenlarni o'z ichiga olgan rejalardagi mijozlar uchun jarayonni aniq huj
 
 Aynan shu jarayon uchun texnik bo'lmagan fitness studiya egalari uchun yozilgan yordam maqolasi yoki bilimlar bazasi yozuvini yarating.
 
-## Hozirgacha FitSite tarmog'i
+## Hozirgacha FitSite tarmog'i {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Bu darsda nimalarni qurdik
+## Bu darsda nimalarni qurdik {#what-we-built-this-lesson}
 
 - Brendlangan tajriba uchun sozlangan **platforma domeni va DNS**
 - Butun FitSite brendingi bilan **white-label qilingan admin**

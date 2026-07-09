@@ -3,11 +3,11 @@ title: ئىلغار كود مىساللىرى
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ئىلغار كود مىساللىرى
+# ئىلغار كود مىساللىرى {#advanced-code-examples}
 
 بۇ مىساللار Ultimate Multisite بىلەن ئىلغار بىرلەشتۈرۈش ئەندىزىلىرىنى كۆرسىتىدۇ.
 
-## ھەرىكەتچان باھا بېكىتىش ماتورى
+## ھەرىكەتچان باھا بېكىتىش ماتورى {#dynamic-pricing-engine}
 
 ھەجىم، سادىقلىق ۋە پەسىللىك ئېتىبارلارنى قوللىنىدىغان قائىدە ئاساسىدىكى باھا بېكىتىش ماتورى:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## ئىلغار تور بېكەت تەمىنلەش
+## ئىلغار تور بېكەت تەمىنلەش {#advanced-site-provisioning}
 
 پىلان ئىقتىدارلىرىغا ئاساسەن يېڭى تور بېكەتلەرنى قىستۇرمىلار، SSL، CDN، زاپاسلاش ۋە نازارەت قىلىش بىلەن ئاپتوماتىك سەپلەڭ:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## خاس چەكلىمىلەر سىستېمىسى
+## خاس چەكلىمىلەر سىستېمىسى {#custom-limitations-system}
 
 ئىشلىتىش ئاگاھلاندۇرۇشلىرى بىلەن بايلىق چەكلىرىنى ئىز قوغلاڭ ۋە ئىجرا قىلىڭ:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB ئاتوملۇق ھېسابلىغۇچ `increment_item()` بىلەن
+## BerlinDB ئاتوملۇق ھېسابلىغۇچ `increment_item()` بىلەن {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 BerlinDB `Query` classىغا `increment_item()` methodىنى قوشتى. ئۇنى ئوقۇش-ئۆزگەرتىش-يېزىش رىقابەتلىرى بولماي، سانلىق ستونلاردا بىخەتەر، ئاتوملۇق ئاشۇرۇش ئېلىپ بېرىش ئۈچۈن ئىشلىتىڭ — بىرلا ۋاقىتتا كەلگەن تەلەپلەر ئاستىدا ئىجرا بولىدىغان ھېسابلىغۇچلار، ئىشلىتىش چەكلىمىلىرى ۋە سۈرئەت-چەكلەش تەكشۈرۈشلىرى ئۈچۈن پايدىلىق.
 
-### Method ئىمزاسى
+### Method ئىمزاسى {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 BerlinDB `Query` classىغا `increment_item()` method
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### ئاساسىي ئىشلىتىش
+### ئاساسىي ئىشلىتىش {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### ھەر بىر ئەزالىق بويىچە API ئىشلىتىلىشىنى ئىز قوغلاش
+### ھەر بىر ئەزالىق بويىچە API ئىشلىتىلىشىنى ئىز قوغلاش {#tracking-api-usage-per-membership}
 
 ھەر بىر ئەزالىققا API سۈرئەت چەكلىمىسىنى ئىجرا قىلىش ئۈچۈن ئەمەلىي ئەندىزە:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### نېمىشقا `update_item()` ئەمەس، `increment_item()`
+### نېمىشقا `update_item()` ئەمەس، `increment_item()` {#why-incrementitem-instead-of-updateitem}
 
 ئاددىي ئوقۇش-ئۆزگەرتىش-يېزىش ئۇسۇلى بىرلا ۋاقىتتىكى تەلەپلەر ئاستىدا بىخەتەر ئەمەس:
 

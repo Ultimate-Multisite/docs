@@ -3,9 +3,9 @@ title: Дневник на измени за Ultimate AI Connector за комп
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector за компатибилни крајни точки Changelog
+# Ultimate AI Connector за компатибилни крајни точки Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — Објавено на 2026-04-24
+## Version 2.0.0 — Објавено на 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Ново: Поддршка за повеќе даватели — конфигурирајте повеќе AI крајни точки и насочувајте барања со автоматско враќање на резервна опција меѓу давателите.
 * Поправка: Интеграција со SDK за повеќе даватели со точни ID-а на даватели, URL-ови за регистрација и опсег на HTTP филтри по давател.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Поправка: Елиминирано блокирачко HTTP барање што се активираше при секое вчитување страница.
 * Подобрено: GitHub Actions workflows надградени на Node.js 24.
 
-## Version 1.0.0 — Почетно издание
+## Version 1.0.0 — Почетно издание {#version-100--initial-release}

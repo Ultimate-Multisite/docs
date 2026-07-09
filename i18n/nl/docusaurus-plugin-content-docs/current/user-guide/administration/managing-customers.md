@@ -3,7 +3,7 @@ title: Klanten beheren
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Klanten beheren
+# Klanten beheren {#managing-customers}
 
 De **Klanten** pagina toont de lijst met leden die zijn geregistreerd in uw netwerk. Deze pagina toont basisgebruikersinformatie, waaronder naam, e-mailadres, laatste inlog en een **switch to** link waarmee u zich kunt aanmelden bij de subsite van de gebruiker als sitebeheerder.
 

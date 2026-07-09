@@ -3,19 +3,19 @@ title: 'Aralin 13: Pagpapalawak'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Aralin 13: Pagpapalawak
+# Aralin 13: Pagpapalawak {#lesson-13-scaling-up}
 
 Mayroon ka nang gumaganang platform na may nagbabayad na mga customer. Sinasaklaw ng araling ito kung paano lumago mula sa maliit na operasyon tungo sa napapanatiling negosyo -- pagpapalawak ng imprastraktura, pag-a-automate ng mga operasyon, at pagpapataas ng kita bawat customer.
 
-## Kung Saan Tayo Huminto
+## Kung Saan Tayo Huminto {#where-we-left-off}
 
 Live na ang FitSite, nagsa-sign up ang mga customer, at pinapatakbo mo ang pang-araw-araw na operasyon. Ngayon ay tututok tayo sa paglago.
 
-## Alamin ang Iyong Mga Numero
+## Alamin ang Iyong Mga Numero {#know-your-numbers}
 
 Bago magpalawak, unawain kung nasaan ka:
 
-### Mahahalagang Sukatan
+### Mahahalagang Sukatan {#key-metrics}
 
 - **MRR (Buwanang Paulit-ulit na Kita)**: Kabuuang buwanang kita mula sa subscription
 - **Bilang ng customer**: Kabuuang aktibong subscriber
@@ -24,7 +24,7 @@ Bago magpalawak, unawain kung nasaan ka:
 - **LTV (Lifetime Value)**: Karaniwang kita bawat customer sa kabuuan ng kanilang subscription
 - **CAC (Customer Acquisition Cost)**: Karaniwang gastos para makakuha ng isang customer
 
-### Halimbawa: FitSite sa 50 Customer
+### Halimbawa: FitSite sa 50 Customer {#example-fitsite-at-50-customers}
 
 | Sukatan | Halaga |
 |--------|-------|
@@ -36,9 +36,9 @@ Bago magpalawak, unawain kung nasaan ka:
 
 Sinasabi sa iyo ng mga numerong ito kung ano ang pagtutuunan. Mataas na churn? Ayusin ang retention. Mababang ARPU? Itulak ang mga upgrade. Mataas na CAC? I-optimize ang mga channel ng acquisition.
 
-## Pagpapalawak ng Imprastraktura
+## Pagpapalawak ng Imprastraktura {#scaling-infrastructure}
 
-### Kailan Magpapalawak
+### Kailan Magpapalawak {#when-to-scale}
 
 Palawakin ang hosting kapag:
 
@@ -47,7 +47,7 @@ Palawakin ang hosting kapag:
 - Papalapit ka na sa 100+ aktibong site
 - Dumarami ang mga reklamo ng customer tungkol sa bilis
 
-### Paano Magpalawak
+### Paano Magpalawak {#how-to-scale}
 
 - **Vertical scaling**: Mag-upgrade sa mas malaking server (mas maraming CPU, RAM)
 - **Caching layers**: Magdagdag ng Redis/Memcached para sa object caching, page caching para sa static na content
@@ -55,7 +55,7 @@ Palawakin ang hosting kapag:
 - **Pag-optimize ng database**: Habang lumalaki ang network, bumabagal ang mga database query. I-optimize ang mga table, magdagdag ng mga index, isaalang-alang ang nakalaang database server.
 - **Paghiwalayin ang mga alalahanin**: Ilipat ang media storage sa object storage (S3-compatible), ilipat ang email sa transactional email service
 
-### Hosting Migration
+### Hosting Migration {#hosting-migration}
 
 Kung hindi na kayang mag-scale pa ng kasalukuyan mong host, magplano ng migration:
 
@@ -65,11 +65,11 @@ Kung hindi na kayang mag-scale pa ng kasalukuyan mong host, magplano ng migratio
 4. I-update ang DNS gamit ang minimal na TTL bago nito
 5. Tiyaking gumagana ang lahat pagkatapos ng migration
 
-## Pag-a-automate ng mga Operasyon
+## Pag-a-automate ng mga Operasyon {#automating-operations}
 
 Habang lumalaki ka, nagiging bottleneck ang mga manual na proseso. I-automate ang kaya mo:
 
-### Webhooks at Zapier
+### Webhooks at Zapier {#webhooks-and-zapier}
 
 Gamitin ang [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/integrations/zapier) para i-automate ang:
 
@@ -78,7 +78,7 @@ Gamitin ang [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide
 - **Mga pagkabigo sa pagbabayad** → alerto sa iyong monitoring tool
 - **Mga upgrade ng plan** → email ng pagbati na may gabay sa bagong feature
 
-### Email Automation
+### Email Automation {#email-automation}
 
 Lumipat mula sa manual na mga email tungo sa automated na mga sequence:
 
@@ -87,30 +87,30 @@ Lumipat mula sa manual na mga email tungo sa automated na mga sequence:
 - Mga prompt sa upgrade kapag papalapit na ang mga customer sa mga limitasyon ng plan
 - Mga paalala sa renewal para sa taunang mga subscriber
 
-### Support Automation
+### Support Automation {#support-automation}
 
 - **Mga canned response** para sa karaniwang mga tanong
 - **Mga auto-reply** na kumikilala sa pagtanggap ng mga support ticket
 - **Mga mungkahi mula sa knowledge base** kapag nagsusumite ang mga customer ng mga ticket na tumutugma sa umiiral na mga artikulo
 
-## Pagpapataas ng Kita
+## Pagpapataas ng Kita {#increasing-revenue}
 
 Ang paglago ay hindi lang tungkol sa mas maraming customer. Tungkol din ito sa mas maraming kita bawat customer.
 
-### Pag-upsell sa Umiiral na Mga Customer
+### Pag-upsell sa Umiiral na Mga Customer {#upselling-existing-customers}
 
 - **Mga upgrade ng plan**: Mga targeted campaign na nagpapakita ng mga feature ng Growth/Pro sa mga Starter customer
 - **Order bumps**: I-promote ang mga add-on product sa umiiral na mga customer sa pamamagitan ng email
 - **Annual conversion**: Mag-alok ng discount sa mga buwanang customer para lumipat sa taunang billing
 
-### Mga Bagong Daloy ng Kita
+### Mga Bagong Daloy ng Kita {#new-revenue-streams}
 
 - **Done-for-you setup**: Maningil ng premium para i-set up at i-customize ang site ng customer para sa kanila
 - **Custom design services**: Mag-alok ng pasadyang design work sa ibabaw ng template
 - **Training sessions**: Bayad na one-on-one walkthroughs para sa mga customer na gusto ng hands-on na tulong
 - **Premium plugins**: Mag-alok ng niche-specific na premium plugins bilang bayad na add-ons (hal., fitness class booking widget)
 
-### Pagtataas ng Presyo
+### Pagtataas ng Presyo {#raising-prices}
 
 Habang nagmamature ang iyong platform at nagdadagdag ng value:
 
@@ -118,7 +118,7 @@ Habang nagmamature ang iyong platform at nagdadagdag ng value:
 - Itaas ang mga presyo para sa mga bagong signup
 - Bigyang-katwiran ang mga pagtaas gamit ang mga bagong feature at pagpapabuti
 
-## Pagbuo ng Team
+## Pagbuo ng Team {#building-a-team}
 
 Darating ang puntong hindi mo magagawa ang lahat nang mag-isa. Karaniwang unang kinukuha:
 
@@ -128,7 +128,7 @@ Darating ang puntong hindi mo magagawa ang lahat nang mag-isa. Karaniwang unang 
 
 Hindi mo kailangan ng mga empleyado. Gumagana nang maayos ang mga contractor at freelancer para sa isang platform business.
 
-## Mga Milestone ng Paglago
+## Mga Milestone ng Paglago {#growth-milestones}
 
 | Milestone | Tinatayang MRR | Pokus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Hindi mo kailangan ng mga empleyado. Gumagana nang maayos ang mga contractor at 
 | 250-500 customer | $25,000-$50,000 | Pagbuo ng team, mga bagong daloy ng kita, premium features |
 | 500+ customer | $50,000+ | Maturity ng platform, kalapit na niches, potensyal na exit |
 
-## Ang Binuo Natin sa Araling Ito
+## Ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Isang framework ng sukatan** para maunawaan ang kalusugan ng negosyo
 - **Plano sa pagpapalawak ng imprastraktura** para sa paglago mula dose-dosenang site tungo sa daan-daan

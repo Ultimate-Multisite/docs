@@ -3,19 +3,19 @@ title: 'Isifundo 10: Usuku Lokwethula'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Isifundo 10: Usuku Lokwethula
+# Isifundo 10: Usuku Lokwethula {#lesson-10-launch-day}
 
 Konke sekwakhiwe. Ngaphambi kokuba uvule iminyango, lesi sifundo sidlula ohlwini lokuhlola lwangaphambi kokwethula ukuze uqinisekise ukuthi akukho okuphukile, okushodayo, noma okuhlazisayo.
 
-## Lapho Esigcine Khona
+## Lapho Esigcine Khona {#where-we-left-off}
 
 I-FitSite inezifanekiso, amapulani, inqubo yokukhokha, ubunikazi bomkhiqizo, ukwamukelwa kwabasebenzisi, namanani konke kulungisiwe. Manje siyaqinisekisa ukuthi konke kuyasebenza bese siyayethula bukhoma.
 
-## Uhlu Lokuhlola Lwangaphambi Kokwethula
+## Uhlu Lokuhlola Lwangaphambi Kokwethula {#pre-launch-checklist}
 
 Sebenza kuyo yonke into. Ungakweqi lutho.
 
-### Ingqalasizinda Yeplatifomu
+### Ingqalasizinda Yeplatifomu {#platform-infrastructure}
 
 - [ ] Ukusingatha kuzinzile futhi kusebenza kahle ngaphansi komthwalo
 - [ ] I-wildcard SSL iyasebenza futhi wonke ama-subdomain anikezwa nge-HTTPS
@@ -23,7 +23,7 @@ Sebenza kuyo yonke into. Ungakweqi lutho.
 - [ ] Izipele zilungisiwe futhi zihloliwe (buyisela okungenani esisodwa ukuze uqinisekise)
 - [ ] Ukuqapha sekukhona -- uzokwazi uma iplatifomu iwa
 
-### Izifanekiso
+### Izifanekiso {#templates}
 
 - [ ] Zonke izifanekiso ezintathu zilayisha kahle kumasayithi amasha
 - [ ] Okuqukethwe kwesibambi-ndawo kuyasiza futhi akunamaphutha okubhala
@@ -32,7 +32,7 @@ Sebenza kuyo yonke into. Ungakweqi lutho.
 - [ ] Ijubane lokulayisha ikhasi liyamukeleka (hlola ngethuluzi elifana ne-GTmetrix noma i-PageSpeed Insights)
 - [ ] Azikho izixhumanisi eziphukile noma amafa ashodayo kunoma yisiphi isifanekiso
 
-### Amapulani Nemikhiqizo
+### Amapulani Nemikhiqizo {#plans-and-products}
 
 - [ ] Wonke amapulani amathathu ayasebenza futhi ayabonakala
 - [ ] Izincazelo zamapulani zinembile futhi ziqondene ne-niche
@@ -42,7 +42,7 @@ Sebenza kuyo yonke into. Ungakweqi lutho.
 - [ ] Ama-order bump avela kahle ngesikhathi sokukhokha
 - [ ] Imikhawulo yezandiso netimu iphoqelelwa kahle ngokwepulani ngalinye
 
-### Ukugeleza Kokukhokha
+### Ukugeleza Kokukhokha {#checkout-flow}
 
 - [ ] Qedela ukubhalisa okuphelele kokuhlola kuhlelo ngalunye (sebenzisa imodi yokukhokha yokuhlola)
 - [ ] Ukukhetha isifanekiso kubonisa izifanekiso ezifanele ngokwepulani
@@ -52,7 +52,7 @@ Sebenza kuyo yonke into. Ungakweqi lutho.
 - [ ] Ikhasimende lingangena kusayithi lalo elisha ngokushesha
 - [ ] Amakhodi esaphulelo asebenza kahle
 
-### Ubunikazi Bomkhiqizo
+### Ubunikazi Bomkhiqizo {#branding}
 
 - [ ] Ikhasi lokungena libonisa ubunikazi bomkhiqizo be-FitSite
 - [ ] I-Admin Dashboard ibonisa ubunikazi bomkhiqizo be-FitSite
@@ -60,7 +60,7 @@ Sebenza kuyo yonke into. Ungakweqi lutho.
 - [ ] Ama-invoyisi abonakala kahle ngemininingwane yebhizinisi lakho
 - [ ] Isayithi lokumaketha libukhoma futhi lixhumanisa nefomu lokukhokha
 
-### Ukwamukelwa Kwabasebenzisi
+### Ukwamukelwa Kwabasebenzisi {#onboarding}
 
 - [ ] Iwijethi ye-Quick Start ivela kuma-dashboard amakhasimende amasha
 - [ ] Zonke izixhumanisi ze-Quick Start zikhomba emakhasini afanele
@@ -68,7 +68,7 @@ Sebenza kuyo yonke into. Ungakweqi lutho.
 - [ ] Izindatshana zesisekelo solwazi zishicilelwe futhi ziyafinyeleleka
 - [ ] Ikhasi le-Account libonisa ulwazi lwepulani olulungile nezinketho zokuthuthukisa
 
-### Ezomthetho Nebhizinisi
+### Ezomthetho Nebhizinisi {#legal-and-business}
 
 - [ ] Imigomo yesevisi ishicilelwe futhi ixhunywe kusukela ekukhokheni
 - [ ] Inqubomgomo yobumfihlo ishicilelwe futhi iyafinyeleleka
@@ -77,11 +77,11 @@ Sebenza kuyo yonke into. Ungakweqi lutho.
 - [ ] Isango lokukhokha likumodi ebukhoma (hhayi imodi yokuhlola)
 - [ ] Ukulungiselelwa kwentela kulungile ngokwendawo yakho yomthetho
 
-## Ukwethulwa Okuthambile vs. Ukwethulwa Okuqinile
+## Ukwethulwa Okuthambile vs. Ukwethulwa Okuqinile {#soft-launch-vs-hard-launch}
 
 Cabanga ngokwethulwa ngezigaba ezimbili:
 
-### Isigaba 1: Ukwethulwa Okuthambile
+### Isigaba 1: Ukwethulwa Okuthambile {#phase-1-soft-launch}
 
 Mema abanikazi bama-studio okuzivocavoca abangu-5-10 ukuthi babhalise ngaphambi kokwethulwa emphakathini. Lawa amakhasimende akho e-beta. Banikeze isaphulelo esikhulu (u-50% wesaphulelo impilo yonke, noma izinyanga ezi-3 mahhala) ngokushintshana ngalokhu:
 
@@ -91,7 +91,7 @@ Mema abanikazi bama-studio okuzivocavoca abangu-5-10 ukuthi babhalise ngaphambi 
 
 Lokhu kukunika impendulo yangempela yamakhasimende namasayithi abukhoma ozowabukisa ngaphambi kokuba uvulele umphakathi.
 
-### Isigaba 2: Ukwethulwa Komphakathi
+### Isigaba 2: Ukwethulwa Komphakathi {#phase-2-public-launch}
 
 Uma impendulo yokwethulwa okuthambile isifakiwe:
 
@@ -100,7 +100,7 @@ Uma impendulo yokwethulwa okuthambile isifakiwe:
 - Qala ukuthola amakhasimende (Isifundo 11)
 - Memezela eziteshini ezifanele zemboni yokuzivocavoca
 
-## Izenzo Zosuku Lokwethula
+## Izenzo Zosuku Lokwethula {#launch-day-actions}
 
 Ngosuku ophumela ngalo emphakathini:
 
@@ -110,7 +110,7 @@ Ngosuku ophumela ngalo emphakathini:
 4. **Tholakala** -- amakhasimende akho okuqala angempela angase adinge usizo, futhi impendulo esheshayo yakha ukwethembana
 5. **Gubha kafushane** -- bese ubuyela emsebenzini
 
-## Okungase Konakale
+## Okungase Konakale {#what-can-go-wrong}
 
 Zilungiselele lokhu:
 
@@ -120,7 +120,7 @@ Zilungiselele lokhu:
 - **Ukusebenza ngaphansi komthwalo**: Uma uthola ukwenyuka okukhulu kwethrafikhi, yazi ukuthi ungakukhulisa kanjani ukusingatha kwakho
 - **Ukudideka kwamakhasimende**: Lungisa isisekelo sakho solwazi neziteshi zosizo
 
-## Inethiwekhi Ye-FitSite Kuze Kube Manje
+## Inethiwekhi Ye-FitSite Kuze Kube Manje {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Esikukhile Kulesi Sifundo
+## Esikukhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Uhlu lokuhlola lwangaphambi kokwethula olubanzi** oluhlanganisa ingqalasizinda, okuqukethwe, izinkokhelo, nezomthetho
 - **Isu lokwethulwa okuthambile** lokuthola impendulo yangempela ngaphambi kokuphuma emphakathini

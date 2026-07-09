@@ -4,20 +4,20 @@ title: Sefa - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Sehlo: wu_checkout_calculate_prorate_credits
+# Sehlo: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
 
 Dumella baqapi ba dikatoloso ho fetola boleng ba mokitlane.
 
-## Dikarolo
+## Dikarolo {#parameters}
 
 | Lebitso | Mofuta | Tlhaloso |
 |------|------|-------------|
 | $credit | `int` | Palo ya mokitlane. |
 | $cart | `self` | Ntho ena ya kariki. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.0.0
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1287) moleng wa 1287

@@ -3,15 +3,15 @@ title: Mamenyu eKugamuchira Vaenzi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Mamenu eHospitality
+# Mamenu eHospitality {#hospitality-menus}
 
 Chinhu che **Hospitality Menus** chinobvumira Theme Builder kugadzira nekupinza mapeji emenu yezvokudya nezvinwiwa ane chimiro chakarongwa zvakananga muWordPress site yako.
 
-## Pfupiso
+## Pfupiso {#overview}
 
 Theme Builder ikozvino inogona kugadzira mapeji emenu ehunyanzvi, akarongwa, emabhizinesi ehospitality kusanganisira maresitorendi, macafe, mabhawa, uye masevhisi ekucatering. Mamenu aya akabatanidzwa zvizere mudhizaini yesite yako uye anogona kuvandudzwa nekutarisirwa zviri nyore.
 
-## Mhando dzeHospitality Dzinotsigirwa
+## Mhando dzeHospitality Dzinotsigirwa {#supported-hospitality-types}
 
 - **Maresitorendi** — mamenu ekudyira ane sevhisi yakazara
 - **Macafe** — mamenu ekofi nezvokudya zvakareruka
@@ -21,9 +21,9 @@ Theme Builder ikozvino inogona kugadzira mapeji emenu ehunyanzvi, akarongwa, ema
 - **Food Trucks** — mamenu esevhisi yezvokudya inofamba
 - **Mabrewery nemaWinery** — mamenu ezvinwiwa ane tsananguro
 
-## Chimiro cheMenu
+## Chimiro cheMenu {#menu-structure}
 
-### Zvikamu zveMenu
+### Zvikamu zveMenu {#menu-categories}
 
 Mamenu akarongwa muzvikamu:
 
@@ -34,7 +34,7 @@ Mamenu akarongwa muzvikamu:
 - **Zvinwiwa** — zvinwiwa (zvine doro nezvisina doro)
 - **Zvakakosha** — zvakakosha zvezuva nezuva kana zvemwaka
 
-### Fomati yeChinhu cheMenu
+### Fomati yeChinhu cheMenu {#menu-item-format}
 
 Chinhu chimwe nechimwe chemenu chinosanganisira:
 
@@ -49,7 +49,7 @@ Chinhu chimwe nechimwe chemenu chinosanganisira:
 }
 ```
 
-#### Minda yeChinhu
+#### Minda yeChinhu {#item-fields}
 
 | Munda | Rudzi | Tsananguro |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Chinhu chimwe nechimwe chemenu chinosanganisira:
 | `allergens` | array | Zvinowanzo konzera allergic reactions (Nuts, Shellfish, nezvimwe.) |
 | `availability` | string | Painowanikwa (Daily, Seasonal, nezvimwe.) |
 
-## Kugadzira Mamenu eHospitality
+## Kugadzira Mamenu eHospitality {#creating-hospitality-menus}
 
-### Danho 1: Ipa Ruzivo rweMenu
+### Danho 1: Ipa Ruzivo rweMenu {#step-1-provide-menu-information}
 
 Udza Theme Builder nezvemenu yako:
 
@@ -71,7 +71,7 @@ Gadzira menu yeresitorendi yeresitorendi yangu yeItalian ine zvokudya zvekutanga
 madishi epasta, makosi makuru, uye madhizeti. Sanganisira mitengo netsananguro.
 ```
 
-### Danho 2: Theme Builder Inogadzira Menu
+### Danho 2: Theme Builder Inogadzira Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Inofomata mitengo netsananguro
 5. Inowedzera ruzivo rwekudya uye allergen
 
-### Danho 3: Ongorora uye Gadzirisa
+### Danho 3: Ongorora uye Gadzirisa {#step-3-review-and-customize}
 
 Unogona:
 
@@ -91,9 +91,9 @@ Unogona:
 4. Kuvandudza tsananguro neruzivo rwekudya
 5. Kugadzirisa styling nelayout
 
-## Sarudzo dzeKuratidza Menu
+## Sarudzo dzeKuratidza Menu {#menu-display-options}
 
-### Peji reMenu Rakazara
+### Peji reMenu Rakazara {#full-menu-page}
 
 Peji rakatsaurirwa rinoratidza menu yako yakazara:
 
@@ -102,7 +102,7 @@ Peji rakatsaurirwa rinoratidza menu yako yakazara:
 - Layout inokodzera kudhindwa
 - Dhizaini inopindura panharembozha
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Pinza zvikamu zvemenu pane mamwe mapeji:
 
@@ -111,7 +111,7 @@ Pinza zvikamu zvemenu pane mamwe mapeji:
 - Menu yezvinwiwa papeji rebhawa
 - Kuratidzwa kwemadhizeti pa footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Gadzira menu yePDF inodhawunirodhwa:
 
@@ -120,9 +120,9 @@ Gadzira menu yePDF inodhawunirodhwa:
 - Inosanganisira mifananidzo netsananguro
 - Zviri nyore kugovera nekuemail
 
-## Ruzivo rweKudya neAllergen
+## Ruzivo rweKudya neAllergen {#dietary-and-allergen-information}
 
-### Hunhu hweKudya
+### Hunhu hweKudya {#dietary-attributes}
 
 Maka zvinhu neruzivo rwekudya:
 
@@ -134,7 +134,7 @@ Maka zvinhu neruzivo rwekudya:
 - **Low-Carb** — macarbohydrate akaderedzwa
 - **High-Protein** — yakapfuma neprotein
 
-### Yambiro dzeAllergen
+### Yambiro dzeAllergen {#allergen-warnings}
 
 Sanganisira allergen dzinowanzoitika:
 
@@ -147,9 +147,9 @@ Sanganisira allergen dzinowanzoitika:
 - **Gluten** — gorosi nezviyo zvine gluten
 - **Sesame** — mhodzi dzesesame nemafuta
 
-## Kutarisira Menu
+## Kutarisira Menu {#menu-management}
 
-### Kuvandudza Mitengo
+### Kuvandudza Mitengo {#updating-prices}
 
 Vandudza mitengo yemenu zviri nyore:
 
@@ -159,7 +159,7 @@ Vandudza mitengo yemenu zviri nyore:
 4. Chengetedza shanduko
 5. Shanduko dzinooneka pakarepo pasite yako
 
-### Kuwedzera Zvinhu zveMwaka
+### Kuwedzera Zvinhu zveMwaka {#adding-seasonal-items}
 
 Gadzira misiyano yemenu yemwaka:
 
@@ -169,7 +169,7 @@ Gadzira misiyano yemenu yemwaka:
 4. Ronga mazuva ekuwanikwa
 5. Ratidza otomatiki panguva yemwaka
 
-### Kutarisira Zvakakosha
+### Kutarisira Zvakakosha {#managing-specials}
 
 Ratidza zvakakosha zvezuva nezuva kana zvevhiki:
 
@@ -179,7 +179,7 @@ Ratidza zvakakosha zvezuva nezuva kana zvevhiki:
 4. Vandudza zuva nezuva kana vhiki nevhiki
 5. Chengeta zvakakosha zvekare muarchive
 
-## Kubatanidza neTheme Builder
+## Kubatanidza neTheme Builder {#integration-with-theme-builder}
 
 Paunenge uchishandisa Theme Builder kumasite ehospitality:
 
@@ -189,9 +189,9 @@ Paunenge uchishandisa Theme Builder kumasite ehospitality:
 4. **Kuvandudzwa kwenharembozha** — mamenu anoratidzwa zvakanaka pamafoni
 5. **SEO kuvandudzwa** — mamenu ane hushamwari kumainjini ekutsvaga
 
-## Maitiro Akanakisa
+## Maitiro Akanakisa {#best-practices}
 
-### Dhizaini yeMenu
+### Dhizaini yeMenu {#menu-design}
 
 - **Kurongwa kwakajeka** — chimiro chezvikamu chine musoro
 - **Tsananguro dzinoverengeka** — dzinokwezva kudya uye dzine ruzivo
@@ -199,7 +199,7 @@ Paunenge uchishandisa Theme Builder kumasite ehospitality:
 - **Mapikicha ehunyanzvi** — mifananidzo yezvokudya yemhando yepamusoro
 - **Nzvimbo isina chinhu** — usazadza peji zvakawandisa
 
-### Zviri Mukati
+### Zviri Mukati {#content}
 
 - **Tsananguro dzakarurama** — tsanangura zvinhu nemazvo
 - **Simbisa zvakakosha** — ita kuti zvakakosha zvibude pachena
@@ -207,7 +207,7 @@ Paunenge uchishandisa Theme Builder kumasite ehospitality:
 - **Vandudza nguva dzose** — chengeta mitengo nezvinhu zviri zvazvino
 - **Shandisa mutauro unokwezva kudya** — ita kuti zvinhu zvinzwike zvinonaka
 
-### Kuwanikwa
+### Kuwanikwa {#accessibility}
 
 - **Mafonti anoverengeka** — shandisa typefaces dzakajeka, dzinonyoreka
 - **Musiyano wakakwana** — ita shuwa kuti chinyorwa chinoverengeka
@@ -215,9 +215,9 @@ Paunenge uchishandisa Theme Builder kumasite ehospitality:
 - **Yambiro dzeAllergen** — ratidza allergen pachena
 - **Inokodzera nharembozha** — edza pamidziyo yose
 
-## Mienzaniso
+## Mienzaniso {#examples}
 
-### Chimiro cheMenu yeResitorendi
+### Chimiro cheMenu yeResitorendi {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Chimiro cheMenyu yeCafe
+### Chimiro cheMenyu yeCafe {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Zvimiro Zvinoenderana
+## Zvimiro Zvinoenderana {#related-features}
 
 - [Gadzira Menyu](../abilities/create-menu.md) — gadzira menyu dzekufambisa
 - [Nhungamiro yeDhizaini](./design-direction.md) — gadzirisa dhizaini yesaiti yako

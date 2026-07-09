@@ -3,17 +3,17 @@ title: Kijan pou Konfigire Katografye Domèn
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kijan pou Konfigire Kat Domèn (v2)
+# Kijan pou Konfigire Kat Domèn (v2) {#how-to-configure-domain-mapping-v2}
 
 _**NÒT ENPÒTAN: Atik sa a refere ak Ultimate Multisite vèsyon 2.x.**_
 
 Youn nan fonksyonalite ki pi pisan nan yon rezo premium se kapasite pou ofri kliyan nou yo yon chans pou atache yon domèn nivo siperyè ak sit yo. Apre tou, kiyès ki parèt pi pwofesyonèl: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) oswa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Se poutèt sa Ultimate Multisite ofri fonksyonalite sa a entegre, san ou pa bezwen itilize plugins twazyèm pati.
 
-## Kisa kat domèn ye?
+## Kisa kat domèn ye? {#whats-domain-mapping}
 
 Jan non an sijere, kat domèn se kapasite Ultimate Multisite ofri pou pran yon demann pou yon domèn pèsonalize epi matche demann sa a ak sit ki koresponn lan nan rezo a ki gen domèn patikilye sa a atache.
 
-### Kijan pou mete kat domèn sou rezo Ultimate Multisite ou a
+### Kijan pou mete kat domèn sou rezo Ultimate Multisite ou a {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Kat domèn mande kèk konfigirasyon bò kote pa ou pou li fonksyone. Erezman, Ultimate Multisite otomatize travay difisil la pou ou pou ou ka fasilman satisfè egzijans yo.
 
@@ -45,7 +45,7 @@ Men anvan ou kòmanse kat domèn pèsonalize a ak youn nan sou-sit yo nan rezo o
 
 ###
 
-### Asire paramèt DNS domèn nan byen konfigire
+### Asire paramèt DNS domèn nan byen konfigire {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Pou yon kat fonksyone, ou bezwen asire domèn ou planifye pou kat la ap pwente sou adrès IP Rezo ou a. Remake ou bezwen adrès IP Rezo a - adrès IP domèn kote Ultimate Multisite enstale a - pa adrès IP domèn pèsonalize ou vle kat la. Pou chèche adrès IP yon domèn espesifik, nou sijere ale sou [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), pa egzanp.
 
@@ -55,7 +55,7 @@ Si ou gen difikilte pou fè sa fonksyone, **kontakte sipò anrejistrè domèn ou
 
 Si ou planifye pou pèmèt kliyan ou yo kat pwòp domèn pa yo, yo pral oblije fè travay pati sa a poukont yo. Voye yo bò sistèm sipò anrejistrè yo si yo pa ka kreye A Record la.
 
-### Kat non domèn pèsonalize kòm Super Admin
+### Kat non domèn pèsonalize kòm Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Lè ou konekte kòm super admin sou rezo ou a, ou ka fasilman ajoute epi jere non domèn pèsonalize lè ou ale anba **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Si ou klike sou non domèn nan, ou pral kapab wè kèk opsyon ladan l. Ann fè y
 
 **Èske li Sekirize?:** Menm si Ultimate Multisite tcheke si domèn nan gen yon sètifika SSL oswa non anvan li aktive l, ou ka chwazi manyèlman pou chaje domèn nan avèk oswa san yon sètifika SSL. Remake si sit entènèt la pa gen yon sètifika SSL epi ou eseye fòse l chaje ak SSL, sa ka ba ou erè.
 
-### Lye non domèn pèsonalize kòm itilizatè sou-sit
+### Lye non domèn pèsonalize kòm itilizatè sou-sit {#mapping-custom-domain-name-as-subsite-user}
 
 Administratè sou-sit yo kapab lye non domèn pèsonalize tou depi nan dashboard admin sou-sit yo.
 
@@ -121,7 +121,7 @@ Apre sa, itilizatè a ka klike sou **Pwochen Etap** epi kontinye pou ajoute non 
 
 Klike sou **Ajoute Domèn** ap kòmanse pwosesis pou verifye epi rekipere enfòmasyon DNS domèn pèsonalize a.
 
-### Konsènan senkronizasyon domèn
+### Konsènan senkronizasyon domèn {#about-domain-syncing}
 
 Senkronizasyon domèn se yon pwosesis kote Ultimate Multisite ajoute non domèn pèsonalize a nan kont hosting ou kòm yon domèn anplis **pou lyezon domèn nan fonksyone**.
 

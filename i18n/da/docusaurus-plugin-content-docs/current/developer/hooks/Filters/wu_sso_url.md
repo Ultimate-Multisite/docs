@@ -4,13 +4,13 @@ title: Filter - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url
+# Filter: wu_sso_url {#filter-wussourl}
 
 Filtrerer genererede SSO URLs, før de returneres til kundens handlinger på tværs af domæner.
 
 Brug dette filter, når en integration skal tilføje betroet kontekst til et SSO-link for en suveræn lejer eller erstatte broker-URL'en, samtidig med at Ultimate Multisite's tokenvalidering bevares.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Brug dette filter, når en integration skal tilføje betroet kontekst til et SSO
 | $site_id | `int` | Målsite-ID for besøget. |
 | $redirect_to | `string` | Destinations-URL efter vellykket SSO-validering. |
 
-### Siden
+### Siden {#since}
 
 - 2.13.0
 
-### Kilde
+### Kilde {#source}
 
 Defineret i `inc/sso/class-sso.php`.
 
 
-## Returnerer
+## Returnerer {#returns}
 
 Filtreret SSO URL.

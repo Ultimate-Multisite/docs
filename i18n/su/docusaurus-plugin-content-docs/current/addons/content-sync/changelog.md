@@ -3,9 +3,9 @@ title: Log Parobahan Sinkronisasi Eusi
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Log Parobahan Content Sync
+# Log Parobahan Content Sync {#content-sync-changelog}
 
-### Vérsi 1.1.0 - Dileupaskeun dina 2025-12-31
+### Vérsi 1.1.0 - Dileupaskeun dina 2025-12-31 {#version-110---released-on-2025-12-31}
 * Anyar: Rojongan pikeun nyinkronkeun sakabéh jinis tulisan (tulisan, kaca, jinis tulisan custom)
 * Anyar: Panyaring jinis tulisan dina léngkah pamilihan eusi
 * Anyar: Léngkah pamilihan situs sumber - sync ti situs mana waé, lain ngan situs utama
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Dirobah: Léngkah "Select Templates" diganti ngaran jadi "Select Data"
 * Ditingkatkeun: Kode khusus Elementor ayeuna ngan jalan pikeun jinis tulisan elementor_library
 
-### Vérsi 1.0.0 - Dileupaskeun dina 2025-12-19
+### Vérsi 1.0.0 - Dileupaskeun dina 2025-12-19 {#version-100---released-on-2025-12-19}
 * Rilis awal
 * Wizard sababaraha léngkah pikeun pamilihan témplat jeung situs
 * Pangolahan batch kalayan eupan balik kamajuan sacara real-time

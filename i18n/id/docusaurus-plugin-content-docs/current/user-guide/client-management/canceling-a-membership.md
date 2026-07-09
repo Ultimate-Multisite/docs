@@ -3,7 +3,7 @@ title: Membatalkan Keanggotaan
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membatalkan Membership (v2)
+# Membatalkan Membership (v2) {#canceling-a-membership-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 

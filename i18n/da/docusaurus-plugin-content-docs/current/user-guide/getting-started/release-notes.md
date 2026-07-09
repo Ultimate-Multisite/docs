@@ -3,9 +3,9 @@ title: Udgivelsesnoter
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Udgivelsesnotater
+# Udgivelsesnotater {#release-notes}
 
-## Version 2.13.0 — Udgivet den 2026-06-05
+## Version 2.13.0 — Udgivet den 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 Nyt tilføjet: Tilføjet suverænt-tenant understøttelse for kunde konto, betaling, faktura, site, skabelonbytning og domænemapping flow, så tenant-netværk kan sende kunder tilbage til hovedsitet for administrerede handlinger.
 Nyt: Tilføjet genopfrisknings-credentials tjek for gentagne medlemskaber, så gateways kan deaktivere automatisk fornyelse, hvis en gemt betalingsaftale, abonnement eller vault token mangler.
@@ -19,7 +19,7 @@ Fix: Broadcast e-mails holder nu modtagere private, samtidig med at man undgår 
 Fix: Edge cases i medlemsfornyelser, udløbsvisning og betalingsoverførsel undgår nu øjeblikkelig udløb, nedbrud eller oversete nødvendige betalinger.
 Forbedret: WordPress-kompatibilitet testes op til 7.0, produktions-Vue assets genopbygges fra npm kilder, og Cypress end-to-end dækning udfører nu flere checkout-, opsætnings-, SSO- og gateway-flows.
 
-## Version 2.12.0 — Udgivet den 15. maj 2026
+## Version 2.12.0 — Udgivet den 15. maj 2026 {#version-2120--released-on-2026-05-15}
 
 - **Nyt:** Hostinger (hPanel) er tilføjet som understøttet hostudbyder med domæne-mapping integration.
 - **Nyt:** Site Exporter håndterer nu netværksimport-bundles, hvilket gør genoprettelse af hele sitet på netværksniveau mere strømlinet.
@@ -31,7 +31,7 @@ Forbedret: WordPress-kompatibilitet testes op til 7.0, produktions-Vue assets ge
 - **Fix:** Site Exporter CLI bevarer nu den korrekte standardvalg af netværkssite.
 - **Forbedret:** Bundlet wp-cli er fjernet fra plugin-pakken, hvilket reducerer pluginstørrelsen.
 
-## Version 2.11.0 — Udgivet den 11. maj 2026
+## Version 2.11.0 — Udgivet den 11. maj 2026 {#version-2110--released-on-2026-05-11}
 
 - **Nyt:** Site exports inkluderer nu en selvstartende `index.php`, så ZIP'en kan installeres på en frisk host uden separat plugin-installation.
 - **Nyt:** Netværks-export giver administrator mulighed for at eksportere alle undersider i én arkiv fra Site Export admin-siden.
@@ -39,7 +39,7 @@ Forbedret: WordPress-kompatibilitet testes op til 7.0, produktions-Vue assets ge
 - **Nyt:** Checkout form-redigereren giver en advarsel, hvis et produkt tilføjes uden at være konfigureret med et obligatorisk felt.
 - **Nyt:** Fanen Import/Export beskriver nu klart dens omfang og linker direkte til Site Export værktøjet.
 
-## Version 2.10.0 — Udgivet den 5. maj 2026
+## Version 2.10.0 — Udgivet den 5. maj 2026 {#version-2100--released-on-2026-05-05}
 
 Nyt: Ny PayPal guided setup wizard til manuel indtastning af legitimationsoplysninger med OAuth flag gate for problemfri gateway konfiguration.
 Nyt: Skift mellem skabeloner på kundepanel redesignet med nuværende-skabelon kort, persistent grid og knappen **Reset current template**.
@@ -52,7 +52,7 @@ Fix: Aktuelle lazy-loaded før init hook for at forhindre tidsmæssige problemer
 Fix: Filtreret SSO sti respekteres på tværs af alle login flows.
 Fix: Tomme site identity muligheder bevares ved gemning.
 
-## Version 2.9.0 — Udgivet den 30. april 2026
+## Version 2.9.0 — Udgivet den 30. april 2026 {#version-290--released-on-2026-04-30}
 
 - Nyt: Single-site eksport og import tilføjet under **Tools > Export & Import**.
 - Fix: Eksport ZIP filer serveres nu via et autentificeret download endpoint.
@@ -66,7 +66,7 @@ Fix: Tomme site identity muligheder bevares ved gemning.
 - Fix: Tour IDs normaliseret til understregninger i brugerindstillingsnøgler.
 - Forbedret: ZipArchive bruges nu i stedet for Alchemy/Zippy for bedre kompatibilitet.
 
-## Version 2.8.0 — Udgivet den 29. april 2026
+## Version 2.8.0 — Udgivet den 29. april 2026 {#version-280--released-on-2026-04-29}
 
 - Ny: Jumper toggle tilføjet til indstillingerens UI under Andre Muligheder er aktiveret.
 - Ny: Statuskolonne tilføjet til tabellen over checkout formularer.

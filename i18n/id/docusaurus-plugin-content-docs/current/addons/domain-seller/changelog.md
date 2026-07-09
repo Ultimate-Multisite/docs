@@ -3,7 +3,7 @@ title: Catatan Perubahan Penjual Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Changelog Domain Seller
+# Changelog Domain Seller {#domain-seller-changelog}
 
 Versi 1.3.0 - Dirilis pada 2026-06-02
 - Baru: Menambahkan peringatan network-admin saat saldo reseller HostAfrica menjadi terlalu rendah
@@ -134,20 +134,20 @@ Versi 1.0.0 - Dirilis pada 2025-09-28
 * **Diperbaiki:** Semua kode v1 yang sudah usang diperbarui ke standar v2
 * **Dihapus:** Kompatibilitas v1 lama (perubahan yang memutus kompatibilitas)
 
-### Versi Sebelumnya (v1 Lama)
+### Versi Sebelumnya (v1 Lama) {#previous-versions-v1-legacy}
 
-### Versi 0.0.3 - 20/08/2019
+### Versi 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Diperbaiki: Ketidakcocokan dengan Groundhogg CRM
 * Catatan: Ini adalah rilis terakhir yang kompatibel dengan v1
 
-### Versi 0.0.2 - 07/12/2018
+### Versi 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Diperbaiki: Menghapus kolom License Key
 * Diperbaiki: Tab paket hilang saat plugin fitur aktif
 * Ditingkatkan: Menambahkan tombol lewati pada kolom pendaftaran
 
-### Versi 0.0.1 - Rilis Awal
+### Versi 0.0.1 - Rilis Awal {#version-001---initial-release}
 
 * Integrasi OpenSRS dasar untuk WP Ultimo v1
 * Pencarian dan pendaftaran domain sederhana

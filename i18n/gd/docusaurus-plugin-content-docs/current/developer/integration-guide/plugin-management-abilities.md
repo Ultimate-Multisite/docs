@@ -3,11 +3,11 @@ title: Comasan Rianachd Phlugan
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Comasan Riaghlaidh Phlugan
+# Comasan Riaghlaidh Phlugan {#plugin-management-abilities}
 
 Tha Gratis AI Agent v1.5.0 a’ tighinn le **7 comasan riaghlaidh phlugan** as urrainn don neach-cuideachaidh AI a ghairm rè còmhraidh. Bheir na comasan seo smachd prògramaichte air plugain WordPress a chaidh a stàladh tron [t-Siostam Togail Phlugan & Bogsa-gainmhich](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Sealladh Farsaing air Comasan
+## Sealladh Farsaing air Comasan {#abilities-overview}
 
 | Comas | Slug | Tuairisgeul |
 |---|---|---|
@@ -19,7 +19,7 @@ Tha Gratis AI Agent v1.5.0 a’ tighinn le **7 comasan riaghlaidh phlugan** as u
 | Stàlaich Plugan | `install_plugin` | Cuiridh e plugan bogsa-ghainmhich gu eòlaire plugain WordPress beò. |
 | Gnìomhaich Plugan | `activate_plugin` | Gnìomhaichidh e plugan bogsa-ghainmhich ann an àrainneachd bogsa-ghainmhich wp-env. |
 
-## API Stàlaichear nam Plugan
+## API Stàlaichear nam Plugan {#plugin-installer-api}
 
 Bidh stàlaichear nam plugan a’ làimhseachadh obrachaidhean siostam-fhaidhlichean nuair a thathar a’ cur plugain an gnìomh no gan toirt air falbh. Prìomh ghiùlanan:
 
@@ -28,7 +28,7 @@ Bidh stàlaichear nam plugan a’ làimhseachadh obrachaidhean siostam-fhaidhlic
 - **Ùrachadh**: Cuiridh e faidhlichean plugain ùra an àite feadhainn a tha ann mu thràth. Cuiridh e am plugan dheth mus sgrìobh e gus mearachdan staid phàirteach a sheachnadh.
 - **Sguab às a rèir slug**: Lorgaidh e eòlaire a’ phlugain a rèir slug, cuiridh e dheth thar gach làrach, agus an uair sin bheir e air falbh an t-eòlaire.
 
-### A’ Clàradh Làimhseachair Stàlaidh Gnàthaichte
+### A’ Clàradh Làimhseachair Stàlaidh Gnàthaichte {#registering-a-custom-install-handler}
 
 Faodaidh tu dubhadh a-steach do chuairt-bheatha an stàlaidh a’ cleachdadh nan gnìomhan `gratis_ai_plugin_installer_before_install` agus `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Clàr an Eag-shiostaim
+## Clàr an Eag-shiostaim {#ecosystem-registry}
 
 Tha comasan air an clàradh tron **chlàr eag-shiostaim phlugan**. Bidh an clàr a’ mapadh slugs comais gu na clasaichean-làimhseachaidh aca agus gan nochdadh do dispatcher innealan an AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Amalachadh HookScanner
+## Amalachadh HookScanner {#hookscanner-integration}
 
 Ruithidh na comasan `create_plugin` agus `update_plugin` **HookScanner** gu fèin-obrachail an aghaidh còd a chaidh a ghineadh às ùr. Tillidh HookScanner liosta de hooks gnìomh agus criathra WordPress a chaidh a chlàradh leis a’ phlugan.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 Leumaidh HookScanner seachad air eòlairean `vendor/` agus `node_modules/` gu fèin-obrachail.
 
-## Ailtireachd Obair Async
+## Ailtireachd Obair Async {#async-job-architecture}
 
 Thèid obrachaidhean plugain fad-ruith (gineadh, stàladh) a chur air falbh mar **obraichean async** le tracadh adhartais beò. Bidh eadar-aghaidh cabadaich AI a’ polladh airson adhartas agus a’ sruthadh ùrachaidhean inbhe don chleachdaiche:
 

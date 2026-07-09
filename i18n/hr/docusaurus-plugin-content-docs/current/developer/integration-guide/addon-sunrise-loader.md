@@ -3,17 +3,17 @@ title: Učitavač Sunrise datoteke dodatka
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise učitavač datoteka
+# Addon Sunrise učitavač datoteka {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 dodaje učitavač sunrise proširenja za dodatke i prilagođene MU-plugin integracije koje se moraju pokrenuti tijekom WordPress sunrise pokretanja bez uređivanja generirane datoteke `wp-content/sunrise.php`.
 
-## Kada ga koristiti
+## Kada ga koristiti {#when-to-use-it}
 
 Upotrijebite sunrise proširenje kada se vaša integracija mora pokrenuti prije učitavanja redovnih pluginova, kao što su prilagođeno usmjeravanje domena, obrada zahtjeva specifična za host ili rane prilagodbe pokretanja mreže.
 
 Za uobičajene integracije radije koristite redovne WordPress pluginove, MU-pluginove i dokumentirane Ultimate Multisite hookove. Sunrise kôd pokreće se vrlo rano i trebao bi ostati malen, defenzivan i bez ovisnosti.
 
-## Konvencija imenovanja datoteka
+## Konvencija imenovanja datoteka {#file-naming-convention}
 
 Izradite PHP datoteku nazvanu `sunrise.php` u direktoriju dodatka čiji naziv počinje s `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Podudarajuće datoteke učitavaju se abecednim redoslijedom prema putanji dodatka.
 
-## Gdje smjestiti datoteku
+## Gdje smjestiti datoteku {#where-to-place-the-file}
 
 Smjestite datoteku u korijenski direktorij dodatka koji posjeduje sunrise ponašanje:
 
@@ -45,7 +45,7 @@ Pretraživanje se razrješava relativno prema `WP_CONTENT_DIR`, a ne prema trenu
 
 Nemojte izravno uređivati generiranu datoteku `wp-content/sunrise.php`. Učitavač omogućuje prilagođenom kôdu proširenje sunrise ponašanja bez forkanja temeljne sunrise datoteke koju Ultimate Multisite instalira i ažurira.
 
-## Dostupni hookovi i filtri
+## Dostupni hookovi i filtri {#hooks-and-filters-available}
 
 Addon sunrise datoteke pokreću se nakon što je Ultimate Multisite mapiranje domena učitano i prije nego što WordPress pokrene `ms_loaded`. U tom trenutku sunrise datoteka može:
 
@@ -58,7 +58,7 @@ Ultimate Multisite pokreće `wu_sunrise_loaded` nakon što njegov sunrise učita
 
 Pozivajte samo funkcije koje su već učitane u sunrise fazi. Izbjegavajte rad koji intenzivno koristi bazu podataka, renderiranje predložaka, HTTP zahtjeve i kôd koji pretpostavlja da je uobičajeni redoslijed učitavanja pluginova dovršen.
 
-## Minimalan primjer
+## Minimalan primjer {#minimal-example}
 
 ```php
 <?php

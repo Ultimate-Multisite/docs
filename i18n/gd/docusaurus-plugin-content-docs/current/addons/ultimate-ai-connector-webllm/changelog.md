@@ -3,9 +3,9 @@ title: Ceanglaiche AI Deireannach airson WebLLM – Loga nan atharrachaidhean
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Loga nan atharrachaidhean
+# Ultimate AI Connector for WebLLM Loga nan atharrachaidhean {#ultimate-ai-connector-for-webllm-changelog}
 
-## Tionndadh 1.1.0 — Air fhoillseachadh air 2026-04-09
+## Tionndadh 1.1.0 — Air fhoillseachadh air 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Ùr: Widget cabadaich fleòdrach le comharra inbhe sa bhàr rianachd — faodaidh cleachdaiche sam bith a tha air logadh a-steach brosnachadh a thoirt don LLM air taobh a’ bhrabhsair gu dìreach bhon aghaidh.
 * Ùr: Àm-ruith SharedWorker — tha an einnsean MLC a-nis a’ ruith ann an SharedWorker gus am bi iomadh taba a’ co-roinn aon seisean GPU an àite a bhith a’ sabaid air a shon.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Ceartachadh: Ceangail WebLLM ris a’ chriathrag wpai_preferred_text_models gus am bi feart AI Experiments a’ stiùireadh chun einnsean brabhsair nuair a tha modail air a rèiteachadh.
 * Leasaichte: Ceartachaidhean cache-busting, àbhaisteachadh susbaint, agus iomradh bathar-cruaidh a nochd rè deuchainn bho cheann gu ceann.
 
-## Tionndadh 1.0.0 — Foillseachadh tùsail
+## Tionndadh 1.0.0 — Foillseachadh tùsail {#version-100--initial-release}

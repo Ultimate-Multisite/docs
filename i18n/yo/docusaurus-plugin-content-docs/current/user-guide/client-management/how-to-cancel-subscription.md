@@ -3,7 +3,7 @@ title: Bí a ṣe lè fagilé ìforúkọsílẹ̀
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Báwo ni mo ṣe lè fagilé ṣiṣe alabapin mi?
+# Báwo ni mo ṣe lè fagilé ṣiṣe alabapin mi? {#how-can-i-cancel-my-subscription}
 
 Tí o bá ní iwe-aṣẹ Ultimate Multisite, o lè fagilé isọdọtun rẹ nígbàkúgbà tí o bá fẹ́. Kan tẹ̀lé àwọn ìgbésẹ̀ tó wà ní ìsàlẹ̀:
 

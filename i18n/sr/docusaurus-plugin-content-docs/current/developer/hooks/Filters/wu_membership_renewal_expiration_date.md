@@ -4,11 +4,11 @@ title: Филтер - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Филтер: wu_membership_renewal_expiration_date
+# Филтер: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Филтрира израчунати датум истека који ће бити постављен након обнове.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 | $membership_id | `int` | ID чланства. |
 | $membership | `\Membership` | Објекат чланства. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.0.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) на линији 2192

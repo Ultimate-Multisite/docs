@@ -4,11 +4,11 @@ title: Filtre - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filtè: wu_country_get_states
+# Filtè: wu_country_get_states {#filter-wucountrygetstates}
 
 Retounen lis eta pou peyi sa a.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Non | Tip | Deskripsyon |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Retounen lis eta pou peyi sa a.
 | $country_code | `string` | Kòd ISO de lèt pou peyi a. |
 | $current_country | `\WP_Ultimo\Country\Country` | Enstans klas aktyèl la. |
 
-### Depi
+### Depi {#since}
 
 - 2.0.11
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) nan liy 86
 
 
-## Retounen
+## Retounen {#returns}
 Lis eta filtre yo.

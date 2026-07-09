@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Kulutusperusteiset palvelupaketit
+# Kulutusperusteiset palvelupaketit {#metered-plans}
 
 Ultimate Multisite: Kulutusperusteiset palvelupaketit -lisäosa muuttaa tapaa, jolla laskutat asiakkaitasi, tuomalla käyttöön joustavat kulutusperusteisen laskutuksen ominaisuudet. Jäykkien kovien rajojen sijaan, jotka estävät käyttäjiä rajan ylittyessä, voit ottaa käyttöön ylitysmaksut, jotka laskuttavat asiakkaita automaattisesti lisäkäytöstä.
 
-## Keskeiset ominaisuudet
+## Keskeiset ominaisuudet {#key-features}
 
 * **Kulutusperusteinen laskutus**: Laskuta asiakkaita todellisen käytön perusteella kiinteiden tasojen sijaan
 * **Ylitysten hallinta**: Laskuta automaattisesti käytöstä, joka ylittää palvelupaketin rajat
@@ -21,14 +21,14 @@ Ultimate Multisite: Kulutusperusteiset palvelupaketit -lisäosa muuttaa tapaa, j
 * **Automaattinen laskutus**: Luo laskut automaattisesti, kun käyttörajat ylittyvät
 * **Käyttöraportit**: Yksityiskohtainen käyttöanalytiikka ja raportointi asiakkaille ja ylläpitäjille
 
-## Täydellinen näihin käyttötarkoituksiin
+## Täydellinen näihin käyttötarkoituksiin {#perfect-for}
 
 * **Hosting-palveluntarjoajat**: Tarjoa skaalautuvia palvelupaketteja, jotka kasvavat asiakkaiden tarpeiden mukana
 * **SaaS-alustat**: Laskuta todellisen resurssien kulutuksen perusteella
 * **Toimistoverkostot**: Joustavat hinnoittelumallit asiakasprojekteille
 * **Jälleenmyyntihosting**: Anna kumppaneille mahdollisuus tarjota käyttöperusteista hinnoittelua
 
-## Miten se toimii
+## Miten se toimii {#how-it-works}
 
 1. Määritä kulutusperusteiset resurssit (levytila, kaistanleveys, sivustojen määrä jne.)
 2. Aseta peruspalvelupaketin rajat ja ylityshinnat
@@ -37,13 +37,13 @@ Ultimate Multisite: Kulutusperusteiset palvelupaketit -lisäosa muuttaa tapaa, j
 5. Laskut luodaan automaattisesti laskutusjakson perusteella
 6. Asiakkaat voivat nähdä käyttönsä ja tulevat maksunsa reaaliaikaisesti
 
-## AI-tokenien laskutus
+## AI-tokenien laskutus {#ai-token-billing}
 
 Versio 1.1.0 lisää AI-tokenien laskutuksen verkostoille, jotka tarjoavat AI-ominaisuuksia WordPress AI Client SDK:n kautta. Kulutusperusteiset palvelupaketit kuuntelee valmistuneita AI-generointipyyntöjä, tallentaa nykyisen alisivuston syöte- ja tulostokenien määrät ja muuntaa nämä tokenit laskutettavaksi AI-kuluksi asiakkaan nykyiselle laskutuskaudelle.
 
 Käytä AI-tokenien laskutusta, kun haluat tarjota AI-työkaluja asiakkaiden sivustoilla ilman, että joudut itse kattamaan ennakoimattomia mallikustannuksia. Jokainen pyyntö liitetään alisivustoon, asiakkaaseen, jäsenyyteen, palveluntarjoajaan ja malliin, jotta ylläpitäjät voivat auditoida käyttöä ja asiakkaat näkevät, miten heidän AI-kulutuksensa vaikuttaa heidän Accountiinsa.
 
-### Määritä tokenkohtaiset hinnat
+### Määritä tokenkohtaiset hinnat {#configure-per-token-rates}
 
 AI-hinnat määritetään malleittain erillisinä syöte- ja tulostehintoina. Hinnat lasketaan 1 miljoonaa tokenia kohti, mikä vastaa yleisiä AI-palveluntarjoajien hinnoittelusivuja.
 
@@ -55,7 +55,7 @@ AI-hinnat määritetään malleittain erillisinä syöte- ja tulostehintoina. Hi
 
 Kun tarkkaa mallitunnusta ei ole määritetty, Kulutusperusteiset palvelupaketit voi täsmätä mallin etuliitteen perusteella. Esimerkiksi `claude-sonnet-4`:lle määritetty hinta voi koskea aikaleimattuja mallitunnuksia, jotka alkavat kyseisellä etuliitteellä. Kehittäjät voivat myös säätää lopullista hintataulukkoa [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates)-suodattimella.
 
-### Tuetut AI-liittimet
+### Tuetut AI-liittimet {#supported-ai-connectors}
 
 AI-tokenien laskutus toimii liittimillä, jotka lähettävät WordPress AI Client SDK:n generointitapahtumia ja sisällyttävät tokenien käytön vastauksen metadataan. Tämä sisältää täällä dokumentoidun Ultimate Multisite AI -liitinperheen:
 
@@ -65,13 +65,13 @@ AI-tokenien laskutus toimii liittimillä, jotka lähettävät WordPress AI Clien
 
 Mukautetut liittimet voivat osallistua laukaisemalla vakio-`wp_ai_client_before_generate_result`- ja `wp_ai_client_after_generate_result` -tapahtumat mallin, palveluntarjoajan ja tokenien käytön metadatan kanssa. Liitinasetukset pakotetaan pääsivustolta alisivustoille, jotta asiakkaiden sivustot käyttävät verkoston hyväksymiä palveluntarjoajia ja rajoja.
 
-### Asiakkaan Account-käyttö
+### Asiakkaan Account-käyttö {#customer-account-usage}
 
 Asiakkaat näkevät AI-käytön muiden kulutusperusteisten resurssiensa rinnalla Account-alueellaan. AI-kulurivi näyttää nykyisen laskutuskauden kokonaissumman, joka johdetaan tallennetuista kehotteen ja täydennyksen tokeneista, määritetyistä mallihinnoista ja mahdollisesta palvelupakettiin sisältyvästä käyttövarasta.
 
 Jos asiakkaalla on maksutapa tallennettuna, sisältyvän käyttövaran ylittävä käyttö käsitellään laskutettavana ylityksenä. Jos palvelupakettiin on määritetty kova katkaisu ja asiakkaalla ei ole maksutapaa käytettävissä, AI-pyynnöt voidaan estää, kun käyttövara on saavutettu, ja asiakasta kehotetaan lisäämään maksutiedot ennen jatkamista.
 
-## Tuetut resurssit
+## Tuetut resurssit {#supported-resources}
 
 * Levytallennustila
 * Kaistanleveys / tiedonsiirto
@@ -80,13 +80,13 @@ Jos asiakkaalla on maksutapa tallennettuna, sisältyvän käyttövaran ylittäv�
 * AI-tokenien käyttö ja AI-kulut
 * Mukautetut resurssityypit
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 
 * Multisite Ultimate 2.0.0 tai uudempi
 * WordPress Multisite -asennus
 * PHP 7.4 tai uudempi
 
-## Asennus
+## Asennus {#installation}
 
 1. Lataa plugin-tiedostot hakemistoon `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Aktivoi plugin WordPressin Plugins-näkymässä
@@ -94,24 +94,24 @@ Jos asiakkaalla on maksutapa tallennettuna, sisältyvän käyttövaran ylittäv�
 4. Määritä kulutusperusteiset resurssit ja hinnoittelu
 5. Ota kulutusperusteinen laskutus käyttöön tuotteille tuote-editorissa
 
-## Usein kysytyt kysymykset
+## Usein kysytyt kysymykset {#frequently-asked-questions}
 
-## Mitä tapahtuu, kun asiakas ylittää rajansa?
+## Mitä tapahtuu, kun asiakas ylittää rajansa? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Käytön estämisen sijaan järjestelmä seuraa ylitystä ja lisää sen heidän seuraavaan laskuunsa määrittämiesi hintojen perusteella.
 
-## Voinko määrittää eri ylityshinnat eri tuotteille?
+## Voinko määrittää eri ylityshinnat eri tuotteille? {#can-i-set-different-overage-rates-for-different-products}
 
 Kyllä, jokaisella tuotteella voi olla omat mitattavat resurssinsa ja ylityshinnoittelunsa.
 
-## Miten asiakkaille ilmoitetaan käytöstä?
+## Miten asiakkaille ilmoitetaan käytöstä? {#how-are-customers-notified-about-usage}
 
 Asiakkaat voivat nähdä nykyisen käyttönsä Dashboardissa ja saada valinnaisia ilmoituksia, kun he lähestyvät rajoja tai ylittävät ne.
 
-## Miten AI-tokenien käyttö hinnoitellaan?
+## Miten AI-tokenien käyttö hinnoitellaan? {#how-is-ai-token-usage-priced}
 
 AI-tokenien käyttö hinnoitellaan mallille määritettyjen syöte- ja tulostehintojen perusteella 1 miljoonaa tokenia kohti. Metered Plans kertoo kunkin pyynnön kehotteen ja vastauksen tokenimäärät näillä hinnoilla, lisää tuloksen asiakkaan nykyisen laskutuskauden AI-kulutukseen ja soveltaa tilauksen käyttöoikeutta tai ylityssääntöjä.
 
-## Voinko silti käyttää kovia rajoja?
+## Voinko silti käyttää kovia rajoja? {#can-i-still-use-hard-limits}
 
 Kyllä, mitattava laskutus on valinnainen tuotekohtaisesti. Voit yhdistää perinteisiä kovien rajojen tuotteita mitattaviin tuotteisiin.

@@ -3,11 +3,11 @@ title: Agen Bawaan
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agent Bawaan
+# Agent Bawaan {#built-in-agents}
 
 Gratis AI Agent v1.9.0 menyertakan lima agent bawaan, masing-masing telah dikonfigurasi sebelumnya dengan serangkaian alat yang terfokus, system prompt yang disesuaikan, dan saran awal yang cocok dengan tugas umum di area tersebut. Beralih antar agent mengubah apa yang dapat dilakukan assistant dan bagaimana ia merespons — tanpa konfigurasi apa pun dari Anda. Superdav AI Agent v1.18.0 dapat menambahkan alat yang sadar jadwal, catatan pengingat, gerbang persetujuan, dan notifikasi SMS ke workflow ini ketika integrasi terkait dikonfigurasi.
 
-## Apa Itu Agent?
+## Apa Itu Agent? {#what-is-an-agent}
 
 Setiap agent adalah profil konfigurasi bernama yang menggabungkan:
 
@@ -15,7 +15,7 @@ Setiap agent adalah profil konfigurasi bernama yang menggabungkan:
 - **System prompt** — instruksi yang menetapkan nada, prioritas, dan batasan agent
 - **Saran** — prompt yang telah ditulis sebelumnya yang ditampilkan di antarmuka chat untuk membantu Anda memulai dengan cepat
 
-## Mengakses Agent Picker
+## Mengakses Agent Picker {#accessing-the-agent-picker}
 
 1. Buka panel **Gratis AI Agent** di sidebar admin WordPress.
 2. Klik **ikon agent** di kiri atas header chat (ikon berubah untuk mencerminkan agent aktif).
@@ -24,9 +24,9 @@ Setiap agent adalah profil konfigurasi bernama yang menggabungkan:
 
 Anda juga dapat beralih agent di tengah percakapan — system prompt agent baru berlaku mulai dari pesan berikutnya.
 
-## Lima Agent Bawaan
+## Lima Agent Bawaan {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Fokus:** Membuat dan mengedit posting, halaman, dan formulir kontak.
 
@@ -47,7 +47,7 @@ Anda juga dapat beralih agent di tengah percakapan — system prompt agent baru 
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Fokus:** Pembuatan situs web end-to-end dari satu prompt.
 
@@ -70,7 +70,7 @@ Anda juga dapat beralih agent di tengah percakapan — system prompt agent baru 
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Fokus:** Kustomisasi visual — warna, tipografi, CSS, dan pola blok.
 
@@ -87,7 +87,7 @@ Anda juga dapat beralih agent di tengah percakapan — system prompt agent baru 
 - *Ambil screenshot homepage dan beri tahu saya apa yang akan Anda perbaiki.*
 - *Buat pola blok hero yang dapat digunakan kembali dengan gambar latar full-width dan heading di tengah.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Fokus:** Menemukan, menginstal, dan mengelola plugin WordPress.
 
@@ -105,7 +105,7 @@ Anda juga dapat beralih agent di tengah percakapan — system prompt agent baru 
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Fokus:** Menjawab pertanyaan tentang konten situs, pengaturan, dan konfigurasi WordPress.
 
@@ -124,7 +124,7 @@ Anda juga dapat beralih agent di tengah percakapan — system prompt agent baru 
 
 ---
 
-## Integrasi Otomatisasi Superdav
+## Integrasi Otomatisasi Superdav {#superdav-automation-integrations}
 
 Ketika integrasi Superdav AI Agent v1.18.0 dikonfigurasi, agent bawaan dapat berpartisipasi dalam alur kerja otomatisasi yang lebih aman dan sadar jadwal:
 
@@ -138,11 +138,11 @@ Alur kerja yang direkomendasikan: minta agent menyiapkan pesan atau tindakan, ti
 
 ---
 
-## Menyesuaikan Agent
+## Menyesuaikan Agent {#customising-agents}
 
 Setiap agent bawaan dapat diperluas atau diganti melalui filter `gratis_ai_agent_agents`.
 
-### Menambahkan prompt sistem kustom ke agent yang ada
+### Menambahkan prompt sistem kustom ke agent yang ada {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Mendaftarkan agent baru
+### Mendaftarkan agent baru {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Agent baru muncul di Agent Picker segera setelah filter berjalan.
 
-### Menghapus agent bawaan
+### Menghapus agent bawaan {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

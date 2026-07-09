@@ -3,11 +3,11 @@ title: Ngā Āheinga Whakahaere Monomai
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ngā Āheinga Whakahaere Monomai
+# Ngā Āheinga Whakahaere Monomai {#plugin-management-abilities}
 
 Ka tukuna mai e Gratis AI Agent v1.5.0 **ngā āheinga whakahaere monomai e 7** ka taea e te kaiāwhina AI te karanga i te wā o tētahi kōrerorero. Ka whakarato ēnei āheinga i te mana hōtaka ki runga i ngā monomai WordPress kua tāutatia mā te [Pūnaha Kaihanga Monomai me te Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Tirohanga Whānui ki ngā Āheinga
+## Tirohanga Whānui ki ngā Āheinga {#abilities-overview}
 
 | Āheinga | Slug | Whakaahuatanga |
 |---|---|---|
@@ -19,7 +19,7 @@ Ka tukuna mai e Gratis AI Agent v1.5.0 **ngā āheinga whakahaere monomai e 7** 
 | Tāuta Monomai | `install_plugin` | Ka tuku i tētahi monomai sandbox ki te whaiaronga monomai WordPress ora. |
 | Whakahohe Monomai | `activate_plugin` | Ka whakahohe i tētahi monomai sandbox i roto i te taiao sandbox wp-env. |
 
-## API Tāuta Monomai
+## API Tāuta Monomai {#plugin-installer-api}
 
 Ka whakahaere te kaiwhakatāuta monomai i ngā mahi pūnaha kōnae ina tuku, ina tango rānei i ngā monomai. Ngā whanonga matua:
 
@@ -28,7 +28,7 @@ Ka whakahaere te kaiwhakatāuta monomai i ngā mahi pūnaha kōnae ina tuku, ina
 - **Whakahou**: Ka whakakapi i ngā kōnae monomai o nāianei. Ka whakaweto i te monomai i mua i te tuhi kia karo i ngā hapa āhua wāhanga.
 - **Muku mā te slug**: Ka kimi i te whaiaronga monomai mā te slug, ka whakaweto puta noa i ngā pae katoa, kātahi ka tango i te whaiaronga.
 
-### Rēhita i tētahi Kaiwhakahaere Tāuta Ritenga
+### Rēhita i tētahi Kaiwhakahaere Tāuta Ritenga {#registering-a-custom-install-handler}
 
 Ka taea e koe te hono ki te huringa ora tāuta mā ngā mahi `gratis_ai_plugin_installer_before_install` me `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Rēhita Pūnaha Rauwiringa
+## Rēhita Pūnaha Rauwiringa {#ecosystem-registry}
 
 Ka rēhitatia ngā āheinga mā te **rēhita pūnaha rauwiringa monomai**. Ka whakamahere te rēhita i ngā slug āheinga ki ō rātou akomanga kaiwhakahaere, ā, ka whakaatu i aua mea ki te kaituku utauta a te agent AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Tuitui HookScanner
+## Tuitui HookScanner {#hookscanner-integration}
 
 Ka whakahaere aunoa ngā āheinga `create_plugin` me `update_plugin` i te **HookScanner** ki te waehere hou kua whakaputaina. Ka whakahoki a HookScanner i tētahi rārangi o ngā hook mahi me ngā hook tātari WordPress kua rēhitatia e te monomai.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 Ka tīpoka aunoa a HookScanner i ngā whaiaronga `vendor/` me `node_modules/`.
 
-## Hoahoanga Mahi Tukutahi-kore
+## Hoahoanga Mahi Tukutahi-kore {#async-job-architecture}
 
 Ka tukuna ngā whakahaere monomai roa (whakaputa, tāuta) hei **mahi tukutahi-kore** me te aroturuki kauneke ora. Ka uiui te atanga kōrerorero AI mō te kauneke, ā, ka roma i ngā whakahōu tūnga ki te kaiwhakamahi:
 

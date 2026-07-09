@@ -3,17 +3,17 @@ title: Sabyşdyrmak we Içeport etmek
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0-da **Tools > Export & Import** (Araçlar > Dışa beriş we içe çekiş) başlyğynda bir tek site üçin **Export & Import** (Dışa beriş we içe çekiş) aracı ýazylmadyr. Bu arany size bir WordPress saytyny ZIP fayl hökmünde paketlemek, şonuňdan ZIP-i geri almagyň ýa-da onu degişli Ultimate Multisite we single-site WordPress kuramagyndan birine geçirmegiň zerur bolan wagtda peýdaly bolar.
 
-## Zəruryn resseller
+## Zəruryn resseller {#required-permissions}
 
 Siz dışa beriljek ýa-da içe çekiljek sayt üçin WordPress **Tools** (Araçlar) menüsine girip biljek administrator hasaby bilen giriş bermeli. Multisite ulgamynda, ulgam derejesindäki Ultimate Multisite araçlaryndan subsite-leri dışa berýan ýa-da içe çekýän wagtda ulgam administrator hasabyny ulanmagyň.
 
 Export ZIP indirjeleri taslamanydyr (authenticated download endpoint) arkaly berilýär, şonuň üçin indirme tamamlanana çenli admin sessiýasyny işleýärli saklaň we döredilen indirme URL-lerini halka açyp bermäň.
 
-## Siteyi ZIP-e Çykarmak
+## Siteyi ZIP-e Çykarmak {#exporting-a-site-to-a-zip}
 
 1. Kopyalamak istediğiniz sayt üçin WordPress admin panelinde **Tools > Export & Import** (Araçlar > Çıkarma ve İçe Aktarma) bölüsüne gidin.
 2. Çıkarma sahəsini açın və paketlemek istediğiniz siteyi seçin.
@@ -23,7 +23,7 @@ Export ZIP indirjeleri taslamanydyr (authenticated download endpoint) arkaly ber
 
 ZIP faylını təhlükəsiz bir yerdə saxlayın. O, sayt məzmununu, parametrləri, media fayllarını və seçilmiş kod aktivlərini ehtiva edə bilər.
 
-## Çıxarış nə daxildir
+## Çıxarış nə daxildir {#what-the-export-includes}
 
 Bir çıxarış ZIP-i aşağıdakıları əhatə edə bilər:
 
@@ -34,7 +34,7 @@ Sajy barlagyny esaslandyrmak üçin Export & Import gurşawdan ulanylýan metada
 
 ZIP-iň netji agramy media miqdaryna, sazlanylan pluginlere we temalara hem-de sahypa bazasynyň tablisa agramyna baglydyr.
 
-## ZIP-den sahypany import etmek
+## ZIP-den sahypany import etmek {#importing-a-site-from-a-zip}
 
 1. Manysy WordPress saytunda **Tools > Export & Import** (Araçlar > Export & Import) bölümini açyň.
 2. Import bölümini açyp, Export & Import arayşyndan döredilen ZIP faylyny yükleň.
@@ -46,7 +46,7 @@ ZIP-iň netji agramy media miqdaryna, sazlanylan pluginlere we temalara hem-de s
 
 Bir tek saytly WordPress kuramındaky ZIP faylını import etmek, mevcut saytyňizi import edilen sayt bilen üýtgedendir. İşine başlamazdan öň, maksat saytyňyzy doly yedeklemekden we bir wagtda aynı sayta birdenim import etmäge başlamazdan saklanmagyndan soň, bu meseleleri bilip bolmaly.
 
-## Cheklendirmeler we laýyklyk ýa-da laýyklylyk notatları
+## Cheklendirmeler we laýyklyk ýa-da laýyklylyk notatları {#limitations-and-compatibility-notes}
 
 Çok uly yükleme katalogları ýa-da media kitaphanalary uly ZIP fayllary döredip biler. Uly sahypalary eksport etmekden ýa-da import etmekden öň PHP yükleme limitlerini, işlemek limitlerini, disk boýuklygyny, RAM (memory) we server zaman geçmegi (timeout) sozlamalaryny barlap bilersiňiz.
 Çok uly media kitaphanalary az trafikli umumy tizlik döwründe özüni köçürmegi gerek biler.

@@ -4,11 +4,11 @@ title: Аракет - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Аракет: wu_handle_customer_meta_fields
+# Аракет: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Плагин иштеп чыгуучуларына, керек болсо, мета дайындарды ар кандай жолдор менен сактоого мүмкүндүк берет.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: a93030d6a7965ebed83579b198381fa8
 | $customer | `\Customer` | Ultimate Multisite кардар объектиси. |
 | $checkout | `\Checkout` | Төлөмдү аяктоо классы. |
 
-### Кайсы версиядан баштап
+### Кайсы версиядан баштап {#since}
 
 - 2.0.0
-### Булак
+### Булак {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) ичинде 1211-сапта аныкталган

@@ -3,15 +3,15 @@ title: Yenza Imenyu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Yila iMenyu
+# Yila iMenyu {#create-menu}
 
 Isakhono se-**Yila iMenyu** siyila iimenyu zokukhangela ze-WordPress ngenkxaso yeeleyibhile zokukhangela ezahlukileyo ezingafaniyo nezihloko zamaphepha.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Esi sakhono sandisa ukusebenza okuqhelekileyo kokuyila imenyu ngesakhono sokuchaza ipharamitha ethi `navigation_label`. Oku kukuvumela ukuba uyile iimenyu apho ileyibhile eboniswa ekukhangeleni yahlukile kwisihloko sephepha, nto leyo enika ukuguquguquka ngakumbi kulwakhiwo lwesayithi namava omsebenzisi.
 
-## Iipharamitha
+## Iipharamitha {#parameters}
 
 | Ipharamitha | Uhlobo | Iyafuneka | Inkcazelo |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Esi sakhono sandisa ukusebenza okuqhelekileyo kokuyila imenyu ngesakhono sokucha
 | `location` | string | Hayi | Indawo ye-theme yokwabela le menyu kuyo, umz. `primary` |
 | `navigation_label` | string | Hayi | Ileyibhile eza kuboniswa ekukhangeleni (eyahlukileyo kwisihloko sephepha) |
 
-## Ixabiso Elibuyiswayo
+## Ixabiso Elibuyiswayo {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Esi sakhono sandisa ukusebenza okuqhelekileyo kokuyila imenyu ngesakhono sokucha
 }
 ```
 
-## Ileyibhile Yokukhangela xa ithelekiswa neSihloko Sephepha
+## Ileyibhile Yokukhangela xa ithelekiswa neSihloko Sephepha {#navigation-label-vs-page-title}
 
 Ipharamitha ethi `navigation_label` ikuvumela ukuba wahlule igama lemenyu langaphakathi kwileyibhile eboniswa kubasebenzisi:
 
@@ -43,9 +43,9 @@ Oku kuluncedo xa:
 - Kufuneka uxhase iilwimi ezininzi ezinobude beeleyibhile obahlukeneyo
 - Wakha iimenyu zemimandla ethile okanye amaqela abasebenzisi athile
 
-## Imizekelo Yokusetyenziswa
+## Imizekelo Yokusetyenziswa {#usage-examples}
 
-### Umzekelo 1: Imenyu Elula eneLeyibhile Yokukhangela
+### Umzekelo 1: Imenyu Elula eneLeyibhile Yokukhangela {#example-1-simple-menu-with-navigation-label}
 
 **Isicelo:**
 ```
@@ -62,7 +62,7 @@ Yila imenyu yokukhangela ephambili ebizwa ngokuba yi-"Main Navigation" enoleyibh
 }
 ```
 
-### Umzekelo 2: Imenyu Yendawo ethile ye-Theme
+### Umzekelo 2: Imenyu Yendawo ethile ye-Theme {#example-2-menu-for-specific-theme-location}
 
 **Isicelo:**
 ```
@@ -80,7 +80,7 @@ Yila imenyu yefooter ebizwa ngokuba yi-"Footer Links" enoleyibhile yokukhangela 
 }
 ```
 
-## Umdibaniso ne-Theme Builder
+## Umdibaniso ne-Theme Builder {#integration-with-theme-builder}
 
 Xa usebenzisa i-Theme Builder, isakhono se-Yila iMenyu:
 
@@ -89,13 +89,13 @@ Xa usebenzisa i-Theme Builder, isakhono se-Yila iMenyu:
 3. Sabela iimenyu kwiindawo ezichanekileyo ze-theme
 4. Sixhasa ukongeza izinto zemenyu emva kokuyilwa
 
-## Izakhono Ezihambelanayo
+## Izakhono Ezihambelanayo {#related-abilities}
 
 - **`add_menu_item`** — Yongeza izinto kwimenyu esele ikhona
 - **`update_menu`** — Phinda unike imenyu igama okanye uyabele kwakhona kwindawo ye-theme
 - **`delete_menu`** — Susa imenyu kwisayithi yakho
 
-## Ezona Ndlela Zilungileyo
+## Ezona Ndlela Zilungileyo {#best-practices}
 
 - **Sebenzisa iileyibhile zokukhangela ezicacileyo** — gcina iileyibhile zifutshane kwaye zichaza kakuhle kubasebenzisi
 - **Tshatisa iindawo ze-theme** — yabela iimenyu kwindawo echanekileyo ye-theme ukuze ziboniswe ngokufanelekileyo
@@ -103,14 +103,14 @@ Xa usebenzisa i-Theme Builder, isakhono se-Yila iMenyu:
 - **Vavanya ukusabela** — qinisekisa ukuba iimenyu ziboniswa ngokuchanekileyo kwizixhobo eziphathwayo
 - **Lungiselela iileyibhile ngokolwimi** — sebenzisa iileyibhile zokukhangela ezahlukeneyo kwiinguqulelo zeelwimi ezahlukeneyo
 
-## Imida
+## Imida {#limitations}
 
 - Iileyibhile zokukhangela zezokubonisa kuphela; i-`name` yangaphakathi isasetyenziswa ekuchongeni kwe-WordPress
 - Inkxaso ye-theme iyahluka; ayizizo zonke ii-theme ezixhasa zonke iindawo zemenyu
 - Izinto zemenyu kufuneka zongezwe ngokwahlukeneyo emva kokuyilwa kwemenyu
 - Ukutshintsha ileyibhile yokukhangela kufuna ukuhlaziya imenyu
 
-## Izakhono Ezihambelanayo
+## Izakhono Ezihambelanayo {#related-abilities-1}
 
 - [Yenza iLogo SVG](./generate-logo-svg.md) — yila iilogo zeheader yesayithi yakho
 - [Qinisekisa Umahluko wePalette](./validate-palette-contrast.md) — qinisekisa izikimu zemibala ezifikeleleka lula

@@ -3,15 +3,15 @@ title: 'Isifundo 11: Ukufumana abathengi'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Isifundo 11: Ukufumana Abathengi
+# Isifundo 11: Ukufumana Abathengi {#lesson-11-finding-customers}
 
 Iqonga elihle elingenabathengi liyinto nje yokuzonwabisa. Esi sifundo sigubungela indlela yokufumana abathengi kwindawo ethe nkqo ye-niche -- amacebo asebenza ngokukodwa kuba ugxile kushishino olunye.
 
-## Apho Sashiya Khona
+## Apho Sashiya Khona {#where-we-left-off}
 
 FitSite iyasebenza. Ngoku kufuneka abanini bee-studio zokomelela bayifumane baze babhalise.
 
-## Kutheni Ukufumana Abathengi Kwi-Niche Kwahlukile
+## Kutheni Ukufumana Abathengi Kwi-Niche Kwahlukile {#why-niche-acquisition-is-different}
 
 Xa uthengisa kuye wonke umntu, ukhuphisana ukuze ufumane ingqalelo kwimarike enengxolo. Xa uthengisa kwi-niche, unezibonelelo:
 
@@ -19,17 +19,17 @@ Xa uthengisa kuye wonke umntu, ukhuphisana ukuze ufumane ingqalelo kwimarike ene
 - **Umyalezo wakho uchukumisa ngoko nangoko** -- "iiwebhusayithi zee-studio zokomelela" umisa umnini we-gym phakathi kokuskrola
 - **Udluliselo luyanda** -- abanini bee-studio zokomelela bayabazi abanye abanini bee-studio zokomelela
 
-## Ijelo 1: Ukufikelela Ngqo
+## Ijelo 1: Ukufikelela Ngqo {#channel-1-direct-outreach}
 
 Eyona ndlela ikhawulezayo eya kubathengi bakho bokuqala kukufikelela ngqo, kobuqu.
 
-### Fumana Amathuba
+### Fumana Amathuba {#find-prospects}
 
 - Khangela kuGoogle Maps ii-studio zokomelela, ii-gym, nabaqeqeshi bobuqu kwindawo yakho
 - Ndwendwela iiwebhusayithi zabo zangoku (okanye qaphela ukuba abanayo)
 - Qokelela iinkcukacha zoqhagamshelwano kwiiprofayile zabo zeGoogle Business okanye kumajelo onxibelelwano
 
-### Vavanya Imeko Yabo Yangoku
+### Vavanya Imeko Yabo Yangoku {#evaluate-their-current-situation}
 
 Kwithuba ngalinye, qaphela:
 
@@ -37,7 +37,7 @@ Kwithuba ngalinye, qaphela:
 - **Iwebhusayithi embi**: Ithuba elomeleleyo -- babonise ukuba ukhetho olungcono lubukeka njani
 - **Iwebhusayithi elungileyo**: Ithuba elibuthathaka -- sele beyisombulule le ngxaki
 
-### Yenza Uqhagamshelwano
+### Yenza Uqhagamshelwano {#make-contact}
 
 Thumela i-imeyile okanye umyalezo owenzelwe umntu:
 
@@ -48,7 +48,7 @@ Thumela i-imeyile okanye umyalezo owenzelwe umntu:
 
 Musa ukuthumela ii-imeyile ngobuninzi. Ukufikelela okwenzelwe umntu kumathuba angama-20 aphandwe kakuhle kuya kusebenza ngcono kunokuthumela umyalezo oqhelekileyo kubantu abangama-2,000.
 
-## Ijelo 2: Uluntu Lwe-Niche
+## Ijelo 2: Uluntu Lwe-Niche {#channel-2-niche-communities}
 
 Abanini bee-studio zokomelela bahlangana kwiindawo ezithile kwi-intanethi:
 
@@ -57,7 +57,7 @@ Abanini bee-studio zokomelela bahlangana kwiindawo ezithile kwi-intanethi:
 - **Iiforamu zeshishini** kunye neebhodi zengxoxo
 - **Amaqela e-LinkedIn** abasebenzi bobungcali bokomelela
 
-### Indlela Yokuthatha Inxaxheba
+### Indlela Yokuthatha Inxaxheba {#how-to-participate}
 
 Musa ukujoyina uze ngoko nangoko uthengise imveliso yakho. Endaweni yoko:
 
@@ -66,7 +66,7 @@ Musa ukujoyina uze ngoko nangoko uthengise imveliso yakho. Endaweni yoko:
 3. **Yabelana xa kufanelekile** -- xa umntu ebuza ngeewebhusayithi, yabelana ngeqonga lakho ngokwendalo
 4. **Yenza umxholo oluncedo** -- bhala izithuba malunga nokuba "yintoni eyenza iwebhusayithi enkulu ye-studio yokomelela" ekhokelela ngokwendalo kwiqonga lakho
 
-## Ijelo 3: Ukuthengisa Ngomxholo
+## Ijelo 3: Ukuthengisa Ngomxholo {#channel-3-content-marketing}
 
 Yenza umxholo abawukhangelayo abanini bee-studio zokomelela:
 
@@ -77,7 +77,7 @@ Yenza umxholo abawukhangelayo abanini bee-studio zokomelela:
 
 Papasha oku kwibhlog yakho yokuthengisa yeFitSite. Ngokuhamba kwexesha, lo mxholo ubekwa phezulu kwiinjini zokukhangela kwaye uzisa itrafikhi yendalo evela kubantu abakhangela ngokusebenzayo into oyinikezelayo.
 
-## Ijelo 4: Intsebenziswano
+## Ijelo 4: Intsebenziswano {#channel-4-partnerships}
 
 Sebenzisana namashishini asele ekhonza ii-studio zokomelela:
 
@@ -88,7 +88,7 @@ Sebenzisana namashishini asele ekhonza ii-studio zokomelela:
 
 Nikezela ngeekhomishini zodluliselo okanye ukukhuthazana. I-[AffiliateWP addon](/addons/affiliatewp) inokukunceda ukuseta inkqubo yodluliselo esemthethweni.
 
-## Ijelo 5: Imisitho Yoshishino
+## Ijelo 5: Imisitho Yoshishino {#channel-5-industry-events}
 
 Imisitho yoshishino lokomelela ikubeka phambi kwamakhulu abathengi abanokubakho:
 
@@ -99,7 +99,7 @@ Imisitho yoshishino lokomelela ikubeka phambi kwamakhulu abathengi abanokubakho:
 
 Awudingi uhlahlo-lwabiwo mali olukhulu. Nokuzimasa njengomthathi-nxaxheba nokuba neencoko malunga nento oyenzayo kungavelisa amathuba.
 
-## Ijelo 6: Iisayithi Zomboniso
+## Ijelo 6: Iisayithi Zomboniso {#channel-6-showcase-sites}
 
 Eyona ntengiso yakho ilungileyo ziisayithi zabathengi bakho abasele bekho. Ngemvume:
 
@@ -108,7 +108,7 @@ Eyona ntengiso yakho ilungileyo ziisayithi zabathengi bakho abasele bekho. Ngemv
 - Cela ubungqina kubathengi abonelisekileyo
 - Khuthaza abathengi ukuba bakhankanye iFitSite xa bebuzwa ngewebhusayithi yabo
 
-## Ukuseta Inkqubo Yodluliselo
+## Ukuseta Inkqubo Yodluliselo {#setting-up-a-referral-program}
 
 Ilizwi ngomlomo lelona jelo lakho linamandla kwi-niche. Yenze isemthethweni:
 
@@ -116,7 +116,7 @@ Ilizwi ngomlomo lelona jelo lakho linamandla kwi-niche. Yenze isemthethweni:
 2. Nikezela abathengi abasele bekho umvuzo wodluliselo (inyanga enye yasimahla, ikhredithi ye-account, njl.)
 3. Yenze kube lula -- banike ikhonkco lodluliselo kunye nomyalezo olula abanokuwuthumela kwabanye
 
-## Ukulandelela Okusebenzayo
+## Ukulandelela Okusebenzayo {#tracking-what-works}
 
 Kwijelo ngalinye, landela:
 
@@ -126,7 +126,7 @@ Kwijelo ngalinye, landela:
 
 Yandisa kumajelo asebenzayo. Yeka amajelo angasebenziyo.
 
-## Ulindelo Olusebenzayo
+## Ulindelo Olusebenzayo {#realistic-expectations}
 
 - **Inyanga 1-3**: abathengi aba-5-20, ubukhulu becala bevela ekufikeleleni ngqo nakuluntu
 - **Inyanga 4-6**: abathengi aba-20-50, ukuthengisa ngomxholo kuqala ukunikela
@@ -134,7 +134,7 @@ Yandisa kumajelo asebenzayo. Yeka amajelo angasebenziyo.
 
 La manani ayahluka, kodwa ipateni iyahambelana: abathengi bokuqala bavela kumzamo othe ngqo, abathengi bamva bavela kwiziphumo ezongezelekayo zomxholo, udluliselo, nodumo.
 
-## Into Esiyakhileyo Kwesi Sifundo
+## Into Esiyakhileyo Kwesi Sifundo {#what-we-built-this-lesson}
 
 - **Amajelo amathandathu okufumana abathengi** alungiselelwe i-niche yokomelela
 - **Inkqubo yokufikelela ngqo** yokufumana abathengi bokuqala

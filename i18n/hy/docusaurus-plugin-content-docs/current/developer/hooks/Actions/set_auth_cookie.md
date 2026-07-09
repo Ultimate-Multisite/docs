@@ -4,11 +4,11 @@ title: Գործողություն - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Գործողություն՝ set_auth_cookie
+# Գործողություն՝ set_auth_cookie {#action-setauthcookie}
 
 Գործարկվում է անմիջապես նախքան նույնականացման cookie-ի սահմանվելը։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | Նույնականացման սխեմա։ Արժեքները ներառում են 'auth' կամ 'secure_auth'։ |
 | $token | `string` | Օգտատիրոջ session token-ը, որն օգտագործվում է այս cookie-ի համար։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124)-ում՝ 124-րդ տողում

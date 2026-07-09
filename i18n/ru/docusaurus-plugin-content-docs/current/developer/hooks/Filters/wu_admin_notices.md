@@ -4,11 +4,11 @@ title: Фильтр — wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Фильтр: wu_admin_notices
+# Фильтр: wu_admin_notices {#filter-wuadminnotices}
 
 Позволяет разработчикам фильтровать уведомления администратора, добавленные Ultimate Multisite.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | If the dismissable notices have been filtered out. |
 | $dismissed_messages | `array` | List of dismissed notice keys. |
 
-### Начиная с версии
+### Начиная с версии {#since}
 
 - 2.0.0
-### Источник
+### Источник {#source}
 
 Определено в [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) в строке 121
 
 
-## Возвращает
+## Возвращает {#returns}

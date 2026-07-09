@@ -4,19 +4,19 @@ title: אַקציע - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Action: wu_after_switch_template
+# Action: wu_after_switch_template {#action-wuafterswitchtemplate}
 
 דערלויבן plugin־אנטוויקלערס צוצוהענגען functions נאָך אַ באַניצער אָדער super admin בייט דעם פּלאַץ־מוסטער
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | Type | באַשרײַבונג |
 |------|------|-------------|
 | $id | `int` | פּלאַץ ID |
 
-### זינט
+### זינט {#since}
 
 - 1.9.8
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/ui/class-template-switching-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-switching-element.php#L296) בײַ שורה 296

@@ -3,32 +3,32 @@ title: 'Pelajaran 3: Mengatur Jaringan Anda'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Pelajaran 3: Menyiapkan Network Anda
+# Pelajaran 3: Menyiapkan Network Anda {#lesson-3-setting-up-your-network}
 
 Saatnya membangun. Di pelajaran ini, Anda akan menginstal Ultimate Multisite dan mengonfigurasi fondasi network FitSite. Setiap keputusan di sini dibuat dengan mempertimbangkan ceruk pasar (niche) kebugaran.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 Kita telah memilih studio kebugaran sebagai ceruk pasar kita dan memvalidasi peluangnya. Sekarang, kita mengubah ide itu menjadi platform yang berfungsi.
 
-## Memilih Hosting Anda
+## Memilih Hosting Anda {#choosing-your-hosting}
 
 Pilihan hosting Anda jauh lebih penting untuk platform ceruk pasar daripada untuk situs web tunggal. Anda tidak hanya menghosting satu situs—Anda menghosting sebuah network yang akan berkembang menjadi puluhan atau ratusan situs.
 
-### Apa yang Harus Dicari
+### Apa yang Harus Dicari {#what-to-look-for}
 
 - **Dukungan WordPress Multisite**: Tidak semua host menangani multisite dengan baik
 - **Wildcard SSL**: Penting untuk network berbasis subdomain
 - **Sumber Daya yang Skalabel**: Anda membutuhkan ruang untuk tumbuh tanpa harus migrasi
 - **Integrasi Ultimate Multisite**: Pemetaan domain dan otomatisasi SSL yang otomatis menghemat banyak upaya operasional
 
-### Pendekatan yang Direkomendasikan
+### Pendekatan yang Direkomendasikan {#recommended-approach}
 
 Pilih host dari daftar [Penyedia yang Kompatibel](/user-guide/host-integrations/closte). Penyedia ini telah diuji dengan Ultimate Multisite dan menyediakan integrasi yang Anda butuhkan untuk pemetaan domain dan otomatisasi SSL.
 
 Untuk FitSite, kita akan menggunakan konfigurasi subdomain. Ini berarti situs pelanggan pada awalnya akan muncul sebagai `namastudio.fitsite.com` sebelum mereka secara opsional memetakan domain mereka sendiri.
 
-## Menginstal WordPress Multisite
+## Menginstal WordPress Multisite {#installing-wordpress-multisite}
 
 Jika Anda belum memiliki instalasi WordPress Multisite:
 
@@ -40,7 +40,7 @@ Jika Anda belum memiliki instalasi WordPress Multisite:
 Subdomain memberikan alamat unik sendiri untuk setiap situs pelanggan (`studio.fitsite.com`) daripada jalur (`fitsite.com/studio`). Ini lebih profesional bagi pelanggan Anda dan menghindari konflik tautan permanen (permalink conflicts). Lihat [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) untuk perbandingan mendetail.
 :::
 
-## Menginstal Ultimate Multisite
+## Menginstal Ultimate Multisite {#installing-ultimate-multisite}
 
 Ikuti panduan [Menginstal Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) untuk:
 
@@ -53,11 +53,11 @@ Selama setup wizard, ingatlah ceruk pasar FitSite:
 - **Nama Perusahaan (Company name)**: "FitSite" (atau nama merek pilihan Anda)
 - **Logo Perusahaan (Company logo)**: Unggah logo merek Anda -- ini akan muncul di faktur dan email
 
-## Mengonfigurasi untuk Ceruk Pasar Kebugaran
+## Mengonfigurasi untuk Ceruk Pasar Kebugaran {#configuring-for-the-fitness-niche}
 
 Setelah Ultimate Multisite terinstal, lakukan pilihan konfigurasi spesifik ceruk pasar ini:
 
-### Pengaturan Umum (General Settings)
+### Pengaturan Umum (General Settings) {#general-settings}
 
 Arahkan ke **Ultimate Multisite > Settings** dan konfigurasikan:
 
@@ -65,7 +65,7 @@ Arahkan ke **Ultimate Multisite > Settings** dan konfigurasikan:
 - **Peran Default (Default role)**: Administrator -- pemilik studio kebugaran membutuhkan kontrol penuh atas konten situs mereka
 - **Pendaftaran (Registration)**: Aktifkan pendaftaran pengguna agar pemilik studio dapat mendaftar sendiri
 
-### Konfigurasi Email
+### Konfigurasi Email {#email-configuration}
 
 Email sistem Anda harus berbicara dalam bahasa ceruk pasar Anda. Arahkan ke **Ultimate Multisite > Settings > Emails** dan sesuaikan:
 
@@ -75,7 +75,7 @@ Email sistem Anda harus berbicara dalam bahasa ceruk pasar Anda. Arahkan ke **Ul
 
 Kita akan menyempurnakan ini lebih lanjut di Pelajaran 8 (Onboarding Pelanggan), tetapi mengatur nadanya sekarang memastikan bahkan pendaftaran uji coba awal terasa spesifik ceruk pasar.
 
-### Konfigurasi Domain
+### Konfigurasi Domain {#domain-configuration}
 
 Jika menggunakan penyedia hosting yang kompatibel, konfigurasikan pemetaan domain sekarang:
 
@@ -85,7 +85,7 @@ Jika menggunakan penyedia hosting yang kompatibel, konfigurasikan pemetaan domai
 
 Ini memastikan bahwa ketika kita mulai membuat template dan situs uji coba di pelajaran berikutnya, semuanya berfungsi dari ujung ke ujung.
 
-## Network FitSite Sejauh Ini
+## Network FitSite Sejauh Ini {#the-fitsite-network-so-far}
 
 Di akhir pelajaran ini, inilah yang telah Anda miliki:
 
@@ -99,7 +99,7 @@ Network FitSite
 └── Siap untuk template situs (pelajaran berikutnya)
 ```
 
-## Apa yang Kita Bangun Pelajaran Ini
+## Apa yang Kita Bangun Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Instalasi WordPress Multisite** yang berfungsi dalam mode subdomain
 - **Ultimate Multisite terinstal** dan dikonfigurasi dengan branding FitSite

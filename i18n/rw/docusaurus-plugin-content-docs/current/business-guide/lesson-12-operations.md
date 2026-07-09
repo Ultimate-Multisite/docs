@@ -3,17 +3,17 @@ title: 'Isomo rya 12: Kuyobora Ubucuruzi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Isomo rya 12: Gukoresha Ubucuruzi
+# Isomo rya 12: Gukoresha Ubucuruzi {#lesson-12-running-the-business}
 
 Urubuga si umushinga urangiza -- ni ubucuruzi ukoresha. Iri somo risobanura ibikorwa bya buri munsi byo gucunga FitSite: ubufasha, kwishyuza, kubungabunga, no gutuma abakiriya banyurwa.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 FitSite iri gukora kandi abakiriya bari kwiyandikisha. Ubu ukeneye gukoresha ibikorwa mu buryo burambye.
 
-## Ibikorwa bya Buri Munsi
+## Ibikorwa bya Buri Munsi {#daily-operations}
 
-### Gukurikirana
+### Gukurikirana {#monitoring}
 
 Bigenzure buri munsi (cyangwa ushyireho imenyesha):
 
@@ -22,7 +22,7 @@ Bigenzure buri munsi (cyangwa ushyireho imenyesha):
 - **Kwishyura byanze**: Ese hari ukwishyura kwanze gukenera kwitabwaho?
 - **Ibyifuzo by'ubufasha**: Ese hari ibibazo by'abakiriya bitarasubizwa?
 
-### Ubufasha bw'Abakiriya
+### Ubufasha bw'Abakiriya {#customer-support}
 
 Kwibanda ku cyiciro cyihariye ni akarusho hano. Kubera ko abakiriya bawe bose ari sitidiyo za fitness, uzajya ubona ibibazo bimwe kenshi:
 
@@ -36,7 +36,7 @@ Kwibanda ku cyiciro cyihariye ni akarusho hano. Kubera ko abakiriya bawe bose ar
 
 Kubaka knowledge base yawe (yatangiye mu Isomo rya 8) ushingiye kuri ibi bibazo bigaruka. Buri ticket y'ubufasha yashoboraga kuba inkuru ya knowledge base ni ikimenyetso cyo kwandika iyo nkuru.
 
-### Inzego z'Ubufasha
+### Inzego z'Ubufasha {#support-tiers}
 
 Uko ukura, tunganya ubufasha ukurikije plan:
 
@@ -48,9 +48,9 @@ Uko ukura, tunganya ubufasha ukurikije plan:
 
 [Support Tickets addon](/addons/support-tickets) ishobora gufasha gucunga ibyifuzo by'ubufasha imbere mu rubuga.
 
-## Ibikorwa byo Kwishyuza
+## Ibikorwa byo Kwishyuza {#billing-operations}
 
-### Kwishura Bisubiramo
+### Kwishura Bisubiramo {#recurring-payments}
 
 Ultimate Multisite icunga billing isubiramo mu buryo bwikora binyuze muri payment gateway yawe. Akazi kawe ni ugukurikirana:
 
@@ -58,7 +58,7 @@ Ultimate Multisite icunga billing isubiramo mu buryo bwikora binyuze muri paymen
 - **Dunning**: Shyiraho uburyo bwikora bwo kongera kugerageza binyuze muri payment gateway yawe (Stripe ibikora neza)
 - **Ibyifuzo byo gusiba**: Sobanukirwa impamvu abakiriya bagenda. Buri gusiba ni feedback.
 
-### Gucunga Memberships
+### Gucunga Memberships {#managing-memberships}
 
 Jya kuri **Ultimate Multisite > Memberships** kugira ngo:
 
@@ -69,13 +69,13 @@ Jya kuri **Ultimate Multisite > Memberships** kugira ngo:
 
 Reba [Gucunga Memberships](/user-guide/administration/managing-memberships) ku bisobanuro byuzuye.
 
-### Invoicing
+### Invoicing {#invoicing}
 
 Menya neza ko invoices zikorwa neza kuri buri kwishyura. Abakiriya bashobora gukenera invoices zo gutanga raporo y'amafaranga y'ubucuruzi. Reba [Gucunga Payments na Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Kubungabunga Urubuga
+## Kubungabunga Urubuga {#platform-maintenance}
 
-### WordPress na Plugin Updates
+### WordPress na Plugin Updates {#wordpress-and-plugin-updates}
 
 Nk'umuyobozi wa network, ushinzwe:
 
@@ -88,14 +88,14 @@ Nk'umuyobozi wa network, ushinzwe:
 Update yapfuye igira ingaruka kuri buri site y'umukiriya kuri network yawe. Buri gihe banza ugerageze updates kuri kopi ya staging ya network yawe.
 :::
 
-### Umutekano
+### Umutekano {#security}
 
 - Komeza software yose iri ku gihe
 - Koresha passwords zikomeye na two-factor authentication kuri admin accounts
 - Kurikirana ibikorwa biteye amakenga
 - Gira plan y'ibibazo by'umutekano
 
-### Umuvuduko n'Imikorere
+### Umuvuduko n'Imikorere {#performance}
 
 Uko network yawe ikura, kurikirana:
 
@@ -105,9 +105,9 @@ Uko network yawe ikura, kurikirana:
 
 Tekereza gushyira mu bikorwa caching (page cache, object cache) na CDN niba utarabikora. [Cloudflare integration](/user-guide/host-integrations/cloudflare) icunga byinshi muri ibi.
 
-## Gucunga Ubuzima bw'Umukiriya
+## Gucunga Ubuzima bw'Umukiriya {#customer-lifecycle-management}
 
-### Kugabanya Churn
+### Kugabanya Churn {#reducing-churn}
 
 Churn ni ijanisha ry'abakiriya basiba buri kwezi. Ku bucuruzi bwa subscription, kugabanya churn ni ingenzi nk'uko kubona abakiriya bashya ari ingenzi.
 
@@ -119,7 +119,7 @@ Churn ni ijanisha ry'abakiriya basiba buri kwezi. Ku bucuruzi bwa subscription, 
 - Babonye ubundi buryo buhendutse → komeza kwerekana agaciro kawe kihariye
 - Ubucuruzi bwabo bwafunze → ntibyirindwa, ariko bikurikirane ukwabyo
 
-### Gushishikariza Upgrades
+### Gushishikariza Upgrades {#encouraging-upgrades}
 
 Abakiriya bari kuri Starter kandi barimo gutsinda bakwiye gushishikarizwa gukora upgrade:
 
@@ -127,7 +127,7 @@ Abakiriya bari kuri Starter kandi barimo gutsinda bakwiye gushishikarizwa gukora
 - Ohereza emails zigenewe kugaragaza features za Growth plan zabagirira akamaro
 - Garagaza ibyo abakiriya ba Growth/Pro bubatse
 
-### Kampanye zo Kugarura Abakiriya
+### Kampanye zo Kugarura Abakiriya {#win-back-campaigns}
 
 Iyo umukiriya asibye:
 
@@ -135,30 +135,30 @@ Iyo umukiriya asibye:
 2. Kemura ikibazo cye niba bishoboka
 3. Tanga igabanyirizwa kugira ngo agaruke (iminsi 30-60 nyuma yo gusiba)
 
-## Gahunda za Buri Cyumweru na Buri Kwezi
+## Gahunda za Buri Cyumweru na Buri Kwezi {#weekly-and-monthly-routines}
 
-### Buri Cyumweru
+### Buri Cyumweru {#weekly}
 
 - Subiramo abiyandikishije bashya n'abasibye
 - Subiza support tickets zose zifunguye
 - Genza imikorere ya platform na uptime
 - Subiramo ukwishyura kwose kwanze
 
-### Buri Kwezi
+### Buri Kwezi {#monthly}
 
 - Sesengura ibipimo by'ingenzi (MRR, churn, abakiriya bashya, upgrades)
 - Shyiraho WordPress na plugin updates (nyuma y'igerageza rya staging)
 - Subiramo kandi uvugurure knowledge base ushingiye ku buryo ibibazo by'ubufasha bigenda bigaruka
 - Ohereza newsletter cyangwa update ku bakiriya (features nshya, inama, amakuru y'urwego rwa fitness)
 
-### Buri Gihembwe
+### Buri Gihembwe {#quarterly}
 
 - Subiramo ibiciro ubigereranye n'abo muhiganwa hamwe na feedback y'abakiriya
 - Suzuma designs za template -- ese zikeneye kuvugururwa?
 - Suzuma ubushobozi bwa hosting -- ese ukeneye kwagura?
 - Subiramo kandi onera onboarding ushingiye ku makuru ya activation
 
-## Ibyo Twubatse muri Iri Somo
+## Ibyo Twubatse muri Iri Somo {#what-we-built-this-lesson}
 
 - **Imikorere ya buri munsi yo kugenzura** uptime, signups, payments, na support
 - **Imiterere ya support igabanyijemo ibyiciro** ihujwe n’inzego za plan

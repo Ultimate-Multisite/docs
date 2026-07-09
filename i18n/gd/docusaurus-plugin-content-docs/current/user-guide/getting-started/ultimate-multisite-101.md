@@ -3,23 +3,23 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite is un plugin WordPress sin a WordPress Multisite a tha leath cho offer WaaS (Websites as a Service) no customer. Leaba rùnadh a bhith a' chluainteachd agus a' faighinn gu cunntas. Leaba sinn a' chluainteachd agus a' faighinn gu cunntas, tha tha cumhachd gnìothach sin a tha a' cheannach.
 
-## An WordPress Multisite
+## An WordPress Multisite {#the-wordpress-multisite}
 
 Tha mòran de sin a tha sinn a' chluainteachd le WordPress a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha a' chluainteachd a tha
 
 An tò a bhith a tha seo a tharraing, rinn an amrud a tha ag obair, agus a chluainteach daoine a tha a' tuilleadh de dhutha, chaidh sinn a' tuiteam daoine a tha a' tuilleadh de dhutha.
 
-### An Nàthnàth (The Network)
+### An Nàthnàth (The Network) {#the-network}
 
 Mar a tha WordPress a' tuiteam, is ealaidh nàthnàth multisite is ealaidh a bheith a' leideann mion-fhaisghean (subsites) a' tuiteam de chùisbeidh (dashboard) am beatha. A bheil tòiseachadh air an t-seòl multisite a' tuiteam a' leideann a' tuiteam air an t-seòl (hosting providers), ach tha an t-uisge a tha a' tuiteam, gu sònraichte, de chùisbeidh wp-config.php a bhith ag obair mar a tha e a' tuiteam iarrachaidh seo.
 
 Tha tòiseachadh air tòiseachadh air nàthnàth multisite agus an t-seòl WordPress a tha a' tuiteam, agus rinn sinn a' tuiteam daoine a tha a' tuilleadh de dhutha.
 
-#### Subdomain vs. Subdirectory (Subdomaín vs. Subdireictiù)
+#### Subdomain vs. Subdirectory (Subdomaín vs. Subdireictiù) {#subdomain-vs-subdirectory}
 
 Is e cheann de na ceann-a-chluainteachadh is dòigh a tha thuiteam a tha thuiteam a bhith a' tuiteam, gu sònraichte, a bhith ag obair le _subdirectories_ (subdireictiú) no _subdomains_ (subdomaín). Tha Ultimate Multisite ag obair gu sònraichte air am beidichean, ach tha tòiseachadh air an t-seòl a tha a' tuiteam air na ceann-a-chluainteachan.
 
@@ -35,7 +35,7 @@ Mar a tha configuration subdomain, is eadar-dhearg a tha wildcard SSL certificat
 
 Gu aerach tha ealaidhean eile aig an t-aithreach, tha sinn a' chùineachadh beag a tha a' chùineachadh agus a' chùineachadh le deaghachd airson a bhith a' chùineachadh.
 
-#### Plugins agus Themes
+#### Plugins agus Themes {#plugins-and-themes}
 
 Tha an sin as fhaighinn WordPress air a thar a bheatha, gu sònraichte air a chùineadh namhan (customer). Mar a tha WordPress air a bheatha beag, mar a tha an athair site (site administrator) a' chùineachadh plugin fòr-àirdeach no a' chùineachadh a' tòisich a' chùineachadh a tha e cheann-a-chùineach is dòigh. Ach, mar a tha an athair site a' chùineachadh plugin fòr-àirdeach air athraidh multisite, tha e cheann-a-chùineach de chùineach air a thar a bheatha air na sitean a tha aig an cothrom.
 
@@ -43,7 +43,7 @@ Agus am fhaighinn gu h-aithne seo, nuair a bheil e asgaidh mar WordPress multisi
 
 Gu h-aithne seo, tha an admin nàthraidh a' tòiseachadh air a' installte plugin agus themen intraidh an nàthraidh agus a' leathadh an eòlasanna airson a' uile sitean nàthraidh. Chan eil chùlnaid sitechnaich a' fhaighinn an installte plugin agus themen no tha a' faighinn an installte plugin agus themen a chaidh a' tòiseachadh air a' site.
 
-#### Uisgeir agus Adminnairchnaich
+#### Uisgeir agus Adminnairchnaich {#users-and-administrators}
 
 Mar WordPress Multisite, tha a chùlnaid sitean nàthraidh a' sgaidh an deabhac (database) a' chùlnaid a' sgaidh, mar tha sinn a' sgaidh uisgeir, rôil agus eòlasanna. An fhaicinn air a ghlacadh gu sònraichte: tha a uile uisgeir a' tòiseachadh mar chluainn an nàthraidh agus cha nan sitean a' tòiseachadh.
 
@@ -55,13 +55,13 @@ Ag fhaighinn air a ghlacadh an t-aithne seo, gu sònraichte tha a uile uisgeir a
 
 Air gu faice an t-uisge, gu bheil thu na h-uilean enterprise, tha seo a' chluainn a bhith a' fhadraidh airson ùir dhèanamh air uisge agus a' chluainn. Tha seo a' tòiseachadh a bhith a' deiseil airson daoine a tha a' faighinn WordPress a' chluainn, gu bheil an dìomhaidh a' chluainn a' sgaidh a' tòiseachadh air fhaighinn uisge.
 
-#### Media
+#### Media {#media}
 
 Nuair a tha sitean neallachda (network sites) a' bhaileadh deatamha (single database) mar WordPress Multisite, tha sinn a' tòiseachadh air cur seòilichean (paths) ag an fhiscair (filesystem) airson fhaisghean media.
 
 Tha an lathaidhneach WordPress (wp-content/uploads) a' tòiseachadh; acu, tha an cur seòilich a' chluainn a' chluainn air a' chluainn site neallachda. Mar sin, tha fhaisghean media airson site neallachaidh ag tòiseachadh mar wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Tha sinn a' tòiseachadh air an t-uisge a tha _subdomain_ a' chluainn a' chluainn a' subdirectory, agus seachdaidh seo: cur seòilichean (paths).
 
@@ -75,7 +75,7 @@ Chan eil seo a' chùineachadh, tha WordPress a' tòiseachadh air fhaighinn a' ch
 
 Agair mhaigh an fhaighinn a' chùineachadh le _subdomain_ a' chùineachadh, tha an eadar-chùineachadh air namhan a' chùineachadh a' chùineachadh gu bheil an _subdomain_ a' chùineachadh mar eòlas do amas a' chùineachadh agus cha tha e a' chùineachadh le fhaighinn.
 
-### Registration (A' chùineachadh)
+### Registration (A' chùineachadh) {#static-pages}
 
 Inta chùineachadh san ngrath WordPress Multisite, tha beagail ealaian chùineachaidh neò do chùineachadh sitean airson nàdhairtich agus sithe a' chùineachadh.
 
@@ -101,11 +101,11 @@ Air tighinn airson adairtean de dhòchas airson an adairtean, tha seo de dhòcha
 
 Gu sàmhach, gu sàmhach WordPress Multisite a tha fìor a' bheachd [www.anotherdomain.com](http://www.anotherdomain.com) a bhith a' bheachd 'site1', tha an adairteann de dhòchas a' chùrsaichean DNS a' bheachd a' chùrsaichean SSL a thabhairt.
 
-## Ultimate Multisite
+## Ultimate Multisite {#registration}
 
 Le cumhachd a tha air a bhith a' bheachd a' chùrsaichean WordPress Multisite agus a bhith a' bheachd a' chùrsaichean a tha fìor, leugh sinn a' bheachd gu faic a tha Ultimate Multisite mar an chùrsaichean a tha fìor airson a' bheachd WaaS (Website as a Service).
 
-### Seannachadh
+### Seannachadh {#domain-and-ssl}
 
 Ultimate Multisite is tòiseil a tha thu mar 'Swiss Army knife' airson a' bheachd Website as a Service (WaaS) a' bheachd. Leugh Wix.com, Squarespace, WordPress.com agus tha thu a' bheachd a' gabhail eairtinn a tha thu a' chùrsaichean.
 
@@ -129,7 +129,7 @@ A' chunnichinn (Themes) thafean eadar-fhaighinn, a' leugha do chunnichinn a tha 
 
 Biollach (Agencies) biol a' chùlachd (peace of mind) le Ultimate Multisite a tha a' toirt, a' leum a dhèanamh seo a tha thuir a bhith gu sònraich - a' chluichdadh (design) sin-nàch (web sites).
 
-#### Cas 2: Seòl-fhaighinn (Niche Provider)
+#### Cas 2: Seòl-fhaighinn (Niche Provider) {#ultimate-multisite}
 
 Tha ealaidh beag a tha a' tòiseachadh gu faic, "dhèan aon rud agus dhèan thuir." Do chùlnaid (specialists) mòra, tha seo a' tòiseachadh gu crìoiche (product) no seòl (service) a choimhneach air aon chuid a tha a' tòiseachadh.
 
@@ -139,7 +139,7 @@ Am fhaighinn a' chuid seòl-fhaighinn agus seòlaichean, tha seo a' toirt a' ch�
 
 Ais e cheannach, ag iarraidh a bhith agad air an cumhachd, tha _subdirectory_ no _subdomain_ configuration gu sònraichte a thig a' chùineachadh. Mar a tha e sin, tha na chùinneachadh ar an chàrraidh a' chùineachadh a' tacaid air an SSL: caithedh thu a bhith ag iarraidh seart SSL simple airson _subdirectories_ no caithedh thu a bhith ag iarraidh seart SSL wildcard airson _subdomains_.
 
-#### Cas 3: Hostáil WordPress Web
+#### Cas 3: Hostáil WordPress Web {#introduction}
 
 Tha mòran de chùineam airson hostáil site-aiche WordPress, ach gu sònraichte, tha e ann gu robh e fìor a bhith a' chùineachadh spac air an ùr-dheargais le seart WordPress a' chluich. Tha seo a' tacaid air a bhith a' chùineachadh de dhòighinn mòran de dèanachdan agus de chùineam airson a bhith a' toirt seisapeach fìor.
 
@@ -155,7 +155,7 @@ Tha Ultimate Multisite a' fhaighinn a' obair le cumhachd nan h-provideran càili
 
 Air faighinn list air cumhachd nan h-provideran agus dìomhaidh sin airson an t-installation a' chùlchna seachna, tha thu a' tòrraichean a' tòrraichean a' chùlchna seachna.
 
-#### Cùlchna Seachna (Performance Considerations)
+#### Cùlchna Seachna (Performance Considerations) {#use-cases}
 
 Tha Ultimate Multisite cha bhith mar application a' chùlchna seachna, ach tha e gu mòr fòrlaidh. Ach, tha e ag obair dìreach mar a tha an application agus nan cumhachd nan serveran a' tòrraichean a' chùlchna seachna, agus is e a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean a' tòrraichean
 
@@ -179,7 +179,7 @@ Cùinneach, gu h-uileachd a tha a' tighinn air na fhaisghean agus na deabhacha, 
 
 Leidhean (Snapshots) eadar-fhaisghean (additional cost) a thàinig air an tighinn de dháite a' chlàradh gu fhaighinn, ach tha seo a' tòiseachadh airson gach duine is dòchtig asgàid.
 
-#### Scripte Eadar-fhaisghean (External Scripts)
+#### Scripte Eadar-fhaisghean (External Scripts) {#case-1-an-agency}
 
 Tha eadar-fhaisghean agus soluillan eile air a bhith mòra airson a chlàradh WordPress agus MySQL, agus tha sinn a' tighinn gu math airson Ultimate Multisite as eadar-fhaisghean, mar a tha e plugin WordPress a' tighinn air an fhaisghean is deabhach. Mar sin, tha soluill a thabhairt a' chlàradh sa site a' tòiseachadh na stiùiricheasail (needs) Ultimate Multisite gu math.
 
@@ -187,7 +187,7 @@ Tha sinn a' tighinn a' tòiseachadh air aon scripte air an sinne, ach tha an cea
 
 Tha eadar-fhaisghean sin, gu sònraichte, a' tighinn air a' tighinn an system load (lòidseas) a' tighinn air a' tighinn, agus tha thuairidh a' tighinn air a' chlàradh.
 
-#### Pluginnean (Plugins)
+#### Pluginnean (Plugins) {#case-2-niche-provider}
 
 Tha eadar-fhaisghean mòr air WordPress a tha a' tighinn air a' tighinn air plugin, agus mar a tha leidhean eile a' tighinn air a' tighinn air scripte eadar-fhaisghean, tha an plugin a' tòiseachadh gu math airson fhaighinn an tòiseachadh.
 
@@ -195,7 +195,7 @@ Chan eil pluginhean a' chùisbeidh optionaiche agus feàinean, tha iad gu h-èif
 
 Nuair a th’annachdaidh thu do plugin, le duine a' tòiseachadh gu cunntas a bhith a' faighinn gu sòn a tha e a' coimheadh air an server a rugadh a' chùisbeidh an seòluach.
 
-#### Domain agus SSL
+#### Domain agus SSL {#case-3-wordpress-web-hosting}
 
 Tha mòr a' tòiseachadh air am riannseinean (domain names) mar le mode _subdomain_ i multisite. Tha eadar-dhealaidh a' chluaintean airson riannseinean (DNS entries) a' chluaintean a' tòiseachadh air seòluchnaichean a' chluaintean a' tòiseachadh air seòluchnaichean.
 
@@ -219,7 +219,7 @@ Air tòr chùl, airson fìor chùl, tha e an am pròiseas a tha eanach. Tha an c
 
 An t-uisge seo, tha am fhaighinn airson soluadhan eile a' tuileadh, agus tha sin an am a thig air Ultimate Multisite a' tuileadh liosta de Seòluchnaichean (Compatible Providers). Tha seo mar a tha pròiseas a bhith a' sethandle DNS agus SSL a bhith na pròiseas a tha eanach. Ach, le cur a' chluadar sin le Ultimate Multisite, tha an t-uisge mòr a' fàs agus tha an pròiseas a' tuileadh (automated).
 
-#### Plugins
+#### Plugins {#architecture-considerations}
 
 Tha e gu sònraichte a' fhios a bheil thuig a' fhaighinn pluginan eile airson fìor chluadar a bhith a' tòiseachadh air eairtichean (functionality) dhan chluadarachau agad. A tha e an sin a' dèanamh cinnteach gu cunbhaldaidh (work) a ghnothromchail (WordPress Multisite) agus Ultimate Multisite? Tha e a' tòiseachadh air.
 

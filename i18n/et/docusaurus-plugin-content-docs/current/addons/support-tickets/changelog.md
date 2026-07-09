@@ -3,13 +3,13 @@ title: Tugipiletite muudatuste logi
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support Tickets muudatuste logi
+# Support Tickets muudatuste logi {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Täiustatud: eemaldati vendor/ kataloog Git jälgimisest (juba kaetud .gitignore poolt), vähendades repositooriumi suurust
 * Täiustatud: testitud kuni WordPress 7.0-ni
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Parandus: lubatud null-väärtused nullable pileti mudeli setterites
 * Parandus: salvestatakse kõik piletid globaalsetesse kogu võrgu tabelitesse korrektse multisite toe jaoks
 * Parandus: peidetud personali väljad ja parandatud tühja lehe ümbersuunamine kliendi uue pileti vormil
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Täiustatud: frontend-varasid laaditakse tingimuslikult ainult Support Tickets lehtedel
 * Täiustatud: plugin autoloader jäetakse vahele, kui Bedrocki juure autoloader on sõltuvused juba laadinud
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Lisatud: täielik pileti vaatamise funktsionaalsus adminile ja frontendile
 * Lisatud: AJAX käitleja pileti vastuste esitamiseks
 * Lisatud: tugi pileti vastamise funktsionaalsusele korrektse vormikäsitlusega
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Täiustatud: andmebaasi struktuur korrektsete päringu- ja skeemiklassidega vastuste ja manuste jaoks
 * Täiustatud: pileti mudelites mindi atribuutide asemel üle päris omadustele
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Uuendatud: prefiks nimetati järjepidevuse huvides ümber ultimate-multisite-ks
 * Uuendatud: tekstidomeeni standardimine
 * Parandatud: väiksemad veaparandused ja täiustused
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Esmane väljalase
 * Täielik piletihalduse süsteem
 * Mitmetasemeline juurdepääsukontroll

@@ -4,13 +4,13 @@ title: Chochita - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Chochita: wp_ultimo_host_providers_load
+# Chochita: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
 
 Lolani opanga kuti awonjezere zophatikiza za host provider zawo kudzera mu WordPress plugins.
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.0
-### Gwero
+### Gwero {#source}
 
 Zafotokozedwa mu [`inc/managers/class-domain-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-domain-manager.php#L1107) pa mzere 1107

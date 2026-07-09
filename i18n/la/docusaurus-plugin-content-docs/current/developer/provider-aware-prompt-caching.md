@@ -3,11 +3,11 @@ title: Reconditio monitorum provisoris conscia
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Promptorum in Cache Repositio Praebitoris Conscia
+# Promptorum in Cache Repositio Praebitoris Conscia {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 introducit **promptorum in cache repositio praebitoris conscia**, quae sumptus API et moram optimat prompta apud diversos LLM praebitores in cache reponendo. Unicuique praebitori diversa sunt machinae et configurationes cache.
 
-## Conspectus
+## Conspectus {#overview}
 
 Promptorum in cache repositio tibi sinit:
 
@@ -23,11 +23,11 @@ Diversi praebitores caching diversimode efficiunt:
 - **OpenRouter**: Caching proprius praebitori
 - **Vertex Anthropic**: Promptorum caching cum cache control
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini administrationem cache explicitam per `cachedContents` API praebet.
 
-### Configuratio
+### Configuratio {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Promptum in Cache Conditum Creare
+### Promptum in Cache Conditum Creare {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Prompto in Cache Condito Uti
+### Prompto in Cache Condito Uti {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Vita Cache
+### Vita Cache {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Optimae Rationes pro Gemini
+### Optimae Rationes pro Gemini {#best-practices-for-gemini}
 
 - **TTL aptum constitue**: Aequilibra compendia sumptuum contra vetustatem cache
 - **Prompta systematis in cache repone**: Idem promptum systematis per petitiones reuse
 - **Usum cache observa**: Indaga quae caches maxime adhibeantur
 - **Caches exspiratas purga**: Caches non adhibitas periodice dele
 
-## Azure OpenAI: Promptorum Caching
+## Azure OpenAI: Promptorum Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI promptorum caching cum administratione TTL automatica sustinet.
 
-### Configuratio
+### Configuratio {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Caching Activare
+### Caching Activare {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Capita Cache
+### Capita Cache {#cache-headers}
 
 Azure OpenAI capitibus HTTP ad cache control utitur:
 
@@ -152,7 +152,7 @@ Valores sustentati:
 - `no_cache`: Hanc petitionem in cache ne repone
 - `no_store`: Neque in cache repone neque reuse
 
-### Usum Cache Observare
+### Usum Cache Observare {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Optimae Rationes pro Azure OpenAI
+### Optimae Rationes pro Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Promptis constantibus utere**: Prompta identica ex caching prosunt
 - **TTL rationabile constitue**: Aequilibra sumptum contra recentiam
 - **Mensuras cache observa**: Creationem cache contra hits indaga
 - **Petitiones similes congloba**: Petitiones congrega ut cache hits maxime augeantur
 
-## OpenRouter: Caching Proprium Praebitori
+## OpenRouter: Caching Proprium Praebitori {#openrouter-provider-specific-caching}
 
 OpenRouter caching per praebitores subiectos (OpenAI, Anthropic, etc.) sustinet.
 
-### Configuratio
+### Configuratio {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Caching Uti
+### OpenRouter Caching Uti {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Optiones Propriae Praebitori
+### Optiones Propriae Praebitori {#provider-specific-options}
 
 Diversis praebitoribus diversae sunt machinae caching:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Optimae Rationes pro OpenRouter
+### Optimae Rationes pro OpenRouter {#best-practices-for-openrouter}
 
 - **Caching praebitoris tui cognosce**: Unicuique praebitori diversae sunt machinae
 - **Mores caching experire**: Confirma caching cum praebitore electo tuo operari
 - **Sumptus observa**: Compendia ex caching indaga
 - **Modelis constantibus utere**: Mutatio modelorum cache hits frangit
 
-## Vertex Anthropic: Promptorum Caching cum Cache Control
+## Vertex Anthropic: Promptorum Caching cum Cache Control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) promptorum caching cum cache control explicito sustinet.
 
-### Configuratio
+### Configuratio {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Usus Vertex Anthropic Caching
+### Usus Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Genera Gubernationis Cache
+### Genera Gubernationis Cache {#cache-control-types}
 
 - **ephemeral**: In cache serva per durationem petitionis (praedefinitum)
 - **persistent**: In cache serva per plures petitiones (si sustentatur)
 
-### Observatio Usus Cache
+### Observatio Usus Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Optimae Rationes pro Vertex Anthropic
+### Optimae Rationes pro Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Utere caching ephemeral**: Bonum ad caching unius sessionis
 - **Constitue max_tokens apte**: Aequilibra magnitudinem cache contra sumptum
 - **Observa metrica cache**: Persequere efficaciam cache
 - **Experire cum tuo onere laboris**: Confirma caching tuo casui usus prodesse
 
-## Consilium Caching Inter Provisores
+## Consilium Caching Inter Provisores {#cross-provider-caching-strategy}
 
-### Configuratio Unificata
+### Configuratio Unificata {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Deprehensio Provisoris
+### Deprehensio Provisoris {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Consilium Subsidarium
+### Consilium Subsidarium {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Optimizatio Sumptus
+## Optimizatio Sumptus {#cost-optimization}
 
-### Computa Compendia
+### Computa Compendia {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Monita Optimizationis
+### Monita Optimizationis {#optimization-tips}
 
 - **In cache serva magnos system prompts**: Maxima compendia sumptus
 - **Iterum utere contextu**: In cache serva documenta contextus saepe adhibita
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Observa efficaciam cache**: Persequere compendia vera
 - **Accommoda TTL**: Aequilibra sumptum contra recentiam
 
-## Solutio Difficultatum
+## Solutio Difficultatum {#troubleshooting}
 
-### Cache non adhibetur
+### Cache non adhibetur {#cache-not-being-used}
 
 - Confirma caching in configuratione activatum esse
 - Reprehende prompts identica esse (caching exactam congruentiam requirit)
 - Confirma cache nondum exspiravisse
 - Reprehende limites cache proprios provisoris
 
-### Creatio cache deficit
+### Creatio cache deficit {#cache-creation-failing}
 
 - Confirma magnitudinem cache intra limites provisoris esse
 - Reprehende syntaxin gubernationis cache rectam esse
 - Cura ut provisor caching pro tuo exemplari sustineat
 - Recense documenta provisoris de limitationibus
 
-### Sumptus inopinati
+### Sumptus inopinati {#unexpected-costs}
 
 - Observa creationem cache contra tokens lectionis cache
 - Confirma cache re vera adhiberi
 - Reprehende lapsus cache propter variationes prompt
 - Considera TTL aut consilium cache accommodare
 
-## Comparatio Provisorum
+## Comparatio Provisorum {#provider-comparison}
 
 | Proprietas | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Imminutio sumptus | 90% | 90% | Ex provisore pendens | 90% |
 | Observatio | Singillatim | Per metrica | Ex provisore pendens | Per usum |
 
-## Gradus Proximi
+## Gradus Proximi {#next-steps}
 
 1. **Elige tuum provisorem**: Selige secundum tua necessaria
 2. **Configura caching**: Constitue caching provisori proprium

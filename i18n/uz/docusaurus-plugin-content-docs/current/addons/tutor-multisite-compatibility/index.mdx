@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Multisite muhitlarida Tutor LMS uchun moslik tuzatishlarini qo‘shadigan WordPress plagini.
 
-## Tavsif
+## Tavsif {#description}
 
 Bu plagin WordPress multisite tarmoqlarida Tutor LMS ishlashi uchun zarur moslik tuzatishlarini taqdim etadi. U foydalanuvchilarni kursga yozish, instruktorlarni boshqarish, kurs cheklovlari va boshqa multisite-ga xos funksionallikni boshqaradi.
 
-## Imkoniyatlar
+## Imkoniyatlar {#features}
 
 - **Ma’lumotlar bazasi jadvallarini boshqarish**: Multisite tashqi kalit cheklovlari tufayli yaratilmay qolgan Tutor LMS jadvallarini avtomatik aniqlaydi va yaratadi
 - **Multisite foydalanuvchi yozilishi**: Tarmoq saytlari bo‘ylab foydalanuvchilarni kursga yozishni boshqarish uchun maxsus AJAX ishlovchilari
@@ -24,7 +24,7 @@ Bu plagin WordPress multisite tarmoqlarida Tutor LMS ishlashi uchun zarur moslik
 - **Maxsus administrator ko‘rinishlari**: Multisite-ni hisobga oladigan instruktorlar ro‘yxati va boshqaruv interfeysi
 - **Administrator vositalari**: Tarmoq va sayt administratorlari uchun ma’lumotlar bazasini boshqarish interfeysi
 
-## Talablar
+## Talablar {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Bu plagin WordPress multisite tarmoqlarida Tutor LMS ishlashi uchun zarur moslik
 - WordPress Multisite o‘rnatilishi
 - Ultimate Multisite plagini (kurs cheklovlari funksionalligi uchun)
 
-## O‘rnatish
+## O‘rnatish {#installation}
 
 1. Plagin fayllarini `/wp-content/plugins/tutor-multisite-compatibility/` manziliga yuklang
 2. Tutor LMS o‘rnatilgan va faollashtirilganiga ishonch hosil qiling
 3. Plaginni WordPress ichidagi 'Plugins' menyusi orqali faollashtiring
 4. Plagin Tutor LMS bilan avtomatik integratsiyalanadi
 
-## Fayl tuzilmasi
+## Fayl tuzilmasi {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## MU Plugin-dan ko‘chirilgan funksionallik
+## MU Plugin-dan ko‘chirilgan funksionallik {#functionality-moved-from-mu-plugin}
 
 Bu plagin avval `wp-content/mu-plugins/daves.php` ichida bo‘lgan funksionallikni o‘z ichiga oladi:
 
@@ -71,9 +71,9 @@ Bu plagin avval `wp-content/mu-plugins/daves.php` ichida bo‘lgan funksionallik
 - Multisite foydalanuvchilarini kursga yozishni boshqarish
 - Kurs mahsuloti ID ko‘rsatilishi
 
-## Ma’lumotlar bazasini boshqarish
+## Ma’lumotlar bazasini boshqarish {#database-management}
 
-### Muammo
+### Muammo {#the-problem}
 
 WordPress multisite muhitlarida Tutor LMS jadval yaratishi users jadvaliga tashqi kalit cheklovlari bo‘lgan jadvallar uchun muvaffaqiyatsiz tugaydi. Bu quyidagilar sababli yuz beradi:
 
@@ -81,7 +81,7 @@ WordPress multisite muhitlarida Tutor LMS jadval yaratishi users jadvaliga tashq
 - Tashqi kalitlar `wp_2_users` ga murojaat qiladi (u mavjud emas)
 - Haqiqiy users jadvali `wp_users` (tarmoq bo‘ylab ulashilgan)
 
-### Yechim
+### Yechim {#the-solution}
 
 Bu plagin avtomatik ravishda:
 
@@ -92,13 +92,13 @@ Bu plagin avtomatik ravishda:
    - Tarmoqda yangi sayt yaratish
    - Administrator interfeysi orqali jadvallarni qo‘lda tekshirish
 
-### Ta’sirlangan jadvallar
+### Ta’sirlangan jadvallar {#affected-tables}
 
 - `tutor_coupon_usages` - users jadvaliga tashqi kalitni o‘z ichiga oladi
 - `tutor_carts` - users jadvaliga tashqi kalitni o‘z ichiga oladi
 - `tutor_notification_preferences` - users jadvaliga tashqi kalitli TutorPro jadvali
 
-### Administrator interfeysi
+### Administrator interfeysi {#admin-interface}
 
 Ma’lumotlar bazasini boshqarish vositalariga quyidagi manzilda kiring:
 
@@ -111,6 +111,6 @@ Interfeys sizga quyidagilarni qilish imkonini beradi:
 - Ma’lumotlar bazasi konfiguratsiyasini tekshirish
 - Batafsil holat ma’lumotlarini ko‘rish
 
-## Qo‘llab-quvvatlash
+## Qo‘llab-quvvatlash {#support}
 
 Bu plagin maxsus KursoPro platformasi uchun ishlab chiqilgan. Texnik yordam uchun ishlab chiqish jamoasi bilan bog‘laning.

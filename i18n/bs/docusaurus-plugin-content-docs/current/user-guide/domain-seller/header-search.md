@@ -3,11 +3,11 @@ title: Pretraga domena u zaglavlju
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Pretraga domena u zaglavlju
+# Pretraga domena u zaglavlju {#header-domain-search}
 
 Koristite ovu postavku kada želite mali obrazac u zaglavlju koji pokreće pretragu domena, a zatim omogućava kupcu da izabere među dostupnim domenima unutar Ultimate Multisite checkouta.
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - Ultimate Multisite mrežno aktivan.
 - Multisite Ultimate Domain Seller mrežno aktivan.
@@ -16,7 +16,7 @@ Koristite ovu postavku kada želite mali obrazac u zaglavlju koji pokreće pretr
   - Konfigurisanim podržanim TLD-ovima, na primjer `com`, `net` i `org`.
 - Važeći checkout obrazac koji sadrži polje **Odabir domena**.
 
-## Checkout obrazac
+## Checkout obrazac {#checkout-form}
 
 1. Kreirajte ili uredite checkout obrazac koji koristi stranica za registraciju.
 2. Dodajte uobičajena obavezna checkout/account polja, uključujući **Korisničko ime**. Checkout obrazac koji sadrži samo polje za domen odbija Ultimate Multisite validacija.
@@ -30,7 +30,7 @@ Stranica za registraciju treba prikazati checkout obrazac, na primjer:
 [wu_checkout slug="domain-form"]
 ```
 
-## Obrazac u zaglavlju
+## Obrazac u zaglavlju {#header-form}
 
 Dodajte mali `GET` obrazac u zaglavlje sitea koji šalje uneseni pojam za pretragu na checkout stranicu kao `domain_name`:
 
@@ -44,7 +44,7 @@ Dodajte mali `GET` obrazac u zaglavlje sitea koji šalje uneseni pojam za pretra
 
 Nemojte unaprijed odabrati domen u prilagođenom JavaScriptu zaglavlja. Zaglavlje treba samo proslijediti pojam za pretragu. Domain Seller checkout skripta čita `?domain_name=example`, popunjava checkout polje za pretragu i pokreće pretragu dostupnosti kako bi kupac mogao izabrati među vraćenim domenima.
 
-## Očekivano ponašanje
+## Očekivano ponašanje {#expected-behaviour}
 
 Pretraga `example` u zaglavlju treba otvoriti:
 
@@ -61,7 +61,7 @@ Checkout zatim treba prikazati rezultate koji se mogu odabrati, kao što su:
 
 Nakon odabira dostupnog rezultata, sažetak narudžbe treba uključivati proizvod za registraciju domena i odabrani naziv domena.
 
-## Provjera
+## Provjera {#verification}
 
 1. Otvorite početnu stranicu.
 2. Pretražite golo ime, na primjer `example`.
@@ -71,7 +71,7 @@ Nakon odabira dostupnog rezultata, sažetak narudžbe treba uključivati proizvo
 6. Kliknite **Odaberi** za dostupan domen.
 7. Potvrdite da sažetak narudžbe sadrži `Domain Registration - example.com` ili odabrani domen.
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
 - Ako se lista ne pojavi, provjerite mrežnu karticu preglednika za `admin-ajax.php?action=wu_domain_search` i potvrdite da vraća neprazne `domains` ili `results`.
 - Ako checkout obrazac ne prođe validaciju prilikom spremanja, dodajte obavezna account polja kao što je **Korisničko ime**.

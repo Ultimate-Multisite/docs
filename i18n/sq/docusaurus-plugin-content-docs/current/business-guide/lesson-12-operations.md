@@ -3,17 +3,17 @@ title: 'Mësimi 12: Drejtimi i biznesit'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Mësimi 12: Drejtimi i biznesit
+# Mësimi 12: Drejtimi i biznesit {#lesson-12-running-the-business}
 
 Një platformë nuk është një projekt që e përfundon -- është një biznes që e drejton. Ky mësim mbulon operacionet e përditshme të menaxhimit të FitSite: mbështetjen, faturimin, mirëmbajtjen dhe mbajtjen e klientëve të kënaqur.
 
-## Ku e lamë
+## Ku e lamë {#where-we-left-off}
 
 FitSite është live dhe klientët po regjistrohen. Tani duhet ta drejtosh operacionin në mënyrë të qëndrueshme.
 
-## Operacionet ditore
+## Operacionet ditore {#daily-operations}
 
-### Monitorimi
+### Monitorimi {#monitoring}
 
 Kontrolloji këto çdo ditë (ose vendos njoftime):
 
@@ -22,7 +22,7 @@ Kontrolloji këto çdo ditë (ose vendos njoftime):
 - **Pagesa të dështuara**: A ka dështime pagesash që kërkojnë vëmendje?
 - **Kërkesa mbështetjeje**: A ka pyetje të klientëve pa përgjigje?
 
-### Mbështetja e klientëve
+### Mbështetja e klientëve {#customer-support}
 
 Fokusi yt në një niche është një avantazh këtu. Sepse të gjithë klientët e tu janë studio fitnesi, do të shohësh të njëjtat pyetje vazhdimisht:
 
@@ -36,7 +36,7 @@ Fokusi yt në një niche është një avantazh këtu. Sepse të gjithë klientë
 
 Ndërto bazën tënde të njohurive (të nisur në Mësimin 8) rreth këtyre pyetjeve të përsëritura. Çdo ticket mbështetjeje që mund të kishte qenë një artikull i bazës së njohurive është një sinjal për ta shkruar atë artikull.
 
-### Nivelet e mbështetjes
+### Nivelet e mbështetjes {#support-tiers}
 
 Ndërsa rritesh, strukturo mbështetjen sipas planit:
 
@@ -48,9 +48,9 @@ Ndërsa rritesh, strukturo mbështetjen sipas planit:
 
 [Support Tickets addon](/addons/support-tickets) mund të ndihmojë në menaxhimin e kërkesave të mbështetjes brenda platformës.
 
-## Operacionet e faturimit
+## Operacionet e faturimit {#billing-operations}
 
-### Pagesat e përsëritura
+### Pagesat e përsëritura {#recurring-payments}
 
 Ultimate Multisite menaxhon automatikisht faturimin e përsëritur përmes portës sate të pagesave. Detyra jote është të monitorosh për:
 
@@ -58,7 +58,7 @@ Ultimate Multisite menaxhon automatikisht faturimin e përsëritur përmes port�
 - **Dunning**: Vendos logjikë automatike riprovimi përmes portës sate të pagesave (Stripe e menaxhon mirë këtë)
 - **Kërkesa anulimi**: Kupto pse largohen klientët. Çdo anulim është feedback.
 
-### Menaxhimi i anëtarësimeve
+### Menaxhimi i anëtarësimeve {#managing-memberships}
 
 Shko te **Ultimate Multisite > Memberships** për të:
 
@@ -69,13 +69,13 @@ Shko te **Ultimate Multisite > Memberships** për të:
 
 Shih [Menaxhimi i anëtarësimeve](/user-guide/administration/managing-memberships) për referencën e plotë.
 
-### Faturimi
+### Faturimi {#invoicing}
 
 Sigurohu që faturat të gjenerohen saktë për çdo pagesë. Klientëve mund t’u duhen faturat për raportimin e shpenzimeve të biznesit. Shih [Menaxhimi i pagesave dhe faturave](/user-guide/administration/managing-payments-and-invoices).
 
-## Mirëmbajtja e platformës
+## Mirëmbajtja e platformës {#platform-maintenance}
 
-### Përditësimet e WordPress dhe plugin
+### Përditësimet e WordPress dhe plugin {#wordpress-and-plugin-updates}
 
 Si administratori i rrjetit, je përgjegjës për:
 
@@ -88,14 +88,14 @@ Si administratori i rrjetit, je përgjegjës për:
 A broken update affects every customer site on your network. Always test updates on a staging copy of your network first.
 :::
 
-### Siguria
+### Siguria {#security}
 
 - Mbaji të gjithë software të përditësuar
 - Përdor fjalëkalime të forta dhe autentikim me dy faktorë për llogaritë admin
 - Monitoro për aktivitet të dyshimtë
 - Ki një plan për incidente sigurie
 
-### Performanca
+### Performanca {#performance}
 
 Ndërsa rrjeti yt rritet, monitoro:
 
@@ -105,9 +105,9 @@ Ndërsa rrjeti yt rritet, monitoro:
 
 Mendo të implementosh caching (page cache, object cache) dhe një CDN nëse nuk e ke bërë ende. [Integrimi Cloudflare](/user-guide/host-integrations/cloudflare) menaxhon një pjesë të madhe të kësaj.
 
-## Menaxhimi i ciklit të jetës së klientit
+## Menaxhimi i ciklit të jetës së klientit {#customer-lifecycle-management}
 
-### Ulja e churn
+### Ulja e churn {#reducing-churn}
 
 Churn është përqindja e klientëve që anulojnë çdo muaj. Për një biznes abonimi, ulja e churn është po aq e rëndësishme sa fitimi i klientëve të rinj.
 
@@ -119,7 +119,7 @@ Churn është përqindja e klientëve që anulojnë çdo muaj. Për një biznes 
 - Gjetën një alternativë më të lirë → përforco vlerën tënde të niche
 - Biznesi i tyre u mbyll → e pashmangshme, por gjurmoje veçmas
 
-### Nxitja e përmirësimeve
+### Nxitja e përmirësimeve {#encouraging-upgrades}
 
 Klientët në Starter që po kanë sukses duhet të inkurajohen të përmirësojnë planin:
 
@@ -127,7 +127,7 @@ Klientët në Starter që po kanë sukses duhet të inkurajohen të përmirësoj
 - Dërgo email-e të targetuara që theksojnë funksionalitetet e planit Growth nga të cilat do të përfitonin
 - Shfaq çfarë kanë ndërtuar klientët Growth/Pro
 
-### Fushata për rikthim
+### Fushata për rikthim {#win-back-campaigns}
 
 Kur një klient anulon:
 
@@ -135,30 +135,30 @@ Kur një klient anulon:
 2. Trajto shqetësimin e tij nëse është e mundur
 3. Ofro një zbritje për t’u kthyer (30-60 ditë pas anulimit)
 
-## Rutina javore dhe mujore
+## Rutina javore dhe mujore {#weekly-and-monthly-routines}
 
-### Javore
+### Javore {#weekly}
 
 - Rishiko regjistrimet e reja dhe anulimet
 - Përgjigju të gjitha ticket-eve të hapura të mbështetjes
 - Kontrollo performancën e platformës dhe uptime
 - Rishiko çdo pagesë të dështuar
 
-### Mujore
+### Mujore {#monthly}
 
 - Analizo metrikat kryesore (MRR, churn, klientë të rinj, përmirësime)
 - Apliko përditësimet e WordPress dhe plugin (pas testit në staging)
 - Rishiko dhe përditëso bazën e njohurive bazuar në modelet e mbështetjes
 - Dërgo një newsletter ose përditësim për klientët (funksionalitete të reja, këshilla, lajme të industrisë së fitnesit)
 
-### Tremujore
+### Tremujore {#quarterly}
 
 - Rishiko çmimet krahasuar me konkurrentët dhe feedback-un e klientëve
 - Vlerëso dizajnet e template -- a kanë nevojë për rifreskim?
 - Vlerëso kapacitetin e hosting -- a duhet të shkallëzosh?
 - Rishiko dhe përmirëso onboarding bazuar në të dhënat e aktivizimit
 
-## Çfarë ndërtuam në këtë mësim
+## Çfarë ndërtuam në këtë mësim {#what-we-built-this-lesson}
 
 - **Rutina monitorimi ditore** për uptime, regjistrime, pagesa dhe mbështetje
 - **Një strukturë mbështetjeje me nivele** e përshtatur me nivelet e planit

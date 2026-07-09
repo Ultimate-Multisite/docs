@@ -3,11 +3,11 @@ title: Hooks-verwysing
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks-verwysing
+# Hooks-verwysing {#hooks-reference}
 
 Outomaties gegenereerde dokumentasie vir al **59 actions** en **118 filters** in Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Word uitgevoer voor die verifikasie-herleiding.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Word onmiddellik uitgevoer voordat die verifikasie-cookie gestel word.
@@ -69,7 +69,7 @@ Outomaties gegenereerde dokumentasie vir al **59 actions** en **118 filters** in
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Word uitgevoer nadat ’n objek in die database gestoor is.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Laat plugin-ontwikkelaars toe om actions by die ontsluitproses te voeg.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtreer die duur van die verifikasiekoekie se vervaltydperk.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtreer die verifikasie-herleidingskema.

@@ -4,11 +4,11 @@ title: Filter - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filtru: wu_admin_notices
+# Filtru: wu_admin_notices {#filter-wuadminnotices}
 
 Permite dezvoltatorilor să filtreze notificările de administrare adăugate de Ultimate Multisite.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Permite dezvoltatorilor să filtreze notificările de administrare adăugate de 
 | $filter | `string` | Dacă notificările care pot fi închise au fost filtrate. |
 | $dismissed_messages | `array` | Lista cheilor de mesaje de notificare închise. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Definit în [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) la linia 121
 
 
-## Returns
+## Returns {#returns}

@@ -3,7 +3,7 @@ title: Kusanidi PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Kuweka Lango la PayPal (v2)
+# Kuweka Lango la PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**TAARIFA MUHIMU: Makala hii inarejelea Ultimate Multisite toleo 2.x.**_
 
@@ -13,13 +13,13 @@ Kama ilivyo kwa Stripe, PayPal hutumika sana kwa malipo ya mtandaoni, hasa kweny
 
 Kumbuka kwamba unahitaji kuwa na **Account ya Biashara ya PayPal** ili kupata kitambulisho cha API kinachohitajika kwa muunganisho huu.
 
-## Kuwezesha PayPal kwenye mtandao wako
+## Kuwezesha PayPal kwenye mtandao wako {#enabling-paypal-on-your-network}
 
 Ili kuwezesha PayPal kama mbinu ya malipo inayopatikana kwenye mtandao wako, nenda kwenye kichupo cha **Ultimate Multisite > Settings > Payments** na uteue kisanduku kilicho karibu na PayPal.
 
 ![Kuwezesha PayPal katika malango amilifu ya malipo](/img/config/settings-payment-gateways.png)
 
-## Kutumia mchawi wa usanidi unaoongozwa
+## Kutumia mchawi wa usanidi unaoongozwa {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 inaongeza mchawi wa usanidi wa PayPal unaoongozwa kwenye mipangilio ya lango la malipo. Baada ya kuwezesha PayPal, tumia mchawi kwenye **Ultimate Multisite > Settings > Payments** kuchagua jinsi unavyotaka kuunganisha lango na kuthibitisha vitambulisho gani bado vinahitajika kabla ya kuhifadhi.
 
@@ -30,7 +30,7 @@ Mchawi unaunga mkono njia mbili za usanidi:
 
 Ikiwa huoni chaguo la OAuth katika mchawi, kamilisha mtiririko wa uingizaji wa vitambulisho kwa mkono hapa chini. Lango linafanya kazi na vitambulisho vilevile vya API vya PayPal Business kama matoleo ya awali ya Ultimate Multisite 2.x.
 
-## Kupata vitambulisho vya API vya PayPal
+## Kupata vitambulisho vya API vya PayPal {#getting-the-paypal-api-credentials}
 
 Mara PayPal itakapowezeshwa kama lango la malipo, utahitaji kujaza sehemu za PayPal API **Username** , PayPal API **Password** na PayPal API **Signature**.
 

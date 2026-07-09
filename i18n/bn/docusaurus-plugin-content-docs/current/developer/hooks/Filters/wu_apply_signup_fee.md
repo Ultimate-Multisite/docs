@@ -4,11 +4,11 @@ title: ফিল্টার - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 এটি নির্ধারণ করে যে সাইনআপ ফি প্রয়োগ করা হবে কিনা।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 | $product | `object` | মেম্বারশিপ লেভেল অবজেক্ট। |
 | $this | `\WP_Ultimo\Checkout\Cart` | রেজিস্ট্রেশন অবজেক্ট। |
 
-### Since
+### Since {#since}
 
 - 3.1
-### Source
+### Source {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769)-এ লাইন ১৭৬৯-এ সংজ্ঞায়িত করা হয়েছে।

@@ -3,32 +3,32 @@ title: 'Dysgu 3: Ymddangos eich rheol'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesiad 3: Ymddio'r Rheolwrch
+# Lesiad 3: Ymddio'r Rheolwrch {#lesson-3-setting-up-your-network}
 
 Mae hi'n amser i ddatblygu. Yn ystafell hwn Ultimate Multisite ac yn cyflwyno'r gweithrediad cynhwysedd o FitSite. Mae pob penderfyniad yma wedi'i gwneud gyda'r niche o ffitnes yn ôl.
 
-## Oes yma dodai
+## Oes yma dodai {#where-we-left-off}
 
 Rydyn ni'n gwneud ystudiadau ffitnes fel niche a chwilio am y cyfle. Mae'n amser i weithio â'r iddo fel platform sy'n gweithredu.
 
-## Cynrychioli eich host
+## Cynrychioli eich host {#choosing-your-hosting}
 
 Mae eich dechrau host yn bwysig iawn ar gyfer platform niche na ar gyfer golwg unig. Nid eich bod yn host un safle -- ydych chi'n host rheolwrch sydd yn dros y cyfathrebu i ddau neu fwy o safleoedd.
 
-### Bethau i chwilio am
+### Bethau i chwilio am {#what-to-look-for}
 
 - **Cynllunio WordPress Multisite**: Nid pob host yn gael ei wneud'r multisite'n dda
 - **Wildcard SSL**: Mae hyn yn hanfodol ar gyfer rheolwrch sydd ar adeiladau cyfathrebu (subdomain)
 - **Rhyddiaethau allweddol (Scalable resources)**: Mae angen i chi gael lle i'r ddefnyddio heb ei chwarae
 - **Cynllunio Ultimate Multisite**: Mae mapiad domain a SSL'n awtomatig yn gwneud weithrediadau operaciool mawr
 
-### Cyfathrebu arallangol
+### Cyfathrebu arallangol {#recommended-approach}
 
 Dechrau host o'r llyfr [Compatible Providers](/user-guide/host-integrations/closte). Mae'r hyn yn cael eu gwylio gyda Ultimate Multisite ac yn rhoi'r cynlluniau sydd angen i chi ar gyfer mapiad domain a awtomatig SSL.
 
 Ar FitSite, byddwn yn defnyddio cynllunio subdomain. Mae hyn yn ei golygu bod safleoedd cyddee'n dangos yn ewyl `studioname.fitsite.com` cyn iddynt ychwanegu eu domain yn ddefnyddiol.
 
-## Ystafell WordPress Multisite
+## Ystafell WordPress Multisite {#installing-wordpress-multisite}
 
 Os ydych chi nid oes gennych stafell WordPress Multisite:
 
@@ -40,7 +40,7 @@ Os ydych chi nid oes gennych stafell WordPress Multisite:
 Mae subdomains yn rhoi ei ffordd penodol i'r safle o'r cyddefnyddwyr eu hunain (`studio.fitsite.com`) yn lle llwybr (`fitsite.com/studio`). Mae hyn yn ffurfiol hơn ar gyfer eich cyddefnyddwyr ac yn dod i'r ddeall ychwanegau permalink. Gweld [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) am cyflwyniad cyffredinol.
 :::
 
-## Cyflawni Ultimate Multisite
+## Cyflawni Ultimate Multisite {#installing-ultimate-multisite}
 
 Cyflawni'r cyfarwyddiadau [Cyflawni Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) i:
 
@@ -53,18 +53,18 @@ Wrth y cyflwyniad, gparu â FitSite niche:
 - **Enw cwmni**: "FitSite" (neu enw brand eich cael).
 - **Logo cwmni**: Rhyngweidiwch eich logo brand -- mae hyn yn dangos ar gyfer cyfathrebu a e-bost.
 
-## Cyflawni ar gyfer y Niche Fithrin
+## Cyflawni ar gyfer y Niche Fithrin {#configuring-for-the-fitness-niche}
 
  gyda Ultimate Multisite wedi'i chwarae, gwneud y dechrau cyflwyniadau gan gynnig:
 
-### Cyddefnyddiau Cyffredinol
+### Cyddefnyddiau Cyffredinol {#general-settings}
 
 Mynolwch i **Ultimate Multisite > Settings** a rheoli:
 
 - **Enwyl yr adeilad**: FitSite
 - **Grolau cyffredinol**: Administrator -- mae angen i'r rheolwyr ystudiadau fithio gyda chylid o ddefnyddio'r cynnwys y site eu.
 
-### Cynhyrchu E-bostref (Email Configuration)
+### Cynhyrchu E-bostref (Email Configuration) {#email-configuration}
 
 Dylai eich e-bostrefau system sydd yn siarad y iaith o'ch niche. Mawrchwch i **Ultimate Multisite > Settings > Emails** a chynllunwch:
 
@@ -74,7 +74,7 @@ Dylai eich e-bostrefau system sydd yn siarad y iaith o'ch niche. Mawrchwch i **U
 
 Byddwn yn gwella hyn yn fwy yn Ysgrifennu 8 (Customer Onboarding), ond mae setiad y ton ar hyn o bryd yn sicr bod y cyfrannau test sydd wedi'u cyflwyno yn tebyg i'r niche.
 
-### Cynhyrchu Ddwyllt (Domain Configuration)
+### Cynhyrchu Ddwyllt (Domain Configuration) {#domain-configuration}
 
 Os ydych chi'n defnyddio gynnig gweithredol sydd yn gywir, rhannwch y mappio dwyllt ar hyn o bryd:
 
@@ -84,7 +84,7 @@ Os ydych chi'n defnyddio gynnig gweithredol sydd yn gywir, rhannwch y mappio dwy
 
 Mae hyn yn sicru bod bydd pob hyn yn gweithio o'r dechrau i'r diwedd pan byddwn yn creu templau a site test yn y cyflwyniad nesaf.
 
-## Y FitSite Network Erioedd
+## Y FitSite Network Erioedd {#the-fitsite-network-so-far}
 
 Ar ddiwedd y dysgu hwn, mae hyn sydd wedi'i chynllunio:
 
@@ -96,7 +96,7 @@ FitSite Network
 ├── Modelau e-bost (email templates) yn unigol i niche (yn cyntaf)
 └── Parthaid ar gyfer modelau safle (y dysgu nesaf)
 
-## Beth Rydyn Ni wedi Cyflwyno Mae'r Dysgu Hwnnw
+## Beth Rydyn Ni wedi Cyflwyno Mae'r Dysgu Hwnnw {#what-we-built-this-lesson}
 
 - **Cyfluniad WordPress Multisite byw** mewn modd subdomain
 - **Ultimate Multisite wedi'i chynalio a chefnogi** gyda brand FitSite

@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless plačilo
 
 Omogočite svojim strankam, da plačujejo članstva in izdelke Multisite Ultimate z Direct Debit prek GoCardless!
 
-## Namestitev
+## Namestitev {#installation}
 
 1. Naložite 'ultimate-multisite-gocardless' v imenik '/wp-content/plugins/'
 2. Aktivirajte vtičnik prek menija 'Plugins' v WordPress
 3. Sledite čarovniku po korakih za nastavitev vtičnika
 
-## Vodnik za uporabo
+## Vodnik za uporabo {#usage-guide}
 
 _GoCardless_ je plačilni prehod, ki je na voljo v **Evropi in v Združenem kraljestvu** ter omogoča plačila z **Direct Debit**.
 
@@ -29,7 +29,7 @@ Ta vadnica bo pokazala, kako nastavite _GoCardless_, da začnete sprejemati pla�
 
 _**Opomba: GoCardless deluje samo z naslednjimi valutami:**_ **EUR, GBP, AUD, SEK in DKK.**
 
-## Nameščanje dodatka
+## Nameščanje dodatka {#installing-the-add-on}
 
 Najprej morate namestiti dodatek GoCardless za Ultimate Multisite. To lahko storite tako, da odprete **Ultimate Multisite > Settings > Add-ons (v stranski vrstici)**. Nato na tem seznamu izberite dodatek GoCardless.
 
@@ -37,7 +37,7 @@ Ko je dodatek nameščen in aktiviran, pojdite na **Ultimate Multisite > Setting
 
 ![Nastavitve plačilnega prehoda](/img/config/settings-payment-gateways.png)
 
-## Pridobivanje Access Token
+## Pridobivanje Access Token {#getting-an-access-token}
 
 Ustvarite račun na _GoCardless_ (ali v _GoCardless_ sandbox, če ga želite **najprej preizkusiti**, kar je priporočljivo). Nato se po prijavi pomaknite do menijske postavke **Developers**.
 
@@ -61,7 +61,7 @@ Poskrbite, da ga vnesete v pravo polje. Če gre za **produkcijski žeto** **n** 
 
 To je to za prvi korak. Nato morate nastaviti poslušalca webhook.
 
-## Nastavitev poslušalca webhook
+## Nastavitev poslušalca webhook {#setting-up-the-webhook-listener}
 
 Pri naročninah mora Ultimate Multisite prejemati informacije o spremembah stanja naročnine, novih izvedenih plačilih in drugih podobnih stvareh.
 

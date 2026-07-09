@@ -3,7 +3,7 @@ title: Ntụaka Ikike
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Ntụaka Abilities
+# Ntụaka Abilities {#abilities-reference}
 
 Abilities bụ omume atomic nke Gratis AI Agent nwere ike ịkpọ na nrụnye WordPress gị. Ability ọ bụla bụ klaasị PHP e debanyere aha nke na-egosipụta JSON schema — agent na-agụ schema a n'oge ọ na-arụ ọrụ iji ghọta parameters achọrọ na ihe ability ahụ na-eweghachi.
 
@@ -11,11 +11,11 @@ Peeji a na-akọwa abilities niile na-abịa na Gratis AI Agent v1.9.0.
 
 ---
 
-## Ụdị Edemede Ahaziri Ahazi
+## Ụdị Edemede Ahaziri Ahazi {#custom-post-types}
 
 Abilities ndị a na-elekọta ụdị edemede ahaziri ahazi (CPTs) e debanyere site n'aka agent. A na-echekwa ndebanye aha na tebụl options nke WordPress ka ha dịgide ọbụna mgbe agbanyụrụ ma gbanyeghachi plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Na-edebanye aha ụdị edemede ahaziri ahazi ọhụrụ.
 
@@ -50,7 +50,7 @@ Na-edebanye aha ụdị edemede ahaziri ahazi ọhụrụ.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Na-eweghachi ụdị edemede ahaziri ahazi niile agent debanyere aha.
 
@@ -73,7 +73,7 @@ Na-eweghachi ụdị edemede ahaziri ahazi niile agent debanyere aha.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Na-ewepụ ndebanye aha ụdị edemede ahaziri ahazi agent debanyere aha na mbụ. Edemede dị adị nke ụdị ahụ ka na-adị na database mana agaghịzi enwe ike ịnweta ha site na ụdị edemede ahụ.
 
@@ -87,11 +87,11 @@ Na-ewepụ ndebanye aha ụdị edemede ahaziri ahazi agent debanyere aha na mb�
 
 ---
 
-## Taxonomies Ahaziri Ahazi
+## Taxonomies Ahaziri Ahazi {#custom-taxonomies}
 
 Abilities ndị a na-elekọta taxonomies ahaziri ahazi. Dị ka CPTs, a na-echekwa ndebanye aha taxonomy.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Na-edebanye aha taxonomy ahaziri ahazi ọhụrụ.
 
@@ -123,7 +123,7 @@ Na-edebanye aha taxonomy ahaziri ahazi ọhụrụ.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Na-eweghachi taxonomies ahaziri ahazi niile agent debanyere aha.
 
@@ -146,7 +146,7 @@ Na-eweghachi taxonomies ahaziri ahazi niile agent debanyere aha.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Na-ewepụ ndebanye aha taxonomy ahaziri ahazi agent debanyere aha na mbụ.
 
@@ -160,11 +160,11 @@ Na-ewepụ ndebanye aha taxonomy ahaziri ahazi agent debanyere aha na mbụ.
 
 ---
 
-## Usoro Nhazi
+## Usoro Nhazi {#design-system}
 
 Abilities nke usoro nhazi na-agbanwe ngosipụta anya nke saịtị WordPress — site na CSS ahaziri ahazi ruo block patterns na akara ngosi saịtị.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Na-agbakwunye CSS na `<head>` nke saịtị site na `wp_add_inline_style`. A na-echekwa CSS na option `gratis_ai_agent_custom_css` ma wepụ ya n'ụzọ dị ọcha mgbe a reset ability ahụ.
 
@@ -190,7 +190,7 @@ Na-agbakwunye CSS na `<head>` nke saịtị site na `wp_add_inline_style`. A na-
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Na-edebanye aha block pattern a pụrụ iji ọzọ na ọbá akwụkwọ pattern nke WordPress.
 
@@ -209,7 +209,7 @@ Na-edebanye aha block pattern a pụrụ iji ọzọ na ọbá akwụkwọ patte
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Na-edepụta block patterns niile agent debanyere aha.
 
@@ -231,7 +231,7 @@ Na-edepụta block patterns niile agent debanyere aha.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Na-etinye logo saịtị WordPress ka ọ bụrụ attachment ID e nyere ma ọ bụ URL onyonyo dịpụrụ adịpụ. Mgbe e nyere URL, a na-ebudata onyonyo ahụ ma bubata ya n'ime Media Library.
 
@@ -248,7 +248,7 @@ A ga-enye otu n'ime `attachment_id` ma ọ bụ `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Na-etinye preset agba/typography nwere aha na `theme.json` nke theme nọ n'ọrụ (ma ọ bụ `global-styles`). Presets bụ ngwugwu ahọpụtara nke otu Gratis AI Agent na-elekọta.
 
@@ -273,11 +273,11 @@ Na-etinye preset agba/typography nwere aha na `theme.json` nke theme nọ n'ọr
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Ikike Global Styles na-agụ ma dee uru theme.json site na WordPress Global Styles API, na-emetụta blocks na templates niile n'ofe saịtị.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Na-eweghachi nhazi global styles dị ugbu a.
 
@@ -291,7 +291,7 @@ Na-eweghachi nhazi global styles dị ugbu a.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Na-emelite otu ma ọ bụ karịa uru n'ime nhazi global styles.
 
@@ -318,7 +318,7 @@ Na-emelite otu ma ọ bụ karịa uru n'ime nhazi global styles.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Na-emegharị mgbanwe global styles niile agent tinyere, na-eweghachi ndabara theme.
 
@@ -328,11 +328,11 @@ Na-emegharị mgbanwe global styles niile agent tinyere, na-eweghachi ndabara th
 
 ---
 
-## Menu Ndugharị
+## Menu Ndugharị {#navigation-menus}
 
 Ikike Navigation Menu na-emepụta ma jikwaa menu nav WordPress na ihe ha.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Na-emepụta menu ndugharị WordPress ọhụrụ.
 
@@ -347,7 +347,7 @@ Na-emepụta menu ndugharị WordPress ọhụrụ.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Na-agbanwe aha menu ma ọ bụ na-ekenye ya ọzọ n'ebe theme.
 
@@ -363,7 +363,7 @@ Na-agbanwe aha menu ma ọ bụ na-ekenye ya ọzọ n'ebe theme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Na-agbakwunye ihe na menu ndugharị dị adị.
 
@@ -383,7 +383,7 @@ Na-agbakwunye ihe na menu ndugharị dị adị.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Na-ewepụ ihe n'ime menu ndugharị.
 
@@ -397,7 +397,7 @@ Na-ewepụ ihe n'ime menu ndugharị.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Na-edepụta menu ndugharị WordPress niile, gụnyere ebe theme e kenyere ha.
 
@@ -420,11 +420,11 @@ Na-edepụta menu ndugharị WordPress niile, gụnyere ebe theme e kenyere ha.
 
 ---
 
-## Njikwa Options
+## Njikwa Options {#options-management}
 
 Ikike Options na-agụ ma dee options WordPress site na `get_option` / `update_option`. Blocklist nchekwa arụnyere n'ime ya na-egbochi mgbanwe na-atụghị anya ya na ntọala dị mkpa.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Na-agụ option WordPress.
 
@@ -440,7 +440,7 @@ Na-eweghachi njehie ma ọ bụrụ na `option_name` dị na blocklist nchekwa.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Na-ede option WordPress.
 
@@ -458,7 +458,7 @@ Na-eweghachi njehie ma ọ bụrụ na `option_name` dị na safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Na-ehichapụ WordPress option.
 
@@ -474,7 +474,7 @@ Na-eweghachi njehie ma ọ bụrụ na `option_name` dị na safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Na-edepụta WordPress options kwekọrọ na pattern.
 
@@ -498,11 +498,11 @@ Na-edepụta WordPress options kwekọrọ na pattern.
 
 ---
 
-## Njikwa Ọdịnaya
+## Njikwa Ọdịnaya {#content-management}
 
 Ikike Njikwa Ọdịnaya na-emepụta ma dezie WordPress posts na pages. A na-eweghachi Post IDs ka usoro ndị sochirinụ n'ime atụmatụ nwere ọtụtụ ikike nwee ike izo aka na ọdịnaya emepụtara.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Na-emepụta WordPress post ọhụrụ, page, ma ọ bụ ntinye custom post type.
 
@@ -537,7 +537,7 @@ Na-emepụta WordPress post ọhụrụ, page, ma ọ bụ ntinye custom post ty
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Na-emelite WordPress post ma ọ bụ page dị adị.
 
@@ -567,7 +567,7 @@ Na-emelite WordPress post ma ọ bụ page dị adị.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Na-emepụta ọtụtụ posts n'ime otu oku ikike, na-ebelata njem azụ-na-ihu n'oge owuwu saịtị ma ọ bụ mbubata ọdịnaya n'ọtụtụ. A na-emepụta posts n'usoro; ọ bụrụ na otu daa, ndị ọzọ na-aga n'ihu ma kọọ ọdịda ahụ n'ime array nsonaazụ.
 
@@ -619,7 +619,7 @@ Na-emepụta ọtụtụ posts n'ime otu oku ikike, na-ebelata njem azụ-na-ihu
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Na-ekenye onyonyo pụtara ìhè (post thumbnail) na post ma ọ bụ page dị adị. Na-anabata ID nke mgbakwunye Media Library dị adị ma ọ bụ URL onyonyo dị anya; mgbe enyere URL, a na-ebudata onyonyo ahụ ma bubata ya na-akpaghị aka.
 
@@ -638,7 +638,7 @@ A ga-enye otu n'ime `attachment_id` ma ọ bụ `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Na-emepụta contact form site n'iji plugin form na-arụ ọrụ (Contact Form 7, WPForms, Fluent Forms, ma ọ bụ Gravity Forms, dabere na nke arụnyere). Na-eweghachi shortcode nke a pụrụ itinye n'ime post ma ọ bụ page ọ bụla.
 
@@ -691,11 +691,11 @@ Na-emepụta contact form site n'iji plugin form na-arụ ọrụ (Contact Form 
 
 ---
 
-## Nyocha Anya
+## Nyocha Anya {#visual-review}
 
 Ikike Nyocha Anya na-eme ka agent nwee ike ijide screenshots nke ibe dị ndụ ma nyochaa ha, na-eme ka nyochaa imewe n'onwe ya, ntụnyere tupu/mgbe e mesịrị, na nyocha visual regression kwe omume na-enweghị ịchọ browser extension ọ bụla.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Na-ejide screenshot nke ibe WordPress na URL enyere site n'iji server-side headless browser. A na-echekwa onyonyo ahụ na Media Library ma weghachite CDN URL.
 
@@ -724,7 +724,7 @@ Na-ejide screenshot nke ibe WordPress na URL enyere site n'iji server-side headl
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Na-ewere screenshots abụọ ma weghachite akara visual diff tinyere onyonyo diff nke na-eme ka mpaghara gbanwere pụta ìhè. Bara uru iji kwado na mgbanwe imewe mepụtara nsonaazụ a tụrụ anya ya ma ọ bụ iji chọpụta regressions a na-atụghị anya ya.
 
@@ -754,7 +754,7 @@ Na-ewere screenshots abụọ ma weghachite akara visual diff tinyere onyonyo di
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Na-ejide screenshot nke ibe ma ziga ya na ụdị asụsụ maka nyocha anya. Na-eweghachi nlele ahaziri nke na-ekpuchi nhazi, typography, ojiji agba, na nchegbu accessibility.
 
@@ -785,11 +785,11 @@ Na-ejide screenshot nke ibe ma ziga ya na ụdị asụsụ maka nyocha anya. Na
 
 ---
 
-## Ikike A Pụrụ Ịwụnye
+## Ikike A Pụrụ Ịwụnye {#installable-abilities}
 
 Installable Abilities Registry na-eme ka ịgbatị agent site na ngwugwu ikike ndị ọzọ a na-ekesa dị ka mgbakwunye WordPress kwe omume. Ngwugwu ọ bụla na-edebanye otu ikike ma ọ bụ karịa site n'iji API ikike ọkọlọtọ.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Na-eweghachi katalọgụ nke ngwugwu ikike dị maka nwụnye site na registry.
 
@@ -818,7 +818,7 @@ Na-eweghachi katalọgụ nke ngwugwu ikike dị maka nwụnye site na registry.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Na-ebudata ma na-eme ka ngwugwu ikike si na ndekọ rụọ ọrụ.
 
@@ -832,7 +832,7 @@ Na-ebudata ma na-eme ka ngwugwu ikike si na ndekọ rụọ ọrụ.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Na-ajụ ndekọ ikike iji chọta plugin kacha mma maka ọnọdụ ojiji akọwara, ma, ma ọ bụrụ na achọrọ, wụnye ya.
 

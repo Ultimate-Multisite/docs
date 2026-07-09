@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Tus Ultimate AI Connector rau Cov Chaw Kawg Uas Sib Haum
+# Tus Ultimate AI Connector rau Cov Chaw Kawg Uas Sib Haum {#ultimate-ai-connector-for-compatible-endpoints}
 
 Tus Ultimate AI Connector rau Cov Chaw Kawg Uas Sib Haum txuas cov AI provider APIs uas sib haum nrog OpenAI rau koj lub WordPress multisite network. Teeb tau ntau AI provider — txhua tus muaj nws tus kheej endpoint URL, API key, thiab default model — thiab xa requests nrog automatic fallback thaum ib tus provider siv tsis tau.
 
-## Cov Nta Tseem Ceeb
+## Cov Nta Tseem Ceeb {#key-features}
 
 - **Txhawb ntau tus provider**: Ntxiv tau ntau daim card rau AI provider, txhua daim muaj nws tus kheej endpoint URL, API key, thiab default model
 - **Luag kom rov teeb kev txiav txim**: Teeb providers raws qhov tseem ceeb los ntawm kev siv tus grip handle ntawm txhua daim card; requests yuav siv providers raws li kev txiav txim ntawd
@@ -21,26 +21,26 @@ Tus Ultimate AI Connector rau Cov Chaw Kawg Uas Sib Haum txuas cov AI provider A
 - **Cia li nthuav thaum ntxiv**: Daim card provider tshiab yuav nthuav cia li, kom koj sau tau cov ntsiab lus tam sim ntawd
 - **Script cache busting**: Provider scripts raug cache-busted thaum hloov kho plugin kom paub tseeb tias version tshiab tshaj raug load
 
-## Yam Yuav Tsum Muaj
+## Yam Yuav Tsum Muaj {#requirements}
 
 - WordPress 5.3 lossis siab dua
 - PHP 7.4 lossis siab dua
 - Ultimate Multisite qhov txuas ntxiv (qhib siv)
 - Ib qho API endpoint uas sib haum nrog OpenAI (host koj tus kheej lossis los ntawm lwm tus)
 
-## Kev Nruab
+## Kev Nruab {#installation}
 
 1. Upload cov addon files mus rau koj phau `/wp-content/plugins/`
 2. Qhib qhov txuas ntxiv los ntawm zaub mov 'Cov Txuas Ntxiv' hauv WordPress
 3. Mus rau **Ultimate Multisite → AI Connector** kom teeb tsa addon
 
-## Kev Teeb Tsa
+## Kev Teeb Tsa {#configuration}
 
-### Kev Teeb Ntau Tus Provider
+### Kev Teeb Ntau Tus Provider {#multi-provider-setup}
 
 Lub vijtsam teeb tsa siv layout raws card uas txhua daim card sawv cev rau ib tus AI provider. Koj ntxiv tau ntau tus provider npaum li koj xav tau.
 
-#### Ntxiv Ib Tus Provider
+#### Ntxiv Ib Tus Provider {#adding-a-provider}
 
 1. Mus rau **Ultimate Multisite → AI Connector** hauv network admin
 2. Nias **Ntxiv Provider**
@@ -52,15 +52,15 @@ Lub vijtsam teeb tsa siv layout raws card uas txhua daim card sawv cev rau ib tu
    - **Default Model** — tus model identifier uas yuav siv raws default rau tus provider no (piv txwv `gpt-4o`, `mistral-small`)
 5. Nias **Txuag Settings**
 
-#### Tshem Ib Tus Provider
+#### Tshem Ib Tus Provider {#removing-a-provider}
 
 Nias lub pob **Tshem** ntawm ib daim provider card twg kom rho tawm nws. Txuag settings kom siv qhov hloov ntawd.
 
-#### Rov Teeb Kev Txiav Txim Providers
+#### Rov Teeb Kev Txiav Txim Providers {#reordering-providers}
 
 Luag lub grip icon (⣿) nyob sab laug ntawm ib daim provider card twg kom rov teeb nws qhov kev txiav txim. Qhov kev txiav txim txiav txim siab fallback priority: requests raug xa mus rau thawj tus provider thiab fallback mus rau cov provider tom qab yog ib request ua tsis tiav.
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 Thaum ib request mus rau tus provider tseem ceeb ua tsis tiav — vim timeout, rate limit, lossis service outage — tus connector yuav cia li sim dua nrog tus provider tom ntej hauv daim list. Qhov no txuas ntxiv nqis hauv daim list mus txog thaum ib tus provider ua tiav lossis tag nrho providers twb raug sim lawm.
 
@@ -72,7 +72,7 @@ Thaum ib request mus rau tus provider tseem ceeb ua tsis tiav — vim timeout, r
 
 Fallback yog pob tshab rau qhov txuas ntxiv lossis theme uas hu — lawv yuav tau txais ib qho response ua tiav lossis ib qho error kawg, txawm tau sim pes tsawg tus provider los xij.
 
-### Provider Configuration Reference
+### Provider Configuration Reference {#provider-configuration-reference}
 
 | Teb | Yuav tsum muaj | Kev piav qhia |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Fallback yog pob tshab rau qhov txuas ntxiv lossis theme uas hu — lawv yuav ta
 | API Key | Yog | Authentication key rau tus provider no |
 | Default Model | Yog | Model identifier uas siv thaum tsis muaj model raug qhia hauv request |
 
-## Kev Kho Teeb Meem
+## Kev Kho Teeb Meem {#troubleshooting}
 
-### Tsis muaj providers nyob hauv list
+### Tsis muaj providers nyob hauv list {#no-providers-are-listed}
 
 Yog daim provider list khoob tom qab txuag, xyuas kom meej tias:
 
@@ -91,21 +91,21 @@ Yog daim provider list khoob tom qab txuag, xyuas kom meej tias:
 - Koj lub browser tsis tau thaiv nplooj settings kom txuag tsis tau (xyuas browser console rau JavaScript errors)
 - Qhov txuas ntxiv qhib siv thiab koj nyob rau ntawm network admin screen
 
-### Requests ua tsis tiav rau tag nrho providers
+### Requests ua tsis tiav rau tag nrho providers {#requests-are-failing-for-all-providers}
 
 - Tshawb xyuas tias txhua tus provider qhov endpoint URL mus txog tau ntawm koj server (tsis yog tsuas yog ntawm koj lub browser xwb)
 - Xyuas tias txhua tus API key siv tau thiab tseem tsis tau tas sijhawm
 - Saib tus provider qhov rate-limit thiab quota status hauv lawv dashboard
 - Qhib WordPress debug logging (`WP_DEBUG_LOG`) kom khaws tau cov lus error ntxaws los ntawm tus connector
 
-### Ib tus provider tsis raug siv rau fallback
+### Ib tus provider tsis raug siv rau fallback {#a-provider-is-not-being-used-for-fallback}
 
 Drag-to-reorder hloov fallback order. Xyuas kom tus provider uas koj xav kom txais fallback requests nyob rau qhov chaw yog hauv daim list thiab tias nws qhov endpoint URL thiab API key yog lawm.
 
-### Daim provider card tshiab tsis nthuav cia li
+### Daim provider card tshiab tsis nthuav cia li {#new-provider-card-does-not-expand-automatically}
 
 Auto-expand yuav tsum muaj JavaScript qhib siv hauv koj lub browser. Yog daim card tsis nthuav thaum nias, xyuas browser console rau errors. Cov ntsiab lus hauv daim card yeej nkag tau tas li los ntawm kev nias card header txawm auto-expand tsis trigger los xij.
 
-## Changelog
+## Changelog {#changelog}
 
 Saib [Changelog](./changelog) rau tag nrho version history.

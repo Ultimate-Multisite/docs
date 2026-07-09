@@ -3,15 +3,15 @@ title: 'Bài học 4: Xây dựng các mẫu chuyên đề'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Bài 4: Xây dựng các Mẫu theo Ngành
+# Bài 4: Xây dựng các Mẫu theo Ngành {#lesson-4-building-niche-templates}
 
 Các mẫu (Templates) là cốt lõi của giá trị độc đáo mà bạn cung cấp theo ngành nghề. Một chủ phòng tập thể hình đăng ký và thấy một trang web đã có sẵn giao diện giống như một trang web phòng tập – với lịch lớp học, hồ sơ huấn luyện viên và hình ảnh phù hợp – sẽ có khả năng ở lại cao hơn nhiều so với người thấy một trang trắng trống.
 
-## Chúng ta đã dừng ở đâu
+## Chúng ta đã dừng ở đâu {#where-we-left-off}
 
 Chúng ta đã có một mạng lưới FitSite hoạt động với Ultimate Multisite được cài đặt và cấu hình. Bây giờ, chúng ta sẽ xây dựng các mẫu giúp FitSite có cảm giác được thiết kế riêng cho các doanh nghiệp thể hình.
 
-## Tại sao các Mẫu theo Ngành lại quan trọng
+## Tại sao các Mẫu theo Ngành lại quan trọng {#why-niche-templates-matter}
 
 Các mẫu chung chung buộc khách hàng của bạn phải làm công việc khó khăn: tìm ra những trang nào họ cần, cấu trúc nội dung nào hiệu quả, và làm thế nào để nó trông phù hợp với ngành nghề của họ. Các mẫu theo ngành sẽ loại bỏ sự khó khăn đó.
 
@@ -24,11 +24,11 @@ Một chủ phòng tập thể hình đăng ký vào FitSite nên thấy:
 
 Họ chỉ cần điền thông tin chi tiết của mình. Họ không phải bắt đầu từ con số không.
 
-## Lên kế hoạch cho các Mẫu của bạn
+## Lên kế hoạch cho các Mẫu của bạn {#planning-your-templates}
 
 Trước khi xây dựng, hãy quyết định những mẫu nào cần cung cấp. Đối với FitSite, chúng ta sẽ tạo ba mẫu:
 
-### Mẫu 1: Studio Essential (Thiết yếu cho Studio)
+### Mẫu 1: Studio Essential (Thiết yếu cho Studio) {#template-1-studio-essential}
 
 Dành cho các studio nhỏ và huấn luyện viên cá nhân.
 
@@ -39,7 +39,7 @@ Dành cho các studio nhỏ và huấn luyện viên cá nhân.
 - **Trang Liên hệ** (Contact) với bản đồ vị trí và form liên hệ
 - **Thiết kế hiện đại, sạch sẽ** với bảng màu phù hợp với thể hình
 
-### Mẫu 2: Gym Pro (Chuyên nghiệp Phòng Gym)
+### Mẫu 2: Gym Pro (Chuyên nghiệp Phòng Gym) {#template-2-gym-pro}
 
 Dành cho các phòng gym đã thành lập với nhiều dịch vụ hơn.
 
@@ -50,7 +50,7 @@ Dành cho các phòng gym đã thành lập với nhiều dịch vụ hơn.
 - **Mục Lời chứng thực** (Testimonials) trên trang chủ
 - **Các tùy chọn thương hiệu nổi bật hơn**
 
-### Mẫu 3: Fitness Chain (Chuỗi Thể hình)
+### Mẫu 3: Fitness Chain (Chuỗi Thể hình) {#template-3-fitness-chain}
 
 Dành cho các hoạt động có nhiều địa điểm.
 
@@ -60,17 +60,17 @@ Dành cho các hoạt động có nhiều địa điểm.
 - **Thương hiệu tập trung** với chi tiết dành riêng cho từng địa điểm
 - **Danh bạ nhân viên** trên nhiều địa điểm
 
-## Xây dựng một Trang mẫu
+## Xây dựng một Trang mẫu {#building-a-template-site}
 
 Trong Ultimate Multisite, một mẫu (template) đơn giản là một trang WordPress được cấu hình theo cách bạn muốn các trang web khách hàng mới trông như thế nào. Đây là cách tạo một mẫu:
 
-### Bước 1: Tạo Trang mẫu
+### Bước 1: Tạo Trang mẫu {#step-1-create-the-template-site}
 
 1. Truy cập **Sites > Add New** trong khu vực quản trị mạng (network admin) của bạn
 2. Tạo một trang có tên `template-studio-essential`
 3. Trang này sẽ trở thành khung làm việc của bạn
 
-### Bước 2: Cài đặt và Cấu hình Theme
+### Bước 2: Cài đặt và Cấu hình Theme {#step-2-install-and-configure-the-theme}
 
 Chuyển sang dashboard của trang mẫu và:
 
@@ -82,7 +82,7 @@ Chuyển sang dashboard của trang mẫu và:
 Hãy chọn một theme đủ linh hoạt để trông đẹp cho ngành thể hình nhưng không quá phức tạp khiến khách hàng của bạn không thể tự quản lý được. Các theme như Astra, GeneratePress, hoặc Kadence hoạt động tốt vì chúng nhẹ, tùy chỉnh được và được hỗ trợ tốt.
 :::
 
-### Bước 3: Tạo các Trang
+### Bước 3: Tạo các Trang {#step-3-create-the-pages}
 
 Xây dựng từng trang với:
 
@@ -92,7 +92,7 @@ Xây dựng từng trang với:
 
 Hãy làm cho nội dung giữ chỗ mang tính hướng dẫn ở mức có thể. Thay vì văn bản điền chung chung, hãy viết nội dung như: "Thay thế phần này bằng mô tả ngắn gọn về studio của bạn và điều gì khiến nó đặc biệt. Hãy đề cập đến triết lý huấn luyện, số năm kinh nghiệm, hoặc những gì khách hàng có thể mong đợi."
 
-### Bước 4: Cấu hình Plugins
+### Bước 4: Cấu hình Plugins {#step-4-configure-plugins}
 
 Cài đặt và kích hoạt các plugins mà các studio thể hình cần:
 
@@ -100,7 +100,7 @@ Cài đặt và kích hoạt các plugins mà các studio thể hình cần:
 - Một plugin form liên hệ
 - Một plugin SEO (được cấu hình sẵn với các giá trị mặc định liên quan đến thể hình)
 
-### Bước 5: Đánh dấu là Mẫu
+### Bước 5: Đánh dấu là Mẫu {#step-5-mark-as-template}
 
 1. Truy cập **Ultimate Multisite > Sites**
 2. Chỉnh sửa trang mẫu
@@ -108,7 +108,7 @@ Cài đặt và kích hoạt các plugins mà các studio thể hình cần:
 
 Lặp lại quy trình này cho mỗi mẫu bạn muốn cung cấp.
 
-## Danh sách kiểm tra Chất lượng Mẫu
+## Danh sách kiểm tra Chất lượng Mẫu {#template-quality-checklist}
 
 Trước khi đưa một mẫu vào sử dụng, hãy xác minh:
 
@@ -121,7 +121,7 @@ Trước khi đưa một mẫu vào sử dụng, hãy xác minh:
 - [ ] Không có liên kết bị hỏng hoặc tài sản bị thiếu
 - [ ] Tốc độ tải trang chấp nhận được
 
-## Mạng lưới FitSite cho đến nay
+## Mạng lưới FitSite cho đến nay {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Sẵn sàng cho cấu hình gói dịch vụ (bài học tiếp theo)
 ```
 
-## Những gì chúng ta đã xây dựng trong Bài học này
+## Những gì chúng ta đã xây dựng trong Bài học này {#what-we-built-this-lesson}
 
 - **Ba mẫu chuyên biệt theo ngành** được thiết kế cho các quy mô doanh nghiệp thể hình khác nhau
 - **Nội dung và hình ảnh phù hợp với thể hình** giúp nền tảng có cảm giác được thiết kế riêng

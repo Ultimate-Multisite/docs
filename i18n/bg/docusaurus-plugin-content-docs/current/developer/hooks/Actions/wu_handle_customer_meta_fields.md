@@ -4,11 +4,11 @@ title: Действие - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Действие: wu_handle_customer_meta_fields
+# Действие: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Позволява на разработчиците на плагини да запазват мета данни по различни начини, ако е необходимо.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: a93030d6a7965ebed83579b198381fa8
 | $customer | `\Customer` | Обектът за клиента на Ultimate Multisite. |
 | $checkout | `\Checkout` | Класът за кеч аут (checkout). |
 
-### От
+### От {#since}
 
 - 2.0.0
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) на линия 1211

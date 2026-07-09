@@ -3,13 +3,13 @@ title: Kulipidwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kulipidwa (v2)
+# Kulipidwa (v2) {#getting-paid-v2}
 
 _**CHENJEZO LOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite mtundu wa 2.x.**_
 
 Ultimate Multisite ili ndi dongosolo la umembala ndi kulipiritsa lomangidwamo. Kuti dongosolo lathu la kulipiritsa ligwire ntchito, taphatikiza njira zolipirira zomwe zimagwiritsidwa ntchito kwambiri mu malonda a pa intaneti. Njira zolipirira zokhazikika mu Ultimate Multisite ndi _Stripe_ , _PayPal_ , ndi Kulipira Pamanja. Mungagwiritsenso ntchito _WooCommerce_ , _GoCardless_ ndi _Payfast_ kulandira zolipira mwa kukhazikitsa ma add-on awo oyenerera.
 
-## Zokonda Zoyambira
+## Zokonda Zoyambira {#basic-settings}
 
 Mungakonze iliyonse mwa njira zolipirira izi pansi pa zokonda zolipirira za Ultimate Multisite. Mungazipeze popita ku **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Izi zimalepheretsa umembala kuwoneka ngati ukubwerezanso zokha pamene gateway in
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kumene mungapeze ma gateway:
+## Kumene mungapeze ma gateway: {#where-to-find-the-gateways}
 
 Mungakhazikitse njira zolipirira patsamba lomwelo ( **Ultimate Multisite > Settings > Payments**). Pansi pomwe pa **ma gateway olipirira omwe akugwira ntchito** , mudzatha kuona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ndi _Manual_.
 
@@ -67,7 +67,7 @@ Nayi komanso mawonekedwe athunthu a zokonda za njira zolipirira:
 
 Tsopano, ngati mukufuna kugwiritsa ntchito _WooCommerce_ , _GoCardless_ kapena _Payfast_ ngati njira yanu yolipirira, mudzafunika **kukhazikitsa ndi kukonza ma add-on awo**.
 
-### Momwe mungakhazikitsire add-on ya WooCommerce:
+### Momwe mungakhazikitsire add-on ya WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
 Tikudziwa kuti _Stripe_ ndi _PayPal_ sizipezeka m'mayiko ena, zomwe zimachepetsa kapena kulepheretsa ogwiritsa ntchito Ultimate Multisite kugwiritsa ntchito plugin yathu bwino. Choncho tinapanga add-on yophatikiza _WooCommerce,_ yomwe ndi plugin yotchuka kwambiri ya malonda a pa intaneti. Opanga mapulogalamu padziko lonse adapanga ma add-on kuti aphatikize njira zolipirira zosiyanasiyana ku iyo. Tinagwiritsa ntchito mwayi uwu kuti tiwonjezere njira zolipirira zomwe mungagwiritse ntchito ndi dongosolo lolipiritsa la Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Mukachiyatsa, ngati mulibebe pulagini ya WooCommerce yoyikidwa ndi kuyatsidwa pa
 
 Kuti muwerenge zambiri za chowonjezera cha WooCommerce Integration, **dinani apa**.
 
-### Momwe mungayikire chowonjezera cha GoCardless:
+### Momwe mungayikire chowonjezera cha GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Masitepe oyikira chowonjezera cha _GoCardless_ ndi ofanana kwambiri ndi a chowonjezera cha _WooCommerce_. Chonde pitani ku tsamba la zowonjezera ndipo sankhani chowonjezera cha **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Kuyika kukatha, mudzatumizidwa ku tsamba la mapulagini. Apa, ingodinani **Yatsan
 
 Kuti mudziwe momwe mungayambire kugwiritsa ntchito chipata cha _GoCardless_, **werengani nkhaniyi**.
 
-### Momwe mungayikire chowonjezera cha Payfast:
+### Momwe mungayikire chowonjezera cha Payfast: {#how-to-install-the-payfast-add-on}
 
 Pitani ku tsamba la zowonjezera ndipo sankhani chowonjezera cha **Ultimate Multisite: Payfast Gateway**.
 

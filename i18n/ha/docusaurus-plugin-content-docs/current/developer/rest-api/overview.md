@@ -3,28 +3,28 @@ title: Bayani Gabaɗaya na REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Manazartar REST API
+# Manazartar REST API {#rest-api-reference}
 
-## Daidaitawar Tushe
+## Daidaitawar Tushe {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Authentication:** API Key & Secret (HTTP Basic Auth ko URL Parameters)
 
-## Authentication
+## Authentication {#authentication}
 
-### Kunna API
+### Kunna API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Samu Takardun Shaidar API
+### Samu Takardun Shaidar API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Hanyoyin Authentication
+### Hanyoyin Authentication {#authentication-methods}
 
 **HTTP Basic Auth (An ba da shawara):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Muhimman Endpoints
+## Muhimman Endpoints {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **Base Route:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Base Route:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Base Route:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Base Route:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Base Route:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Base Route:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint na Rajista
+## Endpoint na Rajista {#registration-endpoint}
 
 Endpoint ɗin `/register` yana samar da cikakken tsarin checkout/rajista:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpoints na Sovereign Tenant
+## Endpoints na Sovereign Tenant {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yana ƙara rufin REST na sovereign tenant don haɗe-haɗe da ke tanada, dubawa, ko tabbatar da tenants masu keɓewa.
 
@@ -242,7 +242,7 @@ Amsoshin matsayin migration na yau da kullum sun haɗa da:
 
 Ɗauki `ready: false` a matsayin abin toshewa kafin ƙaddamarwa. Duba cikakkun bayanan tabbatarwa, gyara haɗin host na database, queue, tanadar user, ko matsalar routing, sannan sake gwada tabbatarwa.
 
-## Amsoshin Kuskure
+## Amsoshin Kuskure {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Amsoshin matsayin migration na yau da kullum sun haɗa da:
 }
 ```
 
-## Raba Shafuka da Tacewa
+## Raba Shafuka da Tacewa {#pagination-and-filtering}
 
 **Query Parameters:**
 ```http

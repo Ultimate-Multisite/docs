@@ -3,7 +3,7 @@ title: Kaitiakitanga o ngā iwi
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Kaha Whakamana (Managing Memberships)
+# Kaha Whakamana (Managing Memberships) {#managing-memberships}
 
 I roto i Ultimate Multisite, e taea ai koe te whakamaoritanga me te whakamaoritanga katoa o ngā subscriptions o tō wāhi. Kia whakaoti me whakarere i ngā whakamārama o te subscription, ahakoaho ana ki ngā plān, ngā puta mai, te whāinga o ngā wāhi, te whāinga o te whaiwhana, te whakatūatanga o te rā, te whakatupu o te rā, te whakatūatanga o te rā, te whakahoki o te rā, me ngā wā o te whakatūatanga.
 

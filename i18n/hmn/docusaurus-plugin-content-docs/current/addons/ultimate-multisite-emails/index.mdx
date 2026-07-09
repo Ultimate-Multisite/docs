@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Email
+# Email {#emails}
 
 Ultimate Multisite: Emails addon cia cov tswv network npaj thiab tswj cov account email rau cov neeg siv khoom nrog rau cov site thiab membership. Version 1.1.0 ntxiv kev tswj account email rau sab neeg siv khoom, webmail single sign-on, kev txhawb CyberPanel forwarder, thiab kev txhim kho kev npaj thaum checkout.
 
-## Cov yam ntxwv tseem ceeb
+## Cov yam ntxwv tseem ceeb {#key-features}
 
 * **Widget account email rau neeg siv khoom**: Cov neeg siv khoom tuaj yeem tsim thiab tswj mailbox ntawm lawv nplooj account tom qab lawv muaj email membership uas tseem active.
 * **Webmail SSO thiab magic links**: Cov neeg siv khoom tuaj yeem qhib webmail ncaj qha ntawm nplooj account nrog kev txheeb xyuas ib-nias thaum provider txhawb.
@@ -20,14 +20,14 @@ Ultimate Multisite: Emails addon cia cov tswv network npaj thiab tswj cov accoun
 * **CyberPanel forwarders**: Cov network uas siv CyberPanel tuaj yeem tsim thiab tswj email forwarders ua ib feem ntawm kev khiav haujlwm email service.
 * **Kev teeb tsa paub provider**: Nplooj settings lim providers rau cov integration uas active thiab configured lawm kom administrators tsuas pom cov kev xaiv uas siv tau xwb.
 
-## Yam yuav tsum muaj
+## Yam yuav tsum muaj {#requirements}
 
 * Ultimate Multisite 2.0.0 lossis siab dua
 * WordPress Multisite installation
 * Yam tsawg kawg ib email provider integration uas configured lawm
 * Provider API credentials uas muaj cai tsim mailboxes, hloov passwords, thiab tso webmail access links thaum muaj kev txhawb
 
-## Kev installation
+## Kev installation {#installation}
 
 1. Upload cov plugin files mus rau `/wp-content/plugins/ultimate-multisite-emails`.
 2. Network activate addon ntawm **Cov plugin** hauv WordPress network admin.
@@ -35,7 +35,7 @@ Ultimate Multisite: Emails addon cia cov tswv network npaj thiab tswj cov accoun
 4. Qhib cov email provider integrations uas koj xav kom cov neeg siv khoom siv.
 5. Save settings, ces sim kev tsim account nrog ib tus neeg siv khoom uas tsis yog production lossis staging site.
 
-## Email Seller Flow ua haujlwm li cas
+## Email Seller Flow ua haujlwm li cas {#how-the-email-seller-flow-works}
 
 Kev muag email muaj ob txheej sib txawv:
 
@@ -53,7 +53,7 @@ Qhov no txhais tias kev khiav haujlwm rau tus neeg siv khoom feem ntau yog:
 5. Lub panel **Cov Email Account** tshwm rau email membership uas active ntawd.
 6. Tus neeg siv khoom nias **Tsim Account**, sau local part xws li `info`, teeb ib password, thiab addon tsim `info@their-domain.com` ntawm provider uas configured lawm.
 
-## Teeb tsa ib Email Product
+## Teeb tsa ib Email Product {#configure-an-email-product}
 
 Tsim ib email product rau txhua pob email uas koj xav muag lossis pub dawb. Yog koj tseem tshiab rau kev teeb tsa product, pib nrog [Tsim Koj Thawj Subscription Product](../../user-guide/configuration/creating-your-first-subscription-product) ces rov qab los ntawm no rau cov settings tshwj xeeb rau email.
 
@@ -67,7 +67,7 @@ Tsim ib email product rau txhua pob email uas koj xav muag lossis pub dawb. Yog 
 
 Tsuas yog providers uas enabled thiab configured tiav rau ntawm nplooj **Integrations** thiaj tshwm hauv provider selector. Yog selector khoob, configure thiab test provider ua ntej.
 
-## Ntxiv Email rau Checkout
+## Ntxiv Email rau Checkout {#add-email-to-checkout}
 
 Email products feem ntau muab ua add-ons rau ib site plan. Saib [Checkout Forms](../../user-guide/configuration/checkout-forms) rau kev khiav haujlwm dav dav ntawm checkout editor.
 
@@ -79,7 +79,7 @@ Email products feem ntau muab ua add-ons rau ib site plan. Saib [Checkout Forms]
 
 Email domain raug coj los ntawm tus neeg siv khoom lub site domain. Cov neeg siv khoom tsis sau email domain hauv kauj ruam email product.
 
-## Kev tswj Account Email rau neeg siv khoom
+## Kev tswj Account Email rau neeg siv khoom {#customer-account-email-management}
 
 Version 1.1.0 ntxiv ib widget tswj email rau nplooj account ntawm tus neeg siv khoom. Siv nws thaum cov neeg siv khoom yuav tsum self-service kev tsim thiab tu mailbox rau lawv tus kheej cov site.
 
@@ -94,7 +94,7 @@ Widget siv Ultimate Multisite account-page currents system, yog li actions raug 
 
 Yog tus neeg siv khoom tsis pom lub vaj huam sib luag email, xyuas kom lawv muaj **active Email product membership**, tias membership ntawd twb raug txuas rau ib lub site domain lawm, thiab tias product muaj provider uas twb teeb tsa lawm.
 
-## Muab Ib Pob Email Pub Dawb Rau Tus Neeg Siv Khoom
+## Muab Ib Pob Email Pub Dawb Rau Tus Neeg Siv Khoom {#giving-a-customer-a-free-email-plan}
 
 Yog xav muab email rau tus neeg siv khoom yam tsis them nyiaj, muab **email entitlement** ua ntej, ces tsim lossis cia tus neeg siv khoom tsim mailbox.
 
@@ -106,7 +106,7 @@ Cov kev xaiv uas pom zoo:
 
 Yog koj xav kom tus neeg siv khoom tswj mailbox lawv tus kheej ntawm account page, nco ntsoov tias lawv muaj active email membership rau domain. Ib lub provider mailbox uas tsim manually yam tsis muaj membership ntawd yeej muaj tau, tab sis tus neeg siv khoom tej zaum yuav tsis pom lub vaj huam sib luag self-service email rau nws.
 
-## Accounts Uas Admin Tsim thiab "Tsis Muaj Order Number"
+## Accounts Uas Admin Tsim thiab "Tsis Muaj Order Number" {#admin-created-accounts-and-no-order-number}
 
 Nplooj admin **Email Accounts** tsim lossis kho ib lub provider mailbox. Nws tsis yog thawj kauj ruam rau muag lossis muab ib pob email plan.
 
@@ -122,7 +122,7 @@ Siv txoj kev ua haujlwm no hloov:
 
 Yog koj tsuas xav tsim ib lub provider mailbox rau tus neeg siv khoom thiab tsis xav tau kev tswj self-service account-page, account uas admin tsim kuj txaus lawm. Yog koj xav kom tus neeg siv khoom pom thiab tswj nws hauv Ultimate Multisite, tsim email membership thiab.
 
-## Webmail SSO thiab Magic-Link Login
+## Webmail SSO thiab Magic-Link Login {#webmail-sso-and-magic-link-login}
 
 Webmail SSO muab rau cov neeg siv khoom ib qho kev ua **Open webmail** ncaj qha ntawm account page. Thaum active provider txhawb, addon thov ib lub access URL luv-sijhawm thiab redirect tus neeg siv khoom mus rau webmail yam tsis thov kom lawv copy mailbox credentials.
 
@@ -134,7 +134,7 @@ Provider behaviour yuav sib txawv:
 
 Qhib webmail access tsuas rau providers uas koj twb teeb tsa required API credentials lawm xwb. Yog action ploj rau ib tug provider, ua ntej xyuas tias provider yog active, configured, thiab supports webmail login links.
 
-## Checkout Provisioning
+## Checkout Provisioning {#checkout-provisioning}
 
 Addon provision email **membership context** thaum checkout. Nws sau provider, account limit, quota, thiab site domain kom cov neeg siv khoom tsim tau lawv tus kheej mailbox names ntawm account page tom qab yuav.
 
@@ -148,15 +148,15 @@ Kev rollout uas pom zoo:
 
 Yog provisioning poob, customer account thiab membership tseem yuav muaj tau thaum email membership lossis provider mailbox xav tau administrator follow-up. Xyuas Ultimate Multisite activity logs thiab provider logs ua ntej rov sim.
 
-## CyberPanel Email Forwarders
+## CyberPanel Email Forwarders {#cyberpanel-email-forwarders}
 
 Rau networks uas backed los ntawm CyberPanel, version 1.1.0 ntxiv email forwarder support. Siv forwarders thaum cov neeg siv khoom xav tau addresses xws li `info@customer-domain.test` kom redirect mail mus rau lwm inbox yam tsis tsim ib lub mailbox puv.
 
 Ua ntej muab forwarders, xyuas kom CyberPanel integration twb configured thiab reachable lawm. Saib phau [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) guide rau host, username, password, thiab package constants uas yuav tsum muaj.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.1.0 - Tso tawm rau 2026-05-05
+### Version 1.1.0 - Tso tawm rau 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Tshiab: Webmail SSO thiab magic-link login — cov neeg siv khoom tuaj yeem nkag rau webmail ncaj qha ntawm lawv Account nrog kev lees paub ib-nias.
 * Tshiab: Ntxiv kev hloov password rau hauv email Account kev tswj hwm widget.
@@ -170,28 +170,28 @@ Ua ntej muab forwarders, xyuas kom CyberPanel integration twb configured thiab r
 * Kho: Tshem per-request log spam tawm ntawm Email_Account_Manager initialization.
 * Txhim kho: Settings nplooj ntawv tam sim no lim kom qhia tsuas yog cov email providers uas active thiab configured xwb.
 
-## Cov Lus Nug Uas Nquag Nug
+## Cov Lus Nug Uas Nquag Nug {#frequently-asked-questions}
 
-### Cov neeg siv khoom puas tsim tau lawv tus kheej email Accounts?
+### Cov neeg siv khoom puas tsim tau lawv tus kheej email Accounts? {#can-customers-create-their-own-email-accounts}
 
 Tau. Thaum tus neeg siv khoom muaj ib qho email membership uas active rau ib domain thiab product tso cai rau Accounts ntxiv, cov neeg siv khoom tuaj yeem tsim thiab tswj lawv tus kheej mailboxes ntawm Account nplooj ntawv.
 
-### Puas yog txhua provider txhawb webmail SSO?
+### Puas yog txhua provider txhawb webmail SSO? {#does-every-provider-support-webmail-sso}
 
 Tsis yog. SSO thiab magic-link kev txhawb nyob ntawm email provider uas active. Cov providers uas tsis muaj access-link API tseem tuaj yeem txhawb kev tsim mailbox thiab hloov password.
 
-### Cov administrators puas tsim tau email Accounts rau cov neeg siv khoom?
+### Cov administrators puas tsim tau email Accounts rau cov neeg siv khoom? {#can-administrators-create-email-accounts-for-customers}
 
 Tau. Cov administrators tuaj yeem tsim email Accounts ntawm admin interface, suav nrog kev teeb password pib thaum tsim Account. Rau kev tswj tus kheej ntawm tus neeg siv khoom, kuj xyuas kom tus neeg siv khoom muaj email membership uas active rau domain ntawd.
 
-### Kuv puas muab tau ib qho email Account pub dawb?
+### Kuv puas muab tau ib qho email Account pub dawb? {#can-i-give-an-email-account-away-for-free}
 
 Tau. Tsim ib qho Email product pub dawb/tus nqi xoom thiab ntxiv nws ua active membership rau tus neeg siv khoom, lossis cia tus neeg siv khoom ua checkout tiav nrog 100% discount. Tom qab email membership muaj lawm, tus neeg siv khoom lossis administrator tuaj yeem tsim mailbox tiag.
 
-### Vim li cas kev assign email Account thiaj nug txog order number?
+### Vim li cas kev assign email Account thiaj nug txog order number? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 Membership field nrhiav ib qho Ultimate Multisite membership uas twb muaj lawm raws nws reference/order number. Yog tus neeg siv khoom tsis tau yuav email product thiab koj tsis tau tsim email membership manually, ces tsis muaj email membership/order los assign. Tsim email membership ua ntej, ces mam tsim lossis assign mailbox.
 
-### Forwarders puas yog tib yam li mailboxes?
+### Forwarders puas yog tib yam li mailboxes? {#are-forwarders-the-same-as-mailboxes}
 
 Tsis yog. Ib mailbox khaws mail thiab muaj login credentials. Ib forwarder xa mail mus rau lwm address thiab tsis muab inbox cais.

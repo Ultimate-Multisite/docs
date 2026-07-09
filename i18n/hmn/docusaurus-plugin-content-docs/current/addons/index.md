@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons yu ua Ultimate Multisite nrog kev tshawb nrhiav thiab muaj kuvv tsim phoj tshiab thiab hais txog qhov uas yuav ua tau. Yog tias muaj addon, nws yuav tsum tsim thiab xith sa los ntawm [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Installation (Tsim)
+## Installation (Tsim) {#installation}
 
 Yu tuaj ye tsim addon hauv ntau yam:
 
 1. **Via the Addon Page** -- Tsim siv qhov chaw uas muaj hauv WordPress admin los ntawm no.
 2. **Manual Download** -- Tsim los ntawm [your account](https://ultimatemultisite.com/my-account/downloads/) thiab upload los ntawm Plugins > Add New.
 
-## Available Addons (Muaj Addon Ua Tau)
+## Available Addons (Muaj Addon Ua Tau) {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

@@ -4,11 +4,11 @@ title: Filtre - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Filter: wu_generated_username_from_email
+# Filter: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Filtrer le nom d'utilisateur client généré.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Filtrer le nom d'utilisateur client généré.
 | $new_user_args | `array` | Tableau des arguments du nouvel utilisateur, pouvant inclure le prénom et le nom. |
 | $suffix | `string` | Ajouter une chaîne au nom d'utilisateur pour le rendre unique. |
 
-### Depuis
+### Depuis {#since}
 
 - 3.7.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) at line 488

@@ -4,22 +4,22 @@ title: 'Kev ua - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 2bdd062afe3dbfa7e50dc5162fba9b99
 ---
-# Action: wu_page_\{$this->id\}_after_render
+# Action: wu_page_\{$this->id\}_after_render {#action-wupagethis-idafterrender}
 
 Tshwm sim tom qab render ib nplooj ntawv tshwj xeeb.
 
 Kev siv: Qhov dynamic yuav tsum muab hloov nrog ib page id uas siv tau, piv txwv li add_action('wu_page_events_after_render', 'do_something_callback', 10, 2);
 
-## Cov Parameters
+## Cov Parameters {#parameters}
 
 | Npe | Hom | Kev piav qhia |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Tus id ntawm nplooj ntawv. |
 | $this | `\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Tus Base Admin Page instance. |
 
-### Txij thaum
+### Txij thaum {#since}
 
 - 1.8.2
-### Qhov chaw
+### Qhov chaw {#source}
 
 Txhais nyob rau hauv [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L394) ntawm kab 394

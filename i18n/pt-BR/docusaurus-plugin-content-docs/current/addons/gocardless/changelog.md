@@ -3,7 +3,7 @@ title: Changelog do GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Changelog do GoCardless
+# Changelog do GoCardless {#gocardless-changelog}
 
 Versão: 1.0.3 - Lançada em 2026-05-05
 * Correção: Sites pendentes órfãos agora são limpos quando uma membership do GoCardless é cancelada enquanto está em estado pendente ou em espera

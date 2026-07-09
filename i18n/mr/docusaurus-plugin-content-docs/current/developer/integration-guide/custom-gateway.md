@@ -3,11 +3,11 @@ title: कस्टम गेटवे विकास
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# सानुकूल गेटवे विकास
+# सानुकूल गेटवे विकास {#custom-gateway-development}
 
 `Base_Gateway` class विस्तारून तुम्ही सानुकूल पेमेंट गेटवे तयार करू शकता.
 
-## गेटवे class
+## गेटवे class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## गेटवे नोंदणी करा
+## गेटवे नोंदणी करा {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## मुख्य पद्धती
+## मुख्य पद्धती {#key-methods}
 
 | पद्धत | उद्देश |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | परतावा विनंत्या हाताळा |
 | `get_payment_methods()` | ग्राहकासाठी जतन केलेल्या पेमेंट पद्धती परत करा |
 
-## आवर्ती सदस्यत्वांसाठी नूतनीकरण credentials
+## आवर्ती सदस्यत्वांसाठी नूतनीकरण credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 मुळे गेटवे एकत्रीकरणांना `auto_renew` कायमस्वरूपी जतन होण्यापूर्वी आवर्ती सदस्यत्वाकडे पुन्हा वापरता येणारे नूतनीकरण credential आहे की नाही हे कळवता येते. `wu_membership_has_renewal_credential` hook करा आणि परत करा:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 नवीन पुन्हा वापरता येणारे credential साठवल्यानंतर तुमच्या गेटवेच्या यशस्वी पुनः-अधिकृतता flow चा भाग म्हणून गहाळ-credential marker साफ करा.
 
-## टिप्स
+## टिप्स {#tips}
 
 - अपयश आल्यास नेहमी `WP_Error` परत करा, जेणेकरून Ultimate Multisite त्रुटी प्रदर्शन हाताळू शकेल
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - गेटवे-विशिष्ट लॉगिंगसाठी `wu_log_add()` वापरा
 
-## AI connector provider क्षमता
+## AI connector provider क्षमता {#ai-connector-provider-capabilities}
 
 AI connector-आधारित operations कॉल करणाऱ्या सानुकूल एकत्रीकरणांनी AI Provider for Anthropic Max v1.3.0 सह सादर केलेल्या समर्थित OAuth provider संचाशी सुसंगत राहावे:
 

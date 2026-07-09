@@ -3,13 +3,13 @@ title: म्यानुअल भुक्तानी सेट अप गर
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Payments सेटअप गर्ने (v2)
+# Manual Payments सेटअप गर्ने (v2) {#setting-up-manual-payments-v2}
 
 _**महत्त्वपूर्ण नोट: यो लेख Ultimate Multisite version 2.x सँग सम्बन्धित छ।**_
 
 Manual payments तपाईंका प्रयोगकर्ताहरूका लागि **Stripe** वा **PayPal** उपलब्ध नभएमा अन्य भुक्तानी विधिहरू प्रस्ताव गर्ने तरिका हो। यो वायर वा बैंक ट्रान्सफर, वा तपाईंका प्रयोगकर्ताहरूलाई स्थानीय रूपमा उपलब्ध कुनै पनि अन्य भुक्तानी विधि हुन सक्छ।
 
-## Manual Payments सक्षम गर्ने तरिका
+## Manual Payments सक्षम गर्ने तरिका {#how-to-enable-manual-payments}
 
 Manual payment सेटअप गर्न धेरै सजिलो छ। तपाईंले यसलाई payment gateways अन्तर्गत सक्षम गर्नुपर्छ र प्रयोगकर्ताले भुक्तानी कसरी पठाउनुपर्छ भन्ने विस्तृत निर्देशनहरू राख्नुपर्छ।
 
@@ -31,7 +31,7 @@ Manual payment सेटअप गर्न धेरै सजिलो छ। 
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## manual payments पुष्टि गर्ने
+## manual payments पुष्टि गर्ने {#confirming-manual-payments}
 
 Manual payment पुष्टि गर्न, बायाँ बारमा रहेको **Payments** मेनुमा जानुहोस्। त्यहाँ तपाईंले आफ्नो network का सबै भुक्तानीहरू र तिनका विवरणहरू, तिनको **status** सहित, देख्न सक्नुहुन्छ। Manual payment मा तपाईंले आफैं परिवर्तन नगरेसम्म सधैं **Pending** status रहनेछ।
 

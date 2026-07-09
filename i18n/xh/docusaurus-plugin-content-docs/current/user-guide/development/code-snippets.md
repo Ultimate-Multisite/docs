@@ -3,7 +3,7 @@ title: Iziqwenga zekhowudi
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Iziqwengana zekhowudi ze-v2
+# Iziqwengana zekhowudi ze-v2 {#code-snippets-for-v2}
 
 Ngokusisiseko, iziqwengana zekhowudi ze-**WordPress** zisetyenziswa ukwenza izenzo ezithile ezinokuthi kungenjalo zifune iplagi encinane ezinikeleyo. Ezo ziqwengana zekhowudi zibekwa kwenye yeefayile ezingundoqo ze-WordPress okanye ze-theme (ngokuqhelekileyo ifayile functions.php ye-theme yakho) okanye zingasetyenziswa njenge-MU plugin.
 
@@ -15,13 +15,13 @@ Kweli nqaku siza kukubonisa iziqwengana zekhowudi ezintathu ezinokusetyenziswa n
 
   * [**Ukulungisa iingxaki ze-CORS nge-Font-Icons kwiidomeyini ezimaphuweyo**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Ukutshintsha indawo yento yemenyu ye-Account
+## Ukutshintsha indawo yento yemenyu ye-Account {#changing-the-position-of-the-account-menu-item}
 
 Ukutshintsha indawo yento yemenyu ye-Account kwi-Dashboard yomthengi wakho, yongeza nje esi siqwengana sekhowudi silandelayo kwi-functions.php ye-theme esebenzayo yesayithi yakho ephambili. Unako nokubeka isiqwengana ngaphakathi kwenye yee-mu-plugins zakho okanye iiplagi ezenzelwe wena.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## Indlela yokujonga ukuba umsebenzisi uphantsi kwesicwangciso esinikiweyo kunye/okanye unesubscription esebenzayo
+## Indlela yokujonga ukuba umsebenzisi uphantsi kwesicwangciso esinikiweyo kunye/okanye unesubscription esebenzayo {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Njengomlawuli wenethiwekhi, ungadinga ukwenza imisebenzi eyenzelwe wena eza kwenza izenzo ezisisiseko okanye yenze inkonzo/umsebenzi ufumaneke kwiqela elikhethiweyo lababhalisi okanye abasebenzisi bokugqibela, ngokusekelwe kwimeko yesubscription yabo kunye nesicwangciso ababhalise phantsi kwaso.
 
@@ -47,8 +47,8 @@ Qaphela ukuba abasebenzisi banokubhaliswa kuphela kwi-**Sicwangciso** , hayi kwi
 
 ![Uluhlu lweemveliso olubonisa ii-ID zezicwangciso](/img/admin/products-list.png)
 
-## Ukulungisa iingxaki ze-CORS nge-Font-Icons kwiidomeyini ezimaphuweyo
-## Ukulungisa iingxaki ze-CORS nge-Font-Icons kwiidomeyini ezimaphuweyo
+## Ukulungisa iingxaki ze-CORS nge-Font-Icons kwiidomeyini ezimaphuweyo {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Ukulungisa iingxaki ze-CORS nge-Font-Icons kwiidomeyini ezimaphuweyo {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Emva kokumapha idomeyini kwisub-site unokufumanisa ukuba isayithi inengxaki yokulayisha iifonti ezenzelwe wena. Oko kubangelwa yibhloko ye-cross-origin kwiisetingi zeseva yakho.
 
@@ -56,13 +56,13 @@ Kuba iifayile zefonti phantse zihlala zilayishwa ngokuthe ngqo kwi-CSS, iplagi y
 
 Ngezantsi kukho iziqwengana zekhowudi zokulungisa ingxaki ye-Apache kunye ne-NGINX. Olu tshintsho lufuna ulwazi oluphambili lweefayile zoqwalaselo lweseva (iifayile ze-.htaccess kunye neefayile zoqwalaselo ze-NGINX). Ukuba awukhululekanga ukwenza olo tshintsho ngokwakho, thumela eli phepha kubameli benkxaso bomboneleli wakho wokuhostwa xa ufuna uncedo.
 
-### Apache
+### Apache {#apache}
 
 Kwifayile yakho ye-.htaccess, yongeza:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 Kwifayile yoqwalaselo lweseva yakho (indawo iyahluka ukusuka kwiseva ukuya kwiseva), yongeza:
 

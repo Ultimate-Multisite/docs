@@ -3,11 +3,11 @@ title: 進階程式碼範例
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# 進階程式碼範例
+# 進階程式碼範例 {#advanced-code-examples}
 
 這些範例展示了與 Ultimate Multisite 進行進階整合的模式。
 
-## 動態定價引擎
+## 動態定價引擎 {#dynamic-pricing-engine}
 
 這是一個基於規則的定價引擎，可以應用銷量、忠誠度和季節性折扣：
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## 進階站點配置
+## 進階站點配置 {#advanced-site-provisioning}
 
 根據方案功能，自動為新站點配置插件、SSL、CDN、備份和監控等服務：
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## 自訂限制系統
+## 自訂限制系統 {#custom-limitations-system}
 
 追蹤並強制執行資源限制，並提供使用警告：
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB 原子計數器，使用 `increment_item()`
+## BerlinDB 原子計數器，使用 `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 新增了 BerlinDB `Query` 類別的 `increment_item()` 方法。使用它可以在沒有讀取-修改-寫入競態條件的情況下，對數值欄位執行安全、原子的增量操作——這對於計數器、使用配額和執行併發請求的速率限制檢查非常有用。
 
-### 方法簽章
+### 方法簽章 {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 新增了 BerlinDB `Query` 類別的 `increment_item()
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### 基本用法
+### 基本用法 {#basic-usage}
 
 ```php
 // 為會員 ID 42 的 `api_calls` 欄位增加 1。
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### 依會員追蹤 API 使用量
+### 依會員追蹤 API 使用量 {#tracking-api-usage-per-membership}
 
 這是一種實用的模式，用於強制執行每會員的 API 速率限制：
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### 為什麼使用 `increment_item()` 而不是 `update_item()`
+### 為什麼使用 `increment_item()` 而不是 `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 採用天真的讀取-修改-寫入 (read-modify-write) 方法在併發請求下是不安全的：
 

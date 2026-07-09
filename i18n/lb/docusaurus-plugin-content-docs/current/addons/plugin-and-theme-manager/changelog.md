@@ -3,7 +3,7 @@ title: Plugin- & Theme-Manager Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# Erweiderungs- & Design-Verwalter Ännerungsprotokoll
+# Erweiderungs- & Design-Verwalter Ännerungsprotokoll {#plugin--theme-manager-changelog}
 
 Versioun: 2.0.8 - Verëffentlecht den 2026-05-05
 * Verbessert: D'Erweiderungs-Lëscht benotzt elo de Websäit-Cache, fir Datebank-Ufroen ze reduzéieren an d'Leeschtung ze verbesseren

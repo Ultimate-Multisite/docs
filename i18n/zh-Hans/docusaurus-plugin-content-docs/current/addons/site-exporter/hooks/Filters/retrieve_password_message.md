@@ -27,11 +27,11 @@ title: |
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# 过滤器：retrieve_password_message
+# 过滤器：retrieve_password_message {#filter-retrievepasswordmessage}
 
 过滤密码重置邮件的正文。
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|-------------|
@@ -40,15 +40,15 @@ _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 | $user_login | `string` | 用户的用户名。 |
 | $user_data | `\WP_User` | WP_User 对象。 |
 
-### 自
+### 自 {#since}
 
 - 2.8.0
 - 4.1.0: 添加了 <code>$user_login</code> 和 <code>$user_data</code> 参数。
 
-### 来源
+### 来源 {#source}
 
 定义在 [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) 的第 149 行
 
-## 返回
+## 返回 {#returns}
 
 默认邮件正文。

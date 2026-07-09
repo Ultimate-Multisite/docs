@@ -3,13 +3,13 @@ title: Pasirinktinės registratoriaus integracijos kūrimas
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Pasirinktinės registratoriaus integracijos kūrimas
+# Pasirinktinės registratoriaus integracijos kūrimas {#building-a-custom-registrar-integration}
 
 Domain Seller priedas naudoja **Integration Registry** modelį. Kiekvienas registratorius yra PHP klasė, kuri įgyvendina `Domain_Selling_Capability` ir užregistruoja save per `wu_domain_seller_register_capabilities` veiksmo hook.
 
 Šis vadovas parodo, kaip prijungti pasirinktinį registratorių.
 
-## Sąsaja
+## Sąsaja {#the-interface}
 
 Jūsų klasė turi įgyvendinti `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ir išplėsti `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Pasirenkami metodai
+### Pasirenkami metodai {#optional-methods}
 
 Įgyvendinkite juos, kad atrakintumėte papildomas funkcijas. Priedas aptinka palaikymą per `method_exists()`:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Domeno perkėlimas (išeinantis) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domeno perkėlimas (įeinantis) |
 
-### Grąžinamos reikšmės konvencija
+### Grąžinamos reikšmės konvencija {#return-value-convention}
 
 Visi metodai grąžina masyvą, kuriame bent jau yra `success` raktas:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Jūsų capability registravimas
+## Jūsų capability registravimas {#registering-your-capability}
 
 Užregistruokite savo klasę naudodami `wu_domain_seller_register_capabilities` veiksmą:
 
@@ -109,7 +109,7 @@ Pirmasis `add_capability()` argumentas yra **teikėjo ID** — mažosiomis raid�
 
 ---
 
-## Kredencialų laukų pridėjimas į vedlį
+## Kredencialų laukų pridėjimas į vedlį {#adding-credential-fields-to-the-wizard}
 
 Kad administratoriai galėtų įvesti kredencialus per sąrankos vedlį, užregistruokite savo integraciją:
 
@@ -137,7 +137,7 @@ Kredencialai saugomi kaip tinklo parinktys, naudojant laukų ID kaip raktus. Gau
 
 ---
 
-## Hookai veiksmams po registracijos
+## Hookai veiksmams po registracijos {#hooks-for-post-registration-actions}
 
 Naudokite šiuos veiksmus, kad paleistumėte webhooks, parengimą, pranešimus arba CRM atnaujinimus:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Žurnalizavimas
+## Žurnalizavimas {#logging}
 
 Rašykite į savo tiekėjui skirtą žurnalo kanalą naudodami `wu_log_add()`:
 

@@ -4,21 +4,21 @@ title: Gweithred - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Gweithred: wu_mt_providers_registered
+# Gweithred: wu_mt_providers_registered {#action-wumtprovidersregistered}
 
 Yn tanio ar ôl i’r darparwyr diofyn gael eu cofrestru.
 
 Defnyddiwch y hook hwn i gofrestru darparwyr personol.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
 | $manager | `\Provider_Manager` | Yr enghraifft rheolwr darparwyr. |
 
-### Ers
+### Ers {#since}
 
 - 1.0.0
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Wedi’i ddiffinio yn [`inc/managers/class-provider-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/managers/class-provider-manager.php#L93) ar linell 93

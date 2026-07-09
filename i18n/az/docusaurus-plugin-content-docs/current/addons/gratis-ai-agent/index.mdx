@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent, təbii dil təlimatları vasitəsilə tam WordPress saytları planlaşdıra, qurara və idarə edə bilən avtonom bir WordPress AI köməkçisidir. O, məzmun idarəetməsindən dizayn sisteminin fərdiləşdirilməsinə qədər hər şeyi əhatə edən, agentin çağıra biləcəyi ayrılmış, test edilə bilən hərəkətlər dəsti olan **qabiliyyətlər** (abilities) təqdim edir. 1.9.0 versiyası məzmun yaratma qabiliyyətlərini, müştəri tərəfindən alınan skrinşotlar vasitəsilə vizual səhifə nəzərdən keçirməni, beş daxili agent profilini və giriş nəzarəti və brendləmə üçün xüsusiyyət bayraqlarını əlavə edir.
 
-## Əsas Xüsusiyyətlər
+## Əsas Xüsusiyyətlər {#key-features}
 
 - **Qabiliyyətlər sistemi** — agentin WordPress quraşdırmanızda çağıra biləcəyi modulyar, genişləndirilə bilən bir hərəkətlər kataloqu
 - **Məzmun İdarəetməsi** — məqalələr və səhifələr yaratmaq (səhifə şablonlarının təyin edilməsi daxil olmaqla), bir çağrıda bir neçə məqalə yaratmaq, xüsusi şəkillər təyin etmək və əlaqə formaları qurmaq
@@ -28,21 +28,21 @@ Gratis AI Agent, təbii dil təlimatları vasitəsilə tam WordPress saytları p
 - **Site Builder Orchestration v2** — plugin kəşfi, inkişaf izlənməsi və səhv bərpası ilə bir neçə addımlı sayt qurma planları
 - **WP-CLI benchmark komandası** — CI və model qiymətləndirilməsi üçün agentin bacarıq qiymətləndirmə dəstini komanda xəttindən işə salmaq
 
-## Tələblər
+## Tələblər {#requirements}
 
 - WordPress 6.0 və ya daha yuxarı
 - PHP 8.1 və ya daha yuxarı
 - WordPress Multisite (şəbəkə səviyyəsində aktivləşdirilmiş) və ya tək sayt quraşdırması
 - Aktiv bir AI provider connector plugin (Anthropic, OpenAI və ya uyğun)
 
-## Quraşdırma
+## Quraşdırma {#installation}
 
 1. Plugin fayllarını `/wp-content/plugins/gratis-ai-agent` yoluna yükləyin
 2. WordPress-də **Plugins** ekranı vasitəsilə plugin-i aktivləşdirin
 3. **Gratis AI Agent → Settings** səhifəsinə keçin və AI provider-ınızı qoşun
 4. (İxtiyari) Əlavə qabiliyyət paketlərini quraşdırmaq üçün **Abilities Registry**-də gəzin
 
-## Tez Başlanğıc
+## Tez Başlanğıc {#quick-start}
 
 Aktivləşdirildikdən və bir AI provider-a qoşulduqdan sonra, WordPress admin yan çubuğunda **Gratis AI Agent** panelinə daxil olun. Təbii dil təlimatı yazın və agent mövcud qabiliyyətlərindən istifadə edərək tələb olunan addımları planlaşdıracaq və yerinə yetirəcək.
 
@@ -60,7 +60,7 @@ Tema üçün qaranlıq rejim rəng palitrası yerləşdirin və əsas rəngi #1a
 Online menyu, rezervasiya forması və əlaqə səhifəsi olan bir restoran veb saytı qur.
 ```
 
-## Qabiliyyətlər Baxışı
+## Qabiliyyətlər Baxışı {#abilities-overview}
 
 Qabiliyyətlər agentin yerinə yetirə biləcəyi atomar hərəkətlərdir. Hər bir qabiliyyət, agentin işləmə zamanı oxuduğu bir sxem (parametrlər və qaytarma növləri) təqdim edən qeyd edilmiş bir PHP sinifidir. Qabiliyyətlər funksional sahələrə ayrılır:
 
@@ -79,7 +79,7 @@ Qabiliyyətlər agentin yerinə yetirə biləcəyi atomar hərəkətlərdir. Hə
 
 Tam parametrlər sənədləşməsi və istifadə nümunələri üçün [Abilities Reference](./abilities) səhifəsinə baxın.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent, benchmarklar işlətmək və qabiliyyətləri komanda xəttindən idarə etmək üçün `wp gratis-ai-agent` komanda ailəsi ilə gəlir. Tam komanda siyahısı üçün [WP-CLI Reference](./wp-cli) səhifəsinə baxın.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfiqurasiya
+## Konfiqurasiya {#configuration}
 
 Bütün parametrlər WordPress admin panelində **Gratis AI Agent → Settings** altında yerləşir:
 
@@ -106,7 +106,7 @@ Bütün parametrlər WordPress admin panelində **Gratis AI Agent → Settings**
 | **Ability Timeout** | Bir qabiliyyətin işləmə biləcəyi maksimum saniyə (default 30) |
 | **Debug Logging** | Qabiliyyət çağırışlarını və agent məntiqini WordPress debug log-una yazmaq |
 
-## Options İdarəetməsi Təhlükəsizlik Siyahısı
+## Options İdarəetməsi Təhlükəsizlik Siyahısı {#options-management-safety-blocklist}
 
 Options Management qabiliyyəti, agentin həssas WordPress parametrlərini oxumasını və ya yazmasını əngəlləyən daxili bir təhlükəsizlik siyahısı ehtiva edir. Default siyahı aşağıdakıları əhatə edir:
 
@@ -118,26 +118,26 @@ Options Management qabiliyyəti, agentin həssas WordPress parametrlərini oxuma
 
 Əlavə girişlər `gratis_ai_agent_options_blocklist` filtri vasitəsilə əlavə edilə bilər.
 
-## Hooks və Filters
+## Hooks və Filters {#hooks-and-filters}
 
-### Actions (Hərəkətlər)
+### Actions (Hərəkətlər) {#actions}
 
 - `gratis_ai_agent_ability_registered` — bir qabiliyyət qeyd edildikdən sonra işə düşür, qabiliyyət sinif adını alır
 - `gratis_ai_agent_plan_started` — sayt qurucu planı icra etməyə başladığı zaman işə düşür
 - `gratis_ai_agent_plan_completed` — plan uğurla başa çatdıqda işə düşür
 - `gratis_ai_agent_plan_failed` — plan bərpa edilə bilməyən bir səhvə rastlaşdıqda işə düşür
 
-### Filters (Filtrlər)
+### Filters (Filtrlər) {#filters}
 
 - `gratis_ai_agent_abilities` — agent yükləməzdən əvvəl qeyd edilmiş qabiliyyətlər siyahısını dəyişdirir
 - `gratis_ai_agent_options_blocklist` — parametrlər təhlükəsizlik siyahısını genişləndirir və ya azaldır
 - `gratis_ai_agent_benchmark_questions` — qiymətləndirmə dəstisinə xüsusi benchmark sualları əlavə edir
 - `gratis_ai_agent_plan_plugins` — sayt planı yaradılarkən plugin kəşfi siyahısını dəyişdirir
 
-## Dəstək
+## Dəstək {#support}
 
 Dəstək üçün [ultimatemultisite.com](https://ultimatemultisite.com) səhifəsinə daxil olun və ya plugin repozitoriyasında bir issue açın.
 
-## Changelog
+## Changelog {#changelog}
 
 Tam versiya tarixçəsi üçün [Changelog](./changelog) səhifəsinə baxın.

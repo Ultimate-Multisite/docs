@@ -3,28 +3,28 @@ title: REST API گؤرونتوسو
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API قایناقچاسی
+# REST API قایناقچاسی {#rest-api-reference}
 
-## پایه تنظیمات
+## پایه تنظیمات {#base-configuration}
 
 **پایه URL:** `{site_url}/wp-json/wu/v2/`
 **کیملیک دوغرولاماسی:** API Key و Secret (HTTP Basic Auth یا URL پارامترلری)
 
-## کیملیک دوغرولاماسی
+## کیملیک دوغرولاماسی {#authentication}
 
-### API-نی فعال ائدین
+### API-نی فعال ائدین {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API کیملیک بیلگی‌لرینی آلین
+### API کیملیک بیلگی‌لرینی آلین {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### کیملیک دوغرولاما یوللاری
+### کیملیک دوغرولاما یوللاری {#authentication-methods}
 
 **HTTP Basic Auth (توصیه اولونان):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## اساسی اوج‌نوختلر
+## اساسی اوج‌نوختلر {#core-endpoints}
 
-### 1. موشتری‌لر API
+### 1. موشتری‌لر API {#1-customers-api}
 
 **پایه مسیر:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. سایتلر API
+### 2. سایتلر API {#2-sites-api}
 
 **پایه مسیر:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. عضویت‌لر API
+### 3. عضویت‌لر API {#3-memberships-api}
 
 **پایه مسیر:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. محصوللار API
+### 4. محصوللار API {#4-products-api}
 
 **پایه مسیر:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. اودمه‌لر API
+### 5. اودمه‌لر API {#5-payments-api}
 
 **پایه مسیر:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. دامنه‌لر API
+### 6. دامنه‌لر API {#6-domains-api}
 
 **پایه مسیر:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## قئیدیات اوج‌نوختسی
+## قئیدیات اوج‌نوختسی {#registration-endpoint}
 
 `/register` اوج‌نوختسی تام checkout/قئیدیات آخشینی وئریر:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## مستقل کرایه‌چی اوج‌نوختلری
+## مستقل کرایه‌چی اوج‌نوختلری {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: چوخ‌کرایه‌چیلیک 1.2.0، آیری ساخلا‌نان کرایه‌چی‌لری یارادان، یوخلایان یا دؤغرولایان بیرلشدیرمه‌لر اوچون مستقل کرایه‌چی REST اؤرتویونو آرتیریر.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false`-ی یاییما چیخیشدان قاباق بیر انگل کیمی قبول ائدین. دؤغرولاما آیری‌نتیلارینی یوخلایین، داده‌بانکی میزبان باغلاماسینی، نؤوبه‌نی، ایستیفاده‌چی یارادیلماسینی یا یؤنلندیرمه مسئله‌سینی دوزلدین، سونرا دؤغرولامانی یئنه سینایین.
 
-## خطا جاوابلاری
+## خطا جاوابلاری {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## صفحه‌لمه و فیلترلمه
+## صفحه‌لمه و فیلترلمه {#pagination-and-filtering}
 
 **سورغو پارامترلری:**
 ```http

@@ -3,11 +3,11 @@ title: Āķu atsauce
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Āķu atsauce
+# Āķu atsauce {#hooks-reference}
 
 Automātiski ģenerēta dokumentācija visām **59 darbībām** un **118 filtriem** Ultimate Multisite.
 
-## Darbības
+## Darbības {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Izpildās pirms autentifikācijas pāradresācijas.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Izpildās tieši pirms autentifikācijas sīkdatnes iestatīšanas.
@@ -70,7 +70,7 @@ Automātiski ģenerēta dokumentācija visām **59 darbībām** un **118 filtrie
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Tiek izpildīts pēc objekta saglabāšanas datubāzē.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Ļauj plugin izstrādātājiem pievienot darbības atbloķēšanas procesam.
 
-## Filtri
+## Filtri {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrē autentifikācijas sīkdatnes derīguma termiņa perioda ilgumu.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrē autentifikācijas novirzīšanas shēmu.

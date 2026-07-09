@@ -3,7 +3,7 @@ title: PayPal sozlash
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Geçidini Kurmak (v2)
+# PayPal Geçidini Kurmak (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i referans almaktadır.**_
 
@@ -13,13 +13,13 @@ Stripe gibi, PayPal da özellikle WordPress sitelerinde çevrimiçi ödemeler i�
 
 Bu entegrasyon için gerekli olan API kimlik bilgilerini almak adına bir **PayPal İş Hesabınızın** olması gerektiğini unutmayın.
 
-## Ağınızda PayPal'ı Etkinleştirme
+## Ağınızda PayPal'ı Etkinleştirme {#enabling-paypal-on-your-network}
 
 PayPal'ı ağınızda mevcut bir ödeme yöntemi olarak etkinleştirmek için, **Ultimate Multisite > Ayarlar > Ödemeler** sekmesine gidin ve yanındaki PayPal kutucuğunu işaretleyin.
 
 ![Aktif ödeme geçitlerinde PayPal'ı etkinleştirme](/img/config/settings-payment-gateways.png)
 
-## Rehberli Kurulum Sihirbazını Kullanma
+## Rehberli Kurulum Sihirbazını Kullanma {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0, ödeme geçidi ayarlarında rehberli bir PayPal kurulum sihirbazı ekler. PayPal'ı etkinleştirdikten sonra, geçidi nasıl bağlamak istediğinizi seçmek ve kaydetmeden önce hangi kimlik bilgilerinin hala gerekli olduğunu doğrulamak için **Ultimate Multisite > Ayarlar > Ödemeler** üzerinde sihirbazı kullanın.
 
@@ -30,7 +30,7 @@ Sihirbaz iki kurulum yolu destekler:
 
 Sihirbazda OAuth seçeneğini görmüyorsanız, aşağıdaki manuel kimlik bilgisi girişi akışını tamamlayın. Bu geçit, önceki Ultimate Multisite 2.x sürümleriyle aynı PayPal İş API kimlik bilgilerini kullanır.
 
-## PayPal API Kimlik Bilgilerini Alma
+## PayPal API Kimlik Bilgilerini Alma {#getting-the-paypal-api-credentials}
 
 PayPal'ı bir ödeme geçidi olarak etkinleştirdikten sonra, PayPal API **Kullanıcı Adı** (Username), PayPal API **Şifresi** (Password) ve PayPal API **İmza** (Signature) alanlarını doldurmanız gerekecek.
 

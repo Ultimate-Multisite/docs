@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Merjeni paketi
+# Merjeni paketi {#metered-plans}
 
 Dodatek Ultimate Multisite: Merjeni paketi preoblikuje način zaračunavanja vašim strankam z uvedbo prilagodljivih zmožnosti merjenega obračunavanja. Namesto togih trdih omejitev, ki blokirajo uporabnike, ko jih presežejo, omogočite stroške prekoračitve, ki strankam samodejno zaračunajo dodatno uporabo.
 
-## Ključne funkcije
+## Ključne funkcije {#key-features}
 
 * **Merjeno obračunavanje**: Strankam zaračunajte na podlagi dejanske uporabe namesto fiksnih stopenj
 * **Upravljanje prekoračitev**: Samodejno zaračunajte uporabo, ki presega omejitve paketa
@@ -21,14 +21,14 @@ Dodatek Ultimate Multisite: Merjeni paketi preoblikuje način zaračunavanja va�
 * **Samodejno izdajanje računov**: Samodejno ustvarite račune, ko so preseženi pragovi uporabe
 * **Poročila o uporabi**: Podrobna analitika uporabe in poročanje za stranke in skrbnike
 
-## Popolno za
+## Popolno za {#perfect-for}
 
 * **Ponudnike gostovanja**: Ponudite razširljive pakete, ki rastejo s potrebami strank
 * **SaaS platforme**: Zaračunavajte na podlagi dejanske porabe virov
 * **Agencijska omrežja**: Prilagodljivi cenovni modeli za projekte strank
 * **Preprodajalsko gostovanje**: Omogočite partnerjem, da ponudijo cene na podlagi uporabe
 
-## Kako deluje
+## Kako deluje {#how-it-works}
 
 1. Konfigurirajte merjene vire (prostor na disku, pasovna širina, število spletnih mest itd.)
 2. Nastavite osnovne omejitve paketa in cene prekoračitev
@@ -37,13 +37,13 @@ Dodatek Ultimate Multisite: Merjeni paketi preoblikuje način zaračunavanja va�
 5. Računi se ustvarijo samodejno glede na obračunski cikel
 6. Stranke lahko svojo uporabo in prihajajoče stroške vidijo v realnem času
 
-## Obračunavanje AI tokenov
+## Obračunavanje AI tokenov {#ai-token-billing}
 
 Različica 1.1.0 dodaja obračunavanje AI tokenov za omrežja, ki ponujajo AI funkcije prek WordPress AI Client SDK. Metered Plans posluša dokončane zahteve za ustvarjanje AI, zabeleži število vhodnih in izhodnih tokenov za trenutno podmesto ter te tokene pretvori v obračunljivo AI porabo za trenutno obračunsko obdobje stranke.
 
 Obračunavanje AI tokenov uporabite, ko želite ponuditi AI orodja na spletnih mestih strank, ne da bi prevzeli nepredvidljive stroške modelov. Vsaka zahteva je pripisana podmestu, stranki, članstvu, ponudniku in modelu, tako da lahko skrbniki revidirajo uporabo, stranke pa vidijo, kako njihova poraba AI vpliva na njihov račun.
 
-### Konfigurirajte cene na token
+### Konfigurirajte cene na token {#configure-per-token-rates}
 
 AI cene so konfigurirane za vsak model kot ločene vhodne in izhodne cene. Cene se izračunajo na 1 milijon tokenov, kar ustreza pogostim cenikom ponudnikov AI.
 
@@ -55,7 +55,7 @@ AI cene so konfigurirane za vsak model kot ločene vhodne in izhodne cene. Cene 
 
 Ko natančen ID modela ni konfiguriran, lahko Metered Plans ujema po predponi modela. Na primer, cena, konfigurirana za `claude-sonnet-4`, se lahko uporabi za časovno označene ID-je modelov, ki se začnejo s to predpono. Razvijalci lahko končno tabelo cen prilagodijo tudi s filtrom [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Podprti AI povezovalniki
+### Podprti AI povezovalniki {#supported-ai-connectors}
 
 Obračunavanje AI tokenov deluje s povezovalniki, ki oddajajo dogodke ustvarjanja WordPress AI Client SDK in v metapodatke odgovora vključujejo uporabo tokenov. To vključuje družino AI povezovalnikov Ultimate Multisite, dokumentirano tukaj:
 
@@ -65,13 +65,13 @@ Obračunavanje AI tokenov deluje s povezovalniki, ki oddajajo dogodke ustvarjanj
 
 Povezovalniki po meri lahko sodelujejo tako, da sprožijo standardna dogodka `wp_ai_client_before_generate_result` in `wp_ai_client_after_generate_result` z metapodatki o modelu, ponudniku in uporabi tokenov. Nastavitve povezovalnika se uveljavijo z glavnega spletnega mesta na podmesta, tako da spletna mesta strank uporabljajo ponudnike in omejitve, odobrene v omrežju.
 
-### Uporaba računa stranke
+### Uporaba računa stranke {#customer-account-usage}
 
 Stranke vidijo uporabo AI poleg svojih drugih merjenih virov v območju svojega računa. Vrstica AI porabe prikazuje skupni znesek trenutnega obračunskega obdobja, izpeljan iz zabeleženih prompt in completion tokenov, konfiguriranih cen modelov in morebitnega vključenega dovoljenja v paketu.
 
 Če ima stranka shranjen način plačila, se uporaba nad vključenim dovoljenjem obravnava kot obračunljiva prekoračitev. Če je paket konfiguriran za trdo prekinitev in stranka nima razpoložljivega načina plačila, se lahko AI zahteve blokirajo, ko je dovoljenje doseženo, stranka pa je pozvana, da pred nadaljevanjem doda podatke za plačilo.
 
-## Podprti viri
+## Podprti viri {#supported-resources}
 
 * Shramba na disku
 * Pasovna širina/prenos podatkov
@@ -80,13 +80,13 @@ Stranke vidijo uporabo AI poleg svojih drugih merjenih virov v območju svojega 
 * Uporaba AI tokenov in AI poraba
 * Vrste virov po meri
 
-## Zahteve
+## Zahteve {#requirements}
 
 * Multisite Ultimate 2.0.0 ali novejši
 * Namestitev WordPress Multisite
 * PHP 7.4 ali novejši
 
-## Namestitev
+## Namestitev {#installation}
 
 1. Naložite datoteke vtičnika v `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Aktivirajte vtičnik prek zaslona 'Plugins' v WordPress
@@ -94,24 +94,24 @@ Stranke vidijo uporabo AI poleg svojih drugih merjenih virov v območju svojega 
 4. Konfigurirajte svoje merjene vire in cene
 5. Omogočite merjeno obračunavanje za izdelke v urejevalniku izdelkov
 
-## Pogosta vprašanja
+## Pogosta vprašanja {#frequently-asked-questions}
 
-## Kaj se zgodi, ko stranka preseže svojo omejitev?
+## Kaj se zgodi, ko stranka preseže svojo omejitev? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Namesto blokiranja dostopa sistem beleži presežek in ga doda na njihov naslednji račun na podlagi stopenj, ki ste jih nastavili.
 
-## Ali lahko nastavim različne stopnje presežka za različne izdelke?
+## Ali lahko nastavim različne stopnje presežka za različne izdelke? {#can-i-set-different-overage-rates-for-different-products}
 
 Da, vsak izdelek ima lahko edinstvene merjene vire in cene za presežek.
 
-## Kako so stranke obveščene o uporabi?
+## Kako so stranke obveščene o uporabi? {#how-are-customers-notified-about-usage}
 
 Stranke si lahko ogledajo svojo trenutno uporabo v svojem Dashboardu in prejmejo izbirna obvestila, ko se približujejo omejitvam ali jih presežejo.
 
-## Kako je določena cena uporabe AI žetonov?
+## Kako je določena cena uporabe AI žetonov? {#how-is-ai-token-usage-priced}
 
 Uporaba AI žetonov je zaračunana glede na konfigurirane vhodne in izhodne stopnje modela na 1 milijon žetonov. Merjeni paketi pomnožijo število žetonov poziva in dokončanja za vsako zahtevo s temi stopnjami, rezultat dodajo trenutni porabi stranke za AI v obračunskem obdobju ter uporabijo vključeno količino paketa ali pravila za presežek.
 
-## Ali lahko še vedno uporabljam trde omejitve?
+## Ali lahko še vedno uporabljam trde omejitve? {#can-i-still-use-hard-limits}
 
 Da, merjeno obračunavanje je izbirno za vsak izdelek. Tradicionalne izdelke s trdimi omejitvami lahko kombinirate z merjenimi izdelki.

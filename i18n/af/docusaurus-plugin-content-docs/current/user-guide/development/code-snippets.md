@@ -3,7 +3,7 @@ title: Kode-snippets
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kode-snippets vir v2
+# Kode-snippets vir v2 {#code-snippets-for-v2}
 
 Basies word kode-snippets vir **WordPress** gebruik om sekere aksies uit te voer wat andersins 'n toegewyde, kleiner plugin sou vereis. Sulke kode-snippets word in een van die WordPress-kern- of tema-lêre geplaas (gewoonlik die `functions.php` lêer van jou tema) of hulle kan as 'n MU plugin gebruik word.
 
@@ -15,13 +15,13 @@ In hierdie artikel sal ons drie kode-snippets wys wat met **Ultimate Multisite v
 
   * [**Regstel CORS-probleme met Font-Icons in gemapte domeine**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Verander die posisie van die Account-menu-item
+## Verander die posisie van die Account-menu-item {#changing-the-position-of-the-account-menu-item}
 
 Om die posisie van die Account-menu-item op jou kliënt se Dashboard te verander, voeg bloot die volgende kode-snippet by die `functions.php` van jou hoofwebwerf se aktiewe tema. Jy kan die snippet ook binne een van jou mu-plugins of aangepaste plugins plaas.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Pas hierdie waarde aan om die menu in die gewenste posisie te plaas.
 
-## Hoe om te kyk of die gebruiker onder 'n gegewe plan is en/of 'n aktiewe abonnement het
+## Hoe om te kyk of die gebruiker onder 'n gegewe plan is en/of 'n aktiewe abonnement het {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 As 'n netwerkbeheerder het jy dalk aangepaste funksies nodig wat basiese aksies sal uitvoer of 'n diens/funksie beskikbaar sal maak vir 'n geselekteerde groep abonnees of eindgebruikers, gebaseer op die status van hul abonnement en die plan waaronder hulle abonneer.
 
@@ -47,8 +47,8 @@ Let op dat gebruikers slegs aan 'n **Plan** kan abonneer, nie 'n Pakket of Diens
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Regstel CORS-probleme met Font-Icons in gemapte domeine
-## Regstel CORS-probleme met Font-Icons in gemapte domeine
+## Regstel CORS-probleme met Font-Icons in gemapte domeine {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Regstel CORS-probleme met Font-Icons in gemapte domeine {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Nadat jy 'n domein aan 'n sub-webwerf gemap het, kan jy ontdek dat die webwerf probleme het om aangepaste lettertipes te laai. Dit word veroorsaak deur 'n cross-origin blokkering op jou bedienersinstellings.
 
@@ -56,13 +56,13 @@ Aangesien lettertip-lêre byna altyd direk van CSS gelaai word, is ons domein-ma
 
 Hieronder is kode-snippets om die probleem vir Apache en NGINX reg te stel. Hierdie veranderinge vereis gevorderde kennis van bedienerskonfigurasie-lêre (.htaccess lêers en NGINX konfigurasie-lêre). As jy nie gemaklik voel om daardie veranderinge self te maak nie, stuur hierdie bladsy na jou hosting-verskaffer se ondersteuningsagent as jy hulp benodig.
 
-### Apache
+### Apache {#apache}
 
 Voeg op jou .htaccess lêer by:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 Voeg op jou bedienerskonfigurasie-lêer (die ligging verskil van bedieners na bedieners) by:
 

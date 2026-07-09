@@ -4,19 +4,19 @@ title: Filtrs - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filtrs: secure_auth_redirect
+# Filtrs: secure_auth_redirect {#filter-secureauthredirect}
 
 Filtrē, vai izmantot drošu autentifikācijas pāradresāciju.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
 | $secure | `bool` | Vai izmantot drošu autentifikācijas pāradresāciju. Noklusējums: false. |
 
-### Kopš
+### Kopš {#since}
 
 - 3.1.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L190) 190. rindā

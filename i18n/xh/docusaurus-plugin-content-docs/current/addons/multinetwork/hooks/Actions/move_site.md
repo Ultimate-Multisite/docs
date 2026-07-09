@@ -4,11 +4,11 @@ title: Isenzo - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Isenzo: move_site
+# Isenzo: move_site {#action-movesite}
 
 Siqalisa emva kokuba isayithi isusiwe yasiwa kwinethiwekhi entsha.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Siqalisa emva kokuba isayithi isusiwe yasiwa kwinethiwekhi entsha.
 | $old_network_id | `int` | ID yenethiwekhi yokuqala yesayithi. |
 | $new_network_id | `int` | ID yenethiwekhi apho isayithi isiwe khona. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 1.3.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) kumgca 1587

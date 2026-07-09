@@ -3,13 +3,13 @@ title: Ho Lefshoa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ho Lefshoa (v2)
+# Ho Lefshoa (v2) {#getting-paid-v2}
 
 _**TLHOKOMELISO EA BOHLOKOA: Sengoloa sena se bua ka Ultimate Multisite mofuta oa 2.x.**_
 
 Ultimate Multisite e na le tsamaiso ea botho le tefiso e hahiloeng kahare. Hore tsamaiso ea rona ea tefiso e sebetse, re kopantse liheke tsa tefo tse tloaelehileng haholo tse sebelisoang khoebong ea inthanete. Liheke tsa tefo tsa kamehla ho Ultimate Multisite ke _Stripe_ , _PayPal_ , le Tefo ea Matsoho. U ka boela ua sebelisa _WooCommerce_ , _GoCardless_ le _Payfast_ ho amohela litefo ka ho kenya add-ons tsa tsona tse amehang.
 
-## Litlhophiso tsa Motheo
+## Litlhophiso tsa Motheo {#basic-settings}
 
 U ka lokisa efe kapa efe ea liheke tsena tsa tefo tlasa litlhophiso tsa tefo tsa Ultimate Multisite. U ka e fumana ka ho ea ho **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Sena se thibela botho hore bo bonahale eka bo inchafatsa ka bo bona ha heke e ka
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Moo u ka fumanang liheke:
+## Moo u ka fumanang liheke: {#where-to-find-the-gateways}
 
 U ka hloma liheke tsa tefo leqepheng le tšoanang ( **Ultimate Multisite > Settings > Payments**). Hantle ka tlasa **liheke tsa tefo tse sebetsang** , u tla khona ho bona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ le _Manual_.
 
@@ -67,7 +67,7 @@ Mona hape ke pono e feletseng ea litlhophiso tsa liheke tsa tefo:
 
 Joale, haeba u batla ho sebelisa _WooCommerce_ , _GoCardless_ kapa _Payfast_ e le heke ea hao ea tefo, u tla hloka ho **kenya le ho lokisa add-ons tsa tsona**.
 
-### Mokhoa oa ho kenya WooCommerce add-on:
+### Mokhoa oa ho kenya WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Re utloisisa hore _Stripe_ le _PayPal_ ha li fumanehe linaheng tse ling, e leng se lekanyetsang kapa se sitisang basebelisi ba Ultimate Multisite ho sebelisa plugin ea rona ka katleho. Kahoo re thehile add-on ho kopanya _WooCommerce,_ e leng plugin e tsebahalang haholo ea khoebo ea inthanete. Developers lefatšeng ka bophara ba thehile add-ons ho kopanya liheke tse fapaneng tsa tefo ho eona. Re sebelisitse monyetla ona ho atolosa liheke tsa tefo tseo u ka li sebelisang le tsamaiso ea tefiso ea Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Kamora ho e kenya tshebetsong, haeba o ntse o sena plugin ya WooCommerce e kents
 
 Ho bala haholwanyane ka tlatsetso ya WooCommerce Integration, **tobetsa mona**.
 
-### Mokgwa wa ho kenya tlatsetso ya GoCardless:
+### Mokgwa wa ho kenya tlatsetso ya GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Mehato ya ho kenya tlatsetso ya _GoCardless_ e batla e tshwana hantle le ya tlatsetso ya _WooCommerce_. Ka kopo eya leqepheng la ditlatsetso mme o kgethe tlatsetso ya **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Kamora hore ho kenya ho phethoe, o tla fetisetswa leqepheng la dikenyelletso. Mo
 
 Ho ithuta hore na o ka qala jwang ka gateway ya _GoCardless_, **bala sengolwa sena**.
 
-### Mokgwa wa ho kenya tlatsetso ya Payfast:
+### Mokgwa wa ho kenya tlatsetso ya Payfast: {#how-to-install-the-payfast-add-on}
 
 Eya leqepheng la ditlatsetso mme o kgethe tlatsetso ya **Ultimate Multisite: Payfast Gateway**.
 

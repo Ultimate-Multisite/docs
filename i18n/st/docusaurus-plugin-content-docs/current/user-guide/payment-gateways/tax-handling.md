@@ -3,7 +3,7 @@ title: Tsamaiso ea Lekhetho
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tsamaiso ya Lekgetho
+# Tsamaiso ya Lekgetho {#tax-handling}
 
 Ultimate Multisite e na le mojule wa pokello ya lekgetho o hahilweng ka hara plugin ya rona ya mantlha, kahoo haeba o hloka ho bokella makgetho a thekiso mererong, diphuthelwaneng le ditshebeletsong tsa hao, o ka etsa jwalo ha bonolo ntle le ho kenya add-ons efe kapa efe.
 
@@ -11,7 +11,7 @@ Bakeng sa dikhamphani tse fumanehang Europe, re fana ka **add-on** e eketsang di
 
 Ultimate Multisite ha e faye kapa ho romela makgetho lebitsong la hao mmusong; re o thusa feela ho bokella makgetho a nepahetseng nakong ya kgwebisano. **O ntse o tla hloka ho romela makgetho ka bowena.**
 
-## Ho Dumella Pokello ya Lekgetho
+## Ho Dumella Pokello ya Lekgetho {#enabling-tax-collection}
 
 Pokello ya lekgetho ha e a dumellwa ka boiketsetso. Ho e dumella, o hloka ho ya ho **Ultimate Multisite > Settings > Taxes** mme o fetolele ho dumella setting ya Enable Taxes.
 
@@ -25,7 +25,7 @@ O ka boela wa sheba di-setting tsa lekgetho bakeng sa dihlahiswa ka bonngwe:
 
 ![Di-setting tsa lekgetho bakeng sa dihlahiswa](/img/config/settings-taxes.png)
 
-### Lekgetho le sa kenyeletswang kgahlanong le lekgetho le kenyeleditsweng
+### Lekgetho le sa kenyeletswang kgahlanong le lekgetho le kenyeleditsweng {#tax-excluded-vs-tax-included}
 
 Ka boiketsetso, ditheko tsohle tsa dihlahiswa tsa hao ha di kenyeletse lekgetho, ho bolelang hore makgetho **ha a kenyeletswe** thekong ya sehlahiswa. Haeba re fumana hore moreki o lokela ho lefa makgetho thekong e itseng, re tla eketsa makgetho **hodima** kakaretso e nyane.
 
@@ -37,7 +37,7 @@ Se lebale ho **boloka** diphetoho tseo o di entseng.
 
 ###
 
-## Ho Etsa Ditekanyo tsa Lekgetho
+## Ho Etsa Ditekanyo tsa Lekgetho {#creating-tax-rates}
 
 Kamora hore o dumelle Pokello ya Lekgetho, o tla hloka ho etsa ditekanyo tsa lekgetho bakeng sa dibaka tse itseng o sebedisa mohlophisi wa rona wa ditekanyo tsa lekgetho.
 
@@ -51,7 +51,7 @@ Leqepheng la mohlophisi wa ditekanyo tsa lekgetho, o ka eketsa Tax Rates tse ntj
 
 O tla hloka ho fa tekanyo ka nngwe ya lekgetho **sehlooho** (se sebediswang ho di-invoice). Jwale o ka kgetha **naha** (e hlokahalang), **provense,** le **toropo** (tse pedi ke tsa boikgethelo) moo lekgetho lena le tla lefiswa. Qetellong, eketsa **tekanyo ya lekgetho ka diphesente**.
 
-### Dihlopha tsa Lekgetho
+### Dihlopha tsa Lekgetho {#tax-categories}
 
 O ka boela wa etsa Tax Categories tse ngata, ho eketsa ditekanyo tse fapaneng tsa lekgetho bakeng sa mefuta e fapaneng ya dihlahiswa.
 
@@ -73,7 +73,7 @@ O ka seta sehlopha sa lekgetho bakeng sa sehlahiswa se itseng ka ho ya ho **Prod
 
 Skirining sona seo, o ka tima konopo ya **Is Taxable?** ho tsebisa Ultimate Multisite hore ha e a lokela ho bokella makgetho sehlahisweng seo se itseng.
 
-## Tshehetso ya VAT ya Yuropa
+## Tshehetso ya VAT ya Yuropa {#european-vat-support}
 
 Jwalo ka ha ho boletswe pejana, re na le add-on e fumanehang bakeng sa moreki ya EU ya nang le ditlhoko tse eketsehileng ka lebaka la melao ya European VAT.
 
@@ -101,7 +101,7 @@ Haeba o kgutlela ho **Tax Settings tab** , o tla bona dikgetho tse ntjha tse fum
 
 <!-- Screenshot unavailable: Konopo ya Enable VAT Support ho di-setting tsa Lekgetho kamora ho activate add-on -->
 
-### Ho Hula Ditekanyo tsa Lekgetho la VAT
+### Ho Hula Ditekanyo tsa Lekgetho la VAT {#pulling-on-vat-tax-rates}
 
 E nngwe ya dithulusi tseo kopanyo ya rona e di eketsang ke bokgoni ba ho kenya ditekanyo tsa lekgetho bakeng sa dinaha tseo e leng ditho tsa EU. Seo se ka etswa ka ho etela leqephe la mohlophisi wa ditekanyo tsa lekgetho kamora ho dumella tshehetso ya EU VAT.
 
@@ -111,7 +111,7 @@ Botlaseng ba leqephe, o tla bona dikgetho tsa ho hula VAT. Ho kgetha mofuta wa t
 
 O ka boela wa hlophisa boleng kamora ho bo hula. Ho etsa jwalo, hlophisa feela mola wa tafole oo o o hlokang mme o tobetse ho boloka boleng bo botjha.
 
-### Netefatso ya VAT
+### Netefatso ya VAT {#vat-validation}
 
 Ha tshehetso ya VAT e dumelletswe, Ultimate Multisite e tla eketsa lebala le eketsehileng foromong ya checkout, ka tlasa lebala la aterese ya billing. Lebala le tla hlaha feela bakeng sa bareki ba fumanehang EU.
 

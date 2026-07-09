@@ -3,13 +3,13 @@ title: Fanamboarana ny Taratasy Fisoratana Anaranao
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Fanamboarana ny taratasy fisoratana anaranareo
+# Fanamboarana ny taratasy fisoratana anaranareo {#customizing-your-registration-form}
 
 Mba hahatonga ny tambajotranareo ho miavaka amin’ireo SaaS hafa rehetra naorina amin’ny sehatra WordPress, Ultimate Multisite dia mamela anareo hanamboatra ny pejy fisoratana anarana sy fidirana amin’ny alalan’ny endri-javatra **Checkout Forms**.
 
 Na dia fomba mora sy miovaova aza izy ireo hanaovana fanandramana amin’ny fomba samihafa rehefa miezaka manova mpanjifa vaovao, dia ampiasaina indrindra hamoronana taratasy fisoratana anarana natao manokana. Ity lahatsoratra ity dia mikendry ny hampiseho aminareo ny fomba anaovana izany.
 
-## Pejy fidirana sy fisoratana anarana:
+## Pejy fidirana sy fisoratana anarana: {#login-and-registration-pages}
 
 Rehefa apetraka ny Ultimate Multisite, dia mamorona ho azy pejy fidirana sy fisoratana anarana manokana ao amin’ny tranonkala fototrareo izy. Afaka manova ireo pejy default ireo amin’ny fotoana rehetra ianareo amin’ny alalan’ny fandehanana ao amin’ny pejy **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Ankehitriny, andeha hojerentsika ireo safidy hafa mbola mifandraika amin’ny fi
 
 Ary izay no safidy rehetra mifandraika amin’ny fidirana sy fisoratana anarana azonareo amboarina! Aza adino ny mitahiry ny fikirakiranareo rehefa vitanareo ny manitsy azy ireo.
 
-## Fampiasana taratasy fisoratana anarana maro:
+## Fampiasana taratasy fisoratana anarana maro: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 dia manolotra editor checkout form izay mamela anareo hamorona taratasy araka izay tianareo, miaraka amin’ny saha samihafa, vokatra atolotra, sns.
 
@@ -69,7 +69,7 @@ Raha tsy izany, afaka manitsy na mandika ny taratasy efa anananareo ianareo amin
 
 Raha misafidy dingana tokana na dingana maro ianareo, ny checkout form dia efa ho feno mialoha amin’ireo dingana fototra ilainy hiasa. Avy eo, raha tianareo, dia afaka manampy dingana fanampiny aminy ianareo.
 
-### Fanitsiana Checkout Form:
+### Fanitsiana Checkout Form: {#editing-a-checkout-form}
 
 Araka ny nolazainay teo aloha, afaka mamorona checkout forms ho an’ny tanjona samihafa ianareo. Amin’ity ohatra ity dia hiasa amin’ny taratasy fisoratana anarana isika.
 
@@ -131,11 +131,11 @@ Mba hahazoana ny shortcode an’ny taratasinao dia tsindrio ny **Generate Shortc
 
 _**Fanamarihana:** Mila manampy ity shortcode ity amin’ny pejy fisoratana anarananao ianao mba hampidirana ity taratasy fandoavana ity ao._
 
-## Fisafidianana mialoha vokatra sy môdely amin’ny alalan’ny masontsivana URL:
+## Fisafidianana mialoha vokatra sy môdely amin’ny alalan’ny masontsivana URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Raha te hamorona tabilao vidiny namboarina manokana ho an’ny vokatrao ianao ary hisafidy mialoha ao amin’ny taratasy fandoavana ny vokatra na môdely safidin’ny mpanjifanao avy amin’ny tabilao vidinao na pejy môdely, dia afaka mampiasa masontsivana URL ho amin’izany ianao.
 
-### **Ho an’ny plans:**
+### **Ho an’ny plans:** {#for-plans}
 
 Mandehana any amin’ny **Ultimate Multisite > Vokatra > Misafidiana plan**. Tokony hahita ny bokotra **Tsindrio handika Shareable Link** eo an-tampon’ny pejy ianao. Ity no rohy azonao ampiasaina hisafidianana mialoha ity plan manokana ity ao amin’ny taratasy fandoavanao.
 
@@ -143,7 +143,7 @@ Mandehana any amin’ny **Ultimate Multisite > Vokatra > Misafidiana plan**. Tok
 
 Mariho fa ity rohy azo zaraina ity dia manan-kery ho an’ny **Plans** ihany. Tsy afaka mampiasa rohy azo zaraina ho an’ny fonosana na services ianao.
 
-### Ho an’ny môdely:
+### Ho an’ny môdely: {#for-templates}
 
 Raha te hisafidy mialoha môdely site ao amin’ny taratasy fandoavanao ianao, dia afaka mampiasa ny masontsivana: **?template_id=X** ao amin’ny URL an’ny pejy fisoratana anarananao. Ny "X" dia mila soloina amin’ny **laharan’ny ID môdely site**. Mba hahazoana ity laharana ity, mandehana any amin’ny **Ultimate Multisite > Sites**.
 

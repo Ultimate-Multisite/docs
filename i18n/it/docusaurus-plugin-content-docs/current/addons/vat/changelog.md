@@ -3,7 +3,7 @@ title: Registro modifiche IVA
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Changelog VAT
+# Changelog VAT {#vat-changelog}
 
 Versione 1.0.7 - Rilasciata il 2026-02-03
 

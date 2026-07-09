@@ -3,11 +3,11 @@ title: Ukuphatha Ama-imeyili Esistimu
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ukuphatha Ama-imeyili Esistimu
+# Ukuphatha Ama-imeyili Esistimu {#managing-system-emails}
 
 Ultimate Multisite ithumela ama-imeyili esistimu ahlukahlukene ngeziganeko ezifana nokuqinisekisa ukubhalisa, amarisidi okukhokha, nezinguquko zobulungu. Ungazenza ngokwezifiso lezi zifanekiso zama-imeyili ukuze zihambisane nomkhiqizo wakho.
 
-## Ukubuka Ama-imeyili Esistimu
+## Ukubuka Ama-imeyili Esistimu {#viewing-system-emails}
 
 Yiya ku-**Ultimate Multisite → Izilungiselelo** bese uchofoza ithebhu ethi **Ama-imeyili** ukuze ubone izilungiselelo ezihlobene nama-imeyili.
 
@@ -21,7 +21,7 @@ Ungaphinda uhlele izifanekiso zama-imeyili ngazinye usebenzisa umhleli wama-imey
 
 ![Umhleli we-imeyili yesistimu](/img/admin/system-email-editor.png)
 
-## Ukungenisa Izifanekiso Ezintsha Zama-imeyili
+## Ukungenisa Izifanekiso Ezintsha Zama-imeyili {#importing-new-email-templates}
 
 Izinguqulo ezintsha ze-Ultimate Multisite nama-add-on kungabhalisa izifanekiso ezintsha zama-imeyili. Ukuze kugwenywe ukungqubuzana, izifanekiso ezintsha azingezelelwa ngokuzenzakalelayo — kudingeka uzingenise mathupha.
 
@@ -32,7 +32,7 @@ Ukuze ungenise izifanekiso ezintsha zama-imeyili:
 3. Shintsha inketho ethi **Ngenisa Ama-imeyili** ukuze ubone izifanekiso ezitholakalayo
 4. Khetha izifanekiso ofuna ukuzingenisa bese uyaqinisekisa
 
-## Ukusetha Kabusha Izifanekiso Zama-imeyili
+## Ukusetha Kabusha Izifanekiso Zama-imeyili {#resetting-email-templates}
 
 Uma wenze isifanekiso se-imeyili ngokwezifiso futhi ufuna ukusibuyisela kokuqukethwe okuzenzakalelayo, unezinketho ezimbili:
 

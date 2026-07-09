@@ -3,11 +3,11 @@ title: Plugin kezelő képességek
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Kezelési Funkciók
+# Plugin Kezelési Funkciók {#plugin-management-abilities}
 
 A Gratis AI Agent v1.5.0 **7 plugin kezelési funkcióval** érkezik, amelyeket az AI asszisztens egy beszélgetés során hívhat elő. Ezek a funkciók programozott vezérlést biztosítanak a [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) segítségével telepített WordPress plugin-jai felett.
 
-## Funkciók Áttekintése
+## Funkciók Áttekintése {#abilities-overview}
 
 | Funkció | Slug | Leírás |
 |---|---|---|
@@ -19,7 +19,7 @@ A Gratis AI Agent v1.5.0 **7 plugin kezelési funkcióval** érkezik, amelyeket 
 | Install Plugin | `install_plugin` | Egy sandbox-ban lévő plugin telepítése a élő WordPress plugin könyvtárába. |
 | Activate Plugin | `activate_plugin` | Egy sandbox-ban lévő plugin aktiválása az wp-env sandbox környezetben. |
 
-## Plugin Telepítő API
+## Plugin Telepítő API {#plugin-installer-api}
 
 A plugin telepítő a fájlrendszer műveleteket végzi el a plugin telepítése vagy eltávolítása során. Kulcsfontosságú viselkedései:
 
@@ -28,7 +28,7 @@ A plugin telepítő a fájlrendszer műveleteket végzi el a plugin telepítése
 - **Update**: Felülírja az istnieją plugin fájljait. Deaktiválja a plugin-ot a írás előtt, hogy elkerülje a részleges állapot hibákat.
 - **Delete by slug**: Megkeresi a plugin könyvtárát a slug alapján, deaktiválja az összes oldalon, majd törli a könyvtárat.
 
-### Egy Saját Telepítő Kezelő Regisztrálása
+### Egy Saját Telepítő Kezelő Regisztrálása {#registering-a-custom-install-handler}
 
 A `gratis_ai_plugin_installer_before_install` és `gratis_ai_plugin_installer_after_install` akciók segítségével kapcsolódhat (hook) a telepítés életciklusához:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 A funkciókat a **plugin ecosystem registry** segítségével regisztrálják. A registry mappaítja a funkció slug-jait a kezelő osztályokra, és kiadja őket az AI agent eszköz-elosztó rendszerének (tool dispatcher).
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Integráció
+## HookScanner Integráció {#hookscanner-integration}
 
 A `create_plugin` és `update_plugin` funkciók automatikusan futtatják a **HookScanner**-t a recién generált kódon. A HookScanner egy listát ad vissza a plugin által regisztrált WordPress action és filter hook-okról.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 A HookScanner automatikusan kihagyja a `vendor/` és `node_modules/` könyvtárakat.
 
-## Async Job Architektúra
+## Async Job Architektúra {#async-job-architecture}
 
 A hosszú futási időt igénylő plugin műveletek (generálás, telepítés) **async job** formájában kerülnek elküldésre, és élő haladáskövetéssel rendelkeznek. Az AI chat felületének időzítővel (polling) ellenőriznie kell a haladást, és folyamatosan küldnie a státusz frissítéseit a felhasználónak:
 

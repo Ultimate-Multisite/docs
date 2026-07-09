@@ -3,11 +3,11 @@ title: Egzanp Kòd Avanse
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Egzanp Kòd Avanse
+# Egzanp Kòd Avanse {#advanced-code-examples}
 
 Egzanp sa yo montre modèl entegrasyon avanse ak Ultimate Multisite.
 
-## Motè Pri Dinamik
+## Motè Pri Dinamik {#dynamic-pricing-engine}
 
 Yon motè pri ki baze sou règ, ki aplike rabè selon volim, fidelite, ak sezon:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Pwovizyonman Sit Avanse
+## Pwovizyonman Sit Avanse {#advanced-site-provisioning}
 
 Konfigire nouvo sit otomatikman ak plugin, SSL, CDN, sovgad, ak siveyans selon fonksyonalite plan yo:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistèm Limit Pèsonalize
+## Sistèm Limit Pèsonalize {#custom-limitations-system}
 
 Swiv epi aplike limit resous ak avètisman itilizasyon:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Kontè atomik BerlinDB ak `increment_item()`
+## Kontè atomik BerlinDB ak `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 te ajoute yon metòd `increment_item()` nan klas BerlinDB `Query` a. Itilize li pou fè ogmantasyon sekirize, atomik sou kolòn nimerik san kous read-modify-write — itil pou kontè, kota itilizasyon, ak verifikasyon rate-limiting ki kouri anba demann konkiran.
 
-### Siyati metòd
+### Siyati metòd {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 te ajoute yon metòd `increment_item()` nan klas Berli
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Itilizasyon debaz
+### Itilizasyon debaz {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Swiv itilizasyon API pou chak membership
+### Swiv itilizasyon API pou chak membership {#tracking-api-usage-per-membership}
 
 Yon modèl pratik pou aplike limit API rate limits pou chak membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Poukisa `increment_item()` olye de `update_item()`
+### Poukisa `increment_item()` olye de `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Yon apwòch read-modify-write nayif pa sekirize anba demann konkiran:
 

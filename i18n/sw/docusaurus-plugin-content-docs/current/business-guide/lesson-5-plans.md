@@ -3,15 +3,15 @@ title: 'Somada ya 5: Kubuni Mipango Yako'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Somo la 5: Kubuni Miradi Yako
+# Somo la 5: Kubuni Miradi Yako {#lesson-5-designing-your-plans}
 
 Viwango vyako vya mipango si tu viwango vya bei—ni kioo kinachoonyesha jinsi wateja wako wa niche wanavyofanya kazi kweli. Katika somo hili, utabuni viwango vya bidhaa vinavyolingana na mahitaji halisi ya biashara za fitness katika hatua tofauti.
 
-## Tulipoacha
+## Tulipoacha {#where-we-left-off}
 
 FitSite ina muundo wa aina tatu tayari (Studio Essential, Gym Pro, Fitness Chain). Sasa tutaunda mipango ambayo itabainisha kile wanachopata wateja na kile wanacholipia.
 
-## Kuifikiria kwa Vikundi vya Wateja
+## Kuifikiria kwa Vikundi vya Wateja {#thinking-in-customer-segments}
 
 Kosa kubwa ambalo watu wengi hufanya ni kubuni mipango kulingana na vipengele vya kiufundi (hifadhi, upana wa pita, idadi ya kurasa). Wateja wako wa niche hawafikiri kwa maneno hayo. Mmiliki wa gym anafikiria kile anachohitaji ili kuendesha biashara yake.
 
@@ -25,11 +25,11 @@ Kwa studio za fitness, kuna vikundi vitatu vya asili:
 
 Mipango yako inapaswa kuambatana na vikundi hivi, sio vifurushi vya vipengele ambavyo havina maana.
 
-## Kuunda Mipango ya FitSite
+## Kuunda Mipango ya FitSite {#creating-the-fitsite-plans}
 
 Nenda kwenye **Ultimate Multisite > Products > Add Product** kwa kila mpango.
 
-### Mpango 1: FitSite Starter -- $49/mwezi
+### Mpango 1: FitSite Starter -- $49/mwezi {#plan-1-fitsite-starter----49month}
 
 **Lengo**: Wanafundisha binafsi na studio ndogo
 
@@ -59,7 +59,7 @@ Nenda kwenye **Ultimate Multisite > Products > Add Product** kwa kila mpango.
 - Mandhari yako yaliyochaguliwa: Force Activate
 - Mandhari zingine zote: Zimefichwa (Hidden)
 
-### Mpango 2: FitSite Growth -- $99/mwezi
+### Mpango 2: FitSite Growth -- $99/mwezi {#plan-2-fitsite-growth----99month}
 
 **Lengo**: Gym zilizojengwa katika eneo moja
 
@@ -85,7 +85,7 @@ Nenda kwenye **Ultimate Multisite > Products > Add Product** kwa kila mpango.
 - Kikundi cha mpango: FitSite Plans
 - Mpangilio wa bidhaa: 2
 
-### Mpango 3: FitSite Pro -- $199/mwezi
+### Mpango 3: FitSite Pro -- $199/mwezi {#plan-3-fitsite-pro----199month}
 
 **Lengo**: Mitandao ya fitness yenye maeneo mengi
 
@@ -109,7 +109,7 @@ Nenda kwenye **Ultimate Multisite > Products > Add Product** kwa kila mpango.
 - Kikundi cha mpango: FitSite Plans
 - Mpangilio wa bidhaa: 3
 
-## Kuweka Kikundi cha Mpango
+## Kuweka Kikundi cha Mpango {#setting-up-the-plan-group}
 
 Kikundi cha mpango kinahakikisha kwamba wateja wanaweza kuboresha au kupunguza kiwango chao ndani ya familia ya mipango ya FitSite tu. Kwenye **Tab ya Kupanda na Kushuka** ya kila mpango:
 
@@ -118,7 +118,7 @@ Kikundi cha mpango kinahakikisha kwamba wateja wanaweza kuboresha au kupunguza k
 
 Hii inaunda njia ya kuboresha ambayo ni wazi: Starter → Growth → Pro.
 
-## Kuongeza Zilizoongezwa Wakati wa Malipo (Order Bumps)
+## Kuongeza Zilizoongezwa Wakati wa Malipo (Order Bumps) {#adding-order-bumps}
 
 Order bumps ni bidhaa za ziada zinazotolewa wakati wa malipo. Kwa FitSite, zingatia:
 
@@ -128,7 +128,7 @@ Order bumps ni bidhaa za ziada zinazotolewa wakati wa malipo. Kwa FitSite, zinga
 
 Unda hizi kama bidhaa za aina ya **Package** katika Ultimate Multisite na uzihusishie na mipango inayohitajika.
 
-## Kwa Nini Muundo Huu Unafanya Kazi
+## Kwa Nini Muundo Huu Unafanya Kazi {#why-this-structure-works}
 
 - **Starter** huondoa vikwazo vya kuingia -- bei ndogo, ofa rahisi, inawapa mafunishi mtandaoni haraka
 - **Growth** inaongeza vipengele ambavyo gym zinavoomba kweli -- kuweka miadi, vikumbusho, na custom domains
@@ -136,7 +136,7 @@ Unda hizi kama bidhaa za aina ya **Package** katika Ultimate Multisite na uzihus
 - **Order bumps** inaruhusu wateja kubadilisha bila kuogopa kuifanya mipango mikuu kuwa ngumu
 - **Njia wazi ya kuboresha** inamaanisha kwamba wateja wanakua na wewe badala ya kuondoka
 
-## Mtandao wa FitSite Hadi Sasa
+## Mtandao wa FitSite Hadi Sasa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Tulichojenga Somo Hili
+## Tulichojenga Somo Hili {#what-we-built-this-lesson}
 
 - **Viwango vitatu vya mipango** vilivyolingana na vikundi halisi vya biashara za fitness
 - **Kudhibiti vipengele (Feature gating)** kwa kutumia udhibiti wa plugin na muundo wa Ultimate Multisite

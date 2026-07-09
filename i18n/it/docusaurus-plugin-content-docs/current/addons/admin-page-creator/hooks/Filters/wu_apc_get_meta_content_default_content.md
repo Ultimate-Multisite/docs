@@ -4,11 +4,11 @@ title: Filtro - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Filtro: wu_apc_get_meta_content_default_content
+# Filtro: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Consenti agli sviluppatori di filtrare i valori predefiniti
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Consenti agli sviluppatori di filtrare i valori predefiniti
 | $meta_type | `string` | Tipo dei meta dati da recuperare. |
 | $meta_key | `string` | Nome del campo meta. |
 
-### Da
+### Da {#since}
 
 - 1.4.0
 
-### Fonte
+### Fonte {#source}
 
 Defined in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) at line 68
 
-## Restituisce
+## Restituisce {#returns}
 Nuovo valore predefinito.

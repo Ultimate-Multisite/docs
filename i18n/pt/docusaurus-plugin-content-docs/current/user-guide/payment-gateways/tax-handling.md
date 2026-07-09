@@ -3,7 +3,7 @@ title: Tratamento de impostos
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tratamento de impostos
+# Tratamento de impostos {#tax-handling}
 
 Ultimate Multisite tem um módulo de cobrança de impostos integrado no nosso plugin principal, por isso, se precisar de cobrar impostos sobre vendas nos seus planos, pacotes e serviços, pode fazê-lo facilmente sem recorrer à instalação de quaisquer complementos.
 
@@ -11,7 +11,7 @@ Para empresas localizadas na Europa, oferecemos um **complemento** que adiciona 
 
 Ultimate Multisite não declara nem entrega impostos em seu nome ao governo; simplesmente ajudamo-lo a cobrar os impostos apropriados no momento da transação. **Ainda terá de entregar os impostos por conta própria.**
 
-## Ativar a cobrança de impostos
+## Ativar a cobrança de impostos {#enabling-tax-collection}
 
 A cobrança de impostos não está ativada por predefinição. Para a ativar, precisa de ir a **Ultimate Multisite > Definições > Impostos** e alternar para ativar a definição Ativar impostos.
 
@@ -25,7 +25,7 @@ Também pode ver as definições de impostos para produtos individuais:
 
 ![Definições de impostos para produtos](/img/config/settings-taxes.png)
 
-### Imposto excluído vs. imposto incluído
+### Imposto excluído vs. imposto incluído {#tax-excluded-vs-tax-included}
 
 Por predefinição, todos os preços dos seus produtos têm imposto excluído, o que significa que os impostos **não estão incluídos** no preço do produto. Se determinarmos que um cliente deve pagar impostos numa determinada compra, adicionaremos os impostos **por cima** do subtotal.
 
@@ -37,7 +37,7 @@ Não se esqueça de **guardar** as alterações que fez.
 
 ###
 
-## Criar taxas de imposto
+## Criar taxas de imposto {#creating-tax-rates}
 
 Depois de ativar a cobrança de impostos, terá de criar taxas de imposto para localizações específicas usando o nosso editor de taxas de imposto.
 
@@ -51,7 +51,7 @@ Na página do editor de taxas de imposto, pode adicionar novas taxas de imposto 
 
 Terá de atribuir a cada taxa de imposto um **título** (usado em faturas). Depois pode escolher o **país** (obrigatório), o **estado,** e a **cidade** (ambos opcionais) onde este imposto será cobrado. Por fim, adicione a **taxa de imposto em percentagem**.
 
-### Categorias de impostos
+### Categorias de impostos {#tax-categories}
 
 Também pode criar várias categorias de impostos, para adicionar taxas de imposto diferentes para diferentes tipos de produtos.
 
@@ -73,7 +73,7 @@ Pode definir a categoria de imposto para um produto específico indo à **págin
 
 Nesse mesmo ecrã, pode desativar a alternância **É tributável?** para informar Ultimate Multisite de que não deve cobrar impostos nesse produto específico.
 
-## Suporte para IVA europeu
+## Suporte para IVA europeu {#european-vat-support}
 
 Como mencionado antes, temos um complemento disponível para clientes na UE que têm requisitos adicionais devido aos regulamentos europeus de IVA.
 
@@ -101,7 +101,7 @@ Se voltar ao **separador Definições de impostos** , verá novas opções dispo
 
 <!-- Captura de ecrã indisponível: alternância Ativar suporte para IVA nas definições de impostos após a ativação do complemento -->
 
-### Obter taxas de imposto de IVA
+### Obter taxas de imposto de IVA {#pulling-on-vat-tax-rates}
 
 Uma das ferramentas que a nossa integração adiciona é a capacidade de carregar as taxas de imposto para os Estados-Membros da UE. Isso pode ser feito visitando a página do editor de taxas de imposto depois de ativar o suporte para IVA da UE.
 
@@ -111,7 +111,7 @@ No fundo da página, verá as opções de obtenção de IVA. Selecionar um tipo 
 
 Também pode editar os valores depois de os obter. Para o fazer, basta editar a linha da tabela de que precisa e clicar para guardar os novos valores.
 
-### Validação de IVA
+### Validação de IVA {#vat-validation}
 
 Quando o suporte para IVA está ativado, Ultimate Multisite adicionará um campo adicional ao formulário de finalização da compra, abaixo do campo do endereço de faturação. O campo só aparecerá para clientes localizados na UE.
 

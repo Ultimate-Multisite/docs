@@ -3,13 +3,13 @@ title: Nastavitev ročnih plačil
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Nastavitev ročnih plačil (v2)
+# Nastavitev ročnih plačil (v2) {#setting-up-manual-payments-v2}
 
 _**POMEMBNA OPOMBA: Ta članek se nanaša na Ultimate Multisite različico 2.x.**_
 
 Ročna plačila so način, da ponudite druge plačilne metode, če **Stripe** ali **PayPal** nista na voljo vašim uporabnikom. To je lahko nakazilo ali bančno nakazilo ali katera koli druga plačilna metoda, ki je vašim uporabnikom na voljo lokalno.
 
-## Kako omogočiti ročna plačila
+## Kako omogočiti ročna plačila {#how-to-enable-manual-payments}
 
 Nastavitev ročnega plačila je zelo preprosta. Omogočiti ga morate le med plačilnimi prehodi in vnesti podrobna navodila, kako naj uporabnik pošlje plačilo.
 
@@ -31,7 +31,7 @@ Prav tako bodo na vaši strani **Hvala** prejeli sporočilo z vašimi navodili z
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Potrjevanje ročnih plačil
+## Potrjevanje ročnih plačil {#confirming-manual-payments}
 
 Če želite potrditi ročno plačilo, pojdite v meni **Plačila** v levi vrstici. Tam lahko vidite vsa plačila v svojem omrežju in njihove podrobnosti, vključno z njihovim **stanjem**. Ročno plačilo bo vedno imelo stanje **V teku**, dokler ga ročno ne spremenite.
 

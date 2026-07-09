@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Der Ultimate AI Connector for Compatible Endpoints integriert OpenAI-kompatible KI-Anbieter-APIs in Ihr WordPress Multisite-Netzwerk. Konfigurieren Sie mehrere KI-Anbieter – jeweils mit eigener Endpunkt-URL, API-Schlüssel und Standardmodell – und leiten Sie Anfragen automatisch mit einem Fallback-Mechanismus weiter, falls ein Anbieter nicht verfügbar ist.
 
-## Key Features
+## Key Features {#key-features}
 
 - **Multi-provider support**: Fügen Sie mehrere KI-Anbieter-Karten hinzu, die jeweils eigene Endpunkt-URLs, API-Schlüssel und Standardmodelle besitzen.
 - **Drag-to-reorder**: Ordnen Sie die Anbieter nach Priorität, indem Sie den Griff auf jeder Karte verwenden; Anfragen werden in dieser Reihenfolge verarbeitet.
@@ -21,26 +21,26 @@ Der Ultimate AI Connector for Compatible Endpoints integriert OpenAI-kompatible 
 - **Auto-expand on add**: Neue Anbieterkarten erweitern sich automatisch, sodass Sie die Details sofort ausfüllen können.
 - **Script cache busting**: Die Skripte der Anbieter werden bei einem Plugin-Update cache-busted, um sicherzustellen, dass die neueste Version geladen wird.
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 oder höher
 - PHP 7.4 oder höher
 - Ultimate Multisite Plugin (aktiviert)
 - Ein OpenAI-kompatibler API-Endpunkt (selbst gehostet oder Drittanbieter)
 
-## Installation
+## Installation {#installation}
 
 1. Laden Sie die Addon-Dateien in Ihr Verzeichnis `/wp-content/plugins/` hoch.
 2. Aktivieren Sie das Plugin über das Menü „Plugins“ in WordPress.
 3. Navigieren Sie zu **Ultimate Multisite → AI Connector**, um das Addon zu konfigurieren.
 
-## Configuration
+## Configuration {#configuration}
 
-### Multi-Provider Setup
+### Multi-Provider Setup {#multi-provider-setup}
 
 Der Konfigurationsbildschirm verwendet ein Karten-Layout, bei dem jede Karte einen KI-Anbieter darstellt. Sie können so viele Anbieter hinzufügen, wie Sie benötigen.
 
-#### Adding a Provider
+#### Adding a Provider {#adding-a-provider}
 
 1. Gehen Sie im Netzwerk-Admin zu **Ultimate Multisite → AI Connector**.
 2. Klicken Sie auf **Add Provider**.
@@ -52,15 +52,15 @@ Der Konfigurationsbildschirm verwendet ein Karten-Layout, bei dem jede Karte ein
    - **Default Model** — der Modellbezeichner, der standardmäßig für diesen Anbieter verwendet werden soll (z. B. `gpt-4o`, `mistral-small`)
 5. Klicken Sie auf **Save Settings**.
 
-#### Removing a Provider
+#### Removing a Provider {#removing-a-provider}
 
 Klicken Sie auf den **Remove**-Button auf einer beliebigen Anbieterkarte, um sie zu löschen. Speichern Sie die Einstellungen, um die Änderung zu übernehmen.
 
-#### Reordering Providers
+#### Reordering Providers {#reordering-providers}
 
 Ziehen Sie das Griff-Symbol (⣿) auf der linken Seite einer beliebigen Anbieterkarte, um diese neu anzuordnen. Die Reihenfolge bestimmt die Fallback-Priorität: Anfragen werden an den ersten Anbieter gesendet und fallen auf nachfolgende Anbieter zurück, wenn eine Anfrage fehlschlägt.
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 Schlägt eine Anfrage an den primären Anbieter fehl – beispielsweise aufgrund eines Timeouts, einer Rate-Limit-Überschreitung oder eines Dienstausfalls – versucht der Connector automatisch mit dem nächsten Anbieter in der Liste erneut. Dieser Vorgang wird fortgesetzt, bis ein Anbieter erfolgreich ist oder alle Anbieter versucht wurden.
 
@@ -72,7 +72,7 @@ Schlägt eine Anfrage an den primären Anbieter fehl – beispielsweise aufgrund
 
 Der Fallback ist für das aufrufende Plugin oder Theme transparent – sie erhalten entweder eine erfolgreiche Antwort oder einen endgültigen Fehler, unabhängig davon, wie viele Anbieter versucht wurden.
 
-### Provider Configuration Reference
+### Provider Configuration Reference {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Der Fallback ist für das aufrufende Plugin oder Theme transparent – sie erhal
 | API Key | Yes | Authentifizierungsschlüssel für diesen Anbieter |
 | Default Model | Yes | Modellbezeichner, der verwendet wird, wenn in der Anfrage kein Modell angegeben ist |
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### No providers are listed
+### No providers are listed {#no-providers-are-listed}
 
 Wenn die Anbieterliste nach dem Speichern leer ist, überprüfen Sie bitte, ob:
 
@@ -91,21 +91,21 @@ Wenn die Anbieterliste nach dem Speichern leer ist, überprüfen Sie bitte, ob:
 - Ihr Browser die Speicherung der Einstellungsseite nicht blockiert hat (überprüfen Sie die Browser-Konsole auf JavaScript-Fehler).
 - Das Plugin aktiv ist und Sie sich auf der Netzwerk-Admin-Seite befinden.
 
-### Requests are failing for all providers
+### Requests are failing for all providers {#requests-are-failing-for-all-providers}
 
 - Überprüfen Sie, ob die Endpoint URL jedes Anbieters von Ihrem Server aus erreichbar ist (nicht nur von Ihrem Browser).
 - Stellen Sie sicher, dass jeder API-Schlüssel gültig ist und nicht abgelaufen ist.
 - Überprüfen Sie den Rate-Limit- und Quotenstatus des Anbieters in dessen Dashboard.
 - Aktivieren Sie das WordPress Debug Logging (`WP_DEBUG_LOG`), um detaillierte Fehlermeldungen vom Connector zu erfassen.
 
-### A provider is not being used for fallback
+### A provider is not being used for fallback {#a-provider-is-not-being-used-for-fallback}
 
 Das Neuordnen ändert die Fallback-Reihenfolge. Bestätigen Sie, dass der Anbieter, der die Fallback-Anfragen erhalten soll, korrekt in der Liste positioniert ist und dass seine Endpoint URL und sein API-Schlüssel korrekt sind.
 
-### New provider card does not expand automatically
+### New provider card does not expand automatically {#new-provider-card-does-not-expand-automatically}
 
 Auto-expand erfordert, dass in Ihrem Browser JavaScript aktiviert ist. Wenn die Karte nicht beim Klicken erweitert wird, überprüfen Sie die Browser-Konsole auf Fehler. Der Inhalt der Karte ist immer zugänglich, indem Sie auf den Kartenkopf klicken, auch wenn Auto-expand nicht ausgelöst wird.
 
-## Changelog
+## Changelog {#changelog}
 
 Siehe [Changelog](./changelog) für die vollständige Versionsgeschichte.

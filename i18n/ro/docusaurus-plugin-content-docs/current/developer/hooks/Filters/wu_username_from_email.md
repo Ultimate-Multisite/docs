@@ -4,11 +4,11 @@ title: Filtru - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filter: wu_username_from_email
+# Filter: wu_username_from_email {#filter-wuusernamefromemail}
 
 Filtrează numele de utilizator al clientului nou.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtrează numele de utilizator al clientului nou.
 | $new_user_args | `array` | Matrice de argumente pentru utilizatorul nou, care poate include prenumele și numele de familie. |
 | $suffix | `string` | Text adăugat la numele de utilizator pentru a-l face unic. |
 
-### Disponibil de la
+### Disponibil de la {#since}
 
 - 2.0.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) la linia 516

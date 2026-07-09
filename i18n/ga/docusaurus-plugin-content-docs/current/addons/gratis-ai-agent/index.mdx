@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Is cúntóir AI uathrialach WordPress é Gratis AI Agent ar féidir leis suíomhanna iomlána WordPress a phleanáil, a thógáil, agus a bhainistiú trí threoracha i dteanga nádúrtha. Nochtann sé tacar struchtúrtha **cumas** — gníomhartha leithleacha, intástáilte ar féidir leis an ngníomhaire iad a agairt — a chlúdaíonn gach rud ó bhainistíocht ábhair go saincheapadh córais dearaidh. Cuireann leagan 1.9.0 cumais chruthaithe ábhair leis, athbhreithniú amhairc leathanaigh trí scáileáin ón taobh cliaint, cúig phróifíl ghníomhaire ionsuite, agus bratacha gné le haghaidh rialaithe rochtana agus brandála.
 
-## Príomhghnéithe
+## Príomhghnéithe {#key-features}
 
 - **Córas cumas** — catalóg mhodúlach, inleathnaithe de ghníomhartha ar féidir leis an ngníomhaire iad a agairt ar do shuiteáil WordPress
 - **Bainistíocht Ábhair** — cruthaigh postálacha agus leathanaigh (lena n-áirítear teimpléid leathanaigh a shannadh), cruthaigh ilphostálacha i mbaisc in aon ghlao amháin, socraigh íomhánna aibhsithe, agus tóg foirmeacha teagmhála
@@ -28,21 +28,21 @@ Is cúntóir AI uathrialach WordPress é Gratis AI Agent ar féidir leis suíomh
 - **Comhordú Tógálaí Suímh v2** — pleananna tógála suímh ilchéime le fionnachtain plugin, rianú dul chun cinn, agus aisghabháil earráide
 - **Ordú tagarmhairc WP-CLI** — rith sraith tagarmharcála chumais an ghníomhaire ón líne ordaithe le haghaidh CI agus meastóireacht samhlacha
 
-## Riachtanais
+## Riachtanais {#requirements}
 
 - WordPress 6.0 nó níos airde
 - PHP 8.1 nó níos airde
 - WordPress Multisite (gníomhachtaithe ar an líonra) nó suiteáil aon-suímh
 - Plugin nascóra soláthraí AI gníomhach (Anthropic, OpenAI, nó comhoiriúnach)
 
-## Suiteáil
+## Suiteáil {#installation}
 
 1. Uaslódáil comhaid an plugin chuig `/wp-content/plugins/gratis-ai-agent`
 2. Gníomhachtaigh an plugin tríd an scáileán **Plugins** in WordPress
 3. Téigh chuig **Gratis AI Agent → Settings** agus ceangail do sholáthraí AI
 4. (Roghnach) Brabhsáil an **Chlárlann Cumais** chun pacáistí cumais breise a shuiteáil
 
-## Tús Tapa
+## Tús Tapa {#quick-start}
 
 Nuair atá sé gníomhachtaithe agus ceangailte le soláthraí AI, oscail painéal **Gratis AI Agent** i dtaobhbharra riaracháin WordPress. Clóscríobh treoir i dteanga nádúrtha agus pleanálfaidh agus forghníomhóidh an gníomhaire na céimeanna riachtanacha ag úsáid a chumais atá ar fáil.
 
@@ -60,7 +60,7 @@ Insteall pailéad dathanna mód dorcha isteach sa téama agus socraigh an príom
 Tóg suíomh gréasáin bialainne le roghchlár ar líne, foirm áirithinte, agus leathanach teagmhála.
 ```
 
-## Forbhreathnú ar Chumais
+## Forbhreathnú ar Chumais {#abilities-overview}
 
 Is iad cumais na gníomhartha adamhacha ar féidir leis an ngníomhaire iad a dhéanamh. Is rang PHP cláraithe é gach cumas a nochtann scéimre (paraiméadair agus cineálacha fillte) a léann an gníomhaire ag am rite. Grúpáiltear cumais i réimsí feidhmiúla:
 
@@ -79,7 +79,7 @@ Is iad cumais na gníomhartha adamhacha ar féidir leis an ngníomhaire iad a dh
 
 Féach an [Tagairt Cumais](./abilities) le haghaidh doiciméadú iomlán paraiméadar agus samplaí úsáide.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Tagann Gratis AI Agent le teaghlach orduithe `wp gratis-ai-agent` chun tagarmharcanna a rith agus cumais a bhainistiú ón líne ordaithe. Féach an [Tagairt WP-CLI](./wp-cli) don liosta iomlán orduithe.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Cumraíocht
+## Cumraíocht {#configuration}
 
 Tá na socruithe uile faoi **Gratis AI Agent → Settings** i riarachán WordPress:
 
@@ -106,7 +106,7 @@ Tá na socruithe uile faoi **Gratis AI Agent → Settings** i riarachán WordPre
 | **Teorainn Ama Cumais** | An líon uasta soicindí ar féidir le cumas aonair rith (réamhshocrú 30) |
 | **Logáil Dífhabhtaithe** | Logáil glaonna cumais agus réasúnaíocht ghníomhaire chuig loga dífhabhtaithe WordPress |
 
-## Blocliosta Sábháilteachta Bainistíochta Roghanna
+## Blocliosta Sábháilteachta Bainistíochta Roghanna {#options-management-safety-blocklist}
 
 Áirítear le cumas Bainistíochta Roghanna blocliosta ionsuite a chuireann cosc ar an ngníomhaire roghanna íogaire WordPress a léamh nó a scríobh. Clúdaíonn an blocliosta réamhshocraithe:
 
@@ -118,26 +118,26 @@ Tá na socruithe uile faoi **Gratis AI Agent → Settings** i riarachán WordPre
 
 Is féidir iontrálacha breise a chur leis tríd an scagaire `gratis_ai_agent_options_blocklist`.
 
-## Hooks agus Scagairí
+## Hooks agus Scagairí {#hooks-and-filters}
 
-### Gníomhartha
+### Gníomhartha {#actions}
 
 - `gratis_ai_agent_ability_registered` — spreagtar é tar éis cumas a chlárú, faigheann sé ainm aicme an chumais
 - `gratis_ai_agent_plan_started` — spreagtar é nuair a thosaíonn plean tógála suímh ar chur i bhfeidhm
 - `gratis_ai_agent_plan_completed` — spreagtar é nuair a chríochnaíonn plean go rathúil
 - `gratis_ai_agent_plan_failed` — spreagtar é nuair a thagann plean ar earráid nach féidir a aisghabháil
 
-### Scagairí
+### Scagairí {#filters}
 
 - `gratis_ai_agent_abilities` — athraigh liosta na gcumas cláraithe sula luchtóidh an gníomhaire é
 - `gratis_ai_agent_options_blocklist` — leathnaigh nó laghdaigh blocliosta sábháilteachta na roghanna
 - `gratis_ai_agent_benchmark_questions` — cuir ceisteanna tagarmhairc saincheaptha leis an tsraith mheasúnaithe
 - `gratis_ai_agent_plan_plugins` — athraigh liosta aimsithe na mbreiseán le linn giniúint plean suímh
 
-## Tacaíocht
+## Tacaíocht {#support}
 
 Le haghaidh tacaíochta, tabhair cuairt ar [ultimatemultisite.com](https://ultimatemultisite.com) nó oscail ceist i stór an bhreiseáin.
 
-## Loga Athruithe
+## Loga Athruithe {#changelog}
 
 Féach an [Loga Athruithe](./changelog) le haghaidh stair iomlán na leaganacha.

@@ -3,7 +3,7 @@ title: භාෂා තෝරන්න
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# භාෂා තෝරන්නා (Language Selector)
+# භාෂා තෝරන්නා (Language Selector) {#language-selector}
 
 මෙම විශේෂාංගය සපයන්නේ **Language Selector** add-on එක මගින්.
 

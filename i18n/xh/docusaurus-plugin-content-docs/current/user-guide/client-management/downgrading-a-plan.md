@@ -3,13 +3,13 @@ title: Ukuthoba isiCwangciso
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Ukwehlisela isicwangciso kwinqanaba elisezantsi (v2)
+# Ukwehlisela isicwangciso kwinqanaba elisezantsi (v2) {#downgrading-a-plan-v2}
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa kwi-Ultimate Multisite version 2.x.**_
 
 Ukwehlisela isicwangciso okanye umrhumo kwinqanaba elisezantsi sisenzo esiqhelekileyo abathengi bakho abanokusenza ukuba banohlahlo-lwabiwo-mali olulinganiselweyo okanye bagqibe kwelokuba abazukufuna izixhobo ezininzi ukuqhuba isayithi yabo engaphantsi.
 
-## Indlela yokwehlisela isicwangciso kwinqanaba elisezantsi
+## Indlela yokwehlisela isicwangciso kwinqanaba elisezantsi {#how-to-downgrade-a-plan}
 
 Abathengi bakho bangakwehlisela isicwangciso sabo kwinqanaba elisezantsi nangaliphi na ixesha ngokungena kwi-Dashboard yolawulo yesayithi yabo engaphantsi baze bacofe **Tshintsha** phantsi kwephepha labo le-Account.
 
@@ -25,7 +25,7 @@ Ukuqhubeka, umsebenzisi kufuneka acofe nje iqhosha elithi **Gqibezela Ukuphuma**
 
 ![Iphepha le-Account elibonisa ibhena yotshintsho lobulungu olusalindileyo](/img/account-page/pending-change.png)
 
-### Kwenzeka ntoni xa umsebenzisi ehlisela isicwangciso sakhe kwinqanaba elisezantsi
+### Kwenzeka ntoni xa umsebenzisi ehlisela isicwangciso sakhe kwinqanaba elisezantsi {#what-happens-when-a-user-downgrades-their-plan}
 
 Kubalulekile ukuqaphela ukuba ukwehlisela isicwangciso kwinqanaba elisezantsi akutshintshi uqwalaselo olukhoyo kwisayithi engaphantsi yomsebenzisi.
 
@@ -37,7 +37,7 @@ Kwizithuba ezigqitha umda omiselwe kwisicwangciso, uneenketho ezi-3 ezahlukeneyo
 
 ![Iphepha leNetwork Admin Settings Sites elibonisa iinketho zokuziphatha xa umda wezithuba ugqithiwe](/img/account-page/settings-sites-post-limit.png)
 
-### Kwenzeka ntoni kwintlawulo
+### Kwenzeka ntoni kwintlawulo {#what-happens-to-the-payment}
 
 Kwi-version 2.0, akusafuneki naluphi na uhlengahlengiso kwintlawulo ngokwe-proration.
 

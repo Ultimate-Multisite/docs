@@ -4,11 +4,11 @@ title: فلتەر - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit
+# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
 
 دەپشکنێت کە ئایا جۆرێکی دیاریکراوی فۆڕم لەم پلانەدا ڕێگەپێدراوە ڕێگە بە پەرەپێدەرانی plugin دەدات بۆ پاڵاوتنی نرخی گەڕانەوە
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
@@ -17,10 +17,10 @@ _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 | $form_count | `int` | ژمارەی ئێستای فۆڕمەکان |
 | $quota | `int` | quotaی ڕێگەپێدراو |
 
-### لە وەشانی
+### لە وەشانی {#since}
 
 - 1.0.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 - پێناسەکراوە لە [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L56) لە هێڵی 56
 - پێناسەکراوە لە [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L89) لە هێڵی 89

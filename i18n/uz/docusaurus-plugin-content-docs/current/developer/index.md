@@ -3,11 +3,11 @@ title: Dasturchi hujjatlari
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dasturchilar hujjatlari
+# Dasturchilar hujjatlari {#developer-documentation}
 
 Ushbu qo‘llanma dasturchilarga Ultimate Multisite bilan integratsiya qilish, uni kengaytirish yoki uning uchun addonlar ishlab chiqish uchun kerak bo‘lgan barcha narsani taqdim etadi. Ultimate Multisite WordPress Multisite tarmog‘ini Website-as-a-Service (WaaS) platformasiga aylantiradi.
 
-## Nimalar mavjud
+## Nimalar mavjud {#whats-available}
 
 - **[REST API](./rest-api/overview)** — API kalit autentifikatsiyasi bilan barcha obyektlar (mijozlar, saytlar, a’zoliklar, to‘lovlar, mahsulotlar, domenlar) uchun to‘liq CRUD operatsiyalari
 - **[Hooklar ma’lumotnomasi](./hooks/guide)** — Hayotiy sikl hodisalari va moslashtirish uchun 200+ action hook va 280+ filter hook
@@ -15,13 +15,13 @@ Ushbu qo‘llanma dasturchilarga Ultimate Multisite bilan integratsiya qilish, u
 - **[Kod misollari](./code-examples/)** — Dinamik narxlash, sayt yaratib berish, maxsus cheklovlar va ko‘p gatewayli qayta ishlash uchun ilg‘or andozalar
 - **[Addon ishlab chiqish](./addon-development/getting-started)** — Addon pluginlar yaratish uchun tuzilmali framework
 
-## Talablar
+## Talablar {#requirements}
 
 - WordPress Multisite o‘rnatilishi
 - PHP 7.4 yoki undan yuqori
 - Ultimate Multisite plugin faollashtirilgan
 
-## Composer / Bedrock o‘rnatilishi
+## Composer / Bedrock o‘rnatilishi {#composer--bedrock-installation}
 
 Ultimate Multisite `ultimate-multisite/ultimate-multisite` sifatida [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) da mavjud. Bu [Bedrock](https://roots.io/bedrock/) asosidagi WordPress sozlamalari va boshqa Composer orqali boshqariladigan muhitlar uchun tavsiya etilgan o‘rnatish usulidir.
 
@@ -45,15 +45,15 @@ Yoki, agar siz pluginni Bedrock autoloaderi orqali majburiy ishlatiladigan plugi
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Tez boshlash
+## Tez boshlash {#quick-start}
 
-### REST API dan foydalaning
+### REST API dan foydalaning {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Hodisalarga Hook qiling
+### Hodisalarga Hook qiling {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Addon yarating
+### Addon yarating {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

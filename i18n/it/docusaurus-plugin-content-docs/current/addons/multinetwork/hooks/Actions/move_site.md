@@ -6,11 +6,11 @@ title: >-
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Azione: move_site
+# Azione: move_site {#action-movesite}
 
 Si attiva dopo che un sito è stato spostato in una nuova rete.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -18,10 +18,10 @@ Si attiva dopo che un sito è stato spostato in una nuova rete.
 | $old_network_id | `int` | ID della rete originale per il sito. |
 | $new_network_id | `int` | ID della rete in cui il sito è stato spostato. |
 
-### Da
+### Da {#since}
 
 - 1.3.0
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) alla riga 1587

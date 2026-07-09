@@ -3,11 +3,11 @@ title: Rundgang durch das Admin-Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Rundgang durch das Admin-Panel
+# Rundgang durch das Admin-Panel {#touring-the-admin-panel}
 
 Ultimate Multisite soll so einfach und selbsterklärend wie möglich sein, aber bei einem so leistungsstarken Tool kann eine geführte Tour hilfreich sein. Gehen wir die Admin-Seiten durch, damit du dich zurechtfindest.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 Das Ultimate Multisite **Dashboard** zeigt grundlegende Berichte und Analysen, einschließlich Umsätzen, Aktivitäten von Websites, Wachstum von Mitgliedschaften, Besucherzahlen und geografischen Daten.
 
@@ -25,61 +25,61 @@ Hier ist außerdem eine vollständige Ansicht des Netzwerk-Dashboards:
 
 ![Network Dashboard vollständige Seite](/img/admin/network-dashboard-full-page.png)
 
-## Checkout-Formulare
+## Checkout-Formulare {#checkout-forms}
 
 **Checkout-Formulare** geben dir die Flexibilität, benutzerdefinierte Registrierungsseiten zu erstellen. Du kannst Felder anpassen, benutzerdefinierte Klassen und Skripte einfügen und den Zugriff basierend auf dem Land oder Standort des Besuchers einschränken.
 
 ![Liste der Checkout-Formulare](/img/admin/checkout-forms-list.png)
 
-## Produkte
+## Produkte {#products}
 
 Der Abschnitt **Produkte** ist der Ort, an dem du verschiedene Tarife, Pakete und Dienste für dein Netzwerk erstellst. Lege Preise, Abrechnungsintervalle sowie Limits & Kontingente auf Produktebene fest.
 
 ![Produktliste](/img/admin/products-list.png)
 
-## Mitgliedschaften
+## Mitgliedschaften {#memberships}
 
 Die Seite **Mitgliedschaften** zeigt alle Abonnements in deinem Netzwerk. Überprüfe und bearbeite Abonnementdetails, einschließlich Tarifen, Produkten, Abrechnungsbeträgen und -intervallen, Zahlungshistorie und Zeitstempeln.
 
 ![Liste der Mitgliedschaften](/img/admin/memberships-list.png)
 
-## Zahlungen
+## Zahlungen {#payments}
 
 Die Seite **Zahlungen** bietet einen schnellen Überblick über die Zahlungshistorie in deinem gesamten Netzwerk, mit detaillierten Transaktionsinformationen einschließlich bestimmter Produkte und Beträge.
 
 ![Zahlungsliste](/img/admin/payments-list.png)
 
-## Kunden
+## Kunden {#customers}
 
 Die Seite **Kunden** zeigt alle in deinem Netzwerk registrierten Mitglieder mit grundlegenden Benutzerinformationen, einschließlich Name, E-Mail-Adresse, letzter Anmeldung und einem „Wechseln zu“-Link zum Einloggen in ihre Subsite.
 
 ![Kundenliste](/img/admin/customers-list.png)
 
-## Websites
+## Websites {#sites}
 
 Die Seite **Websites** listet alle Subsites in deinem Netzwerk auf, einschließlich Website-Vorlagen und kundeneigener Websites. Verwalte einfach zugeordnete Domains, Limits & Kontingente, Plugins und Themes sowie Website-Thumbnails.
 
 ![Website-Liste](/img/admin/sites-list.png)
 
-## Domains
+## Domains {#domains}
 
 Die Seite **Domains** ist benutzerdefinierten Domains gewidmet, die Subsites zugeordnet sind. Als Super-Admin kannst du benutzerdefinierte Domainnamen manuell hinzufügen oder zuordnen sowie DNS-Einträge und Protokolle ansehen.
 
 ![Domain-Liste](/img/admin/domains-list.png)
 
-## Rabattcodes
+## Rabattcodes {#discount-codes}
 
 **Rabattcodes** ermöglichen dir, Gutscheincodes zu erstellen, um deinen Endbenutzern Rabatte anzubieten. Lege den Rabattwert fest und richte ihn auf bestimmte Benutzer oder Gruppen aus.
 
 ![Liste der Rabattcodes](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Broadcasts {#broadcasts}
 
 **Broadcasts** ist ein Tool zum Ausrollen von Ankündigungen oder zum Senden privater Nachrichten an deine Subsite-Benutzer. Richte dich an bestimmte Benutzergruppen basierend auf dem Tarif oder Produkt, das sie abonniert haben.
 
 ![Broadcasts-Liste](/img/admin/broadcasts-list.png)
 
-## Einstellungen
+## Einstellungen {#settings}
 
 Die Seite **Einstellungen** ist der Ort, an dem du Ultimate Multisite konfigurierst — Registrierungseinstellungen, Zahlungen, API und Webhooks, Domain-Zuordnung und andere Integrationen.
 
@@ -109,13 +109,13 @@ Und die Seite mit den Website-Einstellungen:
 
 ![Website-Einstellungen vollständige Seite](/img/admin/settings-sites-full.png)
 
-## Ereignisse
+## Ereignisse {#events}
 
 Die Seite **Ereignisse** führt ein Protokoll aller Ereignisse und Logs in deinem Netzwerk. Sie verfolgt Aktivitäten wie Tarifänderungen, Registrierungen und andere Vorgänge — nützlich für die Überwachung deiner Multisite.
 
 ![Ereignisliste](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#webhooks}
 
 **Webhooks** ermöglichen dir, Daten an eine andere Anwendung zu übermitteln. Nützlich zum Senden von Daten aus Ultimate Multisite an Plattformen wie Zapier.
 

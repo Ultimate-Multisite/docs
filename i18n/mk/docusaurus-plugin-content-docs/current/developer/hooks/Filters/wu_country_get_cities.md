@@ -4,11 +4,11 @@ title: Филтер - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Филтер: wu_country_get_cities
+# Филтер: wu_country_get_cities {#filter-wucountrygetcities}
 
 Ја враќа листата на градови за сојузна држава во земја.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Опис |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | Двобуквен ISO-код за сојузната држава. |
 | $current_country | `\WP_Ultimo\Country\Country` | Инстанца од тековната класа. |
 
-### Од верзија
+### Од верзија {#since}
 
 - 2.0.11
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) на линија 146
 
 
-## Враќа
+## Враќа {#returns}
 Филтрирана листа на сојузни држави.

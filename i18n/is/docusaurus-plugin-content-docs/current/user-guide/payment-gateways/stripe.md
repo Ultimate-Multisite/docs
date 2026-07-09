@@ -3,19 +3,19 @@ title: Innstillingar fyrir Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Innstilling av Stripe Gateway (v2)
+# Innstilling av Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**VIKTIG MERKNAD: Þessi grein er tengd Ultimate Multisite útgáfu 2.x.**_
 
 Þú getur aktívað upp til fjórar betalingsformhæðir á síðunni fyrir betalingsinnstillingar okkur: Stripe, Stripe Checkout, PayPal og Manuell. Í þessri greinin sjáum hvernig við tengjum okkur **Stripe**.
 
-## Aktíva Stripe
+## Aktíva Stripe {#enabling-stripe}
 
 Til að aktíva Stripe sem tilfóstur betalingshæðir á netinu þitt, ferðu yfir í **Ultimate Multisite > Settings > Payments** og vickingja (tick) htaggann við **Stripe** eða **Stripe Checkout** í hluta Active Payment Gateways.
 
 ![Aktíva Stripe í aktíva betalingshæðir](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Þessi formhæð er til að sýna stað til að setja niður kortnúmer við launið.
 
@@ -47,7 +47,7 @@ Kopla gildi úr **Publishable key** og **Secret key**, frá stöðu **Token**, o
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Uppsetning Webhook fyrir Stripe
+## Uppsetning Webhook fyrir Stripe {#setting-up-stripe-webhook}
 
 Stripe sendir webhook hændlestar sem tilkynna Ultimate Multisite hvorkerið eitthvað skipti í **stripe reikninginn þinn**.
 

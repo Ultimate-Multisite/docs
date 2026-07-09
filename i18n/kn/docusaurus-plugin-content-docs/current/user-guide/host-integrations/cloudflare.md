@@ -3,18 +3,18 @@ title: Cloudflare ಏಕೀಕರಣ
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare ಏಕೀಕರಣ
+# Cloudflare ಏಕೀಕರಣ {#cloudflare-integration}
 
-## ಅವಲೋಕನ
+## ಅವಲೋಕನ {#overview}
 Cloudflare ಒಂದು ಪ್ರಮುಖ ವಿಷಯ ವಿತರಣಾ ಜಾಲ (CDN) ಮತ್ತು ಭದ್ರತಾ ಪೂರೈಕೆದಾರವಾಗಿದ್ದು, ಜಾಲತಾಣಗಳನ್ನು ರಕ್ಷಿಸಲು ಮತ್ತು ವೇಗಗೊಳಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಈ ಏಕೀಕರಣವು Ultimate Multisite ಮತ್ತು Cloudflare ನಡುವೆ ಸ್ವಯಂಚಾಲಿತ ಡೊಮೇನ್ ನಿರ್ವಹಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ, ವಿಶೇಷವಾಗಿ ಉಪಡೊಮೇನ್ Multisite ಸ್ಥಾಪನೆಗಳಿಗಾಗಿ.
 
-## ವೈಶಿಷ್ಟ್ಯಗಳು
+## ವೈಶಿಷ್ಟ್ಯಗಳು {#features}
 - Cloudflare ನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತ ಉಪಡೊಮೇನ್ ರಚನೆ
 - ಪ್ರಾಕ್ಸಿ ಮಾಡಲಾದ ಉಪಡೊಮೇನ್ ಬೆಂಬಲ
 - DNS ದಾಖಲೆ ನಿರ್ವಹಣೆ
 - Ultimate Multisite ನಿರ್ವಹಣೆಯಲ್ಲಿ ಸುಧಾರಿತ DNS ದಾಖಲೆ ಪ್ರದರ್ಶನ
 
-## ಅವಶ್ಯಕತೆಗಳು
+## ಅವಶ್ಯಕತೆಗಳು {#requirements}
 ಕೆಳಗಿನ ಸ್ಥಿರಾಂಕಗಳನ್ನು ನಿಮ್ಮ `wp-config.php` ಕಡತದಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸಬೇಕು:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## ಸೆಟಪ್ ಸೂಚನೆಗಳು
+## ಸೆಟಪ್ ಸೂಚನೆಗಳು {#setup-instructions}
 
-### 1. ನಿಮ್ಮ Cloudflare API Key ಪಡೆಯಿರಿ
+### 1. ನಿಮ್ಮ Cloudflare API Key ಪಡೆಯಿರಿ {#1-get-your-cloudflare-api-key}
 
 1. ನಿಮ್ಮ Cloudflare Dashboard ಗೆ ಲಾಗಿನ್ ಮಾಡಿ
 2. "My Profile" ಗೆ ಹೋಗಿ (ಮೇಲಿನ ಬಲ ಮೂಲೆಯಲ್ಲಿರುವ ನಿಮ್ಮ ಇಮೇಲ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. ನಿಮ್ಮ API token ನಕಲಿಸಿ
 
-### 2. ನಿಮ್ಮ Zone ID ಪಡೆಯಿರಿ
+### 2. ನಿಮ್ಮ Zone ID ಪಡೆಯಿರಿ {#2-get-your-zone-id}
 
 1. ನಿಮ್ಮ Cloudflare Dashboard ನಲ್ಲಿ, ನೀವು ಬಳಸಲು ಬಯಸುವ ಡೊಮೇನ್ ಆಯ್ಕೆಮಾಡಿ
 2. Zone ID "Overview" ಟ್ಯಾಬ್‌ನಲ್ಲಿ, ಬಲ ಬದಿಪಟ್ಟಿಯಲ್ಲಿ "API" ಅಡಿಯಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ
 3. Zone ID ನಕಲಿಸಿ
 
-### 3. wp-config.php ಗೆ ಸ್ಥಿರಾಂಕಗಳನ್ನು ಸೇರಿಸಿ
+### 3. wp-config.php ಗೆ ಸ್ಥಿರಾಂಕಗಳನ್ನು ಸೇರಿಸಿ {#3-add-constants-to-wp-configphp}
 
 ಕೆಳಗಿನ ಸ್ಥಿರಾಂಕಗಳನ್ನು ನಿಮ್ಮ `wp-config.php` ಕಡತಕ್ಕೆ ಸೇರಿಸಿ:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. ಏಕೀಕರಣವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
+### 4. ಏಕೀಕರಣವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ {#4-enable-the-integration}
 
 1. ನಿಮ್ಮ WordPress ನಿರ್ವಹಣೆಯಲ್ಲಿ, Ultimate Multisite > Settings ಗೆ ಹೋಗಿ
 2. "Domain Mapping" ಟ್ಯಾಬ್‌ಗೆ ಹೋಗಿ
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Cloudflare ಏಕೀಕರಣವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
 5. "Save Changes" ಕ್ಲಿಕ್ ಮಾಡಿ
 
-## ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ
+## ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ {#how-it-works}
 
-### ಉಪಡೊಮೇನ್ ನಿರ್ವಹಣೆ
+### ಉಪಡೊಮೇನ್ ನಿರ್ವಹಣೆ {#subdomain-management}
 
 ಉಪಡೊಮೇನ್ Multisite ಸ್ಥಾಪನೆಯಲ್ಲಿ ಹೊಸ ಜಾಲತಾಣವನ್ನು ರಚಿಸಿದಾಗ:
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಉಪಡೊಮೇನ್ ಅನ್ನು Cloudflare ಮೂಲಕ ಪ್ರಾಕ್ಸಿ ಮಾಡಲು ಸಂರಚಿಸಲಾಗುತ್ತದೆ (ಇದನ್ನು ಫಿಲ್ಟರ್‌ಗಳ ಮೂಲಕ ಬದಲಾಯಿಸಬಹುದು)
 3. ಜಾಲತಾಣವನ್ನು ಅಳಿಸಿದಾಗ, ಏಕೀಕರಣವು Cloudflare ನಿಂದ ಉಪಡೊಮೇನ್ ತೆಗೆದುಹಾಕುತ್ತದೆ
 
-### DNS ದಾಖಲೆ ಪ್ರದರ್ಶನ
+### DNS ದಾಖಲೆ ಪ್ರದರ್ಶನ {#dns-record-display}
 
 ಏಕೀಕರಣವು Ultimate Multisite ನಿರ್ವಹಣೆಯಲ್ಲಿ DNS ದಾಖಲೆ ಪ್ರದರ್ಶನವನ್ನು ಈ ರೀತಿಯಲ್ಲಿ ಸುಧಾರಿಸುತ್ತದೆ:
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. ದಾಖಲೆಗಳು ಪ್ರಾಕ್ಸಿ ಮಾಡಲಾಗಿದೆಯೇ ಅಥವಾ ಇಲ್ಲವೇ ಎಂದು ತೋರಿಸುತ್ತದೆ
 3. DNS ದಾಖಲೆಗಳ ಕುರಿತು ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸುತ್ತದೆ
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (ಹಿಂದೆ "Cloudflare for SaaS" ಎಂದು ಕರೆಯಲಾಗುತ್ತಿತ್ತು) ಎಂಬುದು Cloudflare ವೈಶಿಷ್ಟ್ಯವಾಗಿದ್ದು, ನಿಮ್ಮ ಗ್ರಾಹಕರು ನಿಮ್ಮ Multisite ಜಾಲದಲ್ಲಿ SSL ಜೊತೆಗೆ ತಮ್ಮದೇ ಡೊಮೇನ್‌ಗಳನ್ನು ಬಳಸಲು ಅನುಮತಿಸುತ್ತದೆ. Cloudflare ಬಳಸುವ ಡೊಮೇನ್-ಮ್ಯಾಪ್ ಮಾಡಿದ Multisite ಸ್ಥಾಪನೆಗಳಿಗೆ ಇದು ಶಿಫಾರಸು ಮಾಡಲಾದ ವಿಧಾನವಾಗಿದೆ, ಏಕೆಂದರೆ ಪ್ರತಿ ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗೆ SSL ಪ್ರಮಾಣಪತ್ರ ನೀಡಿಕೆ ಮತ್ತು ನವೀಕರಣವನ್ನು Cloudflare ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಿರ್ವಹಿಸುತ್ತದೆ.
 
-### ಇದು ಮಾನಕ Cloudflare ಏಕೀಕರಣದಿಂದ ಹೇಗೆ ಭಿನ್ನವಾಗಿದೆ
+### ಇದು ಮಾನಕ Cloudflare ಏಕೀಕರಣದಿಂದ ಹೇಗೆ ಭಿನ್ನವಾಗಿದೆ {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | ಮಾನಕ ಏಕೀಕರಣ | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **ಇದಕ್ಕೆ ಉತ್ತಮ** | ಉಪಡೊಮೇನ್ Multisite | ಡೊಮೇನ್-ಮ್ಯಾಪ್ ಮಾಡಿದ Multisite |
 | **SSL** | ಪ್ರತ್ಯೇಕವಾಗಿ ನಿರ್ವಹಿಸಲಾಗುತ್ತದೆ | Cloudflare ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಿರ್ವಹಿಸುತ್ತದೆ |
 
-### Cloudflare Custom Hostnames ಸೆಟಪ್ ಮಾಡುವುದು
+### Cloudflare Custom Hostnames ಸೆಟಪ್ ಮಾಡುವುದು {#setting-up-cloudflare-custom-hostnames}
 
 1. ನಿಮ್ಮ Cloudflare Dashboard ನಲ್ಲಿ, ನಿಮ್ಮ ಮುಖ್ಯ ಡೊಮೇನ್‌ಗಾಗಿ zone ತೆರೆಯಿರಿ.
 2. **SSL/TLS > Custom Hostnames** ಗೆ ಹೋಗಿ.
@@ -101,23 +101,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 Ultimate Multisite v2.6.1 ಇಂದಿನಿಂದ, ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಎಲ್ಲಾ plugin ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಲೇಬಲ್‌ಗಳಲ್ಲಿ **Cloudflare Custom Hostnames** ಎಂದು ಉಲ್ಲೇಖಿಸಲಾಗುತ್ತದೆ. ಹಿಂದಿನ ಆವೃತ್ತಿಗಳು "Cloudflare for SaaS" ಎಂಬ ಹೆಸರನ್ನು ಬಳಸಿದ್ದವು, ಅದು ಆಧಾರವಾಗಿರುವ Cloudflare ಉತ್ಪನ್ನದ ಹೆಸರು.
 :::
 
-## ಪ್ರಮುಖ ಟಿಪ್ಪಣಿಗಳು
+## ಪ್ರಮುಖ ಟಿಪ್ಪಣಿಗಳು {#important-notes}
 
 Cloudflare ನ ಇತ್ತೀಚಿನ ನವೀಕರಣಗಳ ಪ್ರಕಾರ, wildcard proxying ಈಗ ಎಲ್ಲಾ ಗ್ರಾಹಕರಿಗೂ ಲಭ್ಯವಿದೆ. ಇದರರ್ಥ ಉಪಡೊಮೇನ್ Multisite ಸ್ಥಾಪನೆಗಳಿಗೆ ಮಾನಕ Cloudflare DNS ಏಕೀಕರಣವು ಹಿಂದಿನಷ್ಟು ಮುಖ್ಯವಲ್ಲ, ಏಕೆಂದರೆ ನೀವು Cloudflare ನಲ್ಲಿ wildcard DNS ದಾಖಲೆಯನ್ನು ಸರಳವಾಗಿ ಸೆಟಪ್ ಮಾಡಬಹುದು.
 
-## ತೊಂದರೆ ನಿವಾರಣೆ
+## ತೊಂದರೆ ನಿವಾರಣೆ {#troubleshooting}
 
-### API ಸಂಪರ್ಕ ಸಮಸ್ಯೆಗಳು
+### API ಸಂಪರ್ಕ ಸಮಸ್ಯೆಗಳು {#api-connection-issues}
 - ನಿಮ್ಮ API token ಸರಿಯಾಗಿದೆಯೇ ಮತ್ತು ಅಗತ್ಯ ಅನುಮತಿಗಳನ್ನು ಹೊಂದಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
 - ನಿಮ್ಮ Zone ID ಸರಿಯಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
 - ನಿಮ್ಮ Cloudflare Account ಅಗತ್ಯ ಅನುಮತಿಗಳನ್ನು ಹೊಂದಿದೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿ
 
-### ಉಪಡೊಮೇನ್ ಸೇರಿಸಲಾಗಿಲ್ಲ
+### ಉಪಡೊಮೇನ್ ಸೇರಿಸಲಾಗಿಲ್ಲ {#subdomain-not-added}
 - ಯಾವುದೇ ದೋಷ ಸಂದೇಶಗಳಿಗಾಗಿ Ultimate Multisite ದಾಖಲೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ
 - ಉಪಡೊಮೇನ್ ಈಗಾಗಲೇ Cloudflare ಗೆ ಸೇರಿಸಲಾಗಿಲ್ಲವೆಂದು ಪರಿಶೀಲಿಸಿ
 - ನೀವು ರಚಿಸುತ್ತಿರುವ DNS ದಾಖಲೆಗಳ ಸಂಖ್ಯೆಯನ್ನು ನಿಮ್ಮ Cloudflare plan ಬೆಂಬಲಿಸುತ್ತದೆ ಎಂದು ಖಚಿತಪಡಿಸಿ
 
-### ಪ್ರಾಕ್ಸಿ ಸಮಸ್ಯೆಗಳು
+### ಪ್ರಾಕ್ಸಿ ಸಮಸ್ಯೆಗಳು {#proxying-issues}
 - ಉಪಡೊಮೇನ್‌ಗಳನ್ನು ಪ್ರಾಕ್ಸಿ ಮಾಡಬಾರದೆಂದು ನೀವು ಬಯಸಿದರೆ, `wu_cloudflare_should_proxy` ಫಿಲ್ಟರ್ ಬಳಸಬಹುದು
 - ಪ್ರಾಕ್ಸಿ ಮಾಡಿದಾಗ ಕೆಲವು ವೈಶಿಷ್ಟ್ಯಗಳು ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡದಿರಬಹುದು (ಉದಾ., ಕೆಲವು WordPress ನಿರ್ವಹಣಾ ಕಾರ್ಯಗಳು)
 - ನಿರ್ವಹಣಾ ಪುಟಗಳಿಗಾಗಿ cache ತಪ್ಪಿಸಲು Cloudflare ನ Page Rules ಬಳಸುವುದನ್ನು ಪರಿಗಣಿಸಿ

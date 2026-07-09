@@ -3,17 +3,17 @@ title: Arah Reka Bentuk
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Arah Reka Bentuk
+# Arah Reka Bentuk {#design-direction}
 
 Langkah **Arah Reka Bentuk** membolehkan anda menyemak, memperhalusi, dan memuktamadkan reka bentuk visual tema anda sebelum Theme Builder menjana tema yang lengkap.
 
-## Gambaran Keseluruhan
+## Gambaran Keseluruhan {#overview}
 
 Selepas melengkapkan Temu Bual Penemuan (Discovery Interview), Theme Builder akan memaparkan arah reka bentuk anda dengan **paparan pratonton desktop dan mudah alih**. Ini membolehkan anda melihat dengan tepat bagaimana reka bentuk anda akan kelihatan pada peranti yang berbeza sebelum anda membuat komitmen terhadap tema tersebut.
 
-## Komponen Arah Reka Bentuk
+## Komponen Arah Reka Bentuk {#design-direction-components}
 
-### 1. Palet Warna
+### 1. Palet Warna {#1-color-palette}
 
 Skema warna tema anda, termasuk:
 
@@ -23,7 +23,7 @@ Skema warna tema anda, termasuk:
 - **Warna Neutral** — warna kelabu dan putih untuk latar belakang dan teks
 - **Warna Teks** — warna teks utama untuk kebolehbacaan
 
-### 2. Tipografi
+### 2. Tipografi {#2-typography}
 
 Pemilihan fon untuk:
 
@@ -33,14 +33,14 @@ Pemilihan fon untuk:
 - **Ketinggian Baris (Line height)** — jarak antara baris untuk kebolehbacaan
 - **Berat Fon (Font weights)** — variasi tebal, biasa, dan ringan
 
-### 3. Susun Atur dan Jarak (Layout and Spacing)
+### 3. Susun Atur dan Jarak (Layout and Spacing) {#3-layout-and-spacing}
 
 - **Lebar Kontena (Container width)** — lebar maksimum untuk kandungan
 - **Padding dan Margin** — jarak di sekeliling elemen
 - **Sistem Grid (Grid system)** — susun atur lajur untuk reka bentuk responsif
 - **Jarak Komponen (Component spacing)** — jarak antara elemen UI
 
-### 4. Elemen Visual
+### 4. Elemen Visual {#4-visual-elements}
 
 - **Gaya Butang (Button styles)** — reka bentuk butang utama, sekunder, dan tersier
 - **Reka Bentuk Kad (Card designs)** — susun atur untuk blok kandungan
@@ -48,9 +48,9 @@ Pemilihan fon untuk:
 - **Sempadan dan Bayangan (Borders and shadows)** — kedalaman visual yang halus
 - **Kesan Hover (Hover effects)** — gaya keadaan interaktif
 
-## Paparan Pratonton (Preview Rendering)
+## Paparan Pratonton (Preview Rendering) {#preview-rendering}
 
-### Pratonton Desktop
+### Pratonton Desktop {#desktop-preview}
 
 Pratonton desktop menunjukkan reka bentuk anda pada lebar penuh (biasanya 1200px atau lebih lebar):
 
@@ -59,7 +59,7 @@ Pratonton desktop menunjukkan reka bentuk anda pada lebar penuh (biasanya 1200px
 - Tipografi dan jarak yang besar
 - Semua elemen visual pada saiz penuh
 
-### Pratonton Mudah Alih
+### Pratonton Mudah Alih {#mobile-preview}
 
 Pratonton mudah alih menunjukkan reka bentuk anda pada lebar mudah alih (biasanya 375px):
 
@@ -68,7 +68,7 @@ Pratonton mudah alih menunjukkan reka bentuk anda pada lebar mudah alih (biasany
 - Tipografi dan jarak yang disesuaikan
 - Saiz butang mesra sentuhan
 
-### Titik Henti Responsif (Responsive Breakpoints)
+### Titik Henti Responsif (Responsive Breakpoints) {#responsive-breakpoints}
 
 Theme Builder memaparkan pratonton pada titik henti ini:
 
@@ -79,9 +79,9 @@ Theme Builder memaparkan pratonton pada titik henti ini:
 | **Desktop** | 1200px | Desktop lebar penuh |
 | **Desktop Besar** | 1920px | Paparan ultra-lebar |
 
-## Memperhalusi Reka Bentuk Anda
+## Memperhalusi Reka Bentuk Anda {#refining-your-design}
 
-### Membuat Penyesuaian
+### Membuat Penyesuaian {#making-adjustments}
 
 Anda boleh memperhalusi arah reka bentuk anda dengan:
 
@@ -91,7 +91,7 @@ Anda boleh memperhalusi arah reka bentuk anda dengan:
 4. **Mengemaskini susun atur** — ubah lebar kontena dan lajur grid
 5. **Menyesuaikan elemen** — ubah gaya butang, reka bentuk kad, dsb.
 
-### Kemas Kini Pratonton
+### Kemas Kini Pratonton {#preview-updates}
 
 Perubahan dipantulkan secara masa nyata:
 
@@ -100,7 +100,7 @@ Perubahan dipantulkan secara masa nyata:
 - Semua titik henti responsif dikemas kini
 - Anda boleh bertukar antara pratonton untuk mengesahkan perubahan
 
-### Paparan Perbandingan
+### Paparan Perbandingan {#comparison-view}
 
 Bandingkan arah reka bentuk anda dengan:
 
@@ -108,7 +108,7 @@ Bandingkan arah reka bentuk anda dengan:
 - **Reka Bentuk Pesaing** — bandingkan dengan laman inspirasi
 - **Versi Sebelumnya** — kembali ke arah reka bentuk yang lebih awal
 
-## Kelulusan Arah Reka Bentuk
+## Kelulusan Arah Reka Bentuk {#design-direction-approval}
 
 Setelah anda berpuas hati dengan reka bentuk anda:
 
@@ -118,7 +118,7 @@ Setelah anda berpuas hati dengan reka bentuk anda:
 4. **Sahkan susun atur** — periksa jarak dan penjajaran
 5. **Luluskan reka bentuk** — teruskan ke penjanaan tema
 
-## Langkah Seterusnya
+## Langkah Seterusnya {#next-steps}
 
 Selepas meluluskan arah reka bentuk anda:
 
@@ -127,7 +127,7 @@ Selepas meluluskan arah reka bentuk anda:
 3. Anda boleh menyesuaikan lagi menggunakan customizer WordPress
 4. Teruskan ke [Hospitality Menus](./hospitality-menus.md) atau ciri lain
 
-## Amalan Terbaik
+## Amalan Terbaik {#best-practices}
 
 - **Uji pada peranti sebenar** — gunakan telefon dan tablet sebenar jika boleh
 - **Periksa kebolehbacaan** — pastikan teks boleh dibaca pada semua saiz
@@ -135,30 +135,30 @@ Selepas meluluskan arah reka bentuk anda:
 - **Pertimbangkan prestasi** — optimumkan imej dan fon untuk kelajuan
 - **Rancang untuk kandungan** — pastikan susun atur berfungsi dengan kandungan sebenar anda
 
-## Penyelesaian Masalah (Troubleshooting)
+## Penyelesaian Masalah (Troubleshooting) {#troubleshooting}
 
-### Pratonton Tidak Dikemas Kini
+### Pratonton Tidak Dikemas Kini {#preview-not-updating}
 
 - Segarkan halaman
 - Kosongkan cache pelayar
 - Cuba pelayar yang berbeza
 - Periksa sambungan internet
 
-### Warna Kelihatan Berbeza
+### Warna Kelihatan Berbeza {#colors-look-different}
 
 - Periksa tetapan warna monitor
 - Cuba pada peranti yang berbeza
 - Sahkan kontras warna dengan alat kebolehaksesan
 - Pertimbangkan simulator buta warna
 
-### Isu Tipografi
+### Isu Tipografi {#typography-issues}
 
 - Sahkan fail fon dimuatkan
 - Periksa saiz fon pada titik henti yang berbeza
 - Uji dengan kandungan sebenar
 - Pertimbangkan panjang baris untuk kebolehbacaan
 
-## Dokumentasi Berkaitan
+## Dokumentasi Berkaitan {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — kumpulkan maklumat reka bentuk
 - [Hospitality Menus](./hospitality-menus.md) — cipta halaman menu berstruktur

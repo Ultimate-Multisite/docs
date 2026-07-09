@@ -3,13 +3,13 @@ title: E-posse en uitsendings stuur
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Stuur e-posse en uitsendings (v2)
+# Stuur e-posse en uitsendings (v2) {#sending-emails-and-broadcasts-v2}
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
 Ultimate Multisite kom met ’n funksie wat jou sal toelaat om met jou kliënte te kommunikeer deur ’n e-pos aan ’n geteikende gebruiker of ’n groep gebruikers te stuur, asook om kennisgewings op hul admin-Dashboard te stuur om aankondigings uit te saai
 
-## Voeg admin-kennisgewings by jou kliënte se Dashboard met Uitsendings
+## Voeg admin-kennisgewings by jou kliënte se Dashboard met Uitsendings {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Deur die Ultimate Multisite-uitsendingsfunksie te gebruik, kan jy **admin-kennisgewings** by jou gebruiker se subsite-admin-Dashboard voeg.
 
@@ -51,7 +51,7 @@ Nadat jy jou boodskap geskep het, kan jy dan die **Stuur**-knoppie druk.
 
 En dit is dit. Die admin-kennisgewing behoort onmiddellik op jou gebruiker se Dashboard te verskyn.
 
-## Stuur e-posse aan jou kliënte
+## Stuur e-posse aan jou kliënte {#send-emails-to-your-customers}
 
 Deur die Ultimate Multisite-uitsendingsfunksie te gebruik, kan jy ’n e-pos aan jou gebruikers stuur. Jy het ’n opsie om die e-pos slegs aan spesifieke gebruikers te stuur of ’n spesifieke gebruikersgroep te teiken op grond van die produk of plan waarop hulle ingeteken is.
 
@@ -81,11 +81,11 @@ Nadat jy jou boodskap geskep het, kan jy die **Stuur**-knoppie druk.
 
 En dit is hoe maklik dit is om ’n e-pos aan jou eindgebruikers te stuur deur die uitsendingsfunksie te gebruik.
 
-## Stelsel-e-posse
+## Stelsel-e-posse {#system-emails}
 
 Stelsel-e-posse in Ultimate Multisite is daardie **outomatiese kennisgewings** wat deur die stelsel gestuur word ná sekere aksies soos registrasie, betaling, domeinkartering, ens. Hierdie e-posse kan vanaf Ultimate Multisite-instellings geredigeer of gewysig word. Dit kom ook met ’n funksie wat jou sal toelaat om bestaande instellings vanaf ’n ander Ultimate Multisite-installasie terug te stel en in te voer.
 
-### Herstel & Invoer
+### Herstel & Invoer {#resetting--importing}
 
 Nuwe Ultimate Multisite-weergawes, sowel as byvoegings, kan en sal van tyd tot tyd nuwe e-posse registreer.
 
@@ -93,7 +93,7 @@ Om konflikte en ander probleme te voorkom, **sal ons nie die nuwe e-possjablone 
 
 Superadmins en agente kan egter hierdie nuut geregistreerde e-posse via die invoernutsding invoer. Daardie proses sal ’n nuwe stelsel-e-pos skep met die inhoud en konfigurasie van die nuwe e-possjabloon, wat die superadmin toelaat om enige wysigings te maak wat hulle wil, of dit net so te hou.
 
-#### Hoe om stelsel-e-posse in te voer
+#### Hoe om stelsel-e-posse in te voer {#how-to-import-system-emails}
 
 Gaan na jou Ultimate Multisite-instellingsbladsy en gaan na die **E-posse**-oortjie.
 
@@ -111,7 +111,7 @@ Dan kan jy die Invoer e-posse-opsies wissel om te sien watter stelsel-e-posse be
 
 <!-- Skermskoot nie beskikbaar nie: Herstel-en-invoer-modale venster met die Voer e-posse in-opsies uitgebrei -->
 
-#### Herstel van stelsel-e-posse
+#### Herstel van stelsel-e-posse {#reseting-system-emails}
 
 Ander kere sal jy besef dat die veranderinge wat jy aan ’n bepaalde e-possjabloon gemaak het nie meer vir jou werk nie en dat jy dit na sy **verstektoestand** wil herstel.
 

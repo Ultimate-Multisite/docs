@@ -5,7 +5,7 @@ title: |+
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Planaren eskaintzeko (v2)
+# Planaren eskaintzeko (v2) {#upgrading-a-plan-v2}
 
 _**IMPORTANTE NOTA: Hau artikulu Ultimate Multisite bertsio 2.x-eraari referentzia egiten du.**_
 
@@ -41,7 +41,7 @@ Checkout amaituta gtainaren produktu(n) iragailduko dira irailatzariak eta berri
 
 ##
 
-## Upgrade eta Downgrade Bideak
+## Upgrade eta Downgrade Bideak {#upgrade-and-downgrade-paths}
 
 Produktiapendu baten artean, **Up & Downgrades** tab bat izango du. Horren lehen opszioa da **Plan Group** (Plan Grupu) irizkia.
 

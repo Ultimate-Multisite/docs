@@ -3,7 +3,7 @@ title: AffiliateWP ئۆزگىرىش خاتىرىسى
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP ئۆزگىرىش خاتىرىسى
+# AffiliateWP ئۆزگىرىش خاتىرىسى {#affiliatewp-changelog}
 
 نەشرى: 2.0.1 - 2025-09-28 كۈنى ئېلان قىلىندى
 

@@ -3,7 +3,7 @@ title: Mbiri ya Zosintha za Wogulitsa Madomeni
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Mbiri ya Kusintha ya Wogulitsa Ma Domain
+# Mbiri ya Kusintha ya Wogulitsa Ma Domain {#domain-seller-changelog}
 
 Mtundu 1.3.0 - Watulutsidwa pa 2026-06-02
 - Chatsopano: Onjezera chenjezo la network-admin pamene ndalama zotsala za HostAfrica reseller zatsika kwambiri
@@ -134,20 +134,20 @@ Version 1.0.0 - Yatulutsidwa pa 2025-09-28
 * **Zakonzedwa:** Code yonse ya v1 yakale yasinthidwa ku miyezo ya v2
 * **Zachotsedwa:** Kugwirizana ndi v1 yakale (kusintha koswa)
 
-### Ma Version Akale (v1 Yakale)
+### Ma Version Akale (v1 Yakale) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Zakonzedwa: Kusagwirizana ndi Groundhogg CRM
 * Chidziwitso: Iyi inali kutulutsidwa komaliza kogwirizana ndi v1
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Zakonzedwa: Munda wa License Key wachotsedwa
 * Zakonzedwa: Ma tabu a plan akusowa pamene feature plugin ili active
 * Zakonzedwa bwino: Batani lodumpha lawonjezedwa pa munda wa kulembetsa
 
-### Version 0.0.1 - Kutulutsidwa Koyambirira
+### Version 0.0.1 - Kutulutsidwa Koyambirira {#version-001---initial-release}
 
 * Kuphatikizana koyambira kwa OpenSRS kwa WP Ultimo v1
 * Kufufuza ndi kulembetsa domain kosavuta

@@ -3,28 +3,28 @@ title: ພາບລວມ REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# ອ້າງອີງ REST API
+# ອ້າງອີງ REST API {#rest-api-reference}
 
-## ການກຳນົດຄ່າພື້ນຖານ
+## ການກຳນົດຄ່າພື້ນຖານ {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **ການຢືນຢັນຕົວຕົນ:** API Key ແລະ Secret (HTTP Basic Auth ຫຼື ພາລາມິເຕີ URL)
 
-## ການຢືນຢັນຕົວຕົນ
+## ການຢືນຢັນຕົວຕົນ {#authentication}
 
-### ເປີດໃຊ້ API
+### ເປີດໃຊ້ API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### ຮັບຂໍ້ມູນຢືນຢັນ API
+### ຮັບຂໍ້ມູນຢືນຢັນ API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### ວິທີການຢືນຢັນຕົວຕົນ
+### ວິທີການຢືນຢັນຕົວຕົນ {#authentication-methods}
 
 **HTTP Basic Auth (ແນະນຳ):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ຈຸດປາຍທາງຫຼັກ
+## ຈຸດປາຍທາງຫຼັກ {#core-endpoints}
 
-### 1. API ລູກຄ້າ
+### 1. API ລູກຄ້າ {#1-customers-api}
 
 **ເສັ້ນທາງພື້ນຖານ:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API ເວັບໄຊ
+### 2. API ເວັບໄຊ {#2-sites-api}
 
 **ເສັ້ນທາງພື້ນຖານ:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API ສະມາຊິກພາບ
+### 3. API ສະມາຊິກພາບ {#3-memberships-api}
 
 **ເສັ້ນທາງພື້ນຖານ:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API ຜະລິດຕະພັນ
+### 4. API ຜະລິດຕະພັນ {#4-products-api}
 
 **ເສັ້ນທາງພື້ນຖານ:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API ການຊຳລະເງິນ
+### 5. API ການຊຳລະເງິນ {#5-payments-api}
 
 **ເສັ້ນທາງພື້ນຖານ:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API ໂດເມນ
+### 6. API ໂດເມນ {#6-domains-api}
 
 **ເສັ້ນທາງພື້ນຖານ:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## ຈຸດປາຍທາງການລົງທະບຽນ
+## ຈຸດປາຍທາງການລົງທະບຽນ {#registration-endpoint}
 
 ຈຸດປາຍທາງ `/register` ສະໜອງຂັ້ນຕອນ checkout/ການລົງທະບຽນທີ່ຄົບຖ້ວນ:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## ຈຸດປາຍທາງ Tenant ແບບອະທິປະໄຕ
+## ຈຸດປາຍທາງ Tenant ແບບອະທິປະໄຕ {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ເພີ່ມການຄອບຄຸມ REST ສຳລັບ tenant ແບບອະທິປະໄຕ ສຳລັບການເຊື່ອມໂຍງທີ່ຈັດສັນ, ກວດສອບ, ຫຼື ຢືນຢັນ tenant ທີ່ແຍກອອກ.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 ຖືວ່າ `ready: false` ເປັນຕົວກີດຂວາງກ່ອນເປີດໃຊ້ງານ. ກວດສອບລາຍລະອຽດການຢືນຢັນ, ແກ້ໄຂການຜູກກັບ host ຖານຂໍ້ມູນ, queue, ການຈັດສັນຜູ້ໃຊ້, ຫຼື ບັນຫາການກຳນົດເສັ້ນທາງ, ແລ້ວລອງຢືນຢັນອີກຄັ້ງ.
 
-## ການຕອບກັບຂໍ້ຜິດພາດ
+## ການຕອບກັບຂໍ້ຜິດພາດ {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## ການແບ່ງໜ້າ ແລະ ການກັ່ນຕອງ
+## ການແບ່ງໜ້າ ແລະ ການກັ່ນຕອງ {#pagination-and-filtering}
 
 **ພາລາມິເຕີຄຳຖາມ:**
 ```http

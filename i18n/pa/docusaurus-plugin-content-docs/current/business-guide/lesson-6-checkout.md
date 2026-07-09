@@ -3,15 +3,15 @@ title: 'ਪਾਠ 6: ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦਾ ਅਨੁਭਵ'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: Signup Experience
+# Lesson 6: Signup Experience {#lesson-6-the-signup-experience}
 
 Checkout flow ਉਹ جگہ ਹੈ ਜਿੱਥੇ ਦਿਲਚਸਪੀ ਆਮਦਨ ਬਣਦੀ ਹੈ। ਇੱਕ ਗੁੰਝਲਦਾਰ ਜਾਂ ਆਮ ਸਾਈਨਅੱਪ ਪ੍ਰੋਸੈਸ ਗਾਹਕਾਂ ਨੂੰ ਗੁਆ ਦਿੰਦਾ ਹੈ। ਇੱਕ ਖਾਸ ਨਿਸ਼ (niche) ਨਾਲ ਜੁੜਿਆ ਪ੍ਰੋਸੈਸ ਜੋ ਉਨ੍ਹਾਂ ਦੀ ਜ਼ੁਬਾਨ ਵਿੱਚ ਗੱਲ ਕਰਦਾ ਹੈ ਅਤੇ ਆਸਾਨ ਲੱਗਦਾ ਹੈ, ਉਹ ਉਨ੍ਹਾਂ ਨੂੰ ਗਾਹਕ ਬਣਾਉਂਦਾ ਹੈ।
 
-## Where We Left Off
+## Where We Left Off {#where-we-left-off}
 
 FitSite ਦੇ ਕੋਲ templates ਅਤੇ plans configure ਹੋ ਚੁੱਕੇ ਹਨ। ਹੁਣ ਅਸੀਂ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅਤੇ checkout experience ਬਣਾਵਾਂਗੇ ਜੋ ਫਿਟਨੈਸ ਸਟੂਡੀਓ ਮਾਲਕਾਂ ਨੂੰ ਭੁਗਤਾਨ ਕਰਨ ਵਾਲੇ ਗਾਹਕ ਬਣਾ ਦੇਵੇਗਾ।
 
-## Understanding the Registration Flow
+## Understanding the Registration Flow {#understanding-the-registration-flow}
 
 Ultimate Multisite ਦੇ checkout forms ਪੂਰੀ ਤਰ੍ਹਾਂ customizable multi-step forms ਹੁੰਦੇ ਹਨ। FitSite ਲਈ, ਅਸੀਂ ਇੱਕ flow ਚਾਹੁੰਦੇ ਹਾਂ ਜੋ:
 
@@ -21,11 +21,11 @@ Ultimate Multisite ਦੇ checkout forms ਪੂਰੀ ਤਰ੍ਹਾਂ customi
 
 ਪੂਰੇ technical reference ਲਈ [The Registration Flow](/user-guide/configuration/the-registration-flow) ਦੇਖੋ।
 
-## Designing the FitSite Checkout
+## Designing the FitSite Checkout {#designing-the-fitsite-checkout}
 
 **Ultimate Multisite > Checkout Forms** 'ਤੇ ਜਾਓ ਅਤੇ ਇੱਕ ਨਵਾਂ form ਬਣਾਓ।
 
-### Step 1: Plan Selection
+### Step 1: Plan Selection {#step-1-plan-selection}
 
 ਸਭ ਤੋਂ ਪਹਿਲੀ ਚੀਜ਼ ਜੋ ਇੱਕ ਫਿਟਨੈਸ ਸਟੂਡੀਓ ਮਾਲਕ ਦੇਖੇ, ਉਹ plans ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ, ਜੋ ਉਨ੍ਹਾਂ ਦੀ ਸਮਝ ਵਿੱਚ ਆਉਣ ਵਾਲੀ ਭਾਸ਼ਾ ਵਿੱਚ ਪੇਸ਼ ਕੀਤੇ ਗਏ ਹੋਣ।
 
@@ -37,7 +37,7 @@ Ultimate Multisite ਦੇ checkout forms ਪੂਰੀ ਤਰ੍ਹਾਂ customi
 "1 GB storage" ਇੱਕ ਜਿਮ ਮਾਲਕ ਲਈ ਕੁਝ ਨਹੀਂ ਹੈ। "ਤੁਹਾਨੂੰ ਇੱਕ professional studio website ਲਈ ਜੋ ਕੁਝ ਵੀ ਚਾਹੀਦਾ ਹੈ" ਉਹ ਕੁਝ ਵੀ ਹੈ। plan descriptions ਆਪਣੇ ਗਾਹਕ ਦੀ ਭਾਸ਼ਾ ਵਿੱਚ ਲਿਖੋ।
 :::
 
-### Step 2: Template Selection
+### Step 2: Template Selection {#step-2-template-selection}
 
 plan ਚੁਣਨ ਤੋਂ ਬਾਅਦ, ਗਾਹਕ ਆਪਣਾ ਸ਼ੁਰੂਆਤੀ template ਚੁਣਦਾ ਹੈ।
 
@@ -45,7 +45,7 @@ plan ਚੁਣਨ ਤੋਂ ਬਾਅਦ, ਗਾਹਕ ਆਪਣਾ ਸ਼ੁਰ
 - ਉਪਲਬਧ templates ਉਸ plan ਨਾਲ filter ਹੋਣਗੇ ਜੋ ਉਨ੍ਹਾਂ ਨੇ ਚੁਣਿਆ ਹੈ (Lesson 5 ਵਿੱਚ configure ਕੀਤਾ ਗਿਆ)
 - ਹਰੇਕ template ਵਿੱਚ ਇੱਕ preview image ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ ਜੋ ਫਿਟਨੈਸ-specific design ਦਿਖਾਉਂਦੀ ਹੋਵੇ।
 
-### Step 3: Account Creation
+### Step 3: Account Creation {#step-3-account-creation}
 
 ਇਸਨੂੰ ਘੱਟ ਤੋਂ ਘੱਟ ਰੱਖੋ। ਸਿਰਫ਼ ਇਹ ਇਕੱਠੇ ਕਰੋ:
 
@@ -55,27 +55,27 @@ plan ਚੁਣਨ ਤੋਂ ਬਾਅਦ, ਗਾਹਕ ਆਪਣਾ ਸ਼ੁਰ
 
 ਜਿਹੀ ਜਾਣਕਾਰੀ ਦੀ ਤੁਹਾਨੂੰ ਸਾਈਨਅੱਪ 'ਤੇ ਲੋੜ ਨਹੀਂ, ਉਹ ਪੁੱਛੋ ਨਾ। ਹਰ ਵਾਧੂ field conversions ਨੂੰ ਘਟਾਉਂਦਾ ਹੈ।
 
-### Step 4: Site Setup
+### Step 4: Site Setup {#step-4-site-setup}
 
 - **Site title**: Step 3 ਵਿੱਚ ਦ入 ਕੀਤਾ ਗਿਆ ਸਟੂਡੀਓ ਨਾਮ ਤੋਂ pre-fill ਕਰੋ
 - **Site URL**: ਸਟੂਡੀਓ ਨਾਮ ਤੋਂ auto-generate ਕਰੋ (ਉਦਾਹਰਨ ਲਈ, `ironworks.fitsite.com`)
 
-### Step 5: Payment
+### Step 5: Payment {#step-5-payment}
 
 - **Payment** field ਜੋੜੋ
 - ਆਪਣੇ payment gateway ਨੂੰ configure ਕਰੋ ([Stripe](/user-guide/payment-gateways/stripe) subscription billing ਲਈ ਸਿਫਾਰਸ਼ ਕੀਤਾ ਜਾਂਦਾ ਹੈ)
 - ਜੇ ਤੁਸੀਂ Lesson 5 ਵਿੱਚ order bumps ਬਣਾਏ ਸਨ, ਤਾਂ payment step ਤੋਂ ਪਹਿਲਾਂ ਇੱਕ **Order Bump** field ਜੋੜੋ
 
-### Step 6: Confirmation
+### Step 6: Confirmation {#step-6-confirmation}
 
 - confirmation message ਨੂੰ ਫਿਟਨੈਸ-specific language ਨਾਲ customize ਕਰੋ
 - ਉਦਾਹਰਨ: "ਤੁਹਾਡੀ ਫਿਟਨੈਸ ਸਟੂਡੀਓ ਦੀ website ਬਣਾਈ ਜਾ ਰਹੀ ਹੈ। ਤੁਹਾਨੂੰ ਕੁਝ ਸਕਿੰਟਾਂ ਵਿੱਚ ਤੁਹਾਡੀ ਨਵੀਂ site 'ਤੇ redirect ਕੀਤਾ ਜਾਵੇਗਾ।"
 
-## Adding a Period Selection Toggle
+## Adding a Period Selection Toggle {#adding-a-period-selection-toggle}
 
 ਜੇ ਤੁਸੀਂ ਆਪਣੇ plans ਵਿੱਚ price variations ਸੈੱਟ ਕੀਤੇ ਹਨ (ਮਹੀਨਾਵਾਰ ਬਨਾਮ ਸਾਲਾਨਾ), ਤਾਂ checkout form ਵਿੱਚ ਇੱਕ **Period Selection** field ਜੋੜੋ ਤਾਂ ਜੋ ਗਾਹਕ ਬਿਲਿੰਗ period ਵਿਚਕਾਰ toggle ਕਰ ਸਕਣ। instructions ਲਈ [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) ਦੇਖੋ।
 
-## Configuring Payment
+## Configuring Payment {#configuring-payment}
 
 ਜੇ ਤੁਸੀਂ ਅਜੇ ਤੱਕ ਕੋਈ payment gateway ਸੈੱਟ ਨਹੀਂ ਕੀਤਾ ਹੈ:
 
@@ -85,7 +85,7 @@ plan ਚੁਣਨ ਤੋਂ ਬਾਅਦ, ਗਾਹਕ ਆਪਣਾ ਸ਼ੁਰ
 
 details ਲਈ [Getting Paid](/user-guide/payment-gateways/getting-paid) ਦੇਖੋ ਕਿ payments ਤੁਹਾਡੇ account ਵਿੱਚ ਕਿਵੇਂ ਆਉਂਦੇ ਹਨ।
 
-## Testing the Flow
+## Testing the Flow {#testing-the-flow}
 
 ਅੱਗੇ ਵਧਣ ਤੋਂ ਪਹਿਲਾਂ, ਇੱਕ ਪੂਰਾ test signup complete ਕਰੋ:
 
@@ -105,7 +105,7 @@ check ਕਰੋ ਕਿ:
 - [ ] ਗਾਹਕ ਸਹੀ template ਨਾਲ ਇੱਕ ਕੰਮ ਕਰਨ ਵਾਲੀ site 'ਤੇ ਪਹੁੰਚਦਾ ਹੈ
 - [ ] Confirmation emails ਫਿਟਨੈਸ-specific language ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਨ
 
-## The FitSite Network So Far
+## The FitSite Network So Far {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## What We Built This Lesson
+## What We Built This Lesson {#what-we-built-this-lesson}
 
 - **ਇੱਕ multi-step checkout form** ਜੋ ਫਿਟਨੈਸ ਸਟੂਡੀਓ ਮਾਲਕਾਂ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ
 - **Niche-specific language** ਸਾਈਨਅੱਪ flow ਵਿੱਚ ਹਰ ਪਾਸੇ

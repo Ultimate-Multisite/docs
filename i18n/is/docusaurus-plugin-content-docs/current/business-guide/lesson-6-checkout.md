@@ -3,14 +3,14 @@ title: 'Læoni 6: Skráningarnar upplifun'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Læoni 6: Signup-upplifunni
+# Læoni 6: Signup-upplifunni {#lesson-6-the-signup-experience}
 
 Kaupferlið er þar sem áhuga orðast í fjármuni. Óskýr eða algeng skráningarprosessi missir viðskiptavini. Einangrað ferli sem talar þeirra tungumli og finnst eins og engin ákostur, breytur þeim til betalande viðskiptavina.
 
-## Hvar Við Stod
+## Hvar Við Stod {#where-we-left-off}
 FitSite hefur temblönd og planir sett upp. Í dag byggjum við skráningarprosessi og kaupferli sem breytur færslum fyrir træningstofa í betalande viðskiptavina.
 
-## Skilning á Skráningarprosessnum
+## Skilning á Skráningarprosessnum {#understanding-the-registration-flow}
 Ultimate Multisite's checkout forms eru fullt möguleiki til að þýða flursteppla formir. Til FitSite viljum við ferli sem:
 
 1. Finns eins og það hefur verið byggt fyrir træningstofa
@@ -19,10 +19,10 @@ Ultimate Multisite's checkout forms eru fullt möguleiki til að þýða flurste
 
 Sjá [The Registration Flow](/user-guide/configuration/the-registration-flow) fyrir fullan tæknilegan referens.
 
-## Design á FitSite Kaupferlið
+## Design á FitSite Kaupferlið {#designing-the-fitsite-checkout}
 Navígu yfir **Ultimate Multisite > Checkout Forms** og skapa nýtt form.
 
-### Stig 1: Val á Planum
+### Stig 1: Val á Planum {#step-1-plan-selection}
 
 Fyrir allt sem træningstofa eigandi sjá, þurfa planir sést í orða þeirra skilja.
 
@@ -34,7 +34,7 @@ Fyrir allt sem træningstofa eigandi sjá, þurfa planir sést í orða þeirra 
 "1 GB gömlu" hefur engin merkingu fyrir gymmi eigandi. "Allt sem þú þarft til proff-síðu træningstofa" hefur allt. Skrifa planauðskrifanir í tungumli viðskiptavina þín.
 :::
 
-### Árangurvalg á malli (Template Selection)
+### Árangurvalg á malli (Template Selection) {#step-2-template-selection}
 
 Eftir að velja plan, vælimur að nota þennan skrefið til að velja byrjunmallann fyrir viðskiptavininn.
 
@@ -42,7 +42,7 @@ Eftir að velja plan, vælimur að nota þennan skrefið til að velja byrjunmal
 - Til að sjá hvernig málarnir eru fylgðar, er valin mallar fylgðar eftir planinu sem þeir valdiðu (sem er sett upp í Læoni 5).
 - Hvert mallur þarf að hafa fyrirfyrst mynd til viðmiðunar sem sýnir hönnun sérsniðin fyrir trænni/fitness.
 
-### Árangurskýrslu (Account Creation)
+### Árangurskýrslu (Account Creation) {#step-3-account-creation}
 
 Hafðu þetta eins einfalt og mögulegt er. Samlaðu aðeins eftirfarandi upplýsingar:
 
@@ -52,27 +52,27 @@ Hafðu þetta eins einfalt og mögulegt er. Samlaðu aðeins eftirfarandi upplý
 
 Spyr ekki um upplýsingar sem þú þarft ekki við skráningu. Hvert extra fält minnkar konversjónina.
 
-### Uppsetning síðunar (Site Setup)
+### Uppsetning síðunar (Site Setup) {#step-4-site-setup}
 
 - **Site title** (Títil á síðuna): Fyll eftir með heiti námskeiðsins sem var sett í skrefi 3
 - **Site URL** (Loka staður á síðunni): Auto-gengja úr heiti námskeiðsins (t.d. `ironworks.fitsite.com`)
 
-### Betalning (Payment)
+### Betalning (Payment) {#step-5-payment}
 
 - Ítildu **Payment** fält.
 - Það er minnt til að setja upp betalingshættuna þína ([Stripe](/user-guide/payment-gateways/stripe) er minnt til fyrir skráningu með endurskoðun).
 - Ef þú hefur skráð **Order Bumps** í Læoni 5, bætu við **Order Bump** fält áður en betalingsskrefið.
 
-### Bestæðing (Confirmation)
+### Bestæðing (Confirmation) {#step-6-confirmation}
 
 - Skynja bestæðingarmótuna með hugtökum sérsniðnum fyrir trænni/fitness.
 - Dæmi: "Sjónvarpi námskeiðsins þíns er að byggja upp. Þú verður leiðréttur á nýja síðuna þinni í ein sömmu tíma."
 
-## Íbúningur fyrir val á tímabil (Adding a Period Selection Toggle)
+## Íbúningur fyrir val á tímabil (Adding a Period Selection Toggle) {#adding-a-period-selection-toggle}
 
 Ef þú settir upp verðarbreytileikur í planum þínum (mánaðarinn vs. árs), bæti við **Period Selection** felt í skráningarskjans fyrir betalingsskráninguna svo að viðskiptavinir geti skilað saman milli reikningstíma. Sjá [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) fyrir leiðbeiningar um þetta.
 
-## Innstilling av betalingshættum (Configuring Payment)
+## Innstilling av betalingshættum (Configuring Payment) {#configuring-payment}
 
 Ef þú hefur ekki sett upp betalingshættu áður:
 
@@ -82,7 +82,7 @@ Ef þú hefur ekki sett upp betalingshættu áður:
 
 Sjá [Getting Paid](/user-guide/payment-gateways/getting-paid) fyrir upplýsingar um hvernig betalingar flæðar í reikninginn þinn.
 
-## Testun ferlisins (Testing the Flow)
+## Testun ferlisins (Testing the Flow) {#testing-the-flow}
 
 Fyrir að fara yfir, fullfær fulla testskráningu:
 
@@ -116,7 +116,7 @@ FitSite Network
 │   └── Fitness-sérstaklega staðfesting
 └── Bærdur til brandingar (næsta læoni)
 
-## Hva við byggðum í þessu læoni
+## Hva við byggðum í þessu læoni {#the-fitsite-network-so-far}
 
 - **Flóknum reikningurferli** sniðinn fyrir eigendur fitness staðir
 - **Sérhæfð orðalag** í heildar reikningurferlið

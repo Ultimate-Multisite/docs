@@ -3,15 +3,15 @@ title: 'Pelajaran 5: Merancang Pelan Anda'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Pelajaran 5: Mereka Bentuk Pelan Anda
+# Pelajaran 5: Mereka Bentuk Pelan Anda {#lesson-5-designing-your-plans}
 
 Tahap pelan anda bukan sekadar penetapan harga—ia adalah cerminan bagaimana pelanggan khusus anda benar-benar beroperasi. Dalam pelajaran ini, anda akan mereka bentuk tahap produk yang menepati keperluan sebenar perniagaan kecergasan pada peringkat yang berbeza.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah mempunyai tiga templat sedia (Studio Essential, Gym Pro, Fitness Chain). Sekarang kita cipta pelan yang menentukan akses apa yang diterima pelanggan dan apa yang mereka bayar.
 
-## Berfikir Mengikut Segmen Pelanggan
+## Berfikir Mengikut Segmen Pelanggan {#thinking-in-customer-segments}
 
 Kesilapan yang paling kerap dilakukan oleh kebanyakan orang ialah mereka bentuk pelan berdasarkan ciri teknikal (storan, lebar jalur, bilangan halaman). Pelanggan khusus anda tidak berfikir dalam istilah tersebut. Pemilik gim fikirkan apa yang mereka perlukan untuk mengendalikan perniagaan mereka.
 
@@ -25,11 +25,11 @@ Untuk studio kecergasan, tiga segmen semula jadi wujud:
 
 Pelan anda harus dipetakan kepada segmen-segmen ini, bukan kepada pakej ciri yang rawak.
 
-## Mencipta Pelan FitSite
+## Mencipta Pelan FitSite {#creating-the-fitsite-plans}
 
 Navigasi ke **Ultimate Multisite > Products > Add Product** untuk setiap pelan.
 
-### Pelan 1: FitSite Starter -- $49/bulan
+### Pelan 1: FitSite Starter -- $49/bulan {#plan-1-fitsite-starter----49month}
 
 **Sasaran**: Jurulatih solo dan studio kecil
 
@@ -59,7 +59,7 @@ Navigasi ke **Ultimate Multisite > Products > Add Product** untuk setiap pelan.
 - Tema pilihan anda: Force Activate
 - Semua tema lain: Hidden
 
-### Pelan 2: FitSite Growth -- $99/bulan
+### Pelan 2: FitSite Growth -- $99/bulan {#plan-2-fitsite-growth----99month}
 
 **Sasaran**: Gim lokasi tunggal yang sudah mantap
 
@@ -85,7 +85,7 @@ Navigasi ke **Ultimate Multisite > Products > Add Product** untuk setiap pelan.
 - Kumpulan pelan: FitSite Plans
 - Susunan produk: 2
 
-### Pelan 3: FitSite Pro -- $199/bulan
+### Pelan 3: FitSite Pro -- $199/bulan {#plan-3-fitsite-pro----199month}
 
 **Sasaran**: Rantaian kecergasan pelbagai lokasi
 
@@ -109,7 +109,7 @@ Navigasi ke **Ultimate Multisite > Products > Add Product** untuk setiap pelan.
 - Kumpulan pelan: FitSite Plans
 - Susunan produk: 3
 
-## Menetapkan Kumpulan Pelan
+## Menetapkan Kumpulan Pelan {#setting-up-the-plan-group}
 
 Kumpulan pelan memastikan pelanggan hanya boleh menaik taraf atau menurunkan taraf dalam keluarga pelan FitSite. Pada **Tab Up & Downgrades** setiap pelan:
 
@@ -118,7 +118,7 @@ Kumpulan pelan memastikan pelanggan hanya boleh menaik taraf atau menurunkan tar
 
 Ini mewujudkan laluan peningkatan yang jelas: Starter → Growth → Pro.
 
-## Menambah Peningkatan Pesanan (Order Bumps)
+## Menambah Peningkatan Pesanan (Order Bumps) {#adding-order-bumps}
 
 Peningkatan pesanan adalah produk tambahan yang ditawarkan semasa pembayaran. Untuk FitSite, pertimbangkan:
 
@@ -128,7 +128,7 @@ Peningkatan pesanan adalah produk tambahan yang ditawarkan semasa pembayaran. Un
 
 Cipta ini sebagai produk jenis **Package** dalam Ultimate Multisite dan kaitkannya dengan pelan yang berkaitan.
 
-## Mengapa Struktur Ini Berfungsi
+## Mengapa Struktur Ini Berfungsi {#why-this-structure-works}
 
 - **Starter** menghapuskan halangan kemasukan -- harga rendah, tawaran ringkas, membolehkan jurulatih online dengan pantas
 - **Growth** menambah ciri yang sebenarnya diminta oleh gim -- tempahan, galeri, domain tersuai
@@ -136,7 +136,7 @@ Cipta ini sebagai produk jenis **Package** dalam Ultimate Multisite dan kaitkann
 - **Peningkatan pesanan** membolehkan pelanggan menyesuaikan tanpa merumitkan pelan teras
 - **Laluan peningkatan yang jelas** bermakna pelanggan berkembang bersama anda dan bukannya meninggalkan anda
 
-## Rangkaian FitSite Setakat Ini
+## Rangkaian FitSite Setakat Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Apa Yang Kita Bina Dalam Pelajaran Ini
+## Apa Yang Kita Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Tiga tahap pelan** dipetakan kepada segmen perniagaan kecergasan sebenar
 - **Pengawal ciri (Feature gating)** menggunakan kawalan plugin dan templat Ultimate Multisite

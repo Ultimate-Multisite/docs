@@ -3,11 +3,11 @@ title: Jere Imèl Sistèm
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Jere Mantye Email Sistèm yo
+# Jere Mantye Email Sistèm yo {#managing-system-emails}
 
 Ultimate Multisite voye diferan email sistèm pou evènman tankou konfimasyon anrejistrasyon, resept paman, ak chanjman manm. Ou ka personalize sa yo pou matche ak mark ou a.
 
-## Gade Email Sistèm yo
+## Gade Email Sistèm yo {#viewing-system-emails}
 
 Ale nan **Ultimate Multisite → Settings** epi klike sou onglet **Emails** pou w wè tout konfigirasyon ki gen rapò ak email la.
 
@@ -21,7 +21,7 @@ Ou ka edite chak template email anpil tou lè w itilize editè email sistèm sa 
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Enpòte Template Email Nouvo
+## Enpòte Template Email Nouvo {#importing-new-email-templates}
 
 Nouvo vèsyon Ultimate Multisite ak add-ons yo ka ajoute nouvo template email. Pou evite konfli, nou pa ajoute nouvo template otomatikman — ou bezwen enpòte yo menmman.
 
@@ -32,7 +32,7 @@ Pou enpòte nouvo template email:
 3. Mete chanje opisyon **Import Emails** pou w wè tout template ki disponib
 4. Chwazi template ou vle enpòte epi konfime
 
-## Resete Template Email yo
+## Resete Template Email yo {#resetting-email-templates}
 
 Si ou fin personalize yon template email e ou vle retounen nan kontni de fèt, ou gen de opsyon:
 

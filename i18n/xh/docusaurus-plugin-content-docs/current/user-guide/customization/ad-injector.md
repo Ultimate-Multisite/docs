@@ -3,7 +3,7 @@ title: Isifaki seeNtengiso
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ukubeka iintengiso kuthungelwano lwakho nge-Ultimate Multisite: Ad Injector
+# Ukubeka iintengiso kuthungelwano lwakho nge-Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector yi-**add-on yasimahla** ekunika izixhobo zokubeka iintengiso kwiiplani zakho ngqo kwiphepha lazo lokuhlela.
 
@@ -35,7 +35,7 @@ Ungakwazi kananjalo ukubandakanya iintengiso kwi-header yamaPhepha oLawulo kubas
 
 _Yiya kukhetho lwe-Admin Panel Ad Code ukuba ufuna ukubonisa iintengiso kwi-back-end yomsebenzisi wakho_
 
-### Ngaphaya kweNtengiso
+### Ngaphaya kweNtengiso {#beyond-advertising}
 
 Ungasebenzisa kananjalo i-Ultimate Multisite: Ad Injector ukunikezela ngenkxaso kwiiplani ezikumgangatho ophezulu.
 

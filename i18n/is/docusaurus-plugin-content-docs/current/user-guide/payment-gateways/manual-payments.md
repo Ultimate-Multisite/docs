@@ -3,13 +3,13 @@ title: Uppsetning handvirkra greiðslna
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Uppsetning handvirkra greiðslna (v2)
+# Uppsetning handvirkra greiðslna (v2) {#setting-up-manual-payments-v2}
 
 _**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 
 Handvirkar greiðslur eru leið til að bjóða upp á aðrar greiðsluaðferðir ef **Stripe** eða **PayPal** er ekki í boði fyrir notendur þína. Þetta getur verið millifærsla, bankamillifærsla eða önnur greiðsluaðferð sem er í boði fyrir notendur þína á þeirra svæði.
 
-## Hvernig á að virkja handvirkar greiðslur
+## Hvernig á að virkja handvirkar greiðslur {#how-to-enable-manual-payments}
 
 Uppsetning handvirkra greiðslna er mjög auðveld. Þú þarft bara að virkja þær undir greiðslugáttum og setja inn ítarlegar leiðbeiningar um hvernig notandinn á að senda greiðsluna.
 
@@ -31,7 +31,7 @@ Og þeir munu einnig fá skilaboð á **Thank You** síðunni þinni með greið
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Staðfesting handvirkra greiðslna
+## Staðfesting handvirkra greiðslna {#confirming-manual-payments}
 
 Til að staðfesta handvirka greiðslu skaltu fara í **Payments** valmyndina á vinstri stikunni. Þar geturðu séð allar greiðslur á netinu þínu og upplýsingar um þær, þar á meðal **stöðu** þeirra. Handvirk greiðsla mun alltaf hafa stöðuna **Pending** þar til þú breytir henni handvirkt.
 

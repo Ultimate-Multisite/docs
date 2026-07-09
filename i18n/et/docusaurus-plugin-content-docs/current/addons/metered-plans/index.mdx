@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Kasutuspõhised paketid
+# Kasutuspõhised paketid {#metered-plans}
 
 Ultimate Multisite: Metered Plans lisamoodul muudab seda, kuidas klientidele arveid esitate, lisades paindlikud kasutuspõhise arvelduse võimalused. Jäikade rangete limiitide asemel, mis ületamisel kasutajad blokeerivad, saate lubada ülekasutustasusid, mis arveldavad klientidelt lisakasutuse eest automaatselt.
 
-## Põhifunktsioonid
+## Põhifunktsioonid {#key-features}
 
 * **Kasutuspõhine arveldus**: võtke klientidelt tasu tegeliku kasutuse, mitte fikseeritud tasemete alusel
 * **Ülekasutuse haldus**: arveldage automaatselt kasutuse eest, mis ületab paketi limiite
@@ -21,14 +21,14 @@ Ultimate Multisite: Metered Plans lisamoodul muudab seda, kuidas klientidele arv
 * **Automaatne arvete esitamine**: looge arved automaatselt, kui kasutusläved ületatakse
 * **Kasutusaruanded**: üksikasjalik kasutusanalüütika ja aruandlus klientidele ning administraatoritele
 
-## Sobib ideaalselt
+## Sobib ideaalselt {#perfect-for}
 
 * **Majutusteenuse pakkujatele**: pakkuge skaleeruvaid pakette, mis kasvavad koos kliendi vajadustega
 * **SaaS-platvormidele**: arveldage tegeliku ressursitarbimise alusel
 * **Agentuurivõrgustikele**: paindlikud hinnastamismudelid kliendiprojektide jaoks
 * **Edasimüügi-majutusele**: võimaldage partneritel pakkuda kasutuspõhist hinnastamist
 
-## Kuidas see töötab
+## Kuidas see töötab {#how-it-works}
 
 1. Seadistage kasutuspõhised ressursid (kettaruum, ribalaius, saitide arv jne)
 2. Määrake baaspaketi limiidid ja ülekasutuse hinnad
@@ -37,13 +37,13 @@ Ultimate Multisite: Metered Plans lisamoodul muudab seda, kuidas klientidele arv
 5. Arved luuakse arveldustsükli põhjal automaatselt
 6. Kliendid saavad oma kasutust ja tulevasi tasusid reaalajas vaadata
 
-## AI tokenite arveldus
+## AI tokenite arveldus {#ai-token-billing}
 
 Versioon 1.1.0 lisab AI tokenite arvelduse võrgustikele, mis pakuvad AI funktsioone WordPress AI Client SDK kaudu. Metered Plans kuulab lõpetatud AI genereerimispäringuid, salvestab praeguse alamsaidi sisend- ja väljundtokenite arvud ning teisendab need tokenid kliendi praeguse arveldusperioodi arveldatavaks AI kuluks.
 
 Kasutage AI tokenite arveldust, kui soovite pakkuda kliendisaitidel AI tööriistu ilma ettearvamatuid mudelikulusid enda kanda võtmata. Iga päring seostatakse alamsaidi, kliendi, liikmesuse, pakkuja ja mudeliga, et administraatorid saaksid kasutust auditeerida ning kliendid näeksid, kuidas nende AI tarbimine nende kontot mõjutab.
 
-### Seadistage tokenipõhised hinnad
+### Seadistage tokenipõhised hinnad {#configure-per-token-rates}
 
 AI hinnad seadistatakse mudelipõhiselt eraldi sisend- ja väljundhindadena. Hinnad arvutatakse 1 miljoni tokeni kohta, mis vastab levinud AI pakkujate hinnakirjalehtedele.
 
@@ -55,7 +55,7 @@ AI hinnad seadistatakse mudelipõhiselt eraldi sisend- ja väljundhindadena. Hin
 
 Kui täpset mudeli ID-d pole seadistatud, saab Metered Plans sobitada mudeli prefiksi järgi. Näiteks saab `claude-sonnet-4` jaoks seadistatud hind rakenduda ajatempliga mudeli ID-dele, mis algavad selle prefiksiga. Arendajad saavad lõplikku hinnatabelit kohandada ka filtriga [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Toetatud AI ühendajad
+### Toetatud AI ühendajad {#supported-ai-connectors}
 
 AI tokenite arveldus töötab ühendajatega, mis väljastavad WordPress AI Client SDK genereerimissündmusi ja sisaldavad vastuse metaandmetes tokenite kasutust. See hõlmab siin dokumenteeritud Ultimate Multisite AI ühendajate perekonda:
 
@@ -65,13 +65,13 @@ AI tokenite arveldus töötab ühendajatega, mis väljastavad WordPress AI Clien
 
 Kohandatud ühendajad saavad osaleda, käivitades standardsed `wp_ai_client_before_generate_result` ja `wp_ai_client_after_generate_result` sündmused koos mudeli, pakkuja ja tokenikasutuse metaandmetega. Ühendaja seaded jõustatakse peasaidilt alamsaitidele, et kliendisaidid kasutaksid võrgustiku heakskiidetud pakkujaid ja limiite.
 
-### Kliendi Accounti kasutus
+### Kliendi Accounti kasutus {#customer-account-usage}
 
 Kliendid näevad AI kasutust koos oma teiste kasutuspõhiste ressurssidega oma kontoalas. AI kulu rida näitab praeguse arveldusperioodi kogusummat, mis tuletatakse salvestatud prompti ja lõpetuse tokenitest, seadistatud mudelihindadest ning paketis sisalduvast limiidist.
 
 Kui kliendil on makseviis failis olemas, käsitletakse paketis sisalduvat limiiti ületavat kasutust arveldatava ülekasutusena. Kui pakett on seadistatud range katkestusega ja kliendil pole makseviisi saadaval, saab AI päringud blokeerida, kui limiit on saavutatud, ning kliendil palutakse enne jätkamist makseandmed lisada.
 
-## Toetatud ressursid
+## Toetatud ressursid {#supported-resources}
 
 * Kettasalvestusruum
 * Ribalaius / andmeedastus
@@ -80,13 +80,13 @@ Kui kliendil on makseviis failis olemas, käsitletakse paketis sisalduvat limiit
 * AI tokenite kasutus ja AI kulu
 * Kohandatud ressursitüübid
 
-## Nõuded
+## Nõuded {#requirements}
 
 * Multisite Ultimate 2.0.0 või uuem
 * WordPress Multisite paigaldus
 * PHP 7.4 või uuem
 
-## Paigaldamine
+## Paigaldamine {#installation}
 
 1. Laadige plugina failid üles asukohta `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Aktiveerige plugin WordPressi kuval 'Plugins'
@@ -94,24 +94,24 @@ Kui kliendil on makseviis failis olemas, käsitletakse paketis sisalduvat limiit
 4. Seadistage oma kasutuspõhised ressursid ja hinnastamine
 5. Lubage toodetele kasutuspõhine arveldus tooteredaktoris
 
-## Korduma kippuvad küsimused
+## Korduma kippuvad küsimused {#frequently-asked-questions}
 
-## Mis juhtub, kui klient ületab oma limiidi?
+## Mis juhtub, kui klient ületab oma limiidi? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Selle asemel et ligipääs blokeerida, jälgib süsteem ülekasutust ja lisab selle teie seadistatud määrade alusel nende järgmisele arvele.
 
-## Kas saan määrata eri toodetele erinevad ülekasutuse määrad?
+## Kas saan määrata eri toodetele erinevad ülekasutuse määrad? {#can-i-set-different-overage-rates-for-different-products}
 
 Jah, igal tootel võivad olla unikaalsed mõõdetavad ressursid ja ülekasutuse hinnastus.
 
-## Kuidas kliente kasutusest teavitatakse?
+## Kuidas kliente kasutusest teavitatakse? {#how-are-customers-notified-about-usage}
 
 Kliendid saavad vaadata oma praegust kasutust oma Dashboardis ja saada valikulisi teavitusi, kui nad lähenevad limiitidele või ületavad neid.
 
-## Kuidas hinnastatakse AI tokenite kasutust?
+## Kuidas hinnastatakse AI tokenite kasutust? {#how-is-ai-token-usage-priced}
 
 AI tokenite kasutust hinnastatakse mudeli seadistatud sisend- ja väljundmäärade alusel 1 miljoni tokeni kohta. Mõõdetud paketid korrutavad iga päringu prompti ja completioni tokenite arvud nende määradega, lisavad tulemuse kliendi praeguse arveldusperioodi AI-kulule ning rakendavad paketi lubatud mahu või ülekasutuse reegleid.
 
-## Kas saan endiselt kasutada rangeid limiite?
+## Kas saan endiselt kasutada rangeid limiite? {#can-i-still-use-hard-limits}
 
 Jah, mõõdetud arveldus on iga toote puhul valikuline. Saate kombineerida traditsioonilisi rangete limiitidega tooteid mõõdetud toodetega.

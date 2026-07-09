@@ -3,13 +3,13 @@ title: Opprette ditt første abonnementsprodukt
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Opprette ditt første abonnementsprodukt (v2)
+# Opprette ditt første abonnementsprodukt (v2) {#creating-your-first-subscription-product-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen er kun for brukere av Ultimate Multisite versjon 2.x. Hvis du bruker versjon 1.x,**_ **_**se denne artikkelen**_**.
 
 For å begynne å drive nettverket ditt og selge tjenestene dine til potensielle brukere, må du ha ulike abonnementsalternativer. Hvordan oppretter du disse produktene? Hvilke typer produkter kan du tilby? I denne artikkelen dekker vi alt du trenger å vite om produkter.
 
-## Produkttype
+## Produkttype {#product-type}
 
 Med Ultimate Multisite kan du tilby to kategorier produkter til kundene dine: **planer** og **tillegg** **(Order Bump)**. Tillegg kan deles inn i to typer:**pakker** og **tjenester**. Vi ser på forskjellene og særtrekkene deres videre.
 
@@ -19,7 +19,7 @@ Med Ultimate Multisite kan du tilby to kategorier produkter til kundene dine: **
 
   * **Tjenester:** tillegg som ikke endrer funksjonaliteten i Ultimate Multisite. De er oppgaver du vil utføre for kunden din i tillegg til planen de kjøpte. For eksempel kan kunden din kjøpe en plan som tillater ett enkelt nettsted, og også betale for en ekstra tjeneste som lager designet for dette nettstedet.
 
-## Administrere produkter
+## Administrere produkter {#managing-products}
 
 For mange kan fanen **Produkter** i Ultimate Multisite **(Ultimate Multisite > Produkter)** likestilles med planer i et tradisjonelt hostingmiljø.
 
@@ -29,7 +29,7 @@ Denne delen vil hjelpe deg med å forstå denne viktige hjørnesteinen i Ultimat
 
 ![Siden med produktliste](/img/config/products-list.png)
 
-## Legge til produkter
+## Legge til produkter {#adding-products}
 
 Enten det er en plan, pakke eller tjeneste, er inngangspunktet for å definere et nytt element via **Ultimate Multisite > Produkter > Legg til produkt**.
 
@@ -39,13 +39,13 @@ Grensesnittet inneholder to dominerende seksjoner. Til venstre er det flere fane
 
 ![Oversikt over redigeringssiden for produkt](/img/config/product-edit-full.png)
 
-### Beskrivelse
+### Beskrivelse {#description}
 
 Den grunnleggende produktinformasjonen kan defineres ved å oppgi et produktnavn og en beskrivelse. Disse identifikatorene vises overalt der produktinformasjonen kreves, som ved valg av plan og priser, fakturaer, oppgraderinger og lignende.
 
 ![Seksjon for produktbeskrivelse](/img/config/product-description.png)
 
-### Pristype
+### Pristype {#pricing-type}
 
 På høyre side av grensesnittet kan grunnprisen defineres.
 
@@ -53,7 +53,7 @@ På høyre side av grensesnittet kan grunnprisen defineres.
 
 Ultimate Multisite støtter tre ulike pristyper. Alternativet **betalt** ber nettverksadministratoren om informasjon om produktets pris og faktureringsfrekvens.
 
-### Prising
+### Prising {#pricing}
 
 Priskomponenten definerer produktets grunnpris og faktureringsintervall.
 
@@ -61,7 +61,7 @@ Priskomponenten definerer produktets grunnpris og faktureringsintervall.
 
 dermed vil en eksempelpris på $29.99 med en innstilling på 1 måned fakturere $29.99 hver måned. Tilsvarende vil en pris på $89.97 med en innstilling på 3 måneder fakturere dette beløpet hvert kvartal.
 
-### Faktureringssykluser
+### Faktureringssykluser {#billing-cycles}
 
 Seksjonen for faktureringssykluser angir frekvensen for det nevnte faktureringsintervallet og forstås vanligvis i lys av kontrakter eller faste perioder.
 
@@ -69,7 +69,7 @@ Seksjonen for faktureringssykluser angir frekvensen for det nevnte faktureringsi
 
 For eksempel vil en produktpris på $29.99 med et intervall på 1 måned og 12 faktureringssykluser fakturere $29.99 per måned for produktet over de påfølgende 12 månedene. Med andre ord vil en slik innstilling etablere en fastprisperiode på $29.99 per måned i 12 måneder og deretter stoppe faktureringen.
 
-### Prøveperiode
+### Prøveperiode {#trial-period}
 
 Ved å aktivere bryteren for tilbud om prøveperiode kan nettverksadministratoren definere en prøveperiode for produktet.
 
@@ -77,7 +77,7 @@ Ved å aktivere bryteren for tilbud om prøveperiode kan nettverksadministratore
 
 I prøveperioden kan kunder bruke produktet gratis og vil ikke bli fakturert før prøveperioden er utløpt.
 
-### Oppstartsgebyr
+### Oppstartsgebyr {#setup-fee}
 
 Du kan også legge til et oppstartsgebyr på planen din.
 
@@ -85,7 +85,7 @@ Du kan også legge til et oppstartsgebyr på planen din.
 
 Dette betyr at kunden din betaler et ekstra beløp ved første belastning (i tillegg til planprisen) som tilsvarer gebyret du definerte i denne seksjonen.
 
-### Aktiv
+### Aktiv {#active}
 
 Aktiv-bryteren definerer i praksis om produktet er tilgjengelig for kunder ved nye registreringer.
 
@@ -93,13 +93,13 @@ Aktiv-bryteren definerer i praksis om produktet er tilgjengelig for kunder ved n
 
 Hvis det finnes eksisterende kunder på denne planen, vil det å sette bryteren til deaktivert tilstand i praksis videreføre planen for eksisterende kunder og fjerne den fra fremtidige registreringer. **Eksisterende kunder på planen vil fortsette å bli fakturert** til de flyttes til en ny plan eller fjernes fra planen.
 
-### Produktbilde
+### Produktbilde {#product-image}
 
 Knappen **Last opp bilde** lar nettverksadministratoren bruke mediebiblioteket til å velge eller laste opp et produktbilde.
 
 ![Seksjon for produktbilde](/img/config/product-image.png)
 
-### Slett
+### Slett {#delete}
 
 Knappen **Slett produkt** sletter produktet fra systemet. Den vises når produktet er publisert.
 
@@ -107,11 +107,11 @@ Knappen **Slett produkt** sletter produktet fra systemet. Den vises når produkt
 
 I motsetning til andre slettinger blir produktet ikke lagt i noen papirkurvtilstand. Når det først er slettet, er handlingen derfor irreversibel.
 
-### Produktalternativer
+### Produktalternativer {#product-options}
 
 Når produktinformasjonen på grunnnivå er definert, hjelper produktalternativene nettverksadministratoren med å definere produktets spesifikke attributter ytterligere.
 
-#### Generelt
+#### Generelt {#general}
 
 Fanen **Generelt** definerer de generelle attributtene for produktet som ikke gjelder for noen av de andre produktspesifikke fanene.
 
@@ -125,7 +125,7 @@ Ultimate Multisite støtter flere produkttyper, nemlig abonnement, pakke og tjen
 
 ![Innstillinger for kunderolle](/img/config/product-customer-role-settings.png)
 
-#### Opp- og nedgraderinger
+#### Opp- og nedgraderinger {#up--downgrades}
 
 Denne fanen angir oppgraderings- og nedgraderingsstiene som er tilgjengelige for en kunde innenfor deres spesifikke nivå.
 
@@ -143,7 +143,7 @@ For å definere en abonnementsgruppe angir du de kompatible abonnementene i list
 
 Ultimate Multisite inkluderer også en **order bump**-funksjon der relevante tilleggsprodukter og tjenester kan legges til abonnementer. Disse tilbys kunden som tilleggselementer som kan legges til abonnementer ved checkout eller under en oppgradering.
 
-#### Prisvariasjoner
+#### Prisvariasjoner {#price-variations}
 
 Prisvariasjoner lar nettverksadministratoren angi alternative prisnivåer avhengig av varighet. Denne innstillingen gjør det mulig å tilby månedlig, kvartalsvis, årlig eller en hvilken som helst annen faktureringsperiode for samme produkt. Du kan for eksempel sette opp et produkt til $29.99/måned med et rabattert årlig alternativ til $249.99/år.
 
@@ -165,7 +165,7 @@ Hvis for eksempel grunnprisen for produktet ditt er $29.99 per måned, kan du le
 Prisvariasjoner alene legger ikke til en bryter eller veksler i frontend checkout. For å la kunder bytte mellom faktureringsperioder (f.eks. månedlig / årlig), må du legge til et **Periodevalg**-felt i checkout-skjemaet ditt. Se [Checkout-skjemaer: Legge til en bryter for periodevalg](checkout-forms#adding-a-period-selection-toggle) for trinnvise instruksjoner.
 :::
 
-#### Avgifter
+#### Avgifter {#taxes}
 
 Fanen **Avgifter** samsvarer med avgiftsinnstillingene som er angitt i **Ultimate Multisite > Settings > Taxes**, og mer spesifikt de definerte avgiftssatsene. For å aktivere avgifter og definere gjeldende avgiftssatser, se dokumentasjonen på **Ultimate Multisite: Settings**
 
@@ -179,7 +179,7 @@ Når avgiftssatsen er definert i **Ultimate Multisite > Settings > Manage Tax Ra
 
 For å angi at et produkt er en avgiftspliktig vare, setter du bryteren **Er avgiftspliktig** til aktiv og velger gjeldende avgiftssats fra nedtrekksmenyen Avgiftskategori.
 
-#### Nettstedmaler
+#### Nettstedmaler {#site-templates}
 
 I hovedsak er nettstedmaler komplette WordPress-nettsteder som klones til en kundes nettsted ved starten av abonnementet deres.
 
@@ -201,7 +201,7 @@ Til slutt overstyrer **V** **elg tilgjengelige nettstedsmaler** malene som er an
 
 Til syvende og sist, hvis nettverksadministratoren ønsker at valg av mal skal skje i utsjekkingstrinnene, vil innstillingen ' _standard_ ' være tilstrekkelig. Alternativt, for å fjerne og låse valg av mal og delegere valget til abonnementsinnstillingene, kan alternativene ' _tilordne ny mal_ ' eller ' _velg tilgjengelige nettstedsmaler_ ' være ønskelige.
 
-#### Nettsteder
+#### Nettsteder {#sites}
 
 Fanen **Nettsteder** er en del av Ultimate Multisite sin begrensningsfunksjonalitet.
 
@@ -211,7 +211,7 @@ Denne innstillingen angir det maksimale antallet nettsteder en kunde kan opprett
 
 For å aktivere begrensningen setter du bryteren **begrens nettsteder** til aktiv tilstand og angir maksimalt antall nettsteder i feltet **nettstedskvote**.
 
-#### Besøk
+#### Besøk {#visits}
 
 Fanen **Besøk** er en ytterligere del av Ultimate Multisite sitt begrensningssystem. Denne innstillingen gjør det mulig å telle og deretter strupe unike besøkende til en kundes nettsted.
 
@@ -223,7 +223,7 @@ For å bruke denne funksjonen setter du bryteren **begrens unike besøk** til ak
 
 Når denne grensen er nådd, vil Ultimate Multisite slutte å vise kundens nettsted i stedet for å vise en melding som angir at grensene er overskredet.
 
-#### Brukere
+#### Brukere {#users}
 
 Ultimate Multisite sine begrensninger for 'Brukere' lar nettverksadministratoren pålegge grenser for antallet brukere som kan opprettes og tilordnes roller.
 
@@ -233,7 +233,7 @@ For å aktivere begrensningsfunksjonen setter du bryteren **begrens bruker** til
 
 Deretter, for hver rolle som skal begrenses, setter du bryteren ved siden av den til aktiv tilstand og definerer den maksimale øvre grensen i det aktuelle feltet.
 
-#### Innleggstyper
+#### Innleggstyper {#post-types}
 
 Fanen **Innleggstyper** lar nettverksadministratoren pålegge detaljerte grenser for det omfattende utvalget av innleggstyper i WordPress.
 
@@ -245,7 +245,7 @@ For å aktivere dette delsystemet for grenser setter du bryteren **begrens innle
 
 Deretter, for hver innleggstype som skal begrenses, slår du den på ved å skyve den til høyre og angi den maksimale øvre grensen i det aktuelle feltet.
 
-#### Diskplass
+#### Diskplass {#disk-space}
 
 Fanen **Diskplass** lar nettverksadministratorer begrense plassen som forbrukes av kunder.
 
@@ -257,13 +257,13 @@ For å aktivere begrensningen for diskbruk setter du bryteren **begrens diskstø
 
 Deretter angir du den maksimale øvre grensen i megabyte i feltet **diskplasskvot** e.
 
-#### Egendefinert domene
+#### Egendefinert domene {#custom-domain}
 
 Ved å slå på dette alternativet kan du tillate egendefinerte domener spesifikt på dette abonnementet.
 
 ![Egendefinerte domener-fane](/img/config/product-custom-domains.png)
 
-#### Temaer
+#### Temaer {#themes}
 
 Fanen **Temaer** i produktalternativene lar nettverksadministratoren gjøre temaer tilgjengelige for kunder for valg og eventuelt tvinge temaets tilstand.
 
@@ -281,7 +281,7 @@ Valget **oppførsel** lar nettverksadministratoren definere temaets tilstand nå
 
 I tilstanden **T** **ilgjengelig** gjøres temaet tilgjengelig for kunden for egenaktivering. Omvendt fjerner tilstanden **Ikke tilgjengelig** kundens mulighet til å aktivere temaet. Til slutt tvinger alternativet **Tving aktivering** valg og aktivering av temaet, og setter det dermed som standard ved opprettelse av nettstedet.
 
-#### Plugins
+#### Plugins {#plugins}
 
 I likhet med Temaer-fanen lar Ultimate Multisite nettverksadministratoren definere synligheten til plugins for kunder, samt tilstanden deres når et nytt nettsted opprettes.
 
@@ -301,7 +301,7 @@ Innstillingen **Force Activate & Lock** fungerer på lignende måte, men hindrer
 
 Nettverksadministratoren bør vurdere innstillingene Force Activate & Lock og Force Inactivate & Lock sammen med nettstedsmaler, siden pluginer og plugin-tilstander i malene kan påvirkes av disse innstillingene hvis de velges.
 
-#### Tilbakestill begrensninger
+#### Tilbakestill begrensninger {#reset-limitations}
 
 Fanen **Reset Limitations** tilbakestiller alle egendefinerte grenser definert på produktet. For å tilbakestille begrensninger klikker du på knappen **reset limitations**.
 
@@ -311,7 +311,7 @@ For å bekrefte handlingen skyver du **confirm reset**-bryteren til aktiv tilsta
 
 ![Fanen Tilbakestill begrensninger](/img/config/product-reset-limitations.png)
 
-## Rediger, dupliser eller slett produkt
+## Rediger, dupliser eller slett produkt {#edit-duplicate-or-delete-product}
 
 Eksisterende produkter kan redigeres, dupliseres eller slettes ved å gå til **Ultimate Multisite > Products** og holde pekeren over det eksisterende produktnavnet.
 

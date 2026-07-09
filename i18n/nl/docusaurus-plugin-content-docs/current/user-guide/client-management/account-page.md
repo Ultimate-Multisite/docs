@@ -3,7 +3,7 @@ title: Klant Account-pagina
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# De Account-pagina van je klant (v2)
+# De Account-pagina van je klant (v2) {#your-clients-account-page-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
@@ -11,7 +11,7 @@ Wanneer klanten zich abonneren op een abonnement op je netwerk, krijgen ze toega
 
 In deze tutorial leiden we je door de accountpagina van de klant en zie je wat je klanten daarin kunnen zien en doen.
 
-## De Account-pagina
+## De Account-pagina {#the-account-page}
 
 De accountpagina is toegankelijk door in het Dashboard van je klant op **Account** te klikken.
 
@@ -27,7 +27,7 @@ Nadat een klant erop klikt, zien ze een overzicht van hun lidmaatschap, factuura
 
 Ze kunnen ook het lidmaatschap wijzigen naar een ander abonnement, of een ander pakket of een andere dienst kopen die je aanbiedt. Laten we elke sectie afzonderlijk bekijken.
 
-### Overzicht van je lidmaatschap:
+### Overzicht van je lidmaatschap: {#your-membership-overview}
 
 Het eerste blok direct onder de naam van de website van je klanten toont een overzicht van hun huidige abonnement en diensten/pakketten die erbij zijn gekocht. Het blok toont ook het lidmaatschapsnummer, het aanvankelijke bedrag dat ervoor is betaald, hoeveel het abonnement en eventuele diensten/pakketten kosten en hoe vaak ze voor dit lidmaatschap zijn gefactureerd. Ze kunnen ook zien of het lidmaatschap **Actief** , **Verlopen** of **Geannuleerd** is.
 
@@ -43,7 +43,7 @@ Als je klanten nu kiezen om pakketten of diensten voor dit huidige lidmaatschap 
 
 Let op dat kortingscodes niet kunnen worden toegevoegd op deze pagina voor het wijzigen van het lidmaatschap. Als de klant een kortingscode heeft gebruikt bij de eerste aankoop van het lidmaatschap, wordt de code ook toegepast op dit nieuwe lidmaatschap.
 
-### Het factuuradres bijwerken:
+### Het factuuradres bijwerken: {#updating-the-billing-address}
 
 Op de accountpagina kunnen je klanten ook hun factuuradres bijwerken. Ze hoeven alleen op **Bijwerken** te klikken naast _Factuuradres_.
 
@@ -53,7 +53,7 @@ Er verschijnt een nieuw venster voor je klant. Het enige wat hij hoeft te doen i
 
 ![Formulier voor het bijwerken van het factuuradres](/img/account-page/billing-address-form.png)
 
-### Het sitesjabloon wijzigen:
+### Het sitesjabloon wijzigen: {#changing-the-site-template}
 
 Om je klanten toe te staan hun sitesjablonen te wijzigen, moet je naar **Ultimate Multisite > Instellingen > Sites** gaan en de optie **Sjabloonwisseling toestaan** inschakelen.
 
@@ -81,7 +81,7 @@ Nadat ze de bevestiging hebben ingeschakeld en op **Wissel verwerken** hebben ge
 
 Klanten kunnen ook **Reset current template** gebruiken vanuit dit paneel wanneer ze de site moeten terugzetten naar de momenteel toegewezen template. Net als bij het overschakelen naar een andere template kan het resetten van een template site-inhoud overschrijven, dus klanten moeten dit alleen bevestigen wanneer ze de resetactie begrijpen.
 
-### Aangepaste domeinen toevoegen:
+### Aangepaste domeinen toevoegen: {#adding-custom-domains}
 
 Je klanten hebben ook de optie om een aangepast domein voor dit abonnement toe te voegen op hun Account-pagina. Om je klanten aangepaste domeinen te laten gebruiken, ga je naar **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Na het klikken op **Next Step** kunnen je klanten hun aangepaste domeinnaam toev
 
 Na het klikken op **Add Domain** wordt het domein toegevoegd aan het account van je klant. Het enige wat ze nu nog hoeven te doen, is de DNS-records van dit aangepaste domein wijzigen bij hun domeinregistrar.
 
-### Wachtwoord wijzigen:
+### Wachtwoord wijzigen: {#changing-password}
 
 Binnen het Account-dashboard kunnen je klanten ook hun wachtwoord wijzigen door op **Change Password** te klikken.
 
@@ -125,7 +125,7 @@ Dit toont een nieuw venster waarin je klanten hun huidige wachtwoord moeten invu
 
 ![Formulier voor wachtwoord wijzigen met velden voor huidig en nieuw wachtwoord](/img/account-page/change-password-form.png)
 
-### Gevarenzone:
+### Gevarenzone: {#danger-zone}
 
 We hebben ook twee opties die worden getoond in het gedeelte **Danger Zone**: **Delete Site** en **Delete Account**. Ze staan beide in het gedeelte Danger Zone omdat deze twee acties onomkeerbaar zijn. Als je klanten hun website of hun account verwijderen, kunnen ze deze niet herstellen.
 

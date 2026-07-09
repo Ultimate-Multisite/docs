@@ -3,21 +3,21 @@ title: Opsætning og udbyderkonfiguration
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domæne sælger: Opsætning og udbyderkonfiguration
+# Domæne sælger: Opsætning og udbyderkonfiguration {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller addon leveres med en vejledende opsætningsassistent, der guider dig gennem hvert nødvendigt trin. Denne side dækker flowet i assistenten samt hvordan du konfigurerer eller genkonfigurerer udbydere derefter.
 
-## Krav
+## Krav {#requirements}
 
 - **Multisite Ultimate** v2.4.12 eller højere, netværksaktiveret
 - **PHP** 7.4+
 - API-nøgler for mindst én understøttet registreringsudbyder
 
-## Første opsætningsassistent
+## Første opsætningsassistent {#first-run-setup-wizard}
 
 Opsætningsassistenten starter automatisk første gang du aktiverer plugin'et på dit netværk. Den er også tilgængelig når som helst via **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Trin 1 — Vælg en udbyder
+### Trin 1 — Vælg en udbyder {#step-1--choose-a-provider}
 
 Vælg den registreringsudbyder, du vil forbinde dig med. Understøttede muligheder:
 
@@ -33,7 +33,7 @@ Vælg den registreringsudbyder, du vil forbinde dig med. Understøttede mulighed
 | NameSilo | Nej | Nej |
 | Enom | Ja | Nej |
 
-### Trin 2 — Indtast legitimationsoplysninger
+### Trin 2 — Indtast legitimationsoplysninger {#step-2--enter-credentials}
 
 Hver udbyder har forskellige felter til legitimation:
 
@@ -57,17 +57,17 @@ Hver udbyder har forskellige felter til legitimation:
 
 Tjek **Sandbox mode**, hvor det er tilgængeligt, for at teste mod leverandørens testmiljø, før du går i produktion.
 
-### Trin 3 — Test forbindelsen
+### Trin 3 — Test forbindelsen {#step-3--test-the-connection}
 
 Klik på **Test Connection**. Wizardet sender en letvægts API-opkald for at verificere legitimationsoplysninger og forbindelse. Ret eventuelle problemer med legitimation, før du fortsætter.
 
-### Trin 4 — Importer TLD'er
+### Trin 4 — Importer TLD'er {#step-4--import-tlds}
 
 Klik på **Import TLDs** for at trække alle tilgængelige TLD'er (Top-Level Domains) og wholesale priser fra den forbundne leverandør. Dette udfylder listen over TLD'er, der bruges af domæneprodukter. Importen kan tage 30–60 sekunder for leverandører med store TLD-kataloger.
 
 TLD'erne synkroniseres også automatisk én gang om dagen via en planlagt cron job.
 
-### Trin 5 — Opret et domæneprodukt
+### Trin 5 — Opret et domæneprodukt {#step-5--create-a-domain-product}
 
 Wizardet opretter et standard "catch-all" domæneprodukt med en 10% markup (påslag). Du kan redigere dette produkt med det samme eller spring over og oprette produkter manuelt under **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Se [Domain Products and Pricing](./domain-products) for den fulde guide til prod
 
 ---
 
-## Konfigurering af en leverandør igen
+## Konfigurering af en leverandør igen {#reconfiguring-a-provider}
 
 Gå til **Network Admin › Ultimate Multisite › Settings › Domain Seller** (eller klik på **Settings** i plugin-listen).
 
@@ -88,17 +88,17 @@ Indstillingssiden indeholder:
 - **Administrer domæneprodukter** — hurtig genvej til Produktlisten
 - **Konfigurer udbydere** — åbner Integration Wizard for at tilføje eller omkonfigurere udbydere
 
-### Tilføjelse af en anden udbyder
+### Tilføjelse af en anden udbyder {#adding-a-second-provider}
 
 Klik på **Konfigurer udbydere** og kør wizarden igen for den nye registreringsudbyder. Du kan have flere udbydere konfigureret samtidigt. Tildel hvert domæneprodukt til en specifik udbyder, eller lad det stå som standard.
 
-### Manuel synkronisering af TLD'er
+### Manuel synkronisering af TLD'er {#syncing-tlds-manually}
 
 På indstillingssiden klikker du på **Synkroniser TLD'er** ved siden af enhver konfigureret udbyder for at hente de seneste priser. Dette er nyttigt efter, at en udbyder opdaterer engrospriser eller tilføjer nye TLD'er.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Hver udbyder skriver til sin egen logkanal. Logs kan se ses under **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Hver udbyder skriver til sin egen logkanal. Logs kan se ses under **Network Admi
 
 ---
 
-## Noter om udbyderkapaciteter
+## Noter om udbyderkapaciteter {#provider-capability-notes}
 
 Ikke alle registrørers API'er eksponerer de samme funktioner. Addon'et viser understøttede, men ikke-understøttede operationer med klare fejl til administratorne i stedet for at fejle lydløst.
 

@@ -4,13 +4,13 @@ title: Aksyon - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Action: wu_activation
+# Action: wu_activation {#action-wuactivation}
 
 Hahayaan nito ang ibang bahagi ng plugin na magdagdag ng sarili nilang mga routine para sa pag-activate.
 
-### Mula sa
+### Mula sa {#since}
 
 - 1.9.6
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L91) sa linya 91

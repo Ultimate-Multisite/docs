@@ -4,11 +4,11 @@ title: Gnìomh - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Gnìomh: set_logged_in_cookie
+# Gnìomh: set_logged_in_cookie {#action-setloggedincookie}
 
 Thèid a chur gu dol sa bhad mus tèid a’ bhriosgaid dearbhaidh airson cleachdaiche logaichte a-steach a shuidheachadh.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Thèid a chur gu dol sa bhad mus tèid a’ bhriosgaid dearbhaidh airson cleachd
 | $scheme | `string` | Sgeama dearbhaidh. Bun-roghainn 'logged_in'. |
 | $token | `string` | Token seisein a’ chleachdaiche ri chleachdadh airson na briosgaid seo. |
 
-### Bho
+### Bho {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) aig loidhne 141

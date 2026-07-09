@@ -3,15 +3,15 @@ title: Òkestrasyon Konstriksyon Sit v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Òkestrasyon Site Builder v2
+# Òkestrasyon Site Builder v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (ki te prezante nan Gratis AI Agent v1.4.0) se motè ki alimante kreyasyon sit entènèt an plizyè etap. Lè ou mande agent la pou "bati yon sit entènèt restoran" oswa "kreye yon pòtfolyo ak yon blog", orchestrator la divize objektif wo nivo sa a an yon **plan** estriktire, li dekouvri plugins ki nesesè pou reyalize li, li egzekite chak etap youn apre lòt, li swiv pwogrè, epi li rekipere apre erè poukont li.
 
 ---
 
-## Kijan Li Fonksyone
+## Kijan Li Fonksyone {#how-it-works}
 
-### 1. Jenerasyon Plan
+### 1. Jenerasyon Plan {#1-plan-generation}
 
 Lè agent la resevwa yon enstriksyon pou bati yon sit, li rele kapasite `create_site_plan` pou pwodui yon **plan sit** JSON. Plan an dekri:
 
@@ -61,7 +61,7 @@ Lè agent la resevwa yon enstriksyon pou bati yon sit, li rele kapasite `create_
 }
 ```
 
-### 2. Dekouvèt Plugin
+### 2. Dekouvèt Plugin {#2-plugin-discovery}
 
 Anvan egzekisyon kòmanse, orchestrator la analize `plugin_requirements` plan an epi li tcheke ki plugins ki deja aktif. Pou plugins ki manke, li:
 
@@ -71,7 +71,7 @@ Anvan egzekisyon kòmanse, orchestrator la analize `plugin_requirements` plan an
 
 Echèk dekouvèt plugin yo pa fatal — orchestrator la make etap ki afekte yo kòm `skipped` epi li kontinye ak rès plan an.
 
-### 3. Egzekisyon Plan
+### 3. Egzekisyon Plan {#3-plan-execution}
 
 Orchestrator la rele `execute_site_plan` ak ID plan an. Egzekisyon an kontinye faz pa faz, etap pa etap:
 
@@ -79,7 +79,7 @@ Orchestrator la rele `execute_site_plan` ak ID plan an. Egzekisyon an kontinye f
 - **Etap paralèl** — etap ki nan menm faz la ki pa gen entèdepandans yo lanse an menm tan lè drapo `parallel` la fikse.
 - **Delè etap** — chak etap gen yon delè endividyèl (default: paramèt `Ability Timeout` la). Yon etap ki depase delè li make kòm `failed` epi plan an kontinye.
 
-### 4. Swivi Pwogrè
+### 4. Swivi Pwogrè {#4-progress-tracking}
 
 Rele `get_plan_progress` nenpòt ki lè pou tcheke estati egzekisyon an:
 
@@ -104,7 +104,7 @@ Itilizatè WP-CLI yo ka siveye pwogrè ak:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Rekiperasyon Erè
+### 5. Rekiperasyon Erè {#5-error-recovery}
 
 Lè yon etap echwe, orchestrator la tcheke si gen yon etap **fallback** ki defini nan plan an:
 
@@ -115,9 +115,9 @@ Agent la rapòte tout echèk nan rezime final plan an epi li ka sijere etap repa
 
 ---
 
-## Kapasite Plan Sit
+## Kapasite Plan Sit {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Jenere yon plan sit estriktire apati yon deskripsyon objektif an lang natirèl.
 
@@ -134,7 +134,7 @@ Jenere yon plan sit estriktire apati yon deskripsyon objektif an lang natirèl.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Kòmanse egzekite yon plan sit ki te jenere deja.
 
@@ -150,7 +150,7 @@ Kòmanse egzekite yon plan sit ki te jenere deja.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Retounen estati egzekisyon aktyèl yon plan sit.
 
@@ -164,7 +164,7 @@ Retounen estati egzekisyon aktyèl yon plan sit.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Rezoud yon etap ki echwe manyèlman epi rekòmanse egzekisyon plan an apati pwochen etap la. Sèvi ak sa lè rekiperasyon otomatik pa t posib epi ou vle entèvni.
 
@@ -180,7 +180,7 @@ Rezoud yon etap ki echwe manyèlman epi rekòmanse egzekisyon plan an apati pwoc
 
 ---
 
-## Konparezon v1 ak v2
+## Konparezon v1 ak v2 {#comparing-v1-and-v2}
 
 | Fonksyonalite | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Rezoud yon etap ki echwe manyèlman epi rekòmanse egzekisyon plan an apati pwoc
 
 ---
 
-## Kòmand Plan WP-CLI
+## Kòmand Plan WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Jenere yon plan sit apati yon deskripsyon objektif.
 
@@ -205,7 +205,7 @@ Jenere yon plan sit apati yon deskripsyon objektif.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Egzekite yon plan ki te deja jenere.
 
@@ -213,7 +213,7 @@ Egzekite yon plan ki te deja jenere.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Montre pwogrè aktyèl pou yon plan k ap egzekite oswa ki fini.
 
@@ -221,7 +221,7 @@ Montre pwogrè aktyèl pou yon plan k ap egzekite oswa ki fini.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Lis tout plan sit yo (annatant, ankou, ak fini).
 
@@ -229,7 +229,7 @@ Lis tout plan sit yo (annatant, ankou, ak fini).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Reyajiste yon plan ki echwe pou li tounen `pending` pou li ka re-egzekite depi nan kòmansman.
 

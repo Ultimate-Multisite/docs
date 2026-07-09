@@ -3,7 +3,7 @@ title: Imposta traktado
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Imposta Traktado
+# Imposta Traktado {#tax-handling}
 
 Ultimate Multisite havas impostkolektan modulon enkonstruitan en nia kerna plugin, do se vi bezonas kolekti vendimpostojn por viaj planoj, pakaĵoj kaj servoj, vi povas facile fari tion sen devi instali iujn ajn aldonaĵojn.
 
@@ -11,7 +11,7 @@ Por kompanioj situantaj en Eŭropo, ni ofertas **aldonaĵon** kiu aldonas ilojn 
 
 Ultimate Multisite ne deklaras aŭ transdonas impostojn nome de vi al la registaro; ni simple helpas vin kolekti la taŭgajn impostojn je la tempo de la transakcio. **Vi ankoraŭ devos transdoni impostojn memstare.**
 
-## Ebligi Impostkolektadon
+## Ebligi Impostkolektadon {#enabling-tax-collection}
 
 Impostkolektado ne estas ebligita defaŭlte. Por ebligi ĝin, vi devas iri al **Ultimate Multisite > Agordoj > Impostoj** kaj ŝalti por ebligi la agordon Ebligi Impostojn.
 
@@ -25,7 +25,7 @@ Vi ankaŭ povas vidi la impostajn agordojn por individuaj produktoj:
 
 ![Impostaj agordoj por produktoj](/img/config/settings-taxes.png)
 
-### Imposto ekskludita kontraŭ imposto inkluzivita
+### Imposto ekskludita kontraŭ imposto inkluzivita {#tax-excluded-vs-tax-included}
 
 Defaŭlte, ĉiuj viaj produktaj prezoj estas sen imposto, kio signifas, ke impostoj **ne estas inkluzivitaj** en la prezo de la produkto. Se ni determinas, ke kliento devas pagi impostojn por donita aĉeto, ni aldonos la impostojn **super** la subtuto.
 
@@ -37,7 +37,7 @@ Ne forgesu **konservi** la ŝanĝojn, kiujn vi faris.
 
 ###
 
-## Krei Impostajn Tarifojn
+## Krei Impostajn Tarifojn {#creating-tax-rates}
 
 Post kiam vi ebligas Impostkolektadon, vi devos krei impostajn tarifojn por specifaj lokoj uzante nian redaktilon de impostaj tarifoj.
 
@@ -51,7 +51,7 @@ Sur la paĝo de la redaktilo de impostaj tarifoj, vi povas aldoni novajn Imposta
 
 Vi devos doni al ĉiu imposta tarifo **titolon** (uzatan sur fakturoj). Poste vi povas elekti la **landon** (deviga), la **ŝtaton,** kaj la **urbon** (ambaŭ nedevigaj) kie ĉi tiu imposto estos ŝargata. Fine, aldonu la **impostan tarifon en procentoj**.
 
-### Impostaj Kategorioj
+### Impostaj Kategorioj {#tax-categories}
 
 Vi ankaŭ povas krei plurajn Impostajn Kategoriojn, por aldoni malsamajn impostajn tarifojn por malsamaj specoj de produktoj.
 
@@ -73,7 +73,7 @@ Vi povas agordi la impostan kategorion por specifa produkto irante al la **paĝo
 
 Sur tiu sama ekrano, vi povas malŝalti la ŝaltilon **Ĉu Impostebla?** por informi Ultimate Multisite, ke ĝi ne kolektu impostojn por tiu donita produkto.
 
-## Eŭropa VAT-Subteno
+## Eŭropa VAT-Subteno {#european-vat-support}
 
 Kiel menciite antaŭe, ni havas aldonaĵon disponeblan por klientoj en la EU kiuj havas aldonajn postulojn pro eŭropaj VAT-regularoj.
 
@@ -101,7 +101,7 @@ Se vi revenas al la **langeto Impostaj Agordoj** , vi vidos novajn disponeblajn 
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Elŝuti VAT-Impostajn Tarifojn
+### Elŝuti VAT-Impostajn Tarifojn {#pulling-on-vat-tax-rates}
 
 Unu el la iloj, kiujn nia integriĝo aldonas, estas la kapablo ŝargi la impostajn tarifojn por EU-membroŝtatoj. Tio povas esti farita vizitante la paĝon de la redaktilo de impostaj tarifoj post ebligo de EU VAT-subteno.
 
@@ -111,7 +111,7 @@ Unu el la iloj, kiujn nia integriĝo aldonas, estas la kapablo ŝargi la imposta
 
 Vi ankaŭ povas redakti la valorojn post elŝuti ilin. Por fari tion, simple redaktu la tabelan linion, kiun vi bezonas, kaj alklaku por konservi la novajn valorojn.
 
-### VAT-Validigo
+### VAT-Validigo {#vat-validation}
 
 Kiam VAT-subteno estas ebligita, Ultimate Multisite aldonos plian kampon al la pagoformularo, sub la fakturadadresa kampo. La kampo aperos nur por klientoj situantaj en la EU.
 

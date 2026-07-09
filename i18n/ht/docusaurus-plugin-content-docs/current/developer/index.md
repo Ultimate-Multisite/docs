@@ -3,11 +3,11 @@ title: Dokimantasyon pou Devlopè
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokimantasyon pou Devlopè
+# Dokimantasyon pou Devlopè {#developer-documentation}
 
 Gid sa a bay devlopè yo tout sa yo bezwen pou entegre ak Ultimate Multisite, elaji li, oswa devlope ekstansyon pou li. Ultimate Multisite transfòme yon rezo WordPress Multisite an yon platfòm Website-as-a-Service (WaaS).
 
-## Sa ki Disponib
+## Sa ki Disponib {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Operasyon CRUD konplè pou tout antite yo (kliyan, sit, manm, peman, pwodwi, domèn) ak otantifikasyon pa kle API
 - **[Referans Hooks](./hooks/guide)** — Plis pase 200 action hooks ak plis pase 280 filter hooks pou evènman sik lavi ak pèsonalizasyon
@@ -15,13 +15,13 @@ Gid sa a bay devlopè yo tout sa yo bezwen pou entegre ak Ultimate Multisite, el
 - **[Egzanp Kòd](./code-examples/)** — Modèl avanse pou pri dinamik, pwovizyonman sit, limit pèsonalize, ak tretman ak plizyè passerelles
 - **[Devlopman Ekstansyon](./addon-development/getting-started)** — Kad estriktire pou konstwi plugin ekstansyon
 
-## Kondisyon
+## Kondisyon {#requirements}
 
 - Enstalasyon WordPress Multisite
 - PHP 7.4 oswa pi wo
 - Ultimate Multisite plugin aktive
 
-## Enstalasyon Composer / Bedrock
+## Enstalasyon Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite disponib sou [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) kòm `ultimate-multisite/ultimate-multisite`. Sa a se metòd enstalasyon rekòmande pou konfigirasyon WordPress ki baze sou [Bedrock](https://roots.io/bedrock/) ak lòt anviwònman Composer jere.
 
@@ -45,15 +45,15 @@ Oswa, si w ap chaje plugin nan kòm yon MU plugin atravè autoloader Bedrock la,
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Demaraj Rapid
+## Demaraj Rapid {#quick-start}
 
-### Itilize REST API a
+### Itilize REST API a {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Konekte ak Evènman yo
+### Konekte ak Evènman yo {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Konstwi yon Ekstansyon
+### Konstwi yon Ekstansyon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

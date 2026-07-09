@@ -3,15 +3,15 @@ title: Verifiko kontrastin e paletës
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Vlerëso kontrastin e paletës
+# Vlerëso kontrastin e paletës {#validate-palette-contrast}
 
 Aftësia **Validate Palette Contrast** kontrollon çiftet e ngjyrave në paletën tënde të dizajnit për përputhshmëri me WCAG (Web Content Accessibility Guidelines) përpara se t’i aplikojë ato në temën tënde.
 
-## Përmbledhje
+## Përmbledhje {#overview}
 
 Kjo aftësi siguron që skema e ngjyrave e sajtit tënd të përmbushë standardet e aksesueshmërisë duke vlerësuar raportet e kontrastit midis ngjyrave të tekstit dhe sfondit. Ajo ndihmon në parandalimin e kombinimeve të ngjyrave që mund të jenë të vështira për t’u lexuar nga përdoruesit me dëmtime të shikimit.
 
-## Formati i hyrjes
+## Formati i hyrjes {#input-format}
 
 Aftësia pranon një paletë ngjyrash si hyrje:
 
@@ -35,7 +35,7 @@ Aftësia pranon një paletë ngjyrash si hyrje:
 }
 ```
 
-### Parametrat
+### Parametrat {#parameters}
 
 | Parametri | Tipi | I detyrueshëm | Përshkrimi |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Aftësia pranon një paletë ngjyrash si hyrje:
 | `wcag_level` | string | Jo | Niveli i përputhshmërisë WCAG: "A", "AA" (parazgjedhje), ose "AAA" |
 | `pairs_to_check` | array | Jo | Çifte specifike ngjyrash për t’u vlerësuar (p.sh., `["primary-text", "background-text"]`) |
 
-## Nivelet WCAG të kontrolluara
+## Nivelet WCAG të kontrolluara {#wcag-levels-checked}
 
 Aftësia vlerëson raportet e kontrastit sipas standardeve WCAG:
 
@@ -56,7 +56,7 @@ Aftësia vlerëson raportet e kontrastit sipas standardeve WCAG:
 - **Tekst normal** — tekst më i vogël se 18pt (ose 14pt me të trasha)
 - **Tekst i madh** — tekst 18pt ose më i madh (ose 14pt me të trasha ose më i madh)
 
-## Skema e daljes
+## Skema e daljes {#output-schema}
 
 Aftësia kthen një raport të detajuar vlerësimi:
 
@@ -95,7 +95,7 @@ Aftësia kthen një raport të detajuar vlerësimi:
 }
 ```
 
-### Fushat e daljes
+### Fushat e daljes {#output-fields}
 
 | Fusha | Tipi | Përshkrimi |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Aftësia kthen një raport të detajuar vlerësimi:
 | `status` | string | "pass" ose "fail" për çdo çift |
 | `recommendations` | array | Sugjerime për përmirësimin e çifteve që dështojnë |
 
-## Shembull përdorimi
+## Shembull përdorimi {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Aftësia vlerëson të gjitha kombinimet e ngjyrave dhe kthen:
 - ✅ Sfond + Tekst: raport 12.1:1 (kalon WCAG AAA)
 - Në përgjithësi: Në përputhje me WCAG AA
 
-## Integrimi me Theme Builder
+## Integrimi me Theme Builder {#integration-with-theme-builder}
 
 Kur përdor përzgjedhjen e drejtimit të dizajnit në Theme Builder, aftësia Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Kur përdor përzgjedhjen e drejtimit të dizajnit në Theme Builder, aftësia V
 4. Jep rekomandime për çiftet jo në përputhje
 5. Parandalon aplikimin e skemave të ngjyrave të paaksesueshme
 
-## Praktikat më të mira
+## Praktikat më të mira {#best-practices}
 
 - **Fillo me nivelin AA** — WCAG AA është standardi për shumicën e faqeve të internetit
 - **Testo përpara aplikimit** — vlerëso paletën tënde përpara se të angazhohesh në një dizajn
@@ -137,7 +137,7 @@ Kur përdor përzgjedhjen e drejtimit të dizajnit në Theme Builder, aftësia V
 - **Merr parasysh preferencat e përdoruesve** — disa përdorues mund të kenë ndjeshmëri shtesë ndaj ngjyrave
 - **Përdor kontrollues kontrasti** — kombinoje këtë aftësi me mjetet e shfletuesit për verifikim
 
-## Çiftet që dështojnë dhe rekomandimet
+## Çiftet që dështojnë dhe rekomandimet {#failing-pairs-and-recommendations}
 
 Nëse një çift ngjyrash dështon në vlerësim, aftësia jep rekomandime:
 
@@ -155,7 +155,7 @@ Nëse një çift ngjyrash dështon në vlerësim, aftësia jep rekomandime:
 }
 ```
 
-## Aftësi të lidhura
+## Aftësi të lidhura {#related-abilities}
 
 - [Gjenero Logo SVG](./generate-logo-svg.md) — krijo logo me paletën tënde të validuar të ngjyrave
 - [Krijo meny](./create-menu.md) — ndërto navigim me ngjyra të aksesueshme

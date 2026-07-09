@@ -3,11 +3,11 @@ title: Senarai Perubahan
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Dikeluarkan pada 2026-04-28
+## 1.9.0 — Dikeluarkan pada 2026-04-28 {#190--released-on-2026-04-28}
 
-### Baharu
+### Baharu {#new}
 
 - **Keupayaan `create_contact_form`** — mencipta borang hubungan menggunakan plugin borang aktif (Contact Form 7, WPForms, Fluent Forms, atau Gravity Forms) dan mengembalikan *shortcode* yang sedia untuk disematkan dalam mana-mana pos atau halaman.
 - **Keupayaan `set_featured_image`** — menetapkan imej utama pada pos atau halaman daripada ID lampiran Perpustakaan Media yang sedia ada atau URL jauh; secara automatik mengimport imej apabila URL disediakan.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pulihkan sesi terakhir** — panel sembang kini memuat semula perbualan paling terkini secara automatik apabila halaman dimuat dan apabila widget dibuka, jadi konteks tidak pernah hilang merentasi navigasi halaman.
 - **Pautan tindakan plugin** — pautan pantas ke Settings dan Abilities Registry kini muncul pada skrin **Plugins → Installed Plugins** WordPress di bawah penerangan plugin.
 
-### Diperbaiki
+### Diperbaiki {#improved}
 
 - **Cuba semula sumber imej** — ejen kini akan cuba semula semua sumber imej percuma yang dikonfigurasi sebelum beralih kepada imej yang dijana AI apabila muat turun gagal.
 - **Panel maklumat model** — sentiasa kelihatan di tajuk sembang; tidak lagi disembunyikan selepas mesej pertama.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Reka bentuk semula widget sembang** — ikon AI yang disatukan menggantikan avatar tersuai sebelumnya; konsisten dengan sistem ejen terbina dalam.
 - **Pautan URL** — URL yang muncul dalam mesej sistem dan gelembung mesej ralat kini dipaparkan sebagai pautan yang boleh diklik.
 
-### Diperbaiki
+### Diperbaiki {#fixed}
 
 - **Kebolehcapaian keupayaan** — deskripsi, rujukan *system prompt*, dan penjajaran *namespace* telah diperbetulkan supaya semua keupayaan muncul dalam senarai alat ejen dengan boleh dipercayai.
 - **Cache penyedia** — penyedia kini di-*cache* di seluruh tapak web melalui pengira versi, menghalang isu penyedia lapuk pada rangkaian multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Dikeluarkan pada 2026-04-09
+## 1.4.0 — Dikeluarkan pada 2026-04-09 {#140--released-on-2026-04-09}
 
-### Baharu
+### Baharu {#new-1}
 
 - **Perintah penanda aras WP-CLI** (`wp gratis-ai-agent benchmark`) — menjalankan set penanda aras Agent Capabilities v1 dari baris perintah untuk paip CI dan aliran kerja penilaian model. Menyokong larian setiap soalan, penimbalan penyedia/model, dan output JSON/CSV.
 - **Set penanda aras Agent Capabilities v1** — set *prompt* kompleks, berbilang langkah yang berstruktur yang menjalankan permukaan keupayaan sepenuhnya, dengan pemarkahan dan pelaporan token/tempoh.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Soalan penanda aras laman web restoran** (`q-restaurant-website`) — ujian hujung-ke-hujung meliputi pendaftaran CPT, sistem reka bentuk, navigasi, dan penemuan plugin.
 - **Plugin penyambung penyedia AI** ditambah ke *blueprint* WordPress Playground untuk persediaan pembangunan tempatan yang lebih pantas.
 
-### Diperbaiki
+### Diperbaiki {#improved-1}
 
 - README dikemas kini dengan dokumentasi dan arahan persediaan penyambung penyedia AI.
 
-### Diperbaiki
+### Diperbaiki {#fixed-1}
 
 - 25 kegagalan ujian PHPUnit pada *main* branch diselesaikan.
 - Format URL rilis GitHub dalam `blueprint.json` diperbetulkan.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Nota rilis sebelum ini dikekalkan dalam repositori plugin._

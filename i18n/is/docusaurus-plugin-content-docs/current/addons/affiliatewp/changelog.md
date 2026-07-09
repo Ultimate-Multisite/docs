@@ -3,7 +3,7 @@ title: AffiliateWP breytingaskrá
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP breytingaskrá
+# AffiliateWP breytingaskrá {#affiliatewp-changelog}
 
 Útgáfa: 2.0.1 - Gefin út 2025-09-28
 

@@ -3,13 +3,13 @@ title: Ukwakha Amakhodi Esaphulelo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ukudala Amakhodi Esaphulelo (v2)
+# Ukudala Amakhodi Esaphulelo (v2) {#creating-discount-codes-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite version 2.x.**_
 
 Nge-Ultimate Multisite ungadala amakhodi esaphulelo ukuze unike amakhasimende akho izaphulelo kuma-subscriptions awo. Futhi ukuwadala kulula!
 
-## Ukudala Nokuhlela Amakhodi Esaphulelo
+## Ukudala Nokuhlela Amakhodi Esaphulelo {#creating-and-editing-discount-codes}
 
 Ukuze udale noma uhlele ikhodi yesaphulelo, iya ku-**Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Ikhuphoni manje isesohlwini lwakho futhi, kusuka lapho, ungachofoza ukuze **uyih
 
 ###
 
-### Ukusebenzisa Amapharamitha e-URL:
+### Ukusebenzisa Amapharamitha e-URL: {#using-url-parameters}
 
 Uma ufuna ukwenza ngendlela oyifisayo amathebula akho entengo noma ukwakha ikhasi elihle lekhodi yekhuphoni le-website yakho futhi ufuna ukufaka ikhodi yesaphulelo kufomu lakho le-checkout ngokuzenzakalelayo, ungakwenza lokhu ngamapharamitha e-URL.
 

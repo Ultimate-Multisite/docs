@@ -4,11 +4,11 @@ title: Dejanje - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Dejanje: wu_handle_user_meta_fields
+# Dejanje: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Omogoči razvijalcem pluginov, da po potrebi shranjujejo meta podatke uporabnikov na različne načine.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Omogoči razvijalcem pluginov, da po potrebi shranjujejo meta podatke uporabniko
 | $customer | `\Customer` | Objekt stranke Ultimate Multisite. |
 | $checkout | `\Checkout` | Razred zaključka nakupa. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.4
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) v vrstici 1244

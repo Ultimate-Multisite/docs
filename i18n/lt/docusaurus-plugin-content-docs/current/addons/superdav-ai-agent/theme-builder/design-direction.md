@@ -3,17 +3,17 @@ title: Dizaino kryptis
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dizaino kryptis
+# Dizaino kryptis {#design-direction}
 
 Žingsnis **Dizaino kryptis** leidžia peržiūrėti, patobulinti ir užbaigti jūsų temos vizualinį dizainą prieš Theme Builder sugeneruojant visą temą.
 
-## Apžvalga
+## Apžvalga {#overview}
 
 Užbaigus Discovery Interview, Theme Builder pateikia jūsų dizaino kryptį su **darbalaukio ir mobiliosios peržiūros atvaizdavimu**. Tai leidžia tiksliai pamatyti, kaip jūsų dizainas atrodys skirtinguose įrenginiuose prieš įsipareigojant temai.
 
-## Dizaino krypties komponentai
+## Dizaino krypties komponentai {#design-direction-components}
 
-### 1. Spalvų paletė
+### 1. Spalvų paletė {#1-color-palette}
 
 Jūsų temos spalvų schema, įskaitant:
 
@@ -23,7 +23,7 @@ Jūsų temos spalvų schema, įskaitant:
 - **Neutralios spalvos** — pilki ir balti atspalviai fonams ir tekstui
 - **Teksto spalva** — pagrindinė teksto spalva skaitomumui
 
-### 2. Tipografija
+### 2. Tipografija {#2-typography}
 
 Šriftų pasirinkimai:
 
@@ -33,14 +33,14 @@ Jūsų temos spalvų schema, įskaitant:
 - **Eilučių aukštis** — tarpai tarp eilučių skaitomumui
 - **Šriftų svoriai** — pusjuodžiai, įprasti ir šviesūs variantai
 
-### 3. Išdėstymas ir tarpai
+### 3. Išdėstymas ir tarpai {#3-layout-and-spacing}
 
 - **Konteinerio plotis** — maksimalus turinio plotis
 - **Vidinės paraštės ir paraštės** — tarpai aplink elementus
 - **Tinklelio sistema** — stulpelių išdėstymas prisitaikančiam dizainui
 - **Komponentų tarpai** — atstumas tarp UI elementų
 
-### 4. Vizualiniai elementai
+### 4. Vizualiniai elementai {#4-visual-elements}
 
 - **Mygtukų stiliai** — pirminių, antrinių ir tretinių mygtukų dizainai
 - **Kortelių dizainai** — turinio blokų išdėstymai
@@ -48,9 +48,9 @@ Jūsų temos spalvų schema, įskaitant:
 - **Rėmeliai ir šešėliai** — subtilus vizualinis gylis
 - **Užvedimo efektai** — interaktyvių būsenų stilizavimas
 
-## Peržiūros atvaizdavimas
+## Peržiūros atvaizdavimas {#preview-rendering}
 
-### Darbalaukio peržiūra
+### Darbalaukio peržiūra {#desktop-preview}
 
 Darbalaukio peržiūra rodo jūsų dizainą visu pločiu (paprastai 1200px arba platesniu):
 
@@ -59,7 +59,7 @@ Darbalaukio peržiūra rodo jūsų dizainą visu pločiu (paprastai 1200px arba 
 - Didelė tipografija ir tarpai
 - Visi vizualiniai elementai visu dydžiu
 
-### Mobilioji peržiūra
+### Mobilioji peržiūra {#mobile-preview}
 
 Mobilioji peržiūra rodo jūsų dizainą mobiliojo pločio formatu (paprastai 375px):
 
@@ -68,7 +68,7 @@ Mobilioji peržiūra rodo jūsų dizainą mobiliojo pločio formatu (paprastai 3
 - Pakoreguota tipografija ir tarpai
 - Lietimui patogūs mygtukų dydžiai
 
-### Prisitaikantys lūžio taškai
+### Prisitaikantys lūžio taškai {#responsive-breakpoints}
 
 Theme Builder atvaizduoja peržiūras šiuose lūžio taškuose:
 
@@ -79,9 +79,9 @@ Theme Builder atvaizduoja peržiūras šiuose lūžio taškuose:
 | **Darbalaukis** | 1200px | Viso pločio darbalaukis |
 | **Didelis darbalaukis** | 1920px | Itin platus ekranas |
 
-## Dizaino tobulinimas
+## Dizaino tobulinimas {#refining-your-design}
 
-### Koregavimų atlikimas
+### Koregavimų atlikimas {#making-adjustments}
 
 Galite patobulinti savo dizaino kryptį:
 
@@ -91,7 +91,7 @@ Galite patobulinti savo dizaino kryptį:
 4. **Atnaujindami išdėstymą** — keiskite konteinerių pločius ir tinklelio stulpelius
 5. **Tinkindami elementus** — modifikuokite mygtukų stilius, kortelių dizainus ir kt.
 
-### Peržiūros atnaujinimai
+### Peržiūros atnaujinimai {#preview-updates}
 
 Pakeitimai atsispindi realiuoju laiku:
 
@@ -100,7 +100,7 @@ Pakeitimai atsispindi realiuoju laiku:
 - Visi prisitaikantys lūžio taškai atnaujinami
 - Galite perjungti peržiūras, kad patikrintumėte pakeitimus
 
-### Palyginimo rodinys
+### Palyginimo rodinys {#comparison-view}
 
 Palyginkite savo dizaino kryptį su:
 
@@ -108,7 +108,7 @@ Palyginkite savo dizaino kryptį su:
 - **Konkurentų dizainais** — palyginkite su įkvėpimo svetainėmis
 - **Ankstesnėmis versijomis** — grįžkite prie ankstesnių dizaino krypčių
 
-## Dizaino krypties patvirtinimas
+## Dizaino krypties patvirtinimas {#design-direction-approval}
 
 Kai būsite patenkinti savo dizainu:
 
@@ -118,7 +118,7 @@ Kai būsite patenkinti savo dizainu:
 4. **Patvirtinkite išdėstymą** — patikrinkite tarpus ir lygiavimą
 5. **Patvirtinkite dizainą** — pereikite prie temos generavimo
 
-## Kiti veiksmai
+## Kiti veiksmai {#next-steps}
 
 Patvirtinus dizaino kryptį:
 
@@ -127,7 +127,7 @@ Patvirtinus dizaino kryptį:
 3. Galite toliau tinkinti naudodami WordPress tinkintuvą
 4. Pereikite prie [Svetingumo meniu](./hospitality-menus.md) arba kitų funkcijų
 
-## Geriausios praktikos
+## Geriausios praktikos {#best-practices}
 
 - **Testuokite realiuose įrenginiuose** — jei įmanoma, naudokite tikrus telefonus ir planšetes
 - **Patikrinkite skaitomumą** — užtikrinkite, kad tekstas būtų skaitomas visais dydžiais
@@ -135,30 +135,30 @@ Patvirtinus dizaino kryptį:
 - **Atsižvelkite į našumą** — optimizuokite vaizdus ir šriftus greičiui
 - **Planuokite turinį** — užtikrinkite, kad išdėstymas veiktų su jūsų tikruoju turiniu
 
-## Trikčių šalinimas
+## Trikčių šalinimas {#troubleshooting}
 
-### Peržiūra neatsinaujina
+### Peržiūra neatsinaujina {#preview-not-updating}
 
 - Atnaujinkite puslapį
 - Išvalykite naršyklės talpyklą
 - Išbandykite kitą naršyklę
 - Patikrinkite interneto ryšį
 
-### Spalvos atrodo skirtingai
+### Spalvos atrodo skirtingai {#colors-look-different}
 
 - Patikrinkite monitoriaus spalvų nustatymus
 - Išbandykite skirtinguose įrenginiuose
 - Patikrinkite spalvų kontrastą naudodami prieinamumo įrankius
 - Apsvarstykite daltonizmo simuliatorius
 
-### Tipografijos problemos
+### Tipografijos problemos {#typography-issues}
 
 - Patikrinkite, ar šriftų failai įkeliami
 - Patikrinkite šrifto dydį skirtinguose lūžio taškuose
 - Išbandykite su tikru turiniu
 - Atsižvelkite į eilutės ilgį skaitomumui
 
-## Susijusi dokumentacija
+## Susijusi dokumentacija {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — surinkite dizaino informaciją
 - [Svetingumo meniu](./hospitality-menus.md) — kurkite struktūrizuotus meniu puslapius

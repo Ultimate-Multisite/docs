@@ -3,28 +3,28 @@ title: Nêrîna giştî ya REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referansa REST API
+# Referansa REST API {#rest-api-reference}
 
-## Veavakirina Bingehîn
+## Veavakirina Bingehîn {#base-configuration}
 
 **URL-a Bingehîn:** `{site_url}/wp-json/wu/v2/`
 **Piştrastkirin:** API Key & Secret (HTTP Basic Auth an Parametreyên URL)
 
-## Piştrastkirin
+## Piştrastkirin {#authentication}
 
-### API Çalak Bike
+### API Çalak Bike {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Agahiyên API Bistîne
+### Agahiyên API Bistîne {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Rêbazên Piştrastkirinê
+### Rêbazên Piştrastkirinê {#authentication-methods}
 
 **HTTP Basic Auth (Tê Pêşniyarkirin):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Xalên Dawî yên Bingehîn
+## Xalên Dawî yên Bingehîn {#core-endpoints}
 
-### 1. API-ya Xerîdaran
+### 1. API-ya Xerîdaran {#1-customers-api}
 
 **Rêya Bingehîn:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API-ya Malperan
+### 2. API-ya Malperan {#2-sites-api}
 
 **Rêya Bingehîn:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API-ya Endamtiyan
+### 3. API-ya Endamtiyan {#3-memberships-api}
 
 **Rêya Bingehîn:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API-ya Berheman
+### 4. API-ya Berheman {#4-products-api}
 
 **Rêya Bingehîn:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API-ya Peredanê
+### 5. API-ya Peredanê {#5-payments-api}
 
 **Rêya Bingehîn:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API-ya Domênan
+### 6. API-ya Domênan {#6-domains-api}
 
 **Rêya Bingehîn:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Xala Dawî ya Tomarkirinê
+## Xala Dawî ya Tomarkirinê {#registration-endpoint}
 
 Xala dawî ya `/register` herikîna temam a checkout/tomarkirinê peyda dike:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Xalên Dawî yên Kirêdarên Serbixwe
+## Xalên Dawî yên Kirêdarên Serbixwe {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ji bo entegrasyonên ku kirêdarên veqetandî amade dikin, dinêrin an piştrast dikin, girtina REST a kirêdarên serbixwe zêde dike.
 
@@ -242,7 +242,7 @@ Bersivên asayî yên rewşa koçkirinê ev in:
 
 `ready: false` wek astengiyeke berî destpêkirinê bihesibîne. Hûrgiliyên piştrastkirinê kontrol bike, girêdana host a danegirê, rêz, amadekirina bikarhêner an pirsgirêka rêkirinê rast bike, paşê dîsa piştrastkirinê biceribîne.
 
-## Bersivên Çewtiyan
+## Bersivên Çewtiyan {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Bersivên asayî yên rewşa koçkirinê ev in:
 }
 ```
 
-## Rûpelkirin û Parzûnkirin
+## Rûpelkirin û Parzûnkirin {#pagination-and-filtering}
 
 **Parametreyên Lêpirsînê:**
 ```http

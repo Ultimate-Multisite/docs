@@ -3,13 +3,13 @@ title: Kreiranje kodova popusta
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kreiranje kodova popusta (v2)
+# Kreiranje kodova popusta (v2) {#creating-discount-codes-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
 Sa Ultimate Multisite možete kreirati kodove popusta da dajete svojim klijentima popuste na njihove pretplate. A kreiranje je jednostavno!
 
-## Kreiranje i uređivanje kodova popusta
+## Kreiranje i uređivanje kodova popusta {#creating-and-editing-discount-codes}
 
 Da biste kreirali ili uredili kod popusta, idite na **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kupon je sada na vašoj listi, a odatle možete kliknuti da ga **uredite ili obr
 
 ###
 
-### Korišćenje URL parametara:
+### Korišćenje URL parametara: {#using-url-parameters}
 
 Ako želite da prilagodite svoje tabele cena ili napravite lepaj stranicu za kod popusta na vašem veb-sajtu i želite automatski primeniti kod popusta na formular za plaćanje, možete to uraditi putem URL parametara.
 

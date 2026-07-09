@@ -3,11 +3,11 @@ title: تخزين مؤقت للتعليمات التوجيهية المدرك ل
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# التخزين المؤقت للموجهات الواعي بالمزود
+# التخزين المؤقت للموجهات الواعي بالمزود {#provider-aware-prompt-caching}
 
 يقدم Superdav AI Agent v1.12.0 ميزة **التخزين المؤقت للموجهات الواعي بالمزود (provider-aware prompt caching)**، والتي تعمل على تحسين تكاليف واجهة برمجة التطبيقات (API) وزمن الوصول (latency) عن طريق تخزين الموجهات مؤقتًا عبر مختلف مزودي نماذج اللغة الكبيرة (LLM). يمتلك كل مزود آليات وتكوينات تخزين مؤقت مختلفة.
 
-## نظرة عامة
+## نظرة عامة {#overview}
 
 يسمح لك التخزين المؤقت للموجهات بما يلي:
 
@@ -23,11 +23,11 @@ _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 - **OpenRouter**: التخزين المؤقت الخاص بكل مزود.
 - **Vertex Anthropic**: التخزين المؤقت للموجهات مع التحكم في التخزين المؤقت (cache control).
 
-## Google Gemini: واجهة cachedContents API
+## Google Gemini: واجهة cachedContents API {#google-gemini-cachedcontents-api}
 
 توفر Google Gemini إدارة صريحة للتخزين المؤقت عبر واجهة `cachedContents` API.
 
-### التكوين (Configuration)
+### التكوين (Configuration) {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### إنشاء موجه مخزن مؤقتًا (Creating a Cached Prompt)
+### إنشاء موجه مخزن مؤقتًا (Creating a Cached Prompt) {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // يعيد: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### استخدام موجه مخزن مؤقتًا (Using a Cached Prompt)
+### استخدام موجه مخزن مؤقتًا (Using a Cached Prompt) {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### دورة حياة التخزين المؤقت (Cache Lifecycle)
+### دورة حياة التخزين المؤقت (Cache Lifecycle) {#cache-lifecycle}
 
 ```php
 // سرد المحتويات المخزنة مؤقتًا
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### أفضل الممارسات لـ Gemini
+### أفضل الممارسات لـ Gemini {#best-practices-for-gemini}
 
 - **تحديد فترة صلاحية (TTL) مناسبة**: الموازنة بين توفير التكاليف وقِدم البيانات المخزنة مؤقتًا.
 - **تخزين الموجهات النظامية (system prompts)**: إعادة استخدام نفس الموجه النظامي عبر الطلبات المختلفة.
 - **مراقبة استخدام التخزين المؤقت**: تتبع أي التخزين المؤقت يتم استخدامه أكثر.
 - **تنظيف التخزين المؤقت منتهي الصلاحية**: حذف التخزين المؤقت غير المستخدم بشكل دوري.
 
-## Azure OpenAI: التخزين المؤقت للموجهات
+## Azure OpenAI: التخزين المؤقت للموجهات {#azure-openai-prompt-caching}
 
 يدعم Azure OpenAI التخزين المؤقت للموجهات مع إدارة تلقائية لفترة الصلاحية (TTL).
 
-### التكوين (Configuration)
+### التكوين (Configuration) {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### تمكين التخزين المؤقت (Enabling Caching)
+### تمكين التخزين المؤقت (Enabling Caching) {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### رؤوس التخزين المؤقت (Cache Headers)
+### رؤوس التخزين المؤقت (Cache Headers) {#cache-headers}
 
 يستخدم Azure OpenAI رؤوس HTTP للتحكم في التخزين المؤقت:
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: لا تقم بتخزين هذا الطلب مؤقتًا.
 - `no_store`: لا تقم بالتخزين المؤقت ولا تعيد استخدامه.
 
-### مراقبة استخدام التخزين المؤقت (Monitoring Cache Usage)
+### مراقبة استخدام التخزين المؤقت (Monitoring Cache Usage) {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### أفضل الممارسات لـ Azure OpenAI
+### أفضل الممارسات لـ Azure OpenAI {#best-practices-for-azure-openai}
 
 - **استخدام موجهات متسقة**: الموجهات المتطابقة تستفيد من التخزين المؤقت.
 - **تحديد فترة صلاحية (TTL) معقولة**: الموازنة بين التكلفة وحداثة البيانات.
 - **مراقبة مقاييس التخزين المؤقت**: تتبع إنشاء التخزين المؤقت مقابل الإصابات (Hits).
 - **تجميع الطلبات المتشابهة**: تجميع الطلبات لزيادة إصابات التخزين المؤقت.
 
-## OpenRouter: التخزين المؤقت الخاص بكل مزود
+## OpenRouter: التخزين المؤقت الخاص بكل مزود {#openrouter-provider-specific-caching}
 
 يدعم OpenRouter التخزين المؤقت من خلال المزوّدات الأساسية (OpenAI، Anthropic، إلخ).
 
-### التكوين (Configuration)
+### التكوين (Configuration) {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### استخدام التخزين المؤقت لـ OpenRouter
+### استخدام التخزين المؤقت لـ OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### خيارات خاصة بكل مزود
+### خيارات خاصة بكل مزود {#provider-specific-options}
 
 تختلف المزوّدات المختلفة في آليات التخزين المؤقت:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### أفضل الممارسات لـ OpenRouter
+### أفضل الممارسات لـ OpenRouter {#best-practices-for-openrouter}
 
 - **معرفة التخزين المؤقت لمزودك**: يمتلك كل مزود آليات مختلفة.
 - **اختبار سلوك التخزين المؤقت**: التأكد من أن التخزين المؤقت يعمل مع المزود الذي اخترته.
 - **مراقبة التكاليف**: تتبع التوفير الناتج عن التخزين المؤقت.
 - **استخدام نماذج متسقة**: تغيير النماذج يكسر إصابات التخزين المؤقت.
 
-## Vertex Anthropic: التخزين المؤقت للموجهات مع التحكم في التخزين المؤقت
+## Vertex Anthropic: التخزين المؤقت للموجهات مع التحكم في التخزين المؤقت {#vertex-anthropic-prompt-caching-with-cache-control}
 
 يدعم Vertex Anthropic (Google Cloud) التخزين المؤقت للموجهات مع تحكم صريح في التخزين المؤقت.
 
-### التكوين (Configuration)
+### التكوين (Configuration) {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### استخدام التخزين المؤقت لـ Vertex Anthropic
+### استخدام التخزين المؤقت لـ Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### أنواع التحكم في التخزين المؤقت (Cache Control Types)
+### أنواع التحكم في التخزين المؤقت (Cache Control Types) {#cache-control-types}
 
 - **ephemeral**: التخزين المؤقت لمدة الطلب الواحد (افتراضي).
 - **persistent**: التخزين المؤقت عبر طلبات متعددة (إذا كان مدعومًا).
 
-### مراقبة استخدام التخزين المؤقت (Monitoring Cache Usage)
+### مراقبة استخدام التخزين المؤقت (Monitoring Cache Usage) {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### أفضل الممارسات لـ Vertex Anthropic
+### أفضل الممارسات لـ Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **استخدام التخزين المؤقت العابر (ephemeral)**: جيد للتخزين المؤقت لجلسة واحدة.
 - **تحديد max_tokens بشكل مناسب**: الموازنة بين حجم التخزين المؤقت والتكلفة.
 - **مراقبة مقاييس التخزين المؤقت**: تتبع فعالية التخزين المؤقت.
 - **الاختبار بحمولتك العملية**: التأكد من أن التخزين المؤقت يفيد حالة الاستخدام الخاصة بك.
 
-## استراتيجية التخزين المؤقت عبر المزوّدات (Cross-Provider Caching Strategy)
+## استراتيجية التخزين المؤقت عبر المزوّدات (Cross-Provider Caching Strategy) {#cross-provider-caching-strategy}
 
-### التكوين الموحد (Unified Configuration)
+### التكوين الموحد (Unified Configuration) {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### اكتشاف المزود (Provider Detection)
+### اكتشاف المزود (Provider Detection) {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // استخدام تكوين التخزين المؤقت الخاص بالمزود
 ```
 
-### استراتيجية التراجع (Fallback Strategy)
+### استراتيجية التراجع (Fallback Strategy) {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## تحسين التكاليف (Cost Optimization)
+## تحسين التكاليف (Cost Optimization) {#cost-optimization}
 
-### حساب التوفير (Calculate Savings)
+### حساب التوفير (Calculate Savings) {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### نصائح التحسين (Optimization Tips)
+### نصائح التحسين (Optimization Tips) {#optimization-tips}
 
 - **تخزين الموجهات النظامية الكبيرة**: أكبر توفير في التكاليف.
 - **إعادة استخدام السياق**: تخزين المستندات السياقية المستخدمة بشكل متكرر.
@@ -395,29 +395,29 @@ echo "Estimated savings: \$$savings\n";
 - **مراقبة فعالية التخزين المؤقت**: تتبع التوفير الفعلي.
 - **تعديل فترة الصلاحية (TTL)**: الموازنة بين التكلفة وحداثة البيانات.
 
-## استكشاف الأخطاء وإصلاحها (Troubleshooting)
+## استكشاف الأخطاء وإصلاحها (Troubleshooting) {#troubleshooting}
 
-### التخزين المؤقت لا يُستخدم
+### التخزين المؤقت لا يُستخدم {#cache-not-being-used}
 
 - التحقق من تمكين التخزين المؤقت في التكوين.
 - التأكد من أن الموجهات متطابقة (يتطلب التخزين المؤقت تطابقًا تامًا).
 - التحقق من عدم انتهاء صلاحية التخزين المؤقت.
 - التحقق من حدود التخزين المؤقت الخاصة بكل مزود.
 
-### فشل إنشاء التخزين المؤقت
+### فشل إنشاء التخزين المؤقت {#cache-creation-failing}
 
 - التحقق من أن حجم التخزين المؤقت ضمن حدود المزود.
 - التأكد من صحة بناء جملة التحكم في التخزين المؤقت (cache control).
 - التأكد من أن المزود يدعم التخزين المؤقت لنموذجك.
 - مراجعة وثائق المزود لمعرفة القيود.
 
-### تكاليف غير متوقعة
+### تكاليف غير متوقعة {#unexpected-costs}
 
 - مراقبة رموز إنشاء التخزين المؤقت مقابل رموز قراءة التخزين المؤقت.
 - التحقق من أن التخزين المؤقت يُستخدم بالفعل.
 - التحقق من وجود حالات فشل في التخزين المؤقت.
 
-## ملخص
+## ملخص {#provider-comparison}
 
 | الميزة | الوصف |
 | :--- | :--- |

@@ -3,7 +3,7 @@ title: Nodokļu apstrāde
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Nodokļu apstrāde
+# Nodokļu apstrāde {#tax-handling}
 
 Ultimate Multisite mūsu pamata spraudnī ir iebūvēts nodokļu iekasēšanas modulis, tāpēc, ja jums ir jāiekasē pārdošanas nodokļi par saviem plāniem, paketēm un pakalpojumiem, to varat viegli izdarīt, neinstalējot nekādus papildinājumus.
 
@@ -11,7 +11,7 @@ Uzņēmumiem, kas atrodas Eiropā, mēs piedāvājam **papildinājumu**, kas pie
 
 Ultimate Multisite neiesniedz un nepārskaita nodokļus valdībai jūsu vārdā; mēs vienkārši palīdzam jums iekasēt atbilstošos nodokļus darījuma brīdī. **Jums joprojām būs pašiem jāpārskaita nodokļi.**
 
-## Nodokļu iekasēšanas iespējošana
+## Nodokļu iekasēšanas iespējošana {#enabling-tax-collection}
 
 Nodokļu iekasēšana pēc noklusējuma nav iespējota. Lai to iespējotu, jums jādodas uz **Ultimate Multisite > Iestatījumi > Nodokļi** un jāpārslēdz, lai iespējotu iestatījumu Iespējot nodokļus.
 
@@ -25,7 +25,7 @@ Varat arī skatīt nodokļu iestatījumus atsevišķiem produktiem:
 
 ![Nodokļu iestatījumi produktiem](/img/config/settings-taxes.png)
 
-### Nodoklis nav iekļauts vs. nodoklis ir iekļauts
+### Nodoklis nav iekļauts vs. nodoklis ir iekļauts {#tax-excluded-vs-tax-included}
 
 Pēc noklusējuma visās jūsu produktu cenās nodoklis nav iekļauts, kas nozīmē, ka nodokļi **nav iekļauti** produkta cenā. Ja noteiksim, ka klientam par konkrētu pirkumu jāmaksā nodokļi, mēs pievienosim nodokļus **papildus** starpsummai.
 
@@ -37,7 +37,7 @@ Neaizmirstiet **saglabāt** veiktās izmaiņas.
 
 ###
 
-## Nodokļu likmju izveide
+## Nodokļu likmju izveide {#creating-tax-rates}
 
 Pēc Nodokļu iekasēšanas iespējošanas jums būs jāizveido nodokļu likmes konkrētām atrašanās vietām, izmantojot mūsu nodokļu likmju redaktoru.
 
@@ -51,7 +51,7 @@ Nodokļu likmju redaktora lapā varat pievienot jaunas Nodokļu likmes, noklikš
 
 Katrai nodokļu likmei būs jāpiešķir **nosaukums** (tiek izmantots rēķinos). Pēc tam varat izvēlēties **valsti** (obligāti), **štatu/reģionu** un **pilsētu** (abi nav obligāti), kur šis nodoklis tiks piemērots. Visbeidzot pievienojiet **nodokļu likmi procentos**.
 
-### Nodokļu kategorijas
+### Nodokļu kategorijas {#tax-categories}
 
 Varat arī izveidot vairākas Nodokļu kategorijas, lai pievienotu dažādas nodokļu likmes dažādiem produktu veidiem.
 
@@ -73,7 +73,7 @@ Varat iestatīt nodokļu kategoriju konkrētam produktam, dodoties uz **Produkta
 
 Tajā pašā ekrānā varat izslēgt pārslēgu **Vai ir apliekams ar nodokli?**, lai Ultimate Multisite zinātu, ka tam nevajadzētu iekasēt nodokļus par šo konkrēto produktu.
 
-## Eiropas PVN atbalsts
+## Eiropas PVN atbalsts {#european-vat-support}
 
 Kā minēts iepriekš, mums ir pieejams papildinājums klientiem ES, kuriem ir papildu prasības Eiropas PVN regulējuma dēļ.
 
@@ -101,7 +101,7 @@ Ja atgriezīsieties cilnē **Nodokļu iestatījumi**, redzēsiet jaunas pieejama
 
 <!-- Ekrānuzņēmums nav pieejams: Iespējot PVN atbalstu pārslēgs nodokļu iestatījumos pēc papildinājuma aktivizēšanas -->
 
-### PVN nodokļu likmju ielāde
+### PVN nodokļu likmju ielāde {#pulling-on-vat-tax-rates}
 
 Viens no rīkiem, ko pievieno mūsu integrācija, ir iespēja ielādēt nodokļu likmes ES dalībvalstīm. To var izdarīt, apmeklējot nodokļu likmju redaktora lapu pēc ES PVN atbalsta iespējošanas.
 
@@ -111,7 +111,7 @@ Lapas apakšā redzēsiet PVN ielādes opcijas. Atlasot likmes veidu un noklikš
 
 Pēc ielādes varat arī rediģēt vērtības. Lai to izdarītu, vienkārši rediģējiet vajadzīgo tabulas rindu un noklikšķiniet, lai saglabātu jaunās vērtības.
 
-### PVN validācija
+### PVN validācija {#vat-validation}
 
 Kad PVN atbalsts ir iespējots, Ultimate Multisite pievienos papildu lauku checkout veidlapai zem norēķinu adreses lauka. Lauks tiks rādīts tikai klientiem, kas atrodas ES.
 

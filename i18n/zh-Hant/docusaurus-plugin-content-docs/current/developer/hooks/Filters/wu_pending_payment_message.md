@@ -4,11 +4,11 @@ title: 過濾器 - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# 篩選器：wu_pending_payment_message
+# 篩選器：wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 允許使用者修改關於待處理付款的訊息內容。
 
-## 參數
+## 參數 {#parameters}
 
 | 名稱 | 類型 | 描述 |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 | $customer | `\WP_Ultimo\Models\Customer` | 當前客戶資料。 |
 | $pending_payments | `array` | 包含待處理付款的列表。 |
 
-### 可用自
+### 可用自 {#since}
 
 - 2.0.19
-### 來源
+### 來源 {#source}
 
 定義於 [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) 的第 244 行

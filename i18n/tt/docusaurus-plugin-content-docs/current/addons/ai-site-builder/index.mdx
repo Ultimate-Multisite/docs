@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI сайт төзүче
+# AI сайт төзүче {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Таләпләр
+## Таләпләр {#requirements}
 
 - WordPress 5.3 яки югарырак
 - PHP 7.4 яки югарырак
 - Multisite Ultimate плагины (актив)
 
-## Урнаштыру
+## Урнаштыру {#installation}
 
 1. Өстәмә файлларын `/wp-content/plugins/` директориягезгә йөкләгез
 2. WordPress эчендәге 'Плагиннар' менюсы аша плагинны активлаштырыгыз
 3. Челтәр администраторында өстәмә көйләүләрен көйләгез
 
-## Эшкәртү
+## Эшкәртү {#development}
 
-### Көйләү
+### Көйләү {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Проект төзелеше
+### Проект төзелеше {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Кодны заманчага күчерү кагыйдәләре
 ```
 
-### Тестлау
+### Тестлау {#testing}
 
 Өстәмә комплекслы тестлау каркасын үз эченә ала:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Тест капланышы**: Код капланышын күзәтү өчен көйләнгән
 - **Multisite тестлау**: Тестлар multisite мохитендә эшли
 
-### Код стандартлары
+### Код стандартлары {#code-standards}
 
 - **WordPress кодлау стандартлары**: PHPCS аша мәҗбүри үтәлә
 - **PHP 7.4+ ярашлылыгы**: Заманча PHP мөмкинлекләре хуплана
 - **Статик анализ**: Төрләрне тикшерү өчен PHPStan интеграциясе
 - **Кодны заманчага күчерү**: PHP яңартулары өчен Rector кагыйдәләре
 
-### Җыю системасы
+### Җыю системасы {#build-system}
 
 - **Ресурсларны эшкәртү**: CSS/JS файллары өчен кечерәйтү
 - **Тәрҗемә**: POT файлын булдыру
 - **Пакетлау**: Тарату өчен архив булдыру
 - **Эшкәртү режимы**: Төзәтү өчен кечерәйтелмәгән ресурслар
 
-## Конфигурация
+## Конфигурация {#configuration}
 
 Өстәмә челтәр администраторы интерфейсы аша кереп була торган төрле конфигурация параметрларын хуплый.
 
-## Hookлар һәм фильтрлар
+## Hookлар һәм фильтрлар {#hooks-and-filters}
 
-### Гамәлләр
+### Гамәлләр {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Өстәмә инициализациясеннән соң эшләтелә
 - `ultimate-multisite-ai-site-builder_loaded` - Барлык өстәмә файллары йөкләнгәннән соң эшләтелә
 
-### Фильтрлар
+### Фильтрлар {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Өстәмә көйләүләрен үзгәртү
 - `ultimate-multisite-ai-site-builder_enabled` - Өстәмәне кабызу/сүндерү статусын алыштыру
 
-## Лицензия
+## Лицензия {#license}
 
 Бу өстәмә GPL v3 яки соңрак версия буенча лицензияләнгән.
 
-## Ярдәм
+## Ярдәм {#support}
 
 Ярдәм һәм документация өчен [MultisiteUltimate.com](https://multisiteultimate.com) сайтына керегез
-## Үзгәрешләр журналы
+## Үзгәрешләр журналы {#changelog}
 
 - Версия 1.0.1 (2025-09-28): префиксны ultimate-multisite итеп үзгәртү; text domain яңарту; версияне күтәрү.
 

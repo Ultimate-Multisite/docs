@@ -3,18 +3,18 @@ title: Cloudflare 連携
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare連携
+# Cloudflare連携 {#cloudflare-integration}
 
-## 概要
+## 概要 {#overview}
 Cloudflareは、Webサイトの保護と高速化を支援する主要なコンテンツ配信ネットワーク（CDN）およびセキュリティプロバイダーです。この連携により、Ultimate MultisiteとCloudflareの間でドメイン管理を自動化できます。特にサブドメイン型のマルチサイト構成に適しています。
 
-## 機能
+## 機能 {#features}
 - Cloudflareでのサブドメイン自動作成
 - プロキシされたサブドメインのサポート
 - DNSレコード管理
 - Ultimate Multisite管理画面でのDNSレコード表示の強化
 
-## 要件
+## 要件 {#requirements}
 次の定数を`wp-config.php`ファイルで定義する必要があります。
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## 設定手順
+## 設定手順 {#setup-instructions}
 
-### 1. Cloudflare API Keyを取得する
+### 1. Cloudflare API Keyを取得する {#1-get-your-cloudflare-api-key}
 
 1. Cloudflare Dashboardにログインします
 2. 「マイプロフィール」に移動します（右上のメールアドレスをクリック）
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. APIトークンをコピーします
 
-### 2. Zone IDを取得する
+### 2. Zone IDを取得する {#2-get-your-zone-id}
 
 1. Cloudflare Dashboardで、使用するドメインを選択します
 2. Zone IDは「概要」タブの右側サイドバーにある「API」の下に表示されています
 3. Zone IDをコピーします
 
-### 3. wp-config.phpに定数を追加する
+### 3. wp-config.phpに定数を追加する {#3-add-constants-to-wp-configphp}
 
 次の定数を`wp-config.php`ファイルに追加します。
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. 連携を有効化する
+### 4. 連携を有効化する {#4-enable-the-integration}
 
 1. WordPress管理画面で、Ultimate Multisite > 設定に移動します
 2. 「ドメインマッピング」タブに移動します
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Cloudflare連携を有効化します
 5. 「変更を保存」をクリックします
 
-## 仕組み
+## 仕組み {#how-it-works}
 
-### サブドメイン管理
+### サブドメイン管理 {#subdomain-management}
 
 サブドメイン型のマルチサイト構成で新しいサイトが作成されると、次の処理が行われます。
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. サブドメインは既定でCloudflare経由でプロキシされるように設定されます（これはフィルターで変更できます）
 3. サイトが削除されると、連携機能がCloudflareからサブドメインを削除します
 
-### DNSレコード表示
+### DNSレコード表示 {#dns-record-display}
 
 この連携は、次の方法でUltimate Multisite管理画面のDNSレコード表示を強化します。
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. レコードがプロキシされているかどうかを表示します
 3. DNSレコードに関する追加情報を表示します
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames**（以前は「Cloudflare for SaaS」と呼ばれていました）は、顧客が自身のドメインをSSL付きであなたのマルチサイトネットワーク上で使用できるようにするCloudflareの機能です。Cloudflareを使用するドメインマッピング型マルチサイト構成では推奨される方法です。Cloudflareが各カスタムドメインのSSL証明書の発行と更新を自動的に管理するためです。
 
-### 標準のCloudflare連携との違い
+### 標準のCloudflare連携との違い {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | 標準連携 | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **最適な用途** | サブドメイン型マルチサイト | ドメインマッピング型マルチサイト |
 | **SSL** | 別途処理 | Cloudflareが自動管理 |
 
-### Cloudflare Custom Hostnamesの設定
+### Cloudflare Custom Hostnamesの設定 {#setting-up-cloudflare-custom-hostnames}
 
 1. Cloudflare Dashboardで、メインドメインのゾーンを開きます。
 2. **SSL/TLS > Custom Hostnames**に移動します。
@@ -101,23 +101,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 Ultimate Multisite v2.6.1以降、この機能はすべてのplugin設定およびラベルで**Cloudflare Custom Hostnames**と呼ばれます。以前のバージョンでは「Cloudflare for SaaS」という名称が使われていました。これは基盤となるCloudflare product名です。
 :::
 
-## 重要な注意事項
+## 重要な注意事項 {#important-notes}
 
 Cloudflareの最近の更新により、ワイルドカードプロキシがすべての顧客で利用できるようになりました。つまり、CloudflareでワイルドカードDNSレコードを設定するだけでよいため、サブドメイン型マルチサイト構成における標準のCloudflare DNS連携の重要性は以前より低くなっています。
 
-## トラブルシューティング
+## トラブルシューティング {#troubleshooting}
 
-### API接続の問題
+### API接続の問題 {#api-connection-issues}
 - APIトークンが正しく、必要な権限を持っていることを確認してください
 - Zone IDが正しいことを確認してください
 - Cloudflare Accountに必要な権限があることを確認してください
 
-### サブドメインが追加されない
+### サブドメインが追加されない {#subdomain-not-added}
 - Ultimate Multisiteのログでエラーメッセージを確認してください
 - サブドメインがCloudflareにすでに追加されていないことを確認してください
 - 作成しようとしているDNSレコード数をCloudflare planがサポートしていることを確認してください
 
-### プロキシの問題
+### プロキシの問題 {#proxying-issues}
 - サブドメインをプロキシしたくない場合は、`wu_cloudflare_should_proxy`フィルターを使用できます
 - プロキシ時には、一部の機能が正しく動作しない場合があります（例：特定のWordPress管理機能）
 - 管理ページのキャッシュを回避するには、Cloudflareのページルールの使用を検討してください

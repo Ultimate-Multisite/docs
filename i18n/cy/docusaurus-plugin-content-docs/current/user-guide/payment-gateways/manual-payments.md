@@ -3,13 +3,13 @@ title: Sefydlu Taliadau â Llaw
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Sefydlu Taliadau â Llaw (v2)
+# Sefydlu Taliadau â Llaw (v2) {#setting-up-manual-payments-v2}
 
 _**NODYN PWYSIG: Mae’r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 
 Mae taliadau â llaw yn ffordd i chi gynnig dulliau talu eraill os nad yw **Stripe** neu **PayPal** ar gael i’ch defnyddwyr. Gall fod yn drosglwyddiad gwifren neu fanc neu unrhyw ddull talu arall sydd ar gael i’ch defnyddwyr yn lleol.
 
-## Sut i alluogi Taliadau â Llaw
+## Sut i alluogi Taliadau â Llaw {#how-to-enable-manual-payments}
 
 Mae sefydlu taliad â llaw yn hawdd iawn. Dim ond ei alluogi o dan byrth talu sydd angen i chi ei wneud, a rhoi cyfarwyddiadau manwl ar sut y dylai’r defnyddiwr anfon y taliad.
 
@@ -31,7 +31,7 @@ A byddant hefyd yn derbyn neges ar eich tudalen **Thank You** gyda’ch cyfarwyd
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Cadarnhau taliadau â llaw
+## Cadarnhau taliadau â llaw {#confirming-manual-payments}
 
 I gadarnhau taliad â llaw, ewch i’r ddewislen **Payments** ar y bar chwith. Yno gallwch weld yr holl daliadau ar eich rhwydwaith a’u manylion, gan gynnwys eu **status**. Bydd gan daliad â llaw statws **Pending** bob amser nes i chi ei newid â llaw.
 

@@ -3,15 +3,15 @@ title: Hooklardan foydalanish qo‘llanmasi
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks’dan foydalanish qo‘llanmasi
+# Hooks’dan foydalanish qo‘llanmasi {#hooks-usage-guide}
 
 Ultimate Multisite 200+ action hooks va 280+ filter hooks taqdim etadi. Bu sahifada amaliy misollar bilan eng ko‘p ishlatiladigan hooks yoritiladi. To‘liq avtomatik yaratilgan ma’lumotnoma uchun ushbu bo‘limdagi boshqa sahifalarni ko‘rib chiqing.
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Mijoz hayotiy sikli
+### Mijoz hayotiy sikli {#customer-lifecycle}
 
-#### Mijoz yaratilgandan keyin
+#### Mijoz yaratilgandan keyin {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Mijoz holati o‘zgarishi
+#### Mijoz holati o‘zgarishi {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Sayt Hooks
+### Sayt Hooks {#site-hooks}
 
-#### Sayt e’lon qilingandan keyin
+#### Sayt e’lon qilingandan keyin {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Shablon qo‘llanishidan oldin
+#### Shablon qo‘llanishidan oldin {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### A’zolik Hooks
+### A’zolik Hooks {#membership-hooks}
 
-#### Holat o‘tishlari
+#### Holat o‘tishlari {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### To‘lov Hooks
+### To‘lov Hooks {#payment-hooks}
 
-#### To‘lov yakunlandi / muvaffaqiyatsiz bo‘ldi
+#### To‘lov yakunlandi / muvaffaqiyatsiz bo‘ldi {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### Qayta ishlashdan oldin / yakunlangandan keyin
+#### Qayta ishlashdan oldin / yakunlangandan keyin {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domen Hooks
+### Domen Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Narxlash filtrlari
+### Narxlash filtrlari {#pricing-filters}
 
-#### Savat jami
+#### Savat jami {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Soliq stavkalari
+#### Soliq stavkalari {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Shablon filtrlari
+### Shablon filtrlari {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Cheklov filtrlari
+### Cheklov filtrlari {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway filtrlari
+### Gateway filtrlari {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout forma maydonlari
+### Checkout forma maydonlari {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Email mazmuni
+### Email mazmuni {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

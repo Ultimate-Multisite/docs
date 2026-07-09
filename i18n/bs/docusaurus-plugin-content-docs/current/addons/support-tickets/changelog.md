@@ -3,13 +3,13 @@ title: Naslovnik promjena za tikete podrške
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Dnevnik promjena za tikete podrške
+# Dnevnik promjena za tikete podrške {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Unapređeno: Uklonjen direktorijum vendor/ iz Git praćenja (već je pokriveno sa .gitignore), što smanjuje veličinu repozitorija
 * Unapređeno: Testirano do WordPress verzije 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Popravljeno: Prihvatanje null vrijednosti u setterima modela tiketa koji dozvoljavaju null
 * Popravljeno: Svi tiketi se pohranjuju u globalne tabele za cijelu mrežu radi pravilne podrške za multisajt
 * Popravljeno: Sakrivena polja za osoblje i popravljen preusmjeravanje na praznu stranicu na formularu za novi tiket klijenta
@@ -26,7 +26,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Unapređeno: Uklonjen podmeni Settings iz menija administracije pod-sajta
 * Unapređeno: Kondicionalno učitavanje prednjih resursa samo na stranicama tiketa podrške
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Dodato: Puna funkcionalnost pregleda tiketa za administratora i prednji kraj (frontend)
 * Dodato: AJAX rukovatelji za slanje odgovora na tiket
 * Dodato: Podrška za funkcionalnost odgovora na tiket sa pravilnom obradom formulara
@@ -42,12 +42,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Unapređeno: Struktura baze podataka sa pravilnim upitima i klasama šeme za odgovore i priloge
 * Unapređeno: Migracija na stvarne svojstva (properties) umjesto atributa za modele tiketa
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Ažurirano: Prefiks preimenovan u ultimate-multisite radi konzistentnosti
 * Ažurirano: Standardizacija domena teksta
 * Popravljeno: Manji popravci grešaka i poboljšanja
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Prvi izdanje
 * Kompletan sistem za upravljanje tiketima
 * Kontrola pristupa na više nivoa

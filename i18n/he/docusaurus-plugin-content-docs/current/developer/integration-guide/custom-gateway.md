@@ -3,11 +3,11 @@ title: פיתוח שער מותאם אישית
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# פיתוח Gateway מותאם אישית
+# פיתוח Gateway מותאם אישית {#custom-gateway-development}
 
 אפשר ליצור שערי תשלום מותאמים אישית על ידי הרחבת המחלקה `Base_Gateway`.
 
-## מחלקת Gateway
+## מחלקת Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## רישום ה-Gateway
+## רישום ה-Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## מתודות מרכזיות
+## מתודות מרכזיות {#key-methods}
 
 | מתודה | מטרה |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | טיפול בבקשות החזר |
 | `get_payment_methods()` | החזרת שיטות תשלום שמורות עבור לקוח |
 
-## אישורי חידוש עבור חברויות חוזרות
+## אישורי חידוש עבור חברויות חוזרות {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 מאפשרת לאינטגרציות Gateway לדווח אם לחברות חוזרת יש אישור חידוש ניתן לשימוש חוזר לפני ש-`auto_renew` נשמר. חברו את `wu_membership_has_renewal_credential` והחזירו:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 נקו את סימון האישור החסר כחלק מתהליך האישור מחדש המוצלח של ה-Gateway שלכם לאחר שמאוחסן אישור חדש הניתן לשימוש חוזר.
 
-## טיפים
+## טיפים {#tips}
 
 - החזירו תמיד `WP_Error` בעת כישלון כדי ש-Ultimate Multisite תוכל לטפל בהצגת השגיאה
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - השתמשו ב-`wu_log_add()` לרישום יומן ספציפי ל-Gateway
 
-## יכולות ספק של מחבר AI
+## יכולות ספק של מחבר AI {#ai-connector-provider-capabilities}
 
 אינטגרציות מותאמות אישית שקוראות לפעולות המגובות במחבר AI צריכות להתיישר עם מערך ספקי OAuth הנתמך שהוצג עם AI Provider for Anthropic Max v1.3.0:
 

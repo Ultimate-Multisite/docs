@@ -3,13 +3,13 @@ title: El bilen tölegleri sazlamak
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# El bilen tölegleri sazlamak (v2)
+# El bilen tölegleri sazlamak (v2) {#setting-up-manual-payments-v2}
 
 _**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 
 El bilen tölegler, **Stripe** ýa-da **PayPal** ulanyjylaryňyz üçin elýeterli bolmadyk ýagdaýynda, başga töleg usullaryny hödürlemegiň bir ýoludyr. Bu bank geçirimi ýa-da ulanyjylaryňyz üçin ýerli derejede elýeterli bolan islendik başga töleg usuly bolup biler.
 
-## El bilen tölegleri nädip işjeňleşdirmeli
+## El bilen tölegleri nädip işjeňleşdirmeli {#how-to-enable-manual-payments}
 
 El bilen tölegi sazlamak örän aňsat. Diňe ony töleg geçelgeleriniň aşagynda işjeňleşdirmeli we ulanyjynyň tölegi nädip ibermelidigi barada jikme-jik görkezmeleri girizmeli.
 
@@ -31,7 +31,7 @@ Ony sazlap bolanyňyzdan soň, diňe **Sazlamalary ýatda sakla** düwmesine bas
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## El bilen tölegleri tassyklamak
+## El bilen tölegleri tassyklamak {#confirming-manual-payments}
 
 El bilen tölegi tassyklamak üçin, çep paneldäki **Tölegler** menýusyna gidiň. Ol ýerde ulgamyňyzdaky ähli tölegleri we olaryň jikme-jikliklerini, şol sanda olaryň **ýagdaýyny** görüp bilersiňiz. El bilen töleg, siz ony el bilen üýtgedýänçäňiz, hemişe **Garaşylýar** ýagdaýynda bolar.
 

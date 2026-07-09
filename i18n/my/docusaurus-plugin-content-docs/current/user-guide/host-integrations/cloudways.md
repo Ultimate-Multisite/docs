@@ -3,18 +3,18 @@ title: Cloudways ပေါင်းစည်းမှု
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ပေါင်းစည်းမှု
+# Cloudways ပေါင်းစည်းမှု {#cloudways-integration}
 
-## အနှစ်ချုပ်
+## အနှစ်ချုပ် {#overview}
 Cloudways သည် DigitalOcean, AWS, Google Cloud စသည့် cloud provider များအပါအဝင် အမျိုးမျိုးသော cloud provider များပေါ်တွင် WordPress ဆိုက်များကို ဖြန့်ချိနိုင်စေသည့် စီမံထားသော cloud hosting ပလက်ဖောင်းတစ်ခုဖြစ်သည်။ ဤပေါင်းစည်းမှုသည် Ultimate Multisite နှင့် Cloudways အကြား domain အလိုအလျောက် ချိန်ကိုက်ခြင်းနှင့် SSL certificate စီမံခန့်ခွဲခြင်းကို လုပ်ဆောင်နိုင်စေသည်။
 
-## အင်္ဂါရပ်များ
+## အင်္ဂါရပ်များ {#features}
 - Domain အလိုအလျောက် ချိန်ကိုက်ခြင်း
 - SSL certificate စီမံခန့်ခွဲခြင်း
 - အပို domain များကို ထောက်ပံ့ခြင်း
 - SSL certificate များအတွက် DNS အတည်ပြုခြင်း
 
-## လိုအပ်ချက်များ
+## လိုအပ်ချက်များ {#requirements}
 အောက်ပါ constant များကို သင့် `wp-config.php` ဖိုင်တွင် သတ်မှတ်ထားရမည်-
 
 ```php
@@ -30,16 +30,16 @@ define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## စနစ်တကျ ပြင်ဆင်ရန် လမ်းညွှန်ချက်များ
+## စနစ်တကျ ပြင်ဆင်ရန် လမ်းညွှန်ချက်များ {#setup-instructions}
 
-### 1. သင့် Cloudways API အချက်အလက်များကို ရယူပါ
+### 1. သင့် Cloudways API အချက်အလက်များကို ရယူပါ {#1-get-your-cloudways-api-credentials}
 
 1. သင့် Cloudways dashboard သို့ ဝင်ရောက်ပါ
 2. "Account" > "API Keys" သို့ သွားပါ
 3. API key မရှိသေးပါက တစ်ခု ဖန်တီးပါ
 4. သင့် email နှင့် API key ကို ကူးယူပါ
 
-### 2. သင့် Server နှင့် Application ID များကို ရယူပါ
+### 2. သင့် Server နှင့် Application ID များကို ရယူပါ {#2-get-your-server-and-application-ids}
 
 1. သင့် Cloudways dashboard တွင် "Servers" သို့ သွားပါ
 2. သင့် WordPress multisite လက်ခံထားသည့် server ကို ရွေးချယ်ပါ
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. "Applications" သို့ သွားပြီး သင့် WordPress application ကို ရွေးချယ်ပါ
 5. App ID ကို URL တွင် တွေ့နိုင်သည်- `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. wp-config.php ထဲသို့ Constant များ ထည့်ပါ
+### 3. wp-config.php ထဲသို့ Constant များ ထည့်ပါ {#3-add-constants-to-wp-configphp}
 
 အောက်ပါ constant များကို သင့် `wp-config.php` ဖိုင်ထဲသို့ ထည့်ပါ-
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 `WU_CLOUDWAYS_EXTRA_DOMAINS` ထဲသို့ `*.your-network.com` (သို့မဟုတ် သင့်ကိုယ်ပိုင် network ၏ subdomain pattern မည်သည့်အမျိုးအစားမဆို) ကို **မထည့်ပါနှင့်**။ ၎င်းကြောင့် tenant တစ်ခုချင်းစီအတွက် SSL certificate များ ထုတ်ပေးခြင်း မဖြစ်နိုင်အောင် ဘာကြောင့် တားဆီးသွားသည်ကို အောက်ရှိ [အရေးကြီး — wildcard SSL အမှားအယွင်း](#important--wildcard-ssl-pitfall) တွင် ကြည့်ပါ။
 :::
 
-### 4. ပေါင်းစည်းမှုကို ဖွင့်ပါ
+### 4. ပေါင်းစည်းမှုကို ဖွင့်ပါ {#4-enable-the-integration}
 
 1. သင့် WordPress admin တွင် Ultimate Multisite > Settings သို့ သွားပါ
 2. "Domain Mapping" tab သို့ သွားပါ
@@ -76,9 +76,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Cloudways ပေါင်းစည်းမှုကို ဖွင့်ပါ
 5. "Save Changes" ကို နှိပ်ပါ
 
-## အလုပ်လုပ်ပုံ
+## အလုပ်လုပ်ပုံ {#how-it-works}
 
-### Domain ချိန်ကိုက်ခြင်း
+### Domain ချိန်ကိုက်ခြင်း {#domain-syncing}
 
 Ultimate Multisite တွင် domain တစ်ခုကို map လုပ်သောအခါ-
 
@@ -89,7 +89,7 @@ Ultimate Multisite တွင် domain တစ်ခုကို map လုပ်
 
 မှတ်ချက်- Cloudways API သည် domain တစ်ခုချင်းစီကိုသာ ထည့်ခြင်း သို့မဟုတ် ဖယ်ရှားခြင်းမဟုတ်ဘဲ အကြိမ်တိုင်း domain စာရင်းအပြည့်အစုံကို ပို့ရန် လိုအပ်သည်။
 
-### SSL Certificate စီမံခန့်ခွဲခြင်း
+### SSL Certificate စီမံခန့်ခွဲခြင်း {#ssl-certificate-management}
 
 Domain များ ချိန်ကိုက်ပြီးနောက်-
 
@@ -99,7 +99,7 @@ Domain များ ချိန်ကိုက်ပြီးနောက်-
 
 ပေါင်းစည်းမှုသည် Cloudways မှ **standard** (wildcard မဟုတ်သော) Let's Encrypt certificate များကိုသာ အမြဲတောင်းဆိုသည်။ `WU_CLOUDWAYS_EXTRA_DOMAINS` တွင် wildcard pattern ထည့်ထားပါက SSL တောင်းဆိုမှု မလုပ်မီ အစပိုင်းရှိ `*.` ကို ဖယ်ရှားသည် — wildcard ကိုယ်တိုင်ကို ဤပေါင်းစည်းမှုက ဘယ်တော့မှ မထည့်သွင်းပါ။ Cloudways တွင် wildcard certificate အသုံးပြုရန် ၎င်းကို ကိုယ်တိုင်ထည့်သွင်းရမည်။ သို့သော် ထိုသို့လုပ်ခြင်းသည် map လုပ်ထားသော custom domain များအတွက် domain တစ်ခုချင်းစီအလိုက် Let's Encrypt ထုတ်ပေးခြင်းကို ပိတ်ဆို့သည် (အောက်ပါ အမှားအယွင်းကို ကြည့်ပါ)။
 
-## အပို Domain များ
+## အပို Domain များ {#extra-domains}
 
 `WU_CLOUDWAYS_EXTRA_DOMAINS` constant သည် Cloudways application ၏ aliases စာရင်းတွင် အမြဲထိန်းသိမ်းထားလိုသော အပို **ပြင်ပ** domain များကို သတ်မှတ်နိုင်စေသည်။ ၎င်းကို အောက်ပါတို့အတွက် အသုံးပြုပါ-
 
@@ -109,13 +109,13 @@ Domain များ ချိန်ကိုက်ပြီးနောက်-
 ဤ constant ကို သင့်ကိုယ်ပိုင် network ၏ subdomain wildcard အတွက် **မသုံးပါနှင့်**
 (ဥပမာ `*.your-network.com`)။ အောက်ရှိ wildcard SSL အမှားအယွင်းကို ကြည့်ပါ။
 
-## အရေးကြီး — Wildcard SSL အမှားအယွင်း
+## အရေးကြီး — Wildcard SSL အမှားအယွင်း {#important--wildcard-ssl-pitfall}
 
 Cloudways ၏ default setup ကို လိုက်နာရာတွင် တွေ့ရများသော အမှားတစ်ခုမှာ `WU_CLOUDWAYS_EXTRA_DOMAINS` ထဲသို့ `*.your-network.com` ကဲ့သို့ wildcard တစ်ခု ထည့်ခြင်း၊ သို့မဟုတ် ထို wildcard အတွက် Cloudways wildcard SSL certificate ကို ကိုယ်တိုင်ထည့်သွင်းခြင်း ဖြစ်သည်။
 
 **ဤသို့လုပ်ပါက Ultimate Multisite က map လုပ်သော tenant တစ်ခုချင်းစီ၏ custom domain များအတွက် Let's Encrypt certificate များ ထုတ်ပေးရန် Cloudways က ငြင်းပယ်မည်။** Cloudways သည် application ပေါ်ရှိ လက်ရှိအသုံးပြုနေသော SSL certificate ကို အကြိမ်တိုင်း အစားထိုးသည်။ application ပေါ်တွင် ရှိပြီးသား wildcard certificate တစ်ခုရှိနေပါက ပေါင်းစည်းမှုက မှီခိုနေသော domain တစ်ခုချင်းစီအလိုက် Let's Encrypt ထုတ်ပေးမှုကို ပိတ်ဆို့သည်။
 
-### Ultimate Multisite network အတွက် အကြံပြုထားသော Cloudways SSL setup
+### Ultimate Multisite network အတွက် အကြံပြုထားသော Cloudways SSL setup {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Cloudways application ၏ **SSL Certificate** tab တွင် `your-network.com` နှင့် `www.your-network.com` ကိုသာ အကျုံးဝင်သည့် **standard
    Let's Encrypt certificate** ကို ထည့်သွင်းပါ
@@ -128,20 +128,20 @@ wildcard certificate တစ်ခု အလုပ်လုပ်နေပါက 
 certificate ကို ပြန်ထုတ်ပါ၊ ထို့နောက် `WU_CLOUDWAYS_EXTRA_DOMAINS` မှ wildcard entries များကို ဖယ်ရှားပါ။ ပြီးလျှင် domain mapping တစ်ခုကို ပြန်စတင်ပါ (သို့မဟုတ် နောက်တစ်ခုကို စောင့်ပါ)
 ပြီး integration က per-domain certificates များကို ထပ်မံ ထုတ်ပေးမည်ဖြစ်သည်။
 
-## ပြဿနာဖြေရှင်းခြင်း
+## ပြဿနာဖြေရှင်းခြင်း {#troubleshooting}
 
-### API ချိတ်ဆက်မှုပြဿနာများ
+### API ချိတ်ဆက်မှုပြဿနာများ {#api-connection-issues}
 - သင့် email နှင့် API key မှန်ကန်ကြောင်း စစ်ဆေးပါ
 - သင့် server နှင့် application IDs များ မှန်ကန်ကြောင်း စစ်ဆေးပါ
 - သင့် Cloudways account တွင် လိုအပ်သော permissions များ ရှိကြောင်း သေချာပါစေ
 
-### SSL Certificate ပြဿနာများ
+### SSL Certificate ပြဿနာများ {#ssl-certificate-issues}
 - Cloudways သည် SSL certificates များ မထုတ်ပေးမီ domains များတွင် သင့် server ကို ညွှန်ပြသော မှန်ကန်သည့် DNS records များ ရှိရန် လိုအပ်သည်
 - integration သည် SSL certificates များ မတောင်းဆိုမီ DNS records များကို စစ်ဆေးအတည်ပြုသည်
 - SSL certificates များ မထုတ်ပေးပါက သင့် domains များသည် သင့် server ၏ IP address သို့ မှန်ကန်စွာ ညွှန်ပြနေကြောင်း စစ်ဆေးပါ
 - **tenant တစ်ခုစီ၏ စိတ်ကြိုက် domains များ SSL မရှိဘဲ ရပ်နေပါသလား။** Cloudways application ၏ SSL Certificate tab ကို စစ်ဆေးပါ။ wildcard certificate တစ်ခု (ကိုယ်တိုင် ထည့်သွင်းထားသော၊ သို့မဟုတ် `*.your-network.com` ကို လွှမ်းခြုံသော) အလုပ်လုပ်နေပါက Cloudways သည် တစ်ခုချင်း mapping လုပ်ထားသော စိတ်ကြိုက် domains များအတွက် Let's Encrypt certificates များကို ထုတ်ပေးမည်မဟုတ်ပါ။ ၎င်းကို အဓိက network domain (`your-network.com`, `www.your-network.com`) ကိုသာ လွှမ်းခြုံသည့် standard Let's Encrypt certificate ဖြင့် အစားထိုးပြီး `WU_CLOUDWAYS_EXTRA_DOMAINS` မှ wildcard entries များကို ဖယ်ရှားပါ။ ပြီးလျှင် domain mapping တစ်ခုကို ပြန်စတင်ပါ (သို့မဟုတ် နောက်တစ်ခုကို စောင့်ပါ)၊ integration သည် per-domain certificates များကို တောင်းဆိုမည်ဖြစ်သည်။
 
-### Domain မထည့်သွင်းနိုင်ခြင်း
+### Domain မထည့်သွင်းနိုင်ခြင်း {#domain-not-added}
 - error messages ရှိမရှိ Ultimate Multisite logs များကို စစ်ဆေးပါ
 - domain သည် Cloudways တွင် ထည့်သွင်းပြီးသား မဟုတ်ကြောင်း စစ်ဆေးပါ
 - သင်ထည့်သွင်းနေသော domains အရေအတွက်ကို သင့် Cloudways plan က ပံ့ပိုးကြောင်း သေချာပါစေ

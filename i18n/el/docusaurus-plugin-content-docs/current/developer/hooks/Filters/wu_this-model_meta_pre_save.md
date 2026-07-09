@@ -4,11 +4,11 @@ title: 'Filter - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Φίλτρο: wu_\{$this->model\}_meta_pre_save
+# Φίλτρο: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Φιλτράρει τα δεδομένα meta πριν αυτά κωδικοποιηθούν (serialize) για αποθήκευση στη βάση δεδομένων.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Όνομα | Τύπος | Περιγραφή |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 | $data_unserialized | `array` | Τα δεδομένα αντικειμένου που θα αποθηκευτούν. |
 | $this | `\Base_Model` | Η εντολή (instance) του αντικειμένου. |
 
-### Από
+### Από {#since}
 
 - 2.0.0
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) στην γραμμή 534

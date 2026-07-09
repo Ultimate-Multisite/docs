@@ -3,11 +3,11 @@ title: Plaga quruvchi va sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 ning'izga **Plugin Builder & Sandbox System**ni taqdim etadi. Bu tizim sizning tarmohingizdagi WordPress pluginlarini xavfsiz, alohida sandbox muhit orqali yaratish, faollashtirish va boshqarish imkonini beradi — hamma narsa xavfsiz ajratilgan muhitda amalga oshiriladi.
 
-## Umumiy ko'rinish
+## Umumiy ko'rinish {#overview}
 
 Plugin Builder AI yordamchisiga tabiiy til so'rovlariga javoban maxsus WordPress pluginlarini yozish imkonini beradi. Yaratilgan pluginlar jonli sayt funksionalligiga ta'sir qilmasdan, avval sandbox qatlami ichida tasdiqlanadi, saqlanadi va faollashtiriladi.
 
@@ -17,7 +17,7 @@ Qo'llash misollari:
 - WordPress hooklari yoki maxsus post turlari talab qiladigan xususiyatlarni prototiplash.
 - Batch operatsiyalar uchun qisqa muddatli avtomatlashtirish skriptlarini yaratish.
 
-## AI orqali Plugin yaratish
+## AI orqali Plugin yaratish {#generating-a-plugin-via-ai}
 
 Plugin yaratish uchun Gratis AI Agent chat interfeysini oching va nima kerakligini tasvirlang. Masalan:
 
@@ -32,7 +32,7 @@ AI quyidagilarni amalga oshiradi:
 
 Faollashtirishdan oldin, shu suhbat sarlovida keyingi savollar berish orqali natijani takomillashtirishingiz mumkin.
 
-## Sandboxda Faollashtirish
+## Sandboxda Faollashtirish {#sandbox-activation}
 
 Yaratilgan pluginni sandboxda faollashtirish — uni jonli tarmoqda faollashtirishdan farqli holatdir. Sandbox:
 
@@ -48,7 +48,7 @@ Pluginni sandboxda faollashtirish uchun AI chat javobidagi **Activate in Sandbox
 
 Status xaberi faoliyat muvaffaqiyatli yakunlanganmi yoki muvaffaqiyatsiz yakunlanganmiini tasdiqlaydi. Agar muvaffaqiyatsiz bo'lsa, xato yozuvi chat saridagi logda ko'rsatiladi.
 
-## Yaratilgan Pluginlarni Boshqarish
+## Yaratilgan Pluginlarni Boshqarish {#managing-generated-plugins}
 
 Yaratilgan pluginlar **Gratis AI Agent → Plugin Builder → Manage Plugins** orqali ro'yxatdan olinadi. Ushbu ekranlardan siz quyidagilarni qila olasiz:
 
@@ -64,7 +64,7 @@ Yaratilgan pluginlar **Gratis AI Agent → Plugin Builder → Manage Plugins** o
 **Tarmoqda o'rnatish** yaratilgan pluginni sizning tirik WordPress multisite'ingizga joylashtiradi. Davom etishdan oldin plugin kodini ko'rib chiqing. Gratis AI Agent tirik o'rnatishni yakunlashdan oldin tasdiqlash uchun so'rov beradi.
 :::
 
-## Yaratilgan Pluginni Tarmoqda O'rnatish
+## Yaratilgan Pluginni Tarmoqda O'rnatish {#installing-a-generated-plugin-on-the-network}
 
 Sandboxdagi plugin sizga qoniqganda, uni tirik tarmoqda o'rnatishingiz mumkin:
 
@@ -78,7 +78,7 @@ Alternativ ravishda, chat interfeysidagi slash buyrug'idan foydalanishingiz mumk
 /install-plugin <plugin-slug>
 ```
 
-## Plugin Yangilanishlari
+## Plugin Yangilanishlari {#plugin-updates}
 
 Yaratilgan pluginni yangilash uchun yangi suhbatda AI yordamchisiga o'zgartirishni tasvirlang:
 
@@ -86,7 +86,7 @@ Yaratilgan pluginni yangilash uchun yangi suhbatda AI yordamchisiga o'zgartirish
 
 AI yangi versiyani yaratadi va u sandbox ichida hozirgi versiya bilan birga paydo bo'ladi. Siz diff (farq) ni ko'rib chiqing va yangilash qo'llanilishidan oldin tasdiqlang.
 
-## HookScanner Integratsiyasi
+## HookScanner Integratsiyasi {#hookscanner-integration}
 
 Plugin Builder har bir yaratilgan plugin tomonidan ro'yxatdan olingan hooklar va filterlarni tahlil qilish uchun integratsiyalashgan **HookScanner** dan foydalanadi. HookScanner natijalari chat javobida ko'rsatiladi va quyidagilarni o'z ichiga oladi:
 
@@ -96,7 +96,7 @@ Plugin Builder har bir yaratilgan plugin tomonidan ro'yxatdan olingan hooklar va
 
 Bu sizga pluginni faollashtirishdan oldin uning xarakteristikini tushunishga yordam beradi.
 
-## Xavfsizlik Eslatmalar
+## Xavfsizlik Eslatmalar {#security-considerations}
 
 - Yaratilgan pluginlar qo'lda o'rnatilgan pluginlardan alohida saqlanadi va ularga tarmoqda aniq o'rnatmagunchki standart WordPress plugin boshqaruv ekranidan ularga kirish mumkin emas.
 - Sandbox fayllarni yozayotganda kataloglarni aylantirishni (directory traversal) oldini olish uchun yo'l tekshiruvidan foydalanadi.

@@ -3,7 +3,7 @@ title: Kuskuren Farko na Rana
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# گڑولکردن لە فایلەکە
+# گڑولکردن لە فایلەکە {#error-installing-the-sunrise-file}
 
 فایلەکەی `sunrise.php` فایلی تایبەتە کە وۆردپريس (WordPress) لە کاتی سەرەتایی کارکردنی خۆی دەگەڕێتەوە بۆی. بۆ ئەوەی وۆردپريس بتوانێت ئەم فایلییە بەدوای بگرێت، دەبێت لەناو دۆلێری **wp-content**دا جێگیر بێت.
 

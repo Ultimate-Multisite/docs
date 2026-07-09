@@ -4,11 +4,11 @@ title: کردار - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# کردار: set_logged_in_cookie
+# کردار: set_logged_in_cookie {#action-setloggedincookie}
 
 دەستپێدەکات دەستبەجێ پێش ئەوەی cookieی پشتڕاستکردنەوەی logged-in دابنرێت.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | شێوازی پشتڕاستکردنەوە. بنەڕەت 'logged_in'. |
 | $token | `string` | session token ـی بەکارهێنەر بۆ بەکارهێنان بۆ ئەم cookieیە. |
 
-### لەوەوە
+### لەوەوە {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### سەرچاوە
+### سەرچاوە {#source}
 
 پێناسەکراوە لە [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) لە دێڕی 141

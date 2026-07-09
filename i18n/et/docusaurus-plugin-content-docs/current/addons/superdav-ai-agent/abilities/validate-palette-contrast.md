@@ -3,15 +3,15 @@ title: Valideeri paleti kontrastsus
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Paleti kontrasti valideerimine
+# Paleti kontrasti valideerimine {#validate-palette-contrast}
 
 Võime **Validate Palette Contrast** kontrollib sinu kujunduspaleti värvipaare WCAG (Web Content Accessibility Guidelines) nõuetele vastavuse suhtes enne nende rakendamist sinu theme’ile.
 
-## Ülevaade
+## Ülevaade {#overview}
 
 See võime tagab, et sinu saidi värviskeem vastab ligipääsetavuse standarditele, valideerides kontrastsuse suhtarve teksti- ja taustavärvide vahel. See aitab vältida värvikombinatsioone, mida nägemispuudega kasutajatel võib olla raske lugeda.
 
-## Sisendvorming
+## Sisendvorming {#input-format}
 
 Võime võtab sisendina vastu värvipaleti:
 
@@ -35,7 +35,7 @@ Võime võtab sisendina vastu värvipaleti:
 }
 ```
 
-### Parameetrid
+### Parameetrid {#parameters}
 
 | Parameeter | Tüüp | Kohustuslik | Kirjeldus |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Võime võtab sisendina vastu värvipaleti:
 | `wcag_level` | string | Ei | WCAG nõuetele vastavuse tase: "A", "AA" (vaikimisi) või "AAA" |
 | `pairs_to_check` | array | Ei | Konkreetsed värvipaarid valideerimiseks (nt `["primary-text", "background-text"]`) |
 
-## Kontrollitavad WCAG tasemed
+## Kontrollitavad WCAG tasemed {#wcag-levels-checked}
 
 Võime valideerib kontrastsuse suhtarve WCAG standardite järgi:
 
@@ -56,7 +56,7 @@ Võime valideerib kontrastsuse suhtarve WCAG standardite järgi:
 - **Tavatekst** — tekst, mis on väiksem kui 18 pt (või 14 pt paksus kirjas)
 - **Suur tekst** — tekst 18 pt või suurem (või 14 pt paksus kirjas või suurem)
 
-## Väljundskeem
+## Väljundskeem {#output-schema}
 
 Võime tagastab üksikasjaliku valideerimisaruande:
 
@@ -95,7 +95,7 @@ Võime tagastab üksikasjaliku valideerimisaruande:
 }
 ```
 
-### Väljundväljad
+### Väljundväljad {#output-fields}
 
 | Väli | Tüüp | Kirjeldus |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Võime tagastab üksikasjaliku valideerimisaruande:
 | `status` | string | "pass" või "fail" iga paari kohta |
 | `recommendations` | array | Soovitused ebaõnnestunud paaride parandamiseks |
 
-## Kasutusnäide
+## Kasutusnäide {#usage-example}
 
 **Viip:**
 ```
@@ -119,7 +119,7 @@ Võime valideerib kõik värvikombinatsioonid ja tagastab:
 - ✅ Taust + tekst: suhtarv 12.1:1 (läbib WCAG AAA)
 - Üldiselt: vastab WCAG AA nõuetele
 
-## Integratsioon Theme Builderiga
+## Integratsioon Theme Builderiga {#integration-with-theme-builder}
 
 Theme Builderi kujundussuuna valiku kasutamisel teeb Validate Palette Contrast võime järgmist:
 
@@ -129,7 +129,7 @@ Theme Builderi kujundussuuna valiku kasutamisel teeb Validate Palette Contrast v
 4. Annab soovitusi nõuetele mittevastavate paaride kohta
 5. Takistab ligipääsmatute värviskeemide rakendamist
 
-## Parimad tavad
+## Parimad tavad {#best-practices}
 
 - **Alusta AA tasemest** — WCAG AA on enamiku veebisaitide standard
 - **Testi enne rakendamist** — valideeri oma palett enne kujundusele pühendumist
@@ -137,7 +137,7 @@ Theme Builderi kujundussuuna valiku kasutamisel teeb Validate Palette Contrast v
 - **Arvesta kasutaja eelistustega** — mõnel kasutajal võib olla täiendav värvitundlikkus
 - **Kasuta kontrastsuse kontrollijaid** — kombineeri seda võimet kontrollimiseks brauseritööriistadega
 
-## Ebaõnnestunud paarid ja soovitused
+## Ebaõnnestunud paarid ja soovitused {#failing-pairs-and-recommendations}
 
 Kui värvipaar valideerimisel ebaõnnestub, annab võime soovitusi:
 
@@ -155,7 +155,7 @@ Kui värvipaar valideerimisel ebaõnnestub, annab võime soovitusi:
 }
 ```
 
-## Seotud võimed
+## Seotud võimed {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — loo logosid oma valideeritud värvipaletiga
 - [Create Menu](./create-menu.md) — ehita ligipääsetavate värvidega navigeerimine

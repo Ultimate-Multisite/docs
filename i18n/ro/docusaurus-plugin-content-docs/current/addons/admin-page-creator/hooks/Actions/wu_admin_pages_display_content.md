@@ -4,19 +4,19 @@ title: Action - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Acțiune: wu_admin_pages_display_content
+# Acțiune: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
 
 Afișează conținutul editorului personalizat.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
 | $ | `\WU_Admin_Page` | Obiectul paginii de administrare |
 
-### De la
+### De la {#since}
 
 - 1.0.1
-### Sursă
+### Sursă {#source}
 
 Definit în [`views/template/page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/template/page.php#L53) la linia 53

@@ -4,23 +4,23 @@ title: Filter - wu_stripe_create_payment_intent_args
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# Filter: wu_stripe_create_payment_intent_args
+# Filter: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
 
 పేమెంట్ ఇంటెంట్ ఆర్గ్యుమెంట్ల సెట్‌ను ఫిల్టర్ చేయడానికి ఇది ఉపయోగపడుతుంది.
 
-## పారామీటర్లు
+## పారామీటర్లు {#parameters}
 
 | Name | Type | వివరణ |
 |------|------|-------------|
 | $intent_args | `array` | ఇంటెంట్ ఆర్గ్యుమెంట్ల జాబితా. |
 | $stripe_gateway | `\Stripe_Gateway` | . |
 
-### ఎప్పటి నుండి
+### ఎప్పటి నుండి {#since}
 
 - 2.0
-### మూలం
+### మూలం {#source}
 
 [`inc/gateways/class-stripe-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-stripe-gateway.php#L377) లోని 377వ లైన్‌లో నిర్వచించబడింది.
 
 
-## తిరిగి ఇస్తుంది
+## తిరిగి ఇస్తుంది {#returns}

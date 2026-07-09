@@ -3,9 +3,9 @@ title: Tríocht ar Paymeanta agus Faoisnéisí
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Déanamh ar Peleáil agus Invoíce
+# Déanamh ar Peleáil agus Invoíce {#managing-payments-and-invoices}
 
-## Caintar Peleála
+## Caintar Peleála {#payment-settings}
 
 Am bheith ag fáil peleála, leat ag cur isteach an t-aistriúcháin peleála. Cur le chéile go dtí **Ultimate Multisite → Settings** agus cliceáil ar an tab **Payment**.
 
@@ -15,7 +15,7 @@ Seo an fhoisteán láimhseallta de seachtain peleála:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Opciones Peleála Áirítear
+### Opciones Peleála Áirítear {#general-payment-options}
 
 Agairm go léir i gcaintar aistriúcháin leat ag cur isteach:
 
@@ -24,7 +24,7 @@ Agairm go léir i gcaintar aistriúcháin leat ag cur isteach:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Portail Peleála
+### Portail Peleála {#payment-gateways}
 
 Siontúir Ultimate Multisite feic ar chuid portail peleála. Leat ag fáil agus a chur in áit chéile go léir deadaí an t-aistriúcháin ó tab Caintar Peleála.
 
@@ -40,11 +40,11 @@ Tá chéad aistriúcháin a bheith agat a chomhraithe ar chuid aistriúcháin a 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Mode Sandbox
+### Mode Sandbox {#sandbox-mode}
 
 Leat ag cur in áit **Sandbox Mode** chun an t-aistriúcháin peleála a shábháil go léir ar chuid aistriúcháin a bheith agat leathanach. Nuair atá Sandbox mode ar fáil, ní bheidh aon cheangail réel ag cur in áit.
 
-## Féachaint ar Peleála
+## Féachaint ar Peleála {#viewing-payments}
 
 Siontúir an cur **Payments** oir Ultimate Multisite chun an gcuid tráchtála a fheiceáil ar chuid na ngrúpa.
 
@@ -54,7 +54,7 @@ Leat ag fílteadh peleála ar stáit (comhlaithe, ag teacht, leathmaithe, leatai
 
 Clicidh ar curte a chruinneáil chun an foirme láithreacha a fheiceáil, gan cur chun cinn na liosta, an ghlúinneacht a bhaineann leis, an t-aithreachas oileúnceála agus na dataí de chuid curte pocht.
 
-## Invoices (Foirme Láithreacha)
+## Invoices (Foirme Láithreacha) {#invoices}
 
 Is féidir le Ultimate Multisite foirme láithreacha a shonraithe go mbeidh curte pocht. Is féidir leat an foirme láithreacha agus an foirme nualachais a chothromú ó chuid curte set-táirgí (Payment settings).
 

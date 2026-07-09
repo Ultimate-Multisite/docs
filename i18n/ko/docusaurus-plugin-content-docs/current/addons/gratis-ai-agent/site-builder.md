@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0에서 도입됨)는 다단계 웹사이트 생성을 구동하는 엔진입니다. 에이전트에게 "레스토랑 웹사이트를 만들어라" 또는 "블로그가 있는 포트폴리오를 만들어라"와 같이 요청하면, 오케스트레이터는 이 높은 수준의 목표를 구조화된 **계획(plan)**으로 분해하고, 이를 수행하는 데 필요한 플러그인을 찾아내며, 각 단계를 순차적으로 실행하고, 진행 상황을 추적하며, 오류 발생 시 자율적으로 복구합니다.
 
 ---
 
-## 작동 방식
+## 작동 방식 {#how-it-works}
 
-### 1. 계획 생성 (Plan Generation)
+### 1. 계획 생성 (Plan Generation) {#1-plan-generation}
 
 에이전트가 사이트 구축 지침을 받으면, `create_site_plan` 기능을 호출하여 JSON 형식의 **사이트 계획(site plan)**을 생성합니다. 이 계획에는 다음 내용이 포함됩니다.
 
@@ -61,7 +61,7 @@ Site Builder Orchestration v2 (Gratis AI Agent v1.4.0에서 도입됨)는 다단
 }
 ```
 
-### 2. 플러그인 검색 (Plugin Discovery)
+### 2. 플러그인 검색 (Plugin Discovery) {#2-plugin-discovery}
 
 실행이 시작되기 전에, 오케스트레이터는 계획의 `plugin_requirements`를 스캔하여 현재 활성화된 플러그인을 확인합니다. 필요한 플러그인이 누락된 경우, 다음 작업을 수행합니다.
 
@@ -71,7 +71,7 @@ Site Builder Orchestration v2 (Gratis AI Agent v1.4.0에서 도입됨)는 다단
 
 플러그인 검색 실패는 치명적이지 않습니다. 오케스트레이터는 영향을 받은 단계를 `skipped`로 표시하고 나머지 계획을 계속 진행합니다.
 
-### 3. 계획 실행 (Plan Execution)
+### 3. 계획 실행 (Plan Execution) {#3-plan-execution}
 
 오케스트레이터는 계획 ID와 함께 `execute_site_plan`을 호출합니다. 실행은 단계별로, 그리고 단계별로 진행됩니다.
 
@@ -79,7 +79,7 @@ Site Builder Orchestration v2 (Gratis AI Agent v1.4.0에서 도입됨)는 다단
 - **병렬 단계** — 동일한 단계 내에 있으며 상호 의존성이 없는 단계는 `parallel` 플래그가 설정된 경우 동시에 처리됩니다.
 - **단계 시간 초과** — 각 단계는 개별적인 시간 제한(기본값: `Ability Timeout` 설정)을 가집니다. 시간 초과된 단계는 `failed`로 표시되며 계획은 계속 진행됩니다.
 
-### 4. 진행 상황 추적 (Progress Tracking)
+### 4. 진행 상황 추적 (Progress Tracking) {#4-progress-tracking}
 
 언제든지 `get_plan_progress`를 호출하여 실행 상태를 확인할 수 있습니다.
 
@@ -104,7 +104,7 @@ WP-CLI 사용자는 다음 명령어로 진행 상황을 모니터링할 수 있
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. 오류 복구 (Error Recovery)
+### 5. 오류 복구 (Error Recovery) {#5-error-recovery}
 
 단계가 실패하면, 오케스트레이터는 계획에 정의된 **대체 단계(fallback)**가 있는지 확인합니다.
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 자연어 목표 설명으로부터 구조화된 사이트 계획을 생성합니다.
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 이전에 생성된 사이트 계획의 실행을 시작합니다.
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 사이트 계획의 현재 실행 상태를 반환합니다.
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 실패한 단계를 수동으로 해결하고 다음 단계부터 계획 실행을 재개합니다. 자동 복구가 불가능하여 개입해야 할 때 사용합니다.
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## v1과 v2 비교
+## v1과 v2 비교 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## WP-CLI Plan Commands
+## WP-CLI Plan Commands {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 목표 설명으로부터 사이트 계획을 생성합니다.
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 이전에 생성된 계획을 실행합니다.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 실행 중이거나 완료된 계획의 현재 진행 상황을 보여줍니다.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 모든 사이트 계획(대기 중, 진행 중, 완료됨)을 나열합니다.
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 실패한 계획을 `pending` 상태로 재설정하여 처음부터 다시 실행할 수 있게 합니다.
 

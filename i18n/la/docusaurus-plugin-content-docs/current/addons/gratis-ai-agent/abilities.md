@@ -3,7 +3,7 @@ title: Index Facultatum
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Index Facultatum
+# Index Facultatum {#abilities-reference}
 
 Facultates sunt actiones atomicae quas Gratis AI Agent in tua institutione WordPress invocare potest. Quaeque facultas est classis PHP registrata quae schema JSON exponit — agens hoc schema tempore exsecutionis legit ut intellegat quae parametra requirantur et quid facultas reddat.
 
@@ -11,11 +11,11 @@ Haec pagina omnes facultates documentatur quae cum Gratis AI Agent v1.9.0 distri
 
 ---
 
-## Genera Commentariorum Consuetudinaria
+## Genera Commentariorum Consuetudinaria {#custom-post-types}
 
 Hae facultates genera commentariorum consuetudinaria (CPTs) per agentem registrata administrant. Registrationes in tabula optionum WordPress servantur, ut post deactivationem et reactivationem plugin permaneant.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Novum genus commentarii consuetudinarium registrat.
 
@@ -50,7 +50,7 @@ Novum genus commentarii consuetudinarium registrat.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Redit omnia genera commentariorum consuetudinaria ab agente registrata.
 
@@ -73,7 +73,7 @@ Redit omnia genera commentariorum consuetudinaria ab agente registrata.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Deregistrat genus commentarii consuetudinarium antea ab agente registratum. Commentarii existentes illius generis in database manent sed per genus commentarii iam non sunt accessibiles.
 
@@ -87,11 +87,11 @@ Deregistrat genus commentarii consuetudinarium antea ab agente registratum. Comm
 
 ---
 
-## Taxonomiae Consuetudinariae
+## Taxonomiae Consuetudinariae {#custom-taxonomies}
 
 Hae facultates taxonomias consuetudinarias administrant. Sicut CPTs, registrationes taxonomiarum servantur.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Novam taxonomiam consuetudinariam registrat.
 
@@ -123,7 +123,7 @@ Novam taxonomiam consuetudinariam registrat.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Redit omnes taxonomias consuetudinarias ab agente registratas.
 
@@ -146,7 +146,7 @@ Redit omnes taxonomias consuetudinarias ab agente registratas.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Deregistrat taxonomiam consuetudinariam antea ab agente registratam.
 
@@ -160,11 +160,11 @@ Deregistrat taxonomiam consuetudinariam antea ab agente registratam.
 
 ---
 
-## Systema Designii
+## Systema Designii {#design-system}
 
 Facultates systematis designii presentationem visualem situs WordPress mutant — a CSS consuetudinario ad exemplaria clausorum et logotypum situs.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Adiungit CSS ad `<head>` situs per `wp_add_inline_style`. CSS in optione `gratis_ai_agent_custom_css` servatur et ordinate ex ordine removetur cum facultas resetatur.
 
@@ -190,7 +190,7 @@ Adiungit CSS ad `<head>` situs per `wp_add_inline_style`. CSS in optione `gratis
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registrat exemplar clausorum iterum adhibendum in bibliotheca exemplarium WordPress.
 
@@ -209,7 +209,7 @@ Registrat exemplar clausorum iterum adhibendum in bibliotheca exemplarium WordPr
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Enumerat omnia exemplaria clausorum ab agente registrata.
 
@@ -231,7 +231,7 @@ Enumerat omnia exemplaria clausorum ab agente registrata.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Constituit logo situs WordPress ad datum ID attachamenti aut ad URL imaginis remotae. Cum URL praebetur, imago deponitur et in Media Library importatur.
 
@@ -248,7 +248,7 @@ Unum ex `attachment_id` aut `url` praebendum est.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Applicat praedefinitionem nominatam coloris/typographiae ad `theme.json` thematis activi (aut `global-styles`). Praedefinitiones sunt fasciculi selecti a grege Gratis AI Agent curati.
 
@@ -273,11 +273,11 @@ Applicat praedefinitionem nominatam coloris/typographiae ad `theme.json` themati
 
 ---
 
-## Styli Globales
+## Styli Globales {#global-styles}
 
 Facultates Stylorum Globalium valores theme.json legunt et scribunt per WordPress Global Styles API, omnes caudices et exemplaria per totum situm afficientes.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Reddit configurationem praesentem stylorum globalium.
 
@@ -291,7 +291,7 @@ Reddit configurationem praesentem stylorum globalium.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Renovat unum vel plures valores in configuratione stylorum globalium.
 
@@ -318,7 +318,7 @@ Renovat unum vel plures valores in configuratione stylorum globalium.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Reponit omnes mutationes stylorum globalium ab agente applicatas, praedefinita thematis restituens.
 
@@ -328,11 +328,11 @@ Reponit omnes mutationes stylorum globalium ab agente applicatas, praedefinita t
 
 ---
 
-## Menus Navigationis
+## Menus Navigationis {#navigation-menus}
 
 Facultates Menuum Navigationis creant et administrant menus navigationis WordPress atque eorum elementa.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Creat novum menu navigationis WordPress.
 
@@ -347,7 +347,7 @@ Creat novum menu navigationis WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Menu renominat aut illud loco thematis iterum attribuit.
 
@@ -363,7 +363,7 @@ Menu renominat aut illud loco thematis iterum attribuit.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Addit elementum ad menu navigationis iam exsistens.
 
@@ -383,7 +383,7 @@ Addit elementum ad menu navigationis iam exsistens.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Removet elementum e menu navigationis.
 
@@ -397,7 +397,7 @@ Removet elementum e menu navigationis.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Enumerat omnia menus navigationis WordPress, una cum locis thematis eis attributis.
 
@@ -420,11 +420,11 @@ Enumerat omnia menus navigationis WordPress, una cum locis thematis eis attribut
 
 ---
 
-## Administratio Optionum
+## Administratio Optionum {#options-management}
 
 Facultates optionum legunt et scribunt optiones WordPress per `get_option` / `update_option`. Index clausus securitatis inclusus impedit ne configurationes criticae casu mutentur.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Legit optionem WordPress.
 
@@ -440,7 +440,7 @@ Reddit errorem si `option_name` in indice clauso securitatis est.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Scribit optionem WordPress.
 
@@ -458,7 +458,7 @@ Errorem reddit si `option_name` in indice exclusionis securitatis est.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Optionem WordPress delet.
 
@@ -474,7 +474,7 @@ Errorem reddit si `option_name` in indice exclusionis securitatis est.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Optiones WordPress secundum exemplar congruentes enumerat.
 
@@ -498,11 +498,11 @@ Optiones WordPress secundum exemplar congruentes enumerat.
 
 ---
 
-## Administratio Contenti
+## Administratio Contenti {#content-management}
 
 Facultates Administrationis Contenti commentationes et paginas WordPress creant atque edunt. ID commentationum redduntur, ut gradus subsequentes in consiliis multiplicium facultatum contentum creatum referre possint.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Novam commentationem WordPress, paginam, aut ingressum generis commentationis proprii creat.
 
@@ -537,7 +537,7 @@ Novam commentationem WordPress, paginam, aut ingressum generis commentationis pr
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Commentationem aut paginam WordPress iam exstantem renovat.
 
@@ -567,7 +567,7 @@ Commentationem aut paginam WordPress iam exstantem renovat.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Plures commentationes uno facultatis accersitu creat, itinera ultro citroque facta minuens dum situs construuntur aut contentum mole importatur. Commentationes ordine creantur; si una deficit, ceterae pergunt et defectus in serie eventuum nuntiatur.
 
@@ -619,7 +619,7 @@ Plures commentationes uno facultatis accersitu creat, itinera ultro citroque fac
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Imaginem praecipuam (miniaturam commentationis) commentationi aut paginae iam exstanti assignat. ID adiuncti iam exstantis in Media Library aut URL imaginis remotam accipit; cum URL praebetur, imago automatice deponitur et importatur.
 
@@ -638,7 +638,7 @@ Unum ex `attachment_id` aut `url` praebendum est.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Formam contactus creat utens plugin formarum activo (Contact Form 7, WPForms, Fluent Forms, aut Gravity Forms, prout quod institutum est). Shortcode reddit quod in quamlibet commentationem aut paginam inseri potest.
 
@@ -691,11 +691,11 @@ Formam contactus creat utens plugin formarum activo (Contact Form 7, WPForms, Fl
 
 ---
 
-## Recognitio Visiva
+## Recognitio Visiva {#visual-review}
 
 Facultates Recognitionis Visivae agenti permittunt imagines paginarum vivarum capere easque analysi subicere, ita recognitionem designationis autonomam, comparationes ante/post, et probationes regressionis visivae sine ulla extensione navigatoris requirenda efficientes.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Capit imaginem paginae WordPress ad datum URL utens navigatro sine capite in parte ministri. Imago in Bibliotheca Mediorum servatur et URL CDN redditur.
 
@@ -724,7 +724,7 @@ Capit imaginem paginae WordPress ad datum URL utens navigatro sine capite in par
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Accipit duas imagines et reddit notam differentiae visivae una cum imagine differentiae quae regiones mutatas illustrat. Utile est ad confirmandum mutationem designationis eventum exspectatum produxisse aut ad regressiones imprudentes detegendas.
 
@@ -754,7 +754,7 @@ Accipit duas imagines et reddit notam differentiae visivae una cum imagine diffe
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Capit imaginem paginae eamque ad exemplar linguae pro analysi visiva mittit. Reddit aestimationem structam quae dispositionem, typographiam, usum colorum, et curas accessibilitatis comprehendit.
 
@@ -785,11 +785,11 @@ Capit imaginem paginae eamque ad exemplar linguae pro analysi visiva mittit. Red
 
 ---
 
-## Facultates Installabiles
+## Facultates Installabiles {#installable-abilities}
 
 Registrum Facultatum Installabilium sinit te agentem extendere fasciculis facultatum additis qui ut WordPress plugins distribuuntur. Quisque fasciculus unam aut plures facultates utens API facultatum ordinaria registrat.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Reddit catalogum fasciculorum facultatum ex registro ad institutionem promptorum.
 
@@ -818,7 +818,7 @@ Reddit catalogum fasciculorum facultatum ex registro ad institutionem promptorum
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Ex registro fasciculum facultatum exonerat et activat.
 
@@ -832,7 +832,7 @@ Ex registro fasciculum facultatum exonerat et activat.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Registrum facultatum interrogat ut optimum plugin ad usum descriptum inveniat et, optative, id instituat.
 

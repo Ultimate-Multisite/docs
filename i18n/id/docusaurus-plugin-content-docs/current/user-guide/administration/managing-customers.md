@@ -3,7 +3,7 @@ title: Mengelola Pelanggan
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Mengelola Pelanggan
+# Mengelola Pelanggan {#managing-customers}
 
 Halaman **Customers** menampilkan daftar member yang terdaftar di jaringan Anda. Halaman ini menampilkan informasi dasar pengguna seperti nama, alamat email, login terakhir, dan tautan **switch to** yang memungkinkan Anda masuk ke subsite pengguna sebagai administrator situs.
 

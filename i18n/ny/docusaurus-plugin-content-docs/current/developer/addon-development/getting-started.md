@@ -3,9 +3,9 @@ title: Kuyamba ndi Kupanga Zowonjezera
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Kupanga Chowonjezera
+# Kupanga Chowonjezera {#addon-development}
 
-## Kapangidwe ka Chowonjezera
+## Kapangidwe ka Chowonjezera {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Chitsanzo cha Fayilo Yaikulu ya Chowonjezera
+## Chitsanzo cha Fayilo Yaikulu ya Chowonjezera {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Chitsanzo cha Model Yapadera
+## Chitsanzo cha Model Yapadera {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Kuphatikiza Tsamba la Admin
+## Kuphatikiza Tsamba la Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Kuyesa Addon Yanu
+## Kuyesa Addon Yanu {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Malo owonjezera a v2.13.0
+## Malo owonjezera a v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 imawonjezera malo angapo owonjezera omwe ndi othandiza kwa ma addon omwe amalumikizana ndi ma tenant odziyimira pawokha, ma domain a checkout, kapena makina a DNS a host-provider.
 
-### SSO ndi ma URL oyang’anira site yayikulu
+### SSO ndi ma URL oyang’anira site yayikulu {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Ma domain oyambira a fomu ya checkout
+### Ma domain oyambira a fomu ya checkout {#checkout-form-base-domains}
 
 Gwiritsani ntchito `wu_checkout_form_base_domains` pamene addon yanu imapereka ma domain oyambira ogawana owonjezera omwe ayenera kugwira ntchito ngati ma domain a checkout-form **Site URL** m'malo mwa custom mappings a site iliyonse:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite imakonza ma host awa ndipo imadumpha ma record a mapped-domain a site iliyonse opangidwa zokha kwa iwo.
 
-### Kupanga ma record a domain zokha
+### Kupanga ma record a domain zokha {#automatic-domain-record-creation}
 
 Gwiritsani ntchito `wu_should_create_domain_record_for_site` pamene addon yanu ikufunika kuletsa kapena kuchedwetsa kupanga domain-record zokha kwa site yatsopano yopangidwa:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Ma integration a host-provider omwe amamvera `wu_add_subdomain` angapange ma record a DNS kumbali ya provider pamene ma site apangidwa. Ngati palibe integration yolembetsedwa pa action imeneyo, Ultimate Multisite imadumpha ntchito yakumbuyo yopanda kanthu.
 
-## Masitepe Otsatira
+## Masitepe Otsatira {#next-steps}
 
 - Onaninso [Hooks Reference](/developer/hooks) kuti muwone ma action ndi ma filter omwe alipo
 - Onani [REST API Overview](/developer/rest-api/overview) kuti mulumikizane ndi API

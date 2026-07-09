@@ -4,13 +4,13 @@ title: Filtro - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filtro: wu_contains_element
+# Filtro: wu_contains_element {#filter-wucontainselement}
 
 Permite que os programadores alterem os resultados da pesquisa inicial.
 
 Isto é útil para builders de terceiros e afins.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Isto é útil para builders de terceiros e afins.
 | $element | `self` | O elemento atual. |
 | $post | `null\|\WP_Post` | post a verificar. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) na linha 534

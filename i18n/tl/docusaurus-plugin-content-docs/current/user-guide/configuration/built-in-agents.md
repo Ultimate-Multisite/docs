@@ -3,11 +3,11 @@ title: Mga Naka-built-in na Ahente
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Mga Built-in Agent
+# Mga Built-in Agent {#built-in-agents}
 
 Ang Gratis AI Agent v1.9.0 ay may kasamang limang built-in agent, bawat isa ay paunang naka-configure na may nakatuong hanay ng mga tool, iniangkop na system prompt, at mga panimulang mungkahi na tugma sa karaniwang mga gawain sa bahaging iyon. Ang paglipat sa pagitan ng mga agent ay nagbabago sa magagawa ng assistant at kung paano ito tumutugon — nang walang anumang configuration mula sa iyo. Maaaring magdagdag ang Superdav AI Agent v1.18.0 ng mga tool na may kaalaman sa iskedyul, mga tala ng paalala, mga approval gate, at mga SMS notification sa mga workflow na ito kapag naka-configure ang kaugnay na mga integration.
 
-## Ano ang Agent?
+## Ano ang Agent? {#what-is-an-agent}
 
 Ang bawat agent ay isang pinangalanang profile ng configuration na pinagsasama ang:
 
@@ -15,7 +15,7 @@ Ang bawat agent ay isang pinangalanang profile ng configuration na pinagsasama a
 - **System prompt** — mga tagubiling nagtatakda sa tono, mga priyoridad, at mga limitasyon ng agent
 - **Mga Mungkahi** — mga paunang isinulat na prompt na ipinapakita sa chat interface upang tulungan kang makapagsimula nang mabilis
 
-## Pag-access sa Agent Picker
+## Pag-access sa Agent Picker {#accessing-the-agent-picker}
 
 1. Buksan ang panel ng **Gratis AI Agent** sa admin sidebar ng WordPress.
 2. I-click ang **icon ng agent** sa itaas-kaliwa ng chat header (nagbabago ang icon upang ipakita ang aktibong agent).
@@ -24,9 +24,9 @@ Ang bawat agent ay isang pinangalanang profile ng configuration na pinagsasama a
 
 Maaari ka ring lumipat ng mga agent sa gitna ng pag-uusap — magkakabisa ang system prompt ng bagong agent mula sa susunod na mensahe.
 
-## Ang Limang Built-in Agent
+## Ang Limang Built-in Agent {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Pokus:** Paggawa at pag-edit ng mga post, page, at contact form.
 
@@ -47,7 +47,7 @@ Maaari ka ring lumipat ng mga agent sa gitna ng pag-uusap — magkakabisa ang sy
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Pokus:** End-to-end na paggawa ng website mula sa iisang prompt.
 
@@ -70,7 +70,7 @@ Maaari ka ring lumipat ng mga agent sa gitna ng pag-uusap — magkakabisa ang sy
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Pokus:** Visual na pagpapasadya — mga kulay, typography, CSS, at mga block pattern.
 
@@ -87,7 +87,7 @@ Maaari ka ring lumipat ng mga agent sa gitna ng pag-uusap — magkakabisa ang sy
 - *Kumuha ng screenshot ng homepage at sabihin sa akin kung ano ang pagagandahin mo.*
 - *Gumawa ng reusable na hero block pattern na may full-width na background image at naka-center na heading.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Pokus:** Pagtuklas, pag-install, at pamamahala ng mga WordPress plugin.
 
@@ -105,7 +105,7 @@ Maaari ka ring lumipat ng mga agent sa gitna ng pag-uusap — magkakabisa ang sy
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Pokus:** Pagsagot sa mga tanong tungkol sa nilalaman ng site, mga setting, at configuration ng WordPress.
 
@@ -124,7 +124,7 @@ Maaari ka ring lumipat ng mga agent sa gitna ng pag-uusap — magkakabisa ang sy
 
 ---
 
-## Mga Integrasyon sa Automation ng Superdav
+## Mga Integrasyon sa Automation ng Superdav {#superdav-automation-integrations}
 
 Kapag naka-configure ang mga integrasyon ng Superdav AI Agent v1.18.0, maaaring lumahok ang mga built-in na ahente sa mas ligtas na mga workflow ng automation na may kaalaman sa iskedyul:
 
@@ -138,11 +138,11 @@ Inirerekomendang workflow: hilingin sa ahente na ihanda ang mensahe o aksyon, su
 
 ---
 
-## Pag-customize ng Mga Ahente
+## Pag-customize ng Mga Ahente {#customising-agents}
 
 Maaaring palawigin o palitan ang bawat built-in na ahente sa pamamagitan ng filter na `gratis_ai_agent_agents`.
 
-### Pagdaragdag ng custom na system prompt sa umiiral na ahente
+### Pagdaragdag ng custom na system prompt sa umiiral na ahente {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Pagrehistro ng bagong ahente
+### Pagrehistro ng bagong ahente {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Lilitaw ang bagong ahente sa Tagapili ng Ahente kaagad pagkatapos tumakbo ang filter.
 
-### Pag-alis ng built-in na ahente
+### Pag-alis ng built-in na ahente {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

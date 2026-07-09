@@ -3,9 +3,9 @@ title: Cofnod newidiadau Ultimate AI Connector ar gyfer pwyntiau terfyn cydnaws
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Log Newidiadau Ultimate AI Connector ar gyfer Endpoints Cydnaws
+# Log Newidiadau Ultimate AI Connector ar gyfer Endpoints Cydnaws {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Fersiwn 2.0.0 — Rhyddhawyd ar 2026-04-24
+## Fersiwn 2.0.0 — Rhyddhawyd ar 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Newydd: Cymorth aml-ddarparwr — ffurfweddwch endpoints AI lluosog a llwybro ceisiadau gyda fallback awtomatig ar draws darparwyr.
 * Trwsiad: Integreiddio SDK aml-ddarparwr gyda IDs darparwr, URLs cofrestru, a chwmpasu hidlydd HTTP cywir fesul darparwr.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Trwsiad: Dilewyd cais HTTP blocio a daniodd ar bob llwytho tudalen.
 * Gwellwyd: Uwchraddiwyd llifoedd gwaith GitHub Actions i Node.js 24.
 
-## Fersiwn 1.0.0 — Rhyddhad Cychwynnol
+## Fersiwn 1.0.0 — Rhyddhad Cychwynnol {#version-100--initial-release}

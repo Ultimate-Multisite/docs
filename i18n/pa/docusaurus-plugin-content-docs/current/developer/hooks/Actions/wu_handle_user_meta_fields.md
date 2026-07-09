@@ -4,11 +4,11 @@ title: Action - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields
+# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 ਇਹ ਪਲੱਗਇਨ ਡਿਵੈਲਪਰ ਨੂੰ ਲੋੜ ਪੈਣ 'ਤੇ ਯੂਜ਼ਰ ਮੀਟਾ ਡਾਟਾ ਨੂੰ ਵੱਖ-ਵੱਖ ਤਰੀਕਿਆਂ ਨਾਲ ਸੇਵ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।
 
-## ਪੈਰਾਮੀਟਰਾਂ (Parameters)
+## ਪੈਰਾਮੀਟਰਾਂ (Parameters) {#parameters}
 
 | Name | Type | ਵਰਣਨ (Description) |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 | $customer | `\Customer` | Ultimate Multisite ਕਸਟਮਰ ਆਬਜੈਕਟ। |
 | $checkout | `\Checkout` | ਚੈੱਕਆਉਟ ਕਲਾਸ। |
 
-### Since
+### Since {#since}
 
 - 2.0.4
-### Source
+### Source {#source}
 
 Defined in [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) at line 1244

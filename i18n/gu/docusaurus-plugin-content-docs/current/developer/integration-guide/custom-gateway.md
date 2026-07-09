@@ -3,11 +3,11 @@ title: કસ્ટમ ગેટવે ડેવલપમેન્ટ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# કસ્ટમ Gateway વિકાસ
+# કસ્ટમ Gateway વિકાસ {#custom-gateway-development}
 
 તમે `Base_Gateway` class ને વિસ્તારીને કસ્ટમ ચુકવણી gateways બનાવી શકો છો.
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway નોંધણી કરો
+## Gateway નોંધણી કરો {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## મુખ્ય પદ્ધતિઓ
+## મુખ્ય પદ્ધતિઓ {#key-methods}
 
 | પદ્ધતિ | હેતુ |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | રિફંડ વિનંતીઓ સંભાળો |
 | `get_payment_methods()` | ગ્રાહક માટે સાચવેલી ચુકવણી પદ્ધતિઓ પરત કરો |
 
-## પુનરાવર્તિત memberships માટે નવીકરણ credentials
+## પુનરાવર્તિત memberships માટે નવીકરણ credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway એકીકરણોને `auto_renew` સચવાય તે પહેલાં પુનરાવર્તિત membership પાસે ફરીથી વાપરી શકાય તેવું નવીકરણ credential છે કે નહીં તેની જાણ કરવાની સુવિધા આપે છે. `wu_membership_has_renewal_credential` hook કરો અને પરત કરો:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 નવું ફરીથી વાપરી શકાય એવું credential સંગ્રહાયા પછી તમારા gateway ના સફળ ફરી-અધિકૃતતા પ્રવાહના ભાગ રૂપે ગાયબ-credential marker સાફ કરો.
 
-## સૂચનો
+## સૂચનો {#tips}
 
 - નિષ્ફળતા પર હંમેશા `WP_Error` પરત કરો જેથી Ultimate Multisite ભૂલ પ્રદર્શન સંભાળી શકે
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway-વિશિષ્ટ logging માટે `wu_log_add()` નો ઉપયોગ કરો
 
-## AI connector provider ક્ષમતાઓ
+## AI connector provider ક્ષમતાઓ {#ai-connector-provider-capabilities}
 
 AI connector-backed operations કૉલ કરતા કસ્ટમ એકીકરણોએ AI Provider for Anthropic Max v1.3.0 સાથે રજૂ કરાયેલા સપોર્ટેડ OAuth provider સેટ સાથે સુસંગત રહેવું જોઈએ:
 

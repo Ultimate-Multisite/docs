@@ -3,7 +3,7 @@ title: Llocs web de clients
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Els llocs web del teu client (v2)
+# Els llocs web del teu client (v2) {#your-clients-websites-v2}
 
 Després de registrar-se a la teva xarxa, els teus clients poden accedir al seu *dashboard*.
 

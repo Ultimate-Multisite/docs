@@ -3,11 +3,11 @@ title: Şiyanên Rêvebirina Pêvekan
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Şiyanên Rêvebirina Pêvekan
+# Şiyanên Rêvebirina Pêvekan {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 bi **7 şiyanên rêvebirina pêvekan** tê ku arîkarê AI dikare di dema sohbetê de wan bi kar bîne. Ev şiyan kontrola bi bernameyî li ser pêvekên WordPress ku bi rêya [Pergala Avakerê Pêvekê û Sandbox](../../user-guide/administration/plugin-builder-and-sandbox) hatine sazkirin peyda dikin.
 
-## Kurteya Şiyanan
+## Kurteya Şiyanan {#abilities-overview}
 
 | Şiyan | Slug | Danasîn |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 bi **7 şiyanên rêvebirina pêvekan** tê ku arîkarê 
 | Pêvekê Saz Bike | `install_plugin` | Pêvekeke sandboxkirî di pelrêça zindî ya pêvekên WordPress de belav dike. |
 | Pêvekê Çalak Bike | `activate_plugin` | Pêvekeke sandboxkirî di jîngeha sandbox a wp-env de çalak dike. |
 
-## API ya Sazkerê Pêvekê
+## API ya Sazkerê Pêvekê {#plugin-installer-api}
 
 Sazkerê pêvekê dema belavkirin an rakirina pêvekan karên pergala pelan birêve dibe. Reftarên sereke:
 
@@ -28,7 +28,7 @@ Sazkerê pêvekê dema belavkirin an rakirina pêvekan karên pergala pelan bir�
 - **Nûkirin**: Pelên pêvekê yên heyî diguherîne. Berî nivîsandinê pêvekê neçalak dike da ku xeletiyên rewşa nîvçe neçêbin.
 - **Jêbirin bi slug**: Pelrêça pêvekê bi slug dibîne, li ser hemû malperan neçalak dike, paşê pelrêçê radike.
 
-### Tomarkirina Destkarê Sazkirinê yê Taybet
+### Tomarkirina Destkarê Sazkirinê yê Taybet {#registering-a-custom-install-handler}
 
 Tu dikarî bi karanên `gratis_ai_plugin_installer_before_install` û `gratis_ai_plugin_installer_after_install` xwe bi çerxa sazkirinê ve girê bidî:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Tomara Ekosîstemê
+## Tomara Ekosîstemê {#ecosystem-registry}
 
 Şiyan bi rêya **tomara ekosîstema pêvekan** têne tomarkirin. Tomar slugên şiyanan bi polên destkarên wan ve girê dide û wan ji belavkerê amûrên agentê AI re eşkere dike.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Yekbûna HookScanner
+## Yekbûna HookScanner {#hookscanner-integration}
 
 Şiyanên `create_plugin` û `update_plugin` bi xweberî **HookScanner** li dijî koda nû hatî çêkirin dimeşînin. HookScanner lîsteyek ji hookên çalakî û filter ên WordPress ku ji aliyê pêvekê ve hatine tomarkirin vedigerîne.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner pelrêçên `vendor/` û `node_modules/` bi xweberî derbas dike.
 
-## Avahiya Karên Async
+## Avahiya Karên Async {#async-job-architecture}
 
 Karên pêvekan ên demdirêj (çêkirin, sazkirin) wek **karên async** bi şopandina pêşveçûna zindî têne şandin. Rûyê sohbetê yê AI ji bo pêşveçûnê kontrol dike û nûkirinên rewşê ji bikarhêner re diherikîne:
 

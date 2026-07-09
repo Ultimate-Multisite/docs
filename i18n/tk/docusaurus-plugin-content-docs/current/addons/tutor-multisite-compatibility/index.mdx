@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Multisite gurşawlarynda Tutor LMS üçin utgaşyklyk düzedişlerini goşýan WordPress goşmaçasy.
 
-## Beýany
+## Beýany {#description}
 
 Bu goşmaça WordPress multisite torlarynda Tutor LMS-i işletmek üçin möhüm utgaşyklyk düzedişlerini üpjün edýär. Ol ulanyjylary ýazga almagy, instruktor dolandyryşyny, kurs çäklendirmelerini we multisite-a mahsus beýleki funksiýalary dolandyrýar.
 
-## Aýratynlyklar
+## Aýratynlyklar {#features}
 
 - **Maglumatlar bazasy tablisa dolandyryşy**: Multisite daşarky açar çäklendirmeleri sebäpli şowsuz bolan ýetmeýän Tutor LMS tablisalaryny awtomatik anyklaýar we döredýär
 - **Multisite ulanyjy ýazga alyşy**: Tor saýtlarynyň arasynda ulanyjy ýazga alyşyny dolandyrmak üçin ýörite AJAX işledijileri
@@ -24,7 +24,7 @@ Bu goşmaça WordPress multisite torlarynda Tutor LMS-i işletmek üçin möhüm
 - **Ýörite administrator görnüşleri**: Multisite-dan habarly instruktor sanawy we dolandyryş interfeýsi
 - **Administrator gurallary**: Tor we saýt administratorlary üçin maglumatlar bazasy dolandyryş interfeýsi
 
-## Talaplar
+## Talaplar {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Bu goşmaça WordPress multisite torlarynda Tutor LMS-i işletmek üçin möhüm
 - WordPress Multisite gurnamasy
 - Ultimate Multisite goşmaçasy (kurs çäklendirmeleri funksiýasy üçin)
 
-## Gurnama
+## Gurnama {#installation}
 
 1. Goşmaça faýllaryny `/wp-content/plugins/tutor-multisite-compatibility/` içine ýükläň
 2. Tutor LMS-iň gurnalandygyna we işjeňleşdirilendigine göz ýetiriň
 3. Goşmaçany WordPress-däki 'Goşmaçalar' menýusy arkaly işjeňleşdiriň
 4. Goşmaça Tutor LMS bilen awtomatik integrasiýa eder
 
-## Faýl gurluşy
+## Faýl gurluşy {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## MU Plugin-den geçirilen funksiýalar
+## MU Plugin-den geçirilen funksiýalar {#functionality-moved-from-mu-plugin}
 
 Bu goşmaçada öň `wp-content/mu-plugins/daves.php` içinde bolan funksiýalar bar:
 
@@ -71,9 +71,9 @@ Bu goşmaçada öň `wp-content/mu-plugins/daves.php` içinde bolan funksiýalar
 - Multisite ulanyjy ýazga alyşyny işlemek
 - Kurs önüminiň ID-sini görkezmek
 
-## Maglumatlar bazasyny dolandyrmak
+## Maglumatlar bazasyny dolandyrmak {#database-management}
 
-### Mesele
+### Mesele {#the-problem}
 
 WordPress multisite gurşawlarynda, ulanyjylar tablisasy bilen daşarky açar çäklendirmeleri bolan tablisalar üçin Tutor LMS tablisa döretmegi şowsuz bolýar. Bu şu sebäplere görä bolup geçýär:
 
@@ -81,7 +81,7 @@ WordPress multisite gurşawlarynda, ulanyjylar tablisasy bilen daşarky açar ç
 - Daşarky açarlar `wp_2_users` salgylanýar (ol ýok)
 - Hakyky ulanyjylar tablisasy `wp_users` (tor boýunça umumy)
 
-### Çözgüt
+### Çözgüt {#the-solution}
 
 Bu goşmaça awtomatik:
 
@@ -92,13 +92,13 @@ Bu goşmaça awtomatik:
    - Torda täze saýt döretmek
    - Administrator interfeýsi arkaly tablisany el bilen barlamak
 
-### Täsir edýän tablisalar
+### Täsir edýän tablisalar {#affected-tables}
 
 - `tutor_coupon_usages` - Ulanyjylar tablisasy üçin daşarky açary öz içine alýar
 - `tutor_carts` - Ulanyjylar tablisasy üçin daşarky açary öz içine alýar
 - `tutor_notification_preferences` - Ulanyjylar tablisasy üçin daşarky açary bolan TutorPro tablisasy
 
-### Administrator interfeýsi
+### Administrator interfeýsi {#admin-interface}
 
 Maglumatlar bazasyny dolandyrmak gurallaryna şu ýerden giriň:
 
@@ -111,6 +111,6 @@ Interfeýs size şulary etmäge mümkinçilik berýär:
 - Maglumatlar bazasy konfigurasiýasyny barlamak
 - Jikme-jik ýagdaý maglumatlaryny görmek
 
-## Goldaw
+## Goldaw {#support}
 
 Bu goşmaça ýörite KursoPro platformasy üçin taýýarlanyldy. Tehniki goldaw üçin ösüş topary bilen habarlaşyň.

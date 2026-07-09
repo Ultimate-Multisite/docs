@@ -3,7 +3,7 @@ title: Site Exporter
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# خروجی‌گیر سایت
+# خروجی‌گیر سایت {#site-exporter}
 
 این قابلیت توسط افزونه **Site Exporter** ارائه می‌شود.
 

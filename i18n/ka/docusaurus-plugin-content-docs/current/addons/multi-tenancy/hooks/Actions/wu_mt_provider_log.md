@@ -4,11 +4,11 @@ title: მოქმედება - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# მოქმედება: wu_mt_provider_log
+# მოქმედება: wu_mt_provider_log {#action-wumtproviderlog}
 
 აქტიურდება, როდესაც provider შეტყობინებას ლოგში წერს.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 | $level | `string` | ლოგის დონე. |
 | $context | `array` | დამატებითი კონტექსტი. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 1.0.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400)-ში, ხაზზე 400

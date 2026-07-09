@@ -3,7 +3,7 @@ title: Инжектор за реклами
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ставине реклами на вашата мрежа со Ultimate Multisite: Ad Injector
+# Ставине реклами на вашата мрежа со Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector е **бесплатен дополнителен модул** кој ви дава алатки за поставување реклами директно од страницата за уредување на плановите.
 
@@ -35,7 +35,7 @@ _По вметнувањето на кодот на вашата реклама,
 
 _Отидете на опцијата Ad Code во Admin Panel ако сакате да прикажете реклами на бекендот на вашиот корисник._
 
-### Понад рекламирањето
+### Понад рекламирањето {#beyond-advertising}
 
 Можете и со Ultimate Multisite: Ad Injector да обезбедите поддршка за планините со висок ниво.
 

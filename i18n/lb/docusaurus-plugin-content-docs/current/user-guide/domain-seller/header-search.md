@@ -3,11 +3,11 @@ title: Header-Domain-Sich
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search
+# Header Domain Search {#header-domain-search}
 
 Benotzt dëse Setup, wann Dir e klenge Header-Formulaire wëllt, deen eng Domain-Sich start an de Client duerno aus verfügbare Domains am Ultimate Multisite Checkout auswiele léisst.
 
-## Ufuerderungen
+## Ufuerderungen {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Benotzt dëse Setup, wann Dir e klenge Header-Formulaire wëllt, deen eng Domain
   - Ënnerstëtzt TLDs konfiguréiert, zum Beispill `com`, `net` an `org`.
 - E valabele Checkout-Formulaire mat dem Feld **Domain Selection**.
 
-## Checkout-Formulaire
+## Checkout-Formulaire {#checkout-form}
 
 1. Erstellt oder ännert de Checkout-Formulaire, deen vun der Registréierungssäit benotzt gëtt.
 2. Füügt déi normal erfuerderlech Checkout-/Account-Felder dobäi, inklusiv **Username**. E Checkout-Formulaire, deen nëmmen d’Domain-Feld enthält, gëtt vun der Ultimate Multisite-Validéierung refuséiert.
@@ -30,7 +30,7 @@ D’Registréierungssäit soll de Checkout-Formulaire rendéieren, zum Beispill:
 [wu_checkout slug="domain-form"]
 ```
 
-## Header-Formulaire
+## Header-Formulaire {#header-form}
 
 Füügt e klenge `GET`-Formulaire am Site-Header dobäi, deen den aginnen Sichbegrëff als `domain_name` un d’Checkout-Säit schéckt:
 
@@ -44,7 +44,7 @@ Füügt e klenge `GET`-Formulaire am Site-Header dobäi, deen den aginnen Sichbe
 
 Wielt keng Domain am viraus iwwer personaliséiert Header-JavaScript aus. Den Header soll nëmmen de Sichbegrëff weiderginn. D’Domain Seller Checkout-Skript liest `?domain_name=example`, fëllt d’Checkout-Sichkëscht aus a féiert d’Verfügbarkeetssich aus, sou datt de Client aus de zeréckginnene Domains auswiele kann.
 
-## Erwaart Verhalen
+## Erwaart Verhalen {#expected-behaviour}
 
 Eng Sich no `example` am Header soll dëst opmaachen:
 
@@ -61,7 +61,7 @@ De Checkout soll duerno auswielbar Resultater weisen, wéi:
 
 Nodeems en verfügbaart Resultat ausgewielt gouf, soll d’Bestellungsresumé d’Domain-Registréierungsprodukt an den ausgewielten Domainnumm enthalen.
 
-## Verifizéierung
+## Verifizéierung {#verification}
 
 1. Maacht d’Startsäit op.
 2. Sicht no engem blousse Numm, zum Beispill `example`.
@@ -71,7 +71,7 @@ Nodeems en verfügbaart Resultat ausgewielt gouf, soll d’Bestellungsresumé d�
 6. Klickt op **Select** fir eng verfügbar Domain.
 7. Confirméiert, datt de Bestellungsresumé `Domain Registration - example.com` oder déi ausgewielten Domain enthält.
 
-## Problembehandlung
+## Problembehandlung {#troubleshooting}
 
 - Wann keng Lëscht erschéngt, kontrolléiert am Browser-Netzwierk-Tab no `admin-ajax.php?action=wu_domain_search` a confirméiert, datt et net-eidel `domains` oder `results` zeréckgëtt.
 - Wann de Checkout-Formulaire beim Späichere bei der Validéierung feelt, füügt déi erfuerderlech Account-Felder wéi **Username** dobäi.

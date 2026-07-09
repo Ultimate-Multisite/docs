@@ -3,17 +3,17 @@ title: Slik konfigurerer du domenetilordning
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Slik konfigurerer du domenekartlegging (v2)
+# Slik konfigurerer du domenekartlegging (v2) {#how-to-configure-domain-mapping-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
 
 En av de kraftigste funksjonene i et premium-nettverk er muligheten til å tilby kundene våre å koble et toppnivådomene til nettstedene sine. Tross alt, hva ser mest profesjonelt ut: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) eller [_**joesbikeshop.com**_](http://joesbikeshop.com)? Derfor tilbyr Ultimate Multisite denne funksjonen innebygd, uten behov for å bruke tredjeparts-plugins.
 
-## Hva er domenekartlegging?
+## Hva er domenekartlegging? {#whats-domain-mapping}
 
 Som navnet antyder, er domenekartlegging muligheten Ultimate Multisite tilbyr for å ta imot en forespørsel om et tilpasset domene og kartlegge den forespørselen til det tilsvarende nettstedet i nettverket som har det aktuelle domenet tilknyttet.
 
-### Slik setter du opp domenekartlegging på Ultimate Multisite-nettverket ditt
+### Slik setter du opp domenekartlegging på Ultimate Multisite-nettverket ditt {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domenekartlegging krever litt oppsett fra din side for å fungere. Heldigvis automatiserer Ultimate Multisite det tunge arbeidet for deg, slik at du enkelt kan oppfylle kravene.
 
@@ -45,7 +45,7 @@ Men før du begynner å kartlegge det tilpassede domenet til en av undersidene i
 
 ###
 
-### Sørg for at domenets DNS-innstillinger er riktig konfigurert
+### Sørg for at domenets DNS-innstillinger er riktig konfigurert {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 For at en kartlegging skal fungere, må du sørge for at domenet du planlegger å kartlegge, peker til nettverkets IP-adresse. Merk at du trenger nettverkets IP-adresse – IP-adressen til domenet der Ultimate Multisite er installert – ikke IP-adressen til det tilpassede domenet du vil kartlegge. For å søke etter IP-adressen til et bestemt domene foreslår vi for eksempel å gå til [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Hvis du får problemer med å få dette til å fungere, **kontakt kundestøtten 
 
 Hvis du planlegger å la kundene dine kartlegge sine egne domener, må de gjøre arbeidet med denne delen selv. Henvis dem til registratorens kundestøttesystem hvis de ikke klarer å opprette A-posten.
 
-### Kartlegge tilpasset domenenavn som superadmin
+### Kartlegge tilpasset domenenavn som superadmin {#mapping-custom-domain-name-as-super-admin}
 
 Når du er logget inn som superadmin på nettverket ditt, kan du enkelt legge til og administrere tilpassede domenenavn ved å gå til **Ultimate Multisite > Domener**.
 
@@ -93,7 +93,7 @@ Hvis du klikker på domenenavnet, kan du se noen alternativer inne i det. La oss
 
 **Er sikkert?:** Selv om Ultimate Multisite sjekker om domenet har et SSL-sertifikat eller ikke før det aktiveres, kan du manuelt velge å laste domenet med eller uten et SSL-sertifikat. Merk at hvis nettstedet ikke har et SSL-sertifikat og du prøver å tvinge det til å lastes med SSL, kan det gi deg feil.
 
-### Tilknytte egendefinert domenenavn som bruker av undernettsted
+### Tilknytte egendefinert domenenavn som bruker av undernettsted {#mapping-custom-domain-name-as-subsite-user}
 
 Administratorer for undernettsteder kan også tilknytte egendefinerte domenenavn fra adminpanelet for undernettstedet sitt.
 
@@ -121,7 +121,7 @@ Brukeren kan deretter klikke på **Neste trinn** og fortsette med å legge til d
 
 Å klikke på **Legg til domene** vil starte prosessen med å verifisere og hente DNS-informasjonen for det egendefinerte domenet.
 
-### Om domenesynkronisering
+### Om domenesynkronisering {#about-domain-syncing}
 
 Domenesynkronisering er en prosess der Ultimate Multisite legger til det egendefinerte domenenavnet i hostingkontoen din som et tilleggsdomene **for at domenetilknytningen skal fungere**.
 

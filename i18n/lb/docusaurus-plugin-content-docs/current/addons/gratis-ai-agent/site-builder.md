@@ -3,15 +3,15 @@ title: Säite-Builder-Orchestratioun v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestratioun v2
+# Site Builder Orchestratioun v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestratioun v2 (agefouert am Gratis AI Agent v1.4.0) ass d'Engine, déi d'Erstelle vu Websäiten a méi Schrëtt udréit. Wann Dir den Agent freet, eng "Restaurant-Websäit ze bauen" oder "e Portfolio mat engem Blog ze erstellen", deelt den Orchestrator dat iwwergeuerdent Zil an e strukturéierte **Plang** op, fënnt déi Plugins, déi néideg sinn, fir en ëmzesetzen, féiert all Schrëtt der Rei no aus, verfollegt de Fortschrëtt a recuperéiert autonom vu Feeler.
 
 ---
 
-## Wéi Et Funktionéiert
+## Wéi Et Funktionéiert {#how-it-works}
 
-### 1. Planggeneréierung
+### 1. Planggeneréierung {#1-plan-generation}
 
 Wann den Agent eng Uweisung kritt, fir eng Websäit ze bauen, rifft en d'`create_site_plan`-Fäegkeet op, fir e JSON-**Site-Plang** ze produzéieren. De Plang beschreift:
 
@@ -61,7 +61,7 @@ Wann den Agent eng Uweisung kritt, fir eng Websäit ze bauen, rifft en d'`create
 }
 ```
 
-### 2. Plugin-Entdeckung
+### 2. Plugin-Entdeckung {#2-plugin-discovery}
 
 Ier d'Ausféierung ufänkt, scannt den Orchestrator d'`plugin_requirements` vum Plang a kontrolléiert, wéi eng Plugins schonn aktiv sinn. Fir feelend Plugins mécht en Folgendes:
 
@@ -71,7 +71,7 @@ Ier d'Ausféierung ufänkt, scannt den Orchestrator d'`plugin_requirements` vum 
 
 Feeler bei der Plugin-Entdeckung si net fatal — den Orchestrator markéiert déi betraffe Schrëtt als `skipped` a fiert mam Rescht vum Plang weider.
 
-### 3. Plangausféierung
+### 3. Plangausféierung {#3-plan-execution}
 
 Den Orchestrator rifft `execute_site_plan` mat der Plang-ID op. D'Ausféierung leeft Phas fir Phas, Schrëtt fir Schrëtt:
 
@@ -79,7 +79,7 @@ Den Orchestrator rifft `execute_site_plan` mat der Plang-ID op. D'Ausféierung l
 - **Parallel Schrëtt** — Schrëtt bannent derselwechter Phas, déi keng géigesäiteg Ofhängegkeeten hunn, ginn gläichzäiteg dispatchéiert, wann de `parallel`-Fändel gesat ass.
 - **Schrëtt-Timeout** — all Schrëtt huet en individuellen Timeout (Standard: d'`Ability Timeout`-Astellung). E Schrëtt, deen duerch Timeout ofleeft, gëtt als `failed` markéiert an de Plang fiert weider.
 
-### 4. Fortschrëttsverfollegung
+### 4. Fortschrëttsverfollegung {#4-progress-tracking}
 
 Rufft `get_plan_progress` zu all Moment op, fir den Ausféierungsstatus ze kontrolléieren:
 
@@ -104,7 +104,7 @@ WP-CLI-Benotzer kënnen de Fortschrëtt iwwerwaache mat:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Feelerrecuperatioun
+### 5. Feelerrecuperatioun {#5-error-recovery}
 
 Wann e Schrëtt feelgeschléit, kontrolléiert den Orchestrator, ob e **Fallback**-Schrëtt am Plang definéiert ass:
 
@@ -115,9 +115,9 @@ Den Agent mellt all Feeler an der leschter Plang-Zesummefaassung a kann manuell 
 
 ---
 
-## Site-Plang-Fäegkeeten
+## Site-Plang-Fäegkeeten {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Generéiert e strukturéierte Site-Plang aus enger Zilbeschreiwung an natierlecher Sprooch.
 
@@ -134,7 +134,7 @@ Generéiert e strukturéierte Site-Plang aus enger Zilbeschreiwung an natierlech
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Fänkt un, e virdru generéierte Site-Plang auszeféieren.
 
@@ -150,7 +150,7 @@ Fänkt un, e virdru generéierte Site-Plang auszeféieren.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Gëtt den aktuelle Ausféierungsstatus vun engem Site-Plang zeréck.
 
@@ -164,7 +164,7 @@ Gëtt den aktuelle Ausféierungsstatus vun engem Site-Plang zeréck.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Léist e feelgeschloene Schrëtt manuell a setzt d'Ausféierung vum Plang beim nächste Schrëtt fort. Benotzt dat, wann eng automatesch Erhuelung net méiglech war an Dir wëllt agräifen.
 
@@ -180,7 +180,7 @@ Léist e feelgeschloene Schrëtt manuell a setzt d'Ausféierung vum Plang beim n
 
 ---
 
-## Verglach vu v1 a v2
+## Verglach vu v1 a v2 {#comparing-v1-and-v2}
 
 | Funktioun | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Léist e feelgeschloene Schrëtt manuell a setzt d'Ausféierung vum Plang beim n
 
 ---
 
-## WP-CLI Plang-Befehler
+## WP-CLI Plang-Befehler {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Generéiert e Site-Plang aus enger Zilbeschreiwung.
 
@@ -205,7 +205,7 @@ Generéiert e Site-Plang aus enger Zilbeschreiwung.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Féiert e virdru generéierte Plang aus.
 
@@ -213,7 +213,7 @@ Féiert e virdru generéierte Plang aus.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Weist den aktuelle Fortschrëtt fir e Plang, deen ausgefouert gëtt oder ofgeschloss ass.
 
@@ -221,7 +221,7 @@ Weist den aktuelle Fortschrëtt fir e Plang, deen ausgefouert gëtt oder ofgesch
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Lëscht all Site-Pläng op (waardend, amgaang an ofgeschloss).
 
@@ -229,7 +229,7 @@ Lëscht all Site-Pläng op (waardend, amgaang an ofgeschloss).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Setzt e feelgeschloene Plang op `pending` zeréck, fir datt en nach eng Kéier vun Ufank un ausgefouert ka ginn.
 

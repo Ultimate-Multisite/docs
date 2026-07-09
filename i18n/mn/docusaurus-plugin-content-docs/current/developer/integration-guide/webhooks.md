@@ -3,11 +3,11 @@ title: Webhook боловсруулалт
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook боловсруулах
+# Webhook боловсруулах {#webhook-handling}
 
 Гадаад үйлчилгээнүүдээс үйл явдлууд хүлээн авч, өгөгдлийг Ultimate Multisite-тай синк хийхийн тулд өөрийн webhook төгсгөлийн цэгүүдийг үүсгэнэ үү.
 
-## Өөрийн webhook төгсгөлийн цэг
+## Өөрийн webhook төгсгөлийн цэг {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Аюулгүй байдлын анхаарах зүйлс
+## Аюулгүй байдлын анхаарах зүйлс {#security-considerations}
 
 - Webhook гарын үсгийг HMAC эсвэл хамтран ашиглах нууц түлхүүрээр үргэлж баталгаажуулна уу
 - REST чиглэл дээрээ `permission_callback` ашиглана уу — production орчинд үүнийг хэзээ ч `__return_true` гэж бүү тохируул

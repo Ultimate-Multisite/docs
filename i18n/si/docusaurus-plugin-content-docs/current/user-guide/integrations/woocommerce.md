@@ -3,7 +3,7 @@ title: WooCommerce ඒකාබද්ධ කිරීම
 sidebar_position: 9
 _i18n_hash: 64e2517a66a209111e1cdb519a920b37
 ---
-# WooCommerce ඒකාබද්ධ කිරීම (Integration)
+# WooCommerce ඒකාබද්ධ කිරීම (Integration) {#woocommerce-integration}
 
 මෙම විශේෂාංගය සපයන්නේ **WooCommerce Integration** අතිරේක මගින් (addon) වේ.
 

@@ -4,13 +4,13 @@ title: Parzûn - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url
+# Filter: wu_sso_url {#filter-wussourl}
 
 SSO URLên çêkirî filter dike berî ku ji bo çalakiyên xerîdar ên di navbera domenan de bên vegerandin.
 
 Vê filterê bikar bîne dema ku entegrasyonek hewce bike konteksê pêbawer li girêdaneke SSO ya kirêdarê serwer zêde bike an jî URL ya brokerê biguherîne, di heman demê de piştrastkirina token ya Ultimate Multisite biparêze.
 
-## Parameter
+## Parameter {#parameters}
 
 | Nav | Cure | Danasîn |
 |------|------|-------------|
@@ -19,15 +19,15 @@ Vê filterê bikar bîne dema ku entegrasyonek hewce bike konteksê pêbawer li 
 | $site_id | `int` | ID ya malpera armanc ji bo serdanê. |
 | $redirect_to | `string` | URL ya mebestê piştî piştrastkirina serkeftî ya SSO. |
 
-### Ji guhertoya
+### Ji guhertoya {#since}
 
 - 2.13.0
 
-### Çavkanî
+### Çavkanî {#source}
 
 Di `inc/sso/class-sso.php` de hatiye pênasekirin.
 
 
-## Vedigerîne
+## Vedigerîne {#returns}
 
 SSO URL ya filterkirî.

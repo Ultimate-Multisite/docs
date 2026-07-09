@@ -4,11 +4,11 @@ title: Darbība - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Darbība: set_logged_in_cookie
+# Darbība: set_logged_in_cookie {#action-setloggedincookie}
 
 Tiek izpildīta tieši pirms pieteikušās autentifikācijas sīkdatnes iestatīšanas.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Tiek izpildīta tieši pirms pieteikušās autentifikācijas sīkdatnes iestatī
 | $scheme | `string` | Autentifikācijas shēma. Noklusējums 'logged_in'. |
 | $token | `string` | Lietotāja sesijas token, ko izmantot šai sīkdatnei. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Avots
+### Avots {#source}
 
 Definēts [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) 141. rindā

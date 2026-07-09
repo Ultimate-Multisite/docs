@@ -3,7 +3,7 @@ title: Tarihin canje-canje na VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Tarihin Canje-canjen VAT
+# Tarihin Canje-canjen VAT {#vat-changelog}
 
 Sigar 1.0.7 - An fitar a ranar 2026-02-03
 

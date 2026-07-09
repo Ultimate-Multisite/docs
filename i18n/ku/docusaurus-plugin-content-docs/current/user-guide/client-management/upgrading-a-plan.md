@@ -3,7 +3,7 @@ title: آپگرودکردنی پلانی
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# آپدیتکردنی پلانی (v2)
+# آپدیتکردنی پلانی (v2) {#upgrading-a-plan-v2}
 
 _**نکته مهم: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 
@@ -41,7 +41,7 @@ _**نکته مهم: این مقاله به Ultimate Multisite نسخه ۲.x اش
 
 ##
 
-## ڕێگاکانی دابەزاندن و کەمکردنەوە (Upgrade and Downgrade Paths)
+## ڕێگاکانی دابەزاندن و کەمکردنەوە (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 لە هەر بەرهەمێکدا، تۆ دەبێت تابلۆی **Up & Downgrades** هەبێت. یەکەم کار لەو تابلۆیە فیلدییەک بە ناوی **Plan Group**ە.
 

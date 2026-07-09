@@ -3,7 +3,7 @@ title: Kända inkompatibiliteter
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Kända inkompatibiliteter med andra tillägg
+# Kända inkompatibiliteter med andra tillägg {#known-incompatibilities-with-other-plugins}
 
 Efter att du har installerat och aktiverat Ultimate Multisite kan du stöta på problem på grund av olösta inkompatibiliteter med andra tillägg.
 

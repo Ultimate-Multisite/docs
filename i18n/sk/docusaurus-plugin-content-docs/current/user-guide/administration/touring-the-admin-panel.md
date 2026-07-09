@@ -3,11 +3,11 @@ title: Prehliadka panel administrácie
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Prehliadka admin panela
+# Prehliadka admin panela {#touring-the-admin-panel}
 
 Ultimate Multisite sa cieľom je byť čo najjednoduchší a samopoznávateľný, ale s takto výkonným nástrojom môže pomôcť mať vedený prehlídku. Prejdeme po admin stránkach, aby ste si mohli získať orientáciu.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 **Dashboard** Ultimate Multisite zobrazuje základné reporty a analýzy vrátane príjmov, aktivity sítí, rast členstva, počtu návštevíacich a geografických údajov.
 
@@ -25,61 +25,61 @@ Tu je aj plný prehľad sieti dashboardu:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Formuláre pre platbu (Checkout Forms)
+## Formuláre pre platbu (Checkout Forms) {#checkout-forms}
 
 **Formuláre pre platbu** vám dá flexibilitu na vytváranie vlastných stránok registrácii. Môžete prispôsobiť pole, vložiť vlastné клаsy a skripty a obmedziť prístup na základe krajiny alebo polohy návštevníka.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Produkty
+## Produkty {#products}
 
 Sekcia **Produkty** je miesto, kde vytvárate rôzne plány, balíčky a služby pre vašu sieti. Definujte ceny, frekvencie fakturácie a limity a kvóty na úrovni produktu.
 
 ![Products list](/img/admin/products-list.png)
 
-## Členstvo (Memberships)
+## Členstvo (Memberships) {#memberships}
 
 Stránka **Členstvo** zobrazuje všetky predplatné v vašej sieti. Prejdite po podrobnosti o predplatnom vrátane plánov, produktov, výšky fakturácie a frekvencií, histórie platení a časových značiek.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Platby
+## Platby {#payments}
 
 Stránka **Platby** poskytuje rýchly prehľad histórie platení po celej vašej siete, vrátane podrobnej informácie o transakciách so špecifickými produktmi a sumami.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Klienci
+## Klienci {#customers}
 
 Stránka **Klienci** zobrazuje všetkých členov zaregistrovaných v vašej sieti s základnými informáciami o používateľoch, vrátane mena, e-mailovej adresy, posledného prihlásenia a odkaz "premieniť sa na" pre prihlásenie do ich podsiete.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Siete
+## Siete {#sites}
 
 Stránka **Siete** uvádza všetky subsiete v vašej sieti vrátane šablon sítí a sítí vlastnených klientmi. Môžete ľahko spravovať mapované domény, limity a kvóty, pluginy a témy, a miniatúry sítí.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domény
+## Domény {#domains}
 
 Stránka **Domény** je určená pre prispôsobené domény mapované na subsiete. Ako superadmin môžete manuálne pridávať alebo mapovať prispôsobené názvy domén a zobraziť DNS záznamy a logy.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Kupónové kódy
+## Kupónové kódy {#discount-codes}
 
 **Kuponové kódy** vám umožňujú vytvárať kódky kupónov na ponuku zľav, aby ste mohli ponúkať zľavy vašim koncovým používateľom. Určite hodnotu zľavy a cílite sa konkrétne používateľské skupiny alebo skupiny.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Rozsielanie informácií (Broadcasts)
+## Rozsielanie informácií (Broadcasts) {#broadcasts}
 
 **Rozsielanie informácií (Broadcasts)** je nástroj na rozoslanie oznámení alebo sendovanie súkromných správ používateľom vašej subsiete. Cílite sa konkrétne skupiny používateľov na základe plánu alebo produktu, na ktorý sú predplatní.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Nastavenia
+## Nastavenia {#settings}
 
 Stránka **Nastavenia** je miesto, kde konfigurujete Ultimate Multisite — nastavenia registráции, platby, API a webhooks, mapovanie domén a iné integrácie.
 
@@ -109,13 +109,13 @@ A stránka nastavení sítí:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Udokladania udalostí (Events)
+## Udokladania udalostí (Events) {#events}
 
 Stránka **Events** udržia záznam všetkých udalostí a logov v vašej sieti. Sleduje aktivit ako zmeny plánov, registráции a iné pohyby – je to užito pre monitorovanie vášho multisite.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooky
+## Webhooky {#webhooks}
 
 **Webhooky** vám umožňujú posielať údaje do inej aplikácie. Je to užito na odosielanie údajov z Ultimate Multisite na platformy ako Zapier.
 

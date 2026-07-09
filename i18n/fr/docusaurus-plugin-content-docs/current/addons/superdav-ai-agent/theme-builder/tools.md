@@ -3,17 +3,17 @@ title: Outils et configuration
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Outils et configuration
+# Outils et configuration {#tools-and-configuration}
 
 Theme Builder utilise un ensemble d’outils pour analyser, concevoir et créer votre site WordPress. Dans la version 1.16.0, **sd-ai-agent/site-scrape est désormais un outil de Tier 1**, ce qui le rend disponible par défaut dans Theme Builder. Superdav AI Agent v1.18.0 introduit également un package compagnon avancé distribué séparément pour les workflows de développeurs de confiance ; ces outils ne font pas partie du package principal WordPress.org et doivent être installés et autorisés séparément.
 
-## Outils disponibles
+## Outils disponibles {#available-tools}
 
-### Outils de Tier 1 (toujours disponibles)
+### Outils de Tier 1 (toujours disponibles) {#tier-1-tools-always-available}
 
 Les outils de Tier 1 sont disponibles par défaut dans Theme Builder sans configuration supplémentaire.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Objectif :** analyser des sites web existants afin d’en extraire de l’inspiration de design, la structure de contenu et les fonctionnalités.
 
@@ -51,11 +51,11 @@ Analyse le design de example.com et utilise-le comme inspiration pour mon site.
 - Les sites utilisant beaucoup JavaScript peuvent avoir une analyse limitée
 - Les grands sites peuvent prendre plus de temps à analyser
 
-### Outils de Tier 2 (facultatifs)
+### Outils de Tier 2 (facultatifs) {#tier-2-tools-optional}
 
 Les outils de Tier 2 sont disponibles lorsqu’ils sont explicitement activés dans les réglages de Theme Builder.
 
-#### Analyses avancées
+#### Analyses avancées {#advanced-analytics}
 
 Fournit des métriques de performances détaillées :
 
@@ -65,7 +65,7 @@ Fournit des métriques de performances détaillées :
 - Score d’accessibilité
 - Score des bonnes pratiques
 
-#### Optimiseur de contenu
+#### Optimiseur de contenu {#content-optimizer}
 
 Analyse et suggère des améliorations pour :
 
@@ -75,11 +75,11 @@ Analyse et suggère des améliorations pour :
 - Structure du contenu
 - Placement des appels à l’action
 
-### Outils de Tier 3 (Premium)
+### Outils de Tier 3 (Premium) {#tier-3-tools-premium}
 
 Les outils de Tier 3 nécessitent une configuration supplémentaire ou des fonctionnalités premium.
 
-#### Générateur de contenu IA
+#### Générateur de contenu IA {#ai-content-generator}
 
 Génère du contenu pour :
 
@@ -89,7 +89,7 @@ Génère du contenu pour :
 - Meta descriptions
 - Texte d’appel à l’action
 
-#### Outils de design avancés
+#### Outils de design avancés {#advanced-design-tools}
 
 Fournit des capacités de design avancées :
 
@@ -99,7 +99,7 @@ Fournit des capacités de design avancées :
 - Théorie avancée des couleurs
 - Optimisation de la typographie
 
-### Outils compagnons avancés (package séparé)
+### Outils compagnons avancés (package séparé) {#advanced-companion-tools-separate-package}
 
 Le package compagnon avancé est distribué séparément de la version principale de Superdav AI Agent. Il est destiné aux environnements de développeurs et de propriétaires de sites de confiance, où les administrateurs autorisent explicitement l’agent à utiliser des outils à fort impact.
 
@@ -116,9 +116,9 @@ Les capacités du compagnon avancé peuvent inclure :
 
 Ne les documentez pas comme des outils Theme Builder généralement disponibles pour chaque installation. Ils ne sont disponibles que lorsque le package compagnon avancé est installé, activé et limité aux administrateurs de confiance.
 
-## Configuration des outils
+## Configuration des outils {#tool-configuration}
 
-### Activation des outils
+### Activation des outils {#enabling-tools}
 
 Pour activer des outils supplémentaires dans Theme Builder :
 
@@ -127,7 +127,7 @@ Pour activer des outils supplémentaires dans Theme Builder :
 3. Activez/désactivez les outils selon les besoins
 4. Enregistrez les réglages
 
-### Autorisations des outils
+### Autorisations des outils {#tool-permissions}
 
 Certains outils nécessitent des autorisations :
 
@@ -137,7 +137,7 @@ Certains outils nécessitent des autorisations :
 - **Fonctionnalités avancées** — peuvent nécessiter un abonnement premium
 - **Outils compagnons avancés** — nécessitent le package Advanced distribué séparément et une confiance explicite de l’administrateur
 
-### API keys et identifiants
+### API keys et identifiants {#api-keys-and-credentials}
 
 Configurez les API keys pour les outils qui les nécessitent :
 
@@ -146,13 +146,13 @@ Configurez les API keys pour les outils qui les nécessitent :
 3. Testez la connexion
 4. Enregistrez de manière sécurisée
 
-### Installation du package compagnon avancé
+### Installation du package compagnon avancé {#installing-the-advanced-companion-package}
 
 Le package compagnon avancé est publié séparément du ZIP principal WordPress.org. Installez-le uniquement depuis le canal officiel de distribution du projet pour la version, puis limitez l’accès aux administrateurs de confiance. Examinez les portes d’approbation humaine et le comportement des instantanés git avant d’activer les outils de système de fichiers, de base de données, WP-CLI, de répartiteur REST, de création de plugins, de gestion des utilisateurs ou de benchmark sur un site de production.
 
-## Utilisation de sd-ai-agent/site-scrape
+## Utilisation de sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Utilisation de base
+### Utilisation de base {#basic-usage}
 
 Demandez à Theme Builder d’analyser un site web :
 
@@ -161,7 +161,7 @@ Analyse le design du site de mon concurrent à l’adresse competitor.com
 et suggère des améliorations de design pour mon site.
 ```
 
-### Analyse spécifique
+### Analyse spécifique {#specific-analysis}
 
 Demandez des types d’analyse spécifiques :
 
@@ -179,7 +179,7 @@ Vérifie l’adaptabilité mobile de example.com et assure-toi que mon site
 est tout aussi responsive.
 ```
 
-### Analyse comparative
+### Analyse comparative {#comparison-analysis}
 
 Comparez plusieurs sites :
 
@@ -188,22 +188,22 @@ Compare les designs de site1.com et site2.com et crée un design
 qui combine les meilleurs éléments des deux.
 ```
 
-## Limitations et considérations des outils
+## Limitations et considérations des outils {#tool-limitations-and-considerations}
 
-### Limitation du débit
+### Limitation du débit {#rate-limiting}
 
 - Le scraping est limité en débit pour éviter la surcharge du serveur
 - Plusieurs requêtes vers le même site peuvent être ralenties
 - Les grands sites peuvent prendre plus de temps à analyser
 
-### Exactitude du contenu
+### Exactitude du contenu {#content-accuracy}
 
 - Le contenu dynamique peut ne pas être entièrement capturé
 - Le contenu rendu par JavaScript peut être incomplet
 - Les données en temps réel peuvent ne pas être reflétées
 - Certains contenus peuvent se trouver derrière des paywalls
 
-### Considérations juridiques et éthiques
+### Considérations juridiques et éthiques {#legal-and-ethical-considerations}
 
 - Respectez robots.txt et les politiques du site
 - Ne scrapez pas du contenu protégé par des droits d’auteur pour le reproduire
@@ -211,16 +211,16 @@ qui combine les meilleurs éléments des deux.
 - Vérifiez que vous avez les droits d’utiliser le contenu extrait
 - Respectez les conditions de service des sites analysés
 
-### Impact sur les performances
+### Impact sur les performances {#performance-impact}
 
 - Le scraping de grands sites peut prendre du temps
 - Plusieurs scrapes simultanés peuvent être plus lents
 - La connectivité réseau affecte la vitesse
 - Les grands jeux de données peuvent nécessiter davantage de traitement
 
-## Bonnes pratiques
+## Bonnes pratiques {#best-practices}
 
-### Utilisation de l’analyse de site
+### Utilisation de l’analyse de site {#using-site-analysis}
 
 1. **Analysez plusieurs sites** — recueillez de l’inspiration auprès de plusieurs sources
 2. **Concentrez-vous sur la structure** — apprenez les modèles de mise en page et d’organisation
@@ -228,7 +228,7 @@ qui combine les meilleurs éléments des deux.
 4. **Étudiez la typographie** — identifiez les combinaisons de polices que vous aimez
 5. **Examinez la navigation** — comprenez l’organisation des menus
 
-### Scraping éthique
+### Scraping éthique {#ethical-scraping}
 
 1. **Respectez robots.txt** — suivez les directives du site
 2. **Ne copiez pas le contenu** — utilisez l’analyse uniquement comme source d’inspiration
@@ -236,7 +236,7 @@ qui combine les meilleurs éléments des deux.
 4. **Attribuez les sources** — créditez les sources d’inspiration
 5. **Respectez les conditions** — conformez-vous aux conditions de service du site
 
-### Maximiser l’efficacité des outils
+### Maximiser l’efficacité des outils {#maximizing-tool-effectiveness}
 
 1. **Soyez précis** — demandez des types d’analyse spécifiques
 2. **Fournissez du contexte** — expliquez l’objectif de votre site
@@ -244,9 +244,9 @@ qui combine les meilleurs éléments des deux.
 4. **Itérez** — affinez en fonction des résultats
 5. **Combinez les outils** — utilisez plusieurs outils pour une analyse complète
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-### Le site ne peut pas être scrapé
+### Le site ne peut pas être scrapé {#site-wont-scrape}
 
 - Vérifiez si le site est accessible publiquement
 - Vérifiez que robots.txt autorise le scraping
@@ -254,7 +254,7 @@ qui combine les meilleurs éléments des deux.
 - Vérifiez la connexion Internet
 - Contactez le support si le problème persiste
 
-### Analyse incomplète
+### Analyse incomplète {#incomplete-analysis}
 
 - Le site peut avoir du contenu dynamique
 - JavaScript peut ne pas être entièrement rendu
@@ -262,7 +262,7 @@ qui combine les meilleurs éléments des deux.
 - Essayez plutôt d’analyser des pages spécifiques
 - Demandez des types d’analyse spécifiques
 
-### Performances lentes
+### Performances lentes {#slow-performance}
 
 - Les grands sites prennent plus de temps à analyser
 - Plusieurs scrapes simultanés sont plus lents
@@ -270,7 +270,7 @@ qui combine les meilleurs éléments des deux.
 - Essayez pendant les heures creuses
 - Analysez d’abord de plus petites sections
 
-## Documentation associée
+## Documentation associée {#related-documentation}
 
 - [Entretien de découverte](./discovery-interview.md) — recueillir des informations de design
 - [Direction du design](./design-direction.md) — affiner votre design

@@ -4,11 +4,11 @@ title: 'Akayunguruzo - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# Filter: wu_\{$this->model\}_pre_save
+# Filter: wu_\{$this->model\}_pre_save {#filter-wuthis-modelpresave}
 
 Iyungurura amakuru y'ikintu mbere y'uko abikwa muri database.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Iyungurura amakuru y'ikintu mbere y'uko abikwa muri database.
 | $data_unserialized | `array` | Amakuru y'ikintu azabikwa. |
 | $this | `\Base_Model` | Instance y'ikintu. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.0.0
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L570) ku murongo 570

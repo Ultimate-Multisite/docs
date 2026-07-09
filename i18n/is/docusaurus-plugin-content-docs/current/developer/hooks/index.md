@@ -3,11 +3,11 @@ title: Tilvísun fyrir hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tilvísun fyrir hooks
+# Tilvísun fyrir hooks {#hooks-reference}
 
 Sjálfvirkt búin til skjölun fyrir allar **59 aðgerðir** og **118 síur** í Ultimate Multisite.
 
-## Aðgerðir
+## Aðgerðir {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Keyrir áður en auðkenningarendurbeiningin á sér stað.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Keyrir rétt áður en auðkenningarkakan er stillt.
@@ -70,7 +70,7 @@ Sjálfvirkt búin til skjölun fyrir allar **59 aðgerðir** og **118 síur** í
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Keyrir eftir að hlutur er vistaður í gagnagrunninum.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Leyfa plugin-forriturum að bæta aðgerðum við aflæsingarferlið.
 
-## Síur
+## Síur {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Síar lengd gildistíma auðkenningarkökunnar.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Síar kerfi auðkenningarendurbeiningar.

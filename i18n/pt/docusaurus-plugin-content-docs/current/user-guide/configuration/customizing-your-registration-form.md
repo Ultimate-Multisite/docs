@@ -3,13 +3,13 @@ title: Personalizando o seu formulário de registo
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizar o seu Formulário de Registo
+# Personalizar o seu Formulário de Registo {#customizing-your-registration-form}
 
 Para fazer com que a sua rede pareça única em relação a todos os outros SaaS criados na plataforma WordPress, o Ultimate Multisite permite-lhe personalizar as suas páginas de registo e login com a nossa funcionalidade **Checkout Forms**.
 
 Embora sejam uma forma fácil e flexível de experimentar diferentes abordagens ao tentar converter novos clientes, são sobretudo usados para criar formulários de registo personalizados. Este artigo tem como objetivo mostrar-lhe como o pode fazer.
 
-## Páginas de login e registo:
+## Páginas de login e registo: {#login-and-registration-pages}
 
 Após a instalação do Ultimate Multisite, são criadas automaticamente páginas personalizadas de login e registo no seu site principal. Pode alterar estas páginas predefinidas a qualquer momento acedendo à sua página **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Agora, vamos ver outras opções que ainda são relevantes para o processo de lo
 
 E estas são todas as opções relacionadas com login e registo que pode personalizar! Não se esqueça de guardar as suas definições depois de terminar de as editar.
 
-## Usar múltiplos formulários de registo:
+## Usar múltiplos formulários de registo: {#using-multiple-registration-forms}
 
 O Ultimate Multisite 2.0 oferece um editor de checkout form que permite criar quantos formulários quiser, com diferentes campos, produtos em oferta, etc.
 
@@ -69,7 +69,7 @@ Em alternativa, pode editar ou duplicar os formulários que já tem clicando nas
 
 Se selecionar passo único ou múltiplos passos, o checkout form já estará pré-preenchido com os passos básicos necessários para funcionar. Depois, se quiser, pode adicionar-lhe passos extra.
 
-### Editar um Checkout Form:
+### Editar um Checkout Form: {#editing-a-checkout-form}
 
 Como mencionámos antes, pode criar checkout forms para diferentes finalidades. Neste exemplo, vamos trabalhar num formulário de registo.
 
@@ -131,11 +131,11 @@ Para obter o shortcode do seu formulário, clique em **Gerar shortcode** e copie
 
 _**Nota:** Terá de adicionar este shortcode à sua página de registo para que este formulário de finalização de compra seja adicionado a ela._
 
-## Pré-selecionar produtos e modelos através de parâmetros de URL:
+## Pré-selecionar produtos e modelos através de parâmetros de URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Se quiser criar tabelas de preços personalizadas para os seus produtos e pré-selecionar no formulário de finalização de compra o produto ou modelo que o seu cliente escolhe a partir da sua tabela de preços ou página de modelos, pode usar parâmetros de URL para isso.
 
-### **Para planos:**
+### **Para planos:** {#for-plans}
 
 Vá a **Ultimate Multisite > Produtos > Selecionar um plano**. Deverá ver o botão **Clique para copiar link partilhável** no topo da página. Este é o link que pode usar para pré-selecionar este plano específico no seu formulário de finalização de compra.
 
@@ -143,7 +143,7 @@ Vá a **Ultimate Multisite > Produtos > Selecionar um plano**. Deverá ver o bot
 
 Note que este link partilhável só é válido para **Planos**. Não pode usar links partilháveis para pacotes ou serviços.
 
-### Para modelos:
+### Para modelos: {#for-templates}
 
 Se quiser pré-selecionar modelos de site no seu formulário de finalização de compra, pode usar o parâmetro: **?template_id=X** no URL da sua página de registo. O "X" tem de ser substituído pelo **número de ID do modelo de site**. Para obter este número, vá a **Ultimate Multisite > Sites**.
 

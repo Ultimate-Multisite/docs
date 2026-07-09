@@ -3,7 +3,7 @@ title: Общност
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Как да се присъедините към Ultimate Multisite Community
+# Как да се присъедините към Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community е място, където можете да се свържете с други потребители на Ultimate Multisite и да споделите съвети, преживявания и още. За достъп до Ultimate Multisite Community отидете на https://community.ultimatemultisite.com/home.
 

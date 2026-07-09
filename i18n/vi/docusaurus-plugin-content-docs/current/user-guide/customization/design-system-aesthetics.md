@@ -3,11 +3,11 @@ title: Kỹ năng thẩm mỹ hệ thống thiết kế
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế
+# Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế {#design-system-aesthetics-skill}
 
 **Kỹ năng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế** là một phương pháp hướng dẫn giúp bạn tinh chỉnh nhận diện trực quan của trang web. Nó giúp bạn đưa ra các quyết định nhất quán về kiểu chữ (typography), màu sắc, khoảng cách (spacing), và các giá trị định nghĩa chuyển động (motion tokens) – những yếu tố tạo nên hệ thống thiết kế của bạn.
 
-## Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế là gì?
+## Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế là gì? {#what-is-design-system-aesthetics}
 
 Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế là một kỹ năng có cấu trúc, bao gồm các phần sau:
 
@@ -20,9 +20,9 @@ Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế là một kỹ nă
 
 Những quyết định này được lưu trữ trong file `theme.json` của theme, tạo nên một hệ thống trực quan gắn kết.
 
-## Tại sao nên sử dụng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế?
+## Tại sao nên sử dụng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế? {#why-use-design-system-aesthetics}
 
-### Tính nhất quán (Consistency)
+### Tính nhất quán (Consistency) {#consistency}
 
 Một hệ thống thiết kế đảm bảo:
 
@@ -31,7 +31,7 @@ Một hệ thống thiết kế đảm bảo:
 - Khoảng cách tuân theo một quy luật dễ đoán.
 - Các hoạt ảnh mang lại cảm giác đồng bộ.
 
-### Hiệu suất (Efficiency)
+### Hiệu suất (Efficiency) {#efficiency}
 
 Thay vì phải đưa ra quyết định thiết kế từng trang một, bạn chỉ cần:
 
@@ -39,7 +39,7 @@ Thay vì phải đưa ra quyết định thiết kế từng trang một, bạn 
 - Áp dụng chúng ở mọi nơi.
 - Cập nhật toàn cục bằng cách thay đổi một giá trị duy nhất.
 
-### Tính linh hoạt (Flexibility)
+### Tính linh hoạt (Flexibility) {#flexibility}
 
 Bạn có thể:
 
@@ -47,9 +47,9 @@ Bạn có thể:
 - Thử nghiệm với các phong cách thẩm mỹ khác nhau.
 - Duy trì tính nhất quán của thương hiệu ngay cả khi hệ thống đang phát triển.
 
-## Kích hoạt Kỹ năng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế
+## Kích hoạt Kỹ năng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế {#triggering-the-design-system-aesthetics-skill}
 
-### Kích hoạt thủ công
+### Kích hoạt thủ công {#manual-activation}
 
 Bạn có thể bắt đầu kỹ năng này bất cứ lúc nào bằng cách nhập:
 
@@ -69,7 +69,7 @@ hoặc
 "Guide me through design system decisions"
 ```
 
-### Gợi ý tự động
+### Gợi ý tự động {#automatic-suggestions}
 
 Các Agent có thể gợi ý sử dụng kỹ năng này khi bạn:
 
@@ -78,9 +78,9 @@ Các Agent có thể gợi ý sử dụng kỹ năng này khi bạn:
 - Muốn cải thiện tính nhất quán về mặt thị giác.
 - Chuẩn bị ra mắt trang web.
 
-## Quy trình Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế
+## Quy trình Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế {#the-design-system-aesthetics-process}
 
-### Bước 1: Kiểu chữ (Typography)
+### Bước 1: Kiểu chữ (Typography) {#step-1-typography}
 
 Agent sẽ hỏi bạn về các lựa chọn phông chữ:
 
@@ -110,7 +110,7 @@ Sau đó, Agent sẽ xác định:
 - **Thang độ đậm (Weight scale)**: Các độ đậm của phông chữ (regular, medium, bold, v.v.).
 - **Chiều cao dòng (Line height)**: Khoảng cách giữa các dòng để dễ đọc.
 
-### Bước 2: Bảng màu (Color Palette)
+### Bước 2: Bảng màu (Color Palette) {#step-2-color-palette}
 
 ```
 Hãy cùng định nghĩa bảng màu của bạn.
@@ -140,7 +140,7 @@ Agent sẽ tạo ra một bảng màu hoàn chỉnh bao gồm:
 - Các màu ngữ nghĩa (success, warning, error).
 - Các trạng thái hover và active.
 
-### Bước 3: Khoảng cách (Spacing)
+### Bước 3: Khoảng cách (Spacing) {#step-3-spacing}
 
 ```
 Bạn muốn không gian "thở" bao nhiêu?
@@ -162,7 +162,7 @@ Agent sẽ định nghĩa các tokens khoảng cách:
 - Thang đo: xs, sm, md, lg, xl, 2xl.
 - Các giá trị cụ thể cho padding, margin, gap.
 
-### Bước 4: Viền và Đổ bóng (Borders and Shadows)
+### Bước 4: Viền và Đổ bóng (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Độ sâu và độ sắc nét trực quan:
@@ -185,7 +185,7 @@ Agent sẽ tạo ra:
 - Các tokens đổ bóng cho các mức độ cao.
 - Các tokens độ rộng viền.
 
-### Bước 5: Chuyển động và Hoạt ảnh (Motion and Animation)
+### Bước 5: Chuyển động và Hoạt ảnh (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 Trang web của bạn nên mang lại cảm giác như thế nào khi tương tác?
@@ -207,9 +207,9 @@ Agent sẽ định nghĩa:
 - Hàm làm mượt (Easing functions - ease-in, ease-out, ease-in-out).
 - Các keyframe hoạt ảnh cho các tương tác phổ biến.
 
-## Áp dụng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế
+## Áp dụng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế {#applying-design-system-aesthetics}
 
-### Tự động áp dụng
+### Tự động áp dụng {#automatic-application}
 
 Sau khi bạn hoàn thành kỹ năng, Agent sẽ:
 
@@ -218,7 +218,7 @@ Sau khi bạn hoàn thành kỹ năng, Agent sẽ:
 3. Tái tạo các kiểu block (block styles) để khớp với hệ thống mới.
 4. Kích hoạt theme đã được cập nhật.
 
-### Áp dụng thủ công
+### Áp dụng thủ công {#manual-application}
 
 Bạn cũng có thể chỉnh sửa `theme.json` trực tiếp:
 
@@ -257,9 +257,9 @@ Bạn cũng có thể chỉnh sửa `theme.json` trực tiếp:
 }
 ```
 
-## Xem Hệ thống Thiết kế của bạn
+## Xem Hệ thống Thiết kế của bạn {#viewing-your-design-system}
 
-### Hỏi Agent
+### Hỏi Agent {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ hoặc
 
 Agent sẽ hiển thị kiểu chữ, màu sắc, khoảng cách và các tokens khác của bạn.
 
-### Xem theme.json
+### Xem theme.json {#view-themejson}
 
 Mở `/wp-content/themes/[theme-name]/theme.json` trong trình soạn thảo văn bản để xem các định nghĩa token thô.
 
-## Cập nhật Hệ thống Thiết kế của bạn
+## Cập nhật Hệ thống Thiết kế của bạn {#updating-your-design-system}
 
-### Cập nhật nhanh
+### Cập nhật nhanh {#quick-updates}
 
 Yêu cầu Agent thực hiện các thay đổi cụ thể:
 
@@ -299,7 +299,7 @@ hoặc
 "Change the heading font to a serif"
 ```
 
-### Thiết kế lại toàn bộ (Full Redesign)
+### Thiết kế lại toàn bộ (Full Redesign) {#full-redesign}
 
 Chạy lại kỹ năng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế:
 
@@ -309,7 +309,7 @@ Chạy lại kỹ năng Thiết lập tính thẩm mỹ cho Hệ thống Thiết
 
 Điều này sẽ hướng dẫn bạn qua tất cả các quyết định một lần nữa, bắt đầu từ các giá trị hiện tại của bạn.
 
-### Cập nhật một phần (Partial Updates)
+### Cập nhật một phần (Partial Updates) {#partial-updates}
 
 Chỉ cập nhật các khía cạnh cụ thể:
 
@@ -317,15 +317,15 @@ Chỉ cập nhật các khía cạnh cụ thể:
 "Just update the color palette, keep everything else"
 ```
 
-## Các Thực hành Tốt nhất về Hệ thống Thiết kế
+## Các Thực hành Tốt nhất về Hệ thống Thiết kế {#design-system-best-practices}
 
-### Tính nhất quán
+### Tính nhất quán {#consistency-1}
 
 - Luôn sử dụng cùng một tokens ở mọi nơi.
 - Không tạo ra các màu sắc hoặc kích thước chỉ dùng một lần.
 - Tham chiếu đến tokens thay vì mã hóa cứng (hardcoding) các giá trị.
 
-### Đặt tên (Naming)
+### Đặt tên (Naming) {#naming}
 
 Sử dụng các tên rõ ràng, mang tính ngữ nghĩa:
 
@@ -335,7 +335,7 @@ Sử dụng các tên rõ ràng, mang tính ngữ nghĩa:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Khả năng mở rộng (Scalability)
+### Khả năng mở rộng (Scalability) {#scalability}
 
 Thiết kế hệ thống của bạn để có thể mở rộng:
 
@@ -343,7 +343,7 @@ Thiết kế hệ thống của bạn để có thể mở rộng:
 - Tạo các thang đo (scales - xs, sm, md, lg, xl) thay vì các giá trị tùy ý.
 - Lên kế hoạch cho các bổ sung trong tương lai.
 
-### Tài liệu hóa (Documentation)
+### Tài liệu hóa (Documentation) {#documentation}
 
 Tài liệu hóa hệ thống thiết kế của bạn:
 
@@ -351,9 +351,9 @@ Tài liệu hóa hệ thống thiết kế của bạn:
 - Khi nào nên sử dụng từng token.
 - Các trường hợp ngoại lệ và tình huống đặc biệt.
 
-## Các Mẫu Thiết kế Hệ thống Phổ biến
+## Các Mẫu Thiết kế Hệ thống Phổ biến {#common-design-system-patterns}
 
-### Tối giản Hiện đại (Modern Minimalist)
+### Tối giản Hiện đại (Modern Minimalist) {#modern-minimalist}
 
 - Kiểu chữ Sans-serif (Inter, Helvetica).
 - Bảng màu giới hạn (2-3 màu).
@@ -361,7 +361,7 @@ Tài liệu hóa hệ thống thiết kế của bạn:
 - Đổ bóng tinh tế.
 - Hoạt ảnh mượt mà, nhanh.
 
-### Ấm áp và Thân thiện (Warm and Friendly)
+### Ấm áp và Thân thiện (Warm and Friendly) {#warm-and-friendly}
 
 - Kết hợp Serif và Sans-serif.
 - Bảng màu ấm (cam, xám ấm).
@@ -369,7 +369,7 @@ Tài liệu hóa hệ thống thiết kế của bạn:
 - Đổ bóng mềm mại.
 - Hoạt ảnh vui tươi.
 
-### Doanh nghiệp Chuyên nghiệp (Professional Corporate)
+### Doanh nghiệp Chuyên nghiệp (Professional Corporate) {#professional-corporate}
 
 - Sans-serif sạch sẽ (Roboto, Open Sans).
 - Bảng màu trung tính với màu nhấn.
@@ -377,7 +377,7 @@ Tài liệu hóa hệ thống thiết kế của bạn:
 - Đổ bóng tối thiểu.
 - Chuyển tiếp tinh tế.
 
-### Sáng tạo và Mạnh mẽ (Creative and Bold)
+### Sáng tạo và Mạnh mẽ (Creative and Bold) {#creative-and-bold}
 
 - Kiểu chữ đặc trưng.
 - Bảng màu đậm.
@@ -385,7 +385,7 @@ Tài liệu hóa hệ thống thiết kế của bạn:
 - Đổ bóng mạnh mẽ.
 - Hoạt ảnh dễ nhận thấy.
 
-## Khắc phục sự cố (Troubleshooting)
+## Khắc phục sự cố (Troubleshooting) {#troubleshooting}
 
 **Các thay đổi hệ thống thiết kế của tôi không hiển thị**
 - Xóa bộ nhớ cache của trình duyệt.
@@ -403,7 +403,7 @@ Tài liệu hóa hệ thống thiết kế của bạn:
 - Chỉnh sửa thủ công `theme.json` về các giá trị trước đó.
 - Chạy lại kỹ năng với các lựa chọn khác.
 
-## Các Bước Tiếp theo
+## Các Bước Tiếp theo {#next-steps}
 
 Sau khi xác định hệ thống thiết kế của bạn:
 

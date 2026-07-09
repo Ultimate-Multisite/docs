@@ -3,7 +3,7 @@ title: Gestione delle imposte
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestione delle imposte
+# Gestione delle imposte {#tax-handling}
 
 Ultimate Multisite ha un modulo di riscossione delle imposte integrato nel nostro core plugin, quindi se devi riscuotere imposte sulle vendite sui tuoi piani, pacchetti e servizi, puoi farlo facilmente senza ricorrere all'installazione di add-on.
 
@@ -11,7 +11,7 @@ Per le aziende con sede in Europa, offriamo un **add-on** che aggiunge strumenti
 
 Ultimate Multisite non dichiara né versa le imposte per tuo conto al governo; ti aiutiamo semplicemente a riscuotere le imposte appropriate al momento della transazione. **Dovrai comunque versare le imposte autonomamente.**
 
-## Abilitare la riscossione delle imposte
+## Abilitare la riscossione delle imposte {#enabling-tax-collection}
 
 La riscossione delle imposte non è abilitata per impostazione predefinita. Per abilitarla, devi andare su **Ultimate Multisite > Settings > Taxes** e attivare l'impostazione Enable Taxes.
 
@@ -25,7 +25,7 @@ Puoi anche visualizzare le impostazioni delle imposte per i singoli prodotti:
 
 ![Impostazioni delle imposte per i prodotti](/img/config/settings-taxes.png)
 
-### Imposta esclusa vs. imposta inclusa
+### Imposta esclusa vs. imposta inclusa {#tax-excluded-vs-tax-included}
 
 Per impostazione predefinita, tutti i prezzi dei tuoi prodotti sono al netto delle imposte, il che significa che le imposte **non sono incluse** nel prezzo del prodotto. Se determiniamo che un cliente deve pagare imposte su un determinato acquisto, aggiungeremo le imposte **in aggiunta** al subtotale.
 
@@ -37,7 +37,7 @@ Non dimenticare di **salvare** le modifiche che hai apportato.
 
 ###
 
-## Creare aliquote fiscali
+## Creare aliquote fiscali {#creating-tax-rates}
 
 Dopo aver abilitato la riscossione delle imposte, dovrai creare aliquote fiscali per località specifiche utilizzando il nostro editor delle aliquote fiscali.
 
@@ -51,7 +51,7 @@ Nella pagina dell'editor delle aliquote fiscali, puoi aggiungere nuove aliquote 
 
 Dovrai assegnare a ciascuna aliquota fiscale un **titolo** (usato nelle fatture). Poi puoi scegliere il **paese** (obbligatorio), lo **stato,** e la **città** (entrambi facoltativi) in cui questa imposta verrà addebitata. Infine, aggiungi l'**aliquota fiscale in percentuale**.
 
-### Categorie fiscali
+### Categorie fiscali {#tax-categories}
 
 Puoi anche creare più categorie fiscali, per aggiungere aliquote fiscali diverse per diversi tipi di prodotti.
 
@@ -73,7 +73,7 @@ Puoi impostare la categoria fiscale per un prodotto specifico andando alla **Pro
 
 Nella stessa schermata, puoi disattivare l'interruttore **Is Taxable?** per far sapere a Ultimate Multisite che non deve riscuotere imposte su quel determinato prodotto.
 
-## Supporto VAT europeo
+## Supporto VAT europeo {#european-vat-support}
 
 Come accennato in precedenza, abbiamo un add-on disponibile per i clienti nell'UE che hanno requisiti aggiuntivi dovuti alle normative europee sulla VAT.
 
@@ -101,7 +101,7 @@ Se torni alla **scheda Tax Settings** , vedrai nuove opzioni disponibili. Attiva
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Recuperare le aliquote fiscali VAT
+### Recuperare le aliquote fiscali VAT {#pulling-on-vat-tax-rates}
 
 Uno degli strumenti aggiunti dalla nostra integrazione è la possibilità di caricare le aliquote fiscali per gli stati membri dell'UE. Questo può essere fatto visitando la pagina dell'editor delle aliquote fiscali dopo aver abilitato il supporto EU VAT.
 
@@ -111,7 +111,7 @@ In fondo alla pagina vedrai le opzioni di recupero VAT. Selezionare un tipo di a
 
 Puoi anche modificare i valori dopo averli recuperati. Per farlo, modifica semplicemente la riga della tabella di cui hai bisogno e fai clic per salvare i nuovi valori.
 
-### Convalida VAT
+### Convalida VAT {#vat-validation}
 
 Quando il supporto VAT è abilitato, Ultimate Multisite aggiungerà un campo aggiuntivo al modulo di checkout, sotto il campo dell'indirizzo di fatturazione. Il campo verrà mostrato solo ai clienti situati nell'UE.
 

@@ -3,7 +3,7 @@ title: Gestion des taxes
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestion des taxes
+# Gestion des taxes {#tax-handling}
 
 Ultimate Multisite intègre un module de collecte des taxes dans notre plugin principal ; ainsi, si vous devez collecter des taxes de vente sur vos plans, forfaits et services, vous pouvez le faire facilement sans recourir à l’installation d’extensions.
 
@@ -11,7 +11,7 @@ Pour les entreprises situées en Europe, nous proposons un **module complémenta
 
 Ultimate Multisite ne déclare ni ne reverse les taxes en votre nom au gouvernement ; nous vous aidons simplement à collecter les taxes appropriées au moment de la transaction. **Vous devrez toujours reverser les taxes vous-même.**
 
-## Activer la collecte des taxes
+## Activer la collecte des taxes {#enabling-tax-collection}
 
 La collecte des taxes n’est pas activée par défaut. Pour l’activer, vous devez aller dans **Ultimate Multisite > Settings > Taxes** et basculer l’option pour activer le réglage Activer les taxes.
 
@@ -25,7 +25,7 @@ Vous pouvez également afficher les réglages de taxes pour des produits individ
 
 ![Réglages de taxes pour les produits](/img/config/settings-taxes.png)
 
-### Taxes exclues vs. taxes incluses
+### Taxes exclues vs. taxes incluses {#tax-excluded-vs-tax-included}
 
 Par défaut, tous les prix de vos produits sont hors taxes, ce qui signifie que les taxes **ne sont pas incluses** dans le prix du produit. Si nous déterminons qu’un client doit payer des taxes sur un achat donné, nous ajouterons les taxes **en plus** du sous-total.
 
@@ -37,7 +37,7 @@ N’oubliez pas d’**enregistrer** les modifications que vous avez apportées.
 
 ###
 
-## Créer des taux de taxe
+## Créer des taux de taxe {#creating-tax-rates}
 
 Après avoir activé la collecte des taxes, vous devrez créer des taux de taxe pour des emplacements spécifiques à l’aide de notre éditeur de taux de taxe.
 
@@ -51,7 +51,7 @@ Sur la page de l’éditeur de taux de taxe, vous pouvez ajouter de nouveaux tau
 
 Vous devrez attribuer à chaque taux de taxe un **titre** (utilisé sur les factures). Vous pouvez ensuite choisir le **pays** (obligatoire), l’**État/la région**, et la **ville** (tous deux facultatifs) où cette taxe sera facturée. Enfin, ajoutez le **taux de taxe en pourcentage**.
 
-### Catégories de taxe
+### Catégories de taxe {#tax-categories}
 
 Vous pouvez également créer plusieurs catégories de taxe, afin d’ajouter des taux de taxe différents pour différents types de produits.
 
@@ -73,7 +73,7 @@ Vous pouvez définir la catégorie de taxe pour un produit particulier en allant
 
 Sur ce même écran, vous pouvez désactiver le bouton **Est imposable ?** pour indiquer à Ultimate Multisite qu’il ne doit pas collecter de taxes sur ce produit donné.
 
-## Prise en charge de la TVA européenne
+## Prise en charge de la TVA européenne {#european-vat-support}
 
 Comme mentionné précédemment, nous proposons un module complémentaire pour les clients de l’UE qui ont des exigences supplémentaires en raison des réglementations européennes en matière de TVA.
 
@@ -101,7 +101,7 @@ Si vous retournez dans l’**onglet Réglages de taxes**, vous verrez de nouvell
 
 <!-- Capture d’écran indisponible : bouton Activer la prise en charge de la TVA dans les réglages de taxes après l’activation du module complémentaire -->
 
-### Importer les taux de TVA
+### Importer les taux de TVA {#pulling-on-vat-tax-rates}
 
 L’un des outils ajoutés par notre intégration est la possibilité de charger les taux de taxe des États membres de l’UE. Cela peut être fait en visitant la page de l’éditeur de taux de taxe après avoir activé la prise en charge de la TVA de l’UE.
 
@@ -111,7 +111,7 @@ En bas de la page, vous verrez les options d’importation de la TVA. Sélection
 
 Vous pouvez également modifier les valeurs après les avoir importées. Pour ce faire, modifiez simplement la ligne du tableau dont vous avez besoin et cliquez pour enregistrer les nouvelles valeurs.
 
-### Validation de la TVA
+### Validation de la TVA {#vat-validation}
 
 Lorsque la prise en charge de la TVA est activée, Ultimate Multisite ajoute un champ supplémentaire au formulaire de checkout, sous le champ de l’adresse de facturation. Le champ ne s’affichera que pour les clients situés dans l’UE.
 

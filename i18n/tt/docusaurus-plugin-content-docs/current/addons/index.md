@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons Ultimate Multisite-ны өстәмә мөмкинлекләр һәм интеграцияләр белән киңәйтә. Addons-ның күбесе түләүле һәм [ultimatemultisite.com](https://ultimatemultisite.com) сайтыннан сатып алына ала.
 
-## Урнаштыру
+## Урнаштыру {#installation}
 
 Addons ике ысул белән урнаштырыла ала:
 
 1. **Addon бите аша** -- WordPress администратор өлешендә сайтыгызның addon идарәсе битенә күчегез
 2. **Кулдан йөкләү** -- [үз аккаунтыгыздан](https://ultimatemultisite.com/my-account/downloads/) йөкләп алыгыз һәм Plugins > Add New аша йөкләгез
 
-## Мөмкин булган Addons
+## Мөмкин булган Addons {#available-addons}
 
 | Addon | Тасвирлама |
 |-------|-------------|

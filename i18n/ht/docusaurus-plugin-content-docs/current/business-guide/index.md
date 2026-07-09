@@ -3,13 +3,13 @@ title: Bati yon biznis sit entènèt nich
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bati yon biznis sit entènèt pou yon nich ak Ultimate Multisite
+# Bati yon biznis sit entènèt pou yon nich ak Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Pifò moun ki eseye vann sit entènèt fè konpetisyon sou pri kont Wix, Squarespace, ak plizyè milye travayè endepandan. Yo pèdi. Moun ki genyen yo chwazi yon odyans espesifik, bati yon solisyon ki adapte ak odyans sa a, epi fè moun peye pou valè yo bay la.
 
 Kou sa a ap montre w kijan pou fè egzakteman sa avèk Ultimate Multisite.
 
-## Sa w pral bati
+## Sa w pral bati {#what-you-will-build}
 
 Pandan tout kou sa a ou pral bati yon rezo reyèl, ki ap fonksyone, ki rele **FitSite** -- yon platfòm sit entènèt ki bati espesyalman pou estidyo fizik, antrenè pèsonèl, ak pwopriyetè jimnazyòm.
 
@@ -23,7 +23,7 @@ Lè w rive nan dènye leson an, FitSite pral yon platfòm nich konplè avèk:
 
 Ou pral suiv etap pa etap, epi lè w fini ou pral genyen ni yon platfòm ki ap fonksyone ni konesans pou repwodui pwosesis la pou nenpòt nich ou chwazi.
 
-## Poukisa estidyo fizik?
+## Poukisa estidyo fizik? {#why-fitness-studios}
 
 Nou te bezwen yon egzanp konkrè nenpòt moun ka suiv. Estidyo fizik yo mache paske:
 
@@ -34,7 +34,7 @@ Nou te bezwen yon egzanp konkrè nenpòt moun ka suiv. Estidyo fizik yo mache pa
 
 Tout sa ou aprann pandan w ap bati FitSite aplike dirèkteman pou nenpòt nich ou chwazi: restoran, ajan imobilye, kabinè avoka, legliz, kontraktè metye, oswa nenpòt lòt vètikal.
 
-## Estrikti kou a
+## Estrikti kou a {#course-structure}
 
 Chak leson prezante yon konsèp, eksplike poukisa li enpòtan, epi gide w pou aplike li nan rezo FitSite la. Chak leson bati sou leson anvan an.
 
@@ -55,7 +55,7 @@ Chak leson prezante yon konsèp, eksplike poukisa li enpòtan, epi gide w pou ap
 | [13. Grandi](lesson-13-growth) | Grandi soti nan premye kliyan yo rive nan yon biznis reyèl | Estrateji kwasans ak otomatizasyon FitSite |
 | [14. Sa ki vini apre](lesson-14-whats-next) | Elaji nan nich ki toupre ak nouvo opòtinite | Kat wout ou pi lwen pase FitSite |
 
-## Sa ou bezwen avan
+## Sa ou bezwen avan {#prerequisites}
 
 - Yon enstalasyon WordPress Multisite (oswa volonte pou mete youn kanpe)
 - Yon lisans Ultimate Multisite aktif
@@ -63,6 +63,6 @@ Chak leson prezante yon konsèp, eksplike poukisa li enpòtan, epi gide w pou ap
 
 Pa bezwen fè kòd. Si ou pa janm sèvi ak Ultimate Multisite anvan, pa gen pwoblèm -- Leson 3 kòmanse ak yon enstalasyon fre.
 
-## Pare?
+## Pare? {#ready}
 
 Kòmanse ak [Leson 1: Poukisa nich genyen](lesson-1-why-niche).

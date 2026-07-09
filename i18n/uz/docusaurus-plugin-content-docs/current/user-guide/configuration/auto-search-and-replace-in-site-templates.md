@@ -3,7 +3,7 @@ title: Sayt shablonlarida avtomatik qidirish va almashtirish
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Sayt Shablonlarida Avtomatik Qidirish va Almashtirish (v2)
+# Sayt Shablonlarida Avtomatik Qidirish va Almashtirish (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Bu tutorial WP UItimo versiyasi 2.x talab qiladi.**_
 
@@ -17,7 +17,7 @@ Sizning mijozlar esa ro'yxatdan o'tish paytida bu maydonni to'ldira oladi.
 
 Ultimate Multisite esa placeholder'larni mijoz tomonidan berilgan ma'lumotlar bilan avtomatik ravishda almashtiradi.
 
-## **"placeholder'lar bilan to'la shablon" muammosini hal qilish**
+## **"placeholder'lar bilan to'la shablon" muammosini hal qilish** {#solving-the-template-full-of-placeholders-problem}
 
 Bular barchasi ajoyib, lekin biz noqulay muammo bilan duch kelamiz: endi mijozlarimiz ko'rib turadigan sayt shablonlarimiz — ular juda ko'p ma'lumot bermaydigan noqulay placeholder'lar bilan to'la.
 

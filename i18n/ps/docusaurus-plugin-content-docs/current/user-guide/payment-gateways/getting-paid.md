@@ -3,13 +3,13 @@ title: پیسې ترلاسه کول
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# تادیه ترلاسه کول (v2)
+# تادیه ترلاسه کول (v2) {#getting-paid-v2}
 
 _**مهم یادښت: دا مقاله د Ultimate Multisite نسخې 2.x ته اشاره کوي.**_
 
 Ultimate Multisite یو جوړ دننه غړیتوب او بلینګ سیسټم لري. زموږ د بلینګ سیسټم د کار کولو لپاره، موږ هغه تر ټولو عامې د تادیې دروازې یوځای کړې دي چې په برېښنايي سوداګرۍ کې کارول کېږي. په Ultimate Multisite کې د تادیې ډیفالټ دروازې _Stripe_ ، _PayPal_ ، او لاسي تادیه دي. تاسو کولی شئ د اړوندو add-ons په نصبولو سره _WooCommerce_ ، _GoCardless_ او _Payfast_ هم د تادیاتو ترلاسه کولو لپاره وکاروئ.
 
-## بنسټیز تنظیمات
+## بنسټیز تنظیمات {#basic-settings}
 
 تاسو کولی شئ د دې تادیې له هرې دروازې څخه هره یوه د Ultimate Multisite د تادیاتو تنظیماتو لاندې عیار کړئ. دا د **Ultimate Multisite غورنۍ > تنظیمات > تادیات** ته په تګ سره موندلی شئ.
 
@@ -39,7 +39,7 @@ Ultimate Multisite v2.13.0 د auto-renewal فعال لرونکي تکراري غ
 
 <!-- سکرین‌شاټ نشته: د راتلونکي invoice نمبر او د invoice نمبر مختاړي field-ونه چې کله پرله‌پسې شمېره ټاکل شوې وي ښودل کېږي -->
 
-## دروازې چېرته ومومئ:
+## دروازې چېرته ومومئ: {#where-to-find-the-gateways}
 
 تاسو کولی شئ د تادیې دروازې په هماغه پاڼه کې عیار کړئ ( **Ultimate Multisite > Settings > Payments**). د **فعالې د تادیې دروازې** تر لاندې سم، تاسو به وکولی شئ ووینئ: _Stripe_ ، _Stripe_ _Checkout_ ، _PayPal_ او _Manual_.
 
@@ -67,7 +67,7 @@ Ultimate Multisite v2.13.0 د auto-renewal فعال لرونکي تکراري غ
 
 اوس، که تاسو غواړئ _WooCommerce_ ، _GoCardless_ یا _Payfast_ د خپلې تادیې دروازې په توګه وکاروئ، تاسو به اړتیا ولرئ چې **د هغوی add-ons نصب او عیار کړئ**.
 
-### د WooCommerce add-on څنګه نصب کړئ:
+### د WooCommerce add-on څنګه نصب کړئ: {#how-to-install-the-woocommerce-add-on}
 
 موږ پوهېږو چې _Stripe_ او _PayPal_ په ځینو هېوادونو کې شتون نه لري، چې دا د Ultimate Multisite کارونکي له دې څخه محدودوي یا یې خنډ ګرځي چې زموږ plugin په اغېزمن ډول وکاروي. نو موږ یو add-on جوړ کړ څو _WooCommerce,_ یوځای کړي، چې یو ډېر مشهور د برېښنايي سوداګرۍ plugin دی. د نړۍ په کچه پراختیاکوونکو بېلابېلې د تادیې دروازې له دې سره د یوځای کولو لپاره add-ons جوړ کړي دي. موږ له دې ګټه واخیسته څو هغه د تادیې دروازې پراخې کړو چې تاسو یې د Ultimate Multisite بلینګ سیسټم سره کارولی شئ.
 
@@ -95,7 +95,7 @@ _**مهم:** Ultimate Multisite: WooCommerce Integration اړتیا لري چې 
 
 د WooCommerce Integration اضافه برخې په اړه د نورو لوستلو لپاره، **دلته کلیک وکړئ**.
 
-### د GoCardless اضافه برخه څنګه نصب کړئ:
+### د GoCardless اضافه برخه څنګه نصب کړئ: {#how-to-install-the-gocardless-add-on}
 
 د _GoCardless_ اضافه برخې د نصبولو ګامونه تر ډېره د _WooCommerce_ اضافه برخې په شان دي. مهرباني وکړئ د اضافه برخو پاڼې ته لاړ شئ او د **Ultimate Multisite: GoCardless Gateway** اضافه برخه وټاکئ.
 
@@ -111,7 +111,7 @@ _**مهم:** Ultimate Multisite: WooCommerce Integration اړتیا لري چې 
 
 د _GoCardless_ gateway سره د پیل کولو د څرنګوالي زده کولو لپاره، **دا لیکنه ولولئ**.
 
-### د Payfast اضافه برخه څنګه نصب کړئ:
+### د Payfast اضافه برخه څنګه نصب کړئ: {#how-to-install-the-payfast-add-on}
 
 د اضافه برخو پاڼې ته لاړ شئ او د **Ultimate Multisite: Payfast Gateway** اضافه برخه وټاکئ.
 

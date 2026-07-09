@@ -4,23 +4,23 @@ title: Sefa - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Sefa: wu_is_development_mode
+# Sefa: wu_is_development_mode {#filter-wuisdevelopmentmode}
 
 Bvumira vagadziri vezviwedzerwa kuti vawedzere dzimwe bvunzo dzemodhi yekuvandudza.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
 | $is_development_mode | `bool` | Mamiriro azvino ekuvandudza. |
 | $site_url | `string` | URL yesaiti. |
 
-### Kubva
+### Kubva {#since}
 
 - 2.0.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/domain-mapping/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/domain-mapping/class-helper.php#L63) pamutsara 63
 
 
-## Zvinodzoserwa
+## Zvinodzoserwa {#returns}

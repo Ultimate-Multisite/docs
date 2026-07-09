@@ -4,25 +4,25 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Τεκμηρίωση Ultimate Multisite
+# Τεκμηρίωση Ultimate Multisite {#ultimate-multisite-documentation}
 
 Καλώς ήρθατε στη τεκμηρίωση του Ultimate Multisite. Το Ultimate Multisite μετατρέπει το WordPress Multisite σε μια πλήρη πλατφόρμα Website as a Service (WaaS).
 
-## Ενότητες Τεκμηρίωσης
+## Ενότητες Τεκμηρίωσης {#documentation-sections}
 
-### [Οδηγός Χρήστη](/user-guide/getting-started/ultimate-multisite-101)
+### [Οδηγός Χρήστη](/user-guide/getting-started/ultimate-multisite-101) {#user-guide}
 
 Περιλαμβάνει τα πάντα που χρειάζεστε για να ρυθμίσετε, να διαμορφώσετε και να διαχειριστείτε την πλατφόρμα WaaS σας. Καλύπτει την εγκατάσταση, τα payment gateways, το domain mapping, τη διαχείριση πελατών και πολλά άλλα.
 
-### [Τεκμηρίωση για Developers](/developer/hooks)
+### [Τεκμηρίωση για Developers](/developer/hooks) {#developer-documentation}
 
 Τεχνική αναφορά για developers που αναπτύσσουν εφαρμογές πάνω στο Ultimate Multisite. Περιλαμβάνει αναφορά hooks, τεκμηρίωση REST API και οδηγούς ανάπτυξης add-ons.
 
-### [Addons](/addons)
+### [Addons](/addons) {#addons}
 
 Τεκμηρίωση για πληρωμένα addon plugins που επεκτείνουν το Ultimate Multisite με επιπλέον λειτουργίες όπως η ενσωμάτωση με WooCommerce, analytics, πώληση domains και πολλά άλλα.
 
-## Πώς να Βρείτε Βοήθεια
+## Πώς να Βρείτε Βοήθεια {#getting-help}
 
 - [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) -- Ρωτήστε ερωτήσεις και μοιραστείτε ιδέες
 - [GitHub Issues](https://github.com/Ultimate-Multisite/ultimate-multisite/issues) -- Αναφέρετε bugs

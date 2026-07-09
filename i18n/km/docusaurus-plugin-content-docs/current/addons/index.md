@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons ពង្រីក Ultimate Multisite ដោយបន្ថែមមុខងារ និងការរួមបញ្ចូលបន្ថែម។ Addons ភាគច្រើនត្រូវបង់ប្រាក់ ហើយអាចទិញបានពី [ultimatemultisite.com](https://ultimatemultisite.com)។
 
-## ការដំឡើង
+## ការដំឡើង {#installation}
 
 Addons អាចដំឡើងបានតាមពីរវិធី៖
 
 1. **តាមទំព័រ Addon** -- ចូលទៅកាន់ទំព័រគ្រប់គ្រង addon របស់គេហទំព័រអ្នក ក្នុងផ្នែកគ្រប់គ្រង WordPress
 2. **ទាញយកដោយដៃ** -- ទាញយកពី [គណនីរបស់អ្នក](https://ultimatemultisite.com/my-account/downloads/) ហើយផ្ទុកឡើងតាម Plugins > Add New
 
-## Addons ដែលមាន
+## Addons ដែលមាន {#available-addons}
 
 | Addon | ការពិពណ៌នា |
 |-------|-------------|

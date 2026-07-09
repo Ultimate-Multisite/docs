@@ -3,11 +3,11 @@ title: Faranana ny fampandrenesana sy ny fanakana ny toerana
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Faranana sy Fanakana ny Tranokala
+# Faranana sy Fanakana ny Tranokala {#membership-expiration-and-site-blocking}
 
 Ity toromarika ity dia manazava ny fomba fiasan'ny Ultimate Multisite amin'ny fampandresena ny fahaiza-manao (membership expiration), ny fiafaran'ny fanandramana (trial endings), ary ny famerana ny tranokala any an-tanàna (frontend site blocking). Manazava izany ny fiainana manomboka amin'ny fahaiza-manao mandritra ny fampandresena ka hatramin'ny fampandresena, ny fepetra mifehy raha voafetra ny tranokala, ary izay tokony ho fantatra rehefa tsy afaka miditra ao anatin'ny tranokala ianao na efa tapitra ny fahaiza-manao.
 
-## Fiainana ny Toetran'ny Fahaiza-manao (Membership Status Lifecycle)
+## Fiainana ny Toetran'ny Fahaiza-manao (Membership Status Lifecycle) {#membership-status-lifecycle}
 
 Ny fahaiza-manao rehetra ao amin'ny Ultimate Multisite dia manana toetra iray amin'ireto:
 
@@ -24,7 +24,7 @@ Tsy mandeha ho lany ho azy ny fahaiza-manao maimaim-poana. Ny Ultimate Multisite
 | **Expired** | Tapitra ny daty fampandresena sy ny fotoana fanomezana fahafahana (grace period) nefa tsy namboarina indray |
 | **Cancelled** | Namboarina mazava avy amin'ny mpanjifa na ny administrator |
 
-### Ahoana no Fiovan'ny Fahaiza-manao Ho Expired
+### Ahoana no Fiovan'ny Fahaiza-manao Ho Expired {#how-memberships-transition-to-expired}
 
 Ny Ultimate Multisite dia manao fanamarinana ao anaty (background check) **isaky ny ora** izay mitady fahaiza-manao tokony ho voamarina fa tapitra. Ity fanamarinana ity dia mampiasa [Action Scheduler](https://actionscheduler.org/) (tsy WP-Cron mivantana) ary miasa amin'ny alalan'ny scheduled action hoe `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Misy **fotoana fialana (grace period) voalohany 3 andro** ao anatin'izany fanama
 Ny fotoana fampandrenesana 3 andro dia hafa noho ny fepetra fanomezana fotoana (Grace Period) ho an'ny Frontend Block izay voalaza eto ambany. Ny fotoana fampandrenesana dia mifehy hoe rahoviana **miova ny sata** avy amin'ny active/on-hold ho expired izy. Ny fotoana fampandrenesana ho an'ny frontend block kosa dia mifehy hoe rahoviana **ho voafetra ny toerana (blocked)** aorian'ny fiovana satany.
 :::
 
-#### Fandraisana Anjara Atao Indray Ho Amin'ny Auto-Renewing vs. Tsy Atao Indray Ho Amin'ny Auto-Renewing
+#### Fandraisana Anjara Atao Indray Ho Amin'ny Auto-Renewing vs. Tsy Atao Indray Ho Amin'ny Auto-Renewing {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Ity fahasamihafana ity dia tena zava-dehibe mba hahatakarana ny fitondran'ny fotoana fampandrenesana:
 
@@ -42,7 +42,7 @@ Ity fahasamihafana ity dia tena zava-dehibe mba hahatakarana ny fitondran'ny fot
 
 - **Fandraisana anjara ataon'ny auto-renew** (`auto_renew = true`): Ny fanamarinana fampandrenesana avy amin'ny cron dia **manitsakitsaka izany tanteraka**. Ny payment gateway (Stripe, PayPal, sns.) dia tokony hanambarana an'i Ultimate Multisite amin'ny alalan'ny webhook rehefa tsy mandeha ny fandraisana anjara na raha voafetra ny fandraisana anjara. Raha tsy azo ny webhook -- noho ny endpoint diso napetraka, fahasimbana eo amin'ny gateway, na raha nisy fandraisana anjara nandrara ivel ny rafitra -- dia mety ho active izy mandrakizay na dia lasa expired aza ny daty.
 
-### Ahoana no Faran'ny Trials (Fandinihana)
+### Ahoana no Faran'ny Trials (Fandinihana) {#how-trials-end}
 
 Rehefa vita ny fotoana fandinihana (trial period) an'ny fandraisana anjara ianao, ny rafitra dia:
 
@@ -52,11 +52,11 @@ Rehefa vita ny fotoana fandinihana (trial period) an'ny fandraisana anjara ianao
 
 Ity dingana ity dia miaraka amin'ny fandaharam-potoana isaky ny ora misy ny fanamarinana fampandrenesana mahazatra, fa **ho an'ny fandraisana anjara tsy ataon'ny auto-renew ihany**. Ho an'ny trials ataon'ny auto-renew kosa no mitantana ny fiovana avy amin'ny trial ho subscription nifandray.
 
-## Fanakatonana ny Fidirana Amin'ny Frontend
+## Fanakatonana ny Fidirana Amin'ny Frontend {#block-frontend-access}
 
 Amin'ny ankapobeny, rehefa mandeha fahataperan'ny fandraisana (membership) na manao fitazomana azy izany, **dia ny dashboard wp-admin ihany no voafetra**. Ny lafiny ivelan'ny tranokala (frontend) dia mbola azo jerena avy amin'ny mpitsidika. Raha te hampetraka fepetra koa ianao mba tsy ho azo jerena avy amin'ny ankamaro, dia mila asa ny fepetra **Block Frontend Access**.
 
-### Fandrindrana ny Fepetra
+### Fandrindrana ny Fepetra {#configuring-the-setting}
 
 Mandehana any amin'i **Ultimate Multisite > Settings > Memberships** ary ataovy **enabled** ilay **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Misy fepetra telo mifandray amin'izany dia mifehy ity fitondran-javatra ity:
 | **Frontend Block Grace Period** | Isan'ny andro tokony hiandry aorian'ny tsy fiasan'ny fandraisana alohan'ny hanaovana fanakana. Ataovy `0` raha te hanakana avy hatrany ianao. | 0 |
 | **Frontend Block Page** | Pejy ao amin'ny tranokala lehibe izay hamerenana ny mpitsidika rehefa voafetra ny toerana iray. Raha tsy voatendry, dia hahita hafatra ankapobeny hoe "Tsy azo jerena ity toerana ity amin'izao fotoana izao" miaraka amin'ny rohy ho amin'ny pejy fidirana (login) ho an'ny administrator an'ilay toerana. | None |
 
-### Inona no Hahita Avy Amin'ny Mpitsidika Rehefa Voafetra ny Toerana
+### Inona no Hahita Avy Amin'ny Mpitsidika Rehefa Voafetra ny Toerana {#what-visitors-see-when-a-site-is-blocked}
 
 Rehefa voafetra ny fidirana amin'ny lafiny ivelan'ny tranokala, dia hisy zavatra roa eo amin'ny mpitsidika ao amin'ny toerana:
 
@@ -83,7 +83,7 @@ Rehefa voafetra ny fidirana amin'ny lafiny ivelan'ny tranokala, dia hisy zavatra
 
 Mbola afaka miditra (log in) ny administrator an'ilay toerana — tsy voafetra mihitsy ilay pejy fidirana.
 
-### Inona no Voafetra sy Rahoviana
+### Inona no Voafetra sy Rahoviana {#what-gets-blocked-and-when}
 
 Ny fitondran-javatra fanakana dia miankina amin'ny sata (status) an'ilay fandraisana:
 
@@ -104,21 +104,21 @@ Na dia tapitra aza ny fotoana manandrana, ny fomba fiasa misy ny "trialing" dia 
 Ny fomba fiasa Cancelled dia voafitina foana rehefa tapitra ny daty fahaverezana, na inona na inona ny fanovana "Block Frontend Access". Tsy misy "Grace Period" ho an'ireo fomba fiasa Cancelled.
 :::
 
-## Fanamboarana Olana: Fomba Fiasa Mbola azo Atao Taorian'ny Fahaverezana
+## Fanamboarana Olana: Fomba Fiasa Mbola azo Atao Taorian'ny Fahaverezana {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Raha mbola azo atao ny fidirana amin'ny toerana (sites) aorian'ny fahaverezan'ny fomba fiasa, dia andramo ireo fanamarinana ireo tsikelikely:
 
-### 1. Fantaro fa Voafitina ny Famaritana "Block Frontend Access"
+### 1. Fantaro fa Voafitina ny Famaritana "Block Frontend Access" {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Mandehana any amin'i **Ultimate Multisite > Settings > Memberships** ary avereno raha voafitina (on) ilay "Block Frontend Access". Io fandrindrana io dia **tsy voafitina ho an'ny ankamaro**, izay midika fa ny `wp-admin` ihany no voafitana rehefa tsy mandeha intsony ny fomba fiasa.
 
-### 2. Jereo ny Fotoana Fohy Ho An'ny Frontend Block Grace Period
+### 2. Jereo ny Fotoana Fohy Ho An'ny Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 Amin'il sehatry ny pejy fandraisana (settings page) mitovy izany, jereo ny sandan'ny **Frontend Block Grace Period**. Raha voafidy ho 7 andro ity, ohatra, dia tsy ho voakatarina ny frontend mandra-pahatongan'ny 7 andro aorian'ny daty faran'ny fandraisana (membership expiration date) izany -- na dia efa `expired` aza ny sata fandraisana.
 
 Apetaho amin'ny `0` raha te-handamina ny fanakatarana avy hatrany rehefa tsy mandeha intsony ny fandraisana.
 
-### 3. Fantaro fa Novaly ny Sata Fandraisana
+### 3. Fantaro fa Novaly ny Sata Fandraisana {#3-confirm-the-membership-status-has-actually-changed}
 
 Mandehin-doha any amin'ny **Ultimate Multisite > Memberships** ary jereo ny sata an'ilay fandraisana voakasika. Raha mbola mampiseho `active` izy na dia lasa tamin'ny daty faran'ny fandraisana aza, dia tsy nitranga ny fiovana ny sata. Ireto misy antony mahazatra:
 
@@ -126,7 +126,7 @@ Mandehin-doha any amin'ny **Ultimate Multisite > Memberships** ary jereo ny sata
 
 - **Tsy nandeha ny cron job**: Jereo ny dingana manaraka.
 
-### 4. Fantaro raha Mandeha ny Action Scheduler
+### 4. Fantaro raha Mandeha ny Action Scheduler {#4-verify-action-scheduler-is-running}
 
 Mampiasa Action Scheduler ny Ultimate Multisite ho an'ireo cron jobs nataony. Mandehin-doha any amin'ny **Tools > Scheduled Actions** ao amin'ny network admin ary mitadiava ireto:
 
@@ -148,7 +148,7 @@ Mba hiantohana fa mandeha tsara ny cron, ataovy io asa cron anaty rafitra io:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Jereo ny olana eo amin'ny Gateway Webhook (Auto-Renewing Memberships)
+### 5. Jereo ny olana eo amin'ny Gateway Webhook (Auto-Renewing Memberships) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Raha toa ka mbola mandeha ny fanavaozana ho azy ny fandraisana anjara ary nisy fanafoanana na tsy nahomby ny fandraisana anjara avy amin'ny gateway, saingy mbola mampiseho hoe `active` ny Ultimate Multisite:
 
@@ -157,7 +157,7 @@ Raha toa ka mbola mandeha ny fanavaozana ho azy ny fandraisana anjara ary nisy f
 
 Raha toa ka mampiseho ny gateway fa voafanana ny fandraisana anjara nefa tsy mampiseho izany ny Ultimate Multisite, dia azo inoana fa very ny fampahafantarana webhook. Afaka manova ny sata ho an'ny fandraisana anjara amin'ny alalan'ny **Ultimate Multisite > Memberships > [Edit Membership]** ianao.
 
-### 6. Jereo ny fotoana fanalana (Grace Period) (Level Cron)
+### 6. Jereo ny fotoana fanalana (Grace Period) (Level Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Misy fotoana fanalana manokana ho an'ny cron check (default: 3 andro) alohan'ny hanamarina fa vita ny fandraisana anjara ho ela. Tsy mifandray amin'ny fotoana fanalana eo amin'ny frontend block izany. Ny fotoana rehetra alohan'ny ho voafanana ny tranokala dia azo atao hoe:
 
@@ -165,7 +165,7 @@ Misy fotoana fanalana manokana ho an'ny cron check (default: 3 andro) alohan'ny 
 
 Ohatra, amin'ny fampiasana ny fepetra fototra sy fotoana fametrahana mialoha 7 andro ho an'ny frontend, mety mandritra ny 10 andro ka hatramin'izany alohan'ny ho voafetra tanteraka ny tranokala aorian'ny `date_expiration`.
 
-### 7. Fanaovana fepetra fampandrefana (Membership) manokana
+### 7. Fanaovana fepetra fampandrefana (Membership) manokana {#7-manually-expire-a-membership}
 
 Raha mila manakana toerana ianao amin'izay fotoana dia tsy mila miandry ny cycle an'ny cron ianao, afaka manova ny sata fampandrefana (membership status) manokana ianao:
 
@@ -176,7 +176,7 @@ Raha mila manakana toerana ianao amin'izay fotoana dia tsy mila miandry ny cycle
 
 Ny fanakana frontend dia hisy vokany rehefa misy fametrahana pejy (page load) manaraka (miankina amin'ny fotoana fametrahana mialoha ho an'ny membership expired, na avy hatrany raha cancelled).
 
-## Famintinana
+## Famintinana {#summary}
 
 Ny lalana feno avy amin'ny daty fampandrefana ka hatramin'ny fanakana ny toerana:
 
@@ -208,7 +208,7 @@ Ho an'ireo membership izay nampandrefana (cancelled), dia fohy kokoa ny lalana:
   Voafetra ny frontend an'ny toerana avy hatrany
 ```
 
-## Fampahafantarana ho mpandrindra (Developer Reference)
+## Fampahafantarana ho mpandrindra (Developer Reference) {#developer-reference}
 
 Ireto no hooks sy filters izay ahafahanao manova ny fomba fametrahana sy fanakana:
 

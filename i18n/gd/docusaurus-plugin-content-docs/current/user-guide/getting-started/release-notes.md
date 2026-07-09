@@ -3,9 +3,9 @@ title: An t-aithrisn a' chluarach
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Note a Chàirbhleachd (Release Notes)
+# Note a Chàirbhleachd (Release Notes) {#release-notes}
 
-## Versiù 2.13.0 — A ghràdh air 2026-06-05
+## Versiù 2.13.0 — A ghràdh air 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - New: Added sòbhain-tenant support airson contaichean, checkout, billing, site, invoice, template switching, agus domain mapping flows, mar a tha e gu sònraichte do chùl-cnàidhean (tenant networks) a bheith ag iarraidh àiteach na ùr-chùl-cnàidhean gu sònraichte air an sinne airson àiteach na h-aig an t-sìth airson ealaian.
 - New: Added chraighean de chraighean a' chlàradh (renewal-credential checks) airson fìrinn a tha ag tairgseachadh gu sònraichte, mar a tha e gu sònraichte do chluichean (gateways) a bheith ag iarraidh a' chlàradh an ùir-chùl air a tharraing gu sònraichte nuair a tha fìrinn a tha a' tairgseachadh airson àiteach a tha a' tairgseachadh.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Tha chraighean a' chlàradh fìrinn (membership renewals), a' sgaidh a' chlàradh, agus ealaian de chluichean (payment collection edge cases) a' chlàradh a' tairgseachadh air a bheulachdaidhean a tha a' tairgseachadh gu sònraichte.
 - Improved: Tha WordPress compatibility a' chlàradh a' tairgseachadh gu sònraichte gu 7.0, tha assetan Vue de prodúct a' chlàradh a' tairgseachadh air seachdairean npm, agus tha Cypress end-to-end coverage a' chlàradh a' tairgseachadh a' chlàradh fhaighinn, setup, SSO, agus gateway flows gu sònraichte.
 
-## Versian 2.12.0 — Ailbh a' Ghlasair air 2026-05-15
+## Versian 2.12.0 — Ailbh a' Ghlasair air 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nàs: Tha Hostinger (hPanel) a' chluainn de dhòighinn a' leathachadh gu sònraichte, agus tha e a' leathachadh domhaintan.
 - Nàs: Tha Site Exporter a' leathachadh beann-bhàinnean ngrìomh (network import bundles) airson a' chluainn de dhòighinn a' leathachadh gu sònraichte, gus amh tha an t-seòl a' leathachadh gu sònraichte.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fhàs: Tha Site Exporter CLI a' leathachadh tòiseachadh a' chluainn de dhòighinn a' leathachadh sitean a' leathachadh gu fhaisg-dhate (default network site selection) a' leathachadh gu sònraichte.
 - Amharraich: Tha e-cli wp-cli a' leathachadh beann-bhàinnean bundled air an pacaid a' chluainn, gus amh tha an t-seòl a' leathachadh a' leathachadh de dhòighinn.
 
-## Versian 2.11.0 — Ailbh a' Ghlasair air 2026-05-11
+## Versian 2.11.0 — Ailbh a' Ghlasair air 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nàs: Tha sitean a' leathachadh a' leathachadh beann-bhàinnean (self-booting `index.php`) airson an ZIP a' leathachadh air chluainn de dhòighinn fuaimeach gu fhaisg a' leathachadh plugin a' leathachadh sealladh fhaisg-dhate.
 - Nàs: Tha sitean a' leathachadh beann-bhàinnean (Network export) a' leathachadh a' chluainn a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leathachadh a' leath
@@ -47,7 +47,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Tha an stiùr SSO a' sealltain gu leithid air a' chàrrachdais a' chuidheann.
 - Fix: Tha optionaiche site blank wedi' sealltain air a' sealltain ar fhaighinn.
 
-## Versiún 2.9.0 — A' sealltain ar 2026-04-30
+## Versiún 2.9.0 — A' sealltain ar 2026-04-30 {#version-2100--released-on-2026-05-05}
 
 - New: Tha earrachaidhean export agus import de chuiditeann a tha a' sealltain air an **Tools > Export & Import**.
 - Fix: Tha ZIP files export wedi' sealltain gu leithid a' chàrrachdais a' chuidheann.
@@ -61,7 +61,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Tha Tour IDs wedi' sealltain gu leithid air underscores i gach cleachdadh setting.
 - Improved: Tha ZipArchive a' sealltain a' chuidheann a' sònraichte a' chuidheann Alchemy/Zippy airson co-fhreagairt a chanaltachd.
 
-## Versiún 2.8.0 — A' sealltain ar 2026-04-29
+## Versiún 2.8.0 — A' sealltain ar 2026-04-29 {#version-290--released-on-2026-04-30}
 
 New: Enable Jumper toggle added to Other Options settings UI.
 New: Status column added to the checkout forms list table.

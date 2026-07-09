@@ -3,7 +3,7 @@ title: Webhook-ak
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks-ekuzki ikuspe (v2)
+# Webhooks-ekuzki ikuspe (v2) {#a-first-look-on-webhooks-v2}
 
 _**ESKUPEN: Ez dago eratu, hori edo testua oso eskaintzeko erabiltzen da.**_
 
@@ -11,7 +11,7 @@ _**ESKUPEN: Ez dago eratu, hori edo testua oso eskaintzeko erabiltzen da.**_
 
 Hau laguntzak da, Ultimate Multisite-natik dagoen bestelako CRM edo sistema batean edozein testiera event bat geratu ondoren datu edo bestelako datuak iritsi behar dutenean. Adibidez, leku berri erabiltzaile bat sortzen duenean, erabiltzailearen pertsonalari eta email-a mailing list batean auratzitela behar duzu.
 
-## Webhook bat sortzeko
+## Webhook bat sortzeko {#how-to-create-a-webhook}
 
 Webhook bat sortzeko, network admin dashboard-era jarraitu. **Ultimate Multisite > Webhooks > Add New Webhook** (Webhooks berri gehitu) klikatu.
 

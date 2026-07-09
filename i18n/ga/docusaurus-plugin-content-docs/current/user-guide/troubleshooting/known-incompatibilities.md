@@ -3,7 +3,7 @@ title: Inamhs a fhoireann chluainn
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Inkompatibilitáirí a Plugins eile
+# Inkompatibilitáirí a Plugins eile {#known-incompatibilities-with-other-plugins}
 
 Tar éastaúchadh agus activaitheor Ultimate Multisite, is féidir leat ghlúin a bheith ag fáil eolas ar inkompatibilitáirí leat a bhaint as leatais eile.
 

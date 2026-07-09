@@ -3,7 +3,7 @@ title: 国一覧
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite 国リストの並べ替え
+# Ultimate Multisite 国リストの並べ替え {#re-ordering-the-ultimate-multisite-country-list}
 
 国を選択するドロップダウンは、国名の英語バリエーションに基づいてアルファベット順に並べられています。これにより、時には、会社の本拠国やほとんどの顧客の国が、膨大な国名リストの中間に埋もれてしまうことがあります。
 

@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Żidiet ta' Ultimate Multisite
+# Żidiet ta' Ultimate Multisite {#ultimate-multisite-addons}
 
 Iż-żidiet jestendu Ultimate Multisite b'karatteristiċi u integrazzjonijiet addizzjonali. Il-biċċa l-kbira taż-żidiet huma bi ħlas u jistgħu jinxtraw minn [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Installazzjoni
+## Installazzjoni {#installation}
 
 Iż-żidiet jistgħu jiġu installati b'żewġ modi:
 
 1. **Permezz tal-Paġna taż-Żidiet** -- Mur fil-paġna tal-ġestjoni taż-żidiet tas-sit tiegħek fl-amministrazzjoni ta' WordPress
 2. **Tniżżil Manwali** -- Niżżel minn [l-Account tiegħek](https://ultimatemultisite.com/my-account/downloads/) u tella' permezz ta' Plugins > Żid Ġdid
 
-## Żidiet Disponibbli
+## Żidiet Disponibbli {#available-addons}
 
 | Żieda | Deskrizzjoni |
 |-------|-------------|

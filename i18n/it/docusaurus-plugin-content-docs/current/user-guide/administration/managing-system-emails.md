@@ -3,11 +3,11 @@ title: Gestione delle email di sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestione delle email di sistema
+# Gestione delle email di sistema {#managing-system-emails}
 
 Ultimate Multisite invia diverse email di sistema per eventi come conferme di registrazione, ricevute di pagamento e modifiche alla membership. Puoi personalizzare questi template di email per adattarli al tuo brand.
 
-## Visualizzazione delle email di sistema
+## Visualizzazione delle email di sistema {#viewing-system-emails}
 
 Vai a **Ultimate Multisite → Settings** e fai clic sulla scheda **Emails** per vedere le impostazioni relative alle email.
 
@@ -21,7 +21,7 @@ Puoi anche modificare singoli template di email usando l’editor delle email di
 
 ![Editor delle email di sistema](/img/admin/system-email-editor.png)
 
-## Importazione di nuovi template di email
+## Importazione di nuovi template di email {#importing-new-email-templates}
 
 Le nuove versioni e gli add-on di Ultimate Multisite possono registrare nuovi template di email. Per evitare conflitti, i nuovi template non vengono aggiunti automaticamente: devi importarli manualmente.
 
@@ -32,7 +32,7 @@ Per importare nuovi template di email:
 3. Attiva l’opzione **Import Emails** per vedere i template disponibili
 4. Seleziona i template che vuoi importare e conferma
 
-## Reimpostazione dei template di email
+## Reimpostazione dei template di email {#resetting-email-templates}
 
 Se hai personalizzato un template di email e vuoi ripristinare il contenuto predefinito, hai due opzioni:
 

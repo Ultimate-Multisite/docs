@@ -3,17 +3,17 @@ title: 'Isifundo 12: Ukuqhuba Ibhizinisi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Isifundo 12: Ukuqhuba Ibhizinisi
+# Isifundo 12: Ukuqhuba Ibhizinisi {#lesson-12-running-the-business}
 
 Inkundla akuyona iphrojekthi oyiphothulayo -- iyibhizinisi oliqhubayo. Lesi sifundo sihlanganisa imisebenzi yansuku zonke yokuphatha i-FitSite: ukwesekwa, ukukhokhisa, ukunakekela, nokugcina amakhasimende ejabule.
 
-## Lapho Sigcine Khona
+## Lapho Sigcine Khona {#where-we-left-off}
 
 I-FitSite isiyasebenza futhi amakhasimende ayabhalisa. Manje kudingeka uqhube umsebenzi ngendlela esimeme.
 
-## Imisebenzi Yansuku Zonke
+## Imisebenzi Yansuku Zonke {#daily-operations}
 
-### Ukuqapha
+### Ukuqapha {#monitoring}
 
 Hlola lokhu nsuku zonke (noma usethe izaziso):
 
@@ -22,7 +22,7 @@ Hlola lokhu nsuku zonke (noma usethe izaziso):
 - **Izinkokhelo ezihlulekile**: Ingabe kukhona ukwehluleka kwezinkokhelo okudinga ukunakwa?
 - **Izicelo zokwesekwa**: Ingabe kukhona imibuzo yamakhasimende engakaphendulwa?
 
-### Ukwesekwa Kwamakhasimende
+### Ukwesekwa Kwamakhasimende {#customer-support}
 
 Ukugxila kwakho emkhakheni okhethekile kuyinzuzo lapha. Njengoba wonke amakhasimende akho eyizitudiyo zokuzivocavoca, uzobona imibuzo efanayo iphindaphindwa:
 
@@ -36,7 +36,7 @@ Ukugxila kwakho emkhakheni okhethekile kuyinzuzo lapha. Njengoba wonke amakhasim
 
 Yakha isizinda sakho solwazi (esiqale eSifundweni 8) uzungeze le mibuzo ephindaphindayo. Yonke ithikithi lokwesekwa ebelingaba i-athikili yesizinda solwazi liyisibonakaliso sokuthi ubhale leyo athikili.
 
-### Amazinga Okwesekwa
+### Amazinga Okwesekwa {#support-tiers}
 
 Njengoba ukhula, hlela ukwesekwa nge-plan:
 
@@ -48,9 +48,9 @@ Njengoba ukhula, hlela ukwesekwa nge-plan:
 
 I-[addon Yamathikithi Okwesekwa](/addons/support-tickets) ingasiza ukuphatha izicelo zokwesekwa ngaphakathi kwenkundla.
 
-## Imisebenzi Yokukhokhisa
+## Imisebenzi Yokukhokhisa {#billing-operations}
 
-### Izinkokhelo Eziphindaphindwayo
+### Izinkokhelo Eziphindaphindwayo {#recurring-payments}
 
 Ultimate Multisite iphatha ukukhokhisa okuphindaphindwayo ngokuzenzakalelayo nge-payment gateway yakho. Umsebenzi wakho ukuqapha lokhu:
 
@@ -58,7 +58,7 @@ Ultimate Multisite iphatha ukukhokhisa okuphindaphindwayo ngokuzenzakalelayo nge
 - **Ukulandela izinkokhelo**: Setha ilojikhi yokuzama kabusha ngokuzenzakalelayo nge-payment gateway yakho (Stripe ikwenza kahle lokhu)
 - **Izicelo zokukhansela**: Qonda ukuthi kungani amakhasimende ehamba. Konke ukukhansela kuyimpendulo.
 
-### Ukuphatha Ubulungu
+### Ukuphatha Ubulungu {#managing-memberships}
 
 Yiya ku-**Ultimate Multisite > Ubulungu** ukuze:
 
@@ -69,13 +69,13 @@ Yiya ku-**Ultimate Multisite > Ubulungu** ukuze:
 
 Bheka [Ukuphatha Ubulungu](/user-guide/administration/managing-memberships) ukuze uthole ireferensi ephelele.
 
-### Ama-invoice
+### Ama-invoice {#invoicing}
 
 Qinisekisa ukuthi ama-invoice akhiqizwa ngendlela efanele kuzo zonke izinkokhelo. Amakhasimende angase adinge ama-invoice ukuze abike izindleko zebhizinisi. Bheka [Ukuphatha Izinkokhelo Nama-invoice](/user-guide/administration/managing-payments-and-invoices).
 
-## Ukunakekelwa Kwenkundla
+## Ukunakekelwa Kwenkundla {#platform-maintenance}
 
-### Izibuyekezo ze-WordPress nama-plugin
+### Izibuyekezo ze-WordPress nama-plugin {#wordpress-and-plugin-updates}
 
 Njengomphathi wenethiwekhi, unesibopho salokhu:
 
@@ -88,14 +88,14 @@ Njengomphathi wenethiwekhi, unesibopho salokhu:
 Isibuyekezo esiphukile sithinta yonke isayithi yamakhasimende kunethiwekhi yakho. Njalo hlola izibuyekezo kukhophi ye-staging yenethiwekhi yakho kuqala.
 :::
 
-### Ukuvikeleka
+### Ukuvikeleka {#security}
 
 - Gcina yonke isoftware isesikhathini
 - Sebenzisa amaphasiwedi aqinile nokuqinisekisa ngezinyathelo ezimbili kuma-Account e-admin
 - Qapha umsebenzi osolisayo
 - Yiba ne-plan yezigameko zokuvikeleka
 
-### Ukusebenza
+### Ukusebenza {#performance}
 
 Njengoba inethiwekhi yakho ikhula, qapha:
 
@@ -105,9 +105,9 @@ Njengoba inethiwekhi yakho ikhula, qapha:
 
 Cabanga ukusebenzisa i-caching (i-page cache, i-object cache) ne-CDN uma ungakakwenzi. I-[Cloudflare integration](/user-guide/host-integrations/cloudflare) iphatha okuningi kwalokhu.
 
-## Ukuphathwa Komjikelezo Wempilo Yekhasimende
+## Ukuphathwa Komjikelezo Wempilo Yekhasimende {#customer-lifecycle-management}
 
-### Ukunciphisa Ukushiya
+### Ukunciphisa Ukushiya {#reducing-churn}
 
 Ukushiya kuyiphesenti lamakhasimende akhansela njalo ngenyanga. Ebhizinisini lokubhaliselwe, ukunciphisa ukushiya kubaluleke njengokuthola amakhasimende amasha.
 
@@ -119,7 +119,7 @@ Ukushiya kuyiphesenti lamakhasimende akhansela njalo ngenyanga. Ebhizinisini lok
 - Bathole enye indlela eshibhile → qinisa inani lakho lomkhakha okhethekile
 - Ibhizinisi labo livaliwe → akunakugwemeka, kodwa kulandelele ngokwehlukana
 
-### Ukukhuthaza Ukuthuthukisa
+### Ukukhuthaza Ukuthuthukisa {#encouraging-upgrades}
 
 Amakhasimende aku-Starter aphumelelayo kufanele akhuthazwe ukuthi athuthukise:
 
@@ -127,7 +127,7 @@ Amakhasimende aku-Starter aphumelelayo kufanele akhuthazwe ukuthi athuthukise:
 - Thumela ama-email aqondisiwe agqamisa izici ze-Growth plan abangazuza kuzo
 - Bonisa lokho amakhasimende e-Growth/Pro akwakhile
 
-### Imikhankaso Yokubuyisa
+### Imikhankaso Yokubuyisa {#win-back-campaigns}
 
 Lapho ikhasimende likhansela:
 
@@ -135,30 +135,30 @@ Lapho ikhasimende likhansela:
 2. Bhekana nokukhathazeka kwalo uma kungenzeka
 3. Nikeza isaphulelo ukuze libuye (izinsuku ezingu-30-60 ngemva kokukhansela)
 
-## Izinqubo Zamasonto Onke Nezanyanga Zonke
+## Izinqubo Zamasonto Onke Nezanyanga Zonke {#weekly-and-monthly-routines}
 
-### Masonto Onke
+### Masonto Onke {#weekly}
 
 - Buyekeza ukubhalisa okusha nokukhansela
 - Phendula wonke amathikithi okwesekwa avulekile
 - Hlola ukusebenza kwenkundla nesikhathi sokusebenza
 - Buyekeza noma yiziphi izinkokhelo ezihlulekile
 
-### Nyanga Zonke
+### Nyanga Zonke {#monthly}
 
 - Hlaziya amamethrikhi abalulekile (MRR, ukushiya, amakhasimende amasha, ukuthuthukisa)
 - Sebenzisa izibuyekezo ze-WordPress nama-plugin (ngemva kokuhlolwa kwe-staging)
 - Buyekeza futhi ubuyekeze isizinda solwazi ngokusekelwe emaphethini okwesekwa
 - Thumela i-newsletter noma isibuyekezo kumakhasimende (izici ezintsha, amathiphu, izindaba zomkhakha wokuzivocavoca)
 
-### Ngekota
+### Ngekota {#quarterly}
 
 - Buyekeza intengo uma iqhathaniswa nabancintisana nawe nempendulo yamakhasimende
 - Hlola imiklamo yama-template -- ingabe idinga ukuvuselelwa?
 - Hlola umthamo wokusingatha -- ingabe kudingeka ukhule?
 - Buyekeza futhi uthuthukise ukuqaliswa ngokusekelwe kudatha yokuvuselela
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Izinqubo zansuku zonke zokuqapha** zesikhathi sokusebenza, ukubhalisa, izinkokhelo, nokwesekwa
 - **Isakhiwo sokwesekwa esinamazinga** esihambisana namazinga e-plan

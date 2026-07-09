@@ -3,13 +3,13 @@ title: Smanjivanje plana
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Smanjenje plana (v2)
+# Smanjenje plana (v2) {#downgrading-a-plan-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
 Smanjenje plana ili pretplate je uobičajena akcija koju vaši klijenti mogu izvršiti ako im je budžet ograničen ili ako odluče da neće trebati mnogo resursa za pokretanje svoje podstranice.
 
-## Kako smanjiti plan
+## Kako smanjiti plan {#how-to-downgrade-a-plan}
 
 Vaši klijenti mogu u bilo kojem trenutku smanjiti svoj plan tako što će se prijaviti na admin dashboard svoje podstranice i kliknuti na **Change** (Promijeni) na stranici sa njihovim računom.
 
@@ -25,7 +25,7 @@ Da bi nastavili, korisnik samo treba da klikne na gumb **Complete Checkout**. To
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Šta se dešava kada korisnik smanji svoj plan
+### Šta se dešava kada korisnik smanji svoj plan {#what-happens-when-a-user-downgrades-their-plan}
 
 Važno je napomenuti da smanjenje plana ne mijenja postojeću konfiguraciju u podstranici korisnika.
 
@@ -37,7 +37,7 @@ Za objave koje nadmašuju limit postavljen na planu, imate 3 različite opcije: 
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Šta se dešava sa plaćanjem
+### Šta se dešava sa plaćanjem {#what-happens-to-the-payment}
 
 U verziji 2.0, više nije potrebno bilo kakvo podešavanje plaćanja u smislu prorate (proporcionalnog naplata).
 

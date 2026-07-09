@@ -4,11 +4,11 @@ title: Akció - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Akció: wu_mcp_abilities_registered
+# Akció: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Elkettő, amikor az MCP képességek egy entitás számára regisztrálódnak.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Elkettő, amikor az MCP képességek egy entitás számára regisztrálódnak.
 | $model_name | `string` | Az modell neve. |
 | $this | `object` | A menedzser példány. |
 
-### Desde
+### Desde {#since}
 
 - 2.5.0
-### Forrás
+### Forrás {#source}
 
 Definálva a [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) fájlban, 171-sorban

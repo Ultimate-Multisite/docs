@@ -4,11 +4,11 @@ title: Filtro - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filtro: retrieve_password_message
+# Filtro: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Filtra il corpo del messaggio dell'email di reimpostazione della password.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Filtra il corpo del messaggio dell'email di reimpostazione della password.
 | $user_login | `string` | The username for the user. |
 | $user_data | `\WP_User` | WP_User object. |
 
-### Dalla versione
+### Dalla versione {#since}
 
 - 2.8.0
 - 4.1.0: Added <code>$user_login</code> and <code>$user_data</code> parameters.
-### Origine
+### Origine {#source}
 
 Definito in [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) alla riga 149
 
 
-## Restituisce
+## Restituisce {#returns}
 Messaggio email predefinito.

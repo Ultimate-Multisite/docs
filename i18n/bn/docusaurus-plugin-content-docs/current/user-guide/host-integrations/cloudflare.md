@@ -3,18 +3,18 @@ title: Cloudflare ইন্টিগ্রেশন
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare ইন্টিগ্রেশন
+# Cloudflare ইন্টিগ্রেশন {#cloudflare-integration}
 
-## সারসংক্ষেপ
+## সারসংক্ষেপ {#overview}
 Cloudflare একটি শীর্ষস্থানীয় কনটেন্ট ডেলিভারি নেটওয়ার্ক (CDN) ও নিরাপত্তা প্রদানকারী, যা ওয়েবসাইট সুরক্ষিত ও দ্রুত করতে সাহায্য করে। এই ইন্টিগ্রেশন Ultimate Multisite এবং Cloudflare-এর মধ্যে স্বয়ংক্রিয় ডোমেইন ব্যবস্থাপনা চালু করে, বিশেষ করে সাবডোমেইন মাল্টিসাইট ইনস্টলেশনের জন্য।
 
-## বৈশিষ্ট্য
+## বৈশিষ্ট্য {#features}
 - Cloudflare-এ স্বয়ংক্রিয় সাবডোমেইন তৈরি
 - প্রক্সি করা সাবডোমেইন সমর্থন
 - DNS রেকর্ড ব্যবস্থাপনা
 - Ultimate Multisite admin-এ উন্নত DNS রেকর্ড প্রদর্শন
 
-## প্রয়োজনীয়তা
+## প্রয়োজনীয়তা {#requirements}
 নিচের constants আপনার `wp-config.php` ফাইলে সংজ্ঞায়িত থাকতে হবে:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## সেটআপ নির্দেশনা
+## সেটআপ নির্দেশনা {#setup-instructions}
 
-### ১. আপনার Cloudflare API Key নিন
+### ১. আপনার Cloudflare API Key নিন {#1-get-your-cloudflare-api-key}
 
 1. আপনার Cloudflare dashboard-এ লগ ইন করুন
 2. "My Profile"-এ যান (উপরের ডান কোণে আপনার ইমেইলে ক্লিক করুন)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. আপনার API token কপি করুন
 
-### ২. আপনার Zone ID নিন
+### ২. আপনার Zone ID নিন {#2-get-your-zone-id}
 
 1. আপনার Cloudflare dashboard-এ, যে ডোমেইনটি ব্যবহার করতে চান সেটি নির্বাচন করুন
 2. Zone ID "Overview" ট্যাবে, ডান পাশের সাইডবারে "API"-এর নিচে দেখা যায়
 3. Zone ID কপি করুন
 
-### ৩. wp-config.php-এ constants যোগ করুন
+### ৩. wp-config.php-এ constants যোগ করুন {#3-add-constants-to-wp-configphp}
 
 আপনার `wp-config.php` ফাইলে নিচের constants যোগ করুন:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### ৪. ইন্টিগ্রেশন চালু করুন
+### ৪. ইন্টিগ্রেশন চালু করুন {#4-enable-the-integration}
 
 1. আপনার WordPress admin-এ, Ultimate Multisite > Settings-এ যান
 2. "Domain Mapping" ট্যাবে যান
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Cloudflare ইন্টিগ্রেশন চালু করুন
 5. "Save Changes" ক্লিক করুন
 
-## এটি কীভাবে কাজ করে
+## এটি কীভাবে কাজ করে {#how-it-works}
 
-### সাবডোমেইন ব্যবস্থাপনা
+### সাবডোমেইন ব্যবস্থাপনা {#subdomain-management}
 
 সাবডোমেইন মাল্টিসাইট ইনস্টলেশনে নতুন সাইট তৈরি হলে:
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. ডিফল্টভাবে সাবডোমেইনটি Cloudflare-এর মাধ্যমে প্রক্সি করার জন্য কনফিগার করা হয় (এটি filters দিয়ে পরিবর্তন করা যায়)
 3. কোনো সাইট মুছে ফেলা হলে, ইন্টিগ্রেশনটি Cloudflare থেকে সাবডোমেইনটি সরিয়ে দেবে
 
-### DNS রেকর্ড প্রদর্শন
+### DNS রেকর্ড প্রদর্শন {#dns-record-display}
 
 ইন্টিগ্রেশনটি Ultimate Multisite admin-এ DNS রেকর্ড প্রদর্শন উন্নত করে এভাবে:
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. রেকর্ডগুলো প্রক্সি করা কি না তা দেখানো
 3. DNS রেকর্ড সম্পর্কে অতিরিক্ত তথ্য দেখানো
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (আগে "Cloudflare for SaaS" নামে পরিচিত ছিল) Cloudflare-এর একটি বৈশিষ্ট্য, যা আপনার গ্রাহকদের আপনার মাল্টিসাইট নেটওয়ার্কে SSL সহ নিজেদের ডোমেইন ব্যবহার করতে দেয়। Cloudflare ব্যবহার করে এমন ডোমেইন-ম্যাপ করা মাল্টিসাইট ইনস্টলেশনের জন্য এটিই প্রস্তাবিত পদ্ধতি, কারণ Cloudflare প্রতিটি custom domain-এর জন্য স্বয়ংক্রিয়ভাবে SSL certificate ইস্যু ও নবায়ন পরিচালনা করে।
 
-### এটি স্ট্যান্ডার্ড Cloudflare ইন্টিগ্রেশন থেকে কীভাবে আলাদা
+### এটি স্ট্যান্ডার্ড Cloudflare ইন্টিগ্রেশন থেকে কীভাবে আলাদা {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | স্ট্যান্ডার্ড ইন্টিগ্রেশন | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **যার জন্য সেরা** | সাবডোমেইন মাল্টিসাইট | ডোমেইন-ম্যাপ করা মাল্টিসাইট |
 | **SSL** | আলাদাভাবে পরিচালিত | Cloudflare স্বয়ংক্রিয়ভাবে পরিচালনা করে |
 
-### Cloudflare Custom Hostnames সেটআপ করা
+### Cloudflare Custom Hostnames সেটআপ করা {#setting-up-cloudflare-custom-hostnames}
 
 1. আপনার Cloudflare dashboard-এ, আপনার প্রধান ডোমেইনের zone খুলুন।
 2. **SSL/TLS > Custom Hostnames**-এ যান।
@@ -101,23 +101,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 Ultimate Multisite v2.6.1 থেকে, সব plugin settings এবং labels-এ এই বৈশিষ্ট্যকে **Cloudflare Custom Hostnames** বলা হয়। আগের সংস্করণগুলোতে "Cloudflare for SaaS" নাম ব্যবহার করা হতো, যা মূল Cloudflare product name।
 :::
 
-## গুরুত্বপূর্ণ নোট
+## গুরুত্বপূর্ণ নোট {#important-notes}
 
 Cloudflare-এর সাম্প্রতিক আপডেট অনুযায়ী, wildcard proxying এখন সব গ্রাহকের জন্য উপলভ্য। এর অর্থ হলো, সাবডোমেইন মাল্টিসাইট ইনস্টলেশনের জন্য স্ট্যান্ডার্ড Cloudflare DNS ইন্টিগ্রেশন আগের মতো এত জরুরি নয়, কারণ আপনি Cloudflare-এ সহজেই একটি wildcard DNS রেকর্ড সেটআপ করতে পারেন।
 
-## সমস্যা সমাধান
+## সমস্যা সমাধান {#troubleshooting}
 
-### API সংযোগের সমস্যা
+### API সংযোগের সমস্যা {#api-connection-issues}
 - আপনার API token সঠিক এবং প্রয়োজনীয় অনুমতি আছে কি না যাচাই করুন
 - আপনার Zone ID সঠিক কি না পরীক্ষা করুন
 - আপনার Cloudflare account-এ প্রয়োজনীয় অনুমতি আছে কি না নিশ্চিত করুন
 
-### সাবডোমেইন যোগ হয়নি
+### সাবডোমেইন যোগ হয়নি {#subdomain-not-added}
 - কোনো ত্রুটি বার্তা আছে কি না দেখতে Ultimate Multisite logs পরীক্ষা করুন
 - সাবডোমেইনটি Cloudflare-এ আগে থেকেই যোগ করা নেই কি না যাচাই করুন
 - আপনি যতগুলো DNS রেকর্ড তৈরি করছেন, আপনার Cloudflare plan তা সমর্থন করে কি না নিশ্চিত করুন
 
-### প্রক্সি-সংক্রান্ত সমস্যা
+### প্রক্সি-সংক্রান্ত সমস্যা {#proxying-issues}
 - আপনি যদি সাবডোমেইনগুলো প্রক্সি করতে না চান, তাহলে `wu_cloudflare_should_proxy` filter ব্যবহার করতে পারেন
 - প্রক্সি করা হলে কিছু বৈশিষ্ট্য সঠিকভাবে কাজ নাও করতে পারে (যেমন, নির্দিষ্ট WordPress admin ফাংশন)
 - admin pages-এর জন্য cache এড়াতে Cloudflare-এর Page Rules ব্যবহার করার কথা বিবেচনা করুন

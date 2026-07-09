@@ -4,13 +4,13 @@ title: Acțiune - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# Acțiune: wu_admin_pages_extra_metaboxes
+# Acțiune: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
 
 Permite dezvoltatorilor de plugin să adauge opțiuni noi de metabox-uri =)
 
-### De la
+### De la {#since}
 
 - 1.0.1
-### Sursă
+### Sursă {#source}
 
 Definit în [`views/admin-pages/edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/admin-pages/edit-admin-page.php#L541) la linia 541

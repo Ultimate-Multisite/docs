@@ -3,7 +3,7 @@ title: ويب هوڪس
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks جو هڪ ڏسڻ (v2)
+# Webhooks جو هڪ ڏسڻ (v2) {#a-first-look-on-webhooks-v2}
 
 _**توجيه: اهو ڪم ڪريو يا مضمون صرف ادواني استعمال ڪندڙن لاءِ آهي.**_
 
@@ -11,7 +11,7 @@ _**توجيه: اهو ڪم ڪريو يا مضمون صرف ادواني استع
 
 هي ان وقت مددگار آهي جڏهن توهان کي Ultimate Multisite کان ڪا خاص معلومات ڪنهن ٻئي CRM يا system ۾ شامل ڪرڻ يا هر وقت ڪهڙي event ٿيڻ تي ڪا data پاس ڪرڻ جي ضرورت پوي. مثال طور، توهان کي هر وقت نون صارف جو حساب کڻجي ته صارف جو نالو ۽ ايميل address mailing list تائين پيڻو پوي.
 
-## webhook ڪيئن ٺاهيو
+## webhook ڪيئن ٺاهيو {#how-to-create-a-webhook}
 
 Webhook ٺاهڻ لاءِ، پنهنجي network admin dashboard تي وڃو. **Ultimate Multisite > Webhooks > Add New Webhook** تي ڪلڪ ڪريو.
 

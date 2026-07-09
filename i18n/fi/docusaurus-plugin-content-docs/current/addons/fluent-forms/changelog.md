@@ -3,7 +3,7 @@ title: Fluent Forms -muutosloki
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms -muutosloki
+# Fluent Forms -muutosloki {#fluent-forms-changelog}
 
 Versio: 2.0.1 - Julkaistu 2025-09-28
 

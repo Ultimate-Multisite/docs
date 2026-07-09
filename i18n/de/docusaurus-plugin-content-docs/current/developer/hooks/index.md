@@ -3,11 +3,11 @@ title: Hooks-Referenz
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook-Referenz
+# Hook-Referenz {#hooks-reference}
 
 Automatisch generierte Dokumentation für alle **59 Aktionen** und **118 Filter** in Ultimate Multisite.
 
-## Aktionen
+## Aktionen {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Wird vor der Authentifizierungsweiterleitung ausgelöst.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Wird unmittelbar vor dem Setzen des Authentifizierungs-Cookies ausgelöst.
@@ -70,7 +70,7 @@ Automatisch generierte Dokumentation für alle **59 Aktionen** und **118 Filter*
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Wird ausgelöst, nachdem ein Objekt in der Datenbank gespeichert wurde.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Ermöglicht Plugin-Entwicklern, Aktionen zum Entsperrvorgang hinzuzufügen.
 
-## Filter
+## Filter {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtert die Dauer des Ablaufszeitraums des Authentifizierungs-Cookies.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtert das Authentifizierungs-Redirect-Schema.

@@ -3,11 +3,11 @@ title: Te Whakawāhi Aotūroa o Te Whānau Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kōrero mō Te Whakawhanaungatanga o te Design System Aesthetics Skill
+# Kōrero mō Te Whakawhanaungatanga o te Design System Aesthetics Skill {#design-system-aesthetics-skill}
 
 He **Skill o te Design System Aesthetics** he wahi ā-tūnga hei whai i te whakamārama ki te whakahaere i te whakaora o te whānau whānau o te wera o te waka (visual identity) o tō site. He tino mārama ana i te pēke nui mō te typography, rangi, whakatutuki, me ngā token o te motion (whakamutunga/whakawhiti) e tino whakamahi atu ana i tō design system.
 
-## He aha te Design System Aesthetics?
+## He aha te Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 He Design System Aesthetics he skill ā-tūnga he whai whakaaro mō:
 
@@ -20,9 +20,9 @@ He Design System Aesthetics he skill ā-tūnga he whai whakaaro mō:
 
 Ngā pēke mō te whakatika he whakahaere ana i tō file `theme.json` o tō theme, e whai ake i te whānau wera (visual system) he tino whakahou.
 
-## Aroha ki te Whakarite Design System Aesthetics?
+## Aroha ki te Whakarite Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Consistency (Whakaaro Tūnga)
+### Consistency (Whakaaro Tūnga) {#consistency}
 
 He design system e whai whakaaro ana:
 
@@ -31,7 +31,7 @@ He design system e whai whakaaro ana:
 - Ko te spacing e whai i te pattern (whakawhiti) e tino whaiaro
 - Ngā animations e whakaatanga ana i te wera katoa
 
-### Efficiency (Whakaaro Whakamahi)
+### Efficiency (Whakaaro Whakamahi) {#efficiency}
 
 Iroha i te whakamahi pēke mō te design i roto i ngā puta noa o te page, koe:
 
@@ -39,7 +39,7 @@ Iroha i te whakamahi pēke mō te design i roto i ngā puta noa o te page, koe:
 - Whakarite ana ki te wero katoa
 - Whakatika ana i te wā katoa e whakahou i tētahi pēke (value) rānei.
 
-### Flexibility (Whakaaro Whakamutunga)
+### Flexibility (Whakaaro Whakamutunga) {#flexibility}
 
 Ko koe e taea:
 
@@ -47,9 +47,9 @@ Ko koe e taea:
 - Whakarite i ngā aesthetics (whera o te whakatutuki) mō te ao
 - Whakamutunga ana i te whānau brand i roto i te whakatika.
 
-## Te Whakaritenga Design System Aesthetics
+## Te Whakaritenga Design System Aesthetics {#triggering-the-design-system-aesthetics-skill}
 
-### Tarango (Typography)
+### Tarango (Typography) {#manual-activation}
 
 Te agent ka whakataki i a koe mō ngā whiri i roto i te font:
 
@@ -79,7 +79,7 @@ Te agent ka tino whakatau i:
 - **Weight scale**: Ngā wera o te font (regular, medium, bold, etc.).
 - **Line height**: Te whiri i roto i ngā line mō te whaiora.
 
-### Tarango Rangi (Color Palette)
+### Tarango Rangi (Color Palette) {#automatic-suggestions}
 
 ```
 Kia whakatau tō palette rangi.
@@ -109,7 +109,7 @@ Te agent ka tino whakatau i tētahi palette paku i whakatutai ana me:
 - Semantic colors (success, warning, error).
 - Hover and active states.
 
-### Whakaritenga Wāhi (Spacing)
+### Whakaritenga Wāhi (Spacing) {#the-design-system-aesthetics-process}
 
 He aha te wero o te haere?
 
@@ -131,7 +131,7 @@ Whakahaere te agent i ngā tokens o te spacing:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Manawa mō te padding, margin, me gap
 
-### Step 4: Borders and Shadows
+### Step 4: Borders and Shadows {#step-1-typography}
 
 ```
 Te whawhai o te whakaahua me te whakamārama:
@@ -154,7 +154,7 @@ Whakahaere te agent:
 - Shadow tokens mō ngā kete (elevation levels)
 - Border width tokens
 
-### Step 5: Motion and Animation
+### Step 5: Motion and Animation {#step-2-color-palette}
 
 ```
 He aha te tikanga o te wāhi i roto i te wāhi e whai whakaaro ana koe i te interactive?
@@ -176,9 +176,9 @@ Whakahaere te agent:
 - Easing functions (ease-in, ease-out, ease-in-out) (whakamutunga o te whakatika - pō i te whakatika, pō e whakatika, pō i te whakatika me te pō)
 - Animation keyframes for common interactions (frame whakamārama mō ngā whakataunga whakahou)
 
-## Whakahaere Aesthetics o te Design System
+## Whakahaere Aesthetics o te Design System {#step-3-spacing}
 
-### Automatic Application
+### Automatic Application {#step-4-borders-and-shadows}
 
 I raro i ka whakatā koe i te mahi, te agent:
 
@@ -187,7 +187,7 @@ I raro i ka whakatā koe i te mahi, te agent:
 3. Regenerates block styles mō te hoki ki te system hou
 4. Activates the updated theme
 
-### Manual Application
+### Manual Application {#step-5-motion-and-animation}
 
 Kia kaha koe, he taea ai i koe te whakarere i `theme.json` i runga i te tika:
 
@@ -226,9 +226,9 @@ Kia kaha koe, he taea ai i koe te whakarere i `theme.json` i runga i te tika:
 }
 ```
 
-## Kōrero i Awa i Tō Whānau Design System (Viewing Your Design System)
+## Kōrero i Awa i Tō Whānau Design System (Viewing Your Design System) {#applying-design-system-aesthetics}
 
-### Whakawātea te Agent (Ask the Agent)
+### Whakawātea te Agent (Ask the Agent) {#automatic-application}
 
 ```
 "Titi me au design system ahau"
@@ -242,13 +242,13 @@ ata
 
 Ka whakaatu ai tō agent i tō typography, rangi (colors), spacing, me ngā tokens kē.
 
-### Whakarongo ki theme.json (View theme.json)
+### Whakarongo ki theme.json (View theme.json) {#manual-application}
 
 Pākeha `/wp-content/themes/[theme-name]/theme.json` i te text editor kia whakaatu i ngā whakaaro (tokens) o te raw.
 
-## Whakamutunga Tō Design System (Updating Your Design System)
+## Whakamutunga Tō Design System (Updating Your Design System) {#viewing-your-design-system}
 
-### Whakamutunga Kupu (Quick Updates)
+### Whakamutunga Kupu (Quick Updates) {#ask-the-agent}
 
 Titi me au agent mō whakawhiti kūmara (changes) tika:
 
@@ -268,7 +268,7 @@ ata
 "Chara i te font o te heading ki te serif"
 ```
 
-### Whakamutunga Whakamutai (Full Redesign)
+### Whakamutunga Whakamutai (Full Redesign) {#view-themejson}
 
 Whakahaere anō te skill Design System Aesthetics:
 
@@ -278,7 +278,7 @@ Whakahaere anō te skill Design System Aesthetics:
 
 Ka whai koe i ngā whakaaro katoa anō, e pūrongo ana i ngā wāhi kua whakahou koe.
 
-### Whakamutunga Whakawhiti (Partial Updates)
+### Whakamutunga Whakawhiti (Partial Updates) {#updating-your-design-system}
 
 Whakamutunga ngā mea tika:
 
@@ -286,15 +286,15 @@ Whakamutunga ngā mea tika:
 "Whakatika te palette o rangi anake, kia whakahou i ngā mea katoa"
 ```
 
-## Whakamahi Whakamutai Design System (Design System Best Practices)
+## Whakamahi Whakamutai Design System (Design System Best Practices) {#quick-updates}
 
-### Whakaaro Tūhonotanga (Consistency)
+### Whakaaro Tūhonotanga (Consistency) {#full-redesign}
 
 - Whakawhiti i ngā tokens katoa i roto i te wāhi katoa.
 - I roto i te whakatō rangi kē ana ahau, he tino pūrākau (one-off colors) i roto i te size.
 - Whakarongo ki ngā tokens i runga i ngā values (hardcoding) i roto i te whakaaro.
 
-### Whakamutunga Kupu (Naming)
+### Whakamutunga Kupu (Naming) {#partial-updates}
 
 Whakawhiti i ngā ingoa mō te whaiaro me tino whakamārama:
 
@@ -304,7 +304,7 @@ Whakawhiti i ngā ingoa mō te whaiaro me tino whakamārama:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Whakamutunga Whakahaere (Scalability)
+### Whakamutunga Whakahaere (Scalability) {#design-system-best-practices}
 
 Rauora i te Whakawhanaungatanga o te Whānui (Design Your System To Scale):
 
@@ -312,7 +312,7 @@ Rauora i te Whakawhanaungatanga o te Whānui (Design Your System To Scale):
 - Whakaaro i ngā scale (xs, sm, md, lg, xl) i roto i te ao o ngā whirihi (arbitrary values) i roto i te ao.
 - Whakawhanainga mō ngā whaiaro hou
 
-### Whakamārama (Documentation)
+### Whakamārama (Documentation) {#consistency-1}
 
 Whakamārama i tō design system:
 
@@ -320,9 +320,9 @@ Whakamārama i tō design system:
 - I hea ka whakamahia i tēnei token (token)
 - Ngā whakawhiti me ngā mea nui (exceptions and edge cases)
 
-## Whānau Pātaka Design System (Common Design System Patterns)
+## Whānau Pātaka Design System (Common Design System Patterns) {#naming}
 
-### Modern Minimalist
+### Modern Minimalist {#scalability}
 
 - Typography sans-serif (Inter, Helvetica)
 - Palette rangi paku (2-3 colors)
@@ -330,7 +330,7 @@ Whakamārama i tō design system:
 - Ngā pōuri paku (subtle shadows)
 - Whakawāhi piki, piki (smooth, fast animations)
 
-### Warm and Friendly
+### Warm and Friendly {#documentation}
 
 - Whakamahi i te serif me sans-serif
 - Palette rangi whānui (oranges, warm grays)
@@ -338,7 +338,7 @@ Whakamārama i tō design system:
 - Ngā pōuri paku (soft shadows)
 - Whakawāhi piki, piki (playful animations)
 
-### Professional Corporate
+### Professional Corporate {#common-design-system-patterns}
 
 - Sans-serif paku me whero (Roboto, Open Sans)
 - Palette rangi mātua me rangi whero (Neutral palette with accent color)
@@ -346,7 +346,7 @@ Whakamārama i tō design system:
 - Ngā pōuri paku (Minimal shadows)
 - Whakawāhi piki, piki (subtle transitions)
 
-### Creative and Bold
+### Creative and Bold {#modern-minimalist}
 
 - Typography tino whakamere (Distinctive typography)
 - Palette rangi whero nui (Bold color palette)
@@ -354,7 +354,7 @@ Whakamārama i tō design system:
 - Ngā pōuri paku nui (Strong shadows)
 - Whakawāhi piki, piki (Noticeable animations)
 
-## Whakamutunga (Troubleshooting)
+## Whakamutunga (Troubleshooting) {#warm-and-friendly}
 
 **Kei te whakawhiti i tō design system ka whakatika ahau?**
 - Whakawāhi i te cache o tō browser
@@ -372,7 +372,7 @@ Whakamārama i tō design system:
 - Whakaaro manu manu (Manually edit) i te theme.json ki ngā wāpuru purine
 - Whakawāhi anō i tō skill ki ngā whirihi paku
 
-## Ngā Whakaritenga Pākehā (Next Steps)
+## Ngā Whakaritenga Pākehā (Next Steps) {#professional-corporate}
 
 I taiao i tō design system:
 

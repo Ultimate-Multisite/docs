@@ -3,11 +3,11 @@ title: ຕົວຢ່າງໂຄດຂັ້ນສູງ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ຕົວຢ່າງໂຄດຂັ້ນສູງ
+# ຕົວຢ່າງໂຄດຂັ້ນສູງ {#advanced-code-examples}
 
 ຕົວຢ່າງເຫຼົ່ານີ້ສະແດງຮູບແບບການເຊື່ອມປະສານຂັ້ນສູງກັບ Ultimate Multisite.
 
-## ເຄື່ອງຈັກກຳນົດລາຄາແບບໄດນາມິກ
+## ເຄື່ອງຈັກກຳນົດລາຄາແບບໄດນາມິກ {#dynamic-pricing-engine}
 
 ເຄື່ອງຈັກກຳນົດລາຄາຕາມກົດທີ່ນຳໃຊ້ສ່ວນຫຼຸດຕາມປະລິມານ, ຄວາມພັກດີ, ແລະຕາມລະດູການ:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## ການຈັດຕຽມເວັບໄຊຂັ້ນສູງ
+## ການຈັດຕຽມເວັບໄຊຂັ້ນສູງ {#advanced-site-provisioning}
 
 ກຳນົດຄ່າເວັບໄຊໃໝ່ໂດຍອັດຕະໂນມັດດ້ວຍ plugins, SSL, CDN, ການສຳຮອງຂໍ້ມູນ, ແລະການຕິດຕາມ ຕາມຄຸນສົມບັດຂອງແຜນ:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## ລະບົບຂໍ້ຈຳກັດແບບກຳນົດເອງ
+## ລະບົບຂໍ້ຈຳກັດແບບກຳນົດເອງ {#custom-limitations-system}
 
 ຕິດຕາມແລະບັງຄັບໃຊ້ຂີດຈຳກັດຊັບພະຍາກອນພ້ອມການເຕືອນການນຳໃຊ້:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## ຕົວນັບແບບ Atomic ຂອງ BerlinDB ດ້ວຍ `increment_item()`
+## ຕົວນັບແບບ Atomic ຂອງ BerlinDB ດ້ວຍ `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 ໄດ້ເພີ່ມ method `increment_item()` ເຂົ້າໃນ class `Query` ຂອງ BerlinDB. ໃຊ້ມັນເພື່ອເຮັດການເພີ່ມຄ່າແບບປອດໄພແລະ atomic ໃນຄໍລຳຕົວເລກ ໂດຍບໍ່ເກີດ read-modify-write races — ມີປະໂຫຍດສຳລັບຕົວນັບ, ໂຄຕາການໃຊ້ງານ, ແລະການກວດສອບ rate-limiting ທີ່ເຮັດວຽກພາຍໃຕ້ຄຳຂໍພ້ອມກັນ.
 
-### ຮູບແບບ method
+### ຮູບແບບ method {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 ໄດ້ເພີ່ມ method `increment_item()` ເ
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### ການໃຊ້ງານພື້ນຖານ
+### ການໃຊ້ງານພື້ນຖານ {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### ການຕິດຕາມການໃຊ້ API ຕໍ່ membership
+### ການຕິດຕາມການໃຊ້ API ຕໍ່ membership {#tracking-api-usage-per-membership}
 
 ຮູບແບບທີ່ໃຊ້ງານໄດ້ຈິງສຳລັບການບັງຄັບໃຊ້ຂີດຈຳກັດອັດຕາ API ຕໍ່ membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### ເປັນຫຍັງໃຊ້ `increment_item()` ແທນ `update_item()`
+### ເປັນຫຍັງໃຊ້ `increment_item()` ແທນ `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 ວິທີ read-modify-write ແບບງ່າຍໆບໍ່ປອດໄພພາຍໃຕ້ຄຳຂໍພ້ອມກັນ:
 

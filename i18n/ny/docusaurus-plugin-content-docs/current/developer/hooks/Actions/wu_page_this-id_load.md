@@ -4,11 +4,11 @@ title: 'Chochita - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Lolani opanga ma plugin kuwonjezera ma hook ena ku masamba athu.
 
-## Ma parameter
+## Ma parameter {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Lolani opanga ma plugin kuwonjezera ma hook ena ku masamba athu.
 | $page_hook | `string` | Page hook ya tsambali. |
 | $admin_page | `self` | Instance ya tsambali. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 1.8.2
 - 2.0.4: Anawonjezera parameter wachitatu: instance ya tsambali.
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) pa mzere 332

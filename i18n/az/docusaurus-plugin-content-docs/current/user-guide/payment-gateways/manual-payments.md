@@ -3,13 +3,13 @@ title: Manual ödənişlərin qurulması
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Ödənişlərin Qurulması (v2)
+# Manual Ödənişlərin Qurulması (v2) {#setting-up-manual-payments-v2}
 
 _**VACİB QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
 Manual ödənişlər, istifadəçiləriniz üçün **Stripe** və ya **PayPal** əlçatan olmadıqda başqa ödəniş üsulları təklif etməyinizin bir yoludur. Bu, istifadəçiləriniz üçün yerli olaraq əlçatan olan pul köçürməsi, bank köçürməsi və ya hər hansı başqa ödəniş üsulu ola bilər.
 
-## Manual Ödənişləri necə aktivləşdirmək olar
+## Manual Ödənişləri necə aktivləşdirmək olar {#how-to-enable-manual-payments}
 
 Manual ödənişi qurmaq çox asandır. Sadəcə onu ödəniş şlüzləri altında aktivləşdirməli və istifadəçinin ödənişi necə göndərməli olduğu barədə ətraflı təlimatlar daxil etməlisiniz.
 
@@ -31,7 +31,7 @@ Həmçinin **Thank You** səhifənizdə ödəniş təlimatlarınızla birlikdə 
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manual ödənişlərin təsdiqlənməsi
+## Manual ödənişlərin təsdiqlənməsi {#confirming-manual-payments}
 
 Manual ödənişi təsdiqləmək üçün sol paneldəki **Payments** menyusuna keçin. Orada şəbəkənizdəki bütün ödənişləri və onların təfərrüatlarını, o cümlədən **status** məlumatını görə bilərsiniz. Manual ödəniş siz onu əl ilə dəyişənə qədər həmişə **Pending** statusuna malik olacaq.
 

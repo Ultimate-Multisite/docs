@@ -3,13 +3,13 @@ title: Melding om fjerning av Site Builder-modus
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Fjerning av Site Builder-modus
+# Fjerning av Site Builder-modus {#site-builder-mode-removal-notice}
 
 **Site Builder-modus er fjernet i Superdav AI Agent v1.12.0.** Hvis du brukte Site Builder-modus, bør du migrere til **Setup Assistant agent** for temaopprettelse og oppsett av nettstedet.
 
-## Hva skjedde?
+## Hva skjedde? {#what-happened}
 
-### Site Builder Mode (Gammelt)
+### Site Builder Mode (Gammelt) {#site-builder-mode-legacy}
 
 Site Builder-modus var et grensesnitt basert på veiledninger (wizard) for:
 
@@ -18,7 +18,7 @@ Site Builder-modus var et grensesnitt basert på veiledninger (wizard) for:
 - Valg av et tema
 - Oppsett av innledende innhold
 
-### Hva erstattet det?
+### Hva erstattet det? {#what-replaced-it}
 
 **Setup Assistant agent** håndterer nå all Site Builder-funksjonalitet med:
 
@@ -27,15 +27,15 @@ Site Builder-modus var et grensesnitt basert på veiledninger (wizard) for:
 - Integrasjon med Theme Builder onboarding
 - Vedvarende `site_brief`-minne for fremtidige økter
 
-## Hvis du brukte Site Builder-modus
+## Hvis du brukte Site Builder-modus {#if-you-were-using-site-builder-mode}
 
-### Nettstedene dine er trygge
+### Nettstedene dine er trygge {#your-sites-are-safe}
 
 - Eksisterende nettsteder opprettet med Site Builder-modus fortsetter å fungere
 - Ingen tap av data eller nettstedforstyrrelser
 - Du kan fortsette å administrere nettstedene dine som normalt
 
-### Migrer til Setup Assistant Agent
+### Migrer til Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 For nytt oppsett av nettsted eller temaendringer, bruk Setup Assistant agent:
 
@@ -51,7 +51,7 @@ eller
 
 Setup Assistant agent gir samme funksjonalitet, men med mer fleksibilitet.
 
-## Sammenligning: Site Builder vs. Setup Assistant
+## Sammenligning: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Funksjon | Site Builder (Fjernet) | Setup Assistant (Ny) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent gir samme funksjonalitet, men med mer fleksibilitet.
 | Fremtidige økter | Gjenta oppsett | Bruk lagret site_brief |
 | Fleksibilitet | Fast arbeidsflyt | Adaptiv samtale |
 
-## Migrering til Setup Assistant Agent
+## Migrering til Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### For nye nettsteder
+### For nye nettsteder {#for-new-sites}
 
 I stedet for å bruke Site Builder-modus:
 
@@ -76,7 +76,7 @@ I stedet for å bruke Site Builder-modus:
    - Tema-generering
    - Innledende konfigurasjon
 
-### For eksisterende nettsteder
+### For eksisterende nettsteder {#for-existing-sites}
 
 Hvis du har et eksisterende nettsted fra Site Builder-modus:
 
@@ -85,7 +85,7 @@ Hvis du har et eksisterende nettsted fra Site Builder-modus:
 3. Setup Assistant agent vil hjelpe deg med å lage et nytt tema
 4. Nettsteddataene dine forblir uendret
 
-### For temaendringer
+### For temaendringer {#for-theme-changes}
 
 I stedet for tema-valget i Site Builder-modus:
 
@@ -95,9 +95,9 @@ I stedet for tema-valget i Site Builder-modus:
    - Generere et tilpasset tema
    - Aktivere det på nettstedet ditt
 
-## Viktige forskjeller
+## Viktige forskjeller {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Velg en mal
@@ -106,7 +106,7 @@ I stedet for tema-valget i Site Builder-modus:
 4. Ferdig
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Beskriv formålet med nettstedet ditt
@@ -117,36 +117,36 @@ I stedet for tema-valget i Site Builder-modus:
 6. Site brief lagres for fremtidige økter
 ```
 
-## Fordeler med Setup Assistant Agent
+## Fordeler med Setup Assistant Agent {#benefits-of-setup-assistant-agent}
 
-### Mer fleksibelt
+### Mer fleksibelt {#more-flexible}
 
 - Beskriv nettstedet ditt i naturlig språk
 - Få tilpassede anbefalinger
 - Tilpasse seg dine spesifikke behov
 
-### Bedre tilpasning
+### Bedre tilpasning {#better-customization}
 
 - Generering av tilpassede temaer
 - Designsystem-beslutninger
 - Vedvarende design-tokens
 
-### Vedvarende minne
+### Vedvarende minne {#persistent-memory}
 
 - Din `site_brief` lagres
 - Fremtidige agenter forstår nettstedet ditt
 - Ingen behov for å gjenta oppsettinformasjon
 
-### Integrert arbeidsflyt
+### Integrert arbeidsflyt {#integrated-workflow}
 
 - Theme Builder onboarding
 - Design System Aesthetics skill
 - Ability Visibility controls
 - Alt sammen fungerer sømløst
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### Jeg finner ikke Site Builder-modus
+### Jeg finner ikke Site Builder-modus {#i-cant-find-site-builder-mode}
 
 Site Builder-modus er fjernet. Bruk Setup Assistant agent i stedet:
 
@@ -154,7 +154,7 @@ Site Builder-modus er fjernet. Bruk Setup Assistant agent i stedet:
 "Help me set up a new site"
 ```
 
-### Jeg vil gjenskape et nettsted fra Site Builder
+### Jeg vil gjenskape et nettsted fra Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Du kan gjenskape det med Setup Assistant agent:
 
@@ -163,7 +163,7 @@ Du kan gjenskape det med Setup Assistant agent:
 3. Agenten vil generere et lignende tema
 4. Din `site_brief` vil bli lagret for fremtidig referanse
 
-### Mitt eksisterende Site Builder-nettsted fungerer ikke
+### Mitt eksisterende Site Builder-nettsted fungerer ikke {#my-existing-site-builder-site-isnt-working}
 
 Eksisterende nettsteder opprettet med Site Builder-modus fortsetter å fungere. Hvis du opplever problemer:
 
@@ -172,7 +172,7 @@ Eksisterende nettsteder opprettet med Site Builder-modus fortsetter å fungere. 
 3. Sjekk WordPress feillogger
 4. Kontakt support hvis problemene vedvarer
 
-### Kan jeg fortsatt bruke mine gamle Site Builder-maler?
+### Kan jeg fortsatt bruke mine gamle Site Builder-maler? {#can-i-still-use-my-old-site-builder-templates}
 
 Site Builder-maler er ikke lenger tilgjengelige. Men:
 
@@ -180,14 +180,14 @@ Site Builder-maler er ikke lenger tilgjengelige. Men:
 - Du kan gjenskape lignende nettsteder med Setup Assistant agent
 - Setup Assistant agent gir flere tilpasningsalternativer
 
-## Neste skritt
+## Neste skritt {#next-steps}
 
 1. **For nye nettsteder**: Bruk Setup Assistant agent
 2. **For eksisterende nettsteder**: Fortsett å bruke dem som de er
 3. **For temaendringer**: Be om hjelp fra Setup Assistant agent
 4. **For designforbedring**: Bruk Design System Aesthetics skill
 
-## Relaterte emner
+## Relaterte emner {#related-topics}
 
 - **Theme Builder Onboarding**: Veiledet oppsett for tilpassede temaer
 - **Setup Assistant Agent**: Agent-veiledet oppsett av nettsted

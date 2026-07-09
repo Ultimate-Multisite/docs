@@ -3,11 +3,11 @@ title: Capacidades de xestión de plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Capacidades de xestión de complementos
+# Capacidades de xestión de complementos {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 inclúe **7 capacidades de xestión de complementos** que o asistente de IA pode invocar durante unha conversa. Estas capacidades proporcionan control programático sobre os complementos de WordPress instalados a través do [Sistema de creación de complementos e sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Visión xeral das capacidades
+## Visión xeral das capacidades {#abilities-overview}
 
 | Capacidade | Slug | Descrición |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 inclúe **7 capacidades de xestión de complementos** que
 | Instalar complemento | `install_plugin` | Desprega un complemento en sandbox no directorio de complementos de WordPress en produción. |
 | Activar complemento | `activate_plugin` | Activa un complemento en sandbox no contorno sandbox de wp-env. |
 
-## API do instalador de complementos
+## API do instalador de complementos {#plugin-installer-api}
 
 O instalador de complementos xestiona as operacións do sistema de ficheiros ao despregar ou eliminar complementos. Comportamentos clave:
 
@@ -28,7 +28,7 @@ O instalador de complementos xestiona as operacións do sistema de ficheiros ao 
 - **Actualización**: Substitúe os ficheiros existentes do complemento. Desactiva o complemento antes de escribir para evitar erros de estado parcial.
 - **Eliminación por slug**: Localiza o directorio do complemento por slug, desactívao en todos os sitios e despois elimina o directorio.
 
-### Rexistrar un xestor de instalación personalizado
+### Rexistrar un xestor de instalación personalizado {#registering-a-custom-install-handler}
 
 Podes conectarte ao ciclo de vida da instalación usando as accións `gratis_ai_plugin_installer_before_install` e `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Rexistro do ecosistema
+## Rexistro do ecosistema {#ecosystem-registry}
 
 As capacidades rexístranse a través do **rexistro do ecosistema de complementos**. O rexistro mapea os slugs das capacidades ás súas clases xestoras e expóñeas ao despachador de ferramentas do axente de IA.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integración con HookScanner
+## Integración con HookScanner {#hookscanner-integration}
 
 As capacidades `create_plugin` e `update_plugin` executan automaticamente **HookScanner** sobre o código xerado recentemente. HookScanner devolve unha lista de hooks de acción e filtro de WordPress rexistrados polo complemento.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner omite automaticamente os directorios `vendor/` e `node_modules/`.
 
-## Arquitectura de traballos asíncronos
+## Arquitectura de traballos asíncronos {#async-job-architecture}
 
 As operacións de complementos de longa duración (xerar, instalar) despáchanse como **traballos asíncronos** con seguimento do progreso en directo. A interface de chat de IA consulta o progreso e transmite actualizacións de estado ao usuario:
 

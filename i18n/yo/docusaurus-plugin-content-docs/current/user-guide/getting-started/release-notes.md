@@ -3,9 +3,9 @@ title: Àwọn Àkọsílẹ̀ Ìtújáde
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Àkọsílẹ̀ Ìtújáde
+# Àkọsílẹ̀ Ìtújáde {#release-notes}
 
-## Ẹya 2.13.0 — Tí a tú jáde ní 2026-06-05
+## Ẹya 2.13.0 — Tí a tú jáde ní 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Tuntun: A ṣàfikún àtìlẹ́yìn sovereign-tenant fún Account oníbàárà, checkout, billing, site, invoice, yíyí template padà, àti àwọn ìṣàn domain mapping kí àwọn tenant networks lè tọ́ àwọn oníbàárà padà sí site àkọ́kọ́ fún àwọn ìṣe tí a ń ṣàkóso.
 - Tuntun: A ṣàfikún àwọn àyẹ̀wò renewal-credential fún àwọn recurring memberships kí gateways lè pa auto-renewal nígbà tí saved billing agreement, subscription, tàbí vault token kò bá sí.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Àtúnṣe: Membership renewals, expiration display, àti àwọn payment collection edge cases ń yago fún immediate expirations, crashes, tàbí required payments tí a pàdánù báyìí.
 - Ti dára síi: WordPress compatibility ni a dán wò dé 7.0, production Vue assets ni a tún kọ láti npm sources, àti Cypress end-to-end coverage ń ṣe àyẹ̀wò àwọn checkout, setup, SSO, àti gateway flows púpọ̀ síi báyìí.
 
-## Ẹya 2.12.0 — Tí a tú jáde ní 2026-05-15
+## Ẹya 2.12.0 — Tí a tú jáde ní 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Tuntun: A ṣàfikún Hostinger (hPanel) gẹ́gẹ́ bí host provider tí a ṣe àtìlẹ́yìn fún pẹ̀lú domain mapping integration
 - Tuntun: Site Exporter ń bójú tó network import bundles báyìí fún site restoration tó rọrùn káàkiri network
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Àtúnṣe: Site Exporter CLI ń pa correct default network site selection mọ́ báyìí
 - Ti dára síi: A yọ wp-cli tí a kó sínú plugin package, ó dín ìwọ̀n plugin kù
 
-## Ẹya 2.11.0 — Tí a tú jáde ní 2026-05-11
+## Ẹya 2.11.0 — Tí a tú jáde ní 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Tuntun: Site exports ń kó `index.php` tó ń bẹ̀rẹ̀ fúnra rẹ̀ báyìí kí ZIP lè fi sori host tuntun láìsí separate plugin install.
 - Tuntun: Network export jẹ́ kí administrators export gbogbo subsites sínú archive kan láti Site Export admin page.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Tuntun: Checkout form editor ń kilọ̀ nígbà tí a bá ṣàfikún product láì ṣètò required field.
 - Tuntun: Import/Export settings tab ń ṣàlàyé scope rẹ̀ kedere báyìí, ó sì sopọ̀ taara sí Site Export tool.
 
-## Ẹya 2.10.0 — Tí a tú jáde ní 2026-05-05
+## Ẹya 2.10.0 — Tí a tú jáde ní 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Tuntun: PayPal guided setup wizard fún manual credential entry pẹ̀lú OAuth flag gate fún gateway configuration tó rọrùn.
 - Tuntun: Template switch customer panel ni a tún ṣe pẹ̀lú current-template card, persistent grid, àti bọtìnì **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Àtúnṣe: Filtered SSO path ni a bọ̀wọ̀ fún kọjá gbogbo login flows.
 - Àtúnṣe: Àwọn blank site identity options ni a pa mọ́ nígbà save.
 
-## Ẹya 2.9.0 — Tí a tú jáde ní 2026-04-30
+## Ẹya 2.9.0 — Tí a tú jáde ní 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Tuntun: Single-site export àti import ni a ṣàfikún lábẹ́ **Tools > Export & Import**.
 - Àtúnṣe: Export ZIP files ni a ń pèsè báyìí nípasẹ̀ authenticated download endpoint.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Àtúnṣe: Tour IDs ni a normalised sí underscores nínú user settings keys.
 - Ti dára síi: ZipArchive ni a ń lo báyìí dípò Alchemy/Zippy fún compatibility tó dára síi.
 
-## Ẹya 2.8.0 — Tí a tú jáde ní 2026-04-29
+## Ẹya 2.8.0 — Tí a tú jáde ní 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Tuntun: Enable Jumper toggle ti fi kun UI eto Other Options.
 - Tuntun: A ti fi ọwọn ipo kun tabili atokọ àwọn fọ́ọ̀mù checkout.

@@ -3,15 +3,15 @@ title: Qinisekisa Ukugqama Kwephalethi
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Qinisekisa Ukugqama Kwe-Palette
+# Qinisekisa Ukugqama Kwe-Palette {#validate-palette-contrast}
 
 Ikhono le-**Validate Palette Contrast** lihlola amapheya emibala ku-palette yakho yokudizayina ukuze ahambisane ne-WCAG (Web Content Accessibility Guidelines) ngaphambi kokuwasebenzisa ku-theme yakho.
 
-## Ukubuka konke
+## Ukubuka konke {#overview}
 
 Leli khono liqinisekisa ukuthi uhlelo lwemibala lwesayithi lakho luhlangabezana namazinga okufinyeleleka ngokuhlola izilinganiso zokugqama phakathi kombhalo nemibala yangemuva. Lisiza ukuvimbela izinhlanganisela zemibala ezingase zibe nzima ukufundwa abasebenzisi abanokukhubazeka kokubona.
 
-## Ifomethi Yokufaka
+## Ifomethi Yokufaka {#input-format}
 
 Ikhono lamukela i-palette yemibala njengokufaka:
 
@@ -35,7 +35,7 @@ Ikhono lamukela i-palette yemibala njengokufaka:
 }
 ```
 
-### Amapharamitha
+### Amapharamitha {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Ikhono lamukela i-palette yemibala njengokufaka:
 | `wcag_level` | string | No | Izinga lokuhambisana ne-WCAG: "A", "AA" (okuzenzakalelayo), noma "AAA" |
 | `pairs_to_check` | array | No | Amapheya emibala athile okufanele aqinisekiswe (isb., `["primary-text", "background-text"]`) |
 
-## Amazinga e-WCAG Ahlolwayo
+## Amazinga e-WCAG Ahlolwayo {#wcag-levels-checked}
 
 Ikhono liqinisekisa izilinganiso zokugqama ngokwamazinga e-WCAG:
 
@@ -56,7 +56,7 @@ Ikhono liqinisekisa izilinganiso zokugqama ngokwamazinga e-WCAG:
 - **Umbhalo Ojwayelekile** — umbhalo omncane kuno-18pt (noma 14pt bold)
 - **Umbhalo Omkhulu** — umbhalo ongu-18pt noma omkhulu (noma 14pt bold noma omkhulu)
 
-## Isikimu Sokuphumayo
+## Isikimu Sokuphumayo {#output-schema}
 
 Ikhono libuyisa umbiko wokuqinisekisa onemininingwane:
 
@@ -95,7 +95,7 @@ Ikhono libuyisa umbiko wokuqinisekisa onemininingwane:
 }
 ```
 
-### Izinkambu Zokuphumayo
+### Izinkambu Zokuphumayo {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Ikhono libuyisa umbiko wokuqinisekisa onemininingwane:
 | `status` | string | "pass" noma "fail" yepheya ngalinye |
 | `recommendations` | array | Iziphakamiso zokuthuthukisa amapheya ahlulekayo |
 
-## Isibonelo Sokusetshenziswa
+## Isibonelo Sokusetshenziswa {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Ikhono liqinisekisa zonke izinhlanganisela zemibala bese libuyisa:
 - ✅ Ingemuva + Umbhalo: isilinganiso esingu-12.1:1 (siyaphasa i-WCAG AAA)
 - Sekukonke: Iyahambisana ne-WCAG AA
 
-## Ukuhlanganiswa ne-Theme Builder
+## Ukuhlanganiswa ne-Theme Builder {#integration-with-theme-builder}
 
 Lapho usebenzisa ukukhetha kwesiqondiso sokudizayina kwe-Theme Builder, ikhono le-Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Lapho usebenzisa ukukhetha kwesiqondiso sokudizayina kwe-Theme Builder, ikhono l
 4. Linikeza izincomo zamapheya angahambisani
 5. Livimbela ukusebenzisa izinhlelo zemibala ezingafinyeleleki
 
-## Izindlela Ezihamba Phambili
+## Izindlela Ezihamba Phambili {#best-practices}
 
 - **Qala ngezinga le-AA** — i-WCAG AA iyindinganiso yamawebhusayithi amaningi
 - **Hlola ngaphambi kokusebenzisa** — qinisekisa i-palette yakho ngaphambi kokuzibophezela kudizayini
@@ -137,7 +137,7 @@ Lapho usebenzisa ukukhetha kwesiqondiso sokudizayina kwe-Theme Builder, ikhono l
 - **Cabangela okuthandwa abasebenzisi** — abanye abasebenzisi bangase babe nokuzwela okwengeziwe kumbala
 - **Sebenzisa izihloli zokugqama** — hlanganisa leli khono namathuluzi esiphequluli ukuze uqinisekise
 
-## Amapheya Ahlulekayo Nezincomo
+## Amapheya Ahlulekayo Nezincomo {#failing-pairs-and-recommendations}
 
 Uma ipheya lombala lihluleka ukuqinisekiswa, ikhono linikeza izincomo:
 
@@ -155,7 +155,7 @@ Uma ipheya lombala lihluleka ukuqinisekiswa, ikhono linikeza izincomo:
 }
 ```
 
-## Amakhono Ahlobene
+## Amakhono Ahlobene {#related-abilities}
 
 - [Khiqiza i-Logo SVG](./generate-logo-svg.md) — dala ama-logo nge-palette yakho yemibala eqinisekisiwe
 - [Dala Imenyu](./create-menu.md) — yakha ukuzulazula ngemibala efinyelelekayo

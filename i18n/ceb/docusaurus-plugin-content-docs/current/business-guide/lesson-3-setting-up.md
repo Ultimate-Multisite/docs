@@ -3,32 +3,32 @@ title: 'Leksyon 3: Pag-set up sa Imong Network'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesson 3: Pag-set up sa Imong Network
+# Lesson 3: Pag-set up sa Imong Network {#lesson-3-setting-up-your-network}
 
 Oras na aron magtukod. Sa lesson ni, i-install nimo ang Ultimate Multisite ug i-configure ang pundasyon sa FitSite network. Ang matag desisyon dinhi gihunahuna ang fitness niche.
 
-## Asa Kita Nahuman
+## Asa Kita Nahuman {#where-we-left-off}
 
 Gipili nato ang mga fitness studio isip atong niche ug gi-validate ang oportunidad. Karon, himoon nato kining ideya nga usa ka naglihok nga plataporma.
 
-## Pagpili sa Imong Hosting
+## Pagpili sa Imong Hosting {#choosing-your-hosting}
 
 Ang imong pagpili sa hosting mas importante para sa usa ka niche nga plataporma kaysa sa usa lang ka website. Wala ka mag-host og usa ka site—nag-host ka og network nga motubo ngadto sa dose o gatosan ka mga sites.
 
-### Unsa ang Kinahanglan Tan-awon
+### Unsa ang Kinahanglan Tan-awon {#what-to-look-for}
 
 - **WordPress Multisite support**: Dili tanang hosts makadawat og multisite maayo
 - **Wildcard SSL**: Importante para sa mga network nga gigamit ang subdomain
 - **Scalable resources**: Kinahanglan nimo og espasyo aron motubo nga dili kinahanglang magbalhin (migrate)
 - **Ultimate Multisite integration**: Ang automated domain mapping ug SSL makadaginot kaayo sa effort sa pagdumala
 
-### Rekomendado nga Paagi
+### Rekomendado nga Paagi {#recommended-approach}
 
 Piliha ang usa ka host gikan sa listahan sa [Compatible Providers](/user-guide/host-integrations/closte). Kini gi-test na uban sa Ultimate Multisite ug naghatag og mga integration nga imong kinahanglan para sa domain mapping ug SSL automation.
 
 Para sa FitSite, mogamit kita og subdomain configuration. Nagpasabot kini nga ang mga site sa kustomer magsugod nga makita isip `studioname.fitsite.com` sa wala pa sila mag-map sa ilang kaugalingon nga domain.
 
-## Pag-install sa WordPress Multisite
+## Pag-install sa WordPress Multisite {#installing-wordpress-multisite}
 
 Kung wala ka pa’y WordPress Multisite installation:
 
@@ -40,7 +40,7 @@ Kung wala ka pa’y WordPress Multisite installation:
 Ang subdomains naghatag sa matag site sa kustomer og kaugalingong address (`studio.fitsite.com`) imbes nga usa ka path (`fitsite.com/studio`). Mas propesyonal kini para sa imong mga kustomer ug makalikay sa permalink conflicts. Tan-awa ang [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) alang sa detalyado nga pagtandi.
 :::
 
-## Pag-install sa Ultimate Multisite
+## Pag-install sa Ultimate Multisite {#installing-ultimate-multisite}
 
 Sunda ang [Installing Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) guide aron:
 
@@ -53,11 +53,11 @@ Atol sa setup wizard, hinumdomi ang FitSite niche:
 - **Company name**: "FitSite" (o ang imong gipili nga brand name)
 - **Company logo**: I-upload ang logo sa inyong brand -- kini makita sa mga invoice ug emails
 
-## Pag-configure para sa Fitness Niche
+## Pag-configure para sa Fitness Niche {#configuring-for-the-fitness-niche}
 
 Sa pagka-install na sa Ultimate Multisite, himoa kining niche-specific nga configuration choices:
 
-### General Settings
+### General Settings {#general-settings}
 
 Pangadto sa **Ultimate Multisite > Settings** ug i-configure:
 
@@ -65,7 +65,7 @@ Pangadto sa **Ultimate Multisite > Settings** ug i-configure:
 - **Default role**: Administrator -- ang mga tag-iya sa fitness studio kinahanglan og bug-os nga kontrol sa ilang site content
 - **Registration**: I-enable ang user registration aron ang mga tag-iya sa studio makarehistro sa ilang kaugalingon
 
-### Email Configuration
+### Email Configuration {#email-configuration}
 
 Ang imong system emails kinahanglang mosulti sa pinulongan sa imong niche. Pangadto sa **Ultimate Multisite > Settings > Emails** ug i-customize:
 
@@ -75,7 +75,7 @@ Ang imong system emails kinahanglang mosulti sa pinulongan sa imong niche. Panga
 
 Mas paayo pa nato ni kini sa Lesson 8 (Customer Onboarding), apan ang pagtakda sa tono karon makasiguro nga bisan ang sayong test signups gibati nga niche-specific.
 
-### Domain Configuration
+### Domain Configuration {#domain-configuration}
 
 Kung naggamit ka og compatible hosting provider, i-configure na ang domain mapping:
 
@@ -85,7 +85,7 @@ Kung naggamit ka og compatible hosting provider, i-configure na ang domain mappi
 
 Kini nagsiguro nga kung magsugod na kita paghimo og templates ug test sites sa sunod nga lesson, mahimong molihok tanan gikan sa sinugdano hangtod sa katapusan.
 
-## Ang FitSite Network Hangtud Karon
+## Ang FitSite Network Hangtud Karon {#the-fitsite-network-so-far}
 
 Sa katapusan niining lesson, mao kini ang imong nakuha:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Ready for site templates (next lesson)
 ```
 
-## Unsa ang Nato Gitukod Niining Lesson
+## Unsa ang Nato Gitukod Niining Lesson {#what-we-built-this-lesson}
 
 - **Usa ka naglihok nga WordPress Multisite** installation sa subdomain mode
 - **Ultimate Multisite gi-install** ug giconfigure uban ang FitSite branding

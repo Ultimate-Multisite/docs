@@ -4,23 +4,23 @@ title: فلټر - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# فلټر: wu_billing_address_fields
+# فلټر: wu_billing_address_fields {#filter-wubillingaddressfields}
 
 plugin جوړوونکو ته اجازه ورکوي چې د بېلنګ پتې ساحې فلټر کړي.
 
-## پارامېټرونه
+## پارامېټرونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
 | $fields | `array` | د بېلنګ پتې ارې. |
 | $zip_only | `bool` | که موږ یوازې زېپ او هېواد ته اړتیا ولرو. |
 
-### له نسخې
+### له نسخې {#since}
 
 - 2.0.0
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/objects/class-billing-address.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/objects/class-billing-address.php#L348) کې په 348 کرښه تعریف شوی
 
 
-## راستنېدنې
+## راستنېدنې {#returns}

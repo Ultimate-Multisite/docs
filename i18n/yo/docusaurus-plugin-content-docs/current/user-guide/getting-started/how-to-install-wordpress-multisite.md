@@ -3,7 +3,7 @@ title: Bí a ṣe lè fi WordPress Multisite sori ẹrọ
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Báwo ni mo ṣe le Fi WordPress Multisite Sori Ẹrọ?
+# Báwo ni mo ṣe le Fi WordPress Multisite Sori Ẹrọ? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite gba ọ laaye lati ní nẹ́tíwọ́ọ̀kì àwọn site lori fifi sori ẹrọ kan ṣoṣo. Èyí jẹ́ ẹ̀ya tí ó wà nínú rẹ̀, ṣùgbọ́n kò ṣiṣẹ́ ní aiyipada.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Láti ṣẹ̀dá subsite:
 
 Lẹ́yìn fífi àwọn field kún, tẹ bọ́tìnì "Add site". Nígbà tí a bá ti ṣẹ̀dá subsite tuntun náà, tẹ̀síwájú kí o wọlé sí i láti rii dájú pé subsite náà ń ṣiṣẹ́.
 
-## Àwọn Ìṣòro Tó Wọ́pọ̀:
+## Àwọn Ìṣòro Tó Wọ́pọ̀: {#common-problems}
 
-### 1\. Mo lè ṣẹ̀dá àwọn site tuntun ṣùgbọ́n a kò lè wọlé sí wọn.
+### 1\. Mo lè ṣẹ̀dá àwọn site tuntun ṣùgbọ́n a kò lè wọlé sí wọn. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Bí o bá yan subdomains, o tún ní láti ṣètò wildcard subdomains fún nẹ́tíwọ́ọ̀kì multisite rẹ.
 

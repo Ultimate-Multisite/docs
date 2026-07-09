@@ -3,11 +3,11 @@ title: Lêgerîna Domaina Headerê
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Lêgerîna Domain a Header
+# Lêgerîna Domain a Header {#header-domain-search}
 
 Vê sazkirinê bikar bîne dema ku tu dixwazî formeke biçûk a header hebe ku lêgerîna domain dest pê bike, paşê bihêle ku kiryar ji nav domainên berdest di nav checkout a Ultimate Multisite de hilbijêre.
 
-## Pêdivî
+## Pêdivî {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Vê sazkirinê bikar bîne dema ku tu dixwazî formeke biçûk a header hebe ku 
   - TLDyên piştgirîkirî hatine sazkirin, mînak `com`, `net`, û `org`.
 - Formeke checkout ya derbasdar ku qada **Hilbijartina Domain** tê de heye.
 
-## Forma checkout
+## Forma checkout {#checkout-form}
 
 1. Forma checkout ya ku ji aliyê rûpela tomarbûnê ve tê bikaranîn biafirîne an biguherîne.
 2. Qadên checkout/account ên pêwîst ên asayî zêde bike, di nav de **Username**. Formeke checkout ku tenê qada domainê tê de heye ji aliyê rastandina Ultimate Multisite ve tê redkirin.
@@ -30,7 +30,7 @@ Rûpela tomarbûnê divê forma checkout nîşan bide, mînak:
 [wu_checkout slug="domain-form"]
 ```
 
-## Forma header
+## Forma header {#header-form}
 
 Formeke biçûk a `GET` di header a malperê de zêde bike ku peyva lêgerînê ya hatî nivîsandin wek `domain_name` dişîne rûpela checkout:
 
@@ -44,7 +44,7 @@ Formeke biçûk a `GET` di header a malperê de zêde bike ku peyva lêgerînê 
 
 Di JavaScript a header a xwerû de domainê ji pêş ve hilnebijêre. Header divê tenê peyva lêgerînê derbas bike. Skrîpta checkout a Domain Seller `?domain_name=example` dixwîne, qutiya lêgerîna checkout tijî dike, û lêgerîna berdestbûnê dimeşîne da ku kiryar bikare ji domainên vegerandî hilbijêre.
 
-## Reftara tê payîn
+## Reftara tê payîn {#expected-behaviour}
 
 Lêgerîna `example` di header de divê vê veke:
 
@@ -61,7 +61,7 @@ Checkout paşê divê encamên ku dikarin bêne hilbijartin nîşan bide, wek:
 
 Piştî hilbijartina encameke berdest, kurteya fermanê divê product a tomar kirina domainê û navê domainê yê hilbijartî tê de hebe.
 
-## Piştrastkirin
+## Piştrastkirin {#verification}
 
 1. Rûpela malê veke.
 2. Li navek sade bigere, mînak `example`.
@@ -71,7 +71,7 @@ Piştî hilbijartina encameke berdest, kurteya fermanê divê product a tomar ki
 6. Ji bo domaineke berdest li **Hilbijêre** bitikîne.
 7. Piştrast bike ku kurteya fermanê `Domain Registration - example.com` an domaina hilbijartî tê de heye.
 
-## Çareserkirina pirsgirêkan
+## Çareserkirina pirsgirêkan {#troubleshooting}
 
 - Heke lîste xuya nebe, taba network a gerokê ji bo `admin-ajax.php?action=wu_domain_search` kontrol bike û piştrast bike ku ew `domains` an `results` ên ne-valahî vedigerîne.
 - Heke forma checkout di dema tomar kirinê de di rastandinê de têk biçe, qadên account ên pêwîst wek **Username** zêde bike.

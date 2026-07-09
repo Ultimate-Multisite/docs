@@ -3,7 +3,7 @@ title: Multisaitų įdiegimo vadovas
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Konfigūracijos Vizardas
+# Multisite Konfigūracijos Vizardas {#multisite-setup-wizard}
 
 Ultimate Multisite įdaliui yra įtrauktas vizardas, kuris automatiškai konvertuoja standartinį WordPress įrenginį į WordPress Multisite tinklą. Tai eliminuoja būtinybį rankiniu būdu redaguoti `wp-config.php` arba eseguire duomenų bazos komandas.
 
@@ -11,13 +11,13 @@ Ultimate Multisite įdaliui yra įtrauktas vizardas, kuris automatiškai konvert
 Jei jūsų WordPress įrenginimas jau veikia kaip Multisite tinklas, galite šį etapą visiškai praleisti. Vizardas pasirodys tik tada, kai Multisite nėra įjungtas.
 :::
 
-## Kai Pasirinktas Vizardas?
+## Kai Pasirinktas Vizardas? {#when-does-the-wizard-appear}
 
 Kai įjungate Ultimate Multisite standartini (ne-Multisite) WordPress įrenginyje, plėkštukas pamatys, kad Multisite nėra įjungtas ir automatiškai pateiks jus į Multisite Setup Wizard instead of regular setup wizard.
 
 Jį galite taip pat pasiekti tiesiogiai per **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Reikalavimai
+## Reikalavimai {#prerequisites}
 
 Prieš pradėdami vizardą, užtikrinkite:
 
@@ -29,7 +29,7 @@ Prieš pradėdami vizardą, užtikrinkite:
 Vizardas keičia jūsų `wp-config.php` failą ir sukuria naujus duomenų bazos santykius (tables). Taiverskite rezervą prieš tęsdami veiksmus.
 :::
 
-## Etapas 1: Prisijungimas
+## Etapas 1: Prisijungimas {#step-1-welcome}
 
 Pirmas ekranas paaiškinas, kas yra WordPress Multisite ir ką vizardas padary:
 
@@ -42,11 +42,11 @@ Pirmas ekranas paaiškinas, kas yra WordPress Multisite ir ką vizardas padary:
 
 Spauskite **Tęsti** (Continue), kad tęstumėte.
 
-## Etapas 2: Tinklo Konfigūracija
+## Etapas 2: Tinklo Konfigūracija {#step-2-network-configuration}
 
 Šis etapas siūlo nustatyti jūsų tinklo parametrus.
 
-### Sistemos struktūra
+### Sistemos struktūra {#site-structure}
 
 Kiek tiek pasirinkta, kaip jūsų tinklo svetainės bus saugomos:
 
@@ -57,11 +57,11 @@ Kiek tiek pasirinkta, kaip jūsų tinklo svetainės bus saugomos:
 Jei pasirinkote subdomėnius, jums reikės nustatyti **wildcard DNS** ir **wildcard SSL sertifikatą** savo domenui. Dažnai išjungti WordPress hostai to atlieka automatiškai. Pakeiskite [Ultimate Multisite 101](./ultimate-multisite-101) lentelėje, jei norite gilių įžvalgų.
 :::
 
-### Tinklo pavadinimas
+### Tinklo pavadinimas {#network-title}
 
 Įveskite pavadinimą jūsų tinklui. Pagal toje nurodytas jūsų dabartinis svetainės pavadinimas su pridėtu "Network". Galite pakeisti tai vėliau iš nustatymų tinklo.
 
-### Tinklo administratoriaus el. pašto adresas
+### Tinklo administratoriaus el. pašto adresas {#network-admin-email}
 
 El. pašto adresas, naudojamas tinklo administravimo pranešimams. Pagal toje nurodytas dabartinis vartotojo el. pašto adresas.
 
@@ -69,7 +69,7 @@ El. pašto adresas, naudojamas tinklo administravimo pranešimams. Pagal toje nu
 
 Įrašę laukus, spustelėkite **Tęsti**, kad grindėte procesą.
 
-## Kaiestas 3: Instalaция
+## Kaiestas 3: Instalaция {#step-3-installation}
 
 Spustelėkite mygtuką **Instaluoja**, kad pradėtumėte. Wizard atliks penki automatizuotus veiksmus be sustojimo, ir kiekviena iš jų rodo savo progresą realiu laiku:
 
@@ -96,7 +96,7 @@ Kai visi kairiai bus sukaupti sėkmingai, jūs pamatysite žalią „Success!“
 
 Tada vizorius automatiškai tęsinės į užbaigimo ekraną.
 
-## Krokas 4: Užbaigti
+## Krokas 4: Užbaigti {#step-4-complete}
 
 Kai įdėja bus baigtas, pamatysite sėkmės pranešimą, kuris patvirtina, kad WordPress Multisite yra įjunkas.
 
@@ -108,7 +108,7 @@ Dabar galite tęsti Ultimate Multisite nustatymo vizoriumi ir konfigūruoti savo
 Multisite instalacija baigta požiūrėtoje instaliacijos pabaigoje jūsų naršėjas bus perdirbtas į naujai įjungtą tinklo administratorį. Galbūt jums vėl reikės prisiųsti, nes autentifikavimo slapukai atnaujinami multisite aplinkvai.
 :::
 
-## Manual Setup Fallback (Manual nustatymo alternatyva)
+## Manual Setup Fallback (Manual nustatymo alternatyva) {#manual-setup-fallback}
 
 Jei žaida negali įrašyti į jūsų `wp-config.php` failą (dėl failų įgaliojimų ar serverio restrančių), jis pateiks tikslų kodą, kurį turite pridėti manuai:
 
@@ -117,9 +117,9 @@ Jei žaida negali įrašyti į jūsų `wp-config.php` failą (dėl failų įgali
 
 Po atlikimo manuali pakeitimus atsisiųskite puslapį, ir žaida pamatys, kad multisite dabar yra aktyvus.
 
-## Troubleshooting (Problemos iššvaistymo)
+## Troubleshooting (Problemos iššvaistymo) {#troubleshooting}
 
-### Žaida sako, kad wp-config.php nėra įrašomas (wp-config.php is not writable)
+### Žaida sako, kad wp-config.php nėra įrašomas (wp-config.php is not writable) {#the-wizard-says-wp-configphp-is-not-writable}
 
 Jūsų svetainės serverio procesui reikia rašimo įgaliojimų į `wp-config.php` failą. Jūs galite:
 
@@ -127,7 +127,7 @@ Jūsų svetainės serverio procesui reikia rašimo įgaliojimų į `wp-config.ph
 - Naudoti manuallinio nustatymo alternatyvos, pateiktos žaida
 - Prašyti jūsų hostingo tiekėvas pagalbos
 
-### Svetai nėra pasiekiami po nustatymo (subdomėniumi)
+### Svetai nėra pasiekiami po nustatymo (subdomėniumi) {#sites-are-not-accessible-after-setup-subdomains}
 
 Jei pasirinkote subdomėnumų struktūrą, jums reikia nustatyti **wildcard DNS** savo domenui. Pridėkite DNS įrašą:
 
@@ -139,7 +139,7 @@ Value: [jūsų serverio IP]
 
 Patikrinkite su jūsų hostingo tiekėvu, jei esate nepatikini, kaip nustatyti šį.
 
-### Autentifikavimo problemas po nustatymo
+### Autentifikavimo problemas po nustatymo {#authentication-issues-after-setup}
 
 Jei esate išloguoti arba susiranki slapukų klaidos po multisite nustatymą:
 
@@ -147,7 +147,7 @@ Jei esate išloguoti arba susiranki slapukų klaidos po multisite nustatymą:
 2. Vėl prisiųskite į `yourdomain.com/wp-login.php`
 3. Jei problema laiko, patikrinkite, kad jūsų `wp-config.php` nėra nustatytas `COOKIE_DOMAIN` = `false` – tai yra žinoma problema subdomėniumi naudojant multisite instaliacijose
 
-### Viena veikla nepasiekė instalacijos metu
+### Viena veikla nepasiekė instalacijos metu {#a-step-failed-during-installation}
 
 Jei vienas įdiegimo žingsni rodo klaidą:
 

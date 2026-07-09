@@ -4,22 +4,22 @@ title: フィルタ - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# フィルタ: wu_magic_link_enforce_user_agent
+# フィルタ: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
 
 ユーザーエージェント検証を強制するかどうかをフィルタします。
 
 falseに設定すると、トークンが異なるブラウザ/デバイス間で動作できるようになります。これによりセキュリティは低下しますが、使いやすさは向上します。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
 | $enforce | `bool` | ユーザーエージェントの一致を強制するかどうか。 |
 
-### 導入
+### 導入 {#since}
 
 - 2.0.0
 
-### ソース
+### ソース {#source}
 
 Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L410) at line 410

@@ -4,19 +4,19 @@ title: Akcia - wu_mt_migration_cancelled
 sidebar_label: wu_mt_migration_cancelled
 _i18n_hash: 315390b7190dab27f6ca16a6eff5e407
 ---
-# Action: wu_mt_migration_cancelled
+# Action: wu_mt_migration_cancelled {#action-wumtmigrationcancelled}
 
 Spustí sa, keď je migrácia zrušená.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
 | $job | `\Migration_Job` | Zrušená úloha migrácie. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 1.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L765) na riadku 765

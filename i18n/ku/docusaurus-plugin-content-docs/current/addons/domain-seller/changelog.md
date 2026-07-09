@@ -3,7 +3,7 @@ title: Tomara guhertinên Firoşkarê Domainê
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Guherandinên Domain Seller
+# Guherandinên Domain Seller {#domain-seller-changelog}
 
 Guhertoya 1.3.0 - Di 2026-06-02 de hate berdan
 - Nû: Hişyariyek network-admin hate zêdekirin dema ku hevsengiya firoşkarê HostAfrica pir kêm dibe
@@ -134,20 +134,20 @@ Guherto 1.0.0 - Di 2025-09-28 de hat weşandin
 * **Çareserkirî:** Hemû koda v1 ya kevnbûyî li gor standardên v2 hate nûkirin
 * **Rakirin:** Lihevhatina v1 ya kevn (guherîna şikandî)
 
-### Guhertoyên Berê (v1 Legacy)
+### Guhertoyên Berê (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Guherto 0.0.3 - 20/08/2019
+### Guherto 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Çareserkirî: Lihevnekirina bi Groundhogg CRM re
 * Têbînî: Ev derxistina dawî bû ku bi v1 re lihevhatî bû
 
-### Guherto 0.0.2 - 07/12/2018
+### Guherto 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Çareserkirî: Qada License Key hate rakirin
 * Çareserkirî: Tabên planê kêm bûn dema pluginê taybetmendiyê çalak e
 * Çêtirkirî: Bişkoka derbasbûnê li ser qada qeydkirinê hate zêdekirin
 
-### Guherto 0.0.1 - Derxistina Destpêkê
+### Guherto 0.0.1 - Derxistina Destpêkê {#version-001---initial-release}
 
 * Yekgirtina bingehîn a OpenSRS ji bo WP Ultimo v1
 * Lêgerîn û qeydkirina hêsan a domainê

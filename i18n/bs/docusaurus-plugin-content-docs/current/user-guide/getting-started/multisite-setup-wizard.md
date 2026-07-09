@@ -3,7 +3,7 @@ title: Multisite Postavljanje Čarobnik
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Ultimate Multisite Setup Wizard
+# Ultimate Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite uključuje ugrađeni wizard koji automatski pretvara standardnu WordPress instalaciju u WordPress Multisite mrežu. Time se eliminiše potreba da ručno uređujete `wp-config.php` ili pokrećete komande u bazi podataka.
 
@@ -11,13 +11,13 @@ Ultimate Multisite uključuje ugrađeni wizard koji automatski pretvara standard
 Ako je vaša WordPress instalacija već pokrenuta kao Multisite mreža, možete potpuno preskočiti ovaj korak. Wizard se pojavljuje samo kada Multisite nije omogućen.
 :::
 
-## Kada se wizard pojavljuje?
+## Kada se wizard pojavljuje? {#when-does-the-wizard-appear}
 
 Kada aktivirate Ultimate Multisite na standardnoj (ne-Multisite) WordPress instalaciji, plugin detektuje da Multisite nije omogućen i automatski vas preusmerava na Multisite Setup Wizard umjesto regularnog setup wizard-a.
 
 Takođe ga možete pristupiti direktno na **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Preduslovi
+## Preduslovi {#prerequisites}
 
 Prije pokretanja wizard-a, pobrinite se da:
 
@@ -29,7 +29,7 @@ Prije pokretanja wizard-a, pobrinite se da:
 Wizard mijenja vašu datoteku `wp-config.php` i kreira nove tabele u bazi podataka. Uvijek napravite backup prije nego što nastavite.
 :::
 
-## Korak 1: Dobrodošlica
+## Korak 1: Dobrodošlica {#step-1-welcome}
 
 Prvi ekran objašnjava šta je WordPress Multisite i šta će wizard uraditi:
 
@@ -42,11 +42,11 @@ Prvi ekran objašnjava šta je WordPress Multisite i šta će wizard uraditi:
 
 Kliknite na **Continue** da nastavite.
 
-## Korak 2: Konfiguracija mreže
+## Korak 2: Konfiguracija mreže {#step-2-network-configuration}
 
 Ovaj korak vas traži da konfigurišete postavke vaše mreže.
 
-### Struktura sajta
+### Struktura sajta {#site-structure}
 
 Izaberite kako će biti organizovani sajtovi vaše mreže:
 
@@ -57,11 +57,11 @@ Izaberite kako će biti organizovani sajtovi vaše mreže:
 Ako izaberete poddomene, moraćete da konfigurišete **wildcard DNS** i **wildcard SSL certifikat** za vaš domen. Većina hosting provajdera za WordPress to radi automatski. Pogledajte [Ultimate Multisite 101](./ultimate-multisite-101) za detaljno poređenje.
 :::
 
-### Naslov mreže
+### Naslov mreže {#network-title}
 
 Unesite ime za svoju mrežu. Ovo se podrazumeva na naslov vašeg trenutnog sajta sa dodanim "Network". To možete kasnije promijeniti iz postavki mreže.
 
-### Email administratora mreže
+### Email administratora mreže {#network-admin-email}
 
 Adresa e-pošte koja se koristi za obavještavanje o administraciji mreže. Ovo se podrazumeva na e-mail adresu trenutnog korisnika.
 
@@ -69,7 +69,7 @@ Adresa e-pošte koja se koristi za obavještavanje o administraciji mreže. Ovo 
 
 Nakon popunjavanja polja, kliknite na **Continue** da nastavite.
 
-## Korak 3: Instalacija
+## Korak 3: Instalacija {#step-3-installation}
 
 Kliknite na dugme **Install** da započnete. Wizard obavlja pet automatizovanih koraka sekvencijalno, pri čemu svaki prikazuje svoj napredak u realnom vremenu:
 
@@ -96,7 +96,7 @@ Nakon što svi koraci uspješno završe, vidjet ćete zeleni status "Success!" z
 
 Wizard će zatim automatski nastaviti na ekran za završetak.
 
-## Korak 4: Završetak
+## Korak 4: Završetak {#step-4-complete}
 
 Nakon što je instalacija završena, vidjet ćete poruku o uspjehu koja potvrđuje da je WordPress Multisite omogućen.
 
@@ -108,7 +108,7 @@ Sada možete nastaviti sa Ultimate Multisite setup wizard-om kako biste konfigur
 Nakon što se multisite instalacija završi, vaš preglednik će vas preusmeriti preko novom omogućenog mrežnog administratora. Možda ćete morati ponovo da se prijavite jer se ažuriraju kolačići za autentikaciju za multisite okruženje.
 :::
 
-## Ručna postavka (Fallback)
+## Ručna postavka (Fallback) {#manual-setup-fallback}
 
 Ako wizard ne može da piše u vašu datoteku `wp-config.php` (zbog dozvola za fajlove ili ograničenja servera), on će prikazati tačan kod koji morate dodati ručno:
 
@@ -117,9 +117,9 @@ Ako wizard ne može da piše u vašu datoteku `wp-config.php` (zbog dozvola za f
 
 Nakon što napravite ručne promjene, osvježite stranicu i wizard će detektovati da je multisite sada aktivno.
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
-### Wizard kaže da wp-config.php nije writable
+### Wizard kaže da wp-config.php nije writable {#the-wizard-says-wp-configphp-is-not-writable}
 
 Proces vašeg web servera treba da ima dozvolu za pisanje na datoteku `wp-config.php`. Možete:
 
@@ -127,7 +127,7 @@ Proces vašeg web servera treba da ima dozvolu za pisanje na datoteku `wp-config
 - Upotrijebiti uputstva za ručnu postavku (manual setup fallback) koja vam je pružena od strane wizard-a
 - Zatražiti pomoć od vašeg hosting provajdera
 
-### Sajtovi nisu dostupni nakon postavljanja (poddomeni)
+### Sajtovi nisu dostupni nakon postavljanja (poddomeni) {#sites-are-not-accessible-after-setup-subdomains}
 
 Ako ste izabrali strukturu poddomena, morate konfigurisati **wildcard DNS** za vaš domen. Dodajte DNS zapis:
 
@@ -139,7 +139,7 @@ Value: [IP adresa vašeg servera]
 
 Provjerite sa vašim hosting provajderom ako niste sigurni kako ovo konfigurisati.
 
-### Problemi sa autentikacijom nakon postavljanja
+### Problemi sa autentikacijom nakon postavljanja {#authentication-issues-after-setup}
 
 Ako ste odjavljeni ili doživljavate greške sa kolačićima nakon multisite postavljanja:
 
@@ -147,7 +147,7 @@ Ako ste odjavljeni ili doživljavate greške sa kolačićima nakon multisite pos
 2. Prijavite se ponovo na `yourdomain.com/wp-login.php`
 3. Ako problem ostaje, provjerite da li vaša `wp-config.php` nije postavljena sa `COOKIE_DOMAIN` na `false` — ovo je poznat problem na multisite instalacijama sa poddomenima.
 
-### Korak je propao tokom instalacije
+### Korak je propao tokom instalacije {#a-step-failed-during-installation}
 
 Ako jedan od koraka instalacije prikazuje grešku:
 

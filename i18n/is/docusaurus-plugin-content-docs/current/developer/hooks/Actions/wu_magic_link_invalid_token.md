@@ -4,19 +4,19 @@ title: Aðgerð - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Action: wu_magic_link_invalid_token
+# Action: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
 
 Keyrist þegar ógildur magic link token kemur upp.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Nafn | Tegund | Lýsing |
 |------|------|-------------|
 | $reason | `string` | Ástæðan fyrir ógilda token-inu. |
 
-### Síðan
+### Síðan {#since}
 
 - 2.0.0
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L326) í línu 326

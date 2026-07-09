@@ -4,11 +4,11 @@ title: Filter - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# Filter: wu_magic_link_url
+# Filter: wu_magic_link_url {#filter-wumagiclinkurl}
 
 Oluşturulan sihirli bağlantı (magic link) URL'sini filtreler.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Adı | Tip | Açıklama |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Oluşturulan sihirli bağlantı (magic link) URL'sini filtreler.
 | $site_id | `int` | Site kimliği (site ID). |
 | $redirect_to | `string` | Yönlendirilecek URL. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L148) at line 148

@@ -3,11 +3,11 @@ title: Header domein zoeken
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header-domeinzoekopdracht
+# Header-domeinzoekopdracht {#header-domain-search}
 
 Gebruik deze setup wanneer je een klein header-formulier wilt dat een domeinzoekopdracht start en de klant daarna laat kiezen uit beschikbare domeinen binnen de Ultimate Multisite checkout.
 
-## Vereisten
+## Vereisten {#requirements}
 
 - Ultimate Multisite netwerk-actief.
 - Multisite Ultimate Domain Seller netwerk-actief.
@@ -16,7 +16,7 @@ Gebruik deze setup wanneer je een klein header-formulier wilt dat een domeinzoek
   - Ondersteunde TLD’s geconfigureerd, bijvoorbeeld `com`, `net` en `org`.
 - Een geldig checkout-formulier met het veld **Domeinselectie**.
 
-## Checkout-formulier
+## Checkout-formulier {#checkout-form}
 
 1. Maak of bewerk het checkout-formulier dat door de registratiepagina wordt gebruikt.
 2. Voeg de normale vereiste checkout/account-velden toe, inclusief **Gebruikersnaam**. Een checkout-formulier dat alleen het domeinveld bevat, wordt door de validatie van Ultimate Multisite geweigerd.
@@ -30,7 +30,7 @@ De registratiepagina moet het checkout-formulier weergeven, bijvoorbeeld:
 [wu_checkout slug="domain-form"]
 ```
 
-## Header-formulier
+## Header-formulier {#header-form}
 
 Voeg een klein `GET`-formulier toe in de site-header dat de ingevoerde zoekterm naar de checkout-pagina stuurt als `domain_name`:
 
@@ -44,7 +44,7 @@ Voeg een klein `GET`-formulier toe in de site-header dat de ingevoerde zoekterm 
 
 Selecteer geen domein vooraf in aangepaste header-JavaScript. De header moet alleen de zoekterm doorgeven. Het Domain Seller checkout-script leest `?domain_name=example`, vult het checkout-zoekvak in en voert de beschikbaarheidszoekopdracht uit, zodat de klant kan kiezen uit de geretourneerde domeinen.
 
-## Verwacht gedrag
+## Verwacht gedrag {#expected-behaviour}
 
 Zoeken naar `example` in de header zou moeten openen:
 
@@ -61,7 +61,7 @@ De checkout moet daarna selecteerbare resultaten tonen, zoals:
 
 Na het selecteren van een beschikbaar resultaat moet de bestelsamenvatting het domeinregistratieproduct en de geselecteerde domeinnaam bevatten.
 
-## Verificatie
+## Verificatie {#verification}
 
 1. Open de homepagina.
 2. Zoek naar een kale naam, bijvoorbeeld `example`.
@@ -71,7 +71,7 @@ Na het selecteren van een beschikbaar resultaat moet de bestelsamenvatting het d
 6. Klik op **Selecteren** voor een beschikbaar domein.
 7. Bevestig dat de bestelsamenvatting `Domain Registration - example.com` of het geselecteerde domein bevat.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
 - Als er geen lijst verschijnt, controleer dan het netwerk-tabblad van de browser op `admin-ajax.php?action=wu_domain_search` en bevestig dat dit niet-lege `domains` of `results` retourneert.
 - Als de validatie van het checkout-formulier mislukt tijdens het opslaan, voeg dan de vereiste account-velden toe, zoals **Gebruikersnaam**.

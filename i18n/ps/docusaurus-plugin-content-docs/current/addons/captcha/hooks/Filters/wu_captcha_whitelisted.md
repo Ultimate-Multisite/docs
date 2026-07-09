@@ -4,19 +4,19 @@ title: فلټر - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Filter: wu_captcha_whitelisted
+# Filter: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
 
 دا Filter کوي چې اوسنی کارن/غوښتنه باید whitelisted شي که نه.
 
-## پارامېټرونه
+## پارامېټرونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
 | $whitelisted | `bool` | ایا د captcha تایید پرېښودل شي. |
 
-### له نسخې راهیسې
+### له نسخې راهیسې {#since}
 
 - 1.2.0
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L71) کې په 71 کرښه تعریف شوی.

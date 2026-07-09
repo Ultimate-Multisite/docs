@@ -3,15 +3,15 @@ title: Crea tabulam electionum
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menu Creare
+# Menu Creare {#create-menu}
 
 Facultas **Menu Creare** indices navigationis WordPress creat cum subsidio inscriptionum navigationis distinctarum a titulis paginarum separatarum.
 
-## Conspectus
+## Conspectus {#overview}
 
 Haec facultas functionem ordinariam creandi indices extendit facultate parametri `navigation_label` specificandi. Hoc tibi permittit indices creare ubi inscriptio in navigatione ostensa a titulo paginae differt, maiorem flexibilitatem in structura situs et experientia usoris praebens.
 
-## Parametri
+## Parametri {#parameters}
 
 | Parameter | Typus | Necessarius | Descriptio |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Haec facultas functionem ordinariam creandi indices extendit facultate parametri
 | `location` | string | Non | Locus thematis cui hic index assignetur, e.g. `primary` |
 | `navigation_label` | string | Non | Inscriptio in navigatione ostendenda (distincta a titulo paginae) |
 
-## Valor Redditus
+## Valor Redditus {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Haec facultas functionem ordinariam creandi indices extendit facultate parametri
 }
 ```
 
-## Inscriptio Navigationis contra Titulum Paginae
+## Inscriptio Navigationis contra Titulum Paginae {#navigation-label-vs-page-title}
 
 Parameter `navigation_label` tibi permittit nomen internum indicis ab inscriptione usoribus ostensa separare:
 
@@ -43,9 +43,9 @@ Hoc utile est cum:
 - Plures linguas cum longitudinibus inscriptionum diversis sustinere debes
 - Indices pro regionibus specificis aut coetibus usorum aedificas
 
-## Exempla Usus
+## Exempla Usus {#usage-examples}
 
-### Exemplum 1: Index Simplex cum Inscriptione Navigationis
+### Exemplum 1: Index Simplex cum Inscriptione Navigationis {#example-1-simple-menu-with-navigation-label}
 
 **Promptum:**
 ```
@@ -62,7 +62,7 @@ Crea indicem navigationis principalem nomine "Navigatio Principalis" cum inscrip
 }
 ```
 
-### Exemplum 2: Index pro Loco Thematis Specifico
+### Exemplum 2: Index pro Loco Thematis Specifico {#example-2-menu-for-specific-theme-location}
 
 **Promptum:**
 ```
@@ -80,7 +80,7 @@ Crea indicem pedis nomine "Vincula Pedis" cum inscriptione navigationis "Vincula
 }
 ```
 
-## Integratio cum Theme Builder
+## Integratio cum Theme Builder {#integration-with-theme-builder}
 
 Cum Theme Builder uteris, facultas Menu Creare:
 
@@ -89,13 +89,13 @@ Cum Theme Builder uteris, facultas Menu Creare:
 3. Indices locis thematis rectis assignat
 4. Additamentum elementorum indicis post creationem sustinet
 
-## Facultates Relatae
+## Facultates Relatae {#related-abilities}
 
 - **`add_menu_item`** — Elementa ad indicem exsistentem adde
 - **`update_menu`** — Indicem renomina aut eum loco thematis iterum assigna
 - **`delete_menu`** — Indicem e situ tuo remove
 
-## Optimae Rationes
+## Optimae Rationes {#best-practices}
 
 - **Utere inscriptionibus navigationis claris** — inscriptiones concisas et descriptivas usoribus serva
 - **Locos thematis congrue** — indices loco thematis recto assigna ad ostensionem propriam
@@ -103,14 +103,14 @@ Cum Theme Builder uteris, facultas Menu Creare:
 - **Responsivitatem proba** — verifica indices recte in apparatibus mobilibus ostendi
 - **Inscriptiones localiza** — utere inscriptionibus navigationis diversis pro versionibus linguarum diversis
 
-## Limitationes
+## Limitationes {#limitations}
 
 - Inscriptiones navigationis tantum ad ostensionem valent; internum `name` adhuc ad identificationem WordPress adhibetur
 - Subsidium thematis variat; non omnia themata omnes locos indicum sustinent
 - Elementa indicis separatim post creationem indicis addenda sunt
 - Mutatio inscriptionis navigationis requirit indicem renovare
 
-## Facultates Relatae
+## Facultates Relatae {#related-abilities-1}
 
 - [Logo SVG Generare](./generate-logo-svg.md) — crea logotypa pro capite situs tui
 - [Contrarium Palette Validare](./validate-palette-contrast.md) — curare ut schemata colorum accessibilia sint

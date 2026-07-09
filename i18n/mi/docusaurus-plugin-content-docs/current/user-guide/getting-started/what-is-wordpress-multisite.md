@@ -3,7 +3,7 @@ title: He aha te WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# He aha te Multisite o WordPress?
+# He aha te Multisite o WordPress? {#what-is-wordpress-multisite}
 
 I roto i te core o WordPress, he āhuatanga tino pai pēnei te 'Multisite' (Whānau Whainga), i whakatū i tō rā i 2010 i runga i te whakatū o WordPress 3.0. I tēnei wā, i pēnei i te whakamahi i āhuatanga hou me te tangihanga tika i te ao amanāhi.
 
@@ -11,7 +11,7 @@ I te mea, he tino whakaaro ana i multisite o WordPress he pēnei: He Whare Wāna
 
 ##
 
-## He aha te mea tino pai o Multisite o WordPress?
+## He aha te mea tino pai o Multisite o WordPress? {#what-exactly-is-wordpress-multisite}
 
 He āhuatanga o WordPress e hiahia ana ki te whai ake i ngā wāhi nui (multiple sites) hei whai i te whakauru (installation) o WordPress tahi. I roto i te maha o multisite, ko te wāhi WordPress hou e whakawhanake atu ki te whakatipu i he **network of sites** (whānau whainga).
 
@@ -33,7 +33,7 @@ Hehe, he aha te chaka nui i te whakauru mode subdomain? He SSL coverage (HTTPS) 
 
 I te pūrere i pēnei i subdirectory mode, ko ngā subsites i te network-based subdomain e whakaaro ai ngā search engines ko ngā website separate, he mea e whakaatu ana ko te content i tō subsite he kāore e whakahaupau i te SEO performance o ngā subsites kia kaha.
 
-## The Super Admin
+## The Super Admin {#subdomain-or-subdirectory}
 
 Ko ngā single-site WordPress installations e tino kitea ana ki ahau, ka taea e koe te whaiaro pūmau (unlimited) mō ngā user me te give ngā user those different user roles me different permissions.
 
@@ -47,7 +47,7 @@ Ko ngā plugins me themes he tino kitea ana ki te network admin panel eke ai te 
 
 _Lưu ý: như bạn thấy, việc mời ai đó vào mạng lưới của mình và cấp cho họ quyền siêu quản trị (super admin status) sẽ cho phép người dùng này kiểm soát toàn bộ mạng lưới của bạn. Ví dụ, các siêu quản trị khác thậm chí có thể gỡ bỏ trạng thái siêu quản trị của bạn, về cơ bản là khóa bạn ra khỏi bảng điều khiển quản trị mạng của chính mình. Để cho phép khách hàng Ultimate Multisite có quyền kiểm soát chi tiết hơn về những gì các siêu quản trị bổ sung có thể làm, chúng tôi có một add-on gọi là Support Agents. Add-on này cho phép bạn tạo thêm một loại người dùng khác – một agent (tác nhân) – với chỉ những quyền họ cần để thực hiện các nhiệm vụ của họ trên mạng lưới._
 
-## O wai te whaihare i waenga i ngā subsites me kia wai i te whaihare
+## O wai te whaihare i waenga i ngā subsites me kia wai i te whaihare {#the-super-admin}
 
 Ka whai te whakamārama mātou mō, he mea nui ana i te WordPress multisite kei te whaihare katoa ngā subsites ngā samea (configurations), ngā file core, ngā theme, ngā plugin, ngā file core o WordPress, me ngā mea kanohi.
 
@@ -59,7 +59,7 @@ He pēnei tēnei, engari he ngā mea i tino whakahou ana ki te rohe o te subsite
 
 - Kei te tino whakahou ana ngā database tables mō every subsite, ahau te mea e hoki i te post, comments, pages, settings, me ngā mea katoa ana ki ia subsite.
 
-## Whakawātea user management i WordPress Multisite
+## Whakawātea user management i WordPress Multisite {#what-is-shared-among-subsites-and-what-is-not}
 
 He mea nui tēnei i WordPress multisite, he te whakahaere o ngā user (user management). He pēnei te table o user o WordPress he tōtōtō ana i roto i ngā subsites katoa.
 
@@ -77,7 +77,7 @@ He John me Alice ngā pētea o koe, engari kei te whai ake ana ahau. He tino nui
 
 Ko te table o ngā user he whare i te whānau, engari e taea ai te whai whakaaro ki te whakamahi i ngā admin o ngā subsites ahau me ngā super admin hei whai whakaa ana i ngā user, ā, he taea ai tōna roa (role) āriki i ngā subsites rānei.
 
-## Whakawhanaungatanga mō te mahi (Performance considerations)
+## Whakawhanaungatanga mō te mahi (Performance considerations) {#user-management-on-wordpress-multisite}
 
 He tino kaha te WordPress multisite ki te whakahaupū i te ahua o ngā wāhi (sites) e taea ana ia whakamohoho. He taea ai te whakamārama tēnei e ngaro ana i te fanga o [WordPress.com](https://WordPress.com), Edublogs, me Campuspress—ngā mea katoa he hāpai i multisite, ā, ko ahau (host) kei ngā hazeri ngā ngā wāhi he nui ake i ngā hazeri ngā wāhi.
 

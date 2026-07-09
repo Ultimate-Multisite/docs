@@ -3,7 +3,7 @@ title: Gukoresha API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint ya registration ya Ultimate Multisite
+# Endpoint ya registration ya Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Mu gihe ulihagarira uko uburyo bwo gukora urugero rwose rwa kumenya umuntu w'umukoresha w'umuryango wawe (new customer) mu muryango wanyu, kandi nuko uba urugero bwo gukora ibi bikorwa na Zapier.
 
@@ -29,11 +29,11 @@ Gukoresha **Enable API** kandi uza gutanga ubushobozi bwo API (your API credenti
 
 Ubu, twagereze ku endpoint kandi twakora urugero rw'registration' mu Zapier.
 
-## Icyemezo cyo mu body ya endpoint (Endpoint body parameters)
+## Icyemezo cyo mu body ya endpoint (Endpoint body parameters) {#endpoint-body-parameters}
 
 Tugereze ku buryo bwo gukoresha ibindi byiza byiza bitewe n'ubwoko bw'information turi gutangira ku endpoint. Ku gihe cyo, uza kubona urugero rwose rwa call.
 
-### Customer
+### Customer {#customer}
 
 Iyi ni umusaruro w'information w'ubwoko bwo gukora User na Umukoresha w'Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Ni vyose gukora u gukoresha ID y'umukundzi wako mu nyumbura rwawe. Ntabwo utagik
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Ubwumvikane (Membership)**
+### **Ubwumvikane (Membership)** {#membership}
 
 Amakuru atandukanye atuko mu gihe cyo gukoresha uwo obujambo.
 
 "membership" { "status" : "string", // mu gihe cyo "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Icyiciro (Products)**
+### **Icyiciro (Products)** {#products}
 
 Icyiciro cyangwa ibintu by'umukundzi bishobora gushyirwa mu array w'ibyo ID by'umukundzi mu nyumbura rwawe. Urahindura, uwo endpoint utagukora icyiciro. Gukoresha inyandiko za Ultimate Multisite kugira ngo ubone neza uwo endpoint cyo gukora icyiciro.
 
 **"products" : [1,2],**
 
-### **Icyemezo (Payment)**
+### **Icyemezo (Payment)** {#payment}
 
 Nko mu buryo bwa Ubwumvikane, twifashishije status gusa.
 
 **"payment" { "status" : "string", // mu gihe cyo "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### **Icyemezo (Site)**
+### **Icyemezo (Site)** {#site}
 
 Kugira ngo twamukire, twifashishije URL y'umukundzi n'Urugero rwa umukundzi mu gihe cyo gukoresha Icyemezo.
 
@@ -69,11 +69,11 @@ Kugira ngo twamukire, twifashishije URL y'umukundzi n'Urugero rwa umukundzi mu g
 
 Icyemezo cyo gukora (register endpoint) kizahindura array y'umukundzi w'umukundzi w'umukundzi w'umukundzi w'umukundzi.
 
-## Gukora action mu Zapier
+## Gukora action mu Zapier {#creating-an-action-in-zapier}
 
 Ntabwo ubyumva uburyo bwa gukoresha no gutegura ibyo nyaho by'umukundzi w'umukundzi w'umukundzi w'umukundzi w'umukundzi w'umukundzi. Gushakira inama hano. (link?)
 
-### Gukora action
+### Gukora action {#creating-an-action}
 
 Kugira ngo twagire neza uburyo bwo gukoresha registration endpoint na Zapier, tworera integration na Google Forms. Gusa imbere y'imwe mu gihe form iyo itangwa kandi ibyemezo byo mu gihe cyo gushyira amakuru mu sheet ya ijambo ry'umuntu (answer sheet) mu form, uyu muryango w'Ultimate Multisite uzakoreshwa.
 
@@ -101,7 +101,7 @@ Ntabwo ugiye ku gukora uburyo bwa mbere, ugenda ku test yakirimo. Ku gice cyo cy
 
 Testya uwe Zap (Zap) uyu kandi, uza gutera ku bwiza. Niba hari ikibazo kigira umwihariko, ugenda kumenya byose fields kandi niba bishobora guhindurwa neza. Kuko hari amakuru menshi, ibintu byiza bituma ubwoba bwo gukoresha uzi.
 
-### Amakuru y'endpoint yose (Complete endpoint parameters)
+### Amakuru y'endpoint yose (Complete endpoint parameters) {#complete-endpoint-parameters}
 
 Iyi ni uburyo bwose bwa kuvuga kandi byose byashobora guhindurwa mu gihe cyose.
 

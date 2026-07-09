@@ -3,13 +3,13 @@ title: Pénztármező és ügyfél DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Pénztári mező és ügyfél DNS-kezelés
+# Pénztári mező és ügyfél DNS-kezelés {#checkout-field-and-customer-dns-management}
 
-## A Domain Selection pénztári mező
+## A Domain Selection pénztári mező {#the-domain-selection-checkout-field}
 
 A **Domain Selection** mező egy pénztári elem, amely választási lehetőséget ad az ügyfeleknek arra, hogyan szerezzék meg a webhelyük domainjét. Add hozzá bármely pénztári űrlaphoz a domainértékesítés engedélyezéséhez.
 
-### A mező hozzáadása egy pénztári űrlaphoz
+### A mező hozzáadása egy pénztári űrlaphoz {#adding-the-field-to-a-checkout-form}
 
 1. Lépj a **Network Admin › Ultimate Multisite › Checkout Forms** oldalra
 2. Nyiss meg vagy hozz létre egy pénztári űrlapot
@@ -18,7 +18,7 @@ A **Domain Selection** mező egy pénztári elem, amely választási lehetőség
 5. Konfiguráld a mező beállításait (lásd alább)
 6. Mentsd az űrlapot
 
-### Mezőbeállítások
+### Mezőbeállítások {#field-options}
 
 **Domain módok** — Válaszd ki, mely füleket látja az ügyfél. Minden mód egymástól függetlenül engedélyezhető vagy letiltható:
 
@@ -32,7 +32,7 @@ A **Domain Selection** mező egy pénztári elem, amely választási lehetőség
 
 **Domain termék** — Opcionálisan rögzítheted ezt a mezőt egy adott domain termékhez. Ha nincs beállítva, az addon automatikusan kiválasztja a megfelelő terméket az ügyfél által keresett TLD alapján.
 
-### Regisztráló kapcsolattartási mezői
+### Regisztráló kapcsolattartási mezői {#registrant-contact-fields}
 
 Amikor az ügyfél a **Register New Domain** fület választja, a pénztári űrlap soron belül hozzáadja a regisztráló kapcsolattartási mezőit:
 
@@ -43,11 +43,11 @@ Amikor az ügyfél a **Register New Domain** fület választja, a pénztári űr
 
 Ezeket minden regisztrátor megköveteli, és a regisztrációs API-hívás előtt ellenőrzésre kerülnek. A telefonszámok automatikusan a regisztrátorok által elvárt `+CC.NNN` nemzetközi formátumra lesznek alakítva.
 
-### Automatikusan generált webhely-URL
+### Automatikusan generált webhely-URL {#auto-generated-site-url}
 
 Amikor az ügyfél domaint regisztrál vagy rendel hozzá, a webhely URL mezője automatikusan kitöltődik a kiválasztott domain alapján. Az ügyfeleknek nem kell külön URL mezőt kitölteniük.
 
-### Keresési viselkedés
+### Keresési viselkedés {#search-behaviour}
 
 - A domain elérhetősége valós időben, AJAX használatával kerül ellenőrzésre, miközben az ügyfél gépel
 - Alternatív TLD-javaslatok jelennek meg, ha a kívánt domain nem elérhető
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Ügyfél DNS-kezelés
+## Ügyfél DNS-kezelés {#customer-dns-management}
 
 Az ügyfelek a **My Account** oldalon, a domainjük bejegyzése alatt kezelhetik a regisztrált domainjeik DNS-rekordjait.
 
-### Támogatott rekordtípusok
+### Támogatott rekordtípusok {#supported-record-types}
 
 | Típus | Használat |
 |---|---|
@@ -91,11 +91,11 @@ Az ügyfelek a **My Account** oldalon, a domainjük bejegyzése alatt kezelhetik
 | **MX** | Levelezési kiszolgáló beállítása |
 | **TXT** | SPF-, DMARC-, ellenőrzési vagy más szöveges rekordok hozzáadása |
 
-### Mely szolgáltatók támogatják a DNS-kezelést?
+### Mely szolgáltatók támogatják a DNS-kezelést? {#which-providers-support-dns-management}
 
 A DNS-kezelés (rekordok hozzáadása, szerkesztése, törlése) elérhető az **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** és **Openprovider** szolgáltatókkal. A **Hostinger** domaineknél a névszerverek frissíthetők a Domain Seller segítségével; a hosztolt domainek DNS-rekordjait az alap Hostinger domain-hozzárendelési integráció kezeli. A Namecheap, GoDaddy és NameSilo domainek állapot- és lejárati információkat jelenítenek meg, de a DNS-t közvetlenül a regisztrátor vezérlőpultján kell kezelni.
 
-### Alapértelmezett DNS-rekordok
+### Alapértelmezett DNS-rekordok {#default-dns-records}
 
 Konfigurálhatsz alapértelmezett DNS-rekordokat, amelyek automatikusan alkalmazásra kerülnek egy domain regisztrálásakor. Lépj a **Settings › Domain Seller › Default DNS Records** oldalra.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS megtekintése és szerkesztése
+### Admin: DNS megtekintése és szerkesztése {#admin-viewing-and-editing-dns}
 
 A hálózati adminok bármely ügyféldomain DNS-rekordjait megtekinthetik és szerkeszthetik a domain szerkesztési oldalán itt: **Network Admin › Ultimate Multisite › Domains**.

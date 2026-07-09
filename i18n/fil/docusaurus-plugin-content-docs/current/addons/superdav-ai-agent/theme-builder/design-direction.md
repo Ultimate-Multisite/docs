@@ -3,17 +3,17 @@ title: Direksyon ng Disenyo
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direksyon ng Disenyo
+# Direksyon ng Disenyo {#design-direction}
 
 Ang hakbang na **Design Direction** ay nagpapahintulot sa iyo na suriin, ayusin, at tapusin ang visual design ng iyong theme bago pa man buuin ng Theme Builder ang kumpletong theme.
 
-## Pangkalahatang Ideya
+## Pangkalahatang Ideya {#overview}
 
 Pagkatapos mong makumpleto ang Discovery Interview, ipapakita ng Theme Builder ang direksyon ng iyong disenyo kasama ang **desktop at mobile preview rendering**. Dahil dito, makikita mo nang eksakto kung paano magmumukhang disenyo mo sa iba't ibang device bago ka magpatuloy sa paggawa ng theme.
 
-## Mga Bahagi ng Design Direction
+## Mga Bahagi ng Design Direction {#design-direction-components}
 
-### 1. Color Palette (Paleta ng Kulay)
+### 1. Color Palette (Paleta ng Kulay) {#1-color-palette}
 
 Ang color scheme ng iyong theme, kasama ang:
 
@@ -23,7 +23,7 @@ Ang color scheme ng iyong theme, kasama ang:
 - **Neutral colors** — mga kulay abo at puti para sa background at teksto
 - **Text color** — pangunahing kulay ng teksto para sa madaling pagbasa
 
-### 2. Typography (Pagpili ng Font)
+### 2. Typography (Pagpili ng Font) {#2-typography}
 
 Pagpili ng font para sa:
 
@@ -33,14 +33,14 @@ Pagpili ng font para sa:
 - **Line height** — pagitan ng mga linya para sa madaling pagbasa
 - **Font weights** — mga variation tulad ng bold, regular, at light
 
-### 3. Layout and Spacing (Pag-aayos at Pagitan)
+### 3. Layout and Spacing (Pag-aayos at Pagitan) {#3-layout-and-spacing}
 
 - **Container width** — pinakamalaking lapad para sa nilalaman
 - **Padding and margins** — pagitan sa paligid ng mga elemento
 - **Grid system** — pag-aayos ng column para sa responsive design
 - **Component spacing** — distansya sa pagitan ng mga UI element
 
-### 4. Visual Elements (Biswal na Elemento)
+### 4. Visual Elements (Biswal na Elemento) {#4-visual-elements}
 
 - **Button styles** — disenyo para sa primary, secondary, at tertiary button
 - **Card designs** — layout para sa mga content block
@@ -48,9 +48,9 @@ Pagpili ng font para sa:
 - **Borders and shadows** — banayad na visual depth
 - **Hover effects** — pag-aayos ng istilo kapag nag-hover (interact)
 
-## Pagpapakita ng Preview (Preview Rendering)
+## Pagpapakita ng Preview (Preview Rendering) {#preview-rendering}
 
-### Desktop Preview
+### Desktop Preview {#desktop-preview}
 
 Ipinapakita ng desktop preview ang iyong disenyo sa buong lapad (karaniwan ay 1200px o mas malaki):
 
@@ -59,7 +59,7 @@ Ipinapakita ng desktop preview ang iyong disenyo sa buong lapad (karaniwan ay 12
 - Malaking typography at spacing
 - Lahat ng visual elements sa buong laki
 
-### Mobile Preview
+### Mobile Preview {#mobile-preview}
 
 Ipinapakita ng mobile preview ang iyong disenyo sa lapad ng mobile (karaniwan ay 375px):
 
@@ -68,7 +68,7 @@ Ipinapakita ng mobile preview ang iyong disenyo sa lapad ng mobile (karaniwan ay
 - Inayos na typography at spacing
 - Sukat ng button na madaling i-tap
 
-### Responsive Breakpoints
+### Responsive Breakpoints {#responsive-breakpoints}
 
 Ipinapakita ng Theme Builder ang previews sa mga breakpoints na ito:
 
@@ -79,9 +79,9 @@ Ipinapakita ng Theme Builder ang previews sa mga breakpoints na ito:
 | **Desktop** | 1200px | Full-width desktop |
 | **Large Desktop** | 1920px | Ultra-wide display |
 
-## Pagpapaganda ng Iyong Disenyo
+## Pagpapaganda ng Iyong Disenyo {#refining-your-design}
 
-### Paggawa ng Pag-aayos
+### Paggawa ng Pag-aayos {#making-adjustments}
 
 Maaari mong ayusin ang direksyon ng iyong disenyo sa pamamagitan ng:
 
@@ -91,7 +91,7 @@ Maaari mong ayusin ang direksyon ng iyong disenyo sa pamamagitan ng:
 4. **Pag-update ng layout** — baguhin ang container widths at grid columns
 5. **Pag-customize ng elements** — baguhin ang button styles, card designs, atbp.
 
-### Pag-update ng Preview
+### Pag-update ng Preview {#preview-updates}
 
 Ang mga pagbabago ay makikita nang real-time:
 
@@ -100,7 +100,7 @@ Ang mga pagbabago ay makikita nang real-time:
 - Lahat ng responsive breakpoints ay nag-u-update
 - Maaari kang magpalit-palit sa pagitan ng previews para i-verify ang mga pagbabago
 
-### Comparison View
+### Comparison View {#comparison-view}
 
 Ikumpara ang direksyon ng iyong disenyo sa:
 
@@ -108,7 +108,7 @@ Ikumpara ang direksyon ng iyong disenyo sa:
 - **Competitor designs** — ikumpara sa mga inspiration sites
 - **Previous versions** — bumalik sa mga naunang direksyon ng disenyo
 
-## Pag-apruba ng Design Direction
+## Pag-apruba ng Design Direction {#design-direction-approval}
 
 Kapag kuntento ka na sa iyong disenyo:
 
@@ -118,7 +118,7 @@ Kapag kuntento ka na sa iyong disenyo:
 4. **Kumpirmahin ang layout** — tingnan ang spacing at alignment
 5. **I-approve ang disenyo** — magpatuloy sa theme generation
 
-## Susunod na Hakbang
+## Susunod na Hakbang {#next-steps}
 
 Pagkatapos mong aprubahan ang direksyon ng iyong disenyo:
 
@@ -127,7 +127,7 @@ Pagkatapos mong aprubahan ang direksyon ng iyong disenyo:
 3. Maaari ka pang mag-customize gamit ang WordPress customizer
 4. Magpatuloy sa [Hospitality Menus](./hospitality-menus.md) o iba pang features
 
-## Best Practices (Mga Pinakamahuhusay na Gawain)
+## Best Practices (Mga Pinakamahuhusay na Gawain) {#best-practices}
 
 - **Subukan sa totoong device** — gumamit ng aktwal na phones at tablets kung maaari
 - **Tingnan ang pagiging madaling basahin** — tiyakin na nababasa ang teksto sa lahat ng laki
@@ -135,30 +135,30 @@ Pagkatapos mong aprubahan ang direksyon ng iyong disenyo:
 - **Isaalang-alang ang performance** — i-optimize ang mga imahe at font para sa bilis
 - **Magplano para sa content** — tiyakin na gumagana ang layout sa iyong aktwal na nilalaman
 
-## Troubleshooting (Pag-aayos ng Problema)
+## Troubleshooting (Pag-aayos ng Problema) {#troubleshooting}
 
-### Preview Not Updating (Hindi Nag-u-update ang Preview)
+### Preview Not Updating (Hindi Nag-u-update ang Preview) {#preview-not-updating}
 
 - I-refresh ang page
 - Linisin ang browser cache
 - Subukan ang ibang browser
 - Tingnan ang internet connection
 
-### Colors Look Different (Iba ang Kulay)
+### Colors Look Different (Iba ang Kulay) {#colors-look-different}
 
 - Tingnan ang monitor color settings
 - Subukan sa iba't ibang device
 - I-verify ang color contrast gamit ang accessibility tools
 - Isaalang-alang ang color blindness simulators
 
-### Typography Issues (Problema sa Typography)
+### Typography Issues (Problema sa Typography) {#typography-issues}
 
 - I-verify na naglo-load ang font files
 - Tingnan ang font size sa iba't ibang breakpoints
 - Subukan gamit ang aktwal na content
 - Isaalang-alang ang line length para sa pagiging madaling basahin
 
-## Related Documentation (Kaugnay na Dokumentasyon)
+## Related Documentation (Kaugnay na Dokumentasyon) {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — kumuha ng design information
 - [Hospitality Menus](./hospitality-menus.md) — gumawa ng structured menu pages

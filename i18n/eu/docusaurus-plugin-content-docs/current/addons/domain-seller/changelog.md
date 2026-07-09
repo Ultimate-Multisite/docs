@@ -3,7 +3,7 @@ title: Domeinu-saltzailearen aldaketen erregistroa
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domeinu-saltzailearen aldaketa-erregistroa
+# Domeinu-saltzailearen aldaketa-erregistroa {#domain-seller-changelog}
 
 1.3.0 bertsioa - 2026-06-02an argitaratua
 - Berria: network-admin abisu bat gehitu da HostAfrica birsaltzailearen saldoa baxuegi geratzen denean
@@ -134,20 +134,20 @@ Bertsioa 1.0.0 - 2025-09-28an argitaratua
 * **Konponduta:** Zaharkitutako v1 kode guztia v2 estandarretara eguneratu da
 * **Kenduta:** v1 bateragarritasun zaharra (aldaketa haustailea)
 
-### Aurreko bertsioak (v1 zaharra)
+### Aurreko bertsioak (v1 zaharra) {#previous-versions-v1-legacy}
 
-### Bertsioa 0.0.3 - 20/08/2019
+### Bertsioa 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Konponduta: Groundhogg CRM-rekin bateraezintasuna
 * Oharra: Hau izan zen v1-rekin bateragarria zen azken bertsioa
 
-### Bertsioa 0.0.2 - 07/12/2018
+### Bertsioa 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Konponduta: License Key eremua kendu da
 * Konponduta: Plan fitxak falta ziren feature plugin aktibo dagoenean
 * Hobetua: Saltatzeko botoi bat gehitu da erregistro-eremuan
 
-### Bertsioa 0.0.1 - Hasierako argitalpena
+### Bertsioa 0.0.1 - Hasierako argitalpena {#version-001---initial-release}
 
 * Oinarrizko OpenSRS integrazioa WP Ultimo v1-rako
 * Domeinu-bilaketa eta erregistro sinplea

@@ -3,7 +3,7 @@ title: Formularze realizacji transakcji
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formularze checkout
+# Formularze checkout {#checkout-forms}
 
 Formularze checkout to łatwy i elastyczny sposób eksperymentowania z różnymi podejściami podczas prób pozyskiwania nowych klientów.
 
@@ -36,13 +36,13 @@ Alternatywnie możesz edytować lub powielać formularze, które już masz, klik
 
 ![Akcje po najechaniu na formularz checkout](/img/config/checkout-form-hover-actions.png)
 
-#### Omówienie edytora formularza checkout
+#### Omówienie edytora formularza checkout {#checkout-form-editor-overview}
 
 Edytor formularza checkout zapewnia kompleksowy interfejs do tworzenia formularzy rejestracyjnych. Oto omówienie układu edytora:
 
 ![Omówienie edytora formularza checkout](/img/config/checkout-form-editor-overview.png)
 
-### Edytowanie formularza checkout
+### Edytowanie formularza checkout {#editing-a-checkout-form}
 
 Możesz tworzyć formularze checkout do różnych celów. W tym przykładzie będziemy pracować nad formularzem rejestracyjnym.
 
@@ -112,7 +112,7 @@ Aby uzyskać shortcode formularza, kliknij Wygeneruj shortcode i skopiuj wynik p
 
 ![Przycisk zapisu z shortcode](/img/config/checkout-form-save.png)
 
-### Pole Tabela cen
+### Pole Tabela cen {#the-pricing-table-field}
 
 Pole **Tabela cen** wyświetla produkty w formularzu checkout, aby klienci mogli wybrać plan. Podczas edycji tego pola możesz skonfigurować kilka opcji:
 
@@ -130,17 +130,17 @@ Oto jak tabela cen wygląda w formularzu rejestracyjnym na frontendzie:
 
 Jeśli dodasz produkt do tabeli cen, zanim formularz będzie zawierał pola wymagane do ukończenia procesu checkoutu tego produktu, edytor wyświetli teraz ostrzeżenie. Użyj ostrzeżenia, aby dodać brakujące wymagane pole przed opublikowaniem lub zapisaniem zmian w aktywnym formularzu rejestracji.
 
-### Dodawanie przełącznika wyboru okresu
+### Dodawanie przełącznika wyboru okresu {#adding-a-period-selection-toggle}
 
 Jeśli skonfigurowałeś [wariacje cen](creating-your-first-subscription-product#price-variations) w swoich produktach (np. ceny miesięczne i roczne), możesz dodać pole **Wybór okresu** do formularza checkoutu. To pole wyświetla przełącznik, który pozwala klientom przełączać się między okresami rozliczeniowymi, a tabela cen aktualizuje się dynamicznie w czasie rzeczywistym.
 
-#### Krok 1: Skonfiguruj wariacje cen w swoich produktach
+#### Krok 1: Skonfiguruj wariacje cen w swoich produktach {#step-1-set-up-price-variations-on-your-products}
 
 Przed dodaniem pola Wybór okresu upewnij się, że Twoje produkty mają skonfigurowane wariacje cen. Przejdź do **Ultimate Multisite > Products**, edytuj produkt i przejdź do karty **Wariacje cen**, aby dodać alternatywne okresy rozliczeniowe (np. roczny w obniżonej cenie).
 
 ![Karta wariacji cen w produkcie](/img/config/product-price-variations-tab.png)
 
-#### Krok 2: Dodaj pole Wybór okresu do formularza checkoutu
+#### Krok 2: Dodaj pole Wybór okresu do formularza checkoutu {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Przejdź do **Ultimate Multisite > Checkout Forms** i edytuj swój formularz checkoutu.
 
@@ -163,13 +163,13 @@ Przed dodaniem pola Wybór okresu upewnij się, że Twoje produkty mają skonfig
 
 7. Kliknij **Zapisz pole**.
 
-#### Krok 3: Umieść pole nad tabelą cen
+#### Krok 3: Umieść pole nad tabelą cen {#step-3-position-the-field-above-the-pricing-table}
 
 Aby zapewnić najlepsze doświadczenie użytkownika, upewnij się, że pole Wybór okresu pojawia się **przed** polem Tabela cen w kroku checkoutu. Możesz przeciągać pola, aby zmienić ich kolejność w edytorze formularza checkoutu. Dzięki temu klienci najpierw wybierają okres rozliczeniowy, a następnie widzą ceny dla tego okresu.
 
 ![Edytor formularza checkoutu pokazujący kolejność pól](/img/config/checkout-form-editor-with-fields.png)
 
-#### Jak to działa na frontendzie
+#### Jak to działa na frontendzie {#how-it-works-on-the-frontend}
 
 Po skonfigurowaniu klienci odwiedzający Twoją stronę rejestracji zobaczą selektor okresu nad tabelą cen. Gdy klikną inny okres rozliczeniowy:
 
@@ -177,7 +177,7 @@ Po skonfigurowaniu klienci odwiedzający Twoją stronę rejestracji zobaczą sel
   * Jeśli **Wymuś różne okresy** jest wyłączone w polu Tabela cen, produkty bez wariacji ceny dla wybranego okresu zostaną ukryte.
   * Jeśli **Wymuś różne okresy** jest włączone, wszystkie produkty pozostaną widoczne, nawet jeśli nie mają wariacji dla wybranego okresu (pokażą swoją domyślną cenę).
 
-#### Wstępne wybieranie okresu rozliczeniowego przez URL
+#### Wstępne wybieranie okresu rozliczeniowego przez URL {#pre-selecting-a-billing-period-via-url}
 
 Możesz także wstępnie wybrać produkt i okres rozliczeniowy przez URL. Ultimate Multisite obsługuje następujące wzorce URL:
 
@@ -185,11 +185,11 @@ Możesz także wstępnie wybrać produkt i okres rozliczeniowy przez URL. Ultima
   * `/register/premium/12` — Wstępnie wybiera produkt i 12-miesięczny czas trwania
   * `/register/premium/1/year` — Wstępnie wybiera produkt z 1-rocznym czasem trwania
 
-### Pole wyboru szablonu
+### Pole wyboru szablonu {#the-template-selection-field}
 
 Pole **Wybór szablonu** pozwala klientom wybrać szablon witryny podczas checkoutu. Jest teraz domyślnie uwzględnione w szablonach formularza checkoutu **jednoetapowego** i **wieloetapowego** dodanych w Ultimate Multisite v2.6.1.
 
-#### Ręczne dodawanie pola
+#### Ręczne dodawanie pola {#adding-the-field-manually}
 
 Jeśli pracujesz z formularzem utworzonym przed v2.6.1 albo rozpoczętym od pustego szablonu:
 
@@ -200,11 +200,11 @@ Jeśli pracujesz z formularzem utworzonym przed v2.6.1 albo rozpoczętym od pust
    - **Etykieta** — Nagłówek, który klienci widzą nad siatką szablonów (np. „Wybierz szablon witryny”).
    - **Wymagane** — Określa, czy klienci muszą wybrać szablon przed przejściem dalej.
 
-#### Jak to działa
+#### Jak to działa {#how-it-works}
 
 Gdy klient wybierze szablon podczas checkoutu, Ultimate Multisite użyje go podczas udostępniania jego nowej witryny. Pokazywane szablony pochodzą z Twojej listy **Szablony witryn** (**Ultimate Multisite > Site Templates**). Widoczne są tutaj tylko szablony oznaczone jako dostępne dla klientów.
 
-### Domeny bazowe formularza checkoutu
+### Domeny bazowe formularza checkoutu {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 traktuje domeny skonfigurowane w polach **URL witryny** formularza checkoutu jako domeny bazowe sieci. Użyj ustawień dostępnych domen tego pola, gdy chcesz, aby klienci tworzyli witryny pod jedną lub większą liczbą współdzielonych domen rejestracyjnych, takich jak `example.com` i `sites.example.com`.
 
@@ -212,6 +212,6 @@ Współdzielone domeny bazowe formularza finalizacji zakupu nie są traktowane j
 
 Zachowaj domeny niestandardowe dla mapowanych hostów poszczególnych klientów, takich jak `customer-example.com`. Zachowaj domeny bazowe formularza finalizacji zakupu dla współdzielonych hostów rejestracji, z których może korzystać wiele witryn.
 
-#### Usuwanie pola
+#### Usuwanie pola {#removing-the-field}
 
 Jeśli nie oferujesz szablonów witryn, usuń pole Template Selection ze swojego formularza. Klienci otrzymają wtedy dowolny domyślny szablon skonfigurowany w **Ultimate Multisite > Settings > Site Templates**.

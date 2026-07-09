@@ -3,7 +3,7 @@ title: איך להתקין WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# כיצד מתקינים WordPress Multisite?
+# כיצד מתקינים WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite מאפשר לכם להפעיל רשת של אתרים על התקנה אחת. זוהי תכונה מובנית, אך היא אינה פעילה כברירת מחדל.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 לאחר מילוי השדות, לחצו על כפתור "הוסף אתר". לאחר יצירת תת-האתר החדש, גשו אליו כדי לוודא שהוא פועל כראוי.
 
-## בעיות נפוצות:
+## בעיות נפוצות: {#common-problems}
 
-### 1\. אני יכול ליצור אתרים חדשים אך לא ניתן לגשת אליהם.
+### 1\. אני יכול ליצור אתרים חדשים אך לא ניתן לגשת אליהם. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 אם בחרתם בתת-דומיינים, עליכם גם להגדיר תת-דומיינים כלליים (wildcard) עבור רשת ה-Multisite שלכם.
 

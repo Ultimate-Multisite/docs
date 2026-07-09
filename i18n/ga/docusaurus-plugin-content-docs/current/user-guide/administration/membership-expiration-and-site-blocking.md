@@ -3,11 +3,11 @@ title: An tairiscint an bhfáine agus an chloisteán an site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Déanachais agus Blocadh Site
+# Déanachais agus Blocadh Site {#membership-expiration-and-site-blocking}
 
 Linn téachais seo ainsíonn conas Ultimate Multisite déanann an t-aonacht deánacha, an deireadh trial agus blocadh site ar an chuid chéad. Tá sé ag cur isteach an seachtain deánach deánach ó actív go deiridh, na réiteach a bhfaidh an t-aonacht a cheannach chun an t-aonachtaí a bheith blocaithe, agus conas a fheiceáil ar chuid site a bheith ag cur isteach tar éis a thaispeáint an t-aonacht.
 
-## Seachtain Stáiste An T-aonacht
+## Seachtain Stáiste An T-aonacht {#membership-status-lifecycle}
 
 Tá aon stádas ag an t-aonacht i Ultimate Multisite:
 
@@ -24,7 +24,7 @@ Ní bhfaidh deánacha leibhéil a bheith blocaithe go dtí an t-aonachta a deiri
 | **Expired** | Déanadh an t-aonachta agus an t-amach deánach gan athrúcháin |
 | **Cancelled** | Bhloint go díreach de na custaiméar nó de na chláir |
 
-### Conas a bhíonn Deánacha ag Athrú chun Expired
+### Conas a bhíonn Deánacha ag Athrú chun Expired {#how-memberships-transition-to-expired}
 
 Déanann Ultimate Multisite chura chasaí ar chuid láifeartha **gach uair aon ora** a losnachann an t-aonachtaí a bheith mar expired. Dara chura seo a úsáideann [Action Scheduler](https://actionscheduler.org/) (ní WP-Cron go díreach) agus a thaispeáint ag cur isteach mar an action scheduled `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Tá **amach deánach leibhéil de 3 lá** ag cur isteach ar chuid foirme. Níl d
 An t-amhráid de 3 dláin (grace period) chun an t-amhráid de gráinne (grace period) de Bloc Frontend is sé mhór. An t-amhráid de gráinne a chiallaíonn conas **déimhin an stater** (status changes) ó active/on-hold go expired. An t-amhráid de gráinne de bloc frontend a chiallaíonn conas **bhaile an site blocked** tar éis lá tá an stater atá athrú.
 :::
 
-#### Miúcháin a thaispeánann (Auto-Renewing) vs. Miúcháin ní a thaispeánann (Non-Auto-Renewing)
+#### Miúcháin a thaispeánann (Auto-Renewing) vs. Miúcháin ní a thaispeánann (Non-Auto-Renewing) {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Is é seo an chuid is mór chun an chéad t-amhráid de gráinne a bheith ag iarraidh:
 
@@ -42,7 +42,7 @@ Is é seo an chuid is mór chun an chéad t-amhráid de gráinne a bheith ag iar
 
 - **Miúcháin a thaispeánann** (`auto_renew = true`): An chuid de chreideamh (cron expiration check) **tá sé anois an t-amhráid seo go léir**. Is é an chéad fáil (payment gateway, víseolas Stripe, PayPal, etc.) ag iarraidh a bheith ag cur iarrachtaí ar Ultimate Multisite tríd webhooks nuair a bhíonn an subscription ag déanamh cinnte nó ag teacht chun cinn. Má níl an webhook ag teacht -- mar gheall ar endpoint ó chomhartha bunaithe (misconfigured), deargadh an fáil, nó mar chóir an subscription ag déanamh cinnte an t-amhráid -- is féidir leis an miúchán a bheith `active` go léir tar éis láidir an t-amhráid de gráinne.
 
-### Conas a thaispeáintear na Triailí (Trials End)
+### Conas a thaispeáintear na Triailí (Trials End) {#how-trials-end}
 
 Nuair a dhéanann an triailí de chuid miúcháin triail (trialing membership), an comhthéacs:
 
@@ -52,11 +52,11 @@ Nuair a dhéanann an triailí de chuid miúcháin triail (trialing membership), 
 
 Tá an t-amhráid seo ag déanamh ar an amaran oíre (hourly schedule) mar atá an chéad t-amhráid de gráinne, ach **chúnaithe go léir le miúcháin ní a thaispeánann**. Do triailí a thaispeánann, tá an fáil ag cur iarrachtaí ar an athrú ó trial go subscription a bhuaidh.
 
-## Bloc an Fhothracha (Block Frontend Access)
+## Bloc an Fhothracha (Block Frontend Access) {#block-frontend-access}
 
 Goile, marabhar, nuair a bhfáid, máireamhail é **an t-dashboard wp-admin** an-chúramh beag chun an t-site publaic a bheith ar fáil do chontaitheoirí. Tá an frontend de chuid an t-site ar fáil go deo do chontaitheoirí. Mar éadúil, chun cur isteach ar fáil publaic hefyd, leat a bheith ag cur isteach ar fáil an cur chuig **Block Frontend Access**.
 
-### Cur Chuig an Setting
+### Cur Chuig an Setting {#configuring-the-setting}
 
 Go raibh tú ag cur isteach ar **Ultimate Multisite > Settings > Memberships** agus cur isteach ar fáil **Block Frontend Access**.
 
@@ -86,21 +86,21 @@ Nóta: Mar sin níl blocáil ar an frontend mar gheall ar an t-amhránaí trial.
 Nóta: Mar sin níl blocáil ar an t-amhránaí Cancelled mar gheall ar an periud grá. Is blocála gach chéad anois má tá an t-amhránaí atá ag teacht in aisiú, ag éile, níl curtha amháin Block Frontend Access ar. Níl an Periud Grá Blocáil ar an frontend ar an t-amhránaí Cancelled.
 :::
 
-## Troubleshooting: Sites a Bhíonn Ag Fhiontú tar éis an Déan
+## Troubleshooting: Sites a Bhíonn Ag Fhiontú tar éis an Déan {#what-visitors-see-when-a-site-is-blocked}
 
 Má tá siti ag teacht in aisiú tar éis a thaispeán an t-amhránaí, déan an churaí seo i ardán:
 
-### 1. Déan ar an t-amhránaí Block Frontend Access ar fáil
+### 1. Déan ar an t-amhránaí Block Frontend Access ar fáil {#what-gets-blocked-and-when}
 
 Go dtí **Ultimate Multisite > Settings > Memberships** agus féachaint ar an seachtain de **Block Frontend Access**, léiri go bhfuil sé ar fáil. Is é seo ar fáil **níl curtha amháin ar an t-amhránaí**, rud a bhíonn ag teacht in aisiú má tá an t-amhránaí ag teacht in aisiú.
 
-### 2. Déan ar an Periud Grá Blocáil ar an frontend
+### 2. Déan ar an Periud Grá Blocáil ar an frontend {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Ar an chúasán ar chomhchealaí seo, léigh an cur chuig an cur chuig **Frontend Block Grace Period**. Má tá sé setaithe ar 7 lá, dá fáil example, ní bheidh an frontend a bhí blocked go dtí 7 lá tar éis an t-aonachas an chomhchealaí – mar gheall ar an bhfuil an stát an chomhchealaí curte ag `expired` deara.
 
 Setigh é ar `0` má tá tú ag iarraidh blocadh céil féin tar éis a bhfáine an chomhchealaí ináim.
 
-### 3. Féachán an Stáit An Chomhchealaí a Changú Séan
+### 3. Féachán an Stáit An Chomhchealaí a Changú Séan {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Go dtí **Ultimate Multisite > Memberships** agus léigh an stát an chomhchealaí atá ar cheannas. Má tá sé ag tairiscint `active` gan láthairt an t-aonachas, níl mór an cur chuig a thaisrleitneamh. Caipteanna a bhíonn ag éifeachtú:
 
@@ -108,7 +108,7 @@ Go dtí **Ultimate Multisite > Memberships** agus léigh an stát an chomhcheala
 
 - **Níl an cron job ag éifeachtú**: Léigh an cur chuig seo a bhaint as an chéad cheangail.
 
-### 4. Féachán an Action Scheduler a Bhéid Ag Éifeachtú
+### 4. Féachán an Action Scheduler a Bhéid Ag Éifeachtú {#2-check-the-frontend-block-grace-period}
 
 Tá Action Scheduler a úsáid Ultimate Multisite chun na cron jobs. Go dtí **Tools > Scheduled Actions** i ndá chuid admin netwrí, léigh ar:
 
@@ -130,7 +130,7 @@ Le linn an tús a bheith ar chuid cron a bheith ag déanamh ar fáil, déan seac
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Déan ar an tús má tá treoir Gateway Webhook ag déanamh athfháil (Memberships a bheith ag athfháil go dtí)
+### 5. Déan ar an tús má tá treoir Gateway Webhook ag déanamh athfháil (Memberships a bheith ag athfháil go dtí) {#3-confirm-the-membership-status-has-actually-changed}
 
 Má tá an chuid athfháil ag athfháil agus má tá an subscription gateway caillte nó cúplaigh, ach tá Ultimate Multisite ag glacadh é mar `active`:
 
@@ -139,7 +139,7 @@ Má tá an chuid athfháil ag athfháil agus má tá an subscription gateway cai
 
 Má tá an gateway ag déanamh an subscription caillte ach níl Ultimate Multisite, is féidir leat an stáit membership a athrú go mhaith i **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Déan ar an tús má tá an t-amachas (Cron Level) ag déanamh fáil
+### 6. Déan ar an tús má tá an t-amachas (Cron Level) ag déanamh fáil {#4-verify-action-scheduler-is-running}
 
 Tá cur chun cinn cron ag cur isteach an t-amachas (default: 3 dínte) primaiste ach a bheith ag déanamh caillt ar chuid membership. Is é seo ag cur isteach ar an t-amachas frontend. An t-amastair go léir a bheith ag déanamh bloc ar an site leat is féidir leis an t-amastair a bheith ag déanamh:
 
@@ -147,7 +147,7 @@ Tá cur chun cinn cron ag cur isteach an t-amachas (default: 3 dínte) primaiste
 
 Mar é go leat, mar é go leat. Agus, leat, agus.
 
-### 7. Anailte an Múirtíocht Manually Expire a Membership
+### 7. Anailte an Múirtíocht Manually Expire a Membership {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Má tá tú ag iarraidh blocáil site go dtí an t-am, gan a bheith ag teacht ar an cron cycle, is féidir leat athrú an stát múirtíochta go mbeidh tú anailte:
 
@@ -158,7 +158,7 @@ Má tá tú ag iarraidh blocáil site go dtí an t-am, gan a bheith ag teacht ar
 
 Beidh blocáil an frontend ag teacht ar an curtha leathanach (ag curtha ar an t-am de bhfáthachas Blocála Frontend do múirtíochta a bheoilte, nó go dtí an am beag leat agat paraisteacha do múirtíochta ciallaite).
 
-## Samhraidh
+## Samhraidh {#6-check-the-expiration-grace-period-cron-level}
 
 An t-am lúthán ó láthairt múirtíochta go blocáil site:
 
@@ -190,7 +190,7 @@ Do chiallaiteach múirtíochta, tá an cur síneadh curtha:
   Tá an frontend site blocáilte go dtí an t-am
 ```
 
-## Reference do Déveltarai
+## Reference do Déveltarai {#7-manually-expire-a-membership}
 
 Céadfaidh na hook agus na filter a leagan seo a chur ar fáil duit athrú an cur síneadh agus an chuidBlocála:
 

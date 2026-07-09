@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM muudatuste logi
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM muudatuste logi
+# Ultimate AI Connector for WebLLM muudatuste logi {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versioon 1.1.0 — välja antud 2026-04-09
+## Versioon 1.1.0 — välja antud 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Uus: hõljuv vestlusvidin koos adminiriba olekunäidikuga — iga sisseloginud kasutaja saab brauseripoolsele LLM-ile otse esiosast viiba anda.
 * Uus: SharedWorker käituskeskkond — MLC mootor töötab nüüd SharedWorkeris, nii et mitu vahekaarti jagavad ühte GPU seanssi selle pärast võitlemise asemel.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Parandus: ühenda WebLLM filtriga wpai_preferred_text_models, et AI Experiments funktsioon suunaks brauserimootorisse, kui mudel on seadistatud.
 * Täiustatud: vahemäluvältimine, sisu normaliseerimine ja riistvaraviidete parandused, mis ilmnesid otsast lõpuni testimise käigus.
 
-## Versioon 1.0.0 — esmane väljalase
+## Versioon 1.0.0 — esmane väljalase {#version-100--initial-release}

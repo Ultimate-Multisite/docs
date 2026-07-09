@@ -3,25 +3,25 @@ title: CyberPanel Integrasie
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integrasie
+# CyberPanel Integrasie {#cyberpanel-integration}
 
 Hierdie gids verduidelik hoe om die Ultimate Multisite CyberPanel-integrasie te konfigureer sodat gemapte domeine in jou netwerk outomaties bygevoeg (en verwyder) word as virtuele werwe (virtual hosts) in CyberPanel, met opsionele outomatiese SSL-voorsiening via Let's Encrypt.
 
-## Wat Dit Doen
+## Wat Dit Doen {#what-it-does}
 
 - Wanneer 'n domein in Ultimate Multisite gemap word, roep die integrasie die CyberPanel API aan om 'n virtuele werwe vir daardie domein te skep.
 - Wanneer 'n domeinmapping verwyder word, roep die integrasie die API aan om die ooreenstemmende virtuele werwe te verwyder.
 - Wanneer outomatiese SSL ingskakel is, trig die integrasie die uitreiking van 'n Let's Encrypt-sertifika onmiddellik nadat die virtuele werwe geskep is.
 - Voeg opsioneel die `www.` alias by/verwyder, afhangende van jou "Auto-create www subdomain" instelling in die Domain Mapping-instellings.
 
-## Voorvereistes
+## Voorvereistes {#prerequisites}
 
 - 'n Werks CyberPanel-instansie (v2.3 of later word aanbeveel) wat bereikbaar is vanaf jou WordPress-bedrywer.
 - 'n Bestaande webwerf in CyberPanel wat reeds jou WordPress-netwerkroot bedien. Die integrasie heg nuwe virtuele werwe aan hierdie bedrywer.
 - CyberPanel API-toegang is ingeskakel. Die outentisering gebruik jou CyberPanel-admingebruiker en wagwoord.
 - Jou DNS-rekords vir gemapte domeine moet reeds na jou bedrywer se IP-adres wys voordat outomatiese SSL 'n geldige sertifika kan uitreik.
 
-## Vereistes
+## Vereistes {#requirements}
 
 Die volgende konstantes moet in jou `wp-config.php` lêer gedefinieer word:
 
@@ -40,15 +40,15 @@ define('WU_CYBERPANEL_PHP_VERSION', 'PHP 8.2');  // Standaard: PHP 8.2
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com'); // Gebruik vir SSL-sertifika kontak
 ```
 
-## Opstel Instruksies
+## Opstel Instruksies {#setup-instructions}
 
-### 1. Skakel die CyberPanel API In
+### 1. Skakel die CyberPanel API In {#1-enable-the-cyberpanel-api}
 
 1. Log in op jou CyberPanel-dashboard as 'n administrateur.
 2. Gaan na **Security** > **SSL** en bevestig dat SSL aktief is op die CyberPanel-koppelvlak self (vereistes vir veilige API-aanroepe).
 3. Die CyberPanel API is standaard beskikbaar by `https://your-server-ip:8090/api/`. Geen bykomende stappe is nodig om dit in te skakel — dit is standaard aan vir admin-gebruikers.
 
-### 2. Voeg Konstantes by tot wp-config.php
+### 2. Voeg Konstantes by tot wp-config.php {#2-add-constants-to-wp-configphp}
 
 Voeg die volgende konstantes by tot jou `wp-config.php` lêer voordat die `/* That's all, stop editing! */` lyn:
 
@@ -66,7 +66,7 @@ define('WU_CYBERPANEL_AUTO_SSL', true);
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 ```
 
-### 3. Skakel die Integrasie In
+### 3. Skakel die Integrasie In {#3-enable-the-integration}
 
 1. In jou WordPress-netwerk-admin, gaan na **Ultimate Multisite** > **Settings**.
 2. Navigeer na die **Domain Mapping** tab.
@@ -74,7 +74,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 4. Skakel die **CyberPanel** integrasie in.
 5. Klik op **Save Changes**.
 
-### 4. Verifieer Verbinding
+### 4. Verifieer Verbinding {#4-verify-connectivity}
 
 Gebruik die ingeboude verbindingsproef in die instellingswonder:
 
@@ -82,9 +82,9 @@ Gebruik die ingeboude verbindingsproef in die instellingswonder:
 2. Klik op **Test Connection**.
 3. 'n Suksesboodskap bevestig dat die plugin die CyberPanel API kan bereik en korrek kan outentiseer.
 
-## Hoe Dit Werk
+## Hoe Dit Werk {#how-it-works}
 
-### Domeinmapping
+### Domeinmapping {#domain-mapping}
 
 Wanneer 'n domein in Ultimate Multisite gemap word:
 
@@ -93,7 +93,7 @@ Wanneer 'n domein in Ultimate Multisite gemap word:
 3. Die dokumentroot word ingestel om na jou WordPress-netwerkroot-direktorie te wys.
 4. Wanneer die domeinmapping verwyder word, roep die integrasie `/api/deleteWebsite` aan om die virtuele werwe op te ruim.
 
-### Outomatiese SSL
+### Outomatiese SSL {#auto-ssl}
 
 Wanneer `WU_CYBERPANEL_AUTO_SSL` `true` is:
 
@@ -103,11 +103,11 @@ Wanneer `WU_CYBERPANEL_AUTO_SSL` `true` is:
 
 > **Belangrik:** DNS moet ten volle gepropageer wees na jou bedrywer se IP-adres voordat Let's Encrypt die domein kan valideer. As SSL-uitreiking onmiddellik na mapping misluk, wag vir DNS-propagasie en trig SSL weer vanaf die CyberPanel-dashboard onder **SSL** > **Manage SSL**.
 
-### www Subdomein
+### www Subdomein {#www-subdomain}
 
 As **Auto-create www subdomain** in jou Domain Mapping-instellings ingeskakel is, skep die integrasie ook 'n virtuele werwe-alias vir `www.<domein>` en, wanneer outomatiese SSL aan is, skakel 'n sertifika uit wat beide die apex en www-variante dek.
 
-### E-pos Omleiding (Email Forwarders)
+### E-pos Omleiding (Email Forwarders) {#email-forwarders}
 
 Wanneer die [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) addon aktief is, kan CyberPanel ook kliënt-e-posomleiding (email forwarders) verskaf. Omleiding stuur boodskappe van 'n domeinadres na 'n ander inligskas sonder om 'n volledige posbus te skep, wat nuttig is vir aliases soos `info@customer-domain.test` of `support@customer-domain.test`.
 
@@ -120,7 +120,7 @@ Voordat jy omleiding vir kliënte inskakel:
 
 Indien die skep van die omleiding misluk, kyk eers na die Ultimate Multisite-aktiwiteitslogboeke, en bevestig dan in CyberPanel dat die brondomein bestaan en dat die API-gebruiker e-posbestuur-verhasilgewings het.
 
-## Konfigurasie Verwysing
+## Konfigurasie Verwysing {#configuration-reference}
 
 | Konstante | Vereis | Standaard | Beskrywing |
 |---|---|---|---|
@@ -132,7 +132,7 @@ Indien die skep van die omleiding misluk, kyk eers na die Ultimate Multisite-akt
 | `WU_CYBERPANEL_PHP_VERSION` | Nee | `PHP 8.2` | PHP-weergawe vir nuwe virtuele werwe (moet ooreenstem met 'n weergawe wat in CyberPanel geïnstalleer is) |
 | `WU_CYBERPANEL_EMAIL` | Nee | — | Kontak-e-pos vir SSL-sertifika registrasie |
 
-## Belangrike Notas
+## Belangrike Notas {#important-notes}
 
 - CyberPanel se API gebruik sessiegebaseerde token-outentisering. Die integrasie hanteer token-verkryging outomaties by elke API-aanroep.
 - Jou CyberPanel admin-rekening moet verhasilgewings hê om webwerwe te skep en te verwyder.
@@ -140,33 +140,33 @@ Indien die skep van die omleiding misluk, kyk eers na die Ultimate Multisite-akt
 - Die integrasie bestuur nie DNS-rekords nie. Jy moet die domein DNS na jou bedrywer se IP-adres wys voordat jy die domein in Ultimate Multisite mak.
 - As jy OpenLiteSpeed (OLS) gebruik, word 'n graasvolle herstart outomaties getrigger na virtuele werwe-veranderinge. Geen handmatige ingryping is nodig nie.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### API Verbinding Geneem
+### API Verbinding Geneem {#api-connection-refused}
 
 - Bevestig dat poort `8090` oop is in jou bedrywer se firewall.
 - Bevestig dat die `WU_CYBERPANEL_HOST` waarde die korrekte protokol (`https://`) en poort insluit.
 - Kontroleer of jou CyberPanel SSL-sertifika geldig is; self-gesigneerde sertifikate kan TLS-verifikasiefoute veroorsaak. Stel `WU_CYBERPANEL_VERIFY_SSL` op `false` slegs in betroubare private netwerkomgewings.
 
-### Outentiseringsfoute
+### Outentiseringsfoute {#authentication-errors}
 
 - Bevestig dat jou `WU_CYBERPANEL_USERNAME` en `WU_CYBERPANEL_PASSWORD` korrek is deur direk in CyberPanel aan te meld.
 - CyberPanel sluit rekeninge na herhaalde mislukte aanmeldpogings. Kontroleer **Security** > **Brute Force Monitor** in CyberPanel indien blokkering plaasvind.
 
-### Domein Nie Geskep Nie
+### Domein Nie Geskep Nie {#domain-not-created}
 
 - Kontroleer die Ultimate Multisite-aktiwiteitslogboek (**Ultimate Multisite** > **Activity Logs**) vir API-foutboodskappe.
 - Bevestig dat die pakket wat in `WU_CYBERPANEL_PACKAGE` gedefinieer is, in CyberPanel bestaan (**Packages** > **List Packages**).
 - Verseker dat die domein nie reeds as 'n webwerf in CyberPanel geregistreer is nie — dubbele webwerfskepsel keer 'n fout terug.
 
-### SSL Sertifikaat Nie Uitgereik Nie
+### SSL Sertifikaat Nie Uitgereik Nie {#ssl-certificate-not-issued}
 
 - Bevestig dat DNS ten volle gepropageer is: `dig +short your-domain.com` moet jou bedrywer se IP teruggee.
 - Let's Encrypt handhaaf beperkings op tempo. As jy onlangs verskeie sertifikate vir dieselfde domein uitgereik het, wag voordat jy probeer.
 - Kontroleer die CyberPanel SSL-logboeke onder **Logs** > **Error Logs** vir besonderhede oor sertifikaatuitreikingsfoute.
 - As 'n alternatief, kan jy SSL handmatig van CyberPanel uitreik: **SSL** > **Manage SSL** > kies die domein > **Issue SSL**.
 
-## Verwysings
+## Verwysings {#references}
 
 - CyberPanel API Dokumentasie: https://docs.cyberpanel.net/docs/category/api
 - CyberPanel SSL Bestuur: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

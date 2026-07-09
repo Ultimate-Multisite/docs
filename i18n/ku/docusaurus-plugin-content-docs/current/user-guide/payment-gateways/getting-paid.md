@@ -3,13 +3,13 @@ title: Pere wergirtin
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Pere wergirtin (v2)
+# Pere wergirtin (v2) {#getting-paid-v2}
 
 _**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x ye.**_
 
 Ultimate Multisite xwedî pergala endametî û fatûrekirinê ya çêkirî ye. Ji bo ku pergala me ya fatûrekirinê bixebite, me dergehên dravdanê yên herî gelemperî ku di e-commerce de têne bikaranîn yek kirine. Dergehên dravdanê yên standard di Ultimate Multisite de _Stripe_ , _PayPal_ , û Tezmînata Destî ne. Her wiha tu dikarî _WooCommerce_ , _GoCardless_ û _Payfast_ jî bi sazkirina pêvekên wan ên taybet ji bo wergirtina dravdanan bikar bînî.
 
-## Mîhengên bingehîn
+## Mîhengên bingehîn {#basic-settings}
 
 Tu dikarî her yek ji van dergehên dravdanê di bin mîhengên dravdanê yên Ultimate Multisite de saz bikî. Tu dikarî wê bi çûna **menuya Ultimate Multisite > Mîheng > Dravdan** bibînî.
 
@@ -39,7 +39,7 @@ Ev asteng dike ku endametî wekî xweber tê nûkirin xuya bibe dema ku dergeh t
 
 <!-- Wêneşan tune ye: Zeviyên hejmara fatûreya din û pêşgira hejmara fatûreyê dema ku Hejmara Li Pey Hev hat hilbijartin têne nîşandan -->
 
-## Dergeh li ku têne dîtin:
+## Dergeh li ku têne dîtin: {#where-to-find-the-gateways}
 
 Tu dikarî dergehên dravdanê li ser heman rûpelê saz bikî ( **Ultimate Multisite > Mîheng > Dravdan**). Rast li jêr **dergehên dravdanê yên çalak** , tu dê bikaribî bibînî: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ û _Destî_.
 
@@ -67,7 +67,7 @@ Her wiha ev jî dîtina tevahî ya mîhengên dergehên dravdanê ye:
 
 Niha, heke tu bixwazî _WooCommerce_ , _GoCardless_ an _Payfast_ wekî dergehê xwe yê dravdanê bikar bînî, divê tu **pêvekên wan saz û mîheng bikî**.
 
-### Çawa pêveka WooCommerce saz bikî:
+### Çawa pêveka WooCommerce saz bikî: {#how-to-install-the-woocommerce-add-on}
 
 Em fam dikin ku _Stripe_ û _PayPal_ li hin welatan tune ne, û ev bikarhênerên Ultimate Multisite sînordar dike an rê li ber bikaranîna bi bandor a plugin-a me digire. Ji ber vê yekê me pêvekek çêkir da ku _WooCommerce,_ yek bikin; ew plugin-ek e-commerce ya pir populer e. Pêşdebirên li seranserê cîhanê pêvek çêkirine da ku dergehên dravdanê yên cuda bi wê re yek bikin. Me ji vê sûd wergirt da ku dergehên dravdanê yên ku tu dikarî bi pergala fatûrekirinê ya Ultimate Multisite bikar bînî berfireh bikin.
 
@@ -95,7 +95,7 @@ Piştî çalakkirina wê, heke hîn jî pêveka WooCommerce li ser malpera te ne
 
 Ji bo zêdetir xwendinê derbarê pêveka WooCommerce Integration de, **li vir bitikîne**.
 
-### Çawa pêveka GoCardless saz bikî:
+### Çawa pêveka GoCardless saz bikî: {#how-to-install-the-gocardless-add-on}
 
 Gavên sazkirina pêveka _GoCardless_ hema hema wekî pêveka _WooCommerce_ ne. Ji kerema xwe biçin rûpela pêvekan û pêveka **Ultimate Multisite: GoCardless Gateway** hilbijêrin.
 
@@ -111,7 +111,7 @@ Piştî ku sazkirin qediya, tu dê vegerî rûpela pêvekan. Li vir, tenê li **
 
 Ji bo fêrbûnê ka çawa bi dergeha _GoCardless_ dest pê bikî, **vê gotarê bixwîne**.
 
-### Çawa pêveka Payfast saz bikî:
+### Çawa pêveka Payfast saz bikî: {#how-to-install-the-payfast-add-on}
 
 Biçe rûpela pêvekan û pêveka **Ultimate Multisite: Payfast Gateway** hilbijêre.
 

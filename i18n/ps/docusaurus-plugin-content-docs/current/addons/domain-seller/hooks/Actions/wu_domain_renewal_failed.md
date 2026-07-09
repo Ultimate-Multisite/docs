@@ -4,11 +4,11 @@ title: کړنه - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed
+# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 د domain د نوې کولو د هڅې له ناکامېدو وروسته چلېږي.
 
-## پاراميټرونه
+## پاراميټرونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bff3fd7903485780766e490300546070
 | $renewal_data | `array&lt;string,mixed&gt;` | د نوې کولو metadata (domain_name، years، او نور). |
 | $error_message | `string` | د registrar له خوا د انسان لپاره د لوستلو وړ د تېروتنې پیغام. |
 
-### له
+### له {#since}
 
 - 2.0.0
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) کې په 630 کرښه تعریف شوی.

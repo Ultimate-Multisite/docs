@@ -3,13 +3,13 @@ title: Тусламжийн тасалбаруудын өөрчлөлтийн б
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support Tickets өөрчлөлтийн бүртгэл
+# Support Tickets өөрчлөлтийн бүртгэл {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Сайжруулсан: vendor/ санг Git хяналтаас хассан (.gitignore-д аль хэдийн хамрагдсан), ингэснээр repository хэмжээ багассан
 * Сайжруулсан: WordPress 7.0 хүртэл туршсан
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Засвар: Nullable ticket model setters-д null утгуудыг зөвшөөрсөн
 * Засвар: Multisite дэмжлэгийг зөв хангахын тулд бүх ticket-үүдийг global network-wide хүснэгтүүдэд хадгалдаг болгосон
 * Засвар: Staff талбаруудыг нууж, хэрэглэгчийн шинэ ticket маягт дээрх хоосон хуудас руу redirect хийхийг зассан
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Сайжруулсан: Frontend assets-ийг зөвхөн support ticket хуудсууд дээр нөхцөлтэйгөөр ачаалдаг болгосон
 * Сайжруулсан: Bedrock root autoloader dependencies-ийг аль хэдийн ачаалсан үед plugin autoloader-ийг алгасдаг болгосон
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Нэмсэн: Admin болон frontend-д зориулсан ticket бүрэн үзэх ажиллагаа
 * Нэмсэн: Ticket reply илгээхэд зориулсан AJAX handler
 * Нэмсэн: Зөв form handling бүхий ticket reply ажиллагааны дэмжлэг
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Сайжруулсан: Responses болон attachments-д зориулсан зөв query болон schema classes бүхий database structure
 * Сайжруулсан: Ticket models-д attributes-ийн оронд жинхэнэ properties руу migration хийсэн
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Шинэчилсэн: Тогтвортой байдлын үүднээс prefix-ийг ultimate-multisite болгож өөрчилсөн
 * Шинэчилсэн: Text domain standardization
 * Зассан: Жижиг bug fixes болон improvements
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Анхны хувилбар
 * Бүрэн ticket management system
 * Олон түвшний access control

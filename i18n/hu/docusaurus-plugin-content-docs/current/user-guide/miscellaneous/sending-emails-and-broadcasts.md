@@ -3,13 +3,13 @@ title: E-mailek és körlevelek küldése
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-mailek és Broadcasts küldése (v2)
+# E-mailek és Broadcasts küldése (v2) {#sending-emails-and-broadcasts-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
 Az Ultimate Multisite olyan funkcióval érkezik, amely lehetővé teszi, hogy kommunikálj az ügyfeleiddel úgy, hogy e-mailt küldesz egy célzott felhasználónak vagy felhasználói csoportnak, valamint értesítéseket küldesz az admin dashboardjukra bejelentések közvetítéséhez
 
-## Admin értesítések hozzáadása az ügyfeleid dashboardjához Broadcasts segítségével
+## Admin értesítések hozzáadása az ügyfeleid dashboardjához Broadcasts segítségével {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Az Ultimate Multisite broadcast funkciójával **admin értesítéseket** adhatsz hozzá a felhasználód aloldalának admin dashboardjához.
 
@@ -51,7 +51,7 @@ Az üzeneted létrehozása után megnyomhatod a **Send** gombot.
 
 És ennyi. Az admin értesítésnek azonnal meg kell jelennie a felhasználód dashboardján.
 
-## E-mailek küldése az ügyfeleidnek
+## E-mailek küldése az ügyfeleidnek {#send-emails-to-your-customers}
 
 Az Ultimate Multisite broadcast funkciójával e-mailt küldhetsz a felhasználóidnak. Lehetőséged van arra, hogy az e-mailt csak meghatározott felhasználóknak küldd el, vagy egy konkrét felhasználói csoportot célozz meg az alapján, hogy melyik termékre vagy planra vannak előfizetve.
 
@@ -81,11 +81,11 @@ Az üzeneted létrehozása után megnyomhatod a **Send** gombot.
 
 És ilyen egyszerű e-mailt küldeni a végfelhasználóidnak a broadcast funkció használatával.
 
-## Rendszer e-mailek
+## Rendszer e-mailek {#system-emails}
 
 Az Ultimate Multisite rendszer e-mailjei azok az **automatikus értesítések**, amelyeket a rendszer küld bizonyos műveletek után, például regisztráció, fizetés, domain-leképezés stb. Ezek az e-mailek szerkeszthetők vagy módosíthatók az Ultimate Multisite beállításaiból. Emellett olyan funkcióval is rendelkezik, amely lehetővé teszi a meglévő beállítások visszaállítását és importálását egy másik Ultimate Multisite telepítésből.
 
-### Visszaállítás és importálás
+### Visszaállítás és importálás {#resetting--importing}
 
 Az új Ultimate Multisite verziók, valamint a kiegészítők időről időre új e-maileket regisztrálhatnak és regisztrálni is fognak.
 
@@ -93,7 +93,7 @@ Az ütközések és más problémák elkerülése érdekében **nem adjuk hozzá
 
 A super adminok és ügynökök azonban importálhatják ezeket az újonnan regisztrált e-maileket az importáló eszközzel. Ez a folyamat új rendszer e-mailt hoz létre az új e-mail sablon tartalmával és konfigurációjával, lehetővé téve a super admin számára, hogy elvégezze a kívánt módosításokat, vagy változatlanul megtartsa őket.
 
-#### Rendszer e-mailek importálása
+#### Rendszer e-mailek importálása {#how-to-import-system-emails}
 
 Lépj az Ultimate Multisite Settings oldaladra, és menj az **Emails** fülre.
 
@@ -111,7 +111,7 @@ Ezután bekapcsolhatod az Import Emails opciókat, hogy lásd, mely rendszer e-m
 
 <!-- Képernyőkép nem érhető el: Visszaállítás és importálás modális ablak kibontott E-mailek importálása beállításokkal -->
 
-#### Rendszer e-mailek visszaállítása
+#### Rendszer e-mailek visszaállítása {#reseting-system-emails}
 
 Máskor előfordulhat, hogy rájössz: az adott e-mail sablonon végzett módosítások már nem megfelelőek számodra, és szeretnéd visszaállítani az **alapértelmezett állapotára**.
 

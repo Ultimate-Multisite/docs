@@ -3,7 +3,7 @@ title: GoCardless 변경 로그
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless 변경 로그
+# GoCardless 변경 로그 {#gocardless-changelog}
 
 버전: 1.0.3 - 2026-05-05에 릴리스됨
 * 수정: GoCardless 멤버십이 대기 중 또는 보류 상태에서 취소될 때 고아 상태의 대기 중 사이트가 이제 정리됩니다

@@ -3,7 +3,7 @@ title: Napaka datoteke Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Napaka napaka težava pri namestitvi Sunrise fajla
+# Napaka napaka težava pri namestitvi Sunrise fajla {#error-installing-the-sunrise-file}
 
 Fail `sunrise.php` je poseben fajl, ki ga WordPress preverja med samostavskimi postopi (bootstrapping). Da bi WordPress mogel prepoznati `sunrise.php` fail, mora biti nahojen v **folderu wp-content**.
 

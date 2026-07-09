@@ -3,11 +3,11 @@ title: Mavhiki ekupedzisira ku Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flow yaKuti Kune Theme Builder
+# Flow yaKuti Kune Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 inoratira **Theme Builder onboarding flow** inotora nzira yakagadzirwa inotenderera kuti ndikubatsire kuita theme custom chakanaka panguva unenge uri kuitanisa. Izvi zvinobata chine Site Builder mode ya zamu, zvichipa uye chinoratidza nzira yakagadzirwa nekuita zvikonzero dzakubatsirwa neagent.
 
-## Theme Builder Onboarding Flow Ichi Chi?
+## Theme Builder Onboarding Flow Ichi Chi? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow ndiyo wizard inotenderera kuti:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow ndiyo wizard inotenderera kuti:
 
 Flow iyi inobatsirwa ne**Setup Assistant agent**, inotora maonero ekutanga uye inogadzira theme yako zvichapfiri.
 
-## Kufamba Kuita Theme Builder Onboarding
+## Kufamba Kuita Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Setup ya Chinhu Chitungamukira (First-Run Setup)
+### Setup ya Chinhu Chitungamukira (First-Run Setup) {#first-run-setup}
 
 Kana uri kuitanisa Superdav AI Agent panguva unenge uri kuita WordPress wechinhu chinobva, uchaona:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Chine **"Build a custom theme"** kuti uingire Theme Builder onboarding flow.
 
-### Kufamba NeKutanga (Manual Activation)
+### Kufamba NeKutanga (Manual Activation) {#manual-activation}
 
 Unogona kuitangura Theme Builder onboarding panguva yakanaka nekuita:
 
@@ -49,9 +49,9 @@ kana
 "Help me create a custom theme"
 ```
 
-## Steps ya Onboarding
+## Steps ya Onboarding {#the-onboarding-steps}
 
-### Step 1: Kuchinjira Mode (Mode Selection)
+### Step 1: Kuchinjira Mode (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent inoda kunzwisisa chako:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** inoratidzorwa kune vanhu vashoma; agent inopa zvinoreva kuita design nekuti unoda uye zvakakosha dzako.
 
-### Step 2: Kuratidza Zvinoreva Site (Site Specification)
+### Step 2: Kuratidza Zvinoreva Site (Site Specification) {#step-2-site-specification}
 
 Uchazvigadzirwa nezve site yako:
 
@@ -74,7 +74,7 @@ Uchazvigadzirwa nezve site yako:
 
 Nequru iyi inotorekerwa mu memory ya **site_brief** yako, inozivikanwa na agents mu sessions dzine kuenda mberi.
 
-### Step 3: Zvibvunzo zveDesign System
+### Step 3: Zvibvunzo zveDesign System {#step-3-design-system-decisions}
 
 Agent ineita kutaura nezvechokwadi chedesign tokens (zvinoreva zvinhu zvinotorekerwa):
 
@@ -83,7 +83,7 @@ Agent ineita kutaura nezvechokwadi chedesign tokens (zvinoreva zvinhu zvinotorek
 - **Spacing**: Layouts dzakakwana, dzinogona, kana dzine matareku.
 - **Motion**: Animations uye transitions (kana unoda).
 
-### Step 4: Kuita Theme Generation
+### Step 4: Kuita Theme Generation {#step-4-theme-generation}
 
 Setup Assistant agent inokupa chivimbo checustom block theme ne:
 
@@ -92,7 +92,7 @@ Setup Assistant agent inokupa chivimbo checustom block theme ne:
 - Custom block styles dzine kugona kunge dzichingana nedesign system yako
 - Metadata ya theme uye zvinoreva kuti WordPress inokubatsira
 
-### Step 5: Kuita Activation uye Verification
+### Step 5: Kuita Activation uye Verification {#step-5-activation-and-verification}
 
 Theme inogadzirwa nekuti inotora automatically, uye uchaona izvi:
 
@@ -107,7 +107,7 @@ Theme inogadzirwa nekuti inotora automatically, uye uchaona izvi:
 
 Uchipa nguva uyu kuenda munzvimbo yako kuti uone theme inoratidza zvakanaka.
 
-## Site Specification uye Memory ya site_brief
+## Site Specification uye Memory ya site_brief {#site-specification-and-sitebrief-memory}
 
 Panguva ya kune onboarding, agent inagadzira specification ya site yako mu category ya **site_brief** memory. Izvi zvinosanganisira:
 
@@ -117,11 +117,11 @@ Panguva ya kune onboarding, agent inagadzira specification ya site yako mu categ
 - Zvibvunzo zvedesign
 - Structure ya content
 
-### Ndiwo chii site_brief chinotorekerwa?
+### Ndiwo chii site_brief chinotorekerwa? {#why-sitebrief-matters}
 
 Mu sessions dzine kuenda mberi, agents inotorekerwa mu site_brief yako kuti:
 
-### Kuona Site Brief yako
+### Kuona Site Brief yako {#viewing-your-sitebrief}
 
 Unogona kuomba kwa ajili ya agent:
 
@@ -137,11 +137,11 @@ au
 
 Agent idziweleka specification yako ya site iliyohifadhiwa.
 
-## Kurekebisha Baada ya Kuunduliwa (Onboarding)
+## Kurekebisha Baada ya Kuunduliwa (Onboarding) {#customizing-after-onboarding}
 
 Baada ya kukamilika onboarding ya Theme Builder, unogona:
 
-### Kutumia Ujuzi wa Aesthetics wa Design System
+### Kutumia Ujuzi wa Aesthetics wa Design System {#use-the-design-system-aesthetics-skill}
 
 Omba marekebisho ya muonekano:
 
@@ -157,7 +157,7 @@ au
 
 **Design System Aesthetics skill** idziweleka wewe kupitia marekebisho madogo ya muonekano.
 
-### Kuhariri theme.json Moja kwa Moja
+### Kuhariri theme.json Moja kwa Moja {#edit-themejson-directly}
 
 Kwa watumiaji wenye ujuzi zaidi, hariri `/wp-content/themes/[theme-name]/theme.json` ili kubadilisha:
 
@@ -166,7 +166,7 @@ Kwa watumiaji wenye ujuzi zaidi, hariri `/wp-content/themes/[theme-name]/theme.j
 - Spacing values (viwango vya nafasi)
 - Border and shadow definitions (maelezo ya mipaka na kivuli)
 
-### Kuunda Custom Block Templates
+### Kuunda Custom Block Templates {#create-custom-block-templates}
 
 Tumia WordPress block editor kuunda templates maalum kwa ajili ya:
 
@@ -175,7 +175,7 @@ Tumia WordPress block editor kuunda templates maalum kwa ajili ya:
 - Product pages (kurasa za bidhaa)
 - Contact forms (fomu za mawasiliano)
 
-## Ulinganisho: Zamani dhidi ya Mpya Onboarding
+## Ulinganisho: Zamani dhidi ya Mpya Onboarding {#comparison-old-vs-new-onboarding}
 
 | Kipengele | Site Builder (Zamani) | Theme Builder (Mpya) |
 |---------|----------------------|-------------------|
@@ -184,7 +184,7 @@ Tumia WordPress block editor kuunda templates maalum kwa ajili ya:
 | Design tokens | Kuandika kwa mkono | Maamuzi yanayongozwa |
 | Urahisi (Flexibility) | Chaguo za kubaki | Kubadilika
 
-### Matatizo Yanayoweza Kutokea (Troubleshooting)
+### Matatizo Yanayoweza Kutokea (Troubleshooting) {#troubleshooting}
 
 **Onboarding haukamiliki**
 - Rudisha mchakato: "Start the Theme Builder onboarding"
@@ -201,7 +201,7 @@ Tumia WordPress block editor kuunda templates maalum kwa ajili ya:
 - Chika kwa agent kuti "regenerate the theme with [specific changes]" (kugadzirisa theme ne[matanho anokudzidzera])
 - Edit theme.json nekugadzirisa zvakare kune chokwadi
 
-## Zvinhu Zvinotevera (Next Steps)
+## Zvinhu Zvinotevera (Next Steps) {#next-steps}
 
 Panguva uyuwo wakanza onboarding we Theme Builder:
 

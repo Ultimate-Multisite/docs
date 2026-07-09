@@ -3,7 +3,7 @@ title: Keelevalija muudatuste logi
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Keelevalija muudatuste logi
+# Keelevalija muudatuste logi {#language-selector-changelog}
 
 Versioon: 1.1.3 - Avaldatud 2026-05-05
 * Parandus: sisendmuutujad puhastatakse nüüd ja kohandatud hook'ide nimedele lisatakse prefiks, et vältida konflikte kolmanda osapoole pistikprogrammidega

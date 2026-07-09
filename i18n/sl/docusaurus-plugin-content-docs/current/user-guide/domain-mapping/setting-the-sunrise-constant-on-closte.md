@@ -3,13 +3,13 @@ title: Ustavitev konconstante Sunrise na Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Ustavitev konstante Sunrise na true v Closte
+# Ustavitev konstante Sunrise na true v Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Nekateri host provideri zaključujejo datoteko `wp-config.php` iz razlogov varnosti. To pomeni, da ne morete Ultimate Multisite samodejno urediti datoteke in dodati potrebne konconstante za delovanje mapiranja domen in drugih funkcij. Closte je en takšen host.
 
 Vendar ponuja Closte način, kako lahko varno dodate konconstante do `wp-config.php`. Samo morate slediti naslednjim korakom:
 
-## Na dashboardu Closte
+## Na dashboardu Closte {#on-the-closte-dashboard}
 
 Preden začnete, [vpišite se na svoj račun Closte](https://app.closte.com/), kliknite na meni Sites, nato pa kliknite na povezavo Dashboard na strani, na kateri trenutno delate:
 

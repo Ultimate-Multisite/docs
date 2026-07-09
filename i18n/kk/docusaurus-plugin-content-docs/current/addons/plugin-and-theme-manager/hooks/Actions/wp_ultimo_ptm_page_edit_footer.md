@@ -4,20 +4,20 @@ title: Әрекет - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# Әрекет: wp_ultimo_ptm_page_edit_footer
+# Әрекет: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
 
 Плагин әзірлеушілеріне беттің төменгі жағына скрипттер қосуға мүмкіндік береді
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
 | $ | `object` | Ақпаратты сақтайтын объект |
 | $ | `\WU_Page` | Multisite Ultimate Page данасы |
 
-### Нұсқасынан бастап
+### Нұсқасынан бастап {#since}
 
 - 1.8.2
-### Дереккөз
+### Дереккөз {#source}
 
 [`views/base/edit.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/edit.php#L228) ішінде 228-жолда анықталған

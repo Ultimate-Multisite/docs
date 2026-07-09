@@ -3,15 +3,15 @@ title: 'Palajaran 8: Ngawanohkeun Palanggan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Palajaran 8: Ngawanohkeun Palanggan Anyar
+# Palajaran 8: Ngawanohkeun Palanggan Anyar {#lesson-8-customer-onboarding}
 
 Meunangkeun palanggan pikeun daptar téh ngan satengah pagawéan. Lamun maranéhna asup, ngarasa kawalahan, terus teu balik deui, anjeun geus kaleungitan maranéhna. Palajaran ieu ngarancang pangalaman anu ngarobah daptaran anyar jadi palanggan anu aktif jeung kalibet.
 
-## Di Mana Urang Eureun
+## Di Mana Urang Eureun {#where-we-left-off}
 
 FitSite geus pinuh boga merek kalayan alur checkout anu jalan. Ayeuna urang museurkeun kana naon anu kajadian sanggeus nu boga studio kabugaran ngaréngsékeun daptar sarta asup ka situs anyarna pikeun kahiji kalina.
 
-## Kunaon Ngawanohkeun Palanggan Anyar Penting
+## Kunaon Ngawanohkeun Palanggan Anyar Penting {#why-onboarding-matters}
 
 30 menit munggaran sanggeus daptar nangtukeun naha palanggan bakal tetep atawa eureun. Nu boga studio kabugaran anu:
 
@@ -21,9 +21,9 @@ FitSite geus pinuh boga merek kalayan alur checkout anu jalan. Ayeuna urang muse
 
 Template niche anjeun (Palajaran 4) ngatur titik kahiji. Palajaran ieu ngatur titik kadua.
 
-## Pangalaman Asup Kahiji
+## Pangalaman Asup Kahiji {#the-first-login-experience}
 
-### Widget Dashboard Wilujeng Sumping
+### Widget Dashboard Wilujeng Sumping {#welcome-dashboard-widget}
 
 Jieun widget dashboard kustom anu ngabagéakeun palanggan anyar sarta nungtun maranéhna ngaliwatan setélan awal. Ieu kudu mucunghul jelas nalika maranéhna asup pikeun kahiji kalina.
 
@@ -37,7 +37,7 @@ Jieun widget dashboard kustom anu ngabagéakeun palanggan anyar sarta nungtun ma
 
 Unggal léngkah numbu langsung ka kaca atawa setélan anu patali. Teu kudu neangan dina ménu.
 
-### Sederhanakeun Dashboard
+### Sederhanakeun Dashboard {#simplify-the-dashboard}
 
 Pelanggan anyar teu perlu ningali unggal item ménu WordPress. Pertimbangkeun:
 
@@ -47,29 +47,29 @@ Pelanggan anyar teu perlu ningali unggal item ménu WordPress. Pertimbangkeun:
 
 Addon [Pangatur Plugin & Theme](/addons/plugin-and-theme-manager) bisa ngabantu ngadalikeun naon anu ditempo ku palanggan.
 
-## Runtuyan Email Wilujeng Sumping
+## Runtuyan Email Wilujeng Sumping {#welcome-email-sequence}
 
 Hiji email wilujeng sumping henteu cukup. Setel runtuyan anu nungtun palanggan ngaliwatan minggu kahijina:
 
-### Email 1: Wilujeng Sumping (Langsung sanggeus daptar)
+### Email 1: Wilujeng Sumping (Langsung sanggeus daptar) {#email-1-welcome-immediately-after-signup}
 
 - Judul: "Wilujeng sumping di FitSite -- ramatloka studio anjeun geus hirup"
 - Eusi: Tautan asup, léngkah mimiti gancang, tautan ka sumberdaya pitulung
 - Nada: Sumanget, ngadorong, husus kabugaran
 
-### Email 2: Kameunangan Gancang (Poé 1)
+### Email 2: Kameunangan Gancang (Poé 1) {#email-2-quick-wins-day-1}
 
 - Judul: "3 hal anu kudu dipigawé heula dina FitSite anjeun"
 - Eusi: Tambahkeun logo anjeun, anyarkeun gambar hero homepage, tambahkeun jadwal kelas anjeun
 - Lebetkeun screenshot anu nunjukkeun persis di mana kudu diklik
 
-### Email 3: Jadikeun Milik Anjeun (Poé 3)
+### Email 3: Jadikeun Milik Anjeun (Poé 3) {#email-3-make-it-yours-day-3}
 
 - Judul: "Jadikeun situs kabugaran anjeun leuwih nonjol"
 - Eusi: Kustomisasi warna, tambahkeun poto palatih, tulis carita studio anjeun
 - Tautan ka conto situs kabugaran anu alus dina platform
 
-### Email 4: Go Live (Poé 7)
+### Email 4: Go Live (Poé 7) {#email-4-go-live-day-7}
 
 - Judul: "Siap ngabagikeun FitSite anjeun ka dunya?"
 - Eusi: Daptar pariksa naon anu kudu diverifikasi saméméh dibagikeun, kumaha nyambungkeun domain kustom (lamun dina Growth/Pro), tips ngabagikeun ka média sosial
@@ -78,11 +78,11 @@ Hiji email wilujeng sumping henteu cukup. Setel runtuyan anu nungtun palanggan n
 Use [Webhooks](/user-guide/integrations/webhooks) or [Zapier](/user-guide/integrations/zapier) to trigger these emails through your email marketing platform. This gives you more control over timing and allows you to track engagement.
 :::
 
-## Sumberdaya Pitulung
+## Sumberdaya Pitulung {#help-resources}
 
 Jieun eusi pitulung husus niche anu ngajawab patarosan anu sabenerna ditanyakeun ku nu boga studio kabugaran:
 
-### Artikel Basis Pangaweruh
+### Artikel Basis Pangaweruh {#knowledge-base-articles}
 
 - "Kumaha nganyarkeun jadwal kelas anjeun"
 - "Nambahkeun jeung ngédit profil palatih"
@@ -92,7 +92,7 @@ Jieun eusi pitulung husus niche anu ngajawab patarosan anu sabenerna ditanyakeun
 
 Tulis ieu pikeun pamaké non-téknis. Paké screenshot. Ulah nganggo jargon WordPress.
 
-### Video Pituduh Léngkah-léngkah
+### Video Pituduh Léngkah-léngkah {#video-walkthroughs}
 
 Rekaman layar pondok (2-3 menit) anu nunjukkeun:
 
@@ -103,7 +103,7 @@ Rekaman layar pondok (2-3 menit) anu nunjukkeun:
 
 Ieu teu kudu jadi produksi anu sampurna. Anu penting téh jelas, mantuan, jeung husus niche.
 
-## Kaca Account
+## Kaca Account {#the-account-page}
 
 Ultimate Multisite ngawengku [Kaca Account](/user-guide/client-management/account-page) anu nyanghareup ka palanggan, tempat palanggan ngokolakeun langgananana. Kustomisasi ieu pikeun:
 
@@ -112,7 +112,7 @@ Ultimate Multisite ngawengku [Kaca Account](/user-guide/client-management/accoun
 - Nyadiakeun riwayat tagihan jeung unduhan invoice
 - Tautan ka sumberdaya pitulung
 
-## Ngukur Kasuksésan Ngawanohkeun Palanggan Anyar
+## Ngukur Kasuksésan Ngawanohkeun Palanggan Anyar {#measuring-onboarding-success}
 
 Lacak indikator ieu pikeun nyaho naha prosés ngawanohkeun palanggan anyar anjeun jalan:
 
@@ -121,7 +121,7 @@ Lacak indikator ieu pikeun nyaho naha prosés ngawanohkeun palanggan anyar anjeu
 - **Tikét dukungan ti palanggan anyar**: Volume luhur hartina prosés ngawanohkeun palanggan anyar anjeun boga kakurangan
 - **Konversi trial-ka-mayar**: Lamun anjeun nawarkeun trial, sabaraha persén anu robah jadi mayar?
 
-## Jaringan FitSite Nepi Ka Ayeuna
+## Jaringan FitSite Nepi Ka Ayeuna {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Naon Anu Urang Bangun Dina Palajaran Ieu
+## Naon Anu Urang Bangun Dina Palajaran Ieu {#what-we-built-this-lesson}
 
 - **Pangalaman asup kahiji anu dipandu** kalayan widget Quick Start
 - **Dashboard anu disederhanakeun** anu museur kana tugas ngokolakeun situs kabugaran

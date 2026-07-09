@@ -3,11 +3,11 @@ title: WP-CLI حوالو
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI حوالو
+# WP-CLI حوالو {#wp-cli-reference}
 
 Gratis AI Agent، ايجنٽ جي بينچ مارڪنگ، صلاحيتن جي انتظام، ۽ حڪم واري لائين مان ايجنٽ جي حالت پڇڻ لاءِ `wp gratis-ai-agent` حڪمن جو خاندان مهيا ڪري ٿو. سڀني حڪمن لاءِ WP-CLI 2.0 يا وڌيڪ گهربل آهي.
 
-## انسٽاليشن
+## انسٽاليشن {#installation}
 
 WP-CLI حڪم پاڻمرادو رجسٽر ٿين ٿا جڏهن plugin فعال هجي. هن سان تصديق ڪريو:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Agent Capabilities بينچ مارڪ سوٽ هلائي ٿو — پيچيده، گهڻ-قدمي prompts جو هڪ سيٽ، جيڪي مڪمل صلاحيت واري سطح کي آزمائن ٿا. هن کي ماڊل جي ڪارڪردگي جو جائزو وٺڻ، AI فراهم ڪندڙن جو مقابلو ڪرڻ، يا پيداوار ۾ لاڳو ڪرڻ کان اڳ صلاحيت پيڪن جي تصديق ڪرڻ لاءِ استعمال ڪريو.
 
-### خلاصو
+### خلاصو {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### اختيار
+### اختيار {#options}
 
 | اختيار | وضاحت |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | آئوٽ پٽ فارميٽ: `table` (ڊفالٽ)، `json`، `csv` |
 | `--save` | تاريخي مقابلي لاءِ بينچ مارڪ نتيجا ڊيٽابيس ۾ محفوظ ڪريو |
 
-### مثال
+### مثال {#examples}
 
 موجوده فراهم ڪندڙ ۽ ماڊل سان مڪمل بينچ مارڪ سوٽ هلائيو:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### آئوٽ پٽ
+### آئوٽ پٽ {#output}
 
 بينچ مارڪ هر سوال لاءِ هيٺين ڪالمن سان هڪ قطار آئوٽ پٽ ڪري ٿو:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### بينچ مارڪ سوال
+### بينچ مارڪ سوال {#benchmark-questions}
 
 ڊفالٽ سوٽ ۾ شامل آهي:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 انسٽال ٿيل صلاحيتن ۽ صلاحيت پيڪن جو انتظام ڪري ٿو.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 سڀ رجسٽر ٿيل صلاحيتون، انهن جو ذريعو (core يا pack)، ۽ انهن جي موجوده حالت ڏيکاري ٿو.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 رجسٽري مان هڪ صلاحيت پيڪ ڊائون لوڊ ڪري فعال ڪري ٿو.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 پيڪ کي هٽائڻ کان سواءِ هڪ مخصوص صلاحيت کي غيرفعال ڪري ٿو. ڪنهن ڏنل سائيٽ تي ايجنٽ جي دائري کي محدود ڪرڻ لاءِ مفيد آهي.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 اڳ ۾ غيرفعال ڪيل صلاحيت کي ٻيهر فعال ڪري ٿو.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 موجوده ايجنٽ ترتيب ۽ ڪنيڪٽوٽي حالت ڏيکاري ٿو.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 ڊيبگ لاگ مان تازيون ايجنٽ سرگرميون ڏيکاري ٿو.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 ايجنٽ جي حالت ري سيٽ ڪري ٿو: داخل ڪيل CSS صاف ڪري ٿو، ايجنٽ طرفان رجسٽر ٿيل CPTs ۽ ٽيڪسونوميون هٽائي ٿو، عالمي انداز ري سيٽ ڪري ٿو، ۽ ايجنٽ جي اختيارن جي cache خالي ڪري ٿو. plugin يا ان جون سيٽنگون نه هٽائيندو.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## نڪرڻ جا ڪوڊ
+## نڪرڻ جا ڪوڊ {#exit-codes}
 
 سڀ حڪم ڪاميابي تي `0` سان نڪرن ٿا. غير-صفر نڪرڻ جا ڪوڊ:
 

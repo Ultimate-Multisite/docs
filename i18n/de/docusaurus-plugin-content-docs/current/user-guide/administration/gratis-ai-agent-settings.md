@@ -3,16 +3,16 @@ title: Gratis AI Agent Einstellungen
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent-Einstellungen
+# Gratis AI Agent-Einstellungen {#gratis-ai-agent-settings}
 
 Der Bildschirm **Settings → Advanced** in Gratis AI Agent bietet Konfiguration auf Administratorebene für Backend-Integrationen. Diese Seite dokumentiert Feedback-Weiterleitung, Schlüssel für Suchanbieter, Einrichtung des verwalteten Superdav-Dienstes, Google Calendar-Steuerungen, TextBee-SMS-Einstellungen und netzwerkweite Feature-Flags.
 
-## Auf Einstellungen zugreifen
+## Auf Einstellungen zugreifen {#accessing-settings}
 
 1. Gehe im WordPress-Admin zu **Gratis AI Agent → Settings**.
 2. Klicke auf den Tab **Advanced**.
 
-## Konfiguration des Feedback-Endpoints
+## Konfiguration des Feedback-Endpoints {#feedback-endpoint-configuration}
 
 Der Feedback-Endpoint empfängt POST-Anfragen vom AI Agent, wann immer ein Benutzer Feedback über die Daumen-runter-Schaltfläche, das Auto-Prompt-Banner oder den Befehl `/report-issue` einreicht.
 
@@ -21,7 +21,7 @@ Der Feedback-Endpoint empfängt POST-Anfragen vom AI Agent, wann immer ein Benut
 | **Feedback Endpoint URL** | Die URL, die Feedback-Einreichungen als HTTP-POST-Anfragen mit einem JSON-Body empfängt. |
 | **Feedback API Key** | Ein bearer token, das im `Authorization` header jeder Feedback-Anfrage gesendet wird. Leer lassen, wenn dein Endpoint keine Authentifizierung erfordert. |
 
-### Erwartete JSON-Nutzlast
+### Erwartete JSON-Nutzlast {#expected-json-payload}
 
 Dein Feedback-Endpoint muss einen JSON-Body mit mindestens den folgenden Feldern akzeptieren:
 
@@ -36,7 +36,7 @@ Dein Feedback-Endpoint muss einen JSON-Body mit mindestens den folgenden Feldern
 
 Je nach Gesprächskontext können zusätzliche Felder in der Nutzlast vorhanden sein.
 
-### `triage_category`-Werte
+### `triage_category`-Werte {#triagecategory-values}
 
 Die AI-Triage-Ebene weist `triage_category` einen der folgenden Werte zu, bevor sie die Nutzlast weiterleitet:
 
@@ -47,7 +47,7 @@ Die AI-Triage-Ebene weist `triage_category` einen der folgenden Werte zu, bevor 
 | `inappropriate_content` | Die Antwort enthielt Inhalte, die Benutzern nicht angezeigt werden sollten. |
 | `other` | Das Feedback entsprach keiner bekannten Kategorie. |
 
-### Authentifizierung
+### Authentifizierung {#authentication}
 
 Wenn dein Endpoint Authentifizierung erfordert, setze das Feld **Feedback API Key** auf dein bearer token. Der Agent sendet:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Wenn das Feld **Feedback API Key** leer ist, wird kein `Authorization` header gesendet.
 
-### Feedback-Erfassung deaktivieren
+### Feedback-Erfassung deaktivieren {#disabling-feedback-collection}
 
 Lasse sowohl die Felder **Feedback Endpoint URL** als auch **Feedback API Key** leer. Die Daumen-runter-Schaltfläche und die Feedback-UI bleiben für Benutzer sichtbar, aber Einreichungen werden nicht an einen externen Dienst weitergeleitet.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Ebenfalls im Tab **Advanced** aktiviert das Feld **Brave Search API Key** die Fähigkeit [Internetsuche](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ Die Feldbezeichnung enthält einen anklickbaren Link zur Brave Search API-Regist
 
 Siehe [Internetsuche](../configuration/internet-search) für Endbenutzer-Dokumentation zu dieser Funktion.
 
-## Verwalteter Superdav-Dienst
+## Verwalteter Superdav-Dienst {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 fügt verwaltete Superdav-Dienst-Endpoints und automatische Verbindungsbereitstellung für unterstützte Sites hinzu. Verwende diese Steuerelemente, wenn deine Site mit dem gehosteten Anbieter statt mit einem manuell konfigurierten Dienst-Endpoint verbunden werden soll.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 fügt verwaltete Superdav-Dienst-Endpoints und automat
 
 Speichere nach der Bereitstellung die Einstellungen und überprüfe den Verbindungsstatus, bevor du dich auf Workflows des verwalteten Dienstes verlässt. Wenn die Bereitstellung fehlschlägt, prüfe die angezeigten Hinweise zum erneuten Versuch und bestätige, dass die Site die Berechtigung hat, den gehosteten Anbieter zu verwenden.
 
-## Google Calendar-Konfiguration
+## Google Calendar-Konfiguration {#google-calendar-configuration}
 
 Wenn Kalenderfunktionen von Superdav AI Agent v1.18.0 aktiviert sind, kann der Agent konfigurierte Kalender und Ereignisdetails lesen. Kalender-Tools sind leseorientiert und nützlich für terminbewusste Erinnerungen, Teilnehmer-Follow-up und Kontaktabgleich.
 
@@ -97,7 +97,7 @@ Wenn Kalenderfunktionen von Superdav AI Agent v1.18.0 aktiviert sind, kann der A
 
 Beschränke Kalender-Anmeldedaten auf die Kalender, die der Agent benötigt. Verbinde die Anmeldedaten neu oder rotiere sie, wenn der Status ein abgelaufenes Token anzeigt.
 
-## TextBee-SMS-Benachrichtigungen
+## TextBee-SMS-Benachrichtigungen {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 fügt TextBee als SMS-Anbieter für konfigurierte Benachrichtigungs-Workflows hinzu. SMS-Benachrichtigungen sollten bei sensiblen oder an Benutzer gerichteten Nachrichten mit menschlichen Freigabe-Gates kombiniert werden.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 fügt TextBee als SMS-Anbieter für konfigurierte Bena
 
 Sende eine Testnachricht nur an eine Nummer, die einem Administrator gehört, und bestätige dann das Verhalten der Freigabe-Gates, bevor geplante oder an Teilnehmer gerichtete Erinnerungen aktiviert werden.
 
-## Feature-Flags
+## Feature-Flags {#feature-flags}
 
 Ebenfalls in v1.9.0 eingeführt, bietet der Tab **Settings → Feature Flags** Umschalter für optionale Funktionen. Jedes Flag ist netzwerkweit entweder aktiviert oder deaktiviert; derzeit gibt es keine Überschreibung pro Site.
 
-### Auf Feature-Flags zugreifen
+### Auf Feature-Flags zugreifen {#accessing-feature-flags}
 
 1. Gehe im WordPress-Admin zu **Gratis AI Agent → Settings**.
 2. Klicke auf den Tab **Feature Flags**.
 
-### Zugriffskontroll-Flags
+### Zugriffskontroll-Flags {#access-control-flags}
 
 | Flag | Standard | Beschreibung |
 |---|---|---|
@@ -127,7 +127,7 @@ Ebenfalls in v1.9.0 eingeführt, bietet der Tab **Settings → Feature Flags** U
 | **Subscriber-Zugriff erlauben** | Aus | Wenn aktiviert, können Benutzer mit der Rolle `subscriber` die Chat-Oberfläche verwenden, sind jedoch auf Nur-Lese-Funktionen beschränkt (keine Beitragserstellung oder Einstellungsänderungen). |
 | **Für Nichtmitglieder deaktivieren** | Aus | Integriert sich mit dem Mitgliedschaftsstatus von Ultimate Multisite. Wenn aktiviert, ist der Chat für Websites ausgeblendet, die keine aktive Mitgliedschaft haben. |
 
-### Branding-Flags
+### Branding-Flags {#branding-flags}
 
 | Flag | Standard | Beschreibung |
 |---|---|---|
@@ -136,7 +136,7 @@ Ebenfalls in v1.9.0 eingeführt, bietet der Tab **Settings → Feature Flags** U
 | **Agent-Auswahl ausblenden** | Aus | Wenn aktiviert, können Benutzer nicht zwischen den fünf integrierten Agents wechseln. Der aktuelle Agent ist fest auf das eingestellt, was unter Einstellungen → Allgemein als Standard konfiguriert ist. |
 | **Site Icon als Chat-Avatar verwenden** | Aus | Ersetzt das standardmäßige AI-Symbol im Header des Chat-Widgets durch das WordPress Site Icon (festgelegt unter Design → Anpassen → Website-Identität). |
 
-### Sicherheits-Flags für Automatisierung
+### Sicherheits-Flags für Automatisierung {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 führt Genehmigungs-Gates durch Menschen und Erinnerungsdatensätze für sicherere Automatisierungsläufe ein. Diese Steuerelemente können je nach installiertem Paket in den Feature-Flags oder den erweiterten Automatisierungseinstellungen erscheinen.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 führt Genehmigungs-Gates durch Menschen und Erinnerun
 | **Kalender-Tools aktivieren** | Aus, bis konfiguriert | Ermöglicht dem Agent, konfigurierte Google-Kalender und Ereignisse zu lesen. |
 | **SMS-Benachrichtigungen aktivieren** | Aus, bis konfiguriert | Ermöglicht genehmigten Workflows, TextBee-SMS-Benachrichtigungen zu senden, nachdem Zugangsdaten gespeichert wurden. |
 
-### Änderungen anwenden
+### Änderungen anwenden {#applying-changes}
 
 Klicken Sie auf **Einstellungen speichern**, nachdem Sie ein Flag umgeschaltet haben. Änderungen werden sofort wirksam — kein Leeren des Caches und keine Reaktivierung des Plugin ist erforderlich.

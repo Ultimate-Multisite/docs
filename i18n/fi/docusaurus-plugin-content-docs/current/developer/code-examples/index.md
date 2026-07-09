@@ -3,11 +3,11 @@ title: Edistyneet koodiesimerkit
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Edistyneet koodiesimerkit
+# Edistyneet koodiesimerkit {#advanced-code-examples}
 
 Nämä esimerkit havainnollistavat edistyneitä integraatiomalleja Ultimate Multisite -ratkaisun kanssa.
 
-## Dynaaminen hinnoittelumoottori
+## Dynaaminen hinnoittelumoottori {#dynamic-pricing-engine}
 
 Sääntöpohjainen hinnoittelumoottori, joka soveltaa määrä-, uskollisuus- ja kausialennuksia:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Edistynyt sivustojen käyttöönotto
+## Edistynyt sivustojen käyttöönotto {#advanced-site-provisioning}
 
 Määritä uudet sivustot automaattisesti pluginien, SSL:n, CDN:n, varmuuskopioiden ja valvonnan kanssa plan-ominaisuuksien perusteella:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Mukautettu rajoitusjärjestelmä
+## Mukautettu rajoitusjärjestelmä {#custom-limitations-system}
 
 Seuraa ja valvo resurssirajoja käyttövaroitusten avulla:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB:n atominen laskuri `increment_item()`-metodilla
+## BerlinDB:n atominen laskuri `increment_item()`-metodilla {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 lisäsi `increment_item()`-metodin BerlinDB:n `Query`-luokkaan. Käytä sitä turvallisten, atomisten lisäysten tekemiseen numeerisiin sarakkeisiin ilman read-modify-write-kilpailutilanteita — hyödyllistä laskureille, käyttökiintiöille ja rate-limiting-tarkistuksille, jotka suoritetaan samanaikaisten pyyntöjen aikana.
 
-### Metodin allekirjoitus
+### Metodin allekirjoitus {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 lisäsi `increment_item()`-metodin BerlinDB:n `Query`-
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Peruskäyttö
+### Peruskäyttö {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API-käytön seuranta jäsenyyttä kohti
+### API-käytön seuranta jäsenyyttä kohti {#tracking-api-usage-per-membership}
 
 Käytännöllinen malli jäsenyyskohtaisten API rate limit -rajojen valvontaan:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Miksi `increment_item()` eikä `update_item()`
+### Miksi `increment_item()` eikä `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Naiivi read-modify-write-lähestymistapa ei ole turvallinen samanaikaisten pyyntöjen aikana:
 

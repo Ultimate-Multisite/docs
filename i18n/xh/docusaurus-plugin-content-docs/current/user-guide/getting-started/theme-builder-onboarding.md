@@ -3,11 +3,11 @@ title: Inkqubo yokuqalisa ye-Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Inkqubo Yokungeniswa ye-Theme Builder
+# Inkqubo Yokungeniswa ye-Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 izisa inkqubo ekhokelwayo **yokungeniswa ye-Theme Builder** ekunceda wenze umxholo weebhloko olungiselelwe wena ngexesha loseto lwakho lokuqala. Oku kuthatha indawo yemowudi endala ye-Site Builder ngendlela ebhetyebhetye ngakumbi, encediswa yi-agent.
 
-## Yintoni Inkqubo Yokungeniswa ye-Theme Builder?
+## Yintoni Inkqubo Yokungeniswa ye-Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Inkqubo yokungeniswa ye-Theme Builder yi-wizard yoseto esebenzisanayo ethi:
 
@@ -18,9 +18,9 @@ Inkqubo yokungeniswa ye-Theme Builder yi-wizard yoseto esebenzisanayo ethi:
 
 Le nkqubo ixhaswa ngu-**Setup Assistant agent**, obuza imibuzo yokucacisa aze akhe umxholo wakho kancinci-kancinci.
 
-## Ukuqalisa Ukungeniswa kwe-Theme Builder
+## Ukuqalisa Ukungeniswa kwe-Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Useto Lokuqala
+### Useto Lokuqala {#first-run-setup}
 
 Xa uqala ukuvula Superdav AI Agent kufakelo olutsha lwe-WordPress, uza kubona:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Khetha **"Build a custom theme"** ukuze ungene kwinkqubo yokungeniswa ye-Theme Builder.
 
-### Ukuvulwa Ngesandla
+### Ukuvulwa Ngesandla {#manual-activation}
 
 Ungaqalisa nokungeniswa kwe-Theme Builder nangaliphi na ixesha ngokucela:
 
@@ -49,9 +49,9 @@ okanye
 "Help me create a custom theme"
 ```
 
-## Amanyathelo Okungeniswa
+## Amanyathelo Okungeniswa {#the-onboarding-steps}
 
-### Inyathelo 1: Ukukhetha Imowudi
+### Inyathelo 1: Ukukhetha Imowudi {#step-1-mode-selection}
 
 I-Setup Assistant agent ibuza ngokukhetha kwakho:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Imowudi ekhokelwayo** iyacetyiswa kubasebenzisi abaninzi; i-agent yenza iingcebiso zoyilo ngokusekelwe kushishino lwakho neenjongo zakho.
 
-### Inyathelo 2: Inkcazelo Yesayithi
+### Inyathelo 2: Inkcazelo Yesayithi {#step-2-site-specification}
 
 Uza kubuzwa ngesayithi yakho:
 
@@ -74,7 +74,7 @@ Uza kubuzwa ngesayithi yakho:
 
 Olu lwazi lugcinwa kwinkumbulo yakho ye-**site_brief**, ethi ii-agent zibhekisele kuyo kwiiseshoni ezizayo.
 
-### Inyathelo 3: Izigqibo zeNkqubo Yoyilo
+### Inyathelo 3: Izigqibo zeNkqubo Yoyilo {#step-3-design-system-decisions}
 
 I-agent ikukhokelela kukhetho lweetokeni zoyilo:
 
@@ -83,7 +83,7 @@ I-agent ikukhokelela kukhetho lweetokeni zoyilo:
 - **Izithuba**: Ulungelelwaniso oluxineneyo, oluqhelekileyo, okanye olunendawo eninzi
 - **Intshukumo**: Oopopayi neenguqulelo (ukuba ziyafuneka)
 
-### Inyathelo 4: Ukuveliswa Komxholo
+### Inyathelo 4: Ukuveliswa Komxholo {#step-4-theme-generation}
 
 I-Setup Assistant agent yakha isiseko somxholo wakho weebhloko olungiselelwe wena nge:
 
@@ -92,7 +92,7 @@ I-Setup Assistant agent yakha isiseko somxholo wakho weebhloko olungiselelwe wen
 - Izitayile zeebhloko ezilungiselelweyo ezihambelana nenkqubo yakho yoyilo
 - Imetadata yomxholo neenkcazelo zenkxaso ye-WordPress
 
-### Inyathelo 5: Ukuvulwa Nokuqinisekisa
+### Inyathelo 5: Ukuvulwa Nokuqinisekisa {#step-5-activation-and-verification}
 
 Umxholo uvulwa ngokuzenzekelayo, kwaye uza kubona:
 
@@ -107,7 +107,7 @@ Umxholo uvulwa ngokuzenzekelayo, kwaye uza kubona:
 
 Emva koko ungandwendwela isayithi yakho ukuqinisekisa ukuba umxholo ubonakala ngokuchanekileyo.
 
-## Inkcazelo Yesayithi neNkumbulo ye-site_brief
+## Inkcazelo Yesayithi neNkumbulo ye-site_brief {#site-specification-and-sitebrief-memory}
 
 Ngexesha lokungeniswa, i-agent iqokelela inkcazelo yesayithi yakho kudidi lwenkumbulo lwe-**site_brief**. Oku kuquka:
 
@@ -117,7 +117,7 @@ Ngexesha lokungeniswa, i-agent iqokelela inkcazelo yesayithi yakho kudidi lwenku
 - Izinto ezikhethwayo kuyilo
 - Ulwakhiwo lomxholo
 
-### Kutheni i-site_brief Ibalulekile
+### Kutheni i-site_brief Ibalulekile {#why-sitebrief-matters}
 
 Kwiiseshoni ezizayo, ii-agent zibhekisela kwi-site_brief yakho ukuze:
 
@@ -126,7 +126,7 @@ Kwiiseshoni ezizayo, ii-agent zibhekisela kwi-site_brief yakho ukuze:
 - Zinike iingcebiso eziqonda umxholo
 - Ziphephe ukuphinda imibuzo yoseto
 
-### Ukujonga i-site_brief Yakho
+### Ukujonga i-site_brief Yakho {#viewing-your-sitebrief}
 
 Ungabuza i-agent:
 
@@ -142,11 +142,11 @@ okanye
 
 I-agent iya kubonisa inkcazelo yesayithi egciniweyo.
 
-## Ukwenza Ngokwezifiso Emva Kokungeniswa
+## Ukwenza Ngokwezifiso Emva Kokungeniswa {#customizing-after-onboarding}
 
 Emva kokuba ukungeniswa kwe-Theme Builder kugqityiwe, unga:
 
-### Sebenzisa Isakhono se-Design System Aesthetics
+### Sebenzisa Isakhono se-Design System Aesthetics {#use-the-design-system-aesthetics-skill}
 
 Cela ukuphuculwa koyilo:
 
@@ -162,7 +162,7 @@ okanye
 
 **Isakhono se-Design System Aesthetics** sikukhokelela kuhlaziyo loyilo olujoliswe ngqo.
 
-### Hlela theme.json Ngokuthe Ngqo
+### Hlela theme.json Ngokuthe Ngqo {#edit-themejson-directly}
 
 Kubasebenzisi abaphambili, hlela `/wp-content/themes/[theme-name]/theme.json` ukuze ulungise:
 
@@ -171,7 +171,7 @@ Kubasebenzisi abaphambili, hlela `/wp-content/themes/[theme-name]/theme.json` uk
 - Amaxabiso ezithuba
 - Iinkcazelo zemida nezithunzi
 
-### Yenza Iitemplate Zeebhloko Ezilungiselelweyo
+### Yenza Iitemplate Zeebhloko Ezilungiselelweyo {#create-custom-block-templates}
 
 Sebenzisa umhleli weebhloko we-WordPress ukwenza iitemplate ezilungiselelweyo ze:
 
@@ -180,7 +180,7 @@ Sebenzisa umhleli weebhloko we-WordPress ukwenza iitemplate ezilungiselelweyo ze
 - Amaphepha eemveliso
 - Iifomu zoqhagamshelwano
 
-## Uthelekiso: Ukungeniswa Okudala vs. Okutsha
+## Uthelekiso: Ukungeniswa Okudala vs. Okutsha {#comparison-old-vs-new-onboarding}
 
 | Uphawu | Site Builder (Endala) | Theme Builder (Entsha) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Sebenzisa umhleli weebhloko we-WordPress ukwenza iitemplate ezilungiselelweyo ze
 | Ukubhetyebhetye | Iinketho ezimiselweyo | Kuyalungiseka |
 | Uhlaziyo lwexesha elizayo | Akubhekiselwanga kulo | Kugcinwe kwi-site_brief |
 
-## Ukusombulula Iingxaki
+## Ukusombulula Iingxaki {#troubleshooting}
 
 **Inkqubo yokungeniswa ayigqitywanga**
 - Qalisa kwakhona inkqubo: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Sebenzisa umhleli weebhloko we-WordPress ukwenza iitemplate ezilungiselelweyo ze
 - Cela i-agent ukuba "regenerate the theme with [specific changes]"
 - Hlela theme.json ngokuthe ngqo ukuze ube nolawulo oluchanileyo
 
-## Amanyathelo Alandelayo
+## Amanyathelo Alandelayo {#next-steps}
 
 Emva kokugqiba ukungeniswa kwe-Theme Builder:
 

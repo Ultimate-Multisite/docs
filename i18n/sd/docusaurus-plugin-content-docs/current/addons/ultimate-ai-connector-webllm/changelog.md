@@ -3,9 +3,9 @@ title: WebLLM لاءِ حتمي AI ڪنيڪٽر جو تبديلين جو لاگ
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM تبديلي لاگ
+# Ultimate AI Connector for WebLLM تبديلي لاگ {#ultimate-ai-connector-for-webllm-changelog}
 
-## نسخو 1.1.0 — 2026-04-09 تي جاري ڪيو ويو
+## نسخو 1.1.0 — 2026-04-09 تي جاري ڪيو ويو {#version-110--released-on-2026-04-09}
 
 * نئون: ايڊمن-بار حالت اشارڪ سان ترندڙ چيٽ وجٽ — ڪو به لاگ اِن ٿيل استعمال ڪندڙ فرنٽ اينڊ مان سڌو برائوزر-پاسي LLM کي پرامپٽ ڪري سگهي ٿو.
 * نئون: SharedWorker رن ٽائيم — MLC انجن هاڻي SharedWorker ۾ هلندو آهي، تنهنڪري گهڻا ٽيب هڪ GPU سيشن شيئر ڪن ٿا، ان تي وڙهڻ بدران.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * درستگي: WebLLM کي wpai_preferred_text_models filter ۾ Hook ڪريو، ته جيئن AI Experiments خصوصيت ترتيب ڏنل ماڊل هئڻ تي برائوزر انجن ڏانهن رُخ ڪري.
 * بهتر ڪيو ويو: Cache-busting، مواد جي نارملائزيشن، ۽ هارڊويئر-حوالو درستگيون end-to-end ٽيسٽنگ دوران سامهون آيون.
 
-## نسخو 1.0.0 — شروعاتي جاري ٿيڻ
+## نسخو 1.0.0 — شروعاتي جاري ٿيڻ {#version-100--initial-release}

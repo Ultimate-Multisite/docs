@@ -3,13 +3,13 @@ title: Construiește o afacere de site-uri de nișă
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Construiește o afacere de site de nișă cu Ultimate Multisite
+# Construiește o afacere de site de nișă cu Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Majoritatea oamenilor care încearcă să vândă site-uri concurează pe preț cu Wix, Squarespace și mii de freelanceri. Ei eșuează. Cei care reușesc aleg o audiență specifică, construiesc o soluție adaptată acelei audiențe și taxează pentru valoarea pe care o livrează.
 
 Acest curs vă învață cum să faceți exact asta folosind Ultimate Multisite.
 
-## Ce veți construi
+## Ce veți construi {#what-you-will-build}
 
 Pe parcursul acestui curs, veți construi o rețea reală și funcțională numită **FitSite** — o platformă de site web construită în mod specific pentru studiouri de fitness, antrenori personali și proprietari de saloane de fitness.
 
@@ -23,7 +23,7 @@ Până la ultima lecție, FitSite va fi o platformă de nișă completă, cu:
 
 Veți urma pașii unul după altul și, la final, veți avea atât o platformă funcțională, cât și cunoștințele necesare pentru a replica procesul pentru orice nișă pe care o alegeți.
 
-## De ce studiourile de fitness?
+## De ce studiourile de fitness? {#why-fitness-studios}
 
 Aveam nevoie de un exemplu concret pe care oricine îl poate urma. Studiourile de fitness funcționează deoarece:
 
@@ -34,7 +34,7 @@ Aveam nevoie de un exemplu concret pe care oricine îl poate urma. Studiourile d
 
 Tot ce învățați construind FitSite se aplică direct oricărei nișe pe care o alegeți: restaurante, agenții imobiliari, firme de avocatură, biserici, antreprenori din construcții sau orice altă verticală.
 
-## Structura cursului
+## Structura cursului {#course-structure}
 
 Fiecare lecție introduce un concept, explică de ce este important și vă ghidează prin implementarea acestuia în rețeaua FitSite. Fiecare lecție se bazează pe cea anterioară.
 
@@ -55,7 +55,7 @@ Fiecare lecție introduce un concept, explică de ce este important și vă ghid
 | [13. Scaling Up](lesson-13-growth) | Growing from first customers to a real business | Strategia de creștere și automatizare FitSite |
 | [14. What Comes Next](lesson-14-whats-next) | Expanding to adjacent niches and new opportunities | Ruta dvs. dincolo de FitSite |
 
-## Precondiții
+## Precondiții {#prerequisites}
 
 - O instalare WordPress Multisite (sau disponibilitatea de a-i configura una)
 - O licență activă Ultimate Multisite
@@ -63,6 +63,6 @@ Fiecare lecție introduce un concept, explică de ce este important și vă ghid
 
 Nu este necesară programarea. Dacă nu ați folosit Ultimate Multisite anterior, nu este nicio problemă — Lecția 3 pornește de la o instalare nouă.
 
-## Gata?
+## Gata? {#ready}
 
 Începeți cu [Lecția 1: De ce nișa câștigă](lesson-1-why-niche).

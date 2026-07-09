@@ -3,11 +3,11 @@ title: Referanse for hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks-referanse
+# Hooks-referanse {#hooks-reference}
 
 Automatisk generert dokumentasjon for alle **59 actions** og **118 filters** i Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Kjøres før autentiseringsomdirigeringen.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Kjøres umiddelbart før autentiseringsinformasjonskapselen settes.
@@ -70,7 +70,7 @@ Automatisk generert dokumentasjon for alle **59 actions** og **118 filters** i U
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Kjøres etter at et objekt er lagret i databasen.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Tillat plugin-utviklere å legge til handlinger i opplåsingsprosessen.
 
-## Filtre
+## Filtre {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrerer varigheten til utløpsperioden for autentiseringscookien.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrerer skjemaet for autentiseringsomdirigering.

@@ -3,11 +3,11 @@ title: Tarixiy dəyişikliklər
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Yayınlandı: 2026-04-28
+## 1.9.0 — Yayınlandı: 2026-04-28 {#190--released-on-2026-04-28}
 
-### Yeni
+### Yeni {#new}
 
 - **`create_contact_form` yeteneği** — Aktif form plugin'ini (Contact Form 7, WPForms, Fluent Forms veya Gravity Forms) kullanarak bir iletişim formu oluşturur ve herhangi bir gönderiye veya sayfaya gömülmeye hazır bir shortcode döndürür.
 - **`set_featured_image` yeteneği** — Mevcut bir Medya Kütüphanesi ek dosya kimliğinden veya uzaktan bir URL'den bir gönderiye veya sayfaya öne çıkan görsel atar; bir URL sağlandığında görseli otomatik olarak içe aktarır.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Son oturumu geri yükle** — Sohbet paneli artık sayfa yüklendiğinde ve widget açıldığında en son konuşmayı otomatik olarak yeniden yükler, böylece bağlam sayfa navigasyonları arasında asla kaybolmaz.
 - **Plugin eylem bağlantıları** — Ayarlar ve Yetenekler Kayıt Defteri'ne hızlı bağlantılar artık WordPress **Plugins → Installed Plugins** ekranında, plugin açıklamasının altında görünür.
 
-### Geliştirildi
+### Geliştirildi {#improved}
 
 - **Görsel kaynağı yeniden deneme** — Ajan, indirme başarısız olduğunda bir yapay zeka tarafından oluşturulan görsel kullanmadan önce yapılandırılmış tüm ücretsiz görsel kaynaklarını yeniden dener.
 - **Model bilgisi paneli** — Sohbet başlığında her zaman görünür; artık ilk mesajdan sonra gizlenmiyor.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget yeniden tasarımı** — Birleşik yapay zeka simgesi, önceki özel avatarı yerini aldı; bu da yerleşik ajan sistemiyle tutarlıdır.
 - **URL linkleştirme** — Sistem mesajlarında ve hata mesajı balonlarında görünen URL'ler artık tıklanabilir bağlantılar olarak gösteriliyor.
 
-### Düzeltildi
+### Düzeltildi {#fixed}
 
 - **Yetenek keşfedilebilirliği** — Tüm yeteneklerin ajanın araç listesinde güvenilir bir şekilde görünmesi için açıklamalar, sistem komutu referansları ve ad alanı hizalamaları düzeltildi.
 - **Sağlayıcılar önbelleği** — Sağlayıcılar artık çok siteli ağlarda bayat sağlayıcı sorunlarını önlemek için bir sürüm sayacı aracılığıyla site genelinde önbelleğe alınıyor.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Yayınlandı: 2026-04-09
+## 1.4.0 — Yayınlandı: 2026-04-09 {#140--released-on-2026-04-09}
 
-### Yeni
+### Yeni {#new-1}
 
 - **WP-CLI benchmark komutu** (`wp gratis-ai-agent benchmark`) — CI pipeline'ları ve model değerlendirme iş akışları için komut satırından Ajan Yetenekleri v1 benchmark paketini çalıştırır. Soru bazlı çalıştırmaları, sağlayıcı/model geçersiz kılmalarını ve JSON/CSV çıktısını destekler.
 - **Ajan Yetenekleri v1 benchmark paketi** — Tam yetenek yüzeyini test eden, puanlama ve token/süre raporlaması içeren yapılandırılmış, çok adımlı komutlar kümesi.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restoran web sitesi benchmark sorusu** (`q-restaurant-website`) — CPT kaydı, tasarım sistemi, navigasyon ve plugin keşfini kapsayan uçtan uca test.
 - **AI sağlayıcı bağlayıcı pluginleri**, daha hızlı yerel geliştirme kurulumu için WordPress Playground blueprint'lerine eklendi.
 
-### Geliştirildi
+### Geliştirildi {#improved-1}
 
 - README, AI sağlayıcı bağlayıcı dokümantasyonu ve kurulum talimatları ile güncellendi.
 
-### Düzeltildi
+### Düzeltildi {#fixed-1}
 
 - `main` dalındaki 25 PHPUnit test hatası çözüldü.
 - `blueprint.json` dosyasındaki GitHub yayın URL formatı düzeltildi.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Önceki sürüm notları plugin deposunda tutulmaktadır._

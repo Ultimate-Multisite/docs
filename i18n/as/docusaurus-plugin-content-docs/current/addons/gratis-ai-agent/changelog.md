@@ -3,11 +3,11 @@ title: পরিবর্তন তালিকা
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# পৰিৱৰ্তনৰ তালিকা (Changelog)
+# পৰিৱৰ্তনৰ তালিকা (Changelog) {#changelog}
 
-## ১.৯.০ — মুকলি কৰা হৈ: ২০২৬-০৪-২৮
+## ১.৯.০ — মুকলি কৰা হৈ: ২০২৬-০৪-২৮ {#190--released-on-2026-04-28}
 
-### নতুন (New)
+### নতুন (New) {#new}
 
 - **`create_contact_form` সামৰ্থ্য** — এই সামৰ্থিয়ে সক্ৰিয় (active) ফৰ্ম প্লাগইন (Contact Form 7, WPForms, Fluent Forms, বা Gravity Forms) ব্যৱহাৰ কৰি এটা যোগাযোগ ফৰ্ম (contact form) সৃষ্টি কৰে আৰু যিকোনো পোষ্ট বা পেজত ঢাকিবলৈ (embed) সাজু ছৰ্টকোড (shortcode) এটা দিয়ে।
 - **`set_featured_image` সামৰ্থ্য** — বিদ্যমান মিডিয়া লাইব্ৰেৰী (Media Library)ৰ এটা attachment ID বা এটা দূৰৰ URL (remote URL) ৰ পৰা এটা পোষ্ট বা পেজৰ বাবে এটা featured image নিৰ্ধাৰণ কৰে; যদি URL দিয়া হয়, তেন্তে ই স্বয়ংক্রিয়ভাৱে ছবিখন আমদানি কৰে।
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Last session পুনৰ লোড কৰা** — এতিয়া চ্যাট প্যানেলটো পেজ লোড হোৱাৰ লগে লগে আৰু widget খুলিলেও আটাইতকৈ শেহতীয়া কথোপকথনটো স্বয়ংক্রিয়ভাৱে পুনৰ লোড কৰে, গতিকে পেজ নেভিগেশ্বনৰ সময়ত কোনো কন্টেক্সট হেৰুৱাই নযায়।
 - **Plugin action links** — WordPress **Plugins → Installed Plugins** স্ক্ৰীণত প্লাগইনৰ বৰ্ণনাৰ তলত Settings আৰু Abilities Registry লৈ সোনকালে লিংক (quick links) দেখুৱাই।
 
-### উন্নত (Improved)
+### উন্নত (Improved) {#improved}
 
 - **Image source retry** — ডাউনলোড কৰাত বিফল হোৱাৰ লগে লগে এজেণ্টে কনফিগাৰেট কৰা সকলো বিনামূলীয়া image source পুনৰ চেষ্টা কৰে, তাৰ পিছত AI-উৰ্জিত ছবি এটা দিয়ে।
 - **Model info panel** — চ্যাট হেডাৰত সদায় দৃশ্যমান; প্ৰথম বাৰৰ বাৰৰ বাবে নোহোৱা হৈছিল।
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — একত্ৰিত AI আইকনটো আগৰ custom avatar ক স্থান দিছে; ই বিল্ট-ইন এজেণ্ট ব্যৱস্থাৰ সৈতে সামঞ্জস্যপূৰ্ণ।
 - **URL linkification** — ব্যৱস্থাৰ বাবে দিয়া বা ভুল বাৰৰ বাবে দিয়া URL সমূহ এতিয়া ক্লিক কৰিব পৰা লিংক হিচাপে দেখুৱдено হয়।
 
-### সংশোধন কৰা হৈ (Fixed)
+### সংশোধন কৰা হৈ (Fixed) {#fixed}
 
 - **Ability discoverability** — বৰ্ণনা, system prompt references, আৰু namespace alignment সংশোধন কৰা হৈছে যাতে সকলো সামৰ্থ্য এজেণ্টৰ tool list ত নির্ভরযোগ্যভাৱে দেখুৱাই।
 - **Providers cache** — providers এতিয়া multisite network ত stale-provider সমস্যা নিৰ্মূল কৰিবলৈ এটা version counterৰ জৰিয়তে site-wide cache কৰা হয়।
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## ১.৪.০ — মুকলি কৰা হৈ: ২০২৬-০৪-০৯
+## ১.৪.০ — মুকলি কৰা হৈ: ২০২৬-০৪-০৯ {#140--released-on-2026-04-09}
 
-### নতুন (New)
+### নতুন (New) {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI pipelines আৰু model evaluation workflows ৰ বাবে কমাণ্ড লাইনৰ পৰা Agent Capabilities v1 benchmark suite চলায়। ই প্ৰশ্ন অনুসৰি run, provider/model overrides, আৰু JSON/CSV output সমৰ্থন কৰে।
 - **Agent Capabilities v1 benchmark suite** — এটা structured set of complex, multi-step prompts যিয়ে সামগ্ৰিক সামৰ্থ্যৰ পৃষ্ঠভাগ (full ability surface) পৰীক্ষা কৰে, য'ত scoring আৰু token/duration reporting থাকে।
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT ৰেজিষ্ট্ৰেচন, design system, navigation, আৰু plugin আৱিষ্কাৰ ক কওঁৈ এটা end-to-end test।
 - **AI provider connector plugins** স্থানীয় বিকাশৰ বাবে অধিক দ্ৰুত setup কৰিবলৈ WordPress Playground blueprints ত যোগ কৰা হৈছে।
 
-### উন্নত (Improved)
+### উন্নত (Improved) {#improved-1}
 
 - README ত AI provider connector documentation আৰু setup instructions যোগ কৰা হৈছে।
 
-### সংশোধন কৰা হৈ (Fixed)
+### সংশোধন কৰা হৈ (Fixed) {#fixed-1}
 
 - `main` branch ত ২৫ টা PHPUnit test failure সমাধান কৰা হৈছে।
 - `blueprint.json` ত GitHub releases URL format সংশোধন কৰা হৈছে।
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## ১.৩.x
+## ১.৩.x {#13x}
 
 _পূৰণি মুকলি কৰাৰ টোকা প্লাগইন ৰিপজিটৰী (plugin repository) ত সংৰক্ষিত।_

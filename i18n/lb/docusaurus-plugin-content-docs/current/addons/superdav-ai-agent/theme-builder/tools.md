@@ -3,17 +3,17 @@ title: Tools a Konfiguratioun
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Tools a Konfiguratioun
+# Tools a Konfiguratioun {#tools-and-configuration}
 
 Theme Builder benotzt eng Rei vun Tools, fir Är WordPress-Site ze analyséieren, ze designen an opzebauen. An der Versioun 1.16.0 ass **sd-ai-agent/site-scrape elo en Tier-1-Tool**, wouduerch et standardméisseg am Theme Builder verfügbar ass. Superdav AI Agent v1.18.0 féiert och e separat verdeelten Advanced-Begleetpaket fir vertrauenswierdeg Entwéckler-Workflows an; dës Tools sinn net Deel vum WordPress.org-Kärpaket a musse separat installéiert an autoriséiert ginn.
 
-## Verfügbar Tools
+## Verfügbar Tools {#available-tools}
 
-### Tier-1-Tools (ëmmer verfügbar)
+### Tier-1-Tools (ëmmer verfügbar) {#tier-1-tools-always-available}
 
 Tier-1-Tools sinn standardméisseg am Theme Builder verfügbar, ouni zousätzlech Konfiguratioun.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Zweck:** Bestehend Websäiten analyséieren, fir Design-Inspiratioun, Inhaltsstruktur a Funktionalitéit ze extrahéieren.
 
@@ -51,11 +51,11 @@ Analyséier den Design vun example.com a benotz en als Inspiratioun fir meng Sit
 - JavaScript-schwéier Siten hu méiglecherweis eng limitéiert Analys
 - Grouss Siten kënnen méi laang fir d'Analys brauchen
 
-### Tier-2-Tools (optional)
+### Tier-2-Tools (optional) {#tier-2-tools-optional}
 
 Tier-2-Tools sinn verfügbar, wann se explizitt an den Theme Builder-Astellungen aktivéiert ginn.
 
-#### Fortgeschratt Analytics
+#### Fortgeschratt Analytics {#advanced-analytics}
 
 Bitt detailléiert Leeschtungsmetriken:
 
@@ -65,7 +65,7 @@ Bitt detailléiert Leeschtungsmetriken:
 - Accessibilitéits-Score
 - Best-Practices-Score
 
-#### Inhaltsoptimiséierer
+#### Inhaltsoptimiséierer {#content-optimizer}
 
 Analyséiert a proposéiert Verbesserunge fir:
 
@@ -75,11 +75,11 @@ Analyséiert a proposéiert Verbesserunge fir:
 - Inhaltsstruktur
 - Platzéierung vu Call-to-action
 
-### Tier-3-Tools (Premium)
+### Tier-3-Tools (Premium) {#tier-3-tools-premium}
 
 Tier-3-Tools erfuerderen zousätzlech Konfiguratioun oder Premium-Funktiounen.
 
-#### AI-Inhaltsgenerator
+#### AI-Inhaltsgenerator {#ai-content-generator}
 
 Generéiert Inhalt fir:
 
@@ -89,7 +89,7 @@ Generéiert Inhalt fir:
 - Meta-Beschreiwungen
 - Call-to-action-Text
 
-#### Fortgeschratt Design-Tools
+#### Fortgeschratt Design-Tools {#advanced-design-tools}
 
 Bitt fortgeschratt Design-Fäegkeeten:
 
@@ -99,7 +99,7 @@ Bitt fortgeschratt Design-Fäegkeeten:
 - Fortgeschratt Faarftheorie
 - Typografie-Optimiséierung
 
-### Advanced-Begleet-Tools (separate Package)
+### Advanced-Begleet-Tools (separate Package) {#advanced-companion-tools-separate-package}
 
 Den Advanced-Begleetpaket gëtt separat vun der Kär-Verëffentlechung vum Superdav AI Agent verdeelt. E ass fir vertrauenswierdeg Entwéckler- a Site-Besëtzer-Ëmfeld geduecht, wou Administrateuren dem Agent explizitt erlaben, Tooling mat héijem Impakt ze benotzen.
 
@@ -116,9 +116,9 @@ Advanced-Begleetfäegkeete kënnen enthalen:
 
 Dokumentéiert dës net als allgemeng verfügbar Theme Builder-Tools fir all Installatioun. Si sinn nëmme verfügbar, wann den Advanced-Begleetpaket installéiert, aktivéiert a fir vertrauenswierdeg Administrateuren ageschränkt ass.
 
-## Tool-Konfiguratioun
+## Tool-Konfiguratioun {#tool-configuration}
 
-### Tools aktivéieren
+### Tools aktivéieren {#enabling-tools}
 
 Fir zousätzlech Tools am Theme Builder ze aktivéieren:
 
@@ -127,7 +127,7 @@ Fir zousätzlech Tools am Theme Builder ze aktivéieren:
 3. Schalt Tools no Bedarf un/aus
 4. Späichert d'Astellungen
 
-### Tool-Berechtegungen
+### Tool-Berechtegungen {#tool-permissions}
 
 E puer Tools erfuerderen Berechtegungen:
 
@@ -137,7 +137,7 @@ E puer Tools erfuerderen Berechtegungen:
 - **Fortgeschratt Funktiounen** — kënnen e Premium-Abonnement erfuerderen
 - **Advanced-Begleet-Tools** — erfuerderen de separat verdeelten Advanced-Paket an explizitt Administrateursvertrauen
 
-### API-Schlësselen a Login-Donnéeën
+### API-Schlësselen a Login-Donnéeën {#api-keys-and-credentials}
 
 Konfiguréiert API-Schlësselen fir Tools, déi se erfuerderen:
 
@@ -146,13 +146,13 @@ Konfiguréiert API-Schlësselen fir Tools, déi se erfuerderen:
 3. Test d'Verbindung
 4. Späichert sécher
 
-### Den Advanced-Begleetpaket installéieren
+### Den Advanced-Begleetpaket installéieren {#installing-the-advanced-companion-package}
 
 Den Advanced-Begleetpaket gëtt separat vum WordPress.org-Kär-ZIP verëffentlecht. Installéiert en nëmmen aus dem offiziellen Distributiounskanal vum Projet fir d'Verëffentlechung, a beschränkt duerno den Zougang op vertrauenswierdeg Administrateuren. Iwwerpréift mënschlech Zoustëmmungs-Gates a Git-Snapshot-Verhalen, éier Dir Filesystem-, Datebank-, WP-CLI-, REST-Dispatcher-, Plugin-Builder-, Benotzerverwaltungs- oder Benchmark-Tools op enger Produktiounssite aktivéiert.
 
-## sd-ai-agent/site-scrape benotzen
+## sd-ai-agent/site-scrape benotzen {#using-sd-ai-agentsite-scrape}
 
-### Basisbenotzung
+### Basisbenotzung {#basic-usage}
 
 Frot den Theme Builder, eng Websäit ze analyséieren:
 
@@ -161,7 +161,7 @@ Analyséier den Design vu menger Konkurrente-Site op competitor.com
 a proposéier Design-Verbesserunge fir meng Site.
 ```
 
-### Spezifesch Analys
+### Spezifesch Analys {#specific-analysis}
 
 Frot spezifesch Aarte vun Analys un:
 
@@ -179,7 +179,7 @@ Iwwerpréif d'mobil Responsivitéit vun example.com a stell sécher, datt meng S
 genausou responsiv ass.
 ```
 
-### Vergläichsanalys
+### Vergläichsanalys {#comparison-analysis}
 
 Vergläich méi Siten:
 
@@ -188,22 +188,22 @@ Vergläich d'Designe vu site1.com a site2.com a schaf en Design,
 deen déi bescht Elementer vu béiden kombinéiert.
 ```
 
-## Tool-Aschränkungen an Iwwerleeungen
+## Tool-Aschränkungen an Iwwerleeungen {#tool-limitations-and-considerations}
 
-### Rate Limiting
+### Rate Limiting {#rate-limiting}
 
 - Scraping ass rate-limitéiert, fir Serveriwwerlaaschtung ze vermeiden
 - Méi Ufroen un déi selwecht Site kënne gedrosselt ginn
 - Grouss Siten kënnen méi laang daueren, fir analyséiert ze ginn
 
-### Genauegkeet vum Inhalt
+### Genauegkeet vum Inhalt {#content-accuracy}
 
 - Dynameschen Inhalt gëtt eventuell net komplett erfaasst
 - Inhalt, dee mat JavaScript gerendert gëtt, kann onvollstänneg sinn
 - Echtzäitdaten ginn eventuell net reflektéiert
 - Verschidden Inhalter kënnen hannert Paywalls leien
 
-### Juristesch an ethesch Iwwerleeungen
+### Juristesch an ethesch Iwwerleeungen {#legal-and-ethical-considerations}
 
 - Respektéier robots.txt an d'Richtlinne vun der Site
 - Scrap kee urheberrechtlech geschützten Inhalt fir Reproduktioun
@@ -211,16 +211,16 @@ deen déi bescht Elementer vu béiden kombinéiert.
 - Iwwerpréif, datt s du d'Rechter hues, fir extrahéierten Inhalt ze benotzen
 - Befolleg d'Benotzungsbedéngunge vun den analyséierte Siten
 
-### Auswierkung op d'Leeschtung
+### Auswierkung op d'Leeschtung {#performance-impact}
 
 - Scraping vu grousse Siten kann Zäit daueren
 - Méi gläichzäiteg Scrapes kënne méi lues sinn
 - Netzwierkverbindung beaflosst d'Vitesse
 - Grouss Datesätz kënnen méi Veraarbechtung erfuerderen
 
-## Bescht Praktiken
+## Bescht Praktiken {#best-practices}
 
-### Site-Analyse benotzen
+### Site-Analyse benotzen {#using-site-analysis}
 
 1. **Analyséier méi Siten** — sammelt Inspiratioun aus verschiddene Quellen
 2. **Fokusséier op d'Struktur** — léier Layout- an Organisatiounsmusteren
@@ -228,7 +228,7 @@ deen déi bescht Elementer vu béiden kombinéiert.
 4. **Studéier Typografie** — identifizéier Schrëftkombinatiounen, déi dir gefalen
 5. **Iwwerpréif d'Navigatioun** — verstéi d'Organisatioun vum Menü
 
-### Ethischt Scraping
+### Ethischt Scraping {#ethical-scraping}
 
 1. **Respektéier robots.txt** — befolleg d'Richtlinne vun der Site
 2. **Kopéier keen Inhalt** — benotz d'Analyse nëmme fir Inspiratioun
@@ -236,7 +236,7 @@ deen déi bescht Elementer vu béiden kombinéiert.
 4. **Gëff Quellen un** — nenn d'Inspiratiounsquellen
 5. **Befolleg Bedéngungen** — respektéier d'Benotzungsbedéngunge vun der Site
 
-### Effektivitéit vum Tool maximéieren
+### Effektivitéit vum Tool maximéieren {#maximizing-tool-effectiveness}
 
 1. **Sief spezifesch** — fro no spezifeschen Aarte vun Analysen
 2. **Gëff Kontext** — erklär den Zweck vun denger Site
@@ -244,9 +244,9 @@ deen déi bescht Elementer vu béiden kombinéiert.
 4. **Iteréier** — verfeiner op Basis vun de Resultater
 5. **Kombinéier Tools** — benotz méi Tools fir eng ëmfaassend Analyse
 
-## Problemléisung
+## Problemléisung {#troubleshooting}
 
-### Site léisst sech net scrapen
+### Site léisst sech net scrapen {#site-wont-scrape}
 
 - Kontrolléier, ob d'Site ëffentlech zougänglech ass
 - Iwwerpréif, ob robots.txt Scraping erlaabt
@@ -254,7 +254,7 @@ deen déi bescht Elementer vu béiden kombinéiert.
 - Kontrolléier d'Internetverbindung
 - Kontaktéier de Support, wann de Problem bestoe bleift
 
-### Onvollstänneg Analyse
+### Onvollstänneg Analyse {#incomplete-analysis}
 
 - D'Site kann dynameschen Inhalt hunn
 - JavaScript gëtt eventuell net komplett gerendert
@@ -262,7 +262,7 @@ deen déi bescht Elementer vu béiden kombinéiert.
 - Probéier amplaz spezifesch Säiten ze analyséieren
 - Fro spezifesch Analysentypen un
 
-### Lues Leeschtung
+### Lues Leeschtung {#slow-performance}
 
 - Grouss Siten dauere méi laang ze analyséieren
 - Méi gläichzäiteg Scrapes si méi lues
@@ -270,7 +270,7 @@ deen déi bescht Elementer vu béiden kombinéiert.
 - Probéier et ausserhalb vun de Spëtzestonnen
 - Analyséier fir d'éischt méi kleng Sektiounen
 
-## Zesummenhängend Dokumentatioun
+## Zesummenhängend Dokumentatioun {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — Designinformatioune sammelen
 - [Design Direction](./design-direction.md) — däin Design verfeineren

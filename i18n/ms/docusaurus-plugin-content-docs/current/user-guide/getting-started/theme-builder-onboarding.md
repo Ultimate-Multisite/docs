@@ -3,11 +3,11 @@ title: Aliran Orientasi Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Aliran Onboarding Pembina Tema
+# Aliran Onboarding Pembina Tema {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 memperkenalkan **aliran onboarding Theme Builder** berpandu yang membantu anda mencipta tema blok tersuai semasa persediaan awal. Ini menggantikan mod Site Builder yang lama dengan pendekatan yang lebih fleksibel dan dibantu oleh agent.
 
-## Apakah Aliran Onboarding Pembina Tema?
+## Apakah Aliran Onboarding Pembina Tema? {#what-is-the-theme-builder-onboarding-flow}
 
 Aliran onboarding Pembina Tema adalah wizard persediaan interaktif yang:
 
@@ -18,9 +18,9 @@ Aliran onboarding Pembina Tema adalah wizard persediaan interaktif yang:
 
 Aliran ini dikuasakan oleh **agent Setup Assistant**, yang akan mengajukan soalan-soalan penjelasan dan membina tema anda secara berperingkat.
 
-## Memulakan Onboarding Pembina Tema
+## Memulakan Onboarding Pembina Tema {#starting-the-theme-builder-onboarding}
 
-### Persediaan Kali Pertama
+### Persediaan Kali Pertama {#first-run-setup}
 
 Apabila anda pertama kali melancarkan Superdav AI Agent pada pemasangan WordPress baharu, anda akan melihat:
 
@@ -35,7 +35,7 @@ Apa yang anda ingin lakukan?
 
 Pilih **"Bina tema tersuai"** untuk memasuki aliran onboarding Theme Builder.
 
-### Pengaktifan Manual
+### Pengaktifan Manual {#manual-activation}
 
 Anda juga boleh memulakan onboarding Theme Builder pada bila-bila masa dengan meminta:
 
@@ -49,9 +49,9 @@ atau
 "Bantu saya cipta tema tersuai"
 ```
 
-## Langkah-Langkah Onboarding
+## Langkah-Langkah Onboarding {#the-onboarding-steps}
 
-### Langkah 1: Pemilihan Mod
+### Langkah 1: Pemilihan Mod {#step-1-mode-selection}
 
 Agent Setup Assistant akan bertanya tentang keutamaan anda:
 
@@ -63,7 +63,7 @@ Bagaimana anda ingin membina tema anda?
 
 **Mod Berpandu** disyorkan untuk kebanyakan pengguna; agent akan membuat cadangan reka bentuk berdasarkan industri dan matlamat anda.
 
-### Langkah 2: Spesifikasi Tapak
+### Langkah 2: Spesifikasi Tapak {#step-2-site-specification}
 
 Anda akan ditanya tentang tapak anda:
 
@@ -74,7 +74,7 @@ Anda akan ditanya tentang tapak anda:
 
 Maklumat ini disimpan dalam memori **site_brief** anda, yang akan dirujuk oleh agent dalam sesi akan datang.
 
-### Langkah 3: Keputusan Sistem Reka Bentuk
+### Langkah 3: Keputusan Sistem Reka Bentuk {#step-3-design-system-decisions}
 
 Agent membimbing anda melalui pemilihan token reka bentuk:
 
@@ -83,7 +83,7 @@ Agent membimbing anda melalui pemilihan token reka bentuk:
 - **Jarak (Spacing)**: Susun atur padat, normal, atau lapang
 - **Pergerakan (Motion)**: Animasi dan transisi (jika diingini)
 
-### Langkah 4: Penjanaan Tema
+### Langkah 4: Penjanaan Tema {#step-4-theme-generation}
 
 Agent Setup Assistant akan menyediakan rangka (scaffold) tema blok tersuai anda dengan:
 
@@ -92,7 +92,7 @@ Agent Setup Assistant akan menyediakan rangka (scaffold) tema blok tersuai anda 
 - Gaya blok tersuai yang sepadan dengan sistem reka bentuk anda
 - Metadata tema dan deklarasi sokongan WordPress
 
-### Langkah 5: Pengaktifan dan Pengesahan
+### Langkah 5: Pengaktifan dan Pengesahan {#step-5-activation-and-verification}
 
 Tema akan diaktifkan secara automatik, dan anda akan melihat:
 
@@ -107,7 +107,7 @@ Tema akan diaktifkan secara automatik, dan anda akan melihat:
 
 Anda kemudian boleh melawat tapak anda untuk mengesahkan bahawa tema dipaparkan dengan betul.
 
-## Spesifikasi Tapak dan Memori site_brief
+## Spesifikasi Tapak dan Memori site_brief {#site-specification-and-sitebrief-memory}
 
 Semasa onboarding, agent akan mengambil spesifikasi tapak anda dalam kategori memori **site_brief**. Ini termasuk:
 
@@ -117,7 +117,7 @@ Semasa onboarding, agent akan mengambil spesifikasi tapak anda dalam kategori me
 - Keutamaan reka bentuk
 - Struktur kandungan
 
-### Mengapa site_brief Penting
+### Mengapa site_brief Penting {#why-sitebrief-matters}
 
 Dalam sesi akan datang, agent akan merujuk site_brief anda untuk:
 
@@ -126,7 +126,7 @@ Dalam sesi akan datang, agent akan merujuk site_brief anda untuk:
 - Memberikan cadangan yang sedar konteks
 - Mengelakkan pengulangan soalan persediaan
 
-### Melihat site_brief Anda
+### Melihat site_brief Anda {#viewing-your-sitebrief}
 
 Anda boleh meminta agent:
 
@@ -142,11 +142,11 @@ atau
 
 Agent akan memaparkan spesifikasi tapak anda yang disimpan.
 
-## Menyesuaikan Selepas Onboarding
+## Menyesuaikan Selepas Onboarding {#customizing-after-onboarding}
 
 Setelah onboarding Theme Builder selesai, anda boleh:
 
-### Menggunakan Kemahiran Estetika Sistem Reka Bentuk
+### Menggunakan Kemahiran Estetika Sistem Reka Bentuk {#use-the-design-system-aesthetics-skill}
 
 Meminta penambahbaikan reka bentuk:
 
@@ -162,7 +162,7 @@ atau
 
 **Kemahiran Estetika Sistem Reka Bentuk** akan membimbing anda melalui kemas kini reka bentuk yang disasarkan.
 
-### Mengedit theme.json Secara Langsung
+### Mengedit theme.json Secara Langsung {#edit-themejson-directly}
 
 Untuk pengguna lanjutan, edit `/wp-content/themes/[theme-name]/theme.json` untuk melaraskan:
 
@@ -171,7 +171,7 @@ Untuk pengguna lanjutan, edit `/wp-content/themes/[theme-name]/theme.json` untuk
 - Nilai jarak
 - Definisi sempadan dan bayangan
 
-### Mencipta Templat Blok Tersuai
+### Mencipta Templat Blok Tersuai {#create-custom-block-templates}
 
 Gunakan editor blok WordPress untuk mencipta templat tersuai untuk:
 
@@ -180,7 +180,7 @@ Gunakan editor blok WordPress untuk mencipta templat tersuai untuk:
 - Halaman produk
 - Borang hubungan
 
-## Perbandingan: Onboarding Lama vs. Baharu
+## Perbandingan: Onboarding Lama vs. Baharu {#comparison-old-vs-new-onboarding}
 
 | Ciri | Site Builder (Lama) | Theme Builder (Baharu) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Gunakan editor blok WordPress untuk mencipta templat tersuai untuk:
 | Fleksibiliti | Pilihan tetap | Boleh disesuaikan |
 | Kemas kini masa depan | Tidak dirujuk | Disimpan dalam site_brief |
 
-## Penyelesaian Masalah
+## Penyelesaian Masalah {#troubleshooting}
 
 **Aliran onboarding tidak selesai**
 - Mulakan semula aliran: "Mula onboarding Theme Builder"
@@ -207,7 +207,7 @@ Gunakan editor blok WordPress untuk mencipta templat tersuai untuk:
 - Minta agent untuk "jana semula tema dengan [perubahan spesifik]"
 - Edit theme.json secara langsung untuk kawalan yang tepat
 
-## Langkah Seterusnya
+## Langkah Seterusnya {#next-steps}
 
 Selepas melengkapkan onboarding Theme Builder:
 

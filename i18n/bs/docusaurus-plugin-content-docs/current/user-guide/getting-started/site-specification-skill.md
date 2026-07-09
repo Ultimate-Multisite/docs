@@ -3,11 +3,11 @@ title: Vještina specifikacije sajta
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Vještina specifikacije sajta
+# Vještina specifikacije sajta {#site-specification-skill}
 
 **Vještina specifikacije sajta** je strukturiran pristup za snimanje ciljeva vašeg sajta, publike i identiteta brenda. Ove informacije se pohranjuju u vašu memoriju **site_brief**, koju agenti koriste kroz sesije kako bi pružili dosljednu pomoć koja je svjesna konteksta.
 
-## Šta je specifikacija sajta?
+## Šta je specifikacija sajta? {#what-is-site-specification}
 
 Specifikacija sajta je proces dokumentovanja sljedećeg:
 
@@ -19,9 +19,9 @@ Specifikacija sajta je proces dokumentovanja sljedećeg:
 
 Ova specifikacija postaje vaš **site_brief**, trajna memorija koju agenti koriste da bi razumjeli kontekst vašeg sajta.
 
-## Zašto koristiti specifikaciju sajta?
+## Zašto koristiti specifikaciju sajta? {#why-use-site-specification}
 
-### Dosljednost kroz sesije
+### Dosljednost kroz sesije {#consistency-across-sessions}
 
 Bez site_brief-a, morali biste ponovo objasniti svrhu sajta svaki put kada započnete novu sesiju. Sa njim, agenti odmah razumiju:
 
@@ -30,7 +30,7 @@ Bez site_brief-a, morali biste ponovo objasniti svrhu sajta svaki put kada zapo�
 - Strukturu vašeg sadržaja
 - Poslovne objektivne ciljeve
 
-### Bolji predlozi
+### Bolji predlozi {#better-recommendations}
 
 Agenti koriste vaš site_brief za:
 
@@ -39,17 +39,17 @@ Agenti koriste vaš site_brief za:
 - Predlaganje dizajna dosljednog vašem brendu
 - Izbjegavanje predlaganja nekompatibilnih funkcija
 
-### Brži uvod u rad
+### Brži uvod u rad {#faster-onboarding}
 
 Novi agenti (ili agenti u novim sesijama) mogu brzo ući u rad čitajući vaš site_brief, umjesto da postavljaju pitanja za pojašnjenje.
 
-## Pokretanje specifikacije sajta
+## Pokretanje specifikacije sajta {#initiating-site-specification}
 
-### Tijekom onboardinga Theme Builder-a
+### Tijekom onboardinga Theme Builder-a {#during-theme-builder-onboarding}
 
 Vještina specifikacije sajta automatski se pokreće tokom **Theme Builder onboarding flow-a**. Agent Setup Assistant postavlja pitanja i gradi vaš site_brief.
 
-### Ručno pokretanje
+### Ručno pokretanje {#manual-initiation}
 
 Možete započeti specifikaciju sajta bilo kada:
 
@@ -63,9 +63,9 @@ ili
 "Help me create a site brief"
 ```
 
-## Proces specifikacije sajta
+## Proces specifikacije sajta {#the-site-specification-process}
 
-### Korak 1: Svrha sajta
+### Korak 1: Svrha sajta {#step-1-site-purpose}
 
 Agent pita:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 Možete odabrati kategoriju ili opisati svoju svrhu.
 
-### Korak 2: Ciljna publika
+### Korak 2: Ciljna publika {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### Korak 3: Identitet brenda
+### Korak 3: Identitet brenda {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### Korak 4: Poslovni ciljevi
+### Korak 4: Poslovni ciljevi {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### Korak 5: Struktura sadržaja
+### Korak 5: Struktura sadržaja {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## Vaša site_brief memorija
+## Vaša site_brief memorija {#your-sitebrief-memory}
 
 Nakon završetka specifikacije sajta, vaše informacije se pohranjuju kao **site_brief** u memoriju vašeg agenta. Ovo je strukturirani zapis koji sadrži:
 
@@ -169,9 +169,9 @@ Nakon završetka specifikacije sajta, vaše informacije se pohranjuju kao **site
 }
 ```
 
-## Pregled i ažuriranje site_brief-a
+## Pregled i ažuriranje site_brief-a {#viewing-and-updating-your-sitebrief}
 
-### Pregled vašeg site_brief-a
+### Pregled vašeg site_brief-a {#view-your-sitebrief}
 
 Pitajte agenta:
 
@@ -187,7 +187,7 @@ ili
 
 Agent će prikazati vaš pohranjeni site_brief.
 
-### Ažuriranje vašeg site_brief-a
+### Ažuriranje vašeg site_brief-a {#update-your-sitebrief}
 
 Ako se vaš sajt razvija, možete ga ažurirati:
 
@@ -203,9 +203,9 @@ ili
 
 Ovo će ponovo pokrenuti vještinu Specifikacije sajta, koristeći vaše postojeće informacije kao početnu tačku.
 
-## Kako agenti koriste site_brief
+## Kako agenti koriste site_brief {#how-agents-use-sitebrief}
 
-### Dizajnerski predlozi
+### Dizajnerski predlozi {#design-recommendations}
 
 Kada tražite izmjene dizajna, agenti se osvrću na vaš site_brief:
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Predlozi funkcija
+### Predlozi funkcija {#feature-suggestions}
 
 Agenti predlažu funkcije usklađene sa vašim ciljevima:
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Struktura sadržaja
+### Struktura sadržaja {#content-structure}
 
 Agenti predlažu organizaciju sadržaja na osnovu vaše strukture:
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## Najbolje prakse
+## Najbolje prakse {#best-practices}
 
-### Budite specifični
+### Budite specifični {#be-specific}
 
 Umjesto "opšta publika," opišite svoju stvarnu publiku:
 
 - ✓ "Women aged 25-45, interested in sustainable fashion"
 - ✗ "Everyone"
 
-### Ažurirajte redovno
+### Ažurirajte redovno {#update-regularly}
 
 Kako se vaš sajt razvija, ažurirajte svoj site_brief:
 
@@ -256,14 +256,14 @@ Kako se vaš sajt razvija, ažurirajte svoj site_brief:
 - Kada se vaš identitet brenda mijenja
 - Kada se vaši poslovni ciljevi mijenjaju
 
-### Koristite dosljednu terminologiju
+### Koristite dosljednu terminologiju {#use-consistent-terminology}
 
 Koristite iste termine kroz sesije:
 
 - ✓ Uvijek recite "sustainable jewelry" (a ne "eco-friendly jewelry" i "green products")
 - ✓ Dosljedno se referišite na publiku na isti način
 
-### Uključite kontekst
+### Uključite kontekst {#include-context}
 
 Dostavite pozadinske informacije koje pomažu agentima da razumiju vaše odluke:
 
@@ -271,7 +271,7 @@ Dostavite pozadinske informacije koje pomažu agentima da razumiju vaše odluke:
 - "Naša publika je tehnološki pismena i očekuje moderni dizajn"
 - "Mi smo startup koji finansira vlastitim sredstvima, pa nam je potrebna rješenja koja su efikasna po pitanju troškova"
 
-## Odnos sa Theme Builder onboarding-om
+## Odnos sa Theme Builder onboarding-om {#relationship-to-theme-builder-onboarding}
 
 Vještina specifikacije sajta integrisana je u **Theme Builder onboarding flow**. Kada završite onboarding, vaš site_brief se automatski kreira sa informacijama koje ste dali.
 
@@ -281,7 +281,7 @@ Takođe možete pokrenuti Specifikaciju sajta nezavisno ako želite:
 - Da ažurirate site_brief kako se vaš sajt razvija
 - Da kreirate detaljnu specifikaciju prije početka Theme Builder-a
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
 **Moj site_brief se ne koristi**
 - Potvrdite da agent ima pristup memoriji
@@ -297,7 +297,7 @@ Takođe možete pokrenuti Specifikaciju sajta nezavisno ako želite:
 - Ažurirajte svoj site_brief ako je zastario
 - Dostavite dodatni kontekst u svojim zahtjevima
 
-## Sljedeći koraci
+## Sljedeći koraci {#next-steps}
 
 Nakon definisanja specifikacije sajta:
 

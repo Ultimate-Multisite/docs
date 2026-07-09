@@ -4,11 +4,11 @@ title: Filtër - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Lejon zhvilluesit e plugin të shtojnë kontrolle të reja për të përcaktuar rezultatet.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Type | Përshkrimi |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Lejon zhvilluesit e plugin të shtojnë kontrolle të reja për të përcaktuar 
 | $domain | `self` | Instanca aktuale e domain. |
 | $domains_and_ips | `array` | Lista e domain-eve dhe IP-ve të gjetura në kërkimin DNS. |
 
-### Që prej
+### Që prej {#since}
 
 - 2.0.4
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) në rreshtin 455
 
 
-## Kthen
+## Kthen {#returns}
 Nëse DNS është konfiguruar saktë apo jo.

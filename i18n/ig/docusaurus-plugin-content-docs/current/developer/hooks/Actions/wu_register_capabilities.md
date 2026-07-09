@@ -4,19 +4,19 @@ title: Omume - wu_register_capabilities
 sidebar_label: wu_register_capabilities
 _i18n_hash: 9b32e061f2a98a4c1bd30af0badd5760
 ---
-# Action: wu_register_capabilities
+# Action: wu_register_capabilities {#action-wuregistercapabilities}
 
 Na-agba iji kwe ka mgbakwunye jikọta modul ikike na njikọta.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | Ihe instance nke registry. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 2.5.0
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L148) na ahịrị 148

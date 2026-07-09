@@ -3,13 +3,13 @@ title: E-postalar ve Duyurular Gönderme
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-postalar ve Yayınlar Gönderme (v2)
+# E-postalar ve Yayınlar Gönderme (v2) {#sending-emails-and-broadcasts-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x ile ilgilidir.**_
 
 Ultimate Multisite, hedeflenen bir kullanıcıya veya bir kullanıcı grubuna e-posta göndererek müşterilerinizle iletişim kurmanıza ve ayrıca duyuruları yayınlamak için onların yönetici panosunda bildirimler göndermenize olanak tanıyan bir özellikle birlikte gelir.
 
-## Broadcasts ile müşterilerinizin Dashboard'una yönetici bildirimleri ekleyin
+## Broadcasts ile müşterilerinizin Dashboard'una yönetici bildirimleri ekleyin {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Ultimate Multisite yayın özelliğini kullanarak kullanıcınızın alt site yönetici Dashboard'una **yönetici bildirimleri** ekleyebilirsiniz.
 
@@ -51,7 +51,7 @@ Mesajınızı oluşturduktan sonra **Send** düğmesine basabilirsiniz.
 
 İşte bu kadar. Yönetici bildirimi kullanıcınızın Dashboard'unda hemen görünmelidir.
 
-## Müşterilerinize e-postalar gönderin
+## Müşterilerinize e-postalar gönderin {#send-emails-to-your-customers}
 
 Ultimate Multisite yayın özelliğini kullanarak kullanıcılarınıza e-posta gönderebilirsiniz. E-postayı yalnızca belirli kullanıcılara gönderme veya abone oldukları ürün ya da plana göre belirli bir kullanıcı grubunu hedefleme seçeneğiniz vardır.
 
@@ -81,11 +81,11 @@ Mesajınızı oluşturduktan sonra **Send** düğmesine basabilirsiniz.
 
 Yayın özelliğini kullanarak son kullanıcılarınıza e-posta göndermek işte bu kadar kolaydır.
 
-## Sistem e-postaları
+## Sistem e-postaları {#system-emails}
 
 Ultimate Multisite içindeki sistem e-postaları, kayıt, ödeme, domain eşleme vb. belirli eylemlerden sonra sistem tarafından gönderilen **otomatik bildirimlerdir**. Bu e-postalar Ultimate Multisite ayarlarından düzenlenebilir veya değiştirilebilir. Ayrıca, başka bir Ultimate Multisite kurulumundan mevcut ayarları sıfırlamanıza ve içe aktarmanıza olanak tanıyan bir özellikle birlikte gelir.
 
-### Sıfırlama ve İçe Aktarma
+### Sıfırlama ve İçe Aktarma {#resetting--importing}
 
 Yeni Ultimate Multisite sürümleri ve eklentiler zaman zaman yeni e-postalar kaydedebilir ve kaydedecektir.
 
@@ -93,7 +93,7 @@ Yeni Ultimate Multisite sürümleri ve eklentiler zaman zaman yeni e-postalar ka
 
 Ancak super adminler ve ajanlar bu yeni kaydedilen e-postaları içe aktarma aracı aracılığıyla içe aktarabilir. Bu süreç, yeni e-posta şablonunun içeriği ve yapılandırmasıyla yeni bir sistem e-postası oluşturur; böylece super admin istediği değişiklikleri yapabilir veya onları olduğu gibi tutabilir.
 
-#### Sistem e-postaları nasıl içe aktarılır
+#### Sistem e-postaları nasıl içe aktarılır {#how-to-import-system-emails}
 
 Ultimate Multisite Settings sayfanıza gidin ve **Emails** sekmesine geçin.
 
@@ -111,7 +111,7 @@ Ardından, hangi sistem e-postalarının içe aktarılabilir olduğunu görmek i
 
 <!-- Ekran görüntüsü kullanılamıyor: Import Emails seçenekleri genişletilmiş Reset and Import modalı -->
 
-#### Sistem E-postalarını Sıfırlama
+#### Sistem E-postalarını Sıfırlama {#reseting-system-emails}
 
 Bazı durumlarda, belirli bir e-posta şablonunda yaptığınız değişikliklerin artık işinize yaramadığını fark eder ve onu **varsayılan durumuna** sıfırlamak isteyebilirsiniz.
 

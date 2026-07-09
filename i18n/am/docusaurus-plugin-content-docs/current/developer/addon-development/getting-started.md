@@ -3,9 +3,9 @@ title: በAddon ልማት መጀመር
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# የተጨማሪ ልማት
+# የተጨማሪ ልማት {#addon-development}
 
-## የተጨማሪ አወቃቀር
+## የተጨማሪ አወቃቀር {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # የአብነት ፋይሎች
 ```
 
-## የዋና ተጨማሪ ፋይል አብነት
+## የዋና ተጨማሪ ፋይል አብነት {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## የብጁ ሞዴል ምሳሌ
+## የብጁ ሞዴል ምሳሌ {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## የአስተዳዳሪ ገጽ ውህደት
+## የአስተዳዳሪ ገጽ ውህደት {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## የእርስዎን Addon መሞከር
+## የእርስዎን Addon መሞከር {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 የማስፋፊያ ነጥቦች
+## v2.13.0 የማስፋፊያ ነጥቦች {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 ከራስ-ገዝ ተከራዮች፣ የcheckout ዶመይኖች፣ ወይም የአስተናጋጅ-አቅራቢ DNS አውቶሜሽን ጋር ለሚዋሃዱ addons ጠቃሚ የሆኑ በርካታ የማስፋፊያ ነጥቦችን ያክላል።
 
-### SSO እና የዋና-ጣቢያ አስተዳደር URLs
+### SSO እና የዋና-ጣቢያ አስተዳደር URLs {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### የcheckout ቅጽ መሠረታዊ ዶመይኖች
+### የcheckout ቅጽ መሠረታዊ ዶመይኖች {#checkout-form-base-domains}
 
 የእርስዎ addon ከእያንዳንዱ-ጣቢያ ብጁ mappings ይልቅ እንደ checkout-form **Site URL** ዶመይኖች መሥራት ያለባቸውን ተጨማሪ የተጋሩ መሠረታዊ ዶመይኖች ሲያቀርብ `wu_checkout_form_base_domains` ይጠቀሙ፦
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite እነዚህን አስተናጋጆች መደበኛ ያደርጋል እና ለእነሱ ራስ-ሰር የእያንዳንዱ-ጣቢያ mapped-domain መዝገቦችን ይዘላል።
 
-### ራስ-ሰር የዶመይን-መዝገብ መፍጠር
+### ራስ-ሰር የዶመይን-መዝገብ መፍጠር {#automatic-domain-record-creation}
 
 አዲስ ለተፈጠረ ጣቢያ ራስ-ሰር የዶመይን-መዝገብ መፍጠርን መከልከል ወይም ማዘግየት ሲያስፈልግ በእርስዎ addon `wu_should_create_domain_record_for_site` ይጠቀሙ፦
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain`ን የሚያዳምጡ የአስተናጋጅ-አቅራቢ ውህደቶች ጣቢያዎች ሲፈጠሩ በአቅራቢ-በኩል DNS መዝገቦችን መፍጠር ይችላሉ። ለዚያ እርምጃ ምንም ውህደት ካልተመዘገበ፣ Ultimate Multisite ባዶውን የጀርባ ሥራ ይዘላል።
 
-## ቀጣይ እርምጃዎች
+## ቀጣይ እርምጃዎች {#next-steps}
 
 - ለሚገኙ እርምጃዎች እና ማጣሪያዎች [Hooks Reference](/developer/hooks)ን ይገምግሙ
 - ለAPI ውህደት [REST API Overview](/developer/rest-api/overview)ን ይመልከቱ

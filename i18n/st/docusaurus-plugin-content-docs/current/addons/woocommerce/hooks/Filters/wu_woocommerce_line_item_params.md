@@ -4,11 +4,11 @@ title: Sefe - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params
+# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Sefa dipharamitha tse sebediswang ho bopa dintho tsa mola ho WooCommerce Cart, pele o fetisetsa moreki ho WooCommerce checkout.
 
-## Dipharamitha
+## Dipharamitha {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Sefa dipharamitha tse sebediswang ho bopa dintho tsa mola ho WooCommerce Cart, p
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Mohlala wa ntho ya mola ya Ultimate Multisite. |
 | $wc_product | `\WC_Product` | Sehlahiswa sa WooCommerce. |
 
-### Ho tloha
+### Ho tloha {#since}
 
 - 2.0.0
-### Mohlodi
+### Mohlodi {#source}
 
 E hlalositswe ho [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) moleng wa 662
 
 
-## E kgutlisa
+## E kgutlisa {#returns}
 Dipharamitha tse fetotsweng tsa ntho ya mola.

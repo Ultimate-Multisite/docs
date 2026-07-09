@@ -3,11 +3,11 @@ title: Plugin Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 introducerer **Plugin Builder & Sandbox Systemet**, som lader AI-assistenten generere, aktivere og administrere WordPress plugins på dit netværk – alt gennem et sikkert, isoleret sandbox miljø.
 
-## Oversigt
+## Oversigt {#overview}
 
 Plugin Builder gør det muligt for AI-assistenten at skrive specialbyggede WordPress plugins som svar på naturligt sproglige anmodninger. Genererede plugins valideres, gemmes og aktiveres inde i et sandbox lag, før de overhovedet påvirker funktionaliteten på en live side.
 
@@ -17,7 +17,7 @@ Brugsscenarier inkluderer:
 - Prototyping af funktioner, der kræver WordPress hooks eller custom post types.
 - Oprettelse af kortlivede automatisering scripts til batch-operationer.
 
-## Generering af en Plugin via AI
+## Generering af en Plugin via AI {#generating-a-plugin-via-ai}
 
 For at generere en plugin skal du åbne Gratis AI Agent chatgrænsefladen og beskrive, hvad du har brug for. For eksempel:
 
@@ -32,7 +32,7 @@ AI'en vil:
 
 Du kan finjustere resultatet ved at følge op i samme samtale tråd, før du aktiverer.
 
-## Sandbox Aktivering
+## Sandbox Aktivering {#sandbox-activation}
 
 Aktivering af en genereret plugin i sandboksen er forskellig fra aktivering på det live netværk. Sandboksen:
 
@@ -48,7 +48,7 @@ For at aktivere en plugin i sandboksen skal du klikke på knappen **Activate in 
 
 En statusbeskeden bekræfter, om aktiveringen er lykkedes eller fejlede. Ved fejl vises fejlloggen i chattråden.
 
-## Administrering af genererede plugins
+## Administrering af genererede plugins {#managing-generated-plugins}
 
 Genererede plugins findes under **Gratis AI Agent → Plugin Builder → Manage Plugins**. Fra denne skærm kan du:
 
@@ -64,7 +64,7 @@ Genererede plugins findes under **Gratis AI Agent → Plugin Builder → Manage 
 **Installer på netværket** udruller det genererede plugin til dit live WordPress multisite. Gennemgå plugin-koden, før du fortsætter. Gratis AI Agent vil bede om bekræftelse, før en live-installation fuldføres.
 :::
 
-## Installation af et genereret plugin på netværket
+## Installation af et genereret plugin på netværket {#installing-a-generated-plugin-on-the-network}
 
 Når du er tilfreds med et plugin i sandboksen, kan du installere det på det live netværk:
 
@@ -78,7 +78,7 @@ Alternativt kan du bruge slash-kommandoen i chatgrænsefladen:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin opdateringer
+## Plugin opdateringer {#plugin-updates}
 
 For at opdatere et genereret plugin, beskriv ændringen til AI-assistenten i en ny samtale:
 
@@ -86,7 +86,7 @@ For at opdatere et genereret plugin, beskriv ændringen til AI-assistenten i en 
 
 AI'en genererer en ny version, som vises i sandboksen sammen med den nuværende version. Du gennemgår diff'en og bekræfter før opdateringen påføres.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Plugin Builder bruger en integreret **HookScanner** til at analysere de hooks og filters, der er registreret af hver genereret plugin. Outputtet fra HookScanner vises i chatresponsen og inkluderer:
 
@@ -96,7 +96,7 @@ Plugin Builder bruger en integreret **HookScanner** til at analysere de hooks og
 
 Dette hjælper dig med at forstå en plugins adfærd, før du aktiverer den.
 
-## Sikkerhedsovervejelser
+## Sikkerhedsovervejelser {#security-considerations}
 
 - Genererede plugins gemmes separat fra manuelt installerede plugins og er ikke tilgængelige via standard WordPress plugin management-skærmen, medmindre du eksplicit installerer dem på netværket.
 - Sandboksen bruger sti-validering for at forhindre katalogtraversering, når man skriver plugin-filer.

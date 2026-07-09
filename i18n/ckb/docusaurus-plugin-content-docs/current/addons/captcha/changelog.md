@@ -3,7 +3,7 @@ title: گۆڕانکارییەکانی کاپچا
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# گۆڕانکارییەکانی Captcha
+# گۆڕانکارییەکانی Captcha {#captcha-changelog}
 
 وەشان: 1.5.0 - بڵاوکرایەوە لە 2026-05-22
 * نوێ: سنووردانەری ڕێژەی وەستاندنی تەواو — هەموو GET و POST ـێک لەسەر ڕووکارە پارێزراوەکانی Captcha دەژمێرێت (wp-login / register / lost-password / comments، WooCommerce my-account / checkout / pay-for-order، Ultimate Multisite checkout / inline-login) و بە HTTP 429، سەردێڕێکی `Retry-After`، و خەوی دواکەوتنی هەڕەمەکی (1–5 چرکە، بە سنووری توندی 15 چرکە) وەڵام دەداتەوە.

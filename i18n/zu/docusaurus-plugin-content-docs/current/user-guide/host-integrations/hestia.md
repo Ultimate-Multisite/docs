@@ -3,28 +3,28 @@ title: Ukuhlanganiswa kwe-Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Ukuhlanganiswa kwe-Hestia Control Panel
+# Ukuhlanganiswa kwe-Hestia Control Panel {#hestia-control-panel-integration}
 
 Lo mhlahlandlela uchaza indlela yokulungisa ukuhlanganiswa kwe-Ultimate Multisite Hestia ukuze izizinda eziqondanisiwe kunethiwekhi yakho zengezwe ngokuzenzakalelayo (futhi zisuswe) njenge-Web Domain Aliases ku-Hestia.
 
 - Inkomba ye-Hestia CLI: v-add-web-domain-alias / v-delete-web-domain-alias
 - Idokhumenti esemthethweni ye-REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Okwenzayo
+## Okwenzayo {#what-it-does}
 - Lapho isizinda siqondaniswa ku-Ultimate Multisite, ukuhlanganiswa kubiza i-Hestia API ukuze kuqalise:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Lapho ukuqondaniswa kwesizinda kususwa, kuqalisa:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Ngokuzikhethela kwengeza/kususe i-alias ye-`www.` kuye ngesilungiselelo sakho esithi “Dala ngokuzenzakalelayo isizinda esingaphansi se-www” kuzilungiselelo ze-Domain Mapping.
 
-## Okudingekayo Ngaphambi Kokuqala
+## Okudingekayo Ngaphambi Kokuqala {#prerequisites}
 - I-Hestia Web Domain ekhona esivele ikhomba ekufakweni kwakho kwe-WordPress. Ukuhlanganiswa kuzonamathisela ama-alias kulesi sizinda esiyisisekelo.
 - Ukufinyelela kwe-Hestia API kunikwe amandla. Ungaqinisekisa usebenzisa iphasiwedi noma i-API hash/token.
 
 Bheka amadokhumenti e-REST API ka-Hestia ukuze unike amandla ukufinyelela kwe-API nemininingwane yokuqinisekisa:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Ukulungiselela (Isilekeleli → Ukuhlanganiswa → Hestia)
+## Ukulungiselela (Isilekeleli → Ukuhlanganiswa → Hestia) {#configuration-wizard--integrations--hestia}
 Nikeza amanani alandelayo:
 
 - `WU_HESTIA_API_URL` (kuyadingeka)
@@ -42,16 +42,16 @@ Nikeza amanani alandelayo:
 
 Ungavumela isilekeleli sifake lawa ma-constant ku-`wp-config.php`, noma uwachaze mathupha.
 
-## Ukuqinisekisa Ukusethwa
+## Ukuqinisekisa Ukusethwa {#verifying-setup}
 - Esinyathelweni sesilekeleli esithi “Ukuhlola”, i-plugin ibiza `v-list-web-domains <WU_HESTIA_ACCOUNT> json` nge-API. Impendulo yempumelelo iqinisekisa ukuxhumeka nokuqinisekisa.
 - Ngemva kokuqondanisa isizinda, hlola ku-Hestia: Web > isizinda esiyisisekelo > Aliases. Kufanele ubone i-alias entsha ingeziwe.
 
-## Amanothi Namathiphu
+## Amanothi Namathiphu {#notes--tips}
 - Qinisekisa ukuthi `WU_HESTIA_WEB_DOMAIN` isivele ikhona futhi ingeyakwa-`WU_HESTIA_ACCOUNT`.
 - Uma kudingeka i-SSL, phatha izitifiketi ku-Hestia. Lokhu kuhlanganiswa okwamanje kusingatha ama-alias kuphela.
 - I-plugin ingase futhi yengeze/isuse `www.<domain>` kuye ngesilungiselelo sakho se-Domain Mapping “isizinda esingaphansi se-www”.
 
-## Isibonelo Sokubiza i-API (cURL)
+## Isibonelo Sokubiza i-API (cURL) {#example-api-call-curl}
 Ngezansi kunesibonelo somqondo (lungisa ngokwemvelo yakho). Bheka idokhumenti esemthethweni ukuze uthole amapharamitha aqondile.
 
 ```
@@ -70,11 +70,11 @@ cmd=v-add-web-domain-alias
 
 Ukuze ususe, sebenzisa `cmd=v-delete-web-domain-alias` nama-args afanayo.
 
-## Ukuxazulula Izinkinga
+## Ukuxazulula Izinkinga {#troubleshooting}
 - Iphutha le-HTTP elivela ku-API: qinisekisa ukuthi `WU_HESTIA_API_URL` iyafinyeleleka futhi ifaka `/api`.
 - Amaphutha okuqinisekisa: qinisekisa `WU_HESTIA_API_USER` kanye noma `WU_HESTIA_API_PASSWORD` noma `WU_HESTIA_API_HASH`.
 - “I-akhawunti/isizinda esiyisisekelo siyashoda” kumalogi: qinisekisa ukuthi `WU_HESTIA_ACCOUNT` ne-`WU_HESTIA_WEB_DOMAIN` kusethiwe futhi kuvumelekile ku-Hestia.
 
-## Izinkomba
+## Izinkomba {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Inkomba ye-Hestia CLI (Ama-alias): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

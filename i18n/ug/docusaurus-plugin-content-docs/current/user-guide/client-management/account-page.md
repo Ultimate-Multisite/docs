@@ -3,7 +3,7 @@ title: مۇشتى ھساب سىچىسى
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# مۆلیکیتِرەکەت بۆ بەکارهێنەرەکان (v2)
+# مۆلیکیتِرەکەت بۆ بەکارهێنەرەکان (v2) {#your-clients-account-page-v2}
 
 _**تێبینی گرنگ: ئەم بابەت Ultimate Multisite 2.x بیری دەدات.**_
 
@@ -11,7 +11,7 @@ _**تێبینی گرنگ: ئەم بابەت Ultimate Multisite 2.x بیری دە
 
 لە ئەم ڕێنماییەدا، ئێمە دەبینیت چۆن لەسەر لاپەڕەی بەڕێوەبردنی بەکارهێنەرەکە کار دەکەین و دەبینیت کە کڕیارەکان دەتوانن چی بکەن و ببینن لەو ناوچەیە.
 
-## لاپەڕەی بەڕێوەبردنی بەکارهێنەر (The Account Page)
+## لاپەڕەی بەڕێوەبردنی بەکارهێنەر (The Account Page) {#the-account-page}
 
 لاپەڕەی بەڕێوەبردنی بەکارهێنەر بە ڕێگەی 클릭کردنەوەی **Account** لەناو داش보اردەکەی کڕیارەکە دەست دێت.
 
@@ -27,7 +27,7 @@ _**تێبینی گرنگ: ئەم بابەت Ultimate Multisite 2.x بیری دە
 
 دەتوانرێت ئەندازیاری خۆی بگۆڕیت بۆ پلانێکی دیکە یان پڕۆژەیەکی دیکە کە ئێمە پێشکەش دەکەین، یان پڕۆژەیەکی دیکە بخوێننەوە بکەن. بیستنی هەر بەشی بە جۆرێک بەجیا دەبینین.
 
-### Sizin Üyelik Özeti:
+### Sizin Üyelik Özeti: {#your-membership-overview}
 
 Müşterilerinizin web sitesi adının hemen altındaki ilk blok, mevcut planınızı ve bu planla birlikte satın aldıkları hizmetleri/paketleri gösteren bir genel bakış sunar. Bu blok ayrıca üyelik numarasını, bunun için ödenen başlangıç miktarını, planın ve herhangi bir hizmet/paketin ne kadar tuttuğunu ve bu üyelik için kaç kez fatura kesildiğini de gösterirler. Ayrıca üyeliğin **Aktif** mı, **Süresi Dolmuş** mu yoksa **İptal Edilmiş** mi olduğunu da görebilirler.
 
@@ -43,7 +43,7 @@ Bu bloğun hemen altında müşterileriniz **Bu Site Hakkında** ve **Site Limit
 
 Lütfen kupon kodlarının bu üyelik değiştirme sayfasına eklenemeyeceğini unutmayın. Müşteri ilk üyelik satın alımında bir kupon kodu kullandıysa, o kod bu yeni üyeliğe de uygulanacaktır.
 
-### Faturalandırma Adresini Güncelleme:
+### Faturalandırma Adresini Güncelleme: {#updating-the-billing-address}
 
 حساب səhifəsində müştərilərin ödəniş ünvanını da yeniləməsinə imkan verilir. Onlar sadəcə _Billing Address_ yanında olan **Update** düyməsinə basmalarını lazımdır.
 
@@ -53,7 +53,7 @@ Müştəri üçün yeni bir pəncərə açılacaq. Onların etməli olduğu yega
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Sayt Şablonunu Dəyişmək:
+### Sayt Şablonunu Dəyişmək: {#changing-the-site-template}
 
 Müştərilərin sayt şablonlarını dəyişməsinə imkan vermək üçün siz **Ultimate Multisite > Settings > Sites** bölməsinə getməli və **Allow Template Switching** seçimi üzərində aktiv etməlisiniz.
 
@@ -81,7 +81,7 @@ Ultimate Multisite 2.10.0 yenidən dizayn edilmiş şablon dəyişmə paneli gö
 
 Мәсели, алар текучий шаблонга кайтарып җибәрүне кайткында, алар бу панельдан **Reset current template**-не дә ислетә алалар. Другаша шаблон өзгөртүгә килдеге китерүче иде, шаблонны ясау (reset) – булган сайт контентын үзине алмаштырырга мөмкин, демек алар бу ясау әсе өчен түшәрәндә тасдикләүледер.
 
-### Кастом доменнарны Коснуру:
+### Кастом доменнарны Коснуру: {#adding-custom-domains}
 
 Мәсели, алар планнары өчен кастом доменнарны да үзләренең хатталарында коснурга мөмкин. Аларның кастом доменнарны исәпләп ислетүе өчен **Ultimate Multisite > Settings >** **Domain Mapping**-гә китерегез.
 
@@ -115,7 +115,7 @@ Ultimate Multisite 2.10.0 yenidən dizayn edilmiş şablon dəyişmə paneli gö
 
 بعد از کلیک بر روی **Add Domain** (افزودن دامنه)، دامنه به حساب مشتری شما اضافه می‌شود. تمام کاری که اکنون باید انجام دهند این است که رکورد‌های DNS این دامنه سفارشی را در رجیستر دامنه خود تغییر دهند.
 
-### تغییر رمز عبور:
+### تغییر رمز عبور: {#changing-password}
 
 در داشبورد حساب کاربری، مشتریان شما همچنین می‌توانند با کلیک بر روی **Change Password** (تغییر رمز عبور)، رمز عبور خود را تغییر دهند.
 
@@ -125,7 +125,7 @@ Ultimate Multisite 2.10.0 yenidən dizayn edilmiş şablon dəyişmə paneli gö
 
 ![فرم تغییر رمز عبور با فیلدهای رمز عبور فعلی و جدید](/img/account-page/change-password-form.png)
 
-### منطقه خطر:
+### منطقه خطر: {#danger-zone}
 
 ما دو گزینه هم داریم که در قسمت **منطقه خطر (Danger Zone)** نشان داده شده‌اند: **حذف سایت (Delete Site)** و **حذف حساب کاربری (Delete Account)**. این دو هم در منطقه خطر قرار دارند چون این دو عمل غیرقابل بازگشت هستند. اگر مشتریان وب‌سایت یا حساب خود را حذف کنند، نمی‌توانند آن‌ها را پس بگیرند.
 

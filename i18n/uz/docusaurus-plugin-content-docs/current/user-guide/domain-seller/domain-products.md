@@ -3,11 +3,11 @@ title: Domain Mahsulotlari va Narxi
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domen Mahsulotlari va Narxlari
+# Domen Mahsulotlari va Narxlari {#domain-products-and-pricing}
 
 Domen mahsulotlari siz narxni, TLDlarni (Top-Level Domain) boshqarishingiz, WHOIS maxfiyligini sozlash va provayder tanlashni nazorat qilish uchun ishlatiladi. Har bir domen mahsuloti standart Multisite Ultimate mahsuloti bo'lib, uning qo'shimcha **Domain Settings** yorlig'i mavjud.
 
-## Domen mahsuloti yaratish
+## Domen mahsuloti yaratish {#creating-a-domain-product}
 
 1. **Network Admin › Ultimate Multisite › Products** ga o'ting
 2. **Add New** ni bosing
@@ -17,13 +17,13 @@ Domen mahsulotlari siz narxni, TLDlarni (Top-Level Domain) boshqarishingiz, WHOI
 
 Domen mahsulotlari mahsulotlar ro'yxatida purpura rangli **Domain** belgisi bilan paydo bo'ladi va ularni **Domain Products** yorlig'i orqali filtrlashingiz mumkin.
 
-## Domain sozlamalari yorligi
+## Domain sozlamalari yorligi {#domain-settings-tab}
 
-### Provayder (Provider)
+### Provayder (Provider) {#provider}
 
 Bu mahsulot uchun ro'yxatdan o'tishni qaysi registrator boshqarishini tanlang. Bu global **Default provider** (Dastlabki provayder) sozlamalarida belgilangan bo'ladi.
 
-### Qo'llab-quvvatlanadigan TLDlar (Supported TLDs)
+### Qo'llab-quvvatlanadigan TLDlar (Supported TLDs) {#supported-tlds}
 
 Boshqa hech qanday mahsulot bilan mos kelmaydigan barcha TLDlar uchun qo'llaniladigan **catch-all product** (umumiy mahsulot) yaratish uchun bo'sh qoldiring.
 
@@ -31,7 +31,7 @@ Faqat o'sha kengaytirishlar (extension) uchun tegishli bo'lgan TLDlar ro'yxatini
 
 **Mahsulot moslashuvi qanday ishlaydi:** Mijoz domen qidirganida, qo'shimcha mahsulot eng aniq mos keladigan mahsulotni tanlaydi. TLD ro'yxatida `.com` bo'lgan mahsulot umumiy (catch-all) mahsulotdan oldin ustunlikka ega. Agar hech qanday TLD-specific mahsulot mos kelmasa, umumiy mahsulot ishlatiladi. Hech qanday mahsulotlar mavjud bo'lmasa, domen qidiruvi ko'rsatilmaydi.
 
-### Markup turi (Markup type)
+### Markup turi (Markup type) {#markup-type}
 
 Sizning yetkazib berish narxingizni (retail price) ombor narxidan (wholesale cost) qanday hisoblashini uchta rejim boshqaradi:
 
@@ -41,9 +41,9 @@ Sizning yetkazib berish narxingizni (retail price) ombor narxidan (wholesale cos
 | **Fixed markup** (Qat'iy markup) | Qat'iy pul miqdori qo'shiladi. 10 dollarli domen uchun 5 dollarli markup berish 15 dollarga teng bo'ladi. |
 | **Fixed price** (Qat'iy narx) | Ombor narxini butunlay e'tiborsiz qoldiradi. Har doim siz kiritgan miqdorni to'laydi. |
 
-### Kirish narxi (Introductory pricing)
+### Kirish narxi (Introductory pricing) {#introductory-pricing}
 
-### WHOIS maxfiyligi (WHOIS privacy)
+### WHOIS maxfiyligi (WHOIS privacy) {#whois-privacy}
 
 Bu, bu mahsul orqali ro'yxatdan olingan domenlar uchun WHOIS maxfiyligi himoyasi taklif qilinishini boshqaradi.
 
@@ -57,7 +57,7 @@ Namecheap uchun WHOIS maxfiyligi WhoisGuard (har doim bepul) dan foydalanadi. Op
 
 ---
 
-## TLD import va sinxronlash
+## TLD import va sinxronlash {#tld-import-and-sync}
 
 Domen mahsulotlari ulanish orqali berilgan provayderdan olingan real vaqt rejimida toqqiz darajadagi narxlarni ko'rsatadi. Buni ishlatish uchun TLDlar (Top-Level Domains) import qilinishi kerak.
 
@@ -68,7 +68,7 @@ Sinxronlashdan so'ng, istalgan domen mahsulotining Domain Settings yorlig'iga o'
 
 ---
 
-## Avtomatik yangilash (Auto-renewal)
+## Avtomatik yangilash (Auto-renewal) {#auto-renewal}
 
 Domenlar yangilanishi mijozning a'zo holatiga bog'liq:
 
@@ -88,7 +88,7 @@ Domen hayoti voqealariga kiruvchi elektron pochta shablon ID'lari:
 
 ---
 
-## Admin: Domenni qo'lda ro'yxatdan o'tkazish
+## Admin: Domenni qo'lda ro'yxatdan o'tkazish {#admin-manual-domain-registration}
 
 Mijozlar xarid jarayonidan o'tmasdan, ularni o'zidan domenini ro'yxatdan o'tkazish uchun quyidagi qadamlarni bajaring:
 

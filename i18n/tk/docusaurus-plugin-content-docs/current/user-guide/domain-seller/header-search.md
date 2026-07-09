@@ -3,11 +3,11 @@ title: Başlykdaky domen gözlegi
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Sözbaşy domen gözlegi
+# Sözbaşy domen gözlegi {#header-domain-search}
 
 Bu sazlamany, domen gözlegini başlaýan kiçi sözbaşy formasyny isläniňizde, soňra müşderä Ultimate Multisite töleg tamamlaýyş sahypasynyň içinde elýeterli domenlerden saýlamaga mümkinçilik bermek üçin ulanyň.
 
-## Talaplar
+## Talaplar {#requirements}
 
 - Ultimate Multisite torda işjeň.
 - Multisite Ultimate Domain Seller torda işjeň.
@@ -16,7 +16,7 @@ Bu sazlamany, domen gözlegini başlaýan kiçi sözbaşy formasyny isläniňizd
   - Goldanýan TLD-ler sazlanan, mysal üçin `com`, `net` we `org`.
 - **Domen saýlamagy** meýdanyny öz içine alýan dogry töleg tamamlaýyş formasy.
 
-## Töleg tamamlaýyş formasy
+## Töleg tamamlaýyş formasy {#checkout-form}
 
 1. Hasaba alyş sahypasy tarapyndan ulanylýan töleg tamamlaýyş formasyny dörediň ýa-da redaktirläň.
 2. **Ulanyjy ady** bilen birlikde adaty hökmany töleg tamamlaýyş/Account meýdanlaryny goşuň. Diňe domen meýdanyny öz içine alýan töleg tamamlaýyş formasy Ultimate Multisite barlagy tarapyndan ret edilýär.
@@ -30,7 +30,7 @@ Hasaba alyş sahypasy töleg tamamlaýyş formasyny görkezmeli, mysal üçin:
 [wu_checkout slug="domain-form"]
 ```
 
-## Sözbaşy formasy
+## Sözbaşy formasy {#header-form}
 
 Sahypanyň sözbaşysynda girizilen gözleg adalgasyny töleg tamamlaýyş sahypasyna `domain_name` hökmünde iberýän kiçi `GET` formasyny goşuň:
 
@@ -44,7 +44,7 @@ Sahypanyň sözbaşysynda girizilen gözleg adalgasyny töleg tamamlaýyş sahyp
 
 Ýörite sözbaşy JavaScript-inde domeni öňünden saýlamaň. Sözbaşy diňe gözleg adalgasyny geçirmeli. Domain Seller töleg tamamlaýyş skripti `?domain_name=example` okaýar, töleg tamamlaýyş gözleg gutusyny doldurýar we elýeterlilik gözlegini işledýär, şeýdip müşderi gaýtarylan domenlerden saýlap bilýär.
 
-## Garaşylýan özüni alyp baryş
+## Garaşylýan özüni alyp baryş {#expected-behaviour}
 
 Sözbaşynyň içinde `example` gözlemek şuny açmaly:
 
@@ -61,7 +61,7 @@ Soňra töleg tamamlaýyş sahypasy saýlanyp bolýan netijeleri görkezmeli, my
 
 Elýeterli netije saýlanandan soň, sargyt jemlemesi domen hasaba alyş önümini we saýlanan domen adyny öz içine almaly.
 
-## Barlag
+## Barlag {#verification}
 
 1. Baş sahypany açyň.
 2. Diňe ady gözläň, mysal üçin `example`.
@@ -71,7 +71,7 @@ Elýeterli netije saýlanandan soň, sargyt jemlemesi domen hasaba alyş önümi
 6. Elýeterli domen üçin **Saýla** basyň.
 7. Sargyt jemlemesinde `Domain Registration - example.com` ýa-da saýlanan domeniň bardygyny tassyklaň.
 
-## Näsazlyklary düzetmek
+## Näsazlyklary düzetmek {#troubleshooting}
 
 - Sanaw peýda bolmasa, brauzeriň tor goýmasynda `admin-ajax.php?action=wu_domain_search` barlaň we onuň boş däl `domains` ýa-da `results` gaýtarýandygyny tassyklaň.
 - Töleg tamamlaýyş formasy saklananda barlagdan geçmese, **Ulanyjy ady** ýaly hökmany Account meýdanlaryny goşuň.

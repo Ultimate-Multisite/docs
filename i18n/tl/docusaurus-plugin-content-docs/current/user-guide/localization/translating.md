@@ -3,11 +3,11 @@ title: Pagsasalin ng Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Pagsasalin ng Ultimate Multisite
+# Pagsasalin ng Ultimate Multisite {#translating-ultimate-multisite}
 
 Ang Ultimate Multisite ay binuo sa Ingles, ngunit ang plugin na ito ay lubos na nasasalin at aktibong tinatanggap natin ang mga kontribusyon sa pagsasalin.
 
-## Mga Pagsasalin ng Core Plugin
+## Mga Pagsasalin ng Core Plugin {#core-plugin-translations}
 
 Ang core Ultimate Multisite plugin ay isinasalin sa pamamagitan ng opisyal na **WordPress.org translation platform**:
 
@@ -24,7 +24,7 @@ Ito ang standard WordPress community translation system. Kapag umabot na sa sapa
 
 Kung gusto mong maging translation editor para sa iyong wika (may kakayahang aprubahan ang mga salin), makipag-ugnayan sa [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Mga Pagsasalin ng Addon
+## Mga Pagsasalin ng Addon {#addon-translations}
 
 Ang mga addon plugin ay isinasalin nang hiwalay sa:
 
@@ -32,11 +32,11 @@ Ang mga addon plugin ay isinasalin nang hiwalay sa:
 
 Sa kasalukuyan, ang mga pagsasalin ng addon ay ginagawa gamit ang AI bilang panimula. Sakop nito ang lahat ng sinusuportang wika ngunit maaaring mayroong hindi natural na pagkakabuo o mga pagkakamali. Malugod tayo sa mga human translator para mag-review at magmungkahi ng mga pagpapabuti upang mas maging natural at tumpak ito.
 
-## Mga Lokal na Pagsasalin
+## Mga Lokal na Pagsasalin {#local-translations}
 
 Kung mas gusto mong gumawa ng sarili mong lokal na salin para sa iyong sariling project kaysa mag-contribute upstream, may dalawang opsyon ka:
 
-### Paggamit ng Poedit
+### Paggamit ng Poedit {#using-poedit}
 
 Maaari mong gamitin ang desktop application na **[Poedit](https://poedit.net)** para isalin ang `.pot` file:
 
@@ -46,6 +46,6 @@ Maaari mong gamitin ang desktop application na **[Poedit](https://poedit.net)** 
 4. I-save -- Ang Poedit ay gagawa ng `.po` at `.mo` files
 5. Ilagay ang mga output files sa folder na `lang`
 
-### Paggamit ng Loco Translate
+### Paggamit ng Loco Translate {#using-loco-translate}
 
 Ang **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin ay nagpapahintulot sa iyo na magsalin nang direkta mula sa admin panel nang hindi na kailangan ng anumang desktop tools. Awtomatiko itong humahawak sa paggawa at pag-compile ng mga translation file para sa iyo.

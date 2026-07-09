@@ -4,11 +4,11 @@ title: فلٹر - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands
+# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 یہ فلٹر طے کرتا ہے کہ اس اینٹیٹی کے لیے کون سے `sub_commands` استعمال کے لیے فعال (enabled) ہیں۔
 
-## پیرامیٹرز (Parameters)
+## پیرامیٹرز (Parameters) {#parameters}
 
 | Name | Type | وضاحت (Description) |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 | $command_base | `string` | وہ بیس (base) جو کمانڈ میں روٹ کے فوراً بعد استعمال ہوتا ہے۔ |
 | $this | `\Base_Manager` | آبجیکٹ کا انسٹنس (object instance)۔ |
 
-### سے (Since)
+### سے (Since) {#since}
 
 - 2.0.0
-### ماخذ (Source)
+### ماخذ (Source) {#source}
 
 Defined in [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) at line 198

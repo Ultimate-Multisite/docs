@@ -4,11 +4,11 @@ title: 'Àlẹmọ - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Ó ń ṣàlẹmọ meta data kí ó tó di serialized láti fipamọ́ sínú database.
 
-## Àwọn Parameter
+## Àwọn Parameter {#parameters}
 
 | Orúkọ | Type | Àpèjúwe |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 | $data_unserialized | `array` | Data object tí a ó fipamọ́. |
 | $this | `\Base_Model` | Instance object náà. |
 
-### Láti
+### Láti {#since}
 
 - 2.0.0
-### Orísun
+### Orísun {#source}
 
 A ṣàlàyé rẹ̀ nínú [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) ní laini 534

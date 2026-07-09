@@ -3,7 +3,7 @@ title: Tšupiso ea Bokhoni
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tshupiso ya Bokgoni
+# Tshupiso ya Bokgoni {#abilities-reference}
 
 Bokgoni ke diketso tsa motheo tseo Gratis AI Agent e ka di bitsang ho kenyo ya hao ya WordPress. Bokgoni bo bong le bo bong ke class ya PHP e ngodisitsweng e hlahisang JSON schema — moemedi o bala schema ena ka nako ya tshebetso ho utlwisisa hore na ke diparamethara dife tse hlokahalang le hore na bokgoni bo kgutlisa eng.
 
@@ -11,11 +11,11 @@ Leqephe lena le ngola bokgoni bohle bo tlang le Gratis AI Agent v1.9.0.
 
 ---
 
-## Mefuta ya Diposo e Ikgethileng
+## Mefuta ya Diposo e Ikgethileng {#custom-post-types}
 
 Bokgoni bona bo laola mefuta ya diposo e ikgethileng (CPTs) e ngodisitsweng ka moemedi. Dingodiso di bolokwa tafoleng ya dikgetho tsa WordPress hore di kgone ho phela kamora ho tima le ho bulela plugin hape.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 E ngodisa mofuta o motjha wa poso e ikgethileng.
 
@@ -50,7 +50,7 @@ E ngodisa mofuta o motjha wa poso e ikgethileng.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 E kgutlisa mefuta yohle ya diposo e ikgethileng e ngodisitsweng ke moemedi.
 
@@ -73,7 +73,7 @@ E kgutlisa mefuta yohle ya diposo e ikgethileng e ngodisitsweng ke moemedi.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 E hlakola ngodiso ya mofuta wa poso e ikgethileng o neng o ngodisitswe ke moemedi. Diposo tse teng tsa mofuta oo di sala database empa ha di sa fihlelleha ka mofuta wa poso.
 
@@ -87,11 +87,11 @@ E hlakola ngodiso ya mofuta wa poso e ikgethileng o neng o ngodisitswe ke moemed
 
 ---
 
-## Ditaxonomy tse Ikgethileng
+## Ditaxonomy tse Ikgethileng {#custom-taxonomies}
 
 Bokgoni bona bo laola ditaxonomy tse ikgethileng. Jwalo ka CPTs, dingodiso tsa taxonomy di bolokwa.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 E ngodisa taxonomy e ntjha e ikgethileng.
 
@@ -123,7 +123,7 @@ E ngodisa taxonomy e ntjha e ikgethileng.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 E kgutlisa ditaxonomy tsohle tse ikgethileng tse ngodisitsweng ke moemedi.
 
@@ -146,7 +146,7 @@ E kgutlisa ditaxonomy tsohle tse ikgethileng tse ngodisitsweng ke moemedi.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 E hlakola ngodiso ya taxonomy e ikgethileng e neng e ngodisitswe ke moemedi.
 
@@ -160,11 +160,11 @@ E hlakola ngodiso ya taxonomy e ikgethileng e neng e ngodisitswe ke moemedi.
 
 ---
 
-## Sistimi ya Moralo
+## Sistimi ya Moralo {#design-system}
 
 Bokgoni ba sistimi ya moralo bo fetola ponahalo ya sebaka sa WordPress — ho tloha ho CSS e ikgethileng ho ya ho dipaterone tsa block le logo ya sebaka.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 E kenya CSS qetellong ya `<head>` ya sebaka ka `wp_add_inline_style`. CSS e bolokwa kgethong ya `gratis_ai_agent_custom_css` mme e tloswa moleng ka hlweko ha bokgoni bo resetwa.
 
@@ -190,7 +190,7 @@ E kenya CSS qetellong ya `<head>` ya sebaka ka `wp_add_inline_style`. CSS e bolo
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 E ngodisa paterone ya block e ka sebediswang hape laeboraring ya dipaterone ya WordPress.
 
@@ -209,7 +209,7 @@ E ngodisa paterone ya block e ka sebediswang hape laeboraring ya dipaterone ya W
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 E thathamisa dipaterone tsohle tsa block tse ngodisitsweng ke moemedi.
 
@@ -231,7 +231,7 @@ E thathamisa dipaterone tsohle tsa block tse ngodisitsweng ke moemedi.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 E seta logo ya saete ya WordPress ho attachment ID e fanoeng kapa URL ya setshwantsho se hole. Ha ho fanoa ka URL, setshwantsho se jarollwa mme se kenngwa ho Media Library.
 
@@ -248,7 +248,7 @@ E nngwe ya `attachment_id` kapa `url` e tlameha ho fanwa.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 E kenya preset e bitswang ya mmala/typography ho `theme.json` ya sehlooho se sebetsang (kapa `global-styles`). Di-preset ke di-bundle tse hlophisitsweng tse hlokomelwang ke sehlopha sa Gratis AI Agent.
 
@@ -273,11 +273,11 @@ E kenya preset e bitswang ya mmala/typography ho `theme.json` ya sehlooho se seb
 
 ---
 
-## Ditaele tsa Lefatshe Lohle
+## Ditaele tsa Lefatshe Lohle {#global-styles}
 
 Bokgoni ba Ditaele tsa Lefatshe Lohle bo bala le ho ngola boleng ba theme.json ka WordPress Global Styles API, bo ama diboloko tsohle le di-template saeteng yohle.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 E kgutlisa tlhophiso ya jwale ya ditaele tsa lefatshe lohle.
 
@@ -291,7 +291,7 @@ E kgutlisa tlhophiso ya jwale ya ditaele tsa lefatshe lohle.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 E ntjhafatsa boleng bo le bong kapa bo bongata tlhophisong ya ditaele tsa lefatshe lohle.
 
@@ -318,7 +318,7 @@ E ntjhafatsa boleng bo le bong kapa bo bongata tlhophisong ya ditaele tsa lefats
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 E seta botjha diphetoho tsohle tsa ditaele tsa lefatshe lohle tse kentsweng ke agent, e kgutlisetsa tsa kamehla tsa sehlooho.
 
@@ -328,11 +328,11 @@ E seta botjha diphetoho tsohle tsa ditaele tsa lefatshe lohle tse kentsweng ke a
 
 ---
 
-## Dimenu tsa Navigation
+## Dimenu tsa Navigation {#navigation-menus}
 
 Bokgoni ba Navigation Menu bo bopa le ho laola dimenu tsa nav tsa WordPress le dintho tsa tsona.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 E bopa menu e ntjha ya navigation ya WordPress.
 
@@ -347,7 +347,7 @@ E bopa menu e ntjha ya navigation ya WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 E reha menu lebitso le letjha kapa e e abela hape sebakeng sa sehlooho.
 
@@ -363,7 +363,7 @@ E reha menu lebitso le letjha kapa e e abela hape sebakeng sa sehlooho.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 E eketsa ntho ho menu ya navigation e seng e le teng.
 
@@ -383,7 +383,7 @@ E eketsa ntho ho menu ya navigation e seng e le teng.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 E tlosa ntho ho menu ya navigation.
 
@@ -397,7 +397,7 @@ E tlosa ntho ho menu ya navigation.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 E thathamisa dimenu tsohle tsa navigation tsa WordPress, ho kenyeletswa le dibaka tsa sehlooho tseo di abetsweng tsona.
 
@@ -420,11 +420,11 @@ E thathamisa dimenu tsohle tsa navigation tsa WordPress, ho kenyeletswa le dibak
 
 ---
 
-## Taolo ya Dikgetho
+## Taolo ya Dikgetho {#options-management}
 
 Bokgoni ba dikgetho bo bala le ho ngola dikgetho tsa WordPress ka `get_option` / `update_option`. Blocklist ya polokeho e hahilweng kahare e thibela phetoho e sa etswang ka boomo ya disetting tsa bohlokwa.
 
-### `get_option`
+### `get_option` {#getoption}
 
 E bala kgetho ya WordPress.
 
@@ -440,7 +440,7 @@ E kgutlisa phoso haeba `option_name` e le ho blocklist ya polokeho.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 E ngola kgetho ya WordPress.
 
@@ -458,7 +458,7 @@ E khutlisa phoso haeba `option_name` e le lethathamong la thibelo la polokeho.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 E hlakola khetho ea WordPress.
 
@@ -474,7 +474,7 @@ E khutlisa phoso haeba `option_name` e le lethathamong la thibelo la polokeho.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 E thathamisa dikgetho tsa WordPress tse tsamaisanang le paterone.
 
@@ -498,11 +498,11 @@ E thathamisa dikgetho tsa WordPress tse tsamaisanang le paterone.
 
 ---
 
-## Taolo ya Dikahare
+## Taolo ya Dikahare {#content-management}
 
 Bokgoni ba Taolo ya Dikahare bo bopa le ho hlophisa diposo le maqephe a WordPress. Di-ID tsa poso di khutliswa hore mehato e latelang mererong ya bokgoni bo bongata e ka supa dikahare tse bopilweng.
 
-### `create_post`
+### `create_post` {#createpost}
 
 E bopa poso e ntjha ya WordPress, leqephe, kapa kenyo ya mofuta wa poso o ikgethileng.
 
@@ -537,7 +537,7 @@ E bopa poso e ntjha ya WordPress, leqephe, kapa kenyo ya mofuta wa poso o ikgeth
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 E ntjhafatsa poso kapa leqephe la WordPress le seng le le teng.
 
@@ -567,7 +567,7 @@ E ntjhafatsa poso kapa leqephe la WordPress le seng le le teng.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 E bopa diposo tse ngata pitsong e le nngwe ya bokgoni, e fokotsa maeto a ho ya le ho kgutla nakong ya ho haha site kapa ho kenya dikahare ka bongata. Diposo di bopuwa ka tatellano; haeba e nngwe e hloleha tse ding di tswela pele mme ho hloleha ho tlalehwa ho array ya diphetho.
 
@@ -619,7 +619,7 @@ E bopa diposo tse ngata pitsong e le nngwe ya bokgoni, e fokotsa maeto a ho ya l
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 E abela poso kapa leqephe le seng le le teng setshwantsho se hlahelletseng (thumbnail ya poso). E amohela ID ya sehokelo sa Media Library se seng se le teng kapa URL ya setshwantsho se hole; ha URL e fanwa, setshwantsho se jarollwa mme se kenngwa ka boiketsetso.
 
@@ -638,7 +638,7 @@ E nngwe ya `attachment_id` kapa `url` e tlameha ho fanwa.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 E bopa foromo ya puisano ka ho sebedisa plugin ya foromo e sebetsang (Contact Form 7, WPForms, Fluent Forms, kapa Gravity Forms, ho ya ka hore na ke efe e kentsoeng). E khutlisa shortcode e ka kenngwang posong efe kapa efe kapa leqepheng lefe kapa lefe.
 
@@ -691,11 +691,11 @@ E bopa foromo ya puisano ka ho sebedisa plugin ya foromo e sebetsang (Contact Fo
 
 ---
 
-## Tlhahlobo ya Ponahalo
+## Tlhahlobo ya Ponahalo {#visual-review}
 
 Bokgoni ba Tlhahlobo ya Ponahalo bo dumella agent ho hapa ditshwantsho tsa maqephe a phelang le ho di sekaseka, bo kgontsha tlhahlobo ya moralo e ikemetseng, dipapiso tsa pele/kamora, le diteko tsa visual regression ntle le ho hloka katoloso efe kapa efe ya sebatli.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 E hapa setshwantsho sa leqephe la WordPress ho URL e fanoeng ka ho sebedisa sebatli se se nang hlooho ka lehlakoreng la seva. Setshwantsho se bolokwa ho Media Library mme URL ya CDN e kgutlisetswa.
 
@@ -724,7 +724,7 @@ E hapa setshwantsho sa leqephe la WordPress ho URL e fanoeng ka ho sebedisa seba
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 E nka ditshwantsho tse pedi mme e kgutlisa dintlha tsa phapang ya pono hammoho le setshwantsho sa phapang se totobatsang dibaka tse fetohileng. E molemo bakeng sa ho netefatsa hore phetoho ya moralo e hlahisitse sephetho se lebelletsweng kapa bakeng sa ho lemoha regressions tse sa rerwang.
 
@@ -754,7 +754,7 @@ E nka ditshwantsho tse pedi mme e kgutlisa dintlha tsa phapang ya pono hammoho l
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 E hapa setshwantsho sa leqephe mme e se romela ho mohlala wa puo bakeng sa tlhahlobo ya pono. E kgutlisa tekolo e hlophisitsweng e akaretsang moralo wa leqephe, typography, tshebediso ya mmala, le matshwenyeho a phihlello.
 
@@ -785,11 +785,11 @@ E hapa setshwantsho sa leqephe mme e se romela ho mohlala wa puo bakeng sa tlhah
 
 ---
 
-## Bokgoni bo ka Kenngwang
+## Bokgoni bo ka Kenngwang {#installable-abilities}
 
 Rejistara ya Bokgoni bo ka Kenngwang e o dumella ho atolosa agent ka diphuthelwana tse eketsehileng tsa bokgoni tse ajoang e le WordPress plugins. Sephuthelwana ka seng se ngodisa bokgoni bo le bong kapa ho feta sebedisa ability API e tlwaelehileng.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 E kgutlisa kataloge ya diphuthelwana tsa bokgoni tse fumanehang bakeng sa ho kenngwa ho tswa rejistareng.
 
@@ -818,7 +818,7 @@ E kgutlisa kataloge ya diphuthelwana tsa bokgoni tse fumanehang bakeng sa ho ken
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 E jarolla le ho kenya tshebetsong sephutheloana sa bokgoni ho tswa registry.
 
@@ -832,7 +832,7 @@ E jarolla le ho kenya tshebetsong sephutheloana sa bokgoni ho tswa registry.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 E botsa registry ya bokgoni ho fumana tlatsetso e molemo ka ho fetisisa bakeng sa tshebediso e hlalositsweng mme, haeba ho kgethilwe, e e kenya.
 

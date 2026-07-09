@@ -3,9 +3,9 @@ title: Ilog yotshintsho yeeNethiwekhi ezininzi
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Ingxelo yotshintsho yeenethiwekhi ezininzi
+# Ingxelo yotshintsho yeenethiwekhi ezininzi {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Entsha: Isibonisi sangaphambili setemplate yenethiwekhi — khangela uze ubone kwangaphambili iitemplate zenethiwekhi ngephaneli ephilayo ngaphambi kokuthenga.
 * Entsha: Umkhethi wetemplate yenethiwekhi ekugqibezeleni intlawulo — abathengi banokukhetha itemplate yenethiwekhi ngexesha lenkqubo yokubhalisa nokugqibezela intlawulo.
 * Entsha: I-magic link SSO enqumla iinethiwekhi — abathengi banokufikelela kwiisub-network ngokungenamthungo ngokuqinisekisa nge-magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Ukulungisa: Ukukhusela ngokuchasene nesitshixo se-`network_id` esingachazwanga kumda wombuzo wesayithi.
 * Ukulungisa: Ukuhlolwa kwemvume yenethiwekhi ngaphambi kokutshintsha umxholo kuthintela iimpazamo zepropathi yetafile ye-`wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Ukulungisa: Ukwenza inethiwekhi entsha.
 * Ukulungisa: Ukuboniswa kweemenyu.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Ihlaziywe yaba yi-Plugin Update Checker v5
 * Kongezwe iiheader zale mihla ze-WordPress plugin
 * Kuphuculwe ukuhambelana neenguqulelo zamva nje ze-WordPress
 
-### 1.0.2
+### 1.0.2 {#102}
 * Ukulungiswa kweebug nokuphuculwa kokusebenza
 * Ukwahlulwa kwenethiwekhi okuphuculiweyo
 
-### 1.0.0
+### 1.0.0 {#100}
 * Ukukhutshwa kokuqala
 * Umsebenzi ongundoqo we-multinetwork
 * Udibaniso ne-Multisite Ultimate

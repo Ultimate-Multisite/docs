@@ -3,7 +3,7 @@ title: AffiliateWP 更新日志
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP 更新日志
+# AffiliateWP 更新日志 {#affiliatewp-changelog}
 
 版本：2.0.1 - 发布于 2025-09-28
 

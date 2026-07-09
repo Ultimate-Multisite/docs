@@ -3,7 +3,7 @@ title: Ndu n'ụ link ndị ga-anwere ike ịchia Gbọọchị
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Ọrụaka na Link-a Shareable (Link-a Bisa)
+# Ọrụaka na Link-a Shareable (Link-a Bisa) {#managing-shareable-links-for-plans}
 
 Ultimate Multisite na-eme ka ị chọrọ ịgba link-a plan direct na ndị khách của gị. Ka ị chọrọ ịdeewo ihe a, jupụ n'edee editi (edit page) anya nke plan tupu gị ma click button _Click to copy the Shareable Link_.
 

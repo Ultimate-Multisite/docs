@@ -3,11 +3,11 @@ title: Պատվերով վճարային դարպասի մշակում
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Պատվերով Gateway-ի մշակում
+# Պատվերով Gateway-ի մշակում {#custom-gateway-development}
 
 Դուք կարող եք ստեղծել պատվերով վճարային gateway-ներ՝ ընդլայնելով `Base_Gateway` դասը։
 
-## Gateway դաս
+## Gateway դաս {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Գրանցել Gateway-ը
+## Գրանցել Gateway-ը {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Հիմնական մեթոդներ
+## Հիմնական մեթոդներ {#key-methods}
 
 | Մեթոդ | Նպատակ |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Մշակել վերադարձի հարցումները |
 | `get_payment_methods()` | Վերադարձնել հաճախորդի պահպանված վճարման մեթոդները |
 
-## Թարմացման հավատարմագրեր պարբերական անդամակցությունների համար
+## Թարմացման հավատարմագրեր պարբերական անդամակցությունների համար {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0-ը gateway ինտեգրումներին թույլ է տալիս հաղորդել, թե արդյոք պարբերական անդամակցությունն ունի վերօգտագործելի թարմացման հավատարմագիր՝ նախքան `auto_renew`-ը պահպանվելը։ Կցեք `wu_membership_has_renewal_credential`-ը և վերադարձրեք՝
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Մաքրեք բացակայող հավատարմագրի նշիչը որպես ձեր gateway-ի հաջող վերալիազորման հոսքի մաս՝ նոր վերօգտագործելի հավատարմագիր պահվելուց հետո։
 
-## Խորհուրդներ
+## Խորհուրդներ {#tips}
 
 - Ձախողման դեպքում միշտ վերադարձրեք `WP_Error`, որպեսզի Ultimate Multisite-ը կարողանա մշակել սխալի ցուցադրումը
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Օգտագործեք `wu_log_add()`՝ gateway-ին հատուկ գրանցման համար
 
-## AI կապակցիչի մատակարարի հնարավորություններ
+## AI կապակցիչի մատակարարի հնարավորություններ {#ai-connector-provider-capabilities}
 
 Պատվերով ինտեգրումները, որոնք կանչում են AI կապակցիչի վրա հիմնված գործողություններ, պետք է համապատասխանեցվեն աջակցվող OAuth մատակարարների հավաքածուին, որը ներկայացվել է AI Provider for Anthropic Max v1.3.0-ի հետ՝
 

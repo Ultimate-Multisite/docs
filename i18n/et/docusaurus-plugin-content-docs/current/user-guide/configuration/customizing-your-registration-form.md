@@ -3,13 +3,13 @@ title: Registreerimisvormi kohandamine
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Registreerimisvormi kohandamine
+# Registreerimisvormi kohandamine {#customizing-your-registration-form}
 
 Et muuta sinu võrgustik kõigi teiste WordPress platvormile ehitatud SaaS-lahenduste seast ainulaadseks, võimaldab Ultimate Multisite kohandada registreerimis- ja sisselogimislehti meie **Checkout Forms** funktsiooniga.
 
 Kuigi need on lihtne ja paindlik viis katsetada erinevaid lähenemisi uute klientide konverteerimiseks, kasutatakse neid enamasti isikupärastatud registreerimisvormide loomiseks. Selle artikli eesmärk on näidata, kuidas seda teha.
 
-## Sisselogimis- ja registreerimislehed:
+## Sisselogimis- ja registreerimislehed: {#login-and-registration-pages}
 
 Ultimate Multisite paigaldamisel loob see automaatselt kohandatud sisselogimis- ja registreerimislehed sinu peamisele saidile. Neid vaikelehti saad igal ajal muuta, minnes lehele **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Nüüd vaatame teisi valikuid, mis on endiselt sisselogimis- ja registreerimispr
 
 Ja need ongi kõik sisselogimise ja registreerimisega seotud valikud, mida saad kohandada! Ära unusta pärast muutmise lõpetamist oma seadeid salvestada.
 
-## Mitme registreerimisvormi kasutamine:
+## Mitme registreerimisvormi kasutamine: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 pakub checkout-vormi redaktorit, mis võimaldab luua nii palju vorme, kui soovid, erinevate väljade, pakutavate toodete jne jaoks.
 
@@ -69,7 +69,7 @@ Teise võimalusena saad juba olemasolevaid vorme muuta või dubleerida, klõpsat
 
 Kui valid ühe sammu või mitme sammuga variandi, on checkout-vorm juba eeltäidetud põhisammudega, et see toimiks. Seejärel saad soovi korral sellele lisasamme lisada.
 
-### Checkout Formi muutmine:
+### Checkout Formi muutmine: {#editing-a-checkout-form}
 
 Nagu varem mainisime, saad luua checkout-vorme erinevateks eesmärkideks. Selles näites töötame registreerimisvormiga.
 
@@ -131,11 +131,11 @@ Vormi lühikoodi saamiseks klõpsake **Genereeri lühikood** ja kopeerige modaal
 
 _**Märkus:** Peate lisama selle lühikoodi oma registreerimislehele, et see checkout-vorm sinna lisataks._
 
-## Toodete ja mallide eelvalimine URL-i parameetrite kaudu:
+## Toodete ja mallide eelvalimine URL-i parameetrite kaudu: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Kui soovite luua oma toodetele kohandatud hinnatabeleid ja eelvalida checkout-vormil toote või malli, mille teie klient valib teie hinnatabelist või mallide lehelt, saate selleks kasutada URL-i parameetreid.
 
-### **Plaanide jaoks:**
+### **Plaanide jaoks:** {#for-plans}
 
 Minge jaotisse **Ultimate Multisite > Tooted > Vali plaan**. Lehe ülaosas peaksite nägema nuppu **Klõpsa jagatava lingi kopeerimiseks**. See on link, mida saate kasutada selle konkreetse plaani eelvalimiseks oma checkout-vormil.
 
@@ -143,7 +143,7 @@ Minge jaotisse **Ultimate Multisite > Tooted > Vali plaan**. Lehe ülaosas peaks
 
 Pange tähele, et see jagatav link kehtib ainult **plaanide** jaoks. Te ei saa kasutada jagatavaid linke pakettide või teenuste jaoks.
 
-### Mallide jaoks:
+### Mallide jaoks: {#for-templates}
 
 Kui soovite checkout-vormil saidi malle eelvalida, saate oma registreerimislehe URL-is kasutada parameetrit: **?template_id=X**. "X" tuleb asendada **saidi malli ID-numbriga**. Selle numbri saamiseks minge jaotisse **Ultimate Multisite > Saidid**.
 

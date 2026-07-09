@@ -3,7 +3,7 @@ title: Klijentska Account stranica
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Account stranica vašeg klijenta (v2)
+# Account stranica vašeg klijenta (v2) {#your-clients-account-page-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
@@ -11,7 +11,7 @@ Kada se korisnici pretplate na plan na vašoj mreži, dobijaju pristup web stran
 
 U ovom vodiču ćemo vas provesti kroz stranicu korisničkog računa i vidjet ćete šta vaši korisnici mogu vidjeti i raditi unutar nje.
 
-## Account stranica
+## Account stranica {#the-account-page}
 
 Account stranici se pristupa klikom na **Account** unutar Dashboarda vašeg korisnika.
 
@@ -27,7 +27,7 @@ Nakon što korisnik klikne na to, vidjet će pregled svog članstva, adrese za f
 
 Također mogu promijeniti članstvo na drugi plan ili kupiti drugi paket ili uslugu koju nudite. Pogledajmo svaki odjeljak zasebno.
 
-### Pregled vašeg članstva:
+### Pregled vašeg članstva: {#your-membership-overview}
 
 Prvi blok odmah ispod naziva web stranice vaših korisnika prikazuje pregled njihovog trenutnog plana i usluga/paketa koji su kupljeni s njim. Blok također prikazuje broj članstva, početni iznos plaćen za njega, koliko koštaju plan i svaka usluga/paket te koliko puta im je naplaćeno za ovo članstvo. Također mogu vidjeti da li je članstvo **Aktivno** , **Isteklo** ili **Otkazano**.
 
@@ -43,7 +43,7 @@ Sada, ako vaši korisnici izaberu kupovinu paketa ili usluga za ovo trenutno čl
 
 Imajte na umu da se kuponski kodovi ne mogu dodati na ovoj stranici promjene članstva. Ako je korisnik koristio kuponski kod pri prvoj kupovini članstva, kod će se također primijeniti na ovo novo članstvo.
 
-### Ažuriranje adrese za fakturisanje:
+### Ažuriranje adrese za fakturisanje: {#updating-the-billing-address}
 
 Na Account stranici, vaši korisnici također mogu ažurirati svoju adresu za fakturisanje. Samo trebaju kliknuti na **Ažuriraj** pored _Adresa za fakturisanje_.
 
@@ -53,7 +53,7 @@ Korisniku će se pojaviti novi prozor. Sve što treba uraditi je popuniti novu a
 
 ![Obrazac za ažuriranje adrese za fakturisanje](/img/account-page/billing-address-form.png)
 
-### Promjena predloška web stranice:
+### Promjena predloška web stranice: {#changing-the-site-template}
 
 Da biste svojim korisnicima omogućili promjenu predložaka web stranica, trebate otići na **Ultimate Multisite > Postavke > Web stranice** i uključiti opciju **Dozvoli promjenu predložaka**.
 
@@ -81,7 +81,7 @@ Nakon uključivanja potvrde i klika na **Obradi promjenu** , novi predložak web
 
 Korisnici također mogu koristiti **Reset current template** iz ovog panela kada trebaju resetovati stranicu nazad na trenutno dodijeljeni predložak. Kao i pri prebacivanju na drugi predložak, resetovanje predloška može prepisati sadržaj stranice, pa korisnici to trebaju potvrditi samo kada razumiju radnju resetovanja.
 
-### Dodavanje prilagođenih domena:
+### Dodavanje prilagođenih domena: {#adding-custom-domains}
 
 Vaši korisnici će također imati opciju da dodaju prilagođenu domenu za ovaj plan na svojoj stranici Account. Da biste omogućili svojim korisnicima korištenje prilagođenih domena, idite na **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Nakon klika na **Next Step** , vaši korisnici mogu dodati naziv svoje prilagođ
 
 Nakon klika na **Add Domain** , domena će biti dodana na račun vašeg korisnika. Sve što sada trebaju uraditi je promijeniti DNS zapise ove prilagođene domene kod svog registrara domena.
 
-### Promjena lozinke:
+### Promjena lozinke: {#changing-password}
 
 Unutar Account dashboarda, vaši korisnici također mogu promijeniti svoju lozinku klikom na **Change Password**.
 
@@ -125,7 +125,7 @@ Ovo će prikazati novi prozor u kojem će vaši korisnici morati unijeti svoju t
 
 ![Obrazac za promjenu lozinke s poljima za trenutnu i novu lozinku](/img/account-page/change-password-form.png)
 
-### Opasna zona:
+### Opasna zona: {#danger-zone}
 
 Također imamo dvije opcije koje su prikazane u dijelu **Danger Zone**: **Delete Site** i **Delete Account**. Obje se nalaze u dijelu Danger Zone jer su ove dvije radnje nepovratne. Ako vaši korisnici obrišu svoju web stranicu ili svoj račun, ne mogu ih vratiti.
 

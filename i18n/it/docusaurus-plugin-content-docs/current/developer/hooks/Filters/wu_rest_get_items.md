@@ -4,11 +4,11 @@ title: Filtro - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filtro: wu_rest_get_items
+# Filtro: wu_rest_get_items {#filter-wurestgetitems}
 
 Filtra se è consentito procedere con la richiesta o meno.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filtra se è consentito procedere con la richiesta o meno.
 | $rest_base | `array` | Slug dell'entità. |
 | $this | `\Base_Manager` | L'istanza dell'oggetto. |
 
-### Dal
+### Dal {#since}
 
 - 2.0.0
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) alla riga 336

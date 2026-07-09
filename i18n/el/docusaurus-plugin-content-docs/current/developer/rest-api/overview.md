@@ -3,28 +3,28 @@ title: Επισκόπηση REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Αναφορά REST API
+# Αναφορά REST API {#rest-api-reference}
 
-## Βασική διαμόρφωση
+## Βασική διαμόρφωση {#base-configuration}
 
 **Βασικό URL:** `{site_url}/wp-json/wu/v2/`
 **Έλεγχος ταυτότητας:** API Key & Secret (HTTP Basic Auth ή παράμετροι URL)
 
-## Έλεγχος ταυτότητας
+## Έλεγχος ταυτότητας {#authentication}
 
-### Ενεργοποίηση API
+### Ενεργοποίηση API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Λήψη διαπιστευτηρίων API
+### Λήψη διαπιστευτηρίων API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Μέθοδοι ελέγχου ταυτότητας
+### Μέθοδοι ελέγχου ταυτότητας {#authentication-methods}
 
 **HTTP Basic Auth (Συνιστάται):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Κύρια τελικά σημεία
+## Κύρια τελικά σημεία {#core-endpoints}
 
-### 1. API πελατών
+### 1. API πελατών {#1-customers-api}
 
 **Βασική διαδρομή:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API ιστότοπων
+### 2. API ιστότοπων {#2-sites-api}
 
 **Βασική διαδρομή:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API συνδρομών
+### 3. API συνδρομών {#3-memberships-api}
 
 **Βασική διαδρομή:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API προϊόντων
+### 4. API προϊόντων {#4-products-api}
 
 **Βασική διαδρομή:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API πληρωμών
+### 5. API πληρωμών {#5-payments-api}
 
 **Βασική διαδρομή:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API τομέων
+### 6. API τομέων {#6-domains-api}
 
 **Βασική διαδρομή:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Τελικό σημείο εγγραφής
+## Τελικό σημείο εγγραφής {#registration-endpoint}
 
 Το τελικό σημείο `/register` παρέχει μια πλήρη ροή checkout/εγγραφής:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Τελικά σημεία κυρίαρχων μισθωτών
+## Τελικά σημεία κυρίαρχων μισθωτών {#sovereign-tenant-endpoints}
 
 Το Ultimate Multisite: Multi-Tenancy 1.2.0 προσθέτει κάλυψη REST για κυρίαρχους μισθωτές για ενσωματώσεις που παρέχουν, επιθεωρούν ή επαληθεύουν απομονωμένους μισθωτές.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 Αντιμετωπίστε το `ready: false` ως εμπόδιο πριν από την κυκλοφορία. Ελέγξτε τις λεπτομέρειες επαλήθευσης, διορθώστε τη σύνδεση host της βάσης δεδομένων, την ουρά, την παροχή χρηστών ή το ζήτημα δρομολόγησης και, στη συνέχεια, δοκιμάστε ξανά την επαλήθευση.
 
-## Αποκρίσεις σφαλμάτων
+## Αποκρίσεις σφαλμάτων {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## Σελιδοποίηση και φιλτράρισμα
+## Σελιδοποίηση και φιλτράρισμα {#pagination-and-filtering}
 
 **Παράμετροι ερωτήματος:**
 ```http

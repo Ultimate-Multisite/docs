@@ -3,15 +3,15 @@ title: 'Lesson 14: What Comes Next'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Ders 14: Sonra Ne Gelecek
+# Ders 14: Sonra Ne Gelecek {#lesson-14-what-comes-next}
 
 Sıfırdan bir niş web sitesi platformu oluşturdunuz. FitSite yayında, fitness stüdyolarına hizmet veriyor ve düzenli gelir elde ediyorsunuz. Bu son ders, bundan sonra nereye gideceğinize bakıyor.
 
-## Nerede Kalmıştık
+## Nerede Kalmıştık {#where-we-left-off}
 
 FitSite, müşterileri, operasyonları ve bir büyüme eğrisi olan çalışan bir işletme. Şimdi sırada ne olduğuna odaklanıyoruz.
 
-## Eksiksiz FitSite Ağı
+## Eksiksiz FitSite Ağı {#the-complete-fitsite-network}
 
 İşte 14 derste oluşturduğumuz her şey:
 
@@ -46,11 +46,11 @@ FitSite Ağı (Eksiksiz)
     └── Ekip kurma yol haritası
 ```
 
-## Seçenek 1: Nişinizde Derinleşin
+## Seçenek 1: Nişinizde Derinleşin {#option-1-go-deeper-in-your-niche}
 
 Yeni nişlere yayılmadan önce, fitness alanında daha derinleşmeyi düşünün:
 
-### Alt Nişler
+### Alt Nişler {#sub-niches}
 
 - **Yoga stüdyoları** -- meditasyon, inziva ve atölye özellikleri içeren özel şablonlar
 - **CrossFit salonları** -- WOD takibi, yarışma sonuçları, topluluk özellikleri
@@ -59,7 +59,7 @@ Yeni nişlere yayılmadan önce, fitness alanında daha derinleşmeyi düşünü
 
 Her alt niş, aynı Ultimate Multisite ağı üzerinde çalışan kendi şablonlarına ve potansiyel olarak kendi markasına sahip olabilir.
 
-### Premium Özellikler
+### Premium Özellikler {#premium-features}
 
 Fitness stüdyolarının ek ücret ödemeye istekli olacağı özellikler oluşturun:
 
@@ -68,14 +68,14 @@ Fitness stüdyolarının ek ücret ödemeye istekli olacağı özellikler oluşt
 - **Fitness blog şablonları** -- fitness içerik pazarlaması için hazır içerik yapıları
 - **Sosyal medya entegrasyonu** -- ders programlarını ve güncellemeleri otomatik yayınlama
 
-### Coğrafi Genişleme
+### Coğrafi Genişleme {#geographic-expansion}
 
 Eğer yerel bir alanda başladıysanız, şunlara genişleyin:
 
 - Ülkenizdeki diğer şehirler
 - Diğer ülkeler (birden fazla dili desteklemek için Ultimate Multisite'ın [yerelleştirme özelliklerini](/user-guide/localization/translating) kullanın)
 
-## Seçenek 2: İlgili Nişlere Yayılın
+## Seçenek 2: İlgili Nişlere Yayılın {#option-2-expand-to-adjacent-niches}
 
 Fitness stüdyoları için izlediğiniz süreç, herhangi bir niş için işe yarar. İkinci nişiniz daha kolay çünkü zaten şunlara sahipsiniz:
 
@@ -83,7 +83,7 @@ Fitness stüdyoları için izlediğiniz süreç, herhangi bir niş için işe ya
 - Operasyonel deneyim
 - Kanıtlanmış bir uygulama kılavuzu (playbook)
 
-### Fitness'a Yakın Nişler
+### Fitness'a Yakın Nişler {#adjacent-niches-to-fitness}
 
 - **Sağlık ve spa** -- masaj terapistleri, günlük spa'lar, wellness merkezleri
 - **Spor kulüpleri** -- amatör spor takımları, ligler, rekreasyonel kulüpler
@@ -91,7 +91,7 @@ Fitness stüdyoları için izlediğiniz süreç, herhangi bir niş için işe ya
 
 Bunlar, fitness ile hedef kitle örtüşmesine sahip olduğu için pazarlama ve ortaklıklarınız aktarılabilir.
 
-### Tamamen Yeni Nişler
+### Tamamen Yeni Nişler {#completely-new-niches}
 
 Her nişi değerlendirmek için 2. Dersteki çerçeveyi uygulayın:
 
@@ -108,7 +108,7 @@ Her yeni niş şunlara ihtiyaç duyar:
 
 Platform altyapısı, faturalandırma ve operasyonel süreçler aynı kalır.
 
-## Seçenek 3: Platformlar Platformu Oluşturun
+## Seçenek 3: Platformlar Platformu Oluşturun {#option-3-build-a-platform-of-platforms}
 
 Ölçeklendikçe, tek bir Ultimate Multisite ağı üzerinde birden fazla niş markası yürütebilirsiniz:
 
@@ -118,11 +118,11 @@ Platform altyapısı, faturalandırma ve operasyonel süreçler aynı kalır.
 
 Her marka kendi şablonlarına, planlarına ve pazarlamasına sahip olsa da, altyapıyı, faturalandırmayı ve operasyonel süreçleri paylaşırlar. İşte Ultimate Multisite'ın ekonomisi burada güçlü hale geliyor; tek bir platform, birçok dikey.
 
-### Çoklu Ağ (Multi-Network)
+### Çoklu Ağ (Multi-Network) {#multi-network}
 
 Nişler arasında tam bir ayrım için, tek bir kurulumdan birden fazla WordPress ağı çalıştırmanıza olanak tanıyan [Multi-Network eklentisini](/addons/multinetwork) düşünün.
 
-## Seçenek 4: İşletmeyi Satın
+## Seçenek 4: İşletmeyi Satın {#option-4-sell-the-business}
 
 Tekrarlayan geliri olan, düşük churn oranına sahip ve net bir pazar konumuna sahip bir niş web sitesi platformu değerli bir varlıktır. SaaS işletmeleri tipik olarak yıllık gelirin 3-5 katı arasında satılır.
 
@@ -134,7 +134,7 @@ Tekrarlayan geliri olan, düşük churn oranına sahip ve net bir pazar konumuna
 
 Bu garantili bir sonuç değildir, ancak iyi yönetilen bir niş platformu için gerçekçi bir senaryodur.
 
-## Öğrendikleriniz
+## Öğrendikleriniz {#what-you-have-learned}
 
 Bu kurs size tekrarlanabilir bir süreç öğretti:
 
@@ -150,8 +150,8 @@ Bu kurs size tekrarlanabilir bir süreç öğretti:
 
 Niş stratejidir. Platform ise araçtır. Ultimate Multisite, aracı mümkün kılar. Niş hakkındaki anlayışınız onu değerli yapar.
 
-## İnşa Etmeye Başlayın
+## İnşa Etmeye Başlayın {#start-building}
 
-Eğer FitSite ile ilerlediyseniz, çalışan bir platformunuz var. Kendi nişinizi bulmak için okuduysanız, [2. Ders: Nişinizi Seçmek](/lesson-2-picking-your-niche) sayfasına geri dönün ve seçtiğiniz alanda sürece başlayın.
+Eğer FitSite ile ilerlediyseniz, çalışan bir platformunuz var. Kendi nişinizi bulmak için okuduysanız, [2. Ders: Nişinizi Seçmek](lesson-2-picking-your-niche) sayfasına geri dönün ve seçtiğiniz alanda sürece başlayın.
 
 Başlamak için en iyi zaman dün idi. İkinci en iyi zaman ise şimdi.

@@ -4,11 +4,11 @@ title: Action - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog
+# Action: add_user_to_blog {#action-addusertoblog}
 
 Kör omedelbart efter att en användare har lagts till på en webbplats.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Namn | Typ | Beskrivning |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Kör omedelbart efter att en användare har lagts till på en webbplats.
 | $role | `string` | Användarroll. |
 | $blog_id | `int` | Blogg-ID. |
 
-### Sedan
+### Sedan {#since}
 
 - MU: MU
-### Källa
+### Källa {#source}
 
 Definieras i [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) på rad 174

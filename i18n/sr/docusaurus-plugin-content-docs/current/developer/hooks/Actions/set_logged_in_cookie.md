@@ -4,11 +4,11 @@ title: Радња - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Радња: set_logged_in_cookie
+# Радња: set_logged_in_cookie {#action-setloggedincookie}
 
 Окида се непосредно пре него што се постави колачић за аутентификацију пријављеног корисника.
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | Шема аутентификације. Подразумевано 'logged_in'. |
 | $token | `string` | Токен сесије корисника који се користи за овај колачић. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) у реду 141

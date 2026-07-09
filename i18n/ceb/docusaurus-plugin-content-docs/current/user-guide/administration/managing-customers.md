@@ -3,7 +3,7 @@ title: Pagdumala sa mga Kliyente
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Pag-manage sa mga Customer
+# Pag-manage sa mga Customer {#managing-customers}
 
 Ang **Customers** page nagpakita sa listahan sa mga miyembro nga naka-register sa imong network. Kini nga page nagpakita sa basic information sa user sama sa ngalan, email address, katapusang login, ug usa ka link nga **switch to** nga magtugot kanimo sa pag-login sa subsite sa user isip site administrator.
 

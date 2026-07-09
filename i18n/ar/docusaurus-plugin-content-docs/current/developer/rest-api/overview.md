@@ -3,28 +3,28 @@ title: نظرة عامة على REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# مرجع REST API
+# مرجع REST API {#rest-api-reference}
 
-## الإعداد الأساسي
+## الإعداد الأساسي {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **المصادقة:** مفتاح API والسر (HTTP Basic Auth أو معاملات URL)
 
-## المصادقة
+## المصادقة {#authentication}
 
-### تفعيل API
+### تفعيل API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### الحصول على بيانات اعتماد API
+### الحصول على بيانات اعتماد API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### طرق المصادقة
+### طرق المصادقة {#authentication-methods}
 
 **HTTP Basic Auth (موصى به):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## نقاط النهاية الأساسية
+## نقاط النهاية الأساسية {#core-endpoints}
 
-### 1. API العملاء
+### 1. API العملاء {#1-customers-api}
 
 **المسار الأساسي:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API المواقع
+### 2. API المواقع {#2-sites-api}
 
 **المسار الأساسي:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API العضويات
+### 3. API العضويات {#3-memberships-api}
 
 **المسار الأساسي:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API المنتجات
+### 4. API المنتجات {#4-products-api}
 
 **المسار الأساسي:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API المدفوعات
+### 5. API المدفوعات {#5-payments-api}
 
 **المسار الأساسي:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API النطاقات
+### 6. API النطاقات {#6-domains-api}
 
 **المسار الأساسي:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## نقطة نهاية التسجيل
+## نقطة نهاية التسجيل {#registration-endpoint}
 
 توفر نقطة النهاية `/register` تدفق دفع/تسجيل كاملًا:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## نقاط نهاية المستأجر السيادي
+## نقاط نهاية المستأجر السيادي {#sovereign-tenant-endpoints}
 
 يضيف Ultimate Multisite: Multi-Tenancy 1.2.0 تغطية REST للمستأجر السيادي للتكاملات التي تنشئ مستأجرين معزولين أو تفحصهم أو تتحقق منهم.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 تعامل مع `ready: false` كمانع قبل الإطلاق. تحقق من تفاصيل التحقق، وأصلح ربط مضيف قاعدة البيانات أو قائمة الانتظار أو توفير المستخدمين أو مشكلة التوجيه، ثم أعد محاولة التحقق.
 
-## استجابات الأخطاء
+## استجابات الأخطاء {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## ترقيم الصفحات والتصفية
+## ترقيم الصفحات والتصفية {#pagination-and-filtering}
 
 **معاملات الاستعلام:**
 ```http

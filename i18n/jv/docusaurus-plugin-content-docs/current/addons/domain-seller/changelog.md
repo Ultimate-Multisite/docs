@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan Panyade Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Cathetan Owah-owahan Domain Seller
+# Cathetan Owah-owahan Domain Seller {#domain-seller-changelog}
 
 Versi 1.3.0 - Dirilis ing 2026-06-02
 - Anyar: Nambahake pepeling network-admin nalika saldo reseller HostAfrica dadi kakehan sithik
@@ -134,20 +134,20 @@ Versi 1.0.0 - Dirilis ing 2025-09-28
 * **Dandani:** Kabeh kode v1 sing deprecated dianyari menyang standar v2
 * **Dibusak:** Kompatibilitas v1 lawas (owah-owahan sing ngrusak)
 
-### Versi Sadurunge (v1 Warisan)
+### Versi Sadurunge (v1 Warisan) {#previous-versions-v1-legacy}
 
-### Versi 0.0.3 - 20/08/2019
+### Versi 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Dandani: Ora kompatibel karo Groundhogg CRM
 * Cathetan: Iki rilis pungkasan sing kompatibel karo v1
 
-### Versi 0.0.2 - 07/12/2018
+### Versi 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Dandani: Mbusak kolom License Key
 * Dandani: Tab plan ilang nalika plugin fitur aktif
 * Apik: Nambah tombol skip ing kolom registrasi
 
-### Versi 0.0.1 - Rilis Awal
+### Versi 0.0.1 - Rilis Awal {#version-001---initial-release}
 
 * Integrasi OpenSRS dhasar kanggo WP Ultimo v1
 * Telusuran lan registrasi domain prasaja

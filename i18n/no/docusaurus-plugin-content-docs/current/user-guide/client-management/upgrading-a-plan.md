@@ -3,7 +3,7 @@ title: Oppgradere et abonnement
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Oppgradering av en plan (v2)
+# Oppgradering av en plan (v2) {#upgrading-a-plan-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
@@ -41,7 +41,7 @@ Etter at checkout er fullført, blir det/de nye produktet/produktene lagt til p�
 
 ##
 
-## Oppgraderings- og nedgraderingsstier
+## Oppgraderings- og nedgraderingsstier {#upgrade-and-downgrade-paths}
 
 På hvert av produktene dine har du en **Opp- og nedgraderinger**-fane. Det første alternativet på den fanen er et felt kalt **Plangruppe**.
 

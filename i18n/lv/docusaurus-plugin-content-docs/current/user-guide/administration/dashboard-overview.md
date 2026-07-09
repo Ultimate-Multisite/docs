@@ -3,11 +3,11 @@ title: Paneļa ievērīts skats
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Panorāma uzlabojums (Dashboard Overview)
+# Panorāma uzlabojums (Dashboard Overview) {#dashboard-overview}
 
 Ultimate Multisite ir ar īpašu **Dashboard**, kas atrodas Ultimate Multisite menī, un tas arī pievieno widgetus tīkla panorežam (Network Dashboard). Šajā rakstā apmeklējam to, ko jūs redziet abos vietās.
 
-## Tīkla Panorāzs (The Network Dashboard)
+## Tīkla Panorāzs (The Network Dashboard) {#the-network-dashboard}
 
 Ultimate Multisite iekļauj noderīgus widgetus tīkla līmeņa panorežā, kas atrodas **Mani sites → Tīkla administrācija → Panorāzs** (My Sites → Network Admin → Dashboard).
 
@@ -35,7 +35,7 @@ Ultimate Multisite iekļauj noderīgus widgetus tīkla līmeņa panorežā, kas 
 
 ![Ziņu widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Panorāzs (The Ultimate Multisite Dashboard)
+## Ultimate Multisite Panorāzs (The Ultimate Multisite Dashboard) {#the-ultimate-multisite-dashboard}
 
 Lai gan tīkla panorāzs prezentē vispārīgu informāciju par tīklu, Ultimate Multisite panorāzs (Ultimate Multisite menī augšpusē) prezentē informāciju par šo pakalpojumu.
 

@@ -4,20 +4,20 @@ title: Akayunguruzo - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Muyunguruzi: wu_password_require_number
+# Muyunguruzi: wu_password_require_number {#filter-wupasswordrequirenumber}
 
 Muyunguruza niba bisabwa kugira imibare mu magambobanga.
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
 | $require | `bool` | Niba bisabwa kugira imibare. Mburabuzi ni true igihe amategeko ashyizwe mu bikorwa. |
 | $defender_active | `bool` | Niba Defender Pro Strong Password iri gukora. |
 
-### Kuva
+### Kuva {#since}
 
 - 2.4.0
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L573) ku murongo wa 573

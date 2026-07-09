@@ -3,7 +3,7 @@ title: Tlaleho ya Diphetoho ya Morekisi wa Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Lenane la Diphetoho la Morekisi wa Domeine
+# Lenane la Diphetoho la Morekisi wa Domeine {#domain-seller-changelog}
 
 Mofuta 1.3.0 - E lokollotswe ka 2026-06-02
 - E ncha: Ho kentswe temoso ya network-admin ha balanse ya morekisi wa HostAfrica e theoha haholo
@@ -134,20 +134,20 @@ Mofuta 1.0.0 - E lokollotswe ka 2025-09-28
 * **E lokisitswe:** Khoutu yohle ya v1 e seng e sa sebediswe e ntjhafaditswe ho maemo a v2
 * **E tlositswe:** Tshebedisano le v1 ya kgale (phetoho e senyang)
 
-### Mefuta e Fetileng (v1 ya Kgale)
+### Mefuta e Fetileng (v1 ya Kgale) {#previous-versions-v1-legacy}
 
-### Mofuta 0.0.3 - 20/08/2019
+### Mofuta 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * E lokisitswe: Ho se tsamaellane le Groundhogg CRM
 * Tlhokomeliso: Ena e ne e le tokollo ya ho qetela e tsamaellanang le v1
 
-### Mofuta 0.0.2 - 07/12/2018
+### Mofuta 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * E lokisitswe: Ho tlositswe lebala la License Key
 * E lokisitswe: Ditabo tsa plan di haella ha plugin ya karolo e sebetsa
 * E ntlafaditswe: Ho ekeditswe konopo ya ho tlola lebaleng la ngodiso
 
-### Mofuta 0.0.1 - Tokollo ya Pele
+### Mofuta 0.0.1 - Tokollo ya Pele {#version-001---initial-release}
 
 * Kopanyo ya motheo ya OpenSRS bakeng sa WP Ultimo v1
 * Patlo le ngodiso e bonolo ya domain

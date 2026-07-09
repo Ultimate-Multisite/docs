@@ -3,7 +3,7 @@ title: Index mutationum integrationis WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Index Mutationum Integrationis WooCommerce
+# Index Mutationum Integrationis WooCommerce {#woocommerce-integration-changelog}
 
 Versio 2.2.0 - Edita die 2026-07-01
 * Novum: Summae tributorum Ultimate Multisite nunc apparent ut lineae mercedum WooCommerce separatae in solutione, quo summae tributorum ante solutionem clariores fiunt.

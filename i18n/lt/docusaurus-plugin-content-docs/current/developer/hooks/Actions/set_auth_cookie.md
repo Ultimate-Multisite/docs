@@ -4,11 +4,11 @@ title: Veiksmas - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Veiksmas: set_auth_cookie
+# Veiksmas: set_auth_cookie {#action-setauthcookie}
 
 Suveikia iškart prieš nustatant autentifikavimo slapuką.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Suveikia iškart prieš nustatant autentifikavimo slapuką.
 | $scheme | `string` | Autentifikavimo schema. Reikšmės apima 'auth' arba 'secure_auth'. |
 | $token | `string` | Naudotojo sesijos tokenas, naudojamas šiam slapukui. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) 124 eilutėje

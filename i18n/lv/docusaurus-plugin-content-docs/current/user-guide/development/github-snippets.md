@@ -3,7 +3,7 @@ title: GitHub skripti
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Kā kārtu lietot Ultimate Multisite snipetus mūsu GitHub repozitorijā
+# Kā kārtu lietot Ultimate Multisite snipetus mūsu GitHub repozitorijā {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 GitHub repozitorijā ir pieejami koda snipeturi, ko bieži lūdz Ultimate Multisite lietotāji, kuri vēlas pievienot mazas funkcijas, piemēram, uzlabot Google Analytics skriptu pie reģistrācijas lapām vai slüstēt meta box no admin dashboard.
 
@@ -19,7 +19,7 @@ Jums ir 2 veidi snipetu pievienot:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Kā snipetu pievienot savai tēmas `functions.php` failā.
+# Kā snipetu pievienot savai tēmas `functions.php` failā. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Logojieties uz savu WordPress Network admin dashboard un dodieties uz Tēmas > Theme Editor (skatīt attēlu zemāk).
 
@@ -29,7 +29,7 @@ Jums ir 2 veidi snipetu pievienot:
 
 <!-- Attēls nav pieejams: WordPress Tēmas redaktors, kas parāda `functions.php` faila rediģitēšanu -->
 
-# Kā izveidot Must-Use Plugins (mu-plugins)
+# Kā izveidot Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress ir funkcija, kas ļauj ielādēt pielāgotu funkcionalitāti, ko sauc "Must-Use Plugins" vai īsi "mu-plugins".
 

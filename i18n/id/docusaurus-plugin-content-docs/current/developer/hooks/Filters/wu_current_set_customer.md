@@ -4,23 +4,23 @@ title: Filter - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Filter: wu_current_set_customer
+# Filter: wu_current_set_customer {#filter-wucurrentsetcustomer}
 
 Memungkinkan pengembang untuk memodifikasi perilaku default dan menetapkan pelanggan saat ini secara berbeda.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $customer | `\WP_Ultimo\Models\Customer` | Pelanggan saat ini yang akan ditetapkan. |
 | $ | `self` | Instansi kelas Current saat ini. |
 
-### Since
+### Since {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 Didefinisikan di [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L377) pada baris 377
 
 
-## Returns
+## Returns {#returns}

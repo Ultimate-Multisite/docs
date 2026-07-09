@@ -4,11 +4,11 @@ title: Nzacha - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Nzacha: wu_country_get_cities
+# Nzacha: wu_country_get_cities {#filter-wucountrygetcities}
 
 Na-eweghachi ndepụta obodo ukwu maka steeti n’ime mba.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Na-eweghachi ndepụta obodo ukwu maka steeti n’ime mba.
 | $state_code | `string` | Koodu ISO mkpụrụedemede abụọ maka steeti ahụ. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance nke klas dị ugbu a. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 2.0.11
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) na ahịrị 146
 
 
-## Ihe a na-eweghachi
+## Ihe a na-eweghachi {#returns}
 Ndepụta steeti a zara nzacha.

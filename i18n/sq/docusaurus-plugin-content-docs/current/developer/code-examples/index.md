@@ -3,11 +3,11 @@ title: Shembuj të Avancuar Kodi
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Shembuj të Avancuar Kodi
+# Shembuj të Avancuar Kodi {#advanced-code-examples}
 
 Këta shembuj demonstrojnë modele të avancuara integrimi me Ultimate Multisite.
 
-## Motor Dinamik Çmimesh
+## Motor Dinamik Çmimesh {#dynamic-pricing-engine}
 
 Një motor çmimesh i bazuar në rregulla që aplikon zbritje sipas vëllimit, besnikërisë dhe sezonit:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Provizionim i Avancuar i Site-ve
+## Provizionim i Avancuar i Site-ve {#advanced-site-provisioning}
 
 Konfiguroni automatikisht site të reja me plugin-e, SSL, CDN, kopje rezervë dhe monitorim bazuar në veçoritë e planit:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistem i Personalizuar Kufizimesh
+## Sistem i Personalizuar Kufizimesh {#custom-limitations-system}
 
 Gjurmoni dhe zbatoni kufijtë e burimeve me paralajmërime përdorimi:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Numërues atomik BerlinDB me `increment_item()`
+## Numërues atomik BerlinDB me `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 shtoi një metodë `increment_item()` te klasa BerlinDB `Query`. Përdoreni për të kryer rritje të sigurta, atomike në kolona numerike pa gara read-modify-write — e dobishme për numërues, kuota përdorimi dhe kontrolle të rate-limiting që ekzekutohen nën kërkesa të njëkohshme.
 
-### Nënshkrimi i metodës
+### Nënshkrimi i metodës {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 shtoi një metodë `increment_item()` te klasa BerlinD
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Përdorimi bazë
+### Përdorimi bazë {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Gjurmimi i përdorimit të API-së për membership
+### Gjurmimi i përdorimit të API-së për membership {#tracking-api-usage-per-membership}
 
 Një model praktik për zbatimin e kufijve të ritmit të API-së për membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Pse `increment_item()` në vend të `update_item()`
+### Pse `increment_item()` në vend të `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Një qasje naive read-modify-write është e pasigurt nën kërkesa të njëkohshme:
 

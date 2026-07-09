@@ -4,11 +4,11 @@ title: Aksi - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Tindakan: wu_membership_post_renew
+# Tindakan: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Micara sawise nganyari membership.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Micara sawise nganyari membership.
 | $membership_id | `int` | ID saka membership. |
 | $membership | `\Membership` | Obyèk membership. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) ing baris 2235

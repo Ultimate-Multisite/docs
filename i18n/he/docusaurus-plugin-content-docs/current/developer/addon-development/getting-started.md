@@ -3,9 +3,9 @@ title: תחילת העבודה עם פיתוח תוספים
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# פיתוח תוספים
+# פיתוח תוספים {#addon-development}
 
-## מבנה התוסף
+## מבנה התוסף {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## תבנית קובץ התוסף הראשי
+## תבנית קובץ התוסף הראשי {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## דוגמה למודל מותאם אישית
+## דוגמה למודל מותאם אישית {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## שילוב עמוד ניהול
+## שילוב עמוד ניהול {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## בדיקת התוסף שלך
+## בדיקת התוסף שלך {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## נקודות הרחבה ב-v2.13.0
+## נקודות הרחבה ב-v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 מוסיף כמה נקודות הרחבה שימושיות לתוספים שמשתלבים עם דיירים ריבוניים, דומיינים של תשלום, או אוטומציית DNS של ספק אירוח.
 
-### כתובות URL לניהול SSO והאתר הראשי
+### כתובות URL לניהול SSO והאתר הראשי {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### דומייני בסיס לטופס התשלום
+### דומייני בסיס לטופס התשלום {#checkout-form-base-domains}
 
 השתמש ב-`wu_checkout_form_base_domains` כאשר התוסף שלך מספק דומייני בסיס משותפים נוספים שאמורים להתנהג כמו דומייני **כתובת URL של אתר** בטופס התשלום במקום מיפויים מותאמים אישית לכל אתר:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite מנרמל את המארחים האלה ומדלג על רשומות דומיין ממופה אוטומטיות לכל אתר עבורם.
 
-### יצירה אוטומטית של רשומות דומיין
+### יצירה אוטומטית של רשומות דומיין {#automatic-domain-record-creation}
 
 השתמש ב-`wu_should_create_domain_record_for_site` כאשר התוסף שלך צריך לדכא או לדחות יצירה אוטומטית של רשומת דומיין עבור אתר חדש שנוצר:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 אינטגרציות של ספק אירוח שמאזינות ל-`wu_add_subdomain` יכולות ליצור רשומות DNS בצד הספק כאשר אתרים נוצרים. אם לא רשומה אינטגרציה לפעולה הזו, Ultimate Multisite מדלג על משימת הרקע הריקה.
 
-## השלבים הבאים
+## השלבים הבאים {#next-steps}
 
 - עיין ב[מדריך Hooks](/developer/hooks) עבור פעולות ומסננים זמינים
 - בדוק את [סקירת REST API](/developer/rest-api/overview) עבור אינטגרציית API

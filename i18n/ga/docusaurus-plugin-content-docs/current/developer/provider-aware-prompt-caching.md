@@ -3,11 +3,11 @@ title: Taisceadh Promtaí atá Feasach ar Sholáthraithe
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Taisceadh Leideanna atá Feasach ar Sholáthraithe
+# Taisceadh Leideanna atá Feasach ar Sholáthraithe {#provider-aware-prompt-caching}
 
 Tugann Superdav AI Agent v1.12.0 isteach **taisceadh leideanna atá feasach ar sholáthraithe**, a bharrfheabhsaíonn costais API agus foighne trí leideanna a thaisceadh thar sholáthraithe LLM éagsúla. Tá meicníochtaí agus cumraíochtaí taiscthe éagsúla ag gach soláthraí.
 
-## Forbhreathnú
+## Forbhreathnú {#overview}
 
 Ligeann taisceadh leideanna duit:
 
@@ -23,11 +23,11 @@ Cuireann soláthraithe éagsúla taisceadh i bhfeidhm ar bhealaí éagsúla:
 - **OpenRouter**: Taisceadh sonrach don soláthraí
 - **Vertex Anthropic**: Taisceadh leideanna le rialú taisce
 
-## Google Gemini: API cachedContents
+## Google Gemini: API cachedContents {#google-gemini-cachedcontents-api}
 
 Soláthraíonn Google Gemini bainistíocht fhollasach taisce tríd an API `cachedContents`.
 
-### Cumraíocht
+### Cumraíocht {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Leid Thaiscthe a Chruthú
+### Leid Thaiscthe a Chruthú {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Leid Thaiscthe a Úsáid
+### Leid Thaiscthe a Úsáid {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Saolré na Taisce
+### Saolré na Taisce {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Dea-Chleachtais do Gemini
+### Dea-Chleachtais do Gemini {#best-practices-for-gemini}
 
 - **Socraigh TTL oiriúnach**: Cothromaigh coigilteas costais i gcoinne seanchaiteacht na taisce
 - **Taisc leideanna córais**: Athúsáid an leid chórais chéanna thar iarratais
 - **Déan monatóireacht ar úsáid na taisce**: Rianaigh cé na taiscí is mó a úsáidtear
 - **Glan taiscí atá imithe in éag**: Scrios taiscí nach n-úsáidtear ó am go chéile
 
-## Azure OpenAI: Taisceadh Leideanna
+## Azure OpenAI: Taisceadh Leideanna {#azure-openai-prompt-caching}
 
 Tacaíonn Azure OpenAI le taisceadh leideanna le bainistíocht uathoibríoch TTL.
 
-### Cumraíocht
+### Cumraíocht {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Taisceadh a Chumasú
+### Taisceadh a Chumasú {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Ceanntásca Taisce
+### Ceanntásca Taisce {#cache-headers}
 
 Úsáideann Azure OpenAI ceanntásca HTTP le haghaidh rialú taisce:
 
@@ -152,7 +152,7 @@ Luachanna tacaithe:
 - `no_cache`: Ná taisc an t-iarratas seo
 - `no_store`: Ná taisc agus ná hathúsáid
 
-### Monatóireacht ar Úsáid na Taisce
+### Monatóireacht ar Úsáid na Taisce {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Dea-Chleachtais do Azure OpenAI
+### Dea-Chleachtais do Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Úsáid leideanna comhsheasmhacha**: Baineann leideanna comhionanna tairbhe as taisceadh
 - **Socraigh TTL réasúnta**: Cothromaigh costas i gcoinne úire
 - **Déan monatóireacht ar mhéadrachtaí taisce**: Rianaigh cruthú taisce i gcoinne amas
 - **Baiscigh iarratais chosúla**: Grúpáil iarratais chun amas taisce a uasmhéadú
 
-## OpenRouter: Taisceadh Sonrach don Soláthraí
+## OpenRouter: Taisceadh Sonrach don Soláthraí {#openrouter-provider-specific-caching}
 
 Tacaíonn OpenRouter le taisceadh trí na soláthraithe bunúsacha (OpenAI, Anthropic, srl.).
 
-### Cumraíocht
+### Cumraíocht {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Taisceadh OpenRouter a Úsáid
+### Taisceadh OpenRouter a Úsáid {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Roghanna Sonracha don Soláthraí
+### Roghanna Sonracha don Soláthraí {#provider-specific-options}
 
 Tá meicníochtaí taiscthe éagsúla ag soláthraithe éagsúla:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Dea-Chleachtais do OpenRouter
+### Dea-Chleachtais do OpenRouter {#best-practices-for-openrouter}
 
 - **Bíodh taisceadh do sholáthraí ar eolas agat**: Tá meicníochtaí éagsúla ag gach soláthraí
 - **Tástáil iompar taiscthe**: Deimhnigh go n-oibríonn taisceadh leis an soláthraí atá roghnaithe agat
 - **Déan monatóireacht ar chostais**: Rianaigh coigilteas ó thaisceadh
 - **Úsáid samhlacha comhsheasmhacha**: Briseann athrú samhlacha amas taisce
 
-## Vertex Anthropic: Taisceadh Leideanna le Rialú Taisce
+## Vertex Anthropic: Taisceadh Leideanna le Rialú Taisce {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Tacaíonn Vertex Anthropic (Google Cloud) le taisceadh leideanna le rialú follasach taisce.
 
-### Cumraíocht
+### Cumraíocht {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Caching Vertex Anthropic a Úsáid
+### Caching Vertex Anthropic a Úsáid {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cineálacha Rialaithe Taisce
+### Cineálacha Rialaithe Taisce {#cache-control-types}
 
 - **ephemeral**: Taisce ar feadh ré an iarratais (réamhshocrú)
 - **persistent**: Taisce thar iliomad iarratas (má thacaítear leis)
 
-### Monatóireacht ar Úsáid Taisce
+### Monatóireacht ar Úsáid Taisce {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Dea-Chleachtais do Vertex Anthropic
+### Dea-Chleachtais do Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Úsáid caching ephemeral**: Maith do thaisceadh seisiúin aonair
 - **Socraigh max_tokens go cuí**: Cothromaigh méid na taisce i gcoinne an chostais
 - **Déan monatóireacht ar mhéadrachtaí taisce**: Rianaigh éifeachtacht na taisce
 - **Tástáil le d’ualach oibre**: Deimhnigh go dtéann taisceadh chun tairbhe do chás úsáide
 
-## Straitéis Taisce Thras-Sholáthraí
+## Straitéis Taisce Thras-Sholáthraí {#cross-provider-caching-strategy}
 
-### Cumraíocht Aontaithe
+### Cumraíocht Aontaithe {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Brath Soláthraí
+### Brath Soláthraí {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Straitéis Chúltaca
+### Straitéis Chúltaca {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Barrfheabhsú Costais
+## Barrfheabhsú Costais {#cost-optimization}
 
-### Coigilteas a Ríomh
+### Coigilteas a Ríomh {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Leideanna Barrfheabhsaithe
+### Leideanna Barrfheabhsaithe {#optimization-tips}
 
 - **Cuir prompts córais mhóra sa taisce**: An coigilteas costais is mó
 - **Athúsáid comhthéacs**: Cuir doiciméid chomhthéacs a úsáidtear go minic sa taisce
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Déan monatóireacht ar éifeachtacht taisce**: Rianaigh coigilteas iarbhír
 - **Coigeartaigh TTL**: Cothromaigh costas i gcoinne úire
 
-## Fabhtcheartú
+## Fabhtcheartú {#troubleshooting}
 
-### Níl an taisce á húsáid
+### Níl an taisce á húsáid {#cache-not-being-used}
 
 - Deimhnigh go bhfuil caching cumasaithe sa chumraíocht
 - Seiceáil go bhfuil na prompts comhionann (teastaíonn meaitseáil bheacht ó caching)
 - Deimhnigh nach bhfuil an taisce imithe in éag
 - Seiceáil teorainneacha taisce atá sainiúil don soláthraí
 
-### Teipeann ar chruthú taisce
+### Teipeann ar chruthú taisce {#cache-creation-failing}
 
 - Deimhnigh go bhfuil méid na taisce laistigh de theorainneacha an tsoláthraí
 - Seiceáil go bhfuil comhréir rialaithe taisce ceart
 - Cinntigh go dtacaíonn an soláthraí le caching do do mhúnla
 - Athbhreithnigh doiciméadú an tsoláthraí le haghaidh teorainneacha
 
-### Costais gan choinne
+### Costais gan choinne {#unexpected-costs}
 
 - Déan monatóireacht ar chruthú taisce i gcoinne comharthaí léite taisce
 - Deimhnigh go bhfuil an taisce á húsáid i ndáiríre
 - Seiceáil le haghaidh cailliúintí taisce de bharr éagsúlachtaí prompt
 - Smaoinigh ar TTL nó straitéis taisce a choigeartú
 
-## Comparáid Soláthraithe
+## Comparáid Soláthraithe {#provider-comparison}
 
 | Gné | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Laghdú costais | 90% | 90% | Ag brath ar an soláthraí | 90% |
 | Monatóireacht | Mionsonraithe | Trí mhéadrachtaí | Ag brath ar an soláthraí | Trí úsáid |
 
-## Na Chéad Chéimeanna Eile
+## Na Chéad Chéimeanna Eile {#next-steps}
 
 1. **Roghnaigh do sholáthraí**: Roghnaigh bunaithe ar do riachtanais
 2. **Cumraigh caching**: Socraigh caching atá sainiúil don soláthraí

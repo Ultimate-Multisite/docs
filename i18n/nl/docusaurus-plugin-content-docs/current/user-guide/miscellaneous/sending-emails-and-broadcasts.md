@@ -3,13 +3,13 @@ title: E-mails en broadcasts versturen
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-mails en uitzendingen verzenden (v2)
+# E-mails en uitzendingen verzenden (v2) {#sending-emails-and-broadcasts-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
 Ultimate Multisite wordt geleverd met een functie waarmee je met je klanten kunt communiceren door een e-mail te sturen naar een gerichte gebruiker of een groep gebruikers, en door mededelingen op hun admin Dashboard te plaatsen om aankondigingen uit te zenden
 
-## Voeg admin-mededelingen toe aan het Dashboard van je klanten met uitzendingen
+## Voeg admin-mededelingen toe aan het Dashboard van je klanten met uitzendingen {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Met de uitzendfunctie van Ultimate Multisite kun je **admin-mededelingen** toevoegen aan het admin Dashboard van de subsite van je gebruiker.
 
@@ -51,7 +51,7 @@ Nadat je je bericht hebt gemaakt, kun je op de knop **Verzenden** drukken.
 
 En dat is alles. De admin-mededeling zou onmiddellijk op het Dashboard van je gebruiker moeten verschijnen.
 
-## Stuur e-mails naar je klanten
+## Stuur e-mails naar je klanten {#send-emails-to-your-customers}
 
 Met de uitzendfunctie van Ultimate Multisite kun je een e-mail naar je gebruikers sturen. Je hebt de optie om de e-mail alleen naar specifieke gebruikers te sturen of een specifieke gebruikersgroep te targeten op basis van het product of plan waarop ze geabonneerd zijn.
 
@@ -81,11 +81,11 @@ Nadat je je bericht hebt gemaakt, kun je op de knop **Verzenden** drukken.
 
 En zo eenvoudig is het om een e-mail naar je eindgebruikers te sturen met de uitzendfunctie.
 
-## Systeeme-mails
+## Systeeme-mails {#system-emails}
 
 Systeeme-mails in Ultimate Multisite zijn die **automatische meldingen** die door het systeem worden verzonden na bepaalde acties zoals registratie, betaling, domeintoewijzing, enz. Deze e-mails kunnen worden bewerkt of aangepast vanuit de instellingen van Ultimate Multisite. Het wordt ook geleverd met een functie waarmee je bestaande instellingen uit een andere Ultimate Multisite-installatie kunt resetten en importeren.
 
-### Resetten & importeren
+### Resetten & importeren {#resetting--importing}
 
 Nieuwe versies van Ultimate Multisite, evenals add-ons, kunnen en zullen van tijd tot tijd nieuwe e-mails registreren.
 
@@ -93,7 +93,7 @@ Om conflicten en andere problemen te voorkomen, **voegen we de nieuwe e-mailsjab
 
 Super admins en agents kunnen deze nieuw geregistreerde e-mails echter importeren via de importtool. Dat proces maakt een nieuwe systeeme-mail aan met de inhoud en configuratie van de nieuwe e-mailsjabloon, zodat de super admin alle gewenste wijzigingen kan aanbrengen of ze kan behouden zoals ze zijn.
 
-#### Systeeme-mails importeren
+#### Systeeme-mails importeren {#how-to-import-system-emails}
 
 Ga naar je instellingenpagina van Ultimate Multisite en ga naar het tabblad **E-mails**.
 
@@ -111,7 +111,7 @@ Vervolgens kun je de opties E-mails importeren in- of uitschakelen om te zien we
 
 <!-- Screenshot niet beschikbaar: modal Resetten en importeren met de opties voor E-mails importeren uitgeklapt -->
 
-#### Systeem-e-mails resetten
+#### Systeem-e-mails resetten {#reseting-system-emails}
 
 Op andere momenten merk je dat de wijzigingen die je in een bepaalde e-mailtemplate hebt aangebracht niet meer voor je werken en dat je deze wilt terugzetten naar de **standaardstatus**.
 

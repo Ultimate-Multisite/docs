@@ -3,71 +3,71 @@ title: Integrasyon WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integration WPMU DEV
+# Integration WPMU DEV {#wpmu-dev-integration}
 
-## Ընդհանուր տեսքը (Overview)
+## Ընդհանուր տեսքը (Overview) {#overview}
 WPMU DEV-ը WordPress-ի համար ամբողջական հարթակ է, որը առաջարկում է հոස්տինգ, plugin-ներ և ծառայություններ WordPress սайտերի համար։ Այս ինտեգրումը թույլ է տալիս ավտոմատ դոմենի սինխրոնիզացիա և SSL վկայագրականների կառավարում Ultimate Multisite-ի և WPMU DEV հոස්տինգի միջև։
 
-## Առանձնահատկություններ (Features)
+## Առանձնահատկություններ (Features) {#features}
 - Դոմենի ավտոմատ սինխրոնիզացիա
 - SSL վկայագրականների կառավարում
 - Լրացուցիչ SSL վկայագրականների ստուգման փորձեր
 
-## Առ պահանջներ (Requirements)
+## Առ պահանջներ (Requirements) {#requirements}
 Ինտեգրումը ինքնաբերաբար ստուգում է, թե արդյոք դուք հոස්տավորվում եք WPMU DEV-ում և օգտագործում է ներկառուցված API-ն։ Եթե դուք հոස්տավորվում եք WPMU DEV-ում, լրացուցիչ կոնֆիգուրացիա անելու կարիք չկա։
 
 Ինտեգրումը ստուգում է `WPMUDEV_HOSTING_SITE_ID` հաստատունի առկայությունը, որը ավտոմատ սահմանվում է WPMU DEV-ում հոස්տավորվելիս։
 
-## Կài գործողության ցուցումներ (Setup Instructions)
+## Կài գործողության ցուցումներ (Setup Instructions) {#setup-instructions}
 
-### 1. Ստուգեք WPMU DEV Հոස්տինգը
+### 1. Ստուգեք WPMU DEV Հոස්տինգը {#1-verify-wpmu-dev-hosting}
 Եթե դուք հոස්տավորվում եք WPMU DEV-ում, անհրաժեշտ հաստատունները արդեն սահմանված են։ Ստուգեք հետևյալը.
 
 1. `WPMUDEV_HOSTING_SITE_ID` հաստատունը սահմանված է ձեր միջավայրում (environment)
 2. Ձեզ կա WPMU DEV-ի գործողության համար ակտիվ անդամակցություն և API մուտք
 
-### 2. Թողեք ինտեգրումը (Enable the Integration)
+### 2. Թողեք ինտեգրումը (Enable the Integration) {#2-enable-the-integration}
 1. Ձեր WordPress admin-ում գնացեք Ultimate Multisite > Settings
 2. Գնացեք «Domain Mapping» բաժինը (tab)
 3. Կանգնեք «Host Integrations»-ի տակ և ընտրեք WPMU DEV ինտեգրումը։
 4. Սեղմեք «Save Changes»-ի վրա։
 
-## Ինչպես է աշխատում (How It Works)
+## Ինչպես է աշխատում (How It Works) {#how-it-works}
 
-### Դոմենի սինխրոնիզացիա (Domain Syncing)
+### Դոմենի սինխրոնիզացիա (Domain Syncing) {#domain-syncing}
 Երբ դոմենը կապվում է Ultimate Multisite-ում.
 
 1. Ինտեգրումը WPMU DEV API-ն օգտագործում է՝ դոմենը ձեր հոස්տինգի հաշվին ավելացնելու համար։
 2. Այն ավտոմատ կերպով ավելացնում է դոմենի www տարբերակը։
 3. WPMU DEV-ը կառավարում է դոմենի կոնֆիգուրացիան և SSL վկայագրականների տրամադրումը։
 
-### SSL Վկայագրականների կառավարում (SSL Certificate Management)
+### SSL Վկայագրականների կառավարում (SSL Certificate Management) {#ssl-certificate-management}
 
 ئەنجامکردنەکە ڕێکخراوە بۆ زیادکردنی ژمارەی هەوڵەکانی پشکنینی گواستنەوەی SSL (SSL certificate verification attempts) بۆ هاستگاری WPMU DEV، چونکە لەوانەیە کاتێکیان پێ بدات بۆ دروستکردن و دامەزراندنی گواستنەوەی SSL. بە شێوەیەکی پیش‌تەوا، تا 10 جار هەوڵ دەدات بۆ پشکنینی گواستنەوەی SSL، لەکاتێکدا ستانداردەکە 5 هەوڵە دەبێت.
 
-## تێبینی گرنگان
+## تێبینی گرنگان {#important-notes}
 
-### لەناوچوونی دامەین (Domain Removal)
+### لەناوچوونی دامەین (Domain Removal) {#domain-removal}
 
 لە ئێستادا APIی WPMU DEV ڕێگایەک بۆ دیاریکردنی ناوچان نییە. کاتێک مۆدالێکی پۆلێنکردنی دامەین (domain mapping) لە Ultimate Multisite دەدرێت، ئەو دامەینە لە هەژماری هاستگاری WPMU DEV دایە. ئەگەر پێویست بێت، دەبێت بە شێوەیەکی دەستی لە داش보ارەکەی هاستگاری WPMU DEV دیاریکردنی بکەیت.
 
-### پشکنینی ناساندنی API (API Authentication)
+### پشکنینی ناساندنی API (API Authentication) {#api-authentication}
 
 ئەم یەکگرتووەکارییە لەسەر کلیدی APIی WPMU DEV بەکاردێت کە لە داتابەیس وۆرسپریشتەکەت وەک کارکردن `wpmudev_apikey` هەڵدەستێت. ئەمە بە شێوەیەکی ئۆتۆماتیک ڕێکدەدرێت کاتێک سایتەکەت پەیوەندی دەدات بە WPMU DEV.
 
-## چارەسەرکردنی کێشەکان (Troubleshooting)
+## چارەسەرکردنی کێشەکان (Troubleshooting) {#troubleshooting}
 
-### کێشەکانی پەیوەندی API (API Connection Issues)
+### کێشەکانی پەیوەندی API (API Connection Issues) {#api-connection-issues}
 - دڵنیا بە لەوە چی سایتەکەت بە شێوەیەکی دروست پەیوەست بووە بە WPMU DEV.
 - چاک بکە کە کارکردن `wpmudev_apikey` لە داتابەیس وۆرسپریشتەکەت دیاریکراوە.
 - دڵنیا بەوە چی ئەندامیت لە WPMU DEV چالاکە.
 
-### کێشەکانی گواستنەوەی SSL (SSL Certificate Issues)
+### کێشەکانی گواستنەوەی SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 - WPMU DEV ڕەنگە کاتێکیان پێ بدات بۆ دروستکردنی گواستنەوەی SSL (بە ئاسایی 5 تا 15 خولەک).
 - ئەم یەکگرتووەکارییە ڕێکدەدرێت کە تا 10 جار بۆ پشکنینی گواستنەوەی SSL هەوڵ دەدات.
 - ئەگەر لە دوای چەندین هەوڵ، 여هەنی گواستنەوەی SSL بەردەوام نەبوو، پەیوەندی بە پشتیوانی WPMU DEV بکەیت.
 
-### دامەینی نەکراوە (Domain Not Added)
+### دامەینی نەکراوە (Domain Not Added) {#domain-not-added}
 - لۆگەکانی Ultimate Multisite بۆ هەر پەیامێکی هەڵە یان ڕێگرییەک دەبینیت؟ چاک بکە.
 - دڵنیا بەوە چی دامەین لە WPMU DEV دا پێشتر زیادکراوە یان نا.
 - دڵنیا بەوە چی پلانی هاستگاری WPMU DEV تۆ پشتگیریی ژمارەی ناوچان کە دەدات زیاد بکەیت.

@@ -4,11 +4,11 @@ title: Филтер - wu_membership_calculated_date_expiration
 sidebar_label: wu_membership_calculated_date_expiration
 _i18n_hash: 92e1113e33a3b69e4fc3d07d6dcd8d69
 ---
-# Филтер: wu_membership_calculated_date_expiration
+# Филтер: wu_membership_calculated_date_expiration {#filter-wumembershipcalculateddateexpiration}
 
 Филтрира израчунати датум истека.
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 92e1113e33a3b69e4fc3d07d6dcd8d69
 | $membership_id | `int` | ID чланства. |
 | $membership | `\WP_Ultimo\Models\Membership` | Објекат чланства. |
 
-### Од
+### Од {#since}
 
 - 2.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L1309) на линији 1309

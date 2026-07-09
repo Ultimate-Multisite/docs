@@ -3,11 +3,11 @@ title: Flusso di onboarding del Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flusso di Onboarding del Theme Builder
+# Flusso di Onboarding del Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introduce un **flusso di onboarding del Theme Builder** guidato che ti aiuta a creare un tema block personalizzato durante la configurazione iniziale. Questo sostituisce la modalità Site Builder legacy con un approccio più flessibile e assistito dall'agente.
 
-## Cos'è il Flusso di Onboarding del Theme Builder?
+## Cos'è il Flusso di Onboarding del Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Il flusso di onboarding del Theme Builder è un assistente di configurazione interattivo che:
 
@@ -18,9 +18,9 @@ Il flusso di onboarding del Theme Builder è un assistente di configurazione int
 
 Il flusso è alimentato dall'**agente Setup Assistant**, che pone domande di chiarimento e costruisce il tuo tema in modo incrementale.
 
-## Avviare l'Onboarding del Theme Builder
+## Avviare l'Onboarding del Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Configurazione al Primo Avvio
+### Configurazione al Primo Avvio {#first-run-setup}
 
 Quando lanci Superdav AI Agent per la prima volta su una nuova installazione di WordPress, vedrai:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Seleziona **"Build a custom theme"** per entrare nel flusso di onboarding del Theme Builder.
 
-### Attivazione Manuale
+### Attivazione Manuale {#manual-activation}
 
 Puoi anche avviare l'onboarding del Theme Builder in qualsiasi momento richiedendo:
 
@@ -49,9 +49,9 @@ o
 "Help me create a custom theme"
 ```
 
-## I Passaggi di Onboarding
+## I Passaggi di Onboarding {#the-onboarding-steps}
 
-### Passo 1: Selezione della Modalità
+### Passo 1: Selezione della Modalità {#step-1-mode-selection}
 
 L'agente Setup Assistant ti chiede la tua preferenza:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 La **modalità guidata** è consigliata per la maggior parte degli utenti; l'agente fa raccomandazioni di design basate sul tuo settore e sui tuoi obiettivi.
 
-### Passo 2: Specificazione del Sito
+### Passo 2: Specificazione del Sito {#step-2-site-specification}
 
 Ti verranno chieste informazioni sul tuo sito:
 
@@ -74,7 +74,7 @@ Ti verranno chieste informazioni sul tuo sito:
 
 Queste informazioni vengono salvate nella tua memoria **site_brief**, che gli agenti consultano nelle sessioni future.
 
-### Passo 3: Decisioni sul Sistema di Design
+### Passo 3: Decisioni sul Sistema di Design {#step-3-design-system-decisions}
 
 L'agente ti guida attraverso la selezione dei token di design:
 
@@ -83,7 +83,7 @@ L'agente ti guida attraverso la selezione dei token di design:
 - **Spaziatura**: Layout compatti, normali o ampi
 - **Movimento**: Animazioni e transizioni (se desiderato)
 
-### Passo 4: Generazione del Tema
+### Passo 4: Generazione del Tema {#step-4-theme-generation}
 
 L'agente Setup Assistant crea la struttura base del tuo tema block personalizzato con:
 
@@ -92,7 +92,7 @@ L'agente Setup Assistant crea la struttura base del tuo tema block personalizzat
 - Stili block personalizzati che corrispondono al tuo sistema di design
 - Metadati del tema e dichiarazioni di supporto WordPress
 
-### Passo 5: Attivazione e Verifica
+### Passo 5: Attivazione e Verifica {#step-5-activation-and-verification}
 
 Il tema viene attivato automaticamente e vedrai:
 
@@ -107,7 +107,7 @@ Il tema viene attivato automaticamente e vedrai:
 
 Potrai quindi visitare il tuo sito per verificare che il tema venga visualizzato correttamente.
 
-## Specificazione del Sito e Memoria site_brief
+## Specificazione del Sito e Memoria site_brief {#site-specification-and-sitebrief-memory}
 
 Durante l'onboarding, l'agente cattura la specifica del tuo sito in una categoria di memoria **site_brief**. Questo include:
 
@@ -117,7 +117,7 @@ Durante l'onboarding, l'agente cattura la specifica del tuo sito in una categori
 - Preferenze di design
 - Struttura dei contenuti
 
-### Perché è importante site_brief
+### Perché è importante site_brief {#why-sitebrief-matters}
 
 Nelle sessioni future, gli agenti consultano il tuo site_brief per:
 
@@ -126,7 +126,7 @@ Nelle sessioni future, gli agenti consultano il tuo site_brief per:
 - Fornire raccomandazioni contestuali
 - Evitare di ripetere domande di configurazione
 
-### Visualizzare il tuo site_brief
+### Visualizzare il tuo site_brief {#viewing-your-sitebrief}
 
 Puoi chiedere all'agente:
 
@@ -142,11 +142,11 @@ o
 
 L'agente visualizzerà la specifica del sito salvata.
 
-## Personalizzazione Dopo l'Onboarding
+## Personalizzazione Dopo l'Onboarding {#customizing-after-onboarding}
 
 Dopo il completamento dell'onboarding del Theme Builder, puoi:
 
-### Usare la Skill Estetica del Sistema di Design
+### Usare la Skill Estetica del Sistema di Design {#use-the-design-system-aesthetics-skill}
 
 Richiedere raffinamenti di design:
 
@@ -162,7 +162,7 @@ o
 
 La **Design System Aesthetics skill** ti guida attraverso aggiornamenti di design mirati.
 
-### Modificare theme.json Direttamente
+### Modificare theme.json Direttamente {#edit-themejson-directly}
 
 Per utenti avanzati, modifica `/wp-content/themes/[theme-name]/theme.json` per regolare:
 
@@ -171,7 +171,7 @@ Per utenti avanzati, modifica `/wp-content/themes/[theme-name]/theme.json` per r
 - Valori di spaziatura
 - Definizioni di bordi e ombre
 
-### Creare Modelli Block Personalizzati
+### Creare Modelli Block Personalizzati {#create-custom-block-templates}
 
 Usa l'editor block di WordPress per creare modelli personalizzati per:
 
@@ -180,7 +180,7 @@ Usa l'editor block di WordPress per creare modelli personalizzati per:
 - Pagine prodotto
 - Moduli di contatto
 
-## Confronto: Onboarding Vecchio vs. Nuovo
+## Confronto: Onboarding Vecchio vs. Nuovo {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Usa l'editor block di WordPress per creare modelli personalizzati per:
 | Flexibility | Opzioni fisse | Personalizzabile |
 | Future updates | Non referenziato | Salvato in site_brief |
 
-## Risoluzione dei Problemi
+## Risoluzione dei Problemi {#troubleshooting}
 
 **Il flusso di onboarding non è stato completato**
 - Riavviare il flusso: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Usa l'editor block di WordPress per creare modelli personalizzati per:
 - Chiedere all'agente di "regenerate the theme with [specific changes]"
 - Modificare theme.json direttamente per un controllo preciso
 
-## Prossimi Passaggi
+## Prossimi Passaggi {#next-steps}
 
 Dopo aver completato l'onboarding del Theme Builder:
 

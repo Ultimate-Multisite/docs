@@ -3,11 +3,11 @@ title: Követelmények
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Az Ultimate Multisite követelményei
+# Az Ultimate Multisite követelményei {#ultimate-multisite-requirements}
 
 Az első kérdés, amit az Ultimate Multisite megvásárlása előtt feltehetsz magadnak: milyen követelmények szükségesek a bővítményünk futtatásához? Szerencsére csak néhány alapvető követelmény van az Ultimate Multisite használatához: egy **domainnév**, egy jó **tárhelyszolgáltató** és egy WordPress **Multisite** telepítés. Ennyi az egész!
 
-## Domainnév
+## Domainnév {#domain-name}
 
 Először beszéljünk a domainnévről.
 
@@ -17,7 +17,7 @@ A bővítményünk előfizetéses szolgáltatásokat, fizetésbegyűjtést, pén
 
 Bármilyen szakterületet választasz, a bővítményünkkel kezelheted, amíg weboldalakat értékesítesz szolgáltatásként! Ügyelj arra, hogy olyan domainnevet válassz, amely illeszkedik az üzleti terveidhez.
 
-## Tárhelyszolgáltató
+## Tárhelyszolgáltató {#hosting-provider}
 
 Most, hogy van egy figyelemfelkeltő domainneved, amely tükrözi a szakterületedet és vállalkozásodat, egy jó webtárhely-szolgáltatót kell választanod, hogy elhelyezd rajta a hálózatodat az Ultimate Multisite-tal. Számos jó lehetőség van a piacon. Egyes tárhelyszolgáltatók jól integrálódnak az Ultimate Multisite-tal, ami döntő tényező lehet attól függően, hogy mit tervezel építeni.
 
@@ -25,7 +25,7 @@ Az Ultimate Multisite-nak bármely tárhelyszolgáltatónál működnie kell. Az
 
 Ami a szerver specifikációit illeti, nincs konkrét képlet, mivel ez attól függ, milyen funkciókat kínálsz, és mekkora a hálózatod. Egy osztott tárhely jó kiindulópont lehet, de amint a hálózatod növekedni kezd, valószínűleg dedikált VPS-re lesz szükséged.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Most beszéljünk egy kicsit a WordPress Multisite telepítésről.
 

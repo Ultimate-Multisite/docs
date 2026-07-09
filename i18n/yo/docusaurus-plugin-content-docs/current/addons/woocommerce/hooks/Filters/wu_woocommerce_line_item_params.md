@@ -4,11 +4,11 @@ title: Àlẹmọ - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Àlẹmọ: wu_woocommerce_line_item_params
+# Àlẹmọ: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Ṣe àlẹmọ àwọn paramita tí a lò láti dá àwọn nkan ila sílẹ̀ lórí WooCommerce Cart, kí a tó darí alabara lọ sí ìsanwó WooCommerce.
 
-## Àwọn Paramita
+## Àwọn Paramita {#parameters}
 
 | Orúkọ | Irú | Àpèjúwe |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Àpẹẹrẹ nkan ila Ultimate Multisite. |
 | $wc_product | `\WC_Product` | Ọjà WooCommerce. |
 
-### Láti
+### Láti {#since}
 
 - 2.0.0
-### Orísun
+### Orísun {#source}
 
 Ṣàlàyé nínú [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) ní ila 662
 
 
-## Àwọn Ìpadà
+## Àwọn Ìpadà {#returns}
 Àwọn paramita nkan ila tí a ti ṣàtúnṣe.

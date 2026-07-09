@@ -3,15 +3,15 @@ title: 'Pelajaran 4: Membangun Template Niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Pelajaran 4: Membuat Template Khusus Industri (Niche Templates)
+# Pelajaran 4: Membuat Template Khusus Industri (Niche Templates) {#lesson-4-building-niche-templates}
 
 Template adalah inti dari nilai jual unik (niche value proposition) Anda. Pemilik studio kebugaran yang mendaftar dan melihat situs yang sudah terlihat seperti situs kebugaran—dengan jadwal kelas, profil pelatih, dan gambar yang tepat—jauh lebih mungkin untuk bertahan daripada yang melihat kanvas kosong.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 Kita sudah memiliki jaringan FitSite yang berfungsi dengan Ultimate Multisite terpasang dan terkonfigurasi. Sekarang kita akan membangun template yang membuat FitSite terasa memang dirancang khusus untuk bisnis kebugaran.
 
-## Mengapa Template Khusus Industri Itu Penting
+## Mengapa Template Khusus Industri Itu Penting {#why-niche-templates-matter}
 
 Template generik memaksa pelanggan Anda untuk melakukan pekerjaan berat: mencari tahu halaman apa yang mereka butuhkan, struktur konten apa yang berhasil, dan bagaimana membuatnya terlihat benar untuk industri mereka. Template khusus industri menghilangkan gesekan itu.
 
@@ -24,11 +24,11 @@ Pemilik studio kebugaran yang mendaftar ke FitSite seharusnya melihat:
 
 Mereka hanya perlu mengisi detail mereka. Mereka tidak memulai dari nol.
 
-## Merencanakan Template Anda
+## Merencanakan Template Anda {#planning-your-templates}
 
 Sebelum membangun, putuskan template apa yang akan ditawarkan. Untuk FitSite, kita akan membuat tiga:
 
-### Template 1: Studio Esensial (Studio Essential)
+### Template 1: Studio Esensial (Studio Essential) {#template-1-studio-essential}
 
 Untuk studio kecil dan pelatih pribadi.
 
@@ -39,7 +39,7 @@ Untuk studio kecil dan pelatih pribadi.
 - **Halaman Kontak** dengan peta lokasi dan formulir
 - **Desain bersih dan modern** dengan skema warna yang sesuai untuk kebugaran
 
-### Template 2: Gym Pro
+### Template 2: Gym Pro {#template-2-gym-pro}
 
 Untuk gym mapan dengan lebih banyak layanan.
 
@@ -50,7 +50,7 @@ Untuk gym mapan dengan lebih banyak layanan.
 - **Bagian Testimoni** di halaman beranda
 - **Opsi branding yang lebih menonjol**
 
-### Template 3: Rantai Kebugaran (Fitness Chain)
+### Template 3: Rantai Kebugaran (Fitness Chain) {#template-3-fitness-chain}
 
 Untuk operasi multi-lokasi.
 
@@ -60,17 +60,17 @@ Untuk operasi multi-lokasi.
 - **Branding terpusat** dengan detail spesifik lokasi
 - **Direktori Staf** di seluruh lokasi
 
-## Membangun Situs Template
+## Membangun Situs Template {#building-a-template-site}
 
 Di Ultimate Multisite, template hanyalah situs WordPress yang dikonfigurasi seperti yang Anda inginkan agar situs pelanggan baru terlihat. Berikut cara membuatnya:
 
-### Langkah 1: Membuat Situs Template
+### Langkah 1: Membuat Situs Template {#step-1-create-the-template-site}
 
 1. Arahkan ke **Sites > Add New** di admin jaringan Anda
 2. Buat situs bernama `template-studio-essential`
 3. Situs ini akan menjadi kanvas kerja Anda
 
-### Langkah 2: Menginstal dan Mengonfigurasi Tema
+### Langkah 2: Menginstal dan Mengonfigurasi Tema {#step-2-install-and-configure-the-theme}
 
 Beralih ke dashboard situs template dan:
 
@@ -82,7 +82,7 @@ Beralih ke dashboard situs template dan:
 Pilih tema yang cukup fleksibel untuk terlihat bagus untuk kebugaran tetapi tidak terlalu rumit sehingga pelanggan Anda tidak dapat mengelolanya. Tema seperti Astra, GeneratePress, atau Kadence bekerja dengan baik karena ringan, dapat disesuaikan, dan didukung dengan baik.
 :::
 
-### Langkah 3: Membuat Halaman
+### Langkah 3: Membuat Halaman {#step-3-create-the-pages}
 
 Bangun setiap halaman dengan:
 
@@ -92,7 +92,7 @@ Bangun setiap halaman dengan:
 
 Buat konten contoh bersifat instruksional sedapat mungkin. Daripada teks pengisi generik, tulis konten seperti: "Ganti ini dengan deskripsi singkat tentang studio Anda dan apa yang membuatnya istimewa. Sebutkan filosofi pelatihan Anda, tahun pengalaman, atau apa yang diharapkan klien."
 
-### Langkah 4: Mengonfigurasi Plugin
+### Langkah 4: Mengonfigurasi Plugin {#step-4-configure-plugins}
 
 Instal dan aktifkan plugin yang dibutuhkan studio kebugaran:
 
@@ -100,7 +100,7 @@ Instal dan aktifkan plugin yang dibutuhkan studio kebugaran:
 - Plugin formulir kontak
 - Plugin SEO (pra-konfigurasi dengan pengaturan default yang relevan dengan kebugaran)
 
-### Langkah 5: Menandai sebagai Template
+### Langkah 5: Menandai sebagai Template {#step-5-mark-as-template}
 
 1. Arahkan ke **Ultimate Multisite > Sites**
 2. Edit situs template
@@ -108,7 +108,7 @@ Instal dan aktifkan plugin yang dibutuhkan studio kebugaran:
 
 Ulangi proses ini untuk setiap template yang ingin Anda tawarkan.
 
-## Daftar Periksa Kualitas Template
+## Daftar Periksa Kualitas Template {#template-quality-checklist}
 
 Sebelum membuat template tersedia, verifikasi:
 
@@ -121,7 +121,7 @@ Sebelum membuat template tersedia, verifikasi:
 - [ ] Tidak ada tautan rusak atau aset yang hilang
 - [ ] Kecepatan pemuatan halaman dapat diterima
 
-## Jaringan FitSite Sejauh Ini
+## Jaringan FitSite Sejauh Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Siap untuk konfigurasi paket (pelajaran berikutnya)
 ```
 
-## Apa yang Kita Bangun Pelajaran Ini
+## Apa yang Kita Bangun Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Tiga template khusus industri** yang dirancang untuk berbagai ukuran bisnis kebugaran
 - **Konten dan gambar yang sesuai kebugaran** yang membuat platform terasa memang dirancang khusus

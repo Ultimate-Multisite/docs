@@ -3,13 +3,13 @@ title: Anfon E-byst a Darllediadau
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Anfon E-byst a Darllediadau (v2)
+# Anfon E-byst a Darllediadau (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NODYN PWYSIG: Mae’r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 
 Daw Ultimate Multisite gyda nodwedd a fydd yn caniatáu i chi gyfathrebu â’ch cwsmeriaid trwy anfon e-bost at ddefnyddiwr targed neu grŵp o ddefnyddwyr yn ogystal ag anfon hysbysiadau ar eu dashboard gweinyddol i ddarlledu cyhoeddiadau
 
-## Ychwanegu hysbysiadau gweinyddol at dashboard eich cwsmeriaid gyda Darllediadau
+## Ychwanegu hysbysiadau gweinyddol at dashboard eich cwsmeriaid gyda Darllediadau {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Gan ddefnyddio nodwedd ddarlledu Ultimate Multisite, gallwch ychwanegu **hysbysiadau gweinyddol** at dashboard gweinyddol is-safle eich defnyddiwr.
 
@@ -51,7 +51,7 @@ Ar ôl creu eich neges, gallwch wedyn bwyso’r botwm **Send**.
 
 A dyna ni. Dylai’r hysbysiad gweinyddol ymddangos ar unwaith ar dashboard eich defnyddiwr.
 
-## Anfon e-byst at eich cwsmeriaid
+## Anfon e-byst at eich cwsmeriaid {#send-emails-to-your-customers}
 
 Gan ddefnyddio nodwedd ddarlledu Ultimate Multisite, gallwch anfon e-bost at eich defnyddwyr. Mae gennych opsiwn i anfon yr e-bost dim ond at ddefnyddwyr penodol neu dargedu grŵp defnyddwyr penodol yn seiliedig ar y cynnyrch neu’r cynllun y maent wedi tanysgrifio oddi tano.
 
@@ -81,11 +81,11 @@ Ar ôl creu eich neges, gallwch bwyso’r botwm **Send**.
 
 A dyna pa mor hawdd yw anfon e-bost at eich defnyddwyr terfynol gan ddefnyddio’r nodwedd ddarlledu.
 
-## E-byst system
+## E-byst system {#system-emails}
 
 E-byst system yn Ultimate Multisite yw’r **hysbysiadau awtomatig** hynny a anfonir gan y system ar ôl gweithredoedd penodol fel cofrestru, talu, mapio parth, ac ati. Gellir golygu neu addasu’r e-byst hyn o osodiadau Ultimate Multisite. Mae hefyd yn dod gyda nodwedd a fydd yn caniatáu i chi ailosod a mewnforio gosodiadau presennol o osodiad Ultimate Multisite arall.
 
-### Ailosod a Mewnforio
+### Ailosod a Mewnforio {#resetting--importing}
 
 Gall fersiynau newydd Ultimate Multisite, yn ogystal ag ychwanegion, gofrestru e-byst newydd o bryd i’w gilydd.
 
@@ -93,7 +93,7 @@ Er mwyn atal gwrthdaro a phroblemau eraill, **ni fyddwn yn ychwanegu’r templed
 
 Fodd bynnag, gall uwch-weinyddwyr ac asiantau fewnforio’r e-byst sydd newydd eu cofrestru hyn trwy’r offeryn mewnforio. Bydd y broses honno’n creu e-bost system newydd gyda chynnwys a chyfluniad y templed e-bost newydd, gan ganiatáu i’r uwch-weinyddwr wneud unrhyw addasiadau y maent eisiau neu eu cadw fel y maent.
 
-#### Sut i fewnforio e-byst system
+#### Sut i fewnforio e-byst system {#how-to-import-system-emails}
 
 Ewch i’ch tudalen Gosodiadau Ultimate Multisite ac ewch i’r tab **Emails**.
 
@@ -111,7 +111,7 @@ Yna, gallwch doglo’r opsiynau Import Emails i weld pa e-byst system sydd ar ga
 
 <!-- Screenshot unavailable: Moddol Ailosod a Mewnforio gyda'r opsiynau Mewnforio E-byst wedi'u hehangu -->
 
-#### Ailosod E-byst System
+#### Ailosod E-byst System {#reseting-system-emails}
 
 Ar adegau eraill, byddwch yn sylweddoli nad yw'r newidiadau a wnaethoch i dempled e-bost penodol yn gweithio i chi mwyach ac yr hoffech ei ailosod i'w **gyflwr diofyn**.
 

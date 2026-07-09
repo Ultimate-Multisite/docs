@@ -3,9 +3,9 @@ title: Paglipat gikan sa V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrating gikan sa V1
+# Migrating gikan sa V1 {#migrating-from-v1}
 
-## Ang Ultimate Multisite nag-usab na gikan sa iyang orihinal nga 1.x family sa mga release ngadto sa 2.x family sa mga release.
+## Ang Ultimate Multisite nag-usab na gikan sa iyang orihinal nga 1.x family sa mga release ngadto sa 2.x family sa mga release. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ang Ultimate Multisite version 2.0 ug pataas usa ka kompleto nga pag-rewrite sa codebase, ang pasabot kay gamay ra gyud ang magka-share tali sa daan nga bersyon ug sa bag-ong bersyon. Tungod niini, kung mag-upgrade ka gikan sa 1.x ngadto sa 2.x, kinahanglan nimo i-migrate ang imong data ngadto sa format nga masabtanon sa mga bag-ong bersyon.
 
@@ -15,7 +15,7 @@ Kini nga lesson naghisgot kung unsaon pagtrabaho ang migrator, unsa ang buhaton 
 
 _**MAHINUNGDAN: Sa dili pa ka magsugod sa pag-upgrade gikan sa version 1.x ngadto sa version 2.0 palihog siguroa nga naghimo ka og backup sa database sa imong site**_
 
-## Unang mga lakang
+## Unang mga lakang {#first-steps}
 
 Ang unang lakang mao ang pag-download sa plugin .zip file ug pag-install sa version 2.0 sa imong network admin dashboard.
 
@@ -49,19 +49,19 @@ Human sa pagbutang sa imong key, i-click ang **Agree & Activate**.
 
 Human ma-activate ang lisensya, pwede ka na magsugod sa aktuwal nga installation pinaagi sa pag-click og **Install** sa sunod nga pahina. Kini awtomatikong maghimo sa mga kinahanglanon nga files ug database nga gikinahanglan para molihok ang bersyon 2.0.
 
-## Karon, ang migration
+## Karon, ang migration {#now-the-migration}
 
 Ang migrator naa'y built-in nga safety feature diin i-check ni nimo ang tibuok multisite para masiguro nga mahimong ma-migrate tanan nimong Ultimate Multisite data nga walay problema. I-click ang **Run Check** button para magsugod sa proseso.
 
 Pagkahuman sa pag-run sa check, naa kay duha ka posibilidad: ang resulta pwede **naa'y error** o **walay error**.
 
-### Naa'y Error
+### Naa'y Error {#with-error}
 
 Kung makakuha ka og mensahe nga adunay error, kinahanglan nimo nga kontaka ang among support team para matabangan sila nimo sa pag-ayo sa error. Siguraduhon nga **maghatag ka og error log** kung maghimo ka og ticket. Mahimo nimong i-download ang log o i-click ang link nga nag-ingon "contact our support team". Magbukas kini og help widget sa tuo nga bahin sa imong page nga na-prepopulate na para nimo, nga naglakip sa error logs ubos sa description.
 
 _**Tungod kay nakit-an sa sistema ang error, dili ka makapadayon sa pag-migrate ngadto sa version 2.0. Mahimo nimong i-roll back pa ngadto sa version 1.x para magpadayon sa pag-run sa imong network hangtod nga maayo na ang error.**_
 
-### Walay Error
+### Walay Error {#without-error}
 
 Kung wala makit-an sa sistema ang bisan unsang error, makakita ka og success message ug usa ka **Migrate** button sa ubos nga magtugot kanimo sa pagpadayon sa migration. Sa pahinong niini, imong mahinumdohan nga maghimo og backup sa imong database sa dili pa molihok, nga among gipaka-rekomenda. I-hit ang **Migrate** kung naa ka na'y backup.
 

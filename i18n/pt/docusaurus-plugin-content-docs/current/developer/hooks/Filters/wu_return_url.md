@@ -4,11 +4,11 @@ title: Filtro - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filtro: wu_return_url
+# Filtro: wu_return_url {#filter-wureturnurl}
 
 Permite que os programadores alterem a URL de retorno do gateway usada após os processos de finalização de compra.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Permite que os programadores alterem a URL de retorno do gateway usada após os 
 | $payment | `\WP_Ultimo\Models\Payment` | a instância de pagamento do Ultimate Multisite. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | o pedido atual do carrinho do Ultimate Multisite. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.20
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) na linha 683
 
 
-## Retorna
+## Retorna {#returns}

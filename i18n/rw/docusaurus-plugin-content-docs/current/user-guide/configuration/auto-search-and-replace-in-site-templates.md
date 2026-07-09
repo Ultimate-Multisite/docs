@@ -3,7 +3,7 @@ title: Gukoresha Auto Search na Gushyira Nyamaruro mu Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Gukoresha n'Urugero mu Site Templates (v2)
+# Gukoresha n'Urugero mu Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Icyo uburyo rwa hariyo rwo gukoresha bishobora rwa WP UItimo version 2.x.**_
 
@@ -15,7 +15,7 @@ Umuvugizi wako azakwibona ibyo placeholder mu gihe cy'ubwujisoro.
 
 Nyuma, Ultimate Multisite izahindura ibyo placeholder n'amakuru yose yakoreshwa mu gihe cy'ubwujisoro mu buryo bw'umwihariko.
 
-## **Gukemura ikibazo cy'site template bifite placeholders byinshi**
+## **Gukemura ikibazo cy'site template bifite placeholders byinshi** {#solving-the-template-full-of-placeholders-problem}
 
 Icyo cyose ni cyiza, ariko twishobora gushobora ku ikibazo cy'umwihariko: site templates zacu - zikoreshwa na abakoresha batanze - zifite ibyo placeholder byinhiso byitera ubwoba kandi bitagira inama nyinshi.
 

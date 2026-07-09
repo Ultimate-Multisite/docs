@@ -3,11 +3,11 @@ title: قدرات إدارة الإضافات
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# إمكانيات إدارة الإضافات
+# إمكانيات إدارة الإضافات {#plugin-management-abilities}
 
 تأتي أداة Gratis AI Agent v1.5.0 مزودة بـ **7 إمكانيات لإدارة الإضافات** يمكن للمساعد الذكي استدعاؤها أثناء المحادثة. توفر هذه الإمكانيات تحكمًا برمجيًا في إضافات WordPress المثبتة عبر [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## نظرة عامة على الإمكانيات
+## نظرة عامة على الإمكانيات {#abilities-overview}
 
 | الإمكانية | Slug | الوصف |
 |---|---|---|
@@ -19,7 +19,7 @@ _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 | Install Plugin | `install_plugin` | تنشر إضافة معزولة في دليل إضافات WordPress النشط. |
 | Activate Plugin | `activate_plugin` | تُفعّل إضافة معزولة في بيئة عمل sandbox الخاصة بـ wp-env. |
 
-## واجهة برمجة تطبيقات مُثبِّت الإضافات (Plugin Installer API)
+## واجهة برمجة تطبيقات مُثبِّت الإضافات (Plugin Installer API) {#plugin-installer-api}
 
 يتولى مُثبِّت الإضافات التعامل مع عمليات نظام الملفات عند نشر الإضافات أو إزالتها. السلوكيات الرئيسية:
 
@@ -28,7 +28,7 @@ _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 - **التحديث (Update)**: يستبدل ملفات الإضافة الموجودة. ويقوم بتعطيل الإضافة قبل الكتابة لتجنب أخطاء الحالة الجزئية.
 - **الحذف بواسطة الـ slug**: يحدد دليل الإضافة باستخدام الـ slug، ويقوم بتعطيلها عبر جميع المواقع، ثم يزيل الدليل.
 
-### تسجيل مُعالج تثبيت مخصص (Custom Install Handler)
+### تسجيل مُعالج تثبيت مخصص (Custom Install Handler) {#registering-a-custom-install-handler}
 
 يمكنك ربط دورة حياة التثبيت باستخدام الإجراءات (actions) التالية: `gratis_ai_plugin_installer_before_install` و `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## سجل النظام البيئي (Ecosystem Registry)
+## سجل النظام البيئي (Ecosystem Registry) {#ecosystem-registry}
 
 يتم تسجيل الإمكانيات عبر **سجل إمكانيات الإضافات (plugin ecosystem registry)**. يقوم هذا السجل بربط إمكانيات الـ slugs الخاصة بالإضافات بفئات المعالجة (handler classes) الخاصة بها، ويُعرّيها لموزع الأدوات الخاص بالوكيل الذكي (AI agent's tool dispatcher).
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## دمج ماسح الخطافات (HookScanner Integration)
+## دمج ماسح الخطافات (HookScanner Integration) {#hookscanner-integration}
 
 تقوم إمكانيتا `create_plugin` و `update_plugin` بتشغيل **HookScanner** تلقائيًا على الشفرة المُنشأة حديثًا. يُرجع HookScanner قائمة بخطافات الإجراءات (action hooks) وفلاتر (filter hooks) الخاصة بـ WordPress التي سجلتها الإضافة.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 يتخطى HookScanner أدلة `vendor/` و `node_modules/` تلقائيًا.
 
-## هيكلية المهام غير المتزامنة (Async Job Architecture)
+## هيكلية المهام غير المتزامنة (Async Job Architecture) {#async-job-architecture}
 
 يتم إرسال عمليات الإضافات طويلة الأمد (التوليد، التثبيت) كـ **مهام غير متزامنة (async jobs)** مع تتبع حي للتقدم. يقوم واجهة الدردشة بالذكاء الاصطناعي بالاستعلام عن التقدم ويُرسل تحديثات الحالة للمستخدم:
 

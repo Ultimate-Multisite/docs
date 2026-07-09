@@ -3,17 +3,17 @@ title: 'Lektion 12: Drive virksomheden'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lektion 12: At Drive Virksomheden
+# Lektion 12: At Drive Virksomheden {#lesson-12-running-the-business}
 
 En platform er ikke et projekt, du afslutter – det er en forretning, du driver. Denne lektion dækker de daglige driftssituationer med at administrere FitSite: support, fakturering, vedligeholdelse og at holde kunderne glade.
 
-## Hvor Vi Sluttede Af
+## Hvor Vi Sluttede Af {#where-we-left-off}
 
 FitSite er live, og kunder tilmelder sig nu. Nu skal du drive driften bæredygtigt.
 
-## Daglig Drift
+## Daglig Drift {#daily-operations}
 
-### Overvågning (Monitoring)
+### Overvågning (Monitoring) {#monitoring}
 
 Tjek disse dagligt (eller opsæt alarmer):
 
@@ -22,7 +22,7 @@ Tjek disse dagligt (eller opsæt alarmer):
 - **Mislykkede betalinger**: Er der betalingsfejl, der kræver opmærksomhed?
 - **Supportanmodninger**: Er der ubesvarede kundehenvendelser?
 
-### Kundesupport
+### Kundesupport {#customer-support}
 
 Dit nichefokus er en fordel her. Fordi alle dine kunder er fitnessstudier, vil du se de samme spørgsmål gentagne gange:
 
@@ -36,7 +36,7 @@ Dit nichefokus er en fordel her. Fordi alle dine kunder er fitnessstudier, vil d
 
 Byg din videnbase (startet i Lektion 8) op omkring disse tilbagevendende spørgsmål. Hver supportticket, der kunne være en videnbaseartikel, er et signal til at skrive den artikel.
 
-### Supportniveauer (Support Tiers)
+### Supportniveauer (Support Tiers) {#support-tiers}
 
 Når du vokser, skal du strukturere supporten efter plan:
 
@@ -48,9 +48,9 @@ Når du vokser, skal du strukturere supporten efter plan:
 
 [Support Tickets addon](/addons/support-tickets) kan hjælpe med at administrere supportanmodninger i platformen.
 
-## Fakturering
+## Fakturering {#billing-operations}
 
-### Gentagne betalinger (Recurring Payments)
+### Gentagne betalinger (Recurring Payments) {#recurring-payments}
 
 Ultimate Multisite håndterer automatisk gentagen fakturering via din betalingsgateway. Din opgave er at holde øje med:
 
@@ -58,7 +58,7 @@ Ultimate Multisite håndterer automatisk gentagen fakturering via din betalingsg
 - **Dunning**: Opsæt automatisk genforsøgslogik via din betalingsgateway (Stripe håndterer dette godt)
 - **Afmeldingsanmodninger**: Forstå hvorfor kunder forlader dig. Hver afmelding er feedback.
 
-### Administrering af medlemskaber (Managing Memberships)
+### Administrering af medlemskaber (Managing Memberships) {#managing-memberships}
 
 Gå til **Ultimate Multisite > Medlemskaber** for at:
 
@@ -69,13 +69,13 @@ Gå til **Ultimate Multisite > Medlemskaber** for at:
 
 Se [Managing Memberships](/user-guide/administration/managing-memberships) for den fulde reference.
 
-### Fakturaer (Invoicing)
+### Fakturaer (Invoicing) {#invoicing}
 
 Sørg for, at fakturaer genereres korrekt for hver betaling. Kunder kan have brug for fakturaer til erhvervsudgiftsrapportering. Se [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Platformvedligeholdelse (Platform Maintenance)
+## Platformvedligeholdelse (Platform Maintenance) {#platform-maintenance}
 
-### WordPress og Plugin Opdateringer
+### WordPress og Plugin Opdateringer {#wordpress-and-plugin-updates}
 
 Som netværksadministrator er du ansvarlig for:
 
@@ -88,14 +88,14 @@ Som netværksadministrator er du ansvarlig for:
 En fejlbehæftet opdatering påvirker alle kundesider på dit netværk. Test altid opdateringer først på en staging-kopi af dit netværk.
 :::
 
-### Sikkerhed
+### Sikkerhed {#security}
 
 - Hold al software opdateret
 - Brug stærke adgangskoder og tofaktorautentificering for administrator-konti
 - Overvåg efter mistænktiv aktivitet
 - Hav en plan for sikkerhedshændelser
 
-### Ydeevne
+### Ydeevne {#performance}
 
 Efterhånden som dit netværk vokser, skal du overvåge:
 
@@ -105,15 +105,15 @@ Efterhånden som dit netværk vokser, skal du overvåge:
 
 Overvej at implementere caching (sidecache, object cache) og en CDN, hvis du ikke allerede har gjort det. [Cloudflare integration](/user-guide/host-integrations/cloudflare) håndterer meget af dette.
 
-## Kundelevelforvaltning
+## Kundelevelforvaltning {#customer-lifecycle-management}
 
-### Reducering af frafald (Churn)
+### Reducering af frafald (Churn) {#reducing-churn}
 
 Frafald er procentdelen af kunder, der opsiger hver måned. For en abonnementsvirksomhed er det lige så vigtigt at reducere frafald som at tiltrække nye kunder.
 
 **Almindelige årsager til, at fitnessstudio-kunder frafalder:**
 
-### Opfordring til opgraderinger
+### Opfordring til opgraderinger {#encouraging-upgrades}
 
 Kunder på Starter-plan, der har haft succes, bør opfordres til at opgradere:
 
@@ -121,7 +121,7 @@ Kunder på Starter-plan, der har haft succes, bør opfordres til at opgradere:
 - Send målrettede e-mails, der fremhæver funktionerne i Growth-planen, som de vil drage fordel af
 - Vis eksempler på, hvad Growth/Pro kunder har bygget
 
-### Genaktiveringskampagner (Win-Back Campaigns)
+### Genaktiveringskampagner (Win-Back Campaigns) {#win-back-campaigns}
 
 Når en kunde opsiger:
 
@@ -129,25 +129,25 @@ Når en kunde opsiger:
 2. Adresser deres bekymring, hvis muligt
 3. Tilbyd en rabat for at vende tilbage (30-60 dage efter opsigelse)
 
-## Ugentlige og månedlige rutiner
+## Ugentlige og månedlige rutiner {#weekly-and-monthly-routines}
 
-### Ugentligt
+### Ugentligt {#weekly}
 
 - Gennemgå nye tilmeldinger og opsigelser
 - Svar på alle åbne supporttickets
 - Tjek platformens ydeevne og oppetid
 - Gennemgå eventuelle mislykkede betalinger
 
-### Månedligt
+### Månedligt {#monthly}
 
 - Analyser nøgletal (MRR, churn, nye kunder, opgraderinger)
 - Anvend WordPress- og plugin-opdateringer (efter staging test)
 - Gennemgå og opdater knowledge base baseret på supportmønstre
 - Send et nyhedsbrev eller en opdatering til kunderne (nye funktioner, tips, fitnessindustri-nyheder)
 
-### Kvartalsvis
+### Kvartalsvis {#quarterly}
 
-## Hvad Vi Har Bygget Denne Lektion
+## Hvad Vi Har Bygget Denne Lektion {#what-we-built-this-lesson}
 
 - **Daglig overvågning** af oppetid, registreringer, betalinger og support
 - **En trinvis supportstruktur**, der matcher planernes niveauer

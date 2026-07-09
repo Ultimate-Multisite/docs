@@ -3,7 +3,7 @@ title: Mijozlarni boshqarish
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Mijozlarni Boshqarish
+# Mijozlarni Boshqarish {#managing-customers}
 
 **Mijozlar** sahifasi sizning tarmoqqa ro'yxatdan olingan aʼzolarning ro'yxatini ko'rsatadi. Bu sahifa ism, elektron pochta manzili, oxirgi kirish va foydalanuvchining sub-saytiga sayt administrator sifatida kirishingiz mumkin bo'lgan **o'tish** (switch to) linki kabi asosiy foydalanuvchi ma'lumotlarini ko'rsatadi.
 

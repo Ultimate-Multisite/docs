@@ -3,19 +3,19 @@ title: 'Loj 10: Ngau Txhais'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day
+# Lesson 10: Launch Day {#lesson-10-launch-day}
 
 Txhua yam tsis muaj. Haiv neeg tshawb, le lesson no 10 no tshawb txog pre-launch checklist kom tshawb ti tsis muaj yam tsis zoo, tsis muaj yam tsis muaj, lossis tsis zoo li.
 
-## Kuv Tsis Tshawb Nuaj Tha
+## Kuv Tsis Tshawb Nuaj Tha {#where-we-left-off}
 
 FitSite muaj templates, plans, checkout, branding, onboarding, thiab pricing tsim khoj la. Yog li ntawd, peb tshawb ti txhua yam ua haujlwm zoo thiab tshawb ti platform zoo los.
 
-## Pre-Launch Checklist
+## Pre-Launch Checklist {#pre-launch-checklist}
 
 Tshawb txhua yam. Tsis txhob tso txhua yam.
 
-### Platform Infrastructure
+### Platform Infrastructure {#platform-infrastructure}
 
 - [ ] Hosting zoo li thiab ua haujlwm zoo tha muaj neeg nrhiav (load)
 - [ ] Wildcard SSL zoo la thiab txhua subdomain tsim khoj los ntawm HTTPS
@@ -23,7 +23,7 @@ Tshawb txhua yam. Tsis txhob tso txhua yam.
 - [ ] Backups zoo thiab tshawb ti tsis muaj yam (restore hauv ntau rau tshawb)
 - [ ] Monitoring zoo la -- koj yuav paub ti platform tsis zoo li tha nws tsis muaj
 
-### Templates
+### Templates {#templates}
 
 - [ ] Template txhua ob zoo los ntawm cov neeg tsim khoj tshiab
 - [ ] Placeholder content zoo thiab tsis muaj typos
@@ -32,7 +32,7 @@ Tshawb txhua yam. Tsis txhob tso txhua yam.
 - [ ] Page load speed zoo li, tshawb los ntawm cov tool zoo li GTmetrix lossis PageSpeed Insights
 - [ ] Tsis muaj link tsis zoo lossis assets tsis muaj rau txhua template
 
-### Plans and Products
+### Plans and Products {#plans-and-products}
 
 - [ ] ផែនការទាំងបីគឺដំណើរការហើយមើលឃើញ
 - [ ] ការពិពណ៌នាផែនការគឺត្រឹមត្រូវ និងជាក់លាក់តាមប្រភេទនីមួយៗ
@@ -42,7 +42,7 @@ Tshawb txhua yam. Tsis txhob tso txhua yam.
 - [ ] ការបន្ថែមតម្លៃបញ្ជាទិញ (Order bumps) បង្ហាញត្រឹមត្រូវក្នុងអំឡុងពេលបង់ប្រាក់
 - [ ] ការកំណត់ដែននៃ Plugin និង theme ត្រូវបានអនុវត្តត្រឹមត្រូវតាមផែនការនីមួយៗ
 
-### Checkout Flow (លំហូរនៃការបង់ប្រាក់)
+### Checkout Flow (លំហូរនៃការបង់ប្រាក់) {#checkout-flow}
 
 - [ ] បញ្ចប់ការចុះឈ្មោះសាកល្បងពេញលេញលើផែនការនីមួយៗ (ប្រើរបៀបបង់ប្រាក់សាកល្បង)
 - [ ] ការជ្រើសរើស Template បង្ហាញ template ត្រឹមត្រូវតាមផែនការនីមួយៗ
@@ -52,7 +52,7 @@ Tshawb txhua yam. Tsis txhob tso txhua yam.
 - [ ] អតិថិជនអាចចូលប្រើគេហទំព័រថ្មីរបស់ពួកគេបានភ្លាមៗ
 - [ ] កូដបញ្ចុះតម្លៃដំណើរការត្រឹមត្រូវ
 
-### Branding (ម៉ាកយីហោ)
+### Branding (ម៉ាកយីហោ) {#branding}
 
 - [ ] ទំព័រ Login បង្ហាញម៉ាក FitSite
 - [ ] Admin dashboard បង្ហាញម៉ាក FitSite
@@ -60,7 +60,7 @@ Tshawb txhua yam. Tsis txhob tso txhua yam.
 - [ ] វិក្កយបត្របង្ហាញត្រឹមត្រូវជាមួយព័ត៌មានអាជីវកម្មរបស់អ្នក
 - [ ] គេហទំព័រទីផ្សារដំណើរការហើយ និងភ្ជាប់ទៅកាន់ form បង់ប្រាក់
 
-### Onboarding (ការចាប់ផ្តើមប្រើប្រាស់)
+### Onboarding (ការចាប់ផ្តើមប្រើប្រាស់) {#onboarding}
 
 - [ ] Quick Start widget បង្ហាញនៅលើ dashboard របស់អតិថិជនថ្មីៗ
 - [ ] រាល់ Quick Start links បញ្ជាក់ពីទំព័រត្រឹមត្រូវ
@@ -68,7 +68,7 @@ Tshawb txhua yam. Tsis txhob tso txhua yam.
 - [ ] អត្ថបទ Knowledge base ត្រូវបានបោះពុម្ពផ្សាយ និងអាចចូលប្រើបាន
 - [ ] ទំព័រ Account បង្ហាញព័ត៌មានផែនការត្រឹមត្រូវ និងជម្រើសនៃការ Upgrade
 
-### Legal and Business (ផ្នែកច្បាប់ និងអាជីវកម្ម)
+### Legal and Business (ផ្នែកច្បាប់ និងអាជីវកម្ម) {#legal-and-business}
 
 - [ ] Terms of service chuam thiab tsis txhob qhia los ntawm checkout
 - [ ] Privacy policy yuav tsum tsis txhob qhia los thiab muaj lub chaw hauv
@@ -77,11 +77,11 @@ Tshawb txhua yam. Tsis txhob tso txhua yam.
 - [ ] Payment gateway yuav tsum mus rau mode live (tso cai tsis yog test mode)
 - [ ] Tax configuration yuav tsum muaj txiaj ncuam rau lub teeb meem hauv koj lub txoj haujlwm
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Txhua tus neeg yuav tsum tsis txhob qhia los ntawm kev sib sau ua ke:
 
-### Phase 1: Soft Launch (Soft Launch)
+### Phase 1: Soft Launch (Soft Launch) {#phase-1-soft-launch}
 
 Pib nrhiav thiab mivtxhais 5-10 fitness studio owners los tso cai peb tham txog hauv peevau uas tsis yog tus neeg raug tsim phau. Lej yog tus neeg beta cua koj. Txhua tus yuav tsum tsis txhob qhia los ntawm kev txhawm rau lawv:
 
@@ -91,7 +91,7 @@ Pib nrhiav thiab mivtxhais 5-10 fitness studio owners los tso cai peb tham txog 
 
 Qhov no yuav tsum tsis txhob qhia los ntawm kev tso cai lawv thiab siv website uas muaj hauv tshiab tshiab peb ua raws li thaum peb tso cai rau tus neeg raug tsim phau.
 
-### Phase 2: Public Launch (Public Launch)
+### Phase 2: Public Launch (Public Launch) {#phase-2-public-launch}
 
 Thaum peb tau thov lawv txog kev sib sau soft launch:
 
@@ -100,7 +100,7 @@ Thaum peb tau thov lawv txog kev sib sau soft launch:
 - Pib kev tsim tus neeg raug tsim phau (Lesson 11)
 - Tso cai hauv lwm yam channel uas muaj haujlwm txog fitness
 
-## Launch Day Actions
+## Launch Day Actions {#launch-day-actions}
 
 Thaum peb mus rau tus raug tsim phau:
 
@@ -110,7 +110,7 @@ Thaum peb mus rau tus raug tsim phau:
 4. **Be available** -- customer raiv thaj tsum tsum jaiv, thiab vim ti ua hauj tsis txhob txhob yuav tsum tsum txoj kev ntseeg
 5. **Celebrate briefly** -- hauv tsawg, thaum tsis txhob txhob yuav mus tsum tsum
 
-## Ua Yuav Txhua Cosa Hauv
+## Ua Yuav Txhua Cosa Hauv {#what-can-go-wrong}
 
 Tsom txhua yam uas yuav txhua:
 
@@ -120,7 +120,7 @@ Tsom txhua yam uas yuav txhua:
 - **Performance under load**: Yog ti koj mus muaj traffic spike, paub ti ua li kuv tsis paub tsim tshiab hosting
 - **Customer confusion**: Muaj knowledge base thiab support channels tsum tsum
 
-## FitSite Network Tsis Txhob Txhua
+## FitSite Network Tsis Txhob Txhua {#the-fitsite-network-so-far}
 
 ---
 
@@ -138,7 +138,7 @@ FitSite Network
 ├── Soft Launch (beta customers onboarded) ✓
 └── LIVE ✓
 
-## Kuv U Teeb Neegaw Tha (What We Built This Lesson)
+## Kuv U Teeb Neegaw Tha (What We Built This Lesson) {#what-we-built-this-lesson}
 
 - **A comprehensive pre-launch checklist** som tshawb nuam (covering infrastructure, content, payments, and legal)
 - **A soft launch strategy** om tshawb nuam (to get real feedback before going public)

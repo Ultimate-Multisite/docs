@@ -3,28 +3,28 @@ title: Superrigardo pri REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referenco de REST API
+# Referenco de REST API {#rest-api-reference}
 
-## Baza Agordo
+## Baza Agordo {#base-configuration}
 
 **Baza URL:** `{site_url}/wp-json/wu/v2/`
 **Aŭtentikigo:** API-ŝlosilo kaj Sekreto (HTTP Basic Auth aŭ URL-parametroj)
 
-## Aŭtentikigo
+## Aŭtentikigo {#authentication}
 
-### Ebligi API
+### Ebligi API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Akiri API-akreditaĵojn
+### Akiri API-akreditaĵojn {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Aŭtentikigaj Metodoj
+### Aŭtentikigaj Metodoj {#authentication-methods}
 
 **HTTP Basic Auth (Rekomendita):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kernaj Finpunktoj
+## Kernaj Finpunktoj {#core-endpoints}
 
-### 1. Klientoj API
+### 1. Klientoj API {#1-customers-api}
 
 **Baza Itinero:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Retejoj API
+### 2. Retejoj API {#2-sites-api}
 
 **Baza Itinero:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Membrecoj API
+### 3. Membrecoj API {#3-memberships-api}
 
 **Baza Itinero:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produktoj API
+### 4. Produktoj API {#4-products-api}
 
 **Baza Itinero:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Pagoj API
+### 5. Pagoj API {#5-payments-api}
 
 **Baza Itinero:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domajnoj API
+### 6. Domajnoj API {#6-domains-api}
 
 **Baza Itinero:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registrada Finpunkto
+## Registrada Finpunkto {#registration-endpoint}
 
 La finpunkto `/register` provizas kompletan checkout/registradan fluon:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Finpunktoj por Suverenaj Luantoj
+## Finpunktoj por Suverenaj Luantoj {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Plurluanteco 1.2.0 aldonas suveren-luantan REST-kovradon por integriĝoj kiuj provizas, inspektas aŭ kontrolas izolitajn luantojn.
 
@@ -242,7 +242,7 @@ Tipaj respondoj pri migrada stato inkluzivas:
 
 Traktu `ready: false` kiel antaŭlanĉan blokilon. Kontrolu la konfirmo-detalojn, riparu la datumbazan gastigantan ligon, vicon, uzantan provizadon aŭ vojigan problemon, poste reprovu konfirmon.
 
-## Eraraj Respondoj
+## Eraraj Respondoj {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Traktu `ready: false` kiel antaŭlanĉan blokilon. Kontrolu la konfirmo-detalojn
 }
 ```
 
-## Paĝigo kaj Filtrado
+## Paĝigo kaj Filtrado {#pagination-and-filtering}
 
 **Demandaj Parametroj:**
 ```http

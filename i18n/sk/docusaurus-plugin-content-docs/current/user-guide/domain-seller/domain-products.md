@@ -3,11 +3,11 @@ title: Doménové produkty a ceny
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domény produkty a cenník
+# Domény produkty a cenník {#domain-products-and-pricing}
 
 Domény produkty sú spôsob, ako ovládate cenenie, TLD (Top-Level Domain), WHOIS súkromie a výber poskytovateľa. Ka doménový produkt je štandardným Ultimátnym produktom Multisite s extra záložnou záložkou **Domain Settings**.
 
-## Vytvorenie doménového produktu
+## Vytvorenie doménového produktu {#creating-a-domain-product}
 
 1. Prejdite do **Network Admin › Ultimate Multisite › Products**
 2. Kliknite na **Add New** (Pridať nový)
@@ -17,13 +17,13 @@ Domény produkty sú spôsob, ako ovládate cenenie, TLD (Top-Level Domain), WHO
 
 Doménové produkty sa zobrazujú s fialovým označením **Domain** v zliastej zliastej a môžu byť filtrované pomocou záložky **Domain Products**.
 
-## Záložka Domain settings
+## Záložka Domain settings {#domain-settings-tab}
 
-### Poskytovateľ (Provider)
+### Poskytovateľ (Provider) {#provider}
 
 Vyberte, ktorý registrač bude riešiť registráciu pre tento produkt. Po chode na výchozí hodnotu je to globálny **Default provider** nastavený v nastaveniach Domény Predajcu (Domain Seller).
 
-### Podporované TLD (Supported TLDs)
+### Podporované TLD (Supported TLDs) {#supported-tlds}
 
 Nechajte prázdne, ak chcete vytvoriť **catch-all produkt**, ktorý sa týka všetkých TLD, ktoré neboli zodporený žiadnym iným produktom.
 
@@ -31,7 +31,7 @@ Vložte zoznam TLD oddelený comom (napr. `.com, .net, .org`), aby ste vytvorili
 
 **Ako funguje zodporenie produktov:** Keď zákazník hľadá doménu, doplnok vybere najspíše špecifickejšie zodporený produkt. Produkt s `.com` v zliastej TLD obsahuje má vyššiu prednost ako catch-all produkt. Ak sa žiadny TLD špecifický produkt nezdôrazní, použije sa catch-all. Ak neexistujú žiadne produkty, vyhľadávanie domény sa nezobrazí.
 
-### Typ zoznamu (Markup type)
+### Typ zoznamu (Markup type) {#markup-type}
 
 Tria režimy ovládate, ako sa váš retailný (retail) cena počítajú z cen dodávateľa (wholesale cost):
 
@@ -41,11 +41,11 @@ Tria režimy ovládate, ako sa váš retailný (retail) cena počítajú z cen d
 | **Fixed markup** (Fiksovaná cena) | Pridá pevnú sumu v dolárach. Fiksovaná cena 5 $ na doménu s cenou dodávateľa 10 $ dá 15 $. |
 | **Fixed price** (Fiksová cena) | Celkom ignoruje cenu dodávateľa. Vždy účtuje sumu, ktorú zadáte. |
 
-### Úvodné ceny (Introductory pricing)
+### Úvodné ceny (Introductory pricing) {#introductory-pricing}
 
 Umožňuje ponúkať zľavnenú cenu za prvý rok. Nastavte osobitnú **Úvodnú cenu** (cenu za prvé roky) vedľa štandardnej **Ceny obnovy** (cena za druhý a nasledujúce roky). Klient vidí obe ceny počas pokiaľ sa objednávajú, aby vedel, čo si očakáva pri obnovení.
 
-### WHOIS súkromie
+### WHOIS súkromie {#whois-privacy}
 
 Kontroluje, či je ponúkané WHOIS súkromie pre domény zaregistrované cez tento produkt.
 
@@ -59,7 +59,7 @@ Pre Namecheap sa WHOIS súkromie používa WhoisGuard (vždy bez poplatku). Pre 
 
 ---
 
-## Import a synchronizácia TLD
+## Import a synchronizácia TLD {#tld-import-and-sync}
 
 Produkty domén zobrazujú ceny v dodávateľskom cenovnom pláne v reálnom čase, ktoré sa načítajú z pripojeného poskytovateľa. Aby to fungovalo, musí byť TLD (top-level domain) importované.
 
@@ -70,7 +70,7 @@ Po synchronizácii sa prejdite do záložky Nastavenia domény pre akýkoľvek p
 
 ---
 
-## Automatická obnovenie
+## Automatická obnovenie {#auto-renewal}
 
 Obnovenie domén je pripojené k stavu členstva klienta:
 
@@ -90,7 +90,7 @@ ID šablon e-mailov pre udalosti životného cyklu domény:
 
 ---
 
-## Admin: Manuálna registracja domény
+## Admin: Manuálna registracja domény {#admin-manual-domain-registration}
 
 Aby ste zaregistrovali doménu za klienta bez toho, aby prechádzal cez pokladňu:
 

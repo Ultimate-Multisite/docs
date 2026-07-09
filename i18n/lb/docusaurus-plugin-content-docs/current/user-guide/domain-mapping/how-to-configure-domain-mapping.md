@@ -3,17 +3,17 @@ title: Wéi een Domain Mapping konfiguréiert
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Wéi een Domain-Mapping konfiguréiert (v2)
+# Wéi een Domain-Mapping konfiguréiert (v2) {#how-to-configure-domain-mapping-v2}
 
 _**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 
 Eng vun de mächtegste Funktioune vun engem Premium-Netzwierk ass d'Méiglechkeet, eise Clienten unzebidden, eng Top-Level-Domain un hir Säiten unzehänken. Iwwerhaapt, wat gesäit méi professionell aus: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) oder [_**joesbikeshop.com**_](http://joesbikeshop.com)? Dofir bitt Ultimate Multisite dës Funktioun agebaut un, ouni datt een Drëtt-Partei-Pluginne benotze muss.
 
-## Wat ass Domain-Mapping?
+## Wat ass Domain-Mapping? {#whats-domain-mapping}
 
 Wéi den Numm et seet, ass Domain-Mapping d'Méiglechkeet, déi Ultimate Multisite ubitt, eng Ufro fir eng personaliséiert Domain unzehuelen an dës Ufro op déi entspriechend Säit am Netzwierk ze mappen, un déi genau dës Domain ugehaange gouf.
 
-### Wéi een Domain-Mapping op Ärem Ultimate Multisite-Netzwierk ariicht
+### Wéi een Domain-Mapping op Ärem Ultimate Multisite-Netzwierk ariicht {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domain-Mapping erfuerdert e bëssen Ariichtung vun Ärer Säit, fir ze funktionéieren. Glécklecherweis automatiséiert Ultimate Multisite déi schwéier Aarbecht fir Iech, sou datt Dir d'Ufuerderungen einfach erfëlle kënnt.
 
@@ -45,7 +45,7 @@ Mee ier Dir ufänkt, déi personaliséiert Domain op eng vun de Subsites an Äre
 
 ###
 
-### Sécherstellen, datt d'Domain-DNS-Astellunge richteg konfiguréiert sinn
+### Sécherstellen, datt d'Domain-DNS-Astellunge richteg konfiguréiert sinn {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Fir datt e Mapping funktionéiert, musst Dir sécherstellen, datt d'Domain, déi Dir plangt ze mappen, op d'IP-Adress vun Ärem Netzwierk weist. Bedenkt, datt Dir d'Netzwierk-IP-Adress braucht - d'IP-Adress vun der Domain, wou Ultimate Multisite installéiert ass - net d'IP-Adress vun der personaliséierter Domain, déi Dir mappe wëllt. Fir no der IP-Adress vun enger spezifescher Domain ze sichen, proposéiere mir zum Beispill [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) ze benotzen.
 
@@ -55,7 +55,7 @@ Wann Dir Problemer hutt, dëst zum Lafen ze bréngen, **kontaktéiert den Suppor
 
 Wann Dir plangt, Äre Clienten ze erlaben, hir eege Domainen ze mappen, musse si d'Aarbecht an dësem Deel selwer maachen. Verweist si op de Support-System vun hirem Registrar, wa si net fäeg sinn, den A Record ze erstellen.
 
-### Personaliséierten Domainnumm als Super Admin mappen
+### Personaliséierten Domainnumm als Super Admin mappen {#mapping-custom-domain-name-as-super-admin}
 
 Wann Dir als Super Admin op Ärem Netzwierk ageloggt sidd, kënnt Dir personaliséiert Domainnimm einfach derbäisetzen a verwalten, andeems Dir ënner **Ultimate Multisite > Domainen** gitt.
 
@@ -93,7 +93,7 @@ Wann Dir op den Domain-Numm klickt, kënnt Dir dobannen e puer Optioune gesinn. 
 
 **Is Secure?:** Och wann Ultimate Multisite kontrolléiert, ob d’Domain e SSL-Zertifikat huet oder net, éier se aktivéiert gëtt, kënnt Dir manuell auswielen, ob d’Domain mat oder ouni SSL-Zertifikat geluede soll ginn. Bedenkt, datt wann d’Websäit kee SSL-Zertifikat huet an Dir probéiert se forcéiert mat SSL ze lueden, et Feeler ka ginn.
 
-### Benotzerdefinéierten Domain-Numm als Subsite-Benotzer mappen
+### Benotzerdefinéierten Domain-Numm als Subsite-Benotzer mappen {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite-Administrateure kënnen och personaliséiert Domain-Nimm aus hirem Subsite-Admin-Dashboard mappen.
 
@@ -121,7 +121,7 @@ De Benotzer kann duerno op **Next Step** klicken an domat weiderfueren, de perso
 
 Op **Add Domain** klicken start de Prozess, fir d’DNS-Informatioune vun der personaliséierter Domain ze iwwerpréiwen an ofzeruffen.
 
-### Iwwer Domain-Synchroniséierung
+### Iwwer Domain-Synchroniséierung {#about-domain-syncing}
 
 Domain-Synchroniséierung ass e Prozess, bei deem Ultimate Multisite de personaliséierten Domain-Numm zu Ärem Hosting-Account als Add-on-Domain derbäisetzt, **fir datt d’Domain mapping funktionéiert**.
 

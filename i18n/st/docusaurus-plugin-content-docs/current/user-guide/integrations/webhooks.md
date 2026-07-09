@@ -3,7 +3,7 @@ title: Mokho a leboha
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Le Tlhaloso le Webhooks (v2)
+# Le Tlhaloso le Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**Tlhokwa: Se fa tsela e fanaengang ka ho ba le bohlokoa le ba le fetogoloa.**_
 
@@ -11,7 +11,7 @@ _**Tlhokwa: Se fa tsela e fanaengang ka ho ba le bohlokoa le ba le fetogoloa.**_
 
 O tla ba le ntho e ntle ha u hloka ho fana ka bohlokoa kapa ho lula data e fetileng ka Ultimate Multisite e tla fana ka CRM kapa hloekano e lebang sa bang ha sebopeho se fetang. Ho na la sebopeho, o tla hloka ho fana ka lemo la moruti le email ea hae ha u leka ho fana ka li-mailing list ha ntlha e ntsha ea moruti e fetola.
 
-## Ke eng e ba le ho fetola webhook
+## Ke eng e ba le ho fetola webhook {#how-to-create-a-webhook}
 
 Ho fetola webhook, u tla fihla sa dashboard ea hau ea admin ea network. Thaba **Ultimate Multisite > Webhooks > Add New Webhook.**
 

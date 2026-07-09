@@ -3,11 +3,11 @@ title: Zmožnosti upravljanja vtičnikov
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Zmožnosti upravljanja vtičnikov
+# Zmožnosti upravljanja vtičnikov {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 vključuje **7 zmožnosti upravljanja vtičnikov**, ki jih lahko AI pomočnik prikliče med pogovorom. Te zmožnosti omogočajo programski nadzor nad WordPress vtičniki, nameščenimi prek [Sistema za gradnjo vtičnikov in peskovnik](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Pregled zmožnosti
+## Pregled zmožnosti {#abilities-overview}
 
 | Zmožnost | Slug | Opis |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 vključuje **7 zmožnosti upravljanja vtičnikov**, ki ji
 | Namesti vtičnik | `install_plugin` | Razmesti vtičnik iz peskovnika v živi imenik vtičnikov WordPress. |
 | Aktiviraj vtičnik | `activate_plugin` | Aktivira vtičnik iz peskovnika v okolju peskovnika wp-env. |
 
-## API namestitvenega programa vtičnikov
+## API namestitvenega programa vtičnikov {#plugin-installer-api}
 
 Namestitveni program vtičnikov upravlja operacije datotečnega sistema pri razmeščanju ali odstranjevanju vtičnikov. Ključna vedenja:
 
@@ -28,7 +28,7 @@ Namestitveni program vtičnikov upravlja operacije datotečnega sistema pri razm
 - **Posodobitev**: Zamenja obstoječe datoteke vtičnika. Pred zapisovanjem deaktivira vtičnik, da se izogne napakam delnega stanja.
 - **Brisanje po slugu**: Poišče imenik vtičnika po slugu, ga deaktivira na vseh spletnih mestih in nato odstrani imenik.
 
-### Registracija prilagojenega upravljalnika namestitve
+### Registracija prilagojenega upravljalnika namestitve {#registering-a-custom-install-handler}
 
 V življenjski cikel namestitve se lahko vključite z dejanji `gratis_ai_plugin_installer_before_install` in `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Register ekosistema
+## Register ekosistema {#ecosystem-registry}
 
 Zmožnosti se registrirajo prek **registra ekosistema vtičnikov**. Register preslika sluge zmožnosti v njihove razrede upravljalnikov in jih izpostavi dispečerju orodij AI agenta.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integracija HookScanner
+## Integracija HookScanner {#hookscanner-integration}
 
 Zmožnosti `create_plugin` in `update_plugin` samodejno zaženejo **HookScanner** nad novo ustvarjeno kodo. HookScanner vrne seznam WordPress dejanj in filtrov hookov, ki jih registrira vtičnik.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner samodejno preskoči imenika `vendor/` in `node_modules/`.
 
-## Arhitektura asinhronih opravil
+## Arhitektura asinhronih opravil {#async-job-architecture}
 
 Dolgotrajne operacije vtičnikov (ustvarjanje, namestitev) se odpošljejo kot **asinhrona opravila** s sprotnim spremljanjem napredka. Vmesnik AI klepeta preverja napredek in uporabniku pretaka posodobitve stanja:
 

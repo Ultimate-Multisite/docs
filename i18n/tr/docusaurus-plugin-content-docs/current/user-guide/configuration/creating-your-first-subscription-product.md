@@ -3,13 +3,13 @@ title: İlk Abonelik Ürününüzü Oluşturma
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# İlk Abonelik Ürününüzü Oluşturma (v2)
+# İlk Abonelik Ürününüzü Oluşturma (v2) {#creating-your-first-subscription-product-v2}
 
 _**ÖNEMLİ NOT: Bu makale yalnızca Ultimate Multisite sürüm 2.x kullanıcıları içindir. Sürüm 1.x kullanıyorsanız,**_ **_**bu makaleye bakın**_**.
 
 Ağınızı çalıştırmaya başlamak ve hizmetlerinizi potansiyel kullanıcılara satmaya başlamak için farklı abonelik seçeneklerine sahip olmanız gerekir. Bu ürünleri nasıl oluşturursunuz? Sunabileceğiniz ürün türleri nelerdir? Bu makalede, ürünler hakkında bilmeniz gereken her şeyi ele alacağız.
 
-## Ürün Türü
+## Ürün Türü {#product-type}
 
 Ultimate Multisite ile müşterilerinize iki ürün kategorisi sunabilirsiniz: **planlar** ve **ek ürünler** **(Sipariş Artırımı)**. Ek ürünler iki türe ayrılabilir: **paketler** ve **hizmetler**. Sırada bunların farklarını ve özelliklerini göreceğiz.
 
@@ -19,7 +19,7 @@ Ultimate Multisite ile müşterilerinize iki ürün kategorisi sunabilirsiniz: *
 
   * **Hizmetler:** Ultimate Multisite'in işlevlerini değiştirmeyen ek ürünler. Bunlar, müşterinizin satın aldığı plana ek olarak onun için gerçekleştireceğiniz görevlerdir. Örneğin, müşteriniz tek bir siteye izin veren bir plan satın alabilir ve ayrıca bu sitenin tasarımını yapacak ekstra bir hizmet için ödeme yapabilir.
 
-## Ürünleri Yönetme
+## Ürünleri Yönetme {#managing-products}
 
 Birçok kişi için Ultimate Multisite içindeki **Ürünler** sekmesi **(Ultimate Multisite > Ürünler)** geleneksel bir hosting ortamındaki planlarla eş tutulabilir.
 
@@ -29,7 +29,7 @@ Bu bölüm, Ultimate Multisite'in bu temel yapı taşını anlamanıza rehberlik
 
 ![Ürünler listesi sayfası](/img/config/products-list.png)
 
-## Ürün Ekleme
+## Ürün Ekleme {#adding-products}
 
 Bir plan, paket veya hizmet olsun; yeni bir öğe tanımlamanın giriş noktası **Ultimate Multisite > Ürünler > Ürün Ekle** yoludur.
 
@@ -39,13 +39,13 @@ Arayüz iki baskın bölüm içerir. Solda ürünün tanımlanmasına yardımcı
 
 ![Ürün düzenleme sayfasına genel bakış](/img/config/product-edit-full.png)
 
-### Açıklama
+### Açıklama {#description}
 
 Temel ürün bilgileri, bir ürün adı ve açıklaması sağlanarak tanımlanabilir. Bu tanımlayıcılar; plan ve fiyatlandırma seçimi, faturalar, yükseltmeler ve benzeri yerler gibi ürün bilgilerinin gerekli olduğu her yerde görüntülenir.
 
 ![Ürün açıklaması bölümü](/img/config/product-description.png)
 
-### Fiyatlandırma Türü
+### Fiyatlandırma Türü {#pricing-type}
 
 Arayüzün sağ tarafında temel fiyatlandırma tanımlanabilir.
 
@@ -53,7 +53,7 @@ Arayüzün sağ tarafında temel fiyatlandırma tanımlanabilir.
 
 Ultimate Multisite üç farklı fiyatlandırma türünü destekler. **Ücretli** seçeneği, ağ yöneticisinden ürünün fiyatı ve faturalandırma sıklığı hakkında bilgi ister.
 
-### Fiyatlandırma
+### Fiyatlandırma {#pricing}
 
 Fiyat bileşeni, temel ürün fiyatını ve faturalandırma aralığını tanımlar.
 
@@ -61,7 +61,7 @@ Fiyat bileşeni, temel ürün fiyatını ve faturalandırma aralığını tanım
 
 böylece 1 ay ayarıyla $29.99 örnek fiyatı her ay $29.99 olarak faturalandırılır. Benzer şekilde, 3 ay ayarıyla $89.97 tutarındaki bir fiyat, her çeyrekte bu tutarı faturalandırır.
 
-### Faturalandırma Döngüleri
+### Faturalandırma Döngüleri {#billing-cycles}
 
 Faturalandırma döngüleri bölümü, yukarıda belirtilen faturalandırma aralığının sıklığını belirtir ve genellikle sözleşmeler veya sabit süreler bağlamında anlaşılır.
 
@@ -69,7 +69,7 @@ Faturalandırma döngüleri bölümü, yukarıda belirtilen faturalandırma aral
 
 Örneğin, 1 aylık aralığa ve 12 faturalandırma döngüsüne sahip $29.99 ürün fiyatı, sonraki 12 ay boyunca ürün için ayda $29.99 faturalandırır. Başka bir deyişle, böyle bir ayar 12 ay boyunca ayda $29.99 tutarında sabit fiyatlı bir dönem oluşturur ve ardından faturalandırmayı durdurur.
 
-### Deneme Süresi
+### Deneme Süresi {#trial-period}
 
 Deneme teklifi anahtarını etkinleştirmek, ağ yöneticisinin ürün için bir deneme süresi tanımlamasına olanak tanır.
 
@@ -77,7 +77,7 @@ Deneme teklifi anahtarını etkinleştirmek, ağ yöneticisinin ürün için bir
 
 Deneme süresi boyunca müşteriler ürünü ücretsiz olarak kullanabilir ve deneme süresi dolana kadar faturalandırılmazlar.
 
-### Kurulum Ücreti
+### Kurulum Ücreti {#setup-fee}
 
 Planınıza bir kurulum ücreti de uygulayabilirsiniz.
 
@@ -85,7 +85,7 @@ Planınıza bir kurulum ücreti de uygulayabilirsiniz.
 
 Bu, müşterinizin ilk tahsilatta (plan fiyatına ek olarak) bu bölümde tanımladığınız ücrete karşılık gelen ekstra bir tutar ödeyeceği anlamına gelir.
 
-### Aktif
+### Aktif {#active}
 
 Aktif anahtarı, ürünün yeni kayıtlar için müşterilere sunulup sunulmadığını etkili biçimde tanımlar.
 
@@ -93,13 +93,13 @@ Aktif anahtarı, ürünün yeni kayıtlar için müşterilere sunulup sunulmadı
 
 Bu planda mevcut müşteriler varsa, anahtarı devre dışı durumuna getirmek planı etkili biçimde eski müşteriler için korur ve gelecekteki kayıtlardan kaldırır. **Plandaki mevcut müşteriler**, yeni bir plana geçirilene veya plandan kaldırılana kadar **faturalandırılmaya devam eder**.
 
-### Ürün Görseli
+### Ürün Görseli {#product-image}
 
 **Görsel Yükle** düğmesi, ağ yöneticisinin bir ürün görseli seçmek veya yüklemek için medya kitaplığını kullanmasına olanak tanır.
 
 ![Ürün görseli bölümü](/img/config/product-image.png)
 
-### Sil
+### Sil {#delete}
 
 **Ürünü Sil** düğmesi ürünü sistemden siler. Ürün yayımlandıktan sonra görünür.
 
@@ -107,11 +107,11 @@ Bu planda mevcut müşteriler varsa, anahtarı devre dışı durumuna getirmek p
 
 Diğer silme işlemlerinden farklı olarak, ürün herhangi bir çöp durumuna yerleştirilmez. Bu nedenle silindikten sonra işlem geri alınamaz.
 
-### Ürün Seçenekleri
+### Ürün Seçenekleri {#product-options}
 
 Temel düzeyde ürün bilgileri tanımlandıktan sonra, ürün seçenekleri ağ yöneticisinin ürünün belirli niteliklerini daha ayrıntılı tanımlamasına yardımcı olur.
 
-#### Genel
+#### Genel {#general}
 
 **Genel** sekmesi, ürüne özel diğer sekmelerden herhangi biri için geçerli olmayan ürünün genel niteliklerini tanımlar.
 
@@ -125,7 +125,7 @@ Ultimate Multisite; Plan, Paket ve Hizmet olmak üzere çeşitli ürün türleri
 
 ![Müşteri rolü ayarları](/img/config/product-customer-role-settings.png)
 
-#### Yükseltmeler ve Düşürmeler
+#### Yükseltmeler ve Düşürmeler {#up--downgrades}
 
 Bu sekme, müşterinin kendi belirli kademesi içinde kullanabileceği yükseltme ve düşürme yollarını belirtir.
 
@@ -143,7 +143,7 @@ Bir plan grubu tanımlamak için **plan grubu** listesinde uyumlu planları beli
 
 Ultimate Multisite ayrıca, uygun eklenti ürünlerin ve hizmetlerin planlara eklenebildiği bir **order bump** özelliği de içerir. Bunlar, checkout sırasında veya bir yükseltme esnasında planlara eklenebilecek ek öğeler olarak müşteriye sunulur.
 
-#### Fiyat Varyasyonları
+#### Fiyat Varyasyonları {#price-variations}
 
 Fiyat varyasyonları, ağ yöneticisinin süreye bağlı olarak alternatif fiyatlandırma kademeleri belirtmesine olanak tanır. Bu ayar, aynı ürün için aylık, üç aylık, yıllık veya başka herhangi bir faturalandırma döneminin sunulmasını mümkün kılar. Örneğin, bir ürünü $29.99/ay olarak ve indirimli yıllık seçenekle $249.99/yıl olarak ayarlayabilirsiniz.
 
@@ -165,7 +165,7 @@ Bir varyasyon girmek için varyasyonun süresini, dönemini ve fiyatını ayarla
 Fiyat varyasyonları tek başına frontend checkout'a bir geçiş anahtarı veya switch eklemez. Müşterilerin faturalandırma dönemleri arasında geçiş yapmasına (örn. Aylık / Yıllık) izin vermek için checkout formunuza bir **Dönem Seçimi** alanı eklemeniz gerekir. Adım adım talimatlar için [Checkout Formları: Dönem Seçimi Anahtarı Ekleme](checkout-forms#adding-a-period-selection-toggle) bölümüne bakın.
 :::
 
-#### Vergiler
+#### Vergiler {#taxes}
 
 **Vergiler** sekmesi, **Ultimate Multisite > Settings > Taxes** bölümünde belirtilen vergi ayarlarıyla ve daha özel olarak tanımlanan vergi oranlarıyla uyumludur. Vergileri etkinleştirmek ve geçerli vergi oranlarını tanımlamak için lütfen **Ultimate Multisite: Settings** içindeki dokümantasyona bakın.
 
@@ -179,7 +179,7 @@ Vergi oranı **Ultimate Multisite > Settings > Manage Tax Rates** bölümünde t
 
 Bir ürünün vergilendirilebilir bir öğe olduğunu belirtmek için **Vergilendirilebilir** anahtarını etkin konuma getirin ve Vergi Kategorisi açılır menüsünden geçerli vergi oranını seçin.
 
-#### Site Şablonları
+#### Site Şablonları {#site-templates}
 
 Özünde, site şablonları müşterinin aboneliğinin başlangıcında müşterinin sitesine klonlanan eksiksiz WordPress web siteleridir.
 
@@ -201,7 +201,7 @@ Son olarak, **M** **evcut Site Şablonlarını Seç** seçeneği, ödeme adımı
 
 Sonuç olarak ağ yöneticisi şablon seçiminin ödeme adımlarında gerçekleşmesini istiyorsa ' _default_ ' ayarı yeterli olacaktır. Alternatif olarak, şablon seçimini kaldırıp kilitlemek ve seçimi plan ayarlarına devretmek için ' _assign new template_ ' veya ' _choose available site templates_ ' seçenekleri tercih edilebilir.
 
-#### Siteler
+#### Siteler {#sites}
 
 **Siteler** sekmesi, Ultimate Multisite'ın sınırlama işlevselliğinin bir parçasıdır.
 
@@ -211,7 +211,7 @@ Bu ayar, bir müşterinin üyeliği kapsamında oluşturabileceği maksimum site
 
 Sınırlamayı etkinleştirmek için **siteleri sınırla** anahtarını etkin duruma getirin ve **site hakkı** alanında maksimum site sayısını belirtin.
 
-#### Ziyaretler
+#### Ziyaretler {#visits}
 
 **Ziyaretler** sekmesi, Ultimate Multisite'ın sınırlamalar sisteminin başka bir parçasıdır. Bu ayar, bir müşterinin sitesine gelen benzersiz ziyaretçilerin sayılmasına ve sonrasında kısıtlanmasına olanak tanır.
 
@@ -223,7 +223,7 @@ Bu özelliği kullanmak için **benzersiz ziyaretleri sınırla** anahtarını e
 
 Bu sınıra ulaşıldığında Ultimate Multisite, sınırların aşıldığını belirten bir mesaj göstermek yerine müşterinin sitesini sunmayı durdurur.
 
-#### Kullanıcılar
+#### Kullanıcılar {#users}
 
 Ultimate Multisite'ın 'Kullanıcılar' sınırlamaları, ağ yöneticisinin oluşturulabilecek ve rollere atanabilecek kullanıcı sayısına sınırlar koymasına olanak tanır.
 
@@ -233,7 +233,7 @@ Sınırlamalar özelliğini etkinleştirmek için **kullanıcıyı sınırla** a
 
 Ardından, sınırlandırılacak her rol için yanındaki anahtarı etkin duruma getirin ve uygun alanda maksimum üst sınırı tanımlayın.
 
-#### Yazı Türleri
+#### Yazı Türleri {#post-types}
 
 **Yazı Türleri** sekmesi, ağ yöneticisinin WordPress içindeki geniş yazı türleri dizisine ayrıntılı sınırlar koymasına olanak tanır.
 
@@ -245,7 +245,7 @@ Bu sınırlar alt sistemini etkinleştirmek için **yazı türlerini sınırla**
 
 Ardından, sınırlandırılacak her yazı türü için anahtarı sağa kaydırarak açın ve uygun alanda maksimum üst sınırı belirtin.
 
-#### Disk Alanı
+#### Disk Alanı {#disk-space}
 
 **Disk Alanı** sekmesi, ağ yöneticilerinin müşteriler tarafından tüketilen alanı kısıtlamasına olanak tanır.
 
@@ -257,13 +257,13 @@ Disk kullanımı sınırlamasını etkinleştirmek için **site başına disk bo
 
 Ardından, **disk alanı hakk** ı alanında megabayt cinsinden maksimum üst sınırı belirtin.
 
-#### Özel Alan Adı
+#### Özel Alan Adı {#custom-domain}
 
 Bu seçeneği açarak, özel alan adlarına özellikle bu planda izin verebilirsiniz.
 
 ![Özel Alan Adları sekmesi](/img/config/product-custom-domains.png)
 
-#### Temalar
+#### Temalar {#themes}
 
 Ürün seçenekleri içindeki **Temalar** sekmesi, ağ yöneticisinin temaları müşterilerin seçimine sunmasına ve isteğe bağlı olarak temanın durumunu zorunlu kılmasına olanak tanır.
 
@@ -281,7 +281,7 @@ _**Not: Temaların müşterilere sunulabilmesi için ağ yöneticisi tarafından
 
 **K** **ullanılabilir** durumunda tema, müşterinin kendi kendine etkinleştirmesi için kullanılabilir hale getirilir. Buna karşılık, **Kullanılamaz** durumu müşteriden temayı etkinleştirme olanağını kaldırır. Son olarak, **Zorla Etkinleştir** seçeneği temanın seçimini ve etkinleştirilmesini zorunlu kılar; böylece site oluşturulduğunda varsayılan olarak ayarlanır.
 
-#### Eklentiler
+#### Eklentiler {#plugins}
 
 Temalar sekmesine benzer şekilde, Ultimate Multisite ağ yöneticisinin eklentilerin müşterilere görünürlüğünü ve yeni bir site oluşturulduğunda durumlarını tanımlamasına olanak tanır.
 
@@ -301,7 +301,7 @@ Ağ yöneticisi, davranış açılır menüsündeki seçenekleri kullanarak ekle
 
 Ağ yöneticisi, Zorla Etkinleştir ve Kilitle ile Zorla Devre Dışı Bırak ve Kilitle ayarlarını site şablonlarıyla birlikte değerlendirmek isteyebilir; çünkü şablonlardaki eklentiler ve eklenti durumları, seçilmeleri halinde bu ayarlardan etkilenebilir.
 
-#### Sınırlamaları Sıfırla
+#### Sınırlamaları Sıfırla {#reset-limitations}
 
 **Sınırlamaları Sıfırla** sekmesi, ürün üzerinde tanımlanan tüm özel sınırları sıfırlar. Sınırlamaları sıfırlamak için **sınırlamaları sıfırla** düğmesine tıklayın.
 
@@ -311,7 +311,7 @@ Ağ yöneticisi, Zorla Etkinleştir ve Kilitle ile Zorla Devre Dışı Bırak ve
 
 ![Sınırlamaları Sıfırla sekmesi](/img/config/product-reset-limitations.png)
 
-## Ürünü Düzenle, Çoğalt veya Sil
+## Ürünü Düzenle, Çoğalt veya Sil {#edit-duplicate-or-delete-product}
 
 Mevcut ürünler, **Ultimate Multisite > Ürünler** yoluna gidilip mevcut ürün adının üzerine gelinerek düzenlenebilir, çoğaltılabilir veya silinebilir.
 

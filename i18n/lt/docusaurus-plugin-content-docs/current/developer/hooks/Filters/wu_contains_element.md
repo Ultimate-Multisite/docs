@@ -4,13 +4,13 @@ title: Filtras – wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filtras: wu_contains_element
+# Filtras: wu_contains_element {#filter-wucontainselement}
 
 Leidžia kūrėjams keisti pradinės paieškos rezultatus.
 
 Tai naudinga trečiųjų šalių kūrimo įrankiams ir panašiai.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Tai naudinga trečiųjų šalių kūrimo įrankiams ir panašiai.
 | $element | `self` | Dabartinis elementas. |
 | $post | `null\|\WP_Post` | Įrašas, kurį reikia patikrinti. |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) 534 eilutėje

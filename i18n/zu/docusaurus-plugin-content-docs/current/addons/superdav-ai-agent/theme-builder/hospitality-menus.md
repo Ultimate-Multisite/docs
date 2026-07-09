@@ -3,15 +3,15 @@ title: Amamenyu Okungenisa Izihambi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Amamenyu Ezihambi
+# Amamenyu Ezihambi {#hospitality-menus}
 
 Isici se-**Hospitality Menus** sivumela i-Theme Builder ukuthi ikhiqize futhi ifake amakhasi amamenyu okudla neziphuzo ahlelekile ngqo kusayithi lakho le-WordPress.
 
-## Uhlolojikelele
+## Uhlolojikelele {#overview}
 
 I-Theme Builder manje ingakha amakhasi amamenyu asezingeni lochwepheshe, ahlelekile amabhizinisi ezihambi okuhlanganisa izindawo zokudlela, amakhefi, amabha, kanye nezinsizakalo zokupheka zemicimbi. Lawa mamenyu ahlanganiswe ngokugcwele nedizayini yesayithi lakho futhi angabuyekezwa futhi aphathwe kalula.
 
-## Izinhlobo Zezihambi Ezisekelwayo
+## Izinhlobo Zezihambi Ezisekelwayo {#supported-hospitality-types}
 
 - **Izindawo zokudlela** — amamenyu okudlela okunesevisi egcwele
 - **Amakhefi** — amamenyu ekhofi nokudla okulula
@@ -21,9 +21,9 @@ I-Theme Builder manje ingakha amakhasi amamenyu asezingeni lochwepheshe, ahlelek
 - **Amaloli okudla** — amamenyu enkonzo yokudla ehambayo
 - **Izindawo zokwenza ubhiya newayini** — amamenyu eziphuzo anezincazelo
 
-## Isakhiwo Semenyu
+## Isakhiwo Semenyu {#menu-structure}
 
-### Izigaba Zemenyu
+### Izigaba Zemenyu {#menu-categories}
 
 Amamenyu ahlelwa ngezigaba:
 
@@ -34,7 +34,7 @@ Amamenyu ahlelwa ngezigaba:
 - **Iziphuzo** — iziphuzo (ezinotshwala nezingenatshwala)
 - **Okukhethekile** — okukhethekile kwansuku zonke noma kwesizini
 
-### Ifomethi Yento Yemenyu
+### Ifomethi Yento Yemenyu {#menu-item-format}
 
 Into ngayinye yemenyu ihlanganisa:
 
@@ -49,7 +49,7 @@ Into ngayinye yemenyu ihlanganisa:
 }
 ```
 
-#### Izinkambu Zento
+#### Izinkambu Zento {#item-fields}
 
 | Inkambu | Uhlobo | Incazelo |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Into ngayinye yemenyu ihlanganisa:
 | `allergens` | array | Izinto ezivamile ezibangela ukungezwani komzimba (amantongomane, izilwane zasolwandle ezinegobolondo, njll.) |
 | `availability` | string | Isikhathi etholakala ngaso (nsuku zonke, ngesizini, njll.) |
 
-## Ukudala Amamenyu Ezihambi
+## Ukudala Amamenyu Ezihambi {#creating-hospitality-menus}
 
-### Isinyathelo 1: Nikeza Ulwazi Lwemenyu
+### Isinyathelo 1: Nikeza Ulwazi Lwemenyu {#step-1-provide-menu-information}
 
 Tshela i-Theme Builder ngemenyu yakho:
 
@@ -71,7 +71,7 @@ Dala imenyu yendawo yokudlela yendawo yami yokudlela yase-Italy enokudla kokuqal
 izidlo ze-pasta, izidlo ezinkulu, nama-dessert. Faka izintengo nezincazelo.
 ```
 
-### Isinyathelo 2: I-Theme Builder Ikhiqiza Imenyu
+### Isinyathelo 2: I-Theme Builder Ikhiqiza Imenyu {#step-2-theme-builder-generates-menu}
 
 I-Theme Builder:
 
@@ -81,7 +81,7 @@ I-Theme Builder:
 4. Ifometha izintengo nezincazelo
 5. Yengeza ulwazi lokudla nezinto ezibangela ukungezwani komzimba
 
-### Isinyathelo 3: Buyekeza futhi Uzenzele Ngokwezifiso
+### Isinyathelo 3: Buyekeza futhi Uzenzele Ngokwezifiso {#step-3-review-and-customize}
 
 Ungakwazi:
 
@@ -91,9 +91,9 @@ Ungakwazi:
 4. Ukubuyekeza izincazelo nolwazi lokudla
 5. Ukulungisa isitayela nesakhiwo
 
-## Izinketho Zokubonisa Imenyu
+## Izinketho Zokubonisa Imenyu {#menu-display-options}
 
-### Ikhasi Lemenyu Eliphelele
+### Ikhasi Lemenyu Eliphelele {#full-menu-page}
 
 Ikhasi elizinikele elibonisa imenyu yakho ephelele:
 
@@ -102,7 +102,7 @@ Ikhasi elizinikele elibonisa imenyu yakho ephelele:
 - Isakhiwo esilungele ukuphrintwa
 - Idizayini ephendulayo kumaselula
 
-### I-Widget Yemenyu
+### I-Widget Yemenyu {#menu-widget}
 
 Faka izingxenye zemenyu kwamanye amakhasi:
 
@@ -111,7 +111,7 @@ Faka izingxenye zemenyu kwamanye amakhasi:
 - Imenyu yeziphuzo ekhasini lebha
 - Umbukiso wama-dessert ku-footer
 
-### I-PDF Yemenyu
+### I-PDF Yemenyu {#menu-pdf}
 
 Khiqiza imenyu ye-PDF elandekayo:
 
@@ -120,9 +120,9 @@ Khiqiza imenyu ye-PDF elandekayo:
 - Ifaka izithombe nezincazelo
 - Kulula ukwabelana ngayo nokuyithumela nge-imeyili
 
-## Ulwazi Lokudla Nezinto Ezibangela Ukungezwani Komzimba
+## Ulwazi Lokudla Nezinto Ezibangela Ukungezwani Komzimba {#dietary-and-allergen-information}
 
-### Izimfanelo Zokudla
+### Izimfanelo Zokudla {#dietary-attributes}
 
 Maka izinto ngolwazi lokudla:
 
@@ -134,7 +134,7 @@ Maka izinto ngolwazi lokudla:
 - **Low-Carb** — ama-carbohydrate ancishisiwe
 - **High-Protein** — kucebile nge-protein
 
-### Izixwayiso Ngezinto Ezibangela Ukungezwani Komzimba
+### Izixwayiso Ngezinto Ezibangela Ukungezwani Komzimba {#allergen-warnings}
 
 Faka izinto ezivamile ezibangela ukungezwani komzimba:
 
@@ -147,9 +147,9 @@ Faka izinto ezivamile ezibangela ukungezwani komzimba:
 - **Gluten** — ukolweni nezinhlamvu eziqukethe i-gluten
 - **Sesame** — imbewu ye-sesame namafutha
 
-## Ukuphathwa Kwemenyu
+## Ukuphathwa Kwemenyu {#menu-management}
 
-### Ukubuyekeza Izintengo
+### Ukubuyekeza Izintengo {#updating-prices}
 
 Buyekeza kalula izintengo zemenyu:
 
@@ -159,7 +159,7 @@ Buyekeza kalula izintengo zemenyu:
 4. Londoloza izinguquko
 5. Izinguquko zivela ngokushesha kusayithi lakho
 
-### Ukwengeza Izinto Zesizini
+### Ukwengeza Izinto Zesizini {#adding-seasonal-items}
 
 Dala ukuhlukahluka kwemenyu kwesizini:
 
@@ -169,7 +169,7 @@ Dala ukuhlukahluka kwemenyu kwesizini:
 4. Hlela izinsuku zokutholakala
 5. Bonisa ngokuzenzakalelayo ngesikhathi sesizini
 
-### Ukuphatha Okukhethekile
+### Ukuphatha Okukhethekile {#managing-specials}
 
 Bonisa okukhethekile kwansuku zonke noma kwamasonto onke:
 
@@ -179,7 +179,7 @@ Bonisa okukhethekile kwansuku zonke noma kwamasonto onke:
 4. Buyekeza nsuku zonke noma masonto onke
 5. Faka okukhethekile okudala ku-archive
 
-## Ukuhlanganiswa ne-Theme Builder
+## Ukuhlanganiswa ne-Theme Builder {#integration-with-theme-builder}
 
 Lapho usebenzisa i-Theme Builder kumasayithi ezihambi:
 
@@ -189,9 +189,9 @@ Lapho usebenzisa i-Theme Builder kumasayithi ezihambi:
 4. **Ukwenza kube ngcono kumaselula** — amamenyu abonakala kahle emafonini
 5. **Ukwenza ngcono i-SEO** — amamenyu alungele izinjini zokusesha
 
-## Izindlela Ezingcono Kakhulu
+## Izindlela Ezingcono Kakhulu {#best-practices}
 
-### Idizayini Yemenyu
+### Idizayini Yemenyu {#menu-design}
 
 - **Ukuhleleka okucacile** — isakhiwo sezigaba esinengqondo
 - **Izincazelo ezifundeka kalula** — ezivusa isifiso sokudla futhi ezinolwazi
@@ -199,7 +199,7 @@ Lapho usebenzisa i-Theme Builder kumasayithi ezihambi:
 - **Izithombe zochwepheshe** — izithombe zokudla zekhwalithi ephezulu
 - **Isikhala esimhlophe** — ungagcwalisi ikhasi ngokweqile
 
-### Okuqukethwe
+### Okuqukethwe {#content}
 
 - **Izincazelo ezinembile** — chaza izinto ngokunembile
 - **Gqamisa okukhethekile** — yenza okukhethekile kugqame
@@ -207,7 +207,7 @@ Lapho usebenzisa i-Theme Builder kumasayithi ezihambi:
 - **Buyekeza njalo** — gcina izintengo nezinto kungokwakamuva
 - **Sebenzisa ulimi oluvusa isifiso sokudla** — yenza izinto zizwakale zimnandi
 
-### Ukufinyeleleka
+### Ukufinyeleleka {#accessibility}
 
 - **Amafonti afundeka kalula** — sebenzisa izinhlobo zombhalo ezicacile, ezifundeka kahle
 - **Ukuqhathanisa okwanele** — qinisekisa ukuthi umbhalo uyafundeka
@@ -215,9 +215,9 @@ Lapho usebenzisa i-Theme Builder kumasayithi ezihambi:
 - **Izixwayiso ngezinto ezibangela ukungezwani komzimba** — bonisa ngokugqamile izinto ezibangela ukungezwani komzimba
 - **Kulungele amaselula** — hlola kuwo wonke amadivayisi
 
-## Izibonelo
+## Izibonelo {#examples}
 
-### Isakhiwo Semenyu Yendawo Yokudlela
+### Isakhiwo Semenyu Yendawo Yokudlela {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Isakhiwo Semenyu Yekhefi
+### Isakhiwo Semenyu Yekhefi {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Izici Ezihlobene
+## Izici Ezihlobene {#related-features}
 
 - [Dala Imenyu](../abilities/create-menu.md) — dala amamenyu okuzulazula
 - [Isiqondiso Sokuklama](./design-direction.md) — hlela ngokwezifiso ukuklama kwesayithi lakho

@@ -3,7 +3,7 @@ title: Änderungsprotokoll der WooCommerce Integration
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration Änderungsprotokoll
+# WooCommerce Integration Änderungsprotokoll {#woocommerce-integration-changelog}
 
 Version 2.2.0 - Veröffentlicht am 2026-07-01
 * Neu: Steuerbeträge von Ultimate Multisite erscheinen jetzt als separate WooCommerce-Gebührenzeilen beim Checkout, wodurch Steuersummen vor der Zahlung klarer werden.

@@ -3,13 +3,13 @@ title: تسجيل سير
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# قيد دان (v2)
+# قيد دان (v2) {#the-registration-flow-v2}
 
 _**مهم یادداشت: این مقاله به Ultimate Multisite نسخه 2.x اشاره دارد.**_
 
 کاربران می‌توانند به روش‌های مختلف در شبکه شما ثبت‌نام کنند. آنها می‌توانند از فرم ثبت‌نام شما یا یک لینک قابل اشتراک برای یک طرح از پیش انتخاب شده استفاده کنند. در اینجا ما نشان خواهیم داد که مشتریان شما چگونه با مسیرهای موجود در شبکه خود ثبت‌نام کنند و بعد از ثبت‌نام چه اتفاقی می‌افتد.
 
-## استفاده از فرم ثبت‌نام:
+## استفاده از فرم ثبت‌نام: {#using-the-registration-form}
 
 این فرآیند استاندارد ثبت‌نام است. شما یک صفحه ثبت‌نام با یک **checkout form** (فرم پرداخت) ایجاد می‌کنید و این جایی است که مشتریان شما برای ثبت‌نام در شبکه خود و اشتراک در یک طرح می‌روند. اگر بخواهید، می‌توانید چندین صفحه ثبت‌نام داشته باشید، هر کدام با فرم ثبت‌نام متفاوتی.
 
@@ -35,13 +35,13 @@ Eger olar toplanan plan bilen goşylsa ýa-da siziň ulgamynda e-poça tasdiqlam
 
 ![Dashboardyza girmezlik linki bilen web sahypasy işlendi](/img/frontend/site-activated.png)
 
-## Paylaşylmadyk Linkden Ulanyp Goşmak:
+## Paylaşylmadyk Linkden Ulanyp Goşmak: {#using-a-shareable-link}
 
 Paylaşylmadyk link arkaly goşmak prosesi esasan goşmak formasy bilen birme-bir, diňe şeýledirki, paylaşylmadyk link ulanylanda, müşderileriniz checkout formasynda önüm ýa-da web sahypasy şablonyny önceden saýlaýarlar (URL parametrlary arkaly önümleri we şablonlary önceden saýlamak barada bölümden okap bilersiňiz) ýa-da belki hem kupon kody goşylyp biler (URL parametrlary ulanyp barada bölümden okap bilersiňiz).
 
 Goşmak prosesi birme-bir bolup durar: olaryk adyny, ismini, e-poçta adresini, web sahypasy adyny we başlygyny ýazmaly... ýöne plan ýa-da web şablonu olaryk önceden saýlanyp biler.
 
-### Manual Tozlary Ulanyp Goşmak:
+### Manual Tozlary Ulanyp Goşmak: {#registering-using-manual-payments}
 
 Eger siz Ultimate Multisite ýa-da onuň goşulmalaryny teklip edýän PayPal, Stripe ýa-da beýleki her bir töleg portalyny ulamak istemezse, olaryk müşderleriniz üçin manual tozlary ulanyp bilersiňiz. Bu ýagdaýda, olaryk siziň ulgamynda goşulandan soň siz olara tölemek üçin has howpsuz töleg edarçasy (invoice) döredip berip bilersiňiz.
 

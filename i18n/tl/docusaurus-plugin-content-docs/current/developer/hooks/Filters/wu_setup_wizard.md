@@ -4,11 +4,11 @@ title: Pansala - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard
+# Filter: wu_setup_wizard {#filter-wusetupwizard}
 
 Payagan ang mga developer na magdagdag ng karagdagang mga hakbang sa setup wizard.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Payagan ang mga developer na magdagdag ng karagdagang mga hakbang sa setup wizar
 | $is_migration | `bool` | Kung ito ay migrasyon o hindi. |
 | $wizard | `object` | Ang kasalukuyang instance. |
 
-### Mula noong
+### Mula noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) sa linya 525
 
 
-## Mga Ibinabalik
+## Mga Ibinabalik {#returns}

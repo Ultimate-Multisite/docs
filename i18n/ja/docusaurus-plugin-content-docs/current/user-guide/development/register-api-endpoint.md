@@ -3,7 +3,7 @@ title: API エンドポイントを登録
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API エンドポイント
+# Ultimate Multisite Register API エンドポイント {#the-ultimate-multisite-register-api-endpoint}
 
 このチュートリアルでは、Ultimate Multisite /register API エンドポイントを使用して、ネットワーク内の新規顧客のオンボーディングプロセス全体を作成し、Zapierでそれを実行する方法を学びます。
 
@@ -26,11 +26,11 @@ API 設定ページ全体の表示はこちらです:
 
 それでは、エンドポイントを確認し、Zapierで登録アクションを作成しましょう。
 
-## エンドポイント本文パラメータ
+## エンドポイント本文パラメータ {#endpoint-body-parameters}
 
 エンドポイントに送信する必要がある最低限の情報を概観しましょう。この記事の最後に、完全な呼び出し例を示します。
 
-### カスタマー
+### カスタマー {#customer}
 
 ユーザーと Ultimate Multisite 顧客を作成するプロセスに必要な情報です：
 
@@ -44,7 +44,7 @@ API 設定ページ全体の表示はこちらです:
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 ```
 
-### **会員**
+### **会員** {#membership}
 
 このオブジェクトに必要な情報は会員ステータスのみです。
 
@@ -52,13 +52,13 @@ API 設定ページ全体の表示はこちらです:
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 ```
 
-### **製品**
+### **製品** {#products}
 
 製品は、ネットワーク内の 1 つ以上の製品IDを配列で指定します。注意してください、このエンドポイントは製品を作成しません。製品作成エンドポイントについては、Ultimate Multisite のドキュメントを参照してください。
 
 **"products" : [1,2],**
 
-### 支払い
+### 支払い {#payment}
 
 会員と同様に、ステータスのみが必要です。
 
@@ -66,7 +66,7 @@ API 設定ページ全体の表示はこちらです:
 "payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },
 ```
 
-### サイト
+### サイト {#site}
 
 本文を閉じるには、Site オブジェクト内にサイトの URL とタイトルが必要です。
 
@@ -76,13 +76,13 @@ API 設定ページ全体の表示はこちらです:
 
 register エンドポイントの戻り値は、新しく作成された会員情報を含む配列になります。
 
-## Zapierでアクションを作成
+## Zapierでアクションを作成 {#creating-an-action-in-zapier}
 
 この新しく、より堅牢なアカウント作成エンドポイントの導入により、Zapier で新しいアクションにアクセスできるようになります。
 
 Zapier の新バージョンが提供するすべての機能を使いこなす方法をご存知ですか？ 詳細はこちら。 (link?)
 
-### アクションの作成
+### アクションの作成 {#creating-an-action}
 
 Zapier で登録エンドポイントを使用する方法をより具体的に示すために、Google Forms との統合を作成しましょう。このフォームが入力され、回答シートに情報が保存されるたびに、Ultimate Multisite ネットワークに新しい会員が作成されます。
 
@@ -112,7 +112,7 @@ With the information set up, proceed to the final test. On the last screen you c
 
 新しい Zap をテストし、正常に完了するはずです。エラーが発生した場合は、すべてのフィールドが正しく送信されているか確認してください。情報量が多いため、見落としが発生することがあります。
 
-### 完全なエンドポイントパラメータ
+### 完全なエンドポイントパラメータ {#complete-endpoint-parameters}
 
 以下は、完全な呼び出し例と送信可能なすべてのフィールドの可能性です。
 

@@ -3,11 +3,11 @@ title: Zvinoreva yechinjikwa
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Zvinoro Rino (Dashboard Overview)
+# Zvinoro Rino (Dashboard Overview) {#dashboard-overview}
 
 Ultimate Multisite inenge **Dashboard** wosei wechipe chiri mune yechinyorwa (menu), uye inenge inopa widgets kune Network Dashboard. Iri rurimi rudo rine kuona mumweya wese.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite inenge inopa widgets dzinogona kutanga mumweya we-network, unogona kunzwisisa pamwe chete **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Iyi ndiyo zvinhu zvinoreva kuti widget dziri kuopa:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Kune chiri chiri chaizvo, network dashboard inopa maererano akakosha paneweye pane network yese, kunyanya ultimate multisite dashboard (panguva rechipe chete chemenu), inopa maererano anogona kuita service yese.
 

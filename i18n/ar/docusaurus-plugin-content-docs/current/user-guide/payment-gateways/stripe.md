@@ -3,19 +3,19 @@ title: إعداد Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# إعداد بوابة سترايب (v2)
+# إعداد بوابة سترايب (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ملاحظة هامة: تشير هذه المقالة إلى إصدار Ultimate Multisite 2.x.**_
 
 يمكنك تفعيل ما يصل إلى أربع طرق دفع على صفحة إعدادات الدفع الخاصة بنا: Stripe، Stripe Checkout، PayPal، و Manual. في هذه المقالة، سنرى كيفية التكامل مع **Stripe**.
 
-## تمكين Stripe
+## تمكين Stripe {#enabling-stripe}
 
 لتفعيل Stripe كبوابة دفع متاحة على شبكتك، اذهب إلى **Ultimate Multisite > Settings > Payments** وضع علامة على التبديل بجانب **Stripe** أو **Stripe Checkout** في قسم بوابات الدفع النشطة.
 
 ![تمكين Stripe في بوابات الدفع النشطة](/img/config/settings-payment-gateways.png)
 
-### Stripe مقابل Stripe Checkout:
+### Stripe مقابل Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** ستظهر هذه الطريقة مساحة لإدخال رقم بطاقة الائتمان أثناء عملية الدفع.
 
@@ -47,7 +47,7 @@ _**ملاحظة:** يمكنك تفعيل **Sandbox mode** لاختبار ما إ
 
 ![لصق مفاتيح Stripe في إعدادات Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## إعداد Stripe Webhook
+## إعداد Stripe Webhook {#setting-up-stripe-webhook}
 
 يُرسل Stripe أحداث webhook تُخطر Ultimate Multisite في أي وقت يحدث فيه حدث على **حساب Stripe الخاص بك**.
 

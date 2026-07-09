@@ -4,11 +4,11 @@ title: Акција - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Радња: wu_dashboard_widgets
+# Радња: wu_dashboard_widgets {#action-wudashboardwidgets}
 
 Дозвољава програмерима plugin-а да додају виџете у панел мрежног Dashboard-а.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 | $screen | `\WP_Screen` | Објекат екрана. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Инстанца Ultimate Multisite администраторске странице. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.0.0
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L225) у реду 225

@@ -3,28 +3,28 @@ title: Tổng quan REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tài liệu tham khảo REST API
+# Tài liệu tham khảo REST API {#rest-api-reference}
 
-## Cấu hình cơ sở
+## Cấu hình cơ sở {#base-configuration}
 
 **URL cơ sở:** `{site_url}/wp-json/wu/v2/`
 **Xác thực:** Khóa API & Secret (HTTP Basic Auth hoặc tham số URL)
 
-## Xác thực
+## Xác thực {#authentication}
 
-### Bật API
+### Bật API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Lấy thông tin xác thực API
+### Lấy thông tin xác thực API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Phương thức xác thực
+### Phương thức xác thực {#authentication-methods}
 
 **HTTP Basic Auth (Được khuyến nghị):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Các điểm cuối cốt lõi
+## Các điểm cuối cốt lõi {#core-endpoints}
 
-### 1. API khách hàng
+### 1. API khách hàng {#1-customers-api}
 
 **Tuyến cơ sở:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API trang
+### 2. API trang {#2-sites-api}
 
 **Tuyến cơ sở:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API tư cách thành viên
+### 3. API tư cách thành viên {#3-memberships-api}
 
 **Tuyến cơ sở:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API sản phẩm
+### 4. API sản phẩm {#4-products-api}
 
 **Tuyến cơ sở:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API thanh toán
+### 5. API thanh toán {#5-payments-api}
 
 **Tuyến cơ sở:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API tên miền
+### 6. API tên miền {#6-domains-api}
 
 **Tuyến cơ sở:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Điểm cuối đăng ký
+## Điểm cuối đăng ký {#registration-endpoint}
 
 Điểm cuối `/register` cung cấp một luồng thanh toán/đăng ký hoàn chỉnh:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Điểm cuối đối tượng thuê độc lập
+## Điểm cuối đối tượng thuê độc lập {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 bổ sung phạm vi REST cho đối tượng thuê độc lập dành cho các tích hợp cấp phát, kiểm tra hoặc xác minh các đối tượng thuê biệt lập.
 
@@ -242,7 +242,7 @@ Các phản hồi trạng thái di chuyển điển hình bao gồm:
 
 Xem `ready: false` là một yếu tố chặn trước khi ra mắt. Kiểm tra chi tiết xác minh, khắc phục ràng buộc máy chủ cơ sở dữ liệu, hàng đợi, cấp phát người dùng hoặc vấn đề định tuyến, rồi thử lại xác minh.
 
-## Phản hồi lỗi
+## Phản hồi lỗi {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Xem `ready: false` là một yếu tố chặn trước khi ra mắt. Kiểm tra
 }
 ```
 
-## Phân trang và lọc
+## Phân trang và lọc {#pagination-and-filtering}
 
 **Tham số truy vấn:**
 ```http

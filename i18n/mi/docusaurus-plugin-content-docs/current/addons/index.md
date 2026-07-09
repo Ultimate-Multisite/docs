@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ngā Tāpiritanga Ultimate Multisite
+# Ngā Tāpiritanga Ultimate Multisite {#ultimate-multisite-addons}
 
 Ka whakawhānui ngā tāpiritanga i a Ultimate Multisite ki ngā āhuatanga me ngā whakaurunga tāpiri. Ko te nuinga o ngā tāpiritanga he mea utu, ā, ka taea te hoko mai i [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Tāutanga
+## Tāutanga {#installation}
 
 E rua ngā ara hei tāuta i ngā tāpiritanga:
 
 1. **Mā te Whārangi Tāpiritanga** -- Haere ki te whārangi whakahaere tāpiritanga o tō pae i te kaiwhakahaere WordPress
 2. **Tikiake ā-ringa** -- Tikiake mai i [tō account](https://ultimatemultisite.com/my-account/downloads/) ka tukuake mā Ngā mono > Tāpiri Hou
 
-## Ngā Tāpiritanga e Wātea ana
+## Ngā Tāpiritanga e Wātea ana {#available-addons}
 
 | Tāpiritanga | Whakaahuatanga |
 |-------|-------------|

@@ -3,28 +3,28 @@ title: REST API ülevaade
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API viide
+# REST API viide {#rest-api-reference}
 
-## Põhiseadistus
+## Põhiseadistus {#base-configuration}
 
 **Baas-URL:** `{site_url}/wp-json/wu/v2/`
 **Autentimine:** API võti ja saladus (HTTP Basic Auth või URL-i parameetrid)
 
-## Autentimine
+## Autentimine {#authentication}
 
-### Luba API
+### Luba API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Hangi API pääsuandmed
+### Hangi API pääsuandmed {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentimismeetodid
+### Autentimismeetodid {#authentication-methods}
 
 **HTTP Basic Auth (soovitatav):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Põhilised lõpp-punktid
+## Põhilised lõpp-punktid {#core-endpoints}
 
-### 1. Klientide API
+### 1. Klientide API {#1-customers-api}
 
 **Baasmarsruut:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Saitide API
+### 2. Saitide API {#2-sites-api}
 
 **Baasmarsruut:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Liikmesuste API
+### 3. Liikmesuste API {#3-memberships-api}
 
 **Baasmarsruut:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Toodete API
+### 4. Toodete API {#4-products-api}
 
 **Baasmarsruut:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Maksete API
+### 5. Maksete API {#5-payments-api}
 
 **Baasmarsruut:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domeenide API
+### 6. Domeenide API {#6-domains-api}
 
 **Baasmarsruut:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registreerimise lõpp-punkt
+## Registreerimise lõpp-punkt {#registration-endpoint}
 
 Lõpp-punkt `/register` pakub täielikku ostu vormistamise / registreerimise voogu:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Suveräänse rentniku lõpp-punktid
+## Suveräänse rentniku lõpp-punktid {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 lisab suveräänse rentniku REST-katvuse integratsioonidele, mis varustavad, kontrollivad või verifitseerivad isoleeritud rentnikke.
 
@@ -242,7 +242,7 @@ Tüüpilised migratsiooni oleku vastused sisaldavad:
 
 Käsitle väärtust `ready: false` kui lansseerimiseelset takistust. Kontrolli verifitseerimise üksikasju, paranda andmebaasi hosti sidumine, järjekord, kasutajate ettevalmistamine või marsruutimisprobleem ning proovi seejärel verifitseerimist uuesti.
 
-## Veavastused
+## Veavastused {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Käsitle väärtust `ready: false` kui lansseerimiseelset takistust. Kontrolli v
 }
 ```
 
-## Lehekülgede kaupa jaotamine ja filtreerimine
+## Lehekülgede kaupa jaotamine ja filtreerimine {#pagination-and-filtering}
 
 **Päringu parameetrid:**
 ```http

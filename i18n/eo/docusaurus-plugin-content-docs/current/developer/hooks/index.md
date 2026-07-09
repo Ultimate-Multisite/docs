@@ -3,11 +3,11 @@ title: Referenco pri Hokoj
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referenco pri hokoj
+# Referenco pri hokoj {#hooks-reference}
 
 Aŭtomate generita dokumentaro por ĉiuj **59 agoj** kaj **118 filtriloj** en Ultimate Multisite.
 
-## Agoj
+## Agoj {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Ekfunkcias antaŭ la aŭtentiga alidirekto.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Ekfunkcias tuj antaŭ ol la aŭtentiga kuketo estas agordita.
@@ -70,7 +70,7 @@ Aŭtomate generita dokumentaro por ĉiuj **59 agoj** kaj **118 filtriloj** en Ul
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Ekfunkcias post kiam objekto estas konservita en la datumbazon.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permesas al plugin-programistoj aldoni agojn al la malŝlosa procezo.
 
-## Filtriloj
+## Filtriloj {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtras la daŭron de la aŭtentikiga kuketa eksvalidiĝa periodo.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtras la aŭtentikigan alidirektan skemon.

@@ -3,19 +3,19 @@ title: 'Lezzjoni 10: Jum it-Tnedija'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lezzjoni 10: Jum it-Tnedija
+# Lezzjoni 10: Jum it-Tnedija {#lesson-10-launch-day}
 
 Kollox inbena. Qabel tiftaħ il-bibien, din il-lezzjoni tgħaddi mill-lista ta' kontroll ta' qabel it-tnedija biex tiżgura li xejn mhu miksur, nieqes, jew imbarazzanti.
 
-## Fejn Ħallejna
+## Fejn Ħallejna {#where-we-left-off}
 
 FitSite għandu mudelli, pjanijiet, proċess tal-ħlas, branding, onboarding, u prezzijiet kollha kkonfigurati. Issa nivverifikaw li kollox jaħdem u nniedu pubblikament.
 
-## Lista ta' Kontroll ta' Qabel it-Tnedija
+## Lista ta' Kontroll ta' Qabel it-Tnedija {#pre-launch-checklist}
 
 Għaddi minn kull punt. Taqbeż xejn.
 
-### Infrastruttura tal-Pjattaforma
+### Infrastruttura tal-Pjattaforma {#platform-infrastructure}
 
 - [ ] Il-hosting huwa stabbli u jaħdem tajjeb taħt tagħbija
 - [ ] Wildcard SSL huwa attiv u s-subdomains kollha jservu fuq HTTPS
@@ -23,7 +23,7 @@ Għaddi minn kull punt. Taqbeż xejn.
 - [ ] Il-backups huma kkonfigurati u ttestjati (irrestawra mill-inqas wieħed biex tivverifika)
 - [ ] Il-monitoraġġ huwa fis-seħħ -- tkun taf jekk il-pjattaforma tinżel
 
-### Mudelli
+### Mudelli {#templates}
 
 - [ ] It-tliet mudelli kollha jitgħabbew sewwa fuq siti ġodda
 - [ ] Il-kontenut placeholder huwa utli u bla żbalji ortografiċi
@@ -32,7 +32,7 @@ Għaddi minn kull punt. Taqbeż xejn.
 - [ ] Il-veloċità tat-tagħbija tal-paġna hija aċċettabbli (ittestja b'għodda bħal GTmetrix jew PageSpeed Insights)
 - [ ] L-ebda links miksura jew assets nieqsa fuq xi mudell
 
-### Pjanijiet u Prodotti
+### Pjanijiet u Prodotti {#plans-and-products}
 
 - [ ] It-tliet pjanijiet kollha huma attivi u viżibbli
 - [ ] Id-deskrizzjonijiet tal-pjanijiet huma preċiżi u speċifiċi għan-niċċa
@@ -42,7 +42,7 @@ Għaddi minn kull punt. Taqbeż xejn.
 - [ ] L-offerti addizzjonali jidhru sewwa waqt il-proċess tal-ħlas
 - [ ] Il-limitazzjonijiet tal-plugin u tat-theme jiġu infurzati sewwa għal kull pjan
 
-### Fluss tal-Ħlas
+### Fluss tal-Ħlas {#checkout-flow}
 
 - [ ] Imla reġistrazzjoni ta' test sħiħa fuq kull pjan (uża modalità ta' ħlas ta' test)
 - [ ] L-għażla tal-mudell turi l-mudelli korretti għal kull pjan
@@ -52,7 +52,7 @@ Għaddi minn kull punt. Taqbeż xejn.
 - [ ] Il-klijent jista' jidħol fis-sit il-ġdid tiegħu minnufih
 - [ ] Il-kodiċijiet ta' skont jaħdmu sewwa
 
-### Branding
+### Branding {#branding}
 
 - [ ] Il-paġna tal-login turi l-branding ta' FitSite
 - [ ] Id-Dashboard tal-amministratur juri l-branding ta' FitSite
@@ -60,7 +60,7 @@ Għaddi minn kull punt. Taqbeż xejn.
 - [ ] Il-fatturi jintwerew sewwa bid-dettalji tan-negozju tiegħek
 - [ ] Is-sit tal-marketing huwa live u jillinkja mal-formola tal-ħlas
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Il-widget Bidu Mgħaġġel jidher fuq id-Dashboards ta' klijenti ġodda
 - [ ] Il-links kollha ta' Bidu Mgħaġġel iwasslu għall-paġni korretti
@@ -68,7 +68,7 @@ Għaddi minn kull punt. Taqbeż xejn.
 - [ ] L-artikli tal-bażi tal-għarfien huma ppubblikati u aċċessibbli
 - [ ] Il-paġna Account turi informazzjoni korretta dwar il-pjan u għażliet ta' upgrade
 
-### Legali u Negozju
+### Legali u Negozju {#legal-and-business}
 
 - [ ] It-termini tas-servizz huma ppubblikati u marbuta mill-proċess tal-ħlas
 - [ ] Il-politika tal-privatezza hija ppubblikata u aċċessibbli
@@ -77,11 +77,11 @@ Għaddi minn kull punt. Taqbeż xejn.
 - [ ] Il-gateway tal-ħlas huwa fil-modalità live (mhux modalità ta' test)
 - [ ] Il-konfigurazzjoni tat-taxxa hija korretta għall-ġurisdizzjoni tiegħek
 
-## Tnedija Soft vs. Tnedija Hard
+## Tnedija Soft vs. Tnedija Hard {#soft-launch-vs-hard-launch}
 
 Ikkunsidra tnedija f'żewġ fażijiet:
 
-### Fażi 1: Tnedija Soft
+### Fażi 1: Tnedija Soft {#phase-1-soft-launch}
 
 Stieden 5-10 sidien ta' studios tal-fitness biex jirreġistraw qabel it-tnedija pubblika. Dawn huma l-klijenti beta tiegħek. Offrilhom skont sinifikanti (50% inqas għal dejjem, jew 3 xhur b'xejn) bi skambju għal:
 
@@ -91,7 +91,7 @@ Stieden 5-10 sidien ta' studios tal-fitness biex jirreġistraw qabel it-tnedija 
 
 Dan jagħtik feedback reali tal-klijenti u siti live biex turihom qabel tiftaħ għall-pubbliku.
 
-### Fażi 2: Tnedija Pubblika
+### Fażi 2: Tnedija Pubblika {#phase-2-public-launch}
 
 Ladarba l-feedback tat-tnedija soft jiġi inkorporat:
 
@@ -100,7 +100,7 @@ Ladarba l-feedback tat-tnedija soft jiġi inkorporat:
 - Ibda l-akkwist tal-klijenti (Lezzjoni 11)
 - Ħabbar fuq kanali rilevanti tal-industrija tal-fitness
 
-## Azzjonijiet ta' Jum it-Tnedija
+## Azzjonijiet ta' Jum it-Tnedija {#launch-day-actions}
 
 Fil-jum li toħroġ pubblikament:
 
@@ -110,7 +110,7 @@ Fil-jum li toħroġ pubblikament:
 4. **Kun disponibbli** -- l-ewwel klijenti reali tiegħek jistgħu jkollhom bżonn l-għajnuna, u rispons mgħaġġel jibni l-fiduċja
 5. **Iċċelebra fil-qosor** -- imbagħad erġa' lura għax-xogħol
 
-## X'Jista' Jmur Ħażin
+## X'Jista' Jmur Ħażin {#what-can-go-wrong}
 
 Kun ippreparat għal:
 
@@ -120,7 +120,7 @@ Kun ippreparat għal:
 - **Prestazzjoni taħt tagħbija**: Jekk ikollok żieda qawwija fit-traffiku, kun af kif tiskala l-hosting tiegħek
 - **Konfużjoni tal-klijenti**: Żomm il-bażi tal-għarfien u l-kanali tal-appoġġ tiegħek lesti
 
-## In-Network ta' FitSite Sa Issa
+## In-Network ta' FitSite Sa Issa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Dak li Bnejna f'Din il-Lezzjoni
+## Dak li Bnejna f'Din il-Lezzjoni {#what-we-built-this-lesson}
 
 - **Lista ta' kontroll komprensiva ta' qabel it-tnedija** li tkopri infrastruttura, kontenut, pagamenti, u legali
 - **Strateġija ta' tnedija soft** biex tikseb feedback reali qabel toħroġ pubblikament

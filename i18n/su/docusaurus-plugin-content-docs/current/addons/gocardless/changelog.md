@@ -3,7 +3,7 @@ title: GoCardless Catetan Parobahan
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog
+# GoCardless Changelog {#gocardless-changelog}
 
 Vérsi: 1.0.3 - Dirilis dina 2026-05-05
 * Perbaikan: loka ditunda anu teu boga indung ayeuna diberesihan nalika kaanggotaan GoCardless dibatalkeun bari dina kaayaan ditunda atawa on-hold

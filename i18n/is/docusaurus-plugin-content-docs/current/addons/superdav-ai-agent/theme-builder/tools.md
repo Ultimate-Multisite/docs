@@ -3,17 +3,17 @@ title: Verkfæri og stillingar
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Verkfæri og stillingar
+# Verkfæri og stillingar {#tools-and-configuration}
 
 Theme Builder notar sett af verkfærum til að greina, hanna og byggja WordPress vefinn þinn. Í útgáfu 1.16.0 er **sd-ai-agent/site-scrape nú Tier 1 verkfæri**, sem gerir það sjálfgefið aðgengilegt í Theme Builder. Superdav AI Agent v1.18.0 kynnir einnig Advanced fylgipakka sem er dreift sérstaklega fyrir traust vinnuferli þróunaraðila; þessi verkfæri eru ekki hluti af WordPress.org kjarnapakkanum og þarf að setja þau upp og heimila sérstaklega.
 
-## Tiltæk verkfæri
+## Tiltæk verkfæri {#available-tools}
 
-### Tier 1 verkfæri (alltaf tiltæk)
+### Tier 1 verkfæri (alltaf tiltæk) {#tier-1-tools-always-available}
 
 Tier 1 verkfæri eru sjálfgefið tiltæk í Theme Builder án nokkurra viðbótarstillinga.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Tilgangur:** Greina fyrirliggjandi vefsíður til að sækja hönnunarinnblástur, efnisuppbyggingu og virkni.
 
@@ -51,11 +51,11 @@ Greindu hönnunina á example.com og notaðu hana sem innblástur fyrir vefinn m
 - Vefir sem reiða sig mikið á JavaScript kunna að hafa takmarkaða greiningu
 - Stórir vefir kunna að taka lengri tíma í greiningu
 
-### Tier 2 verkfæri (valkvæð)
+### Tier 2 verkfæri (valkvæð) {#tier-2-tools-optional}
 
 Tier 2 verkfæri eru tiltæk þegar þau eru sérstaklega virkjuð í stillingum Theme Builder.
 
-#### Ítarleg greining
+#### Ítarleg greining {#advanced-analytics}
 
 Veitir ítarleg frammistöðumæligildi:
 
@@ -65,7 +65,7 @@ Veitir ítarleg frammistöðumæligildi:
 - Aðgengiseinkunn
 - Einkunn fyrir bestu venjur
 
-#### Efnisbestir
+#### Efnisbestir {#content-optimizer}
 
 Greinir og leggur til umbætur fyrir:
 
@@ -75,11 +75,11 @@ Greinir og leggur til umbætur fyrir:
 - Efnisuppbyggingu
 - Staðsetningu ákalls til aðgerðar
 
-### Tier 3 verkfæri (Premium)
+### Tier 3 verkfæri (Premium) {#tier-3-tools-premium}
 
 Tier 3 verkfæri krefjast viðbótarstillinga eða premium eiginleika.
 
-#### AI efnisframleiðandi
+#### AI efnisframleiðandi {#ai-content-generator}
 
 Býr til efni fyrir:
 
@@ -89,7 +89,7 @@ Býr til efni fyrir:
 - Meta-lýsingar
 - Texta fyrir ákall til aðgerðar
 
-#### Ítarleg hönnunarverkfæri
+#### Ítarleg hönnunarverkfæri {#advanced-design-tools}
 
 Veitir ítarlega hönnunargetu:
 
@@ -99,7 +99,7 @@ Veitir ítarlega hönnunargetu:
 - Ítarlega litafræði
 - Bestun leturfræði
 
-### Advanced fylgiverkfæri (sérstakur pakki)
+### Advanced fylgiverkfæri (sérstakur pakki) {#advanced-companion-tools-separate-package}
 
 Advanced fylgipakkanum er dreift sérstaklega frá kjarnaútgáfu Superdav AI Agent. Hann er ætlaður traustum umhverfum þróunaraðila og eigenda vefs þar sem stjórnendur leyfa umboðsmanninum sérstaklega að nota áhrifamikil verkfæri.
 
@@ -116,9 +116,9 @@ Geta Advanced fylgipakkans getur falið í sér:
 
 Ekki skjalfesta þessi sem almennt tiltæk Theme Builder verkfæri fyrir hverja uppsetningu. Þau eru aðeins tiltæk þegar Advanced fylgipakkinn er uppsettur, virkjaður og takmarkaður við trausta stjórnendur.
 
-## Stilling verkfæra
+## Stilling verkfæra {#tool-configuration}
 
-### Að virkja verkfæri
+### Að virkja verkfæri {#enabling-tools}
 
 Til að virkja viðbótarverkfæri í Theme Builder:
 
@@ -127,7 +127,7 @@ Til að virkja viðbótarverkfæri í Theme Builder:
 3. Kveiktu/slökktu á verkfærum eftir þörfum
 4. Vistaðu stillingar
 
-### Heimildir verkfæra
+### Heimildir verkfæra {#tool-permissions}
 
 Sum verkfæri krefjast heimilda:
 
@@ -137,7 +137,7 @@ Sum verkfæri krefjast heimilda:
 - **Ítarlegir eiginleikar** — kunna að krefjast premium áskriftar
 - **Advanced fylgiverkfæri** — krefjast Advanced pakkans sem er dreift sérstaklega og skýrs trausts stjórnanda
 
-### API-lyklar og auðkenni
+### API-lyklar og auðkenni {#api-keys-and-credentials}
 
 Stilltu API-lykla fyrir verkfæri sem krefjast þeirra:
 
@@ -146,13 +146,13 @@ Stilltu API-lykla fyrir verkfæri sem krefjast þeirra:
 3. Prófaðu tengingu
 4. Vistaðu á öruggan hátt
 
-### Uppsetning Advanced fylgipakkans
+### Uppsetning Advanced fylgipakkans {#installing-the-advanced-companion-package}
 
 Advanced fylgipakkinn er gefinn út sérstaklega frá WordPress.org kjarna-ZIP. Settu hann aðeins upp frá opinberri dreifileið verkefnisins fyrir útgáfuna og takmarkaðu síðan aðgang við trausta stjórnendur. Farðu yfir samþykkishlið manna og hegðun git skyndimynda áður en þú virkjar skráakerfis-, gagnagrunns-, WP-CLI-, REST dispatcher-, plugin smíða-, notendastjórnunar- eða viðmiðunarprófaverkfæri á framleiðsluvef.
 
-## Notkun sd-ai-agent/site-scrape
+## Notkun sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Grunnnotkun
+### Grunnnotkun {#basic-usage}
 
 Biddu Theme Builder um að greina vefsíðu:
 
@@ -161,7 +161,7 @@ Greindu hönnunina á vef samkeppnisaðila míns á competitor.com
 og leggðu til hönnunarbætur fyrir vefinn minn.
 ```
 
-### Sértæk greining
+### Sértæk greining {#specific-analysis}
 
 Biddu um tilteknar gerðir greiningar:
 
@@ -179,7 +179,7 @@ Athugaðu svörun example.com í farsímum og tryggðu að vefurinn minn
 sé jafn vel svarandi.
 ```
 
-### Samanburðargreining
+### Samanburðargreining {#comparison-analysis}
 
 Berðu saman marga vefi:
 
@@ -188,22 +188,22 @@ Berðu saman hönnun site1.com og site2.com og búðu til hönnun
 sem sameinar bestu þætti beggja.
 ```
 
-## Takmarkanir og atriði verkfæra
+## Takmarkanir og atriði verkfæra {#tool-limitations-and-considerations}
 
-### Hraðatakmörkun
+### Hraðatakmörkun {#rate-limiting}
 
 - Scraping er hraðatakmarkað til að koma í veg fyrir ofálag á netþjóni
 - Margar beiðnir til sama vefsvæðis kunna að vera takmarkaðar
 - Stór vefsvæði geta tekið lengri tíma að greina
 
-### Nákvæmni efnis
+### Nákvæmni efnis {#content-accuracy}
 
 - Kvik efni kann að nást ekki að fullu
 - Efni sem JavaScript birtir kann að vera ófullkomið
 - Rauntímagögn kunna að endurspeglast ekki
 - Sumt efni kann að vera á bak við greiðsluveggi
 
-### Lagaleg og siðferðileg atriði
+### Lagaleg og siðferðileg atriði {#legal-and-ethical-considerations}
 
 - Virðið robots.txt og stefnur vefsvæðis
 - Ekki scrape-a höfundarréttarvarið efni til endurbirtingar
@@ -211,16 +211,16 @@ sem sameinar bestu þætti beggja.
 - Staðfestið að þið hafið rétt til að nota útdregið efni
 - Fylgið þjónustuskilmálum greindra vefsvæða
 
-### Áhrif á afköst
+### Áhrif á afköst {#performance-impact}
 
 - Scraping á stórum vefsvæðum getur tekið tíma
 - Margar samtímis scraping-aðgerðir geta verið hægari
 - Nettenging hefur áhrif á hraða
 - Stór gagnasöfn kunna að krefjast meiri vinnslu
 
-## Bestu starfsvenjur
+## Bestu starfsvenjur {#best-practices}
 
-### Notkun greiningar á vefsvæði
+### Notkun greiningar á vefsvæði {#using-site-analysis}
 
 1. **Greindu mörg vefsvæði** — safnaðu innblæstri frá nokkrum heimildum
 2. **Einbeittu þér að uppbyggingu** — lærðu mynstur í útliti og skipulagi
@@ -228,7 +228,7 @@ sem sameinar bestu þætti beggja.
 4. **Rannsakaðu leturfræði** — greindu letursamsetningar sem þér líkar
 5. **Farðu yfir leiðarkerfi** — skildu skipulag valmynda
 
-### Siðferðilegt scraping
+### Siðferðilegt scraping {#ethical-scraping}
 
 1. **Virðið robots.txt** — fylgið leiðbeiningum vefsvæðis
 2. **Ekki afrita efni** — notið greiningu eingöngu til innblásturs
@@ -236,7 +236,7 @@ sem sameinar bestu þætti beggja.
 4. **Tilgreinið heimildir** — gefið innblástursheimildum kredit
 5. **Fylgið skilmálum** — farið eftir þjónustuskilmálum vefsvæðis
 
-### Hámarka virkni tóla
+### Hámarka virkni tóla {#maximizing-tool-effectiveness}
 
 1. **Vertu nákvæm/ur** — óskaðu eftir tilteknum gerðum greiningar
 2. **Veittu samhengi** — útskýrðu tilgang vefsvæðisins þíns
@@ -244,9 +244,9 @@ sem sameinar bestu þætti beggja.
 4. **Ítraðu** — fínstilltu út frá niðurstöðum
 5. **Sameinaðu verkfæri** — notaðu mörg verkfæri fyrir heildstæða greiningu
 
-## Úrræðaleit
+## Úrræðaleit {#troubleshooting}
 
-### Ekki tekst að scrape-a vefsvæði
+### Ekki tekst að scrape-a vefsvæði {#site-wont-scrape}
 
 - Athugaðu hvort vefsvæðið sé aðgengilegt almenningi
 - Staðfestu að robots.txt leyfi scraping
@@ -254,7 +254,7 @@ sem sameinar bestu þætti beggja.
 - Athugaðu nettengingu
 - Hafðu samband við þjónustuver ef vandamálið heldur áfram
 
-### Ófullkomin greining
+### Ófullkomin greining {#incomplete-analysis}
 
 - Vefsvæði kann að hafa kvikt efni
 - JavaScript kann að vera ekki að fullu birt
@@ -262,7 +262,7 @@ sem sameinar bestu þætti beggja.
 - Reyndu að greina tilteknar síður í staðinn
 - Óskaðu eftir tilteknum gerðum greiningar
 
-### Hæg afköst
+### Hæg afköst {#slow-performance}
 
 - Stór vefsvæði taka lengri tíma að greina
 - Margar samtímis scraping-aðgerðir eru hægari
@@ -270,7 +270,7 @@ sem sameinar bestu þætti beggja.
 - Prófaðu utan álagstíma
 - Greindu minni hluta fyrst
 
-## Tengd skjölun
+## Tengd skjölun {#related-documentation}
 
 - [Uppgötvunarviðtal](./discovery-interview.md) — safnaðu hönnunarupplýsingum
 - [Hönnunarstefna](./design-direction.md) — fínpússaðu hönnunina þína

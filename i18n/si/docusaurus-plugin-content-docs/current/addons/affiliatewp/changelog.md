@@ -3,7 +3,7 @@ title: AffiliateWP වෙනස්කම් ලොගය
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP වෙනස්කම් සටහන
+# AffiliateWP වෙනස්කම් සටහන {#affiliatewp-changelog}
 
 අනුවාදය: 2.0.1 - 2025-09-28 දින නිකුත් කරන ලදී
 

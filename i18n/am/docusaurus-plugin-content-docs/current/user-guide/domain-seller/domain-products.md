@@ -3,11 +3,11 @@ title: የዶሜን ምርቶች እና ዋጋ
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# የዶሜን ምርቶች እና ዋጋ አወጣጥ
+# የዶሜን ምርቶች እና ዋጋ አወጣጥ {#domain-products-and-pricing}
 
 የዶሜን ምርቶች ዋጋ አወጣጥን፣ TLDsን፣ WHOIS ግላዊነትን እና የአቅራቢ ምርጫን የሚቆጣጠሩበት መንገድ ናቸው። እያንዳንዱ የዶሜን ምርት ተጨማሪ **Domain Settings** ታብ ያለው መደበኛ Multisite Ultimate ምርት ነው።
 
-## የዶሜን ምርት መፍጠር
+## የዶሜን ምርት መፍጠር {#creating-a-domain-product}
 
 1. ወደ **Network Admin › Ultimate Multisite › Products** ይሂዱ
 2. **Add New** ላይ ይጫኑ
@@ -17,13 +17,13 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 የዶሜን ምርቶች በምርት ዝርዝር ውስጥ በሐምራዊ **Domain** ባጅ ይታያሉ፣ እና በ**Domain Products** ታብ በመጠቀም መጣራት ይችላሉ።
 
-## የዶሜን ቅንብሮች ታብ (Domain settings tab)
+## የዶሜን ቅንብሮች ታብ (Domain settings tab) {#domain-settings-tab}
 
-### አቅራቢ (Provider)
+### አቅራቢ (Provider) {#provider}
 
 ይህ ምርት መመዝገቢያን የትኛው ሬጅስትራ (registrar) እንደሚይዝ ይምረጡ። በDomain Seller settings ውስጥ በተቀመጠው ዓለም አቀፍ **Default provider** ላይ ይሠራል።
 
-### የሚደገፉ TLDs (Supported TLDs)
+### የሚደገፉ TLDs (Supported TLDs) {#supported-tlds}
 
 **የሁሉም ዶሜን የሚሰራ ምርት (catch-all product)** ለመፍጠር ባዶ ይተው። ይህ ምርት በሌላ ምርት ያልተጣጣሙ ሁሉንም TLDs ላይ ይሠራል።
 
@@ -31,7 +31,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 **የምርት መጣራት እንዴት እንደሚሰራ:** ደንበኛ ዶሜን ሲፈልግ፣ ተጨማሪው ምርት በጣም የተለየውን የሚጠይቅ ምርት ይመርጣል። በTLD ዝርዝሩ ውስጥ `.com` ያለው ምርት ከሁሉም ዶሜን የሚሰራ ምርት ይበልጥ ቅድሚያ ይሰጠዋል። ምንም TLD-ተኮር ምርት ካልተጣጣረ፣ ሁሉም ዶሜን የሚሰራው ምርት ጥቅም ላይ ይውላል። ምንም ምርቶች ባይኖሩ፣ የዶሜን ፍለጋ አይታይም።
 
-### የዋጋ ጭማሪ አይነት (Markup type)
+### የዋጋ ጭማሪ አይነት (Markup type) {#markup-type}
 
 የችርቻሮ ዋጋዎ ከጅምላ ወጪ (wholesale cost) እንዴት እንደሚሰላ የሚቆጣጠሩ ሦስት ሁነታዎች አሉ።
 
@@ -41,11 +41,11 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 | **ቋሚ ጭማሪ (Fixed markup)** | ቋሚ የዶላር መጠን ይጨምራል። በ10 ዶላር ዶሜን ላይ 5 ዶላር ጭማሪ 15 ዶላር ይሰጣል። |
 | **ቋሚ ዋጋ (Fixed price)** | የጅምላ ወጪን ሙሉ በሙሉ ችላ ይላል። ሁልጊዜ የሚያስገቡትን መጠን ይይዛል። |
 
-### መግቢያ ዋጋ (Introductory pricing)
+### መግቢያ ዋጋ (Introductory pricing) {#introductory-pricing}
 
 የቅናሽ የመጀመሪያ ዓመት ዋጋ ለመስጠት ያንቁ። ከተለመደው **Renewal price** (ከዓመት 2 ወዲያ) ጋር የተለየ **Introductory price** (የዓመት 1 ዋጋ) ያዘጋጁ። ደንበኛው በቼክአውት ወቅት ሁለቱንም ዋጋዎች እንዲያየው ያደርጋል፣ ስለዚህ በታደሰበት ጊዜ ምን እንደሚጠብቅ ያውቃል።
 
-### WHOIS ግላዊነት (WHOIS privacy)
+### WHOIS ግላዊነት (WHOIS privacy) {#whois-privacy}
 
 በዚህ ምርት የተመዘገቡ ዶሜኖች WHOIS ግላዊነት ጥበቃ የሚሰጥበትን ሁኔታ ይቆጣጠራል።
 
@@ -59,7 +59,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## TLD ማስመጣት እና ማመሳሰል (TLD import and sync)
+## TLD ማስመጣት እና ማመሳሰል (TLD import and sync) {#tld-import-and-sync}
 
 የዶሜን ምርቶች ከተገናኘው አቅራቢ የሚገኝ የእውነተኛ ጊዜ የጅምላ ዋጋ ያሳያሉ። ይህ እንዲሰራ፣ TLDs መቅዳት አለባቸው።
 
@@ -70,7 +70,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## በራስ-ሰር እድሳት (Auto-renewal)
+## በራስ-ሰር እድሳት (Auto-renewal) {#auto-renewal}
 
 የዶሜን እድሳት ከደንበኛው የአባልነት ሁኔታ ጋር የተያያዘ ነው፡
 
@@ -90,7 +90,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## አስተዳሚ፡ በእጅ የዶሜን ምዝገባ (Admin: Manual domain registration)
+## አስተዳሚ፡ በእጅ የዶሜን ምዝገባ (Admin: Manual domain registration) {#admin-manual-domain-registration}
 
 ደንበኛ በቼክአውት ሳይሄድ ዶሜን ለመመዝገብ፡
 

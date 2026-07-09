@@ -4,11 +4,11 @@ title: Isihlungi - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Isihlungi: wu_apc_process_page_content
+# Isihlungi: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Vumela abathuthukisi ukuthi bashintshe okuqukethwe kokugcina
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Vumela abathuthukisi ukuthi bashintshe okuqukethwe kokugcina
 | $to_replace | `array` | Array equkethe ama-placeholder agciniwe. |
 | $placeholder_count | `int` | Inani lama-placeholder atholakele. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 1.4.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) emgqeni 46
 
 
-## Kubuyisa
+## Kubuyisa {#returns}
 Okuqukethwe ngemva kokulungiswa.

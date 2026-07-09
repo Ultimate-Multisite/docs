@@ -3,11 +3,11 @@ title: پلگ اِن انتظام جون صلاحيتون
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# پلگ ان انتظام جون صلاحيتون
+# پلگ ان انتظام جون صلاحيتون {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 ۾ **پلگ ان انتظام جون 7 صلاحيتون** شامل آهن، جن کي AI مددگار ڳالهه ٻولهه دوران استعمال ڪري سگهي ٿو. اهي صلاحيتون [پلگ ان بلڊر ۽ سندباڪس سسٽم](../../user-guide/administration/plugin-builder-and-sandbox) ذريعي نصب ٿيل WordPress پلگ انز تي پروگرامي ڪنٽرول مهيا ڪن ٿيون.
 
-## صلاحيتن جو جائزو
+## صلاحيتن جو جائزو {#abilities-overview}
 
 | صلاحيت | Slug | وضاحت |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 ۾ **پلگ ان انتظام جون 7 صلاحيتون**
 | پلگ ان نصب ڪريو | `install_plugin` | سندباڪس ٿيل پلگ ان کي لائيو WordPress پلگ ان ڊائريڪٽري ۾ ڊپلائي ڪري ٿو. |
 | پلگ ان فعال ڪريو | `activate_plugin` | wp-env سندباڪس ماحول ۾ سندباڪس ٿيل پلگ ان کي فعال ڪري ٿو. |
 
-## پلگ ان انسٽالر API
+## پلگ ان انسٽالر API {#plugin-installer-api}
 
 پلگ ان انسٽالر پلگ انز کي ڊپلائي يا هٽائڻ وقت فائل سسٽم آپريشنز سنڀالي ٿو. اهم رويا:
 
@@ -28,7 +28,7 @@ Gratis AI Agent v1.5.0 ۾ **پلگ ان انتظام جون 7 صلاحيتون**
 - **اپڊيٽ**: موجوده پلگ ان فائلن کي مٽائي ٿو. جزوي-حالت وارن نقصن کان بچڻ لاءِ لکڻ کان اڳ پلگ ان کي غيرفعال ڪري ٿو.
 - **slug ذريعي ختم ڪرڻ**: slug ذريعي پلگ ان ڊائريڪٽري ڳولي ٿو، سڀني سائيٽن تي غيرفعال ڪري ٿو، پوءِ ڊائريڪٽري هٽائي ٿو.
 
-### ڪسٽم انسٽال هينڊلر رجسٽر ڪرڻ
+### ڪسٽم انسٽال هينڊلر رجسٽر ڪرڻ {#registering-a-custom-install-handler}
 
 توهان `gratis_ai_plugin_installer_before_install` ۽ `gratis_ai_plugin_installer_after_install` actions استعمال ڪندي انسٽال lifecycle ۾ hook ڪري سگهو ٿا:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## ايڪو سسٽم رجسٽري
+## ايڪو سسٽم رجسٽري {#ecosystem-registry}
 
 صلاحيتون **پلگ ان ايڪو سسٽم رجسٽري** ذريعي رجسٽر ڪيون وينديون آهن. رجسٽري صلاحيتن جي slugs کي سندن handler classes سان map ڪري ٿي ۽ انهن کي AI agent جي tool dispatcher لاءِ ظاهر ڪري ٿي.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner انٽيگريشن
+## HookScanner انٽيگريشن {#hookscanner-integration}
 
 `create_plugin` ۽ `update_plugin` صلاحيتون نئين ٺهيل code تي پاڻمرادو **HookScanner** هلائينديون آهن. HookScanner پلگ ان طرفان رجسٽر ڪيل WordPress action ۽ filter hooks جي فهرست واپس ڪري ٿو.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner پاڻمرادو `vendor/` ۽ `node_modules/` ڊائريڪٽريون ڇڏي ڏئي ٿو.
 
-## اسنڪرونس Job آرڪيٽيڪچر
+## اسنڪرونس Job آرڪيٽيڪچر {#async-job-architecture}
 
 ڊگهي وقت وٺندڙ پلگ ان آپريشنز (generate، install) کي لائيو progress tracking سان **async jobs** طور dispatch ڪيو ويندو آهي. AI chat interface progress لاءِ poll ڪري ٿو ۽ استعمال ڪندڙ ڏانهن status updates stream ڪري ٿو:
 

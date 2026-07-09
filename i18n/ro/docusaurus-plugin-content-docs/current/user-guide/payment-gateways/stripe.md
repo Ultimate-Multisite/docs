@@ -3,19 +3,19 @@ title: Configurarea Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Configurarea gateway-ului Stripe (v2)
+# Configurarea gateway-ului Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
 Poți activa până la patru metode de plată pe pagina de setări pentru plăți: Stripe, Stripe Checkout, PayPal și Manual. În acest articol, vom vedea cum să integrezi **Stripe**.
 
-## Activarea Stripe
+## Activarea Stripe {#enabling-stripe}
 
 Pentru a activa Stripe ca gateway de plată disponibil în rețeaua ta, mergi la **Ultimate Multisite > Settings > Payments** și bifează comutatorul de lângă **Stripe** sau **Stripe Checkout** în secțiunea Active Payment Gateways.
 
 ![Activarea Stripe în gateway-urile de plată active](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Această metodă va afișa un câmp pentru introducerea numărului cardului de credit în timpul finalizării comenzii.
 
@@ -47,7 +47,7 @@ Copiază valoarea din **Publishable key** și **Secret key**, din coloana **Toke
 
 ![Lipirea cheilor Stripe în setările Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Configurarea Webhook-ului Stripe
+## Configurarea Webhook-ului Stripe {#setting-up-stripe-webhook}
 
 Stripe trimite evenimente webhook care notifică Ultimate Multisite de fiecare dată când se întâmplă un eveniment în **contul tău Stripe**.
 

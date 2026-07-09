@@ -3,15 +3,15 @@ title: 'Lekcija 11: Pronalaženje kupaca'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lekcija 11: Pronalaženje kupaca
+# Lekcija 11: Pronalaženje kupaca {#lesson-11-finding-customers}
 
 Sjajna platforma bez kupaca samo je hobi. Ova lekcija obuhvaća kako steći kupce u nišnoj vertikali -- strategije koje funkcioniraju posebno zato što ste usmjereni na jednu industriju.
 
-## Gdje smo stali
+## Gdje smo stali {#where-we-left-off}
 
 FitSite je uživo. Sada trebamo da ga vlasnici fitness studija pronađu i registriraju se.
 
-## Zašto je akvizicija u niši drugačija
+## Zašto je akvizicija u niši drugačija {#why-niche-acquisition-is-different}
 
 Kada prodajete svima, natječete se za pažnju na bučnom tržištu. Kada prodajete niši, imate prednosti:
 
@@ -19,17 +19,17 @@ Kada prodajete svima, natječete se za pažnju na bučnom tržištu. Kada prodaj
 - **Vaša poruka odmah odjekuje** -- "web stranice za fitness studije" zaustavljaju vlasnika teretane usred skrolanja
 - **Preporuke se umnažaju** -- vlasnici fitness studija poznaju druge vlasnike fitness studija
 
-## Kanal 1: Izravan kontakt
+## Kanal 1: Izravan kontakt {#channel-1-direct-outreach}
 
 Najbrži put do vaših prvih kupaca jest izravan, osoban kontakt.
 
-### Pronađite potencijalne kupce
+### Pronađite potencijalne kupce {#find-prospects}
 
 - Pretražite Google Maps za fitness studije, teretane i osobne trenere u svom području
 - Posjetite njihove trenutačne web stranice (ili zabilježite da je nemaju)
 - Prikupite kontaktne podatke s njihovih Google Business profila ili društvenih mreža
 
-### Procijenite njihovu trenutačnu situaciju
+### Procijenite njihovu trenutačnu situaciju {#evaluate-their-current-situation}
 
 Za svakog potencijalnog kupca zabilježite:
 
@@ -37,7 +37,7 @@ Za svakog potencijalnog kupca zabilježite:
 - **Loša web stranica**: Snažan potencijalni kupac -- pokažite im kako izgleda bolja opcija
 - **Dobra web stranica**: Slab potencijalni kupac -- već su riješili ovaj problem
 
-### Uspostavite kontakt
+### Uspostavite kontakt {#make-contact}
 
 Pošaljite personalizirani email ili poruku:
 
@@ -48,7 +48,7 @@ Pošaljite personalizirani email ili poruku:
 
 Nemojte slati masovne emailove. Personalizirani kontakt s 20 dobro istraženih potencijalnih kupaca nadmašit će generičku poruku poslanu na 2.000 adresa.
 
-## Kanal 2: Nišne zajednice
+## Kanal 2: Nišne zajednice {#channel-2-niche-communities}
 
 Vlasnici fitness studija okupljaju se na određenim mjestima online:
 
@@ -57,7 +57,7 @@ Vlasnici fitness studija okupljaju se na određenim mjestima online:
 - **Industrijski forumi** i ploče za raspravu
 - **LinkedIn grupe** za fitness profesionalce
 
-### Kako sudjelovati
+### Kako sudjelovati {#how-to-participate}
 
 Nemojte se pridružiti i odmah predstavljati svoj proizvod. Umjesto toga:
 
@@ -66,7 +66,7 @@ Nemojte se pridružiti i odmah predstavljati svoj proizvod. Umjesto toga:
 3. **Podijelite kad je relevantno** -- kada netko pita o web stranicama, prirodno podijelite svoju platformu
 4. **Stvorite koristan sadržaj** -- pišite objave o tome "što čini sjajnu web stranicu fitness studija" koje prirodno vode do vaše platforme
 
-## Kanal 3: Content marketing
+## Kanal 3: Content marketing {#channel-3-content-marketing}
 
 Stvorite sadržaj koji vlasnici fitness studija pretražuju:
 
@@ -77,7 +77,7 @@ Stvorite sadržaj koji vlasnici fitness studija pretražuju:
 
 Objavite to na svom FitSite marketinškom blogu. S vremenom se taj sadržaj rangira u tražilicama i donosi organski promet od ljudi koji aktivno traže ono što nudite.
 
-## Kanal 4: Partnerstva
+## Kanal 4: Partnerstva {#channel-4-partnerships}
 
 Udružite se s tvrtkama koje već opslužuju fitness studije:
 
@@ -88,7 +88,7 @@ Udružite se s tvrtkama koje već opslužuju fitness studije:
 
 Ponudite provizije za preporuke ili uzajamnu promociju. [AffiliateWP addon](/addons/affiliatewp) može vam pomoći postaviti formalni program preporuka.
 
-## Kanal 5: Industrijski događaji
+## Kanal 5: Industrijski događaji {#channel-5-industry-events}
 
 Događaji fitness industrije stavljaju vas pred stotine potencijalnih kupaca:
 
@@ -99,7 +99,7 @@ Događaji fitness industrije stavljaju vas pred stotine potencijalnih kupaca:
 
 Ne treba vam velik budžet. Čak i sudjelovanje kao polaznik i razgovori o tome što radite mogu generirati potencijalne kupce.
 
-## Kanal 6: Ogledne stranice
+## Kanal 6: Ogledne stranice {#channel-6-showcase-sites}
 
 Vaš najbolji marketing su stranice vaših postojećih kupaca. Uz dopuštenje:
 
@@ -108,7 +108,7 @@ Vaš najbolji marketing su stranice vaših postojećih kupaca. Uz dopuštenje:
 - Zatražite izjave od zadovoljnih kupaca
 - Potaknite kupce da spomenu FitSite kada ih pitaju za njihovu web stranicu
 
-## Postavljanje programa preporuka
+## Postavljanje programa preporuka {#setting-up-a-referral-program}
 
 Usmena predaja vaš je najmoćniji kanal u niši. Formalizirajte je:
 
@@ -116,7 +116,7 @@ Usmena predaja vaš je najmoćniji kanal u niši. Formalizirajte je:
 2. Ponudite postojećim kupcima nagradu za preporuke (jedan mjesec besplatno, kredit na računu itd.)
 3. Olakšajte im -- dajte im poveznicu za preporuku i jednostavnu poruku koju mogu proslijediti
 
-## Praćenje onoga što funkcionira
+## Praćenje onoga što funkcionira {#tracking-what-works}
 
 Za svaki kanal pratite:
 
@@ -126,7 +126,7 @@ Za svaki kanal pratite:
 
 Uložite više u kanale koji funkcioniraju. Ukinite kanale koji ne funkcioniraju.
 
-## Realistična očekivanja
+## Realistična očekivanja {#realistic-expectations}
 
 - **Mjesec 1-3**: 5-20 kupaca, uglavnom iz izravnog kontakta i zajednica
 - **Mjesec 4-6**: 20-50 kupaca, content marketing počinje doprinositi
@@ -134,7 +134,7 @@ Uložite više u kanale koji funkcioniraju. Ukinite kanale koji ne funkcioniraju
 
 Ovi se brojevi razlikuju, ali obrazac je dosljedan: rani kupci dolaze iz izravnog truda, kasniji kupci dolaze iz kumulativnih učinaka sadržaja, preporuka i reputacije.
 
-## Što smo izgradili u ovoj lekciji
+## Što smo izgradili u ovoj lekciji {#what-we-built-this-lesson}
 
 - **Šest kanala akvizicije** prilagođenih fitness niši
 - **Proces izravnog kontaktiranja** za pridobivanje prvih kupaca

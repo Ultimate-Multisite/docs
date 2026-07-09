@@ -3,11 +3,11 @@ title: Tilvísun fyrir stillingar
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Stillingatilvísun
+# Stillingatilvísun {#settings-reference}
 
 Þessi síða heldur utan um stillingar sem hafa áhrif á daglega stjórnun og nýlegar breytingar á hegðun í Ultimate Multisite.
 
-## Aðrir valkostir
+## Aðrir valkostir {#other-options}
 
 Svæðið **Aðrir valkostir** birtist undir **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Svæðið **Aðrir valkostir** birtist undir **Ultimate Multisite > Settings > L
 |---|---|
 | **Enable Jumper** | Sýnir Jumper-flýtileiðsagnartólið á stjórnunarsvæðinu. Notaðu það til að hoppa beint á Ultimate Multisite-skjái, nethluti og studda stjórnunaráfangastaði. Slökktu á því ef þú vilt ekki hafa þessa flýtileið sýnilega. |
 
-## Villutilkynningar og fjarmælingar
+## Villutilkynningar og fjarmælingar {#error-reporting-and-telemetry}
 
 Fyrri opt-in stilling fyrir villutilkynningar hefur verið fjarlægð af stillingasíðunni. Nafnlaus fjarmæling er óvirk og enginn UI-rofi er til að virkja hana.
 
 Ef þú viðheldur innri verklagsgögnum eða skjámyndum fyrir stillingasíðuna skaltu fjarlægja tilvísanir í gamla opt-in reitinn fyrir villutilkynningar svo stjórnendur leiti ekki að stillingu sem er ekki lengur til staðar.
 
-## Import/Export stillingar
+## Import/Export stillingar {#importexport-settings}
 
 Stillingaflipinn **Import/Export** lýsir hvaða stillingum hann stýrir og tengir beint í **Ultimate Multisite > Site Export** fyrir vef- og netasöfn. Notaðu stillingaflipann fyrir import/export stillingar, notaðu **Tools > Export & Import** fyrir export/import vinnuflæði eins vefs, og notaðu Site Export tólið þegar þú þarft heilt Network Export safn.
 
-## Viðvörun um stöðu Domain Seller HostAfrica
+## Viðvörun um stöðu Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Þegar Domain Seller viðbótin er tengd við HostAfrica sjá netstjórnendur nú lokanlega viðvörun um lága stöðu þegar staða endursölureikningsins er of lág fyrir áreiðanlega skráningu léna eða vinnslu endurnýjana.
 
 Líttu á þessa tilkynningu sem rekstrarviðvörun: bættu inneign á HostAfrica endursölustöðuna áður en þú samþykkir fleiri greiddar lénaskráningar, farðu síðan aftur í Domain Seller stillingarnar eða lénavöktunarskjáinn til að staðfesta að skráningar og endurnýjanir geti haldið áfram eðlilega.
 
-## Stillingar fyrir AI provider connector
+## Stillingar fyrir AI provider connector {#ai-provider-connector-settings}
 
 Stillingar fyrir AI provider connector birta nú aðeins studdu OAuth-reikningasöfnin:
 

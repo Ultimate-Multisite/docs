@@ -3,7 +3,7 @@ title: Obrasci za plaćanje
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Obrasci za naplatu
+# Obrasci za naplatu {#checkout-forms}
 
 Obrasci za naplatu su jednostavan i fleksibilan način za eksperimentisanje s različitim pristupima kada pokušavate pretvoriti nove kupce.
 
@@ -36,13 +36,13 @@ Alternativno, možete urediti ili duplicirati obrasce koje već imate klikom na 
 
 ![Radnje pri prelasku mišem preko obrasca za naplatu](/img/config/checkout-form-hover-actions.png)
 
-#### Pregled editora obrasca za naplatu
+#### Pregled editora obrasca za naplatu {#checkout-form-editor-overview}
 
 Editor obrasca za naplatu pruža sveobuhvatno sučelje za izradu vaših registracijskih obrazaca. Evo pregleda rasporeda editora:
 
 ![Pregled editora obrasca za naplatu](/img/config/checkout-form-editor-overview.png)
 
-### Uređivanje obrasca za naplatu
+### Uređivanje obrasca za naplatu {#editing-a-checkout-form}
 
 Možete kreirati obrasce za naplatu za različite svrhe. U ovom primjeru radit ćemo na registracijskom obrascu.
 
@@ -112,7 +112,7 @@ Da dobijete kratki kod svog obrasca, kliknite Generiši kratki kod i kopirajte r
 
 ![Dugme Sačuvaj s kratkim kodom](/img/config/checkout-form-save.png)
 
-### Polje Tabela cijena
+### Polje Tabela cijena {#the-pricing-table-field}
 
 Polje **Tabela cijena** prikazuje vaše proizvode na obrascu za naplatu kako bi kupci mogli odabrati plan. Kada uređujete ovo polje, možete konfigurisati nekoliko opcija:
 
@@ -130,17 +130,17 @@ Evo kako se tabela cijena pojavljuje na frontend registracijskom obrascu:
 
 Ako dodate proizvod u Tabelu cijena prije nego što obrazac uključuje polja potrebna za dovršavanje checkout toka tog proizvoda, uređivač sada prikazuje upozorenje. Iskoristite upozorenje da dodate nedostajuće obavezno polje prije objavljivanja ili spremanja izmjena za aktivni obrazac za registraciju.
 
-### Dodavanje prekidača za odabir perioda
+### Dodavanje prekidača za odabir perioda {#adding-a-period-selection-toggle}
 
 Ako ste konfigurirali [Varijacije cijena](creating-your-first-subscription-product#price-variations) na svojim proizvodima (npr. mjesečne i godišnje cijene), možete dodati polje **Odabir perioda** u svoj checkout obrazac. Ovo polje prikazuje prekidač koji kupcima omogućava prebacivanje između obračunskih perioda, a tabela cijena se dinamički ažurira u stvarnom vremenu.
 
-#### Korak 1: Postavite varijacije cijena na svojim proizvodima
+#### Korak 1: Postavite varijacije cijena na svojim proizvodima {#step-1-set-up-price-variations-on-your-products}
 
 Prije dodavanja polja Odabir perioda, provjerite jesu li vaši proizvodi konfigurirani s varijacijama cijena. Idite na **Ultimate Multisite > Proizvodi**, uredite proizvod i otvorite karticu **Varijacije cijena** da dodate alternativne obračunske periode (npr. godišnje po sniženoj cijeni).
 
 ![Kartica Varijacije cijena na proizvodu](/img/config/product-price-variations-tab.png)
 
-#### Korak 2: Dodajte polje Odabir perioda u svoj checkout obrazac
+#### Korak 2: Dodajte polje Odabir perioda u svoj checkout obrazac {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Idite na **Ultimate Multisite > Checkout obrasci** i uredite svoj checkout obrazac.
 
@@ -163,13 +163,13 @@ Prije dodavanja polja Odabir perioda, provjerite jesu li vaši proizvodi konfigu
 
 7. Kliknite **Spremi polje**.
 
-#### Korak 3: Postavite polje iznad tabele cijena
+#### Korak 3: Postavite polje iznad tabele cijena {#step-3-position-the-field-above-the-pricing-table}
 
 Za najbolje korisničko iskustvo, provjerite da se polje Odabir perioda pojavljuje **prije** polja Tabela cijena u vašem checkout koraku. Možete prevući polja da promijenite njihov redoslijed u uređivaču checkout obrasca. Na taj način kupci prvo biraju obračunski period, a zatim vide cijene za taj period.
 
 ![Uređivač checkout obrasca koji prikazuje redoslijed polja](/img/config/checkout-form-editor-with-fields.png)
 
-#### Kako radi na frontendu
+#### Kako radi na frontendu {#how-it-works-on-the-frontend}
 
 Nakon konfiguriranja, kupci koji posjete vašu stranicu za registraciju vidjet će selektor perioda iznad tabele cijena. Kada kliknu drugi obračunski period:
 
@@ -177,7 +177,7 @@ Nakon konfiguriranja, kupci koji posjete vašu stranicu za registraciju vidjet �
   * Ako je **Prisili različita trajanja** onemogućeno na polju Tabela cijena, proizvodi bez varijacije cijene za odabrani period bit će sakriveni.
   * Ako je **Prisili različita trajanja** omogućeno, svi proizvodi ostaju vidljivi čak i ako nemaju varijaciju za odabrani period (prikazat će svoju zadanu cijenu).
 
-#### Unaprijed odabiranje obračunskog perioda putem URL-a
+#### Unaprijed odabiranje obračunskog perioda putem URL-a {#pre-selecting-a-billing-period-via-url}
 
 Također možete unaprijed odabrati proizvod i obračunski period putem URL-a. Ultimate Multisite podržava ove URL obrasce:
 
@@ -185,11 +185,11 @@ Također možete unaprijed odabrati proizvod i obračunski period putem URL-a. U
   * `/register/premium/12` — Unaprijed odabire proizvod i trajanje od 12 mjeseci
   * `/register/premium/1/year` — Unaprijed odabire proizvod s trajanjem od 1 godine
 
-### Polje za odabir predloška
+### Polje za odabir predloška {#the-template-selection-field}
 
 Polje **Odabir predloška** omogućava kupcima da odaberu predložak sitea tokom checkouta. Sada je zadano uključeno u predloške checkout obrasca s **jednim korakom** i **više koraka** dodane u Ultimate Multisite v2.6.1.
 
-#### Ručno dodavanje polja
+#### Ručno dodavanje polja {#adding-the-field-manually}
 
 Ako radite s obrascem koji je kreiran prije v2.6.1 ili je započet od praznog predloška:
 
@@ -200,11 +200,11 @@ Ako radite s obrascem koji je kreiran prije v2.6.1 ili je započet od praznog pr
    - **Oznaka** — Naslov koji kupci vide iznad mreže predložaka (npr. "Odaberite predložak sitea").
    - **Obavezno** — Da li kupci moraju odabrati predložak prije nastavka.
 
-#### Kako radi
+#### Kako radi {#how-it-works}
 
 Kada kupac odabere predložak tokom checkouta, Ultimate Multisite ga koristi pri obezbjeđivanju njihovog novog sitea. Prikazani predlošci dolaze s vaše liste **Predlošci siteova** (**Ultimate Multisite > Predlošci siteova**). Ovdje se pojavljuju samo predlošci označeni kao dostupni kupcima.
 
-### Osnovne domene checkout obrazaca
+### Osnovne domene checkout obrazaca {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 tretira domene konfigurirane na poljima **URL sitea** checkout obrasca kao osnovne domene mreže. Koristite postavke dostupnih domena tog polja kada želite da kupci kreiraju siteove pod jednom ili više zajedničkih domena za registraciju, kao što su `example.com` i `sites.example.com`.
 
@@ -212,6 +212,6 @@ Dijeljene osnovne domene checkout-form ne tretiraju se kao prilagođena mapiranj
 
 Zadržite prilagođene domene za mapirane hostove po korisniku, kao što je `customer-example.com`. Zadržite osnovne domene checkout-form za dijeljene registracijske hostove koje mnoge lokacije mogu koristiti.
 
-#### Uklanjanje polja
+#### Uklanjanje polja {#removing-the-field}
 
 Ako ne nudite šablone lokacija, uklonite polje Template Selection iz svog obrasca. Korisnici će tada dobiti bilo koji zadani šablon konfigurisan pod **Ultimate Multisite > Settings > Site Templates**.

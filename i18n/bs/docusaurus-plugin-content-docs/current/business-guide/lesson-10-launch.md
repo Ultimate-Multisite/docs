@@ -3,19 +3,19 @@ title: 'Lekcija 10: Dan lansiranja'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lekcija 10: Dan lansiranja
+# Lekcija 10: Dan lansiranja {#lesson-10-launch-day}
 
 Sve je napravljeno. Prije nego što otvorite vrata, ova lekcija vodi kroz listu provjera prije lansiranja kako bismo bili sigurni da ništa nije pokvareno, nedostaje ili je neugodno.
 
-## Gdje smo stali
+## Gdje smo stali {#where-we-left-off}
 
 FitSite ima predloške, planove, checkout, branding, onboarding i određivanje cijena sve konfigurirano. Sada provjeravamo da li sve radi i idemo u rad.
 
-## Lista provjera prije lansiranja
+## Lista provjera prije lansiranja {#pre-launch-checklist}
 
 Prođite kroz svaki stavku. Ne preskočite ništa.
 
-### Infrastruktura platforme
+### Infrastruktura platforme {#platform-infrastructure}
 
 - [ ] Hosting je stabilan i dobro radi pod opterećenjem
 - [ ] Wildcard SSL je aktivan i svi poddomeni se serviraju preko HTTPS-a
@@ -23,7 +23,7 @@ Prođite kroz svaki stavku. Ne preskočite ništa.
 - [ ] Backup-i su konfigurirani i testirani (restore barem jedan radi provjere)
 - [ ] Monitoring je na mjestu – znati ćete ako platforma padne
 
-### Predlošci (Templates)
+### Predlošci (Templates) {#templates}
 
 - [ ] Sve tri predloška se ispravno učitavaju na novim sajtovima
 - [ ] Placeholder sadržaj je koristan i bez pravopisnih grešaka
@@ -32,7 +32,7 @@ Prođite kroz svaki stavku. Ne preskočite ništa.
 - [ ] Brzina učitavanja stranice je prihvatljiva (testirajte alatima poput GTmetrix ili PageSpeed Insights)
 - [ ] Nema pokvarenih linkova ili nedostajućih resursa na bilo kojem predlošku
 
-### Planovi i proizvodi
+### Planovi i proizvodi {#plans-and-products}
 
 - [ ] Svi tri plana su aktivni i vidljivi
 - [ ] Opisi planova su točni i specifični za nišu
@@ -42,7 +42,7 @@ Prođite kroz svaki stavku. Ne preskočite ništa.
 - [ ] Dodatne stavke (Order bumps) se pojavljuju ispravno tokom checkouta
 - [ ] Ograničenja plugin-a i teme su pravilno nametnuta po planu
 
-### Tok checkouta (Checkout Flow)
+### Tok checkouta (Checkout Flow) {#checkout-flow}
 
 - [ ] Obavite pun test registracije na svakom planu (koristite test način plaćanja)
 - [ ] Odabir predloška prikazuje ispravne predloške po planu
@@ -52,7 +52,7 @@ Prođite kroz svaki stavku. Ne preskočite ništa.
 - [ ] Kupac može odmah ući na svoj novi sajt
 - [ ] Popusti se ispravno obrađuju
 
-### Branding
+### Branding {#branding}
 
 - [ ] Stranica za prijavu prikazuje FitSite branding
 - [ ] Admin dashboard prikazuje FitSite branding
@@ -60,7 +60,7 @@ Prođite kroz svaki stavku. Ne preskočite ništa.
 - [ ] Fakture se ispravno prikazuju sa vašim poslovnim detaljima
 - [ ] Marketing sajt je aktivan i linkuje na formular za checkout
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Widget "Quick Start" se pojavljuje na dashboardu novih kupaca
 - [ ] Sve Quick Start veze vode na ispravne stranice
@@ -68,7 +68,7 @@ Prođite kroz svaki stavku. Ne preskočite ništa.
 - [ ] Članci u bazi znanja su objavljeni i dostupni
 - [ ] Stranica računa prikazuje ispravne informacije o planu i opcije nadogradnje
 
-### Pravno i poslovanje
+### Pravno i poslovanje {#legal-and-business}
 
 - [ ] Uslovi korištenja su objavljeni i linkovani sa checkouta
 - [ ] Politika privatnosti je objavljena i dostupna
@@ -77,11 +77,11 @@ Prođite kroz svaki stavku. Ne preskočite ništa.
 - [ ] Payment gateway je u live modu (ne u test modu)
 - [ ] Konfiguracija poreza je ispravna za vašu jurisdikciju
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Razmislite o lansiranju u dvije faze:
 
-### Faza 1: Soft Launch
+### Faza 1: Soft Launch {#phase-1-soft-launch}
 
 Pozovite 5-10 vlasnika fitness studija da se registruju prije javnog lansiranja. To su vaši beta kupci. Ponudite im značajan popust (50% doživotno, ili 3 mjeseca besplatno) u zamjenu za:
 
@@ -91,7 +91,7 @@ Pozovite 5-10 vlasnika fitness studija da se registruju prije javnog lansiranja.
 
 Ovo vam daje stvarni povratak kupaca i live sajtove za pokazivanje prije nego što se otvorite javnosti.
 
-### Faza 2: Public Launch
+### Faza 2: Public Launch {#phase-2-public-launch}
 
 Nakon što je povratak iz soft launcha ugrađen:
 
@@ -100,7 +100,7 @@ Nakon što je povratak iz soft launcha ugrađen:
 - Počnite s akvizicijom kupaca (Lekcija 11)
 - Obavijestite na relevantnim kanalima fitness industrije
 
-## Akcije dana lansiranja
+## Akcije dana lansiranja {#launch-day-actions}
 
 Dan kada idete u javnost:
 
@@ -110,7 +110,7 @@ Dan kada idete u javnost:
 4. **Budite dostupni** – vaši prvi pravi kupci možda će vam trebati pomoć, a brzi odgovor gradi povjerenje
 5. **Proslavite kratko** – a zatim se vratite poslu
 
-## Što može ići po zlu
+## Što može ići po zlu {#what-can-go-wrong}
 
 Budite spremni za:
 
@@ -120,7 +120,7 @@ Budite spremni za:
 - **Performanse pod opterećenjem**: Ako dođe do skoka prometa, znate kako skalirati hosting
 - **Konfuziju kupaca**: Imate li spremnu bazu znanja i kanale podrške
 
-## FitSite Network do sada
+## FitSite Network do sada {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Što smo napravili u ovoj lekciji
+## Što smo napravili u ovoj lekciji {#what-we-built-this-lesson}
 
 - **Sveobuhvatna lista provjera prije lansiranja** koja pokriva infrastrukturu, sadržaj, plaćanja i pravne stvari
 - **Strategija soft launcha** kako biste dobili stvarni povratak prije javnosti

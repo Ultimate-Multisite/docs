@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector WebLLM Değişiklik Günlüğü
+# Ultimate AI Connector WebLLM Değişiklik Günlüğü {#ultimate-ai-connector-for-webllm-changelog}
 
-## Version 1.1.0 — Yayınlanma Tarihi: 2026-04-09
+## Version 1.1.0 — Yayınlanma Tarihi: 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Yeni: Yönetici çubuğu durum göstergeli yüzen sohbet widget'ı — Giriş yapmış herhangi bir kullanıcı, tarayıcı tabanlı LLM'e doğrudan ön uçtan komut verebilir.
 * Yeni: SharedWorker çalışma zamanı — MLC motoru artık bir SharedWorker içinde çalıştığı için, birden fazla sekme GPU oturumu için birbirleriyle mücadele etmek yerine tek bir oturumu paylaşır.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Düzeltme: WebLLM'i wpai_preferred_text_models filtresine bağlayarak, bir model yapılandırıldığında Yapay Zeka Deneyleri özelliğinin tarayıcı motoruna yönlendirilmesini sağlama.
 * Geliştirildi: Uçtan uca testler sırasında ortaya çıkan önbellek bozan (cache-busting), içerik normalleştirme ve donanım referansı düzeltmeleri.
 
-## Version 1.0.0 — İlk Yayın
+## Version 1.0.0 — İlk Yayın {#version-100--initial-release}

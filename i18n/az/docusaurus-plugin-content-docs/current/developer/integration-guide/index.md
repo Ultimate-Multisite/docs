@@ -3,13 +3,13 @@ title: İnteqrasiya bələdçisi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# İnteqrasiya Bələdçisi
+# İnteqrasiya Bələdçisi {#integration-guide}
 
 Bu bələdçi Ultimate Multisite ilə ümumi inteqrasiya nümunələrini əhatə edir, o cümlədən xarici xidmətlərə qoşulma, fərdi ödəniş gateway-lərinin qurulması və webhook-ların idarə edilməsi.
 
 İzolyasiya olunmuş tenant infrastrukturu üçün suveren tenant bootstrap-u, miqrasiya yoxlaması, SSO və söndürmə üzrə təlimatlar üçün [Multi-Tenancy İnteqrasiyası](./multi-tenancy) bölməsinə baxın.
 
-## CRM İnteqrasiyası
+## CRM İnteqrasiyası {#crm-integration}
 
 Yeni müştərilər qeydiyyatdan keçdikdə müştəri məlumatlarını CRM-inizlə sinxronlaşdırın:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics İnteqrasiyası
+## Analytics İnteqrasiyası {#analytics-integration}
 
 Müştəri həyat dövrü boyunca əsas biznes hadisələrini izləyin:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Növbəti Addımlar
+## Növbəti Addımlar {#next-steps}
 
 - [Fərdi Gateway İnkişafı](./custom-gateway) — Öz ödəniş gateway-inizi yaradın
 - [Webhook İdarəetməsi](./webhooks) — Fərdi webhook endpoint-ləri yaradın

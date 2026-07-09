@@ -3,7 +3,7 @@ title: PayPal iestatīšana
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal integrācijas iestatīšana (v2)
+# PayPal integrācijas iestatīšana (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**SVARĪTĀ NOTE: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
@@ -13,13 +13,13 @@ Līdzīgi kā Stripe, PayPal ir ļoti izmantots tiešsaistes maksājumiem, īpa�
 
 Piezīmi: Jums nepieciešams būt ar **PayPal Business kontu**, lai saņemtu API krediti, kas nepieciešami šai integrācijai.
 
-## PayPal aktivizēšana savā tīklā
+## PayPal aktivizēšana savā tīklā {#enabling-paypal-on-your-network}
 
 Lai activētu PayPal kā pieejamu maksājuma metodu savā tīklā, pārvietojies uz **Ultimate Multisite > Settings > Payments** (Iestatījumi > Maksājumi) tablu un atzīmējiet kops ziņojumu blakus PayPal.
 
 ![PayPal aktivizēšana aktīvajos maksājuma portālā](/img/config/settings-payment-gateways.png)
 
-## Guida iestatīšanas wizardā izmantošanu
+## Guida iestatīšanas wizardā izmantošanu {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 pievieno guidu PayPal iestatīšanas wizardu maksājuma portāla iestatījumiem. Pēc tam, kad aktivizēties ar PayPal, izmantojiet wizardi **Ultimate Multisite > Settings > Payments** (Iestatījumi > Maksājumi), lai izvēlotu, kā vēlaties savienot portālu un apstiprinātu, kas vēl ir nepieciešams krediti pirms saglabāšanas.
 
@@ -30,7 +30,7 @@ Wizardis atbalsta divas iestatīšanas ceļus:
 
 Ja neredzat OAuth opciju wizardā, pabeidiet manuālās atkarības ievades procesu štai zemāk. Gateway darba ar tiem pašiem PayPal Business API atkarībām kā iepriekšējās Ultimate Multisite 2.x izlaidumiem.
 
-## PayPal API atkarību saņemšana
+## PayPal API atkarību saņemšana {#getting-the-paypal-api-credentials}
 
 Kad PayPal būs aktivizēts kā maksājumu gateway, jums būs jāievada lauki par PayPal API **Username**, PayPal API **Password** un PayPal API **Signature**.
 

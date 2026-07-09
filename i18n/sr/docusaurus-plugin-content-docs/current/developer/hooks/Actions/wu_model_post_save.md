@@ -4,11 +4,11 @@ title: Радња - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Action: wu_model_post_save
+# Action: wu_model_post_save {#action-wumodelpostsave}
 
 Покреће се након што се објекат сачува у базу података.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,10 +17,10 @@ _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 | $data_unserialized | `array` | Подаци објекта који ће бити сачувани. |
 | $this | `\Base_Model` | Инстанца објекта. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.0.0
-### Извор
+### Извор {#source}
 
 - Дефинисано у [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L613) у реду 613
 - Дефинисано у [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1743) у реду 1743

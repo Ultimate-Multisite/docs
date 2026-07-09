@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent ni umufasha wa WordPress AI wigenga ushobora gutegura, kubaka, no gucunga imbuga za WordPress zuzuye binyuze mu mabwiriza y'ururimi rusanzwe. Itanga urutonde ruteguye rwa **ubushobozi** — ibikorwa byihariye, bishobora kugeragezwa agent ishobora kwifashisha — bikubiyemo byose kuva ku micungire y'ibirimo kugeza ku guhindura sisitemu y'imiterere. Verisiyo 1.9.0 yongeramo ubushobozi bwo gukora ibirimo, isuzuma ry'amapaji mu buryo bugaragara hakoreshejwe amashusho afatwa ku ruhande rw'umukiriya, imyirondoro itanu ya agent yubatswemo, n'ibirango by'imikorere byo kugenzura uburenganzira no gushyiraho ikirango.
 
-## Ibiranga by'ingenzi
+## Ibiranga by'ingenzi {#key-features}
 
 - **Sisitemu y'ubushobozi** — kataloge y'ibikorwa igizwe n'ibice, ishobora kwagurwa, agent ishobora kwifashisha kuri installation yawe ya WordPress
 - **Imicungire y'ibirimo** — gukora posts n'amapaji (harimo guha amapaji templates), gukora posts nyinshi icyarimwe mu ihamagara rimwe, gushyiraho amashusho agaragara, no kubaka contact forms
@@ -28,21 +28,21 @@ Gratis AI Agent ni umufasha wa WordPress AI wigenga ushobora gutegura, kubaka, n
 - **Site Builder Orchestration v2** — gahunda zo kubaka urubuga z'intambwe nyinshi hamwe no kuvumbura plugin, gukurikirana aho bigeze, no kwisubiza mu makosa
 - **Itegeko rya WP-CLI benchmark** — gukoresha itsinda ry'ibipimo bya benchmark ry'ubushobozi bwa agent uhereye kuri command line kuri CI no gusuzuma model
 
-## Ibisabwa
+## Ibisabwa {#requirements}
 
 - WordPress 6.0 cyangwa irenzeho
 - PHP 8.1 cyangwa irenzeho
 - WordPress Multisite (network-activated) cyangwa installation y'urubuga rumwe
 - Plugin connector y'utanga AI ikora (Anthropic, OpenAI, cyangwa ihuye na byo)
 
-## Installation
+## Installation {#installation}
 
 1. Ohereza amadosiye ya plugin kuri `/wp-content/plugins/gratis-ai-agent`
 2. Kora plugin ukoresheje screen ya **Plugins** muri WordPress
 3. Jya kuri **Gratis AI Agent → Settings** maze uhuze utanga AI wawe
 4. (Si ngombwa) Reba muri **Abilities Registry** kugira ngo ushyiremo ability packs z'inyongera
 
-## Gutangira vuba
+## Gutangira vuba {#quick-start}
 
 Iyo imaze gukora no guhuzwa n'utanga AI, fungura panel ya **Gratis AI Agent** muri sidebar ya WordPress admin. Andika amabwiriza mu rurimi rusanzwe, agent izategura kandi ishyire mu bikorwa intambwe zisabwa ikoresheje ubushobozi ifite.
 
@@ -60,7 +60,7 @@ Shyira colour palette ya dark-mode muri theme maze ushyireho ibara ry'ibanze kur
 Baka website ya restaurant ifite menu yo kuri murandasi, booking form, na paji y'itumanaho.
 ```
 
-## Incamake y'ubushobozi
+## Incamake y'ubushobozi {#abilities-overview}
 
 Ubushobozi ni ibikorwa by'ibanze agent ishobora gukora. Buri bushobozi ni class ya PHP yanditswe muri sisitemu itanga schema (parameters na return types) agent isoma igihe iri gukora. Ubushobozi bushyirwa mu byiciro by'imirimo:
 
@@ -79,7 +79,7 @@ Ubushobozi ni ibikorwa by'ibanze agent ishobora gukora. Buri bushobozi ni class 
 
 Reba [Ibisobanuro by'ubushobozi](./abilities) kugira ngo ubone inyandiko zuzuye za parameters n'ingero z'imikoreshereze.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent izana umuryango w'amategeko wa `wp gratis-ai-agent` wo gukoresha benchmarks no gucunga ubushobozi uhereye kuri command line. Reba [Ibisobanuro bya WP-CLI](./wp-cli) kugira ngo ubone urutonde rwose rw'amategeko.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Igenamiterere
+## Igenamiterere {#configuration}
 
 Igenamiterere ryose riri munsi ya **Gratis AI Agent → Settings** muri WordPress admin:
 
@@ -106,7 +106,7 @@ Igenamiterere ryose riri munsi ya **Gratis AI Agent → Settings** muri WordPres
 | **Ability Timeout** | Amasegonda ntarengwa ubushobozi bumwe bushobora kumara bukora (default 30) |
 | **Debug Logging** | Andika ability calls n'imitekerereze ya agent muri WordPress debug log |
 
-## Blocklist y'umutekano y'imicungire y'amahitamo
+## Blocklist y'umutekano y'imicungire y'amahitamo {#options-management-safety-blocklist}
 
 Ubushobozi bwo Gucunga Amahitamo burimo blocklist yubatswemo ibuza agent gusoma cyangwa kwandika amahitamo ya WordPress arimo amakuru y'ibanga. Blocklist isanzwe ikubiyemo:
 
@@ -118,26 +118,26 @@ Ubushobozi bwo Gucunga Amahitamo burimo blocklist yubatswemo ibuza agent gusoma 
 
 Ibyinjira by'inyongera bishobora kongerwamo hifashishijwe filter `gratis_ai_agent_options_blocklist`.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — itangizwa nyuma y'uko ubushobozi bwanditswe, yakira izina rya class y'ubushobozi
 - `gratis_ai_agent_plan_started` — itangizwa igihe plan yo kubaka site itangiye gushyirwa mu bikorwa
 - `gratis_ai_agent_plan_completed` — itangizwa igihe plan irangiye neza
 - `gratis_ai_agent_plan_failed` — itangizwa igihe plan ihuye n'ikosa ridashobora gukosorwa
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — hindura urutonde rw'ubushobozi bwanditswe mbere y'uko agent irupakira
 - `gratis_ai_agent_options_blocklist` — yagura cyangwa ugabanye blocklist y'umutekano w'amahitamo
 - `gratis_ai_agent_benchmark_questions` — ongeramo ibibazo bya benchmark byihariye mu itsinda ry'isuzuma
 - `gratis_ai_agent_plan_plugins` — hindura urutonde rwo gushakisha plugin mu gihe cyo gukora site plan
 
-## Ubufasha
+## Ubufasha {#support}
 
 Ku bufasha, sura [ultimatemultisite.com](https://ultimatemultisite.com) cyangwa ufungure ikibazo muri repository ya plugin.
 
-## Changelog
+## Changelog {#changelog}
 
 Reba [Changelog](./changelog) kugira ngo ubone amateka yose ya versions.

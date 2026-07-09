@@ -3,11 +3,11 @@ title: Belgekirina Pêşvebiran
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Belgekirina Pêşdebir
+# Belgekirina Pêşdebir {#developer-documentation}
 
 Ev rêber ji pêşdebir re her tiştê pêwîst dide da ku bi Ultimate Multisite re yek bike, wê fireh bike, an pêvekên wê pêş bixe. Ultimate Multisite toreke WordPress Multisite vediguhere platformeke Malper-wekî-Xizmet (WaaS).
 
-## Çi Heye
+## Çi Heye {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Hemû karên CRUD ji bo hemû yekeyan (xerîdar, malper, endamî, dayîn, berhem, domain) bi piştrastkirina bi kilîta API
 - **[Referansa Hooks](./hooks/guide)** — Zêdetirî 200 action hooks û zêdetirî 280 filter hooks ji bo bûyerên jiyan-dorê û xweşkirinê
@@ -15,13 +15,13 @@ Ev rêber ji pêşdebir re her tiştê pêwîst dide da ku bi Ultimate Multisite
 - **[Mînakên Kodê](./code-examples/)** — Şêwazên pêşketî ji bo bihayê dînamîk, amade kirina malperê, sînorkirinên taybet, û pêvajoya çend-dergehî
 - **[Pêşxistina Pêvekê](./addon-development/getting-started)** — Çarçoveyeke rêxistî ji bo avakirina pêvekên plugin
 
-## Pêwîstî
+## Pêwîstî {#requirements}
 
 - Sazkirina WordPress Multisite
 - PHP 7.4 an jor
 - pêveka Ultimate Multisite çalak kirî
 
-## Sazkirina Composer / Bedrock
+## Sazkirina Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite li ser [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) wekî `ultimate-multisite/ultimate-multisite` berdest e. Ev rêbaza sazkirinê ya pêşniyarkirî ye ji bo sazgehên WordPress yên li ser bingeha [Bedrock](https://roots.io/bedrock/) û hawîrdorên din ên bi Composer têne rêvebirin.
 
@@ -45,15 +45,15 @@ An jî, heke tu pluginê wekî must-use plugin bi autoloader a Bedrock bar dikî
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Destpêka Bilez
+## Destpêka Bilez {#quick-start}
 
-### REST API bi kar bîne
+### REST API bi kar bîne {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Bi Bûyeran re Hook bike
+### Bi Bûyeran re Hook bike {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Pêvekekê ava bike
+### Pêvekekê ava bike {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

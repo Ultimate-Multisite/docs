@@ -3,7 +3,7 @@ title: Página de Conta do Cliente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# A Página de Conta do Cliente (v2)
+# A Página de Conta do Cliente (v2) {#your-clients-account-page-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 
@@ -11,7 +11,7 @@ Quando os clientes se inscrevem num plano na sua rede, eles têm acesso a um web
 
 Neste tutorial, vamos guiar-vos pela página de conta do cliente e verão o que os vossos clientes podem ver e fazer lá dentro.
 
-## A Página de Conta
+## A Página de Conta {#the-account-page}
 
 A página de conta é acessível clicando em **Account** (Conta) dentro do painel do seu cliente.
 
@@ -27,7 +27,7 @@ Depois de clicar nele, eles verão uma visão geral da sua adesão (membership),
 
 Também podem mudar a adesão para outro plano, ou comprar outro pacote ou serviço que ofereça. Vamos ver cada secção separadamente.
 
-### A Vue da súa Membresía:
+### A Vue da súa Membresía: {#your-membership-overview}
 
 O primeiro bloco logo abaixo do nome do sitio web dos seus clientes mostra unha visión geral do seu plan actual e dos servizos/paquetes que se adquiriron con ele. O bloco tamén mostra o número de membro, a cantidad inicial pagada por ele, cuánto custa o plan e os servizos/paquetes e cuántas veces se lle cobrou por esta membresía. Tamén poden ver se a membresía está **Activa**, **Expirada** ou **Cancelada**.
 
@@ -43,7 +43,7 @@ Agora, se os seus clientes escollen adquirir paquetes ou servizos para esta memb
 
 Ten en cuenta que os códigos de cupón non poden añadirse en esta página de cambio de membresía. Se o cliente utilizou un código de cupón na primeira compra da membresía, o código tamén se aplicará a esta nova membresía.
 
-### Actualización da Dirección de Facturación:
+### Actualización da Dirección de Facturación: {#updating-the-billing-address}
 
 Na páxina da conta, os seus clientes poden actualizar tamén o seu endereço de facturación. Só hai que clicar en **Actualizar** ao lado de _Billing Address_.
 
@@ -53,7 +53,7 @@ Aparecerá unha nova ventán para o seu cliente. Todo o que ten que facer é pre
 
 ![Formulario de actualización do endereço de facturación](/img/account-page/billing-address-form.png)
 
-### Modificar o Template do Sitio:
+### Modificar o Template do Sitio: {#changing-the-site-template}
 
 Para permitir que os seus clientes muden os templates do sitio, hai que ir a **Ultimate Multisite > Settings > Sites** e activar a opción **Allow Template Switching** (Permitir Cambio de Template).
 
@@ -81,7 +81,7 @@ Depois de ativar a confirmação e clicar em **Process Switch**, o novo modelo d
 
 Os clientes também podem usar **Reset current template** deste painel quando precisarem de redefinir o site para o modelo atualmente atribuído. Tal como ao mudar para outro modelo, redefinir um modelo pode sobrescrever o conteúdo do site, por isso os clientes devem confirmar apenas quando entenderem a ação de redefinição.
 
-### Adicionar Domínios Personalizados:
+### Adicionar Domínios Personalizados: {#adding-custom-domains}
 
 Os seus clientes também terão a opção de adicionar um domínio personalizado para este plano na página da conta deles. Para permitir que os seus clientes usem domínios personalizados, vá a **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Depois de clicar em **Next Step** (Próximo Passo), os seus clientes poderão ad
 
 Depois de clicar em **Add Domain** (Adicionar Domínio), o domínio será adicionado à conta do seu cliente. Tudo o que eles precisam fazer agora é mudar os registos DNS deste domínio personalizado no registrador de domínios deles.
 
-### Mudar Palavra-passe:
+### Mudar Palavra-passe: {#changing-password}
 
 Dentro do painel da conta, os seus clientes também podem mudar a palavra-passe clicando em **Change Password** (Mudar Palavra-passe).
 
@@ -125,7 +125,7 @@ Isto mostrará unha nova ventán onde os seus clientes deberán introducir a sú
 
 ![Formulario de cambio de contraseña con campos para contraseña actual y nueva](/img/account-page/change-password-form.png)
 
-### Zona de Perigo:
+### Zona de Perigo: {#danger-zone}
 
 Temos tamén dúas opción que se mostran na parte da **Zona de Perigo**: **Borrar Sitio** e **Borrar Conta**. Ambas están na Zona de Perigo porque estas dúas accións son irreversibles. Se os seus clientes borran o seu sitio web ou a súa conta, non podrán recuperalo.
 

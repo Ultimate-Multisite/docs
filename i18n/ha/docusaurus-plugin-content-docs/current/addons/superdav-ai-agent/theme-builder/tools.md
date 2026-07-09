@@ -3,17 +3,17 @@ title: Kayan aiki da Saituna
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Kayan Aiki da Daidaitawa
+# Kayan Aiki da Daidaitawa {#tools-and-configuration}
 
 Theme Builder yana amfani da jerin kayan aiki don nazari, tsara, da gina shafin WordPress ɗinka. A sigar 1.16.0, **sd-ai-agent/site-scrape yanzu kayan aiki ne na Mataki na 1**, wanda ke sa ya kasance a shirye ta tsohuwa a Theme Builder. Superdav AI Agent v1.18.0 kuma yana gabatar da kunshin aboki na Advanced da ake rarrabawa dabam don amintattun hanyoyin aikin masu haɓakawa; waɗannan kayan aikin ba sa cikin ainihin kunshin WordPress.org kuma dole ne a girka su a ba su izini dabam.
 
-## Kayan Aiki da Ke Samuwa
+## Kayan Aiki da Ke Samuwa {#available-tools}
 
-### Kayan Aikin Mataki na 1 (Kullum Suna Samuwa)
+### Kayan Aikin Mataki na 1 (Kullum Suna Samuwa) {#tier-1-tools-always-available}
 
 Kayan aikin Mataki na 1 suna samuwa ta tsohuwa a Theme Builder ba tare da wani ƙarin daidaitawa ba.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Manufa:** Nazartar rukunin yanar gizo da ke akwai don ciro ilhamar zane, tsarin abun ciki, da ayyuka.
 
@@ -51,11 +51,11 @@ Nazari zanen example.com kuma yi amfani da shi a matsayin ilhama ga shafina.
 - Shafukan da suka dogara sosai da JavaScript na iya samun iyakantaccen nazari
 - Manyan shafuka na iya ɗaukar lokaci mai tsawo wajen nazari
 
-### Kayan Aikin Mataki na 2 (Na Zaɓi)
+### Kayan Aikin Mataki na 2 (Na Zaɓi) {#tier-2-tools-optional}
 
 Kayan aikin Mataki na 2 suna samuwa idan an kunna su a fili a saitunan Theme Builder.
 
-#### Nazari na Ci-gaba
+#### Nazari na Ci-gaba {#advanced-analytics}
 
 Yana bayar da cikakkun ma'aunan aiki:
 
@@ -65,7 +65,7 @@ Yana bayar da cikakkun ma'aunan aiki:
 - Makin samun dama
 - Makin kyawawan ɗabi'u
 
-#### Mai Inganta Abun Ciki
+#### Mai Inganta Abun Ciki {#content-optimizer}
 
 Yana nazari kuma yana ba da shawarar ingantawa ga:
 
@@ -75,11 +75,11 @@ Yana nazari kuma yana ba da shawarar ingantawa ga:
 - Tsarin abun ciki
 - Wurin sanya kira-zuwa-aiki
 
-### Kayan Aikin Mataki na 3 (Premium)
+### Kayan Aikin Mataki na 3 (Premium) {#tier-3-tools-premium}
 
 Kayan aikin Mataki na 3 suna buƙatar ƙarin daidaitawa ko fasalolin premium.
 
-#### Mai Samar da Abun Ciki na AI
+#### Mai Samar da Abun Ciki na AI {#ai-content-generator}
 
 Yana samar da abun ciki don:
 
@@ -89,7 +89,7 @@ Yana samar da abun ciki don:
 - Bayanin meta
 - Rubutun kira-zuwa-aiki
 
-#### Kayan Aikin Zane na Ci-gaba
+#### Kayan Aikin Zane na Ci-gaba {#advanced-design-tools}
 
 Yana bayar da iyawar zane ta ci-gaba:
 
@@ -99,7 +99,7 @@ Yana bayar da iyawar zane ta ci-gaba:
 - Ka'idar launi ta ci-gaba
 - Inganta Typography
 
-### Kayan Aikin Aboki na Advanced (Kunshi Dabam)
+### Kayan Aikin Aboki na Advanced (Kunshi Dabam) {#advanced-companion-tools-separate-package}
 
 Ana rarraba kunshin aboki na Advanced dabam daga sakin ainihin Superdav AI Agent. An nufe shi don amintattun muhallan masu haɓakawa da masu shafi inda masu gudanarwa ke ba agent izini a fili ya yi amfani da kayan aiki masu babban tasiri.
 
@@ -116,9 +116,9 @@ Iyawar aboki na Advanced na iya haɗawa da:
 
 Kada a rubuta waɗannan a matsayin kayan aikin Theme Builder da ake samu gaba ɗaya ga kowane girkawa. Suna samuwa ne kawai idan an girka kunshin aboki na Advanced, an kunna shi, kuma an takaita shi ga amintattun masu gudanarwa.
 
-## Daidaita Kayan Aiki
+## Daidaita Kayan Aiki {#tool-configuration}
 
-### Kunna Kayan Aiki
+### Kunna Kayan Aiki {#enabling-tools}
 
 Don kunna ƙarin kayan aiki a Theme Builder:
 
@@ -127,7 +127,7 @@ Don kunna ƙarin kayan aiki a Theme Builder:
 3. Kunna/kashe kayan aiki kamar yadda ake buƙata
 4. Ajiye saituna
 
-### Izinin Kayan Aiki
+### Izinin Kayan Aiki {#tool-permissions}
 
 Wasu kayan aiki suna buƙatar izini:
 
@@ -137,7 +137,7 @@ Wasu kayan aiki suna buƙatar izini:
 - **Fasalolin ci-gaba** — na iya buƙatar premium subscription
 - **Kayan aikin aboki na Advanced** — suna buƙatar kunshin Advanced da ake rarrabawa dabam da amincewar mai gudanarwa a fili
 
-### API Keys da Shaidun Shiga
+### API Keys da Shaidun Shiga {#api-keys-and-credentials}
 
 Daidaita API keys don kayan aikin da ke buƙatar su:
 
@@ -146,13 +146,13 @@ Daidaita API keys don kayan aikin da ke buƙatar su:
 3. Gwada haɗi
 4. Ajiye cikin tsaro
 
-### Girka Kunshin Aboki na Advanced
+### Girka Kunshin Aboki na Advanced {#installing-the-advanced-companion-package}
 
 Ana saki kunshin aboki na Advanced dabam daga ainihin ZIP na WordPress.org. Girka shi kawai daga tashar rarrabawa ta hukuma ta aikin don sakin, sannan ka takaita shiga ga amintattun masu gudanarwa. Bita ƙofofin amincewar ɗan adam da halayen hoton git kafin kunna kayan aikin tsarin fayil, database, WP-CLI, mai rarraba REST, ginin kari, sarrafa masu amfani, ko benchmark a kan shafin samarwa.
 
-## Amfani da sd-ai-agent/site-scrape
+## Amfani da sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Amfani na Asali
+### Amfani na Asali {#basic-usage}
 
 Nemi Theme Builder ya nazarci rukunin yanar gizo:
 
@@ -161,7 +161,7 @@ Nazari zanen shafin mai fafatawa da ni a competitor.com
 kuma ba da shawarar inganta zane ga shafina.
 ```
 
-### Takamaiman Nazari
+### Takamaiman Nazari {#specific-analysis}
 
 Nemi takamaiman nau'ikan nazari:
 
@@ -179,7 +179,7 @@ Duba dacewar example.com da wayar hannu kuma tabbatar shafina
 yana da irin wannan dacewa.
 ```
 
-### Nazarin Kwatantawa
+### Nazarin Kwatantawa {#comparison-analysis}
 
 Kwatanta shafuka da yawa:
 
@@ -188,22 +188,22 @@ Kwatanta zanen site1.com da site2.com kuma ƙirƙiri zane
 da ke haɗa mafi kyawun abubuwan duka biyun.
 ```
 
-## Iyakokin Kayan Aiki da Abubuwan La'akari
+## Iyakokin Kayan Aiki da Abubuwan La'akari {#tool-limitations-and-considerations}
 
-### Ƙayyade Yawan Buƙata
+### Ƙayyade Yawan Buƙata {#rate-limiting}
 
 - Scraping yana da rate-limited don hana nauyin uwar garke ya yi yawa
 - Buƙatu da yawa zuwa wannan shafi na iya samun throttled
 - Manyan shafuka na iya ɗaukar lokaci mai tsawo don nazari
 
-### Daidaiton Abun ciki
+### Daidaiton Abun ciki {#content-accuracy}
 
 - Abun ciki mai canzawa na iya ƙin kamuwa gaba ɗaya
 - Abun ciki da JavaScript ya render na iya zama bai cika ba
 - Bayanai na ainihin lokaci na iya ƙin bayyana
 - Wani abun ciki na iya kasancewa bayan paywalls
 
-### La'akari na Doka da Da'a
+### La'akari na Doka da Da'a {#legal-and-ethical-considerations}
 
 - Girmama robots.txt da manufofin shafi
 - Kada ka scrape abun ciki mai haƙƙin mallaka don sake bugawa
@@ -211,16 +211,16 @@ da ke haɗa mafi kyawun abubuwan duka biyun.
 - Tabbatar kana da haƙƙin amfani da abun ciki da aka ciro
 - Bi terms of service na shafukan da aka nazarta
 
-### Tasirin Aiki
+### Tasirin Aiki {#performance-impact}
 
 - Scraping manyan shafuka na iya ɗaukar lokaci
 - Scrapes da yawa a lokaci guda na iya zama a hankali
 - Haɗin intanet yana shafar sauri
 - Manyan tarin bayanai na iya buƙatar ƙarin sarrafawa
 
-## Mafi Kyawun Hanyoyi
+## Mafi Kyawun Hanyoyi {#best-practices}
 
-### Amfani da Nazarin Shafi
+### Amfani da Nazarin Shafi {#using-site-analysis}
 
 1. **Nazarta shafuka da yawa** — tattara wahayi daga tushe da dama
 2. **Mayar da hankali kan tsari** — koyi tsarin shimfiɗa da tsarin tsara abubuwa
@@ -228,7 +228,7 @@ da ke haɗa mafi kyawun abubuwan duka biyun.
 4. **Nazarin typography** — gano haɗin font da kake so
 5. **Duba kewayawa** — fahimci tsarin menu
 
-### Scraping na Da'a
+### Scraping na Da'a {#ethical-scraping}
 
 1. **Girmama robots.txt** — bi jagororin shafi
 2. **Kada ka kwafi abun ciki** — yi amfani da nazari don wahayi kawai
@@ -236,7 +236,7 @@ da ke haɗa mafi kyawun abubuwan duka biyun.
 4. **Nuna tushe** — yaba wa tushen wahayi
 5. **Bi terms** — bi terms of service na shafi
 
-### Inganta Tasirin Kayan Aiki
+### Inganta Tasirin Kayan Aiki {#maximizing-tool-effectiveness}
 
 1. **Ka kasance takamaimai** — nemi takamaiman nau'ikan nazari
 2. **Bayar da mahalli** — bayyana manufar shafinka
@@ -244,9 +244,9 @@ da ke haɗa mafi kyawun abubuwan duka biyun.
 4. **Maimaita gyara** — tace bisa sakamako
 5. **Haɗa kayan aiki** — yi amfani da kayan aiki da yawa don cikakken nazari
 
-## Gyaran Matsaloli
+## Gyaran Matsaloli {#troubleshooting}
 
-### Shafi Ba Ya Scrape
+### Shafi Ba Ya Scrape {#site-wont-scrape}
 
 - Duba ko shafin yana samuwa ga jama'a
 - Tabbatar robots.txt yana ba da damar scraping
@@ -254,7 +254,7 @@ da ke haɗa mafi kyawun abubuwan duka biyun.
 - Duba haɗin intanet
 - Tuntuɓi tallafi idan matsalar ta ci gaba
 
-### Nazari Bai Cika Ba
+### Nazari Bai Cika Ba {#incomplete-analysis}
 
 - Shafi na iya samun abun ciki mai canzawa
 - JavaScript na iya ƙin render gaba ɗaya
@@ -262,7 +262,7 @@ da ke haɗa mafi kyawun abubuwan duka biyun.
 - Gwada nazarin takamaiman shafuka maimakon haka
 - Nemi takamaiman nau'ikan nazari
 
-### Aiki a Hankali
+### Aiki a Hankali {#slow-performance}
 
 - Manyan shafuka suna ɗaukar lokaci mai tsawo don nazari
 - Scrapes da yawa a lokaci guda sun fi a hankali
@@ -270,7 +270,7 @@ da ke haɗa mafi kyawun abubuwan duka biyun.
 - Gwada a lokutan da ba a cika amfani ba
 - Nazarta ƙananan sashe da farko
 
-## Takardun da Suka Shafi Wannan
+## Takardun da Suka Shafi Wannan {#related-documentation}
 
 - [Tambayoyin Gano Bukatu](./discovery-interview.md) — tattara bayanan ƙira
 - [Alƙiblar Ƙira](./design-direction.md) — tace ƙirarka

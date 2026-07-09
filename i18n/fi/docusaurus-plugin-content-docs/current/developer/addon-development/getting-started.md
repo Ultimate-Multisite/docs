@@ -3,9 +3,9 @@ title: Lisäosakehityksen aloittaminen
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Lisäosan kehitys
+# Lisäosan kehitys {#addon-development}
 
-## Lisäosan rakenne
+## Lisäosan rakenne {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Pääasiallisen lisäosatiedoston malli
+## Pääasiallisen lisäosatiedoston malli {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Esimerkki mukautetusta mallista
+## Esimerkki mukautetusta mallista {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin-sivun integraatio
+## Admin-sivun integraatio {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addonisi testaaminen
+## Addonisi testaaminen {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0-laajennuspisteet
+## v2.13.0-laajennuspisteet {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 lisää useita laajennuspisteitä, jotka ovat hyödyllisiä addoneille, jotka integroituvat suvereeneihin tenantteihin, checkout-verkkotunnuksiin tai hosting-palveluntarjoajan DNS-automaation kanssa.
 
-### SSO ja pääsivuston hallinta-URL-osoitteet
+### SSO ja pääsivuston hallinta-URL-osoitteet {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-lomakkeen perusverkkotunnukset
+### Checkout-lomakkeen perusverkkotunnukset {#checkout-form-base-domains}
 
 Käytä `wu_checkout_form_base_domains`, kun addonisi tarjoaa lisää jaettuja perusverkkotunnuksia, joiden pitäisi toimia checkout-lomakkeen **Site URL** -verkkotunnuksina sivustokohtaisten mukautettujen yhdistämisten sijaan:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite normalisoi nämä hostit ja ohittaa niille automaattiset sivustokohtaiset yhdistetyn verkkotunnuksen tietueet.
 
-### Automaattinen verkkotunnustietueiden luonti
+### Automaattinen verkkotunnustietueiden luonti {#automatic-domain-record-creation}
 
 Käytä `wu_should_create_domain_record_for_site`, kun addonisi täytyy estää tai lykätä automaattista verkkotunnustietueen luontia uudelle luodulle sivustolle:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Hosting-palveluntarjoajan integraatiot, jotka kuuntelevat toimintoa `wu_add_subdomain`, voivat luoda palveluntarjoajan puoleiset DNS-tietueet, kun sivustoja luodaan. Jos kyseiselle toiminnolle ei ole rekisteröity integraatiota, Ultimate Multisite ohittaa tyhjän taustatyön.
 
-## Seuraavat vaiheet
+## Seuraavat vaiheet {#next-steps}
 
 - Tutustu [Hooks-viitteeseen](/developer/hooks) saatavilla olevia toimintoja ja suodattimia varten
 - Tarkista [REST API -yleiskatsaus](/developer/rest-api/overview) API-integraatiota varten

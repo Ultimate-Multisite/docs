@@ -3,11 +3,11 @@ title: උසස් කේත උදාහරණ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# උසස් Code උදාහරණ
+# උසස් Code උදාහරණ {#advanced-code-examples}
 
 මෙම උදාහරණ Ultimate Multisite සමඟ උසස් ඒකාබද්ධ කිරීමේ රටා පෙන්වයි.
 
-## ගතික මිල නියම කිරීමේ එන්ජිම
+## ගතික මිල නියම කිරීමේ එන්ජිම {#dynamic-pricing-engine}
 
 ප්‍රමාණය, පක්ෂපාතිත්වය, සහ කාලානුකූල වට්ටම් යොදන නීති-පාදක මිල නියම කිරීමේ එන්ජිමක්:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## උසස් අඩවි සැපයීම
+## උසස් අඩවි සැපයීම {#advanced-site-provisioning}
 
 සැලසුම් විශේෂාංග අනුව නව අඩවි plugins, SSL, CDN, backups, සහ monitoring සමඟ ස්වයංක්‍රීයව වින්‍යාස කරන්න:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## අභිරුචි සීමා පද්ධතිය
+## අභිරුචි සීමා පද්ධතිය {#custom-limitations-system}
 
 භාවිත අනතුරු ඇඟවීම් සමඟ සම්පත් සීමා නිරීක්ෂණය කර බලාත්මක කරන්න:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## `increment_item()` සමඟ BerlinDB Atomic Counter
+## `increment_item()` සමඟ BerlinDB Atomic Counter {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 විසින් BerlinDB `Query` class වෙත `increment_item()` method එකක් එක් කරන ලදී. කියවීම්-වෙනස්කිරීම්-ලියීම් තරඟ තත්ත්වයන් නොමැතිව සංඛ්‍යාත්මක columns මත ආරක්ෂිත, atomic වැඩිකිරීම් සිදු කිරීමට එය භාවිත කරන්න — සමකාලීන ඉල්ලීම් යටතේ ක්‍රියාත්මක වන counters, භාවිත කෝටා, සහ rate-limiting පරීක්ෂා සඳහා මෙය ප්‍රයෝජනවත්ය.
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 විසින් BerlinDB `Query` class වෙත `i
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### මූලික භාවිතය
+### මූලික භාවිතය {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### membership එකකට API භාවිතය නිරීක්ෂණය කිරීම
+### membership එකකට API භාවිතය නිරීක්ෂණය කිරීම {#tracking-api-usage-per-membership}
 
 membership එකකට API rate limits බලාත්මක කිරීම සඳහා ප්‍රායෝගික රටාවක්:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### `update_item()` වෙනුවට `increment_item()` ඇයි
+### `update_item()` වෙනුවට `increment_item()` ඇයි {#why-incrementitem-instead-of-updateitem}
 
 සරල කියවීම්-වෙනස්කිරීම්-ලියීම් ප්‍රවේශයක් සමකාලීන ඉල්ලීම් යටතේ ආරක්ෂිත නොවේ:
 

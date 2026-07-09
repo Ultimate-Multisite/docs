@@ -4,20 +4,20 @@ title: Aðgerð - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Aðgerð: wp_ultimo_ptm_page_edit_after_title
+# Aðgerð: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
 
 Leyfa plugin-hönnuðum að bæta við fleiri hnöppum á breytingarsíður
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Nafn | Tegund | Lýsing |
 |------|------|-------------|
 | $ | `object` | Hlutur sem geymir upplýsingarnar |
 | $ | `\WU_Page` | Ultimate Multisite Page-tilvik |
 
-### Síðan
+### Síðan {#since}
 
 - 1.8.2
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`views/base/edit.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/edit.php#L48) í línu 48

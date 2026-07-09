@@ -3,11 +3,11 @@ title: Wéi d'Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Warum Ultimate Multisite
+# Warum Ultimate Multisite {#why-ultimate-multisite}
 
 Wenn Sie zu diesem Artikel gekommen sind, haben Sie wahrscheinlich gehört, dass unser Plugin die Lösung sein könnte, um Ihre Geschäftsidee Wirklichkeit werden zu lassen. Wir hoffen, dass Sie am Ende dieses Textes alle Antworten finden, die Sie brauchen.
 
-## Was ist Ultimate Multisite?
+## Was ist Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite isch en WordPress Multisite plugin, wo Ihnen ermöglicht, Kundene e WaaS (Website as a Service) anzbiete. Mit unserem Plugin chönd Sie verschiedeni Abonnement-Stufe ha und d'Kundene e wiederkehrendi Gebühr zahle, um e Site in Ihrem Multisite Netzwerk gehostet z'ha.
 
@@ -15,7 +15,7 @@ Ultimate Multisite erlaubt Ihnen, Ihre Zahlige mit verschiedene Gateways (wie Wo
 
 Und das isch erst de Anfang, denn Sie chönd d'Funktione mit Add-ons und Webhooks erweitern.
 
-## Anderi Features
+## Anderi Features {#other-features}
 
 Ultimate Multisite bietet au:
 
@@ -33,11 +33,11 @@ Und no meh fortgeschritteni Sache:
 
 * Search and Replace API: Du chasch au Site Templates mit Platzhalter wie {{site_name}} annotiere und d'Search and Replace API bruche, um die Platzhalter automatisch mit de Informatione z'füeche, wo din Kunde direkt nach em Sign-up liefert.
 
-## Anwendungsfälle
+## Anwendungsfälle {#use-cases}
 
 Jetzt isch Zit, es paar möglichi Anwendungsfäll für Ultimate Multisite azluege.
 
-### Fall 1: E Agentur
+### Fall 1: E Agentur {#case-1-an-agency}
 
 Typisch sind d'Kernfähike vo ere Agentur i de Gestaltung vo Websites mit Aspekt wie ihri Hosting- oder Marketingdienstleistige als zusätzliche Service ufzfüehre.
 
@@ -47,7 +47,7 @@ D'Strikti Kontrolle über Plugins und Themes wird pro Produkt dur d'Istellige vo
 
 Agenturen finde mit Ultimate Multisite beruhigend, dass sie das tun können, was sie am besten können – außergewöhnliche Websites gestalten.
 
-### Fall 2: Nischenanbieter
+### Fall 2: Nischenanbieter {#case-2-niche-provider}
 
 Es gibt ein altes Sprichwort, das sagt: „Mach eine Sache und mach sie gut“. Für viele Spezialisten bedeutet das, ein Produkt oder eine Dienstleistung um eine einzige Kernidee herum zu entwickeln.
 
@@ -57,7 +57,7 @@ Eine der innovativen Funktionen von Ultimate Multisite ist das Template-Site: Da
 
 Für einen Anbieter von Nischenseiten und -dienstleistungen bietet dies einen unschlagbaren Vorteil bei der Möglichkeit, sofort eine einsatzbereite Seite mit individuellen Plugins und Design zu erstellen. Der Kunde muss nur minimale Eingaben machen, um den Service abzuschließen.
 
-### Fall 3: WordPress Webhosting
+### Fall 3: WordPress Webhosting {#case-3-wordpress-web-hosting}
 
 Es gibt unzählige Möglichkeiten, WordPress-Seiten zu hosten, aber selten ist es so einfach, einem Kunden Webspace mit einer vorinstallierten Version von WordPress anzubieten. Das liegt daran, dass eine Reihe von Entscheidungen und Überlegungen zusammenkommen müssen, um einen sinnvollen Service anzubieten.
 

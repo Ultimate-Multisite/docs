@@ -3,13 +3,13 @@ title: Skep Afslagkodes
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Skep Kortingskodes (v2)
+# Skep Kortingskodes (v2) {#creating-discount-codes-v2}
 
 _**BELANGRIKKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
 Met Ultimate Multisite kan jy kortingskodes skep om jou kliënte korting op hul subskripsies te gee. En dit skep is maklik!
 
-## Skep en Wysig Kortingskodes
+## Skep en Wysig Kortingskodes {#creating-and-editing-discount-codes}
 
 Om 'n kortingskode te skep of te wysig, gaan na **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Die kupon is nou op jou lys en, van daar af, kan jy klik om dit te **wysig of te
 
 ###
 
-### Gebruik URL-Parameters:
+### Gebruik URL-Parameters: {#using-url-parameters}
 
 As jy jou prysitellings wil aanpas of 'n mooi kuponkodebladsy vir jou webwerf wil bou en 'n kortingskode outomaties op jou afrekenbladsy wil toepas, kan jy dit doen via URL-parameters.
 

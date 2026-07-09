@@ -3,15 +3,15 @@ title: पलेट कंट्रास्ट मान्य करें
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# पैलेट कंट्रास्ट को मान्य करें
+# पैलेट कंट्रास्ट को मान्य करें {#validate-palette-contrast}
 
 **पैलेट कंट्रास्ट को मान्य करें** सुविधा आपके डिज़ाइन पैलेट में रंग जोड़े की जाँच करती है कि वे आपके थीम पर लागू करने से पहले WCAG (वेब कंटेंट एक्सेसिबिलिटी गाइडलाइन्स) के अनुरूप हैं या नहीं।
 
-## अवलोकन (Overview)
+## अवलोकन (Overview) {#overview}
 
 यह सुविधा यह सुनिश्चित करती है कि आपकी साइट का रंग संयोजन टेक्स्ट और बैकग्राउंड रंगों के बीच कंट्रास्ट अनुपात को मान्य करके पहुँच-योग्यता (accessibility) मानकों को पूरा करता है। यह उन रंग संयोजनों को बनने से रोकने में मदद करता है जिन्हें दृष्टिबाधित (visually impaired) उपयोगकर्ताओं के लिए पढ़ना मुश्किल हो सकता है।
 
-## इनपुट फॉर्मेट (Input Format)
+## इनपुट फॉर्मेट (Input Format) {#input-format}
 
 यह सुविधा इनपुट के रूप में एक रंग पैलेट स्वीकार करती है:
 
@@ -35,7 +35,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### पैरामीटर्स (Parameters)
+### पैरामीटर्स (Parameters) {#parameters}
 
 | पैरामीटर | टाइप | आवश्यक | विवरण |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `wcag_level` | string | नहीं | WCAG अनुपालन स्तर: "A", "AA" (डिफ़ॉल्ट), या "AAA" |
 | `pairs_to_check` | array | नहीं | मान्य करने के लिए विशिष्ट रंग जोड़े (उदाहरण के लिए, `["primary-text", "background-text"]`) |
 
-## जाँच किए गए WCAG स्तर (WCAG Levels Checked)
+## जाँच किए गए WCAG स्तर (WCAG Levels Checked) {#wcag-levels-checked}
 
 यह सुविधा WCAG मानकों के अनुसार कंट्रास्ट अनुपात को मान्य करती है:
 
@@ -56,7 +56,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 - **सामान्य टेक्स्ट** — 18pt से छोटा टेक्स्ट (या 14pt बोल्ड)
 - **बड़ा टेक्स्ट** — 18pt या उससे बड़ा टेक्स्ट (या 14pt बोल्ड या उससे बड़ा)
 
-## आउटपुट स्कीमा (Output Schema)
+## आउटपुट स्कीमा (Output Schema) {#output-schema}
 
 यह सुविधा एक विस्तृत सत्यापन रिपोर्ट लौटाती है:
 
@@ -95,7 +95,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### आउटपुट फ़ील्ड (Output Fields)
+### आउटपुट फ़ील्ड (Output Fields) {#output-fields}
 
 | फ़ील्ड | टाइप | विवरण |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `status` | string | प्रत्येक जोड़े के लिए "pass" या "fail" |
 | `recommendations` | array | विफल जोड़े को बेहतर बनाने के सुझाव |
 
-## उपयोग का उदाहरण (Usage Example)
+## उपयोग का उदाहरण (Usage Example) {#usage-example}
 
 **प्रॉम्प्ट (Prompt):**
 ```
@@ -119,7 +119,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 - ✅ बैकग्राउंड + टेक्स्ट: 12.1:1 अनुपात (WCAG AAA पास)
 - कुल मिलाकर: WCAG AA के साथ अनुपालनशील (Compliant)
 
-## थीम बिल्डर के साथ एकीकरण (Integration with Theme Builder)
+## थीम बिल्डर के साथ एकीकरण (Integration with Theme Builder) {#integration-with-theme-builder}
 
 जब आप थीम बिल्डर में डिज़ाइन-दिशा चयन का उपयोग करते हैं, तो पैलेट कंट्रास्ट को मान्य करने वाली सुविधा:
 
@@ -129,7 +129,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 4. गैर-अनुपालनकारी जोड़ों के लिए सुझाव प्रदान करती है
 5. दुर्गम (inaccessible) रंग योजनाओं को लागू होने से रोकती है
 
-## सर्वोत्तम अभ्यास (Best Practices)
+## सर्वोत्तम अभ्यास (Best Practices) {#best-practices}
 
 - **AA स्तर से शुरुआत करें** — WCAG AA अधिकांश वेबसाइटों के लिए मानक है
 - **लागू करने से पहले परीक्षण करें** — डिज़ाइन पर प्रतिबद्ध होने से पहले अपने पैलेट को मान्य करें
@@ -137,7 +137,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 - **उपयोगकर्ता प्राथमिकताओं पर विचार करें** — कुछ उपयोगकर्ताओं में अतिरिक्त रंग संवेदनशीलता हो सकती है
 - **कंट्रास्ट चेकर्स का उपयोग करें** — सत्यापन के लिए इस सुविधा को ब्राउज़र टूल के साथ मिलाएं
 
-## विफल जोड़े और सुझाव (Failing Pairs and Recommendations)
+## विफल जोड़े और सुझाव (Failing Pairs and Recommendations) {#failing-pairs-and-recommendations}
 
 यदि कोई रंग जोड़ा सत्यापन में विफल रहता है, तो सुविधा सुझाव प्रदान करती है:
 
@@ -155,7 +155,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 }
 ```
 
-## संबंधित सुविधाएँ (Related Abilities)
+## संबंधित सुविधाएँ (Related Abilities) {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — अपने मान्य रंग पैलेट के साथ लोगो बनाएं
 - [Create Menu](./create-menu.md) — सुलभ रंगों के साथ नेविगेशन बनाएं

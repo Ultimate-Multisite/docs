@@ -4,11 +4,11 @@ title: Действие - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 Изпълнява се непосредствено преди да бъде зададена cookie за автентикация на потребителя, който е влезъл.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | Схема за автентикация. По подразбиране е 'logged_in'. |
 | $token | `string` | Токенът на сесията на потребителя, който трябва да се използва за тази cookie. |
 
-### От версия
+### От версия {#since}
 
 - 2.6.0
 - 4.9.0: Параметърът <code>$token</code> беше добавен.
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) на линия 141

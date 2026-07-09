@@ -3,11 +3,11 @@ title: Kliëntterugvoer en Probleemrapportage
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Klant-terugvoer en Probleemverslagdoening
+# Klant-terugvoer en Probleemverslagdoening {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 stel 'n ingeboude terugvoer- en probleemverslagdoeningsstelsel bekend wat eindgebruikers toelaat om onhelpbare antwoorde te merk en probleme direk vanaf die klets-koppelvlak te rapporteer. Hierdie stelsel sluit toestemmingsbestuur, 'n outomatiese verslagdoeningsbevel, en AI-geassisteerde triasie op die agtergrond in.
 
-## Duim-Na-Neer-Knoppie
+## Duim-Na-Neer-Knoppie {#thumbs-down-button}
 
 Elke boodskap wat deur die AI-assistent gestuur word, wys 'n **duim-na-neer** (👎) knoppie. Wanneer 'n gebruiker hierop klik, kan hulle 'n antwoord merk as onhelpbaar of onkorrek.
 
@@ -15,7 +15,7 @@ Elke boodskap wat deur die AI-assistent gestuur word, wys 'n **duim-na-neer** (�
 - Klik daarop open die **Feedback Consent Modal** (Toestemmings-modale).
 - Die terugvoer word gekoppel aan die gesprekdraad en die spesifieke boodskap.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Wanneer 'n gebruiker op die duim-na-neer-knoppie klik, verskyn 'n toestemmings-modale voordat enige data gestuur word. Die modale:
 
@@ -26,13 +26,13 @@ Wanneer 'n gebruiker op die duim-na-neer-knoppie klik, verskyn 'n toestemmings-m
 
 Geen terugvoer word opgeneem totdat die gebruiker eksplisiet bevestig het.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Aan die einde van 'n gesprek kan die assistent 'n **auto-prompt feedback banner** wys — 'n nie-opdringerige boodskap wat vra of die sessie nuttig was.
 
 Hierdie banner verskyn outomaties op grond van gesprekslengte en uitkomsheuristiek. Dit skakel na dieselfde terugvoerproses as die duim-na-neer-knoppie. Gebruikers kan die banner ignoreer sonder om terugvoer te gee.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Gebruikers kan die terugvoerproses direk aktiveer deur `/report-issue` in die klets-invoer in te tik. Hierdie bevel:
 
@@ -42,7 +42,7 @@ Gebruikers kan die terugvoerproses direk aktiveer deur `/report-issue` in die kl
 
 Die `/report-issue` bevel is beskikbaar in alle kletsmodusse (inline, floating widget, full-screen).
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 Ingediende terugvoer word na 'n AI-triasie-laag gerouteer wat:
 

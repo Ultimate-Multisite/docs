@@ -3,7 +3,7 @@ title: Sajili API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint ya API ya usajili ya Ultimate Multisite
+# Endpoint ya API ya usajili ya Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Katika mafunzo haya, utajifunza jinsi ya kutumia endpoint ya API ya Ultimate Multisite /register kuunda mchakato mzima wa kumkaribisha mteja mpya katika mtandao wako na jinsi ya kufanya hivyo kwa Zapier.
 
@@ -29,11 +29,11 @@ Chagua **Enable API** na upate vitambulisho vyako vya API.
 
 Sasa, hebu tuchunguze endpoint kisha tuunde kitendo cha usajili katika Zapier.
 
-## Vigezo vya body ya endpoint
+## Vigezo vya body ya endpoint {#endpoint-body-parameters}
 
 Hebu tuwe na muhtasari wa taarifa za kiwango cha chini tunazohitaji kutuma kwa endpoint. Mwishoni mwa makala hii, utapata mwito kamili.
 
-### Mteja
+### Mteja {#customer}
 
 Hizi ndizo taarifa zinazohitajika kwa mchakato wa kuunda Mtumiaji na Mteja wa Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Inawezekana kutuma customer ID iliyoundwa katika mtandao wako. Ikiwa haijawasili
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Uanachama**
+### **Uanachama** {#membership}
 
 Taarifa pekee tunayohitaji ndani ya kifaa hiki ni Hali ya Uanachama.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Bidhaa**
+### **Bidhaa** {#products}
 
 Bidhaa hutolewa kama array yenye product ID 1 au zaidi kutoka kwenye mtandao wako. Kuwa mwangalifu, endpoint hii haiundi bidhaa. Angalia nyaraka za Ultimate Multisite ili kuelewa vizuri zaidi endpoint ya kuunda bidhaa.
 
 **"products" : [1,2],**
 
-### Malipo
+### Malipo {#payment}
 
 Kama ilivyo kwa Uanachama, tunahitaji tu hali.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Tovuti
+### Tovuti {#site}
 
 Na kufunga body tunahitaji URL na Kichwa cha tovuti, vyote vikiwa ndani ya kifaa cha Tovuti.
 
@@ -69,13 +69,13 @@ Na kufunga body tunahitaji URL na Kichwa cha tovuti, vyote vikiwa ndani ya kifaa
 
 Jibu la endpoint ya usajili litakuwa array yenye taarifa za uanachama mpya ulioundwa.
 
-## Kuunda kitendo katika Zapier
+## Kuunda kitendo katika Zapier {#creating-an-action-in-zapier}
 
 Kwa kuanzishwa kwa endpoint hii mpya na imara zaidi ya kuunda Account, pia utapata kitendo kipya katika Zapier.
 
 Je, unajua jinsi ya kutumia na kufurahia kila kitu ambacho toleo jipya la Zapier linatoa? Jifunze zaidi hapa. (kiungo?)
 
-### Kuunda kitendo
+### Kuunda kitendo {#creating-an-action}
 
 Ili kuonyesha vizuri zaidi jinsi ya kutumia endpoint ya usajili kwa Zapier, hebu tuunde muunganisho na Google Forms. Kila wakati fomu hii inapojazwa na taarifa kuhifadhiwa kwenye laha ya majibu ya fomu, uanachama mpya utaundwa katika mtandao wa Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Taarifa zikiwa zimesanidiwa, endelea kwenye jaribio la mwisho. Kwenye skrini ya 
 
 Jaribu Zap yako mpya na inapaswa kukamilika kwa mafanikio. Ikiwa hitilafu yoyote itatokea, kagua sehemu zote na ikiwa zinatumwa kwa usahihi. Kwa kuwa kuna taarifa nyingi, baadhi ya mambo yanaweza kupitwa bila kuonekana.
 
-### Vigezo kamili vya endpoint
+### Vigezo kamili vya endpoint {#complete-endpoint-parameters}
 
 Huu hapa mwito kamili na uwezekano wote wa sehemu zinazoweza kutumwa.
 

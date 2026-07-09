@@ -3,11 +3,11 @@ title: Referenca e cilësimeve
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenca e Settings
+# Referenca e Settings {#settings-reference}
 
 Kjo faqe ndjek Settings që ndikojnë në administrimin e përditshëm dhe ndryshimet e fundit të sjelljes në Ultimate Multisite.
 
-## Opsione të tjera
+## Opsione të tjera {#other-options}
 
 Zona **Opsione të tjera** shfaqet nën **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Zona **Opsione të tjera** shfaqet nën **Ultimate Multisite > Settings > Login 
 |---|---|
 | **Enable Jumper** | Shfaq mjetin e navigimit të shpejtë Jumper në zonën e administrimit. Përdoreni për të kaluar drejtpërdrejt te ekranet e Ultimate Multisite, objektet e rrjetit dhe destinacionet e mbështetura të administrimit. Çaktivizojeni nëse nuk dëshironi që kjo shkurtore të jetë e dukshme. |
 
-## Raportimi i gabimeve dhe telemetria
+## Raportimi i gabimeve dhe telemetria {#error-reporting-and-telemetry}
 
 Cilësimi i mëparshëm opt-in për raportimin e gabimeve është hequr nga faqja e settings. Telemetria anonime është e çaktivizuar dhe nuk ka asnjë UI toggle për ta aktivizuar.
 
 Nëse mirëmbani runbooks të brendshme ose pamje ekrani për faqen e settings, hiqni referencat te fusha e vjetër opt-in për raportimin e gabimeve, në mënyrë që administratorët të mos kërkojnë një cilësim që nuk ekziston më.
 
-## Settings për import/eksport
+## Settings për import/eksport {#importexport-settings}
 
 Skeda e settings **Import/Export** përshkruan cilat settings kontrollon dhe lidhet drejtpërdrejt me **Ultimate Multisite > Site Export** për arkivat e site dhe rrjetit. Përdorni skedën e settings për konfigurimin e import/eksportit, përdorni **Tools > Export & Import** për rrjedhën e punës së eksport/importit për një site të vetëm, dhe përdorni mjetin Site Export kur ju nevojitet një arkiv i plotë Network Export.
 
-## Paralajmërim për bilancin e Domain Seller HostAfrica
+## Paralajmërim për bilancin e Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Kur addoni Domain Seller lidhet me HostAfrica, administratorët e rrjetit tani shohin një paralajmërim të mbyllshëm për bilanc të ulët kur bilanci i Account të reseller është tepër i ulët për përpunim të besueshëm të regjistrimit ose rinovimit të domain.
 
 Trajtojeni këtë njoftim si paralajmërim operacional: mbushni bilancin e reseller në HostAfrica përpara se të pranoni më shumë regjistrime domain me pagesë, pastaj kthehuni te settings e Domain Seller ose te ekrani i monitorimit të domain për të konfirmuar që regjistrimet dhe rinovimet mund të vazhdojnë normalisht.
 
-## Settings të lidhësit të ofruesit AI
+## Settings të lidhësit të ofruesit AI {#ai-provider-connector-settings}
 
 Settings të lidhësit të ofruesit AI tani ekspozojnë vetëm grupet e mbështetura të Account OAuth:
 

@@ -3,13 +3,13 @@ title: Agordado de Manaj Pagoj
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Agordo de Manaj Pagoj (v2)
+# Agordo de Manaj Pagoj (v2) {#setting-up-manual-payments-v2}
 
 _**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 
 Manaj pagoj estas maniero por vi oferti aliajn pagmetodojn, se **Stripe** aŭ **PayPal** ne estas disponeblaj por viaj uzantoj. Ĝi povas esti ĝiro aŭ banka transigo aŭ ajna alia pagmetodo disponebla al viaj uzantoj loke.
 
-## Kiel ebligi Manajn Pagojn
+## Kiel ebligi Manajn Pagojn {#how-to-enable-manual-payments}
 
 Agordi manan pagon estas tre facile. Vi nur bezonas ebligi ĝin sub pagaj kluzoj kaj enmeti detalajn instrukciojn pri kiel la uzanto devas sendi la pagon.
 
@@ -31,7 +31,7 @@ Kaj ili ankaŭ ricevos mesaĝon sur via **Dankon**-paĝo kun viaj pagaj instrukc
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Konfirmado de manaj pagoj
+## Konfirmado de manaj pagoj {#confirming-manual-payments}
 
 Por konfirmi manan pagon, iru al la menuo **Pagoj** sur la maldekstra breto. Tie vi povas vidi ĉiujn pagojn en via reto kaj iliajn detalojn, inkluzive de ilia **stato**. Mana pago ĉiam havos staton **Pritraktata** ĝis vi permane ŝanĝos ĝin.
 

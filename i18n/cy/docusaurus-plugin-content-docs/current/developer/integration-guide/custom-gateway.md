@@ -3,11 +3,11 @@ title: Datblygu Porth wedi’i Deilwra
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Datblygu Gateway Personol
+# Datblygu Gateway Personol {#custom-gateway-development}
 
 Gallwch greu pyrth talu personol drwy ymestyn y dosbarth `Base_Gateway`.
 
-## Dosbarth Gateway
+## Dosbarth Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Cofrestru’r Gateway
+## Cofrestru’r Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Dulliau Allweddol
+## Dulliau Allweddol {#key-methods}
 
 | Dull | Diben |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Trin ceisiadau ad-daliad |
 | `get_payment_methods()` | Dychwelyd dulliau talu sydd wedi’u cadw ar gyfer cwsmer |
 
-## Manylion adnewyddu ar gyfer aelodaeth gylchol
+## Manylion adnewyddu ar gyfer aelodaeth gylchol {#renewal-credentials-for-recurring-memberships}
 
 Mae Ultimate Multisite v2.13.0 yn caniatáu i integreiddiadau gateway adrodd a oes gan aelodaeth gylchol fanylyn adnewyddu ail-ddefnyddiadwy cyn i `auto_renew` gael ei gadw. Bachwch `wu_membership_has_renewal_credential` a dychwelwch:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Cliriwch y marciwr manylyn coll fel rhan o lif ail-awdurdodi llwyddiannus eich gateway ar ôl i fanylyn ail-ddefnyddiadwy newydd gael ei storio.
 
-## Awgrymiadau
+## Awgrymiadau {#tips}
 
 - Dychwelwch `WP_Error` bob amser ar fethiant fel y gall Ultimate Multisite drin dangos gwallau
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Defnyddiwch `wu_log_add()` ar gyfer cofnodi penodol i gateway
 
-## Galluoedd darparwr cysylltydd AI
+## Galluoedd darparwr cysylltydd AI {#ai-connector-provider-capabilities}
 
 Dylai integreiddiadau personol sy’n galw gweithrediadau a gefnogir gan gysylltydd AI gyd-fynd â’r set darparwyr OAuth a gefnogir a gyflwynwyd gydag AI Provider for Anthropic Max v1.3.0:
 

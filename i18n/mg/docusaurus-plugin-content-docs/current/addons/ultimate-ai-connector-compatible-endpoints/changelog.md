@@ -5,9 +5,9 @@ title: >-
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Tantaran'ny fanovana ho an'ny Ultimate AI Connector ho an'ny teboka fiafarana mifanaraka
+# Tantaran'ny fanovana ho an'ny Ultimate AI Connector ho an'ny teboka fiafarana mifanaraka {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Dika 2.0.0 — Navoaka tamin'ny 2026-04-24
+## Dika 2.0.0 — Navoaka tamin'ny 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Vaovao: Fanohanana mpamatsy maro — amboary teboka fiafarana AI maro ary alefaso ny fangatahana miaraka amin'ny fallback mandeha ho azy manerana ny mpamatsy.
 * Fanamboarana: Fampidirana SDK ho an'ny mpamatsy maro miaraka amin'ny ID mpamatsy marina, URL fisoratana anarana, ary famerana ny sehatry ny sivana HTTP isaky ny mpamatsy.
@@ -18,4 +18,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Fanamboarana: Nofoanana ny fangatahana HTTP manakana izay nirehitra isaky ny famakiana pejy.
 * Nohatsaraina: Nohavaozina ho Node.js 24 ny workflows GitHub Actions.
 
-## Dika 1.0.0 — Famoahana voalohany
+## Dika 1.0.0 — Famoahana voalohany {#version-100--initial-release}

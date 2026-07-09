@@ -3,28 +3,28 @@ title: REST API 概觀
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API 參考
+# REST API 參考 {#rest-api-reference}
 
-## 基本設定
+## 基本設定 {#base-configuration}
 
 **Base URL：** `{site_url}/wp-json/wu/v2/`
 **Authentication：** API Key 與 Secret（HTTP Basic Auth 或 URL 參數）
 
-## Authentication
+## Authentication {#authentication}
 
-### 啟用 API
+### 啟用 API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### 取得 API 憑證
+### 取得 API 憑證 {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication 方法
+### Authentication 方法 {#authentication-methods}
 
 **HTTP Basic Auth（建議）：**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## 核心端點
+## 核心端點 {#core-endpoints}
 
-### 1. Customers API
+### 1. Customers API {#1-customers-api}
 
 **Base Route：** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Sites API {#2-sites-api}
 
 **Base Route：** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. Memberships API {#3-memberships-api}
 
 **Base Route：** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. Products API {#4-products-api}
 
 **Base Route：** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. Payments API {#5-payments-api}
 
 **Base Route：** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. Domains API {#6-domains-api}
 
 **Base Route：** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## 註冊端點
+## 註冊端點 {#registration-endpoint}
 
 `/register` 端點提供完整的結帳／註冊流程：
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Sovereign Tenant 端點
+## Sovereign Tenant 端點 {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 為會佈建、檢查或驗證隔離租戶的整合新增 sovereign tenant REST 涵蓋範圍。
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 將 `ready: false` 視為上線前阻斷因素。檢查驗證詳細資料，修正資料庫主機繫結、佇列、使用者佈建或路由問題，然後重試驗證。
 
-## 錯誤回應
+## 錯誤回應 {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## 分頁與篩選
+## 分頁與篩選 {#pagination-and-filtering}
 
 **查詢參數：**
 ```http

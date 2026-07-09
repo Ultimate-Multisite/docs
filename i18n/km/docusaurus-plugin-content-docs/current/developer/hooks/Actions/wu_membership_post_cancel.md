@@ -4,22 +4,22 @@ title: សកម្មភាព - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Action: wu_membership_post_cancel
+# Action: wu_membership_post_cancel {#action-wumembershippostcancel}
 
 ដំណើរការបន្ទាប់ពីសមាជិកភាពត្រូវបានបោះបង់។
 
 វានេះនឹងដំណើរការអ៊ីមែលបោះបង់។
 
-## ប៉ារ៉ាម៉ែត្រ
+## ប៉ារ៉ាម៉ែត្រ {#parameters}
 
 | ឈ្មោះ | ប្រភេទ | ការពិពណ៌នា |
 |------|------|-------------|
 | $membership_id | `int` | ID របស់សមាជិកភាព។ |
 | $membership | `\WP_Ultimo\Models\Membership` | វត្ថុ Membership។ |
 
-### ចាប់ពី
+### ចាប់ពី {#since}
 
 - 2.0
-### ប្រភព
+### ប្រភព {#source}
 
 បានកំណត់នៅក្នុង [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2290) នៅបន្ទាត់ 2290

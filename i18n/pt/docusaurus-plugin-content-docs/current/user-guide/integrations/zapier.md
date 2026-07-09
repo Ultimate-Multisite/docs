@@ -3,7 +3,7 @@ title: Integração Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrando o Ultimate Multisite com o Zapier
+# Integrando o Ultimate Multisite com o Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Em um dos artigos, discutimos [Webhooks](webhooks.md) e como eles podem ser usados para integrar com aplicações de terceiros.
 
@@ -15,7 +15,7 @@ Você pode criar **Triggers** (Gatilhos) que serão acionados quando eventos oco
 
 Isso é possível porque os **triggers** e **actions** do **Ultimate Multisite Zapier** são alimentados pela [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Como começar
+## Como começar {#how-to-start}
 
 Primeiro, procure por Ultimate Multisite na lista de aplicativos do Zapier. Alternativamente, você pode clicar neste [link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ No campo URL, insira o URL completo da sua rede, incluindo o protocolo (HTTP ou 
 
 Clique no botão **Sim, Continuar** (Yes, Continue) para passar para a próxima etapa. Se tudo correr bem, você será recebido pela sua nova conta conectada! Clique em **Continuar** (Continue) para criar um novo gatilho (trigger).
 
-## Como criar um novo Gatilho (Trigger)
+## Como criar um novo Gatilho (Trigger) {#how-to-create-a-new-trigger}
 
 Agora que sua conta está conectada, você pode ver os eventos disponíveis. Vamos escolher o evento **payment_received** (recebimento de pagamento) para este tutorial.
 
@@ -67,7 +67,7 @@ Nesta fase, o Zapier testará se o seu Zap consegue **buscar a carga útil espec
 
 No nosso tutorial, o teste foi **concluído com sucesso** e retornou informações de exemplo do payload. Essas informações de exemplo serão úteis para nos guiar na criação de ações. Seu trigger já foi criado e está pronto para ser conectado a outras aplicações.
 
-## Como criar Ações
+## Como criar Ações {#how-to-create-actions}
 
 As Ações usam informações de outros triggers para criar novas entradas na sua rede.
 
@@ -79,7 +79,7 @@ Na próxima etapa, você criará sua autenticação, assim como fizemos em **Com
 
 ![Selecionando a autenticação para a ação do Zapier](/img/admin/webhooks-list.png)
 
-### Configurando a Ação
+### Configurando a Ação {#setting-up-the-action}
 
 Este é o **passo principal da ação** e aqui as coisas são um pouco diferentes. A primeira informação que você escolherá é o **Item**. O Item é o **modelo de informação** da sua rede, como **Clientes, Pagamentos, Sites, E-mails** e outros.
 

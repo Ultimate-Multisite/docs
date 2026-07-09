@@ -3,13 +3,13 @@ title: Een abonnement downgraden
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Een plan downgraden (v2)
+# Een plan downgraden (v2) {#downgrading-a-plan-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
 Het downgraden van een plan of subscription is een veelvoorkomende actie die je clients kunnen uitvoeren als ze een beperkt budget hebben of hebben besloten dat ze niet veel resources nodig hebben om hun subsite te draaien.
 
-## Een plan downgraden
+## Een plan downgraden {#how-to-downgrade-a-plan}
 
 Je clients kunnen hun plan op elk moment downgraden door in te loggen op het admin dashboard van hun subsite en op **Wijzigen** te klikken onder hun Account-pagina.
 
@@ -25,7 +25,7 @@ Om door te gaan hoeft de gebruiker alleen op de knop **Complete Checkout** te kl
 
 ![Account-pagina met banner voor pending membership-wijziging](/img/account-page/pending-change.png)
 
-### Wat gebeurt er wanneer een gebruiker hun plan downgrade
+### Wat gebeurt er wanneer een gebruiker hun plan downgrade {#what-happens-when-a-user-downgrades-their-plan}
 
 Het is belangrijk om te weten dat het downgraden van het plan de bestaande configuratie in de subsite van de gebruiker niet wijzigt.
 
@@ -37,7 +37,7 @@ Voor de posts die de limit overschrijden die op het plan is ingesteld, heb je 3 
 
 ![Network Admin Settings Sites-pagina met opties voor gedrag bij overschreden postlimiet](/img/account-page/settings-sites-post-limit.png)
 
-### Wat gebeurt er met de betaling
+### Wat gebeurt er met de betaling {#what-happens-to-the-payment}
 
 In versie 2.0 vereist dit geen aanpassingen meer aan de betaling op het gebied van proration.
 

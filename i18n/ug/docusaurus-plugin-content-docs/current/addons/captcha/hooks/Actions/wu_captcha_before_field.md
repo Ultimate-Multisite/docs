@@ -4,19 +4,19 @@ title: ھەرىكەت - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# مەشغۇلات: wu_captcha_before_field
+# مەشغۇلات: wu_captcha_before_field {#action-wucaptchabeforefield}
 
 كاپچا ساھەسى كۆرسىتىلىشتىن بۇرۇن ئىجرا بولىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | ئىسىم | تىپ | چۈشەندۈرۈش |
 |------|------|-------------|
 | $args | `array` | كۆرسىتىش پارامېتىرلىرى. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 1.2.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L127) ئىچىدە، 127-قۇردا ئېنىقلانغان

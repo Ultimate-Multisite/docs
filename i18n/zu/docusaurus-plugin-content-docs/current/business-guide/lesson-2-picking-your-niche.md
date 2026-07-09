@@ -3,19 +3,19 @@ title: 'Isifundo 2: Ukukhetha umkhakha wakho okhethekile'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Isifundo 2: Ukukhetha I-niche Yakho
+# Isifundo 2: Ukukhetha I-niche Yakho {#lesson-2-picking-your-niche}
 
 Esifundweni 1 sathola ukuthi kungani i-niche inqoba okujwayelekile. Manje kudingeka ukhethe eyakho. Lesi sifundo sikunikeza uhlaka lokuthola nokuqinisekisa i-niche ngaphambi kokuba utshale isikhathi uyakhela yona.
 
-## Lapho Esagcina Khona
+## Lapho Esagcina Khona {#where-we-left-off}
 
 Sachaza umqondo we-FitSite: inkundla yewebhusayithi yezitudiyo zokuzivocavoca. Kodwa safika kanjani ezitudiyweni zokuzivocavoca ngokuqondile? Lesi sifundo sihamba ngenqubo ukuze ukwazi ukuyisebenzisa ukuthola i-niche yakho.
 
-## Imibandela Emithathu
+## Imibandela Emithathu {#the-three-criteria}
 
 I-niche enhle yenkundla yewebhusayithi ihlangabezana nezimo ezintathu:
 
-### 1. Badinga Amawebhusayithi Kodwa Bayahluleka Ukuthola Amahle
+### 1. Badinga Amawebhusayithi Kodwa Bayahluleka Ukuthola Amahle {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Bheka izimboni lapho:
 
@@ -26,7 +26,7 @@ Bheka izimboni lapho:
 
 **Izitudiyo zokuzivocavoca ziyafaneleka**: amalungu alindele ukuthola amashejuli amakilasi, amanani, nokubhuka ku-inthanethi. Amawebhusayithi amaningi ezitudiyo aphelelwe yisikhathi noma akhiwe ngezifanekiso ezijwayelekile ezingafezi injongo.
 
-### 2. Amabhizinisi Angakwazi Ukukhokhela Isubscription Sanyanga Zonke
+### 2. Amabhizinisi Angakwazi Ukukhokhela Isubscription Sanyanga Zonke {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Amakhasimende owaqondisayo kudingeka abe:
 
@@ -36,7 +36,7 @@ Amakhasimende owaqondisayo kudingeka abe:
 
 **Izitudiyo zokuzivocavoca ziyafaneleka**: sezivele zikhokhela isoftware yokubhuka, ukucubungula izinkokhelo, namathuluzi okumaketha. I-subscription yewebhusayithi iyisengezo esingokwemvelo.
 
-### 3. Bayakhuluma Bodwa
+### 3. Bayakhuluma Bodwa {#3-they-talk-to-each-other}
 
 Ama-niche angcono kakhulu anokulandelayo:
 
@@ -46,9 +46,9 @@ Ama-niche angcono kakhulu anokulandelayo:
 
 **Izitudiyo zokuzivocavoca ziyafaneleka**: abanikazi bezitudiyo baya emicimbini yemboni yezokuzivocavoca, babamba iqhaza emiphakathini eku-inthanethi, futhi bavame ukwabelana ngamathuluzi nezinsizakalo nozakwabo.
 
-## Indlela Yokuthola Abangaba Ama-niche
+## Indlela Yokuthola Abangaba Ama-niche {#how-to-find-niche-candidates}
 
-### Qala Ngalokho Okwaziyo
+### Qala Ngalokho Okwaziyo {#start-with-what-you-know}
 
 Okuhlangenwe nakho kwakho okukhona kuyinzuzo. Cabanga ngalokhu:
 
@@ -56,7 +56,7 @@ Okuhlangenwe nakho kwakho okukhona kuyinzuzo. Cabanga ngalokhu:
 - Izinto ozithandayo noma izintshisekelo lapho uqonda khona umphakathi
 - Amanethiwekhi ochwepheshe osuvele ungowawo
 
-### Bheka Izimpawu Zobuhlungu
+### Bheka Izimpawu Zobuhlungu {#look-for-pain-signals}
 
 Sesha ubufakazi bokuthi amabhizinisi ku-niche ahlushwa amawebhusayithi:
 
@@ -65,7 +65,7 @@ Sesha ubufakazi bokuthi amabhizinisi ku-niche ahlushwa amawebhusayithi:
 - Bheka amawebhusayithi angempela ku-niche -- ingabe amaningi awo mabi?
 - Hlola ukuthi bakhona yini abancintisana nawe nokuthi bayisebenzela kahle kangakanani imakethe
 
-### Hlola Ezomnotho
+### Hlola Ezomnotho {#evaluate-the-economics}
 
 Ku-niche ngayinye engaba khona, linganisa:
 
@@ -73,11 +73,11 @@ Ku-niche ngayinye engaba khona, linganisa:
 - **Ukuzimisela ukukhokha**: Bachitha malini njengamanje kumathuluzi afanayo?
 - **Amandla enani lesikhathi sokuphila**: Ingabe la mabhizinisi azinzile, noma ayashintsha ngokushesha?
 
-## Ukuqinisekisa I-niche Yakho
+## Ukuqinisekisa I-niche Yakho {#validating-your-niche}
 
 Ngaphambi kokwakha noma yini, qinisekisa isidingo:
 
-### Khuluma Namakhasimende Angaba Khona
+### Khuluma Namakhasimende Angaba Khona {#talk-to-potential-customers}
 
 Xhumana nabanikazi bamabhizinisi abangu-10-15 ku-niche oyiqondisayo. Buza:
 
@@ -88,17 +88,17 @@ Xhumana nabanikazi bamabhizinisi abangu-10-15 ku-niche oyiqondisayo. Buza:
 
 Awukadayisi okwamanje. Uyalalela.
 
-### Hlola Isimo Sabancintisana Nawe
+### Hlola Isimo Sabancintisana Nawe {#check-competitor-landscape}
 
 - **Abekho abancintisana nawe**: Kungasho ukuthi asikho isidingo, noma kungasho ithuba elingakathintwa. Izingxoxo namakhasimende zizokutshela ukuthi yikuphi.
 - **Abancintisana nawe abambalwa**: Uphawu oluhle. Kuqinisekisa isidingo. Funda lokho abakwenza kahle nalapho besilela khona.
 - **Abancintisana nawe abaningi**: Kunzima kakhulu ukungena, kodwa kusenokwenzeka uma ungazihlukanisa ngokucacile.
 
-### Yakha Ikhasi Lokufika
+### Yakha Ikhasi Lokufika {#build-a-landing-page}
 
 Ngaphambi kokwakha inkundla, dala ikhasi lokufika elilula elichaza isixazululo sakho se-niche bese uqoqa ukubhalisa nge-imeyili. Sebenzisa inani elincane lokukhangisa okuqondisiwe ukuze uhlole intshisekelo. Uma abantu bebhalisa, usunokuqinisekiswa.
 
-## Ukusebenzisa Lokhu ku-FitSite
+## Ukusebenzisa Lokhu ku-FitSite {#applying-this-to-fitsite}
 
 Nansi indlela i-FitSite ethole ngayo amaphuzu uma iqhathaniswa nemibandela:
 
@@ -112,7 +112,7 @@ Nansi indlela i-FitSite ethole ngayo amaphuzu uma iqhathaniswa nemibandela:
 
 Ukuqinisekiswa kuqinisekise ithuba. Manje siyakha.
 
-## Imibono Yama-niche Ongayicabangela
+## Imibono Yama-niche Ongayicabangela {#niche-ideas-to-consider}
 
 Uma ezokuzivocavoca zingeyona imakethe yakho, nazi ezinye ama-niche ahlangabezana nemibandela:
 
@@ -127,7 +127,7 @@ Uma ezokuzivocavoca zingeyona imakethe yakho, nazi ezinye ama-niche ahlangabezan
 
 Ngayinye yalezi inezici ezifanayo: izidingo zewebhusayithi ezicacile, ikhono lokukhokha, nokusabalala kwezwi ngomphakathi.
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Uhlaka lokukhetha i-niche**: imibandela emithathu yokuhlola noma iyiphi i-niche
 - **Izindlela zokuqinisekisa**: izingxoxo namakhasimende, ukuhlaziywa kwabancintisana nawe, ukuhlola ikhasi lokufika

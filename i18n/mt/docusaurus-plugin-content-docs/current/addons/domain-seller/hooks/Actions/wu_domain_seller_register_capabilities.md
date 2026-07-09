@@ -4,19 +4,19 @@ title: Azzjoni - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
 _i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Azzjoni: wu_domain_seller_register_capabilities
+# Azzjoni: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
 
 Jippermetti lil plugins oħra jirreġistraw kapaċitajiet addizzjonali ta’ bejgħ ta’ dominji.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
 | $registry | `\WP_Ultimo\Integrations\Integration_Registry` | Ir-reġistru tal-integrazzjoni. |
 
-### Minn
+### Minn {#since}
 
 - 2.1.0
-### Sors
+### Sors {#source}
 
 Iddefinit f’[`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L320) fil-linja 320

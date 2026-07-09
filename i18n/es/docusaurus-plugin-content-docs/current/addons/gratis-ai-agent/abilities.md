@@ -3,7 +3,7 @@ title: Referencia de capacidades
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referencia de habilidades
+# Referencia de habilidades {#abilities-reference}
 
 Las habilidades son las acciones atómicas que Gratis AI Agent puede invocar en tu instalación de WordPress. Cada habilidad es una clase PHP registrada que expone un esquema JSON: el agente lee este esquema en tiempo de ejecución para entender qué parámetros son obligatorios y qué devuelve la habilidad.
 
@@ -11,11 +11,11 @@ Esta página documenta todas las habilidades incluidas con Gratis AI Agent v1.9.
 
 ---
 
-## Tipos de entradas personalizadas
+## Tipos de entradas personalizadas {#custom-post-types}
 
 Estas habilidades gestionan tipos de entradas personalizadas (CPTs) registradas mediante el agente. Los registros se conservan en la tabla de opciones de WordPress para que sobrevivan a la desactivación y reactivación del plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registra un nuevo tipo de entrada personalizada.
 
@@ -50,7 +50,7 @@ Registra un nuevo tipo de entrada personalizada.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Devuelve todos los tipos de entradas personalizadas registrados por el agente.
 
@@ -73,7 +73,7 @@ Devuelve todos los tipos de entradas personalizadas registrados por el agente.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Anula el registro de un tipo de entrada personalizada registrado previamente por el agente. Las entradas existentes de ese tipo permanecen en la base de datos, pero ya no son accesibles mediante el tipo de entrada.
 
@@ -87,11 +87,11 @@ Anula el registro de un tipo de entrada personalizada registrado previamente por
 
 ---
 
-## Taxonomías personalizadas
+## Taxonomías personalizadas {#custom-taxonomies}
 
 Estas habilidades gestionan taxonomías personalizadas. Al igual que los CPTs, los registros de taxonomía se conservan.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registra una nueva taxonomía personalizada.
 
@@ -123,7 +123,7 @@ Registra una nueva taxonomía personalizada.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Devuelve todas las taxonomías personalizadas registradas por el agente.
 
@@ -146,7 +146,7 @@ Devuelve todas las taxonomías personalizadas registradas por el agente.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Anula el registro de una taxonomía personalizada registrada previamente por el agente.
 
@@ -160,11 +160,11 @@ Anula el registro de una taxonomía personalizada registrada previamente por el 
 
 ---
 
-## Sistema de diseño
+## Sistema de diseño {#design-system}
 
 Las habilidades del sistema de diseño modifican la presentación visual del sitio WordPress, desde CSS personalizado hasta patrones de bloques y el logotipo del sitio.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Añade CSS al `<head>` del sitio mediante `wp_add_inline_style`. El CSS se almacena en la opción `gratis_ai_agent_custom_css` y se retira de la cola limpiamente cuando se restablece la habilidad.
 
@@ -190,7 +190,7 @@ Añade CSS al `<head>` del sitio mediante `wp_add_inline_style`. El CSS se almac
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registra un patrón de bloques reutilizable en la biblioteca de patrones de WordPress.
 
@@ -209,7 +209,7 @@ Registra un patrón de bloques reutilizable en la biblioteca de patrones de Word
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Lista todos los patrones de bloques registrados por el agente.
 
@@ -231,7 +231,7 @@ Lista todos los patrones de bloques registrados por el agente.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Establece el logo del sitio WordPress en un ID de adjunto dado o en una URL de imagen remota. Cuando se proporciona una URL, la imagen se descarga y se importa en la Biblioteca de medios.
 
@@ -248,7 +248,7 @@ Debe proporcionarse uno de `attachment_id` o `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Aplica un ajuste preestablecido con nombre de color/tipografía al `theme.json` (o `global-styles`) del tema activo. Los ajustes preestablecidos son paquetes seleccionados mantenidos por el equipo de Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Aplica un ajuste preestablecido con nombre de color/tipografía al `theme.json` 
 
 ---
 
-## Estilos globales
+## Estilos globales {#global-styles}
 
 Las capacidades de Estilos globales leen y escriben valores de theme.json mediante la API de Estilos globales de WordPress, afectando a todos los bloques y plantillas en todo el sitio.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Devuelve la configuración actual de estilos globales.
 
@@ -291,7 +291,7 @@ Devuelve la configuración actual de estilos globales.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Actualiza uno o más valores en la configuración de estilos globales.
 
@@ -318,7 +318,7 @@ Actualiza uno o más valores en la configuración de estilos globales.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Restablece todos los cambios de estilos globales aplicados por el agente, restaurando los valores predeterminados del tema.
 
@@ -328,11 +328,11 @@ Restablece todos los cambios de estilos globales aplicados por el agente, restau
 
 ---
 
-## Menús de navegación
+## Menús de navegación {#navigation-menus}
 
 Las capacidades de Menús de navegación crean y gestionan menús de navegación de WordPress y sus elementos.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Crea un nuevo menú de navegación de WordPress.
 
@@ -347,7 +347,7 @@ Crea un nuevo menú de navegación de WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Cambia el nombre de un menú o lo reasigna a una ubicación del tema.
 
@@ -363,7 +363,7 @@ Cambia el nombre de un menú o lo reasigna a una ubicación del tema.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Añade un elemento a un menú de navegación existente.
 
@@ -383,7 +383,7 @@ Añade un elemento a un menú de navegación existente.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Elimina un elemento de un menú de navegación.
 
@@ -397,7 +397,7 @@ Elimina un elemento de un menú de navegación.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Enumera todos los menús de navegación de WordPress, incluidas sus ubicaciones de tema asignadas.
 
@@ -420,11 +420,11 @@ Enumera todos los menús de navegación de WordPress, incluidas sus ubicaciones 
 
 ---
 
-## Gestión de opciones
+## Gestión de opciones {#options-management}
 
 Las capacidades de opciones leen y escriben opciones de WordPress mediante `get_option` / `update_option`. Una lista de bloqueo de seguridad integrada evita la modificación accidental de ajustes críticos.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Lee una opción de WordPress.
 
@@ -440,7 +440,7 @@ Devuelve un error si `option_name` está en la lista de bloqueo de seguridad.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Escribe una opción de WordPress.
 
@@ -458,7 +458,7 @@ Devuelve un error si `option_name` está en la lista de bloqueo de seguridad.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Elimina una opción de WordPress.
 
@@ -474,7 +474,7 @@ Devuelve un error si `option_name` está en la lista de bloqueo de seguridad.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Lista las opciones de WordPress que coinciden con un patrón.
 
@@ -498,11 +498,11 @@ Lista las opciones de WordPress que coinciden con un patrón.
 
 ---
 
-## Gestión de contenido
+## Gestión de contenido {#content-management}
 
 Las capacidades de gestión de contenido crean y editan entradas y páginas de WordPress. Se devuelven los IDs de las entradas para que los pasos posteriores en planes de múltiples capacidades puedan hacer referencia al contenido creado.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Crea una nueva entrada, página o entrada de tipo de contenido personalizado de WordPress.
 
@@ -537,7 +537,7 @@ Crea una nueva entrada, página o entrada de tipo de contenido personalizado de 
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Actualiza una entrada o página existente de WordPress.
 
@@ -567,7 +567,7 @@ Actualiza una entrada o página existente de WordPress.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Crea múltiples entradas en una sola llamada de capacidad, reduciendo los viajes de ida y vuelta durante la creación de sitios o la importación masiva de contenido. Las entradas se crean en secuencia; si una falla, las demás continúan y el fallo se informa en el array de resultados.
 
@@ -619,7 +619,7 @@ Crea múltiples entradas en una sola llamada de capacidad, reduciendo los viajes
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Asigna una imagen destacada (miniatura de entrada) a una entrada o página existente. Acepta un ID de adjunto existente de la biblioteca de medios o una URL de imagen remota; cuando se proporciona una URL, la imagen se descarga e importa automáticamente.
 
@@ -638,7 +638,7 @@ Se debe proporcionar uno de `attachment_id` o `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Crea un formulario de contacto usando el plugin de formularios activo (Contact Form 7, WPForms, Fluent Forms o Gravity Forms, según cuál esté instalado). Devuelve un shortcode que se puede incrustar en cualquier entrada o página.
 
@@ -691,11 +691,11 @@ Crea un formulario de contacto usando el plugin de formularios activo (Contact F
 
 ---
 
-## Revisión visual
+## Revisión visual {#visual-review}
 
 Las capacidades de Revisión visual permiten al agent capturar capturas de pantalla de páginas en vivo y analizarlas, lo que habilita la revisión de diseño autónoma, comparaciones de antes/después y comprobaciones de regresión visual sin requerir ninguna extensión de navegador.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Captura una captura de pantalla de una página de WordPress en una URL determinada usando un navegador headless del lado del servidor. La imagen se guarda en la Biblioteca de medios y se devuelve una URL de CDN.
 
@@ -724,7 +724,7 @@ Captura una captura de pantalla de una página de WordPress en una URL determina
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Toma dos capturas de pantalla y devuelve una puntuación de diferencia visual más una imagen de diferencia que resalta las regiones cambiadas. Útil para confirmar que un cambio de diseño produjo el resultado esperado o para detectar regresiones no intencionadas.
 
@@ -754,7 +754,7 @@ Un `diff_score` de `0.0` significa que no hay ningún cambio visible; `1.0` sign
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Captura una captura de pantalla de una página y la envía al modelo de lenguaje para análisis visual. Devuelve una evaluación estructurada que cubre el diseño, la tipografía, el uso del color y los problemas de accesibilidad.
 
@@ -785,11 +785,11 @@ Captura una captura de pantalla de una página y la envía al modelo de lenguaje
 
 ---
 
-## Capacidades instalables
+## Capacidades instalables {#installable-abilities}
 
 El Registro de capacidades instalables te permite extender el agent con paquetes de capacidades adicionales distribuidos como plugins de WordPress. Cada paquete registra una o más capacidades usando la API de capacidades estándar.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Devuelve el catálogo de paquetes de capacidades disponibles para instalar desde el registro.
 
@@ -818,7 +818,7 @@ Devuelve el catálogo de paquetes de capacidades disponibles para instalar desde
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Descarga y activa un paquete de habilidades desde el registro.
 
@@ -832,7 +832,7 @@ Descarga y activa un paquete de habilidades desde el registro.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Consulta el registro de habilidades para encontrar el mejor plugin para un caso de uso descrito y, opcionalmente, lo instala.
 

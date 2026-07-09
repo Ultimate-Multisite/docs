@@ -3,35 +3,35 @@ title: Izpētes intervija
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Izzināšanas intervija
+# Izzināšanas intervija {#discovery-interview}
 
 **Izzināšanas intervija** ir pirmais solis Theme Builder dizaina procesā. Tā apkopo informāciju par jūsu vietni, uzņēmumu un dizaina vēlmēm, lai izveidotu personalizētu tēmu.
 
-## Pārskats
+## Pārskats {#overview}
 
 Izzināšanas intervija vada jūs cauri jautājumu sērijai, lai izprastu jūsu zīmolu, mērķauditoriju un dizaina mērķus. Versijā 1.16.0 intervijā tagad ir iekļauts **fotoattēlu augšupielādes solis**, kas ļauj sniegt vizuālu iedvesmu jūsu dizainam.
 
-## Intervijas soļi
+## Intervijas soļi {#interview-steps}
 
-### 1. Uzņēmuma informācija
+### 1. Uzņēmuma informācija {#1-business-information}
 
 - Vietnes nosaukums un sauklis
 - Uzņēmuma veids vai nozare
 - Galvenie uzņēmuma mērķi
 - Mērķauditorijas apraksts
 
-### 2. Dizaina vēlmes
+### 2. Dizaina vēlmes {#2-design-preferences}
 
 - Vēlamā krāsu shēma
 - Dizaina stils (modern, classic, minimalist, playful utt.)
 - Iedvesmas vietnes vai zīmoli
 - Obligāti nepieciešamie dizaina elementi
 
-### 3. Fotoattēlu augšupielāde (jauns v1.16.0)
+### 3. Fotoattēlu augšupielāde (jauns v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Augšupielādējiet vienu vai vairākus fotoattēlus, lai ietekmētu dizaina virzienu:
 
-#### Pieņemtie formāti
+#### Pieņemtie formāti {#accepted-formats}
 
 | Formāts | Paplašinājums | Informācija |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Augšupielādējiet vienu vai vairākus fotoattēlus, lai ietekmētu dizaina vir
 | **WebP** | `.webp` | Mūsdienīgs formāts, mazāks faila izmērs |
 | **GIF** | `.gif` | Tikai statiski attēli (bez animācijas) |
 
-#### Failu prasības
+#### Failu prasības {#file-requirements}
 
 - **Maksimālais faila izmērs:** 10 MB
 - **Minimālie izmēri:** 400 × 300 pikseļi
 - **Ieteicamie izmēri:** 1200 × 800 pikseļi vai lielāki
 - **Malu attiecība:** Pieņemama jebkura attiecība
 
-#### Kā fotoattēli ietekmē dizaina virzienu
+#### Kā fotoattēli ietekmē dizaina virzienu {#how-photos-influence-design-direction}
 
 Jūsu augšupielādētie fotoattēli palīdz Theme Builder saprast:
 
@@ -57,21 +57,21 @@ Jūsu augšupielādētie fotoattēli palīdz Theme Builder saprast:
 - **Dizaina elementi** — raksti, tekstūras un kompozīcijas stili
 - **Tipogrāfijas iedvesma** — fontu stili, kas papildina vizuālo tēmu
 
-### 4. Satura struktūra
+### 4. Satura struktūra {#4-content-structure}
 
 - Nepieciešamās galvenās lapas (Sākumlapa, Par mums, Pakalpojumi, Kontakti utt.)
 - Nepieciešama emuāra vai jaunumu sadaļa
 - Nepieciešama e-komercijas funkcionalitāte
 - Īpašas funkcijas vai integrācijas
 
-### 5. Pārskatīšana un apstiprināšana
+### 5. Pārskatīšana un apstiprināšana {#5-review-and-confirmation}
 
 - Visa sniegtā informācijas kopsavilkums
 - Apstiprinājums pirms dizaina ģenerēšanas sākuma
 
-## Fotoattēlu augšupielādes labā prakse
+## Fotoattēlu augšupielādes labā prakse {#photo-upload-best-practices}
 
-### Ko augšupielādēt
+### Ko augšupielādēt {#what-to-upload}
 
 - **Zīmola iedvesma** — logotipi, krāsu paraugi vai zīmola vadlīnijas
 - **Konkurentu vietnes** — ekrānuzņēmumi no vietnēm, kas jums patīk
@@ -80,7 +80,7 @@ Jūsu augšupielādētie fotoattēli palīdz Theme Builder saprast:
 - **Komandas vai biroja fotoattēli** — personiskajam vai profesionālajam zīmolam
 - **Dzīvesstila attēli** — kas atspoguļo jūsu mērķauditoriju
 
-### No kā izvairīties
+### No kā izvairīties {#what-to-avoid}
 
 - **Zemas kvalitātes attēli** — izplūduši vai pikseļaini fotoattēli
 - **Nesaistīti attēli** — fotoattēli, kas neatspoguļo jūsu zīmolu
@@ -88,7 +88,7 @@ Jūsu augšupielādētie fotoattēli palīdz Theme Builder saprast:
 - **Ar autortiesībām aizsargāts materiāls** — pārliecinieties, ka jums ir tiesības izmantot attēlus
 - **Animēti GIF** — tiek apstrādāti tikai statiski attēli
 
-### Padomi labākajiem rezultātiem
+### Padomi labākajiem rezultātiem {#tips-for-best-results}
 
 1. **Augšupielādējiet 2–3 attēlus** — vairāki attēli sniedz labāku kontekstu
 2. **Izmantojiet augstas kvalitātes fotoattēlus** — skaidri, labi izgaismoti attēli darbojas vislabāk
@@ -96,7 +96,7 @@ Jūsu augšupielādētie fotoattēli palīdz Theme Builder saprast:
 4. **Sniedziet kontekstu** — īsi aprakstiet, kāpēc izvēlējāties katru attēlu
 5. **Esiet konkrēti** — ja jums patīk kāds konkrēts elements, norādiet to
 
-## Dizaina virziena izvade
+## Dizaina virziena izvade {#design-direction-output}
 
 Pēc Izzināšanas intervijas Theme Builder ģenerē:
 
@@ -106,7 +106,7 @@ Pēc Izzināšanas intervijas Theme Builder ģenerē:
 - **Vizuālie elementi** — ikonas, raksti un dekoratīvie elementi
 - **Noskaņu kolāža** — dizaina virziena vizuāls attēlojums
 
-## Nākamie soļi
+## Nākamie soļi {#next-steps}
 
 Pēc Izzināšanas intervijas pabeigšanas:
 
@@ -115,7 +115,7 @@ Pēc Izzināšanas intervijas pabeigšanas:
 3. Turpiniet ar [Dizaina virziena](./design-direction.md) soli
 4. Theme Builder izveido jūsu pielāgoto tēmu
 
-## Saistītā dokumentācija
+## Saistītā dokumentācija {#related-documentation}
 
 - [Dizaina virziens](./design-direction.md) — pārskatiet un pilnveidojiet savu dizainu
 - [Viesmīlības ēdienkartes](./hospitality-menus.md) — izveidojiet strukturētas ēdienkartes lapas

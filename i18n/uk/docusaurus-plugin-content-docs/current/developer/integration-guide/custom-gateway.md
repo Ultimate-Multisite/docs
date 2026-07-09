@@ -3,11 +3,11 @@ title: Розробка індивідуального шлюзу
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Розробка користувацького шлюзу
+# Розробка користувацького шлюзу {#custom-gateway-development}
 
 Ви можете створювати користувацькі платіжні шлюзи, розширюючи клас `Base_Gateway`.
 
-## Клас шлюзу
+## Клас шлюзу {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Зареєструвати шлюз
+## Зареєструвати шлюз {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ключові методи
+## Ключові методи {#key-methods}
 
 | Метод | Призначення |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Обробляти запити на повернення коштів |
 | `get_payment_methods()` | Повернути збережені платіжні методи для клієнта |
 
-## Облікові дані поновлення для повторюваних членств
+## Облікові дані поновлення для повторюваних членств {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 дає інтеграціям шлюзів змогу повідомляти, чи має повторюване членство придатні для повторного використання облікові дані поновлення до того, як `auto_renew` буде збережено. Підключіть `wu_membership_has_renewal_credential` і поверніть:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Очистьте позначку про відсутні облікові дані як частину успішного процесу повторної авторизації вашого шлюзу після збереження нових придатних для повторного використання облікових даних.
 
-## Поради
+## Поради {#tips}
 
 - Завжди повертайте `WP_Error` у разі збою, щоб Ultimate Multisite міг обробити відображення помилки
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Використовуйте `wu_log_add()` для журналювання, специфічного для шлюзу
 
-## Можливості постачальника AI connector
+## Можливості постачальника AI connector {#ai-connector-provider-capabilities}
 
 Користувацькі інтеграції, які викликають операції на основі AI connector, мають узгоджуватися з підтримуваним набором OAuth-постачальників, представленим в AI Provider for Anthropic Max v1.3.0:
 

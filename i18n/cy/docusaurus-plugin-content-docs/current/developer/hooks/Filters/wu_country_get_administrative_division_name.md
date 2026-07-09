@@ -4,11 +4,11 @@ title: Hidlydd - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Hidlydd: wu_country_get_administrative_division_name
+# Hidlydd: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Yn dychwelyd enw taclus is-adrannau gweinyddol y wlad.
 
-## Paramedrau
+## Paramedrau {#parameters}
 
 | Enw | Math | Disgrifiad |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Yn dychwelyd enw taclus is-adrannau gweinyddol y wlad.
 | $ucwords | `bool` | os ydym yn rhoi’r geiriau mewn priflythrennau. |
 | $current_country | `\WP_Ultimo\Country\Country` | Enghraifft o’r dosbarth cyfredol. |
 
-### Ers
+### Ers {#since}
 
 - 2.0.11
-### Ffynhonnell
+### Ffynhonnell {#source}
 
 Wedi’i ddiffinio yn [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ar linell 250
 
 
-## Yn Dychwelyd
+## Yn Dychwelyd {#returns}
 Enw’r adran wedi’i addasu.

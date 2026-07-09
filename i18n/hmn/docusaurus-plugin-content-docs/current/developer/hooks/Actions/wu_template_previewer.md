@@ -4,19 +4,19 @@ title: Kev nqis tes - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Kev ua: wu_template_previewer
+# Kev ua: wu_template_previewer {#action-wutemplatepreviewer}
 
 Khiav thaum nyob hauv template previewer context.
 
-## Parameters
+## Parameters {#parameters}
 
 | Npe | Hom | Kev piav qhia |
 |------|------|-------------|
 | $template_previewer | `self` | Instance ntawm class tam sim no. |
 
-### Txij li
+### Txij li {#since}
 
 - 2.0.4
-### Qhov chaw
+### Qhov chaw {#source}
 
 Tau txhais hauv [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) ntawm kab 86

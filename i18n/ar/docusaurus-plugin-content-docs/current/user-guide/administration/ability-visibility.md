@@ -3,11 +3,11 @@ title: رؤية الصلاحية
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# رؤية القدرات (Ability Visibility)
+# رؤية القدرات (Ability Visibility) {#ability-visibility}
 
 يقدم Superdav AI Agent الإصدار v1.12.0 ميزات **رؤية القدرات (Ability Visibility)** التي تتحكم في الواجهات التي تعرض كل قدرة. يتيح هذا للمسؤولين ضبط وتحديد قدرات الوكيل (agent) التي تكون متاحة عبر واجهات REST APIs، وخوادم MCP، وتكاملات WooCommerce، والواجهات الأخرى.
 
-## ما هي رؤية القدرات؟
+## ما هي رؤية القدرات؟ {#what-is-ability-visibility}
 
 رؤية القدرات هي نظام أذونات يتحكم في:
 
@@ -18,9 +18,9 @@ _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 
 تحمل كل قدرة مستوى رؤية يحدد مدى توفرها عبر الواجهات المختلفة.
 
-## مستويات الرؤية
+## مستويات الرؤية {#visibility-levels}
 
-### عامة (Public)
+### عامة (Public) {#public}
 
 **القدرات العامة** متاحة في كل مكان:
 
@@ -32,7 +32,7 @@ _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 
 مثال: `scaffold-block-theme`، `activate-theme`، `send-email`
 
-### داخلية (Internal)
+### داخلية (Internal) {#internal}
 
 **القدرات الداخلية** متاحة فقط ضمن تثبيت WordPress الخاص بك:
 
@@ -43,7 +43,7 @@ _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 
 مثال: `manage-settings`، `view-analytics`، `export-data`
 
-### للشركاء (Partner)
+### للشركاء (Partner) {#partner}
 
 **قدرات الشركاء** متاحة فقط للشركاء المسموح لهم (whitelisted):
 
@@ -54,7 +54,7 @@ _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 
 مثال: `bulk-import-users`، `modify-billing`، `access-analytics`
 
-### معطلة (Disabled)
+### معطلة (Disabled) {#disabled}
 
 **القدرات المعطلة** غير متاحة في أي مكان:
 
@@ -63,15 +63,15 @@ _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 - غير متاحة في لوحات الإدارة
 - مفيدة للقدرات التي تم إهمالها أو التجريبية
 
-## إدارة رؤية القدرات
+## إدارة رؤية القدرات {#managing-ability-visibility}
 
-### الوصول إلى إعدادات رؤية القدرات
+### الوصول إلى إعدادات رؤية القدرات {#accessing-ability-visibility-settings}
 
 1. اذهب إلى **لوحة تحكم WordPress (WordPress Admin)** → **Superdav AI Agent** → **الإعدادات (Settings)**
 2. انقر على علامة التبويب **القدرات (Abilities)**
 3. سترى قائمة بجميع القدرات المثبتة ومستويات رؤيتها
 
-### عرض تفاصيل القدرة
+### عرض تفاصيل القدرة {#viewing-ability-details}
 
 انقر على أي قدرة لرؤية:
 
@@ -82,7 +82,7 @@ _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 - **آخر تحديث (Last updated)**: متى تم تغيير الرؤية آخر مرة
 - **الحالة (Status)**: معروفة (Recognized) أو غير مصنفة (Unclassified)
 
-### تغيير مستويات الرؤية
+### تغيير مستويات الرؤية {#changing-visibility-levels}
 
 لتغيير رؤية قدرة ما:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### العمليات المجمعة (Bulk Operations)
+### العمليات المجمعة (Bulk Operations) {#bulk-operations}
 
 لتغيير الرؤية لعدة قدرات:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. اختر مستوى رؤية جديد من القائمة المنسدلة للإجراء المجمع
 3. انقر على **تطبيق (Apply)**
 
-## قائمة السماح بالشركاء (Partner Allow-List)
+## قائمة السماح بالشركاء (Partner Allow-List) {#partner-allow-list}
 
 تتحكم **قائمة السماح بالشركاء** في الشركاء الخارجيين الذين يمكنهم الوصول إلى القدرات المخصصة للشركاء.
 
-### إضافة الشركاء
+### إضافة الشركاء {#adding-partners}
 
 1. اذهب إلى **Superdav AI Agent** → **الإعدادات (Settings)** → **الشركاء (Partners)**
 2. انقر على **إضافة شريك (Add Partner)**
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. يمكنك إضافة اسم ووصف للشريك اختياريًا
 5. انقر على **حفظ (Save)**
 
-### تعيين القدرات للشركاء
+### تعيين القدرات للشركاء {#assigning-abilities-to-partners}
 
 بعد إضافة شريك:
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 4. في قسم "قائمة السماح بالشركاء"، ضع علامة في المربعات للشركاء الذين يجب أن يكون لديهم وصول
 5. انقر على **حفظ (Save)**
 
-### إلغاء وصول الشريك
+### إلغاء وصول الشريك {#revoking-partner-access}
 
 لإزالة وصول شريك ما:
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 سيفقد الشريك الوصول إلى تلك القدرة على الفور.
 
-## القدرات غير المصنفة (Unclassified Abilities)
+## القدرات غير المصنفة (Unclassified Abilities) {#unclassified-abilities}
 
 عندما تقوم بتثبيت قدرة تابعة لجهة خارجية ولا يتعرف عليها Superdav AI Agent، يتم وضع علامة عليها بأنها **غير مصنفة (Unclassified)**.
 
-### إشعار المسؤول للقدرات غير المصنفة
+### إشعار المسؤول للقدرات غير المصنفة {#admin-notice-for-unclassified-abilities}
 
 سترى إشعار مسؤول:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### مراجعة القدرات غير المصنفة
+### مراجعة القدرات غير المصنفة {#reviewing-unclassified-abilities}
 
 1. انقر على **مراجعة القدرات (Review Abilities)** في الإشعار
 2. لكل قدرة غير مصنفة، سترى:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. انقر على **تصنيف (Classify)** لحفظ قرارك
 
-### لماذا يجب تصنيف القدرات غير المصنفة؟
+### لماذا يجب تصنيف القدرات غير المصنفة؟ {#why-classify-unclassified-abilities}
 
 تصنيف القدرات:
 
@@ -187,9 +187,9 @@ Please review and classify them.
 - **يمكّن الميزات**: بمجرد تصنيفها، تصبح القدرة متاحة
 - **يوثق القرارات**: يتم تسجيل خياراتك لأغراض التدقيق
 
-## الرؤية في الواجهات المختلفة
+## الرؤية في الواجهات المختلفة {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **القدرات العامة** متاحة عبر نقاط نهاية REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **القدرات الداخلية وقدرات الشركاء** غير متاحة عبر REST API.
 
-### خوادم MCP
+### خوادم MCP {#mcp-servers}
 
 **القدرات العامة** متاحة عبر MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **قدرات الشركاء** متاحة فقط باستخدام بيانات اعتماد الشريك.
 
-### تكامل WooCommerce
+### تكامل WooCommerce {#woocommerce-integration}
 
 **القدرات العامة** المتعلقة بـ WooCommerce متاحة:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **القدرات الداخلية** غير معروضة لـ WooCommerce.
 
-### واجهة الدردشة (Chat Interface)
+### واجهة الدردشة (Chat Interface) {#chat-interface}
 
 **جميع القدرات** (العامة، الداخلية، للشركاء) متاحة في الدردشة، اعتمادًا على أذونات المستخدم:
 
@@ -235,34 +235,34 @@ Available abilities:
 - يرى المستخدمون العاديون القدرات العامة فقط
 - يرى الشركاء القدرات العامة + قدرات الشركاء (إذا كانوا ضمن القائمة البيضاء)
 
-## أفضل ممارسات الأمان
+## أفضل ممارسات الأمان {#security-best-practices}
 
-### مبدأ الامتياز الأقل (Principle of Least Privilege)
+### مبدأ الامتياز الأقل (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - اضبط القدرات على مستوى الرؤية الأكثر تقييدًا الذي لا يزال يسمح باستخدامها
 - استخدم رؤية الشركاء للعمليات الحساسة
 - قم بتعطيل القدرات التي لا تستخدمها
 
-### التدقيقات المنتظمة (Regular Audits)
+### التدقيقات المنتظمة (Regular Audits) {#regular-audits}
 
 - راجع رؤية القدرات شهريًا
 - تحقق من القدرات غير المصنفة
 - قم بإزالة الوصول للشركاء غير المستخدمين
 
-### التسجيل والمراقبة (Logging and Monitoring)
+### التسجيل والمراقبة (Logging and Monitoring) {#logging-and-monitoring}
 
 - راقب القدرات الأكثر استخدامًا
 - تتبع أنماط وصول الشركاء
 - تنبيه عند استخدام غير عادي للقدرات
 
-### قدرات الطرف الثالث (Third-Party Abilities)
+### قدرات الطرف الثالث (Third-Party Abilities) {#third-party-abilities}
 
 - راجع قدرات الطرف الثالث قبل تمكينها
 - قم بتصنيفها صراحةً
 - ابدأ برؤية داخلية أو للشركاء
 - قم بالترقية إلى عامة فقط بعد التدقيق
 
-## استكشاف الأخطاء وإصلاحها (Troubleshooting)
+## استكشاف الأخطاء وإصلاحها (Troubleshooting) {#troubleshooting}
 
 **القدرة غير ظاهرة في القائمة**
 - تحقق من أن القدرة مثبتة ونشطة
@@ -285,7 +285,7 @@ Available abilities:
 - تأكد من حفظ التصنيف الخاص بك
 - تحقق من أن الـ plugin الذي يوفر القدرة محدث
 
-## الترحيل من الوضع القديم (Migration from Legacy Mode)
+## الترحيل من الوضع القديم (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 إذا كنت تقوم بالترقية من إصدار أقدم من Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Available abilities:
 
 راجع **ترحيل وضع الطرف الثالث (Third-Party Mode Migration)** لمزيد من التفاصيل حول الانتقال إلى تكامل Abilities API الأصلي.
 
-## الخطوات التالية
+## الخطوات التالية {#next-steps}
 
 بعد تكوين رؤية القدرات:
 

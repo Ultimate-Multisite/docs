@@ -3,7 +3,7 @@ title: Amateka y’impinduka za Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog
+# Captcha Changelog {#captcha-changelog}
 
 Verisiyo: 1.5.0 - Yasohotse ku 2026-05-22
 * Gishya: Igenzura ry'igipimo rihagarika burundu — ribara buri GET na POST ku bice birinzwe na captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) kandi rigasubiza HTTP 429, `Retry-After` header, n'isinzira rya tarpit ritunguranye (1–5s, ntirirenga 15s).

@@ -3,7 +3,7 @@ title: Registrovat koncový bod API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Koncový bod Ultimate Multisite /register API
+# Koncový bod Ultimate Multisite /register API {#the-ultimate-multisite-register-api-endpoint}
 
 V tomto tutoriálu se naučíte, jak použít koncový bod Ultimate Multisite /register API k vytvoření celého procesu onboardingu pro nového zákazníka ve vaší síti a jak to udělat pomocí Zapier.
 
@@ -29,11 +29,11 @@ Vyberte **Povolit API** a získejte své API přihlašovací údaje.
 
 Nyní prozkoumejme koncový bod a poté vytvořme registrační akci v Zapier.
 
-## Parametry těla koncového bodu
+## Parametry těla koncového bodu {#endpoint-body-parameters}
 
 Podívejme se na přehled minimálních informací, které potřebujeme odeslat do koncového bodu. Na konci tohoto článku najdete celé volání.
 
-### Zákazník
+### Zákazník {#customer}
 
 Toto jsou informace nezbytné pro proces vytvoření uživatele a zákazníka Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Je možné odeslat customer ID vytvořené ve vaší síti. Pokud není odeslán
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Jediná informace, kterou v tomto objektu potřebujeme, je stav Membership.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produkty**
+### **Produkty** {#products}
 
 Produkty se předávají jako pole s 1 nebo více product ID z vaší sítě. Pozor, tento koncový bod nevytváří produkty. Pro lepší pochopení koncového bodu pro vytváření produktů si projděte dokumentaci Ultimate Multisite.
 
 **"products" : [1,2],**
 
-### Platba
+### Platba {#payment}
 
 Stejně jako u Membership potřebujeme pouze stav.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Web
+### Web {#site}
 
 A k dokončení těla potřebujeme URL a název webu, obojí uvnitř objektu Site.
 
@@ -69,13 +69,13 @@ A k dokončení těla potřebujeme URL a název webu, obojí uvnitř objektu Sit
 
 Návratem koncového bodu register bude pole s informacemi o nově vytvořeném membership.
 
-## Vytvoření akce v Zapier
+## Vytvoření akce v Zapier {#creating-an-action-in-zapier}
 
 Se zavedením tohoto nového a robustnějšího koncového bodu pro vytváření účtů získáte také přístup k nové akci v Zapier.
 
 Víte, jak používat a využívat vše, co nová verze Zapier nabízí? Více se dozvíte zde. (odkaz?)
 
-### Vytvoření akce
+### Vytvoření akce {#creating-an-action}
 
 Abychom lépe ukázali, jak používat registrační koncový bod se Zapier, vytvoříme integraci s Google Forms. Pokaždé, když bude tento formulář vyplněn a informace budou uloženy do tabulky odpovědí formuláře, bude v síti Ultimate Multisite vytvořeno nové membership.
 
@@ -105,7 +105,7 @@ Po nastavení informací pokračujte k závěrečnému testu. Na poslední obraz
 
 Otestujte svůj nový Zap a měl by se úspěšně dokončit. Pokud dojde k jakékoli chybě, zkontrolujte všechna pole a zda jsou odesílána správně. Protože je zde mnoho informací, některé věci mohou uniknout pozornosti.
 
-### Kompletní parametry koncového bodu
+### Kompletní parametry koncového bodu {#complete-endpoint-parameters}
 
 Zde je kompletní volání a všechny možnosti polí, která lze odeslat.
 

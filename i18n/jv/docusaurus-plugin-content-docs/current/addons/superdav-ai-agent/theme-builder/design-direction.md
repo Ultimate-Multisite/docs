@@ -3,17 +3,17 @@ title: Arah Desain
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Arah Desain
+# Arah Desain {#design-direction}
 
 Langkah **Arah Desain** ngidini sampeyan mriksa, nyempurnakake, lan ngrampungake desain visual tema sampeyan sadurunge Theme Builder ngasilake tema lengkap.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Sawise ngrampungake Wawancara Discovery, Theme Builder nampilake arah desain sampeyan nganggo **render pratinjau desktop lan mobile**. Iki ngidini sampeyan ndeleng kanthi persis kepiye desain sampeyan bakal katon ing piranti sing beda-beda sadurunge netepake tema kasebut.
 
-## Komponen Arah Desain
+## Komponen Arah Desain {#design-direction-components}
 
-### 1. Palet Werna
+### 1. Palet Werna {#1-color-palette}
 
 Skema werna tema sampeyan, kalebu:
 
@@ -23,7 +23,7 @@ Skema werna tema sampeyan, kalebu:
 - **Werna netral** — werna abu-abu lan putih kanggo latar mburi lan teks
 - **Werna teks** — werna teks utama kanggo gampang diwaca
 
-### 2. Tipografi
+### 2. Tipografi {#2-typography}
 
 Pilihan font kanggo:
 
@@ -33,14 +33,14 @@ Pilihan font kanggo:
 - **Dhuwur baris** — jarak antarbaris supaya gampang diwaca
 - **Bobot font** — variasi kandel, biasa, lan entheng
 
-### 3. Tata Letak lan Jarak
+### 3. Tata Letak lan Jarak {#3-layout-and-spacing}
 
 - **Ambane wadhah** — ambane maksimal kanggo isi
 - **Padding lan margin** — jarak ing sakupenge unsur
 - **Sistem grid** — tata letak kolom kanggo desain responsif
 - **Jarak komponen** — jarak antarane unsur UI
 
-### 4. Unsur Visual
+### 4. Unsur Visual {#4-visual-elements}
 
 - **Gaya tombol** — desain tombol utama, sekunder, lan tersier
 - **Desain kertu** — tata letak kanggo blok isi
@@ -48,9 +48,9 @@ Pilihan font kanggo:
 - **Wates lan bayangan** — kedalaman visual sing alus
 - **Efek hover** — gaya kahanan interaktif
 
-## Render Pratinjau
+## Render Pratinjau {#preview-rendering}
 
-### Pratinjau Desktop
+### Pratinjau Desktop {#desktop-preview}
 
 Pratinjau desktop nuduhake desain sampeyan ing ambane lengkap (biasane 1200px utawa luwih amba):
 
@@ -59,7 +59,7 @@ Pratinjau desktop nuduhake desain sampeyan ing ambane lengkap (biasane 1200px ut
 - Tipografi lan jarak gedhe
 - Kabeh unsur visual ing ukuran lengkap
 
-### Pratinjau Mobile
+### Pratinjau Mobile {#mobile-preview}
 
 Pratinjau mobile nuduhake desain sampeyan ing ambane mobile (biasane 375px):
 
@@ -68,7 +68,7 @@ Pratinjau mobile nuduhake desain sampeyan ing ambane mobile (biasane 375px):
 - Tipografi lan jarak sing disesuaikake
 - Ukuran tombol sing ramah tutul
 
-### Breakpoint Responsif
+### Breakpoint Responsif {#responsive-breakpoints}
 
 Theme Builder ngrender pratinjau ing breakpoint iki:
 
@@ -79,9 +79,9 @@ Theme Builder ngrender pratinjau ing breakpoint iki:
 | **Desktop** | 1200px | Desktop ambane lengkap |
 | **Large Desktop** | 1920px | Tampilan ultra-amba |
 
-## Nyempurnakake Desain Sampeyan
+## Nyempurnakake Desain Sampeyan {#refining-your-design}
 
-### Nggawe Penyesuaian
+### Nggawe Penyesuaian {#making-adjustments}
 
 Sampeyan bisa nyempurnakake arah desain kanthi:
 
@@ -91,7 +91,7 @@ Sampeyan bisa nyempurnakake arah desain kanthi:
 4. **Nganyari tata letak** — ganti ambane wadhah lan kolom grid
 5. **Ngatur unsur** — owahi gaya tombol, desain kertu, lsp.
 
-### Nganyari Pratinjau
+### Nganyari Pratinjau {#preview-updates}
 
 Owah-owahan katon sacara wektu nyata:
 
@@ -100,7 +100,7 @@ Owah-owahan katon sacara wektu nyata:
 - Kabeh breakpoint responsif dianyari
 - Sampeyan bisa ngalih antarane pratinjau kanggo mriksa owah-owahan
 
-### Tampilan Perbandingan
+### Tampilan Perbandingan {#comparison-view}
 
 Bandhingake arah desain sampeyan karo:
 
@@ -108,7 +108,7 @@ Bandhingake arah desain sampeyan karo:
 - **Desain pesaing** — bandhingake karo situs inspirasi
 - **Versi sadurunge** — balekake menyang arah desain sing luwih awal
 
-## Persetujuan Arah Desain
+## Persetujuan Arah Desain {#design-direction-approval}
 
 Sawise sampeyan wareg karo desain sampeyan:
 
@@ -118,7 +118,7 @@ Sawise sampeyan wareg karo desain sampeyan:
 4. **Konfirmasi tata letak** — priksa jarak lan perataan
 5. **Setujoni desain** — terusake menyang generasi tema
 
-## Langkah Sabanjure
+## Langkah Sabanjure {#next-steps}
 
 Sawise nyetujoni arah desain sampeyan:
 
@@ -127,7 +127,7 @@ Sawise nyetujoni arah desain sampeyan:
 3. Sampeyan bisa ngatur luwih lanjut nganggo WordPress customizer
 4. Terusake menyang [Menu Hospitality](./hospitality-menus.md) utawa fitur liyane
 
-## Praktik Paling Apik
+## Praktik Paling Apik {#best-practices}
 
 - **Tes ing piranti nyata** — gunakake telpon lan tablet nyata yen bisa
 - **Priksa gampang diwaca** — pesthekake teks gampang diwaca ing kabeh ukuran
@@ -135,30 +135,30 @@ Sawise nyetujoni arah desain sampeyan:
 - **Timbang kinerja** — optimalake gambar lan font kanggo kacepetan
 - **Rencanakake kanggo isi** — pesthekake tata letak cocog karo isi nyata sampeyan
 
-## Ngatasi Masalah
+## Ngatasi Masalah {#troubleshooting}
 
-### Pratinjau Ora Dianyari
+### Pratinjau Ora Dianyari {#preview-not-updating}
 
 - Refresh kaca
 - Resiki cache browser
 - Coba browser sing beda
 - Priksa sambungan internet
 
-### Werna Katon Beda
+### Werna Katon Beda {#colors-look-different}
 
 - Priksa setelan werna monitor
 - Coba ing piranti sing beda
 - Verifikasi kontras werna nganggo piranti aksesibilitas
 - Timbang simulator buta werna
 
-### Masalah Tipografi
+### Masalah Tipografi {#typography-issues}
 
 - Verifikasi file font wis dimuat
 - Priksa ukuran font ing breakpoint sing beda
 - Tes nganggo isi nyata
 - Timbang dawa baris supaya gampang diwaca
 
-## Dokumentasi Gegandhengan
+## Dokumentasi Gegandhengan {#related-documentation}
 
 - [Wawancara Discovery](./discovery-interview.md) — nglumpukake informasi desain
 - [Menu Hospitality](./hospitality-menus.md) — nggawe kaca menu terstruktur

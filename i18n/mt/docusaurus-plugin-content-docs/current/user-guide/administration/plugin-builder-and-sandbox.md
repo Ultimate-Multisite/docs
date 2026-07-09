@@ -3,11 +3,11 @@ title: Plugin Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 introduċi l-**Plugin Builder & Sandbox System**, li jippermettix lil assistent IA li jagħmli, jaktiva u jidir b'opera WordPress fuq la rete tiegħek – kollha permezz tal-ambiente sandbox sicuru u isolat.
 
-## Panoramika
+## Panoramika {#overview}
 
 Il-Plugin Builder jippermettix lil assistent IA li jiftrapja plugin WordPress kustomi b'risposta għall-istgħarijiet naturali (natural language requests). Il-pluginijiet li giċċetemu jiġu verifikati, jipprovvdi l-informazzjoni (stored) u jaktivate f'meħtieġ sandbox qabel ma jaffettwaw funksjonalità tal-site aktiva.
 
@@ -17,7 +17,7 @@ L-casu d'użu inklużi:
 - Prototipja feature li għandhom hook WordPress jew custom post types.
 - Tcrea skripti diġitali (automation scripts) bejn ħsieb qasir biex japplikaw operazzjonijiet batch.
 
-## Genera Plugin permezz tal-AI
+## Genera Plugin permezz tal-AI {#generating-a-plugin-via-ai}
 
 Biex tgħmli plugin, aħeles l-interface ta chat tal Gratis AI Agent u isaprabb x'għandek. Biex t-tqiegħed, għal ഉദാħ, it-tulis:
 
@@ -32,7 +32,7 @@ L-AI se:
 
 Tista' t-tfine l-risultat biex t-tfine (refine) billi tgħmli follow-up flimma x-xem fil-thread ta konversazzjoni qabel ma taktiva.
 
-## Attivazzjoni f'Sandbox
+## Attivazzjoni f'Sandbox {#sandbox-activation}
 
 Attivazzjoni tal-plugin li giċċetemu f'sandbox hija diversa min l-attivazzjoni fuq la rete aktiva (live network). Il-sandbox:
 

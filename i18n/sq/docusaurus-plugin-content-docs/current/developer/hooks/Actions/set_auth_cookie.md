@@ -4,11 +4,11 @@ title: Veprim - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Aktivizohet menjëherë përpara se cookie e autentikimit të vendoset.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Lloji | Përshkrimi |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Aktivizohet menjëherë përpara se cookie e autentikimit të vendoset.
 | $scheme | `string` | Skema e autentikimit. Vlerat përfshijnë 'auth' ose 'secure_auth'. |
 | $token | `string` | Tokeni i sesionit të përdoruesit për t’u përdorur për këtë cookie. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) në rreshtin 124

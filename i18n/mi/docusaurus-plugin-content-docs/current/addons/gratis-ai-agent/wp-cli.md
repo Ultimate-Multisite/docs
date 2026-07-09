@@ -3,11 +3,11 @@ title: Tohutoro WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Tohutoro WP-CLI
+# Tohutoro WP-CLI {#wp-cli-reference}
 
 Ka tukuna e Gratis AI Agent tētahi whānau whakahau `wp gratis-ai-agent` mō te ine taumata i te māngai, te whakahaere āheinga, me te ui i te tūnga māngai mai i te rārangi whakahau. Me whai WP-CLI 2.0, teitei ake rānei, ngā whakahau katoa.
 
-## Tāutanga
+## Tāutanga {#installation}
 
 Ka rēhitatia aunoatia ngā whakahau WP-CLI ina hohe te plugin. Manatokohia mā:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Ka whakahaere i te huinga ine taumata Agent Capabilities — he huinga akiaki matatini, hikoinga-maha e whakamātau ana i te mata āheinga katoa. Whakamahia tēnei hei aromātai i te mahinga tauira, hei whakataurite i ngā kaiwhakarato AI, hei whakamana rānei i ngā mōkihi āheinga i mua i te tuku ki te whakaputanga.
 
-### Whakarāpopototanga
+### Whakarāpopototanga {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Kōwhiringa
+### Kōwhiringa {#options}
 
 | Kōwhiringa | Whakaahuatanga |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Hōputu putanga: `table` (taunoa), `json`, `csv` |
 | `--save` | Tiakina ngā hua ine taumata ki te pātengi raraunga mō te whakataurite hītori |
 
-### Tauira
+### Tauira {#examples}
 
 Whakahaerehia te huinga ine taumata katoa me te kaiwhakarato me te tauira o nāianei:
 
@@ -57,7 +57,7 @@ Whakahaerehia ki tētahi tauira motuhake, ā, tiakina ngā hua:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Putanga
+### Putanga {#output}
 
 Ka whakaputa te ine taumata i tētahi haupae mō ia pātai me ēnei tīwae:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Ngā Pātai Ine Taumata
+### Ngā Pātai Ine Taumata {#benchmark-questions}
 
 Kei roto i te huinga taunoa:
 
@@ -95,11 +95,11 @@ Ka taea te rēhita pātai tāpiri mā te tātari `gratis_ai_agent_benchmark_ques
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Ka whakahaere i ngā āheinga me ngā mōkihi āheinga kua tāutatia.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Ka whakarārangi i ngā āheinga rēhita katoa, tō rātou pūtake (matua, mōkihi rānei), me tō rātou tūnga o nāianei.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Ka tikiake, ka whakahohe hoki i tētahi mōkihi āheinga mai i te rēhita.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Ka mono i tētahi āheinga motuhake me te kore tango i te mōkihi. He whaihua mō te whakawhāiti i te whānuitanga o te māngai ki tētahi paetukutuku kua whakaritea.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Ka whakahohe anō i tētahi āheinga i monokia i mua.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Ka whakaatu i te whirihoranga māngai o nāianei me te tūnga tūhonohono.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Ka whakaatu i ngā mahi māngai nō nā tata nei mai i te rangitaki patuiro.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Ka tautuhi anō i te tūnga o te kaiāwhina: ka whakawātea i te CSS kua werohia, ka tango i ngā CPTs me ngā whakarōpūtanga i rēhitatia e te kaiāwhina, ka tautuhi anō i ngā kāhua whānui, ā, ka whakawātea i te keteroki kōwhiringa a te kaiāwhina. Kāore e tango i te monomai, i ōna tautuhinga rānei.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Ngā Waehere Puta
+## Ngā Waehere Puta {#exit-codes}
 
 Ka puta ngā whakahau katoa me te `0` ina angitu. Ngā waehere puta ehara i te kore:
 

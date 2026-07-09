@@ -3,11 +3,11 @@ title: Stjórnunargeta viðbóta
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Stjórnunargetur viðbóta
+# Stjórnunargetur viðbóta {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 kemur með **7 stjórnunargetur viðbóta** sem AI aðstoðarmaðurinn getur kallað á í samtali. Þessar getu veita forritunarlega stjórn á WordPress viðbótum sem eru settar upp í gegnum [Viðbótarsmið og Sandbox-kerfi](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Yfirlit yfir getu
+## Yfirlit yfir getu {#abilities-overview}
 
 | Geta | Slug | Lýsing |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 kemur með **7 stjórnunargetur viðbóta** sem AI aðsto
 | Setja upp viðbót | `install_plugin` | Setur sandkassaða viðbót í virku WordPress viðbótamöppuna. |
 | Virkja viðbót | `activate_plugin` | Virkjar sandkassaða viðbót í wp-env sandkassaumhverfinu. |
 
-## API fyrir uppsetningu viðbóta
+## API fyrir uppsetningu viðbóta {#plugin-installer-api}
 
 Uppsetningarkerfi viðbóta sér um skráakerfisaðgerðir þegar viðbætur eru settar upp eða fjarlægðar. Helstu hegðanir:
 
@@ -28,7 +28,7 @@ Uppsetningarkerfi viðbóta sér um skráakerfisaðgerðir þegar viðbætur eru
 - **Uppfærsla**: Skiptir út núverandi viðbótarskrám. Afvirkjar viðbótina áður en skrifað er til að forðast villur vegna ófullkominnar stöðu.
 - **Eyðing eftir slug**: Finnur viðbótarmöppuna eftir slug, afvirkjar á öllum vefjum og fjarlægir síðan möppuna.
 
-### Skráning sérsniðins uppsetningarmeðhöndlara
+### Skráning sérsniðins uppsetningarmeðhöndlara {#registering-a-custom-install-handler}
 
 Þú getur tengst uppsetningarferlinu með `gratis_ai_plugin_installer_before_install` og `gratis_ai_plugin_installer_after_install` aðgerðunum:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Vistkerfisskrá
+## Vistkerfisskrá {#ecosystem-registry}
 
 Getur eru skráðar í gegnum **vistkerfisskrá viðbóta**. Skráin varpar getu-slugum á meðhöndlaraklasa þeirra og birtir þær fyrir verkfæradreifara AI agent-sins.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner samþætting
+## HookScanner samþætting {#hookscanner-integration}
 
 `create_plugin` og `update_plugin` geturnar keyra sjálfkrafa **HookScanner** á nýlega myndaðan kóða. HookScanner skilar lista yfir WordPress action og filter hooks sem viðbótin skráir.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner sleppir `vendor/` og `node_modules/` möppum sjálfkrafa.
 
-## Arkitektúr ósamstilltra verka
+## Arkitektúr ósamstilltra verka {#async-job-architecture}
 
 Langkeyrandi viðbótaaðgerðum (myndun, uppsetningu) er dreift sem **ósamstilltum verkum** með lifandi framvindurakningu. AI spjallviðmótið kannar framvindu og streymir stöðuuppfærslum til notandans:
 

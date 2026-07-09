@@ -3,25 +3,25 @@ title: Predložak dodatka
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Predložak dodatka
+# Predložak dodatka {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - WordPress 5.3 ili noviji
 - PHP 7.4 ili noviji
 - Multisite Ultimate plugin (aktivan)
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Prenesite datoteke dodatka u svoj direktorij `/wp-content/plugins/`
 2. Aktivirajte plugin putem izbornika 'Plugins' u WordPress
 3. Konfigurirajte postavke dodatka u mrežnom administratoru
 
-## Razvoj
+## Razvoj {#development}
 
-### Postavljanje
+### Postavljanje {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura projekta
+### Struktura projekta {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Pravila modernizacije koda
 ```
 
-### Testiranje
+### Testiranje {#testing}
 
 Dodatak uključuje sveobuhvatan okvir za testiranje:
 
@@ -75,44 +75,44 @@ Dodatak uključuje sveobuhvatan okvir za testiranje:
 - **Pokrivenost testovima**: Konfigurirano za praćenje pokrivenosti koda
 - **Multisite testiranje**: Testovi se izvode u multisite okruženju
 
-### Standardi koda
+### Standardi koda {#code-standards}
 
 - **WordPress standardi kodiranja**: Provode se putem PHPCS
 - **Kompatibilnost s PHP 7.4+**: Podržane su moderne PHP značajke
 - **Statička analiza**: PHPStan integracija za provjeru tipova
 - **Modernizacija koda**: Rector pravila za nadogradnje PHP-a
 
-### Sustav izgradnje
+### Sustav izgradnje {#build-system}
 
 - **Obrada sredstava**: Minifikacija CSS/JS datoteka
 - **Prijevod**: Generiranje POT datoteke
 - **Pakiranje**: Izrada arhive za distribuciju
 - **Razvojni način rada**: Neminificirana sredstva za otklanjanje pogrešaka
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
 Dodatak podržava razne opcije konfiguracije dostupne putem sučelja mrežnog administratora.
 
-## Hookovi i filtri
+## Hookovi i filtri {#hooks-and-filters}
 
-### Radnje
+### Radnje {#actions}
 
 - `ultimate-multisite-addon-template_init` - Pokreće se nakon inicijalizacije dodatka
 - `ultimate-multisite-addon-template_loaded` - Pokreće se nakon što se učitaju sve datoteke dodatka
 
-### Filtri
+### Filtri {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Izmijenite postavke dodatka
 - `ultimate-multisite-addon-template_enabled` - Nadjačajte status omogućavanja/onemogućavanja dodatka
 
-## Licenca
+## Licenca {#license}
 
 Ovaj dodatak licenciran je pod GPL v3 ili novijom verzijom.
 
-## Podrška
+## Podrška {#support}
 
 Za podršku i dokumentaciju posjetite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Dnevnik promjena
+## Dnevnik promjena {#changelog}
 
 - Verzija 1.0.1 (2025-09-28): preimenovan prefiks u ultimate-multisite; ažuriran text domain; povećanje verzije.
 

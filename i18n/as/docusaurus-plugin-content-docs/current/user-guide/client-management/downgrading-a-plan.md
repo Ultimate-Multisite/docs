@@ -3,13 +3,13 @@ title: পлан হ্ৰাস কৰা
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# এটা প্লেন ডাউনগ্রেড কৰা (v2)
+# এটা প্লেন ডাউনগ্রেড কৰা (v2) {#downgrading-a-plan-v2}
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টি Ultimate Multisiteৰ version 2.x লৈ বৰ্ণনা কৰে।**_
 
 এটা প্লেন বা subscription ডাউনগ্রেড কৰাটো এটা সাধাৰণ কাৰ্য্য, যিটো আপোনাৰ ক্লায়েন্টসকলে কৰিব পাৰে যদি তেওঁলোকৰ বাজেট সীমিত হয় বা তেওঁলোকে অনুভৱ কৰে যে তেওঁলোকৰ subsite চলাবলৈ বৰ বেছি resourcesৰ প্ৰয়োজন নহ'ব।
 
-## প্লেন কেনেকৈ ডাউনগ্রেড কৰিব
+## প্লেন কেনেকৈ ডাউনগ্রেড কৰিব {#how-to-downgrade-a-plan}
 
 আপোনাৰ ক্লায়েন্টসকলে তেওঁলোকৰ subsite admin dashboard লৈ লগইন কৰি আৰু তেওঁলোকৰ account page-ৰ তলত থকা **Change** বাটনটো ক্লিক কৰি যেতিয়া ইচ্ছা তেওঁলোকৰ প্লেন ডাউনগ্রেড কৰিব পাৰে।
 
@@ -25,7 +25,7 @@ _**গুৰুত্বপূৰ্ণ টোকা: এই article টি Ulti
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### ব্যৱহাৰকাৰীয়ে প্লেন ডাউনগ্রেড কৰিলে কি হয়
+### ব্যৱহাৰকাৰীয়ে প্লেন ডাউনগ্রেড কৰিলে কি হয় {#what-happens-when-a-user-downgrades-their-plan}
 
 এইটো উল্লেখ কৰাটো গুৰুত্বপূৰ্ণ যে প্লেন ডাউনগ্রেড কৰাটোৱে ব্যৱহাৰকাৰীৰ subsite-ৰ বিদ্যমান configuration (প্ৰয়োজনীয় সেটিং) সলনি নকৰে।
 
@@ -37,7 +37,7 @@ _**গুৰুত্বপূৰ্ণ টোকা: এই article টি Ulti
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### ধনৰ লেনদেনলৈ কি হয়
+### ধনৰ লেনদেনলৈ কি হয় {#what-happens-to-the-payment}
 
 version 2.0 ত, proration (অংশিক গণনাক) ক্ষেত্ৰত ধনৰ লেনদেনৰ বাবে কোনো সমন্বয় কৰাৰ প্ৰয়োজন নহ'ব।
 

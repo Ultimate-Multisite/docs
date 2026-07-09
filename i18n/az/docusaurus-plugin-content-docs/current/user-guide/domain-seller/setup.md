@@ -3,21 +3,21 @@ title: Quraşdırma və provayder konfiqurasiyası
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Quraşdırma və Provayder Konfiqurasiyası
+# Domain Seller: Quraşdırma və Provayder Konfiqurasiyası {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller əlavəsi sizi bütün tələb olunan addımlardan keçirən yönləndirilmiş quraşdırma sehrbazı ilə gəlir. Bu səhifə sehrbaz axınını və daha sonra provayderləri necə konfiqurasiya və ya yenidən konfiqurasiya etməyi əhatə edir.
 
-## Tələblər
+## Tələblər {#requirements}
 
 - **Multisite Ultimate** v2.4.12 və ya daha yüksək, şəbəkədə aktivləşdirilmiş
 - **PHP** 7.4+
 - Ən azı bir dəstəklənən qeydiyyatçı üçün API etimad məlumatları
 
-## İlk işəsalma quraşdırma sehrbazı
+## İlk işəsalma quraşdırma sehrbazı {#first-run-setup-wizard}
 
 Quraşdırma sehrbazı plugin-i şəbəkədə ilk dəfə aktivləşdirdiyiniz zaman avtomatik olaraq işə düşür. O, həmçinin istənilən vaxt **Network Admin › Ultimate Multisite › Domain Seller Setup** bölməsindən əlçatandır.
 
-### Addım 1 — Provayder seçin
+### Addım 1 — Provayder seçin {#step-1--choose-a-provider}
 
 Qoşmaq istədiyiniz qeydiyyatçını seçin. Dəstəklənən seçimlər:
 
@@ -33,7 +33,7 @@ Qoşmaq istədiyiniz qeydiyyatçını seçin. Dəstəklənən seçimlər:
 | NameSilo | Xeyr | Xeyr |
 | Enom | Bəli | Xeyr |
 
-### Addım 2 — Etimad məlumatlarını daxil edin
+### Addım 2 — Etimad məlumatlarını daxil edin {#step-2--enter-credentials}
 
 Hər provayderin fərqli etimad məlumatı sahələri var:
 
@@ -57,17 +57,17 @@ Hər provayderin fərqli etimad məlumatı sahələri var:
 
 Canlı rejimə keçməzdən əvvəl provayderin test mühitinə qarşı test etmək üçün mövcud olan yerlərdə **Sandbox rejimi**ni işarələyin.
 
-### Addım 3 — Bağlantını test edin
+### Addım 3 — Bağlantını test edin {#step-3--test-the-connection}
 
 **Test Connection** üzərinə klikləyin. Sehrbaz etimad məlumatlarını və bağlantını yoxlamaq üçün yüngül API çağırışı göndərir. Davam etməzdən əvvəl hər hansı etimad məlumatı problemini düzəldin.
 
-### Addım 4 — TLD-ləri import edin
+### Addım 4 — TLD-ləri import edin {#step-4--import-tlds}
 
 Qoşulmuş provayderdən bütün mövcud TLD-ləri və topdansatış qiymətlərini çəkmək üçün **Import TLDs** üzərinə klikləyin. Bu, domen məhsulları tərəfindən istifadə olunan TLD siyahısını doldurur. Böyük TLD kataloqları olan provayderlər üçün import 30–60 saniyə çəkə bilər.
 
 TLD-lər həmçinin planlaşdırılmış cron işi vasitəsilə gündə bir dəfə avtomatik olaraq yenidən sinxronlaşdırılır.
 
-### Addım 5 — Domen məhsulu yaradın
+### Addım 5 — Domen məhsulu yaradın {#step-5--create-a-domain-product}
 
 Sehrbaz 10% marja ilə standart ümumi domen məhsulu yaradır. Bu məhsulu dərhal redaktə edə və ya ötürüb məhsulları **Ultimate Multisite › Products** altında əl ilə yarada bilərsiniz.
 
@@ -75,7 +75,7 @@ Tam məhsul konfiqurasiyası bələdçisi üçün [Domen Məhsulları və Qiymə
 
 ---
 
-## Provayderin yenidən konfiqurasiyası
+## Provayderin yenidən konfiqurasiyası {#reconfiguring-a-provider}
 
 **Network Admin › Ultimate Multisite › Settings › Domain Seller** bölməsinə keçin (və ya plugin siyahısında **Settings** üzərinə klikləyin).
 
@@ -88,17 +88,17 @@ Parametrlər səhifəsində bunlar var:
 - **Domen məhsullarını idarə edin** — Products siyahısına sürətli keçid
 - **Provayderləri konfiqurasiya edin** — provayderləri əlavə etmək və ya yenidən konfiqurasiya etmək üçün Integration Wizard-ı açır
 
-### İkinci provayderin əlavə edilməsi
+### İkinci provayderin əlavə edilməsi {#adding-a-second-provider}
 
 **Configure providers** üzərinə klikləyin və yeni qeydiyyatçı üçün sehrbazı yenidən işə salın. Eyni vaxtda birdən çox provayder konfiqurasiya edə bilərsiniz. Hər domen məhsulunu konkret provayderə təyin edin və ya standartda saxlayın.
 
-### TLD-lərin əl ilə sinxronlaşdırılması
+### TLD-lərin əl ilə sinxronlaşdırılması {#syncing-tlds-manually}
 
 Parametrlər səhifəsində ən son qiymətləri çəkmək üçün hər hansı konfiqurasiya edilmiş provayderin yanında **Sync TLDs** üzərinə klikləyin. Bu, provayder topdansatış qiymətlərini yenilədikdən və ya yeni TLD-lər əlavə etdikdən sonra faydalıdır.
 
 ---
 
-## Loglar
+## Loglar {#logs}
 
 Hər provayder öz log kanalına yazır. Loglara **Network Admin › Ultimate Multisite › Logs** altında baxmaq olar:
 
@@ -118,7 +118,7 @@ Hər provayder öz log kanalına yazır. Loglara **Network Admin › Ultimate Mu
 
 ---
 
-## Provayder imkanları qeydləri
+## Provayder imkanları qeydləri {#provider-capability-notes}
 
 Hər qeydiyyatçı API eyni əməliyyatları təqdim etmir. Əlavə dəstəklənməyən əməliyyatları səssiz uğursuzluq əvəzinə aydın admin yönümlü xətalarla göstərir.
 

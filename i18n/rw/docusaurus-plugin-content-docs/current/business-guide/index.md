@@ -3,13 +3,13 @@ title: Kubaka ubucuruzi bw’urubuga rwihariye
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Kubaka Ubucuruzi bwa Website y'Umwihariko ukoresheje Ultimate Multisite
+# Kubaka Ubucuruzi bwa Website y'Umwihariko ukoresheje Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Abantu benshi bagerageza kugurisha websites bahangana ku giciro na Wix, Squarespace, hamwe n'abakozi bigenga ibihumbi. Baratsindwa. Abatsinda bahitamo itsinda ry'abantu runaka, bakubaka igisubizo cyagenewe iryo tsinda, maze bakishyuza agaciro batanga.
 
 Iri somo rikwigisha uko wabikora neza ukoresheje Ultimate Multisite.
 
-## Icyo Uzubaka
+## Icyo Uzubaka {#what-you-will-build}
 
 Muri iri somo ryose uzubaka network nyayo, ikora yitwa **FitSite** -- urubuga rwa website rwubatswe by'umwihariko ku masitudiyo ya fitness, abatoza ku giti cyabo, n'abafite gyms.
 
@@ -23,7 +23,7 @@ Kugeza ku isomo rya nyuma, FitSite izaba ari platform yuzuye y'umwihariko ifite:
 
 Uzakurikira intambwe ku yindi, kandi ku musozo uzaba ufite platform ikora n'ubumenyi bwo gusubiramo iyo nzira ku mwihariko uwo ari wo wose wahitamo.
 
-## Kuki Amasitudiyo ya Fitness?
+## Kuki Amasitudiyo ya Fitness? {#why-fitness-studios}
 
 Twari dukeneye urugero rufatika umuntu wese yakurikira. Amasitudiyo ya fitness arakora kuko:
 
@@ -34,7 +34,7 @@ Twari dukeneye urugero rufatika umuntu wese yakurikira. Amasitudiyo ya fitness a
 
 Ibyo wiga byose wubaka FitSite bihita bikoreshwa ku mwihariko uwo ari wo wose wahitamo: restaurants, abacuruzi b'imitungo itimukanwa, law firms, churches, abakora imirimo y'ubukorikori, cyangwa urundi rwego urwo ari rwo rwose.
 
-## Imiterere y'Amasomo
+## Imiterere y'Amasomo {#course-structure}
 
 Buri somo ritangiza igitekerezo kimwe, risobanura impamvu ari ingenzi, kandi rikunyura mu kugishyira mu bikorwa muri network ya FitSite. Buri somo ryubakira ku ryabanjirije.
 
@@ -55,7 +55,7 @@ Buri somo ritangiza igitekerezo kimwe, risobanura impamvu ari ingenzi, kandi rik
 | [13. Kwaguka](lesson-13-growth) | Gukura uva ku bakiriya ba mbere ujya ku bucuruzi nyabwo | Ingamba za growth na automation za FitSite |
 | [14. Ibizakurikiraho](lesson-14-whats-next) | Kwagukira mu myihariko yegeranye n'amahirwe mashya | Roadmap yawe irenze FitSite |
 
-## Ibisabwa Mbere
+## Ibisabwa Mbere {#prerequisites}
 
 - Installation ya WordPress Multisite (cyangwa ubushake bwo kuyishyiraho)
 - License ya Ultimate Multisite ikora
@@ -63,6 +63,6 @@ Buri somo ritangiza igitekerezo kimwe, risobanura impamvu ari ingenzi, kandi rik
 
 Nta coding isabwa. Niba utarigeze ukoresha Ultimate Multisite mbere, nta kibazo -- Isomo rya 3 ritangirira kuri install nshya.
 
-## Witeguye?
+## Witeguye? {#ready}
 
 Tangira na [Isomo rya 1: Kuki Umwihariko Utsinda](lesson-1-why-niche).

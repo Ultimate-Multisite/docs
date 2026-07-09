@@ -4,11 +4,11 @@ title: فیلتر - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 مقدار گزینه شبکه (network option) که به صورت اسلاگ‌فیلد (slugfied) شده است را برمی‌گرداند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 | $option_name | `string` | نام گزینه. |
 | $default | `mixed` | مقدار پیش‌فرض. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 1.0.0
-### منبع
+### منبع {#source}
 
 در [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) در خط ۱۲۶ تعریف شده است.
 
 
-## مقدار بازگشتی
+## مقدار بازگشتی {#returns}
 مقدار گزینه شبکه اسلاگ‌فیلد.

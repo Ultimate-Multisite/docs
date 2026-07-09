@@ -3,11 +3,11 @@ title: Ukuhlukaniswa kokuqashisa kwabaningi
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ukuhlukaniswa kwe-Multi-Tenancy
+# Ukuhlukaniswa kwe-Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 isekela ukuhlukaniswa kwe-database ne-filesystem nge-subsite ngayinye kumatenanti azimele. Lokhu kugcina idatha yethenanti ihlukene kuyilapho kugcinwa ukuhlinzekwa, ukukhokhisa, nokuphatha ezingeni lenethiwekhi.
 
-## Isu lokuhlukanisa
+## Isu lokuhlukanisa {#isolation-strategy}
 
 Sebenzisa ukuhlukaniswa okuzimele kumakhasimende adinga ukuhlukaniswa kwedatha okuqinile, isitoreji se-filesystem esizinikele, noma umngcele ohlukile we-host.
 
@@ -18,7 +18,7 @@ Ithenanti ngayinye ezimele kufanele ibe nalokhu:
 - Okufakiwe kurejista yethenanti okuxhumanisa isayithi ne-database yayo, indlela ye-root, igama le-hostname, nemodeli yokuhlukanisa.
 - Umphumela wokuqinisekisa ukufuduka ngaphambi kokuba ithenanti ibhekwe njengebukhoma.
 
-## Ukubophezela kwe-host ye-database
+## Ukubophezela kwe-host ye-database {#database-host-binding}
 
 Inguqulo 1.2.0 ishintsha ukuziphatha okuzenzakalelayo kokubophezela kwe-host yomshini ofanayo kuma-install azimele. Amanani omshini ofanayo afana ne-`localhost` ayenziwa ajwayeleke ukuze ama-install e-Bedrock, FrankenPHP, nawe-WordPress afakwe kuma-container akwazi ukunikeza nokuqinisekisa izimvume ngokumelene ne-string ye-host ebonwa yi-MySQL empeleni.
 
@@ -31,11 +31,11 @@ Lapho ulungiselela ithenanti ezimele:
 
 Uma ukuqinisekiswa kubika ukwehluleka kwama-grant, qhathanisa ama-grant omsebenzisi we-DB yethenanti nokubophezela kwe-host okulungisiwe. Umsebenzisi onikezwe i-`user@localhost` uhlukile ku-`user@127.0.0.1` noma `user@%`.
 
-## I-root ye-filesystem
+## I-root ye-filesystem {#filesystem-root}
 
 I-root yethenanti kufanele izinze phakathi kokuqalisa kabusha nokuthunyelwa. Gwema izindlela ze-mount zesikhashana. Kuma-install esitayela se-Bedrock, qinisekisa ukuthi i-root yethenanti ikhomba ku-web root ye-WordPress elindelwe yi-bootstrap yethenanti, hhayi kuphela ku-root yephrojekthi.
 
-## Uhlelo lokuhlinzeka
+## Uhlelo lokuhlinzeka {#provisioning-order}
 
 Kumatenanti amasha azimele, sebenzisa lolu hlelo:
 
@@ -49,7 +49,7 @@ Kumatenanti amasha azimele, sebenzisa lolu hlelo:
 
 Lolu hlelo luvimbela amatenanti ahlukaniswe ngokungaphelele ekutholeni ithrafikhi ngaphambi kokuba umbhali we-database, abasebenzisi, ne-filesystem kube sekulungile.
 
-## Ukugeleza kokuphathwa kwamakhasimende azimele
+## Ukugeleza kokuphathwa kwamakhasimende azimele {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 igcina izenzo zokuphathwa kwamakhasimende kusayithi eliyinhloko lapho imodi ezimele ivuliwe. Ithenanti isengase isebenze njenge-install ye-WordPress ehlukanisiwe, kodwa izenzo ezibhekiswe kumakhasimende ezincike ekukhokhiseni kwenethiwekhi, ubulungu, noma idatha ye-account eyabiwe kufanele zibuyisele ikhasimende kusayithi eliyinhloko esikhundleni sokuzama ukuqedela isenzo ngaphakathi kwe-runtime yethenanti.
 

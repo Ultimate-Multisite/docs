@@ -3,11 +3,11 @@ title: De ce Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# De ce Ultimate Multisite
+# De ce Ultimate Multisite {#why-ultimate-multisite}
 
 Dacă ai ajuns la acest articol, probabil ai auzit că plugin-ul nostru ar putea fi soluția pentru a-ți transforma ideea de afacere în realitate. Sperăm că până la finalul acestui material vei avea toate răspunsurile de care ai nevoie.
 
-## Ce este Ultimate Multisite?
+## Ce este Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite este un plugin pentru WordPress Multisite care îți permite să oferi clienților tăi un serviciu WaaS (Website as a Service – site web ca serviciu). Cu plugin-ul nostru, poți avea diferite niveluri de abonament și poți primi plăți recurente de la clienți pentru a le găzdui site-urile în rețeaua ta Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite îți permite să primești plăți prin diferite gateway-uri
 
 Și acesta este doar începutul, deoarece poți extinde funcționalitățile cu add-on-uri și webhook-uri.
 
-## Alte funcționalități
+## Alte funcționalități {#other-features}
 
 Ultimate Multisite oferă și:
 
@@ -33,11 +33,11 @@ Ultimate Multisite oferă și:
 
   * API Search and Replace: Poți adăuga în șabloanele de site placeholder-e precum {{site_name}} și să folosești API-ul Search and Replace pentru a popula automat aceste placeholder-e cu informațiile furnizate de client imediat după înregistrare.
 
-## Cazuri de utilizare
+## Cazuri de utilizare {#use-cases}
 
 Acum este momentul să vedem câteva dintre cazurile posibile de utilizare pentru Ultimate Multisite.
 
-### Cazul 1: O Agenție
+### Cazul 1: O Agenție {#case-1-an-agency}
 
 De obicei, competențele de bază ale unei agenții se concentrează pe design-ul site-urilor web, aspecte precum găzduirea sau marketingul fiind listate ca servicii adiționale.
 
@@ -47,7 +47,7 @@ Controlul strict asupra plugin-urilor și temelor este menținut pentru fiecare 
 
 Agențiile vor avea liniște sufletească cu Ultimate Multisite, permițându-le să facă ceea ce fac cel mai bine – să creeze site-uri web excepționale.
 
-### Cazul 2: Furnizor de Nișă
+### Cazul 2: Furnizor de Nișă {#case-2-niche-provider}
 
 Există o vorbă veche care spune: „Fă un singur lucru și fă-l bine". Pentru mulți specialiști, asta înseamnă crearea unui produs sau serviciu în jurul unei singure idei centrale.
 
@@ -57,7 +57,7 @@ Una dintre funcționalitățile inovatoare ale Ultimate Multisite, un site șabl
 
 Pentru un furnizor de site-uri și servicii de nișă, aceasta oferă un avantaj de neegalat în capacitatea de a crea instant un site gata de utilizare, cu plugin-uri și design personalizate. Clientul trebuie doar să furnizeze informații minime pentru a finaliza serviciul.
 
-### Cazul 3: Găzduire Web WordPress
+### Cazul 3: Găzduire Web WordPress {#case-3-wordpress-web-hosting}
 
 Există nenumărate moduri de a găzdui site-uri WordPress, dar rareori este la fel de simplu precum a oferi spațiu web unui client cu o versiune pre-instalată de WordPress. Acest lucru se datorează faptului că o serie de decizii și considerații trebuie să se reunească pentru a oferi un serviciu cu adevărat util.
 

@@ -3,11 +3,11 @@ title: Obsługa Webhooków
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Obsługa Webhooków
+# Obsługa Webhooków {#webhook-handling}
 
 Utwórz niestandardowe punkty końcowe webhooków, aby odbierać zdarzenia z zewnętrznych usług i synchronizować dane z Ultimate Multisite.
 
-## Niestandardowy Punkt Końcowy Webhooka
+## Niestandardowy Punkt Końcowy Webhooka {#custom-webhook-endpoint}
 
 ```php
 // Rejestruj punkt końcowy webhooka
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Uwagi dotyczące bezpieczeństwa
+## Uwagi dotyczące bezpieczeństwa {#security-considerations}
 
 - Zawsze weryfikuj podpisy webhooków za pomocą HMAC lub współdzielonego sekretu.
 - Używaj `permission_callback` dla swojej trasy REST — nigdy nie ustawiaj go na `__return_true` w środowisku produkcyjnym.

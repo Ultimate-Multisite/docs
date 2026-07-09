@@ -3,13 +3,13 @@ title: Cofnod Newidiadau Tocynnau Cymorth
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Cofnod Newidiadau Tocynnau Cefnogaeth
+# Cofnod Newidiadau Tocynnau Cefnogaeth {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Wedi gwella: Tynnwyd cyfeiriadur vendor/ o olrhain Git (eisoes wedi'i gwmpasu gan .gitignore), gan leihau maint yr ystorfa
 * Wedi gwella: Wedi'i brofi hyd at WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Atgyweiriad: Derbyn gwerthoedd null mewn gosodwyr model tocyn nullable
 * Atgyweiriad: Storio pob tocyn mewn tablau byd-eang ar draws y rhwydwaith ar gyfer cefnogaeth multisite briodol
 * Atgyweiriad: Cuddio meysydd staff ac atgyweirio ailgyfeirio tudalen wag ar ffurflen tocyn newydd cwsmer
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Wedi gwella: Llwytho asedau frontend yn amodol ar dudalennau tocynnau cefnogaeth yn unig
 * Wedi gwella: Hepgor autoloader plugin pan fo autoloader gwraidd Bedrock eisoes wedi llwytho dibyniaethau
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Ychwanegwyd: Swyddogaeth gweld tocynnau lawn ar gyfer admin a frontend
 * Ychwanegwyd: Triniwr AJAX ar gyfer cyflwyno atebion tocyn
 * Ychwanegwyd: Cefnogaeth ar gyfer swyddogaeth ateb tocyn gyda thrin ffurflenni priodol
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Wedi gwella: Strwythur cronfa ddata gyda dosbarthiadau ymholiad a sgema priodol ar gyfer ymatebion ac atodiadau
 * Wedi gwella: Mudo i briodweddau go iawn yn lle priodoleddau ar gyfer modelau tocyn
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Diweddarwyd: Ailenwyd y rhagddodiad i ultimate-multisite er mwyn cysondeb
 * Diweddarwyd: Safoni parth testun
 * Wedi'i atgyweirio: Mân atgyweiriadau bygiau a gwelliannau
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Rhyddhad cychwynnol
 * System rheoli tocynnau gyflawn
 * Rheoli mynediad aml-lefel

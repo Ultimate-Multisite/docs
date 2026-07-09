@@ -3,15 +3,15 @@ title: 'Isifundo 11: Ukuthola amakhasimende'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Isifundo 11: Ukuthola Amakhasimende
+# Isifundo 11: Ukuthola Amakhasimende {#lesson-11-finding-customers}
 
 Inkundla enhle engenamakhasimende iyinto yokuzilibazisa nje. Lesi sifundo sichaza indlela yokuthola amakhasimende emkhakheni oqondile we-niche -- amasu asebenza ngokukhethekile ngoba ugxile embonini eyodwa.
 
-## Lapho Sigcine Khona
+## Lapho Sigcine Khona {#where-we-left-off}
 
 I-FitSite isiyasebenza. Manje sidinga abanikazi bezitudiyo zokuzivocavoca ukuthi bayithole futhi babhalise.
 
-## Kungani Ukuthola Amakhasimende Ku-Niche Kuhlukile
+## Kungani Ukuthola Amakhasimende Ku-Niche Kuhlukile {#why-niche-acquisition-is-different}
 
 Uma uthengisela wonke umuntu, uncintisana ngokunakwa emakethe enomsindo. Uma uthengisela i-niche, unezinzuzo:
 
@@ -19,17 +19,17 @@ Uma uthengisela wonke umuntu, uncintisana ngokunakwa emakethe enomsindo. Uma uth
 - **Umlayezo wakho uthinta ngokushesha** -- "amawebhusayithi ezitudiyo zokuzivocavoca" umisa umnikazi wejimu phakathi nokuskrola
 - **Ukudluliselwa kuyakhula** -- abanikazi bezitudiyo zokuzivocavoca bayabazi abanye abanikazi bezitudiyo zokuzivocavoca
 
-## Ishaneli 1: Ukufinyelela Ngokuqondile
+## Ishaneli 1: Ukufinyelela Ngokuqondile {#channel-1-direct-outreach}
 
 Indlela esheshayo yokuthola amakhasimende akho okuqala ukufinyelela ngokuqondile, komuntu siqu.
 
-### Thola Abangaba Amakhasimende
+### Thola Abangaba Amakhasimende {#find-prospects}
 
 - Sesha ku-Google Maps izitudiyo zokuzivocavoca, amajimu, nabaqeqeshi bomuntu siqu endaweni yakini
 - Vakashela amawebhusayithi abo amanje (noma uqaphele ukuthi abanalo)
 - Qoqa imininingwane yokuxhumana kumaphrofayela abo e-Google Business noma ezinkundleni zokuxhumana
 
-### Hlola Isimo Sabo Samanje
+### Hlola Isimo Sabo Samanje {#evaluate-their-current-situation}
 
 Kumuntu ngamunye ongaba ikhasimende, phawula:
 
@@ -37,7 +37,7 @@ Kumuntu ngamunye ongaba ikhasimende, phawula:
 - **Iwebhusayithi embi**: Ongaba ikhasimende eliqinile -- babonise ukuthi inketho engcono ibukeka kanjani
 - **Iwebhusayithi enhle**: Ongaba ikhasimende elibuthaka -- sebeyixazululile le nkinga
 
-### Xhumana Nabo
+### Xhumana Nabo {#make-contact}
 
 Thumela i-imeyili noma umlayezo owenziwe waba ngowomuntu siqu:
 
@@ -48,7 +48,7 @@ Thumela i-imeyili noma umlayezo owenziwe waba ngowomuntu siqu:
 
 Ungathumeli ama-imeyili amaningi ngobuningi. Ukufinyelela komuntu siqu kwabangu-20 abacwaningwe kahle kuzodlula ukuthumela okujwayelekile kwabangu-2,000.
 
-## Ishaneli 2: Imiphakathi Ye-Niche
+## Ishaneli 2: Imiphakathi Ye-Niche {#channel-2-niche-communities}
 
 Abanikazi bezitudiyo zokuzivocavoca bahlangana ezindaweni ezithile ku-inthanethi:
 
@@ -57,7 +57,7 @@ Abanikazi bezitudiyo zokuzivocavoca bahlangana ezindaweni ezithile ku-inthanethi
 - **Amaforamu emboni** namabhodi ezingxoxo
 - **Amaqembu e-LinkedIn** ochwepheshe bokuzivocavoca
 
-### Indlela Yokubamba Iqhaza
+### Indlela Yokubamba Iqhaza {#how-to-participate}
 
 Ungajoyini bese uphromotha umkhiqizo wakho ngokushesha. Kunalokho:
 
@@ -66,7 +66,7 @@ Ungajoyini bese uphromotha umkhiqizo wakho ngokushesha. Kunalokho:
 3. **Yabelana uma kufanelekile** -- lapho othile ebuza ngamawebhusayithi, yabelana ngenkundla yakho ngokwemvelo
 4. **Dala okuqukethwe okuwusizo** -- bhala okuthunyelwe mayelana nokuthi "yini eyenza iwebhusayithi yesitudiyo sokuzivocavoca ibe yinhle" okuholela ngokwemvelo enkundleni yakho
 
-## Ishaneli 3: Ukumaketha Ngokuqukethwe
+## Ishaneli 3: Ukumaketha Ngokuqukethwe {#channel-3-content-marketing}
 
 Dala okuqukethwe abanikazi bezitudiyo zokuzivocavoca abakuseshayo:
 
@@ -77,7 +77,7 @@ Dala okuqukethwe abanikazi bezitudiyo zokuzivocavoca abakuseshayo:
 
 Shicilela lokhu kubhulogi yakho yokumaketha ye-FitSite. Ngokuhamba kwesikhathi, lokhu okuqukethwe kubekwa phezulu ezinjini zokusesha futhi kuletha ithrafikhi yemvelo kubantu abafuna ngenkuthalo lokho okunikezayo.
 
-## Ishaneli 4: Ubambiswano
+## Ishaneli 4: Ubambiswano {#channel-4-partnerships}
 
 Bambisana namabhizinisi asevele esiza izitudiyo zokuzivocavoca:
 
@@ -88,7 +88,7 @@ Bambisana namabhizinisi asevele esiza izitudiyo zokuzivocavoca:
 
 Nikeza amakhomishini okudlulisela noma ukuphromotha ngokubuyiselana. I-[addon ye-AffiliateWP](/addons/affiliatewp) ingakusiza ukusetha uhlelo olusemthethweni lokudlulisela.
 
-## Ishaneli 5: Imicimbi Yemboni
+## Ishaneli 5: Imicimbi Yemboni {#channel-5-industry-events}
 
 Imicimbi yemboni yokuzivocavoca ikubeka phambi kwamakhulu amakhasimende angaba khona:
 
@@ -99,7 +99,7 @@ Imicimbi yemboni yokuzivocavoca ikubeka phambi kwamakhulu amakhasimende angaba k
 
 Awudingi ibhajethi enkulu. Ngisho nokuhambela njengombambiqhaza nokuba nezingxoxo ngalokho okwenzayo kungakhiqiza amathuba.
 
-## Ishaneli 6: Amasayithi Okubonisa
+## Ishaneli 6: Amasayithi Okubonisa {#channel-6-showcase-sites}
 
 Ukumaketha kwakho okuhle kakhulu amasayithi amakhasimende akho akhona. Ngemvume:
 
@@ -108,7 +108,7 @@ Ukumaketha kwakho okuhle kakhulu amasayithi amakhasimende akho akhona. Ngemvume:
 - Cela amakhasimende anelisekile ukuthi anikeze ubufakazi
 - Khuthaza amakhasimende ukuthi asho i-FitSite lapho ebuzwa ngewebhusayithi yawo
 
-## Ukusetha Uhlelo Lokudlulisela
+## Ukusetha Uhlelo Lokudlulisela {#setting-up-a-referral-program}
 
 Ukukhuluma ngomlomo kuyishaneli yakho enamandla kakhulu ku-niche. Kwenze kube semthethweni:
 
@@ -116,7 +116,7 @@ Ukukhuluma ngomlomo kuyishaneli yakho enamandla kakhulu ku-niche. Kwenze kube se
 2. Nikeza amakhasimende akhona umvuzo wokudlulisela (inyanga eyodwa yamahhala, ikhredithi ye-account, njll.)
 3. Kwenze kube lula -- banike isixhumanisi sokudlulisela nomlayezo olula abangawudlulisela kwabanye
 
-## Ukulandelela Okusebenzayo
+## Ukulandelela Okusebenzayo {#tracking-what-works}
 
 Kushaneli ngayinye, landelela:
 
@@ -126,7 +126,7 @@ Kushaneli ngayinye, landelela:
 
 Gxila kakhulu kumashaneli asebenzayo. Sika amashaneli angasebenzi.
 
-## Okulindelekile Ngokweqiniso
+## Okulindelekile Ngokweqiniso {#realistic-expectations}
 
 - **Inyanga 1-3**: Amakhasimende angu-5-20, ikakhulukazi ngokufinyelela ngokuqondile nemiphakathi
 - **Inyanga 4-6**: Amakhasimende angu-20-50, ukumaketha ngokuqukethwe kuqala ukufaka isandla
@@ -134,7 +134,7 @@ Gxila kakhulu kumashaneli asebenzayo. Sika amashaneli angasebenzi.
 
 Lezi zinombolo ziyahlukahluka, kodwa iphethini iyafana: amakhasimende okuqala avela emzamweni oqondile, amakhasimende alandelayo avela emiphumeleni ekhulanayo yokuqukethwe, ukudluliselwa, nedumela.
 
-## Esikwakhile Kulesi Sifundo
+## Esikwakhile Kulesi Sifundo {#what-we-built-this-lesson}
 
 - **Amashaneli ayisithupha okuthola amakhasimende** ahambisana ne-niche yokuzivocavoca
 - **Inqubo yokufinyelela ngokuqondile** yokuthola amakhasimende okuqala

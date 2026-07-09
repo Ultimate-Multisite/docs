@@ -4,11 +4,11 @@ title: Filtrs - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filtrs: wu_post_count
+# Filtrs: wu_post_count {#filter-wupostcount}
 
 Ļauj plugin izstrādātājiem mainīt kopējo skaitu
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 | $post_counts | `object` | WordPress objekts, ko atgriež wp_count_posts fn |
 | $post_type | `string` | Ieraksta tipa slug |
 
-### Kopš
+### Kopš {#since}
 
 - 1.9.1
-### Avots
+### Avots {#source}
 
 Definēts [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) 136. rindā
 
 
-## Atgriež
+## Atgriež {#returns}
 Jauna kopsumma

@@ -3,17 +3,17 @@ title: Araçlar ve Yapılandırma
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Araçlar ve Yapılandırma
+# Araçlar ve Yapılandırma {#tools-and-configuration}
 
 Theme Builder, WordPress sitenizi analiz etmek, tasarlamak ve oluşturmak için bir dizi araç kullanır. 1.16.0 sürümünde, **sd-ai-agent/site-scrape artık Tier 1 araçtır**; bu da Theme Builder içinde varsayılan olarak kullanılabilir olduğu anlamına gelir. Superdav AI Agent v1.18.0 ayrıca güvenilir geliştirici iş akışları için ayrı dağıtılan bir Advanced yardımcı paketi sunar; bu araçlar WordPress.org çekirdek paketinin parçası değildir ve ayrıca kurulup yetkilendirilmelidir.
 
-## Kullanılabilir Araçlar
+## Kullanılabilir Araçlar {#available-tools}
 
-### Tier 1 Araçlar (Her Zaman Kullanılabilir)
+### Tier 1 Araçlar (Her Zaman Kullanılabilir) {#tier-1-tools-always-available}
 
 Tier 1 araçlar, ek bir yapılandırma olmadan Theme Builder içinde varsayılan olarak kullanılabilir.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Amaç:** Tasarım ilhamı, içerik yapısı ve işlevsellik çıkarmak için mevcut web sitelerini analiz etmek.
 
@@ -51,11 +51,11 @@ example.com tasarımını analiz et ve bunu sitem için ilham olarak kullan.
 - JavaScript ağırlıklı sitelerde analiz sınırlı olabilir
 - Büyük sitelerin analiz edilmesi daha uzun sürebilir
 
-### Tier 2 Araçlar (İsteğe Bağlı)
+### Tier 2 Araçlar (İsteğe Bağlı) {#tier-2-tools-optional}
 
 Tier 2 araçlar, Theme Builder ayarlarında açıkça etkinleştirildiğinde kullanılabilir.
 
-#### Gelişmiş Analitik
+#### Gelişmiş Analitik {#advanced-analytics}
 
 Ayrıntılı performans metrikleri sağlar:
 
@@ -65,7 +65,7 @@ Ayrıntılı performans metrikleri sağlar:
 - Erişilebilirlik puanı
 - En iyi uygulamalar puanı
 
-#### İçerik Optimize Edici
+#### İçerik Optimize Edici {#content-optimizer}
 
 Şunlar için iyileştirmeler analiz eder ve önerir:
 
@@ -75,11 +75,11 @@ Ayrıntılı performans metrikleri sağlar:
 - İçerik yapısı
 - Eylem çağrısı yerleşimi
 
-### Tier 3 Araçlar (Premium)
+### Tier 3 Araçlar (Premium) {#tier-3-tools-premium}
 
 Tier 3 araçlar ek yapılandırma veya premium özellikler gerektirir.
 
-#### AI İçerik Oluşturucu
+#### AI İçerik Oluşturucu {#ai-content-generator}
 
 Şunlar için içerik oluşturur:
 
@@ -89,7 +89,7 @@ Tier 3 araçlar ek yapılandırma veya premium özellikler gerektirir.
 - Meta açıklamaları
 - Eylem çağrısı metni
 
-#### Gelişmiş Tasarım Araçları
+#### Gelişmiş Tasarım Araçları {#advanced-design-tools}
 
 Gelişmiş tasarım yetenekleri sağlar:
 
@@ -99,7 +99,7 @@ Gelişmiş tasarım yetenekleri sağlar:
 - Gelişmiş renk teorisi
 - Tipografi optimizasyonu
 
-### Advanced Yardımcı Araçlar (Ayrı Paket)
+### Advanced Yardımcı Araçlar (Ayrı Paket) {#advanced-companion-tools-separate-package}
 
 Advanced yardımcı paketi, çekirdek Superdav AI Agent sürümünden ayrı olarak dağıtılır. Yöneticilerin agent’ın yüksek etkili araçları kullanmasına açıkça izin verdiği güvenilir geliştirici ve site sahibi ortamları için tasarlanmıştır.
 
@@ -116,9 +116,9 @@ Advanced yardımcı yetenekleri şunları içerebilir:
 
 Bunları her kurulum için genel olarak kullanılabilir Theme Builder araçları olarak belgelemeyin. Yalnızca Advanced yardımcı paketi kurulduğunda, etkinleştirildiğinde ve güvenilir yöneticilerle sınırlandırıldığında kullanılabilirler.
 
-## Araç Yapılandırması
+## Araç Yapılandırması {#tool-configuration}
 
-### Araçları Etkinleştirme
+### Araçları Etkinleştirme {#enabling-tools}
 
 Theme Builder içinde ek araçları etkinleştirmek için:
 
@@ -127,7 +127,7 @@ Theme Builder içinde ek araçları etkinleştirmek için:
 3. Gerektiği şekilde araçları açın/kapatın
 4. Ayarları kaydedin
 
-### Araç İzinleri
+### Araç İzinleri {#tool-permissions}
 
 Bazı araçlar izin gerektirir:
 
@@ -137,7 +137,7 @@ Bazı araçlar izin gerektirir:
 - **Gelişmiş özellikler** — premium abonelik gerektirebilir
 - **Advanced yardımcı araçlar** — ayrı dağıtılan Advanced paketini ve açık yönetici güvenini gerektirir
 
-### API Anahtarları ve Kimlik Bilgileri
+### API Anahtarları ve Kimlik Bilgileri {#api-keys-and-credentials}
 
 Bunları gerektiren araçlar için API anahtarlarını yapılandırın:
 
@@ -146,13 +146,13 @@ Bunları gerektiren araçlar için API anahtarlarını yapılandırın:
 3. Bağlantıyı test edin
 4. Güvenli şekilde kaydedin
 
-### Advanced Yardımcı Paketini Kurma
+### Advanced Yardımcı Paketini Kurma {#installing-the-advanced-companion-package}
 
 Advanced yardımcı paketi, WordPress.org çekirdek ZIP’inden ayrı olarak yayımlanır. Bunu yalnızca sürüm için resmi proje dağıtım kanalından kurun, ardından erişimi güvenilir yöneticilerle sınırlayın. Bir üretim sitesinde dosya sistemi, veritabanı, WP-CLI, REST dağıtıcı, plugin oluşturucu, kullanıcı yönetimi veya benchmark araçlarını etkinleştirmeden önce insan onayı geçitlerini ve git anlık görüntü davranışını gözden geçirin.
 
-## sd-ai-agent/site-scrape Kullanımı
+## sd-ai-agent/site-scrape Kullanımı {#using-sd-ai-agentsite-scrape}
 
-### Temel Kullanım
+### Temel Kullanım {#basic-usage}
 
 Theme Builder’dan bir web sitesini analiz etmesini isteyin:
 
@@ -161,7 +161,7 @@ competitor.com adresindeki rakibimin sitesinin tasarımını analiz et
 ve sitem için tasarım iyileştirmeleri öner.
 ```
 
-### Belirli Analiz
+### Belirli Analiz {#specific-analysis}
 
 Belirli analiz türleri isteyin:
 
@@ -179,7 +179,7 @@ example.com’un mobil uyumluluğunu kontrol et ve sitemin
 aynı derecede uyumlu olduğundan emin ol.
 ```
 
-### Karşılaştırma Analizi
+### Karşılaştırma Analizi {#comparison-analysis}
 
 Birden fazla siteyi karşılaştırın:
 
@@ -188,22 +188,22 @@ site1.com ve site2.com tasarımlarını karşılaştır ve ikisinin de en iyi
 öğelerini birleştiren bir tasarım oluştur.
 ```
 
-## Araç Sınırlamaları ve Dikkate Alınacaklar
+## Araç Sınırlamaları ve Dikkate Alınacaklar {#tool-limitations-and-considerations}
 
-### Hız Sınırlaması
+### Hız Sınırlaması {#rate-limiting}
 
 - Scraping, sunucu aşırı yüklenmesini önlemek için hız sınırına tabidir
 - Aynı siteye yapılan birden fazla istek yavaşlatılabilir
 - Büyük sitelerin analiz edilmesi daha uzun sürebilir
 
-### İçerik Doğruluğu
+### İçerik Doğruluğu {#content-accuracy}
 
 - Dinamik içerik tam olarak yakalanmayabilir
 - JavaScript ile işlenen içerik eksik olabilir
 - Gerçek zamanlı veriler yansıtılmayabilir
 - Bazı içerikler ödeme duvarlarının arkasında olabilir
 
-### Yasal ve Etik Hususlar
+### Yasal ve Etik Hususlar {#legal-and-ethical-considerations}
 
 - robots.txt ve site politikalarına saygı gösterin
 - Telif hakkıyla korunan içeriği çoğaltmak için scrape etmeyin
@@ -211,16 +211,16 @@ site1.com ve site2.com tasarımlarını karşılaştır ve ikisinin de en iyi
 - Çıkarılan içeriği kullanma haklarına sahip olduğunuzu doğrulayın
 - Analiz edilen sitelerin hizmet şartlarına uyun
 
-### Performans Etkisi
+### Performans Etkisi {#performance-impact}
 
 - Büyük siteleri scrape etmek zaman alabilir
 - Eş zamanlı birden fazla scrape işlemi daha yavaş olabilir
 - Ağ bağlantısı hızı etkiler
 - Büyük veri kümeleri daha fazla işlem gerektirebilir
 
-## En İyi Uygulamalar
+## En İyi Uygulamalar {#best-practices}
 
-### Site Analizini Kullanma
+### Site Analizini Kullanma {#using-site-analysis}
 
 1. **Birden fazla siteyi analiz edin** — çeşitli kaynaklardan ilham toplayın
 2. **Yapıya odaklanın** — düzen ve organizasyon kalıplarını öğrenin
@@ -228,7 +228,7 @@ site1.com ve site2.com tasarımlarını karşılaştır ve ikisinin de en iyi
 4. **Tipografiyi inceleyin** — beğendiğiniz font kombinasyonlarını belirleyin
 5. **Gezinmeyi gözden geçirin** — menü organizasyonunu anlayın
 
-### Etik Scraping
+### Etik Scraping {#ethical-scraping}
 
 1. **robots.txt’ye saygı gösterin** — site yönergelerini izleyin
 2. **İçeriği kopyalamayın** — analizi yalnızca ilham için kullanın
@@ -236,7 +236,7 @@ site1.com ve site2.com tasarımlarını karşılaştır ve ikisinin de en iyi
 4. **Kaynakları belirtin** — ilham kaynaklarına atıf verin
 5. **Şartlara uyun** — site hizmet şartlarına uyun
 
-### Araç Etkinliğini En Üst Düzeye Çıkarma
+### Araç Etkinliğini En Üst Düzeye Çıkarma {#maximizing-tool-effectiveness}
 
 1. **Spesifik olun** — belirli analiz türleri isteyin
 2. **Bağlam sağlayın** — sitenizin amacını açıklayın
@@ -244,9 +244,9 @@ site1.com ve site2.com tasarımlarını karşılaştır ve ikisinin de en iyi
 4. **Yineleyin** — sonuçlara göre iyileştirin
 5. **Araçları birleştirin** — kapsamlı analiz için birden fazla araç kullanın
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### Site Scrape Edilemiyor
+### Site Scrape Edilemiyor {#site-wont-scrape}
 
 - Sitenin herkese açık erişilebilir olup olmadığını kontrol edin
 - robots.txt’nin scraping’e izin verdiğini doğrulayın
@@ -254,7 +254,7 @@ site1.com ve site2.com tasarımlarını karşılaştır ve ikisinin de en iyi
 - İnternet bağlantısını kontrol edin
 - Sorun devam ederse destekle iletişime geçin
 
-### Eksik Analiz
+### Eksik Analiz {#incomplete-analysis}
 
 - Sitede dinamik içerik olabilir
 - JavaScript tam olarak işlenmemiş olabilir
@@ -262,7 +262,7 @@ site1.com ve site2.com tasarımlarını karşılaştır ve ikisinin de en iyi
 - Bunun yerine belirli sayfaları analiz etmeyi deneyin
 - Belirli analiz türleri isteyin
 
-### Yavaş Performans
+### Yavaş Performans {#slow-performance}
 
 - Büyük sitelerin analiz edilmesi daha uzun sürer
 - Eş zamanlı birden fazla scrape işlemi daha yavaştır
@@ -270,7 +270,7 @@ site1.com ve site2.com tasarımlarını karşılaştır ve ikisinin de en iyi
 - Yoğun olmayan saatlerde deneyin
 - Önce daha küçük bölümleri analiz edin
 
-## İlgili Dokümantasyon
+## İlgili Dokümantasyon {#related-documentation}
 
 - [Keşif Görüşmesi](./discovery-interview.md) — tasarım bilgilerini toplayın
 - [Tasarım Yönü](./design-direction.md) — tasarımınızı iyileştirin

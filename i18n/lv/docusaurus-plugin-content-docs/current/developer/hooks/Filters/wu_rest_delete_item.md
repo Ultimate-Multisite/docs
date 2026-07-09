@@ -4,11 +4,11 @@ title: Filtrs - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filtrs: wu_rest_delete_item
+# Filtrs: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 Filtrē, vai ir atļauts turpināt pieprasījumu vai ne.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrē, vai ir atļauts turpināt pieprasījumu vai ne.
 | $rest_base | `array` | Entītijas slug. |
 | $this | `\Base_Manager` | Objekta instance. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) 440. rindā

@@ -3,7 +3,7 @@ title: Loga atharrachaidhean Neach-reic Àrainnean
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Loga Atharrachaidhean Neach-reic Àrainnean
+# Loga Atharrachaidhean Neach-reic Àrainnean {#domain-seller-changelog}
 
 Tionndadh 1.3.0 - Air fhoillseachadh air 2026-06-02
 - Ùr: Chaidh rabhadh network-admin a chur ris nuair a dh’fhàsas cothromachadh ath-reiceadair HostAfrica ro ìosal
@@ -134,20 +134,20 @@ Tionndadh 1.0.0 - Air fhoillseachadh air 2025-09-28
 * **Ceartaichte:** A h-uile còd v1 seann-fhasanta air ùrachadh gu inbhean v2
 * **Air a thoirt air falbh:** Co-chòrdalachd v1 dìleab (atharrachadh brisidh)
 
-### Tionndaidhean Roimhe (Dìleab v1)
+### Tionndaidhean Roimhe (Dìleab v1) {#previous-versions-v1-legacy}
 
-### Tionndadh 0.0.3 - 20/08/2019
+### Tionndadh 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Ceartaichte: Neo-chòrdalachd le Groundhogg CRM
 * Nota: B’ e seo an sgaoileadh mu dheireadh a bha co-chòrdail ri v1
 
-### Tionndadh 0.0.2 - 07/12/2018
+### Tionndadh 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Ceartaichte: Chaidh raon License Key a thoirt air falbh
 * Ceartaichte: Tabaichean plan a dhìth nuair a tha plugin an fheart gnìomhach
 * Leasaichte: Chaidh putan leum seachad a chur ris an raon clàraidh
 
-### Tionndadh 0.0.1 - Sgaoileadh Tùsail
+### Tionndadh 0.0.1 - Sgaoileadh Tùsail {#version-001---initial-release}
 
 * Amalachadh bunaiteach OpenSRS airson WP Ultimo v1
 * Rannsachadh agus clàradh àrainn sìmplidh

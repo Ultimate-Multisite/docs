@@ -4,11 +4,11 @@ title: Salain - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status
+# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Sinasala ang object data bago ito itago sa database.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Paglalarawan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sinasala ang object data bago ito itago sa database.
 | $post_type | `string` | Ang post type. |
 | $this | `\Base_Model` | Ang object instance. |
 
-### Mula noong
+### Mula noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) sa linya 320

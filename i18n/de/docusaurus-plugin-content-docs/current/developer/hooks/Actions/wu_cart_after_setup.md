@@ -4,19 +4,19 @@ title: Aktion - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Aktion: wu_cart_after_setup
+# Aktion: wu_cart_after_setup {#action-wucartaftersetup}
 
 Ermöglicht Entwicklern, zusätzliche Änderungen am Checkout-Objekt vorzunehmen.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | $this | `` | \WP_Ultimo\Checkout\Cart Das Warenkorb-Objekt. |
 
-### Seit
+### Seit {#since}
 
 - 2.0.0
-### Quelle
+### Quelle {#source}
 
 Definiert in [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L388) in Zeile 388

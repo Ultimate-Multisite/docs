@@ -3,13 +3,13 @@ title: Dnevnik promjena tiketa za podršku
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Dnevnik promjena tiketa podrške
+# Dnevnik promjena tiketa podrške {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Poboljšano: Uklonjen direktorij vendor/ iz Git praćenja (već obuhvaćeno s .gitignore), čime je smanjena veličina repozitorija
 * Poboljšano: Testirano do WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Ispravak: Prihvaćanje null vrijednosti u nullable setterima modela tiketa
 * Ispravak: Pohrana svih tiketa u globalne tablice na razini cijele mreže radi ispravne multisite podrške
 * Ispravak: Sakrivanje polja osoblja i ispravak preusmjeravanja na praznu stranicu na obrascu korisnika za novi tiket
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Poboljšano: Uvjetno učitavanje frontend resursa samo na stranicama tiketa podrške
 * Poboljšano: Preskakanje plugin autoloadera kada je Bedrock root autoloader već učitao ovisnosti
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Dodano: Potpuna funkcionalnost pregledavanja tiketa za administraciju i frontend
 * Dodano: AJAX handler za slanje odgovora na tiket
 * Dodano: Podrška za funkcionalnost odgovora na tiket s ispravnim rukovanjem obrascem
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Poboljšano: Struktura baze podataka s ispravnim klasama upita i sheme za odgovore i privitke
 * Poboljšano: Migracija na stvarna svojstva umjesto atributa za modele tiketa
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Ažurirano: Prefiks preimenovan u ultimate-multisite radi dosljednosti
 * Ažurirano: Standardizacija tekstualne domene
 * Ispravljeno: Manji ispravci grešaka i poboljšanja
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Početno izdanje
 * Cjelovit sustav upravljanja tiketima
 * Višerazinska kontrola pristupa

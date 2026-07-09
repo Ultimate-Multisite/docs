@@ -4,19 +4,19 @@ title: Filter - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme
+# Filter: auth_redirect_scheme {#filter-authredirectscheme}
 
 Filtert d'Authentifizéierungs-Redirect-Schema.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
 | $scheme | `string` | Authentifizéierungs-Redirect-Schema. Standardméisseg eidel. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.9.0
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212) op Linn 212

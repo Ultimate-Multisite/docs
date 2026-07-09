@@ -3,7 +3,7 @@ title: การตั้งค่า PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# การตั้งค่า PayPal Gateway (v2)
+# การตั้งค่า PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**หมายเหตุสำคัญ: บทความนี้อ้างอิงถึง Ultimate Multisite เวอร์ชัน 2.x**_
 
@@ -13,13 +13,13 @@ _**หมายเหตุสำคัญ: บทความนี้อ้า
 
 โปรดทราบว่าคุณต้องมี **PayPal Business Account** เพื่อรับข้อมูลรับรอง API ที่จำเป็นสำหรับการผสานการทำงานนี้
 
-## การเปิดใช้งาน PayPal บนเครือข่ายของคุณ
+## การเปิดใช้งาน PayPal บนเครือข่ายของคุณ {#enabling-paypal-on-your-network}
 
 หากต้องการเปิดใช้งาน PayPal เป็นวิธีการชำระเงินที่พร้อมใช้งานบนเครือข่ายของคุณ ให้ไปที่แท็บ **Ultimate Multisite > Settings > Payments** และทำเครื่องหมายในช่องถัดจาก PayPal
 
 ![การเปิดใช้งาน PayPal ในเกตเวย์การชำระเงินที่ใช้งานอยู่](/img/config/settings-payment-gateways.png)
 
-## การใช้ตัวช่วยตั้งค่าแบบมีคำแนะนำ
+## การใช้ตัวช่วยตั้งค่าแบบมีคำแนะนำ {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 เพิ่มตัวช่วยตั้งค่า PayPal แบบมีคำแนะนำไว้ในการตั้งค่าเกตเวย์การชำระเงิน หลังจากคุณเปิดใช้งาน PayPal แล้ว ให้ใช้ตัวช่วยบน **Ultimate Multisite > Settings > Payments** เพื่อเลือกวิธีที่คุณต้องการเชื่อมต่อเกตเวย์ และยืนยันว่าข้อมูลรับรองใดยังจำเป็นก่อนบันทึก
 
@@ -30,7 +30,7 @@ Ultimate Multisite 2.10.0 เพิ่มตัวช่วยตั้งค่
 
 หากคุณไม่เห็นตัวเลือก OAuth ในตัวช่วย ให้ทำขั้นตอนการป้อนข้อมูลรับรองด้วยตนเองด้านล่างให้เสร็จสมบูรณ์ เกตเวย์ทำงานกับข้อมูลรับรอง PayPal Business API เดียวกับรุ่น Ultimate Multisite 2.x ก่อนหน้า
 
-## การรับข้อมูลรับรอง PayPal API
+## การรับข้อมูลรับรอง PayPal API {#getting-the-paypal-api-credentials}
 
 เมื่อเปิดใช้งาน PayPal เป็นเกตเวย์การชำระเงินแล้ว คุณจะต้องกรอกข้อมูลในช่อง PayPal API **ชื่อผู้ใช้**, PayPal API **รหัสผ่าน** และ PayPal API **ลายเซ็น**
 

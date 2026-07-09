@@ -3,11 +3,11 @@ title: Referens för hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks-referens
+# Hooks-referens {#hooks-reference}
 
 Automatiskt genererad dokumentation för alla **59 åtgärder** och **118 filter** i Ultimate Multisite.
 
-## Åtgärder
+## Åtgärder {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Körs före autentiseringsomdirigeringen.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Körs omedelbart innan autentiseringscookien anges.
@@ -70,7 +70,7 @@ Automatiskt genererad dokumentation för alla **59 åtgärder** och **118 filter
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Körs efter att ett objekt har lagrats i databasen.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Tillåt plugin-utvecklare att lägga till actions i upplåsningsprocessen.
 
-## Filter
+## Filter {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrerar varaktigheten för autentiseringscookiens utgångsperiod.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrerar autentiseringens omdirigeringsschema.

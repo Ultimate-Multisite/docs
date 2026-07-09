@@ -3,15 +3,15 @@ title: 'Õppetund 14: Mis saab edasi'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Õppetund 14: Mis saab edasi
+# Õppetund 14: Mis saab edasi {#lesson-14-what-comes-next}
 
 Oled loonud nišiveebisaitide platvormi nullist. FitSite on live, teenindab fitnessistuudioid ja loob korduvat tulu. See viimane õppetund vaatab, kuhu siit edasi liikuda.
 
-## Kus me pooleli jäime
+## Kus me pooleli jäime {#where-we-left-off}
 
 FitSite on toimiv äri klientide, tegevuste ja kasvutrajektooriga. Nüüd mõtleme sellele, mis saab edasi.
 
-## Täielik FitSite võrgustik
+## Täielik FitSite võrgustik {#the-complete-fitsite-network}
 
 Siin on kõik, mille ehitasime 14 õppetunni jooksul:
 
@@ -46,11 +46,11 @@ FitSite võrgustik (täielik)
     └── Meeskonna loomise tegevuskava
 ```
 
-## Valik 1: Mine oma nišis sügavamale
+## Valik 1: Mine oma nišis sügavamale {#option-1-go-deeper-in-your-niche}
 
 Enne uutesse niššidesse laienemist kaalu fitnessivaldkonnas sügavamale minekut:
 
-### Alamnišid
+### Alamnišid {#sub-niches}
 
 - **Joogastuudiod** -- spetsialiseeritud mallid meditatsiooni, retriitide ja töötubade funktsioonidega
 - **CrossFit box’id** -- WOD jälgimine, võistlustulemused, kogukonnafunktsioonid
@@ -59,7 +59,7 @@ Enne uutesse niššidesse laienemist kaalu fitnessivaldkonnas sügavamale mineku
 
 Igal alamnišil võivad olla oma mallid ja potentsiaalselt oma bränd, kõik töötamas samas Ultimate Multisite võrgustikus.
 
-### Premium-funktsioonid
+### Premium-funktsioonid {#premium-features}
 
 Ehita funktsioone, mille eest fitnessistuudiod on valmis lisaks maksma:
 
@@ -68,14 +68,14 @@ Ehita funktsioone, mille eest fitnessistuudiod on valmis lisaks maksma:
 - **Fitnessiblogi mallid** -- eelvalmis sisustruktuurid fitnessi sisuturunduse jaoks
 - **Sotsiaalmeedia integratsioon** -- tundide ajakavade ja uuenduste automaatne postitamine
 
-### Geograafiline laienemine
+### Geograafiline laienemine {#geographic-expansion}
 
 Kui alustasid kohalikult, laiene:
 
 - Teistesse linnadesse oma riigis
 - Teistesse riikidesse (kasuta Ultimate Multisite'i [lokaliseerimisfunktsioone](/user-guide/localization/translating), et toetada mitut keelt)
 
-## Valik 2: Laiene külgnevatesse niššidesse
+## Valik 2: Laiene külgnevatesse niššidesse {#option-2-expand-to-adjacent-niches}
 
 Protsess, mida fitnessistuudiote puhul järgisid, töötab iga niši jaoks. Sinu teine nišš on lihtsam, sest sul on juba:
 
@@ -83,7 +83,7 @@ Protsess, mida fitnessistuudiote puhul järgisid, töötab iga niši jaoks. Sinu
 - Tegevuskogemus
 - Tõestatud tegevusmudel
 
-### Fitnessiga külgnevad nišid
+### Fitnessiga külgnevad nišid {#adjacent-niches-to-fitness}
 
 - **Heaolu ja spaa** -- massaažiterapeudid, päevaspad, heaolukeskused
 - **Spordiklubid** -- amatöörspordimeeskonnad, liigad, harrastusklubid
@@ -91,7 +91,7 @@ Protsess, mida fitnessistuudiote puhul järgisid, töötab iga niši jaoks. Sinu
 
 Neil on fitnessiga sihtrühma kattuvus, seega võivad sinu turundus ja partnerlused üle kanduda.
 
-### Täiesti uued nišid
+### Täiesti uued nišid {#completely-new-niches}
 
 Rakenda 2. õppetunni raamistikku mis tahes niši hindamiseks:
 
@@ -108,7 +108,7 @@ Iga uus nišš vajab:
 
 Platvormi taristu, arveldus ja tegevusprotsessid jäävad samaks.
 
-## Valik 3: Ehita platvormide platvorm
+## Valik 3: Ehita platvormide platvorm {#option-3-build-a-platform-of-platforms}
 
 Mastaabis saad ühes Ultimate Multisite võrgustikus hallata mitut nišibrändi:
 
@@ -118,11 +118,11 @@ Mastaabis saad ühes Ultimate Multisite võrgustikus hallata mitut nišibrändi:
 
 Igal brändil on oma mallid, paketid ja turundus, kuid nad jagavad taristut, arveldust ja tegevusprotsesse. Siin muutub Ultimate Multisite'i majanduslik mõju võimsaks -- üks platvorm, palju vertikaale.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Niššide täielikuks eraldamiseks kaalu [Multi-Network lisamoodulit](/addons/multinetwork), mis võimaldab sul käitada mitut WordPress võrgustikku ühest paigaldusest.
 
-## Valik 4: Müü äri maha
+## Valik 4: Müü äri maha {#option-4-sell-the-business}
 
 Nišiveebisaitide platvorm korduva tulu, madala churn’i ja selge turupositsiooniga on väärtuslik vara. SaaS ärid müüakse tavaliselt 3–5x aastase tulu eest.
 
@@ -134,7 +134,7 @@ FitSite 200 kliendiga ja $89 ARPU-ga:
 
 See ei ole garanteeritud tulemus, kuid hästi juhitud nišiplatvormi jaoks on see realistlik.
 
-## Mida oled õppinud
+## Mida oled õppinud {#what-you-have-learned}
 
 See kursus õpetas sulle korratava protsessi:
 
@@ -150,7 +150,7 @@ See kursus õpetas sulle korratava protsessi:
 
 Nišš on strateegia. Platvorm on tööriist. Ultimate Multisite teeb tööriista võimalikuks. Sinu arusaam nišist teeb selle väärtuslikuks.
 
-## Alusta ehitamist
+## Alusta ehitamist {#start-building}
 
 Kui järgisid FitSite’i näidet, on sul toimiv platvorm. Kui lugesid kaasa, et leida oma nišš, mine tagasi jaotisse [Õppetund 2: oma niši valimine](lesson-2-picking-your-niche) ning alusta protsessi oma valitud valdkonna jaoks.
 

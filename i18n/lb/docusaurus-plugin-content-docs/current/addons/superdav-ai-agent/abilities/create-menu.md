@@ -3,15 +3,15 @@ title: Menü erstellen
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menü erstellen
+# Menü erstellen {#create-menu}
 
 D'Fäegkeet **Menü erstellen** erstellt WordPress-Navigatiounsmenüe mat Ënnerstëtzung fir ënnerschiddlech Navigatiounslabelen, déi getrennt vu Säitentitele sinn.
 
-## Iwwersiicht
+## Iwwersiicht {#overview}
 
 Dës Fäegkeet erweidert déi standardméisseg Funktionalitéit fir Menüs ze erstellen ëm d'Méiglechkeet, e Parameter `navigation_label` unzeginn. Dat erlaabt Iech Menüs ze erstellen, bei deenen de Label, deen an der Navigatioun ugewise gëtt, sech vum Säitentitel ënnerscheet, a bitt méi Flexibilitéit bei der Struktur vum Site an der Benotzererfarung.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Parameter | Typ | Erfuerderlech | Beschreiwung |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Dës Fäegkeet erweidert déi standardméisseg Funktionalitéit fir Menüs ze er
 | `location` | string | Nee | Theme-Plaz, där dëse Menü zougewise gëtt, z. B. `primary` |
 | `navigation_label` | string | Nee | Label, deen an der Navigatioun ugewise gëtt (ënnerschiddlech vum Säitentitel) |
 
-## Réckgabewäert
+## Réckgabewäert {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Dës Fäegkeet erweidert déi standardméisseg Funktionalitéit fir Menüs ze er
 }
 ```
 
-## Navigatiounslabel vs. Säitentitel
+## Navigatiounslabel vs. Säitentitel {#navigation-label-vs-page-title}
 
 De Parameter `navigation_label` erlaabt Iech, den interne Menüsnumm vum Label ze trennen, deen de Benotzer ugewise gëtt:
 
@@ -43,9 +43,9 @@ Dat ass nëtzlech wann:
 - Dir méi Sprooche mat ënnerschiddleche Labellängte ënnerstëtze musst
 - Dir Menüs fir spezifesch Regiounen oder Benotzergruppen opbaut
 
-## Benotzungsbeispiller
+## Benotzungsbeispiller {#usage-examples}
 
-### Beispill 1: Einfache Menü mat Navigatiounslabel
+### Beispill 1: Einfache Menü mat Navigatiounslabel {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Erstell e primäre Navigatiounsmenü mam Numm "Main Navigation" mam Navigatiouns
 }
 ```
 
-### Beispill 2: Menü fir spezifesch Theme-Plaz
+### Beispill 2: Menü fir spezifesch Theme-Plaz {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Erstell e Footer-Menü mam Numm "Footer Links" mam Navigatiounslabel "Quick Link
 }
 ```
 
-## Integratioun mat Theme Builder
+## Integratioun mat Theme Builder {#integration-with-theme-builder}
 
 Wann Dir Theme Builder benotzt, mécht d'Fäegkeet Menü erstellen Folgendes:
 
@@ -89,13 +89,13 @@ Wann Dir Theme Builder benotzt, mécht d'Fäegkeet Menü erstellen Folgendes:
 3. Weist Menüs de richtege Theme-Plazen zou
 4. Ënnerstëtzt d'Dobäisetze vu Menüelementer no der Erstellung
 
-## Verbonnen Fäegkeeten
+## Verbonnen Fäegkeeten {#related-abilities}
 
 - **`add_menu_item`** — Elementer zu engem existente Menü derbäisetzen
 - **`update_menu`** — E Menü ëmbenennen oder en enger Theme-Plaz nei zouweisen
 - **`delete_menu`** — E Menü vun Ärem Site ewechhuelen
 
-## Beschte Praktiken
+## Beschte Praktiken {#best-practices}
 
 - **Benotzt kloer Navigatiounslabelen** — haalt Labelen kuerz a beschreiwend fir Benotzer
 - **Passt Theme-Plazen un** — weist Menüs der richteger Theme-Plaz zou, fir eng korrekt Uweisung
@@ -103,14 +103,14 @@ Wann Dir Theme Builder benotzt, mécht d'Fäegkeet Menü erstellen Folgendes:
 - **Test d'Reaktiounsfäegkeet** — iwwerpréift, datt Menüs op mobilen Apparater richteg ugewise ginn
 - **Lokaliséiert Labelen** — benotzt ënnerschiddlech Navigatiounslabelen fir ënnerschiddlech Sproochversiounen
 
-## Aschränkungen
+## Aschränkungen {#limitations}
 
 - Navigatiounslabelen sinn nëmme fir d'Uweisung; den interne `name` gëtt nach ëmmer fir d'WordPress-Identifikatioun benotzt
 - Theme-Ënnerstëtzung variéiert; net all Theme ënnerstëtzen all Menüplazen
 - Menüelementer mussen no der Menüerstellung separat derbäigesat ginn
 - D'Ännere vun engem Navigatiounslabel erfuerdert d'Aktualiséiere vum Menü
 
-## Verbonnen Fäegkeeten
+## Verbonnen Fäegkeeten {#related-abilities-1}
 
 - [Logo SVG generéieren](./generate-logo-svg.md) — Logoen fir Äre Site-Header erstellen
 - [Palette-Kontrast validéieren](./validate-palette-contrast.md) — zougänglech Faarfschemaen assuréieren

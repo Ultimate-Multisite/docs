@@ -3,7 +3,7 @@ title: Plan ufwerten
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan-Upgrade (v2)
+# Plan-Upgrade (v2) {#upgrading-a-plan-v2}
 
 _**WICHTIGE NOTIERE: Dëse Artikel bezieht sich uf Ultimate Multisite version 2.x.**_
 
@@ -33,7 +33,7 @@ Nachdem d'Kasse abgschlosse isch, wärde die nöie Produkt zu de Kunde-Konten gf
 
 ##
 
-## Upgrade- und Downgrade-Wäg
+## Upgrade- und Downgrade-Wäg {#upgrade-and-downgrade-paths}
 
 Auf jedem vo dine Produkt häts en **Up & Downgrades** Tab. D'ersti Option uf däm Tab isch es Feld mit em Name **Plan Group**.
 

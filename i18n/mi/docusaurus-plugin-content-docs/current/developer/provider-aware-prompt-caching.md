@@ -3,11 +3,11 @@ title: Keteroki Tohuaki e Mōhio ana ki te Kaiwhakarato
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Keteroki Tohuaki e Mōhio ana ki te Kaiwhakarato
+# Keteroki Tohuaki e Mōhio ana ki te Kaiwhakarato {#provider-aware-prompt-caching}
 
 Ka whakauru a Superdav AI Agent v1.12.0 i te **keteroki tohuaki e mōhio ana ki te kaiwhakarato**, e arotau ana i ngā utu API me te tōmuri mā te keteroki i ngā tohuaki puta noa i ngā kaiwhakarato LLM rerekē. He rerekē ngā tikanga keteroki me ngā whirihoranga a ia kaiwhakarato.
 
-## Tirohanga Whānui
+## Tirohanga Whānui {#overview}
 
 Mā te keteroki tohuaki ka taea e koe te:
 
@@ -23,11 +23,11 @@ He rerekē te whakatinana a ngā kaiwhakarato rerekē i te keteroki:
 - **OpenRouter**: Keteroki motuhake ki te kaiwhakarato
 - **Vertex Anthropic**: Keteroki tohuaki me te mana keteroki
 
-## Google Gemini: API cachedContents
+## Google Gemini: API cachedContents {#google-gemini-cachedcontents-api}
 
 Ka whakarato a Google Gemini i te whakahaere keteroki mārama mā te API `cachedContents`.
 
-### Whirihoranga
+### Whirihoranga {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Waihanga i tētahi Tohuaki Kua Keterokitia
+### Waihanga i tētahi Tohuaki Kua Keterokitia {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Whakamahi i tētahi Tohuaki Kua Keterokitia
+### Whakamahi i tētahi Tohuaki Kua Keterokitia {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Huringa Oranga Keteroki
+### Huringa Oranga Keteroki {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Ngā Tikanga Pai mō Gemini
+### Ngā Tikanga Pai mō Gemini {#best-practices-for-gemini}
 
 - **Tautuhia te TTL tōtika**: Whakatauritea ngā penapena utu ki te tawhitotanga o te keteroki
 - **Keterokitia ngā tohuaki pūnaha**: Whakamahia anō taua tohuaki pūnaha anō puta noa i ngā tono
 - **Aroturukitia te whakamahinga keteroki**: Aroturukitia ko ēhea keteroki e tino whakamahia ana
 - **Whakapai i ngā keteroki kua mōnehu**: Mukua ā-wā ngā keteroki kāore e whakamahia ana
 
-## Azure OpenAI: Keteroki Tohuaki
+## Azure OpenAI: Keteroki Tohuaki {#azure-openai-prompt-caching}
 
 Ka tautoko a Azure OpenAI i te keteroki tohuaki me te whakahaere TTL aunoa.
 
-### Whirihoranga
+### Whirihoranga {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Whakahohe i te Keteroki
+### Whakahohe i te Keteroki {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Ngā Header Keteroki
+### Ngā Header Keteroki {#cache-headers}
 
 Ka whakamahi a Azure OpenAI i ngā header HTTP mō te mana keteroki:
 
@@ -152,7 +152,7 @@ Ngā uara e tautokona ana:
 - `no_cache`: Kaua e keteroki i tēnei tono
 - `no_store`: Kaua e keteroki, kaua hoki e whakamahi anō
 
-### Aroturuki i te Whakamahinga Keteroki
+### Aroturuki i te Whakamahinga Keteroki {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Ngā Tikanga Pai mō Azure OpenAI
+### Ngā Tikanga Pai mō Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Whakamahia ngā tohuaki ōrite**: Ka whai hua ngā tohuaki ōrite i te keteroki
 - **Tautuhia he TTL whaitake**: Whakatauritea te utu ki te houtanga
 - **Aroturukitia ngā ine keteroki**: Aroturukitia te waihanga keteroki ki ngā pānga
 - **Whakarōpūtia ngā tono ōrite**: Whakarōpūtia ngā tono kia nui ake ai ngā pānga keteroki
 
-## OpenRouter: Keteroki Motuhake ki te Kaiwhakarato
+## OpenRouter: Keteroki Motuhake ki te Kaiwhakarato {#openrouter-provider-specific-caching}
 
 Ka tautoko a OpenRouter i te keteroki mā ngā kaiwhakarato o raro (OpenAI, Anthropic, me ētahi atu).
 
-### Whirihoranga
+### Whirihoranga {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Whakamahi i te Keteroki OpenRouter
+### Whakamahi i te Keteroki OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Ngā Kōwhiringa Motuhake ki te Kaiwhakarato
+### Ngā Kōwhiringa Motuhake ki te Kaiwhakarato {#provider-specific-options}
 
 He rerekē ngā tikanga keteroki a ngā kaiwhakarato rerekē:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Ngā Tikanga Pai mō OpenRouter
+### Ngā Tikanga Pai mō OpenRouter {#best-practices-for-openrouter}
 
 - **Me mōhio ki te keteroki a tō kaiwhakarato**: He rerekē ngā tikanga a ia kaiwhakarato
 - **Whakamātauria te whanonga keteroki**: Manatokohia e mahi ana te keteroki me tō kaiwhakarato kua kōwhiria
 - **Aroturukitia ngā utu**: Aroturukitia ngā penapena mai i te keteroki
 - **Whakamahia ngā tauira ōrite**: Ka whati ngā pānga keteroki ina whakawhiti tauira
 
-## Vertex Anthropic: Keteroki Tohuaki me te Mana Keteroki
+## Vertex Anthropic: Keteroki Tohuaki me te Mana Keteroki {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Ka tautoko a Vertex Anthropic (Google Cloud) i te keteroki tohuaki me te mana keteroki mārama.
 
-### Whirihoranga
+### Whirihoranga {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Te whakamahi i te keteroki Vertex Anthropic
+### Te whakamahi i te keteroki Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Ngā momo whakahaere keteroki
+### Ngā momo whakahaere keteroki {#cache-control-types}
 
 - **ephemeral**: Keteroki mō te roanga o te tono (taunoa)
 - **persistent**: Keteroki puta noa i ngā tono maha (mēnā ka tautokona)
 
-### Te aroturuki i te whakamahinga keteroki
+### Te aroturuki i te whakamahinga keteroki {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Ngā tikanga pai mō Vertex Anthropic
+### Ngā tikanga pai mō Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Whakamahia te keteroki ephemeral**: He pai mō te keteroki wāhanga kotahi
 - **Tautuhia te max_tokens kia hāngai**: Whakatauritea te rahi keteroki ki te utu
 - **Aroturukihia ngā inenga keteroki**: Aroturukihia te whaihua o te keteroki
 - **Whakamātauria ki tō kawenga mahi**: Manatokohia ka whai hua te keteroki ki tō whakamahinga
 
-## Rautaki keteroki whakawhiti-kaiwhakarato
+## Rautaki keteroki whakawhiti-kaiwhakarato {#cross-provider-caching-strategy}
 
-### Whirihoranga whakakotahi
+### Whirihoranga whakakotahi {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Kitea te kaiwhakarato
+### Kitea te kaiwhakarato {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Rautaki hokinga kē
+### Rautaki hokinga kē {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Arotau utu
+## Arotau utu {#cost-optimization}
 
-### Tātaihia ngā penapena
+### Tātaihia ngā penapena {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Ngā tohutohu arotau
+### Ngā tohutohu arotau {#optimization-tips}
 
 - **Keteroki ngā tohutohu pūnaha nui**: Ngā penapena utu tino nui
 - **Whakamahia anō te horopaki**: Keteroki i ngā tuhinga horopaki e whakamahia nuitia ana
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Aroturukihia te whaihua o te keteroki**: Aroturukihia ngā penapena tūturu
 - **Whakarerekēhia te TTL**: Whakatauritea te utu ki te hou tonu
 
-## Rapurongoā
+## Rapurongoā {#troubleshooting}
 
-### Kāore te keteroki e whakamahia ana
+### Kāore te keteroki e whakamahia ana {#cache-not-being-used}
 
 - Manatokohia kua whakahohea te keteroki i te whirihoranga
 - Tirohia he ōrite ngā tohutohu (me tino ōrite kia taea ai te keteroki)
 - Manatokohia kāore anō te keteroki kia pau
 - Tirohia ngā rohe keteroki motuhake ki te kaiwhakarato
 
-### Kāore te waihanga keteroki e angitū
+### Kāore te waihanga keteroki e angitū {#cache-creation-failing}
 
 - Manatokohia kei roto te rahi keteroki i ngā rohe a te kaiwhakarato
 - Tirohia he tika te wetereo whakahaere keteroki
 - Me whakarite ka tautoko te kaiwhakarato i te keteroki mō tō tauira
 - Arotakehia ngā tuhinga a te kaiwhakarato mō ngā here
 
-### Ngā utu ohorere
+### Ngā utu ohorere {#unexpected-costs}
 
 - Aroturukihia te waihanga keteroki ki ngā token pānui keteroki
 - Manatokohia kei te whakamahia tūturu te keteroki
 - Tirohia mēnā he hapa keteroki nā ngā rerekētanga tohutohu
 - Whakaarohia te whakarerekē i te TTL, i te rautaki keteroki rānei
 
-## Whakataurite kaiwhakarato
+## Whakataurite kaiwhakarato {#provider-comparison}
 
 | Āhuatanga | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Whakaitinga utu | 90% | 90% | E whakawhirinaki ana ki te kaiwhakarato | 90% |
 | Aroturuki | Taipitopito | Mā ngā inenga | E whakawhirinaki ana ki te kaiwhakarato | Mā te whakamahinga |
 
-## Ngā mahi ka whai ake
+## Ngā mahi ka whai ake {#next-steps}
 
 1. **Kōwhiria tō kaiwhakarato**: Tīpakohia i runga i ō hiahia
 2. **Whirihorahia te keteroki**: Whakaritea te keteroki motuhake ki te kaiwhakarato

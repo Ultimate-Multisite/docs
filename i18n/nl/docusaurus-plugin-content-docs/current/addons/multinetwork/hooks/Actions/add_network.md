@@ -4,20 +4,20 @@ title: Actie - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Actie: add_network
+# Actie: add_network {#action-addnetwork}
 
 Wordt uitgevoerd nadat een nieuw netwerk is toegevoegd.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $new_network_id | `int` | ID of the added network. |
 | $r | `array` | Full associative array of network arguments. |
 
-### Sinds
+### Sinds {#since}
 
 - 1.3.0
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1304) op regel 1304

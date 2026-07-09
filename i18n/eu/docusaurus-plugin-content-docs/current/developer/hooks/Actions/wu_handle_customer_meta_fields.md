@@ -4,11 +4,11 @@ title: Ekintza - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Ekintza: wu_handle_customer_meta_fields
+# Ekintza: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Eman gehigarrien garatzaileei metadatuak modu desberdinetan gordetzeko aukera, behar badute.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Eman gehigarrien garatzaileei metadatuak modu desberdinetan gordetzeko aukera, b
 | $customer | `\Customer` | Ultimate Multisite bezero-objektua. |
 | $checkout | `\Checkout` | Ordainketa-prozesuaren klasea. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.0.0
-### Iturburua
+### Iturburua {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) fitxategian definitua, 1211. lerroan.

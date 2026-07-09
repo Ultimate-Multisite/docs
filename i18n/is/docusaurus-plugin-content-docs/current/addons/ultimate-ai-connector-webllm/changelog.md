@@ -3,9 +3,9 @@ title: Fullkominn AI-tengill fyrir WebLLM breytingaskrá
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector fyrir WebLLM breytingaskrá
+# Ultimate AI Connector fyrir WebLLM breytingaskrá {#ultimate-ai-connector-for-webllm-changelog}
 
-## Útgáfa 1.1.0 — Gefin út 2026-04-09
+## Útgáfa 1.1.0 — Gefin út 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Nýtt: Fljótandi spjallgræja með stöðuvísi í admin-bar — hvaða innskráði notandi sem er getur sent beiðni til LLM í vafra beint úr framendanum.
 * Nýtt: SharedWorker keyrsluumhverfi — MLC-vélin keyrir nú í SharedWorker svo margir flipar deila einni GPU-lotu í stað þess að keppa um hana.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Lagfæring: Krækja WebLLM í wpai_preferred_text_models síuna svo AI Experiments eiginleikinn beini í vafravélina þegar líkan er stillt.
 * Bætt: Skyndiminnis-hjáhlaup, stöðlun efnis og lagfæringar á vélbúnaðartilvísunum sem komu í ljós við heildarprófanir.
 
-## Útgáfa 1.0.0 — Fyrsta útgáfa
+## Útgáfa 1.0.0 — Fyrsta útgáfa {#version-100--initial-release}

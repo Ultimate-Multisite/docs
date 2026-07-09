@@ -3,11 +3,11 @@ title: WP-CLI Указальнік
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference
+# WP-CLI Reference {#wp-cli-reference}
 
 Plugin gratis AI Agent прадугледжвае сям'ю каманд `wp gratis-ai-agent` для праводзіння тэставання агента, кіравання яго здольнасцямі (abilities) і азначэння яго статусу з каманднай кропкі. Усе каманды патрабуюць WP-CLI 2.0 або больш высокай версіі.
 
-## Installation
+## Installation {#installation}
 
 Каманды WP-CLI рэгіструюцца аўтаматычна, калі плагін актыўны. Праверце наступным:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Праводзіць тэставанне (benchmark) здольнасцей Агента — набор складаных, многоэтапных прамптаў, якія працуюць над усяй пакрыццём здольнасцей. Выкарыстоўвайце гэта для ацэнкі прадукцыйнасці мадэлі, параўнання AI-провайдэраў або праверкі пакетаў здольнасцей перад выкарыстаннем у прадукцыі.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Options
+### Options {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Формат выніку: `table` (па спілкуванні), `json`, `csv` |
 | `--save` | Захаваць вынікі тэставання ў базе дадзеных для гістарычнага параўнання |
 
-### Examples
+### Examples {#examples}
 
 Правесці цэлае тэставанне з бягучым провайдэрам і мадэллю:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 Тэставанне выказвае адзін радкі на кожнае пытанне з наступнымі камплектамі:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark Questions
+### Benchmark Questions {#benchmark-questions}
 
 Па спілкуванні па спілкуванні ўключаны:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Кіруе ўсталяваныя здольнасці і пакеты здольнасцей.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Выказвае ўсе рэгістраваныя здольнасці, іх крыніцу (асноўныя або пакет) і іх бягучы статус.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Замяшчае і актывуе пакет здольнасцей з рэгістры.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Выключае пэўную здольнасць, не выдаляючы пакет. Карысна для абмежавання сферы дзейнасці агента на пэўным сайце.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Пановічна актывуе раней выключаную здольнасць.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Выказвае бягучую канфігурацыю агента і статус злучэння.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Выказвае правяджныя дзеянні агента з логаў наладжвання (debug log).
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Ануляруе стан агента: выдаляе ўвесці CSS, выдаляе рэгістраваныя CPT і таксономіі агента, ануляроўвае глобальныя стылі і паступоўвае кеш опцый агента. Не выдаляе плагін або яго налады.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 Усе каманды выходзяць з кодам `0` пры поспеху. Не нулёвыя коды выходу:
 

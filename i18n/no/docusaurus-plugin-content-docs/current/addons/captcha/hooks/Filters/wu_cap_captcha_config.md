@@ -4,22 +4,22 @@ title: Filter - wu_cap_captcha_config
 sidebar_label: wu_cap_captcha_config
 _i18n_hash: 4b2098b3e8b83cdcca2c6b5098059305
 ---
-# Filter: wu_cap_captcha_config
+# Filter: wu_cap_captcha_config {#filter-wucapcaptchaconfig}
 
 Filtrerer konfigurasjonen for Cap Captcha.
 
 Lar utviklere tilpasse innstillingene for Cap Captcha.
 
-## Parametere
+## Parametere {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $config | `array` | Konfigurasjonsarrayet for Cap. |
 | $level | `string` | Sikkerhetsnivået (fast, medium, max). |
 
-### Siden
+### Siden {#since}
 
 - 1.2.0
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/class-cap-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-cap-provider.php#L153) på linje 153

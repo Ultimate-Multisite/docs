@@ -3,28 +3,28 @@ title: Gambaran Keseluruhan REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Rujukan REST API
+# Rujukan REST API {#rest-api-reference}
 
-## Konfigurasi Asas
+## Konfigurasi Asas {#base-configuration}
 
 **URL Asas:** `{site_url}/wp-json/wu/v2/`
 **Pengesahan:** Kunci API & Rahsia (HTTP Basic Auth atau Parameter URL)
 
-## Pengesahan
+## Pengesahan {#authentication}
 
-### Dayakan API
+### Dayakan API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Dapatkan Kredensial API
+### Dapatkan Kredensial API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Kaedah Pengesahan
+### Kaedah Pengesahan {#authentication-methods}
 
 **HTTP Basic Auth (Disyorkan):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Titik Akhir Teras
+## Titik Akhir Teras {#core-endpoints}
 
-### 1. API Pelanggan
+### 1. API Pelanggan {#1-customers-api}
 
 **Laluan Asas:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Tapak
+### 2. API Tapak {#2-sites-api}
 
 **Laluan Asas:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Keahlian
+### 3. API Keahlian {#3-memberships-api}
 
 **Laluan Asas:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Produk
+### 4. API Produk {#4-products-api}
 
 **Laluan Asas:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Pembayaran
+### 5. API Pembayaran {#5-payments-api}
 
 **Laluan Asas:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Domain
+### 6. API Domain {#6-domains-api}
 
 **Laluan Asas:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Titik Akhir Pendaftaran
+## Titik Akhir Pendaftaran {#registration-endpoint}
 
 Titik akhir `/register` menyediakan aliran pembayaran/pendaftaran yang lengkap:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Titik Akhir Penyewa Berdaulat
+## Titik Akhir Penyewa Berdaulat {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 menambah liputan REST penyewa berdaulat untuk integrasi yang menyediakan, memeriksa, atau mengesahkan penyewa terpencil.
 
@@ -242,7 +242,7 @@ Respons status migrasi biasa termasuk:
 
 Anggap `ready: false` sebagai penyekat pra-pelancaran. Semak butiran pengesahan, baiki pengikatan hos database, baris gilir, penyediaan pengguna, atau isu penghalaan, kemudian cuba semula pengesahan.
 
-## Respons Ralat
+## Respons Ralat {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Anggap `ready: false` sebagai penyekat pra-pelancaran. Semak butiran pengesahan,
 }
 ```
 
-## Penomboran dan Penapisan
+## Penomboran dan Penapisan {#pagination-and-filtering}
 
 **Parameter Pertanyaan:**
 ```http

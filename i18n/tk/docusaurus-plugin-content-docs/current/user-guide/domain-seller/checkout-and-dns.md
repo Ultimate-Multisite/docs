@@ -3,13 +3,13 @@ title: Siparişli Alan we Müşderi DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Alany we Müşteri DNS Yöretmesi
+# Checkout Alany we Müşteri DNS Yöretmesi {#checkout-field-and-customer-dns-management}
 
-## Domain Seçimi checkout alanı
+## Domain Seçimi checkout alanı {#the-domain-selection-checkout-field}
 
 **Domain Seçimi** alanı, müşterilere sitenin domainini nasıl alacakları konusunda seçim imkanı tanıyan bir checkout elementidir. Domain satışı yapabilmek için bunu herhangi bir checkout formuna ekleyin.
 
-### Alanı checkout formasına ekleme
+### Alanı checkout formasına ekleme {#adding-the-field-to-a-checkout-form}
 
 1. **Network Admin › Ultimate Multisite › Checkout Forms** bölümüne gidin
 2. Bir checkout formu açın veya oluşturun
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Alan seçeneklerini yapılandırın (aşağıya bakın)
 6. Formu kaydedin
 
-### Alan seçenekleri
+### Alan seçenekleri {#field-options}
 
 **Domain modları** — Müşterinin hangi sekmeleri göreceğini seçin. Her bir mod bağımsız olarak etkinleştirilebilir veya devre dışı bırakılabilir:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domain product** — Bu alanı belli bir domain mahsuluna opsional ýaly sabitleýärsiňiz. Saglaýan bolsa, addon adatywiýa ýaly, müşderini gözleýän TLD (Top-Level Domain) esaslaryna görä dogry mahsulaty saýlar.
 
-### Registrant contact fields (Domainy goşandyryjy agza maglumatlary)
+### Registrant contact fields (Domainy goşandyryjy agza maglumatlary) {#registrant-contact-fields}
 
 Müşderi **Register New Domain** tabyny saýladygynyňda, checkout formasy goşandyryjy agza maglumatlary ýanynda görkezýär:
 
@@ -43,11 +43,11 @@ Müşderi **Register New Domain** tabyny saýladygynyňda, checkout formasy goş
 
 Bu maglumatlar ähli registratorlar tarapyndan zerurdyr we registrasiýa API çagyrylmagyndan öň barlanylýar. Telefon nömrెలeri registratorlar tarapyndan garaşylýan `+CC.NNN` halkara formatyna awtomatiki görnüş berilipdir.
 
-### Auto-generated site URL (Awtomatiki döredilen sayt URL-i)
+### Auto-generated site URL (Awtomatiki döredilen sayt URL-i) {#auto-generated-site-url}
 
 Müşteri qeydiyyatdan geçse ýa-da domeny maplaýan wagt, site URL alanı awtomatiki tanalýar we saýlan domanyň özünden dolýar. Müşderilere aýry URL alanı doldurmak gerek däldir.
 
-### Sarap howpsazlygy (Search behaviour)
+### Sarap howpsazlygy (Search behaviour) {#search-behaviour}
 
 - Domanyň bar bolmagy AJAX arkaly, müşderi ýazyp biljek wagtda gerdaşlykda barlanylýar
 - Saýlan domanyň bar bolsa, başga bir TLD teklipleri görkezilýär
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Müşteri DNS dolandyryşyny (DNS management)
+## Müşteri DNS dolandyryşyny (DNS management) {#customer-dns-management}
 
 Müşrifler **My Account** saytyndan, olar dulan domainleri üçin DNS kayıtlarını özlenerlikde dolandyrabilirler.
 
-### Durnaklanýan kayıt türleri
+### Durnaklanýan kayıt türleri {#supported-record-types}
 
 | Tür | Ulanýan |
 |---|---|
@@ -91,11 +91,11 @@ Müşrifler **My Account** saytyndan, olar dulan domainleri üçin DNS kayıtlar
 | **MX** | Posta alyş serverini sozlamak |
 | **TXT** | SPF, DMARC, barlagçylyk ýa-da beýleki tekst kayıtlarını goşmak |
 
-### DNS dolandyryşyny kimler goldawýar?
+### DNS dolandyryşyny kimler goldawýar? {#which-providers-support-dns-management}
 
 DNS dolandyrmak (kayıtları goşmak, üýtgetmek, silmek) **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** we **Openprovider** bilen mümkündür. **Hostinger** domenleri Domain Seller arkaly nameserversini güncellemekden bilersiňiz; hostalanan domenler üçin DNS kayıtları Hostinger domain-mapping integrasiýasy bilen dolandyrylýar. Namecheap, GoDaddy we NameSilo domenleri status we gowşamak wagty maglumatlaryny görkezýär, ýöne DNS goşmaçyň (registrar) öz kontrol panelinde jogapkärlikde dolandyrylmalydyr.
 
-### Default DNS kayıtları
+### Default DNS kayıtları {#default-dns-records}
 
 Domen goşulanda awtomatiki goşulýan default DNS kayıtlarını özüňiz dürli görnüşde sozlap bilersiňiz. **Settings › Domain Seller › Default DNS Records** bilen girip bilerisiz.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS-i görme we redaktirmegi
+### Admin: DNS-i görme we redaktirmegi {#admin-viewing-and-editing-dns}
 
 Network adminleri her bir müşteri domeniniň DNS kayıtlarını domenini redaktir etme səhime **Network Admin › Ultimate Multisite › Domains** bölüminden göräp we üýtgedip bilerler.

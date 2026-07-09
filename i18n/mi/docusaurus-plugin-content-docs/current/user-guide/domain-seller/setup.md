@@ -3,21 +3,21 @@ title: Whakawhanaungatanga me te Whakamahi Tohu
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Whakawhanaungatanga me Te Whakahaere Pākehā (Setup)
+# Domain Seller: Whakawhanaungatanga me Te Whakahaere Pākehā (Setup) {#domain-seller-setup-and-provider-configuration}
 
 He addon o te Domain Seller e hoki ana ki te whakamahi i he mātakitaki whai ara (guided setup wizard) ka whakawhakarite i a koe i ngā mahi katoa e tika ana. Ko tēnei manawa (page) e whakatakotoria i te whakatika o te mātakitaki (wizard flow) me te waiata pēke (configure) he rātou, i roto i te wā i roto i āhuatanga atu.
 
-## Mga Wāhi Whakawhanaungatanga (Requirements)
+## Mga Wāhi Whakawhanaungatanga (Requirements) {#requirements}
 
 - **Multisite Ultimate** v2.4.12 au takaha (or mōhiamo) ki te whakatau, e whakawhanake ana i te whānau wāhi (network-activated).
 - **PHP** 7.4+
 - Ngā credentials API mō tētahi registrar e whai tika.
 
-## Mātakitaki Whakahaere Wāhi Tū (First-run setup wizard)
+## Mātakitaki Whakahaere Wāhi Tū (First-run setup wizard) {#first-run-setup-wizard}
 
 Ka whakawhanake i te mātakitaki whakamahinga (setup wizard) i te wā i runga i te wā i roto i te wā i whakaatu i te plugin i te wā i whakatau ana i te network. E tika ana i a ia i ngā wā katoa i te **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Taiao 1 — Whakarite tētahi pūwhiri (Choose a provider)
+### Taiao 1 — Whakarite tētahi pūwhiri (Choose a provider) {#step-1--choose-a-provider}
 
 Whakarite te registrar (registrar) e tino e hiahia koe ki te whai. Ngā tuatahi:
 
@@ -33,7 +33,7 @@ Whakarite te registrar (registrar) e tino e hiahia koe ki te whai. Ngā tuatahi:
 | NameSilo | Reo | Reo |
 | Enom | Ae | Reo |
 
-### Taiao 2 — Whakarite ngā credentials (Enter credentials)
+### Taiao 2 — Whakarite ngā credentials (Enter credentials) {#step-2--enter-credentials}
 
 He pūwhiri katoa e hōtuitia i āhua o ngā credential:
 
@@ -57,17 +57,17 @@ He pūwhiri katoa e hōtuitia i āhua o ngā credential:
 
 Ki te whakaaro i **Sandbox mode** inā e taea, kia whakamārama ki te mōhiamo o te whare test o te provider mō te whakamātautanga i roto i te wārie.
 
-### Te Wiki 3 — Whakamārama te konektanga
+### Te Wiki 3 — Whakamārama te konektanga {#step-3--test-the-connection}
 
 Whakatipu i **Test Connection**. Ko te wizard e rite ai he API call lightweight kia whakaoti i ngā credential me te konektanga. Whakawātea ahau ngā akorua (credentials) katoa mō te whakamohana i te konei mō te whakatika i ngā pahi i roto i te wā.
 
-### Te Wiki 4 — Whakarite TLDs
+### Te Wiki 4 — Whakarite TLDs {#step-4--import-tlds}
 
 Whakatipu i **Import TLDs** kia whakatū ai katoa ngā TLDs me ngā whakaingo pricing wholesale mai te provider e konei. Ko tēnei e whakatō i te list o TLDs e whakamahia mō ngā domain products. He taea te whakawhanaunga (import) ki te 30–60 sekonden mo ngā providers e hune ake ngā catalog o TLDs nui.
 
 He pēnei te whakarite ana i ngā TLDs automatically inā i tahi pō via he scheduled cron job.
 
-### Te Wiki 5 — Whakawhanaunga Domain Product
+### Te Wiki 5 — Whakawhanaunga Domain Product {#step-5--create-a-domain-product}
 
 Ko te wizard e whakamaoritanga he domain product catch-all default me he markup o 10%. He taea ai koe te whakarereke i tēnei product immediately, apo he whakahoki ki te whakaputa ngā products manu manu under **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Kia whakaaro i [Domain Products and Pricing](./domain-products) mō te panduan k
 
 ---
 
-## Whakarite Anō i te Provider
+## Whakarite Anō i te Provider {#reconfiguring-a-provider}
 
 Pāinga ki **Network Admin › Ultimate Multisite › Settings › Domain Seller** (apo whakatipu i **Settings** i te list o plugin).
 
@@ -89,13 +89,13 @@ Ko te settings page e whai ana ki:
 - **Karakia mga aua domain** — he link tikanga ki te list o mga aua
 - **Whakawātea mga pūtake** — e whakakotahi ai i te Integration Wizard kia āwhitu ana ko mga pūtake (providers) ahau, hei whaiaro atu akorua
 
-### Whakapehe i aua TLDs manuahi
+### Whakapehe i aua TLDs manuahi {#adding-a-second-provider}
 
 I te settings page, whakatipu i **Sync TLDs** i runga i te ao (next to) i aua pūtake e karakia ki te whakatā (pull) i ngā whakaingoa o te whakaingoa hou. He tino pai tēnei i raro i te whakatau ahau i te pūtake i whakawāke i ngā whakaingoa wholesale pricing pei i te whero ana mga TLDs hou.
 
 ---
 
-## Logs (Whakamārama)
+## Logs (Whakamārama) {#syncing-tlds-manually}
 
 Ko koetau i aua pūtake e whakatika ki te channel log o loro. Ko ngā logs he tino whakamohakohia i raro i **Network Admin › Ultimate Multisite › Logs**:
 
@@ -115,7 +115,7 @@ Ko koetau i aua pūtake e whakatika ki te channel log o loro. Ko ngā logs he ti
 
 ---
 
-## Ngā whakamārama mō te kaha o ngā pūtaiao (Provider capability notes)
+## Ngā whakamārama mō te kaha o ngā pūtaiao (Provider capability notes) {#logs}
 
 Kua kore katoa i ngā API o ngā registrar e whero ngā mahi (operations) āhua. Ka whero ai te addon ngā mahi e kore e taea, me whakamahi i ngā pātaka admin (admin-facing errors) mō te whakatika, i roto i te wā i ka pātaka i te pai.
 

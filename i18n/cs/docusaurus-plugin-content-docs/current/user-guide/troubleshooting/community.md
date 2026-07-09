@@ -3,7 +3,7 @@ title: Komunita
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Jak se připojit ke komunitě Ultimate Multisite
+# Jak se připojit ke komunitě Ultimate Multisite {#how-to-join-ultimate-multisite-community}
 
 Komunita Ultimate Multisite je prostor, kde se můžete spojit s ostatními uživateli Ultimate Multisite a sdílet tipy, zkušenosti a další. Pro přístup ke komunitě Ultimate Multisite přejděte na https://community.ultimatemultisite.com/home.
 

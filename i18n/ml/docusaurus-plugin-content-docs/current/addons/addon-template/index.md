@@ -3,25 +3,25 @@ title: ആഡ്‌ഓൺ ടെംപ്ലേറ്റ്
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template
+# Addon Template {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## ആവശ്യകതകൾ (Requirements)
+## ആവശ്യകതകൾ (Requirements) {#requirements}
 
 - WordPress 5.3 അല്ലെങ്കിൽ അതിലും ഉയർന്നത്
 - PHP 7.4 അല്ലെങ്കിൽ അതിലും ഉയർന്നത്
 - Multisite Ultimate plugin (സജീവമായിരിക്കണം)
 
-## ഇൻസ്റ്റാളേഷൻ (Installation)
+## ഇൻസ്റ്റാളേഷൻ (Installation) {#installation}
 
 1. ആഡ്‌ഓൺ ഫയലുകൾ നിങ്ങളുടെ `/wp-content/plugins/` ഡയറക്‌ടറിയിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക.
 2. WordPress-ലെ 'Plugins' മെനുവിലൂടെ പ്ലഗിൻ സജീവമാക്കുക (Activate ചെയ്യുക).
 3. നെറ്റ്‌വർക്ക് അഡ്മിൻ വഴി ആഡ്‌ഓൺ സെറ്റിംഗ്‌സ് കോൺഫിഗർ ചെയ്യുക.
 
-## ഡെവലപ്‌മെന്റ് (Development)
+## ഡെവലപ്‌മെന്റ് (Development) {#development}
 
-### സജ്ജീകരണം (Setup)
+### സജ്ജീകരണം (Setup) {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### പ്രോജക്റ്റ് ഘടന (Project Structure)
+### പ്രോജക്റ്റ് ഘടന (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # കോഡ് ആധുനീകരണം (Code modernization) നിയമങ്ങൾ
 ```
 
-### ടെസ്റ്റിംഗ് (Testing)
+### ടെസ്റ്റിംഗ് (Testing) {#testing}
 
 ഈ ആഡ്‌ഓണിൽ ഒരു സമഗ്രമായ ടെസ്റ്റിംഗ് ഫ്രെയിംവർക്ക് ഉൾപ്പെടുന്നു:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **ടെസ്റ്റ് കവറേജ് (Test Coverage)**: കോഡ് കവറേജ് ട്രാക്ക് ചെയ്യാൻ കോൺഫിഗർ ചെയ്തിരിക്കുന്നു.
 - **മൾട്ടിസൈറ്റ് ടെസ്റ്റിംഗ് (Multisite Testing)**: മൾട്ടിസൈറ്റ് എൻവയോൺമെന്റിൽ ടെസ്റ്റുകൾ പ്രവർത്തിപ്പിക്കുന്നു.
 
-### കോഡ് സ്റ്റാൻഡേർഡുകൾ (Code Standards)
+### കോഡ് സ്റ്റാൻഡേർഡുകൾ (Code Standards) {#code-standards}
 
 - **WordPress കോഡിംഗ് സ്റ്റാൻഡേർഡുകൾ**: PHPCS വഴി നിർബന്ധമാക്കുന്നു.
 - **PHP 7.4+ അനുയോജ്യത**: ആധുനിക PHP ഫീച്ചറുകൾ പിന്തുണയ്ക്കുന്നു.
 - **സ്റ്റാറ്റിക് അനാലിസിസ് (Static Analysis)**: ടൈപ്പ് ചെക്കിംഗിനായി PHPStan സംയോജിപ്പിക്കുന്നു.
 - **കോഡ് ആധുനീകരണം (Code Modernization)**: PHP അപ്‌ഗ്രേഡുകൾക്കായി Rector നിയമങ്ങൾ ഉപയോഗിക്കുന്നു.
 
-### ബിൽഡ് സിസ്റ്റം (Build System)
+### ബിൽഡ് സിസ്റ്റം (Build System) {#build-system}
 
 - **ആസ്തി പ്രോസസ്സിംഗ് (Asset Processing)**: CSS/JS ഫയലുകൾക്ക് മിനിഫൈ ചെയ്യൽ (Minification).
 - **വിവർത്തനം (Translation)**: POT ഫയൽ ജനറേഷൻ.
 - **പാക്കേജിംഗ് (Packaging)**: വിതരണത്തിനായി ആർക്കൈവ് സൃഷ്ടിക്കൽ.
 - **ഡെവലപ്‌മെന്റ് മോഡ് (Development Mode)**: ഡീബഗ്ഗിംഗിനായി മിനിഫൈ ചെയ്യാത്ത ആസ്തികൾ.
 
-## കോൺഫിഗറേഷൻ (Configuration)
+## കോൺഫിഗറേഷൻ (Configuration) {#configuration}
 
 നെറ്റ്‌വർക്ക് അഡ്മിൻ ഇന്റർഫേസ് വഴി ലഭ്യമായ വിവിധ കോൺഫിഗറേഷൻ ഓപ്ഷനുകൾ ഈ ആഡ്‌ഓൺ പിന്തുണയ്ക്കുന്നു.
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Actions (പ്രവർത്തനങ്ങൾ)
+### Actions (പ്രവർത്തനങ്ങൾ) {#actions}
 
 - `ultimate-multisite-addon-template_init` - ആഡ്‌ഓൺ ഇനിഷ്യലൈസേഷൻ കഴിഞ്ഞ ശേഷം പ്രവർത്തിക്കുന്നു.
 - `ultimate-multisite-addon-template_loaded` - എല്ലാ ആഡ്‌ഓൺ ഫയലുകളും ലോഡ് ചെയ്ത ശേഷം പ്രവർത്തിക്കുന്നു.
 
-### Filters (ഫിൽട്ടറുകൾ)
+### Filters (ഫിൽട്ടറുകൾ) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - ആഡ്‌ഓൺ സെറ്റിംഗ്‌സ് മാറ്റാൻ ഉപയോഗിക്കുന്നു.
 - `ultimate-multisite-addon-template_enabled` - ആഡ്‌ഓൺ പ്രവർത്തനക്ഷമമാക്കാനുള്ള/നിർത്താനുള്ള സ്റ്റാറ്റസ് മാറ്റാൻ ഉപയോഗിക്കുന്നു.
 
-## ലൈസൻസ് (License)
+## ലൈസൻസ് (License) {#license}
 
 ഈ ആഡ്‌ഓൺ GPL v3 അല്ലെങ്കിൽ അതിലും പുതിയ ലൈസൻസിന് കീഴിലാണ് നൽകുന്നത്.
 
-## സപ്പോർട്ട് (Support)
+## സപ്പോർട്ട് (Support) {#support}
 
 സപ്പോർട്ട്, ഡോക്യുമെന്റേഷൻ എന്നിവയ്ക്കായി [MultisiteUltimate.com](https://multisiteultimate.com) സന്ദർശിക്കുക.
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): പ്രിഫിക്സ് ultimate-multisite എന്ന് മാറ്റുക; ടെക്സ്റ്റ് ഡൊമെയ്ൻ അപ്‌ഡേറ്റ് ചെയ്യുക; വേർഷൻ ബമ്പ്.
 

@@ -3,33 +3,33 @@ title: Pauswagon ang Integrasyon sa Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Pagpalambo sa Integrasyon sa Control Panel
+# Pagpalambo sa Integrasyon sa Control Panel {#enhance-control-panel-integration}
 
-## Panan-aw (Overview)
+## Panan-aw (Overview) {#overview}
 Ang Enhance usa ka modernong control panel nga naghatag og gamhanang hosting automation ug management capabilities. Kini nga integrasyon nagtugot sa automatic domain syncing ug SSL certificate management tali sa Ultimate Multisite ug Enhance Control Panel.
 
 **May Kalisod nga Diskussyon:** Tan-awa ang [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) para sa mga tips sa komunidad ug dugang impormasyon.
 
-## Mga Tampo (Features)
+## Mga Tampo (Features) {#features}
 - Automatic domain syncing kung ang mga domain gipa-mapa sa Ultimate Multisite
 - Automatic SSL certificate provisioning pinaagi sa LetsEncrypt kung ma-resolve ang DNS
 - Suporta sa subdomain alang sa mga network nga nagpadagan sa subdomain mode
 - Pag-remove sa domain kung ang mga mapping gihapus
 - Pagsulay sa koneksyon aron masiguro ang API credentials
 
-## Mga Kinahanglanon (Requirements)
+## Mga Kinahanglanon (Requirements) {#requirements}
 
-### System Requirements
+### System Requirements {#system-requirements}
 - Ang Enhance Control Panel kinahanglan na-install ug accessible
 - WordPress Multisite installation nga gi-host o konektado sa usa ka Enhance server
 - Apache web server (Ang Enhance nagsuporta karon sa mga konfigurasyon sa Apache; ang LiteSpeed Enterprise available sa mas ubos nga presyo)
 
-### API Access
+### API Access {#api-access}
 Kinahanglan nimo og administrator access sa Enhance Control Panel aron makakabAlright ng API tokens.
 
-## Pagkuha sa Imong API Credentials
+## Pagkuha sa Imong API Credentials {#getting-your-api-credentials}
 
-### 1. Paghimo og API Token
+### 1. Paghimo og API Token {#1-create-an-api-token}
 
 1. Mag-login sa imong Enhance Control Panel isip administrator
 2. I-click ang **Settings** sa navigation menu
@@ -44,7 +44,7 @@ Kinahanglan nimo og administrator access sa Enhance Control Panel aron makakabAl
 
 Pagkatapos mag-create, ipakikita ang imong **Access Token** ug **Organization ID**. **I-save kini dayon** kay ang token ipakita lang usa ka higayon.
 
-### 2. Kuhaa ang Imong Organization ID
+### 2. Kuhaa ang Imong Organization ID {#2-get-your-organization-id}
 
 Ang Organization ID ipakita sa Access Tokens page sa usa ka asul nga information box nga naglangkob sa "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Mahimo usab nimong makita ang Organization ID sa customer pinaagi sa:
 2. I-click ang **Manage customer** para sa may kalabotan nga customer
 3. Tan-awa ang URL - ang Organization ID mao ang mga alphanumeric characters human sa `/customers/`
 
-### 3. Kuhaa ang Imong Server ID
+### 3. Kuhaa ang Imong Server ID {#3-get-your-server-id}
 
 Para makit-an ang imong Server ID (kinahanglanon para sa domain operations):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Ang server ID nagsunod sa UUID format: `00000000-0000-0000-0000-000000000000`
 
-### 4. Kuhaa ang Imong API URL
+### 4. Kuhaa ang Imong API URL {#4-get-your-api-url}
 
 Ang imong API URL mao ang imong Enhance Control Panel URL nga dugangan sa `/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Paggamit lang sa domain nga walay `/api/`
 - Paggamit og HTTP imbes nga HTTPS (HTTPS kinahanglanon para sa seguridad)
 
-## Configuration
+## Configuration {#configuration}
 
-### Required Constants
+### Required Constants {#required-constants}
 
 Ibutang ang mosunod nga mga constant sa imong `wp-config.php` file:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'imong-server-uuid-dinhi');
 ```
 
-### Pagsugod pinaagi pinaagi sa Integration Wizard
+### Pagsugod pinaagi pinaagi sa Integration Wizard {#setup-via-integration-wizard}
 
 1. Sa imong WordPress admin, adto sa **Ultimate Multisite** > **Settings**
 2. Maglakaw sa tab nga **Integrations**
@@ -112,17 +112,17 @@ Mahimo nimong pilion:
 - Tugotan ang wizard nga i-inject ang mga constants sa imong `wp-config.php` file awtomatiko
 - Kopyahon ang mga definition sa constant ug i-add kini manually
 
-## Dugang WordPress Configuration
+## Dugang WordPress Configuration {#additional-wordpress-configuration}
 
 Base sa feedback sa komunidad ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), basin kinahanglan nimo kining dugang settings:
 
-### .htaccess Configuration
+### .htaccess Configuration {#htaccess-configuration}
 
 Kung nasinati nimo ang problema sa domain mapping:
 1. Burahin ang orihinal nga Enhance `.htaccess` file
 2. Palitan kini sa standard WordPress Multisite `.htaccess` file
 
-### Cookie Constants
+### Cookie Constants {#cookie-constants}
 
 I-add kining mga constants sa `wp-config.php` aron masiguro ang husto nga pag-handle sa cookies sa tanang domain nga gipa-mapa:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Unsaon Kini Paglihok
+## Unsaon Kini Paglihok {#how-it-works}
 
-### Kung Gi-map ang Usa ka Domain
+### Kung Gi-map ang Usa ka Domain {#when-a-domain-is-mapped}
 
 1. Nagmapa ang usa ka custom domain sa Ultimate Multisite (o naghimo og bag-ong site sa subdomain mode)
 2. Ang integration magpadala og POST request ngadto sa Enhance's API: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Kung ang DNS mo-resolve sa imong server, awtomatikong magpro-provision ang Enhance og SSL certificate pinaagi sa LetsEncrypt
 5. Ang domain mahimong aktibo uban ang HTTPS
 
-### Kung Alisa na ang Usa ka Domain
+### Kung Alisa na ang Usa ka Domain {#when-a-domain-is-removed}
 
 1. Ang mapping sa domain mapili sa Ultimate Multisite
 2. Ang integration mag-query sa Enhance aron pangitaon ang ID sa domain
 3. Ang DELETE request ipadala ngadto sa: `/servers/{server_id}/domains/{domain_id}`
 4. Ang Enhance magtangtang sa domain gikan sa imong server configuration
 
-### DNS ug SSL Checking
+### DNS ug SSL Checking {#dns-and-ssl-checking}
 
 Ang Ultimate Multisite adunay built-in nga DNS ug SSL checking:
 - Mahimo nimong i-configure ang check interval sa **Domain Mapping Settings** (default: 300 seconds/5 minutos)
@@ -157,9 +157,9 @@ Ang Ultimate Multisite adunay built-in nga DNS ug SSL checking:
 - Ang validity sa SSL certificate awtomatikong gi-check
 - Ang Enhance ma-handle ang SSL provisioning, busa wala kinahanglan og manual na SSL configuration
 
-## Pag-verify sa Setup
+## Pag-verify sa Setup {#verifying-setup}
 
-### I-test ang Koneksyon
+### I-test ang Koneksyon {#test-the-connection}
 
 1. Sa Integration Wizard, gamita ang **Test Connection** step
 2. Ang plugin magtentro nga i-list ang mga domain sa imong server
@@ -169,7 +169,7 @@ Ang Ultimate Multisite adunay built-in nga DNS ug SSL checking:
    - Valid ang Server ID
    - Maayo ang permissions
 
-### Human Mapirma og Domain
+### Human Mapirma og Domain {#after-mapping-a-domain}
 
 1. Mapirma og usa ka test domain sa Ultimate Multisite
 2. I-check ang Ultimate Multisite logs (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Ang Ultimate Multisite adunay built-in nga DNS ug SSL checking:
    - Ang bag-ong domain kitang makita sa listahan
 4. Kung ma-propagate na ang DNS, i-verify nga awtomatikong na-provision ang SSL
 
-## Pag-troubleshoot (Troubleshooting)
+## Pag-troubleshoot (Troubleshooting) {#troubleshooting}
 
-### Problema sa API Connection
+### Problema sa API Connection {#api-connection-issues}
 
 **Error: "Failed to connect to Enhance API"**
 - Siguraduhon nga ang `WU_ENHANCE_API_URL` naglakip og `/api/` sa katapusan.
@@ -198,7 +198,7 @@ Ang Ultimate Multisite adunay built-in nga DNS ug SSL checking:
 - Siguraduhon nga ang Server ID usa ka valid UUID format.
 - Kumpirmaha nga ang server anaa na sa imong Enhance panel.
 
-### Dili Gitakda ang Domain (Domain Not Added)
+### Dili Gitakda ang Domain (Domain Not Added) {#domain-not-added}
 
 **Suri sa logs:**
 1. Adto sa **Ultimate Multisite** > **Logs**.
@@ -211,7 +211,7 @@ Ang Ultimate Multisite adunay built-in nga DNS ug SSL checking:
 - Dili igo ang API permissions (siguraduhon nga ang token adunay System Administrator role).
 - Ang Server ID dili tugma sa aktuwal nga server sa Enhance.
 
-### Problema sa SSL Certificate
+### Problema sa SSL Certificate {#ssl-certificate-issues}
 
 **Dili ma-provision ang SSL:**
 - Siguraduhon nga ang DNS nagtudlo sa IP address sa imong server.
@@ -225,7 +225,7 @@ Ang Ultimate Multisite adunay built-in nga DNS ug SSL checking:
 2. Pangitaa ang imong domain ug suriha ang status sa SSL niini.
 3. Mahimo nimo manu-manually i-trigger ang SSL provisioning kung gikinahanglan.
 
-### DNS Check Interval
+### DNS Check Interval {#dns-check-interval}
 
 Kung ang mga domain o SSL certificate nagadulong og dugay sa pag-activate:
 1. Adto sa **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -233,7 +233,7 @@ Kung ang mga domain o SSL certificate nagadulong og dugay sa pag-activate:
 3. I-adjust kini gikan sa default nga 300 seconds ngadto sa mas ubos nga value (minimum: 10 seconds)
 4. **Nota:** Ang mas ubos nga intervals nagpasabot og mas daghang checks pero mas taas ang load sa server
 
-### Mga Sayop sa Authentication
+### Mga Sayop sa Authentication {#authentication-errors}
 
 **HTTP 401/403 errors:**
 - I-regenerate imong API token sa Enhance
@@ -241,7 +241,7 @@ Kung ang mga domain o SSL certificate nagadulong og dugay sa pag-activate:
 - Siguraduhon nga wala pa kini expired
 - Siguraduhon nga naggamit ka og husto nga Organization ID (bisan tuod kasagaran dili kinahanglan sa URL)
 
-### Pagsusi sa Logs
+### Pagsusi sa Logs {#log-analysis}
 
 I-enable ang detalyado nga logging:
 ```php
@@ -255,15 +255,15 @@ Dayon i-check ang logs dinhi:
 - WordPress debug log: `wp-content/debug.log`
 - Enhance panel logs: Magamit sa admin interface sa Enhance
 
-## API Reference
+## API Reference {#api-reference}
 
-### Authentication
+### Authentication {#authentication}
 Ang tanang API requests naggamit og Bearer token authentication:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Mga Kasagarang Endpoints nga Gigamit
+### Mga Kasagarang Endpoints nga Gigamit {#common-endpoints-used}
 
 **List Servers:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Full API Documentation
+### Full API Documentation {#full-api-documentation}
 Kompleto nga API documentation: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Seguridad
+### Seguridad {#security}
 - **Ayaw gyud i-commit ang API tokens sa version control**
 - I-store ang mga tokens sa `wp-config.php` nga kinahanglan usbon gikan sa Git
 - Gamita ang mga tokens nga adunay saktong permiso (System Administrator para sa bug-os nga integrasyon)
 - I-set ang mga petsa sa pag-expire sa token alang sa production environments
 - Regular nga i-rotate ang mga tokens
 
-### Performance
+### Performance {#performance}
 - Gamita ang default DNS check interval (300 seconds) aron malikayan ang sobra nga API calls
 - Monitor ang resources sa Enhance server kung nagpadagan og dagkong operasyon sa domain
 - Hunahunaa ang pag-stagger sa pagdadaghan sa domain kung magmapa og daghang domain sa usa ka higayon
 
-### Monitoring
+### Monitoring {#monitoring}
 - Regular nga i-check ang Ultimate Multisite logs para sa mga sayop sa integrasyon
 - Mag-set up og monitoring alang sa mga napakyang pagdadaghan sa domain
 - Siguraduhon nga ang SSL certificates ma-provision sa husto
 - Bantayan ang kapasidad sa Enhance server ug mga limitasyon sa domain
 
-## Mga Dugang Resources
+## Mga Dugang Resources {#additional-resources}
 
 - **Enhance Official Documentation:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Documentation:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ Kompleto nga API documentation: [https://apidocs.enhance.com](https://apidocs.en
 - **GitHub Discussion:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Domain Mapping Guide:** Tan-awa ang wiki page "How to Configure Domain Mapping v2"
 
-## Suporta
+## Suporta {#support}
 
 Kung makakita ka og mga problema:
 1. I-check ang Troubleshooting section sa ibabaw
@@ -326,7 +326,7 @@ Kung makakita ka og mga problema:
 4. Kontaka ang Enhance support para sa mga isyu nga espesipiko sa panel
 5. Paghimo og bag-ong discussion uban ang detalyado nga error logs alang sa tabang sa komunidad
 
-## Mga Nota
+## Mga Nota {#notes}
 
 Ang integration ani nag-handle lang sa mga domain aliases; ang Enhance ma-manage na dayon ang SSL.
 Ang integration ni suporta sa custom domain mappings ug subdomain-based sites.

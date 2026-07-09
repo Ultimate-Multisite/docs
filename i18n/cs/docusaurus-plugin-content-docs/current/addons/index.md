@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Addony Ultimate Multisite
+# Addony Ultimate Multisite {#ultimate-multisite-addons}
 
 Addony rozšiřují Ultimate Multisite o další funkce a integrace. Většina addonů je placená a je k nákupu dostupná na [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Instalace
+## Instalace {#installation}
 
 Addony lze nainstalovat dvěma způsoby:
 
 1. **Skrze stránku addonů** — Přejděte na stránku spravování addonů vašeho webu v administraci WordPressu.
 2. **Manuální stahování** — Stáhněte z [vašeho účtu](https://ultimatemultisite.com/my-account/downloads/) a nahrajte přes Plugins > Add New.
 
-## Dostupné addony
+## Dostupné addony {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

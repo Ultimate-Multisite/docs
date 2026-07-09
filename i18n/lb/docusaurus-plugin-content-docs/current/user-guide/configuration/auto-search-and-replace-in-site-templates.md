@@ -3,7 +3,7 @@ title: Auto-Suche und Ersetze in Seitentemplates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search und Ersetze in Site Templates (v2)
+# Auto Search und Ersetze in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Dëse Tutorial brucht WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Ihre Kunde wird denn das Feld während de Registrierig usfüllä chönne.
 
 Ultimate Multisite ersetzt denn d'Platzhalter automatisch mit de Date, wo vom Kunde gäbe worde sind.
 
-## **Das Problem "Template voller Platzhalter" löse**
+## **Das Problem "Template voller Platzhalter" löse** {#solving-the-template-full-of-placeholders-problem}
 
 All das isch super, aber mir stossed uf es hässigs Problem: Jetzt sind üsi Site Templates - wo vo üsne Kunde bsuecht werde chönne - voll mit hässige Platzhaltern, wo nöd viel verzelle.
 

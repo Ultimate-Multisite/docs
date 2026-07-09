@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite нэмэлтүүд
+# Ultimate Multisite нэмэлтүүд {#ultimate-multisite-addons}
 
 Нэмэлтүүд нь Ultimate Multisite-д нэмэлт боломжууд болон интеграцуудыг өргөжүүлэн нэмдэг. Ихэнх нэмэлтүүд төлбөртэй бөгөөд [ultimatemultisite.com](https://ultimatemultisite.com)-оос худалдан авч болно.
 
-## Суулгалт
+## Суулгалт {#installation}
 
 Нэмэлтүүдийг хоёр аргаар суулгаж болно:
 
 1. **Нэмэлтийн хуудсаар** -- WordPress админ хэсэг дэх сайтынхаа нэмэлтийн удирдлагын хуудас руу очно уу
 2. **Гараар татах** -- [өөрийн Account](https://ultimatemultisite.com/my-account/downloads/)-оос татаж аваад Plugins > Add New-ээр байршуулна уу
 
-## Боломжтой нэмэлтүүд
+## Боломжтой нэмэлтүүд {#available-addons}
 
 | Нэмэлт | Тайлбар |
 |-------|-------------|

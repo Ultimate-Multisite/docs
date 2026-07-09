@@ -3,11 +3,11 @@ title: Jesyon Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Jesyon Webhook
+# Jesyon Webhook {#webhook-handling}
 
 Kreye pwen tèminal webhook pèsonalize pou resevwa evènman ki soti nan sèvis ekstèn epi senkronize done ak Ultimate Multisite.
 
-## Pwen Tèminal Webhook Pèsonalize
+## Pwen Tèminal Webhook Pèsonalize {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Konsiderasyon Sekirite
+## Konsiderasyon Sekirite {#security-considerations}
 
 - Toujou verifye siyati webhook yo lè w sèvi ak HMAC oswa yon sekrè pataje
 - Sèvi ak yon `permission_callback` sou wout REST ou a — pa janm mete li sou `__return_true` nan pwodiksyon

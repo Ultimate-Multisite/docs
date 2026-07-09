@@ -3,11 +3,11 @@ title: Ġestjoni tal-Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Immaniġġjar tal-Webhook
+# Immaniġġjar tal-Webhook {#webhook-handling}
 
 Oħloq punti tat-tmiem webhook personalizzati biex tirċievi avvenimenti minn servizzi esterni u tissinkronizza d-dejta ma’ Ultimate Multisite.
 
-## Punt tat-Tmiem Webhook Personalizzat
+## Punt tat-Tmiem Webhook Personalizzat {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Konsiderazzjonijiet ta’ Sigurtà
+## Konsiderazzjonijiet ta’ Sigurtà {#security-considerations}
 
 - Dejjem ivverifika l-firem tal-webhook billi tuża HMAC jew sigriet kondiviż
 - Uża `permission_callback` fuq ir-rotta REST tiegħek — qatt issettjah għal `__return_true` fil-produzzjoni

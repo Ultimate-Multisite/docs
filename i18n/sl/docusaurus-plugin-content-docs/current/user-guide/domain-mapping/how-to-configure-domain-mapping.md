@@ -3,17 +3,17 @@ title: Kako konfigurirati preslikavo domen
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kako konfigurirati preslikavo domen (v2)
+# Kako konfigurirati preslikavo domen (v2) {#how-to-configure-domain-mapping-v2}
 
 _**POMEMBNA OPOMBA: Ta članek se nanaša na Ultimate Multisite različice 2.x.**_
 
 Ena najzmogljivejših funkcij premium omrežja je možnost, da našim strankam ponudimo priložnost, da svojim spletnim mestom pripnejo vrhnjo domeno. Navsezadnje, kaj je videti bolj profesionalno: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ali [_**joesbikeshop.com**_](http://joesbikeshop.com)? Zato Ultimate Multisite ponuja to funkcijo vgrajeno, brez potrebe po uporabi vtičnikov tretjih oseb.
 
-## Kaj je preslikava domen?
+## Kaj je preslikava domen? {#whats-domain-mapping}
 
 Kot pove že ime, je preslikava domen možnost, ki jo ponuja Ultimate Multisite, da sprejme zahtevo za domeno po meri in to zahtevo preslika na ustrezno spletno mesto v omrežju, ki ima pripeto to določeno domeno.
 
-### Kako nastaviti preslikavo domen v vašem Ultimate Multisite omrežju
+### Kako nastaviti preslikavo domen v vašem Ultimate Multisite omrežju {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Preslikava domen zahteva nekaj nastavitev z vaše strani, da deluje. Na srečo Ultimate Multisite avtomatizira težko delo namesto vas, tako da lahko preprosto izpolnite zahteve.
 
@@ -45,7 +45,7 @@ Preden pa začnete preslikavati domeno po meri na eno od podmest v vašem omrež
 
 ###
 
-### Preverjanje, ali so nastavitve DNS domene pravilno konfigurirane
+### Preverjanje, ali so nastavitve DNS domene pravilno konfigurirane {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Da preslikava deluje, se morate prepričati, da domena, ki jo nameravate preslikati, kaže na IP-naslov vašega omrežja. Upoštevajte, da potrebujete IP-naslov omrežja – IP-naslov domene, kjer je nameščen Ultimate Multisite – ne IP-naslova domene po meri, ki jo želite preslikati. Za iskanje IP-naslova določene domene na primer predlagamo obisk [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Za pravilno preslikavo domene morate v svoji konfiguraciji **DNS** dodati **A RE
 
 Če nameravate svojim strankam dovoliti preslikavo lastnih domen, bodo morale ta del opraviti same. Če ne bodo mogle ustvariti A Record, jih usmerite na podporni sistem njihovega registratorja.
 
-### Preslikava imena domene po meri kot Super Admin
+### Preslikava imena domene po meri kot Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Ko ste v svojem omrežju prijavljeni kot super skrbnik, lahko preprosto dodajate in upravljate imena domen po meri tako, da odprete **Ultimate Multisite > Domene**.
 
@@ -93,7 +93,7 @@ Ko stranka registrira novo domeno prek Domain Seller v1.3.0 ali novejše različ
 
 **Is Secure?:** Čeprav Ultimate Multisite pred omogočanjem preveri, ali domena ima SSL certifikat ali ne, lahko ročno izberete, ali naj se domena naloži z SSL certifikatom ali brez njega. Upoštevajte, da lahko pride do napak, če spletno mesto nima SSL certifikata in ga poskusite prisilno naložiti z SSL.
 
-### Preslikava imena domene po meri kot uporabnik podmesta
+### Preslikava imena domene po meri kot uporabnik podmesta {#mapping-custom-domain-name-as-subsite-user}
 
 Skrbniki podmest lahko imena domen po meri preslikajo tudi iz skrbniške nadzorne plošče svojega podmesta.
 
@@ -121,7 +121,7 @@ Uporabnik lahko nato klikne **Next Step** in nadaljuje z dodajanjem imena domene
 
 Klik na **Add Domain** bo začel postopek preverjanja in pridobivanja informacij DNS za domeno po meri.
 
-### O sinhronizaciji domen
+### O sinhronizaciji domen {#about-domain-syncing}
 
 Sinhronizacija domen je postopek, pri katerem Ultimate Multisite doda ime domene po meri v vaš gostiteljski račun kot dodatno domeno **da preslikava domene deluje**.
 

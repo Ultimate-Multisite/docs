@@ -3,17 +3,17 @@ title: 'Lekcja 12: Prowadzenie biznesu'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lekcja 12: Prowadzenie Biznesu
+# Lekcja 12: Prowadzenie Biznesu {#lesson-12-running-the-business}
 
 Platforma to nie jest projekt, który się kończy – to biznes, który trzeba prowadzić. Ta lekcja omawia codzienne operacje zarządzania FitSite: wsparcie, fakturowanie, konserwację i utrzymywanie zadowolenia klientów.
 
-## Skąd zaczęliśmy
+## Skąd zaczęliśmy {#where-we-left-off}
 
 FitSite jest już uruchomione i klienci się rejestrują. Teraz musisz utrzymać tę operację w sposób zrównoważony.
 
-## Codzienne Operacje
+## Codzienne Operacje {#daily-operations}
 
-### Monitorowanie
+### Monitorowanie {#monitoring}
 
 Sprawdzaj to codziennie (lub ustaw alerty):
 
@@ -22,7 +22,7 @@ Sprawdzaj to codziennie (lub ustaw alerty):
 - **Nieudane płatności**: Czy są nieudane płatności, które wymagają uwagi?
 - **Zapytania o wsparcie**: Czy są nieodpowiedzone pytania klientów?
 
-### Wsparcie Klienta
+### Wsparcie Klienta {#customer-support}
 
 Twoja specjalizacja jest tu atutem. Ponieważ wszyscy Twoi klienci to studia fitness, będziesz napotykać te same pytania wielokrotnie:
 
@@ -36,7 +36,7 @@ Twoja specjalizacja jest tu atutem. Ponieważ wszyscy Twoi klienci to studia fit
 
 Stwórz bazę wiedzy (rozpoczęte w Lekcji 8) wokół tych powtarzających się pytań. Każdy bilet wsparcia, który mógłby być artykułem w bazie wiedzy, jest sygnałem, że należy napisać ten artykuł.
 
-### Poziomy Wsparcia
+### Poziomy Wsparcia {#support-tiers}
 
 W miarę rozwoju, strukturyzuj wsparcie w zależności od planu:
 
@@ -48,9 +48,9 @@ W miarę rozwoju, strukturyzuj wsparcie w zależności od planu:
 
 Dodatek [Support Tickets](/addons/support-tickets) może pomóc w zarządzaniu zapytaniami o wsparcie w ramach platformy.
 
-## Operacje Fakturowania
+## Operacje Fakturowania {#billing-operations}
 
-### Opłaty Cykliczne
+### Opłaty Cykliczne {#recurring-payments}
 
 Ultimate Multisite automatycznie obsługuje cykliczne fakturowanie za pośrednictwem Twojej bramki płatniczej. Twoim zadaniem jest monitorowanie:
 
@@ -58,7 +58,7 @@ Ultimate Multisite automatycznie obsługuje cykliczne fakturowanie za pośrednic
 - **Dunning**: Ustaw automatyczną logikę ponawiania prób płatności za pośrednictwem bramki płatniczej (Stripe radzi sobie z tym świetnie)
 - **Żądania anulacji**: Zrozum, dlaczego klienci odchodzą. Każda anulacja to informacja zwrotna.
 
-### Zarządzanie Członkostwem
+### Zarządzanie Członkostwem {#managing-memberships}
 
 Przejdź do **Ultimate Multisite > Memberships**, aby:
 
@@ -69,13 +69,13 @@ Przejdź do **Ultimate Multisite > Memberships**, aby:
 
 Zobacz [Managing Memberships](/user-guide/administration/managing-memberships) w celu pełnej instrukcji.
 
-### Faktury
+### Faktury {#invoicing}
 
 Upewnij się, że faktury są poprawnie generowane za każdą płatność. Klienci mogą potrzebować faktur do celów rozliczeń biznesowych. Zobacz [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Konserwacja Platformy
+## Konserwacja Platformy {#platform-maintenance}
 
-### Aktualizacje WordPress i Pluginów
+### Aktualizacje WordPress i Pluginów {#wordpress-and-plugin-updates}
 
 Jako administrator sieci jesteś odpowiedzialny za:
 
@@ -88,14 +88,14 @@ Jako administrator sieci jesteś odpowiedzialny za:
 Uszkodzona aktualizacja wpływa na każdą witrynę klienta w Twojej sieci. Zawsze testuj aktualizacje na kopii testowej swojej sieci.
 :::
 
-### Bezpieczeństwo
+### Bezpieczeństwo {#security}
 
 - Utrzymuj wszystkie oprogramowanie w aktualnym stanie
 - Używaj silnych haseł i uwierzytelniania dwuskładnikowego dla kont administratorów
 - Monitoruj podejrzaną aktywność
 - Miej plan na wypadek incydentów bezpieczeństwa
 
-### Wydajność
+### Wydajność {#performance}
 
 W miarę wzrostu Twojej sieci, monitoruj:
 
@@ -105,9 +105,9 @@ W miarę wzrostu Twojej sieci, monitoruj:
 
 Rozważ wdrożenie cache'owania (cache strony, cache obiektów) i CDN, jeśli jeszcze tego nie zrobiłeś. [Cloudflare integration](/user-guide/host-integrations/cloudflare) zajmuje się dużą częścią tych zadań.
 
-## Zarządzanie Cyklem Życia Klienta
+## Zarządzanie Cyklem Życia Klienta {#customer-lifecycle-management}
 
-### Redukcja Churnu
+### Redukcja Churnu {#reducing-churn}
 
 Churn to procent klientów, którzy rezygnują każdego miesiąca. Dla biznesu subskrypcyjnego, redukcja churnu jest równie ważna, jak pozyskiwanie nowych klientów.
 
@@ -119,7 +119,7 @@ Churn to procent klientów, którzy rezygnują każdego miesiąca. Dla biznesu s
 - Znaleźli tańszą alternatywę → wzmocnienie wartości niszowej
 - Zamknął się ich biznes → nieuniknione, ale śledź to oddzielnie
 
-### Zachęcanie do Ulepszeń
+### Zachęcanie do Ulepszeń {#encouraging-upgrades}
 
 Klienci na planie Starter, którzy osiągają sukces, powinni być zachęcani do ulepszenia:
 
@@ -127,7 +127,7 @@ Klienci na planie Starter, którzy osiągają sukces, powinni być zachęcani do
 - Wyślij ukierunkowane e-maile podkreślające funkcje planu Growth, które mogą im się przydać
 - Pokazuj, co zbudowali klienci z planami Growth/Pro
 
-### Kampanie Przyciągania Powracających
+### Kampanie Przyciągania Powracających {#win-back-campaigns}
 
 Gdy klient anuluje subskrypcję:
 
@@ -135,30 +135,30 @@ Gdy klient anuluje subskrypcję:
 2. Zajmij się ich obawą, jeśli to możliwe
 3. Zaproponuj zniżkę na powrót (30-60 dni po anulowaniu)
 
-## Rutyny Tygodniowe i Miesięczne
+## Rutyny Tygodniowe i Miesięczne {#weekly-and-monthly-routines}
 
-### Tygodniowo
+### Tygodniowo {#weekly}
 
 - Przejrzyj nowych rejestrujących się i anulacje
 - Odpowiedz na wszystkie otwarte zgłoszenia wsparcia
 - Sprawdź wydajność platformy i uptime
 - Przejrzyj wszelkie nieudane płatności
 
-### Miesięcznie
+### Miesięcznie {#monthly}
 
 - Analizuj kluczowe wskaźniki (MRR, churn, nowi klienci, ulepszenia)
 - Stosuj aktualizacje WordPress i pluginów (po testach na stronie testowej)
 - Przeglądaj i aktualizuj bazę wiedzy na podstawie wzorców wsparcia
 - Wyślij newsletter lub aktualizację dla klientów (nowe funkcje, porady, wiadomości branży fitness)
 
-### Kwartalnie
+### Kwartalnie {#quarterly}
 
 - Przeglądaj ceny w porównaniu z konkurencją i opiniami klientów
 - Ocen trenowanie wzorów – czy wymagają odświeżenia?
 - Oszacuj przepustowość hostingu – czy musisz skalować?
 - Przeglądaj i ulepszaj proces wdrożenia na podstawie danych o aktywacji
 
-## Co zbudowaliśmy w tej lekcji
+## Co zbudowaliśmy w tej lekcji {#what-we-built-this-lesson}
 
 - **Codzienne rutyny monitorowania** dostępności, rejestracji, płatności i wsparcia
 - **Wieloetapowa struktura wsparcia** dopasowana do poziomów planów

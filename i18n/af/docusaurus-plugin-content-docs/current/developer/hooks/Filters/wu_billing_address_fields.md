@@ -4,23 +4,23 @@ title: Filter - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Filter: wu_billing_address_fields
+# Filter: wu_billing_address_fields {#filter-wubillingaddressfields}
 
 Laat plugin-ontwikkelaars die faktuuradresvelde filter.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $fields | `array` | Faktuuradres-array. |
 | $zip_only | `bool` | As ons net poskode en land benodig. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Bepaald in [`inc/objects/class-billing-address.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/objects/class-billing-address.php#L348) by lyn 348
 
 
-## Gee Terug
+## Gee Terug {#returns}

@@ -3,17 +3,17 @@ title: ส่งออกและนำเข้า
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 ได้เพิ่มเครื่องมือ **ส่งออกและนำเข้า (Export & Import)** สำหรับไซต์เดียวภายใต้เมนู **Tools > Export & Import** คุณควรใช้เครื่องมือนี้เมื่อคุณต้องการรวมเว็บไซต์ WordPress ทั้งไซต์ให้เป็นไฟล์ ZIP, กู้คืนไฟล์ ZIP นั้น, หรือย้ายเว็บไซต์ระหว่างการติดตั้ง Ultimate Multisite และ WordPress แบบไซต์เดียวที่เข้ากันได้
 
-## Required permissions
+## Required permissions {#required-permissions}
 
 คุณต้องเข้าสู่ระบบในฐานะผู้ดูแลระบบ (administrator) ที่สามารถเข้าถึงเมนู **Tools** ของ WordPress บนไซต์ที่คุณต้องการส่งออกหรือนำเข้า ในเครือข่าย Multisite ให้ใช้บัญชีผู้ดูแลระบบเครือข่าย (network administrator) เมื่อส่งออกหรือนำเข้าซับไซต์จากเครื่องมือ Ultimate Multisite ระดับเครือข่าย
 
 การดาวน์โหลดไฟล์ ZIP ที่ส่งออกจะถูกให้บริการผ่านจุดเชื่อมต่อการดาวน์โหลดที่ต้องมีการยืนยันตัวตน (authenticated download endpoint) ดังนั้นโปรดคงสถานะการเข้าสู่ระบบของผู้ดูแลระบบไว้จนกว่าการดาวน์โหลดจะเสร็จสมบูรณ์ และห้ามแชร์ URL การดาวน์โหลดที่สร้างขึ้นสู่สาธารณะ
 
-## Exporting a site to a ZIP
+## Exporting a site to a ZIP {#exporting-a-site-to-a-zip}
 
 1. ในหน้าผู้ดูแลระบบของ WordPress สำหรับไซต์ที่คุณต้องการคัดลอก ให้ไปที่ **Tools > Export & Import**
 2. เปิดพื้นที่ส่งออก (export area) และเลือกไซต์ที่คุณต้องการรวมเป็นไฟล์
@@ -23,7 +23,7 @@ Ultimate Multisite 2.9.0 ได้เพิ่มเครื่องมือ 
 
 โปรดเก็บไฟล์ ZIP ไว้ในที่ที่ปลอดภัย เพราะไฟล์นี้อาจมีเนื้อหาของไซต์, การตั้งค่า, ไฟล์มีเดีย, และส่วนประกอบโค้ดที่เลือกไว้
 
-## What the export includes
+## What the export includes {#what-the-export-includes}
 
 ไฟล์ ZIP ที่ส่งออกสามารถรวมได้ดังนี้:
 
@@ -34,7 +34,7 @@ Ultimate Multisite 2.9.0 ได้เพิ่มเครื่องมือ 
 
 ขนาดไฟล์ ZIP ที่แน่นอนขึ้นอยู่กับปริมาณไฟล์มีเดีย, plugins และ themes ที่เลือก, และขนาดของตารางฐานข้อมูลของไซต์
 
-## Importing a site from a ZIP
+## Importing a site from a ZIP {#importing-a-site-from-a-zip}
 
 1. ไปที่ **Tools > Export & Import** บนไซต์ WordPress ปลายทาง
 2. เปิดพื้นที่นำเข้า (import area) และอัปโหลดไฟล์ ZIP ที่สร้างโดยเครื่องมือ Export & Import
@@ -46,7 +46,7 @@ Ultimate Multisite 2.9.0 ได้เพิ่มเครื่องมือ 
 
 ในการติดตั้ง WordPress แบบไซต์เดียว การนำเข้าไฟล์ ZIP จะเป็นการแทนที่ไซต์ปัจจุบันด้วยไซต์ที่นำเข้า โปรดสำรองข้อมูล (backup) ไซต์เป้าหมายทั้งหมดก่อนที่คุณจะเริ่ม และหลีกเลี่ยงการเริ่มการนำเข้าหลายครั้งสำหรับไซต์เดียวกันในเวลาเดียวกัน
 
-## Limitations and compatibility notes
+## Limitations and compatibility notes {#limitations-and-compatibility-notes}
 
 - ไดเรกทอรีอัปโหลดหรือคลังมีเดียที่มีขนาดใหญ่มากอาจทำให้เกิดไฟล์ ZIP ขนาดใหญ่ โปรดยืนยันขีดจำกัดการอัปโหลดของ PHP, ขีดจำกัดการดำเนินการ, พื้นที่ดิสก์, หน่วยความจำ, และการตั้งค่าหมดเวลาของเซิร์ฟเวอร์ ก่อนการส่งออกหรือนำเข้าไซต์ขนาดใหญ่
 - คลังมีเดียที่มีขนาดใหญ่มากอาจจำเป็นต้องย้ายในช่วงเวลาบำรุงรักษาที่มีปริมาณการใช้งานต่ำ

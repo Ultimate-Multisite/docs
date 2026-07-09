@@ -3,11 +3,11 @@ title: Produinntacha domáin agus prisiúchán
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produidíocht Donáin agus Prísaí
+# Produidíocht Donáin agus Prísaí {#domain-products-and-pricing}
 
 Tá produidí donáin an cur chun cinn a bhfuil tú ag cur rath ar prísaí, TLDs (Top-Level Domains), privacy WHOIS, agus seilbhís cungaithe. Tá méid sảnraithe Multisite Ultimate deacairt le tab éifeachtach **Domain Settings** (Céadtaí Donáin).
 
-## Creacht an produidí donáin
+## Creacht an produidí donáin {#creating-a-domain-product}
 
 1. Déan cur isteach i **Network Admin › Ultimate Multisite › Products**.
 2. Cliom ar **Add New** (Agradd Nua).
@@ -17,13 +17,13 @@ Tá produidí donáin an cur chun cinn a bhfuil tú ag cur rath ar prísaí, TLD
 
 Bíonn produidí donáin ag teacht le badge **Domain** (Donán) gormhaiteach in bhfeidm sảnraithe agus is féidir iad a fháil ar chuid **Domain Products**.
 
-## Tab Domain Settings
+## Tab Domain Settings {#domain-settings-tab}
 
-### Provider (Cungaitheoir)
+### Provider (Cungaitheoir) {#provider}
 
 Déan cur isteach an registrar a bheith ag teacht ar an cur le chéile chun an cur le chéile a chur in áit. Tá sé ag cur isteach an **Default provider** (Cur le chéile is gnáthach) a bhí ag cur rath i gcónaí sa chuid Domain Seller settings.
 
-### Supported TLDs (TLDs a bhfháil)
+### Supported TLDs (TLDs a bhfháil) {#supported-tlds}
 
 Lónaithe go bhfuil sé leat chun produid a chur in áit a bheith ar **catch-all product** (produid a fháil ar gach chéad) a bhíonn ag cur rath ar gach TLD atá anseo níl ag cur rath ar produid eile.
 
@@ -31,7 +31,7 @@ Déan cur isteach línte chomhcheangta (comma-separated list) de TLDs (e.g., `.c
 
 **Conas a bhíonn an cur le chéile ag eolais:** Nuair a bhíonn siúlacht chuid ischtatú ar donán, níl aon produid a fháil ar chuid a bhí ag teacht ar an cur le chéile. Tá produid le `.com` i línte TLD a bheith ag cur rath níos fearr ná produid catch-all. Má níl aon produid a fháil ar chéad TLD a bheith ag cur rath, is féidir an catch-all a úsáid. Má níl aon produid a fháil, níl an siúlacht donáin a shaosadh.
 
-### Markup type (Téarann cur le chéile)
+### Markup type (Téarann cur le chéile) {#markup-type}
 
 Trí modhanna a chiallaíonn conas a bhíonn prísa rialta agat ag cur rath ó chostais seilbhís:
 
@@ -41,11 +41,11 @@ Trí modhanna a chiallaíonn conas a bhíonn prísa rialta agat ag cur rath ó c
 | **Fixed markup** (Spraoi cur le chéile) | Tá spraoi dólar cur le chéile. Tá spraoi $5 ar donán chostais seilbhís $10 a thaispeánta $15. |
 | **Fixed price** (Prísa cur le chéile) | Níl aon chostais seilbhís ag cur rath go léir. Tá sé ag cur rath an táirge atá agat. |
 
-### Introductory pricing (Prísa cur chun cinn)
+### Introductory pricing (Prísa cur chun cinn) {#introductory-pricing}
 
 Féach a bhfáth a fáil ar chuidas phríomhartha ar chuidais ar fáil. Déan seachaint **Price Initiúirc** (prisiann na hionn-1) seachaint le **Price Atam** (prisiann na hionn 2 agus níos lár). Bidh an chuidiste ag fheiceáil curte scáthair seo go dtí an t-aisleán, mar a bheith ag iarraidh a bheith ag éifeachtach ar athchruinne.
 
-### Gnáthacha WHOIS (WHOIS privacy)
+### Gnáthacha WHOIS (WHOIS privacy) {#whois-privacy}
 
 Céadfaidh sé a chur ar fáil an chiontáil WHOIS privacy do chuidais a bhaineann le domáin a sholáir go dtí an t-aonra seo.
 
@@ -59,7 +59,7 @@ Do Namecheap, usaíonn WHOIS privacy WhoisGuard (go léir gan cheist). Do OpenSR
 
 ---
 
-## Import agus sincéad TLDs
+## Import agus sincéad TLDs {#tld-import-and-sync}
 
 Bíonn curte scáthair wholesale réel-time ag domáin a sholáir ag cur isteach ó chuidíthe a bhaineann leat. Chun cheann seo a bheith ar fáil, caithfidh TLDs a chur isteach.
 
@@ -70,7 +70,7 @@ Tar éis an sincéad, rag thar an tab Domain Settings de domán aonair agus usai
 
 ---
 
-## Athchruinne authiomait (Auto-renewal)
+## Athchruinne authiomait (Auto-renewal) {#auto-renewal}
 
 Tá athchruinne domáin ag cur éifeachtach ar stáit chuidiste:
 
@@ -90,7 +90,7 @@ ID template éirí phríomhartha do athchruinne domáin:
 
 ---
 
-## Admin: Registration domain manualmente
+## Admin: Registration domain manualmente {#admin-manual-domain-registration}
 
 Leide an domáin ar oiriócht de chuidisteoirí gan a bheith i gcóras checkout:
 

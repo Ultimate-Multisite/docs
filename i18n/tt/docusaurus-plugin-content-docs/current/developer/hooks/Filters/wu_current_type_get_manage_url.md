@@ -4,11 +4,11 @@ title: 'Фильтр - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Эшләүчеләргә сайт белән идарә итү URL параметрларын үзгәртергә мөмкинлек бирә.
 
-## Параметрлар
+## Параметрлар {#parameters}
 
 | Исем | Төр | Тасвирлама |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | Сайт ID-сы. |
 | $site_hash | `string` | Сайт хэшы. |
 
-### Кайчаннан
+### Кайчаннан {#since}
 
 - 2.0.9
-### Чыганак
+### Чыганак {#source}
 
 [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) файлында 214 нче юлда билгеләнгән
 
 
-## Кайтара
+## Кайтара {#returns}
 Үзгәртелгән идарә итү URL-ын.

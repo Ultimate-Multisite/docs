@@ -3,7 +3,7 @@ title: Jounal chanjman Plan ki mezire
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Jounal Chanjman Plan Mezire yo
+# Jounal Chanjman Plan Mezire yo {#metered-plans-changelog}
 
 Vèsyon 1.1.0 - Lage nan dat 2026-05-05
 - Nouvo: Faktirasyon token AI pou sou-sit multisite yo — swiv epi faktire itilizasyon token AI atravè sit kliyan yo ak tarif pa token ki konfigirab
@@ -14,17 +14,17 @@ Vèsyon 1.1.0 - Lage nan dat 2026-05-05
 - Koreksyon: Rezoud erè fatal ak pwoblèm doub-inisyalizasyon pandan chajman ekstansyon an
 - Amelyore: Ajoute script npm check-env pou anviwònman devlopè yo oto-konfigire nan premye ekzekisyon an
 
-### 1.0.3
+### 1.0.3 {#103}
 * Mizajou pou Plugin Update Checker v5
 * Ajoute antèt ekstansyon WordPress modèn
 * Amelyore konpatibilite ak dènye vèsyon WordPress yo
 * Amelyore pèfòmans swiv itilizasyon an
 
-### 1.0.2
+### 1.0.2 {#102}
 * Koreksyon ensèk ak amelyorasyon pèfòmans
 * Amelyore rapò itilizasyon
 
-### 1.0.0
+### 1.0.0 {#100}
 * Premye lage
 * Fonksyonalite debaz faktirasyon mezire
 * Swiv itilizasyon ak kalkil depasman

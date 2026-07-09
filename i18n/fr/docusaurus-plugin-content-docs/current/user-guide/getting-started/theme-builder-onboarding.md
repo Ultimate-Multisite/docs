@@ -3,11 +3,11 @@ title: Flux d'intégration du constructeur de thèmes
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flux d'intégration du constructeur de thèmes
+# Flux d'intégration du constructeur de thèmes {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introduit un **flux d'intégration guidé du constructeur de thèmes** qui vous aide à créer un thème de blocs personnalisé lors de votre configuration initiale. Cela remplace le mode Site Builder hérité par une approche plus flexible, assistée par agent.
 
-## Qu'est-ce que le flux d'intégration du constructeur de thèmes ?
+## Qu'est-ce que le flux d'intégration du constructeur de thèmes ? {#what-is-the-theme-builder-onboarding-flow}
 
 Le flux d'intégration du constructeur de thèmes est un assistant de configuration interactif qui :
 
@@ -18,9 +18,9 @@ Le flux d'intégration du constructeur de thèmes est un assistant de configurat
 
 Ce flux est alimenté par l'**agent Setup Assistant**, qui pose des questions de clarification et construit votre thème de manière incrémentielle.
 
-## Démarrer l'intégration du constructeur de thèmes
+## Démarrer l'intégration du constructeur de thèmes {#starting-the-theme-builder-onboarding}
 
-### Configuration initiale
+### Configuration initiale {#first-run-setup}
 
 Lorsque vous lancez Superdav AI Agent pour la première fois sur une nouvelle installation WordPress, vous verrez :
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Sélectionnez **"Build a custom theme"** pour accéder au flux d'intégration du constructeur de thèmes.
 
-### Activation manuelle
+### Activation manuelle {#manual-activation}
 
 Vous pouvez également démarrer l'intégration du constructeur de thèmes à tout moment en demandant :
 
@@ -49,9 +49,9 @@ ou
 "Help me create a custom theme"
 ```
 
-## Les étapes d'intégration
+## Les étapes d'intégration {#the-onboarding-steps}
 
-### Étape 1 : Sélection du mode
+### Étape 1 : Sélection du mode {#step-1-mode-selection}
 
 L'agent Setup Assistant vous demande votre préférence :
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 Le **mode guidé** est recommandé pour la plupart des utilisateurs ; l'agent fait des recommandations de conception basées sur votre secteur d'activité et vos objectifs.
 
-### Étape 2 : Spécification du site
+### Étape 2 : Spécification du site {#step-2-site-specification}
 
 On vous posera des questions sur votre site :
 
@@ -74,7 +74,7 @@ On vous posera des questions sur votre site :
 
 Ces informations sont stockées dans votre mémoire **site_brief**, que les agents consultent lors de sessions futures.
 
-### Étape 3 : Décisions du système de conception
+### Étape 3 : Décisions du système de conception {#step-3-design-system-decisions}
 
 L'agent vous guide à travers la sélection des tokens de conception :
 
@@ -83,7 +83,7 @@ L'agent vous guide à travers la sélection des tokens de conception :
 - **Espacement** : Mise en page compacte, normale ou spacieuse
 - **Mouvement** : Animations et transitions (si souhaité)
 
-### Étape 4 : Génération du thème
+### Étape 4 : Génération du thème {#step-4-theme-generation}
 
 L'agent Setup Assistant structure votre thème de blocs personnalisé avec :
 
@@ -92,7 +92,7 @@ L'agent Setup Assistant structure votre thème de blocs personnalisé avec :
 - Des styles de blocs personnalisés correspondant à votre système de conception
 - Les métadonnées du thème et les déclarations de support WordPress
 
-### Étape 5 : Activation et vérification
+### Étape 5 : Activation et vérification {#step-5-activation-and-verification}
 
 Le thème est activé automatiquement, et vous verrez :
 
@@ -107,7 +107,7 @@ Le thème est activé automatiquement, et vous verrez :
 
 Vous pouvez ensuite visiter votre site pour vérifier que le thème s'affiche correctement.
 
-## Spécification du site et mémoire site_brief
+## Spécification du site et mémoire site_brief {#site-specification-and-sitebrief-memory}
 
 Pendant l'intégration, l'agent capture la spécification de votre site dans une catégorie de mémoire **site_brief**. Cela comprend :
 
@@ -117,7 +117,7 @@ Pendant l'intégration, l'agent capture la spécification de votre site dans une
 - Les préférences de conception
 - La structure du contenu
 
-### Pourquoi le site_brief est important
+### Pourquoi le site_brief est important {#why-sitebrief-matters}
 
 Lors de sessions futures, les agents consultent votre site_brief pour :
 
@@ -126,7 +126,7 @@ Lors de sessions futures, les agents consultent votre site_brief pour :
 - Fournir des recommandations contextuelles
 - Éviter de répéter les questions de configuration
 
-### Visualiser votre site_brief
+### Visualiser votre site_brief {#viewing-your-sitebrief}
 
 Vous pouvez demander à l'agent :
 
@@ -142,11 +142,11 @@ ou
 
 L'agent affichera votre spécification de site enregistrée.
 
-## Personnalisation après l'intégration
+## Personnalisation après l'intégration {#customizing-after-onboarding}
 
 Une fois l'intégration du constructeur de thèmes terminée, vous pouvez :
 
-### Utiliser la compétence Esthétique du système de conception
+### Utiliser la compétence Esthétique du système de conception {#use-the-design-system-aesthetics-skill}
 
 Demander des raffinements de conception :
 
@@ -162,7 +162,7 @@ ou
 
 La **compétence Esthétique du système de conception** vous guide à travers des mises à jour de conception ciblées.
 
-### Modifier theme.json directement
+### Modifier theme.json directement {#edit-themejson-directly}
 
 Pour les utilisateurs avancés, modifiez `/wp-content/themes/[theme-name]/theme.json` pour ajuster :
 
@@ -171,7 +171,7 @@ Pour les utilisateurs avancés, modifiez `/wp-content/themes/[theme-name]/theme.
 - Les valeurs d'espacement
 - Les définitions de bordure et d'ombre
 
-### Créer des modèles de blocs personnalisés
+### Créer des modèles de blocs personnalisés {#create-custom-block-templates}
 
 Utilisez l'éditeur de blocs WordPress pour créer des modèles personnalisés pour :
 
@@ -180,7 +180,7 @@ Utilisez l'éditeur de blocs WordPress pour créer des modèles personnalisés p
 - Les pages produits
 - Les formulaires de contact
 
-## Comparaison : Ancien vs. Nouveau flux d'intégration
+## Comparaison : Ancien vs. Nouveau flux d'intégration {#comparison-old-vs-new-onboarding}
 
 | Fonctionnalité | Site Builder (Hérité) | Theme Builder (Nouveau) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Utilisez l'éditeur de blocs WordPress pour créer des modèles personnalisés p
 | Flexibilité | Options fixes | Personnalisable |
 | Mises à jour futures | Non référencées | Stockées dans site_brief |
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
 **Le flux d'intégration n'a pas été complété**
 - Redémarrer le flux : "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Utilisez l'éditeur de blocs WordPress pour créer des modèles personnalisés p
 - Demander à l'agent de "regenerate the theme with [specific changes]"
 - Modifier theme.json directement pour un contrôle précis
 
-## Prochaines étapes
+## Prochaines étapes {#next-steps}
 
 Après avoir terminé l'intégration du constructeur de thèmes :
 

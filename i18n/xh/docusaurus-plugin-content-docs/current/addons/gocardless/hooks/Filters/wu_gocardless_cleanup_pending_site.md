@@ -4,13 +4,13 @@ title: Isihluzi - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Isihluzi: wu_gocardless_cleanup_pending_site
+# Isihluzi: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Sisebenza ngaphambi kokucima isayithi elilindileyo elingenamnini lobulungu be-GoCardless oburhoxisiweyo.
 
 Buyisela false kwesi sihluzi ukunqanda ukucinywa.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Buyisela false kwesi sihluzi ukunqanda ukucinywa.
 | $membership | `\WP_Ultimo\Models\Membership` | Ubulungu oburhoxisiweyo. |
 | $old_status | `string` | Isimo ngaphambi kokurhoxiswa. |
 
-### Ukususela
+### Ukususela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-[`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) kumgca 1086

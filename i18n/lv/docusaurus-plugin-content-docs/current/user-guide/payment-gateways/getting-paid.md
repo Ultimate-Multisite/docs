@@ -3,13 +3,13 @@ title: Maksājumu saņemšana
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Maksājumu saņemšana (v2)
+# Maksājumu saņemšana (v2) {#getting-paid-v2}
 
 _**SVARĪGA PIEZĪME: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
 Ultimate Multisite ir iebūvēta dalības un norēķinu sistēma. Lai mūsu norēķinu sistēma darbotos, esam integrējuši visbiežāk e-komercijā izmantotās maksājumu vārtejas. Noklusējuma maksājumu vārtejas Ultimate Multisite ir _Stripe_ , _PayPal_ un manuālais maksājums. Varat arī izmantot _WooCommerce_ , _GoCardless_ un _Payfast_ maksājumu saņemšanai, instalējot to attiecīgos papildinājumus.
 
-## Pamata iestatījumi
+## Pamata iestatījumi {#basic-settings}
 
 Jūs varat konfigurēt jebkuru no šīm maksājumu vārtejām Ultimate Multisite maksājumu iestatījumos. To varat atrast, dodoties uz **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Tas novērš situāciju, kurā dalība izskatās kā automātiski atjaunojama, j
 
 <!-- Ekrānuzņēmums nav pieejams: Next invoice number un invoice number prefix lauki, kas redzami, kad ir izvēlēts Sequential Number -->
 
-## Kur atrast vārtejas:
+## Kur atrast vārtejas: {#where-to-find-the-gateways}
 
 Maksājumu vārtejas varat iestatīt tajā pašā lapā ( **Ultimate Multisite > Settings > Payments**). Tieši zem **aktīvās maksājumu vārtejas** jūs varēsiet redzēt: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ un _Manual_.
 
@@ -67,7 +67,7 @@ Varat skatīt un rediģēt maksājumu informāciju:
 
 Tagad, ja vēlaties izmantot _WooCommerce_ , _GoCardless_ vai _Payfast_ kā savu maksājumu vārteju, jums būs **jāinstalē un jākonfigurē to papildinājumi**.
 
-### Kā instalēt WooCommerce papildinājumu:
+### Kā instalēt WooCommerce papildinājumu: {#how-to-install-the-woocommerce-add-on}
 
 Mēs saprotam, ka _Stripe_ un _PayPal_ dažās valstīs nav pieejami, kas ierobežo vai traucē Ultimate Multisite lietotājiem efektīvi izmantot mūsu plugin. Tāpēc mēs izveidojām papildinājumu, lai integrētu _WooCommerce,_ kas ir ļoti populārs e-komercijas plugin. Izstrādātāji visā pasaulē ir izveidojuši papildinājumus, lai tajā integrētu dažādas maksājumu vārtejas. Mēs izmantojām šo iespēju, lai paplašinātu maksājumu vārtejas, ko varat izmantot ar Ultimate Multisite norēķinu sistēmu.
 
@@ -95,7 +95,7 @@ Pēc tā aktivizēšanas, ja jūsu tīmekļa vietnē joprojām nav instalēts un
 
 Lai uzzinātu vairāk par WooCommerce Integration papildinājumu, **noklikšķiniet šeit**.
 
-### Kā instalēt GoCardless papildinājumu:
+### Kā instalēt GoCardless papildinājumu: {#how-to-install-the-gocardless-add-on}
 
 Darbības, lai instalētu _GoCardless_ papildinājumu, ir gandrīz tādas pašas kā _WooCommerce_ papildinājumam. Lūdzu, dodieties uz papildinājumu lapu un atlasiet **Ultimate Multisite: GoCardless Gateway** papildinājumu.
 
@@ -111,7 +111,7 @@ Kad instalēšana būs pabeigta, jūs tiksiet novirzīts uz pluginu lapu. Šeit 
 
 Lai uzzinātu, kā sākt darbu ar _GoCardless_ vārteju, **izlasiet šo rakstu**.
 
-### Kā instalēt Payfast papildinājumu:
+### Kā instalēt Payfast papildinājumu: {#how-to-install-the-payfast-add-on}
 
 Dodieties uz papildinājumu lapu un atlasiet **Ultimate Multisite: Payfast Gateway** papildinājumu.
 

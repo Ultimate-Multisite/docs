@@ -3,18 +3,18 @@ title: Closte-integration
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte-integration
+# Closte-integration {#closte-integration}
 
-## Översikt
+## Översikt {#overview}
 Closte är en hanterad WordPress-värdplattform byggd på Google Cloud-infrastruktur. Denna integration möjliggör automatisk domänsynkronisering och SSL-certifikathantering mellan Ultimate Multisite och Closte.
 
-## Funktioner
+## Funktioner {#features}
 - Automatisk domänsynkronisering
 - SSL-certifikathantering
 - Stöd för wildcard-domäner
 - Ingen konfiguration krävs om du kör på Closte
 
-## Krav
+## Krav {#requirements}
 Följande konstant måste definieras i din `wp-config.php`-fil om du använder Closte:
 
 ```php
@@ -23,13 +23,13 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 Denna konstant är vanligtvis redan definierad om du har ditt webbhotell på Closte.
 
-## Installationsanvisningar
+## Installationsanvisningar {#setup-instructions}
 
-### 1. Verifiera din Closte API-nyckel
+### 1. Verifiera din Closte API-nyckel {#1-verify-your-closte-api-key}
 
 Om du har ditt webbhotell på Closte bör konstanten `CLOSTE_CLIENT_API_KEY` redan vara definierad i din `wp-config.php`-fil. Du kan verifiera detta genom att kontrollera din `wp-config.php`-fil.
 
-### 2. Aktivera integrationen
+### 2. Aktivera integrationen {#2-enable-the-integration}
 
 1. I din WordPress-admin, gå till Ultimate Multisite > Settings
 2. Navigera till fliken "Domain Mapping"
@@ -37,7 +37,7 @@ Om du har ditt webbhotell på Closte bör konstanten `CLOSTE_CLIENT_API_KEY` red
 4. Aktivera Closte-integrationen
 5. Klicka på "Save Changes"
 
-## Hur det fungerar
+## Hur det fungerar {#how-it-works}
 
 När en domän mappas i Ultimate Multisite:
 
@@ -47,26 +47,26 @@ När en domän mappas i Ultimate Multisite:
 
 Integrationen fungerar också med inställningen för DNS-kontrollintervall i Ultimate Multisite, vilket låter dig konfigurera hur ofta systemet kontrollerar DNS-propagering och SSL-certifikatutfärdande.
 
-## Skapande av domänpost
+## Skapande av domänpost {#domain-record-creation}
 
 Denna integration säkerställer att när en webbplats skapas eller dupliceras, skapas en domänpost automatiskt. Detta är särskilt viktigt för Closte-integrationen, eftersom skapandet av domänposten triggar Closte API att skapa domänen och SSL-certifikatet.
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
-### Problem med API-anslutning
+### Problem med API-anslutning {#api-connection-issues}
 - Verifiera att din Closte API-nyckel är korrekt
 - Säkerställ att ditt Closte-konto har nödvändiga behörigheter
 
-### Problem med SSL-certifikat
+### Problem med SSL-certifikat {#ssl-certificate-issues}
 - Closte kan behöva lite tid för att utfärda SSL-certifikat (vanligtvis 5-10 minuter)
 - Verifiera att dina domäner pekar korrekt mot din Closte-servers IP-adress
 - Kontrollera DNS-posterna för din domän för att säkerställa att de är korrekt konfigurerade
 
-### Domän läggs inte till
+### Domän läggs inte till {#domain-not-added}
 - Kontrollera Ultimate Multisite-loggarna för eventuella felmeddelanden
 - Verifiera att domänen inte redan är tillagd i Closte
 - Säkerställ att din domäns DNS-poster är korrekt konfigurerade
 
-### DNS-kontrollintervall
+### DNS-kontrollintervall {#dns-check-interval}
 - Om SSL-certifikat tar för lång tid att utfärda kan du justera DNS-kontrollintervallet i Domain Mapping-inställningarna
 - Standardintervallet är 300 sekunder (5 minuter), men du kan ställa in det så lågt som 10 sekunder för snabbare kontroll under testning

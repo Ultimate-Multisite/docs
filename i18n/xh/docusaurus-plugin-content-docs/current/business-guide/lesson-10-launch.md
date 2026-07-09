@@ -3,19 +3,19 @@ title: 'Isifundo 10: Usuku Lokuphehlelelwa'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Isifundo 10: Usuku Lokuphehlelela
+# Isifundo 10: Usuku Lokuphehlelela {#lesson-10-launch-day}
 
 Yonke into yakhiwe. Ngaphambi kokuba uvule iingcango, esi sifundo sihamba kuluhlu lokuhlola ngaphambi kokuphehlelela ukuqinisekisa ukuba akukho nto yonakeleyo, ilahlekileyo, okanye ehlazisayo.
 
-## Apho Besiyeke Khona
+## Apho Besiyeke Khona {#where-we-left-off}
 
 FitSite ineetemplate, izicwangciso, checkout, branding, onboarding, kunye namaxabiso konke kuqwalaselwe. Ngoku siqinisekisa ukuba yonke into iyasebenza size siye live.
 
-## Uluhlu Lokuhlola Ngaphambi Kokuphehlelela
+## Uluhlu Lokuhlola Ngaphambi Kokuphehlelela {#pre-launch-checklist}
 
 Sebenza kuyo yonke into. Musa ukutsiba nayiphi na.
 
-### Isiseko Seqonga
+### Isiseko Seqonga {#platform-infrastructure}
 
 - [ ] Hosting izinzile kwaye isebenza kakuhle phantsi komthwalo
 - [ ] Wildcard SSL iyasebenza kwaye zonke ii-subdomains zinikezelwa nge-HTTPS
@@ -23,7 +23,7 @@ Sebenza kuyo yonke into. Musa ukutsiba nayiphi na.
 - [ ] Ii-backups ziqwalaselwe kwaye zavavanywa (buyisela ubuncinane enye ukuqinisekisa)
 - [ ] Monitoring ikhona -- uya kwazi ukuba iqonga liyawa
 
-### Iitemplate
+### Iitemplate {#templates}
 
 - [ ] Zontathu iitemplate zilayisha ngokuchanekileyo kwiisayithi ezintsha
 - [ ] Umxholo wesibambi-ndawo uluncedo kwaye awunazimpazamo zokuchwetheza
@@ -32,7 +32,7 @@ Sebenza kuyo yonke into. Musa ukutsiba nayiphi na.
 - [ ] Isantya sokulayisha iphepha siyamkeleka (vavanya ngesixhobo esifana ne-GTmetrix okanye PageSpeed Insights)
 - [ ] Akukho makhonkco aphukileyo okanye ii-assets ezilahlekileyo kuyo nayiphi na itemplate
 
-### Izicwangciso Neemveliso
+### Izicwangciso Neemveliso {#plans-and-products}
 
 - [ ] Zontathu izicwangciso ziyasebenza kwaye ziyabonakala
 - [ ] Iinkcazelo zezicwangciso zichanekile kwaye zijolise kwi-niche
@@ -42,7 +42,7 @@ Sebenza kuyo yonke into. Musa ukutsiba nayiphi na.
 - [ ] Order bumps zivela ngokuchanekileyo ngexesha le-checkout
 - [ ] Imida ye-plugin ne-theme inyanzeliswa ngokuchanekileyo ngokwesicwangciso ngasinye
 
-### Ukuhamba kwe-Checkout
+### Ukuhamba kwe-Checkout {#checkout-flow}
 
 - [ ] Gqibezela ubhaliso lovavanyo olupheleleyo kwisicwangciso ngasinye (sebenzisa indlela yentlawulo yovavanyo)
 - [ ] Ukhetho lwetemplate lubonisa iitemplate ezichanekileyo ngokwesicwangciso
@@ -52,7 +52,7 @@ Sebenza kuyo yonke into. Musa ukutsiba nayiphi na.
 - [ ] Umthengi angangena kwisayithi yakhe entsha ngoko nangoko
 - [ ] Iikhowudi zesaphulelo zisebenza ngokuchanekileyo
 
-### Branding
+### Branding {#branding}
 
 - [ ] Iphepha lokungena libonisa branding ye-FitSite
 - [ ] Admin dashboard ibonisa branding ye-FitSite
@@ -60,7 +60,7 @@ Sebenza kuyo yonke into. Musa ukutsiba nayiphi na.
 - [ ] Ii-invoyisi zibonisa ngokuchanekileyo iinkcukacha zeshishini lakho
 - [ ] Isayithi yokuthengisa i-live kwaye inamakhonkco aya kwifom ye-checkout
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Quick Start widget ivela kwiidashboard zabathengi abatsha
 - [ ] Onke amakhonkco e-Quick Start akhomba kumaphepha achanekileyo
@@ -68,7 +68,7 @@ Sebenza kuyo yonke into. Musa ukutsiba nayiphi na.
 - [ ] Amanqaku e-knowledge base apapashiwe kwaye ayafikeleleka
 - [ ] Iphepha le-Account libonisa ulwazi lwesicwangciso oluchanekileyo kunye neenketho zokunyusa
 
-### Ezomthetho Nezoshishino
+### Ezomthetho Nezoshishino {#legal-and-business}
 
 - [ ] Imiqathango yenkonzo ipapashiwe kwaye idityaniswe ukusuka kwi-checkout
 - [ ] Umgaqo-nkqubo wabucala upapashiwe kwaye uyafikeleleka
@@ -77,11 +77,11 @@ Sebenza kuyo yonke into. Musa ukutsiba nayiphi na.
 - [ ] Payment gateway ikwimo ye-live (hayi imo yovavanyo)
 - [ ] Uqwalaselo lwerhafu luchanekile kulawulo lwakho
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Cinga ngokuphehlelela kwizigaba ezibini:
 
-### Isigaba 1: Soft Launch
+### Isigaba 1: Soft Launch {#phase-1-soft-launch}
 
 Mema abanini beestudiyo ze-fitness aba-5-10 ukuba babhalise ngaphambi kokuphehlelelwa koluntu. Aba ngabathengi bakho be-beta. Banike isaphulelo esikhulu (50% isaphulelo ubomi bonke, okanye iinyanga ezi-3 simahla) ngokutshintshiselana ngo:
 
@@ -91,7 +91,7 @@ Mema abanini beestudiyo ze-fitness aba-5-10 ukuba babhalise ngaphambi kokuphehle
 
 Oku kukunika ingxelo yokwenene yabathengi kunye neesayithi eziphilayo onokuzibonisa ngaphambi kokuba uvulele uluntu.
 
-### Isigaba 2: Ukuphehlelelwa Koluntu
+### Isigaba 2: Ukuphehlelelwa Koluntu {#phase-2-public-launch}
 
 Xa ingxelo ye-soft launch sele ifakiwe:
 
@@ -100,7 +100,7 @@ Xa ingxelo ye-soft launch sele ifakiwe:
 - Qalisa ukufumana abathengi (Isifundo 11)
 - Yazisa kwiitshaneli ezifanelekileyo zeshishini le-fitness
 
-## Izenzo Zosuku Lokuphehlelela
+## Izenzo Zosuku Lokuphehlelela {#launch-day-actions}
 
 Ngosuku oya ngalo kuluntu:
 
@@ -110,7 +110,7 @@ Ngosuku oya ngalo kuluntu:
 4. **Fumaneka** -- abathengi bakho bokuqala bokwenene banokufuna uncedo, kwaye impendulo ekhawulezayo yakha ukuthembana
 5. **Bhiyozela ngokufutshane** -- emva koko ubuyele emsebenzini
 
-## Yintoni Enokungahambi Kakuhle
+## Yintoni Enokungahambi Kakuhle {#what-can-go-wrong}
 
 Zilungiselele:
 
@@ -120,7 +120,7 @@ Zilungiselele:
 - **Ukusebenza phantsi komthwalo**: Ukuba ufumana ukunyuka okukhulu kwetrafikhi, yazi indlela yokwandisa i-hosting yakho
 - **Ukudideka kwabathengi**: Yiba ne-knowledge base yakho kunye neetshaneli zenkxaso zilungile
 
-## Inethiwekhi ye-FitSite Ukuza Kuthi Ga Ngoku
+## Inethiwekhi ye-FitSite Ukuza Kuthi Ga Ngoku {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Esikwakhe Kwesi Sifundo
+## Esikwakhe Kwesi Sifundo {#what-we-built-this-lesson}
 
 - **Uluhlu lokuhlola olupheleleyo ngaphambi kokuphehlelela** olugubungela isiseko, umxholo, iintlawulo, kunye nezomthetho
 - **Isicwangciso se-soft launch** sokufumana ingxelo yokwenene ngaphambi kokuya kuluntu

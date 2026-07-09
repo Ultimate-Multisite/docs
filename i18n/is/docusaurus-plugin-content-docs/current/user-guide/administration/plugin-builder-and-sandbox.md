@@ -3,11 +3,11 @@ title: Buildar og sandkjar
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 hefurinn **Plugin Builder & Sandbox System**, sem lelar AI-hjálparinn að gera, aktíva og stjórna WordPress pluginum á netinu þínu – allt í tryggjum, skýrri sandbox umhverfi.
 
-## Översiktur
+## Översiktur {#overview}
 
 Plugin Builder gerir því mögulegt að AI-hjálparinn skapið sérsniðna WordPress plugins sem svari til náttúrulegum textforritunshópum. Generaðar plugins eru valdið, lagda og aktívað í sandbox lástökkun áður en þau hafa nánast áhrif á vinnu á livenessítandi síðu.
 
@@ -17,7 +17,7 @@ Notkunarþættir eru:
 - Prototyping eiginleika sem krefjast WordPress hooks eða custom post types.
 - Skapa stuttlifna skript fyrir flokkunarverkningar (batch operations).
 
-## Genera Plugin með AI
+## Genera Plugin með AI {#generating-a-plugin-via-ai}
 
 Til að gera plugin, opna chat-menningu Gratis AI Agent og lýsi því hvað þú þarft. Til dæmis:
 
@@ -32,7 +32,7 @@ AI-hjálparinn mun:
 
 Þú getur fínst því sem er gerað með því að eftirfylgja í sama samræðartré fyrir aktíva.
 
-## Aktíva í Sandbox
+## Aktíva í Sandbox {#sandbox-activation}
 
 Aktívað plugin í sandbox er annleitt af aktíva í livenessítandi netinu. Sandboxin:
 

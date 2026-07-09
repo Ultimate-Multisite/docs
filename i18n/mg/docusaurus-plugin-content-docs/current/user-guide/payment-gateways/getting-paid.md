@@ -3,13 +3,13 @@ title: Fandraisana vola
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Fahazoana karama (v2)
+# Fahazoana karama (v2) {#getting-paid-v2}
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka momba ny Ultimate Multisite kinova 2.x.**_
 
 Ultimate Multisite dia manana rafitra maha-mpikambana sy faktiora tafiditra ao anatiny. Mba hiasan'ny rafitra faktioranay, dia nampidirinay ireo vavahadin-karama mahazatra indrindra ampiasaina amin'ny e-commerce. Ny vavahadin-karama mahazatra ao amin'ny Ultimate Multisite dia _Stripe_ , _PayPal_ , ary Fandoavana amin'ny tanana. Afaka mampiasa _WooCommerce_ , _GoCardless_ ary _Payfast_ koa ianao handraisana fandoavana amin'ny alalan'ny fametrahana ireo add-ons mifanaraka aminy.
 
-## Fikirana fototra
+## Fikirana fototra {#basic-settings}
 
 Azonao amboarina ao anatin'ny fikirana fandoavana Ultimate Multisite ireo vavahadin-karama ireo. Afaka mahita izany ianao amin'ny fandehanana any amin'ny **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Izany dia misoroka ny membership tsy hiseho ho toy ny hoe havaozina ho azy rehef
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Aiza no hahitana ireo gateway:
+## Aiza no hahitana ireo gateway: {#where-to-find-the-gateways}
 
 Afaka manamboatra ireo vavahadin-karama ao amin'ilay pejy ihany ianao ( **Ultimate Multisite > Settings > Payments**). Eo ambanin'ny **vavahadin-karama mavitrika** indrindra, dia ho hitanao: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ary _Manual_.
 
@@ -67,7 +67,7 @@ Ity koa ny fijery feno ny fikirana vavahadin-karama:
 
 Ankehitriny, raha te hampiasa _WooCommerce_ , _GoCardless_ na _Payfast_ ho vavahadin-karamanao ianao, dia mila **mametraka sy manamboatra ny add-ons-ny**.
 
-### Ahoana ny fametrahana ny WooCommerce add-on:
+### Ahoana ny fametrahana ny WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Fantatray fa tsy misy any amin'ny firenena sasany ny _Stripe_ sy _PayPal_ ka mametra na manakana ny mpampiasa Ultimate Multisite tsy hampiasa amin'ny fomba mahomby ny plugin-nay. Noho izany dia namorona add-on izahay hampidirana _WooCommerce,_ izay plugin e-commerce tena malaza. Namorona add-ons ireo mpamorona manerana izao tontolo izao mba hampidirana vavahadin-karama samihafa aminy. Nohararaotinay izany hanitarana ireo vavahadin-karama azonao ampiasaina amin'ny rafitra faktiora Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Rehefa avy nampandeha azy ianao, raha mbola tsy napetraka sy nalefa ao amin’ny
 
 Raha hamaky bebe kokoa momba ny fanampiny WooCommerce Integration, **tsindrio eto**.
 
-### Ahoana ny fametrahana ny fanampiny GoCardless:
+### Ahoana ny fametrahana ny fanampiny GoCardless: {#how-to-install-the-gocardless-add-on}
 
 Ny dingana hametrahana ny fanampiny _GoCardless_ dia mitovy be amin’ny fanampiny _WooCommerce_. Mankanesa azafady ao amin’ny pejin’ny fanampiny ary safidio ny fanampiny **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Rehefa vita ny fametrahana, dia hafindra ho any amin’ny pejin’ny fanitarana 
 
 Raha hianatra ny fomba hanombohana amin’ny vavahady _GoCardless_, **vakio ity lahatsoratra ity**.
 
-### Ahoana ny fametrahana ny fanampiny Payfast:
+### Ahoana ny fametrahana ny fanampiny Payfast: {#how-to-install-the-payfast-add-on}
 
 Mankanesa ao amin’ny pejin’ny fanampiny ary safidio ny fanampiny **Ultimate Multisite: Payfast Gateway**.
 

@@ -3,32 +3,32 @@ title: 'Isifundo 3: Ukuseta Inethiwekhi Yakho'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Isifundo 3: Ukuseta Umnatha Wakho
+# Isifundo 3: Ukuseta Umnatha Wakho {#lesson-3-setting-up-your-network}
 
 Lixesha lokwakha. Kwesi sifundo uza kufaka Ultimate Multisite uze uqwalasele isiseko somnatha weFitSite. Zonke izigqibo apha zenziwa kucingelwa icandelo lezitudiyo zokuzilolonga.
 
-## Apho Sasiyeke Khona
+## Apho Sasiyeke Khona {#where-we-left-off}
 
 Sikhethe izitudiyo zokuzilolonga njengecandelo lethu elikhethekileyo saza saqinisekisa ithuba. Ngoku sijika loo ngcinga ibe liqonga elisebenzayo.
 
-## Ukukhetha Ukusingathwa Kwakho
+## Ukukhetha Ukusingathwa Kwakho {#choosing-your-hosting}
 
 Ukhetho lwakho lokusingathwa lubaluleke ngakumbi kwiqonga lecandelo elikhethekileyo kunesiza esinye. Awusingathi isiza esinye -- usingatha umnatha oza kukhula ube ziziza ezininzi okanye amakhulu eziza.
 
-### Into Omawuyijonge
+### Into Omawuyijonge {#what-to-look-for}
 
 - **Inkxaso yeWordPress Multisite**: Asingabo bonke abasingathi abaphatha i-multisite kakuhle
 - **Wildcard SSL**: Ibalulekile kumanatha asekelwe kwii-subdomain
 - **Izixhobo ezinokwandiswa**: Ufuna indawo yokukhula ngaphandle kokufuduka
 - **Ukudityaniswa kweUltimate Multisite**: Ukudibanisa i-domain ngokuzenzekelayo kunye ne-SSL konga umzamo omkhulu wokusebenza
 
-### Indlela Ecetyiswayo
+### Indlela Ecetyiswayo {#recommended-approach}
 
 Khetha umsingathi kuluhlu [lwabaBoneleli abaHambelanayo](/user-guide/host-integrations/closte). Aba bavavanyiwe ngeUltimate Multisite kwaye babonelela ngodityaniso oludingayo lokudibanisa i-domain kunye nokuzenzekela kwe-SSL.
 
 KwiFitSite, siza kusebenzisa uqwalaselo lwe-subdomain. Oku kuthetha ukuba iziza zabathengi ekuqaleni ziza kubonakala njenge `studioname.fitsite.com` ngaphambi kokuba, ukuba bayafuna, badibanise i-domain yabo.
 
-## Ukufaka WordPress Multisite
+## Ukufaka WordPress Multisite {#installing-wordpress-multisite}
 
 Ukuba awukabi nalo ufakelo lweWordPress Multisite:
 
@@ -40,7 +40,7 @@ Ukuba awukabi nalo ufakelo lweWordPress Multisite:
 Ii-subdomain zinika isiza somthengi ngamnye idilesi yaso eyahlukileyo (`studio.fitsite.com`) endaweni yendlela (`fitsite.com/studio`). Oku kubonakala ngobungcali ngakumbi kubathengi bakho kwaye kuthintela iingxabano ze-permalink. Jonga [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) ukuze ufumane uthelekiso oluneenkcukacha.
 :::
 
-## Ukufaka Ultimate Multisite
+## Ukufaka Ultimate Multisite {#installing-ultimate-multisite}
 
 Landela isikhokelo [Ukufaka Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) ukuze:
 
@@ -53,11 +53,11 @@ Ngexesha lewizadi yokuseta, gcina icandelo leFitSite engqondweni:
 - **Igama lenkampani**: "FitSite" (okanye igama lebrand olikhethileyo)
 - **Ilogo yenkampani**: Layisha ilogo yebrand yakho -- le ibonakala kwii-invoice nakwii-imeyile
 
-## Ukuqwalasela Icandelo Lezitudiyo Zokuzilolonga
+## Ukuqwalasela Icandelo Lezitudiyo Zokuzilolonga {#configuring-for-the-fitness-niche}
 
 Nje ukuba Ultimate Multisite ifakiwe, yenza olu khetho loqwalaselo olukhethekileyo kweli candelo:
 
-### Iisetingi Jikelele
+### Iisetingi Jikelele {#general-settings}
 
 Yiya ku **Ultimate Multisite > Iisetingi** uze uqwalasele:
 
@@ -65,7 +65,7 @@ Yiya ku **Ultimate Multisite > Iisetingi** uze uqwalasele:
 - **Indima emiselweyo**: Administrator -- abanini bezitudiyo zokuzilolonga bafuna ulawulo olupheleleyo lomxholo wesiza sabo
 - **Ubhaliso**: Vumela ubhaliso lwabasebenzisi ukuze abanini bezitudiyo bazibhalise ngokwabo
 
-### Uqwalaselo Lwee-imeyile
+### Uqwalaselo Lwee-imeyile {#email-configuration}
 
 Ii-imeyile zenkqubo yakho kufuneka zithethe ulwimi lwecandelo lakho. Yiya ku **Ultimate Multisite > Iisetingi > Ii-imeyile** uze ulungise:
 
@@ -75,7 +75,7 @@ Ii-imeyile zenkqubo yakho kufuneka zithethe ulwimi lwecandelo lakho. Yiya ku **U
 
 Siza kuziphucula ngakumbi ezi zinto kwiSifundo 8 (Ukwamkelwa Kwabathengi), kodwa ukuseta ithoni ngoku kuqinisekisa ukuba nokubhalisa kovavanyo kwangoko kuziva kukhethekile kweli candelo.
 
-### Uqwalaselo Lwe-domain
+### Uqwalaselo Lwe-domain {#domain-configuration}
 
 Ukuba usebenzisa umboneleli wokusingathwa ohambelanayo, qwalasela ukudibanisa i-domain ngoku:
 
@@ -85,7 +85,7 @@ Ukuba usebenzisa umboneleli wokusingathwa ohambelanayo, qwalasela ukudibanisa i-
 
 Oku kuqinisekisa ukuba xa siqalisa ukudala iitemplate neziza zovavanyo kwisifundo esilandelayo, yonke into isebenza ukusuka ekuqaleni ukuya ekupheleni.
 
-## Umnatha weFitSite Ukuza Kuthi Ga Ngoku
+## Umnatha weFitSite Ukuza Kuthi Ga Ngoku {#the-fitsite-network-so-far}
 
 Ekupheleni kwesi sifundo, nantsi into onayo:
 
@@ -99,7 +99,7 @@ Umnatha weFitSite
 └── Ilungele iitemplate zeziza (isifundo esilandelayo)
 ```
 
-## Into Esiyakhileyo Kwesi Sifundo
+## Into Esiyakhileyo Kwesi Sifundo {#what-we-built-this-lesson}
 
 - Ufakelo **olusebenzayo lweWordPress Multisite** kwimowudi ye-subdomain
 - **Ultimate Multisite ifakiwe** kwaye iqwalaselwe ngebrand yeFitSite

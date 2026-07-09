@@ -3,7 +3,7 @@ title: Întrebări frecvente
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Întrebări frecvente
+# Întrebări frecvente {#frequently-asked-questions}
 
 Iată câteva **Întrebări frecvente** care apar adesea în cererile de suport.
 

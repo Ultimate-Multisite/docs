@@ -4,19 +4,19 @@ title: פילטער - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filter: wu_magic_links_enabled
+# Filter: wu_magic_links_enabled {#filter-wumagiclinksenabled}
 
 Filter צי magic links זענען אַקטיווירט.
 
-## פּאַראַמעטערס
+## פּאַראַמעטערס {#parameters}
 
 | נאָמען | טיפּ | באַשרײַבונג |
 |------|------|-------------|
 | $enabled | `bool` | צי magic links זענען אַקטיווירט. |
 
-### זינט
+### זינט {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 דעפֿינירט אין [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L377) אויף שורה 377

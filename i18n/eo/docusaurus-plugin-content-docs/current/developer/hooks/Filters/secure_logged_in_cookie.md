@@ -4,11 +4,11 @@ title: Filtrilo - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtrilo: secure_logged_in_cookie
+# Filtrilo: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Filtras ĉu la ensalutinta kuketo estu sendata nur per HTTPS.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtras ĉu la ensalutinta kuketo estu sendata nur per HTTPS.
 | $user_id | `int` | Uzanto-ID. |
 | $secure | `bool` | Ĉu la aŭtentiga kuketo estu sendata nur per HTTPS. |
 
-### Ekde
+### Ekde {#since}
 
 - 3.1.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) ĉe linio 91

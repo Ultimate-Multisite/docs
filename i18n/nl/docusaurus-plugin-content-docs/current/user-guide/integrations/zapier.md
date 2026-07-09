@@ -3,7 +3,7 @@ title: Zapier-integratie
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite integreren met Zapier
+# Ultimate Multisite integreren met Zapier {#integrating-ultimate-multisite-with-zapier}
 
 In een van de artikelen bespraken we [Webhooks](webhooks.md) en hoe ze kunnen worden gebruikt om te integreren met applicaties van derden.
 
@@ -15,7 +15,7 @@ Je kunt **Triggers** maken die worden geactiveerd wanneer er gebeurtenissen plaa
 
 Dit is mogelijk omdat **de triggers** en acties van **Ultimate Multisite Zapier** worden aangedreven door de [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Hoe te beginnen
+## Hoe te beginnen {#how-to-start}
 
 Zoek eerst naar Ultimate Multisite in de Zapier-applijst. Je kunt ook op [deze link](https://zapier.com/apps/wp-ultimo/integrations) klikken.
 
@@ -51,7 +51,7 @@ Vul in het URL-veld de volledige URL van je netwerk in, inclusief het protocol (
 
 Klik op de knop **Ja, doorgaan** om door te gaan naar de volgende stap. Als alles goed werkt, zou je begroet moeten worden door je nieuwe verbonden account! Klik op **Doorgaan** om een nieuwe trigger te maken.
 
-## Hoe je een nieuwe Trigger maakt
+## Hoe je een nieuwe Trigger maakt {#how-to-create-a-new-trigger}
 
 Nu je account is verbonden, kun je beschikbare gebeurtenissen zien. Laten we voor deze tutorial de gebeurtenis **payment_received** kiezen.
 
@@ -67,7 +67,7 @@ In deze fase test Zapier of je Zap **de specifieke payload voor die gebeurtenis 
 
 In onze tutorial werd de test **succesvol voltooid** en werd voorbeeldinformatie van de payload geretourneerd. Deze voorbeeldinformatie is nuttig om ons te begeleiden bij het maken van acties. Je trigger is nu gemaakt en klaar om te worden verbonden met andere applicaties.
 
-## Hoe je Acties maakt
+## Hoe je Acties maakt {#how-to-create-actions}
 
 Acties gebruiken informatie uit andere triggers om nieuwe items in je netwerk aan te maken.
 
@@ -79,7 +79,7 @@ In de volgende stap maak je je authenticatie aan, net zoals we deden in **Hoe te
 
 ![Authenticatie selecteren voor de Zapier-actie](/img/admin/webhooks-list.png)
 
-### De Actie instellen
+### De Actie instellen {#setting-up-the-action}
 
 Dit is de **hoofdstap van de actie** en hier zijn de zaken iets anders. De eerste informatie die je kiest is het **Item**. Item is het **informatiemodel** van je netwerk, zoals **Klanten, Betalingen, Sites, E-mails** en andere.
 

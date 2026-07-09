@@ -4,11 +4,11 @@ title: Toiming - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Toiming: set_logged_in_cookie
+# Toiming: set_logged_in_cookie {#action-setloggedincookie}
 
 Käivitub vahetult enne sisselogitud kasutaja autentimisküpsise määramist.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Käivitub vahetult enne sisselogitud kasutaja autentimisküpsise määramist.
 | $scheme | `string` | Authentication scheme. Default 'logged_in'. |
 | $token | `string` | User's session token to use for this cookie. |
 
-### Alates
+### Alates {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) real 141

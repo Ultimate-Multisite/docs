@@ -3,9 +3,9 @@ title: د سازګارو پای‌ټکو لپاره وروستی AI نښلوون
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector لپاره د Compatible Endpoints بدلونونو ثبت
+# Ultimate AI Connector لپاره د Compatible Endpoints بدلونونو ثبت {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — په 2026-04-24 خپور شو
+## Version 2.0.0 — په 2026-04-24 خپور شو {#version-200--released-on-2026-04-24}
 
 * نوی: د څو چمتوکوونکو ملاتړ — څو AI پای‌ټکي تنظیم کړئ او غوښتنې د چمتوکوونکو ترمنځ له اتومات بدیل سره ولېږدوئ.
 * سمون: د څو چمتوکوونکو SDK ادغام د سمو چمتوکوونکي پېژندونکو، د نوم‌لیکنې URLونو، او د هر چمتوکوونکي لپاره د HTTP فلټر محدودولو سره.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * سمون: هغه بندوونکې HTTP غوښتنه له منځه یووړل شوه چې د هرې پاڼې په پورته کېدو کې چلېده.
 * ښه شوی: د GitHub Actions کاري بهیرونه Node.js 24 ته لوړ شول.
 
-## Version 1.0.0 — لومړنی خپرونکیمیلو.
+## Version 1.0.0 — لومړنی خپرونکیمیلو. {#version-100--initial-release}

@@ -3,7 +3,7 @@ title: Loga Athruithe Díoltóra Fearainn
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Loga Athruithe Domain Seller
+# Loga Athruithe Domain Seller {#domain-seller-changelog}
 
 Leagan 1.3.0 - Eisithe ar 2026-06-02
 - Nua: Cuireadh rabhadh network-admin leis nuair a éiríonn iarmhéid athdhíoltóra HostAfrica ró-íseal
@@ -134,20 +134,20 @@ Leagan 1.0.0 - Eisithe ar 2025-09-28
 * **Ceartaithe:** Gach cód dímholta v1 nuashonraithe go caighdeáin v2
 * **Bainte:** Comhoiriúnacht oidhreachta v1 (athrú bristeach)
 
-### Leaganacha Roimhe Seo (Oidhreacht v1)
+### Leaganacha Roimhe Seo (Oidhreacht v1) {#previous-versions-v1-legacy}
 
-### Leagan 0.0.3 - 20/08/2019
+### Leagan 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Ceartaithe: Neamh-chomhoiriúnacht le Groundhogg CRM
 * Nóta: Ba é seo an t-eisiúint dheireanach a bhí comhoiriúnach le v1
 
-### Leagan 0.0.2 - 07/12/2018
+### Leagan 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Ceartaithe: Baineadh an réimse Eochair Cheadúnais
 * Ceartaithe: Cluaisíní plean in easnamh nuair atá an breiseán gné gníomhach
 * Feabhsaithe: Cuireadh cnaipe scipeála leis an réimse clárúcháin
 
-### Leagan 0.0.1 - Eisiúint Tosaigh
+### Leagan 0.0.1 - Eisiúint Tosaigh {#version-001---initial-release}
 
 * Comhtháthú bunúsach OpenSRS do WP Ultimo v1
 * Cuardach agus clárú simplí fearainn

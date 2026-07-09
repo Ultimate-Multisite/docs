@@ -3,13 +3,13 @@ title: מדריך אינטגרציה
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# מדריך אינטגרציה
+# מדריך אינטגרציה {#integration-guide}
 
 מדריך זה מכסה דפוסי אינטגרציה נפוצים עם Ultimate Multisite, כולל חיבור לשירותים חיצוניים, בניית שערי תשלום מותאמים אישית וטיפול ב-webhooks.
 
 לתשתית דיירים מבודדת, ראו [אינטגרציית Multi-Tenancy](./multi-tenancy) להנחיות על אתחול דייר ריבוני, אימות הגירה, SSO ופירוק.
 
-## אינטגרציית CRM
+## אינטגרציית CRM {#crm-integration}
 
 סנכרנו נתוני לקוחות אל ה-CRM שלכם כאשר לקוחות חדשים נרשמים:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## אינטגרציית אנליטיקה
+## אינטגרציית אנליטיקה {#analytics-integration}
 
 עקבו אחר אירועים עסקיים מרכזיים לאורך מחזור חיי הלקוח:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## השלבים הבאים
+## השלבים הבאים {#next-steps}
 
 - [פיתוח שער מותאם אישית](./custom-gateway) — בנו שער תשלום משלכם
 - [טיפול ב-Webhook](./webhooks) — צרו נקודות קצה webhook מותאמות אישית

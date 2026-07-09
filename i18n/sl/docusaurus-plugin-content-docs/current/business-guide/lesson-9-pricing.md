@@ -3,17 +3,17 @@ title: 'Lekcija 9: Oblikovanje cen za dobiček'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcija 9: Oblikovanje cen za dobiček
+# Lekcija 9: Oblikovanje cen za dobiček {#lesson-9-pricing-for-profit}
 
 V lekciji 5 smo določili začetne cene za pakete FitSite. Zdaj bomo izpopolnili cenovno strategijo s tehnikami, ki povečajo prihodke, spodbujajo nadgradnje in zmanjšajo odlive.
 
-## Kje smo ostali
+## Kje smo ostali {#where-we-left-off}
 
 FitSite ima vzpostavljene pakete, predloge, zaključek nakupa, znamčenje in uvajanje. Začetne cene so bile $49/$99/$199 na mesec. Zdaj bomo poskrbeli, da bodo te cene delale več.
 
-## Načela oblikovanja cen za nišne platforme
+## Načela oblikovanja cen za nišne platforme {#pricing-principles-for-niche-platforms}
 
-### Ceno določajte glede na vrednost, ne strošek
+### Ceno določajte glede na vrednost, ne strošek {#price-on-value-not-cost}
 
 Vaši stroški gostovanja so lahko $5–$15 na spletno mesto stranke. To ne pomeni, da bi morala biti vaša cena $20. Ne prodajate gostovanja. Prodajate:
 
@@ -24,7 +24,7 @@ Vaši stroški gostovanja so lahko $5–$15 na spletno mesto stranke. To ne pome
 
 Ceno določite na podlagi vrednosti, ki jo zagotavljate, ne stroška, ki ga imate z zagotavljanjem.
 
-### Sidrajte ceno na alternative
+### Sidrajte ceno na alternative {#anchor-to-alternatives}
 
 Ko lastnik fitnes studia ocenjuje FitSite, ga primerja z:
 
@@ -34,7 +34,7 @@ Ko lastnik fitnes studia ocenjuje FitSite, ga primerja z:
 
 Pri $49–$199/mesec je FitSite cenejši od razvijalca, zmogljivejši od splošnih graditeljev in neskončno boljši kot brez spletnega mesta.
 
-## Uvedba cenovnih različic
+## Uvedba cenovnih različic {#implementing-price-variations}
 
 Letno obračunavanje spodbuja zavezanost in zmanjšuje odlive. Pojdite na zavihek **Price Variations** pri vsakem paketu in dodajte letne možnosti:
 
@@ -46,12 +46,12 @@ Letno obračunavanje spodbuja zavezanost in zmanjšuje odlive. Pojdite na zavihe
 
 V obrazec za zaključek nakupa dodajte polje **Period Selection**, da lahko stranke preklapljajo med mesečnim in letnim obračunavanjem. Glejte [Obrazci za zaključek nakupa](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Zakaj letne cene delujejo
+### Zakaj letne cene delujejo {#why-annual-pricing-works}
 
 - **Za vas**: Denar vnaprej, nižji odliv (stranke, ki plačajo letno, manj verjetno prekličejo sredi obdobja)
 - **Zanje**: Resnični prihranki, predvidljivost proračuna
 
-## Pristojbine za nastavitev
+## Pristojbine za nastavitev {#setup-fees}
 
 Razmislite o enkratni pristojbini za nastavitev pri paketih, ki vključujejo ročno konfiguracijo:
 
@@ -61,7 +61,7 @@ Razmislite o enkratni pristojbini za nastavitev pri paketih, ki vključujejo ro�
 
 Pristojbine za nastavitev konfigurirajte v razdelku cen pri vsakem paketu. Za podrobnosti glejte [Ustvarjanje vašega prvega naročniškega izdelka](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Preizkusna obdobja
+## Preizkusna obdobja {#trial-periods}
 
 Ponudba preizkusa zmanjša trenje pri prijavi, vendar uvaja tveganje, da se uporabnik ne pretvori v plačnika. Za FitSite:
 
@@ -70,11 +70,11 @@ Ponudba preizkusa zmanjša trenje pri prijavi, vendar uvaja tveganje, da se upor
 
 Preizkus konfigurirajte v razdelku cen paketa Starter tako, da omogočite preklopnik **Offer Trial** in nastavite trajanje na 7 dni.
 
-### Kako poskrbeti, da se preizkusi pretvorijo
+### Kako poskrbeti, da se preizkusi pretvorijo {#making-trials-convert}
 
 Preizkus deluje le, če stranka v preizkusnem obdobju izkusi vrednost. Vaše zaporedje uvajanja (lekcija 8) je tu ključno -- pozdravna e-poštna sporočila morajo biti časovno usklajena tako, da spodbudijo vključenost znotraj 7-dnevnega okna.
 
-## Kode za popust
+## Kode za popust {#discount-codes}
 
 Ustvarite strateške kode za popust za posebne namene:
 
@@ -88,7 +88,7 @@ Za ustvarjanje pojdite na **Ultimate Multisite > Discount Codes**. Za celoten vo
 Popusti naj bodo strateška orodja, ne stalnica. Če vsak dobi popust, to ni popust -- to je vaša prava cena. Uporabljajte jih za določene kampanje, priporočila in časovno omejene promocije.
 :::
 
-## Obravnava davkov
+## Obravnava davkov {#tax-handling}
 
 Če poslujete v jurisdikciji, ki zahteva pobiranje davkov:
 
@@ -98,7 +98,7 @@ Popusti naj bodo strateška orodja, ne stalnica. Če vsak dobi popust, to ni pop
 
 Za podrobno konfiguracijo glejte [Obravnava davkov](/user-guide/payment-gateways/tax-handling). Če strankam služite mednarodno, razmislite o [VAT dodatku](/addons/vat) za skladnost v EU.
 
-## Pregled vaših cen
+## Pregled vaših cen {#reviewing-your-pricing}
 
 Po zagonu cene ponovno preglejte vsako četrtletje. Spremljajte:
 
@@ -107,7 +107,7 @@ Po zagonu cene ponovno preglejte vsako četrtletje. Spremljajte:
 - **Odliv po paketu**: Če letne stranke odhajajo manj, močneje spodbujajte letno obračunavanje
 - **Cene konkurentov**: Koliko zaračunavajo alternative? Ste pravilno pozicionirani?
 
-## Omrežje FitSite do zdaj
+## Omrežje FitSite do zdaj {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Pripravljeno za zagon (naslednja lekcija)
 ```
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Letne cene** z 20-odstotnim popustom za spodbujanje zavezanosti
 - **Nastavitvene pristojbine** na višjih paketih za pokritje uvajalnega dela

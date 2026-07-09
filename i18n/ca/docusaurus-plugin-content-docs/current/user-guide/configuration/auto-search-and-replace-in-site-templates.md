@@ -3,7 +3,7 @@ title: Cerca i substitució automàtiques a les plantilles del lloc
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Cerca i substitució automàtiques a les plantilles de lloc (v2)
+# Cerca i substitució automàtiques a les plantilles de lloc (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Aquest tutorial requereix WP UItimo versió 2.x.**_
 
@@ -17,7 +17,7 @@ Aleshores, el teu client podrà omplir aquest camp durant el registre.
 
 Ultimate Multisite substituirà automàticament els marcadors de posició per les dades proporcionades pel client.
 
-## **Resoldre el problema de la "plantilla plena de marcadors de posició"**
+## **Resoldre el problema de la "plantilla plena de marcadors de posició"** {#solving-the-template-full-of-placeholders-problem}
 
 Tot això està molt bé, però ens trobem amb un problema poc atractiu: ara les nostres plantilles de lloc —que poden visitar els nostres clients— són plenes de marcadors de posició lletjos que no diuen gaire.
 

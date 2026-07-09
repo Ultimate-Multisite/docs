@@ -3,19 +3,19 @@ title: 'Leksjon 10: Lanseringsdagen'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leksjon 10: Lanseringsdagen
+# Leksjon 10: Lanseringsdagen {#lesson-10-launch-day}
 
 Alt er bygget. Før du åpner dørene, går denne leksjonen gjennom sjekklisten før lansering for å sikre at ingenting er ødelagt, mangler eller er pinlig.
 
-## Hvor vi stoppet
+## Hvor vi stoppet {#where-we-left-off}
 
 FitSite har nå konfigurerte maler, planer, kasse, merkevarebygging, onboarding og prissetting. Nå skal vi verifisere at alt fungerer, og gå live.
 
-## Sjekkliste før lansering
+## Sjekkliste før lansering {#pre-launch-checklist}
 
 Gå gjennom hvert punkt. Ikke hopp over noe.
 
-### Plattforminfrastruktur
+### Plattforminfrastruktur {#platform-infrastructure}
 
 - [ ] Hosting er stabil og presterer godt under belastning
 - [ ] Wildcard SSL er aktiv, og alle underdomener kjører over HTTPS
@@ -23,7 +23,7 @@ Gå gjennom hvert punkt. Ikke hopp over noe.
 - [ ] Sikkerhetskopiering er konfigurert og testet (gjenopprett minst én for å verifisere)
 - [ ] Overvåking er på plass – du vil vite det hvis plattformen går ned
 
-### Maler
+### Maler {#templates}
 
 - [ ] Alle tre malene lastes korrekt på nye nettsteder
 - [ ] Plassholder-innholdet er nyttig og fritt for skrivefeil
@@ -32,7 +32,7 @@ Gå gjennom hvert punkt. Ikke hopp over noe.
 - [ ] Sidens lastetid er akseptabel (test med et verktøy som GTmetrix eller PageSpeed Insights)
 - [ ] Ingen ødelagte lenker eller manglende assets på noen mal
 
-### Planer og produkter
+### Planer og produkter {#plans-and-products}
 
 - [ ] Alle tre planene er aktive og synlige
 - [ ] Planbeskrivelsene er nøyaktige og nisjespesifikke
@@ -42,7 +42,7 @@ Gå gjennom hvert punkt. Ikke hopp over noe.
 - [ ] Order bumps vises korrekt under kassen
 - [ ] Begrensninger for plugin og tema håndheves korrekt per plan
 
-### Kasseflyt
+### Kasseflyt {#checkout-flow}
 
 - [ ] Fullfør en komplett testregistrering for hver plan (bruk testbetalingsmodus)
 - [ ] Valg av mal viser de korrekte malene per plan
@@ -52,7 +52,7 @@ Gå gjennom hvert punkt. Ikke hopp over noe.
 - [ ] Kunden kan logge inn på sitt nye nettsted umiddelbart
 - [ ] Rabattkoder fungerer korrekt
 
-### Merkevarebygging
+### Merkevarebygging {#branding}
 
 - [ ] Innloggingssiden viser FitSite-merkevarebygging
 - [ ] Admin-dashboardet viser FitSite-merkevarebygging
@@ -60,7 +60,7 @@ Gå gjennom hvert punkt. Ikke hopp over noe.
 - [ ] Fakturaer vises korrekt med dine forretningsdetaljer
 - [ ] Markedsføringssiden er live og lenker til kasse-skjemaet
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Quick Start-widget vises på nye kundedashboards
 - [ ] Alle Quick Start-lenker peker til de korrekte sidene
@@ -68,7 +68,7 @@ Gå gjennom hvert punkt. Ikke hopp over noe.
 - [ ] Kunnskapsbaseartikler er publisert og tilgjengelige
 - [ ] Kontosiden viser riktig planinformasjon og oppgraderingsalternativer
 
-### Juridisk og forretning
+### Juridisk og forretning {#legal-and-business}
 
 - [ ] Tjenestevilkår er publisert og lenket fra kassen
 - [ ] Personvernerklæring er publisert og tilgjengelig
@@ -77,11 +77,11 @@ Gå gjennom hvert punkt. Ikke hopp over noe.
 - [ ] Betalingsgatewayen er i live-modus (ikke testmodus)
 - [ ] Skattkonfigurasjonen er korrekt for din jurisdiksjon
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Vurder en to-fase lansering:
 
-### Fase 1: Soft Launch
+### Fase 1: Soft Launch {#phase-1-soft-launch}
 
 Inviter 5–10 eier av treningsstudioer til å registrere seg før den offentlige lanseringen. Dette er dine beta-kunder. Tilby dem en betydelig rabatt (50 % livstid, eller 3 måneder gratis) i bytte mot:
 
@@ -91,7 +91,7 @@ Inviter 5–10 eier av treningsstudioer til å registrere seg før den offentlig
 
 Dette gir deg ekte kunde-tilbakemeldinger og live nettsteder å vise frem før du åpner for publikum.
 
-### Fase 2: Public Launch
+### Fase 2: Public Launch {#phase-2-public-launch}
 
 Når tilbakemeldingene fra soft launch er integrert:
 
@@ -100,7 +100,7 @@ Når tilbakemeldingene fra soft launch er integrert:
 - Begynn kundeanskaffelse (Leksjon 11)
 - Annonser på relevante bransjekanaler for fitness
 
-## Tiltak på lanseringsdagen
+## Tiltak på lanseringsdagen {#launch-day-actions}
 
 På dagen du går offentlig:
 
@@ -110,7 +110,7 @@ På dagen du går offentlig:
 4. **Vær tilgjengelig** – dine første ekte kunder kan trenge hjelp, og rask respons bygger tillit
 5. **Feire kort** – og gå deretter tilbake til arbeidet
 
-## Hva kan gå galt
+## Hva kan gå galt {#what-can-go-wrong}
 
 Vær forberedt på:
 
@@ -120,7 +120,7 @@ Vær forberedt på:
 - **Ytelse under belastning**: Hvis du får et trafikkhopp, vit hvordan du skal skalere hostingen din
 - **Forvirring hos kunden**: Ha kunnskapsbasen og supportkanalene klare
 
-## FitSite Network så langt
+## FitSite Network så langt {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Hva vi lærte i denne leksjonen
+## Hva vi lærte i denne leksjonen {#what-we-built-this-lesson}
 
 - **En omfattende sjekkliste før lansering** som dekker infrastruktur, innhold, betalinger og juss
 - **En soft launch-strategi** for å få ekte tilbakemeldinger før du går offentlig

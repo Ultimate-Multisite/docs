@@ -3,15 +3,15 @@ title: 'Összehasonlító tanítás 14: Mi következik'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Tanulmány 14: Mi Következik?
+# Tanulmány 14: Mi Következik? {#lesson-14-what-comes-next}
 
 Egy teljes körű, piaci rétegrendszerű (niche) weboldalt építettél a nulla ponttól. A FitSite működik, fitness stúdióknak szolgálja ki a piacot, és generálja az előfizetős bevételt. Ez az utolsó tanulmány arra néz, hogy mi következik.
 
-## Hol Maradtunk?
+## Hol Maradtunk? {#where-we-left-off}
 
 A FitSite egy működő vállalkozás, amelynek ügyfelei, működési folyamatai és növekedési potenciálja van. Most elgondolkodunk arról, mi a következő lépés.
 
-## A Teljes FitSite Hálózatának Áttekintése
+## A Teljes FitSite Hálózatának Áttekintése {#the-complete-fitsite-network}
 
 Íme minden, amit 14 tanulmány alatt építettünk:
 
@@ -46,11 +46,11 @@ FitSite Hálózat (Teljes)
     └── Csapatépítő roadmap
 ```
 
-## Opció 1: Mélyebbre Merülni a Niszádba
+## Opció 1: Mélyebbre Merülni a Niszádba {#option-1-go-deeper-in-your-niche}
 
 Mielőtt új piacokra terjednél, érdemes mélyebbre merülni a fitness területén:
 
-### Al-niszák
+### Al-niszák {#sub-niches}
 
 - **Yoga stúdiók** – meditációra, retreatra és workshopokra specializált tematematúrák
 - **CrossFit boxok** – WOD (Workout of the Day) követése, versenyeredmények, közösségi funkciók
@@ -59,7 +59,7 @@ Mielőtt új piacokra terjednél, érdemes mélyebbre merülni a fitness terüle
 
 Minden al-niszának saját tematematúrája lehet, és potenciálisan saját márkája is, mindegyik ugyanazon Ultimate Multisite hálózat alatt működik.
 
-### Prémium Funkciók
+### Prémium Funkciók {#premium-features}
 
 Építs olyan funkciókat, amelyeket a fitness stúdióknak extra pénzért fizetnek:
 
@@ -68,14 +68,14 @@ Minden al-niszának saját tematematúrája lehet, és potenciálisan saját má
 - **Fitness blog tematematúrák** – előzetesen kialakított tartalomstruktúrák fitness tartalommarketinghez
 - **Szerealt média integráció** – automatikus bejegyzések az órák programjáról és frissítésekről
 
-### Geografikus Terjedés
+### Geografikus Terjedés {#geographic-expansion}
 
 Ha helyileg kezdtél, terjedj ki:
 
 - Más városokba az országodban
 - Más országokba (használj az Ultimate Multisite [lokalizációs funkcióit](/user-guide/localization/translating) több nyelv támogatására)
 
-## Opció 2: Terjedni Közeli Niszákra
+## Opció 2: Terjedni Közeli Niszákra {#option-2-expand-to-adjacent-niches}
 
 Az eljárás, amit a fitness stúdiókkal követted, bármilyen piaci rétegrendszerre alkalmas. A második niszád könnyebb, mert már rendelkezésed van:
 
@@ -83,7 +83,7 @@ Az eljárás, amit a fitness stúdiókkal követted, bármilyen piaci rétegrend
 - Az operációs tapasztalattal
 - Egy bizonyított playbook-kal
 
-### A Fitnesshez Közeli Niszák
+### A Fitnesshez Közeli Niszák {#adjacent-niches-to-fitness}
 
 - **Wellness és spa** – masszérólógusok, napspa-k, wellness központok
 - **Sportklubok** – amatőr sportcsapatok, ligák, szabadidős klubok
@@ -91,7 +91,7 @@ Az eljárás, amit a fitness stúdiókkal követted, bármilyen piaci rétegrend
 
 Ezeknek az iparágaknak közös közönségük van a fitnessszal, így a marketinged és partnerségeid átültethetők.
 
-### Teljesen Új Niszák
+### Teljesen Új Niszák {#completely-new-niches}
 
 Alkalmazd a 2. Tanulmányból származó keretrendszert bármilyen niszára:
 
@@ -108,7 +108,7 @@ Minden új niszának szüksége van:
 
 A platform infrastruktúrája, az számlázása és az üzemeltetési folyamatai változatlanok.
 
-## Opció 3: Platformok Platformjának Építése
+## Opció 3: Platformok Platformjának Építése {#option-3-build-a-platform-of-platforms}
 
 Skálázáskor több niszás márkát is egyetlen Ultimate Multisite hálózat alatt tudsz működtetni:
 
@@ -118,11 +118,11 @@ Skálázáskor több niszás márkát is egyetlen Ultimate Multisite hálózat a
 
 Minden márkának saját tematematúrája, csomagja és marketingje van, de az infrastruktúrájukat, számlázásukat és üzemeltetési folyamataikat megosztják. Itt válik erőteljesnek az Ultimate Multisite gazdasági elmélete – egy platform, sok vertikális terület.
 
-### Multi-Hálózat
+### Multi-Hálózat {#multi-network}
 
 A teljes szétválasztás érdekében a [Multi-Network addon](/addons/multinetwork)-t érdemes megfontolni, amely lehetővé teszi, hogy több WordPress hálózatot is egyetlen telepítésből vezessen.
 
-## Opció 4: Eladni a Vállalkozást
+## Opció 4: Eladni a Vállalkozást {#option-4-sell-the-business}
 
 Egy piaci rétegrendszerű weboldal platform, amely előfizetős bevételt, alacsony churn-t és egyértelmű piaci pozíciót biztosít, értékes eszköz. A SaaS vállalkozások általában 3-5x értékben adódnak el az éves bevételük alapján.
 
@@ -134,7 +134,7 @@ Egy FitSite 200 ügyféltől 89 ARPU-val:
 
 Ez nem garantált kimenetel, de egy jól működtetett niszás platform számára egy reális forgatókönyv.
 
-## Amit Megtanultál
+## Amit Megtanultál {#what-you-have-learned}
 
 Ez a kurzus egy ismételhető folyamatot tanította neked:
 
@@ -150,7 +150,7 @@ Ez a kurzus egy ismételhető folyamatot tanította neked:
 
 A niszza a stratégia. A platform az eszköz. Az Ultimate Multisite teszi lehetővé az eszközt. A niszza megértése ad neki az értéket.
 
-## Kezdj Építeni
+## Kezdj Építeni {#start-building}
 
 Ha követted a FitSite-ot, egy működő platformod van. Ha elolvastad, hogy saját niszádra keresed, térj vissza a [2. Tanulmány: A Niszza Kiválasztása](lesson-2-picking-your-niche) és kezdd el a folyamatot a választott iparágod számára.
 

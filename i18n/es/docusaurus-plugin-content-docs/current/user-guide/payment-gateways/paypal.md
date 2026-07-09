@@ -3,7 +3,7 @@ title: Configuración de PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configuración del gateway de PayPal (v2)
+# Configuración del gateway de PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
@@ -13,13 +13,13 @@ Al igual que Stripe, PayPal se usa ampliamente para pagos en línea, especialmen
 
 Ten en cuenta que necesitas tener una **cuenta Business de PayPal** para obtener la credencial de API necesaria para esta integración.
 
-## Habilitar PayPal en tu red
+## Habilitar PayPal en tu red {#enabling-paypal-on-your-network}
 
 Para habilitar PayPal como método de pago disponible en tu red, ve a la pestaña **Ultimate Multisite > Settings > Payments** y marca la casilla junto a PayPal.
 
 ![Habilitar PayPal en los gateways de pago activos](/img/config/settings-payment-gateways.png)
 
-## Usar el asistente de configuración guiado
+## Usar el asistente de configuración guiado {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 añade un asistente guiado de configuración de PayPal a los ajustes del gateway de pago. Después de habilitar PayPal, usa el asistente en **Ultimate Multisite > Settings > Payments** para elegir cómo quieres conectar el gateway y confirmar qué credenciales siguen siendo necesarias antes de guardar.
 
@@ -30,7 +30,7 @@ El asistente admite dos rutas de configuración:
 
 Si no ves la opción OAuth en el asistente, completa el flujo de entrada manual de credenciales a continuación. El gateway funciona con las mismas credenciales de API de PayPal Business que las versiones anteriores de Ultimate Multisite 2.x.
 
-## Obtener las credenciales de API de PayPal
+## Obtener las credenciales de API de PayPal {#getting-the-paypal-api-credentials}
 
 Una vez que PayPal esté habilitado como gateway de pago, necesitarás rellenar los campos de PayPal API **Username**, PayPal API **Password** y PayPal API **Signature**.
 

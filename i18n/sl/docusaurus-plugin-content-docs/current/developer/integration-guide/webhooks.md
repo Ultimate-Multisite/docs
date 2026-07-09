@@ -3,11 +3,11 @@ title: Obravnava webhookov
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Obravnavanje webhookov
+# Obravnavanje webhookov {#webhook-handling}
 
 Ustvarite prilagojene končne točke webhookov za prejemanje dogodkov iz zunanjih storitev in sinhronizacijo podatkov z Ultimate Multisite.
 
-## Prilagojena končna točka webhooka
+## Prilagojena končna točka webhooka {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Varnostni vidiki
+## Varnostni vidiki {#security-considerations}
 
 - Vedno preverite podpise webhookov z uporabo HMAC ali skupne skrivnosti
 - Uporabite `permission_callback` na svoji REST poti — v produkciji ga nikoli ne nastavite na `__return_true`

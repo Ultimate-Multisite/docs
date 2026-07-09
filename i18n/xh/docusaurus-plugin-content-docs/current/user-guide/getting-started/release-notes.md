@@ -3,9 +3,9 @@ title: Amanqaku okukhutshwa
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Amanqaku okukhutshwa
+# Amanqaku okukhutshwa {#release-notes}
 
-## Inguqulelo 2.13.0 — Ikhutshwe nge-2026-06-05
+## Inguqulelo 2.13.0 — Ikhutshwe nge-2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Entsha: Kongezwe inkxaso ye-sovereign-tenant ye-account yomthengi, checkout, billing, isayithi, i-invoice, ukutshintsha itemplate, kunye neendlela ze-domain mapping ukuze iinethiwekhi ze-tenant zikwazi ukubuyisela abathengi kwisayithi ephambili ngezenzo ezilawulwayo.
 - Entsha: Kongezwe uhlolo lweziqinisekiso zohlaziyo kumalungu aphindaphindwayo ukuze ii-gateway zikwazi ukukhubaza uhlaziyo oluzenzekelayo xa isivumelwano se-billing esigciniweyo, subscription, okanye vault token ingekho.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Lungiso: Uhlaziyo lobulungu, ukuboniswa kokuphelelwa lixesha, kunye neemeko ezikhethekileyo zokuqokelelwa kwentlawulo ngoku ziphepha ukuphelelwa lixesha kwangoko, ukuwa kwenkqubo, okanye iintlawulo ezifunekayo eziphosiweyo.
 - Kuphuculwe: Ukuhambelana kwe-WordPress kuvavanywe ukuya ku-7.0, ii-assets ze-Vue zemveliso zakhiwe ngokutsha kwimithombo ye-npm, kwaye ukugubungela kwe-Cypress end-to-end ngoku kuvavanya iindlela ezininzi ze-checkout, setup, SSO, kunye nee-gateway.
 
-## Inguqulelo 2.12.0 — Ikhutshwe nge-2026-05-15
+## Inguqulelo 2.12.0 — Ikhutshwe nge-2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Entsha: Kongezwe i-Hostinger (hPanel) njengomboneleli we-host oxhaswayo onodityaniso lwe-domain mapping
 - Entsha: I-Site Exporter ngoku iphatha iipakethe zokungenisa zenethiwekhi ukuze kube lula ukubuyisela iisayithi kwinethiwekhi yonke
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Lungiso: I-Site Exporter CLI ngoku igcina ukhetho oluchanekileyo lwesayithi yenethiwekhi engagqibekanga
 - Kuphuculwe: Kususiwe i-wp-cli ebifakwe ngaphakathi kwipakethe ye-plugin, kuncitshiswa ubungakanani be-plugin
 
-## Inguqulelo 2.11.0 — Ikhutshwe nge-2026-05-11
+## Inguqulelo 2.11.0 — Ikhutshwe nge-2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Entsha: Ukuthunyelwa ngaphandle kweesayithi ngoku kupakisha i-`index.php` eziqalisa ngokwayo ukuze i-ZIP ifakelwe kwi-host entsha ngaphandle kofakelo olwahlukileyo lwe-plugin.
 - Entsha: Ukuthunyelwa ngaphandle kwenethiwekhi kuvumela abalawuli ukuba bathumele ngaphandle zonke ii-subsite kwindawo enye yogcino ukusuka kwiphepha lolawulo le-Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Entsha: Umhleli wefom ye-checkout uyazisa xa imveliso yongezwa ngaphandle kokuba kukho intsimi efunekayo emiseliweyo.
 - Entsha: I-tab yezicwangciso ze-Import/Export ngoku ichaza ngokucacileyo umda wayo kwaye iqhagamshela ngqo kwisixhobo se-Site Export.
 
-## Inguqulelo 2.10.0 — Ikhutshwe nge-2026-05-05
+## Inguqulelo 2.10.0 — Ikhutshwe nge-2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Entsha: I-wizard ekhokelwayo yokuseta ye-PayPal yokungenisa iziqinisekiso ngesandla kunye nesango leflegi ye-OAuth ukuze kube lula ukumiselwa kwe-gateway.
 - Entsha: Iphaneli yomthengi yokutshintsha itemplate iyilwe ngokutsha ngekhadi letemplate yangoku, igridi eqhubekayo, kunye neqhosha elithi **Seta kwakhona itemplate yangoku**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Lungiso: Indlela ye-SSO ehluziweyo iyahlonitshwa kuzo zonke iindlela zokungena.
 - Lungiso: Iinketho zesazisi sesayithi esingenanto zigcinwa xa kugcinwa.
 
-## Inguqulelo 2.9.0 — Ikhutshwe nge-2026-04-30
+## Inguqulelo 2.9.0 — Ikhutshwe nge-2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Entsha: Ukuthunyelwa ngaphandle nokungenisa kwesayithi enye kongezwe phantsi kwe-**Izixhobo > Thumela ngaphandle & Ngenisa**.
 - Lungiso: Iifayile ze-ZIP ezithunyelwe ngaphandle ngoku zinikezelwa nge-endpoint yokukhuphela eqinisekisiweyo.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Lungiso: Ii-ID ze-tour zenziwe zafana zibe nee-underscore kwizitshixo zezicwangciso zomsebenzisi.
 - Kuphuculwe: I-ZipArchive ngoku isetyenziswa endaweni ye-Alchemy/Zippy ukuze kube nokuhambelana okungcono.
 
-## Inguqulelo 2.8.0 — Ikhutshwe nge-2026-04-29
+## Inguqulelo 2.8.0 — Ikhutshwe nge-2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Entsha: I-toggle ye-Enable Jumper yongezwe kwi-UI yeesethingi ze-Other Options.
 - Entsha: Ikholam ye-Status yongezwe kwitheyibhile yoluhlu lweefom ze-checkout.

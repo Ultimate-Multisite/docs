@@ -4,11 +4,11 @@ title: Isenzo - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Isenzo: wu_handle_customer_meta_fields
+# Isenzo: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Vumela abathuthukisi be-plugin ukuthi balondoloze idatha ye-meta ngezindlela ezahlukene uma kudingeka.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Vumela abathuthukisi be-plugin ukuthi balondoloze idatha ye-meta ngezindlela eza
 | $customer | `\Customer` | Into yekhasimende le-Ultimate Multisite. |
 | $checkout | `\Checkout` | Ikilasi le-checkout. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) emugqeni 1211

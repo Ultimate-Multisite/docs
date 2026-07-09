@@ -3,19 +3,19 @@ title: स्ट्राइप सेट अप गर्ने
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# स्ट्राइप गेटवे सेटअप गर्ने (v2)
+# स्ट्राइप गेटवे सेटअप गर्ने (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**महत्वपूर्ण नोट: यो लेख Ultimate Multisite संस्करण २.x मा आधारित छ।**_
 
 तपाईंले हाम्रो भुक्तानी सेटिङ पृष्ठमा चार तरिकाहरूमासम्म भुक्तानी सक्रिय गर्न सक्नुहुन्छ: Stripe, Stripe Checkout, PayPal र म्यानुअल (Manual)। यस लेखमा, हामी **Stripe** सँग कसरी एकीकृत गर्ने हेर्नेछौं।
 
-## स्ट्राइप सक्षम गर्ने
+## स्ट्राइप सक्षम गर्ने {#enabling-stripe}
 
 तपाईंको नेटवर्कमा उपलब्ध भुक्तानी गेटवेको रूपमा Stripe लाई सक्षम गर्न, **Ultimate Multisite > Settings > Payments** मा जानुहोस् र Active Payment Gateways खण्डमा **Stripe** वा **Stripe Checkout** को छेउमा रहेको टगल (toggle) मा टिक गर्नुहोस्।
 
 ![Active payment gateways मा Stripe सक्षम गर्ने](/img/config/settings-payment-gateways.png)
 
-### स्ट्राइप बनाम स्ट्राइप चेकआउट:
+### स्ट्राइप बनाम स्ट्राइप चेकआउट: {#stripe-vs-stripe-checkout}
 
 **Stripe:** यो विधिले चेकआउटको समय क्रेडिट कार्ड नम्बर राख्ने ठाउँ देखाउनेछ।
 
@@ -25,7 +25,7 @@ _**महत्वपूर्ण नोट: यो लेख Ultimate Multisite
 
 ![चेकआउटको समय स्ट्राइप चेकआउट पुनर्निर्देशन पृष्ठ](/img/config/settings-payment-gateways.png)
 
-### आफ्नो स्ट्राइप API keys प्राप्त गर्ने
+### आफ्नो स्ट्राइप API keys प्राप्त गर्ने {#setting-up-stripe-webhook}
 
 एक पटक Stripe लाई भुक्तानी गेटवेको रूपमा सक्षम गरिसकेपछि, तपाईंले **Stripe Publishable Key** र **Stripe Secret Key** का लागि फिल्डहरू भर्नुपर्नेछ। तपाईंले यो आफ्नो Stripe खातामा लगइन गरेर प्राप्त गर्न सक्नुहुन्छ।
 

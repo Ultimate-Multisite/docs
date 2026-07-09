@@ -3,13 +3,13 @@ title: 设置手动付款
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# 设置手动付款 (v2)
+# 设置手动付款 (v2) {#setting-up-manual-payments-v2}
 
 _**重要说明：本文适用于 Ultimate Multisite 版本 2.x。**_
 
 当 **Stripe** 或 **PayPal** 不适用于你的用户时，手动付款是一种向用户提供其他付款方式的方法。它可以是电汇或银行转账，也可以是你的用户在本地可用的任何其他付款方式。
 
-## 如何启用手动付款
+## 如何启用手动付款 {#how-to-enable-manual-payments}
 
 设置手动付款非常简单。你只需要在付款网关下启用它，并填写关于用户应如何发送付款的详细说明。
 
@@ -31,7 +31,7 @@ _**重要说明：本文适用于 Ultimate Multisite 版本 2.x。**_
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## 确认手动付款
+## 确认手动付款 {#confirming-manual-payments}
 
 要确认手动付款，请前往左侧栏中的 **付款** 菜单。在那里你可以看到你的网络上的所有付款及其详细信息，包括它们的 **状态**。手动付款将始终保持 **待处理** 状态，直到你手动更改它。
 

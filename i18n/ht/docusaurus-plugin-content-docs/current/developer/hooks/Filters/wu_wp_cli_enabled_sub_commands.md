@@ -4,11 +4,11 @@ title: Filtè - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filtè: wu_wp_cli_enabled_sub_commands
+# Filtè: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 Filtre ki sub_commands aktive pou antite sa a.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Non | Tip | Deskripsyon |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtre ki sub_commands aktive pou antite sa a.
 | $command_base | `string` | Baz yo itilize nan kòmand lan touswit apre rasin lan. |
 | $this | `\Base_Manager` | Enstans objè a. |
 
-### Depi
+### Depi {#since}
 
 - 2.0.0
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) nan liy 198

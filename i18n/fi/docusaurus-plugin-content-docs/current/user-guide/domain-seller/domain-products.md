@@ -3,11 +3,11 @@ title: Verkkotunnukset ja hinnat
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Verkkotunnus-tuotteet ja hinnoittelu
+# Verkkotunnus-tuotteet ja hinnoittelu {#domain-products-and-pricing}
 
 Verkkotunnus-tuotteet ovat tapa hallita hinnoittelua, TLD:itä (top-level domains), WHOIS-tietosuojaa ja palveluntarjoajien valintaa. Jokainen verkkotunnus-tuote on perus Multisite Ultimate -tuote, jolle lisätään erillinen **Domain Settings** -välilehti.
 
-## Verkkotunnus-tuotteen luominen
+## Verkkotunnus-tuotteen luominen {#creating-a-domain-product}
 
 1. Mene kohtaan **Network Admin › Ultimate Multisite › Products**.
 2. Napsauta **Add New** (Lisää uusi).
@@ -17,13 +17,13 @@ Verkkotunnus-tuotteet ovat tapa hallita hinnoittelua, TLD:itä (top-level domain
 
 Verkkotunnus-tuotteet näkyvät tuotelistalla purppuranvärisellä **Domain**-merkinnällä ja niitä voi suodattaa käyttämällä **Domain Products** -välilehteä.
 
-## Domain Settings -välilehti
+## Domain Settings -välilehti {#domain-settings-tab}
 
-### Tarjoaja (Provider)
+### Tarjoaja (Provider) {#provider}
 
 Valitse, mikä rekisteri hoitaa tämän tuotteen rekisteröinnin. Oletusarvo on globaali **Default provider** (oletustarjoaja), joka on asetettu Domain Seller -asetuksissa.
 
-### Tuetut TLD:t (Supported TLDs)
+### Tuetut TLD:t (Supported TLDs) {#supported-tlds}
 
 Jätä tyhjä, jos haluat luoda **catch-all product** (kaikkia kattavia tuotteita), joka koskee kaikkia TLD:itä, joita ei vastaa muu tuote.
 
@@ -31,7 +31,7 @@ Syötä pilkkelistettuna listan TLD:itä (esim. `.com, .net, .org`) luodaksesi *
 
 **Miten tuotteiden vastaavuus toimii:** Kun asiakas etsii verkkotunnusta, lisäosa valitsee tarkimman vastaavan tuotteen. Tuote, jolla on `.com` TLD-listassaan, saa ensisijaisen oikeuden verrattuna yleiseen catch-all-tuotteeseen. Jos ei löydy TLD:iin liittyvää tuotetta, käytetään yleistä tuotetta. Jos tuotteita ei ole olemassa, verkkotunnusetsintä ei näytetä.
 
-### Marginaalityyppi (Markup type)
+### Marginaalityyppi (Markup type) {#markup-type}
 
 Kolme tilaa ohjaavat sitä, miten vähittäishinta lasketaan myyntihinnan ja tukkohinnan perusteella:
 
@@ -41,11 +41,11 @@ Kolme tilaa ohjaavat sitä, miten vähittäishinta lasketaan myyntihinnan ja tuk
 | **Fixed markup** (Kiinteä marginaali) | Lisää kiinteän dollarimäärän. $5 marginaalin lisääminen $10 verkkotunnukseen antaa $15. |
 | **Fixed price** (Kiinteä hinta) | Ohittaa kokonaan tukkohinnan. Laskee aina syöttämäsi summan. |
 
-### Esittelyhinnoittelu (Introductory pricing)
+### Esittelyhinnoittelu (Introductory pricing) {#introductory-pricing}
 
-### Alennus tarjonta alennuksella ensimmäisen vuoden hinnalla. Aseta erillinen **Aloitushinta** (vuoden 1 hinta) rinnakkain säännölliseen **Uudelleenmääräyshintaan** (vuosi 2+) nähden. Asiakas näkee molemmat hinnat kassalla, jotta hän tietää, mitä odottaa uudelleenkäsittelyssä.
+### Alennus tarjonta alennuksella ensimmäisen vuoden hinnalla. Aseta erillinen **Aloitushinta** (vuoden 1 hinta) rinnakkain säännölliseen **Uudelleenmääräyshintaan** (vuosi 2+) nähden. Asiakas näkee molemmat hinnat kassalla, jotta hän tietää, mitä odottaa uudelleenkäsittelyssä. {#whois-privacy}
 
-### WHOIS-tietosuoja
+### WHOIS-tietosuoja {#tld-import-and-sync}
 
 Ohjaa sitä, tarjotaanko WHOIS-tietosuojaa hallitsemille domaineille tällä tuotteella rekisteröityille domaineille.
 
@@ -59,7 +59,7 @@ Namecheapin kohdalla WHOIS-tietosuoja käyttää WhoisGuardia (aina ilmainen). O
 
 ---
 
-## TLD:n tuonti ja synkronointi
+## TLD:n tuonti ja synkronointi {#auto-renewal}
 
 Domain-tuotteet näyttävät reaaliaikaisen tukkuhinnan, joka haetaan yhdistetystä toimittajasta. Jotta tämä toimisi, TLD:t on tuotettava sisään.
 
@@ -70,7 +70,7 @@ Synkronoinnin jälkeen siirry minkä tahansa domain-tuotteen Domain Settings -v�
 
 ---
 
-## Automaattinen uusiminen
+## Automaattinen uusiminen {#admin-manual-domain-registration}
 
 Domain-uudelleenmääräykset on sidottu asiakkaan jäsenyyden tilaan:
 

@@ -3,7 +3,7 @@ title: سجل تغييرات VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# سجل تغييرات VAT
+# سجل تغييرات VAT {#vat-changelog}
 
 الإصدار 1.0.7 - تم إصداره في 2026-02-03
 

@@ -3,7 +3,7 @@ title: Kasseformularer
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout formular
+# Checkout formular {#checkout-forms}
 
 Checkout Forms er en nem og fleksibel måde at eksperimentere med forskellige tilgange på, når du prøver at konvertere nye kunder.
 
@@ -36,13 +36,13 @@ Alternativ kan du redigere eller duplikere de formularer, du allerede har, ved a
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Oversigt over Checkout Form Editor
+#### Oversigt over Checkout Form Editor {#checkout-form-editor-overview}
 
 Checkout form editor giver dig et omfattende interface til at bygge dine registreringsformularer. Her er et overblik over editorlayoutet:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Redigering af en Checkout Form
+### Redigering af en Checkout Form {#editing-a-checkout-form}
 
 Du kan oprette checkout formularer til forskellige formål. I dette eksempel arbejder vi med en registreringsformular.
 
@@ -112,7 +112,7 @@ For at få dit forms shortcode skal du klikke på Generer Shortcode og kopiere r
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Feltet Prissedataene
+### Feltet Prissedataene {#the-pricing-table-field}
 
 Feltet **Prissedataene** viser dine produkter på checkout-formularen, så kunder kan vælge en plan. Når du redigerer dette felt, kan du konfigurere flere muligheder:
 
@@ -130,17 +130,17 @@ Her er hvordan prissedataene vises på registreringsformularen i frontenden:
 
 Hvis du tilføjer et produkt til Prissedataene, før formularen indeholder de felter, der kræves for at gennemføre den pågældende produkts checkout-flow, viser redaktøren nu en advarsel. Brug advarslen til at tilføje det manglende nødvendige felt, før du udgiver eller gemmer ændringer til en aktiv registreringsform.
 
-### Tilføj en valgmulighed til periodevalg
+### Tilføj en valgmulighed til periodevalg {#adding-a-period-selection-toggle}
 
 Hvis du har opsat [Price Variations](creating-your-first-subscription-product#price-variations) på dine produkter (f.eks. månedlig og årlig pris), kan du tilføje et **Periodevalg** felt til dit kasseformular. Dette felt viser en toggle, som giver kunder mulighed for at skifte mellem betalingsperioder, og prisseddelen opdateres dynamisk i realtid.
 
-#### Trin 1: Opsæt Price Variations på dine produkter
+#### Trin 1: Opsæt Price Variations på dine produkter {#step-1-set-up-price-variations-on-your-products}
 
 Før du tilføjer Periodevalg-feltet, skal du sikre dig, at dine produkter har price variations konfigureret. Gå til **Ultimate Multisite > Products**, rediger et produkt og gå til fanen **Price Variations** for at tilføje alternative betalingsperioder (f.eks. Årlig til en nedsat pris).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Trin 2: Tilføj Periodevalg-feltet til dit kasseformular
+#### Trin 2: Tilføj Periodevalg-feltet til dit kasseformular {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Gå til **Ultimate Multisite > Checkout Forms** og rediger din kasseformular.
 
@@ -163,13 +163,13 @@ Før du tilføjer Periodevalg-feltet, skal du sikre dig, at dine produkter har p
 
 7. Klik på **Gem felt**.
 
-#### Trin 3: Placér feltet over prislisten
+#### Trin 3: Placér feltet over prislisten {#step-3-position-the-field-above-the-pricing-table}
 
 For den bedste brugeroplevelse skal du sikre dig, at Feltet til valg af periode vises **før** Prislisten-feltet i dit kasse trin. Du kan trække felter for at ændre rækkefølgen i kassen formularredigereren. På denne måde vælger kunder først en faktureringsperiode og ser derefter priser for den pågældende periode.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Sådan fungerer det i frontend
+#### Sådan fungerer det i frontend {#how-it-works-on-the-frontend}
 
 Når det er konfigureret, vil kunder, der besøger din registreringsside, se periodeselektoren over prislisten. Når de klikker på en anden faktureringsperiode:
 
@@ -177,7 +177,7 @@ Når det er konfigureret, vil kunder, der besøger din registreringsside, se per
   * Hvis **Force Different Durations** er deaktiveret på Prislisten-feltet, vil produkter uden prisvariation for den valgte periode blive skjult.
   * Hvis **Force Different Durations** er aktiveret, forbliver alle produkter synlige, selvom de ikke har en variation for den valgte periode (de vil vise deres standardpris).
 
-#### Forudvalg af en faktureringsperiode via URL'en
+#### Forudvalg af en faktureringsperiode via URL'en {#pre-selecting-a-billing-period-via-url}
 
 Du kan også forudvælge et produkt og en faktureringsperiode gennem URL'en. Ultimate Multisite understøtter disse URL-mønstre:
 
@@ -185,11 +185,11 @@ Du kan også forudvælge et produkt og en faktureringsperiode gennem URL'en. Ult
   * `/register/premium/12` — Vælger produktet og 12 måneders varighed
   * `/register/premium/1/year` — Vælger produktet med en 1-årig varighed
 
-### Feltet til skabelonvalg
+### Feltet til skabelonvalg {#the-template-selection-field}
 
 **Skabelonvalgsfeltet** lader kunder vælge en sideskabelon under kassen. Det er nu inkluderet som standard i både **single step** og **multi-step** kasseformularskabelonerne, der tilføjes i Ultimate Multisite v2.6.1.
 
-#### Tilføj feltet manuelt
+#### Tilføj feltet manuelt {#adding-the-field-manually}
 
 Hvis du arbejder med en formular, der blev oprettet før v2.6.1, eller startede fra en tom skabelon:
 
@@ -200,11 +200,11 @@ Hvis du arbejder med en formular, der blev oprettet før v2.6.1, eller startede 
    - **Label** — Overskriften, som kunder ser over skabelon-gitteret (f.eks. "Vælg en siteskabelon").
    - **Required** — Om kunder skal vælge en skabelon, før de kan fortsætte.
 
-#### Sådan fungerer det
+#### Sådan fungerer det {#how-it-works}
 
 Når en kunde vælger en skabelon under checkout, bruger Ultimate Multisite den til at opsætte deres nye site. De viste skabeloner kommer fra din liste over **Site Templates** (**Ultimate Multisite > Site Templates**). Kun skabeloner markeret som tilgængelige for kunder vises her.
 
-### Checkout-formular basedomæner
+### Checkout-formular basedomæner {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 behandler domæner konfigureret i felterne **Site URL** på checkout-formularen som netværksbasedomæner. Brug feltets indstillinger for tilgængelige domæner, når du ønsker, at kunder skal oprette sites under én eller flere delte registreringsdomæner, såsom `example.com` og `sites.example.com`.
 
@@ -212,6 +212,6 @@ Delte checkout-formular basedomæner behandles ikke som per-site custom domain m
 
 Bevar custom domæner til per-kunde mappede hosts, såsom `customer-example.com`. Bevar checkout-formular basedomæner til delte registreringshosts, som mange sites kan bruge.
 
-#### Fjerne feltet
+#### Fjerne feltet {#removing-the-field}
 
 Hvis du ikke tilbyder websitetemplates, fjern derefter feltet "Template Selection" fra dit formular. Kunden vil da modtage det standard-template, der er konfigureret under **Ultimate Multisite > Settings > Site Templates**.

@@ -4,13 +4,13 @@ title: Toiminto - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Toiminto: wp_ultimo_host_providers_load
+# Toiminto: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
 
 Salli kehittäjien lisätä omia host provider -integraatioitaan wp pluginien kautta.
 
-### Alkaen
+### Alkaen {#since}
 
 - 2.0.0
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/managers/class-domain-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-domain-manager.php#L1107) rivillä 1107

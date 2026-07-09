@@ -5,9 +5,9 @@ title: >-
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector për Compatible Endpoints Changelog
+# Ultimate AI Connector për Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Versioni 2.0.0 — Publikuar më 2026-04-24
+## Versioni 2.0.0 — Publikuar më 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * E re: Mbështetje për shumë ofrues — konfiguroni disa endpoint-e AI dhe drejtoni kërkesat me fallback automatik midis ofruesve.
 * Rregullim: Integrim i SDK-së për shumë ofrues me ID të sakta të ofruesve, URL regjistrimi dhe kufizim të filtrit HTTP për secilin ofrues.
@@ -18,4 +18,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Rregullim: Eliminoi kërkesën bllokuese HTTP që aktivizohej në çdo ngarkim faqeje.
 * Përmirësuar: GitHub Actions workflows u përditësuan në Node.js 24.
 
-## Versioni 1.0.0 — Publikimi fillestar
+## Versioni 1.0.0 — Publikimi fillestar {#version-100--initial-release}

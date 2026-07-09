@@ -3,7 +3,7 @@ title: Mwen monte yon plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Upgrading a Plan (v2)
+# Upgrading a Plan (v2) {#upgrading-a-plan-v2}
 
 _**NOTE IMPORTANT: Sa tèks sa a refere a Ultimate Multisite v2.x.**_
 
@@ -39,7 +39,7 @@ Malgre ke checkout la fini, nouvo pwodwi yo ap ajoute nan kont kliyan ou epi tou
 
 ##
 
-## Wout Upgrade ak Downgrade
+## Wout Upgrade ak Downgrade {#upgrade-and-downgrade-paths}
 
 Sou chak pwodwi ou genyen, ou ap gen yon onglet **Up & Downgrades**. Opsyon premye sou onglet sa a se yon chot ki rele **Plan Group**.
 

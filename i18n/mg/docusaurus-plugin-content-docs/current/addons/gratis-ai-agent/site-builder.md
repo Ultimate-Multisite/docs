@@ -3,15 +3,15 @@ title: Fandrindrana ny Mpanamboatra Tranonkala v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Fandrindrana Site Builder v2
+# Fandrindrana Site Builder v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (nampidirina tao amin'ny Gratis AI Agent v1.4.0) no motera mampandeha ny famoronana tranonkala amin'ny dingana maro. Rehefa mangataka amin'ilay agent ianao hoe "manangana tranonkalan'ny trano fisakafoanana" na "mamorona portfolio misy bilaogy", dia zarain'ilay orchestrator ho **drafitra** voarafitra ilay tanjona ambony, tadiaviny ireo plugins ilaina hanatanterahana azy, tanterahiny misesy ny dingana tsirairay, arahiny ny fandrosoana, ary averiny amin'ny laoniny ho azy rehefa misy hadisoana.
 
 ---
 
-## Fomba fiasany
+## Fomba fiasany {#how-it-works}
 
-### 1. Famoronana drafitra
+### 1. Famoronana drafitra {#1-plan-generation}
 
 Rehefa mandray toromarika fananganana tranonkala ilay agent, dia miantso ny fahaiza-manao `create_site_plan` izy mba hamokatra **drafitra tranonkala** JSON. Ny drafitra dia mamaritra:
 
@@ -61,7 +61,7 @@ Rehefa mandray toromarika fananganana tranonkala ilay agent, dia miantso ny faha
 }
 ```
 
-### 2. Fikarohana plugin
+### 2. Fikarohana plugin {#2-plugin-discovery}
 
 Alohan'ny hanombohan'ny fanatanterahana, dia zahain'ilay orchestrator ny `plugin_requirements` ao amin'ny drafitra ary jerena izay plugins efa miasa. Ho an'ireo plugins tsy hita, dia:
 
@@ -71,7 +71,7 @@ Alohan'ny hanombohan'ny fanatanterahana, dia zahain'ilay orchestrator ny `plugin
 
 Tsy mahafaty ny tsy fahombiazan'ny fikarohana plugin — marihin'ilay orchestrator ho `skipped` ireo dingana voakasika ary tohizany ny ambin'ny drafitra.
 
-### 3. Fanatanterahana drafitra
+### 3. Fanatanterahana drafitra {#3-plan-execution}
 
 Miantso ny `execute_site_plan` miaraka amin'ny ID-n'ny drafitra ilay orchestrator. Mizotra isaky ny dingana lehibe, isaky ny dingana, ny fanatanterahana:
 
@@ -79,7 +79,7 @@ Miantso ny `execute_site_plan` miaraka amin'ny ID-n'ny drafitra ilay orchestrato
 - **Dingana mifanindran-dalana** — ireo dingana ao anatin'ny dingana lehibe iray izay tsy mifampiankina dia alefa miaraka rehefa napetraka ny saina `parallel`.
 - **Fe-potoana dingana** — manana fe-potoana manokana ny dingana tsirairay (sanda mahazatra: ny fikirana `Ability Timeout`). Ny dingana lany fotoana dia marihina ho `failed` ary mitohy ny drafitra.
 
-### 4. Fanarahana fandrosoana
+### 4. Fanarahana fandrosoana {#4-progress-tracking}
 
 Antsoy ny `get_plan_progress` amin'ny fotoana rehetra hijerena ny satan'ny fanatanterahana:
 
@@ -104,7 +104,7 @@ Afaka manara-maso ny fandrosoana amin'ity ny mpampiasa WP-CLI:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Famerenana amin'ny laoniny rehefa misy hadisoana
+### 5. Famerenana amin'ny laoniny rehefa misy hadisoana {#5-error-recovery}
 
 Rehefa tsy mahomby ny dingana iray, dia zahain'ilay orchestrator raha misy dingana **solony** voafaritra ao amin'ny drafitra:
 
@@ -115,9 +115,9 @@ Taterin'ilay agent ao amin'ny famintinana farany an'ilay drafitra ny tsy fahombi
 
 ---
 
-## Fahaiza-manao drafitra tranonkala
+## Fahaiza-manao drafitra tranonkala {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Mamorona drafitra tranonkala voarafitra avy amin'ny famaritana tanjona amin'ny fiteny voajanahary.
 
@@ -134,7 +134,7 @@ Mamorona drafitra tranonkala voarafitra avy amin'ny famaritana tanjona amin'ny f
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Manomboka manatanteraka drafitra tranonkala efa novokarina teo aloha.
 
@@ -150,7 +150,7 @@ Manomboka manatanteraka drafitra tranonkala efa novokarina teo aloha.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Mamerina ny satan’ny fanatanterahana ankehitriny amin’ny drafitry ny tranonkala iray.
 
@@ -164,7 +164,7 @@ Mamerina ny satan’ny fanatanterahana ankehitriny amin’ny drafitry ny tranonk
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Mamaha amin-tanana dingana tsy nahomby ary manohy ny fanatanterahana ny drafitra manomboka amin’ny dingana manaraka. Ampiasao ity rehefa tsy azo natao ny fanarenana mandeha ho azy ary te hiditra an-tsehatra ianao.
 
@@ -180,7 +180,7 @@ Mamaha amin-tanana dingana tsy nahomby ary manohy ny fanatanterahana ny drafitra
 
 ---
 
-## Fampitahana ny v1 sy v2
+## Fampitahana ny v1 sy v2 {#comparing-v1-and-v2}
 
 | Endri-javatra | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Mamaha amin-tanana dingana tsy nahomby ary manohy ny fanatanterahana ny drafitra
 
 ---
 
-## Baikon-drafitra WP-CLI
+## Baikon-drafitra WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Mamorona drafitry ny tranonkala avy amin’ny famaritana tanjona iray.
 
@@ -205,7 +205,7 @@ Mamorona drafitry ny tranonkala avy amin’ny famaritana tanjona iray.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Manatanteraka drafitra efa novokarina teo aloha.
 
@@ -213,7 +213,7 @@ Manatanteraka drafitra efa novokarina teo aloha.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Mampiseho ny fandrosoana ankehitriny ho an’ny drafitra iray eo am-panatanterahana na efa vita.
 
@@ -221,7 +221,7 @@ Mampiseho ny fandrosoana ankehitriny ho an’ny drafitra iray eo am-panatanterah
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Mitanisa ny drafitry ny tranonkala rehetra (miandry, eo am-panatanterahana, ary vita).
 
@@ -229,7 +229,7 @@ Mitanisa ny drafitry ny tranonkala rehetra (miandry, eo am-panatanterahana, ary 
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Mamerina drafitra tsy nahomby ho `pending` mba hahafahana manatanteraka azy indray hatramin’ny voalohany.
 

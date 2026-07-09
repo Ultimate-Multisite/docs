@@ -3,7 +3,7 @@ title: भाषा चयनकर्ता परिवर्तन लॉग
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Language Selector Changelog
+# Language Selector Changelog {#language-selector-changelog}
 
 Version: 1.1.3 - Released on 2026-05-05
 * Fix: इनपुट वैरिएबल्स को अब सैनिटाइज (sanitized) किया जाता है और थर्ड-पार्टी प्लगइन्स के साथ टकराव (conflicts) रोकने के लिए कस्टम हुक नामों को प्रीफिक्स (prefixed) किया गया है।

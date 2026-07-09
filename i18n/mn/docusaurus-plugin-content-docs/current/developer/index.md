@@ -3,11 +3,11 @@ title: Хөгжүүлэгчийн баримт бичиг
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Хөгжүүлэгчийн баримтжуулалт
+# Хөгжүүлэгчийн баримтжуулалт {#developer-documentation}
 
 Энэхүү гарын авлага нь Ultimate Multisite-тэй нэгтгэх, өргөтгөх, эсвэл түүнд зориулсан addon хөгжүүлэхэд шаардлагатай бүхнийг хөгжүүлэгчдэд өгнө. Ultimate Multisite нь WordPress Multisite сүлжээг Website-as-a-Service (WaaS) платформ болгон хувиргадаг.
 
-## Юу боломжтой вэ
+## Юу боломжтой вэ {#whats-available}
 
 - **[REST API](./rest-api/overview)** — API key баталгаажуулалттайгаар бүх entity-д (үйлчлүүлэгчид, сайтууд, гишүүнчлэлүүд, төлбөрүүд, бүтээгдэхүүнүүд, домэйнүүд) зориулсан бүрэн CRUD үйлдлүүд
 - **[Hooks лавлах](./hooks/guide)** — Амьдралын мөчлөгийн үйл явдлууд болон өөрчлөн тохируулахад зориулсан 200+ action hooks ба 280+ filter hooks
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Кодын жишээнүүд](./code-examples/)** — Динамик үнэ тогтоолт, сайт үүсгэн бэлтгэх, custom хязгаарлалтууд, олон-gateway боловсруулалтад зориулсан ахисан хэв загварууд
 - **[Addon хөгжүүлэлт](./addon-development/getting-started)** — Addon plugin-ууд бүтээхэд зориулсан бүтэцлэгдсэн framework
 
-## Шаардлагууд
+## Шаардлагууд {#requirements}
 
 - WordPress Multisite суулгац
 - PHP 7.4 эсвэл түүнээс дээш
 - Ultimate Multisite plugin идэвхжүүлсэн байх
 
-## Composer / Bedrock суулгалт
+## Composer / Bedrock суулгалт {#composer--bedrock-installation}
 
 Ultimate Multisite нь [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) дээр `ultimate-multisite/ultimate-multisite` нэрээр боломжтой. Энэ нь [Bedrock](https://roots.io/bedrock/)-д суурилсан WordPress тохиргоонууд болон Composer-оор удирдагддаг бусад орчинд санал болгож буй суулгах арга юм.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Шуурхай эхлэл
+## Шуурхай эхлэл {#quick-start}
 
-### REST API ашиглах
+### REST API ашиглах {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Үйл явдлуудад hook хийх
+### Үйл явдлуудад hook хийх {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Addon бүтээх
+### Addon бүтээх {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

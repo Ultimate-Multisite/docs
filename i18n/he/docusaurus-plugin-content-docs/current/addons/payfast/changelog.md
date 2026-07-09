@@ -3,7 +3,7 @@ title: PayFast יומן שינויים
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# יומן שינויים של PayFast
+# יומן שינויים של PayFast {#payfast-changelog}
 
 גרסה: 1.0.2 - שוחרר ב-2025-09-28
 

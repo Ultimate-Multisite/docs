@@ -3,11 +3,11 @@ title: Changelog
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Ännerungsprotokoll
+# Ännerungsprotokoll {#changelog}
 
-## 1.9.0 — Verëffentlecht den 2026-04-28
+## 1.9.0 — Verëffentlecht den 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nei
+### Nei {#new}
 
 - **`create_contact_form` ability** — erstellt e Kontaktformular mam aktive Formular-plugin (Contact Form 7, WPForms, Fluent Forms oder Gravity Forms) a gëtt e shortcode zréck, dee prett ass fir an all Bäitrag oder Säit agebett ze ginn.
 - **`set_featured_image` ability** — weist engem Bäitrag oder enger Säit e Featured Image aus enger existéierender Media Library-Attachment-ID oder enger Remote-URL zou; importéiert d'Bild automatesch, wann eng URL uginn ass.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Lescht Sessioun restauréieren** — de Chat-Panel lued elo automatesch dat rezentst Gespréich beim Luede vun der Säit an beim Opmaache vum Widget nei, sou datt de Kontext bei Säitennavigatiounen ni verluer geet.
 - **Plugin-Aktiounslinken** — Schnelllinken op Settings an den Abilities Registry erschéngen elo um WordPress **Plugins → Installed Plugins**-Bildschierm ënner der Plugin-Beschreiwung.
 
-### Verbessert
+### Verbessert {#improved}
 
 - **Bildquell-Widderhuelung** — den Agent probéiert elo all konfiguréiert gratis Bildquellen nach eng Kéier, ier en no engem Download-Feeler op en AI-generéiert Bild zeréckfält.
 - **Modellinfo-Panel** — ëmmer siichtbar am Chat-Header; net méi no der éischter Noriicht verstoppt.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat-Widget-Neidesign** — vereenegt AI-Ikon ersetzt de fréiere personaliséierten Avatar; konsequent mam agebauten Agent-System.
 - **URL-Linkifikatioun** — URLen, déi a Systemnoriichten a Feeler-Noriichteblosen optrieden, ginn elo als uklickbar Linken duergestallt.
 
-### Behuewen
+### Behuewen {#fixed}
 
 - **Ability-Entdeckbarkeet** — Beschreiwungen, System-Prompt-Referenzen an Namespace-Ofstëmmung korrigéiert, sou datt all abilities zouverlässeg an der Tool-Lëscht vum Agent erschéngen.
 - **Providers-Cache** — Providers ginn elo site-wäit iwwer e Versiounszieler gecacht, wat Problemer mat veraalte Providers op Multisite-Netzwierker verhënnert.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Verëffentlecht den 2026-04-09
+## 1.4.0 — Verëffentlecht den 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nei
+### Nei {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — féiert d'Agent Capabilities v1 Benchmark-Suite vun der Kommandozeil fir CI-Pipelines a Modell-Evaluatiouns-Workflows aus. Ënnerstëtzt Laf pro Fro, Provider-/Modell-Iwwerschreiwungen an JSON/CSV-Ausgab.
 - **Agent Capabilities v1 Benchmark-Suite** — e strukturéierte Set vu komplexen, méistufege Prompten, déi déi ganz Fäegkeetsfläch ausüben, mat Scoring an Token-/Dauer-Berichterstattung.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant-Website-Benchmark-Fro** (`q-restaurant-website`) — End-to-End-Test, deen CPT-Registréierung, Designsystem, Navigatioun a Plugin-Entdeckung ofdeckt.
 - **AI-Provider-Connector-Plugins** bäigefüügt zu WordPress Playground Blueprints fir méi séier lokal Entwécklungsariichtung.
 
-### Verbessert
+### Verbessert {#improved-1}
 
 - README aktualiséiert mat AI-Provider-Connector-Dokumentatioun an Ariichtungsinstruktiounen.
 
-### Fixéiert
+### Fixéiert {#fixed-1}
 
 - 25 PHPUnit-Testfeeler um `main`-Branch geléist.
 - GitHub-Releases-URL-Format an `blueprint.json` korrigéiert.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Vireg Release Notes ginn am Plugin-Repository erhale._

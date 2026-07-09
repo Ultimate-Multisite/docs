@@ -4,11 +4,11 @@ title: 'Tallaabo - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 U oggolow horumariyeyaasha kordhinta inay widgets ku daraan Guddiga Network Dashboard.
 
-## Halbeegyada
+## Halbeegyada {#parameters}
 
 | Magac | Nooc | Sharaxaad |
 |------|------|-------------|
@@ -16,9 +16,9 @@ U oggolow horumariyeyaasha kordhinta inay widgets ku daraan Guddiga Network Dash
 | $screen | `\WP_Screen` | Shayga shaashadda. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Tusaalaha bogga maamulka ee Ultimate Multisite. |
 
-### Tan iyo
+### Tan iyo {#since}
 
 - 2.0.0
-### Isha
+### Isha {#source}
 
 Waxaa lagu qeexay [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) safka 214

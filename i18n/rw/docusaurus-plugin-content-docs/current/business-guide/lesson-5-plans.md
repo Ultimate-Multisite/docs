@@ -3,15 +3,15 @@ title: 'Isomo rya 5: Gutegura Gahunda zawe'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Isomo rya 5: Gushushanya Gahunda Zawe
+# Isomo rya 5: Gushushanya Gahunda Zawe {#lesson-5-designing-your-plans}
 
 Inzego za gahunda zawe si urwego rw'ibiciro gusa -- ni ishusho y'uko abakiriya bo mu cyiciro wibandaho bakora koko. Muri iri somo uzashushanya inzego z'ibicuruzwa zihura n'ibikenewe nyakuri by'ubucuruzi bwa fitness ku byiciro bitandukanye.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 FitSite ifite templates eshatu ziteguye (Studio Essential, Gym Pro, Fitness Chain). Ubu tugiye gukora gahunda zigena ibyo abakiriya bemererwa kubona n'ibyo bishyura.
 
-## Gutekereza mu Byiciro by'Abakiriya
+## Gutekereza mu Byiciro by'Abakiriya {#thinking-in-customer-segments}
 
 Ikosa abantu benshi bakora ni ugushushanya gahunda bashingiye ku biranga tekiniki (ububiko, bandwidth, umubare w'amapaji). Abakiriya bo mu cyiciro wibandaho ntibatekereza muri ubwo buryo. Nyiri gym atekereza ku byo akeneye kugira ngo akoreshe ubucuruzi bwe.
 
@@ -25,11 +25,11 @@ Ku ma-studio ya fitness, hari ibyiciro bitatu bisanzwe:
 
 Gahunda zawe zigomba guhuzwa n'ibi byiciro, si ibipfunyika by'ibiranga byatoranyijwe uko bishakiye.
 
-## Gukora Gahunda za FitSite
+## Gukora Gahunda za FitSite {#creating-the-fitsite-plans}
 
 Jya kuri **Ultimate Multisite > Ibicuruzwa > Ongeraho Igicuruzwa** kuri buri gahunda.
 
-### Gahunda ya 1: FitSite Starter -- $49/ukwezi
+### Gahunda ya 1: FitSite Starter -- $49/ukwezi {#plan-1-fitsite-starter----49month}
 
 **Intego**: Abatoza bakora bonyine na studio nto
 
@@ -59,7 +59,7 @@ Jya kuri **Ultimate Multisite > Ibicuruzwa > Ongeraho Igicuruzwa** kuri buri gah
 - Theme wahisemo: Kuyikoresha ku gahato
 - Izindi themes zose: Zihishwe
 
-### Gahunda ya 2: FitSite Growth -- $99/ukwezi
+### Gahunda ya 2: FitSite Growth -- $99/ukwezi {#plan-2-fitsite-growth----99month}
 
 **Intego**: Gym zamaze gukomera zikorera ahantu hamwe
 
@@ -85,7 +85,7 @@ Jya kuri **Ultimate Multisite > Ibicuruzwa > Ongeraho Igicuruzwa** kuri buri gah
 - Itsinda rya gahunda: FitSite Plans
 - Urutonde rw'igicuruzwa: 2
 
-### Gahunda ya 3: FitSite Pro -- $199/ukwezi
+### Gahunda ya 3: FitSite Pro -- $199/ukwezi {#plan-3-fitsite-pro----199month}
 
 **Intego**: Imiyoboro ya fitness ikorera ahantu henshi
 
@@ -109,7 +109,7 @@ Jya kuri **Ultimate Multisite > Ibicuruzwa > Ongeraho Igicuruzwa** kuri buri gah
 - Itsinda rya gahunda: FitSite Plans
 - Urutonde rw'igicuruzwa: 3
 
-## Gushyiraho Itsinda rya Gahunda
+## Gushyiraho Itsinda rya Gahunda {#setting-up-the-plan-group}
 
 Itsinda rya gahunda rituma abakiriya bashobora gusa kuzamura cyangwa kumanura gahunda imbere mu muryango wa gahunda za FitSite. Kuri buri gafishi ka gahunda ka **Up & Downgrades**:
 
@@ -118,7 +118,7 @@ Itsinda rya gahunda rituma abakiriya bashobora gusa kuzamura cyangwa kumanura ga
 
 Ibi birema inzira isobanutse yo kuzamura gahunda: Starter → Growth → Pro.
 
-## Kongeramo Order Bumps
+## Kongeramo Order Bumps {#adding-order-bumps}
 
 Order bumps ni ibicuruzwa by'inyongera bitangwa mu gihe cya checkout. Kuri FitSite, tekereza kuri ibi:
 
@@ -128,7 +128,7 @@ Order bumps ni ibicuruzwa by'inyongera bitangwa mu gihe cya checkout. Kuri FitSi
 
 Bikore nk'ibicuruzwa byo mu bwoko bwa **Ipaki** muri Ultimate Multisite maze ubihuze na gahunda zibikwiye.
 
-## Impamvu Iyi Miterere Ikora Neza
+## Impamvu Iyi Miterere Ikora Neza {#why-this-structure-works}
 
 - **Starter** ikuraho inzitizi zo gutangira -- igiciro gito, icyifuzo cyoroshye, ituma abatoza bajya kuri internet vuba
 - **Growth** yongeramo ibiranga gym zisaba koko -- booking, galleries, domains zihariye
@@ -136,7 +136,7 @@ Bikore nk'ibicuruzwa byo mu bwoko bwa **Ipaki** muri Ultimate Multisite maze ubi
 - **Order bumps** zemerera abakiriya kwihitiramo ibibakwiye bitagoye gahunda z'ibanze
 - **Inzira isobanutse yo kuzamura gahunda** bivuze ko abakiriya bakurana nawe aho kugenda
 
-## Umuyoboro wa FitSite Kugeza Ubu
+## Umuyoboro wa FitSite Kugeza Ubu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Ibyo Twubatse Muri Iri Somo
+## Ibyo Twubatse Muri Iri Somo {#what-we-built-this-lesson}
 
 - **Inzego eshatu za gahunda** zihujwe n'ibyiciro nyakuri by'ubucuruzi bwa fitness
 - **Kugenzura ibiranga biboneka** ukoresheje igenzura rya plugins na templates rya Ultimate Multisite

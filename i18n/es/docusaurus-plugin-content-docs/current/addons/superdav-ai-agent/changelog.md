@@ -3,11 +3,11 @@ title: Registro de cambios
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Registro de cambios
+# Registro de cambios {#changelog}
 
-## 1.18.0 — Publicado el 2026-06-29
+## 1.18.0 — Publicado el 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Nuevo
+### Nuevo {#new}
 
 - **Herramientas de Google Calendar** — leen calendarios y eventos configurados para automatizaciones conscientes de la agenda
 - **Asignación de contactos y asistentes de participantes** — relacionan participantes del calendario con usuarios y contactos del sitio
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Proveedor de SMS TextBee** — envía notificaciones configuradas de mensajes de texto a través de TextBee
 - **Paquete complementario avanzado** — añade herramientas de sistema de archivos para desarrolladores de confianza, base de datos, WP-CLI, despachador REST, creador de plugins, instantánea de git, gestión de usuarios y benchmark distribuidas por separado de la compilación de WordPress.org
 
-### Mejorado
+### Mejorado {#improved}
 
 - **Configuración del servicio gestionado Superdav** — añade endpoints de servicio alojado y aprovisionamiento automático de conexiones para sitios compatibles
 - **Empaquetado de versiones** — crea ZIPs separados del núcleo y avanzados, publica ambos en GitHub y envía solo el paquete del núcleo a WordPress.org
 
-### Corregido
+### Corregido {#fixed}
 
 - **Fiabilidad de solicitudes de AI** — mejora la selección de modelos, los tiempos de espera de solicitudes, el modelo de configuración predeterminado, el manejo de texto de razonamiento y la orientación de reintentos para llamadas de herramientas no válidas
 - **Refuerzo de calendarios y recordatorios** — fortalece los tokens de Google Calendar y la deduplicación de recordatorios
 - **Reanudaciones de incorporación y aprobación** — corrige los inicios de incorporación del frontend y las reanudaciones de habilidades confirmadas
 - **Problemas de revisión de empaquetado de WordPress.org** — aborda los comentarios de revisión de empaquetado para la versión del núcleo
 
-## 1.16.0 — Publicado el 2026-05-20
+## 1.16.0 — Publicado el 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Nuevo
+### Nuevo {#new-1}
 
 - **Habilidad de generar SVG de logotipo** — Theme Builder ahora puede generar e incrustar SVGs de logotipo personalizados con saneamiento seguro para espacios de nombres
 - **Subida de fotos en la entrevista de descubrimiento** — la entrevista de descubrimiento de Theme Builder ahora incluye un paso de subida de fotos para un contexto de diseño más rico
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Parámetro de etiqueta de navegación** — la habilidad Crear menú ahora admite un `navigation_label` distinto, separado del título de la página
 - **Disponibilidad de herramienta de nivel 1** — sd-ai-agent/site-scrape ahora es una herramienta de nivel 1 disponible de forma predeterminada en Theme Builder
 
-### Corregido
+### Corregido {#fixed-1}
 
 - **Caché del cliente AI** — ahora respaldada por transients para persistencia entre solicitudes, evitando la pérdida de datos en tareas de agente de larga duración
 - **Enlaces de acción de fila del plugin** — corregidos y renombrados para mayor claridad
 
-## 1.10.0 — Publicado el 2026-05-05
+## 1.10.0 — Publicado el 2026-05-05 {#1100--released-on-2026-05-05}
 
-### Nuevo
+### Nuevo {#new-2}
 
 - **Búsqueda en internet Tavily** — añade Tavily como proveedor de búsqueda para resultados de búsqueda en internet más completos junto con Brave Search
 - **Habilidades integradas conscientes del tema** — las guías de habilidades de Block Themes, Classic Themes, Kadence Blocks y Kadence Theme ahora se incluyen con el plugin
 - **Habilidad de formulario de contacto del creador de sitios** — añade un formulario de contacto a cualquier página directamente desde la interfaz de chat
 
-### Mejorado
+### Mejorado {#improved-1}
 
 - **Integración de WooCommerce refactorizada** — ahora usa APIs nativas de WooCommerce para mayor fiabilidad y compatibilidad
 - **La lista de proveedores se actualiza automáticamente** — cuando cualquier plugin se activa o desactiva
 
-### Corregido
+### Corregido {#fixed-2}
 
 - **Habilidad navigate-to** — corregido un bucle de recarga infinito en algunas páginas de administración
 - **Habilidad list-posts** — ahora resuelve correctamente nombres de categorías y etiquetas a slugs

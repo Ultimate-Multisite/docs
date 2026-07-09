@@ -3,7 +3,7 @@ title: Kódar
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodarmiðir fyrir v2
+# Kodarmiðir fyrir v2 {#code-snippets-for-v2}
 
 Í grunninn eru code snippets fyrir **WordPress** notaðir til að gera sérstaka aðgerðir sem átt við þurfa sérstaklega sjálfan plugin. Þessar code snippets eru staðsett í einum af kjarnafylgjum WordPress eða þema (almennt í `functions.php` fylkim þíns þema) eða þeir geta verið notað sem MU plugin.
 
@@ -15,7 +15,7 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**Að lausa CORS-þróunarsvæði með Font-Icons í mappa dómum**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Að breyta stöðu menútilboðar reikninga
+## Að breyta stöðu menútilboðar reikninga {#changing-the-position-of-the-account-menu-item}
 
 Til að breyta stöðu menútilboðar reikninga á Dashboard þíns viðskiptavina, bastað bara eftir að bæta eftir følgjandi code snippet í `functions.php` fylkim þema sem er aktivt á hlutinn. Þú getur einnig stórt snippet inn í eitt af MU pluginum þínum eða sérstökum pluginum.
 
@@ -37,8 +37,8 @@ Athugiðu að notendur gætu bara skýrslu (Plan) skráð í, ekki pakka eða þ
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Lögð upp CORS-þróun á Font-Icons í mappaðum vöndum
-## Lögð upp CORS-þróun á Font-Icons í mappaðum vöndum
+## Lögð upp CORS-þróun á Font-Icons í mappaðum vöndum {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Lögð upp CORS-þróun á Font-Icons í mappaðum vöndum {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Eftir að mappa vönd (domain) yfir á sub-site geturð þú verið í því að hljómsveitinn er ekki fær í að ladda sérstök fontar. Þetta er vegna þess að cross-origin blokk er sett í þarfirinn þínum serverinnstillingum.
 
@@ -46,13 +46,13 @@ Eftir að fontafile ræðið er oft ladið beint úr CSS, getur ekki mappa vönd
 
 Til að lausa þennan vanda fyrir Apache og NGINX þarf þessar breytingar að þekkingu á uppsetningum servera (í .htaccess og NGINX config files). Ef þú ert ekki hönnuð til að gera þessar breytingar sjálfur, sendu þetta síðu til stuðlingsstjórnar hjá hostingsveitmanninum þegar þú þarft hjálp.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Í .htaccess lausnu þína skrá, bæti við:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Í uppsetningarskrá serverinnar (staðsetningur skráinnar er að breytast eftir serveri) bæti við:
 

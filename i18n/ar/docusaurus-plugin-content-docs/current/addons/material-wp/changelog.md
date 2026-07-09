@@ -3,7 +3,7 @@ title: سجل التغييرات في Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# سجل التغييرات لـ Material WP
+# سجل التغييرات لـ Material WP {#material-wp-changelog}
 
 الإصدار 1.1.15 - 01/26/2026
 * تم تحسين: نمط الكود والتنسيق;

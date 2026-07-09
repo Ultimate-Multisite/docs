@@ -4,13 +4,13 @@ title: Сүзгі - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Сүзгі: wu_documentation_get_link
+# Сүзгі: wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 Плагин әзірлеушілеріне сілтемелерді сүзуге мүмкіндік береді.
 
 Бұл қалай пайдалы болуы мүмкін екеніне сенімді емеспін, бірақ оның болғанынан зиян жоқ
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 | $slug | `string` | Сілтемені алу үшін қолданылған slug |
 | $default_link | `string` | Тіркелген әдепкі сілтеме |
 
-### Бастап
+### Бастап {#since}
 
 - 1.7.0
-### Дереккөз
+### Дереккөз {#source}
 
 [`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) ішінде, 125-жолда анықталған

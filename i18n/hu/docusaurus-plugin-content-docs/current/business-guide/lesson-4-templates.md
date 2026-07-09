@@ -3,15 +3,15 @@ title: 'Örnélküli 4: Niszéktémplatumok létrehozása'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# 4. Lesson: Nisza Alapú Oldaltípusok Létrehozása
+# 4. Lesson: Nisza Alapú Oldaltípusok Létrehozása {#lesson-4-building-niche-templates}
 
 Az oldaltípusok (templates) a nišza alapú értékajánlatának magját képezik. Egy fitness stúdió tulajdonosa, aki regisztrálódik, és lát egy olyan oldalt, amely már fitness weboldalnak tűnik – osztályrendelőkkel, edzői profilokkal és megfelelő képekkel – sokkal valószínűbben marad, mint egy olyan, aki egy üres vászonnal találkozik.
 
-## Hol maradtunk?
+## Hol maradtunk? {#where-we-left-off}
 
 Egy működő FitSite hálózatot hoztunk létre az Ultimate Multisite telepítésével és konfigurálásával. Most építjük azokat az oldaltípusokat, amelyek miatt a FitSite úgy érzi, mintha kifejezetten fitness vállalkozások számára készült volna.
 
-## Miért fontosak a Nisza Oldaltípusok?
+## Miért fontosak a Nisza Oldaltípusok? {#why-niche-templates-matter}
 
 Az általános oldaltípusok kényszerítik az ügyfeleket, hogy elvégezzék a nehéz munkát: meg kell derülniük, milyen oldalakre van szükségük, milyen tartalomstruktúra működik, és hogyan kell, hogy legyen megjelenése az iparának. A nišza oldaltípusok eliminálják ezt az akadályt.
 
@@ -24,11 +24,11 @@ Egy fitness stúdió tulajdonosnak, aki a FitSite-ra regisztrálódik, látnia k
 
 Ők kitöltik a saját adataikat. Nem kezdnek ki kézzel.
 
-## Tervezése a Oldaltípusok
+## Tervezése a Oldaltípusok {#planning-your-templates}
 
 Mielőtt építeni, eldöntse, milyen oldaltípusokat szeretne kínálni. A FitSite-hoz háromot fogunk létrehozni:
 
-### Oldaltípus 1: Stúdió Alapvető (Studio Essential)
+### Oldaltípus 1: Stúdió Alapvető (Studio Essential) {#template-1-studio-essential}
 
 Kisebb stúdióknak és személyi edzőknek.
 
@@ -39,7 +39,7 @@ Kisebb stúdióknak és személyi edzőknek.
 - **Kapcsolat** oldal helyszíneképével és űrlapokkal
 - **Tiszta, modern dizájn** fitness-megfelelő színekkel
 
-### Oldaltípus 2: Gym Pro
+### Oldaltípus 2: Gym Pro {#template-2-gym-pro}
 
 Megtelepedett fitness edzőtermeknek, több szolgáltatással.
 
@@ -50,7 +50,7 @@ Megtelepedett fitness edzőtermeknek, több szolgáltatással.
 - **Tanúsítványok** szekció a kezdőlapon
 - **Jobb kiemelt márkázási** lehetőségek
 
-### Oldaltípus 3: Fitness Lánc (Fitness Chain)
+### Oldaltípus 3: Fitness Lánc (Fitness Chain) {#template-3-fitness-chain}
 
 Multi-lokációjú működésnek.
 
@@ -60,17 +60,17 @@ Multi-lokációjú működésnek.
 - **Centralizált márkázás** helyszínre specifikus adatokkal
 - **Stabkönyv** több helyszínen keresztül
 
-## Oldaltípus Oldalépítése
+## Oldaltípus Oldalépítése {#building-a-template-site}
 
 Az Ultimate Multisite-ban egy oldaltípus egyszerűen egy WordPress oldala, amelyet úgy konfiguráltunk, hogy az új ügyfél oldaltípusai így nézzenek ki. Így hozható létre:
 
-### 1. Lépés: A Oldaltípus Oldal Létrehozása
+### 1. Lépés: A Oldaltípus Oldal Létrehozása {#step-1-create-the-template-site}
 
 1. Navigáljon a **Sites > Add New** menüpontra a hálózat admin felületén.
 2. Létrehoz egy oldaltípus oldalt, nevével `template-studio-essential`.
 3. Ez az oldal lesz a működő vászonja.
 
-### 2. Lépés: A Téma Telepítése és Konfigurálása
+### 2. Lépés: A Téma Telepítése és Konfigurálása {#step-2-install-and-configure-the-theme}
 
 Váltás a oldaltípus oldal admin felületére, és:
 
@@ -82,7 +82,7 @@ Váltás a oldaltípus oldal admin felületére, és:
 Válasszon egy olyan témát, amely elég rugalmas, hogy fitness-hez illeszkedjen, de nem olyan bonyolult, hogy az ügyfelei nem tudják kezelni. Témák, mint az Astra, GeneratePress vagy a Kadence jól működnek, mert könnyűek, testreszabhatóak és jól támogatottak.
 :::
 
-### 3. Lépés: Az Oldalak Létrehozása
+### 3. Lépés: Az Oldalak Létrehozása {#step-3-create-the-pages}
 
 Építse ki az összes oldaltípusot:
 
@@ -92,7 +92,7 @@ Válasszon egy olyan témát, amely elég rugalmas, hogy fitness-hez illeszkedje
 
 A helyettes tartalmat, ahol lehetséges, utasításként használja. Ne használjon általános töltő szöveget, hanem írjon tartalmat, például: "Cserélje ki ezt egy rövid leírással a stúdiójáról és arról, ami különleges. Említené az edző filozófiáját, az évek számát, vagy azt, amit az ügyfelek várhatnak."
 
-### 4. Lépés: A Pluginok Konfigurálása
+### 4. Lépés: A Pluginok Konfigurálása {#step-4-configure-plugins}
 
 Telepítse és aktiválja azokat a pluginokat, amelyekre a fitness stúdióknak szüksége van:
 
@@ -100,7 +100,7 @@ Telepítse és aktiválja azokat a pluginokat, amelyekre a fitness stúdióknak 
 - Egy kapcsolatfelvételi űrlap plugin
 - Egy SEO plugin (előkonfigurált fitness-releváns alapértelmezésekkel)
 
-### 5. Lépés: Oldaltípusként Jelölés
+### 5. Lépés: Oldaltípusként Jelölés {#step-5-mark-as-template}
 
 1. Navigáljon a **Ultimate Multisite > Sites** menüpontra.
 2. Szerkésbolja a oldaltípus oldalt.
@@ -108,7 +108,7 @@ Telepítse és aktiválja azokat a pluginokat, amelyekre a fitness stúdióknak 
 
 Ismételje meg ezt a folyamatot minden olyan oldaltípusra, amelyet kínálni szeretne.
 
-## Oldaltípus Minőségellenőrző Lista
+## Oldaltípus Minőségellenőrző Lista {#template-quality-checklist}
 
 Mielőtt egy oldaltípusot elérhetővé teszi, ellenőrizze:
 
@@ -121,7 +121,7 @@ Mielőtt egy oldaltípusot elérhetővé teszi, ellenőrizze:
 - [ ] Nincs törött link vagy hiányzó eszköz
 - [ ] Az oldal betöltési sebessége elfogadható
 
-## A FitSite Hálózata Árnyéka
+## A FitSite Hálózata Árnyéka {#the-fitsite-network-so-far}
 
 ```
 FitSite Hálózat
@@ -136,7 +136,7 @@ FitSite Hálózat
 └── Kész a tervkonfigurációra (következő lecke)
 ```
 
-## Amit Építettünk Ezen a Lecskén
+## Amit Építettünk Ezen a Lecskén {#what-we-built-this-lesson}
 
 - **Három nišza alapú oldaltípus**, különböző fitness vállalkozási méretekhez
 - **Fitness-megfelelő tartalom és képek**, amelyek miatt a platform úgy érzi, mintha kifejezetten készült volna

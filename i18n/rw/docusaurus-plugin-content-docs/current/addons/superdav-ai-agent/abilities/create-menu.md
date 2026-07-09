@@ -3,15 +3,15 @@ title: Hanga Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Kora Menu
+# Kora Menu {#create-menu}
 
 Ubushobozi bwa **Kora Menu** bukora menu zo kuyobora za WordPress, bushyigikira labels zo kuyobora zitandukanye n’imitwe y’amapaji.
 
-## Incamake
+## Incamake {#overview}
 
 Ubu bushobozi bwagura imikorere isanzwe yo gukora menu, bukongeramo ubushobozi bwo kugaragaza parameter ya `navigation_label`. Ibi bigufasha gukora menu aho label igaragara mu kuyobora itandukanye n’umutwe w’ipaji, bikaguha ubworoherane bwinshi mu miterere y’urubuga no mu bunararibonye bw’umukoresha.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Ubwoko | Birakenewe | Ibisobanuro |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Ubu bushobozi bwagura imikorere isanzwe yo gukora menu, bukongeramo ubushobozi b
 | `location` | string | Oya | Ahantu ha theme ho kugenera iyi menu, urugero `primary` |
 | `navigation_label` | string | Oya | Label yo kugaragaza mu kuyobora (itandukanye n’umutwe w’ipaji) |
 
-## Agaciro Gasubizwa
+## Agaciro Gasubizwa {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Ubu bushobozi bwagura imikorere isanzwe yo gukora menu, bukongeramo ubushobozi b
 }
 ```
 
-## Label yo Kuyobora vs Umutwe w’Ipaji
+## Label yo Kuyobora vs Umutwe w’Ipaji {#navigation-label-vs-page-title}
 
 Parameter ya `navigation_label` igufasha gutandukanya izina rya menu rikoreshwa imbere na label igaragarizwa abakoresha:
 
@@ -43,9 +43,9 @@ Ibi ni ingirakamaro iyo:
 - Ukeneye gushyigikira indimi nyinshi zifite uburebure bwa labels butandukanye
 - Urimo kubaka menu zigenewe uturere cyangwa amatsinda y’abakoresha yihariye
 
-## Ingero z’Imikoreshereze
+## Ingero z’Imikoreshereze {#usage-examples}
 
-### Urugero 1: Menu Yoroshye ifite Label yo Kuyobora
+### Urugero 1: Menu Yoroshye ifite Label yo Kuyobora {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Kora menu yo kuyobora y’ibanze yitwa "Kuyobora Nyamukuru" ifite label yo kuyob
 }
 ```
 
-### Urugero 2: Menu y’Ahantu ha Theme Hihariye
+### Urugero 2: Menu y’Ahantu ha Theme Hihariye {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Kora menu yo ku mpera yitwa "Amakuru yo ku Mpera" ifite label yo kuyobora "Amahu
 }
 ```
 
-## Kwihuza na Theme Builder
+## Kwihuza na Theme Builder {#integration-with-theme-builder}
 
 Iyo ukoresha Theme Builder, ubushobozi bwa Kora Menu:
 
@@ -89,13 +89,13 @@ Iyo ukoresha Theme Builder, ubushobozi bwa Kora Menu:
 3. Bugenera menu ahantu ha theme hakwiye
 4. Bushyigikira kongeramo ibintu bya menu nyuma yo kuyikora
 
-## Ubushobozi Bifitanye Isano
+## Ubushobozi Bifitanye Isano {#related-abilities}
 
 - **`add_menu_item`** — Ongeramo ibintu muri menu isanzwe
 - **`update_menu`** — Hindura izina rya menu cyangwa uyigene ahandi hantu ha theme
 - **`delete_menu`** — Kura menu ku rubuga rwawe
 
-## Imikorere Myiza
+## Imikorere Myiza {#best-practices}
 
 - **Koresha labels zo kuyobora zisobanutse** — komeza labels zibe ngufi kandi zisobanure neza ku bakoresha
 - **Huza ahantu ha theme** — genenera menu ahantu ha theme hakwiye kugira ngo igaragare neza
@@ -103,14 +103,14 @@ Iyo ukoresha Theme Builder, ubushobozi bwa Kora Menu:
 - **Gerageza uko yitwara ku bikoresho bitandukanye** — genzura ko menu zigaragara neza ku bikoresho bigendanwa
 - **Hindura labels ku ndimi** — koresha labels zo kuyobora zitandukanye ku mavugurura y’indimi zitandukanye
 
-## Imipaka
+## Imipaka {#limitations}
 
 - Labels zo kuyobora ni izo kugaragaza gusa; `name` ikoreshwa imbere iracyakoreshwa mu kumenya menu muri WordPress
 - Ubufasha bwa theme buratandukanye; si theme zose zishyigikira ahantu hose ha menu
 - Ibintu bya menu bigomba kongerwamo ukwabyo nyuma yo gukora menu
 - Guhindura label yo kuyobora bisaba kuvugurura menu
 
-## Ubushobozi Bifitanye Isano
+## Ubushobozi Bifitanye Isano {#related-abilities-1}
 
 - [Kora Logo SVG](./generate-logo-svg.md) — kora logos zo ku mutwe w’urubuga rwawe
 - [Emeza Itandukaniro rya Palette](./validate-palette-contrast.md) — menya neza ko gahunda z’amabara zigerwaho n’abantu bose

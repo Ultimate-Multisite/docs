@@ -3,28 +3,28 @@ title: Ihtisar REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Rujukan REST API
+# Rujukan REST API {#rest-api-reference}
 
-## Konfigurasi Dasar
+## Konfigurasi Dasar {#base-configuration}
 
 **Base URL:** `{site_url}/wp-json/wu/v2/`
 **Auténtikasi:** Konci API & Secret (HTTP Basic Auth atawa Parameter URL)
 
-## Auténtikasi
+## Auténtikasi {#authentication}
 
-### Aktipkeun API
+### Aktipkeun API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Kéngingkeun Kredénsial API
+### Kéngingkeun Kredénsial API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Métode Auténtikasi
+### Métode Auténtikasi {#authentication-methods}
 
 **HTTP Basic Auth (Disarankeun):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Titik Tungtung Inti
+## Titik Tungtung Inti {#core-endpoints}
 
-### 1. API Palanggan
+### 1. API Palanggan {#1-customers-api}
 
 **Rute Dasar:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Situs
+### 2. API Situs {#2-sites-api}
 
 **Rute Dasar:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API Kaanggotaan
+### 3. API Kaanggotaan {#3-memberships-api}
 
 **Rute Dasar:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Produk
+### 4. API Produk {#4-products-api}
 
 **Rute Dasar:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API Pangmayaran
+### 5. API Pangmayaran {#5-payments-api}
 
 **Rute Dasar:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Domain
+### 6. API Domain {#6-domains-api}
 
 **Rute Dasar:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Titik Tungtung Pendaptaran
+## Titik Tungtung Pendaptaran {#registration-endpoint}
 
 Titik tungtung `/register` nyayogikeun alur checkout/pendaptaran anu lengkep:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Titik Tungtung Tenant Mandiri
+## Titik Tungtung Tenant Mandiri {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nambihan cakupan REST tenant mandiri pikeun integrasi anu nyayagikeun, mariksa, atawa mastikeun tenant anu diisolasi.
 
@@ -242,7 +242,7 @@ Réspon status migrasi ilaharna ngawengku:
 
 Anggap `ready: false` minangka panghalang saméméh peluncuran. Pariksa rinci vérifikasi, benerkeun pangiket host database, antrian, panyayagaan pamaké, atawa masalah routing, tuluy cobian deui vérifikasi.
 
-## Réspon Kasalahan
+## Réspon Kasalahan {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Anggap `ready: false` minangka panghalang saméméh peluncuran. Pariksa rinci v�
 }
 ```
 
-## Paginasi jeung Nyaring
+## Paginasi jeung Nyaring {#pagination-and-filtering}
 
 **Parameter Query:**
 ```http

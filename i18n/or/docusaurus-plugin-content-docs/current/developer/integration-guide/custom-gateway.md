@@ -3,11 +3,11 @@ title: କଷ୍ଟମ୍ ଗେଟୱେ ବିକାଶ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# କଷ୍ଟମ Gateway ବିକାଶ
+# କଷ୍ଟମ Gateway ବିକାଶ {#custom-gateway-development}
 
 ଆପଣ `Base_Gateway` class କୁ ବିସ୍ତାର କରି କଷ୍ଟମ ପେମେଣ୍ଟ gateways ସୃଷ୍ଟି କରିପାରିବେ।
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Gateway ପଞ୍ଜୀକରଣ କରନ୍ତୁ
+## Gateway ପଞ୍ଜୀକରଣ କରନ୍ତୁ {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## ମୁଖ୍ୟ Methods
+## ମୁଖ୍ୟ Methods {#key-methods}
 
 | Method | ଉଦ୍ଦେଶ୍ୟ |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | refund ଅନୁରୋଧଗୁଡ଼ିକୁ ସମ୍ଭାଳନ୍ତୁ |
 | `get_payment_methods()` | ଜଣେ ଗ୍ରାହକ ପାଇଁ ସଞ୍ଚିତ ପେମେଣ୍ଟ methods ଫେରାନ୍ତୁ |
 
-## ପୁନରାବୃତ୍ତ memberships ପାଇଁ ନବୀକରଣ credentials
+## ପୁନରାବୃତ୍ତ memberships ପାଇଁ ନବୀକରଣ credentials {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 gateway ସମନ୍ୱୟଗୁଡ଼ିକୁ `auto_renew` ରଖାଯିବା ପୂର୍ବରୁ ଏକ ପୁନରାବୃତ୍ତ membership ପାଖରେ ପୁନଃବ୍ୟବହାରଯୋଗ୍ୟ ନବୀକରଣ credential ଅଛି କି ନାହିଁ ଜଣାଇବାକୁ ଦିଏ। `wu_membership_has_renewal_credential` କୁ hook କରନ୍ତୁ ଏବଂ ଫେରାନ୍ତୁ:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 ନୂତନ ପୁନଃବ୍ୟବହାରଯୋଗ୍ୟ credential ସଞ୍ଚୟ ହେବା ପରେ, ଆପଣଙ୍କ gateway ର ସଫଳ ପୁନଃ-ଅନୁମୋଦନ ପ୍ରବାହର ଅଂଶ ଭାବେ ନଥିବା credential ଚିହ୍ନକୁ ସଫା କରନ୍ତୁ।
 
-## ପରାମର୍ଶ
+## ପରାମର୍ଶ {#tips}
 
 - ବିଫଳତାରେ ସଦା `WP_Error` ଫେରାନ୍ତୁ, ଯାହାଦ୍ୱାରା Ultimate Multisite ତ୍ରୁଟି ପ୍ରଦର୍ଶନ ସମ୍ଭାଳିପାରିବ
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - gateway-ନିର୍ଦ୍ଦିଷ୍ଟ ଲଗିଂ ପାଇଁ `wu_log_add()` ବ୍ୟବହାର କରନ୍ତୁ
 
-## AI connector provider କ୍ଷମତା
+## AI connector provider କ୍ଷମତା {#ai-connector-provider-capabilities}
 
 AI connector-ସମର୍ଥିତ କାର୍ଯ୍ୟଗୁଡ଼ିକୁ କଲ୍ କରୁଥିବା କଷ୍ଟମ ସମନ୍ୱୟଗୁଡ଼ିକ AI Provider for Anthropic Max v1.3.0 ସହିତ ପରିଚୟ କରାଯାଇଥିବା ସମର୍ଥିତ OAuth provider ସେଟ୍ ସହିତ ମେଳ ରଖିବା ଉଚିତ:
 

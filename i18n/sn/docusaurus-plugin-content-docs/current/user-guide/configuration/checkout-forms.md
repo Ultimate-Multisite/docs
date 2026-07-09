@@ -3,7 +3,7 @@ title: Mavhiki ekutanga
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms ndiyo njia yakapfuura na yenye kubadilika kuti utaona nzira dzakasiyana dzinobva kuenda nekuvaka makuberekwa vachikuru vatsavo.
 
@@ -36,7 +36,7 @@ Maviri, unogona kuenda kutaura kana fomu dzako dzinengei dzine, kana kuti dzichi
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Kuenda Kutaura Checkout Form
+### Kuenda Kutaura Checkout Form {#checkout-form-editor-overview}
 
 Unogona kuita checkout forms dzinenge dzine zvinhu zvakasiyana-siyana nekuti zvinengei dzine. Mu nzira iyi, tichatanga nekuita registration form.
 
@@ -106,7 +106,7 @@ Ukuze uthole shortcode we formini, ndichikumbira ukukumbula ukuthi ushaye isigab
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Indawo Ye Pricing Table
+### Indawo Ye Pricing Table {#editing-a-checkout-form}
 
 Indawo ye **Pricing Table** (Izibhalwe Zokuhlelo) iyakhanya izinto zakho zokuhlelo ekhoneni kwesiyifo se checkout formi ukuze abantu bakwazi ukukhetha isiqalo. Lapho ukhonza le ndawo, unga kukhombisa izixazululo eziningi:
 
@@ -124,17 +124,17 @@ Nansi indlela iPricing Table ikhanya ngayo kwesiyifo se registration formi yesik
 
 Uma ushiye i-product ePricing Table ngaphambi kokuthi isiyifo sikhonze izixazululo ezidingekayo ukuze sikwazi ukukwazi isiqalo sekhono lokuqala kwesikhashana, ieditor iyakhombisa umbono (warning). Sebenzisa le nto ukuze ushiye indawo eyahlukahlukene eyidingekayo ngaphambi kokuthi ukhasele noma ukhasele izibonelo zokuthatha isiqalo sekhono.
 
-### Kufamba Toggle Yechigadzirwa Period
+### Kufamba Toggle Yechigadzirwa Period {#the-pricing-table-field}
 
 Kana uri kanga ufunguirira [Price Variations](creating-your-first-subscription-product#price-variations) pamusoro pe products yako (kuti zvichii, zvinhu hwe-monthly ne annual pricing), unogona kuenda uye kuita **Period Selection** field mu checkout form yako. Ichi field chinoshowora toggle inosimbisa kuti customers vanogone kutaura pakati pe billing periods, uye pricing table inobva kubatana nekuti zvinhu zvinobva mweya (dynamically).
 
-#### Step 1: Fungira Price Variations pamusoro pe Products Yako
+#### Step 1: Fungira Price Variations pamusoro pe Products Yako {#adding-a-period-selection-toggle}
 
 Panguva unoti uingine Period Selection field, ndichida kuti products yako zive neprice variations dzakafungwa. Enda ku **Ultimate Multisite > Products**, shandisa product yakasiya, uye endaka ku tab ya **Price Variations** kuti uingine billing periods (kuti zvinhu hwe-Annual nediscounted price).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Step 2: Shando Period Selection Field mu Checkout Form Yako
+#### Step 2: Shando Period Selection Field mu Checkout Form Yako {#step-1-set-up-price-variations-on-your-products}
 
 1. Enda ku **Ultimate Multisite > Checkout Forms** uye shandisa checkout form yako.
 
@@ -157,13 +157,13 @@ Panguva unoti uingine Period Selection field, ndichida kuti products yako zive n
 
 7. Klik **Save Field**.
 
-#### Dinguva 3: Posisheni Field Upfuwo Kune Pricing Table
+#### Dinguva 3: Posisheni Field Upfuwo Kune Pricing Table {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 Kuti uonekane zvakanaka kwemuno wemudzidzi, ndichida kuti Period Selection field ine kuonekwa **panguva** kune Pricing Table field mupfungwa yechitatu chekuchengetedza (checkout step). Unogona kugara fields kuti utshanye iwo mu checkout form editor. Izvi zvinhu zvinoita kuti mutendai: mutendai kuti mudzidzi avone period ya kukumbira kutyisira, uye panguva apo vanenge vachigona kuona matare anogona kutanga.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Izvi Zvinotenderera Kune Frontend (Mupfungwa Yemudzidzi)
+#### Izvi Zvinotenderera Kune Frontend (Mupfungwa Yemudzidzi) {#step-3-position-the-field-above-the-pricing-table}
 
 Ngekurudzwa, mutendai avo vanenge vachiti munyanya wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika wenyika w
 
@@ -176,11 +176,11 @@ Kana uri munenge uchitika nekuti wauri kunoitawo nemafomu anogona kuvaedza (form
    - **Label** — Iri kunzwa kwemabhuku anogona kuona pamusoro pe grid ya templates (kuti zvichiri, "Chibva cha template").
    - **Required** — Kuratidza kuti vanhu vachida kuita selection ye template panguva haunogone kuenda mberi.
 
-#### Izvi zvinogona kuita sei
+#### Izvi zvinogona kuita sei {#how-it-works-on-the-frontend}
 
 Kana munhu akange anoda template panguva aiva checkout, Ultimate Multisite inoshandisa iye kana ichiichiri kubva kunge site yavo yakare (provisioning). Templates izvi zinogara kuva dzinogona kuone pamusoro pe list yako ya **Site Templates** (**Ultimate Multisite > Site Templates**). Zvinogona kuone templates zvakaita kuti vanhu vanyane vave (available to customers) chinhu chete.
 
-### Checkout-form base domains
+### Checkout-form base domains {#pre-selecting-a-billing-period-via-url}
 
 Ultimate Multisite v2.13.0 inoshandisa domains dzakagadzirwa pamusoro pe fields ya **Site URL** panguva checkout kunge base domains dze network. Ramba uchigadzirisa settings dzemafomu (available-domain) kana unoda vanhu vanyane vave kuita sites zvinogara under one kana zvinhu zvakawanda zveregistration domain, se `example.com` uye `sites.example.com`.
 
@@ -188,7 +188,7 @@ Base domains dze checkout-form dzine kushandawe (shared) hazvazovada mapping dze
 
 Ramba uchitenda custom domains dze per-customer mapped hosts, se `customer-example.com`. Ramba uchitenda base domains dze checkout-form dze registration hosts dzinogone kuiteiteite vanhu vanyane vave (shared registration hosts) kuti sites dzakawanda dzinogone kuita.
 
-#### Kuenda kunaka chii field
+#### Kuenda kunaka chii field {#the-template-selection-field}
 
 (Hapana content for this section in the original, so I keep it as is.)
 

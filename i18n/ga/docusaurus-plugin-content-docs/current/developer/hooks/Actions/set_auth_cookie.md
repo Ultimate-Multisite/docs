@@ -4,11 +4,11 @@ title: Gníomh - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Gníomh: set_auth_cookie
+# Gníomh: set_auth_cookie {#action-setauthcookie}
 
 Spreagtar é díreach sula socraítear an fianán fíordheimhnithe.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Spreagtar é díreach sula socraítear an fianán fíordheimhnithe.
 | $scheme | `string` | Scéim fíordheimhnithe. Áirítear ar na luachanna 'auth' nó 'secure_auth'. |
 | $token | `string` | Token seisiúin an úsáideora le húsáid don fhianán seo. |
 
-### Ó shin
+### Ó shin {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ag líne 124

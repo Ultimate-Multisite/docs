@@ -3,15 +3,15 @@ title: Luo valikko
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Luo valikko
+# Luo valikko {#create-menu}
 
 **Luo valikko** -ominaisuus luo WordPress-navigointivalikoita ja tukee erillisiä navigointitekstejä, jotka eroavat sivujen otsikoista.
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 Tämä ominaisuus laajentaa tavallista valikonluontitoiminnallisuutta mahdollisuudella määrittää `navigation_label`-parametri. Sen avulla voit luoda valikoita, joissa navigaatiossa näytettävä teksti eroaa sivun otsikosta, mikä tarjoaa enemmän joustavuutta sivuston rakenteeseen ja käyttäjäkokemukseen.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Parametri | Tyyppi | Pakollinen | Kuvaus |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Tämä ominaisuus laajentaa tavallista valikonluontitoiminnallisuutta mahdollisu
 | `location` | string | Ei | Teeman sijainti, johon tämä valikko liitetään, esim. `primary` |
 | `navigation_label` | string | Ei | Navigaatiossa näytettävä teksti (eri kuin sivun otsikko) |
 
-## Paluuarvo
+## Paluuarvo {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Tämä ominaisuus laajentaa tavallista valikonluontitoiminnallisuutta mahdollisu
 }
 ```
 
-## Navigointiteksti vs. sivun otsikko
+## Navigointiteksti vs. sivun otsikko {#navigation-label-vs-page-title}
 
 `navigation_label`-parametrin avulla voit erottaa sisäisen valikon nimen käyttäjille navigaatiossa näytettävästä tekstistä:
 
@@ -43,9 +43,9 @@ Tämä on hyödyllistä, kun:
 - Sinun on tuettava useita kieliä, joissa tekstien pituudet vaihtelevat
 - Rakennat valikoita tietyille alueille tai käyttäjäryhmille
 
-## Käyttöesimerkit
+## Käyttöesimerkit {#usage-examples}
 
-### Esimerkki 1: Yksinkertainen valikko navigointitekstillä
+### Esimerkki 1: Yksinkertainen valikko navigointitekstillä {#example-1-simple-menu-with-navigation-label}
 
 **Kehote:**
 ```
@@ -62,7 +62,7 @@ Luo ensisijainen navigointivalikko nimeltä "Main Navigation" navigointitekstill
 }
 ```
 
-### Esimerkki 2: Valikko tiettyyn teeman sijaintiin
+### Esimerkki 2: Valikko tiettyyn teeman sijaintiin {#example-2-menu-for-specific-theme-location}
 
 **Kehote:**
 ```
@@ -80,7 +80,7 @@ Luo alatunnistevalikko nimeltä "Footer Links" navigointitekstillä "Quick Links
 }
 ```
 
-## Integraatio Theme Builderin kanssa
+## Integraatio Theme Builderin kanssa {#integration-with-theme-builder}
 
 Kun käytät Theme Builderia, Luo valikko -ominaisuus:
 
@@ -89,13 +89,13 @@ Kun käytät Theme Builderia, Luo valikko -ominaisuus:
 3. Liittää valikot oikeisiin teeman sijainteihin
 4. Tukee valikkokohteiden lisäämistä luonnin jälkeen
 
-## Liittyvät ominaisuudet
+## Liittyvät ominaisuudet {#related-abilities}
 
 - **`add_menu_item`** — Lisää kohteita olemassa olevaan valikkoon
 - **`update_menu`** — Nimeä valikko uudelleen tai liitä se uudelleen teeman sijaintiin
 - **`delete_menu`** — Poista valikko sivustoltasi
 
-## Parhaat käytännöt
+## Parhaat käytännöt {#best-practices}
 
 - **Käytä selkeitä navigointitekstejä** — pidä tekstit käyttäjille ytimekkäinä ja kuvaavina
 - **Sovita teeman sijainteihin** — liitä valikot oikeaan teeman sijaintiin, jotta ne näkyvät oikein
@@ -103,14 +103,14 @@ Kun käytät Theme Builderia, Luo valikko -ominaisuus:
 - **Testaa responsiivisuus** — varmista, että valikot näkyvät oikein mobiililaitteilla
 - **Lokalisoi tekstit** — käytä eri navigointitekstejä eri kieliversioille
 
-## Rajoitukset
+## Rajoitukset {#limitations}
 
 - Navigointitekstit ovat vain näyttämistä varten; sisäistä `name`-arvoa käytetään edelleen WordPress-tunnistukseen
 - Teematuki vaihtelee; kaikki teemat eivät tue kaikkia valikkosijainteja
 - Valikkokohteet on lisättävä erikseen valikon luonnin jälkeen
 - Navigointitekstin muuttaminen edellyttää valikon päivittämistä
 
-## Liittyvät ominaisuudet
+## Liittyvät ominaisuudet {#related-abilities-1}
 
 - [Luo logon SVG](./generate-logo-svg.md) — luo logoja sivustosi ylätunnisteeseen
 - [Vahvista paletin kontrasti](./validate-palette-contrast.md) — varmista saavutettavat värimallit

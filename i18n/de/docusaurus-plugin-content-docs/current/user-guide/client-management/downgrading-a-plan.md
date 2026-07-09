@@ -3,13 +3,13 @@ title: Einen Tarif herabstufen
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Einen Plan herabstufen (v2)
+# Einen Plan herabstufen (v2) {#downgrading-a-plan-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
 Das Herabstufen eines Plans oder Abonnements ist eine häufige Aktion, die Ihre Kunden durchführen könnten, wenn sie ein begrenztes Budget haben oder entschieden haben, dass sie nicht viele Ressourcen benötigen, um ihre Unterwebsite zu betreiben.
 
-## So stufen Sie einen Plan herab
+## So stufen Sie einen Plan herab {#how-to-downgrade-a-plan}
 
 Ihre Kunden können ihren Plan jederzeit herabstufen, indem sie sich im Admin-Dashboard ihrer Unterwebsite anmelden und auf ihrer Account-Seite unter **Ändern** klicken.
 
@@ -25,7 +25,7 @@ Um fortzufahren, muss der Benutzer nur auf den **Checkout abschließen**-Button 
 
 ![Account-Seite mit Banner für ausstehende Mitgliedschaftsänderung](/img/account-page/pending-change.png)
 
-### Was passiert, wenn ein Benutzer seinen Plan herabstuft
+### Was passiert, wenn ein Benutzer seinen Plan herabstuft {#what-happens-when-a-user-downgrades-their-plan}
 
 Es ist wichtig zu beachten, dass das Herabstufen des Plans die bestehende Konfiguration in der Unterwebsite des Benutzers nicht verändert.
 
@@ -37,7 +37,7 @@ Für die Beiträge, die das im Plan festgelegte Limit überschreiten, haben Sie 
 
 ![Network-Admin-Einstellungen-Seite „Websites“ mit Optionen für das Verhalten bei überschrittenem Beitragslimit](/img/account-page/settings-sites-post-limit.png)
 
-### Was mit der Zahlung passiert
+### Was mit der Zahlung passiert {#what-happens-to-the-payment}
 
 In Version 2.0 sind keine Anpassungen der Zahlung in Bezug auf anteilige Abrechnung mehr erforderlich.
 

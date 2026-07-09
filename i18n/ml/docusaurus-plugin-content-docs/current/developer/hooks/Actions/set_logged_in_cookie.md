@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 ലോഗിൻ ചെയ്ത യൂസർക്ക് വേണ്ട authentication cookie സജ്ജമാക്കുന്നതിന് തൊട്ടുമുമ്പ് ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | authentication scheme. ഡിഫോൾട്ട് 'logged_in'. |
 | $token | `string` | ഈ cookie-ക്ക് ഉപയോഗിക്കാനുള്ള യൂസറുടെ session token. |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> എന്ന parameter കൂട്ടിച്ചേർത്തു.
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) എന്ന ഫയലിലെ 141-ാം വരിയിൽ നിർവചിച്ചിരിക്കുന്നു.

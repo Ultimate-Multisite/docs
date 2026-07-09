@@ -3,11 +3,11 @@ title: Capacidades de Gestão de Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Capacidades de Gestão de Plugins
+# Capacidades de Gestão de Plugins {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 inclui **7 capacidades de gestão de plugins** que o assistente AI pode invocar durante uma conversa. Estas capacidades fornecem controlo programático sobre plugins WordPress instalados através do [Sistema Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Visão Geral das Capacidades
+## Visão Geral das Capacidades {#abilities-overview}
 
 | Capacidade | Slug | Descrição |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 inclui **7 capacidades de gestão de plugins** que o assi
 | Instalar Plugin | `install_plugin` | Implementa um plugin em sandbox no diretório de plugins WordPress ativo. |
 | Ativar Plugin | `activate_plugin` | Ativa um plugin em sandbox no ambiente sandbox wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 O instalador de plugins trata das operações do sistema de ficheiros ao implementar ou remover plugins. Comportamentos principais:
 
@@ -28,7 +28,7 @@ O instalador de plugins trata das operações do sistema de ficheiros ao impleme
 - **Atualização**: Substitui ficheiros de plugins existentes. Desativa o plugin antes de escrever para evitar erros de estado parcial.
 - **Eliminação por slug**: Localiza o diretório do plugin por slug, desativa em todos os sites e depois remove o diretório.
 
-### Registar um Manipulador de Instalação Personalizado
+### Registar um Manipulador de Instalação Personalizado {#registering-a-custom-install-handler}
 
 Pode ligar-se ao ciclo de vida da instalação usando as ações `gratis_ai_plugin_installer_before_install` e `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registo do Ecossistema
+## Registo do Ecossistema {#ecosystem-registry}
 
 As capacidades são registadas através do **registo do ecossistema de plugins**. O registo mapeia slugs de capacidades para as respetivas classes de manipulador e expõe-as ao dispatcher de ferramentas do agente AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integração HookScanner
+## Integração HookScanner {#hookscanner-integration}
 
 As capacidades `create_plugin` e `update_plugin` executam automaticamente o **HookScanner** no código recém-gerado. HookScanner devolve uma lista de hooks de ação e filtro do WordPress registados pelo plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner ignora automaticamente os diretórios `vendor/` e `node_modules/`.
 
-## Arquitetura de Tarefas Assíncronas
+## Arquitetura de Tarefas Assíncronas {#async-job-architecture}
 
 Operações de plugins de longa duração (gerar, instalar) são despachadas como **tarefas assíncronas** com acompanhamento de progresso em direto. A interface de chat AI consulta o progresso e transmite atualizações de estado ao utilizador:
 

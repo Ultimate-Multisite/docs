@@ -3,17 +3,17 @@ title: 'Isifundo 9: Ukubeka amaxabiso ukuze kufumaneke inzuzo'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Isifundo 9: Amaxabiso eNzuzo
+# Isifundo 9: Amaxabiso eNzuzo {#lesson-9-pricing-for-profit}
 
 Kwisifundo 5 sabeka amaxabiso okuqala ezicwangciso ze-FitSite. Ngoku siphucula isicwangciso samaxabiso ngeendlela ezonyusa ingeniso, zikhuthaze ukunyuselwa kwisicwangciso esiphezulu, kwaye zinciphise ukuyeka kwabathengi.
 
-## Apho Sashiya Khona
+## Apho Sashiya Khona {#where-we-left-off}
 
 I-FitSite ineecwangciso, iitempleyithi, i-checkout, i-branding, kunye ne-onboarding esele zilungile. Amaxabiso okuqala ayengu-$49/$99/$199 ngenyanga. Ngoku senza la maxabiso asebenze ngakumbi.
 
-## Imigaqo yamaxabiso kumaQonga eNiche
+## Imigaqo yamaxabiso kumaQonga eNiche {#pricing-principles-for-niche-platforms}
 
-### Beka Ixabiso ngokweXabiso oliNikayo, Hayi ngeNdleko
+### Beka Ixabiso ngokweXabiso oliNikayo, Hayi ngeNdleko {#price-on-value-not-cost}
 
 Iindleko zakho ze-hosting zinokuba yi-$5-$15 kwisiza somthengi ngamnye. Oko akuthethi ukuba ixabiso lakho kufuneka libe yi-$20. Awuthengisi hosting. Uthengisa:
 
@@ -24,7 +24,7 @@ Iindleko zakho ze-hosting zinokuba yi-$5-$15 kwisiza somthengi ngamnye. Oko akut
 
 Beka ixabiso ngokusekelwe kwixabiso olinikezelayo, hayi kwiindleko zokulinikezela.
 
-### Xhoma Ixabiso kwezinye Iindlela
+### Xhoma Ixabiso kwezinye Iindlela {#anchor-to-alternatives}
 
 Xa umnini westudiyo se-fitness evavanya i-FitSite, uyithelekisa nezi zinto:
 
@@ -34,7 +34,7 @@ Xa umnini westudiyo se-fitness evavanya i-FitSite, uyithelekisa nezi zinto:
 
 Ngo-$49-$199/ngenyanga, i-FitSite itshiphu kunomphuhlisi, inamandla ngakumbi kunabakhi abaqhelekileyo, kwaye ingcono ngokungenamda kunokungabi nawebhusayithi.
 
-## Ukuphumeza Umahluko wamaxabiso
+## Ukuphumeza Umahluko wamaxabiso {#implementing-price-variations}
 
 Amaxabiso onyaka akhuthaza ukuzibophelela kwaye anciphisa ukuyeka kwabathengi. Yiya kwithebhu ye-**Umahluko wamaxabiso** yesicwangciso ngasinye uze wongeze iinketho zonyaka:
 
@@ -46,12 +46,12 @@ Amaxabiso onyaka akhuthaza ukuzibophelela kwaye anciphisa ukuyeka kwabathengi. Y
 
 Yongeza ifildi ye-**Ukukhetha Ixesha** kwifomu yakho ye-checkout ukuze abathengi bakwazi ukutshintsha phakathi kokubizwa ngenyanga nangonyaka. Bona [Iifomu ze-Checkout](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Kutheni Amaxabiso oNyaka Esebenza
+### Kutheni Amaxabiso oNyaka Esebenza {#why-annual-pricing-works}
 
 - **Kuwe**: Imali engenayo kwangaphambili, ukuyeka okusezantsi (abathengi abahlawula ngonyaka banamathuba amancinci okurhoxa phakathi kwexesha)
 - **Kubo**: Ugcino lokwenene, ukuqikeleleka kwebhajethi
 
-## Iintlawulo zoSeto
+## Iintlawulo zoSeto {#setup-fees}
 
 Cinga ngentlawulo yeseto yexesha elinye kwizicwangciso eziquka uqwalaselo olwenziwa ngesandla:
 
@@ -61,7 +61,7 @@ Cinga ngentlawulo yeseto yexesha elinye kwizicwangciso eziquka uqwalaselo olwenz
 
 Qwalasela iintlawulo zeseto kwicandelo lamaxabiso lesicwangciso ngasinye. Bona [Ukwenza iMveliso yakho yokuQala yoMrhumo](/user-guide/configuration/creating-your-first-subscription-product) ngeenkcukacha.
 
-## Amaxesha oLingo
+## Amaxesha oLingo {#trial-periods}
 
 Ukunikezela ngolingo kunciphisa ubunzima bokubhalisa kodwa kuzisa umngcipheko wokungaguquki. Kwi-FitSite:
 
@@ -70,11 +70,11 @@ Ukunikezela ngolingo kunciphisa ubunzima bokubhalisa kodwa kuzisa umngcipheko wo
 
 Qwalasela ulingo kwicandelo lamaxabiso lesicwangciso se-Starter ngokuvula i-toggle ye-**Nikela ngoLingo** uze usete ixesha libe ziintsuku ezi-7.
 
-### Ukwenza Iilingo Ziguquke
+### Ukwenza Iilingo Ziguquke {#making-trials-convert}
 
 Ulingo lusebenza kuphela ukuba umthengi ufumana ixabiso ngexesha lolingo. Ulandelelwano lwakho lwe-onboarding (Isifundo 8) lubalulekile apha -- ii-imeyile zokwamkela kufuneka zicwangciswe ngexesha lokukhuthaza ukubandakanyeka ngaphakathi kwefestile yeentsuku ezi-7.
 
-## Iikhowudi zeSaphulelo
+## Iikhowudi zeSaphulelo {#discount-codes}
 
 Yenza iikhowudi zesaphulelo ezicwangciswe ngobuchule ngenjongo ethile:
 
@@ -88,7 +88,7 @@ Yiya ku-**Ultimate Multisite > Iikhowudi zeSaphulelo** ukuze uzenze. Bona [Ukwen
 Izaphulelo kufuneka zibe zizixhobo zobuchule, hayi izinto ezisisigxina. Ukuba wonke umntu ufumana isaphulelo, ayisosaphulelo -- lixabiso lakho lokwenene. Zisebenzise kumaphulo athile, iireferensi, kunye neephromoshini ezinomda wexesha.
 :::
 
-## Ukuphathwa kweRhafu
+## Ukuphathwa kweRhafu {#tax-handling}
 
 Ukuba usebenza kummandla ofuna ukuqokelelwa kwerhafu:
 
@@ -98,7 +98,7 @@ Ukuba usebenza kummandla ofuna ukuqokelelwa kwerhafu:
 
 Bona [Ukuphathwa kweRhafu](/user-guide/payment-gateways/tax-handling) ngoqwalaselo oluneenkcukacha. Ukuba unceda abathengi kumazwe ngamazwe, cinga nge-[VAT addon](/addons/vat) ukuze uthobele imithetho ye-EU.
 
-## Ukuphonononga Amaxabiso Akho
+## Ukuphonononga Amaxabiso Akho {#reviewing-your-pricing}
 
 Emva kokusungula, buyela kumaxabiso rhoqo ngekota. Jonga:
 
@@ -107,7 +107,7 @@ Emva kokusungula, buyela kumaxabiso rhoqo ngekota. Jonga:
 - **Ukuyeka ngokwesicwangciso**: Ukuba abathengi bonyaka bayeka kancinci, tyhala amaxabiso onyaka ngamandla ngakumbi
 - **Amaxabiso abakhuphisani**: Zibiza malini ezinye iindlela? Ngaba ubekwe ngokuchanekileyo?
 
-## I-Network ye-FitSite Ukuza Kuthi Ga Ngoku
+## I-Network ye-FitSite Ukuza Kuthi Ga Ngoku {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Esikwakhileyo Kwesi Sifundo
+## Esikwakhileyo Kwesi Sifundo {#what-we-built-this-lesson}
 
 - **Amaxabiso onyaka** ngesaphulelo se-20% ukukhuthaza ukuzibophelela
 - **Iintlawulo zeseto** kumanqanaba aphezulu ukugubungela umzamo we-onboarding

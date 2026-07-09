@@ -3,15 +3,15 @@ title: 'Isomo rya 11: Kubona Abakiriya'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Isomo rya 11: Kubona Abakiriya
+# Isomo rya 11: Kubona Abakiriya {#lesson-11-finding-customers}
 
 Urubuga rukomeye rudafite abakiriya ruba ari ikinezeza gusa. Iri somo risobanura uko wabona abakiriya mu cyiciro cyihariye cy’isoko -- ingamba zikora neza by’umwihariko kuko wibanda ku rwego rumwe rw’inganda.
 
-## Aho Twari Tugeze
+## Aho Twari Tugeze {#where-we-left-off}
 
 FitSite iri gukora. Ubu dukeneye ko ba nyiri studio z’imyitozo ngororamubiri bayibona bakiyandikisha.
 
-## Impamvu Kubona Abakiriya mu Cyiciro Cyihariye Bitandukanye
+## Impamvu Kubona Abakiriya mu Cyiciro Cyihariye Bitandukanye {#why-niche-acquisition-is-different}
 
 Iyo ugurisha kuri buri wese, uhangana no gukurura abantu mu isoko ririmo urusaku rwinshi. Iyo ugurisha ku cyiciro cyihariye, uba ufite ibyiza:
 
@@ -19,17 +19,17 @@ Iyo ugurisha kuri buri wese, uhangana no gukurura abantu mu isoko ririmo urusaku
 - **Ubutumwa bwawe buhita bugera ku mutima** -- "imbuga za studio z’imyitozo ngororamubiri" bihagarika nyiri gym ari hagati yo gusimbura ku mbuga
 - **Koherezanya abakiriya bigenda byiyongera** -- ba nyiri studio z’imyitozo ngororamubiri bazi abandi ba nyiri studio z’imyitozo ngororamubiri
 
-## Umuyoboro wa 1: Kwegera Abantu mu Buryo Butaziguye
+## Umuyoboro wa 1: Kwegera Abantu mu Buryo Butaziguye {#channel-1-direct-outreach}
 
 Inzira yihuta yo kubona abakiriya bawe ba mbere ni ukubegera mu buryo butaziguye kandi bwihariye.
 
-### Shaka Abashobora Kuba Abakiriya
+### Shaka Abashobora Kuba Abakiriya {#find-prospects}
 
 - Shakisha kuri Google Maps studio z’imyitozo ngororamubiri, gyms, n’abatoza ku giti cyabo bo mu karere kawe
 - Sura imbuga zabo zisanzwe (cyangwa wandike ko nta rubuga bafite)
 - Kusanya amakuru yo kubavugisha uhereye kuri profili zabo za Google Business cyangwa imbuga nkoranyambaga
 
-### Suzuma Uko Bahagaze Ubu
+### Suzuma Uko Bahagaze Ubu {#evaluate-their-current-situation}
 
 Kuri buri muntu ushobora kuba umukiriya, andika:
 
@@ -37,7 +37,7 @@ Kuri buri muntu ushobora kuba umukiriya, andika:
 - **Urubuga rubi**: Umuntu ukomeye ushobora kuba umukiriya -- bereke uko amahitamo meza kurushaho asa
 - **Urubuga rwiza**: Umuntu udakomeye cyane ushobora kuba umukiriya -- bamaze gukemura iki kibazo
 
-### Vugana Na Bo
+### Vugana Na Bo {#make-contact}
 
 Ohereza email cyangwa ubutumwa bwihariye:
 
@@ -48,7 +48,7 @@ Ohereza email cyangwa ubutumwa bwihariye:
 
 Ntukohereze emails rusange. Kwegera mu buryo bwihariye abantu 20 bashakashatsweho neza bizatanga umusaruro mwiza kurusha ubutumwa rusange bwohererejwe 2.000.
 
-## Umuyoboro wa 2: Imiryango y’Icyiciro Cyihariye
+## Umuyoboro wa 2: Imiryango y’Icyiciro Cyihariye {#channel-2-niche-communities}
 
 Ba nyiri studio z’imyitozo ngororamubiri bahurira ahantu hihariye kuri internet:
 
@@ -57,7 +57,7 @@ Ba nyiri studio z’imyitozo ngororamubiri bahurira ahantu hihariye kuri interne
 - **Forums z’inganda** n’ahantu ho kuganirira
 - **Amatsinda ya LinkedIn** y’abanyamwuga b’imyitozo ngororamubiri
 
-### Uko Wakwitabira
+### Uko Wakwitabira {#how-to-participate}
 
 Ntukinjire ngo uhite wamamaza product yawe. Ahubwo:
 
@@ -66,7 +66,7 @@ Ntukinjire ngo uhite wamamaza product yawe. Ahubwo:
 3. **Sangiza igihe bibaye ngombwa** -- igihe umuntu abajije ku mbuga, sangiza platform yawe mu buryo busanzwe
 4. **Hanga content ifite akamaro** -- andika inyandiko ku nsanganyamatsiko nka "ibituma urubuga rwa studio y’imyitozo ngororamubiri ruba rwiza" zigana mu buryo busanzwe kuri platform yawe
 
-## Umuyoboro wa 3: Kwamamaza Binyuze muri Content
+## Umuyoboro wa 3: Kwamamaza Binyuze muri Content {#channel-3-content-marketing}
 
 Hanga content ba nyiri studio z’imyitozo ngororamubiri bashakisha:
 
@@ -77,7 +77,7 @@ Hanga content ba nyiri studio z’imyitozo ngororamubiri bashakisha:
 
 Bishyire kuri blog yo kwamamaza ya FitSite. Uko igihe gihita, iyi content izamuka mu bisubizo bya moteri z’ishakisha kandi ikazana traffic karemano iturutse ku bantu bashaka mu buryo bugaragara ibyo utanga.
 
-## Umuyoboro wa 4: Ubufatanye
+## Umuyoboro wa 4: Ubufatanye {#channel-4-partnerships}
 
 Korana n’ubucuruzi busanzwe bukorera studio z’imyitozo ngororamubiri:
 
@@ -88,7 +88,7 @@ Korana n’ubucuruzi busanzwe bukorera studio z’imyitozo ngororamubiri:
 
 Tanga komisiyo zo kohereza abakiriya cyangwa kwamamazanya. [AffiliateWP addon](/addons/affiliatewp) ishobora kugufasha gushyiraho gahunda yemewe yo koherezanya abakiriya.
 
-## Umuyoboro wa 5: Ibikorwa by’Inganda
+## Umuyoboro wa 5: Ibikorwa by’Inganda {#channel-5-industry-events}
 
 Ibikorwa by’inganda z’imyitozo ngororamubiri bigushyira imbere y’abakiriya bashoboka babarirwa mu magana:
 
@@ -99,7 +99,7 @@ Ibikorwa by’inganda z’imyitozo ngororamubiri bigushyira imbere y’abakiriya
 
 Ntukeneye ingengo y’imari nini. No kwitabira nk’umwitabiriye no kuganira n’abantu ku byo ukora bishobora kubyara leads.
 
-## Umuyoboro wa 6: Imbuga zo Kwerekana
+## Umuyoboro wa 6: Imbuga zo Kwerekana {#channel-6-showcase-sites}
 
 Kwamamaza kwawe kwiza kurusha ibindi ni imbuga z’abakiriya bawe basanzwe. Ubyemerewe:
 
@@ -108,7 +108,7 @@ Kwamamaza kwawe kwiza kurusha ibindi ni imbuga z’abakiriya bawe basanzwe. Ubye
 - Saba abakiriya banyuzwe gutanga testimonials
 - Shishikariza abakiriya kuvuga FitSite igihe babajijwe ku rubuga rwabo
 
-## Gushyiraho Gahunda yo Koherezanya Abakiriya
+## Gushyiraho Gahunda yo Koherezanya Abakiriya {#setting-up-a-referral-program}
 
 Ijambo rivuzwe n’umukiriya ni wo muyoboro wawe ukomeye cyane mu cyiciro cyihariye. Bihe isura yemewe:
 
@@ -116,7 +116,7 @@ Ijambo rivuzwe n’umukiriya ni wo muyoboro wawe ukomeye cyane mu cyiciro cyihar
 2. Ha abakiriya basanzwe igihembo ku bohereje abandi (ukwezi kumwe k’ubuntu, inguzanyo ya account, n’ibindi)
 3. Byoroshe -- bahe link yo kohereza abandi n’ubutumwa bworoshye bashobora kohereza
 
-## Gukurikirana Ibikora
+## Gukurikirana Ibikora {#tracking-what-works}
 
 Kuri buri muyoboro, kurikirana:
 
@@ -126,7 +126,7 @@ Kuri buri muyoboro, kurikirana:
 
 Ongera imbaraga mu miyoboro ikora. Hagarika imiyoboro idakora.
 
-## Ibyo Wakwitega mu Buryo Bufatika
+## Ibyo Wakwitega mu Buryo Bufatika {#realistic-expectations}
 
 - **Ukwezi 1-3**: Abakiriya 5-20, ahanini baturutse mu kwegera abantu mu buryo butaziguye no mu miryango
 - **Ukwezi 4-6**: Abakiriya 20-50, content marketing itangira gutanga umusanzu
@@ -134,7 +134,7 @@ Ongera imbaraga mu miyoboro ikora. Hagarika imiyoboro idakora.
 
 Iyi mibare iratandukana, ariko icyitegererezo ntigihinduka: abakiriya ba mbere bava mu mbaraga zitaziguye, abakiriya baza nyuma bava mu ngaruka zigenda ziyongera za content, koherezanya abakiriya, n’izina ryiza.
 
-## Ibyo Twubatse muri Iri Somo
+## Ibyo Twubatse muri Iri Somo {#what-we-built-this-lesson}
 
 - **Imiyoboro itandatu yo kubona abakiriya** ijyanye n’isoko ry’imyitozo ngororamubiri
 - **Uburyo bwo kwegera abakiriya mu buryo butaziguye** bwo kubona abakiriya ba mbere

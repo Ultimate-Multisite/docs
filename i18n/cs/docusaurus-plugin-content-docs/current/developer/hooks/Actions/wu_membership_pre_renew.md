@@ -4,11 +4,11 @@ title: Akce - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Akce: wu_membership_pre_renew
+# Akce: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Spouští se před obnovou členství.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Spouští se před obnovou členství.
 | $membership_id | `int` | ID členství. |
 | $membership | `\Membership` | Objekt členství. |
 
-### Od
+### Od {#since}
 
 - 2.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) na řádku 2204

@@ -3,9 +3,9 @@ title: تێبینی ڕەوانەکان
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# یادداشتەکانی ڕێخاندنەوە (Release Notes)
+# یادداشتەکانی ڕێخاندنەوە (Release Notes) {#release-notes}
 
-## وەرگرتنی ٢.١٣.٠ - لە ٢٠٢٦-٠٦-٠٥
+## وەرگرتنی ٢.١٣.٠ - لە ٢٠٢٦-٠٦-٠٥ {#version-2130--released-on-2026-06-05}
 
 - نوێ: پشتگیریکردنی sovereign-tenant بۆ هەژمار کڕیار، چاپی (checkout)، بڕین، سایت، فاکچۆ (invoice)، گۆڕینی قالب و مۆبایلکردنی دۆمنەکان بە شێوەیەکی باشتر کردووە بۆ ئەوەی تۆڕەکانی تەنەنت بتوانن کڕیارەکان دەگەڕێنەوە سەر سایت سەرەکی بۆ کارە بەڕێوەبردراوەکان.
 - نوێ: چاککردنی مەرجەکانی نوێکردنەوەی تایبەتمەندییەکان (renewal-credential checks) بۆ ئەندامبوونی دۆخراو، بۆ ئەوەی گیت وێیەکانی کارلۆکڵ (gateways) دەتوانن ئۆتۆماتیک ڕێکخستنی دووبارەیان بەهێز بکەن کاتێک مێژووی بڕین، سابسکرایبکردن یان توکنە فاکچۆیەکی پارێزراو نەبووە.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - چاک: نوێکردنەوەی ئەندامبوونی، نیشاندانی کۆتایی هاتنی کارکردن، و حاڵەتە سنووردارەکانی کۆبکەوتنی پارەکان زیاتر ڕێگری لە کاتێک دەکەن کە بە شێوەیەکی فەرمیی دەچنەوە یان شکست دەدەن.
 - باشتر کردراوە: ناساندنی WordPress تا 7.0 تاقیکردنەوەی ئەنجامدار، پڕۆژەکانی Vue لە سەرچاوەکانی npm دەدرێنەوە بۆ دروستکردنی نیشانییەکان (assets)، و گۆڕینی ئەنجامدار Cypress زیاتر کار دەکات لەسەر ڕێگەی چاپی، سیستەمەکان (setup)، SSO، و گیت وێیەکانی پاراستن.
 
-## Version 2.12.0 — Baaraye 2.12.0 — Liqetirî 2026-05-15
+## Version 2.12.0 — Baaraye 2.12.0 — Liqetirî 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - New: Hostinger (hPanel) wekî pênojên poshtî hewatekirine bûye bi integrasyon ji bo mapiya domèn (domain mapping).
 - New: Site Exporter niha ji bo hilberîna paketên importê ji bo restorasyonên site-ê berxwedan a neteweyî bi rêbazên bêhnê.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: CLI-ya Site Exporter niha seleksiyona rast a site-ê neteweyî bi default hatine parastin.
 - Improved: wp-cli-ya paketê plugin ji paketê pluginê hatine hatine hatirandin, ku ji bo kirdavên pluginê girêdaya (plugin size) kesht e.
 
-## Version 2.11.0 — Baaraye 2.11.0 — Liqetirî 2026-05-11
+## Version 2.11.0 — Baaraye 2.11.0 — Liqetirî 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - New: Site exports niha paketên `index.php` bi xwe ji bo hilberîna wê ji bo ku ZIP-ê bi host-a nû bi rêbazên pluginê vekirin bêy ku plugineke cuda hatibin asta.
 - New: Network export li ser mîna administratoran dikare hemû subsite'ên bi yek arşiv derxistin ji pagafay admin a Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - New: Editore form-a checkout diyar dike de kawên ku productê bi fel a zimanî (required field) ji bo şikirtin hatibû asta.
 - New: Tabê setarkirina Import/Export niha bi rastî bi parastina bi vêçeyê (scope) xwe û li ser aliyê Site Export derxistin.
 
-## Version 2.10.0 — Baaraye 2.10.0 — Liqetirî 2026-05-05
+## Version 2.10.0 — Baaraye 2.10.0 — Liqetirî 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - نوێ: سیستمی ڕێنمایی (wizard) بۆ PayPal بە شێوەیەکی دەستیی لەگەڵ زانیاریی تایبەت و بەکارھێنانی OAuth بۆ گۆڕینی ئاسان و پێکەوەی گۆڕینی گۆڕایندا.
 - نوێ: پلەکان (customer panel) کە پێشتر بگۆڕاو، دابەشکردنی نوی لەگەڵ کارتێکی **current-template**، تۆڕێکی بەردەوام (persistent grid)، و دغدغه **Reset current template** گرتراوە.
@@ -51,7 +51,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - چارەسەر: پەیتی SSO کە فیلترکراوە، لە هەموو ڕێگاکانی لاگیندا ڕەوا بوو.
 - چارەسەر: هەڵبژاردنی ناسنامەی سایتێک کە پڕ نییە پارێزراوەتەوە کاتێک دەکرێت سیف کرد.
 
-## وەرگرت 2.9.0 — لە ٢٠٢٦-٠٤-٣٠
+## وەرگرت 2.9.0 — لە ٢٠٢٦-٠٤-٣٠ {#version-290--released-on-2026-04-30}
 
 - نوێ: دابەشکردن و گرتنی فایلەکان بۆ سایتێکی تەنها یەک (Single-site export and import) لە خاڵەکانی **Tools > Export & Import** زیاد کرا.
 - چارەسەر: فایلە ZIP ئەڤات بە ڕێگەی endpointی دابگرتەوە کە پەیوەندی بە زانیاریی ناساندنی تایبەت هەیە.
@@ -65,7 +65,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - چارەسەر: Tour IDs بە underscore لە کلای سیستەمی کارپێکردندا ڕێکخراونەوە.
 - باشترکراو: ZipArchive ئێستا بەکار دێت لە جیاتی Alchemy/Zippy بۆ یەکگرتوویی باشتر.
 
-## وەرگرت 2.8.0 — لە ٢٠٢٦-٠٤-٢٩
+## وەرگرت 2.8.0 — لە ٢٠٢٦-٠٤-٢٩ {#version-280--released-on-2026-04-29}
 
 - نوێ: دۆپۆچکی Jumper بۆ ڕێکخستنی Other Options لە UI ی تنظیماتەکان زیاد کرا.
 - نوێ: ستوونی Status بۆ لیستەکەی فۆرمەکانی checkout زیاد کرا.

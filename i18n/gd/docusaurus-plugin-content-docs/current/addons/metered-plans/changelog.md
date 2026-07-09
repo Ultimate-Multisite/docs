@@ -3,7 +3,7 @@ title: Loga atharrachaidhean nam planaichean meataichte
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Loga Atharrachaidhean nam Planaichean Meataichte
+# Loga Atharrachaidhean nam Planaichean Meataichte {#metered-plans-changelog}
 
 Tionndadh 1.1.0 - Air fhoillseachadh air 2026-05-05
 - Ùr: Cunntasachadh thòcan AI airson fo-làraichean ioma-làraich — lorg agus cuir cunntas air cleachdadh thòcan AI thar làraichean luchd-ceannach le reataichean gach tòcan a ghabhas rèiteachadh
@@ -14,17 +14,17 @@ Tionndadh 1.1.0 - Air fhoillseachadh air 2026-05-05
 - Ceartachadh: Chaidh mearachdan marbhtach agus duilgheadasan tòiseachaidh dùbailte air luchdachadh a’ phlugain fhuasgladh
 - Leasaichte: Chaidh sgriobt npm check-env a chur ris gus am bi àrainneachdan luchd-leasachaidh gan rèiteachadh fhèin air a’ chiad ruith
 
-### 1.0.3
+### 1.0.3 {#103}
 * Air ùrachadh gu Plugin Update Checker v5
 * Chaidh cinn-phlugain WordPress ùr-nodha a chur ris
 * Co-chòrdalachd le tionndaidhean WordPress as ùire air a leasachadh
 * Coileanadh lorg cleachdaidh air a neartachadh
 
-### 1.0.2
+### 1.0.2 {#102}
 * Ceartachaidhean bhugaichean agus leasachaidhean coileanaidh
 * Aithris cleachdaidh air a neartachadh
 
-### 1.0.0
+### 1.0.0 {#100}
 * A’ chiad fhoillseachadh
 * Prìomh ghnìomhachd cunntasachaidh mheataichte
 * Lorg cleachdaidh agus àireamhachadh cus-cleachdaidh

@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Ultimate Multisite: Płatności GoCardless
 
 Pozwól swoim klientom płacić za subskrypcje i produkty Ultimate Multisite za pomocą polecenia zapłaty (Direct Debit) z wykorzystaniem GoCardless!
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij plik 'ultimate-multisite-gocardless' do katalogu '/wp-content/plugins/'
 2. Aktywuj plugin w menu 'Plugins' w WordPress
 3. Postępuj zgodnie z instrukcjami kreatora, aby skonfigurować plugin
 
-## Przewodnik użycia
+## Przewodnik użycia {#usage-guide}
 
 _GoCardless_ to bramka płatnicza dostępna w **Europie i Wielkiej Brytanii**, która umożliwia płatności za pomocą **polecenia zapłaty (Direct Debit)**.
 
@@ -29,7 +29,7 @@ Ten poradnik wyjaśni, jak skonfigurować _GoCardless_, aby zacząć przyjmować
 
 _**Uwaga: GoCardless działa tylko z następującymi walutami:**_ **EUR, GBP, AUD, SEK i DKK.**
 
-## Instalowanie dodatku
+## Instalowanie dodatku {#installing-the-add-on}
 
 Najpierw musisz zainstalować dodatek GoCardless dla Ultimate Multisite. Możesz to zrobić, przechodząc do **Ultimate Multisite > Ustawienia > Add-ons (w bocznym panelu)**. Następnie wybierz dodatek GoCardless z listy.
 
@@ -37,7 +37,7 @@ Po zainstalowaniu i aktywacji dodatku przejdź do **Ultimate Multisite > Ustawie
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Uzyskanie tokena dostępu
+## Uzyskanie tokena dostępu {#getting-an-access-token}
 
 Utwórz konto na _GoCardless_ (lub na środowisku testowym _GoCardless_ sandbox, jeśli chcesz **najpierw przetestować**, co jest zalecane). Następnie, po zalogowaniu, przejdź do elementu menu **Developers**.
 
@@ -61,7 +61,7 @@ Upewnij się, że wklejasz go do pola po prawej stronie. Jeśli jest to **live t
 
 To wszystko z pierwszym krokiem. Następnie musisz skonfigurować nasłuchiwany webhook (webhook listener).
 
-## Konfiguracja nasłuchiwanych webhooków
+## Konfiguracja nasłuchiwanych webhooków {#setting-up-the-webhook-listener}
 
 Gdy mamy do czynienia z subskrypcjami, Ultimate Multisite musi być na bieżąco z zmianami statusu subskrypcji, nowymi płatnościami i innymi takimi rzeczami.
 

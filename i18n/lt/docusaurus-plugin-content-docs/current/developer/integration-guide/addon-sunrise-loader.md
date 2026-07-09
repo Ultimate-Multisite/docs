@@ -3,17 +3,17 @@ title: Priedo Sunrise failo įkėliklis
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise failų įkėliklis
+# Addon Sunrise failų įkėliklis {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 prideda sunrise plėtinio įkėliklį priedams ir pasirinktoms MU plugin integracijoms, kurioms reikia veikti WordPress sunrise paleidimo metu neredaguojant sugeneruoto `wp-content/sunrise.php` failo.
 
-## Kada jį naudoti
+## Kada jį naudoti {#when-to-use-it}
 
 Naudokite sunrise plėtinį, kai jūsų integracija turi veikti prieš įkeliant įprastus pluginus, pavyzdžiui, pasirinktiniam domenų maršrutizavimui, konkrečiam pagrindiniam kompiuteriui skirtam užklausų apdorojimui arba ankstyviems tinklo paleidimo koregavimams.
 
 Įprastoms integracijoms verčiau naudokite įprastus WordPress pluginus, MU-pluginus ir dokumentuotus Ultimate Multisite hooks. Sunrise kodas veikia labai anksti, todėl turėtų likti mažas, atsparus klaidoms ir be priklausomybių.
 
-## Failų pavadinimų taisyklė
+## Failų pavadinimų taisyklė {#file-naming-convention}
 
 Sukurkite PHP failą pavadinimu `sunrise.php` priedo kataloge, kurio pavadinimas prasideda `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Atitinkantys failai įkeliami abėcėlės tvarka pagal priedo kelią.
 
-## Kur įdėti failą
+## Kur įdėti failą {#where-to-place-the-file}
 
 Įdėkite failą į priedo, kuriam priklauso sunrise elgsena, šakninį katalogą:
 
@@ -45,7 +45,7 @@ Nuskaitymas išsprendžiamas `WP_CONTENT_DIR` atžvilgiu, o ne pagal dabartinę 
 
 Neredaguokite sugeneruoto `wp-content/sunrise.php` failo tiesiogiai. Įkėliklis leidžia pasirinktiniam kodui išplėsti sunrise elgseną neatšakojant pagrindinio sunrise failo, kurį Ultimate Multisite įdiegia ir atnaujina.
 
-## Prieinami hooks ir filtrai
+## Prieinami hooks ir filtrai {#hooks-and-filters-available}
 
 Addon sunrise failai veikia po to, kai Ultimate Multisite domenų susiejimas įkeliamas, ir prieš WordPress paleidžiant `ms_loaded`. Šiuo momentu sunrise failas gali:
 
@@ -58,7 +58,7 @@ Ultimate Multisite paleidžia `wu_sunrise_loaded`, kai jo sunrise įkėliklis ba
 
 Kvieskite tik tas funkcijas, kurios sunrise fazėje jau yra įkeltos. Venkite daug duomenų bazės resursų reikalaujančio darbo, šablonų atvaizdavimo, HTTP užklausų ir kodo, kuris daro prielaidą, kad įprasta pluginų įkėlimo tvarka jau baigta.
 
-## Minimalus pavyzdys
+## Minimalus pavyzdys {#minimal-example}
 
 ```php
 <?php

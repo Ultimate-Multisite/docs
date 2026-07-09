@@ -3,14 +3,14 @@ title: Integración con Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Panel de Control Integración
+# Hestia Panel de Control Integración {#hestia-control-panel-integration}
 
 Esta guía explica cómo configurar la integración Ultimate Multisite Hestia para que los dominios mapeados en su red se añadan (y eliminen) automáticamente como Alias de Dominio Web en Hestia.
 
 - Hestia CLI reference: v-add-web-domain-alias / v-delete-web-domain-alias
 - Official REST API doc: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Qué Hace
+## Qué Hace {#what-it-does}
 
 - Cuando un dominio se mapea en Ultimate Multisite, la integración llama a la API de Hestia para ejecutar:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
@@ -18,7 +18,7 @@ Esta guía explica cómo configurar la integración Ultimate Multisite Hestia pa
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Opcionalmente agrega/elimina el alias `www.` dependiendo de su configuración de “Auto-create www subdomain” en la configuración de mapeo de dominios.
 
-## Requisitos Previos
+## Requisitos Previos {#prerequisites}
 
 - Un dominio Web de Hestia existente que ya apunte a su instalación de WordPress. La integración adjuntará alias a este dominio base.
 - Acceso a la API de Hestia habilitado. Puede autenticarse usando una contraseña o un hash/token de API.
@@ -26,7 +26,7 @@ Esta guía explica cómo configurar la integración Ultimate Multisite Hestia pa
 See Hestia’s REST API docs for enabling API access and authentication details:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Configuración (Asistente → Integraciones → Hestia)
+## Configuración (Asistente → Integraciones → Hestia) {#configuration-wizard--integrations--hestia}
 
 Proporcione los siguientes valores:
 
@@ -45,18 +45,18 @@ Proporcione los siguientes valores:
 
 You can let the wizard inject these constants into `wp-config.php`, or define them manually.
 
-## Verificando la Configuración
+## Verificando la Configuración {#verifying-setup}
 
 - En el paso “Testing” del asistente, el plugin llama a `v-list-web-domains <WU_HESTIA_ACCOUNT> json` a través de la API. Una respuesta exitosa confirma la conectividad y autenticación.
 - Después de mapear un dominio, verifique en Hestia: Web > el dominio base > Aliases. Debería ver el nuevo alias agregado.
 
-## Notas y Consejos
+## Notas y Consejos {#notes--tips}
 
 - Asegúrese de que `WU_HESTIA_WEB_DOMAIN` ya exista y sea propiedad de `WU_HESTIA_ACCOUNT`.
 - Si se requiere SSL, gestione los certificados en Hestia. Esta integración solo maneja alias.
 - El plugin también puede agregar/eliminar `www.<domain>` dependiendo de su configuración de “www subdomain” en el mapeo de dominios.
 
-## Ejemplo de Llamada API (cURL)
+## Ejemplo de Llamada API (cURL) {#example-api-call-curl}
 
 A continuación se muestra un ejemplo conceptual (ajuste a su entorno). Consulte el documento oficial para los parámetros exactos.
 
@@ -76,13 +76,13 @@ cmd=v-add-web-domain-alias
 
 Para eliminar, use `cmd=v-delete-web-domain-alias` y los mismos argumentos.
 
-## Solución de Problemas
+## Solución de Problemas {#troubleshooting}
 
 - Error HTTP de la API: verifique que `WU_HESTIA_API_URL` sea accesible e incluya `/api`.
 - Errores de autenticación: confirme que `WU_HESTIA_API_USER` y `WU_HESTIA_API_PASSWORD` o `WU_HESTIA_API_HASH` estén configurados.
 - “Missing account/base domain” en los registros: asegúrese de que `WU_HESTIA_ACCOUNT` y `WU_HESTIA_WEB_DOMAIN` estén establecidos y válidos en Hestia.
 
-## Referencias
+## Referencias {#references}
 
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Hestia CLI Reference (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

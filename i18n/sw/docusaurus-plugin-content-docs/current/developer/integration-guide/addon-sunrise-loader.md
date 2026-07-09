@@ -3,17 +3,17 @@ title: Kiambatisho Kipakaji Faili wa Dhoho
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Msaidizi wa Kufungua Faili ya Sunrise ya Addon
+# Msaidizi wa Kufungua Faili ya Sunrise ya Addon {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 inaongeza msaidizi wa kufungua (loader) wa 'sunrise' kwa ajili ya add-ons na viunganisho vya custom MU-plugin ambavyo vinahitaji kuendesha wakati wa mchakato wa kuanzisha (bootstrapping) wa WordPress sunrise bila kuhariri faili ya `wp-content/sunrise.php` iliyoundwa.
 
-## Lini kutatumia
+## Lini kutatumia {#when-to-use-it}
 
 Tumia msaidizi wa sunrise wakati viunganisho vyako vinahitaji kuendesha kabla ya plugins za kawaida kuwekwa, kwa mfano, upangaji wa njia wa nyanja maalum (custom domain routing), kushughulikia maombi yanayotokana na host maalum, au marekebisho ya awali ya mtandao.
 
 Kwa viunganisho vya kawaida, ni bora kutumia plugins za kawaida za WordPress, MU-plugins, na hooks zilizodokumentishwa za Ultimate Multisite. Kodi ya sunrise inakimbia mapema sana na inapaswa kuwa ndogo, inayojitetea (defensive), na haihitaji kutegemea kitu kingine (dependency-free).
 
-## Kanuni ya kutii jina la faili
+## Kanuni ya kutii jina la faili {#file-naming-convention}
 
 Uundeni faili ya PHP yenye jina `sunrise.php` ndani ya saraka ya addon ambayo jina lake linanuanza na `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Faili zinazofanana hufunguliwa kwa mpangilio wa alfabeti kulingana na njia ya addon.
 
-## Wapi pa kuweka faili
+## Wapi pa kuweka faili {#where-to-place-the-file}
 
 Weka faili hiyo katika saraka kuu ya addon inayomiliki tabia ya sunrise:
 
@@ -45,7 +45,7 @@ Ukaguzi huu unapatikana kulingana na `WP_CONTENT_DIR`, si thamani ya sasa ya `WP
 
 Usihariri moja kwa moja faili iliyoundwa `wp-content/sunrise.php`. Msaidizi hufanya kazi ya kuruhusu kodi ya custom kuongeza tabia ya sunrise bila kuunda 'fork' (kuhariri nakala) ya faili kuu ya sunrise ambayo Ultimate Multisite inaifunga na kuiboresha.
 
-## Hooks na filters zinazopatikana
+## Hooks na filters zinazopatikana {#hooks-and-filters-available}
 
 Faili za sunrise za addon hufanya kazi baada ya upangaji wa nyanja (domain mapping) wa Ultimate Multisite kuwekwa na kabla ya WordPress kuendesha `ms_loaded`. Katika hatua hii, faili ya sunrise inaweza:
 
@@ -58,7 +58,7 @@ Ultimate Multisite inatoa `wu_sunrise_loaded` baada ya msaidizi wake wa sunrise 
 
 Zitumie tu kazi (functions) ambazo tayari zimewekwa katika awamu ya sunrise. Epuka kazi nyingi zinazohusiana na database, kuonyesha template, maombi ya HTTP, na kodi inayodhani kuwa mpangilio wa kawaida wa kuweka plugins umekamilika.
 
-## Mfano wa kiwango cha chini
+## Mfano wa kiwango cha chini {#minimal-example}
 
 ```php
 <?php

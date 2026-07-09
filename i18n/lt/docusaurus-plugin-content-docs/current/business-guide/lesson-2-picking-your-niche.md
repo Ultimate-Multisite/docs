@@ -3,19 +3,19 @@ title: '2 pamoka: Savo nišos pasirinkimas'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# 2 pamoka: savo nišos pasirinkimas
+# 2 pamoka: savo nišos pasirinkimas {#lesson-2-picking-your-niche}
 
 1 pamokoje nustatėme, kodėl niša pranašesnė už bendrinį sprendimą. Dabar jums reikia pasirinkti savąją. Šioje pamokoje pateikiama struktūra, kaip rasti ir patikrinti nišą prieš investuojant laiką į jos kūrimą.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 Apibrėžėme FitSite koncepciją: svetainių platformą fitneso studijoms. Bet kaip konkrečiai priėjome prie fitneso studijų? Šioje pamokoje pereisime procesą, kad galėtumėte jį pritaikyti ieškodami savo nišos.
 
-## Trys kriterijai
+## Trys kriterijai {#the-three-criteria}
 
 Gera niša svetainių platformai atitinka tris sąlygas:
 
-### 1. Jiems reikia svetainių, bet sunku gauti geras
+### 1. Jiems reikia svetainių, bet sunku gauti geras {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Ieškokite industrijų, kuriose:
 
@@ -26,7 +26,7 @@ Ieškokite industrijų, kuriose:
 
 **Fitneso studijos tinka**: nariai tikisi internete rasti užsiėmimų tvarkaraščius, kainodarą ir rezervaciją. Dauguma studijų svetainių yra pasenusios arba sukurtos pagal bendrinius šablonus, kurie neatlieka paskirties.
 
-### 2. Verslai gali sau leisti mėnesinę prenumeratą
+### 2. Verslai gali sau leisti mėnesinę prenumeratą {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Jūsų tiksliniai klientai turi būti:
 
@@ -36,7 +36,7 @@ Jūsų tiksliniai klientai turi būti:
 
 **Fitneso studijos tinka**: jos jau moka už rezervavimo programinę įrangą, mokėjimų apdorojimą ir rinkodaros įrankius. Svetainės prenumerata yra natūralus papildymas.
 
-### 3. Jie bendrauja tarpusavyje
+### 3. Jie bendrauja tarpusavyje {#3-they-talk-to-each-other}
 
 Geriausios nišos turi:
 
@@ -46,9 +46,9 @@ Geriausios nišos turi:
 
 **Fitneso studijos tinka**: studijų savininkai dalyvauja fitneso industrijos renginiuose, internetinėse bendruomenėse ir dažnai dalijasi įrankiais bei paslaugomis su kolegomis.
 
-## Kaip rasti nišų kandidates
+## Kaip rasti nišų kandidates {#how-to-find-niche-candidates}
 
-### Pradėkite nuo to, ką žinote
+### Pradėkite nuo to, ką žinote {#start-with-what-you-know}
 
 Jūsų esama patirtis yra pranašumas. Apsvarstykite:
 
@@ -56,7 +56,7 @@ Jūsų esama patirtis yra pranašumas. Apsvarstykite:
 - Pomėgius ar interesus, kurių bendruomenę suprantate
 - Profesinius tinklus, kuriems jau priklausote
 
-### Ieškokite skausmo signalų
+### Ieškokite skausmo signalų {#look-for-pain-signals}
 
 Ieškokite įrodymų, kad nišoje esantiems verslams sunku su svetainėmis:
 
@@ -65,7 +65,7 @@ Ieškokite įrodymų, kad nišoje esantiems verslams sunku su svetainėmis:
 - Peržiūrėkite tikras svetaines nišoje -- ar dauguma jų prastos?
 - Patikrinkite, ar yra konkurentų ir kaip gerai jie aptarnauja rinką
 
-### Įvertinkite ekonomiką
+### Įvertinkite ekonomiką {#evaluate-the-economics}
 
 Kiekvienai kandidatei nišai įvertinkite:
 
@@ -73,11 +73,11 @@ Kiekvienai kandidatei nišai įvertinkite:
 - **Noras mokėti**: kiek jie šiuo metu išleidžia panašiems įrankiams?
 - **Gyvavimo vertės potencialas**: ar šie verslai stabilūs, ar greitai atsisako paslaugų?
 
-## Nišos patvirtinimas
+## Nišos patvirtinimas {#validating-your-niche}
 
 Prieš ką nors kurdami, patvirtinkite paklausą:
 
-### Kalbėkite su potencialiais klientais
+### Kalbėkite su potencialiais klientais {#talk-to-potential-customers}
 
 Susisiekite su 10–15 verslo savininkų savo tikslinėje nišoje. Paklauskite:
 
@@ -88,17 +88,17 @@ Susisiekite su 10–15 verslo savininkų savo tikslinėje nišoje. Paklauskite:
 
 Jūs dar neparduodate. Jūs klausotės.
 
-### Patikrinkite konkurentų aplinką
+### Patikrinkite konkurentų aplinką {#check-competitor-landscape}
 
 - **Nėra konkurentų**: tai gali reikšti, kad nėra paklausos, arba tai gali būti neišnaudota galimybė. Pokalbiai su klientais parodys, kuris variantas teisingas.
 - **Keli konkurentai**: geras ženklas. Patvirtina paklausą. Išnagrinėkite, ką jie daro gerai ir kur jiems trūksta.
 - **Daug konkurentų**: sunkiau įeiti, bet vis dar įmanoma, jei galite aiškiai išsiskirti.
 
-### Sukurkite nukreipimo puslapį
+### Sukurkite nukreipimo puslapį {#build-a-landing-page}
 
 Prieš kurdami platformą, sukurkite paprastą nukreipimo puslapį, kuris aprašo jūsų nišinį sprendimą, ir rinkite el. pašto registracijas. Paleiskite nedidelį kiekį tikslinės reklamos, kad patikrintumėte susidomėjimą. Jei žmonės registruojasi, turite patvirtinimą.
 
-## Taikymas FitSite
+## Taikymas FitSite {#applying-this-to-fitsite}
 
 Štai kaip FitSite buvo įvertinta pagal kriterijus:
 
@@ -112,7 +112,7 @@ Prieš kurdami platformą, sukurkite paprastą nukreipimo puslapį, kuris apraš
 
 Patvirtinimas patvirtino galimybę. Dabar kuriame.
 
-## Nišų idėjos apsvarstymui
+## Nišų idėjos apsvarstymui {#niche-ideas-to-consider}
 
 Jei fitnesas nėra jūsų rinka, štai kitos nišos, kurios atitinka kriterijus:
 
@@ -127,7 +127,7 @@ Jei fitnesas nėra jūsų rinka, štai kitos nišos, kurios atitinka kriterijus:
 
 Kiekviena iš jų turi tas pačias savybes: aiškius svetainės poreikius, gebėjimą mokėti ir bendruomenės rekomendacijas iš lūpų į lūpas.
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Nišos pasirinkimo struktūra**: trys kriterijai bet kuriai nišai įvertinti
 - **Patvirtinimo metodai**: pokalbiai su klientais, konkurentų analizė, nukreipimo puslapio testavimas

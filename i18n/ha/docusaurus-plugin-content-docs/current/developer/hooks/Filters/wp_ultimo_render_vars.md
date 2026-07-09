@@ -4,11 +4,11 @@ title: Tacewa - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Tacewa: wp_ultimo_render_vars
+# Tacewa: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Bai wa masu haɓaka plugin damar ƙara ƙarin variable zuwa yanayin render a duniya baki ɗaya.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Bai wa masu haɓaka plugin damar ƙara ƙarin variable zuwa yanayin render a dun
 | $view | `string` | Sunan view da za a render. |
 | $default_view | `string` | Sunan fallback_view |
 
-### Tun daga
+### Tun daga {#since}
 
 - 2.0.0
-### Tushe
+### Tushe {#source}
 
 An bayyana a cikin [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) a layi na 31
 
 
-## Abubuwan da ake mayarwa
+## Abubuwan da ake mayarwa {#returns}

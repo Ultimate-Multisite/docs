@@ -3,19 +3,19 @@ title: 'Somo la 10: Siku ya Uzinduzi'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Somo la 10: Siku ya Kutangaza
+# Somo la 10: Siku ya Kutangaza {#lesson-10-launch-day}
 
 Kila kitu kimejengwa. Kabla ya kufungua milango, somo hili linakupitia orodha ya vifaa kabla ya kuanzisha ili kuhakikisha hakuna kitu kilichovunjika, kimepotea, au kinachoweza kuwapotosha wateja.
 
-## Tulipoacha
+## Tulipoacha {#where-we-left-off}
 
 FitSite ina templates, mipango, malipo (checkout), branding, onboarding, na bei zote zimepangishwa. Sasa tunathibitisha kila kitu kinafanya kazi na kuanza kuishi (go live).
 
-## Orodha ya Vifaa Kabla ya Kutangaza
+## Orodha ya Vifaa Kabla ya Kutangaza {#pre-launch-checklist}
 
 Nifanye kazi kila kipengele. Usapiti chochote.
 
-### Miundombinu ya Jukwaa (Platform Infrastructure)
+### Miundombinu ya Jukwaa (Platform Infrastructure) {#platform-infrastructure}
 
 - [ ] Hosting imestawi na inafanya kazi vizuri chini ya mzigo (load)
 - [ ] Wildcard SSL imefunguliwa na subdomain zote zinatumia HTTPS
@@ -23,7 +23,7 @@ Nifanye kazi kila kipengele. Usapiti chochote.
 - [ ] Backups zimepangishwa na kutibiwa (rejesha angalau moja kuthibitisha)
 - [ ] Ufuatiliaji (Monitoring) umewekwa -- utajua ikiwa jukwaa limekufa
 
-### Templates (Muundo wa Tovuti)
+### Templates (Muundo wa Tovuti) {#templates}
 
 - [ ] Templates zote tatu zinapakuliwa vizuri kwenye tovuti mpya
 - [ ] Maudhui ya mfano (Placeholder content) ni muhimu na hayana makosa ya kuandika
@@ -32,7 +32,7 @@ Nifanye kazi kila kipengele. Usapiti chochote.
 - [ ] Kasi ya kupakuliwa kwa ukurasa ni inayokubalika (jaribu kwa zana kama GTmetrix au PageSpeed Insights)
 - [ ] Hakuna viungo vilivyovunjika au mali zilizopotea kwenye template yoyote
 
-### Mipango na Bidhaa (Plans and Products)
+### Mipango na Bidhaa (Plans and Products) {#plans-and-products}
 
 - [ ] Mipango mitatu yote ni ya kufanya kazi na inaonekana
 - [ ] Maelezo ya mipango ni sahihi na inalenga eneo maalum
@@ -42,7 +42,7 @@ Nifanye kazi kila kipengele. Usapiti chochote.
 - [ ] Ongezeko la agizo (Order bumps) yanaonekana vizuri wakati wa malipo (checkout)
 - [ ] Vikwazo vya plugin na theme vinatumiwa kwa usahihi kwa kila mpango
 
-### Mchakato wa Malipo (Checkout Flow)
+### Mchakato wa Malipo (Checkout Flow) {#checkout-flow}
 
 - [ ] Kamilisha usajili kamili wa majaribio kwenye kila mpango (tumia hali ya malipo ya majaribio)
 - [ ] Uchaguzi wa template unaonyesha templates sahihi kwa kila mpango
@@ -52,7 +52,7 @@ Nifanye kazi kila kipengele. Usapiti chochote.
 - [ ] Mteja anaweza kuingia kwenye tovuti yake mpya mara moja
 - [ ] Nambari za punguzo zinafanya kazi kwa usahihi
 
-### Branding (Jina la Biashara)
+### Branding (Jina la Biashara) {#branding}
 
 - [ ] Ukurasa wa kuingia unaonyesha branding ya FitSite
 - [ ] Dashboard ya admin inaonyesha branding ya FitSite
@@ -60,7 +60,7 @@ Nifanye kazi kila kipengele. Usapiti chochote.
 - [ ] Matangazo (Invoices) yanaonyeshwa kwa usahihi na maelezo yako ya biashara
 - [ ] Tovuti ya masoko (Marketing site) ni ya kufanya kazi na inalinganisha na fomu ya malipo
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Widget ya Quick Start inaonekana kwenye dashboards za wateja wapya
 - [ ] Viungo vyote vya Quick Start vinalenga kurasa sahihi
@@ -68,7 +68,7 @@ Nifanye kazi kila kipengele. Usapiti chochote.
 - [ ] Makala za kiongozi (Knowledge base articles) zimetolewa na zinapatikana
 - [ ] Ukurasa wa akaunti unaonyesha taarifa sahihi ya mpango na chaguo za kuboresha
 
-### Kisheria na Biashara
+### Kisheria na Biashara {#legal-and-business}
 
 - [ ] Masharti ya huduma (Terms of service) yamechapishwa na yameunganishwa kutoka malipo
 - [ ] Sera ya faragha (Privacy policy) imechapishwa na inapatikana
@@ -77,11 +77,11 @@ Nifanye kazi kila kipengele. Usapiti chochote.
 - [ ] Lango la malipo (Payment gateway) liko katika hali ya moja kwa moja (si hali ya majaribio)
 - [ ] Mpangilio wa kodi ni sahihi kwa eneo lako
 
-## Kuanzisha kwa Hatua (Soft Launch) vs. Kutangaza kwa Umma (Hard Launch)
+## Kuanzisha kwa Hatua (Soft Launch) vs. Kutangaza kwa Umma (Hard Launch) {#soft-launch-vs-hard-launch}
 
 Fikiria kuanzisha kwa hatua mbili:
 
-### Hatua ya 1: Kuanzisha kwa Hatua (Soft Launch)
+### Hatua ya 1: Kuanzisha kwa Hatua (Soft Launch) {#phase-1-soft-launch}
 
 Waombe wamiliki wa studio za afya 5-10 wa usajili kabla ya kutangazwa kwa umma. Hawa ndio wateja wako wa beta. Wape punguzo kubwa (50% maisha yote, au miezi 3 ya bure) badala ya:
 
@@ -91,7 +91,7 @@ Waombe wamiliki wa studio za afya 5-10 wa usajili kabla ya kutangazwa kwa umma. 
 
 Hii inakupa maoni halisi ya wateja na tovuti halisi za kuonyesha kabla ya kufunguliwa kwa umma.
 
-### Hatua ya 2: Kutangaza kwa Umma (Public Launch)
+### Hatua ya 2: Kutangaza kwa Umma (Public Launch) {#phase-2-public-launch}
 
 Baada ya kuingiza maoni ya soft launch:
 
@@ -100,7 +100,7 @@ Baada ya kuingiza maoni ya soft launch:
 - Anza kupata wateja (Somo la 11)
 - Tangaza kwenye njia husika za biashara ya afya
 
-## Vitendo vya Siku ya Kutangaza
+## Vitendo vya Siku ya Kutangaza {#launch-day-actions}
 
 Siku unapoingia kwa umma:
 
@@ -110,7 +110,7 @@ Siku unapoingia kwa umma:
 4. **Kuwa tayari** -- wateja wako wa kweli wa kwanza wanaweza kuhitaji msaada, na majibu ya haraka yanajenga uaminifu
 5. **Sherehe kwa muda mfupi** -- kisha urudi kwenye kazi
 
-## Nini kinaweza kenda vibaya
+## Nini kinaweza kenda vibaya {#what-can-go-wrong}
 
 Jitayarishe kwa:
 
@@ -120,7 +120,7 @@ Jitayarishe kwa:
 - **Utendaji chini ya mzigo**: Ikiwa unapata ongezeko la trafiki, jua jinsi ya kupanua hosting yako
 - **Kuchanganyikiwa kwa mteja**: Kuwa na knowledge base na njia za msaada tayari
 
-## Mtandao wa FitSite Hadi Sasa
+## Mtandao wa FitSite Hadi Sasa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Niliyojenga Somo Hili
+## Niliyojenga Somo Hili {#what-we-built-this-lesson}
 
 - **Orodha kamili ya vifaa kabla ya kuanzisha** inayoangazia miundombinu, maudhui, malipo, na kisheria
 - **Mkakati wa soft launch** kupata maoni halisi kabla ya kutangaza kwa umma

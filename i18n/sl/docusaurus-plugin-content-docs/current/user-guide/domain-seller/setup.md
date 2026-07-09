@@ -3,21 +3,21 @@ title: Nastavitve in konfiguracija ponudnika
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Prodajalec domen: Postavitev in konfiguracija ponudnikov
+# Prodajalec domen: Postavitev in konfiguracija ponudnikov {#domain-seller-setup-and-provider-configuration}
 
 Dodatek Domain Seller prinaša s vodnikom za postavo, ki vas vodi skozi vsak nujno korak. Ta stran pokriva tok vodnika in kako konfigurirati ali ponovno konfigurirati ponudnike po tem.
 
-## Zahtevi
+## Zahtevi {#requirements}
 
 - **Multisite Ultimate** v2.4.12 ali novje verzije, aktiviran na omrežju
 - **PHP** 7.4+
 - API podatki za vsaj enega podpornega registratorja
 
-## Postavitev prvič (First-run setup wizard)
+## Postavitev prvič (First-run setup wizard) {#first-run-setup-wizard}
 
 Postavitev vodnik se samčenoma sproži prvič, ko aktivirate dodatek na omrežju. Je na voljo tudi v katerem koli času pod **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Korak 1 — Izberite ponudnika (provider)
+### Korak 1 — Izberite ponudnika (provider) {#step-1--choose-a-provider}
 
 Izberite registrator zanje povezati. Podporana možnosti:
 
@@ -33,7 +33,7 @@ Izberite registrator zanje povezati. Podporana možnosti:
 | NameSilo | Ne | Ne |
 | Enom | Da | Ne |
 
-### Korak 2 — Vnesite podatke (credentials)
+### Korak 2 — Vnesite podatke (credentials) {#step-2--enter-credentials}
 
 Vsak ponudnik ima različne polja za podatke:
 
@@ -57,17 +57,17 @@ Vsak ponudnik ima različne polja za podatke:
 
 Preverite **Sandbox mode**, če je na voljo, da preizkusite z testno okolico ponudnika pred uporabo v živo.
 
-### Korak 3 — Preizkus konekcije
+### Korak 3 — Preizkus konekcije {#step-3--test-the-connection}
 
 Kliknite na **Test Connection**. Wizard pošlje lahkotni API poziv za preverjanje podatkov in povezljivosti. Popravite kakršne koli težave z podatki pred nadaljevanjem.
 
-### Korak 4 — Import TLD-jev
+### Korak 4 — Import TLD-jev {#step-4--import-tlds}
 
 Kliknite na **Import TLDs**, da bi povzročili vse na voljo TLD-je in veleprodajne cene od povezane ponudbe. To popolni TLD seznam, ki ga uporabljajo domena. Import lahko traja 30–60 sekund za ponudnike z velikimi katalogom TLD-jev.
 
 TLD-ji se tako avtomatsko sinhronizirajo vsak dan preko načrtovanega cron joba.
 
-### Korak 5 — Ustvarite domen produkt
+### Korak 5 — Ustvarite domen produkt {#step-5--create-a-domain-product}
 
 Wizard ustvari domnen produkt s podrazdelkom za vse ostale domene z maržo od 10%. Lahko ga uredite takoj ali preskočite in ustvarite produkte ručno pod **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Za celoten vodič o konfiguraciji produkta se ogledajte na [Domain Products and 
 
 ---
 
-## Prekonfiguriranje ponudnika
+## Prekonfiguriranje ponudnika {#reconfiguring-a-provider}
 
 Idi na **Network Admin › Ultimate Multisite › Settings › Domain Seller** (ali kliknite na **Settings** v seznamu pluginov).
 
@@ -87,17 +87,17 @@ Stranica z nastavitvami vsebuje:
 - **Trajanje cache-ja dostopnosti in cen** — kako dolgo ohranjati rezultate dostopnosti in cen; nižje vrednosti so bolj natančna, vendar povečajo API pozive
 - **Upravljanje domenih izdelkov (Manage domain products)** — hitri povezava na seznam Izdelkov
 
-### Dodajanje drugega predstavnika
+### Dodajanje drugega predstavnika {#adding-a-second-provider}
 
 Kliknite na **Configure providers** in ponovite wizard za novo registratorsko podjetje. Lahko imate vklopljene več predstavnikov hkrati. Vsak domen izdelek dodelite določenemu predstavniku ali ga pustite na predvoljeni.
 
-### Ručno sinhroniziranje TLD-jev
+### Ručno sinhroniziranje TLD-jev {#syncing-tlds-manually}
 
 Na strani z nastavitvami kliknite na **Sync TLDs** ob vsakom konfiguriranem predstavniku, da bi povzročili najnovejše cene. To je koristno, ko se predstavnik spremeni v grosne cene ali doda nove TLD-je.
 
 ---
 
-## Logi
+## Logi {#logs}
 
 Vsak predstavnik piše v lastni log kanal. Log lahko ogledate pod **Network Admin › Ultimate Multisite › Logs**:
 
@@ -117,7 +117,7 @@ Vsak predstavnik piše v lastni log kanal. Log lahko ogledate pod **Network Admi
 
 ---
 
-## Napobe o sposobnostih ponudnikov
+## Napobe o sposobnostih ponudnikov {#provider-capability-notes}
 
 Ne vsaka registrar API razlaže iste operacije. Dodonik prikazuje nepodjetne operacije z jasnimi napakami za admina, namesto da bi se ti problemi tiho ukvarjali.
 

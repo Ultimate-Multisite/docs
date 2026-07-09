@@ -3,15 +3,15 @@ title: Generiraj Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generisanje Logo SVG-a
+# Generisanje Logo SVG-a {#generate-logo-svg}
 
 Funkcionalnost **Generisanje Logo SVG-a** omogućava Theme Builder-u da kreira i ugradi prilagođene logo SVG-ove direktno na vaš WordPress sajt, uz automatsku sanitizaciju koja je sigurna za namespace.
 
-## Pregled
+## Pregled {#overview}
 
 Ova funkcionalnost generiše skalabilne vektorske grafike (SVG) logotipe zasnovane na brendiranju vašeg sajta i vašim dizajnerskim preferencijama. Generisani SVG-ovi se automatski sanitizuju kako bi se osiguralo da su sigurni za upotrebu u WordPress-u, a da pritom zadrže vizuelnu integritetnost.
 
-## Parametri
+## Parametri {#parameters}
 
 | Parametar | Tip | Obavezno | Opis |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Ova funkcionalnost generiše skalabilne vektorske grafike (SVG) logotipe zasnova
 | `height` | number | No | Visina SVG-a u pikselima (podrazumevano: 200) |
 | `include_text` | boolean | No | Da li uključiti naziv sajta kao tekst u logo (podrazumevano: true) |
 
-## Format Izlaza
+## Format Izlaza {#output-format}
 
 Funkcionalnost vraća SVG string sa sljedećom strukturom:
 
@@ -36,7 +36,7 @@ Funkcionalnost vraća SVG string sa sljedećom strukturom:
 }
 ```
 
-## Ponašanje Sanitizacije SVG-a
+## Ponašanje Sanitizacije SVG-a {#svg-sanitisation-behaviour}
 
 Generisani SVG-ovi prolaze kroz automatsku sanitizaciju sigurna za namespace radi:
 
@@ -48,7 +48,7 @@ Generisani SVG-ovi prolaze kroz automatsku sanitizaciju sigurna za namespace rad
 
 Ovo osigurava da je SVG siguran za direktno ugrađivanje u WordPress bez potrebe za dodatnom sanitizacijom.
 
-## Primjer Korištenja
+## Primjer Korištenja {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Funkcionalnost kreira SVG logo koji:
 - Prati moderne dizajnerske principe
 - Je automatski sanitiziran i spreman za upotrebu
 
-## Integracija sa Theme Builder-om
+## Integracija sa Theme Builder-om {#integration-with-theme-builder}
 
 Kada koristite odabir dizajnerske smjernice u Theme Builder-u, funkcionalnost Generisanje Logo SVG-a:
 
@@ -71,21 +71,21 @@ Kada koristite odabir dizajnerske smjernice u Theme Builder-u, funkcionalnost Ge
 3. Automatski ugrađuje logo u zaglavlje/brending područje vašeg sajta
 4. Čuva SVG kao prilagođeni logo u WordPress mediji
 
-## Najbolje Prakse
+## Najbolje Prakse {#best-practices}
 
 - **Pružite jasne preferencije stila** — opišite dizajnerski stil koji želite (modern, klasičan, igrački, itd.)
 - **Navedite boje** — uključite boje vašeg brenda radi dosljednosti
 - **Testirajte renderovanje** — provjerite da li se logo ispravno prikazuje na različitim veličinama ekrana
 - **Dalje prilagodite** — koristite alate za prilagođavanje logotipa u WordPress-u da biste podesili veličinu i pozicioniranje
 
-## Ograničenja
+## Ograničenja {#limitations}
 
 - SVG logotipi generišu se kao statične grafike (nisu animirani)
 - Složni logotipi sa mnogo elemenata mogu zahtijevati ručno usavršavanje
 - Nisu podržani prilagođeni fontovi; tekst koristi sistemske fontove
 - Vrlo velike ili vrlo male dimenzije mogu utjecati na kvalitet
 
-## Povezane Funkcionalnosti
+## Povezane Funkcionalnosti {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — provjerite kontrast boja radi pristupačnosti
 - [Create Menu](./create-menu.md) — kreiranje navigacionih menija za vaš sajt

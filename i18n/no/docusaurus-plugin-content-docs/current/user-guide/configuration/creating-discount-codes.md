@@ -3,13 +3,13 @@ title: Opprette rabattkoder
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Opprette rabattkoder (v2)
+# Opprette rabattkoder (v2) {#creating-discount-codes-v2}
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
 Med Ultimate Multisite kan du opprette rabattkoder for å gi kundene dine rabatter på abonnementene deres. Og det er enkelt å opprette dem!
 
-## Opprette og redigere rabattkoder
+## Opprette og redigere rabattkoder {#creating-and-editing-discount-codes}
 
 For å opprette eller redigere en rabattkode, gå til **Ultimate Multisite > Rabattkoder**.
 
@@ -87,7 +87,7 @@ Kupongen er nå på listen din, og derfra kan du klikke for å **redigere eller 
 
 ###
 
-### Bruke URL-parametere:
+### Bruke URL-parametere: {#using-url-parameters}
 
 Hvis du vil tilpasse pristabellene dine eller bygge en fin kupongkodeside for nettstedet ditt og vil bruke en rabattkode på checkout-skjemaet ditt automatisk, kan du gjøre dette via URL-parametere.
 

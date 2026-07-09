@@ -3,9 +3,9 @@ title: 'Ultimate AI Connector, skirtas WebLLM, pakeitimų žurnalas'
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM pakeitimų žurnalas
+# Ultimate AI Connector for WebLLM pakeitimų žurnalas {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versija 1.1.0 — išleista 2026-04-09
+## Versija 1.1.0 — išleista 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Nauja: slankusis pokalbių valdiklis su admin-bar būsenos indikatoriumi — bet kuris prisijungęs naudotojas gali pateikti užklausą naršyklės pusės LLM tiesiai iš priekinės sąsajos.
 * Nauja: SharedWorker vykdymo aplinka — MLC variklis dabar veikia SharedWorker, todėl keli skirtukai dalijasi viena GPU sesija, užuot dėl jos varžęsi.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Pataisyta: WebLLM prijungtas prie wpai_preferred_text_models filtro, kad AI Experiments funkcija būtų nukreipiama į naršyklės variklį, kai modelis sukonfigūruotas.
 * Patobulinta: talpyklos apeitis, turinio normalizavimas ir aparatinės įrangos nuorodų pataisymai, išryškėję visapusiško testavimo metu.
 
-## Versija 1.0.0 — pradinis leidimas
+## Versija 1.0.0 — pradinis leidimas {#version-100--initial-release}

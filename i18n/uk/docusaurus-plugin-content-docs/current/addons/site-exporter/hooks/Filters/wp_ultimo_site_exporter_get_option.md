@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Фільтр: wp_ultimo_site_exporter_get_option
+# Фільтр: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Повертає значення мережевого параметра у форматі slug.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | Назва параметра. |
 | $default | `mixed` | Значення за замовчуванням. |
 
-### З версії
+### З версії {#since}
 
 - 1.9.6
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) на рядку 126
 
 
-## Повертає
+## Повертає {#returns}
 Значення мережевого параметра у форматі slug.

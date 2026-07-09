@@ -3,11 +3,11 @@ title: Suunnittelujärjestelmän esteettinen taito
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Suunnittelujärjestelmän esteettinen taito
+# Suunnittelujärjestelmän esteettinen taito {#design-system-aesthetics-skill}
 
 **Suunnittelujärjestelmän esteettinen taito** on ohjattu lähestymistapa sivustosi visuaalisen identiteetin hienosäätöön. Se auttaa sinua tekemään johdonmukaisia päätöksiä typografioista, väreistä, välilyönneistä ja liikeskaaloista (motion tokens), jotka määrittelevät suunnittelujärjestelmääsi.
 
-## Mitä suunnittelujärjestelmän esteettinen taito on?
+## Mitä suunnittelujärjestelmän esteettinen taito on? {#what-is-design-system-aesthetics}
 
 Suunnittelujärjestelmän esteettinen taito on rakennettu taito, joka kattaa seuraavat asiat:
 
@@ -20,9 +20,9 @@ Suunnittelujärjestelmän esteettinen taito on rakennettu taito, joka kattaa seu
 
 Nämä päätökset tallennetaan teeman `theme.json`-tiedostoon, luoden yhtenäisen visuaalisen järjestelmän.
 
-## Miksi käyttää suunnittelujärjestelmän esteettistä taitoa?
+## Miksi käyttää suunnittelujärjestelmän esteettistä taitoa? {#why-use-design-system-aesthetics}
 
-### Yhtenäisyys
+### Yhtenäisyys {#consistency}
 
 Suunnittelujärjestelmä varmistaa:
 
@@ -31,7 +31,7 @@ Suunnittelujärjestelmä varmistaa:
 - Välilyönnit noudattavat ennakoitavaa mallia
 - Animaatiot tuntuvat yhtenäisiltä
 
-### Tehokkuus
+### Tehokkuus {#efficiency}
 
 Sen sijaan, että tekisit suunnittelupäätöksiä sivu kerrallaan, voit:
 
@@ -39,7 +39,7 @@ Sen sijaan, että tekisit suunnittelupäätöksiä sivu kerrallaan, voit:
 - Soveltaa niitä kaikkialla
 - Päivittää globaalisti muuttamalla vain yhtä arvoa
 
-### Joustavuus
+### Joustavuus {#flexibility}
 
 Voit:
 
@@ -47,9 +47,9 @@ Voit:
 - Kokeilla erilaisia esteettisyyksiä
 - Ylläpitää brändin yhtenäisyyttä kehittyessä
 
-## Suunnittelujärjestelmän esteettisen taiton käynnistäminen
+## Suunnittelujärjestelmän esteettisen taiton käynnistäminen {#triggering-the-design-system-aesthetics-skill}
 
-### Manuaalinen aktivoiminen
+### Manuaalinen aktivoiminen {#manual-activation}
 
 Voit aloittaa taiton milloin tahansa:
 
@@ -69,7 +69,7 @@ tai
 "Ohjei minut suunnittelujärjestelmän päätöksissä"
 ```
 
-### Automaattiset ehdotukset
+### Automaattiset ehdotukset {#automatic-suggestions}
 
 Agentit saattavat ehdottaa taiton käyttöä, kun:
 
@@ -78,9 +78,9 @@ Agentit saattavat ehdottaa taiton käyttöä, kun:
 - Haluat parantaa visuaalista yhtenäisyyttä
 - Olet valmistautumassa sivustosi lanseeraamiseen
 
-## Suunnittelujärjestelmän esteettisyysprosessi
+## Suunnittelujärjestelmän esteettisyysprosessi {#the-design-system-aesthetics-process}
 
-### Vaihe 1: Typografia
+### Vaihe 1: Typografia {#step-1-typography}
 
 Agent kysyy fonttivalintoihisi:
 
@@ -110,7 +110,7 @@ Agent määrittelee sen jälkeen:
 - **Painotuseasteikko**: Fontin painot (normaali, keskitetty, lihavoitu jne.)
 - **Riviväli**: Rivien väli leikkaamisen helpottamiseksi
 
-### Vaihe 2: Väripaletti
+### Vaihe 2: Väripaletti {#step-2-color-palette}
 
 ```
 Määritellään väripalettisi.
@@ -140,7 +140,7 @@ Agent luo täydellisen paletin sisältäen:
 - Semanttiset värit (onnistuminen, varoitus, virhe)
 - Hover- ja aktiivitilat
 
-### Vaihe 3: Väli
+### Vaihe 3: Väli {#step-3-spacing}
 
 (Tämä osio on jätetty tyhjä alkuperäisen tekstin mukaisesti.)
 
@@ -162,7 +162,7 @@ Agentti määrittelee tilatokeja:
 - Skaala: xs, sm, md, lg, xl, 2xl
 - Erityiset arvot paddingille, marginaalille ja välin luomiseen
 
-### Vaihe 4: Reunat ja varjot
+### Vaihe 4: Reunat ja varjot {#step-4-borders-and-shadows}
 
 ```
 Visuaalinen syvyys ja määritelmä:
@@ -185,7 +185,7 @@ Agentti luo:
 - Varjostustokeja eri tasojen nostotason varten
 - Reunaväli tokeja
 
-### Vaihe 5: Liike ja animaatiot
+### Vaihe 5: Liike ja animaatiot {#step-5-motion-and-animation}
 
 ```
 Miltä sivusto sinun pitäisi tuntua vuorovaikutteisenä?
@@ -207,9 +207,9 @@ Agentti määrittelee:
 - Easing-funktiot (ease-in, ease-out, ease-in-out)
 - Animaation avainkehys yleisille vuorovaikutuksille
 
-## Suunnittelujärjestelmän esteettisten ominaisuuksien soveltaminen
+## Suunnittelujärjestelmän esteettisten ominaisuuksien soveltaminen {#applying-design-system-aesthetics}
 
-### Automaattinen soveltaminen
+### Automaattinen soveltaminen {#automatic-application}
 
 Kun olet suorittanut taiton, agentti:
 
@@ -218,13 +218,13 @@ Kun olet suorittanut taiton, agentti:
 3. Uudelleenluokittelee lohkojen tyylit vastaamaan uutta järjestelmää
 4. Aktivoi päivitetyn teeman
 
-### Manuaalinen soveltaminen
+### Manuaalinen soveltaminen {#manual-application}
 
 Voit myös muokata `theme.json` -tiedostoa suoraan:
 
-## Näytä suunnittelujärjestelmäsi
+## Näytä suunnittelujärjestelmäsi {#viewing-your-design-system}
 
-### Kysy agentilta
+### Kysy agentilta {#ask-the-agent}
 
 ```
 "Näytä minulle suunnittelujärjestelmäni"
@@ -238,13 +238,13 @@ tai
 
 Agentti näyttää sinulle typografian, värit, väljet ja muut tunnistetunnisteet.
 
-### Katso theme.json
+### Katso theme.json {#view-themejson}
 
 Avaa `/wp-content/themes/[theme-name]/theme.json` tekstieditorissa nähdäksesi raakadatan määritelmät.
 
-## Suunnittelujärjestelmän päivittäminen
+## Suunnittelujärjestelmän päivittäminen {#updating-your-design-system}
 
-### Nopeat päivitykset
+### Nopeat päivitykset {#quick-updates}
 
 Pyydä agentilta tiettyjä muutoksia:
 
@@ -264,7 +264,7 @@ tai
 "Muuta otsikon fontti serifiksi"
 ```
 
-### Täysi uudelleenmuotoilu
+### Täysi uudelleenmuotoilu {#full-redesign}
 
 Suorita Design System Aesthetics -taito uudelleen:
 
@@ -274,7 +274,7 @@ Suorita Design System Aesthetics -taito uudelleen:
 
 Tämä ohjaa sinut läpi kaiken päätöksenteko-prosessin alusta, käyttäen nykyisiä arvoja.
 
-### Osittaiset päivitykset
+### Osittaiset päivitykset {#partial-updates}
 
 Päivitä tiettyjä osa-alueita:
 
@@ -282,15 +282,15 @@ Päivitä tiettyjä osa-alueita:
 "Päivitä vain väripaletin, pidä muu kaikki samana"
 ```
 
-## Suunnittelujärjestelmän parhaat käytännöt
+## Suunnittelujärjestelmän parhaat käytännöt {#design-system-best-practices}
 
-### Yhtenäisyys
+### Yhtenäisyys {#consistency-1}
 
 - Käytä samoja tunnistetunnisteita kaikkialla
 - Älä luo yksittäisiä värejä tai kokoja
 - Viittaa tunnistetunnisteisiin sen sijaan, että koodattaisiin arvoja suoraan
 
-### Nimeäminen
+### Nimeäminen {#naming}
 
 Käytä selkeitä, merkityksellisiä nimiä:
 
@@ -300,7 +300,7 @@ Käytä selkeitä, merkityksellisiä nimiä:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skaalautuvuus
+### Skaalautuvuus {#scalability}
 
 Suunnittele järjestelmä skaalautumiseen:
 
@@ -308,7 +308,7 @@ Suunnittele järjestelmä skaalautumiseen:
 - Luo skaaloja (xs, sm, md, lg, xl) sen sijaan, että käytät sattumanvaraisia arvoja
 - Suunnittele tulevia lisäyksiä varten
 
-### Dokumentaatio
+### Dokumentaatio {#documentation}
 
 Dokumentoi suunnittelujärjestelmäsi:
 
@@ -316,9 +316,9 @@ Dokumentoi suunnittelujärjestelmäsi:
 - Milloin käyttää kunkin tokenia
 - Poikkeukset ja reunat
 
-## Yleiset suunnittelumallit
+## Yleiset suunnittelumallit {#common-design-system-patterns}
 
-### Moderni minimalistinen
+### Moderni minimalistinen {#modern-minimalist}
 
 - Sans-serif -typografia (Inter, Helvetica)
 - Rajoitettu väripaletti (2–3 väriä)
@@ -326,7 +326,7 @@ Dokumentoi suunnittelujärjestelmäsi:
 - Hienovaraiset varjot
 - Sujuvat, nopeat animaatiot
 
-### Lämmin ja ystävällinen
+### Lämmin ja ystävällinen {#warm-and-friendly}
 
 - Sekoitus serif- ja sans-serif -typo-grafiaa
 - Lämmin väripaletti (oranssit, lämpimät harmaat)
@@ -334,7 +334,7 @@ Dokumentoi suunnittelujärjestelmäsi:
 - Pehmeät varjot
 - Leikkisät animaatiot
 
-### Ammattimainen yritys
+### Ammattimainen yritys {#professional-corporate}
 
 - Siisti sans-serif (Roboto, Open Sans)
 - Neutraali väripaletti korostusvärillä
@@ -342,7 +342,7 @@ Dokumentoi suunnittelujärjestelmäsi:
 - Vähäiset varjot
 - Hienovaraiset siirtymät
 
-### Luova ja rohkea
+### Luova ja rohkea {#creative-and-bold}
 
 - Erityinen typografia
 - Rohkea väripaletti
@@ -350,7 +350,7 @@ Dokumentoi suunnittelujärjestelmäsi:
 - Voimakkaat varjot
 - Huomionarvoiset animaatiot
 
-## Ongelmanratkaisu
+## Ongelmanratkaisu {#troubleshooting}
 
 **Suunnittelujärjestelmän muutokset eivät näy**
 - Tyhjennä selaimen välimuisti
@@ -367,7 +367,7 @@ Dokumentoi suunnittelujärjestelmäsi:
 - Muokkaa theme.json manuaalisesti aiempiin arvoihin
 - Suorita taitoa uudelleen eri valinnoilla
 
-## Seuraavat askeleet
+## Seuraavat askeleet {#next-steps}
 
 Suunnittelujärjestelmän määrittämisen jälkeen:
 

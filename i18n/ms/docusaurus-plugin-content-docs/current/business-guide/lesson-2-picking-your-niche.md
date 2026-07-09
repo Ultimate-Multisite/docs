@@ -3,19 +3,19 @@ title: 'Pelajaran 2: Memilih Niche Anda'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Pelajaran 2: Memilih Niche Anda
+# Pelajaran 2: Memilih Niche Anda {#lesson-2-picking-your-niche}
 
 Dalam Pelajaran 1, kita telah menetapkan mengapa niche lebih baik daripada yang generik. Sekarang, anda perlu memilih niche anda sendiri. Pelajaran ini memberikan anda kerangka kerja untuk mencari dan mengesahkan niche sebelum anda melaburkan masa membina untuk niche tersebut.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 Kita telah mendefinisikan konsep FitSite: platform laman web untuk studio kecergasan. Tetapi bagaimana kita sampai kepada studio kecergasan secara khusus? Pelajaran ini akan membimbing anda melalui proses tersebut supaya anda boleh menerapkannya untuk mencari niche anda sendiri.
 
-## Tiga Kriteria
+## Tiga Kriteria {#the-three-criteria}
 
 Niche yang baik untuk platform laman web mesti memenuhi tiga syarat:
 
-### 1. Mereka Memerlukan Laman Web Tetapi Bergelut Mendapatkan yang Baik
+### 1. Mereka Memerlukan Laman Web Tetapi Bergelut Mendapatkan yang Baik {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Cari industri di mana:
 
@@ -26,7 +26,7 @@ Cari industri di mana:
 
 **Studio kecergasan sesuai**: ahli mengharapkan untuk mencari jadual kelas, harga, dan tempahan secara dalam talian. Kebanyakan laman web studio adalah lapuk atau dibina menggunakan templat generik yang tidak memenuhi tujuan.
 
-### 2. Perniagaan Mampu Melanggan Bulanan
+### 2. Perniagaan Mampu Melanggan Bulanan {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Pelanggan sasaran anda perlu:
 
@@ -36,7 +36,7 @@ Pelanggan sasaran anda perlu:
 
 **Studio kecergasan sesuai**: mereka sudah membayar untuk perisian tempahan, pemprosesan pembayaran, dan alat pemasaran. Langganan laman web adalah tambahan yang semula jadi.
 
-### 3. Mereka Berinteraksi antara Satu Sama Lain
+### 3. Mereka Berinteraksi antara Satu Sama Lain {#3-they-talk-to-each-other}
 
 Niche terbaik mempunyai:
 
@@ -46,9 +46,9 @@ Niche terbaik mempunyai:
 
 **Studio kecergasan sesuai**: pemilik studio menghadiri acara industri kecergasan, mengambil bahagian dalam komuniti dalam talian, dan sering berkongsi alat dan perkhidmatan dengan rakan sebaya.
 
-## Cara Mencari Calon Niche
+## Cara Mencari Calon Niche {#how-to-find-niche-candidates}
 
-### Mulakan dengan Apa yang Anda Tahu
+### Mulakan dengan Apa yang Anda Tahu {#start-with-what-you-know}
 
 Pengalaman anda yang sedia ada adalah kelebihan. Pertimbangkan:
 
@@ -56,7 +56,7 @@ Pengalaman anda yang sedia ada adalah kelebihan. Pertimbangkan:
 - Hobi atau minat di mana anda memahami komuniti tersebut
 - Rangkaian profesional yang sudah anda sertai
 
-### Cari Isyarat Masalah (Pain Signals)
+### Cari Isyarat Masalah (Pain Signals) {#look-for-pain-signals}
 
 Cari bukti bahawa perniagaan dalam niche bergelut dengan laman web:
 
@@ -65,7 +65,7 @@ Cari bukti bahawa perniagaan dalam niche bergelut dengan laman web:
 - Lihat laman web sebenar dalam niche — adakah kebanyakan daripadanya berkualiti rendah?
 - Semak sama ada pesaing wujud dan sejauh mana mereka memenuhi pasaran
 
-### Nilai Ekonomi
+### Nilai Ekonomi {#evaluate-the-economics}
 
 Untuk setiap niche calon, anggaran:
 
@@ -73,11 +73,11 @@ Untuk setiap niche calon, anggaran:
 - **Kesediaan membayar**: Berapa yang mereka belanjakan sekarang untuk alat yang serupa?
 - **Potensi nilai sepanjang hayat**: Adakah perniagaan ini stabil, atau adakah mereka cepat berhenti?
 
-## Mengesahkan Niche Anda
+## Mengesahkan Niche Anda {#validating-your-niche}
 
 Sebelum membina apa-apa, sahkan permintaan:
 
-### Berbual dengan Pelanggan Potensi
+### Berbual dengan Pelanggan Potensi {#talk-to-potential-customers}
 
 Hubungi 10-15 pemilik perniagaan dalam niche sasaran anda. Tanya:
 
@@ -88,17 +88,17 @@ Hubungi 10-15 pemilik perniagaan dalam niche sasaran anda. Tanya:
 
 Anda belum menjual. Anda sedang mendengar.
 
-### Semak Landskap Pesaing
+### Semak Landskap Pesaing {#check-competitor-landscape}
 
 - **Tiada pesaing**: Boleh bermakna tiada permintaan, atau boleh bermakna peluang yang belum diterokai. Perbualan pelanggan akan memberitahu anda yang mana.
 - **Beberapa pesaing**: Tanda yang baik. Mengesahkan permintaan. Pelajari apa yang mereka lakukan dengan baik dan di mana mereka kurang.
 - **Banyak pesaing**: Lebih sukar untuk masuk, tetapi masih mungkin jika anda boleh membezakan dengan jelas.
 
-### Bina Halaman Pendaratan (Landing Page)
+### Bina Halaman Pendaratan (Landing Page) {#build-a-landing-page}
 
 Sebelum membina platform, cipta halaman pendaratan ringkas yang menerangkan penyelesaian niche anda dan kumpulkan pendaftaran e-mel. Jalankan sedikit iklan sasaran untuk menguji minat. Jika orang mendaftar, anda mempunyai pengesahan.
 
-## Menerapkan Ini kepada FitSite
+## Menerapkan Ini kepada FitSite {#applying-this-to-fitsite}
 
 Begini cara FitSite dinilai mengikut kriteria:
 
@@ -112,7 +112,7 @@ Begini cara FitSite dinilai mengikut kriteria:
 
 Pengesahan mengesahkan peluang itu. Sekarang kita bina.
 
-## Idea Niche untuk Dipertimbangkan
+## Idea Niche untuk Dipertimbangkan {#niche-ideas-to-consider}
 
 Jika kecergasan bukan pasaran anda, berikut adalah niche lain yang memenuhi kriteria:
 
@@ -127,7 +127,7 @@ Jika kecergasan bukan pasaran anda, berikut adalah niche lain yang memenuhi krit
 
 Setiap satunya mempunyai ciri yang sama: keperluan laman web yang jelas, keupayaan membayar, dan mulut ke mulut komuniti.
 
-## Apa Yang Kita Bina Dalam Pelajaran Ini
+## Apa Yang Kita Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Kerangka kerja pemilihan niche**: tiga kriteria untuk menilai sebarang niche
 - **Kaedah pengesahan**: perbualan pelanggan, analisis pesaing, ujian halaman pendaratan

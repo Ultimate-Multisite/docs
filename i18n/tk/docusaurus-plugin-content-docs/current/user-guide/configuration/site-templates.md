@@ -3,13 +3,13 @@ title: Sayt Şablonlary
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Şablonları (v2)
+# Site Şablonları (v2) {#site-templates-v2}
 
 _**QAYDERYAT: Bu makale Ultimate Multisite sürüm 2.x'i nəzərdə tutur. Əgər siz 1.x versiyasını istifadə edirsinizsə,**_ **bu artikla tanış olun.**_
 
 Ultimate Multisite ilə premium şəbəkə yaratmaq zaman məqsədimiz mümkün qədər çox prosesləri avtomatlaşdırmaqdır, eyni zamanda müştərilərə veb saytlarını yaradarkən özlər üçün çeviklik və seçmə imkanları verməkdir. Bu balans əldə etmək üçün Ultimate Multisite Site Templates funksiyasından istifadə etmək çox asan bir yoldur.
 
-## Site Şablonu nədir?
+## Site Şablonu nədir? {#what-is-a-site-template}
 
 Adından göründüyü kimi, Site Template (Site Şablonu), şəbəkənizdə yeni saytlar yaradarkən əsas olaraq istifadə edilə bilən bir şablon saytdır.
 
@@ -17,7 +17,7 @@ Bu o deməkdir ki, siz əsas saytı yarada, müxtəlif pluginləri aktiv edə, a
 
 Bu əla səslənir, amma yeni bir site şablonu necə yaradaram? Bu mümkün olan ən sadə yoldur.
 
-## Yeni Site Şablonu yaratmaq və redaktə etmək
+## Yeni Site Şablonu yaratmaq və redaktə etmək {#creating-and-editing-a-new-site-template}
 
 Site Template-lər şəbəkənizdə sadəcə adi saytlardır. Yeni bir şablon yaratmaq üçün sadəcə **Network Admin > Ultimate Multisite > Sites > Add Site** yoluna gedə bilərsiniz.
 
@@ -35,7 +35,7 @@ Formun, formanyň aşagynda **Copy Site** düğmesini görersiňiz. Bu size bar 
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Site Template Melliňini Özelleşdirmek
+### Site Template Melliňini Özelleşdirmek {#customizing-the-contents-of-a-site-template}
 
 Site template-i özelleşdirmek üçin, onuň dashboard panelindäki bölmämde ýerleşip zerur hasaplamalary edip bilersiňiz. Täze postlar, sayplar döredip, pluginleri işjeňleşdirip we aktif tema üýtgedip bilersiňiz. Hatta Customizer-e gidip ähli görnüşdäki özelleşdirmeleri üýtgetmek hem mümkin.
 
@@ -43,11 +43,11 @@ Site template-i özelleşdirmek üçin, onuň dashboard panelindäki bölmämde 
 
 Bu maglumatlary, bir müşderi şol Site Template esaslanýan täze site döredende kopýa edip biler.
 
-### Öňretmäge Dawlaýyşlar (Advanced Options)
+### Öňretmäge Dawlaýyşlar (Advanced Options) {#advanced-options}
 
 Eger siz belli bir derejede custom kod bilen tanalmagyňyz bolsa, täze site döredilenden soň olarda maglumatlary awtomatiki ýerleşdirmek üçin Search and Replace API-ni ulanyp bilersiňiz. Bu, Mysyllaşyk (About) saygynda kompaniýa adyny üýtgetmek, Kontakt saygyna kontakt epelini üýtgetmek we şeýle zatlar üçin amatlydyr.
 
-### Site Template-leri Ulanmak
+### Site Template-leri Ulanmak {#using-site-templates}
 
 Gowy, siz dürli dizaynlar, temalar we sazlamalar bilen birnäçe dürli Site Template döredip bilersiňiz. Iň soňky sorag: olary şu wagt ulgamynda nähili amatly edip bilerisiz?
 
@@ -59,7 +59,7 @@ Esasy mesele şudur: şu wagt sizde iki görnüşde ulanmak mümkin (bir wagtda 
 
   * Müşderileri ýa-da klientleri sign-up edýan wagty özler üçin site template-lerini saýlaýanlara bolmak.
 
-#### Görnüş 1: Site Template Baglanyşdyrmak
+#### Görnüş 1: Site Template Baglanyşdyrmak {#mode-1-assign-site-template}
 
 Bu rejimde, klientler hesap açarken şablon seçemezler; bunun yerine siz her bir Plan için hangi şablonun kullanılacağını belirleyeceksiniz.
 
@@ -71,7 +71,7 @@ Bu sizi **Edit Product** sayfasına götürecektir. **Product Options** (Ürün 
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mod 2: Mevcut Site Şablonunu Seçme
+#### Mod 2: Mevcut Site Şablonunu Seçme {#mode-2-choose-available-site-template}
 
 Bu modda, kayıt süreci sırasında müşterilerin bir seçim yapmasını sağlarsınız. Onlar, ürün ayarlarında tanımladığınız farklı site şablonlarından seçebileceklerdir. Seçili ürüne bağlı olarak onlara sunulabilecek site şablon sayısını sınırlama seçeneğiniz de vardır. Bu, her ürün için farklı site şablon setleri oluşturmanıza olanak tanır ve bu da daha yüksek fiyatlı bir ürün için farklı işlevleri ve özellikleri öne çıkarmak adına idealdir.
 
@@ -79,7 +79,7 @@ Bu modda, kayıt süreci sırasında müşterilerin bir seçim yapmasını sağl
 
 ![Davranış variantları ilə mövcud sayt şablonlarını seçin](/img/config/product-site-templates.png)
 
-### Default Rejim: Checkout formunda sayt şablonu seçimi
+### Default Rejim: Checkout formunda sayt şablonu seçimi {#default-mode-site-template-selection-on-the-checkout-form}
 
 Əgər bütün sayt şablonlarınızın qeydiyyat zamanı mövcud olmasını istəyirsinizsə, və ya hər bir yaratdığınız məhsulun altında sayt şablonlarını təyin etmək və ya göstərmək üçün əlavə iş görmək istəmirsinizsə, sadəcə **Checkout Formu** altındakı sayt şablonu seçimini təyin edə bilərsiniz. Bunu etmək üçün **Ultimate Multisite > Checkout Forms**-a gedin və konfiqurasiya etmək istədiyiniz formun altında **Edit**-ə basın.
 
@@ -93,29 +93,29 @@ Frontenddə müştərilər checkout zamanı şablon seçicini görür və yeni s
 
 ![Registration sırasında ön yüz şablon seçicisi](/img/config/frontend-template-chooser.png)
 
-### Site Şablon Seçenekleri
+### Site Şablon Seçenekleri {#site-template-options}
 
 Ultimate Multisite ayarları altında açıp kapatabileceğiniz başka site şablon işlevleri de mevcuttur.
 
 ![Ultimate Multisite ayarlarında site şablon seçenekleri](/img/config/settings-sites-templates-section.png)
 
-#### Şablon Değiştirilmesine İzin Verin (Allow Template Switching)
+#### Şablon Değiştirilmesine İzin Verin (Allow Template Switching) {#allow-template-switching}
 
 Bu seçeneği etkinleştirirseniz, müşteriler hesabın ve sitenin oluşturulmasından sonra kayıt işlemi sırasında seçtikleri şablonu değiştirebilirler. Bu, müşteri açısından faydalıdır çünkü daha sonra orijinal seçimlerinin kendi özel ihtiyaçları için en iyisi olmadığını fark ederlerse bir şablonu yeniden seçmelerine olanak tanır.
 
-#### Kullanıcıların Kendi Siteni Şablon Olarak Kullanmasına İzin Verin (Allow Users to use their Site as templates)
+#### Kullanıcıların Kendi Siteni Şablon Olarak Kullanmasına İzin Verin (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Alt site kullanıcıları kendi sitelerini oluşturmak ve tasarlamak için zaman harcadıkları için, ağınızda başka bir alt site oluşturulduğunda mevcut olan site şablonlarından birini klonlayıp kullanmak isteyebilirler. Bu seçenek onlara bunu yapma imkanı verecektir.
 
-#### Şablon Çoğaltılırken Medyayı Kopyalama (Copy Media on Template Duplication)
+#### Şablon Çoğaltılırken Medyayı Kopyalama (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Bu seçeneği işaretlerseniz, şablon sitesine yüklenen medyayı yeni oluşturulan siteye kopyalar. Bu durum her bir planda geçersiz kılınabilir.
 
-#### **Arama Motorlarının Site Şablonlarını İndekslemesini Engelleme (Prevent Search Engines from indexing Site Templates)**
+#### **Arama Motorlarının Site Şablonlarını İndekslemesini Engelleme (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Bu makalede tartıştığımız gibi, site şablonları standart yapı taşlarıdır ancak yine de ağınızın bir parçasıdır ve bu da arama motorlarının onları bulabilmesi anlamına gelir. Bu seçenek, arama motorlarının bunları indekslemesine izin vermemek için site şablonlarını gizlemenize olanak tanır.
 
-## Otomatik Arama-Değiştirme ile Site Şablonlarını Önceden Doldurma (Pre-populating Site Templates with auto search-and-replace)
+## Otomatik Arama-Değiştirme ile Site Şablonlarını Önceden Doldurma (Pre-populating Site Templates with auto search-and-replace) {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Ultimate Multisite-inň iňden güýçli heretlari biri – bu ýa-da size laýyklykda tekst, reňk we saýlanma ulgamlaryny (fields) goşmaga mümkinçiligi. Bu maglumatlary alyp barmakdan soň, biz olary saýlanan web saytyň şertli böleklerinde önümde doly etmek üçin ulanyp biläris. Soňra, täze sayt işlenip düşündirildiğinde, Ultimate Multisite bu ýerleşdirilen ýerlikleri (placeholders) reşitlenji maglumatlar bilen üýtgedendir.
 
@@ -135,7 +135,7 @@ Ultimate Multisite soňra ýerleşdirilen ýerlikleri müşderiden berlen maglum
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### "Ýerlikler bilen doly şablon" problemini çözmek
+### "Ýerlikler bilen doly şablon" problemini çözmek {#solving-the-template-full-of-placeholders-problem}
 
 Bu ähli zat gowy, ýöne biz bir çuň suw problemi bilen ýüzleşdirýäris: indi müşderilerimizden görüp biljek saytyň şablonlarymız — ol maglumat bermeçlik duýulýan ýerlikler bilen doly.
 

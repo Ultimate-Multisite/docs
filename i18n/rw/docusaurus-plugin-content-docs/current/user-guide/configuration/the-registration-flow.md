@@ -3,13 +3,13 @@ title: Urugero rw'Ubukorera
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Uburyo mu gukoresha (v2)
+# Uburyo mu gukoresha (v2) {#the-registration-flow-v2}
 
 _**Urugero Murage: Icyo cyacu cyerekana kuri Ultimate Multisite version 2.x.**_
 
 Abantu bashobora gushyira umuryango wanyu mu buryo runaka. Bashobora gukoresha uburyo bwo gukoresha (registration form) cyangwa link yashobora guhindurwa ku plan yakoreshwa mu gukoresha. Hano twakwibwire uko abantu bashobora gushyira umuryango wanyu mu buryo runaka bafite uburyo bwo gukoresha (registration form) cyangwa link yashobora guhindurwa ku plan yakoreshwa.
 
-## Gukoresha Uburyo Bwo Gukoresha (Using the Registration Form):
+## Gukoresha Uburyo Bwo Gukoresha (Using the Registration Form): {#using-the-registration-form}
 
 Iyi ni uburyo bwizamo bwo gukoresha. Urahindura ipage y'uburyo bwo gukoresha (registration page) neza n'ibyo bishobora kuba ari **checkout form**. Icyo ni aho abantu bashobora guhindurwa mu gukoresha umuryango wanyu kandi bakoresha plan yakoreshwa. Ushobora gutera ipage z'uburyo bwo gukoresha nyinshi, kandi y'imwe n'imwe hari uburyo bw'uburyo bwo gukoresha runaka cyane.
 
@@ -35,13 +35,13 @@ Niba yashobora guhagarara ku mpamvu y'ubwugwa cyangwa ko umemail y'ubwujgwa si i
 
 ![Uruwo rwawe rugerageje n'ubwoko bwo guhagarara mu dashboard](/img/frontend/site-activated.png)
 
-## Gukoresha Link Y'ubwujgwa (Shareable Link):
+## Gukoresha Link Y'ubwujgwa (Shareable Link): {#using-a-shareable-link}
 
 Uburyo bwo gukorera uburyo bwo guhagarara bishobora kuba nk'uko umufugije yashobora gukoresha form ya guhagarara, ariko igisobanuro ni ko kugira link y'ubwujgwa, abakoresha bvawe bashobora gushyira uburyo cyangwa template y'urwo rwawe mu checkout (shobora kubona isobanuro mu gihe cyo guhagarara ibintu n'amashobora (Pre-selecting products and templates via URL parameters) cyangwa kugira coupon code kuko (Using URL Parameters)).
 
 Uburyo bwo guhagarara bishobora kuba nk'uko byari, kandi bakwibona ubwoko cyangwa plan y'urwo rwawe yashobora gukorwa mbere.
 
-### Gukoresha Uburyo Bwo Guhagarara n'Uruko (Manual Payments):
+### Gukoresha Uburyo Bwo Guhagarara n'Uruko (Manual Payments): {#registering-using-manual-payments}
 
 Niba ushaka guhagarara mu buryo bwo guhindura (manual payments) kandi ushaka kugira uburyo bwo gutera umuyobozi wako gukorera PayPal, Stripe cyangwa ikoresho kirekire kuko Ultimate Multisite cyangwa ibyo byari bikoreshwa n'ibindi. Uza kuba ufite ubushobozi bwo gukora invoice ku muntu ugiye guhagarara mu gihe cyo guhagarara ku koresho yawe y'ubwujgwa (payment processor) nyuma y'uko yashobora guhagarara ku rurimi rwawe.
 

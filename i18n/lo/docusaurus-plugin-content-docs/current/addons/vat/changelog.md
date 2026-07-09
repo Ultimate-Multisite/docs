@@ -3,7 +3,7 @@ title: ບັນທຶກການປ່ຽນແປງ VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# ບັນທຶກການປ່ຽນແປງ VAT
+# ບັນທຶກການປ່ຽນແປງ VAT {#vat-changelog}
 
 ເວີຊັນ 1.0.7 - ປ່ອຍໃຊ້ໃນ 2026-02-03
 

@@ -4,11 +4,11 @@ title: Filtrs - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Ļauj izstrādātājiem pielāgot gala saturu
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Masīvs, kas satur vietturus. |
 | $placeholder_count | `int` | Atrasto vietturu skaits. |
 
-### Kopš
+### Kopš {#since}
 
 - 1.4.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) 46. rindā
 
 
-## Atgriež
+## Atgriež {#returns}
 Saturs pēc modificēšanas.

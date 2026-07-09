@@ -4,11 +4,11 @@ title: Aksi - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Tindakan: set_logged_in_cookie
+# Tindakan: set_logged_in_cookie {#action-setloggedincookie}
 
 Mlaku langsung sadurunge cookie otentikasi wis mlebu disetel.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Mlaku langsung sadurunge cookie otentikasi wis mlebu disetel.
 | $scheme | `string` | Skema otentikasi. Gawané 'logged_in'. |
 | $token | `string` | Token sesi pangguna sing dienggo kanggo cookie iki. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) ing baris 141

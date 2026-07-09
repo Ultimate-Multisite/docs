@@ -3,11 +3,11 @@ title: Eaith an site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exporta an Site
+# Exporta an Site {#site-export}
 
 A page admin a che **Site Export** leit a adminan na ngrathdachadh un site, no an tate a gortein a chùl don fhaighinn airson coimbeartachd, coimbeartachd, no sealladh.
 
-## Exporta un site
+## Exporta un site {#exporting-one-site}
 
 Ràdh an t-sealladh **Ultimate Multisite > Site Export** agus scealto **Generate new Site Export**. Scealto an subsite a tha thu a' gortein, a losg thu gu faice sinn gu siù a thig thu a bhith a' gortein.
 
@@ -20,7 +20,7 @@ Nuair a thabhas an export, sealladh an ZIP a' chluainteachd a' leat frum an lise
 5. Cluich ar **Generate**
 6. A' chluas ZIP bundle a tha anns an liosta **Existing Exports**
 
-#### A' chluasachadh a' chluasach (Restoring from a Network Import Bundle)
+#### A' chluasachadh a' chluasach (Restoring from a Network Import Bundle) {#exporting-the-whole-network}
 
  airson a' chluasachadh sitean a' chluasach (restore sites from a network import bundle):
 
@@ -39,7 +39,7 @@ A thàirgseachais (network import bundles) a tha a' chluasach:
 - Uisgeadh media (air a tha a' chluasach anns an bundle)
 - Tabeada database agus datha a' chluasach
 
-## Installadh ZIP export a tha a' bootachadh air seòr (Installing a self-booting export ZIP)
+## Installadh ZIP export a tha a' bootachadh air seòr (Installing a self-booting export ZIP) {#network-import-bundles}
 
  airson a' chluasachadh ZIP a tha a' bootachadh air seòr a tha fuaimeach:
 

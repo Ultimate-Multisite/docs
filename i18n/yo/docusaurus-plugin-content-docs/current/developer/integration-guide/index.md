@@ -3,13 +3,13 @@ title: Ìtọ́nisọ́nà Ìṣepọ̀
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Itọsọna Integration
+# Itọsọna Integration {#integration-guide}
 
 Itọsọna yii bo awọn ilana integration wọpọ pẹlu Ultimate Multisite, pẹlu sisopọ mọ awọn iṣẹ ita, kikọ awọn payment gateways adani, ati mimu awọn webhooks ṣiṣẹ.
 
 Fun amayederun tenant ti a ya sọtọ, wo [Integration Multi-Tenancy](./multi-tenancy) fun bootstrap tenant aláṣẹ, ìmúdájú migration, SSO, ati itọsọna teardown.
 
-## Integration CRM
+## Integration CRM {#crm-integration}
 
 Ṣe sync data alabara si CRM rẹ nigba ti awọn alabara tuntun ba forúkọsílẹ̀:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integration Analytics
+## Integration Analytics {#analytics-integration}
 
 Tọpa awọn iṣẹlẹ iṣowo pataki kọja customer lifecycle:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Awọn Igbesẹ Tó Kàn
+## Awọn Igbesẹ Tó Kàn {#next-steps}
 
 - [Ìdàgbàsókè Gateway Adani](./custom-gateway) — Kọ payment gateway tirẹ
 - [Mimu Webhook Ṣiṣẹ](./webhooks) — Ṣẹda awọn endpoint webhook adani

@@ -3,11 +3,11 @@ title: Amakhono Okuphatha ama-Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Amakhono Okuphatha Ama-plugin
+# Amakhono Okuphatha Ama-plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 iza **namakhono angu-7 okuphatha ama-plugin** umsizi we-AI angawasebenzisa phakathi nengxoxo. Lawa makhono ahlinzeka ngokulawula kohlelo ama-plugin e-WordPress afakwe nge-[Uhlelo Lokwakha Ama-plugin ne-Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Uhlolojikelele Lwamakhono
+## Uhlolojikelele Lwamakhono {#abilities-overview}
 
 | Ikhono | Slug | Incazelo |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 iza **namakhono angu-7 okuphatha ama-plugin** umsizi we-A
 | Faka I-plugin | `install_plugin` | Ithumela i-plugin ese-sandbox ohlwini lwama-plugin e-WordPress aphilayo. |
 | Vula I-plugin | `activate_plugin` | Ivula i-plugin ese-sandbox endaweni ye-sandbox ye-wp-env. |
 
-## I-API Yokufaka Ama-plugin
+## I-API Yokufaka Ama-plugin {#plugin-installer-api}
 
 Isifaki se-plugin siphatha imisebenzi yesistimu yamafayela lapho kuthunyelwa noma kususwa ama-plugin. Ukuziphatha okubalulekile:
 
@@ -28,7 +28,7 @@ Isifaki se-plugin siphatha imisebenzi yesistimu yamafayela lapho kuthunyelwa nom
 - **Ukubuyekeza**: Kushintsha amafayela e-plugin akhona. Kukhubaza i-plugin ngaphambi kokubhala ukuze kugwenywe amaphutha esimo esingaphelele.
 - **Susa nge-slug**: Kuthola uhla lwe-plugin nge-slug, kukhubaze kuwo wonke amasayithi, bese kususa uhla.
 
-### Ukubhalisa Isiphathi Sokufaka Esenziwe Ngokwezifiso
+### Ukubhalisa Isiphathi Sokufaka Esenziwe Ngokwezifiso {#registering-a-custom-install-handler}
 
 Ungaxhuma emjikelezweni wokufaka usebenzisa ama-action `gratis_ai_plugin_installer_before_install` kanye `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Irejista Ye-ecosystem
+## Irejista Ye-ecosystem {#ecosystem-registry}
 
 Amakhono abhaliswa nge-**rejista ye-ecosystem yama-plugin**. Irejista imephu ama-slug wamakhono emakilasini awo okuphatha futhi iwaveze ku-dispatcher yamathuluzi ye-agent ye-AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Ukuhlanganiswa kwe-HookScanner
+## Ukuhlanganiswa kwe-HookScanner {#hookscanner-integration}
 
 Amakhono `create_plugin` kanye `update_plugin` asebenzisa ngokuzenzakalelayo i-**HookScanner** ekhodini esanda kukhiqizwa. I-HookScanner ibuyisa uhlu lwama-hook e-action nama-filter e-WordPress abhaliswe yi-plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 I-HookScanner yeqa ngokuzenzakalelayo izinhla ze-`vendor/` kanye `node_modules/`.
 
-## Ukwakhiwa Kwemisebenzi ye-Async
+## Ukwakhiwa Kwemisebenzi ye-Async {#async-job-architecture}
 
 Imisebenzi yama-plugin ethatha isikhathi eside (ukukhiqiza, ukufaka) ithunyelwa njenge-**misebenzi ye-async** enokulandelela inqubekelaphambili bukhoma. Isixhumi sengxoxo ye-AI sihlola inqubekelaphambili bese sisakaza izibuyekezo zesimo kumsebenzisi:
 

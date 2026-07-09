@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 S'exécute immédiatement avant que le cookie d'authentification connecté soit défini.
 
-## Paramètres
+## Paramètres {#parameters}
 
 | Nom | Type | Description |
 |------|------|-------------|
@@ -19,11 +19,11 @@ S'exécute immédiatement avant que le cookie d'authentification connecté soit 
 | $scheme | `string` | Schéma d'authentification. Valeur par défaut 'logged_in'. |
 | $token | `string` | Le jeton de session de l'utilisateur à utiliser pour ce cookie. |
 
-### Depuis
+### Depuis {#since}
 
 - 2.6.0
 - 4.9.0: Le paramètre <code>$token</code> a été ajouté.
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) à la ligne 141

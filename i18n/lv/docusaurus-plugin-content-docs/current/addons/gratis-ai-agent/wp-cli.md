@@ -3,11 +3,11 @@ title: WP-CLI atsauce
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI atsauce
+# WP-CLI atsauce {#wp-cli-reference}
 
 Gratis AI Agent nodrošina `wp gratis-ai-agent` komandu saimi agenta veiktspējas testēšanai, spēju pārvaldībai un agenta statusa vaicāšanai no komandrindas. Visām komandām nepieciešams WP-CLI 2.0 vai jaunāks.
 
-## Instalēšana
+## Instalēšana {#installation}
 
 WP-CLI komandas tiek reģistrētas automātiski, kad plugin ir aktīvs. Pārbaudiet ar:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Palaiž Agent Capabilities veiktspējas testu komplektu — sarežģītu, daudzsoļu uzvedņu kopu, kas izmanto pilnu spēju klāstu. Izmantojiet to, lai novērtētu modeļa veiktspēju, salīdzinātu AI pakalpojumu sniedzējus vai validētu spēju pakotnes pirms izvietošanas produkcijā.
 
-### Kopsavilkums
+### Kopsavilkums {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Opcijas
+### Opcijas {#options}
 
 | Opcija | Apraksts |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Izvades formāts: `table` (noklusējums), `json`, `csv` |
 | `--save` | Saglabāt veiktspējas testa rezultātus datubāzē vēsturiskai salīdzināšanai |
 
-### Piemēri
+### Piemēri {#examples}
 
 Palaist pilnu veiktspējas testu komplektu ar pašreizējo pakalpojumu sniedzēju un modeli:
 
@@ -57,7 +57,7 @@ Palaist pret konkrētu modeli un saglabāt rezultātus:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Izvade
+### Izvade {#output}
 
 Veiktspējas tests izvada vienu rindu katram jautājumam ar šādām kolonnām:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Veiktspējas testa jautājumi
+### Veiktspējas testa jautājumi {#benchmark-questions}
 
 Noklusējuma komplektā ietilpst:
 
@@ -95,11 +95,11 @@ Papildu jautājumus var reģistrēt, izmantojot `gratis_ai_agent_benchmark_quest
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Pārvalda instalētās spējas un spēju pakotnes.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Uzskaita visas reģistrētās spējas, to avotu (kodols vai pakotne) un pašreizējo statusu.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Lejupielādē un aktivizē spēju pakotni no reģistra.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Atspējo konkrētu spēju, nenoņemot pakotni. Noderīgi, lai ierobežotu agenta tvērumu noteiktā vietnē.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Atkārtoti iespējo iepriekš atspējotu spēju.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Parāda pašreizējo agenta konfigurāciju un savienojamības statusu.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Parāda nesenu agenta aktivitāti no debug žurnāla.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Atiestata agenta stāvokli: notīra ievietoto CSS, noņem agenta reģistrētos CPT un taksonomijas, atiestata globālos stilus un iztukšo agenta opciju kešatmiņu. Nenoņem plugin vai tā iestatījumus.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Izejas kodi
+## Izejas kodi {#exit-codes}
 
 Visas komandas veiksmīgas izpildes gadījumā iziet ar `0`. Izejas kodi, kas nav nulle:
 

@@ -4,11 +4,11 @@ title: Lim - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Lim: wu_country_get_administrative_division_name
+# Lim: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Xa rov qab lub npe zoo ntawm cov kev faib cheeb tsam tswj hwm hauv lub teb chaws.
 
-## Cov parameter
+## Cov parameter {#parameters}
 
 | Npe | Hom | Kev piav qhia |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Xa rov qab lub npe zoo ntawm cov kev faib cheeb tsam tswj hwm hauv lub teb chaws
 | $ucwords | `bool` | seb peb puas muab cov lus ua tsiaj ntawv loj. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance ntawm class tam sim no. |
 
-### Txij li
+### Txij li {#since}
 
 - 2.0.11
-### Qhov chaw
+### Qhov chaw {#source}
 
 Teev nyob rau hauv [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ntawm kab 250
 
 
-## Xa rov qab
+## Xa rov qab {#returns}
 Lub npe kev faib cheeb tsam uas twb hloov lawm.

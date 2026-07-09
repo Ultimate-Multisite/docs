@@ -4,16 +4,16 @@ title: Filter - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Filter: wu_users_membership_limit_message
+# Filter: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
 
 Erlaabt Entwéckler, d’Noriicht iwwer d’Limit vun de Membership-Benotzer z’änneren
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
 | $message | `string` | D’Noriicht, déi um Bildschierm ugewise gëtt. |
 
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72) op der Linn 72

@@ -3,13 +3,13 @@ title: Integrációs útmutató
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrációs útmutató
+# Integrációs útmutató {#integration-guide}
 
 Ez az útmutató az Ultimate Multisite gyakori integrációs mintáit mutatja be, beleértve a külső szolgáltatásokhoz való csatlakozást, az egyéni fizetési gateway-ek építését és a webhookok kezelését.
 
 Izolált bérlői infrastruktúrához lásd: [Multi-Tenancy integráció](./multi-tenancy) a szuverén bérlő bootstrapelésére, migrációs ellenőrzésére, SSO-jára és lebontási útmutatására vonatkozóan.
 
-## CRM-integráció
+## CRM-integráció {#crm-integration}
 
 Szinkronizáld az ügyféladatokat a CRM-edbe, amikor új ügyfelek regisztrálnak:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitikai integráció
+## Analitikai integráció {#analytics-integration}
 
 Kövesd nyomon a kulcsfontosságú üzleti eseményeket az ügyfél-életciklus során:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Következő lépések
+## Következő lépések {#next-steps}
 
 - [Egyéni gateway-fejlesztés](./custom-gateway) — Építsd meg a saját fizetési gateway-edet
 - [Webhook-kezelés](./webhooks) — Hozz létre egyéni webhook endpointokat

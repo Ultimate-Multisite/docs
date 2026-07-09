@@ -3,7 +3,7 @@ title: نوياندنی پلانی
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# به‌روزرساندن پکیج (نسخه ۲)
+# به‌روزرساندن پکیج (نسخه ۲) {#upgrading-a-plan-v2}
 
 _**توجه مهم: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 
@@ -39,7 +39,7 @@ Pişika pazarvanî bi dawî kirina sipê, pênkoçên nû yên produkt (product(
 
 ##
 
-## Pêşvekirina û Rêxistinîn (Upgrade and Downgrade Paths)
+## Pêşvekirina û Rêxistinîn (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Li her yek ji produktên xwe، hûn êyek tabêk bi navê **Up & Downgrades** hebe. Seçîya yekem li vê tabêka ye, çi şeye **Plan Group** tê yanîn.
 

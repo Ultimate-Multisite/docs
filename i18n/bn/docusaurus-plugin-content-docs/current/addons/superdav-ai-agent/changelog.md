@@ -3,11 +3,11 @@ title: পরিবর্তনলগ
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# পরিবর্তনলগ
+# পরিবর্তনলগ {#changelog}
 
-## 1.18.0 — 2026-06-29 তারিখে প্রকাশিত
+## 1.18.0 — 2026-06-29 তারিখে প্রকাশিত {#1180--released-on-2026-06-29}
 
-### নতুন
+### নতুন {#new}
 
 - **Google Calendar টুল** — সময়সূচি-সচেতন অটোমেশনের জন্য কনফিগার করা ক্যালেন্ডার ও ইভেন্ট পড়ুন
 - **Contact ম্যাপিং এবং attendee সহায়ক** — ক্যালেন্ডার অংশগ্রহণকারীদের site ব্যবহারকারী ও contact-এর সঙ্গে মিলিয়ে নিন
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **TextBee SMS provider** — TextBee-এর মাধ্যমে কনফিগার করা টেক্সট-মেসেজ নোটিফিকেশন পাঠান
 - **উন্নত companion package** — trusted-developer ফাইলসিস্টেম, ডাটাবেস, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, এবং benchmark টুল যোগ করুন, যা WordPress.org বিল্ড থেকে আলাদাভাবে বিতরণ করা হয়
 
-### উন্নত
+### উন্নত {#improved}
 
 - **Managed Superdav service setup** — সমর্থিত site-এর জন্য hosted service endpoint এবং স্বয়ংক্রিয় সংযোগ প্রভিশনিং যোগ করুন
 - **রিলিজ প্যাকেজিং** — আলাদা core এবং Advanced ZIP তৈরি করুন, দুটিই GitHub-এ প্রকাশ করুন, এবং WordPress.org-এ শুধু core package পাঠান
 
-### সংশোধিত
+### সংশোধিত {#fixed}
 
 - **AI request নির্ভরযোগ্যতা** — model নির্বাচন, request timeout, default setup model, reasoning-text পরিচালনা, এবং অবৈধ tool call-এর জন্য retry guidance উন্নত করুন
 - **Calendar এবং reminder hardening** — Google Calendar token এবং reminder deduplication আরও শক্তিশালী করুন
 - **Onboarding এবং approval resumes** — frontend onboarding launch এবং confirmed ability resume ঠিক করুন
 - **WordPress.org packaging review issues** — core release-এর জন্য packaging review feedback সমাধান করুন
 
-## 1.16.0 — 2026-05-20 তারিখে প্রকাশিত
+## 1.16.0 — 2026-05-20 তারিখে প্রকাশিত {#1160--released-on-2026-05-20}
 
-### নতুন
+### নতুন {#new-1}
 
 - **Generate Logo SVG ability** — Theme Builder এখন namespace-safe sanitisation সহ custom logo SVG তৈরি ও embed করতে পারে
 - **discovery interview-তে photo upload** — আরও সমৃদ্ধ design context-এর জন্য Theme Builder discovery interview-তে এখন photo upload ধাপ রয়েছে
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Navigation label parameter** — Create Menu ability এখন page title থেকে আলাদা একটি স্বতন্ত্র `navigation_label` সমর্থন করে
 - **Tier 1 tool availability** — sd-ai-agent/site-scrape এখন Theme Builder-এ defaultভাবে উপলভ্য একটি Tier 1 tool
 
-### সংশোধিত
+### সংশোধিত {#fixed-1}
 
 - **AI Client cache** — এখন cross-request persistence-এর জন্য transient দ্বারা backed, ফলে long-running agent task-এ data loss রোধ হয়
 - **Plugin row action links** — স্পষ্টতার জন্য সংশোধন ও পুনর্নামকরণ করা হয়েছে
 
-## 1.10.0 — 2026-05-05 তারিখে প্রকাশিত
+## 1.10.0 — 2026-05-05 তারিখে প্রকাশিত {#1100--released-on-2026-05-05}
 
-### নতুন
+### নতুন {#new-2}
 
 - **Tavily internet search** — Brave Search-এর পাশাপাশি আরও সমৃদ্ধ internet search result-এর জন্য Tavily-কে search provider হিসেবে যোগ করুন
 - **Theme-aware built-in skills** — Block Themes, Classic Themes, Kadence Blocks, এবং Kadence Theme skill guide এখন plugin-এর সঙ্গে আসে
 - **Site builder contact form ability** — chat interface থেকেই যেকোনো page-এ contact form যোগ করুন
 
-### উন্নত
+### উন্নত {#improved-1}
 
 - **WooCommerce integration refactored** — আরও ভালো নির্ভরযোগ্যতা ও compatibility-এর জন্য এখন native WooCommerce API ব্যবহার করে
 - **Provider list refreshes automatically** — কোনো plugin activate বা deactivate হলে
 
-### সংশোধিত
+### সংশোধিত {#fixed-2}
 
 - **navigate-to ability** — কিছু admin page-এ infinite reload loop ঠিক করা হয়েছে
 - **list-posts ability** — এখন category এবং tag name সঠিকভাবে slug-এ resolve করে

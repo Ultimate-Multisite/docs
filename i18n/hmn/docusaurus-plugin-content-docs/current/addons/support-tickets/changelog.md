@@ -3,13 +3,13 @@ title: Keeb Kwm Hloov Tshiab ntawm Daim Pib Txhawb Nqa
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Daim Ntawv Hloov Pauv Support Tickets
+# Daim Ntawv Hloov Pauv Support Tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Txhim kho: Tshem vendor/ directory tawm ntawm Git tracking (twb muaj nyob hauv .gitignore lawm), pab txo repository loj
 * Txhim kho: Kuaj siv tau txog WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Kho: Txais tau null values hauv nullable ticket model setters
 * Kho: Khaws txhua ticket hauv global network-wide tables kom txhawb multisite kom raug
 * Kho: Zais staff fields thiab kho blank-page redirect ntawm customer new-ticket form
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Txhim kho: Load frontend assets raws li xwm txheej tsuas yog ntawm support ticket pages xwb
 * Txhim kho: Hla plugin autoloader thaum Bedrock root autoloader twb load dependencies lawm
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Ntxiv: Kev saib ticket tag nrho rau admin thiab frontend
 * Ntxiv: AJAX handler rau ticket reply submissions
 * Ntxiv: Kev txhawb rau ticket reply functionality nrog form handling kom raug
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Txhim kho: Database structure nrog query thiab schema classes kom raug rau responses thiab attachments
 * Txhim kho: Migration mus rau real properties es tsis yog attributes rau ticket models
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Hloov tshiab: Hloov prefix npe mus rau ultimate-multisite kom sib xws
 * Hloov tshiab: Text domain standardization
 * Kho lawm: Kho tej bug me thiab kev txhim kho
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Tso tawm thawj zaug
 * Ticket management system tiav
 * Kev tswj kev nkag tau ntau theem

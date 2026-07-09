@@ -3,17 +3,17 @@ title: Hvernig á að stilla Domain Mapping
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Hvernig á að stilla lénavörpun (v2)
+# Hvernig á að stilla lénavörpun (v2) {#how-to-configure-domain-mapping-v2}
 
 _**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 
 Einn öflugasti eiginleiki úrvalsnets er möguleikinn á að bjóða viðskiptavinum okkar tækifæri til að tengja top-level domain við vefsvæðin sín. Þegar öllu er á botninn hvolft, hvort lítur fagmannlegra út: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) eða [_**joesbikeshop.com**_](http://joesbikeshop.com)? Þess vegna býður Ultimate Multisite upp á þennan eiginleika innbyggðan, án þess að þurfa að nota viðbætur frá þriðja aðila.
 
-## Hvað er lénavörpun?
+## Hvað er lénavörpun? {#whats-domain-mapping}
 
 Eins og nafnið gefur til kynna er lénavörpun sá möguleiki sem Ultimate Multisite býður til að taka við beiðni um sérsniðið lén og varpa þeirri beiðni á samsvarandi vefsvæði í netinu sem hefur þetta tiltekna lén tengt.
 
-### Hvernig á að setja upp lénavörpun á Ultimate Multisite-netinu þínu
+### Hvernig á að setja upp lénavörpun á Ultimate Multisite-netinu þínu {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Lénavörpun krefst nokkurrar uppsetningar af þinni hálfu til að virka. Sem betur fer sjálfvirknivæðir Ultimate Multisite erfiðu vinnuna fyrir þig svo þú getir auðveldlega uppfyllt kröfurnar.
 
@@ -45,7 +45,7 @@ En áður en þú byrjar að varpa sérsniðna léninu á eitt af undirvefsvæð
 
 ###
 
-### Að ganga úr skugga um að DNS-stillingar lénsins séu rétt stilltar
+### Að ganga úr skugga um að DNS-stillingar lénsins séu rétt stilltar {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Til að vörpun virki þarftu að ganga úr skugga um að lénið sem þú ætlar að varpa vísi á IP-tölu netsins þíns. Athugaðu að þú þarft IP-tölu netsins - IP-tölu lénsins þar sem Ultimate Multisite er sett upp - ekki IP-tölu sérsniðna lénsins sem þú vilt varpa. Til að leita að IP-tölu tiltekins léns mælum við til dæmis með því að fara á [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Ef þú lendir í vandræðum með að fá þetta til að virka skaltu **hafa sa
 
 Ef þú ætlar að leyfa viðskiptavinum þínum að varpa eigin lénum þurfa þeir sjálfir að vinna þennan hluta. Vísaðu þeim á þjónustukerfi skrásetjarans síns ef þeir geta ekki búið til A Record.
 
-### Vörpun sérsniðins léns sem Super Admin
+### Vörpun sérsniðins léns sem Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Þegar þú ert skráð(ur) inn sem super admin á netinu þínu geturðu auðveldlega bætt við og stjórnað sérsniðnum lénum með því að fara undir **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Ef þú smellir á lénaheitið geturðu séð nokkra valkosti inni í því. Sk
 
 **Er öruggt?:** Þó Ultimate Multisite athugi hvort lénið sé með SSL-vottorð eða ekki áður en það er virkjað, geturðu handvirkt valið að hlaða léninu með eða án SSL-vottorðs. Athugaðu að ef vefsíðan er ekki með SSL-vottorð og þú reynir að þvinga hana til að hlaðast með SSL, getur það valdið villum.
 
-### Vörpun sérsniðins lénaheitis sem notandi undirsíðu
+### Vörpun sérsniðins lénaheitis sem notandi undirsíðu {#mapping-custom-domain-name-as-subsite-user}
 
 Stjórnendur undirsíðna geta einnig varpað sérsniðnum lénaheitum úr stjórnborði undirsíðu sinnar.
 
@@ -121,7 +121,7 @@ Notandinn getur síðan smellt á **Næsta skref** og haldið áfram að bæta v
 
 Að smella á **Bæta við léni** mun hefja ferlið við að staðfesta og sækja DNS-upplýsingar sérsniðna lénsins.
 
-### Um samstillingu léna
+### Um samstillingu léna {#about-domain-syncing}
 
 Samstilling léna er ferli þar sem Ultimate Multisite bætir sérsniðna lénaheitinu við hýsingarreikninginn þinn sem viðbótarléni **til að lénavörpunin virki**.
 

@@ -3,13 +3,13 @@ title: Membuat Kode Diskon
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Membuat Kode Diskon (v2)
+# Membuat Kode Diskon (v2) {#creating-discount-codes-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
 Dengan Ultimate Multisite Anda dapat membuat kode diskon untuk memberikan diskon kepada klien Anda pada langganan mereka. Dan membuatnya mudah!
 
-## Membuat dan Mengedit Kode Diskon
+## Membuat dan Mengedit Kode Diskon {#creating-and-editing-discount-codes}
 
 Untuk membuat atau mengedit kode diskon, buka **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kupon sekarang ada di daftar Anda dan, dari sana, Anda dapat mengklik untuk **me
 
 ###
 
-### Menggunakan Parameter URL:
+### Menggunakan Parameter URL: {#using-url-parameters}
 
 Jika Anda ingin menyesuaikan tabel harga Anda atau membangun halaman kode kupon yang bagus untuk situs web Anda dan ingin menerapkan kode diskon ke formulir checkout Anda secara otomatis, Anda dapat melakukannya melalui parameter URL.
 

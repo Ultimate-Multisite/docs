@@ -3,25 +3,25 @@ title: اضافي ٽيمپليٽ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# ايڊآن ٽيمپليٽ
+# ايڊآن ٽيمپليٽ {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## گهرجون
+## گهرجون {#requirements}
 
 - WordPress 5.3 يا وڌيڪ
 - PHP 7.4 يا وڌيڪ
 - Multisite Ultimate plugin (فعال)
 
-## انسٽاليشن
+## انسٽاليشن {#installation}
 
 1. ايڊآن فائلون پنهنجي `/wp-content/plugins/` ڊائريڪٽري ۾ اپلوڊ ڪريو
 2. WordPress ۾ 'Plugins' مينيو ذريعي plugin فعال ڪريو
 3. نيٽورڪ ايڊمن ۾ ايڊآن سيٽنگون ترتيب ڏيو
 
-## ڊولپمينٽ
+## ڊولپمينٽ {#development}
 
-### سيٽ اپ
+### سيٽ اپ {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### پروجيڪٽ جو ڍانچو
+### پروجيڪٽ جو ڍانچو {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # ڪوڊ جديدڪاري جا قاعدا
 ```
 
-### ٽيسٽنگ
+### ٽيسٽنگ {#testing}
 
 ايڊآن ۾ هڪ جامع ٽيسٽنگ فريم ورڪ شامل آهي:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **ٽيسٽ ڪوريج**: ڪوڊ ڪوريج ٽريڪ ڪرڻ لاءِ ترتيب ڏنل
 - **Multisite ٽيسٽنگ**: ٽيسٽون multisite ماحول ۾ هلن ٿيون
 
-### ڪوڊ معيار
+### ڪوڊ معيار {#code-standards}
 
 - **WordPress ڪوڊنگ معيار**: PHPCS ذريعي لاڳو ڪيل
 - **PHP 7.4+ مطابقت**: جديد PHP خاصيتن جي حمايت
 - **جامد تجزيو**: قسم چيڪنگ لاءِ PHPStan انٽيگريشن
 - **ڪوڊ جديدڪاري**: PHP اپگريڊز لاءِ Rector قاعدا
 
-### بلڊ سسٽم
+### بلڊ سسٽم {#build-system}
 
 - **اثاثن جي پروسيسنگ**: CSS/JS فائلن لاءِ منيفڪيشن
 - **ترجمو**: POT فائل جنريشن
 - **پيڪيجنگ**: ورڇ لاءِ آرڪائيو ٺاهڻ
 - **ڊولپمينٽ موڊ**: ڊيبگنگ لاءِ غير منيفائيڊ اثاثا
 
-## ترتيب
+## ترتيب {#configuration}
 
 ايڊآن مختلف ترتيب اختيارن جي حمايت ڪري ٿو جيڪي نيٽورڪ ايڊمن انٽرفيس ذريعي رسائي لائق آهن.
 
-## Hooks ۽ Filters
+## Hooks ۽ Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - ايڊآن جي شروعات کان پوءِ فائر ڪيو ويو
 - `ultimate-multisite-addon-template_loaded` - سڀ ايڊآن فائلون لوڊ ٿيڻ کان پوءِ فائر ڪيو ويو
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - ايڊآن سيٽنگون تبديل ڪريو
 - `ultimate-multisite-addon-template_enabled` - ايڊآن فعال/غير فعال حالت کي اوور رائيڊ ڪريو
 
-## لائسنس
+## لائسنس {#license}
 
 هي ايڊآن GPL v3 يا ان کان پوءِ واري تحت لائسنس يافته آهي.
 
-## سپورٽ
+## سپورٽ {#support}
 
 سپورٽ ۽ دستاويزن لاءِ، [MultisiteUltimate.com](https://multisiteultimate.com) تي وڃو
-## تبديلي لاگ
+## تبديلي لاگ {#changelog}
 
 - ورزن 1.0.1 (2025-09-28): پريفڪس کي ultimate-multisite ۾ نالو تبديل ڪريو؛ ٽيڪسٽ ڊومين اپڊيٽ ڪريو؛ ورزن بمپ.
 

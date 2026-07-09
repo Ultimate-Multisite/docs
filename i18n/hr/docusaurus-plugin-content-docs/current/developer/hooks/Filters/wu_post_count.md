@@ -4,11 +4,11 @@ title: Filtar - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filter: wu_post_count
+# Filter: wu_post_count {#filter-wupostcount}
 
 Omogućuje plugin developerima promjenu ukupnog broja
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Omogućuje plugin developerima promjenu ukupnog broja
 | $post_counts | `object` | WordPress objekt koji vraća wp_count_posts fn |
 | $post_type | `string` | Slug vrste objave |
 
-### Od
+### Od {#since}
 
 - 1.9.1
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) u retku 136
 
 
-## Vraća
+## Vraća {#returns}
 Novi ukupni broj

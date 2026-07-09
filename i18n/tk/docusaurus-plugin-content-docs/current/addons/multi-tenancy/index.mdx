@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Köp kärendeçilik
+# Köp kärendeçilik {#multi-tenancy}
 
 Öndürijilik we howpsuzlyk üçin kiçi saýtlary serwerleriň we maglumat bazalarynyň arasynda paýlaň
 
-## Version 1.2.0 çykarylyşynyň esasy aýratynlyklary
+## Version 1.2.0 çykarylyşynyň esasy aýratynlyklary {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 önümçilik izolýasiýa iş akymlary üçin özbaşdak kärendeçi esasyny goşýar:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 önümçilik izolýasiýa iş akymlary üçin özbaşdak kä
 
 Ulanyjy gollanmalaryna serediň: [özbaşdak migrasiýa iş akymy](/user-guide/getting-started/sovereign-migration-workflow), [köp kärendeçilik izolýasiýasy](/user-guide/configuration/multi-tenancy-isolation) we [özbaşdak kärendeçi amallary](/user-guide/administration/sovereign-tenant-operations).
 
-## Talaplar
+## Talaplar {#requirements}
 
 - WordPress 5.3 ýa-da has ýokary
 - PHP 7.4 ýa-da has ýokary
 - Multisite Ultimate plugin (işjeň)
 
-## Gurnama
+## Gurnama {#installation}
 
 1. Addon faýllaryny `/wp-content/plugins/` katalogyňyza ýükläň
 2. Plugin-i WordPress içindäki 'Plugins' menýusy arkaly işjeňleşdiriň
 3. Addon sazlamalaryny network admin-de sazlaň
 
-## Ösdüriş
+## Ösdüriş {#development}
 
-### Sazlama
+### Sazlama {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Taslama gurluşy
+### Taslama gurluşy {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kody döwrebaplaşdyrmak düzgünleri
 ```
 
-### Test etmek
+### Test etmek {#testing}
 
 Addon giňişleýin test framework-ini öz içine alýar:
 
@@ -93,54 +93,54 @@ Addon giňişleýin test framework-ini öz içine alýar:
 - **Test örtügi**: Kod örtügini yzarlamak üçin sazlanan
 - **Multisite test etmek**: Testler multisite gurşawynda işleýär
 
-### Kod standartlary
+### Kod standartlary {#code-standards}
 
 - **WordPress kod standartlary**: PHPCS arkaly mejbury ýerine ýetirilýär
 - **PHP 7.4+ laýyklygy**: Döwrebap PHP aýratynlyklary goldanýar
 - **Statik analiz**: Görnüş barlagy üçin PHPStan integrasiýasy
 - **Kody döwrebaplaşdyrmak**: PHP täzelenmeleri üçin Rector düzgünleri
 
-### Gurluş ulgamy
+### Gurluş ulgamy {#build-system}
 
 - **Asset işlemek**: CSS/JS faýllary üçin kiçeltme
 - **Terjime**: POT faýlyny döretmek
 - **Gaplama**: Paýlamak üçin arhiw döretmek
 - **Ösdüriş režimi**: Sazlamak üçin kiçeldilmedik assetler
 
-## Konfigurasiýa
+## Konfigurasiýa {#configuration}
 
 Addon network admin interfeýsi arkaly elýeterli dürli konfigurasiýa opsiýalaryny goldaýar.
 
-### Özbaşdak kärendeçi konfigurasiýasy
+### Özbaşdak kärendeçi konfigurasiýasy {#sovereign-tenant-configuration}
 
 Özbaşdak kärendeçiler üçin traffigi kärendeçä ugrukdyrmazdan ozal kärendeçi maglumat bazasyny, faýl ulgamy kök katalogyny, maglumat bazasy host baglanyşygyny we host ukybyny sazlaň. Maglumat bazasy credentials-lerine, host baglanyşygyna, ugrukdyrma ýa-da ulanyjy üpjünçiligine täsir edýän her üýtgeşmeden soň migrasiýa tassyklamasyny işlediň.
 
 Kärendeçi runtime-y we maglumat bazasy rugsatlary ýerli socket ýa-da şol bir enjamdan giriş garaşýan ýagdaýynda diňe `localhost` ulanyň. Provider-iňiz tarapyndan sazlanan grant host şol bolsa, `127.0.0.1` ýa-da hyzmat hostname-ini ulanyň.
 
-### Hostinger ukyby
+### Hostinger ukyby {#hostinger-capability}
 
 Hostinger köp kärendeçilik ukyby umumy Hostinger integrasiýa token-i bilen işleýär. Tassyklamadan öň domeniň hPanel-de bardygyny, DNS-iň Hostinger account-a görkezýändigini we kärendeçi maglumat bazasy sazlamalarynyň hPanel bilen gabat gelýändigini tassyklaň.
 
-## Hooks we Filters
+## Hooks we Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Addon başlangyjyndan soň işledilýär
 - `ultimate-multisite-addon-template_loaded` - Ähli addon faýllary ýüklenenden soň işledilýär
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Addon sazlamalaryny üýtgediň
 - `ultimate-multisite-addon-template_enabled` - Addon işjeň/öçürilen ýagdaýyny üstünden ýazyň
 
-## Lisenziýa
+## Lisenziýa {#license}
 
 Bu addon GPL v3 ýa-da soňraky wersiýa boýunça lisenziýalanandyr.
 
-## Goldaw
+## Goldaw {#support}
 
 Goldaw we dokumentasiýa üçin [MultisiteUltimate.com](https://multisiteultimate.com) sahypasyna baryp görüň
-## Üýtgeşmeler žurnaly
+## Üýtgeşmeler žurnaly {#changelog}
 
 - Version 1.2.0 (2026-06-03): ýagdaýsyz kärendeçi awtomatik girişini, Hostinger köp kärendeçilik ukybyny, her kiçi saýt boýunça maglumat bazasy we faýl ulgamy izolýasiýasyny, özbaşdak migrasiýa tassyklama derwezelerini, kärendeçi bootstrap/maglumat bazasy writer gowulandyrmalaryny, sazlap bolýan MySQL host baglanyşygyny we has howpsuz özbaşdak söküşi goşýar.
 

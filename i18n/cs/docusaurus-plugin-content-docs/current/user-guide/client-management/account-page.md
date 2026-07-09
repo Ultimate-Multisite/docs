@@ -3,7 +3,7 @@ title: Stránka Account klienta
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Stránka Account vašeho klienta (v2)
+# Stránka Account vašeho klienta (v2) {#your-clients-account-page-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
@@ -11,7 +11,7 @@ Když si zákazníci předplatí plán ve vaší síti, získají přístup k we
 
 V tomto návodu vás provedeme stránkou Account zákazníka a uvidíte, co v ní vaši zákazníci mohou vidět a dělat.
 
-## Stránka Account
+## Stránka Account {#the-account-page}
 
 Stránka Account je dostupná kliknutím na **Account** v Dashboard vašeho zákazníka.
 
@@ -27,7 +27,7 @@ Po kliknutí se zákazníkům zobrazí přehled jejich členství, fakturační 
 
 Mohou také změnit členství na jiný plán nebo zakoupit další balíček či službu, kterou nabízíte. Podívejme se na jednotlivé sekce zvlášť.
 
-### Přehled vašeho členství:
+### Přehled vašeho členství: {#your-membership-overview}
 
 První blok hned pod názvem webu vašich zákazníků zobrazuje přehled jejich aktuálního plánu a služeb/balíčků, které byly spolu s ním zakoupeny. Blok také zobrazuje číslo členství, počáteční částku, která za něj byla zaplacena, kolik stojí plán a případná služba/balíček a kolikrát jim bylo toto členství účtováno. Mohou také vidět, zda je členství **Aktivní**, **Vypršelé** nebo **Zrušené**.
 
@@ -43,7 +43,7 @@ Pokud se nyní vaši zákazníci rozhodnou zakoupit balíčky nebo služby pro t
 
 Upozorňujeme, že na této stránce změny členství nelze přidat kupónové kódy. Pokud zákazník použil kupónový kód při prvním nákupu členství, kód se použije i na toto nové členství.
 
-### Aktualizace fakturační adresy:
+### Aktualizace fakturační adresy: {#updating-the-billing-address}
 
 Na stránce Account mohou vaši zákazníci také aktualizovat svou fakturační adresu. Stačí kliknout na **Aktualizovat** vedle _Fakturační adresa_.
 
@@ -53,7 +53,7 @@ Zákazníkovi se zobrazí nové okno. Stačí, aby vyplnil novou adresu a klikl 
 
 ![Formulář pro aktualizaci fakturační adresy](/img/account-page/billing-address-form.png)
 
-### Změna šablony webu:
+### Změna šablony webu: {#changing-the-site-template}
 
 Abyste zákazníkům umožnili měnit šablony jejich webů, musíte přejít do **Ultimate Multisite > Nastavení > Weby** a zapnout možnost **Povolit přepínání šablon**.
 
@@ -81,7 +81,7 @@ Po zapnutí potvrzení a kliknutí na **Zpracovat přepnutí** bude na webu vaš
 
 Zákazníci mohou z tohoto panelu také použít **Reset current template**, když potřebují vrátit web zpět na aktuálně přiřazenou šablonu. Stejně jako při přepnutí na jinou šablonu může reset šablony přepsat obsah webu, takže zákazníci by jej měli potvrdit pouze tehdy, když rozumí akci resetování.
 
-### Přidání vlastních domén:
+### Přidání vlastních domén: {#adding-custom-domains}
 
 Vaši zákazníci budou mít také možnost přidat vlastní doménu pro tento plán na stránce svého Account. Chcete-li zákazníkům umožnit používat vlastní domény, přejděte na **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Po kliknutí na **Next Step** mohou vaši zákazníci přidat název vlastní do
 
 Po kliknutí na **Add Domain** bude doména přidána do Account vašeho zákazníka. Vše, co nyní musí udělat, je změnit DNS záznamy této vlastní domény u jejich registrátora domény.
 
-### Změna hesla:
+### Změna hesla: {#changing-password}
 
 V Dashboard účtu si vaši zákazníci mohou také změnit heslo kliknutím na **Change Password**.
 
@@ -125,7 +125,7 @@ Zobrazí se nové okno, ve kterém vaši zákazníci budou muset vyplnit své ak
 
 ![Formulář pro změnu hesla s poli aktuálního a nového hesla](/img/account-page/change-password-form.png)
 
-### Nebezpečná zóna:
+### Nebezpečná zóna: {#danger-zone}
 
 Máme také dvě možnosti, které se zobrazují v části **Danger Zone**: **Delete Site** a **Delete Account**. Obě jsou v části Danger Zone, protože tyto dvě akce jsou nevratné. Pokud vaši zákazníci smažou svůj web nebo svůj účet, nemohou je obnovit zpět.
 

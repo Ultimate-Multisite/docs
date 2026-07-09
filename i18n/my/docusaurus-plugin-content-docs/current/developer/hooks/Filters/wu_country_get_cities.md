@@ -4,11 +4,11 @@ title: စစ်ထုတ်ခြင်း - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 နိုင်ငံတစ်ခုရဲ့ ပြည်နယ်တစ်ခုအတွက် မြို့တွေစာရင်းကို ပြန်ပေးပါတယ်။
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | ပြည်နယ်အတွက် နှစ်လုံးပါ ISO ကုဒ်။ |
 | $current_country | `\WP_Ultimo\Country\Country` | လက်ရှိ class ရဲ့ instance တစ်ခု။ |
 
-### စတင်အသုံးပြုနိုင်သည့်
+### စတင်အသုံးပြုနိုင်သည့် {#since}
 
 - 2.0.11
-### ရင်းမြစ်
+### ရင်းမြစ် {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) တွင် ၁၄၆ လိုင်း၌ သတ်မှတ်ထားသည်။
 
 
-## ပြန်ပေးသည့်အရာ
+## ပြန်ပေးသည့်အရာ {#returns}
 စစ်ထုတ်ထားတဲ့ ပြည်နယ်စာရင်း။

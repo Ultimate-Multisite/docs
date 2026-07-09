@@ -3,11 +3,11 @@ title: Eisimpleirean Còid Adhartach
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Eisimpleirean Còd Adhartach
+# Eisimpleirean Còd Adhartach {#advanced-code-examples}
 
 Tha na h-eisimpleirean seo a’ sealltainn pàtranan amalachaidh adhartach le Ultimate Multisite.
 
-## Einnsean Prìseachaidh Dinimigeach
+## Einnsean Prìseachaidh Dinimigeach {#dynamic-pricing-engine}
 
 Einnsean prìseachaidh stèidhichte air riaghailtean a chuireas lasachaidhean meud, dìlseachd, agus ràitheil an sàs:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Solarachadh Làraich Adhartach
+## Solarachadh Làraich Adhartach {#advanced-site-provisioning}
 
 Rèitich làraichean ùra gu fèin-obrachail le plugins, SSL, CDN, lethbhreacan-glèidhidh, agus sgrùdadh stèidhichte air feartan a’ phlana:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Siostam Chuingealachaidhean Gnàthaichte
+## Siostam Chuingealachaidhean Gnàthaichte {#custom-limitations-system}
 
 Cum sùil air agus cuir an gnìomh crìochan ghoireasan le rabhaidhean cleachdaidh:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Cunntair atamach BerlinDB le `increment_item()`
+## Cunntair atamach BerlinDB le `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Chuir Ultimate Multisite v2.6.1 modh `increment_item()` ris a’ chlas BerlinDB `Query`. Cleachd e gus meudachaidhean sàbhailte, atamach a dhèanamh air colbhan àireamhach gun rèisean leugh-atharraich-sgrìobh — feumail airson chunntairean, cuòtathan cleachdaidh, agus sgrùdaidhean cuingealachadh-reata a ruitheas fo dh’iarrtasan co-aontach.
 
-### Soidhneadh a’ mhodha
+### Soidhneadh a’ mhodha {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Chuir Ultimate Multisite v2.6.1 modh `increment_item()` ris a’ chlas BerlinDB 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Cleachdadh bunaiteach
+### Cleachdadh bunaiteach {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### A’ tracadh cleachdadh API gach ballrachd
+### A’ tracadh cleachdadh API gach ballrachd {#tracking-api-usage-per-membership}
 
 Pàtran practaigeach airson crìochan reata API gach ballrachd a chur an gnìomh:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Carson `increment_item()` an àite `update_item()`
+### Carson `increment_item()` an àite `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Tha dòigh shìmplidh leugh-atharraich-sgrìobh mì-shàbhailte fo dh’iarrtasan co-aontach:
 

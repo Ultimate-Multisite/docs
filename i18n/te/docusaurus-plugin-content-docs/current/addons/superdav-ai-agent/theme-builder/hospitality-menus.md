@@ -3,15 +3,15 @@ title: ఆతిథ్య మెనూలు
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# హాస్పిటాలిటీ మెనూలు
+# హాస్పిటాలిటీ మెనూలు {#hospitality-menus}
 
 **హాస్పిటాలిటీ మెనూలు** ఫీచర్ ద్వారా, Theme Builder మీ WordPress సైట్‌లోకి నిర్మాణాత్మకమైన ఆహార మరియు పానీయాల మెనూ పేజీలను నేరుగా రూపొందించడానికి మరియు పొందుపరచడానికి వీలు కల్పిస్తుంది.
 
-## అవలోకనం (Overview)
+## అవలోకనం (Overview) {#overview}
 
 Theme Builder ఇప్పుడు రెస్టారెంట్లు, కేఫ్‌లు, బార్లు మరియు కేటరింగ్ సేవలు వంటి హాస్పిటాలిటీ వ్యాపారాల కోసం వృత్తిపరమైన, నిర్మాణాత్మక మెనూ పేజీలను సృష్టించగలదు. ఈ మెనూలు మీ సైట్ డిజైన్‌తో పూర్తిగా అనుసంధానించబడి ఉంటాయి మరియు వీటిని సులభంగా అప్‌డేట్ చేయవచ్చు మరియు నిర్వహించవచ్చు.
 
-## మద్దతిచ్చే హాస్పిటాలిటీ రకాలు (Supported Hospitality Types)
+## మద్దతిచ్చే హాస్పిటాలిటీ రకాలు (Supported Hospitality Types) {#supported-hospitality-types}
 
 - **రెస్టారెంట్లు** — పూర్తి సేవలు అందించే డైనింగ్ మెనూలు
 - **కేఫ్‌లు** — కాఫీ మరియు తేలికపాటి ఆహార మెనూలు
@@ -21,9 +21,9 @@ Theme Builder ఇప్పుడు రెస్టారెంట్లు, క
 - **ఫుడ్ ట్రక్కులు** — మొబైల్ ఫుడ్ సర్వీస్ మెనూలు
 - **బ్రూయరీలు మరియు వైనరీలు** — వివరణలతో పానీయాల మెనూలు
 
-## మెనూ నిర్మాణం (Menu Structure)
+## మెనూ నిర్మాణం (Menu Structure) {#menu-structure}
 
-### మెనూ కేటగిరీలు (Menu Categories)
+### మెనూ కేటగిరీలు (Menu Categories) {#menu-categories}
 
 మెనూలను కేటగిరీలుగా విభజించబడ్డాయి:
 
@@ -34,7 +34,7 @@ Theme Builder ఇప్పుడు రెస్టారెంట్లు, క
 - **పానీయాలు** — పానీయాలు (మద్యం కలిపినవి మరియు కలిపనివి)
 - **స్పెషల్స్** — రోజువారీ లేదా సీజనల్ ప్రత్యేకతలు
 
-### మెనూ ఐటమ్ ఫార్మాట్ (Menu Item Format)
+### మెనూ ఐటమ్ ఫార్మాట్ (Menu Item Format) {#menu-item-format}
 
 ప్రతి మెనూ ఐటమ్‌లో ఈ వివరాలు ఉంటాయి:
 
@@ -49,7 +49,7 @@ Theme Builder ఇప్పుడు రెస్టారెంట్లు, క
 }
 ```
 
-#### ఐటమ్ ఫీల్డ్‌లు (Item Fields)
+#### ఐటమ్ ఫీల్డ్‌లు (Item Fields) {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Theme Builder ఇప్పుడు రెస్టారెంట్లు, క
 | `allergens` | array | సాధారణ అలెర్జీ కారకాలు (Nuts, Shellfish, మొదలైనవి) |
 | `availability` | string | ఎప్పుడు అందుబాటులో ఉంటుంది (Daily, Seasonal, మొదలైనవి) |
 
-## హాస్పిటాలిటీ మెనూలను సృష్టించడం (Creating Hospitality Menus)
+## హాస్పిటాలిటీ మెనూలను సృష్టించడం (Creating Hospitality Menus) {#creating-hospitality-menus}
 
-### దశ 1: మెనూ సమాచారాన్ని అందించండి (Step 1: Provide Menu Information)
+### దశ 1: మెనూ సమాచారాన్ని అందించండి (Step 1: Provide Menu Information) {#step-1-provide-menu-information}
 
 మీ మెనూ గురించి Theme Builderకి చెప్పండి:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### దశ 2: Theme Builder మెనూను రూపొందిస్తుంది (Step 2: Theme Builder Generates Menu)
+### దశ 2: Theme Builder మెనూను రూపొందిస్తుంది (Step 2: Theme Builder Generates Menu) {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. ధరలు మరియు వివరణలను ఫార్మాట్ చేస్తుంది
 5. ఆహార మరియు అలెర్జీ సమాచారాన్ని జోడిస్తుంది
 
-### దశ 3: సమీక్షించి, కస్టమైజ్ చేయండి (Step 3: Review and Customize)
+### దశ 3: సమీక్షించి, కస్టమైజ్ చేయండి (Step 3: Review and Customize) {#step-3-review-and-customize}
 
 మీరు చేయగలిగేవి:
 
@@ -91,9 +91,9 @@ Theme Builder:
 4. వివరణలు మరియు ఆహార సమాచారాన్ని అప్‌డేట్ చేయవచ్చు
 5. స్టైలింగ్ మరియు లేఅవుట్‌ను సర్దుబాటు చేయవచ్చు
 
-## మెనూ ప్రదర్శన ఎంపికలు (Menu Display Options)
+## మెనూ ప్రదర్శన ఎంపికలు (Menu Display Options) {#menu-display-options}
 
-### పూర్తి మెనూ పేజీ (Full Menu Page)
+### పూర్తి మెనూ పేజీ (Full Menu Page) {#full-menu-page}
 
 మీ పూర్తి మెనూను ప్రదర్శించే ప్రత్యేక పేజీ:
 
@@ -102,7 +102,7 @@ Theme Builder:
 - ప్రింట్ చేయడానికి అనుకూలమైన లేఅవుట్
 - మొబైల్‌కు అనుకూలమైన డిజైన్
 
-### మెనూ విడ్జెట్ (Menu Widget)
+### మెనూ విడ్జెట్ (Menu Widget) {#menu-widget}
 
 ఇతర పేజీలలో మెనూ విభాగాన్ని పొందుపరచండి:
 
@@ -111,7 +111,7 @@ Theme Builder:
 - బార్ పేజీలో పానీయాల మెనూ
 - ఫూటర్‌లో డిజర్ట్ ప్రదర్శన
 
-### మెనూ PDF (Menu PDF)
+### మెనూ PDF (Menu PDF) {#menu-pdf}
 
 డౌన్‌లోడ్ చేయదగిన PDF మెనూను రూపొందించండి:
 
@@ -120,9 +120,9 @@ Theme Builder:
 - చిత్రాలు మరియు వివరణలను కలిగి ఉంటుంది
 - పంచుకోవడం మరియు ఈమెయిల్ చేయడం సులభం
 
-## ఆహార మరియు అలెర్జీ సమాచారం (Dietary and Allergen Information)
+## ఆహార మరియు అలెర్జీ సమాచారం (Dietary and Allergen Information) {#dietary-and-allergen-information}
 
-### ఆహార లక్షణాలు (Dietary Attributes)
+### ఆహార లక్షణాలు (Dietary Attributes) {#dietary-attributes}
 
 ఐటమ్‌లకు ఆహార సమాచారాన్ని గుర్తించండి:
 
@@ -134,7 +134,7 @@ Theme Builder:
 - **Low-Carb** — తక్కువ కార్బోహైడ్రేట్లు
 - **High-Protein** — ప్రోటీన్‌తో నిండినది
 
-### అలెర్జీ హెచ్చరికలు (Allergen Warnings)
+### అలెర్జీ హెచ్చరికలు (Allergen Warnings) {#allergen-warnings}
 
 సాధారణ అలెర్జీ కారకాలను చేర్చండి:
 
@@ -147,9 +147,9 @@ Theme Builder:
 - **Gluten** — గోధుమ మరియు గ్లూటెన్ కలిగిన ధాన్యాలు
 - **Sesame** — వత్తి గింజలు మరియు నూనె
 
-## మెనూ నిర్వహణ (Menu Management)
+## మెనూ నిర్వహణ (Menu Management) {#menu-management}
 
-### ధరలను అప్‌డేట్ చేయడం (Updating Prices)
+### ధరలను అప్‌డేట్ చేయడం (Updating Prices) {#updating-prices}
 
 మెనూ ధరలను సులభంగా అప్‌డేట్ చేయండి:
 
@@ -159,7 +159,7 @@ Theme Builder:
 4. మార్పులను సేవ్ చేయండి
 5. మార్పులు వెంటనే మీ సైట్‌లో కనిపిస్తాయి
 
-### సీజనల్ ఐటమ్‌లను జోడించడం (Adding Seasonal Items)
+### సీజనల్ ఐటమ్‌లను జోడించడం (Adding Seasonal Items) {#adding-seasonal-items}
 
 సీజనల్ మెనూ వైవిధ్యాలను సృష్టించండి:
 
@@ -169,7 +169,7 @@ Theme Builder:
 4. లభ్యత తేదీలను షెడ్యూల్ చేయండి
 5. సీజన్‌లో ఆటోమేటిక్‌గా ప్రదర్శించబడుతుంది
 
-### స్పెషల్స్‌ను నిర్వహించడం (Managing Specials)
+### స్పెషల్స్‌ను నిర్వహించడం (Managing Specials) {#managing-specials}
 
 రోజువారీ లేదా వారపు ప్రత్యేకతలను ప్రదర్శించండి:
 
@@ -179,7 +179,7 @@ Theme Builder:
 4. రోజువారీ లేదా వారపుగా అప్‌డేట్ చేయండి
 5. పాత స్పెషల్స్‌ను ఆర్కైవ్ చేయండి
 
-## Theme Builder తో అనుసంధానం (Integration with Theme Builder)
+## Theme Builder తో అనుసంధానం (Integration with Theme Builder) {#integration-with-theme-builder}
 
 హాస్పిటాలిటీ సైట్‌ల కోసం Theme Builderని ఉపయోగిస్తున్నప్పుడు:
 
@@ -189,9 +189,9 @@ Theme Builder:
 4. **మొబైల్ ఆప్టిమైజేషన్** — మెనూలు ఫోన్లలో అందంగా ప్రదర్శించబడతాయి
 5. **SEO ఆప్టిమైజేషన్** — మెనూలు సెర్చ్ ఇంజిన్-స్నేజులుగా ఉంటాయి
 
-## ఉత్తమ పద్ధతులు (Best Practices)
+## ఉత్తమ పద్ధతులు (Best Practices) {#best-practices}
 
-### మెనూ డిజైన్ (Menu Design)
+### మెనూ డిజైన్ (Menu Design) {#menu-design}
 
 - **స్పష్టమైన ఆర్గనైజేషన్** — తార్కిక కేటగిరీ నిర్మాణం
 - **చదవగలిగే వివరణలు** — ఆకలి వేసేలా మరియు సమాచారంతో కూడినవి
@@ -199,7 +199,7 @@ Theme Builder:
 - **వృత్తిపరమైన ఫోటోలు** — అధిక-నాణ్యత గల ఆహార చిత్రాలు
 - **ఖాళీ స్థలం (Whitespace)** — పేజీని రద్దీగా చేయవద్దు
 
-### కంటెంట్ (Content)
+### కంటెంట్ (Content) {#content}
 
 - **ఖచ్చితమైన వివరణలు** — ఐటమ్‌లను కచ్చితంగా వివరించండి
 - **స్పెషల్స్‌ను హైలైట్ చేయండి** — ప్రత్యేకతలను ప్రత్యేకంగా కనిపించేలా చేయండి
@@ -207,7 +207,7 @@ Theme Builder:
 - **నిరంతరం అప్‌డేట్ చేయండి** — ధరలు మరియు ఐటమ్‌లను తాజాగా ఉంచండి
 - **ఆకలి వేసే భాషను ఉపయోగించండి** — ఐటమ్‌లను రుచికరంగా అనిపించేలా చేయండి
 
-### యాక్సెసిబిలిటీ (Accessibility)
+### యాక్సెసిబిలిటీ (Accessibility) {#accessibility}
 
 - **చదవగలిగే ఫాంట్‌లు** — స్పష్టమైన, చదవగలిగే టైప్‌ఫేస్‌లను ఉపయోగించండి
 - **తగిన కాంట్రాస్ట్** — టెక్స్ట్ చదవడానికి వీలుగా ఉండేలా చూసుకోండి
@@ -215,9 +215,9 @@ Theme Builder:
 - **అలెర్జీ హెచ్చరికలు** — అలెర్జీ కారకాలను ప్రముఖంగా ప్రదర్శించండి
 - **మొబైల్-ఫ్రెండ్లీ** — అన్ని పరికరాలలో పరీక్షించండి
 
-## ఉదాహరణలు (Examples)
+## ఉదాహరణలు (Examples) {#examples}
 
-### రెస్టారెంట్ మెనూ నిర్మాణం (Restaurant Menu Structure)
+### రెస్టారెంట్ మెనూ నిర్మాణం (Restaurant Menu Structure) {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### కేఫ్ మెనూ నిర్మాణం (Cafe Menu Structure)
+### కేఫ్ మెనూ నిర్మాణం (Cafe Menu Structure) {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## సంబంధిత ఫీచర్లు (Related Features)
+## సంబంధిత ఫీచర్లు (Related Features) {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — నావిగేషన్ మెనూలను సృష్టించండి
 - [Design Direction](./design-direction.md) — మీ సైట్ డిజైన్‌ను కస్టమైజ్ చేయండి

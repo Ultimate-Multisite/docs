@@ -3,9 +3,9 @@ title: 결제 및 송장 관리
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# 결제 및 송장 관리
+# 결제 및 송장 관리 {#managing-payments-and-invoices}
 
-## 결제 설정
+## 결제 설정 {#payment-settings}
 
 결제를 받기 시작하기 전에 결제 관련 설정을 구성해야 합니다. **Ultimate Multisite → Settings**로 이동한 뒤 **Payment** 탭을 클릭하세요.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![결제 설정 전체 페이지](/img/admin/settings-payments-full.png)
 
-### 일반 결제 옵션
+### 일반 결제 옵션 {#general-payment-options}
 
 일반 설정에서 다음을 구성할 수 있습니다.
 
@@ -24,7 +24,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![결제 게이트웨이 설정](/img/admin/settings-payments-options.png)
 
-### 결제 게이트웨이
+### 결제 게이트웨이 {#payment-gateways}
 
 Ultimate Multisite는 여러 결제 게이트웨이를 지원합니다. Payment 설정 탭에서 각 게이트웨이를 활성화하고 구성할 수 있습니다.
 
@@ -40,11 +40,11 @@ Ultimate Multisite는 여러 결제 게이트웨이를 지원합니다. Payment 
 
 ![추가 게이트웨이 설정](/img/admin/settings-payments-gateways-2.png)
 
-### 샌드박스 모드
+### 샌드박스 모드 {#sandbox-mode}
 
 실서비스로 전환하기 전에 결제 연동을 테스트하려면 **Sandbox Mode**를 활성화할 수 있습니다. 샌드박스 모드가 활성화되어 있으면 실제 청구는 발생하지 않습니다.
 
-## 결제 보기
+## 결제 보기 {#viewing-payments}
 
 네트워크 전체의 모든 거래를 보려면 Ultimate Multisite 아래의 **Payments** 페이지로 이동하세요.
 
@@ -54,7 +54,7 @@ Ultimate Multisite는 여러 결제 게이트웨이를 지원합니다. Payment 
 
 결제를 클릭하면 항목, 연결된 멤버십, 고객 정보, 결제 게이트웨이 데이터를 포함한 전체 세부 정보를 볼 수 있습니다.
 
-## 송장
+## 송장 {#invoices}
 
 Ultimate Multisite는 결제에 대한 송장을 자동으로 생성할 수 있습니다. Payment 설정에서 송장 템플릿과 번호 매기기 형식을 사용자 지정할 수 있습니다.
 

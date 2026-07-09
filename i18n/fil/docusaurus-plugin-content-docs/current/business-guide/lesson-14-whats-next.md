@@ -3,15 +3,15 @@ title: 'Aralin 14: Ano ang Susunod'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lesson 14: Ano ang Susunod
+# Lesson 14: Ano ang Susunod {#lesson-14-what-comes-next}
 
 Naitayo mo na ang isang niche website platform mula sa simula. Live na ang FitSite, naglilingkod sa mga fitness studio, at kumikita ng paulit-ulit na kita (recurring revenue). Ang huling araling ito ay tumitingin kung saan ka patutungo mula rito.
 
-## Saan Tayo Tumigil
+## Saan Tayo Tumigil {#where-we-left-off}
 
 Ang FitSite ay isang tumatakbong negosyo na may mga customer, operasyon, at patuloy na paglago. Ngayon, pag-iisipan naman natin kung ano ang susunod.
 
-## Ang Kumpletong FitSite Network
+## Ang Kumpletong FitSite Network {#the-complete-fitsite-network}
 
 Narito ang lahat ng binuo natin sa loob ng 14 na aralin:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Option 1: Palalimin ang Iyong Niche
+## Option 1: Palalimin ang Iyong Niche {#option-1-go-deeper-in-your-niche}
 
 Bago ka magpalawak sa ibang niches, isaalang-alang mo ang pagpapalalim sa fitness:
 
-### Sub-Niches
+### Sub-Niches {#sub-niches}
 
 - **Yoga studios** -- mga specialized template na may features para sa meditation, retreat, at workshop
 - **CrossFit boxes** -- WOD tracking, competition results, at community features
@@ -59,7 +59,7 @@ Bago ka magpalawak sa ibang niches, isaalang-alang mo ang pagpapalalim sa fitnes
 
 Ang bawat sub-niche ay maaaring magkaroon ng sarili nitong templates at posibleng sariling brand, lahat ay tumatakbo sa iisang Ultimate Multisite network.
 
-### Premium Features
+### Premium Features {#premium-features}
 
 Gumawa ng mga features na handang bayaran ng mga fitness studio:
 
@@ -68,14 +68,14 @@ Gumawa ng mga features na handang bayaran ng mga fitness studio:
 - **Fitness blog templates** -- pre-built content structures para sa fitness content marketing
 - **Social media integration** -- automatic posting ng class schedules at updates
 
-### Geographic Expansion
+### Geographic Expansion {#geographic-expansion}
 
 Kung nagsimula ka sa isang lokal na lugar, palawakin mo sa:
 
 - Ibang lungsod sa iyong bansa
 - Ibang bansa (gamitin ang [localization features](/user-guide/localization/translating) ng Ultimate Multisite para suportahan ang maraming wika)
 
-## Option 2: Magpalawak sa Katabing Niches
+## Option 2: Magpalawak sa Katabing Niches {#option-2-expand-to-adjacent-niches}
 
 Ang proseso na ginamit mo para sa fitness studios ay gumagana para sa anumang niche. Mas madali ang iyong pangalawang niche dahil mayroon ka na:
 
@@ -83,7 +83,7 @@ Ang proseso na ginamit mo para sa fitness studios ay gumagana para sa anumang ni
 - Operational experience
 - Isang napatunayang playbook
 
-### Katabing Niches sa Fitness
+### Katabing Niches sa Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness and spa** -- massage therapists, day spas, wellness centers
 - **Sports clubs** -- amateur sports teams, leagues, recreational clubs
@@ -91,7 +91,7 @@ Ang proseso na ginamit mo para sa fitness studios ay gumagana para sa anumang ni
 
 Ang mga ito ay may pagkakapareho sa audience sa fitness, kaya ang iyong marketing at partnerships ay maaaring magamit pa rin.
 
-### Ganap na Bagong Niches
+### Ganap na Bagong Niches {#completely-new-niches}
 
 Gamitin ang framework mula sa Lesson 2 para i-evaluate ang anumang niche:
 
@@ -108,7 +108,7 @@ Ang bawat bagong niche ay nangangailangan ng:
 
 Ang platform infrastructure, billing, at operational processes ay nananatiling pareho.
 
-## Option 3: Gumawa ng Platform ng mga Platform
+## Option 3: Gumawa ng Platform ng mga Platform {#option-3-build-a-platform-of-platforms}
 
 Sa paglaki, maaari kang magpatakbo ng maraming niche brands sa iisang Ultimate Multisite network:
 
@@ -118,11 +118,11 @@ Sa paglaki, maaari kang magpatakbo ng maraming niche brands sa iisang Ultimate M
 
 Ang bawat brand ay may sariling templates, plans, at marketing, ngunit sila ay nagbabahagi ng infrastructure, billing, at operational processes. Dito nagiging makapangyarihan ang ekonomiya ng Ultimate Multisite — isang platform, maraming verticals.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Para sa kumpletong paghihiwalay sa pagitan ng mga niche, isaalang-alang ang [Multi-Network addon](/addons/multinetwork) na nagpapahintulot sa iyo na patakbuhin ang maraming WordPress networks mula sa iisang installation.
 
-## Option 4: Ibenta ang Negosyo
+## Option 4: Ibenta ang Negosyo {#option-4-sell-the-business}
 
 Ang isang niche website platform na may paulit-ulit na kita, mababang churn, at malinaw na market position ay isang mahalagang asset. Ang mga SaaS businesses ay karaniwang binebenta sa halagang 3-5x ng taunang kita.
 
@@ -134,7 +134,7 @@ Ang isang FitSite na may 200 customer sa $89 ARPU:
 
 Hindi ito garantisadong resulta, ngunit ito ay makatotohanan para sa isang maayos na pinatakbong niche platform.
 
-## Ano ang Iyong Natutunan
+## Ano ang Iyong Natutunan {#what-you-have-learned}
 
 Tinuruan ka ng kursong ito ng isang paulit-ulit na proseso:
 
@@ -150,7 +150,7 @@ Tinuruan ka ng kursong ito ng isang paulit-ulit na proseso:
 
 Ang niche ang strategy. Ang platform ang tool. Ginagawang posible ng Ultimate Multisite ang tool. Ang pag-unawa mo sa niche ang nagpapahalaga dito.
 
-## Magsimulang Magtayo
+## Magsimulang Magtayo {#start-building}
 
 Kung sumunod ka sa FitSite, mayroon kang gumaganang platform. Kung nagbasa ka hanggang sa makahanap ng sarili mong niche, bumalik sa [Lesson 2: Picking Your Niche](lesson-2-picking-your-niche) at simulan ang proseso para sa napili mong vertical.
 

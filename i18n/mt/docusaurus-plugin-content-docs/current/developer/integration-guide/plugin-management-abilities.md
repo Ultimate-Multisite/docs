@@ -3,11 +3,11 @@ title: Kapaċitajiet ta’ Ġestjoni tal-Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kapaċitajiet ta' Ġestjoni tal-Plugins
+# Kapaċitajiet ta' Ġestjoni tal-Plugins {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 jiġi b'**7 kapaċitajiet ta' ġestjoni tal-plugins** li l-assistent AI jista' jsejjaħ waqt konverżazzjoni. Dawn il-kapaċitajiet jipprovdu kontroll programmatiku fuq plugins ta' WordPress installati permezz tas-[Sistema Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Ħarsa Ġenerali lejn il-Kapaċitajiet
+## Ħarsa Ġenerali lejn il-Kapaċitajiet {#abilities-overview}
 
 | Kapaċità | Slug | Deskrizzjoni |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 jiġi b'**7 kapaċitajiet ta' ġestjoni tal-plugins** li 
 | Installa Plugin | `install_plugin` | Jiskjera plugin sandboxed fid-direttorju tal-plugins live ta' WordPress. |
 | Attiva Plugin | `activate_plugin` | Jattiva plugin sandboxed fl-ambjent sandbox wp-env. |
 
-## API tal-Installatur tal-Plugins
+## API tal-Installatur tal-Plugins {#plugin-installer-api}
 
 L-installatur tal-plugins jimmaniġġja operazzjonijiet tas-sistema tal-fajls meta jiskjera jew ineħħi plugins. Imġiba ewlenija:
 
@@ -28,7 +28,7 @@ L-installatur tal-plugins jimmaniġġja operazzjonijiet tas-sistema tal-fajls me
 - **Aġġornament**: Jissostitwixxi fajls eżistenti tal-plugin. Jiddiżattiva l-plugin qabel il-kitba biex jiġu evitati żbalji ta' stat parzjali.
 - **Tħassir skont slug**: Isib id-direttorju tal-plugin skont slug, jiddiżattiva fuq is-siti kollha, imbagħad ineħħi d-direttorju.
 
-### Reġistrazzjoni ta' Handler ta' Installazzjoni Personalizzat
+### Reġistrazzjoni ta' Handler ta' Installazzjoni Personalizzat {#registering-a-custom-install-handler}
 
 Tista' tidħol fiċ-ċiklu tal-ħajja tal-installazzjoni billi tuża l-azzjonijiet `gratis_ai_plugin_installer_before_install` u `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Reġistru tal-Ekosistema
+## Reġistru tal-Ekosistema {#ecosystem-registry}
 
 Il-kapaċitajiet jiġu rreġistrati permezz tar-**reġistru tal-ekosistema tal-plugins**. Ir-reġistru jimmappja slugs tal-kapaċitajiet mal-classes tal-handlers tagħhom u jesponihom lid-dispatcher tal-għodod tal-aġent AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integrazzjoni ma' HookScanner
+## Integrazzjoni ma' HookScanner {#hookscanner-integration}
 
 Il-kapaċitajiet `create_plugin` u `update_plugin` iħaddmu awtomatikament il-**HookScanner** kontra kodiċi ġġenerat ġdid. HookScanner jirritorna lista ta' hooks ta' azzjoni u filtri ta' WordPress irreġistrati mill-plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner jaqbeż id-direttorji `vendor/` u `node_modules/` awtomatikament.
 
-## Arkitettura ta' Xogħlijiet Asinkroniċi
+## Arkitettura ta' Xogħlijiet Asinkroniċi {#async-job-architecture}
 
 Operazzjonijiet tal-plugins li jdumu (ġenerazzjoni, installazzjoni) jintbagħtu bħala **xogħlijiet asinkroniċi** b'intraċċar live tal-progress. L-interface taċ-chat AI jivverifika l-progress u jxandar aġġornamenti tal-istatus lill-utent:
 

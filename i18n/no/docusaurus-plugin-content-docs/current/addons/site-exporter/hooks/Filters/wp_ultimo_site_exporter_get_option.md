@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Returnerer den slugifiserte nettverksopsjonsverdien.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Returnerer den slugifiserte nettverksopsjonsverdien.
 | $option_name | `string` | Opsjonsnavnet. |
 | $default | `mixed` | Standardverdien. |
 
-### Siden
+### Siden {#since}
 
 - 1.9.6
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) på linje 126
 
 
-## Returnerer
+## Returnerer {#returns}
 Den slugifiserte nettverksopsjonsverdien.

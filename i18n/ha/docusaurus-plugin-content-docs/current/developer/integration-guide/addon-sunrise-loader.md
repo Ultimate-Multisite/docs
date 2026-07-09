@@ -3,17 +3,17 @@ title: Mai Loda Fayil ɗin Sunrise na Ƙari
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Mai Loda Fayil ɗin Addon Sunrise
+# Mai Loda Fayil ɗin Addon Sunrise {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 yana ƙara mai loda faɗaɗa sunrise don add-ons da haɗe-haɗen MU-plugin na musamman da suke buƙatar gudana yayin WordPress sunrise bootstrapping ba tare da gyara fayil ɗin `wp-content/sunrise.php` da aka samar ba.
 
-## Lokacin amfani da shi
+## Lokacin amfani da shi {#when-to-use-it}
 
 Yi amfani da faɗaɗa sunrise lokacin da haɗe-haɗenka dole ne ya gudana kafin a loda plugins na yau da kullum, kamar tsara hanyar custom domain, sarrafa buƙatun da suka danganci host, ko gyare-gyaren network bootstrap na farko.
 
 Don haɗe-haɗe na yau da kullum, fi son plugins na WordPress na yau da kullum, MU-plugins, da hooks na Ultimate Multisite da aka rubuta a takardu. Lambar sunrise tana gudana da wuri sosai kuma ya kamata ta kasance ƙarama, mai kariya, kuma marar dogaro da wasu abubuwa.
 
-## Ka’idar sanya sunan fayil
+## Ka’idar sanya sunan fayil {#file-naming-convention}
 
 Ƙirƙiri fayil ɗin PHP mai suna `sunrise.php` a cikin kundin addon wanda sunansa yake farawa da `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Ana loda fayilolin da suka dace bisa tsarin haruffa ta hanyar addon.
 
-## Inda za a saka fayil ɗin
+## Inda za a saka fayil ɗin {#where-to-place-the-file}
 
 Saka fayil ɗin a cikin babban kundin addon ɗin da yake da halayyar sunrise:
 
@@ -45,7 +45,7 @@ Ana warware binciken dangane da `WP_CONTENT_DIR`, ba darajar `WP_PLUGIN_DIR` ta 
 
 Kada ka gyara fayil ɗin `wp-content/sunrise.php` da aka samar kai tsaye. Mai loda yana ba lambar musamman damar faɗaɗa halayyar sunrise ba tare da yin fork na ainihin fayil ɗin sunrise da Ultimate Multisite ke sakawa kuma yake sabuntawa ba.
 
-## Hooks da filters da ake da su
+## Hooks da filters da ake da su {#hooks-and-filters-available}
 
 Fayilolin addon sunrise suna gudana bayan Ultimate Multisite domain mapping ya loda kuma kafin WordPress ya kunna `ms_loaded`. A wannan lokaci fayil ɗin sunrise zai iya:
 
@@ -58,7 +58,7 @@ Ultimate Multisite yana kunna `wu_sunrise_loaded` bayan mai loda sunrise ɗinsa 
 
 Kira kawai functions da aka riga aka loda a matakin sunrise. Guji aiki mai nauyi kan database, nuna template, buƙatun HTTP, da lambar da take ɗauka cewa an kammala tsarin loda plugin na yau da kullum.
 
-## Misali mafi ƙanƙanta
+## Misali mafi ƙanƙanta {#minimal-example}
 
 ```php
 <?php

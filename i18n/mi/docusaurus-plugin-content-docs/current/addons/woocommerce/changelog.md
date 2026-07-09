@@ -3,7 +3,7 @@ title: Rangitaki Panoni Whakaurunga WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Rangitaki Panonitanga mō te WooCommerce Integration
+# Rangitaki Panonitanga mō te WooCommerce Integration {#woocommerce-integration-changelog}
 
 Putanga 2.2.0 - I tukuna i te 2026-07-01
 * Hou: Ka puta ināianei ngā rahinga tāke Ultimate Multisite hei rārangi utu WooCommerce motuhake i te checkout, kia mārama ake ai ngā tapeke tāke i mua i te utunga.

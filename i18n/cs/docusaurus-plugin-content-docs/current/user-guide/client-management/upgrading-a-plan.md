@@ -3,7 +3,7 @@ title: Přechod na vyšší tarif
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Upgrade plánu (v2)
+# Upgrade plánu (v2) {#upgrading-a-plan-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
@@ -41,7 +41,7 @@ Po dokončení pokladny budou nové produkty přidány do účtu vašich zákazn
 
 ##
 
-## Cesty upgradu a downgradu
+## Cesty upgradu a downgradu {#upgrade-and-downgrade-paths}
 
 U každého ze svých produktů budete mít kartu **Up & Downgrades**. První možností na této kartě je pole s názvem **Plan Group**.
 

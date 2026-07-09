@@ -3,7 +3,7 @@ title: Thiết lập PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Thiết lập PayPal Gateway (v2)
+# Thiết lập PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
@@ -13,13 +13,13 @@ Cũng như Stripe, PayPal được sử dụng rộng rãi cho thanh toán trự
 
 Lưu ý rằng bạn cần có **PayPal Business account** để lấy thông tin xác thực API cần thiết cho tích hợp này.
 
-## Bật PayPal trên mạng của bạn
+## Bật PayPal trên mạng của bạn {#enabling-paypal-on-your-network}
 
 Để bật PayPal làm phương thức thanh toán có sẵn trên mạng của bạn, hãy đi tới tab **Ultimate Multisite > Settings > Payments** và đánh dấu vào ô bên cạnh PayPal.
 
 ![Bật PayPal trong các cổng thanh toán đang hoạt động](/img/config/settings-payment-gateways.png)
 
-## Sử dụng trình hướng dẫn thiết lập có hướng dẫn
+## Sử dụng trình hướng dẫn thiết lập có hướng dẫn {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 thêm trình hướng dẫn thiết lập PayPal có hướng dẫn vào cài đặt cổng thanh toán. Sau khi bạn bật PayPal, hãy sử dụng trình hướng dẫn trên **Ultimate Multisite > Settings > Payments** để chọn cách bạn muốn kết nối cổng và xác nhận những thông tin xác thực nào vẫn cần trước khi lưu.
 
@@ -30,7 +30,7 @@ Trình hướng dẫn hỗ trợ hai lộ trình thiết lập:
 
 Nếu bạn không thấy tùy chọn OAuth trong trình hướng dẫn, hãy hoàn tất luồng nhập thông tin xác thực thủ công bên dưới. Cổng hoạt động với cùng thông tin xác thực PayPal Business API như các bản phát hành Ultimate Multisite 2.x trước đó.
 
-## Lấy thông tin xác thực PayPal API
+## Lấy thông tin xác thực PayPal API {#getting-the-paypal-api-credentials}
 
 Khi PayPal được bật làm cổng thanh toán, bạn sẽ cần điền các trường cho PayPal API **Username** , PayPal API **Password** và PayPal API **Signature**.
 

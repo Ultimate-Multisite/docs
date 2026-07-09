@@ -4,11 +4,11 @@ title: Tace - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Tacewa: wu_apc_process_page_content
+# Tacewa: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Ba masu haɓakawa damar yin gyara ga abun ciki na ƙarshe
 
-## Sigogi
+## Sigogi {#parameters}
 
 | Suna | Nau'i | Bayani |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Ba masu haɓakawa damar yin gyara ga abun ciki na ƙarshe
 | $to_replace | `array` | Array da ke ɗauke da masu riƙe wuri. |
 | $placeholder_count | `int` | Yawan masu riƙe wuri da aka samu. |
 
-### Tun daga
+### Tun daga {#since}
 
 - 1.4.0
-### Tushe
+### Tushe {#source}
 
 An ayyana a cikin [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) a layi na 46
 
 
-## Yana dawo da
+## Yana dawo da {#returns}
 Abun ciki bayan gyare-gyare.

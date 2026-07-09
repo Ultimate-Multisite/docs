@@ -3,13 +3,13 @@ title: Niche webgune negozioa sortu
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisitearekin Niche Website Bizna
+# Ultimate Multisitearekin Niche Website Bizna {#build-a-niche-website-business-with-ultimate-multisite}
 
 Ez dago lagunariak zure webstei saldatzeko gertatzen duen guztiak Wix, Squarespace eta liburu-gik freelancer-ek berriprean lekuan jartzen ditu. Ez mailako. Horrek irudiak joatenak, bat-besarra dituztenak, zein bat ez du. Horrek irudienak joatenak, bat-besarra dituztenak, zein bat ez du.
 
 Hau kursoan Ultimate Multisite erabiliz hori egin dezakezu.
 
-## Zer Ekin izango da
+## Zer Ekin izango da {#what-you-will-build}
 
 Hau kursoaren guztiaren ondorioz **FitSite** talde batean eginduko webstei platua berea ekin izango du -- fitness studioak, personal trainerak eta gimnazio-maitak erabiliz beste webstei plataforma bat.
 
@@ -23,7 +23,7 @@ Eskaintzen duen lehen lekura, FitSite platforma kompleto niche bat izango da, ze
 
 Irritura irakurri, eta aurrera egin duzu, aurrera egiten duzu. Aurreratean, platforma bat eta hori erreprika egiteko jakinbideak izango duzu, zein niche bat ere uste badute.
 
-## Fitness Studioak Non?
+## Fitness Studioak Non? {#why-fitness-studios}
 
 Besteak aurkitu behar zutendu bat konkretua irakurri dezaten. Fitness studioak berri egiten dute:
 
@@ -35,7 +35,7 @@ Besteak aurkitu behar zutendu bat konkretua irakurri dezaten. Fitness studioak b
 
 FitSite konstruktatzea ikusten duen guztia, zer niche ere uste badu (txokikoak, real estate agentak, ablakariak, erronak, handi-elkarriko kontratista edo beste bat), direktioa direktioa aplikatzen da.
 
-## Kursoko itxura
+## Kursoko itxura {#course-structure}
 
 Lehen lekurrak bat konseptua introduzia, zerbait daingo dio eta FitSite networkan implementatzeko gaitasunaren bidez irantzategi ditu. Lehen lekurak aurrera egiten duena.
 
@@ -57,7 +57,7 @@ Lehen lekurrak bat konseptua introduzia, zerbait daingo dio eta FitSite networka
 | [13. Urduditu eta handiagoa emateak](lesson-13-growth) | Lehen klientaketik garaia negustea bat daiteko | FitSite urduditu eta automatizazio estratezia |
 | [14. Zer da iraupena?](lesson-14-whats-next) | Niche sektorekin aurkitzea eta berri oportunidad guztiak iraunkorrak | FitSite-n ondorioa duen mapa |
 
-## Aurreratutako kondizioak (Prerequisites)
+## Aurreratutako kondizioak (Prerequisites) {#prerequisites}
 
 - WordPress Multisite instalazioa (edo hori sortzeko erkide)
 - Ultimate Multisite lisentzia aktibo bat
@@ -65,6 +65,6 @@ Lehen lekurrak bat konseptua introduzia, zerbait daingo dio eta FitSite networka
 
 Koda ez da beharrezkoa. Ultimate Multisite ez duzu aurrera egin ez duzun, ez dago problema bat -- Lesson 3-k instalazio berri batetik hasten da.
 
-## Aurreratu? (Ready?)
+## Aurreratu? (Ready?) {#ready}
 
 [Lesson 1: Niche sektorekin zer da iraupena?](lesson-1-why-niche)

@@ -3,13 +3,13 @@ title: Konfigire Peman Manyèl
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Mete Peman Manyèl An Plas (v2)
+# Mete Peman Manyèl An Plas (v2) {#setting-up-manual-payments-v2}
 
 _**NÒT ENPÒTAN: Atik sa a refere a Ultimate Multisite vèsyon 2.x.**_
 
 Peman manyèl yo se yon fason pou ou ofri lòt metòd peman si **Stripe** oswa **PayPal** pa disponib pou itilizatè ou yo. Li kapab yon transfè filè oswa transfè labank, oswa nenpòt lòt metòd peman ki disponib lokalman pou itilizatè ou yo.
 
-## Kijan pou aktive Peman Manyèl
+## Kijan pou aktive Peman Manyèl {#how-to-enable-manual-payments}
 
 Mete peman manyèl an plas trè fasil. Ou sèlman bezwen aktive li anba pasrèl peman yo epi mete enstriksyon detaye sou kijan itilizatè a ta dwe voye peman an.
 
@@ -31,7 +31,7 @@ Epi yo pral resevwa tou yon mesaj sou paj **Mèsi** ou a ak enstriksyon peman ou
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Konfime peman manyèl yo
+## Konfime peman manyèl yo {#confirming-manual-payments}
 
 Pou konfime yon peman manyèl, ale nan meni **Peman** ki sou ba agoch la. La ou ka wè tout peman ki sou rezo ou a ak detay yo, ansanm ak **estati** yo. Yon peman manyèl ap toujou gen estati **Annatant** jiskaske ou chanje li manyèlman.
 

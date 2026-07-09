@@ -3,11 +3,11 @@ title: Webhook эшкәртү
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook эшкәртү
+# Webhook эшкәртү {#webhook-handling}
 
 Тышкы хезмәтләрдән вакыйгалар кабул итү һәм мәгълүматны Ultimate Multisite белән синхронлау өчен махсус webhook нокталары булдырыгыз.
 
-## Махсус Webhook ноктасы
+## Махсус Webhook ноктасы {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Иминлек мәсьәләләре
+## Иминлек мәсьәләләре {#security-considerations}
 
 - Webhook имзаларын HMAC яки уртак сер ярдәмендә һәрвакыт тикшерегез
 - REST маршрутыгызда `permission_callback` кулланыгыз — production мохитендә аны беркайчан да `__return_true` итеп куймагыз

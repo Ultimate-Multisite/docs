@@ -4,11 +4,11 @@ title: Filtru - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filtru: ultimate_multisite_content_sync_get_option
+# Filtru: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Jirritorna l-valur tal-għażla tan-network slugfied.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Jirritorna l-valur tal-għażla tan-network slugfied.
 | $option_name | `string` | L-isem tal-għażla. |
 | $default | `mixed` | Il-valur default. |
 
-### Minn
+### Minn {#since}
 
 - 1.0.0
-### Sors
+### Sors {#source}
 
 Iddefinit f’[`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) fil-linja 126
 
 
-## Jirritorna
+## Jirritorna {#returns}
 Il-valur tal-għażla tan-network slugfield.

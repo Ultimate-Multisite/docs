@@ -3,7 +3,7 @@ title: Журнал изменений Support Agents
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# Журнал изменений Support Agents
+# Журнал изменений Support Agents {#support-agents-changelog}
 
 Версия: 1.0.14 — выпущено 2026-05-05
 * Исправлено: добавлен Requires Plugins header для корректного объявления зависимости WordPress plugin

@@ -3,11 +3,11 @@ title: Whakawhanaungatanga o te Whakamahi Wāhi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Feahakitanga Whakawāhi Wāhi (Site Specification Skill)
+# Feahakitanga Whakawāhi Wāhi (Site Specification Skill) {#site-specification-skill}
 
 He **Feahakitanga Whakawāhi Wāhi** he te whakataunga mō te whakamahi ā-structured ki te whakatipu ngā whakaaro, te reo, me te whānau o te wāhi ahau. Ko i te pūrere **site_brief** ahau e whakatipu i tēnei mōhaka, i te whakamahinga ngā ai ngā agents i roto i ngā wāhi rā, kia whai i te mahi ā-tūnga me te mōhaka o te wāhi.
 
-## He aha te Feahakitanga Whakawāhi Wāhi?
+## He aha te Feahakitanga Whakawāhi Wāhi? {#what-is-site-specification}
 
 He Feahakitanga Whakawāhi Wāhi he whakataunga mō te whakamahi ā-documentation:
 
@@ -19,13 +19,13 @@ He Feahakitanga Whakawāhi Wāhi he whakataunga mō te whakamahi ā-documentatio
 
 Ko tēnei feahakitanga he taku **site_brief**, he pūrere whakamahinga me te pūmanawa (persistent memory) ahau e whakamahia ngā agents mō te whakamārama i te tikanga o tō wāhi ahau.
 
-## Aroha ki te Whakawāhi Wāhi?
+## Aroha ki te Whakawāhi Wāhi? {#why-use-site-specification}
 
-### Whakamahi ā-tūnga me te whakatipu
+### Whakamahi ā-tūnga me te whakatipu {#consistency-across-sessions}
 
 Kia pēnei, i roto i te pūrere site_brief, ka mau ngā agents i te whakamārama i tō wāhi ahau i runga i te mahi. Me pēnei, i roto i te pūrere site_brief, ka mau ngā agents i te whakamārama i tō wāhi ahau i runga i te mahi.
 
-### Whakawāhi whaiora iti
+### Whakawāhi whaiora iti {#better-recommendations}
 
 Ka whakamahi ngā agents i tō site_brief mō:
 
@@ -34,17 +34,17 @@ Ka whakamahi ngā agents i tō site_brief mō:
 - Te whakatū o ngā design e pēnei ana ki te whānau o koe.
 - Whakamutunga i te whakamahi āhuatanga (features) e pēnei ana ki te mahi ahau.
 
-### Whakawhanaungatanga mō te wāhi ahau
+### Whakawhanaungatanga mō te wāhi ahau {#faster-onboarding}
 
 Ngā agents hou (me ngā agents i ngā wāhi rā) ka taea te whakatipu i tāmaki i te waiho i te site_brief o koe i te ao, i te whakamahi i te whaiaro me te whakahau i ngā mea e pēnei ana ki te whero i ngā āhuatanga (features) e pai ana ki te mahi o tō wāhi ahau.
 
-## Whakaritenga i te Feahakitanga Whakawāhi Wāhi
+## Whakaritenga i te Feahakitanga Whakawāhi Wāhi {#initiating-site-specification}
 
-### I te wahi o Theme Builder Onboarding
+### I te wahi o Theme Builder Onboarding {#during-theme-builder-onboarding}
 
 Ko te feahakitanga whakawāhi wāhi ka pēnei, i te **Theme Builder onboarding flow**. Ko te Setup Assistant agent ka whai i ngā mea e pēnei me te mau i tō site_brief.
 
-### Whakaritenga manuahi (Manual Initiation)
+### Whakaritenga manuahi (Manual Initiation) {#manual-initiation}
 
 Ko taea e pūrākau te Whakawhanaungatanga o te Wāhi (Site Specification) i ngā wakamārama:
 
@@ -58,9 +58,9 @@ ata
 "Taha au i whakawhanaunga te whaiaro o te wāhi"
 ```
 
-## Te Whakaritenga o te Wāhi (The Site Specification Process)
+## Te Whakaritenga o te Wāhi (The Site Specification Process) {#the-site-specification-process}
 
-### Te Wiki o te Wāhi (Step 1: Site Purpose)
+### Te Wiki o te Wāhi (Step 1: Site Purpose) {#step-1-site-purpose}
 
 Ko te agent ka whai i tēnei mea:
 
@@ -76,7 +76,7 @@ He aha te whakamahi nui o tō wāhi?
 
 Ko taea e koe te whiri i te category he tino pai, apo te whakatakina tō whakamahi.
 
-### Te Whakahaere o te Manuhiri (Step 2: Target Audience)
+### Te Whakahaere o te Manuhiri (Step 2: Target Audience) {#step-2-target-audience}
 
 ```
 He aha te manuhiri nui o koe?
@@ -89,7 +89,7 @@ He aha te manuhiri nui o koe?
 He aha ngā mea nui ana i tō rātou whaiaro?
 ```
 
-### Te Whānau o te Brand (Step 3: Brand Identity)
+### Te Whānau o te Brand (Step 3: Brand Identity) {#step-3-brand-identity}
 
 ```
 He aha ngā rangi o tō brand?
@@ -105,7 +105,7 @@ He aha te whakamārama i tō tone o te brand?
 - Ngāwari / whai whakangahau
 ```
 
-### Ngā Whāinga o te Mahi (Step 4: Business Goals)
+### Ngā Whāinga o te Mahi (Step 4: Business Goals) {#step-4-business-goals}
 
 ```
 He aha te whakamārama i te whakatika o tō wāhi?
@@ -124,7 +124,7 @@ He aha tō mea nui?
 - Arotahi
 ```
 
-### Te Whakawhanaunga o te Reo (Step 5: Content Structure)
+### Te Whakawhanaunga o te Reo (Step 5: Content Structure) {#step-5-content-structure}
 
 ```
 He aha te whakamahinga o tō pūrākau?
@@ -143,13 +143,13 @@ He aha ngā puta mai o tō pūrākau?
 - Arotahi
 ```
 
-## Te Memory o tō site_brief (Your site_brief Memory)
+## Te Memory o tō site_brief (Your site_brief Memory) {#your-sitebrief-memory}
 
 I raro i te whakatāwhia o te Site Specification, ko ngā mōhio o koe e whakawhanaungahia mō **site_brief** i tō memory o te agent. Ko te whakamahi ana he rāpapa whakahou (structured record) e whai ana ki:
 
-## Pātai me Whakamutunga i tō site_brief
+## Pātai me Whakamutunga i tō site_brief {#viewing-and-updating-your-sitebrief}
 
-### Te Whakarongo i tō site_brief
+### Te Whakarongo i tō site_brief {#view-your-sitebrief}
 
 Whakawātea ki te agent (tāne/wanua) me te whai mai i tēnei mea:
 
@@ -163,7 +163,7 @@ pepeha
 
 Ka whakaatu ai te agent i tō whakamahi ana.
 
-### Whakamutunga i tō site_brief
+### Whakamutunga i tō site_brief {#update-your-sitebrief}
 
 Ina e pēhea te whakawhanaungatanga o tō site, ka taea e koe te whakamutunga i a ia:
 
@@ -177,9 +177,9 @@ ka taea ai hoki te whakamārama i tō whakamahi ana.
 
 Ka whakatika ai tēnei mahi (skill) o Site Specification ki te mōhaka o tō mōhaka e pēnei, he mea nui ko te mōhaka e pēnei.
 
-## I te aha ngā Agentusei i te site_brief
+## I te aha ngā Agentusei i te site_brief {#how-agents-use-sitebrief}
 
-### Rekomendation Design
+### Rekomendation Design {#design-recommendations}
 
 I roto i te wakamutunga koe e hiahia ana ki te whakawhiti i te whakaaro design, ka whai mai ai ngā agent ki tō site_brief:
 
@@ -190,7 +190,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Whakawhiti i Ngā Tauira (Feature Suggestions)
+### Whakawhiti i Ngā Tauira (Feature Suggestions) {#feature-suggestions}
 
 Ka whai mai ai ngā agent ki ngā tauira e pēnei me tō mōhaka:
 
@@ -201,20 +201,20 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Te Whakawhanaungatanga o te Mahi (Content Structure)
+### Te Whakawhanaungatanga o te Mahi (Content Structure) {#content-structure}
 
 Ka whai mai ai ngā agent ki te whakamahi i tō mōhaka e pēnei me tō mōhaka:
 
-## Gwai Mātaahi (Best Practices)
+## Gwai Mātaahi (Best Practices) {#best-practices}
 
-### Kia Tino Whakaaro (Be Specific)
+### Kia Tino Whakaaro (Be Specific) {#be-specific}
 
 Iroha i te whānau ahau, he whakaaturia i te wāhi ahau e hiahia ana ki te whakawhiti kōrero. I roto i te ao o te blog, i tētahi mea nui he te whakamārama i te mea i pēnei i te "general audience" (whānau whānui). Iroha i te whakaaturanga ahau e tino whai whakaaro ki te wāhi ahau e hiahia ana ki te whakawhiti kōrero.
 
 - ✓ "Wāhine e 25-45, e hiahia ana i te mahi ā-pākehā (sustainable fashion)"
 - ✗ "Kua katoa"
 
-### Whakamutunga Regularly (Update Regularly)
+### Whakamutunga Regularly (Update Regularly) {#update-regularly}
 
 I roto i te wā e pēnei i te whakatika ahau i te wāhi ahau, me whakamutunga i te `site_brief` ahau:
 
@@ -223,14 +223,14 @@ I roto i te wā e pēnei i te whakatika ahau i te wāhi ahau, me whakamutunga i 
 - I roto i te wā e pēnei i te whakawirera ahau i te whānau ahau
 - I roto i te wā e pēnei i te whakawhiti i ngā whaiwhatanga ahau
 
-### Whakarite Witoto (Use Consistent Terminology)
+### Whakarite Witoto (Use Consistent Terminology) {#use-consistent-terminology}
 
 Kia whakamahi i ngā whakamārama pēnei i te tōpito:
 
 - ✓ Kia whai mai i "sustainable jewelry" (ae ā "eco-friendly jewelry" me "green products")
 - ✓ Kia whai mai i te whānau ahau i te wāhi ahau e hiahia ana ki te whakawhiti kōrero
 
-### Whakarite Ngā Pūtahe (Include Context)
+### Whakarite Ngā Pūtahe (Include Context) {#include-context}
 
 Kia mau i te whakamārama ahau e pēnei i te tōpito:
 
@@ -238,7 +238,7 @@ Kia mau i te whakamārama ahau e pēnei i te tōpito:
 - "Ko te whānau ahau he tech-savvy, me te whai whakaaro ki te whakamahi design hou"
 - "Iroha ahau he startup e pēnei i te whakaputa ahau, ko te whakataunga mō te whakahaupū (cost) he mea nui"
 
-## Whakawhanaungatanga ki Theme Builder Onboarding
+## Whakawhanaungatanga ki Theme Builder Onboarding {#relationship-to-theme-builder-onboarding}
 
 Ko te Site Specification skill e whai ana i te **Theme Builder onboarding flow** (whakaritenga onboarding o te Theme Builder). I roto i te wā e pēnei i te whakatika ahau i te onboarding, ko te `site_brief` ahau e whakamahia ana automatically me ngā mōhio ahau i whai mai.
 
@@ -248,7 +248,7 @@ Ko koe ka taea hoki i te whakawhiti Site Specification i runga i te mea he tino 
 - I roto i te wā e pēnei i te whakamutunga i te `site_brief` ahau i te whakatika ahau i te wāe ahau
 - I roto i te wā e pēnei i te whakawirera ahau i te Theme Builder
 
-## Whakawātea (Troubleshooting)
+## Whakawātea (Troubleshooting) {#troubleshooting}
 
 **Kua kāore he whakamahinga i te site_brief ahau**
 - Kia mārama ahau ki te mea ko te agent e hiahia ana i te memory (whakamamori mō ngā kōrero).
@@ -264,7 +264,7 @@ Ko koe ka taea hoki i te whakawhiti Site Specification i runga i te mea he tino 
 - Whakamutunga (Update) i tō site_brief ki te mea he pōuri koe.
 - Whakaahua whakamārama anō i tō mga whaiako (requests).
 
-## Ngā mahi e kitea i runga i te pēpi (Next Steps)
+## Ngā mahi e kitea i runga i te pēpi (Next Steps) {#next-steps}
 
 I te mea i roto i roto i te tino whakatū mai i te Site Specification ko, he:
 

@@ -3,11 +3,11 @@ title: Jurnal de modificări
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Jurnal de modificări
+# Jurnal de modificări {#changelog}
 
-## 1.18.0 — Lansat pe 2026-06-29
+## 1.18.0 — Lansat pe 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Nou
+### Nou {#new}
 
 - **Instrumente Google Calendar** — citesc calendarele și evenimentele configurate pentru automatizări conștiente de program
 - **Maparea contactelor și ajutoare pentru participanți** — potrivesc participanții din calendar cu utilizatorii și contactele site-ului
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Furnizor SMS TextBee** — trimite notificări configurate prin mesaje text prin TextBee
 - **Pachet companion avansat** — adaugă instrumente de sistem de fișiere pentru dezvoltatori de încredere, bază de date, WP-CLI, dispecer REST, constructor de pluginuri, instantaneu git, gestionare a utilizatorilor și benchmark, distribuite separat față de versiunea WordPress.org
 
-### Îmbunătățit
+### Îmbunătățit {#improved}
 
 - **Configurarea serviciului gestionat Superdav** — adaugă endpointuri de serviciu găzduite și provizionare automată a conexiunii pentru site-urile acceptate
 - **Împachetarea lansării** — construiește ZIP-uri separate pentru nucleu și Advanced, le publică pe GitHub și trimite doar pachetul de nucleu către WordPress.org
 
-### Remediat
+### Remediat {#fixed}
 
 - **Fiabilitatea solicitărilor AI** — îmbunătățește selecția modelului, timeouturile solicitărilor, modelul implicit de configurare, gestionarea textului de raționament și îndrumarea pentru reîncercare în cazul apelurilor de instrumente nevalide
 - **Consolidarea calendarului și a mementourilor** — întărește tokenurile Google Calendar și deduplicarea mementourilor
 - **Reluări pentru onboarding și aprobări** — remediază lansările de onboarding din frontend și reluările abilităților confirmate
 - **Probleme de revizuire a împachetării WordPress.org** — abordează feedbackul de revizuire a împachetării pentru lansarea nucleului
 
-## 1.16.0 — Lansat pe 2026-05-20
+## 1.16.0 — Lansat pe 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Nou
+### Nou {#new-1}
 
 - **Abilitatea Generate Logo SVG** — Theme Builder poate acum genera și încorpora SVG-uri de logo personalizate cu sanitizare sigură pentru namespace
 - **Încărcare de fotografie în interviul de descoperire** — interviul de descoperire Theme Builder include acum un pas de încărcare a unei fotografii pentru un context de design mai bogat
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Parametru pentru eticheta de navigare** — abilitatea Create Menu acceptă acum un `navigation_label` distinct, separat de titlul paginii
 - **Disponibilitate instrument Tier 1** — sd-ai-agent/site-scrape este acum un instrument Tier 1 disponibil implicit în Theme Builder
 
-### Remediat
+### Remediat {#fixed-1}
 
 - **Cache AI Client** — acum este susținut de transients pentru persistență între solicitări, prevenind pierderea datelor în sarcinile de agent de lungă durată
 - **Linkuri de acțiune pe rândul pluginului** — corectate și redenumite pentru claritate
 
-## 1.10.0 — Lansat pe 2026-05-05
+## 1.10.0 — Lansat pe 2026-05-05 {#1100--released-on-2026-05-05}
 
-### Nou
+### Nou {#new-2}
 
 - **Căutare pe internet Tavily** — adaugă Tavily ca furnizor de căutare pentru rezultate de căutare pe internet mai bogate, alături de Brave Search
 - **Abilități încorporate conștiente de temă** — ghidurile de abilități Block Themes, Classic Themes, Kadence Blocks și Kadence Theme sunt acum livrate împreună cu pluginul
 - **Abilitate de formular de contact pentru constructorul de site-uri** — adaugă un formular de contact pe orice pagină direct din interfața de chat
 
-### Îmbunătățit
+### Îmbunătățit {#improved-1}
 
 - **Integrare WooCommerce refactorizată** — acum folosește API-urile native WooCommerce pentru fiabilitate și compatibilitate mai bune
 - **Lista de furnizori se reîmprospătează automat** — când orice plugin este activat sau dezactivat
 
-### Remediat
+### Remediat {#fixed-2}
 
 - **Abilitatea navigate-to** — a fost remediată bucla infinită de reîncărcare pe unele pagini de administrare
 - **Abilitatea list-posts** — acum rezolvă corect numele categoriilor și etichetelor în sluguri

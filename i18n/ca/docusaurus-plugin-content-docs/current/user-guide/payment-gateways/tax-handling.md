@@ -3,7 +3,7 @@ title: Gestió d’impostos
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestió d'impostos
+# Gestió d'impostos {#tax-handling}
 
 Ultimate Multisite té un mòdul de recaptació d'impostos integrat al nostre plugin principal, de manera que, si necessites recaptar impostos sobre les vendes dels teus plans, paquets i serveis, ho pots fer fàcilment sense haver de recórrer a instal·lar cap complement.
 
@@ -11,7 +11,7 @@ Per a les empreses ubicades a Europa, oferim un **complement** que afegeix eines
 
 Ultimate Multisite no presenta ni remet impostos al govern en nom teu; simplement t'ajudem a recaptar els impostos corresponents en el moment de la transacció. **Encara hauràs de remetre els impostos pel teu compte.**
 
-## Activar la recaptació d'impostos
+## Activar la recaptació d'impostos {#enabling-tax-collection}
 
 La recaptació d'impostos no està activada per defecte. Per activar-la, has d'anar a **Ultimate Multisite > Configuració > Impostos** i canviar l'opció per activar la configuració Activa els impostos.
 
@@ -25,7 +25,7 @@ També pots veure la configuració d'impostos per a productes individuals:
 
 ![Configuració d'impostos per a productes](/img/config/settings-taxes.png)
 
-### Impost exclòs vs. impost inclòs
+### Impost exclòs vs. impost inclòs {#tax-excluded-vs-tax-included}
 
 Per defecte, tots els preus dels teus productes tenen els impostos exclosos, és a dir, els impostos **no estan inclosos** en el preu del producte. Si determinem que un client ha de pagar impostos en una compra determinada, afegirem els impostos **a sobre** del subtotal.
 
@@ -37,7 +37,7 @@ No oblidis **desar** els canvis que has fet.
 
 ###
 
-## Crear tipus impositius
+## Crear tipus impositius {#creating-tax-rates}
 
 Després d'activar la recaptació d'impostos, hauràs de crear tipus impositius per a ubicacions específiques utilitzant el nostre editor de tipus impositius.
 
@@ -51,7 +51,7 @@ A la pàgina de l'editor de tipus impositius, pots afegir nous tipus impositius 
 
 Hauràs de donar a cada tipus impositiu un **títol** (utilitzat a les factures). Després pots triar el **país** (obligatori), l'**estat,** i la **ciutat** (tots dos opcionals) on es cobrarà aquest impost. Finalment, afegeix el **tipus impositiu en percentatge**.
 
-### Categories d'impostos
+### Categories d'impostos {#tax-categories}
 
 També pots crear múltiples categories d'impostos, per afegir tipus impositius diferents per a diferents tipus de productes.
 
@@ -73,7 +73,7 @@ Pots definir la categoria d'impostos d'un producte concret anant a la **pàgina 
 
 En aquesta mateixa pantalla, pots desactivar el commutador **És imposable?** per fer saber a Ultimate Multisite que no ha de recaptar impostos sobre aquest producte concret.
 
-## Suport de VAT europeu
+## Suport de VAT europeu {#european-vat-support}
 
 Com s'ha esmentat abans, tenim un complement disponible per a clients de la UE que tenen requisits addicionals a causa de la normativa europea del VAT.
 
@@ -101,7 +101,7 @@ Si tornes a la **pestanya Configuració d'impostos** , veuràs noves opcions dis
 
 <!-- Captura de pantalla no disponible: commutador Activa el suport de VAT a la configuració d'impostos després de l'activació del complement -->
 
-### Importar els tipus impositius de VAT
+### Importar els tipus impositius de VAT {#pulling-on-vat-tax-rates}
 
 Una de les eines que afegeix la nostra integració és la capacitat de carregar els tipus impositius dels estats membres de la UE. Això es pot fer visitant la pàgina de l'editor de tipus impositius després d'activar el suport de VAT de la UE.
 
@@ -111,7 +111,7 @@ A la part inferior de la pàgina, veuràs les opcions d'importació de VAT. Sele
 
 També pots editar els valors després d'importar-los. Per fer-ho, simplement edita la línia de la taula que necessitis i fes clic per desar els nous valors.
 
-### Validació del VAT
+### Validació del VAT {#vat-validation}
 
 Quan el suport de VAT està activat, Ultimate Multisite afegirà un camp addicional al formulari de checkout, sota el camp de l'adreça de facturació. El camp només es mostrarà als clients ubicats a la UE.
 

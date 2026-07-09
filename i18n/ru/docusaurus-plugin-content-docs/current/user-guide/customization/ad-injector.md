@@ -3,7 +3,7 @@ title: Инжектор рекламы
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Размещение рекламы в вашей сети с Ultimate Multisite: Ad Injector
+# Размещение рекламы в вашей сети с Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector — это **бесплатное дополнение**, которое дает вам инструменты для размещения рекламы в ваших тарифных планах прямо со страницы их редактирования.
 
@@ -35,7 +35,7 @@ _После вставки кода вашей рекламы она будет 
 
 _Перейдите к опции Admin Panel Ad Code, если хотите показывать рекламу в панели администрирования пользователя_
 
-### Помимо рекламы
+### Помимо рекламы {#beyond-advertising}
 
 Вы также можете использовать Ultimate Multisite: Ad Injector, чтобы предлагать поддержку для тарифных планов высокого уровня.
 

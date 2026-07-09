@@ -3,7 +3,7 @@ title: Kuyera Mwananso Wopatsa
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Kufunga Membershipu (v2)
+# Kufunga Membershipu (v2) {#canceling-a-membership-v2}
 
 _**KUFUNDI MUYAMBALA: Izi zikufiwe Ultimate Multisite version 2.x.**_
 

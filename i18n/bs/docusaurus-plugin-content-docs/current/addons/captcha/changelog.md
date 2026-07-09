@@ -5,7 +5,7 @@ title: |-
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Changelog za Captcha
+# Changelog za Captcha {#captcha-changelog}
 
 Verzija: 1.5.0 - Obraćeno 2026-05-22
 * Novo: Hard-stop ograničilac brzine — broji svaki GET i POST zahtjev na površinama zaštićenim Captchom (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) i odgovara HTTP 429, `Retry-After` zaglavljem i randomizovanim "tarpit" spavanjem (1–5s, maksimalno 15s).

@@ -3,11 +3,11 @@ title: 能力可見性
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# 權能可見性
+# 權能可見性 {#ability-visibility}
 
 Superdav AI Agent v1.12.0 引入了 **權能可見性 (Ability Visibility)** 控制項，用來管理哪些介面會暴露哪些權能。這讓管理員可以精細調整哪些代理程式功能可以透過 REST API、MCP 伺服器、WooCommerce 整合和其他介面使用。
 
-## 什麼是權能可見性？
+## 什麼是權能可見性？ {#what-is-ability-visibility}
 
 權能可見性是一個權限系統，用來控制以下幾點：
 
@@ -18,9 +18,9 @@ Superdav AI Agent v1.12.0 引入了 **權能可見性 (Ability Visibility)** 控
 
 每個權能都帶有一個可見性等級，決定了它在不同介面上的可用性。
 
-## 可見性等級
+## 可見性等級 {#visibility-levels}
 
-### 公開 (Public)
+### 公開 (Public) {#public}
 
 **公開權能**在所有地方都可用：
 
@@ -32,7 +32,7 @@ Superdav AI Agent v1.12.0 引入了 **權能可見性 (Ability Visibility)** 控
 
 範例：`scaffold-block-theme`、`activate-theme`、`send-email`
 
-### 內部 (Internal)
+### 內部 (Internal) {#internal}
 
 **內部權能**僅在您的 WordPress 安裝環境內可用：
 
@@ -43,7 +43,7 @@ Superdav AI Agent v1.12.0 引入了 **權能可見性 (Ability Visibility)** 控
 
 範例：`manage-settings`、`view-analytics`、`export-data`
 
-### 合作夥伴 (Partner)
+### 合作夥伴 (Partner) {#partner}
 
 **合作夥伴權能**僅對白名單上的合作夥伴開放：
 
@@ -54,7 +54,7 @@ Superdav AI Agent v1.12.0 引入了 **權能可見性 (Ability Visibility)** 控
 
 範例：`bulk-import-users`、`modify-billing`、`access-analytics`
 
-### 已停用 (Disabled)
+### 已停用 (Disabled) {#disabled}
 
 **已停用權能**在任何地方都不可用：
 
@@ -63,15 +63,15 @@ Superdav AI Agent v1.12.0 引入了 **權能可見性 (Ability Visibility)** 控
 - 管理面板中不可用
 - 對於已棄用或實驗性的權能很有用
 
-## 管理權能可見性
+## 管理權能可見性 {#managing-ability-visibility}
 
-### 存取權能可見性設定
+### 存取權能可見性設定 {#accessing-ability-visibility-settings}
 
 1. 前往 **WordPress 管理區** → **Superdav AI Agent** → **設定**
 2. 點擊 **Abilities** 標籤
 3. 您將看到所有已安裝權能的列表及其可見性等級
 
-### 查看權能詳情
+### 查看權能詳情 {#viewing-ability-details}
 
 點擊任何權能，即可查看：
 
@@ -82,7 +82,7 @@ Superdav AI Agent v1.12.0 引入了 **權能可見性 (Ability Visibility)** 控
 - **最後更新時間 (Last updated)**：上次更改可見性時間
 - **狀態 (Status)**：已識別或未識別
 
-### 更改可見性等級
+### 更改可見性等級 {#changing-visibility-levels}
 
 若要更改權能的可見性：
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### 批次操作
+### 批次操作 {#bulk-operations}
 
 若要更改多個權能的可見性：
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. 從批次操作下拉式選單中選擇新的可見性等級
 3. 點擊 **套用 (Apply)**
 
-## 合作夥伴允許清單 (Partner Allow-List)
+## 合作夥伴允許清單 (Partner Allow-List) {#partner-allow-list}
 
 **合作夥伴允許清單**控制哪些外部合作夥伴可以存取合作夥伴級別的權能。
 
-### 新增合作夥伴
+### 新增合作夥伴 {#adding-partners}
 
 1. 前往 **Superdav AI Agent** → **設定** → **合作夥伴 (Partners)**
 2. 點擊 **新增合作夥伴 (Add Partner)**
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. 可選地新增合作夥伴名稱和描述
 5. 點擊 **儲存 (Save)**
 
-### 將權能指派給合作夥伴
+### 將權能指派給合作夥伴 {#assigning-abilities-to-partners}
 
 新增合作夥伴後：
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 4. 在「合作夥伴允許清單」區塊，勾選應具備存取權的合作夥伴方塊
 5. 點擊 **儲存 (Save)**
 
-### 撤銷合作夥伴存取權
+### 撤銷合作夥伴存取權 {#revoking-partner-access}
 
 若要移除合作夥伴的存取權：
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 該合作夥伴將立即失去對該權能的存取權。
 
-## 未識別的權能 (Unclassified Abilities)
+## 未識別的權能 (Unclassified Abilities) {#unclassified-abilities}
 
 當您安裝了 Superdav AI Agent 不認識的第三方權能時，它會被標記為 **未識別 (Unclassified)**。
 
-### 未識別權能的管理通知
+### 未識別權能的管理通知 {#admin-notice-for-unclassified-abilities}
 
 您會看到一個管理通知：
 
@@ -161,7 +161,7 @@ Partner allow-list: partner-123, partner-456
 [Review Abilities] [Dismiss]
 ```
 
-### 審閱未識別的權能
+### 審閱未識別的權能 {#reviewing-unclassified-abilities}
 
 1. 點擊通知中的 **Review Abilities**
 2. 對於每個未識別的權能，您將看到：
@@ -178,7 +178,7 @@ Partner allow-list: partner-123, partner-456
 
 4. 點擊 **Classify** 以儲存您的決定
 
-### 為什麼要分類未識別的權能？
+### 為什麼要分類未識別的權能？ {#why-classify-unclassified-abilities}
 
 分類權能的好處：
 
@@ -187,9 +187,9 @@ Partner allow-list: partner-123, partner-456
 - **啟用功能**：一旦分類，該權能就會可用
 - **記錄決策**：您的選擇會被記錄下來，用於審計目的
 
-## 不同介面上的可見性
+## 不同介面上的可見性 {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **公開權能**可透過 REST 端點使用：
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **內部和合作夥伴權能**無法透過 REST API 使用。
 
-### MCP 伺服器
+### MCP 伺服器 {#mcp-servers}
 
 **公開權能**可透過 MCP 使用：
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **合作夥伴權能**僅需合作夥伴憑證才能使用。
 
-### WooCommerce 整合
+### WooCommerce 整合 {#woocommerce-integration}
 
 與 WooCommerce 相關的**公開權能**是可用的：
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **內部權能**不會暴露給 WooCommerce。
 
-### 聊天介面
+### 聊天介面 {#chat-interface}
 
 **所有權能**（公開、內部、合作夥伴）在聊天中都可用，具體取決於使用者權限：
 
@@ -235,34 +235,34 @@ Available abilities:
 - 一般使用者只能看到公開權能
 - 合作夥伴可以看到公開 + 合作夥伴權能（若已加入白名單）
 
-## 安全最佳實踐
+## 安全最佳實踐 {#security-best-practices}
 
-### 最少權限原則 (Principle of Least Privilege)
+### 最少權限原則 (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - 將權能設定為仍能使用但限制最嚴格的可見性
 - 對於敏感操作，使用合作夥伴可見性
 - 停用您不使用的權能
 
-### 定期稽核 (Regular Audits)
+### 定期稽核 (Regular Audits) {#regular-audits}
 
 - 每月審閱權能可見性
 - 檢查是否有未識別的權能
 - 移除未使用的合作夥伴存取權
 
-### 日誌記錄與監控 (Logging and Monitoring)
+### 日誌記錄與監控 (Logging and Monitoring) {#logging-and-monitoring}
 
 - 監控哪些權能使用最頻繁
 - 追蹤合作夥伴的存取模式
 - 對於異常的權能使用發出警報
 
-### 第三方權能 (Third-Party Abilities)
+### 第三方權能 (Third-Party Abilities) {#third-party-abilities}
 
 - 在啟用前審閱第三方權能
 - 明確進行分類
 - 從內部或合作夥伴可見性開始
 - 僅在經過審核後才提升為公開
 
-## 疑難排解 (Troubleshooting)
+## 疑難排解 (Troubleshooting) {#troubleshooting}
 
 **權能在列表中看不到**
 - 確認該權能已安裝且啟用
@@ -285,7 +285,7 @@ Available abilities:
 - 檢查您的分類是否已儲存
 - 確認提供該權能的 plugin 是否已更新到最新版本
 
-## 從舊版模式遷移 (Migration from Legacy Mode)
+## 從舊版模式遷移 (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 如果您正在從舊版本的 Superdav AI Agent 升級：
 
@@ -295,7 +295,7 @@ Available abilities:
 
 請參閱 **Third-Party Mode Migration** 以了解有關過渡到原生 Abilities API 整合的更多詳細資訊。
 
-## 後續步驟 (Next Steps)
+## 後續步驟 (Next Steps) {#next-steps}
 
 完成權能可見性配置後：
 

@@ -3,7 +3,7 @@ title: Domeenimüüja muudatuste logi
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller muudatuste logi
+# Domain Seller muudatuste logi {#domain-seller-changelog}
 
 Versioon 1.3.0 - avaldatud 2026-06-02
 - Uus: lisatud network-admin hoiatus, kui HostAfrica edasimüüja saldo muutub liiga madalaks
@@ -134,20 +134,20 @@ Versioon 1.0.0 - Välja antud 2025-09-28
 * **Parandatud:** Kogu aegunud v1 kood uuendatud v2 standarditele
 * **Eemaldatud:** Pärand v1 ühilduvus (ühilduvust murdev muudatus)
 
-### Eelmised versioonid (v1 pärand)
+### Eelmised versioonid (v1 pärand) {#previous-versions-v1-legacy}
 
-### Versioon 0.0.3 - 20/08/2019
+### Versioon 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Parandatud: Ühildumatus Groundhogg CRM-iga
 * Märkus: See oli viimane v1-ga ühilduv väljalase
 
-### Versioon 0.0.2 - 07/12/2018
+### Versioon 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Parandatud: License Key väli eemaldatud
 * Parandatud: Paketi sakid puudusid, kui funktsiooniplugin oli aktiivne
 * Täiustatud: Registreerimisväljale lisatud vahelejätmise nupp
 
-### Versioon 0.0.1 - Esmane väljalase
+### Versioon 0.0.1 - Esmane väljalase {#version-001---initial-release}
 
 * Põhiline OpenSRS integratsioon WP Ultimo v1 jaoks
 * Lihtne domeeniotsing ja registreerimine

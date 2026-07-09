@@ -3,11 +3,11 @@ title: Buldair Phlagnan agus Sandbòt
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 le sgrann **Plugin Builder & Sandbox System**, a tha le le AI assistant e' sgoine a genaradh, a chlàradh, agus a' leidheachadh WordPress plugins ar eich sianal — a' leidheachadh a' cridheach, a' leidheachadh, agus a' leidheachadh an t-sianblàth (sandbox) a tha safe agus sealltainneachd.
 
-## Aims
+## Aims {#overview}
 
 Le Plugin Builder a' le AI assistant a' leidheachadh WordPress plugins ùr gu sònraichte a' leidheachadh a' leidheachadh a' leidheachadh ar cridhean luath. Tha na plugins a genaradh a' chlàradh, a' leidheachadh, agus a' leidheachadh san leidheachadh (sandbox) air a bhith a' leidheachadh gu bheil sinn a' chlàradh a' leidheachadh a' leidheachadh an t-sianblàth a tha.
 
@@ -17,7 +17,7 @@ Tha eigean a tha:
 - A' chlàradh feàrrach (prototyping) de fìrinn a tha a' leidheachadh WordPress hooks no custom post types a' leidheachadh.
 - A' leidheachadh scripte automation gu leathanach airson obair a' leidheachadh (batch operations).
 
-## A' leidheachadh plugin gu AI
+## A' leidheachadh plugin gu AI {#generating-a-plugin-via-ai}
 
 Tha eigean plugin a genaradh, le ghnìomh an t-sianblàth (sandbox) a tha a' leidheachadh air a chlàradh chat Gratis AI Agent agus a' leidheachadh gu sònraichte. Mar eisimpleir:
 
@@ -32,7 +32,7 @@ Tha an AI a' leidheachadh:
 
 Is eigean an t-sgrannach gu sònraichte a' leidheachadh a' leidheachadh a' leidheachadh air a leidheachadh a' leidheachadh a' leidheachadh a' leidheachadh a' leidheachadh a' leidheachadh a' leidheachadh.
 
-## A' leidheachadh an t-sianblàth (Sandbox Activation)
+## A' leidheachadh an t-sianblàth (Sandbox Activation) {#sandbox-activation}
 
 A' leidheachadh plugin a genaradh san t-sianblàth tha fadaich air a leidheachadh a' leidheachadh a' leidheachadh a' leidheachadh a' leidheachadh a' leidheachadh ar an sianal luath. Tha an t-sianblàth:
 
@@ -48,7 +48,7 @@ A' leidheachadh plugin san t-sianblàth, nútinn a' leidheachadh **Activate in S
 
 Se roinn a mhaighm airson a bhith agad air aithreachadh (activation) an plugin. Bidh meilinn còmhlaidh a stadf nan thaithedh (succeeded) no tha failte (failed). Mar a tha e failte, bidh log an t-earrachda (error log) a' chluaintean (chat thread) a' sgaidh.
 
-## Am Paisachadh Plugin Aon Bhaighinn
+## Am Paisachadh Plugin Aon Bhaighinn {#managing-generated-plugins}
 
 Bidh pluginhean a bha agad air a bheach (generated plugins) a' sgaidh anns **Gratis AI Agent → Plugin Builder → Manage Plugins**. Frmuir seo leat eadar:
 
@@ -64,7 +64,7 @@ Bidh pluginhean a bha agad air a bheach (generated plugins) a' sgaidh anns **Gra
 **Install on network** a sgaidh an plugin a bha agad air a bheach air an WordPress multisite agad. A' chluarach an code den plugin gu leith air a' dèanamh. Bidh Gratis AI Agent a' tòisich do chluarach air a bhith agad air a dhèanamh air a tha a' seòl (live install).
 :::
 
-## Am Paisachadh Plugin Aon Bhaighinn Air An Seòl
+## Am Paisachadh Plugin Aon Bhaighinn Air An Seòl {#installing-a-generated-plugin-on-the-network}
 
 Nuair a tha thuig agad air an plugin a bha air a bheach anns an sandbox, leat e a sgaidh air an t-seòl:
 
@@ -78,7 +78,7 @@ Mar eòlas, guth an amair (slash command) anns an fhaighinn chat:
 /install-plugin <plugin-slug>
 ```
 
-## Am Paisachadh Pluginan
+## Am Paisachadh Pluginan {#plugin-updates}
 
  airson plugin a bha air a bheach a sgaidh, bidh thuig a' chluarach an cinnidh a' chùl air AI assistant anns an t-seann (new conversation):
 

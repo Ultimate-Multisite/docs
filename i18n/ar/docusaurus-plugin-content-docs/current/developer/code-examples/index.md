@@ -3,11 +3,11 @@ title: أمثلة برمجية متقدمة
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# أمثلة كود متقدمة
+# أمثلة كود متقدمة {#advanced-code-examples}
 
 توضح هذه الأمثلة أنماط تكامل متقدمة مع Ultimate Multisite.
 
-## محرك تسعير ديناميكي
+## محرك تسعير ديناميكي {#dynamic-pricing-engine}
 
 محرك تسعير قائم على القواعد يطبق خصومات الحجم والولاء والموسمية:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## توفير مواقع متقدم
+## توفير مواقع متقدم {#advanced-site-provisioning}
 
 قم بتكوين المواقع الجديدة تلقائيًا باستخدام الإضافات وSSL وCDN والنسخ الاحتياطية والمراقبة بناءً على ميزات الخطة:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## نظام قيود مخصص
+## نظام قيود مخصص {#custom-limitations-system}
 
 تتبع حدود الموارد وفرضها مع تحذيرات الاستخدام:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## عدّاد BerlinDB الذرّي باستخدام `increment_item()`
+## عدّاد BerlinDB الذرّي باستخدام `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 أضاف Ultimate Multisite v2.6.1 طريقة `increment_item()` إلى صنف BerlinDB `Query`. استخدمها لتنفيذ زيادات آمنة وذرّية على الأعمدة الرقمية دون تعارضات القراءة-التعديل-الكتابة — وهي مفيدة للعدّادات، وحصص الاستخدام، وفحوصات تحديد المعدّل التي تعمل تحت الطلبات المتزامنة.
 
-### توقيع الطريقة
+### توقيع الطريقة {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ new Advanced_Limitations();
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### الاستخدام الأساسي
+### الاستخدام الأساسي {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### تتبّع استخدام API لكل عضوية
+### تتبّع استخدام API لكل عضوية {#tracking-api-usage-per-membership}
 
 نمط عملي لفرض حدود معدّل API لكل عضوية:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### لماذا `increment_item()` بدلًا من `update_item()`
+### لماذا `increment_item()` بدلًا من `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 نهج القراءة-التعديل-الكتابة الساذج غير آمن تحت الطلبات المتزامنة:
 

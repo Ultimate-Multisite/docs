@@ -3,11 +3,11 @@ title: Mawakala Waliojengewa Ndani
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Mawakala Waliojengwa Ndani
+# Mawakala Waliojengwa Ndani {#built-in-agents}
 
 Gratis AI Agent v1.9.0 huja na mawakala watano waliojengwa ndani, kila mmoja akiwa amesanidiwa mapema kwa seti maalumu ya zana, system prompt iliyobinafsishwa, na mapendekezo ya kuanzia yanayolingana na kazi za kawaida katika eneo hilo. Kubadilisha kati ya mawakala hubadilisha kile ambacho msaidizi anaweza kufanya na jinsi anavyojibu — bila usanidi wowote kwa upande wako. Superdav AI Agent v1.18.0 inaweza kuongeza zana zinazozingatia ratiba, rekodi za vikumbusho, milango ya idhini, na arifa za SMS kwenye mtiririko huu wa kazi wakati miunganisho husika imesanidiwa.
 
-## Wakala Ni Nini?
+## Wakala Ni Nini? {#what-is-an-agent}
 
 Kila wakala ni wasifu wa usanidi wenye jina unaochanganya:
 
@@ -15,7 +15,7 @@ Kila wakala ni wasifu wa usanidi wenye jina unaochanganya:
 - **System prompt** — maagizo yanayoweka sauti, vipaumbele, na vikwazo vya wakala
 - **Mapendekezo** — prompts zilizoandikwa mapema zinazoonyeshwa katika kiolesura cha mazungumzo ili kukusaidia kuanza haraka
 
-## Kufikia Kiteua Wakala
+## Kufikia Kiteua Wakala {#accessing-the-agent-picker}
 
 1. Fungua paneli ya **Gratis AI Agent** kwenye upau wa pembeni wa msimamizi wa WordPress.
 2. Bofya **ikoni ya wakala** upande wa juu-kushoto wa kichwa cha mazungumzo (ikoni hubadilika kuonyesha wakala anayefanya kazi).
@@ -24,9 +24,9 @@ Kila wakala ni wasifu wa usanidi wenye jina unaochanganya:
 
 Unaweza pia kubadilisha mawakala katikati ya mazungumzo — system prompt ya wakala mpya huanza kutumika kuanzia ujumbe unaofuata.
 
-## Mawakala Watano Waliojengwa Ndani
+## Mawakala Watano Waliojengwa Ndani {#the-five-built-in-agents}
 
-### Mwandishi wa Maudhui
+### Mwandishi wa Maudhui {#content-writer}
 
 **Lengo:** Kuunda na kuhariri machapisho, kurasa, na fomu za mawasiliano.
 
@@ -47,7 +47,7 @@ Unaweza pia kubadilisha mawakala katikati ya mazungumzo — system prompt ya wak
 
 ---
 
-### Mjenzi wa Site
+### Mjenzi wa Site {#site-builder}
 
 **Lengo:** Uundaji wa website kutoka mwanzo hadi mwisho kwa prompt moja.
 
@@ -70,7 +70,7 @@ Unaweza pia kubadilisha mawakala katikati ya mazungumzo — system prompt ya wak
 
 ---
 
-### Studio ya Ubunifu
+### Studio ya Ubunifu {#design-studio}
 
 **Lengo:** Ubinafsishaji wa mwonekano — rangi, tipografia, CSS, na ruwaza za blocks.
 
@@ -87,7 +87,7 @@ Unaweza pia kubadilisha mawakala katikati ya mazungumzo — system prompt ya wak
 - *Chukua picha ya skrini ya ukurasa wa nyumbani na uniambie ungeboresha nini.*
 - *Unda ruwaza ya block ya hero inayoweza kutumika tena yenye picha ya mandharinyuma yenye upana kamili na kichwa kilichowekwa katikati.*
 
-### Msimamizi wa Plugin
+### Msimamizi wa Plugin {#plugin-manager}
 
 **Lengo:** Kugundua, kusakinisha, na kusimamia WordPress plugins.
 
@@ -105,7 +105,7 @@ Unaweza pia kubadilisha mawakala katikati ya mazungumzo — system prompt ya wak
 
 ---
 
-### Msaidizi wa Usaidizi
+### Msaidizi wa Usaidizi {#support-assistant}
 
 **Lengo:** Kujibu maswali kuhusu maudhui ya site, mipangilio, na usanidi wa WordPress.
 
@@ -124,7 +124,7 @@ Unaweza pia kubadilisha mawakala katikati ya mazungumzo — system prompt ya wak
 
 ---
 
-## Miunganisho ya Superdav Automation
+## Miunganisho ya Superdav Automation {#superdav-automation-integrations}
 
 Wakati miunganisho ya Superdav AI Agent v1.18.0 imesanidiwa, mawakala yaliyojengwa ndani yanaweza kushiriki katika mtiririko wa kazi wa otomatiki ulio salama zaidi na unaozingatia ratiba:
 
@@ -138,11 +138,11 @@ Mtiririko wa kazi unaopendekezwa: mwombe wakala kuandaa ujumbe au kitendo, kagua
 
 ---
 
-## Kubinafsisha Mawakala
+## Kubinafsisha Mawakala {#customising-agents}
 
 Kila wakala aliyejengwa ndani anaweza kupanuliwa au kubadilishwa kupitia kichujio cha `gratis_ai_agent_agents`.
 
-### Kuongeza kidokezo maalum cha mfumo kwa wakala aliyepo
+### Kuongeza kidokezo maalum cha mfumo kwa wakala aliyepo {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Kusajili wakala mpya
+### Kusajili wakala mpya {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Wakala mpya huonekana kwenye Kiteuzi cha Wakala mara tu baada ya kichujio kuendeshwa.
 
-### Kuondoa wakala aliyejengwa ndani
+### Kuondoa wakala aliyejengwa ndani {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

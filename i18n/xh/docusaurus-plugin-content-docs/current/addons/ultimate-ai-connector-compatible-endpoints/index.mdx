@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector yeZziphelo Ezihambelanayo
+# Ultimate AI Connector yeZziphelo Ezihambelanayo {#ultimate-ai-connector-for-compatible-endpoints}
 
 I-Ultimate AI Connector yeZziphelo Ezihambelanayo idibanisa ii-API zababoneleli be-AI abahambelana ne-OpenAI nenethiwekhi yakho ye-WordPress multisite. Qwalasela ababoneleli be-AI abaninzi — ngamnye ene-URL yesiphelo sakhe, isitshixo se-API, kunye nemodeli engagqibekanga — uze uhambise izicelo ngokubuyela ngokuzenzekelayo komnye umboneleli xa umboneleli engafumaneki.
 
-## Iimpawu Ezibalulekileyo
+## Iimpawu Ezibalulekileyo {#key-features}
 
 - **Inkxaso yababoneleli abaninzi**: Yongeza amakhadi ababoneleli be-AI abaninzi, ngalinye line-URL yesiphelo salo, isitshixo se-API, kunye nemodeli engagqibekanga
 - **Tsala-ukuze-ulungelelanise ngokutsha**: Lungisa ababoneleli ngokokubaluleka usebenzisa isibambo sokubamba kwikhadi ngalinye; izicelo zisebenzisa ababoneleli ngokolandelelwano
@@ -21,26 +21,26 @@ I-Ultimate AI Connector yeZziphelo Ezihambelanayo idibanisa ii-API zababoneleli 
 - **Ukwandiswa ngokuzenzekelayo xa wongeza**: Amakhadi amatsha ababoneleli ayanda ngokuzenzekelayo ukuze ugcwalise iinkcukacha kwangoko
 - **Ukuphelisa i-cache yeskripthi**: Izikripthi zababoneleli zikhutshwa kwi-cache xa plugin ihlaziywa ukuqinisekisa ukuba inguqulelo yamva nje iyalayishwa
 
-## Iimfuno
+## Iimfuno {#requirements}
 
 - WordPress 5.3 okanye ngaphezulu
 - PHP 7.4 okanye ngaphezulu
 - Ultimate Multisite plugin (esebenzayo)
 - Isiphelo se-API esihambelana ne-OpenAI (esibanjwe nguwe okanye ngumntu wesithathu)
 
-## Ufakelo
+## Ufakelo {#installation}
 
 1. Layisha iifayile ze-addon kulawulo lwakho lwe-`/wp-content/plugins/`
 2. Vula i-plugin kwimenyu ethi 'Plugins' ku-WordPress
 3. Yiya ku-**Ultimate Multisite → AI Connector** ukuze uqwalasele i-addon
 
-## Uqwalaselo
+## Uqwalaselo {#configuration}
 
-### Useto Lwaboneleli Abaninzi
+### Useto Lwaboneleli Abaninzi {#multi-provider-setup}
 
 Isikrini soqwalaselo sisebenzisa uyilo olusekelwe kumakhadi apho ikhadi ngalinye limele umboneleli omnye we-AI. Ungongeza ababoneleli abaninzi kangangoko ufuna.
 
-#### Ukongeza Umboneleli
+#### Ukongeza Umboneleli {#adding-a-provider}
 
 1. Yiya ku-**Ultimate Multisite → AI Connector** kumlawuli wenethiwekhi
 2. Cofa **Yongeza Umboneleli**
@@ -52,15 +52,15 @@ Isikrini soqwalaselo sisebenzisa uyilo olusekelwe kumakhadi apho ikhadi ngalinye
    - **Imodeli Engagqibekanga** — isichongi semodeli esiza kusetyenziswa ngokungagqibekanga kulo mboneleli (umz. `gpt-4o`, `mistral-small`)
 5. Cofa **Gcina Iisetingi**
 
-#### Ukususa Umboneleli
+#### Ukususa Umboneleli {#removing-a-provider}
 
 Cofa iqhosha elithi **Susa** nakweliphi na ikhadi lomboneleli ukuze ulicime. Gcina iisetingi ukuze usebenzise utshintsho.
 
-#### Ukulungelelanisa Ababoneleli Ngokutsha
+#### Ukulungelelanisa Ababoneleli Ngokutsha {#reordering-providers}
 
 Tsala i-ayikhoni yokubamba (⣿) kwicala lasekhohlo lalo naliphi na ikhadi lomboneleli ukuze ulilungelelanise ngokutsha. Ulandelelwano lumisela ukubaluleka kokubuyela komnye: izicelo zithunyelwa kumboneleli wokuqala zize zibuyele kubaboneleli abalandelayo ukuba isicelo siyasilela.
 
-### Ukuhanjiswa Kokubuyela Komnye
+### Ukuhanjiswa Kokubuyela Komnye {#fallback-routing}
 
 Xa isicelo kumboneleli ophambili sisilela — ngenxa yokuphelelwa lixesha, umda wesantya, okanye ukuphazamiseka kwenkonzo — isidibanisi sizama kwakhona ngokuzenzekelayo ngomboneleli olandelayo kuluhlu. Oku kuqhubeka kuluhlu de umboneleli aphumelele okanye bonke ababoneleli bazanywe.
 
@@ -72,7 +72,7 @@ Xa isicelo kumboneleli ophambili sisilela — ngenxa yokuphelelwa lixesha, umda 
 
 Ukubuyela komnye kubonakala ngokungacacanga kwi-plugin okanye theme ebizayo — bafumana impendulo ephumeleleyo okanye impazamo yokugqibela, kungakhathaliseki ukuba bangaphi ababoneleli abazanyiweyo.
 
-### Isalathiso Soqwalaselo Lomboneleli
+### Isalathiso Soqwalaselo Lomboneleli {#provider-configuration-reference}
 
 | Indawo | Iyafuneka | Inkcazo |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Ukubuyela komnye kubonakala ngokungacacanga kwi-plugin okanye theme ebizayo — 
 | Isitshixo se-API | Ewe | Isitshixo soqinisekiso salo mboneleli |
 | Imodeli Engagqibekanga | Ewe | Isichongi semodeli esisetyenziswa xa kungekho modeli ichaziweyo kwisicelo |
 
-## Ukusombulula Iingxaki
+## Ukusombulula Iingxaki {#troubleshooting}
 
-### Akukho baboneleli badwelisiweyo
+### Akukho baboneleli badwelisiweyo {#no-providers-are-listed}
 
 Ukuba uluhlu lwababoneleli alunanto emva kokugcina, qinisekisa ukuba:
 
@@ -91,21 +91,21 @@ Ukuba uluhlu lwababoneleli alunanto emva kokugcina, qinisekisa ukuba:
 - Isikhangeli sakho asithintelanga iphepha leesetingi ekugcineni (jonga i-console yesikhangeli kwiimpazamo ze-JavaScript)
 - I-plugin iyasebenza kwaye ukwisikrini somlawuli wenethiwekhi
 
-### Izicelo ziyasilela kubo bonke ababoneleli
+### Izicelo ziyasilela kubo bonke ababoneleli {#requests-are-failing-for-all-providers}
 
 - Qinisekisa ukuba i-URL yesiphelo somboneleli ngamnye iyafikeleleka kwiseva yakho (hayi kwisikhangeli sakho kuphela)
 - Jonga ukuba isitshixo ngasinye se-API sisebenza kwaye asiphelelwanga lixesha
 - Phonononga imeko yomda wesantya kunye ne-quota yomboneleli kwi-dashboard yabo
 - Vumela ukurekhodwa kwe-debug ye-WordPress (`WP_DEBUG_LOG`) ukuze kubanjwe imiyalezo yeempazamo eneenkcukacha evela kwisidibanisi
 
-### Umboneleli akasetyenziswa ekubuyeleni komnye
+### Umboneleli akasetyenziswa ekubuyeleni komnye {#a-provider-is-not-being-used-for-fallback}
 
 Ukutsala-ukuze-ulungelelanise ngokutsha kutshintsha ulandelelwano lokubuyela komnye. Qinisekisa ukuba umboneleli olindele ukuba afumane izicelo zokubuyela komnye ubekwe ngokuchanekileyo kuluhlu kwaye i-URL yesiphelo sakhe kunye nesitshixo se-API zichanekile.
 
-### Ikhadi elitsha lomboneleli alandi ngokuzenzekelayo
+### Ikhadi elitsha lomboneleli alandi ngokuzenzekelayo {#new-provider-card-does-not-expand-automatically}
 
 Ukwandiswa ngokuzenzekelayo kufuna ukuba i-JavaScript ivulwe kwisikhangeli sakho. Ukuba ikhadi alandi xa ucofa, jonga i-console yesikhangeli ukuze ubone iimpazamo. Imixholo yekhadi isoloko ifikeleleka ngokucofa isihloko sekhadi nokuba ukwandiswa ngokuzenzekelayo akuqalisi.
 
-## Ingxelo Yotshintsho
+## Ingxelo Yotshintsho {#changelog}
 
 Jonga [Ingxelo Yotshintsho](./changelog) ukuze ubone imbali epheleleyo yeenguqulelo.

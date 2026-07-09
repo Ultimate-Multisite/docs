@@ -3,32 +3,32 @@ title: 'Dərslik 3: Şəbəkənizi Qurmaq'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Dərslik 3: Şəbəkənizi Qurmaq
+# Dərslik 3: Şəbəkənizi Qurmaq {#lesson-3-setting-up-your-network}
 
 İndi qurma vaxtıdır. Bu dərslikdə Ultimate Multisite-ı quraşdıracaq və FitSite şəbəkəsinin təməlini quracaqsınız. Burada verilən hər qərar fitnes nişinə uyğun nəzərdə tutulub.
 
-## Harada Qaldıq
+## Harada Qaldıq {#where-we-left-off}
 
 Biz fitnes studiyalarını nişimiz kimi seçdik və bu fürsəti təsdiqlədik. İndi bu ideyanı işləyən bir platformaya çeviririk.
 
-## Hosting Seçimi
+## Hosting Seçimi {#choosing-your-hosting}
 
 Hosting seçimi, tək bir sayt üçün deyil, niş bir platforma üçün daha vacibdir. Siz bir sayt yox, onlarla və ya yüzlərlə sayta böyüyəcək bir şəbəkə yayırsınız.
 
-### Nəyə Diqqət Etməli
+### Nəyə Diqqət Etməli {#what-to-look-for}
 
 - **WordPress Multisite dəstəyi**: Bütün hostlar multisite-ı yaxşı idarə etmir.
 - **Wildcard SSL**: Subdomain əsaslı şəbəkələr üçün vacibdir.
 - **Ölçeklənə bilən resurslar**: Köçməyə ehtiyac duymadan böyüməyə imkanınız olmalıdır.
 - **Ultimate Multisite inteqrasiyası**: Avtomatik domen xəritələməsi və SSL əməliyyat tələb olunan əməliyyat çətinliyini azaldır.
 
-### Tövsiyə Olunan Yanaşma
+### Tövsiyə Olunan Yanaşma {#recommended-approach}
 
 [Compatible Providers](/user-guide/host-integrations/closte) siyahısından bir host seçin. Bunlar Ultimate Multisite ilə sınaqdan keçirilmişdir və domen xəritələməsi və SSL avtomatlaşdırması üçün lazım olan inteqrasiyaları təmin edir.
 
 FitSite üçün biz subdomain konfiqurasiyasından istifadə edəcəyik. Bu o deməkdir ki, müştəri saytları əvvəlcə `studioname.fitsite.com` kimi görünəcək, daha sonra isə istəyərlərinə öz domenlərini xəritələyə biləcəklər.
 
-## WordPress Multisite-ı Qurmaq
+## WordPress Multisite-ı Qurmaq {#installing-wordpress-multisite}
 
 Hələ WordPress Multisite quraşdırmanız yoxdursa:
 
@@ -40,7 +40,7 @@ Hələ WordPress Multisite quraşdırmanız yoxdursa:
 Subdomainlər hər müştəri saytına özünəməxsus ünvan (`studio.fitsite.com`) verir, yoxsa bir yol (`fitsite.com/studio`). Bu, müştəriləriniz üçün daha peşəkar görünür və permalink toqqunluqlarından qaçınmağa kömək edir. Ətraflı müqayisə üçün [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) baxın.
 :::
 
-## Ultimate Multisite-ı Qurmaq
+## Ultimate Multisite-ı Qurmaq {#installing-ultimate-multisite}
 
 Aşağıdakıları etmək üçün [Installing Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) bələdçisinə əməl edin:
 
@@ -53,11 +53,11 @@ Setup wizard zamanı FitSite nişini yadda saxlayın:
 - **Company name (Şirkət adı)**: "FitSite" (və ya seçdiyiniz brend adı).
 - **Company logo (Şirkət loqosu)**: Brend loqonuzu yükləyin -- bu, fakturalar və e-poçtlarda görünəcək.
 
-## Fitnes Nişinə Uyğun Konfiqurasiya
+## Fitnes Nişinə Uyğun Konfiqurasiya {#configuring-for-the-fitness-niche}
 
 Ultimate Multisite quraşdırıldıqdan sonra, bu nişə xas konfiqurasiya seçimlərini edin:
 
-### Ümumi Ayarlar (General Settings)
+### Ümumi Ayarlar (General Settings) {#general-settings}
 
 **Ultimate Multisite > Settings** səhifəsinə keçin və aşağıdakıları konfiqurasiya edin:
 
@@ -65,7 +65,7 @@ Ultimate Multisite quraşdırıldıqdan sonra, bu nişə xas konfiqurasiya seçi
 - **Default role (Default rol)**: Administrator -- fitnes studiyası sahibləri öz sayt məzmunu üzərində tam nəzarətə ehtiyac duyurlar.
 - **Registration (Qeydiyyat)**: Studiya sahiblərinin özləri qeydiyyatdan keçməsi üçün istifadəçi qeydiyyatını aktivləşdirin.
 
-### E-poçt Konfiqurasiyası (Email Configuration)
+### E-poçt Konfiqurasiyası (Email Configuration) {#email-configuration}
 
 Sistem e-poçtlarınız nişinizin dilini danışmalıdır. **Ultimate Multisite > Settings > Emails** səhifəsinə keçin və aşağıdakıları fərdiləşdirin:
 
@@ -75,7 +75,7 @@ Sistem e-poçtlarınız nişinizin dilini danışmalıdır. **Ultimate Multisite
 
 Bunu 8-ci Dərslikdə (Müştəri Onboarding) daha da təkmilləşdirəcəyik, lakin indi tonu təyin etmək, hətta ilk sınaq qeydiyyatları üçün belə nişə xas hiss yaratmasını təmin edir.
 
-### Domen Konfiqurasiyası (Domain Configuration)
+### Domen Konfiqurasiyası (Domain Configuration) {#domain-configuration}
 
 Uyğun bir hosting provayderindən istifadə edirsinizsə, domen xəritələməsini indi konfiqurasiya edin:
 
@@ -85,7 +85,7 @@ Uyğun bir hosting provayderindən istifadə edirsinizsə, domen xəritələməs
 
 Bu, növbəti dərslikdə şablonlar və sınaq saytları yaratmağa başladığımızda, hər şeyin uca-dan-uca işlədiyini təmin edir.
 
-## FitSite Şəbəkəsi (İndi)
+## FitSite Şəbəkəsi (İndi) {#the-fitsite-network-so-far}
 
 Bu dərslik sonunda nəyə sahib olduğunuz:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Sayt şablonları üçün hazır (növbəti dərslik)
 ```
 
-## Bu Dərslikdə Nə Qurduq
+## Bu Dərslikdə Nə Qurduq {#what-we-built-this-lesson}
 
 - Subdomain rejimində işləyən bir WordPress Multisite quraşdırması
 - FitSite brendlənməsi ilə quraşdırılmış və konfiqurasiya olunmuş Ultimate Multisite

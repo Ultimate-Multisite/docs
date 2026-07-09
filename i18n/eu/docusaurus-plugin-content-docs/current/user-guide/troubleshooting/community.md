@@ -3,7 +3,7 @@ title: Komunitatea
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Komunitatearekin eta joan
+# Ultimate Multisite Komunitatearekin eta joan {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Communitya da, hori da lekuan aholkatzen, esperientziak gehitzen eta gehiago beste Ultimate Multisite erabiltzaileekin harreman dira. Ultimate Multisite Communityra zenprekin joan https://community.ultimatemultisite.com/home-ra.
 

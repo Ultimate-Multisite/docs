@@ -3,16 +3,16 @@ title: Ngā Tautuhinga Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Tautuhinga Gratis AI Agent
+# Tautuhinga Gratis AI Agent {#gratis-ai-agent-settings}
 
 Ko te mata **Tautuhinga → Arā Atu Anō** i Gratis AI Agent e whakarato ana i te whirihoranga taumata-kaiwhakahaere mō ngā whakaurunga tuarongo. Ka tuhi tēnei whārangi i te tuku whakamua urupare, ngā kī kaiwhakarato rapu, te whakarite ratonga Superdav whakahaerehia, ngā mana Google Calendar, ngā tautuhinga SMS TextBee, me ngā haki āhuatanga puta noa i te whatunga.
 
-## Te Uru ki ngā Tautuhinga
+## Te Uru ki ngā Tautuhinga {#accessing-settings}
 
 1. I te whakahaere WordPress, haere ki **Gratis AI Agent → Tautuhinga**.
 2. Pāwhiritia te ripa **Arā Atu Anō**.
 
-## Whirihoranga Pūwāhi Urupare
+## Whirihoranga Pūwāhi Urupare {#feedback-endpoint-configuration}
 
 Ka whiwhi te pūwāhi urupare i ngā tono POST mai i te kaiāwhina AI i ngā wā katoa ka tuku urupare tētahi kaiwhakamahi mā te pātene koromatua-ki-raro, te kara akiaki-aunoa, te whakahau `/report-issue` rānei.
 
@@ -21,7 +21,7 @@ Ka whiwhi te pūwāhi urupare i ngā tono POST mai i te kaiāwhina AI i ngā wā
 | **URL Pūwāhi Urupare** | Te URL ka whiwhi i ngā tukunga urupare hei tono HTTP POST me tētahi tinana JSON. |
 | **Feedback API Key** | He bearer token ka tukuna ki te `Authorization` header o ia tono urupare. Waiho kia wātea mēnā kāore tō pūwāhi e tono motuhēhēnga. |
 
-### Kawenga JSON e Tūmanakohia Ana
+### Kawenga JSON e Tūmanakohia Ana {#expected-json-payload}
 
 Me whakaae tō pūwāhi urupare ki tētahi tinana JSON me ēnei āpure e whai ake nei, i te iti rawa:
 
@@ -36,7 +36,7 @@ Me whakaae tō pūwāhi urupare ki tētahi tinana JSON me ēnei āpure e whai ak
 
 Ka noho pea he āpure anō i roto i te kawenga, e ai ki te horopaki o te kōrerorero.
 
-### Uara `triage_category`
+### Uara `triage_category` {#triagecategory-values}
 
 Ka tautapa te paparanga whakarōpū AI i tētahi o ngā uara e whai ake nei ki `triage_category` i mua i te tuku whakamua i te kawenga:
 
@@ -47,7 +47,7 @@ Ka tautapa te paparanga whakarōpū AI i tētahi o ngā uara e whai ake nei ki `
 | `inappropriate_content` | I roto i te whakautu he ihirangi kāore e tika kia whakaaturia ki ngā kaiwhakamahi. |
 | `other` | Kāore te urupare i ōrite ki tētahi kāwai e mōhiotia ana. |
 
-### Motuhēhēnga
+### Motuhēhēnga {#authentication}
 
 Mēnā e tono motuhēhēnga ana tō pūwāhi, tautuhia te āpure **Feedback API Key** ki tō bearer token. Ka tuku te kaiāwhina:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Mēnā he wātea te āpure **Feedback API Key**, kāore he `Authorization` header e tukuna.
 
-### Te Mono i te Kohinga Urupare
+### Te Mono i te Kohinga Urupare {#disabling-feedback-collection}
 
 Waiho kia wātea ngā āpure **URL Pūwāhi Urupare** me **Feedback API Key** e rua. Ka kitea tonu te pātene koromatua-ki-raro me te UI urupare e ngā kaiwhakamahi, engari kāore ngā tukunga e tukuna whakamua ki tētahi ratonga waho.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Kei te ripa **Arā Atu Anō** hoki, ka whakahohe te āpure **Brave Search API Key** i te āheinga [Rapu Ipurangi](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ Kei roto i te tapanga āpure he hononga pāwhiri ki te whārangi rēhita API Bra
 
 Tirohia [Rapu Ipurangi](../configuration/internet-search) mō ngā tuhinga kaiwhakamahi-mutunga mō tēnei āhuatanga.
 
-## Ratonga Superdav Whakahaerehia
+## Ratonga Superdav Whakahaerehia {#managed-superdav-service}
 
 Ka tāpiri a Superdav AI Agent v1.18.0 i ngā pūwāhi ratonga Superdav whakahaerehia me te whakarato hononga aunoa mō ngā pae e tautokona ana. Whakamahia ēnei mana ina me hono tō pae ki te kaiwhakarato manaaki, kaua ki tētahi pūwāhi ratonga kua whirihorahia ā-ringa.
 
@@ -85,7 +85,7 @@ Ka tāpiri a Superdav AI Agent v1.18.0 i ngā pūwāhi ratonga Superdav whakahae
 
 I muri i te whakarato, tiakina ngā tautuhinga, ā, manatoko i te tūnga hononga i mua i te whakawhirinaki ki ngā rerengamahi ratonga-whakahaerehia. Mēnā ka rahua te whakarato, arotakengia ngā tohutohu ngana-anō kua whakaaturia, ā, whakaūngia kei te pae te whakaaetanga ki te whakamahi i te kaiwhakarato manaaki.
 
-## Whirihoranga Google Calendar
+## Whirihoranga Google Calendar {#google-calendar-configuration}
 
 Ina whakahohea ngā āhuatanga maramataka Superdav AI Agent v1.18.0, ka taea e te kaiāwhina te pānui i ngā maramataka kua whirihorahia me ngā taipitopito takahanga. He mea anga-ki-te-pānui ngā taputapu maramataka, ā, he whaihua mō ngā whakamaumahara mōhio-ki-te-wātaka, te whai-ake i ngā kaiuru, me te whakaōrite hoapā.
 
@@ -97,7 +97,7 @@ Ina whakahohea ngā āhuatanga maramataka Superdav AI Agent v1.18.0, ka taea e t
 
 Puritia ngā taipitopito tuakiri maramataka kia whāiti ki ngā maramataka e hiahiatia ana e te kaiāwhina. Hono anō, hurihia rānei ngā taipitopito tuakiri mēnā ka tohu te tūnga kua pau te token.
 
-## Whakamōhiotanga SMS TextBee
+## Whakamōhiotanga SMS TextBee {#textbee-sms-notifications}
 
 Ka tāpiri a Superdav AI Agent v1.18.0 i a TextBee hei kaiwhakarato SMS mō ngā rerengamahi whakamōhiotanga kua whirihorahia. Me takirua ngā whakamōhiotanga SMS ki ngā kūaha whakaaetanga tangata mō ngā karere tairongo, kanohi-ki-te-kaiwhakamahi rānei.
 
@@ -109,16 +109,16 @@ Ka tāpiri a Superdav AI Agent v1.18.0 i a TextBee hei kaiwhakarato SMS mō ngā
 
 Tukuna he karere whakamātautau ki tētahi tau nā te kaiwhakahaere anake, kātahi ka whakaū i te whanonga kūaha-whakaaetanga i mua i te whakahohe i ngā whakamaumahara kua whakaritea, kanohi-ki-ngā-kaiuru rānei.
 
-## Haki Āhuatanga
+## Haki Āhuatanga {#feature-flags}
 
 I whakaurua hoki i v1.9.0, ka whakarato te ripa **Tautuhinga → Haki Āhuatanga** i ngā pana takahuri mō ngā mahi kōwhiringa. Ka whakahohea, ka monokia rānei ia haki puta noa i te whatunga; kāore he takahitanga ā-pae i tēnei wā.
 
-### Te Uru ki ngā Haki Āhuatanga
+### Te Uru ki ngā Haki Āhuatanga {#accessing-feature-flags}
 
 1. I te whakahaere WordPress, haere ki **Gratis AI Agent → Tautuhinga**.
 2. Pāwhiritia te ripa **Haki Āhuatanga**.
 
-### Haki Mana Uru
+### Haki Mana Uru {#access-control-flags}
 
 | Kara | Taunoa | Whakaahuatanga |
 |---|---|---|
@@ -127,7 +127,7 @@ I whakaurua hoki i v1.9.0, ka whakarato te ripa **Tautuhinga → Haki Āhuatanga
 | **Whakaae Urunga Subscriber** | Weto | Ina whakakāngia, ka āhei ngā kaiwhakamahi whai tūranga `subscriber` ki te whakamahi i te atanga kōrerorero, engari ka herea ki ngā āheinga pānui-anake (kāore he waihanga whakairinga, he panoni tautuhinga rānei). |
 | **Monokia mō ngā Hunga ehara i te Mema** | Weto | Ka tūhono ki te tūnga mematanga Ultimate Multisite. Ina whakakāngia, ka hunaia te kōrerorero mō ngā pae kāore he mematanga hohe. |
 
-### Ngā Kara Waitohu
+### Ngā Kara Waitohu {#branding-flags}
 
 | Kara | Taunoa | Whakaahuatanga |
 |---|---|---|
@@ -136,7 +136,7 @@ I whakaurua hoki i v1.9.0, ka whakarato te ripa **Tautuhinga → Haki Āhuatanga
 | **Hunaia te Kaitīpako Agent** | Weto | Ina whakakāngia, kāore ngā kaiwhakamahi e taea te whakawhiti i waenga i ngā agent e rima kua hangaia ki roto. Ka ū te agent o nāianei ki te mea kua whirihoratia hei taunoa i Settings → General. |
 | **Whakamahia te Ata Pae hei Avatar Kōrerorero** | Weto | Ka whakakapi i te ata AI taunoa i te pane widget kōrerorero ki te ata pae WordPress (kua tautuhia i raro i Appearance → Customize → Site Identity). |
 
-### Ngā Kara Haumaru Aunoatanga
+### Ngā Kara Haumaru Aunoatanga {#automation-safety-flags}
 
 Ka whakauru a Superdav AI Agent v1.18.0 i ngā kūaha whakaaetanga tangata me ngā pūkete whakamaumahara mō ngā rere aunoatanga haumaru ake. Ka puta pea ēnei mana ki roto i ngā kara āhuatanga, i ngā tautuhinga aunoatanga matatau rānei, e ai ki te mōkihi kua tāutatia.
 
@@ -147,6 +147,6 @@ Ka whakauru a Superdav AI Agent v1.18.0 i ngā kūaha whakaaetanga tangata me ng
 | **Whakahohe Utauta Maramataka** | Weto kia whirihoratia rā anō | Ka tuku i te agent kia pānui i ngā maramataka Google me ngā takahanga kua whirihoratia. |
 | **Whakahohe Whakamōhiotanga SMS** | Weto kia whirihoratia rā anō | Ka tuku i ngā rerengamahi kua whakaaetia kia tuku whakamōhiotanga SMS TextBee i muri i te tiakanga o ngā taipitopito takiuru. |
 
-### Te Hoatu Panonitanga
+### Te Hoatu Panonitanga {#applying-changes}
 
 Pāwhiritia **Tiaki Tautuhinga** i muri i te whakawhiti i tētahi kara. Ka whai mana ngā panonitanga i taua wā tonu — kāore e hiahiatia he cache flush, he whakahohe anō i te plugin rānei.

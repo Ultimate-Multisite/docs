@@ -3,13 +3,13 @@ title: Mphindo wa Kufunga ndi Mphindo wa DNS wa Mwana
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field and Customer DNS Management
+# Checkout Field and Customer DNS Management {#checkout-field-and-customer-dns-management}
 
-## Kufuka kwa Kifaa cha Kuchagua Domain
+## Kufuka kwa Kifaa cha Kuchagua Domain {#the-domain-selection-checkout-field}
 
 Kifaa cha **Domain Selection** ndi chinthu chomwe kumakondome m'checkout chomwe kumapereka wamweneza kuti awone kuti angachita bwanji domain ya site yake. Tambani m'form yopereka checkout yoyote kuti muchezi kupereka domain.
 
-### Kufamba ndi kifaa ku form yopereka checkout
+### Kufamba ndi kifaa ku form yopereka checkout {#adding-the-field-to-a-checkout-form}
 
 1. Phamu **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Opereka kapena chita form yopereka checkout
@@ -18,7 +18,7 @@ Kifaa cha **Domain Selection** ndi chinthu chomwe kumakondome m'checkout chomwe 
 5. Onesha (configure) options za fieldo (one m'mmodzi)
 6. Save the form
 
-### Options za Fieldo
+### Options za Fieldo {#field-options}
 
 **Domain modes** — Onesha kuti tab zikuchezedwe ndi chiyani wamweneza. Kukhala kwa mode imodzi kumathandizira kapena kukhala m'mmodzi:
 
@@ -32,7 +32,7 @@ Kifaa cha **Domain Selection** ndi chinthu chomwe kumakondome m'checkout chomwe 
 
 **Domain product** — Mwachidule, onesha kifaa chimodzi ku domain product yenera. Ngati sikuperekedwa, addon imayendetsa product yomwe yenera monga momwe wamweneza akugwiritsa ntchito TLD (Top-Level Domain).
 
-### Fields za M'registrant
+### Fields za M'registrant {#registrant-contact-fields}
 
 Pamene wamweneza amachita selection ya tab **Register New Domain**, form yopereka checkout imapereka fields za m'registrant m'mmodzi:
 
@@ -43,11 +43,11 @@ Pamene wamweneza amachita selection ya tab **Register New Domain**, form yoperek
 
 Koma ndi zomwe zikufunika ndi onse omwe aliwonse (registrars) ndipo zimaphatikizidwa pansi pa kufufuza API ya registration. Nambala za fon ndi zikuyenera kukhala m'moyo wopereka `+CC.NNN` format imene registrars amayamba kupeza.
 
-### Auto-generated site URL (URL ya siti yomwe imaphatikizidwa kwa ajiji)
+### Auto-generated site URL (URL ya siti yomwe imaphatikizidwa kwa ajiji) {#auto-generated-site-url}
 
 Pamene munthu akalankhula kapena akamaphatikiza domain, field ya site URL imaphatikizidwa m'moyo poyamba kuchokera ku domain yomwe yaliyendetsedwa. Munthu samayenera kulemba field yosiyanasiyana ya URL.
 
-### Search behaviour (Mwayi wa kufufuza)
+### Search behaviour (Mwayi wa kufufuza) {#search-behaviour}
 
 - Kufufuza kuti domain imaphatikizidwa kumaphatikizidwa m'moyo poyamba ndi AJAX pamene munthu akulimbikiza
 - Zomwe zikuyenera kuwoneka za TLD (Top-Level Domain) zina zomwe zimaphatikizidwa pamene domain yomwe imayenera si imaphatikizidwa
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Customer DNS management (Kupereka DNS kwa munthu)
+## Customer DNS management (Kupereka DNS kwa munthu) {#customer-dns-management}
 
 Munthu akhoza kupereka DNS records pa domain aliye yendetsedwa monga m'My Account, pansi pa entry ya domain.
 
-### Supported record types (Mwayi wa records zomwe zikuyenera)
+### Supported record types (Mwayi wa records zomwe zikuyenera) {#supported-record-types}
 
 | Type | Use (Kufuna kuli) |
 |---|---|
@@ -91,11 +91,11 @@ Munthu akhoza kupereka DNS records pa domain aliye yendetsedwa monga m'My Accoun
 | **MX** | Kukhazikitsa mail exchange server |
 | **TXT** | Kulemba SPF, DMARC, verification, kapena records zina za text |
 
-### Which providers support DNS management? (Omwe aliwonse amapereka DNS management?)
+### Which providers support DNS management? (Omwe aliwonse amapereka DNS management?) {#which-providers-support-dns-management}
 
 Kupanga ya DNS (kugawa, kubadilisha, kudondoka) ipo ndi **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, ndipo **Openprovider**. Dziko la **Hostinger** lina ulemu wa kusintha nameservers monga momwe muli ndi Domain Seller; DNS records za dziko lomwe limapereka (hosted domains) zimapangidwa ndi integration ya core ya Hostinger domain-mapping. Namecheap, GoDaddy, ndipo NameSilo dziko lina ulemu wa kuwonetsa malo ndi kusunga kwa nthawi yomwe lina m'moyo koma DNS linayenera kudziwika m'moyo wopangidwa pa control panel ya registrar.
 
-### Default DNS records
+### Default DNS records {#default-dns-records}
 
 Muli ndi ulemu wopangidwa (default DNS records) momwe mungapereke kuti zikugwiritsidwe ntchito monga momwe dziko lina m'moyo kumaperekedwa. Kodi mwayi ku **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: kupereka ndi kubadilika DNS
+### Admin: kupereka ndi kubadilika DNS {#admin-viewing-and-editing-dns}
 
 Admins a network angathe kuwonetsa ndi kubadilika DNS records za dziko lomwe limayenera m'moyo monga momwe muli pa edit page ya dziko m'moyo woperekedwa **Network Admin › Ultimate Multisite › Domains**.

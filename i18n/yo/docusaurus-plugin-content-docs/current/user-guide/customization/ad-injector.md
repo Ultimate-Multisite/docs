@@ -3,7 +3,7 @@ title: Olùfi Ìpolówó Sínú
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Fífi Ìpolówó sí nẹ́tíwọ́ọ̀kì rẹ pẹ̀lú Ultimate Multisite: Ad Injector
+# Fífi Ìpolówó sí nẹ́tíwọ́ọ̀kì rẹ pẹ̀lú Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector jẹ́ **add-on ọ̀fẹ́** tí ó fún ọ ní àwọn irinṣẹ́ láti fi ìpolówó sí àwọn plan rẹ tààrà láti ojúewé àtúnṣe wọn.
 
@@ -35,7 +35,7 @@ O tún lè jẹ́ kí ìpolówó wà nínú header ti Admin Pages fún àwọn o
 
 _Lọ sí aṣàyàn Admin Panel Ad Code bí o bá fẹ́ ṣàfihàn ìpolówó lórí back-end olumulo rẹ_
 
-### Ju Ìpolówó Lọ
+### Ju Ìpolówó Lọ {#beyond-advertising}
 
 O tún lè lo Ultimate Multisite: Ad Injector láti pèsè ìtìlẹ́yìn fún àwọn plan ipele-gíga.
 

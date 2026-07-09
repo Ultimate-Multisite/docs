@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM, WordPress multisite toruňyza brauzer-ýerli AI netijelemesini getirýär. Ol uly dil modellerini WebLLM we MLC engine arkaly dolulygyna brauzerde işledýär — API açarlary ýok, daşarky çagyryşlar ýok, maglumat ulanyjynyň enjamyndan çykmaýar.
 
-## Esasy aýratynlyklar
+## Esasy aýratynlyklar {#key-features}
 
 - **Brauzer tarapyndaky netijeleme**: LLM WebLLM/MLC arkaly myhmanyň brauzerinde ýerli işleýär — serwer GPU talap edilmeýär
 - **Ýüzýän chat widget**: Ulgama giren ulanyjylar front end-den göni brauzer tarapyndaky LLM-e prompt iberip bilýärler
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM, WordPress multisite toruňyza brauzer-ýerli A
 - **IndexedDB cache**: Model agramlarynyň ýüklemeleri deslapky Cache API ýoluny bozýan CDN ugrukdyrmalaryndan soň hem saklanýar
 - **wpai filter integrasiýasy**: `wpai_preferred_text_models` filter-ine birikýär, şonuň üçin AI Experiments aýratynlygy sazlananda brauzer engine-ine ugrukdyrylýar
 
-## Talaplar
+## Talaplar {#requirements}
 
 - WordPress 5.3 ýa-da has ýokary
 - PHP 7.4 ýa-da has ýokary
 - Ultimate Multisite plugin (işjeň)
 - WebGPU goldawly brauzer (Chrome 113+, Edge 113+, ýa-da WebGPU açyk bolan Firefox Nightly)
 
-## Gurnama
+## Gurnama {#installation}
 
 1. Addon faýllaryny `/wp-content/plugins/` katalogyňyza ýükläň
 2. WordPress-de 'Plugins' menýusy arkaly plugin-i işjeňleşdiriň
 3. Addon-y sazlamak üçin **Ultimate Multisite → AI Connector** sahypasyna geçiň
 
-## Ýüzýän Chat Widget
+## Ýüzýän Chat Widget {#floating-chat-widget}
 
 Ýüzýän chat widget ulgama giren islendik ulanyja, duran sahypasyndan çykmazdan, front end-den göni brauzer tarapyndaky LLM bilen aragatnaşyk saklamaga mümkinçilik berýär.
 
-### Näme Edýär
+### Näme Edýär {#what-it-does}
 
 Işledilende, ulgama giren ulanyjylar üçin her front-end sahypanyň burçunda chat nyşany peýda bolýar. Nyşana basylanda, ulanyjynyň prompt ýazyp we ýerli işleýän WebLLM modelinden jogap alyp bilýän chat paneli açylýar. Model dolulygyna brauzerde işleýändigi sebäpli, jogaplar şahsy bolup, hiç hili serwer tarapyndaky işleme gatnaşmaýar.
 
-### Admin-Bar Ýagdaý Görkezijisi
+### Admin-Bar Ýagdaý Görkezijisi {#admin-bar-status-indicator}
 
 WordPress admin bar WebLLM engine-iň häzirki ýagdaýyny görkezýän ýagdaý görkezijisini öz içine alýar:
 
@@ -56,7 +56,7 @@ WordPress admin bar WebLLM engine-iň häzirki ýagdaýyny görkezýän ýagdaý
 
 Görkeziji sahypany täzeden ýüklemegi talap etmezden hakyky wagtda täzelenýär.
 
-### Widget-i Nädip Işletmeli ýa-da Öçürmeli
+### Widget-i Nädip Işletmeli ýa-da Öçürmeli {#how-to-enable-or-disable-the-widget}
 
 1. Network admin-de **Ultimate Multisite → AI Connector** sahypasyna gidiň
 2. **Connector** panelini tapyň
@@ -65,17 +65,17 @@ Görkeziji sahypany täzeden ýüklemegi talap etmezden hakyky wagtda täzelený
 
 Eger network administratory şol mümkinçiligi beren bolsa, widget her site-iň öz admin-inden hem site boýunça işledilip ýa-da öçürilip bilner.
 
-## Widget Sazlamalary
+## Widget Sazlamalary {#widget-settings}
 
 **Ultimate Multisite → AI Connector** içindäki Connector paneli ýüzýän chat widget üçin aşakdaky sazlamalary öz içine alýar:
 
-### Ýüzýän Chat Widget-i Işlet
+### Ýüzýän Chat Widget-i Işlet {#enable-floating-chat-widget}
 
 Chat widget-i tutuş network üçin açýar ýa-da ýapýar. Öçürilende, ulanyjy roluna garamazdan widget hiç bir front-end sahypada görünmeýär.
 
 **Deslapky:** Öçük
 
-### Auto-Prompt Özüni Alşynyň Görnüşi
+### Auto-Prompt Özüni Alşynyň Görnüşi {#auto-prompt-behaviour}
 
 Chat widget ulanyjy ony açanda awtomatik prompt iberip-ibermejekdigini dolandyrýar.
 
@@ -93,7 +93,7 @@ Chat widget ulanyjy ony açanda awtomatik prompt iberip-ibermejekdigini dolandyr
 
 **Deslapky:** Öçürilen
 
-## SharedWorker Iş Wagty
+## SharedWorker Iş Wagty {#sharedworker-runtime}
 
 1.1.0 wersiýasy MLC engine üçin SharedWorker iş wagtyny girizýär. Ozal WebLLM ulanýan her brauzer tab-y modeliň öz aýratyn nusgasyny ýükleýärdi, GPU ýady üçin bäsleşýärdi we VRAM çäkli enjamlarda öndürijilik meselelerine sebäp bolýardy.
 
@@ -105,29 +105,29 @@ SharedWorker iş wagty bilen, bir tab engine host hökmünde hereket edýär. Be
 
 SharedWorker ulanyjylar üçin aç-açandyr. Admin-bar ýagdaý görkezijisi aýratyn tab-yň däl-de, hemişe paýlaşylan engine-iň ýagdaýyny görkezýär.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Addon AI Client SDK nusgasyna gabat gelýän WordPress REST API haýyşlaryny tutup alýan `apiFetch` middleware gurnaýar. Serwere loopback HTTP haýyşyny etmekmegiň ýerine, bu haýyşlar göni SharedWorker-de işleýän ýerli WebLLM broker-e ugrukdyrylýar.
 
 Bu, standart WordPress `apiFetch` API-ni ulanyp AI endpoint-lerine jaň edýän plugin-ler we theme-ler model elýeterli bolanda, hiç hili code üýtgetmeleri talap edilmezden, awtomatik ýagdaýda brauzer tarapyndaky modelden peýdalanjakdygyny aňladýar.
 
-## Hooks we Filters
+## Hooks we Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — WebLLM brauzer hereketlendirijisini ileri tutulýan tekst modeli hökmünde bellige alyň. Addon hereketlendiriji sazlanan we elýeterli bolanda bu filtre awtomatik birikýär.
 - `ultimate_webllm_widget_enabled` — Belli bir ulanyjy ýa-da kontekst üçin widgetiň işledilen ýagdaýyny üýtgediň. `true` ýa-da `false` gaýtaryň.
 - `ultimate_webllm_auto_prompt` — Widgete iberilmezden öň auto-prompt tekstini üýtgediň. Prompt setirini we häzirki `WP_Post` obýektini kabul edýär.
 
-## Näsazlyklary düzetmek
+## Näsazlyklary düzetmek {#troubleshooting}
 
-### Çat widgeti görünmeýär
+### Çat widgeti görünmeýär {#the-chat-widget-does-not-appear}
 
 - Ulanyjynyň ulgama girendigini tassyklaň — widget diňe tassyklanan ulanyjylara görkezilýär
 - Connector panelinde **Enable floating chat widget** açarynyň açykdygyny barlaň
 - Ulanyjynyň brauzeriniň WebGPU-ny goldaýandygyny barlaň (ýokardaky Talaplara serediň)
 
-### Admin-bar görkezijisi "Error" görkezýär
+### Admin-bar görkezijisi "Error" görkezýär {#the-admin-bar-indicator-shows-error}
 
 Brauzeriň developer konsolyny açyň (F12) we WebLLM bilen bagly ýalňyşlyklary gözläň. Köp duş gelýän sebäpler:
 
@@ -135,10 +135,10 @@ Brauzeriň developer konsolyny açyň (F12) we WebLLM bilen bagly ýalňyşlykla
 - Model weight göçürip almak başa barmady — tor baglanyşygyny barlaň we brauzer developer gurallarynda IndexedDB keşini arassalap görüň (Application → IndexedDB)
 - Brauzer giňeltmesi SharedWorker-i bloklaýar
 
-### Model weights her gezek göçürip alynýar
+### Model weights her gezek göçürip alynýar {#model-weights-download-every-time}
 
 Addon model weights-iň CDN ugrukdyrmalaryndan soň hem saklanmagyny üpjün etmek üçin keş backend hökmünde IndexedDB ulanýar. Eger weights her sapar sahypa girilende täzeden göçürilip alynýan bolsa, IndexedDB-iň brauzer gizlinlik sazlamasy ýa-da giňeltme tarapyndan arassalanmaýandygyny barlaň.
 
-## Üýtgeşmeler žurnaly
+## Üýtgeşmeler žurnaly {#changelog}
 
 Doly wersiýa taryhy üçin [Üýtgeşmeler žurnaly](./changelog) serediň.

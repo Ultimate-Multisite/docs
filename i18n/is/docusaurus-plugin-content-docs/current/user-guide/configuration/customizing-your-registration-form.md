@@ -3,13 +3,13 @@ title: Að sérsníða skráningareyðublaðið þitt
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Sérsníða skráningareyðublaðið þitt
+# Sérsníða skráningareyðublaðið þitt {#customizing-your-registration-form}
 
 Til að láta netið þitt líta einstakt út miðað við öll önnur SaaS sem byggð eru á WordPress-vettvanginum, gerir Ultimate Multisite þér kleift að sérsníða skráningar- og innskráningarsíðurnar þínar með **Checkout Forms** eiginleikanum okkar.
 
 Þótt þau séu auðveld og sveigjanleg leið til að prófa mismunandi nálganir þegar reynt er að breyta nýjum viðskiptavinum, eru þau aðallega notuð til að búa til persónusniðin skráningareyðublöð. Þessi grein miðar að því að sýna þér hvernig þú getur gert það.
 
-## Innskráningar- og skráningarsíður:
+## Innskráningar- og skráningarsíður: {#login-and-registration-pages}
 
 Við uppsetningu Ultimate Multisite býr það sjálfkrafa til sérsniðnar innskráningar- og skráningarsíður á aðalvefnum þínum. Þú getur breytt þessum sjálfgefnu síðum hvenær sem er með því að fara á **Ultimate Multisite > Settings > Login & Registration** síðuna þína.
 
@@ -45,7 +45,7 @@ Nú skulum við skoða aðra valkosti sem tengjast enn innskráningar- og skrán
 
 Og þetta eru allir valkostirnir sem tengjast innskráningu og skráningu sem þú getur sérsniðið! Ekki gleyma að vista stillingarnar þínar þegar þú hefur lokið við að breyta þeim.
 
-## Nota mörg skráningareyðublöð:
+## Nota mörg skráningareyðublöð: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 býður upp á ritil fyrir checkout form sem gerir þér kleift að búa til eins mörg eyðublöð og þú vilt, með mismunandi reitum, vörum í boði o.s.frv.
 
@@ -69,7 +69,7 @@ Að öðrum kosti geturðu breytt eða afritað eyðublöðin sem þú ert þega
 
 Ef þú velur eitt skref eða mörg skref verður checkout form nú þegar forútfyllt með grunnskrefunum sem þarf til að það virki. Síðan, ef þú vilt, geturðu bætt við aukaskrefum.
 
-### Breyta Checkout Form:
+### Breyta Checkout Form: {#editing-a-checkout-form}
 
 Eins og við nefndum áður geturðu búið til checkout forms í mismunandi tilgangi. Í þessu dæmi munum við vinna með skráningareyðublað.
 
@@ -131,11 +131,11 @@ Til að fá shortcode formsins þíns skaltu smella á **Búa til Shortcode** og
 
 _**Athugið:** Þú þarft að bæta þessu shortcode við skráningarsíðuna þína til að bæta þessu greiðsluformi við hana._
 
-## Forval á vörum og sniðmátum með URL-færibreytum:
+## Forval á vörum og sniðmátum með URL-færibreytum: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Ef þú vilt búa til sérsniðnar verðtöflur fyrir vörurnar þínar og forvelja í greiðsluforminu þá vöru eða það sniðmát sem viðskiptavinurinn velur af verðtöflunni þinni eða sniðmátasíðunni, geturðu notað URL-færibreytur fyrir þetta.
 
-### **Fyrir áskriftarleiðir:**
+### **Fyrir áskriftarleiðir:** {#for-plans}
 
 Farðu í **Ultimate Multisite > Vörur > Veldu áskriftarleið**. Þú ættir að sjá **Smelltu til að afrita deilanlegan hlekk**-hnappinn efst á síðunni. Þetta er hlekkurinn sem þú getur notað til að forvelja þessa tilteknu áskriftarleið í greiðsluforminu þínu.
 
@@ -143,7 +143,7 @@ Farðu í **Ultimate Multisite > Vörur > Veldu áskriftarleið**. Þú ættir a
 
 Athugaðu að þessi deilanlegi hlekkur gildir aðeins fyrir **Áskriftarleiðir**. Þú getur ekki notað deilanlega hlekki fyrir pakka eða þjónustur.
 
-### Fyrir sniðmát:
+### Fyrir sniðmát: {#for-templates}
 
 Ef þú vilt forvelja síðusniðmát í greiðsluforminu þínu geturðu notað færibreytuna: **?template_id=X** á URL skráningarsíðunnar þinnar. Skipta þarf "X" út fyrir **ID-númer síðusniðmátsins**. Til að fá þetta númer skaltu fara í **Ultimate Multisite > Síður**.
 

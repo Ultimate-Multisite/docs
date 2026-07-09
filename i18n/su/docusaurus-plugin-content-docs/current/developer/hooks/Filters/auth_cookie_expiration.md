@@ -4,11 +4,11 @@ title: Saringan - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Saringan: auth_cookie_expiration
+# Saringan: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Nyaring lilana jaman kadaluwarsa cookie auténtikasi.
 
-## Paraméter
+## Paraméter {#parameters}
 
 | Ngaran | Tipe | Pedaran |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Nyaring lilana jaman kadaluwarsa cookie auténtikasi.
 | $user_id | `int` | ID pamaké. |
 | $remember | `bool` | Naha login pamaké kudu diinget. Standar false. |
 
-### Ti saprak
+### Ti saprak {#since}
 
 - 2.8.0
-### Sumber
+### Sumber {#source}
 
 Ditetepkeun dina [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) dina garis 52

@@ -4,11 +4,11 @@ title: Nzacha - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Nzacha: wu_country_get_administrative_division_name
+# Nzacha: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Na-eweghachi aha mara mma nke ngalaba nchịkwa nke mba.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Na-eweghachi aha mara mma nke ngalaba nchịkwa nke mba.
 | $ucwords | `bool` | ma ọ bụrụ na anyị eme ka mkpụrụokwu bụrụ mkpụrụedemede ukwu. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance nke klaasị dị ugbu a. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 2.0.11
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) n'ahịrị 250
 
 
-## Na-eweghachi
+## Na-eweghachi {#returns}
 Aha nkewa a gbanwere.

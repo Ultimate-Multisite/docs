@@ -4,13 +4,13 @@ title: ფილტრი - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# ფილტრი: get_blogs_of_user
+# ფილტრი: get_blogs_of_user {#filter-getblogsofuser}
 
 აქ, ყოველი შემთხვევისთვის, იმეორებს ორიგინალ WP ფილტრს.
 
 ფილტრავს იმ საიტების სიას, რომლებსაც მომხმარებელი ეკუთვნის.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 | $user_id | `int` | მომხმარებლის ID. |
 | $all | `bool` | უნდა შეიცავდეს თუ არა დაბრუნებული საიტების მასივი ყველა საიტს, მათ შორის მათაც, რომლებიც მონიშნულია როგორც 'deleted', 'archived' ან 'spam'. ნაგულისხმევია false. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.0.11
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851)-ში, ხაზზე 851

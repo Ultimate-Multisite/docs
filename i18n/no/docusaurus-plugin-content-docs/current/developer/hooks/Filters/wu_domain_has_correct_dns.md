@@ -4,11 +4,11 @@ title: Filter - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Lar plugin-utviklere legge til nye sjekker for å definere resultatene.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Lar plugin-utviklere legge til nye sjekker for å definere resultatene.
 | $domain | `self` | Den nåværende domeneinstansen. |
 | $domains_and_ips | `array` | Listen over domener og IP-adresser funnet under DNS-oppslaget. |
 
-### Tilgjengelig siden
+### Tilgjengelig siden {#since}
 
 - 2.0.4
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) på linje 455.
 
 
-## Returnerer
+## Returnerer {#returns}
 Om DNS er riktig satt opp eller ikke.

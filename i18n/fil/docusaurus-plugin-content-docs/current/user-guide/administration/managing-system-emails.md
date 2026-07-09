@@ -3,11 +3,11 @@ title: Pamamahala ng mga Email ng Sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Pamamahala ng Mga System Email
+# Pamamahala ng Mga System Email {#managing-system-emails}
 
 Nagpapadala ang Ultimate Multisite ng iba't ibang system email para sa mga kaganapan tulad ng mga kumpirmasyon sa signup, mga resibo ng bayad, at mga pagbabago sa membership. Maaari mong i-customize ang mga email template na ito upang tumugma sa iyong brand.
 
-## Pagtingin sa Mga System Email
+## Pagtingin sa Mga System Email {#viewing-system-emails}
 
 Pumunta sa **Ultimate Multisite → Settings** at i-click ang tab na **Emails** upang makita ang mga setting na kaugnay ng email.
 
@@ -21,7 +21,7 @@ Maaari mo ring i-edit ang mga indibidwal na email template gamit ang system emai
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Pag-import ng Mga Bagong Email Template
+## Pag-import ng Mga Bagong Email Template {#importing-new-email-templates}
 
 Maaaring magrehistro ng mga bagong email template ang mga bagong bersyon at add-on ng Ultimate Multisite. Upang maiwasan ang mga conflict, hindi awtomatikong idinaragdag ang mga bagong template — kailangan mong manu-manong i-import ang mga ito.
 
@@ -32,7 +32,7 @@ Upang mag-import ng mga bagong email template:
 3. I-toggle ang opsyong **Import Emails** upang makita ang mga available na template
 4. Piliin ang mga template na gusto mong i-import at kumpirmahin
 
-## Pag-reset ng Mga Email Template
+## Pag-reset ng Mga Email Template {#resetting-email-templates}
 
 Kung na-customize mo ang isang email template at gusto mong ibalik sa default na content, mayroon kang dalawang opsyon:
 

@@ -3,11 +3,11 @@ title: Ingxelo yabaThengi & Ukuxela iiNgxaki
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Ingxelo yabathengi kunye nokuxela iingxaki
+# Ingxelo yabathengi kunye nokuxela iingxaki {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 izisa inkqubo eyakhelwe ngaphakathi yengxelo kunye nokuxela iingxaki evumela abasebenzisi bokugqibela ukuba baphawule iimpendulo ezingeloncedo baze baxele iingxaki ngqo kujongano lwencoko. Le nkqubo iquka ulawulo lwemvume, umyalelo wokuxela ngokuzenzekelayo, kunye nokuhlelwa koncedo nge-AI kwi-backend.
 
-## Iqhosha likabhontsi-ezantsi
+## Iqhosha likabhontsi-ezantsi {#thumbs-down-button}
 
 Wonke umyalezo othunyelwe ngumncedisi we-AI ubonisa iqhosha **likabhontsi-ezantsi** (👎). Xa umsebenzisi elicofa, angaphawula impendulo njengengeloncedo okanye engachanekanga.
 
@@ -15,7 +15,7 @@ Wonke umyalezo othunyelwe ngumncedisi we-AI ubonisa iqhosha **likabhontsi-ezants
 - Ukulicofa kuvula **Imodal yemvume yengxelo**.
 - Ingxelo inxulunyaniswa nomsonto wencoko kunye nomyalezo othile.
 
-## Imodal yemvume yengxelo
+## Imodal yemvume yengxelo {#feedback-consent-modal}
 
 Xa umsebenzisi ecofa iqhosha likabhontsi-ezantsi, kuvela imodal yemvume ngaphambi kokuba nayiphi na idatha ithunyelwe. Imodal:
 
@@ -26,13 +26,13 @@ Xa umsebenzisi ecofa iqhosha likabhontsi-ezantsi, kuvela imodal yemvume ngaphamb
 
 Akukho ngxelo irekhodwayo de umsebenzisi aqinisekise ngokucacileyo.
 
-## Ibhena yengxelo yesikhuthazo esizenzekelayo
+## Ibhena yengxelo yesikhuthazo esizenzekelayo {#auto-prompt-feedback-banner}
 
 Ekupheleni kwencoko, umncedisi angabonisa **ibhena yengxelo yesikhuthazo esizenzekelayo** — umyalezo ongaphazamisiyo obuza ukuba iseshoni ibiluncedo na.
 
 Le bhena ivela ngokuzenzekelayo ngokusekelwe kubude bencoko kunye neendlela zokuqikelela isiphumo. Idibanisa kwindlela enye yengxelo njengeqhosha likabhontsi-ezantsi. Abasebenzisi bangayivala ibhena ngaphandle kokunika ingxelo.
 
-## Umyalelo we-Slash /report-issue
+## Umyalelo we-Slash /report-issue {#report-issue-slash-command}
 
 Abasebenzisi banokuvula indlela yengxelo ngqo ngokuchwetheza `/report-issue` kwigalelo lencoko. Lo myalelo:
 
@@ -42,7 +42,7 @@ Abasebenzisi banokuvula indlela yengxelo ngqo ngokuchwetheza `/report-issue` kwi
 
 Umyalelo `/report-issue` uyafumaneka kuzo zonke iindlela zencoko (emgceni, iwijethi edadayo, isikrini esipheleleyo).
 
-## Ukuhlelwa koncedo nge-AI
+## Ukuhlelwa koncedo nge-AI {#ai-assisted-triage}
 
 Ingxelo engenisiweyo ithunyelwa kumaleko wokuhlela nge-AI othi:
 

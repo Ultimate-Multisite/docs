@@ -3,17 +3,17 @@ title: Chajè fichye Sunrise pou ekstansyon
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 ajoute yon chajè ekstansyon sunrise pou add-ons ak entegrasyon MU-plugin pèsonalize ki bezwen kouri pandan demaraj sunrise WordPress san modifye fichye `wp-content/sunrise.php` ki jenere a.
 
-## Kilè pou itilize li
+## Kilè pou itilize li {#when-to-use-it}
 
 Sèvi ak yon ekstansyon sunrise lè entegrasyon ou a dwe kouri anvan plugin regilye yo chaje, tankou routaj domèn pèsonalize, jesyon demann espesifik pou host, oswa ajisteman bonè nan demaraj rezo a.
 
 Pou entegrasyon nòmal yo, pito itilize plugin WordPress regilye, MU-plugins, ak hooks Ultimate Multisite ki dokimante yo. Kòd sunrise kouri trè bonè epi li ta dwe rete piti, defansif, epi san depandans.
 
-## Konvansyon pou non fichye
+## Konvansyon pou non fichye {#file-naming-convention}
 
 Kreye yon fichye PHP ki rele `sunrise.php` nan yon repètwa addon ki gen non li kòmanse ak `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Fichye ki koresponn yo chaje nan lòd alfabetik selon chemen addon an.
 
-## Ki kote pou mete fichye a
+## Ki kote pou mete fichye a {#where-to-place-the-file}
 
 Mete fichye a nan repètwa rasin addon ki posede konpòtman sunrise la:
 
@@ -45,7 +45,7 @@ Eskan an rezoud parapò ak `WP_CONTENT_DIR`, pa valè aktyèl `WP_PLUGIN_DIR`. S
 
 Pa modifye fichye `wp-content/sunrise.php` ki jenere a dirèkteman. Chajè a pèmèt kòd pèsonalize pwolonje konpòtman sunrise san fork fichye sunrise debaz Ultimate Multisite enstale epi mete ajou a.
 
-## Hooks ak filtè ki disponib
+## Hooks ak filtè ki disponib {#hooks-and-filters-available}
 
 Fichye sunrise addon yo kouri apre katografi domèn Ultimate Multisite fin chaje epi anvan WordPress lanse `ms_loaded`. Nan pwen sa a, yon fichye sunrise kapab:
 
@@ -58,7 +58,7 @@ Ultimate Multisite lanse `wu_sunrise_loaded` apre chajè sunrise li a fini. Sèv
 
 Sèlman rele fonksyon ki deja chaje nan faz sunrise la. Evite travay ki lou pou baz done, rann modèl, demann HTTP, ak kòd ki sipoze lòd chajman plugin nòmal la fin fèt.
 
-## Egzanp minimòm
+## Egzanp minimòm {#minimal-example}
 
 ```php
 <?php

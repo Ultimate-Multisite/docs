@@ -3,7 +3,7 @@ title: Ukurasa wa Account ya Mteja
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ukurasa wa Account wa Mteja Wako (v2)
+# Ukurasa wa Account wa Mteja Wako (v2) {#your-clients-account-page-v2}
 
 _**DOKEZO MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
 
@@ -11,7 +11,7 @@ Wateja wanapojisajili kwenye mpango katika mtandao wako, wanapata ufikiaji wa to
 
 Katika mafunzo haya, tutakuongoza kupitia ukurasa wa Account wa mteja na utaona kile ambacho wateja wako wanaweza kuona na kufanya ndani yake.
 
-## Ukurasa wa Account
+## Ukurasa wa Account {#the-account-page}
 
 Ukurasa wa Account unapatikana kwa kubofya **Account** ndani ya Dashboard ya mteja wako.
 
@@ -27,7 +27,7 @@ Baada ya mteja kubofya hapo, ataona muhtasari wa uanachama wake, anwani ya malip
 
 Wanaweza pia kubadilisha uanachama kwenda mpango mwingine, au kununua kifurushi au huduma nyingine unayotoa. Hebu tuangalie kila sehemu kivyake.
 
-### Muhtasari wa Uanachama Wako:
+### Muhtasari wa Uanachama Wako: {#your-membership-overview}
 
 Kizuizi cha kwanza moja kwa moja chini ya jina la tovuti ya wateja wako kinaonyesha muhtasari wa mpango wao wa sasa na huduma/vifurushi vilivyonunuliwa pamoja nao. Kizuizi pia kinaonyesha nambari ya uanachama, kiasi cha awali kilicholipwa kwa ajili yake, gharama ya mpango na huduma/kifurushi chochote, na mara ngapi walitozwa kwa uanachama huu. Wanaweza pia kuona ikiwa uanachama ni **Hai** , **Umeisha Muda** au **Umeghairiwa**.
 
@@ -43,7 +43,7 @@ Sasa, ikiwa wateja wako watachagua kununua vifurushi au huduma kwa ajili ya uana
 
 Kumbuka kwamba misimbo ya kuponi haiwezi kuongezwa kwenye ukurasa huu wa kubadilisha uanachama. Ikiwa mteja alitumia msimbo wa kuponi kwenye ununuzi wa kwanza wa uanachama, msimbo huo pia utatumika kwenye uanachama huu mpya.
 
-### Kusasisha Anwani ya Malipo:
+### Kusasisha Anwani ya Malipo: {#updating-the-billing-address}
 
 Kwenye ukurasa wa Account, wateja wako wanaweza pia kusasisha anwani yao ya malipo. Wanahitaji tu kubofya **Sasisha** karibu na _Anwani ya Malipo_.
 
@@ -53,7 +53,7 @@ Dirisha jipya litaonekana kwa mteja wako. Anachohitaji kufanya ni kujaza anwani 
 
 ![Fomu ya kusasisha anwani ya malipo](/img/account-page/billing-address-form.png)
 
-### Kubadilisha Kiolezo cha Tovuti:
+### Kubadilisha Kiolezo cha Tovuti: {#changing-the-site-template}
 
 Ili kuwaruhusu wateja wako kubadilisha violezo vya tovuti zao, unahitaji kwenda kwenye **Ultimate Multisite > Mipangilio > Tovuti** na kuwasha chaguo **Ruhusu Kubadilisha Kiolezo**.
 
@@ -81,7 +81,7 @@ Baada ya kuwasha uthibitisho na kubofya **Chakata Ubadilishaji** , kiolezo kipya
 
 Wateja pia wanaweza kutumia **Weka upya kiolezo cha sasa** kutoka kwenye paneli hii wanapohitaji kuweka tovuti upya kurudi kwenye kiolezo kilichokabidhiwa kwa sasa. Kama kubadili kwenda kwenye kiolezo kingine, kuweka upya kiolezo kunaweza kuandika upya maudhui ya tovuti, kwa hivyo wateja wanapaswa kuthibitisha tu wanapoelewa kitendo cha kuweka upya.
 
-### Kuongeza Vikoa Maalum:
+### Kuongeza Vikoa Maalum: {#adding-custom-domains}
 
 Wateja wako pia watakuwa na chaguo la kuongeza kikoa maalum kwa mpango huu kwenye ukurasa wao wa Account. Ili kuwaruhusu wateja wako kutumia vikoa maalum, nenda kwenye **Ultimate Multisite > Mipangilio >** **Ulinganishaji wa Vikoa**.
 
@@ -115,7 +115,7 @@ Baada ya kubofya **Hatua Inayofuata** , wateja wako wanaweza kuongeza jina la ki
 
 Baada ya kubofya **Ongeza Kikoa** , kikoa kitaongezwa kwenye Account ya mteja wako. Wanachohitaji kufanya sasa ni kubadilisha rekodi za DNS za kikoa hiki maalum kwa msajili wao wa vikoa.
 
-### Kubadilisha Nenosiri:
+### Kubadilisha Nenosiri: {#changing-password}
 
 Ndani ya Dashboard ya Account, wateja wako pia wanaweza kubadilisha nenosiri lao kwa kubofya **Badilisha Nenosiri**.
 
@@ -125,7 +125,7 @@ Hii itaonyesha dirisha jipya ambapo wateja wako watahitaji kujaza nenosiri lao l
 
 ![Fomu ya kubadilisha nenosiri yenye sehemu za nenosiri la sasa na jipya](/img/account-page/change-password-form.png)
 
-### Eneo la Hatari:
+### Eneo la Hatari: {#danger-zone}
 
 Pia tuna chaguo mbili zinazoonyeshwa kwenye sehemu ya **Eneo la Hatari**: **Futa Tovuti** na **Futa Account**. Zote ziko kwenye sehemu ya Eneo la Hatari kwa sababu vitendo hivi viwili haviwezi kutenduliwa. Ikiwa wateja wako watafuta tovuti yao au Account yao, hawawezi kuzirejesha.
 

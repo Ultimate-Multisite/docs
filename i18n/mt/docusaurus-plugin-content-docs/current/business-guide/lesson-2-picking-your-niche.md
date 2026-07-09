@@ -3,19 +3,19 @@ title: 'Lezzjoni 2: Tagħżel in-Niċċa Tiegħek'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lezzjoni 2: Tagħżel in-Niċċa Tiegħek
+# Lezzjoni 2: Tagħżel in-Niċċa Tiegħek {#lesson-2-picking-your-niche}
 
 F’Lezzjoni 1 stabbilixxejna għaliex niċċa tegħleb soluzzjoni ġenerika. Issa trid tagħżel tiegħek. Din il-lezzjoni tagħtik qafas biex issib u tivvalida niċċa qabel tinvesti ħin tibni għaliha.
 
-## Fejn Ħallejna
+## Fejn Ħallejna {#where-we-left-off}
 
 Iddefinixxejna l-kunċett ta’ FitSite: pjattaforma ta’ websajts għal studios tal-fitness. Imma kif wasalna speċifikament għal studios tal-fitness? Din il-lezzjoni tgħaddik mill-proċess sabiex tkun tista’ tapplikah biex issib in-niċċa tiegħek.
 
-## It-Tliet Kriterji
+## It-Tliet Kriterji {#the-three-criteria}
 
 Niċċa tajba għal pjattaforma ta’ websajts tissodisfa tliet kundizzjonijiet:
 
-### 1. Jeħtieġu Websajts iżda Jsibuha Diffiċli Jiksbu Tajbin
+### 1. Jeħtieġu Websajts iżda Jsibuha Diffiċli Jiksbu Tajbin {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Fittex industriji fejn:
 
@@ -26,7 +26,7 @@ Fittex industriji fejn:
 
 **Studios tal-fitness jaqblu**: il-membri jistennew li jsibu skedi tal-klassijiet, prezzijiet, u booking online. Il-biċċa l-kbira tal-websajts tal-istudios huma antikwati jew mibnija fuq mudelli ġeneriċi li ma jaqdux l-iskop.
 
-### 2. In-Negozji Jistgħu Jaffordjaw Abbonament ta’ Kull Xahar
+### 2. In-Negozji Jistgħu Jaffordjaw Abbonament ta’ Kull Xahar {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Il-klijenti fil-mira tiegħek jeħtieġ li jkunu:
 
@@ -36,7 +36,7 @@ Il-klijenti fil-mira tiegħek jeħtieġ li jkunu:
 
 **Studios tal-fitness jaqblu**: diġà jħallsu għal software tal-booking, ipproċessar tal-ħlasijiet, u għodod tal-marketing. Abbonament għal websajt huwa żieda naturali.
 
-### 3. Jitkellmu ma’ Xulxin
+### 3. Jitkellmu ma’ Xulxin {#3-they-talk-to-each-other}
 
 L-aħjar niċeċ għandhom:
 
@@ -46,9 +46,9 @@ L-aħjar niċeċ għandhom:
 
 **Studios tal-fitness jaqblu**: is-sidien tal-istudios jattendu avvenimenti tal-industrija tal-fitness, jipparteċipaw f’komunitajiet online, u spiss jaqsmu għodod u servizzi ma’ sħabhom.
 
-## Kif Issib Kandidati għal Niċċa
+## Kif Issib Kandidati għal Niċċa {#how-to-find-niche-candidates}
 
-### Ibda b’Dak li Taf
+### Ibda b’Dak li Taf {#start-with-what-you-know}
 
 L-esperjenza eżistenti tiegħek hija vantaġġ. Ikkunsidra:
 
@@ -56,7 +56,7 @@ L-esperjenza eżistenti tiegħek hija vantaġġ. Ikkunsidra:
 - Passatempi jew interessi fejn tifhem il-komunità
 - Netwerks professjonali li diġà tagħmel parti minnhom
 
-### Fittex Sinjali ta’ Uġigħ
+### Fittex Sinjali ta’ Uġigħ {#look-for-pain-signals}
 
 Fittex evidenza li negozji f’niċċa jsibuha diffiċli bil-websajts:
 
@@ -65,7 +65,7 @@ Fittex evidenza li negozji f’niċċa jsibuha diffiċli bil-websajts:
 - Ħares lejn websajts attwali fin-niċċa -- il-biċċa l-kbira minnhom huma fqar?
 - Iċċekkja jekk jeżistux kompetituri u kemm jaqdu tajjeb is-suq
 
-### Evalwa l-Ekonomija
+### Evalwa l-Ekonomija {#evaluate-the-economics}
 
 Għal kull niċċa kandidata, stima:
 
@@ -73,11 +73,11 @@ Għal kull niċċa kandidata, stima:
 - **Rieda li jħallsu**: X’jonfqu bħalissa fuq għodod simili?
 - **Potenzjal ta’ valur tul il-ħajja**: Dawn in-negozji huma stabbli, jew jitilqu malajr?
 
-## Tivvalida n-Niċċa Tiegħek
+## Tivvalida n-Niċċa Tiegħek {#validating-your-niche}
 
 Qabel tibni xi ħaġa, ivvalida d-domanda:
 
-### Tkellem ma’ Klijenti Potenzjali
+### Tkellem ma’ Klijenti Potenzjali {#talk-to-potential-customers}
 
 Ikkuntattja 10-15-il sid ta’ negozju fin-niċċa fil-mira tiegħek. Staqsi:
 
@@ -88,17 +88,17 @@ Ikkuntattja 10-15-il sid ta’ negozju fin-niċċa fil-mira tiegħek. Staqsi:
 
 Għadek mhux qed tbigħ. Qed tisma’.
 
-### Iċċekkja x-Xenarju tal-Kompetituri
+### Iċċekkja x-Xenarju tal-Kompetituri {#check-competitor-landscape}
 
 - **L-ebda kompetitur**: Jista’ jfisser li m’hemmx domanda, jew jista’ jfisser opportunità mhux sfruttata. Konverżazzjonijiet mal-klijenti jgħidulek liema waħda.
 - **Ftit kompetituri**: Sinjal tajjeb. Jivvalida d-domanda. Studja x’jagħmlu tajjeb u fejn jonqsu.
 - **Ħafna kompetituri**: Aktar diffiċli tidħol, iżda xorta possibbli jekk tista’ tiddifferenzja ruħek b’mod ċar.
 
-### Ibni Landing Page
+### Ibni Landing Page {#build-a-landing-page}
 
 Qabel tibni l-pjattaforma, oħloq landing page sempliċi li tiddeskrivi s-soluzzjoni tiegħek għan-niċċa u iġbor reġistrazzjonijiet bl-email. Mexxi ammont żgħir ta’ reklamar immirat biex tittestja l-interess. Jekk in-nies jirreġistraw, għandek validazzjoni.
 
-## Kif Napplikaw Dan għal FitSite
+## Kif Napplikaw Dan għal FitSite {#applying-this-to-fitsite}
 
 Hawn kif FitSite ġie evalwat skont il-kriterji:
 
@@ -112,7 +112,7 @@ Hawn kif FitSite ġie evalwat skont il-kriterji:
 
 Il-validazzjoni kkonfermat l-opportunità. Issa nibnu.
 
-## Ideat ta’ Niċeċ x’Tikkunsidra
+## Ideat ta’ Niċeċ x’Tikkunsidra {#niche-ideas-to-consider}
 
 Jekk il-fitness mhuwiex is-suq tiegħek, hawn niċeċ oħra li jissodisfaw il-kriterji:
 
@@ -127,7 +127,7 @@ Jekk il-fitness mhuwiex is-suq tiegħek, hawn niċeċ oħra li jissodisfaw il-kr
 
 Kull waħda minn dawn għandha l-istess karatteristiċi: ħtiġijiet ċari ta’ websajt, kapaċità li jħallsu, u rakkomandazzjonijiet bil-fomm fil-komunità.
 
-## X’Bnejna f’Din il-Lezzjoni
+## X’Bnejna f’Din il-Lezzjoni {#what-we-built-this-lesson}
 
 - **Qafas għall-għażla ta’ niċċa**: tliet kriterji biex tevalwa kwalunkwe niċċa
 - **Metodi ta’ validazzjoni**: konverżazzjonijiet mal-klijenti, analiżi tal-kompetituri, ittestjar ta’ landing page

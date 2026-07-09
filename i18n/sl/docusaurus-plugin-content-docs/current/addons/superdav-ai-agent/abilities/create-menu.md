@@ -3,15 +3,15 @@ title: Ustvari meni
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Ustvari meni
+# Ustvari meni {#create-menu}
 
 Zmožnost **Ustvari meni** ustvari navigacijske menije WordPress s podporo za ločene navigacijske oznake, ki se razlikujejo od naslovov strani.
 
-## Pregled
+## Pregled {#overview}
 
 Ta zmožnost razširi standardno funkcionalnost ustvarjanja menijev z možnostjo določitve parametra `navigation_label`. To vam omogoča ustvarjanje menijev, pri katerih se oznaka, prikazana v navigaciji, razlikuje od naslova strani, kar zagotavlja več prilagodljivosti pri strukturi spletnega mesta in uporabniški izkušnji.
 
-## Parametri
+## Parametri {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Ta zmožnost razširi standardno funkcionalnost ustvarjanja menijev z možnostjo
 | `location` | string | No | Lokacija theme, ki ji želite dodeliti ta meni, npr. `primary` |
 | `navigation_label` | string | No | Oznaka za prikaz v navigaciji (ločena od naslova strani) |
 
-## Vrnjena vrednost
+## Vrnjena vrednost {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Ta zmožnost razširi standardno funkcionalnost ustvarjanja menijev z možnostjo
 }
 ```
 
-## Navigacijska oznaka v primerjavi z naslovom strani
+## Navigacijska oznaka v primerjavi z naslovom strani {#navigation-label-vs-page-title}
 
 Parameter `navigation_label` vam omogoča ločiti interno ime menija od oznake, prikazane uporabnikom:
 
@@ -43,9 +43,9 @@ To je uporabno, kadar:
 - Morate podpirati več jezikov z različnimi dolžinami oznak
 - Gradite menije za določene regije ali skupine uporabnikov
 
-## Primeri uporabe
+## Primeri uporabe {#usage-examples}
 
-### Primer 1: Preprost meni z navigacijsko oznako
+### Primer 1: Preprost meni z navigacijsko oznako {#example-1-simple-menu-with-navigation-label}
 
 **Poziv:**
 ```
@@ -62,7 +62,7 @@ Ustvari primarni navigacijski meni z imenom »Glavna navigacija« z navigacijsko
 }
 ```
 
-### Primer 2: Meni za določeno lokacijo Theme
+### Primer 2: Meni za določeno lokacijo Theme {#example-2-menu-for-specific-theme-location}
 
 **Poziv:**
 ```
@@ -80,7 +80,7 @@ Ustvari meni noge z imenom »Povezave v nogi« z navigacijsko oznako »Hitre pov
 }
 ```
 
-## Integracija s Theme Builder
+## Integracija s Theme Builder {#integration-with-theme-builder}
 
 Pri uporabi Theme Builder zmožnost Ustvari meni:
 
@@ -89,13 +89,13 @@ Pri uporabi Theme Builder zmožnost Ustvari meni:
 3. Dodeli menije pravilnim lokacijam theme
 4. Podpira dodajanje elementov menija po ustvarjanju
 
-## Sorodne zmožnosti
+## Sorodne zmožnosti {#related-abilities}
 
 - **`add_menu_item`** — Dodajte elemente v obstoječi meni
 - **`update_menu`** — Preimenujte meni ali ga znova dodelite lokaciji theme
 - **`delete_menu`** — Odstranite meni s svojega spletnega mesta
 
-## Najboljše prakse
+## Najboljše prakse {#best-practices}
 
 - **Uporabljajte jasne navigacijske oznake** — oznake naj bodo jedrnate in opisne za uporabnike
 - **Uskladite lokacije theme** — dodelite menije pravilni lokaciji theme za pravilen prikaz
@@ -103,14 +103,14 @@ Pri uporabi Theme Builder zmožnost Ustvari meni:
 - **Preizkusite odzivnost** — preverite, ali se meniji pravilno prikazujejo na mobilnih napravah
 - **Lokalizirajte oznake** — uporabite različne navigacijske oznake za različne jezikovne različice
 
-## Omejitve
+## Omejitve {#limitations}
 
 - Navigacijske oznake so namenjene samo prikazu; interno `name` se še vedno uporablja za identifikacijo WordPress
 - Podpora theme se razlikuje; vse theme ne podpirajo vseh lokacij menijev
 - Elemente menija je treba po ustvarjanju menija dodati ločeno
 - Sprememba navigacijske oznake zahteva posodobitev menija
 
-## Sorodne zmožnosti
+## Sorodne zmožnosti {#related-abilities-1}
 
 - [Ustvari logotip SVG](./generate-logo-svg.md) — ustvarite logotipe za glavo svojega spletnega mesta
 - [Preveri kontrast palete](./validate-palette-contrast.md) — zagotovite dostopne barvne sheme

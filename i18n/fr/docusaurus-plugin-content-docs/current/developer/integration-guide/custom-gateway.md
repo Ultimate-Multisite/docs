@@ -3,11 +3,11 @@ title: Développement de passerelle personnalisée
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Développement de passerelle personnalisée
+# Développement de passerelle personnalisée {#custom-gateway-development}
 
 Vous pouvez créer des passerelles de paiement personnalisées en étendant la classe `Base_Gateway`.
 
-## Classe de passerelle
+## Classe de passerelle {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Enregistrer la passerelle
+## Enregistrer la passerelle {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Méthodes clés
+## Méthodes clés {#key-methods}
 
 | Méthode | Objectif |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Gérer les demandes de remboursement |
 | `get_payment_methods()` | Renvoyer les méthodes de paiement enregistrées pour un client |
 
-## Identifiants de renouvellement pour les memberships récurrents
+## Identifiants de renouvellement pour les memberships récurrents {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 permet aux intégrations de passerelle d’indiquer si un membership récurrent dispose d’un identifiant de renouvellement réutilisable avant que `auto_renew` ne soit persisté. Accrochez `wu_membership_has_renewal_credential` et renvoyez :
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Effacez le marqueur d’identifiant manquant dans le cadre du flux de réautorisation réussi de votre passerelle après l’enregistrement d’un nouvel identifiant réutilisable.
 
-## Conseils
+## Conseils {#tips}
 
 - Renvoyez toujours `WP_Error` en cas d’échec afin qu’Ultimate Multisite puisse gérer l’affichage des erreurs
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Utilisez `wu_log_add()` pour la journalisation spécifique à la passerelle
 
-## Capacités des fournisseurs de connecteurs AI
+## Capacités des fournisseurs de connecteurs AI {#ai-connector-provider-capabilities}
 
 Les intégrations personnalisées qui appellent des opérations adossées à un connecteur AI doivent s’aligner sur l’ensemble de fournisseurs OAuth pris en charge introduit avec AI Provider for Anthropic Max v1.3.0 :
 

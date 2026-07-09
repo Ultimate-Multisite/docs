@@ -3,13 +3,13 @@ title: ڕێبەری یەکگرتن
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ڕێبەری Integration
+# ڕێبەری Integration {#integration-guide}
 
 ئەم ڕێبەرە شێوازە باوەکانی Integration لەگەڵ Ultimate Multisite دەگرێتەوە، لەوانە پەیوەستبوون بە خزمەتگوزارییە دەرەکییەکان، دروستکردنی payment gateway ـی تایبەتمەند، و مامەڵەکردن لەگەڵ webhooks.
 
 بۆ ژێرخانی کرێچیی جیاکراوە، بڕوانە [Integration ـی Multi-Tenancy](./multi-tenancy) بۆ ڕێنمایی bootstrap ـی کرێچیی سەربەخۆ، پشتڕاستکردنەوەی migration، SSO، و teardown.
 
-## Integration ـی CRM
+## Integration ـی CRM {#crm-integration}
 
 داتای کڕیار هاوکات بکە بۆ CRM ـەکەت کاتێک کڕیارانی نوێ خۆیان تۆمار دەکەن:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integration ـی Analytics
+## Integration ـی Analytics {#analytics-integration}
 
 ڕووداوە گرنگەکانی بازرگانی بە درێژایی سووڕی ژیانی کڕیار بەدوادا بچۆ:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## هەنگاوەکانی دواتر
+## هەنگاوەکانی دواتر {#next-steps}
 
 - [پەرەپێدانی Gateway ـی تایبەتمەند](./custom-gateway) — payment gateway ـی خۆت دروست بکە
 - [مامەڵەکردن لەگەڵ Webhook](./webhooks) — endpoint ـی webhook ـی تایبەتمەند دروست بکە

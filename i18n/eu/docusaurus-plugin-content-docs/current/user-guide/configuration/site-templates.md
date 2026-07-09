@@ -3,13 +3,13 @@ title: Itentzakoa
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTIZIA: Ez artikulu Ultimate Multisite bertsio 2.x-era referentzia egiten du. Bertsio 1.x erabiltzen ari zete,**_ **horri artikuluak egiaitu.**_
 
 Ultimate Multisite eredu txikia network bat emateko objetivoa da, gure kliante-ek website hauek sortzen duen prozesu guztiak posiblean automatikatu eta bere irteesan eta aukerak emate. Horrek erabiliziek ezaugarri bildu behar den aurrera egiteko bat eraginkora da Ultimate Multisite Site Templates funtzionalitatea erabiltzea.
 
-## Zer da Site Template?
+## Zer da Site Template? {#what-is-a-site-template}
 
 Euskal izenaren ondorioz, Site Template hau da boilerplate website bat, zein irudiak network-ek new websites sortzen duen base gisa erabilira da.
 
@@ -17,7 +17,7 @@ Hau hasterako esan nahi du: base website bat ezartu, plugin bereziak aktibatu, t
 
 Horrek amaigindunak da, baina new site template batean nola sortzen dut? Ez dago eredu txiki dena.
 
-## New Site Template sortzea eta aldatzea
+## New Site Template sortzea eta aldatzea {#creating-and-editing-a-new-site-template}
 
 Site Templates hauek network-ek normal websites bat dira. New template bat sortzeko, simplementi **Network Admin > Ultimate Multisite > Sites > Add Site** funtziokoan jarraitu.
 
@@ -35,7 +35,7 @@ Formaren apurte, ikuzteko **Copy Site** (Site kopioatu) lehen dezakekin. Horrek 
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Site Templatearen kontuintazioa
+### Site Templatearen kontuintazioa {#customizing-the-contents-of-a-site-template}
 
 Site template bat erregi nahi duzu? Berria sitiatu, testierak (posts), lapenak (pages) ezartu, pluginak aktibatu edo tema (theme) aldatu dezakezu. Bestatik, Customizerra joan eta guztiz aukera hauek aldatu dezakezu.
 
@@ -43,11 +43,11 @@ Site template bat erregi nahi duzu? Berria sitiatu, testierak (posts), lapenak (
 
 Horren datuak kopiatzen dira, erabiltzaile bat Site Template hori basan berria site bat erregitu duenean.
 
-### Opciones advancedak (Advanced Options)
+### Opciones advancedak (Advanced Options) {#advanced-options}
 
 Ez jakin dugu kodifikazio batzuk? Horrek gure Search and Replace API-a erabiliziek, berria sitiatuaren datuak automatikoki aldatzeko aukera dut. Horren aldeko, "About" laperean inperazioa aldatzea edo Contact laperean emaila aldatzea bezala da, oso lana egiten du.
 
-### Site Templateak erabiliziek (Using Site Templates)
+### Site Templateak erabiliziek (Using Site Templates) {#using-site-templates}
 
 Ok, asko site template batzuk ezartu duzu, diseinazio eta tema (themes) onditu berekin. Orain, horiek network-an zer egin dezakezu?
 
@@ -59,7 +59,7 @@ Ezin daiteko, orain bi aukera dut:
 
   * Klientzak berria erregitu den bitartean site templateak berehala aukeratu dezaten.
 
-#### Modu 1: Site Template ezartzea
+#### Modu 1: Site Template ezartzea {#mode-1-assign-site-template}
 
 Hau moduaren, clientak ez duzun leku template bat ematen dutenean, baina siz handiagoen Plan baten artean zehaztu behar duzu zerbait template bat erabiltzea.
 
@@ -71,7 +71,7 @@ Hau daite duzu **Edit Product** lapera. **Product Options** (Produktako Opsioak)
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Modu 2: Site Template Bat Erabatu
+#### Modu 2: Site Template Bat Erabatu {#mode-2-choose-available-site-template}
 
 Hau moduaren ondorioz, clientak kontu laitzen duen prozesuan erabaki bat ematen duzu. Produktu zehaztasunetan (product settings) zehaztu duzun template hauek batetik erabil dezatat. Irabazten dituzke produktu zehatzat erabiliko template-ak ezarritzea. Horrek, produktu bati template-ak garrantzitsuak eta funtzioak onartzeko, espezialitateko batekin erabiltzea ideal da.
 
@@ -79,7 +79,7 @@ Produktua **Edit Product** (Produktu Editatuaren) lapianan. **Product Options** 
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form (Checkout formularioan site platentia aukera)
+### Default Mode: Site template selection on the Checkout form (Checkout formularioan site platentia aukera) {#default-mode-site-template-selection-on-the-checkout-form}
 
 Gaur egun, registration (registratzeko prozesuaren) guztietako site platentiak aipatuta jakin nahi duzu, edo produktu guztietan site platentia emateko edo espezifikatzeko ez dutela ez duzu. Horrek egin dezakezu **Checkout Form** (Checkout Formua) lekuan site platentia aukera egitea. Horrek egin dezakezu **Ultimate Multisite > Checkout Forms** (Ultimate Multisite > Checkout Formak) lailana joan eta konfiguratzea nahi duzu formularioaren ondoreko **Edit** (Editatu) klikuatu.
 
@@ -93,29 +93,29 @@ Frontend (web-frontendan), kliantzak checkout (pagintian txartzea) prozesuaren a
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Saila-modelo (Site Template) Opzioak
+### Saila-modelo (Site Template) Opzioak {#site-template-options}
 
 Ultimate Multisite sailketa funktionen da dago, zein iraupizkoan onartu edo ez onartu dezakezu ditu Ultimate Multisite sailketa eskaintzen diren kontsekuentziaren ondorioz.
 
 ![Saila-modelo opzioak Ultimate Multisite sailketa eskaintzen diren kontsekuentziaren konfiguratzean](/img/config/settings-sites-templates-section.png)
 
-#### Sailketa Aldatzeko Onartzea (Allow Template Switching)
+#### Sailketa Aldatzeko Onartzea (Allow Template Switching) {#allow-template-switching}
 
 Hau opsioa onartzea, client-ek kontu eta sailketa sortutakoan, inscrepszio prosesoaren aurrean aukeratutako sailketu aldatzeko aukera izango da. Horrek client-en parte batetik garrantzitsu da, koska horrek geroago jakiteko iragatik, jendeak bere aukeraren ez izan zen beste beharrakari eta erabilgarri dela bide onartzea leku ematen du.
 
-#### Erabiltzeko Sailketak Kontu Bilduen Bizitzeko Onartzea (Allow Users to use their Site as templates)
+#### Erabiltzeko Sailketak Kontu Bilduen Bizitzeko Onartzea (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Subsite kontsenzian jendeak bere sailketa sortzeko eta diseinatzeko ez dute guztiz ezarritzen, baina hori daiteke klona izate eta network-an beste subsite bat sortutakoan Sailketak eskaintzen diren sailketu bat gisa erabilera. Hau opsioak ematen du horrek konponbidearen espezifikazioa ematea.
 
-#### Sailketa Duplikatzean Media Kopiatzea (Copy Media on Template Duplication)
+#### Sailketa Duplikatzean Media Kopiatzea (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Hau opsioa kontzatzea, template sailketan uloratu media-k sortutako sailketa berri sortutako sailketa zuzenean kopiatzen da. Hau lekuen guztietan onartu dezake duzu.
 
-#### **Sailketak Erresortzailurik Indikatzeko Ez Onartzea (Prevent Search Engines from indexing Site Templates)**
+#### **Sailketak Erresortzailurik Indikatzeko Ez Onartzea (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Hau artikuluaren ondorioz ezagututako sailketak boilerplate bat dela, baina network-aren parte da, zeitu indizazioa bilatzen duen irudiari leku dago. Hau opsioak ematen du Sailketak horretatik gizotzeko aukera, gaur egun indizazioa bilatzen duen irudien erresortzailu dezake.
 
-## Sailketak Auto-bildu eta Erresortzailua (auto search-and-replace) Bidez Pre-populating
+## Sailketak Auto-bildu eta Erresortzailua (auto search-and-replace) Bidez Pre-populating {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Ultimate Multisite-aren batzaren osoa da irtaileak (registration form) arlingabean testu, kolor eta aukera egin behar diren lekuak gehiago ezarritzea. Horrek datua hartuta gabeuta duenean, denbora eratu dituen web template-en bestelako parteetan kontuentua aurretik emateko irudiari jartzen dugu. Horrek, leku berri web sailkioa publiko egiten diren bitartean, Ultimate Multisite-ak horiek placeholder-ek (lekuak) erabat datuaren eskatutako informazioarekin aldatzen dira.
 
@@ -135,7 +135,7 @@ Ultimate Multisite-ak horiek placeholder-ek erabat datuaren taldearen emateko da
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### "placeholder-ek ematuta template" problemetua iradokizuna
+### "placeholder-ek ematuta template" problemetua iradokizuna {#solving-the-template-full-of-placeholders-problem}
 
 Hau guztia ondo da, baina ez du garrantzia problema bat erakusten dugu: denbora ahal egon dituen web template-ek - zehatz lekuak hartzen dituztenak - placeholder-ek oso ezdu eta garrantzi eta ez dio.
 

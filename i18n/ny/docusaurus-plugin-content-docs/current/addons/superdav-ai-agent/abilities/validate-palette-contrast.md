@@ -3,15 +3,15 @@ title: Tsimikizani Kusiyana kwa Paleti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Tsimikizani Kusiyana kwa Palette
+# Tsimikizani Kusiyana kwa Palette {#validate-palette-contrast}
 
 Luso la **Validate Palette Contrast** limayang'ana awiri a mitundu mu palette ya kapangidwe kanu kuti liwone ngati likutsatira WCAG (Web Content Accessibility Guidelines) musanaliike ku theme yanu.
 
-## Chidule
+## Chidule {#overview}
 
 Lusoli limatsimikizira kuti dongosolo la mitundu la site yanu likukwaniritsa miyezo ya kupezeka mosavuta poyang'ana ma ratio a kusiyana pakati pa mawu ndi mitundu ya kumbuyo. Limathandiza kupewa kuphatikiza mitundu komwe kungakhale kovuta kuwerenga kwa ogwiritsa ntchito omwe ali ndi vuto la maso.
 
-## Mtundu wa Zolowetsa
+## Mtundu wa Zolowetsa {#input-format}
 
 Lusoli limalandira palette ya mitundu monga cholowetsa:
 
@@ -35,7 +35,7 @@ Lusoli limalandira palette ya mitundu monga cholowetsa:
 }
 ```
 
-### Ma Parameter
+### Ma Parameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Lusoli limalandira palette ya mitundu monga cholowetsa:
 | `wcag_level` | string | No | Mulingo wotsatira WCAG: "A", "AA" (wokhazikika), kapena "AAA" |
 | `pairs_to_check` | array | No | Awiri enieni a mitundu oti atsimikizidwe (mwachitsanzo, `["primary-text", "background-text"]`) |
 
-## Milingo ya WCAG Yoyang'aniridwa
+## Milingo ya WCAG Yoyang'aniridwa {#wcag-levels-checked}
 
 Lusoli limatsimikizira ma ratio a kusiyana molingana ndi miyezo ya WCAG:
 
@@ -56,7 +56,7 @@ Lusoli limatsimikizira ma ratio a kusiyana molingana ndi miyezo ya WCAG:
 - **Mawu Abwinobwino** — mawu ang'ono kuposa 18pt (kapena 14pt bold)
 - **Mawu Aakulu** — mawu a 18pt kapena akulu (kapena 14pt bold kapena akulu)
 
-## Schema ya Zotuluka
+## Schema ya Zotuluka {#output-schema}
 
 Lusoli limabwezera lipoti latsatanetsatane la kutsimikizira:
 
@@ -95,7 +95,7 @@ Lusoli limabwezera lipoti latsatanetsatane la kutsimikizira:
 }
 ```
 
-### Magawo a Zotuluka
+### Magawo a Zotuluka {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Lusoli limabwezera lipoti latsatanetsatane la kutsimikizira:
 | `status` | string | "pass" kapena "fail" kwa awiri aliwonse |
 | `recommendations` | array | Malingaliro okonza awiri omwe akulephera |
 
-## Chitsanzo cha Kugwiritsa Ntchito
+## Chitsanzo cha Kugwiritsa Ntchito {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Lusoli limatsimikizira kuphatikiza konse kwa mitundu ndipo limabwezera:
 - ✅ Kumbuyo + Mawu: ratio ya 12.1:1 (ikupambana WCAG AAA)
 - Zonse pamodzi: Ikutsatira WCAG AA
 
-## Kulumikizana ndi Theme Builder
+## Kulumikizana ndi Theme Builder {#integration-with-theme-builder}
 
 Mukamagwiritsa ntchito kusankha njira ya kapangidwe mu Theme Builder, luso la Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Mukamagwiritsa ntchito kusankha njira ya kapangidwe mu Theme Builder, luso la Va
 4. Limapereka malingaliro kwa awiri omwe satsatira miyezo
 5. Limalepheretsa kuyika madongosolo a mitundu omwe sapezeka mosavuta
 
-## Njira Zabwino
+## Njira Zabwino {#best-practices}
 
 - **Yambani ndi mulingo wa AA** — WCAG AA ndi muyezo wa ma website ambiri
 - **Yesani musanayike** — tsimikizirani palette yanu musanadzipereke ku kapangidwe
@@ -137,7 +137,7 @@ Mukamagwiritsa ntchito kusankha njira ya kapangidwe mu Theme Builder, luso la Va
 - **Ganizirani zokonda za ogwiritsa ntchito** — ogwiritsa ntchito ena angakhale ndi kumva kwambiri mitundu
 - **Gwiritsani ntchito zida zoyang'anira kusiyana** — phatikizani lusoli ndi zida za browser kuti mutsimikizire
 
-## Awiri Olephera ndi Malingaliro
+## Awiri Olephera ndi Malingaliro {#failing-pairs-and-recommendations}
 
 Ngati awiri a mitundu alephera kutsimikizidwa, lusoli limapereka malingaliro:
 
@@ -155,7 +155,7 @@ Ngati awiri a mitundu alephera kutsimikizidwa, lusoli limapereka malingaliro:
 }
 ```
 
-## Maluso Ofanana
+## Maluso Ofanana {#related-abilities}
 
 - [Pangani Logo SVG](./generate-logo-svg.md) — pangani ma logo ndi palette yanu ya mitundu yomwe yatsimikizidwa
 - [Pangani Menu](./create-menu.md) — pangani navigation yokhala ndi mitundu yopezeka mosavuta

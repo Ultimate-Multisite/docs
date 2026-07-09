@@ -3,7 +3,7 @@ title: Domain-Verkeefer Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Ännerungsprotokoll
+# Domain Seller Ännerungsprotokoll {#domain-seller-changelog}
 
 Versioun 1.3.0 - Verëffentlecht den 2026-06-02
 - Nei: Eng Warnung am Netzwierk-Admin bäigesat, wann de HostAfrica Reseller-Saldo ze niddereg gëtt
@@ -134,20 +134,20 @@ Versioun 1.0.0 - Verëffentlecht den 2025-09-28
 * **Behuewen:** All ofgeschaaften v1-Code op v2-Standarden aktualiséiert
 * **Ewechgeholl:** Legacy-v1-Kompatibilitéit (breaking change)
 
-### Vireg Versiounen (v1 Legacy)
+### Vireg Versiounen (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Versioun 0.0.3 - 20/08/2019
+### Versioun 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Behuewen: Inkompatibilitéit mat Groundhogg CRM
 * Notiz: Dëst war déi lescht v1-kompatibel Verëffentlechung
 
-### Versioun 0.0.2 - 07/12/2018
+### Versioun 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Behuewen: License Key-Feld ewechgeholl
 * Behuewen: Plan-Tabs feelen, wann de Feature-Plugin aktiv ass
 * Verbessert: Skip-Knäppchen um Registréierungsfeld derbäigesat
 
-### Versioun 0.0.1 - Éischt Verëffentlechung
+### Versioun 0.0.1 - Éischt Verëffentlechung {#version-001---initial-release}
 
 * Basis-OpenSRS-Integratioun fir WP Ultimo v1
 * Einfach Domain-Sich a Registréierung

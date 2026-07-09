@@ -4,22 +4,22 @@ title: 'Radnja - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Omogućuje programerima plugina dodavanje dodatnih hookova na određenu stranicu.
 
 Upotreba: Dinamički dio treba zamijeniti valjanim ID-jem stranice, npr. add_action('wu_page_events_load', 'callback_with_aditional_hook', 10, 2);
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Vrsta | Opis |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | ID ove stranice. |
 | $page_hook | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Hook generiran za ovu stranicu. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 1.8.2
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L301) u retku 301

@@ -3,13 +3,13 @@ title: Giya sa Integrasyon
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Giya sa Integration
+# Giya sa Integration {#integration-guide}
 
 Kini nga giya naglangkob sa kasagarang mga pattern sa integration uban sa Ultimate Multisite, lakip ang pagkonektar sa gawas nga mga serbisyo, paghimo og custom nga mga payment gateway, ug pagdumala sa mga webhook.
 
 Para sa gilain nga imprastraktura sa tenant, tan-awa ang [Multi-Tenancy Integration](./multi-tenancy) para sa sovereign tenant bootstrap, beripikasyon sa migration, SSO, ug giya sa teardown.
 
-## CRM Integration
+## CRM Integration {#crm-integration}
 
 I-sync ang datos sa customer ngadto sa imong CRM kon mag-sign up ang bag-ong mga customer:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics Integration
+## Analytics Integration {#analytics-integration}
 
 I-track ang importanteng mga panghitabo sa negosyo sa tibuok lifecycle sa customer:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Sunod nga mga Lakang
+## Sunod nga mga Lakang {#next-steps}
 
 - [Pagpalambo sa Custom Gateway](./custom-gateway) — Paghimo og imong kaugalingong payment gateway
 - [Pagdumala sa Webhook](./webhooks) — Paghimo og custom nga mga webhook endpoint

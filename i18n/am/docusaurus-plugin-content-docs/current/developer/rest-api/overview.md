@@ -3,28 +3,28 @@ title: REST API አጠቃላይ እይታ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ማጣቀሻ
+# REST API ማጣቀሻ {#rest-api-reference}
 
-## መሠረታዊ ውቅር
+## መሠረታዊ ውቅር {#base-configuration}
 
 **መሠረታዊ URL:** `{site_url}/wp-json/wu/v2/`
 **ማረጋገጫ:** API ቁልፍ እና ምስጢር (HTTP Basic Auth ወይም URL መለኪያዎች)
 
-## ማረጋገጫ
+## ማረጋገጫ {#authentication}
 
-### API አንቃ
+### API አንቃ {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ማረጋገጫ መረጃዎችን ያግኙ
+### API ማረጋገጫ መረጃዎችን ያግኙ {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### የማረጋገጫ ዘዴዎች
+### የማረጋገጫ ዘዴዎች {#authentication-methods}
 
 **HTTP Basic Auth (የሚመከር):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ዋና መጨረሻ ነጥቦች
+## ዋና መጨረሻ ነጥቦች {#core-endpoints}
 
-### 1. ደንበኞች API
+### 1. ደንበኞች API {#1-customers-api}
 
 **መሠረታዊ መንገድ:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. ጣቢያዎች API
+### 2. ጣቢያዎች API {#2-sites-api}
 
 **መሠረታዊ መንገድ:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. አባልነቶች API
+### 3. አባልነቶች API {#3-memberships-api}
 
 **መሠረታዊ መንገድ:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. ምርቶች API
+### 4. ምርቶች API {#4-products-api}
 
 **መሠረታዊ መንገድ:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. ክፍያዎች API
+### 5. ክፍያዎች API {#5-payments-api}
 
 **መሠረታዊ መንገድ:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ዶሜይኖች API
+### 6. ዶሜይኖች API {#6-domains-api}
 
 **መሠረታዊ መንገድ:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## የምዝገባ መጨረሻ ነጥብ
+## የምዝገባ መጨረሻ ነጥብ {#registration-endpoint}
 
 የ`/register` መጨረሻ ነጥብ ሙሉ የcheckout/ምዝገባ ፍሰት ያቀርባል፦
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## የሉዓላዊ ተከራይ መጨረሻ ነጥቦች
+## የሉዓላዊ ተከራይ መጨረሻ ነጥቦች {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: ብዙ-ተከራይነት 1.2.0 የተነጠሉ ተከራዮችን ለሚያዘጋጁ፣ ለሚመረምሩ ወይም ለሚያረጋግጡ ውህደቶች የሉዓላዊ ተከራይ REST ሽፋን ይጨምራል።
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false`ን ከመጀመር በፊት እንቅፋት አድርገው ይቁጠሩት። የማረጋገጫ ዝርዝሮቹን ይመልከቱ፣ የዳታቤዝ አስተናጋጅ ማሰሪያ፣ ወረፋ፣ የተጠቃሚ ማዘጋጀት ወይም የመስመር ችግኝን ያስተካክሉ፣ ከዚያ ማረጋገጫውን እንደገና ይሞክሩ።
 
-## የስህተት ምላሾች
+## የስህተት ምላሾች {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## ገጽ ማድረግ እና ማጣራት
+## ገጽ ማድረግ እና ማጣራት {#pagination-and-filtering}
 
 **የጥያቄ መለኪያዎች:**
 ```http

@@ -4,11 +4,11 @@ title: فیلتر - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 نام زیبا برای زیرتقسیمات اداری کشور را برمی‌گرداند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | اگر می‌خواهیم کلمات را بزرگ‌حرف (uppercase) کنیم. |
 | $current_country | `\WP_Ultimo\Country\Country` | نمونه از کلاس فعلی. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.11
-### منبع
+### منبع {#source}
 
 در [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) در خط ۲۵۰ تعریف شده است.
 
 
-## مقدار بازگشتی
+## مقدار بازگشتی {#returns}
 نام تقسیمات اصلاح شده.

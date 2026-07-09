@@ -3,9 +3,9 @@ title: Mailster चेंजलॉग
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster परिवर्तन लॉग
+# Mailster परिवर्तन लॉग {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * पहली रिलीज़
 * साइनअप या भुगतान पर स्वचालित सब्सक्राइबर सिंक
 * उत्पाद-विशिष्ट सूची असाइनमेंट

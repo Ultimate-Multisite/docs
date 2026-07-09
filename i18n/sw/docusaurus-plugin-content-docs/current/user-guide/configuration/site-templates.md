@@ -3,13 +3,13 @@ title: Violezo vya Tovuti
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Violezo vya Tovuti (v2)
+# Violezo vya Tovuti (v2) {#site-templates-v2}
 
 _**KUMBUKA: Makala hii inahusu Ultimate Multisite toleo la 2.x. Ikiwa unatumia toleo la 1.x,**_ **tazama makala hii** _**.**_
 
 Lengo letu tunapounda mtandao wa kulipia kwa Ultimate Multisite ni kuendesha kiotomatiki michakato mingi iwezekanavyo huku tukiwapa wateja wetu unyumbufu na chaguo tofauti za kuchagua wanapounda tovuti zao. Njia moja rahisi ya kufikia uwiano huu ni kutumia kipengele cha Violezo vya Tovuti cha Ultimate Multisite.
 
-## Kiolezo cha Tovuti ni nini?
+## Kiolezo cha Tovuti ni nini? {#what-is-a-site-template}
 
 Kama jina linavyopendekeza, Kiolezo cha Tovuti ni tovuti ya msingi inayoweza kutumika kama msingi wakati wa kuunda tovuti mpya kwenye mtandao wako.
 
@@ -17,7 +17,7 @@ Hii inamaanisha unaweza kuunda tovuti ya msingi, kuwezesha plugin tofauti, kuwek
 
 Hilo linasikika vizuri sana, lakini ninawezaje kuunda kiolezo kipya cha tovuti? Ni rahisi kadiri inavyowezekana.
 
-## Kuunda na Kuhariri Kiolezo kipya cha Tovuti
+## Kuunda na Kuhariri Kiolezo kipya cha Tovuti {#creating-and-editing-a-new-site-template}
 
 Violezo vya Tovuti ni tovuti za kawaida tu kwenye mtandao wako. Ili kuunda kiolezo kipya unaweza kwenda tu kwenye **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Chini ya fomu, utaona swichi ya kugeuza ya **Copy Site**. Hii itakuruhusu kuunda
 
 ![Modal ya kuongeza kiolezo cha tovuti yenye swichi ya kugeuza ya kunakili tovuti](/img/config/site-templates-list.png)
 
-### Kubinafsisha maudhui ya Kiolezo cha Tovuti
+### Kubinafsisha maudhui ya Kiolezo cha Tovuti {#customizing-the-contents-of-a-site-template}
 
 Ili kubinafsisha kiolezo chako cha tovuti, nenda tu kwenye paneli yake ya Dashboard na ufanye mabadiliko unayohitaji. Unaweza kuunda machapisho mapya, kurasa, kuwezesha plugin na kubadilisha theme inayotumika. Unaweza hata kwenda kwenye Customizer na kubadilisha aina zote za chaguo za ubinafsishaji.
 
@@ -43,11 +43,11 @@ Ili kubinafsisha kiolezo chako cha tovuti, nenda tu kwenye paneli yake ya Dashbo
 
 Data hiyo yote itanakiliwa wakati mteja anapounda tovuti mpya kulingana na Kiolezo hicho cha Tovuti.
 
-### Chaguo za Kina
+### Chaguo za Kina {#advanced-options}
 
 Ikiwa unajua jinsi ya kushughulika na coding maalum, unaweza kutumia Search and Replace API yetu ili kubadilisha taarifa kiotomatiki kwenye tovuti mpya baada ya kuundwa kwake. Hii ni muhimu kwa mambo kama kubadilisha majina ya kampuni kwenye ukurasa wa About, kubadilisha barua pepe ya mawasiliano kwenye ukurasa wa Contact, n.k.
 
-### Kutumia Violezo vya Tovuti
+### Kutumia Violezo vya Tovuti {#using-site-templates}
 
 Sawa, kwa hiyo umeunda Violezo kadhaa tofauti vya Tovuti vyenye miundo, theme na mipangilio tofauti. Sasa unavifanyaje viwe muhimu kwenye mtandao wako?
 
@@ -59,7 +59,7 @@ Kimsingi, kuna mbinu mbili unazoweza kutumia sasa (si kwa wakati mmoja):
 
   * Kuwaruhusu wateja wako kuchagua violezo vya tovuti wenyewe wakati wa kujisajili.
 
-#### Hali ya 1: Kuweka Kiolezo cha Tovuti
+#### Hali ya 1: Kuweka Kiolezo cha Tovuti {#mode-1-assign-site-template}
 
 Katika hali hii, wateja wako hawataweza kuchagua kiolezo wanapounda Account, bali wewe utafafanua ni kiolezo gani kinapaswa kutumika kwenye kila moja ya Plans zako.
 
@@ -71,7 +71,7 @@ Hii itakupeleka kwenye ukurasa wa **Edit Product**. Chini ya sehemu ya **Product
 
 ![Kichupo cha kiolezo cha tovuti cha bidhaa chenye chaguo la kuweka kiolezo cha tovuti](/img/config/product-site-templates.png)
 
-#### Hali ya 2: Chagua Kiolezo cha Tovuti Kinachopatikana
+#### Hali ya 2: Chagua Kiolezo cha Tovuti Kinachopatikana {#mode-2-choose-available-site-template}
 
 Katika hali hii, utawapa wateja wako chaguo wakati wa mchakato wa kujisajili. Wataweza kuchagua kutoka kwenye violezo tofauti vya tovuti unavyofafanua chini ya mipangilio ya bidhaa. Una chaguo la kuweka kikomo cha kiolezo cha tovuti wanachoweza kuchagua chini ya bidhaa iliyochaguliwa. Hii itakuruhusu kuwa na makundi tofauti ya violezo vya tovuti chini ya kila bidhaa, jambo ambalo ni bora kuangazia kazi na vipengele tofauti kwa bidhaa ya bei ya juu zaidi.
 
@@ -79,7 +79,7 @@ Kwenye ukurasa wa **Edit Product**. Chini ya sehemu ya **Product Options**, tafu
 
 ![Chagua violezo vya tovuti vinavyopatikana vyenye chaguo za tabia](/img/config/product-site-templates.png)
 
-### Hali Chaguomsingi: Uchaguzi wa kiolezo cha Tovuti kwenye fomu ya Checkout
+### Hali Chaguomsingi: Uchaguzi wa kiolezo cha Tovuti kwenye fomu ya Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Ikiwa unataka violezo vyako vyote vya tovuti vipatikane wakati wa usajili, au labda hupendelei kufanya kazi ya ziada ya kuweka au kubainisha violezo vya tovuti chini ya kila bidhaa unayounda. Basi unaweza kuweka tu uchaguzi wa kiolezo cha tovuti chini ya **Checkout Form** yako. Ili kufanya hivi, nenda kwenye **Ultimate Multisite > Checkout Forms** na ubofye **Edit** chini ya fomu unayotaka kusanidi.
 
@@ -93,29 +93,29 @@ Kwenye frontend, wateja huona kichaguzi cha template wakati wa checkout na wanaw
 
 ![Kichaguzi cha template cha frontend wakati wa usajili](/img/config/frontend-template-chooser.png)
 
-### Chaguo za Template za Tovuti
+### Chaguo za Template za Tovuti {#site-template-options}
 
 Kuna functions nyingine za templates za tovuti zinazopatikana ambazo unaweza kuwasha au kuzima chini ya mipangilio ya Ultimate Multisite.
 
 ![Chaguo za template za tovuti katika mipangilio ya Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Ruhusu Kubadilisha Template
+#### Ruhusu Kubadilisha Template {#allow-template-switching}
 
 Kuwasha chaguo hili kutaruhusu wateja wako kubadilisha template wanayochagua wakati wa mchakato wa kujisajili baada ya Account na tovuti kuundwa. Hii ni muhimu kwa mtazamo wa mteja kwa kuwa inawaruhusu kuchagua tena template ikiwa baadaye watagundua kuwa chaguo lao la awali halikuwa bora kwa mahitaji yao mahususi.
 
-#### Ruhusu Watumiaji kutumia Tovuti yao kama templates
+#### Ruhusu Watumiaji kutumia Tovuti yao kama templates {#allow-users-to-use-their-site-as-templates}
 
 Kwa kuwa watumiaji wa subsite walitumia muda kujenga na kubuni tovuti yao wenyewe, wanaweza kutaka kuiklonisha na kuitumia kama mojawapo ya templates za tovuti zinazopatikana wanapounda subsite nyingine kwenye mtandao wako. Chaguo hili litawaruhusu kufanikisha hilo.
 
-#### Nakili Media wakati wa Kurudufu Template
+#### Nakili Media wakati wa Kurudufu Template {#copy-media-on-template-duplication}
 
 Kuweka alama kwenye chaguo hili kutanakili media iliyopakiwa kwenye tovuti ya template kwenda kwenye tovuti mpya iliyoundwa. Hili linaweza kubatilishwa kwenye kila mojawapo ya plans.
 
-#### **Zuia Injini za Utafutaji zisiweke kwenye faharasa Template za Tovuti**
+#### **Zuia Injini za Utafutaji zisiweke kwenye faharasa Template za Tovuti** {#prevent-search-engines-from-indexing-site-templates}
 
 Templates za tovuti kama zilivyojadiliwa katika makala hii ni boilerplate lakini bado ni sehemu ya mtandao wako, ambayo inamaanisha bado zinapatikana kwa injini za utafutaji kuzipata. Chaguo hili litakuruhusu kuficha templates za tovuti ili injini za utafutaji ziweze kuziweka kwenye faharasa.
 
-## Kujaza mapema Templates za Tovuti kwa auto search-and-replace
+## Kujaza mapema Templates za Tovuti kwa auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Moja ya vipengele vyenye nguvu zaidi vya Ultimate Multisite ni uwezo wa kuongeza maandishi, rangi, na sehemu za kuchagua zisizo na kikomo kwenye fomu ya usajili. Mara tu tunapokuwa tumekamata data hiyo, tunaweza kuitumia kujaza mapema maudhui katika sehemu fulani za template ya tovuti iliyochaguliwa. Kisha, tovuti mpya inapochapishwa, Ultimate Multisite itabadilisha placeholders kwa taarifa halisi zilizoingizwa wakati wa usajili.
 
@@ -135,7 +135,7 @@ Ultimate Multisite kisha itabadilisha placeholders kwa data iliyotolewa na mteja
 
 ![Placeholders zimebadilishwa na data ya mteja kwenye tovuti](/img/config/site-templates-list.png)
 
-### Kutatua tatizo la "template iliyojaa placeholders"
+### Kutatua tatizo la "template iliyojaa placeholders" {#solving-the-template-full-of-placeholders-problem}
 
 Yote hayo ni mazuri, lakini tunakutana na tatizo baya: sasa templates zetu za tovuti - ambazo zinaweza kutembelewa na wateja wetu - zimejaa placeholders mbaya ambazo hazisemi mengi.
 

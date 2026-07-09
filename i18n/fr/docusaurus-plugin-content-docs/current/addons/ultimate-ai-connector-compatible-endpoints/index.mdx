@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Connecteur IA Ultimate pour Endpoints Compatibles" />
 
-# Connecteur IA Ultimate pour Endpoints Compatibles
+# Connecteur IA Ultimate pour Endpoints Compatibles {#ultimate-ai-connector-for-compatible-endpoints}
 
 Le Connecteur IA Ultimate pour Endpoints Compatibles intègre les API de fournisseurs d'IA compatibles OpenAI avec votre réseau WordPress multisite. Configurez plusieurs fournisseurs d'IA — chacun avec son propre URL de point de terminaison (endpoint), clé API et modèle par défaut — et acheminez les requêtes avec un mécanisme de secours automatique lorsqu'un fournisseur est indisponible.
 
-## Fonctionnalités Clés
+## Fonctionnalités Clés {#key-features}
 
 - **Prise en charge multi-fournisseurs** : Ajoutez plusieurs cartes de fournisseurs d'IA, chacune avec son propre URL de point de terminaison, clé API et modèle par défaut.
 - **Réorganisation par glisser-déposer** : Organisez les fournisseurs par ordre de priorité en utilisant la poignée de chaque carte ; les requêtes utilisent les fournisseurs dans l'ordre.
@@ -21,26 +21,26 @@ Le Connecteur IA Ultimate pour Endpoints Compatibles intègre les API de fournis
 - **Expansion automatique lors de l'ajout** : Les nouvelles cartes de fournisseurs s'expandent automatiquement afin que vous puissiez saisir les détails immédiatement.
 - **Anti-cache des scripts** : Les scripts des fournisseurs sont anti-cachés lors de la mise à jour du plugin pour garantir que la dernière version est chargée.
 
-## Prérequis
+## Prérequis {#requirements}
 
 - WordPress 5.3 ou supérieur
 - PHP 7.4 ou supérieur
 - Plugin Ultimate Multisite (actif)
 - Un point de terminaison API compatible OpenAI (auto-hébergé ou tiers)
 
-## Installation
+## Installation {#installation}
 
 1. Téléchargez les fichiers de l'addon dans votre répertoire `/wp-content/plugins/`
 2. Activez le plugin via le menu 'Plugins' de WordPress
 3. Accédez à **Ultimate Multisite → Connecteur IA** pour configurer l'addon
 
-## Configuration
+## Configuration {#configuration}
 
-### Configuration Multi-Fournisseurs
+### Configuration Multi-Fournisseurs {#multi-provider-setup}
 
 L'écran de configuration utilise une disposition basée sur des cartes où chaque carte représente un fournisseur d'IA. Vous pouvez ajouter autant de fournisseurs que nécessaire.
 
-#### Ajouter un Fournisseur
+#### Ajouter un Fournisseur {#adding-a-provider}
 
 1. Allez dans **Ultimate Multisite → Connecteur IA** dans l'administration du réseau.
 2. Cliquez sur **Ajouter un fournisseur** (Add Provider).
@@ -52,15 +52,15 @@ L'écran de configuration utilise une disposition basée sur des cartes où chaq
    - **Modèle par défaut** (Default Model) — l'identifiant de modèle à utiliser par défaut pour ce fournisseur (ex. : `gpt-4o`, `mistral-small`).
 5. Cliquez sur **Enregistrer les paramètres** (Save Settings).
 
-#### Supprimer un Fournisseur
+#### Supprimer un Fournisseur {#removing-a-provider}
 
 Cliquez sur le bouton **Supprimer** (Remove) sur n'importe quelle carte de fournisseur pour la supprimer. Enregistrez les paramètres pour appliquer le changement.
 
-#### Réorganiser les Fournisseurs
+#### Réorganiser les Fournisseurs {#reordering-providers}
 
 Faites glisser l'icône de poignée (⣿) sur le côté gauche de n'importe quelle carte de fournisseur pour la réorganiser. L'ordre détermine la priorité de secours : les requêtes sont envoyées au premier fournisseur et sont transférées aux fournisseurs suivants si une requête échoue.
 
-### Mécanisme de Secours (Fallback Routing)
+### Mécanisme de Secours (Fallback Routing) {#fallback-routing}
 
 Lorsqu'une requête au fournisseur principal échoue — en raison d'un délai d'attente, d'une limite de débit ou d'une panne de service — le connecteur tente automatiquement la requête avec le fournisseur suivant de la liste. Ce processus se poursuit dans la liste jusqu'à ce qu'un fournisseur réussisse ou que tous les fournisseurs aient été essayés.
 
@@ -72,7 +72,7 @@ Lorsqu'une requête au fournisseur principal échoue — en raison d'un délai d
 
 Le mécanisme de secours est transparent pour le plugin ou le thème appelant — ils reçoivent soit une réponse réussie, soit une erreur finale, quelle que soit la quantité de fournisseurs essayés.
 
-### Référence de Configuration des Fournisseurs
+### Référence de Configuration des Fournisseurs {#provider-configuration-reference}
 
 | Champ | Requis | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Le mécanisme de secours est transparent pour le plugin ou le thème appelant �
 | API Key | Oui | Clé d'authentification pour ce fournisseur |
 | Default Model | Oui | Identifiant de modèle utilisé lorsqu'aucun modèle n'est spécifié dans la requête |
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-### Aucun fournisseur n'est listé
+### Aucun fournisseur n'est listé {#no-providers-are-listed}
 
 Si la liste des fournisseurs est vide après l'enregistrement, veuillez vérifier que :
 
@@ -91,21 +91,21 @@ Si la liste des fournisseurs est vide après l'enregistrement, veuillez vérifie
 - Votre navigateur n'a pas bloqué l'enregistrement de la page de paramètres (vérifiez la console du navigateur pour les erreurs JavaScript).
 - Le plugin est actif et que vous êtes sur l'écran d'administration du réseau.
 
-### Les requêtes échouent pour tous les fournisseurs
+### Les requêtes échouent pour tous les fournisseurs {#requests-are-failing-for-all-providers}
 
 - Vérifiez que l'URL du point de terminaison de chaque fournisseur est accessible depuis votre serveur (et pas seulement depuis votre navigateur).
 - Assurez-vous que chaque clé API est valide et n'a pas expiré.
 - Examinez le statut de la limite de débit et du quota du fournisseur dans son tableau de bord.
 - Activez le journal de débogage WordPress (`WP_DEBUG_LOG`) pour capturer des messages d'erreur détaillés provenant du connecteur.
 
-### Un fournisseur n'est pas utilisé pour le mécanisme de secours
+### Un fournisseur n'est pas utilisé pour le mécanisme de secours {#a-provider-is-not-being-used-for-fallback}
 
 Le glisser-déposer modifie l'ordre de secours. Confirmez que le fournisseur que vous attendez pour recevoir les requêtes de secours est positionné correctement dans la liste et que son URL de point de terminaison et sa clé API sont correctes.
 
-### La nouvelle carte de fournisseur ne s'expande pas automatiquement
+### La nouvelle carte de fournisseur ne s'expande pas automatiquement {#new-provider-card-does-not-expand-automatically}
 
 L'expansion automatique nécessite que JavaScript soit activé dans votre navigateur. Si la carte ne s'expande pas au clic, vérifiez la console du navigateur pour des erreurs. Le contenu de la carte est toujours accessible en cliquant sur l'en-tête de la carte même si l'expansion automatique ne se déclenche pas.
 
-## Journal des modifications (Changelog)
+## Journal des modifications (Changelog) {#changelog}
 
 Consultez [Changelog](./changelog) pour l'historique complet des versions.

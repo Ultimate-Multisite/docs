@@ -3,13 +3,13 @@ title: Umhlahlandlela Wokuhlanganisa
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Umhlahlandlela Wokuhlanganisa
+# Umhlahlandlela Wokuhlanganisa {#integration-guide}
 
 Lo mhlahlandlela uhlanganisa amaphethini ajwayelekile okuhlanganisa ne-Ultimate Multisite, okuhlanganisa ukuxhuma kumasevisi angaphandle, ukwakha amasango okukhokha angokwezifiso, nokuphatha ama-webhook.
 
 Ngengqalasizinda ye-tenant ehlukanisiwe, bheka [Ukuhlanganiswa kwe-Multi-Tenancy](./multi-tenancy) ukuze uthole isiqondiso se-bootstrap ye-tenant ezimele, ukuqinisekiswa kokuthutha, i-SSO, nokudilizwa.
 
-## Ukuhlanganiswa kwe-CRM
+## Ukuhlanganiswa kwe-CRM {#crm-integration}
 
 Vumelanisa idatha yekhasimende ku-CRM yakho lapho amakhasimende amasha ebhalisa:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Ukuhlanganiswa kwe-Analytics
+## Ukuhlanganiswa kwe-Analytics {#analytics-integration}
 
 Landela imicimbi ebalulekile yebhizinisi kuwo wonke umjikelezo wempilo yekhasimende:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 - [Ukuthuthukiswa kwe-Gateway Yangokwezifiso](./custom-gateway) — Yakha i-gateway yakho yokukhokha
 - [Ukuphathwa kwama-Webhook](./webhooks) — Dala ama-endpoint e-webhook angokwezifiso

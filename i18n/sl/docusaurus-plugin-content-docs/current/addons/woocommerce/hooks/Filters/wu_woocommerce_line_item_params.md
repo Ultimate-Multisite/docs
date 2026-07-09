@@ -4,11 +4,11 @@ title: Filter - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params
+# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Filtrirajte parametre, uporabljene za ustvarjanje vrstičnih postavk v WooCommerce košarici, preden stranko preusmerite na WooCommerce blagajno.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Vrsta | Opis |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Filtrirajte parametre, uporabljene za ustvarjanje vrstičnih postavk v WooCommer
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Instanca vrstične postavke Ultimate Multisite. |
 | $wc_product | `\WC_Product` | WooCommerce izdelek. |
 
-### Od različice
+### Od različice {#since}
 
 - 2.0.0
-### Vir
+### Vir {#source}
 
 Določeno v [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) v vrstici 662
 
 
-## Vrne
+## Vrne {#returns}
 Spremenjene parametre vrstične postavke.

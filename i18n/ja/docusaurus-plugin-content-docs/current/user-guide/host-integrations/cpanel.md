@@ -3,17 +3,17 @@ title: cPanel 統合
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Integration
+# cPanel Integration {#cpanel-integration}
 
-## Overview
+## Overview {#overview}
 cPanelは、多くの共有および専用ホスティングプロバイダーで使用されている最も人気のあるウェブホスティング制御パネルの1つです。この統合により、Ultimate MultisiteとcPanel間で自動ドメイン同期が可能になり、ドメインエイリアスとサブドメインを自動的にcPanelアカウントに追加できるようになります。
 
-## Features
+## Features {#features}
 - cPanelでの自動アドオンドメイン作成
 - cPanelでの自動サブドメイン作成（サブドメインマルチサイトインストール用）
 - マッピングが削除されたときのドメイン削除
 
-## Requirements
+## Requirements {#requirements}
 The following constants must be defined in your `wp-config.php` file:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Default is 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Default is /public_html
 ```
 
-## Setup Instructions
+## Setup Instructions {#setup-instructions}
 
-### 1. Get Your cPanel Credentials
+### 1. Get Your cPanel Credentials {#1-get-your-cpanel-credentials}
 
 1. Obtain your cPanel username and password from your hosting provider
 2. Determine your cPanel host (usually `cpanel.yourdomain.com` or `yourdomain.com:2083`)
 
-### 2. Add Constants to wp-config.php
+### 2. Add Constants to wp-config.php {#2-add-constants-to-wp-configphp}
 
 Add the following constants to your `wp-config.php` file:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Change if your cPanel uses a different port
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is different
 ```
 
-### 3. Enable the Integration
+### 3. Enable the Integration {#3-enable-the-integration}
 
 1. In your WordPress admin, go to Ultimate Multisite > Settings
 2. Navigate to the "Domain Mapping" tab
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 4. Enable the cPanel integration
 5. Click "Save Changes"
 
-## How It Works
+## How It Works {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 When a domain is mapped in Ultimate Multisite:
 
@@ -71,7 +71,7 @@ When a domain is mapped in Ultimate Multisite:
 2. ドメインはルートディレクトリを指すように設定されます
 3. ドメインマッピングが削除されたとき、統合はcPanelからアドオンドメインを削除します
 
-### Subdomains
+### Subdomains {#subdomains}
 
 For subdomain multisite installations, when a new site is created:
 
@@ -79,29 +79,29 @@ For subdomain multisite installations, when a new site is created:
 2. cPanelのAPIにリクエストを送信し、サブドメインを追加します
 3. サブドメインはルートディレクトリを指すように設定されます
 
-## Important Notes
+## Important Notes {#important-notes}
 
 - The integration uses cPanel's API2 to communicate with your cPanel account
 - Your cPanel account must have permissions to add addon domains and subdomains
 - Some hosting providers may limit the number of addon domains or subdomains you can create
 - The integration does not handle DNS configuration; you still need to point your domains to your server's IP address
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 
 - Verify that your cPanel username and password are correct
 - Check that your cPanel host is correct and accessible
 - Ensure that your cPanel account has the necessary permissions
 - Try using the full URL for the host (e.g., `https://cpanel.yourdomain.com`)
 
-### Domain Not Added
+### Domain Not Added {#domain-not-added}
 
 - Check the Ultimate Multisite logs for any error messages
 - Verify that the domain is not already added to cPanel
 - Ensure that your cPanel account has not reached its limit for addon domains or subdomains
 
-### SSL Certificate Issues
+### SSL Certificate Issues {#ssl-certificate-issues}
 
 - The integration does not handle SSL certificate issuance
 - You will need to use cPanel's SSL/TLS tools or AutoSSL feature to issue SSL certificates for your domains

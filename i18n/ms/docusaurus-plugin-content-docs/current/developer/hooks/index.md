@@ -3,11 +3,11 @@ title: Rujukan Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Rujukan Hooks
+# Rujukan Hooks {#hooks-reference}
 
 Dokumentasi yang dijana secara automatik untuk semua **59 tindakan** dan **118 penapis** dalam Ultimate Multisite.
 
-## Tindakan
+## Tindakan {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Dicetuskan sebelum ubah hala pengesahan.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Dicetuskan sejurus sebelum kuki pengesahan ditetapkan.
@@ -70,7 +70,7 @@ Dokumentasi yang dijana secara automatik untuk semua **59 tindakan** dan **118 p
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Dicetuskan selepas objek disimpan ke dalam pangkalan data.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Benarkan pembangun plugin menambah tindakan kepada proses membuka kunci.
 
-## Penapis
+## Penapis {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Menapis tempoh tamat tempoh cookie pengesahan.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Menapis skema ubah hala pengesahan.

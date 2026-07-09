@@ -3,19 +3,19 @@ title: 'Leksjon 2: Velge din nisje'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leksjon 2: Velge din nisje
+# Leksjon 2: Velge din nisje {#lesson-2-picking-your-niche}
 
 I Leksjon 1 etablerte vi hvorfor nisje slår generisk. Nå må du velge din egen. Denne leksjonen gir deg et rammeverk for å finne og validere en nisje før du investerer tid i å bygge for den.
 
-## Hvor vi slapp
+## Hvor vi slapp {#where-we-left-off}
 
 Vi definerte FitSite-konseptet: en nettsideplattform for treningsstudioer. Men hvordan kom vi spesifikt til treningsstudioer? Denne leksjonen går gjennom prosessen slik at du kan bruke den til å finne din egen nisje.
 
-## De tre kriteriene
+## De tre kriteriene {#the-three-criteria}
 
 En god nisje for en nettsideplattform må oppfylle tre betingelser:
 
-### 1. De trenger nettsider, men sliter med å få gode
+### 1. De trenger nettsider, men sliter med å få gode {#1-they-need-websites-but-struggle-to-get-good-ones}
 Se etter bransjer der:
 
 - Bedrifter forventes å ha en netthjemmeside
@@ -25,7 +25,7 @@ Se etter bransjer der:
 
 **Treningsstudioer passer**: medlemmene forventer å finne timeplaner, priser og bestilling på nett. De fleste studio-nettsider er utdaterte eller bygget på generiske maler som ikke tjener formålet.
 
-### 2. Bedriftene har råd til et månedlig abonnement
+### 2. Bedriftene har råd til et månedlig abonnement {#2-the-businesses-can-afford-a-monthly-subscription}
 Dine målg kunder må være:
 
 - Etablerte nok til å ha et markedsføringsbudsjett
@@ -34,7 +34,7 @@ Dine målg kunder må være:
 
 **Treningsstudioer passer**: de betaler allerede for bookingsystemer, betalingsbehandling og markedsføringsverktøy. Et nettsideabonnement er en naturlig tilleggsinntekt.
 
-### 3. De snakker med hverandre
+### 3. De snakker med hverandre {#3-they-talk-to-each-other}
 De beste nisjene har:
 
 - Bransjeorganisasjoner, konferanser eller messeutstillinger
@@ -43,16 +43,16 @@ De beste nisjene har:
 
 **Treningsstudioer passer**: studioeiere deltar på bransjearrangementer, er aktive i nettsamfunn og deler ofte verktøy og tjenester med kolleger.
 
-## Hvordan du finner nisjekandidater
+## Hvordan du finner nisjekandidater {#how-to-find-niche-candidates}
 
-### Start med det du kan
+### Start med det du kan {#start-with-what-you-know}
 Din eksisterende erfaring er en fordel. Vurder:
 
 - Bransjer du har jobbet i eller bygget nettsider for
 - Hobbyer eller interesser der du forstår fellesskapet
 - Profesjonelle nettverk du allerede er medlem av
 
-### Se etter utfordringer (Pain Signals)
+### Se etter utfordringer (Pain Signals) {#look-for-pain-signals}
 Søk etter bevis på at bedrifter i en nisje sliter med nettsider:
 
 - Søk på Google "[bransje] website builder" og se hva som finnes
@@ -60,18 +60,18 @@ Søk etter bevis på at bedrifter i en nisje sliter med nettsider:
 - Se på faktiske nettsider i nisjen – er de fleste dårlige?
 - Sjekk om det finnes konkurrenter og hvor godt de betjener markedet
 
-### Vurder økonomien
+### Vurder økonomien {#evaluate-the-economics}
 For hver kandidatnisje, estimer:
 
 - **Markedstørrelse**: Hvor mange bedrifter finnes i denne nisjen? (Start med ditt land/region)
 - **Villighet til å betale**: Hva bruker de for tiden på lignende verktøy?
 - **Potensial for livstidsverdi**: Er disse bedriftene stabile, eller har de raskt frafall?
 
-## Validere din nisje
+## Validere din nisje {#validating-your-niche}
 
 Før du bygger noe, valider etterspørselen:
 
-### Snakk med potensielle kunder
+### Snakk med potensielle kunder {#talk-to-potential-customers}
 Kontakt 10–15 bedriftseiere i din målnisje. Spør:
 
 - Hvordan fikk du din nåværende nettside?
@@ -81,15 +81,15 @@ Kontakt 10–15 bedriftseiere i din målnisje. Spør:
 
 Du selger ikke ennå. Du lytter.
 
-### Sjekk konkurranselandskapet
+### Sjekk konkurranselandskapet {#check-competitor-landscape}
 - **Ingen konkurrenter**: Kan bety ingen etterspørsel, eller det kan bety en uutnyttet mulighet. Kundesamtalene vil fortelle deg hvilket.
 - **Noen få konkurrenter**: Godt tegn. Det validerer etterspørselen. Studer hva de gjør bra, og hvor de faller til kort.
 - **Mange konkurrenter**: Vanskeligere å komme inn i, men fortsatt mulig hvis du kan differensiere deg tydelig.
 
-### Lag en landingsside
+### Lag en landingsside {#build-a-landing-page}
 Før du bygger plattformen, lag en enkel landingsside som beskriver din nisjeløsning og samle inn e-postregistreringer. Kjør en liten mengde målrettet annonsering for å teste interessen. Hvis folk registrerer seg, har du validering.
 
-## Anvende dette på FitSite
+## Anvende dette på FitSite {#applying-this-to-fitsite}
 
 Slik scoret FitSite mot kriteriene:
 
@@ -103,7 +103,7 @@ Slik scoret FitSite mot kriteriene:
 
 Valideringen bekreftet muligheten. Nå bygger vi.
 
-## Nisjeideer å vurdere
+## Nisjeideer å vurdere {#niche-ideas-to-consider}
 
 Hvis fitness ikke er markedet ditt, er her andre nisjer som oppfyller kriteriene:
 
@@ -118,7 +118,7 @@ Hvis fitness ikke er markedet ditt, er her andre nisjer som oppfyller kriteriene
 
 Hver av disse har de samme kjennetegnene: klare nettsidebehov, evne til å betale, og muntlig anbefaling i fellesskapet.
 
-## Hva vi bygget i denne leksjonen
+## Hva vi bygget i denne leksjonen {#what-we-built-this-lesson}
 
 - **Et rammeverk for nisjevalg**: tre kriterier for å vurdere enhver nisje
 - **Valideringsmetoder**: kundesamtaler, konkurrentanalyse, landingssidetesting

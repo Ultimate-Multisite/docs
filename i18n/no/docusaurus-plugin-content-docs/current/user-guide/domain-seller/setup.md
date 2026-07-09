@@ -3,21 +3,21 @@ title: Oppsett og leverandørkonfigurasjon
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Oppsett og leverandørkonfigurasjon
+# Domain Seller: Oppsett og leverandørkonfigurasjon {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller-tillegget leveres med en veiviser for guidet oppsett som tar deg gjennom hvert nødvendige trinn. Denne siden dekker veiviserflyten og hvordan du konfigurerer eller rekonfigurerer leverandører etterpå.
 
-## Krav
+## Krav {#requirements}
 
 - **Multisite Ultimate** v2.4.12 eller nyere, nettverksaktivert
 - **PHP** 7.4+
 - API-legitimasjon for minst én støttet registrar
 
-## Veiviser for førstegangsoppsett
+## Veiviser for førstegangsoppsett {#first-run-setup-wizard}
 
 Oppsettsveiviseren starter automatisk første gang du nettverksaktiverer pluginen. Den er også tilgjengelig når som helst fra **Nettverksadmin › Ultimate Multisite › Domain Seller-oppsett**.
 
-### Trinn 1 — Velg en leverandør
+### Trinn 1 — Velg en leverandør {#step-1--choose-a-provider}
 
 Velg registraren du vil koble til. Støttede alternativer:
 
@@ -33,7 +33,7 @@ Velg registraren du vil koble til. Støttede alternativer:
 | NameSilo | Nei | Nei |
 | Enom | Ja | Nei |
 
-### Trinn 2 — Angi legitimasjon
+### Trinn 2 — Angi legitimasjon {#step-2--enter-credentials}
 
 Hver leverandør har forskjellige legitimasjonsfelt:
 
@@ -57,17 +57,17 @@ Hver leverandør har forskjellige legitimasjonsfelt:
 
 Kryss av for **Sandbox-modus** der det er tilgjengelig for å teste mot leverandørens testmiljø før du går live.
 
-### Trinn 3 — Test tilkoblingen
+### Trinn 3 — Test tilkoblingen {#step-3--test-the-connection}
 
 Klikk på **Test tilkobling**. Veiviseren sender et lett API-kall for å verifisere legitimasjon og tilkobling. Rett opp eventuelle legitimasjonsproblemer før du fortsetter.
 
-### Trinn 4 — Importer TLD-er
+### Trinn 4 — Importer TLD-er {#step-4--import-tlds}
 
 Klikk på **Importer TLD-er** for å hente alle tilgjengelige TLD-er og engrospriser fra den tilkoblede leverandøren. Dette fyller ut TLD-listen som brukes av domeneprodukter. Importen kan ta 30–60 sekunder for leverandører med store TLD-kataloger.
 
 TLD-er synkroniseres også automatisk på nytt én gang per dag via en planlagt cron-jobb.
 
-### Trinn 5 — Opprett et domeneprodukt
+### Trinn 5 — Opprett et domeneprodukt {#step-5--create-a-domain-product}
 
 Veiviseren oppretter et standard altomfattende domeneprodukt med 10 % påslag. Du kan redigere dette produktet umiddelbart eller hoppe over og opprette produkter manuelt under **Ultimate Multisite › Produkter**.
 
@@ -75,7 +75,7 @@ Se [Domeneprodukter og priser](./domain-products) for den fullstendige veilednin
 
 ---
 
-## Rekonfigurere en leverandør
+## Rekonfigurere en leverandør {#reconfiguring-a-provider}
 
 Gå til **Nettverksadmin › Ultimate Multisite › Innstillinger › Domain Seller** (eller klikk på **Innstillinger** i pluginlisten).
 
@@ -88,17 +88,17 @@ Innstillingssiden inneholder:
 - **Administrer domeneprodukter** — hurtiglenke til produktlisten
 - **Konfigurer leverandører** — åpner integrasjonsveiviseren for å legge til eller rekonfigurere leverandører
 
-### Legge til en andre leverandør
+### Legge til en andre leverandør {#adding-a-second-provider}
 
 Klikk på **Konfigurer leverandører** og kjør veiviseren igjen for den nye registraren. Du kan ha flere leverandører konfigurert samtidig. Tilordne hvert domeneprodukt til en bestemt leverandør, eller la det stå på standarden.
 
-### Synkronisere TLD-er manuelt
+### Synkronisere TLD-er manuelt {#syncing-tlds-manually}
 
 På innstillingssiden klikker du på **Synkroniser TLD-er** ved siden av en konfigurert leverandør for å hente de nyeste prisene. Dette er nyttig etter at en leverandør oppdaterer engrospriser eller legger til nye TLD-er.
 
 ---
 
-## Logger
+## Logger {#logs}
 
 Hver leverandør skriver til sin egen loggkanal. Logger kan vises under **Nettverksadmin › Ultimate Multisite › Logger**:
 
@@ -118,7 +118,7 @@ Hver leverandør skriver til sin egen loggkanal. Logger kan vises under **Nettve
 
 ---
 
-## Merknader om leverandørfunksjoner
+## Merknader om leverandørfunksjoner {#provider-capability-notes}
 
 Ikke alle registrar-API-er eksponerer de samme operasjonene. Tillegget viser operasjoner som ikke støttes, med tydelige feil rettet mot administratorer i stedet for å feile stille.
 

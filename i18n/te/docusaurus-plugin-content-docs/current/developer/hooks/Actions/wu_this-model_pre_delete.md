@@ -4,20 +4,20 @@ title: 'Action - wu_{$this->model}_pre_delete'
 sidebar_label: 'wu_{$this->model}_pre_delete'
 _i18n_hash: 12d965c5aed740f08dba9a3d9cbfb2b5
 ---
-# Action: wu_\{$this->model\}_pre_delete
+# Action: wu_\{$this->model\}_pre_delete {#action-wuthis-modelpredelete}
 
 ఒక ఆబ్జెక్ట్ డేటాబేస్‌లో నిల్వ చేయబడిన తర్వాత ఇది ట్రిగ్గర్ అవుతుంది.
 
-## పారామీటర్లు
+## పారామీటర్లు {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $this | `\Base_Model` | ఆబ్జెక్ట్ యొక్క ఉదాహరణ (instance). |
 
-### ఎప్పటి నుండి
+### ఎప్పటి నుండి {#since}
 
 - 2.0.0
-### మూలం
+### మూలం {#source}
 
 - Defined in [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L649) at line 649
 - Defined in [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1485) at line 1485

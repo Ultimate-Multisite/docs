@@ -3,7 +3,7 @@ title: محقن الإعلانات
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# وضع الإعلانات على شبكتك مع Ultimate Multisite: Ad Injector
+# وضع الإعلانات على شبكتك مع Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector هو **ملحق مجاني** يمنحك الأدوات لوضع الإعلانات على خططك مباشرةً من صفحة التعديل الخاصة بها.
 
@@ -35,7 +35,7 @@ _After inserting your ad's code, it will show on the posts and pages of that spe
 
 _Go to the Admin Panel Ad Code option if you want to display ads on your user's back-end_
 
-### ما بعد الإعلانات
+### ما بعد الإعلانات {#beyond-advertising}
 
 يمكنك أيضًا استخدام Ultimate Multisite: Ad Injector لتقديم الدعم للخطط ذات المستوى العالي.
 

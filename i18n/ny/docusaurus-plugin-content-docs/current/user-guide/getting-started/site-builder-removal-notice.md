@@ -3,13 +3,13 @@ title: Kufotera Koma la Site Builder Mode
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Kufufu Koma ya Kuondoka kwa Site Builder Mode
+# Kufufu Koma ya Kuondoka kwa Site Builder Mode {#site-builder-mode-removal-notice}
 
 **Site Builder mode yaliondokera m'Superdav AI Agent v1.12.0.** Mwena muli likitumia Site Builder mode, muli lazima mwende ku **Setup Assistant agent** kwa ajili ya kukwiri theme na kusanidiza site.
 
-## Kuliye Nini Kilichotokea?
+## Kuliye Nini Kilichotokea? {#what-happened}
 
-### Site Builder Mode (Legacy)
+### Site Builder Mode (Legacy) {#site-builder-mode-legacy}
 
 Site Builder mode lilikuwa interface iliyopangwa kama wizard kwa ajili ya:
 
@@ -18,7 +18,7 @@ Site Builder mode lilikuwa interface iliyopangwa kama wizard kwa ajili ya:
 - Kuchagua theme
 - Kusanidiza maudhui ya awali
 
-### Kilichobadilika Nalo?
+### Kilichobadilika Nalo? {#what-replaced-it}
 
 **Setup Assistant agent** sasa inashughulikia kila kazi ya Site Builder kwa kutumia:
 
@@ -27,15 +27,15 @@ Site Builder mode lilikuwa interface iliyopangwa kama wizard kwa ajili ya:
 - Uunganishaji na Theme Builder onboarding
 - Kumbukumbu thabiti ya site_brief kwa vipindi vya baadaye
 
-## Ikiwa Ulikuwa Unaotumia Site Builder Mode
+## Ikiwa Ulikuwa Unaotumia Site Builder Mode {#if-you-were-using-site-builder-mode}
 
-### Sites Yako Ziko Salama
+### Sites Yako Ziko Salama {#your-sites-are-safe}
 
 - Sites zilizoundwa awali kwa kutumia Site Builder mode zinaendelea kufanya kazi
 - Hakuna kupotea kwa data au kukatika kwa site
 - Unaweza kuendelea kusimamia sites zako kama kawaida
 
-### Mwende kwenye Setup Assistant Agent
+### Mwende kwenye Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Kwa setup ya site mpya au kubadilisha theme, tumia Setup Assistant agent:
 
@@ -51,7 +51,7 @@ au
 
 Setup Assistant agent inatoa kazi zile zile lakini kwa uwezo mwingi zaidi.
 
-## Ulinganisho: Site Builder vs. Setup Assistant
+## Ulinganisho: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Sifa | Site Builder (Iliyoondoka) | Setup Assistant (Mpya) |
 |---|---|---|
@@ -62,9 +62,9 @@ Setup Assistant agent inatoa kazi zile zile lakini kwa uwezo mwingi zaidi.
 | Vipindi vya baadaye | Setup tena | Tumia site_brief iliyohifadhiwa |
 | Uwezo | Workflow imefungwa | Mazungumzo yanayobadilika |
 
-## Kuendelea kwenye Setup Assistant Agent
+## Kuendelea kwenye Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Kwa Sites Mpya
+### Kwa Sites Mpya {#for-new-sites}
 
 Muli pa kuti Site Builder mode:
 
@@ -76,7 +76,7 @@ Muli pa kuti Site Builder mode:
    - Kuthengera theme (Theme generation)
    - Kufotokozera m'mwayi woyamba (Initial configuration)
 
-### Kwa Sites Zomaliza
+### Kwa Sites Zomaliza {#for-existing-sites}
 
 Ngati muli ndi site yeka yomwe yali m'Site Builder mode:
 
@@ -85,7 +85,7 @@ Ngati muli ndi site yeka yomwe yali m'Site Builder mode:
 3. The Setup Assistant agent idzikuthandizira kukhazikitsa theme yeka yeka
 4. Data ya site yeka ikulimbikizidwa
 
-### Kwa Kusintha Theme
+### Kwa Kusintha Theme {#for-theme-changes}
 
 Muli ndi kusintha theme m'Site Builder mode:
 
@@ -95,9 +95,9 @@ Muli ndi kusintha theme m'Site Builder mode:
    - Kuthengera theme yeka yeka
    - Kukhazikitsa m'site yeka
 
-## Zomwe Ziri Mwayi Woyamba (Key Differences)
+## Zomwe Ziri Mwayi Woyamba (Key Differences) {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Choose a template
@@ -106,7 +106,7 @@ Muli ndi kusintha theme m'Site Builder mode:
 4. Done
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Describe your site's purpose
@@ -117,42 +117,42 @@ Muli ndi kusintha theme m'Site Builder mode:
 6. Site brief stored for future sessions
 ```
 
-## Zomwe Ziri Mwayi Woyamba (Benefits of Setup Assistant Agent)
+## Zomwe Ziri Mwayi Woyamba (Benefits of Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Kukhala ndi Mwayi Wopereka Kwambiri (More Flexible)
+### Kukhala ndi Mwayi Wopereka Kwambiri (More Flexible) {#more-flexible}
 
 - Chiyembekezero site yeka m'chonde (natural language)
 - Kupereka zolemba zomwe mumakonda
 - Kuthandizira m'mwayi wanu wosonyeza kwambiri
 
-### Kusintha Kwambiri Kuti Zikwaniritsidwe (Better Customization)
+### Kusintha Kwambiri Kuti Zikwaniritsidwe (Better Customization) {#better-customization}
 
 - Kuthengera theme yeka yeka
 - Zomwe zikuyenera za design system
 - Design tokens zomwe zimakhala m'mwayi wosonyeza kwambiri
 
-### Mwayi Wopereka Kwambiri (Persistent Memory)
+### Mwayi Wopereka Kwambiri (Persistent Memory) {#persistent-memory}
 
 - site_brief yanu ikulimbikizidwa
 - Agents ena adziwitsa kuti ndi site yanu lili
 - Samukufunsa zolemba za setup m'mwayi wosonyeza kwambiri
 
-### Mwayi Wopereka Kwambiri (Integrated Workflow)
+### Mwayi Wopereka Kwambiri (Integrated Workflow) {#integrated-workflow}
 
 - Onboarding ya Theme Builder
 - Skill ya Design System Aesthetics
 - Ulemu wa Kukhala ndi Visibility controls
 - Zinthu zonse zimakukumbutsa m'mwayi wosonyeza kwambiri
 
-## Kusintha Mwayi Woyamba (Troubleshooting)
+## Kusintha Mwayi Woyamba (Troubleshooting) {#troubleshooting}
 
-### Sindikupatsa Site Builder mode
+### Sindikupatsa Site Builder mode {#i-cant-find-site-builder-mode}
 
 Site Builder mode yali yera. Gwani Setup Assistant agent monga momwe:
 
 "Niyangonani kukhulupanga site wamba"
 
-### Ndikufuna kukweraite site wamba ku Site Builder
+### Ndikufuna kukweraite site wamba ku Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Muliye kukhulupanga mwayi muku Site Builder kwa:
 
@@ -161,7 +161,7 @@ Muliye kukhulupanga mwayi muku Site Builder kwa:
 3. Agent iyu idzogera theme yomwe imodzi mwayi
 4. `site_brief` yanu idzagwira chithandizo kwa nthawi zina
 
-### Site Builder yanu yomwe ikhale pansi sikukweraite
+### Site Builder yanu yomwe ikhale pansi sikukweraite {#my-existing-site-builder-site-isnt-working}
 
 Sites zomwe zikukhala ndi Site Builder mode zimakhala zikukweraite. Ngati mukuona mavuto:
 
@@ -170,7 +170,7 @@ Sites zomwe zikukhala ndi Site Builder mode zimakhala zikukweraite. Ngati mukuon
 3. Onani logs za WordPress za mavuto
 4. Onani ndi chithandizo ngati mavuto akukula
 
-### Kodi ndiyenera kukhala ndi templates za Site Builder zamene?
+### Kodi ndiyenera kukhala ndi templates za Site Builder zamene? {#can-i-still-use-my-old-site-builder-templates}
 
 Templates za Site Builder sikukhala kwa nthawi yomwe. Komabe:
 
@@ -178,14 +178,14 @@ Templates za Site Builder sikukhala kwa nthawi yomwe. Komabe:
 - Muliye kukhulupanga sites mwayi wosonyeza ndi Setup Assistant agent
 - Setup Assistant agent imapereka chiwerengero chokhazikitsa kwambiri
 
-## Zinthu Zomwe Zikupezedwa Kuti Mulibe
+## Zinthu Zomwe Zikupezedwa Kuti Mulibe {#next-steps}
 
 1. **Pansi kwa sites zamba**: Onani kuti Setup Assistant agent iye
 2. **Pansi kwa sites zomwe zikukhala pansi**: Onani kukhala ndi zina monga momwe yomwe mukuona
 3. **Pansi kwa kusintha theme**: Onani chithandizo kuchokera kwa Setup Assistant agent
 4. **Pansi kwa kusintha mpingo (design)**: Onani Design System Aesthetics skill
 
-## Zinthu Zofunika
+## Zinthu Zofunika {#related-topics}
 
 - **Theme Builder Onboarding**: Kukhulupanga momwe mukuwera theme zosonyeza
 - **Setup Assistant Agent**: Kukweraite site mwayi wosonyeza ndi agent

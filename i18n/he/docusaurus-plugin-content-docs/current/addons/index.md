@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# תוספי Ultimate Multisite
+# תוספי Ultimate Multisite {#ultimate-multisite-addons}
 
 תוספים מרחיבים את Ultimate Multisite עם תכונות ואינטגרציות נוספות. רוב התוספים בתשלום וניתן לרכוש אותם מ-[ultimatemultisite.com](https://ultimatemultisite.com).
 
-## התקנה
+## התקנה {#installation}
 
 ניתן להתקין תוספים בשתי דרכים:
 
 1. **דרך דף התוספים** -- נווט לדף ניהול התוספים של האתר שלך בממשק המנהל של WordPress.
 2. **הורדה ידנית** -- הוריד מה[חשבון שלך](https://ultimatemultisite.com/my-account/downloads/) והעלה דרך Plugins > Add New.
 
-## תוספים זמינים
+## תוספים זמינים {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

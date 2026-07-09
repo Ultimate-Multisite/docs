@@ -3,7 +3,7 @@ title: Loga nan atharrachaidhean GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Changelog GoCardless
+# Changelog GoCardless {#gocardless-changelog}
 
 Tionndadh: 1.0.3 - Air fhoillseachadh air 2026-05-05
 * Ceartachadh: Thèid làraichean ri feitheamh dìlleachdan a ghlanadh a-nis nuair a thèid ballrachd GoCardless a chur dheth fhad ’s a tha i ann an staid ri feitheamh no air stad

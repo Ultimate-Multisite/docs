@@ -3,17 +3,17 @@ title: Narzędzia i konfiguracja
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Narzędzia i konfiguracja
+# Narzędzia i konfiguracja {#tools-and-configuration}
 
 Theme Builder używa zestawu narzędzi do analizowania, projektowania i budowania Twojej witryny WordPress. W wersji 1.16.0 **sd-ai-agent/site-scrape jest teraz narzędziem Tier 1**, dzięki czemu jest dostępne domyślnie w Theme Builder. Superdav AI Agent v1.18.0 wprowadza również osobno dystrybuowany pakiet towarzyszący Advanced dla zaufanych przepływów pracy deweloperów; te narzędzia nie są częścią podstawowego pakietu WordPress.org i muszą zostać zainstalowane oraz autoryzowane osobno.
 
-## Dostępne narzędzia
+## Dostępne narzędzia {#available-tools}
 
-### Narzędzia Tier 1 (zawsze dostępne)
+### Narzędzia Tier 1 (zawsze dostępne) {#tier-1-tools-always-available}
 
 Narzędzia Tier 1 są dostępne domyślnie w Theme Builder bez żadnej dodatkowej konfiguracji.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Cel:** Analizowanie istniejących witryn w celu wyodrębnienia inspiracji projektowej, struktury treści i funkcjonalności.
 
@@ -51,11 +51,11 @@ Przeanalizuj projekt example.com i użyj go jako inspiracji dla mojej witryny.
 - Witryny intensywnie korzystające z JavaScript mogą mieć ograniczoną analizę
 - Duże witryny mogą wymagać więcej czasu na analizę
 
-### Narzędzia Tier 2 (opcjonalne)
+### Narzędzia Tier 2 (opcjonalne) {#tier-2-tools-optional}
 
 Narzędzia Tier 2 są dostępne po ich wyraźnym włączeniu w ustawieniach Theme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
 Zapewnia szczegółowe metryki wydajności:
 
@@ -65,7 +65,7 @@ Zapewnia szczegółowe metryki wydajności:
 - Wynik dostępności
 - Wynik najlepszych praktyk
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
 Analizuje i sugeruje ulepszenia dla:
 
@@ -75,11 +75,11 @@ Analizuje i sugeruje ulepszenia dla:
 - Struktury treści
 - Umiejscowienia wezwania do działania
 
-### Narzędzia Tier 3 (Premium)
+### Narzędzia Tier 3 (Premium) {#tier-3-tools-premium}
 
 Narzędzia Tier 3 wymagają dodatkowej konfiguracji lub funkcji premium.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Generuje treści dla:
 
@@ -89,7 +89,7 @@ Generuje treści dla:
 - Meta opisów
 - Tekstów wezwań do działania
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
 Zapewnia zaawansowane możliwości projektowe:
 
@@ -99,7 +99,7 @@ Zapewnia zaawansowane możliwości projektowe:
 - Zaawansowana teoria kolorów
 - Optymalizacja typografii
 
-### Zaawansowane narzędzia towarzyszące (osobny pakiet)
+### Zaawansowane narzędzia towarzyszące (osobny pakiet) {#advanced-companion-tools-separate-package}
 
 Pakiet towarzyszący Advanced jest dystrybuowany oddzielnie od podstawowego wydania Superdav AI Agent. Jest przeznaczony dla zaufanych środowisk deweloperów i właścicieli witryn, w których administratorzy wyraźnie zezwalają agentowi na używanie narzędzi o dużym wpływie.
 
@@ -116,9 +116,9 @@ Możliwości pakietu towarzyszącego Advanced mogą obejmować:
 
 Nie dokumentuj ich jako ogólnie dostępnych narzędzi Theme Builder dla każdej instalacji. Są dostępne tylko wtedy, gdy pakiet towarzyszący Advanced jest zainstalowany, włączony i ograniczony do zaufanych administratorów.
 
-## Konfiguracja narzędzi
+## Konfiguracja narzędzi {#tool-configuration}
 
-### Włączanie narzędzi
+### Włączanie narzędzi {#enabling-tools}
 
 Aby włączyć dodatkowe narzędzia w Theme Builder:
 
@@ -127,7 +127,7 @@ Aby włączyć dodatkowe narzędzia w Theme Builder:
 3. Włącz lub wyłącz narzędzia zgodnie z potrzebami
 4. Zapisz ustawienia
 
-### Uprawnienia narzędzi
+### Uprawnienia narzędzi {#tool-permissions}
 
 Niektóre narzędzia wymagają uprawnień:
 
@@ -137,7 +137,7 @@ Niektóre narzędzia wymagają uprawnień:
 - **Funkcje zaawansowane** — mogą wymagać subskrypcji premium
 - **Zaawansowane narzędzia towarzyszące** — wymagają osobno dystrybuowanego pakietu Advanced i wyraźnego zaufania administratora
 
-### Klucze API i dane uwierzytelniające
+### Klucze API i dane uwierzytelniające {#api-keys-and-credentials}
 
 Skonfiguruj klucze API dla narzędzi, które ich wymagają:
 
@@ -146,13 +146,13 @@ Skonfiguruj klucze API dla narzędzi, które ich wymagają:
 3. Przetestuj połączenie
 4. Zapisz bezpiecznie
 
-### Instalowanie pakietu towarzyszącego Advanced
+### Instalowanie pakietu towarzyszącego Advanced {#installing-the-advanced-companion-package}
 
 Pakiet towarzyszący Advanced jest wydawany oddzielnie od podstawowego ZIP WordPress.org. Zainstaluj go wyłącznie z oficjalnego kanału dystrybucji projektu dla danego wydania, a następnie ogranicz dostęp do zaufanych administratorów. Przejrzyj bramki zatwierdzania przez człowieka oraz zachowanie migawek git przed włączeniem narzędzi systemu plików, bazy danych, WP-CLI, dyspozytora REST, budowania pluginów, zarządzania użytkownikami lub benchmarków w witrynie produkcyjnej.
 
-## Korzystanie z sd-ai-agent/site-scrape
+## Korzystanie z sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Podstawowe użycie
+### Podstawowe użycie {#basic-usage}
 
 Poproś Theme Builder o przeanalizowanie witryny:
 
@@ -161,7 +161,7 @@ Przeanalizuj projekt witryny mojego konkurenta pod adresem competitor.com
 i zasugeruj ulepszenia projektu dla mojej witryny.
 ```
 
-### Konkretna analiza
+### Konkretna analiza {#specific-analysis}
 
 Poproś o konkretne typy analizy:
 
@@ -179,7 +179,7 @@ Sprawdź responsywność mobilną example.com i upewnij się, że moja witryna
 jest równie responsywna.
 ```
 
-### Analiza porównawcza
+### Analiza porównawcza {#comparison-analysis}
 
 Porównaj wiele witryn:
 
@@ -188,22 +188,22 @@ Porównaj projekty site1.com i site2.com oraz utwórz projekt,
 który łączy najlepsze elementy obu.
 ```
 
-## Ograniczenia narzędzi i kwestie do rozważenia
+## Ograniczenia narzędzi i kwestie do rozważenia {#tool-limitations-and-considerations}
 
-### Ograniczanie częstotliwości
+### Ograniczanie częstotliwości {#rate-limiting}
 
 - Scraping ma ograniczoną częstotliwość, aby zapobiec przeciążeniu serwera
 - Wiele żądań do tej samej witryny może być ograniczanych
 - Analiza dużych witryn może potrwać dłużej
 
-### Dokładność treści
+### Dokładność treści {#content-accuracy}
 
 - Treści dynamiczne mogą nie zostać w pełni uchwycone
 - Treści renderowane przez JavaScript mogą być niekompletne
 - Dane w czasie rzeczywistym mogą nie zostać odzwierciedlone
 - Niektóre treści mogą znajdować się za paywallami
 
-### Kwestie prawne i etyczne
+### Kwestie prawne i etyczne {#legal-and-ethical-considerations}
 
 - Szanuj robots.txt i zasady witryny
 - Nie scrapuj treści chronionych prawem autorskim w celu reprodukcji
@@ -211,16 +211,16 @@ który łączy najlepsze elementy obu.
 - Zweryfikuj, czy masz prawa do użycia wyodrębnionych treści
 - Przestrzegaj warunków korzystania z analizowanych witryn
 
-### Wpływ na wydajność
+### Wpływ na wydajność {#performance-impact}
 
 - Scraping dużych witryn może zająć czas
 - Wiele jednoczesnych scrapingów może działać wolniej
 - Łączność sieciowa wpływa na szybkość
 - Duże zbiory danych mogą wymagać więcej przetwarzania
 
-## Najlepsze praktyki
+## Najlepsze praktyki {#best-practices}
 
-### Korzystanie z analizy witryny
+### Korzystanie z analizy witryny {#using-site-analysis}
 
 1. **Analizuj wiele witryn** — zbieraj inspiracje z kilku źródeł
 2. **Skup się na strukturze** — poznaj wzorce układu i organizacji
@@ -228,7 +228,7 @@ który łączy najlepsze elementy obu.
 4. **Badaj typografię** — identyfikuj kombinacje fontów, które Ci się podobają
 5. **Przejrzyj nawigację** — zrozum organizację menu
 
-### Etyczny scraping
+### Etyczny scraping {#ethical-scraping}
 
 1. **Szanuj robots.txt** — przestrzegaj wytycznych witryny
 2. **Nie kopiuj treści** — używaj analizy wyłącznie jako inspiracji
@@ -236,7 +236,7 @@ który łączy najlepsze elementy obu.
 4. **Podawaj źródła** — uznawaj źródła inspiracji
 5. **Przestrzegaj warunków** — stosuj się do warunków korzystania z witryny
 
-### Maksymalizacja skuteczności narzędzia
+### Maksymalizacja skuteczności narzędzia {#maximizing-tool-effectiveness}
 
 1. **Bądź konkretny** — proś o konkretne typy analizy
 2. **Podaj kontekst** — wyjaśnij cel swojej witryny
@@ -244,9 +244,9 @@ który łączy najlepsze elementy obu.
 4. **Iteruj** — dopracowuj na podstawie wyników
 5. **Łącz narzędzia** — używaj wielu narzędzi do kompleksowej analizy
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
-### Witryny nie można zeskrapować
+### Witryny nie można zeskrapować {#site-wont-scrape}
 
 - Sprawdź, czy witryna jest publicznie dostępna
 - Zweryfikuj, czy robots.txt pozwala na scraping
@@ -254,7 +254,7 @@ który łączy najlepsze elementy obu.
 - Sprawdź połączenie internetowe
 - Skontaktuj się z pomocą techniczną, jeśli problem będzie się utrzymywał
 
-### Niekompletna analiza
+### Niekompletna analiza {#incomplete-analysis}
 
 - Witryna może mieć treści dynamiczne
 - JavaScript może nie zostać w pełni wyrenderowany
@@ -262,7 +262,7 @@ który łączy najlepsze elementy obu.
 - Spróbuj zamiast tego analizować konkretne strony
 - Poproś o konkretne typy analizy
 
-### Wolna wydajność
+### Wolna wydajność {#slow-performance}
 
 - Analiza dużych witryn trwa dłużej
 - Wiele jednoczesnych scrapingów działa wolniej
@@ -270,7 +270,7 @@ który łączy najlepsze elementy obu.
 - Spróbuj poza godzinami szczytu
 - Najpierw analizuj mniejsze sekcje
 
-## Powiązana dokumentacja
+## Powiązana dokumentacja {#related-documentation}
 
 - [Wywiad odkrywczy](./discovery-interview.md) — zbieraj informacje projektowe
 - [Kierunek projektowy](./design-direction.md) — dopracuj swój projekt

@@ -4,11 +4,11 @@ title: Filter - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message
+# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 Erlaabt de Benotzer, d'Noriicht iwwer déi ausstoend Bezuelungen z'änneren.
 
-## Parameteren
+## Parameteren {#parameters}
 
 | Numm | Typ | Beschreiwung |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Erlaabt de Benotzer, d'Noriicht iwwer déi ausstoend Bezuelungen z'änneren.
 | $customer | `\WP_Ultimo\Models\Customer` | Den aktuelle Client. |
 | $pending_payments | `array` | Eng Lëscht mat ausstoende Bezuelungen. |
 
-### Zënter
+### Zënter {#since}
 
 - 2.0.19
-### Quell
+### Quell {#source}
 
 Definéiert an [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) op der Linn 244

@@ -3,7 +3,7 @@ title: Ulepszanie planu
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Zmiana planu na wyższy (v2)
+# Zmiana planu na wyższy (v2) {#upgrading-a-plan-v2}
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
@@ -41,7 +41,7 @@ Po zakończeniu checkout nowy produkt/nowe produkty zostaną dodane do konta Two
 
 ##
 
-## Ścieżki zmiany na wyższy i niższy plan
+## Ścieżki zmiany na wyższy i niższy plan {#upgrade-and-downgrade-paths}
 
 W każdym z Twoich produktów znajdziesz kartę **Up & Downgrades**. Pierwsza opcja na tej karcie to pole o nazwie **Plan Group**.
 

@@ -3,13 +3,13 @@ title: Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 legger til en Hostinger multi-tenancy funksjonalitet, slik at hostede domener kan delta i suveren tenant-provisjonering sammen med den eksisterende Hostinger domene-mapping integrasjonen.
 
 Bruk denne funksjonaliteten når du administrerer tenant-domener og isolert tenant-infrastruktur gjennom Hostinger hPanel.
 
-## Oppsettnotater
+## Oppsettnotater {#setup-notes}
 
 1. Konfigurer kjernen i Hostinger-integrasjonen under **Ultimate Multisite > Settings > Host Integrations**.
 2. Bekreft at Hostinger API-tokenet kan administrere måldomenet eller subdomenet.
@@ -19,14 +19,14 @@ Bruk denne funksjonaliteten når du administrerer tenant-domener og isolert tena
 
 Hostinger-funksjonaliteten bruker den delte Hostinger-tilkoblingen for operasjoner på host-siden. DNS må fortsatt peke til riktig Hostinger-konto, og begrensningene i hPanel gjelder fortsatt.
 
-## Endringer spesifikke for funksjonalitet
+## Endringer spesifikke for funksjonalitet {#capability-specific-changes}
 
 - Suverene tenenter kan opprettes med domeneoperasjoner som er bevisste om hosten.
 - Database-host-strenger på samme maskin normaliseres før verifisering av tildeling.
 - Hostinger-administrerte tenenter skal bruke database-hostverdien som vises i hPanel, med mindre WordPress runtime krever en lokal overstyring.
 - SSO-besøk er avhengige av at tenant-domenet løser opp til den Hostinger-hostede tenanten.
 
-## Feilsøking av Hostinger tenenter
+## Feilsøking av Hostinger tenenter {#troubleshooting-hostinger-tenants}
 
 - Hvis installasjonen av en tenant feiler, bekreft at domenet allerede er knyttet til Hostinger-kontoen.
 - Hvis databaseverifiseringen feiler, sammenlign brukernavn for DB, databasenavn og hostbinding med hPanel.

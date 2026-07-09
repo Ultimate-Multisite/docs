@@ -3,19 +3,19 @@ title: 'ਸਬਕ 10: ਲੌਂਚ ਦਾ ਦਿਨ'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day
+# Lesson 10: Launch Day {#lesson-10-launch-day}
 
 ਸਭ ਕੁਝ ਬਣ ਗਿਆ ਹੈ। ਦੁਕਾਨ ਖੋਲ੍ਹਣ ਤੋਂ ਪਹਿਲਾਂ, ਇਹ ਲੈਸਨ ਇੱਕ 'ਪ੍ਰੀ-ਲੌਂਚ ਚੈੱਕਲਿਸਟ' (pre-launch checklist) ਦੱਸਦਾ ਹੈ ਤਾਂ ਜੋ ਇਹ ਯਕੀਨੀ ਹੋ ਸਕੇ ਕਿ ਕੁਝ ਵੀ ਟੁੱਟਿਆ ਹੋਇਆ, ਗਾਇਬ, ਜਾਂ ਸ਼ਰਮਨਾ ਵਾਲਾ ਨਾ ਹੋਵੇ।
 
-## Where We Left Off
+## Where We Left Off {#where-we-left-off}
 
 FitSite ਵਿੱਚ templates, plans, checkout, branding, onboarding, ਅਤੇ pricing ਸਭ ਕੁਝ set ਹੋ ਚੁੱਕਾ ਹੈ। ਹੁਣ ਅਸੀਂ ਇਹ verify ਕਰਦੇ ਹਾਂ ਕਿ ਸਭ ਕੁਝ ਕੰਮ ਕਰ ਰਿਹਾ ਹੈ ਅਤੇ live ਹੋ ਜਾਂਦੇ ਹਾਂ।
 
-## Pre-Launch Checklist
+## Pre-Launch Checklist {#pre-launch-checklist}
 
 ਹਰ item 'ਤੇ ਕੰਮ ਕਰੋ। ਕੋਈ ਵੀ chhoot ਨਾ ਜਾਵੇ।
 
-### Platform Infrastructure
+### Platform Infrastructure {#platform-infrastructure}
 
 - [ ] Hosting stable ਹੈ ਅਤੇ load 'ਤੇ achha perform ਕਰ ਰਹੀ ਹੈ
 - [ ] Wildcard SSL active ਹੈ ਅਤੇ ਸਾਰੇ subdomains HTTPS 'ਤੇ serve ਹੋ ਰਹੇ ਹਨ
@@ -23,7 +23,7 @@ FitSite ਵਿੱਚ templates, plans, checkout, branding, onboarding, ਅਤੇ
 - [ ] Backups configure ਅਤੇ test ਕੀਤੇ ਗਏ ਹਨ (ਘੱਟੋ-ਘੱਟ ਇੱਕ restore ਕਰਕੇ verify ਕਰੋ)
 - [ ] Monitoring setup ਹੈ -- ਤੁਹਾਨੂੰ ਪਤਾ ਲੱਗ ਜਾਵੇਗਾ ਕਿ ਜੇ platform down ਹੋ ਜਾਂਦਾ ਹੈ
 
-### Templates
+### Templates {#templates}
 
 - [ ] ਸਾਰੇ ਤਿੰਨ templates ਨਵੇਂ sites 'ਤੇ sahi tarah load ਹੁੰਦੇ ਹਨ
 - [ ] Placeholder content madadgar ਹੈ ਅਤੇ typos ਤੋਂ ਮੁਕਤ ਹੈ
@@ -32,7 +32,7 @@ FitSite ਵਿੱਚ templates, plans, checkout, branding, onboarding, ਅਤੇ
 - [ ] Page load speed acceptable ਹੈ (GTmetrix ਜਾਂ PageSpeed Insights ਵਰਗੇ tool ਨਾਲ test ਕਰੋ)
 - [ ] ਕਿਸੇ ਵੀ template 'ਤੇ ਕੋਈ broken link ਜਾਂ missing asset ਨਹੀਂ ਹੈ
 
-### Plans and Products
+### Plans and Products {#plans-and-products}
 
 - [ ] ਸਾਰੇ ਤਿੰਨ plans active ਅਤੇ visible ਹਨ
 - [ ] Plan descriptions accurate ਅਤੇ niche-specific ਹਨ
@@ -42,7 +42,7 @@ FitSite ਵਿੱਚ templates, plans, checkout, branding, onboarding, ਅਤੇ
 - [ ] Order bumps checkout ਦੌਰਾਨ sahi tarah appear ਹੁੰਦੇ ਹਨ
 - [ ] Plugin ਅਤੇ theme limitations ਹਰ plan ਅਨੁਸਾਰ sahi tarah enforce ਕੀਤੇ ਗਏ ਹਨ
 
-### Checkout Flow
+### Checkout Flow {#checkout-flow}
 
 - [ ] ਹਰੇਕ plan 'ਤੇ ਇੱਕ full test signup complete ਕਰੋ (test payment mode ਵਰਤੋ)
 - [ ] Template selection plan ਅਨੁਸਾਰ sahi templates ਦਿਖਾਉਂਦਾ ਹੈ
@@ -52,7 +52,7 @@ FitSite ਵਿੱਚ templates, plans, checkout, branding, onboarding, ਅਤੇ
 - [ ] Customer ਤੁਰੰਤ ਆਪਣੇ ਨਵੇਂ site ਵਿੱਚ log in ਕਰ ਸਕਦਾ ਹੈ
 - [ ] Discount codes sahi tarah ਕੰਮ ਕਰਦੇ ਹਨ
 
-### Branding
+### Branding {#branding}
 
 - [ ] Login page FitSite branding ਦਿਖਾਉਂਦਾ ਹੈ
 - [ ] Admin dashboard FitSite branding ਦਿਖਾਉਂਦਾ ਹੈ
@@ -60,7 +60,7 @@ FitSite ਵਿੱਚ templates, plans, checkout, branding, onboarding, ਅਤੇ
 - [ ] Invoices ਤੁਹਾਡੇ business details ਨਾਲ sahi tarah display ਹੁੰਦੇ ਹਨ
 - [ ] Marketing site live ਹੈ ਅਤੇ checkout form ਨਾਲ link ਕਰਦਾ ਹੈ
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Quick Start widget ਨਵੇਂ customer dashboards 'ਤੇ appear ਹੁੰਦਾ ਹੈ
 - [ ] ਸਾਰੇ Quick Start links ਸਹੀ pages 'ਤੇ point ਕਰਦੇ ਹਨ
@@ -68,7 +68,7 @@ FitSite ਵਿੱਚ templates, plans, checkout, branding, onboarding, ਅਤੇ
 - [ ] Knowledge base articles publish ਅਤੇ accessible ਹਨ
 - [ ] Account page ਸਹੀ plan information ਅਤੇ upgrade options ਦਿਖਾਉਂਦਾ ਹੈ
 
-### Legal and Business
+### Legal and Business {#legal-and-business}
 
 - [ ] Terms of service publish ਕੀਤੇ ਗਏ ਹਨ ਅਤੇ checkout ਤੋਂ link ਕੀਤੇ ਗਏ ਹਨ
 - [ ] Privacy policy publish ਅਤੇ accessible ਹੈ
@@ -77,11 +77,11 @@ FitSite ਵਿੱਚ templates, plans, checkout, branding, onboarding, ਅਤੇ
 - [ ] Payment gateway live mode ਵਿੱਚ ਹੈ (test mode ਵਿੱਚ ਨਹੀਂ)
 - [ ] Tax configuration ਤੁਹਾਡੇ jurisdiction ਲਈ sahi ਹੈ
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 ਇੱਕ ਦੋ-phase launch 'ਤੇ ਵਿਚਾਰ ਕਰੋ:
 
-### Phase 1: Soft Launch
+### Phase 1: Soft Launch {#phase-1-soft-launch}
 
 Public launch ਤੋਂ ਪਹਿਲਾਂ 5-10 fitness studio owners ਨੂੰ sign up ਕਰਨ ਲਈ invite ਕਰੋ। ਇਹ ਤੁਹਾਡੇ beta customers ਹਨ। ਉਨ੍ਹਾਂ ਨੂੰ ਇਹ ਦੇਣ ਦੇ ਬਦਲੇ ਇੱਕ significant discount (life ਲਈ 50% off, ਜਾਂ 3 ਮਹੀਨੇ free) ਦੀ ਪੇਸ਼ਕਸ਼ ਕਰੋ:
 
@@ -91,7 +91,7 @@ Public launch ਤੋਂ ਪਹਿਲਾਂ 5-10 fitness studio owners ਨੂੰ 
 
 ਇਸ ਨਾਲ ਤੁਹਾਨੂੰ real customer feedback ਅਤੇ public ਨੂੰ showcase ਕਰਨ ਲਈ live sites ਮਿਲਦੇ ਹਨ।
 
-### Phase 2: Public Launch
+### Phase 2: Public Launch {#phase-2-public-launch}
 
 Soft launch feedback ਨੂੰ incorporate ਕਰਨ ਤੋਂ ਬਾਅਦ:
 
@@ -100,7 +100,7 @@ Soft launch feedback ਨੂੰ incorporate ਕਰਨ ਤੋਂ ਬਾਅਦ:
 - customer acquisition ਸ਼ੁਰੂ ਕਰੋ (Lesson 11)
 - ਸਬੰਧਤ fitness industry channels 'ਤੇ announce ਕਰੋ
 
-## Launch Day Actions
+## Launch Day Actions {#launch-day-actions}
 
 ਜਿਹੜੇ ਦਿਨ ਤੁਸੀਂ public ਹੋ ਰਹੇ ਹੋ:
 
@@ -110,7 +110,7 @@ Soft launch feedback ਨੂੰ incorporate ਕਰਨ ਤੋਂ ਬਾਅਦ:
 4. **उपलब्ਧ ਰਹੋ** -- ਤੁਹਾਡੇ ਪਹਿਲੇ real customers ਨੂੰ help ਦੀ ਲੋੜ ਹੋ ਸਕਦੀ ਹੈ, ਅਤੇ fast response trust ਬਣਾਉਂਦਾ ਹੈ
 5. **ਥੋੜਾ ਜਿਹਾ celebrate ਕਰੋ** -- ਫਿਰ ਕੰਮ 'ਤੇ ਵਾਪਸ ਆ ਜਾਓ
 
-## What Can Go Wrong
+## What Can Go Wrong {#what-can-go-wrong}
 
 ਇਸ ਲਈ ਤਿਆਰ ਰਹੋ:
 
@@ -120,7 +120,7 @@ Soft launch feedback ਨੂੰ incorporate ਕਰਨ ਤੋਂ ਬਾਅਦ:
 - **Performance under load**: ਜੇ ਤੁਹਾਨੂੰ traffic spike ਮਿਲਦਾ ਹੈ, ਤਾਂ hosting ਨੂੰ scale ਕਰਨਾ ਕਿਵੇਂ ਹੈ, ਇਹ ਪਤਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ
 - **Customer confusion**: ਆਪਣੀ knowledge base ਅਤੇ support channels ਤਿਆਰ ਰੱਖੋ
 
-## The FitSite Network So Far
+## The FitSite Network So Far {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## What We Built This Lesson
+## What We Built This Lesson {#what-we-built-this-lesson}
 
 - **ਇੱਕ comprehensive pre-launch checklist** ਜੋ infrastructure, content, payments, ਅਤੇ legal ਨੂੰ cover ਕਰਦੀ ਹੈ
 - **ਇੱਕ soft launch strategy** ਤਾਂ ਜੋ public ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ real feedback ਮਿਲ ਸਕੇ

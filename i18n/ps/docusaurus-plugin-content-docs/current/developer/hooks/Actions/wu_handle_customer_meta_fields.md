@@ -4,11 +4,11 @@ title: عمل - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# عمل: wu_handle_customer_meta_fields
+# عمل: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 plugin جوړوونکو ته اجازه ورکړئ چې که اړتیا ولري، meta data په بېلابېلو لارو خوندي کړي.
 
-## پارامترونه
+## پارامترونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
@@ -16,9 +16,9 @@ plugin جوړوونکو ته اجازه ورکړئ چې که اړتیا ولري
 | $customer | `\Customer` | د Ultimate Multisite customer څیز. |
 | $checkout | `\Checkout` | د checkout class. |
 
-### له
+### له {#since}
 
 - 2.0.0
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) کې په 1211 کرښه تعریف شوی.

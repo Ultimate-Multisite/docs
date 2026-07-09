@@ -3,13 +3,13 @@ title: Zure erregistro-inprimakia pertsonalizatzea
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Zure erregistro-inprimakia pertsonalizatzea
+# Zure erregistro-inprimakia pertsonalizatzea {#customizing-your-registration-form}
 
 Zure sarea WordPress plataforman eraikitako beste SaaS guztietatik berezia izan dadin, Ultimate Multisite-k zure erregistro- eta saio-hasiera orriak pertsonalizatzeko aukera ematen dizu gure **Checkout Forms** eginbidearekin.
 
 Bezero berriak bihurtzen saiatzean ikuspegi desberdinekin esperimentatzeko modu erraz eta malguak badira ere, batez ere erregistro-inprimaki pertsonalizatuak sortzeko erabiltzen dira. Artikulu honen helburua hori nola egin dezakezun erakustea da.
 
-## Saio-hasiera eta erregistro orriak:
+## Saio-hasiera eta erregistro orriak: {#login-and-registration-pages}
 
 Ultimate Multisite instalatzean, automatikoki saio-hasiera eta erregistro orri pertsonalizatuak sortzen ditu zure gune nagusian. Lehenetsitako orri hauek edozein unetan alda ditzakezu zure **Ultimate Multisite > Settings > Login & Registration** orrira joanda.
 
@@ -45,7 +45,7 @@ Orain, ikus ditzagun saio-hasiera eta erregistro prozesurako oraindik garrantzit
 
 Eta hori da pertsonaliza ditzakezun saio-hasiera eta erregistroarekin lotutako aukera guztia! Ez ahaztu zure ezarpenak gordetzea haiek editatzen amaitu ondoren.
 
-## Erregistro-inprimaki anitz erabiltzea:
+## Erregistro-inprimaki anitz erabiltzea: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0-k checkout inprimakien editore bat eskaintzen du, nahi adina inprimaki sortzeko aukera ematen dizuna, eremu desberdinekin, eskaintzako produktuekin, eta abar.
 
@@ -69,7 +69,7 @@ Bestela, dagoeneko dituzun inprimakiak editatu edo bikoiztu ditzakezu haien izen
 
 Urrats bakarra edo urrats anitzekoa hautatzen baduzu, checkout inprimakia dagoeneko aurrez beteta egongo da funtzionatzeko behar dituen oinarrizko urratsekin. Ondoren, nahi baduzu, urrats gehigarriak gehi diezazkiokezu.
 
-### Checkout Form bat editatzea:
+### Checkout Form bat editatzea: {#editing-a-checkout-form}
 
 Lehen aipatu dugun bezala, helburu desberdinetarako checkout inprimakiak sor ditzakezu. Adibide honetan erregistro-inprimaki batean lan egingo dugu.
 
@@ -131,11 +131,11 @@ Zure formularioaren shortcode-a lortzeko, sakatu **Generate Shortcode** eta kopi
 
 _**Oharra:** Shortcode hau zure erregistro-orrian gehitu beharko duzu checkout formulario hau bertan gehituta egon dadin._
 
-## Produktuak eta txantiloiak URL parametroen bidez aurrez hautatzea:
+## Produktuak eta txantiloiak URL parametroen bidez aurrez hautatzea: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Zure produktuentzako prezio-taula pertsonalizatuak sortu nahi badituzu eta checkout formularioan zure bezeroak zure prezio-taulatik edo txantiloien orritik aukeratzen duen produktua edo txantiloia aurrez hautatu nahi baduzu, URL parametroak erabil ditzakezu horretarako.
 
-### **Planetarako:**
+### **Planetarako:** {#for-plans}
 
 Joan **Ultimate Multisite > Products > Select a plan** atalera. Orriaren goialdean **Click to copy Shareable Link** botoia ikusi beharko zenuke. Esteka hau erabil dezakezu plan zehatz hau zure checkout formularioan aurrez hautatzeko.
 
@@ -143,7 +143,7 @@ Joan **Ultimate Multisite > Products > Select a plan** atalera. Orriaren goialde
 
 Kontuan izan esteka partekagarri hau **Plans**-etarako bakarrik dela baliozkoa. Ezin dituzu esteka partekagarriak erabili pakete edo zerbitzuetarako.
 
-### Txantiloietarako:
+### Txantiloietarako: {#for-templates}
 
 Zure checkout formularioan gune-txantiloiak aurrez hautatu nahi badituzu, parametro hau erabil dezakezu: **?template_id=X** zure erregistro-orriaren URLan. "X" ordeztu behar da **gune-txantiloiaren ID zenbakiarekin**. Zenbaki hau lortzeko, joan **Ultimate Multisite > Sites** atalera.
 

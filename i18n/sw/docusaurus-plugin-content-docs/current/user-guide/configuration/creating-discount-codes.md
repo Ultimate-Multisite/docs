@@ -3,13 +3,13 @@ title: Kuunda Misimbo ya Punguzo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kuunda Misimbo ya Punguzo (v2)
+# Kuunda Misimbo ya Punguzo (v2) {#creating-discount-codes-v2}
 
 _**MAELEZO MUHIMU: Makala haya yanahusu Ultimate Multisite toleo la 2.x.**_
 
 Ukiwa na Ultimate Multisite unaweza kuunda misimbo ya punguzo ili kuwapa wateja wako punguzo kwenye usajili wao. Na kuiunda ni rahisi!
 
-## Kuunda na Kuhariri Misimbo ya Punguzo
+## Kuunda na Kuhariri Misimbo ya Punguzo {#creating-and-editing-discount-codes}
 
 Ili kuunda au kuhariri msimbo wa punguzo, nenda kwenye **Ultimate Multisite > Misimbo ya Punguzo**.
 
@@ -87,7 +87,7 @@ Kuponi sasa iko kwenye orodha yako na, kutoka hapo, unaweza kubofya ili **kuhari
 
 ###
 
-### Kutumia Vigezo vya URL:
+### Kutumia Vigezo vya URL: {#using-url-parameters}
 
 Ikiwa unataka kubinafsisha majedwali yako ya bei au kujenga ukurasa mzuri wa msimbo wa kuponi kwa tovuti yako na unataka kutumia msimbo wa punguzo kwenye fomu yako ya malipo kiotomatiki, unaweza kufanya hivi kupitia vigezo vya URL.
 

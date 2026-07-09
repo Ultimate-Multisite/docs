@@ -3,7 +3,7 @@ title: Müşderileri dolandyrmak
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Müşterileri Yönetmek
+# Müşterileri Yönetmek {#managing-customers}
 
 **Customers** (Müşteriler) sayfası şeýleňizdäki ulgamlarda ýazgy edilen üslupçylaryň sanawyny görkezýär. Bu sayt ady, e-poçta, soňky giriş wagtyna we subsite administratory hökmünde ulgamyňize girip bilmek üçin **switch to** (geçirmek üçin) linki bar bolan üslupçynyň esasy maglumatlaryny görkezýär.
 

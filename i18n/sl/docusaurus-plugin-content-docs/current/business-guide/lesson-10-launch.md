@@ -3,19 +3,19 @@ title: 'Lekcija 10: Dan lansiranja'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lekcija 10: Dan lansiranja
+# Lekcija 10: Dan lansiranja {#lesson-10-launch-day}
 
 Vse je zgrajeno. Preden odprete vrata, vas ta lekcija vodi skozi kontrolni seznam pred lansiranjem, da se prepričate, da ni nič pokvarjeno, manjkajoče ali neprijetno.
 
-## Kje smo ostali
+## Kje smo ostali {#where-we-left-off}
 
 FitSite ima predloge, načrte, zaključek nakupa, blagovno znamčenje, uvajanje in cene v celoti konfigurirane. Zdaj preverimo, ali vse deluje, in gremo v živo.
 
-## Kontrolni seznam pred lansiranjem
+## Kontrolni seznam pred lansiranjem {#pre-launch-checklist}
 
 Pojdite skozi vsako postavko. Nobene ne preskočite.
 
-### Infrastruktura platforme
+### Infrastruktura platforme {#platform-infrastructure}
 
 - [ ] Gostovanje je stabilno in dobro deluje pod obremenitvijo
 - [ ] Wildcard SSL je aktiven in vse poddomene se strežejo prek HTTPS
@@ -23,7 +23,7 @@ Pojdite skozi vsako postavko. Nobene ne preskočite.
 - [ ] Varnostne kopije so konfigurirane in preizkušene (obnovite vsaj eno, da preverite)
 - [ ] Spremljanje je vzpostavljeno -- vedeli boste, če platforma preneha delovati
 
-### Predloge
+### Predloge {#templates}
 
 - [ ] Vse tri predloge se pravilno naložijo na novih spletnih mestih
 - [ ] Nadomestna vsebina je koristna in brez tipkarskih napak
@@ -32,7 +32,7 @@ Pojdite skozi vsako postavko. Nobene ne preskočite.
 - [ ] Hitrost nalaganja strani je sprejemljiva (preizkusite z orodjem, kot sta GTmetrix ali PageSpeed Insights)
 - [ ] Na nobeni predlogi ni nedelujočih povezav ali manjkajočih sredstev
 
-### Načrti in izdelki
+### Načrti in izdelki {#plans-and-products}
 
 - [ ] Vsi trije načrti so aktivni in vidni
 - [ ] Opisi načrtov so točni in specifični za nišo
@@ -42,7 +42,7 @@ Pojdite skozi vsako postavko. Nobene ne preskočite.
 - [ ] Dodatne ponudbe se pravilno prikažejo med zaključkom nakupa
 - [ ] Omejitve pluginov in tem so pravilno uveljavljene glede na načrt
 
-### Tok zaključka nakupa
+### Tok zaključka nakupa {#checkout-flow}
 
 - [ ] Opravite celoten testni vpis za vsak načrt (uporabite testni način plačila)
 - [ ] Izbira predloge prikazuje pravilne predloge glede na načrt
@@ -52,7 +52,7 @@ Pojdite skozi vsako postavko. Nobene ne preskočite.
 - [ ] Stranka se lahko takoj prijavi v svoje novo spletno mesto
 - [ ] Kode za popust delujejo pravilno
 
-### Blagovna znamka
+### Blagovna znamka {#branding}
 
 - [ ] Stran za prijavo prikazuje blagovno znamko FitSite
 - [ ] Admin Dashboard prikazuje blagovno znamko FitSite
@@ -60,7 +60,7 @@ Pojdite skozi vsako postavko. Nobene ne preskočite.
 - [ ] Računi so pravilno prikazani z vašimi poslovnimi podatki
 - [ ] Marketinško spletno mesto je v živo in vodi do obrazca za zaključek nakupa
 
-### Uvajanje
+### Uvajanje {#onboarding}
 
 - [ ] Gradnik Hitri začetek se prikaže na Dashboardih novih strank
 - [ ] Vse povezave Hitri začetek vodijo na pravilne strani
@@ -68,7 +68,7 @@ Pojdite skozi vsako postavko. Nobene ne preskočite.
 - [ ] Članki zbirke znanja so objavljeni in dostopni
 - [ ] Stran Account prikazuje pravilne informacije o načrtu in možnosti nadgradnje
 
-### Pravno in poslovno
+### Pravno in poslovno {#legal-and-business}
 
 - [ ] Pogoji uporabe so objavljeni in povezani iz zaključka nakupa
 - [ ] Politika zasebnosti je objavljena in dostopna
@@ -77,11 +77,11 @@ Pojdite skozi vsako postavko. Nobene ne preskočite.
 - [ ] Plačilni prehod je v načinu v živo (ne v testnem načinu)
 - [ ] Davčna konfiguracija je pravilna za vašo jurisdikcijo
 
-## Mehko lansiranje proti trdemu lansiranju
+## Mehko lansiranje proti trdemu lansiranju {#soft-launch-vs-hard-launch}
 
 Razmislite o lansiranju v dveh fazah:
 
-### Faza 1: Mehko lansiranje
+### Faza 1: Mehko lansiranje {#phase-1-soft-launch}
 
 Povabite 5-10 lastnikov fitnes studiev, da se prijavijo pred javnim lansiranjem. To so vaše beta stranke. Ponudite jim znaten popust (50 % popusta za vedno ali 3 mesece brezplačno) v zameno za:
 
@@ -91,7 +91,7 @@ Povabite 5-10 lastnikov fitnes studiev, da se prijavijo pred javnim lansiranjem.
 
 To vam da resnične povratne informacije strank in živa spletna mesta za predstavitev, preden se odprete javnosti.
 
-### Faza 2: Javno lansiranje
+### Faza 2: Javno lansiranje {#phase-2-public-launch}
 
 Ko vključite povratne informacije mehkega lansiranja:
 
@@ -100,7 +100,7 @@ Ko vključite povratne informacije mehkega lansiranja:
 - Začnite pridobivati stranke (Lekcija 11)
 - Objavite na relevantnih kanalih fitnes industrije
 
-## Dejanja na dan lansiranja
+## Dejanja na dan lansiranja {#launch-day-actions}
 
 Na dan, ko greste javno v živo:
 
@@ -110,7 +110,7 @@ Na dan, ko greste javno v živo:
 4. **Bodite dosegljivi** -- vaše prve prave stranke bodo morda potrebovale pomoč, hiter odziv pa gradi zaupanje
 5. **Na kratko praznujte** -- nato se vrnite na delo
 
-## Kaj gre lahko narobe
+## Kaj gre lahko narobe {#what-can-go-wrong}
 
 Bodite pripravljeni na:
 
@@ -120,7 +120,7 @@ Bodite pripravljeni na:
 - **Zmogljivost pod obremenitvijo**: Če dobite porast prometa, vedite, kako razširiti svoje gostovanje
 - **Zmeda strank**: Pripravite svojo zbirko znanja in kanale podpore
 
-## Omrežje FitSite do zdaj
+## Omrežje FitSite do zdaj {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Kaj smo zgradili v tej lekciji
+## Kaj smo zgradili v tej lekciji {#what-we-built-this-lesson}
 
 - **Celovit kontrolni seznam pred lansiranjem**, ki zajema infrastrukturo, vsebino, plačila in pravne zadeve
 - **Strategijo mehkega lansiranja** za pridobivanje resničnih povratnih informacij pred javnim lansiranjem

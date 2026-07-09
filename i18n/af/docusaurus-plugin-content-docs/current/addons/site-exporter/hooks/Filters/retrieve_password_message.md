@@ -4,11 +4,11 @@ title: Filter - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Filter die boodskapsliggaam van die wagwoordreset-e-pos.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Filter die boodskapsliggaam van die wagwoordreset-e-pos.
 | $user_login | `string` | Die gebruikersnaam vir die gebruiker. |
 | $user_data | `\WP_User` | WP_User objek. |
 
-### Since
+### Since {#since}
 
 - 2.8.0
 - 4.1.0: Added <code>$user_login</code> and <code>$user_data</code> parameters.
-### Source
+### Source {#source}
 
 Defined in [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) at line 149
 
 
-## Returns
+## Returns {#returns}
 Standaard-e-posboodskap.

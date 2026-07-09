@@ -3,11 +3,11 @@ title: ئىلمەكلەر قوللانمىسى
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks پايدىلانمىسى
+# Hooks پايدىلانمىسى {#hooks-reference}
 
 Ultimate Multisite دىكى بارلىق **59 مەشغۇلات** ۋە **118 سۈزگۈچ** ئۈچۈن ئاپتوماتىك ھاسىل قىلىنغان ھۆججەت.
 
-## مەشغۇلاتلار
+## مەشغۇلاتلار {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — كىملىك دەلىللەش قايتا نىشانلاشتىن بۇرۇن ئىجرا بولىدۇ.
 - [set_auth_cookie](./Actions/set_auth_cookie) — كىملىك دەلىللەش cookie تەڭشىلىشتىن دەرھال بۇرۇن ئىجرا بولىدۇ.
@@ -70,7 +70,7 @@ Ultimate Multisite دىكى بارلىق **59 مەشغۇلات** ۋە **118 سۈ
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — بىر ئوبيېكت database قا ساقلانغاندىن كېيىن ئىجرا بولىدۇ.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin ئىجادكارلىرىنىڭ قۇلۇپ ئېچىش جەريانىغا actions قوشۇشىغا يول قويىدۇ.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — دەلىللەش cookie نىڭ ۋاقتى توشۇش مۇددىتىنىڭ ئۇزۇنلۇقىنى سۈزۈيدۇ.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — دەلىللەش قايتا يۆتكەش scheme نى سۈزۈيدۇ.

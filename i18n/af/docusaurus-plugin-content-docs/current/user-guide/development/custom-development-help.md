@@ -3,13 +3,13 @@ title: Hulp met aangepaste ontwikkeling
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Hoe om spesiale ontwikkelingshulp van Codeable te kry?
+# Hoe om spesiale ontwikkelingshulp van Codeable te kry? {#how-to-get-custom-development-help-from-codeable}
 
 Soms het ons regtig fantastiese aanpassings nodig om ons netwerk presies so te laat loop hoe ons wil. As dit is wat jy soek, beveel ons [Codeable] aan, 'n plek waar jy ervare ontwikkelaars met Ultimate Multisite-kennis kan vind.
 
 [Codeable] is 'n platform wat kliënte verbind met gekwalifiseerde WordPress freelance ontwikkelaars, wat op projekte van enige grootte kan werk. Hulle het 'n noukeurige aansoekproses om te verseker dat jy gekoppel word aan kundiges wat spesifiek gekwalifiseer is vir die taak wat jy in gedagte het.
 
-### Hoe om 'n projek in Codeable te skep?
+### Hoe om 'n projek in Codeable te skep? {#how-to-create-a-project-in-codeable}
 
 Gaan eers na [Codeable] en klik op die **Start a Project** knoppie.
 

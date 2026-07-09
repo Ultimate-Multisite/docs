@@ -4,11 +4,11 @@ title: Szűrő - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status
+# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
 
 A poszt objektum adatait szűrőképpen használja, mielőtt azok az adatbázisba kerülnek mentésre.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -16,9 +16,9 @@ A poszt objektum adatait szűrőképpen használja, mielőtt azok az adatbázisb
 | $post_type | `string` | A poszt típusa. |
 | $this | `\Base_Model` | Az objektum példányát. |
 
-### Mivel
+### Mivel {#since}
 
 - 2.0.0
-### Forrás
+### Forrás {#source}
 
 Definálva van [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) fájlban, 320-sorban.

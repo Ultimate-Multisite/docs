@@ -3,17 +3,17 @@ title: 'Leciono 9: Prezado por Profito'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Leciono 9: Prezigado por Profito
+# Leciono 9: Prezigado por Profito {#lesson-9-pricing-for-profit}
 
 En Leciono 5 ni starigis komencajn prezojn por FitSite-planoj. Nun ni rafinas la prezigan strategion per teknikoj kiuj pliigas enspezon, instigas ĝisdatigojn, kaj reduktas foriron.
 
-## Kie Ni Restis
+## Kie Ni Restis {#where-we-left-off}
 
 FitSite havas planojn, ŝablonojn, kasprocezon, markigon, kaj enkondukon pretajn. La komenca prezigado estis $49/$99/$199 monate. Nun ni igas tiun prezigadon labori pli forte.
 
-## Prezigaj Principoj por Niĉaj Platformoj
+## Prezigaj Principoj por Niĉaj Platformoj {#pricing-principles-for-niche-platforms}
 
-### Prezu laŭ Valoro, Ne Kosto
+### Prezu laŭ Valoro, Ne Kosto {#price-on-value-not-cost}
 
 Viaj gastigaj kostoj povus esti $5-$15 por ĉiu klienta retejo. Tio ne signifas ke via prezo devus esti $20. Vi ne vendas gastigadon. Vi vendas:
 
@@ -24,7 +24,7 @@ Viaj gastigaj kostoj povus esti $5-$15 por ĉiu klienta retejo. Tio ne signifas 
 
 Prezu surbaze de la valoro kiun vi liveras, ne la kosto por liveri ĝin.
 
-### Ankru al Alternativoj
+### Ankru al Alternativoj {#anchor-to-alternatives}
 
 Kiam posedanto de taŭgeca studio taksas FitSite, ili komparas ĝin kun:
 
@@ -34,7 +34,7 @@ Kiam posedanto de taŭgeca studio taksas FitSite, ili komparas ĝin kun:
 
 Je $49-$199/monate, FitSite estas pli malmultekosta ol programisto, pli kapabla ol ĝeneralaj konstruiloj, kaj senfine pli bona ol neniu retejo.
 
-## Efektivigado de Prezaj Variaĵoj
+## Efektivigado de Prezaj Variaĵoj {#implementing-price-variations}
 
 Jara prezigado instigas engaĝiĝon kaj reduktas foriron. Iru al la langeto **Price Variations** de ĉiu plano kaj aldonu jarajn opciojn:
 
@@ -46,12 +46,12 @@ Jara prezigado instigas engaĝiĝon kaj reduktas foriron. Iru al la langeto **Pr
 
 Aldonu kampon **Period Selection** al via kasproceza formularo por ke klientoj povu ŝalti inter monata kaj jara fakturado. Vidu [Kasprocezaj Formularoj](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Kial Jara Prezigado Funkcias
+### Kial Jara Prezigado Funkcias {#why-annual-pricing-works}
 
 - **Por vi**: Antaŭpaga mono, pli malalta foriro (klientoj kiuj pagas jare malpli verŝajne nuligas meze de la periodo)
 - **Por ili**: Vera ŝparo, buĝeta antaŭvidebleco
 
-## Agordaj Kotizoj
+## Agordaj Kotizoj {#setup-fees}
 
 Konsideru unufojan agordan kotizon por planoj kiuj inkluzivas praktikan konfiguradon:
 
@@ -61,7 +61,7 @@ Konsideru unufojan agordan kotizon por planoj kiuj inkluzivas praktikan konfigur
 
 Konfiguru agordajn kotizojn en la preziga sekcio de ĉiu plano. Vidu [Krei Vian Unuan Abonan Produkton](/user-guide/configuration/creating-your-first-subscription-product) por detaloj.
 
-## Provperiodoj
+## Provperiodoj {#trial-periods}
 
 Oferti provperiodon reduktas registriĝan frikcion sed enkondukas la riskon de ne-konvertiĝo. Por FitSite:
 
@@ -70,11 +70,11 @@ Oferti provperiodon reduktas registriĝan frikcion sed enkondukas la riskon de n
 
 Konfiguru la provon en la preziga sekcio de la Starter-plano per ebligo de la baskulo **Offer Trial** kaj agordo de la daŭro al 7 tagoj.
 
-### Igi Provojn Konverti
+### Igi Provojn Konverti {#making-trials-convert}
 
 Provo funkcias nur se la kliento spertas valoron dum la provperiodo. Via enkonduka sinsekvo (Leciono 8) estas kritika ĉi tie -- la bonvenigaj retpoŝtoj devus esti tempigitaj por peli engaĝiĝon ene de la 7-taga fenestro.
 
-## Rabattkodoj
+## Rabattkodoj {#discount-codes}
 
 Kreu strategiajn rabattkodojn por specifaj celoj:
 
@@ -88,7 +88,7 @@ Iru al **Ultimate Multisite > Discount Codes** por krei ĉi tiujn. Vidu [Krei Ra
 Rabatoj devus esti strategiaj iloj, ne konstantaj fiksaĵoj. Se ĉiuj ricevas rabaton, ĝi ne estas rabato -- ĝi estas via vera prezo. Uzu ilin por specifaj kampanjoj, referencoj, kaj tempolimigitaj reklamoj.
 :::
 
-## Traktado de Impostoj
+## Traktado de Impostoj {#tax-handling}
 
 Se vi funkcias en jurisdikcio kiu postulas impostkolektadon:
 
@@ -98,7 +98,7 @@ Se vi funkcias en jurisdikcio kiu postulas impostkolektadon:
 
 Vidu [Traktado de Impostoj](/user-guide/payment-gateways/tax-handling) por detala konfigurado. Se vi servas klientojn internacie, konsideru la [VAT addon](/addons/vat) por EU-konformeco.
 
-## Revizii Vian Prezigadon
+## Revizii Vian Prezigadon {#reviewing-your-pricing}
 
 Post lanĉo, revizitu prezigadon ĉiun kvaronon. Rigardu:
 
@@ -107,7 +107,7 @@ Post lanĉo, revizitu prezigadon ĉiun kvaronon. Rigardu:
 - **Foriro laŭ plano**: Se jaraj klientoj foriras malpli, antaŭenpuŝu jarprezigadon pli forte
 - **Konkuranta prezigado**: Kiom pagigas alternativoj? Ĉu vi estas ĝuste poziciigita?
 
-## La FitSite-Reto Ĝis Nun
+## La FitSite-Reto Ĝis Nun {#the-fitsite-network-so-far}
 
 ```
 FitSite-Reto
@@ -132,7 +132,7 @@ FitSite-Reto
 └── Preta por lanĉo (sekva leciono)
 ```
 
-## Kion Ni Konstruis en Ĉi tiu Leciono
+## Kion Ni Konstruis en Ĉi tiu Leciono {#what-we-built-this-lesson}
 
 - **Jara prezado** kun 20% rabato por kuraĝigi sindevontigon
 - **Agordaj kotizoj** ĉe pli altaj niveloj por kovri enkondukan laboron

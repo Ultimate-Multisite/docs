@@ -3,11 +3,11 @@ title: Hooks-Referenz
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks-Referenz
+# Hooks-Referenz {#hooks-reference}
 
 Automatesch generéiert Dokumentatioun fir all **59 Aktiounen** an **118 Filteren** an Ultimate Multisite.
 
-## Aktiounen
+## Aktiounen {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Gëtt ausgeléist virun der Authentifizéierungs-Ëmleedung.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Gëtt direkt ausgeléist ier den Authentifizéierungs-Cookie gesat gëtt.
@@ -70,7 +70,7 @@ Automatesch generéiert Dokumentatioun fir all **59 Aktiounen** an **118 Filtere
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Gëtt ausgeléist, nodeems en Objet an der Datebank gespäichert gouf.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Erlaabt plugin-Entwéckler, actions zum Entspärprozess derbäizesetzen.
 
-## Filteren
+## Filteren {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtert d'Dauer vun der Oflafperiod vum Authentifikatiouns-Cookie.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtert den Authentifikatiouns-Redirect-Schema.

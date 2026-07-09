@@ -3,11 +3,11 @@ title: سەرچاوەی هۆکەکان
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# سەرچاوەی Hooks
+# سەرچاوەی Hooks {#hooks-reference}
 
 بەڵگەنامەیەکی خۆکار دروستکراو بۆ هەموو **59 کردارەکان** و **118 فلتەرەکان** لە Ultimate Multisite.
 
-## کردارەکان
+## کردارەکان {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — پێش ئاڕاستەکردنەوەی پشتڕاستکردنەوە جێبەجێ دەبێت.
 - [set_auth_cookie](./Actions/set_auth_cookie) — ڕاستەوخۆ پێش دانانی کوکیی پشتڕاستکردنەوە جێبەجێ دەبێت.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — دوای ئەوەی شتێک لە بنکەی داتادا پاشەکەوت دەکرێت کارا دەبێت.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — ڕێگە دەدات پەرەپێدەرانی plugin کردار زیاد بکەن بۆ پرۆسەی کردنەوەی قوفڵ.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ماوەی بەسەرچوونی cookieـی ڕەسەنایەتی فلتەر دەکات.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — شێوازی ئاراستەکردنەوەی ڕەسەنایەتی فلتەر دەکات.

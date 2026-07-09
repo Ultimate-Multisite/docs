@@ -3,11 +3,11 @@ title: Başlıq domen axtarışı
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domen Axtarışı
+# Header Domen Axtarışı {#header-domain-search}
 
 Ultimate Multisite checkout daxilində müştəriyə mövcud domenlər arasından seçim etməyə imkan verən domen axtarışını başladan kiçik header formu istədiyiniz zaman bu quraşdırmadan istifadə edin.
 
-## Tələblər
+## Tələblər {#requirements}
 
 - Ultimate Multisite şəbəkə üzrə aktiv olmalıdır.
 - Multisite Ultimate Domain Seller şəbəkə üzrə aktiv olmalıdır.
@@ -16,7 +16,7 @@ Ultimate Multisite checkout daxilində müştəriyə mövcud domenlər arasında
   - Dəstəklənən TLD-lər konfiqurasiya edilməlidir, məsələn `com`, `net` və `org`.
 - **Domen Seçimi** sahəsini ehtiva edən etibarlı checkout formu.
 
-## Checkout formu
+## Checkout formu {#checkout-form}
 
 1. Qeydiyyat səhifəsində istifadə olunan checkout formunu yaradın və ya redaktə edin.
 2. **Username** daxil olmaqla adi tələb olunan checkout/account sahələrini əlavə edin. Yalnız domen sahəsini ehtiva edən checkout formu Ultimate Multisite yoxlaması tərəfindən rədd edilir.
@@ -30,7 +30,7 @@ Qeydiyyat səhifəsi checkout formunu göstərməlidir, məsələn:
 [wu_checkout slug="domain-form"]
 ```
 
-## Header formu
+## Header formu {#header-form}
 
 Saytın header hissəsinə daxil edilən axtarış terminini checkout səhifəsinə `domain_name` kimi göndərən kiçik `GET` formu əlavə edin:
 
@@ -44,7 +44,7 @@ Saytın header hissəsinə daxil edilən axtarış terminini checkout səhifəsi
 
 Xüsusi header JavaScript-də domeni əvvəlcədən seçməyin. Header yalnız axtarış terminini ötürməlidir. Domain Seller checkout skripti `?domain_name=example` oxuyur, checkout axtarış qutusunu doldurur və əlçatanlıq axtarışını işə salır ki, müştəri qaytarılan domenlər arasından seçim edə bilsin.
 
-## Gözlənilən davranış
+## Gözlənilən davranış {#expected-behaviour}
 
 Header-də `example` axtarışı bunu açmalıdır:
 
@@ -61,7 +61,7 @@ Checkout sonra aşağıdakı kimi seçilə bilən nəticələr göstərməlidir:
 
 Əlçatan nəticə seçildikdən sonra sifariş xülasəsinə domen qeydiyyatı məhsulu və seçilmiş domen adı daxil olmalıdır.
 
-## Yoxlama
+## Yoxlama {#verification}
 
 1. Ana səhifəni açın.
 2. Sadə ad axtarın, məsələn `example`.
@@ -71,7 +71,7 @@ Checkout sonra aşağıdakı kimi seçilə bilən nəticələr göstərməlidir:
 6. Əlçatan domen üçün **Seç** düyməsinə klikləyin.
 7. Sifariş xülasəsində `Domain Registration - example.com` və ya seçilmiş domenin olduğunu təsdiqləyin.
 
-## Problemlərin həlli
+## Problemlərin həlli {#troubleshooting}
 
 - Siyahı görünmürsə, brauzerin şəbəkə tabında `admin-ajax.php?action=wu_domain_search` üçün yoxlayın və onun boş olmayan `domains` və ya `results` qaytardığını təsdiqləyin.
 - Checkout formu yadda saxlanarkən yoxlamadan keçmirsə, **Username** kimi tələb olunan account sahələrini əlavə edin.

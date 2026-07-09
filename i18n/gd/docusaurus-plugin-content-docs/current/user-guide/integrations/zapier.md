@@ -3,7 +3,7 @@ title: Còmhlaidachd Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# A' Chluainteachadh le Ultimate Multisite agus Zapier
+# A' Chluainteachadh le Ultimate Multisite agus Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Duis a' chluainteach, rinn am ceann de na stiùirichean a' sgrùdadh [Webhooks](webhooks.md) agus faic a tha iad a lasachadh le app-eichemhan a tha a' chluainteachd.
 
@@ -15,7 +15,7 @@ Is e conaltradh **Triggers** a tha thu a' chluainteach gu lèir nuair a thàth a
 
 Tha seo a' fàs gu sònraidh air fud chun **Ultimate Multisite Zapier triggers** agus actions a tha a' chluainteachd de [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Conaichean airson a bhith a' fháil air an t-aithreach
+## Conaichean airson a bhith a' fháil air an t-aithreach {#how-to-start}
 
 Tha eadar-dheargas, leugh airson Ultimate Multisite anns a' leas a Zapier. Mar a tha thu a' chluainteach, is dòlaidh eadar-dheargas a' chluainteachd a' chluainteach a' chluainteach a' chluainteach a' chluainteach a' chluainteach a' chluainteach.
 
@@ -51,7 +51,7 @@ Air an t-seachdainn URL, duileadh an URL fhuilinn a tha thu a' chluin, a' tismai
 
 Taisg an t-seachdainn **Yes, Continue** gu leith air an t-sgaidh sin. Má tha eanach thu, rinn thu a' chluin air an t-sìth a' chluin a' chluin! Taisg air **Continue** gu leith air a' sgaidh ùr.
 
-## Conas a thrascall a' sgaidh ùr
+## Conas a thrascall a' sgaidh ùr {#how-to-create-a-new-trigger}
 
 An uair a tha thu a' chluin a' chluin, is eadar-dhearg a tha eanachdaidhean a' tòisich. Ghile an **payment_received** air an seachdainn seo airson an tòisich seo.
 
@@ -67,7 +67,7 @@ Air an t-seachdainn seo, tha Zapier a' chluin a' chluin gu faic a' chluin a tha 
 
 Th' test a bhith agad **a' chluichdachadh gu sònraichte** agus tha e ag roinn an eisimpleil fhaisg. Bidh an eisimpleil fhaisg seo a bhith a' chùineachadh leat air a' chlàradh gu lèir chì thuairidh is eadar a dhèanamh air. Tha an t-trigger agad air a chluichdachadh agus tha e ag iarraidh a bhith a' chluichdachadh le sgaidhinean eile.
 
-## Conaichem airson Aighean (Actions) a chur i obair
+## Conaichem airson Aighean (Actions) a chur i obair {#how-to-create-actions}
 
 Tha aighean a' faighinn fhaisginn a' chùineachadh air t-triggers eile gu nàchairtasan ùra anns an t-nàchairtadh agad.
 
@@ -79,7 +79,7 @@ Mar a tha eairt, bidh tu ag chur i obair tòiseachadh air do chluichdachadh, mar
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### A chur i obair an Aighean (Setting up the Action)
+### A chur i obair an Aighean (Setting up the Action) {#setting-up-the-action}
 
 Tha seo **an sealladh buntainneachd an aighean** agus tha e gu tric a' churaidhean a' tòiseachadh. An t-fhaisg a thabhairt tu ag iarraidh is dòigh, tha an t-fhaisg a chur i obair **Item**. Is e **Model fhaisginn** agad anns an t-nàchairtadh agad, mar **Customers, Payments, Sites, Emails** agus eile.
 

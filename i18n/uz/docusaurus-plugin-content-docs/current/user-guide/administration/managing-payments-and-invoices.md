@@ -3,9 +3,9 @@ title: To'lovlar va fakturalarni boshqarish
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# To'lovlar va Fakturalarni Boshqarish
+# To'lovlar va Fakturalarni Boshqarish {#managing-payments-and-invoices}
 
-## To'lov Sozlamalari
+## To'lov Sozlamalari {#payment-settings}
 
 To'lovlarni qabul qilishni boshlashdan oldin, siz to'lov bilan bog'liq sozlamalarni konfiguratsiya qilishingiz kerak bo'ladi. **Ultimate Multisite → Settings** ga o'ting va **Payment** (To'lov) yorlig'iga bosing.
 
@@ -15,7 +15,7 @@ Mana to'lov sozlamalari sahifasining to'liq ko'rinishi:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Umumiy To'lov Variantlari
+### Umumiy To'lov Variantlari {#general-payment-options}
 
 Umumiy sozlamalarda quyidagilarni konfiguratsiya qilishingiz mumkin:
 
@@ -24,7 +24,7 @@ Umumiy sozlamalarda quyidagilarni konfiguratsiya qilishingiz mumkin:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### To'lov Eshiklari (Payment Gateways)
+### To'lov Eshiklari (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite bir nechta to'lov eshiklarini qo'llab-quvvatlaydi. Har birini To'lov sozlamalari yorlig'idan yoqishingiz va konfiguratsiya qilishingiz mumkin.
 
@@ -40,11 +40,11 @@ Har bir eshikning o'z konfiguratsiya bo'limi mavjud bo'lib, unda API kalitlarini
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Rejimi (Sandbox Mode)
+### Sandbox Rejimi (Sandbox Mode) {#sandbox-mode}
 
 To'lov integratsiyangizni haqiqatda ishga tushirishdan oldin sinab ko'rish uchun **Sandbox Mode** ni yoqishingiz mumkin. Sandbox rejimi faol bo'lgan vaqtda hech qanday haqiqiy to'lovlar amalga oshirilmaydi.
 
-## To'lovlarni Ko'rish
+## To'lovlarni Ko'rish {#viewing-payments}
 
 Ultimate Multisite ostida **Payments** (To'lovlar) sahifasiga o'ting va tarmoq bo'yicha barcha operatsiyalarni ko'rishingiz mumkin.
 
@@ -54,7 +54,7 @@ Siz to'lovlarni holat bo'yicha (tugallangan, kutishda, muvaffaqiyatsiz, qaytaril
 
 Тўловга клирланиб унинг тўлиқ тартибини кўришингиз мумкин бўлади, бу ичида товарлар рўйхати, алоқадорлик (membership), мижоз маълумотлари ва тўлов эвазиям (payment gateway) маълумотлари ҳам шунда бўлади.
 
-## Ҳисоботлар (Invoices)
+## Ҳисоботлар (Invoices) {#invoices}
 
 Ultimate Multisite тўловлар учун автоматик ҳисоботларни тайёрлай олади. Ҳисобот шаклини ва рақам бериш форматини Тўлов sozlamalaridan ўзгартиришингиз мумкин.
 

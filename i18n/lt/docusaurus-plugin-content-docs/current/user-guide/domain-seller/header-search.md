@@ -3,11 +3,11 @@ title: Antraštės domeno paieška
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Antraštės domeno paieška
+# Antraštės domeno paieška {#header-domain-search}
 
 Naudokite šią sąranką, kai norite nedidelės antraštės formos, kuri pradeda domeno paiešką, o tada leidžia klientui pasirinkti iš galimų domenų Ultimate Multisite checkout viduje.
 
-## Reikalavimai
+## Reikalavimai {#requirements}
 
 - Ultimate Multisite aktyvus tinkle.
 - Multisite Ultimate Domain Seller aktyvus tinkle.
@@ -16,7 +16,7 @@ Naudokite šią sąranką, kai norite nedidelės antraštės formos, kuri praded
   - Sukonfigūruotais palaikomais TLD, pavyzdžiui, `com`, `net` ir `org`.
 - Galiojanti checkout forma, kurioje yra **Domeno pasirinkimo** laukas.
 
-## Checkout forma
+## Checkout forma {#checkout-form}
 
 1. Sukurkite arba redaguokite checkout formą, naudojamą registracijos puslapyje.
 2. Pridėkite įprastus privalomus checkout / Account laukus, įskaitant **Username**. Checkout formą, kurioje yra tik domeno laukas, Ultimate Multisite validacija atmeta.
@@ -30,7 +30,7 @@ Registracijos puslapis turėtų atvaizduoti checkout formą, pavyzdžiui:
 [wu_checkout slug="domain-form"]
 ```
 
-## Antraštės forma
+## Antraštės forma {#header-form}
 
 Pridėkite nedidelę `GET` formą site antraštėje, kuri siunčia įvestą paieškos terminą į checkout puslapį kaip `domain_name`:
 
@@ -44,7 +44,7 @@ Pridėkite nedidelę `GET` formą site antraštėje, kuri siunčia įvestą paie
 
 Iš anksto nepasirinkite domeno pasirinktiniame antraštės JavaScript. Antraštė turėtų tik perduoti paieškos terminą. Domain Seller checkout skriptas nuskaito `?domain_name=example`, užpildo checkout paieškos laukelį ir paleidžia pasiekiamumo paiešką, kad klientas galėtų pasirinkti iš grąžintų domenų.
 
-## Tikėtina elgsena
+## Tikėtina elgsena {#expected-behaviour}
 
 Ieškant `example` antraštėje, turėtų būti atidaryta:
 
@@ -61,7 +61,7 @@ Tada checkout turėtų rodyti pasirenkamus rezultatus, tokius kaip:
 
 Pasirinkus pasiekiamą rezultatą, užsakymo suvestinėje turėtų būti domeno registracijos produktas ir pasirinktas domeno vardas.
 
-## Patikrinimas
+## Patikrinimas {#verification}
 
 1. Atidarykite pagrindinį puslapį.
 2. Ieškokite paprasto vardo, pavyzdžiui, `example`.
@@ -71,7 +71,7 @@ Pasirinkus pasiekiamą rezultatą, užsakymo suvestinėje turėtų būti domeno 
 6. Spustelėkite **Pasirinkti** prie pasiekiamo domeno.
 7. Patvirtinkite, kad užsakymo suvestinėje yra `Domain Registration - example.com` arba pasirinktas domenas.
 
-## Trikčių šalinimas
+## Trikčių šalinimas {#troubleshooting}
 
 - Jei sąrašas nepasirodo, patikrinkite naršyklės tinklo skirtuką dėl `admin-ajax.php?action=wu_domain_search` ir patvirtinkite, kad jis grąžina netuščią `domains` arba `results`.
 - Jei checkout formos validacija nepavyksta išsaugant, pridėkite privalomus Account laukus, tokius kaip **Username**.

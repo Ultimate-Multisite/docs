@@ -3,11 +3,11 @@ title: Innbyggðir agentar
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Innbyggðir agents
+# Innbyggðir agents {#built-in-agents}
 
 Gratis AI Agent v1.9.0 kemur með fimm innbyggðum agents, hverjum forstilltum með afmörkuðu setti af verkfærum, sérsniðinni system prompt og byrjunartillögum sem passa við algeng verkefni á því sviði. Að skipta á milli agents breytir því hvað assistant getur gert og hvernig hann svarar — án nokkurrar stillingar af þinni hálfu. Superdav AI Agent v1.18.0 getur bætt tímasetningameðvituðum verkfærum, áminningarfærslum, samþykktarhliðum og SMS-tilkynningum við þessi verkferli þegar tengdar samþættingar eru stilltar.
 
-## Hvað er agent?
+## Hvað er agent? {#what-is-an-agent}
 
 Hver agent er nafngreindur stillingaprófíll sem sameinar:
 
@@ -15,7 +15,7 @@ Hver agent er nafngreindur stillingaprófíll sem sameinar:
 - **System prompt** — leiðbeiningar sem setja tón, forgangsröðun og takmarkanir agent
 - **Tillögur** — fyrirfram skrifaðar prompts sem birtast í spjallviðmótinu til að hjálpa þér að byrja fljótt
 
-## Að opna Agent Picker
+## Að opna Agent Picker {#accessing-the-agent-picker}
 
 1. Opnaðu **Gratis AI Agent**-spjaldið í WordPress-stjórnendahliðarstikunni.
 2. Smelltu á **agent-táknið** efst til vinstri í spjallhausnum (táknið breytist til að endurspegla virkan agent).
@@ -24,9 +24,9 @@ Hver agent er nafngreindur stillingaprófíll sem sameinar:
 
 Þú getur líka skipt um agents í miðju samtali — system prompt nýja agent tekur gildi frá næstu skilaboðum.
 
-## Innbyggðu agents fimm
+## Innbyggðu agents fimm {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Áhersla:** Að búa til og breyta færslum, síðum og samskiptaformum.
 
@@ -47,7 +47,7 @@ Hver agent er nafngreindur stillingaprófíll sem sameinar:
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Áhersla:** Vefsíðugerð frá upphafi til enda út frá einni prompt.
 
@@ -70,7 +70,7 @@ Hver agent er nafngreindur stillingaprófíll sem sameinar:
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Áhersla:** Sjónræn sérsníðing — litir, leturfræði, CSS og block patterns.
 
@@ -87,7 +87,7 @@ Hver agent er nafngreindur stillingaprófíll sem sameinar:
 - *Taktu skjáskot af forsíðunni og segðu mér hverju þú myndir bæta.*
 - *Búðu til endurnýtanlegt hero block pattern með bakgrunnsmynd í fullri breidd og miðjuðum fyrirsögn.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Áhersla:** Að finna, setja upp og stjórna WordPress plugins.
 
@@ -105,7 +105,7 @@ Hver agent er nafngreindur stillingaprófíll sem sameinar:
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Áhersla:** Að svara spurningum um efni síðu, stillingar og WordPress uppsetningu.
 
@@ -124,7 +124,7 @@ Hver agent er nafngreindur stillingaprófíll sem sameinar:
 
 ---
 
-## Superdav Automation samþættingar
+## Superdav Automation samþættingar {#superdav-automation-integrations}
 
 Þegar Superdav AI Agent v1.18.0 samþættingar eru stilltar geta innbyggðir agentar tekið þátt í öruggari sjálfvirkum verkflæðum sem taka mið af tímaáætlunum:
 
@@ -138,11 +138,11 @@ Mælt verkflæði: biddu agentinn að undirbúa skilaboðin eða aðgerðina, yf
 
 ---
 
-## Sérsníða agenta
+## Sérsníða agenta {#customising-agents}
 
 Hægt er að útvíkka eða skipta út hverjum innbyggðum agenti með `gratis_ai_agent_agents` filter.
 
-### Bæta sérsniðinni kerfiskvaðningu við núverandi agent
+### Bæta sérsniðinni kerfiskvaðningu við núverandi agent {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Skrá nýjan agent
+### Skrá nýjan agent {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Nýi agentinn birtist í Agent Picker um leið og filterinn hefur keyrt.
 
-### Fjarlægja innbyggðan agent
+### Fjarlægja innbyggðan agent {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -4,11 +4,11 @@ title: Filtras - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filtras: wu_post_count
+# Filtras: wu_post_count {#filter-wupostcount}
 
 Leiskite plugin kūrėjams pakeisti bendrą skaičių
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Leiskite plugin kūrėjams pakeisti bendrą skaičių
 | $post_counts | `object` | WordPress objektas, grąžinamas wp_count_posts fn |
 | $post_type | `string` | Įrašo tipo slug |
 
-### Nuo
+### Nuo {#since}
 
 - 1.9.1
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) 136 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}
 Naują bendrą skaičių

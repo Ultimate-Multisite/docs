@@ -3,15 +3,15 @@ title: Orkestrasi Pambangun Situs v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrasi Panggawe Situs v2
+# Orkestrasi Panggawe Situs v2 {#site-builder-orchestration-v2}
 
 Orkestrasi Panggawe Situs v2 (dikenalake ing Gratis AI Agent v1.4.0) yaiku mesin sing nguwasani panggawe situs web kanthi pirang-pirang langkah. Nalika sampeyan njaluk agen kanggo "nggawe situs web restoran" utawa "nggawe portofolio nganggo blog", orkestrator mecah tujuan tingkat dhuwur kuwi dadi **rencana** terstruktur, nemokake tambahan sing dibutuhake kanggo ngrampungake, nglakokake saben langkah kanthi urut, nglacak kemajuan, lan mulihake saka kasalahan kanthi otonom.
 
 ---
 
-## Cara Kerjane
+## Cara Kerjane {#how-it-works}
 
-### 1. Nggawe Rencana
+### 1. Nggawe Rencana {#1-plan-generation}
 
 Nalika agen nampa pandhuan panggawe situs, agen kasebut nelpon kemampuan `create_site_plan` kanggo ngasilake **rencana situs** JSON. Rencana kasebut nerangake:
 
@@ -61,7 +61,7 @@ Nalika agen nampa pandhuan panggawe situs, agen kasebut nelpon kemampuan `create
 }
 ```
 
-### 2. Nemokake Tambahan
+### 2. Nemokake Tambahan {#2-plugin-discovery}
 
 Sadurunge eksekusi diwiwiti, orkestrator mindhai `plugin_requirements` ing rencana lan mriksa tambahan endi sing wis aktif. Kanggo tambahan sing kurang, iki bakal:
 
@@ -71,7 +71,7 @@ Sadurunge eksekusi diwiwiti, orkestrator mindhai `plugin_requirements` ing renca
 
 Kegagalan nemokake tambahan ora fatal — orkestrator menehi tandha langkah sing kena pengaruh minangka `skipped` lan nerusake sisa rencana.
 
-### 3. Eksekusi Rencana
+### 3. Eksekusi Rencana {#3-plan-execution}
 
 Orkestrator nelpon `execute_site_plan` nganggo ID rencana. Eksekusi mlaku fase demi fase, langkah demi langkah:
 
@@ -79,7 +79,7 @@ Orkestrator nelpon `execute_site_plan` nganggo ID rencana. Eksekusi mlaku fase d
 - **Langkah paralel** — langkah ing fase sing padha sing ora nduweni ketergantungan antarane siji lan sijine dikirim bebarengan nalika panji `parallel` disetel.
 - **Wates wektu langkah** — saben langkah nduweni wates wektu individu (gawan: setelan `Ability Timeout`). Langkah sing ngluwihi wektu diwenehi tandha `failed` lan rencana nerusake.
 
-### 4. Nglacak Kemajuan
+### 4. Nglacak Kemajuan {#4-progress-tracking}
 
 Telpon `get_plan_progress` kapan wae kanggo mriksa status eksekusi:
 
@@ -104,7 +104,7 @@ Pangguna WP-CLI bisa ngawasi kemajuan nganggo:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Pamulihan Kasalahan
+### 5. Pamulihan Kasalahan {#5-error-recovery}
 
 Nalika langkah gagal, orkestrator mriksa ana ora **fallback** langkah sing ditemtokake ing rencana:
 
@@ -115,9 +115,9 @@ Agen nglaporake kabeh kegagalan ing ringkesan rencana pungkasan lan bisa nyarana
 
 ---
 
-## Kemampuan Rencana Situs
+## Kemampuan Rencana Situs {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Ngasilake rencana situs terstruktur saka katrangan tujuan basa alami.
 
@@ -134,7 +134,7 @@ Ngasilake rencana situs terstruktur saka katrangan tujuan basa alami.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Miwiti nglakokake rencana situs sing wis digawe sadurunge.
 
@@ -150,7 +150,7 @@ Miwiti nglakokake rencana situs sing wis digawe sadurunge.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Ngasilaké status eksekusi saiki saka rencana situs.
 
@@ -164,7 +164,7 @@ Ngasilaké status eksekusi saiki saka rencana situs.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ngrampungaké kanthi manual langkah sing gagal lan nerusaké eksekusi rencana saka langkah sabanjuré. Gunakna iki nalika pamulihan otomatis ora bisa lan sampeyan arep melu campur.
 
@@ -180,7 +180,7 @@ Ngrampungaké kanthi manual langkah sing gagal lan nerusaké eksekusi rencana sa
 
 ---
 
-## Mbandhingaké v1 lan v2
+## Mbandhingaké v1 lan v2 {#comparing-v1-and-v2}
 
 | Fitur | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Ngrampungaké kanthi manual langkah sing gagal lan nerusaké eksekusi rencana sa
 
 ---
 
-## Prentah Rencana WP-CLI
+## Prentah Rencana WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Ngasilaké rencana situs saka katrangan tujuan.
 
@@ -205,7 +205,7 @@ Ngasilaké rencana situs saka katrangan tujuan.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Ngeksekusi rencana sing wis digawé sadurungé.
 
@@ -213,7 +213,7 @@ Ngeksekusi rencana sing wis digawé sadurungé.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Nuduhaké kemajuan saiki kanggo rencana sing lagi dieksekusi utawa wis rampung.
 
@@ -221,7 +221,7 @@ Nuduhaké kemajuan saiki kanggo rencana sing lagi dieksekusi utawa wis rampung.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Ndhaptar kabèh rencana situs (ngentèni, lagi lumaku, lan rampung).
 
@@ -229,7 +229,7 @@ Ndhaptar kabèh rencana situs (ngentèni, lagi lumaku, lan rampung).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Ngreset rencana sing gagal dadi `pending` supaya bisa dieksekusi maneh saka wiwitan.
 

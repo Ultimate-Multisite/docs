@@ -4,11 +4,11 @@ title: Iragazkia - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Iragazkia: wu_country_get_cities
+# Iragazkia: wu_country_get_cities {#filter-wucountrygetcities}
 
 Herrialde bateko estatu baterako hirien zerrenda itzultzen du.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Herrialde bateko estatu baterako hirien zerrenda itzultzen du.
 | $state_code | `string` | Estatuaren bi letrako ISO kodea. |
 | $current_country | `\WP_Ultimo\Country\Country` | Uneko klasearen instantzia. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 2.0.11
-### Iturburua
+### Iturburua {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) fitxategian definitua, 146. lerroan
 
 
-## Itzultzen du
+## Itzultzen du {#returns}
 Estatuen zerrenda iragazia.

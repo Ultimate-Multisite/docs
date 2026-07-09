@@ -4,11 +4,11 @@ title: 过滤器 - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# 过滤器: wp_ultimo_site_exporter_get_option
+# 过滤器: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 返回已slug化的网络选项值。
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | 选项名称。 |
 | $default | `mixed` | 默认值。 |
 
-### 版本
+### 版本 {#since}
 
 - 1.9.6
 
-### 源码
+### 源码 {#source}
 
 定义于 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) 第 126 行
 
-## 返回值
+## 返回值 {#returns}
 
 返回已slug化的网络选项值。

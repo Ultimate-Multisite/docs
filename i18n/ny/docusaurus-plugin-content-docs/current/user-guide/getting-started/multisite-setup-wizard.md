@@ -3,7 +3,7 @@ title: Mawuwo wopolo wa M'moyo
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite inaliza wiza ya kujenga mtandao wa WordPress (WordPress Multisite). Inaleta wizard moja inayobadilisha usakinishaji wa kawaida wa WordPress kuwa mtandao wa WordPress Multisite kuliweka kiotomatiki. Hii inakuzuia kuhitaji kubadilisha `wp-config.php` au kurunisha amri za database kwa mkono.
 
@@ -11,13 +11,13 @@ Ultimate Multisite inaliza wiza ya kujenga mtandao wa WordPress (WordPress Multi
 Kama usakinishaji wako wa WordPress tayari unafanya kazi kama mtandao wa Multisite, unaweza kupuuza hatua hii kabisa. Wizard inajitokeza tu wakati Multisite haijefanywa bado.
 :::
 
-## Wizard Inajitokeza Wakati Gani?
+## Wizard Inajitokeza Wakati Gani? {#when-does-the-wizard-appear}
 
 Unapofanya iwe Ultimate Multisite kwenye usakinishaji wa kawaida (usio-Multisite) wa WordPress, plugin inagundua kwamba Multisite haijefanywa na kulipeleka kiotomatiki kwenye Multisite Setup Wizard badala ya wizard ya kawaida ya usakinishaji.
 
 Unaweza pia kuifungua moja kwa moja kupitia **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Mahitaji Kabla ya Kuanza
+## Mahitaji Kabla ya Kuanza {#prerequisites}
 
 Kabla ya kurunisha wizard, hakikisha:
 
@@ -29,7 +29,7 @@ Kabla ya kurunisha wizard, hakikisha:
 Wizard inabadilisha faili lako la `wp-config.php` na huunda tables mpya za database. Daima fanya backup kabla ya kuendelea.
 :::
 
-## Hatua ya 1: Karibu (Welcome)
+## Hatua ya 1: Karibu (Welcome) {#step-1-welcome}
 
 Skrini ya kwanza inaeleza nini ni WordPress Multisite na wizard itafanya nini:
 
@@ -42,11 +42,11 @@ Skrini ya kwanza inaeleza nini ni WordPress Multisite na wizard itafanya nini:
 
 Bonyeza **Continue** ili kuendelea.
 
-## Hatua ya 2: Mpangilio wa Mtandao (Network Configuration)
+## Hatua ya 2: Mpangilio wa Mtandao (Network Configuration) {#step-2-network-configuration}
 
 Hatua hii inakuuliza uweke mipangilio yako ya mtandao.
 
-### Muundo wa Tovuti (Site Structure)
+### Muundo wa Tovuti (Site Structure) {#site-structure}
 
 Chonani bwanji mwayi mwayi wanu kuti mwayi wanu wa network adzakhwera bwanji:
 
@@ -57,11 +57,11 @@ Chonani bwanji mwayi mwayi wanu kuti mwayi wanu wa network adzakhwera bwanji:
 Ngati mwayi wanu mwachome sub-domains, mudzakhala ndi kuyesa **wildcard DNS** ndi **wildcard SSL certificate** kwa domain yanu. Zomwe zambiri zomwe mwayi wanu wopereka (managed WordPress hosts) zimeneza bwino. Ngati mwayi wosonyeza kwambiri (Ultimate Multisite 101) kuti muone kukhazikitsa kwakiri.
 :::
 
-### Network Title
+### Network Title {#network-title}
 
 Tsimani limodzi linawo lomwe lili kwa network yanu. Ilo lili linawo lili mwayi wanu wosongoingko ndi "Network" yomwe imaperekera. Mwayi wanu mungachitse kuchotsa nthawi zina kuchokera mwayi wa network.
 
-### Network Admin Email
+### Network Admin Email {#network-admin-email}
 
 Ilo lomwe limaperekera kwa mafunso a kukhazikitsa network. Ilo lili linawo lili email yomwe imaperekera kwa user wanu wosongoingko.
 
@@ -69,7 +69,7 @@ Ilo lomwe limaperekera kwa mafunso a kukhazikitsa network. Ilo lili linawo lili 
 
 Pambuyo pamene mwayi wanu mwapereka ma-field, chonde thandizani **Continue** kuti mwayi wanu wosongoingko.
 
-## Step 3: Installation
+## Step 3: Installation {#step-3-installation}
 
 Chonde thandizani button ya **Install** kuti mwayi wanu wosongoingko kumwe. Mwayi wanu umapereka zinthu limodzi lili m'mwayi wosongoingko, ndipo m'mwayi wosongoingko umapereka mafunso omwe amaperekera m'mwayi woyamba:
 
@@ -96,7 +96,7 @@ Pambuyo pa kupeza kuti zonse zinthu zikusekure bwino, mudzindikira stiti la "Suc
 
 Mmodzi wosiyanasiyana (wizard) mudzakhala kuseka ku m'malo wa kumukwera.
 
-## Step 4: Complete
+## Step 4: Complete {#step-4-complete}
 
 Pambuyo pa kukwera, mudzindikira message ya "Success!" yomwe imakumbutsa kuti WordPress Multisite yaliyeze.
 
@@ -108,7 +108,7 @@ Muli ndi umodzi wosiyanasiyana (ultimate multisite setup wizard) m'malo ya kukha
 Pambere pamene m'ndziwitsa ya multisite imalimbikira, browser yanu idzayenditshira ku admin ya network yaliyendetsedwa. Mungathe kukonza m'ndziwitsa pano pa m'ndziwitsa muli kukhala m'ndziwitsa wanu pamene cookies za authentication zikuyendetsedwa kwa multisite environment.
 :::
 
-## Kufamba kwa Kufamba (Manual Setup Fallback)
+## Kufamba kwa Kufamba (Manual Setup Fallback) {#manual-setup-fallback}
 
 Ngati wizard haiyendwe kuwerenga ku `wp-config.php` yanu (kukhala m'ndziwitsa pa permissions za file kapena zikufunika ndi server), idzayendetsa kodi yomwe muli nawo:
 
@@ -117,9 +117,9 @@ Ngati wizard haiyendwe kuwerenga ku `wp-config.php` yanu (kukhala m'ndziwitsa pa
 
 Pambere pa kukonza m'ndziwitsa pano, refresh lino ndipo wizard idzayendetsa kuti multisite imalimbikira.
 
-## Kufunsa Masogo (Troubleshooting)
+## Kufunsa Masogo (Troubleshooting) {#troubleshooting}
 
-### Wizard imalimbikira kuti wp-config.php si yenera kuwerenga (is not writable)
+### Wizard imalimbikira kuti wp-config.php si yenera kuwerenga (is not writable) {#the-wizard-says-wp-configphp-is-not-writable}
 
 Process ya server yanu imayenera kuwerenga `wp-config.php` file. Muli ndi ulemu:
 
@@ -127,7 +127,7 @@ Process ya server yanu imayenera kuwerenga `wp-config.php` file. Muli ndi ulemu:
 - Kutsatira mafunso a manual setup fallback zomwe wizard imalimbikira.
 - Kuulitsa wanu wa hosting kuti amapere chithandizo.
 
-### Sites si yenera kuperekedwa pambuyo pa setup (subdomains)
+### Sites si yenera kuperekedwa pambuyo pa setup (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Ngati muli ndi njira ya subdomain, muli nawo kuwerenga **wildcard DNS** kwa domain yanu. Tambani record la DNS:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Muli ndi ulemu ndi wanu wa hosting kuti muli ndi chondeza momwe mungayendetsa izi.
 
-### Masogo pa authentication pambuyo pa setup
+### Masogo pa authentication pambuyo pa setup {#authentication-issues-after-setup}
 
 Ngati muli wosakonzedwa kapena muli ndi mato za cookie (cookie errors) pambuyo pa multisite setup:
 
@@ -147,7 +147,7 @@ Ngati muli wosakonzedwa kapena muli ndi mato za cookie (cookie errors) pambuyo p
 2. Kukhala wosakonzedwa pano ku `yourdomain.com/wp-login.php`
 3. Ngati ndalama imalimbikira, muli ndi ulemu kuti `wp-config.php` yanu si imapere `COOKIE_DOMAIN` kwa `false` — izi ndi ndalama yomwe imalimbikira pa multisite installations za subdomain.
 
-### Kufamba kwa chinthu chimodzi lina kuperekedwa m'maka (A step failed during installation)
+### Kufamba kwa chinthu chimodzi lina kuperekedwa m'maka (A step failed during installation) {#a-step-failed-during-installation}
 
 Moyo muli monga mwezi wamene mwa kulembo:
 

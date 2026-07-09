@@ -4,24 +4,24 @@ title: Filter - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count
+# Filter: wu_fluent_form_count {#filter-wufluentformcount}
 
 Laat plugin-ontwikkelaars die totale vormtelling kan verander
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
 | $count | `int` | Die totale vormtelling |
 | $form_type | `string` | Die vormtipe slug |
 
-### Sedert
+### Sedert {#since}
 
 - 1.0.0
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L156) op lyn 156
 
 
-## Gee terug
+## Gee terug {#returns}
 Nuwe totaal

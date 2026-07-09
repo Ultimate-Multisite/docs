@@ -3,7 +3,7 @@ title: လူသိများသော မကိုက်ညီမှုမျ
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# အခြား Plugins များနှင့် လိုက်ဖက်မှုမရှိသော ပြဿနာများ
+# အခြား Plugins များနှင့် လိုက်ဖက်မှုမရှိသော ပြဿနာများ {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite ကို install လုပ်ပြီး activate လုပ်ပြီးနောက်၊ အခြား plugins များနှင့် လိုက်ဖက်မှုမရှိသော ပြဿနာများကြောင့် အခက်အခဲများ ကြုံတွေ့ရနိုင်ပါသည်။
 

@@ -3,11 +3,11 @@ title: Pêşxistina Gateway-a Taybet
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pêşxistina Gateway-ê Taybet
+# Pêşxistina Gateway-ê Taybet {#custom-gateway-development}
 
 Tu dikarî gateway-ên dayîna taybet biafirînî bi dirêjkirina pola `Base_Gateway`.
 
-## Pola Gateway
+## Pola Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Tomarkirina Gateway
+## Tomarkirina Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Rêbazên Girîng
+## Rêbazên Girîng {#key-methods}
 
 | Method | Armanc |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Daxwazên vegerandina pere birêve bibe |
 | `get_payment_methods()` | Rêbazên dayîna tomarkirî ji bo xerîdar vegerîne |
 
-## Bawernameyên nûkirinê ji bo endamtiyên dubare
+## Bawernameyên nûkirinê ji bo endamtiyên dubare {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 rê dide entegrasyonên gateway ku rapor bikin ka endamtiyek dubare berî ku `auto_renew` were tomarkirin xwedî bawernameyeke nûkirinê ya dubare-bikaranîn e an na. `wu_membership_has_renewal_credential` girê bide û vegerîne:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Nîşankera bawernameya winda paqij bike wek beşek ji herikîna destûrdanê ya serketî ya gateway-a xwe, piştî ku bawernameyeke nû ya dubare-bikaranîn were tomarkirin.
 
-## Şîret
+## Şîret {#tips}
 
 - Her tim li ser têkçûnê `WP_Error` vegerîne da Ultimate Multisite bikaribe nîşandana çewtiyê birêve bibe
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - `wu_log_add()` ji bo tomarkirina taybet a gateway bi kar bîne
 
-## Kapasîteyên dabînkerê girêdera AI
+## Kapasîteyên dabînkerê girêdera AI {#ai-connector-provider-capabilities}
 
 Entegrasyonên taybet ku bang li karên piştgirîkirî yên girêdera AI dikin divê xwe bi koma dabînkerên OAuth ên piştgirîkirî re lihev bikin ku bi AI Provider for Anthropic Max v1.3.0 hatine nasandin:
 

@@ -4,11 +4,11 @@ title: Филтър - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Филтър: wu_rest_get_item
+# Филтър: wu_rest_get_item {#filter-wurestgetitem}
 
 Филтрира дали е разрешено продължителното изпълнение на заявката или не.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 | $rest_base | `array` | Слог на сутността. |
 | $this | `\Base_Manager` | Инстанцията на обекта. |
 
-### От версия
+### От версия {#since}
 
 - 2.0.0
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) на линия 388

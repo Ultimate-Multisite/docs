@@ -3,7 +3,7 @@ title: Outomatiese Soek en Vervang in Werfsjablone
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Outomatiese soek en vervang in webwerf-sjablone (v2)
+# Outomatiese soek en vervang in webwerf-sjablone (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Hierdie handleiding vereis WP UItimo weergawe 2.x.**_
 
@@ -17,7 +17,7 @@ Jou kliënt sal dan daardie veld tydens die registrasie kan invul.
 
 Ultimate Multisite sal dan die plekhouers outomaties vervang met die data wat deur die kliënt verskaf is.
 
-## **Los die “sjabloon vol plekhouers”-probleem op**
+## **Los die “sjabloon vol plekhouers”-probleem op** {#solving-the-template-full-of-placeholders-problem}
 
 Dit alles is wonderlik, maar ons loop wel ’n lelike probleem raak: nou is ons webwerf-sjablone - wat deur ons kliënte besoek kan word - vol lelike plekhouers wat nie veel sê nie.
 

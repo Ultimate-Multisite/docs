@@ -3,11 +3,11 @@ title: Fluxus Onboarding Thematicus
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fluxus Onboarding Flow del Theme Builder
+# Fluxus Onboarding Flow del Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introduce un **fluxus onboarding flow** per il Theme Builder che ti aiuta a creare un tema a blocchi personalizzato durante la tua configurazione iniziale. Questo sostituisce il vecchio modalità Site Builder con un approccio più flessibile, assistito dall'agente.
 
-## Cos'è il Fluxus Onboarding Flow?
+## Cos'è il Fluxus Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Il fluxus onboarding flow è un wizard di configurazione interattivo che:
 
@@ -18,9 +18,9 @@ Il fluxus onboarding flow è un wizard di configurazione interattivo che:
 
 Il flusso è alimentato dall'**Setup Assistant agent**, che pone domande chiarificatrici e costruisce il tuo tema in modo incrementale.
 
-## Avviare il Fluxus Onboarding
+## Avviare il Fluxus Onboarding {#starting-the-theme-builder-onboarding}
 
-### Configurazione Iniziale (First-Run Setup)
+### Configurazione Iniziale (First-Run Setup) {#first-run-setup}
 
 Quando lanci per la prima volta Superdav AI Agent su una nuova installazione di WordPress, vedrai:
 
@@ -35,7 +35,7 @@ Cosa vorresti fare?
 
 Seleziona **"Costruisci un tema personalizzato"** per entrare nel fluxus onboarding del Theme Builder.
 
-### Attivazione Manuale
+### Attivazione Manuale {#manual-activation}
 
 Puoi anche iniziare il fluxus onboarding del Theme Builder in qualsiasi momento richiedendo:
 
@@ -49,9 +49,9 @@ o
 "Aiutami a creare un tema personalizzato"
 ```
 
-## I Passaggi dell'Onboarding
+## I Passaggi dell'Onboarding {#the-onboarding-steps}
 
-### Passo 1: Selezione della Modalità (Mode Selection)
+### Passo 1: Selezione della Modalità (Mode Selection) {#step-1-mode-selection}
 
 L'Setup Assistant agent ti chiede la tua preferenza:
 
@@ -63,7 +63,7 @@ Come vorresti costruire il tuo tema?
 
 La **modalità guidata** è consigliata per la maggior parte degli utenti; l'agente fa raccomandazioni di design basate sul tuo settore e sui tuoi obiettivi.
 
-### Passo 2: Specifiche del Sito (Site Specification)
+### Passo 2: Specifiche del Sito (Site Specification) {#step-2-site-specification}
 
 Ti verrà chiesto informazioni sul tuo sito:
 
@@ -74,7 +74,7 @@ Ti verrà chiesto informazioni sul tuo sito:
 
 Haec informația est in memoria tua **site_brief**, quam agentia referunt in sessionibus futura.
 
-### Gradus 3: Decisiones Systematis Design
+### Gradus 3: Decisiones Systematis Design {#step-3-design-system-decisions}
 
 Agentia te ducit per eligendos design token:
 
@@ -83,7 +83,7 @@ Agentia te ducit per eligendos design token:
 - **Spatium**: Layout compactus, ordinarius vel spaciousus
 - **Motio**: Animationes et transitiones (si desiderabant)
 
-### Gradus 4: Generatio Thematis
+### Gradus 4: Generatio Thematis {#step-4-theme-generation}
 
 Agentia Auxilii Setup structurat thematum tuum cum:
 
@@ -92,7 +92,7 @@ Agentia Auxilii Setup structurat thematum tuum cum:
 - Stylus blocorum customis concordans cum systemate design tua
 - Metadata thematis et declarationes supporti WordPress
 
-### Gradus 5: Activatio et Verificatio
+### Gradus 5: Activatio et Verificatio {#step-5-activation-and-verification}
 
 Thema est automatico activum, et videris:
 
@@ -107,7 +107,7 @@ Thema est automatico activum, et videris:
 
 Postea potes visitare situm tuum ut verifiques quod thema recte ostenditur.
 
-## Specifica Situi et Memoria site_brief
+## Specifica Situi et Memoria site_brief {#site-specification-and-sitebrief-memory}
 
 In introductione, agentia capturat specification situi in categoria memoria **site_brief**. Hoc includit:
 
@@ -117,16 +117,16 @@ In introductione, agentia capturat specification situi in categoria memoria **si
 - Preferentias design
 - Structuram contentus
 
-### Quid site_brief Significat
+### Quid site_brief Significat {#why-sitebrief-matters}
 
 In sessionibus futura, agentia referunt tuum site_brief ut:
 
-### Manutent consistency designis omni mutationibus
-### Suggeras features quae ad finem tuum sita sunt
-### Proferas recommendationes contextu cognoscendas
-### Evade repetendum quaestionum configurationis
+### Manutent consistency designis omni mutationibus {#viewing-your-sitebrief}
+### Suggeras features quae ad finem tuum sita sunt {#customizing-after-onboarding}
+### Proferas recommendationes contextu cognoscendas {#use-the-design-system-aesthetics-skill}
+### Evade repetendum quaestionum configurationis {#edit-themejson-directly}
 
-## Spectare brevietatem sita (site_brief)
+## Spectare brevietatem sita (site_brief) {#create-custom-block-templates}
 
 Agentem petere potes:
 
@@ -142,11 +142,11 @@ vel
 
 Agentus tuam memoriam specificationis sitae exibet.
 
-## Customizare post onboarding
+## Customizare post onboarding {#comparison-old-vs-new-onboarding}
 
 Post completio onboarding Theme Builder, potes:
 
-### Utas habilitatem aestheticae systematis design (Design System Aesthetics skill)
+### Utas habilitatem aestheticae systematis design (Design System Aesthetics skill) {#troubleshooting}
 
 Petas refinementes designitatis:
 
@@ -162,7 +162,7 @@ vel
 
 **Habilitas aestheticae systematis design** te per actualitates designitatis dirigit.
 
-### Edit theme.json directum
+### Edit theme.json directum {#next-steps}
 
 Ad usum expertorum, edit `/wp-content/themes/[theme-name]/theme.json` ut adjustas:
 

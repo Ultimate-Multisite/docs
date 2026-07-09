@@ -3,19 +3,19 @@ title: 'Pawulangan 2: Milih Ceruk Pasarmu'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Wulangan 2: Milih Ceruk Pasarmu
+# Wulangan 2: Milih Ceruk Pasarmu {#lesson-2-picking-your-niche}
 
 Ing Wulangan 1 kita wis netepake kenapa ceruk pasar luwih unggul tinimbang sing umum. Saiki kowe kudu milih duwekmu. Wulangan iki menehi kerangka kanggo nemokake lan ngesahake ceruk pasar sadurunge kowe nandur wektu kanggo mbangun kanggo ceruk kuwi.
 
-## Ing Endi Kita Mandheg
+## Ing Endi Kita Mandheg {#where-we-left-off}
 
 Kita nemtokake konsep FitSite: platform situs web kanggo studio fitness. Nanging kepiye carane kita tekan studio fitness kanthi khusus? Wulangan iki nerangake prosesé supaya kowe bisa ngetrapake kanggo nemokake ceruk pasarmu dhewe.
 
-## Telung Kriteria
+## Telung Kriteria {#the-three-criteria}
 
 Ceruk pasar sing apik kanggo platform situs web nyukupi telung syarat:
 
-### 1. Dheweke Mbutuhake Situs Web nanging Kangelan Entuk sing Apik
+### 1. Dheweke Mbutuhake Situs Web nanging Kangelan Entuk sing Apik {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Golekana industri ing ngendi:
 
@@ -26,7 +26,7 @@ Golekana industri ing ngendi:
 
 **Studio fitness cocog**: anggota ngarepake bisa nemokake jadwal kelas, rega, lan booking online. Umume situs web studio wis ketinggalan jaman utawa digawe nganggo template umum sing ora nyukupi tujuane.
 
-### 2. Bisnisé Sanggup Mbayar Langganan Saben Wulan
+### 2. Bisnisé Sanggup Mbayar Langganan Saben Wulan {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Pelanggan targetmu kudu:
 
@@ -36,7 +36,7 @@ Pelanggan targetmu kudu:
 
 **Studio fitness cocog**: dheweke wis mbayar software booking, pemrosesan pembayaran, lan piranti pemasaran. Langganan situs web iku tambahan sing alami.
 
-### 3. Dheweke Padha Ngobrol Siji lan Sijine
+### 3. Dheweke Padha Ngobrol Siji lan Sijine {#3-they-talk-to-each-other}
 
 Ceruk pasar paling apik nduweni:
 
@@ -46,9 +46,9 @@ Ceruk pasar paling apik nduweni:
 
 **Studio fitness cocog**: pemilik studio rawuh ing acara industri fitness, melu komunitas online, lan asring nuduhake piranti lan layanan karo kanca sak profesi.
 
-## Carane Nemokake Calon Ceruk Pasar
+## Carane Nemokake Calon Ceruk Pasar {#how-to-find-niche-candidates}
 
-### Miwiti saka Sing Wis Kokerteni
+### Miwiti saka Sing Wis Kokerteni {#start-with-what-you-know}
 
 Pengalamanmu sing wis ana iku kauntungan. Gatekna:
 
@@ -56,7 +56,7 @@ Pengalamanmu sing wis ana iku kauntungan. Gatekna:
 - Hobi utawa minat ing ngendi kowe ngerti komunitase
 - Jaringan profesional sing wis dadi bagianmu
 
-### Goleki Sinyal Masalah
+### Goleki Sinyal Masalah {#look-for-pain-signals}
 
 Telusuri bukti yen bisnis ing ceruk pasar tartamtu kangelan karo situs web:
 
@@ -65,7 +65,7 @@ Telusuri bukti yen bisnis ing ceruk pasar tartamtu kangelan karo situs web:
 - Delengen situs web nyata ing ceruk kuwi -- apa umume kurang apik?
 - Priksa apa ana pesaing lan sepira apike dheweke nglayani pasar
 
-### Evaluasi Ekonomine
+### Evaluasi Ekonomine {#evaluate-the-economics}
 
 Kanggo saben calon ceruk pasar, taksirna:
 
@@ -73,11 +73,11 @@ Kanggo saben calon ceruk pasar, taksirna:
 - **Kekarepan kanggo mbayar**: Apa sing saiki padha bayar kanggo piranti sing padha?
 - **Potensi nilai seumur hidup**: Apa bisnis-bisnis iki stabil, utawa cepet churn?
 
-## Ngesahake Ceruk Pasarmu
+## Ngesahake Ceruk Pasarmu {#validating-your-niche}
 
 Sadurunge mbangun apa wae, sahna panjaluke:
 
-### Ngobrol karo Calon Pelanggan
+### Ngobrol karo Calon Pelanggan {#talk-to-potential-customers}
 
 Hubungi 10-15 pemilik bisnis ing ceruk targetmu. Takonana:
 
@@ -88,17 +88,17 @@ Hubungi 10-15 pemilik bisnis ing ceruk targetmu. Takonana:
 
 Kowe durung adol. Kowe lagi ngrungokake.
 
-### Priksa Lanskap Pesaing
+### Priksa Lanskap Pesaing {#check-competitor-landscape}
 
 - **Ora ana pesaing**: Bisa ateges ora ana panjaluk, utawa bisa ateges kesempatan sing durung digarap. Obrolan karo pelanggan bakal nuduhake sing endi.
 - **Ana sawetara pesaing**: Tandha apik. Ngesahake panjaluk. Sinau apa sing ditindakake kanthi apik lan ing ngendi kekurangane.
 - **Akeh pesaing**: Luwih angel mlebu, nanging isih bisa yen kowe bisa mbedakake kanthi cetha.
 
-### Gawe Landing Page
+### Gawe Landing Page {#build-a-landing-page}
 
 Sadurunge mbangun platform, gawe landing page sederhana sing nerangake solusi ceruk pasarmu lan kumpulake pendaftaran email. Lakokake sethithik iklan sing ditargetake kanggo nguji minat. Yen wong-wong padha ndhaptar, kowe duwe validasi.
 
-## Ngetrapake Iki marang FitSite
+## Ngetrapake Iki marang FitSite {#applying-this-to-fitsite}
 
 Mangkene carane skor FitSite miturut kriteria:
 
@@ -112,7 +112,7 @@ Mangkene carane skor FitSite miturut kriteria:
 
 Validasi ngonfirmasi kesempatan iki. Saiki kita mbangun.
 
-## Gagasan Ceruk Pasar kanggo Digatekake
+## Gagasan Ceruk Pasar kanggo Digatekake {#niche-ideas-to-consider}
 
 Yen fitness dudu pasarmu, iki ana ceruk pasar liyane sing nyukupi kriteria:
 
@@ -127,7 +127,7 @@ Yen fitness dudu pasarmu, iki ana ceruk pasar liyane sing nyukupi kriteria:
 
 Saben iki nduweni ciri sing padha: kabutuhan situs web sing cetha, kemampuan kanggo mbayar, lan rekomendasi saka tutuk menyang tutuk ing komunitas.
 
-## Apa sing Kita Bangun ing Wulangan Iki
+## Apa sing Kita Bangun ing Wulangan Iki {#what-we-built-this-lesson}
 
 - **Kerangka pilihan ceruk pasar**: telung kriteria kanggo ngevaluasi ceruk pasar apa wae
 - **Metode validasi**: obrolan pelanggan, analisis pesaing, pengujian landing page

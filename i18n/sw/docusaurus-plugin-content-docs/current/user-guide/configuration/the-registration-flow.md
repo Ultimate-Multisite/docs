@@ -3,13 +3,13 @@ title: Mtiririko wa Usajili
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Mtiririko wa Usajili (v2)
+# Mtiririko wa Usajili (v2) {#the-registration-flow-v2}
 
 _**KUMBUKA MUHIMU: Makala hii inarejelea Ultimate Multisite toleo la 2.x.**_
 
 Watumiaji wanaweza kujisajili kwenye mtandao wako kwa njia tofauti. Wanaweza kutumia fomu yako ya usajili au kiungo kinachoweza kushirikiwa cha plan iliyochaguliwa mapema. Hapa tutakuonyesha jinsi wateja wako wanavyoweza kujisajili kwenye mtandao wako kwa kutumia njia zilizopo na kinachotokea baada ya kujisajili kwenye mtandao wako.
 
-## Kutumia Fomu ya Usajili:
+## Kutumia Fomu ya Usajili: {#using-the-registration-form}
 
 Huu ndio mchakato wa kawaida wa usajili. Unaunda ukurasa wa usajili wenye **fomu ya malipo** na hapa ndipo wateja wako watakapokwenda kujisajili kwenye mtandao wako na kujiunga na plan. Unaweza kuwa na kurasa nyingi za usajili, kila moja ikiwa na fomu tofauti ya usajili ikiwa unataka.
 
@@ -35,13 +35,13 @@ Ikiwa wamejisajili kwenye plan ya kulipia au uthibitishaji wa barua pepe si wa l
 
 ![Tovuti imewashwa ikiwa na kiungo cha kuingia kwenye Dashboard](/img/frontend/site-activated.png)
 
-## Kutumia Kiungo Kinachoweza Kushirikiwa:
+## Kutumia Kiungo Kinachoweza Kushirikiwa: {#using-a-shareable-link}
 
 Mchakato wa kujisajili kwa kutumia kiungo kinachoweza kushirikiwa kimsingi ni sawa na fomu ya usajili, tofauti pekee ni kwamba kwa kutumia kiungo kinachoweza kushirikiwa, wateja wako wanaweza kuwa na bidhaa au kiolezo cha tovuti kilichochaguliwa mapema kwenye fomu ya malipo (rejelea sehemu ya Kuchagua mapema bidhaa na violezo kupitia vigezo vya URL) au labda msimbo wa kuponi ulioongezwa (rejelea sehemu ya Kutumia Vigezo vya URL).
 
 Mchakato wa usajili utakuwa uleule: watahitaji kujaza jina lao, jina la mtumiaji, anwani ya barua pepe, jina na kichwa cha tovuti, n.k... lakini plan au kiolezo cha tovuti kitakuwa tayari kimechaguliwa mapema kwa ajili yao.
 
-### Kujisajili Kwa Kutumia Malipo ya Mkono:
+### Kujisajili Kwa Kutumia Malipo ya Mkono: {#registering-using-manual-payments}
 
 Ikiwa hutaki kutumia PayPal, Stripe au lango lingine lolote la malipo linalotolewa na Ultimate Multisite au miunganisho yake ya add-on, unaweza kutumia malipo ya mkono kwa wateja wako. Kwa njia hii, unaweza kuwatengenezea ankara ili walipe kwenye kichakataji chako cha malipo unachopendelea baada ya kujisajili kwenye mtandao wako.
 

@@ -4,11 +4,11 @@ title: Akcia - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Akcia: wu_domain_registration_failed
+# Akcia: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Spustí sa po zlyhaní pokusu o registráciu domény.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Spustí sa po zlyhaní pokusu o registráciu domény.
 | $registration_data | `array&lt;string,mixed&gt;` | Metadáta registrácie vrátane status=failed a error_message. |
 | $error_message | `string` | Čitateľná chybová správa od registrátora. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) na riadku 1250

@@ -4,15 +4,15 @@ title: 'Handling - wu_{$this->id}_scripts'
 sidebar_label: 'wu_{$this->id}_scripts'
 _i18n_hash: 5769fc5cafbbb4448aedaa68fa084a3c
 ---
-# Action: wu_\{$this->id\}_scripts
+# Action: wu_\{$this->id\}_scripts {#action-wuthis-idscripts}
 
 Udløser enqueue scripts hook.
 
 Dette bruges af elementet til at hooke dets register_scripts method.
 
-### Siden
+### Siden {#since}
 
 - 2.0.0
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L613) på linje 613

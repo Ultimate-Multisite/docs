@@ -3,7 +3,7 @@ title: Rajistar canje-canje na Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Tarihin Canje-canje na Material WP
+# Tarihin Canje-canje na Material WP {#material-wp-changelog}
 
 Siga 1.1.15 - 01/26/2026
 * An inganta: Salon lamba da tsara rubutu;

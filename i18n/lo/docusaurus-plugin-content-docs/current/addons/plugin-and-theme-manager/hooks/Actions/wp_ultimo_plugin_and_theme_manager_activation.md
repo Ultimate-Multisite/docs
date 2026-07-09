@@ -4,13 +4,13 @@ title: ການກະທຳ - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# ການດຳເນີນການ: wp_ultimo_plugin_and_theme_manager_activation
+# ການດຳເນີນການ: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
 
 ໃຫ້ສ່ວນອື່ນໆ ຂອງ plugin ຜູກກິດຈະວັດຂອງຕົນເຂົ້າກັບການເປີດໃຊ້ງານ
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 1.9.6
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ກຳນົດໄວ້ໃນ [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/inc/class-hooks.php#L83) ທີ່ບັນທັດ 83

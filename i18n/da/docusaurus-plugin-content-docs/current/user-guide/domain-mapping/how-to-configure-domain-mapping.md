@@ -3,17 +3,17 @@ title: Sådan konfigurerer du domænetilknytning
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Sådan konfigurerer du domænemapping (v2)
+# Sådan konfigurerer du domænemapping (v2) {#how-to-configure-domain-mapping-v2}
 
 _**VIGTIG BEMÆRKNING: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
 En af de mest kraftfulde funktioner i et premium-netværk er muligheden for at tilbyde vores kunder en chance for at tilknytte et topdomæne til deres websteder. Når alt kommer til alt, hvad ser mest professionelt ud: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) eller [_**joesbikeshop.com**_](http://joesbikeshop.com)? Derfor tilbyder Ultimate Multisite den funktion indbygget, uden behov for at bruge tredjeparts-plugins.
 
-## Hvad er domænemapping?
+## Hvad er domænemapping? {#whats-domain-mapping}
 
 Som navnet antyder, er domænemapping den mulighed, som Ultimate Multisite tilbyder, til at modtage en anmodning om et brugerdefineret domæne og mappe den anmodning til det tilsvarende websted i netværket med det pågældende domæne tilknyttet.
 
-### Sådan opsætter du domænemapping på dit Ultimate Multisite-netværk
+### Sådan opsætter du domænemapping på dit Ultimate Multisite-netværk {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Domænemapping kræver noget opsætning fra din side for at fungere. Heldigvis automatiserer Ultimate Multisite det hårde arbejde for dig, så du nemt kan opfylde kravene.
 
@@ -45,7 +45,7 @@ Men før du begynder at mappe det brugerdefinerede domæne til en af undersidern
 
 ###
 
-### Sørg for, at domænets DNS-indstillinger er korrekt konfigureret
+### Sørg for, at domænets DNS-indstillinger er korrekt konfigureret {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 For at en mapping kan fungere, skal du sikre dig, at det domæne, du planlægger at mappe, peger på dit netværks IP-adresse. Bemærk, at du skal bruge netværkets IP-adresse - IP-adressen for det domæne, hvor Ultimate Multisite er installeret - ikke IP-adressen for det brugerdefinerede domæne, du vil mappe. For at søge efter IP-adressen for et specifikt domæne foreslår vi for eksempel at gå til [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
@@ -55,7 +55,7 @@ Hvis du har problemer med at få dette til at fungere, **kontakt din domæneregi
 
 Hvis du planlægger at lade dine kunder mappe deres egne domæner, skal de selv udføre arbejdet i denne del. Henvis dem til deres registrators supportsystem, hvis de ikke kan oprette A Record.
 
-### Mapping af brugerdefineret domænenavn som Super Admin
+### Mapping af brugerdefineret domænenavn som Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Når du er logget ind som superadmin på dit netværk, kan du nemt tilføje og administrere brugerdefinerede domænenavne ved at gå til **Ultimate Multisite > Domains**.
 
@@ -93,7 +93,7 @@ Hvis du klikker på domænenavnet, vil du kunne se nogle indstillinger inde i de
 
 **Is Secure?:** Selvom Ultimate Multisite kontrollerer, om domænet har et SSL-certifikat eller ej, før det aktiveres, kan du manuelt vælge at indlæse domænet med eller uden et SSL-certifikat. Bemærk, at hvis webstedet ikke har et SSL-certifikat, og du forsøger at gennemtvinge indlæsning med SSL, kan det give dig fejl.
 
-### Mapping af brugerdefineret domænenavn som Subsite-bruger
+### Mapping af brugerdefineret domænenavn som Subsite-bruger {#mapping-custom-domain-name-as-subsite-user}
 
 Subsite-administratorer kan også mappe brugerdefinerede domænenavne fra deres subsite admin dashboard.
 
@@ -121,7 +121,7 @@ Brugeren kan derefter klikke på **Next Step** og fortsætte med at tilføje det
 
 Klik på **Add Domain** vil starte processen med at verificere og hente DNS-oplysningerne for det brugerdefinerede domæne.
 
-### Om domænesynkronisering
+### Om domænesynkronisering {#about-domain-syncing}
 
 Domænesynkronisering er en proces, hvor Ultimate Multisite tilføjer det brugerdefinerede domænenavn til din hostingkonto som et add-on-domæne **for at domain mapping kan fungere**.
 

@@ -3,7 +3,7 @@ title: Site-uri web ale clienților
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Site-urile clientului tău (v2)
+# Site-urile clientului tău (v2) {#your-clients-websites-v2}
 
 După înregistrarea în rețeaua ta, clienții tăi pot accesa Dashboard-ul lor.
 

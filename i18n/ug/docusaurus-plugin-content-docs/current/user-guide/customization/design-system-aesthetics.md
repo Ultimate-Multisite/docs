@@ -3,11 +3,11 @@ title: تصميم سیستمی جماليات مهارت
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Aesthetics Skill (طراحی سیستم زیبایی‌شناسی)
+# Design System Aesthetics Skill (طراحی سیستم زیبایی‌شناسی) {#design-system-aesthetics-skill}
 
 **Design System Aesthetics skill** یعنی یک روش راهنما برای بهتر کردن ظاهر سایت شما. این مهارت به شما کمک می‌کند در مورد فونت‌ها، رنگ‌ها، فاصله و توکن‌های حرکتی که سیستم طراحی شما را تعریف می‌کنند، تصمیمات سازگاری بگیرید.
 
-## Design System Aesthetics چیست؟ (زیبایی‌شناسی سیستم طراحی چیست؟)
+## Design System Aesthetics چیست؟ (زیبایی‌شناسی سیستم طراحی چیست؟) {#what-is-design-system-aesthetics}
 
 Design System Aesthetics یک مهارت ساختاریافته است که موارد زیر را پوشش می‌دهد:
 
@@ -20,9 +20,9 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 
 این تصمیمات در فایل `theme.json` قالب شما ثبت می‌شوند و یک سیستم بصری منسجم ایجاد می‌کنند.
 
-## چرا از Design System Aesthetics استفاده کنیم؟ (چرا از زیبایی‌شناسی سیستم طراحی استفاده کنیم؟)
+## چرا از Design System Aesthetics استفاده کنیم؟ (چرا از زیبایی‌شناسی سیستم طراحی استفاده کنیم؟) {#why-use-design-system-aesthetics}
 
-### Consistency (سازگاری)
+### Consistency (سازگاری) {#consistency}
 
 یک سیستم طراحی تضمین می‌کند که:
 
@@ -31,7 +31,7 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - فاصله‌ها الگوی قابل پیش‌بینی داشته باشند
 - انیمیشن‌ها با هم هماهنگ به نظر برسند
 
-### Efficiency (کارایی)
+### Efficiency (کارایی) {#efficiency}
 
 به جای اینکه تصمیمات طراحی را صفحه به صفحه بگیرید، شما:
 
@@ -39,7 +39,7 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - از همه جا از آن‌ها استفاده می‌کنید
 - با تغییر یک مقدار، به‌صورت سراسری به‌روزرسانی می‌کنید
 
-### Flexibility (انعطاف‌پذیری)
+### Flexibility (انعطاف‌پذیری) {#flexibility}
 
 شما می‌توانید:
 
@@ -47,9 +47,9 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - با زیبایی‌شناسی‌های مختلف آزمایش کنید
 - در عین تکامل، برند خود را حفظ کنید
 
-## فعال کردن Design System Aesthetics Skill چگونه است؟ (فعال کردن مهارت زیبایی‌شناسی سیستم طراحی چطور است؟)
+## فعال کردن Design System Aesthetics Skill چگونه است؟ (فعال کردن مهارت زیبایی‌شناسی سیستم طراحی چطور است؟) {#triggering-the-design-system-aesthetics-skill}
 
-### Manual Activation (فعال‌سازی دستی)
+### Manual Activation (فعال‌سازی دستی) {#manual-activation}
 
 شما می‌توانید هر زمان شروع به استفاده از این مهارت کنید:
 
@@ -69,7 +69,7 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 "Guide me through design system decisions"
 ```
 
-### Automatic Suggestions (پیشنهادات خودکار)
+### Automatic Suggestions (پیشنهادات خودکار) {#automatic-suggestions}
 
 هنگامی که شما موارد زیر را انجام می‌دهید، ممکن است اِجنت‌ها پیشنهاد استفاده از این مهارت را بدهند:
 
@@ -78,9 +78,9 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - می‌خواهید سازگاری بصری خود را بهبود ببخشید
 - در حال آماده‌سازی برای راه‌اندازی سایت هستید
 
-## التصميم سیستمی زیبایی‌شناسی فرآیند
+## التصميم سیستمی زیبایی‌شناسی فرآیند {#the-design-system-aesthetics-process}
 
-### مرحله ۱: تایپوگرافی (Typography)
+### مرحله ۱: تایپوگرافی (Typography) {#step-1-typography}
 
 مساعد از شما در مورد انتخاب فونت‌هایتان سؤال می‌کند:
 
@@ -110,7 +110,7 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - **مقیاس وزن (Weight scale)**: وزن‌های فونت (عادی، متوسط، پررنگ و غیره)
 - **ارتفاع خط (Line height)**: فاصله بین خطوط برای خوانایی بهتر
 
-### مرحله ۲: پالت رنگی (Color Palette)
+### مرحله ۲: پالت رنگی (Color Palette) {#step-2-color-palette}
 
 ```
 بیایید پالت رنگی خود را تعریف کنیم.
@@ -140,7 +140,7 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - رنگ‌های معنایی (موفقیت، هشدار، خطا)
 - حالت‌های هاور (Hover) و فعال (Active states)
 
-### مرحله ۳: فاصله گذاری (Spacing)
+### مرحله ۳: فاصله گذاری (Spacing) {#step-3-spacing}
 
 شما چقدر فضای تنفس می‌خواهید؟
 
@@ -160,7 +160,7 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - مقیاس: xs، sm، md، lg، xl، 2xl
 - مقادیر خاص برای پدینگ، مارجین و گپ (gap)
 
-### مرحله ۴: حاشیه و سایه‌ها (Borders and Shadows)
+### مرحله ۴: حاشیه و سایه‌ها (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 عمق بصری و تعریف:
@@ -183,7 +183,7 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - توکن‌های سایه برای سطوح ارتفاع (elevation levels)
 - توکن‌های ضخامت حاشیه (Border width tokens)
 
-### مرحله ۵: حرکت و انیمیشن (Motion and Animation)
+### مرحله ۵: حرکت و انیمیشن (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 وقتی سایت شما تعاملی باشد چه حسی داشته باشد؟
@@ -205,9 +205,9 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 - توابع نرم‌سازی (Easing functions): ease-in، ease-out، ease-in-out
 - فریم‌های کلید انیمیشن برای تعاملات رایج
 
-## اعمال زیبایی‌شناسی سیستم طراحی (Applying Design System Aesthetics)
+## اعمال زیبایی‌شناسی سیستم طراحی (Applying Design System Aesthetics) {#applying-design-system-aesthetics}
 
-### اعمال خودکار (Automatic Application)
+### اعمال خودکار (Automatic Application) {#automatic-application}
 
 بعد از اینکه مهارت را کامل کردید، عامل موارد زیر را انجام می‌دهد:
 
@@ -216,7 +216,7 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 ۳. استایل‌های بلوک‌ها را برای مطابقت با سیستم جدید بازسازی می‌کند
 ۴. قالب به‌روز شده را فعال می‌سازد
 
-### اعمال دستی (Manual Application)
+### اعمال دستی (Manual Application) {#manual-application}
 
 شما می‌توانید مستقیماً `theme.json` را ویرایش کنید:
 
@@ -255,9 +255,9 @@ Design System Aesthetics یک مهارت ساختاریافته است که مو
 }
 ```
 
-## Dizayn Sisteminizi Görme
+## Dizayn Sisteminizi Görme {#viewing-your-design-system}
 
-### Agent'a Sorun
+### Agent'a Sorun {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -271,13 +271,13 @@ yoki
 
 Agent sizden tipografi, renkler, boşluklar (spacing) va boshqa tokenlarni ko'rsatadi.
 
-### theme.jsonni Ko'rish
+### theme.jsonni Ko'rish {#view-themejson}
 
 Rohli token ta'riflarini ko'rish uchun `/wp-content/themes/[theme-name]/theme.json` faylini matn muharririda oching.
 
-## Dizayn Sistemingizni Yangilash
+## Dizayn Sistemingizni Yangilash {#updating-your-design-system}
 
-### Tezkor Yangilanishlar
+### Tezkor Yangilanishlar {#quick-updates}
 
 Agentdan aniq o'zgarishlar so'rashingiz mumkin:
 
@@ -297,7 +297,7 @@ yoki
 "Change the heading font to a serif"
 ```
 
-### To'liq Qayta Dizayn
+### To'liq Qayta Dizayn {#full-redesign}
 
 Dizayn Sistemining Estetikas (Design System Aesthetics) ko'nikmasini qayta ishga tushiring:
 
@@ -307,7 +307,7 @@ Dizayn Sistemining Estetikas (Design System Aesthetics) ko'nikmasini qayta ishga
 
 Bu sizni hozirgi qiymatlaringizdan boshlab barcha qarorlaringiz orqali yo'l ko'rsatadi.
 
-### Qisman Yangilanishlar
+### Qisman Yangilanishlar {#partial-updates}
 
 Aniqlangan jihatlarni yangilang:
 
@@ -315,15 +315,15 @@ Aniqlangan jihatlarni yangilang:
 "Just update the color palette, keep everything else"
 ```
 
-## Dizayn Sistemining Eng Yaxshi Amaliyotlari (Best Practices)
+## Dizayn Sistemining Eng Yaxshi Amaliyotlari (Best Practices) {#design-system-best-practices}
 
-### Birjiy Bo'yicha Ishlash (Consistency)
+### Birjiy Bo'yicha Ishlash (Consistency) {#consistency-1}
 
 - Barcha joylarda bir xil tokenlardan foydalaning.
 - Bir martalik ranglar yoki o'lchamlarni yaratmang.
 - Qiymatlarni bevosita yozish o'rniga tokenlarni ishora qiling.
 
-### Nomlash (Naming)
+### Nomlash (Naming) {#naming}
 
 Aniqlangan, ma'noli nomlardan foydalaning:
 
@@ -333,7 +333,7 @@ Aniqlangan, ma'noli nomlardan foydalaning:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Kengaytirish Imkoniyati (Scalability)
+### Kengaytirish Imkoniyati (Scalability) {#scalability}
 
 سیستم خود را مقیاس‌پذیر طراحی کنید:
 
@@ -341,7 +341,7 @@ Aniqlangan, ma'noli nomlardan foydalaning:
 - Rastgele değerler yerine ölçekler oluşturun (xs, sm, md, lg, xl)
 - Gelecekteki eklemeler için plan yapın
 
-### Dokümantasyon
+### Dokümantasyon {#documentation}
 
 Tasarım sisteminizi belgeleyin:
 
@@ -349,9 +349,9 @@ Tasarım sisteminizi belgeleyin:
 - Her bir token'ı ne zaman kullanacağınızı belirtin
 - İstisnalar ve kenar durumları (edge cases) hakkında bilgi verin
 
-## Yaygın Tasarım Sistemi Kalıpları
+## Yaygın Tasarım Sistemi Kalıpları {#common-design-system-patterns}
 
-### Modern Minimalist
+### Modern Minimalist {#modern-minimalist}
 
 - Sans-serif yazı tipleri (Inter, Helvetica)
 - Sınırlı renk paleti (2-3 renk)
@@ -359,7 +359,7 @@ Tasarım sisteminizi belgeleyin:
 - Hafif gölgeler
 - Akıcı, hızlı animasyonlar
 
-### Sıcak ve Dostça
+### Sıcak ve Dostça {#warm-and-friendly}
 
 - Serif ve sans-serif karışımı
 - Sıcak renk paleti (turuncular, sıcak griler)
@@ -367,7 +367,7 @@ Tasarım sisteminizi belgeleyin:
 - Yumuşak gölgeler
 - Eğlenceli animasyonlar
 
-### Profesyonel Kurumsal
+### Profesyonel Kurumsal {#professional-corporate}
 
 - Temiz sans-serif (Roboto, Open Sans)
 - Vurgu rengi olan nötr bir palet
@@ -375,7 +375,7 @@ Tasarım sisteminizi belgeleyin:
 - Minimum gölgeler
 - Hafif geçişler
 
-### Yaratıcı ve Cesur
+### Yaratıcı ve Cesur {#creative-and-bold}
 
 - Farklı tipografi
 - Cesur renk paleti
@@ -383,7 +383,7 @@ Tasarım sisteminizi belgeleyin:
 - Güçlü gölgeler
 - Dikkat çekici animasyonlar
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
 **Tasarım sistemimdeki değişiklikler görünmüyor**
 - Tarayıcı önbelleğini temizleyin
@@ -401,7 +401,7 @@ Tasarım sisteminizi belgeleyin:
 - theme.json dosyasını manuel olarak önceki değerlere düzenleyin
 - Farklı seçimlerle beceriyi tekrar çalıştırın
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 Tasarım sisteminizi tanımladıktan sonra:
 

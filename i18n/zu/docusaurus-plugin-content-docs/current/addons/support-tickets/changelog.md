@@ -3,13 +3,13 @@ title: Umlando Wezinguquko Wamathikithi Osekelo
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Ilogu yezinguquko yamathikithi osekelo
+# Ilogu yezinguquko yamathikithi osekelo {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Kuthuthukisiwe: Kususwe uhla lwemibhalo vendor/ ekulandelelweni kwe-Git (seluvele lumbozwe yi-.gitignore), kunciphisa usayizi we-repository
 * Kuthuthukisiwe: Kuhlolwe kuze kufike ku-WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Kulungisiwe: Yamukela amanani angu-null kuma-setter emodeli yethikithi avumela i-null
 * Kulungisiwe: Gcina wonke amathikithi kumathebula omhlaba wonke enethiwekhi yonke ukuze kube nokusekelwa okufanele kwe-multisite
 * Kulungisiwe: Fihla izinkambu zabasebenzi futhi ulungise ukuqondiswa kabusha kwekhasi elingenalutho kwifomu lekhasimende lethikithi elisha
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Kuthuthukisiwe: Layisha izinsiza ze-frontend ngokwemibandela kuphela emakhasini amathikithi osekelo
 * Kuthuthukisiwe: Yeqa i-autoloader ye-plugin lapho i-autoloader yempande ye-Bedrock isivele ilayishe okuncikile
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Kungeziwe: Ukusebenza okuphelele kokubuka amathikithi kumlawuli naku-frontend
 * Kungeziwe: Isibambi se-AJAX sokuthunyelwa kwezimpendulo zamathikithi
 * Kungeziwe: Ukusekelwa kokusebenza kwezimpendulo zamathikithi ngokuphathwa kwefomu okufanele
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Kuthuthukisiwe: Isakhiwo sedathabheyisi esinamakilasi afanele ombuzo ne-schema ezimpendulweni nasekunamathiselweni
 * Kuthuthukisiwe: Ukuthuthela ezakhiweni zangempela esikhundleni sama-attributes kumamodeli amathikithi
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Kubuyekeziwe: Kuqanjwe kabusha isiqalo saba yi-ultimate-multisite ukuze kube nokuvumelana
 * Kubuyekeziwe: Ukumiswa ngokujwayelekile kwe-text domain
 * Kulungisiwe: Ukulungiswa kwamaphutha amancane nokuthuthukiswa
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Ukukhishwa kokuqala
 * Uhlelo oluphelele lokuphathwa kwamathikithi
 * Ukulawula ukufinyelela kwamazinga amaningi

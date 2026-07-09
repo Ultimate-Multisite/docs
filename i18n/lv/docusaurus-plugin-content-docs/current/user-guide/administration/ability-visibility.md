@@ -3,11 +3,11 @@ title: Redzamības spējība
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Redzamība redzība (Ability Visibility)
+# Redzamība redzība (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 ieviesta **Redzamības kontroles** (Ability Visibility), kas norāda, kuras saskarenības atklāj katru iespēju. Tas ļauj administratoriem precīzi iestatīt, kuras agentu iespējas ir pieejamas REST API, MCP serveriem, WooCommerce integrācijām un citām interfeisām.
 
-## Kāds ir Redzamība? (What is Ability Visibility?)
+## Kāds ir Redzamība? (What is Ability Visibility?) {#what-is-ability-visibility}
 
 Redzamība ir atļauju sistēma, kas kontrole:
 
@@ -18,9 +18,9 @@ Redzamība ir atļauju sistēma, kas kontrole:
 
 Katras iespējas ir redzamības līmenis, kas noteik, kuras tās ir pieejamas dažādās saskarenībās.
 
-## Redzamības līmeņi (Visibility Levels)
+## Redzamības līmeņi (Visibility Levels) {#visibility-levels}
 
-### Publiski (Public)
+### Publiski (Public) {#public}
 
 **Publiskas iespējas** ir pieejamas visur:
 
@@ -32,7 +32,7 @@ Katras iespējas ir redzamības līmenis, kas noteik, kuras tās ir pieejamas da
 
 Piemērs: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Īpaši (Internal)
+### Īpaši (Internal) {#internal}
 
 **Īpaši iespējas** ir pieejamas tikai jūsu WordPress instalācijā:
 
@@ -43,7 +43,7 @@ Piemērs: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Piemērs: `manage-settings`, `view-analytics`, `export-data`
 
-### Partneri (Partner)
+### Partneri (Partner) {#partner}
 
 **Partneru iespējas** ir pieejamas tikai atļautajiem partneriem:
 
@@ -54,7 +54,7 @@ Piemērs: `manage-settings`, `view-analytics`, `export-data`
 
 Piemērs: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Dislēgti (Disabled)
+### Dislēgti (Disabled) {#disabled}
 
 **Dislēgtas iespējas** nav pieejamas jebkurā vietā:
 
@@ -63,15 +63,15 @@ Piemērs: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Nav pieejams administrācijas paneliem
 - Noderīgs atbalstītās vai eksperimentālās iespējās
 
-## Uzlabību iespēju pārvaldīšana
+## Uzlabību iespēju pārvaldīšana {#managing-ability-visibility}
 
-### Iesniegšanās uz uzmanības redzamības iestatījumiem
+### Iesniegšanās uz uzmanības redzamības iestatījumiem {#accessing-ability-visibility-settings}
 
 1. Atveriet **WordPress Admin** → **Superdav AI Agent** → **Settings** (Iestatījumi)
 2. Nospressiet **Abilities** (Uzlabības) tabu
 3. Jūs redzēsiet sarakstu visām instalēto uzmanībām un to redzamības līmeņiem
 
-### Uzlabību detaļu skatīšana
+### Uzlabību detaļu skatīšana {#viewing-ability-details}
 
 Nospressiet jebkuru uzlabību, lai redzētu:
 
@@ -82,7 +82,7 @@ Nospressiet jebkuru uzlabību, lai redzētu:
 - **Last updated** (Pēdējā atjaunināšana): Kad redzamība tika pēdējā reizi mainīta
 - **Status**: Pazināts vai Unclassified (Nklassificēts)
 
-### Redzamības līmeņu mainīšana
+### Redzamības līmeņu mainīšana {#changing-visibility-levels}
 
 Lai mainītu uzlabības redzamību:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Masīnas operācijas
+### Masīnas operācijas {#bulk-operations}
 
 Lai mainītu redzamību vairākām uzmanībām:
 
@@ -108,11 +108,11 @@ Lai mainītu redzamību vairākām uzmanībām:
 2. Izvēlieties jaunu redzamības līmeni no masīnas darbības dropdowna
 3. Nospressiet **Apply** (Piemērot)
 
-## Partneru atļauju saraksts (Partner Allow-List)
+## Partneru atļauju saraksts (Partner Allow-List) {#partner-allow-list}
 
 **Partneru atļauju saraksts** liecina, kādi ārējie partneri var piekļūt Uzlabības līmeņa uzmanībām.
 
-### Partneru pievienošana
+### Partneru pievienošana {#adding-partners}
 
 1. Atveriet **Superdav AI Agent** → **Settings** (Iestatījumi) → **Partners** (Partneri)
 2. Nospressiet **Add Partner** (Pievienot partneri)
@@ -120,7 +120,7 @@ Lai mainītu redzamību vairākām uzmanībām:
 4. Optiāli pievienojiet partnera nosaukumu un aprakstu
 5. Nospressiet **Save** (Saglabāt)
 
-### Uzlabību atzīšana partneriem
+### Uzlabību atzīšana partneriem {#assigning-abilities-to-partners}
 
 Partnera pievienošanas pēc tam:
 
@@ -130,7 +130,7 @@ Partnera pievienošanas pēc tam:
 4. "Partneru atļauju sarakstā" sadaļā atzīmējiet vakus tiem partneriem, kuriem ir pieejamība.
 5. Nospressiet **Save** (Saglabāt).
 
-### Partnera piekļuves atņemšana
+### Partnera piekļuves atņemšana {#revoking-partner-access}
 
 Lai atņemtu partneram piekļuvi:
 
@@ -140,11 +140,11 @@ Lai atņemtu partneram piekļuvi:
 
 Partneram tūlīt zaudēs piekļuve šim abilībai.
 
-## Neklasificēti abilības
+## Neklasificēti abilības {#unclassified-abilities}
 
 Kad instalējat tretspējas abilību, ko Superdav AI Agent nepoznā, tas tiek norādīts kā **Neklasificēts**.
 
-### Administrāta paziņojums par neklasificētām abilībām
+### Administrāta paziņojums par neklasificētām abilībām {#admin-notice-for-unclassified-abilities}
 
 Jūs redzēs administrācijas paziņojumu:
 
@@ -161,7 +161,7 @@ Lūdzu, pārskatīt un klasificēt tos.
 [Pārskatīt abilības] [Atbalstīt]
 ```
 
-### Neklasificēto abilību pārskatīšana
+### Neklasificēto abilību pārskatīšana {#reviewing-unclassified-abilities}
 
 1. Nospressiet **Review Abilities** (Pārskatīt abilības) paziņojumā.
 2. Katras neklasificētās abilības laikā jūs redzēs:
@@ -178,7 +178,7 @@ Lūdzu, pārskatīt un klasificēt tos.
 
 4. Nospressiet **Classify** (Klasificēt), lai saglabātu savu lēmumu.
 
-### Kāpēc klasificēt neklasificētas abilības?
+### Kāpēc klasificēt neklasificētas abilības? {#why-classify-unclassified-abilities}
 
 Abilību klasificēšana:
 
@@ -187,9 +187,9 @@ Abilību klasificēšana:
 - **Atver iespējas**: Reiz klasificētas, abilība kļūst pieejama
 - **Dokumentē lēmumus**: Jūs saglabājat savus izvēles audita mērķiem
 
-## Redzamība dažādās virsmas
+## Redzamība dažādās virsmas {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Publikas iespējas** ir pieejamas ar REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Iekšējās un partneru iespējas** nav pieejamas ar REST API.
 
-### MCP Serveri
+### MCP Serveri {#mcp-servers}
 
 **Publikas iespējas** ir pieejamas ar MCP:
 
@@ -217,7 +217,7 @@ Pieejamas iespējas:
 
 **Partneru iespējas** ir pieejamas tikai ar partneru autentifikācijas datus.
 
-### WooCommerce integrācija
+### WooCommerce integrācija {#woocommerce-integration}
 
 **Publikas iespējas**, kas saistītas ar WooCommerce, ir pieejamas:
 
@@ -227,7 +227,7 @@ Pieejamas iespējas:
 
 **Iekšējās iespējas** nav atklātas WooCommerce.
 
-### Čata interfeiss
+### Čata interfeiss {#chat-interface}
 
 **Visas iespējas** (publiskās, iekšējās, partneru) ir pieejamas čatā, atkarībā no lietotāja iestatījumiem:
 
@@ -235,34 +235,34 @@ Pieejamas iespējas:
 - Normālajiem lietotāji redz tikai pubiskās iespējas
 - Partneri redz pubiskās + partneru iespējas (ja tās ir saskaņotas ar sarakstu)
 
-## Drošības labākās praktikas
+## Drošības labākās praktikas {#security-best-practices}
 
-### Mīlestības principa izmantošana (Principle of Least Privilege)
+### Mīlestības principa izmantošana (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Iestatiet iespējas visrestriktīvākai redzamībai, kas tos atļauj lietot.
 - Izmantojiet partneru redzamību sensitīvās operācijās.
 - Izslēdziet iespējas, ko neizmantojat.
 
-### Regulāras pārbaudes
+### Regulāras pārbaudes {#regular-audits}
 
 - Pārbaudiet iespēju redzamību mēnesitām
 - Pārbaudiet, vai ir nekategorizētas iespējas
 - Atņemiet piekļuvi lietotajiem, kuriem nav nepieciešami partneri
 
-### Logēšana un uzraudzība (Logging and Monitoring)
+### Logēšana un uzraudzība (Logging and Monitoring) {#logging-and-monitoring}
 
 - Uzraudziet, kādas iespējas tiek izmantotas visbiežāk
 - Sekojiet partneru piekļuves modeļus
 - Advarslieto, ja ir neparasti iespēju lietošanas modes
 
-### Tretpuses iespējas (Third-Party Abilities)
+### Tretpuses iespējas (Third-Party Abilities) {#third-party-abilities}
 
 - Pārbaudiet tretpuses iespējas pirms to ieslēgšanas
 - Izklāstiet tās kļūdu skaidri
 - Sākiet ar iekšējām vai partneru redzamību
 - Promovējiet publiski tikai pēc pārbaudes
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Spēja neparāda sarakstā**
 - Pārbaudiet, vai spēja ir instalēta un aktīva
@@ -285,7 +285,7 @@ Pieejamas iespējas:
 - Pārbaudiet, vai jūsu klasifikācija ir saglabāta
 - Pārbaudiet, vai spēja, kas to sniedz, ir aktuāla
 
-## Migrācija no veco režīma (Legacy Mode)
+## Migrācija no veco režīma (Legacy Mode) {#migration-from-legacy-mode}
 
 Ja jūs pārvēršaties no vecākas versijas Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Ja jūs pārvēršaties no vecākas versijas Superdav AI Agent:
 
 Lietojiet **Trešās puses režīma migrāciju** lai saņemt vairāk informācijas par pāreju uz vietējo Abilities API integrāciju.
 
-## Nākamie soļi
+## Nākamie soļi {#next-steps}
 
 Pēc spējai redzamības konfigurēšanas:
 

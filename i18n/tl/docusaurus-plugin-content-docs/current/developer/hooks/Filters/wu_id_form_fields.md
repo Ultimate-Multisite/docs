@@ -4,19 +4,19 @@ title: 'Pansala - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields
+# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
 
 Sinasala ang mga field sa isang form. Natutukoy ang form sa pamamagitan ng ID sa pangalan ng filter.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $fields | `array` | Listahan ng mga field ng form. |
 
-### Mula Noong
+### Mula Noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) sa linya 148

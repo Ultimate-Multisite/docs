@@ -4,11 +4,11 @@ title: Tātari - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Tātari: wu_post_count
+# Tātari: wu_post_count {#filter-wupostcount}
 
 Whakaaetia ngā kaiwhakawhanake monomai kia huri i te tapeke tatau
 
-## Ngā Tawhā
+## Ngā Tawhā {#parameters}
 
 | Ingoa | Momo | Whakaahuatanga |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Whakaaetia ngā kaiwhakawhanake monomai kia huri i te tapeke tatau
 | $post_counts | `object` | He ahanoa WordPress ka whakahokia e te wp_count_posts fn |
 | $post_type | `string` | Te slug o te momo pou |
 
-### Mai i
+### Mai i {#since}
 
 - 1.9.1
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia ki [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) i te rārangi 136
 
 
-## Ngā Whakahokinga
+## Ngā Whakahokinga {#returns}
 Tapeke hōu

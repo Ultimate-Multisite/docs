@@ -3,11 +3,11 @@ title: Mbiri ya kusintha
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Mbiri ya zosintha
+# Mbiri ya zosintha {#changelog}
 
-## 1.9.0 — Yatulutsidwa pa 2026-04-28
+## 1.9.0 — Yatulutsidwa pa 2026-04-28 {#190--released-on-2026-04-28}
 
-### Zatsopano
+### Zatsopano {#new}
 
 - **Luso la `create_contact_form`** — limapanga fomu yolumikizirana pogwiritsa ntchito plugin ya mafomu yomwe ikugwira ntchito (Contact Form 7, WPForms, Fluent Forms, kapena Gravity Forms) ndipo limabweza shortcode yokonzeka kuyikidwa mu cholemba kapena tsamba lililonse.
 - **Luso la `set_featured_image`** — limasankha chithunzi chachikulu cha cholemba kapena tsamba kuchokera ku ID ya cholumikizira chomwe chilipo mu Media Library kapena URL yakutali; limalowetsa chithunzicho lokha pamene URL yaperekedwa.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Bwezeretsani gawo lomaliza** — paneli ya macheza tsopano imayikanso zokambirana zaposachedwa zokha pamene tsamba likuyamba komanso widget ikatsegulidwa, kotero context siyimatayika mukamayenda pakati pa masamba.
 - **Ma link a zochita za plugin** — ma link achangu opita ku Settings ndi Abilities Registry tsopano amawoneka pa skrini ya WordPress **Plugins → Ma Plugin Oyikidwa** pansi pa kufotokozera kwa plugin.
 
-### Zasinthidwa
+### Zasinthidwa {#improved}
 
 - **Kuyesanso gwero la chithunzi** — wothandizira tsopano amayesanso magwero onse aulere a zithunzi omwe akhazikitsidwa asanabwerere ku chithunzi chopangidwa ndi AI pakalephera kutsitsa.
 - **Paneli ya zambiri za model** — nthawi zonse imawoneka mu mutu wa macheza; siisabisidwanso pambuyo pa uthenga woyamba.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Kukonzanso widget ya macheza** — icon ya AI yogwirizana imalowa m'malo mwa avatar yakale yokonda; ikugwirizana ndi dongosolo la wothandizira womangidwa mkati.
 - **Kupanga ma URL kukhala ma link** — ma URL omwe amawoneka mu mauthenga a system ndi mabubble a mauthenga a zolakwika tsopano amawonetsedwa ngati ma link odina.
 
-### Zakonzedwa
+### Zakonzedwa {#fixed}
 
 - **Kupezeka kwa maluso** — zakonzedwa zofotokozera, maumboni a system prompt, ndi kugwirizana kwa namespace kuti maluso onse aziwoneka mu mndandanda wa zida za wothandizira modalirika.
 - **Cache ya providers** — providers tsopano amasungidwa mu cache pa site yonse kudzera mu kauntala ya mtundu, kupewa mavuto a stale-provider pa ma network a multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Yatulutsidwa pa 2026-04-09
+## 1.4.0 — Yatulutsidwa pa 2026-04-09 {#140--released-on-2026-04-09}
 
-### Zatsopano
+### Zatsopano {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — imayendetsa gulu la mayeso la Agent Capabilities v1 kuchokera pa command line kwa CI pipelines ndi mayendedwe oyesera model. Imathandiza kuthamanga pa funso lililonse, kusintha provider/model, ndi zotuluka za JSON/CSV.
 - **Agent Capabilities v1 benchmark suite** — gulu lokonzedwa la ma prompt ovuta, a masitepe angapo omwe amayesa luso lonse, ndi scoring komanso malipoti a token/nthawi.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Funso la benchmark la tsamba la restaurant** (`q-restaurant-website`) — mayeso oyambira mpaka kumapeto okhudza kulembetsa CPT, design system, navigation, ndi kupeza plugin.
 - **Ma plugin olumikizira AI provider** awonjezedwa ku WordPress Playground blueprints kuti kukhazikitsa chitukuko cha local kukhale kofulumira.
 
-### Zakonzedwa bwino
+### Zakonzedwa bwino {#improved-1}
 
 - README yasinthidwa ndi zolemba za AI provider connector ndi malangizo okhazikitsa.
 
-### Zokonzedwa
+### Zokonzedwa {#fixed-1}
 
 - Zolephera 25 za mayeso a PHPUnit pa nthambi ya `main` zathetsedwa.
 - Mtundu wa URL wa GitHub releases mu `blueprint.json` wakonzedwa.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Zolemba za kumasulidwa koyambirira zimasungidwa mu repository ya plugin._

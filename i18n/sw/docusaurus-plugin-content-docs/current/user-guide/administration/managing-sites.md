@@ -3,7 +3,7 @@ title: Kusimamia Tovuti
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Kusimamia Tovuti
+# Kusimamia Tovuti {#managing-sites}
 
 Tovuti (au tovuti ndogo) ndio msingi wa biashara yako ya WaaS. Ultimate Multisite ina aina 3 za tovuti:
 
@@ -11,13 +11,13 @@ Tovuti (au tovuti ndogo) ndio msingi wa biashara yako ya WaaS. Ultimate Multisit
 - **Site Templates** — Tovuti zilizotayarishwa mapema ambazo wateja wanaweza kuchagua kama msingi wa kuanzia
 - **Tovuti Kuu** — Tovuti yako ya msingi ya mtandao
 
-## Kuona Tovuti
+## Kuona Tovuti {#viewing-sites}
 
 Nenda kwenye **Ultimate Multisite → Sites** ili kuona tovuti zote ndogo kwenye mtandao wako. Kila tovuti ina lebo ya aina yake na unaweza kuchuja kwa Tovuti Zote, Zinazomilikiwa na Wateja, Templates, au Zinazosubiri.
 
 ![Ukurasa wa orodha ya tovuti](/img/admin/sites-list.png)
 
-## Kuongeza Tovuti Mpya
+## Kuongeza Tovuti Mpya {#adding-a-new-site}
 
 Bofya kitufe cha **Add Site** ili kuunda tovuti mpya. Utahitaji kutoa:
 
@@ -27,15 +27,15 @@ Bofya kitufe cha **Add Site** ili kuunda tovuti mpya. Utahitaji kutoa:
 
 Chaguo la **Copy Site** linakuruhusu kuunda tovuti mpya kulingana na site template iliyopo. Ukiwasha chaguo hili, unaweza kuchagua template ipi itumike kama msingi wa kuanzia. Hakikisha **Copy Media on Duplication** imewashwa ili kujumuisha faili za media.
 
-## Kusimamia Tovuti Iliyopo
+## Kusimamia Tovuti Iliyopo {#managing-an-existing-site}
 
 Bofya **Manage** kwenye tovuti yoyote ili kufungua ukurasa wa **Edit Site**. Hapa utapata:
 
-### Taarifa za Msingi
+### Taarifa za Msingi {#basic-information}
 
 Jina la tovuti, aina, site ID, na maelezo. Pia utaona kikoa kilichounganishwa, uanachama unaohusika, na akaunti ya mteja inayomiliki tovuti.
 
-### Chaguo za Tovuti
+### Chaguo za Tovuti {#site-options}
 
 Weka mipangilio ya uwezo na vikomo vya tovuti:
 
@@ -47,7 +47,7 @@ Weka mipangilio ya uwezo na vikomo vya tovuti:
 
 Kwa kawaida, tovuti zinafuata vikomo vilivyowekwa katika ngazi ya uanachama. Kuweka vikomo katika ngazi ya tovuti kutabatilisha mipangilio ya uanachama.
 
-### Viunganisho
+### Viunganisho {#associations}
 
 Chini ya chaguo za tovuti utapata taarifa kuhusu:
 
@@ -55,7 +55,7 @@ Chini ya chaguo za tovuti utapata taarifa kuhusu:
 - **Uanachama** ambao tovuti iko chini yake
 - **Akaunti ya mteja** iliyounganishwa na tovuti
 
-### Upau wa Kulia
+### Upau wa Kulia {#right-sidebar}
 
 Upande wa kulia unaweza:
 

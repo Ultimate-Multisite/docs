@@ -3,28 +3,28 @@ title: REST API දළ විශ්ලේෂණය
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API යොමුව
+# REST API යොමුව {#rest-api-reference}
 
-## මූලික වින්‍යාසය
+## මූලික වින්‍යාසය {#base-configuration}
 
 **මූලික URL:** `{site_url}/wp-json/wu/v2/`
 **සත්‍යාපනය:** API Key සහ Secret (HTTP Basic Auth හෝ URL පරාමිති)
 
-## සත්‍යාපනය
+## සත්‍යාපනය {#authentication}
 
-### API සක්‍රීය කරන්න
+### API සක්‍රීය කරන්න {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API අක්තපත්‍ර ලබා ගන්න
+### API අක්තපත්‍ර ලබා ගන්න {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### සත්‍යාපන ක්‍රම
+### සත්‍යාපන ක්‍රම {#authentication-methods}
 
 **HTTP Basic Auth (නිර්දේශිත):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ප්‍රධාන අන්ත ලක්ෂ්‍ය
+## ප්‍රධාන අන්ත ලක්ෂ්‍ය {#core-endpoints}
 
-### 1. පාරිභෝගික API
+### 1. පාරිභෝගික API {#1-customers-api}
 
 **මූලික මාර්ගය:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. අඩවි API
+### 2. අඩවි API {#2-sites-api}
 
 **මූලික මාර්ගය:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. සාමාජිකත්ව API
+### 3. සාමාජිකත්ව API {#3-memberships-api}
 
 **මූලික මාර්ගය:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. නිෂ්පාදන API
+### 4. නිෂ්පාදන API {#4-products-api}
 
 **මූලික මාර්ගය:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. ගෙවීම් API
+### 5. ගෙවීම් API {#5-payments-api}
 
 **මූලික මාර්ගය:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. වසම් API
+### 6. වසම් API {#6-domains-api}
 
 **මූලික මාර්ගය:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## ලියාපදිංචි අන්ත ලක්ෂ්‍යය
+## ලියාපදිංචි අන්ත ලක්ෂ්‍යය {#registration-endpoint}
 
 `/register` අන්ත ලක්ෂ්‍යය සම්පූර්ණ checkout/ලියාපදිංචි ප්‍රවාහයක් සපයයි:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## ස්වාධීන කුලීකරු අන්ත ලක්ෂ්‍ය
+## ස්වාධීන කුලීකරු අන්ත ලක්ෂ්‍ය {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 හුදකලා කුලීකරුවන් සපයන, පරීක්ෂා කරන, හෝ තහවුරු කරන ඒකාබද්ධ කිරීම් සඳහා ස්වාධීන කුලීකරු REST ආවරණය එක් කරයි.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` පූර්ව-දියත් කිරීමේ අවහිරකයක් ලෙස සලකන්න. තහවුරු කිරීමේ විස්තර පරීක්ෂා කර, දත්ත සමුදා සත්කාරක බැඳීම, පෝලිම, පරිශීලක සැපයීම, හෝ මාර්ගගත කිරීමේ ගැටලුව විසඳා, පසුව නැවත තහවුරු කරන්න.
 
-## දෝෂ ප්‍රතිචාර
+## දෝෂ ප්‍රතිචාර {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## පිටුකරණය සහ පෙරීම
+## පිටුකරණය සහ පෙරීම {#pagination-and-filtering}
 
 **විමසුම් පරාමිති:**
 ```http

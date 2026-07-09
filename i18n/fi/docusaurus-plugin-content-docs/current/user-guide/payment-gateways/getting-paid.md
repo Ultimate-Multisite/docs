@@ -3,13 +3,13 @@ title: Maksujen vastaanottaminen
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Maksujen vastaanottaminen (v2)
+# Maksujen vastaanottaminen (v2) {#getting-paid-v2}
 
 _**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -versiota 2.x.**_
 
 Ultimate Multisite sisältää sisäänrakennetun jäsenyys- ja laskutusjärjestelmän. Jotta laskutusjärjestelmämme toimisi, olemme integroineet yleisimmät verkkokaupassa käytettävät maksuväylät. Ultimate Multisite -palvelun oletusmaksuväylät ovat _Stripe_ , _PayPal_ ja manuaalinen maksu. Voit myös käyttää _WooCommerce_ , _GoCardless_ ja _Payfast_ maksujen vastaanottamiseen asentamalla niiden vastaavat lisäosat.
 
-## Perusasetukset
+## Perusasetukset {#basic-settings}
 
 Voit määrittää minkä tahansa näistä maksuväylistä Ultimate Multisite -maksuasetuksissa. Löydät ne siirtymällä kohtaan **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Tämä estää jäsenyyttä näyttämästä siltä, että se uusiutuisi automaat
 
 <!-- Kuvakaappaus ei saatavilla: Next invoice number- ja invoice number prefix -kentät, jotka näytetään, kun Sequential Number on valittuna -->
 
-## Mistä löydät maksuväylät:
+## Mistä löydät maksuväylät: {#where-to-find-the-gateways}
 
 Voit määrittää maksuväylät samalla sivulla ( **Ultimate Multisite > Settings > Payments**). Heti kohdan **active payment gateways** alapuolella näet: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ja _Manual_.
 
@@ -67,7 +67,7 @@ Tässä on myös koko näkymä maksuväylien asetuksista:
 
 Jos nyt haluat käyttää _WooCommerce_ , _GoCardless_ tai _Payfast_ maksuväylänäsi, sinun on **asennettava ja määritettävä niiden lisäosat**.
 
-### WooCommerce-lisäosan asentaminen:
+### WooCommerce-lisäosan asentaminen: {#how-to-install-the-woocommerce-add-on}
 
 Ymmärrämme, että _Stripe_ ja _PayPal_ eivät ole saatavilla joissakin maissa, mikä rajoittaa tai estää Ultimate Multisite -käyttäjiä käyttämästä lisäosaamme tehokkaasti. Siksi loimme lisäosan _WooCommerce,_-integraatiota varten; se on erittäin suosittu verkkokauppalisäosa. Kehittäjät ympäri maailmaa ovat luoneet siihen lisäosia eri maksuväylien integroimiseksi. Hyödynsimme tätä laajentaaksemme maksuväyliä, joita voit käyttää Ultimate Multisite -laskutusjärjestelmän kanssa.
 
@@ -95,7 +95,7 @@ Kun olet aktivoinut sen, jos WooCommerce-lisäosaa ei vieläkään ole asennettu
 
 Jos haluat lukea lisää WooCommerce Integration -lisäosasta, **napsauta tästä**.
 
-### GoCardless-lisäosan asentaminen:
+### GoCardless-lisäosan asentaminen: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_-lisäosan asentamisen vaiheet ovat lähes samat kuin _WooCommerce_-lisäosan. Siirry lisäosien sivulle ja valitse **Ultimate Multisite: GoCardless Gateway** -lisäosa.
 
@@ -111,7 +111,7 @@ Kun asennus on valmis, sinut ohjataan lisäosien sivulle. Napsauta tässä vain 
 
 Jos haluat oppia, miten pääset alkuun _GoCardless_-gatewayn kanssa, **lue tämä artikkeli**.
 
-### Payfast-lisäosan asentaminen:
+### Payfast-lisäosan asentaminen: {#how-to-install-the-payfast-add-on}
 
 Siirry lisäosien sivulle ja valitse **Ultimate Multisite: Payfast Gateway** -lisäosa.
 

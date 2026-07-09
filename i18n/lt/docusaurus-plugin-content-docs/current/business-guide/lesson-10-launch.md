@@ -3,19 +3,19 @@ title: '10 pamoka: Paleidimo diena'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# 10 pamoka: Paleidimo diena
+# 10 pamoka: Paleidimo diena {#lesson-10-launch-day}
 
 Viskas sukurta. Prieš atverdami duris, ši pamoka pereina per priešpaleidiminį kontrolinį sąrašą, kad įsitikintumėte, jog niekas nėra sugedę, praleista ar nepatogu.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite turi sukonfigūruotus šablonus, planus, atsiskaitymą, prekės ženklą, įvedimą ir kainodarą. Dabar patikriname, ar viskas veikia, ir paleidžiame viešai.
 
-## Priešpaleidiminis kontrolinis sąrašas
+## Priešpaleidiminis kontrolinis sąrašas {#pre-launch-checklist}
 
 Pereikite per kiekvieną punktą. Nieko nepraleiskite.
 
-### Platformos infrastruktūra
+### Platformos infrastruktūra {#platform-infrastructure}
 
 - [ ] Hostingas stabilus ir gerai veikia esant apkrovai
 - [ ] Pakaitos SSL aktyvus, o visi podomeniai aptarnaujami per HTTPS
@@ -23,7 +23,7 @@ Pereikite per kiekvieną punktą. Nieko nepraleiskite.
 - [ ] Atsarginės kopijos sukonfigūruotos ir išbandytos (atkurkite bent vieną, kad patikrintumėte)
 - [ ] Stebėsena įdiegta -- žinosite, jei platforma neveiks
 
-### Šablonai
+### Šablonai {#templates}
 
 - [ ] Visi trys šablonai teisingai įkeliami naujose svetainėse
 - [ ] Vietą užimantis turinys yra naudingas ir be rašybos klaidų
@@ -32,7 +32,7 @@ Pereikite per kiekvieną punktą. Nieko nepraleiskite.
 - [ ] Puslapio įkėlimo greitis priimtinas (testuokite su tokiu įrankiu kaip GTmetrix arba PageSpeed Insights)
 - [ ] Nėra neveikiančių nuorodų ar trūkstamų išteklių nė viename šablone
 
-### Planai ir produktai
+### Planai ir produktai {#plans-and-products}
 
 - [ ] Visi trys planai aktyvūs ir matomi
 - [ ] Planų aprašymai tikslūs ir pritaikyti nišai
@@ -42,7 +42,7 @@ Pereikite per kiekvieną punktą. Nieko nepraleiskite.
 - [ ] Papildomi pasiūlymai teisingai rodomi atsiskaitymo metu
 - [ ] Plugin ir theme apribojimai teisingai taikomi pagal planą
 
-### Atsiskaitymo eiga
+### Atsiskaitymo eiga {#checkout-flow}
 
 - [ ] Atlikite pilną bandomąją registraciją kiekviename plane (naudokite mokėjimų testavimo režimą)
 - [ ] Šablono pasirinkimas rodo teisingus šablonus pagal planą
@@ -52,7 +52,7 @@ Pereikite per kiekvieną punktą. Nieko nepraleiskite.
 - [ ] Klientas gali iš karto prisijungti prie savo naujos svetainės
 - [ ] Nuolaidų kodai veikia teisingai
 
-### Prekės ženklas
+### Prekės ženklas {#branding}
 
 - [ ] Prisijungimo puslapyje rodomas FitSite prekės ženklas
 - [ ] Administratoriaus Dashboard rodo FitSite prekės ženklą
@@ -60,7 +60,7 @@ Pereikite per kiekvieną punktą. Nieko nepraleiskite.
 - [ ] Sąskaitos faktūros rodomos teisingai su jūsų verslo duomenimis
 - [ ] Rinkodaros svetainė veikia ir nukreipia į atsiskaitymo formą
 
-### Įvedimas
+### Įvedimas {#onboarding}
 
 - [ ] Greitos pradžios valdiklis rodomas naujų klientų Dashboard
 - [ ] Visos Greitos pradžios nuorodos veda į teisingus puslapius
@@ -68,7 +68,7 @@ Pereikite per kiekvieną punktą. Nieko nepraleiskite.
 - [ ] Žinių bazės straipsniai publikuoti ir pasiekiami
 - [ ] Account puslapyje rodoma teisinga plano informacija ir atnaujinimo parinktys
 
-### Teisiniai ir verslo klausimai
+### Teisiniai ir verslo klausimai {#legal-and-business}
 
 - [ ] Paslaugų teikimo sąlygos publikuotos ir susietos iš atsiskaitymo
 - [ ] Privatumo politika publikuota ir pasiekiama
@@ -77,11 +77,11 @@ Pereikite per kiekvieną punktą. Nieko nepraleiskite.
 - [ ] Mokėjimų šliuzas veikia realiu režimu (ne testavimo režimu)
 - [ ] Mokesčių konfigūracija teisinga pagal jūsų jurisdikciją
 
-## Minkštasis paleidimas ir kietasis paleidimas
+## Minkštasis paleidimas ir kietasis paleidimas {#soft-launch-vs-hard-launch}
 
 Apsvarstykite dviejų etapų paleidimą:
 
-### 1 etapas: Minkštasis paleidimas
+### 1 etapas: Minkštasis paleidimas {#phase-1-soft-launch}
 
 Pakvieskite 5–10 fitneso studijų savininkų užsiregistruoti prieš viešą paleidimą. Tai jūsų beta klientai. Pasiūlykite jiems reikšmingą nuolaidą (50 % nuolaidą visam laikui arba 3 mėnesius nemokamai) mainais į:
 
@@ -91,7 +91,7 @@ Pakvieskite 5–10 fitneso studijų savininkų užsiregistruoti prieš viešą p
 
 Tai suteikia jums tikrų klientų atsiliepimų ir veikiančių svetainių, kurias galite rodyti prieš atsiverdami viešai.
 
-### 2 etapas: Viešas paleidimas
+### 2 etapas: Viešas paleidimas {#phase-2-public-launch}
 
 Kai minkštojo paleidimo atsiliepimai įtraukti:
 
@@ -100,7 +100,7 @@ Kai minkštojo paleidimo atsiliepimai įtraukti:
 - Pradėkite klientų pritraukimą (11 pamoka)
 - Paskelbkite atitinkamuose fitneso industrijos kanaluose
 
-## Paleidimo dienos veiksmai
+## Paleidimo dienos veiksmai {#launch-day-actions}
 
 Tą dieną, kai tampate vieši:
 
@@ -110,7 +110,7 @@ Tą dieną, kai tampate vieši:
 4. **Būkite pasiekiami** -- pirmiesiems tikriems klientams gali prireikti pagalbos, o greitas atsakas kuria pasitikėjimą
 5. **Trumpai atšvęskite** -- tada grįžkite prie darbo
 
-## Kas gali nepavykti
+## Kas gali nepavykti {#what-can-go-wrong}
 
 Būkite pasiruošę:
 
@@ -120,7 +120,7 @@ Būkite pasiruošę:
 - **Našumui esant apkrovai**: Jei sulauksite srauto šuolio, žinokite, kaip išplėsti savo hostingą
 - **Klientų painiavai**: Turėkite paruoštą žinių bazę ir pagalbos kanalus
 
-## FitSite tinklas iki šiol
+## FitSite tinklas iki šiol {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Išsamų priešpaleidiminį kontrolinį sąrašą**, apimantį infrastruktūrą, turinį, mokėjimus ir teisinius klausimus
 - **Minkštojo paleidimo strategiją**, kad gautumėte realių atsiliepimų prieš viešą paleidimą

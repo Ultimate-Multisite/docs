@@ -4,11 +4,11 @@ title: فلټر - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 د هېواد د اداري فرعي وېشونو ښکلی نوم راګرځوي.
 
-## پارامترونه
+## پارامترونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
@@ -18,13 +18,13 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | که موږ کلمې په لویو تورو کړو. |
 | $current_country | `\WP_Ultimo\Country\Country` | د اوسنۍ کلاس بېلګه. |
 
-### له نسخې راهیسې
+### له نسخې راهیسې {#since}
 
 - 2.0.11
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) کې په 250 کرښه تعریف شوی
 
 
-## راګرځونې
+## راګرځونې {#returns}
 بدل شوی د وېش نوم.

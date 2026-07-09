@@ -3,7 +3,7 @@ title: Ügyfél Account oldal
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Az ügyfeled Account oldala (v2)
+# Az ügyfeled Account oldala (v2) {#your-clients-account-page-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
@@ -11,7 +11,7 @@ Amikor az ügyfelek előfizetnek egy csomagra a hálózatodon, hozzáférést ka
 
 Ebben az útmutatóban végigvezetünk az ügyfél Account oldalán, és látni fogod, mit láthatnak és mit tehetnek benne az ügyfeleid.
 
-## Az Account oldal
+## Az Account oldal {#the-account-page}
 
 Az Account oldal úgy érhető el, hogy az ügyfeled Dashboardján belül az **Account** elemre kattintasz.
 
@@ -27,7 +27,7 @@ Miután az ügyfél rákattint, áttekintést lát a tagságáról, számlázás
 
 A tagságot másik csomagra is módosíthatja, vagy megvásárolhat egy másik csomagot vagy szolgáltatást, amelyet kínálsz. Nézzük meg külön-külön az egyes szakaszokat.
 
-### A tagságod áttekintése:
+### A tagságod áttekintése: {#your-membership-overview}
 
 Az ügyfeleid webhelyneve alatti első blokk áttekintést mutat az aktuális csomagjukról és az azzal együtt megvásárolt szolgáltatásokról/csomagokról. A blokk megjeleníti a tagsági számot, az érte kezdetben kifizetett összeget, hogy mennyibe kerül a csomag és bármely szolgáltatás/csomag, valamint hogy hányszor számlázták ki ezt a tagságot. Azt is láthatják, hogy a tagság **Aktív**, **Lejárt** vagy **Lemondott**.
 
@@ -43,7 +43,7 @@ Ha most az ügyfeleid csomagokat vagy szolgáltatásokat választanak megvásár
 
 Vedd figyelembe, hogy kuponkódok nem adhatók hozzá ezen a tagságmódosítási oldalon. Ha az ügyfél kuponkódot használt az első tagságvásárláskor, a kód erre az új tagságra is alkalmazva lesz.
 
-### A számlázási cím frissítése:
+### A számlázási cím frissítése: {#updating-the-billing-address}
 
 Az Account oldalon az ügyfeleid a számlázási címüket is frissíthetik. Csak a _Számlázási cím_ melletti **Update** elemre kell kattintaniuk.
 
@@ -53,7 +53,7 @@ Egy új ablak jelenik meg az ügyfeled számára. Mindössze annyit kell tennie,
 
 ![Számlázási cím frissítési űrlap](/img/account-page/billing-address-form.png)
 
-### A webhely sablonjának módosítása:
+### A webhely sablonjának módosítása: {#changing-the-site-template}
 
 Ahhoz, hogy engedélyezd az ügyfeleidnek a webhely sablonjaik módosítását, menj az **Ultimate Multisite > Settings > Sites** menüpontra, és kapcsold be az **Allow Template Switching** opciót.
 
@@ -81,7 +81,7 @@ Miután bekapcsolják a megerősítést, és a **Process Switch** elemre kattint
 
 Az ügyfelek ezen a panelen a **Reset current template** opciót is használhatják, amikor vissza kell állítaniuk az oldalt a jelenleg hozzárendelt sablonra. Ahogy egy másik sablonra váltásnál, a sablon visszaállítása is felülírhatja az oldal tartalmát, ezért az ügyfelek csak akkor erősítsék meg, ha értik a visszaállítási műveletet.
 
-### Egyéni domainek hozzáadása:
+### Egyéni domainek hozzáadása: {#adding-custom-domains}
 
 Az ügyfeleknek arra is lesz lehetőségük, hogy egyéni domaint adjanak hozzá ehhez a csomaghoz az Account oldalukon. Ahhoz, hogy az ügyfelek egyéni domaineket használhassanak, lépj a **Ultimate Multisite > Settings >** **Domain Mapping** részhez.
 
@@ -115,7 +115,7 @@ A **Next Step** gombra kattintás után az ügyfelek megadhatják az egyéni dom
 
 Az **Add Domain** gombra kattintás után a domain hozzáadódik az ügyfeled Accountjához. Most már csak annyit kell tenniük, hogy módosítják ennek az egyéni domainnek a DNS-rekordjait a domainregisztrátoruknál.
 
-### Jelszó módosítása:
+### Jelszó módosítása: {#changing-password}
 
 Az account Dashboardon belül az ügyfelek a **Change Password** gombra kattintva a jelszavukat is módosíthatják.
 
@@ -125,7 +125,7 @@ Ez egy új ablakot jelenít meg, ahol az ügyfeleknek meg kell adniuk a jelenleg
 
 ![Jelszómódosító űrlap jelenlegi és új jelszó mezőkkel](/img/account-page/change-password-form.png)
 
-### Veszélyzóna:
+### Veszélyzóna: {#danger-zone}
 
 Két opció is megjelenik a **Danger Zone** részben: **Delete Site** és **Delete Account**. Mindkettő azért van a Danger Zone részben, mert ez a két művelet visszafordíthatatlan. Ha az ügyfelek törlik a webhelyüket vagy az Accountjukat, nem tudják visszaállítani azokat.
 

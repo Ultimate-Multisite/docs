@@ -3,13 +3,13 @@ title: Alur Pendaftaran
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Alur Pendaftaran (v2)
+# Alur Pendaftaran (v2) {#the-registration-flow-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
 Pengguna dapat mendaftar ke jaringan Anda dengan berbagai cara. Mereka dapat menggunakan formulir pendaftaran Anda atau tautan yang dapat dibagikan ke paket yang sudah dipilih sebelumnya. Di sini kami akan menunjukkan bagaimana pelanggan Anda dapat mendaftar di jaringan Anda menggunakan jalur yang tersedia dan apa yang terjadi setelah mereka mendaftar di jaringan Anda.
 
-## Menggunakan Formulir Pendaftaran:
+## Menggunakan Formulir Pendaftaran: {#using-the-registration-form}
 
 Ini adalah proses pendaftaran standar. Anda membuat halaman pendaftaran dengan **formulir pembayaran** dan di sinilah pelanggan Anda akan mendaftar di jaringan Anda serta berlangganan sebuah paket. Anda dapat memiliki beberapa halaman pendaftaran, masing-masing dengan formulir pendaftaran yang berbeda jika Anda mau.
 
@@ -35,13 +35,13 @@ Jika mereka telah mendaftar pada paket berbayar atau verifikasi email tidak waji
 
 ![Situs diaktifkan dengan tautan untuk masuk ke dashboard](/img/frontend/site-activated.png)
 
-## Menggunakan Tautan yang Dapat Dibagikan:
+## Menggunakan Tautan yang Dapat Dibagikan: {#using-a-shareable-link}
 
 Proses pendaftaran menggunakan tautan yang dapat dibagikan pada dasarnya sama dengan formulir pendaftaran, satu-satunya perbedaan adalah bahwa dengan menggunakan tautan yang dapat dibagikan, pelanggan Anda dapat memiliki produk atau templat website yang sudah dipilih sebelumnya pada formulir pembayaran (lihat bagian Memilih produk dan templat terlebih dahulu melalui parameter URL) atau mungkin kode kupon yang ditambahkan (lihat bagian Menggunakan Parameter URL).
 
 Proses pendaftarannya akan sama: mereka perlu mengisi nama, nama pengguna, alamat email, nama dan judul website, dll... tetapi paket atau templat situs sudah dipilih sebelumnya untuk mereka.
 
-### Mendaftar Menggunakan Pembayaran Manual:
+### Mendaftar Menggunakan Pembayaran Manual: {#registering-using-manual-payments}
 
 Jika Anda tidak ingin menggunakan PayPal, Stripe, atau gateway pembayaran lain yang ditawarkan oleh Ultimate Multisite atau integrasi add-on-nya, Anda dapat menggunakan pembayaran manual untuk pelanggan Anda. Dengan cara ini, Anda dapat membuat faktur untuk mereka bayar melalui pemroses pembayaran pilihan Anda setelah mereka mendaftar di jaringan Anda.
 

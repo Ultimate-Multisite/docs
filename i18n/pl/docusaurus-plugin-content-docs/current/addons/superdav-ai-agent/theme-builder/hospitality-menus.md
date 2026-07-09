@@ -3,15 +3,15 @@ title: Menu restauracyjne
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Gastronomiczne
+# Menu Gastronomiczne {#hospitality-menus}
 
 Funkcja **Menu Gastronomiczne** pozwala Theme Builderowi generować i osadzać ustrukturyzowane strony menu potraw i napojów bezpośrednio na Twojej witrynie WordPress.
 
-## Przegląd
+## Przegląd {#overview}
 
 Theme Builder może teraz tworzyć profesjonalne, ustrukturyzowane strony menu dla biznesów gastronomicznych, takich jak restauracje, kawiarnie, bary i firmy cateringowe. Te menu są w pełni zintegrowane z designem Twojej witryny i można je łatwo aktualizować oraz zarządzać.
 
-## Obsługiwane Typy Gastronomiczne
+## Obsługiwane Typy Gastronomiczne {#supported-hospitality-types}
 
 - **Restauracje** — menu pełnej obsługi obiadowej
 - **Kawiarnie** — menu kawy i lekkich przekąsek
@@ -21,9 +21,9 @@ Theme Builder może teraz tworzyć profesjonalne, ustrukturyzowane strony menu d
 - **Food Trucki** — menu usług gastronomicznych mobilnych
 - **Browary i Winnice** — menu napojów z opisami
 
-## Struktura Menu
+## Struktura Menu {#menu-structure}
 
-### Kategorie Menu
+### Kategorie Menu {#menu-categories}
 
 Menu są zorganizowane w kategorie:
 
@@ -34,7 +34,7 @@ Menu są zorganizowane w kategorie:
 - **Napoje** — napoje (alkoholowe i bezalkoholowe)
 - **Specjały** — codzienne lub sezonowe specjały
 
-### Format Pozycji Menu
+### Format Pozycji Menu {#menu-item-format}
 
 Każda pozycja menu zawiera:
 
@@ -49,7 +49,7 @@ Każda pozycja menu zawiera:
 }
 ```
 
-#### Pola Pozycji
+#### Pola Pozycji {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Każda pozycja menu zawiera:
 | `allergens` | array | Typowe alergeny (Orzechy, Skrajnie, itp.) |
 | `availability` | string | Kiedy dostępne (Codziennie, Sezonowo itp.) |
 
-## Tworzenie Menu Gastronomicznych
+## Tworzenie Menu Gastronomicznych {#creating-hospitality-menus}
 
-### Krok 1: Podaj Informacje o Menu
+### Krok 1: Podaj Informacje o Menu {#step-1-provide-menu-information}
 
 Opowiedz Theme Builderowi o swoim menu:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Krok 2: Theme Builder Generuje Menu
+### Krok 2: Theme Builder Generuje Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formatuje ceny i opisy
 5. Dodaje informacje o diecie i alergenach
 
-### Krok 3: Przegląd i Dostosowanie
+### Krok 3: Przegląd i Dostosowanie {#step-3-review-and-customize}
 
 Możesz:
 
@@ -91,9 +91,9 @@ Możesz:
 4. Aktualizować opisy i informacje dietetyczne
 5. Dostosowywać styl i układ
 
-## Opcje Wyświetlania Menu
+## Opcje Wyświetlania Menu {#menu-display-options}
 
-### Pełna Strona Menu
+### Pełna Strona Menu {#full-menu-page}
 
 Dedykowana strona wyświetlająca całe menu:
 
@@ -102,7 +102,7 @@ Dedykowana strona wyświetlająca całe menu:
 - Układ przyjazny dla druku
 - Projekt responsywny na urządzenia mobilne
 
-### Widget Menu
+### Widget Menu {#menu-widget}
 
 Osadź sekcje menu na innych stronach:
 
@@ -111,7 +111,7 @@ Osadź sekcje menu na innych stronach:
 - Menu napojów na stronie baru
 - Prezentacja deserów w stopce
 
-### PDF Menu
+### PDF Menu {#menu-pdf}
 
 Generuj pobieralne menu w formacie PDF:
 
@@ -120,9 +120,9 @@ Generuj pobieralne menu w formacie PDF:
 - Zawiera zdjęcia i opisy
 - Łatwe do udostępniania i wysyłania e-mailem
 
-## Informacje o Diecie i Alergenach
+## Informacje o Diecie i Alergenach {#dietary-and-allergen-information}
 
-### Atrybuty Dietetyczne
+### Atrybuty Dietetyczne {#dietary-attributes}
 
 Oznacz pozycje informacjami o diecie:
 
@@ -134,7 +134,7 @@ Oznacz pozycje informacjami o diecie:
 - **Low-Carb** — zredukowane węglowodany
 - **High-Protein** — bogate w białko
 
-### Ostrzeżenia o Alergenach
+### Ostrzeżenia o Alergenach {#allergen-warnings}
 
 Zawrzyj informacje o typowych alergenach:
 
@@ -147,9 +147,9 @@ Zawrzyj informacje o typowych alergenach:
 - **Gluten** — pszenica i zboża zawierające gluten
 - **Sesame** — sezam i olej sezamowy
 
-## Zarządzanie Menu
+## Zarządzanie Menu {#menu-management}
 
-### Aktualizacja Cen
+### Aktualizacja Cen {#updating-prices}
 
 Łatwo aktualizuj ceny w menu:
 
@@ -159,7 +159,7 @@ Zawrzyj informacje o typowych alergenach:
 4. Zapisz zmiany
 5. Zmiany pojawią się natychmiast na Twojej witrynie
 
-### Dodawanie Sezonowych Pozycji
+### Dodawanie Sezonowych Pozycji {#adding-seasonal-items}
 
 Twórz sezonowe warianty menu:
 
@@ -169,7 +169,7 @@ Twórz sezonowe warianty menu:
 4. Zaplanuj daty dostępności
 5. Automatycznie wyświetl podczas sezonu
 
-### Zarządzanie Specjałami
+### Zarządzanie Specjałami {#managing-specials}
 
 Wyświetl codzienne lub tygodniowe specjały:
 
@@ -179,7 +179,7 @@ Wyświetl codzienne lub tygodniowe specjały:
 4. Aktualizuj codziennie lub tygodniowo
 5. Archiwizuj stare specjały
 
-## Integracja z Theme Builderem
+## Integracja z Theme Builderem {#integration-with-theme-builder}
 
 Podczas używania Theme Builder dla stron gastronomicznych:
 
@@ -189,9 +189,9 @@ Podczas używania Theme Builder dla stron gastronomicznych:
 4. **Mobile optimization** — menu wyświetlają się pięknie na telefonach
 5. **SEO optimization** — menu są przyjazne dla wyszukiwarek
 
-## Najlepsze Praktyki
+## Najlepsze Praktyki {#best-practices}
 
-### Design Menu
+### Design Menu {#menu-design}
 
 - **Jasna organizacja** — logiczna struktura kategorii
 - **Czytelne opisy** — apetyczne i informacyjne
@@ -199,7 +199,7 @@ Podczas używania Theme Builder dla stron gastronomicznych:
 - **Profesjonalne zdjęcia** — wysokiej jakości zdjęcia potraw
 - **Biała przestrzeń** — nie przeładowuj strony
 
-### Treść
+### Treść {#content}
 
 - **Dokładne opisy** — opisuj pozycje precyzyjnie
 - **Podkreślanie specjałów** — spraw, by specjały się wyróżniały
@@ -207,7 +207,7 @@ Podczas używania Theme Builder dla stron gastronomicznych:
 - **Regularne aktualizacje** — utrzymuj aktualne ceny i pozycje
 - **Używanie apetycznego języka** — spraw, by pozycje brzmiały pysznie
 
-### Dostępność
+### Dostępność {#accessibility}
 
 - **Czytelne czcionki** — używaj wyraźnych, czytelnych krojów pisma
 - **Wystarczający kontrast** — upewnij się, że tekst jest czytelny
@@ -215,9 +215,9 @@ Podczas używania Theme Builder dla stron gastronomicznych:
 - **Ostrzeżenia o alergenach** — widocznie wyświetl alergeny
 - **Przyjazne dla urządzeń mobilnych** — testuj na wszystkich urządzeniach
 
-## Przykłady
+## Przykłady {#examples}
 
-### Struktura Menu Restauracji
+### Struktura Menu Restauracji {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Struktura Menu Kawiarni
+### Struktura Menu Kawiarni {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Powiązane Funkcje
+## Powiązane Funkcje {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — tworzenie menu nawigacyjnych
 - [Design Direction](./design-direction.md) — dostosowanie designu Twojej witryny

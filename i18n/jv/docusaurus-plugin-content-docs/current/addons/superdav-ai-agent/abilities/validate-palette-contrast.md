@@ -3,15 +3,15 @@ title: Validasi Kontras Palet
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validasi Kontras Palette
+# Validasi Kontras Palette {#validate-palette-contrast}
 
 Kemampuan **Validate Palette Contrast** mriksa pasangan werna ing palette desain sampeyan kanggo kepatuhan WCAG (Web Content Accessibility Guidelines) sadurunge ditrapake menyang theme sampeyan.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Kemampuan iki mesthekake skema werna situs sampeyan nyukupi standar aksesibilitas kanthi validasi rasio kontras antarane teks lan werna latar mburi. Iki mbantu nyegah kombinasi werna sing bisa angel diwaca dening pangguna sing nduweni gangguan visual.
 
-## Format Input
+## Format Input {#input-format}
 
 Kemampuan iki nampa palette werna minangka input:
 
@@ -35,7 +35,7 @@ Kemampuan iki nampa palette werna minangka input:
 }
 ```
 
-### Parameter
+### Parameter {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Kemampuan iki nampa palette werna minangka input:
 | `wcag_level` | string | No | Tingkat kepatuhan WCAG: "A", "AA" (gawan), utawa "AAA" |
 | `pairs_to_check` | array | No | Pasangan werna tartamtu kanggo divalidasi (umpamane, `["primary-text", "background-text"]`) |
 
-## Tingkat WCAG sing Dipriksa
+## Tingkat WCAG sing Dipriksa {#wcag-levels-checked}
 
 Kemampuan iki validasi rasio kontras miturut standar WCAG:
 
@@ -56,7 +56,7 @@ Kemampuan iki validasi rasio kontras miturut standar WCAG:
 - **Teks Normal** — teks luwih cilik tinimbang 18pt (utawa 14pt kandel)
 - **Teks Gedhe** — teks 18pt utawa luwih gedhe (utawa 14pt kandel utawa luwih gedhe)
 
-## Skema Output
+## Skema Output {#output-schema}
 
 Kemampuan iki mbalekake laporan validasi sing rinci:
 
@@ -95,7 +95,7 @@ Kemampuan iki mbalekake laporan validasi sing rinci:
 }
 ```
 
-### Field Output
+### Field Output {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Kemampuan iki mbalekake laporan validasi sing rinci:
 | `status` | string | "pass" utawa "fail" kanggo saben pasangan |
 | `recommendations` | array | Saran kanggo nambah pasangan sing gagal |
 
-## Tuladha Panggunaan
+## Tuladha Panggunaan {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Kemampuan iki validasi kabeh kombinasi werna lan mbalekake:
 - ✅ Latar mburi + Teks: rasio 12.1:1 (lulus WCAG AAA)
 - Sakabèhé: Patuh karo WCAG AA
 
-## Integrasi karo Theme Builder
+## Integrasi karo Theme Builder {#integration-with-theme-builder}
 
 Nalika nggunakake pilihan arah-desain Theme Builder, kemampuan Validate Palette Contrast:
 
@@ -129,7 +129,7 @@ Nalika nggunakake pilihan arah-desain Theme Builder, kemampuan Validate Palette 
 4. Nyedhiyakake rekomendasi kanggo pasangan sing ora patuh
 5. Nyegah ngetrapake skema werna sing ora aksesibel
 
-## Praktik Paling Apik
+## Praktik Paling Apik {#best-practices}
 
 - **Miwiti nganggo tingkat AA** — WCAG AA iku standar kanggo umume situs web
 - **Tes sadurunge ngetrapake** — validasi palette sampeyan sadurunge netepake desain
@@ -137,7 +137,7 @@ Nalika nggunakake pilihan arah-desain Theme Builder, kemampuan Validate Palette 
 - **Timbang preferensi pangguna** — sawetara pangguna bisa duwe sensitivitas werna tambahan
 - **Gunakake pemeriksa kontras** — gabungake kemampuan iki karo piranti browser kanggo verifikasi
 
-## Pasangan Gagal lan Rekomendasi
+## Pasangan Gagal lan Rekomendasi {#failing-pairs-and-recommendations}
 
 Yen pasangan werna gagal validasi, kemampuan iki nyedhiyakake rekomendasi:
 
@@ -155,7 +155,7 @@ Yen pasangan werna gagal validasi, kemampuan iki nyedhiyakake rekomendasi:
 }
 ```
 
-## Kemampuan Gegandhengan
+## Kemampuan Gegandhengan {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — gawe logo nganggo palette werna sing wis divalidasi
 - [Create Menu](./create-menu.md) — bangun navigasi nganggo werna sing aksesibel

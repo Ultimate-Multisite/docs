@@ -3,11 +3,11 @@ title: Përfancësimi i Panikut
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Përmbledhje e Dashboardit
+# Përmbledhje e Dashboardit {#dashboard-overview}
 
 Ultimate Multisite ka një **Dashboard** të dedikuar në menyn e Ultimate Multisite, dhe gjithashtu shton widget-e në Network Dashboard. Ky artikull flet për atë që do të shihni në të dy vendet.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite hyrrin widget-e të dobishme në dashboardin e nivelit të rrjetit, i gjetur në **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Këtu është çfarë ofron secili widget:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Dashboardi i Ultimate Multisite
+## Dashboardi i Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Ndërsa dashboardi i rrjetit paraqet informacion të plotë mbi rrjetin, dashboardi i Ultimate Multisite (në nivelin më të lartë të menysë së Ultimate Multisite) paraqet informacion rreth shërbimit.
 

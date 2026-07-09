@@ -3,15 +3,15 @@ title: 'Lehena-lehen: Planak diseinatu'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lehen 5: Planak designatu
+# Lehen 5: Planak designatu {#lesson-5-designing-your-plans}
 
 Dauplanak (plan tiers) ez dira leialdia prezio-lehiak; horiek da irudi bat da ondo jakoteak non operatzen dute. Hau eskaera-an, produktu planak designatu dugu eta horrek fitness negozioen beharrak errealetan batzuk.
 
-## Nond dagoela dutena
+## Nond dagoela dutena {#where-we-left-off}
 
 FitSite-ek tresna bat (Studio Essential, Gym Pro, Fitness Chain) lehen daude. Aurrera egin dugu planak diseinatzeko eta horiek erabiltzaileei zer ematen dio eta zer ordaintzen dute.
 
-## Klientzia segmentazioan irrendatzea
+## Klientzia segmentazioan irrendatzea {#thinking-in-customer-segments}
 
 Gehienduak egiten duen ezagutza-ezkoa da planak tekniko aukeretan (storage, bandwidth, zeinetarako lapurtu) diseinatu. Hau eskaera-lehiak hori ez du jakiteke horrek. Gym negozioaren dueñoa bere negozioa funtzionatzeko beharrak ez du horrek.
 
@@ -25,11 +25,11 @@ Fitness studioetko kasuetan, segmentazio natural bat dago:
 
 Planak hauek ez du zerbait aukeraren paketea (feature bundles) edo eskaera-lehiak ere, baina segmentu horiek mapatu behar dira.
 
-## FitSite Planak emateko
+## FitSite Planak emateko {#creating-the-fitsite-plans}
 
 Lehen planari, **Ultimate Multisite > Products > Add Product** funtziokoan jarraitu.
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Plan 1: FitSite Starter**
 
@@ -61,7 +61,7 @@ Lehen planari, **Ultimate Multisite > Products > Add Product** funtziokoan jarra
 - **Itxarri duela themeak**: Force Activate
 - **Bestelako themeak**: Gizatuta
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **Target**: Gym bat dauden etorri eta establizatuak.
 
@@ -87,7 +87,7 @@ Lehen planari, **Ultimate Multisite > Products > Add Product** funtziokoan jarra
 - **Plan grupua**: FitSite Plans
 - **Produktu ordenak**: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **Target**: Fitness cadena bat dauden etorri eta establizatuak.
 
@@ -111,7 +111,7 @@ Lehen planari, **Ultimate Multisite > Products > Add Product** funtziokoan jarra
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Plan Group-aren Konfigurazioa Erdatzea
+## Plan Group-aren Konfigurazioa Erdatzea {#setting-up-the-plan-group}
 
 Plan group-ek irudiak (customers) FitSite plan familiaren belu edo handi egin dezaten. Plan baten **Up & Downgrades** taban:
 
@@ -120,7 +120,7 @@ Plan group-ek irudiak (customers) FitSite plan familiaren belu edo handi egin de
 
 Honek irudiak argi eskaintzen du: Starter → Growth → Pro.
 
-## Order Bumps Lehen Additzenak
+## Order Bumps Lehen Additzenak {#adding-order-bumps}
 
 Order bumps hauek checkout-aren aurrera egitean ematen diren produktu horriak dira. FitSite-ren kasuetan, hiri duzu:
 
@@ -130,7 +130,7 @@ Order bumps hauek checkout-aren aurrera egitean ematen diren produktu horriak di
 
 Honek Ultimate Multisite-an **Package** tipiko produktuak bezala sortu eta planak errespetatzen diren beste planakarekin lotu.
 
-## Nola Horri Strukturak Eguna Zaharra da
+## Nola Horri Strukturak Eguna Zaharra da {#why-this-structure-works}
 
 - **Starter** eliminatzen da erabilera ezarriak — txiki prezioa, simple oferta, trainer-ek azkenean online jarraitzen dute.
 - **Growth** jodez egiten duen funtunalitatea jodez egiten dituzte — bestelako, galdera, custom domainak.
@@ -138,7 +138,7 @@ Honek Ultimate Multisite-an **Package** tipiko produktuak bezala sortu eta plana
 - **Order bumps** lekuak erabiltzen dituzte bezala, core planak ez distirabide egiten jardutzeko.
 - **Upgrade path iragailu** da, horrek iragailuak jartzean joaten aukera ematen du, ez berarte aukerarekin laguntzen.
 
-## FitSite Networka Zer da Euskal?
+## FitSite Networka Zer da Euskal? {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -154,7 +154,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Zer Ezauzu Zurean Erakunde?
+## Zer Ezauzu Zurean Erakunde? {#what-we-built-this-lesson}
 
 - **Plan tres lehenak** erreal fitness biztsuetako segmentuetan mapatu dituzte.
 - **Funktunalitatea batzen emateko kontrola** Ultimate Multisite plugin eta template kontrollak erabiliz.

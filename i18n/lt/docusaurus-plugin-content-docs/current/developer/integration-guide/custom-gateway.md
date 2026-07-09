@@ -3,11 +3,11 @@ title: Individualaus šliuzo kūrimas
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pasirinktinio Gateway kūrimas
+# Pasirinktinio Gateway kūrimas {#custom-gateway-development}
 
 Galite sukurti pasirinktinius mokėjimų Gateway išplėsdami `Base_Gateway` klasę.
 
-## Gateway klasė
+## Gateway klasė {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Užregistruokite Gateway
+## Užregistruokite Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Pagrindiniai metodai
+## Pagrindiniai metodai {#key-methods}
 
 | Metodas | Paskirtis |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Apdoroti grąžinimo užklausas |
 | `get_payment_methods()` | Grąžinti išsaugotus kliento mokėjimo metodus |
 
-## Atnaujinimo kredencialai pasikartojančioms narystėms
+## Atnaujinimo kredencialai pasikartojančioms narystėms {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 leidžia Gateway integracijoms pranešti, ar pasikartojanti narystė turi pakartotinai naudojamą atnaujinimo kredencialą prieš išsaugant `auto_renew`. Prijunkite `wu_membership_has_renewal_credential` ir grąžinkite:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Išvalykite trūkstamo kredencialo žymeklį kaip savo Gateway sėkmingos pakartotinio autorizavimo eigos dalį po to, kai išsaugomas naujas pakartotinai naudojamas kredencialas.
 
-## Patarimai
+## Patarimai {#tips}
 
 - Nesėkmės atveju visada grąžinkite `WP_Error`, kad Ultimate Multisite galėtų apdoroti klaidos rodymą
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Naudokite `wu_log_add()` Gateway specifiniam registravimui
 
-## AI jungties teikėjo galimybės
+## AI jungties teikėjo galimybės {#ai-connector-provider-capabilities}
 
 Pasirinktinės integracijos, kurios kviečia AI jungtimi paremtas operacijas, turėtų būti suderintos su palaikomu OAuth teikėjų rinkiniu, pristatytu su AI Provider for Anthropic Max v1.3.0:
 

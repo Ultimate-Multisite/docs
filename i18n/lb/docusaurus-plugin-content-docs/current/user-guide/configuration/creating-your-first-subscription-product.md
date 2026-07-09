@@ -3,13 +3,13 @@ title: D'Creation vun Ihrem erschte Abonnementprodukt
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Iri erschte Abonnementprodukt (v2)
+# Iri erschte Abonnementprodukt (v2) {#creating-your-first-subscription-product-v2}
 
 _**WICHTIGE NOTIZ: Dä Artikel isch nur für Ultimate Multisite Version 2.x Nutzer.** _ **Wenn Sie Version 1.x bruche, luege Sie sich dä andere Artikel a.**
 
 Um Ihr Netzwerk z'starte und mit em Verchaufe vo Ihre Dienstleistige a potenzielle Nutzer afange, müesse Sie verschiedeni Abonnement-Optionen ha. Wie erstellt me die Produkt? Welche Art vo Produkt chönne Sie aabiete? In däm Artikel bewiise mer alles, was Sie über Produkt wüsse müesse.
 
-## Produktart
+## Produktart {#product-type}
 
 Mit Ultimate Multisite chönne Sie Ihre Kunde zwei Kategorie vo Produkt aabiete: **Plän** und **Add-ons (Order Bump)**. Add-ons chönne in zwei Typä unterteilt werde: **Paket** und **Dienstleistige**. Mir luege d'Unterschied und Spezifikeite nächst aa.
 
@@ -19,7 +19,7 @@ Mit Ultimate Multisite chönne Sie Ihre Kunde zwei Kategorie vo Produkt aabiete:
 
   * **Dienstleistige**: Add-ons, wo d'Funktionalität vo Ultimate Multisite nöd verändere. Das sind Ufgabe, wo Sie für Ihren Kunde zusätzlich zum gekauften Plän realisiere. Zum Bischpil chönnt Ihr Kunde en Plän kaufe, wo nur eis Site zuelah het, und au für e extra Dienstleistig zahle, wo die Site gestaltet.
 
-## Produkt verwalte
+## Produkt verwalte {#managing-products}
 
 Für villi Lüüt chan de **Products** Tab i Ultimate Multisite **(Ultimate Multisite > Products)** mit Pläne in ere traditionelle Hosting-Umgebig glich gsetzt werde.
 
@@ -29,7 +29,7 @@ Dä Abschnitt wird Ihne helfe, das wichtigi Fundament vo Ultimate Multisite bess
 
 ![Products list page](/img/config/products-list.png)
 
-## Produkte hinzufügen
+## Produkte hinzufügen {#adding-products}
 
 Egal ob en Plan, e Paket oder e Dienst de Startpunkt isch für d'Definition vo eme nöie Artikel über **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ D'Oberflächi het zwei Hauptabschnitte. Links finded Sie verschideni Tabs, wo bi
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Beschribig
+### Beschribig {#description}
 
 D'Basisproduktinformation cha mit eme Produktname und ere Beschribig definiert werde. Die Kennzeichner werded überall aazigt, wo d'Produktinformation nötig isch, wie bi de Plan- und Priiswahl, i Rechnige, Upgrades und so wiiter.
 
 ![Product description section](/img/config/product-description.png)
 
-### Preisart
+### Preisart {#pricing-type}
 
 Auf de rechte Siite vo de Oberflächi cha de Basispreis definiert werde.
 
@@ -53,7 +53,7 @@ Auf de rechte Siite vo de Oberflächi cha de Basispreis definiert werde.
 
 Ultimate Multisite unterstützt drei verschiedeni Preisarte. D'**paid** Option fordert de Netzwerkadministrator uf, Informatione über de Priis und d'Abrechnigsfrequenz vom Produkt z'gäbe.
 
-### Preisgestaltung
+### Preisgestaltung {#pricing}
 
 De Priisbestand definiert de Basisproduktpriis und s'Abrechnigsintervall.
 
@@ -61,7 +61,7 @@ De Priisbestand definiert de Basisproduktpriis und s'Abrechnigsintervall.
 
 so isch en Beispielpriis vo $29.99 mit ere Iistellig vo 1 Monet, wird jede Monat $29.99 verrechnet. Ähnlich, en Priis vo $89.97 mit ere Iistellig vo 3 Mönet wird dä Betrag pro Quartal verrechnet.
 
-### Abrechnungszyklen (Billing Cycles)
+### Abrechnungszyklen (Billing Cycles) {#billing-cycles}
 
 De Abschnitt "Billing Cycles" zeigt a, wie oft die erwähnti Abrechnigsintervall stattfindet und wird generell im Zusammenhang mit Verträg oder fixe Laufzite verstande.
 
@@ -69,7 +69,7 @@ De Abschnitt "Billing Cycles" zeigt a, wie oft die erwähnti Abrechnigsintervall
 
 Zum Bischpil, en Produktpriis vo $29.99 mit ere Intervall vo 1 Monet und 12 Abrechnungszyklen wird de Priis vo $29.99 pro Monet für das Produkt über die nächste 12 Mönet verrechnet. Mit andere Worten, so e Iistellig schafft en fixe Priis von $29.99 pro Monet für 12 Mönet und denn hört d'Abrechnung uf.
 
-### Testphase (Trial Period)
+### Testphase (Trial Period) {#trial-period}
 
 D'Aktivierig vom "offer trial toggle" erlaubt em Netzwerkadministrator, en Testphase für s'Produkt festzlege.
 
@@ -77,7 +77,7 @@ D'Aktivierig vom "offer trial toggle" erlaubt em Netzwerkadministrator, en Testp
 
 Während de Testphase chönne d'Kunde s'Produkt frei bruche und werdet nöd verrechnet, bis die Testphase abgloffe isch.
 
-### Einrichtungsgebühr (Setup Fee)
+### Einrichtungsgebühr (Setup Fee) {#setup-fee}
 
 Sie chönne au en Einrichtigsgebühr uf Ihr Plan aawende.
 
@@ -85,7 +85,7 @@ Sie chönne au en Einrichtigsgebühr uf Ihr Plan aawende.
 
 Das heisst, Ihr Kunde wird bi de erschte Abbuchig en zusätzliche Betrag zahle (zusätzlich zum Priisplan), wo dem Gebühr entspricht, wo Sie in däm Abschnitt definiert händ.
 
-### Aktiv (Active)
+### Aktiv (Active) {#active}
 
 De "active toggle" definiert effektiv, ob s'Produkt für neui Imschtellige verfügbar isch für Kunde.
 
@@ -93,13 +93,13 @@ De "active toggle" definiert effektiv, ob s'Produkt für neui Imschtellige verf�
 
 Wenn es bestehendi Kunde uf dësen Plan git, macht d'Umschaltig op de deaktiviert Zustand de Plan effektiv als veraltet (grandfathered) und nimmt ihn us zukünftige Registrierungen. **Bestehendi Kunde uf em Plan wëssen wiiterhin abgerechnet ginn**, bis si zu eme neie Plan überleit sinn oder us em Plan entfernt ginn.
 
-### Produktbild
+### Produktbild {#product-image}
 
 D'**Upload Image**-Button laescht de Netzweradministrator d'Medienbibliothek nutze, um en Produktbild z'welle oder uploade.
 
 ![Product image section](/img/config/product-image.png)
 
-### Löschen
+### Löschen {#delete}
 
 D'**Delete Product**-Button löscht de Produkt us em System. Er erscheint, sobald de Produkt publizéiert gëtt.
 
@@ -107,11 +107,11 @@ D'**Delete Product**-Button löscht de Produkt us em System. Er erscheint, sobal
 
 Anders wéi anderi Löschige, gëtt de Produkt nid in en "Trash"-Zustand gesetzt. Drum ischt d'Aktion nach em Löschen irreversibel.
 
-### Produktoptionen
+### Produktoptionen {#product-options}
 
 Sobald d'Basis-Produktinformation definiert isch, helfe d'Produktoptionen em Netzweradministrator wiiterhin spezifischi Attribut vom Produkt z'definirsen.
 
-#### Allgemein
+#### Allgemein {#general}
 
 D'**General**-Tab definiert d'allgemeine Attribute vom Produkt, déi nöd zu irgendeiner ander produkt-spezifische Tab gfüegt sinn.
 
@@ -125,7 +125,7 @@ D'**Customer Role** gëtt de Roll fest, déi dem Kunde zugewiese gëtt, wann d'S
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Up & Downgrades
+#### Up & Downgrades {#up--downgrades}
 
 Dëst Tab gits de Upgrade- und Downgrade-Weg, déi en Kunde innerhalb vun sinem spezifische Tier zur Verfüegung stellt.
 
@@ -143,7 +143,7 @@ Um e Plan Group z'definéieren, spezifizéiert d'kompatible Pläne innerhalb vun
 
 Ultimate Multisite beinhalt och e **order bump** Funktioun, wou passend Zuesätzsproducten an -d'Services chönnen zu Plänen hinzugefüegt ginn. Dëse sinn dem Kunden als zusätzlech Item ahbot, déi am Checkout oder während enger Upgrade zu Plänen hinzugefüegt ginn.
 
-#### Price Variations
+#### Price Variations {#price-variations}
 
 Priisvariante laat de netwerkadministrator alternatiewe prijspunten specificeren afhankelijk van de duur. Deze instelling maakt het mogelijk om voor dezelfde product een maandelijkse, kwartaal-, jaarlijkse of elke andere factureringsperiode aan te bieden. Byvoorbeeld, u kunt een product instellen op $29.99/maand met een korting bij een jaarabonnement van $249.99/jaar.
 
@@ -165,7 +165,7 @@ Als uw basisproductprijs $29.99 per maand is, kunt u bijvoorbeeld toevoegen:
 Prijsvariaties alleen voegen geen toggle of schakelaar toe aan de frontend checkout. Om klanten in staat te stellen te wisselen tussen factureringsperiodes (bijvoorbeeld Maandelijks / Jaarlijks), moet u een **Period Selection** veld toevoegen aan uw checkout form. Zie [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) voor stapsgewijze instructies.
 :::
 
-#### Belastingen
+#### Belastingen {#taxes}
 
 Het tabblad **Taxes** komt overeen met de belastinginstellingen die in **Ultimate Multisite > Settings > Taxes** zijn ingesteld en specifiek de gedefinieerde tarieven. Om belastingen te activeren en toepasselijke belastingtarieven te definiëren, kunt u de documentatie op [Ultimate Multisite: Settings](https://ultimate-multisite.com/settings) raadplegen.
 
@@ -179,7 +179,7 @@ Sobald de Steuersatz i **Ultimate Multisite > Settings > Manage Tax Rates** defi
 
 Um z'zeige, dass es sich um en steuerbare Artikel handelt, setzet de Schalter **Is Taxable** uf aktiv und wählet de anwendbari Steuersatz us em Dropdown-Menü Tax Category.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Im Wesentliche sind Site Templates komplett WordPress-Websites, wo am Afang vo de Abonnement vom Chund uf sini eigene Site gekloniert werde.
 
@@ -201,7 +201,7 @@ Zuletzt übersteut **Choose Available Site Templates** die templates, wo im chec
 
 Letztendlich, wenn de netwerkadministrator wott, dass d'template selectie i de checkout schritt stattfindet, reicht d'stellig ' _default_'. Alternativ zum entferne und sperre vo de template selectie und de selectie an d'plan stellige delegiere chönne d'optionen ' _assign new template_ ' oder ' _choose available site templates_ ' sinnvoll si.
 
-#### Sites
+#### Sites {#sites}
 
 D **Sites** tab isch en Teil vo de limitierendi Funktionalität vo Ultimate Multisite.
 
@@ -211,7 +211,7 @@ D'stellig spezifiziert d'maximali Anzahl vo sites, wo en chund unter sinere mitg
 
 Um die limitierig z'aktiviere, stell de **limit sites** toggle uf de aktive Zustand und gib d'maximali Anzahl vo sites im feld **site allowance** a.
 
-#### Visits
+#### Visits {#visits}
 
 D **Visits** tab isch en wiitere Teil vom limitierendi System vo Ultimate Multisite. D'stellig erlaubt d'Abrechnig und anschliessendi Begrenzig vo einzigartige Bsuecher uf de site vom chund.
 
@@ -223,7 +223,7 @@ Um di Funktionalität z'nutze, stell de Schalter **limit unique visits** uf akti
 
 Sobald die Limit erreicht isch, wird Ultimate Multisite nöd meh d'Site vom Kunde serve, sondern es wird e Nachricht aazeige, dass d'Limits überschritte sind.
 
-#### Users
+#### Users {#users}
 
 D'Limitatione vo de 'Users' in Ultimate Multisite erlaubed em Netzwerkadministrator, Limits uf d'Anzahl vo User z'setze, wo erstellt und mit Rollene zugewiesse werde chönne.
 
@@ -233,7 +233,7 @@ Um die Limitierigsfunktionalität z'aktivierä, stell de Schalter **limit user**
 
 Nächscht für jede Roll, wo limitiert werde söll, stell de Schalter danebe uf aktiv und definiere d'maximali Obergrenzi im entsprechende Feld.
 
-#### Post Types
+#### Post Types {#post-types}
 
 D'Tab **Post Types** erlaubt em Netzwerkadministrator, detaillierti Limits uf d'umfängrichi Reihe vo Post Types in WordPress z'setze.
 
@@ -245,7 +245,7 @@ Um das Limitierigs-Subsystem z'aktivierä, stell de Schalter **limit post types*
 
 Nächst, für jede Posttype, wo mer beperkt wë bin, schalte de mit em Schlippen nach rechts i und ginn d'maximale Oberschiitzlimite i de passend Feld.
 
-#### Disk Space
+#### Disk Space {#disk-space}
 
 D'**Disk Space** Tab la laat de Netzwerkhäfer d'Platz, wo d'Kunde bruchen, z'begrenzen.
 
@@ -257,13 +257,13 @@ Um d'Disk Usage Begrenzung z'aktivierën, setze de Schalter **limit disk size pe
 
 Nächst ginn Dir d'maximale Oberschiitzlimite i Megabytes i de Feld **disk space allowance**.
 
-#### Custom Domain
+#### Custom Domain {#custom-domain}
 
 Door dëst Option z'schalte kënnt Dir custom domains speziell fir dë Plan aallouen.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes
+#### Themes {#themes}
 
 D'**Themes** Tab all dem Produktoption la laat de Netzwerkhäfer d'Themes fir d'Kunde zur Wahl verfügbar maachen an optional d'Zustand vum Theme z'zwunge.
 
@@ -281,7 +281,7 @@ D'Wahl **behavior** la laat de Netzwerkhäfer de Zustand vum Theme definéieren,
 
 Im **A** **Verfüegbare** Zustand isch s Thema für de Kunde zur Selbstaktivierig verfügbar. Im Gegesatz zum **Nicht Verfügbar** Zustand wird de Kunde d'Möglichkeit, s Thema z'aktivierä, entzogen. Und zum Schluss erzwingt d'Option **Zwingend Aktivierä** d'Uswahl und Aktivierig vom Thema, sodass es bi Site-Erstellige als Standard gsetzt wird.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Ähnlich wie bim Themes Tab erlaubt Ultimate Multisite em Netzwerkadministrator, d'Sichtbarkeit vo Plugins für Kunde z'definierä, au de Zustand bi de Erstellig vo ere neue Site.
 
@@ -301,7 +301,7 @@ D'Istellte **Force Activate & Lock** funktioniert ähnlich, aber verhindert, das
 
 De Netzwerkinadministrator chan überlegä, d'Istellte Force Activate & Lock und Force Inactivate & Lock mit Site Templates als Plugins z'berücksichtige. D'Plugin-Zueständ innerhalb vo de Templates chönne dur die Istellte beeinflusst werde, falls sie wählt sind.
 
-#### Reset Begränzige
+#### Reset Begränzige {#reset-limitations}
 
 D'Tab **Reset Limitations** setzt alli benutzerdefinierten Begränzige, wo uf em Produkt definiert sind, zurück. Um d'Begränzige z'setze, klickt Sie uf de Knopf **reset limitations**.
 
@@ -311,7 +311,7 @@ Um d'Aktion z'bestätige, schiebt Sie de Schalter **confirm reset** uf de rechte
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Produkt bearbeite, dupliziere oder lösche
+## Produkt bearbeite, dupliziere oder lösche {#edit-duplicate-or-delete-product}
 
 Bestandendi Produkte chönne bearbeitet, dupliziert oder glöscht werde, indem Sie zu **Ultimate Multisite > Products** navigiere und über de Name vom bestehende Produkt fahre.
 

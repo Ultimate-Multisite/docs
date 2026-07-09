@@ -3,13 +3,13 @@ title: Afskakel van 'n Plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Verlaag van 'n plan (v2)
+# Verlaag van 'n plan (v2) {#downgrading-a-plan-v2}
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
 'n Plan of intekening verlaag is 'n algemene aksie wat jou kliënte kan verrig as hulle 'n beperkte begroting het of besluit het dat hulle nie baie hulpbronne sal benodig om hul subwerf te laat loop nie.
 
-## Hoe om 'n plan te verlaag
+## Hoe om 'n plan te verlaag {#how-to-downgrade-a-plan}
 
 Jou kliënte kan hul plan enige tyd verlaag deur in hul subwerf-dashboard aan te meld en op **Verander** te klik onder hul rekeningblad.
 
@@ -25,7 +25,7 @@ Om voort te gaan, hoef die gebruiker net op die **Voltooi Afrekening**-knoppie t
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Wat gebeur wanneer 'n gebruiker hul plan verlaag
+### Wat gebeur wanneer 'n gebruiker hul plan verlaag {#what-happens-when-a-user-downgrades-their-plan}
 
 Dit is belangrik om te weet dat die verlaag van die plan nie die bestaande konfigurasie in die gebruiker se subwerf verander nie.
 
@@ -37,7 +37,7 @@ Vir plase wat die limiet wat op die plan gestel is, oorskry, het jy 3 verskillen
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Wat gebeur met die betaling
+### Wat gebeur met die betaling {#what-happens-to-the-payment}
 
 In weergawe 2.0 is geen aanpassings meer nodig op die betaling ten opsigte van proorsie nie.
 

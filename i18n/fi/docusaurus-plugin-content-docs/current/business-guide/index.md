@@ -3,13 +3,13 @@ title: Rakenna markkinarakoon keskittyvä verkkosivustoliiketoiminta
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Rakenna niche-verkkosivustoliiketoiminta Ultimate Multisite -palvelulla
+# Rakenna niche-verkkosivustoliiketoiminta Ultimate Multisite -palvelulla {#build-a-niche-website-business-with-ultimate-multisite}
 
 Useimmat ihmiset, jotka yrittävät myydä verkkosivustoja, kilpailevat hinnalla Wixin, Squarespacen ja tuhansien freelancereiden kanssa. He häviävät. Voittajat valitsevat tietyn yleisön, rakentavat ratkaisun juuri sille yleisölle ja veloittavat tuottamastaan arvosta.
 
 Tämä kurssi opettaa sinulle, miten teet juuri sen Ultimate Multisite -palvelulla.
 
-## Mitä rakennat
+## Mitä rakennat {#what-you-will-build}
 
 Tämän kurssin aikana rakennat oikean, toimivan verkoston nimeltä **FitSite** -- verkkosivustoalustan, joka on rakennettu erityisesti kuntostudioille, personal trainereille ja kuntosalien omistajille.
 
@@ -23,7 +23,7 @@ Viimeiseen oppituntiin mennessä FitSite on valmis niche-alusta, jossa on:
 
 Seuraat mukana vaihe vaiheelta, ja lopussa sinulla on sekä toimiva alusta että tieto siitä, miten voit toistaa prosessin missä tahansa valitsemassasi nichessä.
 
-## Miksi kuntostudiot?
+## Miksi kuntostudiot? {#why-fitness-studios}
 
 Tarvitsimme konkreettisen esimerkin, jota kuka tahansa voi seurata. Kuntostudiot toimivat, koska:
 
@@ -34,7 +34,7 @@ Tarvitsimme konkreettisen esimerkin, jota kuka tahansa voi seurata. Kuntostudiot
 
 Kaikki, mitä opit FitSiteä rakentaessasi, soveltuu suoraan mihin tahansa valitsemaasi nicheen: ravintoloihin, kiinteistönvälittäjiin, asianajotoimistoihin, kirkkoihin, urakoitsijoihin tai mihin tahansa muuhun toimialaan.
 
-## Kurssin rakenne
+## Kurssin rakenne {#course-structure}
 
 Jokainen oppitunti esittelee yhden käsitteen, selittää miksi sillä on merkitystä ja opastaa sinua toteuttamaan sen FitSite-verkostossa. Jokainen oppitunti rakentuu edellisen päälle.
 
@@ -55,7 +55,7 @@ Jokainen oppitunti esittelee yhden käsitteen, selittää miksi sillä on merkit
 | [13. Skaalaaminen](lesson-13-growth) | Kasvaminen ensimmäisistä asiakkaista oikeaksi liiketoiminnaksi | FitSite-kasvu- ja automaatiostrategia |
 | [14. Mitä seuraavaksi](lesson-14-whats-next) | Laajentaminen viereisiin nicheihin ja uusiin mahdollisuuksiin | Tiekarttasi FitSiten jälkeen |
 
-## Edellytykset
+## Edellytykset {#prerequisites}
 
 - WordPress Multisite -asennus (tai halukkuus ottaa sellainen käyttöön)
 - Aktiivinen Ultimate Multisite -lisenssi
@@ -63,6 +63,6 @@ Jokainen oppitunti esittelee yhden käsitteen, selittää miksi sillä on merkit
 
 Koodausta ei tarvita. Jos et ole koskaan aiemmin käyttänyt Ultimate Multisite -palvelua, se ei haittaa -- oppitunti 3 alkaa puhtaasta asennuksesta.
 
-## Valmis?
+## Valmis? {#ready}
 
 Aloita kohdasta [Oppitunti 1: Miksi niche voittaa](lesson-1-why-niche).

@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Dəyişikliklər Siyahısı
+# Ultimate AI Connector for WebLLM Dəyişikliklər Siyahısı {#ultimate-ai-connector-for-webllm-changelog}
 
-## Version 1.1.0 — 2026-04-09 tarixində buraxılıb
+## Version 1.1.0 — 2026-04-09 tarixində buraxılıb {#version-110--released-on-2026-04-09}
 
 * Yeni: Admin paneli status göstəricisi olan uçan chat widget'ı — hər hansı daxil olub istifadəçi birbaşa front-end-dən brauzer tərəfindəki LLM-ə sorğu göndərə bilər.
 * Yeni: SharedWorker runtime — MLC mühərriki indi SharedWorker-də işləyir, beləliklə bir neçə tab GPU sessiyasını paylaşır, ona mübarizə etmir.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Düzəliş: WebLLM-i wpai_preferred_text_models filtrləsinə qoşmaq, beləliklə AI Experiments funksionallığı bir model konfiqurasiya edildikdə brauzer mühərrikinə yönləndirilir.
 * Təkmilləşdirildi: Son-üst-son testlərdə aşkar edilmiş Cache-busting, məzmun normalizasiyası və donanım-referans düzəlişləri.
 
-## Version 1.0.0 — İlkin Buraxılış
+## Version 1.0.0 — İlkin Buraxılış {#version-100--initial-release}

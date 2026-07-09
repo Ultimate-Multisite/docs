@@ -3,18 +3,18 @@ title: Tema Oluşturucu Yetenekleri
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Tema Oluşturucu Yetenekleri: Blok Temaları İskele Kurma ve Aktifleştirme
+# Tema Oluşturucu Yetenekleri: Blok Temaları İskele Kurma ve Aktifleştirme {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0, sohbet arayüzünden özel blok temaları oluşturmanıza ve yayınlamanıza olanak tanıyan iki güçlü yetenek sunuyor.
 
-## Genel Bakış
+## Genel Bakış {#overview}
 
 **scaffold-block-theme** ve **activate-theme** yetenekleri, agent'ların şunları yapmasını sağlar:
 - Belirlediğiniz özelliklere göre eksiksiz, üretime hazır blok temalar oluşturur
 - Temaları manuel müdahale olmadan sitenizde otomatik olarak aktifleştirir
 - Rehberli tasarım kararlarıyla tutarlı görsel kimlikler yaratır
 
-## Blok Teması İskele Kurma (Scaffold Block Theme)
+## Blok Teması İskele Kurma (Scaffold Block Theme) {#scaffold-block-theme}
 
 **scaffold-block-theme** yeteneği, aşağıdaki bileşenleri içeren eksiksiz bir tema yapısıyla yeni bir WordPress blok teması oluşturur:
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0, sohbet arayüzünden özel blok temaları oluşturman
 - Özel blok stilleri ve varyasyonları
 - Tema meta verileri ve destek bildirimleri
 
-### Nasıl Kullanılır
+### Nasıl Kullanılır {#how-to-invoke}
 
 Superdav AI Agent ile yaptığınız sohbette, tema oluşturma isteğinde bulunabilirsiniz:
 
@@ -38,7 +38,7 @@ Agent şunları yapacaktır:
 3. Gerekli tüm tema dosyalarını hazırlar
 4. Temayı aktifleştirmeye hazır hale getirir
 
-### Beklenen Çıktı
+### Beklenen Çıktı {#expected-output}
 
 Yetenek başarıyla çalıştırıldığında şunları göreceksiniz:
 
@@ -56,11 +56,11 @@ Yetenek başarıyla çalıştırıldığında şunları göreceksiniz:
   Status: Ready to activate
 ```
 
-## Temayı Aktifleştirme (Activate Theme)
+## Temayı Aktifleştirme (Activate Theme) {#activate-theme}
 
 **activate-theme** yeteneği, sitenizi yeni iskele kurulmuş veya mevcut bir blok temasına geçirir.
 
-### Nasıl Kullanılır
+### Nasıl Kullanılır {#how-to-invoke-1}
 
 Bir tema iskele kurduktan sonra, hemen aktifleştirebilirsiniz:
 
@@ -74,7 +74,7 @@ Veya mevcut herhangi bir temayı aktifleştirebilirsiniz:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Beklenen Çıktı
+### Beklenen Çıktı {#expected-output-1}
 
 Aktifleştirme başarılı olduğunda:
 
@@ -92,7 +92,7 @@ Aktifleştirme başarılı olduğunda:
   Note: Check your homepage to verify the layout
 ```
 
-## İş Akışı: İskele Kurma ve Aktifleştirme
+## İş Akışı: İskele Kurma ve Aktifleştirme {#workflow-scaffold-and-activate}
 
 Tipik bir iş akışı, her iki yeteneği de birleştirir:
 
@@ -102,7 +102,7 @@ Tipik bir iş akışı, her iki yeteneği de birleştirir:
 4. **Aktifleştirme**: "Şimdi temayı aktifleştir"
 5. **Doğrulama**: Yeni tasarımın yayında olup olmadığını kontrol etmek için sitenizi ziyaret edin
 
-## Tasarım Jetonları ve Özelleştirme
+## Tasarım Jetonları ve Özelleştirme {#design-tokens-and-customization}
 
 İskele kurulan temalar, aşağıdaki amaçlar için WordPress tasarım jetonlarını (`theme.json` aracılığıyla) kullanır:
 
@@ -114,14 +114,14 @@ Tipik bir iş akışı, her iki yeteneği de birleştirir:
 
 Bu jetonlar `theme.json` dosyasında merkezileştirilmiştir, bu da tüm tasarım sisteminizi tek bir dosyadan ayarlamanızı kolaylaştırır.
 
-## Sınırlamalar ve Notlar
+## Sınırlamalar ve Notlar {#limitations-and-notes}
 
 - Temalar `/wp-content/themes/` dizininde iskele kurulur ve WordPress adlandırma kurallarına uymalıdır
 - Aktifleştirme, WordPress sitenizde uygun izinler gerektirir
 - Temalardaki özel PHP kodu minimum düzeydedir; karmaşık işlevsellik için eklentiler kullanın
 - Blok temalar, WordPress 5.9 ve sonrası ile en iyi şekilde çalışır
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
 **İskele kurulmasına rağmen tema görünmüyor**
 - Tema dizininin varlığını ve doğru izinlere sahip olup olmadığını doğrulayın
@@ -138,7 +138,7 @@ Bu jetonlar `theme.json` dosyasında merkezileştirilmiştir, bu da tüm tasarı
 - Herhangi bir önbellekleme eklentisini temizleyin
 - WordPress sürümünüzün kullandığınız jetonları desteklediğini kontrol edin
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 Temanızı aktifleştirdikten sonra şunları yapabilirsiniz:
 - Tipografiyi, renkleri ve boşlukları iyileştirmek için **Design System Aesthetics skill**'ini kullanın

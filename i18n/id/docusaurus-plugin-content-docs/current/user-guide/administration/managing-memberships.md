@@ -3,7 +3,7 @@ title: Mengelola Keanggotaan
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Mengelola Membership
+# Mengelola Membership {#managing-memberships}
 
 Di Ultimate Multisite Anda dapat mengelola membership dan mengakses semua subscription di jaringan Anda. Tinjau dan edit detail subscription seperti plan dan produk, jumlah situs, jumlah dan frekuensi penagihan, riwayat pembayaran, dan timestamp.
 

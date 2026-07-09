@@ -3,7 +3,7 @@ title: Kunde konto side
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Din Klientens Konto side (v2)
+# Din Klientens Konto side (v2) {#your-clients-account-page-v2}
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
@@ -11,7 +11,7 @@ Når kunder abonnerer på en plan i dit netværk, får de adgang til en hjemmesi
 
 I denne tutorial vil vi guide dig gennem kundens konto side, og du vil se, hvad dine kunder kan se og gøre derinde.
 
-## Konto Siden
+## Konto Siden {#the-account-page}
 
 Konto-siden er tilgængelig ved at klikke på **Account** (Konto) inde i din kunders dashboard.
 
@@ -27,7 +27,7 @@ Efter at kunden har klikket på den, vil de se et overblik over deres medlemskab
 
 De kan også ændre medlemskabet til en anden plan eller købe et andet pakke- eller serviceudbud, du tilbyder. Lad os se på hvert afsnit separat.
 
-### Overblik over dit medlemskab:
+### Overblik over dit medlemskab: {#your-membership-overview}
 
 Det første felt lige under jeres kundes websitets navn viser et overblik over jeres nuværende plan og de købte tjenester/pakker, der er forbundet med det. Feltet viser også medlemsnummeret, det oprindelige beløb, der blev betalt for det, hvor meget planen og eventuelle tjenester/pakker koster, samt hvor mange gange medlemskabet er faktureret for. De kan også se, om medlemskabet er **Aktiv**, **Udløbet** eller **Afbrudt**.
 
@@ -43,7 +43,7 @@ Nu, hvis jeres kunder vælger at købe pakker eller tjenester til dette nuværen
 
 Bemærk, at kuponkoder ikke kan tilføjes på denne side til ændring af medlemskab. Hvis kunden brugte en kuponkode ved det første medlemskabskøb, vil koden også gælde for dette nye medlemskab.
 
-### Opdatering af faktureringsadresse:
+### Opdatering af faktureringsadresse: {#updating-the-billing-address}
 
 På kontoprisen kan dine kunder også opdatere deres faktureringsadresse. De skal blot klikke på **Opdater** ved siden af _Faktureringsadresse_.
 
@@ -53,7 +53,7 @@ Et nyt vindue vil åbne sig for din kunde. Alt, de skal gøre, er at udfylde den
 
 ![Form til opdatering af faktureringsadresse](/img/account-page/billing-address-form.png)
 
-### Ændring af sidtemplet:
+### Ændring af sidtemplet: {#changing-the-site-template}
 
 For at lade dine kunder ændre deres sidtempler skal du gå til **Ultimate Multisite > Indstillinger > Sites** og slå muligheden **Tillad skift af templer (Allow Template Switching)** til.
 
@@ -81,7 +81,7 @@ Efter du har slået bekræftelsen til og klikket på **Process Switch**, vil den
 
 Kunder kan også bruge **Reset current template** fra dette panel, hvis de skal nulstille siden tilbage til den i øjeblikket tildelte temabelag. Ligesom ved at skifte til en anden temabelag kan nulstilling af et temabelag overskrive indholdet på siden, så kunder bør kun bekræfte det, når de forstår nulstillingshandlingen.
 
-### Tilføjelse af brugerdefinerede domæner:
+### Tilføjelse af brugerdefinerede domæner: {#adding-custom-domains}
 
 Dine kunder vil også have mulighed for at tilføje en brugerdefineret domæne til denne plan på deres kontoside. For at lade dine kunder bruge brugerdefinerede domæner, skal du gå til **Ultimate Multisite > Indstillinger >** **Domænemapping**.
 
@@ -115,7 +115,7 @@ Efter at have klikket på **Næste trin** kan dine kunder tilføje deres custom 
 
 Efter at have klikket på **Tilføj domæne** vil domænen blive tilføjet til din kunders konto. Alt, de nu skal gøre, er at ændre DNS-oplysningerne for denne custom domain hos deres domæneregistreringsudbyder.
 
-### Ændring af adgangskode:
+### Ændring af adgangskode: {#changing-password}
 
 Inde i kontodashbordet kan dine kunder også ændre deres adgangskode ved at klikke på **Ænd adgangskode**.
 
@@ -125,7 +125,7 @@ Dette vil vise et nyt vindue, hvor dine kunder skal indtaste deres nuværende ad
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Farezone:
+### Farezone: {#danger-zone}
 
 Vi har også to muligheder vist i **Farezonen**: **Slet Site** og **Slet Konto**. Begge disse handlinger er placeret i Farezonen, fordi disse to handlinger ikke kan rulles tilbage. Hvis dine kunder sletter deres hjemmeside eller deres konto, kan de ikke genvinde dem.
 

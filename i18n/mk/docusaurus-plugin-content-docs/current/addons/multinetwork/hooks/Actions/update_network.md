@@ -4,20 +4,20 @@ title: Акција - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Action: update_network
+# Action: update_network {#action-updatenetwork}
 
 Се активира откако постоечка мрежа ќе биде ажурирана.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $network_id | `int` | ID на додадената мрежа. |
 | $args | `array` | Асоцијативна низа од аргументи за мрежата. |
 
-### Од верзија
+### Од верзија {#since}
 
 - 1.3.0
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1422) на линија 1422

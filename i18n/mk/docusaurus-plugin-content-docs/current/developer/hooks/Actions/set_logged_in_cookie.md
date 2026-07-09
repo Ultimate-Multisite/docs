@@ -4,11 +4,11 @@ title: Акција - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Дејство: set_logged_in_cookie
+# Дејство: set_logged_in_cookie {#action-setloggedincookie}
 
 Се активира веднаш пред да се постави колачето за автентикација на најавен корисник.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | Шема за автентикација. Стандардно 'logged_in'. |
 | $token | `string` | Токен за сесија на корисникот што ќе се користи за ова колаче. |
 
-### Од
+### Од {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) на линија 141

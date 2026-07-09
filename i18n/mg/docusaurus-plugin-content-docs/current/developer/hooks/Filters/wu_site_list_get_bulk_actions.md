@@ -4,22 +4,22 @@ title: Sivana - wu_site_list_get_bulk_actions
 sidebar_label: wu_site_list_get_bulk_actions
 _i18n_hash: 0a18ab4a09da0089d688b72198c51711
 ---
-# Filter: wu_site_list_get_bulk_actions
+# Filter: wu_site_list_get_bulk_actions {#filter-wusitelistgetbulkactions}
 
 Sivano ireo hetsika faobe azo ampiasaina ho an’ny tranonkala.
 
-## Masontsivana
+## Masontsivana {#parameters}
 
 | Anarana | Karazana | Famaritana |
 |------|------|-------------|
 | $actions | `array` | Ireo hetsika faobe. |
 
-### Hatramin’ny
+### Hatramin’ny {#since}
 
 - 2.4.10
-### Loharano
+### Loharano {#source}
 
 Voafaritra ao amin’ny [`inc/list-tables/class-site-list-table.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/list-tables/class-site-list-table.php#L388) amin’ny andalana 388
 
 
-## Sanda averina
+## Sanda averina {#returns}

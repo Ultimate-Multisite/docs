@@ -3,7 +3,7 @@ title: Iomradh air Comasan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Iomradh air Comasan
+# Iomradh air Comasan {#abilities-reference}
 
 Is e comasan na gnìomhan atamach as urrainn do Gratis AI Agent a ghairm air an stàladh WordPress agad. Tha gach comas na chlas PHP clàraichte a tha a’ foillseachadh sgeama JSON — leughaidh an t-àidseant an sgeama seo aig àm-ruith gus tuigsinn dè na paramadairean a tha riatanach agus dè a thilleas an comas.
 
@@ -11,11 +11,11 @@ Tha an duilleag seo a’ clàradh nan comasan uile a thig le Gratis AI Agent v1.
 
 ---
 
-## Seòrsaichean Puist Gnàthaichte
+## Seòrsaichean Puist Gnàthaichte {#custom-post-types}
 
 Bidh na comasan seo a’ riaghladh seòrsaichean puist gnàthaichte (CPTs) a tha clàraichte tron àidseant. Tha clàraidhean air an gleidheadh ann an clàr roghainnean WordPress gus am mair iad tro dhì-ghnìomhachadh agus ath-ghnìomhachadh a’ plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Clàraichidh e seòrsa puist gnàthaichte ùr.
 
@@ -50,7 +50,7 @@ Clàraichidh e seòrsa puist gnàthaichte ùr.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Tillidh e a h-uile seòrsa puist gnàthaichte a chaidh a chlàradh leis an àidseant.
 
@@ -73,7 +73,7 @@ Tillidh e a h-uile seòrsa puist gnàthaichte a chaidh a chlàradh leis an àids
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Dì-chlàraichidh e seòrsa puist gnàthaichte a chaidh a chlàradh roimhe leis an àidseant. Fanaidh puist a tha ann mu thràth den t-seòrsa sin san stòr-dàta ach cha bhi iad ruigsinneach tuilleadh tron t-seòrsa puist.
 
@@ -87,11 +87,11 @@ Dì-chlàraichidh e seòrsa puist gnàthaichte a chaidh a chlàradh roimhe leis 
 
 ---
 
-## Tacsonamaidhean Gnàthaichte
+## Tacsonamaidhean Gnàthaichte {#custom-taxonomies}
 
 Bidh na comasan seo a’ riaghladh tacsonamaidhean gnàthaichte. Mar CPTs, tha clàraidhean tacsonamaidh air an gleidheadh.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Clàraichidh e tacsonamaidh ghnàthaichte ùr.
 
@@ -123,7 +123,7 @@ Clàraichidh e tacsonamaidh ghnàthaichte ùr.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Tillidh e a h-uile tacsonamaidh ghnàthaichte a chaidh a chlàradh leis an àidseant.
 
@@ -146,7 +146,7 @@ Tillidh e a h-uile tacsonamaidh ghnàthaichte a chaidh a chlàradh leis an àids
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Dì-chlàraichidh e tacsonamaidh ghnàthaichte a chaidh a chlàradh roimhe leis an àidseant.
 
@@ -160,11 +160,11 @@ Dì-chlàraichidh e tacsonamaidh ghnàthaichte a chaidh a chlàradh roimhe leis 
 
 ---
 
-## Siostam Dealbhaidh
+## Siostam Dealbhaidh {#design-system}
 
 Bidh comasan siostam dealbhaidh ag atharrachadh taisbeanadh lèirsinneach na làraich WordPress — bho CSS gnàthaichte gu pàtrain bhlocaichean agus suaicheantas na làraich.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Cuiridh e CSS ri `<head>` na làraich tro `wp_add_inline_style`. Tha CSS air a stòradh san roghainn `gratis_ai_agent_custom_css` agus air a thoirt às a’ chiudha gu glan nuair a thèid an comas ath-shuidheachadh.
 
@@ -190,7 +190,7 @@ Cuiridh e CSS ri `<head>` na làraich tro `wp_add_inline_style`. Tha CSS air a s
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Clàraichidh e pàtran bhlocaichean ath-chleachdte ann an leabharlann phàtranan WordPress.
 
@@ -209,7 +209,7 @@ Clàraichidh e pàtran bhlocaichean ath-chleachdte ann an leabharlann phàtranan
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Liostaichidh e a h-uile pàtran bhlocaichean a chaidh a chlàradh leis an àidseant.
 
@@ -231,7 +231,7 @@ Liostaichidh e a h-uile pàtran bhlocaichean a chaidh a chlàradh leis an àidse
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Suidhichidh e suaicheantas làrach WordPress gu ID ceanglachain sònraichte no URL ìomhaigh iomallaich. Nuair a thèid URL a thoirt seachad, thèid an ìomhaigh a luchdadh a-nuas agus a thoirt a-steach don Media Library.
 
@@ -248,7 +248,7 @@ Feumar aon de `attachment_id` no `url` a thoirt seachad.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Cuiridh e preset dath/typography ainmichte an sàs air `theme.json` (no `global-styles`) a’ chuspair ghnìomhach. Tha presets nam pasganan taghte air an cumail suas le sgioba Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Cuiridh e preset dath/typography ainmichte an sàs air `theme.json` (no `global-
 
 ---
 
-## Stoidhlichean Cruinneil
+## Stoidhlichean Cruinneil {#global-styles}
 
 Leughaidh agus sgrìobhaidh comasan Stoidhlichean Cruinneil luachan theme.json tro WordPress Global Styles API, a’ toirt buaidh air a h-uile bloc agus teamplaid air feadh na làraich.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Tillidh e rèiteachadh làithreach nan stoidhlichean cruinneil.
 
@@ -291,7 +291,7 @@ Tillidh e rèiteachadh làithreach nan stoidhlichean cruinneil.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Ùraichidh e aon luach no barrachd ann an rèiteachadh nan stoidhlichean cruinneil.
 
@@ -318,7 +318,7 @@ Tillidh e rèiteachadh làithreach nan stoidhlichean cruinneil.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Ath-shuidhichidh e gach atharrachadh stoidhlichean cruinneil a chuir an t-agent an sàs, ag ath-bheothachadh bunaitean a’ chuspair.
 
@@ -328,11 +328,11 @@ Ath-shuidhichidh e gach atharrachadh stoidhlichean cruinneil a chuir an t-agent 
 
 ---
 
-## Clàran-taice Seòlaidh
+## Clàran-taice Seòlaidh {#navigation-menus}
 
 Cruthaichidh agus stiùiridh comasan Clàr-taice Seòlaidh clàran-taice seòlaidh WordPress agus na nithean aca.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Cruthaichidh e clàr-taice seòlaidh WordPress ùr.
 
@@ -347,7 +347,7 @@ Cruthaichidh e clàr-taice seòlaidh WordPress ùr.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Ath-ainmichidh e clàr-taice no sònraichidh e a-rithist e do dh’ionad cuspair.
 
@@ -363,7 +363,7 @@ Ath-ainmichidh e clàr-taice no sònraichidh e a-rithist e do dh’ionad cuspair
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Cuiridh e nì ri clàr-taice seòlaidh a tha ann mar-thà.
 
@@ -383,7 +383,7 @@ Cuiridh e nì ri clàr-taice seòlaidh a tha ann mar-thà.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Bheir e nì air falbh bho chlàr-taice seòlaidh.
 
@@ -397,7 +397,7 @@ Bheir e nì air falbh bho chlàr-taice seòlaidh.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Liostaichidh e a h-uile clàr-taice seòlaidh WordPress, a’ gabhail a-steach nan ionadan cuspair a chaidh a shònrachadh dhaibh.
 
@@ -420,11 +420,11 @@ Liostaichidh e a h-uile clàr-taice seòlaidh WordPress, a’ gabhail a-steach n
 
 ---
 
-## Stiùireadh Roghainnean
+## Stiùireadh Roghainnean {#options-management}
 
 Leughaidh agus sgrìobhaidh comasan roghainnean roghainnean WordPress tro `get_option` / `update_option`. Cuiridh liosta-bacaidh sàbhailteachd thogte casg air atharrachadh tubaisteach air roghainnean riatanach.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Leughaidh e roghainn WordPress.
 
@@ -440,7 +440,7 @@ Tillidh e mearachd ma tha `option_name` air an liosta-bacaidh sàbhailteachd.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Sgrìobhaidh e roghainn WordPress.
 
@@ -458,7 +458,7 @@ Tillidh e mearachd ma tha `option_name` air liosta-bacaidh sàbhailteachd.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Sguabaidh e às roghainn WordPress.
 
@@ -474,7 +474,7 @@ Tillidh e mearachd ma tha `option_name` air liosta-bacaidh sàbhailteachd.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Liostaichidh e roghainnean WordPress a tha a’ maidseadh pàtrain.
 
@@ -498,11 +498,11 @@ Liostaichidh e roghainnean WordPress a tha a’ maidseadh pàtrain.
 
 ---
 
-## Stiùireadh Susbaint
+## Stiùireadh Susbaint {#content-management}
 
 Cruthaichidh is deasaichidh comasan Stiùireadh Susbaint puist is duilleagan WordPress. Thèid IDan phuist a thilleadh gus an urrainn do cheuman às dèidh sin ann am planaichean ioma-chomais iomradh a thoirt air an t-susbaint a chaidh a chruthachadh.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Cruthaichidh e post WordPress ùr, duilleag, no inntrigeadh de sheòrsa puist gnàthaichte.
 
@@ -537,7 +537,7 @@ Cruthaichidh e post WordPress ùr, duilleag, no inntrigeadh de sheòrsa puist gn
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Ùraichidh e post no duilleag WordPress a tha ann mu thràth.
 
@@ -567,7 +567,7 @@ Cruthaichidh e post WordPress ùr, duilleag, no inntrigeadh de sheòrsa puist gn
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Cruthaichidh e iomadh post ann an aon ghairm comais, a’ lùghdachadh chuairtean air ais is air adhart rè togail làraichean no ion-phortadh susbaint mhòr. Thèid puist a chruthachadh ann an òrdugh; ma dh’fhàilligeas aon dhiubh, leanaidh an fheadhainn eile orra agus thèid an fhàilligeadh aithris ann an array nan toraidhean.
 
@@ -619,7 +619,7 @@ Cruthaichidh e iomadh post ann an aon ghairm comais, a’ lùghdachadh chuairtea
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Sònraichidh e ìomhaigh nochdte (dealbhag puist) do phost no duilleag a tha ann mu thràth. Gabhaidh e ri ID ceanglachain Media Library a tha ann mu thràth no URL ìomhaigh iomallach; nuair a thèid URL a sholar, thèid an ìomhaigh a luchdachadh a-nuas agus ion-phortadh gu fèin-obrachail.
 
@@ -638,7 +638,7 @@ Feumar aon de `attachment_id` no `url` a thoirt seachad.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Cruthaichidh e foirm-conaltraidh a’ cleachdadh a’ plugin fhoirm ghnìomhach (Contact Form 7, WPForms, Fluent Forms, no Gravity Forms, a rèir dè tha stàlaichte). Tillidh e shortcode a ghabhas neadachadh ann am post no duilleag sam bith.
 
@@ -691,11 +691,11 @@ Cruthaichidh e foirm-conaltraidh a’ cleachdadh a’ plugin fhoirm ghnìomhach 
 
 ---
 
-## Lèirmheas Lèirsinneach
+## Lèirmheas Lèirsinneach {#visual-review}
 
 Leigidh comasan Lèirmheas Lèirsinneach leis an agent glacaidhean-sgrìn de dhuilleagan beò a ghlacadh agus an sgrùdadh, a’ comasachadh lèirmheas dealbhaidh fèin-riaghailteach, coimeasan ro/às dèidh, agus sgrùdaidhean regression lèirsinneach gun leudachan brabhsair sam bith iarraidh.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Glacaidh e glacadh-sgrìn de dhuilleag WordPress aig URL sònraichte a’ cleachdadh brabhsair headless taobh an fhrithealaiche. Thèid an ìomhaigh a shàbhaladh dhan Media Library agus thèid URL CDN a thilleadh.
 
@@ -724,7 +724,7 @@ Glacaidh e glacadh-sgrìn de dhuilleag WordPress aig URL sònraichte a’ cleach
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Gabhaidh e dà ghlacadh-sgrìn agus tillidh e sgòr diff lèirsinneach còmhla ri ìomhaigh diff a’ soilleireachadh roinnean a dh’atharraich. Feumail airson dearbhadh gun tug atharrachadh dealbhaidh an toradh ris an robh dùil, no airson regressions gun iarraidh a lorg.
 
@@ -754,7 +754,7 @@ Tha `diff_score` de `0.0` a’ ciallachadh nach eil atharrachadh follaiseach ann
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Glacaidh e glacadh-sgrìn de dhuilleag agus cuiridh e dhan mhodail cànain e airson sgrùdadh lèirsinneach. Tillidh e measadh structaraichte a’ còmhdach co-dhealbhachd, clò-ghnàth, cleachdadh dhathan, agus cùisean ruigsinneachd.
 
@@ -785,11 +785,11 @@ Glacaidh e glacadh-sgrìn de dhuilleag agus cuiridh e dhan mhodail cànain e air
 
 ---
 
-## Comasan a Ghabhas Stàladh
+## Comasan a Ghabhas Stàladh {#installable-abilities}
 
 Leigidh Clàr nan Comasan a Ghabhas Stàladh leat an agent a leudachadh le pacaidean comais a bharrachd air an sgaoileadh mar plugins WordPress. Clàraichidh gach pacaid aon chomas no barrachd a’ cleachdadh an API comais àbhaisteach.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Tillidh e catalog nam pacaidean comais a tha rim faighinn airson stàladh bhon chlàr.
 
@@ -818,7 +818,7 @@ Tillidh e catalog nam pacaidean comais a tha rim faighinn airson stàladh bhon c
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Luchdaich a-nuas agus cuir an gnìomh pasgan comais bhon chlàr.
 
@@ -832,7 +832,7 @@ Luchdaich a-nuas agus cuir an gnìomh pasgan comais bhon chlàr.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Ceasnaich clàr nan comasan gus am plugin as fheàrr a lorg airson cùis-cleachdaidh a chaidh a mhìneachadh agus, ma thogras tu, stàlaich e.
 

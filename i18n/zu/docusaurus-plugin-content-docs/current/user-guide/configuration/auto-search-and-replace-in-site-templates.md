@@ -3,7 +3,7 @@ title: Ukusesha nokushintsha okuzenzakalelayo Kuzifanekiso Zamasayithi
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Ukusesha Nokushintsha Okuzenzakalelayo Kuma-template Esayithi (v2)
+# Ukusesha Nokushintsha Okuzenzakalelayo Kuma-template Esayithi (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Lesi sifundo sidinga i-WP UItimo inguqulo 2.x.**_
 
@@ -17,7 +17,7 @@ Ikhasimende lakho lizokwazi ukugcwalisa leyo nkambu ngesikhathi sokubhalisa.
 
 I-Ultimate Multisite izobe isishintsha izibambi-ndawo ngedatha enikezwe ikhasimende ngokuzenzakalelayo.
 
-## **Ukuxazulula inkinga ye-"template egcwele izibambi-ndawo"**
+## **Ukuxazulula inkinga ye-"template egcwele izibambi-ndawo"** {#solving-the-template-full-of-placeholders-problem}
 
 Konke lokho kuhle, kodwa siyahlangabezana nenkinga embi: manje ama-template ethu amasayithi - angavakashelwa amakhasimende ethu - agcwele izibambi-ndawo ezimbi ezingasho lutho oluningi.
 

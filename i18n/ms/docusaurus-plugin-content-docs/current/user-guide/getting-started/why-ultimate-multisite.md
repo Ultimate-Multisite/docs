@@ -3,11 +3,11 @@ title: Kenapa Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Mengapa Ultimate Multisite
+# Mengapa Ultimate Multisite {#why-ultimate-multisite}
 
 Jika anda terjumpa artikel ini, mungkin anda sudah dengar yang plugin kami boleh menjadi penyelesaian untuk merealisasikan idea perniagaan anda. Kami harap anda akan mendapat jawapan yang diperlukan selepas membaca artikel ini.
 
-## Apa itu Ultimate Multisite?
+## Apa itu Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite ialah plugin WordPress Multisite yang membolehkan anda menawarkan WaaS (Website as a Service atau Laman Web sebagai Perkhidmatan) kepada pelanggan. Dengan plugin kami, anda boleh mempunyai pelbagai peringkat langganan dan pelanggan akan membayar yuran berulang untuk memiliki laman web yang dihoskan dalam rangkaian Multisite anda.
 
@@ -15,7 +15,7 @@ Ultimate Multisite membolehkan anda menerima bayaran melalui pelbagai gateway (s
 
 Dan ini baru permulaan kerana anda boleh mengembangkan fungsinya dengan add-on dan webhook.
 
-## Ciri-ciri lain
+## Ciri-ciri lain {#other-features}
 
 Ultimate Multisite juga menawarkan:
 
@@ -33,11 +33,11 @@ Dan ciri-ciri yang lebih canggih:
 
   * Search and Replace API: Anda juga boleh menandakan templat laman web dengan placeholder seperti {{site_name}} dan menggunakan Search and Replace API untuk mengisi placeholder tersebut secara automatik dengan maklumat yang diberikan oleh pelanggan anda sejurus selepas pendaftaran.
 
-## Kes penggunaan
+## Kes penggunaan {#use-cases}
 
 Sekarang mari kita lihat beberapa kes penggunaan yang mungkin untuk Ultimate Multisite.
 
-### Kes 1: Agensi
+### Kes 1: Agensi {#case-1-an-agency}
 
 Lazimnya, kemahiran teras sesebuah agensi terletak pada reka bentuk laman web dengan aspek seperti hosting atau pemasaran disenaraikan sebagai perkhidmatan tambahan.
 
@@ -47,7 +47,7 @@ Kawalan ketat ke atas plugin dan tema dikekalkan berdasarkan setiap produk melal
 
 Agensi akan berasa tenang dengan Ultimate Multisite yang membolehkan mereka melakukan apa yang terbaik mereka lakukan - mereka bentuk laman web yang luar biasa.
 
-### Kes 2: Penyedia Niche
+### Kes 2: Penyedia Niche {#case-2-niche-provider}
 
 Ada pepatah lama yang mengatakan, "Buat satu perkara dan buat dengan baik". Bagi ramai pakar, ini bermaksud mencipta produk atau perkhidmatan berdasarkan satu idea teras.
 
@@ -57,7 +57,7 @@ Salah satu ciri inovatif Ultimate Multisite, templat laman web ialah laman web d
 
 Untuk penyedia laman web dan perkhidmatan niche, ini memberikan kelebihan yang tiada tandingan dalam keupayaan untuk mencipta laman web yang sedia digunakan dengan plugin dan reka bentuk tersuai secara serta-merta. Pelanggan hanya perlu memberikan input minimum untuk melengkapkan perkhidmatan.
 
-### Kes 3: Hosting Web WordPress
+### Kes 3: Hosting Web WordPress {#case-3-wordpress-web-hosting}
 
 Terdapat pelbagai cara untuk mengehoskan laman web WordPress tetapi jarang sekali ia semudah menyediakan ruang web kepada pelanggan dengan versi WordPress yang telah diprapasang. Ini kerana beberapa keputusan dan pertimbangan perlu digabungkan untuk menyediakan perkhidmatan yang bermakna.
 

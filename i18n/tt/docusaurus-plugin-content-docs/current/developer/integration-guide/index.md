@@ -3,13 +3,13 @@ title: Интеграция кулланмасы
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Интеграция кулланмасы
+# Интеграция кулланмасы {#integration-guide}
 
 Бу кулланма Ultimate Multisite белән киң таралган интеграция үрнәкләрен, шул исәптән тышкы хезмәтләргә тоташуны, махсус түләү gatewayларын төзүне һәм webhookларны эшкәртүне колачлый.
 
 Аерымланган tenant инфраструктурасы өчен, sovereign tenant башлангыч көйләү, миграцияне тикшерү, SSO һәм бетерү буенча күрсәтмәләр өчен [Multi-Tenancy Integration](./multi-tenancy) карагыз.
 
-## CRM интеграциясе
+## CRM интеграциясе {#crm-integration}
 
 Яңа клиентлар теркәлгәндә, клиент мәгълүматларын CRMга синхронлаштырыгыз:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Аналитика интеграциясе
+## Аналитика интеграциясе {#analytics-integration}
 
 Клиентның яшәү циклы буенча төп бизнес вакыйгаларын күзәтегез:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Киләсе адымнар
+## Киләсе адымнар {#next-steps}
 
 - [Махсус Gateway эшләү](./custom-gateway) — Үзегезнең түләү gatewayгызны төзегез
 - [Webhookларны эшкәртү](./webhooks) — Махсус webhook endpointларын булдырыгыз

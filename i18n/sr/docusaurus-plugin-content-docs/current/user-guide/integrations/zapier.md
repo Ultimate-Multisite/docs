@@ -3,7 +3,7 @@ title: Integracija Zapiera
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integracija Ultimate Multisite sa Zapierom
+# Integracija Ultimate Multisite sa Zapierom {#integrating-ultimate-multisite-with-zapier}
 
 U jednom članku razgovarali smo o [Webhooks](webhooks.md) i kako se mogu koristiti za integraciju sa aplikacijama treće strane.
 
@@ -15,7 +15,7 @@ Možete kreirati **Triggere** koji će se aktivirati kada se dešavaju događaji
 
 Ovo je moguće jer su **Ultimate Multisite Zapier triggere** i akcije pokretani [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kako početi
+## Kako početi {#how-to-start}
 
 Prvo, potražite Ultimate Multisite u listi aplikacija Zapiera. Alternativno, možete kliknuti na [ovaj link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ U polju URL unesite punu URL adresu vaše mreže, uključujući protokol (HTTP i
 
 Kliknite na dugme **Yes, Continue** (Da, Nastavi) da pređete na sledeći korak. Ako sve prođe kako treba, dočekati će vas vaš novi povezani nalog! Kliknite na **Continue** (Nastavi) da kreirate novi trigger.
 
-## Kako kreirati novi Trigger
+## Kako kreirati novi Trigger {#how-to-create-a-new-trigger}
 
 Sada kada je vaš nalog povezan, možete videti dostupne događaje. Za ovaj tutorial ćemo izabrati događaj **payment_received**.
 
@@ -67,7 +67,7 @@ U ovoj fazi, Zapier će testirati da li vaš Zap može **da dohvati specifični 
 
 U našem tutorijalu test je uspešno završen i vratio primer informacije o podacima (payload). Ove informacije će nam biti korisne dok kreiramo akcije. Vaš trigger je sada kreiran i spreman za povezivanje sa drugim aplikacijama.
 
-## Kako kreirati Actions
+## Kako kreirati Actions {#how-to-create-actions}
 
 Actions koriste informacije iz drugih trigger-a da bi napravili nove unose u vašu mrežu.
 
@@ -79,7 +79,7 @@ U sledećem koraku ćete ili kreirati svoju autentifikaciju, baš kao što smo r
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Podešavanje akcije (Setting up the Action)
+### Podešavanje akcije (Setting up the Action) {#setting-up-the-action}
 
 Ovo je **glavni korak akcije** i ovde stvari su malo drugačije. Prva informacija koju ćete izabrati je **Item**. Item je **model informacija** vaše mreže, kao što su **Customers (Klijenti), Payments (Plaćanja), Sites (Sajtovi), Emails (E-mailovi)** i drugi.
 

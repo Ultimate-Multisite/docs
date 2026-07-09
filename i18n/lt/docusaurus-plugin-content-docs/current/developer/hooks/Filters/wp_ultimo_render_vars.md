@@ -4,11 +4,11 @@ title: Filtras - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filtras: wp_ultimo_render_vars
+# Filtras: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Leidžia plugin kūrėjams globaliai pridėti papildomą kintamąjį į render kontekstą.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Pavadinimas | Tipas | Aprašymas |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Leidžia plugin kūrėjams globaliai pridėti papildomą kintamąjį į render k
 | $view | `string` | Rodinio, kuris bus renderinamas, pavadinimas. |
 | $default_view | `string` | fallback_view pavadinimas |
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) 31 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}

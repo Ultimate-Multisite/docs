@@ -3,13 +3,13 @@ title: Ödəniş almaq
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ödənişlərin alınması (v2)
+# Ödənişlərin alınması (v2) {#getting-paid-v2}
 
 _**VACİB QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
 Ultimate Multisite daxili üzvlük və hesablaşma sisteminə malikdir. Hesablaşma sistemimizin işləməsi üçün e-ticarətdə istifadə olunan ən yayğın ödəniş keçidlərini inteqrasiya etmişik. Ultimate Multisite-də standart ödəniş keçidləri _Stripe_ , _PayPal_ və Manual Payment-dir. Müvafiq əlavələrini quraşdıraraq ödənişləri qəbul etmək üçün _WooCommerce_ , _GoCardless_ və _Payfast_ da istifadə edə bilərsiniz.
 
-## Əsas parametrlər
+## Əsas parametrlər {#basic-settings}
 
 Bu ödəniş keçidlərindən hər hansı birini Ultimate Multisite ödəniş parametrləri altında konfiqurasiya edə bilərsiniz. Bunu **Ultimate Multisite menyusu > Settings > Payments** bölməsinə keçərək tapa bilərsiniz.
 
@@ -39,7 +39,7 @@ Bu, keçid yalnız birdəfəlik ödənişləri toplaya bildiyi halda üzvlüyün
 
 <!-- Ekran görüntüsü mövcud deyil: Sequential Number seçildikdə göstərilən növbəti faktura nömrəsi və faktura nömrəsi prefiksi sahələri -->
 
-## Keçidləri harada tapmaq olar:
+## Keçidləri harada tapmaq olar: {#where-to-find-the-gateways}
 
 Ödəniş keçidlərini eyni səhifədə qura bilərsiniz ( **Ultimate Multisite > Settings > Payments**). **aktiv ödəniş keçidləri** bölməsinin dərhal altında bunları görə biləcəksiniz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ və _Manual_.
 
@@ -67,7 +67,7 @@ Hər ödəniş keçidi üçün onun qurulması addımlarında sizə bələdçili
 
 İndi, ödəniş keçidiniz kimi _WooCommerce_ , _GoCardless_ və ya _Payfast_ istifadə etmək istəyirsinizsə, onların **əlavələrini quraşdırmalı və konfiqurasiya etməlisiniz**.
 
-### WooCommerce əlavəsini necə quraşdırmaq olar:
+### WooCommerce əlavəsini necə quraşdırmaq olar: {#how-to-install-the-woocommerce-add-on}
 
 Biz başa düşürük ki, _Stripe_ və _PayPal_ bəzi ölkələrdə mövcud deyil və bu, Ultimate Multisite istifadəçilərinin plugin-imizi effektiv şəkildə istifadə etməsini məhdudlaşdırır və ya çətinləşdirir. Buna görə də çox populyar e-ticarət plugin-i olan _WooCommerce,_ inteqrasiya etmək üçün əlavə yaratdıq. Dünyanın müxtəlif yerlərindəki tərtibatçılar ona fərqli ödəniş keçidlərini inteqrasiya etmək üçün əlavələr yaratdılar. Ultimate Multisite hesablaşma sistemi ilə istifadə edə biləcəyiniz ödəniş keçidlərini genişləndirmək üçün bundan yararlandıq.
 
@@ -95,7 +95,7 @@ Onu aktivləşdirdikdən sonra, əgər vebsaytınızda WooCommerce qoşması hə
 
 WooCommerce Integration əlavəsi haqqında daha çox oxumaq üçün **buraya klikləyin**.
 
-### GoCardless əlavəsini necə quraşdırmaq olar:
+### GoCardless əlavəsini necə quraşdırmaq olar: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_ əlavəsini quraşdırmaq üçün addımlar _WooCommerce_ əlavəsi ilə demək olar ki, eynidir. Zəhmət olmasa əlavələr səhifəsinə keçin və **Ultimate Multisite: GoCardless Gateway** əlavəsini seçin.
 
@@ -111,7 +111,7 @@ Quraşdırma tamamlandıqdan sonra qoşmalar səhifəsinə yönləndiriləcəksi
 
 _GoCardless_ ödəniş keçidi ilə necə başlamağı öyrənmək üçün **bu məqaləni oxuyun**.
 
-### Payfast əlavəsini necə quraşdırmaq olar:
+### Payfast əlavəsini necə quraşdırmaq olar: {#how-to-install-the-payfast-add-on}
 
 Əlavələr səhifəsinə keçin və **Ultimate Multisite: Payfast Gateway** əlavəsini seçin.
 

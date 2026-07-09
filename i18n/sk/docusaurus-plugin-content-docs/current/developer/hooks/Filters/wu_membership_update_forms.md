@@ -4,16 +4,16 @@ title: Filter - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Filter: wu_membership_update_forms
+# Filter: wu_membership_update_forms {#filter-wumembershipupdateforms}
 
 Umožňuje vývojárom pridať nové slugy aktualizačných formulárov.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
 | $slugs | `array` | zoznam slugov formulárov, ktoré sa majú obísť. |
 
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/ui/class-checkout-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-checkout-element.php#L709) na riadku 709

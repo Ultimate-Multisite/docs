@@ -3,7 +3,7 @@ title: GoCardless өөрчлөлтийн бүртгэл
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless өөрчлөлтийн бүртгэл
+# GoCardless өөрчлөлтийн бүртгэл {#gocardless-changelog}
 
 Хувилбар: 1.0.3 - 2026-05-05-нд гарсан
 * Засвар: GoCardless membership хүлээгдэж буй эсвэл түр зогсоосон төлөвт байх үед цуцлагдвал эзэнгүй хүлээгдэж буй сайтууд одоо цэвэрлэгдэнэ

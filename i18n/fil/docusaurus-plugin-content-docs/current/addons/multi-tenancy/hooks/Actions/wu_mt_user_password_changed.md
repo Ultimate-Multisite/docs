@@ -4,20 +4,20 @@ title: Aksyon - wu_mt_user_password_changed
 sidebar_label: wu_mt_user_password_changed
 _i18n_hash: 51406eea33adf293ae1d6fa7da6563e7
 ---
-# Action: wu_mt_user_password_changed
+# Action: wu_mt_user_password_changed {#action-wumtuserpasswordchanged}
 
 Ito ay isang action na tumatakbo kapag nagbago ang password ng isang user.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Name | Type | Deskripsyon |
 |------|------|-------------|
 | $user_id | `int` | User ID. |
 
-### Simula pa noong
+### Simula pa noong {#since}
 
 - 1.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 - Defined in [`inc/users/class-network-user-sync.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/users/class-network-user-sync.php#L254) at line 254
 - Defined in [`inc/users/class-network-user-sync.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/users/class-network-user-sync.php#L275) at line 275

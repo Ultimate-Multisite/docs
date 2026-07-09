@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# Kaihanga Pae AI
+# Kaihanga Pae AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Ngā Whakaritenga
+## Ngā Whakaritenga {#requirements}
 
 - WordPress 5.3, teitei ake rānei
 - PHP 7.4, teitei ake rānei
 - Multisite Ultimate plugin (hohe)
 
-## Tāutanga
+## Tāutanga {#installation}
 
 1. Tukuna ake ngā kōnae tāpiritanga ki tō whaiaronga `/wp-content/plugins/`
 2. Whakahohea te plugin mā te tahua 'Plugins' i WordPress
 3. Whirihorahia ngā tautuhinga tāpiritanga i te kaiwhakahaere whatunga
 
-## Whakawhanaketanga
+## Whakawhanaketanga {#development}
 
-### Whakatakotoranga
+### Whakatakotoranga {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Hanganga Kaupapa
+### Hanganga Kaupapa {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Ngā ture whakahou waehere
 ```
 
-### Whakamātautau
+### Whakamātautau {#testing}
 
 Kei roto i te tāpiritanga tētahi anga whakamātautau matawhānui:
 
@@ -79,44 +79,44 @@ Kei roto i te tāpiritanga tētahi anga whakamātautau matawhānui:
 - **Kapi Whakamātautau**: Kua whirihorahia kia aroturuki i te kapi waehere
 - **Whakamātautau Multisite**: Ka rere ngā whakamātautau i te taiao multisite
 
-### Ngā Paerewa Waehere
+### Ngā Paerewa Waehere {#code-standards}
 
 - **Ngā Paerewa Tuhi Waehere WordPress**: Ka whakaūngia mā PHPCS
 - **Hototahitanga PHP 7.4+**: Ka tautokona ngā āhuatanga PHP hou
 - **Tātari Pateko**: Whakaurunga PHPStan mō te arowhai momo
 - **Whakahou Waehere**: Ngā ture Rector mō ngā whakahoutanga PHP
 
-### Pūnaha Hanga
+### Pūnaha Hanga {#build-system}
 
 - **Tukatuka Rawa**: Whakaiti mō ngā kōnae CSS/JS
 - **Whakamāoritanga**: Waihanga kōnae POT
 - **Whakapōkai**: Waihanga pūranga mō te tohatoha
 - **Aratau Whakawhanaketanga**: Ngā rawa kāore anō kia whakaitihia mō te patuiro
 
-## Whirihoranga
+## Whirihoranga {#configuration}
 
 Ka tautoko te tāpiritanga i ngā kōwhiringa whirihoranga rerekē e wātea ana mā te atanga kaiwhakahaere whatunga.
 
-## Ngā Hooks me ngā Filters
+## Ngā Hooks me ngā Filters {#hooks-and-filters}
 
-### Ngā Actions
+### Ngā Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Ka whakakāngia i muri i te arawhiti tāpiritanga
 - `ultimate-multisite-ai-site-builder_loaded` - Ka whakakāngia i muri i te utaina o ngā kōnae tāpiritanga katoa
 
-### Ngā Filters
+### Ngā Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Whakarerekē i ngā tautuhinga tāpiritanga
 - `ultimate-multisite-ai-site-builder_enabled` - Tāmia te tūnga whakahohe/whakakore o te tāpiritanga
 
-## Raihana
+## Raihana {#license}
 
 Kua raihanatia tēnei tāpiritanga i raro i te GPL v3, i tētahi putanga o muri mai rānei.
 
-## Tautoko
+## Tautoko {#support}
 
 Mō te tautoko me ngā tuhinga, toro atu ki [MultisiteUltimate.com](https://multisiteultimate.com)
-## Rangitaki Panoni
+## Rangitaki Panoni {#changelog}
 
 - Putanga 1.0.1 (2025-09-28): whakaingoa anō i te prefix ki ultimate-multisite; whakahou i te text domain; whakapikinga putanga.
 

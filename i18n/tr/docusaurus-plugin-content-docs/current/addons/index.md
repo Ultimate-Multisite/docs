@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Eklentileri
+# Ultimate Multisite Eklentileri {#ultimate-multisite-addons}
 
 Eklentiler, Ultimate Multisite'ı ek özellikler ve entegrasyonlarla genişletir. Çoğu eklenti ücretlidir ve [ultimatemultisite.com](https://ultimatemultisite.com)'dan satın alınabilir.
 
-## Kurulum
+## Kurulum {#installation}
 
 Eklentiler iki farklı yolla kurulabilir:
 
 1. **Eklenti Sayfası Üzerinden** -- WordPress yöneticisinde (admin) sitenizin eklenti yönetimi sayfasına gidin.
 2. **Manuel İndirme** -- [hesabınızdan](https://ultimatemultisite.com/my-account/downloads/) indirin ve Eklentiler > Yeni Ekle yoluyla yükleyin.
 
-## Mevcut Eklentiler
+## Mevcut Eklentiler {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

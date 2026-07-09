@@ -3,15 +3,15 @@ title: Liisaska Cuntada ee Martigelinta
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu-yada Martigelinta
+# Menu-yada Martigelinta {#hospitality-menus}
 
 Astaanta **Menu-yada Martigelinta** waxay Theme Builder u oggolaanaysaa inuu abuuro oo si toos ah ugu dhex-daro bogag menu cunto iyo cabitaan oo qaabaysan gudaha WordPress site-kaaga.
 
-## Dulmar
+## Dulmar {#overview}
 
 Theme Builder hadda wuxuu abuuri karaa bogag menu xirfad leh oo qaabaysan oo loogu talagalay ganacsiyada martigelinta, oo ay ku jiraan makhaayado, kafateeriyo, baarar, iyo adeegyada cunto-karinta munaasabadaha. Menu-yadani si buuxda ayay ugu dhex milmaan naqshadda site-kaaga, waxaana si fudud loo cusboonaysiin karaa loona maamuli karaa.
 
-## Noocyada Martigelinta ee La Taageero
+## Noocyada Martigelinta ee La Taageero {#supported-hospitality-types}
 
 - **Makhaayado** — menu-yada cunto ee adeeg buuxa
 - **Kafateeriyo** — menu-yada kafeega iyo cunto fudud
@@ -21,9 +21,9 @@ Theme Builder hadda wuxuu abuuri karaa bogag menu xirfad leh oo qaabaysan oo loo
 - **Baabuurta Cuntada** — menu-yada adeegga cuntada guurguura
 - **Warshadaha Biirka iyo Khamriga** — menu-yada cabitaannada oo leh sharraxaado
 
-## Qaab-dhismeedka Menu-ga
+## Qaab-dhismeedka Menu-ga {#menu-structure}
 
-### Qaybaha Menu-ga
+### Qaybaha Menu-ga {#menu-categories}
 
 Menu-yada waxaa loo habeeyaa qaybo:
 
@@ -34,7 +34,7 @@ Menu-yada waxaa loo habeeyaa qaybo:
 - **Cabitaannada** — cabitaanno (khamri leh iyo kuwo aan khamri lahayn)
 - **Gaarka ah** — waxyaabo gaar ah oo maalinle ah ama xilliyeed
 
-### Qaabka Shayga Menu-ga
+### Qaabka Shayga Menu-ga {#menu-item-format}
 
 Shay kasta oo menu ah wuxuu ka kooban yahay:
 
@@ -49,7 +49,7 @@ Shay kasta oo menu ah wuxuu ka kooban yahay:
 }
 ```
 
-#### Goobaha Shayga
+#### Goobaha Shayga {#item-fields}
 
 | Goob | Nooc | Sharraxaad |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Shay kasta oo menu ah wuxuu ka kooban yahay:
 | `allergens` | array | Waxyaabaha caamka ah ee xasaasiyadda keena (Nuts, Shellfish, iwm.) |
 | `availability` | string | Goorta la heli karo (Daily, Seasonal, iwm.) |
 
-## Abuurista Menu-yada Martigelinta
+## Abuurista Menu-yada Martigelinta {#creating-hospitality-menus}
 
-### Tallaabada 1: Bixi Macluumaadka Menu-ga
+### Tallaabada 1: Bixi Macluumaadka Menu-ga {#step-1-provide-menu-information}
 
 U sheeg Theme Builder waxa ku saabsan menu-gaaga:
 
@@ -71,7 +71,7 @@ Abuur menu makhaayad oo loogu talagalay makhaayaddayda Talyaaniga oo leh cunnooy
 saxanno baasto ah, cuntooyinka waaweyn, iyo macmacaan. Ku dar qiimayaal iyo sharraxaado.
 ```
 
-### Tallaabada 2: Theme Builder Wuxuu Abuuraa Menu
+### Tallaabada 2: Theme Builder Wuxuu Abuuraa Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Wuxuu qaabeeyaa qiimayaasha iyo sharraxaadaha
 5. Wuxuu ku daraa macluumaadka cunto iyo xasaasiyadeed
 
-### Tallaabada 3: Dib u eeg oo Habee
+### Tallaabada 3: Dib u eeg oo Habee {#step-3-review-and-customize}
 
 Waad awooddaa:
 
@@ -91,9 +91,9 @@ Waad awooddaa:
 4. Inaad cusboonaysiiso sharraxaadaha iyo macluumaadka cunto
 5. Inaad hagaajiso qaabka muuqaalka iyo layout-ka
 
-## Ikhtiyaarrada Muujinta Menu-ga
+## Ikhtiyaarrada Muujinta Menu-ga {#menu-display-options}
 
-### Bog Menu Buuxa
+### Bog Menu Buuxa {#full-menu-page}
 
 Bog gooni ah oo soo bandhigaya menu-gaaga dhammeystiran:
 
@@ -102,7 +102,7 @@ Bog gooni ah oo soo bandhigaya menu-gaaga dhammeystiran:
 - Layout ku habboon daabacaad
 - Naqshad mobile-responsive ah
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Ku dhex-dar qaybaha menu-ga bogag kale:
 
@@ -111,7 +111,7 @@ Ku dhex-dar qaybaha menu-ga bogag kale:
 - Menu-ga cabitaannada ee bogga baarka
 - Bandhigga macmacaanka ee footer-ka
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Abuur menu PDF ah oo la soo dejisan karo:
 
@@ -120,9 +120,9 @@ Abuur menu PDF ah oo la soo dejisan karo:
 - Waxaa ku jira sawirro iyo sharraxaado
 - Si fudud ayaa loo wadaagi karaa loona email-garayn karaa
 
-## Macluumaadka Cunto iyo Xasaasiyadeed
+## Macluumaadka Cunto iyo Xasaasiyadeed {#dietary-and-allergen-information}
 
-### Sifooyinka Cunto
+### Sifooyinka Cunto {#dietary-attributes}
 
 Ku calaamadee shayada macluumaadka cunto:
 
@@ -134,7 +134,7 @@ Ku calaamadee shayada macluumaadka cunto:
 - **Low-Carb** — karbohaydraytyo la dhimay
 - **High-Protein** — borotiin badan leh
 
-### Digniinaha Xasaasiyadda
+### Digniinaha Xasaasiyadda {#allergen-warnings}
 
 Ku dar waxyaabaha caamka ah ee xasaasiyadda keena:
 
@@ -147,9 +147,9 @@ Ku dar waxyaabaha caamka ah ee xasaasiyadda keena:
 - **Gluten** — qamadi iyo badarro gluten leh
 - **Sesame** — iniin sisin iyo saliid
 
-## Maamulka Menu-ga
+## Maamulka Menu-ga {#menu-management}
 
-### Cusboonaysiinta Qiimayaasha
+### Cusboonaysiinta Qiimayaasha {#updating-prices}
 
 Si fudud u cusboonaysii qiimayaasha menu-ga:
 
@@ -159,7 +159,7 @@ Si fudud u cusboonaysii qiimayaasha menu-ga:
 4. Kaydi isbeddellada
 5. Isbeddelladu isla markiiba waxay ka muuqdaan site-kaaga
 
-### Ku Darista Shayada Xilliyeed
+### Ku Darista Shayada Xilliyeed {#adding-seasonal-items}
 
 Abuur kala-duwanaansho menu oo xilliyeed:
 
@@ -169,7 +169,7 @@ Abuur kala-duwanaansho menu oo xilliyeed:
 4. Jadwal u samee taariikhaha helitaanka
 5. Si otomaatig ah u soo bandhig inta lagu jiro xilliga
 
-### Maareynta Waxyaabaha Gaarka ah
+### Maareynta Waxyaabaha Gaarka ah {#managing-specials}
 
 Soo bandhig waxyaabo gaar ah oo maalinle ah ama toddobaadle ah:
 
@@ -179,7 +179,7 @@ Soo bandhig waxyaabo gaar ah oo maalinle ah ama toddobaadle ah:
 4. Cusboonaysii maalin kasta ama toddobaad kasta
 5. Kaydi waxyaabihii gaarka ahaa ee hore
 
-## Isdhexgalka Theme Builder
+## Isdhexgalka Theme Builder {#integration-with-theme-builder}
 
 Markaad Theme Builder u isticmaalayso site-yada martigelinta:
 
@@ -189,9 +189,9 @@ Markaad Theme Builder u isticmaalayso site-yada martigelinta:
 4. **Hagaajinta mobile-ka** — menu-yadu si qurux badan ayay uga muuqdaan taleefannada
 5. **Hagaajinta SEO** — menu-yadu waa kuwo u fiican matoorada raadinta
 
-## Hab-dhaqannada Ugu Fiican
+## Hab-dhaqannada Ugu Fiican {#best-practices}
 
-### Naqshadda Menu-ga
+### Naqshadda Menu-ga {#menu-design}
 
 - **Habaynta cad** — qaab-dhismeed qaybo oo macquul ah
 - **Sharraxaado la akhrin karo** — rabitaanka cuntada kiciya oo xog leh
@@ -199,7 +199,7 @@ Markaad Theme Builder u isticmaalayso site-yada martigelinta:
 - **Sawirro xirfad leh** — sawirro cunto oo tayo sare leh
 - **Meel bannaan** — ha buux-dhaafin bogga
 
-### Nuxurka
+### Nuxurka {#content}
 
 - **Sharraxaado sax ah** — si sax ah u sharrax shayada
 - **Muuji waxyaabaha gaarka ah** — ka dhig waxyaabaha gaarka ah kuwo soo baxa
@@ -207,7 +207,7 @@ Markaad Theme Builder u isticmaalayso site-yada martigelinta:
 - **Si joogto ah u cusboonaysii** — qiimayaasha iyo shayada ha ahaadaan kuwo hadda jira
 - **Adeegso luqad rabitaanka cuntada kicisa** — ka dhig shayada inay u muuqdaan kuwo macaan
 
-### Helitaan
+### Helitaan {#accessibility}
 
 - **Far la akhrin karo** — isticmaal noocyo far oo cad oo si fudud loo akhrin karo
 - **Isbarbardhig ku filan** — hubi in qoraalka la akhrin karo
@@ -215,9 +215,9 @@ Markaad Theme Builder u isticmaalayso site-yada martigelinta:
 - **Digniinaha xasaasiyadda** — si muuqata u soo bandhig waxyaabaha xasaasiyadda keena
 - **Mobile-friendly** — ku tijaabi dhammaan qalabka
 
-## Tusaalooyin
+## Tusaalooyin {#examples}
 
-### Qaab-dhismeedka Menu-ga Makhaayadda
+### Qaab-dhismeedka Menu-ga Makhaayadda {#restaurant-menu-structure}
 
 ```
 Cunto-furayaal
@@ -241,7 +241,7 @@ Macmacaan
 └── Xulashada Gelato
 ```
 
-### Qaab-dhismeedka Menu-ga Cafe
+### Qaab-dhismeedka Menu-ga Cafe {#cafe-menu-structure}
 
 ```
 Qaxwo
@@ -260,7 +260,7 @@ Sandwich-yo
 └── Duub Khudradeed
 ```
 
-## Astaamo La Xiriira
+## Astaamo La Xiriira {#related-features}
 
 - [Abuur Menu](../abilities/create-menu.md) — abuur menu-yada hagidda
 - [Jihada Naqshadeynta](./design-direction.md) — habee naqshadda boggaaga

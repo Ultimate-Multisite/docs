@@ -3,17 +3,17 @@ title: Icyerekezo cy’Igishushanyo mbonera
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Icyerekezo cy’Igishushanyo
+# Icyerekezo cy’Igishushanyo {#design-direction}
 
 Intambwe ya **Design Direction** igufasha gusuzuma, kunoza, no kwemeza burundu igishushanyo kigaragara cya theme yawe mbere y’uko Theme Builder itanga theme yuzuye.
 
-## Incamake
+## Incamake {#overview}
 
 Nyuma yo kurangiza Discovery Interview, Theme Builder yerekana icyerekezo cy’igishushanyo cyawe hamwe na **desktop na mobile preview rendering**. Ibi bigufasha kubona neza uko igishushanyo cyawe kizagaragara ku bikoresho bitandukanye mbere yo kwemeza theme.
 
-## Ibigize Design Direction
+## Ibigize Design Direction {#design-direction-components}
 
-### 1. Urutonde rw’Amabara
+### 1. Urutonde rw’Amabara {#1-color-palette}
 
 Imiterere y’amabara ya theme yawe, harimo:
 
@@ -23,7 +23,7 @@ Imiterere y’amabara ya theme yawe, harimo:
 - **Amabara atabogamye** — amabara y’imvi n’ay’umweru akoreshwa ku mbuganyuma no ku nyandiko
 - **Ibara ry’inyandiko** — ibara ry’ibanze ry’inyandiko rituma isomeka neza
 
-### 2. Imyandikire
+### 2. Imyandikire {#2-typography}
 
 Guhitamo imyandikire ya:
 
@@ -33,14 +33,14 @@ Guhitamo imyandikire ya:
 - **Uburebure bw’imirongo** — intera hagati y’imirongo kugira ngo bisomeke neza
 - **Uburemere bw’imyandikire** — uburyo bunini, busanzwe, n’ubworoshye
 
-### 3. Imiterere n’Intera
+### 3. Imiterere n’Intera {#3-layout-and-spacing}
 
 - **Ubugari bwa kontineri** — ubugari ntarengwa bw’ibirimo
 - **Padding na margins** — intera ikikije ibintu
 - **Sisitemu ya grid** — imiterere y’inkingi ku gishushanyo gihinduka bitewe n’igikoresho
 - **Intera y’ibice** — intera hagati y’ibintu bya UI
 
-### 4. Ibintu Bigaragara
+### 4. Ibintu Bigaragara {#4-visual-elements}
 
 - **Imisusire ya buto** — ibishushanyo bya buto z’ibanze, iza kabiri, n’iza gatatu
 - **Ibishushanyo bya card** — imiterere y’amablock y’ibirimo
@@ -48,9 +48,9 @@ Guhitamo imyandikire ya:
 - **Imipaka n’ibicucu** — ubujyakuzimu bugaragara butoroheje
 - **Ingaruka za hover** — imisusire y’imiterere y’imikoranire
 
-## Preview Rendering
+## Preview Rendering {#preview-rendering}
 
-### Desktop Preview
+### Desktop Preview {#desktop-preview}
 
 Desktop preview yerekana igishushanyo cyawe ku bugari bwuzuye (akenshi 1200px cyangwa burenze):
 
@@ -59,7 +59,7 @@ Desktop preview yerekana igishushanyo cyawe ku bugari bwuzuye (akenshi 1200px cy
 - Imyandikire minini n’intera
 - Ibintu byose bigaragara ku ngano yuzuye
 
-### Mobile Preview
+### Mobile Preview {#mobile-preview}
 
 Mobile preview yerekana igishushanyo cyawe ku bugari bwa mobile (akenshi 375px):
 
@@ -68,7 +68,7 @@ Mobile preview yerekana igishushanyo cyawe ku bugari bwa mobile (akenshi 375px):
 - Imyandikire n’intera byahinduwe
 - Ingano za buto zorohereza gukoraho
 
-### Responsive Breakpoints
+### Responsive Breakpoints {#responsive-breakpoints}
 
 Theme Builder itanga previews kuri izi breakpoints:
 
@@ -79,9 +79,9 @@ Theme Builder itanga previews kuri izi breakpoints:
 | **Desktop** | 1200px | Desktop y’ubugari bwuzuye |
 | **Desktop Nini** | 1920px | Ekrani yagutse cyane |
 
-## Kunoza Igishushanyo Cyawe
+## Kunoza Igishushanyo Cyawe {#refining-your-design}
 
-### Gukora Impinduka
+### Gukora Impinduka {#making-adjustments}
 
 Ushobora kunoza icyerekezo cy’igishushanyo cyawe ukoresheje:
 
@@ -91,7 +91,7 @@ Ushobora kunoza icyerekezo cy’igishushanyo cyawe ukoresheje:
 4. **Kuvugurura imiterere** — hindura ubugari bwa kontineri n’inkingi za grid
 5. **Kunoza ibintu** — hindura imisusire ya buto, ibishushanyo bya card, n’ibindi.
 
-### Ivugururwa rya Preview
+### Ivugururwa rya Preview {#preview-updates}
 
 Impinduka zigaragara ako kanya:
 
@@ -100,7 +100,7 @@ Impinduka zigaragara ako kanya:
 - Responsive breakpoints zose zivugururwa
 - Ushobora guhinduranya previews kugira ngo wemeze impinduka
 
-### Uburyo bwo Kugereranya
+### Uburyo bwo Kugereranya {#comparison-view}
 
 Gereranya icyerekezo cy’igishushanyo cyawe na:
 
@@ -108,7 +108,7 @@ Gereranya icyerekezo cy’igishushanyo cyawe na:
 - **Ibishushanyo by’abanywanyi** — gereranya n’imbuga zatanze igitekerezo
 - **Verisiyo zabanje** — subira ku byerekezo by’igishushanyo bya mbere
 
-## Kwemeza Design Direction
+## Kwemeza Design Direction {#design-direction-approval}
 
 Iyo umaze kunyurwa n’igishushanyo cyawe:
 
@@ -118,7 +118,7 @@ Iyo umaze kunyurwa n’igishushanyo cyawe:
 4. **Emeza imiterere** — reba intera n’itondekanya
 5. **Emeza igishushanyo** — komeza ujye ku gukora theme
 
-## Intambwe Zikurikira
+## Intambwe Zikurikira {#next-steps}
 
 Nyuma yo kwemeza icyerekezo cy’igishushanyo cyawe:
 
@@ -127,7 +127,7 @@ Nyuma yo kwemeza icyerekezo cy’igishushanyo cyawe:
 3. Ushobora gukomeza kuyitunganya ukoresheje WordPress customizer
 4. Komeza ujye kuri [Menus za Hospitality](./hospitality-menus.md) cyangwa ibindi biranga
 
-## Imikorere Myiza
+## Imikorere Myiza {#best-practices}
 
 - **Gerageza ku bikoresho nyabyo** — koresha telefoni na tablets nyazo niba bishoboka
 - **Reba isomeka** — wemeze ko inyandiko isomeka ku ngano zose
@@ -135,30 +135,30 @@ Nyuma yo kwemeza icyerekezo cy’igishushanyo cyawe:
 - **Zirikana imikorere** — optimize amashusho n’imyandikire kugira ngo byihute
 - **Teganyiriza ibirimo** — wemeze ko imiterere ikorana n’ibirimo byawe nyabyo
 
-## Gukemura Ibibazo
+## Gukemura Ibibazo {#troubleshooting}
 
-### Preview Itavugururwa
+### Preview Itavugururwa {#preview-not-updating}
 
 - Subizamo paji
 - Siba cache ya browser
 - Gerageza browser itandukanye
 - Reba ihuzanzira rya internet
 
-### Amabara Agaragara Atandukanye
+### Amabara Agaragara Atandukanye {#colors-look-different}
 
 - Reba igenamiterere ry’amabara rya monitor
 - Gerageza ku bikoresho bitandukanye
 - Emeza contrast y’amabara ukoresheje ibikoresho by’ubugerwaho
 - Tekereza ku bikoresho byigana kutabona amabara neza
 
-### Ibibazo by’Imyandikire
+### Ibibazo by’Imyandikire {#typography-issues}
 
 - Emeza ko dosiye z’imyandikire zirimo gupakirwa
 - Reba ingano y’imyandikire kuri breakpoints zitandukanye
 - Gerageza ukoresheje ibirimo nyabyo
 - Tekereza ku burebure bw’umurongo kugira ngo bisomeke neza
 
-## Inyandiko Zifitanye Isano
+## Inyandiko Zifitanye Isano {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — gukusanya amakuru y’igishushanyo
 - [Menus za Hospitality](./hospitality-menus.md) — gukora amapaji ya menu afite imiterere

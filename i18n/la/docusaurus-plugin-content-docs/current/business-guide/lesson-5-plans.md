@@ -3,15 +3,15 @@ title: 'Lectio 5: Consilia tua designare'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lectio 5: Consilia Tua Designare
+# Lectio 5: Consilia Tua Designare {#lesson-5-designing-your-plans}
 
 Gradus consiliorum tuorum non sunt tantum gradus pretii -- sunt imago modi quo clientes tui proprii revera operantur. In hac lectione designabis gradus productorum qui veris necessitatibus negotiorum exercitationis corporis in diversis statibus respondeant.
 
-## Ubi Desivimus
+## Ubi Desivimus {#where-we-left-off}
 
 FitSite tria exemplaria parata habet (Studio Essential, Gym Pro, Fitness Chain). Nunc consilia creamus quae definiunt ad quid clientes accessum habeant et quantum solvant.
 
-## De Segmentis Clientium Cogitare
+## De Segmentis Clientium Cogitare {#thinking-in-customer-segments}
 
 Error quem plerique faciunt est consilia circa proprietates technicas designare (spatium recondendi, latitudo transmissionis, numerus paginarum). Clientes tui proprii non ita cogitant. Dominus gymnasii cogitat de eo quod opus est ut negotium suum gerat.
 
@@ -25,11 +25,11 @@ Pro studiis exercitationis corporis, tria segmenta naturalia exstant:
 
 Consilia tua ad haec segmenta respondere debent, non ad fasciculos proprietatum arbitrarios.
 
-## Consilia FitSite Creare
+## Consilia FitSite Creare {#creating-the-fitsite-plans}
 
 Naviga ad **Ultimate Multisite > Producta > Adde Productum** pro quolibet consilio.
 
-### Consilium 1: FitSite Starter -- $49/mensis
+### Consilium 1: FitSite Starter -- $49/mensis {#plan-1-fitsite-starter----49month}
 
 **Scopus**: Exercitatores soli et studia parva
 
@@ -59,7 +59,7 @@ Naviga ad **Ultimate Multisite > Producta > Adde Productum** pro quolibet consil
 - Thema a te selectum: Cogere ut activetur
 - Omnia alia themata: Occulta
 
-### Consilium 2: FitSite Growth -- $99/mensis
+### Consilium 2: FitSite Growth -- $99/mensis {#plan-2-fitsite-growth----99month}
 
 **Scopus**: Gymnasia constituta unius loci
 
@@ -85,7 +85,7 @@ Naviga ad **Ultimate Multisite > Producta > Adde Productum** pro quolibet consil
 - Grex consiliorum: FitSite Plans
 - Ordo producti: 2
 
-### Consilium 3: FitSite Pro -- $199/mensis
+### Consilium 3: FitSite Pro -- $199/mensis {#plan-3-fitsite-pro----199month}
 
 **Scopus**: Catenae exercitationis corporis plurium locorum
 
@@ -109,7 +109,7 @@ Naviga ad **Ultimate Multisite > Producta > Adde Productum** pro quolibet consil
 - Grex consiliorum: FitSite Plans
 - Ordo producti: 3
 
-## Gregem Consiliorum Configurare
+## Gregem Consiliorum Configurare {#setting-up-the-plan-group}
 
 Grex consiliorum efficit ut clientes tantum intra familiam consiliorum FitSite ascendere aut descendere possint. In tabula **Ascensus et Descensus** cuiusque consilii:
 
@@ -118,7 +118,7 @@ Grex consiliorum efficit ut clientes tantum intra familiam consiliorum FitSite a
 
 Hoc iter ascensus clarum creat: Starter → Growth → Pro.
 
-## Addere Incrementa Ordinis
+## Addere Incrementa Ordinis {#adding-order-bumps}
 
 Incrementa ordinis sunt producta additicia in processu solutionis oblata. Pro FitSite, considera:
 
@@ -128,7 +128,7 @@ Incrementa ordinis sunt producta additicia in processu solutionis oblata. Pro Fi
 
 Haec crea ut producta generis **Fasciculus** in Ultimate Multisite et ea cum consiliis pertinentibus associa.
 
-## Cur Haec Structura Valeat
+## Cur Haec Structura Valeat {#why-this-structure-works}
 
 - **Starter** impedimenta ad ingressum removet -- pretium humile, oblatio simplex, exercitatores celeriter online ponit
 - **Growth** addit proprietates quas gymnasia revera petunt -- reservationes, pinacothecas, dominia propria
@@ -136,7 +136,7 @@ Haec crea ut producta generis **Fasciculus** in Ultimate Multisite et ea cum con
 - **Incrementa ordinis** sinunt clientes adaptare sine consilia principalia implicanda
 - **Iter ascensus clarum** significat clientes tecum crescere potius quam discedere
 
-## Reticulum FitSite Hactenus
+## Reticulum FitSite Hactenus {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Quid Hac Lectione Aedificavimus
+## Quid Hac Lectione Aedificavimus {#what-we-built-this-lesson}
 
 - **Tres gradus consiliorum** ad vera segmenta negotiorum exercitationis corporis relati
 - **Clausura proprietatum** utens moderationibus additamentorum et exemplarium Ultimate Multisite

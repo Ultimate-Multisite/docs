@@ -3,17 +3,17 @@ title: A Domain Mapping konfigurálása
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain-hozzárendelés konfigurálása (v2)
+# Domain-hozzárendelés konfigurálása (v2) {#how-to-configure-domain-mapping-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
 Egy prémium hálózat egyik legerősebb funkciója, hogy lehetőséget kínálhatunk ügyfeleinknek felső szintű domain csatolására a webhelyeikhez. Végül is melyik tűnik professzionálisabbnak: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) vagy [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ezért kínálja az Ultimate Multisite ezt a funkciót beépítve, harmadik féltől származó pluginek használata nélkül.
 
-## Mi az a domain-hozzárendelés?
+## Mi az a domain-hozzárendelés? {#whats-domain-mapping}
 
 Ahogy a neve is sugallja, a domain-hozzárendelés az Ultimate Multisite által kínált képesség arra, hogy fogadjon egy egyéni domainre vonatkozó kérést, és azt a kérést hozzárendelje a hálózat megfelelő webhelyéhez, amelyhez az adott domain csatolva van.
 
-### Domain-hozzárendelés beállítása az Ultimate Multisite hálózatodon
+### Domain-hozzárendelés beállítása az Ultimate Multisite hálózatodon {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 A domain-hozzárendelés működéséhez bizonyos beállításokra van szükség a részedről. Szerencsére az Ultimate Multisite automatizálja helyetted a nehéz munkát, így könnyen teljesítheted a követelményeket.
 
@@ -45,7 +45,7 @@ Mielőtt azonban elkezdenéd hozzárendelni az egyéni domaint a hálózatod egy
 
 ###
 
-### Annak ellenőrzése, hogy a domain DNS-beállításai megfelelően vannak-e konfigurálva
+### Annak ellenőrzése, hogy a domain DNS-beállításai megfelelően vannak-e konfigurálva {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Ahhoz, hogy a hozzárendelés működjön, meg kell győződnöd arról, hogy a hozzárendelni tervezett domain a hálózatod IP-címére mutat. Vedd figyelembe, hogy a hálózat IP-címére van szükséged – annak a domainnek az IP-címére, ahol az Ultimate Multisite telepítve van –, nem pedig annak az egyéni domainnek az IP-címére, amelyet hozzá szeretnél rendelni. Egy adott domain IP-címének megkereséséhez például a [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) használatát javasoljuk.
 
@@ -55,7 +55,7 @@ Ha gondod adódik a működés beállításával, **vedd fel a kapcsolatot a dom
 
 Ha azt tervezed, hogy engedélyezed ügyfeleidnek a saját domainjeik hozzárendelését, akkor ezt a részt nekik kell elvégezniük. Irányítsd őket a regisztrátoruk támogatási rendszeréhez, ha nem tudják létrehozni az A Recordot.
 
-### Egyéni domainnév hozzárendelése Super Adminként
+### Egyéni domainnév hozzárendelése Super Adminként {#mapping-custom-domain-name-as-super-admin}
 
 Amikor super adminként vagy bejelentkezve a hálózatodon, könnyedén hozzáadhatsz és kezelhetsz egyéni domainneveket az **Ultimate Multisite > Domainek** alatt.
 
@@ -93,7 +93,7 @@ Ha a domain névre kattint, megtekinthet benne néhány beállítást. Nézzük 
 
 **Is Secure?:** Bár az Ultimate Multisite ellenőrzi, hogy a domain rendelkezik-e SSL-tanúsítvánnyal, mielőtt engedélyezi, manuálisan is kiválaszthatja, hogy a domain SSL-tanúsítvánnyal vagy anélkül töltődjön be. Vegye figyelembe, hogy ha a weboldal nem rendelkezik SSL-tanúsítvánnyal, és megpróbálja SSL-lel kényszerítve betölteni, hibákat okozhat.
 
-### Egyéni domain név hozzárendelése Subsite felhasználóként
+### Egyéni domain név hozzárendelése Subsite felhasználóként {#mapping-custom-domain-name-as-subsite-user}
 
 A Subsite adminisztrátorok egyéni domain neveket is hozzárendelhetnek a subsite admin Dashboard felületükről.
 
@@ -121,7 +121,7 @@ A felhasználó ezután rákattinthat a **Next Step** lehetőségre, és folytat
 
 Az **Add Domain** gombra kattintás elindítja az egyéni domain DNS információinak ellenőrzési és lekérési folyamatát.
 
-### A Domain Syncing ismertetése
+### A Domain Syncing ismertetése {#about-domain-syncing}
 
 A Domain Syncing egy olyan folyamat, amelyben az Ultimate Multisite hozzáadja az egyéni domain nevet a tárhelyfiókjához kiegészítő domainként, **hogy a domain mapping működjön**.
 

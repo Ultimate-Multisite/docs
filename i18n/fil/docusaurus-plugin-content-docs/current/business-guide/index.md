@@ -3,13 +3,13 @@ title: Pagbuo ng Niche Website Business
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Gumawa ng Niche Website Business gamit ang Ultimate Multisite
+# Gumawa ng Niche Website Business gamit ang Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Karamihan sa mga nagtatangkang magbenta ng website ay nagpapaligsahan sa presyo laban sa Wix, Squarespace, at libu-libong freelancers. At natatalo sila. Ang mga nananalo naman ay pumipili ng isang tiyak na audience, gumagawa ng solusyon na akma sa audience na iyon, at sinisingil ang halaga ng kanilang ibinibigay.
 
 Ituturo sa iyo ng course na ito kung paano gawin iyon gamit ang Ultimate Multisite.
 
-## Ano ang Iyong Bubuo
+## Ano ang Iyong Bubuo {#what-you-will-build}
 
 Sa buong course na ito, gagawa ka ng isang tunay at gumaganang network na tinatawag na **FitSite** — isang website platform na ginawa para sa mga fitness studio, personal trainer, at may-ari ng gym.
 
@@ -23,7 +23,7 @@ Sa huling aralin, ang FitSite ay magiging isang kumpletong niche platform na may
 
 Susundan mo ang bawat hakbang, at pagkatapos mo ay magkakaroon hindi lang ng gumaganang platform kundi pati na rin ng kaalaman para maulit ang proseso para sa anumang niche na pipiliin mo.
 
-## Bakit Fitness Studios?
+## Bakit Fitness Studios? {#why-fitness-studios}
 
 Kailangan namin ng isang kongkretong halimbawa na madaling sundan ng kahit sino. Gumagana ang mga fitness studio dahil:
 
@@ -34,7 +34,7 @@ Kailangan namin ng isang kongkretong halimbawa na madaling sundan ng kahit sino.
 
 Lahat ng matututunan mo sa pagbuo ng FitSite ay direktang magagamit sa anumang niche na pipiliin mo: mga restaurant, real estate agents, law firms, simbahan, trade contractors, o anumang ibang vertical.
 
-## Istruktura ng Course
+## Istruktura ng Course {#course-structure}
 
 Ang bawat aralin ay nagpapakilala ng isang konsepto, ipinapaliwanag kung bakit ito mahalaga, at ginagabayan ka sa pag-implement nito sa FitSite network. Ang bawat aralin ay nakabatay sa nauna.
 
@@ -55,7 +55,7 @@ Ang bawat aralin ay nagpapakilala ng isang konsepto, ipinapaliwanag kung bakit i
 | [13. Scaling Up](lesson-13-growth) | Paglago mula sa unang customer patungo sa isang tunay na negosyo | FitSite growth at automation strategy |
 | [14. What Comes Next](lesson-14-whats-next) | Pagpapalawak sa katabing niches at mga bagong oportunidad | Ang iyong roadmap pagkatapos ng FitSite |
 
-## Prerequisites
+## Prerequisites {#prerequisites}
 
 - Isang WordPress Multisite installation (o kahandaang mag-set up nito)
 - Isang aktibong Ultimate Multisite license
@@ -63,6 +63,6 @@ Ang bawat aralin ay nagpapakilala ng isang konsepto, ipinapaliwanag kung bakit i
 
 Hindi kailangan ng coding. Kung hindi ka pa gumamit ng Ultimate Multisite, okay lang iyon — ang Lesson 3 ay magsisimula sa isang fresh install.
 
-## Handa Ka Na?
+## Handa Ka Na? {#ready}
 
 Magsimula sa [Lesson 1: Why Niche Wins](lesson-1-why-niche).

@@ -3,15 +3,15 @@ title: Kgokahanyo ea Sehahi sa Saete v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Tsamaiso ya Kaho ya Sebaka v2
+# Tsamaiso ya Kaho ya Sebaka v2 {#site-builder-orchestration-v2}
 
 Tsamaiso ya Kaho ya Sebaka v2 (e hlahisitsweng ho Gratis AI Agent v1.4.0) ke enjine e matlafatsang ho bopa webosaete ka mehato e mengata. Ha o kopa agent hore e "hahe webosaete ya resturante" kapa "e bope potefolio e nang le blog", orchestrator e arola sepheo seo sa boemo bo hodimo hore e be **moralo** o hlophisitsweng, e fumana di-plugin tse hlokahalang ho se phethahatsa, e phetha mohato ka mong ka tatellano, e sala morao tswelopele, mme e itokisa diphosong ka boikemelo.
 
 ---
 
-## Kamoo e Sebetsang Kateng
+## Kamoo e Sebetsang Kateng {#how-it-works}
 
-### 1. Ho Hlahisa Moralo
+### 1. Ho Hlahisa Moralo {#1-plan-generation}
 
 Ha agent e amohela taelo ya ho aha sebaka, e bitsa bokgoni ba `create_site_plan` ho hlahisa **moralo wa sebaka** wa JSON. Moralo o hlalosa:
 
@@ -61,7 +61,7 @@ Ha agent e amohela taelo ya ho aha sebaka, e bitsa bokgoni ba `create_site_plan`
 }
 ```
 
-### 2. Ho Fumana Plugin
+### 2. Ho Fumana Plugin {#2-plugin-discovery}
 
 Pele phethahatso e qala, orchestrator e sekaseka `plugin_requirements` tsa moralo mme e hlahloba hore na ke di-plugin dife tse seng di sebetsa. Bakeng sa di-plugin tse haellang, e:
 
@@ -71,7 +71,7 @@ Pele phethahatso e qala, orchestrator e sekaseka `plugin_requirements` tsa moral
 
 Ho hloleha ha ho fumana plugin ha ho fedise tshebetso — orchestrator e tshwaya mehato e amehileng e le `skipped` mme e tswela pele ka karolo e setseng ya moralo.
 
-### 3. Phethahatso ya Moralo
+### 3. Phethahatso ya Moralo {#3-plan-execution}
 
 Orchestrator e bitsa `execute_site_plan` ka ID ya moralo. Phethahatso e tswela pele mokhahlelo ka mokhahlelo, mohato ka mohato:
 
@@ -79,7 +79,7 @@ Orchestrator e bitsa `execute_site_plan` ka ID ya moralo. Phethahatso e tswela p
 - **Mehato e tsamaeang ka nako e le nngwe** — mehato e kahara mokhahlelo o le mong e se nang dikamano tsa ho ithekga e romelwa ka nako e le nngwe ha folaga ya `parallel` e setilwe.
 - **Nako ya ho felloa ke mohato** — mohato ka mong o na le nako ya wona ya ho felloa (ya kamehla: setting ya `Ability Timeout`). Mohato o felletsweng ke nako o tshwauwa `failed` mme moralo o tswela pele.
 
-### 4. Ho Sala Tswelopele Morao
+### 4. Ho Sala Tswelopele Morao {#4-progress-tracking}
 
 Bitsa `get_plan_progress` neng kapa neng ho hlahloba boemo ba phethahatso:
 
@@ -104,7 +104,7 @@ Basebedisi ba WP-CLI ba ka lekola tswelopele ka:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Ho Itokisa Diphosong
+### 5. Ho Itokisa Diphosong {#5-error-recovery}
 
 Ha mohato o hloleha, orchestrator e hlahloba mohato wa **mokgwa wa tshohanyetso** o hlalositsweng morerong:
 
@@ -115,9 +115,9 @@ Agent e tlaleha ho hloleha hohle kakaretsong ya ho qetela ya moralo mme e ka sis
 
 ---
 
-## Bokgoni ba Moralo wa Sebaka
+## Bokgoni ba Moralo wa Sebaka {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 E hlahisa moralo wa sebaka o hlophisitsweng ho tswa tlhalosong ya sepheo ka puo ya tlhaho.
 
@@ -134,7 +134,7 @@ E hlahisa moralo wa sebaka o hlophisitsweng ho tswa tlhalosong ya sepheo ka puo 
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 E qala ho phetha moralo wa sebaka o hlahisitsweng pejana.
 
@@ -150,7 +150,7 @@ E qala ho phetha moralo wa sebaka o hlahisitsweng pejana.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 E kgutlisa boemo ba hajwale ba phethahatso ya moralo wa saete.
 
@@ -164,7 +164,7 @@ E kgutlisa boemo ba hajwale ba phethahatso ya moralo wa saete.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 E rarolla ka letsoho mohato o hlolehileng mme e tsosolosa phethahatso ya moralo ho tloha mohato o latelang. Sebedisa sena ha ho hlaphoheloa ka boiketsetso ho ne ho sa kgonehe mme o batla ho kena dipakeng.
 
@@ -180,7 +180,7 @@ E rarolla ka letsoho mohato o hlolehileng mme e tsosolosa phethahatso ya moralo 
 
 ---
 
-## Ho bapisa v1 le v2
+## Ho bapisa v1 le v2 {#comparing-v1-and-v2}
 
 | Karolo | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ E rarolla ka letsoho mohato o hlolehileng mme e tsosolosa phethahatso ya moralo 
 
 ---
 
-## Ditaelo tsa moralo tsa WP-CLI
+## Ditaelo tsa moralo tsa WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 E hlahisa moralo wa saete ho tswa tlhalosong ya sepheo.
 
@@ -205,7 +205,7 @@ E hlahisa moralo wa saete ho tswa tlhalosong ya sepheo.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 E phethahatsa moralo o neng o se o hlahisitswe pele.
 
@@ -213,7 +213,7 @@ E phethahatsa moralo o neng o se o hlahisitswe pele.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 E bontsha kgatelopele ya hajwale bakeng sa moralo o ntseng o phethahatswa kapa o phethilweng.
 
@@ -221,7 +221,7 @@ E bontsha kgatelopele ya hajwale bakeng sa moralo o ntseng o phethahatswa kapa o
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 E thathamisa meralo yohle ya saete (e emetseng, e ntseng e tswela pele, le e phethilweng).
 
@@ -229,7 +229,7 @@ E thathamisa meralo yohle ya saete (e emetseng, e ntseng e tswela pele, le e phe
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 E seta botjha moralo o hlolehileng hore e be `pending` e le hore o ka phethahatswa hape ho tloha qalong.
 

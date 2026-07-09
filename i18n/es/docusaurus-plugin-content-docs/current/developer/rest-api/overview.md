@@ -3,28 +3,28 @@ title: Descripción general de la REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referencia de REST API
+# Referencia de REST API {#rest-api-reference}
 
-## Configuración base
+## Configuración base {#base-configuration}
 
 **URL base:** `{site_url}/wp-json/wu/v2/`
 **Autenticación:** clave de API y secreto (HTTP Basic Auth o parámetros de URL)
 
-## Autenticación
+## Autenticación {#authentication}
 
-### Habilitar API
+### Habilitar API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Obtener credenciales de API
+### Obtener credenciales de API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Métodos de autenticación
+### Métodos de autenticación {#authentication-methods}
 
 **HTTP Basic Auth (recomendado):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Puntos de conexión principales
+## Puntos de conexión principales {#core-endpoints}
 
-### 1. API de clientes
+### 1. API de clientes {#1-customers-api}
 
 **Ruta base:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API de sitios
+### 2. API de sitios {#2-sites-api}
 
 **Ruta base:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API de membresías
+### 3. API de membresías {#3-memberships-api}
 
 **Ruta base:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API de productos
+### 4. API de productos {#4-products-api}
 
 **Ruta base:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API de pagos
+### 5. API de pagos {#5-payments-api}
 
 **Ruta base:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API de dominios
+### 6. API de dominios {#6-domains-api}
 
 **Ruta base:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Punto de conexión de registro
+## Punto de conexión de registro {#registration-endpoint}
 
 El punto de conexión `/register` proporciona un flujo completo de checkout/registro:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Puntos de conexión de inquilino soberano
+## Puntos de conexión de inquilino soberano {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 añade cobertura REST de inquilinos soberanos para integraciones que aprovisionan, inspeccionan o verifican inquilinos aislados.
 
@@ -242,7 +242,7 @@ Las respuestas típicas de estado de migración incluyen:
 
 Trata `ready: false` como un bloqueo previo al lanzamiento. Revisa los detalles de verificación, corrige el enlace del host de la base de datos, la cola, el aprovisionamiento de usuarios o el problema de enrutamiento y, a continuación, vuelve a intentar la verificación.
 
-## Respuestas de error
+## Respuestas de error {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Trata `ready: false` como un bloqueo previo al lanzamiento. Revisa los detalles 
 }
 ```
 
-## Paginación y filtrado
+## Paginación y filtrado {#pagination-and-filtering}
 
 **Parámetros de consulta:**
 ```http

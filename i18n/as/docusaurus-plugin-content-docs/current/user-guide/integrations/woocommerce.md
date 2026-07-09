@@ -3,7 +3,7 @@ title: WooCommerce ইন্টিগ্ৰেচন
 sidebar_position: 9
 _i18n_hash: 64e2517a66a209111e1cdb519a920b37
 ---
-# WooCommerce Integration
+# WooCommerce Integration {#woocommerce-integration}
 
 এই বৈশিষ্ট্যটো **WooCommerce Integration** addons ত উপলব্ধ।
 

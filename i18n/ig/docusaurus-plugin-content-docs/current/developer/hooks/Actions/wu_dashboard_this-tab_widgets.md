@@ -4,11 +4,11 @@ title: 'Omume - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 Kwe ka ndị mmepe plugin tinye wijetị na Panelụ Dashboard nke netwọkụ.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Kwe ka ndị mmepe plugin tinye wijetị na Panelụ Dashboard nke netwọkụ.
 | $screen | `\WP_Screen` | Ihe objekti ihuenyo. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ihe atụ peeji admin nke Ultimate Multisite. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 2.0.0
-### Isi mmalite
+### Isi mmalite {#source}
 
 Akọwapụtara na [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) na ahịrị 214

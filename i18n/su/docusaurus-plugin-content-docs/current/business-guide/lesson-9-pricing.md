@@ -3,17 +3,17 @@ title: 'Palajaran 9: Nangtukeun Harga pikeun Kauntungan'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Palajaran 9: Harga pikeun Kauntungan
+# Palajaran 9: Harga pikeun Kauntungan {#lesson-9-pricing-for-profit}
 
 Dina Palajaran 5 urang netepkeun harga awal pikeun rencana FitSite. Ayeuna urang nyaluyukeun deui strategi harga ku téknik anu ningkatkeun panghasilan, ngadorong pamutahiran, jeung ngurangan churn.
 
-## Dimana Urang Eureun
+## Dimana Urang Eureun {#where-we-left-off}
 
 FitSite geus boga rencana, témplat, prosés pamayaran, branding, jeung onboarding. Harga awalna $49/$99/$199 per bulan. Ayeuna urang nyieun éta harga digawé leuwih kuat.
 
-## Prinsip Harga pikeun Platform Niche
+## Prinsip Harga pikeun Platform Niche {#pricing-principles-for-niche-platforms}
 
-### Harga Dumasar kana Nilai, Henteu kana Biaya
+### Harga Dumasar kana Nilai, Henteu kana Biaya {#price-on-value-not-cost}
 
 Biaya hosting anjeun bisa waé $5-$15 per situs palanggan. Éta henteu hartina harga anjeun kudu $20. Anjeun lain ngajual hosting. Anjeun ngajual:
 
@@ -24,7 +24,7 @@ Biaya hosting anjeun bisa waé $5-$15 per situs palanggan. Éta henteu hartina h
 
 Tetepkeun harga dumasar kana nilai anu anjeun pasihkeun, lain kana biaya pikeun nyadiakeunana.
 
-### Jieun Patokan kana Alternatif
+### Jieun Patokan kana Alternatif {#anchor-to-alternatives}
 
 Nalika boga studio kabugaran nalungtik FitSite, maranéhna ngabandingkeunana jeung:
 
@@ -34,7 +34,7 @@ Nalika boga studio kabugaran nalungtik FitSite, maranéhna ngabandingkeunana jeu
 
 Dina $49-$199/bulan, FitSite leuwih murah tibatan pamekar, leuwih mumpuni tibatan builder umum, jeung jauh leuwih hadé tibatan teu boga situs wéb.
 
-## Nerapkeun Variasi Harga
+## Nerapkeun Variasi Harga {#implementing-price-variations}
 
 Harga taunan ngadorong komitmen jeung ngurangan churn. Buka tab **Price Variations** dina unggal rencana sarta tambahkeun pilihan taunan:
 
@@ -46,12 +46,12 @@ Harga taunan ngadorong komitmen jeung ngurangan churn. Buka tab **Price Variatio
 
 Tambahkeun widang **Period Selection** kana formulir pamayaran anjeun supaya palanggan bisa ngalih antara tagihan bulanan jeung taunan. Tingali [Formulir Pamayaran](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Kunaon Harga Taunan Éféktif
+### Kunaon Harga Taunan Éféktif {#why-annual-pricing-works}
 
 - **Pikeun anjeun**: Kas awal, churn leuwih handap (palanggan anu mayar taunan leuwih jarang ngabatalkeun di tengah mangsa)
 - **Pikeun maranéhna**: Hemat nyata, anggaran leuwih bisa diprediksi
 
-## Biaya Setup
+## Biaya Setup {#setup-fees}
 
 Pertimbangkeun biaya setup sakali pikeun rencana anu ngawengku konfigurasi langsung:
 
@@ -61,7 +61,7 @@ Pertimbangkeun biaya setup sakali pikeun rencana anu ngawengku konfigurasi langs
 
 Konfigurasikeun biaya setup dina bagian harga unggal rencana. Tingali [Nyieun Produk Langganan Kahiji Anjeun](/user-guide/configuration/creating-your-first-subscription-product) pikeun rinci.
 
-## Mangsa Uji Coba
+## Mangsa Uji Coba {#trial-periods}
 
 Nawarkeun uji coba ngurangan halangan pikeun daptar tapi nambahan résiko teu jadi konvérsi. Pikeun FitSite:
 
@@ -70,11 +70,11 @@ Nawarkeun uji coba ngurangan halangan pikeun daptar tapi nambahan résiko teu ja
 
 Konfigurasikeun uji coba dina bagian harga rencana Starter ku ngaktipkeun toggle **Offer Trial** jeung netepkeun lilana jadi 7 poé.
 
-### Nyieun Uji Coba Jadi Konvérsi
+### Nyieun Uji Coba Jadi Konvérsi {#making-trials-convert}
 
 Uji coba ngan jalan lamun palanggan ngarasa meunang nilai salila mangsa uji coba. Runtuyan onboarding anjeun (Palajaran 8) penting pisan di dieu -- surelek wilujeng sumping kudu dijadwalkeun pikeun ngadorong kalibet dina jandéla 7 poé.
 
-## Kode Diskon
+## Kode Diskon {#discount-codes}
 
 Jieun kode diskon stratégis pikeun tujuan husus:
 
@@ -88,7 +88,7 @@ Buka **Ultimate Multisite > Discount Codes** pikeun nyieun ieu. Tingali [Nyieun 
 Diskon kudu jadi alat stratégis, lain unsur permanén. Lamun kabéh jalma meunang diskon, éta lain diskon -- éta harga sabenerna anjeun. Paké pikeun kampanye husus, rujukan, jeung promosi anu diwatesan ku waktu.
 :::
 
-## Penanganan Pajeg
+## Penanganan Pajeg {#tax-handling}
 
 Lamun anjeun beroperasi dina yurisdiksi anu merlukeun ngumpulkeun pajeg:
 
@@ -98,7 +98,7 @@ Lamun anjeun beroperasi dina yurisdiksi anu merlukeun ngumpulkeun pajeg:
 
 Tingali [Penanganan Pajeg](/user-guide/payment-gateways/tax-handling) pikeun konfigurasi rinci. Lamun anjeun ngalayanan palanggan sacara internasional, pertimbangkeun [addon PPN](/addons/vat) pikeun patuh kana aturan EU.
 
-## Marios Harga Anjeun
+## Marios Harga Anjeun {#reviewing-your-pricing}
 
 Sanggeus peluncuran, pariksa deui harga unggal kuartal. Tingali kana:
 
@@ -107,7 +107,7 @@ Sanggeus peluncuran, pariksa deui harga unggal kuartal. Tingali kana:
 - **Churn dumasar rencana**: Lamun palanggan taunan churn-na leuwih saeutik, dorong harga taunan leuwih kuat
 - **Harga pesaing**: Sabaraha anu ditagihkeun ku alternatif? Naha posisi anjeun geus luyu?
 
-## Jaringan FitSite Nepi ka Ayeuna
+## Jaringan FitSite Nepi ka Ayeuna {#the-fitsite-network-so-far}
 
 ```
 Jaringan FitSite
@@ -132,7 +132,7 @@ Jaringan FitSite
 └── Siap pikeun peluncuran (palajaran salajengna)
 ```
 
-## Naon Anu Urang Wangun Dina Pangajaran Ieu
+## Naon Anu Urang Wangun Dina Pangajaran Ieu {#what-we-built-this-lesson}
 
 - **Harga taunan** kalayan diskon 20% pikeun ngadorong komitmen
 - **Waragad setup** dina tingkatan leuwih luhur pikeun nutupan usaha onboarding

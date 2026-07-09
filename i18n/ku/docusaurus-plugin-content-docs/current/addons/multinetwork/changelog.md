@@ -3,9 +3,9 @@ title: Dîroka guhertinên Pir-Tor
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Guherandinameya Multi-Network
+# Guherandinameya Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nû: Pêşdîtina şablona torê — berî kirînê şablonên torê bigere û bi panelek zindî pêşbibîne.
 * Nû: Hilbijêrê şablona torê di checkout de — mişterî dikarin di herikîna qeydbûna checkout de şabloneke torê hilbijêrin.
 * Nû: Cross-network magic link SSO — mişterî dikarin bi piştrastkirina magic-link bê asteng bigihîjin bin-toran.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Çareserî: Parastin li hember mifteya `network_id` ya nenaskirî di qada lêpirsîna malperê de.
 * Çareserî: Kontrola destûra torê berî guhartina contextê, xeletiyên taybetmendiya tabloya `wpdb` asteng dike.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Çareserî: Afirandina tora Nû.
 * Çareserî: Nîşandana Menuyan.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Hate nûkirin bo Plugin Update Checker v5
 * Sernavên nûjen ên plugin a WordPress hatin zêdekirin
 * Lihevhatîbûn bi guhertoyên herî nû yên WordPress hat baştirkirin
 
-### 1.0.2
+### 1.0.2 {#102}
 * Çareseriyên bugan û baştirkirinên performansê
 * Veqetandina torê hate bihêzkirin
 
-### 1.0.0
+### 1.0.0 {#100}
 * Weşana destpêkê
 * Karbidestiya bingehîn a multinetwork
 * Yekbûn bi Multisite Ultimate re

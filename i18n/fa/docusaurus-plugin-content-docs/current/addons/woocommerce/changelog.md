@@ -3,7 +3,7 @@ title: گزارش تغییرات یکپارچه‌سازی WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# گزارش تغییرات WooCommerce Integration
+# گزارش تغییرات WooCommerce Integration {#woocommerce-integration-changelog}
 
 نسخه 2.2.0 - منتشرشده در 2026-07-01
 * جدید: مبالغ مالیات Ultimate Multisite اکنون در هنگام پرداخت به‌صورت ردیف‌های جداگانه هزینه WooCommerce نمایش داده می‌شوند و مجموع مالیات‌ها را پیش از پرداخت شفاف‌تر می‌کنند.

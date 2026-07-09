@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Višezakupnost
+# Višezakupnost {#multi-tenancy}
 
 Distribuirajte podstranice po poslužiteljima i bazama podataka radi performansi i sigurnosti
 
-## Najvažnije novosti izdanja verzije 1.2.0
+## Najvažnije novosti izdanja verzije 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 dodaje temelj za suverene zakupce za radne tijekove izolacije u produkciji:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 dodaje temelj za suverene zakupce za radne tijekove izolacij
 
 Pogledajte korisničke vodiče za [radni tijek suverene migracije](/user-guide/getting-started/sovereign-migration-workflow), [izolaciju višezakupnosti](/user-guide/configuration/multi-tenancy-isolation) i [operacije suverenog zakupca](/user-guide/administration/sovereign-tenant-operations).
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - WordPress 5.3 ili noviji
 - PHP 7.4 ili noviji
 - Multisite Ultimate dodatak (aktivan)
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Prenesite datoteke dodatka u svoj `/wp-content/plugins/` direktorij
 2. Aktivirajte dodatak putem izbornika 'Dodaci' u WordPressu
 3. Konfigurirajte postavke dodatka u mrežnoj administraciji
 
-## Razvoj
+## Razvoj {#development}
 
-### Postavljanje
+### Postavljanje {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura projekta
+### Struktura projekta {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Pravila modernizacije koda
 ```
 
-### Testiranje
+### Testiranje {#testing}
 
 Dodatak uključuje sveobuhvatan okvir za testiranje:
 
@@ -93,54 +93,54 @@ Dodatak uključuje sveobuhvatan okvir za testiranje:
 - **Pokrivenost testovima**: Konfigurirano za praćenje pokrivenosti koda
 - **Multisite testiranje**: Testovi se izvode u multisite okruženju
 
-### Standardi koda
+### Standardi koda {#code-standards}
 
 - **WordPress standardi kodiranja**: Provode se putem PHPCS-a
 - **Kompatibilnost s PHP 7.4+**: Podržane su moderne PHP značajke
 - **Statička analiza**: PHPStan integracija za provjeru tipova
 - **Modernizacija koda**: Rector pravila za nadogradnje PHP-a
 
-### Sustav izgradnje
+### Sustav izgradnje {#build-system}
 
 - **Obrada sredstava**: Minifikacija CSS/JS datoteka
 - **Prijevod**: Generiranje POT datoteke
 - **Pakiranje**: Izrada arhive za distribuciju
 - **Razvojni način**: Neminificirana sredstva za otklanjanje pogrešaka
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
 Dodatak podržava različite opcije konfiguracije dostupne putem mrežnog administratorskog sučelja.
 
-### Konfiguracija suverenog zakupca
+### Konfiguracija suverenog zakupca {#sovereign-tenant-configuration}
 
 Za suverene zakupce konfigurirajte bazu podataka zakupca, korijen datotečnog sustava, vezanje hosta baze podataka i mogućnost hosta prije usmjeravanja prometa prema zakupcu. Pokrenite verifikaciju migracije nakon svake promjene koja utječe na vjerodajnice baze podataka, vezanje hosta, usmjeravanje ili dodjelu korisnika.
 
 Koristite `localhost` samo kada izvršno okruženje zakupca i ovlasti baze podataka očekuju lokalni socket ili pristup na istom stroju. Koristite `127.0.0.1` ili naziv hosta usluge kada je to host ovlasti konfiguriran od vašeg pružatelja.
 
-### Hostinger mogućnost
+### Hostinger mogućnost {#hostinger-capability}
 
 Hostinger mogućnost višezakupnosti radi s dijeljenim Hostinger integracijskim tokenom. Potvrdite da je domena prisutna u hPanelu, da DNS pokazuje na Hostinger račun i da se postavke baze podataka zakupca podudaraju s hPanelom prije verifikacije.
 
-## Hookovi i filtri
+## Hookovi i filtri {#hooks-and-filters}
 
-### Radnje
+### Radnje {#actions}
 
 - `ultimate-multisite-addon-template_init` - Pokreće se nakon inicijalizacije dodatka
 - `ultimate-multisite-addon-template_loaded` - Pokreće se nakon što se učitaju sve datoteke dodatka
 
-### Filtri
+### Filtri {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Izmijenite postavke dodatka
 - `ultimate-multisite-addon-template_enabled` - Nadjačajte status omogućavanja/onemogućavanja dodatka
 
-## Licenca
+## Licenca {#license}
 
 Ovaj dodatak licenciran je pod GPL v3 ili novijom verzijom.
 
-## Podrška
+## Podrška {#support}
 
 Za podršku i dokumentaciju posjetite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Dnevnik promjena
+## Dnevnik promjena {#changelog}
 
 - Verzija 1.2.0 (2026-06-03): dodaje bezstanje automatsko prijavljivanje zakupca, Hostinger mogućnost višezakupnosti, izolaciju baze podataka i datotečnog sustava po podstranici, verifikacijske zapreke suverene migracije, poboljšanja početnog pokretanja zakupca/zapisivača baze podataka, podesivo vezanje MySQL hosta i sigurnije suvereno uklanjanje.
 

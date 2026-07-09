@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector amaiera-puntu bateragarrietarako
+# Ultimate AI Connector amaiera-puntu bateragarrietarako {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector amaiera-puntu bateragarrietarako OpenAI-rekin bateragarriak diren AI hornitzaileen APIak zure WordPress multisite sarearekin integratzen ditu. Konfiguratu hainbat AI hornitzaile — bakoitza bere endpoint URLarekin, API gakoarekin eta eredu lehenetsiarekin — eta bideratu eskaerak ordezko bideratze automatikoarekin, hornitzaile bat erabilgarri ez dagoenean.
 
-## Ezaugarri nagusiak
+## Ezaugarri nagusiak {#key-features}
 
 - **Hornitzaile anitzeko euskarria**: Gehitu hainbat AI hornitzaile-txartel, bakoitza bere endpoint URLarekin, API gakoarekin eta eredu lehenetsiarekin
 - **Arrastatu berrantolatzeko**: Antolatu hornitzaileak lehentasunaren arabera txartel bakoitzeko heldulekuarekin; eskaerek hornitzaileak ordenan erabiltzen dituzte
@@ -21,26 +21,26 @@ Ultimate AI Connector amaiera-puntu bateragarrietarako OpenAI-rekin bateragarria
 - **Gehitzean automatikoki zabaltzea**: Hornitzaile-txartel berriak automatikoki zabaltzen dira, xehetasunak berehala bete ditzazun
 - **Script cachea baliogabetzea**: Hornitzaileen scriptetan cachea baliogabetzen da plugin eguneratzean, azken bertsioa kargatzen dela ziurtatzeko
 
-## Eskakizunak
+## Eskakizunak {#requirements}
 
 - WordPress 5.3 edo berriagoa
 - PHP 7.4 edo berriagoa
 - Ultimate Multisite plugin (aktibo)
 - OpenAI-rekin bateragarria den API amaiera-puntu bat (norberak ostatatua edo hirugarren batekoa)
 
-## Instalazioa
+## Instalazioa {#installation}
 
 1. Igo addon fitxategiak zure `/wp-content/plugins/` direktoriora
 2. Aktibatu plugin WordPress-eko 'Pluginak' menuaren bidez
 3. Joan **Ultimate Multisite → AI Connector** atalera addona konfiguratzeko
 
-## Konfigurazioa
+## Konfigurazioa {#configuration}
 
-### Hornitzaile anitzeko konfigurazioa
+### Hornitzaile anitzeko konfigurazioa {#multi-provider-setup}
 
 Konfigurazio-pantailak txarteletan oinarritutako diseinu bat erabiltzen du, non txartel bakoitzak AI hornitzaile bat adierazten duen. Behar adina hornitzaile gehi ditzakezu.
 
-#### Hornitzaile bat gehitzea
+#### Hornitzaile bat gehitzea {#adding-a-provider}
 
 1. Joan sareko administrazioan **Ultimate Multisite → AI Connector** atalera
 2. Egin klik **Gehitu hornitzailea** aukeran
@@ -52,15 +52,15 @@ Konfigurazio-pantailak txarteletan oinarritutako diseinu bat erabiltzen du, non 
    - **Eredu lehenetsia** — hornitzaile honetarako lehenespenez erabiliko den eredu-identifikatzailea (adib. `gpt-4o`, `mistral-small`)
 5. Egin klik **Gorde ezarpenak** aukeran
 
-#### Hornitzaile bat kentzea
+#### Hornitzaile bat kentzea {#removing-a-provider}
 
 Egin klik edozein hornitzaile-txarteletako **Kendu** botoian hura ezabatzeko. Gorde ezarpenak aldaketa aplikatzeko.
 
-#### Hornitzaileak berrantolatzea
+#### Hornitzaileak berrantolatzea {#reordering-providers}
 
 Arrastatu edozein hornitzaile-txartelen ezkerraldeko helduleku-ikonoa (⣿) hura berrantolatzeko. Ordenak ordezko lehentasuna zehazten du: eskaerak lehen hornitzailera bidaltzen dira eta, eskaerak huts egiten badu, hurrengo hornitzaileetara pasatzen dira.
 
-### Ordezko bideratzea
+### Ordezko bideratzea {#fallback-routing}
 
 Hornitzaile nagusirako eskaerak huts egiten duenean — denbora-muga, tasa-muga edo zerbitzuaren eten bat dela eta — konektoreak automatikoki berriro saiatzen da zerrendako hurrengo hornitzailearekin. Horrek zerrendan behera jarraitzen du hornitzaile batek arrakasta izan arte edo hornitzaile guztiak probatu arte.
 
@@ -72,7 +72,7 @@ Hornitzaile nagusirako eskaerak huts egiten duenean — denbora-muga, tasa-muga 
 
 Ordezko bideratzea gardena da deitzen duen plugin edo themearentzat — erantzun arrakastatsu bat edo azken errore bat jasotzen dute, zenbat hornitzaile probatu diren kontuan hartu gabe.
 
-### Hornitzaileen konfigurazio-erreferentzia
+### Hornitzaileen konfigurazio-erreferentzia {#provider-configuration-reference}
 
 | Eremua | Beharrezkoa | Deskribapena |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Ordezko bideratzea gardena da deitzen duen plugin edo themearentzat — erantzun
 | API gakoa | Bai | Hornitzaile honetarako autentifikazio-gakoa |
 | Eredu lehenetsia | Bai | Eskaeran eredurik zehazten ez denean erabiltzen den eredu-identifikatzailea |
 
-## Arazoak konpontzea
+## Arazoak konpontzea {#troubleshooting}
 
-### Ez da hornitzailerik zerrendatzen
+### Ez da hornitzailerik zerrendatzen {#no-providers-are-listed}
 
 Gorde ondoren hornitzaileen zerrenda hutsik badago, egiaztatu hau:
 
@@ -91,21 +91,21 @@ Gorde ondoren hornitzaileen zerrenda hutsik badago, egiaztatu hau:
 - Zure nabigatzaileak ez duela ezarpenen orria gordetzea blokeatu (begiratu nabigatzailearen kontsolan JavaScript erroreak dauden)
 - Plugin aktibo dagoela eta sareko administrazio-pantailan zaudela
 
-### Eskaerek huts egiten dute hornitzaile guztientzat
+### Eskaerek huts egiten dute hornitzaile guztientzat {#requests-are-failing-for-all-providers}
 
 - Egiaztatu hornitzaile bakoitzaren endpoint URLa zure zerbitzaritik irisgarria dela (ez soilik zure nabigatzailetik)
 - Egiaztatu API gako bakoitza baliozkoa dela eta ez dela iraungi
 - Berrikusi hornitzailearen tasa-mugaren eta kuotaren egoera haren dashboardean
 - Gaitu WordPress arazketa-erregistroa (`WP_DEBUG_LOG`) konektorearen errore-mezu xeheak jasotzeko
 
-### Hornitzaile bat ez da ordezko bideratzerako erabiltzen
+### Hornitzaile bat ez da ordezko bideratzerako erabiltzen {#a-provider-is-not-being-used-for-fallback}
 
 Arrastatu berrantolatzeko funtzioak ordezkoen ordena aldatzen du. Egiaztatu ordezko eskaerak jasotzea espero duzun hornitzailea zerrendan behar bezala kokatuta dagoela eta haren endpoint URLa eta API gakoa zuzenak direla.
 
-### Hornitzaile-txartel berria ez da automatikoki zabaltzen
+### Hornitzaile-txartel berria ez da automatikoki zabaltzen {#new-provider-card-does-not-expand-automatically}
 
 Automatikoki zabaltzeko, JavaScript gaituta egon behar da zure nabigatzailean. Txartela klik egitean zabaltzen ez bada, begiratu nabigatzailearen kontsolan errorerik dagoen. Txartelaren edukia beti dago eskuragarri txartelaren goiburuan klik eginez, automatikoki zabaltzea aktibatzen ez bada ere.
 
-## Aldaketen erregistroa
+## Aldaketen erregistroa {#changelog}
 
 Ikusi [Aldaketen erregistroa](./changelog) bertsioen historia osoa lortzeko.

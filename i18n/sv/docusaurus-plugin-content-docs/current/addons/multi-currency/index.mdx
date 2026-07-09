@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency låter dig ta emot betalningar i flera valutor på din nätverkswebbplats. Det konverterar automatiskt priser med hjälp av live- eller manuella växlingskurser, låter dig ställa in exakta priser per produkt för vilken valuta som helst och känner av besökarens föredragna valuta via geolokalisering – allt hanteras från en enda administrationspanel.
 
-## Huvudfunktioner
+## Huvudfunktioner {#key-features}
 
 - **Automatisk växlingskurskonvertering** — priser konverteras från din basvaluta med hjälp av kurser hämtade från din valda leverantör
 - **Överskrivning av priser per produkt** — ställ in exakta valuta-specifika priser på vilken produkt som helst för att kringgå automatisk konvertering
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency låter dig ta emot betalningar i flera valuto
 - **Valukätning baserat på geolokalisering** — föreslår automatiskt den valuta som matchar besökarens land
 - **Administrationspanel** — hantera aktiva valutor, växlingskurser och leverantörsinställningar från ett ställe
 
-## Krav
+## Krav {#requirements}
 
 - Ultimate Multisite 2.0.0 eller högre
 - WordPress Multisite-installation
 - PHP 7.4 eller högre
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp plugin-filerna till `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktivera pluginet via **Plugins**-skärmen i WordPress (Nätverksaktivera)
 3. Gå till **Ultimate Multisite → Multi-Currency** för att öppna administrationspanelen
 4. Lägg till de valutor du vill acceptera och konfigurera din växlingskurshanterare
 
-## Konfiguration
+## Konfiguration {#configuration}
 
-### Administrationspanelen
+### Administrationspanelen {#admin-dashboard}
 
 Multi-Currency-administrationspanelen (**Ultimate Multisite → Multi-Currency**) är den centrala platsen för att:
 
@@ -44,7 +44,7 @@ Multi-Currency-administrationspanelen (**Ultimate Multisite → Multi-Currency**
 - Granska aktuella kurser för alla aktiva valutor
 - Ställa in manuella kurser när automatiska leverantörer inte är lämpliga
 
-### Växlingskurshanterare
+### Växlingskurshanterare {#exchange-rate-providers}
 
 | Provider | Description |
 |---|---|
@@ -55,7 +55,7 @@ Multi-Currency-administrationspanelen (**Ultimate Multisite → Multi-Currency**
 
 Välj din leverantör under **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kurser kan uppdateras manuellt när som helst eller schemaläggas för automatisk uppdatering.
 
-### Överskrivning av priser per produkt
+### Överskrivning av priser per produkt {#per-product-pricing-overrides}
 
 När automatisk konvertering inte är tillräckligt exakt kan du ställa in ett exakt pris för en specifik valuta på vilken produkt som helst:
 
@@ -66,7 +66,7 @@ När automatisk konvertering inte är tillräckligt exakt kan du ställa in ett 
 
 Produkter utan överskrivning använder det konverterade priset från din basvaluta.
 
-### Valutorväljare i registreringsfältet
+### Valutorväljare i registreringsfältet {#currency-selector-signup-field}
 
 Valutorväljaren kan läggas till i ditt registrerings-/kassafölo så att kunderna väljer sin föredragna valuta vid registreringen:
 
@@ -76,7 +76,7 @@ Valutorväljaren kan läggas till i ditt registrerings-/kassafölo så att kunde
 
 Den valda valutan sparas med prenumerationen och används för all efterföljande fakturering.
 
-### Valukätning baserat på geolokalisering
+### Valukätning baserat på geolokalisering {#geolocation-based-currency-detection}
 
 När geolokalisering är aktiverad mappar tillägget besökarens land till en valuta och föreslår den i valutorväljaren. För att aktivera:
 
@@ -86,27 +86,27 @@ När geolokalisering är aktiverad mappar tillägget besökarens land till en va
 
 Om ingen mappning finns för ett lands besökare används nätverkets basvaluta som fallback.
 
-## Vanliga frågor
+## Vanliga frågor {#frequently-asked-questions}
 
-### Vad händer om en växlingskurshanterare är otillgänglig?
+### Vad händer om en växlingskurshanterare är otillgänglig? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Tillägget faller tillbaka på de senast framgångsrikt hämtade kurserna. Om inga kurser någonsin har hämtats, faller det tillbaka på de manuella kurser du har konfigurerat. Det rekommenderas att konfigurera manuella kurser som en säkerhetsåtgärd.
 
-### Kan jag använda olika leverantörer för olika valutor?
+### Kan jag använda olika leverantörer för olika valutor? {#can-i-use-different-providers-for-different-currencies}
 
 Nej – en leverantör är aktiv åt gången för alla valutor. Använd **Manual** om du behöver full kontroll över individuella kurser.
 
-### Kräver geolokalisering ett separat plugin?
+### Kräver geolokalisering ett separat plugin? {#does-geolocation-require-a-separate-plugin}
 
 Inget externt geolokalisationsplugin krävs. Tillägget använder WordPress inbyggda IP-till-land-detektering. För högre noggrannhet kan en dedikerad geolokaliseringstjänst integreras via de tillhandahållna filter-hookarna.
 
-### Tillämpas överskrivningar per produkt före eller efter skatt?
+### Tillämpas överskrivningar per produkt före eller efter skatt? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Överskrivningar per produkt ställer in priset före skatt i målvvalutan. Skatten beräknas ovanpå överskrivningspriset med hjälp av din befintliga skattekonfiguration.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.0.0 — Släppt den 2026-04-02
+### Version 1.0.0 — Släppt den 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nytt: Flera valuta-stöd med automatisk växlingskurskonvertering
 - Nytt: Överskrivning av priser per produkt för exakta valuta-specifika priser

@@ -4,16 +4,16 @@ title: ფილტრი - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# ფილტრი: wu_users_membership_limit_message
+# ფილტრი: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
 
 დეველოპერებს აძლევს შესაძლებლობას შეცვალონ შეტყობინება წევრობის მომხმარებლების ლიმიტის შესახებ
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $message | `string` | ეკრანზე გამოსატანი შეტყობინება. |
 
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72)-ში, 72-ე ხაზზე

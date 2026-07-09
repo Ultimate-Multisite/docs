@@ -3,15 +3,15 @@ title: Jieun Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Jieun Menu
+# Jieun Menu {#create-menu}
 
 Kamampuhan **Jieun Menu** nyieun menu navigasi WordPress kalayan dukungan pikeun label navigasi anu béda misah ti judul kaca.
 
-## Ringkesan
+## Ringkesan {#overview}
 
 Kamampuhan ieu ngalegaan fungsionalitas nyieun menu standar ku kamampuhan pikeun nangtukeun parameter `navigation_label`. Ieu ngamungkinkeun anjeun nyieun menu dimana label anu dipintonkeun dina navigasi béda ti judul kaca, nyadiakeun kalenturan leuwih dina struktur situs jeung pangalaman pamaké.
 
-## Parameter
+## Parameter {#parameters}
 
 | Parameter | Tipe | Diperlukeun | Pedaran |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Kamampuhan ieu ngalegaan fungsionalitas nyieun menu standar ku kamampuhan pikeun
 | `location` | string | Henteu | Lokasi theme pikeun napelkeun menu ieu, contona `primary` |
 | `navigation_label` | string | Henteu | Label pikeun dipintonkeun dina navigasi (béda ti judul kaca) |
 
-## Nilai Balik
+## Nilai Balik {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Kamampuhan ieu ngalegaan fungsionalitas nyieun menu standar ku kamampuhan pikeun
 }
 ```
 
-## Label Navigasi vs Judul Kaca
+## Label Navigasi vs Judul Kaca {#navigation-label-vs-page-title}
 
 Parameter `navigation_label` ngamungkinkeun anjeun misahkeun ngaran menu internal ti label anu dipintonkeun ka pamaké:
 
@@ -43,9 +43,9 @@ Ieu mangpaat lamun:
 - Anjeun kudu ngadukung sababaraha basa kalayan panjang label anu béda
 - Anjeun keur ngawangun menu pikeun wewengkon atawa kelompok pamaké husus
 
-## Conto Pamakéan
+## Conto Pamakéan {#usage-examples}
 
-### Conto 1: Menu Basajan kalayan Label Navigasi
+### Conto 1: Menu Basajan kalayan Label Navigasi {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Jieun menu navigasi utama anu dingaranan "Navigasi Utama" kalayan label navigasi
 }
 ```
 
-### Conto 2: Menu pikeun Lokasi Theme Husus
+### Conto 2: Menu pikeun Lokasi Theme Husus {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Jieun menu footer anu dingaranan "Tumbu Footer" kalayan label navigasi "Tumbu Ga
 }
 ```
 
-## Integrasi jeung Theme Builder
+## Integrasi jeung Theme Builder {#integration-with-theme-builder}
 
 Nalika maké Theme Builder, kamampuhan Jieun Menu:
 
@@ -89,13 +89,13 @@ Nalika maké Theme Builder, kamampuhan Jieun Menu:
 3. Napelkeun menu kana lokasi theme anu bener
 4. Ngadukung nambihan item menu sanggeus dijieun
 
-## Kamampuhan Patali
+## Kamampuhan Patali {#related-abilities}
 
 - **`add_menu_item`** — Tambahkeun item kana menu anu geus aya
 - **`update_menu`** — Ganti ngaran menu atawa pasang deui kana lokasi theme
 - **`delete_menu`** — Pupus menu tina situs anjeun
 
-## Prakték Panghadéna
+## Prakték Panghadéna {#best-practices}
 
 - **Paké label navigasi anu écés** — jaga label singket jeung déskriptif pikeun pamaké
 - **Cocogkeun lokasi theme** — pasang menu kana lokasi theme anu bener supaya tampilan luyu
@@ -103,14 +103,14 @@ Nalika maké Theme Builder, kamampuhan Jieun Menu:
 - **Uji responsivitas** — pastikeun menu dipintonkeun kalayan bener dina alat mobile
 - **Lokalisasi label** — paké label navigasi anu béda pikeun vérsi basa anu béda
 
-## Watesan
+## Watesan {#limitations}
 
 - Label navigasi ngan ukur pikeun tampilan; `name` internal tetep dipaké pikeun idéntifikasi WordPress
 - Dukungan theme rupa-rupa; henteu kabéh theme ngadukung sadaya lokasi menu
 - Item menu kudu ditambahkeun sacara misah sanggeus nyieun menu
 - Ngarobah label navigasi merlukeun ngapdet menu
 
-## Kamampuhan Patali
+## Kamampuhan Patali {#related-abilities-1}
 
 - [Jieun Logo SVG](./generate-logo-svg.md) — jieun logo pikeun header situs anjeun
 - [Validasi Kontras Palét](./validate-palette-contrast.md) — pastikeun skéma warna anu gampang diaksés

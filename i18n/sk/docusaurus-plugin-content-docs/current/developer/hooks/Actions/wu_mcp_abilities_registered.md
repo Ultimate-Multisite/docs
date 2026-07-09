@@ -4,11 +4,11 @@ title: Akcia - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Akcia: wu_mcp_abilities_registered
+# Akcia: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Spustí sa po zaregistrovaní MCP schopností pre entitu.
 
-## Parametre
+## Parametre {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Spustí sa po zaregistrovaní MCP schopností pre entitu.
 | $model_name | `string` | Názov modelu. |
 | $this | `object` | Inštancia správcu. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.5.0
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) na riadku 171

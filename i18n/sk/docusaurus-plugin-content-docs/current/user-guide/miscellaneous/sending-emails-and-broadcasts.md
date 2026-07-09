@@ -3,13 +3,13 @@ title: Odosielanie e-mailov a hromadných správ
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Odosielanie e-mailov a Broadcasts (v2)
+# Odosielanie e-mailov a Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**DÔLEŽITÁ POZNÁMKA: Tento článok sa vzťahuje na Ultimate Multisite verziu 2.x.**_
 
 Ultimate Multisite obsahuje funkciu, ktorá vám umožní komunikovať so zákazníkmi odoslaním e-mailu cielenému používateľovi alebo skupine používateľov, ako aj odosielaním upozornení na ich admin dashboard na broadcast oznámení
 
-## Pridanie admin upozornení na dashboard vašich zákazníkov pomocou Broadcasts
+## Pridanie admin upozornení na dashboard vašich zákazníkov pomocou Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Pomocou funkcie broadcast v Ultimate Multisite môžete pridať **admin upozornenia** na admin dashboard subsite používateľa.
 
@@ -51,7 +51,7 @@ Po vytvorení správy môžete stlačiť tlačidlo **Send**.
 
 A to je všetko. Admin upozornenie by sa malo okamžite zobraziť na dashboard používateľa.
 
-## Odosielanie e-mailov vašim zákazníkom
+## Odosielanie e-mailov vašim zákazníkom {#send-emails-to-your-customers}
 
 Pomocou funkcie broadcast v Ultimate Multisite môžete svojim používateľom odoslať e-mail. Máte možnosť odoslať e-mail iba konkrétnym používateľom alebo zacieliť na konkrétnu skupinu používateľov na základe produktu alebo plánu, pod ktorým sú prihlásení na odber.
 
@@ -81,11 +81,11 @@ Po vytvorení správy môžete stlačiť tlačidlo **Send**.
 
 A takto jednoducho môžete odoslať e-mail svojim koncovým používateľom pomocou funkcie broadcast.
 
-## Systémové e-maily
+## Systémové e-maily {#system-emails}
 
 Systémové e-maily v Ultimate Multisite sú tie **automatické oznámenia**, ktoré systém odosiela po určitých akciách, ako je registrácia, platba, mapovanie domény atď. Tieto e-maily možno upravovať alebo meniť v nastaveniach Ultimate Multisite. Obsahuje tiež funkciu, ktorá vám umožní resetovať a importovať existujúce nastavenia z inej inštalácie Ultimate Multisite.
 
-### Resetovanie a import
+### Resetovanie a import {#resetting--importing}
 
 Nové verzie Ultimate Multisite, ako aj doplnky, môžu a budú z času na čas registrovať nové e-maily.
 
@@ -93,7 +93,7 @@ Aby sme predišli konfliktom a iným problémom, **nepridáme nové šablóny e-
 
 Super administrátori a agenti však môžu tieto novo zaregistrované e-maily importovať pomocou nástroja importéra. Tento proces vytvorí nový systémový e-mail s obsahom a konfiguráciou novej šablóny e-mailu, čo super administrátorovi umožní vykonať ľubovoľné úpravy alebo ich ponechať tak, ako sú.
 
-#### Ako importovať systémové e-maily
+#### Ako importovať systémové e-maily {#how-to-import-system-emails}
 
 Prejdite na stránku nastavení Ultimate Multisite a prejdite na kartu **Emails**.
 
@@ -111,7 +111,7 @@ Potom môžete prepnúť možnosti Import Emails a pozrieť si, ktoré systémov
 
 <!-- Snímka obrazovky nedostupná: Modálne okno Reset and Import s rozbalenými možnosťami Import Emails -->
 
-#### Resetovanie systémových e-mailov
+#### Resetovanie systémových e-mailov {#reseting-system-emails}
 
 Inokedy si uvedomíte, že zmeny, ktoré ste vykonali v danej šablóne e-mailu, vám už nevyhovujú a chcete ju resetovať do jej **predvoleného stavu**.
 

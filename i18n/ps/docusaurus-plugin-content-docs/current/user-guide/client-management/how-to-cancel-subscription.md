@@ -3,7 +3,7 @@ title: چې څنګه اشتراک ختم کړئ
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# څنګه زه به سبسکرپشني ختم کړم؟
+# څنګه زه به سبسکرپشني ختم کړم؟ {#how-can-i-cancel-my-subscription}
 
 که تاسو Ultimate Multisite license لرئ، تاسو کولی شئ د بیا تازه کولو (renewal) وخت چې غواړئ، یې ختم کړئ. ستا دا لارښوونې ورسره کیږئ:
 

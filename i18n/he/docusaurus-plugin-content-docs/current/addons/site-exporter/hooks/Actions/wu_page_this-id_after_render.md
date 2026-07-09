@@ -4,22 +4,22 @@ title: 'Action - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 2bdd062afe3dbfa7e50dc5162fba9b99
 ---
-# Action: wu_page_\{$this->id\}_after_render
+# Action: wu_page_\{$this->id\}_after_render {#action-wupagethis-idafterrender}
 
 מופעל לאחר רינדור של עמוד ספציפי.
 
 שימוש: יש להחליף את החלק הדינמי במזהה עמוד (page id) תקין, לדוגמה: add_action('wu_page_events_after_render', 'do_something_callback', 10, 2);
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | מזהה העמוד. |
 | $this | `\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | מופע (instance) של Base Admin Page. |
 
-### מאז
+### מאז {#since}
 
 - 1.8.2
-### מקור
+### מקור {#source}
 
 מוגדר ב-[`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L394) בשורה 394

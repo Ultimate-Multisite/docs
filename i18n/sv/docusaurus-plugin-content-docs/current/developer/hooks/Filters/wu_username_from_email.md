@@ -4,11 +4,11 @@ title: Filter - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filter: wu_username_from_email
+# Filter: wu_username_from_email {#filter-wuusernamefromemail}
 
 Filtrerar användarnamnet för en ny kund.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Namn | Typ | Beskrivning |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtrerar användarnamnet för en ny kund.
 | $new_user_args | `array` | Array med argument för den nya användaren, kan inkludera för- och efternamn. |
 | $suffix | `string` | Sträng som läggs till användarnamnet för att göra det unikt. |
 
-### Sedan
+### Sedan {#since}
 
 - 2.0.0
-### Källa
+### Källa {#source}
 
 Definieras i [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) på rad 516

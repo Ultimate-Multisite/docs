@@ -4,22 +4,22 @@ title: Filter - wu_site_list_get_bulk_actions
 sidebar_label: wu_site_list_get_bulk_actions
 _i18n_hash: 0a18ab4a09da0089d688b72198c51711
 ---
-# Filter: wu_site_list_get_bulk_actions
+# Filter: wu_site_list_get_bulk_actions {#filter-wusitelistgetbulkactions}
 
 Filtruje hromadné akcie dostupné pre stránky.
 
-## Parametre
+## Parametre {#parameters}
 
 | Názov | Typ | Popis |
 |------|------|-------------|
 | $actions | `array` | Hromadné akcie. |
 
-### Od verzie
+### Od verzie {#since}
 
 - 2.4.10
-### Zdroj
+### Zdroj {#source}
 
 Definované v [`inc/list-tables/class-site-list-table.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/list-tables/class-site-list-table.php#L388) na riadku 388
 
 
-## Návratová hodnota
+## Návratová hodnota {#returns}

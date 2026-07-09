@@ -3,11 +3,11 @@ title: Iebūvētie aģenti
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Iebūvētie aģenti
+# Iebūvētie aģenti {#built-in-agents}
 
 Gratis AI Agent v1.9.0 tiek piegādāts ar pieciem iebūvētiem aģentiem, katrs iepriekš konfigurēts ar fokusētu rīku kopu, pielāgotu sistēmas uzvedni un sākuma ieteikumiem, kas atbilst bieži sastopamiem uzdevumiem attiecīgajā jomā. Pārslēgšanās starp aģentiem maina to, ko asistents var darīt un kā tas atbild — bez jebkādas konfigurēšanas no jūsu puses. Superdav AI Agent v1.18.0 var pievienot šīm darbplūsmām grafiku apzinošus rīkus, atgādinājumu ierakstus, apstiprināšanas vārtus un SMS paziņojumus, kad ir konfigurētas saistītās integrācijas.
 
-## Kas ir aģents?
+## Kas ir aģents? {#what-is-an-agent}
 
 Katrs aģents ir nosaukts konfigurācijas profils, kas apvieno:
 
@@ -15,7 +15,7 @@ Katrs aģents ir nosaukts konfigurācijas profils, kas apvieno:
 - **Sistēmas uzvedne** — norādījumi, kas nosaka aģenta toni, prioritātes un ierobežojumus
 - **Ieteikumi** — iepriekš uzrakstītas uzvednes, kas tiek rādītas tērzēšanas saskarnē, lai palīdzētu ātri sākt darbu
 
-## Piekļuve aģentu izvēlētājam
+## Piekļuve aģentu izvēlētājam {#accessing-the-agent-picker}
 
 1. Atveriet **Gratis AI Agent** paneli WordPress administrēšanas sānjoslā.
 2. Noklikšķiniet uz **aģenta ikonas** tērzēšanas galvenes augšējā kreisajā stūrī (ikona mainās, lai atspoguļotu aktīvo aģentu).
@@ -24,9 +24,9 @@ Katrs aģents ir nosaukts konfigurācijas profils, kas apvieno:
 
 Varat arī pārslēgt aģentus sarunas vidū — jaunā aģenta sistēmas uzvedne stājas spēkā no nākamā ziņojuma.
 
-## Pieci iebūvētie aģenti
+## Pieci iebūvētie aģenti {#the-five-built-in-agents}
 
-### Satura autors
+### Satura autors {#content-writer}
 
 **Fokuss:** Ierakstu, lapu un kontaktformu izveide un rediģēšana.
 
@@ -47,7 +47,7 @@ Varat arī pārslēgt aģentus sarunas vidū — jaunā aģenta sistēmas uzvedn
 
 ---
 
-### Vietnes veidotājs
+### Vietnes veidotājs {#site-builder}
 
 **Fokuss:** Pilnīga tīmekļa vietnes izveide no vienas uzvednes.
 
@@ -70,7 +70,7 @@ Varat arī pārslēgt aģentus sarunas vidū — jaunā aģenta sistēmas uzvedn
 
 ---
 
-### Dizaina studija
+### Dizaina studija {#design-studio}
 
 **Fokuss:** Vizuāla pielāgošana — krāsas, tipogrāfija, CSS un bloku šabloni.
 
@@ -87,7 +87,7 @@ Varat arī pārslēgt aģentus sarunas vidū — jaunā aģenta sistēmas uzvedn
 - *Uzņem sākumlapas ekrānuzņēmumu un pasaki, ko tu uzlabotu.*
 - *Izveido atkārtoti izmantojamu hero bloka šablonu ar pilna platuma fona attēlu un centrētu virsrakstu.*
 
-### Pluginu pārvaldnieks
+### Pluginu pārvaldnieks {#plugin-manager}
 
 **Fokuss:** WordPress pluginu atklāšana, instalēšana un pārvaldība.
 
@@ -105,7 +105,7 @@ Varat arī pārslēgt aģentus sarunas vidū — jaunā aģenta sistēmas uzvedn
 
 ---
 
-### Atbalsta asistents
+### Atbalsta asistents {#support-assistant}
 
 **Fokuss:** Atbilžu sniegšana uz jautājumiem par vietnes saturu, iestatījumiem un WordPress konfigurāciju.
 
@@ -124,7 +124,7 @@ Varat arī pārslēgt aģentus sarunas vidū — jaunā aģenta sistēmas uzvedn
 
 ---
 
-## Superdav automatizācijas integrācijas
+## Superdav automatizācijas integrācijas {#superdav-automation-integrations}
 
 Kad Superdav AI Agent v1.18.0 integrācijas ir konfigurētas, iebūvētie agenti var piedalīties drošākās, grafiku apzinošās automatizācijas darbplūsmās:
 
@@ -138,11 +138,11 @@ Ieteicamā darbplūsma: palūdziet agentam sagatavot ziņojumu vai darbību, pā
 
 ---
 
-## Agentu pielāgošana
+## Agentu pielāgošana {#customising-agents}
 
 Katru iebūvēto agentu var paplašināt vai aizstāt, izmantojot `gratis_ai_agent_agents` filtru.
 
-### Pielāgotas sistēmas uzvednes pievienošana esošam agentam
+### Pielāgotas sistēmas uzvednes pievienošana esošam agentam {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Jauna agenta reģistrēšana
+### Jauna agenta reģistrēšana {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Jaunais agents parādās Agent Picker uzreiz pēc filtra izpildes.
 
-### Iebūvēta agenta noņemšana
+### Iebūvēta agenta noņemšana {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -3,7 +3,7 @@ title: Domain Seller 変更履歴
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller 変更履歴
+# Domain Seller 変更履歴 {#domain-seller-changelog}
 
 Version 1.3.0 - 2026-06-02 リリース
 - New: HostAfrica reseller の残高が低くなりすぎたときの network-admin 警告を追加
@@ -136,20 +136,20 @@ Version 1.0.0 - 2025-09-28 リリース
 * **修正:** 非推奨の v1 コードをすべて v2 標準に更新
 * **削除:** レガシー v1 互換性（破壊的変更）
 
-### 以前のバージョン（v1 レガシー）
+### 以前のバージョン（v1 レガシー） {#previous-versions-v1-legacy}
 
-### バージョン 0.0.3 - 20/08/2019
+### バージョン 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * 修正: Groundhogg CRM との非互換性
 * 注記: これは v1 互換の最後のリリースでした
 
-### バージョン 0.0.2 - 07/12/2018
+### バージョン 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * 修正: License Key フィールドを削除
 * 修正: 機能 plugin が有効な場合にプランタブが表示されない問題
 * 改善: 登録フィールドにスキップボタンを追加
 
-### バージョン 0.0.1 - 初回リリース
+### バージョン 0.0.1 - 初回リリース {#version-001---initial-release}
 
 * WP Ultimo v1 向けの基本的な OpenSRS 統合
 * シンプルなドメイン検索と登録

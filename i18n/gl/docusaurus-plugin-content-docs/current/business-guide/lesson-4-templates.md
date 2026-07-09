@@ -3,15 +3,15 @@ title: 'Lección 4: Creación de modelos de nicho'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lección 4: Crear modelos de nicho
+# Lección 4: Crear modelos de nicho {#lesson-4-building-niche-templates}
 
 Os modelos son o núcleo da túa proposta de valor de nicho. Un propietario dun estudo de fitness que se rexistra e ve un sitio que xa parece unha web de fitness -- con horarios de clases, perfís de adestradores e a imaxe axeitada -- ten moitas máis probabilidades de quedar que un que ve un lenzo en branco.
 
-## Onde o deixamos
+## Onde o deixamos {#where-we-left-off}
 
 Temos unha rede FitSite funcional con Ultimate Multisite instalado e configurado. Agora creamos os modelos que fan que FitSite pareza deseñado especificamente para negocios de fitness.
 
-## Por que importan os modelos de nicho
+## Por que importan os modelos de nicho {#why-niche-templates-matter}
 
 Os modelos xenéricos obrigan os teus clientes a facer o traballo difícil: descubrir que páxinas necesitan, que estrutura de contido funciona e como facer que pareza axeitado para o seu sector. Os modelos de nicho eliminan esa fricción.
 
@@ -24,11 +24,11 @@ Un propietario dun estudo de fitness que se rexistra en FitSite debería ver:
 
 Enchen os seus datos. Non empezan desde cero.
 
-## Planificar os teus modelos
+## Planificar os teus modelos {#planning-your-templates}
 
 Antes de crear, decide que modelos ofrecer. Para FitSite, crearemos tres:
 
-### Modelo 1: Studio Essential
+### Modelo 1: Studio Essential {#template-1-studio-essential}
 
 Para estudos pequenos e adestradores persoais.
 
@@ -39,7 +39,7 @@ Para estudos pequenos e adestradores persoais.
 - Páxina **Contacto** con mapa de localización e formulario
 - **Deseño limpo e moderno** cun esquema de cores axeitado para fitness
 
-### Modelo 2: Gym Pro
+### Modelo 2: Gym Pro {#template-2-gym-pro}
 
 Para ximnasios consolidados con máis servizos.
 
@@ -50,7 +50,7 @@ Para ximnasios consolidados con máis servizos.
 - Sección de **testemuños** na páxina de inicio
 - Opcións de **marca máis destacada**
 
-### Modelo 3: Fitness Chain
+### Modelo 3: Fitness Chain {#template-3-fitness-chain}
 
 Para operacións con múltiples localizacións.
 
@@ -60,17 +60,17 @@ Para operacións con múltiples localizacións.
 - **Marca centralizada** con detalles específicos de cada localización
 - **Directorio de persoal** entre localizacións
 
-## Crear un sitio de modelo
+## Crear un sitio de modelo {#building-a-template-site}
 
 En Ultimate Multisite, un modelo é simplemente un sitio WordPress configurado do xeito no que queres que se vexan os novos sitios dos clientes. Aquí tes como crear un:
 
-### Paso 1: Crear o sitio de modelo
+### Paso 1: Crear o sitio de modelo {#step-1-create-the-template-site}
 
 1. Vai a **Sitios > Engadir novo** no administrador da túa rede
 2. Crea un sitio chamado `template-studio-essential`
 3. Este sitio convértese no teu lenzo de traballo
 
-### Paso 2: Instalar e configurar o tema
+### Paso 2: Instalar e configurar o tema {#step-2-install-and-configure-the-theme}
 
 Cambia ao panel do sitio de modelo e:
 
@@ -82,7 +82,7 @@ Cambia ao panel do sitio de modelo e:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Paso 3: Crear as páxinas
+### Paso 3: Crear as páxinas {#step-3-create-the-pages}
 
 Constrúe cada páxina con:
 
@@ -92,7 +92,7 @@ Constrúe cada páxina con:
 
 Fai que o contido de marcador de posición sexa instrutivo cando sexa posible. En vez de texto de recheo xenérico, escribe contido como: "Substitúe isto por unha breve descrición do teu estudo e do que o fai especial. Menciona a túa filosofía de adestramento, anos de experiencia ou o que os clientes poden esperar."
 
-### Paso 4: Configurar plugins
+### Paso 4: Configurar plugins {#step-4-configure-plugins}
 
 Instala e activa plugins que os estudos de fitness necesitan:
 
@@ -100,7 +100,7 @@ Instala e activa plugins que os estudos de fitness necesitan:
 - Un plugin de formulario de contacto
 - Un plugin de SEO (preconfigurado con valores predeterminados relevantes para fitness)
 
-### Paso 5: Marcar como modelo
+### Paso 5: Marcar como modelo {#step-5-mark-as-template}
 
 1. Vai a **Ultimate Multisite > Sites**
 2. Edita o sitio de modelo
@@ -108,7 +108,7 @@ Instala e activa plugins que os estudos de fitness necesitan:
 
 Repite este proceso para cada modelo que queiras ofrecer.
 
-## Lista de comprobación de calidade do modelo
+## Lista de comprobación de calidade do modelo {#template-quality-checklist}
 
 Antes de facer dispoñible un modelo, verifica:
 
@@ -121,7 +121,7 @@ Antes de facer dispoñible un modelo, verifica:
 - [ ] Non hai ligazóns rotas nin recursos ausentes
 - [ ] A velocidade de carga das páxinas é aceptable
 
-## A rede FitSite ata agora
+## A rede FitSite ata agora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## O que construímos nesta lección
+## O que construímos nesta lección {#what-we-built-this-lesson}
 
 - **Tres modelos específicos de nicho** deseñados para distintos tamaños de negocios de fitness
 - **Contido e imaxes axeitados para fitness** que fan que a plataforma pareza deseñada especificamente

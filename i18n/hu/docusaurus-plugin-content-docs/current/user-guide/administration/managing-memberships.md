@@ -3,7 +3,7 @@ title: Tagságok kezelése
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Tagságok kezelése
+# Tagságok kezelése {#managing-memberships}
 
 Az Ultimate Multisite-ben kezelheted a tagságokat, és hozzáférhetsz a hálózatodon lévő összes előfizetéshez. Tekintsd át és szerkeszd az előfizetés részleteit, például a csomagokat és termékeket, a site-ok számát, a számlázási összeget és gyakoriságot, a fizetési előzményeket és az időbélyegeket.
 

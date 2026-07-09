@@ -3,9 +3,9 @@ title: Záznam zmien synchronizácie obsahu
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Zoznam zmien Content Sync
+# Zoznam zmien Content Sync {#content-sync-changelog}
 
-### Verzia 1.1.0 - Vydané 2025-12-31
+### Verzia 1.1.0 - Vydané 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nové: Podpora synchronizácie všetkých typov príspevkov (príspevky, stránky, vlastné typy príspevkov)
 * Nové: Filtrovanie typu príspevku v kroku výberu obsahu
 * Nové: Krok výberu zdrojovej stránky - synchronizácia z ľubovoľnej stránky, nielen z hlavnej stránky
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Zmenené: Krok „Select Templates“ premenovaný na „Select Data“
 * Vylepšené: Kód špecifický pre Elementor sa teraz spúšťa iba pre typ príspevku elementor_library
 
-### Verzia 1.0.0 - Vydané 2025-12-19
+### Verzia 1.0.0 - Vydané 2025-12-19 {#version-100---released-on-2025-12-19}
 * Prvé vydanie
 * Viackrokový sprievodca pre výber šablóny a stránky
 * Dávkové spracovanie so spätnou väzbou o priebehu v reálnom čase

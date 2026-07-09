@@ -3,11 +3,11 @@ title: قابلیت‌های مدیریت افزونه
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# قابلیت‌های مدیریت پلاگین
+# قابلیت‌های مدیریت پلاگین {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 با **۷ قابلیت مدیریت پلاگین** عرضه می‌شود که دستیار هوش مصنوعی می‌تواند در طول مکالمه از آن‌ها استفاده کند. این قابلیت‌ها کنترل برنامه‌ریزی شده‌ای بر پلاگین‌های نصب شده از طریق [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) فراهم می‌کنند.
 
-## نمای کلی قابلیت‌ها
+## نمای کلی قابلیت‌ها {#abilities-overview}
 
 | قابلیت | Slug | توضیحات |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 با **۷ قابلیت مدیریت پلاگین** عرض
 | نصب پلاگین | `install_plugin` | یک پلاگین ساندباکس شده را در دایرکتوری پلاگین زنده WordPress مستقر می‌کند. |
 | فعال‌سازی پلاگین | `activate_plugin` | یک پلاگین ساندباکس شده را در محیط ساندباکس wp-env فعال می‌کند. |
 
-## API نصب پلاگین
+## API نصب پلاگین {#plugin-installer-api}
 
 نصب‌کننده پلاگین (plugin installer) عملیات فایل سیستمی را هنگام استقرار یا حذف پلاگین‌ها انجام می‌دهد. رفتارهای کلیدی آن عبارتند از:
 
@@ -28,7 +28,7 @@ Gratis AI Agent v1.5.0 با **۷ قابلیت مدیریت پلاگین** عرض
 - **به‌روزرسانی (Update)**: فایل‌های پلاگین موجود را جایگزین می‌کند. برای جلوگیری از خطاهای حالت ناقص، قبل از نوشتن، پلاگین را غیرفعال می‌کند.
 - **حذف بر اساس slug**: دایرکتوری پلاگین را با استفاده از slug پیدا کرده، آن را در تمام سایت‌ها غیرفعال می‌کند، و سپس دایرکتوری را حذف می‌کند.
 
-### ثبت یک هندلر نصب سفارشی
+### ثبت یک هندلر نصب سفارشی {#registering-a-custom-install-handler}
 
 شما می‌توانید با استفاده از اکشن‌های `gratis_ai_plugin_installer_before_install` و `gratis_ai_plugin_installer_after_install`، در چرخه حیات نصب (install lifecycle) قلاب (hook) بزنید:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## رجیستری اکوسیستم (Ecosystem Registry)
+## رجیستری اکوسیستم (Ecosystem Registry) {#ecosystem-registry}
 
 قابلیت‌ها از طریق **رجیستری اکوسیستم پلاگین** ثبت می‌شوند. این رجیستری، slugهای قابلیت‌ها را به کلاس‌های هندلر (handler classes) نگاشت کرده و آن‌ها را در دیسپچر ابزار (tool dispatcher) دستیار هوش مصنوعی در دسترس قرار می‌دهد.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## ادغام HookScanner
+## ادغام HookScanner {#hookscanner-integration}
 
 قابلیت‌های `create_plugin` و `update_plugin` به طور خودکار **HookScanner** را روی کدهای تولید شده جدید اجرا می‌کنند. HookScanner لیستی از اکشن‌ها (actions) و فیلترهای (filters) هوک وردپرس که توسط پلاگین ثبت شده‌اند را برمی‌گرداند.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner به طور خودکار دایرکتوری‌های `vendor/` و `node_modules/` را نادیده می‌گیرد.
 
-## معماری Job ناهمزمان (Async Job Architecture)
+## معماری Job ناهمزمان (Async Job Architecture) {#async-job-architecture}
 
 عملیات‌های پلاگین طولانی‌مدت (تولید، نصب) به عنوان **Job ناهمزمان (async jobs)** با ردیابی پیشرفت زنده ارسال می‌شوند. رابط چت هوش مصنوعی برای پیشرفت مانیتورینگ (poll) کرده و به‌روزرسانی‌های وضعیت را به کاربر استریم می‌کند:
 

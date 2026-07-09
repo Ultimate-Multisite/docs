@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent er sjálfstæður WordPress AI aðstoðarmaður sem getur skipulagt, byggt og stýrt fullbúnum WordPress vefjum með leiðbeiningum á náttúrulegu máli. Hann býður upp á skipulagt safn af **getum** — aðskildum, prófanlegum aðgerðum sem agent getur kallað á — sem ná yfir allt frá efnisstjórnun til sérsniðinnar hönnunarkerfis. Útgáfa 1.9.0 bætir við getum til efnissköpunar, sjónrænni yfirferð síðna með skjáskotum viðskiptavinarmegin, fimm innbyggðum agent prófílum og eiginleikafánum fyrir aðgangsstýringu og vörumerkingu.
 
-## Helstu eiginleikar
+## Helstu eiginleikar {#key-features}
 
 - **Getukerfi** — einingaskipt, stækkanlegt safn aðgerða sem agent getur kallað á í WordPress uppsetningunni þinni
 - **Efnisstjórnun** — búa til færslur og síður (þar á meðal úthluta síðusniðmátum), búa til margar færslur í runu í einu kalli, stilla einkennismyndir og byggja tengiliðaform
@@ -28,21 +28,21 @@ Gratis AI Agent er sjálfstæður WordPress AI aðstoðarmaður sem getur skipul
 - **Site Builder Orchestration v2** — margra skrefa vefbyggingaráætlanir með plugin uppgötvun, framvindurakningu og villubata
 - **WP-CLI viðmiðunarprófsskipun** — keyra viðmiðunarprófasvítu getu agentsins af skipanalínu fyrir CI og mats á líkönum
 
-## Kröfur
+## Kröfur {#requirements}
 
 - WordPress 6.0 eða nýrra
 - PHP 8.1 eða nýrra
 - WordPress Multisite (virkjað á neti) eða uppsetning á einum vef
 - Virkt tengi-plugin fyrir AI þjónustuveitu (Anthropic, OpenAI eða samhæft)
 
-## Uppsetning
+## Uppsetning {#installation}
 
 1. Hladdu plugin-skránum upp í `/wp-content/plugins/gratis-ai-agent`
 2. Virkjaðu plugin í gegnum **Plugins** skjáinn í WordPress
 3. Farðu í **Gratis AI Agent → Settings** og tengdu AI þjónustuveituna þína
 4. (Valfrjálst) Skoðaðu **Abilities Registry** til að setja upp viðbótargetupakka
 
-## Fljótleg byrjun
+## Fljótleg byrjun {#quick-start}
 
 Þegar það hefur verið virkjað og tengt við AI þjónustuveitu skaltu opna **Gratis AI Agent** spjaldið í stjórnendahliðarstikunni í WordPress. Sláðu inn leiðbeiningu á náttúrulegu máli og agent mun skipuleggja og framkvæma nauðsynleg skref með tiltækum getum sínum.
 
@@ -60,7 +60,7 @@ Settu dökkstillingar-litaspjald inn í þemað og stilltu aðallitinn á #1a1a2
 Byggðu veitingastaðavef með netmatseðli, bókunarformi og tengiliðasíðu.
 ```
 
-## Yfirlit yfir getur
+## Yfirlit yfir getur {#abilities-overview}
 
 Getur eru grunnaðgerðirnar sem agent getur framkvæmt. Hver geta er skráður PHP klasi sem birtir schema (færibreytur og skilagerðir) sem agent les við keyrslu. Getum er skipt í virknisvið:
 
@@ -79,7 +79,7 @@ Getur eru grunnaðgerðirnar sem agent getur framkvæmt. Hver geta er skráður 
 
 Sjá [Abilities tilvísun](./abilities) fyrir fulla færibreytuskjölun og notkunardæmi.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent inniheldur `wp gratis-ai-agent` skipanafjölskyldu til að keyra viðmiðunarpróf og stjórna getum af skipanalínu. Sjá [WP-CLI tilvísun](./wp-cli) fyrir allan skipanalistann.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Stillingar
+## Stillingar {#configuration}
 
 Allar stillingar eru undir **Gratis AI Agent → Settings** í WordPress stjórnborðinu:
 
@@ -106,7 +106,7 @@ Allar stillingar eru undir **Gratis AI Agent → Settings** í WordPress stjórn
 | **Ability Timeout** | Hámarksfjöldi sekúndna sem stök geta má keyra (sjálfgefið 30) |
 | **Debug Logging** | Skrá getuköll og rökhugsun agentsins í WordPress villuleitarskrána |
 
-## Öryggisblokkunarlisti valkostastjórnunar
+## Öryggisblokkunarlisti valkostastjórnunar {#options-management-safety-blocklist}
 
 Getan fyrir valkostastjórnun inniheldur innbyggðan bannlista sem kemur í veg fyrir að agentinn lesi eða skrifi viðkvæma WordPress valkosti. Sjálfgefni bannlistinn nær yfir:
 
@@ -118,26 +118,26 @@ Getan fyrir valkostastjórnun inniheldur innbyggðan bannlista sem kemur í veg 
 
 Hægt er að bæta við fleiri færslum í gegnum `gratis_ai_agent_options_blocklist` síuna.
 
-## Hooks og síur
+## Hooks og síur {#hooks-and-filters}
 
-### Aðgerðir
+### Aðgerðir {#actions}
 
 - `gratis_ai_agent_ability_registered` — keyrt eftir að geta er skráð, fær heiti getuklasans
 - `gratis_ai_agent_plan_started` — keyrt þegar áætlun síðusmiðs hefst í framkvæmd
 - `gratis_ai_agent_plan_completed` — keyrt þegar áætlun lýkur með góðum árangri
 - `gratis_ai_agent_plan_failed` — keyrt þegar áætlun lendir í óafturkræfri villu
 
-### Síur
+### Síur {#filters}
 
 - `gratis_ai_agent_abilities` — breyta skráða getulistanum áður en agentinn hleður honum
 - `gratis_ai_agent_options_blocklist` — stækka eða minnka öryggisbannlista valkosta
 - `gratis_ai_agent_benchmark_questions` — bæta sérsniðnum viðmiðunarspurningum við matsvítuna
 - `gratis_ai_agent_plan_plugins` — breyta uppgötvunarlista viðbóta við myndun síðáætlunar
 
-## Aðstoð
+## Aðstoð {#support}
 
 Fyrir aðstoð skaltu heimsækja [ultimatemultisite.com](https://ultimatemultisite.com) eða opna mál í viðbótargeymslunni.
 
-## Breytingaskrá
+## Breytingaskrá {#changelog}
 
 Sjá [Breytingaskrá](./changelog) fyrir alla útgáfusöguna.

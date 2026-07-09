@@ -3,11 +3,11 @@ title: Ylätunnisteen verkkotunnushaku
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Ylätunnisteen verkkotunnushaku
+# Ylätunnisteen verkkotunnushaku {#header-domain-search}
 
 Käytä tätä asetusta, kun haluat pienen ylätunnistelomakkeen, joka käynnistää verkkotunnushaun ja antaa asiakkaan sitten valita saatavilla olevista verkkotunnuksista Ultimate Multisite checkoutissa.
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 
 - Ultimate Multisite verkkoaktiivisena.
 - Multisite Ultimate Domain Seller verkkoaktiivisena.
@@ -16,7 +16,7 @@ Käytä tätä asetusta, kun haluat pienen ylätunnistelomakkeen, joka käynnist
   - Tuetut TLD:t määritettyinä, esimerkiksi `com`, `net` ja `org`.
 - Kelvollinen checkout-lomake, joka sisältää **Verkkotunnuksen valinta** -kentän.
 
-## Checkout-lomake
+## Checkout-lomake {#checkout-form}
 
 1. Luo tai muokkaa rekisteröintisivun käyttämää checkout-lomaketta.
 2. Lisää tavalliset pakolliset checkout-/Account-kentät, mukaan lukien **Käyttäjätunnus**. Checkout-lomake, joka sisältää vain verkkotunnuskentän, hylätään Ultimate Multisite -validoinnissa.
@@ -30,7 +30,7 @@ Rekisteröintisivun tulisi näyttää checkout-lomake, esimerkiksi:
 [wu_checkout slug="domain-form"]
 ```
 
-## Ylätunnistelomake
+## Ylätunnistelomake {#header-form}
 
 Lisää sivuston ylätunnisteeseen pieni `GET`-lomake, joka lähettää syötetyn hakutermin checkout-sivulle muodossa `domain_name`:
 
@@ -44,7 +44,7 @@ Lisää sivuston ylätunnisteeseen pieni `GET`-lomake, joka lähettää syötety
 
 Älä esivalitse verkkotunnusta mukautetulla ylätunnisteen JavaScriptillä. Ylätunnisteen tulisi vain välittää hakutermi. Domain Seller -checkout-skripti lukee `?domain_name=example`, täyttää checkoutin hakukentän ja suorittaa saatavuushaun, jotta asiakas voi valita palautetuista verkkotunnuksista.
 
-## Odotettu toiminta
+## Odotettu toiminta {#expected-behaviour}
 
 Haun `example` ylätunnisteessa tulisi avata:
 
@@ -61,7 +61,7 @@ Checkoutin tulisi sitten näyttää valittavia tuloksia, kuten:
 
 Kun saatavilla oleva tulos on valittu, tilauksen yhteenvedon tulisi sisältää verkkotunnuksen rekisteröintituote ja valittu verkkotunnus.
 
-## Varmistaminen
+## Varmistaminen {#verification}
 
 1. Avaa etusivu.
 2. Hae paljasta nimeä, esimerkiksi `example`.
@@ -71,7 +71,7 @@ Kun saatavilla oleva tulos on valittu, tilauksen yhteenvedon tulisi sisältää 
 6. Napsauta saatavilla olevan verkkotunnuksen kohdalla **Valitse**.
 7. Varmista, että tilauksen yhteenveto sisältää `Verkkotunnuksen rekisteröinti - example.com` tai valitun verkkotunnuksen.
 
-## Vianmääritys
+## Vianmääritys {#troubleshooting}
 
 - Jos luetteloa ei näy, tarkista selaimen verkkovälilehdeltä `admin-ajax.php?action=wu_domain_search` ja varmista, että se palauttaa ei-tyhjän `domains`- tai `results`-arvon.
 - Jos checkout-lomakkeen validointi epäonnistuu tallennettaessa, lisää pakolliset Account-kentät, kuten **Käyttäjätunnus**.

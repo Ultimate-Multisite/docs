@@ -3,17 +3,17 @@ title: 'Phunziro 9: Kuyika Mitengo Kuti Mupeze Phindu'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Phunziro 9: Mitengo ya Phindu
+# Phunziro 9: Mitengo ya Phindu {#lesson-9-pricing-for-profit}
 
 Mu Phunziro 5 tinakhazikitsa mitengo yoyambirira ya madongosolo a FitSite. Tsopano tikukonza bwino njira ya mitengo ndi njira zomwe zimawonjezera ndalama, kulimbikitsa kukweza madongosolo, ndi kuchepetsa makasitomala kusiya ntchito.
 
-## Pomwe Tinasiira
+## Pomwe Tinasiira {#where-we-left-off}
 
 FitSite ili ndi madongosolo, ma template, kulipira, branding, ndi onboarding zokonzeka. Mitengo yoyambirira inali $49/$99/$199 pa mwezi. Tsopano tikupangitsa mitengoyo kugwira ntchito mwamphamvu.
 
-## Mfundo za Mitengo pa Mapulatifomu a Msika Wapadera
+## Mfundo za Mitengo pa Mapulatifomu a Msika Wapadera {#pricing-principles-for-niche-platforms}
 
-### Ikani Mtengo Potengera Phindu, Osati Mtengo Wanu
+### Ikani Mtengo Potengera Phindu, Osati Mtengo Wanu {#price-on-value-not-cost}
 
 Ndalama zanu za hosting zitha kukhala $5-$15 pa site ya kasitomala. Izi sizikutanthauza kuti mtengo wanu uyenera kukhala $20. Simukugulitsa hosting. Mukugulitsa:
 
@@ -24,7 +24,7 @@ Ndalama zanu za hosting zitha kukhala $5-$15 pa site ya kasitomala. Izi sizikuta
 
 Ikani mtengo potengera phindu lomwe mumapereka, osati mtengo wopereka phindulo.
 
-### Yerekezani ndi Njira Zina
+### Yerekezani ndi Njira Zina {#anchor-to-alternatives}
 
 Mwini studio ya fitness akamayesa FitSite, amaiyerekezera ndi:
 
@@ -34,7 +34,7 @@ Mwini studio ya fitness akamayesa FitSite, amaiyerekezera ndi:
 
 Pa $49-$199/mwezi, FitSite ndi yotsika mtengo kuposa developer, ili ndi mphamvu zambiri kuposa omanga wamba, ndipo ndi yabwino kwambiri kuposa kusakhala ndi website.
 
-## Kukhazikitsa Kusiyanasiyana kwa Mitengo
+## Kukhazikitsa Kusiyanasiyana kwa Mitengo {#implementing-price-variations}
 
 Mitengo yapachaka imalimbikitsa kudzipereka ndipo imachepetsa kusiya ntchito. Pitani ku tabu ya **Kusiyanasiyana kwa Mitengo** ya dongosolo lililonse ndipo onjezani zosankha zapachaka:
 
@@ -46,12 +46,12 @@ Mitengo yapachaka imalimbikitsa kudzipereka ndipo imachepetsa kusiya ntchito. Pi
 
 Onjezani field ya **Kusankha Nthawi** ku fomu yanu yolipirira kuti makasitomala athe kusintha pakati pa kulipira pamwezi ndi pachaka. Onani [Mafomu Olipirira](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Chifukwa Chimene Mitengo Yapachaka Imagwirira Ntchito
+### Chifukwa Chimene Mitengo Yapachaka Imagwirira Ntchito {#why-annual-pricing-works}
 
 - **Kwa inu**: Ndalama zolipidwa poyambira, kusiya ntchito kochepa (makasitomala omwe amalipira pachaka amakhala osavuta kusaletsa pakati pa nthawi)
 - **Kwa iwo**: Kusunga ndalama zenizeni, kudziwa bajeti pasadakhale
 
-## Ndalama Zokhazikitsira
+## Ndalama Zokhazikitsira {#setup-fees}
 
 Ganizirani za ndalama zokhazikitsira kamodzi kwa madongosolo omwe akuphatikiza kukonza ndi manja:
 
@@ -61,7 +61,7 @@ Ganizirani za ndalama zokhazikitsira kamodzi kwa madongosolo omwe akuphatikiza k
 
 Konzani ndalama zokhazikitsira pa gawo la mitengo la dongosolo lililonse. Onani [Kupanga Subscription Product Yanu Yoyamba](/user-guide/configuration/creating-your-first-subscription-product) kuti mudziwe zambiri.
 
-## Nthawi Zoyesera
+## Nthawi Zoyesera {#trial-periods}
 
 Kupereka kuyesa kumachepetsa zovuta zolembetsa koma kumabweretsa chiopsezo choti kasitomala asasinthe kukhala wolipira. Kwa FitSite:
 
@@ -70,11 +70,11 @@ Kupereka kuyesa kumachepetsa zovuta zolembetsa koma kumabweretsa chiopsezo choti
 
 Konzani kuyesa pa gawo la mitengo la dongosolo la Starter potsegula toggle ya **Perekani Kuyesa** ndi kuyika nthawi kukhala masiku 7.
 
-### Kupangitsa Mayesero Kusintha Kukhala Malipiro
+### Kupangitsa Mayesero Kusintha Kukhala Malipiro {#making-trials-convert}
 
 Kuyesa kumagwira ntchito kokha ngati kasitomala akumva phindu pa nthawi yoyesera. Ndondomeko yanu ya onboarding (Phunziro 8) ndi yofunika kwambiri pano -- maimelo olandirira ayenera kutumizidwa pa nthawi yoyenera kuti alimbikitse kuchita nawo mkati mwa masiku 7.
 
-## Ma Code Ochotsera
+## Ma Code Ochotsera {#discount-codes}
 
 Pangani ma code ochotsera mwanzeru pa zolinga zapadera:
 
@@ -88,7 +88,7 @@ Pitani ku **Ultimate Multisite > Ma Code Ochotsera** kuti mupange awa. Onani [Ku
 Discounts should be strategic tools, not permanent fixtures. If everyone gets a discount, it is not a discount -- it is your real price. Use them for specific campaigns, referrals, and time-limited promotions.
 :::
 
-## Kusamalira Misonkho
+## Kusamalira Misonkho {#tax-handling}
 
 Ngati mumagwira ntchito m'dera lomwe limafuna kusonkhanitsa msonkho:
 
@@ -98,7 +98,7 @@ Ngati mumagwira ntchito m'dera lomwe limafuna kusonkhanitsa msonkho:
 
 Onani [Kusamalira Misonkho](/user-guide/payment-gateways/tax-handling) kuti mupeze kukonza mwatsatanetsatane. Ngati mumatumikira makasitomala padziko lonse, ganizirani za [VAT addon](/addons/vat) kuti mutsatire malamulo a EU.
 
-## Kuwunikanso Mitengo Yanu
+## Kuwunikanso Mitengo Yanu {#reviewing-your-pricing}
 
 Pambuyo pa launch, bwerezaninso mitengo miyezi itatu iliyonse. Yang'anani pa:
 
@@ -107,7 +107,7 @@ Pambuyo pa launch, bwerezaninso mitengo miyezi itatu iliyonse. Yang'anani pa:
 - **Kusiya ntchito pa dongosolo**: Ngati makasitomala apachaka amasiya ntchito pang'ono, limbikitsani mitengo yapachaka kwambiri
 - **Mitengo ya opikisana nawo**: Njira zina zikulipiritsa chiyani? Kodi muli pamalo oyenera?
 
-## Netiweki ya FitSite Mpaka Pano
+## Netiweki ya FitSite Mpaka Pano {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Zimene Tinapanga mu Phunziroli
+## Zimene Tinapanga mu Phunziroli {#what-we-built-this-lesson}
 
 - **Mitengo yapachaka** yokhala ndi kuchotsera kwa 20% kulimbikitsa kudzipereka
 - **Malipiro oyambitsa** pa magawo apamwamba kuti akwaniritse ntchito yolandira ndi kukhazikitsa

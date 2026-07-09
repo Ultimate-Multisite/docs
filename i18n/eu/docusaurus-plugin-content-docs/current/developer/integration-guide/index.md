@@ -3,13 +3,13 @@ title: Integrazio-gida
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrazio-gida
+# Integrazio-gida {#integration-guide}
 
 Gida honek Ultimate Multisite-rekin ohiko integrazio-ereduak azaltzen ditu, kanpoko zerbitzuetara konektatzea, ordainketa-pasabide pertsonalizatuak eraikitzea eta webhooks kudeatzea barne.
 
 Maizter-azpiegitura isolaturako, ikusi [Multi-Tenancy integrazioa](./multi-tenancy), maizter subiranoaren hasieratzerako, migrazioaren egiaztapenerako, SSO-rako eta desegiterako jarraibideetarako.
 
-## CRM integrazioa
+## CRM integrazioa {#crm-integration}
 
 Sinkronizatu bezeroen datuak zure CRM-rekin bezero berriek izena ematen dutenean:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitika-integrazioa
+## Analitika-integrazioa {#analytics-integration}
 
 Jarraitu negozio-gertaera nagusiei bezeroaren bizi-ziklo osoan:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Hurrengo urratsak
+## Hurrengo urratsak {#next-steps}
 
 - [Pasabide pertsonalizatuaren garapena](./custom-gateway) — Eraiki zure ordainketa-pasabide propioa
 - [Webhook-en kudeaketa](./webhooks) — Sortu webhook endpoint pertsonalizatuak

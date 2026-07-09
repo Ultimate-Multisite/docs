@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe Njikọta WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Ndekọ mgbanwe njikọta WooCommerce
+# Ndekọ mgbanwe njikọta WooCommerce {#woocommerce-integration-changelog}
 
 Ụdị 2.2.0 - Ewepụtara na 2026-07-01
 * Ọhụrụ: Ọnụ ego ụtụ Ultimate Multisite na-apụta ugbu a dị ka ahịrị ụgwọ WooCommerce dị iche iche n'ebe ịkwụ ụgwọ, na-eme ka mkpokọta ụtụ doo anya tupu ịkwụ ụgwọ.

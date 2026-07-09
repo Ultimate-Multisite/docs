@@ -4,13 +4,13 @@ title: Filtar - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filtar: wu_contains_element
+# Filtar: wu_contains_element {#filter-wucontainselement}
 
 Omogućuje developerima promjenu rezultata početnog pretraživanja.
 
 Ovo je korisno za third-party buildere i slično.
 
-## Parametri
+## Parametri {#parameters}
 
 | Naziv | Tip | Opis |
 |------|------|-------------|
@@ -19,9 +19,9 @@ Ovo je korisno za third-party buildere i slično.
 | $element | `self` | Trenutačni element. |
 | $post | `null\|\WP_Post` | Objava za provjeru. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definirano u [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) u retku 534

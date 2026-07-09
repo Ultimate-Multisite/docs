@@ -3,11 +3,11 @@ title: Nahoana ny Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Nahoana ny Ultimate Multisite
+# Nahoana ny Ultimate Multisite {#why-ultimate-multisite}
 
 Raha tonga amin'ity lahatsoratra ity ianao, dia mety nandre fa azo inoana fa vahaolana ho an'ny fanatanterahana hevitry ny fandraharahanao no ilay plugin nataontsika. Manantena izahay fa hahita ny valiny ilainareo amin'ny faran'ity lahatsoratra ity ianao.
 
-## Inona no Ultimate Multisite?
+## Inona no Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ny Ultimate Multisite dia WordPress Multisite plugin izay ahafahanao manolotra mpanjifa WaaS (Website as a Service). Amin'ity plugin-tsika ity, afaka manana teti-bola fizarana samihafa ianao ary azo atao ny mandoanana vola miverimberina avy amin'ny mpanjifa mba hanana toerana ho an'ny tranokala ao anatin'ny tambajotra Multisite anareo.
 
@@ -15,7 +15,7 @@ Ny Ultimate Multisite dia ahafahanao mandray ny fiantohana (payments) amin'ny va
 
 Ary ity dia vao fanombohana ihany satria afaka manitatra ny asany ianao amin'ny alalan'ny add-ons sy webhooks.
 
-## Torohevitra hafa
+## Torohevitra hafa {#other-features}
 
 Ny Ultimate Multisite dia manolotra zavatra hafa koa:
 
@@ -33,11 +33,11 @@ Ary zavatra hafa mahomby kokoa:
 
 * Search and Replace API: Afaka manasongadina (annotate) ireo site templates ianao amin'ny alalan'ny placeholder toy ny {{site_name}} ary mampiasa ny Search and Replace API mba hampangataka azy ireo ho feno avy ao anatin'ny fampahalalana omen'ny mpanjifanao rehefa vita ny fidirana, ahoana izany dia automatique.
 
-## Fampiasana (Use cases)
+## Fampiasana (Use cases) {#use-cases}
 
 Izaho dia fotoana hanazavana ny fomba azo ampiasana ny Ultimate Multisite.
 
-### Tranga 1: Antsoian-tanana (An Agency)
+### Tranga 1: Antsoian-tanana (An Agency) {#case-1-an-agency}
 
 Matetika, ny fahaizana fototra an'ny antsoian-tanana dia eo amin'ny famolavolana tranonkala izay misy lafiny toy ny fanomezana hosting na marketing ho serivisy fanampiny.
 
@@ -47,7 +47,7 @@ Ny fanaraha-maso mafy amin'ireo plugin sy theme dia mitazona eo amin'ny fototry 
 
 Ny agensi dia hahazo fiadanana amin'ny alalan'ny Ultimate Multisite izay mamela azy hanao izay mahay indrindra - famolavolana tranonkala tsara tarehy.
 
-### Tranga 2: Mpamatsy manokana (Niche Provider)
+### Tranga 2: Mpamatsy manokana (Niche Provider) {#case-2-niche-provider}
 
 Misy fitenenana taloha hoe, “Manaova iray zavatra ary ataovy tsara”. Ho an'ny matihanina maro dia midika izany ny famoronana vokatra na serivisy mifototra amin'ny hevitra fototra tokana.
 
@@ -57,7 +57,7 @@ Iray amin'ireo fahaiza-manao vaovao an'ny Ultimate Multisite, ny template site d
 
 Ho an'ny mpamatsy site sy serivisy manokana, izany dia manome tombony tsy manam-paharoana amin'ny fahafahana mamorona site vonona avy hatrany miaraka amin'ny plugin sy famolavolana manokana. Ny mpanjifa dia mila manome fampidirana kely ihany mba hanatanterahana ny serivisy.
 
-### Tranga 3: Hosting WordPress
+### Tranga 3: Hosting WordPress {#case-3-wordpress-web-hosting}
 
 Misy fomba maro ianao amin'ny fanomezana hosting ho an'ny site WordPress, saingy tsy mora toy ny manome toerana web ho an'ny mpanjifa miaraka amin'ny dikan-teny efa voasokajy (pre-installed) ny WordPress. Izany no satria misy fanapahan-kevitra sy zavatra tokony hodinihina mba hanomezana serivisy mahasoa.
 

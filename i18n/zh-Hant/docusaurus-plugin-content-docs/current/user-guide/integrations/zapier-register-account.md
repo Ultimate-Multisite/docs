@@ -3,7 +3,7 @@ title: 透過 Zapier 註冊 Account
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# 事件：透過 Zapier 註冊 Account
+# 事件：透過 Zapier 註冊 Account {#event-register-an-account-via-zapier}
 
 在文章 [整合 Ultimate Multisite 與 Zapier](zapier.md) 中，我們討論了如何使用 Zapier 根據觸發條件與事件，在 Ultimate Multisite 內執行不同動作。在本文中，我們將示範如何整合第三方應用程式。我們將使用 Google Sheets 作為資料來源，並將資訊傳送到 Ultimate Multisite 以註冊 Account。
 

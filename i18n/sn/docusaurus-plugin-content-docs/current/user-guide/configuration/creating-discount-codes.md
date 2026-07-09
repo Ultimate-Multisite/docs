@@ -3,13 +3,13 @@ title: Kugadzira Kodesi dzemakuru
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kuratira Codes (v2)
+# Kuratira Codes (v2) {#creating-discount-codes-v2}
 
 _**CHINDIRA CHINDIRA: Iriro rudo: Iriro rudo: Ultimate Multisite version 2.x.**_
 
 Ndinenge nemunenge kuti ndinenge kuita kuratira codes kuitira vana vako zvinhu zvakawanda (discounts) pamusoro pe subscriptions yavo. uye kuratira kunenge kune kune!
 
-## Kuratira neKutambura Codes
+## Kuratira neKutambura Codes {#creating-and-editing-discount-codes}
 
 Kuti utatire kana kutambura discount code, ndichida kuti uenda ku **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Coupon iye ndeyekuti yakanzira kuenda munzvimbo yako uye, kubva pano, unogona ku
 
 ###
 
-### Kuti Unenge Uye URL Parameters:
+### Kuti Unenge Uye URL Parameters: {#using-url-parameters}
 
 Kana uchida kuita kuti upfanye zvinhu izvi kune pricing tables dzako kana ukubatanidza coupon code pane checkout form yako nekuda kwewebsite yako, unogona kutamba iye kuburikidza neURL parameters.
 

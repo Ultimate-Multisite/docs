@@ -3,13 +3,13 @@ title: Sivuston rakentamisen tilan poistominen ilmoitus
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Sivustiedonrakennusmuodon poistomääräys
+# Sivustiedonrakennusmuodon poistomääräys {#site-builder-mode-removal-notice}
 
 **Sivustotiedonrakennusmalli on poistettu Superdav AI Agent v1.12.0:ssa.** Jos käytit sivustotiedonrakennusmallia, sinun tulee siirtyä **Setup Assistant -agenttiin** teemojen luomiseen ja sivuston asetteluun.
 
-## Mitä tapahtui?
+## Mitä tapahtui? {#what-happened}
 
-### Sivustotiedonrakennusmalli (Vanha versio)
+### Sivustotiedonrakennusmalli (Vanha versio) {#site-builder-mode-legacy}
 
 Sivustotiedonrakennusmalli oli ohjekirjasto-pohjainen käyttöliittymä seuraaville tehtäville:
 
@@ -18,7 +18,7 @@ Sivustotiedonrakennusmalli oli ohjekirjasto-pohjainen käyttöliittymä seuraavi
 - Teeman valinta
 - Alkuperäisen sisällön asettelu
 
-### Mitä sen tilalle on tullut?
+### Mitä sen tilalle on tullut? {#what-replaced-it}
 
 **Setup Assistant -agentti** hoitaa nyt kaikki sivustotiedonrakennusmallin toiminnot seuraavasti:
 
@@ -27,15 +27,15 @@ Sivustotiedonrakennusmalli oli ohjekirjasto-pohjainen käyttöliittymä seuraavi
 - Teemojen rakentamisen (Theme Builder) sisäänpääsyyn integrointi
 - Jatkuva sivustotiedon (`site_brief`) muisti tulevia istuntoja varten
 
-## Jos käytit Sivustotiedonrakennusmallia
+## Jos käytit Sivustotiedonrakennusmallia {#if-you-were-using-site-builder-mode}
 
-### Sivustosi ovat turvassa
+### Sivustosi ovat turvassa {#your-sites-are-safe}
 
 - Sivustot, jotka luotiin käyttäen Sivustotiedonrakennusmallia, jatkavat toimimista
 - Ei datan menetyksiä tai sivuston häiriöitä
 - Voit jatkaa sivustojesi hallintaa normaalisti
 
-### Siirry Setup Assistant -agenttiin
+### Siirry Setup Assistant -agenttiin {#migrate-to-setup-assistant-agent}
 
 Uusien sivustojen asennukseen tai teemojen muutoksiin käytä Setup Assistant -agenttia:
 
@@ -51,7 +51,7 @@ tai
 
 Setup Assistant -agentti tarjoaa saman toiminnallisuuden joustavammalla tavalla.
 
-## Vertailu: Sivustotiedonrakennusmalli vs. Setup Assistant
+## Vertailu: Sivustotiedonrakennusmalli vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Ominaisuus | Sivustotiedonrakennusmalli (Poistettu) | Setup Assistant (Uusi) |
 |---|---|---|
@@ -62,9 +62,9 @@ Setup Assistant -agentti tarjoaa saman toiminnallisuuden joustavammalla tavalla.
 | Tulevat istunnot | Toistettu asennus | Käytä tallennettua site_briefia |
 | Joustavuus | Kiinteä työnkulku | Soveltuva keskustelu |
 
-## Siirtyminen Setup Assistant -agenttiin
+## Siirtyminen Setup Assistant -agenttiin {#migrating-to-setup-assistant-agent}
 
-### Uusille sivuille
+### Uusille sivuille {#for-new-sites}
 
 Vai Site Builder -tilaa:
 
@@ -76,7 +76,7 @@ Vai Site Builder -tilaa:
    - Teeman luominen
    - Aluksi asetusten määritys
 
-### Olemassa oleville sivuille
+### Olemassa oleville sivuille {#for-existing-sites}
 
 Jos sinulla on olemassa oleva sivu Site Builder -tilasta:
 
@@ -85,7 +85,7 @@ Jos sinulla on olemassa oleva sivu Site Builder -tilasta:
 3. Asennusassistentti-agent auttaa sinua luomaan uuden teeman
 4. Sivustodatan pysyy muuttumattomana
 
-### Teemojen muutoksi
+### Teemojen muutoksi {#for-theme-changes}
 
 Site Builder -tilan sijaan:
 
@@ -95,9 +95,9 @@ Site Builder -tilan sijaan:
    - Luo räätälöidyn teeman
    - Aktivoi sen sivustollasi
 
-## Keskeiset erot
+## Keskeiset erot {#key-differences}
 
-### Site Builder Mode (Sivuston rakentamisohjelmoiminen)
+### Site Builder Mode (Sivuston rakentamisohjelmoiminen) {#site-builder-mode}
 
 ```
 1. Valitse malli
@@ -106,7 +106,7 @@ Site Builder -tilan sijaan:
 4. Valmis
 ```
 
-### Setup Assistant Agent (Asennusassistentti-agentti)
+### Setup Assistant Agent (Asennusassistentti-agentti) {#setup-assistant-agent}
 
 ```
 1. Kuvaile sivustosi tarkoitus
@@ -117,42 +117,42 @@ Site Builder -tilan sijaan:
 6. Sivuston tiivistelmä tallennetaan tulevia istuntoja varten
 ```
 
-## Setup Assistant Agentin edut
+## Setup Assistant Agentin edut {#benefits-of-setup-assistant-agent}
 
-### Joustavampi
+### Joustavampi {#more-flexible}
 
 - Kuvaile sivustosi luonnollisella kielellä
 - Saat räätälöityjä suosituksia
 - Sovitaan omiin tarpeisiisi
 
-### Parempi räätälöinti
+### Parempi räätälöinti {#better-customization}
 
 - Räätälöidyn teeman luominen
 - Suunnittelujärjestelmän päätökset (Design system decisions)
 - Jatkuvat suunnittelutunnisteet (Persistent design tokens)
 
-### Jatkuva muisti
+### Jatkuva muisti {#persistent-memory}
 
 - Sivuston tiivistelmä (`site_brief`) tallennetaan
 - Tulevat agentit ymmärtävät sivustosi
 - Ei tarvetta toistaa asennusasiakirjaa
 
-### Integroitu työnkulku
+### Integroitu työnkulku {#integrated-workflow}
 
 - Teeman rakentaminen (Theme Builder onboarding)
 - Suunnittelujärjestelmän esteettinen taito (Design System Aesthetics skill)
 - Näkyvyyshallintatoiminnot (Ability Visibility controls)
 - Kaikki toimivat saumattomasti yhdessä
 
-## Ongelmanratkaisu
+## Ongelmanratkaisu {#troubleshooting}
 
-### En löydä Site Builder -tilaa
+### En löydä Site Builder -tilaa {#i-cant-find-site-builder-mode}
 
 Site Builder -tila on poistettu. Käytä sen sijaan Setup Assistant Agentia:
 
 "Autaudu uuden sivuston asennus"
 
-### Haluan luoda sivuston uudelleen Site Builderista
+### Haluan luoda sivuston uudelleen Site Builderista {#i-want-to-recreate-a-site-from-site-builder}
 
 Voit tehdä tämän Setup Assistant -agentin avulla:
 
@@ -161,7 +161,7 @@ Voit tehdä tämän Setup Assistant -agentin avulla:
 3. Agentti luo sinulle samankaltaisen teeman
 4. `site_brief` tallennetaan tulevaa viittausta varten
 
-### Olemassa oleva Site Builder -sivusto ei toimi
+### Olemassa oleva Site Builder -sivusto ei toimi {#my-existing-site-builder-site-isnt-working}
 
 Site Builder -tavalla luodut sivustot jatkavat toimimista. Jos kohtaat ongelmia:
 
@@ -170,7 +170,7 @@ Site Builder -tavalla luodut sivustot jatkavat toimimista. Jos kohtaat ongelmia:
 3. Tarkista WordPressin virhesivuja (error logs)
 4. Ota yhteyttä tukeen, jos ongelmat jatkuvat
 
-### Voinko käyttää vanhoja Site Builder -mallineja?
+### Voinko käyttää vanhoja Site Builder -mallineja? {#can-i-still-use-my-old-site-builder-templates}
 
 Site Builder -mallit eivät ole enää saatavilla. Kuitenkin:
 
@@ -178,14 +178,14 @@ Site Builder -mallit eivät ole enää saatavilla. Kuitenkin:
 - Voit luoda samankaltaisia sivustoja Setup Assistant -agentin avulla
 - Setup Assistant -agentti tarjoaa enemmän räätälöintimahdollisuuksia
 
-## Seuraavat askeleet
+## Seuraavat askeleet {#next-steps}
 
 1. **Uusille sivuille**: Käytä Setup Assistant -agenttia
 2. **Olemassa oleville sivuille**: Jatka käyttämään niitä sellaisina
 3. **Teeman muutoksi**: Pyydä apua Setup Assistant -agentilta
 4. **Suunnittelun hienosäätöön**: Käytä Design System Aesthetics -taitoa
 
-## Aiheeseen liittyvät aiheet
+## Aiheeseen liittyvät aiheet {#related-topics}
 
 - **Theme Builder Onboarding**: Ohjattu asennus räätälöityihin teemoihin
 - **Setup Assistant Agent**: Agentin ohjaama sivuston asennus

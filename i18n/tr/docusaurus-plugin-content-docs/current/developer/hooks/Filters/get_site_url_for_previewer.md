@@ -4,23 +4,23 @@ title: Filter - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Filtre: get_site_url_for_previewer
+# Filtre: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
 
 Eklenti geliştiricilerinin önizleyicide kullanılan URL'yi filtrelemesine olanak tanır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | İsim | Tip | Açıklama |
 |------|------|-------------|
 | $domain | `string` | Şu anda kullanılan varsayılan alan adıdır. Manipülasyonlar için kullanışlıdır. |
 | $domain_options | `array` | Ultimate Multisite Ayarları -> Ağ Ayarları -> Alan Adı Seçenekleri'ne girilen tüm alan adı seçeneklerinin listesi. |
 
-### Kullanılmaya Başladığı Versiyon
+### Kullanılmaya Başladığı Versiyon {#since}
 
 - 1.7.2
-### Kaynak
+### Kaynak {#source}
 
 [`inc/checkout/class-legacy-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-legacy-checkout.php#L812) dosyasında 812. satırda tanımlanmıştır.
 
-## Dönüş Değeri
+## Dönüş Değeri {#returns}
 Kullanılacak yeni alan adı.

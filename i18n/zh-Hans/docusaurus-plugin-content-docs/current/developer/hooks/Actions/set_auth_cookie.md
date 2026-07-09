@@ -4,11 +4,11 @@ title: 动作 - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# 动作: set_auth_cookie
+# 动作: set_auth_cookie {#action-setauthcookie}
 
 在设置身份验证 cookie 之前立即触发。
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|------|
@@ -19,11 +19,11 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | 身份验证方案。值包括 'auth' 或 'secure_auth'。 |
 | $token | `string` | 用于此 cookie 的用户会话令牌。 |
 
-### 版本
+### 版本 {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> 参数已添加。
 
-### 源码
+### 源码 {#source}
 
 在 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) 第 124 行定义

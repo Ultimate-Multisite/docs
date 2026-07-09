@@ -3,15 +3,15 @@ title: 'Pamoka 11: Klientų paieška'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# 11 pamoka: Klientų paieška
+# 11 pamoka: Klientų paieška {#lesson-11-finding-customers}
 
 Puiki platforma be klientų tėra hobis. Šioje pamokoje aptarsime, kaip pritraukti klientų nišinėje vertikalėje – strategijas, kurios veikia būtent todėl, kad esate susitelkę į vieną industriją.
 
-## Kur sustojome
+## Kur sustojome {#where-we-left-off}
 
 FitSite jau veikia. Dabar reikia, kad fitneso studijų savininkai ją rastų ir užsiregistruotų.
 
-## Kodėl nišinis pritraukimas yra kitoks
+## Kodėl nišinis pritraukimas yra kitoks {#why-niche-acquisition-is-different}
 
 Kai parduodate visiems, konkuruojate dėl dėmesio triukšmingoje rinkoje. Kai parduodate nišai, turite pranašumų:
 
@@ -19,17 +19,17 @@ Kai parduodate visiems, konkuruojate dėl dėmesio triukšmingoje rinkoje. Kai p
 - **Jūsų žinutė iš karto rezonuoja** – „svetainės fitneso studijoms“ sustabdo sporto salės savininką slenkant turinį
 - **Rekomendacijos kaupiasi** – fitneso studijų savininkai pažįsta kitus fitneso studijų savininkus
 
-## 1 kanalas: Tiesioginis kreipimasis
+## 1 kanalas: Tiesioginis kreipimasis {#channel-1-direct-outreach}
 
 Greičiausias kelias iki pirmųjų klientų yra tiesioginis, asmeninis kreipimasis.
 
-### Raskite potencialius klientus
+### Raskite potencialius klientus {#find-prospects}
 
 - Ieškokite Google Maps fitneso studijų, sporto salių ir asmeninių trenerių savo vietovėje
 - Apsilankykite jų dabartinėse svetainėse (arba pasižymėkite, kad jos neturi)
 - Surinkite kontaktinę informaciją iš jų Google Business profilių arba socialinių tinklų
 
-### Įvertinkite jų dabartinę situaciją
+### Įvertinkite jų dabartinę situaciją {#evaluate-their-current-situation}
 
 Kiekvienam potencialiam klientui pasižymėkite:
 
@@ -37,7 +37,7 @@ Kiekvienam potencialiam klientui pasižymėkite:
 - **Prasta svetainė**: Stiprus potencialus klientas – parodykite, kaip atrodo geresnis variantas
 - **Gera svetainė**: Silpnas potencialus klientas – jie jau išsprendė šią problemą
 
-### Užmegzkite kontaktą
+### Užmegzkite kontaktą {#make-contact}
 
 Siųskite suasmenintą el. laišką arba žinutę:
 
@@ -48,7 +48,7 @@ Siųskite suasmenintą el. laišką arba žinutę:
 
 Nesiųskite masinių el. laiškų. Suasmenintas kreipimasis į 20 gerai ištirtų potencialių klientų pranoks bendrinę žinutę 2 000 gavėjų.
 
-## 2 kanalas: Nišinės bendruomenės
+## 2 kanalas: Nišinės bendruomenės {#channel-2-niche-communities}
 
 Fitneso studijų savininkai buriasi konkrečiose vietose internete:
 
@@ -57,7 +57,7 @@ Fitneso studijų savininkai buriasi konkrečiose vietose internete:
 - **Industrijos forumai** ir diskusijų lentos
 - **LinkedIn grupės** fitneso profesionalams
 
-### Kaip dalyvauti
+### Kaip dalyvauti {#how-to-participate}
 
 Neprisijunkite ir iš karto nepristatykite savo produkto. Vietoj to:
 
@@ -66,7 +66,7 @@ Neprisijunkite ir iš karto nepristatykite savo produkto. Vietoj to:
 3. **Dalinkitės, kai aktualu** – kai kas nors klausia apie svetaines, natūraliai pasidalinkite savo platforma
 4. **Kurkite naudingą turinį** – rašykite įrašus apie tai, „kas sudaro puikią fitneso studijos svetainę“, kurie natūraliai veda į jūsų platformą
 
-## 3 kanalas: Turinio rinkodara
+## 3 kanalas: Turinio rinkodara {#channel-3-content-marketing}
 
 Kurkite turinį, kurio ieško fitneso studijų savininkai:
 
@@ -77,7 +77,7 @@ Kurkite turinį, kurio ieško fitneso studijų savininkai:
 
 Skelbkite tai savo FitSite rinkodaros tinklaraštyje. Laikui bėgant šis turinys reitinguojasi paieškos sistemose ir atveda organinį srautą iš žmonių, aktyviai ieškančių to, ką siūlote.
 
-## 4 kanalas: Partnerystės
+## 4 kanalas: Partnerystės {#channel-4-partnerships}
 
 Bendradarbiaukite su verslais, kurie jau aptarnauja fitneso studijas:
 
@@ -88,7 +88,7 @@ Bendradarbiaukite su verslais, kurie jau aptarnauja fitneso studijas:
 
 Pasiūlykite rekomendacijų komisinius arba abipusę reklamą. [AffiliateWP priedas](/addons/affiliatewp) gali padėti sukurti formalią rekomendacijų programą.
 
-## 5 kanalas: Industrijos renginiai
+## 5 kanalas: Industrijos renginiai {#channel-5-industry-events}
 
 Fitneso industrijos renginiai pastato jus prieš šimtus potencialių klientų:
 
@@ -99,7 +99,7 @@ Fitneso industrijos renginiai pastato jus prieš šimtus potencialių klientų:
 
 Jums nereikia didelio biudžeto. Net dalyvavimas kaip dalyviui ir pokalbiai apie tai, ką darote, gali generuoti potencialius klientus.
 
-## 6 kanalas: Pavyzdinės svetainės
+## 6 kanalas: Pavyzdinės svetainės {#channel-6-showcase-sites}
 
 Geriausia jūsų rinkodara yra esamų klientų svetainės. Gavę leidimą:
 
@@ -108,7 +108,7 @@ Geriausia jūsų rinkodara yra esamų klientų svetainės. Gavę leidimą:
 - Paprašykite patenkintų klientų atsiliepimų
 - Skatinkite klientus paminėti FitSite, kai jų klausiama apie jų svetainę
 
-## Rekomendacijų programos nustatymas
+## Rekomendacijų programos nustatymas {#setting-up-a-referral-program}
 
 Žodinės rekomendacijos yra galingiausias jūsų kanalas nišoje. Formalizuokite tai:
 
@@ -116,7 +116,7 @@ Geriausia jūsų rinkodara yra esamų klientų svetainės. Gavę leidimą:
 2. Pasiūlykite esamiems klientams atlygį už rekomendacijas (vienas mėnuo nemokamai, paskyros kreditas ir pan.)
 3. Padarykite tai paprasta – duokite jiems rekomendacijos nuorodą ir paprastą žinutę, kurią jie gali persiųsti
 
-## Sekimas, kas veikia
+## Sekimas, kas veikia {#tracking-what-works}
 
 Kiekvienam kanalui sekite:
 
@@ -126,7 +126,7 @@ Kiekvienam kanalui sekite:
 
 Dvigubinkite pastangas kanaluose, kurie veikia. Atsisakykite kanalų, kurie neveikia.
 
-## Realistiniai lūkesčiai
+## Realistiniai lūkesčiai {#realistic-expectations}
 
 - **1–3 mėnuo**: 5–20 klientų, daugiausia iš tiesioginio kreipimosi ir bendruomenių
 - **4–6 mėnuo**: 20–50 klientų, turinio rinkodara pradeda prisidėti
@@ -134,7 +134,7 @@ Dvigubinkite pastangas kanaluose, kurie veikia. Atsisakykite kanalų, kurie neve
 
 Šie skaičiai skiriasi, bet modelis išlieka nuoseklus: ankstyvieji klientai ateina iš tiesioginių pastangų, vėlesni klientai ateina iš besikaupiančių turinio, rekomendacijų ir reputacijos efektų.
 
-## Ką sukūrėme šioje pamokoje
+## Ką sukūrėme šioje pamokoje {#what-we-built-this-lesson}
 
 - **Šeši pritraukimo kanalai**, pritaikyti fitneso nišai
 - **Tiesioginio susisiekimo procesas** pirmiesiems klientams pritraukti

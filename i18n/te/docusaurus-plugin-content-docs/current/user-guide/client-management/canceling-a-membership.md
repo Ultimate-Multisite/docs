@@ -3,7 +3,7 @@ title: సభ్యత్వాన్ని రద్దు చేయడం
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membership రద్దు చేయడం (v2)
+# Membership రద్దు చేయడం (v2) {#canceling-a-membership-v2}
 
 _**ముఖ్యమైన గమనిక: ఈ వ్యాసం Ultimate Multisite version 2.x కు సంబంధించినది.**_
 

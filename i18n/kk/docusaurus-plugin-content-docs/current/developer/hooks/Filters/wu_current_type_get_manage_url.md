@@ -4,11 +4,11 @@ title: 'Сүзгі - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Әзірлеушілерге сайтты басқару URL параметрлерін өзгертуге мүмкіндік береді.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Атауы | Түрі | Сипаттамасы |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | Сайт ID-і. |
 | $site_hash | `string` | Сайт хэші. |
 
-### Нұсқадан бастап
+### Нұсқадан бастап {#since}
 
 - 2.0.9
-### Дереккөз
+### Дереккөз {#source}
 
 [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) файлында 214-жолда анықталған
 
 
-## Қайтарады
+## Қайтарады {#returns}
 Өзгертілген басқару URL-і.

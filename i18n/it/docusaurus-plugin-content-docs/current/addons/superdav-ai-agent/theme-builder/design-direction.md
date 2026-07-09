@@ -3,17 +3,17 @@ title: Direzione del design
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direzione del Design
+# Direzione del Design {#design-direction}
 
 Il passaggio **Direzione del Design** ti permette di rivedere, affinare e finalizzare il design visivo del tuo tema prima che Theme Builder generi il tema completo.
 
-## Panoramica
+## Panoramica {#overview}
 
 Dopo aver completato l'Intervista di Scoperta (Discovery Interview), Theme Builder ti presenta la direzione del design con la **visualizzazione di anteprima per desktop e mobile**. Questo ti permette di vedere esattamente come apparirà il tuo design su diversi dispositivi prima di impegnarti con il tema.
 
-## Componenti della Direzione del Design
+## Componenti della Direzione del Design {#design-direction-components}
 
-### 1. Palette Colori
+### 1. Palette Colori {#1-color-palette}
 
 Lo schema colori del tuo tema, che include:
 
@@ -23,7 +23,7 @@ Lo schema colori del tuo tema, che include:
 - **Colori neutri** — grigi e bianchi per sfondi e testo
 - **Colore del testo** — colore principale del testo per la leggibilità
 
-### 2. Tipografia
+### 2. Tipografia {#2-typography}
 
 Selezione di font per:
 
@@ -33,14 +33,14 @@ Selezione di font per:
 - **Interlinea** — spaziatura tra le righe per la leggibilità
 - **Pesature del font** — variazioni grassetto, regolare e leggero
 
-### 3. Layout e Spaziatura
+### 3. Layout e Spaziatura {#3-layout-and-spacing}
 
 - **Larghezza del contenitore** — larghezza massima per i contenuti
 - **Padding e margini** — spaziatura attorno agli elementi
 - **Sistema a griglia** — layout a colonne per un design reattivo
 - **Spaziatura dei componenti** — distanza tra gli elementi dell'interfaccia utente (UI)
 
-### 4. Elementi Visivi
+### 4. Elementi Visivi {#4-visual-elements}
 
 - **Stili dei pulsanti** — design per pulsanti primari, secondari e terziari
 - **Design delle schede (Card)** — layout per blocchi di contenuto
@@ -48,9 +48,9 @@ Selezione di font per:
 - **Bordi e ombre** — profondità visiva sottile
 - **Effetti al passaggio del mouse (Hover effects)** — stile per lo stato interattivo
 
-## Visualizzazione Anteprima (Preview Rendering)
+## Visualizzazione Anteprima (Preview Rendering) {#preview-rendering}
 
-### Anteprima Desktop
+### Anteprima Desktop {#desktop-preview}
 
 L'anteprima desktop mostra il tuo design a larghezza intera (tipicamente 1200px o superiore):
 
@@ -59,7 +59,7 @@ L'anteprima desktop mostra il tuo design a larghezza intera (tipicamente 1200px 
 - Tipografia e spaziatura ampie
 - Tutti gli elementi visivi a grandezza naturale
 
-### Anteprima Mobile
+### Anteprima Mobile {#mobile-preview}
 
 L'anteprima mobile mostra il tuo design a larghezza mobile (tipicamente 375px):
 
@@ -68,7 +68,7 @@ L'anteprima mobile mostra il tuo design a larghezza mobile (tipicamente 375px):
 - Tipografia e spaziatura adattate
 - Dimensioni dei pulsanti adatte al tocco
 
-### Punti di interruzione reattivi (Responsive Breakpoints)
+### Punti di interruzione reattivi (Responsive Breakpoints) {#responsive-breakpoints}
 
 Theme Builder genera anteprime a questi punti di interruzione:
 
@@ -79,9 +79,9 @@ Theme Builder genera anteprime a questi punti di interruzione:
 | **Desktop** | 1200px | Desktop a larghezza intera |
 | **Desktop grande** | 1920px | Schermo ultra-ampio |
 
-## Affinare il Design
+## Affinare il Design {#refining-your-design}
 
-### Effettuare Modifiche
+### Effettuare Modifiche {#making-adjustments}
 
 Puoi affinare la tua direzione del design facendo quanto segue:
 
@@ -91,7 +91,7 @@ Puoi affinare la tua direzione del design facendo quanto segue:
 4. **Aggiornare il layout** — cambia larghezze dei contenitori e colonne della griglia
 5. **Personalizzare gli elementi** — modifica stili dei pulsanti, design delle schede, ecc.
 
-### Aggiornamenti dell'Anteprima
+### Aggiornamenti dell'Anteprima {#preview-updates}
 
 Le modifiche vengono riflesse in tempo reale:
 
@@ -100,7 +100,7 @@ Le modifiche vengono riflesse in tempo reale:
 - Tutti i punti di interruzione reattivi vengono aggiornati
 - Puoi passare tra le anteprime per verificare le modifiche
 
-### Vista di Confronto
+### Vista di Confronto {#comparison-view}
 
 Confronta la tua direzione del design con:
 
@@ -108,7 +108,7 @@ Confronta la tua direzione del design con:
 - **Design dei concorrenti** — confronta con siti di ispirazione
 - **Versioni precedenti** — torna a direzioni di design precedenti
 
-## Approvazione della Direzione del Design
+## Approvazione della Direzione del Design {#design-direction-approval}
 
 Una volta che sei soddisfatto del tuo design:
 
@@ -118,7 +118,7 @@ Una volta che sei soddisfatto del tuo design:
 4. **Conferma il layout** — controlla spaziatura e allineamento
 5. **Approva il design** — procedi alla generazione del tema
 
-## Prossimi Passaggi
+## Prossimi Passaggi {#next-steps}
 
 Dopo aver approvato la direzione del design:
 
@@ -127,7 +127,7 @@ Dopo aver approvato la direzione del design:
 3. Puoi personalizzare ulteriormente usando il customizer di WordPress
 4. Procedi a [Hospitality Menus](./hospitality-menus.md) o altre funzionalità
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Testare su dispositivi reali** — usa telefoni e tablet reali se possibile
 - **Verificare la leggibilità** — assicurati che il testo sia leggibile in tutte le dimensioni
@@ -135,30 +135,30 @@ Dopo aver approvato la direzione del design:
 - **Considerare le prestazioni** — ottimizza immagini e font per la velocità
 - **Pianificare i contenuti** — assicurati che il layout funzioni con i tuoi contenuti effettivi
 
-## Risoluzione dei Problemi (Troubleshooting)
+## Risoluzione dei Problemi (Troubleshooting) {#troubleshooting}
 
-### L'anteprima non si aggiorna
+### L'anteprima non si aggiorna {#preview-not-updating}
 
 - Aggiorna la pagina
 - Cancella la cache del browser
 - Prova un browser diverso
 - Controlla la connessione internet
 
-### I colori sembrano diversi
+### I colori sembrano diversi {#colors-look-different}
 
 - Controlla le impostazioni colore del monitor
 - Prova su diversi dispositivi
 - Verifica il contrasto dei colori con strumenti di accessibilità
 - Considera i simulatori di daltonismo
 
-### Problemi di tipografia
+### Problemi di tipografia {#typography-issues}
 
 - Verifica che i file font vengano caricati
 - Controlla la dimensione del font a diversi breakpoint
 - Testa con contenuti reali
 - Considera la lunghezza delle righe per la leggibilità
 
-## Documentazione Correlata
+## Documentazione Correlata {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — raccogliere informazioni sul design
 - [Hospitality Menus](./hospitality-menus.md) — creare pagine menu strutturate

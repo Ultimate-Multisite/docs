@@ -3,11 +3,11 @@ title: Ireferensi Yezilungiselelo
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Inkomba Yezilungiselelo
+# Inkomba Yezilungiselelo {#settings-reference}
 
 Leli khasi lilandelela izilungiselelo ezithinta ukuphathwa kwansuku zonke nezinguquko zakamuva zokuziphatha ku-Ultimate Multisite.
 
-## Ezinye Izinketho
+## Ezinye Izinketho {#other-options}
 
 Indawo ethi **Ezinye Izinketho** ivela ngaphansi kokuthi **Ultimate Multisite > Izilungiselelo > Ukungena Nokubhalisa**.
 
@@ -15,23 +15,23 @@ Indawo ethi **Ezinye Izinketho** ivela ngaphansi kokuthi **Ultimate Multisite > 
 |---|---|
 | **Nika amandla i-Jumper** | Ibonisa ithuluzi lokuzulazula ngokushesha le-Jumper endaweni yokuphatha. Lisebenzise ukuze weqe ngqo uye ezikrinini ze-Ultimate Multisite, ezintweni zenethiwekhi, nasezindaweni zokuphatha ezisekelwayo. Likhubaze uma ungafuni ukuthi lesi sifinyezo sibonakale. |
 
-## Ukubika amaphutha ne-telemetry
+## Ukubika amaphutha ne-telemetry {#error-reporting-and-telemetry}
 
 Isilungiselelo sangaphambilini sokuvumela ukubika amaphutha sisusiwe ekhasini lezilungiselelo. I-telemetry engaziwa ikhutshaziwe futhi akukho switch ye-UI yokuyinika amandla.
 
 Uma ugcina ama-runbook angaphakathi noma izithombe-skrini zekhasi lezilungiselelo, susa izinkomba zenkambu endala yokuvumela ukubika amaphutha ukuze abaphathi bangafuni isilungiselelo esingasekho.
 
-## Izilungiselelo zokungenisa/zokuthekelisa
+## Izilungiselelo zokungenisa/zokuthekelisa {#importexport-settings}
 
 Ithebhu yezilungiselelo ethi **Ukungenisa/Ukuthekelisa** ichaza ukuthi yiziphi izilungiselelo ezilawulayo futhi ixhumanisa ngqo ku-**Ultimate Multisite > Ukuthekelisa Isayithi** yezinqolobane zesayithi nenethiwekhi. Sebenzisa ithebhu yezilungiselelo ekucushweni kokungenisa/ukuthekelisa, sebenzisa **Amathuluzi > Ukuthekelisa Nokungenisa** ngenqubo yokuthekelisa/yokungenisa yesayithi elilodwa, bese usebenzisa ithuluzi Lokuthekelisa Isayithi lapho udinga inqolobane ephelele Yokuthekelisa Inethiwekhi.
 
-## Isexwayiso sebhalansi ye-Domain Seller HostAfrica
+## Isexwayiso sebhalansi ye-Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Lapho isengezo se-Domain Seller sixhunywe ku-HostAfrica, abaphathi benethiwekhi manje babona isexwayiso esingasuswa sokuthi ibhalansi iphansi lapho ibhalansi ye-akhawunti yomthengisi iphansi kakhulu ukuze ukubhaliswa noma ukucutshungulwa kokuvuselela ama-domain kuthembeke.
 
 Phatha lesi saziso njengesexwayiso sokusebenza: gcwalisa ibhalansi yomthengisi we-HostAfrica ngaphambi kokwamukela ukubhaliswa okwengeziwe kwama-domain akhokhelwayo, bese ubuyela ezilungiselelweni ze-Domain Seller noma esikrinini sokuqapha ama-domain ukuze uqinisekise ukuthi ukubhaliswa nokuvuselelwa kungaqhubeka ngokujwayelekile.
 
-## Izilungiselelo zokuxhuma abahlinzeki be-AI
+## Izilungiselelo zokuxhuma abahlinzeki be-AI {#ai-provider-connector-settings}
 
 Izilungiselelo zokuxhuma abahlinzeki be-AI manje ziveza kuphela amaqoqo ama-akhawunti e-OAuth asekelwayo:
 

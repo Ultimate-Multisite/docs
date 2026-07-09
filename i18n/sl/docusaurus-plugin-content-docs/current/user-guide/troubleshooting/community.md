@@ -3,7 +3,7 @@ title: Komunitarstvo
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kako se pridružiti Ultimate Multisite Zajednici
+# Kako se pridružiti Ultimate Multisite Zajednici {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community je prostor gde lahko stikate z drugimi uporabniki Ultimate Multisite in delite nasvete, izkušnje in več. Za dostop do Ultimate Multisite Community se obiščite na https://community.ultimatemultisite.com/home.
 

@@ -3,11 +3,11 @@ title: Sayt Spesifikasiýa Bilişi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sayt Spesifikasi Biliş
+# Sayt Spesifikasi Biliş {#site-specification-skill}
 
 **Site Specification becerisi**, saytınızın hedeflerini, hedef kitlesini we brend kimliğini çäklemek üçin kurulan bir üsleriňdir. Bu maglumatlar **site_brief** hataryna saklanýar; bu hatar agentler tarapda seslenip, her bir sessiýada ýönekeý we konteksti bilýän kömek bermek üçin ulanylýar.
 
-## Site Specification Näme?
+## Site Specification Näme? {#what-is-site-specification}
 
 Site Specification – aşakdaky zatlary belgeleme prosesidir:
 
@@ -19,9 +19,9 @@ Site Specification – aşakdaky zatlary belgeleme prosesidir:
 
 Bu spesifikasiýa siziň **site_brief** bolup, agentler tarapda saytyň kontekstini düşmek üçin ulanylan dowamly hatar hasaby.
 
-## Site Specification Näme Sebäpli Ulanmalydyr?
+## Site Specification Näme Sebäpli Ulanmalydyr? {#why-use-site-specification}
 
-### Sessialykda Tutarlılık
+### Sessialykda Tutarlılık {#consistency-across-sessions}
 
 site_brief ýok bolsa, her sessiýa başaryp bilende, sayt üçin maksadyňyzy täze düşündirip bermegi zerurdyňiz. Ol bar bolsa, agentler hemen düşündirýär:
 
@@ -30,7 +30,7 @@ site_brief ýok bolsa, her sessiýa başaryp bilende, sayt üçin maksadyňyzy t
 - Mawzul strukturasyny
 - Biznes maksatlaryny
 
-### Hasda Massala Berişler
+### Hasda Massala Berişler {#better-recommendations}
 
 Agentler site_briefi ulanyp şu işleri edýärler:
 
@@ -39,17 +39,17 @@ Agentler site_briefi ulanyp şu işleri edýärler:
 - Brendiňize laýyk taslamalary teklip etmek
 - Sazlaşmadyk funksiýalary suwut etmekdan saklamak
 
-### Hasda Başlangyş
+### Hasda Başlangyş {#faster-onboarding}
 
 Ikiji agentler (ýa-da täze sessiýalarda bolan agentler) düşündirici soraglar sormakdan we hasyl almakdan hasaplap, site_briefi okamak arkaly çalt öwrenip bilýärler.
 
-## Site Specification Başlamak
+## Site Specification Başlamak {#initiating-site-specification}
 
-### Theme Builder Üsinde Başlangyş
+### Theme Builder Üsinde Başlangyş {#during-theme-builder-onboarding}
 
 Site Specification becerisi **Theme Builder onboarding flow** dowamynda awtomatiki başlamaz. Setup Assistant agent soraglar berip we siziň site_briefiňizi döredýär.
 
-### Manual Başlamak
+### Manual Başlamak {#manual-initiation}
 
 Siteniň görkezmesini her wagt başlaza bilersiňiz:
 
@@ -63,9 +63,9 @@ Siteniň görkezmesini her wagt başlaza bilersiňiz:
 "Meni bir sahypa gysgaça düşündirmäge kömek et"
 ```
 
-## Siteni Belirleme Prosesi
+## Siteni Belirleme Prosesi {#the-site-specification-process}
 
-### 1-nji ädim: Sahananyň maksady
+### 1-nji ädim: Sahananyň maksady {#step-1-site-purpose}
 
 Agent şu soragy berýär:
 
@@ -81,7 +81,7 @@ Sahananyň esasy maksady näme?
 
 Siz kategoriýany saýlap bilersiňiz ýa-da öz maksadyňyzy düşündire bilersiňiz.
 
-### 2-nji ädim: Hədep ulgam
+### 2-nji ädim: Hədep ulgam {#step-2-target-audience}
 
 ```
 Siziň esasy hədep ulgamy kimdir?
@@ -94,7 +94,7 @@ Siziň esasy hədep ulgamy kimdir?
 Olaryň esasy zerurlyklary näme?
 ```
 
-### 3-nji ädim: Marka adatylygy
+### 3-nji ädim: Marka adatylygy {#step-3-brand-identity}
 
 ```
 Siziň marka agzleri nämelerdir?
@@ -110,7 +110,7 @@ Markanyň tonuny nädip düşündirip bilersiňiz?
 - Iltyky / dostlukly
 ```
 
-### 4-nji ädim: Biznes maksatlary
+### 4-nji ädim: Biznes maksatlary {#step-4-business-goals}
 
 ```
 Sahananyň öňüni almak nädip görkezilýär?
@@ -129,7 +129,7 @@ Esasy ölçüňiz näme?
 - Başga
 ```
 
-### 5-nji ädim: Maglumat strukturasy
+### 5-nji ädim: Maglumat strukturasy {#step-5-content-structure}
 
 ```
 Siziň maglumatlaryň düzümi nädip görkezilýär?
@@ -148,13 +148,13 @@ Siz nädip maglumatlary ulanarsyňyz?
 - Başga
 ```
 
-## Sahananyň site_brief-i
+## Sahananyň site_brief-i {#your-sitebrief-memory}
 
 Sahanany belirleme prosesini tamamlanandan soň, maglumatlaryňyz agent hatabynda **site_brief** hasabatynda saklanýar. Bu yapılaşdyrylan resminameden ybarat bolan we şul zatlary öz içine alýan bir ýazgysyrmakdir:
 
-## site_brief'inizi Görme ve Güncelleme
+## site_brief'inizi Görme ve Güncelleme {#viewing-and-updating-your-sitebrief}
 
-### site_brief'inizi Görmek
+### site_brief'inizi Görmek {#view-your-sitebrief}
 
 Agentden şu soruyu sorun:
 
@@ -170,7 +170,7 @@ yoksa
 
 Agent sizde sazlanyp saklanmış spesifikasyonunuzu gösteder.
 
-### site_brief'inizi Güncellemek
+### site_brief'inizi Güncellemek {#update-your-sitebrief}
 
 Siteniz dəyişse, onu güncellemenizi isteyebilirsiniz:
 
@@ -186,9 +186,9 @@ yoksa
 
 Bu, mevcut bilgilerinizle Site Specification skillini yenileyecektir.
 
-## Agentler site_brief'i Nasıl Kullanır
+## Agentler site_brief'i Nasıl Kullanır {#how-agents-use-sitebrief}
 
-### Tasarım Tavsiyeleri
+### Tasarım Tavsiyeleri {#design-recommendations}
 
 Tasarım dəyişiklikləri istədikdə, agentlər site_brief'inizi nəzərdən keçirirlər:
 
@@ -197,7 +197,7 @@ Siz: "Redesign my homepage"
 Agent: "Your site brief-ə əsasən, siz 25-45 yaşlı qadınları hədəf alırsınız və isti, sənətkarlı bir ton istəyirsiniz. Mən sizin əl işi mücevərilərinizi və daimi dəyərlərinizi vurğulayan bir dizayn yaradacağam."
 ```
 
-### Funksiyalar Təklifləri
+### Funksiyalar Təklifləri {#feature-suggestions}
 
 Agentlər sizin məqsədlərinizə uyğun funksiyalar təklif edir:
 
@@ -206,22 +206,22 @@ Siz: "What features should I add?"
 Agent: "Müştəri bağlılığına fokuslanmış bir e-commerce mağazası üçün mən aşağıdakıları tövsiyə edərdim: bağlılıq proqramı, müştəri rəyləri, elektron poçt novelləri və məhsul tövsiyələri."
 ```
 
-### Məzmun Strukturu
+### Məzmun Strukturu {#content-structure}
 
 Agentlər sizin strukturanıza əsasən məzmun təşkilatını təklif edir:
 
 Siz: "Blogumu nädip düzgün görkezmekmeli?"
 Agent: "Siz blog bilen produkt katalogdan ulanylýan bolsaňyz, postlary produkt kategoalaryna görä düzmek we birnäçe produkty birleşdirip görkezýän 'stil guralaryny' döretmekden soň etmekde maslahat berjek."
 
-## Iň Gowy Üsünjilikler
+## Iň Gowy Üsünjilikler {#best-practices}
 
-### Kesgitlemekdi Has Lapşa
+### Kesgitlemekdi Has Lapşa {#be-specific}
 "Umumy okuwjy" diýmek yerine, öz okulyňyň tasawwuryny düşündiriň:
 
 - ✓ "25-45 ýaşdaky, öwüshme moda bilen gyzyklanýan aýal"
 - ✗ "Häzirki wagtda her bir adam"
 
-### Düzenli Täzelenmekdi Haslap
+### Düzenli Täzelenmekdi Haslap {#update-regularly}
 Siziň sahypanyňyz ösüp barýar, `site_brief`i täzelenip bilersiňiz:
 
 - Yeni okuwjy toplaryna geçende
@@ -229,20 +229,20 @@ Siziň sahypanyňyz ösüp barýar, `site_brief`i täzelenip bilersiňiz:
 - Brand identitiniz üýtgedikde
 - İş maksatlaryňyz üýtgep baranda
 
-### Birme-bir Ünsi Haslaplanmak
+### Birme-bir Ünsi Haslaplanmak {#use-consistent-terminology}
 Sessiyalar boýunça bir meňzeş terimleri ulanmagyň:
 
 - ✓ Her wagt "sustainable jewelry" (başgaça "eco-friendly jewelry" we "green products" diýip demäge) aýdyp bilersiňiz
 - ✓ Okulyňyz bilen daima birme-bir meňzeş görkezmek
 
-### Kontekst Goşmak
+### Kontekst Goşmak {#include-context}
 Agentlere maşgalaryňyzy düşündirmek üçin arka plan maglumatlary beriş:
 
 - "Biz sagatdan hasyklygy bahalaýan hünärmenleri maksat edýäris"
 - "Okulymy modern dizigni garaşýan we tehnologiýa bilen baralaýan adamlar."
 - "Biz bootstrapped startupdyk, şonuň üçin maliýetine laýyk çözgütlere ihtiyaç baryp."
 
-## Theme Builder Täzelenmegi bilen Baglanyşyk
+## Theme Builder Täzelenmegi bilen Baglanyşyk {#relationship-to-theme-builder-onboarding}
 
 Site Specification skilli **Theme Builder onboarding flow**una degişli bolup goýulmady. Onboarding-i tamamlandyryp, siz beren maglumat bilen `site_brief` awtomatiki döredilýär.
 
@@ -252,7 +252,7 @@ Eger size şu zatlar gerek bolsa, Site Specification-i özbaşdak hem işledip b
 - Sahypa ösüp baranda `site_brief`i täzelenmek
 - Theme Builder başlamazdan öň giňişleýin spesifikasiýa döretmek
 
-## Sorunlary Çözmek
+## Sorunlary Çözmek {#troubleshooting}
 
 **Meniň site_briefim ulanmady**
 - Agentde xatırlama (memory) barada barlap görüň
@@ -268,7 +268,7 @@ Eger size şu zatlar gerek bolsa, Site Specification-i özbaşdak hem işledip b
 - Eger size site\_briefi eski bolsa, onu täzelenip bilersiňiz
 - Soňky soraglaryňyzda has maglumat (context) bermegi üçin goşmaça kontekst berip bilersiňiz
 
-## Soňky ädimler
+## Soňky ädimler {#next-steps}
 
 Site spesifikasiýanyňyzy bellemekden soň:
 

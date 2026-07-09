@@ -3,19 +3,19 @@ title: 'Piwulang 13: Ngembangake Skala'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Piwulang 13: Ngembangake Skala
+# Piwulang 13: Ngembangake Skala {#lesson-13-scaling-up}
 
 Sampeyan wis duwe platform sing mlaku karo pelanggan mbayar. Piwulang iki ngrembug carane tuwuh saka operasi cilik dadi bisnis sing lestari -- ngembangake skala infrastruktur, ngotomatisasi operasi, lan nambah pangentukan saben pelanggan.
 
-## Papan Pungkasan Kita
+## Papan Pungkasan Kita {#where-we-left-off}
 
 FitSite wis urip, pelanggan padha ndhaptar, lan sampeyan nglakokake operasi saben dina. Saiki kita fokus marang wutah.
 
-## Ngerteni Angka Sampeyan
+## Ngerteni Angka Sampeyan {#know-your-numbers}
 
 Sadurunge ngembangake skala, pahami dhisik posisi sampeyan:
 
-### Metrik Kunci
+### Metrik Kunci {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Total pangentukan langganan saben wulan
 - **Cacah pelanggan**: Total pelanggan aktif
@@ -24,7 +24,7 @@ Sadurunge ngembangake skala, pahami dhisik posisi sampeyan:
 - **LTV (Lifetime Value)**: Rata-rata pangentukan saben pelanggan sajrone langganan kabeh
 - **CAC (Customer Acquisition Cost)**: Rata-rata biaya kanggo entuk siji pelanggan
 
-### Tuladha: FitSite ing 50 Pelanggan
+### Tuladha: FitSite ing 50 Pelanggan {#example-fitsite-at-50-customers}
 
 | Metrik | Nilai |
 |--------|-------|
@@ -36,9 +36,9 @@ Sadurunge ngembangake skala, pahami dhisik posisi sampeyan:
 
 Angka-angka iki nuduhake apa sing kudu sampeyan fokusake. Churn dhuwur? Ndandani retensi. ARPU kurang? Dorong upgrade. CAC dhuwur? Optimalake saluran akuisisi.
 
-## Ngembangake Skala Infrastruktur
+## Ngembangake Skala Infrastruktur {#scaling-infrastructure}
 
-### Kapan Kudu Ngembangake Skala
+### Kapan Kudu Ngembangake Skala {#when-to-scale}
 
 Skalakake hosting nalika:
 
@@ -47,7 +47,7 @@ Skalakake hosting nalika:
 - Sampeyan wis nyedhaki 100+ situs aktif
 - Keluhan pelanggan babagan kacepetan saya tambah
 
-### Carane Ngembangake Skala
+### Carane Ngembangake Skala {#how-to-scale}
 
 - **Skala vertikal**: Upgrade menyang server sing luwih gedhe (CPU lan RAM luwih akeh)
 - **Lapisan caching**: Tambah Redis/Memcached kanggo object caching, page caching kanggo konten statis
@@ -55,7 +55,7 @@ Skalakake hosting nalika:
 - **Optimalisasi database**: Nalika jaringan saya gedhe, query database dadi alon. Optimalake tabel, tambah indeks, pertimbangake server database khusus.
 - **Pisahake tanggung jawab**: Pindhah panyimpenan media menyang object storage (kompatibel S3), alihake email menyang layanan email transaksional
 
-### Migrasi Hosting
+### Migrasi Hosting {#hosting-migration}
 
 Yen host saiki ora bisa diskalakake maneh, rencanakake migrasi:
 
@@ -65,11 +65,11 @@ Yen host saiki ora bisa diskalakake maneh, rencanakake migrasi:
 4. Anyari DNS nganggo TTL minimal sadurunge
 5. Priksa manawa kabeh bisa mlaku sawise migrasi
 
-## Ngotomatisasi Operasi
+## Ngotomatisasi Operasi {#automating-operations}
 
 Nalika sampeyan tuwuh, proses manual dadi bottleneck. Otomatisasi apa wae sing bisa:
 
-### Webhooks lan Zapier
+### Webhooks lan Zapier {#webhooks-and-zapier}
 
 Gunakake [Webhooks](/user-guide/integrations/webhooks) utawa [Zapier](/user-guide/integrations/zapier) kanggo ngotomatisasi:
 
@@ -78,7 +78,7 @@ Gunakake [Webhooks](/user-guide/integrations/webhooks) utawa [Zapier](/user-guid
 - **Gagal pembayaran** → tandha ing alat pemantauan sampeyan
 - **Upgrade plan** → email ucapan selamat kanthi pandhuan fitur anyar
 
-### Otomatisasi Email
+### Otomatisasi Email {#email-automation}
 
 Pindhah saka email manual menyang urutan otomatis:
 
@@ -87,30 +87,30 @@ Pindhah saka email manual menyang urutan otomatis:
 - Pituduh upgrade nalika pelanggan nyedhaki wates plan
 - Pangeling pembaruan kanggo pelanggan tahunan
 
-### Otomatisasi Dhukungan
+### Otomatisasi Dhukungan {#support-automation}
 
 - **Tanggepan siap pakai** kanggo pitakon umum
 - **Balesan otomatis** sing ngakoni panriman tiket dhukungan
 - **Saran basis kawruh** nalika pelanggan ngirim tiket sing cocog karo artikel sing wis ana
 
-## Nambah Pangentukan
+## Nambah Pangentukan {#increasing-revenue}
 
 Wutah ora mung babagan nambah pelanggan. Iki uga babagan nambah pangentukan saben pelanggan.
 
-### Upselling Pelanggan Sing Wis Ana
+### Upselling Pelanggan Sing Wis Ana {#upselling-existing-customers}
 
 - **Upgrade plan**: Kampanye tertarget sing nuduhake fitur Growth/Pro marang pelanggan Starter
 - **Tawaran tambahan order**: Promosikake produk tambahan marang pelanggan sing wis ana liwat email
 - **Konversi tahunan**: Wenehi diskon marang pelanggan bulanan kanggo pindhah menyang tagihan tahunan
 
-### Aliran Pangentukan Anyar
+### Aliran Pangentukan Anyar {#new-revenue-streams}
 
 - **Setup rampung kanggo sampeyan**: Tarik biaya premium kanggo nyetel lan ngatur situs pelanggan kanggo dheweke
 - **Layanan desain khusus**: Tawarake karya desain bespoke ing ndhuwur template
 - **Sesi latihan**: Pandhuan siji-lawan-siji mbayar kanggo pelanggan sing pengin pitulungan langsung
 - **Plugin premium**: Tawarake plugin premium khusus niche minangka tambahan mbayar (umpamane, widget pemesanan kelas fitness)
 
-### Nggedhekake Rega
+### Nggedhekake Rega {#raising-prices}
 
 Nalika platform sampeyan saya mateng lan nambah nilai:
 
@@ -118,7 +118,7 @@ Nalika platform sampeyan saya mateng lan nambah nilai:
 - Mundhakake rega kanggo pendaftaran anyar
 - Jelaskake kenaikan kanthi fitur lan perbaikan anyar
 
-## Mbangun Tim
+## Mbangun Tim {#building-a-team}
 
 Ing sawijining wektu, sampeyan ora bisa nindakake kabeh dhewe. Rekrutan pisanan sing umum:
 
@@ -128,7 +128,7 @@ Ing sawijining wektu, sampeyan ora bisa nindakake kabeh dhewe. Rekrutan pisanan 
 
 Sampeyan ora kudu duwe karyawan. Kontraktor lan freelancer bisa mlaku apik kanggo bisnis platform.
 
-## Tonggak Wutah
+## Tonggak Wutah {#growth-milestones}
 
 | Tonggak | MRR kira-kira | Fokus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Sampeyan ora kudu duwe karyawan. Kontraktor lan freelancer bisa mlaku apik kangg
 | 250-500 pelanggan | $25,000-$50,000 | Mbangun tim, aliran pangentukan anyar, fitur premium |
 | 500+ pelanggan | $50,000+ | Kematengan platform, niche sing cedhak, potensi exit |
 
-## Sing Kita Gawe ing Piwulang Iki
+## Sing Kita Gawe ing Piwulang Iki {#what-we-built-this-lesson}
 
 - **Kerangka metrik** kanggo mangerteni kesehatan bisnis
 - **Rencana ngembangake skala infrastruktur** kanggo tuwuh saka puluhan dadi atusan situs

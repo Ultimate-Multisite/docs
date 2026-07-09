@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integriĝo
+# WooCommerce Integriĝo {#woocommerce-integration}
 
 La WooCommerce Integriĝo funkcias tre simile al la maniero kiel nia Mana Pordego funkcias. Ĝi ofertas multe da fleksebleco al viaj uzantoj, permesante al ili elekti iun ajn el la pagformularoj disponeblaj en via WooCommerce instalo. Kaj ĝi estas simpla: post kiam la faktura periodo de la uzanto finiĝas, la abono de la uzanto estas haltigita. Samtempe, mendo estos kreita en la WooCommerce instalo de la ĉefa site de la reto. La uzanto tiam ricevas fakturon en sia retpoŝto, kun ligilo por efektivigi la pagon. Post kiam la pago estas ricevita, la abono estas renovigita.
 
-## Trajtoj
+## Trajtoj {#features}
 
 - Facila integriĝo inter Ultimate Multisite kaj WooCommerce
 - Pluraj pagmetodoj disponeblaj
 - Aŭtomatigita ripetiĝanta fakturado uzante la pakitan abon-kernon, kun laŭvolaj plibonigoj de la WooCommerce Subscriptions plugin
 - Checkout totaloj inkluzivas Ultimate Multisite impostojn kiel apartajn, neimposteblajn WooCommerce kotizliniojn por ke klientoj povu revizii impostsumojn antaŭ pago
 
-## Dokumentado
+## Dokumentado {#documentation}
 
 **Agordi La WooCommerce Integriĝon**
 
 **Etendi viajn Pagopciojn per Ultimate Multisite: WooCommerce Integriĝo**
 
-## Instalado
+## Instalado {#installation}
 
 1. Alŝutu 'ultimate-multisite-woocommerce' al la dosierujo '/wp-content/plugins/'
 2. Aktivigu la plugin per la menuo 'Plugins' en WordPress
 3. Sekvu la paŝon post paŝo Sorĉiston por agordi la plugin
 
-## Uzogvidilo
+## Uzogvidilo {#usage-guide}
 
 _**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 
@@ -40,7 +40,7 @@ Ni komprenas, ke _Stripe_ kaj _PayPal_ ne estas disponeblaj en iuj landoj, kio l
 
 _WooCommerce_ estas tre populara eCommerce plugin. Programistoj tra la mondo kreis aldonaĵojn por integri malsamajn pagajn pordegojn al ĝi. Ni profitis de tio por etendi la pagajn pordegojn, kiujn vi povas uzi en la faktura sistemo de Ultimate Multisite.
 
-## Agordi Ĝin
+## Agordi Ĝin {#setting-it-up}
 
 Unue, vi devas instali la WooCommerce Integriĝo-aldonaĵon, kiu estas **senpaga por licencitaj uzantoj**. Por instali ĝin, alklaku Ultimate Multisite en via superadministra Dashboard kaj elektu **Aldonaĵoj**.
 
@@ -68,11 +68,11 @@ Post instalo, vi vidos aldonan opcion sub la pagaj agordoj de Ultimate Multisite
 
 Vi povas agordi kelkajn bazajn agordojn kiel la montran nomon, kiu aperos en la frontend, kaj instrukciojn por gvidi viajn uzantojn en ilia checkout fluo. Poste vi povas iri al la **agordoj de _WooCommerce_ de via ĉefa site** por ebligi kaj agordi la pagan pordegon, kiun vi preferas uzi.
 
-### Checkout impostaj kotizlinioj
+### Checkout impostaj kotizlinioj {#checkout-tax-fee-lines}
 
 Kiam Ultimate Multisite checkout inkluzivas impostojn, la integriĝo aldonas ĉiun Ultimate Multisite impostsumon al WooCommerce checkout kiel apartan, neimposteblan kotizlinion. Tio tenas la impostan totalon videbla antaŭ pago, dum ĝi malhelpas WooCommerce denove imposti la impostan kotizon.
 
-## Kiel administri la pagon
+## Kiel administri la pagon {#how-to-manage-the-payment}
 
 La WooCommerce Integriĝo funkcias tre simile al la maniero kiel nia **Mana Pordego** funkcias. La malavantaĝo estas, ke ĉiu pago devas esti pagita permane ĉe la fino de la faktura periodo. Jen kiel la fluo funkcias:
 
@@ -82,13 +82,13 @@ La WooCommerce Integriĝo funkcias tre simile al la maniero kiel nia **Mana Pord
 
   * Post kiam la pago estas ricevita, la membreco estas **renovigita** , la pago estas registrita en Ultimate Multisite kaj la mendo estas agordita kiel kompleta.
 
-### Kelkaj Gravaj Notoj:
+### Kelkaj Gravaj Notoj: {#some-important-notes}
 
   * La defaŭlta funkciado de Ultimate Multisite ankoraŭ funkcias kun ĉi tiu integriĝa formo. Ekzemple, **eldoni repagojn** de la ekrano **Abonadministrado** komunikos kun WooCommerce por eldoni la repagon uzante la elektitan pagformularon.
 
   * Ultimate Multisite: WooCommerce Integriĝo dependas de WP-Cron por funkcii. Tio funkcias tre bone plejofte, sed se la site havas malaltan trafikon, tiam la cron ne estas instigita kontroli planitajn eventojn kaj la evento estas preterlasita, kio povas kaŭzi plenumajn prokrastojn.
 
-## WooCommerce Subscriptions Plugin
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
 Mane iniciati pagon ĉiun monaton ne estas ideala por finuzantoj, ĉar abonoj estas atendataj ripetiĝi aŭtomate ĉiun fakturan ciklon. La WooCommerce Integration aldonaĵo nun kunpakas la kernan abon-kodon, do ripetiĝantaj produktoj ĉiam uzas abonojn por ripetiĝanta fakturado.
 
@@ -100,7 +100,7 @@ Kaj jen ĉio. Viaj finuzantoj ne plu bezonos mane fari pagon fine de sia faktura
 
 Krom mendo kreita en via ĉefa retejo sub _WooCommerce_, ĝi ankaŭ kreos abonon por ĉiu Account.
 
-### Konduto de suspendo post malsukcesa renovigo
+### Konduto de suspendo post malsukcesa renovigo {#failed-renewal-suspension-behavior}
 
 Defaŭlte, membrecoj restas aktivaj dum WooCommerce Subscriptions prilaboras sian reprovan horaron por malsukcesaj pagoj. Ĉi tio konservas la normalan gracperiodon de WooCommerce Subscriptions, tiel ke reakirita renovigo povas resinkronigi la abonon kaj membrecon sen antaŭtempe interrompi aliron.
 

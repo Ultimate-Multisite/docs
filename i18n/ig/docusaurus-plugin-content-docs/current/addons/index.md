@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Mgbakwunye Ultimate Multisite
+# Mgbakwunye Ultimate Multisite {#ultimate-multisite-addons}
 
 Mgbakwunye na-agbatị Ultimate Multisite site n'ịgbakwunye njirimara na njikọta ndị ọzọ. Ọtụtụ mgbakwunye bụ ndị a na-akwụ ụgwọ, a pụkwara ịzụta ha site na [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Ntinye
+## Ntinye {#installation}
 
 A pụrụ itinye mgbakwunye n'ụzọ abụọ:
 
 1. **Site na Peeji Mgbakwunye** -- Gaa na peeji njikwa mgbakwunye nke saịtị gị n'ime admin WordPress
 2. **Nbudata Aka** -- Budata site na [Account gị](https://ultimatemultisite.com/my-account/downloads/) ma bulite ya site na Plugins > Add New
 
-## Mgbakwunye Dị
+## Mgbakwunye Dị {#available-addons}
 
 | Mgbakwunye | Nkọwa |
 |-------|-------------|

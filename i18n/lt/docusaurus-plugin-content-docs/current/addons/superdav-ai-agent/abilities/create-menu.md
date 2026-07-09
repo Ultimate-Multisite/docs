@@ -3,15 +3,15 @@ title: Sukurti meniu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Sukurti meniu
+# Sukurti meniu {#create-menu}
 
 **Sukurti meniu** galimybė kuria WordPress navigacijos meniu su atskirų navigacijos etikečių, skirtingų nuo puslapių pavadinimų, palaikymu.
 
-## Apžvalga
+## Apžvalga {#overview}
 
 Ši galimybė išplečia standartinę meniu kūrimo funkciją, suteikdama galimybę nurodyti `navigation_label` parametrą. Tai leidžia kurti meniu, kuriuose navigacijoje rodoma etiketė skiriasi nuo puslapio pavadinimo, suteikiant daugiau lankstumo svetainės struktūrai ir naudotojo patirčiai.
 
-## Parametrai
+## Parametrai {#parameters}
 
 | Parametras | Tipas | Privaloma | Aprašymas |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 | `location` | string | Ne | Temos vieta, kuriai priskirti šį meniu, pvz., `primary` |
 | `navigation_label` | string | Ne | Etiketė, rodoma navigacijoje (skirtinga nuo puslapio pavadinimo) |
 
-## Grąžinama reikšmė
+## Grąžinama reikšmė {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 }
 ```
 
-## Navigacijos etiketė ir puslapio pavadinimas
+## Navigacijos etiketė ir puslapio pavadinimas {#navigation-label-vs-page-title}
 
 `navigation_label` parametras leidžia atskirti vidinį meniu pavadinimą nuo naudotojams rodomos etiketės:
 
@@ -43,9 +43,9 @@ Tai naudinga, kai:
 - Reikia palaikyti kelias kalbas su skirtingais etikečių ilgiais
 - Kuriate meniu konkretiems regionams ar naudotojų grupėms
 
-## Naudojimo pavyzdžiai
+## Naudojimo pavyzdžiai {#usage-examples}
 
-### 1 pavyzdys: paprastas meniu su navigacijos etikete
+### 1 pavyzdys: paprastas meniu su navigacijos etikete {#example-1-simple-menu-with-navigation-label}
 
 **Užklausa:**
 ```
@@ -62,7 +62,7 @@ Sukurkite pagrindinės navigacijos meniu pavadinimu „Main Navigation“ su nav
 }
 ```
 
-### 2 pavyzdys: meniu konkrečiai temos vietai
+### 2 pavyzdys: meniu konkrečiai temos vietai {#example-2-menu-for-specific-theme-location}
 
 **Užklausa:**
 ```
@@ -80,7 +80,7 @@ Sukurkite poraštės meniu pavadinimu „Footer Links“ su navigacijos etikete 
 }
 ```
 
-## Integracija su Theme Builder
+## Integracija su Theme Builder {#integration-with-theme-builder}
 
 Naudojant Theme Builder, Sukurti meniu galimybė:
 
@@ -89,13 +89,13 @@ Naudojant Theme Builder, Sukurti meniu galimybė:
 3. Priskiria meniu tinkamoms temos vietoms
 4. Palaiko meniu elementų pridėjimą po sukūrimo
 
-## Susijusios galimybės
+## Susijusios galimybės {#related-abilities}
 
 - **`add_menu_item`** — pridėti elementų prie esamo meniu
 - **`update_menu`** — pervadinti meniu arba iš naujo priskirti jį temos vietai
 - **`delete_menu`** — pašalinti meniu iš jūsų svetainės
 
-## Geriausios praktikos
+## Geriausios praktikos {#best-practices}
 
 - **Naudokite aiškias navigacijos etiketes** — etiketės naudotojams turi būti glaustos ir aprašomosios
 - **Derinkite su temos vietomis** — priskirkite meniu tinkamai temos vietai, kad jis būtų rodomas teisingai
@@ -103,14 +103,14 @@ Naudojant Theme Builder, Sukurti meniu galimybė:
 - **Patikrinkite prisitaikymą** — įsitikinkite, kad meniu teisingai rodomi mobiliuosiuose įrenginiuose
 - **Lokalizuokite etiketes** — skirtingoms kalbų versijoms naudokite skirtingas navigacijos etiketes
 
-## Apribojimai
+## Apribojimai {#limitations}
 
 - Navigacijos etiketės skirtos tik rodymui; vidinis `name` vis tiek naudojamas WordPress identifikavimui
 - Temos palaikymas skiriasi; ne visos temos palaiko visas meniu vietas
 - Meniu elementai turi būti pridėti atskirai po meniu sukūrimo
 - Norint pakeisti navigacijos etiketę, reikia atnaujinti meniu
 
-## Susijusios galimybės
+## Susijusios galimybės {#related-abilities-1}
 
 - [Generuoti logotipo SVG](./generate-logo-svg.md) — kurti logotipus jūsų svetainės antraštei
 - [Patikrinti paletės kontrastą](./validate-palette-contrast.md) — užtikrinti prieinamas spalvų schemas

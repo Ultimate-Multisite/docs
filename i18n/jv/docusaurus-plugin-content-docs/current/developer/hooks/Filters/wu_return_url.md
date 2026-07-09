@@ -4,11 +4,11 @@ title: Saringan - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filter: wu_return_url
+# Filter: wu_return_url {#filter-wureturnurl}
 
 Ngidini pangembang ngganti URL bali gateway sing digunakake sawisé proses tuku.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Tipe | Katrangan |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Ngidini pangembang ngganti URL bali gateway sing digunakake sawisé proses tuku.
 | $payment | `\WP_Ultimo\Models\Payment` | instansi pambayaran Ultimate Multisite. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | pesenan kranjang Ultimate Multisite saiki. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.0.20
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) ing baris 683
 
 
-## Balikan
+## Balikan {#returns}

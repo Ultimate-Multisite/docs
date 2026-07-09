@@ -3,13 +3,13 @@ title: Isikhokelo soDibaniso
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Isikhokelo soDibaniso
+# Isikhokelo soDibaniso {#integration-guide}
 
 Esi sikhokelo sigubungela iipateni eziqhelekileyo zodibaniso ne-Ultimate Multisite, kuquka ukudibanisa neenkonzo zangaphandle, ukwakha amasango entlawulo alungiselelweyo, nokuphatha ii-webhook.
 
 Kwisiseko esizimeleyo se-tenant, bona [Umdibaniso we-Multi-Tenancy](./multi-tenancy) ukuze ufumane isikhokelo se-bootstrap ye-tenant ezimeleyo, uqinisekiso lokufuduka, SSO, kunye nokuchithwa.
 
-## Umdibaniso we-CRM
+## Umdibaniso we-CRM {#crm-integration}
 
 Vumelanisa idatha yabathengi kwi-CRM yakho xa abathengi abatsha bebhalisa:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Umdibaniso we-Analytics
+## Umdibaniso we-Analytics {#analytics-integration}
 
 Landela iziganeko eziphambili zeshishini kuwo wonke umjikelo wobomi bomthengi:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Amanyathelo Alandelayo
+## Amanyathelo Alandelayo {#next-steps}
 
 - [Uphuhliso lweSango Elilungiselelweyo](./custom-gateway) — Yakha isango lakho lentlawulo
 - [Ukuphathwa kwe-Webhook](./webhooks) — Yenza ii-endpoint ze-webhook ezilungiselelweyo

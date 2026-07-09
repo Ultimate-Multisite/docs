@@ -3,15 +3,15 @@ title: 'Piwulang 7: Ndadekake Iku Duwekmu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Piwulang 7: Nggawé Dadi Duwèkmu
+# Piwulang 7: Nggawé Dadi Duwèkmu {#lesson-7-making-it-yours}
 
 Pelangganmu aja nganti rumangsa lagi nganggo "sawijining WordPress plugin." Dheweke kudu rumangsa lagi nganggo FitSite -- platform sing dibangun kanggo indhustriné. Piwulang iki nyakup branding, white-labeling, lan nggawé platform krasa kaya produk.
 
-## Panggonan Pungkasan Kita
+## Panggonan Pungkasan Kita {#where-we-left-off}
 
 FitSite wis nduwèni alur pambayaran sing mlaku, sing nuntun pamilik studio fitness saka milih paket nganti dadi situs aktif. Saiki kita nggawé kabèh pengalaman krasa kaya produk sing nyawiji lan nduwèni merek.
 
-## Domain Platformmu
+## Domain Platformmu {#your-platform-domain}
 
 Dhasar merekmu yaiku domainmu. Kanggo FitSite:
 
@@ -19,7 +19,7 @@ Dhasar merekmu yaiku domainmu. Kanggo FitSite:
 - **Situs pelanggan**: `studioname.fitsite.com` (subdomain)
 - **Domain khusus**: Pelanggan ing paket Growth lan Pro bisa map domainé dhéwé
 
-### Nyetel Domainmu
+### Nyetel Domainmu {#setting-up-your-domain}
 
 1. Dhaptaraké domain platformmu
 2. Arahaké menyang panyedhiya hostingmu
@@ -28,11 +28,11 @@ Dhasar merekmu yaiku domainmu. Kanggo FitSite:
 
 Delengen [Carané Ngonfigurasi Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) kanggo pandhuan rinci.
 
-## White-Labeling Pengalaman Admin
+## White-Labeling Pengalaman Admin {#white-labeling-the-admin-experience}
 
 Nalika pamilik studio fitness mlebu menyang Dashboard situsé, dheweke kudu weruh merekmu, dudu branding WordPress utawa Ultimate Multisite.
 
-### Kaca Login Khusus
+### Kaca Login Khusus {#custom-login-page}
 
 Kustomisasi kaca login WordPress supaya nampilaké:
 
@@ -40,7 +40,7 @@ Kustomisasi kaca login WordPress supaya nampilaké:
 - Gambar latar sing cocog karo fitness
 - Werna merekmu
 
-### Branding Dashboard
+### Branding Dashboard {#dashboard-branding}
 
 Gunakaké addon [Admin Page Creator](/addons/admin-page-creator) utawa CSS khusus kanggo:
 
@@ -48,7 +48,7 @@ Gunakaké addon [Admin Page Creator](/addons/admin-page-creator) utawa CSS khusu
 - Ngatur skema werna admin supaya cocog karo merekmu
 - Nambah widget Dashboard khusus kanthi pranala cepet lan sumber bantuan sing khusus kanggo fitness
 
-### Kaca Admin Khusus
+### Kaca Admin Khusus {#custom-admin-pages}
 
 Timbang nggawé kaca admin khusus sing nampilaké tumindak sing paling relevan kanggo pamilik studio fitness:
 
@@ -58,11 +58,11 @@ Timbang nggawé kaca admin khusus sing nampilaké tumindak sing paling relevan k
 
 Iki nyuda kurva sinau kanthi nyeleh tumindak sing relevan karo niche ing ngarep lan tengah, tinimbang didhelikaké ing menu WordPress standar.
 
-## Branding Komunikasimu
+## Branding Komunikasimu {#branding-your-communications}
 
 Saben email, invoice, lan kabar kudu nguataké merekmu.
 
-### Email Sistem
+### Email Sistem {#system-emails}
 
 Navigasi menyang **Ultimate Multisite > Settings > Emails** lan kustomisasi kabèh email sistem:
 
@@ -79,7 +79,7 @@ Email penting sing kudu dikustomisasi:
 | Bukti pambayaran | "Pambayaran ditampa" | "Pambayaran langganan FitSite dikonfirmasi" |
 | Uji coba arep rampung | "Uji coba sampeyan bakal rampung sedhéla manèh" | "Uji coba FitSite sampeyan rampung ing 3 dina -- tetep aktifaké situs web studiomu" |
 
-### Invoice
+### Invoice {#invoices}
 
 Kustomisasi template invoice nganggo:
 
@@ -87,7 +87,7 @@ Kustomisasi template invoice nganggo:
 - Rincian bisnismu
 - Jeneng produk khusus fitness (dudu ID paket umum)
 
-## Situs Sing Dideleng Pelanggan
+## Situs Sing Dideleng Pelanggan {#the-customer-facing-site}
 
 Domain utamamu (`fitsite.com`) butuh situs marketing sing adol platform. Iki kapisah saka admin jaringan Ultimate Multisite -- iki pasuryan umum bisnismu.
 
@@ -103,7 +103,7 @@ Kaca penting:
 Gawé situs marketingmu minangka situs ing njero jaringanmu dhéwé. Iki ngidini sampeyan ngelola saka Dashboard sing padha lan nduduhaké kapabilitas platformmu dhéwé.
 :::
 
-## Domain Khusus kanggo Pelanggan
+## Domain Khusus kanggo Pelanggan {#custom-domain-for-customers}
 
 Kanggo pelanggan ing paket sing nyakup domain khusus, dokumèntasikaké prosèsé kanthi cetha:
 
@@ -113,7 +113,7 @@ Kanggo pelanggan ing paket sing nyakup domain khusus, dokumèntasikaké prosès�
 
 Gawé artikel pitulungan utawa entri basis kawruh khusus kanggo prosès iki, ditulis kanggo pamilik studio fitness sing ora teknis.
 
-## Jaringan FitSite Nganti Saiki
+## Jaringan FitSite Nganti Saiki {#the-fitsite-network-so-far}
 
 ```
 Jaringan FitSite
@@ -132,7 +132,7 @@ Jaringan FitSite
 └── Siyap kanggo alur onboarding (piwulang sabanjuré)
 ```
 
-## Sing Kita Bangun ing Piwulang Iki
+## Sing Kita Bangun ing Piwulang Iki {#what-we-built-this-lesson}
 
 - **Domain platform lan DNS** dikonfigurasi kanggo pengalaman bermerek
 - **Admin white-label** nganggo branding FitSite ing kabèh bagean

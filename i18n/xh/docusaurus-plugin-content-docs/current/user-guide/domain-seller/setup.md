@@ -3,21 +3,21 @@ title: Ukumisela kunye noQwalaselo loMboneleli
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Umthengisi weDomeyini: Ukumisela kunye noLungiselelo loMboneleli
+# Umthengisi weDomeyini: Ukumisela kunye noLungiselelo loMboneleli {#domain-seller-setup-and-provider-configuration}
 
 I-addon yoMthengisi weDomeyini iza newizadi yokumisela ekhokelwayo ekukhokelela kuwo onke amanyathelo afunekayo. Eli phepha ligubungela ukuhamba kwewizadi kunye nendlela yokulungisa okanye yokuphinda ulungiselele ababoneleli emva koko.
 
-## Iimfuno
+## Iimfuno {#requirements}
 
 - **Multisite Ultimate** v2.4.12 okanye ephezulu, yenziwe isebenze kwinethiwekhi
 - **PHP** 7.4+
 - Iinkcukacha ze-API ubuncinane zomnye umbhalisi oxhaswayo
 
-## Iwizadi yokumisela okokuqala
+## Iwizadi yokumisela okokuqala {#first-run-setup-wizard}
 
 Iwizadi yokumisela iqaliswa ngokuzenzekelayo okokuqala xa wenza i-plugin isebenze kwinethiwekhi. Ikwafumaneka nangaliphi na ixesha ukusuka ku-**Umlawuli weNethiwekhi › Ultimate Multisite › Ukumisela uMthengisi weDomeyini**.
 
-### Inyathelo 1 — Khetha umboneleli
+### Inyathelo 1 — Khetha umboneleli {#step-1--choose-a-provider}
 
 Khetha umbhalisi ofuna ukumqhagamshela. Iinketho ezixhaswayo:
 
@@ -33,7 +33,7 @@ Khetha umbhalisi ofuna ukumqhagamshela. Iinketho ezixhaswayo:
 | NameSilo | Hayi | Hayi |
 | Enom | Ewe | Hayi |
 
-### Inyathelo 2 — Faka iinkcukacha zokungena
+### Inyathelo 2 — Faka iinkcukacha zokungena {#step-2--enter-credentials}
 
 Umboneleli ngamnye unemimandla yeenkcukacha zokungena eyahlukileyo:
 
@@ -57,17 +57,17 @@ Umboneleli ngamnye unemimandla yeenkcukacha zokungena eyahlukileyo:
 
 Phawula **Imowudi ye-sandbox** apho ifumaneka khona ukuze uvavanye ngokuchasene nendawo yovavanyo yomboneleli ngaphambi kokuba uye ngqo.
 
-### Inyathelo 3 — Vavanya uqhagamshelo
+### Inyathelo 3 — Vavanya uqhagamshelo {#step-3--test-the-connection}
 
 Cofa **Vavanya uQhagamshelo**. Iwizadi ithumela umnxeba we-API okhaphukhaphu ukuqinisekisa iinkcukacha zokungena kunye noqhagamshelwano. Lungisa nayiphi na imiba yeenkcukacha zokungena ngaphambi kokuqhubeka.
 
-### Inyathelo 4 — Ngenisa ii-TLDs
+### Inyathelo 4 — Ngenisa ii-TLDs {#step-4--import-tlds}
 
 Cofa **Ngenisa ii-TLDs** ukuze utsale zonke ii-TLDs ezifumanekayo kunye namaxabiso e-wholesale kumboneleli oqhagamshelweyo. Oku kugcwalisa uluhlu lwe-TLD olusetyenziswa ziimveliso zeedomeyini. Ukungenisa kungathatha imizuzwana engama-30–60 kubaboneleli abanekhatalaogu enkulu yee-TLD.
 
 Ii-TLDs zikwaphinda zivumelaniswe ngokuzenzekelayo kanye ngemini ngomsebenzi we-cron ocwangcisiweyo.
 
-### Inyathelo 5 — Yenza imveliso yedomeyini
+### Inyathelo 5 — Yenza imveliso yedomeyini {#step-5--create-a-domain-product}
 
 Iwizadi yenza imveliso yedomeyini emiselweyo ebamba konke ene-markup ye-10%. Ungayihlela le mveliso ngoko nangoko okanye utsibe uze wenze iimveliso ngesandla phantsi kwe-**Ultimate Multisite › Iimveliso**.
 
@@ -75,7 +75,7 @@ Bona [Iimveliso zeDomeyini kunye namaxabiso](./domain-products) ngesikhokelo esi
 
 ---
 
-## Ukuphinda ulungiselele umboneleli
+## Ukuphinda ulungiselele umboneleli {#reconfiguring-a-provider}
 
 Yiya ku-**Umlawuli weNethiwekhi › Ultimate Multisite › Izicwangciso › Umthengisi weDomeyini** (okanye ucofe **Izicwangciso** kuluhlu lwe-plugin).
 
@@ -88,17 +88,17 @@ Iphepha lezicwangciso liqulathe:
 - **Lawula iimveliso zeedomeyini** — ikhonkco elikhawulezayo kuluhlu lweeMveliso
 - **Lungiselela ababoneleli** — ivula iWizadi yoDibaniso ukongeza okanye ukuphinda ulungiselele ababoneleli
 
-### Ukongeza umboneleli wesibini
+### Ukongeza umboneleli wesibini {#adding-a-second-provider}
 
 Cofa **Lungiselela ababoneleli** uze uqhube iwizadi kwakhona kumbhalisi omtsha. Ungaba nababoneleli abaninzi abalungiselelwe ngaxeshanye. Yabela imveliso nganye yedomeyini kumboneleli othile, okanye uyishiye komiselweyo.
 
-### Ukuvumelanisa ii-TLDs ngesandla
+### Ukuvumelanisa ii-TLDs ngesandla {#syncing-tlds-manually}
 
 Kwiphepha lezicwangciso, cofa **Vumelanisa ii-TLDs** ecaleni kwakhe nawuphi na umboneleli olungiselelweyo ukuze utsale amaxabiso amva nje. Oku kuluncedo emva kokuba umboneleli ehlaziye amaxabiso e-wholesale okanye ongeze ii-TLDs ezintsha.
 
 ---
 
-## Iilog
+## Iilog {#logs}
 
 Umboneleli ngamnye ubhala kwitshaneli yakhe yelog. Iilog ziyabonakala phantsi kwe-**Umlawuli weNethiwekhi › Ultimate Multisite › Iilog**:
 
@@ -118,7 +118,7 @@ Umboneleli ngamnye ubhala kwitshaneli yakhe yelog. Iilog ziyabonakala phantsi kw
 
 ---
 
-## Amanqaku ngobuchule bomboneleli
+## Amanqaku ngobuchule bomboneleli {#provider-capability-notes}
 
 Ayizizo zonke ii-API zababhalisi eziveza imisebenzi efanayo. I-addon ibonisa imisebenzi engaxhaswayo ngeempazamo ezicacileyo ezijoliswe kumlawuli endaweni yokusilela ngokuthe cwaka.
 

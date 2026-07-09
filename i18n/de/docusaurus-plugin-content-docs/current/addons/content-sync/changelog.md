@@ -3,9 +3,9 @@ title: Content Sync Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Inhaltssynchronisierung Änderungsprotokoll
+# Inhaltssynchronisierung Änderungsprotokoll {#content-sync-changelog}
 
-### Version 1.1.0 - Veröffentlicht am 2025-12-31
+### Version 1.1.0 - Veröffentlicht am 2025-12-31 {#version-110---released-on-2025-12-31}
 * Neu: Unterstützung für die Synchronisierung aller Beitragstypen (Beiträge, Seiten, benutzerdefinierte Beitragstypen)
 * Neu: Beitragstyp-Filterung im Schritt zur Inhaltselektion
 * Neu: Schritt zur Auswahl der Quellseite – Synchronisierung von jeder Seite, nicht nur der Hauptseite
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Geändert: Schritt "Select Templates" umbenannt in "Select Data"
 * Verbesserte: Elementor-spezifischer Code läuft jetzt nur für den Beitragstyp elementor_library
 
-### Version 1.0.0 - Veröffentlicht am 2025-12-19
+### Version 1.0.0 - Veröffentlicht am 2025-12-19 {#version-100---released-on-2025-12-19}
 * Erstveröffentlichung
 * Mehrstufiger Assistent für Template- und Seitenauswahl
 * Stapelverarbeitung mit Echtzeitfortschrittsanzeige

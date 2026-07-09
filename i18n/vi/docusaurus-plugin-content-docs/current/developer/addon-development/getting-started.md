@@ -3,9 +3,9 @@ title: Bắt đầu phát triển tiện ích bổ sung
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Phát triển tiện ích bổ sung
+# Phát triển tiện ích bổ sung {#addon-development}
 
-## Cấu trúc tiện ích bổ sung
+## Cấu trúc tiện ích bổ sung {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Mẫu tệp tiện ích bổ sung chính
+## Mẫu tệp tiện ích bổ sung chính {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Ví dụ về model tùy chỉnh
+## Ví dụ về model tùy chỉnh {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Tích hợp trang quản trị
+## Tích hợp trang quản trị {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Kiểm thử Addon của bạn
+## Kiểm thử Addon của bạn {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Các điểm mở rộng v2.13.0
+## Các điểm mở rộng v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 thêm một số điểm mở rộng hữu ích cho các addon tích hợp với tenant có chủ quyền, tên miền thanh toán, hoặc tự động hóa DNS của nhà cung cấp host.
 
-### SSO và URL quản lý site chính
+### SSO và URL quản lý site chính {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Tên miền cơ sở của biểu mẫu thanh toán
+### Tên miền cơ sở của biểu mẫu thanh toán {#checkout-form-base-domains}
 
 Sử dụng `wu_checkout_form_base_domains` khi addon của bạn cung cấp thêm các tên miền cơ sở dùng chung nên hoạt động như tên miền **URL site** của biểu mẫu thanh toán thay vì ánh xạ tùy chỉnh theo từng site:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite chuẩn hóa các host này và bỏ qua các bản ghi tên miền được ánh xạ theo từng site tự động cho chúng.
 
-### Tạo bản ghi tên miền tự động
+### Tạo bản ghi tên miền tự động {#automatic-domain-record-creation}
 
 Sử dụng `wu_should_create_domain_record_for_site` khi addon của bạn cần chặn hoặc trì hoãn việc tạo bản ghi tên miền tự động cho một site mới được tạo:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Các tích hợp nhà cung cấp host lắng nghe `wu_add_subdomain` có thể tạo bản ghi DNS phía nhà cung cấp khi các site được tạo. Nếu không có tích hợp nào được đăng ký cho action đó, Ultimate Multisite sẽ bỏ qua background job trống.
 
-## Các bước tiếp theo
+## Các bước tiếp theo {#next-steps}
 
 - Xem [Tài liệu tham khảo Hooks](/developer/hooks) để biết các action và filter có sẵn
 - Xem [Tổng quan REST API](/developer/rest-api/overview) để tích hợp API

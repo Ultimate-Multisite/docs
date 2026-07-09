@@ -4,11 +4,11 @@ title: Filtër - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params
+# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Filtron parametrat e përdorur për të krijuar artikujt e rreshtit në Shportën WooCommerce, përpara se klienti të ridrejtohet te checkout-i WooCommerce.
 
-## Parametrat
+## Parametrat {#parameters}
 
 | Emri | Tipi | Përshkrimi |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Filtron parametrat e përdorur për të krijuar artikujt e rreshtit në Shportë
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Instanca e artikullit të rreshtit Ultimate Multisite. |
 | $wc_product | `\WC_Product` | Produkti WooCommerce. |
 
-### Që nga
+### Që nga {#since}
 
 - 2.0.0
-### Burimi
+### Burimi {#source}
 
 Përcaktuar në [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) në rreshtin 662
 
 
-## Kthen
+## Kthen {#returns}
 Parametrat e modifikuar të artikullit të rreshtit.

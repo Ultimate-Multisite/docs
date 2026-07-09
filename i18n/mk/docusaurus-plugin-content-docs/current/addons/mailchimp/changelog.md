@@ -3,7 +3,7 @@ title: Mailchimp дневник на промени
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp дневник на промени
+# Mailchimp дневник на промени {#mailchimp-changelog}
 
 Верзија: 1.1.1 - Објавена на 2025-09-28
 

@@ -3,28 +3,28 @@ title: REST API-oorsig
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API-verwysing
+# REST API-verwysing {#rest-api-reference}
 
-## Basiskonfigurasie
+## Basiskonfigurasie {#base-configuration}
 
 **Basis-URL:** `{site_url}/wp-json/wu/v2/`
 **Stawing:** API-sleutel en -geheim (HTTP Basic Auth of URL-parameters)
 
-## Stawing
+## Stawing {#authentication}
 
-### Aktiveer API
+### Aktiveer API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Kry API-geloofsbriewe
+### Kry API-geloofsbriewe {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Stawingsmetodes
+### Stawingsmetodes {#authentication-methods}
 
 **HTTP Basic Auth (Aanbeveel):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kern-eindpunte
+## Kern-eindpunte {#core-endpoints}
 
-### 1. Kliënte-API
+### 1. Kliënte-API {#1-customers-api}
 
 **Basisroete:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites-API
+### 2. Sites-API {#2-sites-api}
 
 **Basisroete:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Lidmaatskappe-API
+### 3. Lidmaatskappe-API {#3-memberships-api}
 
 **Basisroete:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produkte-API
+### 4. Produkte-API {#4-products-api}
 
 **Basisroete:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Betalings-API
+### 5. Betalings-API {#5-payments-api}
 
 **Basisroete:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domeine-API
+### 6. Domeine-API {#6-domains-api}
 
 **Basisroete:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Registrasie-eindpunt
+## Registrasie-eindpunt {#registration-endpoint}
 
 Die `/register`-eindpunt bied ’n volledige afreken-/registrasievloei:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Soewereine tenant-eindpunte
+## Soewereine tenant-eindpunte {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 voeg soewereine tenant REST-dekking by vir integrasies wat geïsoleerde tenants voorsien, inspekteer of verifieer.
 
@@ -242,7 +242,7 @@ Tipiese migrasiestatusantwoorde sluit in:
 
 Behandel `ready: false` as ’n voorbekendstelling-blokkeerder. Gaan die verifikasiebesonderhede na, stel die databasisgasheerbinding, tou, gebruikervoorsiening of roeteringsprobleem reg, en probeer dan weer verifieer.
 
-## Foutantwoorde
+## Foutantwoorde {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Behandel `ready: false` as ’n voorbekendstelling-blokkeerder. Gaan die verifik
 }
 ```
 
-## Paginering en filtering
+## Paginering en filtering {#pagination-and-filtering}
 
 **Navraagparameters:**
 ```http

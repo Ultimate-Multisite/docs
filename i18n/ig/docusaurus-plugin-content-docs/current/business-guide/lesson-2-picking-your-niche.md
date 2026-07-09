@@ -3,19 +3,19 @@ title: 'Ihe ọmụmụ 2: Ịhọrọ niche gị'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Ihe ọmụmụ 2: Ịhọrọ Niche Gị
+# Ihe ọmụmụ 2: Ịhọrọ Niche Gị {#lesson-2-picking-your-niche}
 
 N’Ihe ọmụmụ 1, anyị gosipụtara ihe mere niche ji ka ihe izugbe mma. Ugbu a, ị ga-ahọrọ nke gị. Ihe ọmụmụ a na-enye gị usoro maka ịchọta na ịnwale niche tupu i tinye oge n’iwulite ihe maka ya.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 Anyị kọwara echiche FitSite: ikpo okwu webụsaịtị maka ụlọ mgbatị ahụ. Ma kedu ka anyị si ruo n’ụlọ mgbatị ahụ kpọmkwem? Ihe ọmụmụ a na-akọwa usoro ahụ ka i nwee ike iji ya chọta niche nke gị.
 
-## Ụkpụrụ Atọ
+## Ụkpụrụ Atọ {#the-three-criteria}
 
 Niche dị mma maka ikpo okwu webụsaịtị na-emezu ọnọdụ atọ:
 
-### 1. Ha Chọrọ Webụsaịtị ma Na-esiri Ha Ike Inweta Nke Dị Mma
+### 1. Ha Chọrọ Webụsaịtị ma Na-esiri Ha Ike Inweta Nke Dị Mma {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Chọọ ụlọ ọrụ ebe:
 
@@ -26,7 +26,7 @@ Chọọ ụlọ ọrụ ebe:
 
 **Ụlọ mgbatị ahụ dabara**: ndị otu na-atụ anya ịchọta usoro klaasị, ọnụahịa, na ntinye akwụkwọ n’ịntanetị. Ọtụtụ webụsaịtị studio emechiela ochie ma ọ bụ wuru na template izugbe nke anaghị arụ ọrụ ahụ nke ọma.
 
-### 2. Azụmahịa Ndị Ahụ Pụrụ Ịkwụ Ụgwọ Ndebanye Aha Kwa Ọnwa
+### 2. Azụmahịa Ndị Ahụ Pụrụ Ịkwụ Ụgwọ Ndebanye Aha Kwa Ọnwa {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Ndị ahịa ị na-elekwasị anya kwesịrị ịbụ:
 
@@ -36,7 +36,7 @@ Ndị ahịa ị na-elekwasị anya kwesịrị ịbụ:
 
 **Ụlọ mgbatị ahụ dabara**: ha na-akwụrịrị ụgwọ maka sọftụwia ntinye akwụkwọ, nhazi ịkwụ ụgwọ, na ngwá ọrụ ahịa. Ndebanye aha webụsaịtị bụ mgbakwunye dabara adaba.
 
-### 3. Ha Na-akparịta Ụka N’etiti Ha
+### 3. Ha Na-akparịta Ụka N’etiti Ha {#3-they-talk-to-each-other}
 
 Niche kacha mma nwere:
 
@@ -46,9 +46,9 @@ Niche kacha mma nwere:
 
 **Ụlọ mgbatị ahụ dabara**: ndị nwe studio na-aga mmemme ụlọ ọrụ mgbatị ahụ, na-esonye n’obodo n’ịntanetị, ma na-ekerịtakarị ngwá ọrụ na ọrụ na ndị ọgbọ ha.
 
-## Otu Esi Achọta Ndị Nwere Ike Ịbụ Niche
+## Otu Esi Achọta Ndị Nwere Ike Ịbụ Niche {#how-to-find-niche-candidates}
 
-### Malite na Ihe Ị Ma
+### Malite na Ihe Ị Ma {#start-with-what-you-know}
 
 Ahụmịhe ị nwere ugbu a bụ uru. Tụlee:
 
@@ -56,7 +56,7 @@ Ahụmịhe ị nwere ugbu a bụ uru. Tụlee:
 - Ihe ntụrụndụ ma ọ bụ mmasị ebe ị ghọtara obodo ahụ
 - Netwọkụ ọkachamara ị bụrịrị akụkụ ya
 
-### Chọọ Ihe Ịrịba Ama nke Nsogbu
+### Chọọ Ihe Ịrịba Ama nke Nsogbu {#look-for-pain-signals}
 
 Chọọ ihe akaebe na azụmahịa dị na niche na-alụso webụsaịtị ọgụ:
 
@@ -65,7 +65,7 @@ Chọọ ihe akaebe na azụmahịa dị na niche na-alụso webụsaịtị ọ
 - Lee webụsaịtị ndị dị n’eziokwu n’ime niche ahụ -- ọ̀tụtụ n’ime ha adịghị mma?
 - Lelee ma ndị asọmpi dị na otu ha si eje ozi n’ahịa ahụ nke ọma
 
-### Nyochaa Akụnụba Ya
+### Nyochaa Akụnụba Ya {#evaluate-the-economics}
 
 Maka niche ọ bụla nwere ike ịbụ, tụọ aro:
 
@@ -73,11 +73,11 @@ Maka niche ọ bụla nwere ike ịbụ, tụọ aro:
 - **Njikere ịkwụ ụgwọ**: Gịnị ka ha na-emefu ugbu a na ngwá ọrụ yiri ya?
 - **Ikike uru ogologo ndụ**: Azụmahịa ndị a kwụsiri ike, ma ọ bụ ha na-ahapụ ngwa ngwa?
 
-## Ịnwale Niche Gị
+## Ịnwale Niche Gị {#validating-your-niche}
 
 Tupu iwulite ihe ọ bụla, nwalee ọchịchọ:
 
-### Kparịta Ụka na Ndị Ahịa Nwere Ike Ịdị
+### Kparịta Ụka na Ndị Ahịa Nwere Ike Ịdị {#talk-to-potential-customers}
 
 Rute ndị nwe azụmahịa 10-15 n’ime niche ị na-elekwasị anya. Jụọ:
 
@@ -88,17 +88,17 @@ Rute ndị nwe azụmahịa 10-15 n’ime niche ị na-elekwasị anya. Jụọ:
 
 Ị naghị ere ihe ugbu a. Ị na-ege ntị.
 
-### Lelee Ọnọdụ Ndị Asọmpi
+### Lelee Ọnọdụ Ndị Asọmpi {#check-competitor-landscape}
 
 - **Enweghị ndị asọmpi**: Nke a nwere ike ịpụta na ọchịchọ adịghị, ma ọ bụ nwee ike ịpụta ohere a na-ejibeghị. Mkparịta ụka ndị ahịa ga-agwa gị nke bụ eziokwu.
 - **Ndị asọmpi ole na ole**: Ihe ịrịba ama dị mma. Ọ na-egosi na ọchịchọ dị. Mụọ ihe ha na-eme nke ọma na ebe ha na-erughị eru.
 - **Ọtụtụ ndị asọmpi**: Ọ na-esiri ike ịbanye, mana ka nwere ike ime ma ọ bụrụ na ị nwere ike igosipụta ọdịiche gị nke ọma.
 
-### Wulite Landing Page
+### Wulite Landing Page {#build-a-landing-page}
 
 Tupu iwulite ikpo okwu ahụ, mepụta landing page dị mfe nke na-akọwa ngwọta niche gị ma chịkọta ndị debanyere aha email. Gbaa obere mgbasa ozi e zubere nke ọma iji nwalee mmasị. Ọ bụrụ na ndị mmadụ debanye aha, ị nwere nkwado.
 
-## Itinye Nke a na FitSite
+## Itinye Nke a na FitSite {#applying-this-to-fitsite}
 
 Lee otu FitSite si nweta akara megide Ụkpụrụ ndị ahụ:
 
@@ -112,7 +112,7 @@ Lee otu FitSite si nweta akara megide Ụkpụrụ ndị ahụ:
 
 Nnwale kwadoro ohere ahụ. Ugbu a, anyị na-ewu.
 
-## Echiche Niche Ị Ga-atụle
+## Echiche Niche Ị Ga-atụle {#niche-ideas-to-consider}
 
 Ọ bụrụ na mgbatị ahụ abụghị ahịa gị, lee niche ndị ọzọ na-emezu Ụkpụrụ ndị a:
 
@@ -127,7 +127,7 @@ Nnwale kwadoro ohere ahụ. Ugbu a, anyị na-ewu.
 
 Nke ọ bụla n’ime ndị a nwere otu njirimara: mkpa webụsaịtị doro anya, ikike ịkwụ ụgwọ, na mgbasa ozi site n’ọnụ ruo n’ọnụ n’ime obodo.
 
-## Ihe Anyị Wulitere n’Ihe Ọmụmụ a
+## Ihe Anyị Wulitere n’Ihe Ọmụmụ a {#what-we-built-this-lesson}
 
 - **Usoro ịhọrọ niche**: Ụkpụrụ atọ iji nyochaa niche ọ bụla
 - **Ụzọ nnwale**: mkparịta ụka ndị ahịa, nyocha ndị asọmpi, nnwale landing page

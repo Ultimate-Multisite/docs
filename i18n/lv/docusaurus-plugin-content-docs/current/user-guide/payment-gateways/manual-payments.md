@@ -3,13 +3,13 @@ title: Manuālo maksājumu iestatīšana
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuālo maksājumu iestatīšana (v2)
+# Manuālo maksājumu iestatīšana (v2) {#setting-up-manual-payments-v2}
 
 _**SVARĪGA PIEZĪME: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
 Manuālie maksājumi ir veids, kā piedāvāt citas maksājumu metodes, ja jūsu lietotājiem nav pieejams **Stripe** vai **PayPal**. Tas var būt pārskaitījums vai bankas pārskaitījums, vai jebkura cita maksājumu metode, kas jūsu lietotājiem pieejama lokāli.
 
-## Kā iespējot manuālos maksājumus
+## Kā iespējot manuālos maksājumus {#how-to-enable-manual-payments}
 
 Manuālā maksājuma iestatīšana ir ļoti vienkārša. Jums tikai jāiespējo tas maksājumu vārtejās un jāievada detalizētas instrukcijas par to, kā lietotājam jānosūta maksājums.
 
@@ -31,7 +31,7 @@ Un viņi arī saņems ziņojumu jūsu **Paldies** lapā ar jūsu maksājuma inst
 
 <!-- Ekrānuzņēmums nav pieejams: Paldies lapa, kurā pēc checkout redzamas maksājuma instrukcijas -->
 
-## Manuālo maksājumu apstiprināšana
+## Manuālo maksājumu apstiprināšana {#confirming-manual-payments}
 
 Lai apstiprinātu manuālo maksājumu, dodieties uz **Maksājumi** izvēlni kreisajā joslā. Tur varat redzēt visus maksājumus savā tīklā un to informāciju, tostarp to **statusu**. Manuālajam maksājumam vienmēr būs **Gaida** statuss, līdz jūs to manuāli mainīsiet.
 

@@ -3,28 +3,28 @@ title: REST API 概述
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API 参考
+# REST API 参考 {#rest-api-reference}
 
-## 基础配置
+## 基础配置 {#base-configuration}
 
 **Base URL：** `{site_url}/wp-json/wu/v2/`
 **认证：** API Key 和 Secret（HTTP Basic Auth 或 URL 参数）
 
-## 认证
+## 认证 {#authentication}
 
-### 启用 API
+### 启用 API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### 获取 API 凭据
+### 获取 API 凭据 {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### 认证方法
+### 认证方法 {#authentication-methods}
 
 **HTTP Basic Auth（推荐）：**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## 核心端点
+## 核心端点 {#core-endpoints}
 
-### 1. 客户 API
+### 1. 客户 API {#1-customers-api}
 
 **基础路由：** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. 站点 API
+### 2. 站点 API {#2-sites-api}
 
 **基础路由：** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. 会员资格 API
+### 3. 会员资格 API {#3-memberships-api}
 
 **基础路由：** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. 产品 API
+### 4. 产品 API {#4-products-api}
 
 **基础路由：** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. 支付 API
+### 5. 支付 API {#5-payments-api}
 
 **基础路由：** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. 域名 API
+### 6. 域名 API {#6-domains-api}
 
 **基础路由：** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## 注册端点
+## 注册端点 {#registration-endpoint}
 
 `/register` 端点提供完整的结账/注册流程：
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## 主权租户端点
+## 主权租户端点 {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 为用于配置、检查或验证隔离租户的集成添加了主权租户 REST 覆盖。
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 将 `ready: false` 视为上线前阻断项。检查验证详细信息，修复数据库主机绑定、队列、用户配置或路由问题，然后重试验证。
 
-## 错误响应
+## 错误响应 {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## 分页和筛选
+## 分页和筛选 {#pagination-and-filtering}
 
 **查询参数：**
 ```http

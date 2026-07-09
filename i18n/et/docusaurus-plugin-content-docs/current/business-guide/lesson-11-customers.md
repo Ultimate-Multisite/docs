@@ -3,15 +3,15 @@ title: 'Õppetund 11: Klientide leidmine'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Õppetund 11: Klientide leidmine
+# Õppetund 11: Klientide leidmine {#lesson-11-finding-customers}
 
 Suurepärane platvorm ilma klientideta on lihtsalt hobi. See õppetund käsitleb, kuidas hankida kliente nišivertikaalis -- strateegiad, mis toimivad just seetõttu, et keskendud ühele valdkonnale.
 
-## Kus pooleli jäime
+## Kus pooleli jäime {#where-we-left-off}
 
 FitSite on live. Nüüd peame panema fitness-stuudiote omanikud seda leidma ja registreeruma.
 
-## Miks nišipõhine kliendihange on teistsugune
+## Miks nišipõhine kliendihange on teistsugune {#why-niche-acquisition-is-different}
 
 Kui müüd kõigile, konkureerid tähelepanu pärast kärarikkal turul. Kui müüd nišile, on sul eelised:
 
@@ -19,17 +19,17 @@ Kui müüd kõigile, konkureerid tähelepanu pärast kärarikkal turul. Kui mü�
 - **Sinu sõnum kõnetab kohe** -- "veebisaidid fitness-stuudiotele" peatab jõusaaliomaniku kerimise pealt
 - **Soovitused võimenduvad** -- fitness-stuudiote omanikud tunnevad teisi fitness-stuudiote omanikke
 
-## Kanal 1: Otsene pöördumine
+## Kanal 1: Otsene pöördumine {#channel-1-direct-outreach}
 
 Kiireim tee esimeste klientideni on otsene, isiklik pöördumine.
 
-### Leia potentsiaalseid kliente
+### Leia potentsiaalseid kliente {#find-prospects}
 
 - Otsi Google Mapsist oma piirkonna fitness-stuudioid, jõusaale ja personaaltreenereid
 - Külasta nende praeguseid veebisaite (või märgi üles, et neil seda pole)
 - Kogu kontaktandmeid nende Google Businessi profiilidelt või sotsiaalmeediast
 
-### Hinda nende praegust olukorda
+### Hinda nende praegust olukorda {#evaluate-their-current-situation}
 
 Iga potentsiaalse kliendi kohta märgi:
 
@@ -37,7 +37,7 @@ Iga potentsiaalse kliendi kohta märgi:
 - **Halb veebisait**: Tugev potentsiaalne klient -- näita neile, milline parem valik välja näeb
 - **Hea veebisait**: Nõrk potentsiaalne klient -- nad on selle probleemi juba lahendanud
 
-### Võta ühendust
+### Võta ühendust {#make-contact}
 
 Saada isikupärastatud e-kiri või sõnum:
 
@@ -48,7 +48,7 @@ Saada isikupärastatud e-kiri või sõnum:
 
 Ära saada mass-e-kirju. Isikupärastatud pöördumine 20 hästi uuritud potentsiaalse kliendi poole annab parema tulemuse kui üldine masspostitus 2 000 inimesele.
 
-## Kanal 2: Nišikogukonnad
+## Kanal 2: Nišikogukonnad {#channel-2-niche-communities}
 
 Fitness-stuudiote omanikud kogunevad veebis kindlates kohtades:
 
@@ -57,7 +57,7 @@ Fitness-stuudiote omanikud kogunevad veebis kindlates kohtades:
 - **Valdkonnafoorumid** ja arutelutahvlid
 - **LinkedIni grupid** fitness-professionaalidele
 
-### Kuidas osaleda
+### Kuidas osaleda {#how-to-participate}
 
 Ära liitu ja hakka kohe oma toodet müüma. Selle asemel:
 
@@ -66,7 +66,7 @@ Fitness-stuudiote omanikud kogunevad veebis kindlates kohtades:
 3. **Jaga siis, kui see on asjakohane** -- kui keegi küsib veebisaitide kohta, jaga oma platvormi loomulikult
 4. **Loo kasulikku sisu** -- kirjuta postitusi teemal "mis teeb fitness-stuudio veebisaidi suurepäraseks", mis juhivad loomulikult sinu platvormini
 
-## Kanal 3: Sisuturundus
+## Kanal 3: Sisuturundus {#channel-3-content-marketing}
 
 Loo sisu, mida fitness-stuudiote omanikud otsivad:
 
@@ -77,7 +77,7 @@ Loo sisu, mida fitness-stuudiote omanikud otsivad:
 
 Avalda see oma FitSite’i turundusblogis. Aja jooksul saavutab see sisu otsingumootorites positsioone ja toob orgaanilist liiklust inimestelt, kes otsivad aktiivselt seda, mida pakud.
 
-## Kanal 4: Partnerlused
+## Kanal 4: Partnerlused {#channel-4-partnerships}
 
 Tee koostööd ettevõtetega, kes juba teenindavad fitness-stuudioid:
 
@@ -88,7 +88,7 @@ Tee koostööd ettevõtetega, kes juba teenindavad fitness-stuudioid:
 
 Paku soovitustasusid või vastastikust reklaami. [AffiliateWP lisamoodul](/addons/affiliatewp) aitab sul luua ametliku soovitusprogrammi.
 
-## Kanal 5: Valdkonnaüritused
+## Kanal 5: Valdkonnaüritused {#channel-5-industry-events}
 
 Fitness-valdkonna üritused toovad sind sadade potentsiaalsete klientide ette:
 
@@ -99,7 +99,7 @@ Fitness-valdkonna üritused toovad sind sadade potentsiaalsete klientide ette:
 
 Sul ei ole vaja suurt eelarvet. Isegi osalejana kohal käimine ja vestlused sellest, mida teed, võivad tuua müügivihjeid.
 
-## Kanal 6: Esitlussaidid
+## Kanal 6: Esitlussaidid {#channel-6-showcase-sites}
 
 Sinu parim turundus on sinu olemasolevate klientide saidid. Loaga:
 
@@ -108,7 +108,7 @@ Sinu parim turundus on sinu olemasolevate klientide saidid. Loaga:
 - Küsi rahulolevatelt klientidelt iseloomustusi
 - Julgusta kliente mainima FitSite’i, kui neilt nende veebisaidi kohta küsitakse
 
-## Soovitusprogrammi seadistamine
+## Soovitusprogrammi seadistamine {#setting-up-a-referral-program}
 
 Suust suhu leviv soovitus on nišis sinu võimsaim kanal. Muuda see ametlikuks:
 
@@ -116,7 +116,7 @@ Suust suhu leviv soovitus on nišis sinu võimsaim kanal. Muuda see ametlikuks:
 2. Paku olemasolevatele klientidele soovituste eest preemiat (üks kuu tasuta, Accounti krediit jne)
 3. Tee see lihtsaks -- anna neile soovituslink ja lihtne sõnum, mida nad saavad edasi saata
 
-## Jälgi, mis töötab
+## Jälgi, mis töötab {#tracking-what-works}
 
 Iga kanali puhul jälgi:
 
@@ -126,7 +126,7 @@ Iga kanali puhul jälgi:
 
 Panusta rohkem kanalitesse, mis töötavad. Lõika ära kanalid, mis ei tööta.
 
-## Realistlikud ootused
+## Realistlikud ootused {#realistic-expectations}
 
 - **Kuu 1-3**: 5-20 klienti, peamiselt otsesest pöördumisest ja kogukondadest
 - **Kuu 4-6**: 20-50 klienti, sisuturundus hakkab panustama
@@ -134,7 +134,7 @@ Panusta rohkem kanalitesse, mis töötavad. Lõika ära kanalid, mis ei tööta.
 
 Need arvud varieeruvad, kuid muster on püsiv: varased kliendid tulevad otsesest pingutusest, hilisemad kliendid tulevad sisu, soovituste ja maine võimenduvatest mõjudest.
 
-## Mida me selles õppetunnis ehitasime
+## Mida me selles õppetunnis ehitasime {#what-we-built-this-lesson}
 
 - **Kuus kliendihankekanalit**, mis on kohandatud fitness-nišile
 - **Otsese kontakti protsess** esimeste klientide võitmiseks

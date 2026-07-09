@@ -3,11 +3,11 @@ title: Habilidad de Especificación de Sitios
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Habilidad de Especificación del Sitio
+# Habilidad de Especificación del Sitio {#site-specification-skill}
 
 La **habilidad de Especificación del Sitio** es un enfoque estructurado para capturar los objetivos, la audiencia y la identidad de marca de tu sitio. Esta información se almacena en tu memoria **site_brief**, la cual los agentes consultan a lo largo de las sesiones para proporcionar asistencia consistente y adaptada al contexto.
 
-## ¿Qué es la Especificación del Sitio?
+## ¿Qué es la Especificación del Sitio? {#what-is-site-specification}
 
 La Especificación del Sitio es el proceso de documentar:
 
@@ -19,9 +19,9 @@ La Especificación del Sitio es el proceso de documentar:
 
 Esta especificación se convierte en tu **site_brief**, una memoria persistente que los agentes utilizan para comprender el contexto de tu sitio.
 
-## ¿Por qué usar la Especificación del Sitio?
+## ¿Por qué usar la Especificación del Sitio? {#why-use-site-specification}
 
-### Consistencia entre Sesiones
+### Consistencia entre Sesiones {#consistency-across-sessions}
 
 Sin site_brief, tendrías que volver a explicar el propósito de tu sitio cada vez que inicias una nueva sesión. Con él, los agentes entienden inmediatamente:
 
@@ -30,7 +30,7 @@ Sin site_brief, tendrías que volver a explicar el propósito de tu sitio cada v
 - La estructura de tu contenido
 - Tus objetivos comerciales
 
-### Mejores Recomendaciones
+### Mejores Recomendaciones {#better-recommendations}
 
 Los agentes utilizan tu site_brief para:
 
@@ -39,17 +39,17 @@ Los agentes utilizan tu site_brief para:
 - Proponer diseños consistentes con tu marca
 - Evitar sugerir funciones incompatibles
 
-### Incorporación más rápida
+### Incorporación más rápida {#faster-onboarding}
 
 Los agentes nuevos (o los agentes en sesiones nuevas) pueden ponerse al día rápidamente leyendo tu site_brief en lugar de hacer preguntas aclaratorias.
 
-## Iniciando la Especificación del Sitio
+## Iniciando la Especificación del Sitio {#initiating-site-specification}
 
-### Durante la Incorporación del Constructor de Temas (Theme Builder)
+### Durante la Incorporación del Constructor de Temas (Theme Builder) {#during-theme-builder-onboarding}
 
 La habilidad de Especificación del Sitio se inicia automáticamente durante el **flujo de incorporación del Constructor de Temas**. El agente Asistente de Configuración hace preguntas y construye tu site_brief.
 
-### Iniciación Manual
+### Iniciación Manual {#manual-initiation}
 
 Puedes comenzar la Especificación del Sitio en cualquier momento:
 
@@ -63,9 +63,9 @@ o
 "Ayúdame a crear un site brief"
 ```
 
-## El Proceso de Especificación del Sitio
+## El Proceso de Especificación del Sitio {#the-site-specification-process}
 
-### Paso 1: Propósito del Sitio
+### Paso 1: Propósito del Sitio {#step-1-site-purpose}
 
 El agente pregunta:
 
@@ -81,7 +81,7 @@ El agente pregunta:
 
 Puedes seleccionar una categoría o describir tu propio propósito.
 
-### Paso 2: Audiencia Objetivo
+### Paso 2: Audiencia Objetivo {#step-2-target-audience}
 
 ```
 ¿Quién es tu audiencia principal?
@@ -94,7 +94,7 @@ Puedes seleccionar una categoría o describir tu propio propósito.
 ¿Cuáles son sus necesidades principales?
 ```
 
-### Paso 3: Identidad de Marca
+### Paso 3: Identidad de Marca {#step-3-brand-identity}
 
 ```
 ¿Cuáles son los colores de tu marca?
@@ -110,7 +110,7 @@ Puedes seleccionar una categoría o describir tu propio propósito.
 - Cálido / amigable
 ```
 
-### Paso 4: Objetivos Comerciales
+### Paso 4: Objetivos Comerciales {#step-4-business-goals}
 
 ```
 ¿Cómo se ve el éxito para tu sitio?
@@ -129,7 +129,7 @@ Puedes seleccionar una categoría o describir tu propio propósito.
 - Otro
 ```
 
-### Paso 5: Estructura de Contenido
+### Paso 5: Estructura de Contenido {#step-5-content-structure}
 
 ```
 ¿Cómo está organizado tu contenido?
@@ -148,7 +148,7 @@ Puedes seleccionar una categoría o describir tu propio propósito.
 - Otro
 ```
 
-## Tu Memoria site_brief
+## Tu Memoria site_brief {#your-sitebrief-memory}
 
 Después de completar la Especificación del Sitio, tu información se almacena como **site_brief** en la memoria de tu agente. Este es un registro estructurado que contiene:
 
@@ -169,9 +169,9 @@ Después de completar la Especificación del Sitio, tu información se almacena 
 }
 ```
 
-## Ver y Actualizar tu site_brief
+## Ver y Actualizar tu site_brief {#viewing-and-updating-your-sitebrief}
 
-### Ver tu site_brief
+### Ver tu site_brief {#view-your-sitebrief}
 
 Pregúntale al agente:
 
@@ -187,7 +187,7 @@ o
 
 El agente mostrará tu especificación almacenada.
 
-### Actualizar tu site_brief
+### Actualizar tu site_brief {#update-your-sitebrief}
 
 Si tu sitio evoluciona, puedes actualizarlo:
 
@@ -203,9 +203,9 @@ o
 
 Esto volverá a ejecutar la habilidad de Especificación del Sitio con tu información existente como punto de partida.
 
-## Cómo Usan los Agentes el site_brief
+## Cómo Usan los Agentes el site_brief {#how-agents-use-sitebrief}
 
-### Recomendaciones de Diseño
+### Recomendaciones de Diseño {#design-recommendations}
 
 Cuando pides cambios de diseño, los agentes consultan tu site_brief:
 
@@ -216,7 +216,7 @@ con un tono cálido y artesanal. Crearé un diseño que enfatice
 tu joyería artesanal y tus valores de sostenibilidad."
 ```
 
-### Sugerencias de Funcionalidades
+### Sugerencias de Funcionalidades {#feature-suggestions}
 
 Los agentes sugieren funcionalidades alineadas con tus objetivos:
 
@@ -227,7 +227,7 @@ recomendaría: programa de fidelización, reseñas de clientes, boletín informa
 y recomendaciones de productos."
 ```
 
-### Estructura de Contenido
+### Estructura de Contenido {#content-structure}
 
 Los agentes proponen organización de contenido basada en tu estructura:
 
@@ -238,16 +238,16 @@ organizar las publicaciones por categoría de producto y crear 'guías de estilo
 que muestren múltiples productos juntos."
 ```
 
-## Mejores Prácticas
+## Mejores Prácticas {#best-practices}
 
-### Sé Específico
+### Sé Específico {#be-specific}
 
 En lugar de "audiencia general", describe a tu audiencia real:
 
 - ✓ "Mujeres de 25 a 45 años, interesadas en la moda sostenible"
 - ✗ "Todos"
 
-### Actualiza Regularmente
+### Actualiza Regularmente {#update-regularly}
 
 A medida que tu sitio evoluciona, actualiza tu site_brief:
 
@@ -256,14 +256,14 @@ A medida que tu sitio evoluciona, actualiza tu site_brief:
 - Cuando cambie tu identidad de marca
 - Cuando cambien tus objetivos comerciales
 
-### Usa Terminología Consistente
+### Usa Terminología Consistente {#use-consistent-terminology}
 
 Usa los mismos términos a lo largo de las sesiones:
 
 - ✓ Di siempre "joyería sostenible" (no "joyería ecológica" y "productos verdes")
 - ✓ Haz referencia consistentemente a tu audiencia de la misma manera
 
-### Incluye Contexto
+### Incluye Contexto {#include-context}
 
 Proporciona antecedentes que ayuden a los agentes a entender tus decisiones:
 
@@ -271,7 +271,7 @@ Proporciona antecedentes que ayuden a los agentes a entender tus decisiones:
 - "Nuestra audiencia es experta en tecnología y espera un diseño moderno"
 - "Somos una startup autofinanciada, por lo que necesitamos soluciones rentables"
 
-## Relación con la Incorporación del Constructor de Temas
+## Relación con la Incorporación del Constructor de Temas {#relationship-to-theme-builder-onboarding}
 
 La habilidad de Especificación del Sitio está integrada en el **flujo de incorporación del Constructor de Temas**. Cuando completas la incorporación, tu site_brief se crea automáticamente con la información que proporcionaste.
 
@@ -281,7 +281,7 @@ También puedes ejecutar la Especificación del Sitio de forma independiente si 
 - Actualizar tu site_brief a medida que evoluciona tu sitio
 - Crear una especificación detallada antes de comenzar con el Constructor de Temas
 
-## Solución de Problemas
+## Solución de Problemas {#troubleshooting}
 
 **Mi site_brief no está siendo utilizado**
 - Confirma que el agente tiene acceso a la memoria
@@ -297,7 +297,7 @@ También puedes ejecutar la Especificación del Sitio de forma independiente si 
 - Actualiza tu site_brief si está desactualizado
 - Proporciona contexto adicional en tus solicitudes
 
-## Próximos Pasos
+## Próximos Pasos {#next-steps}
 
 Después de definir la especificación de tu sitio:
 

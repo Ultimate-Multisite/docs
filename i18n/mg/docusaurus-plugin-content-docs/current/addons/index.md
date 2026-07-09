@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Ny Addons dia manitatra ny Ultimate Multisite amin’ny endri-javatra sy fampifandraisana fanampiny. Ny ankamaroan’ny addons dia andoavam-bola ary azo vidiana ao amin’ny [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Fametrahana
+## Fametrahana {#installation}
 
 Azo apetraka amin’ny fomba roa ny addons:
 
 1. **Amin’ny alalan’ny pejin’ny Addon** -- Mankanesa any amin’ny pejy fitantanana addon an’ny site-nao ao amin’ny admin WordPress
 2. **Fisintomana amin’ny tanana** -- Sintomy avy amin’ny [Account-nao](https://ultimatemultisite.com/my-account/downloads/) ary ampidiro amin’ny alalan’ny Plugins > Add New
 
-## Addons misy
+## Addons misy {#available-addons}
 
 | Addon | Famaritana |
 |-------|-------------|

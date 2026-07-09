@@ -3,11 +3,11 @@ title: ڪسٽم گيٽ وي جي ترقي
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ڪسٽم گيٽ وي ترقي
+# ڪسٽم گيٽ وي ترقي {#custom-gateway-development}
 
 توهان `Base_Gateway` ڪلاس کي وڌائي ڪسٽم ادائيگي گيٽ ويز ٺاهي سگهو ٿا.
 
-## گيٽ وي ڪلاس
+## گيٽ وي ڪلاس {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## گيٽ وي رجسٽر ڪريو
+## گيٽ وي رجسٽر ڪريو {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## اهم طريقا
+## اهم طريقا {#key-methods}
 
 | طريقو | مقصد |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | واپسي جي درخواستن کي سنڀاليو |
 | `get_payment_methods()` | گراهڪ لاءِ محفوظ ڪيل ادائيگي جا طريقا واپس ڪريو |
 
-## بار بار ٿيندڙ رڪنيتن لاءِ تجديد سندون
+## بار بار ٿيندڙ رڪنيتن لاءِ تجديد سندون {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 گيٽ وي انٽيگريشنز کي رپورٽ ڪرڻ ڏئي ٿو ته ڇا بار بار ٿيندڙ رڪنيت وٽ `auto_renew` محفوظ ٿيڻ کان اڳ ٻيهر استعمال لائق تجديد سند آهي. `wu_membership_has_renewal_credential` کي هوڪ ڪريو ۽ واپس ڪريو:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 نئين ٻيهر استعمال لائق سند محفوظ ٿيڻ کان پوءِ پنهنجي گيٽ وي جي ڪامياب ٻيهر اجازت واري فلو جي حصي طور غائب-سند جو نشان صاف ڪريو.
 
-## صلاحون
+## صلاحون {#tips}
 
 - ناڪامي تي هميشه `WP_Error` واپس ڪريو ته جيئن Ultimate Multisite غلطي جي ڏيکاءَ کي سنڀالي سگهي
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - گيٽ وي-مخصوص لاگنگ لاءِ `wu_log_add()` استعمال ڪريو
 
-## AI connector فراهم ڪندڙ جون صلاحيتون
+## AI connector فراهم ڪندڙ جون صلاحيتون {#ai-connector-provider-capabilities}
 
 ڪسٽم انٽيگريشنز جيڪي AI connector جي پٺڀرائي وارا آپريشنز سڏين ٿيون، انهن کي AI Provider for Anthropic Max v1.3.0 سان متعارف ڪرايل سپورٽ ٿيل OAuth فراهم ڪندڙ سيٽ سان هم آهنگ هجڻ گهرجي:
 

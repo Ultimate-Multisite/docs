@@ -4,11 +4,11 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Returnerer pænt navn på landets administrative underinddelinger.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Returnerer pænt navn på landets administrative underinddelinger.
 | $ucwords | `bool` | om vi skriver ordene med stort begyndelsesbogstav. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instans af den aktuelle klasse. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.11
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) på linje 250
 
 
-## Returnerer
+## Returnerer {#returns}
 Det ændrede inddelingsnavn.

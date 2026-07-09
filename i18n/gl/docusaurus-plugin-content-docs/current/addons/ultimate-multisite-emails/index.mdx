@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Correos electrónicos
+# Correos electrónicos {#emails}
 
 O complemento Ultimate Multisite: Emails permite aos propietarios da rede aprovisionar e xestionar contas de correo electrónico de clientes xunto con sitios e subscricións. A versión 1.1.0 engade xestión de contas de correo electrónico orientada ao cliente, inicio de sesión único en webmail, compatibilidade con reenviadores de CyberPanel e melloras no aprovisionamento durante o checkout.
 
-## Funcionalidades principais
+## Funcionalidades principais {#key-features}
 
 * **Widget de conta de correo electrónico para clientes**: Os clientes poden crear e xestionar caixas de correo desde a súa páxina de Account despois de teren unha subscrición de correo electrónico activa.
 * **SSO de webmail e ligazóns máxicas**: Os clientes poden abrir webmail directamente desde a páxina de Account con autenticación dun só clic cando o provedor o admite.
@@ -20,14 +20,14 @@ O complemento Ultimate Multisite: Emails permite aos propietarios da rede aprovi
 * **Reenviadores de CyberPanel**: As redes apoiadas en CyberPanel poden crear e xestionar reenviadores de correo electrónico como parte do fluxo do servizo de correo electrónico.
 * **Configuración consciente do provedor**: A páxina de configuración filtra os provedores ás integracións activas e configuradas para que os administradores só vexan opcións utilizables.
 
-## Requisitos
+## Requisitos {#requirements}
 
 * Ultimate Multisite 2.0.0 ou superior
 * Instalación de WordPress Multisite
 * Polo menos unha integración de provedor de correo electrónico configurada
 * Credenciais da API do provedor con permiso para crear caixas de correo, cambiar contrasinais e emitir ligazóns de acceso a webmail onde sexa compatible
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube os ficheiros do plugin a `/wp-content/plugins/ultimate-multisite-emails`.
 2. Activa o complemento na rede desde **Plugins** na administración de rede de WordPress.
@@ -35,7 +35,7 @@ O complemento Ultimate Multisite: Emails permite aos propietarios da rede aprovi
 4. Activa as integracións de provedor de correo electrónico que queres que usen os clientes.
 5. Garda a configuración e despois proba a creación de contas cun cliente que non sexa de produción ou cun sitio de staging.
 
-## Como funciona o fluxo de venda de correo electrónico
+## Como funciona o fluxo de venda de correo electrónico {#how-the-email-seller-flow-works}
 
 A venda de correo electrónico ten dúas capas separadas:
 
@@ -53,7 +53,7 @@ Isto significa que un fluxo normal de cliente é:
 5. O panel **Contas de correo electrónico** aparece para esa subscrición de correo electrónico activa.
 6. O cliente fai clic en **Crear Account**, introduce a parte local como `info`, establece un contrasinal e o complemento crea `info@their-domain.com` no provedor configurado.
 
-## Configurar un produto de correo electrónico
+## Configurar un produto de correo electrónico {#configure-an-email-product}
 
 Crea un produto de correo electrónico para cada paquete de correo electrónico que queiras vender ou regalar. Se es novo na configuración de produtos, comeza con [Crear o teu primeiro produto de subscrición](../../user-guide/configuration/creating-your-first-subscription-product) e despois volve aquí para a configuración específica do correo electrónico.
 
@@ -67,7 +67,7 @@ Crea un produto de correo electrónico para cada paquete de correo electrónico 
 
 Só os provedores que están activados e completamente configurados na páxina **Integracións** aparecen no selector de provedores. Se o selector está baleiro, configura e proba primeiro o provedor.
 
-## Engadir correo electrónico ao checkout
+## Engadir correo electrónico ao checkout {#add-email-to-checkout}
 
 Os produtos de correo electrónico adoitan ofrecerse como complementos dun plan de sitio. Consulta [Formularios de checkout](../../user-guide/configuration/checkout-forms) para o fluxo de traballo xeral do editor de checkout.
 
@@ -79,7 +79,7 @@ Os produtos de correo electrónico adoitan ofrecerse como complementos dun plan 
 
 O dominio de correo electrónico tómase do dominio do sitio do cliente. Os clientes non introducen o dominio de correo electrónico no paso do produto de correo electrónico.
 
-## Xestión do correo electrónico na Account do cliente
+## Xestión do correo electrónico na Account do cliente {#customer-account-email-management}
 
 A versión 1.1.0 engade un widget de xestión de correo electrónico á páxina de Account do cliente. Úsao cando os clientes deban crear e manter caixas de correo dos seus propios sitios en autoservizo.
 
@@ -94,7 +94,7 @@ O widget usa o sistema de correntes da páxina de Account de Ultimate Multisite,
 
 Se o cliente non ve o panel de correo electrónico, comproba que teña unha **subscrición activa a un produto de correo electrónico**, que a subscrición estea ligada a un dominio de sitio e que o produto teña un provedor configurado.
 
-## Darlle a un cliente un plan de correo electrónico gratuíto
+## Darlle a un cliente un plan de correo electrónico gratuíto {#giving-a-customer-a-free-email-plan}
 
 Para darlle correo electrónico a un cliente sen cobrarlle, concede primeiro o **dereito de correo electrónico** e logo crea, ou deixa que o cliente cree, a caixa de correo.
 
@@ -106,7 +106,7 @@ Opcións recomendadas:
 
 Se queres que o cliente xestione el mesmo a caixa de correo desde a páxina de conta, asegúrate de que teña unha subscrición activa de correo electrónico para o dominio. Pode existir unha caixa de correo de provedor creada manualmente sen esa subscrición, pero é posible que o cliente non vexa o panel de autoservizo de correo electrónico para ela.
 
-## Contas creadas polo administrador e "Sen número de pedido"
+## Contas creadas polo administrador e "Sen número de pedido" {#admin-created-accounts-and-no-order-number}
 
 A páxina de administración **Email Accounts** crea ou edita unha caixa de correo do provedor. Non é o primeiro paso para vender ou conceder un plan de correo electrónico.
 
@@ -122,7 +122,7 @@ Usa no seu lugar esta orde de operacións:
 
 Se só necesitas crear unha caixa de correo de provedor para o cliente e non precisas xestión de autoservizo desde a páxina de conta, a conta creada polo administrador pode abondar. Se queres que o cliente a vexa e a xestione en Ultimate Multisite, crea tamén a subscrición de correo electrónico.
 
-## SSO de webmail e inicio de sesión con ligazón máxica
+## SSO de webmail e inicio de sesión con ligazón máxica {#webmail-sso-and-magic-link-login}
 
 O SSO de webmail ofrece aos clientes unha acción directa **Abrir webmail** desde a páxina de conta. Cando o provedor activo o admite, o addon solicita un URL de acceso de curta duración e redirixe o cliente ao webmail sen pedirlle que copie as credenciais da caixa de correo.
 
@@ -134,7 +134,7 @@ O comportamento do provedor pode variar:
 
 Activa o acceso a webmail só para provedores nos que configurases as credenciais API requiridas. Se falta a acción para un provedor, confirma primeiro que o provedor estea activo, configurado e admita ligazóns de inicio de sesión de webmail.
 
-## Aprovisionamento no checkout
+## Aprovisionamento no checkout {#checkout-provisioning}
 
 O addon aprovisiona o **contexto de subscrición** de correo electrónico durante o checkout. Rexistra o provedor, o límite de contas, a cota e o dominio do sitio para que os clientes poidan crear os seus propios nomes de caixa de correo desde a páxina de conta despois da compra.
 
@@ -148,15 +148,15 @@ Despregamento recomendado:
 
 Se falla o aprovisionamento, a conta do cliente e a subscrición poden seguir existindo mentres a subscrición de correo electrónico ou a caixa de correo do provedor requiren seguimento do administrador. Revisa os rexistros de actividade de Ultimate Multisite e os rexistros do provedor antes de tentalo de novo.
 
-## Reenviadores de correo electrónico de CyberPanel
+## Reenviadores de correo electrónico de CyberPanel {#cyberpanel-email-forwarders}
 
 Para redes apoiadas en CyberPanel, a versión 1.1.0 engade soporte para reenviadores de correo electrónico. Usa reenviadores cando os clientes necesiten enderezos como `info@customer-domain.test` para redirixir o correo a outra caixa de entrada sen crear unha caixa de correo completa.
 
 Antes de ofrecer reenviadores, confirma que a integración de CyberPanel estea configurada e accesible. Consulta a guía [Integración de CyberPanel](../../user-guide/administration/cyberpanel-integration) para o host, nome de usuario, contrasinal e constantes de paquete requiridos.
 
-## Rexistro de cambios
+## Rexistro de cambios {#changelog}
 
-### Versión 1.1.0 - Publicada o 2026-05-05
+### Versión 1.1.0 - Publicada o 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Novo: Webmail SSO e inicio de sesión con magic-link — os clientes poden acceder ao webmail directamente desde a súa Account con autenticación cun só clic.
 * Novo: Engadiuse a funcionalidade de cambio de contrasinal ao widget de xestión da conta de correo electrónico.
@@ -170,28 +170,28 @@ Antes de ofrecer reenviadores, confirma que a integración de CyberPanel estea c
 * Corrección: Eliminouse o exceso de rexistro por solicitude da inicialización de Email_Account_Manager.
 * Mellorado: A páxina de configuración agora filtra para mostrar só provedores de correo electrónico activos e configurados.
 
-## Preguntas frecuentes
+## Preguntas frecuentes {#frequently-asked-questions}
 
-### Poden os clientes crear as súas propias contas de correo electrónico?
+### Poden os clientes crear as súas propias contas de correo electrónico? {#can-customers-create-their-own-email-accounts}
 
 Si. Cando o cliente ten unha subscrición de correo electrónico activa para un dominio e o produto permite contas adicionais, os clientes poden crear e xestionar as súas propias caixas de correo desde a páxina de Account.
 
-### Todos os provedores admiten Webmail SSO?
+### Todos os provedores admiten Webmail SSO? {#does-every-provider-support-webmail-sso}
 
 Non. A compatibilidade con SSO e magic-link depende do provedor de correo electrónico activo. Os provedores sen unha API de ligazón de acceso aínda poden admitir a creación de caixas de correo e cambios de contrasinal.
 
-### Poden os administradores crear contas de correo electrónico para clientes?
+### Poden os administradores crear contas de correo electrónico para clientes? {#can-administrators-create-email-accounts-for-customers}
 
 Si. Os administradores poden crear contas de correo electrónico desde a interface de administración, incluíndo a definición do contrasinal inicial ao crear a conta. Para a xestión de autoservizo do cliente, asegúrate tamén de que o cliente teña unha subscrición de correo electrónico activa para o dominio.
 
-### Podo regalar unha conta de correo electrónico?
+### Podo regalar unha conta de correo electrónico? {#can-i-give-an-email-account-away-for-free}
 
 Si. Crea un produto de correo electrónico gratuíto/de prezo cero e engádeo como subscrición activa para o cliente, ou deixa que o cliente complete o checkout cun desconto do 100 %. Despois de que exista a subscrición de correo electrónico, o cliente ou un administrador pode crear a caixa de correo real.
 
-### Por que asignar unha conta de correo electrónico pide un número de pedido?
+### Por que asignar unha conta de correo electrónico pide un número de pedido? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 O campo Membership busca unha subscrición existente de Ultimate Multisite polo seu número de referencia/pedido. Se o cliente non mercou un produto de correo electrónico e non creaches manualmente unha subscrición de correo electrónico, non hai ningunha subscrición/pedido de correo electrónico para asignar. Crea primeiro a subscrición de correo electrónico e logo crea ou asigna a caixa de correo.
 
-### Os reenviadores son o mesmo ca as caixas de correo?
+### Os reenviadores son o mesmo ca as caixas de correo? {#are-forwarders-the-same-as-mailboxes}
 
 Non. Unha caixa de correo almacena correo e ten credenciais de inicio de sesión. Un reenviador redirixe o correo a outro enderezo e non proporciona unha caixa de entrada separada.

@@ -3,32 +3,32 @@ title: 'Phunziro 3: Kukonza Netiweki Yanu'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Phunziro 3: Kukhazikitsa Netiweki Yanu
+# Phunziro 3: Kukhazikitsa Netiweki Yanu {#lesson-3-setting-up-your-network}
 
 Nthawi yomanga yafika. Mu phunziro ili mudzayika Ultimate Multisite ndi kukonza maziko a netiweki ya FitSite. Chisankho chilichonse pano chimapangidwa poganizira msika wa masewera olimbitsa thupi.
 
-## Pomwe Tinasiyira
+## Pomwe Tinasiyira {#where-we-left-off}
 
 Tinasankha ma studio a masewera olimbitsa thupi monga msika wathu wapadera ndipo tinatsimikizira mwayiwo. Tsopano tikusandutsa lingaliro limenelo kukhala nsanja yogwira ntchito.
 
-## Kusankha Hosting Yanu
+## Kusankha Hosting Yanu {#choosing-your-hosting}
 
 Kusankha hosting ndikofunika kwambiri pa nsanja ya msika wapadera kuposa pa tsamba limodzi lokha. Simukusungira tsamba limodzi -- mukusungira netiweki yomwe idzakula kufika pa masamba ambiri kapena mazana ambiri.
 
-### Zinthu Zoyang'ana
+### Zinthu Zoyang'ana {#what-to-look-for}
 
 - **Thandizo la WordPress Multisite**: Si ma host onse omwe amayendetsa multisite bwino
 - **Wildcard SSL**: Yofunika kwambiri pa ma netiweki ogwiritsa ntchito ma subdomain
 - **Zinthu zomwe zingakulire**: Mukufunika malo okulira popanda kusamuka
 - **Kuphatikizana kwa Ultimate Multisite**: Domain mapping yodzichitira yokha ndi SSL zimachepetsa kwambiri ntchito yoyendetsera
 
-### Njira Yolangizidwa
+### Njira Yolangizidwa {#recommended-approach}
 
 Sankhani host kuchokera pa mndandanda wa [Othandizira Ogwirizana](/user-guide/host-integrations/closte). Awa adayesedwa ndi Ultimate Multisite ndipo amapereka ma integration omwe mukufunika pa domain mapping ndi SSL automation.
 
 Pa FitSite, tigwiritsa ntchito kasinthidwe ka subdomain. Izi zikutanthauza kuti masamba a makasitomala adzayamba kuwoneka ngati `studioname.fitsite.com` asanalumikize domain yawo ngati akufuna.
 
-## Kuyika WordPress Multisite
+## Kuyika WordPress Multisite {#installing-wordpress-multisite}
 
 Ngati mulibe kale kuyika kwa WordPress Multisite:
 
@@ -40,7 +40,7 @@ Ngati mulibe kale kuyika kwa WordPress Multisite:
 Ma subdomain amapatsa tsamba lililonse la kasitomala adiresi yake yosiyana (`studio.fitsite.com`) m'malo mwa path (`fitsite.com/studio`). Izi zimawoneka zaukadaulo kwambiri kwa makasitomala anu ndipo zimapewa mikangano ya permalink. Onani [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) kuti mupeze kufananitsa mwatsatanetsatane.
 :::
 
-## Kuyika Ultimate Multisite
+## Kuyika Ultimate Multisite {#installing-ultimate-multisite}
 
 Tsatirani kalozera wa [Kuyika Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) kuti:
 
@@ -53,11 +53,11 @@ Pa nthawi ya setup wizard, kumbukirani msika wapadera wa FitSite:
 - **Dzina la kampani**: "FitSite" (kapena dzina la brand lomwe mwasankha)
 - **Logo ya kampani**: Kwezani logo ya brand yanu -- izi zimawoneka pa ma invoice ndi ma email
 
-## Kukonza Mogwirizana ndi Msika wa Masewera Olimbitsa Thupi
+## Kukonza Mogwirizana ndi Msika wa Masewera Olimbitsa Thupi {#configuring-for-the-fitness-niche}
 
 Ultimate Multisite ikayikidwa, pangani zisankho za kasinthidwe zogwirizana ndi msika uwu:
 
-### Zokonda Zonse
+### Zokonda Zonse {#general-settings}
 
 Pitani ku **Ultimate Multisite > Settings** ndipo konzekerani:
 
@@ -65,7 +65,7 @@ Pitani ku **Ultimate Multisite > Settings** ndipo konzekerani:
 - **Udindo wokhazikika**: Administrator -- eni ake a ma studio a masewera olimbitsa thupi amafunika kuwongolera zonse za zomwe zili patsamba lawo
 - **Kulembetsa**: Yambitsani kulembetsa kwa ogwiritsa ntchito kuti eni ma studio athe kulembetsa okha
 
-### Kukonza Email
+### Kukonza Email {#email-configuration}
 
 Ma email a system yanu ayenera kulankhula chilankhulo cha msika wanu wapadera. Pitani ku **Ultimate Multisite > Settings > Emails** ndipo sinthani:
 
@@ -75,7 +75,7 @@ Ma email a system yanu ayenera kulankhula chilankhulo cha msika wanu wapadera. P
 
 Tidzawongolera izi kwambiri mu Phunziro 8 (Kulandira Makasitomala), koma kukhazikitsa kamvekedwe ka mawu tsopano kumatsimikizira kuti ngakhale olembetsa oyambirira oyesa amamva kuti ndi ogwirizana ndi msika wapadera.
 
-### Kukonza Domain
+### Kukonza Domain {#domain-configuration}
 
 Ngati mukugwiritsa ntchito hosting provider wogwirizana, konzekerani domain mapping tsopano:
 
@@ -85,7 +85,7 @@ Ngati mukugwiritsa ntchito hosting provider wogwirizana, konzekerani domain mapp
 
 Izi zimatsimikizira kuti tikayamba kupanga ma template ndi masamba oyesera mu phunziro lotsatira, zonse zimagwira ntchito kuyambira koyambira mpaka kumapeto.
 
-## Netiweki ya FitSite Mpaka Pano
+## Netiweki ya FitSite Mpaka Pano {#the-fitsite-network-so-far}
 
 Kumapeto kwa phunziro ili, izi ndi zomwe muli nazo:
 
@@ -99,7 +99,7 @@ Netiweki ya FitSite
 └── Yokonzeka pa ma template a tsamba (phunziro lotsatira)
 ```
 
-## Zomwe Tamanga mu Phunziro Ili
+## Zomwe Tamanga mu Phunziro Ili {#what-we-built-this-lesson}
 
 - **Kuyika kwa WordPress Multisite kogwira ntchito** mu mode ya subdomain
 - **Ultimate Multisite yaikidwa** ndi kukonzedwa ndi branding ya FitSite

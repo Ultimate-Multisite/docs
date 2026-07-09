@@ -3,9 +3,9 @@ title: Mga Tala sa Pag-release
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Mga Nota sa Pag-release (Release Notes)
+# Mga Nota sa Pag-release (Release Notes) {#release-notes}
 
-## Bersyon 2.13.0 — Gipa-release niadtong 2026-06-05
+## Bersyon 2.13.0 — Gipa-release niadtong 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 Bago: Nagdugang kami og suporta sa sovereign-tenant para sa customer account, checkout, billing, site, invoice, template switching, ug domain mapping flows aron ang mga tenant network makadirekta balik sa main site para sa mga gihimong aksyon.
 
@@ -29,7 +29,7 @@ Ayos (Fix): Ang membership renewals, expiration display, ug payment collection e
 
 Gpaayo (Improved): Ang WordPress compatibility gi-test hangtod sa 7.0, ang production Vue assets gihimo og balik gikan sa npm sources, ug ang Cypress end-to-end coverage karon mas nag-exercise sa mga checkout, setup, SSO, ug gateway flows.
 
-## Bersyon 2.12.0 — Gipaon sa Mayo 15, 2026
+## Bersyon 2.12.0 — Gipaon sa Mayo 15, 2026 {#version-2120--released-on-2026-05-15}
 
 - Bag-bag-o: Gitagana na ang Hostinger (hPanel) isip usa ka supported host provider uban sa domain mapping integration.
 - Bag-bag-o: Ang Site Exporter karon nag-handle na sa network import bundles para mas dali ang pag-restore sa site sa tibuok network.
@@ -41,7 +41,7 @@ Gpaayo (Improved): Ang WordPress compatibility gi-test hangtod sa 7.0, ang produ
 - Ayos: Ang Site Exporter CLI karon nagpreserba sa saktong default network site selection.
 - Gpaayo: Gi-remove na ang bundled wp-cli gikan sa plugin package, nga nagpagaan sa size sa plugin.
 
-## Bersyon 2.11.0 — Gipaon sa Mayo 11, 2026
+## Bersyon 2.11.0 — Gipaon sa Mayo 11, 2026 {#version-2110--released-on-2026-05-11}
 
 - Bag-bag-o: Ang site exports karon mag-bundle og usa ka self-booting `index.php` para ang ZIP mahimong i-install bisan unsa nga host nga walay kinahanglan pa og separate plugin install.
 - Bag-bag-o: Ang Network export nagtugot sa mga administrator nga mag-export sa tanang subsites sa usa lang ka archive gikan sa Site Export admin page.
@@ -49,7 +49,7 @@ Gpaayo (Improved): Ang WordPress compatibility gi-test hangtod sa 7.0, ang produ
 - Bag-bag-o: Ang checkout form editor naghatag og warning kung adunay product nga gi-add nga walay configured nga required field.
 - Bag-bag-o: Ang import/export settings tab karon mas klaro kining i-describe ang scope niini ug direkta kini maglink sa Site Export tool.
 
-## Bersyon 2.10.0 — Gipaon sa Mayo 5, 2026
+## Bersyon 2.10.0 — Gipaon sa Mayo 5, 2026 {#version-2100--released-on-2026-05-05}
 
 ---
 New: Bag-ong setup wizard sa PayPal para sa manual entry og credentials uban sa OAuth flag gate para sa dali nga pag-configure sa gateway.
@@ -63,7 +63,7 @@ Fix: Ang kasamtang nga lazy-loaded mauna sa init hook aron mapugngan ang timing 
 Fix: Gipasidunggan ang Filtered SSO path sa tanang login flows.
 Fix: Gipreserba ang mga blank site identity options pag-save.
 
-## Version 2.9.0 — Gi-release niadtong 2026-04-30
+## Version 2.9.0 — Gi-release niadtong 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - New: Dugang ang single-site export ug import ubos sa **Tools > Export & Import**.
 - Fix: Ang mga ZIP files nga gipagawas karon gihatag pinaagi sa authenticated download endpoint.
@@ -77,7 +77,7 @@ Fix: Gipreserba ang mga blank site identity options pag-save.
 - Fix: Ang Tour IDs gi-normalize ng underscores sa user settings keys.
 - Improved: Gigamit na ang ZipArchive imbes nga Alchemy/Zippy para sa mas maayong compatibility.
 
-## Version 2.8.0 — Gi-release niadtong 2026-04-29
+## Version 2.8.0 — Gi-release niadtong 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Bag-o-bag: Nag-enable na ang Jumper toggle sa Other Options settings UI.
 - Bag-o: Na-add ang Status column sa list table sa checkout forms.

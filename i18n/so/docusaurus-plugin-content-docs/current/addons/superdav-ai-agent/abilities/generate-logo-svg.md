@@ -3,15 +3,15 @@ title: Abuur Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Samee Logo SVG
+# Samee Logo SVG {#generate-logo-svg}
 
 Awoodda **Samee Logo SVG** waxay Theme Builder u oggolaanaysaa inuu abuuro oo si toos ah ugu dhex daro logo SVGyo gaar ah site-kaaga WordPress, iyadoo leh nadiifin otomaatig ah oo namespace-safe ah.
 
-## Dulmar
+## Dulmar {#overview}
 
 Awooddani waxay abuurtaa logos scalable vector graphics (SVG) ah oo ku salaysan jihada sumadeynta site-kaaga iyo doorbidyada naqshadda. SVGyada la abuuray si otomaatig ah ayaa loo nadiifiyaa si loo hubiyo inay ammaan u yihiin isticmaalka WordPress, iyadoo la ilaalinayo daacadnimada muuqaalka.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Awooddani waxay abuurtaa logos scalable vector graphics (SVG) ah oo ku salaysan 
 | `height` | number | No | Dhererka SVG ee pixels (default: 200) |
 | `include_text` | boolean | No | In magaca site-ka loogu daro qoraal ahaan logo-ga (default: true) |
 
-## Qaabka Wax-soo-saarka
+## Qaabka Wax-soo-saarka {#output-format}
 
 Awooddu waxay soo celisaa xarig SVG ah oo leh qaab-dhismeedka soo socda:
 
@@ -36,7 +36,7 @@ Awooddu waxay soo celisaa xarig SVG ah oo leh qaab-dhismeedka soo socda:
 }
 ```
 
-## Hab-dhaqanka Nadiifinta SVG
+## Hab-dhaqanka Nadiifinta SVG {#svg-sanitisation-behaviour}
 
 SVGyada la abuuray waxay maraan nadiifin otomaatig ah oo namespace-safe ah si loo:
 
@@ -48,7 +48,7 @@ SVGyada la abuuray waxay maraan nadiifin otomaatig ah oo namespace-safe ah si lo
 
 Tani waxay hubisaa in SVG-gu ammaan u yahay in si toos ah loogu dhex daro WordPress adigoon u baahnayn nadiifin dheeraad ah.
 
-## Tusaalaha Isticmaalka
+## Tusaalaha Isticmaalka {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Awooddu waxay abuurtaa logo SVG ah oo:
 - Raaca mabaa'diida naqshadda casriga ah
 - Si otomaatig ah loo nadiifiyay oo diyaar u ah isticmaal
 
-## Isku-darka Theme Builder
+## Isku-darka Theme Builder {#integration-with-theme-builder}
 
 Markaad isticmaalayso xulashada jihada-naqshadda ee Theme Builder, awoodda Samee Logo SVG waxay:
 
@@ -71,21 +71,21 @@ Markaad isticmaalayso xulashada jihada-naqshadda ee Theme Builder, awoodda Samee
 3. Si otomaatig ah ugu dhex dartaa logo-ga aagga header/branding ee site-kaaga
 4. U kaydisaa SVG-ga sida logo gaar ah oo ku jira WordPress media
 
-## Hababka Ugu Fiican
+## Hababka Ugu Fiican {#best-practices}
 
 - **Bixi doorbidyo qaab oo cad** — sharax qaabka naqshadda aad rabto (casri, caadi, ciyaar leh, iwm.)
 - **Cayim midabbada** — ku dar midabbada brand-kaaga si joogteyn loo helo
 - **Tijaabi rendering-ka** — xaqiiji in logo-gu si sax ah uga muuqdo cabbirro shaashad oo kala duwan
 - **Sii habee** — isticmaal qalabka habaynta logo-ga ee WordPress si aad u hagaajiso cabbirka iyo meelaynta
 
-## Xaddidaadaha
+## Xaddidaadaha {#limitations}
 
 - Logo-yada SVG waxaa loo abuuraa sida garaafyo static ah (ma aha animated)
 - Logo-yo adag oo leh qaybo badan ayaa laga yaabaa inay u baahdaan hagaajin gacanta ah
 - Fonts gaar ah lama taageero; qoraalku wuxuu isticmaalaa fonts-ka system-ka
 - Cabbirro aad u waaweyn ama aad u yaryar waxay saameyn karaan tayada
 
-## Awoodaha La Xiriira
+## Awoodaha La Xiriira {#related-abilities}
 
 - [Xaqiiji Isbarbardhigga Palette-ka](./validate-palette-contrast.md) — hubi isbarbardhigga midabka si accessibility loo helo
 - [Abuur Menu](./create-menu.md) — u abuur menus navigation site-kaaga

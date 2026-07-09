@@ -3,25 +3,25 @@ title: Eklenti Şablonu
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Eklenti Şablonu
+# Eklenti Şablonu {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 - WordPress 5.3 veya üzeri
 - PHP 7.4 veya üzeri
 - Multisite Ultimate eklentisi (aktif)
 
-## Kurulum
+## Kurulum {#installation}
 
 1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin.
 2. WordPress'te 'Eklentiler' menüsünden eklentiyi etkinleştirin.
 3. Eklenti ayarlarını ağ yöneticisinden (network admin) yapılandırın.
 
-## Geliştirme
+## Geliştirme {#development}
 
-### Kurulum
+### Kurulum {#setup}
 
 ```bash
 # Bağımlılıkları kur
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Proje Yapısı
+### Proje Yapısı {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kod modernizasyonu kuralları
 ```
 
-### Test Etme
+### Test Etme {#testing}
 
 Eklenti, kapsamlı bir test çatısı (framework) içerir:
 
@@ -75,44 +75,44 @@ Eklenti, kapsamlı bir test çatısı (framework) içerir:
 - **Test Kapsamı (Test Coverage)**: Kod kapsamını izlemek üzere yapılandırılmıştır
 - **Multisite Test Etme**: Testler çok siteli (multisite) ortamda çalışır
 
-### Kod Standartları
+### Kod Standartları {#code-standards}
 
 - **WordPress Kod Standartları**: PHPCS aracılığıyla zorunlu kılınır
 - **PHP 7.4+ Uyumluluğu**: Modern PHP özellikleri desteklenir
 - **Statik Analiz**: Tip kontrolü için PHPStan entegrasyonu
 - **Kod Modernizasyonu**: PHP yükseltmeleri için Rector kuralları
 
-### Derleme Sistemi (Build System)
+### Derleme Sistemi (Build System) {#build-system}
 
 - **Varlık İşleme (Asset Processing)**: CSS/JS dosyaları için küçültme (Minification)
 - **Çeviri**: POT dosyası oluşturma
 - **Paketleme (Packaging)**: Dağıtım için arşiv oluşturma
 - **Geliştirme Modu (Development Mode)**: Hata ayıklama için küçültülmemiş varlıklar
 
-## Yapılandırma
+## Yapılandırma {#configuration}
 
 Eklenti, ağ yöneticisi arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
 
-## Hook'lar ve Filtreler
+## Hook'lar ve Filtreler {#hooks-and-filters}
 
-### Aksiyonlar (Actions)
+### Aksiyonlar (Actions) {#actions}
 
 - `ultimate-multisite-addon-template_init` - Eklenti başlatıldıktan sonra tetiklenir
 - `ultimate-multisite-addon-template_loaded` - Tüm eklenti dosyaları yüklendikten sonra tetiklenir
 
-### Filtreler (Filters)
+### Filtreler (Filters) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Eklenti ayarlarını değiştirir
 - `ultimate-multisite-addon-template_enabled` - Eklentinin etkin/devre dışı durumunu geçersiz kılar
 
-## Lisans
+## Lisans {#license}
 
 Bu eklenti, GPL v3 veya daha yeni bir sürüm altında lisanslanmıştır.
 
-## Destek
+## Destek {#support}
 
 Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com) adresini ziyaret edin.
-## Değişiklik Geçmişi (Changelog)
+## Değişiklik Geçmişi (Changelog) {#changelog}
 
 - Sürüm 1.0.1 (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı yapıldı.
 

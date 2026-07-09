@@ -3,9 +3,9 @@ title: Ukuphatha Izinkokhelo nama-invoyisi
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ukuphatha Izinkokhelo nama-Invoyisi
+# Ukuphatha Izinkokhelo nama-Invoyisi {#managing-payments-and-invoices}
 
-## Izilungiselelo Zokukhokha
+## Izilungiselelo Zokukhokha {#payment-settings}
 
 Ngaphambi kokuba uqale ukwamukela izinkokhelo, kuzodingeka ulungise izilungiselelo ezihlobene nokukhokha. Zulazulela ku-**Ultimate Multisite → Izilungiselelo** bese uchofoza ithebhu ethi **Ukukhokha**.
 
@@ -15,7 +15,7 @@ Nakhu ukubuka okuphelele kwekhasi lezilungiselelo zokukhokha:
 
 ![Ikhasi eligcwele lezilungiselelo zokukhokha](/img/admin/settings-payments-full.png)
 
-### Izinketho Zokukhokha Ezivamile
+### Izinketho Zokukhokha Ezivamile {#general-payment-options}
 
 Ezilungiselelweni ezivamile ungahlela:
 
@@ -24,7 +24,7 @@ Ezilungiselelweni ezivamile ungahlela:
 
 ![Izilungiselelo zesango lokukhokha](/img/admin/settings-payments-options.png)
 
-### Amasango Okukhokha
+### Amasango Okukhokha {#payment-gateways}
 
 Ultimate Multisite isekela amasango okukhokha amaningi. Ungavumela futhi ulungise ngalinye kusuka kuthebhu yezilungiselelo Zokukhokha.
 
@@ -40,11 +40,11 @@ Isango ngalinye linesigaba salo sokuhlela lapho ufaka khona okhiye be-API neziny
 
 ![Izilungiselelo ezengeziwe zesango](/img/admin/settings-payments-gateways-2.png)
 
-### Imodi ye-Sandbox
+### Imodi ye-Sandbox {#sandbox-mode}
 
 Ungavumela **Imodi ye-Sandbox** ukuze uhlole ukuhlanganiswa kwakho kokukhokha ngaphambi kokuba kuqale ukusebenza bukhoma. Uma imodi ye-sandbox isebenza, akukho zindleko zangempela ezizokhokhiswa.
 
-## Ukubuka Izinkokhelo
+## Ukubuka Izinkokhelo {#viewing-payments}
 
 Zulazulela ekhasini elithi **Izinkokhelo** ngaphansi kwe-Ultimate Multisite ukuze ubone konke okuthengiselanwayo kunethiwekhi yakho.
 
@@ -54,7 +54,7 @@ Ungahlunga izinkokhelo ngesimo (kuqediwe, kulindile, kwehlulekile, kubuyiselwe i
 
 Chofoza inkokhelo ukuze ubone imininingwane yayo ephelele kuhlanganise nezinto zemigqa, ubulungu obuhlobene, imininingwane yekhasimende, kanye nedatha yesango lokukhokha.
 
-## Ama-invoyisi
+## Ama-invoyisi {#invoices}
 
 Ultimate Multisite ingakhiqiza ama-invoyisi ngokuzenzakalelayo ngezinkokhelo. Ungenza ngokwezifiso isifanekiso se-invoyisi nefomethi yokunikeza izinombolo kusuka kuzilungiselelo Zokukhokha.
 

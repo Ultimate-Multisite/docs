@@ -4,11 +4,11 @@ title: Nzacha - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Nyocha: wu_generated_username_from_email
+# Nyocha: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Nyochaa aha njirimara onye ahịa emepụtara.
 
-## Paramita
+## Paramita {#parameters}
 
 | Aha | Ụdị | Nkọwa |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Nyochaa aha njirimara onye ahịa emepụtara.
 | $new_user_args | `array` | Array nke args onye ọrụ ọhụrụ, ikekwe gụnyere aha mbụ na aha ikpeazụ. |
 | $suffix | `string` | Tinye string na aha njirimara iji mee ka ọ bụrụ nke pụrụ iche. |
 
-### Kemgbe
+### Kemgbe {#since}
 
 - 3.7.0
-### Isi mmalite
+### Isi mmalite {#source}
 
 A kọwara ya na [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) n'ahịrị 488

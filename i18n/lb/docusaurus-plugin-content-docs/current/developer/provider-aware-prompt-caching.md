@@ -3,11 +3,11 @@ title: Provider-bewosst Prompt-Caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-bewosst Prompt-Caching
+# Provider-bewosst Prompt-Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 féiert **provider-bewosst Prompt-Caching** an, dat API-Käschten a Latenz optiméiert, andeems Prompts iwwer verschidde LLM-Provider gecacht ginn. All Provider huet ënnerschiddlech Caching-Mechanismen a Konfiguratiounen.
 
-## Iwwersiicht
+## Iwwersiicht {#overview}
 
 Prompt-Caching erlaabt Iech:
 
@@ -23,11 +23,11 @@ Verschidde Provider implementéieren Caching ënnerschiddlech:
 - **OpenRouter**: Provider-spezifescht Caching
 - **Vertex Anthropic**: Prompt-Caching mat Cache-Kontroll
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini bitt explizit Cache-Verwaltung iwwer d'`cachedContents` API.
 
-### Konfiguratioun
+### Konfiguratioun {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### E gecachte Prompt erstellen
+### E gecachte Prompt erstellen {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### E gecachte Prompt benotzen
+### E gecachte Prompt benotzen {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache-Liewenszyklus
+### Cache-Liewenszyklus {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Bescht Praktike fir Gemini
+### Bescht Praktike fir Gemini {#best-practices-for-gemini}
 
 - **Passend TTL setzen**: Käschtespueren géint Cache-Veralen ofweien
 - **System-Prompts cachen**: Dee selwechte System-Prompt iwwer Ufroen erëmbenotzen
 - **Cache-Notzung iwwerwaachen**: Verfollegen, wéi eng Caches am meeschte benotzt ginn
 - **Ofgelaf Caches opraumen**: Onbenotzt Caches periodesch läschen
 
-## Azure OpenAI: Prompt-Caching
+## Azure OpenAI: Prompt-Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI ënnerstëtzt Prompt-Caching mat automatescher TTL-Verwaltung.
 
-### Konfiguratioun
+### Konfiguratioun {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Caching aktivéieren
+### Caching aktivéieren {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache-Headeren
+### Cache-Headeren {#cache-headers}
 
 Azure OpenAI benotzt HTTP-Headeren fir Cache-Kontroll:
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: Dës Ufro net cachen
 - `no_store`: Net cachen an net erëmbenotzen
 
-### Cache-Notzung iwwerwaachen
+### Cache-Notzung iwwerwaachen {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Bescht Praktike fir Azure OpenAI
+### Bescht Praktike fir Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Konsistent Prompts benotzen**: Identesch Prompts profitéiere vum Caching
 - **Raisonnabel TTL setzen**: Käschten géint Aktualitéit ofweien
 - **Cache-Metriken iwwerwaachen**: Cache-Erstellung géint Treffer verfollegen
 - **Änlech Ufroe bündelen**: Ufroe gruppéieren, fir Cache-Treffer ze maximéieren
 
-## OpenRouter: Provider-spezifescht Caching
+## OpenRouter: Provider-spezifescht Caching {#openrouter-provider-specific-caching}
 
 OpenRouter ënnerstëtzt Caching iwwer déi drënner leien Provider (OpenAI, Anthropic, asw.).
 
-### Konfiguratioun
+### Konfiguratioun {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter-Caching benotzen
+### OpenRouter-Caching benotzen {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Provider-spezifesch Optiounen
+### Provider-spezifesch Optiounen {#provider-specific-options}
 
 Verschidde Provider hunn ënnerschiddlech Caching-Mechanismen:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Bescht Praktike fir OpenRouter
+### Bescht Praktike fir OpenRouter {#best-practices-for-openrouter}
 
 - **D'Caching vun Ärem Provider kennen**: All Provider huet ënnerschiddlech Mechanismen
 - **Caching-Verhalen testen**: Iwwerpréift, datt Caching mat Ärem gewielte Provider funktionéiert
 - **Käschten iwwerwaachen**: Spuerpotenzial duerch Caching verfollegen
 - **Konsistent Modeller benotzen**: Modeller wiesselen ënnerbrécht Cache-Treffer
 
-## Vertex Anthropic: Prompt-Caching mat Cache-Kontroll
+## Vertex Anthropic: Prompt-Caching mat Cache-Kontroll {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) ënnerstëtzt Prompt-Caching mat explizitter Cache-Kontroll.
 
-### Konfiguratioun
+### Konfiguratioun {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic Caching benotzen
+### Vertex Anthropic Caching benotzen {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache-Control-Typen
+### Cache-Control-Typen {#cache-control-types}
 
 - **ephemeral**: Cache fir d'Dauer vun der Ufro (Standard)
 - **persistent**: Cache iwwer méi Ufroen ewech (wann ënnerstëtzt)
 
-### Cache-Notzung iwwerwaachen
+### Cache-Notzung iwwerwaachen {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Bescht Praktike fir Vertex Anthropic
+### Bescht Praktike fir Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Ephemeral caching benotzen**: Gutt fir Caching an enger eenzeger Sessioun
 - **max_tokens passend astellen**: Cache-Gréisst géint Käschten ofweien
 - **Cache-Metriken iwwerwaachen**: Cache-Effikassitéit verfollegen
 - **Mat Ärer Aarbechtslaascht testen**: Iwwerpréift, datt Caching Ärem Notzungsfall notzt
 
-## Cross-Provider-Caching-Strategie
+## Cross-Provider-Caching-Strategie {#cross-provider-caching-strategy}
 
-### Eenheetlech Konfiguratioun
+### Eenheetlech Konfiguratioun {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Ubidder-Erkennung
+### Ubidder-Erkennung {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Fallback-Strategie
+### Fallback-Strategie {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Käschtenoptimiséierung
+## Käschtenoptimiséierung {#cost-optimization}
 
-### Aspuerunge berechnen
+### Aspuerunge berechnen {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimiséierungstipps
+### Optimiséierungstipps {#optimization-tips}
 
 - **Grouss System-Prompts cachen**: Gréisst Käschtenaspuerungen
 - **Kontext weiderbenotzen**: Dacks benotzte Kontextdokumenter cachen
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Cache-Effikassitéit iwwerwaachen**: Tatsächlech Aspuerunge verfollegen
 - **TTL upassen**: Käschten géint Aktualitéit ofweien
 
-## Feelerbehebung
+## Feelerbehebung {#troubleshooting}
 
-### Cache gëtt net benotzt
+### Cache gëtt net benotzt {#cache-not-being-used}
 
 - Iwwerpréift, datt Caching an der Konfiguratioun aktivéiert ass
 - Kontrolléiert, datt Prompts identesch sinn (Caching erfuerdert eng exakt Iwwereenstëmmung)
 - Iwwerpréift, datt de Cache net ofgelaf ass
 - Kontrolléiert ubidder-spezifesch Cache-Limiten
 
-### Cache-Erstellung klappt net
+### Cache-Erstellung klappt net {#cache-creation-failing}
 
 - Iwwerpréift, datt d'Cache-Gréisst bannent den Ubidder-Limiten ass
 - Kontrolléiert, datt d'Cache-Control-Syntax korrekt ass
 - Stellt sécher, datt den Ubidder Caching fir Äre Modell ënnerstëtzt
 - Kuckt d'Ubidder-Dokumentatioun fir Aschränkungen no
 
-### Onerwaart Käschten
+### Onerwaart Käschten {#unexpected-costs}
 
 - Iwwerwaacht Cache-Erstellung géint Cache-Lies-Tokens
 - Iwwerpréift, datt de Cache tatsächlech benotzt gëtt
 - Kontrolléiert op Cache-Misses wéinst Prompt-Variatiounen
 - Iwwerleet, TTL oder Cache-Strategie unzepassen
 
-## Ubidder-Verglach
+## Ubidder-Verglach {#provider-comparison}
 
 | Funktioun | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Käschtereduktioun | 90% | 90% | Ubidder-ofhängeg | 90% |
 | Iwwerwaachung | Detailléiert | Iwwer Metriken | Ubidder-ofhängeg | Iwwer Notzung |
 
-## Nächst Schrëtt
+## Nächst Schrëtt {#next-steps}
 
 1. **Wielt Ären Ubidder**: Wielt op Basis vun Äre Besoinen
 2. **Caching konfiguréieren**: Riicht ubidder-spezifescht Caching an

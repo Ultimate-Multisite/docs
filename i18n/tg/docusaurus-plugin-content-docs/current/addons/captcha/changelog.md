@@ -3,7 +3,7 @@ title: Тағйиротномаи Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Журнали тағйироти Captcha
+# Журнали тағйироти Captcha {#captcha-changelog}
 
 Version: 1.5.0 - Нашр шуд дар 2026-05-22
 * Нав: Маҳдудкунандаи суръати hard-stop — ҳар GET ва POST-ро дар сатҳҳои бо captcha ҳифзшуда (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) мешуморад ва бо HTTP 429, як `Retry-After` header ва хоби тасодуфии tarpit (1–5с, бо ҳадди сахт 15с) ҷавоб медиҳад.

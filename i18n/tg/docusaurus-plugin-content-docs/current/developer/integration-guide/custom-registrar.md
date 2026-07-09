@@ -3,13 +3,13 @@ title: Сохтани ҳамгироии фармоишии регистрато
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Сохтани ҳамгироии фармоишии бақайдгиранда
+# Сохтани ҳамгироии фармоишии бақайдгиранда {#building-a-custom-registrar-integration}
 
 Иловаи Domain Seller аз намунаи **Integration Registry** истифода мебарад. Ҳар бақайдгиранда як синфи PHP аст, ки `Domain_Selling_Capability`-ро татбиқ мекунад ва худро тавассути hook-и амали `wu_domain_seller_register_capabilities` сабт менамояд.
 
 Ин роҳнамо нишон медиҳад, ки чӣ гуна як бақайдгирандаи фармоиширо пайваст кардан мумкин аст.
 
-## Интерфейс
+## Интерфейс {#the-interface}
 
 Синфи шумо бояд `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability`-ро татбиқ кунад ва `WP_Ultimo\Integrations\Base_Capability_Module`-ро васеъ намояд.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Усулҳои ихтиёрӣ
+### Усулҳои ихтиёрӣ {#optional-methods}
 
 Инҳоро татбиқ кунед, то имкониятҳои иловагӣ фаъол шаванд. Илова дастгириро тавассути `method_exists()` муайян мекунад:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Интиқоли домен (баромадӣ) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Интиқоли домен (воридотӣ) |
 
-### Қоидаи арзиши баргардонӣ
+### Қоидаи арзиши баргардонӣ {#return-value-convention}
 
 Ҳамаи усулҳо массиверо бармегардонанд, ки ҳадди ақал дорои калиди `success` аст:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Сабт кардани қобилияти худ
+## Сабт кардани қобилияти худ {#registering-your-capability}
 
 Синфи худро бо истифода аз амали `wu_domain_seller_register_capabilities` сабт кунед:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Илова кардани майдонҳои маълумоти эътимоднома ба wizard
+## Илова кардани майдонҳои маълумоти эътимоднома ба wizard {#adding-credential-fields-to-the-wizard}
 
 Барои он ки admin-ҳо тавонанд маълумоти эътимодномаро тавассути setup wizard ворид кунанд, ҳамгироии худро сабт кунед:
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## Hook-ҳо барои амалҳои пас аз бақайдгирӣ
+## Hook-ҳо барои амалҳои пас аз бақайдгирӣ {#hooks-for-post-registration-actions}
 
 Ин амалҳоро барои фаъол кардани webhook-ҳо, provisioning, огоҳиномаҳо ё навсозиҳои CRM истифода баред:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Сабтҳо
+## Сабтҳо {#logging}
 
 Ба канали сабти махсуси провайдери худ бо истифода аз `wu_log_add()` нависед:
 

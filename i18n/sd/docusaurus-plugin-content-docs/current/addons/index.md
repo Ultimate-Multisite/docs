@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite اضافا
+# Ultimate Multisite اضافا {#ultimate-multisite-addons}
 
 اضافا Ultimate Multisite کي اضافي خاصيتن ۽ انٽيگريشنز سان وڌائين ٿا. گهڻا اضافا ادا ڪيل آهن ۽ [ultimatemultisite.com](https://ultimatemultisite.com) تان خريد ڪري سگهجن ٿا.
 
-## انسٽاليشن
+## انسٽاليشن {#installation}
 
 اضافا ٻن طريقن سان انسٽال ڪري سگهجن ٿا:
 
 1. **اضافي واري صفحي ذريعي** -- WordPress انتظاميه ۾ پنهنجي سائيٽ جي اضافن جي انتظام واري صفحي ڏانهن وڃو
 2. **دستي ڊائون لوڊ** -- [توهان جي Account](https://ultimatemultisite.com/my-account/downloads/) تان ڊائون لوڊ ڪريو ۽ پلگ انز > نئون شامل ڪريو ذريعي اپلوڊ ڪريو
 
-## موجود اضافا
+## موجود اضافا {#available-addons}
 
 | اضافو | وضاحت |
 |-------|-------------|

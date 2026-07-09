@@ -3,7 +3,7 @@ title: Cyfeirnod Galluoedd
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Cyfeirnod Galluoedd
+# Cyfeirnod Galluoedd {#abilities-reference}
 
 Galluoedd yw’r gweithredoedd atomig y gall Gratis AI Agent eu galw ar eich gosodiad WordPress. Mae pob gallu yn ddosbarth PHP cofrestredig sy’n datgelu schema JSON — mae’r agent yn darllen y schema hwn adeg rhedeg i ddeall pa baramedrau sy’n ofynnol a beth mae’r gallu’n ei ddychwelyd.
 
@@ -11,11 +11,11 @@ Mae’r dudalen hon yn dogfennu’r holl alluoedd sy’n cael eu cludo gyda Grat
 
 ---
 
-## Mathau Postiadau Personol
+## Mathau Postiadau Personol {#custom-post-types}
 
 Mae’r galluoedd hyn yn rheoli mathau postiadau personol (CPTs) sydd wedi’u cofrestru drwy’r agent. Mae cofrestriadau’n cael eu cadw yn nhabl opsiynau WordPress fel eu bod yn goroesi dadactifadu ac ailactifadu’r plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Yn cofrestru math postiad personol newydd.
 
@@ -50,7 +50,7 @@ Yn cofrestru math postiad personol newydd.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Yn dychwelyd yr holl fathau postiadau personol a gofrestrwyd gan yr agent.
 
@@ -73,7 +73,7 @@ Yn dychwelyd yr holl fathau postiadau personol a gofrestrwyd gan yr agent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Yn dadgofrestru math postiad personol a gofrestrwyd yn flaenorol gan yr agent. Mae postiadau presennol o’r math hwnnw’n aros yn y gronfa ddata ond nid ydynt bellach yn hygyrch drwy’r math postiad.
 
@@ -87,11 +87,11 @@ Yn dadgofrestru math postiad personol a gofrestrwyd yn flaenorol gan yr agent. M
 
 ---
 
-## Tacsonomegau Personol
+## Tacsonomegau Personol {#custom-taxonomies}
 
 Mae’r galluoedd hyn yn rheoli tacsonomegau personol. Fel CPTs, mae cofrestriadau tacsonomeg yn cael eu cadw.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Yn cofrestru tacsonomeg bersonol newydd.
 
@@ -123,7 +123,7 @@ Yn cofrestru tacsonomeg bersonol newydd.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Yn dychwelyd yr holl dacsonomegau personol a gofrestrwyd gan yr agent.
 
@@ -146,7 +146,7 @@ Yn dychwelyd yr holl dacsonomegau personol a gofrestrwyd gan yr agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Yn dadgofrestru tacsonomeg bersonol a gofrestrwyd yn flaenorol gan yr agent.
 
@@ -160,11 +160,11 @@ Yn dadgofrestru tacsonomeg bersonol a gofrestrwyd yn flaenorol gan yr agent.
 
 ---
 
-## System Ddylunio
+## System Ddylunio {#design-system}
 
 Mae galluoedd y system ddylunio yn addasu cyflwyniad gweledol y safle WordPress — o CSS personol i batrymau bloc a logo’r safle.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Yn atodi CSS i `<head>` y safle drwy `wp_add_inline_style`. Mae CSS yn cael ei storio yn yr opsiwn `gratis_ai_agent_custom_css` ac yn cael ei dynnu o’r ciw yn lân pan gaiff y gallu ei ailosod.
 
@@ -190,7 +190,7 @@ Yn atodi CSS i `<head>` y safle drwy `wp_add_inline_style`. Mae CSS yn cael ei s
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Yn cofrestru patrwm bloc ailddefnyddiadwy yn llyfrgell batrymau WordPress.
 
@@ -209,7 +209,7 @@ Yn cofrestru patrwm bloc ailddefnyddiadwy yn llyfrgell batrymau WordPress.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Yn rhestru’r holl batrymau bloc a gofrestrwyd gan yr agent.
 
@@ -231,7 +231,7 @@ Yn rhestru’r holl batrymau bloc a gofrestrwyd gan yr agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Yn gosod logo safle WordPress i ID atodiad penodol neu URL delwedd bell. Pan ddarperir URL, caiff y ddelwedd ei lawrlwytho a'i mewnforio i'r Media Library.
 
@@ -248,7 +248,7 @@ Rhaid darparu un o `attachment_id` neu `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Yn cymhwyso rhagosodiad lliw/teipograffeg ag enw i `theme.json` (neu `global-styles`) y thema gweithredol. Mae rhagosodiadau yn fwndeli wedi'u curadu a gynhelir gan dîm Gratis AI Agent.
 
@@ -273,11 +273,11 @@ Yn cymhwyso rhagosodiad lliw/teipograffeg ag enw i `theme.json` (neu `global-sty
 
 ---
 
-## Arddulliau Byd-eang
+## Arddulliau Byd-eang {#global-styles}
 
 Mae galluoedd Arddulliau Byd-eang yn darllen ac yn ysgrifennu gwerthoedd theme.json drwy WordPress Global Styles API, gan effeithio ar bob bloc a thempled ar draws y safle.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Yn dychwelyd y ffurfweddiad arddulliau byd-eang cyfredol.
 
@@ -291,7 +291,7 @@ Yn dychwelyd y ffurfweddiad arddulliau byd-eang cyfredol.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Yn diweddaru un neu fwy o werthoedd yn y ffurfweddiad arddulliau byd-eang.
 
@@ -318,7 +318,7 @@ Yn diweddaru un neu fwy o werthoedd yn y ffurfweddiad arddulliau byd-eang.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Yn ailosod pob newid arddull byd-eang a gymhwyswyd gan yr asiant, gan adfer rhagosodiadau'r thema.
 
@@ -328,11 +328,11 @@ Yn ailosod pob newid arddull byd-eang a gymhwyswyd gan yr asiant, gan adfer rhag
 
 ---
 
-## Dewislenni Llywio
+## Dewislenni Llywio {#navigation-menus}
 
 Mae galluoedd Dewislen Llywio yn creu ac yn rheoli dewislenni llywio WordPress a'u heitemau.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Yn creu dewislen lywio WordPress newydd.
 
@@ -347,7 +347,7 @@ Yn creu dewislen lywio WordPress newydd.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Yn ailenwi dewislen neu'n ei hailaseinio i leoliad thema.
 
@@ -363,7 +363,7 @@ Yn ailenwi dewislen neu'n ei hailaseinio i leoliad thema.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Yn ychwanegu eitem at ddewislen lywio bresennol.
 
@@ -383,7 +383,7 @@ Yn ychwanegu eitem at ddewislen lywio bresennol.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Yn tynnu eitem o ddewislen lywio.
 
@@ -397,7 +397,7 @@ Yn tynnu eitem o ddewislen lywio.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Yn rhestru pob dewislen lywio WordPress, gan gynnwys eu lleoliadau thema aseinedig.
 
@@ -420,11 +420,11 @@ Yn rhestru pob dewislen lywio WordPress, gan gynnwys eu lleoliadau thema aseined
 
 ---
 
-## Rheoli Opsiynau
+## Rheoli Opsiynau {#options-management}
 
 Mae galluoedd opsiynau yn darllen ac yn ysgrifennu opsiynau WordPress drwy `get_option` / `update_option`. Mae rhestr flocio diogelwch fewnol yn atal addasu gosodiadau critigol yn ddamweiniol.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Yn darllen opsiwn WordPress.
 
@@ -440,7 +440,7 @@ Yn dychwelyd gwall os yw `option_name` ar y rhestr flocio diogelwch.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Yn ysgrifennu opsiwn WordPress.
 
@@ -458,7 +458,7 @@ Yn dychwelyd gwall os yw `option_name` ar y rhestr flocio diogelwch.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Yn dileu opsiwn WordPress.
 
@@ -474,7 +474,7 @@ Yn dychwelyd gwall os yw `option_name` ar y rhestr flocio diogelwch.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Yn rhestru opsiynau WordPress sy'n cyfateb i batrwm.
 
@@ -498,11 +498,11 @@ Yn rhestru opsiynau WordPress sy'n cyfateb i batrwm.
 
 ---
 
-## Rheoli Cynnwys
+## Rheoli Cynnwys {#content-management}
 
 Mae galluoedd Rheoli Cynnwys yn creu ac yn golygu postiadau a thudalennau WordPress. Dychwelir IDau postiadau fel y gall camau dilynol mewn cynlluniau aml-allu gyfeirio at y cynnwys a grëwyd.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Yn creu cofnod postiad, tudalen, neu fath postiad personol WordPress newydd.
 
@@ -537,7 +537,7 @@ Yn creu cofnod postiad, tudalen, neu fath postiad personol WordPress newydd.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Yn diweddaru postiad neu dudalen WordPress bresennol.
 
@@ -567,7 +567,7 @@ Yn diweddaru postiad neu dudalen WordPress bresennol.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Yn creu sawl postiad mewn un galwad gallu, gan leihau teithiau yn ôl ac ymlaen yn ystod adeiladau safle neu fewnforio cynnwys swmp. Crëir postiadau mewn trefn; os bydd un yn methu, bydd y lleill yn parhau a chaiff y methiant ei adrodd yn yr arae canlyniadau.
 
@@ -619,7 +619,7 @@ Yn creu sawl postiad mewn un galwad gallu, gan leihau teithiau yn ôl ac ymlaen 
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Yn neilltuo delwedd dan sylw (mân-lun postiad) i bostiad neu dudalen bresennol. Yn derbyn ID atodiad Media Library presennol neu URL delwedd o bell; pan ddarperir URL, caiff y ddelwedd ei lawrlwytho a'i mewnforio'n awtomatig.
 
@@ -638,7 +638,7 @@ Rhaid darparu un o `attachment_id` neu `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Yn creu ffurflen gyswllt gan ddefnyddio'r plugin ffurflen gweithredol (Contact Form 7, WPForms, Fluent Forms, neu Gravity Forms, yn dibynnu ar ba un sydd wedi'i osod). Yn dychwelyd shortcode y gellir ei ymgorffori mewn unrhyw bostiad neu dudalen.
 
@@ -691,11 +691,11 @@ Yn creu ffurflen gyswllt gan ddefnyddio'r plugin ffurflen gweithredol (Contact F
 
 ---
 
-## Adolygiad Gweledol
+## Adolygiad Gweledol {#visual-review}
 
 Mae galluoedd Adolygiad Gweledol yn caniatáu i’r agent gipio sgrinluniau o dudalennau byw a’u dadansoddi, gan alluogi adolygiad dylunio ymreolaethol, cymariaethau cyn/ar ôl, a gwiriadau atchweliad gweledol heb fod angen unrhyw estyniad porwr.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Yn cipio sgrinlun o dudalen WordPress ar URL penodol gan ddefnyddio porwr di-ben ochr gweinydd. Caiff y ddelwedd ei chadw i’r Media Library a dychwelir URL CDN.
 
@@ -724,7 +724,7 @@ Yn cipio sgrinlun o dudalen WordPress ar URL penodol gan ddefnyddio porwr di-ben
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Yn cymryd dau sgrinlun ac yn dychwelyd sgôr gwahaniaeth gweledol ynghyd â delwedd wahaniaeth sy’n amlygu rhanbarthau sydd wedi newid. Yn ddefnyddiol ar gyfer cadarnhau bod newid dylunio wedi cynhyrchu’r canlyniad disgwyliedig neu ar gyfer canfod atchweliadau anfwriadol.
 
@@ -754,7 +754,7 @@ Mae `diff_score` o `0.0` yn golygu dim newid gweladwy; mae `1.0` yn golygu bod p
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Yn cipio sgrinlun o dudalen ac yn ei anfon at y model iaith ar gyfer dadansoddiad gweledol. Yn dychwelyd asesiad strwythuredig sy’n cwmpasu cynllun, teipograffeg, defnydd lliw, a phryderon hygyrchedd.
 
@@ -785,11 +785,11 @@ Yn cipio sgrinlun o dudalen ac yn ei anfon at y model iaith ar gyfer dadansoddia
 
 ---
 
-## Galluoedd Gosodadwy
+## Galluoedd Gosodadwy {#installable-abilities}
 
 Mae’r Gofrestrfa Galluoedd Gosodadwy yn caniatáu i chi estyn yr agent gyda phecynnau gallu ychwanegol a ddosberthir fel plugins WordPress. Mae pob pecyn yn cofrestru un neu fwy o alluoedd gan ddefnyddio’r API gallu safonol.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Yn dychwelyd catalog y pecynnau gallu sydd ar gael i’w gosod o’r gofrestrfa.
 
@@ -818,7 +818,7 @@ Yn dychwelyd catalog y pecynnau gallu sydd ar gael i’w gosod o’r gofrestrfa.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Yn lawrlwytho ac yn actifadu pecyn gallu o’r gofrestrfa.
 
@@ -832,7 +832,7 @@ Yn lawrlwytho ac yn actifadu pecyn gallu o’r gofrestrfa.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Yn ymholi’r gofrestrfa galluoedd i ddod o hyd i’r plugin gorau ar gyfer achos defnydd a ddisgrifir ac, yn ddewisol, yn ei osod.
 

@@ -4,13 +4,13 @@ title: Гамәл - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# Action: wp_ultimo_plugin_and_theme_manager_activation
+# Action: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
 
 Плагинның башка өлешләренә активлаштыру өчен үз процедураларын тоташтырырга мөмкинлек бирә
 
-### Кайчаннан бирле
+### Кайчаннан бирле {#since}
 
 - 1.9.6
-### Чыганак
+### Чыганак {#source}
 
 [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/inc/class-hooks.php#L83) эчендә 83 нче юлда билгеләнгән

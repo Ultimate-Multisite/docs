@@ -3,7 +3,7 @@ title: Aboqani bekor qilish
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# A'zoqni bekor qilish (v2)
+# A'zoqni bekor qilish (v2) {#canceling-a-membership-v2}
 
 _**MUHIM Eslatma: Ushbu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
 

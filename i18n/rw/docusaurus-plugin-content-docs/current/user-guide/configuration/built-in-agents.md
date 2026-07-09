@@ -3,11 +3,11 @@ title: Abakozi bubakiwemo
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Zubatswemo
+# Agents Zubatswemo {#built-in-agents}
 
 Gratis AI Agent v1.9.0 izana agents eshanu zubatswemo, buri imwe yateguwe mbere ifite urutonde rw’ibikoresho rwibanda ku ntego runaka, system prompt yayihariye, n’ibitekerezo byo gutangiriraho bihuye n’imirimo isanzwe muri icyo gice. Guhindura agent bihindura ibyo assistant ishobora gukora n’uko isubiza — nta configuration na imwe ugomba gukora ku ruhande rwawe. Superdav AI Agent v1.18.0 ishobora kongeramo ibikoresho byita kuri gahunda, inyandiko z’ibyibutswa, approval gates, n’imenyesha rya SMS muri izi workflows igihe integrations birebana byashyizweho.
 
-## Agent Ni Iki?
+## Agent Ni Iki? {#what-is-an-agent}
 
 Buri agent ni umwirondoro wa configuration ufite izina uhuza:
 
@@ -15,7 +15,7 @@ Buri agent ni umwirondoro wa configuration ufite izina uhuza:
 - **System prompt** — amabwiriza agena imvugo ya agent, ibyo ishyira imbere, n’imbibi zayo
 - **Ibitekerezo** — prompts zanditswe mbere zigaragara muri chat interface kugira ngo zigufashe gutangira vuba
 
-## Kugera kuri Agent Picker
+## Kugera kuri Agent Picker {#accessing-the-agent-picker}
 
 1. Fungura panel ya **Gratis AI Agent** muri sidebar y’ubuyobozi ya WordPress.
 2. Kanda **agent icon** hejuru ibumoso muri chat header (icon ihinduka kugira ngo igaragaze agent ikora).
@@ -24,9 +24,9 @@ Buri agent ni umwirondoro wa configuration ufite izina uhuza:
 
 Ushobora kandi guhindura agents hagati mu kiganiro — system prompt ya agent nshya itangira gukora ku butumwa bukurikira.
 
-## Agents Eshanu Zubatswemo
+## Agents Eshanu Zubatswemo {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Icyo yibandaho:** Gukora no guhindura posts, pages, na forms zo kuvugana.
 
@@ -47,7 +47,7 @@ Ushobora kandi guhindura agents hagati mu kiganiro — system prompt ya agent ns
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Icyo yibandaho:** Gukora website kuva ku ntangiriro kugeza ku musozo uhereye kuri prompt imwe.
 
@@ -70,7 +70,7 @@ Ushobora kandi guhindura agents hagati mu kiganiro — system prompt ya agent ns
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Icyo yibandaho:** Visual customisation — amabara, typography, CSS, na block patterns.
 
@@ -87,7 +87,7 @@ Ushobora kandi guhindura agents hagati mu kiganiro — system prompt ya agent ns
 - *Fata screenshot ya homepage maze umbwire ibyo wanonosora.*
 - *Kora reusable hero block pattern ifite background image y’ubugari bwose na heading iri hagati.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Icyo yibandaho:** Kuvumbura, gushyiramo, no gucunga WordPress plugins.
 
@@ -105,7 +105,7 @@ Ushobora kandi guhindura agents hagati mu kiganiro — system prompt ya agent ns
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Icyo yibandaho:** Gusubiza ibibazo ku bijyanye na content y’urubuga, settings, na WordPress configuration.
 
@@ -124,7 +124,7 @@ Ushobora kandi guhindura agents hagati mu kiganiro — system prompt ya agent ns
 
 ---
 
-## Superdav Automation Integrations
+## Superdav Automation Integrations {#superdav-automation-integrations}
 
 Iyo integrations za Superdav AI Agent v1.18.0 zashyizweho, agents zubatswemo zishobora kugira uruhare mu mikorere y’automation itekanye kurushaho kandi izirikana ingengabihe:
 
@@ -138,11 +138,11 @@ Workflow isabwa: saba agent gutegura ubutumwa cyangwa igikorwa, usuzume approval
 
 ---
 
-## Guhindura Agents
+## Guhindura Agents {#customising-agents}
 
 Buri agent yubatswemo ishobora kwagurwa cyangwa gusimbuzwa binyuze muri filter `gratis_ai_agent_agents`.
 
-### Kongeramo custom system prompt kuri agent isanzwe
+### Kongeramo custom system prompt kuri agent isanzwe {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Kwandikisha agent nshya
+### Kwandikisha agent nshya {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Agent nshya igaragara muri Agent Picker ako kanya filter imaze gukora.
 
-### Gukuraho agent yubatswemo
+### Gukuraho agent yubatswemo {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

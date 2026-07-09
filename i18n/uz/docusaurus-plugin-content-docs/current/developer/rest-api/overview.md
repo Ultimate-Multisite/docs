@@ -3,28 +3,28 @@ title: REST API umumiy ko‘rinishi
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ma'lumotnomasi
+# REST API ma'lumotnomasi {#rest-api-reference}
 
-## Asosiy konfiguratsiya
+## Asosiy konfiguratsiya {#base-configuration}
 
 **Asosiy URL:** `{site_url}/wp-json/wu/v2/`
 **Autentifikatsiya:** API Key va Secret (HTTP Basic Auth yoki URL parametrlari)
 
-## Autentifikatsiya
+## Autentifikatsiya {#authentication}
 
-### API ni yoqish
+### API ni yoqish {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API hisob ma’lumotlarini olish
+### API hisob ma’lumotlarini olish {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentifikatsiya usullari
+### Autentifikatsiya usullari {#authentication-methods}
 
 **HTTP Basic Auth (tavsiya etiladi):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Asosiy endpointlar
+## Asosiy endpointlar {#core-endpoints}
 
-### 1. Mijozlar API
+### 1. Mijozlar API {#1-customers-api}
 
 **Asosiy marshrut:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Saytlar API
+### 2. Saytlar API {#2-sites-api}
 
 **Asosiy marshrut:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. A’zoliklar API
+### 3. A’zoliklar API {#3-memberships-api}
 
 **Asosiy marshrut:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Mahsulotlar API
+### 4. Mahsulotlar API {#4-products-api}
 
 **Asosiy marshrut:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. To‘lovlar API
+### 5. To‘lovlar API {#5-payments-api}
 
 **Asosiy marshrut:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domenlar API
+### 6. Domenlar API {#6-domains-api}
 
 **Asosiy marshrut:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Ro‘yxatdan o‘tish endpointi
+## Ro‘yxatdan o‘tish endpointi {#registration-endpoint}
 
 `/register` endpointi to‘liq checkout/ro‘yxatdan o‘tish oqimini taqdim etadi:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Suveren tenant endpointlari
+## Suveren tenant endpointlari {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 izolyatsiyalangan tenantlarni ta’minlaydigan, tekshiradigan yoki tasdiqlaydigan integratsiyalar uchun suveren tenant REST qamrovini qo‘shadi.
 
@@ -242,7 +242,7 @@ Odatdagi migratsiya holati javoblari quyidagilarni o‘z ichiga oladi:
 
 `ready: false` ni ishga tushirishdan oldingi to‘siq sifatida qabul qiling. Tasdiqlash tafsilotlarini tekshiring, ma’lumotlar bazasi host bog‘lanishi, navbat, foydalanuvchi ta’minoti yoki marshrutlash muammosini tuzating, so‘ng tasdiqlashni qayta urinib ko‘ring.
 
-## Xato javoblari
+## Xato javoblari {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Odatdagi migratsiya holati javoblari quyidagilarni o‘z ichiga oladi:
 }
 ```
 
-## Sahifalash va filtrlash
+## Sahifalash va filtrlash {#pagination-and-filtering}
 
 **So‘rov parametrlari:**
 ```http

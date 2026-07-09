@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Qassam sub-siti fuq servers u bażijiet tad-data għall-prestazzjoni u s-sigurtà
 
-## Punti ewlenin tar-rilaxx tal-verżjoni 1.2.0
+## Punti ewlenin tar-rilaxx tal-verżjoni 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 iżid il-pedament ta’ kerrej sovran għal flussi tax-xogħol ta’ iżolament fil-produzzjoni:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 iżid il-pedament ta’ kerrej sovran għal flussi tax-xogħ
 
 Ara l-gwidi għall-utenti għal [fluss tax-xogħol tal-migrazzjoni sovrana](/user-guide/getting-started/sovereign-migration-workflow), [iżolament ta’ multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), u [operazzjonijiet ta’ kerrej sovran](/user-guide/administration/sovereign-tenant-operations).
 
-## Rekwiżiti
+## Rekwiżiti {#requirements}
 
 - WordPress 5.3 jew ogħla
 - PHP 7.4 jew ogħla
 - Estensjoni Multisite Ultimate (attiva)
 
-## Installazzjoni
+## Installazzjoni {#installation}
 
 1. Tella’ l-fajls tal-estensjoni addizzjonali fid-direttorju `/wp-content/plugins/` tiegħek
 2. Attiva l-estensjoni permezz tal-menu 'Plugins' f’WordPress
 3. Ikkonfigura s-settings tal-estensjoni addizzjonali fl-amministrazzjoni tan-network
 
-## Żvilupp
+## Żvilupp {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struttura tal-Proġett
+### Struttura tal-Proġett {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regoli għall-immodernizzar tal-kodiċi
 ```
 
-### Ittestjar
+### Ittestjar {#testing}
 
 L-estensjoni addizzjonali tinkludi qafas komprensiv għall-ittestjar:
 
@@ -93,54 +93,54 @@ L-estensjoni addizzjonali tinkludi qafas komprensiv għall-ittestjar:
 - **Kopertura tat-Testijiet**: Ikkonfigurata biex issegwi l-kopertura tal-kodiċi
 - **Ittestjar Multisite**: It-testijiet jitħaddmu f’ambjent multisite
 
-### Standards tal-Kodiċi
+### Standards tal-Kodiċi {#code-standards}
 
 - **Standards tal-Kodifikazzjoni ta’ WordPress**: Infurzati permezz ta’ PHPCS
 - **Kompatibbiltà ma’ PHP 7.4+**: Karatteristiċi moderni ta’ PHP appoġġjati
 - **Analiżi Statika**: Integrazzjoni PHPStan għall-kontroll tat-tipi
 - **Immodernizzar tal-Kodiċi**: Regoli Rector għal aġġornamenti ta’ PHP
 
-### Sistema tal-Bini
+### Sistema tal-Bini {#build-system}
 
 - **Ipproċessar tal-Assi**: Minifikazzjoni għal fajls CSS/JS
 - **Traduzzjoni**: Ġenerazzjoni ta’ fajl POT
 - **Ippakkjar**: Ħolqien ta’ arkivju għad-distribuzzjoni
 - **Modalità ta’ Żvilupp**: Assi mhux minifikati għad-debugging
 
-## Konfigurazzjoni
+## Konfigurazzjoni {#configuration}
 
 L-estensjoni addizzjonali tappoġġja diversi għażliet ta’ konfigurazzjoni aċċessibbli permezz tal-interface tal-amministrazzjoni tan-network.
 
-### Konfigurazzjoni ta’ kerrej sovran
+### Konfigurazzjoni ta’ kerrej sovran {#sovereign-tenant-configuration}
 
 Għal kerrejja sovrani, ikkonfigura l-bażi tad-data tal-kerrej, l-għerq tas-sistema tal-fajls, ir-rbit tal-host tal-bażi tad-data, u l-kapaċità tal-host qabel ma tidderieġi t-traffiku lejn il-kerrej. Ħaddem il-verifika tal-migrazzjoni wara kull bidla li taffettwa l-kredenzjali tal-bażi tad-data, ir-rbit tal-host, ir-routing, jew il-proviżjonament tal-utenti.
 
 Uża `localhost` biss meta r-runtime tal-kerrej u l-għotjiet tal-bażi tad-data jistennew socket lokali jew aċċess fuq l-istess magna. Uża `127.0.0.1` jew isem ta’ host tas-servizz meta dak ikun il-host tal-għotja kkonfigurat mill-fornitur tiegħek.
 
-### Kapaċità ta’ Hostinger
+### Kapaċità ta’ Hostinger {#hostinger-capability}
 
 Il-kapaċità ta’ multi-tenancy ta’ Hostinger taħdem bit-token kondiviż tal-integrazzjoni ta’ Hostinger. Ikkonferma li d-domain huwa preżenti f’hPanel, li d-DNS jipponta lejn l-Account ta’ Hostinger, u li s-settings tal-bażi tad-data tal-kerrej jaqblu ma’ hPanel qabel il-verifika.
 
-## Hooks u Filters
+## Hooks u Filters {#hooks-and-filters}
 
-### Azzjonijiet
+### Azzjonijiet {#actions}
 
 - `ultimate-multisite-addon-template_init` - Jiskatta wara l-inizjalizzazzjoni tal-estensjoni addizzjonali
 - `ultimate-multisite-addon-template_loaded` - Jiskatta wara li l-fajls kollha tal-estensjoni addizzjonali jitgħabbew
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ibdel is-settings tal-estensjoni addizzjonali
 - `ultimate-multisite-addon-template_enabled` - Ibdel l-istatus ta’ attivazzjoni/diżattivazzjoni tal-estensjoni addizzjonali
 
-## Liċenzja
+## Liċenzja {#license}
 
 Din l-estensjoni addizzjonali hija liċenzjata taħt il-GPL v3 jew aktar tard.
 
-## Appoġġ
+## Appoġġ {#support}
 
 Għal appoġġ u dokumentazzjoni, żur [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Verżjoni 1.2.0 (2026-06-03): żid autologin ta’ kerrej mingħajr stat, kapaċità ta’ multi-tenancy ta’ Hostinger, iżolament tal-bażi tad-data u tas-sistema tal-fajls għal kull sub-sit, bibien ta’ verifika tal-migrazzjoni sovrana, titjib fil-bootstrap tal-kerrej/kittieb tal-bażi tad-data, rbit konfigurabbli tal-host MySQL, u tneħħija sovrana aktar sigura.
 

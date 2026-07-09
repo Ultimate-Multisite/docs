@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Mpango wa Matumizi Yanayopimwa (Metered Plans)
+# Mpango wa Matumizi Yanayopimwa (Metered Plans) {#metered-plans}
 
 Ultimate Multisite: Metered Plans inabadilisha jinsi unavyowasilisha malipo kwa wateja wako kwa kuleta uwezo wa malipo yanayopimwa na yanayobadilika. Badala ya mipaka mikali ambayo inazuia watumiaji unapozidiwa, unawasha malipo ya ziada (overage charges) ambayo yanawafanyia malipo wateja kiotomatiki kwa matumizi yoyote ya ziada.
 
-## Vipengele Muhimu
+## Vipengele Muhimu {#key-features}
 
 * **Malipo Yanayopimwa (Metered Billing)**: Wafanyie malipo wateja kulingana na matumizi halisi badala ya viwango maalum.
 * **Usimamizi wa Matumizi Zaidi (Overage Management)**: Lipia kiotomatiki kwa matumizi yanayozidi mipaka ya mpango.
@@ -21,14 +21,14 @@ Ultimate Multisite: Metered Plans inabadilisha jinsi unavyowasilisha malipo kwa 
 * **Invoicing ya Kiotomatiki**: Tunga ankara kiotomatiki wakati viwango vya matumizi vinapozidiwa.
 * **Ripoti za Matumizi**: Uchambuzi na ripoti za kina za matumizi kwa wateja na wasimamizi.
 
-## Inafaa Kwa
+## Inafaa Kwa {#perfect-for}
 
 * **Watoaji wa Hosting**: Toa mipango inayoweza kukua kulingana na mahitaji ya wateja.
 * **Platform za SaaS**: Lipia kulingana na matumizi halisi ya rasilimali.
 * **Mitandao ya Wakwakili (Agency Networks)**: Mifumo ya bei inayobadilika kwa miradi ya wateja.
 * **Reseller Hosting**: Wafanye washirika waweze kutoa bei zinazotegemea matumizi.
 
-## Inafanya Kazi Vipi
+## Inafanya Kazi Vipi {#how-it-works}
 
 1. Sanifisha rasilimali zinazopimwa (nafasi ya disk, bandwidth, idadi ya sites, n.k.).
 2. Weka mipaka ya msingi ya mpango na viwango vya matumizi zaidi.
@@ -37,13 +37,13 @@ Ultimate Multisite: Metered Plans inabadilisha jinsi unavyowasilisha malipo kwa 
 5. Ankara hutungwa kiotomatiki kulingana na mzunguko wa malipo.
 6. Wateja wanaweza kuona matumizi yao na malipo yanayokuja kwa wakati halisi.
 
-## Malipo ya Token za AI
+## Malipo ya Token za AI {#ai-token-billing}
 
 Toleo la 1.1.0 limeongeza malipo ya token za AI kwa mitandao inayotoa vipengele vya AI kupitia WordPress AI Client SDK. Metered Plans inasikiliza ombi la kuzalisha AI lililokamilika, hurekodi idadi ya tokens za kuingiza na kuondoa kwa subsite ya sasa, na kubadilisha tokens hizo kuwa matumizi ya AI yanayoweza kulipwa kwa kipindi cha malipo cha sasa cha mteja.
 
 Tumia malipo ya token za AI wakati unataka kutoa zana za AI kwenye tovuti za wateja bila kupokea gharama zisizotarajiwa za mfumo wa AI. Kila ombi linahusishwa na subsite, mteja, ushili (membership), mtoa huduma (provider), na mfumo (model) ili wasimamizi waweze kufuatilia matumizi huku wateja wakiona jinsi matumizi yao ya AI yanavyoathiri akaunti yao.
 
-### Sanifisha Viwango kwa Token
+### Sanifisha Viwango kwa Token {#configure-per-token-rates}
 
 Viwango vya AI vinasanifishwa kwa kila mfumo (model) kama viwango tofauti vya kuingiza na kuondoa. Viwango hihhesabiwa kwa kila token milioni moja, ambacho kinalingana na kurasa za bei za watoaji wa AI kwa kawaida.
 
@@ -55,7 +55,7 @@ Viwango vya AI vinasanifishwa kwa kila mfumo (model) kama viwango tofauti vya ku
 
 Wakati model ID halisi haikuwekwa, Metered Plans inaweza kuolinganisha kwa kufuata mwanzo wa mfumo. Kwa mfano, kiwango kilichowekwa kwa `claude-sonnet-4` kinaweza kutumika kwa model IDs zilizo na timestamp ambazo zinaanza na mwanzo huo. Wanaendelezaji pia wanaweza kurekebisha jedwali la viwango vya mwisho kwa kutumia filter ya [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Connectors Zinazounga Mkono AI
+### Connectors Zinazounga Mkono AI {#supported-ai-connectors}
 
 Malipo ya token za AI yanafanya kazi na connectors zinazotoa matukio ya kuzalisha WordPress AI Client SDK na ambazo zina jinsi ya token katika metadata ya majibu. Hii inajumuisha familia ya Ultimate Multisite AI connector iliyodokumentishwa hapa:
 
@@ -65,13 +65,13 @@ Malipo ya token za AI yanafanya kazi na connectors zinazotoa matukio ya kuzalish
 
 Connectors maalum zinaweza kushiriki kwa kutuma matukio ya kawaida ya `wp_ai_client_before_generate_result` na `wp_ai_client_after_generate_result` na metadata ya mfumo, mtoa huduma, na matumizi ya tokens. Mipangilio ya connector inazimwa kutoka kwa tovuti kuu hadi subsites ili tovuti za wateja zitumie watoaji na mipaka iliyoidhinishwa na mtandao.
 
-### Matumizi ya Akaunti ya Mteja
+### Matumizi ya Akaunti ya Mteja {#customer-account-usage}
 
 Wateja wanaona matumizi ya AI pamoja na rasilimali zao zingine zinazopimwa katika eneo lao la akaunti. Safu ya AI spend inaonyesha jumla ya kipindi cha malipo kwa sasa iliyopatikana kutoka kwa tokens zilizorekodiwa za prompt na kukamilisha, viwango vya mfumo vilivyowekwa, na ruhusa yoyote iliyojumuishwa kwenye mpango.
 
 Ikiwa mteja ana njia ya malipo iliyohifadhiwa, matumizi yanayozidi ruhusa iliyojumuishwa yanatibiwa kama matumizi zaidi yanayoweza kulipwa. Ikiwa mpango umeandaliwa kwa kukatwa kwa nguvu (hard cutoff) na mteja hana njia ya malipo inayopatikana, maombi ya AI yanaweza kuzuilika mara tu ruhusa imefikiwa na mteja anapohimizwa kuongeza maelezo ya malipo kabla ya kuendelea.
 
-## Rasilimali Zinazounga Mkono
+## Rasilimali Zinazounga Mkono {#supported-resources}
 
 * Hifadhi ya disk
 * Bandwidth/Uhamisho wa data
@@ -80,13 +80,13 @@ Ikiwa mteja ana njia ya malipo iliyohifadhiwa, matumizi yanayozidi ruhusa iliyoj
 * Matumizi ya token za AI na matumizi ya AI spend
 * Aina maalum za rasilimali
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 * Multisite Ultimate 2.0.0 au zaidi
 * Usakinishaji wa WordPress Multisite
 * PHP 7.4 au zaidi
 
-## Usakinishaji
+## Usakinishaji {#installation}
 
 1. Pakia faili za plugin kwenye `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Washa plugin kupitia skrini ya 'Plugins' katika WordPress
@@ -94,24 +94,24 @@ Ikiwa mteja ana njia ya malipo iliyohifadhiwa, matumizi yanayozidi ruhusa iliyoj
 4. Sanifisha rasilimali zako zinazopimwa na bei
 5. Washa malipo yanayopimwa kwa bidhaa katika kuhariri bidhaa
 
-## Maswali Yanayoulizwa Mara kwa Mara
+## Maswali Yanayoulizwa Mara kwa Mara {#frequently-asked-questions}
 
-## Nini kinatokea wakati mteja anapozidi mipaka yake?
+## Nini kinatokea wakati mteja anapozidi mipaka yake? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Badala ya kuzuia ufikiaji, mfumo unafuatilia matumizi zaidi na kuongeza kwenye ankara yake inayofuata kulingana na viwango uliyoweka.
 
-## Je, naweza kuweka viwango tofauti vya matumizi zaidi kwa bidhaa tofauti?
+## Je, naweza kuweka viwango tofauti vya matumizi zaidi kwa bidhaa tofauti? {#can-i-set-different-overage-rates-for-different-products}
 
 Ndiyo, kila bidhaa inaweza kuwa na rasilimali zinazopimwa na bei ya matumizi zaidi tofauti.
 
-## Wateja wanapofahamishwa kuhusu matumizi vipi?
+## Wateja wanapofahamishwa kuhusu matumizi vipi? {#how-are-customers-notified-about-usage}
 
 Wateja wanaweza kuona matumizi yao ya sasa kwenye dashibodi yao na kupokea arifa za hiari wanapokaribia au kupita mipaka.
 
-## Matumizi ya token za AI yanapopangwa bei vipi?
+## Matumizi ya token za AI yanapopangwa bei vipi? {#how-is-ai-token-usage-priced}
 
 Matumizi ya token za AI yanapangwa bei kutoka kwa viwango vilivyowekwa vya kuingiza na kuondoa vya mfumo kwa token milioni moja. Metered Plans inazidisha idadi ya tokens za prompt na kukamilisha za kila ombi kwa viwango hivyo, kuongeza matokeo kwenye matumizi ya AI spend ya kipindi cha malipo cha sasa cha mteja, na kutumia ruhusa ya mpango au sheria za matumizi zaidi.
 
-## Je, bado naweza kutumia mipaka mikali?
+## Je, bado naweza kutumia mipaka mikali? {#can-i-still-use-hard-limits}
 
 Ndiyo, malipo yanayopimwa ni ya hiari kwa kila bidhaa. Unaweza kuchanganya bidhaa za mipaka mikali za jadi na bidhaa zinazopimwa.

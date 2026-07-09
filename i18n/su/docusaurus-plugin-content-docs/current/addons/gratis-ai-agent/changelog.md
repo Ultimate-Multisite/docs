@@ -3,11 +3,11 @@ title: Changelog
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Daptar Parobahan
+# Daptar Parobahan {#changelog}
 
-## 1.9.0 — Dileupaskeun dina 2026-04-28
+## 1.9.0 — Dileupaskeun dina 2026-04-28 {#190--released-on-2026-04-28}
 
-### Anyar
+### Anyar {#new}
 
 - **`create_contact_form` ability** — nyieun formulir kontak maké plugin formulir anu aktip (Contact Form 7, WPForms, Fluent Forms, atawa Gravity Forms) sarta mulangkeun shortcode anu siap disisipkeun dina tulisan atawa kaca naon waé.
 - **`set_featured_image` ability** — netepkeun gambar unggulan ka hiji tulisan atawa kaca tina ID lampiran Media Library anu geus aya atawa URL jauh; otomatis ngimpor gambar lamun URL disayagikeun.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Balikkeun sési panungtung** — panel obrolan ayeuna otomatis ngamuat deui paguneman panganyarna nalika kaca dimuat jeung nalika widget dibuka, jadi kontéks moal leungit dina navigasi kaca.
 - **Tumbu tindakan plugin** — tumbu gancang ka Setélan jeung Registri Kamampuh ayeuna mucunghul dina layar WordPress **Plugin → Plugin Dipasang** di handapeun déskripsi plugin.
 
-### Ditingkatkeun
+### Ditingkatkeun {#improved}
 
 - **Ulangan sumber gambar** — agén ayeuna nyobian deui sakabéh sumber gambar gratis anu dikonpigurasikeun saméméh balik ka gambar anu dihasilkeun ku AI lamun unduhan gagal.
 - **Panel info modél** — sok katingali dina lulugu obrolan; henteu deui disumputkeun sanggeus pesen kahiji.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Desain ulang widget obrolan** — ikon AI ngahiji ngagantikeun avatar kustom saméméhna; konsisten jeung sistem agén bawaan.
 - **Linkifikasi URL** — URL anu mucunghul dina pesen sistem jeung gelembung pesen kasalahan ayeuna dirender salaku tumbu anu bisa diklik.
 
-### Dibereskeun
+### Dibereskeun {#fixed}
 
 - **Kamampuh kapanggihna ability** — ngabenerkeun déskripsi, rujukan system prompt, jeung panyaluyuan namespace sangkan sakabéh ability mucunghul dina daptar alat agén kalayan andal.
 - **Cache panyadia** — panyadia ayeuna dicache sapanjang situs liwat counter vérsi, nyegah masalah panyadia basi dina jaringan multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Dileupaskeun dina 2026-04-09
+## 1.4.0 — Dileupaskeun dina 2026-04-09 {#140--released-on-2026-04-09}
 
-### Anyar
+### Anyar {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — ngajalankeun Agent Capabilities v1 benchmark suite tina command line pikeun CI pipelines jeung alur gawé évaluasi modél. Ngadukung ngajalankeun per-patarosan, override panyadia/modél, jeung kaluaran JSON/CSV.
 - **Agent Capabilities v1 benchmark suite** — sakumpulan prompt kompléks multi-léngkah anu terstruktur pikeun nguji sakabéh widang kamampuhan, kalawan skor jeung laporan token/durasi.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Patarosan benchmark ramatloka réstoran** (`q-restaurant-website`) — tés ti mimiti nepi ka réngsé anu ngawengku registrasi CPT, sistem desain, navigasi, jeung pamanggihan plugin.
 - **Plugin panyambung panyadia AI** ditambahkeun kana blueprint WordPress Playground pikeun setelan pamekaran lokal anu leuwih gancang.
 
-### Ditingkatkeun
+### Ditingkatkeun {#improved-1}
 
 - README diropéa ku dokuméntasi panyambung panyadia AI jeung parentah setelan.
 
-### Dibereskeun
+### Dibereskeun {#fixed-1}
 
 - 25 gagal tés PHPUnit dina cabang `main` geus direngsekeun.
 - Format URL rilis GitHub dina `blueprint.json` dibenerkeun.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Catetan rilis saméméhna dijaga dina repository plugin._

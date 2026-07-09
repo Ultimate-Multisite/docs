@@ -4,11 +4,11 @@ title: 'Аракет - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 Плагин иштеп чыгуучуларга Тармак Dashboard панелине виджеттерди кошууга уруксат берет.
 
-## Параметрлер
+## Параметрлер {#parameters}
 
 | Аты | Түрү | Сүрөттөмө |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 375d02727169a29da6237374f0ad979a
 | $screen | `\WP_Screen` | Экран объекти. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ultimate Multisite админ барагынын нускасы. |
 
-### Чыгарылган версиясы
+### Чыгарылган версиясы {#since}
 
 - 2.0.0
-### Булак
+### Булак {#source}
 
 [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) ичинде 214-сапта аныкталган

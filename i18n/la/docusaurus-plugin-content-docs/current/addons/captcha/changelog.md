@@ -3,7 +3,7 @@ title: Captcha Diarium mutationum
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Index Mutationum
+# Captcha Index Mutationum {#captcha-changelog}
 
 Versio: 1.5.0 - Emissa die 2026-05-22
 * Novum: Limitator frequentiae sistens — numerat omne GET et POST in superficiebus captcha-protectis (wp-login / register / lost-password / commentaria, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) et respondet cum HTTP 429, capite `Retry-After`, et mora tarpit fortuita (1–5s, limite duro ad 15s).

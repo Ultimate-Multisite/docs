@@ -4,11 +4,11 @@ title: 'Filter - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_{$type}_get_manage_url
+# Filter: wu_current_{$type}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Lar utviklere endre parameterne for administrasjons-URL-en til nettstedet.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Lar utviklere endre parameterne for administrasjons-URL-en til nettstedet.
 | $id | `int` | ID-en til nettstedet. |
 | $site_hash | `string` | Hashen til nettstedet. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.9
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) på linje 214
 
 
-## Returnerer
+## Returnerer {#returns}
 Den modifiserte administrasjons-URL-en.

@@ -3,7 +3,7 @@ title: VAT üýtgeşmeler taryhy
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT Üýtgeşmeler žurnaly
+# VAT Üýtgeşmeler žurnaly {#vat-changelog}
 
 Wersiýa 1.0.7 - 2026-02-03 senesinde çykaryldy
 

@@ -4,11 +4,11 @@ title: Филтер - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Филтер: wu_pre_save_settings
+# Филтер: wu_pre_save_settings {#filter-wupresavesettings}
 
 Омогућава програмерима да филтрирају подешавања пре него што их Ultimate Multisite сачува.
 
-## Параметри
+## Параметри {#parameters}
 
 | Назив | Тип | Опис |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 | $settings_to_save | `array` | Нова подешавања која треба додати. |
 | $saved_settings | `array` | Тренутно сачувана подешавања. |
 
-### Од верзије
+### Од верзије {#since}
 
 - 2.0.18
-### Извор
+### Извор {#source}
 
 Дефинисано у [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) у реду 296

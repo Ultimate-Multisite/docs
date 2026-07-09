@@ -4,11 +4,11 @@ title: Sefa - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Sefa: wu_apc_get_meta
+# Sefa: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Bvumira vagadziri kusefa makoshi ekupedzisira, uye kuwedzera nyaya itsva dzekugadzirisa.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Mhando | Tsananguro |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Bvumira vagadziri kusefa makoshi ekupedzisira, uye kuwedzera nyaya itsva dzekuga
 | $meta_type | `string` | Mhando ye meta data ichatorwa. |
 | $meta_key | `string` | Zita re meta field. |
 
-### Kubva
+### Kubva {#since}
 
 - 1.4.0
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) pamutsetse 93
 
 
-## Zvinodzoka
+## Zvinodzoka {#returns}
 Ukoshi hutsva hwekutanga.

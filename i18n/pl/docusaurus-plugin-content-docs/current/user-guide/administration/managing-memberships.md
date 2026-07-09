@@ -3,7 +3,7 @@ title: Zarządzanie członkostwami
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Zarządzanie członkostwami
+# Zarządzanie członkostwami {#managing-memberships}
 
 W Ultimate Multisite możesz zarządzać członkostwami i uzyskiwać dostęp do wszystkich subskrypcji w swojej sieci. Przeglądaj i edytuj szczegóły subskrypcji, takie jak plany i produkty, liczba witryn, kwota i częstotliwość rozliczeń, historia płatności oraz znaczniki czasu.
 

@@ -3,9 +3,9 @@ title: Почетак развоја Addon-а
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Развој додатака
+# Развој додатака {#addon-development}
 
-## Структура додатка
+## Структура додатка {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Датотеке шаблона
 ```
 
-## Шаблон главне датотеке додатка
+## Шаблон главне датотеке додатка {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Пример прилагођеног модела
+## Пример прилагођеног модела {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Интеграција администраторске странице
+## Интеграција администраторске странице {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Тестирање вашег додатка
+## Тестирање вашег додатка {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Тачке проширења v2.13.0
+## Тачке проширења v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 додаје неколико тачака проширења које су корисне за додатке који се интегришу са сувереним закупцима, доменима за наплату или DNS аутоматизацијом провајдера хостинга.
 
-### URL-ови за SSO и управљање главним сајтом
+### URL-ови за SSO и управљање главним сајтом {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Основни домени обрасца за наплату
+### Основни домени обрасца за наплату {#checkout-form-base-domains}
 
 Користите `wu_checkout_form_base_domains` када ваш додатак обезбеђује додатне дељене основне домене који треба да се понашају као домени **URL сајта** обрасца за наплату уместо прилагођених мапирања по сајту:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite нормализује ове хостове и прескаче аутоматске записе мапираних домена по сајту за њих.
 
-### Аутоматско креирање записа домена
+### Аутоматско креирање записа домена {#automatic-domain-record-creation}
 
 Користите `wu_should_create_domain_record_for_site` када ваш додатак треба да потисне или одложи аутоматско креирање записа домена за новокреирани сајт:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Интеграције провајдера хостинга које слушају `wu_add_subdomain` могу да креирају DNS записе на страни провајдера када се сајтови креирају. Ако ниједна интеграција није регистрована за ту радњу, Ultimate Multisite прескаче празан позадински задатак.
 
-## Следећи кораци
+## Следећи кораци {#next-steps}
 
 - Прегледајте [Референцу hook-ова](/developer/hooks) за доступне радње и филтере
 - Проверите [Преглед REST API-ја](/developer/rest-api/overview) за API интеграцију

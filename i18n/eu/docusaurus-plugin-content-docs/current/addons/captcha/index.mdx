@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Gelditu bot-ak. Babestu diru-sarrerak. Konfigurazio-arazorik gabe.**
 
@@ -15,7 +15,7 @@ Domeinu pertsonalizatuekin multisite sare bat kudeatzen? Badakizu zer mina den: 
 
 **Ultimate Multisite: Captcha-k dena aldatzen du.**
 
-## Cap Captcha: norberak ostatatutako babesa, besterik gabe funtzionatzen duena
+## Cap Captcha: norberak ostatatutako babesa, besterik gabe funtzionatzen duena {#cap-captcha-self-hosted-protection-that-just-works}
 
 Gure **Cap Captcha** hornitzaile berria multisite sareetarako erabateko aldaketa da:
 
@@ -25,7 +25,7 @@ Gure **Cap Captcha** hornitzaile berria multisite sareetarako erabateko aldaketa
 * **Proof-of-Work ikusezina** — Erabiltzaileek kalkulu-erronka bat ebazten dute atzeko planoan. Ez su-hidranteetan klik egitea, ez irudi-sare etsigarririk.
 * **Arina** — 20KB besterik ez. Ez du zure checkout-a motelduko.
 
-## WooCommerce txartelen probaketen aurkako babesa
+## WooCommerce txartelen probaketen aurkako babesa {#woocommerce-card-testing-protection}
 
 Txartelen probaketa-erasoek milaka milioi kostatzen dizkiete merkatariei urtero. Iruzurgileek bot-ak erabiltzen dituzte lapurtutako kreditu-txartelak zure WooCommerce checkout-aren aurka baliozkotzeko—zuk prozesatze-komisioak ordaintzen dituzu, eta haiek txartel-zenbaki baliodunak lortzen dituzte.
 
@@ -35,7 +35,7 @@ Txartelen probaketa-erasoek milaka milioi kostatzen dizkiete merkatariei urtero.
 * **PayPal Payments bateragarria** — WooCommerce PayPal Payments-ekin arazorik gabe funtzionatzen du
 * **Denbora errealeko estatistikak** — Ikusi zehazki zenbat eraso blokeatzen ari zaren
 
-## Oraindik Google reCAPTCHA edo hCaptcha behar duzu?
+## Oraindik Google reCAPTCHA edo hCaptcha behar duzu? {#still-need-google-recaptcha-or-hcaptcha}
 
 Babestuta zaude. Honako hauetarako euskarri osoa:
 
@@ -47,14 +47,14 @@ Babestuta zaude. Honako hauetarako euskarri osoa:
 
 Aldatu hornitzaileen artean noiznahi zure sarearen ezarpenetatik.
 
-## Eskalarako eraikia
+## Eskalarako eraikia {#built-for-scale}
 
 * Sare osorako ezarpenak, gune bakoitzeko gainidazketekin
 * Babesa monitorizatzeko estatistiken dashboard-a
 * Doitu daitezkeen segurtasun-mailak (Azkarra, Ertaina, Gehienezkoa)
 * Garatzaileentzat egokia, hedagarria den hornitzaile-arkitekturarekin
 
-## Instalazioa
+## Instalazioa {#installation}
 
 1. Kargatu `ultimate-multisite-captcha` zure `/wp-content/plugins/` direktoriora
 2. Network Activate plugin-a
@@ -64,37 +64,37 @@ Cap Captcha automatikoki aktibatzen da—ez konfiguratzeko ezarpenik, ez sartzek
 
 **Aukerakoa:** Horren ordez Google reCAPTCHA edo hCaptcha erabiltzeko, joan **Ultimate Multisite → Settings → Captcha** atalera eta hautatu nahi duzun hornitzailea.
 
-## Maiz egiten diren galderak
+## Maiz egiten diren galderak {#frequently-asked-questions}
 
-## Zerbait konfiguratu behar dut?
+## Zerbait konfiguratu behar dut? {#do-i-need-to-configure-anything}
 
 Ez! Cap Captcha automatikoki gaitzen da addon-a aktibatzen duzunean. Zure sare osoa berehala babestuta dago—ez konfiguratzeko ezarpenik, ez sartzeko API gakorik.
 
-## Cap Captcha-rako API gakoak behar ditut?
+## Cap Captcha-rako API gakoak behar ditut? {#do-i-need-api-keys-for-cap-captcha}
 
 Ez. Cap Captcha erabat norberak ostatatua da. Ez kanpoko konturik, ez domeinu-erregistrorik, ez konfigurazio-buruko minik.
 
-## Honek nire checkout-a motelduko du?
+## Honek nire checkout-a motelduko du? {#will-this-slow-down-my-checkout}
 
 Cap Captcha 20KB besterik ez da, eta proof-of-work erronkak atzeko planoan exekutatzen ditu. Zure bezeroek ez dute inolako atzerapenik nabarituko.
 
-## Honek txartelen probaketa-erasoen aurka babesten du?
+## Honek txartelen probaketa-erasoen aurka babesten du? {#does-this-protect-against-card-testing-attacks}
 
 Bai! HTML formularioak bakarrik babesten dituzten ohiko captcha-ek ez bezala, gure WooCommerce integrazioa zuzenean Store API-ra konektatzen da, bot-erasoak API mailan blokeatzeko—txartelen probaketa-eraso gehienak gertatzen diren lekuan.
 
-## Gune desberdinetan captcha hornitzaile desberdinak erabil ditzaket?
+## Gune desberdinetan captcha hornitzaile desberdinak erabil ditzaket? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Captcha hornitzailea sare osorako ezartzen da, baina zailtasun-ezarpenak zure beharren arabera doi ditzakezu.
 
-## Hau GDPR bateragarria al da?
+## Hau GDPR bateragarria al da? {#is-this-gdpr-compliant}
 
 Cap Captcha %100 norberak ostatatua da, eta ez du daturik kanpoko zerbitzuetara bidaltzen. Google reCAPTCHA eta hCaptcha-rako, berrikusi haien pribatutasun-politikak.
 
-## Tasa-mugaketa
+## Tasa-mugaketa {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0-k zure sarea indar gordineko eta txartel-probaketako erasoetatik babesten duen geldialdi gogorreko tasa-mugatzaile bat sartzen du.
 
-### Nola funtzionatzen duen
+### Nola funtzionatzen duen {#how-it-works}
 
 Tasa-mugatzaileak captcha bidez babestutako gainazaletako GET eta POST eskaera guztiak zenbatzen ditu:
 
@@ -108,9 +108,9 @@ Bisitari batek tasa-muga gainditzen duenean, plugin-ak honela erantzuten du:
 * **Retry-After** header-a, berriro noiz saiatu adieraziz
 * **Ausazko tarpit loaldia** (1–5 segundo lehenespenez, 15 segundoko muga gogorrarekin) erasotzaileak moteltzeko
 
-### Konfigurazioa
+### Konfigurazioa {#configuration}
 
-#### Tarpit denbora
+#### Tarpit denbora {#tarpit-timing}
 
 Kontrolatu tasa-mugatutako eskaerei aplikatzen zaien ausazko atzerapena:
 
@@ -119,9 +119,9 @@ Kontrolatu tasa-mugatutako eskaerei aplikatzen zaien ausazko atzerapena:
 
 Ezarpen hauek **Ultimate Multisite → Settings → Captcha** atalean daude eskuragarri.
 
-### Hedagarritasuna
+### Hedagarritasuna {#extensibility}
 
-#### IP zerrenda zuriaren iragazkia
+#### IP zerrenda zuriaren iragazkia {#ip-whitelist-filter}
 
 Salbuetsi fidagarriak diren IP tarteak tasa-mugaketatik:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Blokeatu aurreko ekintza
+#### Blokeatu aurreko ekintza {#pre-block-action}
 
 Exekutatu logika pertsonalizatua tasa-mugako bloke bat bidali baino berehala lehenago:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Bezeroaren IP detekzioa eta proxy fidagarriak
+## Bezeroaren IP detekzioa eta proxy fidagarriak {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0-k spoofing-arekiko erresistentea den bezero-IP detekzioa sartzen du. `Captcha_Core::get_client_ip()` metodoa da orain bisitarien IP esleipenerako egia-iturri bakarra honako hauetan:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0-k spoofing-arekiko erresistentea den bezero-I
 * Captcha hornitzailearen `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Estatistiken IP hashak
 
-### Konfiantza-eredua
+### Konfiantza-eredua {#trust-model}
 
 Pluginak IP konfiantzaren hierarkia zorrotza ezartzen du:
 
@@ -166,9 +166,9 @@ Pluginak IP konfiantzaren hierarkia zorrotza ezartzen du:
    - Berehalako parekoa administratzaileak konfiguratutako proxy fidagarrien zerrendan badago
    - Goiburua eskuinetik ezkerrera analizatzen bada, proxy/Cloudflare jauzi fidagarriak saltatuz
 
-### Konfigurazioa
+### Konfigurazioa {#configuration-1}
 
-#### Cloudflare goiburuaren konfiantza
+#### Cloudflare goiburuaren konfiantza {#cloudflare-header-trust}
 
 Gaitu Cloudflare-ren `CF-Connecting-IP` goiburuarekiko konfiantza:
 
@@ -178,7 +178,7 @@ Gaitu Cloudflare-ren `CF-Connecting-IP` goiburuarekiko konfiantza:
   - CIDR tarteak astero freskatzen dira wp-cron bidez
   - Bateratutako ordezkoa erabiltzen da freskatzeak huts egiten badu
 
-#### Proxy fidagarrien konfigurazioa
+#### Proxy fidagarrien konfigurazioa {#trusted-proxy-configuration}
 
 Definitu zure aurrealdeko proxyak eta karga-orekatzaileak:
 
@@ -194,14 +194,14 @@ Definitu zure aurrealdeko proxyak eta karga-orekatzaileak:
     198.51.100.50
     ```
 
-#### Lehen gaitzean detekzio automatikoa
+#### Lehen gaitzean detekzio automatikoa {#first-enable-auto-detection}
 
 Tasa-mugatzailea lehen aldiz gaitzen duzunean, pluginak zure Cloudflare eta proxy egoera probablea detektatzen du eta klik bakarreko "Aplikatu detektatutako ezarpenak" administrazio-oharra erakusten du.
 
 * Pluginak **ez ditu inoiz gainidazten** gordetako zure balioak
 * Ondorengo trafikoak zure konfigurazioa errealitatearekin bat ez datorrela iradokitzen badu (adibidez, Cloudflare-k CIDR tarteak aldatu baditu), baztertu ezin den desadostasun-ohar batek gomendatutako eguneraketa erakusten du
 
-### Zergatik den garrantzitsua
+### Zergatik den garrantzitsua {#why-this-matters}
 
 IP konfiantza-eredu zorrotz batek faltsutze-bektore kritiko bat ixten du: `CF-Connecting-IP` goiburu faltsutu bat daramaten jatorri-zerbitzarirako eskaera zuzenak lehen IP faltsutuaren arabera bucket batean sartuko ziren, benetako parekoaren ordez. Hau bereziki garrantzitsua da honetarako:
 

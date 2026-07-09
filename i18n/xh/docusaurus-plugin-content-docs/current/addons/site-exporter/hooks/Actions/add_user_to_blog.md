@@ -4,11 +4,11 @@ title: Isenzo - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Isenzo: add_user_to_blog
+# Isenzo: add_user_to_blog {#action-addusertoblog}
 
 Senzeka ngoko nangoko emva kokuba umsebenzisi efakwe kwisiza.
 
-## Iiparamitha
+## Iiparamitha {#parameters}
 
 | Igama | Uhlobo | Inkcazelo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Senzeka ngoko nangoko emva kokuba umsebenzisi efakwe kwisiza.
 | $role | `string` | Indima yomsebenzisi. |
 | $blog_id | `int` | ID yebhlogi. |
 
-### Ukususela
+### Ukususela {#since}
 
 - MU: MU
-### Umthombo
+### Umthombo {#source}
 
 Ichazwe kwi-[`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) kumgca 174

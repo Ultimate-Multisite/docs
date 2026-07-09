@@ -3,7 +3,7 @@ title: Πώς να Εγκαταστήσετε το WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Πώς εγκαθιστώ το WordPress Multisite;
+# Πώς εγκαθιστώ το WordPress Multisite; {#how-do-i-install-wordpress-multisite}
 
 Το WordPress Multisite σου επιτρέπει να έχεις ένα δίκτυο ιστοσελίδων σε μία μόνο εγκατάσταση. Πρόκειται για μια ενσωματωμένη λειτουργία, αλλά δεν είναι ενεργοποιημένη από προεπιλογή.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 Αφού συμπληρώσεις τα πεδία, κάνε κλικ στο κουμπί "Προσθήκη ιστοσελίδας". Μόλις δημιουργηθεί το νέο subsite, προχώρησε και επισκέψου το για να βεβαιωθείς ότι λειτουργεί σωστά.
 
-## Συνηθισμένα Προβλήματα:
+## Συνηθισμένα Προβλήματα: {#common-problems}
 
-### 1\. Μπορώ να δημιουργήσω νέες ιστοσελίδες αλλά δεν είναι προσβάσιμες.
+### 1\. Μπορώ να δημιουργήσω νέες ιστοσελίδες αλλά δεν είναι προσβάσιμες. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Αν επέλεξες subdomains, πρέπει επίσης να ρυθμίσεις wildcard subdomains για το δίκτυο multisite σου.
 

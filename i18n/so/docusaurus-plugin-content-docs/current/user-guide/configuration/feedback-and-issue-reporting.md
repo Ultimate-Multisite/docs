@@ -3,11 +3,11 @@ title: Faahfaahin iyo Warbixin Suurtagalka Macmiilka
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Warbixinta Macnaha Macaamihii iyo Warbixinta Dhibaatooyinka
+# Warbixinta Macnaha Macaamihii iyo Warbixinta Dhibaatooyinka {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 wuxuu soo bandhigay nidaam la dhisay oo lagu bixiyo warbixinta macnaha iyo dhibaatooyinka, kaas oo u oggolaanaya isticmaalayaasha ugu dambayska inay calaamadeyn ku jawaabaha aan caawinayn oo ay si toos ah uga warbixiyaan interface-ka wada hadalka. Nidaamkan waxaa ka mid ah maamulka oggolaanshaha (consent management), amarka warbixinta oo automatigueed, iyo kala qaadista AI-ga ee dhanka dambe (backend).
 
-## Badhka "Thumbs-Down" (Ka Duubka)
+## Badhka "Thumbs-Down" (Ka Duubka) {#thumbs-down-button}
 
 Qayb kasta oo uu bixiyo agabka caawiyaha AI-ga waxaa ku yaalla badhan **thumbs-down** (👎). Marka isticmaaluhu gujiyeeyo, waxay samayn karaan jawaabta inay tahay mid aan caawinayn ama mid khaldan.
 
@@ -15,7 +15,7 @@ Qayb kasta oo uu bixiyo agabka caawiyaha AI-ga waxaa ku yaalla badhan **thumbs-d
 - Gujinta badhka waxay furaysaa **Feedback Consent Modal** (Modal-ka Oggolaanshaha Macnaha).
 - Macnaha ayaa la xiriira dhanka wada hadalka iyo qoraalka gaarka ah ee jawaabta.
 
-## Feedback Consent Modal (Modal-ka Oggolaanshaha Macnaha)
+## Feedback Consent Modal (Modal-ka Oggolaanshaha Macnaha) {#feedback-consent-modal}
 
 Marka isticmaaluhu gujiyeeyo badhka thumbs-down, modal-ka oggolaanshaha ayaa soo muuqda ka hor inta aan la dirin wax data ah. Modal-ku wuxuu:
 
@@ -26,13 +26,13 @@ Marka isticmaaluhu gujiyeeyo badhka thumbs-down, modal-ka oggolaanshaha ayaa soo
 
 Ma jirto warbixin la diiwaangeliyo ilaa isticmaaluhu si cad u xaqiijiyo.
 
-## Auto-Prompt Feedback Banner (Bannarka Warbixinta Tooska ah)
+## Auto-Prompt Feedback Banner (Bannarka Warbixinta Tooska ah) {#auto-prompt-feedback-banner}
 
 Marka la dhammaado wada hadalka, caawiyaha ayaa laga yaabaa inuu soo bandhigo **auto-prompt feedback banner** — fariin aan si xoog leh u ah oo weydiinaysa maalinaysay session-ku mid caawin ah.
 
 Bannarkaasi wuxuu si toos ah ugu soo muuqdaa iyadoo ku xiran habka wada hadalka iyo natiijada uu ka dhashay. Wuxuu la xiriira habka warbixinta ee badhka thumbs-down. Isticmaalayaasha waxay ka xirayaan bannarka iyadoon bixin macnaha.
 
-## /report-issue Slash Command (Amarka "Slash Command")
+## /report-issue Slash Command (Amarka "Slash Command") {#report-issue-slash-command}
 
 Isticmaalayaasha waxay si toos ah u dhaqmi karaan habka warbixinta adigoo qoraya `/report-issue` gudaha meesha lagu qoraa wada hadalka. Amarkani wuxuu:
 
@@ -42,7 +42,7 @@ Isticmaalayaasha waxay si toos ah u dhaqmi karaan habka warbixinta adigoo qoraya
 
 Amarka `/report-issue` waxaa loo isticmaali karaa dhammaan qaababka wada hadalka (inline, floating widget, full-screen).
 
-## AI-Assisted Triage (Talaabooyinka AI-ga caawinaya)
+## AI-Assisted Triage (Talaabooyinka AI-ga caawinaya) {#ai-assisted-triage}
 
 Macluumaadka la soo gudbiyay ayaa loo diraya heer kala saarista (triage layer) oo ah AI kaas oo:
 

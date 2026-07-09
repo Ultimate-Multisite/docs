@@ -3,11 +3,11 @@ title: Таҳияи шлюзи фармоишӣ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Таҳияи Gateway фармоишӣ
+# Таҳияи Gateway фармоишӣ {#custom-gateway-development}
 
 Шумо метавонед gateway-ҳои пардохтии фармоиширо бо васеъ кардани синфи `Base_Gateway` эҷод кунед.
 
-## Синфи Gateway
+## Синфи Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Сабти Gateway
+## Сабти Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Усулҳои калидӣ
+## Усулҳои калидӣ {#key-methods}
 
 | Усул | Мақсад |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Коркарди дархостҳои баргардонидани маблағ |
 | `get_payment_methods()` | Баргардонидани усулҳои пардохти захирашуда барои муштарӣ |
 
-## Маълумоти эътибории навсозӣ барои узвиятҳои даврӣ
+## Маълумоти эътибории навсозӣ барои узвиятҳои даврӣ {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ба интегратсияҳои gateway имкон медиҳад гузориш диҳанд, ки оё узвияти даврӣ пеш аз захира шудани `auto_renew` маълумоти эътибории навсозии такроран истифодашаванда дорад ё не. `wu_membership_has_renewal_credential`-ро hook кунед ва баргардонед:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Нишонаи маълумоти эътибории гумшударо ҳамчун қисми ҷараёни бомуваффақияти иҷозатдиҳии дубораи gateway-и худ пас аз захира шудани маълумоти эътибории нави такроран истифодашаванда тоза кунед.
 
-## Маслиҳатҳо
+## Маслиҳатҳо {#tips}
 
 - Ҳангоми нокомӣ ҳамеша `WP_Error` баргардонед, то Ultimate Multisite тавонад намоиши хаторо коркард кунад
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Барои сабти рӯйдодҳои махсуси gateway аз `wu_log_add()` истифода баред
 
-## Қобилиятҳои провайдери пайвасткунандаи AI
+## Қобилиятҳои провайдери пайвасткунандаи AI {#ai-connector-provider-capabilities}
 
 Интегратсияҳои фармоишӣ, ки амалиётҳои пуштибонишудаи пайвасткунандаи AI-ро даъват мекунанд, бояд бо маҷмӯи провайдерҳои дастгиришавандаи OAuth, ки бо AI Provider for Anthropic Max v1.3.0 ҷорӣ шудааст, ҳамоҳанг бошанд:
 

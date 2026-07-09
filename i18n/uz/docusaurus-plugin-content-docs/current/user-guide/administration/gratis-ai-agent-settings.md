@@ -3,16 +3,16 @@ title: Gratis AI Agent Sozlamalari
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent sozlamalari
+# Gratis AI Agent sozlamalari {#gratis-ai-agent-settings}
 
 Gratis AI Agent ichidagi **Settings → Advanced** ekrani backend integratsiyalari uchun administrator darajasidagi konfiguratsiyani taqdim etadi. Bu sahifa feedback yo‘naltirish, qidiruv provayderi kalitlari, boshqariladigan Superdav xizmati sozlamasi, Google Calendar boshqaruvlari, TextBee SMS sozlamalari va butun tarmoq bo‘yicha feature flaglarni hujjatlashtiradi.
 
-## Sozlamalarga kirish
+## Sozlamalarga kirish {#accessing-settings}
 
 1. WordPress administratori bo‘limida **Gratis AI Agent → Settings** ga o‘ting.
 2. **Advanced** yorlig‘ini bosing.
 
-## Feedback endpoint konfiguratsiyasi
+## Feedback endpoint konfiguratsiyasi {#feedback-endpoint-configuration}
 
 Feedback endpoint AI agent foydalanuvchi thumbs-down tugmasi, auto-prompt banner yoki `/report-issue` buyrug‘i orqali feedback yuborganida POST so‘rovlarini qabul qiladi.
 
@@ -21,7 +21,7 @@ Feedback endpoint AI agent foydalanuvchi thumbs-down tugmasi, auto-prompt banner
 | **Feedback Endpoint URL** | Feedback yuborishlarini JSON tanasi bilan HTTP POST so‘rovlari sifatida qabul qiladigan URL. |
 | **Feedback API Key** | Har bir feedback so‘rovining `Authorization` headerida yuboriladigan bearer token. Agar endpoint autentifikatsiya talab qilmasa, bo‘sh qoldiring. |
 
-### Kutiladigan JSON payload
+### Kutiladigan JSON payload {#expected-json-payload}
 
 Feedback endpoint kamida quyidagi maydonlarga ega JSON tanasini qabul qilishi kerak:
 
@@ -36,7 +36,7 @@ Feedback endpoint kamida quyidagi maydonlarga ega JSON tanasini qabul qilishi ke
 
 Payload ichida suhbat kontekstiga qarab qo‘shimcha maydonlar bo‘lishi mumkin.
 
-### `triage_category` qiymatlari
+### `triage_category` qiymatlari {#triagecategory-values}
 
 AI triage qatlami payloadni yo‘naltirishdan oldin `triage_category` uchun quyidagi qiymatlardan birini belgilaydi:
 
@@ -47,7 +47,7 @@ AI triage qatlami payloadni yo‘naltirishdan oldin `triage_category` uchun quyi
 | `inappropriate_content` | Javobda foydalanuvchilarga ko‘rsatilmasligi kerak bo‘lgan kontent bor edi. |
 | `other` | Feedback ma’lum toifaga mos kelmadi. |
 
-### Autentifikatsiya
+### Autentifikatsiya {#authentication}
 
 Agar endpoint autentifikatsiya talab qilsa, **Feedback API Key** maydonini bearer tokeningizga sozlang. Agent quyidagilarni yuboradi:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Agar **Feedback API Key** maydoni bo‘sh bo‘lsa, `Authorization` header yuborilmaydi.
 
-### Feedback yig‘ishni o‘chirish
+### Feedback yig‘ishni o‘chirish {#disabling-feedback-collection}
 
 **Feedback Endpoint URL** va **Feedback API Key** maydonlarining ikkalasini ham bo‘sh qoldiring. Thumbs-down tugmasi va feedback UI foydalanuvchilarga ko‘rinishda qoladi, lekin yuborishlar hech qanday tashqi xizmatga yo‘naltirilmaydi.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Shuningdek **Advanced** yorlig‘ida **Brave Search API Key** maydoni [Internet Search](../configuration/internet-search) imkoniyatini yoqadi.
 
@@ -73,7 +73,7 @@ Maydon yorlig‘i Brave Search API ro‘yxatdan o‘tish sahifasiga bosiladigan 
 
 Bu xususiyat bo‘yicha oxirgi foydalanuvchi hujjatlari uchun [Internet Search](../configuration/internet-search) ga qarang.
 
-## Boshqariladigan Superdav xizmati
+## Boshqariladigan Superdav xizmati {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 qo‘llab-quvvatlanadigan saytlar uchun boshqariladigan Superdav xizmati endpointlarini va avtomatik ulanish tayyorlashni qo‘shadi. Saytingiz qo‘lda sozlangan xizmat endpointi o‘rniga hosting qilingan provayderga ulanishi kerak bo‘lsa, ushbu boshqaruvlardan foydalaning.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 qo‘llab-quvvatlanadigan saytlar uchun boshqariladiga
 
 Tayyorlashdan keyin sozlamalarni saqlang va boshqariladigan xizmat workflowlariga tayanishdan oldin ulanish holatini tekshiring. Agar tayyorlash muvaffaqiyatsiz bo‘lsa, ko‘rsatilgan qayta urinish bo‘yicha yo‘riqnomani ko‘rib chiqing va sayt hosting qilingan provayderdan foydalanish ruxsatiga ega ekanini tasdiqlang.
 
-## Google Calendar konfiguratsiyasi
+## Google Calendar konfiguratsiyasi {#google-calendar-configuration}
 
 Superdav AI Agent v1.18.0 kalendar xususiyatlari yoqilganda, agent sozlangan kalendarlar va tadbir tafsilotlarini o‘qiy oladi. Kalendar vositalari o‘qishga yo‘naltirilgan va jadvaldan xabardor eslatmalar, ishtirokchilar bilan keyingi aloqa va kontakt moslashtirish uchun foydalidir.
 
@@ -97,7 +97,7 @@ Superdav AI Agent v1.18.0 kalendar xususiyatlari yoqilganda, agent sozlangan kal
 
 Kalendar hisob ma’lumotlarini agentga kerak bo‘lgan kalendarlar bilan cheklang. Agar holat muddati tugagan tokenni ko‘rsatsa, qayta ulang yoki hisob ma’lumotlarini almashtiring.
 
-## TextBee SMS bildirishnomalari
+## TextBee SMS bildirishnomalari {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 sozlangan bildirishnoma workflowlari uchun SMS provayder sifatida TextBee ni qo‘shadi. SMS bildirishnomalari nozik yoki foydalanuvchiga ko‘rinadigan xabarlar uchun inson tasdiqlash darvozalari bilan birga ishlatilishi kerak.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 sozlangan bildirishnoma workflowlari uchun SMS provayd
 
 Sinov xabarini faqat administratorga tegishli raqamga yuboring, keyin rejalashtirilgan yoki ishtirokchilarga ko‘rinadigan eslatmalarni yoqishdan oldin approval-gate xatti-harakatini tasdiqlang.
 
-## Feature Flags
+## Feature Flags {#feature-flags}
 
 v1.9.0 da ham joriy qilingan **Settings → Feature Flags** yorlig‘i ixtiyoriy funksionallik uchun toggle switchlarni taqdim etadi. Har bir flag butun tarmoq bo‘yicha yoqilgan yoki o‘chirilgan bo‘ladi; hozircha har bir sayt uchun alohida override yo‘q.
 
-### Feature Flags ga kirish
+### Feature Flags ga kirish {#accessing-feature-flags}
 
 1. WordPress administratori bo‘limida **Gratis AI Agent → Settings** ga o‘ting.
 2. **Feature Flags** yorlig‘ini bosing.
 
-### Kirishni boshqarish flaglari
+### Kirishni boshqarish flaglari {#access-control-flags}
 
 | Bayroq | Standart | Tavsif |
 |---|---|---|
@@ -127,7 +127,7 @@ v1.9.0 da ham joriy qilingan **Settings → Feature Flags** yorlig‘i ixtiyoriy
 | **Subscriber kirishiga ruxsat berish** | O‘chiq | Yoqilganda, `subscriber` roli bo‘lgan foydalanuvchilar chat interfeysidan foydalanishi mumkin, lekin faqat o‘qish imkoniyatlari bilan cheklanadi (post yaratish yoki sozlamalarni o‘zgartirish yo‘q). |
 | **A’zo bo‘lmaganlar uchun o‘chirish** | O‘chiq | Ultimate Multisite a’zolik holati bilan integratsiyalashadi. Yoqilganda, faol a’zolikka ega bo‘lmagan saytlar uchun chat yashiriladi. |
 
-### Brending bayroqlari
+### Brending bayroqlari {#branding-flags}
 
 | Bayroq | Standart | Tavsif |
 |---|---|---|
@@ -136,7 +136,7 @@ v1.9.0 da ham joriy qilingan **Settings → Feature Flags** yorlig‘i ixtiyoriy
 | **Agent tanlagichini yashirish** | O‘chiq | Yoqilganda, foydalanuvchilar beshta ichki agent o‘rtasida almasha olmaydi. Joriy agent Settings → General bo‘limida standart sifatida sozlangan qiymatga mahkamlanadi. |
 | **Chat avatari sifatida Site Icon’dan foydalanish** | O‘chiq | Chat vidjeti sarlavhasidagi standart AI ikonkasini WordPress sayt ikonkasiga almashtiradi (Appearance → Customize → Site Identity ostida sozlanadi). |
 
-### Avtomatlashtirish xavfsizligi bayroqlari
+### Avtomatlashtirish xavfsizligi bayroqlari {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 xavfsizroq avtomatlashtirish ishga tushirishlari uchun inson tasdig‘i eshiklari va eslatma yozuvlarini taqdim etadi. Bu boshqaruvlar o‘rnatilgan paketga qarab feature flags yoki kengaytirilgan avtomatlashtirish sozlamalarida paydo bo‘lishi mumkin.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 xavfsizroq avtomatlashtirish ishga tushirishlari uchun
 | **Taqvim vositalarini yoqish** | Sozlanmaguncha o‘chiq | Agentga sozlangan Google taqvimlari va tadbirlarini o‘qishga ruxsat beradi. |
 | **SMS bildirishnomalarini yoqish** | Sozlanmaguncha o‘chiq | Hisob ma’lumotlari saqlangandan keyin tasdiqlangan ish jarayonlariga TextBee SMS bildirishnomalarini yuborishga ruxsat beradi. |
 
-### O‘zgarishlarni qo‘llash
+### O‘zgarishlarni qo‘llash {#applying-changes}
 
 Istalgan bayroqni almashtirgandan keyin **Save Settings** tugmasini bosing. O‘zgarishlar darhol kuchga kiradi — cache tozalash yoki pluginni qayta faollashtirish talab qilinmaydi.

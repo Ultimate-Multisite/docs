@@ -3,15 +3,15 @@ title: Palitranyň kontrastyny barla
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palitranyň kontrastyny barlamak
+# Palitranyň kontrastyny barlamak {#validate-palette-contrast}
 
 **Validate Palette Contrast** ukyby dizaýn palitraňyzdaky reňk jübütlerini temaňyza ulanmazdan öň WCAG (Web Content Accessibility Guidelines) laýyklygy boýunça barlaýar.
 
-## Umumy syn
+## Umumy syn {#overview}
 
 Bu ukyp tekst we fon reňkleriniň arasyndaky kontrast gatnaşygyny barlamak arkaly saýtyňyzyň reňk shemasynyň elýeterlilik standartlaryna laýyk gelmegini üpjün edýär. Ol görüş taýdan kynçylygy bolan ulanyjylar üçin okamak kyn bolup biljek reňk utgaşmalarynyň öňüni almaga kömek edýär.
 
-## Giriş formaty
+## Giriş formaty {#input-format}
 
 Bu ukyp giriş hökmünde reňk palitrasyny kabul edýär:
 
@@ -35,7 +35,7 @@ Bu ukyp giriş hökmünde reňk palitrasyny kabul edýär:
 }
 ```
 
-### Parametrler
+### Parametrler {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Bu ukyp giriş hökmünde reňk palitrasyny kabul edýär:
 | `wcag_level` | string | Ýok | WCAG laýyklyk derejesi: "A", "AA" (deslapky), ýa-da "AAA" |
 | `pairs_to_check` | array | Ýok | Barlamaly anyk reňk jübütleri (mysal üçin, `["primary-text", "background-text"]`) |
 
-## Barlanylýan WCAG derejeleri
+## Barlanylýan WCAG derejeleri {#wcag-levels-checked}
 
 Bu ukyp kontrast gatnaşyklaryny WCAG standartlaryna görä barlaýar:
 
@@ -56,7 +56,7 @@ Bu ukyp kontrast gatnaşyklaryny WCAG standartlaryna görä barlaýar:
 - **Adaty tekst** — 18pt-den kiçi tekst (ýa-da 14pt goýy)
 - **Uly tekst** — 18pt ýa-da ondan uly tekst (ýa-da 14pt goýy ýa-da ondan uly)
 
-## Çykyş shemasy
+## Çykyş shemasy {#output-schema}
 
 Bu ukyp jikme-jik barlag hasabatyny gaýtarýar:
 
@@ -95,7 +95,7 @@ Bu ukyp jikme-jik barlag hasabatyny gaýtarýar:
 }
 ```
 
-### Çykyş meýdanlary
+### Çykyş meýdanlary {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Bu ukyp jikme-jik barlag hasabatyny gaýtarýar:
 | `status` | string | Her jübüt üçin "pass" ýa-da "fail" |
 | `recommendations` | array | Şowsuz jübütleri gowulandyrmak üçin teklipler |
 
-## Ulanyş mysaly
+## Ulanyş mysaly {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Bu ukyp ähli reňk utgaşmalaryny barlaýar we şulary gaýtarýar:
 - ✅ Fon + Tekst: 12.1:1 gatnaşyk (WCAG AAA-dan geçýär)
 - Umumy: WCAG AA bilen laýyk
 
-## Theme Builder bilen integrasiýa
+## Theme Builder bilen integrasiýa {#integration-with-theme-builder}
 
 Theme Builder-iň dizaýn-ugur saýlawyny ulananyňyzda, Validate Palette Contrast ukyby:
 
@@ -129,7 +129,7 @@ Theme Builder-iň dizaýn-ugur saýlawyny ulananyňyzda, Validate Palette Contra
 4. Laýyk däl jübütler üçin teklipler berýär
 5. Elýeterli bolmadyk reňk shemalarynyň ulanylmagynyň öňüni alýar
 
-## Iň gowy tejribeler
+## Iň gowy tejribeler {#best-practices}
 
 - **AA derejesinden başlaň** — WCAG AA köp websaýtlar üçin standartdyr
 - **Ulanmazdan öň synag ediň** — dizaýna doly geçmezden öň palitraňyzy barlaň
@@ -137,7 +137,7 @@ Theme Builder-iň dizaýn-ugur saýlawyny ulananyňyzda, Validate Palette Contra
 - **Ulanyjy isleglerini göz öňünde tutuň** — käbir ulanyjylarda goşmaça reňk duýgurlygy bolup biler
 - **Kontrast barlaýjylaryny ulanyň** — tassyklamak üçin bu ukyby brauzer gurallary bilen birleşdiriň
 
-## Şowsuz jübütler we teklipler
+## Şowsuz jübütler we teklipler {#failing-pairs-and-recommendations}
 
 Eger reňk jübüti barlagdan geçmese, bu ukyp teklipler berýär:
 
@@ -155,7 +155,7 @@ Eger reňk jübüti barlagdan geçmese, bu ukyp teklipler berýär:
 }
 ```
 
-## Baglanyşykly ukyplar
+## Baglanyşykly ukyplar {#related-abilities}
 
 - [Logo SVG döretmek](./generate-logo-svg.md) — barlanan reňk palitraňyz bilen logolar dörediň
 - [Menýu döretmek](./create-menu.md) — elýeterli reňkler bilen nawigasiýa guruň

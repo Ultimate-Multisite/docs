@@ -3,7 +3,7 @@ title: زپيار انٽيغريشن
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite کي Zapier سان جوڙڻ (Integrating Ultimate Multisite with Zapier)
+# Ultimate Multisite کي Zapier سان جوڙڻ (Integrating Ultimate Multisite with Zapier) {#integrating-ultimate-multisite-with-zapier}
 
 اڪيلي هڪ مضمون ۾، اسان [Webhooks](webhooks.md) بابت گپ ڪيو هو ۽ انهن کي ٽيئر پارٽي ايمپليكيشن سان جوڙڻ لاءِ ڪيئن استعمال ڪري سگهجي ٿو.
 
@@ -15,7 +15,7 @@ Zapier جي 5000+ اپليڪيشنن سان گهٽ ڪرڻ جو رابطو آهي
 
 هي ممکن آهي ڇاڪاڻ ته **Ultimate Multisite Zapier's triggers** ۽ actions [REST API](https://developer.ultimatemultisite.com/api/docs/) جي مدد سان چالو ٿين ٿا.
 
-## شروع ڪيئن ڪريون (How to start)
+## شروع ڪيئن ڪريون (How to start) {#how-to-start}
 
 پهرين، Zapier جو اپليڪيشن لسٹ ۾ Ultimate Multisite کي ڳوليائيندوهو. يا ٻئي طور، توهان [هي لنک](https://zapier.com/apps/wp-ultimo/integrations) تي کليڪ ڪري سگهو ٿا.
 
@@ -51,7 +51,7 @@ URL فیلڊ ۾، پنهنجي نیٹ ورک جو پورو URL رکجو، جنه
 
 نالي **Yes, Continue** بٽون تي ڪلڪ ڪريو ته هيٺين قدم تي وڃڻ لاءِ. جيڪڏهن سڀ شي صحيح ٿي ويندي، تنهنجي نئين ڪنيڪشن ٿيل حساب سان گهڻي خوشي ٿيندي! نئين trigger کي ٺاهڻ لاءِ **Continue** تي ڪلڪ ڪريو.
 
-## نئين Trigger کي ڪيئن ٺاهيو
+## نئين Trigger کي ڪيئن ٺاهيو {#how-to-create-a-new-trigger}
 
 جڏهن ته توهان جو account connect ٿي ويو آهي، تڏهن توهان موجود موجود events ڏس سگهو ٿا. هي tutorial لاءِ اسان **payment_received** event چونڊين ٿا.
 
@@ -67,7 +67,7 @@ URL فیلڊ ۾، پنهنجي نیٹ ورک جو پورو URL رکجو، جنه
 
 في اسبورتھ، ہمارا ٹیسٹ **کامیابی سے مکمل ہو گیا** اور پے لوڈ کے مثال معلومات واپس کر دی ہیں۔ یہ مثال معلومات ہمیں ایکشنز بنانے میں رہنمائی کرنے کے لیے مفید ہوں گی۔ آپ کا ٹرگر اب بنا دیا گیا ہے اور اسے دیگر ایپلی کیشنز سے جوڑنے کے لیے تیار ہے۔
 
-## ایکشنز کیسے بنائیں
+## ایکشنز کیسے بنائیں {#how-to-create-actions}
 
 ایکشنز دوسرے ٹرگرز کی معلومات کا استعمال کرتے ہوئے آپ کے نیٹ ورک میں نئی اندراجات بنانے کے لیے استعمال ہوتے ہیں۔
 
@@ -79,7 +79,7 @@ URL فیلڊ ۾، پنهنجي نیٹ ورک جو پورو URL رکجو، جنه
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### ایکشن سیٹ اپ کرنا
+### ایکشن سیٹ اپ کرنا {#setting-up-the-action}
 
 یہ **ایکشن کا اہم قدم** ہے اور یہاں چیزیں تھوڑی مختلف ہیں۔ پہلی معلومات جو آپ منتخب کریں گے وہ **Item** ہوگی۔ Item آپ کے نیٹ ورک کا **معلومات ماڈل** ہوتا ہے جیسے **Customers, Payments, Sites, Emails** وغیرہ۔
 

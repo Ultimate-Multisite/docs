@@ -3,15 +3,15 @@ title: Iimenyu Zokwamkela Iindwendwe
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Iimenyu zeHospitality
+# Iimenyu zeHospitality {#hospitality-menus}
 
 Inqaku le-**Hospitality Menus** livumela Theme Builder ukuba ivelise kwaye ifake amaphepha emenyu yokutya neziselo acwangciswe kakuhle ngqo kwi-WordPress site yakho.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Theme Builder ngoku inokudala amaphepha emenyu acwangciswe ngobungcali amashishini e-hospitality aquka iindawo zokutyela, iikhefi, iibha, kunye neenkonzo zokutya zemisitho. Ezi menyu zidityaniswe ngokupheleleyo kuyilo lwe-site yakho kwaye zinokuhlaziywa nokulawulwa ngokulula.
 
-## Iintlobo zeHospitality ezixhaswayo
+## Iintlobo zeHospitality ezixhaswayo {#supported-hospitality-types}
 
 - **Iindawo zokutyela** — iimenyu zokutya ezinenkonzo epheleleyo
 - **Iikhefi** — iimenyu zekofu nokutya okulula
@@ -21,9 +21,9 @@ Theme Builder ngoku inokudala amaphepha emenyu acwangciswe ngobungcali amashishi
 - **Iilori zokutya** — iimenyu zenkonzo yokutya ehambayo
 - **Iibreweries neeWineries** — iimenyu zeziselo ezineenkcazo
 
-## Ulwakhiwo lweMenyu
+## Ulwakhiwo lweMenyu {#menu-structure}
 
-### Iindidi zeMenyu
+### Iindidi zeMenyu {#menu-categories}
 
 Iimenyu zilungelelaniswe ngokweendidi:
 
@@ -34,7 +34,7 @@ Iimenyu zilungelelaniswe ngokweendidi:
 - **Iziselo** — iziselo (ezinotywala nezingenatywala)
 - **Ezizodwa** — izipesheli zemihla ngemihla okanye zonyaka
 
-### Ifomathi yento yeMenyu
+### Ifomathi yento yeMenyu {#menu-item-format}
 
 Into nganye yemenyu iquka:
 
@@ -49,7 +49,7 @@ Into nganye yemenyu iquka:
 }
 ```
 
-#### Iifield zento
+#### Iifield zento {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Into nganye yemenyu iquka:
 | `allergens` | array | Izinto eziqhelekileyo ezibangela ukwaliwa (Nuts, Shellfish, njl.) |
 | `availability` | string | Ixesha efumaneka ngalo (Daily, Seasonal, njl.) |
 
-## Ukudala iiMenyu zeHospitality
+## Ukudala iiMenyu zeHospitality {#creating-hospitality-menus}
 
-### Inyathelo 1: Nika ulwazi lweMenyu
+### Inyathelo 1: Nika ulwazi lweMenyu {#step-1-provide-menu-information}
 
 Xelela Theme Builder ngemenyu yakho:
 
@@ -71,7 +71,7 @@ Yenza imenyu yendawo yokutyela yendawo yam yokutyela yamaTaliyane enezidlo zokuq
 izitya ze-pasta, izidlo eziphambili, kunye needessert. Faka amaxabiso neenkcazo.
 ```
 
-### Inyathelo 2: Theme Builder ivelisa iMenyu
+### Inyathelo 2: Theme Builder ivelisa iMenyu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Ifomatha amaxabiso neenkcazo
 5. Yongeza ulwazi lokutya kunye nezinto ezibangela ukwaliwa
 
-### Inyathelo 3: Hlola uze ulungise
+### Inyathelo 3: Hlola uze ulungise {#step-3-review-and-customize}
 
 Unako:
 
@@ -91,9 +91,9 @@ Unako:
 4. Ukuhlaziya iinkcazo nolwazi lokutya
 5. Ukulungisa isitayile nolwakhiwo
 
-## Iinketho zokubonisa iMenyu
+## Iinketho zokubonisa iMenyu {#menu-display-options}
 
-### Iphepha leMenyu epheleleyo
+### Iphepha leMenyu epheleleyo {#full-menu-page}
 
 Iphepha elizinikeleyo elibonisa imenyu yakho epheleleyo:
 
@@ -102,7 +102,7 @@ Iphepha elizinikeleyo elibonisa imenyu yakho epheleleyo:
 - Uyilo olulungele ukuprintwa
 - Uyilo oluphendula kwizixhobo eziphathwayo
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Faka amacandelo emenyu kwamanye amaphepha:
 
@@ -111,7 +111,7 @@ Faka amacandelo emenyu kwamanye amaphepha:
 - Imenyu yeziselo kwiphepha lebar
 - Umboniso weedessert kwi-footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Velisa imenyu ye-PDF ekhutshelwayo:
 
@@ -120,9 +120,9 @@ Velisa imenyu ye-PDF ekhutshelwayo:
 - Iquka imifanekiso neenkcazo
 - Kulula ukwabelana ngayo nokuyithumela nge-imeyile
 
-## Ulwazi lokutya kunye nezinto ezibangela ukwaliwa
+## Ulwazi lokutya kunye nezinto ezibangela ukwaliwa {#dietary-and-allergen-information}
 
-### Iimpawu zokutya
+### Iimpawu zokutya {#dietary-attributes}
 
 Phawula izinto ngolwazi lokutya:
 
@@ -134,7 +134,7 @@ Phawula izinto ngolwazi lokutya:
 - **Low-Carb** — iikhabhohayidrethi ezincitshisiweyo
 - **High-Protein** — ityebile ngeprotheyini
 
-### Izilumkiso zezinto ezibangela ukwaliwa
+### Izilumkiso zezinto ezibangela ukwaliwa {#allergen-warnings}
 
 Faka izinto eziqhelekileyo ezibangela ukwaliwa:
 
@@ -147,9 +147,9 @@ Faka izinto eziqhelekileyo ezibangela ukwaliwa:
 - **Gluten** — ingqolowa neenkozo eziqulethe i-gluten
 - **Sesame** — iimbewu ze-sesame neoyile
 
-## Ulawulo lweMenyu
+## Ulawulo lweMenyu {#menu-management}
 
-### Ukuhlaziya amaxabiso
+### Ukuhlaziya amaxabiso {#updating-prices}
 
 Hlaziya amaxabiso emenyu ngokulula:
 
@@ -159,7 +159,7 @@ Hlaziya amaxabiso emenyu ngokulula:
 4. Gcina utshintsho
 5. Utshintsho luvela ngoko nangoko kwi-site yakho
 
-### Ukongeza izinto zonyaka
+### Ukongeza izinto zonyaka {#adding-seasonal-items}
 
 Yenza iinguqulelo zemenyu zonyaka:
 
@@ -169,7 +169,7 @@ Yenza iinguqulelo zemenyu zonyaka:
 4. Cwangcisa imihla yokufumaneka
 5. Zibonise ngokuzenzekelayo ngexesha lonyaka
 
-### Ukulawula izipesheli
+### Ukulawula izipesheli {#managing-specials}
 
 Bonisa izipesheli zemihla ngemihla okanye zeveki:
 
@@ -179,7 +179,7 @@ Bonisa izipesheli zemihla ngemihla okanye zeveki:
 4. Hlaziya mihla ngemihla okanye ngeveki
 5. Gcina izipesheli ezindala kuvimba
 
-## Umdibaniso neTheme Builder
+## Umdibaniso neTheme Builder {#integration-with-theme-builder}
 
 Xa usebenzisa Theme Builder kwii-site zehospitality:
 
@@ -189,9 +189,9 @@ Xa usebenzisa Theme Builder kwii-site zehospitality:
 4. **Ukwenza zilungele izixhobo eziphathwayo** — iimenyu zibonakala kakuhle kwiifowuni
 5. **Ukwenza zilungele i-SEO** — iimenyu zilungele iinjini zokukhangela
 
-## Ezona ndlela zilungileyo
+## Ezona ndlela zilungileyo {#best-practices}
 
-### Uyilo lweMenyu
+### Uyilo lweMenyu {#menu-design}
 
 - **Ulungelelwaniso olucacileyo** — ulwakhiwo lweendidi olunengqiqo
 - **Iinkcazo ezifundekayo** — zivusa umdla wokutya kwaye zinolwazi
@@ -199,7 +199,7 @@ Xa usebenzisa Theme Builder kwii-site zehospitality:
 - **Iifoto zobungcali** — imifanekiso yokutya ekumgangatho ophezulu
 - **Isithuba esimhlophe** — ungagcwalisi kakhulu iphepha
 
-### Umxholo
+### Umxholo {#content}
 
 - **Iinkcazo ezichanekileyo** — chaza izinto ngokuchanekileyo
 - **Gqamisa izipesheli** — yenza izipesheli zibonakale
@@ -207,7 +207,7 @@ Xa usebenzisa Theme Builder kwii-site zehospitality:
 - **Hlaziya rhoqo** — gcina amaxabiso nezinto zisexesheni
 - **Sebenzisa ulwimi oluvusa umdla wokutya** — yenza izinto zivakale zimnandi
 
-### Ukufikeleleka
+### Ukufikeleleka {#accessibility}
 
 - **Iifonti ezifundekayo** — sebenzisa iintlobo zoonobumba ezicacileyo nezifundeka lula
 - **Umahluko owaneleyo** — qinisekisa ukuba umbhalo uyafundeka
@@ -215,9 +215,9 @@ Xa usebenzisa Theme Builder kwii-site zehospitality:
 - **Izilumkiso zezinto ezibangela ukwaliwa** — bonisa ngokucacileyo izinto ezibangela ukwaliwa
 - **Ilungele izixhobo eziphathwayo** — vavanya kuzo zonke izixhobo
 
-## Imizekelo
+## Imizekelo {#examples}
 
-### Ulwakhiwo lweMenyu yendawo yokutyela
+### Ulwakhiwo lweMenyu yendawo yokutyela {#restaurant-menu-structure}
 
 ```
 Izitya zokuqala
@@ -241,7 +241,7 @@ Iidizethi
 └── Ukhetho lweGelato
 ```
 
-### Ulwakhiwo lweMenyu yeKhefi
+### Ulwakhiwo lweMenyu yeKhefi {#cafe-menu-structure}
 
 ```
 Ikofu
@@ -260,7 +260,7 @@ Iisandwich
 └── Vegetarian Wrap
 ```
 
-## Iimpawu ezinxulumene nazo
+## Iimpawu ezinxulumene nazo {#related-features}
 
 - [Yenza iMenyu](../abilities/create-menu.md) — yenza iimenyu zokuhamba
 - [Isikhokelo soYilo](./design-direction.md) — lungiselela uyilo lwesayithi yakho

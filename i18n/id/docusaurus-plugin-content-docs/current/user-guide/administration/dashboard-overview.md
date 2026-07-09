@@ -3,11 +3,11 @@ title: Ikhtisar Dasbor
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Gambaran Umum Dashboard
+# Gambaran Umum Dashboard {#dashboard-overview}
 
 Ultimate Multisite memiliki **Dashboard** khusus di bawah menu Ultimate Multisite, dan juga menambahkan widget ke Network Dashboard. Artikel ini membahas apa yang akan Anda lihat di kedua tempat tersebut.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite menyisipkan widget-widget berguna ke dashboard tingkat jaringan yang terdapat di **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Berikut fungsi masing-masing widget:
 
 ![Widget News](/img/admin/network-dashboard-news.png)
 
-## Dashboard Ultimate Multisite
+## Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Sementara network dashboard menyajikan informasi menyeluruh tentang jaringan, dashboard Ultimate Multisite (di tingkat teratas menu Ultimate Multisite) menyajikan informasi tentang layanan.
 

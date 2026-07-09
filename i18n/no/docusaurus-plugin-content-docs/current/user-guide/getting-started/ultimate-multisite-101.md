@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite er en WordPress Multisite-utvidelse som lar deg tilby WaaS – eller nettsteder som en tjeneste – til kundene dine. Før vi går i dybden og ser på hvordan Ultimate Multisite kan hjelpe virksomheten din og kundene dine, må vi først gå gjennom noe grunnleggende.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 De fleste av oss kjenner til en vanlig WordPress-installasjon. Enten oppretter du den via kontrollpanelet hos webhotellet ditt, eller – for de modige – setter du opp en ny webserver og database, laster ned kjernefilene og starter installasjonen.
 
@@ -21,13 +21,13 @@ I praksis kan WordPress Multisite forstås slik: Et universitet har én enkelt W
 
 For å bryte ned dette skal vi se på noen grunnleggende begreper som brukes både i Ultimate Multisites dokumentasjon og i WordPress-miljøet generelt.
 
-### Nettverket
+### Nettverket {#the-network}
 
 I WordPress-sammenheng er et multisite-nettverk et oppsett der flere undernettsteder kan administreres fra ett felles kontrollpanel. Selv om opprettelsen av et multisite-nettverk varierer mellom hostingleverandører, ender det vanligvis med noen ekstra direktiver i wp-config.php-filen som forteller WordPress at det kjører i denne modusen.
 
 Det er flere viktige forskjeller mellom et multisite-nettverk og en frittstående WordPress-installasjon, som vi kort skal gå gjennom.
 
-#### Subdomene vs. underkatalog
+#### Subdomene vs. underkatalog {#subdomain-vs-subdirectory}
 
 En av de første avgjørelsene du må ta, er om multisite-installasjonen skal bruke _underkataloger_ eller _subdomener_. Ultimate Multisite fungerer like godt med begge valg, men det er noen arkitektoniske forskjeller mellom de to konfigurasjonene.
 
@@ -43,7 +43,7 @@ I _subdomene_-konfigurasjon er et jokertegn-SSL-sertifikat (wildcard) et av de v
 
 Det finnes andre alternativer, men disse er ofte begrenset i omfang og bruksområde, og krever ekstra konfigurasjon og vurdering av egnethet.
 
-#### Utvidelser og temaer
+#### Utvidelser og temaer {#plugins-and-themes}
 
 Det WordPress gir, tar det også bort – i hvert fall fra kundens perspektiv. I en frittstående WordPress-installasjon, hvis nettstedsadministratoren installerer en dårlig utvidelse eller ikke holder installasjonen oppdatert, er det bare de selv som rammes. Men hvis en nettstedsadministrator installerer en dårlig utvidelse i en multisite-installasjon, rammes alle nettstedene i nettverket.
 
@@ -51,7 +51,7 @@ Derfor fjerner WordPress i multisite-modus muligheten for nettstedsadministrator
 
 Nettverksadministratoren er altså ansvarlig for å installere utvidelser og temaer i nettverket, og delegerer rettigheter til å bruke disse til de enkelte nettstedene. Nettstedsadministratorer kan ikke installere utvidelser og temaer, eller få tilgang til utvidelser og temaer som ikke er tilordnet deres nettsted.
 
-#### Brukere og administratorer
+#### Brukere og administratorer {#users-and-administrators}
 
 I en WordPress Multisite deler alle nettverksnettsteder samme database, og dermed også samme brukere, roller og rettigheter. Den beste måten å tenke på det er at alle brukere er medlemmer av nettverket, ikke av et bestemt nettsted.
 
@@ -63,13 +63,13 @@ For å gjenta: selv om brukerkontoene ser ut til å tilhøre et bestemt nettsted
 
 Selv om dette ikke er et fremmed konsept i bedriftssystemer, er denne sentrale brukerregistreringen og -autentiseringen ofte vanskelig å forstå for folk som er vant til frittstående WordPress-installasjoner, der brukeradministrasjon er noe enklere.
 
-#### Media
+#### Media {#media}
 
 Mens nettverksnettsteder deler én enkelt database i en WordPress Multisite, har de separate mapper på filsystemet for mediefiler.
 
 Standard WordPress-plassering (wp-content/uploads) beholdes, men stien endres for å gjenspeile nettverksstedets unike ID. Mediefiler for et nettverkssted vises derfor som wp-contents/uploads/site/[id].
 
-#### Permalenker
+#### Permalenker {#permalinks}
 
 Vi nevnte tidligere at det er tydelige fordeler med _subdomene_ fremfor _underkatalog_-konfigurasjon, og her er den: stier.
 
@@ -83,7 +83,7 @@ I en _subdomene_-konfigurasjon er dette ikke nødvendig, fordi hvert nettverksst
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Statiske sider
+#### Statiske sider {#static-pages}
 
 I _underkatalog_-konfigurasjon kan navnekonflikter også oppstå for statiske sider, siden hovednettstedet og nettverksnettstedene deler samme sti.
 
@@ -93,7 +93,7 @@ For å forhindre dette tilbyr WordPress en måte å blokkere visse nettstedsnavn
 
 I _subdomene_-konfigurasjon reduseres muligheten for navnekonflikter fordi _subdomenet_ er unikt for nettverksstedet og ikke relatert til hovednettstedet på noen måte.
 
-### Registrering
+### Registrering {#registration}
 
 I nettverksinnstillingene for WordPress Multisite er flere nye brukerregistreringsalternativer tilgjengelige, som lar nye og eksisterende brukere opprette nettsteder.
 
@@ -111,7 +111,7 @@ Når en bruker logger inn, logger de inn på nettverket og er dermed også logge
 
 Hvis derimot hensikten med multisiten var å tilby adskilte nettverksnettsteder uten noen relasjon til hverandre, vil det nesten alltid være nødvendig med eksterne eller ekstra utvidelser for å manipulere brukerrollene.
 
-### Domene og SSL
+### Domene og SSL {#domain-and-ssl}
 
 La oss snakke om en WordPress Multisite-installasjon som nesten unnslipper vår oppmerksomhet – WordPress.com. Dette er uten tvil det mest omfattende eksempelet på en WordPress Multisite og demonstrerer dens omfattende muligheter for tilpasning til et bestemt formål.
 
@@ -125,11 +125,11 @@ For nettverksadministratorer utgjør dette et ekstra lag av kompleksitet både i
 
 Selv om WordPress Multisite gir mulighet for å la [www.anotherdomain.com](http://www.anotherdomain.com) kartlegges til «site1», står nettverksadministratoren igjen med utfordringen å eksternt administrere DNS-oppføringene og implementere SSL-sertifikater.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Nå som vi forstår forskjellene mellom en frittstående WordPress-installasjon og en Multisite-installasjon, la oss se på hvordan Ultimate Multisite er det ultimate verktøyet for å tilby nettsteder som en tjeneste.
 
-### Introduksjon
+### Introduksjon {#introduction}
 
 Ultimate Multisite er din sveitsiske lommekniv når det gjelder å lage en nettsted-som-en-tjeneste (WaaS). Tenk på Wix.com, Squarespace, WordPress.com – og tenk så på å eie din egen tjeneste.
 
@@ -137,9 +137,9 @@ Under panseret bruker Ultimate Multisite WordPress Multisite, men på en måte s
 
 I de følgende avsnittene skal vi se på noen vanlige bruksområder og hva som kreves for å støtte dem.
 
-### Bruksområder
+### Bruksområder {#use-cases}
 
-#### Tilfelle 1: Et byrå
+#### Tilfelle 1: Et byrå {#case-1-an-agency}
 
 Kjernekompetansen til et byrå ligger vanligvis i design av nettsteder, mens aspekter som hosting eller markedsføring tilbys som tilleggstjenester.
 
@@ -165,7 +165,7 @@ Temaer tilbyr lignende funksjonalitet, der bestemte temaer kan aktiveres eller s
 
 Byråer vil finne trygghet med Ultimate Multisite, som lar dem gjøre det de gjør best – designe eksepsjonelle nettsteder.
 
-#### Tilfelle 2: Nisjeleverandør
+#### Tilfelle 2: Nisjeleverandør {#case-2-niche-provider}
 
 Det er et gammelt ordtak som sier: «Gjør én ting, og gjør det godt». For mange spesialister betyr dette å lage et produkt eller en tjeneste rundt én enkelt kjerneidé.
 
@@ -179,7 +179,7 @@ For en leverandør av nisjenettsteder og -tjenester gir dette en uovertruffen fo
 
 Avhengig av kravene kan både _underkatalog_- eller _subdomene_-konfigurasjoner passe, og arkitekturvalgene vil være mellom et enkelt SSL-sertifikat for _underkataloger_ eller et jokertegn-SSL-sertifikat for _subdomener_.
 
-#### Tilfelle 3: WordPress-webhosting
+#### Tilfelle 3: WordPress-webhosting {#case-3-wordpress-web-hosting}
 
 Det finnes utallige måter å drifte WordPress-nettsteder på, men sjelden er det så enkelt som å gi webplass til en kunde med en forhåndsinstallert versjon av WordPress. Dette er fordi en rekke beslutninger og vurderinger må komme sammen for å tilby en meningsfull tjeneste.
 
@@ -191,11 +191,11 @@ For utviklere som ønsker å integrere med Ultimate Multisite, tilbyr løsningen
 
 Uten avhengighet av en mengde eksterne utvidelser og lisenser, tilbyr Ultimate Multisite en funksjonsrik løsning som er sammenlignbar med Wix, Squarespace, WordPress.com og andre.
 
-### Arkitekturvurderinger
+### Arkitekturvurderinger {#architecture-considerations}
 
 Selv om dette ikke er en uttømmende guide, bør følgende punkter gi veiledning til riktig valg av teknologier for å støtte en Ultimate Multisite-installasjon.
 
-#### Delt vs. dedikert hosting
+#### Delt vs. dedikert hosting {#shared-vs-dedicated-hosting}
 
 Dessverre er ikke alle hostingleverandører like, og noen praktiserer ekstrem servertetthet. Lavkostleverandører genererer vanligvis inntekter ved å maksimere servertettheten. Dermed kan din Ultimate Multisite-installasjon være bare ett av flere hundre nettsteder på samme server.
 
@@ -209,7 +209,7 @@ Ultimate Multisite er kjent for å fungere med en rekke gode hostingleverandøre
 
 For en liste over kompatible leverandører og fullstendige oppsettsinstruksjoner for hver, se dokumentasjonen for Compatible Providers.
 
-#### Ytelseshensyn
+#### Ytelseshensyn {#performance-considerations}
 
 Ultimate Multisite er ikke en treg applikasjon – snarere er den bemerkelsesverdig rask. Den yter imidlertid bare så godt som den underliggende applikasjonen og infrastrukturen, og kan bare utnytte det den har tilgang til.
 
@@ -227,7 +227,7 @@ Av denne grunn bruker de fleste nettverksadministratorer frontend-cache-løsning
 
 Ultimate Multisite inkluderer et sofistikert Cloudflare-tillegg som lar nettverksadministratorer plassere installasjonene sine bak Cloudflare og benytte ikke bare cache-funksjonene, men også DNS-hosting, SSL-sertifikater og sikkerhetsmekanismer.
 
-#### Sikkerhetskopier
+#### Sikkerhetskopier {#backups}
 
 Man kunne spørre 50 personer om råd om sikkerhetskopier og få 50 forskjellige meninger om sikkerhetskopistrategier. Svaret er: det kommer an på.
 
@@ -237,7 +237,7 @@ For formålet med dette avsnittet, la oss enes om at en sikkerhetskopi er en tid
 
 Med denne forståelsen vil svaret på hvordan man oppnår sikkerhetskopiene og hva som er best for ditt miljø i stor grad avhenge av dine krav og hostingleverandørens evne til å oppfylle disse kravene. I rekkefølge fra mest til minst oppfattet, bør alternativene nedenfor gi noe veiledning.
 
-#### Øyeblikksbilder
+#### Øyeblikksbilder {#snapshots}
 
 Øyeblikksbilder er sølvkulene for sikkerhetskopier fordi de er enkle, ukompliserte (inntil du vil gjenopprette) og «bare fungerer». Det krever imidlertid litt hjelp fra leverandøren din og gjelder stort sett bare hvis du har en VPS (Virtual Private Server) eller lignende. Flere leverandører oppført i vår dokumentasjon for «Compatible Providers» tilbyr sikkerhetskopier som ikke krever ytterligere inngrep eller vurdering fra nettverksadministratoren.
 
@@ -245,7 +245,7 @@ Der tradisjonelle sikkerhetskopier retter seg mot filer og databaser, retter et 
 
 Øyeblikksbilder kan medføre en ekstra kostnad hos hostingleverandøren, men det er en forsikring mot uhell.
 
-#### Eksterne skript
+#### Eksterne skript {#external-scripts}
 
 Det ser ikke ut til å være mangel på eksterne skript og løsninger for å sikkerhetskopiere WordPress- og MySQL-ressurser, og disse ville fungere godt for Ultimate Multisite siden det er en WordPress-utvidelse som bruker WordPress' filsystem og database. En løsning som sikkerhetskopierer WordPress-nettsteder vil dermed dekke Ultimate Multisites behov.
 
@@ -253,7 +253,7 @@ Vi kan ikke anbefale ett skript fremfor et annet, men vårt generelle råd er å
 
 Det bør bemerkes at disse skriptene, mens de kjører, vil øke systembelastningen, noe som bør tas i betraktning.
 
-#### Utvidelser
+#### Utvidelser {#plugins}
 
 Det er nesten intet problem i WordPress som ikke kan løses med en utvidelse, og hvis administrasjon av eksterne skript ikke er din kopp te, er kanskje en utvidelse det nest beste alternativet.
 
@@ -261,7 +261,7 @@ Selv om utvidelser varierer i alternativer og funksjoner, utfører de stort sett
 
 Når du velger utvidelse, pass på å verifisere at den er multisite-bevisst. På grunn av dens virkemåte kan du forvente midlertidig belastning på serveren mens sikkerhetskopien kjører.
 
-#### Domene og SSL
+#### Domene og SSL {#domain-and-ssl-1}
 
 Mye har allerede blitt diskutert angående domenenavn i multisite _subdomene_-modus. En nesten universell løsning for nettverksadministratorer er å bruke jokertegn-DNS-oppføringer.
 
@@ -285,7 +285,7 @@ For mange er bruken av Cloudflare et enkelt alternativ. Kunden trenger bare å p
 
 Utenom dette må alternative løsninger søkes, noe som er grunnen til at Ultimate Multisite anbefaler en liste over Compatible Providers. Dette er fordi prosessen med å sette opp DNS og SSL kan være en ikke-triviell prosess. Men med Ultimate Multisites integrasjon med disse leverandørene fjernes mye av kompleksiteten, og prosedyren er automatisert.
 
-#### Utvidelser
+#### Utvidelser {#plugins-1}
 
 Det er høyst sannsynlig at du trenger ekstra utvidelser for å tilby funksjonalitet til kundene dine eller nettverksnettstedene. Fungerer alle utvidelser med WordPress Multisite og Ultimate Multisite? Vel, det kommer an på.
 

@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Umugereka wa WordPress wongeramo gukosora imikoranire ya Tutor LMS mu bidukikije by'imbuga nyinshi.
 
-## Ibisobanuro
+## Ibisobanuro {#description}
 
 Uyu mugereka utanga gukosora kw'ingenzi kw'imikoranire kugira ngo Tutor LMS ikore ku miyoboro ya WordPress y'imbuga nyinshi. Ukemura kwiyandikisha kw'abakoresha, gucunga abigisha, imipaka y'amasomo, n'indi mikorere yihariye ku mbuga nyinshi.
 
-## Ibiranga
+## Ibiranga {#features}
 
 - **Gucunga Imbonerahamwe z'Ububikoshingiro**: Ihita ibona kandi igakora imbonerahamwe za Tutor LMS zibura zitashoboye gukorwa kubera inzitizi z'imfunguzo mvamahanga mu mbuga nyinshi
 - **Kwiyandikisha kw'Abakoresha ku Mbuga Nyinshi**: Abakemura AJAX b'ihariye bo gucunga kwiyandikisha kw'abakoresha ku mbuga zo mu muyoboro
@@ -24,7 +24,7 @@ Uyu mugereka utanga gukosora kw'ingenzi kw'imikoranire kugira ngo Tutor LMS ikor
 - **Amagaragaza y'Admin Yihariye**: Urutonde rw'abigisha n'imbonezamikorere yo kubacunga byumva imbuga nyinshi
 - **Ibikoresho bya Admin**: Imbonezamikorere yo gucunga ububikoshingiro ku bayobozi b'umuyoboro n'ab'urubuga
 
-## Ibisabwa
+## Ibisabwa {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Uyu mugereka utanga gukosora kw'ingenzi kw'imikoranire kugira ngo Tutor LMS ikor
 - Ishyirwaho rya WordPress ry'imbuga nyinshi
 - Umugereka wa Ultimate Multisite (ku mikorere y'imipaka y'amasomo)
 
-## Gushyiraho
+## Gushyiraho {#installation}
 
 1. Ohereza dosiye z'umugereka muri `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Menya neza ko Tutor LMS yashyizweho kandi yakorejwe
 3. Koresha umugereka unyuze muri menu ya 'Plugins' muri WordPress
 4. Umugereka uzahita wihuza na Tutor LMS mu buryo bwikora
 
-## Imiterere ya Dosiye
+## Imiterere ya Dosiye {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Imikorere Yimuwe Ivanywe muri MU Plugin
+## Imikorere Yimuwe Ivanywe muri MU Plugin {#functionality-moved-from-mu-plugin}
 
 Uyu mugereka urimo imikorere yari isanzwe muri `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Uyu mugereka urimo imikorere yari isanzwe muri `wp-content/mu-plugins/daves.php`
 - Gukemura kwiyandikisha kw'abakoresha ku mbuga nyinshi
 - Kugaragaza ID y'igicuruzwa cy'isomo
 
-## Gucunga Ububikoshingiro
+## Gucunga Ububikoshingiro {#database-management}
 
-### Ikibazo
+### Ikibazo {#the-problem}
 
 Mu bidukikije bya WordPress by'imbuga nyinshi, gukora imbonerahamwe za Tutor LMS birananirana ku mbonerahamwe zifite inzitizi z'imfunguzo mvamahanga zijya ku mbonerahamwe y'abakoresha. Ibi bibaho kubera ko:
 
@@ -81,7 +81,7 @@ Mu bidukikije bya WordPress by'imbuga nyinshi, gukora imbonerahamwe za Tutor LMS
 - Imfunguzo mvamahanga zerekeza kuri `wp_2_users` (itabaho)
 - Imbonerahamwe nyakuri y'abakoresha ni `wp_users` (isangiwe mu muyoboro wose)
 
-### Igisubizo
+### Igisubizo {#the-solution}
 
 Uyu mugereka uhita:
 
@@ -92,13 +92,13 @@ Uyu mugereka uhita:
    - Gukora urubuga rushya mu muyoboro
    - Kugenzura imbonerahamwe intoki binyuze mu mbonezamikorere ya admin
 
-### Imbonerahamwe Zirebwa
+### Imbonerahamwe Zirebwa {#affected-tables}
 
 - `tutor_coupon_usages` - Irimo urufunguzo mvamahanga rujya ku mbonerahamwe y'abakoresha
 - `tutor_carts` - Irimo urufunguzo mvamahanga rujya ku mbonerahamwe y'abakoresha
 - `tutor_notification_preferences` - Imbonerahamwe ya TutorPro ifite urufunguzo mvamahanga rujya ku mbonerahamwe y'abakoresha
 
-### Imbonezamikorere ya Admin
+### Imbonezamikorere ya Admin {#admin-interface}
 
 Gera ku bikoresho byo gucunga ububikoshingiro kuri:
 
@@ -111,6 +111,6 @@ Imbonezamikorere ikwemerera:
 - Kugenzura iboneza ry'ububikoshingiro
 - Kureba amakuru arambuye y'imiterere
 
-## Ubufasha
+## Ubufasha {#support}
 
 Uyu mugereka wakozwe by'umwihariko ku rubuga rwa KursoPro. Ku bufasha bwa tekiniki, vugana n'itsinda ry'iterambere.

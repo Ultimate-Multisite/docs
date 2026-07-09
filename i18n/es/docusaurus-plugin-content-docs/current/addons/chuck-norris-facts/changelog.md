@@ -3,15 +3,15 @@ title: Registro de cambios de Chuck Norris Facts
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Registro de cambios de Chuck Norris Facts
+# Registro de cambios de Chuck Norris Facts {#chuck-norris-facts-changelog}
 
-### 1.0.1 - 2025-11-03
+### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Añadido: Funcionalidad de actualización automática a través del servidor de actualización Ultimate Multisite
 * Actualizado: Probado hasta WordPress 6.6
 * Actualizado: Mejorada la estructura del plugin con composer autoloader
 * Actualizado: Compatibilidad mejorada con instalaciones modernas de WordPress
 
-### 1.0.0 - 2024-10-21
+### 1.0.0 - 2024-10-21 {#100---2024-10-21}
 * Lanzamiento inicial
 * 110+ hechos de Chuck Norris
 * Soporte completo de traducción

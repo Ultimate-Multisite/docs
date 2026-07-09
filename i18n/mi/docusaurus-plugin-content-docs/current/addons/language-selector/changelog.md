@@ -3,7 +3,7 @@ title: Rangitaki Huringa Kōwhiri Reo
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Rārangi Panonitanga Kaitīpako Reo
+# Rārangi Panonitanga Kaitīpako Reo {#language-selector-changelog}
 
 Putanga: 1.1.3 - I tukuna i te 2026-05-05
 * Whakatika: Kua horoia ngā tāupe tāuru ināianei, ā, kua tāpirihia he kuhimua ki ngā ingoa hook ritenga hei ārai i ngā taupatupatu ki ngā monomai rōpū tuatoru

@@ -3,7 +3,7 @@ title: Unsa ang WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Unsa ang WordPress Multisite?
+# Unsa ang WordPress Multisite? {#what-is-wordpress-multisite}
 
 Sa sulod sa core ni WordPress, adunay feature nga gitawag og ‘Multisite’ nga nag-ugat kini pa balik sa 2010 paglunsad sa WordPress 3.0. Sukad niadto, nakadawat kini og daghang revisions aron magdala og bag-ong features ug mas kusog nga seguridad.
 
@@ -11,7 +11,7 @@ Sa laktod nga pagkasulti, ang usa ka WordPress multisite mahimong hunahunaa sama
 
 ##
 
-## Unsa gyud ang WordPress Multisite?
+## Unsa gyud ang WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Ang Multisite kay feature sa WordPress nga nagtugot sa daghang sites nga mag-share og usa ra ka WordPress installation. Kung ma-activate ang multisite, ang orihinal nga WordPress site mahimong magbag-o aron suportahan kung unsa kasagaran gitawag og **network of sites**.
 
@@ -23,7 +23,7 @@ Kini nga kamatuoran usa sa mga pangunang kaayohan sa multisite, tungod kay gitug
 
 ##
 
-## Subdomain o Subdirectory?
+## Subdomain o Subdirectory? {#subdomain-or-subdirectory}
 
 Adunay duha ka mode sa pagpadagan sa WordPress multisite – ug kinahanglan ninyo mopili og usa kung mag-convert mo sa inyong regular nga WordPress installation ngadto sa multisite installation:
 
@@ -49,7 +49,7 @@ Ang usa sa mga pangunang hagit sa pag-set up sa subdomain mode kay ang SSL cover
 
 Alang sa subdirectory mode, ang mga subsites sa usa ka network nga base sa subdomain giisip sa search engines nga mga laing website, nga nagpasabot nga ang sulod nga anaa sa usa ka subsite dili makaguba sa SEO performance sa ubang subsites bisan unsa.
 
-## Ang Super Admin
+## Ang Super Admin {#the-super-admin}
 
 Ang single-site WordPress installations nagtugot kanimo sa pagdugang og walay limitasyon nga mga user ug paghatag niini og lain-laing user roles uban ang lain-laing permissions.
 
@@ -63,7 +63,7 @@ Ang mga plugin ug themes mahimong i-install o i-uninstall lang gikan sa network 
 
 _Note: makita ninyo, ang pag-imbita sa usa ka tawo sa inyong network ug paghatag kaniya og super admin status naghatag niining user sa tibuok kontrol sa inyong network. Sa pananglitan, ang ubang super admin bisan mahimong magtangtang sa inyong super admin status, nga epektibong mag-lock kaninyo gikan sa inyong kaugalingon nga network admin panel. Aron tugotan ang Ultimate Multisite customers nga adunay granular control kung unsa ang mga additional super admin pwede buhat, kami adunay add-on nga gitawag og Support Agents. Kini nga add-on nagtugot kanimo sa paghimo og laing klase sa user – usa ka agent – nga adunay mga permiso lang nga kinahanglan nila para himuon ang ilang mga buluhaton sa network._
 
-## Unsa ang gi-share tali sa subsites ug unsa ang dili
+## Unsa ang gi-share tali sa subsites ug unsa ang dili {#what-is-shared-among-subsites-and-what-is-not}
 
 Ingon na sa among gihisgutan kaniadto, usa sa mga importanteng benepisyo sa WordPress multisite mao nga ang tanang subsites nag-share sa parehas nga configurations, core files, themes, plugins, WordPress core files, etc.
 
@@ -75,7 +75,7 @@ Bisan pa niana, adunay mga elemento nga maayo nga gi-scope base sa matag subsite
 
 \- Kadaghanan sa mga database table ang gihimo para sa matag subsite, nagpasabot nga ang posts, comments, pages, settings, ug uban pa gi-scope alang sa matag subsite.
 
-## User management sa WordPress Multisite
+## User management sa WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Ang usa ka sensitibong butang sa WordPress multisite mao ang user management. Ang WordPress user table usa sa pipila lamang nga gi-share sa tanang subsites.
 
@@ -99,7 +99,7 @@ _Nota: Nasabtan namo unsa ka lisod kana depende sa imong gamit, mao nga ang Ulti
 
 Bisan pa gi-share ang user table, pwede gihapon i-add ug i-remove ang mga users sa subsites pinaagi sa mga subsite admin o super admin, ug pwede pud sila magkaiba'ng roles sa lain-laing subsites.
 
-## Performance considerations
+## Performance considerations {#performance-considerations}
 
 Ang WordPress multisite kay gyud gamhanan kung unsa kadaghan nga sites ang kaya ni suportahan. Mahimo ninyong masusi ni pinaagi sa pagkakaron nga ang [WordPress.com](https://WordPress.com), Edublogs, ug Campuspress kay mga serbisyo nga base sa multisite, ug ang matag host nag-host og libo ka sites.
 

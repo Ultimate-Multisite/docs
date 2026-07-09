@@ -3,11 +3,11 @@ title: Loga nan atharrachaidhean
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Loga atharrachaidhean
+# Loga atharrachaidhean {#changelog}
 
-## 1.9.0 — Foillsichte air 2026-04-28
+## 1.9.0 — Foillsichte air 2026-04-28 {#190--released-on-2026-04-28}
 
-### Ùr
+### Ùr {#new}
 
 - **comas `create_contact_form`** — cruthaichidh e foirm-conaltraidh a’ cleachdadh a’ phlugain fhoirmichean ghnìomhaich (Contact Form 7, WPForms, Fluent Forms, no Gravity Forms) agus tillidh e shortcode deiseil ri fhighe a-steach ann am post no duilleag sam bith.
 - **comas `set_featured_image`** — sònraichidh e dealbh nochdaidh do phost no duilleag bho ID ceanglachain a tha ann mu thràth ann an Leabharlann nam Meadhanan no bho URL iomallach; ion-phortaichidh e an dealbh gu fèin-obrachail nuair a thèid URL a thoirt seachad.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Aisig an seisean mu dheireadh** — tha pannal a’ chat a-nis ag ath-luchdadh a’ chòmhraidh as ùire gu fèin-obrachail nuair a luchdaichear an duilleag agus nuair a dh’fhosglas am widget, agus mar sin cha tèid co-theacsa a chall tuilleadh eadar seòladh dhuilleagan.
 - **Ceanglaichean gnìomh a’ phlugain** — nochdaidh ceanglaichean luatha gu Roghainnean agus Clàr nan Comasan a-nis air sgrìn **Plugain → Plugain Stàlaichte** WordPress fo thuairisgeul a’ phlugain.
 
-### Leasaichte
+### Leasaichte {#improved}
 
 - **Ath-fheuchainn tùs dhealbhan** — feuchaidh an t-àidseant a-nis ris a h-uile tùs dhealbhan an-asgaidh a chaidh a rèiteachadh mus tuit e air ais gu dealbh a ghineadh le AI ma dh’fhàillig an luchdadh a-nuas.
 - **Pannal fiosrachaidh a’ mhodail** — an-còmhnaidh ri fhaicinn ann am bann-cinn a’ chat; chan eil e falaichte tuilleadh às dèidh a’ chiad teachdaireachd.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ath-dhealbhadh widget a’ chat** — tha ìomhaigh AI aonaichte a’ cur an àite an avatar ghnàthaichte a bh’ ann roimhe; co-chòrdail ris an t-siostam àidseantan togte.
 - **Dèanamh cheanglaichean de URLan** — tha URLan a nochdas ann an teachdaireachdan siostaim agus builgeanan teachdaireachd mearachd a-nis air an taisbeanadh mar cheanglaichean a ghabhas briogadh.
 
-### Ceartaichte
+### Ceartaichte {#fixed}
 
 - **So-ruigsinneachd nan comasan** — chaidh tuairisgeulan, iomraidhean system prompt, agus co-thaobhadh namespace a cheartachadh gus am bi a h-uile comas a’ nochdadh ann an liosta innealan an àidseint gu earbsach.
 - **Tasgadan sholaraichean** — tha solaraichean a-nis air an tasgadh air feadh an làraich tro chunntair tionndaidh, a’ cur casg air duilgheadasan sholaraichean seann-fhasanta air lìonraidhean multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Foillsichte air 2026-04-09
+## 1.4.0 — Foillsichte air 2026-04-09 {#140--released-on-2026-04-09}
 
-### Ùr
+### Ùr {#new-1}
 
 - **Àithne tomhais-luinge WP-CLI** (`wp gratis-ai-agent benchmark`) — ruithidh i pasgan tomhais-luinge Agent Capabilities v1 bhon loidhne-àithne airson CI pipelines agus sruthan-obrach measaidh mhodalan. Tha i a’ cur taic ri ruith a rèir ceist, tar-sgrìobhadh solaraiche/modail, agus às-chur JSON/CSV.
 - **Pasgan tomhais-luinge Agent Capabilities v1** — seata structaraichte de phromptan iom-fhillte, ioma-cheumach a chleachdas uachdar làn-chomais, le sgòradh agus aithris token/fad-ùine.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ceist tomhais-luinge làrach-lìn taigh-bìdh** (`q-restaurant-website`) — deuchainn deireadh-gu-deireadh a’ còmhdach clàradh CPT, design system, seòladh, agus lorg plugin.
 - **Plugins ceangail solaraiche AI** air an cur ri WordPress Playground blueprints airson rèiteachadh leasachaidh ionadail nas luaithe.
 
-### Leasaichte
+### Leasaichte {#improved-1}
 
 - README air ùrachadh le sgrìobhainnean ceangail solaraiche AI agus stiùireadh rèiteachaidh.
 
-### Ceartaichte
+### Ceartaichte {#fixed-1}
 
 - 25 fàilligidhean deuchainn PHPUnit air meur `main` air am fuasgladh.
 - Cruth URL sgaoilidhean GitHub ann an `blueprint.json` air a cheartachadh.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Tha notaichean sgaoilidh roimhe gan cumail ann an tasglann a’ plugin._

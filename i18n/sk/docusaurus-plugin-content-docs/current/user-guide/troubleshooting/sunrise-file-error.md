@@ -3,7 +3,7 @@ title: Chyba s súborem Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Chyba instalácie súboru sunrise.php
+# Chyba instalácie súboru sunrise.php {#error-installing-the-sunrise-file}
 
 Súbor `sunrise.php` je špeciálny súbor, ktorý WordPress hľadá počas svojej inicializácie (bootstrappingu). Aby sa WordPress dostal k zoznamu tohto súboru, musí byť umiestnený v priečastke **wp-content**.
 

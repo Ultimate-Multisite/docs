@@ -3,13 +3,13 @@ title: Kohandatud arendusabi
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kuidas saada oma eritihteise arendusabi?
+# Kuidas saada oma eritihteise arendusabi? {#how-to-get-custom-development-help-from-codeable}
 
 Mõnikord meil on vaja tõesti hästi kohandatud lahendusi, et meie võrereklaid täpselt nii nagu me soovisime. Kui otsite mida, siis soovitamme [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), kus leiate kogemustatud arendajad Ultimate Multisite ekspertiididega.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) on pl platforma, mis ühendab kliendid kvalifitseeritud WordPress freelance arendajatega ja suutlik tegevus projektide erineva suurusega. Nad on põhjalik taotlusprotsess, et tagada, et te leidub ekspertiidega, kes on spetsiaalselt kvalifitseeritud teie mõtlemise järgi tehtava töö jaoks.
 
-### Kuidas luua projekti Codeabel?
+### Kuidas luua projekti Codeabel? {#how-to-create-a-project-in-codeable}
 
 Enneige [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ja klõpsake **Start a Project** (Projekti algamine) nupulile.
 

@@ -3,9 +3,9 @@ title: Sürüm Notları
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Sürüm Notları
+# Sürüm Notları {#release-notes}
 
-## Sürüm 2.13.0 — 2026-06-05 tarihinde yayınlandı
+## Sürüm 2.13.0 — 2026-06-05 tarihinde yayınlandı {#version-2130--released-on-2026-06-05}
 
 - Yeni: Tenant ağlarının yönetilen eylemler için müşterileri ana siteye geri yönlendirebilmesi amacıyla müşteri hesabı, checkout, faturalandırma, site, fatura, template değiştirme ve domain mapping akışları için sovereign-tenant desteği eklendi.
 - Yeni: Kaydedilmiş bir faturalandırma anlaşması, subscription veya vault token eksik olduğunda gateways’in otomatik yenilemeyi devre dışı bırakabilmesi için yinelenen memberships’e renewal-credential kontrolleri eklendi.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Membership yenilemeleri, sona erme gösterimi ve ödeme tahsilatı uç durumları artık anında sona ermeleri, çökmeleri veya kaçırılan zorunlu ödemeleri önlüyor.
 - İyileştirildi: WordPress uyumluluğu 7.0’a kadar test edildi, production Vue varlıkları npm kaynaklarından yeniden oluşturuldu ve Cypress uçtan uca kapsamı artık daha fazla checkout, kurulum, SSO ve gateway akışını çalıştırıyor.
 
-## Sürüm 2.12.0 — 2026-05-15 tarihinde yayınlandı
+## Sürüm 2.12.0 — 2026-05-15 tarihinde yayınlandı {#version-2120--released-on-2026-05-15}
 
 - Yeni: Hostinger (hPanel), domain mapping entegrasyonuyla desteklenen bir host sağlayıcı olarak eklendi
 - Yeni: Site Exporter artık ağ genelinde site geri yüklemeyi kolaylaştırmak için ağ içe aktarma paketlerini işliyor
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Site Exporter CLI artık doğru varsayılan ağ site seçimini koruyor
 - İyileştirildi: Paketlenmiş wp-cli plugin paketinden kaldırıldı, plugin boyutu azaltıldı
 
-## Sürüm 2.11.0 — 2026-05-11 tarihinde yayınlandı
+## Sürüm 2.11.0 — 2026-05-11 tarihinde yayınlandı {#version-2110--released-on-2026-05-11}
 
 - Yeni: Site dışa aktarımları artık kendi kendine önyüklenen bir `index.php` içeriyor; böylece ZIP, ayrı bir plugin kurulumu olmadan yeni bir hosta kurulabilir.
 - Yeni: Ağ dışa aktarma, yöneticilerin Site Export yönetici sayfasından tüm alt siteleri tek bir arşivde dışa aktarmasına olanak tanır.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Yeni: Checkout form düzenleyicisi, zorunlu alan yapılandırılmadan bir product eklendiğinde uyarır.
 - Yeni: İçe/Dışa Aktarma ayarları sekmesi artık kapsamını açıkça tanımlıyor ve doğrudan Site Export aracına bağlantı veriyor.
 
-## Sürüm 2.10.0 — 2026-05-05 tarihinde yayınlandı
+## Sürüm 2.10.0 — 2026-05-05 tarihinde yayınlandı {#version-2100--released-on-2026-05-05}
 
 - Yeni: Sorunsuz gateway yapılandırması için OAuth bayrak kapısıyla manuel kimlik bilgisi girişi için PayPal yönlendirmeli kurulum sihirbazı.
 - Yeni: Template değiştirme müşteri paneli, mevcut-template kartı, kalıcı grid ve **Mevcut template’i sıfırla** düğmesiyle yeniden tasarlandı.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Filtrelenmiş SSO yolu tüm giriş akışlarında dikkate alındı.
 - Düzeltme: Boş site kimliği seçenekleri kaydetmede korundu.
 
-## Sürüm 2.9.0 — 2026-04-30 tarihinde yayınlandı
+## Sürüm 2.9.0 — 2026-04-30 tarihinde yayınlandı {#version-290--released-on-2026-04-30}
 
 - Yeni: Tek site dışa ve içe aktarma **Araçlar > Dışa ve İçe Aktar** altında eklendi.
 - Düzeltme: Dışa aktarma ZIP dosyaları artık kimliği doğrulanmış bir indirme endpoint’i üzerinden sunuluyor.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Tur ID’leri kullanıcı ayarları anahtarlarında alt çizgilere normalleştirildi.
 - İyileştirildi: Daha iyi uyumluluk için Alchemy/Zippy yerine artık ZipArchive kullanılıyor.
 
-## Sürüm 2.8.0 — 2026-04-29
+## Sürüm 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Yeni: Jumper'ı Etkinleştir geçişi Other Options ayarları UI'ına eklendi.
 - Yeni: Checkout formları liste tablosuna durum sütunu eklendi.

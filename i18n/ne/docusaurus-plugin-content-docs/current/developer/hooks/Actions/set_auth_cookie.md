@@ -4,11 +4,11 @@ title: कार्य - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 प्रमाणीकरण कुकी सेट हुनु ठीक अघि ट्रिगर हुन्छ।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | प्रमाणीकरण योजना। मानहरूमा 'auth' वा 'secure_auth' समावेश छन्। |
 | $token | `string` | यस कुकीका लागि प्रयोग गर्नुपर्ने प्रयोगकर्ताको session token। |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) मा पङ्क्ति 124 मा परिभाषित।

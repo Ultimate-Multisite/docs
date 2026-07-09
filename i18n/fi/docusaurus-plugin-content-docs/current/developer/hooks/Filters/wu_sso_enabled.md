@@ -4,25 +4,25 @@ title: Suodatin - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Suodatin: wu_sso_enabled
+# Suodatin: wu_sso_enabled {#filter-wussoenabled}
 
 Ota käyttöön / poista käytöstä toimialueiden välinen single-sign-on-ominaisuus.
 
 Suodata tätä arvoa poistaaksesi single-sign-on kokonaan käytöstä tai ottaaksesi sen sen sijaan ehdollisesti käyttöön.
 
-## Parametrit
+## Parametrit {#parameters}
 
 | Nimi | Tyyppi | Kuvaus |
 |------|------|-------------|
 | $enabled | `bool` | Pitäisikö SSO ottaa käyttöön? True tarkoittaa päällä, epätosiin rinnastettava pois päältä. |
 
-### Alkaen
+### Alkaen {#since}
 
 - 2.0.11
-### Lähde
+### Lähde {#source}
 
 Määritelty tiedostossa [`inc/sso/class-sso.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-sso.php#L110) rivillä 110
 
 
-## Palauttaa
+## Palauttaa {#returns}
 Onko SSO käytössä vai ei.

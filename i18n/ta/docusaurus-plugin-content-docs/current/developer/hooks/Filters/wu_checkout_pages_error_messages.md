@@ -4,21 +4,21 @@ title: வடிகட்டி - wu_checkout_pages_error_messages
 sidebar_label: wu_checkout_pages_error_messages
 _i18n_hash: 513f1f012abbaedc950e0d12f4fc01f4
 ---
-# Filter: wu_checkout_pages_error_messages
+# Filter: wu_checkout_pages_error_messages {#filter-wucheckoutpageserrormessages}
 
 பிழைச் செய்திகளை வடிகட்டுகிறது.
 
-## அளவுருக்கள்
+## அளவுருக்கள் {#parameters}
 
 | பெயர் | வகை | விளக்கம் |
 |------|------|-------------|
 | $messages | `array` | பிழைச் செய்திகளின் பட்டியல். |
 
-### அறிமுகம்
+### அறிமுகம் {#since}
 
 - 2.1.1
-### மூலம்
+### மூலம் {#source}
 
 [`inc/checkout/class-checkout-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout-pages.php#L218) என்ற கோப்பில், 218 வரியில் வரையறுக்கப்பட்டுள்ளது.
 
-## திரும்ப அளிப்பது
+## திரும்ப அளிப்பது {#returns}

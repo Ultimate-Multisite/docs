@@ -4,11 +4,11 @@ title: Bộ lọc - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filter: wu_country_get_states
+# Filter: wu_country_get_states {#filter-wucountrygetstates}
 
 Trả về danh sách các tiểu bang của quốc gia này.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Trả về danh sách các tiểu bang của quốc gia này.
 | $country_code | `string` | Mã ISO hai chữ cái của quốc gia. |
 | $current_country | `\WP_Ultimo\Country\Country` | Một thể hiện (instance) của lớp hiện tại. |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 Được định nghĩa trong [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) tại dòng 86
 
 
-## Returns
+## Returns {#returns}
 Danh sách các tiểu bang đã được lọc.

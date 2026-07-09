@@ -3,7 +3,7 @@ title: سجل تغييرات كابتشا
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# سجل تغييرات Captcha
+# سجل تغييرات Captcha {#captcha-changelog}
 
 الإصدار: 1.5.0 - صدر في 2026-05-22
 * جديد: محدِّد معدّل بإيقاف صارم — يحسب كل طلب GET وPOST على الأسطح المحمية بـ captcha (wp-login / register / lost-password / التعليقات، WooCommerce my-account / checkout / pay-for-order، Ultimate Multisite checkout / inline-login) ويردّ بـ HTTP 429، و`Retry-After` header، وسكون tarpit عشوائي (1–5 ثوانٍ، بحد أقصى صارم 15 ثانية).

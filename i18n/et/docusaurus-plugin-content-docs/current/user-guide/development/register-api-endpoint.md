@@ -3,7 +3,7 @@ title: API-põhja registreerimine
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite registre API punkt
+# Ultimate Multisite registre API punkt {#the-ultimate-multisite-register-api-endpoint}
 
 Sellel õppemoodus tutvustab, kuidas kasutada Ultimate Multisite /register API endpunkti uue kliendi tervikliku juhatise protsessi loomiseks oma võrku ja kuidas seda Zapieriga teha.
 
@@ -29,11 +29,11 @@ Valige **Enable API** ja saanud oma API-kujutused.
 
 Nüüd uurime endpunktit ja luuame siis Zapieris registreerimise toimiku (action).
 
-## Endpunkti keha parametrid
+## Endpunkti keha parametrid {#endpoint-body-parameters}
 
 Loomame üle minimaalsele tegevusolevale, mida me peame endpuntile saatma. Artikkel lõpuks annab täieliku kutsuga.
 
-### Customer
+### Customer {#customer}
 
 See on teel, mis on vajalik kasutaja ja Ultimate Multisite kliendi loomiseks:
 
@@ -43,25 +43,25 @@ On onnistub on saati saab esile anda oma võrku luuan kliendile loodud ID. Kui s
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Liikumine** (Membership)
+### **Liikumine** (Membership) {#membership}
 
 Meil on vaja ainult selle objekti sisema Membership Statusi teavet.
 
 "membership" { "status" : "string", // üks "pending", "active", "trialing", "expired", "on-hold", "canceled" }
 
-### **Tooted** (Products)
+### **Tooted** (Products) {#products}
 
 Toodetele antakse massiiv, kus on 1 või rohkem toote ID oma võrku. Pärnige ette: see endpoint ei luua tooteid. Loe Ultimate Multisite dokumentatsioon paremini teada toote loomise endpointi kohta.
 
 **"products" : [1,2],**
 
-### **Makse** (Payment)
+### **Makse** (Payment) {#payment}
 
 Kuten Membershipiga, meil on vaja ainult statusi.
 
 **"payment" { "status" : "string", // üks "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" }**
 
-### **Veebileht** (Site)
+### **Veebileht** (Site) {#site}
 
 Ja korras lõpetamiseks meil on veebilehti URL ja pealkiri, mõlemad Site objekti sisema.
 
@@ -69,13 +69,13 @@ Ja korras lõpetamiseks meil on veebilehti URL ja pealkiri, mõlemad Site objekt
 
 Register endpointi tagastandmine annab massivi uuest luudud liiklumite teavet.
 
-## Toimija loomine Zapieris (Creating an action in Zapier)
+## Toimija loomine Zapieris (Creating an action in Zapier) {#creating-an-action-in-zapier}
 
 Uue ja tugevama konto loomise endpointiga saad kasutada ka uut toimijat zapieris.
 
 Kas te tead, kuidas kasutada ja nautida kõik, mida uus versioon zapieri pakub? Loe rohkem siit. (link?)
 
-### Toimija loomine
+### Toimija loomine {#creating-an-action}
 
 Selgitame paremini Zapieriga registreerimise endpointi kasutamiseks paremini illustreerimiseks luojame integreerimise Google Formidega. Iga kord, kui seda forma täidetakse ja teave salvestatakse forma vastuste lehel, loodud on Ultimate Multisite võrku uue liides.
 
@@ -105,7 +105,7 @@ Informatsioonid seadistatud pärast, jätkake lõplikku testi. Viimisel ekraanil
 
 Testige uut zapit ja see peaks õnnestult lõpetama. Kui ilmneb vigu, kontrollige kõik väljad ja kas nad lähedakse korralt. Kuna teeb palju informatsiooni, mõned asjad võivad jääda märkamata.
 
-### Täielik endpointi parametrid
+### Täielik endpointi parametrid {#complete-endpoint-parameters}
 
 Siin on täielik kutsutud ja kõigi võimalikud väljade võimalused, mida saab lähedada.
 

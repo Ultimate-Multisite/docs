@@ -11,17 +11,17 @@ _i18n_hash: ee036a85eb635b4b503c94798251e839
 - Fix: Nasulbad ang fatal errors ug double-initialization issues pagka-load sa plugin
 - Improved: Gipadugang ang check-env npm script aron ang developer environments makakompleto og self-configuration sa unang pagpadagan
 
-### 1.0.3
+### 1.0.3 {#metered-plans-changelog}
 * Gi-update ngadto sa Plugin Update Checker v5
 * Gipadugang ang modern WordPress plugin headers
 * Gipaayo ang compatibility sa pinaka-latest nga mga bersyon sa WordPress
 * Gipalambo ang performance sa usage tracking
 
-### 1.0.2
+### 1.0.2 {#103}
 * Mga pag-ayo sa bug ug pagpaayo sa performance
 * Gipalambo ang usage reporting
 
-### 1.0.0
+### 1.0.0 {#102}
 * Initial release
 * Core metered billing functionality
 * Usage tracking ug overage calculation

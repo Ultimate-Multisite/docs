@@ -4,11 +4,11 @@ title: Filter - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params
+# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Menapis parameter yang digunakan untuk mencipta item baris pada Troli WooCommerce, sebelum mengalihkan pelanggan ke pembayaran (checkout) WooCommerce.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Menapis parameter yang digunakan untuk mencipta item baris pada Troli WooCommerc
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Instans item baris Ultimate Multisite. |
 | $wc_product | `\WC_Product` | Produk WooCommerce. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Ditakrifkan dalam [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) pada baris 662
 
 
-## Returns
+## Returns {#returns}
 Parameter item baris yang telah diubah suai.

@@ -4,11 +4,11 @@ title: Tātari - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Tātari: wu_limits_is_fluent_form_above_limit
+# Tātari: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
 
 Ka tirotiro mēnā ka whakaaetia tētahi momo puka kua hoatu ki tēnei plan Tukua ngā kaihanga plugin kia tātari i te uara whakahoki
 
-## Ngā tawhā
+## Ngā tawhā {#parameters}
 
 | Ingoa | Momo | Whakaahuatanga |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Ka tirotiro mēnā ka whakaaetia tētahi momo puka kua hoatu ki tēnei plan Tuku
 | $form_count | `int` | Te kaute puka o nāianei |
 | $quota | `int` | Te quota kua whakaaetia |
 
-### Mai i
+### Mai i {#since}
 
 - 1.0.0
-### Pūtake
+### Pūtake {#source}
 
 - Kua tautuhia ki [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L56) i te rārangi 56
 - Kua tautuhia ki [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L89) i te rārangi 89

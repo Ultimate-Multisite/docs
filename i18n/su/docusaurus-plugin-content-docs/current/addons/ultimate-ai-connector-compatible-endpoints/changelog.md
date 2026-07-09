@@ -3,9 +3,9 @@ title: Log Parobahan Panyambung AI Pamungkas pikeun Endpoint anu Cocog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector pikeun Endpoint anu Cocog Changelog
+# Ultimate AI Connector pikeun Endpoint anu Cocog Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Vérsi 2.0.0 — Dileupaskeun dina 2026-04-24
+## Vérsi 2.0.0 — Dileupaskeun dina 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Anyar: Pangrojong multi-provider — atur sababaraha AI endpoint jeung arahkeun paménta kalayan fallback otomatis di antara provider.
 * Perbaikan: Integrasi multi-provider SDK kalayan provider ID anu leres, URL pandaptaran, jeung scoping filter HTTP per provider.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Perbaikan: Ngaleungitkeun paménta HTTP anu ngahalangan anu dijalankeun dina unggal muatan kaca.
 * Ningkat: Workflow GitHub Actions di-upgrade ka Node.js 24.
 
-## Vérsi 1.0.0 — Rilis Mimiti
+## Vérsi 1.0.0 — Rilis Mimiti {#version-100--initial-release}

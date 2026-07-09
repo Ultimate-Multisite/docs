@@ -3,15 +3,15 @@ title: 'Lekcija 5: Projektovanje Vaših Planova'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lekcija 5: Dizajniranje vaših planova
+# Lekcija 5: Dizajniranje vaših planova {#lesson-5-designing-your-plans}
 
 Razine vaših planova nisu samo cjenovne kategorije — one odražavaju kako vaše nišne mušterije zapravo posluju. U ovoj lekciji dizajniraćete razine proizvoda koje odgovaraju stvarnim potrebama fitness poslova u različitim fazama.
 
-## Gdje smo stali
+## Gdje smo stali {#where-we-left-off}
 
 FitSite ima spremne tri predloška (Studio Essential, Gym Pro, Fitness Chain). Sada kreiramo planove koji određuju na šta klijenti imaju pristup i što plaćaju.
 
-## Razmišljanje u segmentima korisnika
+## Razmišljanje u segmentima korisnika {#thinking-in-customer-segments}
 
 Greška koju većina ljudi pravi je dizajniranje planova oko tehničkih funkcija (skladište, propusnost, broj stranica). Vaše nišne mušterije ne razmišljaju na taj način. Vlasnik teretane razmišlja o tome što mu je potrebno da bi poslovao.
 
@@ -25,11 +25,11 @@ Za fitness studije, postoje tri prirodna segmenta:
 
 Vaši planovi bi trebali odgovarati ovim segmentima, a ne proizvolnim paketima funkcija.
 
-## Kreiranje FitSite planova
+## Kreiranje FitSite planova {#creating-the-fitsite-plans}
 
 Idite na **Ultimate Multisite > Products > Add Product** za svaki plan.
 
-### Plan 1: FitSite Starter — 49 $/mjesečno
+### Plan 1: FitSite Starter — 49 $/mjesečno {#plan-1-fitsite-starter----49month}
 
 **Ciljna grupa**: Samostalni treneri i mali studiji
 
@@ -59,7 +59,7 @@ Idite na **Ultimate Multisite > Products > Add Product** za svaki plan.
 - Vaša odabrana tema: Obavezno aktivirati
 - Sve ostale teme: Sakriveno
 
-### Plan 2: FitSite Growth — 99 $/mjesečno
+### Plan 2: FitSite Growth — 99 $/mjesečno {#plan-2-fitsite-growth----99month}
 
 **Ciljna grupa**: Uspostavljene teretane u jednoj lokaciji
 
@@ -85,7 +85,7 @@ Idite na **Ultimate Multisite > Products > Add Product** za svaki plan.
 - Grupa planova: FitSite Plans
 - Redni broj proizvoda: 2
 
-### Plan 3: FitSite Pro — 199 $/mjesečno
+### Plan 3: FitSite Pro — 199 $/mjesečno {#plan-3-fitsite-pro----199month}
 
 **Ciljna grupa**: Fitness lanci s više lokacija
 
@@ -109,7 +109,7 @@ Idite na **Ultimate Multisite > Products > Add Product** za svaki plan.
 - Grupa planova: FitSite Plans
 - Redni broj proizvoda: 3
 
-## Postavljanje grupe planova
+## Postavljanje grupe planova {#setting-up-the-plan-group}
 
 Grupa planova osigurava da klijenti mogu nadograditi ili sniziti svoj plan samo unutar porodice planova FitSite. Na tabu **Up & Downgrades** svakog plana:
 
@@ -118,7 +118,7 @@ Grupa planova osigurava da klijenti mogu nadograditi ili sniziti svoj plan samo 
 
 Ovo stvara jasan put nadogradnje: Starter → Growth → Pro.
 
-## Dodavanje "Order Bumps" (Dodatnih stavki porudžbe)
+## Dodavanje "Order Bumps" (Dodatnih stavki porudžbe) {#adding-order-bumps}
 
 Order bumps su dodani proizvodi koji se nude tijekom checkout procesa. Za FitSite, razmislite o:
 
@@ -128,7 +128,7 @@ Order bumps su dodani proizvodi koji se nude tijekom checkout procesa. Za FitSit
 
 Kreirajte ih kao proizvode tipa **Package** u Ultimate Multisite i povežite ih s odgovarajućim planovima.
 
-## Zašto ova struktura funkcionira
+## Zašto ova struktura funkcionira {#why-this-structure-works}
 
 - **Starter** uklanja barijere za ulazak — niska cijena, jednostavna ponuda, brzo stavlja trenere online
 - **Growth** dodaje funkcije koje teretane zapravo traže — rezervacije, galerije, custom domene
@@ -136,7 +136,7 @@ Kreirajte ih kao proizvode tipa **Package** u Ultimate Multisite i povežite ih 
 - **Order bumps** omogućuju klijentima da prilagode bez komplikovanja osnovnih planova
 - **Jasan put nadogradnje** znači da klijenti rastu s vama, umjesto da napuštaju
 
-## FitSite Mreža do sada
+## FitSite Mreža do sada {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Što smo izgradili u ovoj lekciji
+## Što smo izgradili u ovoj lekciji {#what-we-built-this-lesson}
 
 - **Tri razine planova** mapirane na stvarne fitness poslovne segmente
 - **Kontrola funkcija** korištenjem pluginova i kontrola predložaka Ultimate Multisite-a

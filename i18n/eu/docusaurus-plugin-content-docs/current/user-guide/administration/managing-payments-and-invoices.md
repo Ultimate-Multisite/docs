@@ -3,9 +3,9 @@ title: Pagamentak eta fakturak eskaintzea
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pagamendu eta Kontabilitateak Eskatzea
+# Pagamendu eta Kontabilitateak Eskatzea {#managing-payments-and-invoices}
 
-## Pagamendu Kontseilua
+## Pagamendu Kontseilua {#payment-settings}
 
 Pagamenduen hartzea hasten denian, pagamendu-er garrantzaria kontseilua konfiguratzea behar duzu. **Ultimate Multisite → Settings** funtziokoan jarraitu eta **Payment** tabira klik egin.
 
@@ -15,7 +15,7 @@ Hau da pagamendu kontseilua lapurtuaren burok:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### General Pagamendu Opsioak
+### General Pagamendu Opsioak {#general-payment-options}
 
 Kontseiluen umumbat, hauek konfiguratuko dituztezu:
 
@@ -24,7 +24,7 @@ Kontseiluen umumbat, hauek konfiguratuko dituztezu:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Pagamendu Lehenagileak (Payment Gateways)
+### Pagamendu Lehenagileak (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite-ek pagamendu lehenagile batzuk eskaintzen du. Harri eta konfiguratzea tabean egin dezakezu.
 
@@ -40,11 +40,11 @@ Lehenagile baten konfiguratzeko zehaztasuneko sektiona dago, hori da API keys et
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Modu (Sandbox Mode)
+### Sandbox Modu (Sandbox Mode) {#sandbox-mode}
 
 Pagamendu integrazioa "live" funtziatuko aurretik jartzeko, **Sandbox Mode** aktiboa izan daiteke. Sandbox modu aktibo dagoenean, ez dira pertsonal pagamenduak egin dira.
 
-## Pagamenduen Erakundea (Viewing Payments)
+## Pagamenduen Erakundea (Viewing Payments) {#viewing-payments}
 
 Ultimate Multisite-aren eskoldearen ondorioz, network-eko txikiko transaksion guztietara ikusteko **Payments** lapurtuaren funtziokoan jarraitu.
 
@@ -54,7 +54,7 @@ Pagamenduak status (konplikatuta, espera, ezarrituta, itzultu) edo transaksionak
 
 Pagamentu baten kopuratuan klik egin behar duzu jakinarazpenaren guztizko detaliak ikusteko, zehaztasunak, taldeak, kliunturri informazioa eta galdera-gaindutako datuak.
 
-## Invoices (Jakinarazpenak)
+## Invoices (Jakinarazpenak) {#invoices}
 
 Ultimate Multisite-ek kopuratu artean automatikoki jakinarazpenak ematen dituzte. Jakinarazpenaren mallu (template) eta numerazio formatua maila "Payment settings" (Pagamentu aukerak) dauden bat uste dezakezu.
 

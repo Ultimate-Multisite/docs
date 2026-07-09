@@ -3,7 +3,7 @@ title: 캡차 변경 기록
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha 변경 로그
+# Captcha 변경 로그 {#captcha-changelog}
 
 Version: 1.5.0 - 2026-05-22에 릴리스됨
 * 신규: 하드 스톱 속도 제한기 — captcha로 보호되는 표면(wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login)의 모든 GET 및 POST를 계산하고 HTTP 429, `Retry-After` header, 무작위 tarpit 대기(1–5초, 최대 15초로 엄격 제한)로 응답합니다.

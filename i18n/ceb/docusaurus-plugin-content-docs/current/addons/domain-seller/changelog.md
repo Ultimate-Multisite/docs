@@ -3,7 +3,7 @@ title: Tigbaligya og Domain nga Talaan sa mga Kausaban
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Changelog sa Domain Seller
+# Changelog sa Domain Seller {#domain-seller-changelog}
 
 Version 1.3.0 - Gipagawas niadtong 2026-06-02
 - Bag-o: Gidugang ang network-admin nga pahimangno kung ang balanse sa HostAfrica reseller moubos na kaayo
@@ -134,20 +134,20 @@ Version 1.0.0 - Gipagawas niadtong 2025-09-28
 * **Giayo:** Tanang deprecated v1 code gi-update ngadto sa v2 standards
 * **Gitangtang:** Legacy v1 compatibility (breaking change)
 
-### Miaging mga Version (v1 Legacy)
+### Miaging mga Version (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Giayo: Dili pagka-compatible sa Groundhogg CRM
 * Pahinumdom: Kini ang katapusang v1-compatible nga release
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Giayo: Gitangtang ang License Key field
 * Giayo: Nawala ang mga plan tab kung aktibo ang feature plugin
 * Gipauswag: Gidugang ang skip button sa registration field
 
-### Version 0.0.1 - Inisyal nga Release
+### Version 0.0.1 - Inisyal nga Release {#version-001---initial-release}
 
 * Basic nga OpenSRS integration alang sa WP Ultimo v1
 * Simple nga domain search ug registration

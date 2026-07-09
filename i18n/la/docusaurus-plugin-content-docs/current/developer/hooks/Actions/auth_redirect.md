@@ -4,19 +4,19 @@ title: Actio - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# Actio: auth_redirect
+# Actio: auth_redirect {#action-authredirect}
 
 Fit ante redirectionem authenticationis.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
 | $user_id | `int` | ID usoris. |
 
-### Ab
+### Ab {#since}
 
 - 2.8.0
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L223) ad lineam 223

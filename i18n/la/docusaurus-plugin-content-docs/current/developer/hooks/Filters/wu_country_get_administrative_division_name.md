@@ -4,11 +4,11 @@ title: Filtrum - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filtrum: wu_country_get_administrative_division_name
+# Filtrum: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Redit nomen elegans subdivisionum administrativarum patriae.
 
-## Parametra
+## Parametra {#parameters}
 
 | Nomen | Typus | Descriptio |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Redit nomen elegans subdivisionum administrativarum patriae.
 | $ucwords | `bool` | utrum verba litteris maiusculis scribamus. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instantia classis praesentis. |
 
-### Ex quo
+### Ex quo {#since}
 
 - 2.0.11
-### Fons
+### Fons {#source}
 
 Definitum in [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) ad lineam 250
 
 
-## Reddit
+## Reddit {#returns}
 Nomen divisionis mutatum.

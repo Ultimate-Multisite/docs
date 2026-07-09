@@ -3,9 +3,9 @@ title: Ukuqalisa Ngokuthuthukiswa Kwezengezo
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Ukuthuthukiswa kwe-Addon
+# Ukuthuthukiswa kwe-Addon {#addon-development}
 
-## Isakhiwo se-Addon
+## Isakhiwo se-Addon {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Isifanekiso Sefayela Eliyinhloko le-Addon
+## Isifanekiso Sefayela Eliyinhloko le-Addon {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Isibonelo se-Model Yangokwezifiso
+## Isibonelo se-Model Yangokwezifiso {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Ukuhlanganiswa Kwekhasi le-Admin
+## Ukuhlanganiswa Kwekhasi le-Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Ukuhlola i-Addon Yakho
+## Ukuhlola i-Addon Yakho {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## amaphoyinti okunweba e-v2.13.0
+## amaphoyinti okunweba e-v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 yengeza amaphoyinti okunweba amaningana awusizo kuma-addon ahlanganiswa nabaqashi abazimele, izizinda ze-checkout, noma i-DNS automation yabahlinzeki be-host.
 
-### Ama-URL e-SSO nokuphathwa kwe-main-site
+### Ama-URL e-SSO nokuphathwa kwe-main-site {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Izizinda eziyisisekelo zefomu le-checkout
+### Izizinda eziyisisekelo zefomu le-checkout {#checkout-form-base-domains}
 
 Sebenzisa `wu_checkout_form_base_domains` lapho i-addon yakho inikeza izizinda eziyisisekelo ezabiwe ezengeziwe okufanele ziziphathe njengezizinda ze-**Site URL** zefomu le-checkout esikhundleni sokuba ama-mapping angokwezifiso esayithi ngalinye:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite ijwayelanisa lawa ma-host futhi yeqe amarekhodi e-mapped-domain azenzakalelayo esayithi ngalinye awo.
 
-### Ukwakhiwa okuzenzakalelayo kwamarekhodi ezizinda
+### Ukwakhiwa okuzenzakalelayo kwamarekhodi ezizinda {#automatic-domain-record-creation}
 
 Sebenzisa `wu_should_create_domain_record_for_site` lapho i-addon yakho idinga ukuvimbela noma ukuhlehlisa ukwakhiwa okuzenzakalelayo kwamarekhodi ezizinda esayithi elisanda kwakhiwa:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Ukuhlanganiswa kwabahlinzeki be-host okulalela `wu_add_subdomain` kungakha amarekhodi e-DNS ohlangothini lomhlinzeki lapho amasayithi edalwa. Uma kungekho kuhlanganiswa okubhaliselwe leso senzo, Ultimate Multisite yeqa umsebenzi wangemuva ongenalutho.
 
-## Izinyathelo Ezilandelayo
+## Izinyathelo Ezilandelayo {#next-steps}
 
 - Buyekeza [Inkomba yama-Hooks](/developer/hooks) ukuze uthole izenzo nezihlungi ezitholakalayo
 - Bheka [Uhlolojikelele lwe-REST API](/developer/rest-api/overview) ukuze uthole ukuhlanganiswa kwe-API

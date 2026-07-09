@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
 
-# Superdav AI Agent
+# Superdav AI Agent {#superdav-ai-agent}
 
 Superdav AI Agent ni umufasha wa AI wa WordPress wateye imbere, wagura Gratis AI Agent akongeramo ubumenyi bujyanye na theme, ubushobozi bwongerewe bwo gushakisha kuri internet, ibiranga kubaka urubuga, n’imikoranire y’automation ishobora kongerwamo. Verisiyo 1.18.0 yongeramo ibikoresho byo gusoma Google Calendar, guhuza contact n’abitabira, amarembo yo kwemeza n’umuntu, gukuraho kwibutsa byisubiramo, imenyesha rya SMS rya TextBee, gutegura service ya Superdav icungwa, n’ipaki ya Advanced companion itangwa ukwabo igenewe imikorere y’abatekinisiye bizewe.
 
-## Ibiranga by’ingenzi
+## Ibiranga by’ingenzi {#key-features}
 
 - **Ubumenyi bujyanye na theme** — buhuza amabwiriza n’ubushobozi mu buryo bwikora hashingiwe kuri theme ya WordPress iri gukora n’ama plugins yashyizwemo
 - **Abatanga serivisi benshi bo gushakisha kuri internet** — hitamo hagati ya Brave Search na Tavily kugira ngo ubone ibisubizo by’ishakisha bikungahaye n’ubushobozi bw’ubushakashatsi bwimbitse
@@ -34,7 +34,7 @@ Superdav AI Agent ni umufasha wa AI wa WordPress wateye imbere, wagura Gratis AI
 - **Gutegura service ya Superdav icungwa** — huza imbuga zishyigikiwe na endpoints za Superdav zakiriwe, hakoreshejwe setup yikora aho gukora endpoint configuration intoki
 - **Ipaki ya Advanced companion** — ibikoresho by’abatekinisiye bizewe bitangwa ukwabyo bigenewe imikorere ya filesystem, database, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, na benchmark
 
-## Ibisabwa
+## Ibisabwa {#requirements}
 
 - WordPress 6.0 cyangwa irenzeho
 - PHP 8.1 cyangwa irenzeho
@@ -42,7 +42,7 @@ Superdav AI Agent ni umufasha wa AI wa WordPress wateye imbere, wagura Gratis AI
 - AI provider connector plugin ikora (Anthropic, OpenAI, cyangwa ihuye na byo)
 - Gratis AI Agent v1.9.0 cyangwa irenzeho (Superdav AI Agent yagura Gratis AI Agent)
 
-## Gushyiraho
+## Gushyiraho {#installation}
 
 1. Shyira dosiye za plugin muri `/wp-content/plugins/superdav-ai-agent`
 2. Koresha plugin unyuze kuri ecran ya **Plugins** muri WordPress
@@ -51,7 +51,7 @@ Superdav AI Agent ni umufasha wa AI wa WordPress wateye imbere, wagura Gratis AI
 
 Ipaki ya WordPress.org irimo ibiranga by’ibanze bya Superdav AI Agent. Ipaki ya Advanced companion yubakwa kandi igatangwa ukwabo ku bidukikije aho ibikoresho by’abatekinisiye bizewe bishyirwaho kandi bikemererwa mu buryo bweruye.
 
-## Gutangira vuba
+## Gutangira vuba {#quick-start}
 
 Iyo imaze gukoreshwa, Superdav AI Agent yongera ubushobozi installation yawe ya Gratis AI Agent mu buryo bwikora ikoresheje ubumenyi bujyanye na theme n’ubundi bushobozi bw’inyongera. Fungura panel ya **Gratis AI Agent** muri WordPress admin sidebar maze utangire gukoresha ibiranga bishya.
 
@@ -77,7 +77,7 @@ Suzuma ibikorwa bya Google Calendar byateguwe by’ejo maze utegure reminders z�
 Ohereza SMS reminder nyuma y’uko nemeye ubutumwa.
 ```
 
-## Ubumenyi bujyanye na theme
+## Ubumenyi bujyanye na theme {#theme-aware-skills}
 
 Superdav AI Agent itahura mu buryo bwikora theme yawe iri gukora n’ama plugins yashyizwemo, igashyira ubumenyi bukwiye bujyanye na theme muri context y’umufasha. Ubumenyi buhari burimo:
 
@@ -90,7 +90,7 @@ Superdav AI Agent itahura mu buryo bwikora theme yawe iri gukora n’ama plugins
 
 Reba [Ubumenyi bujyanye na theme](../../user-guide/configuration/theme-aware-skills) kugira ngo ubone amabwiriza arambuye kuri buri bumenyi.
 
-## Abatanga serivisi zo gushakisha kuri internet
+## Abatanga serivisi zo gushakisha kuri internet {#internet-search-providers}
 
 Superdav AI Agent v1.10.0 yongeramo **Tavily** nk’ubundi buryo bwa Brave Search ku bibazo byo gushakisha kuri internet. Providers zombi zitanga ibisubizo by’ishakisha bya real-time kandi zishobora gutegurwa muri **Gratis AI Agent → Settings → Advanced**.
 
@@ -101,7 +101,7 @@ Superdav AI Agent v1.10.0 yongeramo **Tavily** nk’ubundi buryo bwa Brave Searc
 
 Reba [Ishakisha rya Internet](../../user-guide/configuration/internet-search) ku mabwiriza yo gutunganya.
 
-## Imigendekere y’imirimo ya Calendar, Kwemeza, n’Itangazo
+## Imigendekere y’imirimo ya Calendar, Kwemeza, n’Itangazo {#calendar-approval-and-notification-workflows}
 
 Superdav AI Agent v1.18.0 yagura imigendekere y’imirimo yikora ikarenga imirimo y’ibirimo no kubaka site:
 
@@ -113,35 +113,35 @@ Superdav AI Agent v1.18.0 yagura imigendekere y’imirimo yikora ikarenga imirim
 
 Koresha ibi bikoresho ku bufasha buzi gahunda, gukurikirana abitabiriye, n’imigendekere y’imirimo y’ibyibutsa bikomeza gusaba isuzuma ry’umuntu mbere y’uko ubutumwa bworoshye bwohererezwa.
 
-## Amafishi yo Kuvugana ya Site Builder
+## Amafishi yo Kuvugana ya Site Builder {#site-builder-contact-forms}
 
 Agent ya Site Builder ubu ishobora gukora amafishi yo kuvugana iturutse mu buryo butaziguye muri chat interface. Saba gusa Site Builder gukora ifishi yo kuvugana, maze izahita imenya form plugin washyizemo (Contact Form 7, WPForms, Fluent Forms, cyangwa Gravity Forms) kandi itange ifishi yiteguye gukoreshwa.
 
 Reba [Amafishi yo Kuvugana ya Site Builder](../../user-guide/administration/site-builder-contact-forms) ku buyobozi burambuye.
 
-## Ibiranga Theme Builder
+## Ibiranga Theme Builder {#theme-builder-features}
 
 Theme Builder muri Superdav AI Agent v1.16.0 irimo ubushobozi bushya bukomeye:
 
-### Ikiganiro cyo Kuvumbura gifite Gushyiraho Ifoto
+### Ikiganiro cyo Kuvumbura gifite Gushyiraho Ifoto {#discovery-interview-with-photo-upload}
 
 Ikiganiro cyo kuvumbura cya Theme Builder ubu kirimo intambwe yo gushyiraho ifoto aho ushobora gutanga ubusizi bw’amashusho. Shyiraho amafoto y’ikirango cyawe, site z’abahatana, cyangwa ubusizi bw’igishushanyo kugira ngo ufashe Theme Builder gusobanukirwa icyerekezo cyawe cy’igishushanyo.
 
 Reba [Ikiganiro cyo Kuvumbura](./theme-builder/discovery-interview.md) ku buyobozi burambuye.
 
-### Icyerekezo cy’Igishushanyo gifite Igaragazambere rya Desktop na Mobile
+### Icyerekezo cy’Igishushanyo gifite Igaragazambere rya Desktop na Mobile {#design-direction-with-desktop-and-mobile-previews}
 
 Suzuma igishushanyo cyawe kuri desktop no ku bikoresho bya mobile mbere y’uko Theme Builder itanga theme yawe yuzuye. Reba igaragazambere ryo mu gihe nyacyo ku bipimo byinshi byisubiza.
 
 Reba [Icyerekezo cy’Igishushanyo](./theme-builder/design-direction.md) ku buyobozi burambuye.
 
-### Menus z’Ubwakiranyi
+### Menus z’Ubwakiranyi {#hospitality-menus}
 
 Theme Builder ubu ishobora gutanga amapaji ya menu y’ibiribwa n’ibinyobwa atunganijwe ku maresitora, cafes, bars, n’ibindi bucuruzi bw’ubwakiranyi. Menus zirimo ibiciro, ibisobanuro, amakuru y’imirire, n’imbuzi z’ibitera uburwayi.
 
 Reba [Menus z’Ubwakiranyi](./theme-builder/hospitality-menus.md) ku buyobozi burambuye.
 
-### Ubushobozi Bushya
+### Ubushobozi Bushya {#new-abilities}
 
 - **[Kora Logo SVG](./abilities/generate-logo-svg.md)** — kora logos za SVG zihariye hamwe no gusukura bikozwe mu buryo bwikora
 - **[Emeza Itandukaniro rya Palette](./abilities/validate-palette-contrast.md)** — genzura amabara abiri ku kubahiriza WCAG
@@ -149,7 +149,7 @@ Reba [Menus z’Ubwakiranyi](./theme-builder/hospitality-menus.md) ku buyobozi b
 
 Reba [Ibikoresho n’Iboneza](./theme-builder/tools.md) ku makuru yerekeye ibikoresho bihari n’igikoresho cya Tier 1 site-scrape.
 
-## Iboneza
+## Iboneza {#configuration}
 
 Igenamiterere ryose riri munsi ya **Gratis AI Agent → Settings** muri admin ya WordPress. Superdav AI Agent yongeramo amahitamo akurikira y’iboneza:
 
@@ -161,13 +161,13 @@ Igenamiterere ryose riri munsi ya **Gratis AI Agent → Settings** muri admin ya
 | **Google Calendar Credentials** | Tunganya uburyo bwo kugera kuri calendar kugira ngo agent ishobore gusoma calendars n’ibikorwa |
 | **TextBee SMS Provider** | Tunganya ibyangombwa bya TextBee ku migendekere y’imirimo y’amatangazo ya SMS yemejwe |
 
-## Advanced Companion Package
+## Advanced Companion Package {#advanced-companion-package}
 
 Superdav AI Agent v1.18.0 yongeramo Advanced companion package itangwa ukwandi ku migendekere y’imirimo y’abateza imbere bizewe. Ubu bushobozi ntibupakirwa muri core package ya WordPress.org. Shyira companion package gusa kuri sites aho abayobozi bizera mu buryo bweruye ko agent igera ku bikoresho by’abateza imbere.
 
 Ibikoresho bya Advanced birimo ibikorwa bya filesystem, kugera kuri database, WP-CLI, imigendekere y’imirimo ya REST dispatcher, utilities za plugin builder, git snapshots, abafasha bo gucunga abakoresha, n’ibikoresho bya benchmark. Gumana ibi bikoresho ku bayobozi bizewe gusa kandi usuzume iboneza rya approval-gate mbere yo kubikoresha kuri sites ziri mu musaruro.
 
-## Ibyanonosowe muri v1.18.0
+## Ibyanonosowe muri v1.18.0 {#improvements-in-v1180}
 
 - **Ubufasha bwa Google Calendar** — soma calendars n’ibikorwa byatunganijwe ku makora yikora azi gahunda
 - **Guhuza abo kuvugana n’abitabiriye** — huza abitabiriye calendar n’abakoresha site n’abo kuvugana
@@ -178,20 +178,20 @@ Ibikoresho bya Advanced birimo ibikorwa bya filesystem, kugera kuri database, WP
 - **Itangwa rya Advanced companion** — tangaza ibikoresho by’abateza imbere bizewe ukwabyo bitandukanye na core build ya WordPress.org
 - **Gukosora kwizerwa** — kunoza ihitamo rya model, request timeouts, imicungire ya default setup model, imicungire ya reasoning-text, ubuyobozi bwo kongera kugerageza, gukomeza calendar token, gukomeza reminder, gutangiza onboarding, gusubukura ubushobozi bwemejwe, n’ibibazo by’isuzuma ryo gupakira WordPress.org
 
-## Ibyanonosowe muri v1.16.0
+## Ibyanonosowe muri v1.16.0 {#improvements-in-v1160}
 
 - **AI Client cache** — ubu ishyigikiwe na transients kugira ngo amakuru akomeze kuboneka hagati y’ibisabwa bitandukanye, birinda gutakaza amakuru ku mirimo ya agent imara igihe kirekire
 - **Igikoresho cyo gusuzuma site cya Tier 1** — sd-ai-agent/site-scrape ubu kiraboneka ku buryo busanzwe muri Theme Builder kugira ngo gisesengure websites z’abahatana n’izitanga icyerekezo
 - **Imiyoboro y’ibikorwa ku murongo wa plugin** — yakosowe kandi yongera kwitwa amazina asobanutse
 
-## Ibyanonosowe muri v1.10.0
+## Ibyanonosowe muri v1.10.0 {#improvements-in-v1100}
 
 - **Ivugururwa ry’isanganisha rya WooCommerce** — ubu rikoresha WooCommerce APIs kavukire kugira ngo ryizere kurushaho kandi rihuze neza
 - **Kwisubiramo kuvugurura urutonde rw’abatanga serivisi** — bihita bitahura igihe plugins zakoreshejwe cyangwa zahagaritswe maze bikavugurura urutonde rw’abatanga serivisi bahari
 - **Umwubatsi wa site wanonosowe** — hanonosowe gahunda zo kubaka site z’ibyiciro byinshi, hamwe no kugaruka neza iyo habaye amakosa
 - **Ubushobozi bwumva theme** — ubushobozi bushya bune bwubakiwemo buhita bwihuzwa na theme yawe iri gukora
 
-## Gukosora amakosa muri v1.10.0
+## Gukosora amakosa muri v1.10.0 {#bug-fixes-in-v1100}
 
 - Hakosowe ubushobozi bwa `navigate-to` bwateraga imizenguruko idashira yo kongera gupakira kuri paji zimwe za admin
 - Hakosowe ubushobozi bwa `list-posts` butahuzaga neza amazina ya categories na tags na slugs
@@ -201,10 +201,10 @@ Ibikoresho bya Advanced birimo ibikorwa bya filesystem, kugera kuri database, WP
 - Hakosowe ibisubizo bya tools bya scalar bipfunyikwa neza mbere yo gusubizwa kuri AI
 - Hakosowe imibare y’imikoreshereze ikemura neza imiterere ya key y’ubushobozi ya kera igihe cyo kuzamura uva kuri versions zishaje
 
-## Ubufasha
+## Ubufasha {#support}
 
 Ku bufasha, sura [ultimatemultisite.com](https://ultimatemultisite.com) cyangwa ufungure ikibazo muri repository ya plugin.
 
-## Changelog
+## Changelog {#changelog}
 
 Reba [Changelog](./changelog) kugira ngo ubone amateka yuzuye ya versions.

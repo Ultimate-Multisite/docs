@@ -3,16 +3,16 @@ title: Ustawienia Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Ustawienia Gratis AI Agent
+# Ustawienia Gratis AI Agent {#gratis-ai-agent-settings}
 
 Ekran **Settings → Advanced** w Gratis AI Agent udostępnia konfigurację na poziomie administratora dla integracji backendowych. Ta strona dokumentuje przekazywanie opinii, klucze dostawców wyszukiwania, konfigurację zarządzanej usługi Superdav, kontrolki Google Calendar, ustawienia SMS TextBee oraz flagi funkcji w całej sieci.
 
-## Dostęp do ustawień
+## Dostęp do ustawień {#accessing-settings}
 
 1. W panelu administracyjnym WordPress przejdź do **Gratis AI Agent → Settings**.
 2. Kliknij kartę **Advanced**.
 
-## Konfiguracja endpointu opinii
+## Konfiguracja endpointu opinii {#feedback-endpoint-configuration}
 
 Endpoint opinii odbiera żądania POST od agenta AI za każdym razem, gdy użytkownik przesyła opinię za pomocą przycisku kciuka w dół, banera automatycznego monitu lub polecenia `/report-issue`.
 
@@ -21,7 +21,7 @@ Endpoint opinii odbiera żądania POST od agenta AI za każdym razem, gdy użytk
 | **Feedback Endpoint URL** | URL, który odbiera zgłoszenia opinii jako żądania HTTP POST z treścią JSON. |
 | **Feedback API Key** | bearer token wysyłany w `Authorization` header każdego żądania opinii. Pozostaw puste, jeśli Twój endpoint nie wymaga uwierzytelniania. |
 
-### Oczekiwany ładunek JSON
+### Oczekiwany ładunek JSON {#expected-json-payload}
 
 Twój endpoint opinii musi akceptować treść JSON zawierającą co najmniej następujące pola:
 
@@ -36,7 +36,7 @@ Twój endpoint opinii musi akceptować treść JSON zawierającą co najmniej na
 
 W ładunku mogą znajdować się dodatkowe pola w zależności od kontekstu rozmowy.
 
-### Wartości `triage_category`
+### Wartości `triage_category` {#triagecategory-values}
 
 Warstwa klasyfikacji AI przypisuje jedną z poniższych wartości do `triage_category` przed przekazaniem ładunku:
 
@@ -47,7 +47,7 @@ Warstwa klasyfikacji AI przypisuje jedną z poniższych wartości do `triage_cat
 | `inappropriate_content` | Odpowiedź zawierała treść, która nie powinna być pokazywana użytkownikom. |
 | `other` | Opinia nie pasowała do znanej kategorii. |
 
-### Uwierzytelnianie
+### Uwierzytelnianie {#authentication}
 
 Jeśli Twój endpoint wymaga uwierzytelniania, ustaw pole **Feedback API Key** na swój bearer token. Agent wysyła:
 
@@ -57,11 +57,11 @@ Authorization: Bearer <your-api-key>
 
 Jeśli pole **Feedback API Key** jest puste, żaden `Authorization` header nie jest wysyłany.
 
-### Wyłączanie zbierania opinii
+### Wyłączanie zbierania opinii {#disabling-feedback-collection}
 
 Pozostaw pola **Feedback Endpoint URL** i **Feedback API Key** puste. Przycisk kciuka w dół i interfejs opinii pozostają widoczne dla użytkowników, ale zgłoszenia nie są przekazywane do żadnej usługi zewnętrznej.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
 Również na karcie **Advanced** pole **Brave Search API Key** włącza funkcję [wyszukiwania w internecie](../configuration/internet-search).
 
@@ -73,7 +73,7 @@ Etykieta pola zawiera klikalny link do strony rejestracji Brave Search API. Pozo
 
 Zobacz [wyszukiwanie w internecie](../configuration/internet-search), aby zapoznać się z dokumentacją tej funkcji dla użytkowników końcowych.
 
-## Zarządzana usługa Superdav
+## Zarządzana usługa Superdav {#managed-superdav-service}
 
 Superdav AI Agent v1.18.0 dodaje zarządzane endpointy usługi Superdav oraz automatyczne provisionowanie połączeń dla obsługiwanych witryn. Użyj tych kontrolek, gdy Twoja witryna powinna łączyć się z hostowanym dostawcą zamiast ręcznie skonfigurowanego endpointu usługi.
 
@@ -85,7 +85,7 @@ Superdav AI Agent v1.18.0 dodaje zarządzane endpointy usługi Superdav oraz aut
 
 Po provisionowaniu zapisz ustawienia i zweryfikuj stan połączenia, zanim zaczniesz polegać na przepływach pracy usługi zarządzanej. Jeśli provisionowanie się nie powiedzie, przejrzyj wyświetlone wskazówki dotyczące ponowienia próby i potwierdź, że witryna ma uprawnienie do korzystania z hostowanego dostawcy.
 
-## Konfiguracja Google Calendar
+## Konfiguracja Google Calendar {#google-calendar-configuration}
 
 Gdy funkcje kalendarza Superdav AI Agent v1.18.0 są włączone, agent może odczytywać skonfigurowane kalendarze i szczegóły wydarzeń. Narzędzia kalendarza są zorientowane na odczyt i przydatne do przypomnień uwzględniających harmonogram, kontaktu z uczestnikami oraz dopasowywania kontaktów.
 
@@ -97,7 +97,7 @@ Gdy funkcje kalendarza Superdav AI Agent v1.18.0 są włączone, agent może odc
 
 Ogranicz dane logowania kalendarza do kalendarzy, których agent potrzebuje. Połącz ponownie lub rotuj dane logowania, jeśli stan wskazuje na wygasły token.
 
-## Powiadomienia SMS TextBee
+## Powiadomienia SMS TextBee {#textbee-sms-notifications}
 
 Superdav AI Agent v1.18.0 dodaje TextBee jako dostawcę SMS dla skonfigurowanych przepływów pracy powiadomień. Powiadomienia SMS powinny być połączone z bramkami zatwierdzania przez człowieka w przypadku wrażliwych lub skierowanych do użytkownika wiadomości.
 
@@ -109,16 +109,16 @@ Superdav AI Agent v1.18.0 dodaje TextBee jako dostawcę SMS dla skonfigurowanych
 
 Wyślij wiadomość testową tylko na numer należący do administratora, a następnie potwierdź działanie bramki zatwierdzania przed włączeniem zaplanowanych przypomnień lub przypomnień skierowanych do uczestników.
 
-## Flagi funkcji
+## Flagi funkcji {#feature-flags}
 
 Również wprowadzone w v1.9.0, karta **Settings → Feature Flags** udostępnia przełączniki dla opcjonalnej funkcjonalności. Każda flaga jest włączona albo wyłączona w całej sieci; obecnie nie ma nadpisania dla poszczególnych witryn.
 
-### Dostęp do flag funkcji
+### Dostęp do flag funkcji {#accessing-feature-flags}
 
 1. W panelu administracyjnym WordPress przejdź do **Gratis AI Agent → Settings**.
 2. Kliknij kartę **Feature Flags**.
 
-### Flagi kontroli dostępu
+### Flagi kontroli dostępu {#access-control-flags}
 
 | Flaga | Domyślnie | Opis |
 |---|---|---|
@@ -127,7 +127,7 @@ Również wprowadzone w v1.9.0, karta **Settings → Feature Flags** udostępnia
 | **Zezwól na dostęp subskrybentom** | Wyłączone | Gdy włączone, użytkownicy z rolą `subscriber` mogą używać interfejsu czatu, ale są ograniczeni do możliwości tylko do odczytu (bez tworzenia wpisów ani zmian ustawień). |
 | **Wyłącz dla osób bez członkostwa** | Wyłączone | Integruje się ze statusem członkostwa Ultimate Multisite. Gdy włączone, czat jest ukryty dla witryn, które nie mają aktywnego członkostwa. |
 
-### Flagi brandingu
+### Flagi brandingu {#branding-flags}
 
 | Flaga | Domyślnie | Opis |
 |---|---|---|
@@ -136,7 +136,7 @@ Również wprowadzone w v1.9.0, karta **Settings → Feature Flags** udostępnia
 | **Ukryj wybór agenta** | Wyłączone | Gdy włączone, użytkownicy nie mogą przełączać się między pięcioma wbudowanymi agentami. Bieżący agent jest ustawiony na stałe zgodnie z tym, co skonfigurowano jako domyślne w Settings → General. |
 | **Użyj ikony witryny jako awatara czatu** | Wyłączone | Zastępuje domyślną ikonę AI w nagłówku widżetu czatu ikoną witryny WordPress (ustawianą w Appearance → Customize → Site Identity). |
 
-### Flagi bezpieczeństwa automatyzacji
+### Flagi bezpieczeństwa automatyzacji {#automation-safety-flags}
 
 Superdav AI Agent v1.18.0 wprowadza bramki zatwierdzania przez człowieka oraz rekordy przypomnień dla bezpieczniejszych uruchomień automatyzacji. Te kontrolki mogą pojawiać się we flagach funkcji lub zaawansowanych ustawieniach automatyzacji, w zależności od zainstalowanego pakietu.
 
@@ -147,6 +147,6 @@ Superdav AI Agent v1.18.0 wprowadza bramki zatwierdzania przez człowieka oraz r
 | **Włącz narzędzia kalendarza** | Wyłączone do czasu skonfigurowania | Pozwala agentowi odczytywać skonfigurowane kalendarze i wydarzenia Google. |
 | **Włącz powiadomienia SMS** | Wyłączone do czasu skonfigurowania | Pozwala zatwierdzonym przepływom pracy wysyłać powiadomienia SMS TextBee po zapisaniu poświadczeń. |
 
-### Stosowanie zmian
+### Stosowanie zmian {#applying-changes}
 
 Kliknij **Zapisz ustawienia** po przełączeniu dowolnej flagi. Zmiany zaczynają obowiązywać natychmiast — czyszczenie cache ani ponowna aktywacja pluginu nie są wymagane.

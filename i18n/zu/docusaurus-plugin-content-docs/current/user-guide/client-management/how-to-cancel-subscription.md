@@ -3,7 +3,7 @@ title: Ungakukhansela kanjani okubhaliselwe
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Ngingakukhansela kanjani ukubhalisa kwami?
+# Ngingakukhansela kanjani ukubhalisa kwami? {#how-can-i-cancel-my-subscription}
 
 Uma unelayisensi ye-Ultimate Multisite, ungakhansela ukuvuselelwa kwayo nganoma yisiphi isikhathi osifunayo. Landela nje izinyathelo ezingezansi:
 

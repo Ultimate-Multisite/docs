@@ -4,11 +4,11 @@ title: Զտիչ - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Ֆիլտր՝ wu_wp_cli_enabled_sub_commands
+# Ֆիլտր՝ wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 Զտում է, թե որ sub_commands-ներն են միացված այս էության համար։
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 | $command_base | `string` | Հիմքը, որն օգտագործվում է հրամանում՝ անմիջապես արմատից հետո։ |
 | $this | `\Base_Manager` | Օբյեկտի նմուշը։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 2.0.0
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198)-ում՝ 198-րդ տողում

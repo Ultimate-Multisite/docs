@@ -3,17 +3,17 @@ title: Aronga Hoahoa
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Aronga Hoahoa
+# Aronga Hoahoa {#design-direction}
 
 Mā te taahiraa **Aronga Hoahoa** koe e āhei ai ki te arotake, ki te whakapai, ki te whakaoti hoki i te hoahoa ā-kanohi o tō theme i mua i tā Theme Builder whakaputa i te theme katoa.
 
-## Tirohanga Whānui
+## Tirohanga Whānui {#overview}
 
 I muri i te whakaotinga o te Uiuitanga Tūhura, ka whakaatu a Theme Builder i tō aronga hoahoa me te **tāhuatanga arokite mō te desktop me te pūkoro**. Mā konei ka taea e koe te kite tika i te āhua o tō hoahoa ki ngā pūrere rerekē i mua i tō whakaae ki te theme.
 
-## Ngā Wāhanga o te Aronga Hoahoa
+## Ngā Wāhanga o te Aronga Hoahoa {#design-direction-components}
 
-### 1. Papatae Tae
+### 1. Papatae Tae {#1-color-palette}
 
 Te kaupapa tae o tō theme, tae atu ki:
 
@@ -23,7 +23,7 @@ Te kaupapa tae o tō theme, tae atu ki:
 - **Ngā tae kūpapa** — ngā hina me ngā mā mō ngā papamuri me te kuputuhi
 - **Tae kuputuhi** — te tae kuputuhi matua mō te mārama o te pānui
 
-### 2. Momotuhi
+### 2. Momotuhi {#2-typography}
 
 Ngā kōwhiringa momotuhi mō:
 
@@ -33,14 +33,14 @@ Ngā kōwhiringa momotuhi mō:
 - **Teitei rārangi** — te mokowā i waenga i ngā rārangi mō te mārama o te pānui
 - **Taumaha momotuhi** — ngā rerekētanga matotoru, auau, me te māmā
 
-### 3. Tahora me te Mokowā
+### 3. Tahora me te Mokowā {#3-layout-and-spacing}
 
 - **Whānui ipu** — te whānui mōrahi mō te ihirangi
 - **Whakapāpaku me ngā tawhē** — te mokowā huri noa i ngā huānga
 - **Pūnaha tukutuku** — te tahora tīwae mō te hoahoa urupare
 - **Mokowā wāhanga** — te tawhiti i waenga i ngā huānga UI
 
-### 4. Ngā Huānga Ā-kanohi
+### 4. Ngā Huānga Ā-kanohi {#4-visual-elements}
 
 - **Kāhua pātene** — ngā hoahoa pātene matua, tuarua, tuatoru hoki
 - **Hoahoa kāri** — ngā tahora mō ngā poraka ihirangi
@@ -48,9 +48,9 @@ Ngā kōwhiringa momotuhi mō:
 - **Taitapa me ngā atarangi** — he hōhonutanga ā-kanohi māmā
 - **Pānga whakatere-ki-runga** — te whakaahua āhua tauwhitiwhiti
 
-## Tāhuatanga Arokite
+## Tāhuatanga Arokite {#preview-rendering}
 
-### Arokite Desktop
+### Arokite Desktop {#desktop-preview}
 
 Ka whakaatu te arokite desktop i tō hoahoa ki te whānui katoa (te tikanga 1200px, nui ake rānei):
 
@@ -59,7 +59,7 @@ Ka whakaatu te arokite desktop i tō hoahoa ki te whānui katoa (te tikanga 1200
 - Momotuhi me te mokowā nui
 - Ngā huānga ā-kanohi katoa ki te rahi katoa
 
-### Arokite Pūkoro
+### Arokite Pūkoro {#mobile-preview}
 
 Ka whakaatu te arokite pūkoro i tō hoahoa ki te whānui pūkoro (te tikanga 375px):
 
@@ -68,7 +68,7 @@ Ka whakaatu te arokite pūkoro i tō hoahoa ki te whānui pūkoro (te tikanga 37
 - Momotuhi me te mokowā kua whakatikaina
 - Ngā rahi pātene e pai ana mō te pā
 
-### Ngā Paenga Urupare
+### Ngā Paenga Urupare {#responsive-breakpoints}
 
 Ka tāhuatia e Theme Builder ngā arokite ki ēnei paenga:
 
@@ -79,9 +79,9 @@ Ka tāhuatia e Theme Builder ngā arokite ki ēnei paenga:
 | **Desktop** | 1200px | Desktop whānui-katoa |
 | **Desktop Nui** | 1920px | Whakaaturanga tino whānui |
 
-## Te Whakapai i Tō Hoahoa
+## Te Whakapai i Tō Hoahoa {#refining-your-design}
 
-### Te Mahi Whakatikatika
+### Te Mahi Whakatikatika {#making-adjustments}
 
 Ka taea e koe te whakapai i tō aronga hoahoa mā te:
 
@@ -91,7 +91,7 @@ Ka taea e koe te whakapai i tō aronga hoahoa mā te:
 4. **Whakahou tahora** — hurihia ngā whānui ipu me ngā tīwae tukutuku
 5. **Whakarite huānga** — whakarerekētia ngā kāhua pātene, ngā hoahoa kāri, me ērā atu
 
-### Ngā Whakahou Arokite
+### Ngā Whakahou Arokite {#preview-updates}
 
 Ka kitea ngā huringa i te wā tūturu:
 
@@ -100,7 +100,7 @@ Ka kitea ngā huringa i te wā tūturu:
 - Ka whakahoutia ngā paenga urupare katoa
 - Ka taea e koe te whakawhiti i waenga i ngā arokite hei manatoko i ngā huringa
 
-### Tirohanga Whakataurite
+### Tirohanga Whakataurite {#comparison-view}
 
 Whakatauritea tō aronga hoahoa ki:
 
@@ -108,7 +108,7 @@ Whakatauritea tō aronga hoahoa ki:
 - **Ngā hoahoa kaiwhakataetae** — whakatauritea ki ngā pae whakaaweawe
 - **Ngā putanga o mua** — hoki atu ki ngā aronga hoahoa o mua
 
-## Whakaaetanga Aronga Hoahoa
+## Whakaaetanga Aronga Hoahoa {#design-direction-approval}
 
 Ina makona koe ki tō hoahoa:
 
@@ -118,7 +118,7 @@ Ina makona koe ki tō hoahoa:
 4. **Whakaūngia te tahora** — tirohia te mokowā me te whakararangi
 5. **Whakaaetia te hoahoa** — haere tonu ki te whakaputanga theme
 
-## Ngā Taahiraa Panuku
+## Ngā Taahiraa Panuku {#next-steps}
 
 I muri i te whakaaetanga o tō aronga hoahoa:
 
@@ -127,7 +127,7 @@ I muri i te whakaaetanga o tō aronga hoahoa:
 3. Ka taea e koe te whakarite anō mā te whakamahi i te kaiwhakarite WordPress
 4. Haere tonu ki [Ngā Tahua Manaaki](./hospitality-menus.md), ki ētahi atu āhuatanga rānei
 
-## Ngā Tikanga Pai
+## Ngā Tikanga Pai {#best-practices}
 
 - **Whakamātauria ki ngā pūrere tūturu** — whakamahia ngā waea me ngā papa rorohiko tūturu mēnā ka taea
 - **Tirohia te mārama o te pānui** — whakaritea kia pānuihia te kuputuhi ki ngā rahi katoa
@@ -135,30 +135,30 @@ I muri i te whakaaetanga o tō aronga hoahoa:
 - **Whakaarohia te mahinga** — arotautia ngā whakaahua me ngā momotuhi mō te tere
 - **Whakamaheretia mō te ihirangi** — whakaritea kia pai te mahi o te tahora me tō ihirangi tūturu
 
-## Raparongoā
+## Raparongoā {#troubleshooting}
 
-### Kāore te Arokite e Whakahou
+### Kāore te Arokite e Whakahou {#preview-not-updating}
 
 - Tāmatahia te whārangi
 - Ūkuia te keteroki pūtirotiro
 - Whakamātauria tētahi pūtirotiro rerekē
 - Tirohia te hononga ipurangi
 
-### He Rerekē te Āhua o ngā Tae
+### He Rerekē te Āhua o ngā Tae {#colors-look-different}
 
 - Tirohia ngā tautuhinga tae o te aroturuki
 - Whakamātauria ki ngā pūrere rerekē
 - Manatokohia te rerekētanga tae mā ngā taputapu wāteatanga
 - Whakaarohia ngā kaiwhakataurite matapō-tae
 
-### Ngā Take Momotuhi
+### Ngā Take Momotuhi {#typography-issues}
 
 - Manatokohia kei te utaina ngā kōnae momotuhi
 - Tirohia te rahi momotuhi ki ngā paenga rerekē
 - Whakamātauria me te ihirangi tūturu
 - Whakaarohia te roa rārangi mō te mārama o te pānui
 
-## Tuhinga Pānga
+## Tuhinga Pānga {#related-documentation}
 
 - [Uiuitanga Tūhura](./discovery-interview.md) — kohikohia ngā mōhiohio hoahoa
 - [Ngā Tahua Manaaki](./hospitality-menus.md) — waihangatia ngā whārangi tahua whai-hanganga

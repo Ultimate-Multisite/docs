@@ -3,15 +3,15 @@ title: 'Leson 14: Ki sa k ap vini apre'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Leson 14: Sa k vini apre
+# Leson 14: Sa k vini apre {#lesson-14-what-comes-next}
 
 Ou bati yon platfòm sit entènèt nich depi nan zewo. FitSite an liy, li ap sèvi estidyo fizik, epi li ap jenere revni renouvlab. Dènye leson sa a gade ki kote pou ale apati isit la.
 
-## Kote nou te rete
+## Kote nou te rete {#where-we-left-off}
 
 FitSite se yon biznis k ap mache ak kliyan, operasyon, ak yon trajektwa kwasans. Kounye a nou reflechi sou sa k ap vini apre.
 
-## Rezo FitSite konplè a
+## Rezo FitSite konplè a {#the-complete-fitsite-network}
 
 Men tout sa nou te bati atravè 14 leson yo:
 
@@ -46,11 +46,11 @@ Rezo FitSite (Konplè)
     └── Plan wout pou konstwi ekip
 ```
 
-## Opsyon 1: Ale pi fon nan nich ou a
+## Opsyon 1: Ale pi fon nan nich ou a {#option-1-go-deeper-in-your-niche}
 
 Anvan ou elaji nan nouvo nich, konsidere ale pi fon nan fizik:
 
-### Sou-nich
+### Sou-nich {#sub-niches}
 
 - **Estidyo yoga** -- modèl espesyalize ak fonksyonalite meditasyon, retrèt, ak atelye
 - **Bwat CrossFit** -- swivi WOD, rezilta konpetisyon, fonksyonalite kominote
@@ -59,7 +59,7 @@ Anvan ou elaji nan nouvo nich, konsidere ale pi fon nan fizik:
 
 Chak sou-nich ka gen pwòp modèl li yo epi potansyèlman pwòp mak li, tout k ap mache sou menm rezo Ultimate Multisite la.
 
-### Fonksyonalite prim
+### Fonksyonalite prim {#premium-features}
 
 Bati fonksyonalite estidyo fizik yo ap peye anplis pou yo:
 
@@ -68,14 +68,14 @@ Bati fonksyonalite estidyo fizik yo ap peye anplis pou yo:
 - **Modèl blog fizik** -- estrikti kontni deja bati pou maketing kontni fizik
 - **Entegrasyon medya sosyal** -- piblikasyon otomatik orè klas ak mizajou
 
-### Ekspansyon jewografik
+### Ekspansyon jewografik {#geographic-expansion}
 
 Si ou te kòmanse lokalman, elaji nan:
 
 - Lòt vil nan peyi ou
 - Lòt peyi (itilize [fonksyonalite lokalizasyon](/user-guide/localization/translating) Ultimate Multisite yo pou sipòte plizyè lang)
 
-## Opsyon 2: Elaji nan nich ki toupre yo
+## Opsyon 2: Elaji nan nich ki toupre yo {#option-2-expand-to-adjacent-niches}
 
 Pwosesis ou te swiv pou estidyo fizik yo mache pou nenpòt nich. Dezyèm nich ou pi fasil paske ou deja genyen:
 
@@ -83,7 +83,7 @@ Pwosesis ou te swiv pou estidyo fizik yo mache pou nenpòt nich. Dezyèm nich ou
 - Eksperyans operasyonèl
 - Yon playbook ki pwouve
 
-### Nich ki toupre fizik
+### Nich ki toupre fizik {#adjacent-niches-to-fitness}
 
 - **Byennèt ak spa** -- terapis masaj, spa lajounen, sant byennèt
 - **Klib espò** -- ekip espò amatè, lig, klib rekreyatif
@@ -91,7 +91,7 @@ Pwosesis ou te swiv pou estidyo fizik yo mache pou nenpòt nich. Dezyèm nich ou
 
 Sa yo pataje yon odyans ki sipèpoze ak fizik, kidonk maketing ak patenarya ou yo ka kontinye sèvi.
 
-### Nich konplètman nouvo
+### Nich konplètman nouvo {#completely-new-niches}
 
 Aplike kad ki soti nan Leson 2 a pou evalye nenpòt nich:
 
@@ -108,7 +108,7 @@ Chak nouvo nich bezwen:
 
 Enfrastrikti platfòm nan, fakti, ak pwosesis operasyonèl yo rete menm jan.
 
-## Opsyon 3: Bati yon platfòm platfòm
+## Opsyon 3: Bati yon platfòm platfòm {#option-3-build-a-platform-of-platforms}
 
 Lè ou rive nan echèl, ou ka kouri plizyè mak nich sou yon sèl rezo Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Lè ou rive nan echèl, ou ka kouri plizyè mak nich sou yon sèl rezo Ultimate 
 
 Chak mak gen pwòp modèl, plan, ak maketing li, men yo pataje enfrastrikti, fakti, ak pwosesis operasyonèl. Se la ekonomi Ultimate Multisite vin pisan -- yon sèl platfòm, anpil vètikal.
 
-### Plizyè rezo
+### Plizyè rezo {#multi-network}
 
 Pou separasyon konplè ant nich yo, konsidere [addon Multi-Network](/addons/multinetwork) ki pèmèt ou kouri plizyè rezo WordPress apati yon sèl enstalasyon.
 
-## Opsyon 4: Vann biznis la
+## Opsyon 4: Vann biznis la {#option-4-sell-the-business}
 
 Yon platfòm sit entènèt nich ak revni renouvlab, ti dezabònman, ak yon pozisyon mache klè se yon byen ki gen valè. Biznis SaaS yo anjeneral vann pou 3-5x revni anyèl.
 
@@ -134,7 +134,7 @@ Yon FitSite ak 200 kliyan nan $89 ARPU:
 
 Sa a pa yon rezilta garanti, men se yon rezilta reyalis pou yon platfòm nich ki byen jere.
 
-## Sa ou te aprann
+## Sa ou te aprann {#what-you-have-learned}
 
 Kou sa a te anseye ou yon pwosesis ou ka repete:
 
@@ -150,7 +150,7 @@ Kou sa a te anseye ou yon pwosesis ou ka repete:
 
 Nich la se estrateji a. Platfòm nan se zouti a. Ultimate Multisite fè zouti a posib. Konpreyansyon ou sou nich la fè li gen valè.
 
-## Kòmanse bati
+## Kòmanse bati {#start-building}
 
 Si ou te swiv ansanm ak FitSite, ou gen yon platfòm k ap mache. Si ou te li pou jwenn pwòp nich ou, retounen nan [Leson 2: Chwazi Nich Ou](lesson-2-picking-your-niche) epi kòmanse pwosesis la pou vètikal ou chwazi a.
 

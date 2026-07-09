@@ -4,11 +4,11 @@ title: Filtrs - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filtrs: wu_domain_has_correct_dns
+# Filtrs: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Ļauj plugin izstrādātājiem pievienot jaunas pārbaudes, lai definētu rezultātus.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 | $domain | `self` | Pašreizējā domēna instance. |
 | $domains_and_ips | `array` | DNS uzmeklēšanā atrasto domēnu un IP adrešu saraksts. |
 
-### Kopš
+### Kopš {#since}
 
 - 2.0.4
-### Avots
+### Avots {#source}
 
 Definēts [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) 455. rindā
 
 
-## Atgriež
+## Atgriež {#returns}
 Vai DNS ir pareizi iestatīts vai nav.

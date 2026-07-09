@@ -1,22 +1,22 @@
 ---
 title: Hostinger (hPanel) Integratsiyasi
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integratsiyasi
+# Hostinger (hPanel) Integratsiyasi {#hostinger-hpanel-integration}
 
-## Umumiy Ko'rinish
+## Umumiy Ko'rinish {#overview}
 
 Hostinger bu zamonaviy boshqaruv paneli bo'lgan hPanel bilan mashhur veb-hosting provayderidir. Ultimate Multisite Hostinger integratsiyasi Ultimate Multisite va Hostinger'ning hPanel o'rtasida domenlarni avtomatik sinxronlashni ta'minlaydi, bu esa sizga WordPress adminidan bevosita domen xaritalanishlarini va sousdomainlarni avtomatik boshqarish imkonini beradi.
 
-## Xususiyatlar
+## Xususiyatlar {#features}
 
 - hPanel'da avtomatik qo'shimcha domen yaratish
 - hPanel'da avtomatik sousdomain yaratish (sousdomain multisite o'rnatmalari uchun)
 - Xaritalanishlar o'chirilganda domenlarni olib tashlash
 - hPanelning domen boshqaruv API bilan silliq integratsiya
 
-## Talablar
+## Talablar {#requirements}
 
 Hostinger integratsiyasidan foydalanish uchun sizga quyidagilar kerak bo'ladi:
 
@@ -35,9 +35,9 @@ Ixtiyoriy ravishda, siz quyidagilarni ham belgilashingiz mumkin:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Default API endpoint
 ```
 
-## Sozlash Ko'rsatmalari
+## Sozlash Ko'rsatmalari {#setup-instructions}
 
-### 1. Hostinger API Tokeningizni Oling
+### 1. Hostinger API Tokeningizni Oling {#1-generate-your-hostinger-api-token}
 
 1. Hostinger hisobingizga kirib, hPanel ga kiring
 2. **Account Settings** → **API Tokens** (Hisob sozlamalari → API tokenlari) bo'limiga o'ting
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Default API e
    - Subdomain management (Sousdomainni boshqarish)
 6. Yaratilgan tokenni nusxalang va uni xavfsiz saqlang
 
-### 2. Hisob ID'ingizni Toping
+### 2. Hisob ID'ingizni Toping {#2-find-your-account-id}
 
 1. hPanel'da **Account Settings** → **Account Information** (Hisob sozlamalari → Hisob ma'lumotlari) bo'limiga o'ting
 2. Sizning Hisob ID'ingiz shu sahifada ko'rsatilgan
 3. Keyingi qadam uchun buni nusxalab saqlang
 
-### 3. wp-config.php ga Konstanta Qo'shish
+### 3. wp-config.php ga Konstanta Qo'shish {#3-add-constants-to-wp-configphp}
 
 Quyidagi konstantalarni `wp-config.php` faylingizga qo'shing:
 
@@ -69,7 +69,7 @@ Agar sizning Hostinger hisobingiz boshqa API endpointidan foydalansa, uni o'zgar
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Integratsiyani Faollashtirish
+### 4. Integratsiyani Faollashtirish {#4-enable-the-integration}
 
 1. WordPress admin panelida **Ultimate Multisite > Settings** ga kiring
 2. **Domain Mapping** (Domain Xaritasi) yorlig'iga o'ting
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. **Hostinger (hPanel)** integratsiyasini faollashtiring
 5. **Save Changes** (O'zgarishlarni saqlash) tugmasini bosing
 
-## Qanday Ishlaydi
+## Qanday Ishlaydi {#how-it-works}
 
-### Addon Domainlar
+### Addon Domainlar {#addon-domains}
 
 Ultimate Multisite da domen xaritasi qilganingizda:
 
@@ -87,7 +87,7 @@ Ultimate Multisite da domen xaritasi qilganingizda:
 2. Domen asosiy katalog (root directory)ga ishora qilish uchun sozlanadi
 3. Domen xaritasi o'chirilsa, integratsiya addon domenini avtomatik ravishda hPanel dan olib tashlaydi
 
-### Subdomainlar
+### Subdomainlar {#subdomains}
 
 Subdomain multisite o'rnatmalarida yangi sayt yaratilganda:
 
@@ -95,7 +95,7 @@ Subdomain multisite o'rnatmalarida yangi sayt yaratilganda:
 2. U subdomainni qo'shish uchun Hostinger API ga so'rov yuboradi
 3. Subdomain asosiy katalogga ishora qilish uchun sozlanadi
 
-## Muhim Eslatmalar
+## Muhim Eslatmalar {#important-notes}
 
 - Integratsiya hisobingiz bilan muloqot qilish uchun Hostingerning REST API dan foydalanadi
 - Sizning API tokeningiz domen va subdomainlarni boshqarish uchun kerakli imkoniyatlarga ega bo'lishi kerak
@@ -103,9 +103,9 @@ Subdomain multisite o'rnatmalarida yangi sayt yaratilganda:
 - API so'rovlari HTTPS orqali xavfsiz amalga oshiriladi
 - API tokeningizni xavfsiz saqlang va uni hech qachon ommabop etmang
 
-## Muammolarni Hal Qilish (Troubleshooting)
+## Muammolarni Hal Qilish (Troubleshooting) {#troubleshooting}
 
-### API Bog'lanish Muammolari
+### API Bog'lanish Muammolari {#api-connection-issues}
 
 API token'ingizning to'g'ri ekanligini va muddati tugmaganligini tekshiring
 
@@ -115,7 +115,7 @@ API token'ingiz domenlarni boshqarish uchun zarur ruxsatnomalarga ega ekanligini
 
 Hostinger hisobingiz faol va yaxshi holatda ekanligini tasdiqlang
 
-### Domen qo'shilmagan
+### Domen qo'shilmagan {#domain-not-added}
 
 Ultimate Multisite loglarida xatolik xabarlari bormi tekshiring
 
@@ -125,7 +125,7 @@ Hostinger hisobingiz addon domenlari uchun cheklovga yetmaganligini ta'minlang
 
 Domen Hostinger nomli serverlaringizga to'g'ri yo'naltirilganligini tasdiqlang
 
-### SSL sertifikati muammolari
+### SSL sertifikati muammolari {#ssl-certificate-issues}
 
 Integratsiya SSL sertifikatlarini chiqarishni amalga oshirmaydi
 
@@ -135,10 +135,10 @@ SSL sertifikatlarini hPanel'dagi **SSL/TLS** bo'limidan bevosita boshqara olasiz
 
 Alternativ ravishda, Hostingerning AutoSSL xususiyatidan foydalanish uchun Let's Encryptdan foydalanishingiz mumkin
 
-## Qo'llab-quvvatlash
+## Qo'llab-quvvatlash {#support}
 
 Hostinger integratsiyasi bilan qo'shimcha yordam uchun quyidagilarga murojaat qiling:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

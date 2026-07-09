@@ -3,7 +3,7 @@ title: Gukora Uburyo bwo gukoresha PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Gukoresha Impamukono ya PayPal (v2)
+# Gukoresha Impamukono ya PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**Uruko Muhereye: Iyi ndokuriye irere ku Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Nko Stripe, PayPal ni ikoranwa cyane ku gukoresha imihengo mu ntangiriro (online
 
 Uruko: Ukeneye uba na **PayPal Business account** kugira ngo uherehe API credential ikoreshwa mu gukorera iki gukoresha.
 
-## Gukoresha PayPal ku muryango wanyu
+## Gukoresha PayPal ku muryango wanyu {#enabling-paypal-on-your-network}
 
 Kugira ngo uva PayPal nk'impamukono itarimo ku muryango wawe, gukora ibi: soba **Ultimate Multisite > Settings > Payments** ugenda kandi ukorera (tick) igice cy'PayPal.
 
 ![Gukoresha PayPal mu buryo bwo gukoresha impamukono zikoreshwa](/img/config/settings-payment-gateways.png)
 
-## Gukoresha uburyo bwo gutangira (guided setup wizard)
+## Gukoresha uburyo bwo gutangira (guided setup wizard) {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 yagushyiramo uburyo bwo gutangira PayPal cyangwa gukora (setup wizard) mu buryo bwo gukoresha impamukono. Nyuma yo gukora ijiye PayPal, gukoresha uburyo bwo gutangira ku **Ultimate Multisite > Settings > Payments** kugira ngo wumve uko wumva uburyo bwo gukorera gateway kandi ukwibuka ko hari iki cyangwa ibindi byo mu gihe cy'ubwumvikane (credentials) bishobora guhindurwa mbere y'uko ufungura.
 
@@ -30,7 +30,7 @@ Uburyo bwo gutangira bushobora gukoresha uburyo bwo gutangira (setup paths) itan
 
 Niba nta OAuth option ufite mu wizard, gukemura uburyo bwo gukoresha amakuru ku muntu wowe (manual credential entry flow) uyu hejuru. Igihe cyangwa igikorwa cyo gukoresha amakuru kigera n'amakuru y'Umuco wa PayPal Business API mu gihe cyo gukora Ultimate Multisite 2.x.
 
-## Gukorera amakuru ya PayPal API
+## Gukorera amakuru ya PayPal API {#getting-the-paypal-api-credentials}
 
 Icyiza iyo ugiye gukoresha PayPal nk'umugambi w'ubwoko bwo gukoresha (payment gateway), uza gutegura byiciro bya **Username** ya PayPal API, **Password** ya PayPal API na **Signature** ya PayPal API.
 

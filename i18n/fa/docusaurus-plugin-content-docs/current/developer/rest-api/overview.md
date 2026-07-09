@@ -3,28 +3,28 @@ title: نمای کلی REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# مرجع REST API
+# مرجع REST API {#rest-api-reference}
 
-## پیکربندی پایه
+## پیکربندی پایه {#base-configuration}
 
 **URL پایه:** `{site_url}/wp-json/wu/v2/`
 **احراز هویت:** API Key و Secret (HTTP Basic Auth یا پارامترهای URL)
 
-## احراز هویت
+## احراز هویت {#authentication}
 
-### فعال‌سازی API
+### فعال‌سازی API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### دریافت اعتبارنامه‌های API
+### دریافت اعتبارنامه‌های API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### روش‌های احراز هویت
+### روش‌های احراز هویت {#authentication-methods}
 
 **HTTP Basic Auth (توصیه‌شده):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## نقاط پایانی اصلی
+## نقاط پایانی اصلی {#core-endpoints}
 
-### 1. API مشتریان
+### 1. API مشتریان {#1-customers-api}
 
 **مسیر پایه:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API سایت‌ها
+### 2. API سایت‌ها {#2-sites-api}
 
 **مسیر پایه:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API عضویت‌ها
+### 3. API عضویت‌ها {#3-memberships-api}
 
 **مسیر پایه:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API محصولات
+### 4. API محصولات {#4-products-api}
 
 **مسیر پایه:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API پرداخت‌ها
+### 5. API پرداخت‌ها {#5-payments-api}
 
 **مسیر پایه:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API دامنه‌ها
+### 6. API دامنه‌ها {#6-domains-api}
 
 **مسیر پایه:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## نقطه پایانی ثبت‌نام
+## نقطه پایانی ثبت‌نام {#registration-endpoint}
 
 نقطه پایانی `/register` یک جریان کامل پرداخت/ثبت‌نام ارائه می‌دهد:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## نقاط پایانی مستأجر مستقل
+## نقاط پایانی مستأجر مستقل {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 پوشش REST مستأجر مستقل را برای یکپارچه‌سازی‌هایی اضافه می‌کند که مستأجران ایزوله را فراهم‌سازی، بررسی یا تأیید می‌کنند.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` را به‌عنوان یک مانع پیش از راه‌اندازی در نظر بگیرید. جزئیات تأیید را بررسی کنید، مشکل اتصال میزبان پایگاه داده، صف، فراهم‌سازی کاربر یا مسیریابی را برطرف کنید، سپس تأیید را دوباره امتحان کنید.
 
-## پاسخ‌های خطا
+## پاسخ‌های خطا {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## صفحه‌بندی و فیلتر کردن
+## صفحه‌بندی و فیلتر کردن {#pagination-and-filtering}
 
 **پارامترهای پرس‌وجو:**
 ```http

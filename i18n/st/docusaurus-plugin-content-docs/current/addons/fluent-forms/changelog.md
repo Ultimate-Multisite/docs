@@ -3,7 +3,7 @@ title: Fluent Forms Lenane la liphetoho
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Lenane la diphetoho la Fluent Forms
+# Lenane la diphetoho la Fluent Forms {#fluent-forms-changelog}
 
 Version: 2.0.1 - E lokollotswe ka 2025-09-28
 

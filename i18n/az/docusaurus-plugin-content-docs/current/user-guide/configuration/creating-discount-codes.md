@@ -3,13 +3,13 @@ title: Endirim Kodları Yaratmaq
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Endirim Kodları Yaratmaq (v2)
+# Endirim Kodları Yaratmaq (v2) {#creating-discount-codes-v2}
 
 _**MÜHİM QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
 Ultimate Multisite ilə müştərilərinizin abunəlikləri üzrə endirim vermək üçün endirim kodları yarada bilərsiniz. Və onları yaratmaq çox asandır!
 
-## Endirim Kodları Yaratmaq və Redaktə Etmək
+## Endirim Kodları Yaratmaq və Redaktə Etmək {#creating-and-editing-discount-codes}
 
 Endirim kodu yaratmaq və ya redaktə etmək üçün **Ultimate Multisite > Discount Codes** yolunu izləyin.
 
@@ -87,7 +87,7 @@ Kuponunuz indi siyahınızdadır və oradan ona **redaktə etmək və ya silmək
 
 ###
 
-### URL Parametrlərindən İstifadə:
+### URL Parametrlərindən İstifadə: {#using-url-parameters}
 
 Əgər qiymət cədvəllərinizi fərdiləşdirmək və ya saytınız üçün gözəl bir kupon kodu səhifəsi qurmaq istəyirsinizsə və endirim kodunu ödəniş formunuza avtomatik tətbiq etmək istəyirsinizsə, bunu URL parametrləri vasitəsilə edə bilərsiniz.
 

@@ -3,11 +3,11 @@ title: Inkomba yama-Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Inkomba yama-Hooks
+# Inkomba yama-Hooks {#hooks-reference}
 
 Imibhalo ekhiqizwe ngokuzenzakalelayo yawo wonke **59 actions** kanye **118 filters** ku-Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Isebenza ngaphambi kokudluliselwa kokuqinisekisa.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Isebenza ngokushesha ngaphambi kokuthi ikhukhi yokuqinisekisa isethwe.
@@ -69,7 +69,7 @@ Imibhalo ekhiqizwe ngokuzenzakalelayo yawo wonke **59 actions** kanye **118 filt
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Isebenza ngemva kokuthi into igcinwe ku-database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Vumela abathuthukisi be-plugin ukuthi bengeze izenzo enqubweni yokuvula ukukhiya.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Ihlunga ubude besikhathi sokuphelelwa yisikhathi kwekhukhi yokuqinisekisa.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Ihlunga uhlelo lokuqondisa kabusha lokuqinisekisa.

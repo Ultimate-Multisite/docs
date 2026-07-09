@@ -3,13 +3,13 @@ title: Konfigurowanie płatności ręcznych
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Konfigurowanie płatności ręcznych (v2)
+# Konfigurowanie płatności ręcznych (v2) {#setting-up-manual-payments-v2}
 
 _**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 
 Płatności ręczne to sposób na zaoferowanie innych metod płatności, jeśli **Stripe** lub **PayPal** nie są dostępne dla Twoich użytkowników. Może to być przelew tradycyjny lub bankowy albo dowolna inna metoda płatności dostępna lokalnie dla Twoich użytkowników.
 
-## Jak włączyć płatności ręczne
+## Jak włączyć płatności ręczne {#how-to-enable-manual-payments}
 
 Konfiguracja płatności ręcznej jest bardzo prosta. Wystarczy włączyć ją w bramkach płatności i wpisać szczegółowe instrukcje dotyczące tego, jak użytkownik powinien wysłać płatność.
 
@@ -31,7 +31,7 @@ Otrzymają również wiadomość na Twojej stronie **Thank You** z instrukcjami 
 
 <!-- Screenshot unavailable: Strona Thank You pokazująca instrukcje płatności po checkout -->
 
-## Potwierdzanie płatności ręcznych
+## Potwierdzanie płatności ręcznych {#confirming-manual-payments}
 
 Aby potwierdzić płatność ręczną, przejdź do menu **Payments** na lewym pasku. Tam możesz zobaczyć wszystkie płatności w swojej sieci oraz ich szczegóły, w tym ich **status**. Płatność ręczna zawsze będzie mieć status **Pending**, dopóki nie zmienisz go ręcznie.
 

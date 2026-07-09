@@ -3,13 +3,13 @@ title: Hasaba alyş formaňyzy sazlamak
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Hasaba alyş formaňyzy sazlamak
+# Hasaba alyş formaňyzy sazlamak {#customizing-your-registration-form}
 
 WordPress platformasynda gurlan beýleki SaaS-laryň ählisinden tapawutly görünmegi üçin, Ultimate Multisite size **Töleg formalary** aýratynlygymyz bilen hasaba alyş we giriş sahypalaryňyzy sazlamaga mümkinçilik berýär.
 
 Täze müşderileri öwürmäge synanyşanyňyzda dürli çemeleşmeler bilen tejribe geçirmek üçin olar aňsat we çeýe usul bolsa-da, olar köplenç şahsylaşdyrylan hasaba alyş formalaryny döretmek üçin ulanylýar. Bu makalanyň maksady muny nädip edip biljekdigiňizi görkezmekdir.
 
-## Giriş we hasaba alyş sahypalary:
+## Giriş we hasaba alyş sahypalary: {#login-and-registration-pages}
 
 Ultimate Multisite gurnalanda, ol esasy saýtyňyzda ýörite giriş we hasaba alyş sahypalaryny awtomatiki döredýär. Bu deslapky sahypalary islän wagtyňyz **Ultimate Multisite > Sazlamalar > Giriş we hasaba alyş** sahypaňyza girip üýtgedip bilersiňiz.
 
@@ -45,7 +45,7 @@ Indi bolsa giriş we hasaba alyş prosesine henizem degişli bolan beýleki opsi
 
 Ine, sazlap biljek giriş we hasaba alyş bilen baglanyşykly opsiýalaryň hemmesi şular! Olary redaktirläp bolanyňyzdan soň sazlamalaryňyzy ýatda saklamagy unutmaň.
 
-## Birnäçe hasaba alyş formasyny ulanmak:
+## Birnäçe hasaba alyş formasyny ulanmak: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 islänçe forma döretmäge mümkinçilik berýän, dürli meýdanlary, teklip edilýän önümleri we ş.m. bolan töleg formasy redaktoryny hödürleýär.
 
@@ -69,7 +69,7 @@ Alternatiw hökmünde, eýýäm bar bolan formalaryňyzy olaryň adynyň aşagyn
 
 Eger bir ädimli ýa-da köp ädimli görnüşi saýlasaňyz, töleg formasy onuň işlemegi üçin esasy ädimler bilen öňünden doldurylan bolar. Soňra, isleseňiz, oňa goşmaça ädimler goşup bilersiňiz.
 
-### Töleg formasyny redaktirlemek:
+### Töleg formasyny redaktirlemek: {#editing-a-checkout-form}
 
 Öň belläp geçişimiz ýaly, dürli maksatlar üçin töleg formalaryny döredip bilersiňiz. Bu mysalda biz hasaba alyş formasynyň üstünde işläris.
 
@@ -131,11 +131,11 @@ Formaňyzyň shortcode-yny almak üçin **Shortcode döret** düwmesine basyň w
 
 _**Bellik:** Bu checkout formanyň hasaba alyş sahypaňyza goşulmagy üçin bu shortcode-y hasaba alyş sahypaňyza goşmaly bolarsyňyz._
 
-## URL parametrleri arkaly önümleri we şablonlary öňünden saýlamak:
+## URL parametrleri arkaly önümleri we şablonlary öňünden saýlamak: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Önümleriňiz üçin ýöriteleşdirilen nyrh tablisalaryny döretmek we müşderiňiziň nyrh tablisaňyzdan ýa-da şablonlar sahypasyndan saýlaýan önümini ýa-da şablonyny checkout formada öňünden saýlamak isleseňiz, munuň üçin URL parametrlerini ulanyp bilersiňiz.
 
-### **Planlar üçin:**
+### **Planlar üçin:** {#for-plans}
 
 **Ultimate Multisite > Önümler > Plan saýla** bölümine gidiň. Sahypanyň ýokarsynda **Paýlaşyp bolýan linki göçürmek üçin basyň** düwmesini görmeli. Bu, checkout formaňyzda bu anyk plany öňünden saýlamak üçin ulanyp biljek linkiňizdir.
 
@@ -143,7 +143,7 @@ _**Bellik:** Bu checkout formanyň hasaba alyş sahypaňyza goşulmagy üçin bu
 
 Bu paýlaşyp bolýan linkiň diňe **Planlar** üçin güýjüniň bardygyny belläň. Paketler ýa-da hyzmatlar üçin paýlaşyp bolýan linkleri ulanyp bilmersiňiz.
 
-### Şablonlar üçin:
+### Şablonlar üçin: {#for-templates}
 
 Checkout formaňyzda saýt şablonlaryny öňünden saýlamak isleseňiz, hasaba alyş sahypaňyzyň URL-inde şu parametri ulanyp bilersiňiz: **?template_id=X**. "X" **saýt şablonynyň ID belgisi** bilen çalşyrylmalydyr. Bu belgini almak üçin **Ultimate Multisite > Saýtlar** bölümine gidiň.
 

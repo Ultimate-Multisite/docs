@@ -4,11 +4,11 @@ title: Acțiune - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Acțiune: wu_membership_post_renew
+# Acțiune: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Se declanșează după reînnoirea abonamentului.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Se declanșează după reînnoirea abonamentului.
 | $membership_id | `int` | ID-ul abonamentului. |
 | $membership | `\Membership` | Obiectul abonamentului. |
 
-### De la
+### De la {#since}
 
 - 2.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) la linia 2235

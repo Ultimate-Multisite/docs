@@ -3,11 +3,11 @@ title: Producaethau a Prysau y Domenaid
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Producaeddau Domena a Prifyniadau
+# Producaeddau Domena a Prifyniadau {#domain-products-and-pricing}
 
 Mae producaeddau domena yn ddefnyddio i gwneud cyd-deall ar prifyniadau, TLDs (Top-Level Domains), gwarchnad WHOIS, a wybullesu y cyfiderdd. Mae pob producaed domena yn produs Ultimate Multisite standard gyda thlab **Domain Settings** (Cyd-deallau Domena) ychwanegol.
 
-## Creu proddecaed domena
+## Creu proddecaed domena {#creating-a-domain-product}
 
 1. Ymddangos i **Network Admin › Ultimate Multisite › Products**
 2. Clic ar **Add New** (Ychwaneg New)
@@ -17,13 +17,13 @@ Mae producaeddau domena yn ddefnyddio i gwneud cyd-deall ar prifyniadau, TLDs (T
 
 Mae producaeddau domena yn dangos gyda badge **Domain** (Domena) mor morwch yn y rheol produs ac gallai cael eu filtru drwy'r thlab **Domain Products**.
 
-## Thlab Domain Settings
+## Thlab Domain Settings {#domain-settings-tab}
 
-### Provider (Cyfiderddwr)
+### Provider (Cyfiderddwr) {#provider}
 
 Sgynlltu beth yw'r registrar sydd â'r cyfrannu ar gyfer y proddecaed hwn. Mae'n ddefnyddio'r **Default provider** (Cyfiderddwr Defnyddiol) global a'i cael ei setio mewn rheol Domain Seller.
 
-### Supported TLDs (TLDs Cyfathogh)
+### Supported TLDs (TLDs Cyfathogh) {#supported-tlds}
 
 Rhaid i'w gadael yn gwbl i creu proddecaed **catch-all product** (proddecaed cyflenwiol) sydd ar gael i'r holl TLDs nad yw'n cael eu cyfathogh gan produs arall.
 
@@ -31,7 +31,7 @@ Rheoliwch llyfr gyfathogh o TLDs wedi'u cynnwys yn cyfeiriad (e.g., `.com, .net,
 
 **Sut mae cyfathogi produs yn gweithio:** Pan mae cyd-defnyddi'r clustog ar gyfer domena, mae'r addon yn gw milltedd proddecaed sydd â'r cyfathogi mwyaf penodol. Mae proddecaed gyda `.com` mewn llyfr TLD ei ddefnyddio'n gynnigol oproddecaed catch-all. Os nad oes unrhyw produsau sydd, nid cael y chwilio domena yn dangos.
 
-### Markup type (Mathwedd Math)
+### Markup type (Mathwedd Math) {#markup-type}
 
 Mae tri modd yn gwario sut mae eich prifyniad riedhosiad yn cael ei cyfrannu o'r cost wholesale:
 
@@ -41,11 +41,11 @@ Mae tri modd yn gwario sut mae eich prifyniad riedhosiad yn cael ei cyfrannu o'r
 | **Fixed markup** (Mathwedd Cyflenwiol) | Ychwanegwch amlwr drosol. Mae mathwedd $5 ar gyfer domena $10 yn rhoi $15. |
 | **Fixed price** (Prifyniad Cyflenwiol) | Mae'n gwella cost wholesale yn llwyr. Mae'n cyfrannu y amlwr sydd â'i gael. |
 
-### Introductory pricing (Prifyniad Prifynol)
+### Introductory pricing (Prifyniad Prifynol) {#introductory-pricing}
 
 Gaelogwch i offer pris cyntaf wedi'i ddefnyddio. Rheoli **Pris Cyntaf** (pris y bleau) yn rhydd o'r **Pris Atal** (pris 2 a'o). Mae'r cyd-fyndol yn gweld both prysau hyn yn ystod y chefnogaeth i gwybod beth i'w gofyn ar atal.
 
-### Cynhyrchu gyfrifau WHOIS
+### Cynhyrchu gyfrifau WHOIS {#whois-privacy}
 
 Rhyddwch beth yw cyflwyno amddiffyniad WHOIS ar gyfer domenau a roedd wedi'u regrann drwy'r produsg hwnnw.
 
@@ -59,7 +59,7 @@ Ar Namecheap, mae WHOIS privacy yn defnyddio WhoisGuard (bob amser rydyn). Ar Op
 
 ---
 
-## Cyflwyno a chysylltu TLDs
+## Cyflwyno a chysylltu TLDs {#tld-import-and-sync}
 
 Mae produsau domenau yn dangos pris wholesale mewn amser byr a cael ei ddefnyddio gan y cyfiderwr sydd wedi'i cysylltu. I fod hyn yn gweithio, rhaid i'r TLDs i cael eu cyflwyno.
 
@@ -70,7 +70,7 @@ Ar ôl cyfrif, mynd i unrhyw tab Rheoliadau Domain o'r produsg domen yn defnyddi
 
 ---
 
-## Atal awtomatig
+## Atal awtomatig {#auto-renewal}
 
 Mae atal domenau wedi'i cysylltu â'r statws y gweithredwr:
 
@@ -88,7 +88,7 @@ Mae atal domenau wedi'i cysylltu â'r statws y gweithredwr:
 
 ---
 
-## Admin: Regrâd cyfeiriad manwl
+## Admin: Regrâd cyfeiriad manwl {#admin-manual-domain-registration}
 
 Ireg cyfeiriad ar ôl y cyddeewr heb eu mynd trwy'r checkout:
 

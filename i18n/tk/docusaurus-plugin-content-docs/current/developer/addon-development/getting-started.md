@@ -3,9 +3,9 @@ title: Addon işläp taýýarlamaga başlamak
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Goşmaça işläp taýýarlamak
+# Goşmaça işläp taýýarlamak {#addon-development}
 
-## Goşmaça gurluşy
+## Goşmaça gurluşy {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Esasy goşmaça faýlynyň şablony
+## Esasy goşmaça faýlynyň şablony {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Ýörite model mysaly
+## Ýörite model mysaly {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin sahypasy integrasiýasy
+## Admin sahypasy integrasiýasy {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Goşmaçaňyzy synagdan geçirmek
+## Goşmaçaňyzy synagdan geçirmek {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 giňeldiş nokatlary
+## v2.13.0 giňeldiş nokatlary {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 suweren tenantlar, checkout domenleri ýa-da host-ü üpjün ediji DNS awtomatlaşdyrmasy bilen integrirlenýän goşmaçalar üçin peýdaly birnäçe giňeldiş nokadyny goşýar.
 
-### SSO we esasy saýt dolandyryş URL-leri
+### SSO we esasy saýt dolandyryş URL-leri {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-formanyň esasy domenleri
+### Checkout-formanyň esasy domenleri {#checkout-form-base-domains}
 
 Goşmaçaňyz her saýt üçin ýörite mappingleriň deregine checkout-formanyň **Saýt URL** domenleri ýaly hereket etmeli goşmaça umumy esasy domenleri üpjün edýän bolsa, `wu_checkout_form_base_domains` ulanyň:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite bu hostlary kadalaşdyrýar we olar üçin awtomatik her saýt boýunça mapped-domain ýazgylaryny geçirip goýberýär.
 
-### Awtomatik domen-ýazgy döretmek
+### Awtomatik domen-ýazgy döretmek {#automatic-domain-record-creation}
 
 Täze döredilen saýt üçin awtomatik domen-ýazgy döretmegi ýatyrmak ýa-da soňa süýşürmek zerur bolanda, goşmaçaňyz `wu_should_create_domain_record_for_site` ulanyň:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` diňleýän host-ü üpjün ediji integrasiýalary saýtlar döredilende üpjün ediji tarapyndaky DNS ýazgylaryny döredip biler. Eger şol action üçin hiç bir integrasiýa hasaba alynmadyk bolsa, Ultimate Multisite boş fon işini geçirip goýberýär.
 
-## Indiki ädimler
+## Indiki ädimler {#next-steps}
 
 - Elýeterli actionlar we filterler üçin [Hooks maglumatnamasyny](/developer/hooks) gözden geçiriň
 - API integrasiýasy üçin [REST API synyny](/developer/rest-api/overview) barlaň

@@ -3,7 +3,7 @@ title: Verwalten von teilbaren Links für Tarife
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Teilbare Links für Tarife verwalten
+# Teilbare Links für Tarife verwalten {#managing-shareable-links-for-plans}
 
 Ultimate Multisite bietet Ihnen die Möglichkeit, Tarif-Links direkt mit Ihren Kunden zu teilen. Gehen Sie dazu zu einer der Bearbeitungsseiten Ihrer Tarife und klicken Sie auf den Button _Klicken, um den teilbaren Link zu kopieren_.
 

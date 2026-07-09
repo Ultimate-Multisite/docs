@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Sustabdykite botus. Apsaugokite pajamas. Jokio konfigūravimo vargo.**
 
@@ -15,7 +15,7 @@ Valdote multisite tinklą su pasirinktiniais domenais? Žinote tą skausmą: Goo
 
 **Ultimate Multisite: Captcha viską pakeičia.**
 
-## Cap Captcha: savarankiškai talpinama apsauga, kuri tiesiog veikia
+## Cap Captcha: savarankiškai talpinama apsauga, kuri tiesiog veikia {#cap-captcha-self-hosted-protection-that-just-works}
 
 Mūsų naujasis **Cap Captcha** teikėjas yra tikras proveržis multisite tinklams:
 
@@ -25,7 +25,7 @@ Mūsų naujasis **Cap Captcha** teikėjas yra tikras proveržis multisite tinkla
 * **Nematomas proof-of-work** — Naudotojai fone išsprendžia skaičiavimo užduotį. Jokio gaisrinių hidrantų spaudinėjimo, jokių erzinančių vaizdų tinklelių.
 * **Lengvas** — Tik 20 KB. Nesulėtins jūsų atsiskaitymo.
 
-## WooCommerce kortelių testavimo apsauga
+## WooCommerce kortelių testavimo apsauga {#woocommerce-card-testing-protection}
 
 Kortelių testavimo atakos prekybininkams kasmet kainuoja milijardus. Sukčiai naudoja botus, kad tikrintų pavogtas kredito korteles jūsų WooCommerce atsiskaityme — jūs mokate apdorojimo mokesčius, jie gauna galiojančius kortelių numerius.
 
@@ -35,7 +35,7 @@ Kortelių testavimo atakos prekybininkams kasmet kainuoja milijardus. Sukčiai n
 * **Suderinama su PayPal Payments** — Sklandžiai veikia su WooCommerce PayPal Payments
 * **Statistika realiuoju laiku** — Tiksliai matykite, kiek atakų blokuojate
 
-## Vis dar reikia Google reCAPTCHA arba hCaptcha?
+## Vis dar reikia Google reCAPTCHA arba hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
 
 Mes pasirūpinome. Pilnas palaikymas:
 
@@ -47,14 +47,14 @@ Mes pasirūpinome. Pilnas palaikymas:
 
 Bet kada perjunkite teikėjus savo tinklo nustatymuose.
 
-## Sukurta masteliui
+## Sukurta masteliui {#built-for-scale}
 
 * Viso tinklo nustatymai su atskirų svetainių perrašymais
 * Statistikos skydelis apsaugai stebėti
 * Reguliuojami saugumo lygiai (greitas, vidutinis, maksimalus)
 * Patogu kūrėjams, su išplečiama teikėjų architektūra
 
-## Diegimas
+## Diegimas {#installation}
 
 1. Įkelkite `ultimate-multisite-captcha` į savo `/wp-content/plugins/` katalogą
 2. Tinkle aktyvuokite pluginą
@@ -64,37 +64,37 @@ Cap Captcha aktyvuojamas automatiškai — jokių nustatymų konfigūruoti, joki
 
 **Pasirinktinai:** Jei vietoj to norite naudoti Google reCAPTCHA arba hCaptcha, eikite į **Ultimate Multisite → Settings → Captcha** ir pasirinkite pageidaujamą teikėją.
 
-## Dažnai užduodami klausimai
+## Dažnai užduodami klausimai {#frequently-asked-questions}
 
-## Ar man reikia ką nors konfigūruoti?
+## Ar man reikia ką nors konfigūruoti? {#do-i-need-to-configure-anything}
 
 Ne! Cap Captcha automatiškai įjungiamas, kai aktyvuojate priedą. Visas jūsų tinklas apsaugomas iš karto — jokių nustatymų konfigūruoti, jokių API raktų įvesti.
 
-## Ar Cap Captcha reikia API raktų?
+## Ar Cap Captcha reikia API raktų? {#do-i-need-api-keys-for-cap-captcha}
 
 Ne. Cap Captcha yra visiškai savarankiškai talpinamas. Jokių išorinių paskyrų, jokios domenų registracijos, jokio konfigūravimo galvos skausmo.
 
-## Ar tai sulėtins mano atsiskaitymą?
+## Ar tai sulėtins mano atsiskaitymą? {#will-this-slow-down-my-checkout}
 
 Cap Captcha yra tik 20 KB ir fone vykdo proof-of-work iššūkius. Jūsų klientai nepastebės jokio delsimo.
 
-## Ar tai apsaugo nuo kortelių testavimo atakų?
+## Ar tai apsaugo nuo kortelių testavimo atakų? {#does-this-protect-against-card-testing-attacks}
 
 Taip! Skirtingai nei tradicinės captcha, kurios saugo tik HTML formas, mūsų WooCommerce integracija tiesiogiai prisijungia prie Store API, kad blokuotų botų atakas API lygiu — ten, kur įvyksta dauguma kortelių testavimo atakų.
 
-## Ar galiu skirtingose svetainėse naudoti skirtingus captcha teikėjus?
+## Ar galiu skirtingose svetainėse naudoti skirtingus captcha teikėjus? {#can-i-use-different-captcha-providers-on-different-sites}
 
 Captcha teikėjas nustatomas visam tinklui, bet galite koreguoti sudėtingumo nustatymus pagal savo poreikius.
 
-## Ar tai atitinka GDPR?
+## Ar tai atitinka GDPR? {#is-this-gdpr-compliant}
 
 Cap Captcha yra 100 % savarankiškai talpinamas, jokie duomenys nesiunčiami išorinėms paslaugoms. Dėl Google reCAPTCHA ir hCaptcha peržiūrėkite jų atitinkamas privatumo politikas.
 
-## Greičio ribojimas
+## Greičio ribojimas {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 pristato griežtą greičio ribotuvą, kuris apsaugo jūsų tinklą nuo brute-force ir kortelių testavimo atakų.
 
-### Kaip tai veikia
+### Kaip tai veikia {#how-it-works}
 
 Greičio ribotuvas skaičiuoja kiekvieną GET ir POST užklausą captcha apsaugotuose paviršiuose:
 
@@ -108,9 +108,9 @@ Kai lankytojas viršija greičio limitą, pluginas atsako su:
 * **Retry-After** antrašte, nurodančia, kada bandyti dar kartą
 * **Atsitiktine tarpit pauze** (pagal numatymą 1–5 sekundės, griežtai apribota iki 15 sekundžių), kad būtų sulėtinti užpuolikai
 
-### Konfigūracija
+### Konfigūracija {#configuration}
 
-#### Tarpit laikas
+#### Tarpit laikas {#tarpit-timing}
 
 Valdykite atsitiktinį delsą, taikomą greičio apribotoms užklausoms:
 
@@ -119,9 +119,9 @@ Valdykite atsitiktinį delsą, taikomą greičio apribotoms užklausoms:
 
 Šie nustatymai pasiekiami **Ultimate Multisite → Settings → Captcha**.
 
-### Išplečiamumas
+### Išplečiamumas {#extensibility}
 
-#### IP leidžiamųjų sąrašo filtras
+#### IP leidžiamųjų sąrašo filtras {#ip-whitelist-filter}
 
 Atleiskite patikimus IP diapazonus nuo greičio ribojimo:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Veiksmas prieš blokavimą
+#### Veiksmas prieš blokavimą {#pre-block-action}
 
 Vykdykite pasirinktinę logiką iš karto prieš išsiunčiant greičio limito blokavimą:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Kliento IP aptikimas ir patikimi tarpiniai serveriai
+## Kliento IP aptikimas ir patikimi tarpiniai serveriai {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 pristato apsaugotą nuo klastojimo kliento IP aptikimą. `Captcha_Core::get_client_ip()` metodas dabar yra vienintelis tiesos šaltinis lankytojo IP priskyrimui visur:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 pristato apsaugotą nuo klastojimo kliento IP
 * Captcha teikėjo `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Statistikos IP maišos
 
-### Pasitikėjimo modelis
+### Pasitikėjimo modelis {#trust-model}
 
 Plugin taiko griežtą IP pasitikėjimo hierarchiją:
 
@@ -166,9 +166,9 @@ Plugin taiko griežtą IP pasitikėjimo hierarchiją:
    - Tiesioginis partneris yra jūsų administratoriaus sukonfigūruotame patikimų proxy sąraše
    - Header analizuojamas iš dešinės į kairę, praleidžiant patikimus / Cloudflare mazgus
 
-### Konfigūracija
+### Konfigūracija {#configuration-1}
 
-#### Cloudflare Header pasitikėjimas
+#### Cloudflare Header pasitikėjimas {#cloudflare-header-trust}
 
 Įjunkite pasitikėjimą Cloudflare `CF-Connecting-IP` header:
 
@@ -178,7 +178,7 @@ Plugin taiko griežtą IP pasitikėjimo hierarchiją:
   - CIDR diapazonai atnaujinami kas savaitę per wp-cron
   - Įtrauktas atsarginis variantas naudojamas, jei atnaujinimas nepavyksta
 
-#### Patikimo proxy konfigūracija
+#### Patikimo proxy konfigūracija {#trusted-proxy-configuration}
 
 Apibrėžkite savo priekinės linijos proxy ir apkrovos balansavimo įrenginius:
 
@@ -194,14 +194,14 @@ Apibrėžkite savo priekinės linijos proxy ir apkrovos balansavimo įrenginius:
     198.51.100.50
     ```
 
-#### Automatinis aptikimas pirmą kartą įjungus
+#### Automatinis aptikimas pirmą kartą įjungus {#first-enable-auto-detection}
 
 Kai pirmą kartą įjungiate spartos ribotuvą, plugin aptinka jūsų tikėtiną Cloudflare ir proxy būseną ir parodo vieno spustelėjimo „Taikyti aptiktus nustatymus“ administratoriaus pranešimą.
 
 * Plugin **niekada neperrašo** jūsų išsaugotų reikšmių
 * Jei vėlesnis srautas rodo, kad jūsų konfigūracija nebeatitinka realybės (pvz., Cloudflare pakeitė CIDR diapazonus), nepanaikinamas neatitikimo pranešimas parodo rekomenduojamą atnaujinimą
 
-### Kodėl tai svarbu
+### Kodėl tai svarbu {#why-this-matters}
 
 Griežtas IP pasitikėjimo modelis uždaro kritinį klastojimo vektorių: tiesioginės kilmės serverio užklausos su suklastotu `CF-Connecting-IP` header anksčiau būtų buvusios priskirtos segmentui pagal suklastotą IP, o ne pagal tikrąjį partnerį. Tai ypač svarbu:
 

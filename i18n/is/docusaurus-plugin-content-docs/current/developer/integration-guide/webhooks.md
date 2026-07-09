@@ -3,11 +3,11 @@ title: Meðhöndlun vefkróka
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Meðhöndlun vefkróka
+# Meðhöndlun vefkróka {#webhook-handling}
 
 Búðu til sérsniðna endapunkta fyrir vefkróka til að taka á móti atburðum frá ytri þjónustum og samstilla gögn við Ultimate Multisite.
 
-## Sérsniðinn endapunktur fyrir vefkrók
+## Sérsniðinn endapunktur fyrir vefkrók {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Öryggisatriði
+## Öryggisatriði {#security-considerations}
 
 - Staðfestu alltaf undirritanir vefkróka með HMAC eða sameiginlegu leyndarmáli
 - Notaðu `permission_callback` á REST-leiðinni þinni — stilltu það aldrei á `__return_true` í framleiðslu

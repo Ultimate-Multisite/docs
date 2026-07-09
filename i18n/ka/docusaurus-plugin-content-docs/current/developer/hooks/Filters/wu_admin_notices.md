@@ -4,11 +4,11 @@ title: ფილტრი - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# ფილტრი: wu_admin_notices
+# ფილტრი: wu_admin_notices {#filter-wuadminnotices}
 
 დეველოპერებს აძლევს საშუალებას გაფილტრონ Ultimate Multisite-ის მიერ დამატებული ადმინისტრატორის შეტყობინებები.
 
-## პარამეტრები
+## პარამეტრები {#parameters}
 
 | სახელი | ტიპი | აღწერა |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | გაფილტრულია თუ არა დასახური შეტყობინებები. |
 | $dismissed_messages | `array` | დახურული შეტყობინებების გასაღებების სია. |
 
-### ვერსიიდან
+### ვერსიიდან {#since}
 
 - 2.0.0
-### წყარო
+### წყარო {#source}
 
 განსაზღვრულია [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121)-ში, ხაზზე 121
 
 
-## აბრუნებს
+## აბრუნებს {#returns}

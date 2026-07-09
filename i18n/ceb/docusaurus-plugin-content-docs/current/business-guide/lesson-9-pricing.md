@@ -3,17 +3,17 @@ title: 'Leksyon 9: Pagpresyo alang sa Kita'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesson 9: Presyo para sa Kita
+# Lesson 9: Presyo para sa Kita {#lesson-9-pricing-for-profit}
 
 Sa Lesson 5, nagtakda kita og sinugdanan nga presyo alang sa mga plano sa FitSite. Karon, himoon nato ang atong estratehiya sa pagpresyo gamit ang mga teknik nga makadaghan sa kita, makadasig sa pag-upgrade, ug makapamenos sa 'churn' (pag-undang sa bayad).
 
-## Asa Mi Nagpahunong
+## Asa Mi Nagpahunong {#where-we-left-off}
 
 Ang FitSite adunay mga plano, templates, checkout, branding, ug onboarding. Ang sinugdanan nga presyo mao ang $49/$99/$199 kada bulan. Karon, himoon nato kining pagpresyo nga mas epektibo pa.
 
-## Mga Prinsipyo sa Pagpresyo alang sa Niche Platforms
+## Mga Prinsipyo sa Pagpresyo alang sa Niche Platforms {#pricing-principles-for-niche-platforms}
 
-### Presyo Base sa Bili (Value), Dili sa Gasto (Cost)
+### Presyo Base sa Bili (Value), Dili sa Gasto (Cost) {#price-on-value-not-cost}
 
 Ang imong gasto sa pag-host mahimong $5-$15 kada customer site. Apan, dili kini nagpasabot nga ang presyo nimo kinahanglan nga $20. Wala ka magbaligya og hosting. Ang gibaligya nimo mao ang:
 
@@ -24,7 +24,7 @@ Ang imong gasto sa pag-host mahimong $5-$15 kada customer site. Apan, dili kini 
 
 Pagpresyo base sa bili (value) nga imong gihatag, dili base sa gasto aron mahatod kini.
 
-### Pagtandi sa Alternatibo (Anchor to Alternatives)
+### Pagtandi sa Alternatibo (Anchor to Alternatives) {#anchor-to-alternatives}
 
 Kung ang tag-iya sa fitness studio mag-evaluate sa FitSite, itandi nila kini sa:
 
@@ -34,7 +34,7 @@ Kung ang tag-iya sa fitness studio mag-evaluate sa FitSite, itandi nila kini sa:
 
 Sa presyo nga $49-$199/bulan, mas barato pa ang FitSite kaysa developer, mas maayo pa kaysa generic builders, ug walay katapusan kaayo pagka-maayo kaysa walay website.
 
-## Pagpatuman sa Nagkalainlaing Presyo (Price Variations)
+## Pagpatuman sa Nagkalainlaing Presyo (Price Variations) {#implementing-price-variations}
 
 Ang annual pricing makadasig og commitment ug makamenos sa churn. Adto sa **Price Variations** tab sa matag plano ug dugangi ang mga opsyon nga tuig-tuon:
 
@@ -46,12 +46,12 @@ Ang annual pricing makadasig og commitment ug makamenos sa churn. Adto sa **Pric
 
 Dugangi ang usa ka **Period Selection** field sa imong checkout form aron makapili ang mga kustomer taliwala sa monthly ug annual billing. Tan-awa ang [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Ngano Makatabang ang Annual Pricing?
+### Ngano Makatabang ang Annual Pricing? {#why-annual-pricing-works}
 
 - **Para nimo**: Cash nga dali makuha, mas ubos nga churn (ang mga kustomer nga nagbayad og tuig-tuon dili kaayo mawala sa tunga-tunga)
 - **Para kanila**: Tinuod nga pagtipig, makatabang sa budget planning
 
-## Setup Fees
+## Setup Fees {#setup-fees}
 
 Hunahunaa ang usa ka one-time setup fee alang sa mga plano nga maglakip og hands-on configuration:
 
@@ -61,7 +61,7 @@ Hunahunaa ang usa ka one-time setup fee alang sa mga plano nga maglakip og hands
 
 I-configure ang setup fees sa pricing section sa matag plano. Tan-awa ang [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) alang sa mga detalye.
 
-## Trial Periods
+## Trial Periods {#trial-periods}
 
 Ang paghatag og trial makapamenos sa kalisud sa pagparehistro, apan nagdala kini og risgo nga dili mo-convert ang kustomer. Para sa FitSite:
 
@@ -70,11 +70,11 @@ Ang paghatag og trial makapamenos sa kalisud sa pagparehistro, apan nagdala kini
 
 I-configure ang trial sa pricing section sa Starter plan pinaagi sa pagpasiugda sa **Offer Trial** toggle ug pagtakda sa duration ngadto sa 7 ka adlaw.
 
-### Paghimo nga Mo-convert ang Trials
+### Paghimo nga Mo-convert ang Trials {#making-trials-convert}
 
 Ang usa ka trial molihok lang kon makasinati og bili ang kustomer atol sa period. Ang imong onboarding sequence (Lesson 8) importante dinhi — ang welcome emails kinahanglan i-schedule aron makadala og engagement sulod sa 7-ka-adlaw nga window.
 
-## Discount Codes
+## Discount Codes {#discount-codes}
 
 Pagmugna og estratehikong discount codes alang sa piho nga mga katuyoan:
 
@@ -88,7 +88,7 @@ Adto sa **Ultimate Multisite > Discount Codes** aron pagmugna niini. Tan-awa ang
 Ang mga discount kinahanglan maoy estratehikong gamit, dili permanente nga butang. Kon tanan makakuha og discount, dili na kini discount — mao kini ang tinuod nimo nga presyo. Gamita kini alang sa piho nga kampanya, referrals, ug time-limited promotions.
 :::
 
-## Pagdumala sa Tax (Tax Handling)
+## Pagdumala sa Tax (Tax Handling) {#tax-handling}
 
 Kon naglihok ka sa usa ka lugar nga nanginahanglan og pagkuha og tax:
 
@@ -98,7 +98,7 @@ Kon naglihok ka sa usa ka lugar nga nanginahanglan og pagkuha og tax:
 
 Tan-awa ang [Tax Handling](/user-guide/payment-gateways/tax-handling) alang sa detalyado nga configuration. Kon nagserbisyo ka og kustomer sa ubang nasud, hunahunaa ang [VAT addon](/addons/vat) para sa EU compliance.
 
-## Pagrepaso sa Imong Presyo (Reviewing Your Pricing)
+## Pagrepaso sa Imong Presyo (Reviewing Your Pricing) {#reviewing-your-pricing}
 
 Pagkahuman sa pag-launch, balikan ang presyo kada tulo ka bulan. Tan-awa kini:
 
@@ -107,7 +107,7 @@ Pagkahuman sa pag-launch, balikan ang presyo kada tulo ka bulan. Tan-awa kini:
 - **Churn by plan**: Kon mas ubos mag-churn ang mga annual customer, paligotan og kusog ang pagbaligya og annual pricing
 - **Competitor pricing**: Unsa may gipresyo sa alternatibo? Husto ba kaayo ang imong posisyon?
 
-## Ang FitSite Network Hangtud Karon
+## Ang FitSite Network Hangtud Karon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Unsa ang Gibuhat Nato Niining Lesson
+## Unsa ang Gibuhat Nato Niining Lesson {#what-we-built-this-lesson}
 
 - **Annual pricing** nga adunay 20% discount aron makadasig og commitment
 - **Setup fees** sa mas taas nga tiers aron matabonan ang effort sa onboarding

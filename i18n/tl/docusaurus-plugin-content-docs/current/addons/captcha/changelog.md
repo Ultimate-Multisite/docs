@@ -3,7 +3,7 @@ title: Talaan ng Pagbabago ng Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Tala ng Pagbabago ng Captcha
+# Tala ng Pagbabago ng Captcha {#captcha-changelog}
 
 Bersyon: 1.5.0 - Inilabas noong 2026-05-22
 * Bago: Hard-stop rate limiter — binibilang ang bawat GET at POST sa mga surface na protektado ng captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) at tumutugon gamit ang HTTP 429, isang `Retry-After` header, at isang randomized na tarpit sleep (1–5s, hard-capped sa 15s).

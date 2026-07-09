@@ -4,19 +4,19 @@ title: Aksyon - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# Aksyon: auth_redirect
+# Aksyon: auth_redirect {#action-authredirect}
 
 Moandar sa wala pa ang authentication redirect.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Ngalan | Matang | Deskripsyon |
 |------|------|-------------|
 | $user_id | `int` | ID sa user. |
 
-### Sukad
+### Sukad {#since}
 
 - 2.8.0
-### Tinubdan
+### Tinubdan {#source}
 
 Gihubit sa [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L223) sa linya 223

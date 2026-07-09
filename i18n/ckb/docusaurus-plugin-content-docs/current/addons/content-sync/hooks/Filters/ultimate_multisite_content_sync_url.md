@@ -4,23 +4,23 @@ title: فلتەر - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# فلتەر: ultimate_multisite_content_sync_url
+# فلتەر: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
 
 ڕێگە بە گەشەپێدەران دەدات ڕێڕەوی ڕێژەیی بۆ ڕەگی plugin بەڕێوە ببەن.
 
-## پارامێتەرەکان
+## پارامێتەرەکان {#parameters}
 
 | ناو | جۆر | وەسف |
 |------|------|-------------|
 | $dir | `string` | ڕێڕەوی ڕێژەیی بۆ ڕەگی plugin کە دەتەوێت دەستی پێ بگات. |
 
-### لە وەختی
+### لە وەختی {#since}
 
 - 1.0.0
-### سەرچاوە
+### سەرچاوە {#source}
 
 لە [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L52) لە هێڵی 52 پێناسە کراوە
 
 
-## دەگەڕێنێتەوە
+## دەگەڕێنێتەوە {#returns}
 ڕێڕەوی ڕێژەیی بۆ ڕەگی plugin.

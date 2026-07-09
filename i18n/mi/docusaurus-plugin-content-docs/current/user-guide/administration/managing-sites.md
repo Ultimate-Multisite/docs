@@ -3,7 +3,7 @@ title: Kaitiakitanga o ngā wāhi
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Whakawhanaungatanga Wāhi (Managing Sites)
+# Whakawhanaungatanga Wāhi (Managing Sites) {#managing-sites}
 
 Ngā Wāhi (or subsites) he te pito o te mahi i runga i te WaaS (WordPress as a Service) mō koe. He tino whānui ngā wāhi o Ultimate Multisite:
 
@@ -11,13 +11,13 @@ Ngā Wāhi (or subsites) he te pito o te mahi i runga i te WaaS (WordPress as a 
 - **Site Templates** — Ngā wāhi e whai mo te whakatō, i te pūrere (template) he taea ai ngā customer te pilihero atu hei whakaaro ingoa
 - **Main Site** — Te wāhi nui o te whānau/network mō koe
 
-## Whakarongo i Ngā Wāhi (Viewing Sites)
+## Whakarongo i Ngā Wāhi (Viewing Sites) {#viewing-sites}
 
 Pāinga ki **Ultimate Multisite → Sites** kia whakaahua i ngā wāhi katoa i te wāhi. He whakamārama ana i ngā wāhi e ngā wāhi, he taea ai koe te fili atu (filter) mō All Sites, Customer-Owned, Templates, or Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Whakawhanaungatanga Wāhi Hou (Adding a New Site)
+## Whakawhanaungatanga Wāhi Hou (Adding a New Site) {#adding-a-new-site}
 
 Whakainga i te **Add Site** button kia whakatō wāhi hou. He tino nui ngā mea e toa koe:
 
@@ -27,15 +27,15 @@ Whakainga i te **Add Site** button kia whakatō wāhi hou. He tino nui ngā mea 
 
 He option **Copy Site** e hiahia koe ki te whakatō wāhi hou i runga i te template wāhi e pai anō. I roto i te whakatau i tēnei option, he taea ai koe te fili atu i te template hei whakaaro ingoa. Kia tiaki i te **Copy Media on Duplication** kia tika ake te whaiora ngā mga file o media.
 
-## Whakawhanaungatanga Wāhi Ao (Managing an Existing Site)
+## Whakawhanaungatanga Wāhi Ao (Managing an Existing Site) {#managing-an-existing-site}
 
 Whakainga i **Manage** i ngā wāhi ahau ki te pahi atu ki te **Edit Site** page. I tēnei wā, he toa koe:
 
-### Manawa Pūranga (Basic Information)
+### Manawa Pūranga (Basic Information) {#basic-information}
 
 Te ingoa o te wāhi, te wāhi, te site ID, me te whakatakī. He taea ai koe te whakaahua i te domain e whai ana, ngā membership e whai ana, me te customer account e ngāwā i te wāhi.
 
-### Whakaritenga Wāhi (Site Options)
+### Whakaritenga Wāhi (Site Options) {#site-options}
 
 Whakaaro i ngā mea e taea ana me ngā pōtiki o te wāhi:
 
@@ -49,7 +49,7 @@ E rite, e hoki mai ki te whakamārama mō tēnei mea.
 
 E rite ana i te whakatūatanga, ka whai i ngā wāhi (sites) ngā raupawa (limits) kua katutaku ai i te rārangi membership. Ka whakapatakea (override) e ngā raupawa o te wāhi (site level) i ngā whakaritenga o te membership.
 
-### Whakawhanake (Associations)
+### Whakawhanake (Associations) {#associations}
 
 I roto i te whakatūatanga o ngā wāhi, ka whai i ai koe i ngā mōhiohanga mō:
 
@@ -57,7 +57,7 @@ I roto i te whakatūatanga o ngā wāhi, ka whai i ai koe i ngā mōhiohanga mō
 - **Membership** (te membership) kua roa te wāhi
 - **Customer account** (te aka o te mea mō te mea mō te wāhi) kua whai ana ki te wāhi
 
-### Te Panel Kōrero (Right Sidebar)
+### Te Panel Kōrero (Right Sidebar) {#right-sidebar}
 
 I te tangata whiti (right side), ka taea e koe:
 

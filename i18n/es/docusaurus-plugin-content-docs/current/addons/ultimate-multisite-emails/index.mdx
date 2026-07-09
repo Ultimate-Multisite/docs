@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Correos electrónicos
+# Correos electrónicos {#emails}
 
 El complemento Ultimate Multisite: Emails permite a los propietarios de redes aprovisionar y gestionar cuentas de correo electrónico de clientes junto con sitios y membresías. La versión 1.1.0 añade gestión de cuentas de correo electrónico de cara al cliente, inicio de sesión único en webmail, compatibilidad con reenviadores de CyberPanel y mejoras de aprovisionamiento durante el checkout.
 
-## Funciones clave
+## Funciones clave {#key-features}
 
 * **Widget de cuentas de correo electrónico para clientes**: Los clientes pueden crear y gestionar buzones desde su página de cuenta después de tener una membresía de correo electrónico activa.
 * **SSO de webmail y enlaces mágicos**: Los clientes pueden abrir webmail directamente desde la página de cuenta con autenticación de un clic cuando el proveedor lo admite.
@@ -20,14 +20,14 @@ El complemento Ultimate Multisite: Emails permite a los propietarios de redes ap
 * **Reenviadores de CyberPanel**: Las redes respaldadas por CyberPanel pueden crear y gestionar reenviadores de correo electrónico como parte del flujo del servicio de correo electrónico.
 * **Ajustes conscientes del proveedor**: La página de ajustes filtra los proveedores a integraciones activas y configuradas para que los administradores solo vean opciones utilizables.
 
-## Requisitos
+## Requisitos {#requirements}
 
 * Ultimate Multisite 2.0.0 o superior
 * Instalación de WordPress Multisite
 * Al menos una integración de proveedor de correo electrónico configurada
 * Credenciales de API del proveedor con permiso para crear buzones, cambiar contraseñas y emitir enlaces de acceso a webmail cuando sea compatible
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube los archivos del plugin a `/wp-content/plugins/ultimate-multisite-emails`.
 2. Activa el complemento en la red desde **Plugins** en el administrador de red de WordPress.
@@ -35,7 +35,7 @@ El complemento Ultimate Multisite: Emails permite a los propietarios de redes ap
 4. Activa las integraciones de proveedores de correo electrónico que quieres que usen los clientes.
 5. Guarda los ajustes y luego prueba la creación de cuentas con un cliente que no sea de producción o un sitio de staging.
 
-## Cómo funciona el flujo de venta de correo electrónico
+## Cómo funciona el flujo de venta de correo electrónico {#how-the-email-seller-flow-works}
 
 La venta de correo electrónico tiene dos capas separadas:
 
@@ -53,7 +53,7 @@ Esto significa que un flujo normal de cliente es:
 5. El panel **Cuentas de correo electrónico** aparece para esa membresía de correo electrónico activa.
 6. El cliente hace clic en **Crear Account**, introduce la parte local como `info`, establece una contraseña y el complemento crea `info@their-domain.com` en el proveedor configurado.
 
-## Configurar un producto de correo electrónico
+## Configurar un producto de correo electrónico {#configure-an-email-product}
 
 Crea un producto de correo electrónico para cada paquete de correo electrónico que quieras vender o regalar. Si eres nuevo en la configuración de productos, empieza con [Crear tu primer producto de suscripción](../../user-guide/configuration/creating-your-first-subscription-product) y luego vuelve aquí para los ajustes específicos de correo electrónico.
 
@@ -67,7 +67,7 @@ Crea un producto de correo electrónico para cada paquete de correo electrónico
 
 Solo los proveedores que están activados y completamente configurados en la página **Integraciones** aparecen en el selector de proveedores. Si el selector está vacío, configura y prueba primero el proveedor.
 
-## Añadir correo electrónico al checkout
+## Añadir correo electrónico al checkout {#add-email-to-checkout}
 
 Los productos de correo electrónico normalmente se ofrecen como complementos a un plan de sitio. Consulta [Formularios de checkout](../../user-guide/configuration/checkout-forms) para el flujo de trabajo general del editor de checkout.
 
@@ -79,7 +79,7 @@ Los productos de correo electrónico normalmente se ofrecen como complementos a 
 
 El dominio de correo electrónico se toma del dominio del sitio del cliente. Los clientes no introducen el dominio de correo electrónico en el paso del producto de correo electrónico.
 
-## Gestión de correo electrónico en la cuenta del cliente
+## Gestión de correo electrónico en la cuenta del cliente {#customer-account-email-management}
 
 La versión 1.1.0 añade un widget de gestión de correo electrónico a la página de cuenta del cliente. Úsalo cuando los clientes deban autogestionar la creación y el mantenimiento de buzones para sus propios sitios.
 
@@ -94,7 +94,7 @@ El widget usa el sistema de corrientes de la página de cuenta de Ultimate Multi
 
 Si el cliente no ve el panel de email, comprueba que tenga una **membresía activa de producto Email**, que la membresía se haya vinculado a un dominio del sitio y que el producto tenga un proveedor configurado.
 
-## Dar a un cliente un plan de email gratis
+## Dar a un cliente un plan de email gratis {#giving-a-customer-a-free-email-plan}
 
 Para dar email a un cliente sin cobrarle, concede primero el **derecho de email** y luego crea el buzón o deja que el cliente lo cree.
 
@@ -106,7 +106,7 @@ Opciones recomendadas:
 
 Si quieres que el cliente gestione el buzón por sí mismo desde la página de Account, asegúrate de que tenga una membresía de email activa para el dominio. Un buzón de proveedor creado manualmente sin esa membresía puede existir, pero es posible que el cliente no vea el panel de email de autoservicio para él.
 
-## Cuentas creadas por administración y "Sin número de pedido"
+## Cuentas creadas por administración y "Sin número de pedido" {#admin-created-accounts-and-no-order-number}
 
 La página de administración **Email Accounts** crea o edita un buzón de proveedor. No es el primer paso para vender o conceder un plan de email.
 
@@ -122,7 +122,7 @@ Usa este orden de operaciones en su lugar:
 
 Si solo necesitas crear un buzón de proveedor para el cliente y no necesitas gestión de autoservicio desde la página de Account, la cuenta creada por administración puede ser suficiente. Si quieres que el cliente lo vea y lo gestione en Ultimate Multisite, crea también la membresía de email.
 
-## Webmail SSO e inicio de sesión con enlace mágico
+## Webmail SSO e inicio de sesión con enlace mágico {#webmail-sso-and-magic-link-login}
 
 Webmail SSO ofrece a los clientes una acción directa **Abrir webmail** desde la página de Account. Cuando el proveedor activo lo admite, el addon solicita una URL de acceso de corta duración y redirige al cliente a webmail sin pedirle que copie las credenciales del buzón.
 
@@ -134,7 +134,7 @@ El comportamiento del proveedor puede variar:
 
 Activa el acceso a webmail solo para proveedores en los que hayas configurado las credenciales de API requeridas. Si falta la acción para un proveedor, confirma primero que el proveedor esté activo, configurado y admita enlaces de inicio de sesión de webmail.
 
-## Aprovisionamiento en el pago
+## Aprovisionamiento en el pago {#checkout-provisioning}
 
 El addon aprovisiona el **contexto de membresía** de email durante el pago. Registra el proveedor, el límite de cuentas, la cuota y el dominio del sitio para que los clientes puedan crear sus propios nombres de buzón desde la página de Account después de la compra.
 
@@ -148,15 +148,15 @@ Implementación recomendada:
 
 Si el aprovisionamiento falla, la cuenta del cliente y la membresía aún pueden existir mientras la membresía de email o el buzón del proveedor requieren seguimiento del administrador. Revisa los registros de actividad de Ultimate Multisite y los registros del proveedor antes de reintentar.
 
-## Reenviadores de email de CyberPanel
+## Reenviadores de email de CyberPanel {#cyberpanel-email-forwarders}
 
 Para redes respaldadas por CyberPanel, la versión 1.1.0 añade soporte para reenviadores de email. Usa reenviadores cuando los clientes necesiten direcciones como `info@customer-domain.test` para redirigir el correo a otra bandeja de entrada sin crear un buzón completo.
 
 Antes de ofrecer reenviadores, confirma que la integración de CyberPanel esté configurada y sea accesible. Consulta la guía [Integración de CyberPanel](../../user-guide/administration/cyberpanel-integration) para el host, nombre de usuario, contraseña y constantes de paquete requeridos.
 
-## Registro de cambios
+## Registro de cambios {#changelog}
 
-### Versión 1.1.0 - Publicada el 2026-05-05
+### Versión 1.1.0 - Publicada el 2026-05-05 {#version-110---released-on-2026-05-05}
 
 * Nuevo: SSO de webmail e inicio de sesión con magic-link — los clientes pueden acceder al webmail directamente desde su Account con autenticación de un clic.
 * Nuevo: Funcionalidad de cambio de contraseña añadida al widget de gestión de cuentas de correo electrónico.
@@ -170,28 +170,28 @@ Antes de ofrecer reenviadores, confirma que la integración de CyberPanel esté 
 * Corrección: Se eliminó el spam de registro por solicitud de la inicialización de Email_Account_Manager.
 * Mejorado: La página de ajustes ahora filtra para mostrar solo proveedores de correo electrónico activos y configurados.
 
-## Preguntas frecuentes
+## Preguntas frecuentes {#frequently-asked-questions}
 
-### ¿Pueden los clientes crear sus propias cuentas de correo electrónico?
+### ¿Pueden los clientes crear sus propias cuentas de correo electrónico? {#can-customers-create-their-own-email-accounts}
 
 Sí. Cuando el cliente tiene una membresía de correo electrónico activa para un dominio y el producto permite cuentas adicionales, los clientes pueden crear y gestionar sus propios buzones desde la página de Account.
 
-### ¿Todos los proveedores admiten SSO de webmail?
+### ¿Todos los proveedores admiten SSO de webmail? {#does-every-provider-support-webmail-sso}
 
 No. La compatibilidad con SSO y magic-link depende del proveedor de correo electrónico activo. Los proveedores sin una API de enlace de acceso aún pueden admitir la creación de buzones y cambios de contraseña.
 
-### ¿Pueden los administradores crear cuentas de correo electrónico para los clientes?
+### ¿Pueden los administradores crear cuentas de correo electrónico para los clientes? {#can-administrators-create-email-accounts-for-customers}
 
 Sí. Los administradores pueden crear cuentas de correo electrónico desde la interfaz de administración, incluida la configuración de la contraseña inicial al crear la cuenta. Para la gestión en autoservicio por parte del cliente, asegúrate también de que el cliente tenga una membresía de correo electrónico activa para el dominio.
 
-### ¿Puedo regalar una cuenta de correo electrónico?
+### ¿Puedo regalar una cuenta de correo electrónico? {#can-i-give-an-email-account-away-for-free}
 
 Sí. Crea un producto de correo electrónico gratuito/de precio cero y añádelo como membresía activa para el cliente, o permite que el cliente complete el pago con un descuento del 100 %. Después de que exista la membresía de correo electrónico, el cliente o un administrador puede crear el buzón real.
 
-### ¿Por qué asignar una cuenta de correo electrónico pide un número de pedido?
+### ¿Por qué asignar una cuenta de correo electrónico pide un número de pedido? {#why-does-assigning-an-email-account-ask-for-an-order-number}
 
 El campo Membresía busca una membresía existente de Ultimate Multisite por su número de referencia/pedido. Si el cliente no compró un producto de correo electrónico y no has creado manualmente una membresía de correo electrónico, no hay ninguna membresía/pedido de correo electrónico que asignar. Crea primero la membresía de correo electrónico y luego crea o asigna el buzón.
 
-### ¿Los reenviadores son lo mismo que los buzones?
+### ¿Los reenviadores son lo mismo que los buzones? {#are-forwarders-the-same-as-mailboxes}
 
 No. Un buzón almacena correo y tiene credenciales de inicio de sesión. Un reenviador redirige el correo a otra dirección y no proporciona una bandeja de entrada separada.

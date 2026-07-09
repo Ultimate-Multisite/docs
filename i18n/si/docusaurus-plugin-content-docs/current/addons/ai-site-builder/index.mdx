@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## අවශ්‍යතා
+## අවශ්‍යතා {#requirements}
 
 - WordPress 5.3 හෝ ඊට වැඩි
 - PHP 7.4 හෝ ඊට වැඩි
 - Multisite Ultimate ප්ලගිනය (සක්‍රිය)
 
-## ස්ථාපනය
+## ස්ථාපනය {#installation}
 
 1. ඇඩෝන ගොනු ඔබගේ `/wp-content/plugins/` නාමාවලියට උඩුගත කරන්න
 2. WordPress තුළ 'Plugins' මෙනුව හරහා ප්ලගිනය සක්‍රිය කරන්න
 3. ජාල පරිපාලකය තුළ ඇඩෝන සැකසුම් වින්‍යාස කරන්න
 
-## සංවර්ධනය
+## සංවර්ධනය {#development}
 
-### සැකසීම
+### සැකසීම {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ව්‍යාපෘති ව්‍යුහය
+### ව්‍යාපෘති ව්‍යුහය {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### පරීක්ෂා කිරීම
+### පරීක්ෂා කිරීම {#testing}
 
 ඇඩෝනයට සම්පූර්ණ පරීක්ෂණ රාමුවක් ඇතුළත් වේ:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **පරීක්ෂණ ආවරණය**: කේත ආවරණය අනුගමනය කිරීමට වින්‍යාස කර ඇත
 - **Multisite පරීක්ෂා කිරීම**: පරීක්ෂණ multisite පරිසරය තුළ ධාවනය වේ
 
-### කේත ප්‍රමිතීන්
+### කේත ප්‍රමිතීන් {#code-standards}
 
 - **WordPress කේත ප්‍රමිතීන්**: PHPCS හරහා බලාත්මක කරයි
 - **PHP 7.4+ අනුකූලතාව**: නවීන PHP විශේෂාංග සඳහා සහාය දක්වයි
 - **ස්ථිතික විශ්ලේෂණය**: වර්ග පරීක්ෂා කිරීම සඳහා PHPStan ඒකාබද්ධ කිරීම
 - **කේත නවීකරණය**: PHP උත්ශ්‍රේණි සඳහා Rector නීති
 
-### ගොඩනැගීමේ පද්ධතිය
+### ගොඩනැගීමේ පද්ධතිය {#build-system}
 
 - **සම්පත් සැකසීම**: CSS/JS ගොනු සඳහා කුඩා කිරීම
 - **පරිවර්තනය**: POT ගොනු උත්පාදනය
 - **ඇසුරුම් කිරීම**: බෙදාහැරීම සඳහා ලේඛනාගාරයක් සෑදීම
 - **සංවර්ධන මාදිලිය**: දෝෂ සොයාගැනීම සඳහා කුඩා නොකළ සම්පත්
 
-## වින්‍යාසය
+## වින්‍යාසය {#configuration}
 
 ඇඩෝනය ජාල පරිපාලක අතුරුමුහුණත හරහා ප්‍රවේශ විය හැකි විවිධ වින්‍යාස විකල්ප සඳහා සහාය දක්වයි.
 
-## Hooks සහ Filters
+## Hooks සහ Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - ඇඩෝනය ආරම්භ කිරීමෙන් පසු ක්‍රියාත්මක වේ
 - `ultimate-multisite-ai-site-builder_loaded` - සියලුම ඇඩෝන ගොනු පූරණය වූ පසු ක්‍රියාත්මක වේ
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - ඇඩෝන සැකසුම් වෙනස් කරන්න
 - `ultimate-multisite-ai-site-builder_enabled` - ඇඩෝනය සක්‍රිය/අක්‍රිය තත්ත්වය අතික්‍රමණය කරන්න
 
-## බලපත්‍රය
+## බලපත්‍රය {#license}
 
 මෙම ඇඩෝනය GPL v3 හෝ ඊට පසු අනුවාදයක් යටතේ බලපත්‍ර ලබා ඇත.
 
-## සහාය
+## සහාය {#support}
 
 සහාය සහ ලේඛන සඳහා, [MultisiteUltimate.com](https://multisiteultimate.com) වෙත පිවිසෙන්න
-## වෙනස්කම් සටහන
+## වෙනස්කම් සටහන {#changelog}
 
 - අනුවාදය 1.0.1 (2025-09-28): උපසර්ගය ultimate-multisite ලෙස නැවත නම් කරන්න; පෙළ ඩොමේනය යාවත්කාලීන කරන්න; අනුවාදය ඉහළ දමන්න.
 

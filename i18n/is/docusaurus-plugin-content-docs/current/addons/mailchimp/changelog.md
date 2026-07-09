@@ -3,7 +3,7 @@ title: Mailchimp breytingaskrá
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp breytingaskrá
+# Mailchimp breytingaskrá {#mailchimp-changelog}
 
 Útgáfa: 1.1.1 - Gefin út 2025-09-28
 

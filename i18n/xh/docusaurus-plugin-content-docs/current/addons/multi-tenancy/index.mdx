@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Ukuqesha Okuninzi
+# Ukuqesha Okuninzi {#multi-tenancy}
 
 Sasaza iisayithi ezingaphantsi kwiiseva nakwiidatabase ukuze kuphuculwe ukusebenza nokhuseleko
 
-## Iimbalasane zokukhutshwa kweVersion 1.2.0
+## Iimbalasane zokukhutshwa kweVersion 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 yongeza isiseko somqeshi ozimeleyo kwiinkqubo zomsebenzi zokwahlulwa kwemveliso:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 yongeza isiseko somqeshi ozimeleyo kwiinkqubo zomsebenzi zok
 
 Jonga izikhokelo zomsebenzisi ze-[nkqubo yomsebenzi yokufuduka okuzimeleyo](/user-guide/getting-started/sovereign-migration-workflow), [ukwahlulwa kwe-multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), kunye [nemisebenzi yomqeshi ozimeleyo](/user-guide/administration/sovereign-tenant-operations).
 
-## Iimfuno
+## Iimfuno {#requirements}
 
 - WordPress 5.3 okanye ngaphezulu
 - PHP 7.4 okanye ngaphezulu
 - Multisite Ultimate plugin (iyasebenza)
 
-## Ufakelo
+## Ufakelo {#installation}
 
 1. Layisha iifayile ze-addon kwidirectory yakho ye-`/wp-content/plugins/`
 2. Vula i-plugin ngemenyu ethi 'Iiplugin' kwiWordPress
 3. Lungisa iisetingi ze-addon kumlawuli wenethiwekhi
 
-## Uphuhliso
+## Uphuhliso {#development}
 
-### Ukuseta
+### Ukuseta {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Ulwakhiwo lweProjekthi
+### Ulwakhiwo lweProjekthi {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Imithetho yokuphucula ikhowudi
 ```
 
-### Ukuvavanya
+### Ukuvavanya {#testing}
 
 I-addon ibandakanya isakhelo sovavanyo esibanzi:
 
@@ -93,54 +93,54 @@ I-addon ibandakanya isakhelo sovavanyo esibanzi:
 - **Ukhuselo loVavanyo**: Lulungiselelwe ukulandelela ukhuseleko lwekhowudi
 - **Ukuvavanya kweMultisite**: Iimvavanyo ziqhutywa kwimeko ye-multisite
 
-### Imigangatho yeKhowudi
+### Imigangatho yeKhowudi {#code-standards}
 
 - **Imigangatho yokuKhowuda yeWordPress**: Iyanyanzeliswa nge-PHPCS
 - **Ukuhambelana ne-PHP 7.4+**: Iimpawu zale mihla ze-PHP ziyaxhaswa
 - **Uhlalutyo oluNgatshintshiyo**: Udibaniso lwe-PHPStan lokujonga iintlobo
 - **Ukuphuculwa kweKhowudi**: Imithetho ye-Rector yohlaziyo lwe-PHP
 
-### Inkqubo yoKwakha
+### Inkqubo yoKwakha {#build-system}
 
 - **Ukuqhubekeka kwee-asethi**: Ukuncitshiswa kweefayile ze-CSS/JS
 - **Uguqulelo**: Ukuveliswa kwefayile ye-POT
 - **Ukupakisha**: Ukwenziwa kwe-archive yokusasazwa
 - **Imo yoPhuhliso**: Ii-asethi ezingancitshiswanga zokulungisa iimpazamo
 
-## Uqwalaselo
+## Uqwalaselo {#configuration}
 
 I-addon ixhasa iinketho zoqwalaselo ezahlukeneyo ezifumaneka ngojongano lomlawuli wenethiwekhi.
 
-### Uqwalaselo lomqeshi ozimeleyo
+### Uqwalaselo lomqeshi ozimeleyo {#sovereign-tenant-configuration}
 
 Kubarhenti abazimeleyo, lungisa idatabase yomqeshi, ingcambu yenkqubo yeefayile, ukubophelela umamkeli wedatabase, kunye nesakhono somamkeli phambi kokuhambisa itrafikhi kumqeshi. Qhuba ukuqinisekiswa kokufuduka emva kotshintsho ngalunye oluchaphazela iziqinisekiso zedatabase, ukubophelela umamkeli, ukuhanjiswa, okanye ukubonelelwa komsebenzisi.
 
 Sebenzisa `localhost` kuphela xa ixesha lokusebenza lomqeshi kunye neemvume zedatabase zilindele ukufikelela ngesokethi yendawo okanye kumatshini ofanayo. Sebenzisa `127.0.0.1` okanye igama lomamkeli lenkonzo xa elo ingumamkeli wemvume olungiselelwe ngumboneleli wakho.
 
-### Isakhono seHostinger
+### Isakhono seHostinger {#hostinger-capability}
 
 Isakhono se-Hostinger multi-tenancy sisebenza ngethokheni edibeneyo ye-Hostinger. Qinisekisa ukuba idomeyini ikhona kwi-hPanel, i-DNS ikhomba kwi-akhawunti ye-Hostinger, kwaye iisetingi zedatabase yomqeshi zihambelana ne-hPanel phambi kokuqinisekisa.
 
-## IiHook kunye neeFilter
+## IiHook kunye neeFilter {#hooks-and-filters}
 
-### Izenzo
+### Izenzo {#actions}
 
 - `ultimate-multisite-addon-template_init` - Iqalwa emva kokuqaliswa kwe-addon
 - `ultimate-multisite-addon-template_loaded` - Iqalwa emva kokuba zonke iifayile ze-addon zilayishiwe
 
-### IiFilter
+### IiFilter {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Guqula iisetingi ze-addon
 - `ultimate-multisite-addon-template_enabled` - Dlula isimo sokuvula/ukuvala i-addon
 
-## Ilayisensi
+## Ilayisensi {#license}
 
 Le addon ilayisenswe phantsi kwe-GPL v3 okanye kamva.
 
-## Inkxaso
+## Inkxaso {#support}
 
 Ukufumana inkxaso namaxwebhu, tyelela [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ingxelo yoTshintsho
+## Ingxelo yoTshintsho {#changelog}
 
 - Version 1.2.0 (2026-06-03): yongeza ukungena ngokuzenzekela komqeshi okungagcini meko, isakhono se-Hostinger multi-tenancy, ukwahlulwa kwedatabase nenkqubo yeefayile kwisiza ngasinye esingaphantsi, amasango okuqinisekisa ukufuduka okuzimeleyo, ukuphuculwa kokuqaliswa komqeshi/umbhali wedatabase, ukubophelela umamkeli we-MySQL okulungisekayo, kunye nokuchithwa okuzimeleyo okukhuselekileyo ngakumbi.
 

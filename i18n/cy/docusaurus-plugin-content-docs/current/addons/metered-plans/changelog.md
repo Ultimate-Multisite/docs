@@ -3,7 +3,7 @@ title: Cofnod Newidiadau Cynlluniau â Mesurydd
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Cofnod Newidiadau Metered Plans
+# Cofnod Newidiadau Metered Plans {#metered-plans-changelog}
 
 Fersiwn 1.1.0 - Rhyddhawyd ar 2026-05-05
 - Newydd: Bilio tocynnau AI ar gyfer is-wefannau multisite — olrhain a bilio defnydd tocynnau AI ar draws gwefannau cwsmeriaid gyda chyfraddau fesul tocyn ffurfweddadwy
@@ -14,17 +14,17 @@ Fersiwn 1.1.0 - Rhyddhawyd ar 2026-05-05
 - Atgyweiriad: Datryswyd gwallau fatal a materion cychwyn dwbl wrth lwytho’r plugin
 - Gwelliant: Ychwanegwyd sgript npm check-env fel bod amgylcheddau datblygwyr yn hunan-ffurfweddu ar y rhediad cyntaf
 
-### 1.0.3
+### 1.0.3 {#103}
 * Diweddarwyd i Plugin Update Checker v5
 * Ychwanegwyd penawdau plugin WordPress modern
 * Gwellwyd cydnawsedd â fersiynau diweddaraf WordPress
 * Gwellwyd perfformiad olrhain defnydd
 
-### 1.0.2
+### 1.0.2 {#102}
 * Atgyweiriadau bygiau a gwelliannau perfformiad
 * Gwellwyd adrodd ar ddefnydd
 
-### 1.0.0
+### 1.0.0 {#100}
 * Rhyddhad cychwynnol
 * Swyddogaeth bilio mesuredig graidd
 * Olrhain defnydd a chyfrifo gor-ddefnydd

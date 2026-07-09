@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet ta' Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Kronoloġija tal-Bidliet ta' Material WP
+# Kronoloġija tal-Bidliet ta' Material WP {#material-wp-changelog}
 
 Verżjoni 1.1.15 - 01/26/2026
 * Imtejjeb: Stil u ifformattjar tal-kodiċi;

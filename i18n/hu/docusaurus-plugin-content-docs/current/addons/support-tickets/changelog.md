@@ -3,13 +3,13 @@ title: Támogatási jegyek változtathatatkönyve
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Támiratkozási jegyek Módosítási Naplója
+# Támiratkozási jegyek Módosítási Naplója {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Javítás: Eltávolítottam a `vendor/` könyvtárat a Git követéséből (ami már a `.gitignore`-ban szerepel), ezzel csökkentve a repózőrium méretét.
 * Javítás: Teszteltem WordPress 7.0-ig.
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Javítás: Elfogadja a null értékeket a null-értékkel kezelhető jegy modell-setter-ekben.
 * Javítás: Minden jegyet globális, hálózat-szerte táblákban tárol, hogy megfelelően működjön a multisite környezetben.
 * Javítás: Elrejtette a személyzet mezőket és javította a vásárló új jegy űrlapján lévő üres oldalra irányító átirányítást.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Javítás: Feltételezetten tölti be a frontend erőforrásokat csak a támasz jegy oldalain.
 * Javítás: Kerüli a plugin autoloader-t, ha a Bedrock root autoloader már betöltötte a függőségeket.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Hozzáadva: Teljes jegy megtekintési funkciót az admin és a frontend számára.
 * Hozzáadva: AJAX kezelő a jegy válaszküldésekhez.
 * Hozzáadva: Támogatja a jegy válaszfunkciót megfelelő űrlapkezeléssel.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Javítás: Adatbázis szerkezet javítása megfelelő query és schema osztályokkal a válaszok és mellékletek számára.
 * Javítás: Migráció a valódi tulajdonságokra (real properties) az attribútumok helyett a jegy modelljeiben.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Frissítve: A prefix-et `ultimate-multisite`-ra neveztetem át konzisztencia érdekében.
 * Frissítve: A szövegdomén standardizációja.
 * Javítás: Minor hibajavítások és fejlesztések.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Első kiadás
 * Teljes jegykezelő rendszer
 * Többrányú hozzáférés-kontroll

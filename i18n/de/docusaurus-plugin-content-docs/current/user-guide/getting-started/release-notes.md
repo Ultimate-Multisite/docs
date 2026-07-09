@@ -3,9 +3,9 @@ title: Versionshinweise
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Versionshinweise
+# Versionshinweise {#release-notes}
 
-## Version 2.13.0 — Veröffentlicht am 2026-06-05
+## Version 2.13.0 — Veröffentlicht am 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Neu: Unterstützung für souveräne Mandanten für Abläufe rund um Kunden-Account, Kasse, Abrechnung, Website, Rechnung, Vorlagenwechsel und Domain-Zuordnung hinzugefügt, damit Mandantennetzwerke Kunden für verwaltete Aktionen zurück zur Haupt-Website leiten können.
 - Neu: Prüfungen für Verlängerungs-Zugangsdaten für wiederkehrende Mitgliedschaften hinzugefügt, damit Gateways die automatische Verlängerung deaktivieren können, wenn eine gespeicherte Abrechnungsvereinbarung, Subscription oder ein Vault-Token fehlt.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Grenzfälle bei Mitgliedschaftsverlängerungen, Ablaufanzeige und Zahlungseinzug vermeiden jetzt sofortige Abläufe, Abstürze oder verpasste erforderliche Zahlungen.
 - Verbessert: WordPress-Kompatibilität ist bis 7.0 getestet, produktive Vue-Assets werden aus npm-Quellen neu erstellt, und die Cypress-End-to-End-Abdeckung prüft jetzt mehr Kassen-, Einrichtungs-, SSO- und Gateway-Abläufe.
 
-## Version 2.12.0 — Veröffentlicht am 2026-05-15
+## Version 2.12.0 — Veröffentlicht am 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Neu: Hostinger (hPanel) als unterstützter Host-Anbieter mit Integration für Domain-Zuordnung hinzugefügt
 - Neu: Website-Exporter verarbeitet jetzt Netzwerk-Importpakete für eine optimierte netzwerkweite Wiederherstellung von Websites
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Website-Exporter-CLI behält jetzt die korrekte Standardauswahl der Netzwerk-Website bei
 - Verbessert: Gebündeltes wp-cli aus dem Plugin-Paket entfernt, wodurch die Plugin-Größe reduziert wird
 
-## Version 2.11.0 — Veröffentlicht am 2026-05-11
+## Version 2.11.0 — Veröffentlicht am 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Neu: Website-Exporte bündeln jetzt eine selbststartende `index.php`, damit die ZIP-Datei auf einem frischen Host ohne separate Plugin-Installation installiert werden kann.
 - Neu: Netzwerkexport ermöglicht Administratoren, alle Unterwebsites in einem einzigen Archiv von der Admin-Seite für Website-Export zu exportieren.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Neu: Editor für Kassenformulare warnt, wenn ein Produkt ohne konfiguriertes erforderliches Feld hinzugefügt wird.
 - Neu: Tab für Import-/Export-Einstellungen beschreibt jetzt klar seinen Umfang und verlinkt direkt zum Website-Export-Tool.
 
-## Version 2.10.0 — Veröffentlicht am 2026-05-05
+## Version 2.10.0 — Veröffentlicht am 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Neu: Geführter PayPal-Einrichtungsassistent für manuelle Eingabe von Zugangsdaten mit OAuth-Flag-Gate für nahtlose Gateway-Konfiguration.
 - Neu: Kundenbereich für Vorlagenwechsel mit Karte für aktuelle Vorlage, dauerhaftem Raster und Button **Aktuelle Vorlage zurücksetzen** neu gestaltet.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Gefilterter SSO-Pfad wird in allen Anmeldeabläufen berücksichtigt.
 - Fix: Leere Optionen für Website-Identität bleiben beim Speichern erhalten.
 
-## Version 2.9.0 — Veröffentlicht am 2026-04-30
+## Version 2.9.0 — Veröffentlicht am 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Neu: Export und Import einzelner Websites unter **Werkzeuge > Export & Import** hinzugefügt.
 - Fix: Export-ZIP-Dateien werden jetzt über einen authentifizierten Download-Endpoint bereitgestellt.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Tour-IDs in Benutzereinstellungsschlüsseln auf Unterstriche normalisiert.
 - Verbessert: ZipArchive wird jetzt anstelle von Alchemy/Zippy für bessere Kompatibilität verwendet.
 
-## Version 2.8.0 — Veröffentlicht am 2026-04-29
+## Version 2.8.0 — Veröffentlicht am 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Neu: „Jumper aktivieren“-Umschalter zur Other Options-Einstellungs-UI hinzugefügt.
 - Neu: Statusspalte zur Listentabelle der Checkout-Formulare hinzugefügt.

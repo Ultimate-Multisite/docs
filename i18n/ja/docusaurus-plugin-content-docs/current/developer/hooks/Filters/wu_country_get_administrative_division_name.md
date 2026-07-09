@@ -4,11 +4,11 @@ title: フィルタ - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 国の行政区分の見やすい名前を返します。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,14 +18,14 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | 単語を大文字にするかどうか。 |
 | $current_country | `\WP_Ultimo\Country\Country` | 現在のクラスのインスタンスです。 |
 
-### Since
+### Since {#since}
 
 - 2.0.11
 
-### Source
+### Source {#source}
 
 Defined in [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) at line 250
 
 
-## Returns
+## Returns {#returns}
 The modified division name.

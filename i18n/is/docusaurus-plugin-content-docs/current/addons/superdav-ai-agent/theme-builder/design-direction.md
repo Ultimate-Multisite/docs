@@ -3,17 +3,17 @@ title: Hönnunarstefna
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Hönnunarstefna
+# Hönnunarstefna {#design-direction}
 
 Skrefið **Hönnunarstefna** gerir þér kleift að yfirfara, betrumbæta og klára sjónræna hönnun þemaðs áður en Theme Builder býr til heildarþemað.
 
-## Yfirlit
+## Yfirlit {#overview}
 
 Eftir að Discovery Interview er lokið sýnir Theme Builder hönnunarstefnuna þína með **forskoðun fyrir skjáborð og farsíma**. Þetta gerir þér kleift að sjá nákvæmlega hvernig hönnunin mun líta út á mismunandi tækjum áður en þú skuldbindur þig til þemaðs.
 
-## Þættir hönnunarstefnu
+## Þættir hönnunarstefnu {#design-direction-components}
 
-### 1. Litapalletta
+### 1. Litapalletta {#1-color-palette}
 
 Litasamsetning þemaðs þíns, þar á meðal:
 
@@ -23,7 +23,7 @@ Litasamsetning þemaðs þíns, þar á meðal:
 - **Hlutlausir litir** — gráir og hvítir litir fyrir bakgrunna og texta
 - **Textalitur** — aðaltextalitur fyrir læsileika
 
-### 2. Leturfræði
+### 2. Leturfræði {#2-typography}
 
 Leturval fyrir:
 
@@ -33,14 +33,14 @@ Leturval fyrir:
 - **Línuhæð** — bil á milli lína fyrir læsileika
 - **Leturþyngdir** — feitletraðar, venjulegar og léttar útgáfur
 
-### 3. Uppsetning og bil
+### 3. Uppsetning og bil {#3-layout-and-spacing}
 
 - **Breidd íláts** — hámarksbreidd fyrir efni
 - **Innri og ytri spássíur** — bil í kringum einingar
 - **Hnitakerfi** — dálkauppsetning fyrir skalanlega hönnun
 - **Bil milli íhluta** — fjarlægð á milli UI-eininga
 
-### 4. Sjónrænir þættir
+### 4. Sjónrænir þættir {#4-visual-elements}
 
 - **Hnappastílar** — hönnun fyrir aðal-, auka- og þriðjastigs hnappa
 - **Kortahönnun** — uppsetningar fyrir efnisblokkir
@@ -48,9 +48,9 @@ Leturval fyrir:
 - **Rammar og skuggar** — fíngerð sjónræn dýpt
 - **Sveimuáhrif** — stílun gagnvirks ástands
 
-## Forskoðun
+## Forskoðun {#preview-rendering}
 
-### Forskoðun fyrir skjáborð
+### Forskoðun fyrir skjáborð {#desktop-preview}
 
 Forskoðun fyrir skjáborð sýnir hönnunina í fullri breidd (yfirleitt 1200px eða breiðari):
 
@@ -59,7 +59,7 @@ Forskoðun fyrir skjáborð sýnir hönnunina í fullri breidd (yfirleitt 1200px
 - Stór leturfræði og bil
 - Allir sjónrænir þættir í fullri stærð
 
-### Forskoðun fyrir farsíma
+### Forskoðun fyrir farsíma {#mobile-preview}
 
 Forskoðun fyrir farsíma sýnir hönnunina í farsímabreidd (yfirleitt 375px):
 
@@ -68,7 +68,7 @@ Forskoðun fyrir farsíma sýnir hönnunina í farsímabreidd (yfirleitt 375px):
 - Aðlöguð leturfræði og bil
 - Snertivænar hnappastærðir
 
-### Skalanleg brotpunktar
+### Skalanleg brotpunktar {#responsive-breakpoints}
 
 Theme Builder birtir forskoðanir við þessa brotpunkta:
 
@@ -79,9 +79,9 @@ Theme Builder birtir forskoðanir við þessa brotpunkta:
 | **Skjáborð** | 1200px | Skjáborð í fullri breidd |
 | **Stórt skjáborð** | 1920px | Ofurbreiður skjár |
 
-## Að betrumbæta hönnunina
+## Að betrumbæta hönnunina {#refining-your-design}
 
-### Að gera breytingar
+### Að gera breytingar {#making-adjustments}
 
 Þú getur betrumbætt hönnunarstefnuna með því að:
 
@@ -91,7 +91,7 @@ Theme Builder birtir forskoðanir við þessa brotpunkta:
 4. **Uppfæra uppsetningu** — breyta ílátsbreiddum og dálkum hnitakerfis
 5. **Sérsníða einingar** — breyta hnappastílum, kortahönnun o.s.frv.
 
-### Uppfærslur forskoðunar
+### Uppfærslur forskoðunar {#preview-updates}
 
 Breytingar birtast í rauntíma:
 
@@ -100,7 +100,7 @@ Breytingar birtast í rauntíma:
 - Allir skalanlegir brotpunktar eru uppfærðir
 - Þú getur skipt á milli forskoðana til að staðfesta breytingar
 
-### Samanburðarsýn
+### Samanburðarsýn {#comparison-view}
 
 Berðu hönnunarstefnuna saman við:
 
@@ -108,7 +108,7 @@ Berðu hönnunarstefnuna saman við:
 - **Hönnun samkeppnisaðila** — berðu saman við innblásturssíður
 - **Fyrri útgáfur** — farðu aftur í fyrri hönnunarstefnur
 
-## Samþykki hönnunarstefnu
+## Samþykki hönnunarstefnu {#design-direction-approval}
 
 Þegar þú ert ánægð/ur með hönnunina:
 
@@ -118,7 +118,7 @@ Berðu hönnunarstefnuna saman við:
 4. **Staðfestu uppsetningu** — athugaðu bil og jöfnun
 5. **Samþykktu hönnun** — haltu áfram í þemagerð
 
-## Næstu skref
+## Næstu skref {#next-steps}
 
 Eftir að þú samþykkir hönnunarstefnuna:
 
@@ -127,7 +127,7 @@ Eftir að þú samþykkir hönnunarstefnuna:
 3. Þú getur sérsniðið frekar með WordPress customizer
 4. Haltu áfram í [Hospitality Menus](./hospitality-menus.md) eða aðra eiginleika
 
-## Bestu starfsvenjur
+## Bestu starfsvenjur {#best-practices}
 
 - **Prófaðu á raunverulegum tækjum** — notaðu raunverulega síma og spjaldtölvur ef mögulegt er
 - **Athugaðu læsileika** — tryggðu að texti sé læsilegur í öllum stærðum
@@ -135,30 +135,30 @@ Eftir að þú samþykkir hönnunarstefnuna:
 - **Hugsaðu um afköst** — fínstilltu myndir og letur fyrir hraða
 - **Skipuleggðu fyrir efni** — tryggðu að uppsetningin virki með raunverulegu efninu þínu
 
-## Úrræðaleit
+## Úrræðaleit {#troubleshooting}
 
-### Forskoðun uppfærist ekki
+### Forskoðun uppfærist ekki {#preview-not-updating}
 
 - Endurhladdu síðuna
 - Hreinsaðu skyndiminni vafra
 - Prófaðu annan vafra
 - Athugaðu nettengingu
 
-### Litir líta öðruvísi út
+### Litir líta öðruvísi út {#colors-look-different}
 
 - Athugaðu litastillingar skjás
 - Prófaðu á mismunandi tækjum
 - Staðfestu litabirtuskil með aðgengisverkfærum
 - Íhugaðu herma fyrir litblindu
 
-### Vandamál með leturfræði
+### Vandamál með leturfræði {#typography-issues}
 
 - Staðfestu að leturskrár séu að hlaðast
 - Athugaðu leturstærð við mismunandi brotpunkta
 - Prófaðu með raunverulegu efni
 - Íhugaðu línulengd fyrir læsileika
 
-## Tengd skjöl
+## Tengd skjöl {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — safna hönnunarupplýsingum
 - [Hospitality Menus](./hospitality-menus.md) — búa til skipulagðar valmyndasíður

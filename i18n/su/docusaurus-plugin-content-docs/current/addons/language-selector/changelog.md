@@ -3,7 +3,7 @@ title: Pamilih Basa Catetan Parobahan
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Catetan Parobahan Language Selector
+# Catetan Parobahan Language Selector {#language-selector-changelog}
 
 Vérsi: 1.1.3 - Dirilis dina 2026-05-05
 * Benerkeun: Variabel input ayeuna diberesihan sarta ngaran hook khusus dibéré prefix pikeun nyegah konflik jeung plugin pihak katilu

@@ -4,11 +4,11 @@ title: Filter - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Võimaldab arendajatel filtreerida lõplikke väärtusi ja lisada uusi töötlemisjuhtumeid.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Võimaldab arendajatel filtreerida lõplikke väärtusi ja lisada uusi töötlem
 | $meta_type | `string` | Hangitavate metaandmete tüüp. |
 | $meta_key | `string` | Metavälja nimi. |
 
-### Alates
+### Alates {#since}
 
 - 1.4.0
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) real 93
 
 
-## Tagastab
+## Tagastab {#returns}
 Uus vaikeväärtus.

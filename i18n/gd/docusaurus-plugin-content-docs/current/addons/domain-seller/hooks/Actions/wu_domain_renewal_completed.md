@@ -4,11 +4,11 @@ title: Gnìomh - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Gnìomh: wu_domain_renewal_completed
+# Gnìomh: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Thèid a chur an gnìomh an dèidh do àrainn a bhith air ùrachadh gu soirbheachail.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Thèid a chur an gnìomh an dèidh do àrainn a bhith air ùrachadh gu soirbheac
 | $renewal_data | `array&lt;string,mixed&gt;` | Metadata ùrachaidh (domain_name, years, customer_id, msaa.). |
 | $result | `array&lt;string,mixed&gt;` | Eagar toradh amh a thilleadh leis an registrar, a’ gabhail a-steach expiry_date ùr. |
 
-### Bhon uair
+### Bhon uair {#since}
 
 - 2.0.0
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) aig loidhne 594

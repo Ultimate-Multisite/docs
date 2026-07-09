@@ -3,13 +3,13 @@ title: Nastavení ručních plateb
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Nastavení ručních plateb (v2)
+# Nastavení ručních plateb (v2) {#setting-up-manual-payments-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
 Ruční platby jsou způsob, jak uživatelům nabídnout jiné platební metody, pokud pro ně není k dispozici **Stripe** nebo **PayPal**. Může jít o bankovní převod nebo jakoukoli jinou platební metodu dostupnou uživatelům lokálně.
 
-## Jak povolit ruční platby
+## Jak povolit ruční platby {#how-to-enable-manual-payments}
 
 Nastavení ruční platby je velmi snadné. Stačí ji povolit v platebních branách a zadat podrobné pokyny, jak má uživatel platbu odeslat.
 
@@ -31,7 +31,7 @@ A také obdrží zprávu na vaší stránce **Thank You** s vašimi platebními 
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Potvrzování ručních plateb
+## Potvrzování ručních plateb {#confirming-manual-payments}
 
 Chcete-li potvrdit ruční platbu, přejděte do nabídky **Payments** v levém panelu. Tam uvidíte všechny platby ve své síti a jejich podrobnosti, včetně jejich **stavu**. Ruční platba bude mít vždy stav **Pending**, dokud jej ručně nezměníte.
 

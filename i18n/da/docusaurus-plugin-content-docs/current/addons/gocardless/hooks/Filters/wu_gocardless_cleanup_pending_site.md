@@ -4,13 +4,13 @@ title: Filter - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site
+# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Udløses før sletning af et forældreløst afventende site for et annulleret GoCardless-medlemskab.
 
 Returnér false fra dette filter for at forhindre sletning.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Returnér false fra dette filter for at forhindre sletning.
 | $membership | `\WP_Ultimo\Models\Membership` | Det annullerede medlemskab. |
 | $old_status | `string` | Statussen før annullering. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.0
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) på linje 1086

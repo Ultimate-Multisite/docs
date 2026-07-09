@@ -4,24 +4,24 @@ title: Filtru - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filtru: wu_view_override_replaceable_views
+# Filtru: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
 
 Jippermetti lill-iżviluppaturi jżidu folders addizzjonali mal-lista sostitwibbli.
 
 Oqgħod attent, għax li tippermetti folders addizzjonali jista’ jwassal biex jitgħabbew kopji skaduti minflok il-verżjonijiet ta’ Ultimate Multisite.
 
-## Parametri
+## Parametri {#parameters}
 
 | Isem | Tip | Deskrizzjoni |
 |------|------|-------------|
 | $replaceable_views | `array` | Lista ta’ folders permessi. |
 
-### Minn
+### Minn {#since}
 
 - 2.0.0
-### Sors
+### Sors {#source}
 
 Iddefinit f’[`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L50) fil-linja 50
 
 
-## Jirritorna
+## Jirritorna {#returns}

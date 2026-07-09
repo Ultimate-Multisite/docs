@@ -3,7 +3,7 @@ title: Dnevnik promjena integracije WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Dnevnik promjena WooCommerce integracije
+# Dnevnik promjena WooCommerce integracije {#woocommerce-integration-changelog}
 
 Verzija 2.2.0 - Objavljeno 2026-07-01
 * Novo: Iznosi poreza za Ultimate Multisite sada se prikazuju kao zasebne stavke naknade u WooCommerce blagajni, što ukupne iznose poreza čini jasnijima prije plaćanja.

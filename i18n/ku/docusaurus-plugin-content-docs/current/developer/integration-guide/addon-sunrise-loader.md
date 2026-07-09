@@ -3,17 +3,17 @@ title: Barkera pelê Sunrise ya pêvekê
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Barkêşa Pelê Sunrise ya Addon
+# Barkêşa Pelê Sunrise ya Addon {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 ji bo add-on û yekgirtinên taybet ên MU-plugin barkêşeke dirêjkirina sunrise zêde dike ku divê di dema destpêkirina sunrise ya WordPress de bêne xebitandin, bêyî ku pelê çêkirî `wp-content/sunrise.php` were sererastkirin.
 
-## Kengî wê bi kar bînî
+## Kengî wê bi kar bînî {#when-to-use-it}
 
 Dema yekgirtina te divê berî barkirina pluginên asayî bixebite, wek rêkirina domaina taybet, rêvebirina daxwazên taybet-bi-host, an sererastkirinên zû yên destpêkirina torê, dirêjkirina sunrise bi kar bîne.
 
 Ji bo yekgirtinên asayî, pluginên WordPress ên asayî, MU-plugin, û hookên belgekirî yên Ultimate Multisite tercîh bike. Koda sunrise pir zû dixebite û divê biçûk, parastî, û bê girêdan bimîne.
 
-## Rêbaza navkirina pelê
+## Rêbaza navkirina pelê {#file-naming-convention}
 
 Pelekî PHP bi navê `sunrise.php` di pelrêça addonê de çêke ku navê wê bi `ultimate-multisite-` dest pê dike:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Pelên li hev tên li gor rêya addonê bi rêza alfebeyî tên barkirin.
 
-## Pelê li ku derê danîn
+## Pelê li ku derê danîn {#where-to-place-the-file}
 
 Pelê di pelrêça bingehîn a addonê de bi cih bike ku xwediyê tevgera sunrise ye:
 
@@ -45,7 +45,7 @@ Lêgerîn li gor `WP_CONTENT_DIR` tê çareserkirin, ne li gor nirxa niha ya `WP
 
 Pelê çêkirî `wp-content/sunrise.php` rasterast sererast neke. Barkêş dihêle koda taybet tevgera sunrise dirêj bike, bêyî ku pela bingehîn a sunrise ku Ultimate Multisite saz dike û nû dike were veqetandin.
 
-## Hook û filterên berdest
+## Hook û filterên berdest {#hooks-and-filters-available}
 
 Pelên sunrise ên addonê piştî ku nexşekirina domainê ya Ultimate Multisite hatiye barkirin û berî ku WordPress `ms_loaded` bişewitîne dixebitin. Di vê astê de pelekî sunrise dikare:
 
@@ -58,7 +58,7 @@ Ultimate Multisite piştî ku barkêşa sunrise ya wê bi dawî dibe `wu_sunrise
 
 Tenê fonksiyonên ku berê di qonaxa sunrise de hatine barkirin bang bike. Ji xebata giran a databeysê, renderkirina şablonan, daxwazên HTTP, û kodê ku pê bawer e rêza barkirina pluginên asayî temam bûye dûr bike.
 
-## Nimûneya herî kêm
+## Nimûneya herî kêm {#minimal-example}
 
 ```php
 <?php

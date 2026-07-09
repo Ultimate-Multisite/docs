@@ -3,11 +3,11 @@ title: Breytingaskrá
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Breytingaskrá
+# Breytingaskrá {#changelog}
 
-## 1.9.0 — Gefið út 2026-04-28
+## 1.9.0 — Gefið út 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nýtt
+### Nýtt {#new}
 
 - **`create_contact_form` ability** — býr til tengiliðaeyðublað með virka eyðublaða-plugininu (Contact Form 7, WPForms, Fluent Forms eða Gravity Forms) og skilar shortcode sem er tilbúið til innfellingar í hvaða færslu eða síðu sem er.
 - **`set_featured_image` ability** — úthlutar forsíðumynd á færslu eða síðu úr fyrirliggjandi viðhengi í Media Library með ID eða fjarlægri URL; flytur myndina sjálfkrafa inn þegar URL er gefin upp.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Endurheimta síðustu lotu** — spjallborðið hleður nú sjálfkrafa inn nýlegasta samtalinu við síðuhleðslu og þegar græjan er opnuð, svo samhengi glatast aldrei á milli síðuflakks.
 - **Aðgerðatenglar plugins** — flýtitenglar í Settings og Abilities Registry birtast nú á WordPress **Plugins → Installed Plugins** skjánum fyrir neðan plugin-lýsinguna.
 
-### Bætt
+### Bætt {#improved}
 
 - **Endurtilraun mynduppsprettu** — agentinn reynir nú aftur við allar stilltar ókeypis mynduppsprettur áður en hann fellur til baka á AI-myndaða mynd ef niðurhal mistekst.
 - **Upplýsingaspjald líkans** — alltaf sýnilegt í spjallhausnum; ekki lengur falið eftir fyrstu skilaboðin.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Endurhönnun spjallgræju** — sameinað AI-tákn kemur í stað fyrri sérsniðins avatars; samræmt innbyggða agent-kerfinu.
 - **URL tenglavæðing** — URL-slóðir sem birtast í kerfisskilaboðum og villuskilaboðabólum eru nú birtar sem smellanlegir tenglar.
 
-### Lagað
+### Lagað {#fixed}
 
 - **Finnanleiki ability** — leiðréttar lýsingar, tilvísanir í kerfiskvaðningu og samræming namespace svo öll ability birtist áreiðanlega í verkfæralista agentsins.
 - **Providers skyndiminni** — providers eru nú settir í skyndiminni fyrir allt site-ið með útgáfuteljaranum, sem kemur í veg fyrir vandamál með úrelta providers á multisite netum.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Gefið út 2026-04-09
+## 1.4.0 — Gefið út 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nýtt
+### Nýtt {#new-1}
 
 - **WP-CLI benchmark skipun** (`wp gratis-ai-agent benchmark`) — keyrir Agent Capabilities v1 benchmark suite af skipanalínunni fyrir CI pipelines og verkflæði fyrir mat á líkönum. Styður keyrslur fyrir hverja spurningu, yfirritanir á þjónustuaðila/líkani og JSON/CSV úttak.
 - **Agent Capabilities v1 benchmark suite** — skipulagt safn flókinna, fjölþrepa fyrirmæla sem prófa allt hæfnisviðið, með stigagjöf og skýrslugjöf um token/tímalengd.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Benchmark-spurning fyrir veitingastaðarvef** (`q-restaurant-website`) — heildarpróf sem nær yfir CPT-skráningu, design system, leiðsögn og plugin-uppgötvun.
 - **AI provider connector plugins** bætt við WordPress Playground blueprints fyrir hraðari uppsetningu staðbundins þróunarumhverfis.
 
-### Bætt
+### Bætt {#improved-1}
 
 - README uppfært með skjölun fyrir AI provider connector og uppsetningarleiðbeiningum.
 
-### Lagað
+### Lagað {#fixed-1}
 
 - 25 PHPUnit prófunarvillur á `main` grein leystar.
 - GitHub releases URL snið í `blueprint.json` leiðrétt.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Fyrri útgáfuathugasemdum er haldið við í plugin repository._

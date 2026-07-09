@@ -3,9 +3,9 @@ title: Cyfrannu y peidiadau a'r ffurfau cyflwyno
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Cyflenion y Mae'r Płatheirau a'r Ffyrddiadau
+# Cyflenion y Mae'r Płatheirau a'r Ffyrddiadau {#managing-payments-and-invoices}
 
-## Cyddefnyddio'r Setiau Płatheirau
+## Cyddefnyddio'r Setiau Płatheirau {#payment-settings}
 
 Yn Ofal i ddeall y cyflenwiad o płatheirau, byddwch yn angen i sicr y setiau sy'n gysylltiedig â'r płatheirau. Mawrch i **Ultimate Multisite → Settings** a chwilio ar y tab **Payment**.
 
@@ -15,7 +15,7 @@ Dyma'r gweld cyfan o'r dudalen setiau płatheirau:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Opsiadau Płatheirau Cyffredinol
+### Opsiadau Płatheirau Cyffredinol {#general-payment-options}
 
 Yn setiau cyffredinol gallwch chi ddefnyddio a chynllunio:
 
@@ -24,7 +24,7 @@ Yn setiau cyffredinol gallwch chi ddefnyddio a chynllunio:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Płatheirau Płatheirau
+### Płatheirau Płatheirau {#payment-gateways}
 
 Mae Ultimate Multisite yn chymryd gyda phatheirau płatheirau amserol. Gallwch chi gael eu chynllunio a chynllunio un o'u cyflenwiadau o'r tab Setiau Płatheirau.
 
@@ -40,11 +40,11 @@ Mae pob phatheir yn cael ei setiad cyflenwiol ei hun lle mae'n rhoi API keys a s
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Mod Cynllunio (Sandbox Mode)
+### Mod Cynllunio (Sandbox Mode) {#sandbox-mode}
 
 Gallwch chi gael **Sandbox Mode** yn gweithredol i gwneud gwyliau'r chynllunio eich płatheirau cyn mynd i weithredol. Pan yw Sandbox Mode yn weithredol, bydd ychwanegau trafnidiaethol (charges) yn cael eu gwneud.
 
-## Gweld Płatheirau
+## Gweld Płatheirau {#viewing-payments}
 
 Mawrch i'r dudalen **Payments** o dan Ultimate Multisite i weld pob trafnidiaeth arall ar gyfer eich rheol.
 
@@ -54,7 +54,7 @@ Gallwch chi gwneud cyflenwiad y płatheirau gan ddefnyddio statws (completed, pe
 
 Cliciwch ar ffurf y peidiad i gweld ei ddiweddion cyfan gan gynnwys yr adranau, y cyfrifau aysgrol, wybodaeth y gartref, a data'r gwyddu peidiad.
 
-## Cyfrifau (Invoices)
+## Cyfrifau (Invoices) {#invoices}
 
 Gall Ultimate Multisite cynrychioli cyfrifau yn awtomatig ar gyfer peidiadau. Gallwch gwahddeddu'r model cyfrifau a ffurf cymeriad o'r amgylchedd Peidiad (Payment settings).
 

@@ -4,11 +4,11 @@ title: Фільтр - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Фільтр: wu_wp_cli_enabled_sub_commands
+# Фільтр: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 Фільтрує, які підкоманди (`sub_commands`) увімкнені для цієї сутності.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 | $command_base | `string` | База, яка використовується в команді одразу після кореневого елемента. |
 | $this | `\Base_Manager` | Екземпляр об'єкта. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Визначено в [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) у рядку 198

@@ -3,7 +3,7 @@ title: Ho Hlahlobo le AffiliateWP
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# Sambamba so na le ho lae
+# Sambamba so na le ho lae {#affiliatewp-integration}
 
 Ho laea ha se fa ho tsoho ke **AffiliateWP** addon a fana.
 

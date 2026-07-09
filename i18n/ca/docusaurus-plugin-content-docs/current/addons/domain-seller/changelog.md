@@ -3,7 +3,7 @@ title: Registre de canvis del venedor de dominis
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Registre de canvis de Domain Seller
+# Registre de canvis de Domain Seller {#domain-seller-changelog}
 
 Versió 1.3.0 - Publicada el 2026-06-02
 - Nou: S'ha afegit un avís d'administració de xarxa quan el saldo de revenedor de HostAfrica baixa massa
@@ -134,20 +134,20 @@ Versió 1.0.0 - Publicada el 2025-09-28
 * **Corregit:** Tot el codi v1 obsolet actualitzat als estàndards v2
 * **Eliminat:** Compatibilitat amb v1 antiga (canvi incompatible)
 
-### Versions anteriors (v1 antiga)
+### Versions anteriors (v1 antiga) {#previous-versions-v1-legacy}
 
-### Versió 0.0.3 - 20/08/2019
+### Versió 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Corregit: Incompatibilitat amb Groundhogg CRM
 * Nota: Aquesta va ser l’última versió compatible amb v1
 
-### Versió 0.0.2 - 07/12/2018
+### Versió 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Corregit: Eliminat el camp License Key
 * Corregit: Faltaven les pestanyes de pla quan el plugin de funcionalitat està actiu
 * Millorat: Afegit un botó de saltar al camp de registre
 
-### Versió 0.0.1 - Llançament inicial
+### Versió 0.0.1 - Llançament inicial {#version-001---initial-release}
 
 * Integració bàsica d’OpenSRS per a WP Ultimo v1
 * Cerca i registre simples de dominis

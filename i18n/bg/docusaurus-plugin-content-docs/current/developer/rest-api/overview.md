@@ -3,28 +3,28 @@ title: Общ преглед на REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Справочник за REST API
+# Справочник за REST API {#rest-api-reference}
 
-## Базова конфигурация
+## Базова конфигурация {#base-configuration}
 
 **Базов URL:** `{site_url}/wp-json/wu/v2/`
 **Удостоверяване:** API ключ и Secret (HTTP Basic Auth или URL параметри)
 
-## Удостоверяване
+## Удостоверяване {#authentication}
 
-### Активиране на API
+### Активиране на API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Получаване на API идентификационни данни
+### Получаване на API идентификационни данни {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Методи за удостоверяване
+### Методи за удостоверяване {#authentication-methods}
 
 **HTTP Basic Auth (препоръчително):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Основни крайни точки
+## Основни крайни точки {#core-endpoints}
 
-### 1. API за клиенти
+### 1. API за клиенти {#1-customers-api}
 
 **Базов маршрут:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API за сайтове
+### 2. API за сайтове {#2-sites-api}
 
 **Базов маршрут:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API за членства
+### 3. API за членства {#3-memberships-api}
 
 **Базов маршрут:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API за продукти
+### 4. API за продукти {#4-products-api}
 
 **Базов маршрут:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API за плащания
+### 5. API за плащания {#5-payments-api}
 
 **Базов маршрут:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API за домейни
+### 6. API за домейни {#6-domains-api}
 
 **Базов маршрут:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Крайна точка за регистрация
+## Крайна точка за регистрация {#registration-endpoint}
 
 Крайната точка `/register` предоставя цялостен поток за поръчка/регистрация:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Крайни точки за суверенни наематели
+## Крайни точки за суверенни наематели {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 добавя REST покритие за суверенни наематели за интеграции, които предоставят, инспектират или проверяват изолирани наематели.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 Третирайте `ready: false` като блокер преди стартиране. Проверете подробностите от верификацията, поправете обвързването на хоста на базата данни, опашката, предоставянето на потребители или проблема с маршрутизацията, след което опитайте верификацията отново.
 
-## Отговори с грешки
+## Отговори с грешки {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## Пагинация и филтриране
+## Пагинация и филтриране {#pagination-and-filtering}
 
 **Параметри на заявката:**
 ```http

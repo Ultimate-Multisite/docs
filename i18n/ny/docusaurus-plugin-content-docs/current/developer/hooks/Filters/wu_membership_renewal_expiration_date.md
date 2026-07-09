@@ -4,11 +4,11 @@ title: Fyuluta - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Fyuluta: wu_membership_renewal_expiration_date
+# Fyuluta: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Imasefa tsiku lotha ntchito lomwe lawerengedwa kuti likhazikitsidwe pambuyo pa kukonzanso.
 
-## Ma Parameters
+## Ma Parameters {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Imasefa tsiku lotha ntchito lomwe lawerengedwa kuti likhazikitsidwe pambuyo pa k
 | $membership_id | `int` | ID ya umembala. |
 | $membership | `\Membership` | Chinthu cha umembala. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.0.0
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) pa mzere 2192

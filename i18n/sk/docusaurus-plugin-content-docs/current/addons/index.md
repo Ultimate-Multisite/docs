@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Doplnky Ultimate Multisite
+# Doplnky Ultimate Multisite {#ultimate-multisite-addons}
 
 Doplnky rozširujú Ultimate Multisite o ďalšie funkcie a integrácie. Väčšina doplnkov je platená a dá sa zakúpiť na [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Inštalácia
+## Inštalácia {#installation}
 
 Doplnky možno nainštalovať dvoma spôsobmi:
 
 1. **Cez stránku doplnkov** -- Prejdite na stránku správy doplnkov svojej stránky v administrácii WordPress
 2. **Manuálne stiahnutie** -- Stiahnite z [vášho účtu](https://ultimatemultisite.com/my-account/downloads/) a nahrajte cez Pluginy > Pridať nový
 
-## Dostupné doplnky
+## Dostupné doplnky {#available-addons}
 
 | Doplnok | Popis |
 |-------|-------------|

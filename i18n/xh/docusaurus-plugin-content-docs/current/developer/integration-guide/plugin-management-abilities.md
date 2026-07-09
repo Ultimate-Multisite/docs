@@ -3,11 +3,11 @@ title: Izakhono zoLawulo lweePlugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Izakhono Zolawulo Lwe-plugin
+# Izakhono Zolawulo Lwe-plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 iza **nezakhono ezi-7 zolawulo lwe-plugin** ezinokubizwa ngumncedisi we-AI ngexesha lencoko. Ezi zakhono zinika ulawulo lwenkqubo phezu kwee-plugin ze-WordPress ezifakwe nge-[Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Isishwankathelo Sezakhono
+## Isishwankathelo Sezakhono {#abilities-overview}
 
 | Isakhono | Slug | Inkcazo |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 iza **nezakhono ezi-7 zolawulo lwe-plugin** ezinokubizwa 
 | Faka i-Plugin | `install_plugin` | Ithumela i-plugin ekwi-sandbox kulawulo lwe-plugin ye-WordPress ephilayo. |
 | Vula i-Plugin | `activate_plugin` | Ivula i-plugin ekwi-sandbox kwindawo ye-sandbox ye-wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Umfaki we-plugin ulawula imisebenzi yesixokelelwano seefayile xa kuthunyelwa okanye kususwa ii-plugin. Iindlela zokuziphatha eziphambili:
 
@@ -28,7 +28,7 @@ Umfaki we-plugin ulawula imisebenzi yesixokelelwano seefayile xa kuthunyelwa oka
 - **Uhlaziyo**: Itshintsha iifayile ezikhoyo ze-plugin. Iyenza ingasebenzi i-plugin ngaphambi kokubhala ukuze kuthintelwe iimpazamo zesimo esingaphelelanga.
 - **Ukucima nge-slug**: Ifumana ulawulo lwe-plugin nge-slug, iyenza ingasebenzi kuzo zonke iisayithi, emva koko isuse ulawulo.
 
-### Ukubhalisa i-Handler Yokufaka Eyenzelwe Wena
+### Ukubhalisa i-Handler Yokufaka Eyenzelwe Wena {#registering-a-custom-install-handler}
 
 Ungangena kumjikelo wobomi bofakelo usebenzisa iintshukumo ze-`gratis_ai_plugin_installer_before_install` kunye ne-`gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 Izakhono zibhaliswa nge-**plugin ecosystem registry**. I-registry idibanisa ii-slug zezakhono neeklasi zee-handler zazo kwaye iziveze kwi-tool dispatcher ye-AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Udibaniso lwe-HookScanner
+## Udibaniso lwe-HookScanner {#hookscanner-integration}
 
 Izakhono ze-`create_plugin` kunye ne-`update_plugin` ziqhuba ngokuzenzekelayo i-**HookScanner** ngokuchasene nekhowudi esandul’ ukuveliswa. HookScanner ibuyisa uluhlu lweehook ze-action kunye ne-filter ze-WordPress ezibhaliswe yi-plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner itsiba ngokuzenzekelayo oovimba bolawulo be-`vendor/` kunye ne-`node_modules/`.
 
-## Uyilo Lwemisebenzi ye-Async
+## Uyilo Lwemisebenzi ye-Async {#async-job-architecture}
 
 Imisebenzi ye-plugin ethatha ixesha elide (ukuvelisa, ukufaka) ithunyelwa njenge-**misebenzi ye-async** enokulandelwa kwenkqubela ephilayo. Ujongano lwengxoxo lwe-AI luhlola inkqubela kwaye lusasaze uhlaziyo lwesimo kumsebenzisi:
 

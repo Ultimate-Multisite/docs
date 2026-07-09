@@ -3,11 +3,11 @@ title: Gestionarea Webhook-urilor
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gestionarea Webhook-urilor
+# Gestionarea Webhook-urilor {#webhook-handling}
 
 Creați puncte de intrare (endpoints) webhook personalizate pentru a primi evenimente de la servicii externe și pentru a sincroniza datele cu Ultimate Multisite.
 
-## Endpoint Webhook Personalizat
+## Endpoint Webhook Personalizat {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Considerații de Securitate
+## Considerații de Securitate {#security-considerations}
 
 - Verificați întotdeauna semnăturile webhook-urilor folosind HMAC sau un secret comun.
 - Folosiți un `permission_callback` pe ruta REST-ului dvs. — nu îl setați niciodată pe `__return_true` în mediul de producție.

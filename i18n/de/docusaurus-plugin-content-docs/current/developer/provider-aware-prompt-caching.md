@@ -3,11 +3,11 @@ title: Provider-Aware Prompt Caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching
+# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 führt **provider-aware prompt caching** ein. Dies optimiert die API-Kosten und die Latenz, indem Prompts über verschiedene LLM-Provider hinweg zwischengespeichert werden. Jeder Provider hat unterschiedliche Caching-Mechanismen und Konfigurationen.
 
-## Überblick
+## Überblick {#overview}
 
 Prompt Caching ermöglicht es Ihnen, Folgendes zu tun:
 
@@ -23,11 +23,11 @@ Verschiedene Provider implementieren das Caching unterschiedlich:
 - **OpenRouter**: Provider-spezifisches Caching
 - **Vertex Anthropic**: Prompt Caching mit Cache Control
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini bietet über die `cachedContents` API eine explizite Cache-Verwaltung.
 
-### Konfiguration
+### Konfiguration {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Erstellen eines zwischengespeicherten Prompts
+### Erstellen eines zwischengespeicherten Prompts {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Gibt zurück: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Verwendung eines zwischengespeicherten Prompts
+### Verwendung eines zwischengespeicherten Prompts {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache-Lebenszyklus
+### Cache-Lebenszyklus {#cache-lifecycle}
 
 ```php
 // Zwischengespeicherte Inhalte auflisten
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Best Practices für Gemini
+### Best Practices für Gemini {#best-practices-for-gemini}
 
 - **Passendes TTL festlegen**: Kostenersparnis gegen Cache-Veralterung abwägen
 - **System-Prompts zwischenspeichern**: Verwenden Sie denselben System-Prompt für mehrere Anfragen
 - **Cache-Nutzung überwachen**: Verfolgen Sie, welche Caches am häufigsten verwendet werden
 - **Abgelaufene Caches bereinigen**: Löschen Sie ungenutzte Caches regelmäßig
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Azure OpenAI unterstützt Prompt Caching mit automatischer TTL-Verwaltung.
 
-### Konfiguration
+### Konfiguration {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Caching aktivieren
+### Caching aktivieren {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache-Header
+### Cache-Header {#cache-headers}
 
 Azure OpenAI verwendet HTTP-Header zur Cache-Steuerung:
 
@@ -152,7 +152,7 @@ Unterstützte Werte:
 - `no_cache`: Diese Anfrage nicht zwischenspeichern
 - `no_store`: Nicht zwischenspeichern und nicht wiederverwenden
 
-### Cache-Nutzung überwachen
+### Cache-Nutzung überwachen {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache-Erstellung: $cache_tokens Tokens\n";
 echo "Cache-Treffer: $cache_hits Tokens\n";
 ```
 
-### Best Practices für Azure OpenAI
+### Best Practices für Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Konsistente Prompts verwenden**: Identische Prompts profitieren vom Caching
 - **Angemessenes TTL festlegen**: Kosten gegen Aktualität abwägen
 - **Cache-Metriken überwachen**: Cache-Erstellung gegen Treffer verfolgen
 - **Ähnliche Anfragen bündeln**: Anfragen gruppieren, um Cache-Treffer zu maximieren
 
-## OpenRouter: Provider-Specific Caching
+## OpenRouter: Provider-Specific Caching {#openrouter-provider-specific-caching}
 
 OpenRouter unterstützt das Caching über die zugrunde liegenden Provider (OpenAI, Anthropic usw.).
 
-### Konfiguration
+### Konfiguration {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Caching verwenden
+### OpenRouter Caching verwenden {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Provider-Spezifische Optionen
+### Provider-Spezifische Optionen {#provider-specific-options}
 
 Verschiedene Provider haben unterschiedliche Caching-Mechanismen:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Best Practices für OpenRouter
+### Best Practices für OpenRouter {#best-practices-for-openrouter}
 
 - **Provider-Caching kennen**: Jeder Provider hat unterschiedliche Mechanismen
 - **Caching-Verhalten testen**: Überprüfen Sie, ob das Caching mit Ihrem gewählten Provider funktioniert
 - **Kosten überwachen**: Verfolgen Sie die Einsparungen durch Caching
 - **Konsistente Modelle verwenden**: Der Wechsel von Modellen bricht Cache-Treffer
 
-## Vertex Anthropic: Prompt Caching mit Cache Control
+## Vertex Anthropic: Prompt Caching mit Cache Control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) unterstützt Prompt Caching mit expliziter Cache Control.
 
-### Konfiguration
+### Konfiguration {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic Caching verwenden
+### Vertex Anthropic Caching verwenden {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache Control Typen
+### Cache Control Typen {#cache-control-types}
 
 - **ephemeral**: Cache für die Dauer der Anfrage (Standard)
 - **persistent**: Cache über mehrere Anfragen hinweg (falls unterstützt)
 
-### Cache-Nutzung überwachen
+### Cache-Nutzung überwachen {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache erstellt: $cache_created Tokens\n";
 echo "Cache gelesen: $cache_read Tokens\n";
 ```
 
-### Best Practices für Vertex Anthropic
+### Best Practices für Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Ephemeral Caching verwenden**: Gut für das Caching innerhalb einer Sitzung
 - **`max_tokens` angemessen festlegen**: Cache-Größe gegen Kosten abwägen
 - **Cache-Metriken überwachen**: Die Effektivität des Caches verfolgen
 - **Mit Ihrer Arbeitslast testen**: Überprüfen Sie, ob das Caching Ihren Anwendungsfall verbessert
 
-## Cross-Provider Caching Strategy
+## Cross-Provider Caching Strategy {#cross-provider-caching-strategy}
 
-### Vereinheitlichte Konfiguration
+### Vereinheitlichte Konfiguration {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Provider-Erkennung
+### Provider-Erkennung {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Nutzt die provider-spezifische Caching-Konfiguration
 ```
 
-### Fallback-Strategie
+### Fallback-Strategie {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kostenoptimierung
+## Kostenoptimierung {#cost-optimization}
 
-### Einsparungen berechnen
+### Einsparungen berechnen {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Geschätzte Einsparungen: \$$savings\n";
 ```
 
-### Optimierungstipps
+### Optimierungstipps {#optimization-tips}
 
 - **Große System-Prompts zwischenspeichern**: Größte Kosteneinsparungen
 - **Kontext wiederverwenden**: Häufig verwendete Kontextdokumente zwischenspeichern
@@ -395,30 +395,30 @@ echo "Geschätzte Einsparungen: \$$savings\n";
 - **Cache-Effektivität überwachen**: Tatsächliche Einsparungen verfolgen
 - **TTL anpassen**: Kosten gegen Aktualität abwägen
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-### Cache wird nicht verwendet
+### Cache wird nicht verwendet {#cache-not-being-used}
 
 - Überprüfen Sie, ob das Caching in der Konfiguration aktiviert ist
 - Stellen Sie sicher, dass die Prompts identisch sind (Caching erfordert exakte Übereinstimmung)
 - Überprüfen Sie, ob der Cache abgelaufen ist
 - Überprüfen Sie die provider-spezifischen Cache-Limits
 
-### Cache-Erstellung schlägt fehl
+### Cache-Erstellung schlägt fehl {#cache-creation-failing}
 
 - Überprüfen Sie, ob die Cache-Größe innerhalb der Provider-Limits liegt
 - Stellen Sie sicher, dass die Cache-Control-Syntax korrekt ist
 - Stellen Sie sicher, dass der Provider das Caching für Ihr Modell unterstützt
 - Überprüfen Sie die Provider-Dokumentation auf Einschränkungen
 
-### Unerwartete Kosten
+### Unerwartete Kosten {#unexpected-costs}
 
 - Überwachen Sie Cache-Erstellung im Vergleich zu Cache-Lese-Tokens
 - Überprüfen Sie, ob der Cache tatsächlich verwendet wird
 - Achten Sie auf Cache-Misses aufgrund von Prompt-Variationen
 - Ziehen Sie in Betracht, das TTL oder die Cache-Strategie anzupassen
 
-## Provider-Vergleich
+## Provider-Vergleich {#provider-comparison}
 
 | Feature | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Geschätzte Einsparungen: \$$savings\n";
 | Kostenreduktion | 90% | 90% | Provider-abhängig | 90% |
 | Überwachung | Detailliert | Über Metriken | Provider-abhängig | Über Usage |
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
 1. **Wählen Sie Ihren Provider**: Wählen Sie basierend auf Ihren Anforderungen
 2. **Caching konfigurieren**: Richten Sie das provider-spezifische Caching ein

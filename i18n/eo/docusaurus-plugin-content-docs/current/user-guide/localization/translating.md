@@ -3,11 +3,11 @@ title: Traduci Ultima Multsite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Traduko de Ultimate Multisite
+# Traduko de Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite estas sviluppita en angla, sed la plugin estas plene tradukebla kaj ni 활venas aktive traduko kontribuojn.
 
-## Koro Plugin Tradukoj
+## Koro Plugin Tradukoj {#core-plugin-translations}
 
 La koro Ultimate Multisite plugin traduktaski per la oficia **WordPress.org traduko platformo**:
 
@@ -24,7 +24,7 @@ Tio estas la standarda WordPress komunumo traduko sistema. Kiam tradukoj atingas
 
 Se vi ŝatis fari tradukeditorn por via lingvo (kapabla aprobi tradukojn), kontaktu per [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Addon Tradukoj
+## Addon Tradukoj {#addon-translations}
 
 Addon pluginoj estas traduktitaj aparte en:
 
@@ -32,11 +32,11 @@ Addon pluginoj estas traduktitaj aparte en:
 
 La addon tradukoj estas nun generitaj per IA kiel komenco. Ili cakavas ĉiuj suportitaj lingvoj, sed ili povas konti awkward frazojn aŭ neprecizajn informojn. Ni 활venas homajn tradukantojn kontroli kaj sugesti plibonajn ŝanĝojn por ili pli naturalaj kaj precizaj fari.
 
-## Lokaj Tradukoj
+## Lokaj Tradukoj {#local-translations}
 
 Se vi preferas krei tradukojn lokalne por oan projekt, kaj ne kontribuari aliu, estas estas du opcionoj:
 
-### Uzi Poeditan
+### Uzi Poeditan {#using-poedit}
 
 Vi povas uzi la skriptan aplikacion **[Poedit](https://poedit.net)** por traduki la `.pot` filon:
 
@@ -46,6 +46,6 @@ Vi povas uzi la skriptan aplikacion **[Poedit](https://poedit.net)** por traduki
 4. Salvi -- Poedit generas `.po` kaj `.mo` filojn
 5. Plaxi la rezultaj filojn en la `lang` vortorio
 
-### Uzi Loco Translate
+### Uzi Loco Translate {#using-loco-translate}
 
 La WordPress plugin **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** permesas vi traduki direkte el la admin-panelo sen iu ajn skripta instrumentoj. Ĝi faras la kreon kaj kompiladon de tradukaj filoj por vi.

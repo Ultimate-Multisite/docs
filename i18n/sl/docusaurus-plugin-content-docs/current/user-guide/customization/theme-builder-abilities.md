@@ -3,18 +3,18 @@ title: Sposobnosti Theme Buildera
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Zdolosti Theme Builderja: Scaffold in Aktivacija Block Tem
+# Zdolosti Theme Builderja: Scaffold in Aktivacija Block Tem {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 predstavlja dve močnim zmožnosti, ki vam omogočajo generiranje in uporabo prilagojenih block tem neposredno iz čata.
 
-## Povzetek
+## Povzetek {#overview}
 
 Zdolosti **scaffold-block-theme** in **activate-theme** omogočajo agentom:
 - Generiranje popolnih, pripravljenih na produkcijo block tem na podlagi vaših specifikacij
 - Avtomatsko aktivacijo tem na vašem spletnem mestu brez ručne intervencije
 - Ustvarjanje skladne vizualne identitete s vodilnim oblikovanjem
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Zdolost **scaffold-block-theme** generira nov WordPress block tem z popolno strukturo teme, ki vključuje:
 
@@ -23,7 +23,7 @@ Zdolost **scaffold-block-theme** generira nov WordPress block tem z popolno stru
 - prilagojene stile in variacije blokov
 - metadata teme in deklaracije podpornih funkcij
 
-### Kako povzročiti (Invoke)
+### Kako povzročiti (Invoke) {#how-to-invoke}
 
 V svojem čatu z Superdav AI Agentom lahko zahtevate generiranje teme:
 
@@ -38,7 +38,7 @@ Agent bo:
 3. Ustvarila vse potrebne datoteke teme
 4. Priprečila temu za aktivacijo
 
-### Očekivani izhod
+### Očekivani izhod {#expected-output}
 
 Ko se zmožnost uspešno izvrši, boste videli:
 
@@ -56,11 +56,11 @@ Primer izhoda:
   Status: pripravljena na aktivacijo
 ```
 
-## Aktivacija Teme
+## Aktivacija Teme {#activate-theme}
 
 Sposob na uporabo **activate-theme** vam omogoča, da preklopite svojo spletno stran na novo ustvarjen blok teme ali obstoječo.
 
-### Kako uporabiti
+### Kako uporabiti {#how-to-invoke-1}
 
 Po ustvaritvi teme lahko takoj aktivirate:
 
@@ -74,7 +74,7 @@ Ali aktivirajte kakršno koli obstoječo temu:
 "Preklopi na temu Twentytwentyfour"
 ```
 
-### Očekivani izhod
+### Očekivani izhod {#expected-output-1}
 
 Ko uspe aktivacija:
 
@@ -92,7 +92,7 @@ Primer izhoda:
   Opomba: Preverite vašo domačo stran, da bi se upevali v nove izgled
 ```
 
-## Postopek: Ustvarjaj in aktiviraj (Scaffold and Activate)
+## Postopek: Ustvarjaj in aktiviraj (Scaffold and Activate) {#workflow-scaffold-and-activate}
 
 Tipičen postopek kombinuje obe možnosti:
 
@@ -102,7 +102,7 @@ Tipičen postopek kombinuje obe možnosti:
 4. **Aktivacija**: "Aktiviraj temo zdaj"
 5. **Preverjanje**: Obiščite svojo stran, da bi potrdili, da je novi izgled živo
 
-## Design Tokens in prilagodljivost (Customization)
+## Design Tokens in prilagodljivost (Customization) {#design-tokens-and-customization}
 
 Ustvarjene teme uporabljajo WordPress design tokene (preko `theme.json`) za:
 
@@ -113,14 +113,14 @@ Ustvarjene teme uporabljajo WordPress design tokene (preko `theme.json`) za:
 
 Ti tokeni so centralizirani v `theme.json`, kar omogoča enostavno prilagajanje celotnega dizajna sistema s ene datoteke.
 
-## Omejitve in opombe
+## Omejitve in opombe {#limitations-and-notes}
 
 Teme so se ustvarjajo v `/wp-content/themes/` in morajo slediti konvencije imenovanja WordPressa
 Aktivacija zahteva primerna dovoljenja na vašem WordPress spletni strani
 Splošna PHP kode v temah je minimalna; uporabljajte pluginove za složene funkcije
 Blok teme najbolje deluje z WordPressom 5.9 in novjim
 
-## Reševanje težav
+## Reševanje težav {#troubleshooting}
 
 **Tema se ne pojavlja po ustvarjanju (scaffolding)**
 - Preverite, da obstaja direktorij teme in ima primerna dovoljenja
@@ -137,7 +137,7 @@ Blok teme najbolje deluje z WordPressom 5.9 in novjim
 - Obrišite kakršne koli pluginove za caching
 - Preverite, da vaša verzija WordPressa podpira tokene, ki jih uporabljate
 
-## Naslednji koraki
+## Naslednji koraki {#next-steps}
 
 Po aktivaciji vaše teme lahko:
 - Uporabite **Design System Aesthetics skill** za izboljšanje tipografije, barv in razspacevanja

@@ -3,13 +3,13 @@ title: Pagdawat og Bayad
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Pagdawat og Bayad (v2)
+# Pagdawat og Bayad (v2) {#getting-paid-v2}
 
 _**MAHINUNGDANONG PAHINUMDOM: Kini nga artikulo nagtumong sa Ultimate Multisite version 2.x.**_
 
 Ang Ultimate Multisite adunay built-in nga membership ug billing system. Aron molihok ang among billing system, gi-integrate namo ang labing kasagarang payment gateways nga gigamit sa e-commerce. Ang default nga payment gateways sa Ultimate Multisite mao ang _Stripe_ , _PayPal_ , ug Manual Payment. Makagamit ka usab og _WooCommerce_ , _GoCardless_ ug _Payfast_ aron modawat og bayad pinaagi sa pag-install sa ilang tagsa-tagsa ka add-ons.
 
-## Batakang Settings
+## Batakang Settings {#basic-settings}
 
 Mahimo nimong i-configure ang bisan asa niining payment gateways ubos sa payment settings sa Ultimate Multisite. Makit-an nimo kini pinaagi sa pag-adto sa **Ultimate Multisite menu > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Kini mopugong sa membership nga makita nga murag mag-auto-renew samtang ang gate
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Asa pangitaon ang gateways:
+## Asa pangitaon ang gateways: {#where-to-find-the-gateways}
 
 Mahimo nimong i-setup ang payment gateways sa parehas nga panid ( **Ultimate Multisite > Settings > Payments**). Sa ubos mismo sa **aktibong payment gateways** , makita nimo ang: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ug _Manual_.
 
@@ -67,7 +67,7 @@ Ania usab ang kompleto nga tan-aw sa settings sa payment gateways:
 
 Karon, kon gusto nimong gamiton ang _WooCommerce_ , _GoCardless_ o _Payfast_ isip imong payment gateway, kinahanglan nimo **i-install ug i-configure ang ilang add-ons**.
 
-### Unsaon pag-install sa WooCommerce add-on:
+### Unsaon pag-install sa WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
 Nakasabot kami nga ang _Stripe_ ug _PayPal_ dili available sa ubang nasod nga naglimitar o nakababag sa Ultimate Multisite users sa epektibong paggamit sa among plugin. Busa naghimo kami og add-on aron i-integrate ang _WooCommerce,_ nga usa ka sikat kaayo nga e-commerce plugin. Ang developers sa tibuok kalibotan naghimo og add-ons aron i-integrate ang lain-laing payment gateways ngadto niini. Gipahimuslan namo kini aron mapalapad ang payment gateways nga mahimo nimong gamiton uban sa Ultimate Multisite billing system.
 
@@ -95,7 +95,7 @@ Human kini ma-activate, kung wala pa gihapon nimo ma-install ug ma-activate ang 
 
 Aron makabasa pa og dugang bahin sa WooCommerce Integration nga dugang, **i-klik dinhi**.
 
-### Unsaon pag-install sa GoCardless nga dugang:
+### Unsaon pag-install sa GoCardless nga dugang: {#how-to-install-the-gocardless-add-on}
 
 Ang mga lakang sa pag-install sa _GoCardless_ nga dugang halos pareho ra sa _WooCommerce_ nga dugang. Palihog adto sa panid sa mga dugang ug pilia ang **Ultimate Multisite: GoCardless Gateway** nga dugang.
 
@@ -111,7 +111,7 @@ Human mahuman ang pag-install, i-redirect ka ngadto sa panid sa mga plugin. Dinh
 
 Aron makat-on kung unsaon pagsugod sa _GoCardless_ gateway, **basaha kini nga artikulo**.
 
-### Unsaon pag-install sa Payfast nga dugang:
+### Unsaon pag-install sa Payfast nga dugang: {#how-to-install-the-payfast-add-on}
 
 Adto sa panid sa mga dugang ug pilia ang **Ultimate Multisite: Payfast Gateway** nga dugang.
 

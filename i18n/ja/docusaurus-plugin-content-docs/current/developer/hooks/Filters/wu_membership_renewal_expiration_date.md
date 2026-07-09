@@ -4,11 +4,11 @@ title: フィルタ - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# フィルタ: wu_membership_renewal_expiration_date
+# フィルタ: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 計算された有効期限を更新後に設定するようにフィルタします。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 | $membership_id | `int` | 会員のID。 |
 | $membership | `\Membership` | 会員オブジェクト。 |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) at line 2192

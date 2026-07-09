@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite اضافې
+# Ultimate Multisite اضافې {#ultimate-multisite-addons}
 
 اضافې Ultimate Multisite د اضافي ځانګړنو او ادغامونو سره غځوي. ډېری اضافې پیسې غواړي او له [ultimatemultisite.com](https://ultimatemultisite.com) څخه اخیستل کېدای شي.
 
-## لګول
+## لګول {#installation}
 
 اضافې په دوو لارو لګول کېدای شي:
 
 1. **د اضافې پاڼې له لارې** -- د WordPress په اداره کې د خپل سایټ د اضافو د مدیریت پاڼې ته لاړ شئ
 2. **لاسي ښکته کول** -- له [خپل Account](https://ultimatemultisite.com/my-account/downloads/) څخه یې ښکته کړئ او د Plugins > Add New له لارې یې پورته کړئ
 
-## شته اضافې
+## شته اضافې {#available-addons}
 
 | اضافه | تشریح |
 |-------|-------------|

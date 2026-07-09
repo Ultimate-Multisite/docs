@@ -3,11 +3,11 @@ title: Egyedi átjáró fejlesztése
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Egyéni fizetési átjáró fejlesztése
+# Egyéni fizetési átjáró fejlesztése {#custom-gateway-development}
 
 Egyéni fizetési átjárókat hozhatsz létre a `Base_Gateway` osztály kiterjesztésével.
 
-## Fizetési átjáró osztály
+## Fizetési átjáró osztály {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## A fizetési átjáró regisztrálása
+## A fizetési átjáró regisztrálása {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Fő metódusok
+## Fő metódusok {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Visszatérítési kérelmek kezelése |
 | `get_payment_methods()` | Mentett fizetési módok visszaadása egy ügyfélhez |
 
-## Megújítási hitelesítő adatok ismétlődő tagságokhoz
+## Megújítási hitelesítő adatok ismétlődő tagságokhoz {#renewal-credentials-for-recurring-memberships}
 
 Az Ultimate Multisite v2.13.0 lehetővé teszi, hogy a fizetési átjáró integrációk jelezzék, rendelkezik-e egy ismétlődő tagság újrafelhasználható megújítási hitelesítő adattal, mielőtt az `auto_renew` mentésre kerül. Kapcsold meg a `wu_membership_has_renewal_credential` hookot, és térj vissza a következővel:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Töröld a hiányzó hitelesítő adatot jelző jelölőt a fizetési átjáród sikeres újbóli engedélyezési folyamatának részeként, miután az új újrafelhasználható hitelesítő adat mentésre került.
 
-## Tippek
+## Tippek {#tips}
 
 - Hiba esetén mindig `WP_Error` értékkel térj vissza, hogy az Ultimate Multisite kezelni tudja a hiba megjelenítését
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Használd a `wu_log_add()` függvényt a fizetési átjáró-specifikus naplózáshoz
 
-## AI connector szolgáltatói képességek
+## AI connector szolgáltatói képességek {#ai-connector-provider-capabilities}
 
 Azoknak az egyéni integrációknak, amelyek AI connector által támogatott műveleteket hívnak meg, igazodniuk kell az AI Provider for Anthropic Max v1.3.0-val bevezetett támogatott OAuth-szolgáltatói készlethez:
 

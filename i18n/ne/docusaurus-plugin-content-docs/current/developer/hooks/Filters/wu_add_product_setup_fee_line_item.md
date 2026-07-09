@@ -4,11 +4,11 @@ title: फिल्टर - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filter: wu_add_product_setup_fee_line_item
+# Filter: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 विकासकर्ताहरूलाई सेटअप शुल्क लाइन आइटममा परिवर्तन गर्न अनुमति दिनुहोस्।
 
-## प्यारामिटरहरू
+## प्यारामिटरहरू {#parameters}
 
 | नाम | प्रकार | विवरण |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 7175266054e611752e49e762b103e858
 | $product | `\WP_Ultimo\Models\Product` | सेटअप शुल्कसँग सम्बन्धित उत्पादन। |
 | $cart | `\WP_Ultimo\Checkout\Cart` | कार्ट वस्तु। |
 
-### देखि
+### देखि {#since}
 
 - 2.1
-### स्रोत
+### स्रोत {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) मा लाइन 1790 मा परिभाषित
 
 
-## फिर्ता हुनेहरू
+## फिर्ता हुनेहरू {#returns}

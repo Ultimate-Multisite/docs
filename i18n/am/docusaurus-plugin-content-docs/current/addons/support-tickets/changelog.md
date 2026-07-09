@@ -3,13 +3,13 @@ title: የድጋፍ ትኬቶች የለውጥ ታሪክ
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# የድጋፍ ትኬቶች የለውጥ መዝገብ
+# የድጋፍ ትኬቶች የለውጥ መዝገብ {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * የተሻሻለ፡ `vendor/` ዳይሬክተሪ ከGit ట్రాకిንግ ተወግዷል (በ`.gitignore` ቀድሞ ተሸፍኗል)፣ ይህም የ repository መጠንን ይቀንሳል።
 * የተሻሻለ፡ እስከ WordPress 7.0 ድረስ ተፈትኗል።
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * ተስተካክሏል፡ ባዶ (null) እሴቶችን በnullable ticket model setters ውስጥ መቀበል።
 * ተስተካክሏል፡ ሁሉንም ትኬቶች ለትክክለኛ multisite ድጋፍ በግሎባል network-wide tables ውስጥ ማስቀመጥ።
 * ተስተካክሏል፡ የሰራተኞች (staff) fields ተደብቀዋል እንዲሁም በcustomer new-ticket form ላይ ባዶ ገጽ ወደ ሌላ ቦታ መላክ (redirect) ችግር ተስተካክሏል።
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * የተሻሻለ፡ የfrontend assets በድጋፍ ትኬት ገጾች ላይ ብቻ በቅድመ ሁኔታ (conditionally) እንዲጫኑ ተደርጓል።
 * የተሻሻለ፡ Bedrock root autoloader ቀድሞ ጥገኝነቶችን (dependencies) ሲጭን፣ የplugin autoloader ስራውን ይዘልቃል።
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * ተጨመርሏል፡ ለአስተዳሚ (admin) እና ለfrontend ሙሉ የትኬት እይታ ተግባር።
 * ተጨመርሏል፡ ለትኬት ምላሽ ማስረከቢያ (reply submissions) AJAX handler።
 * ተጨመርሏል፡ ትክክለኛ የform handling ጋር የትኬት ምላሽ ተግባር ድጋፍ።
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * የተሻሻለ፡ ምላሾች እና መያዣዎች (attachments) ትክክለኛ የquery እና የschema classes ባለው የዳታቤዝ መዋቅር።
 * የተሻሻለ፡ ለትኬት ሞዴሎች (ticket models) ከattributes ወደ real properties መሸጋገር።
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * ተዘምኗል፡ ወጥነትን ለመጠበቅ prefix ወደ ultimate-multisite ተቀይሯል።
 * ተዘምኗል፡ የጽሑፍ የጎሳ (Text domain) ደረጃውን የጠበቀ አሰራር።
 * ተስተካክሏል፡ ትናንሽ የbug ጥገናዎች እና መሻሻሎች።
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * የመጀመሪያ ስሪት
 * ሙሉ የትኬት አስተዳደር ስርዓት
 * ባለ ብዙ ደረጃ የመዳረሻ ቁጥጥር (Multi-level access control)

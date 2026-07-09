@@ -3,7 +3,7 @@ title: Gweidiad y Cyfarwyddyd Gweithredol Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Gwyrchu'r Cyfathreithiad Multisite
+# Gwyrchu'r Cyfathreithiad Multisite {#multisite-setup-wizard}
 
 Mae Ultimate Multisite yn cynnwys gwyrchu (wizard) sy'n cael ei ddefnyddio i chysylltu'r y cyfluniad WordPress arbenigol i rheol WordPress Multisite. Mae hyn yn tynnu angen i redig manual `wp-config.php` neu gyflwyno adferiadau datab.
 
@@ -11,13 +11,13 @@ Mae Ultimate Multisite yn cynnwys gwyrchu (wizard) sy'n cael ei ddefnyddio i chy
 Os ydych chi'n gweithio'r cyfluniad WordPress eich bod yn rheol Multisite, gallwch ddefnyddio ystafell hwn yn llwyr. Mae'r gwyrchu yn dangos yn unig pan nid yw Multisite wedi cael ei chynllunio eto.
 :::
 
-## Pan Gyda'r Gwyrchu'r Cyfathreithiad?
+## Pan Gyda'r Gwyrchu'r Cyfathreithiad? {#when-does-the-wizard-appear}
 
 Pan mae'ch chi'n chynllunio Ultimate Multisite ar gyfer cyfluniad WordPress arbenigol (nadwy-Multisite), mae'r plugin yn gweld bod Multisite nid wedi cael ei chynllunio eto ac yn redirifu'n awt i'r Gwyrchu'r Cyfathreithiad Multisite yn lle y gwyrchu cyffredinol.
 
 Gallwch hefyd cyrraeddnu'r hyn yn uniongyrchol ar **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Prifau Cynllunio
+## Prifau Cynllunio {#prerequisites}
 
 Ar ôl i'r gwyrchu, sicrwch bod:
 
@@ -29,7 +29,7 @@ Ar ôl i'r gwyrchu, sicrwch bod:
 Mae'r gwyrchu yn newid eich ffeil `wp-config.php` ac yn creu tablau datab newydd. Creu bachau ddiogel arall arall cyn ymlaen.
 :::
 
-## Cynllun 1: Cyfeiriad
+## Cynllun 1: Cyfeiriad {#step-1-welcome}
 
 Mae'r gyfrifennol cyntaf yn esbonio beth yw WordPress Multisite a beth fydd y gwyrchu ei wneud:
 
@@ -42,11 +42,11 @@ Mae'r gyfrifennol cyntaf yn esbonio beth yw WordPress Multisite a beth fydd y gw
 
 Cliciw ar **Continue** i ddechrau.
 
-## Cynllun 2: Cyfeiriad Rheol
+## Cynllun 2: Cyfeiriad Rheol {#step-2-network-configuration}
 
 Mae'r cynllun hwn yn gofyn i chi gael eich cyfeiriadau rheol.
 
-### Estrwyll y Safl
+### Estrwyll y Safl {#site-structure}
 
 Myddwch beth eich cynnigau eich siatol network yn cael eu cyflwyno:
 
@@ -57,11 +57,11 @@ Myddwch beth eich cynnigau eich siatol network yn cael eu cyflwyno:
 Os ydych chi'n gw mill â sub-domains, byddwch yn angen i'ch ddefnyddio **wildcard DNS** a **wildcard SSL certificate** ar gyfer eich domain. Mae'r bennafau WordPress sydd wedi'u gael ei rheoli yn hanfodol hyn yn awtomatig. Gweld [Ultimate Multisite 101](./ultimate-multisite-101) i'w cyflwyno cyfathrebu aml.
 :::
 
-### Enw Network
+### Enw Network {#network-title}
 
 Rhaid i chi ddarganfod enw ar gyfer eich network. Mae hyn yn deallio gyda'r enw siatol gyfredol gyfan gyda "Network" wedi'i ddogfen. Gallwch gwahaniaethu hyn yn neslin o'r setegau network.
 
-### E-bostell Admin Network
+### E-bostell Admin Network {#network-admin-email}
 
 Mae'r e-bostell a ddefnyddir i gynnigau admin network. Mae hyn yn deallio gyda'r e-bostell ystodol ar gyfer y borthwr cyfan.
 
@@ -69,7 +69,7 @@ Mae'r e-bostell a ddefnyddir i gynnigau admin network. Mae hyn yn deallio gyda'r
 
 Ar ôl i ddifynnu'r ffeiliau, cliwch ar **Continue** i ddeall.
 
-## Cynllun 3: Cyflwyniad
+## Cynllun 3: Cyflwyniad {#step-3-installation}
 
 Cliwch ar bot **Install** i ddechrau. Mae'r cynllun yn gwneud pethau cyfathrebu mewn pum ystafell yn gyfansawdd, gan dangos ei chyflym yn real-time:
 
@@ -96,7 +96,7 @@ Ar ôl cael pob cynllun wedi'i cyflwyno'n llwyddiannus, byddwch yn gweld statws 
 
 Yn ymyrchau hyn, bydd y cyfrifol yn mynd i'r screen cyflwyniad yn awtomatig.
 
-## Cynllun 4: Cyflwyno
+## Cynllun 4: Cyflwyno {#step-4-complete}
 
 Ar ôl cael yr chwarae wedi'i cyflwyno, byddwch yn gweld message llwyddiannus sy'n cadarnhau bod WordPress Multisite wedi'i gofalwch.
 
@@ -108,7 +108,7 @@ Gallwch chi ddilyn y cyflwyniad Ultimate Multisite i ddefnyddio eich platform Wa
 Ar ôl ymlaen y cyflwyniad o'r multisite yn gwblhau, bydd eich browder yn cael ei ddiriedig trwy'r admin cyd-nort wedi'i chynllunio. Gallwch angen i chi log in eto eto felly am ychwanegu gyfathriau cyffredinol ar gyfer y multisite.
 :::
 
-## Cyflwyniad Manwl Fel Ddychwion (Manual Setup Fallback)
+## Cyflwyniad Manwl Fel Ddychwion (Manual Setup Fallback) {#manual-setup-fallback}
 
 Os nad yw'r gwirdd yn gallu ysgrifennu i'r ffeil `wp-config.php` eich rhai (oherwydd amgylchedd o'r ffeil neu restrion y server), bydd yn dangos yr cod cywir sy rydych chi angen i drosu manwl:
 
@@ -117,9 +117,9 @@ Os nad yw'r gwirdd yn gallu ysgrifennu i'r ffeil `wp-config.php` eich rhai (oher
 
 Ar ôl cyflwyno'r newidiadau manwl, gwahanwch y peidiad ac bydd y gwirdd yn gweld bod y multisite yn weithredol.
 
-## Cyfathriau (Troubleshooting)
+## Cyfathriau (Troubleshooting) {#troubleshooting}
 
-### Mae'r gwirdd yn dweud nad yw wp-config.php yn gallu ysgrifennu
+### Mae'r gwirdd yn dweud nad yw wp-config.php yn gallu ysgrifennu {#the-wizard-says-wp-configphp-is-not-writable}
 
 Mae angen i'r proses web eich server i gael swyddi ysgrifennu ar y ffeil `wp-config.php`. Gallwch chi:
 
@@ -127,7 +127,7 @@ Mae angen i'r proses web eich server i gael swyddi ysgrifennu ar y ffeil `wp-con
 - Defnyddio gyfarwyddiadau cyflwyniad manwl a rhoi'r gwirdd wedi'i chynllunio gan y gwirdd
 - Mae'n cael ei gynnig amser eich cyd-nort i gael help
 
-### Nid yw gwefan yn cael ei ddefnyddio ar ôl cyflwyniad (subdomains)
+### Nid yw gwefan yn cael ei ddefnyddio ar ôl cyflwyniad (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Os ydych chi wedi dewis stratig subdomain, mae angen i chi gyfathri **wildcard DNS** ar gyfer eich domain. Addasu record DNS:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Gofyn amser gyda'ch cyd-nort i gael cyfarwyddiadau os ydych chi nid yn sicr sut i gyfathri hyn.
 
-### Pwobl cyfathriau ar ôl cyflwyniad
+### Pwobl cyfathriau ar ôl cyflwyniad {#authentication-issues-after-setup}
 
 Os ydych chi wedi tystyr neu byddwch yn cael ei ddefnyddio erosau cookie ar ôl y multisite setup:
 

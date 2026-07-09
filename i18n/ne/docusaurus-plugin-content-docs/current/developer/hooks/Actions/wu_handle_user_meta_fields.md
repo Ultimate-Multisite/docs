@@ -4,11 +4,11 @@ title: कार्य - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# कार्य: wu_handle_user_meta_fields
+# कार्य: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 plugin विकासकर्ताहरूलाई आवश्यक परेमा फरक तरिकाले प्रयोगकर्ता meta data सुरक्षित गर्न अनुमति दिनुहोस्।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ plugin विकासकर्ताहरूलाई आवश्यक प�
 | $customer | `\Customer` | Ultimate Multisite ग्राहक object। |
 | $checkout | `\Checkout` | checkout class। |
 
-### Since
+### Since {#since}
 
 - 2.0.4
-### Source
+### Source {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) मा line 1244 मा परिभाषित।

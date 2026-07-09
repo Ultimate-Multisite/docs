@@ -3,7 +3,7 @@ title: Gestionarea taxelor
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestionarea taxelor
+# Gestionarea taxelor {#tax-handling}
 
 Ultimate Multisite are un modul de colectare a taxelor integrat în pluginul nostru de bază, așa că, dacă trebuie să colectezi taxe pe vânzări pentru planurile, pachetele și serviciile tale, poți face acest lucru cu ușurință fără a recurge la instalarea vreunor suplimente.
 
@@ -11,7 +11,7 @@ Pentru companiile localizate în Europa, oferim un **supliment** care adaugă in
 
 Ultimate Multisite nu depune și nu virează taxe în numele tău către guvern; noi te ajutăm doar să colectezi taxele corespunzătoare în momentul tranzacției. **Va trebui în continuare să virezi taxele pe cont propriu.**
 
-## Activarea colectării taxelor
+## Activarea colectării taxelor {#enabling-tax-collection}
 
 Colectarea taxelor nu este activată implicit. Pentru a o activa, trebuie să mergi la **Ultimate Multisite > Setări > Taxe** și să comuți pentru a activa setarea Activează taxele.
 
@@ -25,7 +25,7 @@ Poți vedea și setările de taxe pentru produse individuale:
 
 ![Setări de taxe pentru produse](/img/config/settings-taxes.png)
 
-### Taxă exclusă vs. taxă inclusă
+### Taxă exclusă vs. taxă inclusă {#tax-excluded-vs-tax-included}
 
 În mod implicit, toate prețurile produselor tale sunt fără taxe, ceea ce înseamnă că taxele **nu sunt incluse** în prețul produsului. Dacă stabilim că un client trebuie să plătească taxe pentru o anumită achiziție, vom adăuga taxele **peste** subtotal.
 
@@ -37,7 +37,7 @@ Nu uita să **salvezi** modificările pe care le-ai făcut.
 
 ###
 
-## Crearea cotelor de taxă
+## Crearea cotelor de taxă {#creating-tax-rates}
 
 După ce activezi Colectarea taxelor, va trebui să creezi cote de taxă pentru locații specifice folosind editorul nostru de cote de taxă.
 
@@ -51,7 +51,7 @@ Pe pagina editorului de cote de taxă, poți adăuga cote de taxă noi făcând 
 
 Va trebui să dai fiecărei cote de taxă un **titlu** (folosit pe facturi). Apoi poți alege **țara** (obligatorie), **statul,** și **orașul** (ambele opționale) unde această taxă va fi percepută. În final, adaugă **cota de taxă în procente**.
 
-### Categorii de taxe
+### Categorii de taxe {#tax-categories}
 
 Poți crea și mai multe categorii de taxe, pentru a adăuga cote de taxă diferite pentru tipuri diferite de produse.
 
@@ -73,7 +73,7 @@ Poți seta categoria de taxe pentru un anumit produs mergând la **pagina de edi
 
 Pe același ecran, poți dezactiva comutatorul **Este taxabil?** pentru a informa Ultimate Multisite că nu ar trebui să colecteze taxe pentru acel produs specific.
 
-## Suport pentru VAT european
+## Suport pentru VAT european {#european-vat-support}
 
 După cum am menționat anterior, avem un supliment disponibil pentru clienții din UE care au cerințe suplimentare din cauza reglementărilor europene privind VAT.
 
@@ -101,7 +101,7 @@ Dacă revii la **fila Setări taxe** , vei vedea opțiuni noi disponibile. Activ
 
 <!-- Captură de ecran indisponibilă: comutatorul Activează suportul VAT în setările de taxe după activarea suplimentului -->
 
-### Preluarea cotelor de taxă VAT
+### Preluarea cotelor de taxă VAT {#pulling-on-vat-tax-rates}
 
 Unul dintre instrumentele pe care le adaugă integrarea noastră este posibilitatea de a încărca cotele de taxă pentru statele membre UE. Acest lucru se poate face vizitând pagina editorului de cote de taxă după activarea suportului VAT UE.
 
@@ -111,7 +111,7 @@ Unul dintre instrumentele pe care le adaugă integrarea noastră este posibilita
 
 Poți edita și valorile după ce le preiei. Pentru a face acest lucru, editează pur și simplu linia din tabel de care ai nevoie și fă clic pentru a salva noile valori.
 
-### Validarea VAT
+### Validarea VAT {#vat-validation}
 
 Când suportul VAT este activat, Ultimate Multisite va adăuga un câmp suplimentar în formularul de finalizare a comenzii, sub câmpul pentru adresa de facturare. Câmpul va apărea doar pentru clienții localizați în UE.
 

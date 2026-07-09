@@ -3,17 +3,17 @@ title: 'Lekcia 9: Cenotvorba pre zisk'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcia 9: Cenotvorba pre zisk
+# Lekcia 9: Cenotvorba pre zisk {#lesson-9-pricing-for-profit}
 
 V Lekcii 5 sme nastavili počiatočné ceny pre plány FitSite. Teraz spresníme cenovú stratégiu pomocou techník, ktoré zvyšujú príjmy, podporujú prechody na vyššie plány a znižujú churn.
 
-## Kde sme skončili
+## Kde sme skončili {#where-we-left-off}
 
 FitSite má zavedené plány, šablóny, checkout, branding a onboarding. Počiatočné ceny boli $49/$99/$199 mesačne. Teraz zabezpečíme, aby tieto ceny pracovali efektívnejšie.
 
-## Princípy cenotvorby pre špecializované platformy
+## Princípy cenotvorby pre špecializované platformy {#pricing-principles-for-niche-platforms}
 
-### Stanovujte cenu podľa hodnoty, nie nákladov
+### Stanovujte cenu podľa hodnoty, nie nákladov {#price-on-value-not-cost}
 
 Vaše náklady na hosting môžu byť $5-$15 za zákaznícku stránku. To však neznamená, že vaša cena má byť $20. Nepredávate hosting. Predávate:
 
@@ -24,7 +24,7 @@ Vaše náklady na hosting môžu byť $5-$15 za zákaznícku stránku. To však 
 
 Stanovujte cenu podľa hodnoty, ktorú poskytujete, nie podľa nákladov na jej dodanie.
 
-### Ukotvite cenu voči alternatívam
+### Ukotvite cenu voči alternatívam {#anchor-to-alternatives}
 
 Keď majiteľ fitness štúdia hodnotí FitSite, porovnáva ho s:
 
@@ -34,7 +34,7 @@ Keď majiteľ fitness štúdia hodnotí FitSite, porovnáva ho s:
 
 Pri $49-$199/mesiac je FitSite lacnejší než vývojár, schopnejší než všeobecné nástroje na tvorbu stránok a nekonečne lepší než žiadna webová stránka.
 
-## Implementácia cenových variácií
+## Implementácia cenových variácií {#implementing-price-variations}
 
 Ročné ceny podporujú záväzok a znižujú churn. Prejdite na kartu **Price Variations** každého plánu a pridajte ročné možnosti:
 
@@ -46,12 +46,12 @@ Ročné ceny podporujú záväzok a znižujú churn. Prejdite na kartu **Price V
 
 Do svojho checkout formulára pridajte pole **Period Selection**, aby zákazníci mohli prepínať medzi mesačnou a ročnou fakturáciou. Pozrite si [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Prečo ročné ceny fungujú
+### Prečo ročné ceny fungujú {#why-annual-pricing-works}
 
 - **Pre vás**: Hotovosť vopred, nižší churn (zákazníci, ktorí platia ročne, majú menšiu pravdepodobnosť zrušenia uprostred obdobia)
 - **Pre nich**: Skutočná úspora, predvídateľnosť rozpočtu
 
-## Zriaďovacie poplatky
+## Zriaďovacie poplatky {#setup-fees}
 
 Zvážte jednorazový zriaďovací poplatok pri plánoch, ktoré zahŕňajú praktickú konfiguráciu:
 
@@ -61,7 +61,7 @@ Zvážte jednorazový zriaďovací poplatok pri plánoch, ktoré zahŕňajú pra
 
 Zriaďovacie poplatky nakonfigurujte v cenovej sekcii každého plánu. Podrobnosti nájdete v časti [Vytvorenie vášho prvého predplatného produktu](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Skúšobné obdobia
+## Skúšobné obdobia {#trial-periods}
 
 Ponúknutie skúšobného obdobia znižuje prekážky pri registrácii, ale prináša riziko, že sa používateľ nestane platiacim zákazníkom. Pre FitSite:
 
@@ -70,11 +70,11 @@ Ponúknutie skúšobného obdobia znižuje prekážky pri registrácii, ale prin
 
 Skúšku nakonfigurujte v cenovej sekcii plánu Starter zapnutím prepínača **Offer Trial** a nastavením trvania na 7 dní.
 
-### Ako dosiahnuť konverzie zo skúšok
+### Ako dosiahnuť konverzie zo skúšok {#making-trials-convert}
 
 Skúška funguje iba vtedy, ak zákazník počas skúšobného obdobia zažije hodnotu. Vaša onboarding sekvencia (Lekcia 8) je tu kľúčová -- uvítacie e-maily by mali byť načasované tak, aby podporili zapojenie v rámci 7-dňového okna.
 
-## Zľavové kódy
+## Zľavové kódy {#discount-codes}
 
 Vytvorte strategické zľavové kódy na konkrétne účely:
 
@@ -88,7 +88,7 @@ Na ich vytvorenie prejdite do **Ultimate Multisite > Discount Codes**. Úplný n
 Zľavy by mali byť strategickými nástrojmi, nie trvalou súčasťou. Ak zľavu dostane každý, nie je to zľava -- je to vaša skutočná cena. Používajte ich na konkrétne kampane, odporúčania a časovo obmedzené promo akcie.
 :::
 
-## Práca s daňami
+## Práca s daňami {#tax-handling}
 
 Ak pôsobíte v jurisdikcii, ktorá vyžaduje výber daní:
 
@@ -98,7 +98,7 @@ Ak pôsobíte v jurisdikcii, ktorá vyžaduje výber daní:
 
 Podrobnú konfiguráciu nájdete v časti [Práca s daňami](/user-guide/payment-gateways/tax-handling). Ak obsluhujete zákazníkov medzinárodne, zvážte [VAT addon](/addons/vat) na súlad s pravidlami EÚ.
 
-## Kontrola vašej cenotvorby
+## Kontrola vašej cenotvorby {#reviewing-your-pricing}
 
 Po spustení sa k cenotvorbe vracajte štvrťročne. Sledujte:
 
@@ -107,7 +107,7 @@ Po spustení sa k cenotvorbe vracajte štvrťročne. Sledujte:
 - **Churn podľa plánu**: Ak roční zákazníci odchádzajú menej, silnejšie propagujte ročné ceny
 - **Ceny konkurencie**: Koľko si účtujú alternatívy? Máte správne pozicionovanie?
 
-## Sieť FitSite doteraz
+## Sieť FitSite doteraz {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Čo sme vytvorili v tejto lekcii
+## Čo sme vytvorili v tejto lekcii {#what-we-built-this-lesson}
 
 - **Ročné ceny** s 20 % zľavou na podporu záväzku
 - **Setup poplatky** pri vyšších úrovniach na pokrytie úsilia pri onboardingu

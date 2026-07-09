@@ -4,11 +4,11 @@ title: Chiito - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# Chiito: wu_pending_network_published
+# Chiito: wu_pending_network_published {#action-wupendingnetworkpublished}
 
 Chinotanga mushure mekunge netiweki yakamirira yaburitswa.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
@@ -16,6 +16,6 @@ Chinotanga mushure mekunge netiweki yakamirira yaburitswa.
 | $membership | `\WP_Ultimo\Models\Membership` | Membership. |
 | $pending_network | `array` | Data yepakutanga yenetiweki yakamirira. |
 
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1815) pamutsetse 1815

@@ -3,17 +3,17 @@ title: Integrazzjoni RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integrà RunCloud
+# Integrà RunCloud {#runcloud-integration}
 
-## Panoramika
+## Panoramika {#overview}
 RunCloud huwa piattaforma di gestjoni server basata fuq il cloud li ti permet a te deploya u gestire applicazzjonijiet web fasilment fuq i t-tvoli tal-cloud tiegħek. Dan l-integrà ti permet sincronizzazzjoni automatika tal-domain u gestjoni tal-SSL certificate bejn Ultimate Multisite u RunCloud.
 
-## Funzjonalità
+## Funzjonalità {#features}
 - Sincronizzazzjoni automatika tal-domain
 - Gestjoni tal-SSL certificate
 - Eliminazzjoni tal-domain meta vengono eliminati le mappature (mappings)
 
-## Requisiti
+## Requisiti {#requirements}
 Il-konstanti fil-folgli tiegħek `wp-config.php` għandir definita:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Istruzzjonijiet ta l-Ippostitizzjoni (Setup)
+## Istruzzjonijiet ta l-Ippostitizzjoni (Setup) {#setup-instructions}
 
-### 1. Oħtja il-RunCloud API Credentials Tieħdak
+### 1. Oħtja il-RunCloud API Credentials Tieħdak {#1-get-your-runcloud-api-credentials}
 
 1. Inlogja fil-dashboard tiegħek tal-RunCloud
 2. Id-pressa fuq "User Profile" (klick fuq l-profil tiegħek fil-angolo tiegħu fl-top dirett)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Klick fuq "Generate API Key" se ma għandekx xi ħaġa
 5. Kopja l-API Key u l-API Secret tiegħek
 
-### 2. Oħtja id-Domain ID u App ID Tieħdak
+### 2. Oħtja id-Domain ID u App ID Tieħdak {#2-get-your-server-and-app-ids}
 
 1. Fil-dashboard tiegħek tal-RunCloud, id-pressa fuq "Servers"
 2. Scegli is-server li jista'ġi l-WordPress multisite tiegħek
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Id-pressa fuq "Web Applications" u selezjoni l-app tiegħek ta WordPress
 5. L-App ID huwa magħruf fil-URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Aggiungi Konstanti għal wp-config.php
+### 3. Aggiungi Konstanti għal wp-config.php {#3-add-constants-to-wp-configphp}
 
 Aggiungi l-konstanti tal-folgli tiegħek `wp-config.php`:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Iżgihja l-Integrà (Enable the Integration)
+### 4. Iżgihja l-Integrà (Enable the Integration) {#4-enable-the-integration}
 
 1. F'admin WordPress tiegħek, għandi tnejj l-Ultimate Multisite > Settings
 2. Naviga għall-tab "Domain Mapping" (Mappatura tal-Dominji)
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Abella l-RunCloud integration
 5. Klikka fuq "Save Changes" (Saħħa l-Modifiki)
 
-## Come Funziona
+## Come Funziona {#how-it-works}
 
 Meta li domini jomm mappati f'Ultimate Multisite:
 
@@ -70,19 +70,19 @@ Meta li domini jomm mappati f'Ultimate Multisite:
 
 Biex siti ta subdomj (subdomains), l-integration tagħmel l-kunsill mill-RunCloud biex jiddeħħlu subdomji meta tiddarba siti jidduq fl-network tiegħek.
 
-## Problemi u Soluzzjonijiet
+## Problemi u Soluzzjonijiet {#troubleshooting}
 
-### Problemi b'Konnekkjizzjoni API
+### Problemi b'Konnekkjizzjoni API {#api-connection-issues}
 - Verifika li l-credentials tal-API tiegħek huma korretti
 - Kontrolla li l-server tiegħek u id-app ID huma korretti
 - Assicurajt li l-account tiegħek f'RunCloud għandu l-permessijiet biex jiddeħħlu
 
-### Problemi sertifikat SSL
+### Problemi sertifikat SSL {#ssl-certificate-issues}
 - RunCloud tista' teħtieġ ħin ta' issaħħa biex jiddarba sertifikat SSL
 - Verifika li d-dominji tiegħek qed indironqu b'mod korrett għall-IP address tal-server tiegħek
 - Kontrolla l-settings ta' SSL f'RunCloud għall-app tiegħek
 
-### Dominju M'iddarba
+### Dominju M'iddarba {#domain-not-added}
 - Kontrolla l-logs ta' Ultimate Multisite għal pirċa msgji speċifi
 - Verifika li d-dominju ma jiddeħħlx għad-awer min RunCloud
 - Assicurajt li l-plan tiegħek f'RunCloud jsupporta domini multipli

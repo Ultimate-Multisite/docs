@@ -4,20 +4,20 @@ title: Chiito - wu_checkout_after_process_order
 sidebar_label: wu_checkout_after_process_order
 _i18n_hash: 40a5c096f223c5f82a109163c29284d3
 ---
-# Chiito: wu_checkout_after_process_order
+# Chiito: wu_checkout_after_process_order {#action-wucheckoutafterprocessorder}
 
 Bvumira vagadziri kuti vatange ma hook ekuwedzera.
 
-## Maparamita
+## Maparamita {#parameters}
 
 | Zita | Rudzi | Tsananguro |
 |------|------|-------------|
 | $checkout | `\Checkout` | Muenzaniso wechinhu chekubhadhara. |
 | $cart | `\Cart` | Muenzaniso wengoro yekubhadhara. |
 
-### Kubvira
+### Kubvira {#since}
 
 - 2.0.9
-### Kwakabva
+### Kwakabva {#source}
 
 Yakatsanangurwa mu [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1013) pamutsara 1013

@@ -3,7 +3,7 @@ title: Urutonde rw'impinduka z'Ihuzwa rya WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Amateka y’impinduka za WooCommerce Integration
+# Amateka y’impinduka za WooCommerce Integration {#woocommerce-integration-changelog}
 
 Version 2.2.0 - Yasohotse ku 2026-07-01
 * Gishya: Imibare y’imisoro ya Ultimate Multisite ubu igaragara nk’imirongo y’amafaranga ya WooCommerce atandukanye kuri checkout, bigatuma igiteranyo cy’imisoro kirushaho gusobanuka mbere yo kwishyura.

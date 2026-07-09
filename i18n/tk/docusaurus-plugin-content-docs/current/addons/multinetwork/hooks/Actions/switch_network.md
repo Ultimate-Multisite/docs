@@ -4,20 +4,20 @@ title: Hereket - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Hereket: switch_network
+# Hereket: switch_network {#action-switchnetwork}
 
 Häzirki tor konteksti çalşylanda işleýär.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Ady | Görnüşi | Beýany |
 |------|------|-------------|
 | $new_network_id | `int` | Çalşylýan toryň ID-si. |
 | $old_network_id | `int` | Öňki häzirki toryň ID-si. |
 
-### Şondan bäri
+### Şondan bäri {#since}
 
 - 1.3.0
-### Çeşme
+### Çeşme {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L859) faýlynda, 859-njy setirde kesgitlenen

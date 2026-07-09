@@ -3,13 +3,13 @@ title: Izifanekiso zeSayithi
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Iitemplate zeSayithi (v2)
+# Iitemplate zeSayithi (v2) {#site-templates-v2}
 
 _**QAPHELA: Eli nqaku libhekisa ku-Ultimate Multisite inguqulelo 2.x. Ukuba usebenzisa inguqulelo 1.x,**_ **jonga eli nqaku** _**.**_
 
 Injongo yethu xa sidala inethiwekhi ye-premium nge-Ultimate Multisite kukwenza iinkqubo ezininzi kangangoko ngokuzenzekelayo ngoxa sinika abathengi bethu ukuguquguquka kunye nokhetho olwahlukeneyo abanokukhetha kulo xa bedala iiwebhusayithi zabo. Enye indlela elula yokufezekisa le bhalansi kukusebenzisa uphawu lwe-Iitemplate zeSayithi ze-Ultimate Multisite.
 
-## Yintoni iTemplate yeSayithi?
+## Yintoni iTemplate yeSayithi? {#what-is-a-site-template}
 
 Njengoko igama lisitsho, iTemplate yeSayithi yisayithi esisiseko enokusetyenziswa njengesiseko xa kudalwa iisayithi ezintsha kwinethiwekhi yakho.
 
@@ -17,7 +17,7 @@ Oku kuthetha ukuba unokudala isayithi esisiseko, uvule ii-plugin ezahlukeneyo, u
 
 Oko kuvakala kuhle kakhulu, kodwa ndiyidala njani itemplate entsha yesayithi? Kulula kangangoko kunokwenzeka.
 
-## Ukudala nokuhlela iTemplate entsha yeSayithi
+## Ukudala nokuhlela iTemplate entsha yeSayithi {#creating-and-editing-a-new-site-template}
 
 Iitemplate zeSayithi ziisayithi eziqhelekileyo nje kwinethiwekhi yakho. Ukudala itemplate entsha ungaya nje ku-**Ulawulo lweNethiwekhi > Ultimate Multisite > Iisayithi > Yongeza iSayithi.**
 
@@ -35,7 +35,7 @@ Emazantsi efomu, uya kuqaphela iswitshi yokutshintsha ethi **Kopa iSayithi**. Ok
 
 ![I-modal yokongeza itemplate yesayithi eneswitshi yokukopa isayithi](/img/config/site-templates-list.png)
 
-### Ukulungisa imixholo yeTemplate yeSayithi
+### Ukulungisa imixholo yeTemplate yeSayithi {#customizing-the-contents-of-a-site-template}
 
 Ukulungisa itemplate yakho yesayithi, vele uye kwiphaneli yayo ye-Dashboard wenze utshintsho oludingayo. Unokudala izithuba ezintsha, amaphepha, uvule ii-plugin kwaye utshintshe i-theme esebenzayo. Ungaya nakwi-Customizer utshintshe zonke iintlobo zokhetho lokulungisa.
 
@@ -43,11 +43,11 @@ Ukulungisa itemplate yakho yesayithi, vele uye kwiphaneli yayo ye-Dashboard wenz
 
 Yonke loo datha iya kukopishwa xa umthengi edala isayithi entsha esekelwe kuloo Template yeSayithi.
 
-### Ukhetho oluPhambili
+### Ukhetho oluPhambili {#advanced-options}
 
 Ukuba uyayazi indlela yakho malunga nokubhala ikhowudi yesiko, ungasebenzisa i-API yethu yoKhangelo nokuTshintsha ukuze utshintshe ngokuzenzekelayo ulwazi kwiseyithi entsha emva kokudalwa kwayo. Oku kuluncedo kwizinto ezifana nokutshintsha amagama eenkampani kwiphepha elithi Malunga, ukutshintsha i-imeyile yoqhagamshelwano kwiphepha loQhagamshelwano, njl.
 
-### Ukusebenzisa iiTemplate zeSayithi
+### Ukusebenzisa iiTemplate zeSayithi {#using-site-templates}
 
 Kulungile, ke udale iqela leeTemplate zeSayithi ezahlukeneyo ezineziyilo, ii-theme kunye noseto olwahlukeneyo. Uzisenza njani zibe luncedo kwinethiwekhi yakho ngoku?
 
@@ -59,7 +59,7 @@ Ngokusisiseko, kukho iindlela ezimbini onokuzisebenzisa ngoku (hayi ngaxeshanye)
 
   * Ukuvumela abathengi bakho ukuba bakhethe iitemplate zesayithi ngokwabo ngexesha lokubhalisa.
 
-#### Imowudi 1: Yabela iTemplate yeSayithi
+#### Imowudi 1: Yabela iTemplate yeSayithi {#mode-1-assign-site-template}
 
 Kule mowudi, abathengi bakho abayi kukwazi ukukhetha itemplate xa bedala i-account, kodwa endaweni yoko uya kuchaza ukuba yeyiphi itemplate ekufuneka isetyenziswe kwisiCwangciso ngasinye sakho.
 
@@ -71,7 +71,7 @@ Oku kuya kukuzisa kwiphepha elithi **Hlela iMveliso**. Phantsi kwecandelo **loKh
 
 ![Ithebhu yetemplate yesayithi yemveliso enokhetho lokwabela itemplate yesayithi](/img/config/product-site-templates.png)
 
-#### Imowudi 2: Khetha iTemplate yeSayithi ekhoyo
+#### Imowudi 2: Khetha iTemplate yeSayithi ekhoyo {#mode-2-choose-available-site-template}
 
 Kule mowudi, uya kunika abathengi bakho ukhetho ngexesha lenkqubo yokubhalisa. Baya kukwazi ukukhetha kwiitemplate zesayithi ezahlukeneyo ozichaza phantsi koseto lwemveliso. Unokhetho lokunciphisa itemplate yesayithi abanokukhetha kuyo phantsi kwemveliso ekhethiweyo. Oku kuya kukuvumela ukuba ube neeseti ezahlukeneyo zeetemplate zesayithi phantsi kwemveliso nganye, nto leyo efanelekileyo ukugqamisa imisebenzi kunye neempawu ezahlukeneyo zemveliso enexabiso eliphezulu.
 
@@ -79,7 +79,7 @@ Kwiphepha **Hlela iMveliso**. Phantsi kwecandelo **loKhetho lweMveliso**, fumana
 
 ![Khetha iitemplate zesayithi ezikhoyo ezinokhetho lokuziphatha](/img/config/product-site-templates.png)
 
-### Imowudi engagqibekanga: Ukukhetha itemplate yesayithi kwifomu ye-Checkout
+### Imowudi engagqibekanga: Ukukhetha itemplate yesayithi kwifomu ye-Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Ukuba unqwenela ukuba zonke iitemplate zakho zesayithi zifumaneke ngexesha lobhaliso, okanye mhlawumbi awukhethi ukwenza umsebenzi owongezelelweyo wokwabela okanye ukuchaza iitemplate zesayithi phantsi kwemveliso nganye oyidalayo. Emva koko unokuseta ngokulula ukukhethwa kwetemplate yesayithi phantsi **kweFomu yakho ye-Checkout**. Ukwenza oku, yiya ku-**Ultimate Multisite > Iifomu ze-Checkout** uze ucofe **Hlela** phantsi kwefomu onqwenela ukuyiqwalasela.
 
@@ -93,29 +93,29 @@ Kwicala elibonwa ngumsebenzisi, abathengi babona isikhethi setemplate ngexesha l
 
 ![Isikhethi setemplate kwicala elibonwa ngumsebenzisi ngexesha lokubhalisa](/img/config/frontend-template-chooser.png)
 
-### Iinketho zeTemplate zeSayithi
+### Iinketho zeTemplate zeSayithi {#site-template-options}
 
 Kukho eminye imisebenzi yeetemplate zesayithi ekhoyo onokuyivula okanye uyicime phantsi kweesetingi ze-Ultimate Multisite.
 
 ![Iinketho zeetemplate zesayithi kwiisetingi ze-Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Vumela Ukutshintsha iTemplate
+#### Vumela Ukutshintsha iTemplate {#allow-template-switching}
 
 Ukuvula le nketho kuya kuvumela abathengi bakho ukuba batshintshe itemplate abayikhethayo ngexesha lenkqubo yokubhalisa emva kokuba iakhawunti nesayithi zidaliwe. Oku kuluncedo ngokwembono yomthengi kuba kubavumela ukuba baphinde bakhethe itemplate ukuba kamva bafumanisa ukuba ukhetho lwabo lokuqala belungelolona lulungileyo kwiimfuno zabo ezithile.
 
-#### Vumela Abasebenzisi ukuba basebenzise iSayithi yabo njengeetemplate
+#### Vumela Abasebenzisi ukuba basebenzise iSayithi yabo njengeetemplate {#allow-users-to-use-their-site-as-templates}
 
 Kuba abasebenzisi beendawo ezingaphantsi bachithe ixesha besakha kwaye beyila isayithi yabo, basenokufuna ukuyikopa baze bayisebenzise njengenye yeetemplate zesayithi ezifumanekayo xa kusenziwa enye indawo engaphantsi kwinethiwekhi yakho. Le nketho iya kubavumela ukuba bakwenze oko.
 
-#### Kopa iMedia xa kuphindwa iTemplate
+#### Kopa iMedia xa kuphindwa iTemplate {#copy-media-on-template-duplication}
 
 Ukukhangela le nketho kuya kukopa imedia elayishwe kwisayithi yetemplate iye kwisayithi entsha edaliweyo. Oku kungagqithiswa kwisicwangciso ngasinye.
 
-#### **Thintela Iinjini Zokukhangela ekufakeni kwisalathiso iiTemplate zeSayithi**
+#### **Thintela Iinjini Zokukhangela ekufakeni kwisalathiso iiTemplate zeSayithi** {#prevent-search-engines-from-indexing-site-templates}
 
 Iitemplate zesayithi njengoko kuxoxwe ngazo kweli nqaku ziziseko ezilungiselelweyo kodwa ziseyinxalenye yenethiwekhi yakho, nto leyo ethetha ukuba zisafumaneka ukuze iinjini zokukhangela zizifumane. Le nketho iya kukuvumela ukuba ufihle iitemplate zesayithi ukuze iinjini zokukhangela zingazifaki kwisalathiso.
 
-## Ukugcwalisa kwangaphambili iiTemplate zeSayithi ngophendlo nokutshintsha oluzenzekelayo
+## Ukugcwalisa kwangaphambili iiTemplate zeSayithi ngophendlo nokutshintsha oluzenzekelayo {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Enye yezona mpawu zinamandla ze-Ultimate Multisite kukukwazi ukongeza umbhalo, umbala, kunye nemihlaba yokukhetha enokubakho nanini na kwifom yokubhalisa. Sakuba siyibambile loo datha, sinokuyisebenzisa ukugcwalisa kwangaphambili umxholo kwiindawo ezithile zetemplate yesayithi ekhethiweyo. Emva koko, xa isayithi entsha ipapashwa, Ultimate Multisite iya kutshintsha izibambi-ndawo ngolwazi lokwenene olufakwe ngexesha lokubhalisa.
 
@@ -135,7 +135,7 @@ Ultimate Multisite iya kuthi ngokuzenzekelayo itshintshe izibambi-ndawo ngedatha
 
 ![Izibambi-ndawo ezitshintshwe ngedatha yomthengi kwisayithi](/img/config/site-templates-list.png)
 
-### Ukusombulula ingxaki "yetemplate egcwele izibambi-ndawo"
+### Ukusombulula ingxaki "yetemplate egcwele izibambi-ndawo" {#solving-the-template-full-of-placeholders-problem}
 
 Konke oko kulungile, kodwa sidibana nengxaki embi: ngoku iitemplate zethu zesayithi - ezinokutyelelwa ngabathengi bethu - zigcwele izibambi-ndawo ezimbi ezingathethi kakhulu.
 

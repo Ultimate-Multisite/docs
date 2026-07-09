@@ -3,11 +3,11 @@ title: Traduairt an Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Tárgáil Ultimate Multisite
+# Tárgáil Ultimate Multisite {#translating-ultimate-multisite}
 
 Tá Ultimate Multisite dénachd in Gaeilge, ach tá an plugin go léir fada tradháil agus táimid ag féachaint ar chontrait tradáiste.
 
-## Tárgála Plugin Core
+## Tárgála Plugin Core {#core-plugin-translations}
 
 Tá an plugin core Ultimate Multisite tradáiste tríd an **fomrá tradáiste oifige** de WordPress:
 
@@ -26,7 +26,7 @@ Má tá tú ag iarraidh a bheith mar editor tradáiste do luach (a bheith ag fh�
 
 Má tá tú a fáil ar an talamh chun traslaithe a chur in áit chomh maith le do tháirge, mar chuid féin is báid an tairiscint upstream, tá de Dhá chuntas:
 
-### Aistriú le Poedit
+### Aistriú le Poedit {#addon-translations}
 
 Is féidir leat a bheith ag úsáid an application desktop **[Poedit](https://poedit.net)** chun an file `.pot` a traslaigh:
 
@@ -36,6 +36,6 @@ Is féidir leat a bheith ag úsáid an application desktop **[Poedit](https://po
 4. Save -- Poedit a gnáimhneann files `.po` agus `.mo`
 5. Slán an file output i folder `lang`
 
-### Aistriú le Loco Translate
+### Aistriú le Loco Translate {#local-translations}
 
 Leann an plugin WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** leat traslaigh go díreach ó chuid admin panel gan aon rud desktop. Tá sé ag cur isteach agus a gnáimhneann files translation chun cinn duit.

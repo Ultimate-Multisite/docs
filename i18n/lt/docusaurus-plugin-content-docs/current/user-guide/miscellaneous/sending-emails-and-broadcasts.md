@@ -3,13 +3,13 @@ title: El. laiškų ir transliacijų siuntimas
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# El. laiškų ir transliacijų siuntimas (v2)
+# El. laiškų ir transliacijų siuntimas (v2) {#sending-emails-and-broadcasts-v2}
 
 _**SVARBI PASTABA: šis straipsnis skirtas Ultimate Multisite 2.x versijai.**_
 
 Ultimate Multisite turi funkciją, kuri leis jums bendrauti su savo klientais siunčiant el. laišką tiksliniam naudotojui arba naudotojų grupei, taip pat siunčiant pranešimus jų administratoriaus Dashboard, kad būtų paskelbti pranešimai.
 
-## Pridėkite administratoriaus pranešimus prie savo klientų Dashboard naudodami transliacijas
+## Pridėkite administratoriaus pranešimus prie savo klientų Dashboard naudodami transliacijas {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
 Naudodami Ultimate Multisite transliacijų funkciją, galite pridėti **administratoriaus pranešimus** prie savo naudotojo antrinės svetainės administratoriaus Dashboard.
 
@@ -51,7 +51,7 @@ Sukūrę žinutę, galite paspausti mygtuką **Send**.
 
 Ir viskas. Administratoriaus pranešimas turėtų iš karto pasirodyti jūsų naudotojo Dashboard.
 
-## Siųskite el. laiškus savo klientams
+## Siųskite el. laiškus savo klientams {#send-emails-to-your-customers}
 
 Naudodami Ultimate Multisite transliacijų funkciją, galite siųsti el. laišką savo naudotojams. Turite galimybę siųsti el. laišką tik konkretiems naudotojams arba taikyti į konkrečią naudotojų grupę pagal produktą ar planą, kurį jie yra užsiprenumeravę.
 
@@ -81,11 +81,11 @@ Sukūrę žinutę, galite paspausti mygtuką **Send**.
 
 Štai kaip lengva siųsti el. laišką savo galutiniams naudotojams naudojant transliacijų funkciją.
 
-## Sisteminiai el. laiškai
+## Sisteminiai el. laiškai {#system-emails}
 
 Sisteminiai el. laiškai Ultimate Multisite yra tie **automatiniai pranešimai**, kuriuos sistema siunčia po tam tikrų veiksmų, tokių kaip registracija, mokėjimas, domeno susiejimas ir pan. Šiuos el. laiškus galima redaguoti arba keisti Ultimate Multisite nustatymuose. Taip pat yra funkcija, kuri leis jums atstatyti ir importuoti esamus nustatymus iš kitos Ultimate Multisite diegimo versijos.
 
-### Atstatymas ir importavimas
+### Atstatymas ir importavimas {#resetting--importing}
 
 Naujos Ultimate Multisite versijos, taip pat priedai, kartkartėmis gali ir registruos naujus el. laiškus.
 
@@ -93,7 +93,7 @@ Kad išvengtume konfliktų ir kitų problemų, **automatiškai nepridėsime nauj
 
 Tačiau super administratoriai ir agentai gali importuoti šiuos naujai užregistruotus el. laiškus naudodami importavimo įrankį. Šis procesas sukurs naują sisteminį el. laišką su naujo el. laiško šablono turiniu ir konfigūracija, leisdamas super administratoriui atlikti bet kokius norimus pakeitimus arba palikti juos tokius, kokie yra.
 
-#### Kaip importuoti sisteminius el. laiškus
+#### Kaip importuoti sisteminius el. laiškus {#how-to-import-system-emails}
 
 Eikite į savo Ultimate Multisite Settings puslapį ir pereikite į **Emails** skirtuką.
 
@@ -111,7 +111,7 @@ Tada galite perjungti Import Emails parinktis, kad pamatytumėte, kurie sistemin
 
 <!-- Ekrano kopija nepasiekiama: modalinis langas „Atstatyti ir importuoti“ su išskleistomis el. laiškų importavimo parinktimis -->
 
-#### Sisteminių el. laiškų atstatymas
+#### Sisteminių el. laiškų atstatymas {#reseting-system-emails}
 
 Kitais atvejais suprasite, kad pakeitimai, kuriuos atlikote konkrečiame el. laiško šablone, jums nebetinka, ir norėsite atstatyti jį į **numatytąją būseną**.
 

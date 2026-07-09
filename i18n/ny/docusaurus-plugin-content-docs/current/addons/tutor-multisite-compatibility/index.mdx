@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Pulogalamu yowonjezera ya WordPress yomwe imawonjezera zokonza zogwirizana ndi Tutor LMS m'malo a multisite.
 
-## Kufotokozera
+## Kufotokozera {#description}
 
 Pulogalamu yowonjezera iyi imapereka zokonza zofunika zogwirizana poyendetsa Tutor LMS pa ma netiweki a WordPress multisite. Imasamalira kulembetsa kwa ogwiritsa ntchito, kasamalidwe ka aphunzitsi, malire a maphunziro, ndi magwiridwe ena okhudzana ndi multisite.
 
-## Zinthu Zake
+## Zinthu Zake {#features}
 
 - **Kasamalidwe ka Matebulo a Nkhokwe ya Deta**: Imadziwa ndi kupanga yokha matebulo a Tutor LMS omwe akusowa chifukwa cha zoletsa za makiyi akunja za multisite
 - **Kulembetsa Ogwiritsa Ntchito pa Multisite**: Oyang'anira AJAX apadera osamalira kulembetsa kwa ogwiritsa ntchito m'masamba a netiweki
@@ -24,7 +24,7 @@ Pulogalamu yowonjezera iyi imapereka zokonza zofunika zogwirizana poyendetsa Tut
 - **Mawonedwe Apadera a Woyang'anira**: Mndandanda wa aphunzitsi ndi mawonekedwe a kasamalidwe omwe amazindikira multisite
 - **Zida za Woyang'anira**: Mawonekedwe a kasamalidwe ka nkhokwe ya deta kwa oyang'anira netiweki ndi tsamba
 
-## Zofunikira
+## Zofunikira {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Pulogalamu yowonjezera iyi imapereka zokonza zofunika zogwirizana poyendetsa Tut
 - Kuyika kwa WordPress Multisite
 - Pulogalamu yowonjezera ya Ultimate Multisite (pa magwiridwe a malire a maphunziro)
 
-## Kuyika
+## Kuyika {#installation}
 
 1. Kwezani mafayilo a pulogalamu yowonjezera ku `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Onetsetsani kuti Tutor LMS yayikidwa ndi kuyatsidwa
 3. Yatsani pulogalamu yowonjezera kudzera mu menyu ya 'Plugins' mu WordPress
 4. Pulogalamu yowonjezera idzaphatikizana yokha ndi Tutor LMS
 
-## Kapangidwe ka Mafayilo
+## Kapangidwe ka Mafayilo {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Magwiridwe Osunthidwa Kuchokera ku MU Plugin
+## Magwiridwe Osunthidwa Kuchokera ku MU Plugin {#functionality-moved-from-mu-plugin}
 
 Pulogalamu yowonjezera iyi ili ndi magwiridwe omwe kale anali mu `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Pulogalamu yowonjezera iyi ili ndi magwiridwe omwe kale anali mu `wp-content/mu-
 - Kusamalira kulembetsa ogwiritsa ntchito pa multisite
 - Kuwonetsa ID ya chinthu cha maphunziro
 
-## Kasamalidwe ka Nkhokwe ya Deta
+## Kasamalidwe ka Nkhokwe ya Deta {#database-management}
 
-### Vuto
+### Vuto {#the-problem}
 
 M'malo a WordPress multisite, kupanga matebulo a Tutor LMS kumalephera pa matebulo okhala ndi zoletsa za makiyi akunja ku tebulo la ogwiritsa ntchito. Izi zimachitika chifukwa:
 
@@ -81,7 +81,7 @@ M'malo a WordPress multisite, kupanga matebulo a Tutor LMS kumalephera pa matebu
 - Makiyi akunja amalozera ku `wp_2_users` (lomwe kulibe)
 - Tebulo lenileni la ogwiritsa ntchito ndi `wp_users` (logawidwa pa netiweki yonse)
 
-### Yankho
+### Yankho {#the-solution}
 
 Pulogalamu yowonjezera iyi imachita izi yokha:
 
@@ -92,13 +92,13 @@ Pulogalamu yowonjezera iyi imachita izi yokha:
    - Kupanga tsamba latsopano mu netiweki
    - Kufufuza matebulo pamanja kudzera mu mawonekedwe a woyang'anira
 
-### Matebulo Okhudzidwa
+### Matebulo Okhudzidwa {#affected-tables}
 
 - `tutor_coupon_usages` - Lili ndi kiyi wakunja ku tebulo la ogwiritsa ntchito
 - `tutor_carts` - Lili ndi kiyi wakunja ku tebulo la ogwiritsa ntchito
 - `tutor_notification_preferences` - Tebulo la TutorPro lokhala ndi kiyi wakunja ku tebulo la ogwiritsa ntchito
 
-### Mawonekedwe a Woyang'anira
+### Mawonekedwe a Woyang'anira {#admin-interface}
 
 Pezani zida za kasamalidwe ka nkhokwe ya deta pa:
 
@@ -111,6 +111,6 @@ Mawonekedwewa amakupatsani mwayi:
 - Kufufuza kasinthidwe ka nkhokwe ya deta
 - Kuwona zambiri za mkhalidwe mwatsatanetsatane
 
-## Thandizo
+## Thandizo {#support}
 
 Pulogalamu yowonjezera iyi yapangidwa makamaka pa nsanja ya KursoPro. Kuti mupeze thandizo laukadaulo, funsani gulu la opanga.

@@ -3,7 +3,7 @@ title: WooCommerce integrācijas izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce integrācijas izmaiņu žurnāls
+# WooCommerce integrācijas izmaiņu žurnāls {#woocommerce-integration-changelog}
 
 Versija 2.2.0 - Izlaista 2026-07-01
 * Jauns: Ultimate Multisite nodokļu summas tagad parādās kā atsevišķas WooCommerce maksas rindas norēķināšanās laikā, padarot nodokļu kopsummas skaidrākas pirms maksājuma.

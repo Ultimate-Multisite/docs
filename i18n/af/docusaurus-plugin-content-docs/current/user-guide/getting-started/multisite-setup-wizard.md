@@ -3,7 +3,7 @@ title: Multisite Opstelwonderbord
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite sluit 'n ingeboude wizard in wat 'n standaard WordPress-installasie outomaties ombeeld na 'n WordPress Multisite-netwerk. Dit beteken jy hoef nie handmatig in `wp-config.php` te redigeer of databasedatabasebeveiligingskommandos te hardloop nie.
 
@@ -11,13 +11,13 @@ Ultimate Multisite sluit 'n ingeboude wizard in wat 'n standaard WordPress-insta
 As jou WordPress-installasie reeds as 'n Multisite-netwerk loop, kan jy hierdie stap heeltemal oorskakel. Die wizard verskyn net wanneer Multisite nog nie geaktiveer is nie.
 :::
 
-## Wanneer Verskyn die Wizard?
+## Wanneer Verskyn die Wizard? {#when-does-the-wizard-appear}
 
 Wanneer jy Ultimate Multisite op 'n standaard (nie-Multisite) WordPress-installasie aktiveer, detecteer die plugin dat Multisite nie geaktiveer is nie en rig jou outomaties na die Multisite Setup Wizard in plaas van die gewone setup wizard.
 
 Jy kan dit ook direk by **WP Admin > Ultimate Multisite > Multisite Setup** bereik.
 
-## Voorvereistes
+## Voorvereistes {#prerequisites}
 
 Voordat jy die wizard laat loop, maak seker van die volgende:
 
@@ -29,7 +29,7 @@ Voordat jy die wizard laat loop, maak seker van die volgende:
 Die wizard wysig jou `wp-config.php` lêer en skep nuwe databastable. Maak altyd 'n backup voordat jy voortgaan.
 :::
 
-## Stap 1: Welkom
+## Stap 1: Welkom {#step-1-welcome}
 
 Die eerste skerm verduidelik wat WordPress Multisite is en wat die wizard gaan doen:
 
@@ -42,11 +42,11 @@ Die eerste skerm verduidelik wat WordPress Multisite is en wat die wizard gaan d
 
 Klik op **Continue** om voort te gaan.
 
-## Stap 2: Netwerkkonfigurasie
+## Stap 2: Netwerkkonfigurasie {#step-2-network-configuration}
 
 Hierdie stap vra jou om jou netwerkinstellings te konfigureer.
 
-### Webwerfstruktuur
+### Webwerfstruktuur {#site-structure}
 
 Kies hoe jou netwerkwebwerwe georganiseer sal word:
 
@@ -57,11 +57,11 @@ Kies hoe jou netwerkwebwerwe georganiseer sal word:
 As jy subdomeine kies, sal jy **wildkaart DNS** en 'n **wildkaart SSL-sertifikaat** vir jou domein moet konfigureer. Die meeste beheerde WordPress-hostingproviders hanteer dit outomaties. Kyk na [Ultimate Multisite 101](./ultimate-multisite-101) vir 'n gedetailleerde vergelyking.
 :::
 
-### Netwerk Titel
+### Netwerk Titel {#network-title}
 
 Voer 'n naam in vir jou netwerk. Dit standaardiseer na jou huidige webwerftitel met "Network" bygevoeg. Jy kan dit later van die netwerkinstellings verander.
 
-### Netwerk Admin E-pos
+### Netwerk Admin E-pos {#network-admin-email}
 
 Die e-posadres wat vir netwerkadministrasie-kennisgewings gebruik word. Dit standaardiseer na die huidige gebruiker se e-posadres.
 
@@ -69,7 +69,7 @@ Die e-posadres wat vir netwerkadministrasie-kennisgewings gebruik word. Dit stan
 
 Nadat jy die velde ingevul het, klik op **Continue** om voort te gaan.
 
-## Stap 3: Instalering
+## Stap 3: Instalering {#step-3-installation}
 
 Klik op die **Install**-knoppie om te begin. Die wizard voer vyf outomatiese stappe in reeks uit, wat elkeen sy vordering in real-time toon:
 
@@ -96,7 +96,7 @@ Sodra al die stappe suksesvol voltooi is, sal jy 'n groen "Success!" status vir 
 
 Die wizard sal dan outomaties voortgaan na die voltooiingsskerm.
 
-## Stap 4: Voltooi
+## Stap 4: Voltooi {#step-4-complete}
 
 Sodra die instalering voltooi is, sal jy 'n suksesboodskap sien wat bevestig dat WordPress Multisite geaktiveer is.
 
@@ -108,7 +108,7 @@ Jy kan nou voortgaan met die Ultimate Multisite setup wizard om jou WaaS-platfor
 Nadat die multisite-instalering voltooi is, sal jou browser deur die nuut-geaktiveerde netwerkadmin herlei. Jy kan dalk weer aanmeld moet, aangesien die autentiseringkoekies vir die multisite-omgewing opgedateer word.
 :::
 
-## Handmatige Opstel Terugval
+## Handmatige Opstel Terugval {#manual-setup-fallback}
 
 As die wizard nie skryf kan na jou `wp-config.php` lêer nie (vanwege lêerverhasilings of serverbeperkings), sal dit die presiese kode wys wat jy handmatig moet byvoeg:
 
@@ -117,9 +117,9 @@ As die wizard nie skryf kan na jou `wp-config.php` lêer nie (vanwege lêerverha
 
 Nadat jy die handmatige veranderinge gemaak het, verfris die bladsy en die wizard sal detecteer dat multisite nou aktief is.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Die wizard sê wp-config.php is nie skryfbaar nie
+### Die wizard sê wp-config.php is nie skryfbaar nie {#the-wizard-says-wp-configphp-is-not-writable}
 
 Jou webwerfserverproses benodig skryfverhasilings na die `wp-config.php` lêer. Jy kan óf:
 
@@ -127,7 +127,7 @@ Jou webwerfserverproses benodig skryfverhasilings na die `wp-config.php` lêer. 
 - Die handmatige opstel terugval-instruksies wat deur die wizard verskaf word, gebruik
 - Jou hostingprovider vra vir hulp
 
-### Webwerwe is nie toeganklik na opstel (subdomeine)
+### Webwerwe is nie toeganklik na opstel (subdomeine) {#sites-are-not-accessible-after-setup-subdomains}
 
 As jy die subdomein-struktuur gekies het, moet jy **wildkaart DNS** vir jou domein konfigureer. Voeg 'n DNS-rekord by:
 
@@ -139,7 +139,7 @@ Value: [jou server IP]
 
 Kontroleer met jou hostingprovider as jy onseker is oor hoe om dit te konfigureer.
 
-### Autentiseringprobleme na opstel
+### Autentiseringprobleme na opstel {#authentication-issues-after-setup}
 
 As jy uitgelog is of koekie-foute ervaar na die multisite-opstel:
 
@@ -147,7 +147,7 @@ As jy uitgelog is of koekie-foute ervaar na die multisite-opstel:
 2. Meld weer aan by `yourdomain.com/wp-login.php`
 3. As die probleem aanhou, kyk of jou `wp-config.php` nie `COOKIE_DOMAIN` op `false` gestel het nie — dit is 'n bekende probleem op subdomein multisite-instalrasies
 
-### 'n Stap het gefaal tydens instalering
+### 'n Stap het gefaal tydens instalering {#a-step-failed-during-installation}
 
 As een van die instaleringsstappe 'n fout toon:
 

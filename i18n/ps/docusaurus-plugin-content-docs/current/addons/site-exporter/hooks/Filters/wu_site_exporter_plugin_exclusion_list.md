@@ -4,23 +4,23 @@ title: فلټر - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# فلټر: wu_site_exporter_plugin_exclusion_list
+# فلټر: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
 
 پرمختیاکوونکو ته اجازه ورکوي چې د پلګینونو هغه لېست اداره کړي چې ښايي له جوړ شوي zip څخه وایستل شي.
 
-## پارامېټرونه
+## پارامېټرونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
 | $plugin_list | `array` | هغه پلګینونه چې به وایستل شي. |
 
-### له نسخې راهیسې
+### له نسخې راهیسې {#since}
 
 - 2.0.0
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/class-wp-ultimo-site-exporter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-wp-ultimo-site-exporter.php#L210) کې په ۲۱۰ کرښه کې تعریف شوی
 
 
-## ستنول
+## ستنول {#returns}
 د پلګینونو لېست.

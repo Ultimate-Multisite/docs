@@ -4,11 +4,11 @@ title: Филтр - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Филтр: wu_apc_process_page_content
+# Филтр: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Ба таҳиягарон имкон медиҳад, ки муҳтавои ниҳоиро тағйир диҳанд
 
-## Параметрҳо
+## Параметрҳо {#parameters}
 
 | Ном | Навъ | Тавсиф |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Массиве, ки ҷойнишинҳоро дар бар мегирад. |
 | $placeholder_count | `int` | Шумораи ҷойнишинҳои ёфтшуда. |
 
-### Аз
+### Аз {#since}
 
 - 1.4.0
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) дар сатри 46 муайян шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}
 Муҳтаво пас аз тағйирдиҳӣ.

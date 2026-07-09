@@ -7,30 +7,30 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce Integration {#woocommerce-integration}
 
 Gumagana ang WooCommerce Integration sa paraang halos kapareho ng paggana ng aming Manu-manong Gateway. Nag-aalok ito ng napakaraming flexibility sa iyong mga user, na nagpapahintulot sa kanila na pumili ng alinman sa mga form ng pagbabayad na available sa iyong WooCommerce install. At simple ito: kapag natapos na ang panahon ng pagsingil ng user, ang suskripsyon ng user ay ilalagay muna sa hold. Kasabay nito, gagawa ng order sa WooCommerce install ng pangunahing site ng network. Pagkatapos ay makatatanggap ang user ng invoice sa kanilang email, na may link para isagawa ang pagbabayad. Kapag natanggap na ang pagbabayad, mare-renew ang suskripsyon.
 
-## Mga Tampok
+## Mga Tampok {#features}
 
 - Madaling integrasyon sa pagitan ng Ultimate Multisite at WooCommerce
 - Ilang paraan ng pagbabayad na available
 - Awtomatikong umuulit na pagsingil gamit ang kasamang subscriptions core, na may opsiyonal na mga pagpapahusay mula sa WooCommerce Subscriptions plugin
 - Kasama sa kabuuan sa pag-checkout ang mga buwis ng Ultimate Multisite bilang magkakahiwalay at hindi nabubuwisang linya ng bayarin sa WooCommerce upang masuri ng mga customer ang mga halaga ng buwis bago magbayad
 
-## Dokumentasyon
+## Dokumentasyon {#documentation}
 
 **Pag-set Up ng WooCommerce Integration**
 
 **Pagpapalawak ng iyong mga Opsiyon sa Pagbabayad gamit ang Ultimate Multisite: WooCommerce Integration**
 
-## Pag-install
+## Pag-install {#installation}
 
 1. I-upload ang 'ultimate-multisite-woocommerce' sa direktoryong '/wp-content/plugins/'
 2. I-activate ang plugin sa pamamagitan ng menu na 'Plugins' sa WordPress
 3. Sundin ang sunod-sunod na Wizard upang i-set up ang plugin
 
-## Gabay sa Paggamit
+## Gabay sa Paggamit {#usage-guide}
 
 _**MAHALAGANG TALA: Tumutukoy ang artikulong ito sa Ultimate Multisite bersyon 2.x.**_
 
@@ -40,7 +40,7 @@ Nauunawaan namin na ang _Stripe_ at _PayPal_ ay hindi available sa ilang bansa, 
 
 Ang _WooCommerce_ ay isang napakapopular na plugin para sa eCommerce. Gumawa ang mga developer sa buong mundo ng mga add-on upang i-integrate dito ang iba’t ibang gateway ng pagbabayad. Sinamantala namin ito upang palawakin ang mga gateway ng pagbabayad na maaari mong gamitin sa sistema ng pagsingil ng Ultimate Multisite.
 
-## Pag-set Up Nito
+## Pag-set Up Nito {#setting-it-up}
 
 Una, kailangan mong i-install ang WooCommerce Integration add-on na **libre para sa mga lisensyadong user**. Upang i-install ito, mag-click sa Ultimate Multisite sa iyong super admin dashboard at piliin ang **Add-ons**.
 
@@ -68,11 +68,11 @@ Kapag na-install na, makakakita ka ng karagdagang opsiyon sa ilalim ng mga setti
 
 Maaari mong i-configure ang ilang pangunahing setting tulad ng display name na lalabas sa front end at mga tagubilin upang gabayan ang iyong mga user sa kanilang daloy ng pag-checkout. Pagkatapos ay maaari kang pumunta sa **mga setting ng _WooCommerce_ ng iyong Pangunahing site** upang i-enable at i-configure ang payment gateway na mas gusto mong gamitin.
 
-### Mga linya ng bayarin sa buwis sa pag-checkout
+### Mga linya ng bayarin sa buwis sa pag-checkout {#checkout-tax-fee-lines}
 
 Kapag may kasamang buwis ang pag-checkout sa Ultimate Multisite, idinaragdag ng integration ang bawat halaga ng buwis ng Ultimate Multisite sa pag-checkout ng WooCommerce bilang hiwalay at hindi nabubuwisang linya ng bayarin. Pinananatili nitong nakikita ang kabuuang buwis bago magbayad habang pinipigilan ang WooCommerce na buwisan muli ang bayarin sa buwis.
 
-## Paano pamahalaan ang pagbabayad
+## Paano pamahalaan ang pagbabayad {#how-to-manage-the-payment}
 
 Gumagana ang WooCommerce Integration sa paraang halos kapareho ng paggana ng aming **Manu-manong Gateway**. Ang disbentahe ay kailangang bayaran nang manu-mano ang bawat pagbabayad sa katapusan ng panahon ng pagsingil. Ganito gumagana ang daloy:
 
@@ -82,13 +82,13 @@ Gumagana ang WooCommerce Integration sa paraang halos kapareho ng paggana ng ami
 
   * Kapag natanggap na ang pagbabayad, ang membership ay **mare-renew** , mala-log ang pagbabayad sa Ultimate Multisite at itatakda ang order bilang kumpleto.
 
-### Ilang Mahahalagang Tala:
+### Ilang Mahahalagang Tala: {#some-important-notes}
 
   * Gumagana pa rin ang default na functionality ng Ultimate Multisite sa form ng integration na ito. Halimbawa, ang **pag-isyu ng mga refund** mula sa screen ng **Pamamahala ng Suskripsyon** ay makikipag-ugnayan sa WooCommerce upang i-isyu ang refund gamit ang napiling form ng pagbabayad.
 
   * Umaasa ang Ultimate Multisite: WooCommerce Integration sa WP-Cron upang gumana. Gumagana ito nang napakahusay sa karamihan ng pagkakataon, ngunit kung mababa ang traffic ng site, hindi nata-trigger ang cron na tingnan ang mga naka-schedule na event at nalalampasan ang event, na maaaring magdulot ng mga pagkaantala sa pagpapatupad.
 
-## WooCommerce Subscriptions Plugin
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
 Ang mano-manong pagsisimula ng bayad bawat buwan ay hindi mainam para sa mga end-user dahil inaasahang awtomatikong nauulit ang mga subscription sa bawat billing cycle. Kasama na ngayon sa WooCommerce Integration add-on ang core subscriptions code, kaya palaging gumagamit ng subscriptions ang mga umuulit na produkto para sa umuulit na billing.
 
@@ -100,7 +100,7 @@ At iyon na iyon. Hindi na kakailanganin ng iyong mga end-user na mano-manong mag
 
 Bukod sa paggawa ng isang order sa iyong pangunahing site sa ilalim ng _WooCommerce_, gagawa rin ito ng subscription para sa bawat account.
 
-### Gawi sa pagsususpinde kapag nabigong pag-renew
+### Gawi sa pagsususpinde kapag nabigong pag-renew {#failed-renewal-suspension-behavior}
 
 Bilang default, nananatiling aktibo ang mga membership habang pinoproseso ng WooCommerce Subscriptions ang iskedyul nito ng muling pagsubok para sa nabigong bayad. Pinapanatili nito ang normal na grace window ng WooCommerce Subscriptions upang maibalik ng isang na-recover na pag-renew ang subscription at membership sa pagkakasync nang hindi napaaga ang pagkaantala ng access.
 

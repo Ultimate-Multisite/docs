@@ -3,15 +3,15 @@ title: Thibitisha Tofauti ya Rangi ya Paleti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Thibitisha Tofauti ya Rangi ya Paleti
+# Thibitisha Tofauti ya Rangi ya Paleti {#validate-palette-contrast}
 
 Uwezo wa **Thibitisha Tofauti ya Rangi ya Paleti** unachangia kuangalia rangi wanazojiridhia katika paleti yako ya usanifu ili kuhakikisha inazingatia kanuni za WCAG (Mwongozo wa Upatikanaji wa Maudhui ya Tovuti) kabla ya kuzitumia kwenye mandhari yako.
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Uwezo huu unahakikisha kwamba rangi za tovuti yako zinakidhi viwango vya upatikanaji kwa kuthibitisha uwiano wa tofauti kati ya rangi za maandishi na rangi za mandhari. Unasaidia kuzuia mchanganyiko wa rangi ambazo zinaweza kuwa vigumu kwa watumiaji wenye matatizo ya kuona kuzisoma.
 
-## Muundo wa Kuingiza Data (Input Format)
+## Muundo wa Kuingiza Data (Input Format) {#input-format}
 
 Uwezo huu unakubali paleti ya rangi kama data ya kuingiza:
 
@@ -35,7 +35,7 @@ Uwezo huu unakubali paleti ya rangi kama data ya kuingiza:
 }
 ```
 
-### Vigezo (Parameters)
+### Vigezo (Parameters) {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Uwezo huu unakubali paleti ya rangi kama data ya kuingiza:
 | `wcag_level` | string | No | Kiwango cha kuzingatia WCAG: "A", "AA" (kawaida), au "AAA" |
 | `pairs_to_check` | array | No | Mashirika maalum ya rangi ya kuthibitisha (mfano: `["primary-text", "background-text"]`) |
 
-## Viwango vya WCAG Vinavyotibiwa
+## Viwango vya WCAG Vinavyotibiwa {#wcag-levels-checked}
 
 Uwezo huu unathibitisha uwiano wa tofauti kulingana na viwango vya WCAG:
 
@@ -56,7 +56,7 @@ Uwezo huu unathibitisha uwiano wa tofauti kulingana na viwango vya WCAG:
 - **Normal Text** — maandishi yanayopungua chini ya 18pt (au 14pt nene)
 - **Large Text** — maandishi ya 18pt au zaidi (au 14pt nene au zaidi)
 
-## Muundo wa Matokeo (Output Schema)
+## Muundo wa Matokeo (Output Schema) {#output-schema}
 
 Uwezo huu unarudisha ripoti ya kina ya uthibitisho:
 
@@ -95,7 +95,7 @@ Uwezo huu unarudisha ripoti ya kina ya uthibitisho:
 }
 ```
 
-### Vipengele vya Matokeo (Output Fields)
+### Vipengele vya Matokeo (Output Fields) {#output-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Uwezo huu unarudisha ripoti ya kina ya uthibitisho:
 | `status` | string | "pass" au "fail" kwa kila shirikisho |
 | `recommendations` | array | Mapendekezo ya kuboresha mashirika ambayo hayakidhi viwango |
 
-## Mfano wa Matumizi
+## Mfano wa Matumizi {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Uwezo huu unathibitisha mchanganyiko wote wa rangi na kurudisha:
 - ✅ Background + Text: Uwiano wa 12.1:1 (unapita WCAG AAA)
 - Jumla: Inazingatia WCAG AA
 
-## Uunganishaji na Theme Builder
+## Uunganishaji na Theme Builder {#integration-with-theme-builder}
 
 Unapotumia uteuzi wa mwelekeo wa usanifu (design-direction selection) wa Theme Builder, uwezo wa Thibitisha Tofauti ya Rangi ya Paleti:
 
@@ -129,7 +129,7 @@ Unapotumia uteuzi wa mwelekeo wa usanifu (design-direction selection) wa Theme B
 4. Unatoa mapendekezo kwa mashirika ambayo hayakidhi viwango
 5. Unazuia kutumia miundo ya rangi ambayo haitawafaa watumiaji
 
-## Mazoea Bora (Best Practices)
+## Mazoea Bora (Best Practices) {#best-practices}
 
 - **Anza na kiwango cha AA** — WCAG AA ni kiwango cha kawaida kwa tovuti nyingi
 - **Jaribisha kabla ya kutumia** — thibitisha paleti yako kabla ya kujitolea kwa usanifu
@@ -137,7 +137,7 @@ Unapotumia uteuzi wa mwelekeo wa usanifu (design-direction selection) wa Theme B
 - **Zingatia mapendeleo ya mtumiaji** — baadhi ya watumiaji wanaweza kuwa na hisia zaidi za rangi
 - **Tumia zana za kuangalia tofauti** — ongeza uwezo huu na zana za kivinjari kwa ajili ya uthibitisho
 
-## Mashirika Yanayoshindwa na Mapendekezo
+## Mashirika Yanayoshindwa na Mapendekezo {#failing-pairs-and-recommendations}
 
 Ikiwa shirikisho la rangi linashindwa uthibitisho, uwezo huu unatoa mapendekezo:
 
@@ -155,7 +155,7 @@ Ikiwa shirikisho la rangi linashindwa uthibitisho, uwezo huu unatoa mapendekezo:
 }
 ```
 
-## Uwezo Husababishi (Related Abilities)
+## Uwezo Husababishi (Related Abilities) {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — unda nembo kwa kutumia paleti yako ya rangi iliyothibitishwa
 - [Create Menu](./create-menu.md) — jenga navigatio kwa rangi zinazoweza kufikiwa

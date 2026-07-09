@@ -4,11 +4,11 @@ title: Hereket - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Hereket: set_logged_in_cookie
+# Hereket: set_logged_in_cookie {#action-setloggedincookie}
 
 Ulgama girilen autentifikasiýa cookie-si goýulmazdan göni öň işledilýär.
 
-## Parametrler
+## Parametrler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Ulgama girilen autentifikasiýa cookie-si goýulmazdan göni öň işledilýär.
 | $scheme | `string` | Autentifikasiýa shemasy. Deslapky 'logged_in'. |
 | $token | `string` | Bu cookie üçin ulanyljak ulanyjynyň sessiýa tokeni. |
 
-### Şondan bäri
+### Şondan bäri {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Çeşme
+### Çeşme {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) içinde 141-nji setirde kesgitlenen

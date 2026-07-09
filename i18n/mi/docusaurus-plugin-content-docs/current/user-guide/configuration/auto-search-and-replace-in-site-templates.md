@@ -3,7 +3,7 @@ title: Whakawāhi me Whakawāhi i Aotūroa i Tīmatanga Wāhi
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace i Te Tātai Wānanga (v2)
+# Auto Search and Replace i Te Tātai Wānanga (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ko tēnei mōhaka e hiahia ana ki WP UItimo version 2.x.**_
 
@@ -15,7 +15,7 @@ I raro i tēnei, he taea ai koe te whānui i ngā fēka o te registration ki te 
 
 Ka whakamaoritia e Ultimate Multisite i ngā placeholder ki te data e whai ake ana i te whaiaro e whai ake.
 
-## **Whakahaere i te "template mōhaka paku"**
+## **Whakahaere i te "template mōhaka paku"** {#solving-the-template-full-of-placeholders-problem}
 
 He tino pai katoa, engari he pēnei te mea, he pēnei te pēnei: ngā template site o tātou - i te taea ai ngā customer ahau te pahi ki te whakatika ana - e paku ana ngā placeholder (wāhi whakatutuki) e hiahia ana i te whakamārama nui.
 

@@ -3,13 +3,13 @@ title: Se faire payer
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Se faire payer (v2)
+# Se faire payer (v2) {#getting-paid-v2}
 
 _**NOTE IMPORTANTE : Cet article concerne Ultimate Multisite version 2.x.**_
 
 Ultimate Multisite dispose d’un système intégré d’abonnement et de facturation. Pour que notre système de facturation fonctionne, nous avons intégré les passerelles de paiement les plus courantes utilisées dans le commerce électronique. Les passerelles de paiement par défaut dans Ultimate Multisite sont _Stripe_ , _PayPal_ et le paiement manuel. Vous pouvez également utiliser _WooCommerce_ , _GoCardless_ et _Payfast_ pour recevoir des paiements en installant leurs add-ons respectifs.
 
-## Réglages de base
+## Réglages de base {#basic-settings}
 
 Vous pouvez configurer n’importe laquelle de ces passerelles de paiement dans les réglages de paiement de Ultimate Multisite. Vous pouvez les trouver en allant dans **menu Ultimate Multisite > Settings > Payments.**
 
@@ -39,7 +39,7 @@ Cela empêche qu’une adhésion semble se renouveler automatiquement alors que 
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Où trouver les passerelles :
+## Où trouver les passerelles : {#where-to-find-the-gateways}
 
 Vous pouvez configurer les passerelles de paiement sur la même page ( **Ultimate Multisite > Settings > Payments**). Juste sous **passerelles de paiement actives** , vous pourrez voir : _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ et _Manual_.
 
@@ -67,7 +67,7 @@ Voici également une vue complète des réglages des passerelles de paiement :
 
 Maintenant, si vous voulez utiliser _WooCommerce_ , _GoCardless_ ou _Payfast_ comme passerelle de paiement, vous devrez **installer et configurer leurs add-ons**.
 
-### Comment installer l’add-on WooCommerce :
+### Comment installer l’add-on WooCommerce : {#how-to-install-the-woocommerce-add-on}
 
 Nous comprenons que _Stripe_ et _PayPal_ ne sont pas disponibles dans certains pays, ce qui limite ou empêche les utilisateurs de Ultimate Multisite d’utiliser efficacement notre plugin. Nous avons donc créé un add-on pour intégrer _WooCommerce,_ qui est un plugin de commerce électronique très populaire. Des développeurs du monde entier ont créé des add-ons pour y intégrer différentes passerelles de paiement. Nous en avons profité pour étendre les passerelles de paiement que vous pouvez utiliser avec le système de facturation de Ultimate Multisite.
 
@@ -95,7 +95,7 @@ Après l’avoir activé, si le plugin WooCommerce n’est toujours pas install�
 
 Pour en savoir plus sur le module complémentaire WooCommerce Integration, **cliquez ici**.
 
-### Comment installer le module complémentaire GoCardless :
+### Comment installer le module complémentaire GoCardless : {#how-to-install-the-gocardless-add-on}
 
 Les étapes pour installer le module complémentaire _GoCardless_ sont à peu près les mêmes que pour le module complémentaire _WooCommerce_. Veuillez accéder à la page des modules complémentaires et sélectionner le module complémentaire **Ultimate Multisite: GoCardless Gateway**.
 
@@ -111,7 +111,7 @@ Une fois l’installation terminée, vous serez redirigé vers la page des plugi
 
 Pour apprendre comment démarrer avec la passerelle _GoCardless_, **lisez cet article**.
 
-### Comment installer le module complémentaire Payfast :
+### Comment installer le module complémentaire Payfast : {#how-to-install-the-payfast-add-on}
 
 Accédez à la page des modules complémentaires et sélectionnez le module complémentaire **Ultimate Multisite: Payfast Gateway**.
 

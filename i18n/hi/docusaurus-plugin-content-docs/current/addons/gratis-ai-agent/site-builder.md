@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (जो Gratis AI Agent v1.4.0 में पेश किया गया था) वह इंजन है जो मल्टी-स्टेप वेबसाइट बनाने की प्रक्रिया को शक्ति देता है। जब आप एजेंट से "एक रेस्टोरेंट की वेबसाइट बनाएं" या "ब्लॉग के साथ एक पोर्टफोलियो बनाएं" कहते हैं, तो ऑर्केस्ट्रेटर उस बड़े लक्ष्य को एक संरचित **प्लान** में तोड़ देता है, उसे पूरा करने के लिए आवश्यक प्लगइन्स का पता लगाता है, हर कदम को क्रम से चलाता है, प्रगति को ट्रैक करता है, और त्रुटियों से स्वायत्त रूप से उबरता है।
 
 ---
 
-## यह कैसे काम करता है
+## यह कैसे काम करता है {#how-it-works}
 
-### 1. प्लान जनरेशन
+### 1. प्लान जनरेशन {#1-plan-generation}
 
 जब एजेंट को वेबसाइट बनाने का निर्देश मिलता है, तो यह एक JSON **साइट प्लान** बनाने के लिए `create_site_plan` क्षमता (ability) को कॉल करता है। यह प्लान निम्नलिखित का वर्णन करता है:
 
@@ -61,7 +61,7 @@ Site Builder Orchestration v2 (जो Gratis AI Agent v1.4.0 में पेश
 }
 ```
 
-### 2. प्लगइन डिस्कवरी
+### 2. प्लगइन डिस्कवरी {#2-plugin-discovery}
 
 निष्पादन शुरू होने से पहले, ऑर्केस्ट्रेटर प्लान के `plugin_requirements` को स्कैन करता है और जांच करता है कि कौन से प्लगइन्स पहले से सक्रिय हैं। लापता प्लगइन्स के लिए, यह:
 
@@ -71,7 +71,7 @@ Site Builder Orchestration v2 (जो Gratis AI Agent v1.4.0 में पेश
 
 प्लगइन डिस्कवरी विफल होना कोई बड़ी बात नहीं है — ऑर्केस्ट्रेटर प्रभावित चरणों को `skipped` के रूप में चिह्नित करता है और प्लान के बाकी हिस्सों के साथ जारी रखता है।
 
-### 3. प्लान निष्पादन
+### 3. प्लान निष्पादन {#3-plan-execution}
 
 ऑर्केस्ट्रेटर प्लान ID के साथ `execute_site_plan` को कॉल करता है। निष्पादन चरण-दर-चरण, चरण-दर-चरण आगे बढ़ता है:
 
@@ -79,7 +79,7 @@ Site Builder Orchestration v2 (जो Gratis AI Agent v1.4.0 में पेश
 - **Parallel steps** — एक ही चरण के भीतर के वे चरण जिनमें कोई आपसी निर्भरता नहीं होती है, उन्हें `parallel` फ़्लैग सेट होने पर एक साथ (concurrently) भेजा जाता है।
 - **Step timeout** — प्रत्येक चरण का एक व्यक्तिगत टाइमआउट होता है (डिफ़ॉल्ट: `Ability Timeout` सेटिंग)। टाइमआउट होने वाले चरण को `failed` के रूप में चिह्नित किया जाता है और प्लान आगे बढ़ता रहता है।
 
-### 4. प्रगति ट्रैकिंग
+### 4. प्रगति ट्रैकिंग {#4-progress-tracking}
 
 निष्पादन की स्थिति की जांच करने के लिए किसी भी समय `get_plan_progress` को कॉल करें:
 
@@ -104,7 +104,7 @@ WP-CLI उपयोगकर्ता निम्न के साथ प्र
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. त्रुटि रिकवरी
+### 5. त्रुटि रिकवरी {#5-error-recovery}
 
 जब कोई चरण विफल होता है, तो ऑर्केस्ट्रेटर प्लान में परिभाषित **fallback** चरण की जांच करता है:
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 प्राकृतिक भाषा के लक्ष्य विवरण से एक संरचित साइट प्लान उत्पन्न करता है।
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 पहले से उत्पन्न साइट प्लान को निष्पादित करना शुरू करता है।
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 साइट प्लान की वर्तमान निष्पादन स्थिति लौटाता है।
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 एक विफल चरण को मैन्युअल रूप से हल करता है और अगले चरण से प्लान निष्पादन फिर से शुरू करता है। इसका उपयोग तब करें जब स्वचालित रिकवरी संभव न हो और आप हस्तक्षेप करना चाहते हों।
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## v1 और v2 की तुलना
+## v1 और v2 की तुलना {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## WP-CLI Plan Commands
+## WP-CLI Plan Commands {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 एक लक्ष्य विवरण से एक साइट प्लान उत्पन्न करता है।
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 पहले से उत्पन्न प्लान को निष्पादित करता है।
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 निष्पादित या पूर्ण प्लान के लिए वर्तमान प्रगति दिखाता है।
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 सभी साइट प्लान (लंबित, प्रगति पर, और पूर्ण) सूचीबद्ध करता है।
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 एक विफल प्लान को `pending` पर रीसेट करता है ताकि इसे शुरू से फिर से निष्पादित किया जा सके।
 

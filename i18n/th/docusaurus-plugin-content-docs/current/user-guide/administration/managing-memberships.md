@@ -3,7 +3,7 @@ title: การจัดการการเป็นสมาชิก
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# การจัดการ Memberships
+# การจัดการ Memberships {#managing-memberships}
 
 ใน Ultimate Multisite คุณสามารถจัดการ memberships และเข้าถึง subscriptions ทั้งหมดบนเครือข่ายของคุณได้ ตรวจสอบและแก้ไขรายละเอียด subscription เช่น plan และผลิตภัณฑ์ จำนวนไซต์ ยอดเรียกเก็บและความถี่ ประวัติการชำระเงิน และประทับเวลา
 

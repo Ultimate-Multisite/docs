@@ -3,11 +3,11 @@ title: Ukuthuthukiswa Kwesango Ngokwezifiso
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Ukuthuthukiswa Kwesango Ngokwezifiso
+# Ukuthuthukiswa Kwesango Ngokwezifiso {#custom-gateway-development}
 
 Ungakha amasango okukhokha ngokwezifiso ngokwelula ikilasi le-`Base_Gateway`.
 
-## Ikilasi Lesango
+## Ikilasi Lesango {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Bhalisa Isango
+## Bhalisa Isango {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Izindlela Ezisemqoka
+## Izindlela Ezisemqoka {#key-methods}
 
 | Indlela | Inhloso |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Phatha izicelo zokubuyiselwa imali |
 | `get_payment_methods()` | Buyisa izindlela zokukhokha ezigciniwe zekhasimende |
 
-## Imininingwane yokuqinisekisa yokuvuselela yobulungu obuphindaphindayo
+## Imininingwane yokuqinisekisa yokuvuselela yobulungu obuphindaphindayo {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 ivumela ukuhlanganiswa kwamasango ukuthi kubike ukuthi ubulungu obuphindaphindayo bunayo yini imininingwane yokuqinisekisa yokuvuselela ephinde isetshenziswe ngaphambi kokuba i-`auto_renew` igcinwe. Xhuma ku-`wu_membership_has_renewal_credential` bese ubuyisa:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Sula umaki wemininingwane yokuqinisekisa engekho njengengxenye yokugeleza okuphumelelayo kokugunyazwa kabusha kwesango lakho ngemva kokuba imininingwane yokuqinisekisa entsha ephinde isetshenziswe isigciniwe.
 
-## Amacebiso
+## Amacebiso {#tips}
 
 - Njalo buyisa `WP_Error` lapho kwehlulekile ukuze Ultimate Multisite ikwazi ukuphatha ukuboniswa kwephutha
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Sebenzisa `wu_log_add()` ukuze wenze ukuloga okuqondene nesango
 
-## Amakhono abahlinzeki besixhumi se-AI
+## Amakhono abahlinzeki besixhumi se-AI {#ai-connector-provider-capabilities}
 
 Ukuhlanganiswa ngokwezifiso okubiza imisebenzi esekelwa yisixhumi se-AI kufanele kuhambisane nesethi yomhlinzeki we-OAuth esekelwayo eyethulwe nge-AI Provider for Anthropic Max v1.3.0:
 

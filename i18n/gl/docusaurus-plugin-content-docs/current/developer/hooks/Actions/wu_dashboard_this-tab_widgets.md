@@ -4,11 +4,11 @@ title: 'Acción - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 Permite aos desenvolvedores de complementos engadir widgets ao panel de Dashboard da rede.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Permite aos desenvolvedores de complementos engadir widgets ao panel de Dashboar
 | $screen | `\WP_Screen` | O obxecto de pantalla. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Instancia da páxina de administración de Ultimate Multisite. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) na liña 214

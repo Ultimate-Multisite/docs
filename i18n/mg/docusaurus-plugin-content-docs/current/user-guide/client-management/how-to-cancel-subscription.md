@@ -3,7 +3,7 @@ title: Ahoana ny fanaovana fialana amin'ny fandraisana asa?
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Ahoana no fanaovana fanafoanana ny fandraisana (subscription) anao?
+# Ahoana no fanaovana fanafoanana ny fandraisana (subscription) anao? {#how-can-i-cancel-my-subscription}
 
 Raha manana license Ultimate Multisite ianao, afaka manakana ny fanavaozana azy amin'ny fotoana tianao rehetra ianao. Araho tsara ireto dingana:
 

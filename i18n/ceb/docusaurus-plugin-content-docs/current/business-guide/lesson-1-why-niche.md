@@ -3,11 +3,11 @@ title: 'Leksyon 1: Ngano nga Makapahimo ang Niche'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesson 1: Nganong Makalampus ang Pagpili og Niche
+# Lesson 1: Nganong Makalampus ang Pagpili og Niche {#lesson-1-why-niche-wins}
 
 Sa wala pa kita mo-touch sa bisan unsang software, kinahanglan nimong masabtan nganong ang pagtukod para sa usa ka piho nga grupo (niche) mao ang pinakaimportante nga desisyon nga imong himoon.
 
-## Ang Problema sa Pagbaligya og General Website
+## Ang Problema sa Pagbaligya og General Website {#the-problem-with-selling-generic-websites}
 
 Kung magtanyag ka og "website para sa tanan," makigkompetensya ka niini:
 
@@ -17,11 +17,11 @@ Kung magtanyag ka og "website para sa tanan," makigkompetensya ka niini:
 
 Dili ka makakabalo sa presyo. Dili ka makakabalo sa features. Ang general website market usa ka kompetisyon nga nagpaubos sa presyo (race to the bottom).
 
-## Unsa ang Mahitabo Kung Mo-pick Ka og Niche
+## Unsa ang Mahitabo Kung Mo-pick Ka og Niche {#what-changes-when-you-pick-a-niche}
 
 Kung magtukod ka og platform nga piho para lang sa mga fitness studio (o bisan unsang niche), makabalhin tanan nga pabor kanimo:
 
-### Nag-resolba Ka og Tinuod nga Problema
+### Nag-resolba Ka og Tinuod nga Problema {#you-solve-real-problems}
 
 Ang tag-iya sa fitness studio dili gusto og "usa ka website." Gusto nila:
 
@@ -33,45 +33,45 @@ Ang tag-iya sa fitness studio dili gusto og "usa ka website." Gusto nila:
 
 Kung ang imong platform nag-resolba niining piho nga mga problema direkta (out of the box), wala na kay gibaligya nga website. Nagbaligya ka og solusyon.
 
-### Mas Dako Ka’g Maingon nga Bayad
+### Mas Dako Ka’g Maingon nga Bayad {#you-can-charge-more}
 
 Ang usa ka general WordPress site mahimong makabaligya sa $500-$2,000 isip usa ka one-time project. Ang niche platform nga nag-resolba og industry-specific problems mahimong mo-charge og $49-$199/month isip kanunayng subscription kay ang bili (value) niini padayon ug piho.
 
-### Nahimo Ka nga Eksperto
+### Nahimo Ka nga Eksperto {#you-become-the-expert}
 
 Kung mag-focus ka sa usa ka industriya, makakat-on ka sa ilang pinulongan, sa ilang mga problema, ug sa ilang pamaagi sa pagpalit. Ang mga tag-iya sa fitness studio nag-istoryahanay. Kung ang usa nakakita og platform nga nindot gamiton, isulti nila kini sa uban. Ang word of mouth sa usa ka niche kusgan kay suod ang komunidad.
 
-### Mas Sayon ang Imong Marketing
+### Mas Sayon ang Imong Marketing {#your-marketing-gets-easier}
 
 Imbes moingon og "nagtukod mi og website para sa mga negosyo," moingon ka og "nagtukod mi og website para sa fitness studios." Direkta nga nagsulti sa gym owners ang imong landing page. Morag fitness sites ang imong templates. Ang imong testimonials gikan sa mga trainer ug tag-iya sa studio. Mas kusog ang matag bahin sa marketing kay piho kini.
 
-## Ang FitSite Opportunity
+## Ang FitSite Opportunity {#the-fitsite-opportunity}
 
 Tan-awon nato ang fitness industry pinaagi niining lente:
 
-### Gidak-on sa Merkado (Market Size)
+### Gidak-on sa Merkado (Market Size) {#market-size}
 
 - Adunay kapin sa 100,000 ka fitness facilities sa Estados Unidos lang
 - Kadaghanan niini mga independently owned small businesses
 - Kasagaran wala silay website, o dili maayo ang ilang website, o mahal kaayo nga website nga dili nila i-update mismo
 
-### Karon nga Solusyon (Current Solutions)
+### Karon nga Solusyon (Current Solutions) {#current-solutions}
 
 - **Generic builders** (Wix, Squarespace): Walay fitness-specific features; naglisud ang mga tag-iya sa studio pagtukod sa ilang gikinahanglan.
 - **Custom development**: Mahal, usa ka higayon lang, ug lisud i-maintain.
 - **Industry-specific platforms**: Gamay ra kaayo, ug kadaghanan konektado sa booking systems kaysa nagtanyag og kompleto nga web presence.
 
-### Ang Kakulang (The Gap)
+### Ang Kakulang (The Gap) {#the-gap}
 
 Adunay klaro nga puwang tali sa "generic website builder" ug "expensive custom development" para sa mga fitness businesses. Usa ka platform nga makahatag sa mga tag-iya sa studio og professional, fitness-specific nga website uban ang features nga ilang gikinahanglan — sa presyo nga makatarunganon alang sa usa ka small business — mao kini ang pagpuno niining puwang.
 
 Kini ang oportunidad nga targethon sa FitSite.
 
-## Pangunang Pagkuha (Key Takeaway)
+## Pangunang Pagkuha (Key Takeaway) {#key-takeaway}
 
 Ang pagpili og niche dili mahitungod sa paglimita nimo sa imong kaugalingon. Kini mahitungod sa pag-focus sa imong paningkamot diin kini labing epektibo. Ang usa ka niche platform nga nagserbisyo sa 500 ka kustomer sa $99/month usa ka negosyong $600,000 kada tuig. Dili nimo kinahanglan og milyon-milyon ka kustomer. Kinahanglan nimo ang mga saktong kustomer.
 
-## Unsa ang Gibuhat Nato Niining Leksyon
+## Unsa ang Gibuhat Nato Niining Leksyon {#what-we-built-this-lesson}
 
 Wala pa'y technical work — apan naa na kay strategic foundation:
 

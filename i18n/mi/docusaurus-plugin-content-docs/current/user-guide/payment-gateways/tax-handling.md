@@ -3,7 +3,7 @@ title: Whakahaere Tāke
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Whakahaere Tāke
+# Whakahaere Tāke {#tax-handling}
 
 Kei roto i Ultimate Multisite tētahi kōwae kohinga tāke kua hangaia ki tā mātou plugin matua, nō reira mēnā me kohi koe i ngā tāke hoko mō ō mahere, mōkī me ngā ratonga, ka taea māmā e koe me te kore e whakauru i ētahi tāpiri.
 
@@ -11,7 +11,7 @@ Mō ngā kamupene kei Uropi, ka tukuna e mātou tētahi **tāpiri** e tāpiri an
 
 Kāore a Ultimate Multisite e tuku kōnae, e tuku utu tāke rānei mōu ki te kāwanatanga; he āwhina noa tā mātou i a koe ki te kohi i ngā tāke tika i te wā o te whakawhitinga. **Me tuku tonu e koe ngā tāke māu anō.**
 
-## Te Whakahohe i te Kohinga Tāke
+## Te Whakahohe i te Kohinga Tāke {#enabling-tax-collection}
 
 Kāore te kohinga tāke i te whakahohea mā te taunoa. Hei whakahohe, me haere koe ki **Ultimate Multisite > Tautuhinga > Ngā Tāke** ka takahuri hei whakahohe i te tautuhinga Whakahohe Tāke.
 
@@ -25,7 +25,7 @@ Ka taea hoki e koe te tiro i ngā tautuhinga tāke mō ngā hua takitahi:
 
 ![Ngā tautuhinga tāke mō ngā hua](/img/config/settings-taxes.png)
 
-### Tāke kāore i whakaurua vs. Tāke kua whakaurua
+### Tāke kāore i whakaurua vs. Tāke kua whakaurua {#tax-excluded-vs-tax-included}
 
 Mā te taunoa, kāore ngā tāke i whakaurua ki ngā utu katoa o ō hua, arā, **kāore ngā tāke i whakaurua** ki te utu o te hua. Mēnā ka whakatauria e mātou me utu tāke tētahi kiritaki mō tētahi hokonga, ka tāpirihia e mātou ngā tāke **ki runga ake** i te tapeke-iti.
 
@@ -37,7 +37,7 @@ Kaua e wareware ki te **tiaki** i ngā panonitanga kua mahia e koe.
 
 ###
 
-## Te Waihanga Reiti Tāke
+## Te Waihanga Reiti Tāke {#creating-tax-rates}
 
 Whai muri i tō whakahohe i te Kohinga Tāke, me waihanga koe i ngā reiti tāke mō ngā wāhi motuhake mā tā mātou etita reiti tāke.
 
@@ -51,7 +51,7 @@ I te whārangi etita reiti tāke, ka taea e koe te tāpiri Reiti Tāke hou mā t
 
 Me hoatu e koe he **taitara** ki ia reiti tāke (ka whakamahia ki ngā nama). Kātahi ka taea e koe te kōwhiri i te **whenua** (me mātua whai), te **rohe,** me te **tāone** (he kōwhiringa ēnei e rua) e utua ai tēnei tāke. Hei whakamutunga, tāpirihia te **reiti tāke hei ōrau**.
 
-### Kāwai Tāke
+### Kāwai Tāke {#tax-categories}
 
 Ka taea hoki e koe te waihanga Kāwai Tāke maha, hei tāpiri i ngā reiti tāke rerekē mō ngā momo hua rerekē.
 
@@ -73,7 +73,7 @@ Ka taea e koe te tautuhi i te kāwai tāke mō tētahi hua motuhake mā te haere
 
 I taua mata anō, ka taea e koe te whakaweto i te takahuri **Ka Tāketia?** kia mōhio ai a Ultimate Multisite kāore e tika kia kohia he tāke mō taua hua.
 
-## Tautoko VAT Ūropi
+## Tautoko VAT Ūropi {#european-vat-support}
 
 Ka rite ki tā mātou i kōrero ai i mua, he tāpiri tā mātou e wātea ana mō ngā kiritaki i te EU e whai ana i ētahi whakaritenga tāpiri nā ngā ture VAT Ūropi.
 
@@ -101,7 +101,7 @@ Mēnā ka hoki koe ki te **ripa Tautuhinga Tāke** , ka kite koe i ngā kōwhiri
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Te Tiki i Ngā Reiti Tāke VAT
+### Te Tiki i Ngā Reiti Tāke VAT {#pulling-on-vat-tax-rates}
 
 Ko tētahi o ngā taputapu ka tāpirihia e tā mātou whakaurunga ko te āheinga ki te uta i ngā reiti tāke mō ngā whenua mema o te EU. Ka taea tēnei mā te toro ki te whārangi etita reiti tāke i muri i te whakahohe i te tautoko EU VAT.
 
@@ -111,7 +111,7 @@ Kei raro o te whārangi, ka kite koe i ngā kōwhiringa tiki VAT. Mā te tīpako
 
 Ka taea hoki e koe te whakatika i ngā uara i muri i te tiki mai. Hei mahi, whakatikaina noa te rārangi ripanga e hiahiatia ana e koe, ā, pāwhiritia kia tiaki i ngā uara hou.
 
-### Manatoko VAT
+### Manatoko VAT {#vat-validation}
 
 Ina whakahohea te tautoko VAT, ka tāpirihia e Ultimate Multisite tētahi āpure tāpiri ki te puka checkout, kei raro i te āpure wāhitau nama. Ka whakaaturia te āpure mō ngā kiritaki anake kei te EU.
 

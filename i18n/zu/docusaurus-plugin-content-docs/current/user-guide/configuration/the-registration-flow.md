@@ -3,13 +3,13 @@ title: Inqubo Yokubhalisa
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ukugeleza Kokubhalisa (v2)
+# Ukugeleza Kokubhalisa (v2) {#the-registration-flow-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite inguqulo 2.x.**_
 
 Abasebenzisi bangabhalisa ngezindlela ezahlukene kunethiwekhi yakho. Bangasebenzisa ifomu lakho lokubhalisa noma isixhumanisi esabiwayo esiya ohlelweni olukhethwe kusengaphambili. Lapha sizokubonisa ukuthi amakhasimende akho angabhalisa kanjani kunethiwekhi yakho esebenzisa izindlela ezitholakalayo nokuthi kwenzekani ngemva kokubhalisa kunethiwekhi yakho.
 
-## Ukusebenzisa Ifomu Lokubhalisa:
+## Ukusebenzisa Ifomu Lokubhalisa: {#using-the-registration-form}
 
 Lena inqubo ejwayelekile yokubhalisa. Udala ikhasi lokubhalisa eline-**ifomu lokukhokha** futhi lokhu kuzoba lapho amakhasimende akho ezoya khona ukuze abhalise kunethiwekhi yakho futhi abhalisele uhlelo. Ungaba namakhasi amaningi okubhalisa, ngalinye linefomu lokubhalisa elihlukile uma ufuna.
 
@@ -35,13 +35,13 @@ Uma bebhalise ohlelweni olukhokhelwayo noma ukuqinisekiswa kwe-imeyili kungaphoq
 
 ![Isayithi livuliwe nesixhumanisi sokungena ngemvume ku-Dashboard](/img/frontend/site-activated.png)
 
-## Ukusebenzisa Isixhumanisi Esabiwayo:
+## Ukusebenzisa Isixhumanisi Esabiwayo: {#using-a-shareable-link}
 
 Inqubo yokubhalisa usebenzisa isixhumanisi esabiwayo ngokuyisisekelo iyafana nefomu lokubhalisa, umehluko kuphela ukuthi ngokusebenzisa isixhumanisi esabiwayo, amakhasimende akho angaba nomkhiqizo noma isifanekiso sewebhusayithi esikhethwe kusengaphambili efomini lokukhokha (bheka isigaba esithi Ukukhetha imikhiqizo nezifanekiso kusengaphambili ngamapharamitha e-URL) noma mhlawumbe kufakwe ikhodi yekhuphoni (bheka isigaba esithi Ukusebenzisa Amapharamitha e-URL).
 
 Inqubo yokubhalisa izofana: kuzodingeka bagcwalise igama labo, igama lomsebenzisi, ikheli le-imeyili, igama lewebhusayithi nesihloko, njll... kodwa uhlelo noma isifanekiso sesayithi kuzobe sekukhethwe kusengaphambili kubo.
 
-### Ukubhalisa Usebenzisa Izinkokhelo Zangomathupha:
+### Ukubhalisa Usebenzisa Izinkokhelo Zangomathupha: {#registering-using-manual-payments}
 
 Uma ungafuni ukusebenzisa i-PayPal, Stripe noma enye indlela yokukhokha enikezwa yi-Ultimate Multisite noma ukuhlanganiswa kwayo kwezengezo, ungasebenzisa izinkokhelo zangomathupha kumakhasimende akho. Ngale ndlela, ungabakhiqizela i-invoyisi ukuze bakhokhe kumcubunguli wakho wokukhokha owuncamelayo ngemva kokubhalisa kunethiwekhi yakho.
 

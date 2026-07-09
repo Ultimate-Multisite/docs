@@ -3,11 +3,11 @@ title: Iifom zoQhagamshelwano zoMwakhi Wesayithi
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Iifom zoQhagamshelwano zeSite Builder
+# Iifom zoQhagamshelwano zeSite Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 yongeza amandla okudala iifom zoqhagamshelwano ngqo kujongano lwencoko usebenzisa iarhente yeSite Builder. Oku kukuvumela ukuba wongeze iifom zoqhagamshelwano ezisebenza ngokupheleleyo kulo naliphi na iphepha ngaphandle kokushiya incoko.
 
-## Isishwankathelo
+## Isishwankathelo {#overview}
 
 Amandla efom yoqhagamshelwano yeSite Builder (`create_contact_form`) abona ngokuzenzekelayo iplugin yefom oyifakileyo aze adale ifom yoqhagamshelwano esebenzisa amandla endalo aloo plugin. Iiplugin zeefom ezixhaswayo ziquka:
 
@@ -18,7 +18,7 @@ Amandla efom yoqhagamshelwano yeSite Builder (`create_contact_form`) abona ngoku
 
 Umncedisi ukhetha ngokuzenzekelayo eyona plugin yefom ifumanekayo kwisayithi yakho aze avelise ifom yoqhagamshelwano elungiselelwe loo plugin.
 
-## Ukudala Ifom yoQhagamshelwano
+## Ukudala Ifom yoQhagamshelwano {#creating-a-contact-form}
 
 Ukudala ifom yoqhagamshelwano usebenzisa iSite Builder:
 
@@ -34,7 +34,7 @@ Ukudala ifom yoqhagamshelwano usebenzisa iSite Builder:
 
 4. ISite Builder iya kuvelisa ifom yoqhagamshelwano ize ibuyise ikhowudi emfutshane elungele ukufakwa.
 
-## Ukusebenzisa Ikhowudi Emfutshane Evelisiweyo
+## Ukusebenzisa Ikhowudi Emfutshane Evelisiweyo {#using-the-generated-shortcode}
 
 Emva kokuba iSite Builder idale ifom yoqhagamshelwano, ibuyisa ikhowudi emfutshane (umzekelo, `[contact-form-7 id="123"]`). Unako:
 
@@ -45,11 +45,11 @@ Emva kokuba iSite Builder idale ifom yoqhagamshelwano, ibuyisa ikhowudi emfutsha
 
 3. **Yisebenzise kwitemplate** — Ukuba ukhululekile nge-PHP, ungongeza ikhowudi emfutshane kwifayile yetemplate yomxholo.
 
-## Ukulungisa Ifom yoQhagamshelwano
+## Ukulungisa Ifom yoQhagamshelwano {#customizing-the-contact-form}
 
 Emva kokuba iSite Builder idale ifom yoqhagamshelwano, ungayilungisa ngakumbi:
 
-### NgeJongano lweNcoko
+### NgeJongano lweNcoko {#via-the-chat-interface}
 
 Cela iSite Builder ukuba ilungise ifom:
 
@@ -57,7 +57,7 @@ Cela iSite Builder ukuba ilungise ifom:
 
 ISite Builder iya kuhlaziya ifom ize ibuyise ikhowudi emfutshane ehlaziyiweyo.
 
-### NgeJongano loLawulo lwePlugin yeFom
+### NgeJongano loLawulo lwePlugin yeFom {#via-the-form-plugins-admin-interface}
 
 Ungayilungisa kwakhona ifom ngqo kwiisetingi zeplugin yakho yefom:
 
@@ -65,7 +65,7 @@ Ungayilungisa kwakhona ifom ngqo kwiisetingi zeplugin yakho yefom:
 2. Fumana ifom edalwe yiSite Builder.
 3. Hlela imihlaba yefom, imithetho yokuqinisekisa, nezaziso ze-imeyile njengoko kufuneka.
 
-## Iiplugin zeeFom nokuHambelana
+## Iiplugin zeeFom nokuHambelana {#form-plugins-and-compatibility}
 
 ISite Builder ibona ngokuzenzekelayo ukuba yeyiphi iplugin yefom efakiweyo kwisayithi yakho ize iyisebenzise ukudala ifom yoqhagamshelwano. Ukuba kufakwe iiplugin zeefom ezininzi, iSite Builder izibeka phambili ngolu hlobo:
 
@@ -76,7 +76,7 @@ ISite Builder ibona ngokuzenzekelayo ukuba yeyiphi iplugin yefom efakiweyo kwisa
 
 Ukuba akukho nanye kwezi plugin efakiweyo, iSite Builder iya kucebisa ukufaka enye ngaphambi kokudala ifom yoqhagamshelwano.
 
-## Izaziso ze-imeyile
+## Izaziso ze-imeyile {#email-notifications}
 
 Iifom zoqhagamshelwano ezidalwe yiSite Builder ziqwalaselwe ukuthumela izaziso ze-imeyile kumlawuli wesayithi ngokuzenzekelayo. Ungalungisa idilesi ye-imeyile yomamkeli kunye nomyalezo wesaziso:
 
@@ -91,21 +91,21 @@ Ngemiyalelo eneenkcukacha, jonga uxwebhu lweplugin yakho yefom:
 - [Izaziso ze-imeyile zeFluent Forms](https://fluentforms.com/docs/)
 - [Izaziso ze-imeyile zeGravity Forms](https://docs.gravityforms.com/)
 
-## Imizekelo yeeMeko zokuSebenzisa
+## Imizekelo yeeMeko zokuSebenzisa {#example-use-cases}
 
-### Ifom yoQhagamshelwano eLula
+### Ifom yoQhagamshelwano eLula {#simple-contact-form}
 
 > "Dala ifom yoqhagamshelwano elula enemihlaba yegama, i-imeyile, nomyalezo."
 
-### Ifom enamanyathelo amaninzi
+### Ifom enamanyathelo amaninzi {#multi-step-form}
 
 > "Dala ifom yoqhagamshelwano enenyathelo lokuqala lolwazi loqhagamshelwano nenyathelo lesibini lomyalezo kunye nendlela yoqhagamshelwano ekhethwayo."
 
-### Ifom eneLogic eneMiqathango
+### Ifom eneLogic eneMiqathango {#form-with-conditional-logic}
 
 > "Dala ifom yoqhagamshelwano ebonisa imihlaba eyahlukeneyo ngokusekelwe kukhetho lomsebenzisi kuluhlu oluhlayo."
 
-### Ifom eneFayile eLayishwayo
+### Ifom eneFayile eLayishwayo {#form-with-file-upload}
 
 > "Dala ifom yoqhagamshelwano evumela abasebenzisi ukuba balayishe ifayile okanye isincamathiselo."
 

@@ -3,7 +3,7 @@ title: Hooks och Filter
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks och filter
+# Ultimate Multisite Hooks och filter {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite är uppbyggt av en mängd funktioner och databasfrågor. Det har hooks och filter som låter dig modifiera befintliga funktioner eller lägga till ny kod.
 

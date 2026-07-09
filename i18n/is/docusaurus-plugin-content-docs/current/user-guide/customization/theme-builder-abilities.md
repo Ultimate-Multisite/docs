@@ -3,18 +3,18 @@ title: Viðmiðingar fyrir Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Viðmiðingar fyrir Theme Builder: Scaffold og Aktiva Block Themes
+# Viðmiðingar fyrir Theme Builder: Scaffold og Aktiva Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 býður fram tveir sterkar viðmiðingar sem leika þínu í hálf við að gera og dekomu sérstaklega block themes beint frá chat-stöðu.
 
-## Översiktur
+## Översiktur {#overview}
 
 Viðmiðingarnar **scaffold-block-theme** og **activate-theme** gerja agentsins að:
 - Gera fullt, framkvæmt á viðskipti block themes upp á grunnri skýrslunni þín
 - Aktiva themes á síðu þinni sjálf án þess að þú þarft að gera nánar aðgerðir
 - Skapa samræmd viskja í hlutverki með leiðandi ákvörðunum um hlutverk
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Viðmiðingurinn **scaffold-block-theme** gerir upp nýtt WordPress block theme með fullri skýrslunni, sem felur í sér:
 
@@ -23,7 +23,7 @@ Viðmiðingurinn **scaffold-block-theme** gerir upp nýtt WordPress block theme 
 - Sérstakli stílar og breytingar á blockum
 - Metadata themesins og stuðningarskýrslu
 
-### Hvernig nota það
+### Hvernig nota það {#how-to-invoke}
 
 Í samræðinni þinni við Superdav AI Agent, geturð þú beint til gera theme:
 
@@ -38,7 +38,7 @@ Agenturinn mun:
 3. Skapa allar nauðsynlegar faylir fyrir themeinn
 4. Bera themeinn í burtu til aktiva
 
-### Ábyrgðdilegt úrslit
+### Ábyrgðdilegt úrslit {#expected-output}
 
 Þegar viðmiðingurinn starfar vel, sjáð þú:
 
@@ -56,11 +56,11 @@ Dæmi um úrslit:
   Status: Ready to activate
 ```
 
-## Aktiva Theme
+## Aktiva Theme {#activate-theme}
 
 **activate-theme** nýturir þitt síðu á nýsköpt eða núverandi blokkþema.
 
-### Hvernig notaðu það
+### Hvernig notaðu það {#how-to-invoke-1}
 
 Eftir að þú hefur skáfað þema, geturðu aktivert það strax:
 
@@ -74,7 +74,7 @@ Eða aktiva hvaða núverandi þema sem:
 "Skipta í Twentytwentyfour theme"
 ```
 
-### Ákveðinn útburður
+### Ákveðinn útburður {#expected-output-1}
 
 Þegar aktivering sýnist áttumlegri:
 
@@ -92,7 +92,7 @@ Dæmi um útburð:
   Athugun: Skoðaðu hönnun síðunnar til að staðfesta nýja hönnun
 ```
 
-## Ferli: Skafa og Aktiva
+## Ferli: Skafa og Aktiva {#workflow-scaffold-and-activate}
 
 Almenn ferli samþættir bæði þá möguleika:
 
@@ -102,7 +102,7 @@ Almenn ferli samþættir bæði þá möguleika:
 4. **Aktiva**: "Aktiva þema núna"
 5. **Staðfesta**: Fara yfir síðuna þína til að staðfesta að ný hönnun sé live
 
-## Hönnunarþróunarstökin og Tilvísunir (Design Tokens and Customization)
+## Hönnunarþróunarstökin og Tilvísunir (Design Tokens and Customization) {#design-tokens-and-customization}
 
 Skafað þema nota WordPress design tokens (via `theme.json`) fyrir:
 
@@ -114,15 +114,15 @@ Skafað þema nota WordPress design tokens (via `theme.json`) fyrir:
 
 Þessar stökin eru sentrar í `theme.json`, sem gerir það auðvelt að breyta heildarhönnunarsysteminu þínu frá einum lausnari.
 
-## Begri og Athugasemdir
+## Begri og Athugasemdir {#limitations-and-notes}
 
-## Lögumsetning
+## Lögumsetning {#troubleshooting}
 
 - Themes eru byggð í `/wp-content/themes/` og þurfa að fylgja WordPress upplýsingar
 - Aktivering krefst viðeigandi réttindi á WordPress síðunni þinni
 - Handamögulegt PHP kóða í themes eru mínimalist; nota plugins fyrir flóknlega vinnu
 
-## Felsökun
+## Felsökun {#next-steps}
 
 **Theme er ekki sýnt eftir að byggja upp (scaffolding)**
 - Staðfest að theme-forgitölurinn sé til og hefur réttindi

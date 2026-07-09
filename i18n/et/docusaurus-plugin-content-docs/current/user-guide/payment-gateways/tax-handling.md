@@ -3,7 +3,7 @@ title: Maksude käsitlemine
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Maksude käsitlemine
+# Maksude käsitlemine {#tax-handling}
 
 Ultimate Multisite’il on maksude kogumise moodul sisse ehitatud meie põhipluginasse, seega kui pead oma plaanidelt, pakettidelt ja teenustelt müügimakse koguma, saad seda hõlpsasti teha ilma lisamooduleid paigaldamata.
 
@@ -11,7 +11,7 @@ Euroopas asuvatele ettevõtetele pakume **lisamoodulit**, mis lisab tööriistu 
 
 Ultimate Multisite ei esita ega kanna makse sinu nimel valitsusele; me lihtsalt aitame sul tehingu hetkel koguda asjakohased maksud. **Maksud pead siiski ise üle kandma.**
 
-## Maksude kogumise lubamine
+## Maksude kogumise lubamine {#enabling-tax-collection}
 
 Maksude kogumine ei ole vaikimisi lubatud. Selle lubamiseks pead minema jaotisse **Ultimate Multisite > Seaded > Maksud** ja lülitama sisse sätte Luba maksud.
 
@@ -25,7 +25,7 @@ Saad vaadata ka üksikute toodete maksuseadeid:
 
 ![Toodete maksuseaded](/img/config/settings-taxes.png)
 
-### Maks välja arvatud vs. maks hinna sees
+### Maks välja arvatud vs. maks hinna sees {#tax-excluded-vs-tax-included}
 
 Vaikimisi on kõigi sinu toodete hinnad maksuta, mis tähendab, et maksud **ei sisaldu** toote hinnas. Kui tuvastame, et klient peab antud ostu pealt makse tasuma, lisame maksud **lisaks** vahesummale.
 
@@ -37,7 +37,7 @@ Kui eelistad, et maksud sisalduksid sinu toote hinnas, saad seda teha, lubades s
 
 ###
 
-## Maksumäärade loomine
+## Maksumäärade loomine {#creating-tax-rates}
 
 Pärast maksude kogumise lubamist pead looma konkreetsete asukohtade jaoks maksumäärad, kasutades meie maksumäärade redaktorit.
 
@@ -51,7 +51,7 @@ Maksumäärade redaktori lehel saad lisada uusi maksumäärasid, klõpsates nupp
 
 Peaksid igale maksumäärale andma **pealkirja** (kasutatakse arvetel). Seejärel saad valida **riigi** (kohustuslik), **osariigi/maakonna** ja **linna** (mõlemad valikulised), kus seda maksu rakendatakse. Lõpuks lisa **maksumäär protsentides**.
 
-### Maksukategooriad
+### Maksukategooriad {#tax-categories}
 
 Saad luua ka mitu maksukategooriat, et lisada erinevat tüüpi toodetele erinevad maksumäärad.
 
@@ -73,7 +73,7 @@ Konkreetse toote maksukategooria saad määrata, minnes **toote muutmise lehele*
 
 Samal ekraanil saad lüliti **Kas on maksustatav?** välja lülitada, et anda Ultimate Multisite’ile teada, et selle konkreetse toote pealt ei tohiks makse koguda.
 
-## Euroopa VAT tugi
+## Euroopa VAT tugi {#european-vat-support}
 
 Nagu varem mainitud, on meil EL-is asuvatele klientidele saadaval lisamoodul, kellel on Euroopa VAT regulatsioonidest tulenevalt täiendavad nõuded.
 
@@ -101,7 +101,7 @@ Kui naased **Maksuseadete vahekaardile**, näed uusi saadaolevaid valikuid. Lül
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAT maksumäärade tõmbamine
+### VAT maksumäärade tõmbamine {#pulling-on-vat-tax-rates}
 
 Üks tööriistadest, mille meie integratsioon lisab, on võimalus laadida EL-i liikmesriikide maksumäärasid. Seda saab teha, külastades maksumäärade redaktori lehte pärast EL-i VAT toe lubamist.
 
@@ -111,7 +111,7 @@ Lehe allosas näed VAT tõmbamise valikuid. Määra tüübi valimine ja nupu **U
 
 Saad väärtusi pärast nende tõmbamist ka muuta. Selleks muuda lihtsalt vajalikku tabelirida ja klõpsa uute väärtuste salvestamiseks.
 
-### VAT valideerimine
+### VAT valideerimine {#vat-validation}
 
 Kui VAT tugi on lubatud, lisab Ultimate Multisite kassavormile arveldusaadressi välja alla täiendava välja. Väli kuvatakse ainult EL-is asuvatele klientidele.
 

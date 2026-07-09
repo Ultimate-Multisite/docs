@@ -4,11 +4,11 @@ title: Isihlungi - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Isihlungi: auth_cookie_expiration
+# Isihlungi: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Sihlunga ubude besikhathi sokuphelelwa yisikhathi se-cookie yokuqinisekisa.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sihlunga ubude besikhathi sokuphelelwa yisikhathi se-cookie yokuqinisekisa.
 | $user_id | `int` | User ID. |
 | $remember | `bool` | Ukuthi kufanele kukhunjulwe ukungena komsebenzisi. Okuzenzakalelayo kungu-false. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.8.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) emgqeni 52

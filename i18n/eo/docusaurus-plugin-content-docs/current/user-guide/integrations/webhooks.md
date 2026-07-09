@@ -3,7 +3,7 @@ title: Webhook-oj
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Un Prima Vizu de Webhooks (v2)
+# Un Prima Vizu de Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**ATTENCO: Notu ki ĉi tiu funkcio aŭ artikolo estas por avantaŭaj uzantoj.**_
 
@@ -11,7 +11,7 @@ Un **webhook** estas maniero, per kiu aplikeco aŭ programaro kiel Ultimate Mult
 
 Tio estas utile se vi bezonas integri aŭ pasigi certajn datumojn de Ultimate Multisite al alia CRM aŭ sistema ĉiam kiam evento estas akcitita. Ekzemple, vi bezonas envi fiam nomon kaj elektronan adreson al elsenda listo ĉiam kiam nova konto uzanto estas kreita.
 
-## Kiel krei webhook-on
+## Kiel krei webhook-on {#how-to-create-a-webhook}
 
 Por kreti webhook-on, diru al viaj administrajn dashboardo de la rano. Kliku sur **Ultimate Multisite > Webhooks > Add New Webhook.**
 

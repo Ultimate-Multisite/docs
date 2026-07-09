@@ -4,19 +4,19 @@ title: Iragazkia - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Iragazkia: send_auth_cookies
+# Iragazkia: send_auth_cookies {#filter-sendauthcookies}
 
 Auth cookieak benetan bezeroari bidaltzea eragozteko aukera ematen du.
 
-## Parametroak
+## Parametroak {#parameters}
 
 | Izena | Mota | Deskribapena |
 |------|------|-------------|
 | $send | `bool` | Auth cookieak bezeroari bidali ala ez. |
 
-### Noiztik
+### Noiztik {#since}
 
 - 4.7.4
-### Iturburua
+### Iturburua {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L150) fitxategian definituta, 150. lerroan

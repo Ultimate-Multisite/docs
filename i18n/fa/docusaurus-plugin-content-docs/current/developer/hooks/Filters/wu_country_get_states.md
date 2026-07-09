@@ -4,11 +4,11 @@ title: فیلتر - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filter: wu_country_get_states
+# Filter: wu_country_get_states {#filter-wucountrygetstates}
 
 لیست ایالت‌های این کشور را برمی‌گرداند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 | $country_code | `string` | کد ISO دو حرفی برای کشور. |
 | $current_country | `\WP_Ultimo\Country\Country` | نمونه (Instance) از کلاس فعلی. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.11
-### منبع
+### منبع {#source}
 
 در [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) در خط ۸۶ تعریف شده است.
 
 
-## برمی‌گرداند
+## برمی‌گرداند {#returns}
 لیست فیلتر شده ایالت‌ها.

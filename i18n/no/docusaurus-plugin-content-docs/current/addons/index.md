@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons utvider Ultimate Multisite med ekstra funksjoner og integrasjoner. De fleste addons er betalte og kan kjøpes fra [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Installasjon
+## Installasjon {#installation}
 
 Addons kan installeres på to måter:
 
 1. **Via Addon-siden** -- Gå til sideadministrasjonssiden for addons i WordPress-admin
 2. **Manuell nedlasting** -- Last ned fra [din konto](https://ultimatemultisite.com/my-account/downloads/) og last opp via Plugins > Add New
 
-## Tilgjengelige Addons
+## Tilgjengelige Addons {#available-addons}
 
 | Addon | Beskrivelse |
 |-------|-------------|

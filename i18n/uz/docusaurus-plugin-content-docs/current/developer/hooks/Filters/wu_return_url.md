@@ -4,11 +4,11 @@ title: Filtr - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filtr: wu_return_url
+# Filtr: wu_return_url {#filter-wureturnurl}
 
 Dasturchilarga checkout jarayonlaridan keyin ishlatiladigan to‘lov shlyuzi qaytish URL manzilini o‘zgartirishga ruxsat beradi.
 
-## Parametrlar
+## Parametrlar {#parameters}
 
 | Nomi | Turi | Tavsif |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Dasturchilarga checkout jarayonlaridan keyin ishlatiladigan to‘lov shlyuzi qay
 | $payment | `\WP_Ultimo\Models\Payment` | Ultimate Multisite to‘lov instansi. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | joriy Ultimate Multisite savat buyurtmasi. |
 
-### Beri
+### Beri {#since}
 
 - 2.0.20
-### Manba
+### Manba {#source}
 
 [`inc/gateways/class-base-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683) ichida 683-qatorda aniqlangan
 
 
-## Qaytaradi
+## Qaytaradi {#returns}

@@ -3,17 +3,17 @@ title: '12-dars: Biznesni yuritish'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# 12-dars: Biznesni yuritish
+# 12-dars: Biznesni yuritish {#lesson-12-running-the-business}
 
 Platforma yakunlab qo‘yiladigan loyiha emas -- u siz yuritadigan biznesdir. Bu dars FitSite’ni boshqarishdagi kundalik operatsiyalarni qamrab oladi: qo‘llab-quvvatlash, billing, texnik xizmat va mijozlarni mamnun saqlash.
 
-## Qayerda to‘xtagan edik
+## Qayerda to‘xtagan edik {#where-we-left-off}
 
 FitSite ishga tushgan va mijozlar ro‘yxatdan o‘tmoqda. Endi operatsiyani barqaror yuritishingiz kerak.
 
-## Kundalik operatsiyalar
+## Kundalik operatsiyalar {#daily-operations}
 
-### Monitoring
+### Monitoring {#monitoring}
 
 Bularni har kuni tekshiring (yoki ogohlantirishlarni sozlang):
 
@@ -22,7 +22,7 @@ Bularni har kuni tekshiring (yoki ogohlantirishlarni sozlang):
 - **Muvaffaqiyatsiz to‘lovlar**: E’tibor talab qiladigan to‘lov muvaffaqiyatsizliklari bormi?
 - **Qo‘llab-quvvatlash so‘rovlari**: Javobsiz qolgan mijoz savollari bormi?
 
-### Mijozlarni qo‘llab-quvvatlash
+### Mijozlarni qo‘llab-quvvatlash {#customer-support}
 
 Nishaga e’tiboringiz bu yerda ustunlik beradi. Chunki barcha mijozlaringiz fitness studiyalari bo‘lgani uchun, bir xil savollarni qayta-qayta ko‘rasiz:
 
@@ -36,7 +36,7 @@ Nishaga e’tiboringiz bu yerda ustunlik beradi. Chunki barcha mijozlaringiz fit
 
 Bilimlar bazangizni (8-darsda boshlangan) shu takrorlanuvchi savollar atrofida quring. Bilimlar bazasi maqolasi bo‘lishi mumkin bo‘lgan har bir support ticket — o‘sha maqolani yozish kerakligi haqidagi signaldir.
 
-### Qo‘llab-quvvatlash darajalari
+### Qo‘llab-quvvatlash darajalari {#support-tiers}
 
 O‘sganingiz sari, qo‘llab-quvvatlashni plan bo‘yicha tuzing:
 
@@ -48,9 +48,9 @@ O‘sganingiz sari, qo‘llab-quvvatlashni plan bo‘yicha tuzing:
 
 [Support Tickets addon](/addons/support-tickets) platforma ichida qo‘llab-quvvatlash so‘rovlarini boshqarishga yordam berishi mumkin.
 
-## Billing operatsiyalari
+## Billing operatsiyalari {#billing-operations}
 
-### Takroriy to‘lovlar
+### Takroriy to‘lovlar {#recurring-payments}
 
 Ultimate Multisite takroriy billingni to‘lov shlyuzingiz orqali avtomatik boshqaradi. Sizning vazifangiz quyidagilarni kuzatish:
 
@@ -58,7 +58,7 @@ Ultimate Multisite takroriy billingni to‘lov shlyuzingiz orqali avtomatik bosh
 - **Dunning**: To‘lov shlyuzingiz orqali avtomatlashtirilgan qayta urinish mantiqini sozlang (Stripe buni yaxshi bajaradi)
 - **Bekor qilish so‘rovlari**: Mijozlar nega ketayotganini tushuning. Har bir bekor qilish — fikr-mulohazadir.
 
-### Memberships boshqaruvi
+### Memberships boshqaruvi {#managing-memberships}
 
 Quyidagilar uchun **Ultimate Multisite > Memberships** bo‘limiga o‘ting:
 
@@ -69,13 +69,13 @@ Quyidagilar uchun **Ultimate Multisite > Memberships** bo‘limiga o‘ting:
 
 To‘liq ma’lumot uchun [Memberships boshqaruvi](/user-guide/administration/managing-memberships) bo‘limiga qarang.
 
-### Invoicing
+### Invoicing {#invoicing}
 
 Har bir to‘lov uchun invoicelar to‘g‘ri yaratilganiga ishonch hosil qiling. Mijozlarga biznes xarajatlari hisobotlari uchun invoicelar kerak bo‘lishi mumkin. [To‘lovlar va invoicelarni boshqarish](/user-guide/administration/managing-payments-and-invoices) bo‘limiga qarang.
 
-## Platformaga texnik xizmat
+## Platformaga texnik xizmat {#platform-maintenance}
 
-### WordPress va plugin yangilanishlari
+### WordPress va plugin yangilanishlari {#wordpress-and-plugin-updates}
 
 Tarmoq administratori sifatida siz quyidagilar uchun javobgarsiz:
 
@@ -88,14 +88,14 @@ Tarmoq administratori sifatida siz quyidagilar uchun javobgarsiz:
 Buzilgan yangilanish tarmog‘ingizdagi har bir mijoz saytiga ta’sir qiladi. Yangilanishlarni har doim avval tarmog‘ingizning staging nusxasida sinab ko‘ring.
 :::
 
-### Xavfsizlik
+### Xavfsizlik {#security}
 
 - Barcha dasturiy ta’minotni yangilab turing
 - Admin accountlar uchun kuchli parollar va ikki faktorli autentifikatsiyadan foydalaning
 - Shubhali faollikni kuzating
 - Xavfsizlik hodisalari uchun rejangiz bo‘lsin
 
-### Performance
+### Performance {#performance}
 
 Tarmog‘ingiz o‘sgani sari, quyidagilarni kuzating:
 
@@ -105,9 +105,9 @@ Tarmog‘ingiz o‘sgani sari, quyidagilarni kuzating:
 
 Agar hali qilmagan bo‘lsangiz, caching (page cache, object cache) va CDN joriy etishni ko‘rib chiqing. [Cloudflare integratsiyasi](/user-guide/host-integrations/cloudflare) buning katta qismini bajaradi.
 
-## Mijoz hayotiy siklini boshqarish
+## Mijoz hayotiy siklini boshqarish {#customer-lifecycle-management}
 
-### Churnni kamaytirish
+### Churnni kamaytirish {#reducing-churn}
 
 Churn — har oy bekor qiladigan mijozlar foizi. Obuna biznesi uchun churnni kamaytirish yangi mijozlarni jalb qilish kabi muhim.
 
@@ -119,7 +119,7 @@ Churn — har oy bekor qiladigan mijozlar foizi. Obuna biznesi uchun churnni kam
 - Ular arzonroq muqobil topdi → nishadagi qiymatingizni kuchaytiring
 - Ularning biznesi yopildi → oldini olib bo‘lmaydi, lekin buni alohida kuzating
 
-### Upgrade qilishga undash
+### Upgrade qilishga undash {#encouraging-upgrades}
 
 Muvaffaqiyatga erishayotgan Starter mijozlarini upgrade qilishga undash kerak:
 
@@ -127,7 +127,7 @@ Muvaffaqiyatga erishayotgan Starter mijozlarini upgrade qilishga undash kerak:
 - Ular foyda ko‘radigan Growth plan funksiyalarini ta’kidlaydigan maqsadli emaillar yuboring
 - Growth/Pro mijozlari nimalar qurganini namoyish qiling
 
-### Qaytarib olish kampaniyalari
+### Qaytarib olish kampaniyalari {#win-back-campaigns}
 
 Mijoz bekor qilganda:
 
@@ -135,30 +135,30 @@ Mijoz bekor qilganda:
 2. Imkon bo‘lsa, ularning xavotirini hal qiling
 3. Qaytish uchun chegirma taklif qiling (bekor qilingandan 30-60 kun o‘tib)
 
-## Haftalik va oylik rutinlar
+## Haftalik va oylik rutinlar {#weekly-and-monthly-routines}
 
-### Haftalik
+### Haftalik {#weekly}
 
 - Yangi ro‘yxatdan o‘tishlar va bekor qilishlarni ko‘rib chiqing
 - Barcha ochiq support ticketlarga javob bering
 - Platforma performance va uptimeni tekshiring
 - Har qanday muvaffaqiyatsiz to‘lovlarni ko‘rib chiqing
 
-### Oylik
+### Oylik {#monthly}
 
 - Asosiy metrikalarni tahlil qiling (MRR, churn, yangi mijozlar, upgradenlar)
 - WordPress va plugin yangilanishlarini qo‘llang (staging sinovidan keyin)
 - Qo‘llab-quvvatlash naqshlari asosida bilimlar bazasini ko‘rib chiqing va yangilang
 - Mijozlarga newsletter yoki yangilik yuboring (yangi funksiyalar, maslahatlar, fitness sohasi yangiliklari)
 
-### Har chorakda
+### Har chorakda {#quarterly}
 
 - Narxlarni raqobatchilar va mijoz fikr-mulohazalariga nisbatan ko‘rib chiqing
 - Template dizaynlarini baholang -- ularni yangilash kerakmi?
 - Hosting sig‘imini baholang -- scale qilish kerakmi?
 - Aktivatsiya ma’lumotlari asosida onboardingni ko‘rib chiqing va yaxshilang
 
-## Bu darsda nimalarni qurdik
+## Bu darsda nimalarni qurdik {#what-we-built-this-lesson}
 
 - **Kundalik monitoring tartiblari** uptime, ro‘yxatdan o‘tishlar, to‘lovlar va qo‘llab-quvvatlash uchun
 - **Darajalangan qo‘llab-quvvatlash tuzilmasi** plan darajalariga moslashtirilgan

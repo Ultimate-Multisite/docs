@@ -3,11 +3,11 @@ title: Tagairt WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Tagairt WP-CLI
+# Tagairt WP-CLI {#wp-cli-reference}
 
 Tagann Gratis AI Agent le teaghlach orduithe `wp gratis-ai-agent` chun tagarmharcáil a dhéanamh ar an ngníomhaire, cumais a bhainistiú, agus stádas an ghníomhaire a fhiosrú ón líne ordaithe. Éilíonn gach ordú WP-CLI 2.0 nó níos airde.
 
-## Suiteáil
+## Suiteáil {#installation}
 
 Cláraítear na horduithe WP-CLI go huathoibríoch nuair atá an plugin gníomhach. Fíoraigh le:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Ritheann sé sraith tagarmharcála Chumais an Ghníomhaire — tacar leideanna casta, ilchéime a chuireann dromchla iomlán na gcumas i bhfeidhm. Úsáid é seo chun feidhmíocht samhla a mheas, soláthraithe AI a chur i gcomparáid, nó pacaí cumais a bhailíochtú sula gcuirtear i dtáirgeadh iad.
 
-### Achoimre
+### Achoimre {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Roghanna
+### Roghanna {#options}
 
 | Rogha | Cur síos |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Formáid aschuir: `table` (réamhshocrú), `json`, `csv` |
 | `--save` | Sábháil torthaí an tagarmhairc sa bhunachar sonraí le haghaidh comparáide stairiúla |
 
-### Samplaí
+### Samplaí {#examples}
 
 Rith an tsraith tagarmharcála iomlán leis an soláthraí agus an tsamhail reatha:
 
@@ -57,7 +57,7 @@ Rith in aghaidh samhla ar leith agus sábháil torthaí:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Aschur
+### Aschur {#output}
 
 Cuireann an tagarmharc ró amháin in aghaidh na ceiste amach leis na colúin seo a leanas:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Ceisteanna Tagarmharcála
+### Ceisteanna Tagarmharcála {#benchmark-questions}
 
 Áirítear sa tsraith réamhshocraithe:
 
@@ -95,11 +95,11 @@ Is féidir ceisteanna breise a chlárú tríd an scagaire `gratis_ai_agent_bench
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Bainistíonn sé cumais agus pacaí cumais suiteáilte.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Liostaíonn sé na cumais chláraithe uile, a bhfoinse (croí nó paca), agus a stádas reatha.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Íoslódálann agus gníomhaíonn sé paca cumais ón gclárlann.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Díchumasaíonn sé cumas ar leith gan an paca a bhaint. Úsáideach chun raon feidhme an ghníomhaire a shrianadh ar shuíomh ar leith.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Athchumasaíonn sé cumas a díchumasaíodh roimhe seo.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Taispeánann sé cumraíocht reatha an ghníomhaire agus stádas nascachta.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Taispeánann sé gníomhaíocht le déanaí ón ngníomhaire ón loga dífhabhtaithe.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Athshocraíonn sé staid an ghníomhaire: glanann sé CSS insteallta, baineann sé CPTs agus tacsanomaíochtaí cláraithe ag an ngníomhaire, athshocraíonn sé stíleanna domhanda, agus fholmhaíonn sé taisce roghanna an ghníomhaire. Ní bhaineann sé an breiseán ná a shocruithe.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Cóid Scoir
+## Cóid Scoir {#exit-codes}
 
 Scoireann gach ordú le `0` ar éirigh leis. Cóid scoir neamh-nialasacha:
 

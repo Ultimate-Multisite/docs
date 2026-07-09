@@ -3,13 +3,13 @@ title: Lenane la liphetoho la Litekete tsa Tšehetso
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Lenane la Liphetoho la Litekete tsa Tšehetso
+# Lenane la Liphetoho la Litekete tsa Tšehetso {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Ntlafalitsoe: Ho tlositsoe bukana ea vendor/ ho tsoa ho lateleng ha Git (e se e koahetsoe ke .gitignore), ho fokotsa boholo ba polokelo
 * Ntlafalitsoe: E lekiloe ho fihlela ho WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Tokiso: Amohela boleng ba null ho li-setter tsa mohlala oa tekete tse lumellang null
 * Tokiso: Boloka litekete tsohle litafoleng tsa marangrang a lefatše lohle bakeng sa tšehetso e nepahetseng ea multisite
 * Tokiso: Pata masimo a basebetsi ’me u lokise phetisetso ea leqephe le se nang letho foromong ea moreki ea tekete e ncha
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Ntlafalitsoe: Laela thepa ea frontend ka maemo feela maqepheng a litekete tsa tšehetso
 * Ntlafalitsoe: Tlola autoloader ea plugin ha autoloader ea motso oa Bedrock e se e laetse dependencies
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * E kentsoe: Tshebetso e felletseng ea ho sheba litekete bakeng sa admin le frontend
 * E kentsoe: Handler ea AJAX bakeng sa tlhahiso ea likarabo tsa tekete
 * E kentsoe: Tšehetso bakeng sa tshebetso ea karabo ea tekete ka tsamaiso e nepahetseng ea foromo
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Ntlafalitsoe: Sebopeho sa database ka litlelase tse nepahetseng tsa query le schema bakeng sa likarabo le likhokahanyo
 * Ntlafalitsoe: Phalliso ho thepa ea sebele ho e-na le attributes bakeng sa mehlala ea litekete
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * E ntlafalitsoe: Prefix e rehiloe bocha ho ultimate-multisite bakeng sa ho tšoana
 * E ntlafalitsoe: Ho tsitsisoa ha text domain
 * E lokisitsoe: Litokiso tse nyenyane tsa liphoso le lintlafatso
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Tokollo ea pele
 * Sistimi e felletseng ea taolo ea litekete
 * Taolo ea phihlello ea maemo a mangata

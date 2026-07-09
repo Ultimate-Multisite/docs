@@ -3,7 +3,7 @@ title: Piemēriņu un tēmas pārvaldniec
 sidebar_position: 11
 _i18n_hash: 12308e3f7d1aa025d7dc4088496e3ad8
 ---
-# Plugins un Temu Manēji
+# Plugins un Temu Manēji {#plugin-and-theme-manager}
 
 Šī funkcija tiek sniegta ar papildu komponenti **Plugin & Theme Manager**.
 

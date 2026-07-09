@@ -3,7 +3,7 @@ title: Hogyan Telepítsük a WordPress Multisite-ot
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hogyan telepítsem a WordPress Multisite-ot?
+# Hogyan telepítsem a WordPress Multisite-ot? {#how-do-i-install-wordpress-multisite}
 
 A WordPress Multisite lehetővé teszi, hogy egyetlen telepítésen belül egy teljes webhelyhálózatot működtess. Ez egy beépített funkció, de alapértelmezetten nincs bekapcsolva.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Alwebhely létrehozásához:
 
 A mezők kitöltése után kattints a „Webhely hozzáadása" gombra. Miután az új alwebhely létrejött, nyisd meg, és győződj meg róla, hogy megfelelően működik.
 
-## Gyakori problémák:
+## Gyakori problémák: {#common-problems}
 
-### 1\. Létre tudok hozni új webhelyeket, de nem érhetők el.
+### 1\. Létre tudok hozni új webhelyeket, de nem érhetők el. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ha aldomaineket választottál, be kell állítanod a wildcard aldomaineket is a multisite hálózatodhoz.
 

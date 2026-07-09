@@ -3,7 +3,7 @@ title: PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Pag-customize sa imong Admin Panel gamit ang PRO Theme
+# Pag-customize sa imong Admin Panel gamit ang PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Kanunay nga kung nagtrabaho ta para sa mga kliyente, naa tay panginahanglan nga maghatag kanila og custom experience sa admin dashboard sa WordPress. Kung nagpangita ka og mas propesyonal nga hitsura ug pakarampara, ang PRO Theme makatabang nimo.
 

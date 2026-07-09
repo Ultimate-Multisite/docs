@@ -4,11 +4,11 @@ title: Sía - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filter: wu_post_count
+# Filter: wu_post_count {#filter-wupostcount}
 
 Leyfir plugin-hönnuðum að breyta heildarfjöldanum
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Nafn | Tegund | Lýsing |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Leyfir plugin-hönnuðum að breyta heildarfjöldanum
 | $post_counts | `object` | WordPress-hlutur sem wp_count_posts fn skilar |
 | $post_type | `string` | Slóðarnafn færslugerðar |
 
-### Síðan
+### Síðan {#since}
 
 - 1.9.1
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) í línu 136
 
 
-## Skilar
+## Skilar {#returns}
 Nýr heildarfjöldi

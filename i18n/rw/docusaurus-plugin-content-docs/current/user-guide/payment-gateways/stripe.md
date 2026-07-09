@@ -3,19 +3,19 @@ title: Gukora Uburyo mu Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Gukoresha I Stripe Gateway (v2)
+# Gukoresha I Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**Urugero Muhere: Uruko uwo rurimi uyu nshya ni Ultimate Multisite version 2.x.**_
 
 Ushobora gukorera uburyo bishobora gukoreshwa mu gihe cy'ubwujobozi bw'ubwujobozi bwawe ku rubuga rwa gahunda y'ubwujobozi (payment settings page): Stripe, Stripe Checkout, PayPal no Manual. Mu gihe cyacu, twagushyira uburyo gukoresha **Stripe**.
 
-## Gukorera Stripe
+## Gukorera Stripe {#enabling-stripe}
 
 Kugira ngo Stripe yitoke mu gihe cy'ubwujobozi bwawe nk'umuryango w'ubwujobozi (network), ugenda ku rubuga rwa: **Ultimate Multisite > Settings > Payments** kandi uba umuntu wifashishije (tick) uburyo bw'ibyo mu gihe cy'ubwujobozi bwawe (Active Payment Gateways section) ku kintu cyitwa **Stripe** cyangwa **Stripe Checkout**.
 
 ![Gukorera Stripe mu gihe cy'ubwujobozi bwawe](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Uburyo bwawe buza uburyo bwo gukoresha umbwere (credit card number) mu gihe cy'ubwujobozi (checkout).
 
@@ -47,7 +47,7 @@ Gukoresha uburyo bwo gukora mu gihe cy'ubwoko bw'ubuzima, ugenda ku **Publishabl
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Gukora Webhook kuri Stripe
+## Gukora Webhook kuri Stripe {#setting-up-stripe-webhook}
 
 Stripe yifasha ibyerekeza (webhook events) byo gishobora guhagarara Ultimate Multisite mu gihe cyose igikorwa cyenda kigira ku **account yawe ya stripe**.
 

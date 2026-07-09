@@ -4,19 +4,19 @@ title: Filtro - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filtro: auth_redirect_scheme
+# Filtro: auth_redirect_scheme {#filter-authredirectscheme}
 
 Filtra o esquema de redirección de autenticación.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nome | Tipo | Descrición |
 |------|------|-------------|
 | $scheme | `string` | Esquema de redirección de autenticación. Baleiro por defecto. |
 
-### Desde
+### Desde {#since}
 
 - 2.9.0
-### Fonte
+### Fonte {#source}
 
 Definido en [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212) na liña 212

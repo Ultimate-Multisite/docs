@@ -3,9 +3,9 @@ title: Ülim AI-ühendaja ühilduvate lõpp-punktide muudatuste logi
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector ühilduvate lõpp-punktide muudatuste logi
+# Ultimate AI Connector ühilduvate lõpp-punktide muudatuste logi {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Versioon 2.0.0 — avaldatud 2026-04-24
+## Versioon 2.0.0 — avaldatud 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Uus: mitme teenusepakkuja tugi — seadista mitu AI lõpp-punkti ja suuna päringud automaatse varuvariandiga teenusepakkujate vahel.
 * Parandus: mitme teenusepakkuja SDK integratsioon õigete teenusepakkuja ID-de, registreerimis-URL-ide ja HTTP-filtri ulatusega iga teenusepakkuja kohta.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Parandus: kõrvaldatud blokeeriv HTTP-päring, mis käivitus iga lehe laadimisel.
 * Täiustatud: GitHub Actions töövood uuendatud Node.js 24 peale.
 
-## Versioon 1.0.0 — esmane väljalase
+## Versioon 1.0.0 — esmane väljalase {#version-100--initial-release}

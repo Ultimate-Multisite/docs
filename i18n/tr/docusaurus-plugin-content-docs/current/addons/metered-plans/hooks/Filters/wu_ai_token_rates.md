@@ -4,19 +4,19 @@ title: Filter - wu_ai_token_rates
 sidebar_label: wu_ai_token_rates
 _i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
 ---
-# Filtre: wu_ai_token_rates
+# Filtre: wu_ai_token_rates {#filter-wuaitokenrates}
 
 Yapay Zeka (AI) belirteci ücretlendirme oranlarını filtreler.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Açıklama |
 |------|------|-------------|
 | $rates | `array` | Ağ seçeneğindeki model oranları. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 1.1.0
-### Kaynak
+### Kaynak {#source}
 
 Defined in [`inc/managers/class-ai-usage-listener.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-metered-plans/blob/main/inc/managers/class-ai-usage-listener.php#L266) at line 266

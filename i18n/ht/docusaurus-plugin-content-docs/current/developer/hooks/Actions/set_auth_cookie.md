@@ -4,11 +4,11 @@ title: Aksyon - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Aksyon: set_auth_cookie
+# Aksyon: set_auth_cookie {#action-setauthcookie}
 
 Deklanche imedyatman anvan yo mete cookie otantifikasyon an.
 
-## Paramèt
+## Paramèt {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Deklanche imedyatman anvan yo mete cookie otantifikasyon an.
 | $scheme | `string` | Konplo otantifikasyon. Valè yo enkli 'auth' oswa 'secure_auth'. |
 | $token | `string` | Token sesyon itilizatè a pou itilize pou cookie sa a. |
 
-### Depi
+### Depi {#since}
 
 - 2.5.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Sous
+### Sous {#source}
 
 Defini nan [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) nan liy 124

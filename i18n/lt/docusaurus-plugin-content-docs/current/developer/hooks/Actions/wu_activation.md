@@ -4,13 +4,13 @@ title: Veiksmas - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Veiksmas: wu_activation
+# Veiksmas: wu_activation {#action-wuactivation}
 
 Leiskite kitoms plugin dalims prijungti savo aktyvavimo procedūras
 
-### Nuo
+### Nuo {#since}
 
 - 1.9.6
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L91) 91 eilutėje

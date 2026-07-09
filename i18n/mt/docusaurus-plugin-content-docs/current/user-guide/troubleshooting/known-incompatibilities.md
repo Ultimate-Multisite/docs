@@ -3,7 +3,7 @@ title: Inkompatibilitaj Notwarji
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Inkompatibilitaj notwarati malajr u plugin oħra
+# Inkompatibilitaj notwarati malajr u plugin oħra {#known-incompatibilities-with-other-plugins}
 
 Wara li tinstalli u attiva Ultimate Multisite, tmur possibbli li ti tqaf f problemi min inkompatibilitaj li ma jkunxġu biex jiġu trattati mal-plugin oħra.
 

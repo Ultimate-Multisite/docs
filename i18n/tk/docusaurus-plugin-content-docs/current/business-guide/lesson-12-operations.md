@@ -3,17 +3,17 @@ title: '12-nji sapak: Biznesi ýöretmek'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Sapak 12: Biznesi ýöretmek
+# Sapak 12: Biznesi ýöretmek {#lesson-12-running-the-business}
 
 Platforma tamamlaýan taslamaňyz däl -- ol ýöredýän biznesiňizdir. Bu sapak FitSite-i dolandyrmagyň gündelik amallaryny öz içine alýar: goldaw, hasaplaşyk, tehniki hyzmat we müşderileri razy saklamak.
 
-## Nirä çenli gelipdik
+## Nirä çenli gelipdik {#where-we-left-off}
 
 FitSite işläp dur we müşderiler ýazylýarlar. Indi amallary durnukly görnüşde ýöretmeli.
 
-## Gündelik amallar
+## Gündelik amallar {#daily-operations}
 
-### Gözegçilik
+### Gözegçilik {#monitoring}
 
 Bulary her gün barlaň (ýa-da duýduryşlary sazlaň):
 
@@ -22,7 +22,7 @@ Bulary her gün barlaň (ýa-da duýduryşlary sazlaň):
 - **Şowsuz tölegler**: Üns berilmeli töleg şowsuzlyklary barmy?
 - **Goldaw haýyşlary**: Jogapsyz galan müşderi soraglary barmy?
 
-### Müşderi goldawy
+### Müşderi goldawy {#customer-support}
 
 Siziň belli bir ugra gönükmegiňiz bu ýerde artykmaçlykdyr. Müşderileriňiziň ählisi fitness studiýalary bolandygy üçin, şol bir soraglary gaýta-gaýta görersiňiz:
 
@@ -36,7 +36,7 @@ Siziň belli bir ugra gönükmegiňiz bu ýerde artykmaçlykdyr. Müşderileriň
 
 Bilim bazaryňyzy (Sapak 8-de başlanan) şu gaýtalanýan soraglaryň töwereginde guruň. Bilim bazasy makalasy bolup biljek her bir goldaw bileti şol makalany ýazmak üçin signaldyr.
 
-### Goldaw derejeleri
+### Goldaw derejeleri {#support-tiers}
 
 Öseniňizçe, goldawy meýilnama boýunça düzümleşdiriň:
 
@@ -48,9 +48,9 @@ Bilim bazaryňyzy (Sapak 8-de başlanan) şu gaýtalanýan soraglaryň töweregi
 
 [Support Tickets addon](/addons/support-tickets) platformanyň içinde goldaw haýyşlaryny dolandyrmaga kömek edip biler.
 
-## Hasaplaşyk amallary
+## Hasaplaşyk amallary {#billing-operations}
 
-### Gaýtalanýan tölegler
+### Gaýtalanýan tölegler {#recurring-payments}
 
 Ultimate Multisite gaýtalanýan hasaplaşygy töleg geçelgäňiz arkaly awtomatiki dolandyrýar. Siziň wezipäňiz şulary gözegçilik etmekdir:
 
@@ -58,7 +58,7 @@ Ultimate Multisite gaýtalanýan hasaplaşygy töleg geçelgäňiz arkaly awtoma
 - **Dunning**: Töleg geçelgäňiz arkaly awtomatiki gaýtadan synanyşmak logikasyny sazlaň (Stripe muny gowy ýerine ýetirýär)
 - **Ýatyrma haýyşlary**: Müşderileriň näme üçin gidýändigine düşüniň. Her bir ýatyrma seslenmedir.
 
-### Agzalyklary dolandyrmak
+### Agzalyklary dolandyrmak {#managing-memberships}
 
 Şular üçin **Ultimate Multisite > Memberships** bölümine geçiň:
 
@@ -69,13 +69,13 @@ Ultimate Multisite gaýtalanýan hasaplaşygy töleg geçelgäňiz arkaly awtoma
 
 Doly salgylanma üçin [Agzalyklary dolandyrmak](/user-guide/administration/managing-memberships) serediň.
 
-### Hasap-fakturalar
+### Hasap-fakturalar {#invoicing}
 
 Her töleg üçin hasap-fakturalaryň dogry döredilýändigine göz ýetiriň. Müşderilere biznes çykdajylaryny hasabat bermek üçin hasap-fakturalar gerek bolup biler. [Tölegleri we hasap-fakturalary dolandyrmak](/user-guide/administration/managing-payments-and-invoices) serediň.
 
-## Platforma tehniki hyzmaty
+## Platforma tehniki hyzmaty {#platform-maintenance}
 
-### WordPress we goşmaça täzelenmeleri
+### WordPress we goşmaça täzelenmeleri {#wordpress-and-plugin-updates}
 
 Tor administratory hökmünde siz şu zatlar üçin jogapkärsiňiz:
 
@@ -88,14 +88,14 @@ Tor administratory hökmünde siz şu zatlar üçin jogapkärsiňiz:
 Bozulan täzelenme toruňyzdaky her bir müşderi saýtyna täsir edýär. Täzelenmeleri hemişe ilki toruňyzyň staging nusgasynda synag ediň.
 :::
 
-### Howpsuzlyk
+### Howpsuzlyk {#security}
 
 - Ähli programma üpjünçiligini täzeläp saklaň
 - Admin Account-lary üçin güýçli parollary we iki faktorly tassyklamany ulanyň
 - Şübheli işjeňlige gözegçilik ediň
 - Howpsuzlyk wakalary üçin meýilnamaňyz bolsun
 
-### Öndürijilik
+### Öndürijilik {#performance}
 
 Toruňyz ulaldygyça, şulara gözegçilik ediň:
 
@@ -105,9 +105,9 @@ Toruňyz ulaldygyça, şulara gözegçilik ediň:
 
 Eger entek etmedik bolsaňyz, caching (sahypa cache-i, obýekt cache-i) we CDN ornaşdyrmagy göz öňünde tutuň. [Cloudflare integrasiýasy](/user-guide/host-integrations/cloudflare) munuň köp bölegini dolandyrýar.
 
-## Müşderi ýaşaýyş aýlawyny dolandyrmak
+## Müşderi ýaşaýyş aýlawyny dolandyrmak {#customer-lifecycle-management}
 
-### Churn-y azaltmak
+### Churn-y azaltmak {#reducing-churn}
 
 Churn her aý ýatyrýan müşderileriň göterimidir. Abuna biznesi üçin churn-y azaltmak täze müşderileri gazanmak ýaly möhümdir.
 
@@ -119,7 +119,7 @@ Churn her aý ýatyrýan müşderileriň göterimidir. Abuna biznesi üçin chur
 - Arzan alternatiwa tapdylar → öz ugurlaýyn gymmatyňyzy güýçlendiriň
 - Biznesleri ýapyldy → öňüni alyp bolmaýar, ýöne muny aýratyn yzarlaň
 
-### Täzelemeleri höweslendirmek
+### Täzelemeleri höweslendirmek {#encouraging-upgrades}
 
 Üstünlik gazanýan Starter müşderilerini täzelemäge höweslendirmeli:
 
@@ -127,7 +127,7 @@ Churn her aý ýatyrýan müşderileriň göterimidir. Abuna biznesi üçin chur
 - Peýda getirjek Growth meýilnamasynyň aýratynlyklaryny nygtaýan maksatly email-ler iberiň
 - Growth/Pro müşderileriniň näme gurandygyny görkeziň
 
-### Gaýtaryp almak kampaniýalary
+### Gaýtaryp almak kampaniýalary {#win-back-campaigns}
 
 Müşderi ýatyranda:
 
@@ -135,30 +135,30 @@ Müşderi ýatyranda:
 2. Mümkin bolsa, aladasyny çözüň
 3. Gaýdyp gelmek üçin arzanladyş teklip ediň (ýatyrmadan 30-60 gün soň)
 
-## Hepdelik we aýlyk tertipler
+## Hepdelik we aýlyk tertipler {#weekly-and-monthly-routines}
 
-### Hepdelik
+### Hepdelik {#weekly}
 
 - Täze ýazylmalary we ýatyrmalary gözden geçiriň
 - Ähli açyk goldaw biletlerine jogap beriň
 - Platformanyň öndürijiligini we iş wagtyny barlaň
 - Islendik şowsuz tölegleri gözden geçiriň
 
-### Aýlyk
+### Aýlyk {#monthly}
 
 - Esasy görkezijileri seljeriň (MRR, churn, täze müşderiler, täzelenmeler)
 - WordPress we goşmaça täzelenmelerini ulanyň (staging synagyndan soň)
 - Goldaw nusgalaryna esaslanyp bilim bazasyny gözden geçiriň we täzeläň
 - Müşderilere habar býulleteni ýa-da täzelenme iberiň (täze aýratynlyklar, maslahatlar, fitness pudagy habarlary)
 
-### Çärýeklik
+### Çärýeklik {#quarterly}
 
 - Baha goýumy bäsdeşler we müşderi seslenmeleri bilen deňeşdirip gözden geçiriň
 - Şablon dizaýnlaryna baha beriň -- olary täzeltmek gerekmi?
 - Hosting kuwwatyny bahalandyryň -- giňeltmek gerekmi?
 - Işjeňleşme maglumatlaryna esaslanyp işe giriş prosesini gözden geçiriň we gowulandyryň
 
-## Bu sapakda näme gurduk
+## Bu sapakda näme gurduk {#what-we-built-this-lesson}
 
 - **Gündelik gözegçilik tertipleri** iş wagty, ýazylmalar, tölegler we goldaw üçin
 - **Derejeli goldaw gurluşy** plan derejelerine laýyklaşdyrylan

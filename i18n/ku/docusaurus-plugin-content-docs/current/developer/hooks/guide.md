@@ -3,15 +3,15 @@ title: Rêberê Bikaranîna Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Rêberê Bikaranîna Hooks
+# Rêberê Bikaranîna Hooks {#hooks-usage-guide}
 
 Ultimate Multisite zêdetirî 200 action hooks û zêdetirî 280 filter hooks peyda dike. Ev rûpel hooksên herî zêde tên bikaranîn bi mînakên pratîk vedigire. Ji bo referansa temam a xweber-afirandî, rûpelên din ên vê beşê bibîne.
 
-## Hooksên çalakiyê
+## Hooksên çalakiyê {#action-hooks}
 
-### Jiyana mişterî
+### Jiyana mişterî {#customer-lifecycle}
 
-#### Piştî Afirandina Mişterî
+#### Piştî Afirandina Mişterî {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Guhertina Rewşa Mişterî
+#### Guhertina Rewşa Mişterî {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Hooksên malperê
+### Hooksên malperê {#site-hooks}
 
-#### Piştî Belavkirina Malperê
+#### Piştî Belavkirina Malperê {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Berî Sepandina Şablonê
+#### Berî Sepandina Şablonê {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Hooksên endametiyê
+### Hooksên endametiyê {#membership-hooks}
 
-#### Veguhestinên Rewşê
+#### Veguhestinên Rewşê {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Hooksên peredanê
+### Hooksên peredanê {#payment-hooks}
 
-#### Peredan Qediya / Têk Çû
+#### Peredan Qediya / Têk Çû {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Hooksên qonaxa dawî ya kirînê
+### Hooksên qonaxa dawî ya kirînê {#checkout-hooks}
 
-#### Berî Pêvajoyê / Piştî Qedandinê
+#### Berî Pêvajoyê / Piştî Qedandinê {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Hooksên domainê
+### Hooksên domainê {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Hooksên parzûnê
+## Hooksên parzûnê {#filter-hooks}
 
-### Parzûnên nirxdanê
+### Parzûnên nirxdanê {#pricing-filters}
 
-#### Tevahiya selikê
+#### Tevahiya selikê {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Rêjeyên bacê
+#### Rêjeyên bacê {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Parzûnên şablonê
+### Parzûnên şablonê {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Parzûnên sînordariyê
+### Parzûnên sînordariyê {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Parzûnên dergehê
+### Parzûnên dergehê {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Zeviyên forma qonaxa dawî ya kirînê
+### Zeviyên forma qonaxa dawî ya kirînê {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Naveroka Emailê
+### Naveroka Emailê {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

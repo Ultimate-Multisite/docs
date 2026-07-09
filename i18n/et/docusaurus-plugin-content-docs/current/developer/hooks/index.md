@@ -3,11 +3,11 @@ title: Hookide viide
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hookide viide
+# Hookide viide {#hooks-reference}
 
 Automaatselt loodud dokumentatsioon kõigi **59 actioni** ja **118 filteri** kohta Ultimate Multisite'is.
 
-## Actionid
+## Actionid {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Käivitub enne autentimise ümbersuunamist.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Käivitub vahetult enne autentimisküpsise määramist.
@@ -70,7 +70,7 @@ Automaatselt loodud dokumentatsioon kõigi **59 actioni** ja **118 filteri** koh
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Käivitub pärast objekti salvestamist andmebaasi.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Lubab plugini arendajatel lisada avamisprotsessile toiminguid.
 
-## Filtrid
+## Filtrid {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtreerib autentimisküpsise aegumisperioodi kestust.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtreerib autentimise ümbersuunamise skeemi.

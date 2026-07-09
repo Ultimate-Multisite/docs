@@ -3,11 +3,11 @@ title: ಕಸ್ಟಮ್ ಗೇಟ್‌ವೇ ಅಭಿವೃದ್ಧಿ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ಕಸ್ಟಮ್ ಗೇಟ್‌ವೇ ಅಭಿವೃದ್ಧಿ
+# ಕಸ್ಟಮ್ ಗೇಟ್‌ವೇ ಅಭಿವೃದ್ಧಿ {#custom-gateway-development}
 
 `Base_Gateway` ಕ್ಲಾಸ್ ಅನ್ನು ವಿಸ್ತರಿಸುವ ಮೂಲಕ ನೀವು ಕಸ್ಟಮ್ ಪಾವತಿ ಗೇಟ್‌ವೇಗಳನ್ನು ರಚಿಸಬಹುದು.
 
-## ಗೇಟ್‌ವೇ ಕ್ಲಾಸ್
+## ಗೇಟ್‌ವೇ ಕ್ಲಾಸ್ {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## ಗೇಟ್‌ವೇ ನೋಂದಾಯಿಸಿ
+## ಗೇಟ್‌ವೇ ನೋಂದಾಯಿಸಿ {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## ಮುಖ್ಯ ವಿಧಾನಗಳು
+## ಮುಖ್ಯ ವಿಧಾನಗಳು {#key-methods}
 
 | ವಿಧಾನ | ಉದ್ದೇಶ |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | ಮರುಪಾವತಿ ವಿನಂತಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ |
 | `get_payment_methods()` | ಗ್ರಾಹಕರಿಗೆ ಉಳಿಸಿದ ಪಾವತಿ ವಿಧಾನಗಳನ್ನು ಹಿಂತಿರುಗಿಸಿ |
 
-## ಮರುಕಳಿಸುವ ಸದಸ್ಯತ್ವಗಳಿಗಾಗಿ ನವೀಕರಣ ಗುರುತಿನ ವಿವರಗಳು
+## ಮರುಕಳಿಸುವ ಸದಸ್ಯತ್ವಗಳಿಗಾಗಿ ನವೀಕರಣ ಗುರುತಿನ ವಿವರಗಳು {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0, `auto_renew` ಉಳಿಸುವ ಮೊದಲು ಮರುಕಳಿಸುವ ಸದಸ್ಯತ್ವಕ್ಕೆ ಮರುಬಳಕೆ ಮಾಡಬಹುದಾದ ನವೀಕರಣ ಗುರುತಿನ ವಿವರ ಇದೆಯೇ ಎಂದು ಗೇಟ್‌ವೇ ಸಂಯೋಜನೆಗಳು ವರದಿ ಮಾಡಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. `wu_membership_has_renewal_credential` ಅನ್ನು hook ಮಾಡಿ ಮತ್ತು ಹಿಂತಿರುಗಿಸಿ:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 ಹೊಸ ಮರುಬಳಕೆ ಮಾಡಬಹುದಾದ ಗುರುತಿನ ವಿವರ ಸಂಗ್ರಹವಾದ ನಂತರ, ನಿಮ್ಮ ಗೇಟ್‌ವೇಯ ಯಶಸ್ವಿ ಮರು-ಅಧಿಕೃತಗೊಳಿಸುವ ಹರಿವಿನ ಭಾಗವಾಗಿ ಕಾಣೆಯಾದ ಗುರುತಿನ ವಿವರದ ಗುರುತನ್ನು ತೆರವುಗೊಳಿಸಿ.
 
-## ಸಲಹೆಗಳು
+## ಸಲಹೆಗಳು {#tips}
 
 - ವಿಫಲವಾದಾಗ ಯಾವಾಗಲೂ `WP_Error` ಹಿಂತಿರುಗಿಸಿ, ಇದರಿಂದ Ultimate Multisite ದೋಷ ಪ್ರದರ್ಶನವನ್ನು ನಿರ್ವಹಿಸಬಹುದು
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - ಗೇಟ್‌ವೇ-ನಿರ್ದಿಷ್ಟ ಲಾಗಿಂಗ್‌ಗಾಗಿ `wu_log_add()` ಬಳಸಿ
 
-## AI ಕನೆಕ್ಟರ್ ಪೂರೈಕೆದಾರರ ಸಾಮರ್ಥ್ಯಗಳು
+## AI ಕನೆಕ್ಟರ್ ಪೂರೈಕೆದಾರರ ಸಾಮರ್ಥ್ಯಗಳು {#ai-connector-provider-capabilities}
 
 AI ಕನೆಕ್ಟರ್-ಆಧಾರಿತ ಕಾರ್ಯಾಚರಣೆಗಳನ್ನು ಕರೆಮಾಡುವ ಕಸ್ಟಮ್ ಸಂಯೋಜನೆಗಳು, AI Provider for Anthropic Max v1.3.0 ಜೊತೆಗೆ ಪರಿಚಯಿಸಲಾದ ಬೆಂಬಲಿತ OAuth ಪೂರೈಕೆದಾರರ ಸಮೂಹಕ್ಕೆ ಹೊಂದಿಕೊಳ್ಳಬೇಕು:
 

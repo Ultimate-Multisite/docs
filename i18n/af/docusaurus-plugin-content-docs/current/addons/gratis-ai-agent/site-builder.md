@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orkestrasie v2
+# Site Builder Orkestrasie v2 {#site-builder-orchestration-v2}
 
 Site Builder Orkestrasie v2 (geïntroduseer in Gratis AI Agent v1.4.0) is die enigieme wat die meerstappe webwerfskepsel aandryf. Wanneer jy die agent vra om 'n "restaurantwebwerf te bou" of "'n portfolio met 'n blog te skep", breek die orkestrateur daardie hoëvlakdoel af in 'n gestruktureerde **plan**, ontdek die plugins wat nodig is om dit te vervul, voer elke stap in volgorde uit, spoor vordering by, en herstel outonoom van foute.
 
 ---
 
-## Hoe Dit Werk
+## Hoe Dit Werk {#how-it-works}
 
-### 1. Plan Generasie
+### 1. Plan Generasie {#1-plan-generation}
 
 Wanneer die agent 'n webwerfbou-opdrag ontvang, roep dit die `create_site_plan` vermoë aan om 'n JSON **webwerfplan** te genereer. Die plan beskryf:
 
@@ -61,7 +61,7 @@ Wanneer die agent 'n webwerfbou-opdrag ontvang, roep dit die `create_site_plan` 
 }
 ```
 
-### 2. Plugin Ontdekking
+### 2. Plugin Ontdekking {#2-plugin-discovery}
 
 Voordat die uitvoering begin, skaan die orkestrateur die plan se `plugin_requirements` en kyk watter plugins reeds aktief is. Vir ontbrekende plugins:
 
@@ -71,7 +71,7 @@ Voordat die uitvoering begin, skaan die orkestrateur die plan se `plugin_require
 
 Plugin ontdekkingsfoute is nie fataal nie — die orkestrateur merk die betrokke stappe as `skipped` en gaan voort met die res van die plan.
 
-### 3. Plan Uitvoering
+### 3. Plan Uitvoering {#3-plan-execution}
 
 Die orkestrateur roep `execute_site_plan` met die plan-ID aan. Die uitvoering vorder fase vir fase, stap vir stap:
 
@@ -79,7 +79,7 @@ Die orkestrateur roep `execute_site_plan` met die plan-ID aan. Die uitvoering vo
 - **Parallelle stappe** — stappe binne dieselfde fase wat geen onderlinge afhanklikhede het nie, word gelyktydig uitgestuur wanneer die `parallel` vlag gestel word.
 - **Stap tydslimiet** — elke stap het 'n individuele tydslimiet (standaard: die `Ability Timeout` instelling). 'n Stap wat tydslimiet bereik, word gemerk as `failed` en die plan gaan voort.
 
-### 4. Voortgangsbegroting
+### 4. Voortgangsbegroting {#4-progress-tracking}
 
 Roep `get_plan_progress` enige tyd aan om die uitvoeringsstatus te nagaan:
 
@@ -104,7 +104,7 @@ WP-CLI gebruikers kan vordering monitor met:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Foutherstel
+### 5. Foutherstel {#5-error-recovery}
 
 Wanneer 'n stap misluk, kyk die orkestrateur na 'n **terugvalplan** wat in die plan gedefinieer is:
 
@@ -115,9 +115,9 @@ Die agent rapporteer alle foute in die finale planopsomming en kan handmatige he
 
 ---
 
-## Site Plan Vermoë
+## Site Plan Vermoë {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Genereer 'n gestruktureerde webwerfplan uit 'n natuurlike taaldoelbeskrywing.
 
@@ -134,7 +134,7 @@ Genereer 'n gestruktureerde webwerfplan uit 'n natuurlike taaldoelbeskrywing.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Begin met die uitvoering van 'n voorheen gegenereerde webwerfplan.
 
@@ -150,7 +150,7 @@ Begin met die uitvoering van 'n voorheen gegenereerde webwerfplan.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Keer die huidige uitvoeringsstatus van 'n webwerfplan terug.
 
@@ -164,7 +164,7 @@ Keer die huidige uitvoeringsstatus van 'n webwerfplan terug.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Los 'n mislukte stap handmatig op en skakel planuitvoering vanaf die volgende stap voort. Gebruik dit wanneer outomatiese herstel nie moontlik was nie en jy wil ingryp.
 
@@ -180,7 +180,7 @@ Los 'n mislukte stap handmatig op en skakel planuitvoering vanaf die volgende st
 
 ---
 
-## Vergelyking v1 en v2
+## Vergelyking v1 en v2 {#comparing-v1-and-v2}
 
 | Funksie | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Los 'n mislukte stap handmatig op en skakel planuitvoering vanaf die volgende st
 
 ---
 
-## WP-CLI Plan Kommando's
+## WP-CLI Plan Kommando's {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Genereer 'n webwerfplan uit 'n doelbeskrywing.
 
@@ -205,7 +205,7 @@ Genereer 'n webwerfplan uit 'n doelbeskrywing.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Voer 'n voorheen gegenereerde plan uit.
 
@@ -213,7 +213,7 @@ Voer 'n voorheen gegenereerde plan uit.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Toon huidige vordering vir 'n uitvoerende of voltooide plan.
 
@@ -221,7 +221,7 @@ Toon huidige vordering vir 'n uitvoerende of voltooide plan.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Lys alle webwerfplanne (hangend, in-progress, en voltooide).
 
@@ -229,7 +229,7 @@ Lys alle webwerfplanne (hangend, in-progress, en voltooide).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Reset 'n mislukte plan na `pending` sodat dit van die begin af heruitgevoer kan word.
 

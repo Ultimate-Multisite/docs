@@ -3,7 +3,7 @@ title: د پلان ارتقاء
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# پلان بدلول (v2)
+# پلان بدلول (v2) {#upgrading-a-plan-v2}
 
 _**مهم نکته: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 
@@ -41,7 +41,7 @@ _**مهم نکته: این مقاله به Ultimate Multisite نسخه ۲.x اش
 
 ##
 
-## Upgrade و Downgrade لارې
+## Upgrade و Downgrade لارې {#upgrade-and-downgrade-paths}
 
 په هر یو پروډکټमा، تاسو به یو **Up & Downgrades** ټب پیدا کوئ. د هغې ټب په пърو انتخاب کې یو فیلد دی چې **Plan Group** نوم لري.
 

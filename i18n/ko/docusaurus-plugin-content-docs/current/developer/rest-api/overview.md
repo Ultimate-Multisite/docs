@@ -3,28 +3,28 @@ title: REST API 개요
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API 참조
+# REST API 참조 {#rest-api-reference}
 
-## 기본 구성
+## 기본 구성 {#base-configuration}
 
 **기본 URL:** `{site_url}/wp-json/wu/v2/`
 **인증:** API Key 및 Secret (HTTP Basic Auth 또는 URL Parameters)
 
-## 인증
+## 인증 {#authentication}
 
-### API 활성화
+### API 활성화 {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API 자격 증명 가져오기
+### API 자격 증명 가져오기 {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### 인증 방법
+### 인증 방법 {#authentication-methods}
 
 **HTTP Basic Auth (권장):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## 핵심 엔드포인트
+## 핵심 엔드포인트 {#core-endpoints}
 
-### 1. 고객 API
+### 1. 고객 API {#1-customers-api}
 
 **기본 경로:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. 사이트 API
+### 2. 사이트 API {#2-sites-api}
 
 **기본 경로:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. 멤버십 API
+### 3. 멤버십 API {#3-memberships-api}
 
 **기본 경로:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. 제품 API
+### 4. 제품 API {#4-products-api}
 
 **기본 경로:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. 결제 API
+### 5. 결제 API {#5-payments-api}
 
 **기본 경로:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. 도메인 API
+### 6. 도메인 API {#6-domains-api}
 
 **기본 경로:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## 등록 엔드포인트
+## 등록 엔드포인트 {#registration-endpoint}
 
 `/register` 엔드포인트는 완전한 결제/등록 흐름을 제공합니다:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## 독립 테넌트 엔드포인트
+## 독립 테넌트 엔드포인트 {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0은 격리된 테넌트를 프로비저닝, 검사 또는 검증하는 통합을 위해 독립 테넌트 REST 범위를 추가합니다.
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false`를 출시 전 차단 요소로 취급하세요. 검증 세부 정보를 확인하고, 데이터베이스 호스트 바인딩, 대기열, 사용자 프로비저닝 또는 라우팅 문제를 수정한 다음 검증을 다시 시도하세요.
 
-## 오류 응답
+## 오류 응답 {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## 페이지네이션 및 필터링
+## 페이지네이션 및 필터링 {#pagination-and-filtering}
 
 **쿼리 매개변수:**
 ```http

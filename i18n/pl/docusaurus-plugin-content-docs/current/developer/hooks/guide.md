@@ -3,15 +3,15 @@ title: Przewodnik po użyciu hooków
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Przewodnik po użyciu hooków
+# Przewodnik po użyciu hooków {#hooks-usage-guide}
 
 Ultimate Multisite udostępnia ponad 200 akcji (action hooks) i ponad 280 filtrów (filter hooks). Ta strona omawia najczęściej używane hooki, podając praktyczne przykłady. Aby zapoznać się z pełnym, wygenerowanym automatycznie zestawieniem, przejdź do innych stron tego działu.
 
-## Action Hooks (Akcje)
+## Action Hooks (Akcje) {#action-hooks}
 
-### Customer Lifecycle (Cykl życia klienta)
+### Customer Lifecycle (Cykl życia klienta) {#customer-lifecycle}
 
-#### After Customer Creation (Po utworzeniu klienta)
+#### After Customer Creation (Po utworzeniu klienta) {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Customer Status Change (Zmiana statusu klienta)
+#### Customer Status Change (Zmiana statusu klienta) {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Site Hooks (Akcje dotyczące witryn)
+### Site Hooks (Akcje dotyczące witryn) {#site-hooks}
 
-#### After Site Published (Po opublikowaniu witryny)
+#### After Site Published (Po opublikowaniu witryny) {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Before Template Application (Przed zastosowaniem szablonu)
+#### Before Template Application (Przed zastosowaniem szablonu) {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership Hooks (Akcje dotyczące członkostwa)
+### Membership Hooks (Akcje dotyczące członkostwa) {#membership-hooks}
 
-#### Status Transitions (Zmiany statusu)
+#### Status Transitions (Zmiany statusu) {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Payment Hooks (Akcje dotyczące płatności)
+### Payment Hooks (Akcje dotyczące płatności) {#payment-hooks}
 
-#### Payment Completed / Failed (Ukończona / Nieudana płatność)
+#### Payment Completed / Failed (Ukończona / Nieudana płatność) {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks (Akcje dotyczące realizacji zamówienia)
+### Checkout Hooks (Akcje dotyczące realizacji zamówienia) {#checkout-hooks}
 
-#### Before Processing / After Completion (Przed przetwarzaniem / Po zakończeniu)
+#### Before Processing / After Completion (Przed przetwarzaniem / Po zakończeniu) {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain Hooks (Akcje dotyczące domen)
+### Domain Hooks (Akcje dotyczące domen) {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks (Filtry)
+## Filter Hooks (Filtry) {#filter-hooks}
 
-### Pricing Filters (Filtry cen)
+### Pricing Filters (Filtry cen) {#pricing-filters}
 
-#### Cart Total (Całkowita kwota koszyka)
+#### Cart Total (Całkowita kwota koszyka) {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Tax Rates (Stawki podatkowe)
+#### Tax Rates (Stawki podatkowe) {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Template Filters (Filtry szablonów)
+### Template Filters (Filtry szablonów) {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Limitation Filters (Filtry ograniczeń)
+### Limitation Filters (Filtry ograniczeń) {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway Filters (Filtry bramki płatności)
+### Gateway Filters (Filtry bramki płatności) {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout Form Fields (Pola formularza realizacji zamówienia)
+### Checkout Form Fields (Pola formularza realizacji zamówienia) {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Email Content (Treść e-maila)
+### Email Content (Treść e-maila) {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

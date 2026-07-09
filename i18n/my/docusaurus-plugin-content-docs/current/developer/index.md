@@ -3,11 +3,11 @@ title: developer documentation
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Developer Documentation
+# Developer Documentation {#developer-documentation}
 
 ဒီလမ်းညွှန်က Ultimate Multisite အတွက် Addons တွေနဲ့ ပေါင်းစပ်ဖို့၊ ချဲ့ထွင်ဖို့ ဒါမှမဟုတ် အသစ်တည်ဆောက်ဖို့ လိုအပ်တဲ့ အရာအားလုံးကို developer တွေအတွက် ပေးထားပါတယ်။ Ultimate Multisite ဟာ WordPress Multisite network တစ်ခုလုံးကို Website-as-a-Service (WaaS) platform တစ်ခုအဖြစ် ပြောင်းလဲပေးပါတယ်။
 
-## What's Available
+## What's Available {#whats-available}
 
 - **[REST API](./rest-api/overview)** — API key authentication နဲ့ အသုံးပြုနိုင်တဲ့ customer, site, membership, payment, product, domain စတဲ့ အချက်အလက်အစု (entities) အားလုံးအတွက် CRUD လုပ်ဆောင်ချက် အပြည့်အစုံ။
 - **[Hooks Reference](./hooks/guide)** — ဘဝသံသရာ အဖြစ်အပျက်တွေနဲ့ စိတ်ကြိုက်ပြင်ဆင်မှုတွေအတွက် action hooks ၂၀၀ ကျော်နဲ့ filter hooks ၂၈၀ ကျော်။
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Code Examples](./code-examples/)** — dynamic pricing၊ site provisioning၊ custom limitations နဲ့ multi-gateway processing တွေအတွက် အဆင့်မြင့် ပုံစံများ။
 - **[Addon Development](./addon-development/getting-started)** — Addon plugin တွေ တည်ဆောက်ဖို့အတွက် စနစ်တကျ စီစဉ်ပေးထားတဲ့ framework။
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress Multisite တပ်ဆင်ထားခြင်း
 - PHP 7.4 သို့မဟုတ် အထက်
 - Ultimate Multisite plugin ကို activate လုပ်ထားခြင်း
 
-## Composer / Bedrock Installation
+## Composer / Bedrock Installation {#composer--bedrock-installation}
 
 Ultimate Multisite ကို [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) မှာ `ultimate-multisite/ultimate-multisite` အနေနဲ့ ရရှိနိုင်ပါတယ်။ ဒါဟာ [Bedrock](https://roots.io/bedrock/)-အခြေခံ WordPress setup တွေနဲ့ Composer စီမံခန့်ခွဲတဲ့ ပတ်ဝန်းကျင်တွေအတွက် အကြံပြုထားတဲ့ တပ်ဆင်နည်းပဲ ဖြစ်ပါတယ်။
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Quick Start
+## Quick Start {#quick-start}
 
-### Use the REST API
+### Use the REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Hook into Events
+### Hook into Events {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Build an Addon
+### Build an Addon {#build-an-addon}
 
 ```bash
 # Generate addon scaffold from the template

@@ -3,11 +3,11 @@ title: WP-CLI 参考
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI 参考手册
+# WP-CLI 参考手册 {#wp-cli-reference}
 
 Gratis AI Agent 提供了一个 `wp gratis-ai-agent` 命令家族，用于从命令行执行代理（agent）基准测试、管理能力（abilities）和查询代理状态。所有命令都需要 WP-CLI 2.0 或更高版本。
 
-## 安装
+## 安装 {#installation}
 
 当插件激活时，WP-CLI 命令会自动注册。请使用以下命令进行验证：
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 运行代理能力基准测试套件——这是一组复杂的、多步骤的提示，用于测试代理的全部能力范围。您可以使用此命令来评估模型性能、比较不同的 AI 提供商，或在部署到生产环境之前验证能力包。
 
-### 语法
+### 语法 {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### 选项
+### 选项 {#options}
 
 | 选项 | 描述 |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | 输出格式：`table`（默认）、`json`、`csv` |
 | `--save` | 将基准测试结果保存到数据库，以便进行历史比较 |
 
-### 示例
+### 示例 {#examples}
 
 使用当前配置的提供商和模型运行完整的基准测试套件：
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### 输出
+### 输出 {#output}
 
 基准测试会为每个问题输出一行，包含以下列：
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### 基准测试问题
+### 基准测试问题 {#benchmark-questions}
 
 默认套件包括：
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 用于管理已安装的能力和能力包。
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 列出所有已注册的能力、它们的来源（核心或能力包）以及当前的状态。
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 从注册表中下载并激活一个能力包。
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 禁用特定的能力，但不会移除整个能力包。这对于限制代理在特定网站上的作用范围非常有用。
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 重新启用之前禁用的能力。
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 显示当前的代理配置和连接状态。
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 显示来自调试日志的最近的代理活动记录。
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 重置代理状态：清除注入的 CSS、移除代理注册的 CPT 和分类法、重置全局样式，并清空代理的选项缓存。此操作不会移除插件或其设置。
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## 退出代码
+## 退出代码 {#exit-codes}
 
 所有命令成功时退出代码为 `0`。非零退出代码：
 

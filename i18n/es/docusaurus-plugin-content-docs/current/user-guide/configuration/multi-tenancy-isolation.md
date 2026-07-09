@@ -3,11 +3,11 @@ title: Aislamiento Multi-inquilino
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Aislamiento Multi-Tenencia
+# Aislamiento Multi-Tenencia {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 soporta el aislamiento de bases de datos y sistemas de archivos por subsitio para inquilinos soberanos. Esto mantiene los datos del inquilino separados mientras se conserva el aprovisionamiento a nivel de red, la facturación y la administración.
 
-## Estrategia de aislamiento
+## Estrategia de aislamiento {#isolation-strategy}
 
 Utiliza el aislamiento soberano para clientes que requieran una separación de datos más estricta, almacenamiento dedicado del sistema de archivos o un límite de host separado.
 
@@ -18,7 +18,7 @@ Cada inquilino soberano debe tener:
 - Una entrada en el registro del inquilino que mapee el sitio a su base de datos, ruta raíz, nombre de host y modelo de aislamiento.
 - Un resultado de verificación de migración antes de que se considere activo el inquilino.
 
-## Vinculación del host de la base de datos
+## Vinculación del host de la base de datos {#database-host-binding}
 
 La versión 1.2.0 cambia el comportamiento predeterminado de vinculación de host en la misma máquina para instalaciones soberanas. Los valores de la misma máquina, como `localhost`, se normalizan para que Bedrock, FrankenPHP e instalaciones de WordPress contenerizadas puedan otorgar y verificar permisos contra la cadena de host que MySQL realmente ve.
 
@@ -31,11 +31,11 @@ Al configurar un inquilino soberano:
 
 Si la verificación reporta fallos en los permisos, compara los permisos del usuario de la DB del inquilino con la vinculación del host configurada. Un usuario concedido para `user@localhost` es diferente a `user@127.0.0.1` o `user@%`.
 
-## Raíz del sistema de archivos
+## Raíz del sistema de archivos {#filesystem-root}
 
 La raíz del inquilino debe ser estable después de reinicios y despliegues. Evita rutas de montaje temporales. Para instalaciones estilo Bedrock, confirma que la raíz del inquilino apunte a la raíz web de WordPress esperada por el bootstrap del inquilino, no solo a la raíz del proyecto.
 
-## Orden de aprovisionamiento
+## Orden de aprovisionamiento {#provisioning-order}
 
 Para nuevos inquilinos soberanos, utiliza este orden:
 
@@ -49,7 +49,7 @@ Para nuevos inquilinos soberanos, utiliza este orden:
 
 Este orden evita que los inquilinos parcialmente aislados reciban tráfico antes de que el escritor de base de datos, los usuarios y el sistema de archivos estén listos.
 
-## Flujos de gestión de clientes soberanos
+## Flujos de gestión de clientes soberanos {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 mantiene las acciones de gestión de clientes en el sitio principal cuando el modo soberano está habilitado. Un inquilino aún puede funcionar como una instalación de WordPress aislada, pero las acciones orientadas al cliente que dependan de facturación de red, membresía o datos de cuentas compartidas deben redirigir al cliente al sitio principal en lugar de intentar completar la acción dentro del tiempo de ejecución (runtime) del inquilino.
 

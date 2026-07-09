@@ -3,7 +3,7 @@ title: Wizard di configurazione Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Wizard di configurazione Multisite
+# Wizard di configurazione Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite include un wizard integrato che converte automaticamente un'installazione standard di WordPress in una rete WordPress Multisite. Ciò elimina la necessità di modificare manualmente `wp-config.php` o eseguire comandi sul database.
 
@@ -11,13 +11,13 @@ Ultimate Multisite include un wizard integrato che converte automaticamente un'i
 Se la tua installazione WordPress è già in esecuzione come rete Multisite, puoi saltare completamente questo passaggio. Il wizard appare solo quando Multisite non è ancora abilitato.
 :::
 
-## Quando appare il wizard?
+## Quando appare il wizard? {#when-does-the-wizard-appear}
 
 Quando attivi Ultimate Multisite su un'installazione WordPress standard (non Multisite), il plugin rileva che Multisite non è abilitato e ti reindirizza automaticamente al Wizard di configurazione Multisite invece del wizard di configurazione regolare.
 
 Puoi anche accedervi direttamente su **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Prerequisiti
+## Prerequisiti {#prerequisites}
 
 Prima di eseguire il wizard, assicurati che:
 
@@ -29,7 +29,7 @@ Prima di eseguire il wizard, assicurati che:
 Il wizard modifica il tuo file `wp-config.php` e crea nuove tabelle del database. Crea sempre un backup prima di procedere.
 :::
 
-## Passo 1: Benvenuto
+## Passo 1: Benvenuto {#step-1-welcome}
 
 La prima schermata spiega cos'è WordPress Multisite e cosa farà il wizard:
 
@@ -42,11 +42,11 @@ La prima schermata spiega cos'è WordPress Multisite e cosa farà il wizard:
 
 Fai clic su **Continue** per procedere.
 
-## Passo 2: Configurazione della rete
+## Passo 2: Configurazione della rete {#step-2-network-configuration}
 
 Questo passaggio ti chiede di configurare le impostazioni della tua rete.
 
-### Struttura del sito
+### Struttura del sito {#site-structure}
 
 Scegli come saranno organizzati i siti della tua rete:
 
@@ -57,11 +57,11 @@ Scegli come saranno organizzati i siti della tua rete:
 Se scegli i sottodomini, dovrai configurare **DNS wildcard** e un **certificato SSL wildcard** per il tuo dominio. La maggior parte degli host WordPress gestiti lo gestisce automaticamente. Vedi [Ultimate Multisite 101](./ultimate-multisite-101) per un confronto dettagliato.
 :::
 
-### Titolo della rete
+### Titolo della rete {#network-title}
 
 Inserisci un nome per la tua rete. Per impostazione predefinita è il titolo del tuo sito corrente con "Network" aggiunto. Puoi cambiarlo successivamente dalle impostazioni della rete.
 
-### Email dell'amministratore della rete
+### Email dell'amministratore della rete {#network-admin-email}
 
 L'indirizzo email utilizzato per le notifiche di amministrazione della rete. Per impostazione predefinita è l'indirizzo email dell'utente corrente.
 
@@ -69,7 +69,7 @@ L'indirizzo email utilizzato per le notifiche di amministrazione della rete. Per
 
 Dopo aver compilato i campi, fai clic su **Continue** per procedere.
 
-## Passo 3: Installazione
+## Passo 3: Installazione {#step-3-installation}
 
 Fai clic sul pulsante **Install** per iniziare. Il wizard esegue cinque passaggi automatizzati in sequenza, ognuno dei quali mostra il suo progresso in tempo reale:
 
@@ -96,7 +96,7 @@ Una volta che tutti i passaggi sono completati con successo, vedrai uno stato ve
 
 Il wizard proseguirà quindi automaticamente alla schermata di completamento.
 
-## Passo 4: Completato
+## Passo 4: Completato {#step-4-complete}
 
 Una volta completata l'installazione, vedrai un messaggio di successo che conferma che WordPress Multisite è stato abilitato.
 
@@ -108,7 +108,7 @@ Ora puoi continuare con il wizard di configurazione Ultimate Multisite per confi
 Dopo che l'installazione multisite è completata, il tuo browser si reindirizzerà attraverso l'amministratore di rete appena abilitato. Potrebbe essere necessario accedere nuovamente poiché i cookie di autenticazione sono stati aggiornati per l'ambiente multisite.
 :::
 
-## Configurazione manuale di fallback
+## Configurazione manuale di fallback {#manual-setup-fallback}
 
 Se il wizard non può scrivere sul tuo file `wp-config.php` (a causa di permessi di file o restrizioni del server), mostrerà il codice esatto che devi aggiungere manualmente:
 
@@ -117,9 +117,9 @@ Se il wizard non può scrivere sul tuo file `wp-config.php` (a causa di permessi
 
 Dopo aver apportato le modifiche manuali, ricarica la pagina e il wizard rileverà che il multisite è ora attivo.
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
-### Il wizard indica che wp-config.php non è scrivibile
+### Il wizard indica che wp-config.php non è scrivibile {#the-wizard-says-wp-configphp-is-not-writable}
 
 Il processo del tuo server web ha bisogno di permessi di scrittura sul file `wp-config.php`. Puoi:
 
@@ -127,7 +127,7 @@ Il processo del tuo server web ha bisogno di permessi di scrittura sul file `wp-
 - Utilizzare le istruzioni di fallback per la configurazione manuale fornite dal wizard
 - Chiedere assistenza al tuo provider di hosting
 
-### I siti non sono accessibili dopo l'installazione (sottodomini)
+### I siti non sono accessibili dopo l'installazione (sottodomini) {#sites-are-not-accessible-after-setup-subdomains}
 
 Se hai scelto la struttura a sottodominio, devi configurare il **DNS wildcard** per il tuo dominio. Aggiungi un record DNS:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Verifica con il tuo provider di hosting se non sei sicuro di come configurarlo.
 
-### Problemi di autenticazione dopo l'installazione
+### Problemi di autenticazione dopo l'installazione {#authentication-issues-after-setup}
 
 Se sei disconnesso o riscontri errori di cookie dopo l'installazione multisite:
 
@@ -147,7 +147,7 @@ Se sei disconnesso o riscontri errori di cookie dopo l'installazione multisite:
 2. Accedi nuovamente su `tuodominio.com/wp-login.php`
 3. Se il problema persiste, verifica che il tuo `wp-config.php` non abbia `COOKIE_DOMAIN` impostato su `false` — si tratta di un problema noto nelle installazioni multisite a sottodominio
 
-### Un passaggio è fallito durante l'installazione
+### Un passaggio è fallito durante l'installazione {#a-step-failed-during-installation}
 
 Se uno dei passaggi di installazione mostra un errore:
 

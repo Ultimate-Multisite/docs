@@ -3,13 +3,13 @@ title: Krei Discount Kodojn
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kreado Dekonto Kodoj (v2)
+# Kreado Dekonto Kodoj (v2) {#creating-discount-codes-v2}
 
 _**IMPORTANTE NOTO: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x.**_
 
 Con Ultimate Multisite vi povas krei deonto kodojn por doni al viaj klientoj diskonto sur siaj subskriboj. Kaj ilia kreado estas facila!
 
-## Kreado kaj Edito de Deonto Kodoj
+## Kreado kaj Edito de Deonto Kodoj {#creating-and-editing-discount-codes}
 
 Por krei aŭ modifi deonto kodon, dirigi al **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ La kupon nun estas sur via listo kaj de tie vi povas kliki por **editu aŭ dili*
 
 ###
 
-### Uzo de URL-parametroj:
+### Uzo de URL-parametroj: {#using-url-parameters}
 
 Se vi volas personalizi viajn preco-tablojn aŭ konstrui belan paĝon por kupon kodojn por via ĉezen sitio kaj volas apliki tiun kupon kodon al via checkout formo aŭtomate, vi povas fari tion per URL-parametroj.
 

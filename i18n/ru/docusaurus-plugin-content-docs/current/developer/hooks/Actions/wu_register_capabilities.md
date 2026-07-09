@@ -4,20 +4,20 @@ title: Действие - wu_register_capabilities
 sidebar_label: wu_register_capabilities
 _i18n_hash: 9b32e061f2a98a4c1bd30af0badd5760
 ---
-# Действие: wu_register_capabilities
+# Действие: wu_register_capabilities {#action-wuregistercapabilities}
 
 Вызывает событие, позволяющее дополнениям прикреплять модули возможностей к интеграциям.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | Экземпляр реестра. |
 
-### С версии
+### С версии {#since}
 
 - 2.5.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/integrations/class-integration-registry.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/integrations/class-integration-registry.php#L148) на строке 148

@@ -3,9 +3,9 @@ title: Ultimate AI Connector 兼容端點更新日誌
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector 兼容端點更新日誌
+# Ultimate AI Connector 兼容端點更新日誌 {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — 發布日期 2026-04-24
+## Version 2.0.0 — 發布日期 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * 新增：多供應商支援 — 可設定多個 AI 端點，並自動在供應商之間路由請求和備援。
 * 修復：多供應商 SDK 整合，修正了每個供應商的正確 ID、註冊 URL 和 HTTP 過濾範圍。
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * 修復：移除了在每次頁面載入時觸發的阻塞式 HTTP 請求。
 * 改進：GitHub Actions 工作流程已升級至 Node.js 24。
 
-## Version 1.0.0 — 初版發布
+## Version 1.0.0 — 初版發布 {#version-100--initial-release}

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints integrerar OpenAI-kompatibla AI-leverantörers API:er med ditt WordPress multisite-nätverk. Konfigurera flera AI-leverantörer – var och en med sin egen endpoint-URL, API-nyckel och standardmodell – och dirigera förfrågningar med automatisk fallback när en leverantör är otillgänglig.
 
-## Key Features
+## Key Features {#key-features}
 
 - **Multi-provider support**: Lägg till flera AI-leverantörskort, var och en med sin egen endpoint-URL, API-nyckel och standardmodell
 - **Drag-to-reorder**: Arrangera leverantörerna efter prioritet med hjälp av grepphandtaget på varje kort; förfrågningar använder leverantörerna i ordning
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints integrerar OpenAI-kompatibla AI-l
 - **Auto-expand on add**: Nya leverantörskort expanderar automatiskt så att du kan fylla i detaljerna direkt
 - **Script cache busting**: Leverantörsskript cache-bryts vid plugin-uppdatering för att säkerställa att den senaste versionen laddas
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 eller högre
 - PHP 7.4 eller högre
 - Ultimate Multisite plugin (aktiverat)
 - En OpenAI-kompatibel API-endpoint (självhostad eller tredjepart)
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp addon-filerna till din `/wp-content/plugins/` katalog
 2. Aktivera pluginet via menyn 'Plugins' i WordPress
 3. Navigera till **Ultimate Multisite → AI Connector** för att konfigurera addon
 
-## Configuration
+## Configuration {#configuration}
 
-### Multi-Provider Setup
+### Multi-Provider Setup {#multi-provider-setup}
 
 Konfigurationsskärmen använder ett kortbaserat layout där varje kort representerar en AI-leverantör. Du kan lägga till så många leverantörer som du behöver.
 
-#### Adding a Provider
+#### Adding a Provider {#adding-a-provider}
 
 1. Gå till **Ultimate Multisite → AI Connector** i nätverksadministratören
 2. Klicka på **Add Provider**
@@ -52,15 +52,15 @@ Konfigurationsskärmen använder ett kortbaserat layout där varje kort represen
    - **Default Model** — modellidentifieraren som ska användas som standard för denna leverantör (t.ex. `gpt-4o`, `mistral-small`)
 5. Klicka på **Save Settings**
 
-#### Removing a Provider
+#### Removing a Provider {#removing-a-provider}
 
 Klicka på knappen **Remove** på vilket leverantörskort som helst för att ta bort det. Spara inställningarna för att tillämpa ändringen.
 
-#### Reordering Providers
+#### Reordering Providers {#reordering-providers}
 
 Dra i ikonen (⣿) på vänster sida av vilket leverantörskort som helst för att ändra ordningen. Ordningen bestämmer fallback-prioriteten: förfrågningar skickas till den första leverantören och faller tillbaka till efterföljande leverantörer om en förfrågan misslyckas.
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 Om en förfrågan till den primära leverantören misslyckas – på grund av en timeout, rate limit eller driftstörning – försöker connectorn automatiskt igen med nästa leverantör i listan. Detta fortsätter neråt i listan tills en leverantör lyckas eller tills alla leverantörer har testats.
 
@@ -72,7 +72,7 @@ Om en förfrågan till den primära leverantören misslyckas – på grund av en
 
 Fallback är transparent för det anropande pluginet eller temat – de får antingen ett lyckat svar eller ett slutgiltigt fel, oavsett hur många leverantörer som testats.
 
-### Provider Configuration Reference
+### Provider Configuration Reference {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Fallback är transparent för det anropande pluginet eller temat – de får ant
 | API Key | Yes | Autentisering nyckel för denna leverantör |
 | Default Model | Yes | Modellidentifierare som används när ingen modell specificeras i förfrågan |
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### No providers are listed
+### No providers are listed {#no-providers-are-listed}
 
 Om leverantörslistan är tom efter sparande, bekräfta att:
 
@@ -91,21 +91,21 @@ Om leverantörslistan är tom efter sparande, bekräfta att:
 - Din webbläsare inte blockerade sparandet av inställningssidan (kontrollera webbläsarens konsol efter JavaScript-fel)
 - Pluginet är aktivt och du befinner dig på nätverksadministratörssidan
 
-### Requests are failing for all providers
+### Requests are failing for all providers {#requests-are-failing-for-all-providers}
 
 - Verifiera att varje leverantörs endpoint-URL är nåbar från din server (inte bara från din webbläsare)
 - Kontrollera att varje API-nyckel är giltig och inte har gått ut
 - Granska leverantörens rate-limit och kvotstatus i deras dashboard
 - Aktivera WordPress debug logging (`WP_DEBUG_LOG`) för att fånga detaljerade felmeddelanden från connectorn
 
-### A provider is not being used for fallback
+### A provider is not being used for fallback {#a-provider-is-not-being-used-for-fallback}
 
 Drag-to-reorder ändrar fallback-ordningen. Bekräfta att leverantören du förväntar dig att få fallback-förfrågningar är korrekt placerad i listan och att dess endpoint-URL och API-nyckel är korrekta.
 
-### New provider card does not expand automatically
+### New provider card does not expand automatically {#new-provider-card-does-not-expand-automatically}
 
 Auto-expand kräver att JavaScript är aktiverat i din webbläsare. Om kortet inte expanderar vid klick, kontrollera webbläsarens konsol efter fel. Kortinnehållet är alltid tillgängligt genom att klicka på kortets rubrik även om auto-expand inte utlöses.
 
-## Changelog
+## Changelog {#changelog}
 
 Se [Changelog](./changelog) för hela versionshistoriken.

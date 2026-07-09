@@ -3,7 +3,7 @@ title: Apakah WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Apakah WordPress Multisite?
+# Apakah WordPress Multisite? {#what-is-wordpress-multisite}
 
 Dalam teras WordPress, terdapat satu ciri yang dipanggil 'Multisite' yang bermula sejak tahun 2010 ketika pelancaran WordPress 3.0. Sejak itu, ia telah melalui beberapa pengemaskinian yang bertujuan untuk memperkenalkan ciri-ciri baharu dan memperketatkan keselamatan.
 
@@ -11,7 +11,7 @@ Secara ringkasnya, WordPress multisite boleh difahami seperti ini: Sebuah univer
 
 ## 
 
-## Apakah Sebenarnya WordPress Multisite?
+## Apakah Sebenarnya WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite adalah ciri WordPress yang membolehkan beberapa laman berkongsi satu pemasangan WordPress yang sama. Apabila multisite diaktifkan, laman WordPress asal akan ditukar untuk menyokong apa yang biasanya dirujuk sebagai **rangkaian laman**.
 
@@ -23,7 +23,7 @@ Hakikat ini merupakan salah satu kelebihan utama multisite, kerana ia membolehka
 
 ## 
 
-## Subdomain atau Subdirektori?
+## Subdomain atau Subdirektori? {#subdomain-or-subdirectory}
 
 Terdapat dua mod untuk menjalankan WordPress multisite – dan anda perlu memilih satu ketika menukarkan pemasangan WordPress biasa anda kepada pemasangan multisite:
 
@@ -49,7 +49,7 @@ Salah satu cabaran utama dalam menyediakan mod subdomain adalah liputan SSL (HTT
 
 Berbeza dengan mod subdirektori, sublaman dalam rangkaian berasaskan subdomain dianggap oleh enjin carian sebagai laman web yang berasingan, yang bermakna kandungan yang ada pada satu sublaman tidak akan mengganggu prestasi SEO sublaman lain sama sekali.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Pemasangan WordPress satu laman membolehkan anda menambah bilangan pengguna yang tidak terhad dan memberikan pengguna tersebut peranan pengguna yang berbeza dengan kebenaran yang berbeza.
 
@@ -63,7 +63,7 @@ Plugin dan tema hanya boleh dipasang atau dinyahpasang dari panel admin rangkaia
 
 _Nota: seperti yang anda lihat, menjemput seseorang ke rangkaian anda dan memberikan mereka status super admin memberikan pengguna ini kawalan penuh ke atas rangkaian anda. Sebagai contoh, super admin lain malah boleh mengeluarkan status super admin anda, yang secara berkesan mengunci anda daripada panel admin rangkaian anda sendiri. Untuk membolehkan pelanggan Ultimate Multisite mempunyai kawalan terperinci ke atas apa yang super admin tambahan boleh lakukan, kami mempunyai add-on yang dipanggil Support Agents. Add-on ini membolehkan anda mencipta satu lagi jenis pengguna – agent – dengan hanya kebenaran yang mereka perlukan untuk melaksanakan tugas mereka dalam rangkaian._
 
-## Apa yang dikongsi antara sublaman dan apa yang tidak
+## Apa yang dikongsi antara sublaman dan apa yang tidak {#what-is-shared-among-subsites-and-what-is-not}
 
 Seperti yang kami nyatakan sebelum ini, salah satu kelebihan utama WordPress multisite adalah semua sublaman berkongsi konfigurasi, fail teras, tema, plugin, fail teras WordPress, dan sebagainya yang sama.
 
@@ -75,7 +75,7 @@ Walau bagaimanapun, terdapat elemen yang dihadkan dengan baik pada asas setiap s
 
 \- Kebanyakan jadual pangkalan data dicipta untuk setiap sublaman, bermakna catatan, komen, halaman, tetapan, dan lain-lain adalah terhad untuk setiap sublaman.
 
-## Pengurusan pengguna dalam WordPress Multisite
+## Pengurusan pengguna dalam WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Satu subjek yang sensitif dalam WordPress multisite adalah pengurusan pengguna. Jadual pengguna WordPress adalah antara sedikit yang dikongsi bersama oleh semua sublaman.
 
@@ -99,7 +99,7 @@ _Nota: Kami sedar betapa buruknya ini bergantung pada kes penggunaan anda, jadi 
 
 Walaupun jadual pengguna dikongsi, pengguna boleh ditambah kepada dan dikeluarkan daripada sublaman oleh admin sublaman atau super admin, dan mereka juga boleh mempunyai peranan pengguna yang berbeza pada sublaman yang berbeza.
 
-## Pertimbangan prestasi
+## Pertimbangan prestasi {#performance-considerations}
 
 WordPress multisite sangat berkuasa dari segi bilangan laman yang boleh disokongnya. Ini boleh dibuktikan dengan fakta bahawa [WordPress.com](https://WordPress.com), Edublogs, dan Campuspress semuanya adalah perkhidmatan berasaskan multisite dan masing-masing mengehoskan beribu-ribu laman.
 

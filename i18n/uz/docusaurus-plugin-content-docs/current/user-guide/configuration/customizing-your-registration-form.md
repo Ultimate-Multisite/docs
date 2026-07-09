@@ -3,13 +3,13 @@ title: Ro‘yxatdan o‘tish formangizni moslashtirish
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ro‘yxatdan o‘tish formingizni moslashtirish
+# Ro‘yxatdan o‘tish formingizni moslashtirish {#customizing-your-registration-form}
 
 WordPress platformasida qurilgan boshqa barcha SaaS'lardan tarmog‘ingiz o‘ziga xos ko‘rinishi uchun Ultimate Multisite ro‘yxatdan o‘tish va login sahifalaringizni **Checkout Forms** xususiyatimiz orqali moslashtirish imkonini beradi.
 
 Ular yangi mijozlarni jalb qilishda turli yondashuvlarni sinab ko‘rish uchun oson va moslashuvchan usul bo‘lsa-da, asosan shaxsiylashtirilgan ro‘yxatdan o‘tish formalarini yaratish uchun ishlatiladi. Ushbu maqola buni qanday qilishingiz mumkinligini ko‘rsatishni maqsad qiladi.
 
-## Login va ro‘yxatdan o‘tish sahifalari:
+## Login va ro‘yxatdan o‘tish sahifalari: {#login-and-registration-pages}
 
 Ultimate Multisite o‘rnatilganda, u asosiy saytingizda avtomatik ravishda maxsus login va ro‘yxatdan o‘tish sahifalarini yaratadi. Ushbu standart sahifalarni istalgan vaqtda **Ultimate Multisite > Settings > Login & Registration** sahifangizga o‘tib o‘zgartirishingiz mumkin.
 
@@ -45,7 +45,7 @@ Endi login va ro‘yxatdan o‘tish jarayoniga hali ham tegishli bo‘lgan boshq
 
 Login va ro‘yxatdan o‘tishga oid moslashtirishingiz mumkin bo‘lgan barcha variantlar shular! Ularni tahrirlashni tugatgach, sozlamalaringizni saqlashni unutmang.
 
-## Bir nechta ro‘yxatdan o‘tish formalaridan foydalanish:
+## Bir nechta ro‘yxatdan o‘tish formalaridan foydalanish: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 sizga turli maydonlar, taklifdagi mahsulotlar va hokazolar bilan istaganingizcha ko‘p forma yaratish imkonini beruvchi checkout form muharririni taklif qiladi.
 
@@ -69,7 +69,7 @@ Shuningdek, mavjud formalaringizni nomi ostidagi variantlarni bosish orqali tahr
 
 Agar bitta bosqich yoki ko‘p bosqichlini tanlasangiz, checkout form ishlashi uchun kerakli asosiy bosqichlar bilan oldindan to‘ldirilgan bo‘ladi. Keyin, xohlasangiz, unga qo‘shimcha bosqichlar qo‘shishingiz mumkin.
 
-### Checkout Form'ni tahrirlash:
+### Checkout Form'ni tahrirlash: {#editing-a-checkout-form}
 
 Avval aytib o‘tganimizdek, turli maqsadlar uchun checkout formalar yaratishingiz mumkin. Bu misolda biz ro‘yxatdan o‘tish formasi ustida ishlaymiz.
 
@@ -131,11 +131,11 @@ Formangiz shortcode’ini olish uchun **Shortcode yaratish** tugmasini bosing va
 
 _**Eslatma:** Bu rasmiylashtirish formasini ro‘yxatdan o‘tish sahifangizga qo‘shish uchun ushbu shortcode’ni o‘sha sahifaga qo‘shishingiz kerak bo‘ladi._
 
-## Mahsulotlar va shablonlarni URL parametrlari orqali oldindan tanlash:
+## Mahsulotlar va shablonlarni URL parametrlari orqali oldindan tanlash: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Agar mahsulotlaringiz uchun moslashtirilgan narxlar jadvallarini yaratmoqchi va mijozingiz narxlar jadvali yoki shablonlar sahifasidan tanlagan mahsulot yoki shablonni rasmiylashtirish formasida oldindan tanlamoqchi bo‘lsangiz, buning uchun URL parametrlaridan foydalanishingiz mumkin.
 
-### **Rejalar uchun:**
+### **Rejalar uchun:** {#for-plans}
 
 **Ultimate Multisite > Mahsulotlar > Rejani tanlash** bo‘limiga o‘ting. Sahifaning yuqori qismida **Ulashiladigan havolani nusxalash uchun bosing** tugmasini ko‘rishingiz kerak. Bu aynan shu rejani rasmiylashtirish formangizda oldindan tanlash uchun foydalanishingiz mumkin bo‘lgan havola.
 
@@ -143,7 +143,7 @@ Agar mahsulotlaringiz uchun moslashtirilgan narxlar jadvallarini yaratmoqchi va 
 
 E’tibor bering, bu ulashiladigan havola faqat **Rejalar** uchun amal qiladi. Paketlar yoki xizmatlar uchun ulashiladigan havolalardan foydalana olmaysiz.
 
-### Shablonlar uchun:
+### Shablonlar uchun: {#for-templates}
 
 Agar rasmiylashtirish formangizda sayt shablonlarini oldindan tanlamoqchi bo‘lsangiz, ro‘yxatdan o‘tish sahifangiz URL manzilida ushbu parametrdan foydalanishingiz mumkin: **?template_id=X**. "X" **sayt shabloni ID raqami** bilan almashtirilishi kerak. Bu raqamni olish uchun **Ultimate Multisite > Saytlar** bo‘limiga o‘ting.
 

@@ -3,9 +3,9 @@ title: Kòmanse ak devlopman ekstansyon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Devlopman ekstansyon
+# Devlopman ekstansyon {#addon-development}
 
-## Estrikti ekstansyon
+## Estrikti ekstansyon {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Modèl fichye prensipal ekstansyon an
+## Modèl fichye prensipal ekstansyon an {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Egzanp modèl pèsonalize
+## Egzanp modèl pèsonalize {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Entegrasyon paj admin
+## Entegrasyon paj admin {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Teste Addon Ou a
+## Teste Addon Ou a {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Pwen ekstansyon v2.13.0
+## Pwen ekstansyon v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 ajoute plizyè pwen ekstansyon ki itil pou addon ki entegre ak lokatè souveren, domèn checkout, oswa otomasyon DNS founisè hosting.
 
-### SSO ak URL jesyon sit prensipal
+### SSO ak URL jesyon sit prensipal {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Domèn baz fòm checkout
+### Domèn baz fòm checkout {#checkout-form-base-domains}
 
 Sèvi ak `wu_checkout_form_base_domains` lè addon ou a bay domèn baz pataje anplis ki ta dwe konpòte yo tankou domèn **URL Sit** fòm checkout olye de katografi pèsonalize pou chak sit:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite nòmalize host sa yo epi li sote anrejistreman otomatik domèn ki katografye pou chak sit pou yo.
 
-### Kreyasyon otomatik anrejistreman domèn
+### Kreyasyon otomatik anrejistreman domèn {#automatic-domain-record-creation}
 
 Sèvi ak `wu_should_create_domain_record_for_site` lè addon ou a bezwen anpeche oswa ranvwaye kreyasyon otomatik anrejistreman domèn pou yon sit ki fèk kreye:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Entegrasyon founisè hosting ki koute `wu_add_subdomain` kapab kreye anrejistreman DNS bò founisè a lè sit yo kreye. Si pa gen okenn entegrasyon ki anrejistre pou aksyon sa a, Ultimate Multisite sote travay an background vid la.
 
-## Pwochen Etap yo
+## Pwochen Etap yo {#next-steps}
 
 - Revize [Referans Hooks](/developer/hooks) la pou aksyon ak filtè ki disponib
 - Tcheke [Apèsi REST API](/developer/rest-api/overview) a pou entegrasyon API

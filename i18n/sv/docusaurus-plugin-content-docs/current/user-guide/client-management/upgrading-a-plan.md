@@ -3,7 +3,7 @@ title: Uppgradera ett abonnemang
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Uppgradera ett abonnemang (v2)
+# Uppgradera ett abonnemang (v2) {#upgrading-a-plan-v2}
 
 _**VIKTIGT MEDDELANDE: Den här artikeln avser Ultimate Multisite version 2.x.**_
 
@@ -41,7 +41,7 @@ Efter att checkout är slutförd läggs de nya produkterna till på dina kunders
 
 ##
 
-## Uppgraderings- och nedgraderingsvägar
+## Uppgraderings- och nedgraderingsvägar {#upgrade-and-downgrade-paths}
 
 På var och en av dina produkter finns en flik för **Up & Downgrades**. Det första alternativet på den fliken är ett fält som heter **Plan Group**.
 

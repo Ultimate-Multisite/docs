@@ -3,11 +3,11 @@ title: Zpracování webhooků
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Správa webhooků
+# Správa webhooků {#webhook-handling}
 
 Vytvořte vlastní webhookové body (endpoints), abyste přijímal data z externích služeb a synchronizoval je s Ultimate Multisite.
 
-## Vlastní webhookový endpoint
+## Vlastní webhookový endpoint {#custom-webhook-endpoint}
 
 ```php
 // Registrace webhookového endpointu
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Bezpečnostní aspekty
+## Bezpečnostní aspekty {#security-considerations}
 
 *   Vždy ověřte podpisy webhooků pomocí HMAC nebo sdíleného tajného klíče.
 *   Používejte `permission_callback` pro váš REST route — nikdy jej v produkci nastavujte na `__return_true`.

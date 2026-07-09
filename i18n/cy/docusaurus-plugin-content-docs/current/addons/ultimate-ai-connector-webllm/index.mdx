@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Mae Ultimate AI Connector for WebLLM yn dod â chasgliad AI brodorol i’r porwr i’ch rhwydwaith WordPress aml-safle. Mae’n rhedeg modelau iaith mawr yn gyfan gwbl yn y porwr gan ddefnyddio WebLLM a’r injan MLC — dim API keys, dim galwadau allanol, dim data’n gadael dyfais y defnyddiwr.
 
-## Nodweddion Allweddol
+## Nodweddion Allweddol {#key-features}
 
 - **Casgliad ar ochr y porwr**: Mae LLM yn rhedeg yn lleol ym mhorwr yr ymwelydd drwy WebLLM/MLC — dim angen GPU gweinydd
 - **Teclyn sgwrsio arnofiol**: Gall defnyddwyr sydd wedi mewngofnodi anfon prompt at yr LLM ar ochr y porwr yn uniongyrchol o’r pen blaen
@@ -22,28 +22,28 @@ Mae Ultimate AI Connector for WebLLM yn dod â chasgliad AI brodorol i’r porwr
 - **Storfa IndexedDB**: Mae lawrlwythiadau pwysau model yn goroesi ailgyfeiriadau CDN sy’n torri llwybr diofyn Cache API
 - **Integreiddiad hidlydd wpai**: Yn cysylltu â’r hidlydd `wpai_preferred_text_models` fel bod y nodwedd AI Experiments yn llwybro i injan y porwr pan gaiff ei ffurfweddu
 
-## Gofynion
+## Gofynion {#requirements}
 
 - WordPress 5.3 neu uwch
 - PHP 7.4 neu uwch
 - plugin Ultimate Multisite (gweithredol)
 - Porwr â chefnogaeth WebGPU (Chrome 113+, Edge 113+, neu Firefox Nightly gyda WebGPU wedi’i alluogi)
 
-## Gosod
+## Gosod {#installation}
 
 1. Llwythwch ffeiliau’r addon i’ch cyfeiriadur `/wp-content/plugins/`
 2. Actifadu’r plugin drwy’r ddewislen 'Plugins' yn WordPress
 3. Ewch i **Ultimate Multisite → AI Connector** i ffurfweddu’r addon
 
-## Teclyn Sgwrsio Arnofiol
+## Teclyn Sgwrsio Arnofiol {#floating-chat-widget}
 
 Mae’r teclyn sgwrsio arnofiol yn caniatáu i unrhyw ddefnyddiwr sydd wedi mewngofnodi ryngweithio â’r LLM ar ochr y porwr yn uniongyrchol o’ch pen blaen, heb adael y dudalen y maent arni.
 
-### Beth Mae’n Ei Wneud
+### Beth Mae’n Ei Wneud {#what-it-does}
 
 Pan fydd wedi’i alluogi, mae eicon sgwrsio yn ymddangos yng nghornel pob tudalen pen blaen ar gyfer defnyddwyr sydd wedi mewngofnodi. Mae clicio’r eicon yn agor panel sgwrsio lle gall y defnyddiwr deipio prompts a derbyn ymatebion gan y model WebLLM sy’n rhedeg yn lleol. Gan fod y model yn rhedeg yn gyfan gwbl yn y porwr, mae ymatebion yn breifat ac nid ydynt yn cynnwys unrhyw brosesu ar ochr y gweinydd.
 
-### Dangosydd Statws yn y Bar Gweinyddu
+### Dangosydd Statws yn y Bar Gweinyddu {#admin-bar-status-indicator}
 
 Mae bar gweinyddu WordPress yn cynnwys dangosydd statws sy’n dangos cyflwr presennol yr injan WebLLM:
 
@@ -56,7 +56,7 @@ Mae bar gweinyddu WordPress yn cynnwys dangosydd statws sy’n dangos cyflwr pre
 
 Mae’r dangosydd yn diweddaru mewn amser real heb fod angen ail-lwytho’r dudalen.
 
-### Sut i Alluogi neu Analluogi’r Teclyn
+### Sut i Alluogi neu Analluogi’r Teclyn {#how-to-enable-or-disable-the-widget}
 
 1. Ewch i **Ultimate Multisite → AI Connector** yn y gweinyddwr rhwydwaith
 2. Dewch o hyd i’r panel **Connector**
@@ -65,17 +65,17 @@ Mae’r dangosydd yn diweddaru mewn amser real heb fod angen ail-lwytho’r duda
 
 Gellir hefyd alluogi neu analluogi’r teclyn fesul safle o weinyddwr y safle ei hun os yw gweinyddwr y rhwydwaith wedi rhoi’r gallu hwnnw.
 
-## Gosodiadau Teclyn
+## Gosodiadau Teclyn {#widget-settings}
 
 Mae’r panel Connector yn **Ultimate Multisite → AI Connector** yn cynnwys y gosodiadau canlynol ar gyfer y teclyn sgwrsio arnofiol:
 
-### Galluogi Teclyn Sgwrsio Arnofiol
+### Galluogi Teclyn Sgwrsio Arnofiol {#enable-floating-chat-widget}
 
 Yn troi’r teclyn sgwrsio ymlaen neu i ffwrdd ar gyfer y rhwydwaith cyfan. Pan fydd wedi’i analluogi, nid yw’r teclyn yn ymddangos ar unrhyw dudalen pen blaen, waeth beth fo rôl y defnyddiwr.
 
 **Diofyn:** I ffwrdd
 
-### Ymddygiad Auto-Prompt
+### Ymddygiad Auto-Prompt {#auto-prompt-behaviour}
 
 Yn rheoli a yw’r teclyn sgwrsio yn anfon prompt yn awtomatig pan fydd defnyddiwr yn ei agor.
 
@@ -93,7 +93,7 @@ Pan gaiff ei osod i **Prompt personol**, mae maes testun ychwanegol yn ymddangos
 
 **Diofyn:** Analluogwyd
 
-## Amser Rhedeg SharedWorker
+## Amser Rhedeg SharedWorker {#sharedworker-runtime}
 
 Mae fersiwn 1.1.0 yn cyflwyno amser rhedeg SharedWorker ar gyfer yr injan MLC. Yn flaenorol, roedd pob tab porwr a ddefnyddiodd WebLLM yn llwytho ei enghraifft ei hun o’r model, gan gystadlu am gof GPU ac achosi problemau perfformiad ar ddyfeisiau â VRAM cyfyngedig.
 
@@ -105,29 +105,29 @@ Gyda’r amser rhedeg SharedWorker, mae un tab yn gweithredu fel gwesteiwr yr in
 
 Mae’r SharedWorker yn dryloyw i ddefnyddwyr. Mae’r dangosydd statws yn y bar gweinyddu bob amser yn adlewyrchu cyflwr yr injan a rennir, nid y tab unigol.
 
-## Meddalwedd Ganol apiFetch
+## Meddalwedd Ganol apiFetch {#apifetch-middleware}
 
 Mae’r addon yn gosod meddalwedd ganol `apiFetch` sy’n rhyng-gipio ceisiadau WordPress REST API sy’n cyfateb i batrwm AI Client SDK. Yn lle gwneud cais HTTP loopback i’r gweinydd, caiff y ceisiadau hyn eu llwybro’n uniongyrchol i’r brocer WebLLM lleol sy’n rhedeg yn y SharedWorker.
 
 Mae hyn yn golygu y bydd plugins a themâu sy’n defnyddio API safonol WordPress `apiFetch` i alw endpoints AI yn elwa’n awtomatig ar y model ar ochr y porwr pan fydd ar gael, heb fod angen unrhyw newidiadau cod.
 
-## Bachau a Hidlyddion
+## Bachau a Hidlyddion {#hooks-and-filters}
 
-### Hidlyddion
+### Hidlyddion {#filters}
 
 - `wpai_preferred_text_models` — Cofrestru injan porwr WebLLM fel model testun a ffefrir. Mae'r ategyn yn bachu i mewn i'r hidlydd hwn yn awtomatig pan fo'r injan wedi'i ffurfweddu ac ar gael.
 - `ultimate_webllm_widget_enabled` — Gwrthwneud cyflwr galluogi'r teclyn ar gyfer defnyddiwr neu gyd-destun penodol. Dychwelwch `true` neu `false`.
 - `ultimate_webllm_auto_prompt` — Addasu testun yr awto-brompt cyn iddo gael ei anfon i'r teclyn. Mae'n derbyn llinyn y prompt a'r gwrthrych `WP_Post` cyfredol.
 
-## Datrys problemau
+## Datrys problemau {#troubleshooting}
 
-### Nid yw'r teclyn sgwrsio yn ymddangos
+### Nid yw'r teclyn sgwrsio yn ymddangos {#the-chat-widget-does-not-appear}
 
 - Cadarnhewch fod y defnyddiwr wedi mewngofnodi — dim ond i ddefnyddwyr wedi'u dilysu y dangosir y teclyn
 - Gwiriwch fod **Galluogi teclyn sgwrsio arnofiol** wedi'i droi ymlaen yn y panel Connector
 - Gwiriwch fod porwr y defnyddiwr yn cefnogi WebGPU (gweler y Gofynion uchod)
 
-### Mae dangosydd y bar gweinyddu yn dangos "Gwall"
+### Mae dangosydd y bar gweinyddu yn dangos "Gwall" {#the-admin-bar-indicator-shows-error}
 
 Agorwch gonsol datblygwr y porwr (F12) a chwiliwch am wallau sy'n gysylltiedig â WebLLM. Achosion cyffredin:
 
@@ -135,10 +135,10 @@ Agorwch gonsol datblygwr y porwr (F12) a chwiliwch am wallau sy'n gysylltiedig �
 - Methodd lawrlwytho pwysau'r model — gwiriwch gysylltedd rhwydwaith a cheisiwch glirio'r storfa IndexedDB yn offer datblygwr y porwr (Application → IndexedDB)
 - Mae estyniad porwr yn blocio'r SharedWorker
 
-### Mae pwysau'r model yn lawrlwytho bob tro
+### Mae pwysau'r model yn lawrlwytho bob tro {#model-weights-download-every-time}
 
 Mae'r ategyn yn defnyddio IndexedDB fel backend y storfa i sicrhau bod pwysau'r model yn goroesi ailgyfeiriadau CDN. Os yw pwysau'n cael eu hail-lawrlwytho ar bob ymweliad, gwiriwch nad yw IndexedDB yn cael ei glirio gan osodiad preifatrwydd porwr neu estyniad.
 
-## Cofnod newidiadau
+## Cofnod newidiadau {#changelog}
 
 Gweler [Cofnod newidiadau](./changelog) am hanes llawn y fersiynau.

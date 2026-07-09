@@ -3,11 +3,11 @@ title: WP-CLI குறிப்பு
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI குறிப்புப் பக்கம்
+# WP-CLI குறிப்புப் பக்கம் {#wp-cli-reference}
 
 Gratis AI Agent, ஒரு `wp gratis-ai-agent` command family-ஐ வழங்குகிறது. இதை command line-ல் பயன்படுத்தி, agent-ஐ benchmark செய்ய, அதன் abilities-ஐ manage செய்ய, மற்றும் agent-இன் status-ஐ query செய்ய முடியும். அனைத்து commands-க்கும் WP-CLI 2.0 அல்லது அதற்கு மேல் தேவை.
 
-## Installation
+## Installation {#installation}
 
 இந்த WP-CLI commands, plugin active செய்யப்பட்டவுடன் தானாகவே register செய்யப்படும். இதைச் சரிபார்க்க:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 இது Agent Capabilities benchmark suite-ஐ இயக்கும். இது, agent-இன் முழு ability surface-ஐ சோதிக்கும் வகையில் வடிவமைக்கப்பட்ட, சிக்கலான, பல-படி prompt-களின் தொகுப்பாகும். model-இன் performance-ஐ மதிப்பிடுவதற்கும், வெவ்வேறு AI providers-களை ஒப்பிடுவதற்கும், அல்லது production-ல் deploy செய்வதற்கு முன் ability packs-ஐ validate செய்வதற்கும் இதை பயன்படுத்தலாம்.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Options
+### Options {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Output format: `table` (default), `json`, `csv` |
 | `--save` | வரலாற்று ஒப்பீட்டிற்காக benchmark முடிவுகளை database-ல் சேமிக்கவும் |
 
-### Examples
+### Examples {#examples}
 
 தற்போதைய provider மற்றும் model உடன் முழு benchmark suite-ஐ இயக்க:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 benchmark ஆனது, பின்வரும் columns-உடன், ஒவ்வொரு question-க்கும் ஒரு row-ஐ வெளியிடும்:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark Questions
+### Benchmark Questions {#benchmark-questions}
 
 default suite-ல் பின்வருவன அடங்கும்:
 
@@ -95,11 +95,11 @@ default suite-ல் பின்வருவன அடங்கும்:
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 இது நிறுவப்பட்ட abilities மற்றும் ability packs-ஐ manage செய்கிறது.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 பதிவு செய்யப்பட்ட அனைத்து abilities-களையும், அவற்றின் source (core அல்லது pack), மற்றும் அவற்றின் தற்போதைய status-ஐ பட்டியலிடுகிறது.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 இது registry-ல் இருந்து ஒரு ability pack-ஐ download செய்து activate செய்கிறது.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 ஒரு குறிப்பிட்ட ability-ஐ pack-ஐ நீக்காமல் disable செய்கிறது. ஒரு குறிப்பிட்ட site-ல் agent-இன் scope-ஐ கட்டுப்படுத்த இது பயனுள்ளதாக இருக்கும்.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 முன்பு disable செய்யப்பட்ட ability-ஐ மீண்டும் enable செய்கிறது.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 தற்போதைய agent configuration மற்றும் connectivity status-ஐ காட்டுகிறது.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 debug log-ல் இருந்து சமீபத்திய agent activity-ஐ காட்டுகிறது.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 agent state-ஐ reset செய்கிறது: செருகப்பட்ட CSS-ஐ நீக்குகிறது, agent-ஆல் register செய்யப்பட்ட CPTs மற்றும் taxonomies-ஐ நீக்குகிறது, global styles-ஐ reset செய்கிறது, மற்றும் agent-இன் options cache-ஐ காலியாக்குகிறது. இது plugin-ஐ அல்லது அதன் settings-ஐ நீக்காது.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 அனைத்து commands-களும் வெற்றிகரமாக இருந்தால் `0` என exit செய்யும். பூஜ்ஜியமற்ற exit codes:
 

@@ -4,13 +4,13 @@ title: Szűrő - wu_gococardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site
+# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Elkülídik/hívódik meg, mielőtt megsemmisíti egy megยกált GoCardless tagság miatt keletkezett, elhagyatott, függőben lévő oldalt.
 
 Ha visszaadod `false`-t e szűrőben, megakadályozod a törlést.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Ha visszaadod `false`-t e szűrőben, megakadályozod a törlést.
 | $membership | `\WP_Ultimo\Models\Membership` | A megยกált tagság. |
 | $old_status | `string` | Az állapot a megยกálás előtt. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Forrás
+### Forrás {#source}
 
 Definíciója található [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) fájlban, 1086-sorban.

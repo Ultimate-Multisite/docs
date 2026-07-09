@@ -4,11 +4,11 @@ title: Filter - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Filtreerib, kas liitumistasu tuleks rakendada või mitte.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtreerib, kas liitumistasu tuleks rakendada või mitte.
 | $product | `object` | Liikmesuse taseme objekt. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Registreerimise objekt. |
 
-### Alates
+### Alates {#since}
 
 - 3.1
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) real 1769

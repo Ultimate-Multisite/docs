@@ -3,13 +3,13 @@ title: De registratiestroom
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# De registratieflow (v2)
+# De registratieflow (v2) {#the-registration-flow-v2}
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
 Gebruikers kunnen zich op verschillende manieren registreren op je netwerk. Ze kunnen je registratieformulier gebruiken of een deelbare link naar een vooraf geselecteerd plan. Hier laten we zien hoe je klanten zich op je netwerk kunnen registreren via de beschikbare paden en wat er gebeurt nadat ze zich op je netwerk hebben geregistreerd.
 
-## Het registratieformulier gebruiken:
+## Het registratieformulier gebruiken: {#using-the-registration-form}
 
 Dit is het standaard registratieproces. Je maakt een registratiepagina met een **checkoutformulier** en dit is de plek waar je klanten naartoe gaan om zich op je netwerk te registreren en zich op een plan te abonneren. Je kunt meerdere registratiepagina's hebben, elk met een ander registratieformulier als je dat wilt.
 
@@ -35,13 +35,13 @@ Als ze zich hebben geregistreerd voor een betaald plan of als e-mailverificatie 
 
 ![Site geactiveerd met link om in te loggen op dashboard](/img/frontend/site-activated.png)
 
-## Een deelbare link gebruiken:
+## Een deelbare link gebruiken: {#using-a-shareable-link}
 
 Het registratieproces met een deelbare link is in principe hetzelfde als bij het registratieformulier. Het enige verschil is dat je klanten met een deelbare link een product of websitesjabloon vooraf geselecteerd kunnen hebben op het checkoutformulier (zie de sectie Producten en sjablonen vooraf selecteren via URL-parameters) of misschien een couponcode toegevoegd kunnen hebben (zie de sectie URL-parameters gebruiken).
 
 Het registratieproces blijft hetzelfde: ze moeten hun naam, gebruikersnaam, e-mailadres, websitenaam en titel, enz... invullen, maar het plan of sitesjabloon is al vooraf voor hen geselecteerd.
 
-### Registreren met handmatige betalingen:
+### Registreren met handmatige betalingen: {#registering-using-manual-payments}
 
 Als je PayPal, Stripe of een andere betaalgateway die door Ultimate Multisite of de add-on-integraties wordt aangeboden niet wilt gebruiken, kun je handmatige betalingen gebruiken voor je klanten. Op deze manier kun je een factuur voor hen genereren die ze na registratie op je netwerk kunnen betalen via je gewenste betalingsverwerker.
 

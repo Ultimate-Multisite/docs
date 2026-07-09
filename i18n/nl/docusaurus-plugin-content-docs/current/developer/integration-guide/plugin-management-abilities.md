@@ -3,11 +3,11 @@ title: Plugin Beheermogelijkheden
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Functionaliteiten voor Pluginbeheer
+# Functionaliteiten voor Pluginbeheer {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 wordt geleverd met **7 functionaliteiten voor pluginbeheer** die de AI-assistent tijdens een gesprek kan aanroepen. Deze functionaliteiten bieden programmeerbare controle over WordPress plugins die zijn geïnstalleerd via de [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Overzicht van Functionaliteiten
+## Overzicht van Functionaliteiten {#abilities-overview}
 
 | Functionaliteit | Slug | Beschrijving |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 wordt geleverd met **7 functionaliteiten voor pluginbehee
 | Install Plugin | `install_plugin` | Deployt een gesandboxte plugin naar de live WordPress plugin-map. |
 | Activate Plugin | `activate_plugin` | Activeert een gesandboxte plugin in de wp-env sandbox-omgeving. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 De plugin installer beheert bestandsysteemoperaties bij het deployen of verwijderen van plugins. Belangrijkste gedragingen:
 
@@ -28,7 +28,7 @@ De plugin installer beheert bestandsysteemoperaties bij het deployen of verwijde
 - **Update**: Vervangt bestaande pluginbestanden. Deactiveert de plugin voordat deze wordt geschreven om fouten door gedeeltelijke staat te voorkomen.
 - **Verwijderen op basis van slug**: Lokaliseert de plugin-map op basis van de slug, deactiveert deze op alle sites, en verwijdert vervolgens de map.
 
-### Een Aangepaste Installatie Handler Registreren
+### Een Aangepaste Installatie Handler Registreren {#registering-a-custom-install-handler}
 
 U kunt zich aansluiten bij de installatielifecycle met behulp van de acties `gratis_ai_plugin_installer_before_install` en `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 Functionaliteiten worden geregistreerd via de **plugin ecosystem registry**. De registry koppelt ability slugs aan hun handler classes en maakt deze beschikbaar voor de tool dispatcher van de AI-agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Integratie
+## HookScanner Integratie {#hookscanner-integration}
 
 De functionaliteiten `create_plugin` en `update_plugin` voeren automatisch de **HookScanner** uit op de nieuw gegenereerde code. HookScanner retourneert een lijst van WordPress actie- en filterhooks die door de plugin zijn geregistreerd.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner slaat automatisch de `vendor/` en `node_modules/` mappen over.
 
-## Async Job Architectuur
+## Async Job Architectuur {#async-job-architecture}
 
 Langlopende pluginoperaties (genereren, installeren) worden als **async jobs** verstuurd met live voortgangsmonitoring. De AI chatinterface vraagt periodiek naar de voortgang en stuurt statusupdates naar de gebruiker:
 

@@ -3,11 +3,11 @@ title: Integracija višezakupništva
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integracija više zakupaca
+# Integracija više zakupaca {#multi-tenancy-integration}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 mijenja nekoliko integracijskih dodirnih točaka za suverene zakupce, provjeru migracije i automatizaciju životnog ciklusa zakupca.
 
-## Tijek početnog postavljanja zakupca
+## Tijek početnog postavljanja zakupca {#tenant-bootstrap-flow}
 
 Integracije koje stvaraju ili mijenjaju zakupce trebaju slijediti ovaj redoslijed:
 
@@ -20,13 +20,13 @@ Integracije koje stvaraju ili mijenjaju zakupce trebaju slijediti ovaj redoslije
 
 Nemojte pretpostaviti da suvereni zakupac može ponovno upotrijebiti vezu s mrežnom bazom podataka. Upotrijebite registar zakupaca i apstrakcije pisača koje pruža dodatak.
 
-## SSO i REST hookovi
+## SSO i REST hookovi {#sso-and-rest-hooks}
 
 Autologin zakupca bez stanja koristi kratkotrajne tokene s tvrdnjom o svrsi, JTI zaštitom od ponovne reprodukcije, ograničenjem isteka i vezanjem na izvor. Integracije koje dodaju gumbe za prijavu ili poveznice za udaljeno upravljanje trebaju generirati posjete zakupcu putem podržanog SSO tijeka umjesto izravne izrade URL-ova za prijavu zakupca.
 
 API događaji revizije na mrežnoj strani i dnevni sažeci dostupni su za pristupnike suverenih zakupaca. Upotrijebite te zapisnike pri otklanjanju pogrešaka u vanjskim sustavima koji pozivaju endpointove životnog ciklusa zakupca.
 
-## URL-ovi radnji suverenih korisnika
+## URL-ovi radnji suverenih korisnika {#sovereign-customer-action-urls}
 
 Ultimate Multisite v2.13.0 usmjerava radnje korisnika suverenih zakupaca natrag na glavni site za tijekove računa, naplate, obračuna, računa, sitea, promjene predloška i mapiranja domena. Integracije koje prikazuju poveznice za upravljanje na strani zakupca trebaju usmjeriti te radnje na korisničku ploču glavnog sitea i uključiti provjerenu povratnu metu kada bi korisnik trebao moći navigirati natrag do zakupca nakon dovršetka radnje.
 
@@ -40,7 +40,7 @@ Generirani URL ostaje moguće filtrirati putem `wu_sso_url`, koji prima SSO URL,
 
 Nemojte duplicirati stanje članstva, računa, adrese za naplatu, predloška ili upravljanja domenom unutar suverenog zakupca. Tretirajte nadzornu ploču zakupca kao pokretač, a korisničku ploču glavnog sitea kao sustav zapisa za upravljane radnje.
 
-## Provjera migracije
+## Provjera migracije {#migration-verification}
 
 Nakon što migracija ili integracija životnog ciklusa promijeni podatke zakupca, pokrenite provjerne prolaze:
 
@@ -49,10 +49,10 @@ Nakon što migracija ili integracija životnog ciklusa promijeni podatke zakupca
 
 Integracije trebaju tretirati neuspjelu provjeru kao blokator implementacije i izbjegavati označavanje zakupca aktivnim dok se neuspjeh ne riješi.
 
-## Brisanje zakupca
+## Brisanje zakupca {#tenant-deletion}
 
 Tijekovi brisanja trebaju pozvati putanju rastavljanja dodatka kako bi se vjerodajnice baze podataka zakupca očistile. Vanjske integracije mogu ukloniti resurse pružatelja nakon uspješnog rastavljanja, ali ne bi smjele brisati baze podataka ili mape domaćina dok se provjera ili asinkroni push poslovi još izvode.
 
-## Zastarjeli usmjerivač baze podataka
+## Zastarjeli usmjerivač baze podataka {#deprecated-database-router}
 
 Naslijeđeni `Database_Router` zamijenjen je zastarjelim stubom. Nove integracije trebaju razrješavati zakupce putem trenutačnog usmjerivača sitea i API-ja registra zakupaca umjesto da ovise o staroj klasi usmjerivača.

@@ -3,15 +3,15 @@ title: Mepụta akara ngosi SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Mepụta Akara Njirimara SVG
+# Mepụta Akara Njirimara SVG {#generate-logo-svg}
 
 Ikike **Mepụta Akara Njirimara SVG** na-enye Theme Builder ohere ịmepụta ma tinye akara njirimara SVG ahaziri ahazi ozugbo n'ime saịtị WordPress gị, yana nhicha akpaka dị nchebe maka namespace.
 
-## Nchịkọta
+## Nchịkọta {#overview}
 
 Ikike a na-emepụta akara njirimara scalable vector graphics (SVG) dabere na ntụziaka branding nke saịtị gị na mmasị imewe gị. A na-ehicha SVG ndị emepụtara na-akpaghị aka iji hụ na ha dị nchebe maka iji na WordPress ma ka na-edobe ịdị mma anya ha.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Ikike a na-emepụta akara njirimara scalable vector graphics (SVG) dabere na nt
 | `height` | number | Mba | Ogologo SVG na pixels (ndabara: 200) |
 | `include_text` | boolean | Mba | Ma a ga-etinye aha saịtị dị ka ederede n'ime akara njirimara (ndabara: true) |
 
-## Ụdị Mmepụta
+## Ụdị Mmepụta {#output-format}
 
 Ikike a na-eweghachi eriri SVG nwere usoro ndị a:
 
@@ -36,7 +36,7 @@ Ikike a na-eweghachi eriri SVG nwere usoro ndị a:
 }
 ```
 
-## Omume Nhicha SVG
+## Omume Nhicha SVG {#svg-sanitisation-behaviour}
 
 SVG ndị emepụtara na-agafe nhicha akpaka dị nchebe maka namespace iji:
 
@@ -48,7 +48,7 @@ SVG ndị emepụtara na-agafe nhicha akpaka dị nchebe maka namespace iji:
 
 Nke a na-eme ka SVG dị nchebe itinye ozugbo na WordPress na-enweghị ịchọ nhicha ọzọ.
 
-## Ihe Nlereanya Ojiji
+## Ihe Nlereanya Ojiji {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Ikike a na-emepụta akara njirimara SVG nke:
 - Na-eso ụkpụrụ imewe ọgbara ọhụrụ
 - E hichara ya na-akpaghị aka ma dị njikere iji
 
-## Njikọ na Theme Builder
+## Njikọ na Theme Builder {#integration-with-theme-builder}
 
 Mgbe ị na-eji nhọrọ ntụziaka imewe nke Theme Builder, ikike Mepụta Akara Njirimara SVG:
 
@@ -71,21 +71,21 @@ Mgbe ị na-eji nhọrọ ntụziaka imewe nke Theme Builder, ikike Mepụta Aka
 3. Na-etinye akara njirimara ahụ na-akpaghị aka n'ime mpaghara header/branding nke saịtị gị
 4. Na-echekwa SVG dị ka akara njirimara ahaziri ahazi na media WordPress
 
-## Omume Kachasị Mma
+## Omume Kachasị Mma {#best-practices}
 
 - **Nye mmasị ụdị doro anya** — kọwaa ụdị imewe ị chọrọ (ọgbara ọhụrụ, kpochapụwo, egwuri egwu, wdg.)
 - **Kọwaa agba** — tinye agba brand gị maka ịdị n'otu
 - **Nwalee rendering** — nyochaa na akara njirimara na-egosi nke ọma n'ogo ihuenyo dị iche iche
 - **Haziekwuo** — jiri ngwaọrụ nhazi akara njirimara nke WordPress iji dozie nha na ebe etinyere ya
 
-## Ihe Mmachibido
+## Ihe Mmachibido {#limitations}
 
 - A na-emepụta akara njirimara SVG dị ka eserese static (ọ bụghị animated)
 - Akara njirimara mgbagwoju anya nwere ọtụtụ ihe nwere ike ịchọ ndozi aka
 - A naghị akwado fonts ahaziri ahazi; ederede na-eji fonts sistemụ
 - Nha buru oke ibu ma ọ bụ pere mpe nke ukwuu nwere ike imetụta ịdị mma
 
-## Ikike Ndị Metụtara Ya
+## Ikike Ndị Metụtara Ya {#related-abilities}
 
 - [Nyochaa Contrast Palette](./validate-palette-contrast.md) — lelee contrast agba maka accessibility
 - [Mepụta Menu](./create-menu.md) — mepụta menus navigation maka saịtị gị

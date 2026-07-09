@@ -3,11 +3,11 @@ title: Намунаҳои пешрафтаи код
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Намунаҳои пешрафтаи код
+# Намунаҳои пешрафтаи код {#advanced-code-examples}
 
 Ин намунаҳо қолабҳои пешрафтаи ҳамгироиро бо Ultimate Multisite нишон медиҳанд.
 
-## Муҳаррики динамикии нархгузорӣ
+## Муҳаррики динамикии нархгузорӣ {#dynamic-pricing-engine}
 
 Муҳаррики нархгузории қоидабунёд, ки тахфифҳои ҳаҷмӣ, вафодорӣ ва мавсимиро татбиқ мекунад:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Омодасозии пешрафтаи сайт
+## Омодасозии пешрафтаи сайт {#advanced-site-provisioning}
 
 Сайтҳои навро бо plugin-ҳо, SSL, CDN, нусхаҳои эҳтиётӣ ва мониторинг дар асоси хусусиятҳои plan ба таври худкор танзим кунед:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Системаи маҳдудиятҳои фармоишӣ
+## Системаи маҳдудиятҳои фармоишӣ {#custom-limitations-system}
 
 Маҳдудиятҳои манбаъҳоро бо огоҳиҳои истифода пайгирӣ ва иҷро кунед:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Ҳисобкунаки атомии BerlinDB бо `increment_item()`
+## Ҳисобкунаки атомии BerlinDB бо `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 ба синфи BerlinDB `Query` методи `increment_item()`-ро илова кард. Аз он барои иҷрои афзоишҳои бехатар ва атомӣ дар сутунҳои ададӣ бе рақобатҳои read-modify-write истифода баред — барои ҳисобкунакҳо, квотаҳои истифода ва санҷишҳои маҳдудсозии суръат, ки зери дархостҳои ҳамзамон иҷро мешаванд, муфид аст.
 
-### Имзои метод
+### Имзои метод {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 ба синфи BerlinDB `Query` методи `increme
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Истифодаи асосӣ
+### Истифодаи асосӣ {#basic-usage}
 
 ```php
 // Add 1 to the `api_calls` column for membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Пайгирии истифодаи API барои ҳар як membership
+### Пайгирии истифодаи API барои ҳар як membership {#tracking-api-usage-per-membership}
 
 Намунаи амалӣ барои татбиқи маҳдудиятҳои суръати API барои ҳар як membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Чаро `increment_item()` ба ҷойи `update_item()`
+### Чаро `increment_item()` ба ҷойи `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Равиши содалавҳонаи read-modify-write зери дархостҳои ҳамзамон бехатар нест:
 

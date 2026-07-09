@@ -4,13 +4,13 @@ title: Scagaire - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Scagaire: wu_gocardless_cleanup_pending_site
+# Scagaire: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Gníomhaíonn sé sula scriostar suíomh ar feitheamh dílleachta do bhallraíocht GoCardless cealaithe.
 
 Tabhair false ar ais ón scagaire seo chun scriosadh a chosc.
 
-## Paraiméadair
+## Paraiméadair {#parameters}
 
 | Ainm | Cineál | Cur síos |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Tabhair false ar ais ón scagaire seo chun scriosadh a chosc.
 | $membership | `\WP_Ultimo\Models\Membership` | An bhallraíocht chealaithe. |
 | $old_status | `string` | An stádas roimh an gcealú. |
 
-### Ó
+### Ó {#since}
 
 - 2.0.0
-### Foinse
+### Foinse {#source}
 
 Sainithe in [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) ag líne 1086

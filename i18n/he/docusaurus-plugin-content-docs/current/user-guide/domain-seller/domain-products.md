@@ -3,11 +3,11 @@ title: מוצרי דומיין ותמחור
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# מוצרי דומיין ותמחור
+# מוצרי דומיין ותמחור {#domain-products-and-pricing}
 
 מוצרי דומיין הם הדרך שלך לשלוט בתמחור, TLDs, פרטיות WHOIS ובבחירת ספק. כל מוצר דומיין הוא מוצר Multisite Ultimate רגיל עם לשונית נוספת בשם **Domain Settings**.
 
-## יצירת מוצר דומיין
+## יצירת מוצר דומיין {#creating-a-domain-product}
 
 1. עבור אל **Network Admin › Ultimate Multisite › Products**
 2. לחץ על **Add New**
@@ -17,13 +17,13 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 מוצרי דומיין מופיעים עם תגית סגולה של **Domain** ברשימת המוצרים ואפשר לסנן אותם באמצעות לשונית **Domain Products**.
 
-## לשונית הגדרות דומיין (Domain settings tab)
+## לשונית הגדרות דומיין (Domain settings tab) {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 בחר איזה רגיסטר (registrar) מטפל ברישום עבור מוצר זה. ברירת המחדל היא **Default provider** הגלובלי המוגדר בהגדרות Domain Seller.
 
-### Supported TLDs
+### Supported TLDs {#supported-tlds}
 
 השאר ריק כדי ליצור **מוצר Catch-all** שמתאים לכל TLD שאינו תואם על ידי מוצר אחר.
 
@@ -31,7 +31,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 **איך עובדת התאמת המוצר:** כאשר לקוח מחפש דומיין, התוסף בוחר את המוצר התואם והספציפי ביותר. מוצר עם `.com` ברשימת ה-TLDs שלו מקבל עדיפות על פני מוצר Catch-all. אם אף מוצר ספציפי ל-TLD לא תואם, משתמשים ב-Catch-all. אם לא קיימים מוצרים, חיפוש הדומיין לא יוצג.
 
-### Markup type
+### Markup type {#markup-type}
 
 שלושה מצבים שולטים כיצד מחושב מחיר הקמעונאות שלך בהתבסס על עלות הסיטונאות:
 
@@ -41,11 +41,11 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 | **Fixed markup** | מוסיף סכום דולרי קבוע. תוספת של 5$ על דומיין בשווי 10$ נותנת 15$. |
 | **Fixed price** | מתעלם לחלוטין מעלות הסיטונאות. גובה תמיד את הסכום שהזנת. |
 
-### Introductory pricing
+### Introductory pricing {#introductory-pricing}
 
 הפעלה כדי להציע מחיר מוזל לשנה הראשונה. הגדר **Introductory price** נפרד (מחיר השנה הראשונה) לצד **Renewal price** הרגיל (שנה 2 ואילך). הלקוח רואה את שני המחירים המוצגים במהלך התשלום, כדי שידע למה לצפות בהתחדשות.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 שולט אם מוגנת פרטיות WHOIS עבור דומיינים שנרשמים דרך מוצר זה.
 
@@ -59,7 +59,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## ייבוא וסנכרון TLD
+## ייבוא וסנכרון TLD {#tld-import-and-sync}
 
 מוצרי דומיין מציגים תמחור סיטונאי בזמן אמת שנמשך מהספק המחובר. כדי שזה יעבוד, יש לייבא את ה-TLDs.
 
@@ -70,7 +70,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## חידוש אוטומטי (Auto-renewal)
+## חידוש אוטומטי (Auto-renewal) {#auto-renewal}
 
 חידושי דומיין קשורים למעמד המנוי של הלקוח:
 
@@ -90,7 +90,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## מנהל: רישום דומיין ידני
+## מנהל: רישום דומיין ידני {#admin-manual-domain-registration}
 
 כדי לרשום דומיין מטעם לקוח מבלי שהוא יעבור תהליך תשלום:
 

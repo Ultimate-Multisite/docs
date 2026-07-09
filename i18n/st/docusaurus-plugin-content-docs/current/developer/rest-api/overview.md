@@ -3,28 +3,28 @@ title: Kakaretso ea REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tshupiso ya REST API
+# Tshupiso ya REST API {#rest-api-reference}
 
-## Tlhophiso ya Motheo
+## Tlhophiso ya Motheo {#base-configuration}
 
 **URL ya Motheo:** `{site_url}/wp-json/wu/v2/`
 **Netefatso:** API Key le Sephiri (HTTP Basic Auth kapa Dipharaemitha tsa URL)
 
-## Netefatso
+## Netefatso {#authentication}
 
-### Nolofalletsa API
+### Nolofalletsa API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Fumana Dintlha tsa API
+### Fumana Dintlha tsa API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Mekgwa ya Netefatso
+### Mekgwa ya Netefatso {#authentication-methods}
 
 **HTTP Basic Auth (E kgothaletswa):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Dintlha tsa Pheletso tsa Mantlha
+## Dintlha tsa Pheletso tsa Mantlha {#core-endpoints}
 
-### 1. API ya Bareki
+### 1. API ya Bareki {#1-customers-api}
 
 **Tsela ya Motheo:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API ya Disaete
+### 2. API ya Disaete {#2-sites-api}
 
 **Tsela ya Motheo:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API ya Botho
+### 3. API ya Botho {#3-memberships-api}
 
 **Tsela ya Motheo:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API ya Dihlahiswa
+### 4. API ya Dihlahiswa {#4-products-api}
 
 **Tsela ya Motheo:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API ya Ditefo
+### 5. API ya Ditefo {#5-payments-api}
 
 **Tsela ya Motheo:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API ya Didomain
+### 6. API ya Didomain {#6-domains-api}
 
 **Tsela ya Motheo:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Ntlha ya Pheletso ya Ngodiso
+## Ntlha ya Pheletso ya Ngodiso {#registration-endpoint}
 
 Ntlha ya pheletso ya `/register` e fana ka phallo e feletseng ya checkout/ngodiso:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Dintlha tsa Pheletso tsa Bahiri ba Ikemetseng
+## Dintlha tsa Pheletso tsa Bahiri ba Ikemetseng {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 e eketsa kgaso ya REST bakeng sa bahiri ba ikemetseng bakeng sa dikopanyo tse fanang, tse hlahlobang, kapa tse netefatsang bahiri ba arotsweng.
 
@@ -242,7 +242,7 @@ Dikarabo tse tlwaelehileng tsa boemo ba phalliso di kenyeletsa:
 
 Tshwara `ready: false` jwalo ka thibelo ya pele ho phatlalatso. Hlahloba dintlha tsa netefatso, lokisa tlamahano ya host ya database, queue, phepelo ya mosebedisi, kapa bothata ba routing, ebe o leka netefatso hape.
 
-## Dikarabo tsa Diphoso
+## Dikarabo tsa Diphoso {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Tshwara `ready: false` jwalo ka thibelo ya pele ho phatlalatso. Hlahloba dintlha
 }
 ```
 
-## Pagination le ho Sefa
+## Pagination le ho Sefa {#pagination-and-filtering}
 
 **Dipharaemitha tsa Potso:**
 ```http

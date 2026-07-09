@@ -3,7 +3,7 @@ title: Ona le howa ho fana ka ho fana ka tšhobo ea ts'ho ea lits'ho
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Ke ba ka fana ka tšhobo? (How can I cancel my subscription?)
+# Ke ba ka fana ka tšhobo? (How can I cancel my subscription?) {#how-can-i-cancel-my-subscription}
 
 Ha o na Ultimate Multisite license, u ka fana ho fana haholo ka nako e tsoalo ea hau. A re le sehlopha seletse sefa:
 

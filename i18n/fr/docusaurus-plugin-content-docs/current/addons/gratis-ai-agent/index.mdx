@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent est un assistant IA autonome pour WordPress qui peut planifier, construire et gérer des sites WordPress complets à partir d'instructions en langage naturel. Il propose un ensemble structuré de **capacités** (*abilities*) — des actions discrètes et testables que l'agent peut déclencher — couvrant tout, de la gestion de contenu à la personnalisation du système de design. La version 1.9.0 ajoute des capacités de création de contenu, une revue visuelle de page via des captures d'écran côté client, cinq profils d'agent intégrés, ainsi que des drapeaux de fonctionnalité (*feature flags*) pour le contrôle d'accès et le branding.
 
-## Fonctionnalités Clés
+## Fonctionnalités Clés {#key-features}
 
 - **Système de capacités** (*Abilities system*) — un catalogue modulaire et extensible d'actions que l'agent peut exécuter sur votre installation WordPress
 - **Gestion de contenu** (*Content Management*) — créer des articles et des pages (y compris l'attribution de modèles de page), créer par lots plusieurs articles en un seul appel, définir des images à la une et construire des formulaires de contact
@@ -28,21 +28,21 @@ Gratis AI Agent est un assistant IA autonome pour WordPress qui peut planifier, 
 - **Orchestration du constructeur de site v2** (*Site Builder Orchestration v2*) — plans de construction de site multi-étapes avec découverte de plugins, suivi de progression et récupération d'erreurs
 - **Commande de référence WP-CLI** (*WP-CLI benchmark command*) — exécuter la suite de référence des capacités de l'agent depuis la ligne de commande pour l'intégration continue (CI) et l'évaluation du modèle
 
-## Prérequis
+## Prérequis {#requirements}
 
 - WordPress 6.0 ou supérieur
 - PHP 8.1 ou supérieur
 - WordPress Multisite (activé au niveau du réseau) ou installation sur un seul site
 - Un plugin connecteur d'IA actif (Anthropic, OpenAI ou compatible)
 
-## Installation
+## Installation {#installation}
 
 1. Téléchargez les fichiers du plugin dans `/wp-content/plugins/gratis-ai-agent`
 2. Activez le plugin via l'écran **Plugins** de WordPress
 3. Rendez-vous dans **Gratis AI Agent → Réglages** et connectez votre fournisseur d'IA
 4. (Optionnel) Parcourez le **Registre de capacités** (*Abilities Registry*) pour installer des packs de capacités supplémentaires
 
-## Démarrage Rapide
+## Démarrage Rapide {#quick-start}
 
 Une fois activé et connecté à un fournisseur d'IA, ouvrez le panneau **Gratis AI Agent** dans la barre latérale d'administration de WordPress. Tapez une instruction en langage naturel et l'agent planifiera et exécutera les étapes requises en utilisant ses capacités disponibles.
 
@@ -60,7 +60,7 @@ Injecter une palette de couleurs mode sombre dans le thème et définir la coule
 Construire un site web de restaurant avec un menu en ligne, un formulaire de réservation et une page de contact.
 ```
 
-## Aperçu des Capacités
+## Aperçu des Capacités {#abilities-overview}
 
 Les capacités sont les actions atomiques que l'agent peut effectuer. Chaque capacité est une classe PHP enregistrée qui expose un schéma (paramètres et types de retour) que l'agent lit à l'exécution. Les capacités sont regroupées par domaines fonctionnels :
 
@@ -79,7 +79,7 @@ Les capacités sont les actions atomiques que l'agent peut effectuer. Chaque cap
 
 Consultez la [Référence des capacités](./abilities) pour la documentation complète des paramètres et des exemples d'utilisation.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent fournit une famille de commandes `wp gratis-ai-agent` pour exécuter des références et gérer les capacités depuis la ligne de commande. Consultez la [Référence WP-CLI](./wp-cli) pour la liste complète des commandes.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Configuration
+## Configuration {#configuration}
 
 Tous les réglages se trouvent dans **Gratis AI Agent → Réglages** dans l'administration WordPress :
 
@@ -106,7 +106,7 @@ Tous les réglages se trouvent dans **Gratis AI Agent → Réglages** dans l'adm
 | **Délai de capacité** (*Ability Timeout*) | Temps maximum pendant lequel une capacité individuelle peut s'exécuter (par défaut 30) |
 | **Journalisation de débogage** (*Debug Logging*) | Enregistre les appels de capacités et le raisonnement de l'agent dans le journal de débogage de WordPress |
 
-## Liste de blocage de sécurité pour la gestion des options
+## Liste de blocage de sécurité pour la gestion des options {#options-management-safety-blocklist}
 
 La capacité de gestion des options comprend une liste de blocage intégrée qui empêche l'agent de lire ou d'écrire des options WordPress sensibles. La liste de blocage par défaut couvre :
 
@@ -118,26 +118,26 @@ La capacité de gestion des options comprend une liste de blocage intégrée qui
 
 Des entrées supplémentaires peuvent être ajoutées via le filtre `gratis_ai_agent_options_blocklist`.
 
-## Hooks et Filtres
+## Hooks et Filtres {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — déclenché après l'enregistrement d'une capacité, reçoit le nom de la classe de capacité
 - `gratis_ai_agent_plan_started` — déclenché lorsqu'un plan de constructeur de site commence son exécution
 - `gratis_ai_agent_plan_completed` — déclenché lorsqu'un plan se termine avec succès
 - `gratis_ai_agent_plan_failed` — déclenché lorsqu'un plan rencontre une erreur irrécupérable
 
-### Filtres
+### Filtres {#filters}
 
 - `gratis_ai_agent_abilities` — modifier la liste des capacités enregistrées avant que l'agent ne la charge
 - `gratis_ai_agent_options_blocklist` — étendre ou réduire la liste de blocage de sécurité des options
 - `gratis_ai_agent_benchmark_questions` — ajouter des questions de référence personnalisées à la suite d'évaluation
 - `gratis_ai_agent_plan_plugins` — modifier la liste de découverte de plugins pendant la génération du plan de site
 
-## Support
+## Support {#support}
 
 Pour obtenir de l'aide, visitez [ultimatemultisite.com](https://ultimatemultisite.com) ou ouvrez un problème dans le dépôt du plugin.
 
-## Journal des modifications
+## Journal des modifications {#changelog}
 
 Consultez le [Journal des modifications](./changelog) pour l'historique complet des versions.

@@ -3,13 +3,13 @@ title: Vodič za integraciju
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Vodič za integraciju
+# Vodič za integraciju {#integration-guide}
 
 Ovaj vodič pokriva uobičajene obrasce integracije s Ultimate Multisite, uključujući povezivanje s vanjskim servisima, izradu prilagođenih gatewaya za plaćanje i obradu webhookova.
 
 Za izolovanu infrastrukturu zakupaca, pogledajte [Multi-Tenancy integraciju](./multi-tenancy) za smjernice o pokretanju suverenog zakupca, provjeri migracije, SSO-u i uklanjanju.
 
-## CRM integracija
+## CRM integracija {#crm-integration}
 
 Sinhronizujte podatke kupaca sa svojim CRM-om kada se novi kupci registruju:
 
@@ -31,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytics integracija
+## Analytics integracija {#analytics-integration}
 
 Pratite ključne poslovne događaje kroz životni ciklus kupca:
 
@@ -59,7 +59,7 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Sljedeći koraci
+## Sljedeći koraci {#next-steps}
 
 - [Razvoj prilagođenog gatewaya](./custom-gateway) — Izradite vlastiti gateway za plaćanje
 - [Obrada webhookova](./webhooks) — Kreirajte prilagođene webhook endpointove

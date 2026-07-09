@@ -3,25 +3,25 @@ title: Inyandikorugero y’inyongera
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Inyandikorugero y’inyongera
+# Inyandikorugero y’inyongera {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Ibisabwa
+## Ibisabwa {#requirements}
 
 - WordPress 5.3 cyangwa irenzeho
 - PHP 7.4 cyangwa irenzeho
 - plugin ya Multisite Ultimate (ikora)
 
-## Kuyishyiramo
+## Kuyishyiramo {#installation}
 
 1. Ohereza dosiye z’inyongera muri diregiteri yawe ya `/wp-content/plugins/`
 2. Kora plugin binyuze muri menu ya 'Plugins' muri WordPress
 3. Tunganya igenamiterere ry’inyongera muri admin w’urusobe
 
-## Iterambere
+## Iterambere {#development}
 
-### Gutegura
+### Gutegura {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Imiterere y’Umushinga
+### Imiterere y’Umushinga {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Amategeko yo kuvugurura code
 ```
 
-### Igerageza
+### Igerageza {#testing}
 
 Iyi nyongera irimo urwego rw’igerageza rwuzuye:
 
@@ -75,44 +75,44 @@ Iyi nyongera irimo urwego rw’igerageza rwuzuye:
 - **Uburemere bw’Igerageza**: Byagenwe gukurikirana aho code igeragezwa hose
 - **Igerageza rya Multisite**: Igerageza rikorerwa mu bidukikije bya multisite
 
-### Amabwiriza y’Imyandikire ya Code
+### Amabwiriza y’Imyandikire ya Code {#code-standards}
 
 - **Amabwiriza y’Imyandikire ya Code ya WordPress**: Ashyirwa mu bikorwa binyuze kuri PHPCS
 - **Guhuza na PHP 7.4+**: Ibiranga PHP bigezweho birashyigikiwe
 - **Isesengura Ridahinduka**: Guhuza na PHPStan mu kugenzura ubwoko
 - **Kuvugurura Code**: Amategeko ya Rector yo kuzamura PHP
 
-### Sisitemu yo Kubaka
+### Sisitemu yo Kubaka {#build-system}
 
 - **Gutunganya Ibikoresho**: Kugabanya ingano ya dosiye za CSS/JS
 - **Ubusemuzi**: Gukora dosiye ya POT
 - **Gupakira**: Gukora archive yo gukwirakwiza
 - **Uburyo bw’Iterambere**: Ibikoresho bitagabanyijwe ingano byo gukemura amakosa
 
-## Igenamiterere
+## Igenamiterere {#configuration}
 
 Iyi nyongera ishyigikira amahitamo atandukanye y’igenamiterere aboneka binyuze mu nteruro ya admin w’urusobe.
 
-## Hooks n’Utuyunguruzo
+## Hooks n’Utuyunguruzo {#hooks-and-filters}
 
-### Ibikorwa
+### Ibikorwa {#actions}
 
 - `ultimate-multisite-addon-template_init` - Ikorwa nyuma yo gutangiza inyongera
 - `ultimate-multisite-addon-template_loaded` - Ikorwa nyuma y’uko dosiye zose z’inyongera zipakiwe
 
-### Utuyunguruzo
+### Utuyunguruzo {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Hindura igenamiterere ry’inyongera
 - `ultimate-multisite-addon-template_enabled` - Hindura uko ushaka uko inyongera ifungurwa/ifungwa
 
-## Uruhushya
+## Uruhushya {#license}
 
 Iyi nyongera ifite uruhushya rwa GPL v3 cyangwa uruyikurikira.
 
-## Ubufasha
+## Ubufasha {#support}
 
 Ku bufasha n’inyandiko, sura [MultisiteUltimate.com](https://multisiteultimate.com)
-## Urutonde rw’Impinduka
+## Urutonde rw’Impinduka {#changelog}
 
 - Verisiyo 1.0.1 (2025-09-28): hindura izina rya prefix ribe ultimate-multisite; vugurura text domain; kongera verisiyo.
 

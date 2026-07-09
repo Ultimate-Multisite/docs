@@ -3,7 +3,7 @@ title: Ìṣàwárí àti Rípò Aifọwọyi nínú Àwọn Template Ojúlé
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Ṣíṣe Àwárí àti Ríròpo Laifọwọyi nínú Àwọn Template Site (v2)
+# Ṣíṣe Àwárí àti Ríròpo Laifọwọyi nínú Àwọn Template Site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ìkọ́ni yìí nílò WP UItimo ẹ̀yà 2.x.**_
 
@@ -17,7 +17,7 @@ Oníbàárà rẹ yóò sì lè kún field yẹn nígbà ìforúkọsílẹ̀.
 
 Ultimate Multisite yóò sì rọ́pò àwọn placeholder pẹ̀lú data tí oníbàárà pèsè laifọwọyi.
 
-## **Yíyanjú ìṣòro "template tí ó kún fún àwọn placeholder"**
+## **Yíyanjú ìṣòro "template tí ó kún fún àwọn placeholder"** {#solving-the-template-full-of-placeholders-problem}
 
 Gbogbo èyí dára, ṣùgbọ́n a máa ń bá ìṣòro búburú kan pàdé: ní báyìí, àwọn site template wa - tí àwọn oníbàárà wa lè ṣèbẹ̀wò sí - kún fún àwọn placeholder búburú tí kò sọ púpọ̀.
 

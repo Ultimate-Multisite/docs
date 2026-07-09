@@ -3,17 +3,17 @@ title: RunCloud ஒருங்கிணைப்பு
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud ஒருங்கிணைப்பு
+# RunCloud ஒருங்கிணைப்பு {#runcloud-integration}
 
-## கண்ணோட்டம்
+## கண்ணோட்டம் {#overview}
 RunCloud என்பது cloud அடிப்படையிலான server மேலாண்மை தளமாகும், இது உங்கள் சொந்த cloud servers-ல் web applications-ஐ எளிதாக deploy செய்து நிர்வகிக்க உதவுகிறது. இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் RunCloud இடையே தானியங்கி domain syncing மற்றும் SSL certificate மேலாண்மையை செயல்படுத்துகிறது.
 
-## அம்சங்கள்
+## அம்சங்கள் {#features}
 - தானியங்கி domain syncing
 - SSL certificate மேலாண்மை
 - mappings நீக்கப்படும்போது domain அகற்றுதல்
 
-## தேவைகள்
+## தேவைகள் {#requirements}
 பின்வரும் constants உங்கள் `wp-config.php` கோப்பில் வரையறுக்கப்பட வேண்டும்:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## அமைப்பு வழிமுறைகள்
+## அமைப்பு வழிமுறைகள் {#setup-instructions}
 
-### 1. உங்கள் RunCloud API சான்றுகளைப் பெறுங்கள்
+### 1. உங்கள் RunCloud API சான்றுகளைப் பெறுங்கள் {#1-get-your-runcloud-api-credentials}
 
 1. உங்கள் RunCloud dashboard-ல் உள்நுழையுங்கள்
 2. "User Profile"-க்கு செல்லுங்கள் (மேல்-வலது மூலையில் உள்ள உங்கள் profile படத்தை கிளிக் செய்யவும்)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. உங்களிடம் ஏற்கனவே இல்லையென்றால் "Generate API Key"-ஐ கிளிக் செய்யவும்
 5. உங்கள் API Key மற்றும் API Secret-ஐ நகலெடுங்கள்
 
-### 2. உங்கள் Server மற்றும் App IDs-ஐப் பெறுங்கள்
+### 2. உங்கள் Server மற்றும் App IDs-ஐப் பெறுங்கள் {#2-get-your-server-and-app-ids}
 
 1. உங்கள் RunCloud dashboard-ல், "Servers"-க்கு செல்லுங்கள்
 2. உங்கள் WordPress multisite host செய்யப்பட்டுள்ள server-ஐ தேர்ந்தெடுங்கள்
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. "Web Applications"-க்கு சென்று உங்கள் WordPress application-ஐ தேர்ந்தெடுங்கள்
 5. App ID URL-ல் தெரியும்: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. wp-config.php-ல் Constants சேர்க்கவும்
+### 3. wp-config.php-ல் Constants சேர்க்கவும் {#3-add-constants-to-wp-configphp}
 
 பின்வரும் constants-ஐ உங்கள் `wp-config.php` கோப்பில் சேர்க்கவும்:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. ஒருங்கிணைப்பை இயக்குங்கள்
+### 4. ஒருங்கிணைப்பை இயக்குங்கள் {#4-enable-the-integration}
 
 1. உங்கள் WordPress admin-ல், Ultimate Multisite > Settings-க்கு செல்லுங்கள்
 2. "Domain Mapping" tab-க்கு செல்லுங்கள்
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. RunCloud ஒருங்கிணைப்பை இயக்குங்கள்
 5. "Save Changes"-ஐ கிளிக் செய்யுங்கள்
 
-## இது எவ்வாறு செயல்படுகிறது
+## இது எவ்வாறு செயல்படுகிறது {#how-it-works}
 
 Ultimate Multisite-ல் ஒரு domain map செய்யப்படும்போது:
 
@@ -70,19 +70,19 @@ Ultimate Multisite-ல் ஒரு domain map செய்யப்படும
 
 Subdomain installations-க்கு, உங்கள் network-ல் புதிய sites சேர்க்கப்படும்போது RunCloud-ல் subdomains உருவாக்குவதை ஒருங்கிணைப்பு தானாகவே கையாளும்.
 
-## சிக்கல் தீர்வு
+## சிக்கல் தீர்வு {#troubleshooting}
 
-### API இணைப்பு சிக்கல்கள்
+### API இணைப்பு சிக்கல்கள் {#api-connection-issues}
 - உங்கள் API சான்றுகள் சரியானவை என்பதை உறுதிப்படுத்துங்கள்
 - உங்கள் server மற்றும் app IDs சரியானவை என்பதை சரிபாருங்கள்
 - உங்கள் RunCloud account-க்கு தேவையான அனுமதிகள் உள்ளன என்பதை உறுதிப்படுத்துங்கள்
 
-### SSL Certificate சிக்கல்கள்
+### SSL Certificate சிக்கல்கள் {#ssl-certificate-issues}
 - RunCloud SSL certificates வழங்க சிறிது நேரம் ஆகலாம்
 - உங்கள் domains உங்கள் server-ன் IP address-க்கு சரியாக point ஆகியுள்ளன என்பதை உறுதிப்படுத்துங்கள்
 - உங்கள் application-க்கான RunCloud SSL settings-ஐ சரிபாருங்கள்
 
-### Domain சேர்க்கப்படவில்லை
+### Domain சேர்க்கப்படவில்லை {#domain-not-added}
 - ஏதேனும் error messages உள்ளதா என்று Ultimate Multisite logs-ஐ சரிபாருங்கள்
 - அந்த domain ஏற்கனவே RunCloud-ல் சேர்க்கப்படவில்லை என்பதை உறுதிப்படுத்துங்கள்
 - உங்கள் RunCloud plan பல domains-ஐ ஆதரிக்கிறது என்பதை உறுதிப்படுத்துங்கள்

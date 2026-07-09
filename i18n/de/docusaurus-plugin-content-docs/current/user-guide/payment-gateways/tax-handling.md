@@ -3,7 +3,7 @@ title: Steuerbehandlung
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Steuerbehandlung
+# Steuerbehandlung {#tax-handling}
 
 Ultimate Multisite hat ein Steuereinzugsmodul in unser Core-Plugin integriert. Wenn du also Umsatzsteuern auf deine Tarife, Pakete und Dienstleistungen erheben musst, kannst du das ganz einfach tun, ohne irgendwelche Add-ons installieren zu müssen.
 
@@ -11,7 +11,7 @@ Für Unternehmen mit Sitz in Europa bieten wir ein **Add-on** an, das Werkzeuge 
 
 Ultimate Multisite reicht keine Steuern in deinem Namen bei der Regierung ein und führt sie auch nicht ab; wir helfen dir lediglich dabei, zum Zeitpunkt der Transaktion die entsprechenden Steuern zu erheben. **Du musst die Steuern weiterhin selbst abführen.**
 
-## Steuereinzug aktivieren
+## Steuereinzug aktivieren {#enabling-tax-collection}
 
 Der Steuereinzug ist standardmäßig nicht aktiviert. Um ihn zu aktivieren, musst du zu **Ultimate Multisite > Einstellungen > Steuern** gehen und den Schalter aktivieren, um die Einstellung „Steuern aktivieren“ einzuschalten.
 
@@ -25,7 +25,7 @@ Du kannst dir auch die Steuereinstellungen für einzelne Produkte ansehen:
 
 ![Steuereinstellungen für Produkte](/img/config/settings-taxes.png)
 
-### Steuer ausgeschlossen vs. Steuer eingeschlossen
+### Steuer ausgeschlossen vs. Steuer eingeschlossen {#tax-excluded-vs-tax-included}
 
 Standardmäßig sind alle deine Produktpreise ohne Steuer, was bedeutet, dass Steuern **nicht im Preis** des Produkts enthalten sind. Wenn wir feststellen, dass ein Kunde bei einem bestimmten Kauf Steuern zahlen sollte, fügen wir die Steuern **zusätzlich** zur Zwischensumme hinzu.
 
@@ -37,7 +37,7 @@ Vergiss nicht, die vorgenommenen Änderungen zu **speichern**.
 
 ###
 
-## Steuersätze erstellen
+## Steuersätze erstellen {#creating-tax-rates}
 
 Nachdem du den Steuereinzug aktiviert hast, musst du mit unserem Steuersatz-Editor Steuersätze für bestimmte Standorte erstellen.
 
@@ -51,7 +51,7 @@ Auf der Seite des Steuersatz-Editors kannst du neue Steuersätze hinzufügen, in
 
 Du musst jedem Steuersatz einen **Titel** geben (wird auf Rechnungen verwendet). Dann kannst du das **Land** (erforderlich), das **Bundesland,** und die **Stadt** (beide optional) auswählen, in denen diese Steuer erhoben wird. Füge schließlich den **Steuersatz in Prozent** hinzu.
 
-### Steuerkategorien
+### Steuerkategorien {#tax-categories}
 
 Du kannst auch mehrere Steuerkategorien erstellen, um unterschiedliche Steuersätze für verschiedene Arten von Produkten hinzuzufügen.
 
@@ -73,7 +73,7 @@ Du kannst die Steuerkategorie für ein bestimmtes Produkt festlegen, indem du zu
 
 Auf demselben Bildschirm kannst du den Schalter **Ist steuerpflichtig?** deaktivieren, damit Ultimate Multisite weiß, dass es für dieses bestimmte Produkt keine Steuern erheben soll.
 
-## Europäische Mehrwertsteuer-Unterstützung
+## Europäische Mehrwertsteuer-Unterstützung {#european-vat-support}
 
 Wie bereits erwähnt, haben wir ein Add-on für Kunden in der EU verfügbar, die aufgrund der europäischen Mehrwertsteuer-Vorschriften zusätzliche Anforderungen haben.
 
@@ -101,7 +101,7 @@ Wenn du zurück zum **Tab „Steuereinstellungen“** gehst, siehst du neue verf
 
 <!-- Screenshot nicht verfügbar: Schalter „Mehrwertsteuer-Unterstützung aktivieren“ in den Steuereinstellungen nach der Aktivierung des Add-ons -->
 
-### Mehrwertsteuersätze abrufen
+### Mehrwertsteuersätze abrufen {#pulling-on-vat-tax-rates}
 
 Eines der Werkzeuge, die unsere Integration hinzufügt, ist die Möglichkeit, die Steuersätze für EU-Mitgliedstaaten zu laden. Das kann erfolgen, indem du nach dem Aktivieren der EU-Mehrwertsteuer-Unterstützung die Seite des Steuersatz-Editors besuchst.
 
@@ -111,7 +111,7 @@ Am unteren Rand der Seite siehst du die Optionen zum Abrufen der Mehrwertsteuer.
 
 Du kannst die Werte nach dem Abrufen auch bearbeiten. Bearbeite dazu einfach die benötigte Tabellenzeile und klicke, um die neuen Werte zu speichern.
 
-### Mehrwertsteuer-Validierung
+### Mehrwertsteuer-Validierung {#vat-validation}
 
 Wenn die Mehrwertsteuer-Unterstützung aktiviert ist, fügt Ultimate Multisite dem Checkout-Formular unterhalb des Rechnungsadressfelds ein zusätzliches Feld hinzu. Das Feld wird nur für Kunden mit Sitz in der EU angezeigt.
 

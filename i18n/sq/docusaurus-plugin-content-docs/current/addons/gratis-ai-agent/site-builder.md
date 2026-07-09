@@ -3,15 +3,15 @@ title: Orkestrimi i Ndërtuesit të Faqes v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrimi i Site Builder v2
+# Orkestrimi i Site Builder v2 {#site-builder-orchestration-v2}
 
 Orkestrimi i Site Builder v2 (i prezantuar në Gratis AI Agent v1.4.0) është motori që fuqizon krijimin e faqeve të internetit me shumë hapa. Kur i kërkoni agentit të "ndërtojë një faqe interneti për restorant" ose të "krijojë një portofol me blog", orkestruesi e ndan atë qëllim të nivelit të lartë në një **plan** të strukturuar, zbulon plugin-et e nevojshme për ta përmbushur, ekzekuton çdo hap me radhë, gjurmon progresin dhe rikuperohet nga gabimet në mënyrë autonome.
 
 ---
 
-## Si Funksionon
+## Si Funksionon {#how-it-works}
 
-### 1. Gjenerimi i Planit
+### 1. Gjenerimi i Planit {#1-plan-generation}
 
 Kur agenti merr një udhëzim për ndërtim faqeje, ai thërret aftësinë `create_site_plan` për të prodhuar një **plan faqeje** JSON. Plani përshkruan:
 
@@ -61,7 +61,7 @@ Kur agenti merr një udhëzim për ndërtim faqeje, ai thërret aftësinë `crea
 }
 ```
 
-### 2. Zbulimi i Plugin-eve
+### 2. Zbulimi i Plugin-eve {#2-plugin-discovery}
 
 Para se të fillojë ekzekutimi, orkestruesi skanon `plugin_requirements` të planit dhe kontrollon cilat plugin-e janë tashmë aktive. Për plugin-et që mungojnë, ai:
 
@@ -71,7 +71,7 @@ Para se të fillojë ekzekutimi, orkestruesi skanon `plugin_requirements` të pl
 
 Dështimet në zbulimin e plugin-eve nuk janë fatale — orkestruesi i shënon hapat e prekur si `skipped` dhe vazhdon me pjesën tjetër të planit.
 
-### 3. Ekzekutimi i Planit
+### 3. Ekzekutimi i Planit {#3-plan-execution}
 
 Orkestruesi thërret `execute_site_plan` me ID-në e planit. Ekzekutimi vazhdon fazë pas faze, hap pas hapi:
 
@@ -79,7 +79,7 @@ Orkestruesi thërret `execute_site_plan` me ID-në e planit. Ekzekutimi vazhdon 
 - **Hapa paralelë** — hapat brenda së njëjtës fazë që nuk kanë ndërvarësi dërgohen njëkohësisht kur flamuri `parallel` është vendosur.
 - **Skadimi i hapit** — çdo hap ka një afat skadimi individual (parazgjedhja: cilësimi `Ability Timeout`). Një hap që skadon shënohet `failed` dhe plani vazhdon.
 
-### 4. Gjurimi i Progresit
+### 4. Gjurimi i Progresit {#4-progress-tracking}
 
 Thërrisni `get_plan_progress` në çdo kohë për të kontrolluar statusin e ekzekutimit:
 
@@ -104,7 +104,7 @@ Përdoruesit e WP-CLI mund ta monitorojnë progresin me:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Rikuperimi nga Gabimet
+### 5. Rikuperimi nga Gabimet {#5-error-recovery}
 
 Kur një hap dështon, orkestruesi kontrollon për një hap **alternativ** të përcaktuar në plan:
 
@@ -115,9 +115,9 @@ Agenti raporton të gjitha dështimet në përmbledhjen përfundimtare të plani
 
 ---
 
-## Aftësitë e Planit të Faqes
+## Aftësitë e Planit të Faqes {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Gjeneron një plan të strukturuar faqeje nga një përshkrim qëllimi në gjuhë natyrore.
 
@@ -134,7 +134,7 @@ Gjeneron një plan të strukturuar faqeje nga një përshkrim qëllimi në gjuh�
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Fillon ekzekutimin e një plani faqeje të gjeneruar më parë.
 
@@ -150,7 +150,7 @@ Fillon ekzekutimin e një plani faqeje të gjeneruar më parë.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Kthen statusin aktual të ekzekutimit të një plani site.
 
@@ -164,7 +164,7 @@ Kthen statusin aktual të ekzekutimit të një plani site.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Zgjidh manualisht një hap të dështuar dhe rifillon ekzekutimin e planit nga hapi pasues. Përdoreni këtë kur rikuperimi automatik nuk ishte i mundur dhe dëshironi të ndërhyni.
 
@@ -180,7 +180,7 @@ Zgjidh manualisht një hap të dështuar dhe rifillon ekzekutimin e planit nga h
 
 ---
 
-## Krahasimi i v1 dhe v2
+## Krahasimi i v1 dhe v2 {#comparing-v1-and-v2}
 
 | Veçoria | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Zgjidh manualisht një hap të dështuar dhe rifillon ekzekutimin e planit nga h
 
 ---
 
-## Komandat e planit WP-CLI
+## Komandat e planit WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Gjeneron një plan site nga një përshkrim qëllimi.
 
@@ -205,7 +205,7 @@ Gjeneron një plan site nga një përshkrim qëllimi.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Ekzekuton një plan të gjeneruar më parë.
 
@@ -213,7 +213,7 @@ Ekzekuton një plan të gjeneruar më parë.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Shfaq progresin aktual për një plan që po ekzekutohet ose të përfunduar.
 
@@ -221,7 +221,7 @@ Shfaq progresin aktual për një plan që po ekzekutohet ose të përfunduar.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Liston të gjitha planet e site (në pritje, në progres dhe të përfunduara).
 
@@ -229,7 +229,7 @@ Liston të gjitha planet e site (në pritje, në progres dhe të përfunduara).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Rivendos një plan të dështuar në `pending` që të mund të riekzekutohet nga fillimi.
 

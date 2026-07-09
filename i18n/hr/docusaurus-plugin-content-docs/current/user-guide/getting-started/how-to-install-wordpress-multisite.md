@@ -3,7 +3,7 @@ title: Kako instalirati WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kako instalirati WordPress Multisite?
+# Kako instalirati WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite omogućuje da imate mrežu web stranica na jednoj instalaciji. To je ugrađena značajka, ali nije aktivna po podrazumevanom postavkama.
 
@@ -99,9 +99,9 @@ Kako kreirati subsite:
 
 Nakon što popunite polja, kliknite gumb "Add site" (Dodaj stranicu). Kada se novi subsite kreira, pristupite mu kako biste provjerili da je subsite funkcionalan.
 
-## Često problemi:
+## Često problemi: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Mogu kreirati nove stranice, ali nisu dostupne.
+### 1. Mogu kreirati nove stranice, ali nisu dostupne. {#common-problems}
 
 Ako ste odabrali poddomene, trebate postaviti i wildcard poddomene za vašu multisite mrežu.
 

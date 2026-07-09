@@ -3,7 +3,7 @@ title: PRO Tema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Admin Panelini PRO Tema bilen özelleşdirmek
+# Admin Panelini PRO Tema bilen özelleşdirmek {#customizing-your-admin-panel-with-pro-theme}
 
 Müşteri işleri yapýan wagtynda bizlere WordPress admin panelinde müşderler üçin özelleşdirilmiş bir ulgam bermegi gerek bolar. Eger siz hasapda hasaplap, hasapda hasaplap görnüşi we hissi isleseňiz, PRO Theme size kömek edip biler.
 

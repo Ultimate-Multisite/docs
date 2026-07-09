@@ -4,23 +4,23 @@ title: Филтер - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Филтер: wu_current_set_customer
+# Филтер: wu_current_set_customer {#filter-wucurrentsetcustomer}
 
 Им овозможува на програмерите да го изменат стандардното однесување и да го постават тековниот клиент поинаку.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Опис |
 |------|------|-------------|
 | $customer | `\WP_Ultimo\Models\Customer` | Тековниот клиент што треба да се постави. |
 | $ | `self` | Инстанцата на класата Current. |
 
-### Од
+### Од {#since}
 
 - 2.0.9
-### Извор
+### Извор {#source}
 
 Дефинирано во [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L377) на линија 377
 
 
-## Враќања
+## Враќања {#returns}

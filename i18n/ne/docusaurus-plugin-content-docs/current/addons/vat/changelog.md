@@ -3,7 +3,7 @@ title: VAT परिवर्तन सूची
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT परिवर्तन अभिलेख
+# VAT परिवर्तन अभिलेख {#vat-changelog}
 
 संस्करण 1.0.7 - 2026-02-03 मा जारी
 

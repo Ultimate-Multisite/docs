@@ -3,11 +3,11 @@ title: Lisäosien hallintavalmiudet
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Lisäosien hallintakyvyt
+# Lisäosien hallintakyvyt {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 toimitetaan **7 lisäosien hallintakyvyllä**, joita AI-avustaja voi kutsua keskustelun aikana. Nämä kyvyt tarjoavat ohjelmallisen hallinnan WordPress-lisäosiin, jotka on asennettu [Lisäosien rakentaja- ja hiekkalaatikkojärjestelmän](../../user-guide/administration/plugin-builder-and-sandbox) kautta.
 
-## Kykyjen yleiskatsaus
+## Kykyjen yleiskatsaus {#abilities-overview}
 
 | Kyky | Tunniste | Kuvaus |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 toimitetaan **7 lisäosien hallintakyvyllä**, joita AI-a
 | Asenna lisäosa | `install_plugin` | Julkaisee hiekkalaatikossa olevan lisäosan live-WordPress-lisäosahakemistoon. |
 | Aktivoi lisäosa | `activate_plugin` | Aktivoi hiekkalaatikossa olevan lisäosan wp-env-hiekkalaatikkoympäristössä. |
 
-## Lisäosien asentajan API
+## Lisäosien asentajan API {#plugin-installer-api}
 
 Lisäosien asentaja käsittelee tiedostojärjestelmätoiminnot lisäosia käyttöönotettaessa tai poistettaessa. Keskeiset toimintatavat:
 
@@ -28,7 +28,7 @@ Lisäosien asentaja käsittelee tiedostojärjestelmätoiminnot lisäosia käytt�
 - **Päivitys**: Korvaa olemassa olevat lisäosatiedostot. Poistaa lisäosan käytöstä ennen kirjoittamista osittaisen tilan virheiden välttämiseksi.
 - **Poisto tunnisteen perusteella**: Paikantaa lisäosahakemiston tunnisteen perusteella, poistaa käytöstä kaikilla sivustoilla ja poistaa sitten hakemiston.
 
-### Mukautetun asennuskäsittelijän rekisteröinti
+### Mukautetun asennuskäsittelijän rekisteröinti {#registering-a-custom-install-handler}
 
 Voit liittyä asennuksen elinkaareen käyttämällä `gratis_ai_plugin_installer_before_install`- ja `gratis_ai_plugin_installer_after_install`-toimintoja:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ekosysteemirekisteri
+## Ekosysteemirekisteri {#ecosystem-registry}
 
 Kyvyt rekisteröidään **lisäosaekosysteemirekisterin** kautta. Rekisteri yhdistää kykyjen tunnisteet niiden käsittelijäluokkiin ja altistaa ne AI-agentin työkalujen välittäjälle.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner-integraatio
+## HookScanner-integraatio {#hookscanner-integration}
 
 `create_plugin`- ja `update_plugin`-kyvyt suorittavat automaattisesti **HookScannerin** vastikään luodulle koodille. HookScanner palauttaa luettelon WordPress-toiminto- ja suodatinkoukuista, jotka lisäosa rekisteröi.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner ohittaa `vendor/`- ja `node_modules/`-hakemistot automaattisesti.
 
-## Asynkronisten töiden arkkitehtuuri
+## Asynkronisten töiden arkkitehtuuri {#async-job-architecture}
 
 Pitkään kestävät lisäosatoiminnot (luonti, asennus) lähetetään **asynkronisina töinä**, joissa on reaaliaikainen edistymisen seuranta. AI-chat-käyttöliittymä kyselee edistymistä ja suoratoistaa tilapäivityksiä käyttäjälle:
 

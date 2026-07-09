@@ -3,7 +3,7 @@ title: Steierbehandlung
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Steierbehandlung
+# Steierbehandlung {#tax-handling}
 
 Ultimate Multisite huet e Modul fir d'Steiererhiewung an eisem Core plugin agebaut, sou datt wann Dir Verkafssteieren op Äre Pläng, Packagen a Servicer erhiewe musst, Dir dat einfach maache kënnt, ouni iergendwellech Add-ons installéieren ze mussen.
 
@@ -11,7 +11,7 @@ Fir Firmen, déi an Europa lokaliséiert sinn, bidde mir en **add-on** un, dat T
 
 Ultimate Multisite deklaréiert oder iwwerweist keng Steieren an Ärem Numm un d'Regierung; mir hëllefen Iech einfach, déi passend Steieren zum Zäitpunkt vun der Transaktioun ze erhiewen. **Dir musst d'Steieren nach ëmmer selwer iwwerweisen.**
 
-## Steiererhiewung aktivéieren
+## Steiererhiewung aktivéieren {#enabling-tax-collection}
 
 Steiererhiewung ass net standardméisseg aktivéiert. Fir se z'aktivéieren, musst Dir op **Ultimate Multisite > Settings > Taxes** goen an d'Astellung Enable Taxes aktivéieren.
 
@@ -25,7 +25,7 @@ Dir kënnt och d'Steierastellunge fir eenzel Produkter ukucken:
 
 ![Steierastellunge fir Produkter](/img/config/settings-taxes.png)
 
-### Steier ausgeschloss vs. Steier abegraff
+### Steier ausgeschloss vs. Steier abegraff {#tax-excluded-vs-tax-included}
 
 Standardméisseg sinn all Är Produktpräisser ouni Steier, dat heescht d'Steiere **sinn net abegraff** am Präis vum Produkt. Wa mir feststellen, datt e Client Steiere fir e bestëmmte Kaf bezuele soll, addéiere mir d'Steieren **uewendrop** op den Zwëschebetrag.
 
@@ -37,7 +37,7 @@ Vergiesst net, d'Ännerungen, déi Dir gemaach hutt, ze **späicheren**.
 
 ###
 
-## Steiersätz erstellen
+## Steiersätz erstellen {#creating-tax-rates}
 
 Nodeems Dir Tax Collection aktivéiert hutt, musst Dir Steiersätz fir spezifesch Plaze mat eisem Steiersaz-Editor erstellen.
 
@@ -51,7 +51,7 @@ Op der Säit vum Steiersaz-Editor kënnt Dir nei Steiersätz derbäisetzen, ande
 
 Dir musst all Steiersaz en **Titel** ginn (deen op Rechnunge benotzt gëtt). Duerno kënnt Dir d'**Land** (obligatoresch), de **Bundesstaat,** an d'Stad (béid optional) auswielen, wou dës Steier berechent gëtt. Zum Schluss füügt de **Steiersaz a Prozent** derbäi.
 
-### Steierkategorien
+### Steierkategorien {#tax-categories}
 
 Dir kënnt och méi Steierkategorien erstellen, fir verschidde Steiersätz fir verschidden Zorte vu Produkter derbäizesetzen.
 
@@ -73,7 +73,7 @@ Dir kënnt d'Steierkategorie fir e bestëmmt Produkt festleeën, andeems Dir op 
 
 Op deem selwechten Ecran kënnt Dir de Schalter **Is Taxable?** ausschalten, fir Ultimate Multisite matzedeelen, datt et keng Steieren op dat bestëmmt Produkt erhiewe soll.
 
-## Ënnerstëtzung fir europäesch VAT
+## Ënnerstëtzung fir europäesch VAT {#european-vat-support}
 
 Wéi virdru gesot, hu mir en add-on verfügbar fir Clienten an der EU, déi wéinst den europäesche VAT-Reglementer zousätzlech Ufuerderungen hunn.
 
@@ -101,7 +101,7 @@ Wann Dir zréck op den **Tax Settings tab** gitt, gesitt Dir nei Optiounen. Akti
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAT-Steiersätz eroflueden
+### VAT-Steiersätz eroflueden {#pulling-on-vat-tax-rates}
 
 Ee vun den Tools, déi eis Integratioun derbäisetzt, ass d'Méiglechkeet, d'Steiersätz fir EU-Memberstaaten ze lueden. Dat kann gemaach ginn, andeems Dir d'Säit vum Steiersaz-Editor besicht, nodeems EU VAT-Support aktivéiert gouf.
 
@@ -111,7 +111,7 @@ Um Enn vun der Säit gesitt Dir d'Optioune fir VAT erofzelueden. Wann Dir en Tau
 
 Dir kënnt d'Wäerter och änneren, nodeems Dir se erofgelueden hutt. Fir dat ze maachen, ännert einfach déi Tabellzeil, déi Dir braucht, a klickt fir déi nei Wäerter ze späicheren.
 
-### VAT-Validéierung
+### VAT-Validéierung {#vat-validation}
 
 Wann VAT-Support aktivéiert ass, setzt Ultimate Multisite en zousätzlecht Feld an de Checkout-Formulaire derbäi, ënner dem Feld fir d'Rechnungsadress. D'Feld gëtt nëmme fir Clienten ugewisen, déi an der EU lokaliséiert sinn.
 

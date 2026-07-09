@@ -3,11 +3,11 @@ title: အဆင့်မြင့် ကုဒ်နမူနာများ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# အဆင့်မြင့် ကုဒ်ဥပမာများ
+# အဆင့်မြင့် ကုဒ်ဥပမာများ {#advanced-code-examples}
 
 ဒီဥပမာတွေက Ultimate Multisite နဲ့ အဆင့်မြင့် ပေါင်းစပ်မှုပုံစံတွေကို ပြသထားပါတယ်။
 
-## Dynamic Pricing Engine (အပြောင်းအလဲ ဈေးနှုန်းသတ်မှတ်ရေးစနစ်)
+## Dynamic Pricing Engine (အပြောင်းအလဲ ဈေးနှုန်းသတ်မှတ်ရေးစနစ်) {#dynamic-pricing-engine}
 
 ပမာဏ၊ သစ္စာရှိမှုနဲ့ ရာသီအလိုက် လျှော့စျေးတွေကို အသုံးပြုတဲ့ စည်းမျဉ်းအခြေခံ ဈေးနှုန်းသတ်မှတ်ရေးစနစ်တစ်ခု ဖြစ်ပါတယ်။
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Advanced Site Provisioning (အဆင့်မြင့် ဝက်ဘ်ဆိုဒ် တည်ဆောက်မှု)
+## Advanced Site Provisioning (အဆင့်မြင့် ဝက်ဘ်ဆိုဒ် တည်ဆောက်မှု) {#advanced-site-provisioning}
 
 အစီအစဉ်အလိုက် အင်္ဂါရပ်များအပေါ် မူတည်ပြီး plugin များ၊ SSL၊ CDN၊ backup များနှင့် monitoring များကို အလိုအလျောက် စီစဉ်ပေးခြင်း (configure) လုပ်နိုင်ပါတယ်။
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Custom Limitations System (ကိုယ်ပိုင် ကန့်သတ်ချက်စနစ်)
+## Custom Limitations System (ကိုယ်ပိုင် ကန့်သတ်ချက်စနစ်) {#custom-limitations-system}
 
 အသုံးပြုမှု ကန့်သတ်ချက်တွေကို စောင့်ကြည့်ပြီး သတိပေးချက်တွေနဲ့ အကောင်အထည်ဖော်နိုင်ပါတယ်။
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter with `increment_item()`
+## BerlinDB Atomic Counter with `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 မှာ BerlinDB `Query` class ကို `increment_item()` method အသစ် ထည့်ပေးထားပါတယ်။ ဒါကို အသုံးပြုပြီး၊ တစ်ပြိုင်နက်တည်း အသုံးပြုမှုတွေကြောင့် အချက်အလက်တွေ မှားယွင်းနိုင်တဲ့ (read-modify-write races) အခြေအနေမျိုး မရှိဘဲ၊ ဂဏန်းကော်လံတွေမှာ ဘေးကင်းစွာ၊ အတိုအမြန် တန်ဖိုးမြှင့်ခြင်း (atomic increments) တွေ လုပ်နိုင်ပါတယ်။ ဒါဟာ counter တွေ၊ အသုံးပြုမှု ခွင့်ပြုချက် (usage quotas) တွေနဲ့ rate-limiting စစ်ဆေးမှုတွေအတွက် အသုံးဝင်ပါတယ်။
 
-### Method signature (လုပ်ဆောင်ပုံ ပုံစံ)
+### Method signature (လုပ်ဆောင်ပုံ ပုံစံ) {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 မှာ BerlinDB `Query` class ကို `increment_
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Basic usage (အခြေခံ အသုံးပြုပုံ)
+### Basic usage (အခြေခံ အသုံးပြုပုံ) {#basic-usage}
 
 ```php
 // membership ID 42 အတွက် `api_calls` ကော်လံကို ၁ တိုးပေးခြင်း။
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Tracking API usage per membership (အဖွဲ့ဝင်အလိုက် API အသုံးပြုမှုကို စောင့်ကြည့်ခြင်း)
+### Tracking API usage per membership (အဖွဲ့ဝင်အလိုက် API အသုံးပြုမှုကို စောင့်ကြည့်ခြင်း) {#tracking-api-usage-per-membership}
 
 အဖွဲ့ဝင်တစ်ခုချင်းစီရဲ့ API rate limit တွေကို အကောင်အထည်ဖော်ဖို့ လက်တွေ့ကျတဲ့ ပုံစံတစ်ခု ဖြစ်ပါတယ်-
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Why `increment_item()` instead of `update_item()` (ဘာလို့ `update_item()` မသုံးဘဲ `increment_item()` ကို သုံးရတာလဲ)
+### Why `increment_item()` instead of `update_item()` (ဘာလို့ `update_item()` မသုံးဘဲ `increment_item()` ကို သုံးရတာလဲ) {#why-incrementitem-instead-of-updateitem}
 
 အချက်အလက်တွေ တစ်ပြိုင်နက်တည်း အလုပ်လုပ်တဲ့အခါ (concurrent requests) အတွက် ဖတ်ပြီး ပြင်ပြီး ရေးတဲ့ (read-modify-write) နည်းလမ်းက ဘေးအန္တရာယ်များပါတယ်။
 

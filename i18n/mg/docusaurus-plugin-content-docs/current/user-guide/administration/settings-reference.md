@@ -3,11 +3,11 @@ title: Fanovozan-kevitra momba ny Fikirana
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Fanovozan-kevitry ny Settings
+# Fanovozan-kevitry ny Settings {#settings-reference}
 
 Ity pejy ity dia manara-maso ireo settings izay misy fiantraikany amin’ny fitantanana isan’andro sy ny fiovana vao haingana amin’ny fitondran-tena ao amin’ny Ultimate Multisite.
 
-## Safidy hafa
+## Safidy hafa {#other-options}
 
 Ny faritra **Safidy hafa** dia miseho eo ambanin’ny **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -15,23 +15,23 @@ Ny faritra **Safidy hafa** dia miseho eo ambanin’ny **Ultimate Multisite > Set
 |---|---|
 | **Enable Jumper** | Mampiseho ny fitaovana fitetezana haingana Jumper ao amin’ny faritra admin. Ampiasao izy hitsambikina mivantana mankany amin’ny efijery Ultimate Multisite, zavatra ao amin’ny tambajotra, ary toerana admin tohanan’ny rafitra. Atsaharo izy raha tsy tianao ho hita ity hitsin-dalana ity. |
 
-## Fanaovana tatitra lesoka sy telemetry
+## Fanaovana tatitra lesoka sy telemetry {#error-reporting-and-telemetry}
 
 Nesorina tao amin’ny pejy settings ny setting taloha momba ny faneken’ny mpampiasa ny fanaovana tatitra lesoka. Tsy mandeha ny telemetry tsy mitonona anarana ary tsy misy toggle UI hampandehanana azy.
 
 Raha mitazona runbooks na pikantsary anatiny ho an’ny pejy settings ianao, esory ireo firesahana ny field taloha momba ny fanekena hanao tatitra lesoka mba tsy hitady setting tsy misy intsony ny mpitantana.
 
-## Settings fanafarana/fanondranana
+## Settings fanafarana/fanondranana {#importexport-settings}
 
 Ny tabilao settings **Import/Export** dia mamaritra izay settings feheziny ary mampifandray mivantana amin’ny **Ultimate Multisite > Site Export** ho an’ny arsivan’ny tranonkala sy tambajotra. Ampiasao ny tabilao settings ho an’ny fikirakirana fanafarana/fanondranana, ampiasao ny **Tools > Export & Import** ho an’ny fizotran’asa fanondranana/fanafarana tranonkala tokana, ary ampiasao ny fitaovana Site Export rehefa mila arsiva Network Export feno ianao.
 
-## Fampitandremana momba ny sandan-kaonty Domain Seller HostAfrica
+## Fampitandremana momba ny sandan-kaonty Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
 Rehefa mifandray amin’ny HostAfrica ny addon Domain Seller, ny mpitantana tambajotra dia mahita fampitandremana azo akatona momba ny sandan-kaonty ambany rehefa ambany loatra ny sandan’ny account reseller ka tsy azo antoka tsara ny fanodinana fisoratana anarana na fanavaozana domain.
 
 Raiso ho fampitandremana ara-piasana ity filazana ity: ampio vola ny sandan’ny reseller HostAfrica alohan’ny hanaiky fisoratana anarana domain voaloa bebe kokoa, avy eo miverena amin’ny settings Domain Seller na amin’ny efijery fanaraha-maso domain hanamarina fa afaka mitohy ara-dalàna ny fisoratana anarana sy fanavaozana.
 
-## Settings mpampifandray mpamatsy AI
+## Settings mpampifandray mpamatsy AI {#ai-provider-connector-settings}
 
 Ny settings mpampifandray mpamatsy AI ankehitriny dia mampiseho ihany ireo tahiry Account OAuth tohanana:
 

@@ -3,11 +3,11 @@ title: Pregled kontrolne table
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Pregled Kontrolne tablice
+# Pregled Kontrolne tablice {#dashboard-overview}
 
 Ultimate Multisite ima namjenski **Dashboard** (Kontrolnu tablu) pod menijem Ultimate Multisite, a takođe dodaje widgete na Network Dashboard. U ovom članku ćemo pogledati šta ćete vidjeti na oba mjesta.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite uključuje korisne widgete na kontrolnu tablu na nivou mreže, koja se nalazi na putanji **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Evo šta svaki widget prikazuje:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Dok Network Dashboard prikazuje sveobuhvatne informacije o mreži, Ultimate Multisite dashboard (na najvišem nivou menija Ultimate Multisite) prikazuje informacije o samoj usluzi.
 

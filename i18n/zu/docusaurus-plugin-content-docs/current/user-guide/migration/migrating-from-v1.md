@@ -3,9 +3,9 @@ title: Ukuthuthela kusuka ku-V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Ukuthutha usuka ku-V1
+# Ukuthutha usuka ku-V1 {#migrating-from-v1}
 
-## Ultimate Multisite isishintshile isuka emndenini wayo wokuqala wokukhishwa kwe-1.x yaya emndenini wokukhishwa kwe-2.x.
+## Ultimate Multisite isishintshile isuka emndenini wayo wokuqala wokukhishwa kwe-1.x yaya emndenini wokukhishwa kwe-2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Inguqulo ye-Ultimate Multisite 2.0 nangaphezulu iwukubhalwa kabusha okuphelele kwe-codebase, okusho ukuthi kuncane kakhulu okwabiwe phakathi kwenguqulo endala nentsha. Ngaleso sizathu, lapho uthuthukisa usuka ku-1.x uya ku-2.x, idatha yakho kuzodingeka ithuthelwe kufomethi izinguqulo ezintsha ezingayiqonda.
 
@@ -15,7 +15,7 @@ Lesi sifundo sichaza ukuthi umthuthi usebenza kanjani, okufanele ukwenze uma kwe
 
 _**OKUBALULEKILE: Ngaphambi kokuthi uqale ukuthuthukisa usuka enguqulweni 1.x uye enguqulweni 2.0 sicela uqinisekise ukuthi wenza ikhophi eyisipele ye-database yesayithi lakho**_
 
-## Izinyathelo zokuqala
+## Izinyathelo zokuqala {#first-steps}
 
 Isinyathelo sokuqala ukulanda ifayela le-plugin elingu-.zip bese ufaka inguqulo 2.0 ku-Dashboard yomlawuli wenethiwekhi yakho.
 
@@ -51,7 +51,7 @@ Ngemva kokwenza ilayisensi isebenze, ungaqala ukufakwa kwangempela ngokuchofoza 
 
 <!-- Isithombe-skrini asitholakali: Ikhasi lokufaka elibonisa okuzobuyekezwa ngenkinobho ethi Faka -->
 
-## Manje, ukuthutha
+## Manje, ukuthutha {#now-the-migration}
 
 Umthuthi unesici sokuphepha esakhelwe ngaphakathi lapho uzohlola yonke i-multisite yakho ukuze aqinisekise ukuthi yonke idatha yakho ye-Ultimate Multisite ingathuthwa ngaphandle kwezinkinga. Chofoza inkinobho ethi **Sebenzisa Ukuhlola** ukuze uqale inqubo.
 
@@ -59,13 +59,13 @@ Umthuthi unesici sokuphepha esakhelwe ngaphakathi lapho uzohlola yonke i-multisi
 
 Ngemva kokusebenzisa ukuhlola, unezinto ezimbili ezingase zenzeke: umphumela ungaba **nephutha** noma **ngaphandle kwephutha**.
 
-### Nephutha
+### Nephutha {#with-error}
 
 Uma uthola umlayezo wephutha, kuzodingeka uxhumane nethimba lethu lokweseka ukuze bakusize ukulungisa iphutha. Qiniseka ukuthi **unikeza i-log yephutha** lapho udala ithikithi. Ungalanda i-log noma ungachofoza isixhumanisi esithi xhumana nethimba lethu lokweseka. Sizovula iwijethi yosizo ohlangothini lwesokudla lwekhasi lakho nezinkambu esezigcwaliselwe wena ezihlanganisa ama-log amaphutha ngaphansi kwencazelo.
 
 _**Njengoba isistimu ithole iphutha, ngeke ukwazi ukuqhubeka nokuthuthela enguqulweni 2.0. Ungabe usubuyela enguqulweni 1.x ukuze uqhubeke nokusebenzisa inethiwekhi yakho kuze kulungiswe iphutha.**_
 
-### Ngaphandle Kwephutha
+### Ngaphandle Kwephutha {#without-error}
 
 Uma isistimu ingatholi noma yiliphi iphutha, uzobona umlayezo wempumelelo nenkinobho ethi **Thutha** ezansi ezokuvumela ukuthi uqhubeke nokuthutha. Kuleli khasi, uzokhunjuzwa ukuthi udale ikhophi eyisipele ye-database yakho ngaphambi kokuqhubekela phambili, esikuncoma kakhulu. Chofoza **Thutha** uma usunayo ikhophi eyisipele.
 

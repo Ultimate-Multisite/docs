@@ -4,11 +4,11 @@ title: ຕົວກອງ - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# ຕົວກອງ: retrieve_password_title
+# ຕົວກອງ: retrieve_password_title {#filter-retrievepasswordtitle}
 
 ກອງຫົວຂໍ້ຂອງອີເມວຣີເຊັດລະຫັດຜ່ານ.
 
-## ພາຣາມິເຕີ
+## ພາຣາມິເຕີ {#parameters}
 
 | ຊື່ | ປະເພດ | ຄຳອະທິບາຍ |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 | $user_login | `string` | ຊື່ຜູ້ໃຊ້ສຳລັບຜູ້ໃຊ້. |
 | $user_data | `\WP_User` | ວັດຖຸ WP_User. |
 
-### ຕັ້ງແຕ່
+### ຕັ້ງແຕ່ {#since}
 
 - 2.8.0
 - 4.4.0: Added the <code>$user_login</code> and <code>$user_data</code> parameters.
-### ແຫຼ່ງທີ່ມາ
+### ແຫຼ່ງທີ່ມາ {#source}
 
 ຖືກກຳນົດໃນ [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L135) ທີ່ແຖວ 135
 
 
-## ຄ່າທີ່ສົ່ງກັບ
+## ຄ່າທີ່ສົ່ງກັບ {#returns}
 ຫົວຂໍ້ອີເມວເລີ່ມຕົ້ນ.

@@ -3,7 +3,7 @@ title: Pahina ng Akaw ng Kliyente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pahina ng Account ng Iyong Kliyente (v2)
+# Pahina ng Account ng Iyong Kliyente (v2) {#your-clients-account-page-v2}
 
 _**MAHALAGANG PAUNAWA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 
@@ -11,7 +11,7 @@ Kapag ang mga customer ay sumubscribe sa isang plano sa iyong network, mayroon s
 
 Sa tutorial na ito, gagabayan ka namin sa pahina ng account ng customer at makikita mo kung ano ang pwedeng tingnan at gawin nila doon.
 
-## Ang Account Page
+## Ang Account Page {#the-account-page}
 
 Maaari mong ma-access ang account page sa pamamagitan ng pag-click sa **Account** sa loob ng dashboard ng iyong customer.
 
@@ -27,7 +27,7 @@ Pagkatapos mag-click ang customer dito, makakakita sila ng overview ng kanilang 
 
 Maa rin nilang mabago ang membership patungo sa ibang plano, o bumili ng ibang package o serbisyo na inaalok mo. Tingnan natin ang bawat seksyon nang hiwalay.
 
-### Balangkas ng Iyong Membership:
+### Balangkas ng Iyong Membership: {#your-membership-overview}
 
 Ang unang bloke sa ibaba mismo ng pangalan ng website ng iyong mga customer ay nagpapakita ng kabuuan ng kanilang kasalukuyang plano at mga serbisyo/package na binili gamit ito. Ipinapakita rin dito ang membership number, ang paunang halagang binayaran para dito, kung magkano ang presyo ng plano at anumang serbisyo/package, at kung ilang beses sila nabayaran para sa membership na ito. Makikita rin nila kung ang membership ay **Active** (Aktibo), **Expired** (Nalipas na), o **Canceled** (Nai-cancel).
 
@@ -43,7 +43,7 @@ Ngayon, kung pipili ng iyong mga customer na bumili ng mga package o serbisyo pa
 
 Tandaan na hindi maaaring magdagdag ng coupon codes sa pahina ng pagbabago ng membership na ito. Kung gumamit ang customer ng coupon code noong unang pagbili ng membership, gagamitin din ang code na iyon para sa bagong membership na ito.
 
-### Pag-update ng Billing Address:
+### Pag-update ng Billing Address: {#updating-the-billing-address}
 
 Sa account page, pwedeng i-update ng mga customer nila ang kanilang billing address. Kailangan lang nilang i-click ang **Update** sa tabi ng _Billing Address_.
 
@@ -53,7 +53,7 @@ Magpapakita ng bagong window para sa customer mo. Ang kailangan lang nilang gawi
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Pagbabago ng Site Template:
+### Pagbabago ng Site Template: {#changing-the-site-template}
 
 Para payagan ang mga customer mong magpalit ng site template, kailangan mong pumunta sa **Ultimate Multisite > Settings > Sites** at i-toggle on ang opsyon na **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Pagkatapos i-toggle ang confirmation at i-click ang **Process Switch**, ang bago
 
 Maaari ring gamitin ng mga customer ang **Reset current template** mula sa panel na ito kapag kailangan nilang ibalik ang site sa kasalukuyang itinalagang template. Tulad ng pagpapalit sa ibang template, ang pag-reset ng template ay maaaring magpabago (overwrite) ng laman ng site, kaya dapat lang silang kumpirmahin ito kapag naiintindihan na nila ang aksyong iyon.
 
-### Pagdaragdag ng Custom Domains:
+### Pagdaragdag ng Custom Domains: {#adding-custom-domains}
 
 Magkakaroon din ang iyong mga customer ng opsyon na magdagdag ng custom domain para sa plan na ito sa kanilang account page. Upang payagan ang iyong mga customer na gumamit ng custom domains, pumunta sa **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Pagkatapos mag-click sa **Next Step**, pwedeng idagdag ng iyong mga customer ang
 
 Pagkatapos mag-click sa **Add Domain**, idadagdag ang domain sa account ng iyong customer. Ang kailangan na lang nilang gawin ngayon ay baguhin ang DNS records ng custom domain na ito sa kanilang domain registrar.
 
-### Pagbabago ng Password:
+### Pagbabago ng Password: {#changing-password}
 
 Sa loob ng account dashboard, pwedeng baguhin din ng iyong mga customer ang kanilang password sa pamamagitan ng pag-click sa **Change Password**.
 
@@ -125,7 +125,7 @@ Ito ay magpapakita ng bagong window kung saan kailangan ng mga customer na ilaga
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Delikadong Lugar (Danger Zone):
+### Delikadong Lugar (Danger Zone): {#danger-zone}
 
 Mayroon din tayong dalawang opsyon na ipinapakita sa bahaging **Danger Zone**: **Delete Site** at **Delete Account**. Pareho silang nasa Danger Zone dahil ang dalawang aksyong ito ay hindi na mababawi. Kung buburahin ng iyong mga customer ang kanilang website o account, hindi na nila ito mababawi.
 

@@ -3,13 +3,13 @@ title: Ho aha kopanyo e ikhethileng ea mongodisi
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ho aha Khokahanyo ea Registrar e Iketselitsoeng
+# Ho aha Khokahanyo ea Registrar e Iketselitsoeng {#building-a-custom-registrar-integration}
 
 Addon ea Domain Seller e sebelisa paterone ea **Integration Registry**. Registrar ka ’ngoe ke class ea PHP e sebelisang `Domain_Selling_Capability` mme e ingolisa ka action hook ea `wu_domain_seller_register_capabilities`.
 
 Tataiso ena e bontša kamoo u ka hokelang registrar e iketselitsoeng.
 
-## Interface
+## Interface {#the-interface}
 
 Class ea hao e tlameha ho sebelisa `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` le ho atolosa `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Mekhoa ea boikhethelo
+### Mekhoa ea boikhethelo {#optional-methods}
 
 Sebelisa ena ho bula likarolo tse eketsehileng. Addon e lemoha tšehetso ka `method_exists()`:
 
@@ -81,7 +81,7 @@ Sebelisa ena ho bula likarolo tse eketsehileng. Addon e lemoha tšehetso ka `met
 | `get_epp_code(string $domain_name): array` | Phetiso ea domain (e tsoang) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Phetiso ea domain (e kenang) |
 
-### Tumellano ea boleng bo khutlisitsoeng
+### Tumellano ea boleng bo khutlisitsoeng {#return-value-convention}
 
 Mekhoa eohle e khutlisa array e nang le bonyane senotlolo sa `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Ho ngolisa bokhoni ba hao
+## Ho ngolisa bokhoni ba hao {#registering-your-capability}
 
 Ngolisa class ea hao u sebelisa action ea `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argument ea pele ho `add_capability()` ke **ID ea mofani** — slug ea litlhaku 
 
 ---
 
-## Ho eketsa masimo a mangolo a tumello ho wizard
+## Ho eketsa masimo a mangolo a tumello ho wizard {#adding-credential-fields-to-the-wizard}
 
 Ho lumella batsamaisi ho kenya mangolo a tumello ka setup wizard, ngolisa khokahanyo ea hao:
 
@@ -137,7 +137,7 @@ Mangolo a tumello a bolokoa e le likhetho tsa network ho sebelisoa li-ID tsa mas
 
 ---
 
-## Hooks bakeng sa liketso tsa ka mor’a ngoliso
+## Hooks bakeng sa liketso tsa ka mor’a ngoliso {#hooks-for-post-registration-actions}
 
 Sebelisa liketso tsena ho tsosa webhooks, provisioning, litsebiso, kapa lintlafatso tsa CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Ho boloka direkoto
+## Ho boloka direkoto {#logging}
 
 Ngola kanaleng ya direkoto e kgethehileng bakeng sa mofani wa hao o sebedisa `wu_log_add()`:
 

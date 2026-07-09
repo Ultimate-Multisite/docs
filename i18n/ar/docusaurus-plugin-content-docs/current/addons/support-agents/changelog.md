@@ -3,7 +3,7 @@ title: سجل تغييرات وكلاء الدعم
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# سجل تغييرات وكلاء الدعم
+# سجل تغييرات وكلاء الدعم {#support-agents-changelog}
 
 الإصدار: 1.0.14 - تم إصداره في 2026-05-05
 * إصلاح: تمت إضافة ترويسة Requires Plugins للتصريح الصحيح عن تبعية plugin في WordPress

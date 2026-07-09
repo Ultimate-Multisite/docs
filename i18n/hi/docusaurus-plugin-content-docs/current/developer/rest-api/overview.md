@@ -3,28 +3,28 @@ title: REST API अवलोकन
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API संदर्भ
+# REST API संदर्भ {#rest-api-reference}
 
-## आधार विन्यास
+## आधार विन्यास {#base-configuration}
 
 **आधार URL:** `{site_url}/wp-json/wu/v2/`
 **प्रमाणीकरण:** API कुंजी और गुप्त कुंजी (HTTP Basic Auth या URL पैरामीटर)
 
-## प्रमाणीकरण
+## प्रमाणीकरण {#authentication}
 
-### API सक्षम करें
+### API सक्षम करें {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API क्रेडेंशियल प्राप्त करें
+### API क्रेडेंशियल प्राप्त करें {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### प्रमाणीकरण विधियाँ
+### प्रमाणीकरण विधियाँ {#authentication-methods}
 
 **HTTP Basic Auth (अनुशंसित):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## मुख्य एंडपॉइंट
+## मुख्य एंडपॉइंट {#core-endpoints}
 
-### 1. ग्राहक API
+### 1. ग्राहक API {#1-customers-api}
 
 **आधार रूट:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. साइट API
+### 2. साइट API {#2-sites-api}
 
 **आधार रूट:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. सदस्यता API
+### 3. सदस्यता API {#3-memberships-api}
 
 **आधार रूट:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. उत्पाद API
+### 4. उत्पाद API {#4-products-api}
 
 **आधार रूट:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. भुगतान API
+### 5. भुगतान API {#5-payments-api}
 
 **आधार रूट:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. डोमेन API
+### 6. डोमेन API {#6-domains-api}
 
 **आधार रूट:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## पंजीकरण एंडपॉइंट
+## पंजीकरण एंडपॉइंट {#registration-endpoint}
 
 `/register` एंडपॉइंट पूरा भुगतान/पंजीकरण प्रवाह प्रदान करता है:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## संप्रभु किरायेदार एंडपॉइंट
+## संप्रभु किरायेदार एंडपॉइंट {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 उन एकीकरणों के लिए संप्रभु किरायेदार REST कवरेज जोड़ता है, जो अलग-थलग किरायेदारों का प्रावधान, निरीक्षण या सत्यापन करते हैं।
 
@@ -242,7 +242,7 @@ DELETE /wu/v2/tenants/{site_id}
 
 `ready: false` को लॉन्च से पहले अवरोधक मानें। सत्यापन विवरण जाँचें, डेटाबेस होस्ट बाइंडिंग, कतार, उपयोगकर्ता प्रावधान या रूटिंग समस्या ठीक करें, फिर सत्यापन दोबारा आज़माएँ।
 
-## त्रुटि प्रतिक्रियाएँ
+## त्रुटि प्रतिक्रियाएँ {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ DELETE /wu/v2/tenants/{site_id}
 }
 ```
 
-## पृष्ठांकन और फ़िल्टरिंग
+## पृष्ठांकन और फ़िल्टरिंग {#pagination-and-filtering}
 
 **क्वेरी पैरामीटर:**
 ```http

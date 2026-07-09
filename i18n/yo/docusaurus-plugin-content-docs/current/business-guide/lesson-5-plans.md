@@ -3,15 +3,15 @@ title: 'Ẹ̀kọ́ 5: Ṣíṣe àpẹrẹ àwọn ètò rẹ'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ẹ̀kọ́ 5: Ṣíṣe Àwọn Eto Rẹ
+# Ẹ̀kọ́ 5: Ṣíṣe Àwọn Eto Rẹ {#lesson-5-designing-your-plans}
 
 Àwọn ipele eto rẹ kì í ṣe ipele owó nìkan -- wọ́n jẹ́ àfihàn bí àwọn oníbàárà niche rẹ ṣe ń ṣiṣẹ́ gangan. Nínú ẹ̀kọ́ yìí, ìwọ yóò ṣe àwọn ipele ọjà tí ó bá àwọn àìní gidi ti àwọn ilé iṣẹ́ fitness mu ní àwọn ipele ìdàgbàsókè ọ̀tọ̀ọ̀tọ̀.
 
-## Ibi Tí A Dúró Sí
+## Ibi Tí A Dúró Sí {#where-we-left-off}
 
 FitSite ti ní template mẹ́ta tí ó ti ṣetán (Studio Essential, Gym Pro, Fitness Chain). Ní báyìí a dá àwọn eto tí yóò pinnu ohun tí àwọn oníbàárà lè wọlé sí àti ohun tí wọ́n yóò san sílẹ̀.
 
-## Rírò Nípa Àwọn Ẹgbẹ́ Oníbàárà
+## Rírò Nípa Àwọn Ẹgbẹ́ Oníbàárà {#thinking-in-customer-segments}
 
 Àṣìṣe tí ọ̀pọ̀ ènìyàn máa ń ṣe ni ṣíṣe àwọn eto ní ayíká àwọn ẹ̀ya imọ̀-ẹ̀rọ (ibi ìpamọ́, bandwidth, iye ojú-ìwé). Àwọn oníbàárà niche rẹ kì í rò ní àwọn ọ̀nà wọ̀nyẹn. Onílé gym máa ń rò nípa ohun tí wọ́n nílò láti ṣiṣẹ́ ilé iṣẹ́ wọn.
 
@@ -25,11 +25,11 @@ Fún àwọn studio fitness, ẹgbẹ́ àdánidá mẹ́ta wà:
 
 Àwọn eto rẹ gbọ́dọ̀ bá àwọn ẹgbẹ́ wọ̀nyí mu, kì í ṣe àwọn àkójọpọ̀ ẹ̀ya tí kò ní ìdí.
 
-## Ṣíṣe Àwọn Eto FitSite
+## Ṣíṣe Àwọn Eto FitSite {#creating-the-fitsite-plans}
 
 Lọ sí **Ultimate Multisite > Àwọn Ọjà > Fi Ọjà Kun** fún eto kọ̀ọ̀kan.
 
-### Eto 1: FitSite Starter -- $49/oṣù
+### Eto 1: FitSite Starter -- $49/oṣù {#plan-1-fitsite-starter----49month}
 
 **Ìfọkànsí**: Àwọn trainer aládàáṣe àti àwọn studio kéékèèké
 
@@ -59,7 +59,7 @@ Lọ sí **Ultimate Multisite > Àwọn Ọjà > Fi Ọjà Kun** fún eto kọ̀
 - Akori tí o yàn: Mu ṣiṣẹ́ ní dandan
 - Gbogbo akori mìíràn: Ti farasin
 
-### Eto 2: FitSite Growth -- $99/oṣù
+### Eto 2: FitSite Growth -- $99/oṣù {#plan-2-fitsite-growth----99month}
 
 **Ìfọkànsí**: Àwọn gym ibi-kan ṣoṣo tí ó ti dágbà
 
@@ -85,7 +85,7 @@ Lọ sí **Ultimate Multisite > Àwọn Ọjà > Fi Ọjà Kun** fún eto kọ̀
 - Ẹgbẹ́ eto: FitSite Plans
 - Ètò ọjà: 2
 
-### Eto 3: FitSite Pro -- $199/oṣù
+### Eto 3: FitSite Pro -- $199/oṣù {#plan-3-fitsite-pro----199month}
 
 **Ìfọkànsí**: Àwọn ẹ̀wọ̀n fitness ibi-púpọ̀
 
@@ -109,7 +109,7 @@ Lọ sí **Ultimate Multisite > Àwọn Ọjà > Fi Ọjà Kun** fún eto kọ̀
 - Ẹgbẹ́ eto: FitSite Plans
 - Ètò ọjà: 3
 
-## Ṣíṣètò Ẹgbẹ́ Eto Náà
+## Ṣíṣètò Ẹgbẹ́ Eto Náà {#setting-up-the-plan-group}
 
 Ẹgbẹ́ eto náà rí i dájú pé àwọn oníbàárà lè ṣe ìgbésókè tàbí ìsọ̀kalẹ̀ nínú ẹbí eto FitSite nìkan. Lórí taabu **Ìgbésókè & Ìsọ̀kalẹ̀** ti eto kọ̀ọ̀kan:
 
@@ -118,7 +118,7 @@ Lọ sí **Ultimate Multisite > Àwọn Ọjà > Fi Ọjà Kun** fún eto kọ̀
 
 Èyí dá ọ̀nà ìgbésókè tó ṣe kedere sílẹ̀: Starter → Growth → Pro.
 
-## Fífi Àwọn Order Bump Kun
+## Fífi Àwọn Order Bump Kun {#adding-order-bumps}
 
 Àwọn order bump jẹ́ àwọn ọjà àfikún tí a ń fúnni nígbà ìparí rírà. Fún FitSite, ronú nípa:
 
@@ -128,7 +128,7 @@ Lọ sí **Ultimate Multisite > Àwọn Ọjà > Fi Ọjà Kun** fún eto kọ̀
 
 Dá wọ̀nyí sílẹ̀ gẹ́gẹ́ bí àwọn ọjà irú **Àpò** nínú Ultimate Multisite kí o sì so wọ́n mọ́ àwọn eto tó bá yẹ.
 
-## Ìdí Tí Ẹ̀rọ Yìí Fi Ṣiṣẹ́
+## Ìdí Tí Ẹ̀rọ Yìí Fi Ṣiṣẹ́ {#why-this-structure-works}
 
 - **Starter** yọ àwọn ìdènà wọlé kúrò -- owó kékeré, ìpèsè tó rọrùn, ó mú kí àwọn trainer wọlé sí ayélujára kíákíá
 - **Growth** fi àwọn ẹ̀ya tí àwọn gym máa ń béèrè fún gangan kun -- booking, àwọn gallery, àwọn domain àdáni
@@ -136,7 +136,7 @@ Dá wọ̀nyí sílẹ̀ gẹ́gẹ́ bí àwọn ọjà irú **Àpò** nínú U
 - **Àwọn order bump** jẹ́ kí àwọn oníbàárà ṣe tiwọn láì mú àwọn eto pàtàkì nira
 - **Ọ̀nà ìgbésókè tó ṣe kedere** túmọ̀ sí pé àwọn oníbàárà ń dàgbà pẹ̀lú rẹ dípò kí wọ́n lọ
 
-## Nẹ́tíwọ́ọ̀kì FitSite Títí Di Báyìí
+## Nẹ́tíwọ́ọ̀kì FitSite Títí Di Báyìí {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Ohun Tí A Kọ́ Nínú Ẹ̀kọ́ Yìí
+## Ohun Tí A Kọ́ Nínú Ẹ̀kọ́ Yìí {#what-we-built-this-lesson}
 
 - **Àwọn ipele eto mẹ́ta** tí ó bá àwọn ẹgbẹ́ ilé iṣẹ́ fitness gidi mu
 - **Dídènà ẹ̀ya** ní lílo àwọn ìṣàkóso àfikún àti template ti Ultimate Multisite

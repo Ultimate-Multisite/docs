@@ -3,11 +3,11 @@ title: Maareynta Email-yada Nidaamka
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Maareynta Email-yadaal
+# Maareynta Email-yadaal {#managing-system-emails}
 
 Ultimate Multisite waxay u dirtaa emailyo kooban arrimaha systemka sida xaqiijinta isdiiwaangelinta, helitaanka lacagta, iyo isbeddellada xubnaha. Waxaad hagaajin kartaa qaababka email-ka si ay ula jaanqaadaan calaamaddaada brand-kaaga.
 
-## Aragtida Email-yada Systemka
+## Aragtida Email-yada Systemka {#viewing-system-emails}
 
 U socda **Ultimate Multisite → Settings** oo ku riix **Emails** tab-ka si aad u aragto dejimaha la xiriira email-ka.
 
@@ -21,7 +21,7 @@ Waxaad sidoo kale waxaad hagaajin kartaa qaabab email-ka gaarka ah adiga oo isti
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Soo darista Qaabada Email-ka Cusub
+## Soo darista Qaabada Email-ka Cusub {#importing-new-email-templates}
 
 Noocyada cusub ee Ultimate Multisite iyo add-ons-yada cusub waxay soo bandhigi karaan qaabab email-ka cusub. Si loo ka fogaado isku dhac, qaababka cusub ma ku lahaan doonaan oo si toos ah loogu daray — waa inaad si gacanta ah ugu soo darto.
 
@@ -32,7 +32,7 @@ Si aad u soo darto qaabab email-ka cusub:
 3. Fur (Toggle) doorashada **Import Emails** si aad u aragto kuwa la heli karo
 4. Dooro qaababka aad rabto inaad soo darto oo xaqiijin
 
-## Dib-u-dhigista Qaabada Email-ka
+## Dib-u-dhigista Qaabada Email-ka {#resetting-email-templates}
 
 Haddii aad hagaajisay qaab email-ka oo aad rabto inaad dib u noqoto waxa horeeyay (default content), waxaad leedahay laba dooro:
 

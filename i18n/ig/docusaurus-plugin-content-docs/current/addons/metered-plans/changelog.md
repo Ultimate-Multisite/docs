@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe nke Atụmatụ a na-akwụ dịka ojiji
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ndekọ Mgbanwe Atụmatụ A Na-atụ n’Otu Ojiji
+# Ndekọ Mgbanwe Atụmatụ A Na-atụ n’Otu Ojiji {#metered-plans-changelog}
 
 Ụdị 1.1.0 - E wepụtara na 2026-05-05
 - Ọhụrụ: Ịgba ụgwọ AI token maka multisite subsites — soro ma gbaa ụgwọ ojiji AI token gafee saịtị ndị ahịa nwere ọnụego kwa-token a na-ahazi
@@ -14,17 +14,17 @@ _i18n_hash: ee036a85eb635b4b503c94798251e839
 - Mmezi: Edoziri njehie fatal na nsogbu double-initialization mgbe a na-ebunye plugin
 - Emelitere: Tinyeere check-env npm script ka gburugburu ndị mmepe hazie onwe ha na mbido mbụ
 
-### 1.0.3
+### 1.0.3 {#103}
 * Emelitere gaa na Plugin Update Checker v5
 * Tinyeere headers WordPress plugin nke ọgbara ọhụrụ
 * Melite ndakọrịta na ụdị WordPress kachasị ọhụrụ
 * Kwalitere arụmọrụ nsuso ojiji
 
-### 1.0.2
+### 1.0.2 {#102}
 * Mmezi njehie na mmezi arụmọrụ
 * Kwalitere akụkọ ojiji
 
-### 1.0.0
+### 1.0.0 {#100}
 * Mwepụta mbụ
 * Ọrụ isi nke ịgba ụgwọ a na-atụ n’otu ojiji
 * Nsuso ojiji na ngụkọta overage

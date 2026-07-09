@@ -3,7 +3,7 @@ title: Enregistrer le point de terminaison API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Le point de terminaison API /register de Ultimate Multisite
+# Le point de terminaison API /register de Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Dans ce tutoriel, vous apprendrez à utiliser le point de terminaison API /register de Ultimate Multisite pour créer l’ensemble du processus d’onboarding d’un nouveau client dans votre réseau et comment le faire avec Zapier.
 
@@ -29,11 +29,11 @@ Sélectionnez **Enable API** et récupérez vos identifiants API.
 
 Maintenant, explorons le point de terminaison puis créons une action d’inscription dans Zapier.
 
-## Paramètres du corps du point de terminaison
+## Paramètres du corps du point de terminaison {#endpoint-body-parameters}
 
 Voyons un aperçu des informations minimales que nous devons envoyer au point de terminaison. À la fin de cet article, vous trouverez l’appel complet.
 
-### Client
+### Client {#customer}
 
 Voici les informations nécessaires au processus de création de l’utilisateur et du client Ultimate Multisite :
 
@@ -43,25 +43,25 @@ Il est possible d’envoyer l’ID client créé dans votre réseau. S’il n’
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Adhésion**
+### **Adhésion** {#membership}
 
 La seule information dont nous avons besoin dans cet objet est le statut de l’adhésion.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produits**
+### **Produits** {#products}
 
 Les produits sont fournis sous forme de tableau avec 1 ou plusieurs ID de produit de votre réseau. Attention, ce point de terminaison ne crée pas de produits. Consultez la documentation de Ultimate Multisite pour mieux comprendre le point de terminaison de création de produit.
 
 **"products" : [1,2],**
 
-### Paiement
+### Paiement {#payment}
 
 Comme pour l’adhésion, nous avons seulement besoin du statut.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Et pour terminer le corps, nous avons besoin de l’URL et du titre du site, tous deux dans l’objet Site.
 
@@ -69,13 +69,13 @@ Et pour terminer le corps, nous avons besoin de l’URL et du titre du site, tou
 
 Le retour du point de terminaison register sera un tableau contenant les informations de l’adhésion nouvellement créée.
 
-## Créer une action dans Zapier
+## Créer une action dans Zapier {#creating-an-action-in-zapier}
 
 Avec l’introduction de ce nouveau point de terminaison de création d’Account plus robuste, vous aurez également accès à une nouvelle action dans Zapier.
 
 Savez-vous comment utiliser et apprécier tout ce que la nouvelle version de Zapier offre ? En savoir plus ici. (lien ?)
 
-### Créer une action
+### Créer une action {#creating-an-action}
 
 Pour mieux illustrer l’utilisation du point de terminaison d’inscription avec Zapier, créons une intégration avec Google Forms. Chaque fois que ce formulaire est rempli et que les informations sont enregistrées dans la feuille de réponses du formulaire, une nouvelle adhésion sera créée dans le réseau Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Une fois les informations configurées, passez au test final. Sur le dernier éc
 
 Testez votre nouveau Zap et il devrait se terminer avec succès. Si une erreur survient, vérifiez tous les champs et s’ils sont envoyés correctement. Comme il y a beaucoup d’informations, certaines choses peuvent passer inaperçues.
 
-### Paramètres complets du point de terminaison
+### Paramètres complets du point de terminaison {#complete-endpoint-parameters}
 
 Voici l’appel complet et toutes les possibilités de champs qui peuvent être envoyés.
 

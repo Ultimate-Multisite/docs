@@ -3,11 +3,11 @@ title: Dizaina sistēmas estētikas prasme
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Dizaina sistēmas estētika prasmes
+# Dizaina sistēmas estētika prasmes {#design-system-aesthetics-skill}
 
 **Dizaina sistēmas estētikas prasmes** ir ceļvedisks pieeju, kas palīdz jums uzlabot vietnes vizuālo identitāti. Tas palīdz jums veikt vienotus lēmumus par tipografiju, krāsām, atstarpēm un motora tokeniem, kas definē jūsu dizaina sistēmu.
 
-## Kas ir Dizaina Sistēmas Estētika?
+## Kas ir Dizaina Sistēmas Estētika? {#what-is-design-system-aesthetics}
 
 Dizaina sistēmas estētika ir struktūru prasme, kas apņem:
 
@@ -20,9 +20,9 @@ Dizaina sistēmas estētika ir struktūru prasme, kas apņem:
 
 Šos lēmumus ir saglabāti jūsu tēmas `theme.json` failā, izveidojot kohesīvu vizuālu sistēmu.
 
-## Kāpēc lietot Dizaina Sistēmas Estētiku?
+## Kāpēc lietot Dizaina Sistēmas Estētiku? {#why-use-design-system-aesthetics}
 
-### Kohesība (Consistency)
+### Kohesība (Consistency) {#consistency}
 
 Dizaina sistēma nodrošina:
 
@@ -31,7 +31,7 @@ Dizaina sistēma nodrošina:
 - Atstarpes seko paredzamu pamatu
 - Animācijas sajūtas ir vienotas
 
-### Efektivitāte (Efficiency)
+### Efektivitāte (Efficiency) {#efficiency}
 
 Neveikt dizaina lēmumus pa lapām, bet:
 
@@ -39,7 +39,7 @@ Neveikt dizaina lēmumus pa lapām, bet:
 - Lietojiet tos visur
 - Atjauninājiet globāli mainot vienu vērtību
 
-### Fleksibilitāte (Flexibility)
+### Fleksibilitāte (Flexibility) {#flexibility}
 
 Jūs varat:
 
@@ -47,9 +47,9 @@ Jūs varat:
 - Eksperimentēt ar dažādām estētikām
 - Uzturēt zīmola kohesiju, t 발전ojoties
 
-## Dizaina Sistēmas Estētikas prasmes izslēgšana
+## Dizaina Sistēmas Estētikas prasmes izslēgšana {#triggering-the-design-system-aesthetics-skill}
 
-### Manāla aktivizācija (Manual Activation)
+### Manāla aktivizācija (Manual Activation) {#manual-activation}
 
 Jūs varat sākt prasmi jebkurā laikā:
 
@@ -69,7 +69,7 @@ vai
 "Vadīt mani caur dizaina sistēmas lēmumiem"
 ```
 
-### Automātiskās ierosinājumi (Automatic Suggestions)
+### Automātiskās ierosinājumi (Automatic Suggestions) {#automatic-suggestions}
 
 Agenti var ierosināt lietot prasmi, kad jūs:
 
@@ -78,9 +78,9 @@ Agenti var ierosināt lietot prasmi, kad jūs:
 - Vēlēties uzlabot vizuālo kohesiju
 - Jāt gatavojieties vietnes lansēšanai
 
-## Dizaina sistēmas estētika procesa
+## Dizaina sistēmas estētika procesa {#the-design-system-aesthetics-process}
 
-### 1. Tipografija
+### 1. Tipografija {#step-1-typography}
 
 Agentis jautā par jūsu fontu izvēles:
 
@@ -110,7 +110,7 @@ Pēc tam agentis definē:
 - **Svarības skale**: Fontu svars (regula, medium, bolda, etc.)
 - **Līnijas augstums**: Atstarpes starp līnijām lasāmības nodrošināšanai
 
-### 2. Krāsu palete
+### 2. Krāsu palete {#step-2-color-palette}
 
 ```
 Izveidojiet jūsu krāsu paleti.
@@ -140,7 +140,7 @@ Agentis izveido pilnu paleti, kas ietver:
 - Semantiskās krasas (veiksmi, brīdinājums, kļūda)
 - Hover un aktīvo stāvokli
 
-### 3. Atstarpes
+### 3. Atstarpes {#step-3-spacing}
 
 **Kuri, cik atvīrības laika vēlaties?**
 
@@ -160,7 +160,7 @@ Agent definē atraukuma tokenus:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Konkrētās vērtības paddingam, margīnām, tvaikam
 
-### 4. Sturi un Šaduvi
+### 4. Sturi un Šaduvi {#step-4-borders-and-shadows}
 
 ```
 Vizualā dziļums un definīcija:
@@ -183,7 +183,7 @@ Agent izveido:
 - Šaduva tokenus augšcelšanās līmeņiem
 - Atraukuma platumu tokenus
 
-### 5. Kinetika un Animācija
+### 5. Kinetika un Animācija {#step-5-motion-and-animation}
 
 ```
 Kā jums vajadzētu sajūt, kad tas ir interaktīvs?
@@ -205,9 +205,9 @@ Agent definē:
 - Easing funkcijas (ease-in, ease-out, ease-in-out)
 - Animācijas keyframes par biežām interakcijām
 
-## Dizaina sistēmas estētikas pielietošana
+## Dizaina sistēmas estētikas pielietošana {#applying-design-system-aesthetics}
 
-### Automātiska pielietošana
+### Automātiska pielietošana {#automatic-application}
 
 Pēc tam, kad pabeidzat savu prasmes, agent:
 
@@ -216,13 +216,13 @@ Pēc tam, kad pabeidzat savu prasmes, agent:
 3. Regenerē blokiem stili, lai atbilstu jaunajai sistēmai
 4. Activēja atjaunināto tēmu
 
-### Manāla pielietošana
+### Manāla pielietošana {#manual-application}
 
 Jūs varat arī rediģēt `theme.json` tieši:
 
-## Redzamāšana Jums Dizainam sistēmas
+## Redzamāšana Jums Dizainam sistēmas {#viewing-your-design-system}
 
-### Jautāt agentu
+### Jautāt agentu {#ask-the-agent}
 
 ```
 "Parādiet man dizainam sistēmu"
@@ -236,13 +236,13 @@ vai
 
 Agentas parādīs jūsu tipografiju, krāsas, atstarpes un citus tokenus.
 
-### Skatīt theme.json
+### Skatīt theme.json {#view-themejson}
 
 Atveriet fail `/wp-content/themes/[theme-name]/theme.json` teksta redaktō, lai redzētu neapstrādātus tokenu definīcijas.
 
-## Dizainam sistēmas uppilde
+## Dizainam sistēmas uppilde {#updating-your-design-system}
 
-### Ātra uppilde
+### Ātra uppilde {#quick-updates}
 
 Jautājiet agentam par konkrētām izmaiņām:
 
@@ -262,7 +262,7 @@ vai
 "Izveidot saraksta fontu virsrakstiem serifu"
 ```
 
-### Pilna redizajnēšana
+### Pilna redizajnēšana {#full-redesign}
 
 Atjaunināt Dizainam sistēmas estētikas (Design System Aesthetics) prasmi:
 
@@ -272,7 +272,7 @@ Atjaunināt Dizainam sistēmas estētikas (Design System Aesthetics) prasmi:
 
 Tas atrodas jums visiem lēmumiem, sākot no jūsu pašreznajām vērtībām.
 
-### Daļējas uppilde
+### Daļējas uppilde {#partial-updates}
 
 Atjaunināt konkrētus aspektus:
 
@@ -280,15 +280,15 @@ Atjaunināt konkrētus aspektus:
 "Tikai atjaunināt krāsu palīdu, atstāt visu citu"
 ```
 
-## Dizainam sistēmas labākās prakse
+## Dizainam sistēmas labākās prakse {#design-system-best-practices}
 
-### Konsistentsība
+### Konsistentsība {#consistency-1}
 
 - Izmantojiet vienā un tādas pašas tokenus visur
 - Neveido vienreiz lietotās krasas vai izmērus
 - Pievienojieties tokeniem, neaizmirstiet iekodēt vērtības tieši koda
 
-### Nosaukumi
+### Nosaukumi {#naming}
 
 Izmantojiet skaidrus, semantiskus nosaukumus:
 
@@ -298,7 +298,7 @@ Izmantojiet skaidrus, semantiskus nosaukumus:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalētība
+### Skalētība {#scalability}
 
 Dokumentējiet savu dizaina sistēmu:
 
@@ -306,9 +306,9 @@ Dokumentējiet savu dizaina sistēmu:
 *   Kad izmantot katru tokeni?
 *   Izņemumi un robežsituācijas.
 
-## Parasti dizaina sistēmas modeļi
+## Parasti dizaina sistēmas modeļi {#documentation}
 
-### Modern Minimalistiskais
+### Modern Minimalistiskais {#common-design-system-patterns}
 
 *   Sans-serif tipografija (Inter, Helvetica).
 *   Atkarīga krāsu palīdzība (2–3 krāsas).
@@ -316,7 +316,7 @@ Dokumentējiet savu dizaina sistēmu:
 *   Meklēji (subtle shadows).
 *   Lieliski un ātri animācijas.
 
-### Sirds un draudzīga
+### Sirds un draudzīga {#modern-minimalist}
 
 *   Sistēma, kas kombinē serif un sans-serif tipografiju.
 *   Varmas krāsu palīdzība (oranges, varmu grēnu).
@@ -324,7 +324,7 @@ Dokumentējiet savu dizaina sistēmu:
 *   Meklēji.
 *   Spēlētspēļu animācijas.
 
-### Profesionālā korporatīva
+### Profesionālā korporatīva {#warm-and-friendly}
 
 *   Skaidra sans-serif tipografija (Roboto, Open Sans).
 *   Neitralna palīdzība ar akcenta krāsu.
@@ -332,7 +332,7 @@ Dokumentējiet savu dizaina sistēmu:
 *   Minimaliskie mekļi.
 *   Meklēji pārejas.
 
-### Kreatīva un draudzīga
+### Kreatīva un draudzīga {#professional-corporate}
 
 *   Atšķirīga tipografija.
 *   Varmas krāsu palīdzība.
@@ -340,7 +340,7 @@ Dokumentējiet savu dizaina sistēmu:
 *   Spēcīgi mekļi.
 *   Pazīstamas animācijas.
 
-## Kļūdu likums (Troubleshooting)
+## Kļūdu likums (Troubleshooting) {#creative-and-bold}
 
 **Mans dizaina sistēmas izmaiņas neparādās**
 *   Izsniegt brauzera kešu (clear your browser cache).
@@ -358,7 +358,7 @@ Dokumentējiet savu dizaina sistēmu:
 *   Manuāli rediģēt `theme.json` iepriekšējām vērtībām.
 *   Atjaunināt savu pakāpumu ar dažādiem izvēles.
 
-## Nākamie soļi (Next Steps)
+## Nākamie soļi (Next Steps) {#troubleshooting}
 
 Pēc dizaina sistēmas definēšanas:
 

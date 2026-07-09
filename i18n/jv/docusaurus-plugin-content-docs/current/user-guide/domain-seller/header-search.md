@@ -3,11 +3,11 @@ title: Panelusuran Domain Sesirah
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Panelusuran Domain ing Header
+# Panelusuran Domain ing Header {#header-domain-search}
 
 Gunakake tata pasang iki nalika sampeyan pengin formulir cilik ing header sing miwiti panelusuran domain, banjur ngidini pelanggan milih saka domain sing kasedhiya ing njero pambayaran Ultimate Multisite.
 
-## Syarat
+## Syarat {#requirements}
 
 - Ultimate Multisite network-active.
 - Multisite Ultimate Domain Seller network-active.
@@ -16,7 +16,7 @@ Gunakake tata pasang iki nalika sampeyan pengin formulir cilik ing header sing m
   - TLD sing didhukung wis dikonfigurasi, contone `com`, `net`, lan `org`.
 - Formulir pambayaran sing sah ngemot kolom **Pilihan Domain**.
 
-## Formulir pambayaran
+## Formulir pambayaran {#checkout-form}
 
 1. Gawe utawa owahi formulir pambayaran sing digunakake dening kaca pendhaftaran.
 2. Tambah kolom pambayaran/Account wajib sing normal, kalebu **Jeneng Panganggo**. Formulir pambayaran sing mung ngemot kolom domain bakal ditolak dening validasi Ultimate Multisite.
@@ -30,7 +30,7 @@ Kaca pendhaftaran kudu nampilake formulir pambayaran, contone:
 [wu_checkout slug="domain-form"]
 ```
 
-## Formulir header
+## Formulir header {#header-form}
 
 Tambah formulir `GET` cilik ing header situs sing ngirim tembung panelusuran sing dilebokake menyang kaca pambayaran minangka `domain_name`:
 
@@ -44,7 +44,7 @@ Tambah formulir `GET` cilik ing header situs sing ngirim tembung panelusuran sin
 
 Aja milih domain luwih dhisik ing JavaScript header kustom. Header mung kudu nerusake tembung panelusuran. Skrip pambayaran Domain Seller maca `?domain_name=example`, ngisi kothak panelusuran pambayaran, lan mbukak panelusuran kasedhiyan supaya pelanggan bisa milih saka domain sing dibalekake.
 
-## Tumindak sing diarepake
+## Tumindak sing diarepake {#expected-behaviour}
 
 Nggoleki `example` ing header kudu mbukak:
 
@@ -61,7 +61,7 @@ Pambayaran banjur kudu nampilake asil sing bisa dipilih kayata:
 
 Sawise milih asil sing kasedhiya, ringkesan pesenan kudu nyakup produk pendhaftaran domain lan jeneng domain sing dipilih.
 
-## Verifikasi
+## Verifikasi {#verification}
 
 1. Bukak kaca ngarep.
 2. Goleki jeneng polos, contone `example`.
@@ -71,7 +71,7 @@ Sawise milih asil sing kasedhiya, ringkesan pesenan kudu nyakup produk pendhafta
 6. Klik **Pilih** kanggo domain sing kasedhiya.
 7. Pesthekake ringkesan pesenan ngemot `Domain Registration - example.com` utawa domain sing dipilih.
 
-## Ngatasi masalah
+## Ngatasi masalah {#troubleshooting}
 
 - Yen ora ana dhaptar sing katon, priksa tab jaringan browser kanggo `admin-ajax.php?action=wu_domain_search` lan pesthekake iku mbalekake `domains` utawa `results` sing ora kosong.
 - Yen formulir pambayaran gagal validasi nalika disimpen, tambah kolom Account sing wajib kayata **Jeneng Panganggo**.

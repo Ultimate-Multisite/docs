@@ -4,11 +4,11 @@ title: Saringan - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Saringan: wu_apc_process_page_content
+# Saringan: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Ngidini pangembang ngowahi konten pungkasan
 
-## Parameter
+## Parameter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Ngidini pangembang ngowahi konten pungkasan
 | $to_replace | `array` | Array sing ngemot placeholder sing dicekel. |
 | $placeholder_count | `int` | Cacah placeholder sing ditemokake. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 1.4.0
-### Sumber
+### Sumber {#source}
 
 Ditetepake ing [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) ing baris 46
 
 
-## Balikan
+## Balikan {#returns}
 Konten sawisé diowahi.

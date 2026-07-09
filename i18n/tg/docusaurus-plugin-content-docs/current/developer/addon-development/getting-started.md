@@ -3,9 +3,9 @@ title: Оғози кор бо таҳияи аддон
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Таҳияи илова
+# Таҳияи илова {#addon-development}
 
-## Сохтори илова
+## Сохтори илова {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Қолаби файли асосии илова
+## Қолаби файли асосии илова {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Намунаи модели фармоишӣ
+## Намунаи модели фармоишӣ {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Ҳамгироии саҳифаи маъмурӣ
+## Ҳамгироии саҳифаи маъмурӣ {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Озмоиши Addon-и шумо
+## Озмоиши Addon-и шумо {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## нуқтаҳои густариши v2.13.0
+## нуқтаҳои густариши v2.13.0 {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0 якчанд нуқтаи густариш илова мекунад, ки барои addon-ҳое муфиданд, ки бо иҷорагирони мустақил, доменҳои пардохт, ё автоматикунонии DNS-и провайдери мизбон ҳамгиро мешаванд.
 
-### URL-ҳои идоракунии SSO ва сайти асосӣ
+### URL-ҳои идоракунии SSO ва сайти асосӣ {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Доменҳои асосии шакли пардохт
+### Доменҳои асосии шакли пардохт {#checkout-form-base-domains}
 
 Аз `wu_checkout_form_base_domains` истифода баред, вақте addon-и шумо доменҳои асосии муштараки иловагӣ пешниҳод мекунад, ки бояд ба мисли доменҳои **Site URL**-и шакли пардохт амал кунанд, на ба мисли пайвастҳои фармоишии барои ҳар сайт:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisite ин мизбонҳоро меъёрӣ мекунад ва барои онҳо сабтҳои автоматии домени хариташудаи барои ҳар сайтро мегузарад.
 
-### Эҷоди автоматии сабти домен
+### Эҷоди автоматии сабти домен {#automatic-domain-record-creation}
 
 Аз `wu_should_create_domain_record_for_site` истифода баред, вақте addon-и шумо бояд эҷоди автоматии сабти доменро барои сайти навтаъсис манъ ё ба таъхир гузорад:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 Ҳамгироиҳои провайдери мизбон, ки ба `wu_add_subdomain` гӯш медиҳанд, метавонанд ҳангоми эҷоди сайтҳо сабтҳои DNS-ро дар тарафи провайдер эҷод кунанд. Агар барои он амал ягон ҳамгироӣ сабт нашуда бошад, Ultimate Multisite кори пасзаминаи холиро мегузарад.
 
-## Қадамҳои навбатӣ
+## Қадамҳои навбатӣ {#next-steps}
 
 - [Маълумотномаи Hooks](/developer/hooks)-ро барои амалҳо ва филтрҳои дастрас баррасӣ кунед
 - [Шарҳи умумии REST API](/developer/rest-api/overview)-ро барои ҳамгироии API санҷед

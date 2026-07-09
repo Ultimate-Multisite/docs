@@ -3,7 +3,7 @@ title: Actualització de pla
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Actualitzar un pla (v2)
+# Actualitzar un pla (v2) {#upgrading-a-plan-v2}
 
 _**NOTA IMPORTANT: Aquest article es refereix a la versió 2.x d'Ultimate Multisite.**_
 
@@ -41,7 +41,7 @@ Després de completar el pagament (checkout), el/els nou/s producte(s) es trigar
 
 ##
 
-## Rutes d'Actualització i Desactualització
+## Rutes d'Actualització i Desactualització {#upgrade-and-downgrade-paths}
 
 En cada un dels vostres productes, tindreu una pestanya d'**Up & Downgrades**. La primera opció d'aquesta pestanya és un camp anomenat **Plan Group**.
 

@@ -3,7 +3,7 @@ title: Language Selector Changelog
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Talaan ng mga Pagbabago ng Language Selector
+# Talaan ng mga Pagbabago ng Language Selector {#language-selector-changelog}
 
 Version: 1.1.3 - Released on 2026-05-05
 * Pagkumpuni: Ang mga input variable ay nililinis na ngayon (sanitized) at ang mga custom hook name ay may unlapi (prefixed) para maiwasan ang pagkakasalungatan sa mga third-party plugins.

@@ -4,11 +4,11 @@ title: 'Sía - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Síar meta-gögnin áður en þau eru raðgerð til að vera geymd í gagnagrunninum.
 
-## Færibreytur
+## Færibreytur {#parameters}
 
 | Nafn | Tegund | Lýsing |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Síar meta-gögnin áður en þau eru raðgerð til að vera geymd í gagnagrunn
 | $data_unserialized | `array` | Hlutargögnin sem verða geymd. |
 | $this | `\Base_Model` | Tilvik hlutarins. |
 
-### Frá útgáfu
+### Frá útgáfu {#since}
 
 - 2.0.0
-### Uppruni
+### Uppruni {#source}
 
 Skilgreint í [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) í línu 534

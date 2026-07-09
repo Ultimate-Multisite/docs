@@ -4,11 +4,11 @@ title: Զտիչ - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Զտիչ՝ wu_apc_process_page_content
+# Զտիչ՝ wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Թույլ է տալիս մշակողներին փոփոխել վերջնական բովանդակությունը
 
-## Պարամետրեր
+## Պարամետրեր {#parameters}
 
 | Անուն | Տեսակ | Նկարագրություն |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Զանգված, որը պարունակում է պահվող տեղապահները։ |
 | $placeholder_count | `int` | Գտնված տեղապահների քանակը։ |
 
-### Սկսած
+### Սկսած {#since}
 
 - 1.4.0
-### Աղբյուր
+### Աղբյուր {#source}
 
 Սահմանված է [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) ֆայլում՝ 46-րդ տողում
 
 
-## Վերադարձնում է
+## Վերադարձնում է {#returns}
 Բովանդակությունը փոփոխումից հետո։

@@ -4,11 +4,11 @@ title: Filtrs - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filtrs: wu_limits_is_fluent_form_above_limit
+# Filtrs: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
 
 Pārbauda, vai dotais veidlapas tips ir atļauts šajā plānā. Ļauj plugin izstrādātājiem filtrēt atgriezto vērtību
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Pārbauda, vai dotais veidlapas tips ir atļauts šajā plānā. Ļauj plugin iz
 | $form_count | `int` | Pašreizējais veidlapu skaits |
 | $quota | `int` | Atļautā kvota |
 
-### Kopš
+### Kopš {#since}
 
 - 1.0.0
-### Avots
+### Avots {#source}
 
 - Definēts [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L56) 56. rindā
 - Definēts [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L89) 89. rindā

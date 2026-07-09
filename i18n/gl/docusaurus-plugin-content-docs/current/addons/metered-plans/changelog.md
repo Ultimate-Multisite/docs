@@ -3,7 +3,7 @@ title: Rexistro de cambios dos plans con medición
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Rexistro de cambios de plans medidos
+# Rexistro de cambios de plans medidos {#metered-plans-changelog}
 
 Versión 1.1.0 - Publicada o 2026-05-05
 - Novo: facturación de tokens de AI para subsitios multisite — rastrexa e factura o uso de tokens de AI en todos os sitios de clientes con tarifas por token configurables
@@ -14,17 +14,17 @@ Versión 1.1.0 - Publicada o 2026-05-05
 - Corrección: resolvéronse erros fatais e problemas de dobre inicialización ao cargar o plugin
 - Mellora: engadiuse o script npm check-env para que os contornos de desenvolvemento se autoconfiguren na primeira execución
 
-### 1.0.3
+### 1.0.3 {#103}
 * Actualizado a Plugin Update Checker v5
 * Engadidas cabeceiras modernas de plugin de WordPress
 * Mellorada a compatibilidade coas versións máis recentes de WordPress
 * Mellorado o rendemento do seguimento do uso
 
-### 1.0.2
+### 1.0.2 {#102}
 * Correccións de erros e melloras de rendemento
 * Mellorada a elaboración de informes de uso
 
-### 1.0.0
+### 1.0.0 {#100}
 * Lanzamento inicial
 * Funcionalidade principal de facturación medida
 * Seguimento do uso e cálculo de excedentes

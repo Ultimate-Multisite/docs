@@ -3,9 +3,9 @@ title: Gehigarrien garapenarekin hasteko
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Gehigarriaren garapena
+# Gehigarriaren garapena {#addon-development}
 
-## Gehigarriaren egitura
+## Gehigarriaren egitura {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Gehigarriaren fitxategi nagusiaren txantiloia
+## Gehigarriaren fitxategi nagusiaren txantiloia {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Eredu pertsonalizatuaren adibidea
+## Eredu pertsonalizatuaren adibidea {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Administrazio-orrialdearen integrazioa
+## Administrazio-orrialdearen integrazioa {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Zure addona probatzea
+## Zure addona probatzea {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## v2.13.0 hedapen-puntuak
+## v2.13.0 hedapen-puntuak {#v2130-extension-points}
 
 Ultimate Multisite v2.13.0-k hainbat hedapen-puntu gehitzen ditu, maizter subiranoekin, checkout domeinuekin edo host-hornitzaileen DNS automatizazioarekin integratzen diren addonentzat erabilgarriak direnak.
 
-### SSO eta gune nagusiaren kudeaketa-URLak
+### SSO eta gune nagusiaren kudeaketa-URLak {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### Checkout-inprimakien oinarri-domeinuak
+### Checkout-inprimakien oinarri-domeinuak {#checkout-form-base-domains}
 
 Erabili `wu_checkout_form_base_domains` zure addonak partekatutako oinarri-domeinu gehigarriak ematen dituenean, gune bakoitzeko mapa pertsonalizatuen ordez checkout-inprimakiko **Site URL** domeinu gisa jokatu behar dutenak:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 Ultimate Multisitek host horiek normalizatzen ditu eta haientzat gune bakoitzeko mapatutako domeinu-erregistro automatikoak saltatzen ditu.
 
-### Domeinu-erregistroen sorrera automatikoa
+### Domeinu-erregistroen sorrera automatikoa {#automatic-domain-record-creation}
 
 Erabili `wu_should_create_domain_record_for_site` zure addonak sortu berri den gune baterako domeinu-erregistroen sorrera automatikoa ezabatu edo atzeratu behar duenean:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 `wu_add_subdomain` entzuten duten host-hornitzaileen integrazioek hornitzailearen aldeko DNS erregistroak sor ditzakete guneak sortzen direnean. Ekintza horretarako integraziorik erregistratuta ez badago, Ultimate Multisitek atzeko planoko lan hutsa saltatzen du.
 
-## Hurrengo urratsak
+## Hurrengo urratsak {#next-steps}
 
 - Berrikusi [Hooks erreferentzia](/developer/hooks), erabilgarri dauden ekintzak eta iragazkiak ikusteko
 - Begiratu [REST API ikuspegi orokorra](/developer/rest-api/overview), API integraziorako

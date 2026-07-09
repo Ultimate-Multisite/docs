@@ -4,16 +4,16 @@ title: Filtras - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Filtras: wu_element_block_types_to_check
+# Filtras: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
 
 Vėliau gali prireikti pridėti papildomų blokų.
 
-### Nuo
+### Nuo {#since}
 
 - 2.0.0
-### Šaltinis
+### Šaltinis {#source}
 
 Apibrėžta [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L300) 300 eilutėje
 
 
-## Grąžina
+## Grąžina {#returns}

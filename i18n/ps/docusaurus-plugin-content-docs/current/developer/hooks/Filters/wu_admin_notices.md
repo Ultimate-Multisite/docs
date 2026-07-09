@@ -4,11 +4,11 @@ title: فلټر - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# فلټر: wu_admin_notices
+# فلټر: wu_admin_notices {#filter-wuadminnotices}
 
 پرمختیاکوونکو ته اجازه ورکوي چې د Ultimate Multisite له خوا زیات شوي د ادارې خبرتیاوې فلټر کړي.
 
-## پارامېټرونه
+## پارامېټرونه {#parameters}
 
 | نوم | ډول | تشریح |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | که د لرې کېدو وړ خبرتیاوې فلټر شوې وي. |
 | $dismissed_messages | `array` | د لرې شوو خبرتیا کیليو لېست. |
 
-### له نسخې راهیسې
+### له نسخې راهیسې {#since}
 
 - 2.0.0
-### سرچینه
+### سرچینه {#source}
 
 په [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) کې په ۱۲۱ کرښه کې تعریف شوی
 
 
-## راستنېدنې
+## راستنېدنې {#returns}

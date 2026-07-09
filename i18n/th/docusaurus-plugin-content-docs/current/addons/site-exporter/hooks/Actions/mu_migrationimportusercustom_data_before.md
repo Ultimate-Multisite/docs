@@ -4,20 +4,20 @@ title: Action - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Action: mu_migration/import/user/custom_data_before
+# Action: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
 
 จะทำงานก่อนการส่งออกข้อมูลผู้ใช้แบบกำหนดเอง
 
-## พารามิเตอร์
+## พารามิเตอร์ {#parameters}
 
 | Name | Type | คำอธิบาย |
 |------|------|-------------|
 | $user_data | `array` | อาร์เรย์ข้อมูลผู้ใช้ |
 | $user | `\WP_User` | อ็อบเจกต์ผู้ใช้ |
 
-### ตั้งแต่
+### ตั้งแต่ {#since}
 
 - 0.1.0
-### แหล่งที่มา
+### แหล่งที่มา {#source}
 
 ถูกกำหนดไว้ใน [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L139) บรรทัดที่ 139

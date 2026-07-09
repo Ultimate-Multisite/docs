@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Distribusikan subsitus di berbagai server dan database untuk performa dan keamanan
 
-## Sorotan rilis versi 1.2.0
+## Sorotan rilis versi 1.2.0 {#version-120-release-highlights}
 
 Multi-Tenancy 1.2.0 menambahkan fondasi tenant berdaulat untuk alur kerja isolasi produksi:
 
@@ -25,21 +25,21 @@ Multi-Tenancy 1.2.0 menambahkan fondasi tenant berdaulat untuk alur kerja isolas
 
 Lihat panduan pengguna untuk [alur kerja migrasi berdaulat](/user-guide/getting-started/sovereign-migration-workflow), [isolasi multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), dan [operasi tenant berdaulat](/user-guide/administration/sovereign-tenant-operations).
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 - WordPress 5.3 atau lebih tinggi
 - PHP 7.4 atau lebih tinggi
 - plugin Multisite Ultimate (aktif)
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah file addon ke direktori `/wp-content/plugins/` Anda
 2. Aktifkan plugin melalui menu 'Plugins' di WordPress
 3. Konfigurasikan pengaturan addon di admin jaringan
 
-## Pengembangan
+## Pengembangan {#development}
 
-### Penyiapan
+### Penyiapan {#setup}
 
 ```bash
 # Install dependencies
@@ -60,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktur Proyek
+### Struktur Proyek {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -84,7 +84,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Aturan modernisasi kode
 ```
 
-### Pengujian
+### Pengujian {#testing}
 
 Addon ini mencakup kerangka kerja pengujian yang komprehensif:
 
@@ -93,54 +93,54 @@ Addon ini mencakup kerangka kerja pengujian yang komprehensif:
 - **Cakupan Pengujian**: Dikonfigurasi untuk melacak cakupan kode
 - **Pengujian Multisite**: Pengujian berjalan di lingkungan multisite
 
-### Standar Kode
+### Standar Kode {#code-standards}
 
 - **Standar Pengodean WordPress**: Ditegakkan melalui PHPCS
 - **Kompatibilitas PHP 7.4+**: Fitur PHP modern didukung
 - **Analisis Statis**: Integrasi PHPStan untuk pemeriksaan tipe
 - **Modernisasi Kode**: Aturan Rector untuk peningkatan PHP
 
-### Sistem Build
+### Sistem Build {#build-system}
 
 - **Pemrosesan Aset**: Minifikasi untuk file CSS/JS
 - **Terjemahan**: Pembuatan file POT
 - **Pengemasan**: Pembuatan arsip untuk distribusi
 - **Mode Pengembangan**: Aset tidak diminifikasi untuk debugging
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Addon ini mendukung berbagai opsi konfigurasi yang dapat diakses melalui antarmuka admin jaringan.
 
-### Konfigurasi tenant berdaulat
+### Konfigurasi tenant berdaulat {#sovereign-tenant-configuration}
 
 Untuk tenant berdaulat, konfigurasikan database tenant, root filesystem, pengikatan host database, dan kemampuan host sebelum merutekan lalu lintas ke tenant. Jalankan verifikasi migrasi setelah setiap perubahan yang memengaruhi kredensial database, pengikatan host, routing, atau penyediaan pengguna.
 
 Gunakan `localhost` hanya ketika runtime tenant dan grant database mengharapkan soket lokal atau akses pada mesin yang sama. Gunakan `127.0.0.1` atau hostname layanan ketika itulah host grant yang dikonfigurasi oleh penyedia Anda.
 
-### Kemampuan Hostinger
+### Kemampuan Hostinger {#hostinger-capability}
 
 Kemampuan multi-tenancy Hostinger bekerja dengan token integrasi Hostinger bersama. Pastikan domain ada di hPanel, DNS mengarah ke akun Hostinger, dan pengaturan database tenant cocok dengan hPanel sebelum verifikasi.
 
-## Hook dan Filter
+## Hook dan Filter {#hooks-and-filters}
 
-### Action
+### Action {#actions}
 
 - `ultimate-multisite-addon-template_init` - Dipicu setelah inisialisasi addon
 - `ultimate-multisite-addon-template_loaded` - Dipicu setelah semua file addon dimuat
 
-### Filter
+### Filter {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ubah pengaturan addon
 - `ultimate-multisite-addon-template_enabled` - Timpa status aktif/nonaktif addon
 
-## Lisensi
+## Lisensi {#license}
 
 Addon ini dilisensikan di bawah GPL v3 atau yang lebih baru.
 
-## Dukungan
+## Dukungan {#support}
 
 Untuk dukungan dan dokumentasi, kunjungi [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Versi 1.2.0 (2026-06-03): menambahkan autologin tenant stateless, kemampuan multi-tenancy Hostinger, isolasi database dan filesystem per-subsitus, gerbang verifikasi migrasi berdaulat, peningkatan bootstrap tenant/penulis database, pengikatan host MySQL yang dapat dikonfigurasi, dan teardown berdaulat yang lebih aman.
 

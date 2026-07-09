@@ -4,20 +4,20 @@ title: Action - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# Action: wu_page_before_render
+# Action: wu_page_before_render {#action-wupagebeforerender}
 
 यह एक्शन पेज को रेंडर होने से पहले ट्रिगर होता है।
 
-## पैरामीटर्स
+## पैरामीटर्स {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | पेज की ID। |
 | $this | `\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Base Admin Page का इंस्टेंस। |
 
-### कब से उपलब्ध
+### कब से उपलब्ध {#since}
 
 - 1.8.2
-### स्रोत
+### स्रोत {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L356) में लाइन 356 पर परिभाषित है।

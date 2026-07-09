@@ -3,11 +3,11 @@ title: Razvoj prilagođenog gatewaya
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Razvoj prilagođenog gatewaya
+# Razvoj prilagođenog gatewaya {#custom-gateway-development}
 
 Možete kreirati prilagođene gatewaye za plaćanje proširivanjem klase `Base_Gateway`.
 
-## Klasa gatewaya
+## Klasa gatewaya {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registracija gatewaya
+## Registracija gatewaya {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Ključne metode
+## Ključne metode {#key-methods}
 
 | Metoda | Svrha |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Obrada zahtjeva za povrat novca |
 | `get_payment_methods()` | Vraća sačuvane metode plaćanja za kupca |
 
-## Akreditivi za obnovu za ponavljajuća članstva
+## Akreditivi za obnovu za ponavljajuća članstva {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 omogućava gateway integracijama da prijave da li ponavljajuće članstvo ima višekratno upotrebljiv akreditiv za obnovu prije nego što se `auto_renew` trajno sačuva. Zakačite se na `wu_membership_has_renewal_credential` i vratite:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Očistite oznaku nedostajućeg akreditiva kao dio uspješnog toka ponovne autorizacije vašeg gatewaya nakon što se pohrani novi višekratno upotrebljiv akreditiv.
 
-## Savjeti
+## Savjeti {#tips}
 
 - Uvijek vratite `WP_Error` pri neuspjehu kako bi Ultimate Multisite mogao obraditi prikaz greške
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Koristite `wu_log_add()` za evidentiranje specifično za gateway
 
-## Mogućnosti provajdera AI konektora
+## Mogućnosti provajdera AI konektora {#ai-connector-provider-capabilities}
 
 Prilagođene integracije koje pozivaju operacije podržane AI konektorom trebaju se uskladiti s podržanim skupom OAuth provajdera uvedenim s AI Provider for Anthropic Max v1.3.0:
 

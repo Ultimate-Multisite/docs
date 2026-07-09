@@ -3,11 +3,11 @@ title: Даведнік па хуках
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Даведнік па хуках
+# Даведнік па хуках {#hooks-reference}
 
 Аўтаматычна згенераваная дакументацыя для ўсіх **59 дзеянняў** і **118 фільтраў** у Ultimate Multisite.
 
-## Дзеянні
+## Дзеянні {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Спрацоўвае перад перанакіраваннем аўтэнтыфікацыі.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Спрацоўвае непасрэдна перад усталяваннем cookie аўтэнтыфікацыі.
@@ -70,7 +70,7 @@ _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Спрацоўвае пасля таго, як аб’ект захаваны ў базе даных.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Дазваляе распрацоўшчыкам плагіна дадаваць дзеянні ў працэс разблакіроўкі.
 
-## Фільтры
+## Фільтры {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Фільтруе працягласць перыяду заканчэння тэрміну дзеяння cookie аўтэнтыфікацыі.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Фільтруе схему перанакіравання аўтэнтыфікацыі.

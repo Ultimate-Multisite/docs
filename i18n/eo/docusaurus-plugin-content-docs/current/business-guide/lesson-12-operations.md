@@ -3,17 +3,17 @@ title: 'Leciono 12: Mastrumado de la Komerco'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leciono 12: Funkciigi la Komercon
+# Leciono 12: Funkciigi la Komercon {#lesson-12-running-the-business}
 
 Platformo ne estas projekto, kiun vi finas -- ĝi estas komerco, kiun vi funkciigas. Ĉi tiu leciono kovras la ĉiutagajn operaciojn por administri FitSite: subteno, fakturado, prizorgado, kaj teni klientojn kontentaj.
 
-## Kie Ni Restis
+## Kie Ni Restis {#where-we-left-off}
 
 FitSite estas aktiva kaj klientoj registriĝas. Nun vi devas funkciigi la operacion daŭripove.
 
-## Ĉiutagaj Operacioj
+## Ĉiutagaj Operacioj {#daily-operations}
 
-### Monitorado
+### Monitorado {#monitoring}
 
 Kontrolu ĉi tiujn ĉiutage (aŭ starigu avertojn):
 
@@ -22,7 +22,7 @@ Kontrolu ĉi tiujn ĉiutage (aŭ starigu avertojn):
 - **Malsukcesaj pagoj**: Ĉu estas pagaj malsukcesoj, kiuj bezonas atenton?
 - **Subtenaj petoj**: Ĉu estas neresponditaj klientaj demandoj?
 
-### Klienta Subteno
+### Klienta Subteno {#customer-support}
 
 Via niĉa fokuso estas avantaĝo ĉi tie. Ĉar ĉiuj viaj klientoj estas trejnitejoj, vi vidos la samajn demandojn ripete:
 
@@ -36,7 +36,7 @@ Via niĉa fokuso estas avantaĝo ĉi tie. Ĉar ĉiuj viaj klientoj estas trejnit
 
 Konstruu vian sciobazon (komencitan en Leciono 8) ĉirkaŭ ĉi tiuj ripetiĝantaj demandoj. Ĉiu subtena bileto, kiu povus esti sciobaza artikolo, estas signalo por verki tiun artikolon.
 
-### Subtenaj Niveloj
+### Subtenaj Niveloj {#support-tiers}
 
 Dum vi kreskas, strukturu subtenon laŭ plano:
 
@@ -48,9 +48,9 @@ Dum vi kreskas, strukturu subtenon laŭ plano:
 
 La [Support Tickets addon](/addons/support-tickets) povas helpi administri subtenajn petojn ene de la platformo.
 
-## Fakturadaj Operacioj
+## Fakturadaj Operacioj {#billing-operations}
 
-### Ripetiĝantaj Pagoj
+### Ripetiĝantaj Pagoj {#recurring-payments}
 
 Ultimate Multisite aŭtomate pritraktas ripetiĝantan fakturadon per via pagopordego. Via tasko estas monitori:
 
@@ -58,7 +58,7 @@ Ultimate Multisite aŭtomate pritraktas ripetiĝantan fakturadon per via pagopor
 - **Dunning**: Starigu aŭtomatan reprovan logikon per via pagopordego (Stripe bone pritraktas ĉi tion)
 - **Nuligaj petoj**: Komprenu kial klientoj foriras. Ĉiu nuligo estas retrosciigo.
 
-### Administrado de Memberships
+### Administrado de Memberships {#managing-memberships}
 
 Iru al **Ultimate Multisite > Memberships** por:
 
@@ -69,13 +69,13 @@ Iru al **Ultimate Multisite > Memberships** por:
 
 Vidu [Administrado de Memberships](/user-guide/administration/managing-memberships) por la plena referenco.
 
-### Fakturado per Fakturoj
+### Fakturado per Fakturoj {#invoicing}
 
 Certigu, ke fakturoj estas ĝuste generitaj por ĉiu pago. Klientoj eble bezonos fakturojn por komerca elspezraportado. Vidu [Administrado de Pagoj kaj Fakturoj](/user-guide/administration/managing-payments-and-invoices).
 
-## Platforma Prizorgado
+## Platforma Prizorgado {#platform-maintenance}
 
-### WordPress kaj Plugin-Ĝisdatigoj
+### WordPress kaj Plugin-Ĝisdatigoj {#wordpress-and-plugin-updates}
 
 Kiel la retadministranto, vi respondecas pri:
 
@@ -88,14 +88,14 @@ Kiel la retadministranto, vi respondecas pri:
 Rompita ĝisdatigo influas ĉiun klientan retejon en via reto. Ĉiam unue testu ĝisdatigojn sur provkopio de via reto.
 :::
 
-### Sekureco
+### Sekureco {#security}
 
 - Tenu ĉiujn programarojn ĝisdataj
 - Uzu fortajn pasvortojn kaj dufaktoran aŭtentikigon por administraj kontoj
 - Monitoru pri suspektinda agado
 - Havu planon por sekurecaj incidentoj
 
-### Efikeco
+### Efikeco {#performance}
 
 Dum via reto kreskas, monitoru:
 
@@ -105,9 +105,9 @@ Dum via reto kreskas, monitoru:
 
 Konsideru efektivigi kaŝmemorigon (paĝa kaŝmemoro, objekta kaŝmemoro) kaj CDN se vi ankoraŭ ne faris tion. La [Cloudflare-integriĝo](/user-guide/host-integrations/cloudflare) pritraktas multon el ĉi tio.
 
-## Administrado de Klienta Vivociklo
+## Administrado de Klienta Vivociklo {#customer-lifecycle-management}
 
-### Reduktado de Foriro
+### Reduktado de Foriro {#reducing-churn}
 
 Foriro estas la procento de klientoj, kiuj nuligas ĉiumonate. Por abona komerco, redukti foriron estas same grave kiel akiri novajn klientojn.
 
@@ -119,7 +119,7 @@ Foriro estas la procento de klientoj, kiuj nuligas ĉiumonate. Por abona komerco
 - Ili trovis pli malmultekostan alternativon → plifortigu vian niĉan valoron
 - Ilia komerco fermiĝis → neevitebla, sed spuru tion aparte
 
-### Instigi Ĝisdatigojn
+### Instigi Ĝisdatigojn {#encouraging-upgrades}
 
 Klientoj en Starter, kiuj sukcesas, devus esti instigataj ĝisdatigi:
 
@@ -127,7 +127,7 @@ Klientoj en Starter, kiuj sukcesas, devus esti instigataj ĝisdatigi:
 - Sendu celitajn retpoŝtojn reliefigante funkciojn de la Growth-plano, de kiuj ili profitus
 - Montru tion, kion klientoj de Growth/Pro konstruis
 
-### Rekaptaj Kampanjoj
+### Rekaptaj Kampanjoj {#win-back-campaigns}
 
 Kiam kliento nuligas:
 
@@ -135,30 +135,30 @@ Kiam kliento nuligas:
 2. Traktu ilian zorgon se eble
 3. Proponu rabaton por reveni (30-60 tagojn post nuligo)
 
-## Semajnaj kaj Monataj Rutinoj
+## Semajnaj kaj Monataj Rutinoj {#weekly-and-monthly-routines}
 
-### Semajne
+### Semajne {#weekly}
 
 - Reviziu novajn registriĝojn kaj nuligojn
 - Respondu al ĉiuj malfermitaj subtenaj biletoj
 - Kontrolu platforman efikecon kaj funkciotempon
 - Reviziu iujn ajn malsukcesajn pagojn
 
-### Monate
+### Monate {#monthly}
 
 - Analizu ĉefajn metrikojn (MRR, foriro, novaj klientoj, ĝisdatigoj)
 - Apliku WordPress kaj plugin-ĝisdatigojn (post provtesto)
 - Reviziu kaj ĝisdatigu sciobazon laŭ subtenaj ŝablonoj
 - Sendu novaĵleteron aŭ ĝisdatigon al klientoj (novaj funkcioj, konsiloj, novaĵoj el la trejnindustrio)
 
-### Trimonate
+### Trimonate {#quarterly}
 
 - Reviziu prezadon kompare kun konkurantoj kaj klienta retrosciigo
 - Taksu ŝablonajn dezajnojn -- ĉu ili bezonas refreŝigon?
 - Taksu gastigan kapaciton -- ĉu vi bezonas skali?
 - Reviziu kaj plibonigu enkondukon surbaze de aktivigaj datumoj
 
-## Kion Ni Konstruis en Ĉi Tiu Leciono
+## Kion Ni Konstruis en Ĉi Tiu Leciono {#what-we-built-this-lesson}
 
 - **Ĉiutagaj monitoraj rutinoj** por funkciado, aliĝoj, pagoj kaj subteno
 - **Nivela subtena strukturo** kongruigita kun planaj niveloj

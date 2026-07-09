@@ -3,13 +3,13 @@ title: Je registratieformulier aanpassen
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Je registratieformulier aanpassen
+# Je registratieformulier aanpassen {#customizing-your-registration-form}
 
 Om je netwerk er uniek uit te laten zien ten opzichte van alle andere SaaS die op het WordPress-platform zijn gebouwd, kun je met Ultimate Multisite je registratie- en inlogpagina’s aanpassen met onze functie **Checkout Forms**.
 
 Hoewel ze een eenvoudige en flexibele manier zijn om te experimenteren met verschillende benaderingen bij het converteren van nieuwe klanten, worden ze vooral gebruikt om gepersonaliseerde registratieformulieren te maken. Dit artikel laat zien hoe je dat kunt doen.
 
-## Inlog- en registratiepagina’s:
+## Inlog- en registratiepagina’s: {#login-and-registration-pages}
 
 Bij de installatie van Ultimate Multisite worden automatisch aangepaste inlog- en registratiepagina’s op je hoofdsite aangemaakt. Je kunt deze standaardpagina’s op elk moment wijzigen via je pagina **Ultimate Multisite > Settings > Login & Registration**.
 
@@ -45,7 +45,7 @@ Laten we nu andere opties bekijken die nog steeds relevant zijn voor het inlog- 
 
 En dat zijn alle opties met betrekking tot inloggen en registratie die je kunt aanpassen! Vergeet niet je instellingen op te slaan nadat je klaar bent met bewerken.
 
-## Meerdere registratieformulieren gebruiken:
+## Meerdere registratieformulieren gebruiken: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 biedt een checkoutformulier-editor waarmee je zoveel formulieren kunt maken als je wilt, met verschillende velden, aangeboden producten, enzovoort.
 
@@ -69,7 +69,7 @@ Je kunt ook de formulieren die je al hebt bewerken of dupliceren door op de opti
 
 Als je één stap of meerdere stappen selecteert, is het checkoutformulier al vooraf ingevuld met de basisstappen die nodig zijn om te werken. Daarna kun je, als je wilt, extra stappen toevoegen.
 
-### Een Checkout Form bewerken:
+### Een Checkout Form bewerken: {#editing-a-checkout-form}
 
 Zoals we eerder noemden, kun je checkoutformulieren maken voor verschillende doeleinden. In dit voorbeeld werken we aan een registratieformulier.
 
@@ -131,11 +131,11 @@ Om de shortcode van je formulier te krijgen, klik je op **Generate Shortcode** e
 
 _**Opmerking:** Je moet deze shortcode aan je registratiepagina toevoegen om dit checkoutformulier eraan toe te voegen._
 
-## Producten en templates vooraf selecteren via URL-parameters:
+## Producten en templates vooraf selecteren via URL-parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Als je aangepaste prijstabellen voor je producten wilt maken en op het checkoutformulier het product of de template die je klant kiest vanaf je prijstabel- of templatespagina vooraf wilt selecteren, kun je hiervoor URL-parameters gebruiken.
 
-### **Voor abonnementen:**
+### **Voor abonnementen:** {#for-plans}
 
 Ga naar **Ultimate Multisite > Products > Select a plan**. Je zou bovenaan de pagina de knop **Click to copy Shareable Link** moeten zien. Dit is de link die je kunt gebruiken om dit specifieke abonnement vooraf te selecteren op je checkoutformulier.
 
@@ -143,7 +143,7 @@ Ga naar **Ultimate Multisite > Products > Select a plan**. Je zou bovenaan de pa
 
 Let op dat deze deelbare link alleen geldig is voor **Plans**. Je kunt geen deelbare links gebruiken voor pakketten of diensten.
 
-### Voor templates:
+### Voor templates: {#for-templates}
 
 Als je site templates vooraf wilt selecteren op je checkoutformulier, kun je de parameter **?template_id=X** gebruiken in de URL van je registratiepagina. De "X" moet worden vervangen door het **ID-nummer van de site template**. Ga naar **Ultimate Multisite > Sites** om dit nummer te krijgen.
 

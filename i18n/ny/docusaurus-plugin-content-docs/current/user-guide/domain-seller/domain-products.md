@@ -21,11 +21,11 @@ title: >-
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Zochimbe za Domain ndi Mphamvu (Domain Products and Pricing)
+# Zochimbe za Domain ndi Mphamvu (Domain Products and Pricing) {#domain-products-and-pricing}
 
 Zochimbe za domain ndi njira yomwe muliwo mwayi wopereka mphamvu, TLDs (Top-Level Domains), WHOIS privacy, ndikukumbutsa wopereka. Kukhala kukhali chidzi cha Domain product ndi Domain Multisite Ultimate standard ndi chidzi chokhazikika cha **Domain Settings**.
 
-## Kukhazikitsa domain product
+## Kukhazikitsa domain product {#creating-a-domain-product}
 
 1. ndiudzi ku **Network Admin › Ultimate Multisite › Products**
 2. ndiudzi **Add New**
@@ -35,13 +35,13 @@ Zochimbe za domain ndi njira yomwe muliwo mwayi wopereka mphamvu, TLDs (Top-Leve
 
 Zochimbe za domain zikukwanira ndi chidzi cha purple cha **Domain** m'moyo wa products ndikuyenera kukhazikitsidwa monga mwayi wopereka wa **Domain Products**.
 
-## Tab ya Domain settings
+## Tab ya Domain settings {#domain-settings-tab}
 
-### Provider (Wopereka)
+### Provider (Wopereka) {#provider}
 
 Kumbutsa kuti m'moyo wopereka wothandizira ku registration ndi chidzi cha product. Kuti ndi kukhazikika, zimakhudza kwa **Default provider** yomwe imapereka m'Domain Seller settings.
 
-### Supported TLDs (TLDs Zikuyenera)
+### Supported TLDs (TLDs Zikuyenera) {#supported-tlds}
 
 Kutanthauza kuti muliwo wopereka wosonyeza kwa zonse osati woyenera ndi product wina.
 
@@ -49,7 +49,7 @@ Chitha list ya TLDs zomwe zimapereka m'mwayi wopereka wosonyeza (mwachitsanzo, `
 
 **Mwayi wopereka wa product kumene:** Pamene mwana wopereka amagwira ntchito domain, addon imapereka product yomwe ndi yomwe yosonyeza kwambiri. Product yomwe ndi `.com` m'list ya TLD yake imapereka kuposa product yosonyeza kwa zonse. Ngati pano osati kukhali product wosonyeza kwa TLD, mwayi wopereka wosonyeza (catch-all) uliwonse. Ngati osati kukhali products, kusonyeza domain sikusonyezeka.
 
-### Markup type (Aina ya Markup)
+### Markup type (Aina ya Markup) {#markup-type}
 
 Mmodzi womwe umapereka boma lalikulu (retail price) m'mwayi wopereka wokha kwa chisoni cha wholesale:
 
@@ -59,11 +59,11 @@ Mmodzi womwe umapereka boma lalikulu (retail price) m'mwayi wopereka wokha kwa c
 | **Fixed markup** (Markup Yosonyeza) | Imapereka monga ndalama yosonyeza yosonyeza. Markup ya $5 pa domain yomwe ndi $10 imapereka $15. |
 | **Fixed price** (Chisoni Chokhazikika) | Imayamba chisoni cha wholesale kumene. Imapereka ndalama yomwe muliwoneke. |
 
-### Introductory pricing (Chisoni cha M'mwayi Wopereka)
+### Introductory pricing (Chisoni cha M'mwayi Wopereka) {#introductory-pricing}
 
 Kutera kusonye kuwona chidziro cha mpaidoni woyamba. Kufotokozera **Introductory price** (mpaidoni wa mwaka wa 1) kusonye kusonye ndi **Renewal price** (mpaidoni wa mwaka wa 2+). Mwanawo amakuthandizira kuona mphamvu zonse m'maka woyamba kuti mwazibe chiyani m'maka woyamba.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 Kuthandiza kukhala ndi WHOIS privacy protection kwa domains zomwe zikugulidwa m'moyo wopereka ili.
 
@@ -77,7 +77,7 @@ Poyenera Namecheap, WHOIS privacy imaperekera kwa WhoisGuard (limakhalidwe mpaid
 
 ---
 
-## TLD import and sync
+## TLD import and sync {#tld-import-and-sync}
 
 Zomwe zikugulidwa za domain zimapereka mphamvu ya wholesale yomwe imaperekedwa m'moyo wopereka kwa provider woyenera. Kuti izi zikuyendetsedwe, TLDs (Top-Level Domains) zimayenera kuperekedwa.
 
@@ -88,7 +88,7 @@ Poyenera sync, penda tab ya Domain Settings ya domain yoyenera ndikuyendetsa TLD
 
 ---
 
-## Auto-renewal
+## Auto-renewal {#auto-renewal}
 
 Zomwe zikugulidwa za domain zimaperekedwa ndi chiyani cha mpaidoni:
 
@@ -108,7 +108,7 @@ Email template IDs za events za tsiku la domain:
 
 ---
 
-## Admin: Kufotera (Manual) kuregistra domain
+## Admin: Kufotera (Manual) kuregistra domain {#admin-manual-domain-registration}
 
 Kutiye domain kuwo kwa mwanawo monga m'moyo (customer) m'moyo wanu, m'moyo wanu osamukira kupasa checkout:
 

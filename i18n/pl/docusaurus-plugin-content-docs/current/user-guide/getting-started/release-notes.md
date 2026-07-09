@@ -3,9 +3,9 @@ title: Informacje o wydaniu
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Informacje o wydaniu
+# Informacje o wydaniu {#release-notes}
 
-## Wersja 2.13.0 — wydana 2026-06-05
+## Wersja 2.13.0 — wydana 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nowe: Dodano obsługę tenantów suwerennych dla przepływów konta klienta, checkout, rozliczeń, witryny, faktury, przełączania szablonów i mapowania domen, aby sieci tenantów mogły kierować klientów z powrotem do głównej witryny w celu wykonania działań zarządzanych.
 - Nowe: Dodano kontrole danych uwierzytelniających odnowienia dla cyklicznych członkostw, aby bramki mogły wyłączać automatyczne odnowienie, gdy brakuje zapisanego porozumienia rozliczeniowego, subskrypcji lub tokenu sejfu.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Poprawka: Przypadki brzegowe odnowień członkostwa, wyświetlania wygaśnięcia i pobierania płatności unikają teraz natychmiastowych wygaśnięć, awarii lub pominiętych wymaganych płatności.
 - Ulepszono: Zgodność z WordPress jest testowana do wersji 7.0, produkcyjne zasoby Vue są przebudowywane ze źródeł npm, a pokrycie end-to-end Cypress obejmuje teraz więcej przepływów checkout, konfiguracji, SSO i bramek.
 
-## Wersja 2.12.0 — wydana 2026-05-15
+## Wersja 2.12.0 — wydana 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nowe: Dodano Hostinger (hPanel) jako obsługiwanego dostawcę hostingu z integracją mapowania domen
 - Nowe: Eksporter witryn obsługuje teraz pakiety importu sieciowego w celu usprawnionego przywracania witryn w całej sieci
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Poprawka: CLI Eksportera witryn zachowuje teraz poprawny domyślny wybór witryny sieciowej
 - Ulepszono: Usunięto dołączony wp-cli z pakietu pluginu, zmniejszając rozmiar pluginu
 
-## Wersja 2.11.0 — wydana 2026-05-11
+## Wersja 2.11.0 — wydana 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nowe: Eksporty witryn pakują teraz samouruchamiający się `index.php`, dzięki czemu ZIP można zainstalować na świeżym hostingu bez osobnej instalacji pluginu.
 - Nowe: Eksport sieci pozwala administratorom eksportować wszystkie podwitryny w jednym archiwum ze strony administracyjnej Eksportu witryny.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nowe: Edytor formularza checkout ostrzega, gdy produkt zostanie dodany bez skonfigurowanego wymaganego pola.
 - Nowe: Karta ustawień Import/Eksport jasno opisuje teraz swój zakres i linkuje bezpośrednio do narzędzia Eksport witryny.
 
-## Wersja 2.10.0 — wydana 2026-05-05
+## Wersja 2.10.0 — wydana 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nowe: Prowadzony kreator konfiguracji PayPal do ręcznego wprowadzania danych uwierzytelniających z bramką flagi OAuth dla płynnej konfiguracji bramki.
 - Nowe: Panel klienta przełączania szablonu przeprojektowany z kartą bieżącego szablonu, trwałą siatką i przyciskiem **Resetuj bieżący szablon**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Poprawka: Filtrowana ścieżka SSO respektowana we wszystkich przepływach logowania.
 - Poprawka: Puste opcje tożsamości witryny zachowywane przy zapisie.
 
-## Wersja 2.9.0 — wydana 2026-04-30
+## Wersja 2.9.0 — wydana 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nowe: Eksport i import pojedynczej witryny dodano w **Narzędzia > Eksport i import**.
 - Poprawka: Pliki ZIP eksportu są teraz serwowane przez uwierzytelniony endpoint pobierania.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Poprawka: ID wycieczek znormalizowane do podkreśleń w kluczach ustawień użytkownika.
 - Ulepszono: ZipArchive jest teraz używany zamiast Alchemy/Zippy dla lepszej zgodności.
 
-## Wersja 2.8.0 — wydana 2026-04-29
+## Wersja 2.8.0 — wydana 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nowe: przełącznik Enable Jumper dodany do UI ustawień Other Options.
 - Nowe: kolumna Status dodana do tabeli listy formularzy checkout.

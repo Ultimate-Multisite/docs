@@ -3,15 +3,15 @@ title: 'Lectio 4: Aedificatio Exemplarium Specialium'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lectio 4: Exemplaria Specialia Aedificare
+# Lectio 4: Exemplaria Specialia Aedificare {#lesson-4-building-niche-templates}
 
 Exemplaria sunt nucleus propositionis valoris tuae specialis. Dominus studii exercitationis qui se inscribit et situm videt qui iam sicut situs exercitationis apparet -- cum ordinibus disciplinarum, profilis magistrorum, et imaginibus idoneis -- multo verisimilius manebit quam is qui tabulam vacuam videt.
 
-## Ubi Desivimus
+## Ubi Desivimus {#where-we-left-off}
 
 Habemus rete FitSite operans cum Ultimate Multisite instituto et configurato. Nunc exemplaria aedificamus quae efficiunt ut FitSite videatur consulto factum pro negotiis exercitationis.
 
-## Cur Exemplaria Specialia Momentosa Sint
+## Cur Exemplaria Specialia Momentosa Sint {#why-niche-templates-matter}
 
 Exemplaria generica cogunt clientes tuos laborem difficilem facere: intellegere quas paginas egeant, quae structura contenti operetur, et quomodo efficiant ut recte appareat pro industria sua. Exemplaria specialia illam frictionem tollunt.
 
@@ -24,11 +24,11 @@ Dominus studii exercitationis qui se in FitSite inscribit videre debet:
 
 Singula sua inserunt. Non ab initio incipiunt.
 
-## Exemplaria Tua Cogitare
+## Exemplaria Tua Cogitare {#planning-your-templates}
 
 Antequam aedifices, statue quae exemplaria offeras. Pro FitSite, tria creabimus:
 
-### Exemplar 1: Studio Essential
+### Exemplar 1: Studio Essential {#template-1-studio-essential}
 
 Pro parvis studiis et magistris personalibus.
 
@@ -39,7 +39,7 @@ Pro parvis studiis et magistris personalibus.
 - Pagina **Contactus** cum charta loci et formulario
 - **Consilium nitidum, modernum** cum schemate colorum exercitationi apto
 
-### Exemplar 2: Gym Pro
+### Exemplar 2: Gym Pro {#template-2-gym-pro}
 
 Pro gymnasiis constitutis cum pluribus servitiis.
 
@@ -50,7 +50,7 @@ Pro gymnasiis constitutis cum pluribus servitiis.
 - Sectio **Testimonia** in pagina principali
 - Optiones **notae clariores**
 
-### Exemplar 3: Fitness Chain
+### Exemplar 3: Fitness Chain {#template-3-fitness-chain}
 
 Pro operationibus plurium locorum.
 
@@ -60,17 +60,17 @@ Pro operationibus plurium locorum.
 - **Nota centralizata** cum singulis cuiusque loci propriis
 - **Index operariorum** per loca
 
-## Situm Exemplaris Aedificare
+## Situm Exemplaris Aedificare {#building-a-template-site}
 
 In Ultimate Multisite, exemplar simpliciter est situs WordPress ita configuratus ut novos situs clientium apparere velis. Ecce quomodo unum creare:
 
-### Gradus 1: Crea Situm Exemplaris
+### Gradus 1: Crea Situm Exemplaris {#step-1-create-the-template-site}
 
 1. Naviga ad **Situs > Adde Novum** in administratione retis tui
 2. Crea situm nomine `template-studio-essential`
 3. Hic situs fit tabula operis tua
 
-### Gradus 2: Instrue et Configura Thema
+### Gradus 2: Instrue et Configura Thema {#step-2-install-and-configure-the-theme}
 
 Transi ad Dashboard situs exemplaris et:
 
@@ -82,7 +82,7 @@ Transi ad Dashboard situs exemplaris et:
 Choose a theme that is flexible enough to look good for fitness but not so complex that your customers cannot manage it. Themes like Astra, GeneratePress, or Kadence work well because they are lightweight, customizable, and well-supported.
 :::
 
-### Gradus 3: Crea Paginas
+### Gradus 3: Crea Paginas {#step-3-create-the-pages}
 
 Exstrue unamquamque paginam cum:
 
@@ -92,7 +92,7 @@ Exstrue unamquamque paginam cum:
 
 Fac contentum substitutivum, ubi fieri potest, instructorium. Pro textu generico replente, scribe contentum tale: "Hoc repone brevi descriptione studii tui et eius quod illud speciale facit. Memora philosophiam tuam exercitationis, annos experientiae, aut quid clientes exspectare possint."
 
-### Gradus 4: Configura Additamenta
+### Gradus 4: Configura Additamenta {#step-4-configure-plugins}
 
 Instrue et activa additamenta quibus studia exercitationis egent:
 
@@ -100,7 +100,7 @@ Instrue et activa additamenta quibus studia exercitationis egent:
 - Additamentum formularii contactus
 - Additamentum SEO (praeconfiguratum cum valoribus praedefinitis ad exercitationem pertinentibus)
 
-### Gradus 5: Nota ut Exemplar
+### Gradus 5: Nota ut Exemplar {#step-5-mark-as-template}
 
 1. Naviga ad **Ultimate Multisite > Situs**
 2. Recense situm exemplaris
@@ -108,7 +108,7 @@ Instrue et activa additamenta quibus studia exercitationis egent:
 
 Repete hunc processum pro unoquoque exemplari quod offerre vis.
 
-## Index Qualitatis Exemplaris
+## Index Qualitatis Exemplaris {#template-quality-checklist}
 
 Antequam exemplar praesto facias, verifica:
 
@@ -121,7 +121,7 @@ Antequam exemplar praesto facias, verifica:
 - [ ] Nulli nexus fracti aut res deesse
 - [ ] Celeritas onerandi paginae acceptabilis est
 
-## Rete FitSite Usque Nunc
+## Rete FitSite Usque Nunc {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Quid Hac Lectione Aedificavimus
+## Quid Hac Lectione Aedificavimus {#what-we-built-this-lesson}
 
 - **Tria exemplaria speciali mercatui aptata** destinata pro diversis magnitudinibus negotiorum exercitationis
 - **Contentum et imagines exercitationi apta** quae efficiunt ut suggestum consulto factum videatur

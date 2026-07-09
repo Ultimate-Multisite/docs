@@ -3,11 +3,11 @@ title: Sazlamalar boýunça maglumatnama
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Sazlamalar boýunça salgylanma
+# Sazlamalar boýunça salgylanma {#settings-reference}
 
 Bu sahypa Ultimate Multisite-de gündelik dolandyryşa täsir edýän sazlamalary we soňky özüni alyp baryş üýtgeşmelerini yzarlaýar.
 
-## Beýleki opsiýalar
+## Beýleki opsiýalar {#other-options}
 
 **Beýleki opsiýalar** bölümi **Ultimate Multisite > Settings > Login & Registration** astynda görünýär.
 
@@ -15,23 +15,23 @@ Bu sahypa Ultimate Multisite-de gündelik dolandyryşa täsir edýän sazlamalar
 |---|---|
 | **Enable Jumper** | Admin zolagynda Jumper çalt nawigasiýa guralyny görkezýär. Ony Ultimate Multisite ekranlaryna, tor obýektlerine we goldanýan admin niýetlenen ýerlerine göni geçmek üçin ulanyň. Bu gysga ýoluň görünmegini islemeýän bolsaňyz, ony öçüriň. |
 
-## Ýalňyşlyk hasabaty we telemetriýa
+## Ýalňyşlyk hasabaty we telemetriýa {#error-reporting-and-telemetry}
 
 Öňki ýalňyşlyk hasabaty üçin razylyk sazlamasy sazlamalar sahypasyndan aýryldy. Anonim telemetriýa öçürilen we ony işletmek üçin UI geçirijisi ýok.
 
 Sazlamalar sahypasy üçin içerki iş gollanmalaryny ýa-da ekran suratlaryny ýöredýän bolsaňyz, dolandyryjylar indi ýok sazlamany gözlemez ýaly, köne ýalňyşlyk hasabaty razylyk meýdanyna salgylanmalary aýyryň.
 
-## Import/Export sazlamalary
+## Import/Export sazlamalary {#importexport-settings}
 
 **Import/Export** sazlamalar goýmasy haýsy sazlamalary dolandyrýandygyny düşündirýär we saýt hem-de tor arhiwleri üçin göni **Ultimate Multisite > Site Export** sahypasyna baglanyşyk berýär. Import/export konfigurasiýasy üçin sazlamalar goýmasyny ulanyň, ýeke-saýt export/import iş akymy üçin **Tools > Export & Import** ulanyň, doly Network Export arhiwi gerek bolanda bolsa Site Export guralyny ulanyň.
 
-## Domain Seller HostAfrica balans duýduryşy
+## Domain Seller HostAfrica balans duýduryşy {#domain-seller-hostafrica-balance-warning}
 
 Domain Seller goşmaçasy HostAfrica bilen birikdirilende, reseller hasabyndaky balans ynamdar domen registrasiýasy ýa-da täzeleniş işlenişi üçin juda pes bolsa, tor dolandyryjylary ýapyp bolýan balans-pes duýduryşyny görýärler.
 
 Bu bildirişi işjeňlik duýduryşy hökmünde kabul ediň: has köp tölegli domen registrasiýalaryny kabul etmezden öň HostAfrica reseller balansyny dolduryň, soňra registrasiýalaryň we täzelenişleriň adaty ýagdaýda dowam edip biljekdigini tassyklamak üçin Domain Seller sazlamalaryna ýa-da domen-gözegçilik ekranyna dolanyň.
 
-## AI üpjün ediji birleşdiriji sazlamalary
+## AI üpjün ediji birleşdiriji sazlamalary {#ai-provider-connector-settings}
 
 AI üpjün ediji birleşdiriji sazlamalary indi diňe goldanýan OAuth hasap toplumlaryny görkezýär:
 

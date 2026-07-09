@@ -4,11 +4,11 @@ title: Filtrs - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filtrs: wu_apc_get_meta
+# Filtrs: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Ļauj izstrādātājiem filtrēt gala vērtības un pievienot jaunus apstrādes gadījumus.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nosaukums | Tips | Apraksts |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 | $meta_type | `string` | Izgūstamo metadatu tips. |
 | $meta_key | `string` | Meta lauka nosaukums. |
 
-### Kopš
+### Kopš {#since}
 
 - 1.4.0
-### Avots
+### Avots {#source}
 
 Definēts [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) 93. rindā
 
 
-## Atgriež
+## Atgriež {#returns}
 Jaunu noklusējuma vērtību.

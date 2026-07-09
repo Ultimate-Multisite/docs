@@ -3,17 +3,17 @@ title: 'Nkuzi 12: Ijikwa Azụmahịa'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ihe Ọmụmụ 12: Iduzi Azụmahịa
+# Ihe Ọmụmụ 12: Iduzi Azụmahịa {#lesson-12-running-the-business}
 
 Platform abụghị project ị na-emecha -- ọ bụ azụmahịa ị na-eduzi. Ihe ọmụmụ a na-ekpuchi ọrụ kwa ụbọchị nke ijikwa FitSite: nkwado, billing, mmezi, na ime ka ndị ahịa nwee afọ ojuju.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 FitSite adịla ndụ ma ndị ahịa na-edebanye aha. Ugbu a ị ga-eduzi ọrụ ahụ n'ụzọ ga-adịgide.
 
-## Ọrụ Kwa Ụbọchị
+## Ọrụ Kwa Ụbọchị {#daily-operations}
 
-### Nlekota
+### Nlekota {#monitoring}
 
 Lelee ihe ndị a kwa ụbọchị (ma ọ bụ hazie alerts):
 
@@ -22,7 +22,7 @@ Lelee ihe ndị a kwa ụbọchị (ma ọ bụ hazie alerts):
 - **Ịkwụ ụgwọ dara ada**: Enwere ọdịda ịkwụ ụgwọ chọrọ nlebara anya?
 - **Arịrịọ nkwado**: Enwere ajụjụ ndị ahịa a na-azabeghị?
 
-### Nkwado Ndị Ahịa
+### Nkwado Ndị Ahịa {#customer-support}
 
 Ilekwasị anya na niche gị bụ uru ebe a. N’ihi na ndị ahịa gị niile bụ fitness studios, ị ga-ahụ otu ajụjụ ugboro ugboro:
 
@@ -36,7 +36,7 @@ Ilekwasị anya na niche gị bụ uru ebe a. N’ihi na ndị ahịa gị niile
 
 Wulite knowledge base gị (malitere na Ihe Ọmụmụ 8) gburugburu ajụjụ ndị a na-apụta ugboro ugboro. Support ticket ọ bụla nke nwere ike ịbụ edemede knowledge base bụ akara ka ị dee edemede ahụ.
 
-### Ọkwa Nkwado
+### Ọkwa Nkwado {#support-tiers}
 
 Ka ị na-eto, hazie nkwado site na plan:
 
@@ -48,9 +48,9 @@ Ka ị na-eto, hazie nkwado site na plan:
 
 [Support Tickets addon](/addons/support-tickets) nwere ike inye aka ijikwa arịrịọ nkwado n’ime platform ahụ.
 
-## Ọrụ Billing
+## Ọrụ Billing {#billing-operations}
 
-### Ịkwụ Ụgwọ Na-emeghachi
+### Ịkwụ Ụgwọ Na-emeghachi {#recurring-payments}
 
 Ultimate Multisite na-elekọta recurring billing na-akpaghị aka site na payment gateway gị. Ọrụ gị bụ ileba anya na:
 
@@ -58,7 +58,7 @@ Ultimate Multisite na-elekọta recurring billing na-akpaghị aka site na payme
 - **Dunning**: Hazie automated retry logic site na payment gateway gị (Stripe na-eme nke a nke ọma)
 - **Arịrịọ kagbuo**: Ghọta ihe mere ndị ahịa ji apụ. Kagbuo ọ bụla bụ nzaghachi.
 
-### Ijikwa Memberships
+### Ijikwa Memberships {#managing-memberships}
 
 Gaa na **Ultimate Multisite > Memberships** iji:
 
@@ -69,13 +69,13 @@ Gaa na **Ultimate Multisite > Memberships** iji:
 
 Lee [Ijikwa Memberships](/user-guide/administration/managing-memberships) maka ntụaka zuru ezu.
 
-### Invoicing
+### Invoicing {#invoicing}
 
 Gbaa mbọ hụ na a na-emepụta invoices nke ọma maka ịkwụ ụgwọ ọ bụla. Ndị ahịa nwere ike ịchọ invoices maka ịkọ expenses azụmahịa. Lee [Ijikwa Ịkwụ Ụgwọ na Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Mmezi Platform
+## Mmezi Platform {#platform-maintenance}
 
-### Mmelite WordPress na Plugin
+### Mmelite WordPress na Plugin {#wordpress-and-plugin-updates}
 
 Dịka network administrator, ị na-ahụ maka:
 
@@ -88,14 +88,14 @@ Dịka network administrator, ị na-ahụ maka:
 Mmelite mebiri emebi na-emetụta saịtị onye ahịa ọ bụla na network gị. Nwalee mmelite mgbe niile na staging copy nke network gị mbụ.
 :::
 
-### Nchekwa
+### Nchekwa {#security}
 
 - Debe software niile ka ọ dị ọhụrụ
 - Jiri okwuntughe siri ike na two-factor authentication maka admin accounts
 - Nyochaa maka omume na-enyo enyo
 - Nwee plan maka security incidents
 
-### Arụmọrụ
+### Arụmọrụ {#performance}
 
 Ka network gị na-eto, nyochaa:
 
@@ -105,9 +105,9 @@ Ka network gị na-eto, nyochaa:
 
 Tụlee itinye caching (page cache, object cache) na CDN ma ọ bụrụ na i mebeghị ya. [Cloudflare integration](/user-guide/host-integrations/cloudflare) na-elekọta ọtụtụ n’ime nke a.
 
-## Njikwa Ndụ Ndị Ahịa
+## Njikwa Ndụ Ndị Ahịa {#customer-lifecycle-management}
 
-### Ibelata Churn
+### Ibelata Churn {#reducing-churn}
 
 Churn bụ pasent nke ndị ahịa na-akagbu kwa ọnwa. Maka azụmahịa subscription, ibelata churn dị mkpa dịka inweta ndị ahịa ọhụrụ.
 
@@ -119,7 +119,7 @@ Churn bụ pasent nke ndị ahịa na-akagbu kwa ọnwa. Maka azụmahịa subsc
 - Ha chọtara nhọrọ ọzọ dị ọnụ ala → kwalite uru niche gị
 - Azụmahịa ha mechiri → enweghị ike izere ya, mana soro nke a iche
 
-### Ịgba Ndị Ahịa Ume ka Ha Upgrade
+### Ịgba Ndị Ahịa Ume ka Ha Upgrade {#encouraging-upgrades}
 
 Ekwesịrị ịgba ndị ahịa nọ na Starter na-aga nke ọma ume ka ha upgrade:
 
@@ -127,7 +127,7 @@ Ekwesịrị ịgba ndị ahịa nọ na Starter na-aga nke ọma ume ka ha upgr
 - Zipụ emails ezubere iche na-akọwapụta atụmatụ Growth plan ha ga-erite uru na ha
 - Gosi ihe ndị ahịa Growth/Pro wuru
 
-### Campaigns Iweghachite
+### Campaigns Iweghachite {#win-back-campaigns}
 
 Mgbe onye ahịa kagburu:
 
@@ -135,30 +135,30 @@ Mgbe onye ahịa kagburu:
 2. Dozie nchegbu ha ma ọ bụrụ na o kwere omume
 3. Nye discount ka ha laghachi (ụbọchị 30-60 mgbe kagbuchara)
 
-## Usoro Kwa Izu na Kwa Ọnwa
+## Usoro Kwa Izu na Kwa Ọnwa {#weekly-and-monthly-routines}
 
-### Kwa Izu
+### Kwa Izu {#weekly}
 
 - Nyochaa ndebanye aha ọhụrụ na kagbuo
 - Zaghachi support tickets niile mepere emepe
 - Lelee arụmọrụ platform na uptime
 - Nyochaa ịkwụ ụgwọ ọ bụla dara ada
 
-### Kwa Ọnwa
+### Kwa Ọnwa {#monthly}
 
 - Nyochaa metrics isi (MRR, churn, ndị ahịa ọhụrụ, upgrades)
 - Tinye mmelite WordPress na plugin (mgbe staging test gasịrị)
 - Nyochaa ma melite knowledge base dabere na usoro nkwado
 - Zipụ newsletter ma ọ bụ update nye ndị ahịa (atụmatụ ọhụrụ, ndụmọdụ, akụkọ ụlọ ọrụ fitness)
 
-### Kwa Nkeji Afọ
+### Kwa Nkeji Afọ {#quarterly}
 
 - Nyochaa pricing megide ndị asọmpi na customer feedback
 - Nyochaa template designs -- hà chọrọ ime ka ha dị ọhụrụ?
 - Nyochaa ikike hosting -- ọ dị mkpa ka ị scale?
 - Nyochaa ma melite onboarding dabere na activation data
 
-## Ihe Anyị Wuru na Ihe Ọmụmụ A
+## Ihe Anyị Wuru na Ihe Ọmụmụ A {#what-we-built-this-lesson}
 
 - **Usoro nlekọta kwa ụbọchị** maka uptime, ndebanye aha, ịkwụ ụgwọ, na nkwado
 - **Nhazi nkwado nwere ọkwa dị iche iche** kwekọrọ na ọkwa plan

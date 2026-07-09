@@ -3,11 +3,11 @@ title: Rujukan Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Rujukan Hooks
+# Rujukan Hooks {#hooks-reference}
 
 Dokuméntasi anu dijieun otomatis pikeun sadaya **59 aksi** jeung **118 saringan** dina Ultimate Multisite.
 
-## Aksi
+## Aksi {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — Kajadian saméméh alihan auténtikasi.
 - [set_auth_cookie](./Actions/set_auth_cookie) — Kajadian langsung saméméh cookie auténtikasi disetel.
@@ -70,7 +70,7 @@ Dokuméntasi anu dijieun otomatis pikeun sadaya **59 aksi** jeung **118 saringan
 - [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Dijalankeun sanggeus hiji objék disimpen kana database.
 - [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Ngidinan pamekar plugin nambahkeun tindakan kana prosés muka konci.
 
-## Filters
+## Filters {#filters}
 
 - [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Nyaring lilana periode béakna cookie auténtikasi.
 - [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Nyaring skéma alihan auténtikasi.

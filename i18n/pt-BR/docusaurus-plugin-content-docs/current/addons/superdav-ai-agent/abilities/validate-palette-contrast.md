@@ -3,15 +3,15 @@ title: Validar Contraste da Paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validar Contraste da Paleta
+# Validar Contraste da Paleta {#validate-palette-contrast}
 
 A funcionalidade **Validar Contraste da Paleta** verifica os pares de cores na sua paleta de design em busca de conformidade com as WCAG (Web Content Accessibility Guidelines) antes de aplicá-las ao seu tema.
 
-## Visão Geral
+## Visão Geral {#overview}
 
 Esta funcionalidade garante que o esquema de cores do seu site atenda aos padrões de acessibilidade, validando as razões de contraste entre as cores de texto e fundo. Isso ajuda a evitar combinações de cores que podem ser difíceis de ler para usuários com deficiências visuais.
 
-## Formato de Entrada
+## Formato de Entrada {#input-format}
 
 A funcionalidade aceita uma paleta de cores como entrada:
 
@@ -35,7 +35,7 @@ A funcionalidade aceita uma paleta de cores como entrada:
 }
 ```
 
-### Parâmetros
+### Parâmetros {#parameters}
 
 | Parâmetro | Tipo | Obrigatório | Descrição |
 |-----------|------|-------------|-------------|
@@ -43,7 +43,7 @@ A funcionalidade aceita uma paleta de cores como entrada:
 | `wcag_level` | string | Não | Nível de conformidade WCAG: "A", "AA" (padrão) ou "AAA" |
 | `pairs_to_check` | array | Não | Pares de cores específicos para validar (ex: `["primary-text", "background-text"]`) |
 
-## Níveis WCAG Verificados
+## Níveis WCAG Verificados {#wcag-levels-checked}
 
 A funcionalidade valida as razões de contraste de acordo com os padrões WCAG:
 
@@ -56,7 +56,7 @@ A funcionalidade valida as razões de contraste de acordo com os padrões WCAG:
 - **Texto Normal** — texto menor que 18pt (ou 14pt em negrito)
 - **Texto Grande** — texto de 18pt ou maior (ou 14pt em negrito ou maior)
 
-## Schema de Saída
+## Schema de Saída {#output-schema}
 
 A funcionalidade retorna um relatório de validação detalhado:
 
@@ -95,7 +95,7 @@ A funcionalidade retorna um relatório de validação detalhado:
 }
 ```
 
-### Campos de Saída
+### Campos de Saída {#output-fields}
 
 | Campo | Tipo | Descrição |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ A funcionalidade retorna um relatório de validação detalhado:
 | `status` | string | "pass" ou "fail" para cada par |
 | `recommendations` | array | Sugestões para melhorar pares que falharam |
 
-## Exemplo de Uso
+## Exemplo de Uso {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ A funcionalidade valida todas as combinações de cores e retorna:
 - ✅ Fundo + Texto: razão de 12.1:1 (passa WCAG AAA)
 - Geral: Conforme WCAG AA
 
-## Integração com Theme Builder
+## Integração com Theme Builder {#integration-with-theme-builder}
 
 Ao usar a seleção de direção de design do Theme Builder, a funcionalidade Validar Contraste da Paleta:
 
@@ -129,7 +129,7 @@ Ao usar a seleção de direção de design do Theme Builder, a funcionalidade Va
 4. Fornece recomendações para pares não conformes
 5. Impede a aplicação de esquemas de cores inacessíveis
 
-## Melhores Práticas
+## Melhores Práticas {#best-practices}
 
 - **Comece pelo nível AA** — WCAG AA é o padrão para a maioria dos sites
 - **Teste antes de aplicar** — valide sua paleta antes de se comprometer com um design
@@ -137,7 +137,7 @@ Ao usar a seleção de direção de design do Theme Builder, a funcionalidade Va
 - **Considere as preferências do usuário** — alguns usuários podem ter sensibilidade adicional a cores
 - **Use verificadores de contraste** — combine esta funcionalidade com ferramentas de navegador para verificação
 
-## Pares com Falha e Recomendações
+## Pares com Falha e Recomendações {#failing-pairs-and-recommendations}
 
 Se um par de cores falhar na validação, a funcionalidade fornece recomendações:
 
@@ -155,7 +155,7 @@ Se um par de cores falhar na validação, a funcionalidade fornece recomendaçõ
 }
 ```
 
-## Funcionalidades Relacionadas
+## Funcionalidades Relacionadas {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — crie logos com sua paleta de cores validada
 - [Create Menu](./create-menu.md) — construa navegação com cores acessíveis

@@ -3,13 +3,13 @@ title: Hangaia tētahi Pakihi Paetukutuku Motuhake
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Hangaia he Pakihi Pae Tukutuku Kōhanga me Ultimate Multisite
+# Hangaia he Pakihi Pae Tukutuku Kōhanga me Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Ko te nuinga o te hunga e ngana ana ki te hoko pae tukutuku ka whakataetae i runga i te utu ki a Wix, Squarespace, me ngā mano tini freelancer. Ka hinga rātou. Ko te hunga ka toa, ka kōwhiri i tētahi hunga mātakitaki motuhake, ka hanga i tētahi otinga kua whakahāngaitia ki taua hunga, ā, ka tono utu mō te uara ka tukuna e rātou.
 
 Ka whakaako tēnei akoranga i a koe me pēhea te mahi pēnei mā te whakamahi i Ultimate Multisite.
 
-## Tāu Ka Hanga
+## Tāu Ka Hanga {#what-you-will-build}
 
 I roto i tēnei akoranga ka hanga koe i tētahi whatunga tūturu, e mahi ana, ko **FitSite** te ingoa -- he pūhara pae tukutuku kua hangaia motuhake mō ngā whare whakakori tinana, ngā kaiwhakangungu whaiaro, me ngā kaipupuri whare kori tinana.
 
@@ -23,7 +23,7 @@ Hei te akoranga whakamutunga, ka noho a FitSite hei pūhara kōhanga oti me:
 
 Ka whai haere koe i ia hikoinga, ā, hei te mutunga ka whai koe i tētahi pūhara e mahi ana me te mātauranga hei tārua i te tukanga mō tētahi kōhanga ka kōwhiria e koe.
 
-## He aha ngā Whare Whakakori Tinana?
+## He aha ngā Whare Whakakori Tinana? {#why-fitness-studios}
 
 I hiahia mātou ki tētahi tauira mārō ka taea e te katoa te whai. Ka pai ngā whare whakakori tinana nā te mea:
 
@@ -34,7 +34,7 @@ I hiahia mātou ki tētahi tauira mārō ka taea e te katoa te whai. Ka pai ngā
 
 Ko ngā mea katoa ka ako koe i te hanga i FitSite ka hāngai tōtika ki tētahi kōhanga ka kōwhiria e koe: ngā wharekai, ngā kaihoko whare, ngā tari rōia, ngā hāhi, ngā kaikirimana ringarehe, tētahi atu rāngai rānei.
 
-## Hanganga Akoranga
+## Hanganga Akoranga {#course-structure}
 
 Ka whakauru ia akoranga i tētahi ariā kotahi, ka whakamārama he aha i hirahira ai, ā, ka ārahi i a koe ki te whakatinana i taua mea ki te whatunga FitSite. Ka hanga ia akoranga ki runga i tō mua.
 
@@ -55,7 +55,7 @@ Ka whakauru ia akoranga i tētahi ariā kotahi, ka whakamārama he aha i hirahir
 | [13. Te Whakawhānui](lesson-13-growth) | Te tipu mai i ngā kiritaki tuatahi ki tētahi pakihi tūturu | Te rautaki tipu me te aunoatanga a FitSite |
 | [14. He aha kei Muri](lesson-14-whats-next) | Te whakawhānui ki ngā kōhanga pātata me ngā ara hou | Tō mahere ara i tua atu i FitSite |
 
-## Ngā Whakaritenga o Mua
+## Ngā Whakaritenga o Mua {#prerequisites}
 
 - Tētahi tāutanga WordPress Multisite (te hiahia rānei ki te whakarite i tētahi)
 - Tētahi raihana Ultimate Multisite hohe
@@ -63,6 +63,6 @@ Ka whakauru ia akoranga i tētahi ariā kotahi, ka whakamārama he aha i hirahir
 
 Kāore he tuhi waehere e hiahiatia ana. Mēnā kāore anō koe kia whakamahi i Ultimate Multisite i mua, kei te pai -- ka tīmata te Akoranga 3 mai i tētahi tāutanga hou.
 
-## Kua Reri?
+## Kua Reri? {#ready}
 
 Tīmata ki [Akoranga 1: He aha te Kōhanga e Toa ai](lesson-1-why-niche).

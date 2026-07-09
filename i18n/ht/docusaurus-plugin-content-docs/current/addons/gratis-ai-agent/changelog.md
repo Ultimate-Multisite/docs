@@ -3,11 +3,11 @@ title: Jounal chanjman
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Jounal chanjman
+# Jounal chanjman {#changelog}
 
-## 1.9.0 — Pibliye nan 2026-04-28
+## 1.9.0 — Pibliye nan 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nouvo
+### Nouvo {#new}
 
 - **`create_contact_form` ability** — kreye yon fòm kontak lè l sèvi ak plugin fòm aktif la (Contact Form 7, WPForms, Fluent Forms, oswa Gravity Forms) epi li retounen yon shortcode ki pare pou entegre nan nenpòt atik oswa paj.
 - **`set_featured_image` ability** — bay yon imaj an vedèt pou yon atik oswa paj apati yon ID atachman Media Library ki deja egziste oswa yon URL adistans; li enpòte imaj la otomatikman lè yo bay yon URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Retabli dènye sesyon an** — panèl chat la kounye a rechaje konvèsasyon ki pi resan an otomatikman lè paj la chaje ak lè widget la ouvri, konsa kontèks pa janm pèdi pandan navigasyon paj.
 - **Lyen aksyon plugin** — lyen rapid pou Settings ak Abilities Registry kounye a parèt sou ekran WordPress **Plugins → Installed Plugins** anba deskripsyon plugin nan.
 
-### Amelyore
+### Amelyore {#improved}
 
 - **Re-esè sous imaj** — agent la kounye a re-eseye tout sous imaj gratis ki konfigire yo anvan li retounen sou yon imaj AI jenere lè telechajman echwe.
 - **Panèl enfòmasyon modèl** — toujou vizib nan antèt chat la; li pa kache ankò apre premye mesaj la.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Reamenajman widget chat** — ikòn AI inifye ranplase avatè pèsonalize anvan an; li konsistan ak sistèm agent entegre a.
 - **Konvèsyon URL an lyen** — URL ki parèt nan mesaj sistèm ak boul mesaj erè yo kounye a rann kòm lyen klike.
 
-### Korije
+### Korije {#fixed}
 
 - **Dekouvrabilite ability** — korije deskripsyon, referans system prompt, ak aliyman namespace pou tout abilities parèt nan lis zouti agent la yon fason fyab.
 - **Kach providers** — providers yo kounye a mete an kach pou tout site la atravè yon kontè vèsyon, sa ki anpeche pwoblèm providers ki demode sou rezo multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Pibliye nan 2026-04-09
+## 1.4.0 — Pibliye nan 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nouvo
+### Nouvo {#new-1}
 
 - **Kòmand benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — lanse seri benchmark Agent Capabilities v1 la depi liy kòmand lan pou CI pipelines ak workflow evalyasyon modèl. Li sipòte egzekisyon pa kesyon, ranplasman provider/modèl, ak pwodiksyon JSON/CSV.
 - **Seri benchmark Agent Capabilities v1** — yon seri estriktire prompt konplèks ak plizyè etap ki teste tout sifas kapasite a, avèk nòt ak rapò token/dire.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Kesyon benchmark sit entènèt restoran** (`q-restaurant-website`) — tès bout-an-bout ki kouvri anrejistreman CPT, design system, navigasyon, ak dekouvèt plugin.
 - **Plugin konektè provider AI** ajoute nan blueprint WordPress Playground pou konfigirasyon devlopman lokal pi rapid.
 
-### Amelyore
+### Amelyore {#improved-1}
 
 - README mete ajou ak dokimantasyon konektè provider AI ak enstriksyon konfigirasyon.
 
-### Korije
+### Korije {#fixed-1}
 
 - 25 echèk tès PHPUnit sou branch `main` rezoud.
 - Fòma URL GitHub releases nan `blueprint.json` korije.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Nòt vèsyon anvan yo konsève nan depo plugin nan._

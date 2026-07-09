@@ -3,15 +3,15 @@ title: 'Lektioun 11: Clientë fannen'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lektioun 11: Clientë fannen
+# Lektioun 11: Clientë fannen {#lesson-11-finding-customers}
 
 Eng super Plattform ouni Clienten ass just en Hobby. Dës Lektioun behandelt, wéi een an enger Nischevertikal Clientë gewënnt -- Strategien, déi speziell funktionéieren, well s du dech op eng eenzeg Industrie konzentréiers.
 
-## Wou mir opgehalen hunn
+## Wou mir opgehalen hunn {#where-we-left-off}
 
 FitSite ass live. Elo brauche mir Besëtzer vu Fitnessstudios, déi et fannen a sech umellen.
 
-## Firwat Nische-Acquisitioun anescht ass
+## Firwat Nische-Acquisitioun anescht ass {#why-niche-acquisition-is-different}
 
 Wann s du un all Mënsch verkeefs, kämpfs du an engem laute Marché ëm Opmierksamkeet. Wann s du un eng Nisch verkeefs, hues du Virdeeler:
 
@@ -19,17 +19,17 @@ Wann s du un all Mënsch verkeefs, kämpfs du an engem laute Marché ëm Opmierk
 - **Däi Message trëfft direkt** -- "Websäite fir Fitnessstudios" hält e Besëtzer vun engem Fitnessstudio beim Scrollen op
 - **Recommandatioune baue sech op** -- Besëtzer vu Fitnessstudios kennen aner Besëtzer vu Fitnessstudios
 
-## Kanal 1: Direkt Usprooch
+## Kanal 1: Direkt Usprooch {#channel-1-direct-outreach}
 
 De séierste Wee zu dengen éischte Clienten ass direkt, perséinlech Usprooch.
 
-### Prospecten fannen
+### Prospecten fannen {#find-prospects}
 
 - Sich op Google Maps no Fitnessstudios, Gyms a Personal Traineren an denger Géigend
 - Besich hir aktuell Websäiten (oder notéier, datt si keng hunn)
 - Sammel Kontaktinformatiounen aus hire Google Business-Profiler oder Social Media
 
-### Hir aktuell Situatioun evaluéieren
+### Hir aktuell Situatioun evaluéieren {#evaluate-their-current-situation}
 
 Fir all Prospect notéier:
 
@@ -37,7 +37,7 @@ Fir all Prospect notéier:
 - **Schlecht Websäit**: Staarke Prospect -- weis hinnen, wéi eng besser Optioun ausgesäit
 - **Gutt Websäit**: Schwaache Prospect -- si hunn dëse Problem schonn geléist
 
-### Kontakt ophuelen
+### Kontakt ophuelen {#make-contact}
 
 Schéck eng personaliséiert E-Mail oder Noriicht:
 
@@ -48,7 +48,7 @@ Schéck eng personaliséiert E-Mail oder Noriicht:
 
 Schéck keng Masse-E-Mailen. Personaliséiert Usprooch un 20 gutt recherchéiert Prospecte wäert eng generesch Massemail un 2.000 iwwertrëffen.
 
-## Kanal 2: Nische-Communautéiten
+## Kanal 2: Nische-Communautéiten {#channel-2-niche-communities}
 
 Besëtzer vu Fitnessstudios sammelen sech online op spezifesche Plazen:
 
@@ -57,7 +57,7 @@ Besëtzer vu Fitnessstudios sammelen sech online op spezifesche Plazen:
 - **Industrie-Foren** an Diskussiounsplattformen
 - **LinkedIn-Gruppen** fir Fitness-Professioneller
 
-### Wéi ee matmécht
+### Wéi ee matmécht {#how-to-participate}
 
 Tried net bäi fir direkt däi Produkt unzepreisen. Amplaz:
 
@@ -66,7 +66,7 @@ Tried net bäi fir direkt däi Produkt unzepreisen. Amplaz:
 3. **Deel, wann et relevant ass** -- wann een iwwer Websäite freet, deel deng Plattform op eng natierlech Manéier
 4. **Erstell nëtzlechen Inhalt** -- schreiw Beiträg iwwer "wat eng super Fitnessstudio-Websäit ausmécht", déi natierlech op deng Plattform hiféieren
 
-## Kanal 3: Content Marketing
+## Kanal 3: Content Marketing {#channel-3-content-marketing}
 
 Erstell Inhalt, no deem Besëtzer vu Fitnessstudios sichen:
 
@@ -77,7 +77,7 @@ Erstell Inhalt, no deem Besëtzer vu Fitnessstudios sichen:
 
 Verëffentlech dat op dengem FitSite-Marketing-Blog. Mat der Zäit klasséiert dësen Inhalt a Sichmaschinnen a bréngt organesche Traffic vu Leit, déi aktiv no deem sichen, wat s du ubitts.
 
-## Kanal 4: Partnerschaften
+## Kanal 4: Partnerschaften {#channel-4-partnerships}
 
 Schaff mat Betriber zesummen, déi schonn Fitnessstudios betreien:
 
@@ -88,7 +88,7 @@ Schaff mat Betriber zesummen, déi schonn Fitnessstudios betreien:
 
 Bitt Recommandatiounscommissiounen oder géigesäiteg Promotioun un. Den [AffiliateWP-Addon](/addons/affiliatewp) kann dir hëllefen, e formelle Recommandatiounsprogramm opzestellen.
 
-## Kanal 5: Industrie-Evenementer
+## Kanal 5: Industrie-Evenementer {#channel-5-industry-events}
 
 Fitness-Industrie-Evenementer bréngen dech virun Honnerte vu potenzielle Clienten:
 
@@ -99,7 +99,7 @@ Fitness-Industrie-Evenementer bréngen dech virun Honnerte vu potenzielle Client
 
 Du brauchs kee grousse Budget. Och als Participant dobäi ze sinn a Gespréicher iwwer dat ze féieren, wat s du méchs, kann Leads generéieren.
 
-## Kanal 6: Showcase-Säiten
+## Kanal 6: Showcase-Säiten {#channel-6-showcase-sites}
 
 Däi beschte Marketing sinn d'Säite vun dengen aktuelle Clienten. Mat Erlaabnis:
 
@@ -108,7 +108,7 @@ Däi beschte Marketing sinn d'Säite vun dengen aktuelle Clienten. Mat Erlaabnis
 - Frot zefridde Clientë fir Testimonials
 - Encouragéier Clienten, FitSite ze ernimmen, wann se iwwer hir Websäit gefrot ginn
 
-## E Recommandatiounsprogramm ariichten
+## E Recommandatiounsprogramm ariichten {#setting-up-a-referral-program}
 
 Mondpropaganda ass däi mächtegste Kanal an enger Nisch. Formaliséier se:
 
@@ -116,7 +116,7 @@ Mondpropaganda ass däi mächtegste Kanal an enger Nisch. Formaliséier se:
 2. Bitt existente Clienten eng Belounung fir Recommandatiounen un (ee Mount gratis, Account-Kredit, etc.)
 3. Maach et einfach -- ginn hinnen e Recommandatiounslink an eng einfach Noriicht, déi si weiderschécke kënnen
 
-## Verfollegen, wat funktionéiert
+## Verfollegen, wat funktionéiert {#tracking-what-works}
 
 Fir all Kanal verfolleg:
 
@@ -126,7 +126,7 @@ Fir all Kanal verfolleg:
 
 Setz méi staark op Kanäl, déi funktionéieren. Schneit Kanäl ewech, déi net funktionéieren.
 
-## Realistesch Erwaardungen
+## Realistesch Erwaardungen {#realistic-expectations}
 
 - **Mount 1-3**: 5-20 Clienten, meeschtens aus direkter Usprooch a Communautéiten
 - **Mount 4-6**: 20-50 Clienten, Content Marketing fänkt un bäizedroen
@@ -134,7 +134,7 @@ Setz méi staark op Kanäl, déi funktionéieren. Schneit Kanäl ewech, déi net
 
 Dës Zuele variéieren, mee d'Muster ass konstant: fréi Clientë kommen duerch direkten Effort, spéider Clientë kommen duerch d'Zesummewierke vun Inhalt, Recommandatiounen a Ruff.
 
-## Wat mir an dëser Lektioun gebaut hunn
+## Wat mir an dëser Lektioun gebaut hunn {#what-we-built-this-lesson}
 
 - **Sechs Acquisitiounskanäl** ugepasst un d’Fitness-Nisch
 - **En direkten Outreach-Prozess** fir déi éischt Clienten ze gewannen

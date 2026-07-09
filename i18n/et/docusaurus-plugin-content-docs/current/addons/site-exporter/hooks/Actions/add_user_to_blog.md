@@ -4,11 +4,11 @@ title: Tegevus - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog
+# Action: add_user_to_blog {#action-addusertoblog}
 
 Käivitub kohe pärast kasutaja lisamist saidile.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Käivitub kohe pärast kasutaja lisamist saidile.
 | $role | `string` | Kasutaja roll. |
 | $blog_id | `int` | Blogi ID. |
 
-### Alates
+### Alates {#since}
 
 - MU: MU
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) real 174

@@ -4,11 +4,11 @@ title: Gnìomh - wu_domain_registration_completed
 sidebar_label: wu_domain_registration_completed
 _i18n_hash: 092b475e74f3b937af068c83eeba2e0a
 ---
-# Gnìomh: wu_domain_registration_completed
+# Gnìomh: wu_domain_registration_completed {#action-wudomainregistrationcompleted}
 
 Thèid a chur an gnìomh às dèidh do domain a bhith air a chlàradh gu soirbheachail.
 
-## Paramadairean
+## Paramadairean {#parameters}
 
 | Ainm | Seòrsa | Tuairisgeul |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Thèid a chur an gnìomh às dèidh do domain a bhith air a chlàradh gu soirbhe
 | $registration_data | `array&lt;string,mixed&gt;` | Metadata clàraidh (domain_name, provider_id, years, expiry_date, msaa.). |
 | $result | `array&lt;string,mixed&gt;` | Array toraidh amh a thill an neach-clàraidh. |
 
-### Bho
+### Bho {#since}
 
 - 2.0.0
-### Tùs
+### Tùs {#source}
 
 Air a mhìneachadh ann an [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1204) aig loidhne 1204

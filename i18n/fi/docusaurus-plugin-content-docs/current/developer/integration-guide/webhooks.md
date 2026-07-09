@@ -3,11 +3,11 @@ title: Webhookien käsittely
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-käsittely
+# Webhook-käsittely {#webhook-handling}
 
 Luo mukautettuja webhook-päätepisteitä vastaanottamaan tapahtumia ulkoisista palveluista ja synkronoimaan dataa Ultimate Multisite kanssa.
 
-## Mukautettu webhook-päätepiste
+## Mukautettu webhook-päätepiste {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Turvallisuushuomiot
+## Turvallisuushuomiot {#security-considerations}
 
 - Varmista aina webhook-allekirjoitukset HMAC-menetelmällä tai jaetulla salaisuudella
 - Käytä `permission_callback`-määritystä REST-reitilläsi — älä koskaan aseta sitä arvoon `__return_true` tuotannossa

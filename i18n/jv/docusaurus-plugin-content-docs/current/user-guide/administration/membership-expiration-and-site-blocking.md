@@ -3,11 +3,11 @@ title: Kadaluwarsa Keanggotaan lan Pemblokiran Situs
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Kedaluwarsa Keanggotaan dan Pemblokiran Situs
+# Kedaluwarsa Keanggotaan dan Pemblokiran Situs {#membership-expiration-and-site-blocking}
 
 Panduan ini menjelaskan bagaimana Ultimate Multisite menangani kedaluwarsa keanggotaan, berakhirnya masa percobaan (trial), dan pemblokiran situs di bagian depan (frontend). Ini mencakup siklus hidup sebuah keanggotaan dari aktif sampai kedaluwarsa, pengaturan yang mengontrol apakah situs diblokir atau tidak, dan apa yang harus diperiksa jika situs masih bisa diakses setelah keanggotaan kedaluwarsa.
 
-## Siklus Hidup Status Keanggotaan
+## Siklus Hidup Status Keanggotaan {#membership-status-lifecycle}
 
 Setiap keanggotaan di Ultimate Multisite punya salah satu status berikut:
 
@@ -24,7 +24,7 @@ Keanggotaan gratis tidak akan kedaluwarsa secara otomatis. Ultimate Multisite me
 | **Expired** | Sudah melewati tanggal kedaluwarsa dan masa tenggang tanpa perpanjangan |
 | **Cancelled** | Dibatalkan secara eksplisit oleh pelanggan atau admin |
 
-### Bagaimana Keanggotaan Berubah Menjadi Kedaluwarsa
+### Bagaimana Keanggotaan Berubah Menjadi Kedaluwarsa {#how-memberships-transition-to-expired}
 
 Ultimate Multisite melakukan pengecekan latar belakang **setiap jam** untuk mencari keanggotaan yang seharusnya ditandai sebagai kedaluwarsa. Pengecekan ini menggunakan [Action Scheduler](https://actionscheduler.org/) (bukan WP-Cron langsung) dan berjalan sebagai scheduled action `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Pengecekan kedaluwarsa punya **masa tenggang bawaan selama 3 hari** secara defau
 Masa tenggang kedaluwarsa 3 hari itu beda karo pengaturan Grace Period Blok Frontend yang dijelaskan di bawah ini. Masa tenggang kedaluwarsa ngontrol kapan **status berubah** saka aktif/on-hold dadi kadaluwarsa. Grace period blok frontend ngontrol kapan **situs diblokir** sawise status wis owah.
 :::
 
-#### Keanggotaan Otomatis Perpanjangan vs. Non-Otomatis Perpanjangan
+#### Keanggotaan Otomatis Perpanjangan vs. Non-Otomatis Perpanjangan {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Beda iki penting banget kanggo ngerti perilaku kedaluwarsa:
 
@@ -42,7 +42,7 @@ Beda iki penting banget kanggo ngerti perilaku kedaluwarsa:
 
 - **Keanggotaan otomatis perpanjangan** (`auto_renew = true`): Cek kedaluwarsa cron **ngabaikake kabeh iki**. Payment gateway (Stripe, PayPal, lsp) dikarepake ngirimi kabar marang Ultimate Multisite liwat webhook nalika langganan gagal utawa dibatal. Yen webhook ora ditampa -- amarga endpoint salah konfigurasi, gangguan gateway, utawa langganan dibatal di luar sistem -- keanggotaan bisa tetep `active` tanpa wates sawise tanggal kedaluwarsa wis lewat.
 
-### Kepiye Ujian Coba (Trials) Rampung
+### Kepiye Ujian Coba (Trials) Rampung {#how-trials-end}
 
 Nalika masa uji coba keanggotaan trialing rampung, sistem bakal:
 
@@ -52,11 +52,11 @@ Nalika masa uji coba keanggotaan trialing rampung, sistem bakal:
 
 Proses iki jalan ing jadwal saben jam kaya pengecekan kedaluwarsa biasa, nanging **mung kanggo keanggotaan non-otomatis perpanjangan**. Kanggo uji coba otomatis perpanjangan, payment gateway sing ngurus alih saka trial dadi langganan berbayar.
 
-## Blok Akses Frontend
+## Blok Akses Frontend {#block-frontend-access}
 
 Secara *default*, pas keanggotaan (membership) kedaluwarsa atau di-hold, **hanya dashboard wp-admin yang dibatasi**. Bagian depan situs (frontend) publik tetap bisa diakses oleh pengunjung. Untuk memblokir akses publik juga, kamu harus mengaktifkan pengaturan **Block Frontend Access**.
 
-### Mengatur Pengaturan
+### Mengatur Pengaturan {#configuring-the-setting}
 
 Buka **Ultimate Multisite > Settings > Memberships** dan aktifkan **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Ada tiga pengaturan terkait yang mengontrol perilaku ini:
 | **Frontend Block Grace Period** | Jumlah hari yang harus ditunggu setelah keanggotaan tidak aktif sebelum diblokir. Atur ke `0` untuk memblokir segera. | 0 |
 | **Frontend Block Page** | Halaman di situs utama tempat pengunjung akan diarahkan ketika sebuah situs diblokir. Jika tidak diatur, pengunjung akan melihat pesan umum "Situs ini tidak tersedia saat ini" beserta tautan ke halaman login admin situs. | None |
 
-### Apa yang Dilihat Pengunjung Saat Situs Diblokir
+### Apa yang Dilihat Pengunjung Saat Situs Diblokir {#what-visitors-see-when-a-site-is-blocked}
 
 Ketika akses frontend diblokir, pengunjung situs akan:
 
@@ -83,7 +83,7 @@ Ketika akses frontend diblokir, pengunjung situs akan:
 
 Admin situs masih bisa masuk -- halaman login tidak pernah diblokir.
 
-### Apa yang Diblokir dan Kapan
+### Apa yang Diblokir dan Kapan {#what-gets-blocked-and-when}
 
 Perilaku pemblokiran tergantung pada status keanggotaan:
 
@@ -104,21 +104,21 @@ Bahkan jika masa percobaan sudah berakhir, keanggotaan dengan status `trialing` 
 Keanggotaan yang dibatalkan akan selalu diblokir setelah tanggal kedaluwarsa terlewati, tidak peduli apakah Block Frontend Access aktif atau tidak. Masa Tenggang Blok Frontend **tidak** berlaku untuk keanggotaan yang dibatalkan.
 :::
 
-## Pemecahan Masalah: Situs Tetap Bisa Diakses Setelah Kedaluwarsa
+## Pemecahan Masalah: Situs Tetap Bisa Diakses Setelah Kedaluwarsa {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Jika situs masih bisa diakses publik setelah masa keanggotaan berakhir, lakukan pemeriksaan ini secara berurutan:
 
-### 1. Verifikasi Pengaturan Block Frontend Access Sudah Aktif
+### 1. Verifikasi Pengaturan Block Frontend Access Sudah Aktif {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Buka **Ultimate Multisite > Settings > Memberships** dan pastikan tombol **Block Frontend Access** sudah menyala (on). Pengaturan ini **secara default mati**, artinya hanya wp-admin yang dibatasi ketika keanggotaan menjadi tidak aktif.
 
-### 2. Periksa Masa Tenggang Blok Frontend
+### 2. Periksa Masa Tenggang Blok Frontend {#2-check-the-frontend-block-grace-period}
 
 Ing halaman pengaturan yang sama, periksa nilai **Frontend Block Grace Period**. Kalau ini diatur ke 7 hari, misalnya, frontend tidak akan diblokir sampai 7 hari setelah tanggal kedaluwarsa keanggotaan -- meskipun status keanggotaannya sudah `expired`.
 
 Atur ini ke `0` kalau kamu mau pemblokiran langsung setelah keanggotaan jadi tidak aktif.
 
-### 3. Pastikan Status Keanggotaan Sudah Berubah Sungguh-sungguh
+### 3. Pastikan Status Keanggotaan Sudah Berubah Sungguh-sungguh {#3-confirm-the-membership-status-has-actually-changed}
 
 Buka **Ultimate Multisite > Memberships** dan periksa status keanggotaan yang terkena dampak. Kalau masih menunjukkan `active` padahal tanggal kedaluwarsa sudah lewat, berarti perubahan statusnya belum terjadi. Penyebab umum:
 
@@ -126,7 +126,7 @@ Buka **Ultimate Multisite > Memberships** dan periksa status keanggotaan yang te
 
 - **cron job belum berjalan**: Lihat langkah berikutnya.
 
-### 4. Verifikasi Action Scheduler Berjalan
+### 4. Verifikasi Action Scheduler Berjalan {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite menggunakan Action Scheduler untuk cron jobnya. Buka **Tools > Scheduled Actions** di admin jaringan dan cari:
 
@@ -148,7 +148,7 @@ Supaya cron bisa jalan dengan lancar, atur saja job cron sistem:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Cek Masalah Gateway Webhook (Keanggotaan Otomatis Perpanjangan)
+### 5. Cek Masalah Gateway Webhook (Keanggotaan Otomatis Perpanjangan) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Kalau keanggotaannya otomatis diperpanjang tapi langganan gateway sudah dibatalkan atau gagal, tapi Ultimate Multisite masih nunjukkin statusnya `active`:
 
@@ -157,7 +157,7 @@ Kalau keanggotaannya otomatis diperpanjang tapi langganan gateway sudah dibatalk
 
 Kalau gateway nunjukkin langganannya dibatalkan tapi Ultimate Multisite tidak, kemungkinan notifikasi webhook sudah hilang. Kamu bisa ubah status keanggotaan secara manual di **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Cek Masa Tenggang Kedaluwarsa (Tingkat Cron)
+### 6. Cek Masa Tenggang Kedaluwarsa (Tingkat Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Cek cron punya masa tenggangnya sendiri (default: 3 hari) sebelum menandai keanggotaan sebagai kedaluwarsa. Ini beda sama masa tenggang blok di bagian depan (frontend). Total waktu sebelum situs diblokir bisa jadi:
 
@@ -165,7 +165,7 @@ Cek cron punya masa tenggangnya sendiri (default: 3 hari) sebelum menandai keang
 
 Contohnya, dengan pengaturan default dan masa tenggang *frontend* selama 7 hari, butuh waktu sampai 10 hari setelah `date_expiration` baru situs benar-benar diblokir.
 
-### 7. Membatalkan Keanggotaan Secara Manual
+### 7. Membatalkan Keanggotaan Secara Manual {#7-manually-expire-a-membership}
 
 Yen sampeyan perlu langsung memblokir situs tanpa nunggu siklus cron, sampeyan bisa ganti status keanggotaannya secara manual:
 
@@ -176,7 +176,7 @@ Yen sampeyan perlu langsung memblokir situs tanpa nunggu siklus cron, sampeyan b
 
 Blokir *frontend* bakal mulai berlaku pas halaman itu di-load lagi (tergantung Masa Tenggang Blok Frontend untuk keanggotaan yang kedaluwarsa, atau langsung kalau dibatalkan).
 
-## Ringkasan
+## Ringkasan {#summary}
 
 Timeline lengkap dari tanggal kedaluwarsa sampai situs diblokir:
 
@@ -208,7 +208,7 @@ Untuk keanggotaan yang dibatalkan, jalurnya lebih pendek:
   Frontend situs langsung diblokir
 ```
 
-## Referensi Developer
+## Referensi Developer {#developer-reference}
 
 *hook* dan *filter* berikut memungkinkan sampeyan ngubah perilaku kedaluwarsa dan pemblokiran:
 

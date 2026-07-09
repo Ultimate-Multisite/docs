@@ -3,11 +3,11 @@ title: Changelog
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Änderungsprotokoll
+# Änderungsprotokoll {#changelog}
 
-## 1.18.0 — Veröffentlicht am 2026-06-29
+## 1.18.0 — Veröffentlicht am 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Neu
+### Neu {#new}
 
 - **Google Calendar-Tools** — konfigurierte Kalender und Ereignisse für zeitplanbewusste Automatisierungen lesen
 - **Kontaktzuordnung und Teilnehmer-Helfer** — Kalenderteilnehmer mit Website-Benutzern und Kontakten abgleichen
@@ -15,21 +15,21 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **TextBee-SMS-Anbieter** — konfigurierte Textnachrichten-Benachrichtigungen über TextBee senden
 - **Erweitertes Begleitpaket** — separat vom WordPress.org-Build bereitgestellte Tools für vertrauenswürdige Entwickler: Dateisystem, Datenbank, WP-CLI, REST-Dispatcher, Plugin-Builder, Git-Snapshot, Benutzerverwaltung und Benchmark
 
-### Verbessert
+### Verbessert {#improved}
 
 - **Einrichtung des verwalteten Superdav-Dienstes** — gehostete Dienst-Endpunkte und automatische Verbindungsbereitstellung für unterstützte Websites hinzufügen
 - **Release-Paketierung** — separate Core- und Advanced-ZIP-Dateien erstellen, beide auf GitHub veröffentlichen und nur das Core-Paket an WordPress.org senden
 
-### Behoben
+### Behoben {#fixed}
 
 - **Zuverlässigkeit von AI-Anfragen** — Modellauswahl, Anfrage-Timeouts, Standard-Einrichtungsmodell, Verarbeitung von Reasoning-Text und Wiederholungsanleitungen für ungültige Tool-Aufrufe verbessern
 - **Härtung von Kalender und Erinnerungen** — Google Calendar-Tokens und Deduplizierung von Erinnerungen stärken
 - **Onboarding und Fortsetzung nach Freigaben** — Starts des Frontend-Onboardings und Fortsetzungen bestätigter Fähigkeiten korrigieren
 - **Prüfprobleme bei der WordPress.org-Paketierung** — Feedback aus der Paketierungsprüfung für das Core-Release adressieren
 
-## 1.16.0 — Veröffentlicht am 2026-05-20
+## 1.16.0 — Veröffentlicht am 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Neu
+### Neu {#new-1}
 
 - **Fähigkeit zum Generieren von Logo-SVGs** — Theme Builder kann jetzt benutzerdefinierte Logo-SVGs mit namespace-sicherer Bereinigung generieren und einbetten
 - **Foto-Upload im Discovery-Interview** — das Discovery-Interview des Theme Builder enthält jetzt einen Foto-Upload-Schritt für reicheren Designkontext
@@ -39,25 +39,25 @@ _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 - **Parameter für Navigationsbeschriftung** — die Fähigkeit „Menü erstellen“ unterstützt jetzt ein eigenes `navigation_label`, getrennt vom Seitentitel
 - **Verfügbarkeit von Tier-1-Tools** — sd-ai-agent/site-scrape ist jetzt ein Tier-1-Tool, das standardmäßig in Theme Builder verfügbar ist
 
-### Behoben
+### Behoben {#fixed-1}
 
 - **AI Client-Cache** — jetzt durch Transients für anfrageübergreifende Persistenz gestützt, um Datenverlust bei lang laufenden Agent-Aufgaben zu verhindern
 - **Aktionslinks in der Plugin-Zeile** — zur besseren Klarheit korrigiert und umbenannt
 
-## 1.10.0 — Veröffentlicht am 2026-05-05
+## 1.10.0 — Veröffentlicht am 2026-05-05 {#1100--released-on-2026-05-05}
 
-### Neu
+### Neu {#new-2}
 
 - **Tavily-Internetsuche** — Tavily als Suchanbieter für reichhaltigere Internetsuchergebnisse neben Brave Search hinzufügen
 - **Theme-bewusste integrierte Fähigkeiten** — Skill-Leitfäden für Block-Themes, Classic Themes, Kadence Blocks und Kadence Theme werden jetzt mit dem Plugin ausgeliefert
 - **Kontaktformular-Fähigkeit für den Website-Builder** — ein Kontaktformular direkt über die Chat-Oberfläche zu jeder Seite hinzufügen
 
-### Verbessert
+### Verbessert {#improved-1}
 
 - **WooCommerce-Integration überarbeitet** — verwendet jetzt native WooCommerce-APIs für bessere Zuverlässigkeit und Kompatibilität
 - **Anbieterliste wird automatisch aktualisiert** — wenn ein Plugin aktiviert oder deaktiviert wird
 
-### Behoben
+### Behoben {#fixed-2}
 
 - **navigate-to-Fähigkeit** — Endlos-Neuladeschleife auf einigen Admin-Seiten behoben
 - **list-posts-Fähigkeit** — löst Kategorie- und Schlagwortnamen jetzt korrekt zu Slugs auf

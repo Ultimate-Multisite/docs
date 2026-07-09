@@ -4,13 +4,13 @@ title: '动作 - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Action: wu_page_\{$this->id\}_register_widgets
+# Action: wu_page_\{$this->id\}_register_widgets {#action-wupagethis-idregisterwidgets}
 
 在此页面注册小部件后触发。
 
 钩子名称的动态部分 `$this->id` 指的是页面 ID。
 
-## Parameters
+## Parameters {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|------|
@@ -18,10 +18,10 @@ _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 | $page_hook | `string` | 页面钩子。 |
 | $page | `object` | 页面对象。 |
 
-### Since
+### Since {#since}
 
 - 2.4.10
 
-### Source
+### Source {#source}
 
 在 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L755) 中定义，位于第 755 行

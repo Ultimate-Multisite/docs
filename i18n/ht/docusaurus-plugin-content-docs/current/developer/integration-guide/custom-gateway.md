@@ -3,11 +3,11 @@ title: Devlopman Pasrèl Pèsonalize
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Devlopman Gateway Pèsonalize
+# Devlopman Gateway Pèsonalize {#custom-gateway-development}
 
 Ou ka kreye gateway peman pèsonalize lè ou pwolonje klas `Base_Gateway` la.
 
-## Klas Gateway
+## Klas Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Anrejistre Gateway la
+## Anrejistre Gateway la {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Metòd Kle
+## Metòd Kle {#key-methods}
 
 | Method | Purpose |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Jere demann ranbousman yo |
 | `get_payment_methods()` | Retounen metòd peman ki sove pou yon kliyan |
 
-## Kalifikasyon renouvèlman pou manm renouvlab
+## Kalifikasyon renouvèlman pou manm renouvlab {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 pèmèt entegrasyon gateway yo rapòte si yon manm renouvlab gen yon kalifikasyon renouvèlman ki ka reyitilize anvan `auto_renew` pèsiste. Hook `wu_membership_has_renewal_credential` epi retounen:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Efase makè kalifikasyon ki manke a kòm pati nan koule re-otorizasyon gateway ou a ki reyisi apre yo fin estoke yon nouvo kalifikasyon ki ka reyitilize.
 
-## Konsèy
+## Konsèy {#tips}
 
 - Toujou retounen `WP_Error` lè gen echèk pou Ultimate Multisite ka jere afichaj erè a
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Sèvi ak `wu_log_add()` pou anrejistreman espesifik pou gateway la
 
-## Kapasite founisè konektè AI
+## Kapasite founisè konektè AI {#ai-connector-provider-capabilities}
 
 Entegrasyon pèsonalize ki rele operasyon ki sipòte pa konektè AI yo ta dwe alinye ak seri founisè OAuth ki sipòte a, ki te entwodui ak AI Provider for Anthropic Max v1.3.0:
 

@@ -3,7 +3,7 @@ title: Gwaro reMano
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Gwaro reAbilities
+# Gwaro reAbilities {#abilities-reference}
 
 Abilities ndiwo zviito zvidiki-diki zvinogona kushevedzwa neGratis AI Agent paWordPress yako. Ability imwe neimwe ikirasi yePHP yakanyoreswa inoburitsa JSON schema — agent inoverenga schema iyi panguva yekushanda kuti inzwisise kuti ma parameters api anodiwa uye kuti ability inodzosa chii.
 
@@ -11,11 +11,11 @@ Peji rino rinonyora abilities dzese dzinouya neGratis AI Agent v1.9.0.
 
 ---
 
-## Custom Post Types
+## Custom Post Types {#custom-post-types}
 
 Abilities idzi dzinotarisira custom post types (CPTs) dzakanyoreswa kuburikidza neagent. Kunyoreswa kunochengetwa muWordPress options table kuitira kuti kurambe kuripo kunyange plugin yakadzimwa yobva yabatidzwa zvakare.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Inonyoresa custom post type itsva.
 
@@ -50,7 +50,7 @@ Inonyoresa custom post type itsva.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Inodzosa custom post types dzese dzakanyoreswa neagent.
 
@@ -73,7 +73,7 @@ Inodzosa custom post types dzese dzakanyoreswa neagent.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Inobvisa kunyoreswa kwecustom post type yakambonyoreswa neagent. Mapost aripo erudzi irworwo anoramba ari mudatabase asi haachawanikwi kuburikidza nepost type.
 
@@ -87,11 +87,11 @@ Inobvisa kunyoreswa kwecustom post type yakambonyoreswa neagent. Mapost aripo er
 
 ---
 
-## Custom Taxonomies
+## Custom Taxonomies {#custom-taxonomies}
 
 Abilities idzi dzinotarisira custom taxonomies. Sezvakaita CPTs, kunyoreswa kwetaxonomy kunochengetwa.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Inonyoresa custom taxonomy itsva.
 
@@ -123,7 +123,7 @@ Inonyoresa custom taxonomy itsva.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Inodzosa custom taxonomies dzese dzakanyoreswa neagent.
 
@@ -146,7 +146,7 @@ Inodzosa custom taxonomies dzese dzakanyoreswa neagent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Inobvisa kunyoreswa kwecustom taxonomy yakambonyoreswa neagent.
 
@@ -160,11 +160,11 @@ Inobvisa kunyoreswa kwecustom taxonomy yakambonyoreswa neagent.
 
 ---
 
-## Design System
+## Design System {#design-system}
 
 Design system abilities dzinoshandura maratidzirwo anoonekwa eWordPress site — kubva kuCSS yakagadziridzwa kusvika kuma block patterns uye logo yesite.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Inowedzera CSS ku`<head>` yesite kuburikidza ne`wp_add_inline_style`. CSS inochengetwa muoption ye`gratis_ai_agent_custom_css` uye inobviswa zvakanaka pamutsetse kana ability yagadziriswazve.
 
@@ -190,7 +190,7 @@ Inowedzera CSS ku`<head>` yesite kuburikidza ne`wp_add_inline_style`. CSS inoche
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Inonyoresa block pattern inogona kushandiswazve muWordPress pattern library.
 
@@ -209,7 +209,7 @@ Inonyoresa block pattern inogona kushandiswazve muWordPress pattern library.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Inonyora block patterns dzese dzakanyoreswa neagent.
 
@@ -231,7 +231,7 @@ Inonyora block patterns dzese dzakanyoreswa neagent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Inoisa logo yesaiti yeWordPress kuattachment ID yakapihwa kana URL yemufananidzo uri kure. Kana URL yapihwa, mufananidzo unodhawunirodhwa woendeswa muMedia Library.
 
@@ -248,7 +248,7 @@ Imwe ye`attachment_id` kana `url` inofanira kupihwa.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Inoshandisa preset ine zita yeruvara/typography pa`theme.json` yetheme iri kushanda (kana `global-styles`). Mapreset mapakeji akasarudzwa uye anochengetwa nechikwata cheGratis AI Agent.
 
@@ -273,11 +273,11 @@ Inoshandisa preset ine zita yeruvara/typography pa`theme.json` yetheme iri kusha
 
 ---
 
-## Masitayera Epasi Rose
+## Masitayera Epasi Rose {#global-styles}
 
 Kugona kweMasitayera Epasi Rose kunoverenga nekunyora mitengo ye theme.json kuburikidza neWordPress Global Styles API, kuchikanganisa mabhuroko nematemplate ese pasaiti yese.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Inodzosa kurongwa kwemasitayera epasi rose aripo iye zvino.
 
@@ -291,7 +291,7 @@ Inodzosa kurongwa kwemasitayera epasi rose aripo iye zvino.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Inovandudza mutengo mumwe kana yakawanda mukurongwa kwemasitayera epasi rose.
 
@@ -318,7 +318,7 @@ Inovandudza mutengo mumwe kana yakawanda mukurongwa kwemasitayera epasi rose.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Inodzorerazve shanduko dzese dzemasitayera epasi rose dzakashandiswa neagent, ichidzorera madefault etheme.
 
@@ -328,11 +328,11 @@ Inodzorerazve shanduko dzese dzemasitayera epasi rose dzakashandiswa neagent, ic
 
 ---
 
-## Mamenu eNavigation
+## Mamenu eNavigation {#navigation-menus}
 
 Kugona kweNavigation Menu kunogadzira nekutarisira mamenu eWordPress nav nezvinhu zvawo.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Inogadzira menu itsva yeWordPress navigation.
 
@@ -347,7 +347,7 @@ Inogadzira menu itsva yeWordPress navigation.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Inotumidza menu patsva kana kuipazve kunzvimbo yetheme.
 
@@ -363,7 +363,7 @@ Inotumidza menu patsva kana kuipazve kunzvimbo yetheme.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Inowedzera chinhu kumenu ye navigation iripo.
 
@@ -383,7 +383,7 @@ Inowedzera chinhu kumenu ye navigation iripo.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Inobvisa chinhu kubva kumenu ye navigation.
 
@@ -397,7 +397,7 @@ Inobvisa chinhu kubva kumenu ye navigation.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Inonyora mamenu ese eWordPress navigation, kusanganisira nzvimbo dzawo dzakapiwa mutheme.
 
@@ -420,11 +420,11 @@ Inonyora mamenu ese eWordPress navigation, kusanganisira nzvimbo dzawo dzakapiwa
 
 ---
 
-## Kutarisira Options
+## Kutarisira Options {#options-management}
 
 Kugona kweOptions kunoverenga nekunyora maoptions eWordPress kuburikidza ne`get_option` / `update_option`. Blocklist yekuchengeteka yakavakirwa mukati inodzivirira kugadziriswa netsaona kwemasetingi akakosha.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Inoverenga option yeWordPress.
 
@@ -440,7 +440,7 @@ Inodzosa kukanganisa kana `option_name` iri pa safety blocklist.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Inonyora option yeWordPress.
 
@@ -458,7 +458,7 @@ Inodzosa chikanganiso kana `option_name` iri pa safety blocklist.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Inodzima WordPress sarudzo.
 
@@ -474,7 +474,7 @@ Inodzosa chikanganiso kana `option_name` iri pa safety blocklist.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Inoratidza WordPress sarudzo dzinoenderana nepatani.
 
@@ -498,11 +498,11 @@ Inoratidza WordPress sarudzo dzinoenderana nepatani.
 
 ---
 
-## Kutungamirira Zvemukati
+## Kutungamirira Zvemukati {#content-management}
 
 Kugona kweKutungamirira Zvemukati kunogadzira nekugadzirisa WordPress zvinyorwa nemapeji. Post IDs dzinodzoserwa kuitira kuti nhanho dzinotevera muzvirongwa zvine kugona kwakawanda dzikwanise kureva zvirimo zvakagadzirwa.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Inogadzira chinyorwa chitsva cheWordPress, peji, kana custom post type entry.
 
@@ -537,7 +537,7 @@ Inogadzira chinyorwa chitsva cheWordPress, peji, kana custom post type entry.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Inogadzirisa chinyorwa kana peji reWordPress riripo.
 
@@ -567,7 +567,7 @@ Inogadzirisa chinyorwa kana peji reWordPress riripo.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Inogadzira zvinyorwa zvakawanda mukufona kumwe chete kwekugona, ichideredza round-trips panguva yekuvaka site kana kupinza zvirimo zvakawanda. Zvinyorwa zvinogadzirwa zvichitevedzana; kana chimwe chikakundikana zvimwe zvinoenderera uye kukundikana kunotaurwa muarray yemigumisiro.
 
@@ -619,7 +619,7 @@ Inogadzira zvinyorwa zvakawanda mukufona kumwe chete kwekugona, ichideredza roun
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Inopa mufananidzo mukuru (post thumbnail) kuchinyorwa kana peji riripo. Inogamuchira Media Library attachment ID iripo kana remote image URL; kana URL yapihwa, mufananidzo unotorwa wopinzwa otomatiki.
 
@@ -638,7 +638,7 @@ Imwe ye `attachment_id` kana `url` inofanira kupihwa.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Inogadzira contact form ichishandisa plugin yeform iri kushanda (Contact Form 7, WPForms, Fluent Forms, kana Gravity Forms, zvichienderana neyakaiswa). Inodzosa shortcode inogona kuiswa muchinyorwa kana peji ripi neripi.
 
@@ -691,11 +691,11 @@ Inogadzira contact form ichishandisa plugin yeform iri kushanda (Contact Form 7,
 
 ---
 
-## Ongororo yeZvinoonekwa
+## Ongororo yeZvinoonekwa {#visual-review}
 
 Kugona kweVisual Review kunoita kuti agent atore mascreenshot emapeji ari kushanda uye aongorore, zvichiita kuti pave neongororo yedesign inozvimirira, kuenzanisa kwepakutanga/nepashure, uye macheki ekudzokera shure kwezvinoonekwa pasina kuda browser extension.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Inotora screenshot yepeji reWordPress paURL yakapihwa ichishandisa server-side headless browser. Mufananidzo unochengetwa muMedia Library uye URL yeCDN inodzoserwa.
 
@@ -724,7 +724,7 @@ Inotora screenshot yepeji reWordPress paURL yakapihwa ichishandisa server-side h
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Inotora mascreenshot maviri uye inodzosa chiyero chediff yezvinoonekwa pamwe nemufananidzo wediff unoratidza nzvimbo dzachinja. Inobatsira pakusimbisa kuti shanduko yedesign yaburitsa mhedzisiro yaitarisirwa kana pakutsvaga regressions dzisina kutarisirwa.
 
@@ -754,7 +754,7 @@ Inotora mascreenshot maviri uye inodzosa chiyero chediff yezvinoonekwa pamwe nem
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Inotora screenshot yepeji uye inoitumira kumodel yemutauro kuti iongororwe zvinoonekwa. Inodzosa kuongorora kwakarongeka kunofukidza marongerwo, typography, kushandiswa kwemavara, uye zvinonetsa zveaccessibility.
 
@@ -785,11 +785,11 @@ Inotora screenshot yepeji uye inoitumira kumodel yemutauro kuti iongororwe zvino
 
 ---
 
-## Kugona Kunogona Kuiswa
+## Kugona Kunogona Kuiswa {#installable-abilities}
 
 Installable Abilities Registry inokutendera kuwedzera agent nemapack ekugona ekuwedzera anogoverwa seWordPress plugins. Pack imwe neimwe inonyoresa kugona kumwe kana kupfuura ichishandisa standard ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Inodzosa catalogue yemapack ekugona aripo ekuiswa kubva muregistry.
 
@@ -818,7 +818,7 @@ Inodzosa catalogue yemapack ekugona aripo ekuiswa kubva muregistry.
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Inodhawunirodha uye inomutsa paketi rekugona kubva murejista.
 
@@ -832,7 +832,7 @@ Inodhawunirodha uye inomutsa paketi rekugona kubva murejista.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Inobvunza rejista yekugona kuti iwane plugin yakanakisa yekushandiswa kwakatsanangurwa uye, kana zvichidiwa, inoiisa.
 

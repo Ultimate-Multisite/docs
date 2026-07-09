@@ -3,13 +3,13 @@ title: Að smíða sérsniðna registrar-samþættingu
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Að byggja sérsniðna samþættingu við skráningaraðila
+# Að byggja sérsniðna samþættingu við skráningaraðila {#building-a-custom-registrar-integration}
 
 Domain Seller-viðbótin notar **Integration Registry**-mynstur. Hver skráningaraðili er PHP-klasi sem útfærir `Domain_Selling_Capability` og skráir sig í gegnum `wu_domain_seller_register_capabilities` action hook.
 
 Þessi leiðarvísir sýnir hvernig á að tengja inn sérsniðinn skráningaraðila.
 
-## Viðmótið
+## Viðmótið {#the-interface}
 
 Klasinn þinn verður að útfæra `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` og erfa frá `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Valfrjálsar aðferðir
+### Valfrjálsar aðferðir {#optional-methods}
 
 Útfærðu þessar til að opna fyrir viðbótareiginleika. Viðbótin greinir stuðning með `method_exists()`:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Lénsflutningur (á útleið) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Lénsflutningur (á innleið) |
 
-### Venja fyrir skilagildi
+### Venja fyrir skilagildi {#return-value-convention}
 
 Allar aðferðir skila fylki með að lágmarki `success`-lykli:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Að skrá capability-ið þitt
+## Að skrá capability-ið þitt {#registering-your-capability}
 
 Skráðu klasann þinn með `wu_domain_seller_register_capabilities` action:
 
@@ -109,7 +109,7 @@ Fyrsta viðfangið í `add_capability()` er **provider ID** — slug með lágst
 
 ---
 
-## Að bæta auðkenningarreitum við leiðsagnarálfinn
+## Að bæta auðkenningarreitum við leiðsagnarálfinn {#adding-credential-fields-to-the-wizard}
 
 Til að leyfa stjórnendum að slá inn auðkenni í gegnum uppsetningarálfinn skaltu skrá samþættinguna þína:
 
@@ -137,7 +137,7 @@ Auðkenni eru vistuð sem netvalkostir með reitaauðkennin sem lykla. Sæktu þ
 
 ---
 
-## Hooks fyrir aðgerðir eftir skráningu
+## Hooks fyrir aðgerðir eftir skráningu {#hooks-for-post-registration-actions}
 
 Notaðu þessar aðgerðir til að ræsa webhooks, provisioning, tilkynningar eða CRM-uppfærslur:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Atvikaskráning
+## Atvikaskráning {#logging}
 
 Skrifaðu í skráningarrásina sem er sértæk fyrir þjónustuveituna þína með `wu_log_add()`:
 

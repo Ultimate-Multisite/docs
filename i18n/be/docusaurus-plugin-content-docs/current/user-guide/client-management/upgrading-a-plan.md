@@ -3,7 +3,7 @@ title: Апаграмадванне плана
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Апаграмадванне плана (v2)
+# Апаграмадванне плана (v2) {#upgrading-a-plan-v2}
 
 _**ВАЖНАЕ ПРАМІТЕЛЕННЕ: Гэты артыкул адносіцца да версіі Ultimate Multisite 2.x.**_
 
@@ -41,7 +41,7 @@ _**ВАЖНАЕ ПРАМІТЕЛЕННЕ: Гэты артыкул адносіц
 
 ##
 
-## Upgrade and Downgrade Paths
+## Upgrade and Downgrade Paths {#upgrade-and-downgrade-paths}
 
 На кожным з вашых прадуктаў вы знайце ўкладку **Up & Downgrades**. Першы варыянт на гэтай укладцы — гэта поле, назваецца **Plan Group**.
 

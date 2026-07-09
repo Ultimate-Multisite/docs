@@ -3,7 +3,7 @@ title: Webhook
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Fijerana ny Webhooks (v2)
+# Fijerana ny Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**FANAMARIHANA: Tsy ho an'ny mpampiasa manam-pahaizana avo dia ity fitaovana na lahatsoratra ity.**_
 
@@ -11,7 +11,7 @@ Ny **webhook** dia fomba iray ahafahana manome fampahalalana amin'ny fotoana ten
 
 Mampanantena ity raha mila mifandray na mandefa data manokana avy amin'ny Ultimate Multisite ho an'ny CRM na rafitra hafa isaky ny misy traikefa (event) mitranga. Ohatra, mila mandefa ny anaran'ilay mpampiasa sy ny adiresin-tenim-potoany ianao any amin'ny lisitry ny mpanaraka isaky ny misy kaonty mpampiasa vaovao no namboarina.
 
-## Ahoana no famoronana webhook
+## Ahoana no famoronana webhook {#how-to-create-a-webhook}
 
 Mba hamoronana webhook, mandehin'ny fizarana admin anao ho an'ny tambajotra (network admin dashboard). Tsindrio amin'ny **Ultimate Multisite > Webhooks > Add New Webhook.**
 

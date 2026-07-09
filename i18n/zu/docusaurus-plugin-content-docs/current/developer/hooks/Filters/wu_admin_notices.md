@@ -4,11 +4,11 @@ title: Isihlungi - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Isihlungi: wu_admin_notices
+# Isihlungi: wu_admin_notices {#filter-wuadminnotices}
 
 Vumela abathuthukisi ukuthi bahlunge izaziso ze-admin ezengezwe yi-Ultimate Multisite.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Vumela abathuthukisi ukuthi bahlunge izaziso ze-admin ezengezwe yi-Ultimate Mult
 | $filter | `string` | Uma izaziso ezingasuswa sezihlungiwe zakhishwa. |
 | $dismissed_messages | `array` | Uhlu lokhiye bezaziso ezisusiwe. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) emugqeni 121
 
 
-## Okubuyiswayo
+## Okubuyiswayo {#returns}

@@ -3,15 +3,15 @@ title: 'Oppitunti 8: Asiakkaan käyttöönotto'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Oppitunti 8: Asiakkaan käyttöönotto
+# Oppitunti 8: Asiakkaan käyttöönotto {#lesson-8-customer-onboarding}
 
 Asiakkaan saaminen rekisteröitymään on vasta puolet työstä. Jos hän kirjautuu sisään, tuntee olonsa kuormittuneeksi eikä koskaan palaa, olet menettänyt hänet. Tässä oppitunnissa suunnitellaan kokemus, joka muuttaa uuden rekisteröitymisen aktiiviseksi ja sitoutuneeksi asiakkaaksi.
 
-## Mihin jäimme
+## Mihin jäimme {#where-we-left-off}
 
 FitSite on täysin brändätty, ja sillä on toimiva kassaprosessi. Nyt keskitymme siihen, mitä tapahtuu sen jälkeen, kun kuntostudion omistaja viimeistelee rekisteröitymisen ja saapuu uudelle sivustolleen ensimmäistä kertaa.
 
-## Miksi käyttöönotolla on merkitystä
+## Miksi käyttöönotolla on merkitystä {#why-onboarding-matters}
 
 Ensimmäiset 30 minuuttia rekisteröitymisen jälkeen ratkaisevat, jääkö asiakas vai poistuuko hän. Kuntostudion omistaja, joka:
 
@@ -21,9 +21,9 @@ Ensimmäiset 30 minuuttia rekisteröitymisen jälkeen ratkaisevat, jääkö asia
 
 Kohderyhmäkohtaiset mallisi (Oppitunti 4) hoitavat ensimmäisen kohdan. Tämä oppitunti hoitaa toisen.
 
-## Ensimmäisen kirjautumisen kokemus
+## Ensimmäisen kirjautumisen kokemus {#the-first-login-experience}
 
-### Tervetuloa-Dashboard-widget
+### Tervetuloa-Dashboard-widget {#welcome-dashboard-widget}
 
 Luo mukautettu Dashboard-widget, joka tervehtii uusia asiakkaita ja ohjaa heidät asetusten läpi. Sen tulisi näkyä selvästi, kun he kirjautuvat sisään ensimmäisen kerran.
 
@@ -37,7 +37,7 @@ Luo mukautettu Dashboard-widget, joka tervehtii uusia asiakkaita ja ohjaa heidä
 
 Jokainen vaihe linkittää suoraan asiaankuuluvalle sivulle tai asetukseen. Ei valikoiden läpikäymistä etsimällä.
 
-### Yksinkertaista Dashboard
+### Yksinkertaista Dashboard {#simplify-the-dashboard}
 
 Uusien asiakkaiden ei tarvitse nähdä jokaista WordPress-valikkokohtaa. Harkitse:
 
@@ -47,29 +47,29 @@ Uusien asiakkaiden ei tarvitse nähdä jokaista WordPress-valikkokohtaa. Harkits
 
 [Plugin & Theme Manager](/addons/plugin-and-theme-manager) -lisäosa voi auttaa hallitsemaan sitä, mitä asiakkaat näkevät.
 
-## Tervetulosähköpostien sarja
+## Tervetulosähköpostien sarja {#welcome-email-sequence}
 
 Yksi tervetulosähköposti ei riitä. Määritä sarja, joka ohjaa asiakkaita heidän ensimmäisen viikkonsa aikana:
 
-### Sähköposti 1: Tervetuloa (heti rekisteröitymisen jälkeen)
+### Sähköposti 1: Tervetuloa (heti rekisteröitymisen jälkeen) {#email-1-welcome-immediately-after-signup}
 
 - Aihe: "Tervetuloa FitSiteen -- studiosi verkkosivusto on julkaistu"
 - Sisältö: Kirjautumislinkki, pika-aloituksen vaiheet, linkki ohjeresursseihin
 - Sävy: Innostunut, kannustava, kuntoteemaan sopiva
 
-### Sähköposti 2: Nopeat onnistumiset (päivä 1)
+### Sähköposti 2: Nopeat onnistumiset (päivä 1) {#email-2-quick-wins-day-1}
 
 - Aihe: "3 asiaa, jotka kannattaa tehdä ensin FitSitessäsi"
 - Sisältö: Lisää logosi, päivitä etusivun hero-kuva, lisää tuntiaikataulusi
 - Sisällytä kuvakaappauksia, jotka näyttävät täsmälleen, mihin klikata
 
-### Sähköposti 3: Tee siitä omasi (päivä 3)
+### Sähköposti 3: Tee siitä omasi (päivä 3) {#email-3-make-it-yours-day-3}
 
 - Aihe: "Tee kuntosivustostasi erottuva"
 - Sisältö: Mukauta värejä, lisää valmentajakuvia, kirjoita studiosi tarina
 - Linkitä esimerkkeihin alustan hienoista kuntosivustoista
 
-### Sähköposti 4: Julkaise (päivä 7)
+### Sähköposti 4: Julkaise (päivä 7) {#email-4-go-live-day-7}
 
 - Aihe: "Valmis jakamaan FitSitesi maailmalle?"
 - Sisältö: Tarkistuslista siitä, mitä varmistaa ennen jakamista, miten yhdistää mukautettu verkkotunnus (jos Growth/Pro-suunnitelmassa), vinkkejä sosiaaliseen jakamiseen
@@ -78,11 +78,11 @@ Yksi tervetulosähköposti ei riitä. Määritä sarja, joka ohjaa asiakkaita he
 Käytä [Webhooks](/user-guide/integrations/webhooks)- tai [Zapier](/user-guide/integrations/zapier)-integraatiota näiden sähköpostien käynnistämiseen sähköpostimarkkinointialustasi kautta. Tämä antaa sinulle enemmän hallintaa ajoituksesta ja mahdollistaa sitoutumisen seuraamisen.
 :::
 
-## Ohjeresurssit
+## Ohjeresurssit {#help-resources}
 
 Luo kohderyhmäkohtaista ohjesisältöä, joka vastaa kysymyksiin, joita kuntostudioiden omistajat oikeasti kysyvät:
 
-### Tietopankkiartikkelit
+### Tietopankkiartikkelit {#knowledge-base-articles}
 
 - "Kuinka päivität tuntiaikataulusi"
 - "Valmentajaprofiilien lisääminen ja muokkaaminen"
@@ -92,7 +92,7 @@ Luo kohderyhmäkohtaista ohjesisältöä, joka vastaa kysymyksiin, joita kuntost
 
 Kirjoita nämä ei-teknisille käyttäjille. Käytä kuvakaappauksia. Vältä WordPress-jargonia.
 
-### Video-opastukset
+### Video-opastukset {#video-walkthroughs}
 
 Lyhyet (2–3 minuutin) näyttötallenteet, jotka näyttävät:
 
@@ -103,7 +103,7 @@ Lyhyet (2–3 minuutin) näyttötallenteet, jotka näyttävät:
 
 Näiden ei tarvitse olla viimeisteltyjä tuotantoja. Selkeys, hyödyllisyys ja kohderyhmäkohtaisuus ovat tärkeintä.
 
-## Account Page
+## Account Page {#the-account-page}
 
 Ultimate Multisite sisältää asiakasnäkymän [Account Page](/user-guide/client-management/account-page), jossa asiakkaat hallitsevat tilaustaan. Mukauta se niin, että se:
 
@@ -112,7 +112,7 @@ Ultimate Multisite sisältää asiakasnäkymän [Account Page](/user-guide/clien
 - Tarjoaa laskutushistorian ja laskujen lataukset
 - Linkittää ohjeresursseihin
 
-## Käyttöönoton onnistumisen mittaaminen
+## Käyttöönoton onnistumisen mittaaminen {#measuring-onboarding-success}
 
 Seuraa näitä mittareita tietääksesi, toimiiko käyttöönotto:
 
@@ -121,7 +121,7 @@ Seuraa näitä mittareita tietääksesi, toimiiko käyttöönotto:
 - **Uusien asiakkaiden tukipyynnöt**: Suuri määrä tarkoittaa, että käyttöönotossasi on aukkoja
 - **Kokeilusta maksavaksi -konversio**: Jos tarjoat kokeilujaksoja, kuinka suuri osuus siirtyy maksaviksi?
 
-## FitSite-verkosto tähän mennessä
+## FitSite-verkosto tähän mennessä {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Mitä rakensimme tässä oppitunnissa
+## Mitä rakensimme tässä oppitunnissa {#what-we-built-this-lesson}
 
 - **Ohjattu ensimmäisen kirjautumisen kokemus**, jossa on Pika-aloitus-widget
 - **Yksinkertaistettu Dashboard**, joka keskittyy kuntosivuston hallintatehtäviin

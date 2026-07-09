@@ -3,13 +3,13 @@ title: Dhisidda Isdhexgal Diiwaangeliye Gaar loo Habeeyey
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Dhisidda Isku-xirka Registrar Gaar ah
+# Dhisidda Isku-xirka Registrar Gaar ah {#building-a-custom-registrar-integration}
 
 Addon-ka Domain Seller wuxuu adeegsadaa qaabka **Integration Registry**. Registrar kasta waa PHP class hirgeliya `Domain_Selling_Capability` oo isdiiwaangeliya isaga oo adeegsanaya action hook-ka `wu_domain_seller_register_capabilities`.
 
 Hagahani wuxuu muujinayaa sida loogu xiro registrar gaar ah.
 
-## Interface-ka
+## Interface-ka {#the-interface}
 
 Class-kaagu waa inuu hirgeliyaa `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` oo uu ballaariyaa `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Habab ikhtiyaari ah
+### Habab ikhtiyaari ah {#optional-methods}
 
 Hirgelintooda waxay furaysaa astaamo dheeraad ah. Addon-ku wuxuu taageerada ku ogaadaa `method_exists()`:
 
@@ -81,7 +81,7 @@ Hirgelintooda waxay furaysaa astaamo dheeraad ah. Addon-ku wuxuu taageerada ku o
 | `get_epp_code(string $domain_name): array` | Wareejinta domain-ka (baxaysa) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Wareejinta domain-ka (soo galaysa) |
 
-### Habka qiimaha soo noqda
+### Habka qiimaha soo noqda {#return-value-convention}
 
 Dhammaan hababku waxay soo celiyaan array leh ugu yaraan furaha `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Diiwaangelinta awooddaada
+## Diiwaangelinta awooddaada {#registering-your-capability}
 
 Diiwaangeli class-kaaga adigoo adeegsanaya action-ka `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argument-ga koowaad ee `add_capability()` waa **provider ID** — slug xarfo yar
 
 ---
 
-## Ku darista goobaha aqoonsiga wizard-ka
+## Ku darista goobaha aqoonsiga wizard-ka {#adding-credential-fields-to-the-wizard}
 
 Si admins ay aqoonsiyada uga geliyaan setup wizard-ka, diiwaangeli integration-kaaga:
 
@@ -137,7 +137,7 @@ Aqoonsiyada waxaa loo kaydiyaa sidii network options iyadoo field ID-yada loo ad
 
 ---
 
-## Hooks loogu talagalay ficillada diiwaangelinta kadib
+## Hooks loogu talagalay ficillada diiwaangelinta kadib {#hooks-for-post-registration-actions}
 
 Adeegso actions-kan si aad u kiciso webhooks, diyaarinta adeegga, ogeysiisyada, ama cusboonaysiinta CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Diiwaangelin
+## Diiwaangelin {#logging}
 
 Ku qor kanaalka diiwaanka ee u gaar ah bixiyahaaga adigoo isticmaalaya `wu_log_add()`:
 

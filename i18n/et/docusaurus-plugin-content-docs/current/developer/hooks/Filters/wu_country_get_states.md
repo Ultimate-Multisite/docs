@@ -4,11 +4,11 @@ title: Filter - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filter: wu_country_get_states
+# Filter: wu_country_get_states {#filter-wucountrygetstates}
 
 Tagastab selle riigi osariikide loendi.
 
-## Parameetrid
+## Parameetrid {#parameters}
 
 | Nimi | Tüüp | Kirjeldus |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Tagastab selle riigi osariikide loendi.
 | $country_code | `string` | Riigi kahetäheline ISO-kood. |
 | $current_country | `\WP_Ultimo\Country\Country` | Praeguse klassi eksemplar. |
 
-### Alates
+### Alates {#since}
 
 - 2.0.11
-### Allikas
+### Allikas {#source}
 
 Määratletud failis [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) real 86
 
 
-## Tagastab
+## Tagastab {#returns}
 Filtreeritud osariikide loendi.

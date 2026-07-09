@@ -3,15 +3,15 @@ title: Orkestrado de Reteja Konstruilo v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (enkondukita en Gratis AI Agent v1.4.0) estas la motoro, kiu funkciigas plurpaŝan retejan kreadon. Kiam vi petas la agenton "konstrui restoracian retejon" aŭ "krei biletujon kun blogo", la orkestrilo disrompas tiun altnivelan celon en strukturitan **planon**, malkovras la kromprogramojn bezonatajn por plenumi ĝin, plenumas ĉiun paŝon sinsekve, spuras progreson, kaj aŭtonome resaniĝas post eraroj.
 
 ---
 
-## Kiel Ĝi Funkcias
+## Kiel Ĝi Funkcias {#how-it-works}
 
-### 1. Plangenerado
+### 1. Plangenerado {#1-plan-generation}
 
 Kiam la agento ricevas retejo-konstruan instrukcion, ĝi vokas la kapablon `create_site_plan` por produkti JSON **retejan planon**. La plano priskribas:
 
@@ -61,7 +61,7 @@ Kiam la agento ricevas retejo-konstruan instrukcion, ĝi vokas la kapablon `crea
 }
 ```
 
-### 2. Kromprograma Malkovro
+### 2. Kromprograma Malkovro {#2-plugin-discovery}
 
 Antaŭ ol plenumado komenciĝas, la orkestrilo skanas la `plugin_requirements` de la plano kaj kontrolas kiuj kromprogramoj jam estas aktivaj. Por mankantaj kromprogramoj, ĝi:
 
@@ -71,7 +71,7 @@ Antaŭ ol plenumado komenciĝas, la orkestrilo skanas la `plugin_requirements` d
 
 Malsukcesoj de kromprograma malkovro ne estas fatalaj — la orkestrilo markas la trafitajn paŝojn kiel `skipped` kaj daŭrigas kun la resto de la plano.
 
-### 3. Plenumado de Plano
+### 3. Plenumado de Plano {#3-plan-execution}
 
 La orkestrilo vokas `execute_site_plan` kun la plano-ID. Plenumado progresas fazo-post-fazo, paŝo-post-paŝo:
 
@@ -79,7 +79,7 @@ La orkestrilo vokas `execute_site_plan` kun la plano-ID. Plenumado progresas faz
 - **Paralelaj paŝoj** — paŝoj ene de la sama fazo, kiuj ne havas interdependecojn, estas sendataj samtempe kiam la flago `parallel` estas agordita.
 - **Paŝa tempolimo** — ĉiu paŝo havas individuan tempolimon (defaŭlte: la agordo `Ability Timeout`). Paŝo kies tempo elĉerpiĝis estas markita `failed` kaj la plano daŭrigas.
 
-### 4. Progresospurado
+### 4. Progresospurado {#4-progress-tracking}
 
 Voku `get_plan_progress` iam ajn por kontroli plenumostaton:
 
@@ -104,7 +104,7 @@ WP-CLI uzantoj povas kontroli progreson per:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Erara Resaniĝo
+### 5. Erara Resaniĝo {#5-error-recovery}
 
 Kiam paŝo malsukcesas, la orkestrilo kontrolas ĉu estas **rezerva** paŝo difinita en la plano:
 
@@ -115,9 +115,9 @@ La agento raportas ĉiujn malsukcesojn en la fina plana resumo kaj povas sugesti
 
 ---
 
-## Retejplanaj Kapabloj
+## Retejplanaj Kapabloj {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Generas strukturitan retejan planon el naturlingva cela priskribo.
 
@@ -134,7 +134,7 @@ Generas strukturitan retejan planon el naturlingva cela priskribo.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Komencas plenumi antaŭe generitan retejan planon.
 
@@ -150,7 +150,7 @@ Komencas plenumi antaŭe generitan retejan planon.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Redonas la nunan plenuman staton de reteja plano.
 
@@ -164,7 +164,7 @@ Redonas la nunan plenuman staton de reteja plano.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Permane solvas malsukcesintan paŝon kaj rekomencas planan plenumadon de la sekva paŝo. Uzu tion kiam aŭtomata reakiro ne eblis kaj vi volas interveni.
 
@@ -180,7 +180,7 @@ Permane solvas malsukcesintan paŝon kaj rekomencas planan plenumadon de la sekv
 
 ---
 
-## Komparado de v1 kaj v2
+## Komparado de v1 kaj v2 {#comparing-v1-and-v2}
 
 | Trajto | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Permane solvas malsukcesintan paŝon kaj rekomencas planan plenumadon de la sekv
 
 ---
 
-## WP-CLI Plan-Komandoj
+## WP-CLI Plan-Komandoj {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Generas retejan planon el cela priskribo.
 
@@ -205,7 +205,7 @@ Generas retejan planon el cela priskribo.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Plenumas antaŭe generitan planon.
 
@@ -213,7 +213,7 @@ Plenumas antaŭe generitan planon.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Montras nunan progreson por plenumata aŭ kompletigita plano.
 
@@ -221,7 +221,7 @@ Montras nunan progreson por plenumata aŭ kompletigita plano.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Listigas ĉiujn retejajn planojn (atendantajn, en-progresajn kaj kompletigitajn).
 
@@ -229,7 +229,7 @@ Listigas ĉiujn retejajn planojn (atendantajn, en-progresajn kaj kompletigitajn)
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Restarigas malsukcesintan planon al `pending` por ke ĝi povu esti re-plenumita de la komenco.
 

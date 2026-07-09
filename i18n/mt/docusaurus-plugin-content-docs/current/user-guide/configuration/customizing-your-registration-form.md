@@ -3,13 +3,13 @@ title: Tippersonalizza l-Formola tar-Reġistrazzjoni Tiegħek
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Tippersonalizza l-Formola tar-Reġistrazzjoni tiegħek
+# Tippersonalizza l-Formola tar-Reġistrazzjoni tiegħek {#customizing-your-registration-form}
 
 Biex in-network tiegħek jidher uniku meta mqabbel mas-SaaS l-oħra kollha mibnija fuq il-pjattaforma WordPress, Ultimate Multisite jippermettilek tippersonalizza l-paġni tar-reġistrazzjoni u tal-login tiegħek bil-karatteristika tagħna **Checkout Forms**.
 
 Għalkemm huma mod faċli u flessibbli biex tesperimenta b’approċċi differenti meta tipprova tikkonverti klijenti ġodda, l-aktar li jintużaw huwa biex jinħolqu formoli tar-reġistrazzjoni personalizzati. Dan l-artiklu għandu l-għan li jurik kif tista’ tagħmel dan.
 
-## Paġni tal-login u tar-reġistrazzjoni:
+## Paġni tal-login u tar-reġistrazzjoni: {#login-and-registration-pages}
 
 Meta tinstalla Ultimate Multisite, dan joħloq awtomatikament paġni personalizzati tal-login u tar-reġistrazzjoni fuq is-sit ewlieni tiegħek. Tista’ tibdel dawn il-paġni predefiniti fi kwalunkwe ħin billi tmur fil-paġna **Ultimate Multisite > Settings > Login & Registration** tiegħek.
 
@@ -45,7 +45,7 @@ Issa, ejja naraw għażliet oħra li għadhom rilevanti għall-proċess tal-logi
 
 U dawn huma l-għażliet kollha relatati mal-login u r-reġistrazzjoni li tista’ tippersonalizza! Tinsiex issalva s-settings tiegħek wara li tispiċċa teditjahom.
 
-## Użu ta’ formoli tar-reġistrazzjoni multipli:
+## Użu ta’ formoli tar-reġistrazzjoni multipli: {#using-multiple-registration-forms}
 
 Ultimate Multisite 2.0 joffri editur tal-checkout form li jippermettilek toħloq kemm trid formoli, b’oqsma differenti, prodotti offruti, eċċ.
 
@@ -69,7 +69,7 @@ Inkella, tista’ teditja jew tidduplika l-formoli li diġà għandek billi tikk
 
 Jekk tagħżel pass wieħed jew diversi passi, il-checkout form tkun diġà mimlija minn qabel bil-passi bażiċi biex taħdem. Imbagħad, jekk trid, tista’ żżid magħha passi żejda.
 
-### Editjar ta’ Checkout Form:
+### Editjar ta’ Checkout Form: {#editing-a-checkout-form}
 
 Kif semmejna qabel, tista’ toħloq checkout forms għal skopijiet differenti. F’dan l-eżempju se naħdmu fuq formola tar-reġistrazzjoni.
 
@@ -131,11 +131,11 @@ Biex tikseb ix-shortcode tal-formola tiegħek ikklikkja fuq **Iġġenera Shortco
 
 _**Nota:** Ikollok bżonn iżżid dan ix-shortcode mal-paġna tar-reġistrazzjoni tiegħek sabiex din il-formola tal-checkout tiżdied magħha._
 
-## Għażla minn qabel ta’ prodotti u mudelli permezz ta’ parametri tal-URL:
+## Għażla minn qabel ta’ prodotti u mudelli permezz ta’ parametri tal-URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
 Jekk trid toħloq tabelli tal-prezzijiet personalizzati għall-prodotti tiegħek u tagħżel minn qabel fuq il-formola tal-checkout il-prodott jew il-mudell li l-klijent tiegħek jagħżel mit-tabella tal-prezzijiet jew mill-paġna tal-mudelli tiegħek, tista’ tuża parametri tal-URL għal dan.
 
-### **Għall-pjanijiet:**
+### **Għall-pjanijiet:** {#for-plans}
 
 Mur għal **Ultimate Multisite > Prodotti > Agħżel pjan**. Għandek tara l-buttuna **Ikklikkja biex tikkopja Link li tista’ Tinqasam** fil-quċċata tal-paġna. Din hija l-link li tista’ tuża biex tagħżel minn qabel dan il-pjan speċifiku fuq il-formola tal-checkout tiegħek.
 
@@ -143,7 +143,7 @@ Mur għal **Ultimate Multisite > Prodotti > Agħżel pjan**. Għandek tara l-but
 
 Innota li din il-link li tista’ tinqasam hija valida biss għal **Pjanijiet**. Ma tistax tuża links li jistgħu jinqasmu għal pakketti jew servizzi.
 
-### Għall-mudelli:
+### Għall-mudelli: {#for-templates}
 
 Jekk trid tagħżel minn qabel mudelli tas-sit fuq il-formola tal-checkout tiegħek, tista’ tuża l-parametru: **?template_id=X** fuq il-URL tal-paġna tar-reġistrazzjoni tiegħek. L-"X" trid tinbidel bin-**numru tal-ID tal-mudell tas-sit**. Biex tikseb dan in-numru, mur għal **Ultimate Multisite > Siti**.
 

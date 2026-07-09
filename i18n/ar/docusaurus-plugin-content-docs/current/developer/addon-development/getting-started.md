@@ -3,9 +3,9 @@ title: بدء تطوير الإضافات
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# تطوير الإضافات
+# تطوير الإضافات {#addon-development}
 
-## بنية الإضافة
+## بنية الإضافة {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## قالب ملف الإضافة الرئيسي
+## قالب ملف الإضافة الرئيسي {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## مثال نموذج مخصص
+## مثال نموذج مخصص {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## تكامل صفحة الإدارة
+## تكامل صفحة الإدارة {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## اختبار إضافتك
+## اختبار إضافتك {#testing-your-addon}
 
 ```php
 <?php
@@ -347,11 +347,11 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## نقاط امتداد v2.13.0
+## نقاط امتداد v2.13.0 {#v2130-extension-points}
 
 يضيف Ultimate Multisite v2.13.0 عدة نقاط امتداد مفيدة للإضافات التي تتكامل مع المستأجرين السياديين، أو نطاقات إتمام الشراء، أو أتمتة DNS الخاصة بموفّر الاستضافة.
 
-### عناوين URL لإدارة SSO والموقع الرئيسي
+### عناوين URL لإدارة SSO والموقع الرئيسي {#sso-and-main-site-management-urls}
 
 Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
 
@@ -361,7 +361,7 @@ add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
 }, 10, 4);
 ```
 
-### النطاقات الأساسية لنموذج إتمام الشراء
+### النطاقات الأساسية لنموذج إتمام الشراء {#checkout-form-base-domains}
 
 استخدم `wu_checkout_form_base_domains` عندما توفّر إضافتك نطاقات أساسية مشتركة إضافية ينبغي أن تتصرّف مثل نطاقات **عنوان URL للموقع** في نموذج إتمام الشراء بدلًا من التعيينات المخصصة لكل موقع:
 
@@ -375,7 +375,7 @@ add_filter('wu_checkout_form_base_domains', function($domains) {
 
 يقوم Ultimate Multisite بتطبيع هذه المضيفات ويتخطّى سجلات النطاق المعيّن تلقائيًا لكل موقع لها.
 
-### إنشاء سجلّات النطاق تلقائيًا
+### إنشاء سجلّات النطاق تلقائيًا {#automatic-domain-record-creation}
 
 استخدم `wu_should_create_domain_record_for_site` عندما تحتاج إضافتك إلى منع أو تأجيل إنشاء سجلّات النطاق تلقائيًا لموقع مُنشأ حديثًا:
 
@@ -393,7 +393,7 @@ add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
 
 يمكن لتكاملات موفّر الاستضافة التي تستمع إلى `wu_add_subdomain` إنشاء سجلّات DNS من جهة الموفّر عند إنشاء المواقع. إذا لم يكن هناك أي تكامل مسجّل لذلك الإجراء، فإن Ultimate Multisite يتخطّى مهمة الخلفية الفارغة.
 
-## الخطوات التالية
+## الخطوات التالية {#next-steps}
 
 - راجع [مرجع الخطافات](/developer/hooks) للاطلاع على الإجراءات والمرشحات المتاحة
 - تحقّق من [نظرة عامة على REST API](/developer/rest-api/overview) لتكامل API

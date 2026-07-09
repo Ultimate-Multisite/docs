@@ -3,11 +3,11 @@ title: Site Builder Contactformulieren
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Contactformulieren met de Site Builder
+# Contactformulieren met de Site Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 voegt de mogelijkheid toe om contactformulieren rechtstreeks vanuit de chatinterface te maken met behulp van de Site Builder agent. Hiermee kunt u volledig functionele contactformulieren aan elke pagina toevoegen zonder de chat te verlaten.
 
-## Overzicht
+## Overzicht {#overview}
 
 De functionaliteit voor contactformulieren van de Site Builder (`create_contact_form`) detecteert automatisch uw geïnstalleerde formulierplugin en maakt een contactformulier aan met behulp van de ingebouwde mogelijkheden van die plugin. Ondersteunde formulierplugins zijn onder andere:
 
@@ -18,7 +18,7 @@ De functionaliteit voor contactformulieren van de Site Builder (`create_contact_
 
 De assistent selecteert automatisch de beste beschikbare formulierplugin op uw site en genereert een contactformulier dat is afgestemd op die plugin.
 
-## Een Contactformulier Aanmaken
+## Een Contactformulier Aanmaken {#creating-a-contact-form}
 
 Om een contactformulier te maken met behulp van de Site Builder:
 
@@ -34,7 +34,7 @@ Om een contactformulier te maken met behulp van de Site Builder:
 
 4. De Site Builder genereert het contactformulier en geeft een shortcode terug die klaar is om ingebed te worden.
 
-## Het Gebruikte Shortcode
+## Het Gebruikte Shortcode {#using-the-generated-shortcode}
 
 Nadat de Site Builder het contactformulier heeft aangemaakt, geeft deze een shortcode terug (bijvoorbeeld, `[contact-form-7 id="123"]`). U kunt:
 
@@ -45,11 +45,11 @@ Nadat de Site Builder het contactformulier heeft aangemaakt, geeft deze een shor
 
 3. **Het gebruiken in een template** — Als u bekend bent met PHP, kunt u de shortcode toevoegen aan een thema templatebestand.
 
-## Het Aanpassen van het Contactformulier
+## Het Aanpassen van het Contactformulier {#customizing-the-contact-form}
 
 Nadat de Site Builder het contactformulier heeft aangemaakt, kunt u dit verder aanpassen:
 
-### Via de Chatinterface
+### Via de Chatinterface {#via-the-chat-interface}
 
 Vraag de Site Builder om het formulier aan te passen:
 
@@ -57,7 +57,7 @@ Vraag de Site Builder om het formulier aan te passen:
 
 De Site Builder werkt het formulier bij en geeft de bijgewerkte shortcode terug.
 
-### Via de Admininterface van de Formulierplugin
+### Via de Admininterface van de Formulierplugin {#via-the-form-plugins-admin-interface}
 
 U kunt het formulier ook direct aanpassen in de instellingen van uw formulierplugin:
 
@@ -65,7 +65,7 @@ U kunt het formulier ook direct aanpassen in de instellingen van uw formulierplu
 2. Zoek het formulier dat door de Site Builder is aangemaakt.
 3. Pas de velden, validatieregels en e-mailmeldingen aan zoals nodig.
 
-## Formulierplugins en Compatibiliteit
+## Formulierplugins en Compatibiliteit {#form-plugins-and-compatibility}
 
 De Site Builder detecteert automatisch welke formulierplugin op uw site is geïnstalleerd en gebruikt deze om het contactformulier te creëren. Als er meerdere formulierplugins zijn geïnstalleerd, geeft de Site Builder de volgende prioriteit:
 
@@ -76,7 +76,7 @@ De Site Builder detecteert automatisch welke formulierplugin op uw site is geïn
 
 Als geen van deze plugins is geïnstalleerd, beveelt de Site Builder aan om er eerst één te installeren voordat het contactformulier wordt aangemaakt.
 
-## E-mailmeldingen
+## E-mailmeldingen {#email-notifications}
 
 Contactformulieren die door de Site Builder worden aangemaakt, zijn standaard ingesteld om e-mailmeldingen te sturen naar de sitebeheerder. U kunt het e-mailadres van de ontvanger en de meldingstekst aanpassen:
 
@@ -91,21 +91,21 @@ Voor gedetailleerde instructies verwijst u naar de documentatie van uw formulier
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Voorbeelden van Gebruiksscenario's
+## Voorbeelden van Gebruiksscenario's {#example-use-cases}
 
-### Simpel Contactformulier
+### Simpel Contactformulier {#simple-contact-form}
 
 > "Maak een eenvoudig contactformulier met velden voor naam, e-mail en bericht."
 
-### Meerstappenformulier
+### Meerstappenformulier {#multi-step-form}
 
 > "Maak een contactformulier met een eerste stap voor contactgegevens en een tweede stap voor het bericht en de gewenste contactmethode."
 
-### Formulier met Conditionele Logica
+### Formulier met Conditionele Logica {#form-with-conditional-logic}
 
 > "Maak een contactformulier dat verschillende velden weergeeft op basis van de selectie van de gebruiker in een dropdown."
 
-### Formulier met Bestandsupload
+### Formulier met Bestandsupload {#form-with-file-upload}
 
 > "Maak een contactformulier dat gebruikers in staat stelt een bestand of bijlage te uploaden."
 

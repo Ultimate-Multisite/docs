@@ -3,11 +3,11 @@ title: Ho lula le tšepo ea ho hlalosa Design System Aesthetika
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Fikiso ea Hoetso la Design System Aesthetics
+# Fikiso ea Hoetso la Design System Aesthetics {#design-system-aesthetics-skill}
 
 **Fikiso ea Hoetso la Design System Aesthetics** ke setso se fetang se fanaang ho hloboha le tšepo ea tsamo ea hau. Ke fana ka tsela e fetang ho ba le litšepo tse kholo ka tsela ea lipoto, llikolo, bohlokoa (spacing), le tokens ea motion tse di fanaang ho setso sa hau sa design system.
 
-## Intse ke Design System Aesthetics?
+## Intse ke Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics ke fikiso e fetang e fanaang e hloka:
 
@@ -20,9 +20,9 @@ Design System Aesthetics ke fikiso e fetang e fanaang e hloka:
 
 Litšepo tse di fanaang di tsamoisaneng ka file ea `theme.json` ea hau ya theme, ho hlalosa setso se fetang sa lipoto.
 
-## Ke eng e ba le tsela ea ho sebelisa Design System Aesthetics?
+## Ke eng e ba le tsela ea ho sebelisa Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Ho ba le Tšepo (Consistency)
+### Ho ba le Tšepo (Consistency) {#consistency}
 
 Design system e fana ka:
 
@@ -31,7 +31,7 @@ Design system e fana ka:
 - Spacing se fana ka tsamo e fetang
 - Animations ho ba le lehle
 
-### Ho ba le Hoetso (Efficiency)
+### Ho ba le Hoetso (Efficiency) {#efficiency}
 
 Ho anya ho ba le litšepo tsa design lipoto li-li-li: o tla:
 
@@ -39,7 +39,7 @@ Ho anya ho ba le litšepo tsa design lipoto li-li-li: o tla:
 - Ho sebelisa ho feta moona
 - Ho fetola ka tsela e fetang ka ho fetola sebope seo se fanaang
 
-### Ho ba le Ho Fana (Flexibility)
+### Ho ba le Ho Fana (Flexibility) {#flexibility}
 
 O ka:
 
@@ -47,9 +47,9 @@ O ka:
 - Ho etsa litiro tse fapaneng tsa aesthetics
 - Ho ba le lehle la brand haholo ha u fetola
 
-## Ho Hlalosa Fikiso ea Design System Aesthetics
+## Ho Hlalosa Fikiso ea Design System Aesthetics {#triggering-the-design-system-aesthetics-skill}
 
-### Ho Ba le Tšepo (Manual Activation)
+### Ho Ba le Tšepo (Manual Activation) {#manual-activation}
 
 O ka ho haholo fikiso e fetang ka nako fa:
 
@@ -69,7 +69,7 @@ le
 "Guide me through design system decisions"
 ```
 
-### Ho Ba le Tšepo (Automatic Suggestions)
+### Ho Ba le Tšepo (Automatic Suggestions) {#automatic-suggestions}
 
 Agents ba ka ba le tsela ea ho hlalosa fikiso e fetang fa:
 
@@ -78,9 +78,9 @@ Agents ba ka ba le tsela ea ho hlalosa fikiso e fetang fa:
 - U batla ho ba le lehle la lipoto
 - U leka ho laola site ea hau
 
-## Proses Aesthetics Sistema Design
+## Proses Aesthetics Sistema Design {#the-design-system-aesthetics-process}
 
-### Langkah 1: Tipografi
+### Langkah 1: Tipografi {#step-1-typography}
 
 Agent e bua le fa'o ka o batla font:
 
@@ -110,7 +110,7 @@ Agent e fetla:
 - **Weight scale**: Weight a font (regular, medium, bold, etc.)
 - **Line height**: Spacing tsotso le lines ho readability
 
-### Langkah 2: Palette Leula
+### Langkah 2: Palette Leula {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -158,7 +158,7 @@ O le agento e fa'aopoina o spacing tokens:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Specific values mo padding, margin, gap
 
-### Step 4: Borders ma Shadows
+### Step 4: Borders ma Shadows {#step-3-spacing}
 
 ```
 Visual depth ma fa'aopo:
@@ -181,7 +181,7 @@ O le agento e fa'aopoina:
 - Shadow tokens mo elevation levels
 - Border width tokens
 
-### Step 5: Motion ma Animation
+### Step 5: Motion ma Animation {#step-4-borders-and-shadows}
 
 ```
 O le a fesoasoani i o le site lava pe fa'aopo?
@@ -203,9 +203,9 @@ O le agento e fa'aopoina:
 - Easing functions (ease-in, ease-out, ease-in-out) (functions o easing - ease-in, ease-out, ease-in-out)
 - Animation keyframes for common interactions (keyframes o animation mo fa'a'a fa'aopoina)
 
-## Applying Design System Aesthetics
+## Applying Design System Aesthetics {#step-5-motion-and-animation}
 
-### Automatic Application
+### Automatic Application {#applying-design-system-aesthetics}
 
 A fa'aopo a le fakafo:
 
@@ -216,7 +216,7 @@ After you complete the skill, the agent:
 3. Regenerates block styles to match the new system
 4. Activates the updated theme
 
-### Manual Application
+### Manual Application {#automatic-application}
 
 O le a fa'aopoina i `theme.json` fa'a'a:
 
@@ -255,9 +255,9 @@ O le a fa'aopoina i `theme.json` fa'a'a:
 }
 ```
 
-## Design System-nu Tlaloa (Viewing Your Design System)
+## Design System-nu Tlaloa (Viewing Your Design System) {#manual-application}
 
-### Hwisa le Agent (Ask the Agent)
+### Hwisa le Agent (Ask the Agent) {#viewing-your-design-system}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ or
 
 O le agent o le fa'aonapono o lona typography, colors, spacing, a le mga token a le tasi.
 
-### Fa'amalo theme.json (View theme.json)
+### Fa'amalo theme.json (View theme.json) {#ask-the-agent}
 
 Fa'aononga `/wp-content/themes/[theme-name]/theme.json` i le text editor e fa'aopooma ona fa'aonopono o le mga definition o le token a le tasi.
 
-## Fa'amalo Design System (Updating Your Design System)
+## Fa'amalo Design System (Updating Your Design System) {#view-themejson}
 
-### Updates a le Fa'aopoopo (Quick Updates)
+### Updates a le Fa'aopoopo (Quick Updates) {#updating-your-design-system}
 
 Fa'aopooma le agent mo mga fa'aopoopo a le tasi:
 
@@ -299,7 +299,7 @@ o
 "Change the heading font to a serif"
 ```
 
-### Fa'amalo o Le Tasi (Full Redesign)
+### Fa'amalo o Le Tasi (Full Redesign) {#quick-updates}
 
 Fa'aopooma le skill o Design System Aesthetics i le fa'aopoopo:
 
@@ -309,7 +309,7 @@ Fa'aopooma le skill o Design System Aesthetics i le fa'aopoopo:
 
 O se fa'aononga atu i a le tasi, e fa'aopooma ai i sa mga fa'aonopono, e fa'aopooma ai i le mga taua o le tasi.
 
-### Updates a Le Tasi (Partial Updates)
+### Updates a Le Tasi (Partial Updates) {#full-redesign}
 
 Fa'aopooma le mga fesoaso a le tasi:
 
@@ -317,15 +317,15 @@ Fa'aopooma le mga fesoaso a le tasi:
 "Just update the color palette, keep everything else"
 ```
 
-## Fa'aonapono Design System (Design System Best Practices)
+## Fa'aonapono Design System (Design System Best Practices) {#partial-updates}
 
-### Fa'aonopono (Consistency)
+### Fa'aonopono (Consistency) {#design-system-best-practices}
 
 - Fa'aopooma le same tokens i sa fa'aopoopo
 - E fa'aopooma mga colors a le tasi o sizes a le tasi
 - Fa'aopooma le token a le tasi i le taimi e fa'aopoopo, ae le fa'aopooma values (mālo)
 
-### Naming (Fa'aonapono o Le Tasi)
+### Naming (Fa'aonapono o Le Tasi) {#consistency-1}
 
 Fa'aopooma mga fa'aonopono a le tasi:
 
@@ -335,7 +335,7 @@ Fa'aopooma mga fa'aonopono a le tasi:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalability (Fa'aonapono o Le Tasi)
+### Scalability (Fa'aonapono o Le Tasi) {#naming}
 
 Design sistema ho fana ka le fetoga:
 
@@ -343,15 +343,15 @@ Design sistema ho fana ka le fetoga:
 - Fana scale (xs, sm, md, lg, xl) le feta fa valua a tsama
 - Plan ho fetoga a tla
 
-### Dokumenta sistema ho fana
+### Dokumenta sistema ho fana {#scalability}
 
 - Ke ba neng a tloha mofuta o fana kae
 - Le fa nako e tla fana ea token ea hau
 - Fanaetso le litšepo tse fapaneng
 
-## Patterns tse ba tsamaea tsa Design System
+## Patterns tse ba tsamaea tsa Design System {#documentation}
 
-### Modern Minimalist (Mofuta O Tsamaea)
+### Modern Minimalist (Mofuta O Tsamaea) {#common-design-system-patterns}
 
 - Typography ya sans-serif (Inter, Helvetica)
 - Palette e fetileng ea liko (2-3 liko)
@@ -359,7 +359,7 @@ Design sistema ho fana ka le fetoga:
 - Shadows e fetileng
 - Animations e le tsela le tsela
 
-### Warm and Friendly (Le Tsela le Lele le Lele)
+### Warm and Friendly (Le Tsela le Lele le Lele) {#modern-minimalist}
 
 - Sekolong sa serif le sans-serif
 - Palette ea liko e le lele (oranges, grays tse lele)
@@ -367,7 +367,7 @@ Design sistema ho fana ka le fetoga:
 - Shadows e fetileng
 - Animations e le tsela le lele
 
-### Professional Corporate (Le Tsela ea Korporatse)
+### Professional Corporate (Le Tsela ea Korporatse) {#warm-and-friendly}
 
 - Sans-serif e le lefetso (Roboto, Open Sans)
 - Palette e fetileng le liko tsa tsamaea
@@ -375,7 +375,7 @@ Design sistema ho fana ka le fetoga:
 - Shadows e fetileng
 - Transitions e fetileng
 
-### Creative and Bold (Le Tsela ea Lele le Lele)
+### Creative and Bold (Le Tsela ea Lele le Lele) {#professional-corporate}
 
 - Typography e fetileng
 - Palette ea liko e le lele
@@ -383,7 +383,7 @@ Design sistema ho fana ka le fetoga:
 - Shadows tse tobileng
 - Animations tse tsoang
 
-## Ho Fetola (Troubleshooting)
+## Ho Fetola (Troubleshooting) {#creative-and-bold}
 
 **Design system ea hau e fetileng e se e le e le le le le le le le le le le le le le le le le le le le le le le le le le le le le le le le
 

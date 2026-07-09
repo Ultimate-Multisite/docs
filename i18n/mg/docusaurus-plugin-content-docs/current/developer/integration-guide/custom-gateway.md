@@ -3,11 +3,11 @@ title: Fampivoarana vavahady namboarina manokana
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Fampivoarana Custom Gateway
+# Fampivoarana Custom Gateway {#custom-gateway-development}
 
 Afaka mamorona gateway fandoavam-bola manokana ianao amin'ny fanitarana ny class `Base_Gateway`.
 
-## Class Gateway
+## Class Gateway {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Soraty anarana ny Gateway
+## Soraty anarana ny Gateway {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Methods fototra
+## Methods fototra {#key-methods}
 
 | Method | Tanjona |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Mikarakara fangatahana famerenam-bola |
 | `get_payment_methods()` | Mamerina ireo fomba fandoavam-bola voatahiry ho an'ny mpanjifa iray |
 
-## Credentials fanavaozana ho an'ny memberships miverimberina
+## Credentials fanavaozana ho an'ny memberships miverimberina {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 dia mamela ny integrations gateway hilaza raha manana credential fanavaozana azo ampiasaina indray ny membership miverimberina alohan'ny hitehirizana ny `auto_renew`. Ampiasao ny hook `wu_membership_has_renewal_credential` ary avereno:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Esory ny marika credential tsy hita ho ampahany amin'ny lalan'ny fanomezan-dalana indray nahomby an'ny gateway-nao rehefa voatahiry ny credential vaovao azo ampiasaina indray.
 
-## Torohevitra
+## Torohevitra {#tips}
 
 - Avereno foana ny `WP_Error` rehefa misy tsy fahombiazana mba hahafahan'ny Ultimate Multisite mikarakara ny fanehoana hadisoana
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Ampiasao ny `wu_log_add()` ho an'ny logging manokana ho an'ny gateway
 
-## Fahaizan'ny mpamatsy AI connector
+## Fahaizan'ny mpamatsy AI connector {#ai-connector-provider-capabilities}
 
 Ny integrations manokana izay miantso asa tohanan'ny AI connector dia tokony hifanaraka amin'ny andiana mpamatsy OAuth tohanana nampidirina miaraka amin'ny AI Provider for Anthropic Max v1.3.0:
 

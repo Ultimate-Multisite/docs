@@ -3,17 +3,17 @@ title: Asboblar va konfiguratsiya
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Vositalar va konfiguratsiya
+# Vositalar va konfiguratsiya {#tools-and-configuration}
 
 Theme Builder WordPress saytingizni tahlil qilish, dizayn qilish va qurish uchun vositalar to‘plamidan foydalanadi. 1.16.0 versiyada **sd-ai-agent/site-scrape endi Tier 1 vosita**, shu sababli u Theme Builder’da sukut bo‘yicha mavjud. Superdav AI Agent v1.18.0 shuningdek ishonchli dasturchi ish jarayonlari uchun alohida tarqatiladigan Advanced hamroh paketini taqdim etadi; bu vositalar WordPress.org asosiy paketining bir qismi emas va alohida o‘rnatilishi hamda avtorizatsiya qilinishi kerak.
 
-## Mavjud vositalar
+## Mavjud vositalar {#available-tools}
 
-### Tier 1 vositalar (har doim mavjud)
+### Tier 1 vositalar (har doim mavjud) {#tier-1-tools-always-available}
 
 Tier 1 vositalar Theme Builder’da hech qanday qo‘shimcha konfiguratsiyasiz sukut bo‘yicha mavjud.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Maqsad:** Dizayn ilhomi, kontent tuzilmasi va funksionallikni ajratib olish uchun mavjud veb-saytlarni tahlil qilish.
 
@@ -51,11 +51,11 @@ example.com dizaynini tahlil qiling va uni mening saytim uchun ilhom sifatida is
 - JavaScript ko‘p ishlatiladigan saytlarda tahlil cheklangan bo‘lishi mumkin
 - Katta saytlarni tahlil qilish ko‘proq vaqt olishi mumkin
 
-### Tier 2 vositalar (ixtiyoriy)
+### Tier 2 vositalar (ixtiyoriy) {#tier-2-tools-optional}
 
 Tier 2 vositalar Theme Builder sozlamalarida aniq yoqilganda mavjud bo‘ladi.
 
-#### Kengaytirilgan analitika
+#### Kengaytirilgan analitika {#advanced-analytics}
 
 Batafsil ishlash samaradorligi ko‘rsatkichlarini taqdim etadi:
 
@@ -65,7 +65,7 @@ Batafsil ishlash samaradorligi ko‘rsatkichlarini taqdim etadi:
 - Foydalanish imkoniyati bahosi
 - Eng yaxshi amaliyotlar bahosi
 
-#### Kontent optimallashtiruvchi
+#### Kontent optimallashtiruvchi {#content-optimizer}
 
 Quyidagilar uchun yaxshilashlarni tahlil qiladi va taklif qiladi:
 
@@ -75,11 +75,11 @@ Quyidagilar uchun yaxshilashlarni tahlil qiladi va taklif qiladi:
 - Kontent tuzilmasi
 - Harakatga chaqiruv joylashuvi
 
-### Tier 3 vositalar (premium)
+### Tier 3 vositalar (premium) {#tier-3-tools-premium}
 
 Tier 3 vositalar qo‘shimcha konfiguratsiya yoki premium xususiyatlarni talab qiladi.
 
-#### AI kontent generatori
+#### AI kontent generatori {#ai-content-generator}
 
 Quyidagilar uchun kontent yaratadi:
 
@@ -89,7 +89,7 @@ Quyidagilar uchun kontent yaratadi:
 - Meta tavsiflar
 - Harakatga chaqiruv matni
 
-#### Kengaytirilgan dizayn vositalari
+#### Kengaytirilgan dizayn vositalari {#advanced-design-tools}
 
 Kengaytirilgan dizayn imkoniyatlarini taqdim etadi:
 
@@ -99,7 +99,7 @@ Kengaytirilgan dizayn imkoniyatlarini taqdim etadi:
 - Kengaytirilgan rang nazariyasi
 - Tipografiyani optimallashtirish
 
-### Advanced hamroh vositalar (alohida paket)
+### Advanced hamroh vositalar (alohida paket) {#advanced-companion-tools-separate-package}
 
 Advanced hamroh paketi asosiy Superdav AI Agent relizidan alohida tarqatiladi. U administratorlar agentga yuqori ta’sirli vositalardan foydalanishga aniq ruxsat beradigan ishonchli dasturchi va sayt egasi muhitlari uchun mo‘ljallangan.
 
@@ -116,9 +116,9 @@ Advanced hamroh imkoniyatlari quyidagilarni o‘z ichiga olishi mumkin:
 
 Bularni har bir o‘rnatish uchun umumiy mavjud Theme Builder vositalari sifatida hujjatlashtirmang. Ular faqat Advanced hamroh paketi o‘rnatilgan, yoqilgan va ishonchli administratorlar bilan cheklangan bo‘lsa mavjud.
 
-## Vosita konfiguratsiyasi
+## Vosita konfiguratsiyasi {#tool-configuration}
 
-### Vositalarni yoqish
+### Vositalarni yoqish {#enabling-tools}
 
 Theme Builder’da qo‘shimcha vositalarni yoqish uchun:
 
@@ -127,7 +127,7 @@ Theme Builder’da qo‘shimcha vositalarni yoqish uchun:
 3. Zaruratga qarab vositalarni yoqing/o‘chiring
 4. Sozlamalarni saqlang
 
-### Vosita ruxsatlari
+### Vosita ruxsatlari {#tool-permissions}
 
 Ba’zi vositalar ruxsatlarni talab qiladi:
 
@@ -137,7 +137,7 @@ Ba’zi vositalar ruxsatlarni talab qiladi:
 - **Kengaytirilgan xususiyatlar** — premium obunani talab qilishi mumkin
 - **Advanced hamroh vositalar** — alohida tarqatiladigan Advanced paketi va administratorning aniq ishonchini talab qiladi
 
-### API kalitlari va hisob ma’lumotlari
+### API kalitlari va hisob ma’lumotlari {#api-keys-and-credentials}
 
 Ularni talab qiladigan vositalar uchun API kalitlarini sozlang:
 
@@ -146,13 +146,13 @@ Ularni talab qiladigan vositalar uchun API kalitlarini sozlang:
 3. Ulanishni sinab ko‘ring
 4. Xavfsiz saqlang
 
-### Advanced hamroh paketini o‘rnatish
+### Advanced hamroh paketini o‘rnatish {#installing-the-advanced-companion-package}
 
 Advanced hamroh paketi WordPress.org asosiy ZIP faylidan alohida chiqariladi. Uni faqat reliz uchun rasmiy loyiha tarqatish kanalidan o‘rnating, so‘ng kirishni ishonchli administratorlar bilan cheklang. Ishlab turgan saytda fayl tizimi, ma’lumotlar bazasi, WP-CLI, REST dispetcher, plugin quruvchi, foydalanuvchini boshqarish yoki benchmark vositalarini yoqishdan oldin inson tasdiqlash darvozalari va git snapshot xatti-harakatini ko‘rib chiqing.
 
-## sd-ai-agent/site-scrape’dan foydalanish
+## sd-ai-agent/site-scrape’dan foydalanish {#using-sd-ai-agentsite-scrape}
 
-### Asosiy foydalanish
+### Asosiy foydalanish {#basic-usage}
 
 Theme Builder’dan veb-saytni tahlil qilishni so‘rang:
 
@@ -161,7 +161,7 @@ competitor.com manzilidagi raqobatchim saytining dizaynini tahlil qiling
 va mening saytim uchun dizayn yaxshilashlarini taklif qiling.
 ```
 
-### Muayyan tahlil
+### Muayyan tahlil {#specific-analysis}
 
 Muayyan turdagi tahlilni so‘rang:
 
@@ -179,7 +179,7 @@ example.com’ning mobil moslashuvchanligini tekshiring va mening saytim
 xuddi shunday moslashuvchan ekaniga ishonch hosil qiling.
 ```
 
-### Taqqoslash tahlili
+### Taqqoslash tahlili {#comparison-analysis}
 
 Bir nechta saytlarni taqqoslang:
 
@@ -188,22 +188,22 @@ site1.com va site2.com dizaynlarini taqqoslang va ikkalasining eng yaxshi
 elementlarini birlashtiradigan dizayn yarating.
 ```
 
-## Vosita cheklovlari va mulohazalar
+## Vosita cheklovlari va mulohazalar {#tool-limitations-and-considerations}
 
-### Tezlikni cheklash
+### Tezlikni cheklash {#rate-limiting}
 
 - Scraping server haddan tashqari yuklanishining oldini olish uchun tezlik bo‘yicha cheklanadi
 - Bir xil saytga bir nechta so‘rovlar sekinlashtirilishi mumkin
 - Katta saytlarni tahlil qilish ko‘proq vaqt olishi mumkin
 
-### Kontent aniqligi
+### Kontent aniqligi {#content-accuracy}
 
 - Dinamik kontent to‘liq qamrab olinmasligi mumkin
 - JavaScript orqali ko‘rsatiladigan kontent to‘liq bo‘lmasligi mumkin
 - Real vaqt ma’lumotlari aks etmasligi mumkin
 - Ayrim kontent paywall ortida bo‘lishi mumkin
 
-### Huquqiy va axloqiy jihatlar
+### Huquqiy va axloqiy jihatlar {#legal-and-ethical-considerations}
 
 - robots.txt va sayt siyosatlariga rioya qiling
 - Mualliflik huquqi bilan himoyalangan kontentni qayta nashr qilish uchun scrape qilmang
@@ -211,16 +211,16 @@ elementlarini birlashtiradigan dizayn yarating.
 - Olingan kontentdan foydalanish huquqiga ega ekaningizni tekshiring
 - Tahlil qilingan saytlarning xizmat ko‘rsatish shartlariga rioya qiling
 
-### Ishlashga ta’siri
+### Ishlashga ta’siri {#performance-impact}
 
 - Katta saytlarni scraping qilish vaqt olishi mumkin
 - Bir vaqtning o‘zida bir nechta scraping jarayonlari sekinroq bo‘lishi mumkin
 - Tarmoq ulanishi tezlikka ta’sir qiladi
 - Katta ma’lumotlar to‘plamlari ko‘proq qayta ishlashni talab qilishi mumkin
 
-## Eng yaxshi amaliyotlar
+## Eng yaxshi amaliyotlar {#best-practices}
 
-### Sayt tahlilidan foydalanish
+### Sayt tahlilidan foydalanish {#using-site-analysis}
 
 1. **Bir nechta saytlarni tahlil qiling** — bir necha manbadan ilhom to‘plang
 2. **Tuzilmaga e’tibor qarating** — joylashuv va tashkil etish andozalarini o‘rganing
@@ -228,7 +228,7 @@ elementlarini birlashtiradigan dizayn yarating.
 4. **Tipografiyani o‘rganing** — sizga yoqadigan shrift kombinatsiyalarini aniqlang
 5. **Navigatsiyani ko‘rib chiqing** — menyu tashkil etilishini tushuning
 
-### Axloqiy scraping
+### Axloqiy scraping {#ethical-scraping}
 
 1. **robots.txt ga rioya qiling** — sayt ko‘rsatmalariga amal qiling
 2. **Kontentdan nusxa ko‘chirmang** — tahlildan faqat ilhom olish uchun foydalaning
@@ -236,7 +236,7 @@ elementlarini birlashtiradigan dizayn yarating.
 4. **Manbalarni ko‘rsating** — ilhom manbalariga e’tirof bering
 5. **Shartlarga rioya qiling** — sayt xizmat ko‘rsatish shartlariga amal qiling
 
-### Vosita samaradorligini maksimal darajaga oshirish
+### Vosita samaradorligini maksimal darajaga oshirish {#maximizing-tool-effectiveness}
 
 1. **Aniq bo‘ling** — aniq tahlil turlarini so‘rang
 2. **Kontekst bering** — saytingiz maqsadini tushuntiring
@@ -244,9 +244,9 @@ elementlarini birlashtiradigan dizayn yarating.
 4. **Takroriy takomillashtiring** — natijalar asosida aniqlashtiring
 5. **Vositalarni birlashtiring** — keng qamrovli tahlil uchun bir nechta vositadan foydalaning
 
-## Muammolarni bartaraf etish
+## Muammolarni bartaraf etish {#troubleshooting}
 
-### Sayt scrape qilinmayapti
+### Sayt scrape qilinmayapti {#site-wont-scrape}
 
 - Sayt ommaga ochiq ekanini tekshiring
 - robots.txt scraping ga ruxsat berishini tekshiring
@@ -254,7 +254,7 @@ elementlarini birlashtiradigan dizayn yarating.
 - Internet ulanishini tekshiring
 - Muammo davom etsa, yordam xizmatiga murojaat qiling
 
-### To‘liq bo‘lmagan tahlil
+### To‘liq bo‘lmagan tahlil {#incomplete-analysis}
 
 - Saytda dinamik kontent bo‘lishi mumkin
 - JavaScript to‘liq render qilinmasligi mumkin
@@ -262,7 +262,7 @@ elementlarini birlashtiradigan dizayn yarating.
 - Buning o‘rniga aniq sahifalarni tahlil qilib ko‘ring
 - Aniq tahlil turlarini so‘rang
 
-### Sekin ishlash
+### Sekin ishlash {#slow-performance}
 
 - Katta saytlarni tahlil qilish ko‘proq vaqt oladi
 - Bir vaqtning o‘zida bir nechta scraping sekinroq bo‘ladi
@@ -270,7 +270,7 @@ elementlarini birlashtiradigan dizayn yarating.
 - Tig‘iz bo‘lmagan soatlarda sinab ko‘ring
 - Avval kichikroq bo‘limlarni tahlil qiling
 
-## Tegishli hujjatlar
+## Tegishli hujjatlar {#related-documentation}
 
 - [Kashfiyot intervyusi](./discovery-interview.md) — dizayn ma’lumotlarini to‘plang
 - [Dizayn yo‘nalishi](./design-direction.md) — dizayningizni takomillashtiring

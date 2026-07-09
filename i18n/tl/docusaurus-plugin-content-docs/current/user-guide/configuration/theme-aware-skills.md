@@ -3,11 +3,11 @@ title: Kakayahang May Alam sa Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Mga Kasanayang Nakabatay sa Tema
+# Mga Kasanayang Nakabatay sa Tema {#theme-aware-skills}
 
 Ang Superdav AI Agent v1.10.0 ay may apat na bagong built-in na kasanayan na nakabatay sa tema (theme-aware) na awtomatikong umaangkop sa iyong aktibong WordPress theme. Ang mga kasanayang ito ay nagbibigay ng espesyal na gabay at kakayahan na naka-customize para sa arkitektura at mga feature ng iyong tema.
 
-## Ano ang Theme-Aware Skills?
+## Ano ang Theme-Aware Skills? {#what-are-theme-aware-skills}
 
 Ang theme-aware skills ay mga pre-configured na knowledge base at set ng tool na awtomatikong pinipili ng AI assistant batay sa WordPress theme na kasalukuyang aktibo sa iyong site. Kapag lumipat ka ng tema, awtomatiko ring nag-a-update ang mga kasanayang magagamit ng assistant — walang manual na pag-configure ang kailangan.
 
@@ -18,9 +18,9 @@ Ang bawat skill ay may kasama:
 - **Customization examples** — mga code snippet at configuration patterns para sa mga karaniwang gawain
 - **Best practices** — mga rekomendasyon para sa arkitektura at workflow ng tema
 
-## Mga Magagamit na Theme-Aware Skills
+## Mga Magagamit na Theme-Aware Skills {#available-theme-aware-skills}
 
-### Block Themes
+### Block Themes {#block-themes}
 
 **Para sa:** Mga temang gumagamit ng WordPress block-based (Full Site Editing) architecture.
 
@@ -34,7 +34,7 @@ Ang skill na Block Themes ay nagbibigay ng gabay tungkol sa:
 
 **Awtomatikong aktibo kapag:** Ang iyong aktibong tema ay isang block theme (sumusuporta sa feature na `block-templates`).
 
-### Classic Themes
+### Classic Themes {#classic-themes}
 
 **Para sa:** Mga tradisyonal na WordPress themes na gumagamit ng PHP templates at ang classic editor.
 
@@ -48,7 +48,7 @@ Pag-unawa sa theme hierarchy at template tags
 
 **Awtomatikong nag-aactivate kapag:** Ang iyong active theme ay isang classic (non-block) theme.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Para sa:** Mga site na gumagamit ng Kadence Blocks plugin para sa advanced block-based design.
 
@@ -62,7 +62,7 @@ Ang skill na Kadence Blocks ay nagbibigay ng gabay tungkol sa:
 
 **Awtomatikong nag-aactivate kapag:** Ang Kadence Blocks plugin ay aktibo sa iyong site.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Para sa:** Mga site na gumagamit ng Kadence theme para sa block-based design at customization.
 
@@ -76,15 +76,15 @@ Ang skill na Kadence Theme ay nagbibigay ng gabay tungkol sa:
 
 **Awtomatikong nag-aactivate kapag:** Ang Kadence theme ang iyong active theme.
 
-## Paano Pinipili ang Skills
+## Paano Pinipili ang Skills {#how-skills-are-selected}
 
 Awtomatikong natutukoy ng assistant ang iyong active theme at mga naka-install na plugin sa bawat mensahe. Kung mayroong matching skill na sensitibo sa theme, awtomatiko itong ilalagay sa context ng assistant. Hindi mo kailangang manu-manong i-enable o palitan ang mga skills.
 
-### Multiple Skills
+### Multiple Skills {#multiple-skills}
 
 Kung maraming kasanayan ang naaangkop sa iyong site (halimbawa, kung mayroon kang Kadence Blocks at Kadence Theme na aktibo), may access ang assistant sa lahat ng mga kasanayang maaari at maaaring magbanggit ng gabay mula sa bawat isa.
 
-### Pagpapalit ng Theme
+### Pagpapalit ng Theme {#switching-themes}
 
 Kapag binago mo ang active theme mo, awtomatikong mag-a-update ang mga available skills ng assistant sa susunod na mensahe. Halimbawa:
 
@@ -92,11 +92,11 @@ Kapag binago mo ang active theme mo, awtomatikong mag-a-update ang mga available
 2. Lumipat ka sa isang classic theme.
 3. Sa iyong susunod na mensahe, awtomatikong maglo-load ang **Classic Themes** skill, at hindi na magagamit ang **Block Themes** skill.
 
-## Paggamit ng Theme-Aware Skills
+## Paggamit ng Theme-Aware Skills {#using-theme-aware-skills}
 
 Para magamit ang isang theme-aware skill, ilarawan lang kung ano ang gusto mong gawin sa chat interface. Awtomatikong bibigyang-refer ng assistant ang tamang gabay ng skill na iyon.
 
-### Mga Halimbawa ng Prompt
+### Mga Halimbawa ng Prompt {#example-prompts}
 
 **Para sa Block Themes:**
 > "Gumawa ng hero section na may background image at centered text gamit ang block patterns."

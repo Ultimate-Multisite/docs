@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Cov kev yuav tsum muaj
+## Cov kev yuav tsum muaj {#requirements}
 
 - WordPress 5.3 lossis siab dua
 - PHP 7.4 lossis siab dua
 - Multisite Ultimate plugin (qhib siv lawm)
 
-## Kev teeb tsa
+## Kev teeb tsa {#installation}
 
 1. Upload cov ntaub ntawv ntawm qhov ntxiv mus rau koj phau ntawv `/wp-content/plugins/`
 2. Qhib siv plugin los ntawm menu 'Cov Plugin' hauv WordPress
 3. Teeb tsa cov kev xaiv ntawm qhov ntxiv hauv tus thawj tswj network
 
-## Kev tsim kho
+## Kev tsim kho {#development}
 
-### Kev teeb tsa
+### Kev teeb tsa {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Qauv txheej txheem ntawm qhov project
+### Qauv txheej txheem ntawm qhov project {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Cov cai kho code kom tshiab
 ```
 
-### Kev xeem
+### Kev xeem {#testing}
 
 Qhov ntxiv no muaj ib lub moj khaum kev xeem uas dav:
 
@@ -79,44 +79,44 @@ Qhov ntxiv no muaj ib lub moj khaum kev xeem uas dav:
 - **Kev Ntsuas Kev Npog Xeem**: Teeb tsa los taug qab code coverage
 - **Kev Xeem Multisite**: Cov kev xeem khiav hauv ib puag ncig multisite
 
-### Cov qauv code
+### Cov qauv code {#code-standards}
 
 - **WordPress Coding Standards**: Yuam siv los ntawm PHPCS
 - **Kev sib haum nrog PHP 7.4+**: Txhawb cov nta PHP tshiab
 - **Kev tshuaj xyuas static**: Kev sib txuas PHPStan rau kev xyuas hom
 - **Kev kho code kom tshiab**: Cov cai Rector rau kev upgrade PHP
 
-### Txheej txheem build
+### Txheej txheem build {#build-system}
 
 - **Kev ua cov asset**: Minification rau cov ntaub ntawv CSS/JS
 - **Kev txhais lus**: Tsim ntaub ntawv POT
 - **Kev ntim pob**: Tsim archive rau kev faib tawm
 - **Hom kev tsim kho**: Cov asset uas tsis tau minify rau kev debug
 
-## Kev teeb tsa configuration
+## Kev teeb tsa configuration {#configuration}
 
 Qhov ntxiv txhawb ntau yam kev xaiv configuration uas nkag tau los ntawm tus interface ntawm tus thawj tswj network.
 
-## Hooks thiab Filters
+## Hooks thiab Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Tso tawm tom qab pib qhov ntxiv lawm
 - `ultimate-multisite-ai-site-builder_loaded` - Tso tawm tom qab txhua cov ntaub ntawv ntawm qhov ntxiv raug loaded lawm
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Hloov cov settings ntawm qhov ntxiv
 - `ultimate-multisite-ai-site-builder_enabled` - Override qhov xwm txheej qhib/kaw ntawm qhov ntxiv
 
-## Daim ntawv tso cai
+## Daim ntawv tso cai {#license}
 
 Qhov ntxiv no muaj daim ntawv tso cai raws GPL v3 lossis tom qab ntawd.
 
-## Kev txhawb nqa
+## Kev txhawb nqa {#support}
 
 Rau kev txhawb nqa thiab ntaub ntawv qhia, mus saib [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): hloov prefix mus rau ultimate-multisite; hloov tshiab text domain; nce version.
 

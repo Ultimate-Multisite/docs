@@ -4,11 +4,11 @@ title: Фильтр - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Фильтр: ultimate_multisite_content_sync_get_option
+# Фильтр: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Возвращает значение сетевого параметра в виде slugfied.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 | $option_name | `string` | Имя параметра. |
 | $default | `mixed` | Значение по умолчанию. |
 
-### Since
+### Since {#since}
 
 - 1.0.0
-### Source
+### Source {#source}
 
 Определено в inc/class-helper.php на строке 126
 
-## Returns
+## Returns {#returns}
 Значение сетевого параметра в виде slugfield.

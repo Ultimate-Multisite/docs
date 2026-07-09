@@ -4,13 +4,13 @@ title: Isenzo - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# Action: wu_domain_became_primary
+# Action: wu_domain_became_primary {#action-wudomainbecameprimary}
 
 Isebenza lapho i-domain iba yi-domain eyinhloko yesayithi.
 
 Le action iqalwa lapho ifulegi le-domain elithi primary_domain lisethwa libe yi-true, kungaba lapho kudalwa i-domain entsha eyinhloko noma lapho kubuyekezwa i-domain ekhona ukuze ibe eyinhloko.
 
-## Amapharamitha
+## Amapharamitha {#parameters}
 
 | Igama | Uhlobo | Incazelo |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Le action iqalwa lapho ifulegi le-domain elithi primary_domain lisethwa libe yi-
 | $blog_id | `int` | I-ID yebhulogi yesayithi elithintekile. |
 | $was_new | `bool` | Ukuthi lokhu kuyi-domain esanda kudalwa yini. |
 
-### Kusukela
+### Kusukela {#since}
 
 - 2.0.0
-### Umthombo
+### Umthombo {#source}
 
 Kuchazwe ku-[`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L560) emugqeni 560

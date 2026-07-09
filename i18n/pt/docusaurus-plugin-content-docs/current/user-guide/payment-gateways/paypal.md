@@ -3,7 +3,7 @@ title: Configurando o PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configurando o Gateway PayPal (v2)
+# Configurando o Gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere-se à Ultimate Multisite versão 2.x.**_
 
@@ -13,13 +13,13 @@ Assim como o Stripe, o PayPal é amplamente utilizado para pagamentos online, es
 
 Note que você precisa ter uma **conta Business do PayPal** para obter a credencial da API necessária para esta integração.
 
-## Habilitando o PayPal na sua rede
+## Habilitando o PayPal na sua rede {#enabling-paypal-on-your-network}
 
 Para habilitar o PayPal como um método de pagamento disponível na sua rede, vá em **Ultimate Multisite > Settings > Payments** e marque a caixa ao lado de PayPal.
 
 ![Habilitando o PayPal nos gateways de pagamento ativos](/img/config/settings-payment-gateways.png)
 
-## Usando o assistente de configuração guiado
+## Usando o assistente de configuração guiado {#using-the-guided-setup-wizard}
 
 O Ultimate Multisite 2.10.0 adiciona um assistente de configuração guiado do PayPal nas configurações do gateway de pagamento. Depois de habilitar o PayPal, use o assistente em **Ultimate Multisite > Settings > Payments** para escolher como deseja conectar o gateway e confirmar quais credenciais ainda são necessárias antes de salvar.
 
@@ -30,7 +30,7 @@ O assistente suporta dois caminhos de configuração:
 
 Se você não vir a opção OAuth no assistente, complete o fluxo de inserção manual de credenciais abaixo. O gateway funciona com as mesmas credenciais da API do PayPal Business das versões anteriores do Ultimate Multisite 2.x.
 
-## Obtendo as credenciais da API do PayPal
+## Obtendo as credenciais da API do PayPal {#getting-the-paypal-api-credentials}
 
 Depois que o PayPal for habilitado como gateway de pagamento, você precisará preencher os campos para **Nome de Usuário da API** (PayPal API Username), **Senha da API** (PayPal API Password) e **Assinatura da API** (PayPal API Signature).
 

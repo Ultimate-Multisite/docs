@@ -4,20 +4,20 @@ title: Filtrilo - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filtro: wu_password_require_uppercase
+# Filtro: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
 
 Filtru ĉu postuli majusklojn en pasvortoj.
 
-## Parametroj
+## Parametroj {#parameters}
 
 | Nomo | Tipo | Priskribo |
 |------|------|-------------|
 | $require | `bool` | Ĉu postuli majusklojn. Defaŭlte vera kiam reguloj estas devigataj. |
 | $defender_active | `bool` | Ĉu Defender Pro Strong Password estas aktiva. |
 
-### Ekde
+### Ekde {#since}
 
 - 2.4.0
-### Fonto
+### Fonto {#source}
 
 Difinita en [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L553) ĉe linio 553

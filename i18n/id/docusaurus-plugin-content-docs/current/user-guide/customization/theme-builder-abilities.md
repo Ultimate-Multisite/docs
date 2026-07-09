@@ -3,18 +3,18 @@ title: Kemampuan Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Kemampuan Theme Builder: Membuat Kerangka dan Mengaktifkan Block Theme
+# Kemampuan Theme Builder: Membuat Kerangka dan Mengaktifkan Block Theme {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 memperkenalkan dua kemampuan kuat yang memungkinkan Anda menghasilkan dan menerapkan *block theme* kustom langsung dari antarmuka chat.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Kemampuan **scaffold-block-theme** dan **activate-theme** memungkinkan agen untuk:
 - Menghasilkan *block theme* lengkap yang siap produksi berdasarkan spesifikasi Anda
 - Mengaktifkan tema secara otomatis di situs Anda tanpa intervensi manual
 - Menciptakan identitas visual yang kohesif melalui keputusan desain yang terpandu
 
-## Membuat Kerangka Block Theme (Scaffold Block Theme)
+## Membuat Kerangka Block Theme (Scaffold Block Theme) {#scaffold-block-theme}
 
 Kemampuan **scaffold-block-theme** menghasilkan *block theme* WordPress baru dengan struktur tema yang lengkap, termasuk:
 
@@ -23,7 +23,7 @@ Kemampuan **scaffold-block-theme** menghasilkan *block theme* WordPress baru den
 - Gaya dan variasi *block* kustom
 - Metadata dan deklarasi dukungan tema
 
-### Cara Memanggil
+### Cara Memanggil {#how-to-invoke}
 
 Dalam chat Anda dengan Superdav AI Agent, Anda dapat meminta pembuatan tema:
 
@@ -38,7 +38,7 @@ Agen akan:
 3. Membuat semua file tema yang diperlukan
 4. Menyiapkan tema untuk diaktifkan
 
-### Hasil yang Diharapkan
+### Hasil yang Diharapkan {#expected-output}
 
 Ketika kemampuan ini berhasil dijalankan, Anda akan melihat:
 
@@ -56,11 +56,11 @@ Contoh output:
   Status: Ready to activate
 ```
 
-## Mengaktifkan Tema (Activate Theme)
+## Mengaktifkan Tema (Activate Theme) {#activate-theme}
 
 Kemampuan **activate-theme** akan mengganti situs Anda ke *block theme* yang baru dibuat kerangkanya atau yang sudah ada.
 
-### Cara Memanggil
+### Cara Memanggil {#how-to-invoke-1}
 
 Setelah membuat kerangka tema, Anda dapat mengaktifkannya segera:
 
@@ -74,7 +74,7 @@ Atau aktifkan tema yang sudah ada:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Hasil yang Diharapkan
+### Hasil yang Diharapkan {#expected-output-1}
 
 Ketika aktivasi berhasil:
 
@@ -92,7 +92,7 @@ Contoh output:
   Note: Check your homepage to verify the layout
 ```
 
-## Alur Kerja: Membuat Kerangka dan Mengaktifkan
+## Alur Kerja: Membuat Kerangka dan Mengaktifkan {#workflow-scaffold-and-activate}
 
 Alur kerja tipikal menggabungkan kedua kemampuan ini:
 
@@ -102,7 +102,7 @@ Alur kerja tipikal menggabungkan kedua kemampuan ini:
 4. **Mengaktifkan**: "Activate the theme now"
 5. **Memverifikasi**: Mengunjungi situs Anda untuk memastikan desain baru sudah aktif
 
-## Design Tokens dan Kustomisasi
+## Design Tokens dan Kustomisasi {#design-tokens-and-customization}
 
 Tema yang dibuat kerangkanya menggunakan *design tokens* WordPress (melalui `theme.json`) untuk:
 
@@ -114,14 +114,14 @@ Tema yang dibuat kerangkanya menggunakan *design tokens* WordPress (melalui `the
 
 *Token* ini terpusat di `theme.json`, sehingga memudahkan Anda menyesuaikan seluruh sistem desain Anda dari satu file.
 
-## Keterbatasan dan Catatan
+## Keterbatasan dan Catatan {#limitations-and-notes}
 
 - Tema dibuat kerangkanya di `/wp-content/themes/` dan harus mengikuti konvensi penamaan WordPress
 - Aktivasi memerlukan izin yang sesuai di situs WordPress Anda
 - Kode PHP kustom dalam tema sangat minimal; gunakan *plugin* untuk fungsionalitas yang kompleks
 - *Block theme* bekerja paling baik dengan WordPress 5.9 dan yang lebih baru
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
 **Tema tidak muncul setelah membuat kerangka**
 - Verifikasi bahwa direktori tema ada dan memiliki izin yang benar
@@ -138,7 +138,7 @@ Tema yang dibuat kerangkanya menggunakan *design tokens* WordPress (melalui `the
 - Hapus *caching* dari *plugin* *caching* apa pun
 - Periksa bahwa versi WordPress Anda mendukung *token* yang Anda gunakan
 
-## Langkah Selanjutnya
+## Langkah Selanjutnya {#next-steps}
 
 Setelah mengaktifkan tema Anda, Anda dapat:
 - Menggunakan **Design System Aesthetics skill** untuk menyempurnakan tipografi, warna, dan spasi

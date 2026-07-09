@@ -3,7 +3,7 @@ title: Avsluta ett medlemskap
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Avbryta ett medlemskap (v2)
+# Avbryta ett medlemskap (v2) {#canceling-a-membership-v2}
 
 _**VIKTIGT MEDDELANDE: Den här artikeln avser Ultimate Multisite version 2.x.**_
 

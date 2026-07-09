@@ -3,11 +3,11 @@ title: Utveckling av anpassad gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Utveckling av anpassad gateway
+# Utveckling av anpassad gateway {#custom-gateway-development}
 
 Du kan skapa anpassade betalningsgateways genom att utöka klassen `Base_Gateway`.
 
-## Gateway-klass
+## Gateway-klass {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Registrera gatewayen
+## Registrera gatewayen {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Viktiga metoder
+## Viktiga metoder {#key-methods}
 
 | Metod | Syfte |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Hantera återbetalningsförfrågningar |
 | `get_payment_methods()` | Returnera sparade betalningsmetoder för en kund |
 
-## Förnyelseuppgifter för återkommande medlemskap
+## Förnyelseuppgifter för återkommande medlemskap {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0 låter gateway-integrationer rapportera om ett återkommande medlemskap har en återanvändbar förnyelseuppgift innan `auto_renew` sparas. Koppla in `wu_membership_has_renewal_credential` och returnera:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Rensa markören för saknade uppgifter som en del av din gateways lyckade flöde för ny auktorisering efter att en ny återanvändbar uppgift har lagrats.
 
-## Tips
+## Tips {#tips}
 
 - Returnera alltid `WP_Error` vid fel så att Ultimate Multisite kan hantera felvisning
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Använd `wu_log_add()` för gateway-specifik loggning
 
-## AI-anslutningsleverantörers funktioner
+## AI-anslutningsleverantörers funktioner {#ai-connector-provider-capabilities}
 
 Anpassade integrationer som anropar åtgärder som stöds av AI-anslutningar bör anpassas till den uppsättning OAuth-leverantörer som stöds och som introducerades med AI Provider for Anthropic Max v1.3.0:
 

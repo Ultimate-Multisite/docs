@@ -4,11 +4,11 @@ title: Aktion - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Aktion: wu_membership_post_renew
+# Aktion: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Wird nach der Verlängerung der Mitgliedschaft ausgelöst.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Typ | Beschreibung |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Wird nach der Verlängerung der Mitgliedschaft ausgelöst.
 | $membership_id | `int` | The ID of the membership. |
 | $membership | `\Membership` | Membership object. |
 
-### Seit
+### Seit {#since}
 
 - 2.0
-### Quelle
+### Quelle {#source}
 
 Definiert in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) in Zeile 2235

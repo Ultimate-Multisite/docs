@@ -3,7 +3,7 @@ title: Registro delle modifiche del selettore di lingua
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Changelog selettore lingua
+# Changelog selettore lingua {#language-selector-changelog}
 
 Versione: 1.1.3 - Rilasciata il 2026-05-05
 * Correzione: le variabili di input ora vengono sanificate e i nomi degli hook personalizzati prefissati per prevenire conflitti con plugin di terze parti

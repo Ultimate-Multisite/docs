@@ -3,11 +3,11 @@ title: ការបែងចែក Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# ការបែងចែក Tenant (Multi-Tenancy Isolation)
+# ការបែងចែក Tenant (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 គាំទ្រការបែងចែក database និង filesystem សម្រាប់ subsite នីមួយៗ ដើម្បីរក្សាភាពឯករាជ្យរបស់ tenant។ វាធ្វើឱ្យទិន្នន័យរបស់ tenant នៅតែដាច់ពីគ្នា ខណៈពេលដែលនៅតែរក្សាបាននូវការផ្តល់សេវាលើបណ្តាញ (network-level provisioning) ការគិតថ្លៃ (billing) និងការគ្រប់គ្រង (administration)។
 
-## យុទ្ធសាស្ត្រនៃការបែងចែក (Isolation strategy)
+## យុទ្ធសាស្ត្រនៃការបែងចែក (Isolation strategy) {#isolation-strategy}
 
 ប្រើប្រាស់ sovereign isolation សម្រាប់អតិថិជនដែលត្រូវការការបែងចែកទិន្នន័យកាន់តែខ្លាំង ការផ្ទុក filesystem ផ្ទាល់ខ្លួន ឬព្រំដែន host ដាច់ដោយឡែក។
 
@@ -18,7 +18,7 @@ Tenant sovereign នីមួយៗគួរមាន៖
 - ការចុះបញ្ជី tenant registry ដែលភ្ជាប់ site ទៅនឹង database, root path, hostname និង isolation model។
 - លទ្ធផលនៃការផ្ទៀងផ្ទាត់ការផ្លាស់ប្តូរ (migration verification result) មុនពេល tenant ត្រូវបានចាត់ទុកថាដំណើរការ live។
 
-## ការភ្ជាប់ host សម្រាប់ database (Database host binding)
+## ការភ្ជាប់ host សម្រាប់ database (Database host binding) {#database-host-binding}
 
 កំណែ 1.2.0 បានផ្លាស់ប្តូរអាកប្បកិរិយា mặc địnhនៃការភ្ជាប់ host ក្នុងម៉ាស៊ីនតែមួយ (same-machine host binding) សម្រាប់ការដំឡើង sovereign។ តម្លៃដូចជា `localhost` ត្រូវបានធ្វើឱ្យមានលក្ខណៈធម្មតា (normalized) ដើម្បីឱ្យ Bedrock, FrankenPHP និងការដំឡើង WordPress ដែលប្រើ container អាចផ្តល់ និងផ្ទៀងផ្ទាត់สิทธิ์ប្រឆាំងនឹងខ្សែអត្ថបទ host ដែល MySQL ពិតជាមើលឃើញ។
 
@@ -31,11 +31,11 @@ Tenant sovereign នីមួយៗគួរមាន៖
 
 ប្រសិនបើរបាយការណ៍នៃការផ្ទៀងផ្ទាត់បង្ហាញពីការបរាជ័យក្នុងការផ្តល់สิทธิ์ សូមប្រៀបធៀបការផ្តល់สิทธิ์អ្នកប្រើប្រាស់របស់ DB tenant ជាមួយនឹងការកំណត់រចនាសម្ព័ន្ធ host binding។ អ្នកប្រើប្រាស់ដែលត្រូវបានផ្តល់សិទ្ធិសម្រាប់ `user@localhost` គឺខុសពី `user@127.0.0.1` ឬ `user@%`។
 
-## root filesystem
+## root filesystem {#filesystem-root}
 
 ឫសនៃអ្នកเช่า (tenant root) គួរតែមានស្ថិរភាពเมื่อมีการចាប់ផ្តើមใหม่และการติดตั้งใช้งานซ้ำ หลีกเลี่ยงการใช้เส้นทาง mount ชั่วคราว สำหรับการติดตั้งแบบ Bedrock ให้แน่ใจว่า tenant root ชี้ไปยัง web root ของ WordPress ที่คาดหวังโดย tenant bootstrap ไม่ใช่แค่ project root เท่านั้น
 
-## ลำดับการเตรียมระบบ (Provisioning order)
+## ลำดับการเตรียมระบบ (Provisioning order) {#provisioning-order}
 
 สำหรับ tenant ใหม่ที่เป็นเอกเทศ (sovereign tenants) ให้ใช้ลำดับนี้:
 
@@ -49,7 +49,7 @@ Tenant sovereign នីមួយៗគួរមាន៖
 
 ลำดับนี้จะป้องกันไม่ให้ tenant ที่ถูกแยกส่วนบางส่วนได้รับทราฟฟิกก่อนที่ตัวเขียนฐานข้อมูล (database writer), ผู้ใช้, และระบบไฟล์จะพร้อมใช้งาน.
 
-## กระบวนการจัดการลูกค้าสำหรับลูกค้าที่เป็นเอกเทศ (Sovereign customer management flows)
+## กระบวนการจัดการลูกค้าสำหรับลูกค้าที่เป็นเอกเทศ (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 จะเก็บการดำเนินการจัดการลูกค้าไว้ที่เว็บไซต์หลักเมื่อเปิดใช้งานโหมด sovereign. Tenant ยังสามารถทำงานเป็น WordPress install ที่แยกออกมาได้ แต่การดำเนินการที่เกี่ยวข้องกับลูกค้าซึ่งขึ้นอยู่กับการเรียกเก็บเงินผ่านเครือข่าย (network billing), การเป็นสมาชิก (membership) หรือข้อมูลบัญชีร่วม ควรส่งลูกค้ากลับไปยังเว็บไซต์หลัก แทนที่จะพยายามทำรายการให้เสร็จสิ้นภายใน runtime ของ tenant.
 

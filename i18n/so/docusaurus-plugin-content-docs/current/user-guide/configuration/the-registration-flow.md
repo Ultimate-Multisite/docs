@@ -3,13 +3,13 @@ title: Habka Diyaarinta
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Habka-bixitaanka (v2)
+# Habka-bixitaanka (v2) {#the-registration-flow-v2}
 
 _**Fadlan la xusuuso: Qoraalkaasi wuxuu ka hadlayaa Ultimate Multisite nooca 2.x.**_
 
 Dadku waxay ku gali karaan shabakadahaaga qaabab kala duwan. Waxay isticmaali karaan foomka diiwaangelintaada ama xiriir la la mid ah (shareable link) oo ujeeddo qorshe horey u dooran. Halkan waxaan kuu sheegi doonaa sida macmiilayaashaadu ay ku diiwaangeli karaan shabakadahaaga iyadoo la isticmaalayo widadka la heli karo iyo waxa ka dhasha markii ay diiwaangelisay shabakadahaaga.
 
-## Isticmaalka Foomka Diiwaangelinta:
+## Isticmaalka Foomka Diiwaangelinta: {#using-the-registration-form}
 
 Tani waa habka caadiga ah ee diiwaangelinta. Waxaad samaynaysaa bog diiwaangelin oo leh **checkout form** (foomka lacagta la bixiyo), waxaana halkan ay macmiilayaashu aadaan si ay diiwaangeliyaan shabakadahaaga oo ay ku kaysi qorshe. Waxaad leedahay boosyo diiwaangelin badan, kasta oo leh foomka diiwaangelinta kala duwan haddii aad rabto.
 
@@ -35,13 +35,13 @@ Haddii ay diiwaangelisay qorshe lacag ah ama xaqiijinta emailku aysan ahayn wax 
 
 ![Website oo la shidid oo leh xiriir lagu galo dashboard](/img/frontend/site-activated.png)
 
-## Isticmaalka Xiriir La Waraabiddo (Shareable Link):
+## Isticmaalka Xiriir La Waraabiddo (Shareable Link): {#using-a-shareable-link}
 
 Habka diiwaangelinta ee loo isticmaalo xiriir la waraabiddo waa mid la mid ah foomka diiwaangelinta, waxa kaliya ka duwan in isticmaalaya xiriir la waraabiddo, macaamiishaada waxay heli karaan qalab ama template website oo horey u dooran (pre-selected) foomka lacag bixinta (isagoo istaagaya qaybta "Pre-selecting products and templates via URL parameters") ama waxaa lagu daray code coupon (isagoo istaagaya qaybta "Using URL Parameters").
 
 Habka diiwaangelinta wuu ahaan doonaa mid la mid ah: waxay u baahan yihiin inay buuxiya magacooda, username-kooda, email-kooda, magaca iyo cinwaanka website-ka, iwm... laakiin qorshaha ama template-ka website-ka ayaa horey u dooran (pre-selected) si ay kuu diyaarsan yihiin.
 
-### Diyaarinta Lacag Bixinta Adiga Ku Maamula:
+### Diyaarinta Lacag Bixinta Adiga Ku Maamula: {#registering-using-manual-payments}
 
 Haddii aadan rabin inaad isticmaasho PayPal, Stripe ama barnaamij kale oo lacag bixinta ee Ultimate Multisite ama isku-dhafka ay leeyihiin, waxaad isticmaali kartaa lacag bixinta adiga ku maamula macaamiishaada. Sidaas darteed, waxaad u samayn kartaa invoice (fariin lacag bixin) si ay bixiyaan iyadoo la adeegsan yahay processor-ka lacag bixinta aad dooratay ka dib markii ay diiwaangelisay shabakadahaaga.
 

@@ -3,7 +3,7 @@ title: Kako instalirati WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kako instalirati WordPress Multisite?
+# Kako instalirati WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite vam omogućava da imate mrežu sajtova na jednoj instalaciji. Ovo je ugrađena značajka, ali nije aktivna po defaultu.
 
@@ -61,7 +61,7 @@ I ovaj kod, takođe dostavljen od strane WordPressa, u vaš _**.htaccess**_ fajl
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Da biste kreirali pod-sajt:
 
 Nakon popunjavanja polja, kliknite na dugme "Add site". Kada se novi pod-sajt kreira, idite i pristupite mu kako biste bili sigurni da je pod-sajt funkcionalan.
 
-## Uobičajeni problemi:
+## Uobičajeni problemi: {#common-problems}
 
-### 1. Mogu kreirati nove sajtove, ali nisu dostupni.
+### 1. Mogu kreirati nove sajtove, ali nisu dostupni. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ako ste izabrali poddomene, morate postaviti i wildcard poddomene za vašu multisite mrežu.
 

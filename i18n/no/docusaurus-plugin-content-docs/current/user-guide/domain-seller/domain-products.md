@@ -3,11 +3,11 @@ title: 'Domene, produkter og priser'
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domenedukter og prissetting
+# Domenedukter og prissetting {#domain-products-and-pricing}
 
 Domeneduktene er der du styrer prissetting, TLDer, WHOIS-personvern og hvilken leverandør som skal brukes. Hver domenedukke er et standard Ultimate Multisite-produkt med en ekstra fane kalt **Domain Settings**.
 
-## Opprette en domenedukke
+## Opprette en domenedukke {#creating-a-domain-product}
 
 1. Gå til **Network Admin › Ultimate Multisite › Products**
 2. Klikk på **Add New**
@@ -17,13 +17,13 @@ Domeneduktene er der du styrer prissetting, TLDer, WHOIS-personvern og hvilken l
 
 Domeneduktene vises med et lilla **Domain**-merke i produktlisten og kan filtreres ved hjelp av fanen **Domain Products**.
 
-## Domain settings tab
+## Domain settings tab {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Velg hvilket register som skal håndtere registreringen for dette produktet. Standardinnstillingen er det globale **Default provider** som er satt i Domain Seller settings.
 
-### Supported TLDs
+### Supported TLDs {#supported-tlds}
 
 La feltet stå tomt for å opprette et **catch-all produkt** som gjelder for alle TLDer som ikke er dekket av et annet produkt.
 
@@ -31,7 +31,7 @@ Skriv inn en kommaadskilt liste med TLDer (f.eks. `.com, .net, .org`) for å opp
 
 **Hvordan produktmatching fungerer:** Når en kunde søker etter et domene, velger tilleggspakken det mest spesifikke matchende produktet. Et produkt med `.com` i TLD-listen sin har forrang over et catch-all produkt. Hvis ingen TLD-spesifikt produkt matcher, brukes catch-all-produktet. Hvis det ikke finnes noen produkter, vises ikke domenesøket.
 
-### Markup type
+### Markup type {#markup-type}
 
 Tre moduser styrer hvordan din utsalgspris beregnes fra engroskostnaden:
 
@@ -41,11 +41,11 @@ Tre moduser styrer hvordan din utsalgspris beregnes fra engroskostnaden:
 | **Fixed markup** | Legger til et fast beløp i dollar. Et påslag på $5 på et domene til $10 gir $15. |
 | **Fixed price** | Ignorerer engroskostnaden fullstendig. Belaster alltid beløpet du oppgir. |
 
-### Introductory pricing
+### Introductory pricing {#introductory-pricing}
 
 Aktiver for å tilby en rabattert pris det første året. Sett en separat **Introductory price** (prisen for år 1) sammen med den vanlige **Renewal price** (pris fra år 2 og utover). Kunden ser begge prisene under kassen, slik at de vet hva de kan forvente ved fornyelse.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 Styrer om WHOIS-personvern tilbys for domener registrert gjennom dette produktet.
 
@@ -59,7 +59,7 @@ For Namecheap bruker WHOIS-personvern WhoisGuard (alltid gratis). For OpenSRS br
 
 ---
 
-## TLD import og synkronisering
+## TLD import og synkronisering {#tld-import-and-sync}
 
 Domeneduktene viser sanntids engrospriser hentet fra den tilkoblede leverandøren. For at dette skal fungere, må TLDene importeres.
 
@@ -70,7 +70,7 @@ Etter en synkronisering, gå til fanen Domain Settings på en hvilken som helst 
 
 ---
 
-## Auto-renewal
+## Auto-renewal {#auto-renewal}
 
 Domenefornyelser er knyttet til kundens medlemsstatus:
 
@@ -90,7 +90,7 @@ E-postmal-ID-er for domenets livssyklushendelser:
 
 ---
 
-## Admin: Manuell domenergistrering
+## Admin: Manuell domenergistrering {#admin-manual-domain-registration}
 
 For å registrere et domene på vegne av en kunde uten at de må gå gjennom kassen:
 

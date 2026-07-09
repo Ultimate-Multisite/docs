@@ -3,11 +3,11 @@ title: Whakawhitiwhiti o te Whakamahi
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Orakau o te Dashboard
+# Orakau o te Dashboard {#dashboard-overview}
 
 He **Dashboard** whakamahinga ana i te Ultimate Multisite di te menue o Ultimate Multisite, ā, e hoki i widget's ki te Network Dashboard. Ka whakataki tēnei tikanga i te mea e kitea i onua-onua iwi-iwi (both places).
 
-## Te Network Dashboard
+## Te Network Dashboard {#the-network-dashboard}
 
 E whāwhā ana te Ultimate Multisite me ngā widget's tino pai ki te dashboard o te network, e hoki i **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ He aha te mea e whaihihia e koe i roto i roto i cada widget:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Te Dashboard o te Ultimate Multisite
+## Te Dashboard o te Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 I roto i roto i te network dashboard, e whakaatu ana te holistic information mō te network, ko te ultimate multisite dashboard (i te pū-uri o te menue o Ultimate Multisite) e whakaatu ana i ngā whakamohana mō te service.
 

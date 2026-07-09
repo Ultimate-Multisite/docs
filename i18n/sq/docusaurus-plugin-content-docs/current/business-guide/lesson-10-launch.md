@@ -3,19 +3,19 @@ title: 'Mësimi 10: Dita e publikimit'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Mësimi 10: Dita e lançimit
+# Mësimi 10: Dita e lançimit {#lesson-10-launch-day}
 
 Gjithçka është ndërtuar. Para se të hapni dyert, ky mësim kalon nëpër listën e kontrollit para lançimit për t’u siguruar që asgjë nuk është e prishur, e munguar ose e sikletshme.
 
-## Ku e lamë
+## Ku e lamë {#where-we-left-off}
 
 FitSite ka shabllone, plane, proces pagese, branding, integrim fillestar dhe çmime të gjitha të konfiguruara. Tani verifikojmë që gjithçka funksionon dhe dalim live.
 
-## Lista e kontrollit para lançimit
+## Lista e kontrollit para lançimit {#pre-launch-checklist}
 
 Kaloni nëpër çdo pikë. Mos anashkaloni asnjë.
 
-### Infrastruktura e platformës
+### Infrastruktura e platformës {#platform-infrastructure}
 
 - [ ] Hostimi është i qëndrueshëm dhe performon mirë nën ngarkesë
 - [ ] Wildcard SSL është aktiv dhe të gjitha nën-domenet shërbehen përmes HTTPS
@@ -23,7 +23,7 @@ Kaloni nëpër çdo pikë. Mos anashkaloni asnjë.
 - [ ] Kopjet rezervë janë konfiguruar dhe testuar (riktheni të paktën një për verifikim)
 - [ ] Monitorimi është vendosur -- do ta dini nëse platforma bie
 
-### Shabllonet
+### Shabllonet {#templates}
 
 - [ ] Të tre shabllonet ngarkohen saktë në faqet e reja
 - [ ] Përmbajtja zëvendësuese është e dobishme dhe pa gabime drejtshkrimore
@@ -32,7 +32,7 @@ Kaloni nëpër çdo pikë. Mos anashkaloni asnjë.
 - [ ] Shpejtësia e ngarkimit të faqes është e pranueshme (testoni me një mjet si GTmetrix ose PageSpeed Insights)
 - [ ] Nuk ka linke të prishura ose asete që mungojnë në asnjë shabllon
 
-### Planet dhe produktet
+### Planet dhe produktet {#plans-and-products}
 
 - [ ] Të tre planet janë aktive dhe të dukshme
 - [ ] Përshkrimet e planeve janë të sakta dhe specifike për niche-in
@@ -42,7 +42,7 @@ Kaloni nëpër çdo pikë. Mos anashkaloni asnjë.
 - [ ] Ofertat shtesë në porosi shfaqen saktë gjatë procesit të pagesës
 - [ ] Kufizimet e plugin-eve dhe theme-ve zbatohen saktë për çdo plan
 
-### Rrjedha e pagesës
+### Rrjedha e pagesës {#checkout-flow}
 
 - [ ] Përfundoni një regjistrim të plotë testues në çdo plan (përdorni modalitetin e pagesës testuese)
 - [ ] Zgjedhja e shabllonit shfaq shabllonet e sakta për çdo plan
@@ -52,7 +52,7 @@ Kaloni nëpër çdo pikë. Mos anashkaloni asnjë.
 - [ ] Klienti mund të hyjë menjëherë në faqen e tij të re
 - [ ] Kodet e zbritjes funksionojnë saktë
 
-### Branding
+### Branding {#branding}
 
 - [ ] Faqja e hyrjes shfaq branding-un e FitSite
 - [ ] Admin Dashboard shfaq branding-un e FitSite
@@ -60,7 +60,7 @@ Kaloni nëpër çdo pikë. Mos anashkaloni asnjë.
 - [ ] Faturat shfaqen saktë me të dhënat e biznesit tuaj
 - [ ] Faqja e marketingut është live dhe lidhet me formularin e pagesës
 
-### Integrimi fillestar
+### Integrimi fillestar {#onboarding}
 
 - [ ] Widget-i Quick Start shfaqet në Dashboard-et e klientëve të rinj
 - [ ] Të gjitha linket e Quick Start çojnë te faqet e sakta
@@ -68,7 +68,7 @@ Kaloni nëpër çdo pikë. Mos anashkaloni asnjë.
 - [ ] Artikujt e bazës së njohurive janë publikuar dhe janë të aksesueshëm
 - [ ] Faqja Account shfaq informacionin e saktë të planit dhe opsionet e përmirësimit
 
-### Ligjore dhe biznesi
+### Ligjore dhe biznesi {#legal-and-business}
 
 - [ ] Kushtet e shërbimit janë publikuar dhe të lidhura nga procesi i pagesës
 - [ ] Politika e privatësisë është publikuar dhe e aksesueshme
@@ -77,11 +77,11 @@ Kaloni nëpër çdo pikë. Mos anashkaloni asnjë.
 - [ ] Porta e pagesave është në modalitet live (jo modalitet testimi)
 - [ ] Konfigurimi i taksave është i saktë për juridiksionin tuaj
 
-## Lançim i butë kundrejt lançimit të plotë
+## Lançim i butë kundrejt lançimit të plotë {#soft-launch-vs-hard-launch}
 
 Merrni parasysh një lançim me dy faza:
 
-### Faza 1: Lançim i butë
+### Faza 1: Lançim i butë {#phase-1-soft-launch}
 
 Ftoni 5-10 pronarë studiosh fitnessi të regjistrohen para lançimit publik. Këta janë klientët tuaj beta. Ofroni atyre një zbritje të konsiderueshme (50% ulje për gjithë jetën, ose 3 muaj falas) në këmbim të:
 
@@ -91,7 +91,7 @@ Ftoni 5-10 pronarë studiosh fitnessi të regjistrohen para lançimit publik. K�
 
 Kjo ju jep reagime reale nga klientët dhe faqe live për t’i shfaqur para se të hapeni për publikun.
 
-### Faza 2: Lançimi publik
+### Faza 2: Lançimi publik {#phase-2-public-launch}
 
 Pasi të përfshihen reagimet nga lançimi i butë:
 
@@ -100,7 +100,7 @@ Pasi të përfshihen reagimet nga lançimi i butë:
 - Filloni fitimin e klientëve (Mësimi 11)
 - Njoftoni në kanalet përkatëse të industrisë së fitnessit
 
-## Veprimet në ditën e lançimit
+## Veprimet në ditën e lançimit {#launch-day-actions}
 
 Në ditën kur dilni publikisht:
 
@@ -110,7 +110,7 @@ Në ditën kur dilni publikisht:
 4. **Jini të disponueshëm** -- klientët tuaj të parë realë mund të kenë nevojë për ndihmë, dhe përgjigjja e shpejtë ndërton besim
 5. **Festoni shkurtimisht** -- pastaj kthehuni në punë
 
-## Çfarë mund të shkojë keq
+## Çfarë mund të shkojë keq {#what-can-go-wrong}
 
 Jini të përgatitur për:
 
@@ -120,7 +120,7 @@ Jini të përgatitur për:
 - **Performancë nën ngarkesë**: Nëse merrni një rritje trafiku, dini si ta shkallëzoni hostimin tuaj
 - **Konfuzion i klientëve**: Mbani gati bazën tuaj të njohurive dhe kanalet e mbështetjes
 
-## Rrjeti FitSite deri tani
+## Rrjeti FitSite deri tani {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Çfarë ndërtuam në këtë mësim
+## Çfarë ndërtuam në këtë mësim {#what-we-built-this-lesson}
 
 - **Një listë kontrolli gjithëpërfshirëse para lançimit** që mbulon infrastrukturën, përmbajtjen, pagesat dhe çështjet ligjore
 - **Një strategji lançimi të butë** për të marrë reagime reale para se të dilni publikisht

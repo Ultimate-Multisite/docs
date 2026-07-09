@@ -3,28 +3,28 @@ title: Muhtasari wa REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Rejeleo la REST API
+# Rejeleo la REST API {#rest-api-reference}
 
-## Usanidi wa Msingi
+## Usanidi wa Msingi {#base-configuration}
 
 **URL ya Msingi:** `{site_url}/wp-json/wu/v2/`
 **Uthibitishaji:** Ufunguo wa API na Siri (HTTP Basic Auth au Vigezo vya URL)
 
-## Uthibitishaji
+## Uthibitishaji {#authentication}
 
-### Washa API
+### Washa API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Pata Vitambulisho vya API
+### Pata Vitambulisho vya API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Mbinu za Uthibitishaji
+### Mbinu za Uthibitishaji {#authentication-methods}
 
 **HTTP Basic Auth (Inapendekezwa):**
 ```bash
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpointi Kuu
+## Endpointi Kuu {#core-endpoints}
 
-### 1. API ya Wateja
+### 1. API ya Wateja {#1-customers-api}
 
 **Njia ya Msingi:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API ya Site
+### 2. API ya Site {#2-sites-api}
 
 **Njia ya Msingi:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. API ya Uanachama
+### 3. API ya Uanachama {#3-memberships-api}
 
 **Njia ya Msingi:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. API ya Bidhaa
+### 4. API ya Bidhaa {#4-products-api}
 
 **Njia ya Msingi:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. API ya Malipo
+### 5. API ya Malipo {#5-payments-api}
 
 **Njia ya Msingi:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. API ya Vikoa
+### 6. API ya Vikoa {#6-domains-api}
 
 **Njia ya Msingi:** `/domains`
 
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpointi ya Usajili
+## Endpointi ya Usajili {#registration-endpoint}
 
 Endpointi ya `/register` hutoa mtiririko kamili wa checkout/usajili:
 
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-## Endpointi za Mpangaji Huru
+## Endpointi za Mpangaji Huru {#sovereign-tenant-endpoints}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 huongeza ufunikaji wa REST kwa wapangaji huru kwa miunganisho inayotoa, kukagua, au kuthibitisha wapangaji waliotengwa.
 
@@ -242,7 +242,7 @@ Majibu ya kawaida ya hali ya uhamishaji yanajumuisha:
 
 Chukulia `ready: false` kama kizuizi cha kabla ya uzinduzi. Kagua maelezo ya uthibitishaji, rekebisha ufungaji wa host ya hifadhidata, foleni, utoaji wa watumiaji, au tatizo la uelekezaji, kisha jaribu tena uthibitishaji.
 
-## Majibu ya Hitilafu
+## Majibu ya Hitilafu {#error-responses}
 
 ```json
 {
@@ -257,7 +257,7 @@ Chukulia `ready: false` kama kizuizi cha kabla ya uzinduzi. Kagua maelezo ya uth
 }
 ```
 
-## Uwekaji Kurasa na Uchujaji
+## Uwekaji Kurasa na Uchujaji {#pagination-and-filtering}
 
 **Vigezo vya Hoja:**
 ```http

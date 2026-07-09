@@ -3,11 +3,11 @@ title: Provider-tudatos prompt-caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Szolgáltató-tudatos Prompt Cache-elés
+# Szolgáltató-tudatos Prompt Cache-elés {#provider-aware-prompt-caching}
 
 A Superdav AI Agent v1.12.0 bevezet **szolgáltató-tudatos prompt cache-elést**, amely optimalizálja az API költségeket és a merülést (latency) különböző LLM szolgáltatók általi promptok cache-elése révén. Minden szolgáltatónek más cache-előző mechanizmusai és konfigurációi vannak.
 
-## Áttekintő
+## Áttekintő {#overview}
 
 A prompt cache-elés lehetővé teszi, hogy:
 
@@ -23,11 +23,11 @@ A különböző szolgáltatók eltérő módon implementálják a cache-elést:
 - **OpenRouter**: Szolgáltató-specifikus cache-elés
 - **Vertex Anthropic**: Prompt cache-elés cache-kontrollral
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 A Google Gemini explicit cache-kezelést biztosít a `cachedContents` API segítségével.
 
-### Konfiguráció
+### Konfiguráció {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Cache-elt Prompt létrehozása
+### Cache-elt Prompt létrehozása {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Visszaadja: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Cache-elt Prompt használata
+### Cache-elt Prompt használata {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache Életciklus
+### Cache Életciklus {#cache-lifecycle}
 
 ```php
 // Listázza a cache-elt tartalmakat
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Legjobb gyakorlatok Gemini-hez
+### Legjobb gyakorlatok Gemini-hez {#best-practices-for-gemini}
 
 - **Állítsa be megfelelő TTL-t**: Egyensúlya a költségmegtakarítás és a cache elavulása között
 - **Cache-elje a rendszeres promptokat**: Használja újra ugyanazt a rendszeres utasítást a kérések során
 - **Követje nyomon a cache használatát**: Figyelje meg, mely cache-ek használatosak
 - **Tisztítsa meg az elavult cache-eket**: Idővel távolítsa el a nem használt cache-eket
 
-## Azure OpenAI: Prompt Cache-elés
+## Azure OpenAI: Prompt Cache-elés {#azure-openai-prompt-caching}
 
 Az Azure OpenAI támogatja a prompt cache-elést automatikus TTL-kezeléssel.
 
-### Konfiguráció
+### Konfiguráció {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Cache-elés Aktiválása
+### Cache-elés Aktiválása {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Fejlesztők (Cache Headers)
+### Cache Fejlesztők (Cache Headers) {#cache-headers}
 
 Az Azure OpenAI HTTP fejléceket használ a cache-kontrollhoz:
 
@@ -152,7 +152,7 @@ Támogatott értékek:
 - `no_cache`: Ne cache-elje ezt a kérést
 - `no_store`: Ne cache-elje és ne használja újra
 
-### Cache Használatának Követése
+### Cache Használatának Követése {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache létrehozása: $cache_tokens token\n";
 echo "Cache találatok: $cache_hits token\n";
 ```
 
-### Legjobb gyakorlatok Azure OpenAI-hez
+### Legjobb gyakorlatok Azure OpenAI-hez {#best-practices-for-azure-openai}
 
 - **Használjon konzisztens promptokat**: Azonos promptok kedveznek a cache-elésnek
 - **Állítsanak be érdemi TTL-t**: Egyensúlya a költség és az frissesség között
 - **Követjen nyomon a cache metrikáinak**: Figyelje a cache létrehozását és a találatokat
 - **Csoportosítsa a hasonló kéréseket**: Csoportosítsa a kéréseket, hogy maximalizálja a cache találatokat
 
-## OpenRouter: Szolgáltató-specifikus Cache-elés
+## OpenRouter: Szolgáltató-specifikus Cache-elés {#openrouter-provider-specific-caching}
 
 Az OpenRouter cache-elést biztosít az alrendszerek (OpenAI, Anthropic stb.) segítségével.
 
-### Konfiguráció
+### Konfiguráció {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Cache-elés Használata
+### OpenRouter Cache-elés Használata {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Szolgáltató-specifikus Opciók
+### Szolgáltató-specifikus Opciók {#provider-specific-options}
 
 A különböző szolgáltatók eltérő cache-előző mechanizmusokat használnak:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Legjobb gyakorlatok OpenRouter-hez
+### Legjobb gyakorlatok OpenRouter-hez {#best-practices-for-openrouter}
 
 - **Tudja meg a szolgáltató cache-előzőjét**: Minden szolgáltatónek más mechanizmusa van
 - **Tesztelje a cache-előző viselkedést**: Ellenőrizze, hogy a cache-elés működik-e a választott szolgáltatójával
 - **Követje nyomon a költségeket**: Figyelje a cache-elésből származó megtakarításokat
 - **Használjon konzisztens modelleket**: A modellváltás megszakítja a cache találatokat
 
-## Vertex Anthropic: Prompt Cache-elés Cache-kontrollral
+## Vertex Anthropic: Prompt Cache-elés Cache-kontrollral {#vertex-anthropic-prompt-caching-with-cache-control}
 
 A Vertex Anthropic (Google Cloud) támogatja a prompt cache-elést explicit cache-kontrollral.
 
-### Konfiguráció
+### Konfiguráció {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic Cache-elés Használata
+### Vertex Anthropic Cache-elés Használata {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache Kontroll Típusok
+### Cache Kontroll Típusok {#cache-control-types}
 
 - **ephemeral**: Cache a kérés időtartamára (alapértelmezett)
 - **persistent**: Cache több kérésen keresztül (ha támogatott)
 
-### Cache Használatának Követése
+### Cache Használatának Követése {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache létrehozva: $cache_created token\n";
 echo "Cache olvasva: $cache_read token\n";
 ```
 
-### Legjobb gyakorlatok Vertex Anthropic-hez
+### Legjobb gyakorlatok Vertex Anthropic-hez {#best-practices-for-vertex-anthropic}
 
 - **Használja az ephemeral cache-elést**: Jó a single-session cache-eléshez
 - **Állítsa be megfelelő max_tokens-t**: Egyensúlya a cache méret és a költség között
 - **Követje nyomon a cache metrikáinak**: Figyelje a cache hatékonyságát
 - **Tesztelje a munkaterhelésével**: Ellenőrizze, hogy a cache-elés előnyben részesíti-e a felhasználási eseteit
 
-## Szolgáltató-átlátó Cache-előző Stratégia
+## Szolgáltató-átlátó Cache-előző Stratégia {#cross-provider-caching-strategy}
 
-### Egletes Konfiguráció
+### Egletes Konfiguráció {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Szolgáltató-feldetekezés (Provider Detection)
+### Szolgáltató-feldetekezés (Provider Detection) {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Használja a szolgáltató-specifikus cache-előző konfigurációt
 ```
 
-### Visszaeső Stratégia (Fallback Strategy)
+### Visszaeső Stratégia (Fallback Strategy) {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Költségoptimalizálás
+## Költségoptimalizálás {#cost-optimization}
 
-### Megtakarítási Számítás
+### Megtakarítási Számítás {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Várható megtakarítás: \$$savings\n";
 ```
 
-### Optimalizációs Tippek
+### Optimalizációs Tippek {#optimization-tips}
 
 - **Cache-elje nagy rendszeres promptokat**: A legnagyobb költségmegtakarítás
 - **Használja újra a kontextust**: Cache-elje a gyakran használt kontextus dokumentumokat
@@ -395,30 +395,30 @@ echo "Várható megtakarítás: \$$savings\n";
 - **Követje nyomon a cache hatékonyságát**: Figyelje a tényleges megtakarításokat
 - **Állítsa be az TTL-t**: Egyensúlya a költség és a frissesség között
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
-### A cache nem használatos
+### A cache nem használatos {#cache-not-being-used}
 
 - Ellenőrizze, hogy a cache-elés ki van kapcsolva a konfigurációban
 - Ellenőrizze, hogy a promptok azonosak-e (a cache-elés pontos eşleştirést igényel)
 - Ellenőrizze, hogy a cache nem érvénytelenült
 - Ellenőrizze a szolgáltató-specifikus cache-korlátokat
 
-### Cache létrehozása sikertelen
+### Cache létrehozása sikertelen {#cache-creation-failing}
 
 - Ellenőrizze, hogy a cache mérete a szolgáltató korlátainak belül van
 - Ellenőrizze, hogy a cache-kontroll szintaxis helyes
 - Győződjön meg róla, hogy a szolgáltató támogatja a cache-elést az adott modellhez
 - Nézze át a szolgáltató dokumentációját a korlátozások tekintetében
 
-### Előre nem látott költségek
+### Előre nem látott költségek {#unexpected-costs}
 
 - Követje nyomon a cache létrehozás és a cache olvasás tokenjainak arányát
 - Ellenőrizze, hogy a cache ténylegesen használatos-e
 - Nézze meg a cache hiányokat a prompt változások miatt
 - Fontos lehet az TTL vagy a cache-előző stratégiájának áttekintése
 
-## Szolgáltató Össравниztábla
+## Szolgáltató Össравниztábla {#provider-comparison}
 
 | Funkció | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|

@@ -3,7 +3,7 @@ title: Ingxelo yotshintsho ye-Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Utshintsho lwe-Mailchimp
+# Utshintsho lwe-Mailchimp {#mailchimp-changelog}
 
 Inguqulelo: 1.1.1 - Ikhutshwe ngo-2025-09-28
 

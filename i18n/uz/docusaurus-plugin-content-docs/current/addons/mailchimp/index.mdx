@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: Mailchimp integratsiyasi
 
 Multisite Ultimate tarmog‘ingizni Mailchimp bilan integratsiya qiling. Muayyan rejalarni Mailchimp ro‘yxatlariga bog‘lashingiz va ro‘yxatdan o‘tishda obunachilarni avtomatik ravishda o‘sha ro‘yxatlarga qo‘shishingiz mumkin.
 
-## O‘rnatish
+## O‘rnatish {#installation}
 
 1. 'ultimate-multisite-mailchimp'ni '/wp-content/plugins/' katalogiga yuklang
 2. WordPress Network Admin ichidagi 'Pluginlar' menyusi orqali pluginni faollashtiring
 
-## Foydalanish qo‘llanmasi
+## Foydalanish qo‘llanmasi {#usage-guide}
 
 Obunachilar email manzillarini MailChimp ro‘yxatlaringiz bilan sinxronlash Ultimate Multisite: MailChimp Integration qo‘shimchamiz bilan juda oson. Bu qo‘llanma hammasini sozlab olishingizga yordam berishni maqsad qiladi!
 
-## API kalitini olish
+## API kalitini olish {#getting-an-api-key}
 
 Mavjud turli sozlamalarga o‘tishdan oldin bizga MailChimp API kaliti kerak. Bu Ultimate Multisite’ga MailChimp API bilan bog‘lanib ro‘yxatlar va guruhlarni olish, hamda foydalanuvchilar ro‘yxatdan o‘tganda email manzillarini o‘sha ro‘yxatlar va guruhlarga qo‘shish imkonini beradi.
 
@@ -32,7 +32,7 @@ O‘zingizning MailChimp API kalitingizni olish uchun ushbu qo‘llanmaga amal q
 
 _MailChimp API kalitingizni shu yerda qo‘shing:_ _**Ultimate Multisite sozlamalari - > Qo‘shimcha sozlamalari -> MailChimp**_
 
-## Integratsiya rejimi
+## Integratsiya rejimi {#integration-mode}
 
 MailChimp Integration qo‘shimchasi ikkita “integratsiya rejimi”ni taklif qiladi, ya’ni qo‘shimchadan email manzillarni sinxronlash uchun ikki xil usulda foydalanishingiz mumkin.
 
@@ -40,7 +40,7 @@ MailChimp Integration qo‘shimchasi ikkita “integratsiya rejimi”ni taklif q
 
 _Kattaroq moslashuvchanlik uchun ikkita integratsiya rejimi!_
 
-### Rejim 1: Bir nechta ro‘yxatlar
+### Rejim 1: Bir nechta ro‘yxatlar {#mode-1-multiple-lists}
 
 Standart rejim **Bir nechta ro‘yxatlar**dan foydalanadi. Bu rejim har bir reja uchun bir nechta MailChimp ro‘yxatini tanlash imkonini beradi. Agar foydalanuvchilaringizni turli ro‘yxatlarga ajratsangiz, bu eng yaxshi variant.
 
@@ -52,7 +52,7 @@ Bunga erishish uchun Bir nechta ro‘yxatlar rejimidan foydalanib, Reja A MailCh
 
 _Yangi accountlar va bekor qilingan accountlar uchun standart ro‘yxatlarni tanlang_
 
-### Rejim 2: Bitta ro‘yxat + bir nechta guruhlar
+### Rejim 2: Bitta ro‘yxat + bir nechta guruhlar {#mode-2-single-list--multiple-groups}
 
 MailChimp ro‘yxatingizni **Guruhlar** deb ataladigan kichikroq foydalanuvchilar guruhlariga ajratish imkonini beradi. Bu sizga ko‘proq nazorat beradi, chunki MailChimp’da bir xil kampaniyaning bir nechta nusxasini yaratmasdan (bu keyinchalik o‘sha kampaniya ko‘rsatkichlarini tahlil qilishni qiyinlashtiradi), obunachilaringizning muayyan kichik to‘plamiga kampaniya yuborishingiz mumkin.
 
@@ -62,13 +62,13 @@ Masalan, **Mening tarmoq obunachilarim,** deb nomlangan bitta ro‘yxatingiz bo�
 
 _Agar “bitta ro‘yxat + bir nechta guruhlar” integratsiya rejimidan foydalansangiz, standart ro‘yxatlar va guruhlarni tanlang_
 
-## Standart ro‘yxatlar va guruhlar
+## Standart ro‘yxatlar va guruhlar {#default-lists-and-groups}
 
 Qaysi integratsiya rejimi aynan sizning foydalanish holatingizga ko‘proq mos kelishini tanlaganingizdan so‘ng, standart ro‘yxatlarni (va rejimga qarab guruhlarni) tanlash vaqti keladi. Standart ro‘yxat berilgan reja uchun muayyan ro‘yxat tanlanmaganida ishlatiladi.
 
 Bekor qilingan accountlar uchun ham standart ro‘yxatni tanlashingiz mumkin. Foydalanuvchi o‘z obunasini tugatib, accountini tarmog‘ingizdan olib tashlaganda, uning email manzili bekor qilingan accountlar uchun belgilangan ro‘yxatga ko‘chiriladi.
 
-## Ikki martalik obunani yoqish
+## Ikki martalik obunani yoqish {#enabling-double-subscription}
 
 Xuddi shu sozlamalar sahifasida **Ikki martalik obuna**ni yoqishingiz mumkin. Bu parametr foydalanuvchini tanlangan standart ro‘yxatga HAMDA o‘sha foydalanuvchi rejasiga tanlangan ro‘yxatga qo‘shadi. Agar bu parametr yoqilmagan bo‘lsa, foydalanuvchi faqat foydalanuvchi rejasi uchun tanlangan ro‘yxatga qo‘shiladi. Agar o‘sha muayyan reja uchun hech narsa belgilanmagan bo‘lsa, foydalanuvchi tanlangan standart ro‘yxatga qo‘shiladi.
 
@@ -76,7 +76,7 @@ Xuddi shu sozlamalar sahifasida **Ikki martalik obuna**ni yoqishingiz mumkin. Bu
 
 _Ro‘yxatdan o‘tishda foydalanuvchilaringizni ham standart ro‘yxatga, ham rejaning ro‘yxatiga obuna qilishingiz mumkin_
 
-## Har bir reja uchun ro‘yxatlar va guruhlarni tanlash
+## Har bir reja uchun ro‘yxatlar va guruhlarni tanlash {#selecting-lists-and-groups-for-each-of-the-plans}
 
 **Rejalar**ingizga o‘ting va tahrirlamoqchi bo‘lgan rejangizni tanlang. **Kengaytirilgan parametrlar** meta-qutisida MailChimp deb nomlangan yangi ichki varaq mavjud bo‘lishiga e’tibor bering.
 

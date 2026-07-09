@@ -3,7 +3,7 @@ title: ثبت نقطه پایانی API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# نقطه اتصال (endpoint) ثبت‌نام API در Ultimate Multisite
+# نقطه اتصال (endpoint) ثبت‌نام API در Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 در این آموزش، یاد می‌گیرید چگونه از نقطه اتصال /register در API مربوط به Ultimate Multisite استفاده کنید تا فرآیند کامل ورود و ثبت‌نام مشتری جدید در شبکه‌تان را ایجاد کنید و این کار را با Zapier انجام دهید.
 
@@ -29,11 +29,11 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 حالا بیایید endpoint را بررسی کنیم و سپس یک اکشن ثبت‌نام در Zapier بسازیم.
 
-## پارامترهای بدنه endpoint
+## پارامترهای بدنه endpoint {#endpoint-body-parameters}
 
 بیایید یک نگاه کلی به حداقل اطلاعاتی که باید به endpoint ارسال کنیم داشته باشیم. در انتهای این مقاله، فراخوانی کامل را خواهید یافت.
 
-### مشتری (Customer)
+### مشتری (Customer) {#customer}
 
 این اطلاعات برای فرآیند ایجاد کاربر و مشتری Ultimate Multisite لازم است:
 
@@ -43,25 +43,25 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **عضویت (Membership)**
+### **عضویت (Membership)** {#membership}
 
 تنها اطلاعاتی که در این آبجکت نیاز داریم، وضعیت عضویت است.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **محصولات (Products)**
+### **محصولات (Products)** {#products}
 
 محصولات به صورت آرایه‌ای با یک یا چند شناسه محصول از شبکه شما ارسال می‌شوند. توجه داشته باشید که این endpoint محصول ایجاد نمی‌کند. برای درک بهتر endpoint ایجاد محصول، مستندات Ultimate Multisite را مطالعه کنید.
 
 **"products" : [1,2],**
 
-### پرداخت (Payment)
+### پرداخت (Payment) {#payment}
 
 مانند عضویت، فقط به وضعیت نیاز داریم.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### سایت (Site)
+### سایت (Site) {#site}
 
 و برای تکمیل بدنه درخواست، به آدرس و عنوان سایت نیاز داریم که هر دو داخل آبجکت Site قرار می‌گیرند.
 
@@ -69,13 +69,13 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 خروجی endpoint ثبت‌نام، آرایه‌ای حاوی اطلاعات عضویت تازه ایجاد شده خواهد بود.
 
-## ایجاد یک اکشن در Zapier
+## ایجاد یک اکشن در Zapier {#creating-an-action-in-zapier}
 
 با معرفی این endpoint جدید و قدرتمندتر برای ایجاد حساب کاربری، به یک اکشن جدید در Zapier نیز دسترسی خواهید داشت.
 
 آیا می‌دانید چگونه از تمام امکاناتی که نسخه جدید Zapier ارائه می‌دهد استفاده کنید؟ اینجا بیشتر بیاموزید. (link?)
 
-### ایجاد یک اکشن
+### ایجاد یک اکشن {#creating-an-action}
 
 برای نشان دادن بهتر نحوه استفاده از endpoint ثبت‌نام با Zapier، بیایید یک ادغام با Google Forms بسازیم. هر بار که این فرم پر شود و اطلاعات در صفحه پاسخ‌های فرم ذخیره شود، یک عضویت جدید در شبکه Ultimate Multisite ایجاد خواهد شد.
 
@@ -105,7 +105,7 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 Zap جدیدتان را تست کنید و باید با موفقیت تکمیل شود. اگر خطایی رخ داد، همه فیلدها را بررسی کنید و مطمئن شوید که درست ارسال می‌شوند. از آنجا که اطلاعات زیادی وجود دارد، ممکن است برخی موارد از قلم بیفتند.
 
-### پارامترهای کامل endpoint
+### پارامترهای کامل endpoint {#complete-endpoint-parameters}
 
 در اینجا فراخوانی کامل و تمام فیلدهایی که می‌توان ارسال کرد آورده شده است.
 

@@ -3,7 +3,7 @@ title: زپيار جي ذريو سان ڪيڊ register ڪريو
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# ایونٹ: Zapier کے ذریعے اکاؤنٹ رجسٹر کرنا
+# ایونٹ: Zapier کے ذریعے اکاؤنٹ رجسٹر کرنا {#event-register-an-account-via-zapier}
 
 اس آرٹیکل [Integrating Ultimate Multisite with Zapier](zapier.md) میں، ہم نے بات کی تھی کہ کیسے آپ Zapier کا استعمال ٹرگرز اور ایونٹس کی بنیاد پر Ultimate Multisite کے اندر مختلف کام کرنے کے لیے کر سکتے ہیں۔ اس آرٹیکل میں، ہم دکھائیں گے کہ آپ تھرڈ پارٹی ایپلی کیشنز کو کیسے جوڑ سکتے ہیں۔ ہم ڈیٹا کے ذرائع کے طور پر Google Sheets کا استعمال کریں گے اور معلومات کو Ultimate Multisite کو بھیجیں تاکہ اکاؤنٹ رجسٹر ہو سکے۔
 

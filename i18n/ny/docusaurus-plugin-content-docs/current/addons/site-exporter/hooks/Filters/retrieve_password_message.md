@@ -4,11 +4,11 @@ title: Fyuluta - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Imasefa thupi la uthenga wa imelo yokhazikitsanso password.
 
-## Ma Parameter
+## Ma Parameter {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Imasefa thupi la uthenga wa imelo yokhazikitsanso password.
 | $user_login | `string` | Dzina lolowera la wogwiritsa ntchito. |
 | $user_data | `\WP_User` | Chinthu cha WP_User. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.8.0
 - 4.1.0: Added <code>$user_login</code> and <code>$user_data</code> parameters.
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) pa mzere 149
 
 
-## Zobwerera
+## Zobwerera {#returns}
 Uthenga wa imelo wokhazikika.

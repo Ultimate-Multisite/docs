@@ -3,32 +3,32 @@ title: 'Casharka 3: Dejinta Shabakaddaada'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Casharka 3: Dejinta Shabakaddaada
+# Casharka 3: Dejinta Shabakaddaada {#lesson-3-setting-up-your-network}
 
 Waa waqtigii la dhisi lahaa. Casharkan waxaad ku rakibi doontaa Ultimate Multisite oo waxaad habayn doontaa aasaaska shabakadda FitSite. Go'aan kasta halkan waxaa lagu sameeyay iyadoo maskaxda lagu hayo niche-ka jirdhiska.
 
-## Halkii Aan Ku Joognay
+## Halkii Aan Ku Joognay {#where-we-left-off}
 
 Waxaan doorannay istuudiyeyaasha jirdhiska inay noqdaan niche-keena, waxaana xaqiijinnay fursadda. Hadda fikraddaas waxaan u beddelaynaa platform shaqaynaya.
 
-## Doorashada Hosting-kaaga
+## Doorashada Hosting-kaaga {#choosing-your-hosting}
 
 Doorashadaada hosting-ka waxay uga muhiimsan tahay platform niche ah marka loo eego website keliya. Ma martigelinaysid hal site -- waxaad martigelinaysaa shabakad kori doonta oo gaari doonta tobannaan ama boqollaal sites.
 
-### Waxa La Raadinayo
+### Waxa La Raadinayo {#what-to-look-for}
 
 - **Taageerada WordPress Multisite**: Dhammaan hosts-ku si fiican uma maareeyaan multisite
 - **Wildcard SSL**: Waa lama huraan shabakadaha ku salaysan subdomain
 - **Khayraad la ballaarin karo**: Waxaad u baahan tahay meel aad ku korto adigoon guurin
 - **Isdhexgalka Ultimate Multisite**: Domain mapping otomaatig ah iyo SSL waxay badbaadiyaan dadaal hawlgal oo weyn
 
-### Habka Lagu Taliyay
+### Habka Lagu Taliyay {#recommended-approach}
 
 Ka dooro host liiska [Bixiyeyaasha La Jaanqaadi Kara](/user-guide/host-integrations/closte). Kuwan waxaa lagu tijaabiyay Ultimate Multisite waxayna bixiyaan isdhexgalka aad u baahan tahay domain mapping iyo otomaatigga SSL.
 
 FitSite, waxaan u adeegsan doonaa habayn subdomain ah. Tani waxay ka dhigan tahay in sites-ka macaamiishu marka hore u muuqan doonaan `studioname.fitsite.com` ka hor inta aysan si ikhtiyaari ah ugu xirin domain-kooda.
 
-## Rakibidda WordPress Multisite
+## Rakibidda WordPress Multisite {#installing-wordpress-multisite}
 
 Haddii aadan hore u haysan rakibid WordPress Multisite ah:
 
@@ -40,7 +40,7 @@ Haddii aadan hore u haysan rakibid WordPress Multisite ah:
 Subdomains waxay site kasta oo macmiil ah siiyaan cinwaan u gaar ah (`studio.fitsite.com`) halkii uu ka ahaan lahaa path (`fitsite.com/studio`). Tani waa mid xirfad badan macaamiishaada waxayna ka hortagtaa isku dhacyada permalink. Eeg [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) si aad u hesho isbarbardhig faahfaahsan.
 :::
 
-## Rakibidda Ultimate Multisite
+## Rakibidda Ultimate Multisite {#installing-ultimate-multisite}
 
 Raac hagaha [Rakibidda Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) si aad u:
 
@@ -53,11 +53,11 @@ Inta lagu jiro saaxirka dejinta, maskaxda ku hay niche-ka FitSite:
 - **Magaca shirkadda**: "FitSite" (ama magaca brand-ka aad dooratay)
 - **Astaanta shirkadda**: Upload-garee astaanta brand-kaaga -- tani waxay ka muuqataa qaansheegadyada iyo emails-ka
 
-## Habaynta Niche-ka Jirdhiska
+## Habaynta Niche-ka Jirdhiska {#configuring-for-the-fitness-niche}
 
 Marka Ultimate Multisite la rakibo, samee doorashooyinkan habayn ee u gaarka ah niche-ka:
 
-### Dejinta Guud
+### Dejinta Guud {#general-settings}
 
 U gudub **Ultimate Multisite > Settings** oo habee:
 
@@ -65,7 +65,7 @@ U gudub **Ultimate Multisite > Settings** oo habee:
 - **Doorka caadiga ah**: Administrator -- milkiilayaasha istuudiyeyaasha jirdhiska waxay u baahan yihiin xakameyn buuxda oo ku saabsan nuxurka site-kooda
 - **Diiwaangelinta**: Daar diiwaangelinta isticmaalaha si milkiilayaasha istuudiyeyaashu iyagu isu diiwaangeliyaan
 
-### Habaynta Email-ka
+### Habaynta Email-ka {#email-configuration}
 
 Emails-ka nidaamkaagu waa inay ku hadlaan luqadda niche-kaaga. U gudub **Ultimate Multisite > Settings > Emails** oo habee:
 
@@ -75,7 +75,7 @@ Emails-ka nidaamkaagu waa inay ku hadlaan luqadda niche-kaaga. U gudub **Ultimat
 
 Waxaan ku sii sifayn doonaa kuwaan Casharka 8 (Soo-dhaweynta Macaamiisha), laakiin dejinta dhawaaqa hadda waxay xaqiijisaa in xitaa isdiiwaangelinnada tijaabada ee hore ay dareemaan kuwo u gaar ah niche-ka.
 
-### Habaynta Domain-ka
+### Habaynta Domain-ka {#domain-configuration}
 
 Haddii aad isticmaalayso hosting provider la jaanqaadi kara, hadda habee domain mapping:
 
@@ -85,7 +85,7 @@ Haddii aad isticmaalayso hosting provider la jaanqaadi kara, hadda habee domain 
 
 Tani waxay xaqiijinaysaa in marka aan bilaabno abuurista templates iyo sites tijaabo ah casharka xiga, wax walba ay si dhammeystiran u shaqeeyaan.
 
-## Shabakadda FitSite Ilaa Hadda
+## Shabakadda FitSite Ilaa Hadda {#the-fitsite-network-so-far}
 
 Dhammaadka casharkan, waa kuwan waxa aad haysato:
 
@@ -99,7 +99,7 @@ Shabakadda FitSite
 └── Diyaar u ah templates site (casharka xiga)
 ```
 
-## Waxa Aan Ku Dhisnay Casharkan
+## Waxa Aan Ku Dhisnay Casharkan {#what-we-built-this-lesson}
 
 - **Rakibid WordPress Multisite shaqaynaysa** oo ku jirta habka subdomain
 - **Ultimate Multisite la rakibay** lana habeeyay iyadoo leh branding FitSite

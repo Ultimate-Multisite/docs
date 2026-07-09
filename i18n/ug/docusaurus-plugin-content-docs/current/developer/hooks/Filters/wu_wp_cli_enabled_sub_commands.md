@@ -4,11 +4,11 @@ title: سۈزگۈچ - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# سۈزگۈچ: wu_wp_cli_enabled_sub_commands
+# سۈزگۈچ: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 بۇ entity ئۈچۈن قايسى sub_commands قوزغىتىلىدىغانلىقىنى سۈزۈپ بېرىدۇ.
 
-## پارامېتىرلار
+## پارامېتىرلار {#parameters}
 
 | نامى | تۈرى | چۈشەندۈرۈش |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 | $command_base | `string` | root دىن كېيىنلا command دا ئىشلىتىلىدىغان ئاساس. |
 | $this | `\Base_Manager` | ئوبيېكت instance. |
 
-### باشلاپ
+### باشلاپ {#since}
 
 - 2.0.0
-### مەنبە
+### مەنبە {#source}
 
 [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) دا، 198-قۇردا ئېنىقلانغان.

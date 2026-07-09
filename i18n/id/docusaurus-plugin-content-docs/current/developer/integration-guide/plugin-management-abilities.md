@@ -3,11 +3,11 @@ title: Kemampuan Manajemen Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kemampuan Manajemen Plugin
+# Kemampuan Manajemen Plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 dilengkapi dengan **7 kemampuan manajemen plugin** yang dapat dipanggil oleh asisten AI selama percakapan. Kemampuan-kemampuan ini memberikan kontrol programatik atas plugin WordPress yang diinstal melalui [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Ikhtisar Kemampuan
+## Ikhtisar Kemampuan {#abilities-overview}
 
 | Kemampuan | Slug | Deskripsi |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 dilengkapi dengan **7 kemampuan manajemen plugin** yang d
 | Install Plugin | `install_plugin` | Menerapkan plugin yang berada di sandbox ke direktori plugin WordPress yang aktif. |
 | Activate Plugin | `activate_plugin` | Mengaktifkan plugin yang berada di sandbox dalam lingkungan sandbox wp-env. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Plugin installer menangani operasi sistem file saat menerapkan atau menghapus plugin. Perilaku utamanya meliputi:
 
@@ -28,7 +28,7 @@ Plugin installer menangani operasi sistem file saat menerapkan atau menghapus pl
 - **Pembaruan (Update)**: Mengganti file plugin yang sudah ada. Plugin akan dinonaktifkan sebelum penulisan untuk menghindari kesalahan status parsial.
 - **Hapus berdasarkan slug**: Menemukan direktori plugin berdasarkan slug, menonaktifkannya di semua situs, lalu menghapus direktori tersebut.
 
-### Mendaftarkan Handler Instalasi Kustom
+### Mendaftarkan Handler Instalasi Kustom {#registering-a-custom-install-handler}
 
 Anda dapat menyambungkan (hook) siklus hidup instalasi menggunakan actions `gratis_ai_plugin_installer_before_install` dan `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 Kemampuan didaftarkan melalui **plugin ecosystem registry**. Registry ini memetakan slug kemampuan ke kelas handler-nya dan mengeksposnya ke tool dispatcher agen AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integrasi HookScanner
+## Integrasi HookScanner {#hookscanner-integration}
 
 Kemampuan `create_plugin` dan `update_plugin` secara otomatis menjalankan **HookScanner** terhadap kode yang baru dihasilkan. HookScanner mengembalikan daftar hook action dan filter WordPress yang didaftarkan oleh plugin tersebut.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner secara otomatis melewati direktori `vendor/` dan `node_modules/`.
 
-## Arsitektur Job Asinkron (Async Job)
+## Arsitektur Job Asinkron (Async Job) {#async-job-architecture}
 
 Operasi plugin yang berjalan lama (menghasilkan, menginstal) dikirim sebagai **job asinkron** dengan pelacakan progres langsung. Antarmuka chat AI akan melakukan polling untuk progres dan mengirimkan pembaruan status kepada pengguna:
 

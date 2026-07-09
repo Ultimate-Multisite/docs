@@ -4,11 +4,11 @@ title: Шүүлтүүр - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filter: wu_add_product_setup_fee_line_item
+# Filter: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
 
 Хөгжүүлэгчдэд суурилуулалтын хураамжийн мөрийн зүйлд өөрчлөлт хийхийг зөвшөөрнө.
 
-## Параметрүүд
+## Параметрүүд {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 7175266054e611752e49e762b103e858
 | $product | `\WP_Ultimo\Models\Product` | Суурилуулалтын хураамжтай холбоотой бүтээгдэхүүн. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | Сагсны объект. |
 
-### Хойш
+### Хойш {#since}
 
 - 2.1
-### Эх сурвалж
+### Эх сурвалж {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790)-д 1790-р мөрөнд тодорхойлсон
 
 
-## Буцаах
+## Буцаах {#returns}

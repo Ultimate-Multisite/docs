@@ -3,13 +3,13 @@ title: 在 Closte 上设置 Sunrise 常量
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# 在 Closte 上将 Sunrise 常量设置为 true
+# 在 Closte 上将 Sunrise 常量设置为 true {#setting-the-sunrise-constant-to-true-on-closte}
 
 出于安全原因，一些托管服务提供商会锁定 wp-config.php。这意味着 Ultimate Multisite 无法自动编辑该文件，以加入使域名映射和其他功能正常工作所需的常量。Closte 就是这样的托管服务提供商之一。
 
 不过，Closte 提供了一种安全地向 wp-config.php 添加常量的方法。你只需按照以下步骤操作：
 
-## 在 Closte dashboard 上
+## 在 Closte dashboard 上 {#on-the-closte-dashboard}
 
 首先，[登录你的 Closte account](https://app.closte.com/)，点击 Sites 菜单项，然后点击你当前正在处理的网站上的 Dashboard 链接：
 

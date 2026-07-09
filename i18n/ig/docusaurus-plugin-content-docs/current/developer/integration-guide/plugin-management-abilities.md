@@ -3,11 +3,11 @@ title: Ikike Njikwa Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ikike Njikwa Ngwa Mgbakwunye
+# Ikike Njikwa Ngwa Mgbakwunye {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 na-abịa na **ikike njikwa ngwa mgbakwunye 7** nke onye enyemaka AI nwere ike ịkpọ n’oge mkparịta ụka. Ikike ndị a na-enye njikwa site na mmemme n’elu ngwa mgbakwunye WordPress etinyere site na [Usoro Onye Nrụpụta Ngwa Mgbakwunye na Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Nchịkọta Ikike
+## Nchịkọta Ikike {#abilities-overview}
 
 | Ikike | Slug | Nkọwa |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 na-abịa na **ikike njikwa ngwa mgbakwunye 7** nke onye 
 | Wụnye Ngwa Mgbakwunye | `install_plugin` | Na-ebunye ngwa mgbakwunye sandbox gaa na ndekọ ngwa mgbakwunye WordPress dị ndụ. |
 | Mee Ka Ngwa Mgbakwunye Rụọ Ọrụ | `activate_plugin` | Na-eme ka ngwa mgbakwunye sandbox rụọ ọrụ n’ime gburugburu sandbox wp-env. |
 
-## API Onye Wụnye Ngwa Mgbakwunye
+## API Onye Wụnye Ngwa Mgbakwunye {#plugin-installer-api}
 
 Onye wụnye ngwa mgbakwunye na-elekọta ọrụ sistemụ faịlụ mgbe a na-ebunye ma ọ bụ na-ewepụ ngwa mgbakwunye. Omume ndị bụ isi:
 
@@ -28,7 +28,7 @@ Onye wụnye ngwa mgbakwunye na-elekọta ọrụ sistemụ faịlụ mgbe a na-
 - **Mmelite**: Na-eji dochie faịlụ ngwa mgbakwunye dị ugbu a. Na-eme ka ngwa mgbakwunye kwụsị ọrụ tupu ide ihe iji zere njehie ọnọdụ na-ezughị ezu.
 - **Ihichapụ site na slug**: Na-achọta ndekọ ngwa mgbakwunye site na slug, na-eme ka ọ kwụsị ọrụ n’ofe saịtị niile, mgbe ahụ wepụ ndekọ ahụ.
 
-### Idebanye Handler Nwụnye Omenala
+### Idebanye Handler Nwụnye Omenala {#registering-a-custom-install-handler}
 
 Ị nwere ike iji `gratis_ai_plugin_installer_before_install` na `gratis_ai_plugin_installer_after_install` actions banye n’ime usoro ndụ nwụnye:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ndebanye Ecosystem
+## Ndebanye Ecosystem {#ecosystem-registry}
 
 A na-edebanye ikike site na **ndebanye ecosystem ngwa mgbakwunye**. Ndebanye ahụ na-ejikọta slugs ikike na klas handler ha ma mee ka ha pụta nye onye nkesa ngwá ọrụ nke AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Njikọta HookScanner
+## Njikọta HookScanner {#hookscanner-integration}
 
 Ikike `create_plugin` na `update_plugin` na-agba **HookScanner** na-akpaghị aka megide koodu emepụtara ọhụrụ. HookScanner na-eweghachite ndepụta hooks action na filter WordPress nke ngwa mgbakwunye debanyere.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner na-awụpụ ndekọ `vendor/` na `node_modules/` na-akpaghị aka.
 
-## Nhazi Ọrụ Async
+## Nhazi Ọrụ Async {#async-job-architecture}
 
 A na-eziga ọrụ ngwa mgbakwunye na-ewe ogologo oge (mepụta, wụnye) dị ka **ọrụ async** nwere nsuso ọganihu dị ndụ. Interface nkata AI na-ajụ maka ọganihu ma na-ebuga mmelite ọnọdụ nye onye ọrụ:
 

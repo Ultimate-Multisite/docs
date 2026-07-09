@@ -3,15 +3,15 @@ title: 'Phunziro 14: Chotsatira ndi chiyani'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Phunziro 14: Zomwe Zikubwera Kenako
+# Phunziro 14: Zomwe Zikubwera Kenako {#lesson-14-what-comes-next}
 
 Mwamanga nsanja ya webusayiti ya msika wapadera kuyambira pachiyambi. FitSite ili live, ikutumikira ma situdiyo a fitness, ndipo ikupanga ndalama zobwerezabwereza. Phunziro lomalizali likuyang'ana komwe mungapite kuchokera pano.
 
-## Pomwe Tidasiya
+## Pomwe Tidasiya {#where-we-left-off}
 
 FitSite ndi bizinesi yomwe ikuyenda yokhala ndi makasitomala, ntchito, ndi njira yakukula. Tsopano tikuganiza za zomwe zikubwera kenako.
 
-## Netiweki Yonse ya FitSite
+## Netiweki Yonse ya FitSite {#the-complete-fitsite-network}
 
 Nazi zonse zomwe tinamanga m'maphunziro 14:
 
@@ -46,11 +46,11 @@ FitSite Network (Yonse)
     └── Roadmap yomanga timu
 ```
 
-## Njira 1: Lowani Mozama mu Msika Wanu Wapadera
+## Njira 1: Lowani Mozama mu Msika Wanu Wapadera {#option-1-go-deeper-in-your-niche}
 
 Musanakulire ku misika yapadera yatsopano, ganizirani kulowa mozama mu fitness:
 
-### Misika Yapadera Yaing'ono
+### Misika Yapadera Yaing'ono {#sub-niches}
 
 - **Ma situdiyo a yoga** -- ma template apadera okhala ndi meditation, retreat, ndi zinthu za workshop
 - **CrossFit boxes** -- kutsata WOD, zotsatira za mpikisano, zinthu za gulu
@@ -59,7 +59,7 @@ Musanakulire ku misika yapadera yatsopano, ganizirani kulowa mozama mu fitness:
 
 Msika wapadera waung'ono uliwonse ungakhale ndi ma template ake ndi mwina brand yake, zonse zikuyenda pa netiweki yomweyo ya Ultimate Multisite.
 
-### Zinthu za Premium
+### Zinthu za Premium {#premium-features}
 
 Mangani zinthu zomwe ma situdiyo a fitness adzalipira zowonjezera:
 
@@ -68,14 +68,14 @@ Mangani zinthu zomwe ma situdiyo a fitness adzalipira zowonjezera:
 - **Ma template a blog ya fitness** -- mapangidwe a content okonzedweratu a content marketing ya fitness
 - **Kulumikizana ndi social media** -- kutumiza zokha ndandanda za makalasi ndi zosintha
 
-### Kukula kwa Malo
+### Kukula kwa Malo {#geographic-expansion}
 
 Ngati munayamba kwanuko, kulirani ku:
 
 - Mizinda ina m'dziko lanu
 - Mayiko ena (gwiritsani ntchito [localization features](/user-guide/localization/translating) za Ultimate Multisite kuti muthandizire zilankhulo zambiri)
 
-## Njira 2: Kulira ku Misika Yapadera Yapafupi
+## Njira 2: Kulira ku Misika Yapadera Yapafupi {#option-2-expand-to-adjacent-niches}
 
 Njira yomwe munatsatira ya ma situdiyo a fitness imagwira ntchito pa msika wapadera uliwonse. Msika wanu wapadera wachiwiri ndi wosavuta chifukwa muli kale ndi:
 
@@ -83,7 +83,7 @@ Njira yomwe munatsatira ya ma situdiyo a fitness imagwira ntchito pa msika wapad
 - Chidziwitso cha ntchito
 - Playbook yotsimikiziridwa
 
-### Misika Yapadera Yapafupi ndi Fitness
+### Misika Yapadera Yapafupi ndi Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness ndi spa** -- othandizira massage, ma day spa, malo a wellness
 - **Makalabu a sports** -- matimu a amateur sports, leagues, makalabu a zosangalatsa
@@ -91,7 +91,7 @@ Njira yomwe munatsatira ya ma situdiyo a fitness imagwira ntchito pa msika wapad
 
 Izi zimagawana omvera ofanana ndi fitness, choncho marketing yanu ndi ma partnership anu angapitirire.
 
-### Misika Yapadera Yatsopano Kwathunthu
+### Misika Yapadera Yatsopano Kwathunthu {#completely-new-niches}
 
 Gwiritsani ntchito framework ya Phunziro 2 kuti muwunike msika wapadera uliwonse:
 
@@ -108,7 +108,7 @@ Msika wapadera watsopano uliwonse umafunikira:
 
 Zomangamanga za nsanja, billing, ndi njira za ntchito zimakhala chimodzimodzi.
 
-## Njira 3: Mangani Nsanja ya Nsanja
+## Njira 3: Mangani Nsanja ya Nsanja {#option-3-build-a-platform-of-platforms}
 
 Mukakhala pa scale, mutha kuyendetsa ma brand angapo a misika yapadera pa netiweki imodzi ya Ultimate Multisite:
 
@@ -118,11 +118,11 @@ Mukakhala pa scale, mutha kuyendetsa ma brand angapo a misika yapadera pa netiwe
 
 Brand iliyonse ili ndi ma template ake, ma plan ake, ndi marketing yake, koma amagawana zomangamanga, billing, ndi njira za ntchito. Apa ndi pomwe zachuma za Ultimate Multisite zimakhala zamphamvu -- nsanja imodzi, ma vertical ambiri.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Kuti musiyanitse misika yapadera kwathunthu, ganizirani [Multi-Network addon](/addons/multinetwork) yomwe imakulolani kuyendetsa ma netiweki angapo a WordPress kuchokera pa installation imodzi.
 
-## Njira 4: Gulitsani Bizinesi
+## Njira 4: Gulitsani Bizinesi {#option-4-sell-the-business}
 
 Nsanja ya webusayiti ya msika wapadera yokhala ndi ndalama zobwerezabwereza, churn yochepa, ndi malo omveka bwino pamsika ndi chuma chamtengo wapatali. Mabizinesi a SaaS nthawi zambiri amagulitsidwa pa 3-5x ndalama zapachaka.
 
@@ -134,7 +134,7 @@ FitSite yokhala ndi makasitomala 200 pa $89 ARPU:
 
 Izi si zotsatira zotsimikizika, koma ndi zenizeni kwa nsanja ya msika wapadera yoyendetsedwa bwino.
 
-## Zomwe Mwaphunzira
+## Zomwe Mwaphunzira {#what-you-have-learned}
 
 Kosi iyi yakuphunzitsani njira yobwerezedwa:
 
@@ -150,7 +150,7 @@ Kosi iyi yakuphunzitsani njira yobwerezedwa:
 
 Msika wapadera ndi strategy. Nsanja ndi chida. Ultimate Multisite imapangitsa chidacho kukhala chotheka. Kumvetsetsa kwanu msika wapadera kumapangitsa kukhala kwamtengo wapatali.
 
-## Yambani Kumanga
+## Yambani Kumanga {#start-building}
 
 Ngati munatsatira limodzi ndi FitSite, muli ndi platform yogwira ntchito. Ngati munawerenga kuti mupeze niche yanu, bwererani ku [Phunziro 2: Kusankha Niche Yanu](lesson-2-picking-your-niche) ndipo yambani ndondomekoyi pa vertical yomwe mwasankha.
 

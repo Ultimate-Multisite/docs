@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM آپ کے WordPress multisite network میں براؤزر کی مقامی AI inference کی سہولت لاتا ہے۔ یہ WebLLM اور MLC engine کا استعمال کرتے ہوئے بڑے زبان کے ماڈلز (large language models) کو مکمل طور پر براؤزر میں چلاتا ہے — اس کے لیے کسی API key، بیرونی کال، یا صارف کے ڈیوائس سے ڈیٹا باہر بھیجنے کی ضرورت نہیں ہے۔
 
-## اہم خصوصیات (Key Features)
+## اہم خصوصیات (Key Features) {#key-features}
 
 - **براؤزر پر inference**: LLM WebLLM/MLC کے ذریعے براہ راست وزٹر کے براؤزر میں چلتا ہے — کسی سرور GPU کی ضرورت نہیں
 - **فلٹنگ چیٹ وِجٹ (Floating chat widget)**: لاگ ان صارفین فرنٹ اینڈ سے براہ راست براؤزر-سائیڈ LLM کو پرامپٹ دے سکتے ہیں
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM آپ کے WordPress multisite network میں ب
 - **IndexedDB cache**: ماڈل ویٹ ڈاؤن لوڈ CDN ریڈائریکٹس سے بچ جاتے ہیں جو ڈیفالٹ Cache API پاتھ کو توڑ دیتے ہیں
 - **wpai filter integration**: `wpai_preferred_text_models` filter میں hook ہوتا ہے تاکہ AI Experiments فیچر، جب ترتیب دیا جائے تو براؤزر engine پر بھیج دیا جائے۔
 
-## ضروریات (Requirements)
+## ضروریات (Requirements) {#requirements}
 
 - WordPress 5.3 یا اس سے زیادہ
 - PHP 7.4 یا اس سے زیادہ
 - Ultimate Multisite plugin (active)
 - WebGPU سپورٹ والا براؤزر (Chrome 113+, Edge 113+, یا WebGPU کے ساتھ فعال Firefox Nightly)
 
-## تنصیب (Installation)
+## تنصیب (Installation) {#installation}
 
 1. ایڈآن فائلوں کو اپنے `/wp-content/plugins/` ڈائریکٹری میں اپ لوڈ کریں۔
 2. ورڈپریس میں 'Plugins' مینیو کے ذریعے پلگ ان کو فعال (Activate) کریں۔
 3. ایڈآن کو ترتیب دینے کے لیے **Ultimate Multisite → AI Connector** پر جائیں۔
 
-## فلوٹنگ چیٹ وِجٹ (Floating Chat Widget)
+## فلوٹنگ چیٹ وِجٹ (Floating Chat Widget) {#floating-chat-widget}
 
 یہ فلوٹنگ چیٹ وِجٹ کسی بھی لاگ ان صارف کو اس کے فرنٹ اینڈ سے براہ راست براؤزر-سائیڈ LLM کے ساتھ بات چیت کرنے کی اجازت دیتا ہے، بغیر اس صفحے کو چھوڑے جہاں وہ موجود ہے۔
 
-### یہ کیا کرتا ہے (What It Does)
+### یہ کیا کرتا ہے (What It Does) {#what-it-does}
 
 جب اسے فعال کیا جاتا ہے، تو لاگ ان صارفین کے لیے ہر فرنٹ-اینڈ صفحے کے کونے میں ایک چیٹ آئیکن ظاہر ہوتا ہے۔ آئیکن پر کلک کرنے سے ایک چیٹ پینل کھل جاتا ہے جہاں صارف پرامپٹ ٹائپ کر سکتا ہے اور مقامی طور پر چلنے والے WebLLM ماڈل سے جوابات حاصل کر سکتا ہے۔ چونکہ ماڈل مکمل طور پر براؤزر میں چلتا ہے، اس لیے جوابات نجی ہوتے ہیں اور کسی سرور سائیڈ پروسیسنگ کا تقاضا نہیں کرتے۔
 
-### ایڈمن-بار اسٹیٹس انڈیکیٹر (Admin-Bar Status Indicator)
+### ایڈمن-بار اسٹیٹس انڈیکیٹر (Admin-Bar Status Indicator) {#admin-bar-status-indicator}
 
 ورڈپریس ایڈمن بار میں ایک اسٹیٹس انڈیکیٹر شامل ہے جو WebLLM engine کی موجودہ حالت دکھاتا ہے:
 
@@ -56,7 +56,7 @@ Ultimate AI Connector for WebLLM آپ کے WordPress multisite network میں ب
 
 یہ انڈیکیٹر پیج کو دوبارہ لوڈ کیے بغیر حقیقی وقت میں اپ ڈیٹ ہوتا ہے۔
 
-### وِجٹ کو فعال یا غیر فعال کیسے کریں (How to Enable or Disable the Widget)
+### وِجٹ کو فعال یا غیر فعال کیسے کریں (How to Enable or Disable the Widget) {#how-to-enable-or-disable-the-widget}
 
 1. نیٹ ورک ایڈمن میں **Ultimate Multisite → AI Connector** پر جائیں۔
 2. **Connector** پینل تلاش کریں۔
@@ -65,17 +65,17 @@ Ultimate AI Connector for WebLLM آپ کے WordPress multisite network میں ب
 
 اگر نیٹ ورک ایڈمنسٹریٹر نے یہ صلاحیت دی ہے، تو وِجٹ کو سائٹ کے اپنے ایڈمن سے بھی سائٹ بہ بہ فعال یا غیر فعال کیا جا سکتا ہے۔
 
-## وِجٹ سیٹنگز (Widget Settings)
+## وِجٹ سیٹنگز (Widget Settings) {#widget-settings}
 
 **Ultimate Multisite → AI Connector** میں موجود Connector پینل میں فلوٹنگ چیٹ وِجٹ کے لیے درج ذیل سیٹنگز موجود ہیں:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 یہ پورے نیٹ ورک کے لیے چیٹ وِجٹ کو آن یا آف کرتا ہے۔ جب اسے غیر فعال کیا جاتا ہے، تو وِجٹ کسی بھی فرنٹ-اینڈ صفحے پر ظاہر نہیں ہوتا، چاہے صارف کا کردار کچھ بھی ہو۔
 
 **Default:** Off
 
-### Auto-Prompt Behaviour
+### Auto-Prompt Behaviour {#auto-prompt-behaviour}
 
 یہ کنٹرول کرتا ہے کہ کیا چیٹ وِجٹ صارف کے اسے کھولنے پر خود بخود کوئی پرامپٹ بھیجتا ہے۔
 
@@ -93,7 +93,7 @@ Ultimate AI Connector for WebLLM آپ کے WordPress multisite network میں ب
 
 **Default:** Disabled
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 Version 1.1.0 نے MLC engine کے لیے ایک SharedWorker runtime متعارف کرایا ہے۔ پہلے، ہر براؤزر ٹیب جو WebLLM استعمال کرتا تھا، ماڈل کی اپنی انسٹنس لوڈ کرتا تھا، جس سے GPU میموری کے لیے مقابلہ ہوتا تھا اور محدود VRAM والے ڈیوائسز پر کارکردگی کے مسائل پیدا ہوتے تھے۔
 
@@ -105,29 +105,29 @@ SharedWorker runtime کے ساتھ، ایک ٹیب engine host کے طور پر 
 
 SharedWorker صارفین کے لیے نظر نہیں آتا۔ ایڈمن-بار اسٹیٹس انڈیکیٹر ہمیشہ شیئر کردہ engine کی حالت کو ظاہر کرتا ہے، نہ کہ انفرادی ٹیب کو۔
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 یہ ایڈآن ایک `apiFetch` middleware انسٹال کرتا ہے جو WordPress REST API کی ان درخواستوں کو روکتا ہے جو AI Client SDK کے پیٹرن سے ملتی ہیں۔ سرور کو لوپ بیک HTTP درخواست بھیجنے کے بجائے، ان درخواستوں کو براہ راست SharedWorker میں چلنے والے مقامی WebLLM broker تک بھیج دیا جاتا ہے۔
 
 اس کا مطلب ہے کہ وہ پلگ انز اور تھیمز جو AI endpoints کو کال کرنے کے لیے معیاری WordPress `apiFetch` API استعمال کرتے ہیں، جب یہ دستیاب ہوتا ہے تو خود بخود براؤزر-سائیڈ ماڈل سے فائدہ اٹھائیں گے، جس کے لیے کسی کوڈ میں تبدیلی کی ضرورت نہیں ہے۔
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — WebLLM براؤزر engine کو ایک ترجیحی ٹیکسٹ ماڈل کے طور پر رجسٹر کریں۔ ایڈآن جب engine کو ترتیب دیا جاتا ہے اور دستیاب ہوتا ہے تو خود بخود اس فلٹر میں hook ہوتا ہے۔
 - `ultimate_webllm_widget_enabled` — کسی مخصوص صارف یا سیاق و سباق کے لیے وِجٹ کے فعال اسٹیٹ کو اووررائڈ کریں۔ `true` یا `false` واپس کریں۔
 - `ultimate_webllm_auto_prompt` — وِجٹ کو بھیجنے سے پہلے auto-prompt ٹیکسٹ کو تبدیل کریں۔ یہ پرامپٹ سٹرنگ اور موجودہ `WP_Post` آبجیکٹ وصول کرتا ہے۔
 
-## ٹرابل شوٹنگ (Troubleshooting)
+## ٹرابل شوٹنگ (Troubleshooting) {#troubleshooting}
 
-### چیٹ وِجٹ نظر نہیں آتا
+### چیٹ وِجٹ نظر نہیں آتا {#the-chat-widget-does-not-appear}
 
 - تصدیق کریں کہ صارف لاگ ان ہے — وِجٹ صرف تصدیق شدہ صارفین کو دکھایا جاتا ہے
 - چیک کریں کہ Connector panel میں **Enable floating chat widget** آن کیا گیا ہے
 - تصدیق کریں کہ صارف کا براؤزر WebGPU کو سپورٹ کرتا ہے (اوپر ضروریات دیکھیں)
 
-### ایڈمن-بار انڈیکیٹر "Error" دکھاتا ہے
+### ایڈمن-بار انڈیکیٹر "Error" دکھاتا ہے {#the-admin-bar-indicator-shows-error}
 
 براؤزر ڈویلپر کنسول (F12) کھولیں اور WebLLM سے متعلق غلطیوں کی تلاش کریں۔ عام وجوہات:
 
@@ -135,10 +135,10 @@ SharedWorker صارفین کے لیے نظر نہیں آتا۔ ایڈمن-بار
 - ماڈل ویٹ ڈاؤن لوڈ ناکام رہا — نیٹ ورک کنیکٹیویٹی چیک کریں اور براؤزر ڈویلپر ٹولز (Application → IndexedDB) میں IndexedDB کی کیش کو صاف کرنے کی کوشش کریں۔
 - کوئی براؤزر ایکسٹینشن SharedWorker کو بلاک کر رہا ہے
 
-### ماڈل ویٹ ہر بار ڈاؤن لوڈ ہوتا ہے
+### ماڈل ویٹ ہر بار ڈاؤن لوڈ ہوتا ہے {#model-weights-download-every-time}
 
 ایڈآن ماڈل ویٹ کو محفوظ رکھنے کے لیے IndexedDB کو کیش بیک اینڈ کے طور پر استعمال کرتا ہے تاکہ CDN ریڈائریکٹس سے بچا جا سکے۔ اگر ویٹ ہر وزٹ پر دوبارہ ڈاؤن لوڈ ہو رہے ہیں، تو چیک کریں کہ آیا IndexedDB کو براؤزر کی پرائیویسی سیٹنگ یا ایکسٹینشن کے ذریعے صاف کیا جا رہا ہے۔
 
-## Changelog
+## Changelog {#changelog}
 
 مکمل ورژن ہسٹری کے لیے [Changelog](./changelog) دیکھیں۔

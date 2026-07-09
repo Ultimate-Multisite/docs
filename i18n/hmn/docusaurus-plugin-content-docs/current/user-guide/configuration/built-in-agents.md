@@ -3,11 +3,11 @@ title: Cov Agent uas twb muaj nrog
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Cov Agent Uas Muaj Los Nrog
+# Cov Agent Uas Muaj Los Nrog {#built-in-agents}
 
 Gratis AI Agent v1.9.0 los nrog tsib tus agent uas muaj los nrog, txhua tus twb npaj ua ntej nrog ib pawg cuab yeej uas tsom rau ib yam haujlwm, ib qho system prompt uas kho kom haum, thiab cov lus qhia pib uas phim cov haujlwm nquag ua hauv thaj chaw ntawd. Thaum hloov ntawm ib tus agent mus rau lwm tus, nws hloov yam uas tus assistant ua tau thiab txoj kev nws teb — yam tsis tas koj teeb tsa dab tsi li. Superdav AI Agent v1.18.0 tuaj yeem ntxiv cov cuab yeej uas paub txog schedule, cov reminder records, approval gates, thiab SMS notifications rau cov workflow no thaum cov integrations uas cuam tshuam twb teeb tsa lawm.
 
-## Agent Yog Dab Tsi?
+## Agent Yog Dab Tsi? {#what-is-an-agent}
 
 Txhua tus agent yog ib qho configuration profile muaj npe uas sib xyaw:
 
@@ -15,7 +15,7 @@ Txhua tus agent yog ib qho configuration profile muaj npe uas sib xyaw:
 - **System prompt** — cov lus qhia uas teeb tus agent lub suab, yam tseem ceeb, thiab cov kev txwv
 - **Cov lus qhia** — cov prompt uas twb sau ua ntej, pom hauv chat interface los pab koj pib sai
 
-## Nkag Mus Rau Agent Picker
+## Nkag Mus Rau Agent Picker {#accessing-the-agent-picker}
 
 1. Qhib lub **Gratis AI Agent** panel hauv WordPress admin sidebar.
 2. Nyem lub **agent icon** nyob rau sab laug saum toj ntawm chat header (lub icon hloov kom qhia tus agent uas tab tom siv).
@@ -24,9 +24,9 @@ Txhua tus agent yog ib qho configuration profile muaj npe uas sib xyaw:
 
 Koj kuj hloov tau agents thaum tseem tab tom sib tham — tus agent tshiab lub system prompt yuav pib siv txij ntawm zaj lus tom ntej.
 
-## Tsib Tus Agent Uas Muaj Los Nrog
+## Tsib Tus Agent Uas Muaj Los Nrog {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Tsom rau:** Tsim thiab kho posts, pages, thiab contact forms.
 
@@ -47,7 +47,7 @@ Koj kuj hloov tau agents thaum tseem tab tom sib tham — tus agent tshiab lub s
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Tsom rau:** Tsim website txij pib mus txog kawg los ntawm ib prompt xwb.
 
@@ -70,7 +70,7 @@ Koj kuj hloov tau agents thaum tseem tab tom sib tham — tus agent tshiab lub s
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Tsom rau:** Kev kho kom zoo nkauj pom qhov muag — colours, typography, CSS, thiab block patterns.
 
@@ -87,7 +87,7 @@ Koj kuj hloov tau agents thaum tseem tab tom sib tham — tus agent tshiab lub s
 - *Nqa screenshot ntawm homepage thiab qhia kuv seb koj yuav txhim kho dab tsi.*
 - *Tsim ib reusable hero block pattern nrog full-width background image thiab centred heading.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Tsom rau:** Nrhiav, install, thiab tswj WordPress plugins.
 
@@ -105,7 +105,7 @@ Koj kuj hloov tau agents thaum tseem tab tom sib tham — tus agent tshiab lub s
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Tsom rau:** Teb cov lus nug txog site content, settings, thiab WordPress configuration.
 
@@ -124,7 +124,7 @@ Koj kuj hloov tau agents thaum tseem tab tom sib tham — tus agent tshiab lub s
 
 ---
 
-## Kev Txuas Automation ntawm Superdav
+## Kev Txuas Automation ntawm Superdav {#superdav-automation-integrations}
 
 Thaum Superdav AI Agent v1.18.0 cov kev txuas raug teeb tsa lawm, cov agent uas muaj nrog tuaj yeem koom rau hauv cov workflow automation uas paub txog sij hawm thiab muaj kev nyab xeeb dua:
 
@@ -138,11 +138,11 @@ Workflow uas pom zoo: thov kom agent npaj cov lus lossis kev ua, tshuaj xyuas ap
 
 ---
 
-## Kho Agents raws li xav tau
+## Kho Agents raws li xav tau {#customising-agents}
 
 Txhua tus built-in agent tuaj yeem txuas ntxiv lossis hloov los ntawm `gratis_ai_agent_agents` filter.
 
-### Ntxiv custom system prompt rau ib tus agent uas twb muaj lawm
+### Ntxiv custom system prompt rau ib tus agent uas twb muaj lawm {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Sau npe agent tshiab
+### Sau npe agent tshiab {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Tus agent tshiab tshwm hauv Agent Picker tam sim ntawd tom qab filter khiav.
 
-### Tshem ib tus built-in agent
+### Tshem ib tus built-in agent {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -3,11 +3,11 @@ title: Ħażna fil-cache tal-Prompt Konxja mill-Fornitur
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Caching ta' prompts konxju tal-fornitur
+# Caching ta' prompts konxju tal-fornitur {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 jintroduċi **caching ta' prompts konxju tal-fornitur**, li jottimizza l-ispejjeż tal-API u l-latenza billi jaħżen prompts fil-cache bejn fornituri LLM differenti. Kull fornitur għandu mekkaniżmi u konfigurazzjonijiet differenti ta' caching.
 
-## Ħarsa ġenerali
+## Ħarsa ġenerali {#overview}
 
 Il-caching ta' prompts jippermettilek:
 
@@ -23,11 +23,11 @@ Fornituri differenti jimplimentaw il-caching b'modi differenti:
 - **OpenRouter**: Caching speċifiku għall-fornitur
 - **Vertex Anthropic**: Caching ta' prompts b'kontroll tal-cache
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini jipprovdi ġestjoni espliċita tal-cache permezz tal-API `cachedContents`.
 
-### Konfigurazzjoni
+### Konfigurazzjoni {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Ħolqien ta' prompt fil-cache
+### Ħolqien ta' prompt fil-cache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Użu ta' prompt fil-cache
+### Użu ta' prompt fil-cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Ċiklu tal-ħajja tal-cache
+### Ċiklu tal-ħajja tal-cache {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### L-aħjar prattiki għal Gemini
+### L-aħjar prattiki għal Gemini {#best-practices-for-gemini}
 
 - **Issettja TTL xieraq**: Ibbilanċja l-iffrankar fl-ispejjeż kontra l-qedem tal-cache
 - **Aħżen fil-cache prompts tas-sistema**: Erġa' uża l-istess prompt tas-sistema bejn it-talbiet
 - **Immonitorja l-użu tal-cache**: Segwi liema caches jintużaw l-aktar
 - **Naddaf caches skaduti**: Ħassar perjodikament caches mhux użati
 
-## Azure OpenAI: Caching ta' prompts
+## Azure OpenAI: Caching ta' prompts {#azure-openai-prompt-caching}
 
 Azure OpenAI jappoġġja caching ta' prompts b'ġestjoni awtomatika tat-TTL.
 
-### Konfigurazzjoni
+### Konfigurazzjoni {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Attivazzjoni tal-caching
+### Attivazzjoni tal-caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Headers tal-cache
+### Headers tal-cache {#cache-headers}
 
 Azure OpenAI juża headers HTTP għall-kontroll tal-cache:
 
@@ -152,7 +152,7 @@ Valuri appoġġjati:
 - `no_cache`: Taħżinx din it-talba fil-cache
 - `no_store`: Taħżinx fil-cache u terġax tuża
 
-### Monitoraġġ tal-użu tal-cache
+### Monitoraġġ tal-użu tal-cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### L-aħjar prattiki għal Azure OpenAI
+### L-aħjar prattiki għal Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Uża prompts konsistenti**: Prompts identiċi jibbenefikaw mill-caching
 - **Issettja TTL raġonevoli**: Ibbilanċja l-ispiża kontra l-freskezza
 - **Immonitorja l-metriċi tal-cache**: Segwi l-ħolqien tal-cache kontra l-hits
 - **Agħmel batch ta' talbiet simili**: Gruppja t-talbiet biex timmassimizza l-hits tal-cache
 
-## OpenRouter: Caching speċifiku għall-fornitur
+## OpenRouter: Caching speċifiku għall-fornitur {#openrouter-provider-specific-caching}
 
 OpenRouter jappoġġja caching permezz ta' fornituri sottostanti (OpenAI, Anthropic, eċċ.).
 
-### Konfigurazzjoni
+### Konfigurazzjoni {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Użu tal-caching ta' OpenRouter
+### Użu tal-caching ta' OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Għażliet speċifiċi għall-fornitur
+### Għażliet speċifiċi għall-fornitur {#provider-specific-options}
 
 Fornituri differenti għandhom mekkaniżmi differenti ta' caching:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### L-aħjar prattiki għal OpenRouter
+### L-aħjar prattiki għal OpenRouter {#best-practices-for-openrouter}
 
 - **Kun af il-caching tal-fornitur tiegħek**: Kull fornitur għandu mekkaniżmi differenti
 - **Ittestja l-imġiba tal-caching**: Ivverifika li l-caching jaħdem mal-fornitur magħżul tiegħek
 - **Immonitorja l-ispejjeż**: Segwi l-iffrankar mill-caching
 - **Uża mudelli konsistenti**: Il-bdil tal-mudelli jkisser il-hits tal-cache
 
-## Vertex Anthropic: Caching ta' prompts b'kontroll tal-cache
+## Vertex Anthropic: Caching ta' prompts b'kontroll tal-cache {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) jappoġġja caching ta' prompts b'kontroll espliċitu tal-cache.
 
-### Konfigurazzjoni
+### Konfigurazzjoni {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Użu ta' Vertex Anthropic Caching
+### Użu ta' Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Tipi ta' Kontroll tal-Cache
+### Tipi ta' Kontroll tal-Cache {#cache-control-types}
 
 - **ephemeral**: Cache għat-tul tat-talba (default)
 - **persistent**: Cache fuq diversi talbiet (jekk appoġġjat)
 
-### Monitoraġġ tal-Użu tal-Cache
+### Monitoraġġ tal-Użu tal-Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### L-Aħjar Prattiki għal Vertex Anthropic
+### L-Aħjar Prattiki għal Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Uża caching ephemeral**: Tajjeb għal caching ta' sessjoni waħda
 - **Issettja max_tokens b'mod xieraq**: Ibbilanċja d-daqs tal-cache kontra l-ispiża
 - **Immonitorja l-metriċi tal-cache**: Segwi l-effettività tal-cache
 - **Ittestja bit-tagħbija tax-xogħol tiegħek**: Ivverifika li l-caching jibbenefika l-każ ta' użu tiegħek
 
-## Strateġija ta' Caching bejn il-Providers
+## Strateġija ta' Caching bejn il-Providers {#cross-provider-caching-strategy}
 
-### Konfigurazzjoni Unifikata
+### Konfigurazzjoni Unifikata {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Sejbien tal-Provider
+### Sejbien tal-Provider {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Strateġija ta' Riżerva
+### Strateġija ta' Riżerva {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Ottimizzazzjoni tal-Ispejjeż
+## Ottimizzazzjoni tal-Ispejjeż {#cost-optimization}
 
-### Ikkalkula t-Tfaddil
+### Ikkalkula t-Tfaddil {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Suġġerimenti għall-Ottimizzazzjoni
+### Suġġerimenti għall-Ottimizzazzjoni {#optimization-tips}
 
 - **Aħżen fil-cache prompts kbar tas-sistema**: L-akbar tfaddil fl-ispejjeż
 - **Erġa' uża l-kuntest**: Aħżen fil-cache dokumenti ta' kuntest użati ta' spiss
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Immonitorja l-effettività tal-cache**: Segwi t-tfaddil reali
 - **Aġġusta t-TTL**: Ibbilanċja l-ispiża kontra l-freskezza
 
-## Soluzzjoni tal-Problemi
+## Soluzzjoni tal-Problemi {#troubleshooting}
 
-### Il-cache mhux qed jintuża
+### Il-cache mhux qed jintuża {#cache-not-being-used}
 
 - Ivverifika li l-caching huwa attivat fil-konfigurazzjoni
 - Iċċekkja li l-prompts huma identiċi (il-caching jeħtieġ qbil eżatt)
 - Ivverifika li l-cache ma skadiex
 - Iċċekkja l-limiti tal-cache speċifiċi għall-provider
 
-### Il-ħolqien tal-cache qed ifalli
+### Il-ħolqien tal-cache qed ifalli {#cache-creation-failing}
 
 - Ivverifika li d-daqs tal-cache jinsab fil-limiti tal-provider
 - Iċċekkja li s-sintassi tal-kontroll tal-cache hija korretta
 - Żgura li l-provider jappoġġja caching għall-mudell tiegħek
 - Irrevedi d-dokumentazzjoni tal-provider għal-limitazzjonijiet
 
-### Spejjeż mhux mistennija
+### Spejjeż mhux mistennija {#unexpected-costs}
 
 - Immonitorja l-ħolqien tal-cache kontra t-tokens tal-qari tal-cache
 - Ivverifika li l-cache tassew qed jintuża
 - Iċċekkja għal cache misses minħabba varjazzjonijiet fil-prompt
 - Ikkunsidra li taġġusta t-TTL jew l-istrateġija tal-cache
 
-## Tqabbil tal-Providers
+## Tqabbil tal-Providers {#provider-comparison}
 
 | Karatteristika | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Tnaqqis fl-ispiża | 90% | 90% | Dipendenti fuq il-provider | 90% |
 | Monitoraġġ | Dettaljat | Permezz ta' metriċi | Dipendenti fuq il-provider | Permezz tal-użu |
 
-## Passi Li Jmiss
+## Passi Li Jmiss {#next-steps}
 
 1. **Agħżel il-provider tiegħek**: Agħżel skont il-bżonnijiet tiegħek
 2. **Ikkonfigura l-caching**: Issettja caching speċifiku għall-provider

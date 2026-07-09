@@ -3,11 +3,11 @@ title: Prasības
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Uzlabo multisaitas prasības
+# Uzlabo multisaitas prasības {#ultimate-multisite-requirements}
 
 Pirmo jautājuma, ko varat uzdot savam pirms iepirkumu Ultimate Multisite, ir, kas prasības mūsu plāksmes veikšanai? Labi, laipnieku, Ultimate Multisite veikt spēk vai tikai dažas pamata prasības: **domēns**, laba **hostings pakalpojuma sniedzēja** un WordPress **Multisaitas** instalācija. Tas ir viss, kas jums nepieciešams!
 
-## Domēns
+## Domēns {#domain-name}
 
 Pirms sākamies par domēnu nosaukumu.
 
@@ -17,7 +17,7 @@ Mums plāksme sniedz abonentus pakalpojumu, maksājumu vākšanu, kasina formāt
 
 Kuru nismu jūs izvēlaties, var to pārvaldīt mūsu plāksmes palīdzību, cik vien tas ir veikt veidājami lapas kā pakalpojumu! Nodrošinieties, ka izvēlaties domēnu nosaukumu, kas atbilst jūsu biznesa plānam.
 
-## Hostings sniedzējs
+## Hostings sniedzējs {#hosting-provider}
 
 Tagad, kad jums ir saulains domēns nosaukums, kas attēlo jūsu nismu un biznesu, jums būs jāizvēlas laba vebhostings uzņēmums, lai hostētu savu tīklu ar Ultimate Multisite. Tirīt ir dažas labas iespējas tirgū. Noteikumi sniedzēji labi integrējas ar Ultimate Multisite, kas var būt kritisks faktors atkarībā no tā, ko plānojat izveidot.
 
@@ -25,7 +25,7 @@ Ultimate Multisite tiekasnība strādā jebkurā hostings pakalpojuma piedāvāt
 
 Kopas serveru specifikācijām nav konkrētu formulu, jo tas atkarīs no tiem funkcijām un lietojumiem, ko jūs piedāvājat un jūsu tīkla izmēram. Dalīts hostings var būt labdzi skaits sākuma, bet kad jūsu tīkls sāks augt, jums, iespējams, būs nepieciešams dedīts VPS (Virtual Private Server).
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Tagad atspējiet nopietni apspriesties par WordPress Multisite instalāciju.
 

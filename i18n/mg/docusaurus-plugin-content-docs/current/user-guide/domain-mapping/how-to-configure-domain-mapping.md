@@ -3,17 +3,17 @@ title: Ahoana ny fanefena ny Fampifandraisana sehatra
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Ahoana ny fanamboarana ny fampifandraisana anaran-tsehatra (v2)
+# Ahoana ny fanamboarana ny fampifandraisana anaran-tsehatra (v2) {#how-to-configure-domain-mapping-v2}
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka ny Ultimate Multisite kinova 2.x.**_
 
 Iray amin'ireo endri-javatra mahery indrindra amin'ny tambajotra premium ny fahafahana manolotra amin'ny mpanjifantsika safidy hampifandray anaran-tsehatra ambaratonga ambony amin'ny tranonkalany. Raha ny marina, iza no miseho ho matihanina kokoa: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) sa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Izany no antony anoloran'ny Ultimate Multisite io endri-javatra io efa tafiditra ao anatiny, tsy mila mampiasa plugin avy amin'ny antoko fahatelo.
 
-## Inona ny fampifandraisana anaran-tsehatra?
+## Inona ny fampifandraisana anaran-tsehatra? {#whats-domain-mapping}
 
 Araka ny asehon'ny anarany, ny fampifandraisana anaran-tsehatra dia ny fahafahana atolotry ny Ultimate Multisite handray fangatahana ho an'ny anaran-tsehatra namboarina manokana ary hampifandray izany fangatahana izany amin'ilay tranonkala mifanaraka aminy ao amin'ny tambajotra izay manana io anaran-tsehatra manokana io.
 
-### Ahoana ny fametrahana ny fampifandraisana anaran-tsehatra amin'ny tambajotra Ultimate Multisite-nao
+### Ahoana ny fametrahana ny fampifandraisana anaran-tsehatra amin'ny tambajotra Ultimate Multisite-nao {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
 Mila fanamboarana kely avy aminao ny fampifandraisana anaran-tsehatra mba hiasa. Soa ihany fa ataon'ny Ultimate Multisite ho mandeha ho azy ny asa sarotra ho anao, ka afaka mahafeno mora foana ireo fepetra takiana ianao.
 
@@ -45,7 +45,7 @@ Saingy alohan'ny hanombohanao mampifandray ny anaran-tsehatra namboarina manokan
 
 ###
 
-### Fiantohana fa voarindra tsara ny fikirana DNS an'ilay anaran-tsehatra
+### Fiantohana fa voarindra tsara ny fikirana DNS an'ilay anaran-tsehatra {#making-sure-the-domain-dns-settings-are-properly-configured}
 
 Mba hiasan'ny fampifandraisana, mila mahazo antoka ianao fa manondro ny adiresy IP an'ny tambajotrao ilay anaran-tsehatra kasainao hampifandraisina. Mariho fa ny adiresy IP an'ny tambajotra no ilainao - ny adiresy IP an'ilay anaran-tsehatra nametrahana ny Ultimate Multisite - fa tsy ny adiresy IP an'ilay anaran-tsehatra namboarina manokana tianao hampifandraisina. Mba hitadiavana ny adiresy IP an'ny anaran-tsehatra manokana iray, dia manoro hevitra izahay ny handeha amin'ny [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), ohatra.
 
@@ -55,7 +55,7 @@ Raha sendra manana olana amin'ny fampandehanana izany ianao, **mifandraisa amin'
 
 Raha mikasa ny hamela ny mpanjifanao hampifandray ny anaran-tsehatra azy manokana ianao, dia izy ireo ihany no tsy maintsy manao ny asa amin'ity ampahany ity. Tondroy any amin'ny rafitra fanohanan'ny mpisoratra anaran-tsehatra azy izy ireo raha toa ka tsy mahavita mamorona ny A Record.
 
-### Fampifandraisana anaran-tsehatra namboarina manokana amin'ny maha Super Admin
+### Fampifandraisana anaran-tsehatra namboarina manokana amin'ny maha Super Admin {#mapping-custom-domain-name-as-super-admin}
 
 Rehefa tafiditra amin'ny maha super admin anao ao amin'ny tambajotrao ianao, dia afaka manampy sy mitantana mora foana anaran-tsehatra namboarina manokana amin'ny alalan'ny fandehanana eo ambanin'ny **Ultimate Multisite > Anaran-tsehatra**.
 
@@ -93,7 +93,7 @@ Raha tsindrinao ny anaran’ny domain, dia ho afaka hahita safidy sasantsasany a
 
 **Is Secure?:** Na dia manamarina aza ny Ultimate Multisite raha manana taratasy fanamarinana SSL ilay domain na tsia alohan’ny hampandehanana azy, dia azonao fidina amin’ny tanana ny hampiditra ilay domain miaraka na tsy miaraka amin’ny taratasy fanamarinana SSL. Mariho fa raha tsy manana taratasy fanamarinana SSL ilay tranonkala ary manandrana manery ny hampidirana azy amin’ny SSL ianao, dia mety hiteraka hadisoana izany.
 
-### Mapping anarana domain manokana amin’ny maha mpampiasa Subsite
+### Mapping anarana domain manokana amin’ny maha mpampiasa Subsite {#mapping-custom-domain-name-as-subsite-user}
 
 Afaka manao mapping anarana domain manokana avy amin’ny admin dashboard an’ny subsite ihany koa ny administratera Subsite.
 
@@ -121,7 +121,7 @@ Avy eo afaka manindry **Next Step** ilay mpampiasa ary manohy manampy ilay anara
 
 Ny fanindriana **Add Domain** dia hanomboka ny dingana fanamarinana sy fakana ny fampahalalana DNS an’ilay domain manokana.
 
-### Momba ny Domain Syncing
+### Momba ny Domain Syncing {#about-domain-syncing}
 
 Domain Syncing dia dingana iray izay anampian’ny Ultimate Multisite ny anarana domain manokana ao amin’ny kaonty fampiantranoanao ho add-on domain **mba hiasa ny domain mapping**.
 

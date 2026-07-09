@@ -3,11 +3,11 @@ title: داشبورد نәظرة
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# داشبورد بازنگری (Dashboard Overview)
+# داشبورد بازنگری (Dashboard Overview) {#dashboard-overview}
 
 Ultimate Multisite در منوی Ultimate Multisite یک **داشبورد** اختصاصی دارد و همچنین ویجت‌هایی را به داشبورد شبکه اضافه می‌کند. این مقاله توضیح می‌دهد که شما در هر دو مکان چه چیزی خواهید دید.
 
-## داشبورد شبکه (The Network Dashboard)
+## داشبورد شبکه (The Network Dashboard) {#the-network-dashboard}
 
 Ultimate Multisite ویجت‌های مفید را در داشبورد سطح شبکه، که از **My Sites → Network Admin → Dashboard** پیدا می‌شود، تزریق می‌کند.
 
@@ -35,7 +35,7 @@ Ultimate Multisite ویجت‌های مفید را در داشبورد سطح ش
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## داشبورد Ultimate Multisite (The Ultimate Multisite Dashboard)
+## داشبورد Ultimate Multisite (The Ultimate Multisite Dashboard) {#the-ultimate-multisite-dashboard}
 
 در حالی که داشبورد شبکه اطلاعات کلی در مورد کل شبکه را ارائه می‌دهد، داشبورد Ultimate Multisite (که در بالاترین سطح منوی Ultimate Multisite قرار دارد) اطلاعات مربوط به سرویس را نمایش می‌دهد.
 

@@ -3,11 +3,11 @@ title: Ṣíṣàkóso Àwọn Imeeli Eto
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ṣíṣàkóso Àwọn Imeeli Eto
+# Ṣíṣàkóso Àwọn Imeeli Eto {#managing-system-emails}
 
 Ultimate Multisite máa ń fi oríṣiríṣi imeeli eto ránṣẹ́ fún àwọn ìṣẹ̀lẹ̀ bí ìmúdájú ìforúkọsílẹ̀, rísíìtì ìsanwó, àti ìyípadà ọmọ ẹgbẹ́. O lè ṣàtúnṣe àwọn àdàkọ imeeli wọ̀nyí kí wọ́n bá àmì-ọjà rẹ mu.
 
-## Wíwo Àwọn Imeeli Eto
+## Wíwo Àwọn Imeeli Eto {#viewing-system-emails}
 
 Lọ sí **Ultimate Multisite → Ìṣètò** kí o sì tẹ taabu **Àwọn Imeeli** láti rí àwọn ìṣètò tó ní í ṣe pẹ̀lú imeeli.
 
@@ -21,7 +21,7 @@ O tún lè ṣàtúnṣe àdàkọ imeeli kọ̀ọ̀kan ní lílo olóòtú ime
 
 ![Olóòtú imeeli eto](/img/admin/system-email-editor.png)
 
-## Gbigbe Àwọn Àdàkọ Imeeli Tuntun Wọlé
+## Gbigbe Àwọn Àdàkọ Imeeli Tuntun Wọlé {#importing-new-email-templates}
 
 Àwọn ẹ̀yà Ultimate Multisite tuntun àti àwọn afikun lè forúkọsílẹ̀ àwọn àdàkọ imeeli tuntun. Láti dènà ìkọlù, a kì í fi àwọn àdàkọ tuntun kún un fúnra rẹ̀ — o ní láti gbe wọ́n wọlé pẹ̀lú ọwọ́.
 
@@ -32,7 +32,7 @@ Láti gbe àwọn àdàkọ imeeli tuntun wọlé:
 3. Yi aṣayan **Gbe Àwọn Imeeli Wọlé** tan láti rí àwọn àdàkọ tó wà
 4. Yan àwọn àdàkọ tí o fẹ́ gbe wọlé kí o sì jẹ́rìí sí i
 
-## Títún Àwọn Àdàkọ Imeeli Ṣètò
+## Títún Àwọn Àdàkọ Imeeli Ṣètò {#resetting-email-templates}
 
 Tí o bá ti ṣàtúnṣe àdàkọ imeeli kan tí o sì fẹ́ dá a padà sí àkóónú àiyipada, o ní aṣayan méjì:
 

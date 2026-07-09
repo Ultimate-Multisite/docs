@@ -7,22 +7,22 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
 Multisite Ultimate: Mailchimp integrācija
 
 Integrējiet savu Multisite Ultimate tīklu ar Mailchimp. Varat sasaistīt noteiktus plānus ar Mailchimp sarakstiem un reģistrēšanās brīdī automātiski pievienot abonentus šiem sarakstiem.
 
-## Instalēšana
+## Instalēšana {#installation}
 
 1. Augšupielādējiet 'ultimate-multisite-mailchimp' direktorijā '/wp-content/plugins/'
 2. Aktivizējiet spraudni, izmantojot izvēlni 'Spraudņi' savā WordPress tīkla administrācijā
 
-## Lietošanas ceļvedis
+## Lietošanas ceļvedis {#usage-guide}
 
 Abonentu e-pasta adrešu sinhronizēšana ar jūsu MailChimp sarakstiem ir ļoti vienkārša ar mūsu Ultimate Multisite: MailChimp integrācijas papildinājumu. Šīs pamācības mērķis ir palīdzēt jums visu iestatīt!
 
-## API atslēgas iegūšana
+## API atslēgas iegūšana {#getting-an-api-key}
 
 Pirms sākam apskatīt dažādos pieejamos iestatījumus, mums ir nepieciešama MailChimp API atslēga. Tā ļaus Ultimate Multisite sazināties ar MailChimp API, lai izgūtu sarakstus, grupas un pievienotu e-pasta adreses šiem sarakstiem un grupām, kad lietotāji reģistrējas.
 
@@ -32,7 +32,7 @@ Sekojiet šai pamācībai, lai iegūtu savu MailChimp API atslēgu: [Par API ats
 
 _Pievienojiet savu MailChimp API atslēgu sadaļā_ _**Ultimate Multisite iestatījumi - > Papildinājuma iestatījumi -> MailChimp**_
 
-## Integrācijas režīms
+## Integrācijas režīms {#integration-mode}
 
 MailChimp integrācijas papildinājums piedāvā divus “integrācijas režīmus”, kas nozīmē, ka ir divi dažādi veidi, kā varat izmantot papildinājumu e-pasta adrešu sinhronizēšanai.
 
@@ -40,7 +40,7 @@ MailChimp integrācijas papildinājums piedāvā divus “integrācijas režīmu
 
 _Divi integrācijas režīmi lielākai elastībai!_
 
-### 1. režīms: vairāki saraksti
+### 1. režīms: vairāki saraksti {#mode-1-multiple-lists}
 
 Noklusējuma režīms izmanto **vairākus sarakstus**. Šis režīms ļaus jums katram plānam atlasīt vairākus MailChimp sarakstus. Tā ir labākā opcija, ja segmentējat lietotājus dažādos sarakstos.
 
@@ -52,7 +52,7 @@ Lai to panāktu, varat izmantot vairāku sarakstu režīmu, lai Plan A MailChimp
 
 _Atlasiet noklusējuma sarakstus jauniem kontiem un atceltiem kontiem_
 
-### 2. režīms: viens saraksts + vairākas grupas
+### 2. režīms: viens saraksts + vairākas grupas {#mode-2-single-list--multiple-groups}
 
 MailChimp ļauj segmentēt jūsu sarakstu mazākās lietotāju grupās, ko sauc par **grupām**. Tas sniedz lielāku kontroli, jo varat nosūtīt kampaņu konkrētai savu abonentu apakškopai, neveidojot vairākas vienas un tās pašas kampaņas kopijas MailChimp (kas vēlāk apgrūtina šīs kampaņas metrikas analīzi).
 
@@ -62,13 +62,13 @@ Piemēram, jums var būt viens saraksts ar nosaukumu **My Network Subscribers,**
 
 _Atlasiet noklusējuma sarakstus un grupas, ja izmantojat “viens saraksts + vairākas grupas” integrācijas režīmu_
 
-## Noklusējuma saraksti un grupas
+## Noklusējuma saraksti un grupas {#default-lists-and-groups}
 
 Pēc tam, kad esat izvēlējies, kurš integrācijas režīms vislabāk atbilst jūsu konkrētajam lietošanas gadījumam, ir laiks atlasīt noklusējuma sarakstus (un grupas, atkarībā no režīma). Noklusējuma saraksts tiks izmantots, ja konkrētam plānam nav atlasīts konkrēts saraksts.
 
 Varat arī atlasīt noklusējuma sarakstu atceltiem kontiem. Ikreiz, kad lietotājs pārtrauc savu abonementu un noņem savu kontu no jūsu tīkla, viņa e-pasta adrese tiks pārvietota uz atceltiem kontiem iestatīto sarakstu.
 
-## Dubultā abonementa iespējošana
+## Dubultā abonementa iespējošana {#enabling-double-subscription}
 
 Tajā pašā iestatījumu lapā varēsiet iespējot **dubulto abonementu**. Šī opcija pievienos lietotāju gan atlasītajam noklusējuma sarakstam, GAN sarakstam, kas atlasīts šī lietotāja plānam. Ja šī opcija nav iespējota, lietotājs tiks pievienots tikai sarakstam, kas atlasīts lietotāja plānam. Ja konkrētajam plānam nekas nav iestatīts, lietotājs tiks pievienots atlasītajam noklusējuma sarakstam.
 
@@ -76,7 +76,7 @@ Tajā pašā iestatījumu lapā varēsiet iespējot **dubulto abonementu**. Šī
 
 _Jūs varat panākt, ka reģistrēšanās brīdī jūsu lietotāji tiek abonēti gan noklusējuma sarakstam, gan plāna sarakstam_
 
-## Sarakstu un grupu atlase katram plānam
+## Sarakstu un grupu atlase katram plānam {#selecting-lists-and-groups-for-each-of-the-plans}
 
 Dodieties uz saviem **plāniem** un atlasiet plānu, kuru vēlaties rediģēt. Ņemiet vērā, ka **papildu opciju** meta lodziņā būs pieejama jauna cilne ar nosaukumu MailChimp.
 

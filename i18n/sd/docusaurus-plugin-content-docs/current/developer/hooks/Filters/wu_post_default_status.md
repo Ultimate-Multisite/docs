@@ -4,11 +4,11 @@ title: فلٽر - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# فلٽر: wu_post_default_status
+# فلٽر: wu_post_default_status {#filter-wupostdefaultstatus}
 
 آبجيڪٽ ڊيٽا کي ڊيٽابيس ۾ محفوظ ٿيڻ کان اڳ فلٽر ڪري ٿو.
 
-## پيرا ميٽر
+## پيرا ميٽر {#parameters}
 
 | نالو | قسم | وضاحت |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 | $post_type | `string` | پوسٽ جو قسم. |
 | $this | `\Base_Model` | آبجيڪٽ انسٽينس. |
 
-### کان وٺي
+### کان وٺي {#since}
 
 - 2.0.0
-### ذريعو
+### ذريعو {#source}
 
 [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) ۾ لائين 320 تي بيان ٿيل.

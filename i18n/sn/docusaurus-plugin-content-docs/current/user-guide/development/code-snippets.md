@@ -3,7 +3,7 @@ title: Mavandiso ekupenyu
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets for v2
+# Code Snippets for v2 {#code-snippets-for-v2}
 
 Kuti, code snippets dzine **WordPress** chinotora kuti zvakaita zvinhu zviri kuita zvichakanaka zvinogona kuendesa neplugin yakachena. Izvi code snippets inozivakwa muiri dzinogona kuenda mu file ya WordPress core kana theme yako (zvakakosha, ndiyo functions.php ya theme yako) kana kuti dzineva kuwedzera MU plugin.
 
@@ -15,7 +15,7 @@ Muriwezi wese tinokupa matshwaro maviri anogona kushandiswa ne**Ultimate Multisi
 
   * [**Kupfura CORS issues nemafont-icons mu mapped domains**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Kutamba chakanikwa chete cha Account menu item
+## Kutamba chakanikwa chete cha Account menu item {#changing-the-position-of-the-account-menu-item}
 
 Kuti utambe chakanikwa chete cha Account menu item pa Dashboard ya client yako, ndichida kuti uingire code snippet iyi mu functions.php ya theme yako inotarisirwa. Unogona kusiya snippet iyi muiri ye MU plugin yako kana custom plugins.
 
@@ -37,20 +37,20 @@ Chii chineipa kuti users vanenge vachikumbuka **Plan** chete, asi havanenge vach
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Kuti Ungekurudzira CORS issues neFont-Icons mu mapped domains
-## Kuti Ungekurudzira CORS issues neFont-Icons mu mapped domains
+## Kuti Ungekurudzira CORS issues neFont-Icons mu mapped domains {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Kuti Ungekurudzira CORS issues neFont-Icons mu mapped domains {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Panguva unenge uingira domain kune sub-site, unogona kuona kuti site inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge in
 
 Kuti zvinhu izvi zvinoreva kuti ndikubatsire kupepo reApache neNGINX. Izvi chirova dzinoda kunzwisisa zvakawanda nezvechinhu chinotevera (server configuration files) zvichiri mune .htaccess files uye NGINX config files. Usiunze support agents vehosting provider kana usina kudzidza kuenda nekuita izviwo uri wekuti unenge usina kunzwisisa.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Mune .htaccess file yako, shandisa izvi:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Mune server config file yako (chiri chinobva kunenge chinekuvaka kune server), shandisa izvi:
 

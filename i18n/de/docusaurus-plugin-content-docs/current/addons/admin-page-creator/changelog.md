@@ -3,9 +3,9 @@ title: Admin Page Creator Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin Page Creator Changelog
+# Admin Page Creator Changelog {#admin-page-creator-changelog}
 
-### Version 1.9.0 - Released on 2026-01-18
+### Version 1.9.0 - Released on 2026-01-18 {#version-190---released-on-2026-01-18}
 
 * Fixed: Fatalfehler beim Aktivieren.
 * Refactored: Content-Source-Klassen nutzen das Singleton-Attribut mit korrekter Initialisierung des Elternkonstruktors.
@@ -21,89 +21,89 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 
 * Rename prefix to ultimate-multisite; update text domain; version bump.
 
-### Version 1.8.7 - 04/10/2023
+### Version 1.8.7 - 04/10/2023 {#version-187---04102023}
 
 * Fixed: Fatalfehler beim Versuch, eine neue Admin-Seite hinzuzufügen.
 * Fixed: Konflikt mit Oxygen-Stilvorlagenpräfix behoben.
 
-### Version 1.8.6 - 09/08/2023
+### Version 1.8.6 - 09/08/2023 {#version-186---09082023}
 
 * Added: Option, Daten vom Hauptsite oder dem aktuellen Subsite anzuzeigen.
 * Added: Unterstützung für den WordPress Block Editor (Gutenberg).
 * Fixed: Problem mit nicht ladenden Brizy-Seitenassets behoben.
 
-### Version 1.8.5 - 09/12/2020
+### Version 1.8.5 - 09/12/2020 {#version-185---09122020}
 
 * Fixed: Problem mit den Bildschirmoptionen zum Ausblenden des Menüs, das nicht verschwindet.
 
-### Version 1.8.4 - 11/11/2020
+### Version 1.8.4 - 11/11/2020 {#version-184---11112020}
 
 * Fixed: Unterstützung für Multisite Ultimate v2.
 
-### Version 1.8.3 - 01/10/2020
+### Version 1.8.3 - 01/10/2020 {#version-183---01102020}
 
 * Fixed: Inkompatibilitäten mit Beaver Builder aus vorheriger Version.
 * Fixed: Randinkonsistenzen mit WP 5.5.
 
-### Version 1.8.2 - 21/09/2020
+### Version 1.8.2 - 21/09/2020 {#version-182---21092020}
 
 * Fixed: Kleine Inkompatibilitäten mit WP 5.5.
 
-### Version 1.8.1 - 05/08/2020
+### Version 1.8.1 - 05/08/2020 {#version-181---05082020}
 
 * Fixed: Inkompatibilität mit Brizy 2.0.
 * Fixed: Kleine Leistungsprobleme beim Erstellen der Menüliste.
 
-### Version 1.8.0 - 27/04/2020
+### Version 1.8.0 - 27/04/2020 {#version-180---27042020}
 
 * Fixed: Benachrichtigungen werden unter der Top-Leiste ausgeblendet, wenn kein Randmodus ausgewählt ist.
 * Added: Benutzerdefinierte Seiten können jetzt gleichzeitig mehrere WordPress-Admin-Haupt- und Unterseiten ersetzen.
 * Added: Administratoren können Admin-Seiten jetzt mit WP Admin Pages PRO ausblenden.
 
-### Version 1.7.9 - 01/04/2020
+### Version 1.7.9 - 01/04/2020 {#version-179---01042020}
 
 * Fixed: Brizy 1.10.118 und höher brechen SVG-Unterstützung auf Admin-Seiten.
 
-### Version 1.7.8 - 26/03/2020
+### Version 1.7.8 - 26/03/2020 {#version-178---26032020}
 
 * Fixed: Escaping-Fehler, der die Editor-Seite beim Verwenden von Französisch bricht.
 
-### Version 1.7.7 - 04/03/2020
+### Version 1.7.7 - 04/03/2020 {#version-177---04032020}
 
 * Fixed: Kleine Inkompatibilität mit Brizy Builder.
 * Improved: Freemius SDK auf 2.3.2 aktualisiert.
 
-### Version 1.7.6 - 10/02/2020
+### Version 1.7.6 - 10/02/2020 {#version-176---10022020}
 
 * Fixed: Admin-Seiten-Edit-Button in der unteren rechten Ecke funktioniert nicht in Dashboard-Widgets.
 * Fixed: Kleine Inkompatibilität mit Astra.
 * Fixed: Neue Brizy-Version bricht die Kompatibilität.
 
-### Version 1.7.5 - 14/12/2019
+### Version 1.7.5 - 14/12/2019 {#version-175---14122019}
 
 * Fixed: Neuer Edge-Case-Handler zum Befüllen von Menüeinträgen bei der Replace-Page-Option.
 * Fixed: Elementor-Schriftarten funktionieren nicht.
 * Improved: Freemius SDK aktualisiert, um das Verbergen sensibler Informationen auf der Account-Seite zu unterstützen.
 
-### Version 1.7.4 - 29/11/2019
+### Version 1.7.4 - 29/11/2019 {#version-174---29112019}
 
 * Fixed: Inkompatibilität mit WooCommerce Memberships.
 * Fixed: Oxygen Builder Tab-Komponente funktioniert nicht.
 * Fixed: Beaver Themer funktioniert nicht.
 
-### Version 1.7.3 - 12/07/2019
+### Version 1.7.3 - 12/07/2019 {#version-173---12072019}
 
 * Fixed: Seiten verschwinden, wenn ihr Elternteil in einen anderen Admin-Seitentyp konvertiert wird.
 * Improved: Bessere Tabellen-Trennlinien zwischen Admin-Seitentypen.
 * Improved: Sicherheitsüberprüfung des gesamten Plugin-Codebasen.
 * Improved: Hinweis zur Separator-Tab-Warnung, wenn die Funktion für einen bestimmten Menü-/Inhaltsquellen-Typ nicht verfügbar ist.
 
-### Version 1.7.2 - 01/07/2019
+### Version 1.7.2 - 01/07/2019 {#version-172---01072019}
 
 * Fixed: Freemius SDK-Version auf 2.3.0 aktualisiert.
 * Fixed: Inkompatibilitätsproblem mit Flywheel.
 
-### Version 1.7.1 - 27/06/2019
+### Version 1.7.1 - 27/06/2019 {#version-171---27062019}
 
 * Fixed: Welcome-Widget wird jetzt allen Rollen angezeigt.
 * Fixed: Bildschirmoption zum Ausblenden/Anzeigen des Admin-Seiten-Menüs wird nicht hinzugefügt, wenn das Menü über den dokumentierten Filter ausgeblendet wird.
@@ -112,12 +112,12 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Added: Option, Seiten auch auf dem Hauptsite anzuzeigen.
 * Added: Option, die Menübeschriftungen für Haupt- und Unterebene im Replace-Modus umzubenennen.
 
-### Version 1.7.0 - 04/06/2019
+### Version 1.7.0 - 04/06/2019 {#version-170---04062019}
 
 * Fix: Probleme mit Oxygen-Templates, die nicht angezeigt werden.
 * Added: Unterstützung für Widget-Erstellung!
 
-### Version 1.6.1 - 22/05/2019
+### Version 1.6.1 - 22/05/2019 {#version-161---22052019}
 
 * Fixed: Tippfehler.
 * Fixed: Untermenüseiten überschreiben vorherige Untermenüeinträge mit demselben Reihenfolgenwert.
@@ -125,40 +125,40 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Improved: pt_BR- und es_ES-po-Dateien aktualisiert.
 * Improved: Listen-Tabelle listet jetzt auch den Namen benutzerdefinierter Seiten als Elternseiten.
 
-### Version 1.6.0 - 21/05/2019
+### Version 1.6.0 - 21/05/2019 {#version-160---21052019}
 
 * Added: Externe Links unterstützen jetzt auch iframe-Laden.
 
-### Version 1.5.5 - 17/05/2019
+### Version 1.5.5 - 17/05/2019 {#version-155---17052019}
 
 * Fixed: Warnmeldung wird ausgelöst, wenn eine Seite gelöscht oder dupliziert wurde.
 * Fixed: Berechtigungseinstellungen werden nicht auf Administratoren angewendet.
 
-### Version 1.5.4 - 08/05/2019
+### Version 1.5.4 - 08/05/2019 {#version-154---08052019}
 
 * Fixed: Inkompatibilitäten mit Sliced Invoices.
 * Fixed: Kleines Problem mit Oxygen.
 * Fixed: Platzhalter im neuen Admin-Seiten-Titelfeld verschwindet nicht bei Key-Up.
 
-### Version 1.5.3 - 03/05/2019
+### Version 1.5.3 - 03/05/2019 {#version-153---03052019}
 
 * Fixed: Inkompatibilität mit Advanced Custom Field-Optionseiten.
 * Added: Option, bestimmte Benutzer als Ziel benutzerdefinierter Admin-Seiten hinzuzufügen.
 
-### Version 1.5.2 - 30/04/2019
+### Version 1.5.2 - 30/04/2019 {#version-152---30042019}
 
 * Fixed: Inkompatibilitäten mit neueren Brizy-Versionen.
 * Added: Spanische Übersetzung hinzugefügt – dank John Rozzo. Danke, John!
 * Added: Beta-Unterstützung für Oxygen Builder.
 
-### Version 1.5.1 - 15/04/2019
+### Version 1.5.1 - 15/04/2019 {#version-151---15042019}
 
 * Fixed: Problem mit Platzhaltern in den Normal- und HTML-Editoren.
 * Fixed: Admin-Seiten werden nicht im Tools -> Export angezeigt.
 * Fixed: Skripte und Styles werden nur auf unseren eigenen Seiten geladen.
 * Added: Super-Admins können jetzt Admin-Seiten duplizieren.
 
-### Version 1.5.0 - 29/03/2019
+### Version 1.5.0 - 29/03/2019 {#version-150---29032019}
 
 * Fixed: Kleine Fehler, die von Sentry erfasst wurden.
 * Fixed: Löschen-Button funktioniert nicht auf dem Edit Admin-Seite-Bildschirm.
@@ -166,7 +166,7 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Added: Administratoren können die Reihenfolge der Untermenüs festlegen.
 * Added: Replace-Page-Modus unterstützt jetzt alle verfügbaren Menüeinträge.
 
-### Version 1.4.0 - 14/02/2019 (stand-alone) & 27/02/2019 (add-on)
+### Version 1.4.0 - 14/02/2019 (stand-alone) & 27/02/2019 (add-on) {#version-140---14022019-stand-alone--27022019-add-on}
 
 * Added: Als Standalone-Plugin in https://wpadminpagespro.com gestartet.
 * Added: Option, das Admin-Seiten-Menüelement nach Abschluss des Seitenerstellungsprozesses zu entfernen.
@@ -176,7 +176,7 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Added: Konsolidierte Inhaltsquellen-Elternklasse, um das Hinzufügen neuer Page Builders/Content Sources in Zukunft zu erleichtern.
 * Added: Unterstützung für externe URLs.
 
-### Version 1.3.0 - 15/01/2019
+### Version 1.3.0 - 15/01/2019 {#version-130---15012019}
 
 * Fixed: Admin-Seiten erscheinen nicht auf dem Hauptsite in Multisite-Umgebungen.
 * Improved: Multisite Ultimate-Custom-Post-Types aus dem Export-Bildschirm der Subsites entfernt.
@@ -184,30 +184,30 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Added: RIESIG! Elementor-Unterstützung!
 * Added: RIESIG! Brizy-Unterstützung!
 
-### Version 1.2.1 - 17/11/2018
+### Version 1.2.1 - 17/11/2018 {#version-121---17112018}
 
 * Fixed: Plugin kompatibel mit Multisite Ultimate 1.9.0 machen.
 
-### Version 1.2.0 - 10/09/2018
+### Version 1.2.0 - 10/09/2018 {#version-120---10092018}
 
 * Added: PHP-Unterstützung hinzugefügt, wenn WU_APC_ALLOW_PHP_PROCESSING in wp-config.php auf true gesetzt ist. Dies verwendet kein PHP-eval, kann jedoch immer noch Sicherheitslücken verursachen. Verwenden Sie dies vorsichtig.
 * Improved: Add-on-Plugin-Updater.
 * Improved: Neue URL für den Update-Server.
 
-### Version 1.1.2 - 16/08/2018
+### Version 1.1.2 - 16/08/2018 {#version-112---16082018}
 
 * Fixed: Kleines Problem mit WP Engine.
 
-### Version 1.1.1 - 16/08/2018
+### Version 1.1.1 - 16/08/2018 {#version-111---16082018}
 
 * Fixed: Berechtigungen werden nicht korrekt auf Ersatzseiten angewendet.
 
-### Version 1.1.0 - 15/08/2018
+### Version 1.1.0 - 15/08/2018 {#version-110---15082018}
 
 * Added: Beaver Builder-Vorlagen werden jetzt unterstützt! Sie können Ihren bevorzugten Page Builder verwenden, um benutzerdefinierte Admin-Seiten zu erstellen.
 * Added: Es ist jetzt möglich, den Inhalt der WordPress-Standard-Admin-Seiten ebenfalls zu ersetzen.
 * Added: Es ist jetzt möglich, den erstellten Inhalt oben oder unten an die Standard-WordPress-Admin-Seiten anzuhängen.
 
-### 0.0.1
+### 0.0.1 {#001}
 
 * Initiale Veröffentlichung

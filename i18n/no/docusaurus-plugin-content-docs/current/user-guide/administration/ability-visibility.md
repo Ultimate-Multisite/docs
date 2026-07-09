@@ -3,11 +3,11 @@ title: Synlighet av evner
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Synlighet for funksjoner (Ability Visibility)
+# Synlighet for funksjoner (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introduserer kontroller for **Ability Visibility** som styrer hvilke grensesnitt som eksponerer hver funksjon. Dette lar administratorer finjustere hvilke agent-kapasiteter som er tilgjengelige via REST APIs, MCP-servere, WooCommerce-integrasjoner og andre grensesnitt.
 
-## Hva er Ability Visibility?
+## Hva er Ability Visibility? {#what-is-ability-visibility}
 
 Ability Visibility er et tillatelsessystem som kontrollerer:
 
@@ -18,9 +18,9 @@ Ability Visibility er et tillatelsessystem som kontrollerer:
 
 Hver funksjon har et synlighetsnivå som bestemmer tilgjengeligheten på tvers av ulike grensesnitt.
 
-## Synlighetsnivåer
+## Synlighetsnivåer {#visibility-levels}
 
-### Public (Offentlig)
+### Public (Offentlig) {#public}
 
 **Public abilities** er tilgjengelige overalt:
 
@@ -32,7 +32,7 @@ Hver funksjon har et synlighetsnivå som bestemmer tilgjengeligheten på tvers a
 
 Eksempel: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Internt)
+### Internal (Internt) {#internal}
 
 **Internal abilities** er kun tilgjengelige innenfor din WordPress-installasjon:
 
@@ -43,7 +43,7 @@ Eksempel: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Eksempel: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Partner abilities** er kun tilgjengelige for hvitlistede partnere:
 
@@ -54,7 +54,7 @@ Eksempel: `manage-settings`, `view-analytics`, `export-data`
 
 Eksempel: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Deaktivert)
+### Disabled (Deaktivert) {#disabled}
 
 **Disabled abilities** er ikke tilgjengelige noe sted:
 
@@ -63,15 +63,15 @@ Eksempel: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Ikke tilgjengelig i admin-paneler
 - Nyttig for foreldede eller eksperimentelle funksjoner
 
-## Administrering av Ability Visibility
+## Administrering av Ability Visibility {#managing-ability-visibility}
 
-### Tilgang til Ability Visibility-innstillingene
+### Tilgang til Ability Visibility-innstillingene {#accessing-ability-visibility-settings}
 
 1. Gå til **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klikk på fanen **Abilities**
 3. Du vil se en liste over alle installerte funksjoner med deres synlighetsnivåer
 
-### Visning av Ability-detaljer
+### Visning av Ability-detaljer {#viewing-ability-details}
 
 Klikk på en hvilken som helst funksjon for å se:
 
@@ -82,7 +82,7 @@ Klikk på en hvilken som helst funksjon for å se:
 - **Last updated**: Når synligheten sist ble endret
 - **Status**: Recognized eller Unclassified
 
-### Endring av Synlighetsnivåer
+### Endring av Synlighetsnivåer {#changing-visibility-levels}
 
 For å endre synligheten til en funksjon:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Masseoperasjoner (Bulk Operations)
+### Masseoperasjoner (Bulk Operations) {#bulk-operations}
 
 For å endre synligheten for flere funksjoner:
 
@@ -108,11 +108,11 @@ For å endre synligheten for flere funksjoner:
 2. Velg et nytt synlighetsnivå fra bulk action-rullegardinmenyen
 3. Klikk på **Apply**
 
-## Partner Allow-List
+## Partner Allow-List {#partner-allow-list}
 
 **Partner allow-listen** kontrollerer hvilke eksterne partnere som kan få tilgang til Partner-nivå funksjoner.
 
-### Legge til Partnere
+### Legge til Partnere {#adding-partners}
 
 1. Gå til **Superdav AI Agent** → **Settings** → **Partners**
 2. Klikk på **Add Partner**
@@ -120,7 +120,7 @@ For å endre synligheten for flere funksjoner:
 4. Legg eventuelt til et partnernavn og en beskrivelse
 5. Klikk på **Save**
 
-### Tildele Funksjoner til Partnere
+### Tildele Funksjoner til Partnere {#assigning-abilities-to-partners}
 
 Etter at du har lagt til en partner:
 
@@ -130,7 +130,7 @@ Etter at du har lagt til en partner:
 4. I seksjonen "Partner allow-list", kryss av i boksene for de partnerne som skal ha tilgang
 5. Klikk på **Save**
 
-### Tilbakekalle Partner-tilgang
+### Tilbakekalle Partner-tilgang {#revoking-partner-access}
 
 For å fjerne en partners tilgang:
 
@@ -140,11 +140,11 @@ For å fjerne en partners tilgang:
 
 Partneren mister umiddelbart tilgangen til den funksjonen.
 
-## Uklassifiserte Funksjoner (Unclassified Abilities)
+## Uklassifiserte Funksjoner (Unclassified Abilities) {#unclassified-abilities}
 
 Når du installerer en tredjepartsfunksjon som Superdav AI Agent ikke gjenkjenner, merkes den som **Unclassified**.
 
-### Admin-varsel for Uklassifiserte Funksjoner
+### Admin-varsel for Uklassifiserte Funksjoner {#admin-notice-for-unclassified-abilities}
 
 Du vil se et admin-varsel:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Gjennomgang av Uklassifiserte Funksjoner
+### Gjennomgang av Uklassifiserte Funksjoner {#reviewing-unclassified-abilities}
 
 1. Klikk på **Review Abilities** i varselet
 2. For hver uklassifisert funksjon, vil du se:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Klikk på **Classify** for å lagre avgjørelsen din
 
-### Hvorfor klassifisere uklassifiserte funksjoner?
+### Hvorfor klassifisere uklassifiserte funksjoner? {#why-classify-unclassified-abilities}
 
 Å klassifisere funksjoner:
 
@@ -187,9 +187,9 @@ Please review and classify them.
 - **Aktiverer funksjoner**: Når den er klassifisert, blir funksjonen tilgjengelig
 - **Dokumenterer beslutninger**: Dine valg logges for revisjonsformål
 
-## Synlighet i Ulike Grensesnitt
+## Synlighet i Ulike Grensesnitt {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Public abilities** er tilgjengelige via REST-endepunkter:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Internal og Partner abilities** er ikke tilgjengelige via REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Public abilities** er tilgjengelige via MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partner abilities** er kun tilgjengelige med partner-legitimasjon.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Public abilities** relatert til WooCommerce er tilgjengelige:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Internal abilities** eksponeres ikke til WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Alle abilities** (Public, Internal, Partner) er tilgjengelige i chat, avhengig av brukerrettigheter:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Vanlige brukere ser kun Public abilities
 - Partnere ser Public + Partner abilities (hvis hvitlistet)
 
-## Sikkerhetspraksis
+## Sikkerhetspraksis {#security-best-practices}
 
-### Prinsippet om minste privilegium (Principle of Least Privilege)
+### Prinsippet om minste privilegium (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Sett funksjoner til det mest restriktive synlighetsnivået som fortsatt tillater bruk
 - Bruk Partner synlighet for sensitive operasjoner
 - Deaktiver funksjoner du ikke bruker
 
-### Regelmessige revisjoner (Audits)
+### Regelmessige revisjoner (Audits) {#regular-audits}
 
 - Gjennomgå funksjons-synligheten månedlig
 - Sjekk etter uklassifiserte funksjoner
 - Fjern tilgang for ubrukte partnere
 
-### Logging og Overvåking
+### Logging og Overvåking {#logging-and-monitoring}
 
 - Overvåk hvilke funksjoner som brukes mest
 - Spor mønstre for partner-tilgang
 - Varsle ved uvanlig funksjonsbruk
 
-### Tredjepartsfunksjoner
+### Tredjepartsfunksjoner {#third-party-abilities}
 
 - Gjennomgå tredjepartsfunksjoner før du aktiverer dem
 - Klassifiser dem eksplisitt
 - Start med Internal eller Partner synlighet
 - Fremhev til Public kun etter grundig vurdering
 
-## Feilsøking (Troubleshooting)
+## Feilsøking (Troubleshooting) {#troubleshooting}
 
 **En funksjon vises ikke i listen**
 - Verifiser at funksjonen er installert og aktiv
@@ -285,7 +285,7 @@ Available abilities:
 - Sjekk at klassifiseringen din ble lagret
 - Verifiser at pluginet som gir funksjonen er oppdatert
 
-## Migrering fra Legacy Mode
+## Migrering fra Legacy Mode {#migration-from-legacy-mode}
 
 Hvis du oppgraderer fra en eldre versjon av Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Hvis du oppgraderer fra en eldre versjon av Superdav AI Agent:
 
 Se **Third-Party Mode Migration** for flere detaljer om overgangen til native Abilities API-integrasjon.
 
-## Neste Steg
+## Neste Steg {#next-steps}
 
 Etter at du har konfigurert funksjons-synligheten:
 

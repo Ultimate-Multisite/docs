@@ -3,11 +3,11 @@ title: Ukugeleza komsebenzi wokufuduka okuzimele
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Ukugeleza Komsebenzi Kokufuduka Okuzimele
+# Ukugeleza Komsebenzi Kokufuduka Okuzimele {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yengeza amasango okuqinisekisa ukufuduka lapho kususwa isayithi elincane elijwayelekile lifakwa kungqalasizinda yomqashi ozimele.
 
-## Ngaphambi kokuba uqale
+## Ngaphambi kokuba uqale {#before-you-start}
 
 Qinisekisa ukuthi unakho lokhu:
 
@@ -17,7 +17,7 @@ Qinisekisa ukuthi unakho lokhu:
 - Ukubophezela komsingathi wedathabheyisi okuhambisana nendawo okuyiwa kuyo.
 - Ukufinyelela kokusebenzisa imiyalo ye-WP-CLI yenethiwekhi.
 
-## Ukugeleza komsebenzi okunconyiwe
+## Ukugeleza komsebenzi okunconyiwe {#recommended-workflow}
 
 1. Lungisa idathabheyisi yomqashi okuyiwa kuye kanye nesistimu yamafayela.
 2. Bhalisa noma ubuyekeze izilungiselelo zokuhlukaniswa komqashi.
@@ -28,7 +28,7 @@ Qinisekisa ukuthi unakho lokhu:
 7. Vakashela umqashi nge-SSO.
 8. Shintsha i-DNS noma ukuqondisa kuphela ngemva kokuba ukuqinisekiswa kuphumelele.
 
-## Amasango okuqinisekisa
+## Amasango okuqinisekisa {#verification-gates}
 
 Ukugeleza komsebenzi kokuqinisekisa kuhlola ukufuduka ngezinhlangothi eziningana:
 
@@ -40,6 +40,6 @@ Ukugeleza komsebenzi kokuqinisekisa kuhlola ukufuduka ngezinhlangothi eziningana
 
 Bheka ukwehluleka kokuqinisekisa njengezithiyo zangaphambi kokwethulwa. Lungisa inkinga ebikiwe yedathabheyisi, yomsebenzisi, yolayini, noma yokuqondisa, bese usebenzisa ukuqinisekisa futhi ngaphambi kokudalula umqashi kumakhasimende.
 
-## Ukuvakasha kokuqala kokukhiqiza
+## Ukuvakasha kokuqala kokukhiqiza {#first-production-visit}
 
 Ngemva kokuba ukuqinisekiswa kuphumelele, sebenzisa **Visit (SSO)** esikrinini sokuphathwa kwesayithi ekuvakasheni kokuqala komlawuli. Lokhu kuqinisekisa ukuqondisa komqashi, ukuphathwa kwe-token ye-SSO, ukubethela umsuka, kanye nokuhlinzekwa kwabasebenzisi ohlangothini lomqashi ngesinyathelo esisodwa esilawulwayo.

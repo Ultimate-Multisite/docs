@@ -3,15 +3,15 @@ title: 'Ihe ọmụmụ 11: Ịchọta ndị ahịa'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Nkuzi 11: Ịchọta Ndị ahịa
+# Nkuzi 11: Ịchọta Ndị ahịa {#lesson-11-finding-customers}
 
 Platform magburu onwe ya nke na-enweghị ndị ahịa bụ naanị ihe ntụrụndụ. Nkuzi a na-akọwa otu esi enweta ndị ahịa n’otu niche vertical -- atụmatụ na-arụ ọrụ kpọmkwem n’ihi na ị lekwasịrị anya n’otu ụlọ ọrụ.
 
-## Ebe Anyị Kwụsịrị
+## Ebe Anyị Kwụsịrị {#where-we-left-off}
 
 FitSite dị ndụ. Ugbu a, anyị chọrọ ka ndị nwe fitness studio chọta ya ma debanye aha.
 
-## Ihe Mere Inweta Ndị ahịa na Niche Ji Dị Iche
+## Ihe Mere Inweta Ndị ahịa na Niche Ji Dị Iche {#why-niche-acquisition-is-different}
 
 Mgbe ị na-eresị onye ọ bụla, ị na-asọmpi maka nlebara anya n’ahịa jupụtara n’ụzụ. Mgbe ị na-eresị niche, ị nwere uru:
 
@@ -19,17 +19,17 @@ Mgbe ị na-eresị onye ọ bụla, ị na-asọmpi maka nlebara anya n’ahị
 - **Ozi gị na-emetụta ozugbo** -- "websites maka fitness studios" na-eme ka onye nwe gym kwụsị n’etiti ịsụgharị ibe
 - **Ntụnye na-amụba** -- ndị nwe fitness studio maara ndị nwe fitness studio ndị ọzọ
 
-## Channel 1: Ịkpọtụrụ Ndị mmadụ Kpọmkwem
+## Channel 1: Ịkpọtụrụ Ndị mmadụ Kpọmkwem {#channel-1-direct-outreach}
 
 Ụzọ kachasị ọsọ iji nweta ndị ahịa mbụ gị bụ ịkpọtụrụ ha kpọmkwem, n’ụzọ nkeonwe.
 
-### Chọta Ndị Ị Ga-ere
+### Chọta Ndị Ị Ga-ere {#find-prospects}
 
 - Chọọ na Google Maps maka fitness studios, gyms, na personal trainers n’ógbè gị
 - Gaa na websites ha ugbu a (ma ọ bụ depụta na ha enweghị otu)
 - Nakọta ozi kọntaktị site na Google Business profiles ha ma ọ bụ social media
 
-### Nyochaa Ọnọdụ Ha Ugbu a
+### Nyochaa Ọnọdụ Ha Ugbu a {#evaluate-their-current-situation}
 
 Maka onye ọ bụla ị nwere ike ire, depụta:
 
@@ -37,7 +37,7 @@ Maka onye ọ bụla ị nwere ike ire, depụta:
 - **Website na-adịghị mma**: Onye ị ga-ere siri ike -- gosi ha otú nhọrọ ka mma si dị
 - **Website dị mma**: Onye ị ga-ere na-adịghị ike -- ha edoziworị nsogbu a
 
-### Kpọtụrụ Ha
+### Kpọtụrụ Ha {#make-contact}
 
 Ziga email ma ọ bụ ozi ahaziri onye ahụ:
 
@@ -48,7 +48,7 @@ Ziga email ma ọ bụ ozi ahaziri onye ahụ:
 
 Ezila email n’ụzọ ọnụ ọgụgụ buru ibu. Ịkpọtụrụ mmadụ 20 a nyochara nke ọma n’ụzọ ahaziri onwe ha ga-arụpụta karịa iziga ozi izugbe nye mmadụ 2,000.
 
-## Channel 2: Obodo Niche
+## Channel 2: Obodo Niche {#channel-2-niche-communities}
 
 Ndị nwe fitness studio na-ezukọta n’ebe ụfọdụ n’ịntanetị:
 
@@ -57,7 +57,7 @@ Ndị nwe fitness studio na-ezukọta n’ebe ụfọdụ n’ịntanetị:
 - **Industry forums** na discussion boards
 - **LinkedIn groups** maka fitness professionals
 
-### Otu Esi Eso Soro
+### Otu Esi Eso Soro {#how-to-participate}
 
 Abanyela ma malite ozugbo ịkwalite ngwaahịa gị. Kama nke ahụ:
 
@@ -66,7 +66,7 @@ Abanyela ma malite ozugbo ịkwalite ngwaahịa gị. Kama nke ahụ:
 3. **Kesaa mgbe ọ dị mkpa** -- mgbe mmadụ jụrụ gbasara websites, kesaa platform gị n’ụzọ eke
 4. **Mepụta ọdịnaya bara uru** -- dee posts gbasara "ihe na-eme ka website fitness studio bụrụ nke magburu onwe ya" nke na-eduga n’ụzọ eke gaa na platform gị
 
-## Channel 3: Content Marketing
+## Channel 3: Content Marketing {#channel-3-content-marketing}
 
 Mepụta ọdịnaya ndị nwe fitness studio na-achọ:
 
@@ -77,7 +77,7 @@ Mepụta ọdịnaya ndị nwe fitness studio na-achọ:
 
 Bipụta nke a na blog ahịa FitSite gị. Ka oge na-aga, ọdịnaya a na-enweta ọkwa na search engines ma na-eweta organic traffic site n’aka ndị na-achọ ihe ị na-enye n’eziokwu.
 
-## Channel 4: Mmekọrịta
+## Channel 4: Mmekọrịta {#channel-4-partnerships}
 
 Soro azụmahịa ndị na-ejere fitness studios ozi ugbu a rụọkọ ọrụ:
 
@@ -88,7 +88,7 @@ Soro azụmahịa ndị na-ejere fitness studios ozi ugbu a rụọkọ ọrụ:
 
 Nye referral commissions ma ọ bụ reciprocal promotion. [AffiliateWP addon](/addons/affiliatewp) nwere ike inyere gị aka ịtọlite mmemme referral dị n’usoro.
 
-## Channel 5: Mmemme Ụlọ ọrụ
+## Channel 5: Mmemme Ụlọ ọrụ {#channel-5-industry-events}
 
 Mmemme fitness industry na-etinye gị n’ihu narị kwuru narị ndị ahịa nwere ike ịbụ:
 
@@ -99,7 +99,7 @@ Mmemme fitness industry na-etinye gị n’ihu narị kwuru narị ndị ahịa 
 
 Ị chọghị nnukwu mmefu ego. Ọbụna ịga dịka onye sonyere na inwe mkparịta ụka gbasara ihe ị na-eme nwere ike ịmepụta leads.
 
-## Channel 6: Showcase Sites
+## Channel 6: Showcase Sites {#channel-6-showcase-sites}
 
 Ahịa kacha mma gị bụ sites ndị ahịa gị dị ugbu a. Site n’ikike:
 
@@ -108,7 +108,7 @@ Ahịa kacha mma gị bụ sites ndị ahịa gị dị ugbu a. Site n’ikike:
 - Rịọ ndị ahịa nwere afọ ojuju ka ha nye testimonials
 - Gbaa ndị ahịa ume ka ha kpọọ FitSite mgbe a jụrụ ha gbasara website ha
 
-## Ịtọlite Mmemme Referral
+## Ịtọlite Mmemme Referral {#setting-up-a-referral-program}
 
 Ozi ọnụ bụ channel gị kacha ike n’ime niche. Mee ka ọ bụrụ nke iwu kwadoro:
 
@@ -116,7 +116,7 @@ Ozi ọnụ bụ channel gị kacha ike n’ime niche. Mee ka ọ bụrụ nke i
 2. Nye ndị ahịa dị ugbu a ụgwọ ọrụ maka referrals (otu ọnwa n’efu, account credit, wdg.)
 3. Mee ka ọ dị mfe -- nye ha referral link na ozi dị mfe ha nwere ike iziga ndị ọzọ
 
-## Ịlele Ihe Na-arụ Ọrụ
+## Ịlele Ihe Na-arụ Ọrụ {#tracking-what-works}
 
 Maka channel ọ bụla, soro:
 
@@ -126,7 +126,7 @@ Maka channel ọ bụla, soro:
 
 Tinyekwuo ike na channels na-arụ ọrụ. Kwụsị channels na-adịghị arụ ọrụ.
 
-## Atụmanya Ziri Ezi
+## Atụmanya Ziri Ezi {#realistic-expectations}
 
 - **Ọnwa 1-3**: Ndị ahịa 5-20, nke ka ukwuu site na ịkpọtụrụ kpọmkwem na obodo
 - **Ọnwa 4-6**: Ndị ahịa 20-50, content marketing na-amalite itinye aka
@@ -134,7 +134,7 @@ Tinyekwuo ike na channels na-arụ ọrụ. Kwụsị channels na-adịghị ar�
 
 Ọnụ ọgụgụ ndị a nwere ike ịdị iche, mana ụkpụrụ ahụ na-adịgide: ndị ahịa mbụ na-abịa site n’ọrụ kpọmkwem, ndị ahịa ndị na-esote na-abịa site na mmetụta na-amụba nke ọdịnaya, referrals, na aha ọma.
 
-## Ihe Anyị Wulitere na Nkuzi A
+## Ihe Anyị Wulitere na Nkuzi A {#what-we-built-this-lesson}
 
 - **Ụzọ inweta ndị ahịa isii** ahaziri maka niche mmega ahụ
 - **Usoro outreach kpọmkwem** maka inweta ndị ahịa mbụ

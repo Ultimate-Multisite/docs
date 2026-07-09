@@ -4,11 +4,11 @@ title: 'Tindakan - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 Membenarkan pembangun plugin untuk menambah widget ke Panel Dashboard Network.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Membenarkan pembangun plugin untuk menambah widget ke Panel Dashboard Network.
 | $screen | `\WP_Screen` | Objek skrin. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Instans halaman admin Ultimate Multisite. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Didefinisikan dalam [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) pada baris 214

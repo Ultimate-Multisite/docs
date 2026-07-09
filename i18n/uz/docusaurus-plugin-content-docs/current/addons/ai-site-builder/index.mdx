@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Sayt Quruvchi
+# AI Sayt Quruvchi {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Talablar
+## Talablar {#requirements}
 
 - WordPress 5.3 yoki undan yuqori
 - PHP 7.4 yoki undan yuqori
 - Multisite Ultimate plagini (faol)
 
-## O‘rnatish
+## O‘rnatish {#installation}
 
 1. Addon fayllarini `/wp-content/plugins/` katalogingizga yuklang
 2. WordPress ichidagi 'Plugins' menyusi orqali plaginni faollashtiring
 3. Tarmoq adminida addon sozlamalarini sozlang
 
-## Ishlab chiqish
+## Ishlab chiqish {#development}
 
-### Sozlash
+### Sozlash {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Loyiha tuzilmasi
+### Loyiha tuzilmasi {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Kodni zamonaviylashtirish qoidalari
 ```
 
-### Testlash
+### Testlash {#testing}
 
 Addon keng qamrovli testlash freymvorkini o‘z ichiga oladi:
 
@@ -79,44 +79,44 @@ Addon keng qamrovli testlash freymvorkini o‘z ichiga oladi:
 - **Test Qamrovi**: Kod qamrovini kuzatish uchun sozlangan
 - **Multisite Testlash**: Testlar multisite muhitida ishlaydi
 
-### Kod Standartlari
+### Kod Standartlari {#code-standards}
 
 - **WordPress Kodlash Standartlari**: PHPCS orqali majburiy qo‘llanadi
 - **PHP 7.4+ Mosligi**: Zamonaviy PHP funksiyalari qo‘llab-quvvatlanadi
 - **Statik Tahlil**: Tur tekshiruvi uchun PHPStan integratsiyasi
 - **Kodni Zamonaviylashtirish**: PHP yangilanishlari uchun Rector qoidalari
 
-### Yig‘ish Tizimi
+### Yig‘ish Tizimi {#build-system}
 
 - **Resurslarni Qayta Ishlash**: CSS/JS fayllari uchun minifikatsiya
 - **Tarjima**: POT fayl yaratish
 - **Paketlash**: Tarqatish uchun arxiv yaratish
 - **Ishlab Chiqish Rejimi**: Nosozliklarni tuzatish uchun minifikatsiya qilinmagan resurslar
 
-## Konfiguratsiya
+## Konfiguratsiya {#configuration}
 
 Addon tarmoq admin interfeysi orqali kirish mumkin bo‘lgan turli konfiguratsiya variantlarini qo‘llab-quvvatlaydi.
 
-## Hooklar va Filtrlar
+## Hooklar va Filtrlar {#hooks-and-filters}
 
-### Actionlar
+### Actionlar {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Addon ishga tushirilgandan keyin ishga tushiriladi
 - `ultimate-multisite-ai-site-builder_loaded` - Barcha addon fayllari yuklangandan keyin ishga tushiriladi
 
-### Filtrlar
+### Filtrlar {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Addon sozlamalarini o‘zgartirish
 - `ultimate-multisite-ai-site-builder_enabled` - Addonni yoqish/o‘chirish holatini bekor qilib belgilash
 
-## Litsenziya
+## Litsenziya {#license}
 
 Ushbu addon GPL v3 yoki undan keyingi versiya ostida litsenziyalangan.
 
-## Qo‘llab-quvvatlash
+## Qo‘llab-quvvatlash {#support}
 
 Qo‘llab-quvvatlash va hujjatlar uchun [MultisiteUltimate.com](https://multisiteultimate.com) saytiga tashrif buyuring
-## O‘zgarishlar jurnali
+## O‘zgarishlar jurnali {#changelog}
 
 - Versiya 1.0.1 (2025-09-28): prefixni ultimate-multisite ga o‘zgartirish; text domainni yangilash; versiyani oshirish.
 

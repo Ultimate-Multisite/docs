@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# دروستکەری سایتی AI
+# دروستکەری سایتی AI {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## پێداویستییەکان
+## پێداویستییەکان {#requirements}
 
 - WordPress 5.3 یان بەرزتر
 - PHP 7.4 یان بەرزتر
 - پڵاگینی Multisite Ultimate (چالاک)
 
-## دامەزراندن
+## دامەزراندن {#installation}
 
 1. فایلەکانی پێوەکراوەکە باربکە بۆ بوخچەی `/wp-content/plugins/`
 2. پڵاگینەکە لە ڕێگەی مینیوی 'Plugins' لە WordPress چالاک بکە
 3. ڕێکخستنەکانی پێوەکراوەکە لە بەڕێوەبەری تۆڕ ڕێکبخە
 
-## گەشەپێدان
+## گەشەپێدان {#development}
 
-### ڕێکخستن
+### ڕێکخستن {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### پێکهاتەی پڕۆژە
+### پێکهاتەی پڕۆژە {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # یاساکانی نوێکردنەوەی کۆد
 ```
 
-### تاقیکردنەوە
+### تاقیکردنەوە {#testing}
 
 ئەم پێوەکراوە چوارچێوەیەکی تەواوی تاقیکردنەوە لەخۆدەگرێت:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **داپۆشینی تاقیکردنەوە**: ڕێکخراوە بۆ شوێنکەوتنی داپۆشینی کۆد
 - **تاقیکردنەوەی Multisite**: تاقیکردنەوەکان لە ژینگەی multisite ئەنجام دەدرێن
 
-### ستانداردەکانی کۆد
+### ستانداردەکانی کۆد {#code-standards}
 
 - **ستانداردەکانی کۆدنووسی WordPress**: لە ڕێگەی PHPCS جێبەجێ دەکرێت
 - **گونجاوی لەگەڵ PHP 7.4+**: تایبەتمەندییە مۆدێرنەکانی PHP پشتگیری دەکرێن
 - **شیکاریی جێگیر**: یەکخستنی PHPStan بۆ پشکنینی جۆر
 - **نوێکردنەوەی کۆد**: یاساکانی Rector بۆ بەرزکردنەوەکانی PHP
 
-### سیستەمی دروستکردن
+### سیستەمی دروستکردن {#build-system}
 
 - **پرۆسێسکردنی سەرچاوەکان**: بچووککردنەوە بۆ فایلەکانی CSS/JS
 - **وەرگێڕان**: دروستکردنی فایلی POT
 - **پاکێجکردن**: دروستکردنی ئەرشیف بۆ دابەشکردن
 - **دۆخی گەشەپێدان**: سەرچاوە بچووک‌نەکراوەکان بۆ هەڵەدۆزینەوە
 
-## ڕێکخستن
+## ڕێکخستن {#configuration}
 
 ئەم پێوەکراوە پشتگیری لە هەڵبژاردە ڕێکخستنە جۆراوجۆرەکان دەکات کە لە ڕووکارەکەی بەڕێوەبەری تۆڕەوە دەستپێگەیشتوون.
 
-## Hooks و Filters
+## Hooks و Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - دوای دەستپێکردنی پێوەکراوەکە دەخرێتە کار
 - `ultimate-multisite-ai-site-builder_loaded` - دوای بارکردنی هەموو فایلەکانی پێوەکراوەکە دەخرێتە کار
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - گۆڕینی ڕێکخستنەکانی پێوەکراوەکە
 - `ultimate-multisite-ai-site-builder_enabled` - گۆڕینی دۆخی چالاک/ناچالاکی پێوەکراوەکە بەسەر دۆخی بنەڕەتیدا
 
-## مۆڵەت
+## مۆڵەت {#license}
 
 ئەم پێوەکراوە بە مۆڵەتی GPL v3 یان دواتر مۆڵەتدراوە.
 
-## پشتگیری
+## پشتگیری {#support}
 
 بۆ پشتگیری و بەڵگەنامە، سەردانی [MultisiteUltimate.com](https://multisiteultimate.com) بکە
-## تۆماری گۆڕانکاری
+## تۆماری گۆڕانکاری {#changelog}
 
 - وەشانی 1.0.1 (2025-09-28): پێشگر بۆ ultimate-multisite ناوبنێرەوە؛ text domain نوێ بکەرەوە؛ بەرزکردنەوەی وەشان.
 

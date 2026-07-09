@@ -3,11 +3,11 @@ title: Àwọn Agbára Ìṣàkóso Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Àwọn Agbára Ìṣàkóso Àfikún
+# Àwọn Agbára Ìṣàkóso Àfikún {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 wá pẹ̀lú **àwọn agbára ìṣàkóso àfikún 7** tí olùrànlọ́wọ́ AI lè pè nígbà ìjíròrò. Àwọn agbára wọ̀nyí ń pèsè ìṣàkóso pẹ̀lú eto lórí àwọn àfikún WordPress tí a fi sori ẹrọ nípasẹ̀ [Eto Kíkọ Àfikún & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Akopọ̀ Àwọn Agbára
+## Akopọ̀ Àwọn Agbára {#abilities-overview}
 
 | Agbára | Slug | Àpèjúwe |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 wá pẹ̀lú **àwọn agbára ìṣàkóso àfikún 7**
 | Fi Àfikún Sori Ẹrọ | `install_plugin` | Gbé àfikún sandbox lọ sí directory àfikún WordPress tó ń ṣiṣẹ́. |
 | Mú Àfikún Ṣiṣẹ́ | `activate_plugin` | Mú àfikún sandbox ṣiṣẹ́ nínú àyíká sandbox wp-env. |
 
-## API Olùfi Àfikún Sori Ẹrọ
+## API Olùfi Àfikún Sori Ẹrọ {#plugin-installer-api}
 
 Olùfi àfikún sori ẹrọ ń ṣàkóso àwọn iṣẹ́ file system nígbà tí a bá ń gbé tàbí yọ àwọn àfikún kúrò. Àwọn ìhùwàsí pàtàkì:
 
@@ -28,7 +28,7 @@ Olùfi àfikún sori ẹrọ ń ṣàkóso àwọn iṣẹ́ file system nígbà
 - **Ìmúdójúìwọ̀n**: Rọ́pò àwọn fáìlì àfikún tó wà. Ó mú àfikún kúrò ní ṣíṣiṣẹ́ kí ó tó kọ̀wé láti yàgò fún àwọn àṣìṣe ipò-apá kan.
 - **Pípaarẹ́ nípasẹ̀ slug**: Wá directory àfikún nípasẹ̀ slug, ó mú un kúrò ní ṣíṣiṣẹ́ kọjá gbogbo àwọn ojúlé, lẹ́yìn náà ó yọ directory náà kúrò.
 
-### Fífọwọ́kọ Olùmú Fífí Sori Ẹrọ Àdáni
+### Fífọwọ́kọ Olùmú Fífí Sori Ẹrọ Àdáni {#registering-a-custom-install-handler}
 
 O lè so mọ́ install lifecycle nípa lílo àwọn actions `gratis_ai_plugin_installer_before_install` àti `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ìforúkọsílẹ̀ Ecosystem
+## Ìforúkọsílẹ̀ Ecosystem {#ecosystem-registry}
 
 A ń forúkọsílẹ̀ àwọn agbára nípasẹ̀ **ìforúkọsílẹ̀ ecosystem àfikún**. Ìforúkọsílẹ̀ náà so àwọn slug agbára mọ́ àwọn class handler wọn, ó sì fi wọ́n hàn sí tool dispatcher ti AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Ìṣepọ̀ HookScanner
+## Ìṣepọ̀ HookScanner {#hookscanner-integration}
 
 Àwọn agbára `create_plugin` àti `update_plugin` máa ń ṣiṣẹ́ **HookScanner** laifọwọ́yi lórí kóòdù tuntun tí a ṣẹ̀dá. HookScanner dá àtòjọ àwọn hook action àti filter WordPress tí àfikún náà forúkọsílẹ̀ padà.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner máa ń fo àwọn directory `vendor/` àti `node_modules/` kọjá laifọwọ́yi.
 
-## Ìlànà Iṣẹ́ Async
+## Ìlànà Iṣẹ́ Async {#async-job-architecture}
 
 Àwọn iṣẹ́ àfikún tó máa ń pẹ́ (ṣẹ̀dá, fi sori ẹrọ) ni a ń rán jáde gẹ́gẹ́ bí **àwọn iṣẹ́ async** pẹ̀lú ìtọ́pa ìlọsíwájú laaye. Ojú ìbánisọ̀rọ̀ AI ń yẹ ìlọsíwájú wò léraléra, ó sì ń rán àwọn ìmúdójúìwọ̀n ipò sí oníṣe:
 

@@ -3,11 +3,11 @@ title: Ndekọ mgbanwe
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Ndekọ mgbanwe
+# Ndekọ mgbanwe {#changelog}
 
-## 1.9.0 — E wepụtara na 2026-04-28
+## 1.9.0 — E wepụtara na 2026-04-28 {#190--released-on-2026-04-28}
 
-### Ọhụrụ
+### Ọhụrụ {#new}
 
 - **ikike `create_contact_form`** — na-emepụta fọm kọntaktị site n'iji plugin fọm na-arụ ọrụ (Contact Form 7, WPForms, Fluent Forms, ma ọ bụ Gravity Forms) ma weghachite shortcode dị njikere itinye n'ime post ma ọ bụ peeji ọ bụla.
 - **ikike `set_featured_image`** — na-ekenye onyonyo pụtara ìhè nye post ma ọ bụ peeji site na attachment ID dị na Media Library ma ọ bụ URL dịpụrụ adịpụ; na-ebubata onyonyo ahụ na-akpaghị aka mgbe e nyere URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Weghachite session ikpeazụ** — panel chat ugbu a na-ebunye mkparịta ụka kacha ọhụrụ na-akpaghị aka mgbe peeji na-ebunye na mgbe widget meghere, ka context ghara ịla n'iyi n'etiti ịgagharị peeji.
 - **Njikọ omume plugin** — njikọ ngwa ngwa gaa Settings na Abilities Registry ugbu a na-apụta na ihuenyo WordPress **Plugins → Installed Plugins** n'okpuru nkọwa plugin.
 
-### Emelitere
+### Emelitere {#improved}
 
 - **Nnwale ọzọ maka isi iyi onyonyo** — agent ugbu a na-anwale ọzọ isi iyi onyonyo efu niile ahaziri tupu ọ laghachi na onyonyo AI mepụtara mgbe nbudata dara.
 - **Panel ozi model** — na-apụta mgbe niile n'isi chat; anaghịzi ezobe mgbe ozi mbụ gasịrị.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ndezigharị chat widget** — akara ngosi AI jikọtara ọnụ dochiri avatar omenala gara aga; kwekọrọ na usoro agent etinyere n'ime.
 - **Ime URL ka ọ bụrụ njikọ** — URL ndị na-apụta na ozi system na bubbles ozi njehie ugbu a na-egosi dị ka njikọ a pụrụ ịpị.
 
-### Edoziri
+### Edoziri {#fixed}
 
 - **Ịchọta ikike** — edoziwo nkọwa, ntụaka system prompt, na nhazi namespace ka ikike niile pụta na ndepụta ngwá ọrụ agent n'enweghị ntụpọ.
 - **Cache providers** — providers ugbu a na-echekwara cache n'ofe saịtị site na counter version, na-egbochi nsogbu stale-provider na netwọk multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — E wepụtara na 2026-04-09
+## 1.4.0 — E wepụtara na 2026-04-09 {#140--released-on-2026-04-09}
 
-### Ọhụrụ
+### Ọhụrụ {#new-1}
 
 - **Iwu benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — na-agba suite benchmark Agent Capabilities v1 site na command line maka CI pipelines na usoro ọrụ nyocha model. Na-akwado ịgba kwa-ajụjụ, mgbanwe provider/model, na mmepụta JSON/CSV.
 - **Suite benchmark Agent Capabilities v1** — nchịkọta ahaziri nke prompts mgbagwoju anya, nwere ọtụtụ nzọụkwụ, nke na-anwale oke ikike niile, yana akara na mkpesa token/oge.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ajụjụ benchmark weebụsaịtị ụlọ oriri na ọṅụṅụ** (`q-restaurant-website`) — ule site na mbido ruo n’isi na-ekpuchi ndebanye CPT, design system, navigation, na nchọpụta plugin.
 - **AI provider connector plugins** agbakwunyere na WordPress Playground blueprints maka nhazi mmepe mpaghara ngwa ngwa.
 
-### Emeziwanye
+### Emeziwanye {#improved-1}
 
 - Emelitere README na akwụkwọ nkọwa AI provider connector na ntụziaka nhazi.
 
-### Edoziri
+### Edoziri {#fixed-1}
 
 - Edoziri ọdịda ule PHPUnit 25 na ngalaba `main`.
 - Edoziri usoro URL GitHub releases na `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _A na-edobe ndetu mwepụta gara aga na repository plugin._

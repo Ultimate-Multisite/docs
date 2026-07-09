@@ -3,13 +3,13 @@ title: Ukwakha Umkhiqizo Wakho Wokuqala Wokubhalisa
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ukudala Umkhiqizo wakho Wokuqala Wokubhaliselwe (v2)
+# Ukudala Umkhiqizo wakho Wokuqala Wokubhaliselwe (v2) {#creating-your-first-subscription-product-v2}
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko esabasebenzisi be-Ultimate Multisite version 2.x kuphela. Uma usebenzisa version 1.x,**_ **_**bona lesi sihloko**_**.
 
 Ukuze uqale ukusebenzisa inethiwekhi yakho futhi uqale ukuthengisa amasevisi akho kubasebenzisi abangaba khona, kudingeka ube nezinketho ezahlukene zokubhaliselwe. Uyidala kanjani le mikhiqizo? Yiziphi izinhlobo zemikhiqizo ongazinikeza? Kulesi sihloko, sizohlanganisa konke okudingeka ukwazi ngemikhiqizo.
 
-## Uhlobo Lomkhiqizo
+## Uhlobo Lomkhiqizo {#product-type}
 
 Nge-Ultimate Multisite unganikeza amaklayenti akho izigaba ezimbili zemikhiqizo: **izinhlelo** kanye **nezengezo** **(Order Bump)**. Izengezo zingahlukaniswa zibe izinhlobo ezimbili:**amaphakheji** kanye **namasevisi**. Sizobona umehluko nezici zazo ngokulandelayo.
 
@@ -19,7 +19,7 @@ Nge-Ultimate Multisite unganikeza amaklayenti akho izigaba ezimbili zemikhiqizo:
 
   * **Amasevisi:** izengezo ezingaguquli ukusebenza kwe-Ultimate Multisite. Yimisebenzi ozoyenzela iklayenti lakho ngaphezu kohlelo eliluthengile. Isibonelo, ikhasimende lakho lingathenga uhlelo oluvumela isayithi elilodwa futhi liphinde likhokhele isevisi eyengeziwe ezokwenza idizayini yaleli sayithi.
 
-## Ukuphatha Imikhiqizo
+## Ukuphatha Imikhiqizo {#managing-products}
 
 Kwabaningi ithebhu ethi **Imikhiqizo** ku-Ultimate Multisite **(Ultimate Multisite > Imikhiqizo)** ingafaniswa nezinhlelo endaweni evamile yokusingatha amasayithi.
 
@@ -29,7 +29,7 @@ Lesi sigaba sizokuhola ekuqondeni le nsika ebalulekile ye-Ultimate Multisite.
 
 ![Ikhasi lohlu lwemikhiqizo](/img/config/products-list.png)
 
-## Ukwengeza Imikhiqizo
+## Ukwengeza Imikhiqizo {#adding-products}
 
 Kungakhathaliseki ukuthi kuwuhlelo, iphakheji, noma isevisi, indawo yokuqala yokuchaza into entsha ingokusebenzisa **Ultimate Multisite > Imikhiqizo > Engeza Umkhiqizo**.
 
@@ -39,13 +39,13 @@ Isixhumi esibonakalayo siqukethe izigaba ezimbili ezivelele. Ngakwesobunxele kuk
 
 ![Ukubuka konke kwekhasi lokuhlela umkhiqizo](/img/config/product-edit-full.png)
 
-### Incazelo
+### Incazelo {#description}
 
 Ulwazi oluyisisekelo lomkhiqizo lungachazwa ngokunikeza igama lomkhiqizo nencazelo. Lezi zikhombi ziboniswa noma kuphi lapho kudingeka khona ulwazi lomkhiqizo, njengokukhethwa kohlelo nentengo, ama-invoice, ukuthuthukiswa, nokunye okufanayo.
 
 ![Isigaba sencazelo yomkhiqizo](/img/config/product-description.png)
 
-### Uhlobo Lwentengo
+### Uhlobo Lwentengo {#pricing-type}
 
 Ngakwesokudla kwesixhumi esibonakalayo, intengo eyisisekelo ingachazwa.
 
@@ -53,7 +53,7 @@ Ngakwesokudla kwesixhumi esibonakalayo, intengo eyisisekelo ingachazwa.
 
 I-Ultimate Multisite isekela izinhlobo ezintathu ezahlukene zentengo. Inketho ethi **okukhokhelwayo** icela umlawuli wenethiwekhi ulwazi mayelana nentengo yomkhiqizo nobuningi bokukhokhiswa.
 
-### Intengo
+### Intengo {#pricing}
 
 Ingxenye yentengo ichaza intengo eyisisekelo yomkhiqizo nesikhawu sokukhokhiswa.
 
@@ -61,7 +61,7 @@ Ingxenye yentengo ichaza intengo eyisisekelo yomkhiqizo nesikhawu sokukhokhiswa.
 
 ngakho isibonelo sentengo engu-$29.99 enesilungiselelo senyanga engu-1 sizokhokhisa u-$29.99 inyanga ngayinye. Ngokufanayo, intengo engu-$89.97 enesilungiselelo sezinyanga ezi-3 izokhokhisa lelo nani njalo ngekota.
 
-### Imijikelezo Yokukhokhisa
+### Imijikelezo Yokukhokhisa {#billing-cycles}
 
 Isigaba semijikelezo yokukhokhisa sicacisa ubuningi besikhawu sokukhokhisa esishiwo ngenhla futhi ngokuvamile siqondwa ngokwemibandela yezinkontileka noma izikhathi ezimisiwe.
 
@@ -69,7 +69,7 @@ Isigaba semijikelezo yokukhokhisa sicacisa ubuningi besikhawu sokukhokhisa esish
 
 Isibonelo, intengo yomkhiqizo engu-$29.99 enesikhawu senyanga engu-1 nemijikelezo yokukhokhisa engu-12 izokhokhisa u-$29.99 ngenyanga ngomkhiqizo ezinyangeni eziyi-12 ezilandelayo. Ngamanye amazwi, isilungiselelo esinjalo singasungula isikhathi esinentengo engaguquki engu-$29.99 ngenyanga izinyanga eziyi-12 bese simisa ukukhokhisa.
 
-### Isikhathi Sokuzama
+### Isikhathi Sokuzama {#trial-period}
 
 Ukunika amandla iswishi yokunikeza isikhathi sokuzama kuvumela umlawuli wenethiwekhi ukuthi achaze isikhathi sokuzama somkhiqizo.
 
@@ -77,7 +77,7 @@ Ukunika amandla iswishi yokunikeza isikhathi sokuzama kuvumela umlawuli wenethiw
 
 Ngesikhathi sokuzama, amakhasimende akhululekile ukusebenzisa umkhiqizo futhi ngeke akhokhiswe kuze kuphele isikhathi sokuzama.
 
-### Imali Yokusetha
+### Imali Yokusetha {#setup-fee}
 
 Ungase futhi usebenzise imali yokusetha ohlelweni lwakho.
 
@@ -85,7 +85,7 @@ Ungase futhi usebenzise imali yokusetha ohlelweni lwakho.
 
 Lokhu kusho ukuthi iklayenti lakho lizokhokha inani elengeziwe ekukhokhisweni kokuqala (ngaphezu kwentengo yohlelo) elihambisana nemali oyichazile kulesi sigaba.
 
-### Kuyasebenza
+### Kuyasebenza {#active}
 
 Iswishi yokusebenza ichaza ngokuphumelelayo ukuthi umkhiqizo uyatholakala yini kumakhasimende ukuze abhalise okusha.
 
@@ -93,13 +93,13 @@ Iswishi yokusebenza ichaza ngokuphumelelayo ukuthi umkhiqizo uyatholakala yini k
 
 Uma kukhona amakhasimende akhona kulolu hlelo, ukusetha iswishi esimweni sayo sokukhutshazwa kugcina ngokuphumelelayo uhlelo lwamakhasimende akhona kuyilapho kulususa ekubhalisweni kwesikhathi esizayo. **Amakhasimende akhona ohlelweni azoqhubeka nokukhokhiswa** kuze kube yilapho edluliselwa ohlelweni olusha noma esuswa ohlelweni.
 
-### Isithombe Somkhiqizo
+### Isithombe Somkhiqizo {#product-image}
 
 Inkinobho ethi **Layisha Isithombe** ivumela umlawuli wenethiwekhi ukuthi asebenzise ilabhulali yemidiya ukuze akhethe noma alayishe isithombe somkhiqizo.
 
 ![Isigaba sesithombe somkhiqizo](/img/config/product-image.png)
 
-### Susa
+### Susa {#delete}
 
 Inkinobho ethi **Susa Umkhiqizo** isusa umkhiqizo ohlelweni. Ivela uma umkhiqizo usushicilelwe.
 
@@ -107,11 +107,11 @@ Inkinobho ethi **Susa Umkhiqizo** isusa umkhiqizo ohlelweni. Ivela uma umkhiqizo
 
 Ngokungafani nokunye ukususa, umkhiqizo awufakwa kunoma yisiphi isimo sikadoti. Ngakho uma usususiwe isenzo asinakuhlehliswa.
 
-### Izinketho Zomkhiqizo
+### Izinketho Zomkhiqizo {#product-options}
 
 Uma ulwazi lomkhiqizo olusezingeni eliyisisekelo seluchaziwe, izinketho zomkhiqizo zisiza umlawuli wenethiwekhi ukuthi achaze kabanzi izici ezithile zomkhiqizo.
 
-#### Okuvamile
+#### Okuvamile {#general}
 
 Ithebhu ethi **Okuvamile** ichaza izici ezivamile zomkhiqizo ezingasebenzi kunoma yimaphi amanye amathebhu akhethekile omkhiqizo.
 
@@ -125,7 +125,7 @@ I-**Indima Yekhasimende** icacisa indima ikhasimende elinikezwa yona lapho isayi
 
 ![Izilungiselelo zendima yekhasimende](/img/config/product-customer-role-settings.png)
 
-#### Ukunyuselwa Nokwehliselwa Izinga
+#### Ukunyuselwa Nokwehliselwa Izinga {#up--downgrades}
 
 Le thebhu icacisa izindlela zokunyuselwa nokwehliselwa izinga ezitholakala kukhasimende ngaphakathi kwezinga lalo elithile.
 
@@ -143,7 +143,7 @@ Ukuze uchaze iqembu lohlelo cacisa izinhlelo ezihambisanayo ohlwini lwe-**iqembu
 
 Ultimate Multisite futhi ifaka isici se-**order bump** lapho imikhiqizo nezinsizakalo ezingeziwe ezifanele zingangezwa ezinhlelweni. Lokhu kunikezwa ikhasimende njengezinto ezengeziwe ezingangezwa ezinhlelweni ngesikhathi sokukhokha noma ngesikhathi sokunyuselwa izinga.
 
-#### Ukuhlukahluka Kwamanani
+#### Ukuhlukahluka Kwamanani {#price-variations}
 
 Ukuhlukahluka kwamanani kuvumela umlawuli wenethiwekhi ukuthi acacise amazinga entengo ahlukile kuye ngobude besikhathi. Lesi silungiselelo senza kube nokwenzeka ukuthi kunikezwe isikhathi sokukhokhiswa sanyanga zonke, sekota, sonyaka, noma esinye isikhathi sokukhokhisa sanoma yiluphi uhlobo kumkhiqizo ofanayo. Isibonelo, ungasetha umkhiqizo ku-$29.99/ngenyanga ngenketho yonyaka enesaphulelo ku-$249.99/ngonyaka.
 
@@ -165,7 +165,7 @@ Isibonelo, uma intengo yomkhiqizo wakho oyisisekelo ingu-$29.99 ngenyanga, ungan
 Ukuhlukahluka kwamanani kuphela akufaki iswishi noma ukushintsha ku-checkout ye-frontend. Ukuze uvumele amakhasimende ukuthi ashintshe phakathi kwezikhathi zokukhokhisa (isb. Nyanga zonke / Minyaka yonke), kudingeka ungeze inkambu ethi **Ukukhetha Isikhathi** efomini lakho lokukhokha. Bona [Amafomu Okukhokha: Ukwengeza Iswishi Yokukhetha Isikhathi](checkout-forms#adding-a-period-selection-toggle) ukuze uthole imiyalelo yesinyathelo ngesinyathelo.
 :::
 
-#### Izintela
+#### Izintela {#taxes}
 
 Ithebhu ethi **Izintela** ihambisana nezilungiselelo zentela ezicaciswe ku-**Ultimate Multisite > Settings > Taxes** futhi ikakhulukazi amanani entela achaziwe. Ukuze uvumele izintela futhi uchaze amanani entela asebenzayo sicela ubheke imibhalo ku-**Ultimate Multisite: Settings**
 
@@ -179,7 +179,7 @@ Uma inani lentela selichaziwe ku-**Ultimate Multisite > Settings > Manage Tax Ra
 
 Ukuze ubonise ukuthi umkhiqizo uyinto ekhokhiswa intela, setha iswishi ethi **Iyakhokhiswa Intela** ukuthi isebenze bese ukhetha inani lentela elisebenzayo kumenyu eyehlayo yeSigaba Sentela.
 
-#### Izifanekiso Zamasayithi
+#### Izifanekiso Zamasayithi {#site-templates}
 
 Ngokuyisisekelo, izifanekiso zamasayithi zingamawebhusayithi e-WordPress aphelele akopishwa kusayithi lekhasimende ekuqaleni kokubhalisa kwalo.
 
@@ -201,7 +201,7 @@ Okokugcina, **K** **hetha Izifanekiso Zamasayithi Ezitholakalayo** kweqa izifane
 
 Ekugcineni uma umlawuli wenethiwekhi efuna ukukhethwa kwesifanekiso kwenzeke ezinyathelweni zokukhokha, isilungiselelo esithi ' _okuzenzakalelayo_ ' sizokwanela. Kungenjalo, ukususa nokukhiya ukukhethwa kwesifanekiso bese kudluliselwa ukukhetha kuzilungiselelo zohlelo, izinketho ezithi ' _nikeza isifanekiso esisha_ ' noma ' _khetha izifanekiso zamasayithi ezitholakalayo_ ' zingafiseleka.
 
-#### Amasayithi
+#### Amasayithi {#sites}
 
 Ithebhu ethi **Amasayithi** iyingxenye yokusebenza kwemikhawulo ye-Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Lesi silungiselelo sicacisa inani eliphezulu lamasayithi ikhasimende elingawakha
 
 Ukuze unike amandla umkhawulo, setha iswishi ethi **khawulela amasayithi** esimweni sayo esisebenzayo bese ucacisa inani eliphezulu lamasayithi enkambini ethi **isabelo sesayithi**.
 
-#### Ukuvakashelwa
+#### Ukuvakashelwa {#visits}
 
 Ithebhu ethi **Ukuvakashelwa** iyingxenye eyengeziwe yohlelo lwemikhawulo ye-Ultimate Multisite. Lesi silungiselelo sivumela ukubalwa nokuncishiswa okulandelayo kwezivakashi ezihlukile esizeni sekhasimende.
 
@@ -223,7 +223,7 @@ Ukuze usebenzise lesi sici, setha iswishi ethi **khawulela ukuvakashelwa okuhluk
 
 Uma lo mkhawulo usufinyelelwe, i-Ultimate Multisite izoyeka ukunikeza isayithi lekhasimende esikhundleni sokubonisa umlayezo okhombisa ukuthi imikhawulo yeqiwe.
 
-#### Abasebenzisi
+#### Abasebenzisi {#users}
 
 Imikhawulo ethi 'Abasebenzisi' ye-Ultimate Multisite ivumela umlawuli wenethiwekhi ukuthi abeke imikhawulo enanini labasebenzisi abangadalwa futhi banikezwe izindima.
 
@@ -233,7 +233,7 @@ Ukuze unike amandla isici semikhawulo, setha iswishi ethi **khawulela umsebenzis
 
 Okulandelayo, endimeni ngayinye ezokhawulelwa, setha iswishi eseduze nayo esimweni esisebenzayo bese uchaza umkhawulo ophezulu omkhulu enkambini efanele.
 
-#### Izinhlobo Zokuthunyelwe
+#### Izinhlobo Zokuthunyelwe {#post-types}
 
 Ithebhu ethi **Izinhlobo Zokuthunyelwe** ivumela umlawuli wenethiwekhi ukuthi abeke imikhawulo enemininingwane kuqoqo elibanzi lezinhlobo zokuthunyelwe ngaphakathi kwe-WordPress.
 
@@ -245,7 +245,7 @@ Ukuze unike amandla lolu hlelo olungaphansi lwemikhawulo, setha iswishi ethi **k
 
 Okulandelayo, kuhlobo ngalunye lokuthunyelwe oluzokhawulelwa, luvule ngokuyislayida iye kwesokudla bese ucacisa umkhawulo ophezulu omkhulu enkambini efanele.
 
-#### Isikhala Sediski
+#### Isikhala Sediski {#disk-space}
 
 Ithebhu ethi **Isikhala Sediski** ivumela abalawuli benethiwekhi ukuthi bakhawulele isikhala esisetshenziswa amakhasimende.
 
@@ -257,13 +257,13 @@ Ukuze unike amandla umkhawulo wokusetshenziswa kwediski, setha iswishi ethi **kh
 
 Okulandelayo, cacisa umkhawulo ophezulu omkhulu ngamamegabhayithi enkambini ethi **isabelo sesikhala sediski**.
 
-#### Isizinda Esenziwe Ngokwezifiso
+#### Isizinda Esenziwe Ngokwezifiso {#custom-domain}
 
 Ngokushintsha le nketho ungavumela izizinda ezenziwe ngokwezifiso kulolu hlelo ngokuqondile.
 
 ![Ithebhu yezizinda ezenziwe ngokwezifiso](/img/config/product-custom-domains.png)
 
-#### Amatimu
+#### Amatimu {#themes}
 
 Ithebhu ethi **Amatimu** ngaphakathi kwezinketho zomkhiqizo ivumela umlawuli wenethiwekhi ukuthi enze amatimu atholakale kumakhasimende ukuze awakhethe futhi ngokuzikhethela aphoqe isimo setimu.
 
@@ -281,7 +281,7 @@ Ukukhetha **ukuziphatha** kuvumela umlawuli wenethiwekhi ukuthi achaze isimo set
 
 Esimweni esithi **K** **uyatholakala** itimu yenziwa itholakale ekhasimendeni ukuze lizisebenzisele yona. Ngokuphambene, isimo esithi **Akutholakali** sisusa ekhasimendeni ikhono lokusebenzisa itimu. Okokugcina, inketho ethi **Phoqa Ukusebenzisa** iphoqa ukukhethwa nokusetshenziswa kwetimu ngaleyo ndlela iyimise njengokuzenzakalelayo lapho kudalwa isayithi.
 
-#### Ama-plugin
+#### Ama-plugin {#plugins}
 
 Ngokufanayo nethebhu yama-Themes, i-Ultimate Multisite ivumela umlawuli wenethiwekhi ukuthi achaze ukubonakala kwama-plugin kumakhasimende kanye nesimo sawo lapho kudalwa isayithi elisha.
 
@@ -301,7 +301,7 @@ Isilungiselelo se-**Force Activate & Lock** sisebenza ngendlela efanayo kodwa si
 
 Umphathi wenethiwekhi angase afise ukucabangela izilungiselelo ze-Force Activate & Lock kanye ne-Force Inactivate & Lock ngokuhambisana namathempulethi esayithi, njengoba ama-plugin nezimo zama-plugin ngaphakathi kwamathempulethi kungase kuthintwe yilezi zilungiselelo uma zikhethiwe.
 
-#### Setha Kabusha Imikhawulo
+#### Setha Kabusha Imikhawulo {#reset-limitations}
 
 Ithebhu ye-**Reset Limitations** isetha kabusha yonke imikhawulo yangokwezifiso echazwe kumkhiqizo. Ukuze usethe kabusha imikhawulo chofoza inkinobho ethi **reset limitations**.
 
@@ -311,7 +311,7 @@ Ukuze uqinisekise isenzo, slayida i-toggle ethi **confirm reset** iye esimweni s
 
 ![Ithebhu ye-Reset Limitations](/img/config/product-reset-limitations.png)
 
-## Hlela, Phindaphinda, noma Susa Umkhiqizo
+## Hlela, Phindaphinda, noma Susa Umkhiqizo {#edit-duplicate-or-delete-product}
 
 Imikhiqizo ekhona ingahlelwa, iphinde ikopishwe noma isuswe ngokuzulazula uye ku-**Ultimate Multisite > Products** bese ubeka ikhesa phezu kwegama lomkhiqizo okhona.
 

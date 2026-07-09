@@ -3,7 +3,7 @@ title: Yhteisö
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kuinka liittyä Ultimate Multisite -yhteisöön
+# Kuinka liittyä Ultimate Multisite -yhteisöön {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community on paikka, jossa voit ottaa yhteyttä muihin Ultimate Multisite -käyttäjiin ja jakaa vinkkejä, kokemuksia ja paljon muuta. Pääset Ultimate Multisite Communityyn siirtymällä osoitteeseen https://community.ultimatemultisite.com/home.
 

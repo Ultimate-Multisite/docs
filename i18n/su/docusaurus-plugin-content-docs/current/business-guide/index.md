@@ -3,13 +3,13 @@ title: Ngawangun Usaha Situs Wéb Ceruk
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ngawangun Bisnis Website Niche nganggo Ultimate Multisite
+# Ngawangun Bisnis Website Niche nganggo Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Kalolobaan jalma anu nyobaan ngajual website bersaing dina harga ngalawan Wix, Squarespace, jeung rébuan freelancer. Maranéhna éléh. Anu meunang nyaéta anu milih audiens husus, ngawangun solusi anu disaluyukeun pikeun audiens éta, sarta narik biaya pikeun nilai anu ditepikeun.
 
 Kursus ieu ngajarkeun anjeun kumaha ngalakukeun éta persis nganggo Ultimate Multisite.
 
-## Naon anu Bakal Anjeun Wangun
+## Naon anu Bakal Anjeun Wangun {#what-you-will-build}
 
 Sapanjang kursus ieu anjeun bakal ngawangun jaringan nyata anu jalan disebut **FitSite** -- platform website anu diwangun husus pikeun studio fitness, palatih pribadi, jeung nu boga gym.
 
@@ -23,7 +23,7 @@ Dina palajaran pamungkas, FitSite bakal jadi platform niche lengkep kalayan:
 
 Anjeun bakal nuturkeun léngkah demi léngkah, sarta dina ahirna anjeun bakal boga platform anu jalan sarta pangaweruh pikeun ngulang prosésna pikeun niche naon waé anu anjeun pilih.
 
-## Naha Studio Fitness?
+## Naha Studio Fitness? {#why-fitness-studios}
 
 Kami butuh conto konkret anu bisa dituturkeun ku saha waé. Studio fitness cocog sabab:
 
@@ -34,7 +34,7 @@ Kami butuh conto konkret anu bisa dituturkeun ku saha waé. Studio fitness cocog
 
 Sagala hal anu anjeun pelajari nalika ngawangun FitSite bisa langsung diterapkeun kana niche naon waé anu anjeun pilih: réstoran, agén real estate, firma hukum, garéja, kontraktor dagang, atawa vertikal séjénna.
 
-## Struktur Kursus
+## Struktur Kursus {#course-structure}
 
 Unggal palajaran ngenalkeun hiji konsép, ngajelaskeun naha éta penting, sarta nungtun anjeun ngalaksanakeunana dina jaringan FitSite. Unggal palajaran ngawangun dumasar kana anu saméméhna.
 
@@ -55,7 +55,7 @@ Unggal palajaran ngenalkeun hiji konsép, ngajelaskeun naha éta penting, sarta 
 | [13. Ngagedékeun](lesson-13-growth) | Tumuwuh tina palanggan munggaran jadi bisnis nyata | Strategi pertumbuhan jeung otomasi FitSite |
 | [14. Naon Saterusna](lesson-14-whats-next) | Ngalegaan ka niche anu padeukeut jeung kasempetan anyar | Roadmap anjeun saluareun FitSite |
 
-## Prasyarat
+## Prasyarat {#prerequisites}
 
 - Pamasangan WordPress Multisite (atawa kersa pikeun nyetélna)
 - Lisénsi Ultimate Multisite anu aktip
@@ -63,6 +63,6 @@ Unggal palajaran ngenalkeun hiji konsép, ngajelaskeun naha éta penting, sarta 
 
 Teu merlukeun coding. Lamun anjeun can kungsi ngagunakeun Ultimate Multisite saméméhna, éta henteu masalah -- Palajaran 3 dimimitian tina pamasangan anyar.
 
-## Siap?
+## Siap? {#ready}
 
 Mimitian ku [Palajaran 1: Naha Niche Meunang](lesson-1-why-niche).

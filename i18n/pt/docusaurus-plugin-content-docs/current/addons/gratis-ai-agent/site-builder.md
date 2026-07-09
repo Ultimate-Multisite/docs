@@ -3,15 +3,15 @@ title: Orquestração do Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orquestração do Site Builder v2
+# Orquestração do Site Builder v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (introduzido no Gratis AI Agent v1.4.0) é o motor que impulsiona a criação de sites em múltiplos passos. Quando pede ao agente para "criar um site de restaurante" ou "criar um portefólio com um blog", o orquestrador divide esse objetivo de alto nível num **plano** estruturado, descobre os plugins necessários para o cumprir, executa cada passo em sequência, acompanha o progresso e recupera de erros autonomamente.
 
 ---
 
-## Como Funciona
+## Como Funciona {#how-it-works}
 
-### 1. Geração do Plano
+### 1. Geração do Plano {#1-plan-generation}
 
 Quando o agente recebe uma instrução de criação de site, chama a capacidade `create_site_plan` para produzir um **plano de site** JSON. O plano descreve:
 
@@ -61,7 +61,7 @@ Quando o agente recebe uma instrução de criação de site, chama a capacidade 
 }
 ```
 
-### 2. Descoberta de Plugins
+### 2. Descoberta de Plugins {#2-plugin-discovery}
 
 Antes de a execução começar, o orquestrador analisa os `plugin_requirements` do plano e verifica quais plugins já estão ativos. Para plugins em falta, ele:
 
@@ -71,7 +71,7 @@ Antes de a execução começar, o orquestrador analisa os `plugin_requirements` 
 
 Falhas na descoberta de plugins não são fatais — o orquestrador marca os passos afetados como `skipped` e continua com o resto do plano.
 
-### 3. Execução do Plano
+### 3. Execução do Plano {#3-plan-execution}
 
 O orquestrador chama `execute_site_plan` com o ID do plano. A execução prossegue fase a fase, passo a passo:
 
@@ -79,7 +79,7 @@ O orquestrador chama `execute_site_plan` com o ID do plano. A execução prosseg
 - **Passos paralelos** — passos dentro da mesma fase que não têm interdependências são despachados em simultâneo quando a flag `parallel` está definida.
 - **Tempo limite do passo** — cada passo tem um tempo limite individual (predefinição: a definição `Ability Timeout`). Um passo que excede o tempo limite é marcado como `failed` e o plano continua.
 
-### 4. Acompanhamento do Progresso
+### 4. Acompanhamento do Progresso {#4-progress-tracking}
 
 Chame `get_plan_progress` a qualquer momento para verificar o estado da execução:
 
@@ -104,7 +104,7 @@ Utilizadores de WP-CLI podem monitorizar o progresso com:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Recuperação de Erros
+### 5. Recuperação de Erros {#5-error-recovery}
 
 Quando um passo falha, o orquestrador verifica se existe um passo **alternativo** definido no plano:
 
@@ -115,9 +115,9 @@ O agente comunica todas as falhas no resumo final do plano e pode sugerir passos
 
 ---
 
-## Capacidades do Plano de Site
+## Capacidades do Plano de Site {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Gera um plano de site estruturado a partir de uma descrição de objetivo em linguagem natural.
 
@@ -134,7 +134,7 @@ Gera um plano de site estruturado a partir de uma descrição de objetivo em lin
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Começa a executar um plano de site gerado anteriormente.
 
@@ -150,7 +150,7 @@ Começa a executar um plano de site gerado anteriormente.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Devolve o estado de execução atual de um plano de site.
 
@@ -164,7 +164,7 @@ Devolve o estado de execução atual de um plano de site.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Resolve manualmente uma etapa falhada e retoma a execução do plano a partir da etapa seguinte. Use isto quando a recuperação automática não tiver sido possível e quiser intervir.
 
@@ -180,7 +180,7 @@ Resolve manualmente uma etapa falhada e retoma a execução do plano a partir da
 
 ---
 
-## Comparar v1 e v2
+## Comparar v1 e v2 {#comparing-v1-and-v2}
 
 | Funcionalidade | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Resolve manualmente uma etapa falhada e retoma a execução do plano a partir da
 
 ---
 
-## Comandos de Plano WP-CLI
+## Comandos de Plano WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Gera um plano de site a partir de uma descrição de objetivo.
 
@@ -205,7 +205,7 @@ Gera um plano de site a partir de uma descrição de objetivo.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Executa um plano gerado anteriormente.
 
@@ -213,7 +213,7 @@ Executa um plano gerado anteriormente.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Mostra o progresso atual de um plano em execução ou concluído.
 
@@ -221,7 +221,7 @@ Mostra o progresso atual de um plano em execução ou concluído.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Lista todos os planos de site (pendentes, em curso e concluídos).
 
@@ -229,7 +229,7 @@ Lista todos os planos de site (pendentes, em curso e concluídos).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Repõe um plano falhado para `pending` para que possa ser reexecutado desde o início.
 

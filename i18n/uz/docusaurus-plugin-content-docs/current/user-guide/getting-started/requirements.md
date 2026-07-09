@@ -3,11 +3,11 @@ title: Talablar
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Talablari
+# Ultimate Multisite Talablari {#ultimate-multisite-requirements}
 
 Ultimate Multisite-ni sotib olishdan oldin o'zingizga berishingiz kerak bo'lgan birinchi narsa — bizning pluginimizni ishga tushirish uchun qanday talablar mavjud? Xursandchilik bilan aytishim shart, Ultimate Multisite-ni ishga tushirish uchun juda oz oddiy talablar bor: **domen nomi**, yaxshi **hosting provayderi** va WordPressning **Multisite** o'rnatmasi. Bu yetarli!
 
-## Domen Nomi
+## Domen Nomi {#domain-name}
 
 Avvalo, domen nomidan gaplashamiz.
 
@@ -17,7 +17,7 @@ Bizning pluginimiz obuna xizmatlarini, to'lov yig'ishni, checkout formalarini, c
 
 Agar siz veb-saytlarni xizmat sifatida sotayotgan bo'lsangiz, tanlagan har qanday nishotingizni bizning pluginimiz orqali boshqarishingiz mumkin! Biznes rejalaringizga mos keladigan domen nomini tanlashga ishonch hosil qiling.
 
-## Hosting Provayderi
+## Hosting Provayderi {#hosting-provider}
 
 Endi siz o'zingizning nishotingiz va biznesingizni aks ettiruvchi jozibali domen nomiga ega bo'lsangiz, Ultimate Multisite bilan tarmoqni joylashtirish uchun yaxshi veb-hosting kompaniyasini tanlashingiz kerak. Bozorda ba'zi yaxshi variantlar mavjud. Ba'zi hosting provayderlari Ultimate Multisite bilan yaxshi integratsiya qila oladi, bu esa siz nima qurmoqchi ekanligingizga qarab muhim omil bo'lishi mumkin.
 
@@ -25,7 +25,7 @@ Ultimate Multisite har qaysi hosting provayderida ham ishlaydi. Faqatgina ba'zi 
 
 Server ko'rsatmalari haqida gapiradigan bo'lsak, bu aniq formula yo'q, chunki u siz taklif qiladigan xususiyatlarga va tarmoqning o'lchamiga bog'liq bo'ladi. Ko'pkor hosting (shared hosting) boshlash uchun yaxshi boshlanish nuqtasi bo'lishi mumkin, ammo tarmoqingiz o'sishi bilan ehtimol maxsus VPSga (dedicated VPS) ehtiyoj sezishingiz mumkin.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Endi, WordPress Multisite o'rnatmasi haqida biroz gaplashamiz.
 

@@ -4,11 +4,11 @@ title: Filter - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 पासवर्ड रीसेट ईमेलमधील संदेशाच्या मजकुरावर फिल्टर लावते.
 
-## पॅरामीटर्स
+## पॅरामीटर्स {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,14 +17,14 @@ _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 | $user_login | `string` | वापरकर्त्याचे युजरनेम. |
 | $user_data | `\WP_User` | WP_User ऑब्जेक्ट. |
 
-### Since
+### Since {#since}
 
 - 2.8.0
 - 4.1.0: <code>$user_login</code> आणि <code>$user_data</code> पॅरामीटर्स जोडले.
-### Source
+### Source {#source}
 
 [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) याच्या लाइन 149 वर परिभाषित केले आहे.
 
 
-## Returns
+## Returns {#returns}
 डीफॉल्ट ईमेल संदेश.

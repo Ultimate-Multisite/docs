@@ -3,7 +3,7 @@ title: ਕੋਡ ਸਨਿੱਪਟਸ
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 ਲਈ ਕੋਡ ਸਨਿੱਪੇਟ
+# v2 ਲਈ ਕੋਡ ਸਨਿੱਪੇਟ {#code-snippets-for-v2}
 
 ਮੂਲ ਰੂਪ ਵਿੱਚ, **WordPress** ਲਈ ਕੋਡ ਸਨਿੱਪੇਟ ਕੁਝ ਖਾਸ ਕੰਮ ਕਰਨ ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਹਨ ਜਿਨ੍ਹਾਂ ਲਈ ਨਹੀਂ ਤਾਂ ਇੱਕ ਵੱਖਰਾ ਛੋਟਾ plugin ਲੋੜੀਂਦਾ ਹੁੰਦਾ। ਅਜਿਹੇ ਕੋਡ ਸਨਿੱਪੇਟ WordPress ਕੋਰ ਜਾਂ ਥੀਮ ਫਾਈਲਾਂ ਵਿੱਚੋਂ ਕਿਸੇ ਇੱਕ ਵਿੱਚ ਰੱਖੇ ਜਾਂਦੇ ਹਨ (ਆਮ ਤੌਰ 'ਤੇ ਤੁਹਾਡੀ ਥੀਮ ਦੀ functions.php ਫਾਈਲ) ਜਾਂ ਇਹ MU plugin ਵਜੋਂ ਵਰਤੇ ਜਾ ਸਕਦੇ ਹਨ।
 
@@ -15,13 +15,13 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**ਮੈਪ ਕੀਤੇ ਡੋਮੇਨਾਂ ਵਿੱਚ Font-Icons ਨਾਲ CORS ਸਮੱਸਿਆਵਾਂ ਨੂੰ ਠੀਕ ਕਰਨਾ**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Account ਮੀਨੂ ਆਈਟਮ ਦੀ ਸਥਿਤੀ ਬਦਲਣਾ
+## Account ਮੀਨੂ ਆਈਟਮ ਦੀ ਸਥਿਤੀ ਬਦਲਣਾ {#changing-the-position-of-the-account-menu-item}
 
 ਆਪਣੇ ਕਲਾਇੰਟ ਦੇ Dashboard 'ਤੇ Account ਮੀਨੂ ਆਈਟਮ ਦੀ ਸਥਿਤੀ ਬਦਲਣ ਲਈ, ਬੱਸ ਹੇਠਾਂ ਦਿੱਤਾ ਕੋਡ ਸਨਿੱਪੇਟ ਆਪਣੀ ਮੁੱਖ ਸਾਈਟ ਦੀ ਐਕਟਿਵ ਥੀਮ ਦੀ functions.php ਵਿੱਚ ਪਾਓ। ਤੁਸੀਂ ਇਸ ਸਨਿੱਪੇਟ ਨੂੰ ਆਪਣੇ mu-plugins ਜਾਂ ਕਸਟਮ plugins ਵਿੱਚੋਂ ਕਿਸੇ ਇੱਕ ਵਿੱਚ ਵੀ ਰੱਖ ਸਕਦੇ ਹੋ।
 
 add_filter('wu_my_account_menu_position', function() { return 10; // ਮੀਨੂ ਨੂੰ ਲੋੜੀਂਦੀ ਥਾਂ 'ਤੇ ਰੱਖਣ ਲਈ ਇਸ ਵੈਲਿਊ ਨੂੰ ਐਡਜਸਟ ਕਰੋ।
 
-## ਇਹ ਕਿਵੇਂ ਜਾਂਚ ਕਰੀਏ ਕਿ ਯੂਜ਼ਰ ਕਿਸੇ ਖਾਸ ਪਲਾਨ ਅਧੀਨ ਹੈ ਅਤੇ/ਜਾਂ ਉਸਦੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਐਕਟਿਵ ਹੈ
+## ਇਹ ਕਿਵੇਂ ਜਾਂਚ ਕਰੀਏ ਕਿ ਯੂਜ਼ਰ ਕਿਸੇ ਖਾਸ ਪਲਾਨ ਅਧੀਨ ਹੈ ਅਤੇ/ਜਾਂ ਉਸਦੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਐਕਟਿਵ ਹੈ {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 ਨੈੱਟਵਰਕ ਐਡਮਿਨ ਵਜੋਂ, ਤੁਹਾਨੂੰ ਕਸਟਮ ਫੰਕਸ਼ਨ ਬਣਾਉਣੇ ਪੈ ਸਕਦੇ ਹਨ ਜੋ ਬੇਸਿਕ ਕੰਮ ਕਰਨਗੇ ਜਾਂ ਕੋਈ ਸੇਵਾ/ਫੀਚਰ ਚੁਣੇ ਹੋਏ ਸਬਸਕ੍ਰਾਈਬਰਾਂ ਜਾਂ ਐਂਡ-ਯੂਜ਼ਰਾਂ ਲਈ ਉਪਲਬਧ ਕਰਵਾਉਣਗੇ, ਉਹਨਾਂ ਦੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਦੀ ਸਥਿਤੀ ਅਤੇ ਉਹਨਾਂ ਦੇ ਪਲਾਨ ਦੇ ਆਧਾਰ 'ਤੇ।
 
@@ -47,8 +47,8 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 ![ਪਲਾਨ IDs ਦਿਖਾਉਂਦੀ Products ਸੂਚੀ](/img/admin/products-list.png)
 
-## ਮੈਪ ਕੀਤੇ ਡੋਮੇਨਾਂ ਵਿੱਚ Font-Icons ਨਾਲ CORS ਸਮੱਸਿਆਵਾਂ ਨੂੰ ਠੀਕ ਕਰਨਾ
-## ਮੈਪ ਕੀਤੇ ਡੋਮੇਨਾਂ ਵਿੱਚ Font-Icons ਨਾਲ CORS ਸਮੱਸਿਆਵਾਂ ਨੂੰ ਠੀਕ ਕਰਨਾ
+## ਮੈਪ ਕੀਤੇ ਡੋਮੇਨਾਂ ਵਿੱਚ Font-Icons ਨਾਲ CORS ਸਮੱਸਿਆਵਾਂ ਨੂੰ ਠੀਕ ਕਰਨਾ {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## ਮੈਪ ਕੀਤੇ ਡੋਮੇਨਾਂ ਵਿੱਚ Font-Icons ਨਾਲ CORS ਸਮੱਸਿਆਵਾਂ ਨੂੰ ਠੀਕ ਕਰਨਾ {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 ਕਿਸੇ ਸਬ-ਸਾਈਟ ਨਾਲ ਡੋਮੇਨ ਮੈਪ ਕਰਨ ਤੋਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਪਤਾ ਲੱਗ ਸਕਦਾ ਹੈ ਕਿ ਸਾਈਟ ਨੂੰ ਕਸਟਮ ਫੌਂਟ ਲੋਡ ਕਰਨ ਵਿੱਚ ਮੁਸ਼ਕਲ ਆ ਰਹੀ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਸਰਵਰ ਸੈਟਿੰਗਾਂ ਵਿੱਚ cross-origin ਬਲਾਕ ਕਾਰਨ ਹੁੰਦਾ ਹੈ।
 
@@ -56,13 +56,13 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 ਹੇਠਾਂ Apache ਅਤੇ NGINX ਲਈ ਇਸ ਸਮੱਸਿਆ ਨੂੰ ਠੀਕ ਕਰਨ ਲਈ ਕੋਡ ਸਨਿੱਪੇਟ ਹਨ। ਇਹ ਬਦਲਾਅ ਸਰਵਰ ਕੌਂਫਿਗਰੇਸ਼ਨ ਫਾਈਲਾਂ (.htaccess ਫਾਈਲਾਂ ਅਤੇ NGINX config ਫਾਈਲਾਂ) ਦੀ ਉੱਨਤ ਜਾਣਕਾਰੀ ਦੀ ਲੋੜ ਹੈ। ਜੇ ਤੁਸੀਂ ਇਹ ਬਦਲਾਅ ਖੁਦ ਕਰਨ ਵਿੱਚ ਅਰਾਮਦੇਹ ਨਹੀਂ ਹੋ, ਤਾਂ ਮਦਦ ਮੰਗਣ ਵੇਲੇ ਇਹ ਪੇਜ ਆਪਣੇ ਹੋਸਟਿੰਗ ਪ੍ਰੋਵਾਈਡਰ ਦੀ ਸਪੋਰਟ ਟੀਮ ਨੂੰ ਭੇਜੋ।
 
-### Apache
+### Apache {#apache}
 
 ਆਪਣੀ .htaccess ਫਾਈਲ ਵਿੱਚ, ਇਹ ਪਾਓ:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 ਆਪਣੀ ਸਰਵਰ config ਫਾਈਲ ਵਿੱਚ (ਥਾਂ ਹਰ ਸਰਵਰ ਲਈ ਵੱਖਰੀ ਹੁੰਦੀ ਹੈ), ਇਹ ਪਾਓ:
 

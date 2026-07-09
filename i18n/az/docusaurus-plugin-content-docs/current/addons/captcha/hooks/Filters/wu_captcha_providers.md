@@ -4,19 +4,19 @@ title: Filter - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# Filter: wu_captcha_providers
+# Filter: wu_captcha_providers {#filter-wucaptchaproviders}
 
 Mövcud captcha sağlayıcılarını filtrləyin.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Ad | Növ | Təsvir |
 |------|------|-------------|
 | $providers | `\Abstract_Captcha_Provider[]` | Qeydiyyatdan keçmiş sağlayıcılar. |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 1.2.0
-### Mənbə
+### Mənbə {#source}
 
 [`inc/captcha-providers/class-captcha-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/captcha-providers/class-captcha-manager.php#L133) faylında 133-cü sətirində təyin edilmişdir.

@@ -4,22 +4,22 @@ title: Sefa - wu_checkout_pages_error_messages
 sidebar_label: wu_checkout_pages_error_messages
 _i18n_hash: 513f1f012abbaedc950e0d12f4fc01f4
 ---
-# Fyuluta: wu_checkout_pages_error_messages
+# Fyuluta: wu_checkout_pages_error_messages {#filter-wucheckoutpageserrormessages}
 
 Sefani mauthenga a zolakwa.
 
-## Magawo
+## Magawo {#parameters}
 
 | Dzina | Mtundu | Kufotokozera |
 |------|------|-------------|
 | $messages | `array` | Mauthenga a zolakwa. |
 
-### Kuyambira
+### Kuyambira {#since}
 
 - 2.1.1
-### Gwero
+### Gwero {#source}
 
 Yafotokozedwa mu [`inc/checkout/class-checkout-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout-pages.php#L218) pa mzere 218
 
 
-## Zobwezeredwa
+## Zobwezeredwa {#returns}

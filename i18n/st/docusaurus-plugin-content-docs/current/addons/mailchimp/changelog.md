@@ -3,7 +3,7 @@ title: Mailchimp Tlaleho ea Liphetoho
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Lenane la liphetoho la Mailchimp
+# Lenane la liphetoho la Mailchimp {#mailchimp-changelog}
 
 Mofuta: 1.1.1 - E lokollotsoe ka 2025-09-28
 

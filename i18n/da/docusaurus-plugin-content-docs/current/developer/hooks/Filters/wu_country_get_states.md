@@ -4,11 +4,11 @@ title: Filter - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filter: wu_country_get_states
+# Filter: wu_country_get_states {#filter-wucountrygetstates}
 
 Returnerer listen over stater for dette land.
 
-## Parametre
+## Parametre {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Returnerer listen over stater for dette land.
 | $country_code | `string` | ISO-kode på to bogstaver for landet. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instans af den aktuelle klasse. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.11
-### Kilde
+### Kilde {#source}
 
 Defineret i [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L86) på linje 86
 
 
-## Returnerer
+## Returnerer {#returns}
 Den filtrerede liste over stater.

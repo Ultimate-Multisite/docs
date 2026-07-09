@@ -3,7 +3,7 @@ title: WooCommerce એકીકરણ ફેરફાર નોંધ
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce સંકલન ફેરફાર નોંધ
+# WooCommerce સંકલન ફેરફાર નોંધ {#woocommerce-integration-changelog}
 
 Version 2.2.0 - 2026-07-01ના રોજ રિલીઝ થયું
 * નવું: Ultimate Multisite કરની રકમો હવે checkout પર અલગ WooCommerce fee લાઇનો તરીકે દેખાય છે, જેથી ચુકવણી પહેલાં કરની કુલ રકમો વધુ સ્પષ્ટ બને છે.

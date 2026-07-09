@@ -3,9 +3,9 @@ title: Mailster 변경 로그
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster 변경 로그
+# Mailster 변경 로그 {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * 초기 릴리스
 * 가입 또는 결제 시 자동 구독자 동기화
 * 제품별 리스트 할당

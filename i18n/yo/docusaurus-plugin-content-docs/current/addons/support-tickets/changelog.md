@@ -3,13 +3,13 @@ title: Àkọsílẹ̀ àwọn ìyípadà Tíkẹ́ẹ̀tì Àtilẹ́yìn
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Àkọọlẹ Ayipada Tikẹti Ìrànlọ́wọ́
+# Àkọọlẹ Ayipada Tikẹti Ìrànlọ́wọ́ {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Ti mú dara sí: Yọ vendor/ directory kúrò nínú ìtọ́pa Git (tí .gitignore ti bo tẹ́lẹ̀), ó dín ìwọ̀n repository kù
 * Ti mú dara sí: Dánwò títí dé WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Àtúnṣe: Gba àwọn iye null nínú àwọn nullable ticket model setters
 * Àtúnṣe: Fi gbogbo àwọn tikẹti pamọ́ sínú àwọn tábìlì global jakejado nẹ́tíwọ́ọ̀kì fún àtìlẹ́yìn multisite tó péye
 * Àtúnṣe: Fi àwọn pápá oṣiṣẹ́ pamọ́, kí o sì tún ìdarí-padà ojú-ewé òfo ṣe lórí fọ́ọ̀mù tikẹti-tuntun oníbàárà
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Ti mú dara sí: Kó àwọn ohun-èlò iwájú wọlé ní àdéhùn lórí àwọn ojú-ewé tikẹti ìrànlọ́wọ́ nìkan
 * Ti mú dara sí: Fo plugin autoloader kọjá nígbà tí Bedrock root autoloader ti kó dependencies wọlé tẹ́lẹ̀
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Ti ṣàfikún: Ìṣiṣẹ́ kíkún fún wíwo tikẹti fún alábòójútó àti iwájú
 * Ti ṣàfikún: AJAX handler fún fífi àwọn ìdáhùn tikẹti ránṣẹ́
 * Ti ṣàfikún: Àtìlẹ́yìn fún iṣẹ́ ìdáhùn tikẹti pẹ̀lú ìmúlò fọ́ọ̀mù tó péye
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Ti mú dara sí: Ìṣètò database pẹ̀lú query àti schema classes tó péye fún àwọn ìdáhùn àti attachments
 * Ti mú dara sí: Ìṣílọ sí àwọn properties gidi dípò attributes fún àwọn model tikẹti
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Ti ṣe imudojuiwọn: Tun prefix sọ orúkọ sí ultimate-multisite fún ìbámu
 * Ti ṣe imudojuiwọn: Ìṣọ̀kan text domain
 * Ti ṣe àtúnṣe: Àwọn àtúnṣe bug kékeré àti àwọn ìmúdára
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Ìtújáde àkọ́kọ́
 * Ètò ìṣàkóso tikẹti pípé
 * Ìṣàkóso ìwọlé ipele-púpọ̀

@@ -3,11 +3,11 @@ title: Umlando wezinguquko
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Irekhodi lezinguquko
+# Irekhodi lezinguquko {#changelog}
 
-## 1.9.0 — Ikhishwe ngo-2026-04-28
+## 1.9.0 — Ikhishwe ngo-2026-04-28 {#190--released-on-2026-04-28}
 
-### Okusha
+### Okusha {#new}
 
 - **ikhono le-`create_contact_form`** — lakha ifomu lokuxhumana lisebenzisa i-form plugin esebenzayo (Contact Form 7, WPForms, Fluent Forms, noma Gravity Forms) futhi libuyisa i-shortcode esilungele ukufakwa kunoma yikuphi okuthunyelwe noma ikhasi.
 - **ikhono le-`set_featured_image`** — linikeza okuthunyelwe noma ikhasi isithombe esivelele lisuka ku-ID yokunamathiselwe ekhona ye-Media Library noma ku-URL ekude; lingenisa isithombe ngokuzenzakalelayo uma kunikezwe i-URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Buyisela iseshini yokugcina** — iphaneli yengxoxo manje ilayisha kabusha ingxoxo yakamuva ngokuzenzakalelayo lapho ikhasi lilayishwa nalapho i-widget ivulwa, ukuze umongo ungalahleki ngesikhathi sokuzulazula phakathi kwamakhasi.
 - **Izixhumanisi zezenzo ze-plugin** — izixhumanisi ezisheshayo eziya Ezilungiselelweni nase-Registry Yamakhono manje zivela esikrinini se-WordPress **Ama-plugin → Ama-plugin Afakiwe** ngaphansi kwencazelo ye-plugin.
 
-### Kuthuthukisiwe
+### Kuthuthukisiwe {#improved}
 
 - **Ukuzama kabusha umthombo wesithombe** — i-agent manje izama kabusha yonke imithombo yezithombe yamahhala emisiwe ngaphambi kokubuyela esithombeni esikhiqizwe yi-AI uma ukulanda kwehluleka.
 - **Iphaneli yolwazi lwemodeli** — ihlala ibonakala enhlokweni yengxoxo; ayisafihlwa ngemva komlayezo wokuqala.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Ukwakhiwa kabusha kwe-widget yengxoxo** — isithonjana se-AI esihlanganisiwe sithatha indawo ye-avatar yangokwezifiso yangaphambilini; siyahambisana nohlelo lwama-agent akhelwe ngaphakathi.
 - **Ukwenza ama-URL abe izixhumanisi** — ama-URL avela emilayezweni yesistimu nasemabhamuzini emilayezo yamaphutha manje aboniswa njengezixhumanisi ezichofozekayo.
 
-### Kulungisiwe
+### Kulungisiwe {#fixed}
 
 - **Ukutholakala kwamakhono** — kulungiswe izincazelo, izinkomba ze-system prompt, nokuhambisana kwe-namespace ukuze wonke amakhono avele ohlwini lwamathuluzi e-agent ngokwethembeka.
 - **I-cache yabahlinzeki** — abahlinzeki manje bagcinwa ku-cache kuyo yonke isayithi ngokusebenzisa isibali senguqulo, kuvimbela izinkinga zabahlinzeki abaphelelwe yisikhathi kumanethiwekhi e-multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Ikhishwe ngo-2026-04-09
+## 1.4.0 — Ikhishwe ngo-2026-04-09 {#140--released-on-2026-04-09}
 
-### Okusha
+### Okusha {#new-1}
 
 - **Umyalo we-benchmark we-WP-CLI** (`wp gratis-ai-agent benchmark`) — usebenzisa i-suite ye-benchmark ye-Agent Capabilities v1 kusuka kulayini womyalo yamapayiphi e-CI nezinhlelo zokusebenza zokuhlola amamodeli. Isekela ukusebenzisa umbuzo ngamunye, ukweqa izilungiselelo zomhlinzeki/imodeli, nokukhishwa kwe-JSON/CSV.
 - **I-suite ye-benchmark ye-Agent Capabilities v1** — isethi ehlelekile yama-prompts ayinkimbinkimbi, anezinyathelo eziningi, ahlola yonke indawo yamakhono, enokunikeza amaphuzu nokubika ama-token/isikhathi.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Umbuzo we-benchmark wewebhusayithi yerestshurenti** (`q-restaurant-website`) — ukuhlola kusukela ekuqaleni kuya ekugcineni okuhlanganisa ukubhaliswa kwe-CPT, uhlelo lokuklama, ukuzulazula, nokutholwa kwama-plugin.
 - **Ama-plugin okuxhuma abahlinzeki be-AI** engezwe kuma-blueprints e-WordPress Playground ukuze kulungiselelwe ukuthuthukisa kwasendaweni ngokushesha.
 
-### Kuthuthukisiwe
+### Kuthuthukisiwe {#improved-1}
 
 - I-README ibuyekezwe ngemibhalo yokuxhuma abahlinzeki be-AI nemiyalelo yokumisa.
 
-### Kulungisiwe
+### Kulungisiwe {#fixed-1}
 
 - Ukwehluleka kokuhlolwa kwe-PHPUnit okungu-25 egatsheni le-`main` kuxazululiwe.
 - Ifomethi ye-URL yokukhishwa kwe-GitHub ku-`blueprint.json` ilungisiwe.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Amanothi okukhishwa angaphambilini agcinwa ku-repository ye-plugin._

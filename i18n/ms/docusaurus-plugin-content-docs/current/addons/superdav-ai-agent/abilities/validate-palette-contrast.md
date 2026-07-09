@@ -3,15 +3,15 @@ title: Sahkan Kontras Palet
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Sahkan Kontras Palet
+# Sahkan Kontras Palet {#validate-palette-contrast}
 
 Keupayaan **Sahkan Kontras Palet** menyemak pasangan warna dalam palet reka bentuk anda untuk pematuhan WCAG (Garis Panduan Kebolehcapaian Kandungan Web) sebelum menerapkannya pada tema anda.
 
-## Gambaran Keseluruhan
+## Gambaran Keseluruhan {#overview}
 
 Keupayaan ini memastikan skema warna laman web anda memenuhi piawaian kebolehcapaian dengan menyahkan nisbah kontras antara warna teks dan latar belakang. Ia membantu mengelakkan gabungan warna yang mungkin sukar dibaca oleh pengguna dengan masalah penglihatan.
 
-## Format Input
+## Format Input {#input-format}
 
 Keupayaan ini menerima palet warna sebagai input:
 
@@ -35,7 +35,7 @@ Keupayaan ini menerima palet warna sebagai input:
 }
 ```
 
-### Parameter
+### Parameter {#parameters}
 
 | Parameter | Jenis | Wajib | Penerangan |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Keupayaan ini menerima palet warna sebagai input:
 | `wcag_level` | string | Tidak | Tahap pematuhan WCAG: "A", "AA" (lalai), atau "AAA" |
 | `pairs_to_check` | array | Tidak | Pasangan warna spesifik untuk disahkan (cth., `["primary-text", "background-text"]`) |
 
-## Tahap WCAG yang Disemak
+## Tahap WCAG yang Disemak {#wcag-levels-checked}
 
 Keupayaan ini menyahkan nisbah kontras mengikut piawaian WCAG:
 
@@ -56,7 +56,7 @@ Keupayaan ini menyahkan nisbah kontras mengikut piawaian WCAG:
 - **Teks Normal** — teks yang lebih kecil daripada 18pt (atau 14pt tebal)
 - **Teks Besar** — teks 18pt atau lebih besar (atau 14pt tebal atau lebih besar)
 
-## Skema Output
+## Skema Output {#output-schema}
 
 Keupayaan ini mengembalikan laporan pengesahan terperinci:
 
@@ -95,7 +95,7 @@ Keupayaan ini mengembalikan laporan pengesahan terperinci:
 }
 ```
 
-### Medan Output
+### Medan Output {#output-fields}
 
 | Medan | Jenis | Penerangan |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Keupayaan ini mengembalikan laporan pengesahan terperinci:
 | `status` | string | "pass" atau "fail" untuk setiap pasangan |
 | `recommendations` | array | Cadangan untuk meningkatkan pasangan yang gagal |
 
-## Contoh Penggunaan
+## Contoh Penggunaan {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Keupayaan ini menyahkan semua gabungan warna dan mengembalikan:
 - ✅ Latar Belakang + Teks: Nisbah 12.1:1 (lulus WCAG AAA)
 - Keseluruhan: Mematuhi WCAG AA
 
-## Integrasi dengan Theme Builder
+## Integrasi dengan Theme Builder {#integration-with-theme-builder}
 
 Apabila menggunakan pemilihan arah reka bentuk (design-direction selection) Theme Builder, keupayaan Sahkan Kontras Palet:
 
@@ -129,7 +129,7 @@ Apabila menggunakan pemilihan arah reka bentuk (design-direction selection) Them
 4. Memberikan cadangan untuk pasangan yang tidak patuh
 5. Mencegah penggunaan skema warna yang tidak boleh diakses
 
-## Amalan Terbaik
+## Amalan Terbaik {#best-practices}
 
 - **Mulakan dengan tahap AA** — WCAG AA adalah standard untuk kebanyakan laman web
 - **Uji sebelum menggunakan** — sahkan palet anda sebelum menetapkan reka bentuk
@@ -137,7 +137,7 @@ Apabila menggunakan pemilihan arah reka bentuk (design-direction selection) Them
 - **Pertimbangkan keutamaan pengguna** — sesetengah pengguna mungkin mempunyai sensitiviti warna tambahan
 - **Gunakan penyemak kontras** — gabungkan keupayaan ini dengan alat pelayar untuk pengesahan
 
-## Pasangan yang Gagal dan Cadangan
+## Pasangan yang Gagal dan Cadangan {#failing-pairs-and-recommendations}
 
 Jika pasangan warna gagal pengesahan, keupayaan ini akan memberikan cadangan:
 
@@ -155,7 +155,7 @@ Jika pasangan warna gagal pengesahan, keupayaan ini akan memberikan cadangan:
 }
 ```
 
-## Keupayaan Berkaitan
+## Keupayaan Berkaitan {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — cipta logo dengan palet warna anda yang disahkan
 - [Create Menu](./create-menu.md) — bina navigasi dengan warna yang boleh diakses

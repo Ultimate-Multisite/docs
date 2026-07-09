@@ -3,17 +3,17 @@ title: Pakakas jeung Konfigurasi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Pakakas jeung Konfigurasi
+# Pakakas jeung Konfigurasi {#tools-and-configuration}
 
 Theme Builder ngagunakeun sakumpulan pakakas pikeun nganalisis, ngarancang, jeung ngawangun situs WordPress anjeun. Dina vérsi 1.16.0, **sd-ai-agent/site-scrape ayeuna jadi pakakas Tier 1**, ngajadikeun éta sadia sacara standar dina Theme Builder. Superdav AI Agent v1.18.0 ogé ngenalkeun pakét pendamping Advanced anu disebarkeun misah pikeun alur gawé pamekar anu dipercaya; pakakas éta lain bagian tina pakét inti WordPress.org jeung kudu dipasang sarta diotorisasi sacara misah.
 
-## Pakakas anu Sadia
+## Pakakas anu Sadia {#available-tools}
 
-### Pakakas Tier 1 (Sok Sadia)
+### Pakakas Tier 1 (Sok Sadia) {#tier-1-tools-always-available}
 
 Pakakas Tier 1 sadia sacara standar dina Theme Builder tanpa konfigurasi tambahan naon waé.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
 **Tujuan:** Nganalisis ramatloka anu geus aya pikeun nyokot inspirasi desain, struktur eusi, jeung fungsionalitas.
 
@@ -51,11 +51,11 @@ Analisis desain example.com jeung gunakeun éta salaku inspirasi pikeun situs ab
 - Situs anu beurat ku JavaScript bisa boga analisis anu kawates
 - Situs gedé bisa merlukeun waktu leuwih lila pikeun dianalisis
 
-### Pakakas Tier 2 (Opsional)
+### Pakakas Tier 2 (Opsional) {#tier-2-tools-optional}
 
 Pakakas Tier 2 sadia nalika sacara eksplisit diaktipkeun dina setélan Theme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
 Nyadiakeun métrik kinerja anu rinci:
 
@@ -65,7 +65,7 @@ Nyadiakeun métrik kinerja anu rinci:
 - Skor aksésibilitas
 - Skor prakték pangalusna
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
 Nganalisis jeung nyarankeun paningkatan pikeun:
 
@@ -75,11 +75,11 @@ Nganalisis jeung nyarankeun paningkatan pikeun:
 - Struktur eusi
 - Panempatan ajakan tindakan
 
-### Pakakas Tier 3 (Premium)
+### Pakakas Tier 3 (Premium) {#tier-3-tools-premium}
 
 Pakakas Tier 3 merlukeun konfigurasi tambahan atawa fitur premium.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Ngahasilkeun eusi pikeun:
 
@@ -89,7 +89,7 @@ Ngahasilkeun eusi pikeun:
 - Meta déskripsi
 - Téks ajakan tindakan
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
 Nyadiakeun kamampuhan desain tingkat lanjut:
 
@@ -99,7 +99,7 @@ Nyadiakeun kamampuhan desain tingkat lanjut:
 - Téori warna tingkat lanjut
 - Optimasi tipografi
 
-### Pakakas Pendamping Advanced (Pakét Misah)
+### Pakakas Pendamping Advanced (Pakét Misah) {#advanced-companion-tools-separate-package}
 
 Pakét pendamping Advanced disebarkeun misah ti rilis inti Superdav AI Agent. Ieu dimaksudkeun pikeun lingkungan pamekar jeung pamilik situs anu dipercaya, dimana administrator sacara eksplisit ngidinan agent pikeun ngagunakeun pakakas anu pangaruhna gedé.
 
@@ -116,9 +116,9 @@ Kamampuhan pendamping Advanced bisa ngawengku:
 
 Ulah ngadokuméntasikeun ieu salaku pakakas Theme Builder anu sadia sacara umum pikeun unggal pamasangan. Éta ngan sadia nalika pakét pendamping Advanced dipasang, diaktipkeun, jeung diwatesan ka administrator anu dipercaya.
 
-## Konfigurasi Pakakas
+## Konfigurasi Pakakas {#tool-configuration}
 
-### Ngaktipkeun Pakakas
+### Ngaktipkeun Pakakas {#enabling-tools}
 
 Pikeun ngaktipkeun pakakas tambahan dina Theme Builder:
 
@@ -127,7 +127,7 @@ Pikeun ngaktipkeun pakakas tambahan dina Theme Builder:
 3. Hurungkeun/pareuman pakakas sakumaha diperlukeun
 4. Simpen setélan
 
-### Idin Pakakas
+### Idin Pakakas {#tool-permissions}
 
 Sababaraha pakakas merlukeun idin:
 
@@ -137,7 +137,7 @@ Sababaraha pakakas merlukeun idin:
 - **Fitur tingkat lanjut** — bisa merlukeun subscription premium
 - **Pakakas pendamping Advanced** — merlukeun pakét Advanced anu disebarkeun misah jeung kapercayaan administrator sacara eksplisit
 
-### API Keys jeung Kredénsial
+### API Keys jeung Kredénsial {#api-keys-and-credentials}
 
 Konpigurasikeun API keys pikeun pakakas anu merlukeunana:
 
@@ -146,13 +146,13 @@ Konpigurasikeun API keys pikeun pakakas anu merlukeunana:
 3. Uji sambungan
 4. Simpen sacara aman
 
-### Masang Pakét Pendamping Advanced
+### Masang Pakét Pendamping Advanced {#installing-the-advanced-companion-package}
 
 Pakét pendamping Advanced dirilis misah ti ZIP inti WordPress.org. Pasang éta ngan ti kanal distribusi proyék resmi pikeun rilisna, tuluy watesan aksés ka administrator anu dipercaya. Tinjau gerbang persetujuan manusa jeung paripolah snapshot git saméméh ngaktipkeun pakakas filesystem, database, WP-CLI, dispatcher REST, pangwangun plugin, manajemén pamaké, atawa benchmark dina situs produksi.
 
-## Ngagunakeun sd-ai-agent/site-scrape
+## Ngagunakeun sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-### Pamakéan Dasar
+### Pamakéan Dasar {#basic-usage}
 
 Ménta Theme Builder pikeun nganalisis ramatloka:
 
@@ -161,7 +161,7 @@ Analisis desain situs pesaing abdi di competitor.com
 jeung sarankeun paningkatan desain pikeun situs abdi.
 ```
 
-### Analisis Husus
+### Analisis Husus {#specific-analysis}
 
 Ménta rupa-rupa analisis husus:
 
@@ -179,7 +179,7 @@ Pariksa responsivitas mobile example.com jeung pastikeun situs abdi
 sarua responsifna.
 ```
 
-### Analisis Babandingan
+### Analisis Babandingan {#comparison-analysis}
 
 Bandingkeun sababaraha situs:
 
@@ -188,22 +188,22 @@ Bandingkeun desain site1.com jeung site2.com sarta jieun desain
 anu ngahijikeun élemén pangalusna tina duanana.
 ```
 
-## Watesan jeung Pertimbangan Pakakas
+## Watesan jeung Pertimbangan Pakakas {#tool-limitations-and-considerations}
 
-### Pangwatesan Laju
+### Pangwatesan Laju {#rate-limiting}
 
 - Scraping diwatesan lajuna pikeun nyegah server kaleuleuwihi beban
 - Sababaraha pamundut ka site anu sarua bisa diwatesan lajuna
 - Site gedé bisa merlukeun waktu leuwih lila pikeun dianalisis
 
-### Akurasi Eusi
+### Akurasi Eusi {#content-accuracy}
 
 - Eusi dinamis bisa waé henteu kacangkem sacara lengkep
 - Eusi anu dirender ku JavaScript bisa henteu lengkep
 - Data real-time bisa waé henteu katémbong
 - Sababaraha eusi bisa aya di balik paywall
 
-### Pertimbangan Hukum jeung Étika
+### Pertimbangan Hukum jeung Étika {#legal-and-ethical-considerations}
 
 - Hormati robots.txt jeung kawijakan site
 - Ulah scrape eusi anu boga hak cipta pikeun diréproduksi
@@ -211,16 +211,16 @@ anu ngahijikeun élemén pangalusna tina duanana.
 - Pastikeun anjeun boga hak pikeun ngagunakeun eusi anu diekstrak
 - Turutan terms of service tina site anu dianalisis
 
-### Dampak Kinerja
+### Dampak Kinerja {#performance-impact}
 
 - Scraping site gedé bisa merlukeun waktu
 - Sababaraha scrape sakaligus bisa leuwih lalaunan
 - Konektipitas jaringan mangaruhan kagancangan
 - Dataset gedé bisa merlukeun pamrosésan leuwih loba
 
-## Prakték Pangalusna
+## Prakték Pangalusna {#best-practices}
 
-### Ngagunakeun Analisis Site
+### Ngagunakeun Analisis Site {#using-site-analysis}
 
 1. **Analisis sababaraha site** — kumpulkeun inspirasi tina sababaraha sumber
 2. **Fokus kana struktur** — diajar pola tata letak jeung organisasi
@@ -228,7 +228,7 @@ anu ngahijikeun élemén pangalusna tina duanana.
 4. **Talungtik tipografi** — idéntifikasi kombinasi font anu anjeun resep
 5. **Tinjau navigasi** — pahami organisasi menu
 
-### Scraping Étis
+### Scraping Étis {#ethical-scraping}
 
 1. **Hormati robots.txt** — turutan pituduh site
 2. **Ulah nyalin eusi** — paké analisis pikeun inspirasi wungkul
@@ -236,7 +236,7 @@ anu ngahijikeun élemén pangalusna tina duanana.
 4. **Sebatkeun sumber** — pasihan kredit ka sumber inspirasi
 5. **Turutan terms** — patuh kana terms of service site
 
-### Ngamaksimalkeun Éféktivitas Alat
+### Ngamaksimalkeun Éféktivitas Alat {#maximizing-tool-effectiveness}
 
 1. **Jelaskeun sacara spésifik** — pénta jinis analisis anu spésifik
 2. **Pasihan kontéks** — terangkeun tujuan site anjeun
@@ -244,9 +244,9 @@ anu ngahijikeun élemén pangalusna tina duanana.
 4. **Iterasi** — sampurnakeun dumasar kana hasil
 5. **Gabungkeun alat** — paké sababaraha alat pikeun analisis anu komprehensif
 
-## Ngalereskeun Masalah
+## Ngalereskeun Masalah {#troubleshooting}
 
-### Site Teu Bisa di-Scrape
+### Site Teu Bisa di-Scrape {#site-wont-scrape}
 
 - Pariksa naha site bisa diaksés sacara umum
 - Pastikeun robots.txt ngidinan scraping
@@ -254,7 +254,7 @@ anu ngahijikeun élemén pangalusna tina duanana.
 - Pariksa sambungan internét
 - Hubungi dukungan lamun masalah tetep aya
 
-### Analisis Teu Lengkep
+### Analisis Teu Lengkep {#incomplete-analysis}
 
 - Site bisa boga eusi dinamis
 - JavaScript bisa waé henteu dirender sacara lengkep
@@ -262,7 +262,7 @@ anu ngahijikeun élemén pangalusna tina duanana.
 - Cobaan analisis kaca anu spésifik gantina
 - Pénta jinis analisis anu spésifik
 
-### Kinerja Lalaunan
+### Kinerja Lalaunan {#slow-performance}
 
 - Site gedé merlukeun waktu leuwih lila pikeun dianalisis
 - Sababaraha scrape sakaligus leuwih lalaunan
@@ -270,7 +270,7 @@ anu ngahijikeun élemén pangalusna tina duanana.
 - Cobaan dina jam henteu rame
 - Analisis bagian anu leuwih leutik heula
 
-## Dokuméntasi Patali
+## Dokuméntasi Patali {#related-documentation}
 
 - [Wawancara Discovery](./discovery-interview.md) — kumpulkeun inpormasi desain
 - [Arah Desain](./design-direction.md) — sampurnakeun desain anjeun

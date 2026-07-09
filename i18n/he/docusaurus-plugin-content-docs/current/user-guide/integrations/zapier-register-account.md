@@ -3,7 +3,7 @@ title: רישום Account באמצעות Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# אירוע: רישום Account דרך Zapier
+# אירוע: רישום Account דרך Zapier {#event-register-an-account-via-zapier}
 
 במאמר [שילוב Ultimate Multisite עם Zapier](zapier.md), דנו כיצד להשתמש ב-Zapier כדי לבצע פעולות שונות בתוך Ultimate Multisite בהתבסס על טריגרים ואירועים. במאמר זה, נראה כיצד ניתן לשלב יישומי צד שלישי. נשתמש ב-Google Sheets כמקור הנתונים ונשלח את המידע אל Ultimate Multisite כדי לרשום Account.
 

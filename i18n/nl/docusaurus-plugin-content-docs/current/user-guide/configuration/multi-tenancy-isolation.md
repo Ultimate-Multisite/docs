@@ -3,11 +3,11 @@ title: Multi-tenant isolatie
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-tenant Isolatie
+# Multi-tenant Isolatie {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ondersteunt per-subsite database- en bestandssysteemisolatie voor soevereine tenants. Dit houdt tenantdata gescheiden terwijl netwerkgebaseerde provisioning, facturering en beheer behouden blijven.
 
-## Isolatiestrategie
+## Isolatiestrategie {#isolation-strategy}
 
 Gebruik soevereine isolatie voor klanten die een sterkere gegevensscheiding, dedicated opslagruimte voor het bestandssysteem of een aparte hostgrens vereisen.
 
@@ -18,7 +18,7 @@ Elke soevereine tenant moet hebben:
 - Een registry-entry van de tenant die de site koppelt aan zijn database, rootpad, hostname en isolatiemodel.
 - Een migratieverificatie-resultaat voordat de tenant als live wordt beschouwd.
 
-## Database host binding
+## Database host binding {#database-host-binding}
 
 Versie 1.2.0 wijzigt het standaard gedrag voor dezelfde machine hostbinding bij soevereine installaties. Dezelfde machine waarden zoals `localhost` worden genormaliseerd zodat Bedrock, FrankenPHP en containerized WordPress installaties rechten kunnen verlenen en verifiëren tegen de hoststring die MySQL daadwerkelijk ziet.
 
@@ -31,11 +31,11 @@ Bij het configureren van een soevereine tenant:
 
 Als de verificatie rapportage fouten in de rechten aangeeft, vergelijk dan de gebruikersrechten van de tenantdatabase met de ingestelde hostbinding. Een gebruiker die is toegekend voor `user@localhost` is anders dan `user@127.0.0.1` of `user@%`.
 
-## Filesystem root
+## Filesystem root {#filesystem-root}
 
 De root van de huurder moet stabiel zijn na herstarts en deployments. Vermijd tijdelijke mount paden. Voor Bedrock-stijl installaties, bevestig dat de tenant root wijst naar de WordPress webroot die verwacht wordt door de tenant bootstrap, niet alleen naar de project root.
 
-## Provisioneringsvolgorde
+## Provisioneringsvolgorde {#provisioning-order}
 
 Voor nieuwe soevereine tenants gebruik je deze volgorde:
 
@@ -49,7 +49,7 @@ Voor nieuwe soevereine tenants gebruik je deze volgorde:
 
 Deze volgorde voorkomt dat gedeeltelijk geïsoleerde tenants verkeer ontvangen voordat de databasewriter, gebruikers en het bestandssysteem klaar zijn.
 
-## Sovereign klantbeheersingsflows
+## Sovereign klantbeheersingsflows {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 houdt klantbeheersingsacties op de hoofdwebsite vast wanneer soevereine modus is ingeschakeld. Een tenant kan nog steeds als een geïsoleerde WordPress-installatie draaien, maar klantgerichte acties die afhankelijk zijn van netwerkfacturering, lidmaatschappen of gedeelde accountgegevens moeten de klant terugsturen naar de hoofdwebsite in plaats van proberen de actie binnen de runtime van de tenant af te ronden.
 

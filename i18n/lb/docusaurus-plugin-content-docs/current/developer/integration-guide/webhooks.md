@@ -3,11 +3,11 @@ title: Webhook-Veraarbechtung
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-Behandlung
+# Webhook-Behandlung {#webhook-handling}
 
 Erstellt benotzerdefinéiert Webhook-Endpunkten, fir Evenementer vun externe Servicer ze kréien an Daten mat Ultimate Multisite ze synchroniséieren.
 
-## Benotzerdefinéierten Webhook-Endpunkt
+## Benotzerdefinéierten Webhook-Endpunkt {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Sécherheetsiwwerleeungen
+## Sécherheetsiwwerleeungen {#security-considerations}
 
 - Verifizéiert ëmmer Webhook-Signaturen mat HMAC oder engem gedeelt Geheimnis
 - Benotzt e `permission_callback` op Ärer REST-Route — setzt et ni op `__return_true` an der Produktioun

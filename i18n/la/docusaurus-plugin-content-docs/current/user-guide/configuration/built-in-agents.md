@@ -3,11 +3,11 @@ title: Agentes inclusi
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agentes Inclusi
+# Agentes Inclusi {#built-in-agents}
 
 Gratis AI Agent v1.9.0 quinque agentes inclusos praebet, unumquemque ante configuratum cum copia instrumentorum intenta, monitione systematis accommodata, et suggestionibus initialibus ad munera communia in ea regione congruentibus. Mutatio inter agentes mutat quid assistens facere possit et quomodo respondeat — sine ulla configuratione ex tua parte. Superdav AI Agent v1.18.0 instrumenta conscii calendarii, acta monitionum, portas approbationis, et notificationes SMS his operis cursibus addere potest cum integrationes pertinentes configuratae sunt.
 
-## Quid Est Agens?
+## Quid Est Agens? {#what-is-an-agent}
 
 Unusquisque agens est profili configurationis nominatum quod coniungit:
 
@@ -15,7 +15,7 @@ Unusquisque agens est profili configurationis nominatum quod coniungit:
 - **Monitio systematis** — instructiones quae tonum, prioritates, et limites agentis constituunt
 - **Suggestiones** — monita ante scripta in interfacie colloquii ostensa ut celeriter incipere possis
 
-## Quomodo Agent Picker Accedas
+## Quomodo Agent Picker Accedas {#accessing-the-agent-picker}
 
 1. Aperi pannellum **Gratis AI Agent** in latere administrativo WordPress.
 2. Preme **icon agentis** in angulo superiore sinistro capitis colloquii (icon mutatur ut agentem activum exprimat).
@@ -24,9 +24,9 @@ Unusquisque agens est profili configurationis nominatum quod coniungit:
 
 Etiam agentes medio colloquio mutare potes — monitio systematis novi agentis a proximo nuntio valet.
 
-## Quinque Agentes Inclusi
+## Quinque Agentes Inclusi {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
 **Intentio:** Creare et recensere articulos, paginas, et formulas contactus.
 
@@ -47,7 +47,7 @@ Etiam agentes medio colloquio mutare potes — monitio systematis novi agentis a
 
 ---
 
-### Site Builder
+### Site Builder {#site-builder}
 
 **Intentio:** Creatio situs interretialis ab initio ad finem ex uno monitu.
 
@@ -70,7 +70,7 @@ Etiam agentes medio colloquio mutare potes — monitio systematis novi agentis a
 
 ---
 
-### Design Studio
+### Design Studio {#design-studio}
 
 **Intentio:** Consuetudo visualis — colores, typographia, CSS, et exemplaria obstructorum.
 
@@ -87,7 +87,7 @@ Etiam agentes medio colloquio mutare potes — monitio systematis novi agentis a
 - *Sume capturam paginae principalis et dic mihi quid emendare velis.*
 - *Crea exemplar obstructorum hero iterum adhibendum cum imagine fundi totius latitudinis et titulo centrato.*
 
-### Plugin Manager
+### Plugin Manager {#plugin-manager}
 
 **Intentio:** Reperire, instituere, et administrare plugins WordPress.
 
@@ -105,7 +105,7 @@ Etiam agentes medio colloquio mutare potes — monitio systematis novi agentis a
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
 **Intentio:** Respondere quaestionibus de contento situs, optionibus, et configuratione WordPress.
 
@@ -124,7 +124,7 @@ Etiam agentes medio colloquio mutare potes — monitio systematis novi agentis a
 
 ---
 
-## Integrationes automationis Superdav
+## Integrationes automationis Superdav {#superdav-automation-integrations}
 
 Cum integrationes Superdav AI Agent v1.18.0 configuratae sunt, agentes inclusi in processibus automationis securioribus et calendarii consciis participare possunt:
 
@@ -138,11 +138,11 @@ Processus commendatus: roga agentem ut nuntium aut actionem paret, invitationem 
 
 ---
 
-## Agentes personalizare
+## Agentes personalizare {#customising-agents}
 
 Quisque agens inclusus per filtrum `gratis_ai_agent_agents` extendi aut substitui potest.
 
-### Admonitionem systematis propriam agenti exsistenti addere
+### Admonitionem systematis propriam agenti exsistenti addere {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Novum agentem registrare
+### Novum agentem registrare {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -174,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Novus agens in Selector Agentis statim postquam filtrum currit apparet.
 
-### Agentem inclusum removere
+### Agentem inclusum removere {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

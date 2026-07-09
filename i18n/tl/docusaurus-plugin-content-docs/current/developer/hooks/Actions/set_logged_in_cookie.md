@@ -4,11 +4,11 @@ title: Aksyon - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 Gumagana kaagad bago itakda ang naka-log in na authentication cookie.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Gumagana kaagad bago itakda ang naka-log in na authentication cookie.
 | $scheme | `string` | Authentication scheme. Default 'logged_in'. |
 | $token | `string` | Session token ng user na gagamitin para sa cookie na ito. |
 
-### Mula Noong
+### Mula Noong {#since}
 
 - 2.6.0
 - 4.9.0: The <code>$token</code> parameter was added.
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) sa linya 141

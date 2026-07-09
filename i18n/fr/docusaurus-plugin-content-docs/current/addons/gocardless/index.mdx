@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Ultimate Multisite : paiement GoCardless
 
 Permettez à vos clients de payer les memberships et produits Ultimate Multisite par prélèvement automatique avec GoCardless !
 
-## Installation
+## Installation {#installation}
 
 1. Téléversez 'ultimate-multisite-gocardless' dans le répertoire '/wp-content/plugins/'
 2. Activez le plugin via le menu 'Plugins' dans WordPress
 3. Suivez l’assistant étape par étape pour configurer le plugin
 
-## Guide d’utilisation
+## Guide d’utilisation {#usage-guide}
 
 _GoCardless_ est une passerelle de paiement disponible en **Europe et au Royaume-Uni** qui permet les paiements par **prélèvement automatique**.
 
@@ -29,7 +29,7 @@ Ce tutoriel expliquera comment configurer _GoCardless_ afin de commencer à acce
 
 _**Remarque : GoCardless ne fonctionne qu’avec les devises suivantes :**_ **EUR, GBP, AUD, SEK et DKK.**
 
-## Installation de l’add-on
+## Installation de l’add-on {#installing-the-add-on}
 
 Tout d’abord, vous devrez installer l’add-on GoCardless pour Ultimate Multisite. Vous pouvez le faire en allant dans **Ultimate Multisite > Réglages > Add-ons (dans la barre latérale)**. Puis en choisissant l’add-on GoCardless dans cette liste.
 
@@ -37,7 +37,7 @@ Une fois l’add-on installé et activé, allez dans **Ultimate Multisite > Rég
 
 ![Réglages de passerelle de paiement](/img/config/settings-payment-gateways.png)
 
-## Obtenir un jeton d’accès
+## Obtenir un jeton d’accès {#getting-an-access-token}
 
 Créez un compte sur _GoCardless_ (ou sur le sandbox _GoCardless_, si vous voulez **le tester d’abord**, ce qui est recommandé). Ensuite, après vous être connecté, accédez à l’élément de menu **Développeurs**.
 
@@ -61,7 +61,7 @@ Assurez-vous de le placer dans le bon champ. S’il s’agit d’un **jeton live
 
 C’est tout pour la première étape. Ensuite, vous devez configurer un écouteur webhook.
 
-## Configuration de l’écouteur webhook
+## Configuration de l’écouteur webhook {#setting-up-the-webhook-listener}
 
 Lorsqu’il s’agit d’abonnements, Ultimate Multisite doit être informé des changements de statut d’abonnement, des nouveaux paiements effectués et d’autres éléments de ce type.
 

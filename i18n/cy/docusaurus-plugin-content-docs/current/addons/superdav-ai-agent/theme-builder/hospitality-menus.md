@@ -3,15 +3,15 @@ title: Bwydlenni Lletygarwch
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Bwydlenni Lletygarwch
+# Bwydlenni Lletygarwch {#hospitality-menus}
 
 Mae’r nodwedd **Bwydlenni Lletygarwch** yn caniatáu i Theme Builder gynhyrchu ac ymgorffori tudalennau bwydlenni bwyd a diod strwythuredig yn uniongyrchol i’ch safle WordPress.
 
-## Trosolwg
+## Trosolwg {#overview}
 
 Gall Theme Builder bellach greu tudalennau bwydlenni proffesiynol, strwythuredig ar gyfer busnesau lletygarwch gan gynnwys bwytai, caffis, bariau, a gwasanaethau arlwyo. Mae’r bwydlenni hyn wedi’u hintegreiddio’n llawn i ddyluniad eich safle a gellir eu diweddaru a’u rheoli’n hawdd.
 
-## Mathau Lletygarwch a Gefnogir
+## Mathau Lletygarwch a Gefnogir {#supported-hospitality-types}
 
 - **Bwytai** — bwydlenni bwyta gwasanaeth llawn
 - **Caffis** — bwydlenni coffi a bwyd ysgafn
@@ -21,9 +21,9 @@ Gall Theme Builder bellach greu tudalennau bwydlenni proffesiynol, strwythuredig
 - **Tryciau Bwyd** — bwydlenni gwasanaeth bwyd symudol
 - **Bragdai a Gwindai** — bwydlenni diodydd gyda disgrifiadau
 
-## Strwythur y Fwydlen
+## Strwythur y Fwydlen {#menu-structure}
 
-### Categorïau Bwydlen
+### Categorïau Bwydlen {#menu-categories}
 
 Trefnir bwydlenni yn gategorïau:
 
@@ -34,7 +34,7 @@ Trefnir bwydlenni yn gategorïau:
 - **Diodydd** — diodydd (alcoholig a di-alcohol)
 - **Arbennigion** — arbennigion dyddiol neu dymhorol
 
-### Fformat Eitem Bwydlen
+### Fformat Eitem Bwydlen {#menu-item-format}
 
 Mae pob eitem bwydlen yn cynnwys:
 
@@ -49,7 +49,7 @@ Mae pob eitem bwydlen yn cynnwys:
 }
 ```
 
-#### Meysydd Eitem
+#### Meysydd Eitem {#item-fields}
 
 | Maes | Math | Disgrifiad |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Mae pob eitem bwydlen yn cynnwys:
 | `allergens` | array | Alergenau cyffredin (Cnau, Pysgod cregyn, ac ati) |
 | `availability` | string | Pryd ar gael (Dyddiol, Tymhorol, ac ati) |
 
-## Creu Bwydlenni Lletygarwch
+## Creu Bwydlenni Lletygarwch {#creating-hospitality-menus}
 
-### Cam 1: Darparu Gwybodaeth am y Fwydlen
+### Cam 1: Darparu Gwybodaeth am y Fwydlen {#step-1-provide-menu-information}
 
 Dywedwch wrth Theme Builder am eich bwydlen:
 
@@ -71,7 +71,7 @@ Creu bwydlen bwyty ar gyfer fy mwyty Eidalaidd gyda blasynnau,
 seigiau pasta, prif gyrsiau, a phwdinau. Cynhwyswch brisiau a disgrifiadau.
 ```
 
-### Cam 2: Mae Theme Builder yn Cynhyrchu’r Fwydlen
+### Cam 2: Mae Theme Builder yn Cynhyrchu’r Fwydlen {#step-2-theme-builder-generates-menu}
 
 Mae Theme Builder yn:
 
@@ -81,7 +81,7 @@ Mae Theme Builder yn:
 4. Fformatio prisiau a disgrifiadau
 5. Ychwanegu gwybodaeth ddeietegol ac alergenau
 
-### Cam 3: Adolygu ac Addasu
+### Cam 3: Adolygu ac Addasu {#step-3-review-and-customize}
 
 Gallwch:
 
@@ -91,9 +91,9 @@ Gallwch:
 4. Diweddaru disgrifiadau a gwybodaeth ddeietegol
 5. Addasu steilio a chynllun
 
-## Opsiynau Arddangos Bwydlen
+## Opsiynau Arddangos Bwydlen {#menu-display-options}
 
-### Tudalen Fwydlen Lawn
+### Tudalen Fwydlen Lawn {#full-menu-page}
 
 Tudalen bwrpasol sy’n arddangos eich bwydlen gyflawn:
 
@@ -102,7 +102,7 @@ Tudalen bwrpasol sy’n arddangos eich bwydlen gyflawn:
 - Cynllun cyfeillgar i argraffu
 - Dyluniad ymatebol i ffonau symudol
 
-### Teclyn Bwydlen
+### Teclyn Bwydlen {#menu-widget}
 
 Ymgorfforwch adrannau bwydlen ar dudalennau eraill:
 
@@ -111,7 +111,7 @@ Ymgorfforwch adrannau bwydlen ar dudalennau eraill:
 - Bwydlen ddiodydd ar dudalen y bar
 - Arddangosfa bwdinau yn y troedyn
 
-### PDF Bwydlen
+### PDF Bwydlen {#menu-pdf}
 
 Cynhyrchwch fwydlen PDF y gellir ei lawrlwytho:
 
@@ -120,9 +120,9 @@ Cynhyrchwch fwydlen PDF y gellir ei lawrlwytho:
 - Yn cynnwys delweddau a disgrifiadau
 - Hawdd i’w rhannu ac e-bostio
 
-## Gwybodaeth Ddeietegol ac Alergenau
+## Gwybodaeth Ddeietegol ac Alergenau {#dietary-and-allergen-information}
 
-### Priodoleddau Deietegol
+### Priodoleddau Deietegol {#dietary-attributes}
 
 Marciwch eitemau gyda gwybodaeth ddeietegol:
 
@@ -134,7 +134,7 @@ Marciwch eitemau gyda gwybodaeth ddeietegol:
 - **Isel mewn Carbohydradau** — carbohydradau wedi’u lleihau
 - **Uchel mewn Protein** — cyfoethog mewn protein
 
-### Rhybuddion Alergenau
+### Rhybuddion Alergenau {#allergen-warnings}
 
 Cynhwyswch alergenau cyffredin:
 
@@ -147,9 +147,9 @@ Cynhwyswch alergenau cyffredin:
 - **Glwten** — gwenith a grawn sy’n cynnwys glwten
 - **Sesame** — hadau sesame ac olew
 
-## Rheoli Bwydlenni
+## Rheoli Bwydlenni {#menu-management}
 
-### Diweddaru Prisiau
+### Diweddaru Prisiau {#updating-prices}
 
 Diweddarwch brisiau bwydlenni’n hawdd:
 
@@ -159,7 +159,7 @@ Diweddarwch brisiau bwydlenni’n hawdd:
 4. Cadwch newidiadau
 5. Mae newidiadau’n ymddangos ar unwaith ar eich safle
 
-### Ychwanegu Eitemau Tymhorol
+### Ychwanegu Eitemau Tymhorol {#adding-seasonal-items}
 
 Creu amrywiadau bwydlen tymhorol:
 
@@ -169,7 +169,7 @@ Creu amrywiadau bwydlen tymhorol:
 4. Trefnwch ddyddiadau argaeledd
 5. Arddangos yn awtomatig yn ystod y tymor
 
-### Rheoli Arbennigion
+### Rheoli Arbennigion {#managing-specials}
 
 Arddangos arbennigion dyddiol neu wythnosol:
 
@@ -179,7 +179,7 @@ Arddangos arbennigion dyddiol neu wythnosol:
 4. Diweddaru’n ddyddiol neu’n wythnosol
 5. Archifo hen arbennigion
 
-## Integreiddio â Theme Builder
+## Integreiddio â Theme Builder {#integration-with-theme-builder}
 
 Wrth ddefnyddio Theme Builder ar gyfer safleoedd lletygarwch:
 
@@ -189,9 +189,9 @@ Wrth ddefnyddio Theme Builder ar gyfer safleoedd lletygarwch:
 4. **Optimeiddio symudol** — mae bwydlenni’n arddangos yn hardd ar ffonau
 5. **Optimeiddio SEO** — mae bwydlenni’n gyfeillgar i beiriannau chwilio
 
-## Arferion Gorau
+## Arferion Gorau {#best-practices}
 
-### Dylunio Bwydlen
+### Dylunio Bwydlen {#menu-design}
 
 - **Trefniadaeth glir** — strwythur categorïau rhesymegol
 - **Disgrifiadau darllenadwy** — yn flasus ac yn llawn gwybodaeth
@@ -199,7 +199,7 @@ Wrth ddefnyddio Theme Builder ar gyfer safleoedd lletygarwch:
 - **Lluniau proffesiynol** — delweddau bwyd o ansawdd uchel
 - **Gofod gwyn** — peidiwch â gorlenwi’r dudalen
 
-### Cynnwys
+### Cynnwys {#content}
 
 - **Disgrifiadau cywir** — disgrifiwch eitemau’n gywir
 - **Amlygu arbennigion** — gwnewch i arbennigion sefyll allan
@@ -207,7 +207,7 @@ Wrth ddefnyddio Theme Builder ar gyfer safleoedd lletygarwch:
 - **Diweddaru’n rheolaidd** — cadwch brisiau ac eitemau’n gyfredol
 - **Defnyddio iaith flasus** — gwnewch i eitemau swnio’n flasus
 
-### Hygyrchedd
+### Hygyrchedd {#accessibility}
 
 - **Ffontiau darllenadwy** — defnyddiwch deipweddau clir, hawdd eu darllen
 - **Cyferbyniad digonol** — sicrhewch fod testun yn ddarllenadwy
@@ -215,9 +215,9 @@ Wrth ddefnyddio Theme Builder ar gyfer safleoedd lletygarwch:
 - **Rhybuddion alergenau** — arddangoswch alergenau’n amlwg
 - **Cyfeillgar i ffonau symudol** — profwch ar bob dyfais
 
-## Enghreifftiau
+## Enghreifftiau {#examples}
 
-### Strwythur Bwydlen Bwyty
+### Strwythur Bwydlen Bwyty {#restaurant-menu-structure}
 
 ```
 Blasynnau
@@ -241,7 +241,7 @@ Pwdinau
 └── Detholiad Gelato
 ```
 
-### Strwythur Dewislen Caffi
+### Strwythur Dewislen Caffi {#cafe-menu-structure}
 
 ```
 Coffi
@@ -260,7 +260,7 @@ Brechdanau
 └── Wrap Llysieuol
 ```
 
-## Nodweddion Cysylltiedig
+## Nodweddion Cysylltiedig {#related-features}
 
 - [Creu Dewislen](../abilities/create-menu.md) — creu dewislenni llywio
 - [Cyfeiriad Dylunio](./design-direction.md) — addasu dyluniad eich gwefan

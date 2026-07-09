@@ -3,9 +3,9 @@ title: Migrazzja min V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrazz tal-V1
+# Migrazz tal-V1 {#migrating-from-v1}
 
-## Ultimate Multisite għandu mħolq mill-famija orizzontali biex jkun 1.x għall-famija ta l-rilizzijiet 2.x.
+## Ultimate Multisite għandu mħolq mill-famija orizzontali biex jkun 1.x għall-famija ta l-rilizzijiet 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Il-versjoni 2.0 u aktar ta' Ultimate Multisite hija rilett tal-kod bażil, li jampel biex jgħid li hemm ħafna ħejja bejn il-versjoni qadira u l-ġdida. Għal peress dan, meta tgħmli upgrade min 1.x għal 2.x, il-data tiegħek għandha titlob biex titbiegħ lil format li l-버żjonijiet ġodda tistgħu tfihmu.
 
@@ -15,7 +15,7 @@ Dan l-lezzjoni tikkawża kif jservu il-migrator, x'inqasla għall-każijiet tal-
 
 _**IMPORTANTI: Qabel ma tibda l-upgrade min versjoni 1.x għal versjoni 2.0, jkun importanti li tista' tikkunsidix backup tal-database tal-sajt tiegħek**_
 
-## Epilji ewliem
+## Epilji ewliem {#first-steps}
 
 Il-epilji ewliem huwa li tgħmli download tal-file .zip tal-plugin u tinstalla l-versjoni 2.0 fuq dashboard il-admin tal-network tiegħek.
 
@@ -49,19 +49,19 @@ Dopo li ti tikkri l-chiave tiegħek, tikkliq **Agree & Activate**.
 
 Dopo l-attivazzjoni tal-licenza, tista' tibda l-installazzjoni effettiva biex tikkliq **Install** fuq il-pagina prossma. Dan se jikunċċa automaticamente l-file u il-database li għandek biex versjoni 2.0 tiffaħaqil.
 
-## Illa l-migrazzjoni
+## Illa l-migrazzjoni {#now-the-migration}
 
 Il-migrator għandu feature ta sigurtà integrata li jikkontrolla l-multisite kollu tiegħek biex jiġi assiguratu li ma tistaqsi xieħa data tal-Ultimate Multisite. Klikja fuq buttan **Run Check** biex tibda il-proċess.
 
 Wara li tgħmli l-check, għandek żgħar possibilita: il-risultatu jista' jkun **ma'** famsu jew **ma'** famsu.
 
-### Ma' Famsu (With Error)
+### Ma' Famsu (With Error) {#with-error}
 
 Jekk tibqa' b'messaġġ ta famsu, għandek li titħalli l-support tagħna biex jgħinlek biex tfixxi l-error. Assigurah li **tfornis il-error log** meta tgħmli ticket. Tista' tnedix il-log jew tikkliq is-link li jgħid "contact our support team". Jidherha l-widget ta help fuq il-mejju tagħha tal-laqgħa mal-latajn, u għandek field pre-populati li jinkludu l-error logs sotto d-deskrizzjoni.
 
 _**Jekk is-sistema telfa famsu, ma tista'x tmur għall-migrazzjoni għall-versjoni 2.0. Immen l-meħtieġ, tista' tirrolli għall-versjoni 1.x biex tkompli t-qiegħed tal-network tiegħek fin li l-error jitfixxet.**_
 
-### Ma' Famsu (Without Error)
+### Ma' Famsu (Without Error) {#without-error}
 
 Jekk is-sistema ma telfa xieħa famsu, tibqa' b'messaġġ ta ħsaru u buttan **Migrate** fuq il-bottom li jippermeni ليك tmur għall-migrazzjoni. Fuq dan l-paġna, tinfajmati biex tgħmli backup tal-database qabel ma tkompli, u nħassu li għandu jkun it-tħejja. Iċċekkja **Migrate** jekk għandek backup.
 

@@ -3,11 +3,11 @@ title: Changelog
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Nhoroondo yeshanduko
+# Nhoroondo yeshanduko {#changelog}
 
-## 1.9.0 — Yakaburitswa musi wa2026-04-28
+## 1.9.0 — Yakaburitswa musi wa2026-04-28 {#190--released-on-2026-04-28}
 
-### Zvitsva
+### Zvitsva {#new}
 
 - **`create_contact_form` kugona** — kunogadzira fomu rekubata uchishandisa form plugin iri kushanda (Contact Form 7, WPForms, Fluent Forms, kana Gravity Forms) uye kunodzosa shortcode yakagadzirira kuiswa mune chero chinyorwa kana peji.
 - **`set_featured_image` kugona** — kunopa mufananidzo mukuru kuchinyorwa kana peji kubva kuMedia Library attachment ID iripo kana remote URL; kunoimporta mufananidzo otomatiki kana URL yapiwa.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Dzosera session yekupedzisira** — panel yechat ikozvino inorodha zvakare hurukuro yazvino kwazvo otomatiki pakurodha peji uye pakuvhura widget, saka context haizomborasiki pakufamba pakati pemapeji.
 - **Plugin action links** — malink ekukurumidza kuSettings neAbilities Registry ikozvino anooneka paWordPress **Plugins → Installed Plugins** screen pasi petsananguro yeplugin.
 
-### Zvakavandudzwa
+### Zvakavandudzwa {#improved}
 
 - **Kuedzazve source yemufananidzo** — agent ikozvino inoedza zvakare masource ese emahara emifananidzo akagadziriswa isati yadzokera kumufananidzo wakagadzirwa neAI kana kudhawunirodha kwatadza.
 - **Panel yeruzivo rwe model** — inogara ichioneka muheader yechat; haichavanzwi mushure memeseji yekutanga.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Kugadzirwazve kwechat widget** — icon yeAI yakabatana inotsiva avatar yakasarudzika yapfuura; inoenderana nesystem yeagent yakavakirwa-mukati.
 - **Kuita URLs malink** — URLs dzinooneka mumeseji dze system nemabubble emeseji dzekukanganisa ikozvino dzinoratidzwa semalink anodzvanywa.
 
-### Zvakagadziriswa
+### Zvakagadziriswa {#fixed}
 
 - **Kuwanikwa kwekugona** — tsananguro, mareferensi e system prompt, uye kuenderana kwe namespace zvakagadziriswa kuitira kuti kugona kwese kuonekwe murondedzero yezvishandiso zveagent zvakavimbika.
 - **Cache yevanopa** — vanopa ikozvino vanochengetwa mucache pasaiti yese kuburikidza neversion counter, zvichidzivirira nyaya dzevanopa vekare pamanetwork e multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Yakaburitswa musi wa2026-04-09
+## 1.4.0 — Yakaburitswa musi wa2026-04-09 {#140--released-on-2026-04-09}
 
-### Zvitsva
+### Zvitsva {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — inomhanyisa Agent Capabilities v1 benchmark suite kubva pa command line ye CI pipelines uye model evaluation workflows. Inotsigira kumhanyisa pamubvunzo mumwe, provider/model overrides, uye JSON/CSV output.
 - **Agent Capabilities v1 benchmark suite** — seti yakarongeka yema prompts akaoma, ane nhanho dzakawanda, anoedza nzvimbo yose yekugona, iine scoring uye token/duration reporting.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — bvunzo yekutanga kusvika pakupera inobata CPT registration, design system, navigation, uye plugin discovery.
 - **AI provider connector plugins** zvakawedzerwa ku WordPress Playground blueprints kuti kugadzirira local development kukurumidze.
 
-### Zvakavandudzwa
+### Zvakavandudzwa {#improved-1}
 
 - README yakagadziridzwa ne AI provider connector documentation uye mirayiridzo yeku setup.
 
-### Zvakagadziriswa
+### Zvakagadziriswa {#fixed-1}
 
 - 25 PHPUnit test failures pa `main` branch dzagadziriswa.
 - GitHub releases URL format mu `blueprint.json` yagadziriswa.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Manotsi ekuburitswa apfuura anochengetwa mu plugin repository._

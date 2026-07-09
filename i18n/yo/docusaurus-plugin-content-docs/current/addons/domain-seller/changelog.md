@@ -3,7 +3,7 @@ title: Àkọọlẹ̀ Ìyípadà Olùtajà Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Àkọsílẹ̀ Àyípadà Domain Seller
+# Àkọsílẹ̀ Àyípadà Domain Seller {#domain-seller-changelog}
 
 Ẹ̀yà 1.3.0 - Tu sílẹ̀ ní 2026-06-02
 - Tuntun: Ṣafikun ìkìlọ̀ network-admin nígbà tí bálánsì reseller HostAfrica bá lọ kéré jù
@@ -134,20 +134,20 @@ _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 * **Ti túnṣe:** Gbogbo code v1 tí deprecated ti jẹ́ àfikún sí àwọn standard v2
 * **Yọ kúrò:** Ìbámu legacy v1 (àyípadà tó ń fọ́ nkan)
 
-### Àwọn Ẹ̀yà Tẹ́lẹ̀ (v1 Legacy)
+### Àwọn Ẹ̀yà Tẹ́lẹ̀ (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Ẹ̀yà 0.0.3 - 20/08/2019
+### Ẹ̀yà 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Ti túnṣe: Àìbámu pẹ̀lú Groundhogg CRM
 * Àkíyèsí: Èyí ni release tó gbẹ̀yìn tó bá v1 mu
 
-### Ẹ̀yà 0.0.2 - 07/12/2018
+### Ẹ̀yà 0.0.2 - 07/12/2018 {#version-002---07122018}
 
 * Ti túnṣe: Yọ field License Key kúrò
 * Ti túnṣe: Àwọn tab plan sọnù nígbà tí feature plugin bá wà active
 * Ṣe dára síi: Ṣafikun bọtìnì skip lórí field ìforúkọsílẹ̀
 
-### Ẹ̀yà 0.0.1 - Release Àkọ́kọ́
+### Ẹ̀yà 0.0.1 - Release Àkọ́kọ́ {#version-001---initial-release}
 
 * Integration OpenSRS ipilẹ fún WP Ultimo v1
 * Ìwá àti ìforúkọsílẹ̀ domain tó rọrùn

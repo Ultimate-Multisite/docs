@@ -4,11 +4,11 @@ title: Filter - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 प्रमाणीकरण कुकीच्या मुदत समाप्ती कालावधीला फिल्टर (Filter) करतो.
 
-## पॅरामीटर्स
+## पॅरामीटर्स {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 | $user_id | `int` | युजर आयडी. |
 | $remember | `bool` | युजर लॉगिन आठवणीत ठेवायचे की नाही. डीफॉल्ट: false. |
 
-### कधीपासून
+### कधीपासून {#since}
 
 - 2.8.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) मध्ये लाइन ५२ वर परिभाषित केले आहे.

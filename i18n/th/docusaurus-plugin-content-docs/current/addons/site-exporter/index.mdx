@@ -7,13 +7,13 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
 
-# Site Exporter
+# Site Exporter {#site-exporter}
 
-## Content
+## Content {#content}
 
 เราเข้าใจถึงความจำเป็นในการย้ายซับไซต์ (subsites) ภายในเครือข่ายของคุณไปยังการติดตั้งไซต์เดียว (single site installation) และในทางกลับกัน หากลูกค้าของคุณตัดสินใจย้ายเว็บไซต์ Addon Site Exporter and Importer นี้จะช่วยให้งานนี้ง่ายขึ้น เครื่องมือนี้ใช้ไฟล์ zip ในการส่งออก (export) และนำเข้า (import) ไซต์ ซึ่งยังสามารถใช้เป็นไฟล์สำรอง (backup) ได้ด้วย
 
-## Features
+## Features {#features}
 
 * ส่งออกและนำเข้าไซต์ (Export and Import Sites)
 
@@ -21,16 +21,16 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 * สร้างไฟล์สำรองไซต์ (Create site backup)
 
-## Documentation
+## Documentation {#documentation}
 **วิธีส่งออกและนำเข้าไซต์ (How to Export and Import a Site)**
 
-## Installation
+## Installation {#installation}
 
 1. อัปโหลด **ultimate-multisite-site-exporter** ไปยังไดเรกทอรี **/wp-content/plugins/**
 2. เปิดใช้งานปลั๊กอิน (plugin) ผ่านเมนู **Plugins** ใน WordPress
 3. ทำตามขั้นตอนของ Wizard เพื่อตั้งค่าปลั๊กอิน
 
-## Usage Guide
+## Usage Guide {#usage-guide}
 
 ด้วย Ultimate Multisite คุณสามารถส่งออกไซต์จากเครือข่ายของคุณ หรือนำเข้าไซต์ไปยังการติดตั้งแบบ Multisite หรือ Single-site ได้
 
@@ -42,7 +42,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 ตัวเลือก **Export & Import** สามารถพบได้ที่เมนู Ultimate Multisite ทางด้านซ้าย<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
 
-## วิธีส่งออกไซต์ (How to export a site)
+## วิธีส่งออกไซต์ (How to export a site) {#how-to-export-a-site}
 
 หากต้องการส่งออกไซต์จากเครือข่ายของคุณ ให้ไปที่ **Export & Import** บนเมนู Ultimate Multisite และที่แท็บ **Export Sites** ให้คลิก **Generate new Site Export**
 
@@ -52,13 +52,13 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 คลิกปุ่ม **Export Site** ไซต์ที่ส่งออกของคุณจะปรากฏอยู่ในรายการ **Existing Exports** ให้คลิกปุ่ม **Download ZIP** เพื่อดาวน์โหลดไฟล์ ไฟล์ ZIP ที่ส่งออกจะรวม `index.php` และ `readme.txt` ที่สามารถบูตได้ด้วยตัวเอง (self-booting) ดังนั้นจึงสามารถติดตั้งบนโฮสต์ใหม่ได้โดยไม่ต้องติดตั้งปลั๊กอินนำเข้า (importer plugin) แยกต่างหาก<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
 
-## วิธีส่งออกทั้งเครือข่าย (How to export the whole network)
+## วิธีส่งออกทั้งเครือข่าย (How to export the whole network) {#how-to-export-the-whole-network}
 
 หากต้องการส่งออกซับไซต์ทั้งหมดพร้อมกัน ให้ไปที่ **Export & Import** บนเมนู Ultimate Multisite และใช้ตัวเลือก **Network Export** บนหน้าจอการส่งออก ไฟล์เก็บถาวร (archive) ที่สร้างขึ้นจะประกอบด้วยซับไซต์ทั้งหมดในไฟล์ ZIP เดียว สำหรับการย้ายโฮสต์ (host migrations), การสร้างสภาพแวดล้อมจำลอง (staging rebuilds), หรือการสำรองข้อมูลระดับเครือข่าย (network-level backups)
 
 การส่งออกระดับเครือข่ายอาจมีขนาดใหญ่ ให้ดำเนินการในช่วงที่ปริมาณการใช้งานต่ำ และตรวจสอบให้แน่ใจว่าเซิร์ฟเวอร์มีพื้นที่จัดเก็บเพียงพอสำหรับไฟล์เก็บถาวร รวมถึงไฟล์อัปโหลด ปลั๊กอิน และธีมที่รวมอยู่ด้วย
 
-## วิธีนำเข้าไซต์ (How to import a site)
+## วิธีนำเข้าไซต์ (How to import a site) {#how-to-import-a-site}
 
 หากต้องการนำเข้าไซต์ ให้ไปที่แท็บ **Import a Site** และอัปโหลดไฟล์ .zip ของไซต์ที่คุณต้องการนำเข้า คุณสามารถเปลี่ยน URL ให้เป็น URL ใหม่ หรือคง URL เดิมไว้ได้โดยการเว้นช่องว่าง นอกจากนี้ คุณยังสามารถทำเครื่องหมายในช่องเพื่อลบไฟล์ .zip ออกจากการติดตั้งของคุณหลังจากการนำเข้า จากนั้นคลิก **Begin Import**
 
@@ -70,7 +70,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 เมื่อกระบวนการเสร็จสมบูรณ์ ไซต์ของคุณก็จะพร้อมใช้งานบนเครือข่ายของคุณแล้ว
 
-## วิธีนำเข้าไซต์ในการติดตั้งแบบ Single-site (How to import a site on a single install)
+## วิธีนำเข้าไซต์ในการติดตั้งแบบ Single-site (How to import a site on a single install) {#how-to-import-a-site-on-a-single-install}
 
 หากต้องการนำเข้าไซต์ไปยังการติดตั้งแบบ Single-site ให้ติดตั้งและเปิดใช้งานตัวนำเข้า (importer) บนไซต์ของคุณก่อน คุณสามารถหาลิงก์สำหรับดาวน์โหลดได้ที่แท็บ Exporter
 

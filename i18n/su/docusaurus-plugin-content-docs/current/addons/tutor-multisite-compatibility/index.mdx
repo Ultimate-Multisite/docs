@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Hiji pangaya WordPress anu nambihan perbaikan kasaluyuan pikeun Tutor LMS dina lingkungan multisitus.
 
-## Pedaran
+## Pedaran {#description}
 
 Pangaya ieu nyayogikeun perbaikan kasaluyuan anu penting pikeun ngajalankeun Tutor LMS dina jaringan multisitus WordPress. Ieu ngatur pendaptaran pamaké, pangelolaan instruktur, watesan kursus, jeung fungsionalitas séjén anu husus pikeun multisitus.
 
-## Fitur
+## Fitur {#features}
 
 - **Pangaturan Tabel Database**: Sacara otomatis ngadeteksi jeung nyieun tabel Tutor LMS anu leungit anu gagal kusabab konstrain konci asing multisitus
 - **Pendaptaran Pamaké Multisitus**: Pangatur AJAX husus pikeun ngatur pendaptaran pamaké di sakuliah situs jaringan
@@ -24,7 +24,7 @@ Pangaya ieu nyayogikeun perbaikan kasaluyuan anu penting pikeun ngajalankeun Tut
 - **Tampilan Admin Husus**: Daptar instruktur jeung antarbeungeut pangaturan anu sadar multisitus
 - **Pakakas Admin**: Antarbeungeut pangaturan database pikeun administrator jaringan jeung situs
 
-## Sarat
+## Sarat {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Pangaya ieu nyayogikeun perbaikan kasaluyuan anu penting pikeun ngajalankeun Tut
 - Pamasangan WordPress Multisite
 - Pangaya Ultimate Multisite (pikeun fungsionalitas watesan kursus)
 
-## Pamasangan
+## Pamasangan {#installation}
 
 1. Unggah payil pangaya ka `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Pastikeun Tutor LMS geus dipasang jeung diaktipkeun
 3. Aktipkeun pangaya ngaliwatan ménu 'Pangaya' dina WordPress
 4. Pangaya bakal sacara otomatis ngahiji jeung Tutor LMS
 
-## Struktur Payil
+## Struktur Payil {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Fungsionalitas Dipindahkeun ti MU Plugin
+## Fungsionalitas Dipindahkeun ti MU Plugin {#functionality-moved-from-mu-plugin}
 
 Pangaya ieu ngandung fungsionalitas anu saméméhna aya dina `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Pangaya ieu ngandung fungsionalitas anu saméméhna aya dina `wp-content/mu-plug
 - Pangaturan pendaptaran pamaké multisitus
 - Tampilan ID produk kursus
 
-## Pangaturan Database
+## Pangaturan Database {#database-management}
 
-### Masalahna
+### Masalahna {#the-problem}
 
 Dina lingkungan multisitus WordPress, nyieun tabel Tutor LMS gagal pikeun tabel anu boga konstrain konci asing ka tabel pamaké. Ieu kajadian sabab:
 
@@ -81,7 +81,7 @@ Dina lingkungan multisitus WordPress, nyieun tabel Tutor LMS gagal pikeun tabel 
 - Konci asing ngarujuk ka `wp_2_users` (anu teu aya)
 - Tabel pamaké sabenerna nyaéta `wp_users` (dibagikeun di sakuliah jaringan)
 
-### Solusina
+### Solusina {#the-solution}
 
 Pangaya ieu sacara otomatis:
 
@@ -92,13 +92,13 @@ Pangaya ieu sacara otomatis:
    - Nyieun situs anyar dina jaringan
    - Mariksa tabel sacara manual ngaliwatan antarbeungeut admin
 
-### Tabel anu Kakeunaan
+### Tabel anu Kakeunaan {#affected-tables}
 
 - `tutor_coupon_usages` - Ngandung konci asing ka tabel pamaké
 - `tutor_carts` - Ngandung konci asing ka tabel pamaké
 - `tutor_notification_preferences` - Tabel TutorPro jeung konci asing ka tabel pamaké
 
-### Antarbeungeut Admin
+### Antarbeungeut Admin {#admin-interface}
 
 Aksés pakakas pangaturan database di:
 
@@ -111,6 +111,6 @@ Antarbeungeut ngamungkinkeun anjeun pikeun:
 - Mariksa konfigurasi database
 - Ningali inpormasi status anu jéntré
 
-## Pangrojong
+## Pangrojong {#support}
 
 Pangaya ieu dirancang husus pikeun platform KursoPro. Pikeun pangrojong téknis, hubungi tim pamekaran.

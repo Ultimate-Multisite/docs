@@ -3,11 +3,11 @@ title: Izolimi i Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolimi i Multi-Tenancy
+# Izolimi i Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 mbështet izolimin per bazë të dhënash dhe sistemish të skurtuar (filesystem) për qirësore soverane. Kjo e mban të dhënat e qirësore të veçanta ndërsa ruajmë provizimin në nivelin e rrjetit, faturimin dhe administrimin.
 
-## Strategjia e izolimit
+## Strategjia e izolimit {#isolation-strategy}
 
 Përdorni izolimin soveran për klientët që kërkojnë një ndarje më të fortë të të dhënave, ruajtje fizike të skurtuar (filesystem) dedikuar ose kufi të veçantë serveri.
 
@@ -18,7 +18,7 @@ Përdorni izolimin soveran për klientët që kërkojnë një ndarje më të for
 - Një hyrje në regjistrin e qirësore që mapon faqen me bazën e dhënash, rrugën kryesore, emrin e hostit dhe modelin e izolimit.
 - Rezultatin e verifikimit të migrimit para se qirësora të konsiderohet aktive.
 
-## Lidhurja me host-in e bazës së të dhënave (Database host binding)
+## Lidhurja me host-in e bazës së të dhënave (Database host binding) {#database-host-binding}
 
 Versioni 1.2.0 ndryshon sjelljen e paracaktuar të lidhurit në të njëjtin mshirë për instalimet soverane. Vlera si `localhost` normalizohen në mënyrë që Bedrock, FrankenPHP dhe instalimet WordPress me container janë në gjendje të japin dhe verifikojnë lejet ndaj stringut të host-it që MySQL vërtet e sheh.
 
@@ -31,11 +31,11 @@ Kur konfiguroni një qirësore soverane:
 
 Nëse raportet e verifikimit shfaq dështime në leje, krahasoni lejet e përcaktuara për përdoruesin e bazës së të dhënave të qirësore me lidhjen e host-it e konfiguruar. Një përdorues i caktuar për `user@localhost` është i ndryshëm nga `user@127.0.0.1` ose `user@%`.
 
-## Rrëdhuroja kryesore e sistemit të skurtuar (Filesystem root)
+## Rrëdhuroja kryesore e sistemit të skurtuar (Filesystem root) {#filesystem-root}
 
 Zhuta root i qirës (tenant root) duhet të jetë e qëndrueshme gjatë restart-eve dhe deploy-eve. Mos përdorni rrugë të montimit të përkohshme. Për instalime në stil Bedrock, konfirmo se zhuta root vërtetoni te rrëzimi i web-it WordPress të pritshëm nga bootstrap-i i tenantit, jo vetëm rrëzimi i projektit (project root).
 
-## Rrëjedha e provizimit (Provisioning order)
+## Rrëjedha e provizimit (Provisioning order) {#provisioning-order}
 
 Për njerëz të rinj me tenant sovran, përdorni këtë rend:
 
@@ -49,7 +49,7 @@ Për njerëz të rinj me tenant sovran, përdorni këtë rend:
 
 Ky rend pengon që tenantet që janë ende pjesërisht izoluar të marrin trafik para se shkruasja e bazës së të dhënave, përdoruesit dhe sistemit të skurtuar të jenë gati.
 
-## Rrëjet e menaxhimit të klientëve sovranë (Sovereign customer management flows)
+## Rrëjet e menaxhimit të klientëve sovranë (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 mban veprimet e menaxhimit të klientëve në sitin kryesor kur mode sovran është e aktivizuar. Një tenant mund të vazhdojë si një instalim WordPress i izoluar, por veprimet që lidhen me klientët dhe që varen nga faturimi në rrjet, anëtaritë ose të dhënat e llogjisë së përbashkët duhet t'i dërgojnë klientin kthesën te sit kryesor në vend që të provojnë të përfundojnë veprimin brenda kohës së ekzekutimit të tenantit.
 

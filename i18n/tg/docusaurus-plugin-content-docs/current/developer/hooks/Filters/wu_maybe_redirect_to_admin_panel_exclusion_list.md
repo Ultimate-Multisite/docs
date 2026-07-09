@@ -4,18 +4,18 @@ title: Филтр - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# Филтр: wu_maybe_redirect_to_admin_panel_exclusion_list
+# Филтр: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
 
 Рӯйхати истисноии параметрҳоро эҷод мекунад, ки auto-redirect-ро пешгирӣ мекунанд.
 
 Ин лозим аст, зеро дар акси ҳол созандаи саҳифа пас аз муайян шудани саҳифаи воридшавӣ онро таҳрир карда наметавонад.
 
-### Аз версия
+### Аз версия {#since}
 
 - 2.0.4
-### Манбаъ
+### Манбаъ {#source}
 
 Дар [`inc/checkout/class-checkout-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout-pages.php#L357) дар сатри 357 муайян шудааст
 
 
-## Бармегардонад
+## Бармегардонад {#returns}

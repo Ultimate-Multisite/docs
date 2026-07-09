@@ -3,11 +3,11 @@ title: Wax-soo-beddelka Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 waxay soo bandhigaysaa **Plugin Builder & Sandbox System**, kaas oo u oggolaanaya agensi AI inuu abuuro, fuliyo (activate), iyo maamulo WordPress plugins-kaaga ee shirkaddaada — dhammaantood iyadoo la isticmaalayo deegaan ammaan ah oo gaar ah (sandbox environment).
 
-## Aragtida Guud (Overview)
+## Aragtida Guud (Overview) {#overview}
 
 Plugin Builder wuxuu u oggolaanaya agensi AI inuu qoro plugin-yada WordPress-kaaga ee gaarka ah jawaabta codsiyada luuqadda caadiga ah. Plugin-yada la abuuro waxaa la hubiyaa, lagu kaydiyaa, lana fuliyaa gudaha qayb ammaan ah (sandbox layer) ka hor inta aysan waxba saarin shaqada website-ka dhabta ah.
 
@@ -17,7 +17,7 @@ Waxyaabaha la isticmaali karo waa:
 - Sameynta qaabab cusub oo u baahan hook-yada WordPress ama custom post types.
 - Abuurista scripts automation ah oo gaaban oo loogu talagalay hawlo isku mar ah (batch operations).
 
-## Plugin Abuurista iyadoo la isticmaalayo AI
+## Plugin Abuurista iyadoo la isticmaalayo AI {#generating-a-plugin-via-ai}
 
 Si aad u abuurtid plugin, fur interface-ka chat-ka Gratis AI Agent oo qeex waxa aad u baahan tahay. Tusaale ahaan:
 
@@ -32,7 +32,7 @@ AI-ga wuxuu samayn doonaa:
 
 Waxaad hagaajin kartaa natiijada iyadoo la raacayo haddii aad su'aal kale weydiinayso isku-dhafka wixii hore ka dhashay intaadan ma hawlgalka bilaabin.
 
-## Sandbox Activation (Ficilista Sandbox)
+## Sandbox Activation (Ficilista Sandbox) {#sandbox-activation}
 
 Ficilista plugin la soo saaray sandbox-ka waa mid kala duwan oo ka duwan ficilista haddii aad si toos ah u fulinayso shabakadta dhabta ah (live network). Sandbox-ku:
 
@@ -48,7 +48,7 @@ Si aad plugin u fulin sandbox-ka, riix badhka **Activate in Sandbox** ee jawaabt
 
 Fariin xaalad ah ayaa kuu ogeysa haddii fulinta ay guuleysatay ama ay ku fashanayso. Haddii ay fashato, log-ga qaladka (error log) waxaa lagu soo bandhigaa dhagaxa chat-ka.
 
-## Maareynta Plugins-ka La Sameeyay (Generated Plugins)
+## Maareynta Plugins-ka La Sameeyay (Generated Plugins) {#managing-generated-plugins}
 
 Plugins-ka la sameeyay waxaa laga heli karaa **Gratis AI Agent → Plugin Builder → Manage Plugins**. Middaas ayaad samayn kartaa:
 
@@ -64,7 +64,7 @@ Plugins-ka la sameeyay waxaa laga heli karaa **Gratis AI Agent → Plugin Builde
 **Install on network** waxay ku soo dejisaa plugin-ka la sameeyay shabakadda WordPress-kaaga dhabta ah ee multisite. Ka hor intaadan sii socon, hubi koodka plugin-ka. AI Agent bilaashka ah wuxuu weydiin doonaa xaqiijin ka hor inta aanu dhammaystirno soo dejinta dhab ah.
 :::
 
-## Soo Dejita Plugin La Sameeyay Shabakadda (Network)
+## Soo Dejita Plugin La Sameeyay Shabakadda (Network) {#installing-a-generated-plugin-on-the-network}
 
 Marka aad ku qanacsan tahay plugin la sandboxed-ka, waxaad si toos ah ugu soo dejin kartaa shabakadda dhabta ah:
 
@@ -78,7 +78,7 @@ Sida kale, isticmaal amarka slash (slash command) ee interface-ka chat-ka:
 /install-plugin <plugin-slug>
 ```
 
-## Cusboonaysiinta Plugin-yada (Plugin Updates)
+## Cusboonaysiinta Plugin-yada (Plugin Updates) {#plugin-updates}
 
 Si aad u cusboonaysiiso plugin la abuuro, qoraalka isbeddelka ku siiyo caawiyaha AI wada hadalka cusub:
 
@@ -86,7 +86,7 @@ Si aad u cusboonaysiiso plugin la abuuro, qoraalka isbeddelka ku siiyo caawiyaha
 
 AI-gu wuxuu abuuraa nooc cusub oo ku yaalla sandbox-ka isagoo la mid ah nooca hadda jira. Waxaad dib u eegaysaa diff-ka (diff) ka hor intaadan la adeegsado cusboonaysiinta.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Plugin Builder-ku wuxuu isticmaalayaa **HookScanner** oo isdhexgeli ah si uu u falanqeeyo hooks iyo filters-ka ay plugin kasta soo saaro. Waxa natiijada HookScanner lagu muujinayaa jawaabta chat-ka waxayna ku jirtaa:
 
@@ -96,7 +96,7 @@ Plugin Builder-ku wuxuu isticmaalayaa **HookScanner** oo isdhexgeli ah si uu u f
 
 Tani waxay kaa caawinaysaa inaad fahanto sida plugin-ka u shaqeeyo intaadan siiso hawlgalka.
 
-## Tixgelinta Amniga
+## Tixgelinta Amniga {#security-considerations}
 
 Plugins-ka la abuuro waxaa lagu kaydiyo si kala duwan oo ka mid ah kuwa aad si gacanta u installay, waxaana aanu ku heli karaan screen-ka maamulka plugin-ka ee WordPress intaadan si cad u installin shirkaddaada.
 Sandbox-ku wuxuu isticmaalaa xaqiijinta habka (path validation) si looga horjoogsado in la galo faylasha plugin-ka marka la qorayo.

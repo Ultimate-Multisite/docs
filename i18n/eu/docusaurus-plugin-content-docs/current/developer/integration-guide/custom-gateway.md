@@ -3,11 +3,11 @@ title: Pasabide pertsonalizatuaren garapena
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Gateway pertsonalizatuen garapena
+# Gateway pertsonalizatuen garapena {#custom-gateway-development}
 
 Ordainketa-gateway pertsonalizatuak sor ditzakezu `Base_Gateway` klasea hedatuz.
 
-## Gateway klasea
+## Gateway klasea {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Erregistratu Gateway-a
+## Erregistratu Gateway-a {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,7 +64,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Metodo nagusiak
+## Metodo nagusiak {#key-methods}
 
 | Metodoa | Helburua |
 |--------|---------|
@@ -73,7 +73,7 @@ add_filter('wu_payment_gateways', function($gateways) {
 | `process_refund()` | Itzulketa-eskaerak kudeatu |
 | `get_payment_methods()` | Bezero baten gordetako ordainketa-metodoak itzuli |
 
-## Kidetza errepikarietarako berritze-kredentzialak
+## Kidetza errepikarietarako berritze-kredentzialak {#renewal-credentials-for-recurring-memberships}
 
 Ultimate Multisite v2.13.0-k gateway integrazioei aukera ematen die adierazteko kidetza errepikari batek berrerabil daitekeen berritze-kredentzial bat duen ala ez, `auto_renew` iraunarazi aurretik. Lotu `wu_membership_has_renewal_credential` eta itzuli:
 
@@ -104,13 +104,13 @@ add_action('wu_membership_renewal_credential_missing', function($membership) {
 
 Garbitu falta den kredentzialaren markatzailea zure gateway-aren berriro baimentzeko fluxu arrakastatsuaren parte gisa, berrerabil daitekeen kredentzial berri bat gorde ondoren.
 
-## Aholkuak
+## Aholkuak {#tips}
 
 - Hutsegitean, itzuli beti `WP_Error`, Ultimate Multisite-k errorearen bistaratzea kudeatu ahal izan dezan
 - Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
 - Erabili `wu_log_add()` gateway-ari berariazko erregistroetarako
 
-## AI konektore-hornitzaileen gaitasunak
+## AI konektore-hornitzaileen gaitasunak {#ai-connector-provider-capabilities}
 
 AI connector-ean oinarritutako eragiketak deitzen dituzten integrazio pertsonalizatuek AI Provider for Anthropic Max v1.3.0-rekin sartutako OAuth hornitzaileen multzo onartuarekin bat etorri behar dute:
 

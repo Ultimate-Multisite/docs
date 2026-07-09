@@ -4,11 +4,11 @@ title: Filter - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item
+# Filter: wu_rest_update_item {#filter-wurestupdateitem}
 
 Sinusuri kung pinapayagan ba o hindi ang pagpapatuloy ng request.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Sinusuri kung pinapayagan ba o hindi ang pagpapatuloy ng request.
 | $rest_base | `array` | Slug ng entity. |
 | $this | `\Base_Manager` | Ang instance ng object. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Tinukoy sa [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) sa linya 414

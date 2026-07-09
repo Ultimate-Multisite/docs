@@ -3,11 +3,11 @@ title: Vieta specifikācijas prasmes
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Specifikācijas prasme vietnes specifikācijai
+# Specifikācijas prasme vietnes specifikācijai {#site-specification-skill}
 
 **Vietnes specifikācijas prasmes** ir struktūras pieeja, kā saglabāt jūsu vietnes mērķus, auditoriju un zīmola identitāti. Šī informācija tiek glabāta jūsu **site_brief** atmiņā, ko agenti referējas starp sesijām, lai sniegtu vienotu, kontekstualizētu palīdzību.
 
-## Kāds ir Vietnes Specifikācija?
+## Kāds ir Vietnes Specifikācija? {#what-is-site-specification}
 
 Vietnes specifikācija ir procesa dokumentēšana:
 
@@ -19,9 +19,9 @@ Vietnes specifikācija ir procesa dokumentēšana:
 
 Šī specifikācija kļūst par jūsu **site_brief**, pastāvīga atmiņa, ko agenti izmanto, lai saprastu jūsu vietnes kontekstu.
 
-## Kāpēc lietot Vietnes Specifikāciju?
+## Kāpēc lietot Vietnes Specifikāciju? {#why-use-site-specification}
 
-### Vienotsība starp sesijām
+### Vienotsība starp sesijām {#consistency-across-sessions}
 
 Bez site_brief jums būtu jāatkal izjaucas vietnes mērķis katru reizi, kad sākat jaunu sesiju. Ar tā agenti neatkarīgi atbild immediately saprot:
 
@@ -30,7 +30,7 @@ Bez site_brief jums būtu jāatkal izjaucas vietnes mērķis katru reizi, kad s�
 - Jūsu kontenta struktūru
 - Jūsu biznesa mērķus
 
-### Labākas ieteikumi
+### Labākas ieteikumi {#better-recommendations}
 
 Agenti izmanto jūsu site_brief, lai:
 
@@ -39,17 +39,17 @@ Agenti izmanto jūsu site_brief, lai:
 - Pameklētu dizainus, kas atbilst jūsu zīmolai
 - Izbrūtu ieteikt nekompatiblu funkcijas
 
-### Ātrāka ieviešana
+### Ātrāka ieviešana {#faster-onboarding}
 
 Jauni agenti (vai agenti jaunos sesijās) var ātri iepazīties ar savu site_brief lasot to, vietā prasa klārinājumu jautājumus.
 
-## Vietnes Specifikācijas iniciēšana
+## Vietnes Specifikācijas iniciēšana {#initiating-site-specification}
 
-### Theme Builder ieviešanas laikā
+### Theme Builder ieviešanas laikā {#during-theme-builder-onboarding}
 
 Vietnes specifikācijas prasmes automātiski tiek iniciēta **Theme Builder ieviešanas plānā**. Iestatījuma asistentas agenta prasa jautājumus un izveido jūsu site_brief.
 
-### Manāla iniciēšana
+### Manāla iniciēšana {#manual-initiation}
 
 Var jūs var sākt vietnes specifikāciju jebkurā laikā:
 
@@ -63,9 +63,9 @@ vai
 "Palīdziet man izveidot vietnes kopsavilkumu (site brief)"
 ```
 
-## Vietnes specifikācijas procesa
+## Vietnes specifikācijas procesa {#the-site-specification-process}
 
-### 1. Vietnes mērķis
+### 1. Vietnes mērķis {#step-1-site-purpose}
 
 Agent jautā:
 
@@ -81,7 +81,7 @@ Kas ir jūsu vietnes galvenais mērķis?
 
 Jūs varat izvēlēties kategoriju vai aprakstīt savu mērķi.
 
-### 2. Mērķauditorija
+### 2. Mērķauditorija {#step-2-target-audience}
 
 ```
 Kas ir jūsu galvenā auditorija?
@@ -94,7 +94,7 @@ Kas ir jūsu galvenā auditorija?
 Kas ir viņu galvenās vajadzības?
 ```
 
-### 3. Bränds identitāte
+### 3. Bränds identitāte {#step-3-brand-identity}
 
 ```
 Kas ir jūsu brīvnieku krāsas?
@@ -110,7 +110,7 @@ Kā jūs aprakstētu savas brīvnieku toni?
 - Sirds / draudzīga
 ```
 
-### 4. Biznesmērķi
+### 4. Biznesmērķi {#step-4-business-goals}
 
 ```
 Kas ir veiksmība jūsu vietnei?
@@ -129,7 +129,7 @@ Kas ir jūsu galvenais metriks?
 - Cits
 ```
 
-### 5. Satura struktūra
+### 5. Satura struktūra {#step-5-content-structure}
 
 ```
 Kā ir organizēts jūsu saturs?
@@ -148,13 +148,13 @@ Kuru satura tipus jūs izmantojat?
 - Cits
 ```
 
-## Jūsu site_brief atmiņa
+## Jūsu site_brief atmiņa {#your-sitebrief-memory}
 
 Vietnes specifikācijas pabeigšanas pēc tam jūsu informācija tiek saglabāta kā **site_brief** jūsu agenta atmiņā. Tas ir struktūrats ieraksts, kas ietver:
 
-## Skatīšana un atjaunināšana jūsu site_brief
+## Skatīšana un atjaunināšana jūsu site_brief {#viewing-and-updating-your-sitebrief}
 
-### Redziet savu site_brief
+### Redziet savu site_brief {#view-your-sitebrief}
 
 Jautājiet agentam:
 
@@ -170,7 +170,7 @@ vai
 
 Agentas izvēles vispiestās jūsu saglabāto specifikāciju.
 
-### Atjaunināt savu site_brief
+### Atjaunināt savu site_brief {#update-your-sitebrief}
 
 Ja jūsu veids attīstās, jūs varat to atjaunināt:
 
@@ -186,9 +186,9 @@ vai
 
 Tas atkārtoties Site Specification skili, izmantojot jūsu jau eksistētās informācijas kā sākumu.
 
-## Kā agentas izmanto site_brief
+## Kā agentas izmanto site_brief {#how-agents-use-sitebrief}
 
-### Dizaina ieteikumi
+### Dizaina ieteikumi {#design-recommendations}
 
 Kad jūs lūdzat par dizaina izmaiņām, agentas referējas savam site_brief:
 
@@ -197,7 +197,7 @@ Jūs: "Pārveidot manu puslapas lapu"
 Agentas: "Pamatojoties uz jūsu site brief, mērķējums ir sievietes 25-45 gadu vecumam ar sildīgu, amatieru toni. Es izveidozu dizainu, kas uzsvēra jūsu amatieru juvelju un lauksaimniecības vērtību."
 ```
 
-### Funkcionalitātes ieteikumi
+### Funkcionalitātes ieteikumi {#feature-suggestions}
 
 Agentas ieteic sugerē funkcijas, kas atbildo jūsu mērķiem:
 
@@ -206,22 +206,22 @@ Jūs: "Kas man vajadzētu pievienot?"
 Agentas: "E-komercijas veikalam, kurš koncentrējas uz klientu lojalitāti, es ieteiktu: lojalitātes programmu, klientu atsauksmes, e-pasta ziņojumu lauksaimniecība un produktu ieteikumi."
 ```
 
-### Satura struktūra
+### Satura struktūra {#content-structure}
 
 Agentas ierosina satura organizēšanu pamatojoties uz jūsu struktūru:
 
 Jautājums: "Kā man labāk organizēt blogu?"
 Atbildes: "Tā kā jūs izmantojat produktiem katalogu ar blogu, es ieteiktu postus organizēt pēc produktu kategoriju un izveidot 'stila ceļvedus', kas parāda vairākus produktus kopā."
 
-## Labākās prakse
-### Kļūsti specifisks
+## Labākās prakse {#best-practices}
+### Kļūsti specifisks {#be-specific}
 
 Nevis "vispējā auditorija", aprakstiet savu patiešām auditoriju:
 
 - ✓ "Sievietes 25-45 gadu vecumā, interesējas par izturīgu modeļu"
 - ✗ "Visādi cilvēki"
 
-### Regulāri atjaunināt
+### Regulāri atjaunināt {#update-regularly}
 
 Kad jūsu vietne attīstās, atjauninājiet savu `site_brief`:
 
@@ -230,14 +230,14 @@ Kad jūsu vietne attīstās, atjauninājiet savu `site_brief`:
 - Kad mainās jūsu brenda identitāte
 - Kad mainās uzņēmējdarbības mērķi
 
-### Izmantot vienotu terminoloģiju
+### Izmantot vienotu terminoloģiju {#use-consistent-terminology}
 
 Izmantojiet tos pašus terminu visos sesijās:
 
 - ✓ Vienmēr teikt "izturīga juvelu" (ne "ekoloģiskā juvelu" un "zaļas produktas")
 - ✓ Konsekventi nosaukties savai auditorijai tādu pašu veidā
 
-### Ievietot kontekstu
+### Ievietot kontekstu {#include-context}
 
 Sniedz likumu, kas palīdz agentiem saprast jūsu lēmumus:
 
@@ -245,7 +245,7 @@ Sniedz likumu, kas palīdz agentiem saprast jūsu lēmumus:
 - "Mūsu auditorija ir tehnoloģiski prasa un gaidīta modernu dizainu"
 - "Mēs esam startupe, kas sāka no nullas, tāpēc mums vajadzīti kostīgas risinājumi"
 
-## Saistība ar Theme Builder ieviešanos (Onboarding)
+## Saistība ar Theme Builder ieviešanos (Onboarding) {#relationship-to-theme-builder-onboarding}
 
 Site Specification prasme tiek integrēta **Theme Builder ieviešanos**. Kad pabeidat ieviešanu, jūsu `site_brief` automātiski tiks izveidots ar informāciju, ko jūs sniegāt.
 
@@ -255,7 +255,7 @@ Jūs varat arī veikt Site Specification nepalīdzoties, ja vēlaties:
 - Atjaunināt savu site brief, kad vietne attīstās
 - Izveidot detaļas prasmi pirms sākšanas Theme Builder ar ātrām
 
-## Kļūdu likums (Troubleshooting)
+## Kļūdu likums (Troubleshooting) {#troubleshooting}
 
 **Mans `site_brief` nav lietots**
 - Pārbaudiet, vai agentam ir piekļuve atmiņai (memory)
@@ -271,7 +271,7 @@ Jūs varat arī veikt Site Specification nepalīdzoties, ja vēlaties:
 - Atjauninājiet savu site\_brief, ja tas ir atjaunināts (outdated)
 - Sniedz papildu kontekstu savos pieprasījumos
 
-## Nākamie soļi
+## Nākamie soļi {#next-steps}
 
 Pēc tam, kad definējāt savu site specification:
 

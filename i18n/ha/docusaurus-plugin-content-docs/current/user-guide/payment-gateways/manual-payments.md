@@ -3,13 +3,13 @@ title: Saita Biyan Kuɗi da Hannu
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Saita Biyan Kuɗi na Hannu (v2)
+# Saita Biyan Kuɗi na Hannu (v2) {#setting-up-manual-payments-v2}
 
 _**MUHIMMIYAR SANARWA: Wannan makala tana nufin Ultimate Multisite sigar 2.x.**_
 
 Biyan kuɗi na hannu hanya ce da za ka ba da wasu hanyoyin biyan kuɗi idan **Stripe** ko **PayPal** ba su samuwa ga masu amfani da kai. Zai iya zama tura kuɗi ta waya ko ta banki ko wata hanyar biyan kuɗi da ke samuwa ga masu amfani da kai a yankinsu.
 
-## Yadda ake kunna Biyan Kuɗi na Hannu
+## Yadda ake kunna Biyan Kuɗi na Hannu {#how-to-enable-manual-payments}
 
 Saita biyan kuɗi na hannu abu ne mai sauƙi sosai. Kana buƙatar kawai ka kunna shi a ƙarƙashin hanyoyin karɓar biyan kuɗi sannan ka saka cikakkun umarni kan yadda mai amfani zai aika biyan kuɗin.
 
@@ -31,7 +31,7 @@ Kuma za su kuma karɓi saƙo a shafin **Na Gode** naka tare da umarnin biyan ku�
 
 <!-- Screenshot unavailable: Shafin Na Gode da ke nuna umarnin biyan kuɗi bayan checkout -->
 
-## Tabbatar da biyan kuɗi na hannu
+## Tabbatar da biyan kuɗi na hannu {#confirming-manual-payments}
 
 Don tabbatar da biyan kuɗi na hannu, je zuwa menu na **Biyan Kuɗi** a sandar hagu. A can za ka iya ganin duk biyan kuɗi a cibiyar sadarwarka da bayanansu, ciki har da **matsayinsu**. Biyan kuɗi na hannu koyaushe zai kasance da matsayin **Ana Jira** har sai ka canza shi da hannu.
 

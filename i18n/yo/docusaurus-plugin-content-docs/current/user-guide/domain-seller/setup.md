@@ -3,21 +3,21 @@ title: Ìṣètò àti Ìṣàgbékalẹ̀ Olùpèsè
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Olùtà Orúkọ Àgbègbè: Ìṣètò àti Ìṣàtúnṣe Olùpèsè
+# Olùtà Orúkọ Àgbègbè: Ìṣètò àti Ìṣàtúnṣe Olùpèsè {#domain-seller-setup-and-provider-configuration}
 
 Àfikún Olùtà Orúkọ Àgbègbè wá pẹ̀lú wizard ìṣètò tí ń tọ́ ọ kọjá gbogbo ìgbésẹ̀ tí ó nílò. Ojú-ewé yìí ṣàlàyé ìṣàn wizard náà àti bí a ṣe lè ṣètò tàbí tún àwọn olùpèsè ṣètò lẹ́yìn náà.
 
-## Àwọn ohun tí a nílò
+## Àwọn ohun tí a nílò {#requirements}
 
 - **Multisite Ultimate** v2.4.12 tàbí tó ga jù bẹ́ẹ̀ lọ, tí a mú ṣiṣẹ́ ní nẹ́tíwọ́ọ̀kì
 - **PHP** 7.4+
 - Àwọn ìjẹ́rìí API fún ó kéré tán alákóso ìforúkọsílẹ̀ kan tí a ṣe àtìlẹ́yìn fún
 
-## Wizard ìṣètò ìgbà àkọ́kọ́
+## Wizard ìṣètò ìgbà àkọ́kọ́ {#first-run-setup-wizard}
 
 Wizard ìṣètò náà yóò bẹ̀rẹ̀ fúnra rẹ̀ ní ìgbà àkọ́kọ́ tí o bá mú plugin náà ṣiṣẹ́ ní nẹ́tíwọ́ọ̀kì. Ó tún wà nígbàkúgbà láti **Alábòójútó Nẹ́tíwọ́ọ̀kì › Ultimate Multisite › Ìṣètò Olùtà Orúkọ Àgbègbè**.
 
-### Ìgbésẹ̀ 1 — Yan olùpèsè kan
+### Ìgbésẹ̀ 1 — Yan olùpèsè kan {#step-1--choose-a-provider}
 
 Yan alákóso ìforúkọsílẹ̀ tí o fẹ́ sopọ̀ mọ́. Àwọn aṣàyàn tí a ṣe àtìlẹ́yìn fún:
 
@@ -33,7 +33,7 @@ Yan alákóso ìforúkọsílẹ̀ tí o fẹ́ sopọ̀ mọ́. Àwọn aṣày
 | NameSilo | Rárá | Rárá |
 | Enom | Bẹ́ẹ̀ni | Rárá |
 
-### Ìgbésẹ̀ 2 — Tẹ àwọn ìjẹ́rìí sílẹ̀
+### Ìgbésẹ̀ 2 — Tẹ àwọn ìjẹ́rìí sílẹ̀ {#step-2--enter-credentials}
 
 Olùpèsè kọ̀ọ̀kan ní àwọn pápá ìjẹ́rìí tó yàtọ̀:
 
@@ -57,17 +57,17 @@ Olùpèsè kọ̀ọ̀kan ní àwọn pápá ìjẹ́rìí tó yàtọ̀:
 
 Ṣàyẹ̀wò **Módù sandbox** níbi tí ó bá wà láti dán an wò lòdì sí àyíká ìdánwò olùpèsè kí o tó lọ sí ìṣiṣẹ́ gidi.
 
-### Ìgbésẹ̀ 3 — Dán ìsopọ̀ náà wò
+### Ìgbésẹ̀ 3 — Dán ìsopọ̀ náà wò {#step-3--test-the-connection}
 
 Tẹ **Dán Ìsopọ̀ Wò**. Wizard náà yóò fi ìpè API fẹ́ẹ́rẹ́ ránṣẹ́ láti ṣàyẹ̀wò àwọn ìjẹ́rìí àti ìsopọ̀. Ṣàtúnṣe ìṣòro ìjẹ́rìí èyíkéyìí kí o tó tẹ̀síwájú.
 
-### Ìgbésẹ̀ 4 — Gbé àwọn TLD wọlé
+### Ìgbésẹ̀ 4 — Gbé àwọn TLD wọlé {#step-4--import-tlds}
 
 Tẹ **Gbé Àwọn TLD Wọlé** láti fa gbogbo àwọn TLD tó wà àti ìdíyelé osùwọ̀n-ńlá láti olùpèsè tí a sopọ̀ mọ́. Èyí yóò kún àtòkọ TLD tí àwọn ọjà orúkọ àgbègbè ń lò. Ìgbéwọlé náà lè gba iṣẹ́jú-aaya 30–60 fún àwọn olùpèsè tí wọ́n ní katalọ́ọ̀gù TLD ńlá.
 
 A tún máa ń tún àwọn TLD múṣiṣẹ́pọ̀ fúnra rẹ̀ lẹ́ẹ̀kan lójúmọ́ nípasẹ̀ iṣẹ́ cron tí a ṣètò.
 
-### Ìgbésẹ̀ 5 — Ṣẹ̀dá ọjà orúkọ àgbègbè kan
+### Ìgbésẹ̀ 5 — Ṣẹ̀dá ọjà orúkọ àgbègbè kan {#step-5--create-a-domain-product}
 
 Wizard náà yóò ṣẹ̀dá ọjà orúkọ àgbègbè aiyipada tó gba gbogbo nǹkan pẹ̀lú àfikún owó 10%. O lè ṣàtúnṣe ọjà yìí lẹ́sẹ̀kẹsẹ̀ tàbí fo ó kọjá kí o sì ṣẹ̀dá àwọn ọjà lọ́nà ọwọ́ lábẹ́ **Ultimate Multisite › Àwọn Ọjà**.
 
@@ -75,7 +75,7 @@ Wo [Àwọn Ọjà Orúkọ Àgbègbè àti Ìdíyelé](./domain-products) fún 
 
 ---
 
-## Títún olùpèsè ṣètò
+## Títún olùpèsè ṣètò {#reconfiguring-a-provider}
 
 Lọ sí **Alábòójútó Nẹ́tíwọ́ọ̀kì › Ultimate Multisite › Àwọn Ètò › Olùtà Orúkọ Àgbègbè** (tàbí tẹ **Àwọn Ètò** nínú àtòkọ plugin).
 
@@ -88,17 +88,17 @@ Ojú-ewé àwọn ètò ní:
 - **Ṣàkóso àwọn ọjà orúkọ àgbègbè** — ìjápọ̀ kíákíá sí àtòkọ Àwọn Ọjà
 - **Ṣètò àwọn olùpèsè** — ṣí Integration Wizard láti fi àwọn olùpèsè kun tàbí tún wọn ṣètò
 
-### Fífi olùpèsè kejì kun
+### Fífi olùpèsè kejì kun {#adding-a-second-provider}
 
 Tẹ **Ṣètò àwọn olùpèsè** kí o sì tún ṣiṣẹ́ wizard náà fún alákóso ìforúkọsílẹ̀ tuntun. O lè ní ọ̀pọ̀ olùpèsè tí a ṣètò nígbà kan náà. Yan olùpèsè pàtó fún ọjà orúkọ àgbègbè kọ̀ọ̀kan, tàbí fi sí aiyipada.
 
-### Mímú àwọn TLD ṣiṣẹ́pọ̀ lọ́nà ọwọ́
+### Mímú àwọn TLD ṣiṣẹ́pọ̀ lọ́nà ọwọ́ {#syncing-tlds-manually}
 
 Ní ojú-ewé àwọn ètò, tẹ **Mú Àwọn TLD Ṣiṣẹ́pọ̀** lẹ́gbẹ̀ẹ́ olùpèsè èyíkéyìí tí a ti ṣètò láti fa ìdíyelé tuntun jù lọ. Èyí wúlò lẹ́yìn tí olùpèsè bá ṣe ìmúdójúìwọ̀n ìdíyelé osùwọ̀n-ńlá tàbí fi àwọn TLD tuntun kun.
 
 ---
 
-## Àwọn ìkọ̀sílẹ̀
+## Àwọn ìkọ̀sílẹ̀ {#logs}
 
 Olùpèsè kọ̀ọ̀kan máa ń kọ sí ikanni ìkọ̀sílẹ̀ tirẹ̀. A lè wo àwọn ìkọ̀sílẹ̀ lábẹ́ **Alábòójútó Nẹ́tíwọ́ọ̀kì › Ultimate Multisite › Àwọn Ìkọ̀sílẹ̀**:
 
@@ -118,7 +118,7 @@ Olùpèsè kọ̀ọ̀kan máa ń kọ sí ikanni ìkọ̀sílẹ̀ tirẹ̀. A 
 
 ---
 
-## Àwọn àkọsílẹ̀ agbára olùpèsè
+## Àwọn àkọsílẹ̀ agbára olùpèsè {#provider-capability-notes}
 
 Kì í ṣe gbogbo API alákóso ìforúkọsílẹ̀ ni ń fi àwọn iṣẹ́ kan náà hàn. Àfikún náà máa ń fi àwọn iṣẹ́ tí a kò ṣe àtìlẹ́yìn fún hàn pẹ̀lú àwọn àṣìṣe tó ṣe kedere fún alábòójútó dípò kí ó kùnà ní ìdákẹ́jẹ.
 

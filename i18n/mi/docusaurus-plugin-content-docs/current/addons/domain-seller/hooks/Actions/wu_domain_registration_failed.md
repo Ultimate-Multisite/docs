@@ -4,11 +4,11 @@ title: Mahi - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Mahi: wu_domain_registration_failed
+# Mahi: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Ka whakaohohia i muri i te rahunga o tētahi nganatanga rēhita domain.
 
-## Tawhā
+## Tawhā {#parameters}
 
 | Ingoa | Momo | Whakaahuatanga |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Ka whakaohohia i muri i te rahunga o tētahi nganatanga rēhita domain.
 | $registration_data | `array&lt;string,mixed&gt;` | Ngā raraunga ā-rēhita tae atu ki status=failed me error_message. |
 | $error_message | `string` | He karere hapa mārama ki te tangata nō te kaiwhakarēhita. |
 
-### Mai i
+### Mai i {#since}
 
 - 2.0.0
-### Pūtake
+### Pūtake {#source}
 
 Kua tautuhia ki [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) i te rārangi 1250

@@ -3,7 +3,7 @@ title: Àwọn àìbáramu tí a mọ̀
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Àwọn àìbáramu tí a mọ̀ pẹlu àwọn Àfikún míì
+# Àwọn àìbáramu tí a mọ̀ pẹlu àwọn Àfikún míì {#known-incompatibilities-with-other-plugins}
 
 Lẹ́yìn fifi Ultimate Multisite sílẹ̀ àti mímú un ṣiṣẹ́, o lè pàdé àwọn ìṣòro nítorí àwọn àìbáramu tí a kò tíì yanjú pẹlu àwọn àfikún míì.
 

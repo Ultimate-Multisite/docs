@@ -3,7 +3,7 @@ title: Bogga Macaamiisha
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Bogga-ga Macaalka Macaamiishaada (v2)
+# Bogga-ga Macaalka Macaamiishaada (v2) {#your-clients-account-page-v2}
 
 _**Fadlan ogaow: Maqaalkan wuxuu la xiriira Ultimate Multisite nooca 2.x.**_
 
@@ -11,7 +11,7 @@ Marka macaamiishu ay ku biiraan qorshe (plan) oo shirkaddaada ka mid ah, waxay h
 
 In shaqadaas (tutorial) aanu kuu haggo bogga macaamiisha iyo waxaad arki doontaa waxa ay macaamiishu ka arki karaan oo ka samayn karaan gudaha boggagaas.
 
-## Bogga Macaamiisha (The Account Page)
+## Bogga Macaamiisha (The Account Page) {#the-account-page}
 
 Bogga macaamiisha waxaa la heli karaa iyadoo la riixayo **Account** (Macaan) gudaha dashboard-ka macaamiishaada.
 
@@ -27,7 +27,7 @@ Marka ay riixaan, waxay arki doonaan aragti guud oo ku saabsan xubnaha (membersh
 
 Waxay sidoo kale samayn karaan isbeddel xubnaha oo ay ka guurayaan qorshe kale, ama waxay iibsadaan package ama adeeg kale oo aad bixisay. Aan si gaar ah uga fiirino qayb kasta.
 
-### Aragtidaadaaga oo ku saabsan Xubnahaaga:
+### Aragtidaadaaga oo ku saabsan Xubnahaaga: {#your-membership-overview}
 
 Waxaa block-ka ugu horreeya hoos ka dhaca magaca website-ka macaamiishaada waxaa lagu soo bandhigayaa aragti guud oo ku saabsan qorshaha iyo adeegyada/package-yada ay iibsadeen. Block-kaas wuxuu sidoo kale muujinayaa lambarka xubnaha, lacagta hore ee la bixiyay, inta uu qorshaha iyo adeegga/package-ka qiimuhu yahay, iyo inta ay la soo diray (billed) xubnahaas. Waxay sidoo kale arki karaan haddii xubnahaagu yahay **Active** (Socda), **Expired** (Waqti ka gudbay) ama **Canceled** (La joojiyay).
 
@@ -43,7 +43,7 @@ Hadda, haddii macaamiishaadu dooranayaan inay iibsadaan package-yo ama adeegyo k
 
 Fadlan ogaow in codadka kuwan (coupon codes) aan la dari karin bogga beddelista xubnaha. Haddii macaamiishu ay isticmaaleen cod adiga ah marka ay iibsadeen xubnaha hore, koodkaas wuxuu sidoo kale shaqeyn doonaa xubnaha cusub.
 
-### Cusboonaysiinta Cinwaanka Lacagta (Billing Address):
+### Cusboonaysiinta Cinwaanka Lacagta (Billing Address): {#updating-the-billing-address}
 
 د صفحteenka xogga, macaamihiintu waxay sidoo kale wax ka beddeli karaan qogaaylka bixinta (billing address). Waxay kaliya baahan yihiin inay ku riixaan **Update** oo ku taal _Billing Address._
 
@@ -53,7 +53,7 @@ Fadlan, daaqad cusub ayaa soo muuqan doonta macaamiishaada. Waxa kaliya ay u baa
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Beddelidda Qoraalka Website-ga (Changing the Site Template):
+### Beddelidda Qoraalka Website-ga (Changing the Site Template): {#changing-the-site-template}
 
 Si aad u oggolaato macaamiishaada inay beddelaan qoraallada website-yada (site templates), waxaad u baahan tahay inaad tagto **Ultimate Multisite > Settings > Sites** oo aad furto doorashada **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Marka ay dib u socdaan (toggle on) xaqiijinta oo ay gujiyaan **Process Switch**,
 
 Macaamiishu sidoo kale waxay isticmaali karaan **Reset current template** laga helo panelkan haddii ay u baahan yihiin inay dib u soo celiyaan qaabka hore ee la siiyay. Sida isbeddelka qaabka website-ka, dib u socodka qaabka wuxuu ka dhigi karaa waxyaabaha ku jira website-ka oo laga saari karaa, sidaas darteed macaamiishu waa inay xaqiijiyaan haddii ay fahmaan habka la dib u soo celinayo.
 
-### Bixinta Domain-yada Gaarka ah (Adding Custom Domains):
+### Bixinta Domain-yada Gaarka ah (Adding Custom Domains): {#adding-custom-domains}
 
 Macaamiishaadu waxay sidoo kale leeyihiin fursad ay ku dari karaan domain gaar ah qorshahaas bogga xogta (account page). Si macaamiishaadu ay u isticmaali karaan domain-yada gaarka ah, tag **Ultimate Multisite > Settings > Domain Mapping**.
 
@@ -115,7 +115,7 @@ Kadib marka la riixo **Next Step**, macaamiishaadu waxay dari karaan magaca doma
 
 Kadib marka la riixo **Add Domain**, domain-ka waxaa lagu dari doonaa account-ka macaamiishaada. Waxa kaliya ay u baahan yihiin inay beddelaan DNS records-ka domain gaarka ah ee domain registrar-kooda.
 
-### Beddelidda Password-ka:
+### Beddelidda Password-ka: {#changing-password}
 
 Inta badan dashboard-ka account-ka, macaamiishaadu sidoo kale waxay beddeli karaan password-kooda iyagoo riixaya **Change Password**.
 
@@ -125,7 +125,7 @@ Tani wuxuu muujin doona daaqad cusub oo macaamiishaadu waxay u baahan yihiin ina
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Meel Khatar:
+### Meel Khatar: {#danger-zone}
 
 Waxaan leenahay laba dooro oo muujinaya qaybta **Danger Zone** (Meel Khatar): **Delete Site** (Saarsid Website-ka) iyo **Delete Account** (Saarsid Akawntka). Labadaas waxay ku jiraan Meel Khatar sababtoo ah ficilladan ma laha dib u samayn karo. Haddii macaamiishaadu saarsadaan website-kooda ama akawntkooda, ma heli karaan dib u soo celin.
 

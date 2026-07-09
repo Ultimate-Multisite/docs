@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 De Ultimate AI Connector for Compatible Endpoints integreert OpenAI-compatibele AI-provider API's met uw WordPress multisite netwerk. Configureer meerdere AI-providers — elk met hun eigen endpoint URL, API-sleutel en standaardmodel — en routeer verzoeken met automatische fallback wanneer een provider niet beschikbaar is.
 
-## Belangrijkste functies
+## Belangrijkste functies {#key-features}
 
 - **Multi-provider ondersteuning**: Voeg meerdere AI-provider kaarten toe, elk met hun eigen endpoint URL, API-sleutel en standaardmodel.
 - **Slepen om te herordenen**: Rangschik providers op basis van prioriteit met het greepje op elke kaart; verzoeken gebruiken providers in de opgegeven volgorde.
@@ -21,26 +21,26 @@ De Ultimate AI Connector for Compatible Endpoints integreert OpenAI-compatibele 
 - **Auto-uitklappen bij toevoegen**: Nieuwe providerkaarten klappen automatisch uit, zodat u de details direct kunt invullen.
 - **Script cache busting**: Provider scripts worden bij een plugin-update cache-gebroken om ervoor te zorgen dat de nieuwste versie wordt geladen.
 
-## Vereisten
+## Vereisten {#requirements}
 
 - WordPress 5.3 of hoger
 - PHP 7.4 of hoger
 - Ultimate Multisite plugin (actief)
 - Een OpenAI-compatibel API endpoint (zelfgehost of van derden)
 
-## Installatie
+## Installatie {#installation}
 
 1. Upload de addonbestanden naar uw `/wp-content/plugins/` map.
 2. Activeer de plugin via het 'Plugins'-menu in WordPress.
 3. Ga naar **Ultimate Multisite → AI Connector** om de addon te configureren.
 
-## Configuratie
+## Configuratie {#configuration}
 
-### Multi-Provider Setup
+### Multi-Provider Setup {#multi-provider-setup}
 
 Het configuratiescherm gebruikt een kaartgebaseerde lay-out waarbij elke kaart één AI-provider vertegenwoordigt. U kunt zoveel providers toevoegen als u nodig heeft.
 
-#### Een Provider Toevoegen
+#### Een Provider Toevoegen {#adding-a-provider}
 
 1. Ga naar **Ultimate Multisite → AI Connector** in het netwerkadmin.
 2. Klik op **Add Provider**.
@@ -52,15 +52,15 @@ Het configuratiescherm gebruikt een kaartgebaseerde lay-out waarbij elke kaart �
    - **Default Model** — de model-identifier die standaard moet worden gebruikt voor deze provider (bijv. `gpt-4o`, `mistral-small`).
 5. Klik op **Save Settings**.
 
-#### Een Provider Verwijderen
+#### Een Provider Verwijderen {#removing-a-provider}
 
 Klik op de **Remove** knop op een providerkaart om deze te verwijderen. Sla de instellingen op om de wijziging toe te passen.
 
-#### Providers Herordenen
+#### Providers Herordenen {#reordering-providers}
 
 Sleep het greepicoon (⣿) aan de linkerkant van een providerkaart om deze te herordenen. De volgorde bepaalt de fallback-prioriteit: verzoeken worden naar de eerste provider gestuurd en vallen terug op de volgende providers als een verzoek mislukt.
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 Als een verzoek naar de primaire provider mislukt — bijvoorbeeld door een time-out, rate limit of serviceonderbreking — probeert de connector automatisch opnieuw met de volgende provider in de lijst. Dit gaat door de lijst totdat een provider slaagt of totdat alle providers zijn geprobeerd.
 
@@ -72,7 +72,7 @@ Als een verzoek naar de primaire provider mislukt — bijvoorbeeld door een time
 
 Fallback is transparant voor de aanroepende plugin of het thema — ze ontvangen of een succesvolle respons of een definitieve fout, ongeacht hoeveel providers er zijn geprobeerd.
 
-### Provider Configuratie Referentie
+### Provider Configuratie Referentie {#provider-configuration-reference}
 
 | Veld | Vereist | Beschrijving |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Fallback is transparant voor de aanroepende plugin of het thema — ze ontvangen
 | API Key | Ja | Authenticatie-sleutel voor deze provider |
 | Default Model | Ja | Model-identifier die wordt gebruikt wanneer er geen model in het verzoek wordt gespecificeerd |
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Er worden geen providers weergegeven
+### Er worden geen providers weergegeven {#no-providers-are-listed}
 
 Als de providerlijst leeg is nadat u op 'Save Settings' heeft geklikt, controleer dan of:
 
@@ -91,21 +91,21 @@ Als de providerlijst leeg is nadat u op 'Save Settings' heeft geklikt, controlee
 - Uw browser de instellingenpagina niet heeft geblokkeerd (controleer de browserconsole op JavaScript-fouten).
 - De plugin actief is en u zich op het netwerkadmin-scherm bevindt.
 
-### Verzoeken falen voor alle providers
+### Verzoeken falen voor alle providers {#requests-are-failing-for-all-providers}
 
 - Controleer of de endpoint URL van elke provider bereikbaar is vanaf uw server (niet alleen vanaf uw browser).
 - Controleer of elke API-sleutel geldig is en niet verlopen is.
 - Bekijk de rate-limit en quota-status van de provider in hun dashboard.
 - Schakel WordPress debug logging in (`WP_DEBUG_LOG`) om gedetailleerde foutmeldingen van de connector vast te leggen.
 
-### Een provider wordt niet gebruikt voor fallback
+### Een provider wordt niet gebruikt voor fallback {#a-provider-is-not-being-used-for-fallback}
 
 Slepen om te herordenen verandert de fallback-volgorde. Bevestig of de provider die u verwacht te ontvangen van fallback-verzoeken correct gepositioneerd is in de lijst en of de endpoint URL en API-sleutel correct zijn.
 
-### Nieuwe providerkaart klapt niet automatisch uit
+### Nieuwe providerkaart klapt niet automatisch uit {#new-provider-card-does-not-expand-automatically}
 
 Auto-uitklappen vereist dat JavaScript in uw browser is ingeschakeld. Als de kaart niet uitklapt bij klikken, controleer dan de browserconsole op fouten. De inhoud van de kaart is altijd toegankelijk door op de kaartkop te klikken, zelfs als auto-uitklappen niet wordt getriggerd.
 
-## Changelog
+## Changelog {#changelog}
 
 Zie [Changelog](./changelog) voor de volledige versiegeschiedenis.

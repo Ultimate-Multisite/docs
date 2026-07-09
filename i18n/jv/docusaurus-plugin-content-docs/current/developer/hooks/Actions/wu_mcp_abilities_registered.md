@@ -4,11 +4,11 @@ title: Tindakan - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Tumindak: wu_mcp_abilities_registered
+# Tumindak: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Mlaku sawisé kabisan MCP didaftaraké kanggo sawijining entitas.
 
-## Paramèter
+## Paramèter {#parameters}
 
 | Jeneng | Jinis | Katrangan |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Mlaku sawisé kabisan MCP didaftaraké kanggo sawijining entitas.
 | $model_name | `string` | Jeneng modèl. |
 | $this | `object` | Instans pangatur. |
 
-### Wiwit
+### Wiwit {#since}
 
 - 2.5.0
-### Sumber
+### Sumber {#source}
 
 Ditetepaké ing [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) ing baris 171

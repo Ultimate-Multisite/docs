@@ -3,18 +3,18 @@ title: Capacități de Construcție a Temelor
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacitățile de Construcție a Temelor: Crearea și Activarea Temelor de Bloc
+# Capacitățile de Construcție a Temelor: Crearea și Activarea Temelor de Bloc {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introduce două capacități puternice care vă permit să generați și să implementați teme de bloc personalizate direct din interfața de chat.
 
-## Prezentare Generală
+## Prezentare Generală {#overview}
 
 Capabilitățile **scaffold-block-theme** și **activate-theme** permit agenților să:
 - Să genereze teme de bloc complete, gata de utilizare în producție, pe baza specificațiilor dumneavoastră
 - Să activeze automat temele de pe site-ul dumneavoastră fără intervenție manuală
 - Să creeze identități vizuale coerente prin decizii de design ghidate
 
-## Crearea Structurii Temei de Bloc (Scaffold Block Theme)
+## Crearea Structurii Temei de Bloc (Scaffold Block Theme) {#scaffold-block-theme}
 
 Capabilitatea **scaffold-block-theme** generează o temă de bloc WordPress nouă, cu o structură completă, care include:
 
@@ -23,7 +23,7 @@ Capabilitatea **scaffold-block-theme** generează o temă de bloc WordPress nou�
 - Stiluri și variații de bloc personalizate
 - Metadate și declarații de suport pentru temă
 
-### Cum se apelează
+### Cum se apelează {#how-to-invoke}
 
 În chat-ul dumneavoastră cu Superdav AI Agent, puteți solicita generarea unei teme:
 
@@ -38,7 +38,7 @@ Agentul va:
 3. Crea toate fișierele necesare ale temei
 4. Pregăti tema pentru activare
 
-### Ieșirea Așteptată
+### Ieșirea Așteptată {#expected-output}
 
 Când capacitatea rulează cu succes, veți vedea:
 
@@ -56,11 +56,11 @@ Exemplu de ieșire:
   Status: Ready to activate
 ```
 
-## Activarea Temei (Activate Theme)
+## Activarea Temei (Activate Theme) {#activate-theme}
 
 Capabilitatea **activate-theme** schimbă site-ul dumneavoastră pe o temă de bloc nou creată sau deja existentă.
 
-### Cum se apelează
+### Cum se apelează {#how-to-invoke-1}
 
 După ce ați creat structura temei, puteți activa-o imediat:
 
@@ -74,7 +74,7 @@ Sau puteți activa orice altă temă existentă:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Ieșirea Așteptată
+### Ieșirea Așteptată {#expected-output-1}
 
 Când activarea reușește:
 
@@ -92,7 +92,7 @@ Exemplu de ieșire:
   Note: Check your homepage to verify the layout
 ```
 
-## Flux de Lucru: Creare și Activare
+## Flux de Lucru: Creare și Activare {#workflow-scaffold-and-activate}
 
 Un flux de lucru tipic combină ambele capacități:
 
@@ -102,7 +102,7 @@ Un flux de lucru tipic combină ambele capacități:
 4. **Activare**: "Activate the theme now"
 5. **Verificare**: Vizitați site-ul pentru a confirma că noul design este vizibil
 
-## Design Tokens și Personalizare
+## Design Tokens și Personalizare {#design-tokens-and-customization}
 
 Temele create folosesc *design tokens* WordPress (prin `theme.json`) pentru:
 
@@ -114,14 +114,14 @@ Temele create folosesc *design tokens* WordPress (prin `theme.json`) pentru:
 
 Aceste *tokens* sunt centralizate în `theme.json`, ceea ce face ușor ajustarea întregului sistem de design dintr-un singur fișier.
 
-## Limitările și Notele
+## Limitările și Notele {#limitations-and-notes}
 
 - Temele sunt create în directorul `/wp-content/themes/` și trebuie să urmeze convențiile de denumire WordPress
 - Activarea necesită permisiuni adecvate pe site-ul dumneavoastră WordPress
 - Codul PHP personalizat în teme este minim; folosiți *plugin*-uri pentru funcționalități complexe
 - Temele de bloc funcționează cel mai bine cu WordPress 5.9 și versiuni mai noi
 
-## Depanare
+## Depanare {#troubleshooting}
 
 **Tema nu apare după creare**
 - Verificați dacă directorul temei există și are permisiuni corecte
@@ -138,7 +138,7 @@ Aceste *tokens* sunt centralizate în `theme.json`, ceea ce face ușor ajustarea
 - Ștergeți orice *plugin* de *caching*
 - Verificați dacă versiunea dumneavoastră WordPress suportă *tokens*-urile pe care le folosiți
 
-## Pași Următori
+## Pași Următori {#next-steps}
 
 După ce ați activat tema, puteți:
 - Folosi abilitatea **Design System Aesthetics** pentru a rafina tipografia, culorile și spațierea

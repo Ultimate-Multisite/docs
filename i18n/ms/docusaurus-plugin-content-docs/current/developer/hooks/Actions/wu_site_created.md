@@ -4,22 +4,22 @@ title: Tindakan - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Action: wu_site_created
+# Action: wu_site_created {#action-wusitecreated}
 
 Berjalan selepas sebuah tapak (site) dicipta buat kali pertama.
 
 Tidak berjalan jika diduplikasi dari templat.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $data | `array` | Data objek yang akan disimpan. |
 | $site | `\Site` | Contoh objek. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Didefinisikan dalam [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1652) pada baris 1652

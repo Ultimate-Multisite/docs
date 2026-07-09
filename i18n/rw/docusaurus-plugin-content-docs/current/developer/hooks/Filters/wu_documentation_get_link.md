@@ -4,13 +4,13 @@ title: Akayunguruzo - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Akayunguruzo: wu_documentation_get_link
+# Akayunguruzo: wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 Emerera abategura plugin kuyungurura amahuza.
 
 Sinzi neza uko ibyo byagira akamaro, ariko kubigira nta cyo bitwaye
 
-## Ibipimo
+## Ibipimo {#parameters}
 
 | Izina | Ubwoko | Ibisobanuro |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Sinzi neza uko ibyo byagira akamaro, ariko kubigira nta cyo bitwaye
 | $slug | `string` | Slug yakoreshejwe kugarura ihuza |
 | $default_link | `string` | Ihuza risanzwe ryanditswe |
 
-### Kuva
+### Kuva {#since}
 
 - 1.7.0
-### Inkomoko
+### Inkomoko {#source}
 
 Byasobanuwe muri [`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) ku murongo wa 125

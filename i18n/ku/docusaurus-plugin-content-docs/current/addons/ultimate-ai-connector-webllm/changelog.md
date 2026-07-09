@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Dîroka guherandinan
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector ji bo WebLLM Changelog
+# Ultimate AI Connector ji bo WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versiyon 1.1.0 — Di 2026-04-09 de hat berdan
+## Versiyon 1.1.0 — Di 2026-04-09 de hat berdan {#version-110--released-on-2026-04-09}
 
 * Nû: Widgeta chatê ya livbar bi nîşanderê rewşa admin-bar — her bikarhênerekî têketî dikare rasterast ji front end daxwazê bide LLM ya li aliyê browserê.
 * Nû: Dema xebitandinê ya SharedWorker — engine ya MLC niha di SharedWorker de dixebite, da ku çend tab yek danişîna GPU hevpar bikin, ne ku li ser wê şer bikin.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Rastkirin: WebLLM bike nav filtera wpai_preferred_text_models, da ku taybetmendiya AI Experiments, dema modelek hatibe mîhengkirin, rê bide engine ya browserê.
 * Başkirin: Rastkirinên cache-busting, asayîkirina naverokê, û referansa hardware ku di ceribandina serî-ta-dawî de derketin holê.
 
-## Versiyon 1.0.0 — Berdana destpêkê
+## Versiyon 1.0.0 — Berdana destpêkê {#version-100--initial-release}
